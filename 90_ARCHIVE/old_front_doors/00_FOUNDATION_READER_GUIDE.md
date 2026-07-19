@@ -1,3 +1,8 @@
+> **TOMBSTONE — 2026-07-20 · K3 archive-first · receipt 139 (Wave 2) + authority receipt 145.**
+> Former front door, superseded at the 2026-07-20 signing by Door `00_THE_WELTANSCHAUUNG.md` + `00_THE_KERNEL_INDEX.md` + the Seed Ladder (`10_SEED/`).
+> Absorber: `00_THE_KERNEL_INDEX.md` (the reading-order / map-entry function is now carried by the Kernel Index).
+> Original path: `01_EMERGENTISM/00_FOUNDATION_READER_GUIDE.md`. Content preserved verbatim below — moved, never erased. [S]
+
 ---
 rosetta:
   primary_level: L7

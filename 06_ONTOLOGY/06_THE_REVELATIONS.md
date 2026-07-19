@@ -1,17 +1,19 @@
 ---
 rosetta:
-  primary_level: L6
-  primary_column: Philosophy — earned insights, the opposite of commandments
-  operator: "Śiva •"
+  primary_level: L4
+  primary_column: Meta
+  operator: "Arjuna ⚔"
   tier: "Executive"
-  regime: "Sādhu"
-  register: "[D] STAGED — the K-6 draft. Each revelation carries a receipt and a tier; none is a commandment."
+  regime: "Kṣatriya"
+  register: "[D] staged-per-tier — each revelation carries its own tier, its receipt, and its price; none is a commandment"
   canonical_phrase: "K-6 The Revelations — earned up, receipted, killable"
 title: "K-6 · The Revelations"
-status: "STAGED [D] 2026-07-19 — kernel surface K-6, promotion draft. Count (twelve here vs ten in the rumination) is an OPEN K2 ruling (Final Outline W/O-2). Promotes to 06_ONTOLOGY/05_THE_REVELATIONS.md on signature."
-date: 2026-07-19
-supersedes: "nothing — carries the Kernel Index §2 draft forward as the K-6 promotion candidate"
+status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145): K6 = 12 at slot 06; the Creed keeps slot 05"
+date: 2026-07-20
+owner: 01_EMERGENTISM
+supersedes: "the 2026-07-19 staged draft formerly at this path (same content, W/O-2 open) — count and slot ruled by the founder's 00:01 line; source draft 00_K6_REVELATIONS.md remains at root pending orchestrator tombstone"
 parents:
+  - 00_K6_REVELATIONS.md
   - 00_THE_KERNEL_INDEX.md
   - 07_THEOLOGY/00_THE_AMRITA.md
   - 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md
@@ -23,7 +25,7 @@ evidence_tier: "Per-revelation below; the assembly is [D]; nothing here is a pro
 
 > **What a revelation is here.** Not a commandment handed *down* — a disclosure earned *up*, forced by the work, that we did not hold before it, carrying the receipt of the trial that forced it. The opposite of "believe this": *this is what happened when we checked.* Nothing on this page is to be obeyed. It is to be checked, and each one names how it dies. Ranked roughly by how dearly it was bought.
 >
-> **Open ruling (W/O-2).** This draft carries **twelve** (the Kernel Index §2 form). The contemplative rumination carries **ten**. The count, the promotion filename/slot, and whether the creed-and-spiral doc yields the `06_ONTOLOGY/05` slot are a single K2 decision. Staged, not settled.
+> **Ruling (W/O-2) — RESOLVED 2026-07-20.** The founder's line 2026-07-20 00:01 (receipt 145): *"K6 = 12 at slot 06."* The count is **twelve** (the Kernel Index §2 form). The slot is **06**: this file is `06_ONTOLOGY/06_THE_REVELATIONS.md`, and the Creed keeps slot 05 (`06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md`). The contemplative rumination's ten remains a rumination under `06_ONTOLOGY/ruminations/` (K3 — preserved, not controlling).
 
 ---
 
@@ -40,19 +42,23 @@ The GFS retraction showed a survey of standing respondents cannot test a zero-fa
 Felt coherence fires identically for a lens and for a law; coherence-detection cannot answer contact-questions. The cure is not cynicism — it is the tier ledger, written in advance. **Receipt:** 126 (synthetic-gap ruling). **Dies if:** a tier-disciplined claim is shown to be settled by felt fit alone. *"Fires identically" is phenomenological compression, not a measured identity.*
 
 ## 5 · Worldviews with synthetic cores compete by posture `[I/C]`
-All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** 127, 129 (four postures adopted). **Dies if:** a fifth posture—or any posture outside the selected four—is exhibited without collapsing into one of them, or a Posture I/II system sustains institutional self-correction across generations. *The ethical reading's completeness is open; the Weimar caveat is live.*
+All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** 127, 129 (four postures adopted). **Dies if:** a fifth posture—or
+any posture outside the selected four—is exhibited without collapsing into one
+of them, or a Posture I/II system sustains institutional self-correction across
+generations. *The ethical reading's completeness is open; the Weimar caveat is live.*
 
 ## 6 · The ladder is not merely a ladder `[B/I]`
 Fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — sage and outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar, its cleanest witness carrying the seven visible planets. **Receipt:** 130. **Dies if:** the centre+mirror grammar fails in a polarity-encoding system within the lineage. *Shape real; census selected; universal lost.*
 
 ## 7 · The trinity has a dark twin `[A/C]`
-The inversion used by the structure fixes *two* points, `±1`, and swaps the
-orbit `{0,∞}`. Their union `{−1,0,1,∞}` is a selected invariant four-point
-frame, not ordinary orbit closure. Whether a world system carries a
-corresponding “shadow” is W11 `[C]`, not a consequence of symmetry. **Receipt:**
-algebra (`[A]` fixed-point/orbit facts) + W11 (`[C]` functional-work wager).
-**Dies if:** `−1` names no real phenomenon, grounds no operator, predicts
-nothing — then it is a footnote.
+The inversion used by the structure fixes *two* points, not one: `±1`; it also
+swaps the orbit `{0,∞}`. Their union `{−1,0,1,∞}` is a selected invariant
+four-point frame, not ordinary orbit closure. The framework chose the positive
+unit and long left `−1` undrawn. Whether any physical, psychological, or
+institutional system carries a corresponding “shadow” is W11 `[C]`, not a
+consequence of symmetry. **Receipt:** algebra (`[A]` fixed-point/orbit facts) +
+W11 (`[C]` functional-work wager). **Dies if:** `−1` names no real phenomenon,
+grounds no operator, predicts nothing — then it is a footnote.
 
 ## 8 · Plato was partly right, and the repair has debts `[I/C]`
 Not Forms — *constraint-structured degrees of freedom*; not perfection selecting existence — *emergence filtering typed plenitude*. Stable forms are invariants and attractors *across* constrained DoF, not the DoF themselves. The dividend: if "reachable" means buildable from a compressed seed, the excluded orphans are the incompressible structures — which would explain why the world is simple. **Receipt:** 133. **Dies if:** `REACHABLE` cannot be defined non-circularly (E4's named debt). *Still W1, not an earned theorem — never above `[C]`.*
@@ -79,6 +85,6 @@ Every audit, grave, and rescue enacted the framework's own claims better than an
 
 ## Execution surface
 
-`[D]` staged. Revelations require receipts and prices — every entry above names both. **Agents:** do not cite a revelation above its tier; do not strip its kill; do not add a thirteenth without the founder's deliberate act (the count is an open K2 ruling, not agent doctrine). Promotes to `06_ONTOLOGY/05_THE_REVELATIONS.md` on signature, with the creed-and-spiral slot resolved either way under K3. **Canonical path:** `01_EMERGENTISM/00_K6_REVELATIONS.md`
+`[D]` staged-per-tier — **ACTIVE under the K2-signed line 2026-07-20 (receipt 145)**. Revelations require receipts and prices — every entry above names both. **Agents:** do not cite a revelation above its tier; do not strip its kill; do not add a thirteenth without the founder's deliberate act. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/06_THE_REVELATIONS.md` (K6 at slot 06; the Creed keeps slot 05). Source draft: `01_EMERGENTISM/00_K6_REVELATIONS.md` (staged 2026-07-19; absorbed here).
 
 ⊙ = • × ○ — *not what we command you to believe; what happened when we checked — and how each one dies.*

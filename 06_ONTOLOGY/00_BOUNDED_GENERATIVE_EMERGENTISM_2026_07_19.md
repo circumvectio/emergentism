@@ -22,6 +22,9 @@ parents:
 
 # Bounded Generative Emergentism
 
+> **Provenance pointer (2026-07-20, the 00:01 line):** the primary provenance surface for the typed-existence construction below is [`02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md).
+> Read 02 first — this file is the bounded-generative companion reading staged beneath it `[D]`.
+
 > **The proposed repair of Plato:** particulars disclose structures that exceed any one instance, but those structures need not be separately existing Forms. A degree of freedom is a typed capacity for variation in a specified system after constraints and redundancies are declared. A form is not that freedom itself: it is a robust invariant, equivalence class, order parameter, attractor, or other stable organization formed across constrained freedoms. `[I/C]`
 
 This is a staged ontology, not a physical theory and not a totality claim. It neither identifies a chart with the Ground nor uses Skyzai institutions, products, runtime, governance, or receipts as warrant.

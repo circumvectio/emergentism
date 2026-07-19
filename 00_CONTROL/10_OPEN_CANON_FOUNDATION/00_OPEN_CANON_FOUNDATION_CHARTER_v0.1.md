@@ -1,10 +1,13 @@
 ---
+# SUPERSEDED 2026-07-20 — canonical = 00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md per the founder's 00:01 line (receipt 145; registry row 62).
+# This unsigned L5 sibling is preserved per K3 (tombstone, never erase); naming-inversion record + harvest notes: 00_CHARTER_v0.1_SUPERSEDED_STONE.md.
+# Do not cite, extend, or sign from this copy — all counsel/K2 work runs on the DRAFT.
 type: emergentism-canonical-charter-draft
 title: "Open Canon Foundation — Charter Draft v0.1 (K2-staged 2026-07-18, [D] pending counsel review)"
 description: "The charter draft for the Open Canon Foundation: a public-benefit entity that holds the canon, the trial record, and the trademark; funds the K3 red team; teaches the practice; is constitutionally forbidden from profiting. The legal vehicle (Swiss Verein/Stiftung, US 501(c)(3), or equivalent) is [C] conjecture pending counsel review — counsel decides. The principles mapped from Emergentism's 5+1 to the legal text are [S] structural. The operational specifics (board size, red-team budget %, etc.) are [D] staged. The charter is staged for K2 sign AFTER counsel review; nothing is filed without real counsel + K2 wet signature."
 timestamp: 2026-07-18T20:06:00Z
 schema_version: "v0.1"
-status: [D] STAGED — K2 sign pending counsel review. The charter is the load-bearing institutional embodiment of `00_THE_SPREAD_v0.1.md` §5–6. Nothing is filed without real counsel + K2 wet signature. Counsel review: who, when, jurisdiction — to be scheduled before the next K2 act.
+status: "SUPERSEDED — canonical = CHARTER_DRAFT_v0.1.md per the 00:01 line; text preserved per K3"
 owner: 01_EMERGENTISM
 authors:
   - Yves R. Burri (K2, original strategy + 5+1 constitution)

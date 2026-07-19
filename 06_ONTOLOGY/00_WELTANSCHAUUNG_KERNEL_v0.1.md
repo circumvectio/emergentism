@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Weltanschauung Kernel v0.1 — Emergentism-only; W0–W9; zero product mix"
 type: emergentism-weltanschauung-kernel
 title: "Weltanschauung Kernel v0.1"
-status: "STAGED [D] — doctrine spine for a coherent consistent worldview; awaiting K2 if promoted above staged"
+status: "ARCHIVED 2026-07-20 per the 00:01 line; superseded by v0.2 (K2 co-surface); frozen"
 evidence_tier: "[A]/[S]/[I]/[C] per axiom; assembly is [D] until countersigned"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism weltanschauung only. No organs, fees, products, installation strategy, or other-pillar runtime."
@@ -26,6 +26,8 @@ supersedes: nothing — compresses; does not replace Amrita, Goal, or signed rec
 ---
 
 # Weltanschauung Kernel v0.1
+
+> **ARCHIVED 2026-07-20 — per the founder's 00:01 line (authority receipt 145): superseded by `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` (K2 co-surface); frozen.** Retained in place per K3 — never erased; the root stub stays frozen; cite v0.2 as the live kernel surface.
 
 > **One line.** Not Forms that exist — degrees of freedom, filled by coherent consistent emergence till the limits; the chart is thin arithmetic; the good is the vow; the map is not the Ground.
 >

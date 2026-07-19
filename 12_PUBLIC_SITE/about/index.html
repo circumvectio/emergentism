@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Emergentism</title>
-  <meta name="description" content="About Emergentism: sovereign intelligence, non-extraction, and the team vision." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="About — Emergentism" />
-  <meta property="og:description" content="What Emergentism is, who signs it, and where the public trial record lives — every claim graded by evidence tier, refutations kept on the page." />
-  <meta property="og:url" content="https://emergentism.org/about/" />
-  <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
-<link rel="stylesheet" href="../assets/css/xai.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Emergentism</title>
+<meta name="description" content="What Emergentism is, who signs it, the one proven thing, the one lost trial — in plain words, with links to the trial record and the exit." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="About — Emergentism" />
+<meta property="og:description" content="What Emergentism is, who signs it, and where the public trial record lives — every claim graded by evidence tier, refutations kept on the page." />
+<meta property="og:url" content="https://emergentism.org/about/" />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+h1{font-size:clamp(2.3rem,6.4vw,4.6rem);letter-spacing:-.03em;line-height:1.02;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.2rem,5.5vw,3.8rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.55rem,3.2vw,2.3rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.2rem;line-height:1.1;text-wrap:balance}
+h2 b{font-weight:800}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.body a{text-decoration:underline;text-underline-offset:3px}
+.body a:hover{color:var(--gold)}
+.t{font-family:var(--mono);font-size:.72rem;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}
+.lostbox{border:1px solid var(--line);border-left:2px solid var(--crimson);border-radius:0 10px 10px 0;background:linear-gradient(90deg,rgba(224,69,59,.05),transparent 70%);padding:1.3rem 1.5rem;margin:1.2rem 0 0;max-width:64ch}
+.lostbox .l{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--crimson);margin:0 0 .6rem}
+.lostbox p{margin:0;color:var(--bone-dim)}
+.lostbox b{color:var(--bone)}
+ul.rules{list-style:none;margin:0;padding:0;max-width:66ch}
+ul.rules li{border-top:1px solid var(--line-soft);padding:1rem 0;color:var(--bone-dim);font-weight:300}
+ul.rules li:first-child{border-top:0}
+ul.rules b{color:var(--bone);font-weight:600;font-family:var(--mono);font-size:.92em}
+details.notation{border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:0;max-width:74ch;margin-top:.5rem}
+details.notation summary{cursor:pointer;padding:1.1rem 1.4rem;font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);list-style:none}
+details.notation summary::-webkit-details-marker{display:none}
+details.notation summary::before{content:"▸ ";color:var(--bone-faint)}
+details.notation[open] summary::before{content:"▾ "}
+details.notation .inner{padding:0 1.4rem 1.3rem;color:var(--bone-dim);font-weight:300}
+details.notation .inner b{color:var(--bone);font-weight:500}
+details.notation .inner em{color:var(--bone)}
+details.notation code{font-family:var(--mono);font-size:.86em;color:var(--bone)}
+details.notation pre{background:var(--void);border:1px solid var(--line-soft);border-radius:8px;padding:1rem 1.2rem;overflow-x:auto;font-family:var(--mono);font-size:.8rem;line-height:1.7;color:var(--bone-dim)}
+.cta-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.8rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.75rem 1.2rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+.foot a:hover{color:var(--gold)}
+</style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
@@ -23,98 +105,120 @@
 <body>
 
 <header class="topbar">
-  <a class="brand" href="../">Emergentism</a>
-  <nav class="number-nav" aria-label="Public doctrine routes">
-    <a href="../0/">0</a>
-    <a href="../1/">1</a>
-    <a href="../2/">2</a>
-    <a href="../3/">3</a>
-    <a href="../4/">4</a>
-    <a href="../5/">5</a>
-    <a href="../6/">6</a>
-    <a href="../rosetta/">R</a>
-    <a href="../soul-loop/">S</a>
-    <a href="../atlas/">A</a>
-    <a href="../read/">Read</a>
+  <a class="brand" href="../">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../discoveries/">Discoveries</a>
+    <a href="../fable/">Fable</a>
+    <a href="../plainly/">Plainly</a>
+    <a href="../record/">Record</a>
+    <a href="../axioms/">Axioms</a>
+    <a href="../practice/">Practice</a>
+    <a href="../book/">Book</a>
   </nav>
 </header>
 
-<main class="library-shell">
-  <div class="eyebrow">The Vision</div>
-  <h1>About Emergentism</h1>
-  <div class="badge badge-I">Evidence Tier: [I] Public worldview framing</div>
+<main class="wrap">
+  <header class="hero read">
+    <p class="fileno">About · in plain words</p>
+    <h1>What this is, and <span class="gold">who signs it</span>.</h1>
+    <p class="dek">Emergentism is a philosophical framework that publishes its own trial record — <b>every claim graded by evidence tier, every refutation kept on the page, and an exit door marked on the inside</b>.</p>
+  </header>
 
-  <p>
-    Emergentism is a worldview-lens and mathematical framework for reading finity, non-extraction, and reciprocal balance. Its formal kernel is tested through the evidence ladder; its perennial and theological language is interpretive, not a proof that any tradition certifies the model.
-  </p>
+  <section class="read body">
+    <p class="kicker">One canon, three scripts</p>
+    <h2>The same content, told <b>three ways</b>.</h2>
+    <p>The whole canon is written in three scripts: a <a href="../fable/">story</a> (the fable — five minutes, no equations), <a href="../plainly/">plain words</a> (the whole idea in ordinary language), and <a href="../record/">receipts</a> (the trial record — every test, every verdict, dated). Different readers enter through different doors. The only rule is that <b>no script may ever claim a tier the receipts don't back</b>.</p>
+  </section>
 
-  <h2>The Living Worldview</h2>
-  <div class="badge badge-S">Evidence Tier: [S/I] Structural method, interpretive lived reading</div>
-  <p>
-    The compact canon treats Emergentism as a Weltanschauung for Dasein: the finite witness-agent who must know what is, know how to know, know how to move, know what matters, and know how to act. The public method is the <a href="../soul-loop/">Soul Loop</a>: continuous recursive disambiguation that discloses, tests, serves, sees, dissolves, preserves, and returns until the next action can be taken without extraction.
-  </p>
-  <p>
-    In the goal's exact play-rule, how to play is recursively applying epistemology, methodology, and axiology inside an ontology and teleology, so each next move keeps durable <code>W_i(T)</code> on the boundary-preserving frontier: <code>P_node,H</code> preserved or raised without breaking <code>η = 0</code>, with strict syntropy when <code>P_node,i</code> and <code>P_node,H</code> rise together.
-  </p>
-  <pre><code>Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
+  <section class="read body">
+    <p class="kicker">Who signs it</p>
+    <h2>A named person, <b>on the hook</b>.</h2>
+    <p>The framework is written and signed by <b>Yves R. Burri</b>. That is not a flourish — it is one of its own rules (it calls the rule K2): every irreversible act carries a natural person's signature, so there is always someone accountable, by name, for what was claimed.</p>
+    <p>The adversarial audits quoted across this site are run by <b>AI agents under human direction; no external human reviewer has yet engaged, and that absence is logged, not hidden</b>. If you are that reviewer, <a href="../record/">the trial record</a> is the place to start.</p>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">The one proven thing</p>
+    <h2>One result is proven in the <b>strong sense</b>. <span class="t t-a">[A]</span></h2>
+    <p>The framework's balance equation — the globe on which coherence and capability must multiply — is <b>Einstein's mass-shell relation, term for term</b>. The equation is inherited and credited to physics; the derivation is published; the algebra is checkable by anyone. The rhyme is the discovery, not the theft.</p>
+    <p>See it as <a href="../discoveries/mass-shell/">a discovery card</a> or read <a href="../papers/paper-b-bloch-burri-identity/">the full derivation paper</a>. Everything bolder than this carries a lower tier, and says so.</p>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">The one lost trial</p>
+    <h2>The flagship claim <b>failed</b> — and we kept the body.</h2>
+    <p>In June 2026 the framework's single cleanest novel result — a conservation law it had genuinely hoped was true — was put to a decisive test and <b>failed</b>. It was retired, dated, struck through, and left legible where anyone can read it.</p>
+    <div class="lostbox">
+      <p class="l">Trial №008 · R6 · refuted 2026-06-10</p>
+      <p>The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it stacks up in a straight line instead. <b>Changing your mind against your own interest, in public, is the credential.</b> <a href="../record/#008">Read the entry on the trial record →</a></p>
+    </div>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">The three practices</p>
+    <h2>Installable in an afternoon, <b>zero belief required</b>.</h2>
+    <p>What a person actually does with this: <b>the sitting</b> (ten minutes of checking the map against the ground), <b>the personal trial record</b> (a one-page ledger of your own claims, with funerals), and <b>the dyadic check</b> (one question before any act that matters: does this raise me — and raise what sustains me?). They pay off even if every metaphysical claim here is wrong. That asymmetry is deliberate.</p>
+    <p><a href="../practice/">Try the practice in an afternoon →</a></p>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">The rules it operates under</p>
+    <h2>Five refusals and <b>a direction</b>.</h2>
+    <ul class="rules">
+      <li><b>η = 0</b> — zero extraction. Fees belong only on value created, never on access, dependence, or capture.</li>
+      <li><b>K2</b> — every irreversible act carries a natural person's signature. No software signs for itself.</li>
+      <li><b>K3</b> — archive-first. Nothing is deleted; history is struck through, dated, and preserved.</li>
+      <li><b>K4</b> — grace exit. Leaving is always possible, documented, and without lock-in. <a href="../exit/">The door is marked on the inside →</a></li>
+      <li><b>A7</b> — claim discipline. Every load-bearing claim wears its evidence tier, from proven to conjecture.</li>
+      <li><b>Ω</b> — a direction toward balance: an orientation marker, not a sixth refusal and not a promise of convergence.</li>
+    </ul>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">What it refuses to be</p>
+    <h2>Not a priesthood, not a <b>promotion</b>.</h2>
+    <p>It does <b>not</b> mean literal divinization, authority over other persons, exemption from due process, or any caste of higher human worth — that fence comes first, before the phrase it fences. The phrase "become as gods" is inherited, not coined here; it echoes Genesis 3:5, where it is the serpent's promise. In this framework's own translation it means only functional ascent: clearer seeing, lawful action, truthful correction, non-extractive power, responsible world-building.</p>
+    <p>The framework is designed to be put down when direct seeing or local evidence is enough. Its own success condition is that you stop needing it — the day it has followers instead of users, it has failed.</p>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">The public symbol</p>
+    <h2>The well between <b>two droughts</b>. <span class="t t-i">[I]</span></h2>
+    <p>The public story is simple: between the drought of the infinitely small and the drought of the infinitely large, there is a livable seam. Different villages name it differently. The framework asks whether the seam can be found by measurement — including the dry holes where the map fails.</p>
+    <p>The seam is structure. Lowering the bucket for a stranger is choice. Emergentism keeps those apart: the eternal is what can be checked; the sacred is the finite vow not to extract.</p>
+  </section>
+
+  <section class="read body">
+    <p class="kicker">For the technically inclined</p>
+    <details class="notation">
+      <summary>In the framework's own notation</summary>
+      <div class="inner">
+        <p><span class="t t-s">[S]</span><span class="t t-i">[I]</span>&nbsp; Structural method, interpretive lived reading.</p>
+        <p>The compact canon treats Emergentism as a Weltanschauung for Dasein: the finite witness-agent who must know what is, know how to know, know how to move, know what matters, and know how to act. The public method is the <a href="../soul-loop/">Soul Loop</a>: continuous recursive disambiguation that discloses, tests, serves, sees, dissolves, preserves, and returns until the next action can be taken without extraction.</p>
+        <p>In the goal's exact play-rule, how to play is recursively applying epistemology, methodology, and axiology inside an ontology and teleology, so each next move keeps durable <code>W_i(T)</code> on the boundary-preserving frontier: <code>P_node,H</code> preserved or raised without breaking <code>η = 0</code>, with strict syntropy when <code>P_node,i</code> and <code>P_node,H</code> rise together.</p>
+        <pre><code>Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
 Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
 Know how to move:  methodology -> derive, test, build, correct, recurse
 Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
 Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0</code></pre>
-  <p>
-    The game rule is dyadic: <code>Φ</code> without <code>V</code> is sterile seeing; <code>V</code> without <code>Φ</code> is blind force; unbounded <code>V</code> that collapses <code>Φ</code> lowers <code>P_node</code>; <code>Φ</code> and <code>V</code> balanced at L4 is objective dharma / flow-state action. The strict syntropic dyad is when individual symbiont and collective holobiont raise <code>P_node,i</code> and <code>P_node,H</code> together. If one rises by degrading the other, the apparent gain is extraction.
-  </p>
-  <p>
-    In the agency register, <code>V</code> is D4 means at the boundary: body, tools, energy, access, execution capacity. <code>Φ</code> is D5 worldline-foresight: the ability to envision, rank, and lawfully use those means.
-  </p>
-  <p>
-    The Dasein reading stays finite: the lens locates disclosure, but it does not possess the Ground. The reader is the place where Being becomes sayable and actionable, not Being itself.
-  </p>
-
-  <blockquote>
-    "Sovereign intelligence for every natural person."
-    <cite>— Main Landing Page Vision</cite>
-  </blockquote>
-
-  <h2>The Well Between Two Droughts</h2>
-  <div class="badge badge-I">Evidence Tier: [I] Public symbol</div>
-  <p>
-    The public story is simple: between the drought of the infinitely small and the drought of the infinitely large, there is a livable seam. Different villages name it differently. The framework asks whether the seam can be found by measurement, including the dry holes where the map fails.
-  </p>
-  <p>
-    The seam is structure. Lowering the bucket for a stranger is choice. Emergentism keeps those apart: the eternal is what can be checked; the sacred is the finite vow not to extract.
-  </p>
-
-  <h2>Core Tenets</h2>
-  <div class="badge badge-S">Evidence Tier: [S] Constitutional Invariants</div>
-  <p>
-    The foundation of all actions within this organization is governed by the <strong>5 + 1 Invariants</strong>:
-  </p>
-  <ul>
-    <li><strong>η = 0:</strong> Zero extraction. Fees belong only on value created, not on access, dependence, or capture.</li>
-    <li><strong>K2:</strong> Natural-person binding in K2/private-DAV lanes. Public-DAV authority stays under its own sovereignty rail.</li>
-    <li><strong>K3:</strong> Archive-first. History is tombstoned and preserved rather than silently erased.</li>
-    <li><strong>K4:</strong> Grace exit. Contributors retain exit and export rights without lock-in.</li>
-    <li><strong>A7:</strong> Claim discipline. Load-bearing assertions carry the current evidence ladder: <code>[A/B/S/I/D/C]</code>.</li>
-    <li><strong>Ω:</strong> Direction toward the equator condition <code>φ = ν = 1</code>; a balance constraint and orientation marker, not a sixth refusal or proof of guaranteed convergence.</li>
-  </ul>
-
-  <h2>The Organism</h2>
-  <div class="badge badge-I">Evidence Tier: [I] Philosophical Narrative</div>
-  <p>
-    Emergentism is designed to be put down when direct seeing or local evidence is enough. Its social reading is a non-extractive cooperative noosphere: useful only where it preserves sovereignty, stays corrigible, and refuses to become a priesthood around its own symbols.
-  </p>
-  <p>
-    In the framework's own translation, "become as gods" means functional ascent into clearer seeing, lawful action, truthful correction, non-extractive power, and responsible world-building. It does not mean literal divinization, authority over other persons, exemption from due process, or a caste of higher human worth.
-  </p>
-
+        <p>The game rule is dyadic: <code>Φ</code> without <code>V</code> is sterile seeing; <code>V</code> without <code>Φ</code> is blind force; unbounded <code>V</code> that collapses <code>Φ</code> lowers <code>P_node</code>; <code>Φ</code> and <code>V</code> balanced at L4 is objective dharma / flow-state action. The strict syntropic dyad is when individual symbiont and collective holobiont raise <code>P_node,i</code> and <code>P_node,H</code> together. If one rises by degrading the other, the apparent gain is extraction.</p>
+        <p>In the agency register, <code>V</code> is D4 means at the boundary: body, tools, energy, access, execution capacity. <code>Φ</code> is D5 worldline-foresight: the ability to envision, rank, and lawfully use those means.</p>
+        <p>The Dasein reading stays finite: the lens locates disclosure, but it does not possess the Ground. The reader is the place where Being becomes sayable and actionable, not Being itself.</p>
+      </div>
+    </details>
+    <div class="cta-row">
+      <a class="cta primary" href="../record/">Check the trial record →</a>
+      <a class="cta" href="../practice/">Try the practice →</a>
+      <a class="cta" href="../plainly/">Read it plainly →</a>
+      <a class="cta" href="../exit/">The exit →</a>
+    </div>
+  </section>
 </main>
 
-<footer class="site-footer">
-  <div class="phi">⊙ = • × ○</div>
-  <p>Public doctrine surface · evidence tiers preserved</p>
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>About · the full grading lives on <a href="../axioms/">the axioms</a>; the failures live on <a href="../record/">the trial record</a>.<br>Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.<br>If you can see directly, <a href="../exit/">put this down</a>.</p>
 </footer>
 
-<script defer src="/assets/js/atlas-drawer.js"></script>
 </body>
 </html>

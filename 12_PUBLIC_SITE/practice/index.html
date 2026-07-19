@@ -23,7 +23,7 @@
 :root{
   --void:#050505; --panel:#0d0d0c; --panel-2:#131312;
   --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
-  --gold:#FFEB3B; --gold-deep:#CBB800;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
   --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
   --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
@@ -77,6 +77,22 @@ p{margin:0 0 1.25rem}
 .tierline{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.4rem 0 0;font-family:var(--mono);font-size:.72rem}
 .tier{border:1px solid var(--line);border-radius:3px;padding:.18rem .5rem}
 .tier.t-s{color:var(--t-s)} .tier.t-i{color:var(--t-i)} .tier.t-c{color:var(--t-c)}
+/* the artifact — copyable template, worked example, pocket card */
+.artifact{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden;margin:1.4rem 0 0}
+.artifact .bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:.7rem .8rem .7rem 1.1rem;border-bottom:1px solid var(--line-soft);
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+.copybtn{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--bone-dim);background:none;border:1px solid var(--line);border-radius:4px;padding:.5rem .9rem;cursor:pointer;transition:.15s;min-height:40px}
+.copybtn:hover{border-color:var(--gold);color:var(--gold)}
+.artifact pre{margin:0;padding:1.2rem 1.3rem;overflow-x:auto;font-family:var(--mono);font-size:.78rem;line-height:1.75;color:var(--bone-dim);-webkit-overflow-scrolling:touch}
+.worked{border:1px solid var(--line);border-radius:12px;background:linear-gradient(90deg,rgba(224,69,59,.04),transparent 60%),var(--panel);margin:1.4rem 0 0;overflow:hidden}
+.worked .lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);margin:0;padding:.8rem 1.3rem .1rem}
+.worked pre{margin:0;padding:.8rem 1.3rem 1.2rem;overflow-x:auto;font-family:var(--mono);font-size:.78rem;line-height:1.8;color:var(--bone-dim);-webkit-overflow-scrolling:touch}
+.worked s{color:var(--bone-faint);text-decoration-color:var(--crimson-dim);text-decoration-thickness:2px}
+.worked .vd{color:var(--crimson);font-weight:700}
+.pocket{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.4rem 1.6rem;margin:1.4rem 0 0;max-width:64ch}
+.pocket .lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .7rem}
+.pocket p{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--bone);margin:0;font-weight:300;line-height:1.6}
+.pocket b{color:var(--gold);font-weight:600}
 .cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:2.2rem}
 .cta{display:inline-block;font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:.7rem 1.1rem;color:var(--bone);transition:.15s}
 .cta:hover{border-color:var(--gold);color:var(--gold)}
@@ -94,14 +110,14 @@ footer.foot a{color:var(--bone-dim)}
 
 <div class="topbar">
   <a class="brand" href="../home/">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Site">
+  <nav class="nav" aria-label="Routes">
+    <a href="../discoveries/">Discoveries</a>
     <a href="../fable/">Fable</a>
     <a href="../plainly/">Plainly</a>
     <a href="../record/">Record</a>
     <a href="../axioms/">Axioms</a>
+    <a class="here" href="../practice/" aria-current="page">Practice</a>
     <a href="../book/">Book</a>
-    <a class="here" href="../practice/">Practice</a>
-    <a href="../build/">Build</a>
   </nav>
 </div>
 
@@ -138,7 +154,7 @@ footer.foot a{color:var(--bone-dim)}
         <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It works even if every metaphysical claim we make is wrong. That is deliberate.</p>
         <div class="howto">
           <p class="lab">How — one page, forever</p>
-          <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it.</p>
+          <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it. <a href="#artifact" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px">Copy the template below ↓</a></p>
         </div>
       </div>
     </div>
@@ -152,6 +168,58 @@ footer.foot a{color:var(--bone-dim)}
           <p>i = you, at the scale being tested. H = the whole that sustains you, at that scale. The move is clean only if both sides are preserved or raised — under η = 0: nothing taken without return.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="read reveal" id="artifact">
+    <p class="kicker">Take it with you</p>
+    <h2>The artifact — <b>copy it, start today.</b></h2>
+    <div class="body">
+      <p>The whole second practice, as one copy-paste block. Paste it into any plain-text note — that document is now your trial record. <b>Sixty seconds to install; a lifetime to fill.</b></p>
+    </div>
+
+    <div class="artifact">
+      <div class="bar"><span>personal-trial-record.txt · the template</span><button class="copybtn" type="button" aria-label="Copy the trial-record template to the clipboard">Copy</button></div>
+      <pre id="tpl">MY TRIAL RECORD
+started: YYYY-MM-DD
+rule: never delete — strike through, date, sign.
+newest entries on top. once a year, count the funerals.
+
+------------------------------------------------------------
+No.002 · opened YYYY-MM-DD · status: OPEN
+CLAIM      (a claim you actually load weight on)
+TIER       how I know: proven / reasoned / lens / bet
+KILL       what result would change my mind
+UPGRADE    what evidence would raise the tier
+SURVIVES   what still stands for me if this falls
+VERDICT    —
+------------------------------------------------------------
+No.001 · opened YYYY-MM-DD · status: OPEN
+CLAIM
+TIER
+KILL
+UPGRADE
+SURVIVES
+VERDICT    —
+------------------------------------------------------------</pre>
+    </div>
+
+    <div class="worked">
+      <p class="lab">A worked entry — one funeral, held properly</p>
+      <pre>No.001 · opened 2026-02-03 · status: <span class="vd">STRUCK 2026-06-28</span>
+CLAIM      <s>My project is stalled only because I lack time.</s>
+TIER       bet
+KILL       one clear week with nothing else in it, and no progress
+UPGRADE    shipping anything during a busy month
+SURVIVES   the project may still be worth doing — for other reasons
+VERDICT    refuted 2026-06-28 — took the clear week; made no
+           progress. the constraint was never time.
+           struck, dated, signed.</pre>
+    </div>
+
+    <div class="pocket">
+      <p class="lab">The dyadic check — pocket card</p>
+      <p><b>Does this move raise me — and raise what sustains me?</b><br>Both directions, or don't.</p>
     </div>
   </section>
 
@@ -174,7 +242,7 @@ footer.foot a{color:var(--bone-dim)}
 
 <footer class="foot wrap">
   <div class="glyph">⊙ = • × ○</div>
-  <p>The Practice · the sixth stage of the path: <a href="../fable/">fable</a> → <a href="../plainly/">plainly</a> → <a href="../record/">record</a> → <a href="../axioms/">axioms</a> → <a href="../book/">book</a> → <b>practice</b> → <a href="../build/">build</a>.<br>The framework succeeds when you can put it down. The practice is how you find out you could all along.</p>
+  <p>The Practice · the sixth stage of the path: <a href="../fable/">fable</a> → <a href="../plainly/">plainly</a> → <a href="../record/">record</a> → <a href="../axioms/">axioms</a> → <a href="../book/">book</a> → <b>practice</b> → <a href="../build/">build</a>.<br>The framework succeeds when you can <a href="../exit/">put it down</a>. The practice is how you find out you could all along.</p>
 </footer>
 
 <script>
@@ -187,6 +255,23 @@ footer.foot a{color:var(--bone-dim)}
     reveals.forEach(function(el){ io.observe(el); });
   }
   setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+
+  // copy-to-clipboard for the trial-record template (progressive enhancement — the text is selectable without it)
+  var btn = document.querySelector('.copybtn');
+  var pre = document.getElementById('tpl');
+  if (btn && pre) {
+    btn.addEventListener('click', function(){
+      var txt = pre.textContent;
+      function done(){ btn.textContent = 'Copied ✓'; setTimeout(function(){ btn.textContent = 'Copy'; }, 1600); }
+      function fallback(){
+        var r = document.createRange(); r.selectNodeContents(pre);
+        var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+        try { document.execCommand('copy'); done(); } catch(e) {}
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, fallback); }
+      else { fallback(); }
+    });
+  }
 })();
 </script>
 <script defer src="/assets/js/atlas-drawer.js"></script>

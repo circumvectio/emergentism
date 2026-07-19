@@ -20,33 +20,41 @@ current folder tree. Source truth remains in those files and in Uplink.
 material. It does not own runtime, legal entities, portfolio ventures, products,
 or live organism state.
 
-## Current State — 2026-07-19
+## Current State — 2026-07-20
 
 K2-signed wave (receipt K2_SESSION_2026_07_19) added six root-level canon docs
-— Read Order items 4–9 below. Strategy (`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`)
+(`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`, `00_THE_ROSETTA_PROTOCOL`,
+`00_THE_FIRST_RECEIPT_RECOMMENDATION`, OCF charter pair) — now supporting canon
+beneath the signed kernel stack. The 2026-07-20 signature sitting (receipt 139
+SIGNED / authority 145) sealed the front-door chain re-pointed in the Read Order
+below: Door → Map → Seed Ladder → -ologies → Uplink record → public funnel.
+Strategy (`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`)
 frames the arena and the funnel; `00_THE_ROSETTA_PROTOCOL` sets the
 three-scripts public rule (fourth script is machine);
 `00_THE_FIRST_RECEIPT_RECOMMENDATION` names the REFU play-money forecast ledger
 the first visible η = 0 receipt; the Open Canon Foundation charter pair is
-staged and counsel-gated. Site: `/fable/` and `/practice/` funnel stages now
+staged and counsel-gated (charter = DRAFT per the 00:01 line). Site: `/fable/` and `/practice/` funnel stages now
 live under `12_PUBLIC_SITE/`.
 
 ## Read Order
 
-1. `README.md`
-2. `AGENTS.md`
-3. `00_FOUNDATION_READER_GUIDE.md`
-4. `00_THE_SPREAD_v0.1.md` — K2-signed strategy: users, not believers; the funnel
-5. `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md` — K2-signed arena: worldviews as wagers; posture as axis
-6. `00_THE_ROSETTA_PROTOCOL_v0.1.md` — K2-signed 2026-07-19: three-scripts rule; fourth script is machine
-7. `00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md` — K2-ratified first visible η = 0 receipt (REFU ledger)
-8. `00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md` — staged charter; counsel-gated
-9. `00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md` — counsel-question companion
-10. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`
-11. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`
-12. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
-13. `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`
-14. `11_UPLINK/00_CORE/00_INDEX.md`
+Post-signature chain (2026-07-20, receipt 139 SIGNED / authority 145):
+
+1. `00_THE_WELTANSCHAUUNG.md` — **the Door** (signed)
+2. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
+3. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (the D0–D6 ladder)
+4. The seven -ologies: `01_TELEOLOGY/` → `02_EPISTEMOLOGY/` → `03_METHODOLOGY/` → `04_AXIOLOGY/` → `05_COSMOLOGY/` → `06_ONTOLOGY/` → `07_THEOLOGY/`
+5. `11_UPLINK/00_CORE/00_INDEX.md` — the Uplink record
+6. `12_PUBLIC_SITE/` — the public funnel (`/fable/` … `/practice/`)
+
+Repo infrastructure: `README.md` (folder purpose), `AGENTS.md` (runtime
+governance). Former front-door routings (`00_FOUNDATION_READER_GUIDE.md`,
+`00_EMERGENTISM_AS_A_LENS.md`, `00_SEVENFOLD_FOUNDATION_ROOT.md`,
+`00_CANONICAL_TREE_OUTLINE.md`) are K3 tombstone stubs at their root paths;
+`00_THE_GOAL.md` resolves at `01_TELEOLOGY/00_THE_GOAL.md`. Deep source reads:
+`06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`,
+`02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`,
+`03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`.
 
 ## Depth-1 Routing
 

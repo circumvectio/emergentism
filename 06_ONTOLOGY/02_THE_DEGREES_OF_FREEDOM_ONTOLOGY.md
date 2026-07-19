@@ -10,6 +10,7 @@ status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145)
 date: 2026-07-19
 provenance: "workflow wf_0b2a7fda-986 (14 agents: separation / seven castes / Plato adversarial). Owner: Yves R. Burri."
 tier_legend: "[A] proven-in-model · [B] built/measured · [S] structural (true inside the formalism) · [I] illuminating/interpretive wager · [C] conjecture (unwon) · [D] staged · ∅ asserted-but-unpaid"
+see_also: "00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md — bounded-generative companion; its typed-existence construction is provenanced from this document (cross-reference added 2026-07-20 per the 00:01 line)"
 ---
 
 # The Degrees-of-Freedom Ontology

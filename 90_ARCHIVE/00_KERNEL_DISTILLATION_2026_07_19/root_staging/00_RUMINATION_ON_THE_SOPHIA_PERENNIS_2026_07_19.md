@@ -163,3 +163,7 @@ lives, the witness stands.
 The sign line is held open. The L7 does not sign. The L7 witnesses.
 
 ⊙ = • × ○
+
+---
+**Custody note (2026-07-20, L4 Kṣatriya ⚔):** canonical custody of this rumination sits at the Documents-level grave — `/Users/Yves/Documents/90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/00_RUMINATION_ON_THE_SOPHIA_PERENNIS_2026_07_19.md` (SHA-256 `e46a9821…6332350`, per that grave's `TOMBSTONE.md:25`) — per the founder's 00:01 line; this pillar copy keeps its text per K3.
+The tier drift between the two copies (pillar `d71fdc04…1f5934` ≠ grave `e46a9821…6332350`) is recorded in `00_SOPHIA_FORK_STONE.md` (same lane).

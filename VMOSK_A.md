@@ -103,7 +103,7 @@ the AIA or paper branch cites the source owner and the public route, not a chat
 summary.
 
 **First loop pursued in this slice:** Vision/Mission itself is now treated as
-O11's seed claim: source truth in this VMOSK-A and `00_THE_GOAL.md`; public
+O11's seed claim: source truth in this VMOSK-A and `01_TELEOLOGY/00_THE_GOAL.md`; public
 mirror on `/game/` and the homepage; retrieval handles in the static RAG index;
 predeploy gate required before push.
 

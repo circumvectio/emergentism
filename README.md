@@ -11,11 +11,13 @@ rosetta:
 
 # 01_EMERGENTISM — Perennial Doctrine
 
-> **The Goal (Ω stated):** [`00_THE_GOAL.md`](00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living worldview for Dasein (ontology of the finite reader, teleology of dharma-in-the-game, recursive method), played as the Soul Loop cycling the five Knows until durable `W_i(T)` is maximized only on the boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, with symbiont and holobiont rising together. The five refusals clear the space; the Goal is what the space is for.
+> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living worldview for Dasein (ontology of the finite reader, teleology of dharma-in-the-game, recursive method), played as the Soul Loop cycling the five Knows until durable `W_i(T)` is maximized only on the boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, with symbiont and holobiont rising together. The five refusals clear the space; the Goal is what the space is for.
 
 > **Current Vision/Mission (2026-06-13):** [`VMOSK_A.md`](VMOSK_A.md) now states the operational V/M explicitly: make Emergentism a living Weltanschauung for Dasein, and build the canon, method, public site, AIA medium, papers, and Soul Loop practice that let finite players continuously and recursively disambiguate reality into action without extraction.
 
 > **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
+
+> **Read order (post-signature, 2026-07-20 — receipt 139 SIGNED / authority 145):** the signed kernel stack is now the front-door chain — [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) (**the Door**) → [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md) (**the Map**) → [`10_SEED/01_THE_SEED_LADDER/`](10_SEED/01_THE_SEED_LADDER/) (**the Compression**) → the seven -ologies (`01_TELEOLOGY/` … `07_THEOLOGY/`) → the [`11_UPLINK/`](11_UPLINK/) record → the [`12_PUBLIC_SITE/`](12_PUBLIC_SITE/) funnel. The former root front-door routings (TREE_OUTLINE, LENS, READER_GUIDE, SEVENFOLD) are K3-tombstoned stubs beneath this chain; `00_THE_GOAL.md` resolves at its canonical home `01_TELEOLOGY/00_THE_GOAL.md`.
 
 > **Current state — 2026-07-19 (K2-signed wave, receipt K2_SESSION_2026_07_19):** new root-level strategy canon now sits beside the Foundation readers —
 > - [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the funnel fable → /plainly/ → /record/ → /axioms/ → book → /practice/ → /build/; Open Canon Foundation, not a religion; immune system (№017 rule, red-team budget, forkable canon).
@@ -30,13 +32,16 @@ rosetta:
 **Date:** 2026-06-16 (root tree synced to 2026-06-15 three-pillar reorganization; canonical surface preserved per K3)
 **Scope:** Perennial doctrine root, sevenfold Foundation, Uplink packets, tools, seed
 
-*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`. 2026-07-19: current-state note and Quick Links extended for the 2026-07-18/19 K2-signed strategy canon (Spread, Synthetic Gap, Rosetta Protocol, First Receipt, OCF charter pair) and the `/fable/` + `/practice/` site stages.*
+*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`. 2026-07-19: current-state note and Quick Links extended for the 2026-07-18/19 K2-signed strategy canon (Spread, Synthetic Gap, Rosetta Protocol, First Receipt, OCF charter pair) and the `/fable/` + `/practice/` site stages. 2026-07-20: read order re-pointed to the signed kernel stack (Door → Map → Seed Ladder → -ologies → Uplink record → public funnel) per receipt 139 SIGNED / authority 145; GOAL resolves at `01_TELEOLOGY/00_THE_GOAL.md`; old root front doors K3-tombstoned.*
 
 ## Quick Links
-- [`00_CANONICAL_TREE_OUTLINE.md`](00_CANONICAL_TREE_OUTLINE.md) — the disk-verified whole-tree map; read it before concluding any name or number is "wrong"
+- [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) — **the Door** (signed 2026-07-20, receipt 139 SIGNED): the compact worldview statement; start here
+- [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md) — **the Map**: kernel architecture and distillation order beneath the Door
+- [`10_SEED/01_THE_SEED_LADDER/`](10_SEED/01_THE_SEED_LADDER/) — **the Compression**: the seed ladder D0–D6
 - [`AGENT_README.md`](AGENT_README.md) — agent route card for this org
-- [`00_EMERGENTISM_AS_A_LENS.md`](00_EMERGENTISM_AS_A_LENS.md) — compressed worldview/lens entry assembled from current source canon
-- [`00_FOUNDATION_READER_GUIDE.md`](00_FOUNDATION_READER_GUIDE.md) — long-form source reading spine for reality, ontology, teleology, and public symbol
+- [`00_CANONICAL_TREE_OUTLINE.md`](00_CANONICAL_TREE_OUTLINE.md) — K3 tombstone stub (2026-07-20); the disk-verified whole-tree map, superseded as front door by the Door/Map above
+- [`00_EMERGENTISM_AS_A_LENS.md`](00_EMERGENTISM_AS_A_LENS.md) — K3 tombstone stub (2026-07-20); compressed lens entry, superseded by the Door
+- [`00_FOUNDATION_READER_GUIDE.md`](00_FOUNDATION_READER_GUIDE.md) — K3 tombstone stub (2026-07-20); long-form reading spine, superseded by the Map + Seed Ladder
 - [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the public funnel (2026-07-19)
 - [`00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) — K2-signed arena: all worldviews are wagers; posture is the axis (2026-07-19)
 - [`00_THE_ROSETTA_PROTOCOL_v0.1.md`](00_THE_ROSETTA_PROTOCOL_v0.1.md) — three-scripts rule (story / plain terms / receipt); fourth script is machine (K2-signed 2026-07-19)
@@ -56,9 +61,9 @@ The former `01_FRAMEWORK/01_FOUNDATIONS/` content now lives here directly. The f
 
 ## Worldview / Lens Spine
 
-When this root is used as a compact Weltanschauung, read the actual source folders in this order:
+When this root is used as a compact Weltanschauung, read the actual source folders in this order (front-door chain post-2026-07-20: the signed Door → Map → Seed Ladder above; this spine is the source-folder depth beneath it):
 
-1. `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md` — the compact statement that Emergentism is a lens, worldview, and toolchain.
+1. `00_THE_WELTANSCHAUUNG.md` (root — the signed Door, 2026-07-20; retained L5 source: `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`) — the compact statement that Emergentism is a lens, worldview, and toolchain.
 2. `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` and `D_SERIES_DOMAINS/D32_MATHEMATICS.md` — the seven Rosetta rows as mathematical action signatures on `P_node = Φ × V`.
 3. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` — Ground, Being, Teleological Force, Dasein, and beings kept distinct.
 4. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` and `01_TELEOLOGY/00_FROM_LAGRANGIAN_TO_DAC.md` — the directional / world-building reading.
@@ -199,7 +204,7 @@ The following doctrines are downstream applications of the Foundation to the Aut
 ## Reader Guides
 
 - `AGENT_README.md` is the one-page route card for AI agents.
-- `00_FOUNDATION_READER_GUIDE.md` preserves the detailed old Foundation README after the move.
+- `00_FOUNDATION_READER_GUIDE.md` preserves the detailed old Foundation README after the move (K3-tombstoned 2026-07-20; stub resolves — the signed Door/Map now carry the front-door role).
 - `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` defines the standard for sub-subfolder front doors, source ownership, archives, compatibility stubs, and safe moves.
 - `90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/2026-05-08_GOOGLE_DOCS_APPLICATION_BACKLOG.md` (archived 2026-04-25 reorg) routes the 2026-05-08 Google Docs corpus into doctrine/application actions without promoting it to canon. Per L3 audit Wave SK-4 — 04_APPLICATIONS lane was archived, not relocated; live system architecture citations were inadvertently broken.
 - `11_UPLINK/00_CORE/00_INDEX.md` remains the Uplink route index.

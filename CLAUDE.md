@@ -21,15 +21,21 @@ Work here is framework-layer unless a document explicitly says otherwise. Do **n
 
 ## Read order
 
+Post-signature chain (2026-07-20, receipt 139 SIGNED / authority 145): Door → Map → Compression → -ologies → Uplink record → public funnel.
+
 1. `README.md` — folder purpose
 2. `AGENT_README.md` — agent orientation
-3. `00_SEVENFOLD_FOUNDATION_ROOT.md` — the canonical seven-fold structure
-4. `00_FOUNDATION_READER_GUIDE.md` — guided read order across the -ologies
-5. `VMOSK_A.md` — this root's V/M/O/S/K/A
-6. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
-7. `08_FRAMEWORK_SUPPORT/` for governance, operators, evidence, synthesis, and agent grammar; old applications/translation/dissemination lanes are archived under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`
-8. `11_UPLINK/` for session-packets and reconciliation work
-9. `09_TOOLS/` for scripts, data pipelines, audit artifacts
+3. `00_THE_WELTANSCHAUUNG.md` — **the Door** (signed 2026-07-20)
+4. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
+5. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (D0–D6)
+6. `VMOSK_A.md` — this root's V/M/O/S/K/A
+7. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
+8. `08_FRAMEWORK_SUPPORT/` for governance, operators, evidence, synthesis, and agent grammar; old applications/translation/dissemination lanes are archived under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`
+9. `11_UPLINK/` for session-packets and reconciliation work (the Uplink record)
+10. `09_TOOLS/` for scripts, data pipelines, audit artifacts
+11. `12_PUBLIC_SITE/` — the public funnel (`/fable/` … `/practice/`)
+
+Former read-order stops `00_SEVENFOLD_FOUNDATION_ROOT.md` and `00_FOUNDATION_READER_GUIDE.md` are K3 tombstone stubs (2026-07-20); the signed Door/Map carry the front-door role. `00_THE_GOAL.md` resolves at `01_TELEOLOGY/00_THE_GOAL.md`.
 
 ## Folder map
 

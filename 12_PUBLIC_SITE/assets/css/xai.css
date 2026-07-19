@@ -1859,6 +1859,101 @@ body.webgl-failed .fallback {
   margin-top: 16px;
 }
 
+/* Dimension axiom ledgers */
+.axiom-ledger {
+  max-width: 920px;
+  margin: 120px auto;
+  padding: 0 32px;
+}
+
+.axiom-ledger-header {
+  max-width: 760px;
+  margin-bottom: 36px;
+}
+
+.axiom-ledger-header h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.axiom-ledger-header p,
+.axiom-note {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.axiom-list {
+  border-top: 1px solid var(--border);
+}
+
+.axiom-card {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.34fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.axiom-origin {
+  color: var(--gold);
+  font-family: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: .04em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.axiom-card h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.axiom-card p {
+  color: var(--text);
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.axiom-card p:last-child {
+  margin-bottom: 0;
+}
+
+.axiom-card ul {
+  margin: 10px 0 0;
+  padding-left: 1.2rem;
+}
+
+.axiom-card li {
+  color: var(--text);
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.axiom-note {
+  margin: 24px 0 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+}
+
+.axiom-note a {
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .axiom-ledger {
+    padding: 0 20px;
+  }
+
+  .axiom-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
 .equation-block {
   display: grid;
   gap: 8px;

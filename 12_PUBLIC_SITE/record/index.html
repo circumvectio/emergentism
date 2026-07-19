@@ -167,6 +167,21 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
 
+/* ---------- CHECK-hub sub-nav ---------- */
+.subtabs{display:flex;flex-wrap:wrap;gap:.4rem;margin:2rem 0 0;font-family:var(--mono);font-size:.76rem}
+.subtabs a{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:0 1.05rem;border:1px solid var(--line);border-radius:999px;
+  color:var(--bone-dim);text-decoration:none;letter-spacing:.05em;text-transform:uppercase;transition:.16s;background:var(--panel)}
+.subtabs a:hover{border-color:var(--gold);color:var(--gold)}
+.subtabs a[aria-current="page"]{color:var(--gold);border-color:var(--gold-deep);background:color-mix(in srgb,var(--gold) 7%,transparent)}
+.subtabs .hint{color:var(--bone-ghost);letter-spacing:.02em;text-transform:none}
+/* anchors + receipt links */
+.rail .no a{color:inherit;text-decoration:none}
+.rail .no a:hover{color:var(--gold)}
+.case[id]{scroll-margin-top:5.5rem}
+.src a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:2px}
+.src a:hover{color:var(--gold)}
+.src .int{color:var(--bone-ghost)}
+
 /* motion */
 .reveal{opacity:0;transform:translateY(16px)}
 .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
@@ -196,10 +211,9 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 <header class="topbar">
   <a class="brand" href="../home/">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
-    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
-    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
-    <a href="../axioms/">Axioms</a><a href="../record/" class="here" aria-current="page">Record</a>
-    <a href="../book/">Book</a>
+    <a href="../discoveries/">Discoveries</a><a href="../fable/">Fable</a><a href="../plainly/">Plainly</a>
+    <a href="../record/" class="here" aria-current="page">Record</a><a href="../axioms/">Axioms</a>
+    <a href="../practice/">Practice</a><a href="../book/">Book</a>
   </nav>
 </header>
 
@@ -243,6 +257,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       <span class="r gold"><span class="n" data-count="7">7</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
       <span class="r zero"><span class="n" data-count="0">0</span><span class="lab">deleted</span></span>
     </div>
+
+    <nav class="subtabs reveal in" aria-label="The CHECK hub — three ways to audit this framework">
+      <a href="./" aria-current="page">Verdicts · the record</a>
+      <a href="../test/">Falsifiers · how to kill it</a>
+      <a href="../halahala/">What broke · halāhala</a>
+      <span class="hint">one hub, three ledgers</span>
+    </nav>
   </header>
 
   <div class="legend" role="group" aria-label="Filter by verdict">
@@ -257,8 +278,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
   <div class="ledger" id="ledger">
 
     <!-- reserved next slot -->
-    <article class="case reserved reveal in" aria-label="Reserved slot">
-      <div class="rail"><div class="no">№017</div></div>
+    <article id="017" class="case reserved reveal in" aria-label="Reserved slot">
+      <div class="rail"><div class="no"><a href="#017">№017</a></div></div>
       <div class="doc">
         <p class="claim">Reserved — for the claim that fails next<span class="caret" aria-hidden="true"></span></p>
         <p class="sub">This slot is never empty for long. A framework that has stopped adding rows here has stopped being tested — and by its own A7, that is the failure state. Bookmark it.</p>
@@ -266,9 +287,9 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </article>
 
     <!-- № 016 · GFS AND-class — RETRACTED 2026-07-13; experiment archived per K3 -->
-    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
+    <article id="016" class="case" data-verdict="retracted" style="--v:var(--v-cut)">
       <div class="rail reveal">
-        <div class="no">№016</div><div class="vdot"></div>
+        <div class="no"><a href="#016">№016</a></div><div class="vdot"></div>
         <div class="date">2026<br>07 · 12</div><div class="cid">GFS·ANDCLASS</div>
       </div>
       <div class="doc reveal">
@@ -278,13 +299,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Retracted</span><span class="qual">tested the wrong register</span></div>
         <p class="tiermove">an <em>interior</em> reading the framework never load-bears on <span class="arrow">→</span> the zero-factor claim is <b>untouched</b></p>
         <p class="cost"><b>Why it was retracted:</b> the real claim is the zero-factor catastrophe — the knockout, where <em>one</em> factor hits zero and the whole product collapses. <em>Everyone has a plan until they get punched in the face.</em> A survey can't reach that: nobody at zero fills out a questionnaire — the dead don't, the knocked-out don't. It can only measure how well Tyson's opponents were doing <em>before</em> the punch landed. The claim lives at the boundary; this measured the middle. <b>Kept here rather than hidden</b> — a record you can prune is not a record.</p>
-        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
+        <p class="src">experiment archived to 90_ARCHIVE/2026_07_13_gfs_retraction — internal: archived, path preserved, not yet rendered · retained per K3, not citable · I over-featured it this session; retracted 2026-07-13</p>
       </div>
     </article>
 
     <!-- № 015 · A1 register -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№015</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">A1·REGISTER</div></div>
+    <article id="015" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#015">№015</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">A1·REGISTER</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">The Zero-Factor Catastrophe <em>proves</em> the product form.</p>
@@ -292,13 +313,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">node-law “ד <span class="arrow">→</span> <span class="t t-c">[C]</span> unwon wager · manifold identity <span class="t t-a">[A]</span></p>
         <p class="cost"><b>What it costs:</b> the framework may not claim “specifically ×, not min” for finite nodes. A ×-vs-+ test can't settle it; the live comparison is × against its siblings — see №016.</p>
-        <p class="src">audit · keel-108 (K2-countersigned 2026-07-12)</p>
+        <p class="src">audit · keel-108 (K2-countersigned 2026-07-12) <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 014 · A7 wager -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№014</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">A7·WAGER</div></div>
+    <article id="014" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#014">№014</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">A7·WAGER</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Self-correction is the strongest axiom — the proof that the framework works.</p>
@@ -306,13 +327,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">A7 <span class="t t-s">[S]</span> theorem <span class="arrow">→</span> <span class="t t-i">[I]</span><span class="t t-c">[C]</span> wager · credential moves to R6</p>
         <p class="cost"><b>What it costs:</b> the framework's proudest self-description. What replaces it is sturdier — a refusal of infallibility that cannot itself be held infallibly.</p>
-        <p class="src">audit · axioms page · Open Canon Covenant (K2 2026-07-12)</p>
+        <p class="src">audit · <a href="../axioms/">axioms page</a> · Open Canon Covenant (K2 2026-07-12) <span class="int">— covenant internal: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 013 · Triad -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№013</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">TRIAD·N3</div></div>
+    <article id="013" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#013">№013</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">TRIAD·N3</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Exactly three operators — N = 3 is uniquely forced. QED.</p>
@@ -320,13 +341,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">“N=3 proved” <span class="arrow">→</span> <span class="t t-c">[C]</span> conjecture</p>
         <p class="cost"><b>What it costs:</b> “extraction is impossible by count” falls. The ethical floor is untouched — η=0 survives as a conditional gate, which never depended on the count.</p>
-        <p class="src">audit · formal/11-efr-triadic-stability</p>
+        <p class="src">audit · <a href="../formal/11-efr-triadic-stability/">formal/11-efr-triadic-stability</a></p>
       </div>
     </article>
 
     <!-- № 012 · LV -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№012</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">LV·CENTER</div></div>
+    <article id="012" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#012">№012</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">LV·CENTER</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Zero extraction is a basin of attraction — the system converges to η = 1.</p>
@@ -334,13 +355,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">“attractor / basin” <span class="arrow">→</span> bounded orbit, time-average · <span class="t t-i">[I]</span></p>
         <p class="cost"><b>What it costs:</b> the word “attractor.” The load-bearing contrast survives — bounded orbit versus unbounded divergence — but not convergence to a point.</p>
-        <p class="src">audit · formal/12-efr-extraction-coefficient</p>
+        <p class="src">audit · <a href="../formal/12-efr-extraction-coefficient/">formal/12-efr-extraction-coefficient</a></p>
       </div>
     </article>
 
     <!-- № 011 · O3 -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№011</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">O3·FROM·O5</div></div>
+    <article id="011" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#011">№011</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">O3·FROM·O5</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Algebraic closure forces simple-connectedness — O3 follows from O5, proved.</p>
@@ -348,13 +369,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">“proved” <span class="arrow">→</span> <span class="t t-c">[C]</span>, needs duality + minimal dimension</p>
         <p class="cost"><b>What it costs:</b> one leg of the axiom-minimality argument. The sphere is still <span class="em">selected</span>, just not forced by closure alone.</p>
-        <p class="src">audit · foundations/the-honest-position S2</p>
+        <p class="src">audit · <a href="../foundations/the-honest-position/">foundations/the-honest-position</a> S2</p>
       </div>
     </article>
 
     <!-- № 010 · Helix -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№010</div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">HELIX·S9</div></div>
+    <article id="010" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#010">№010</a></div><div class="vdot"></div><div class="date">2026<br>07 · 12</div><div class="cid">HELIX·S9</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">No path on the sphere changes latitude without rotating — all paths are helical.</p>
@@ -362,13 +383,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span></div>
         <p class="tiermove">“all paths helical, proved” <span class="arrow">→</span> generic path only · <span class="t t-c">[C]</span></p>
         <p class="cost"><b>What it costs:</b> a clean universal becomes “the generic path spirals.” True, weaker, its own kill criterion firing.</p>
-        <p class="src">audit · trinity/11-the-helix · honest-position S9</p>
+        <p class="src">audit · <a href="../trinity/11-the-helix/">trinity/11-the-helix</a> · <a href="../foundations/the-honest-position/">honest-position</a> S9</p>
       </div>
     </article>
 
     <!-- № 009 · Mult keel -->
-    <article class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
-      <div class="rail reveal"><div class="no">№009</div><div class="vdot"></div><div class="date">2026<br>07 · 11</div><div class="cid">MULT·KEEL</div></div>
+    <article id="009" class="case v-fenced" data-verdict="fenced" style="--v:var(--v-fenced)">
+      <div class="rail reveal"><div class="no"><a href="#009">№009</a></div><div class="vdot"></div><div class="date">2026<br>07 · 11</div><div class="cid">MULT·KEEL</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Fitness <em>must</em> be multiplicative — the product is the unique law.</p>
@@ -376,13 +397,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Fenced</span><span class="qual">→ then ratified as a class</span></div>
         <p class="tiermove">“must be ×” <span class="arrow">→</span> AND-class · boundary <span class="t t-e">[E]</span> (K2) · interior <span class="t t-c">[C]</span></p>
         <p class="cost"><b>What it costs:</b> the uniqueness of the signature operator — resolved, not lost: the keel holds as a class, and the class is what was ever load-bearing.</p>
-        <p class="src">receipt · keel-108 · settled-canon registry</p>
+        <p class="src">receipt · keel-108 · settled-canon registry <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 008 · R6 the credential -->
-    <article class="case v-refuted struck" data-verdict="refuted" style="--v:var(--v-refuted)">
-      <div class="rail reveal"><div class="no">№008</div><div class="vdot"></div><div class="date">2026<br>06 · 10</div><div class="cid">R6</div></div>
+    <article id="008" class="case v-refuted struck" data-verdict="refuted" style="--v:var(--v-refuted)">
+      <div class="rail reveal"><div class="no"><a href="#008">№008</a></div><div class="vdot"></div><div class="date">2026<br>06 · 10</div><div class="cid">R6</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim · the flagship</p>
         <p class="claim">Empowerment = Φ × V, under a conserved conjugate product φ·ν = 1.</p>
@@ -390,13 +411,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Refuted</span><span class="qual">against interest · the kill fired twice, and was honored</span></div>
         <p class="tiermove">flagship <span class="t t-a">[A]</span> <span class="arrow">→</span> <span class="t t-c">refuted</span></p>
         <p class="cost"><b>What it costs:</b> the single most load-bearing novel result in the program. We changed our mind against our own interest and left the record standing. <span class="em">This — not the self-narrative — is the credential.</span></p>
-        <p class="src">receipt · R6_CONJUGATE_RESULTS.md</p>
+        <p class="src">receipt · R6_CONJUGATE_RESULTS.md <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 007 · Squid cut -->
-    <article class="case v-cut struck" data-verdict="cut" style="--v:var(--v-cut)">
-      <div class="rail reveal"><div class="no">№007</div><div class="vdot"></div><div class="date">2026<br>07 · 02</div><div class="cid">SQUID</div></div>
+    <article id="007" class="case v-cut struck" data-verdict="cut" style="--v:var(--v-cut)">
+      <div class="rail reveal"><div class="no"><a href="#007">№007</a></div><div class="vdot"></div><div class="date">2026<br>07 · 02</div><div class="cid">SQUID</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">The Humboldt-squid cannibalism case shows extraction self-terminating.</p>
@@ -404,13 +425,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Cut</span><span class="qual">false biology</span></div>
         <p class="tiermove">illustrative claim <span class="arrow">→</span> removed · the gated-extraction result stands on its own</p>
         <p class="cost"><b>What it costs:</b> a memorable image. The seven-operator audit removed it and the argument was fine without it.</p>
-        <p class="src">audit · seven-operator corpus review (556 agents)</p>
+        <p class="src">audit · seven-operator corpus review (556 agents) <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 006 · Imports cut -->
-    <article class="case v-cut struck" data-verdict="cut" style="--v:var(--v-cut)">
-      <div class="rail reveal"><div class="no">№006</div><div class="vdot"></div><div class="date">2026</div><div class="cid">IMPORTS</div></div>
+    <article id="006" class="case v-cut struck" data-verdict="cut" style="--v:var(--v-cut)">
+      <div class="rail reveal"><div class="no"><a href="#006">№006</a></div><div class="vdot"></div><div class="date">2026</div><div class="cid">IMPORTS</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">R* ≈ 1.5 · “ABM-verified” · 85–92% syntropy · Kolmogorov-zero · a 25% tipping point.</p>
@@ -418,13 +439,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Cut</span><span class="qual">retracted figures</span></div>
         <p class="tiermove">five borrowed constants <span class="arrow">→</span> struck · “an AI confirmed X” barred as evidence</p>
         <p class="cost"><b>What it costs:</b> a set of impressive-looking anchors. Tombstoned in place so no future reader mistakes them for live claims.</p>
-        <p class="src">registry · forbidden imports</p>
+        <p class="src">registry · forbidden imports <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 005 · R10 -->
-    <article class="case v-mixed" data-verdict="mixed" style="--v:var(--v-mixed)">
-      <div class="rail reveal"><div class="no">№005</div><div class="vdot"></div><div class="date">2026<br>06 · 15</div><div class="cid">R10</div></div>
+    <article id="005" class="case v-mixed" data-verdict="mixed" style="--v:var(--v-mixed)">
+      <div class="rail reveal"><div class="no"><a href="#005">№005</a></div><div class="vdot"></div><div class="date">2026<br>06 · 15</div><div class="cid">R10</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">After R6 fell — does the conjugate law reappear at agent contact?</p>
@@ -432,13 +453,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Mixed</span><span class="qual">split, recorded as split</span></div>
         <p class="tiermove">R10a <span class="t t-a">[A]</span> in-model · R10b <span class="t t-c">[C]</span> not recovered</p>
         <p class="cost"><b>What it costs:</b> the conservation law does not live at the agent scale. What survives is the product's <span class="em">catastrophe</span>, not its <span class="em">conservation</span>.</p>
-        <p class="src">receipt · E2_REFLEXIVE_RESULTS.md · V3 mutual-modeling fork</p>
+        <p class="src">receipt · E2_REFLEXIVE_RESULTS.md · V3 mutual-modeling fork <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 004 · GFS W1 — RETRACTED alongside №016, 2026-07-13 -->
-    <article class="case" data-verdict="retracted" style="--v:var(--v-cut)">
-      <div class="rail reveal"><div class="no">№004</div><div class="vdot"></div><div class="date">2026<br>04 · 10</div><div class="cid">GFS·W1</div></div>
+    <article id="004" class="case" data-verdict="retracted" style="--v:var(--v-cut)">
+      <div class="rail reveal"><div class="no"><a href="#004">№004</a></div><div class="vdot"></div><div class="date">2026<br>04 · 10</div><div class="cid">GFS·W1</div></div>
       <div class="doc reveal">
         <p class="claimline">A test — retracted 2026-07-13</p>
         <p class="claim">The earlier survey pass — the first look at flourishing data.</p>
@@ -451,8 +472,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </article>
 
     <!-- № 003 · CEF -->
-    <article class="case v-held" data-verdict="held" style="--v:var(--v-held)">
-      <div class="rail reveal"><div class="no">№003</div><div class="vdot"></div><div class="date">2026<br>05</div><div class="cid">CEF</div></div>
+    <article id="003" class="case v-held" data-verdict="held" style="--v:var(--v-held)">
+      <div class="rail reveal"><div class="no"><a href="#003">№003</a></div><div class="vdot"></div><div class="date">2026<br>05</div><div class="cid">CEF</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">Does teleology require consciousness, or only lookahead?</p>
@@ -465,8 +486,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </article>
 
     <!-- № 002 · R3 -->
-    <article class="case v-held" data-verdict="held" style="--v:var(--v-held)">
-      <div class="rail reveal"><div class="no">№002</div><div class="vdot"></div><div class="date">2026<br>05</div><div class="cid">R3</div></div>
+    <article id="002" class="case v-held" data-verdict="held" style="--v:var(--v-held)">
+      <div class="rail reveal"><div class="no"><a href="#002">№002</a></div><div class="vdot"></div><div class="date">2026<br>05</div><div class="cid">R3</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim</p>
         <p class="claim">The triage inversion — and the artifact we caught inside it.</p>
@@ -474,13 +495,13 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Held</span><span class="qual">self-corrected</span></div>
         <p class="tiermove">finding <span class="t t-a">[A]</span> in-model · v1 artifact caught and retracted internally</p>
         <p class="cost"><b>What it held:</b> the inversion is real and trajectory-driven; the verdict is objective-relative. We fixed our own error before shipping it.</p>
-        <p class="src">receipt · R3 ×3</p>
+        <p class="src">receipt · R3 ×3 <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
     <!-- № 001 · R9 -->
-    <article class="case v-held" data-verdict="held" style="--v:var(--v-held)">
-      <div class="rail reveal"><div class="no">№001</div><div class="vdot"></div><div class="date">2026<br>06</div><div class="cid">R9</div></div>
+    <article id="001" class="case v-held" data-verdict="held" style="--v:var(--v-held)">
+      <div class="rail reveal"><div class="no"><a href="#001">№001</a></div><div class="vdot"></div><div class="date">2026<br>06</div><div class="cid">R9</div></div>
       <div class="doc reveal">
         <p class="claimline">The claim · the first entry</p>
         <p class="claim">The refusal to overfit.</p>
@@ -488,7 +509,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
         <div class="verdict-row"><span class="stamp">Held</span><span class="qual">integrity · a null left null</span></div>
         <p class="tiermove">the epistemics working <span class="t t-s">[S]</span></p>
         <p class="cost"><b>What it held:</b> nothing was claimed. The most important entry in the ledger — the discipline choosing a null over a forced win.</p>
-        <p class="src">receipt · R9 haystack ×2 (+ two void runs logged)</p>
+        <p class="src">receipt · R9 haystack ×2 (+ two void runs logged) <span class="int">— internal receipt: archived, path preserved, not yet rendered</span></p>
       </div>
     </article>
 
@@ -498,7 +519,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     <p class="r">K3 · the no-erasure law</p>
     <p><b>Nothing on this page was deleted.</b> Struck means struck, not gone — a refuted claim is left legible, with its date, so the next reader watches the framework change its mind instead of reading a tidy story with the seams sanded off. A worldview that hides its corrections cannot be trusted with the ones it hasn't found yet. The record grows in both directions — and slot №017 is already open.</p>
     <div class="cta-row">
-      <a class="cta primary" href="../plainly/">New here? Start plainly →</a>
+      <a class="cta primary" href="../practice/">Try the practice in an afternoon →</a>
+      <a class="cta" href="../plainly/">New here? Start plainly →</a>
       <a class="cta" href="../axioms/">The axioms, tiered →</a>
       <a class="cta" href="../book/">Read the book →</a>
       <a class="cta" href="../5/">The Burrisphere →</a>
@@ -508,7 +530,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 
 <footer class="foot wrap">
   <div class="glyph">⊙ = • × ○</div>
-  <p>The Trial Record · faithful to the receipts under 03_METHODOLOGY and the 2026-07 audits.<br>Every entry carries a date and a tier. Coherence is not truth — <a href="../axioms/">see the axioms</a>.</p>
+  <p>The Trial Record · faithful to the receipts under 03_METHODOLOGY and the 2026-07 audits.<br>One canon, three scripts — <a href="../fable/">the fable</a> (story) · <a href="../plainly/">plainly</a> (plain words) · this record (receipts).<br>Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.<br>Every entry carries a date and a tier. Coherence is not truth — <a href="../axioms/">see the axioms</a>.<br>If you can see directly, <a href="../exit/">put this down</a>.</p>
 </footer>
 
 <script>

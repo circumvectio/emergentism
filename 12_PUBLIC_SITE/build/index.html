@@ -166,67 +166,78 @@
   </div>
 </section>
 
-<!-- ── 4. THE CASTE DISPATCH ─────────────────────────────────────────────── -->
+<!-- ── 4. THE SEVEN-ROLE DISPATCH ────────────────────────────────────────── -->
 <section class="content-section" id="dispatch">
   <div class="section-inner">
     <p class="section-kicker">Evidence tier [S] — functional role map</p>
-    <h2>The Caste Dispatch</h2>
+    <h2>The Seven-Role Dispatch</h2>
     <p class="lead">
       The Rosetta system is not AI governance. It is a functional role map — seven jobs that must be filled
-      before any document ships. On this project, all seven roles are executed by language models under human direction.
+      before any document ships: Firewall, Truth-Cut, Audit, Executor, Architect, Compressor, Witness.
+      On this project, all seven roles are executed by language models under human direction.
       The map is the discipline. The names are optional.
     </p>
 
+    <style>
+      /* Three-column dispatch (functional names first; Sanskrit lives in the footnote) */
+      .dispatch-row { grid-template-columns: 110px 200px 1fr; }
+      @media (max-width: 720px) {
+        .dispatch-row { grid-template-columns: 1fr; }
+        .dispatch-row span:nth-child(2)::before { content: "Job: "; }
+        .dispatch-row span:nth-child(3)::before { content: "Check: "; }
+      }
+      .dispatch-row span:nth-child(2) { color: var(--text-muted); }
+      .dispatch-row span:nth-child(3) { color: var(--text-dim); font-size: 0.82rem; }
+    </style>
     <div class="dispatch-table">
       <div class="dispatch-row dispatch-header">
         <span>Role</span>
-        <span>Sanskrit name</span>
         <span>Job</span>
         <span>What they check</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Firewall</span>
-        <span class="dispatch-sanskrit">L1 Caṇḍāla</span>
+        <span class="dispatch-role">L1 Firewall</span>
         <span>Contradiction isolation</span>
         <span>Does this claim contradict a settled [A]? Is the tone overconfident?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Truth-Cut</span>
-        <span class="dispatch-sanskrit">L2 Śūdra</span>
+        <span class="dispatch-role">L2 Truth-Cut</span>
         <span>Evidence-tier discipline</span>
         <span>Is every claim tiered? Is any [C] presented as fact?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Audit</span>
-        <span class="dispatch-sanskrit">L3 Vaiśya</span>
+        <span class="dispatch-role">L3 Audit</span>
         <span>Route verification</span>
         <span>Do links point to active canon? Are archive files cited as live?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Executor</span>
-        <span class="dispatch-sanskrit">L4 Kṣatriya</span>
+        <span class="dispatch-role">L4 Executor</span>
         <span>Build and deploy</span>
         <span>Does the generator run? Does the gate pass? Is the receipt valid?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Architect</span>
-        <span class="dispatch-sanskrit">L5 Brāhmaṇa</span>
+        <span class="dispatch-role">L5 Architect</span>
         <span>Schema and navigation</span>
         <span>Does the site structure match the canonical tree? Is the map honest?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Compressor</span>
-        <span class="dispatch-sanskrit">L6 Sādhu</span>
+        <span class="dispatch-role">L6 Compressor</span>
         <span>Archive and tombstone</span>
         <span>Are superseded claims tombstoned? Is K3 discipline followed?</span>
       </div>
       <div class="dispatch-row">
-        <span class="dispatch-role">Witness</span>
-        <span class="dispatch-sanskrit">L7 Ṛṣi</span>
+        <span class="dispatch-role">L7 Witness</span>
         <span>Boundary observation</span>
         <span>Does the public face match the internal discipline? Is the packaging honest?</span>
       </div>
     </div>
+
+    <p class="dispatch-note">
+      <em>Naming footnote:</em> in the source tradition's comparative table these seven roles carry Sanskrit
+      ladder names — L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi —
+      used strictly as functional labels: function, never birth and never rank. The functional names above
+      are the canonical public vocabulary.
+    </p>
 
     <p class="dispatch-note">
       <strong>Evidence tier [S]:</strong> This table is a structural scaffold — it describes the dispatch grammar,

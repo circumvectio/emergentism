@@ -1,5 +1,114 @@
 ---
 rosetta:
+  primary_level: L4
+  primary_column: Meta
+  operator: "Arjuna ⚔"
+  tier: "Executive"
+  regime: "Kṣatriya"
+  register: "[D] staged-per-tier — per-section tiers carried ([S]/[A]/[I]/[C]); the adoption act is the K2-signed line 2026-07-20 (receipt 145)"
+  canonical_phrase: "K-5 The Refusals — five refusals + Ω, the opposite of commandments"
+title: "The 5+1 Constitution — K5 Successor Edition (The Refusals)"
+status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145)"
+date: 2026-07-20
+owner: 01_EMERGENTISM
+supersedes: "the 2026-06-06 edition (K2-RULED 2026-05-30) — preserved in full beneath as a dated stratum per K3"
+parents:
+  - 00_K5_REFUSALS.md
+  - 00_THE_KERNEL_INDEX.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/145_AUTHORITY_FORK_RESOLUTION_2026_07_20.md
+evidence_tier: "[S] framework-internal structure of the 5+1; [A] η=0 ↔ reciprocity identity in log coordinates; [I] register-bridge reading; the adoption is [B] (dated K2 line, receipt 145)"
+---
+
+# The 5+1 Constitution — K5 Successor Edition: The Refusals
+
+> **Adoption note (2026-07-20).** This successor edition executes the founder's K2-signed line 2026-07-20 00:01 — *"I sign receipt 139 — boxes 1–9; charter = DRAFT; K6 = 12 at slot 06; …"* — under receipt 145. It supersedes the 2026-06-06 edition (K2-RULED 2026-05-30) as the controlling surface; **the prior edition is preserved in full beneath as a dated stratum per K3** (archive-first; nothing erased). Venture vocabulary (DAV / PRISM / organs / fees / products-as-warrant) is purged from the constitutional layer: the refusals name *requirements*, not routing; operational who-signs-what lives beneath the kernel. `[B]` the dated adoption; `[D]` the assembly until any founder countersign amends it.
+
+---
+
+> **The principle.** A scripture hands down commandments — unearned, to be obeyed. Our constitution is the inverse: **refusals**, *via negativa*. We command no one. We bind only ourselves, by what we will not do. **Refusals bind the holder, never the world** — they are not a code imposed on others but a fence the framework accepts around its own hand. Five refusals cut the entropic attractors; one direction (Ω) names the syntropic attractor the five clear the space for. **5 + 1**, not 6 — the five are on the refusal axis, Ω on a categorically distinct direction axis (K2-ruled 2026-05-30, resolving the historical FIVE-vs-SIX conflict).
+
+---
+
+## The enumeration
+
+| # | Refusal | Refuses | Axis | Tier |
+|---|---|---|---|---|
+| 1 | **η = 0** | extraction — raising yourself by draining what sustains you | *via negativa* | `[S]` axiom |
+| 2 | **K2** | model-only irreversible action | *via negativa* | `[S]` process |
+| 3 | **K3** | unrecorded erasure | *via negativa* | `[S]` discipline |
+| 4 | **K4** | no-exit entrapment | *via negativa* | `[S]` architecture |
+| 5 | **A7** | infallibility | *via negativa* | `[S]` mechanism |
+| +1 | **Ω** | — (the directional telos) | *via positiva* | `[S]` orientation |
+
+The **+1 is not a sixth refusal.** It is the positive direction the five clear
+space for. The selected constitutional program is: **seek to maximize Ω subject
+to the five refusals as feasibility constraints**. This is constrained-
+optimization language `[I/S]`, not a defined Lagrangian: no objective function,
+multipliers, differentiability assumptions, or solution theorem is supplied
+here. A perimeter with no interior is “constraints with no objective”; Ω names
+the direction the constraints are *for*. The strong “reality maximizes balance”
+reading is **withdrawn** — the option cone is reach-dominated and diverges from
+the equator; the withdrawal is kept as nectar.
+
+---
+
+## §1 · η = 0 — Zero extraction
+
+**Do not raise yourself by draining what sustains you** — judged with the sustaining boundary in view, identifying actual impact-bearers (substrate, victim, outcaste included), never scoped to convenient cooperators. `η_move = 0` is the action fence: refuse sustained extraction, preserve the reciprocal relation. The register bridge (`η_ratio` as a log-coordinate diagnostic of drift toward or away from the equator) is a diagnostic, not the fence. **Chosen, not derived** — geometry alone cannot close is→ought; specified coupled models can *show* self-undermining extraction under their assumptions, but the vow is a posit (E8). An aggregate `ΣΔP` is **not** restored as the moral primitive: aggregation can license sacrifice, so dyadic and boundary gates with explicit impact accounting remain necessary. `[S]` structural support in substrate-dependent systems; `[A]` for the log-coordinate identity; the vow itself is `[I]`.
+
+## §2 · K2 — Human sovereignty over the irreversible
+
+**Any irreversible act carries the signature of a natural person** at the time of the act. Model language alone is insufficient. Agency is the equatorial collapse — spending real viability to actualize one branch (D5→D4) — and that collapse is the sovereign, mortal act. A machine may prepare the decision (route, draft, audit, warn, witness); the mortal makes it. *The structure is shared; the agency is sovereign.* `[S]` process. (This surface states the constitutional *requirement*; operational routing of who-signs-what is an implementation matter beneath the kernel, not part of the refusal.)
+
+## §3 · K3 — Archive-first, no silent erasure
+
+**No content is silently erased.** Any removal, retraction, or supersession is accompanied by a dated archive record and a tombstone that names the supersession. New content does not inherit old authority unless the supersession is explicit and dated. K3 is the operational counterpart of A7: A7 names the *capacity* to correct; K3 names the *discipline* of correction — archive, do not erase. The named dead stay named; the graves stay legible. `[S]` discipline.
+
+## §4 · K4 — Grace exit
+
+**Every constituent has a real, documented path for withdrawal** that does not require the framework's continued permission. The path may be costly or slow, but it must be real and documented *before* deployment, not after. The guarantee is *redeemable* assets and a working exit — **not "everything"**, not liquidity, not an honest valuation, not instantaneity (the "leave with everything" slogan is retracted). At the limit, the framework itself can be deprecated: the apophatic return, the door marked exit on the inside. K4 is the constitutional form of Posture IV (withdraw). `[S]` architecture.
+
+## §5 · A7 — Self-correction with tier
+
+**Every claim made in the framework's name is falsifiable by a dated receipt of equal or higher tier.** The framework carries its own destruction manual. When a falsifier fires, the claim is downgraded and the downgrade is dated and archived. No claim is infallible; the correction path is built in. A7 is the one axiom that was tested reflexively and survived — as apparatus, not as a Gödel-forced law. Its own falsifier: a framework *without* this discipline resists capture as well as one with it. `[S]` mechanism.
+
+## +1 · Ω — The direction
+
+**The five refusals are defensive; Ω is the syntropic attractor** — the direction the framework is *toward*. Without Ω the five are a perimeter with no interior. A fence without a direction is paranoia; a direction without a fence is recklessness. Ω is the +1, never a sixth invariant. `[S]` orientation; the noospheric lineage is `[I/S]`.
+
+---
+
+## The refusals are the codified posture
+
+The five refusals are point-for-point the structural answer to the postures a worldview can take toward its own unprovable core (deny / weaponize / confess / withdraw). Four are **Posture III (confess)** codified; K4 is **Posture IV (withdraw)** codified. `[S]`.
+
+| Refusal | Blocks the signature move of | Posture |
+|---|---|---|
+| **A7** | Posture I's forbidden falsifier; Posture II's shield-of-the-myth | III confess |
+| **η = 0** | the blood-myth's content (flourishing *by* draining the out-group) | III confess |
+| **K3** | the memory-hole every certainty-claiming system needs | III confess |
+| **K2** | the automated absolutism both rival postures reach for at scale | III confess |
+| **K4** | the no-exit doctrine in all its forms | IV withdraw |
+
+*In the arena where nothing is provable, a worldview's treatment of its own claims is its treatment of persons. Posture I makes subjects; II makes ammunition; III makes adults; IV makes them free. The epistemics is the ethics — all the way to the door.*
+
+---
+
+## Execution surface
+
+**ACTIVE 2026-07-20** — adopted by the K2-signed line (receipt 145); this successor edition is the controlling surface, and the 2026-06-06 edition is preserved beneath as a dated stratum per K3. **Refusals bind the holder, never the reader.** **Canonical path:** `01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`. Source draft: `01_EMERGENTISM/00_K5_REFUSALS.md` (staged 2026-07-19; absorbed here).
+
+⊙ = • × ○ — *five things we will not do, one direction we face, and no command to anyone but ourselves.*
+
+---
+
+# Prior edition (dated stratum, K3 — preserved 2026-07-20)
+
+> **K3 note.** Everything beneath this line is the prior 2026-06-06 edition (K2-RULED 2026-05-30), preserved verbatim per K3 (archive-first; never erased). It is superseded as controlling surface by the successor edition above; it remains the dated record of the 5+1 as ratified 2026-05-30 and unified 2026-06-06, including its venture-era operational routing language (DAV / PRISM / organ references), which the successor edition purges from the constitutional layer. Its original YAML frontmatter is reproduced inside a fenced block so this file carries exactly one live frontmatter. **No prior content is deleted.**
+
+```yaml
+---
+rosetta:
   primary_level: L7
   primary_column: Institutional Narrative
   secondary:
@@ -32,6 +141,7 @@ depends_on:
   - ../05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md
   - ../05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md
 ---
+```
 
 # The 5+1 Constitution
 
