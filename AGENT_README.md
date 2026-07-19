@@ -35,7 +35,7 @@ live under `12_PUBLIC_SITE/`.
 
 1. `README.md`
 2. `AGENTS.md`
-3. `00_FOUNDATION_READER_GUIDE.md`
+3. `00_THE_WELTANSCHAUUNG.md` (the Door) · `00_THE_KERNEL_INDEX.md` · `10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`
 4. `00_THE_SPREAD_v0.1.md` — K2-signed strategy: users, not believers; the funnel
 5. `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md` — K2-signed arena: worldviews as wagers; posture as axis
 6. `00_THE_ROSETTA_PROTOCOL_v0.1.md` — K2-signed 2026-07-19: three-scripts rule; fourth script is machine

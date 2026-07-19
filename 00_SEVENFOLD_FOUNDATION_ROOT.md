@@ -9,6 +9,9 @@ rosetta:
   canonical_phrase: "Sevenfold Foundation Root"
 ---
 
+> **[Receipt 141 / D-7]** Superseded as front door by `00_THE_WELTANSCHAUUNG.md` + `00_THE_KERNEL_INDEX.md` + the Seed Ladder. KEPT LIVE at this path because 09_TOOLS scripts parse it (audit_manifest, rosetta_*); stone only after script re-points.
+
+
 # Sevenfold Foundation Root
 
 **Evidence tier:** [S] structural corpus architecture where it routes existing doctrine · [I] interpretive where it maps classical philosophical and symbolic-governance categories onto the framework · [C] where it proposes future folder moves.

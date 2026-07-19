@@ -1,3 +1,6 @@
+
+> **[Receipt 141 / D-2 — fork stone]** This pillar copy is a TIER-DRIFTED FORK (asserts [A]/[S] where the canonical grave asserts [B]/[I]/[C]). The canonical grave is the Documents-level `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/root_staging/` lane (carries TOMBSTONE + SHA-256 table). Never merge; the drift itself is the record — a live specimen of the [C]->[A] motion the Open Canon Covenant forbids.
+
 # Rumination on the Sophia Perennis — L7 closing witness, 2026-07-19
 
 **Tier:** [A] the witness's enumeration of accomplishments is grounded in the

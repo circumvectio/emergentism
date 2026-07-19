@@ -24,6 +24,9 @@ supersedes:
   - The implicit "single charismatic leader" framing in older governance drafts
 ---
 
+> **[Receipt 141 / D-1 — 2026-07-19, sovereign execution under receipt 139 box 6]** NON-CANONICAL divergent fork. The canonical charter surface is `00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md` (signature-bearing; registry row 62 cites it; naming inversion acknowledged). This text is preserved per K3 for its unique clauses; reconciliation into one counsel-ready text remains a counsel-gated act.
+
+
 # Open Canon Foundation — Charter Draft v0.1
 
 > **Status: `[D]` STAGED. K2 sign pending counsel review.** This is a draft, not a filing. The legal vehicle, the jurisdiction, the board composition, the red-team budget, and the membrane to the commercial organs are all `[D]` until real counsel reviews and the K2 signs. **Nothing is filed without real counsel + K2 wet signature.**

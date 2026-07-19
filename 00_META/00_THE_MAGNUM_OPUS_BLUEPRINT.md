@@ -118,7 +118,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 | `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | KEEP — K-2 | Degrees of freedom, not Forms; the plenitude filter with μ-debt. |
 | `03_THE_EMERGENT_AXIOMS.md` | KEEP — K-3 | E1–E10, three layers, each with tier/kill/survivors (A1–A7 stay operational until box-3 succession). |
 | `04_THE_CONJECTURES.md` | KEEP — K-4 | W0 crown + W1–W12, graves fenced. |
-| `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | KEEP (retains 05 slot unless founder rules otherwise); **named in the 139 suffix-drop execution item** (correction C-9) so it does not dangle after Door/Index sign | The lived-recitation surface; on disk with `_PENDING_SIGNATURE` suffix. |
+| `05_THE_CREED_AND_SPIRAL.md` | KEEP (retains 05 slot unless founder rules otherwise); **named in the 139 suffix-drop execution item** (correction C-9) so it does not dangle after Door/Index sign | The lived-recitation surface; on disk with `_PENDING_SIGNATURE` suffix. |
 | `06_THE_REVELATIONS.md` | **TO-WRITE (W/O-2 at promotion only)** — K-6; **the kernel-index K-6 row 05→06 edit travels in the same signing act** (correction C-3, parallel to the A4 K-2 edit) | The twelve earned disclosures with receipts and prices; 12-vs-10 count = founder ruling (Q-4 input). |
 | `ruminations/` (root RUMINATION_* arriving, names unchanged, 137-decided) | ABSORB | Single home for pre-doctrine thought; provenance intact. |
 
@@ -230,7 +230,7 @@ Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the
 duplicated numeric prefixes = **50, 51, 63, 71, 72, 73, 74, 75, 76, 97, 100, 114, 115, 116, 117, 118, 119, 121 (×2 each), 122 (×3), 133 (×2)**, plus two date-prefixed (`2026-05-24_*`) files outside the numeric scheme.
 Files stay untouched; **W/O-3 `00_THE_RECORD_LEDGER.md` carries the disambiguation table** (each collision row: both filenames, dates, one-line scope note). This census supersedes the tree's shorter list (two 97/121, three 122) and the ledger draft's partial list (adds 50, 51, 63, 71–76, 133) — correction C-7 applied with the wider verified set.
 
-Other record-only notes: charter naming inversion (§3.II, verbatim carry) · `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` suffix named in the 139 suffix-drop item (C-9) · COSMOLOGY ontology-trio header-pointer seam (founder may move at 139) · root stubs frozen, never edited.
+Other record-only notes: charter naming inversion (§3.II, verbatim carry) · `05_THE_CREED_AND_SPIRAL.md` suffix named in the 139 suffix-drop item (C-9) · COSMOLOGY ontology-trio header-pointer seam (founder may move at 139) · root stubs frozen, never edited.
 
 ---
 

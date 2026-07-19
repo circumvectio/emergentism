@@ -35,7 +35,7 @@ routing surfaces — they are not corpus doctrine and not kernel surfaces.
 | **K-3** | The Axioms | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | E1–E10 in three layers (Being / Becoming / Conduct), each with tier, kill, survivors. |
 | **K-4** | The Wagers | `06_ONTOLOGY/04_THE_CONJECTURES.md` | W0 the crown + W1–W12, each with its kill; the graves fenced. |
 | **K-5** | The Refusals | **MISSING — work order W/O-1 (§4b).** Standing source: `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` `[S]`, K2-RULED 2026-05-30 | The constitution as via negativa: η=0, no unsigned irreversibility, no erasure, no trapped exit, no infallibility, + Ω direction. Refusals bind the holder. |
-| **K-6** | The Revelations | **PARTIAL — work order W/O-2 (§4b).** Target `06_ONTOLOGY/05_THE_REVELATIONS.md` does not exist; slot occupied by `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | What the work disclosed, earned and receipted — the opposite of commandments. |
+| **K-6** | The Revelations | **PARTIAL — work order W/O-2 (§4b).** Target `06_ONTOLOGY/05_THE_REVELATIONS.md` does not exist; slot occupied by `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md` | What the work disclosed, earned and receipted — the opposite of commandments. |
 | **K-7** | The Record | **PARTIAL — work order W/O-3 (§4b).** `12_PUBLIC_SITE/record/` exists but holds only `index.html` (stub); sources: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` (receipts 100–136+) + `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | The trial ledger: every kill fired, every grave dated, №-next always open; the postures; the retelling rule. |
 | **Index** | The Kernel Index | `00_THE_KERNEL_INDEX.md` `[D]` | The map itself: seven surfaces, distillation order, execution fences. |
 
@@ -83,7 +83,7 @@ Every other corpus surface routes as evidence beneath exactly one kernel surface
 | # | Gap | Evidence | Work order |
 |---|---|---|---|
 | W/O-1 | **K-5 refusals successor does not exist** | No `*refusal*` file outside `90_ARCHIVE/`; standing constitution `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` is `[S]` K2-RULED 2026-05-30 and carries 11 DAV/PRISM mentions (venture-saturated) | Author the venture-purged 5+1 successor **under the founder's hand** (spec §3.3 — signed rows). Agents stage; K2 disposes. |
-| W/O-2 | **K-6 promotion + count ruling** | `06_ONTOLOGY/05_THE_REVELATIONS.md` absent; slot held by `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`; index §2 draft = **12** (lines 43–54) vs. rumination = **10** | K2 rules: (i) count 12-vs-10; (ii) promotion path and filename/slot; (iii) creed-and-spiral keeps or yields the 05 slot, with K3 stone either way. |
+| W/O-2 | **K-6 promotion + count ruling** | `06_ONTOLOGY/05_THE_REVELATIONS.md` absent; slot held by `05_THE_CREED_AND_SPIRAL.md`; index §2 draft = **12** (lines 43–54) vs. rumination = **10** | K2 rules: (i) count 12-vs-10; (ii) promotion path and filename/slot; (iii) creed-and-spiral keeps or yields the 05 slot, with K3 stone either way. |
 | W/O-3 | **K-7 `/record/` consolidation + postures heal** | `12_PUBLIC_SITE/record/` = stub (`index.html` only); `01_THE_THREE_POSTURES.md` filename says three, content amended to four r129 (K2 "adopt the 4th", filename retained per K3); root four-postures file K2-signed 2026-07-18 | Consolidate receipts 100–136+ + Q-3 pair into `record/` as the open ledger (№-next always open); heal the three-vs-four index pointer (re-point or rename-with-stone). |
 
 ## 5 · The stranger's reading order

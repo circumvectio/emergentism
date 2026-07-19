@@ -55,7 +55,7 @@ Kernel = **overlay index, not a folder**. No K-directories are created. Reading 
 │   ├── 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md  = K-2 ONTOLOGY
 │   ├── 03_THE_EMERGENT_AXIOMS.md              = K-3 AXIOMS (E1–E10 staged; A1–A7 operational until promoted)
 │   ├── 04_THE_CONJECTURES.md                  = K-4 WAGERS (W0–W12)
-│   ├── 05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md   STAYS in its 05_ slot (A8 — was silently omitted from draft)
+│   ├── 05_THE_CREED_AND_SPIRAL.md   STAYS in its 05_ slot (A8 — was silently omitted from draft)
 │   ├── 06_THE_REVELATIONS.md                  = K-6 REVELATIONS — created at promotion, RENUMBERED 05→06 to resolve A8 collision (founder may rule the slot otherwise)
 │   └── ruminations/                           SINGLE rumination home (root RUMINATION_* docs join 00_E1_E10_RUMINATION_L7_RSI; names unchanged)
 ├── 07_THEOLOGY/                      + 00_THE_AMRITA.md ← from root (evidence under K-6)

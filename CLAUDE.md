@@ -23,8 +23,8 @@ Work here is framework-layer unless a document explicitly says otherwise. Do **n
 
 1. `README.md` — folder purpose
 2. `AGENT_README.md` — agent orientation
-3. `00_SEVENFOLD_FOUNDATION_ROOT.md` — the canonical seven-fold structure
-4. `00_FOUNDATION_READER_GUIDE.md` — guided read order across the -ologies
+3. `00_THE_WELTANSCHAUUNG.md` — the Door (signed 2026-07-19) · then `00_THE_KERNEL_INDEX.md` + `10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`
+4. `00_SEVENFOLD_FOUNDATION_ROOT.md` — legacy sevenfold structure (script-pinned; superseded as front door)
 5. `VMOSK_A.md` — this root's V/M/O/S/K/A
 6. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
 7. `08_FRAMEWORK_SUPPORT/` for governance, operators, evidence, synthesis, and agent grammar; old applications/translation/dissemination lanes are archived under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`

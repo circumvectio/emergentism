@@ -33,6 +33,9 @@ depends_on:
   - ../05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md
 ---
 
+> **[Succession note — 2026-07-19, receipt 141]** The venture-purged K-5 successor is `00_META/00_K5_THE_REFUSALS.md` (kernel surface K-5; refusals bind the holder, never the world). This edition remains the signed historical stratum per K3; where vocabularies differ, the successor speaks for the pure Weltanschauung, this text for the venture constitution.
+
+
 # The 5+1 Constitution
 
 > **The single canonical surface for the framework's operational discipline.** The 5+1 fences are enforced at the agent level across multiple CLAUDE.md / AGENTS.md files; this document is the canonical reference, the distributed files point to it. The five-refusals-plus-Ω-as-the-directional-plus-1 ruling (K2, 2026-05-30) resolves the historical FIVE-vs-SIX contradiction in the corpus.

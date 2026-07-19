@@ -59,7 +59,7 @@ The 12:06 promotion was executed on an in-stream "yes" — but not a casual one:
 - [ ] Batched ratification (or amendment) of the 12:06 acts — one sitting, reading first
 - [ ] **W0 crowned** atop the W-ledger (04): *the necessary algebra conjures das All* — wager grammar, never disclosure
 - [ ] The capstone's own signature (`00_THE_WELTANSCHAUUNG.md` → promotion)
-- [ ] The creed-and-spiral doc (now `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`) reviewed for promotion
+- [ ] The creed-and-spiral doc (now `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md`) reviewed for promotion
 - [ ] Work-order items 2–6, executed one per pass, on explicit instruction, receipts per act
 
 *The repository mutations occurred; the authority claim did not complete. Receipt 136 keeps both facts visible.*

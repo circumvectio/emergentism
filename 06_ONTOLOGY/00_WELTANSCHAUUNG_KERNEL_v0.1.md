@@ -25,6 +25,9 @@ parents:
 supersedes: nothing — compresses; does not replace Amrita, Goal, or signed receipts
 ---
 
+> **[Receipt 141 / D-6]** Superseded by `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` (delta = the intended venture-vocabulary purge). Preserved as the reconciled predecessor per K3; root stub frozen (Q-1 stub-don't-heal confirmed).
+
+
 # Weltanschauung Kernel v0.1
 
 > **One line.** Not Forms that exist — degrees of freedom, filled by coherent consistent emergence till the limits; the chart is thin arithmetic; the good is the vow; the map is not the Ground.

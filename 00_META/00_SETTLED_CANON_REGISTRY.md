@@ -14,6 +14,9 @@ evidence_tier: "[S] discipline surface; defers to the cited authority doc for ea
 type: canon-discipline-registry
 ---
 
+> **[Pointer amendment — 2026-07-19, receipt 139 box 7 / receipt 141]** Root-path citations in Authority columns resolve via frozen forwarding stubs; canonical homes per `00_THE_MAGNUM_OPUS_BLUEPRINT.md` §2. Rulings untouched; paths only.
+
+
 # Settled Canon — Do Not Re-Flag
 
 > **For every QA / audit / deep-QA / consistency agent — read this before you open a flag.**
