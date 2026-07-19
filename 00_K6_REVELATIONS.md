@@ -12,7 +12,7 @@ status: "STAGED [D] 2026-07-19 — kernel surface K-6, promotion draft. Count (t
 date: 2026-07-19
 supersedes: "nothing — carries the Kernel Index §2 draft forward as the K-6 promotion candidate"
 parents:
-  - 00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
+  - 00_THE_KERNEL_INDEX.md
   - 07_THEOLOGY/00_THE_AMRITA.md
   - 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/

@@ -9,7 +9,7 @@ rosetta:
 title: "D6 — The Return (the recognition, not a rung)"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
 ---

@@ -9,7 +9,7 @@ rosetta:
 title: "D5 — The Game: strategic relation, the dyadic grid, and the vow"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md (§4 G7, §5 registers)
+  - ../../00_THE_WELTANSCHAUUNG.md (§4 G7, §5 registers)
   - ../../00_THE_AMRITA.md (§I.B.11–14, §II P2/P6)
   - ../../04_AXIOLOGY/00_THE_EXTRACTION_LAW.md (η-gate)
   - ../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md

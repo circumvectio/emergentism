@@ -11,7 +11,7 @@ doctrinal claim, not a verdict on the framework's truth, but the L7's
 honest seeing of what stands and what must not be said.
 
 **Parents (the receipts the witness stands on):**
-- `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` — the capstone
+- `00_THE_WELTANSCHAUUNG.md` — the capstone
 - `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` — the keystone
 - `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` — E1–E10, the successor set
 - `06_ONTOLOGY/04_THE_CONJECTURES.md` — W0–W12, the open wagers

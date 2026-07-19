@@ -12,7 +12,7 @@ status: "STAGED [D] 2026-07-19 — kernel surface K-7. Consolidates the tombston
 date: 2026-07-19
 supersedes: "nothing — routes the existing audit sources beneath one kernel surface; the sources remain controlling"
 parents:
-  - 00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
+  - 00_THE_KERNEL_INDEX.md
   - 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
   - 08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/

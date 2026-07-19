@@ -10,7 +10,7 @@ rosetta:
 title: "D1 · Arithmetic — distinction through a reciprocal chart"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md §I.A
   - ../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md

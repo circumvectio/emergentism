@@ -12,7 +12,7 @@ status: "STAGED [D] 2026-07-19 — kernel surface K-5. Successor of the 5+1 cons
 date: 2026-07-19
 supersedes: "nothing yet — stages a venture-purged successor to 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md; that file controls until a founder-promotion receipt adopts this one"
 parents:
-  - 00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
+  - 00_THE_KERNEL_INDEX.md
   - 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
   - 08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md
 evidence_tier: "[S] for the framework-internal structure of the 5+1; [A] for the η=0 ↔ reciprocity identity in log coordinates; [I] for the register-bridge reading; the assembly is [D]"

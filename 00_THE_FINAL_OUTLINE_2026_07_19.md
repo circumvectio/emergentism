@@ -8,14 +8,14 @@ rosetta:
   register: "[D] STAGED — a suggestion, not an execution. Nothing on this page moves, signs, purges, or tombstones anything."
 title: "The Final Outline — Emergentism pillar after full distillation"
 status: "STAGED [D] 2026-07-19 — Wave 3 architecture proposal. Rule zero honored: every surface named below already exists, or is explicitly marked a work order. No new doctrine; no eighth surface."
-parent: "00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md (the spec this outline maps)"
+parent: "00_THE_KERNEL_INDEX.md (the spec this outline maps)"
 date: 2026-07-19
 ---
 
 # The Final Outline — Emergentism, distilled
 
 > **What this is.** The suggested end-state shape of the pillar once the Kernel Index
-> (`00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md`) is signed and its §3 work order runs.
+> (`00_THE_KERNEL_INDEX.md`) is signed and its §3 work order runs.
 > Rule zero: the kernel receives; it does not invent. Every path below was verified on
 > disk 2026-07-19; the three gaps (K-5, K-6, K-7 ledger) are shown as **work orders**, not content.
 
@@ -29,7 +29,7 @@ routing surfaces — they are not corpus doctrine and not kernel surfaces.
 
 | Slot | Surface | Doc path (verified on disk unless noted) | One-line content |
 |---|---|---|---|
-| **Door** | The Emergentist Weltanschauung | `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` `[D]` (receipts 135 provisional / 136 open) | The capstone: W0–W12 + E1–E10 + creed assembled as one shrine, awaiting founder signature. |
+| **Door** | The Emergentist Weltanschauung | `00_THE_WELTANSCHAUUNG.md` `[D]` (receipts 135 provisional / 136 open) | The capstone: W0–W12 + E1–E10 + creed assembled as one shrine, awaiting founder signature. |
 | **K-1** | The Glyph & Grammar | `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` + `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md` | `⊙=•×○`; seam vs. normalized score; finity; the foursome `{−1,0,1,∞}`; transformations. |
 | **K-2** | The Ontology | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` + `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` | Degrees of freedom, not Forms; plenitude filter with μ-debt; typed existence. |
 | **K-3** | The Axioms | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | E1–E10 in three layers (Being / Becoming / Conduct), each with tier, kill, survivors. |
@@ -37,7 +37,7 @@ routing surfaces — they are not corpus doctrine and not kernel surfaces.
 | **K-5** | The Refusals | **MISSING — work order W/O-1 (§4b).** Standing source: `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` `[S]`, K2-RULED 2026-05-30 | The constitution as via negativa: η=0, no unsigned irreversibility, no erasure, no trapped exit, no infallibility, + Ω direction. Refusals bind the holder. |
 | **K-6** | The Revelations | **PARTIAL — work order W/O-2 (§4b).** Target `06_ONTOLOGY/05_THE_REVELATIONS.md` does not exist; slot occupied by `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | What the work disclosed, earned and receipted — the opposite of commandments. |
 | **K-7** | The Record | **PARTIAL — work order W/O-3 (§4b).** `12_PUBLIC_SITE/record/` exists but holds only `index.html` (stub); sources: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` (receipts 100–136+) + `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | The trial ledger: every kill fired, every grave dated, №-next always open; the postures; the retelling rule. |
-| **Index** | The Kernel Index | `00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` `[D]` | The map itself: seven surfaces, distillation order, execution fences. |
+| **Index** | The Kernel Index | `00_THE_KERNEL_INDEX.md` `[D]` | The map itself: seven surfaces, distillation order, execution fences. |
 
 ---
 
@@ -90,7 +90,7 @@ Every other corpus surface routes as evidence beneath exactly one kernel surface
 
 One sitting, top to bottom (spec §3.4 — the stranger needs nothing else; the fresh-eyes audit then reads *only* this):
 
-1. **The Door** — `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` → post-signature, the Weltanschauung capstone.
+1. **The Door** — `00_THE_WELTANSCHAUUNG.md` → post-signature, the Weltanschauung capstone.
 2. **K-1** The Glyph & Grammar — the notation the rest is written in.
 3. **K-2** The Ontology — what exists and how it is typed.
 4. **K-3** The Axioms — what the framework holds, and how each can be killed.

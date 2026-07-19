@@ -82,7 +82,7 @@ This is where packet 139 belongs. Decentralized Authority Model is not anti-stru
 
 | File | Current Path | Role |
 |---|---|---|
-| Final Weltanschauung capstone `[D]` | `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` | Staged front door: priced creed, scoped G7 language, P-register split, five-crossing/μ/D6 fences, accounting-not-completion rule, founder checklist |
+| Final Weltanschauung capstone `[D]` | `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md` | Staged front door: priced creed, scoped G7 language, P-register split, five-crossing/μ/D6 fences, accounting-not-completion rule, founder checklist |
 | Bounded Generative Emergentism `[D]` | `01_EMERGENTISM/06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | Staged Emergentism-only DoF/form ontology; operational reachability; quantum measurement reframe with outcome-selection fence |
 | Degrees-of-Freedom Ontology `[D]` | `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | Staged Plato repair and plenitude wager, corrected to forms-across-DoF, operational reachability, and interpretation-neutral quantum record emergence |
 | Emergent Axioms E1–E10 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | Staged pure-Weltanschauung successor set; A1–A7 remains controlling pending deliberate founder signature |

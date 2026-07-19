@@ -5,7 +5,7 @@ status: "EXECUTED [B/D] — additive correction after fd89949; no promotion, sig
 date: 2026-07-19
 evidence_tier: "[B] repository and source audit; [A]/[S]/[I]/[C] per cited claim; corrected ladder remains [D]"
 parents:
-  - 139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md
+  - 139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md
   - ../../10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md
   - 126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
   - 132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md
