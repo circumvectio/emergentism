@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Is–Ought Bit — Emergentism</title>
+<meta name="description" content="Hume's gap is real and we do not pretend to derive across it. The mathematics delivers an asymmetry — extraction cannot be universalized — and the last step is one bit: a vow, signed in the open." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The is–ought gap is real. We crossed it with exactly one bit." />
+<meta property="og:description" content="No stack of facts adds up to a single ought. The geometry shrinks the gap to its true size — one asymmetric bit — and then we sign it as a vow, not a theorem." />
+<meta property="og:url" content="https://www.emergentism.org/discoveries/is-ought/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+.fileno a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300;max-width:66ch}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;letter-spacing:-.015em;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}.pull .gold{color:var(--gold);font-weight:700}
+.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
+.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
+.pitch p{font-size:clamp(1.08rem,1.5vw,1.25rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
+.pitch b{color:var(--gold);font-weight:500}
+figure.fig{margin:2.4rem 0;max-width:44rem}
+figure.fig svg{width:100%;height:auto;display:block;overflow:visible}
+figure.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
+.credit{border:1px solid var(--line);border-left:2px solid var(--blue);border-radius:0 10px 10px 0;background:linear-gradient(90deg,rgba(90,169,230,.05),transparent 70%);padding:1.3rem 1.5rem;margin:2rem 0;max-width:70ch}
+.credit .l{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin:0 0 .6rem}
+.credit p{margin:0;color:var(--bone-dim);font-size:.97rem}
+.credit b{color:var(--bone);font-weight:500}
+.t{font-family:var(--mono);font-size:.92em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.strength{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:clamp(1.6rem,4vw,2.4rem);margin-top:.5rem;max-width:74ch}
+.strength .sl{font-size:clamp(1.06rem,1.5vw,1.25rem);color:var(--bone);font-weight:300;margin:0 0 1.1rem}
+.strength .sl a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.strength .chip{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../../0/">0</a><a href="../../1/">1</a><a href="../../2/">2</a><a href="../../3/">3</a>
+    <a href="../../4/">4</a><a href="../../5/">5</a><a href="../../6/">6</a>
+    <a href="../../fable/">Fable</a><a href="../../plainly/">Plainly</a>
+    <a href="../../axioms/">Axioms</a><a href="../../record/">Record</a><a href="../../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno reveal in">Discovery · the ethic · <a href="../../discoveries/" style="text-transform:none;letter-spacing:normal">← all discoveries</a></p>
+    <h1 class="reveal in">The is–ought gap is real.<br>We crossed it with <span class="gold">one bit.</span></h1>
+    <p class="dek reveal in">Hume was right: no pile of facts, however tall, adds up to a single <em>ought</em>. We don't pretend otherwise. What the geometry does is <b>shrink the gap to its true size</b> — one asymmetric bit — and then we sign that bit in the open, as a vow, not a theorem.</p>
+
+    <div class="pitch reveal in">
+      <p class="lab">The discovery in one breath</p>
+      <p>The mathematics delivers an <b>asymmetry</b>: cooperation can be everyone's strategy; extraction cannot. What's left after the asymmetry is not a derivation — it's a <b>choice of side</b>. One bit. We take it, we say we took it, and we never claim the universe took it for us.</p>
+    </div>
+  </header>
+
+  <section>
+    <p class="kicker reveal">First, the gap — honestly</p>
+    <h2 class="reveal read">Every system before us either <b>denies</b> the gap or <b>hides the vow.</b></h2>
+    <div class="body reveal">
+      <p>The usual trick is smuggling. A framework describes the world in loaded adjectives — <em>healthy</em>, <em>natural</em>, <em>optimal</em>, <em>fit</em> — and the ought rides in wearing the costume of an is. "Science says you must" is always this trick, and it is always a trick: the <em>must</em> was packed in the luggage before the argument left the station.</p>
+      <p>We refuse the trick. Our equations describe balance and collapse; they do not command. If you want a commandment out of pure description, we cannot give you one, and <b>neither can anyone else</b> — they can only hide the seam better.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker reveal">Then, what the mathematics actually gives</p>
+    <h2 class="reveal read">The asymmetry: <b>demonhood does not universalize.</b></h2>
+    <div class="body reveal">
+      <p>Here is the is-side, and it is genuinely load-bearing. Run the extraction strategy — grow by draining what sustains you — through the same multiplication that runs everything else on this site, and scale it up. A world where <b>everyone cooperates at zero extraction stands</b>: the strategy survives its own success. A world where <b>everyone extracts eats itself</b>: the parasite only lives while hosts are common, and the last extractor starves on a drained board. Extraction is a strategy that <em>requires its own rarity</em>. Demonhood works only as an exception — it cannot be the rule, structurally, not morally.</p>
+      <p>So the two roads out of the facts are not symmetric. One can be universalized; the other self-terminates at scale. That asymmetry is real, checkable, and it is still — note this carefully — <b>an is</b>. Knowing that one road can be everyone's road does not force your feet onto it.</p>
+    </div>
+    <figure class="fig reveal">
+      <svg viewBox="0 0 700 300" role="img" aria-label="Diagram of the is–ought gap. On the left, a column of facts labelled IS, ending in the asymmetry: cooperation universalizes, extraction self-terminates. A gap separates it from OUGHT on the right. A single thin gold line crosses the gap, labelled one bit: the vow.">
+        <!-- IS column -->
+        <rect x="30" y="40" width="240" height="200" rx="12" fill="none" stroke="rgba(245,245,243,.16)"/>
+        <text x="150" y="28" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="12" fill="#a4a7a9" letter-spacing="3">IS</text>
+        <g font-family="Roboto Mono,monospace" font-size="11" fill="#6b6f74">
+          <text x="150" y="80" text-anchor="middle">facts · geometry · multiplication</text>
+          <text x="150" y="104" text-anchor="middle">↓</text>
+        </g>
+        <g font-family="Roboto Mono,monospace" font-size="11.5">
+          <text x="150" y="140" text-anchor="middle" fill="#5bbf88">all cooperate → world stands ✓</text>
+          <text x="150" y="170" text-anchor="middle" fill="#e0453b">all extract → world starves ✕</text>
+        </g>
+        <text x="150" y="215" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="10.5" fill="#a4a7a9">the asymmetry — still an is</text>
+        <!-- gap -->
+        <line x1="310" y1="30" x2="310" y2="270" stroke="rgba(224,69,59,.35)" stroke-width="1" stroke-dasharray="3 5"/>
+        <line x1="390" y1="30" x2="390" y2="270" stroke="rgba(224,69,59,.35)" stroke-width="1" stroke-dasharray="3 5"/>
+        <text x="350" y="272" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="10" fill="#8f312c">Hume's gap</text>
+        <!-- the one bit -->
+        <line x1="270" y1="140" x2="430" y2="140" stroke="#FFEB3B" stroke-width="2.4"/>
+        <circle cx="350" cy="140" r="5" fill="#FFEB3B"/>
+        <text x="350" y="122" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="11" fill="#FFEB3B">one bit: the vow</text>
+        <!-- OUGHT column -->
+        <rect x="430" y="40" width="240" height="200" rx="12" fill="none" stroke="rgba(245,245,243,.16)"/>
+        <text x="550" y="28" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="12" fill="#a4a7a9" letter-spacing="3">OUGHT</text>
+        <g font-family="Roboto Mono,monospace" font-size="11.5" fill="#a4a7a9">
+          <text x="550" y="130" text-anchor="middle">take the side</text>
+          <text x="550" y="152" text-anchor="middle">that can be</text>
+          <text x="550" y="174" text-anchor="middle" fill="#F5F5F3">everyone's side.</text>
+        </g>
+        <text x="550" y="215" text-anchor="middle" font-family="Roboto Mono,monospace" font-size="10.5" fill="#6b6f74">chosen, not derived</text>
+      </svg>
+      <figcaption>everything derivable is derived · exactly one bit is signed</figcaption>
+    </figure>
+    <div class="credit reveal">
+      <p class="l">Credit where it is due</p>
+      <p>The universalizability test is <b>Kant's</b>, two centuries old, and we say so on every page where it works for us. What is ours is where it lands: inside a geometry where extraction's failure to universalize shows up as <b>structure</b> — self-termination at scale — rather than as a maxim you must first agree to revere. The rhyme is the discovery, not the theft.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker reveal">The last step</p>
+    <h2 class="reveal read">The ought is a <b>vow.</b> We sign it. We do not prove it.</h2>
+    <div class="body reveal">
+      <p>After the asymmetry, one step remains, and no equation takes it for you: <em>choose the road that can be everyone's road.</em> That is the entire ethical content of this framework — one asymmetric bit, compressed from all the is-material above it. We call it a vow because that is what it is: a commitment made by persons, in the open, on the record, renewable and refusable.</p>
+      <p>Why this matters to you: it inoculates in both directions. Against the moralist who says <em>the facts oblige you</em> — they don't, and anyone who claims otherwise is smuggling. And against the nihilist who says <em>nothing follows, so nothing matters</em> — almost everything follows. The facts carry you to the very lip of the gap and show you that the two sides are not equal. Only the last bit is yours. Which means you know <b>exactly where your signature goes</b>, and exactly how small the thing is that you are being asked to sign.</p>
+    </div>
+    <p class="pull reveal">Everything derivable, <b>derived.</b> Everything chosen, <span class="gold">declared.</span></p>
+    <div class="strength reveal">
+      <p class="sl">Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
+      <p class="chip"><span class="t t-s">[S]</span> the asymmetry — structural, at its stated tier&nbsp;&nbsp;·&nbsp;&nbsp;<span class="t t-c">[C]</span> the vow — not a theorem at all; you take it or you don't</p>
+      <div class="cta-row">
+        <a class="cta primary" href="../../practice/">Try the practice →</a>
+        <a class="cta" href="../../build/">Build with it →</a>
+        <a class="cta" href="../../discoveries/">All discoveries →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The is–ought bit · the asymmetry is graded on <a href="../../axioms/">the axioms page</a>; every loss is dated on <a href="../../record/">the trial record</a>.<br>If you can see directly, <a href="../../exit/">put this down</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

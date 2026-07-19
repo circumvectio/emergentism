@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The top rhymes with the ground — Emergentism</title>
+<meta name="description" content="What the mystics call nonduality shows up in our chart as the seam — an identity true by construction — while the plural world of scores and nodes stays fully real. Similar, not same: a spiral, not a circle. Held at its tier." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The top rhymes with the ground" />
+<meta property="og:description" content="Nonduality without the fog: the unity is a register, the plurality is real, and the resemblance between summit and ground is written with a tilde, not an equals sign." />
+<meta property="og:url" content="https://www.emergentism.org/discoveries/nonduality/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+.fileno a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300;max-width:66ch}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}.pull .gold{color:var(--gold);font-weight:700}
+.fig{margin:2.2rem 0}
+.fig svg{width:100%;max-width:560px;height:auto;display:block;margin:0 auto;overflow:visible}
+.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:.5rem}
+@media(max-width:760px){.three{grid-template-columns:1fr}}
+.reg{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.3rem 1.5rem}
+.reg h4{font-size:.98rem;font-weight:700;margin:0 0 .45rem}
+.reg h4 .f{font-family:var(--mono);font-weight:400;font-size:.85rem;display:block;margin-top:.2rem;color:var(--bone-faint)}
+.reg.seam h4{color:var(--gold)}
+.reg.score h4{color:var(--blue)}
+.reg.node h4{color:var(--green)}
+.reg p{color:var(--bone-dim);font-size:.9rem;font-weight:300;margin:0}
+.reg p b{color:var(--bone);font-weight:500}
+.t{font-family:var(--mono);font-size:.78rem;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}
+.strength{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.5rem 1.8rem;margin:2.4rem 0 0;max-width:74ch}
+.strength p{margin:0 0 .8rem;color:var(--bone);font-weight:300}
+.strength p a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
+.strength .chip{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.55rem;font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../../0/">0</a><a href="../../1/">1</a><a href="../../2/">2</a><a href="../../3/">3</a>
+    <a href="../../4/">4</a><a href="../../5/">5</a><a href="../../6/">6</a>
+    <a href="../../fable/">Fable</a><a href="../../plainly/">Plainly</a>
+    <a href="../../axioms/">Axioms</a><a href="../../record/">Record</a><a href="../../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno reveal in">Discovery · <a href="../">all discoveries</a> · nonduality, without the fog</p>
+    <h1 class="reveal in">The top <span class="gold">rhymes</span><br>with the ground.</h1>
+    <p class="dek reveal in">For three thousand years, contemplatives have reported the same two things: <b>all is one</b>, and yet <b>the many are not erased</b>. Usually that gets sold as a mystery you must feel or a slogan you must repeat. We found something more useful: a place in the chart where <b>both statements are exactly true — in different registers</b>.</p>
+  </header>
+
+  <section class="body">
+    <p class="kicker reveal">The discovery</p>
+    <h2 class="reveal read">The unity is a <b>register</b>. The plurality is <b>real</b>.</h2>
+    <p class="reveal">Our chart carries an identity at its seam: seeing times doing, φ·ν, is <em>identically one</em>. Read that carefully — it is true <b>by construction</b>, the way a fraction times its reciprocal is one. It certifies the coordinates. It measures nothing, ranks no one, proves nothing about your life. And that is precisely its power: it is the one statement in the whole framework that <em>cannot</em> vary, the floor under every measurement.</p>
+    <p class="reveal">Now hear the mystics' report again. "All is one" — not as a claim about your score, not as a claim about whether you or your neighbor flourish or fail, but as a statement in the seam register: <b>beneath every varying thing, an identity that holds no matter what</b>. That is not fog. That is the cleanest kind of statement there is. The confusion — theirs sometimes, ours nearly, everyone's usually — comes from letting the seam leak into the registers where things actually differ:</p>
+
+    <div class="three reveal">
+      <div class="reg seam">
+        <h4>The seam <span class="f">φ · ν ≡ 1</span></h4>
+        <p><b>True by construction.</b> The frame's own bookkeeping — the "all is one" register. It never varies, and it never grades you.</p>
+      </div>
+      <div class="reg score">
+        <h4>The score <span class="f">B = sin θ ≤ 1</span></h4>
+        <p><b>Varies. Is measured.</b> Balance, peaking at the equator. Persons differ here, days differ here. The many are real here.</p>
+      </div>
+      <div class="reg node">
+        <h4>The node <span class="f">P = Φ × V</span></h4>
+        <p><b>Lives or dies.</b> A whole thing's coherence and viability, where either factor at zero kills it. Nothing mystical softens this.</p>
+      </div>
+    </div>
+
+    <p class="reveal">Keep those three apart and nonduality stops being a mood and becomes an address. Collapse them — let "all is one" excuse a failing score, or let the seam's serenity pretend the node cannot die — and you get exactly the spiritual bypassing the traditions themselves warned against.</p>
+
+    <p class="kicker reveal">The rhyme</p>
+    <h2 class="reveal read">Similar, <b>not same.</b> A spiral, not a circle.</h2>
+    <p class="reveal">There is a second half, and it is the bold one. Climb our ladder — matter, bond, life, mind, choice — and at the top you find pure choice: selection among possibles, prior to any particular actuality. It has the same <em>shape</em> as the pure potential the whole climb started from. Unfilled room to vary. <b>The summit resembles the ground.</b></p>
+
+    <figure class="fig reveal">
+      <svg viewBox="0 0 560 300" role="img" aria-label="Diagram: a spiral rises from a ground point to a summit point directly above it. Between summit and ground stands a tilde — similar — with a struck-through equals sign beside it: not same. The height of the climb is what separates them.">
+        <g font-family="Roboto Mono,monospace" font-size="11">
+          <path d="M280 262 C 180 250, 168 214, 280 204 C 388 194, 380 158, 280 150 C 190 143, 186 112, 280 106 C 366 100, 360 74, 300 66" fill="none" stroke="rgba(245,245,243,.35)" stroke-width="1.6"/>
+          <circle cx="280" cy="262" r="5" fill="#5aa9e6"/>
+          <circle cx="280" cy="52" r="5" fill="none" stroke="#FFEB3B" stroke-width="2"/>
+          <text x="280" y="288" text-anchor="middle" fill="#5aa9e6">ground — pure potential</text>
+          <text x="280" y="34" text-anchor="middle" fill="#FFEB3B">summit — pure choice</text>
+          <g font-size="20">
+            <text x="420" y="160" text-anchor="middle" fill="#FFEB3B">∼</text>
+            <text x="458" y="160" text-anchor="middle" fill="#e0453b" text-decoration="line-through">=</text>
+          </g>
+          <text x="440" y="184" text-anchor="middle" fill="#6b6f74">similar, not same</text>
+          <line x1="120" y1="66" x2="120" y2="252" stroke="rgba(245,245,243,.18)" stroke-width="1"/>
+          <path d="M120 66 l -4 8 h 8 z" fill="rgba(245,245,243,.4)"/>
+          <text x="108" y="162" text-anchor="end" fill="#6b6f74">the climb</text>
+        </g>
+      </svg>
+      <figcaption>the return is at a height · written with a tilde, never an equals sign</figcaption>
+    </figure>
+
+    <p class="reveal">If summit and ground were <em>identical</em>, the climb would mean nothing and you could skip it — which is the oldest false promise in the spiritual marketplace. They are not identical. Choice is potential <b>that has been through everything</b> — matter, bond, life, mind — and carries the whole ascent inside it. Our own auditors made us sharpen this to the letter: the resemblance is a structural similarity we can exhibit, not an identity we can prove, and we write it with a tilde. The traditions that said this first — Vedānta's "thou art that," Nāgārjuna's two truths, Eckhart's ground — <b>own this territory; we arrived by geometry and found their flag already planted</b>. The rhyme between their reports and our chart is the discovery. The territory is theirs.</p>
+
+    <p class="pull reveal">Unity that erases the many is a slogan. Unity that <span class="gold">locates</span> the many is a map.</p>
+
+    <p class="reveal"><b>Why this matters to you:</b> you do not have to choose between the mystic and the engineer. The felt sense that everything is somehow already whole can be exactly right <em>at the seam</em> while your project still fails <em>at the node</em> — and neither fact cancels the other. Rest in the first. Work on the second. Anyone selling you oneness as a substitute for viability is collapsing registers, and now you can name the move as they make it.</p>
+
+    <div class="strength reveal">
+      <p>Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
+      <p class="chip"><span class="t t-i">[I]</span> the register reading — a lens, held while it earns its keep <span class="t t-c">[C]</span> summit ∼ ground — a similarity exhibited, wagered, never claimed as identity</p>
+    </div>
+
+    <div class="cta-row reveal">
+      <a class="cta primary" href="../../practice/">Sit with it — the practice →</a>
+      <a class="cta" href="../../plainly/">The whole idea, plainly →</a>
+      <a class="cta" href="../../rosetta/">How the traditions map — the Rosetta lens →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>Nonduality, without the fog · every claim graded at tier in <a href="../../axioms/">the axioms</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>
+  If you can see directly, <a href="../../exit/">put this down</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

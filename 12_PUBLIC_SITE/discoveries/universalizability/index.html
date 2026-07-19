@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universalizability — a Discovery — Emergentism</title>
+<meta name="description" content="The whole ethic compresses to one asymmetric bit: cooperation universalizes, extraction cannot. Kant's test, credited openly — the rhyme with the geometry is the discovery, and the ethic is held as a vow, not a theorem." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Universalizability — the whole ethic is one asymmetric bit" />
+<meta property="og:description" content="Cooperation universalizes; extraction cannot. Kant's test, credited — held as a vow, not a theorem." />
+<meta property="og:url" content="https://www.emergentism.org/discoveries/universalizability/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+.fileno a{color:inherit;text-decoration:none}
+.fileno a:hover{color:var(--gold)}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}.pull .gold{color:var(--gold);font-weight:700}
+.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
+.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
+.pitch p{color:var(--bone-dim)}
+.pitch p b{color:var(--bone);font-weight:500}
+.fig{margin:2.4rem 0;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:clamp(1rem,3vw,2rem);overflow-x:auto}
+.fig svg{display:block;max-width:100%;height:auto;margin:0 auto}
+.figcap{font-family:var(--mono);font-size:.72rem;color:var(--bone-faint);margin:.9rem 0 0;text-align:center}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin:2rem 0 0}
+.cta{font-family:var(--mono);font-size:.85rem;text-decoration:none;color:var(--bone);border:1px solid var(--line);border-radius:8px;padding:.7rem 1.1rem;transition:.15s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:var(--void);border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:var(--gold-deep);color:var(--void)}
+.strength{margin:3rem 0 0;padding:1.4rem 1.6rem;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.strength p{margin:0 0 .8rem;color:var(--bone)}
+.strength p a{color:var(--gold)}
+.chip{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.72rem;color:var(--bone-dim);border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem}
+.chip b{font-weight:700}
+.chip .ts{color:var(--t-s)}
+.chip .tc{color:var(--t-c)}
+.chip .ti{color:var(--t-i)}
+.chip .te{color:var(--t-e)}
+.foot{padding:3rem clamp(1rem,4vw,2.6rem) 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-family:var(--mono);font-size:.8rem;line-height:1.9}
+.foot .glyph{font-size:1.1rem;color:var(--gold-deep);margin-bottom:.8rem}
+.foot a{color:var(--bone-dim)}
+.foot a:hover{color:var(--gold)}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../../0/">0</a><a href="../../1/">1</a><a href="../../2/">2</a><a href="../../3/">3</a>
+    <a href="../../4/">4</a><a href="../../5/">5</a><a href="../../6/">6</a>
+    <a href="../../fable/">Fable</a><a href="../../plainly/">Plainly</a>
+    <a href="../../axioms/">Axioms</a><a href="../../record/">Record</a><a href="../../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <header class="hero">
+    <p class="fileno"><a href="../">← All discoveries</a> · Discovery · Universalizability</p>
+    <h1 class="reveal in">The whole ethic is <span class="gold">one asymmetric bit.</span></h1>
+    <p class="dek reveal in">Run any way of living through one test: <b>what if everyone did this?</b> Cooperation survives its own universalization. Extraction does not — a world of pure takers has no one left to take from. The test is <b>Kant's</b>, credited in full. The discovery is where our geometry lands when you push it: on exactly that bit.</p>
+  </header>
+
+  <section class="body">
+    <p class="kicker reveal">The discovery</p>
+    <h2 class="reveal read">Symbiosis scales. <b>Demonhood cannot.</b></h2>
+    <div class="read">
+      <p class="reveal">Take the extractor's strategy seriously — call it demonhood: grow yourself by draining others, always. As a private strategy it can work brilliantly; history is full of successful parasites. Now universalize it. A world where <em>everyone</em> extracts is a world where every move needs a victim and no one is left to be one. The strategy is a logical free-rider: <b>it only works while most people refuse it.</b> It cannot even be stated as a law for everyone without deleting its own precondition.</p>
+      <p class="reveal">Now universalize the opposite strategy — grow only where both sides rise. A world where everyone plays that way does not collapse. It compounds. That is the asymmetry, and it is the entire result: <b>one strategy passes the everyone-test, its mirror image fails it.</b> One bit. The parasite needs the host; the host never needed the parasite.</p>
+    </div>
+
+    <figure class="fig reveal">
+      <svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels. Left: a field of dots all exchanging arrows, stable, labeled cooperation universalized. Right: dots each with an arrow taking from a neighbor, fading out, labeled extraction universalized — no host remains.">
+        <g font-family="Roboto Mono,monospace" font-size="13" fill="#a4a7a9">
+          <!-- left: cooperation universalized -->
+          <rect x="20" y="20" width="330" height="260" rx="12" fill="none" stroke="rgba(91,191,136,.5)"/>
+          <text x="185" y="48" text-anchor="middle" fill="#5bbf88" font-size="14" font-weight="700">EVERYONE COOPERATES</text>
+          <g stroke="#5bbf88" stroke-width="1.2" fill="none" opacity=".85">
+            <path d="M110 110 L180 95"/><path d="M180 95 L255 118"/><path d="M255 118 L235 190"/>
+            <path d="M235 190 L140 195"/><path d="M140 195 L110 110"/><path d="M180 95 L185 150"/>
+            <path d="M185 150 L140 195"/><path d="M185 150 L235 190"/><path d="M185 150 L110 110"/><path d="M185 150 L255 118"/>
+          </g>
+          <g fill="#F5F5F3">
+            <circle cx="110" cy="110" r="7"/><circle cx="180" cy="95" r="7"/><circle cx="255" cy="118" r="7"/>
+            <circle cx="235" cy="190" r="7"/><circle cx="140" cy="195" r="7"/><circle cx="185" cy="150" r="7"/>
+          </g>
+          <text x="185" y="248" text-anchor="middle">every node still standing — the law can be law</text>
+          <!-- right: extraction universalized -->
+          <rect x="370" y="20" width="330" height="260" rx="12" fill="none" stroke="rgba(224,69,59,.55)"/>
+          <text x="535" y="48" text-anchor="middle" fill="#e0453b" font-size="14" font-weight="700">EVERYONE EXTRACTS</text>
+          <g stroke="#e0453b" stroke-width="1.4" fill="none">
+            <path d="M470 110 L530 96 m0 0 l-11 -1 m11 1 l-6 9" opacity=".9"/>
+            <path d="M605 120 L545 100 m0 0 l8 8 m-8 -8 l11 -2" opacity=".7"/>
+            <path d="M585 192 L610 132 m0 0 l-9 7 m9 -7 l2 11" opacity=".5"/>
+            <path d="M490 196 L475 122 m0 0 l-4 10 m4 -10 l8 8" opacity=".35"/>
+          </g>
+          <g fill="#F5F5F3">
+            <circle cx="470" cy="110" r="7" opacity=".85"/>
+            <circle cx="530" cy="96" r="7" opacity=".6"/>
+            <circle cx="605" cy="120" r="7" opacity=".45"/>
+            <circle cx="585" cy="192" r="7" opacity=".3"/>
+            <circle cx="490" cy="196" r="7" opacity=".18"/>
+            <circle cx="540" cy="160" r="7" opacity=".08"/>
+          </g>
+          <text x="535" y="248" text-anchor="middle">every arrow needs a victim — the field goes dark</text>
+        </g>
+      </svg>
+      <figcaption class="figcap">The everyone-test: one strategy survives its own universalization; its mirror deletes its own precondition.</figcaption>
+    </figure>
+
+    <div class="read">
+      <p class="reveal">Credit where it is due, in bold: <b>the test is Immanuel Kant's</b> — the categorical imperative, 1785, not ours. We derived no new moral logic. What we found is that our geometry of players and wholes, pushed to the question "which strategies can be everyone's strategy?", lands precisely on Kant's answer, with the extraction bit doing all the work. As with the physics our seam inherits, <b>the rhyme is the discovery, not the theft</b> — the same asymmetry showing up from an independent direction is evidence the pattern is real, not evidence that we invented it.</p>
+      <p class="reveal">And one more honesty, the most important on this page. The test tells you which strategies <em>can</em> be universal. It does not, by itself, force you to care. No amount of <em>is</em> ever fully purchases an <em>ought</em> — Hume's gap stays open, and we do not pretend to close it. What the framework does is compress everything the gap cannot cover into this single asymmetric bit, and then <b>take it as a vow: refuse the non-universalizable move.</b> A vow is not a theorem. We hold it as a vow, and we say so.</p>
+    </div>
+
+    <p class="pull reveal">Everything is/ought cannot bridge, <b>compressed to one bit</b> — <span class="gold">and the bit is taken as a vow.</span></p>
+
+    <div class="pitch reveal">
+      <p class="lab">Why this matters to you</p>
+      <p>It replaces a thousand-page ethics with a <b>ten-second test you can run on anything</b>: a habit, a hustle, a policy, a prompt. Ask "what if everyone did this?" — and watch whether the strategy needs other people to be doing something else. If it does, it is a parasite on the very norm it violates, however clever it looks up close. You do not need to believe anything on this site to use that test. It was Kant's before it was ours, and it will work for you whether or not you ever read another page here.</p>
+    </div>
+
+    <div class="cta-row reveal">
+      <a class="cta primary" href="../../practice/">Run the everyone-test today →</a>
+      <a class="cta" href="../../build/">Build with the vow →</a>
+      <a class="cta" href="../../plainly/">The whole idea, plainly →</a>
+    </div>
+
+    <div class="strength reveal">
+      <p>Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
+      <span class="chip"><b class="te">[E]</b> the test inherited from Kant, credited · <b class="ts">[S]</b> the asymmetry itself · <b class="tc">[C]</b> the vow — taken, not proven</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>Universalizability · one discovery of ten · every claim graded on <a href="../../axioms/">the axioms page</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>
+  If you can see directly, <a href="../../exit/">put this down</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

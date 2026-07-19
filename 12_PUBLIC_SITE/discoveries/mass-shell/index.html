@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass-Shell — Our central equation is Einstein&rsquo;s. We checked. — Emergentism</title>
+<meta name="description" content="Our seam — φ·ν = 1 — is Einstein's mass-shell relation in different clothes. The equation is inherited and credited; the rhyme is the discovery, not the theft." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Our central equation is Einstein&rsquo;s. We checked." />
+<meta property="og:description" content="Our central identity is the relativistic mass-shell relation after a change of variables. Credited to physics. The mapping from particles to persons is our wager, held openly at its tier." />
+<meta property="og:url" content="https://www.emergentism.org/discoveries/mass-shell/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+.fileno a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px;text-transform:none;letter-spacing:normal}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;letter-spacing:-.015em;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}
+.pull .gold{color:var(--gold);font-weight:700}
+.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
+.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
+.pitch p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
+.pitch b{color:var(--gold);font-weight:500}
+/* equation strip */
+.eq{font-family:var(--mono);font-size:clamp(1rem,2.2vw,1.35rem);color:var(--bone);background:linear-gradient(180deg,var(--panel),var(--void-2));border:1px solid var(--line);border-radius:12px;padding:1.3rem 1.6rem;margin:1.6rem 0;overflow-x:auto;white-space:nowrap}
+.eq .g{color:var(--gold)}
+.eq small{display:block;white-space:normal;font-size:.72rem;color:var(--bone-faint);margin-top:.6rem;letter-spacing:.06em}
+/* dictionary table */
+.dict{display:grid;grid-template-columns:1fr auto 1fr;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:1.6rem 0;background:var(--line-soft)}
+.dict>div{background:linear-gradient(180deg,var(--panel),var(--void-2));padding:.95rem 1.2rem;font-size:.95rem;color:var(--bone-dim)}
+.dict .h{font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center}
+.dict .a{color:var(--bone)}
+.dict .mid{display:grid;place-items:center;color:var(--bone-ghost);font-family:var(--mono)}
+.dict b{color:var(--bone);font-weight:500}
+@media(max-width:560px){.dict{grid-template-columns:1fr}.dict .mid{display:none}.dict .h.h2x{display:none}}
+/* figure */
+.figrow{display:grid;grid-template-columns:1fr 340px;gap:2.5rem;align-items:center;margin:1rem 0 0}
+@media(max-width:820px){.figrow{grid-template-columns:1fr}.fig{max-width:320px;margin:1rem auto 0}}
+.fig svg{width:100%;height:auto;display:block;overflow:visible}
+.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
+/* strength line + tier chip */
+.verdict{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.04),transparent 72%);padding:clamp(1.6rem,4vw,2.4rem);margin-top:.5rem}
+.verdict .strength{font-size:clamp(1.1rem,1.7vw,1.35rem);font-weight:300;color:var(--bone);margin:0 0 1rem}
+.verdict .strength a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
+.t{font-family:var(--mono);font-size:.92em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.chip{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../../0/">0</a><a href="../../1/">1</a><a href="../../2/">2</a><a href="../../3/">3</a>
+    <a href="../../4/">4</a><a href="../../5/">5</a><a href="../../6/">6</a>
+    <a href="../../fable/">Fable</a><a href="../../plainly/">Plainly</a>
+    <a href="../../axioms/">Axioms</a><a href="../../record/">Record</a><a href="../../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno reveal in">Discovery · <a href="../">back to all discoveries</a></p>
+    <h1 class="reveal in">Physics already <span class="gold">wears the equation.</span></h1>
+    <p class="dek reveal in"><b>We did not invent our central identity. Physics has been wearing it for a century.</b> The equation is Einstein's, credited in full. The rhyme is the discovery — not the theft.</p>
+
+    <div class="pitch reveal in">
+      <p class="lab">The claim, exactly</p>
+      <p>The seam of our chart — <b>φ·ν = 1</b>, seeing times doing identically one — is, after a change of variables, the relativistic <b>mass-shell relation</b>: the equation every particle in the universe obeys.</p>
+    </div>
+  </header>
+
+  <!-- THE EQUATION -->
+  <section class="body">
+    <p class="kicker reveal">The seam, undressed</p>
+    <h2 class="reveal read">Same constraint, <b>two wardrobes.</b></h2>
+    <p class="reveal read">The seam of our chart — φ·ν = 1, seeing times doing identically one — is, after a change of variables, the relativistic mass-shell relation:</p>
+    <div class="eq reveal">
+      E² − (pc)² = (mc²)² <span class="g">⇌</span> φ · ν = 1
+      <small>left: every particle in the universe · right: our chart's seam · one hyperbolic constraint, two changes of clothes</small>
+    </div>
+    <p class="reveal read">The one that says energy, momentum, and rest mass are three faces of one constraint. Say that plainly and give credit where it is due: <b>the equation is Einstein's.</b> We derived nothing about physics, and physics derives nothing about ethics from us. What we found is a rhyme — and the rhyme is exact, not decorative.</p>
+  </section>
+
+  <!-- THE DICTIONARY -->
+  <section class="body">
+    <p class="kicker reveal">The dictionary</p>
+    <h2 class="reveal read">Word for word, <b>the mapping.</b></h2>
+    <div class="figrow">
+      <div>
+        <div class="dict reveal" role="table" aria-label="Dictionary between the sphere and special relativity">
+          <div class="h">Our sphere</div><div class="h mid h2x">⇌</div><div class="h">Special relativity</div>
+          <div class="a">On the equator — balance</div><div class="mid">⇌</div><div>A particle <b>at rest</b>: all rest mass, no momentum</div>
+          <div class="a">Near a pole — one shadow only</div><div class="mid">⇌</div><div>Near light-speed: all momentum, internal clock <b>nearly frozen</b></div>
+          <div class="a">B = sin θ, the balance number</div><div class="mid">⇌</div><div><b>The rate a clock ticks</b> — the time-dilation factor, one of the most tested quantities in all of science</div>
+          <div class="a">Equator = maximum B</div><div class="mid">⇌</div><div>Maximum at rest. <b>The equator is the rest frame.</b></div>
+        </div>
+      </div>
+      <figure class="fig reveal">
+        <svg viewBox="0 0 320 320" role="img" aria-label="A globe with a gold equator labelled rest frame, clock fastest; the poles labelled near light-speed, clock frozen. The balance number B equals sine theta is the rate a clock ticks.">
+          <circle cx="160" cy="160" r="112" fill="none" stroke="rgba(245,245,243,.16)" stroke-width="1"/>
+          <ellipse cx="160" cy="160" rx="112" ry="26" fill="none" stroke="rgba(245,245,243,.07)" stroke-width="1"/>
+          <line x1="48" y1="160" x2="272" y2="160" stroke="#FFEB3B" stroke-width="2.4"/>
+          <circle cx="160" cy="48" r="4.5" fill="none" stroke="#b59ce0" stroke-width="1.6"/>
+          <circle cx="160" cy="272" r="4.5" fill="none" stroke="#b59ce0" stroke-width="1.6"/>
+          <circle cx="160" cy="160" r="4" fill="#FFEB3B"/>
+          <g font-family="Roboto Mono,monospace" font-size="10.5">
+            <text x="160" y="20" text-anchor="middle" fill="#b59ce0">near light-speed</text>
+            <text x="160" y="33" text-anchor="middle" fill="#6b6f74">clock ≈ frozen</text>
+            <text x="160" y="294" text-anchor="middle" fill="#b59ce0">near light-speed</text>
+            <text x="160" y="307" text-anchor="middle" fill="#6b6f74">clock ≈ frozen</text>
+            <text x="280" y="151" fill="#FFEB3B">rest frame</text>
+            <text x="280" y="166" fill="#CBB800">B = sin θ = 1</text>
+            <text x="280" y="181" fill="#6b6f74">clock fastest</text>
+          </g>
+        </svg>
+        <figcaption>the balance number is the rate a clock ticks</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- WHY THE SAME ALGEBRA -->
+  <section class="body">
+    <p class="kicker reveal">Why the rhyme is exact</p>
+    <h2 class="reveal read">One shape, wherever a whole is <b>split.</b></h2>
+    <p class="reveal read">Why does the same hyperbolic bookkeeping appear in both places? Because both problems have the same shape: <b>a fixed whole split between a "being" part and a "moving" part, with a conserved constraint across the split.</b> Whenever reality divides a whole that way, this algebra shows up. Physics found it in spacetime. We found it drawing two chords through a point — and then recognized whose equation we were holding.</p>
+    <p class="pull reveal">The mathematics is <span class="gold">inherited and credited.</span> The mapping from particles to persons is <b>our wager.</b></p>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section class="body">
+    <p class="kicker reveal">Why this matters to you</p>
+    <h2 class="reveal read">A calibration, <b>not a proof.</b></h2>
+    <p class="reveal read">When a homemade framework's core identity turns out to be structurally identical to the most confirmed equation in physics, that does not make the framework true. It makes it <em>non-arbitrary</em> — the pattern is real somewhere, beyond dispute, and the open question is only how far it travels. That question is exactly what our trial record exists to test.</p>
+    <p class="reveal read">One more discipline, printed wherever it appears: the seam (φ·ν = 1, true by construction in the chart) is never the score (B = sin θ ≤ 1, the measurement) and never the node law. The seam is the frame; the score is the picture.</p>
+  </section>
+
+  <!-- VERDICT -->
+  <section>
+    <div class="verdict reveal">
+      <p class="strength">Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
+      <p class="chip"><span class="t t-e">[E]</span> equation inherited from physics, credited · <span class="t t-c">[C]</span> the mapping — wagered</p>
+      <div class="cta-row">
+        <a class="cta primary" href="../../practice/">Try the practice in an afternoon →</a>
+        <a class="cta" href="../../build/">Build with it →</a>
+        <a class="cta" href="../">All discoveries →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>Mass-shell · the equation is Einstein's, the rhyme is ours — every claim graded on <a href="../../axioms/">the axioms page</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>If you can see directly, <a href="../../exit/">put this down</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>

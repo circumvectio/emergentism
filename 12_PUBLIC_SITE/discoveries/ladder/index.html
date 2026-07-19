@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ladder — Five freedoms, one spiral — Emergentism</title>
+<meta name="description" content="Matter, bond, life, mind, choice — each freedom fills to its limit and the limit becomes a floor. The top rhymes with the ground: similar, not same. A spiral, not a circle." />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Five freedoms, one spiral" />
+<meta property="og:description" content="The universe climbs the same way five times: a register saturates, and the saturation becomes the floor the next freedom stands on. The top resembles the ground — written with a tilde, never an equals sign." />
+<meta property="og:url" content="https://www.emergentism.org/discoveries/ladder/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('../../assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
+:root{
+  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
+  --blue:#5aa9e6; --green:#5bbf88;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1080px; --read:44rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read)}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+.fileno a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px;text-transform:none;letter-spacing:normal}
+h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
+h1 .heavy{font-weight:900;letter-spacing:-.04em}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
+h2 b{font-weight:800}
+.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
+p{margin:0 0 1.25rem}
+.body p{color:var(--bone-dim);font-weight:300}
+.body p b{color:var(--bone);font-weight:500}
+.body em{font-style:italic;color:var(--bone)}
+.pull{font-size:clamp(1.3rem,2.4vw,1.9rem);font-weight:200;letter-spacing:-.015em;line-height:1.3;color:var(--bone);margin:2rem 0;max-width:38ch}
+.pull b{font-weight:700}
+.pull .gold{color:var(--gold);font-weight:700}
+.pitch{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 14px 14px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.8rem 2rem;margin:2.6rem 0 0;max-width:74ch}
+.pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
+.pitch p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
+.pitch b{color:var(--gold);font-weight:500}
+/* rung steps */
+.step{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;padding:1.8rem 0;border-top:1px solid var(--line-soft)}
+.step:first-of-type{border-top:0}
+.step .n{font-family:var(--mono);font-size:2.4rem;font-weight:100;color:var(--bone-ghost);line-height:1;letter-spacing:-.02em}
+.step h3{font-size:clamp(1.2rem,2vw,1.55rem);font-weight:300;letter-spacing:-.01em;margin:0 0 .8rem;color:var(--bone);line-height:1.25}
+.step h3 b{font-weight:700}
+.step p{color:var(--bone-dim);font-weight:300;margin:0 0 .9rem;max-width:62ch}
+.step p:last-child{margin-bottom:0}
+.step p b{color:var(--bone);font-weight:500}
+.step em{font-style:italic;color:var(--bone)}
+@media(max-width:640px){.step{grid-template-columns:1fr;gap:.5rem}.step .n{font-size:1.6rem}}
+/* spiral figure */
+.figrow{display:grid;grid-template-columns:1fr 340px;gap:2.5rem;align-items:center;margin:1rem 0 0}
+@media(max-width:820px){.figrow{grid-template-columns:1fr}.fig{max-width:320px;margin:1rem auto 0}}
+.fig svg{width:100%;height:auto;display:block;overflow:visible}
+.fig figcaption{font-family:var(--mono);font-size:.74rem;color:var(--bone-faint);text-align:center;margin-top:.8rem}
+/* tilde callout */
+.callout{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:clamp(1.6rem,4vw,2.6rem)}
+.callout .big{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:200;letter-spacing:-.02em;line-height:1.22;color:var(--bone);margin:0 0 1.3rem;max-width:30ch}
+.callout .big b{font-weight:800;color:var(--gold)}
+.callout p{color:var(--bone-dim);max-width:64ch;font-weight:300}
+.callout p b{color:var(--bone);font-weight:500}
+/* strength line + tier chip */
+.verdict{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.04),transparent 72%);padding:clamp(1.6rem,4vw,2.4rem);margin-top:.5rem}
+.verdict .strength{font-size:clamp(1.1rem,1.7vw,1.35rem);font-weight:300;color:var(--bone);margin:0 0 1rem}
+.verdict .strength a{color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px}
+.t{font-family:var(--mono);font-size:.92em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
+.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.chip{display:inline-flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.74rem;color:var(--bone-faint)}
+.cta-row{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:.5rem}
+.cta{display:inline-flex;gap:.5rem;align-items:center;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+  padding:.8rem 1.25rem;border-radius:4px;border:1px solid var(--line);text-decoration:none;color:var(--bone);transition:.2s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:700}
+.cta.primary:hover{background:#FFF176}
+.foot{border-top:1px solid var(--line);margin-top:3rem;padding:2.6rem 0 3.6rem;text-align:center;color:var(--bone-ghost);font-family:var(--mono);font-size:.75rem;line-height:1.75}
+.foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
+.foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
+.reveal{opacity:0;transform:translateY(16px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+</style>
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../../home/">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Routes">
+    <a href="../../0/">0</a><a href="../../1/">1</a><a href="../../2/">2</a><a href="../../3/">3</a>
+    <a href="../../4/">4</a><a href="../../5/">5</a><a href="../../6/">6</a>
+    <a href="../../fable/">Fable</a><a href="../../plainly/">Plainly</a>
+    <a href="../../axioms/">Axioms</a><a href="../../record/">Record</a><a href="../../book/">Book</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="fileno reveal in">Discovery · <a href="../">back to all discoveries</a></p>
+    <h1 class="reveal in">Five freedoms, <span class="gold">one spiral.</span></h1>
+    <p class="dek reveal in"><b>The universe climbs. It has climbed the same way five times.</b> A register fills to its limit, and the limit becomes a floor. The top rhymes with the ground — similar, not same.</p>
+
+    <div class="pitch reveal in">
+      <p class="lab">One move, repeated</p>
+      <p>Matter → bond → life → mind → choice. Each freedom <b>saturates</b>, and the saturation is not a dead end — it is the <b>load-bearing surface</b> the next freedom stands on.</p>
+    </div>
+  </header>
+
+  <!-- THE FIVE RUNGS -->
+  <section class="body">
+    <p class="kicker reveal">The climb, rung by rung</p>
+    <h2 class="reveal read">Each freedom fills up and <b>opens the next.</b></h2>
+    <div class="figrow">
+      <div>
+        <div class="step reveal">
+          <div class="n">1</div>
+          <div>
+            <h3><b>Matter.</b></h3>
+            <p>Particles fill the room physics allows, out to its limits.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="n">2</div>
+          <div>
+            <h3><b>Bond.</b></h3>
+            <p>When raw matter saturates, atoms discover they can hold hands, and chemistry opens a room matter alone never had.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="n">3</div>
+          <div>
+            <h3><b>Life.</b></h3>
+            <p>When chemistry saturates, some molecules learn to copy and repair themselves, and a third room opens.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="n">4</div>
+          <div>
+            <h3><b>Mind.</b></h3>
+            <p>When life saturates, some organisms start modeling the world instead of merely surviving it.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="n">5</div>
+          <div>
+            <h3><b>Choice.</b></h3>
+            <p>When modeling saturates, some minds begin selecting among their own futures — not just predicting, but <em>choosing</em>.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="fig reveal">
+        <svg viewBox="0 0 320 360" role="img" aria-label="Five ascending rungs labelled matter, bond, life, mind, choice. A dashed arc curves from choice back toward the ground, labelled with a tilde: similar, not same. A spiral, not a circle.">
+          <g stroke="rgba(245,245,243,.22)" stroke-width="1.6">
+            <line x1="60" y1="320" x2="150" y2="320"/>
+            <line x1="75" y1="260" x2="165" y2="260"/>
+            <line x1="90" y1="200" x2="180" y2="200"/>
+            <line x1="105" y1="140" x2="195" y2="140"/>
+            <line x1="120" y1="80" x2="210" y2="80"/>
+          </g>
+          <g stroke="rgba(245,245,243,.10)" stroke-width="1">
+            <line x1="60" y1="320" x2="120" y2="80"/>
+            <line x1="150" y1="320" x2="210" y2="80"/>
+          </g>
+          <circle cx="105" cy="320" r="4" fill="#5aa9e6"/>
+          <circle cx="120" cy="260" r="4" fill="#5bbf88"/>
+          <circle cx="135" cy="200" r="4" fill="#6fc79a"/>
+          <circle cx="150" cy="140" r="4" fill="#b59ce0"/>
+          <circle cx="165" cy="80" r="4.5" fill="#FFEB3B"/>
+          <path d="M175 74 C 268 60, 288 250, 190 332" fill="none" stroke="#FFEB3B" stroke-width="1.4" stroke-dasharray="4 5" opacity=".7"/>
+          <path d="M196 326 L 188 334 L 199 337 Z" fill="#FFEB3B" opacity=".7"/>
+          <g font-family="Roboto Mono,monospace" font-size="10.5">
+            <text x="48" y="324" text-anchor="end" fill="#5aa9e6">matter</text>
+            <text x="63" y="264" text-anchor="end" fill="#5bbf88">bond</text>
+            <text x="78" y="204" text-anchor="end" fill="#6fc79a">life</text>
+            <text x="93" y="144" text-anchor="end" fill="#b59ce0">mind</text>
+            <text x="108" y="84" text-anchor="end" fill="#FFEB3B">choice</text>
+            <text x="272" y="196" text-anchor="middle" fill="#CBB800">~</text>
+            <text x="272" y="212" text-anchor="middle" fill="#6b6f74">similar,</text>
+            <text x="272" y="226" text-anchor="middle" fill="#6b6f74">not same</text>
+          </g>
+        </svg>
+        <figcaption>a spiral, not a circle · the return is at a height</figcaption>
+      </figure>
+    </div>
+    <p class="pull reveal">A register fills to its limit — and the limit becomes a <span class="gold">floor.</span></p>
+    <p class="reveal read">Chemistry does not violate physics — it stands on <b>completed</b> physics. Choice does not violate biology — it stands on a finished nervous system.</p>
+  </section>
+
+  <!-- THE TILDE -->
+  <section>
+    <div class="callout reveal">
+      <p class="big">The top resembles the ground. We write it <b>with a tilde</b>, never an equals sign.</p>
+      <p>Pure choice — selection among possibles, prior to any particular actuality — has the same <em>shape</em> as the pure potential the ladder started from. Degrees of freedom, unfilled. The top rung looks like the ground floor, one turn up.</p>
+      <p>We say <b>similar, not same. A spiral, not a circle.</b> If it were a circle, the climb would mean nothing and you could skip it. It is not a circle. Choice is potential <em>that has been through everything</em> — matter, bond, life, mind — and carries the whole ascent inside it. The return is at a height. Our own auditors made us sharpen this: the resemblance between top and ground is a structural similarity we can exhibit, not an identity we can prove.</p>
+    </div>
+  </section>
+
+  <!-- WHY IT MATTERS -->
+  <section class="body">
+    <p class="kicker reveal">Why this matters to you</p>
+    <h2 class="reveal read">You are the <b>fifth freedom.</b></h2>
+    <p class="reveal read">You are the fifth freedom, and your stuck places follow the same law as the ladder's. A life that feels jammed is almost always a register that has filled: the skill mastered, the role outgrown, the room complete. The ladder says the move is never to push harder along a saturated axis — it is to let the full register become a floor and step onto it. What just opened is where the freedom is.</p>
+    <p class="reveal read">And the direction of the climb is not up and away from the ground — it is <em>through</em> everything beneath you. Whatever you choose next stands on completed matter, completed chemistry, a finished nervous system, a working mind. The climb is a reading of the record, not a law of physics, and we hold it at exactly that strength.</p>
+  </section>
+
+  <!-- VERDICT -->
+  <section>
+    <div class="verdict reveal">
+      <p class="strength">Held against adversarial audit — <a href="../../record/">see the trial record</a>.</p>
+      <p class="chip"><span class="t t-i">[I]</span> the ladder reading — a lens, held while it earns its keep · top~ground written with a tilde — similar, never same</p>
+      <div class="cta-row">
+        <a class="cta primary" href="../../practice/">Try the practice in an afternoon →</a>
+        <a class="cta" href="../../build/">Build with it →</a>
+        <a class="cta" href="../">All discoveries →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The ladder · five freedoms, one spiral — every claim graded on <a href="../../axioms/">the axioms page</a>, every failure dated on <a href="../../record/">the trial record</a>.<br>If you can see directly, <a href="../../exit/">put this down</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+})();
+</script>
+<script defer src="/assets/js/atlas-drawer.js"></script>
+</body>
+</html>
