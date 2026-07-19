@@ -5,7 +5,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged synthesis — no founder promotion receipt; no Skyzai warrant"
+  register: "[D] staged synthesis — no completed founder promotion; receipt 135 provisional / 136 controls; no Skyzai warrant"
   canonical_phrase: "Constrained freedoms, typed existence, costed emergence, correction, vow, exit"
 type: emergentism-weltanschauung-kernel
 version: "v0.2"

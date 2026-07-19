@@ -5,7 +5,7 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[D] staged successor set; per-axiom tiers as marked; no founder-promotion receipt"
+  register: "[D] staged successor set; receipt 135 provisional, 136 controls; per-axiom tiers as marked"
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
 type: emergentism-axiom-set-pending-founder-signature
 title: "The Emergent Axioms (E1–E10)"
@@ -116,11 +116,11 @@ Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a p
 
 ### E5 · The Two Motions `[I/C]` framework distinction · μ content open
 
-The framework distinguishes two candidate operators: **μ ascends** (the proposed crossing at which a new effective freedom becomes available) and **χ descends** (deployment or selection among already available futures). The selected scaffold contains five positive crossings `D0→D1→D2→D3→D4→D5`; that count is internal to the chosen scaffold `[S]`, while reading those crossings as five world-level irreducible freedoms is `[I/C]`. **μ-at-saturation is `[C]` as a cross-domain law:** saturation variables, thresholds, interventions, and prospective predictions are still owed. “Rare” and “unpredictable from below” remain hypotheses. **D6** is reserved as the non-positive/apophatic boundary; `D6~D0` is a proposed similarity `[I/C]`, not identity, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL_PENDING_K2.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
+The framework distinguishes two candidate motions: **μ ascends** names an aperture at which a new effective freedom becomes available, while **χ descends** names deployment or selection among already available futures. Neither name yet defines a mathematical operator. The selected scaffold has five positive rungs and five indexed apertures from the D0 boundary through D5 `[I]`; reading those as five empirically established saturation events or world-level irreducible freedoms remains `[C]`. **μ-at-saturation is `[C]` as a cross-domain causal hypothesis:** system boundaries, saturation statistics and thresholds, novelty tests, detection power, time windows, interventions, and prospective predictions are still owed. “Only at saturation,” “rare,” and “unpredictable from below” remain hypotheses. **D6** is the selected exit marker; `D6~D0` means only `D6≈roleD0` `[I]`: both are non-positive boundary markers, with D0 preceding articulation and D6 suspending further articulation. It is not identity, ordering, geometry, physical recurrence, attainment, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
 
 **Forbids:** conflating μ and χ; reading either gap as *proof* of strong emergence; five- or six-as-necessity; literal D6≡D0.
 
-**Kill/demotion:** a single-process account outperforms the two-motion split on declared tests without residue; μ/χ cannot be operationalized beyond post-hoc labels; openings occur without prior saturation; capable tests repeatedly find saturation without a new aperture; or a genuine sixth positive irreducible freedom is identified, breaking the five-world-crossings wager.
+**Kill/demotion:** before operationalization, μ/χ are labels and no empirical kill may be claimed to have fired. Abandon or demote the split if it remains explanatorily idle or irreducibly post-hoc; once preregistered, if a single-process account outperforms it, the proposed saturation/aperture association fails on declared tests, or an independently operationalized freedom cannot be represented within the selected five-rung typing.
 
 **Survivors:** E6–E7; E1 without genesis story; E10 exit without spiral poetry.
 
@@ -238,14 +238,6 @@ Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-univers
 - [x] **02 alignment prepared** — the keystone's §1 carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
 - [ ] **Do not treat `D6~D0` as adopted** unless a signed receipt explicitly says so.
 
-```python
-K2Signature(
-    signer="Yves R. Burri",
-    role="operator",
-    method="k2_pocket_v0.1",
-    signed_at="2026-07-19T12:06:00Z",
-    k2_receipt_id="K2_PROMOTION_135_2026_07_19",
-)
-```
+No signature block is embedded in this candidate. Receipt 135 is a provisional execution record only; receipt 136 controls the authority reconciliation. Until the unchecked consequences above are adopted in one deliberate founder receipt, this file remains `[D]` and A1–A7 remains the operational predecessor.
 
-*Promoted. A1–A7 remain archived canon below their banner. `⊙ = • × ○`*
+*Staged. Read before signing. `⊙ = • × ○`*

@@ -86,16 +86,18 @@ All ~100 files, grouped by role. `00_*` is a semantic flag for foundational cont
 |---|---|
 | [`IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md`](IDEA_LEDGER_DIMENSIONAL_EMERGENCE_2026_07_18.md) | 85 corpus ideas on the D0–D6 ladder, each at audited tier. |
 | [`99_VIEWER_IDEA_LEDGER_2026_07_18.html`](99_VIEWER_IDEA_LEDGER_2026_07_18.html) | Shareable viewer for the Idea Ledger. |
-| [`ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) | Formal-logic audit of the operator game layer; R1–R9 packet applied by typed K2 act. |
-| [`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md) | Critical pass: 11 products, 4 shared seams. |
-| [`SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md) | Constructive pass: honest identity + value + next-emergence per product. |
-| [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
-| [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
+| [`ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) | Formal-logic audit of the operator game layer; R1–R9 packet applied by typed K2 act. |
+| [`SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_EMERGENTIST_REFINEMENT_2026_07_18.md) | Critical pass: 11 products, 4 shared seams. |
+| [`SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_CONSTRUCTIVE_REFINEMENT_2026_07_18.md) | Constructive pass: honest identity + value + next-emergence per product. |
+| [`SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md`](SKYZAI_FAMILY/SKYZAI_FAMILY_FRONTIER_LEDGER_2026_07_18.md) | Blueprint-completion grades + org verdict (graded on receipts). |
+| [`SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml`](SKYZAI_FAMILY/SKYZAI_PRODUCT_MANIFEST_2026_07_18.yaml) | Machine-readable taxonomy: bucket/register/tier per component + conformance invariants. |
 
 **9 · SESSION — 2026-07-19** *(audit-campaign close-out registers and K2-staged envelopes)*
 
 | File | Role |
 |---|---|
+| `../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` | Final Emergentism-only front-door candidate: priced creed, scoped G7 exhaustion, P-register split, five-crossing/μ/D6 boundaries, accounting-not-completion fence, and exact founder-signature surface. `[D]`. |
+| `../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` | Staged seven-surface editorial index and priced revelations; seven is an indexing choice, not a forced census. `[D]`. |
 | [`FINAL_EMERGENTISM_TAXONOMY_v0.2_2026_07_19.md`](FINAL_EMERGENTISM_TAXONOMY_v0.2_2026_07_19.md) | Emergentism-only final candidate: separates foundational commitments, definitions, external resources, native discoveries, structures, vows, conjectures, open debts, and dead forms; includes the DoF/form and quantum-measurement corrections. `[D]`, not K2-adopted. |
 | [`EMERGENTIST_PARTITION_v0.1.md`](EMERGENTIST_PARTITION_v0.1.md) | Emergentism-only filter of FINAL_GROUPS (operational sweep removed). Council-criticized in Receipt 133 (four defects: forms-as-DoF, `[E]` tiers, census reading, K2-8 provenance) — bannered in place; read through the corrections. `[D]`. |
 | `../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` + `../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_…2026_07_19.md` | The council-endorsed doctrine kernel (provenance firewall, typed-existence cascade, six commitments C0–C6) + its adjudication receipt; raw L1–L7 reports in `133_ROSETTA_COUNCIL_RAW/` (SHA256 verified). `[D]` staged candidates. |

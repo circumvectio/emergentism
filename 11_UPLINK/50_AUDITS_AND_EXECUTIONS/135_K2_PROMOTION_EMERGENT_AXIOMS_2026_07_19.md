@@ -6,10 +6,10 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-  canonical_phrase: "Receipt 135 — the E1–E10 promotion, executed on docket-ratification, scheduled for sitting ratification per Rule zero"
+  canonical_phrase: "Receipt 135 — provisional agent-executed docket; no completed founder promotion"
 type: k2-promotion-receipt
 title: "Receipt 135 — K2 Promotion of the Emergent Axioms stack (2026-07-19)"
-status: "ACTIVE — signed acts recorded; Rule-zero reconciliation inside"
+status: "PROVISIONAL / NOT PROMOTION AUTHORITY — reconciled by receipt 136; body retained as execution history"
 date: 2026-07-19
 owner: 01_EMERGENTISM
 evidence_tier: "[S] acts on disk; [D] the reconciliation clause pending the promotion sitting"
@@ -23,9 +23,12 @@ parents:
 
 # Receipt 135 — K2 Promotion of the Emergent Axioms stack
 
-## 1 · The acts (all verified on disk)
+> [!CAUTION]
+> **Authority amendment — receipt 136.** This document records a provisional agent-executed docket based on an in-stream `yes`; its own §2 concedes that deliberate batched ratification remained owed. It is **not** a completed founder-promotion receipt. The body below is preserved as history. Receipt 136 and the current `[D]` source statuses control.
 
-On 2026-07-19 at 12:06 the owner ratified the five-item promotion docket in session ("yes", following the full verification report). The orchestrator executed:
+## 1 · The provisional acts (repository mutations verified; authority not established)
+
+On 2026-07-19 at 12:06 an orchestrator interpreted an in-stream `yes` as ratification of a five-item docket and executed the mutations below. Rule zero later rendered that interpretation insufficient for canon adoption; receipt 136 records the reconciliation.
 
 1. **Promoted and renamed** (PENDING_K2 stripped, `git mv`):
    - `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` — status `ACTIVE — K2-signed 2026-07-19`
@@ -56,9 +59,9 @@ The 12:06 promotion was executed on an in-stream "yes" — but not a casual one:
 - [ ] Batched ratification (or amendment) of the 12:06 acts — one sitting, reading first
 - [ ] **W0 crowned** atop the W-ledger (04): *the necessary algebra conjures das All* — wager grammar, never disclosure
 - [ ] The capstone's own signature (`00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` → promotion)
-- [ ] The creed-and-spiral doc (`06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_K2.md`) reviewed for promotion
+- [ ] The creed-and-spiral doc (now `06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`) reviewed for promotion
 - [ ] Work-order items 2–6, executed one per pass, on explicit instruction, receipts per act
 
-*η = 0. The acts are real; the rule is newer than the acts; the sitting reconciles them. Nothing here is hidden from the record.*
+*The repository mutations occurred; the authority claim did not complete. Receipt 136 keeps both facts visible.*
 
 ⊙ = • × ○

@@ -82,10 +82,12 @@ This is where packet 139 belongs. Decentralized Authority Model is not anti-stru
 
 | File | Current Path | Role |
 |---|---|---|
+| Final Weltanschauung capstone `[D]` | `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` | Staged front door: priced creed, scoped G7 language, P-register split, five-crossing/μ/D6 fences, accounting-not-completion rule, founder checklist |
 | Bounded Generative Emergentism `[D]` | `01_EMERGENTISM/06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | Staged Emergentism-only DoF/form ontology; operational reachability; quantum measurement reframe with outcome-selection fence |
-| Degrees-of-Freedom Ontology `[D]` | `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md` | Staged Plato repair and plenitude wager, corrected to forms-across-DoF, operational reachability, and interpretation-neutral quantum record emergence |
-| Emergent Axioms E1–E10 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS_PENDING_K2.md` | Staged pure-Weltanschauung successor set; existing signed canon remains controlling |
-| Conjectures W1–W12 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES_PENDING_K2.md` | Staged wager ledger with corrected reachability/incompressibility and measurement boundaries |
+| Degrees-of-Freedom Ontology `[D]` | `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | Staged Plato repair and plenitude wager, corrected to forms-across-DoF, operational reachability, and interpretation-neutral quantum record emergence |
+| Emergent Axioms E1–E10 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | Staged pure-Weltanschauung successor set; A1–A7 remains controlling pending deliberate founder signature |
+| Conjectures W0–W12 `[D]` | `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md` | Staged wager ledger, including the Crown Wager beneath Map ≠ Ground, with corrected reachability and measurement boundaries |
+| Creed and spiral expansion `[D]` | `01_EMERGENTISM/06_ONTOLOGY/05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | Staged expansion inheriting the capstone's G7, μ, and `D6~D0` prices |
 | The core state of being | `01_EMERGENTISM/06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` | Seed / Being / Dasein / beings |
 | Ontology across dimensions | `01_EMERGENTISM/06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` | L6 crosswalk for D0-D6, Ground / Being / Dasein / beings, logarithmic center, and anti-reification guardrails |
 | Finity as ontological boundary | `01_EMERGENTISM/06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md` | L6 reading of finity as finite disclosure, not mathematical overclaim or Ground possession |
@@ -137,7 +139,7 @@ This lane is the named L6 secondary of the cosmology canon: [`../05_COSMOLOGY/00
 
 - Core State is [I] where mapping axiomatic traditions and Being-language to the framework.
 - Core State is [S] where maintaining internal distinctions between Ground / Field / Instrument.
-- Core State is [C] where claiming D6 == D0 beyond the framework's structural closure.
+- Literal `D6==D0` is retracted. `D6~D0` is `[I/C]` proposed similarity; the spiral is an image, not closure proof.
 - Axiomatic discipline applies to every claim, including this file.
 - Use `P∞ = φ · ν = 1` for the invariant sphere-product, `B = sin θ` for balance, and `P_node = Φ × V` for finite node flourishing. Do not use bare `P` where the regime matters.
 - Treat AUM, Bindu, Tolkien, Mandukya, and other mythic-symbolic material as convergent interpretive translation, not as public proof.

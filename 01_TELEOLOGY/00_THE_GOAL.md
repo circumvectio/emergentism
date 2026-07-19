@@ -13,9 +13,9 @@ rosetta:
 
 **Status:** Canonical, owner-declared 2026-06-12 (K2: Yves R. Burri).
 **What this document is:** the project's telos stated explicitly — the **+1 (Ω)**
-of the [5+1 constitution](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
+of the [5+1 constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
 out for the whole Magnum Opus. Bigger than "pursue V and M"
-([VMOSK_A.md](VMOSK_A.md) remains the operational vision/mission surface);
+([VMOSK_A.md](../VMOSK_A.md) remains the operational vision/mission surface);
 more exact than "make the corpus coherent" (coherence is a constraint on the
 goal, not the goal). The five refusals clear the space; **this is what the
 space is for.**
@@ -182,16 +182,16 @@ field that carries it become more coherent, viable, truthful, and free?"
 
 | Know | Function | Lane | Canonical anchors |
 |---|---|---|---|
-| what is | **ontology** | [`06_ONTOLOGY/`](06_ONTOLOGY/) | The Ontology of Being; the Ring that is the Ground; Dasein |
-| how to know | **epistemology** | [`02_EPISTEMOLOGY/`](02_EPISTEMOLOGY/) | Evidence tiers; The Honest Position; knowing-by-doing |
-| how to move | **methodology** | [`03_METHODOLOGY/`](03_METHODOLOGY/) | The papers; the peer-review program; Lens-Not-Law |
-| what matters | **axiology** | [`04_AXIOLOGY/`](04_AXIOLOGY/) | Commandment vs Geometry; constitutional economics |
-| how to act | **teleology** | [`01_TELEOLOGY/`](01_TELEOLOGY/) | The Core Conjecture (constrained-optimization form); F5 |
+| what is | **ontology** | [`06_ONTOLOGY/`](../06_ONTOLOGY/) | The Ontology of Being; the Ring that is the Ground; Dasein |
+| how to know | **epistemology** | [`02_EPISTEMOLOGY/`](../02_EPISTEMOLOGY/) | Evidence tiers; The Honest Position; knowing-by-doing |
+| how to move | **methodology** | [`03_METHODOLOGY/`](../03_METHODOLOGY/) | The papers; the peer-review program; Lens-Not-Law |
+| what matters | **axiology** | [`04_AXIOLOGY/`](../04_AXIOLOGY/) | Commandment vs Geometry; constitutional economics |
+| how to act | **teleology** | [`01_TELEOLOGY/`](../01_TELEOLOGY/) | The Core Conjecture (constrained-optimization form); F5 |
 
 ## 6. How to play — the Soul Loop is the spine
 
 The game is **not a static decision rule**. It is the
-[Soul Loop](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+[Soul Loop](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
 cycling the five Knows until action converges — the loop the corpus already
 defines as *continuous recursive disambiguation* that **edits the corpus and
 the editor**. Ontology names the situation; epistemology checks the tier;
@@ -207,7 +207,7 @@ The goal obeys the constitution it serves — every clause wears its tier:
 
 - **`P_node = Φ × V` (the play rule).** The product form is `[A]`-within-model
   in the **contact register** — established by experiment E2 (2026-06-12,
-  [E2_REFLEXIVE_RESULTS.md](03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)):
+  [E2_REFLEXIVE_RESULTS.md](../03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_REFLEXIVE_RESULTS.md)):
   the plan's value is *exactly zero* at coin-flip execution, and reliability
   amplifies plan quality including its badness. The same quantity is **additive
   in the solipsistic register** (R6) — and that split is not a weakness of the
@@ -264,7 +264,7 @@ subject to the same ladder as every claim it governs.
 The goal is pursued by a recurring execution loop, not by restating the vow.
 The operational form — source-anchoring, public-mirroring, retrieval,
 verification, receipting — is the **O11 Vision/Mission runtime** defined in
-[VMOSK_A.md](VMOSK_A.md); this document does not re-derive it.[^goal-op-loop-ref]
+[VMOSK_A.md](../VMOSK_A.md); this document does not re-derive it.[^goal-op-loop-ref]
 
 The philosophical commitment is the same as §0 and §6: **disciplined correction
 faster than drift.** The goal names the commitment; VMOSK-A names the runtime
@@ -273,14 +273,14 @@ the O11 loop is its *operational surface*; the two are not the same loop and
 should not be conflated. The pursuit of any advance must move through both
 loops in their proper order.
 
-[^goal-op-loop-ref]: The 5-step operational loop (source truth → public mirror → retrieval/RAG → verification gate → receipt) lives in [VMOSK_A.md](VMOSK_A.md) as the O11 Vision/Mission runtime. Repeating it here would re-derive the operational surface in the philosophical document; the L1 Caṇḍāla reclassification pass (2026-07-19) flags this as a layer-conflation (philosophical commitment vs operational runtime) and removes the inline restatement.
+[^goal-op-loop-ref]: The 5-step operational loop (source truth → public mirror → retrieval/RAG → verification gate → receipt) lives in [VMOSK_A.md](../VMOSK_A.md) as the O11 Vision/Mission runtime. Repeating it here would re-derive the operational surface in the philosophical document; the L1 Caṇḍāla reclassification pass (2026-07-19) flags this as a layer-conflation (philosophical commitment vs operational runtime) and removes the inline restatement.
 
 ---
 
-**Read with:** [VMOSK_A.md](VMOSK_A.md) ·
-[00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
-[10_THE_SOUL_LOOP.md](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
-[00_THE_DYADIC_COUPLING_LAW.md](05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) ·
-[00_THE_CORE_CONJECTURE.md](01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)
+**Read with:** [VMOSK_A.md](../VMOSK_A.md) ·
+[00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
+[10_THE_SOUL_LOOP.md](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
+[00_THE_DYADIC_COUPLING_LAW.md](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) ·
+[00_THE_CORE_CONJECTURE.md](../01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)
 
 **Canonical Path:** `01_EMERGENTISM/00_THE_GOAL.md`

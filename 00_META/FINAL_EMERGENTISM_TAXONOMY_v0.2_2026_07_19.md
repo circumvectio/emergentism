@@ -250,7 +250,7 @@ A narrower survivor never reopens its dead stronger parent.
 
 ---
 
-## 11. Reconciliation with the staged E1–E10 / W1–W12 files
+## 11. Reconciliation with the staged E1–E10 / W0–W12 files
 
 The concurrently staged ontology files are preserved and indexed. This taxonomy separates their heterogeneous clauses rather than treating every `E` row as the same kind of axiom:
 
@@ -267,7 +267,7 @@ The concurrently staged ontology files are preserved and indexed. This taxonomy 
 | E9 Correction | AX5 methodological axiom |
 | E10 Exit | AX7 constitutional/apophatic posit |
 
-`04_THE_CONJECTURES_PENDING_K2.md` remains the detailed W1–W12 ledger. W1 and W2 have been corrected so that incompressibility is not physical unreachability, Everett is not forced, record formation is not outcome selection, and Born weights remain unpaid. The remaining W rows fit under §7 or remain narrower domain wagers.
+`06_ONTOLOGY/04_THE_CONJECTURES.md` remains the detailed W0–W12 ledger. W0 is the Crown Wager beneath Map ≠ Ground. W1 and W2 preserve the reachability/incompressibility and measurement/outcome-selection fences; Born weights remain unpaid. The remaining W rows fit under §7 or remain narrower domain wagers. The whole successor stack remains `[D]` pending deliberate founder signature; receipt 136 reconciles the provisional receipt-135 mutation.
 
 This reconciliation avoids a fork: the dedicated files carry expanded prose; this taxonomy controls the **kind of claim** each row represents if adopted.
 

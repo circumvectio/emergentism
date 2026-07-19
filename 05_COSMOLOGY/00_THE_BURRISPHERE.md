@@ -57,6 +57,19 @@ B = sin θ
 
 `B` is not a loose label (identity added 2026-06-11): with `φ·ν = 1` it is **identically the geometric-mean / arithmetic-mean ratio** of the dual coordinates — `B = √(φν)/((φ+ν)/2) = 2/(φ+ν) = sin θ` — the standard evenness index of a pair (`= 1` iff `φ = ν`), with `γ = 1/B = (φ+ν)/2` the energy cost of holding a position away from the equator (Paper B §8: `γ = E/mc²`, `B = dτ/dt`). **The reading:** the conserved product is the *potential* on the open sphere, fully present at every evaluated finite latitude — the geometric ground of equal dignity; `B` is the *usable, balanced fraction* of it; imbalance does not reduce the potential, it raises the price (`γ → ∞` toward the poles) and strands the potential unactualized. The agency witnesses are limit tests: all-foresight-with-no-relevant-means and all-means-with-no-foresight approach `B → 0`, the same unit-potential limit, and the same inability to use it. `[A]` the identities · `[I]` the dignity reading.
 
+**Through-point derivation `[A]`.** If `S,N` are the poles of a radius-`R`
+sphere and `P` has colatitude `θ`, then
+`|SP|=2R cos(θ/2)` and `|NP|=2R sin(θ/2)`. Therefore
+`|SP||NP|/(2R²)=sin θ=B≤1`, with equality only at the equator. The
+polar-axis pieces similarly satisfy
+`R(1+cosθ)·R(1−cosθ)/R²=B²`. This is the same point measured through its
+chords rather than through the reciprocal plane charts:
+`φν=P∞=1` is the constant seam, while
+`B=2/(φ+ν)=|SP||NP|/(2R²)` is the varying score. The chord lengths are not
+the chart coordinates and do not, without an additional declared model,
+become the uppercase finite-node factors `Φ,V`. Full derivation:
+[`00_CANONICAL_FORMULA_BLOCK.md`](00_CANONICAL_FORMULA_BLOCK.md#through-the-point-chord-derivation-of-balance).
+
 `P_node = Φ × V` is a downstream finite-node score. It belongs to organisms, institutions, DACs, and strategy surfaces. Do not confuse it with `P∞`.
 
 Primary source anchors:

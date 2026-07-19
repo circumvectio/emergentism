@@ -7,8 +7,8 @@ date: 2026-07-19
 status: rumination, not canon
 tier: "[I] — the rumination itself; the axioms are staged [D]"
 source_corpus:
-  - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS_PENDING_K2.md
-  - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md
+  - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
+  - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
 ---
 
 # E1–E10 — from inside the exit
