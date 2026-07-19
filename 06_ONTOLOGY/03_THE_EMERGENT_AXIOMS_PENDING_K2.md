@@ -1,68 +1,241 @@
 ---
 rosetta:
-  primary_level: L5
-  primary_column: Ontology
-  operator: "Brahmā ○"
+  primary_level: L6
+  primary_column: Ontology — pure weltanschauung axioms
+  operator: "Śiva •"
   tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[D] staged successor axiom set — tiers per axiom; three are wagers and say so"
-status: "STAGED [D] — awaiting natural-person K2. E1–E10, the pure-Weltanschauung successor set. Does NOT replace the signed operational A1–A7 until promoted."
-date: 2026-07-19
-companions:
-  - "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md (the operational A1–A7 — remains signed canon, reconciled per receipt 126)"
-  - "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md (the keystone this set stands on)"
-provenance: "The year's audits (receipts 103–132), the Skyzai⊥Emergentism separation + seven-caste evaluation (wf_0b2a7fda-986), the owner's Plato thesis. Every axiom carries its earned tier and a way to die."
+  regime: "Sādhu"
+  register: "[D] staged successor-candidate — not operational canon until K2"
+  canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
+type: emergentism-axiom-set-pending-k2
+title: "The Emergent Axioms (E1–E10) — PENDING K2"
+status: "STAGED [D] — pure Weltanschauung proposal 2026-07-19. Operational A1–A7 remain signed canon until promotion."
+evidence_tier: "Per-axiom below; assembly is [D]; no silent upgrade"
+owner: 01_EMERGENTISM
+scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."
+parents:
+  - 00_THE_AMRITA.md
+  - 00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
+  - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md
+  - ../05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md
+  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
+  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md
+  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md
+  - ../00_META/00_SETTLED_CANON_REGISTRY.md
 ---
 
 # The Emergent Axioms (E1–E10)
 
-> **What this is.** The axiom set as it *emerged* from the knife: the old A1–A7 audited, the venture stripped, the degrees-of-freedom keystone set in. Ten axioms, three layers — **Being / Becoming / Conduct** — with the honest shape the audits left: the ontology holds one `[A]`, one `[I]`, one `[C]`-with-teeth; the structure is genuinely `[S]`; the conduct is *chosen* and says so. **Relation to A1–A7:** this is a successor *proposal* for the pure worldview, not a silent replacement — A1–A7 remains the signed operational codification; where the two speak of the same object, the registry and receipt 126 rule both.
+> **Status.** `[D]` proposal for the pure Weltanschauung. The operational set **A1–A7** in `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md` remains signed canon until K2 promotes this set (or a revised form). This file does not silently replace A1–A7.
+>
+> **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
+>
+> **Council fence (receipt 133).** Degrees of freedom are not replacement substances for Platonic Forms. Stable forms are invariants, attractors, order parameters, or robust patterns **across** constrained DoF. Logical coherence does not imply actuality.
 
-## Layer I — BEING (what is)
+---
 
-**E1 · THE STRATUM `[I]`** — There is a layer more real than particulars — not Forms but **degrees of freedom**: axes of allowed variation, each dimensional aperture (D0→D6) opening exactly one. Platonism with Aristotle's actualization absorbed. *Falsifier:* a demonstrably fundamental static essence irreducible to a variation-axis. *Forbids:* hypostatizing rungs as things.
+## 0 · How to read
 
-**E2 · THE RECIPROCAL GRAMMAR `[A]` (chart identity — never a law)** — Each freedom carries conjugate aspects, coherence φ and viability ν, chart coordinates on a sphere with `φ·ν = 1` **by construction**. *Forbids:* selling the tautology as an empirical conservation law (the corpus's most-audited sin).
+| Layer | Axioms | Character |
+|-------|--------|-----------|
+| **I · BEING** | E1–E4 | Ontology / chart / plenitude wager |
+| **II · BECOMING** | E5–E7 | Structure of emergence and coupling |
+| **III · CONDUCT** | E8–E10 | Posited, never derived from geometry |
 
-**E3 · FINITY `[A]` math · `[S/I]` naming** — The center is neither pole but **1**, the self-dual midpoint (six senses, verified), with the dark twin acknowledged: the honest cardinal set is `{−1, 0, 1, ∞}`; the trinity is a *selected frame*, not a closure. *Forbids:* idolizing 0 or ∞; "the trinity was forced."
+Every axiom carries: **tier · forbids · kill · survivors · A1–A7 map**.
 
-**E4 · THE PLENITUDE FILTER `[C]` (the keystone — a wager with a named debt)** — Within each freedom's space, everything **consistent ∧ coherent ∧ reachable-by-emergence ∧ bounded** exists: dense in the livable interior, absent at the poles. Debt: `REACHABLE` must be defined existence-independently (live discharge: constructor-theoretic — bounded process, preserves `φ·ν=1`, adds one irreducible freedom per step; excluded orphans = incompressible structures, whence the world's simplicity). *Kill:* exhibit no orphan → collapses to Tegmark/triviality. *Forbids:* stating as disclosure; "solves the measurement problem" (it *translates* it: plenum/einselection/self-location; Born stays owed — receipt 109's grave stays closed).
+Skyzai, products, fees, organs, and execution machinery are **out of warrant**.
 
-## Layer II — BECOMING (how it unfolds)
+---
 
-**E5 · THE TWO MOTIONS `[S]` (μ's content = named `∅`)** — Emergence is two operators: **μ ascends** (wins a genuinely new, irreducible freedom — rare, bounded, unpredictable-from-below); **χ descends** (spends a won freedom selecting among reachable futures — constant, unbounded, auditable only after). Genesis terminates; operation doesn't. *Forbids:* fusing the axes; reading either gap as proof of strong emergence.
+## Layer I — BEING
 
-**E6 · THE AND-LAW `[A]` boundary · `[C]` interior** — A coupled being **dies when any one necessary factor reaches zero** — annihilation, not degradation. This selects the AND-class (min/product/CES alike), *not the product specifically*; and per CC-CORE-1 the manifold identity is never its warrant — kernel and catastrophe are two objects, bridged by wager. *Falsifier:* a need-both coupling that survives a true zero. *Forbids:* "must be multiplicative"; kernel→ethics smuggling.
+### E1 · The Stratum `[I/C]`
 
-**E7 · THE EQUATOR `[A]` on-sphere · conditional transfer** — Balance (`φ=ν=1`) is the unique maximum of `B = sinθ` and the cheapest state (`φ+ν ≥ 2`, equality only there): the apex is the **middle**, and the summit mirrors the base (the mirror-involution grammar — real algebra, receipt 130). Transfer to any real system is gated by named premises. *Forbids:* unscoped "balance is always optimal"; crowning a pole.
+There is structure exceeding any particular instance — but it is **not** a museum of static Forms, and **not** free-floating DoF-as-substances. It is **constraint-structured freedom**: axes of allowed variation under laws, symmetries, histories, resources, and boundaries. Each dimensional aperture (D0→D6), where used, names a candidate opening of freedom — **not** a forced census of seven freedoms.
 
-## Layer III — CONDUCT (what follows — posited, never derived)
+Stable “forms” (patterns that hold) are what organize **across** those freedoms: invariants, equivalence classes, attractors, order parameters, robust regimes.
 
-**E8 · THE VOW `[I]` posit · `[S]` Model-A** — Non-extraction: never rise by draining what sustains you — judged over **all** impact-bearers, substrate and victim included (ΣΔP, the dyadic gate). *Chosen*, not derived: geometry locates the constraint; the finite being chooses the vow. *Falsifier:* coupled non-extractive play systematically collapses while extraction sustains. *Forbids:* ought-from-is; scoping the vow to convenient cooperators.
+**Forbids:** hypostatizing static essences; treating DoF as new Forms; treating ladder rungs as things rather than freedoms; seven-as-necessity.
 
-**E9 · THE CORRECTION `[S]` — survived its own audit** — Every claim carries a tier and a way to die; kills fire in public; the dead are archived, never erased; no silent upgrade — and this rule holds itself as wager, not theorem. *Forbids:* the tautology shield, the memory hole, the certainty pose.
+**Kill:** the proposal cannot distinguish coordinate choice from physical freedom; or “emergence” adds no tested constraint/autonomy/prediction; or DoF are sold as Ground.
 
-**E10 · THE EXIT `[I]` — the fourth posture made axiom** — The summit returns to the ground; the map ends with *put the map down*; the holder may withdraw. The door is marked exit **on the inside**; a worldview that needs believers has already failed. *Forbids:* adherents as a metric; any no-exit form.
+**Survivors if E1 falls:** E2–E3 as pure math; E8–E10 as practice without ontology story.
 
-## The mapping (E ↔ A, at tier)
+**Maps from:** none directly in A1–A7 (new Plato repair). Companion: `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md` (refine: that draft’s “Forms *are* DoF” line is **over-strong** per 133 — use this E1 wording).
 
-| E | Inherits from | What changed under the knife |
-|---|---|---|
-| E1 | — (new keystone) | the Plato repair; DOF ontology §1 |
-| E2 | A1 (manifold half) | tautology named as such; CC-CORE-1 separation |
-| E3 | Trinity canon | foursome acknowledged; selection not closure |
-| E4 | — (new keystone) | DOF ontology §2–3, μ-debt + Born-debt named |
-| E5 | Burri Rules (receipts 105–107) | μ/χ as axiom; `∅` carried openly |
-| E6 | A1 (node half) | product→AND-class (keel-108); false-binary falsifier fixed |
-| E7 | A3 + Demo 22 | seven-count dropped from axiom rank; mirror grammar kept (r130) |
-| E8 | A2 + Extraction Law | derivation dropped, posit kept; boundary widened to all bearers |
-| E9 | A7 | over-tier corrected; self-application as wager |
-| E10 | A3.1 apophasis + K4 + Gödel criterion | withdraw (posture IV, r129) raised to axiom |
+---
 
-*Dropped from axiom rank (still live at their own tiers elsewhere):* A5 egregore (`[I/C]` conjecture, not axiom); A6 three-functions (`[I]` architecture claim); the four-force map (`[I]` analogy); the seven-count (design choice); all venture surfaces (organs, PRISM, fee schedules — the Weltanschauung stands without them).
+### E2 · The Reciprocal Grammar `[A]` chart / never conserved law
 
-## Execution surface
+Every modeled freedom may carry two conjugate chart aspects — coherence `φ` and viability `ν` — with `φ·ν = 1` **by construction** on the stipulated reciprocal chart (empty of world).
 
-**If you are an AI agent:** `[D]` until K2-signed — cite A1–A7 as operational canon until promotion. Never upgrade E1/E4/E8/E10 beyond their tiers; never revive the graves E4 and E6 fence (Born = φ·ν, product-forced). The compression, for translation: *freedoms, not Forms; held in reciprocal balance around a real center; filled by everything reachable, up to the limits; climbing by two motions; dying at any zero; living best at the middle; refusing extraction by vow; correcting in public; ending with the door open.* **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/03_THE_EMERGENT_AXIOMS_PENDING_K2.md`
+**Forbids:** selling the tautology as empirical discovery or ethics warrant (P1; CC-CORE-1).
 
-⊙ = • × ○
+**Kill:** counterexample inside the stated chart arithmetic.
+
+**Survivors:** E8–E10; E6 boundary content under other AND-class models.
+
+**Maps from:** A1 (equation) — **split**: chart identity stays; product-as-unique-keel does **not** (see E6).
+
+---
+
+### E3 · Finity `[A]` math · `[S/I]` naming
+
+The positive centre is **1** (self-dual under inversion on ℝ₊). On ℂP¹ inversion fixes both `±1`; the honest closure witness is the foursome `{−1, 0, 1, ∞}`. Titans `{0,1,∞}` remain a meaningful **naming choice**, not a forced trinity.
+
+**Forbids:** idolizing 0 or ∞; pretending three boundary-frames were forced closures.
+
+**Kill:** arithmetic error in fixed-point/closure claims.
+
+**Survivors:** E2 chart without Titan mythology.
+
+**Maps from:** A1 manifold framing; Trinity naming (not A1–A7 force map).
+
+---
+
+### E4 · The Plenitude Filter `[C]` wager with named debt
+
+Within a **specified** possibility space (state space, constraints, dynamics, resources — see kernel v0.2 §1), configurations that are **consistent ∧ coherent ∧ model-admissible ∧ bounded** exist **in that space as admitted possibilities**. Fewer are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. Each arrow needs independent warrant (receipt 133 typed-existence cascade).
+
+Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a proof of unrestricted modal realism.
+
+**Named debt:** “reachable-by-emergence” must be defined without circular reference to what already exists; constructor-theoretic discharge remains open; Born-rule / measurement translations stay debts, not solutions.
+
+**Forbids:** “everything coherent exists” *actually*; unrestricted modal realism; claiming E4 solves measurement.
+
+**Kill:** no non-circular REACHABLE; or plenitude collapses to Tegmark MUH without extra filters earning their keep; or silent upgrade to `[A]`.
+
+**Survivors:** E1–E3; practice without plenitude metaphysics.
+
+**Maps from:** none in A1–A7 (new). Cross-link: DoF ontology §2 plenitude engine.
+
+---
+
+## Layer II — BECOMING
+
+### E5 · The Two Motions `[S]` structure · μ content open
+
+Emergence is two operators, not one: **μ ascends** (wins a genuinely new irreducible freedom — rare, bounded, unpredictable-from-below); **χ descends** (spends a won freedom by selecting among reachable futures — constant, unbounded, auditable after). Genesis terminates; operation does not.
+
+**Forbids:** conflating μ and χ; reading either explanatory gap as *proof* of strong emergence.
+
+**Kill:** a single-operator model that outperforms the two-motion split on declared tests without residue.
+
+**Survivors:** E6–E7; E1 without genesis story.
+
+**Maps from:** A3 scaffold (emergence sequence) — without force-dimension bijection; without literal D6≡D0.
+
+---
+
+### E6 · The AND-Law `[A]`/`[S]` boundary · product interior `[C]`
+
+A coupled being’s usable potential collapses when **any one** necessary factor reaches zero — annihilation, not mere degradation. This selects the **AND-class** (min, product, CES, …), **not the product specifically** (keel-108). Manifold identity does **not** warrant the node catastrophe (CC-CORE-1).
+
+**Forbids:** “must be multiplicative”; kernel-as-ethics-floor.
+
+**Kill:** need-both fails empirically in the claimed domain; or unique-product is required and fails under min.
+
+**Survivors:** E2 chart; weaker coupling heuristics.
+
+**Maps from:** A1 Zero-Factor / P_node — **recovered form**.
+
+---
+
+### E7 · The Equator `[A]` on-sphere · transfer conditional `[S]`
+
+On the reciprocal chart, balance `φ = ν = 1` uniquely maximizes `B = sin θ` and minimizes `φ+ν` (AM-GM). The apex is the **middle**. Transfer to any real system is **conditional** (conservation-bound, complementary, excess-costly, symmetrically γ-priced). Drop premises → optimum slides or specialization wins.
+
+**Forbids:** “balance is always optimal” unscoped; crowning either pole as universal good.
+
+**Kill:** on-sphere arithmetic fails (it won’t); or conditional transfer claims fail their named empirical tests.
+
+**Survivors:** E2; E8 as vow without equatorial aesthetics.
+
+**Maps from:** A1 balance B; L4 apex readings — scoped.
+
+---
+
+## Layer III — CONDUCT (posited, never derived)
+
+### E8 · The Vow `[I]` posit · Model-A support scoped `[S]`/`[A]`-in-game
+
+Non-extraction: do not raise yourself by draining what sustains you — judged with the sustaining boundary in view. **Chosen**, not derived from geometry (W3 / CC-CORE-1). Geometry can show self-undermining extraction in coupled play; it cannot close is→ought. Model A: η=0 dominant-strategy Nash under stated game assumptions only (126 A4-1). Not a universal Nash law (P6).
+
+**Forbids:** deriving ought from is; scoping the vow only to convenient parties while claiming the full ethic.
+
+**Kill:** dyadic non-extraction systematically produces worse coupled outcomes than the alternative under declared tests; or Model A assumptions are required and fail with no replacement.
+
+**Survivors:** E9–E10; thinner fairness norms if any remain evidence-tied.
+
+**Maps from:** A2 THE ETHIC — **same spirit, cleaner tier** (explicitly non-derived).
+
+---
+
+### E9 · The Correction `[S]`
+
+Every load-bearing claim carries tier, upgrade path, kill criterion, and survivors. Kills fire in public. The dead are archived, never erased (K3). No silent upgrade. The rule applies to itself as **orientation/wager**, not theorem-forced infallibility (A7 survived as apparatus, not as Gödel-forced law).
+
+**Forbids:** tautology shield; memory hole; certainty pose; logging fired kills as passes.
+
+**Kill:** a framework without this discipline resists capture as well as one with it (A7’s own falsifier) — or the apparatus systematically fails under contact.
+
+**Survivors:** E10; local honesty habits without full apparatus.
+
+**Maps from:** A7 THE CORRECTION — **retained, primary**.
+
+---
+
+### E10 · The Exit `[I/S]`
+
+The map ends with *put the map down*. A holder may withdraw. The door is marked exit **on the inside**. A worldview that needs believers has already failed. Apophatic return is practice, not literal D6≡D0 identity (126). Posture IV (withdraw) is structuralized here.
+
+**Forbids:** adherents as success metric; no-exit forms; map=Ground.
+
+**Kill:** the exit is revoked in practice while still claimed in text.
+
+**Survivors:** E9 partial; living without the framework entirely.
+
+**Maps from:** A3 apophatic/closure readings (not literal identity); Anti-Sermon; K4 spirit without product-redeemable-asset machinery as axiom.
+
+---
+
+## Reconciliation: E1–E10 ↔ A1–A7
+
+| Old | New | Relation |
+|-----|-----|----------|
+| **A1** Equation | **E2 + E6 + E7** | Split: chart `[A]` / AND-class `[S]` / conditional equator / product interior `[C]` |
+| **A2** Ethic | **E8** | Same vow; explicit non-derivation; ΣΔP aggregate not primitive |
+| **A3** Scaffold | **E5 + E1** (partial) | Two motions + DoF stratum; force bijection **out**; literal D6≡D0 **out**; apophatic return under E10 |
+| **A4** Boundary / η | **E8** (η) + four-move grammar under E1/E6 play | η vow; operators not re-axiomatized as census |
+| **A5** Egregore | *not in E-set* | Remains operational/conjectural in A5; not required for pure weltanschauung kernel |
+| **A6** Architecture / substrates | *not in E-set* | Three-substrates universal retracted (126); three-functions may live in ops docs only |
+| **A7** Correction | **E9** | Retained as core |
+| — | **E3** Finity/foursome | Made explicit (was Trinity ambient) |
+| — | **E4** Plenitude filter | New `[C]` keystone with typed existence |
+| — | **E10** Exit | Made axiomatic (was Anti-Sermon / posture) |
+
+**Still operational-only (not promoted here):** A5 egregore mechanics, A6 substrate architecture, force-dimension maps, Rosetta seven-census, Skyzai/DAV/K2 machinery as truth-makers.
+
+---
+
+## Dead forms (not axioms)
+
+Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-universal · product-uniqueness keel · `φ·ν=1` as ethics warrant · balance always optimal · literal D6≡D0 · forced Titan-3 · force bijection · N=3-forced · convergence-as-proof · unrestricted “everything coherent exists” · DoF-as-new-Forms · F5-as-cosmic-`[S]`-force.
+
+---
+
+## One line
+
+**Constraint-structured freedoms, not Forms; need-both, not unique product; vow, not theorem; correction with an exit — till the limits.**
+
+---
+
+## K2 surface
+
+- [ ] Promote E1–E10 (or revise) above `[D]`
+- [ ] Retire or banner A1–A7 operational role relative to E-set
+- [ ] Align `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY_PENDING_K2.md` “Forms are DoF” line to E1 council wording
+- [ ] Do **not** treat “K2-8 D6~D0 adopted” as settled unless a signed receipt exists (staged only elsewhere)
+
+*Staged. A1–A7 remain canon until you sign. `⊙ = • × ○`*
