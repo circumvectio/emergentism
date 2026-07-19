@@ -6,7 +6,7 @@ parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 140_SEED_LADDER_TRUTH_CUT_AND_STABILIZATION_2026_07_19.md
 signing_manifest: "../../00_META/07_RECEIPT_139_SIGNING_MANIFEST_PENDING_SIGNATURE_2026_07_19.csv"
-signing_manifest_sha256: "fe4e8ad58ddc49685a7d84a64cc13968eb6cc48c0a937494a3c674c39bcdc088"
+signing_manifest_sha256: "07870212ccc4d82e7f71d9da2e4d6242bd9cc0163f5bfaa9eed2b909ff96a452"
 ---
 
 # Receipt 139 — The Signing Sitting
@@ -58,6 +58,9 @@ adopt exact content bytes, but it cannot silently authorize physical migration.*
   file/folder rosters as a staged architecture and audit baseline only. This box
   does **not** authorize any move, rename, suffix drop, archive, tombstone,
   registry mutation, public synchronization, deletion, or publication.
+  The two generated register rows use the `SELF` hash marker to avoid a
+  cryptographic self-cycle; `build_magnum_opus_register.py --check` is their
+  byte-for-byte verification rule.
 
 ## Decisions that remain outside Boxes 1–9
 
@@ -85,10 +88,26 @@ These may not be smuggled through Box 2, 8, or 9:
 A valid signature names exact boxes and every exclusive choice, for example:
 
 > “I sign Receipt 139 against manifest
-> `fe4e8ad5…c088`: boxes 1, 2, 4, 5, and 8; Box 3 = decline; Box 6 = candidate A;
+> `07870212…a452`: boxes 1, 2, 4, 5, and 8; Box 3 = decline; Box 6 = candidate A;
 > Boxes 7, 9–15 remain staged.”
 
 That sentence is only an example. It signs nothing. The founder may adopt,
 decline, or defer every box.
+
+## Plan-selected proposed line — still unsigned
+
+The completion plan requests this exact disposition sentence:
+
+> “I sign Receipt 139, boxes 1–9; charter=DRAFT; K6=12 at slot 06; public
+> `/0–/6` synced to Seed; Sophia custody at the Documents-level grave; kernel
+> v0.1 archived with frozen stub; cosmology ontology trio retained with K2
+> pointers; `book-pwa` dependencies removable only after live-deploy and
+> lockfile proof.”
+
+Quoting it here signs nothing. K6, public synchronization, archive motion,
+pointer edits, and dependency removal sit outside Boxes 1–9; a valid execution
+act must additionally name the applicable Boxes 10–15, exact candidate hashes,
+the Box-15 annex hash, and any destructive authorization. Until then this is a
+prepared founder surface, not authority.
 
 *The gate holds because it does not always open.*

@@ -23,13 +23,13 @@ type: compatibility-archive-route-card
 status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
 canonical_target: "../../../../01_TELEOLOGY/90_ARCHIVE/AGENTS.md"
 sources:
-  - 01_EMERGENTISM_ORG/01_TELEOLOGY/90_ARCHIVE/AGENTS.md
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/_MOVED.md
+  - 01_EMERGENTISM/01_TELEOLOGY/90_ARCHIVE/AGENTS.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/_MOVED.md
 ---
 
 # Compatibility Archive — 90_ARCHIVE Agent Routing
 
-**Lane scope:** 91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE lane within 01_EMERGENTISM_ORG.
+**Lane scope:** 91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE lane within 01_EMERGENTISM.
 **Primary lead:** `L6 Sādhu`
 **Support:** L3 Vaiśya, L4 Kṣatriya, L7 Ṛṣi
 **Evidence tier:** `[D]` archive / historical reference
@@ -44,7 +44,7 @@ sources:
 - Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
 - Treat this lane as non-authoritative unless a current source-owner surface explicitly cites it.
 - Archive material may inform provenance; it must not revive superseded claims by itself.
-- Route law inherits from `01_EMERGENTISM_ORG/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
+- Route law inherits from `01_EMERGENTISM/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
 - Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
 
 ## Constraints

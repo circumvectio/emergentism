@@ -23,8 +23,8 @@ type: compatibility-route-card
 status: ACTIVE — compatibility routing shim
 scope: Compatibility surface for old 01_FOUNDATIONS links after the sevenfold Foundation reorganization.
 sources:
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/01_FOUNDATIONS/README.md
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/AGENTS.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/01_FOUNDATIONS/README.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/AGENTS.md
 ---
 
 # 01_FOUNDATIONS — Agent Routing
@@ -39,7 +39,7 @@ sources:
 - `README.md`
 - [`../AGENTS.md`](../AGENTS.md)
 - [`../../AGENTS.md`](../../AGENTS.md)
-- [`../../00_META/00_CORPUS.md`](../../00_META/00_CORPUS.md)
+- [`../../00_META/90_ARCHIVE/00_CORPUS.md`](../../00_META/90_ARCHIVE/00_CORPUS.md) — historical topology only
 
 ## Preserved Payloads
 
@@ -51,7 +51,7 @@ Inspect legacy Foundation payloads only for provenance after this route boundary
 - Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
 - This lane preserves old route compatibility; current source truth lives upstream.
 - Use compatibility files to redirect, not to fork doctrine.
-- Route law inherits from `01_EMERGENTISM_ORG/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
+- Route law inherits from `01_EMERGENTISM/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
 - Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
 
 ## Constraints

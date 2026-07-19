@@ -9,6 +9,7 @@ rosetta:
   canonical_phrase: "The Distilled Doctrine — Emergentism at Level 0, organized by degrees of freedom"
 title: "The Distilled Doctrine"
 status: "STAGED [D] 2026-07-19 — the shortest document that carries the complete doctrine. Awaiting the founder's natural-person signature. Rule zero: the kernel receives, it does not invent."
+custody_status: "UNAUTHORIZED WRONG-LANE COPY — 05_SYNTHESIS is dissolved; root source hash 2560320f… controls"
 date: 2026-07-19
 evidence_tier: "Per-line below; the compression is [D]; nothing here upgrades a source tier"
 supersedes: "nothing — compresses 00_THE_AMRITA.md, 00_THE_WELTANSCHAUUNG.md, the E1–E10 / W0–W12 ledgers, the 5+1 constitution, and the Compression-Reality Postulate"
@@ -23,6 +24,11 @@ parents:
   - 05_COSMOLOGY/COMPRESSION_REALITY_POSTULATE.md
 tier_legend: "[A] proven-in-model · [B] built/measured · [S] structural (true inside the formalism) · [I] illuminating/interpretive wager · [C] conjecture (unwon) · [D] staged · ∅ asserted-but-unpaid"
 ---
+
+> **WRONG-LANE COPY — DO NOT PROMOTE.** `05_SYNTHESIS` is dissolved and cannot
+> own living doctrine. The root source remains controlling. The proposed
+> diagnostic destination is `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/`,
+> subject to Receipt 139 Boxes 14 and 15.
 
 # The Distilled Doctrine
 

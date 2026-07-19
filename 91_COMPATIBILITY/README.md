@@ -23,8 +23,8 @@ type: compatibility-index
 status: ACTIVE — compatibility shim
 scope: Backward-compatible stubs for historical Emergentism paths; non-authoritative.
 sources:
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/AGENTS.md
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/TOMBSTONE.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/AGENTS.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/TOMBSTONE.md
 ---
 
 # 91_COMPATIBILITY
@@ -50,7 +50,7 @@ and source route repairs belong in active owner lanes.
 
 ## Relationship to Active Content
 
-All active content should reference canonical locations under `01_EMERGENTISM_ORG/`: `00_META/`, `01_TELEOLOGY/`, `02_EPISTEMOLOGY/`, `03_METHODOLOGY/`, `04_AXIOLOGY/`, `05_COSMOLOGY/`, `06_ONTOLOGY/`, `07_THEOLOGY/`, `08_FRAMEWORK_SUPPORT/`, `09_TOOLS/`, `12_PUBLIC_SITE/`, `10_SEED/`, and `11_UPLINK/`.
+All active content should reference canonical locations under `01_EMERGENTISM/`: `00_META/`, `01_TELEOLOGY/`, `02_EPISTEMOLOGY/`, `03_METHODOLOGY/`, `04_AXIOLOGY/`, `05_COSMOLOGY/`, `06_ONTOLOGY/`, `07_THEOLOGY/`, `08_FRAMEWORK_SUPPORT/`, `09_TOOLS/`, `12_PUBLIC_SITE/`, `10_SEED/`, and `11_UPLINK/`. Historical stub payloads may retain the retired `_ORG` spelling as provenance.
 
 For exact old-path to current-owner mapping, read `TOMBSTONE.md`. Do not use compatibility stubs as the basis for new doctrine, public copy, or agent routing.
 

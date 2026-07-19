@@ -1,13 +1,19 @@
 ---
 receipt: 139
 title: "The Signing Sitting — batched founder-signature surface for the kernel promotion"
-status: "SIGNED — founder ratified 2026-07-19 (receipt 139, 'yes to all'); per-clause [A/S/I/C] tiers as marked now canonical."
+status: "DISPUTED PROVENANCE — preserved signature claim; not controlling pending explicit additive re-signature"
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md
 ---
 
 # Receipt 139 — The Signing Sitting
+
+> **DISPUTED PROVENANCE — DO NOT EXECUTE.** Boxes 8–9 below remained unchecked,
+> while the later signature block inferred all nine from “yes to all” despite
+> the no-bare-yes rule. This file is preserved as historical testimony. The
+> controlling decision surface is
+> `139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md`, which remains unsigned.
 
 *One page. Read each box. Sign by naming what you adopt; strike what you decline. Every box left unnamed stays [D].*
 

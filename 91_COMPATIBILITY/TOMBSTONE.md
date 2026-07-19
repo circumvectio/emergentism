@@ -17,13 +17,13 @@ rosetta:
   regime: "Sādhu"
   register: "[D/I]"
   canonical_phrase: "91_COMPATIBILITY tombstone"
-title: "Tombstone — 01_EMERGENTISM_ORG/91_COMPATIBILITY/"
+title: "Tombstone — 01_EMERGENTISM/91_COMPATIBILITY/"
 evidence_tier: "[D] documented compatibility layer; [I] route metadata."
 type: compatibility-tombstone
 status: ACTIVE — documented compatibility boundary
 ---
 
-# Tombstone — 01_EMERGENTISM_ORG/91_COMPATIBILITY/
+# Tombstone — 01_EMERGENTISM/91_COMPATIBILITY/
 
 **Created:** before 2026-04-25 reorganization
 **Purpose:** preserve historical path references to Foundation 01-07 content while owners are reconciled
@@ -31,8 +31,13 @@ status: ACTIVE — documented compatibility boundary
 
 ## Why This Exists
 
-This folder holds 182 stub files mirroring the pre-reorganization
-Foundation layout (e.g. `01_FOUNDATIONS/02_THE_DERIVATION/14_OPERATOR_CONSISTENCY_AUDIT.md`).
+The original tombstone recorded 182 stubs. A reproducible 2026-07-19 census
+finds **192 files total**: 191 Markdown files and one preserved Python artifact.
+Of the Markdown files, **160 explicitly declare `type: compatibility-stub`**;
+the remaining 31 are route cards, READMEs, `_MOVED` markers, or preserved
+archive/provenance documents. The old 182 figure remains historical, not a
+current count. These files mirror the pre-reorganization Foundation layout
+(e.g. `01_FOUNDATIONS/02_THE_DERIVATION/14_OPERATOR_CONSISTENCY_AUDIT.md`).
 External and internal references to those paths continue to resolve here
 even after the canonical content moved into the seven `01_TELEOLOGY/` …
 `07_THEOLOGY/` doctrine folders.

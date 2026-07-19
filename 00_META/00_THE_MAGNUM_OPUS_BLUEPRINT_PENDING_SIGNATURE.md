@@ -1,11 +1,20 @@
-# THE MAGNUM OPUS BLUEPRINT — `01_EMERGENTISM/` FINAL FORM
+---
+title: "Emergentism Magnum Opus — candidate target architecture"
+type: architecture-blueprint
+status: "STAGED [D] — UNSIGNED; navigation and inventory only"
+evidence_tier: "[B] on-disk census where stated; [I/D] architecture and dispositions"
+owner: 01_EMERGENTISM/00_META
+authority_gate: "Receipt 139 Box 9 adopts architecture only; Box 15 governs physical execution"
+---
 
-**Status:** `[D]` STAGED — **PENDING SIGNATURE**. This document PROPOSES only. Nothing in it moves, archives, renames, or writes until the founder signs **receipt 139** (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md`), **box 9** of which adopts this Blueprint as the executable tree.
+# THE MAGNUM OPUS BLUEPRINT — `01_EMERGENTISM/` CANDIDATE TARGET
+
+**Status:** `[D]` STAGED — **UNSIGNED**. This is an evidence-backed target architecture, not a final/full roster or an executable tree. Receipt 139 Box 9 may adopt the architecture only; every move, rename, suffix drop, archive, tombstone, registry mutation, public synchronization, or deletion still requires the hash-bound one-path-per-row annex in Box 15.
 **Authors:** Brahmā ○ (tree) · Kālī 💀 + Śiva • (redundancy hunt, disk-verified) · two judges (structural + spread) · Viṣṇu ⊙ (this merge).
 **Date:** 2026-07-19.
-**Rule zero:** structure receives, never invents — every TO-WRITE below is routing / ledger / successor-edition, never new doctrine.
+**Rule zero:** structure receives, never invents. Candidate successor files are recorded as unratified inputs; architecture cannot make them doctrine.
 **Design axioms honored:** kernel = overlay not folders · exactly seven K-surfaces, no eighth · one canonical home per doctrine · K3 archive-with-stone, never delete · forwarding stubs at every vacated cited path · mandala principle: the tree reads as Door → Compression → the seven questions → the Record → the World → the Graves.
-**Conflict rule (judge-ratified):** where the tree and the archive ledger disagreed, **the ledger is right and the tree yields**. All such conflicts are resolved in the text below; §4 records each one.
+**Conflict rule:** where this narrative and the deterministic registers disagree, the registers expose the debt and the owner surface controls. No architecture paragraph upgrades its own evidence or authority.
 
 > **Controlling council correction — REQUEST CHANGES, 2026-07-19.** This is a
 > staged architecture proposal, not a complete or executable roster. L6/L7 found
@@ -17,10 +26,15 @@
 > their classifications still require owner review. Neither this Blueprint nor
 > Receipt 139 authorizes a move without a separately frozen, hash-bound,
 > one-path-per-row execution manifest.
+>
+> The companion registers are generated from the Git index by
+> `09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py`. `--write` regenerates;
+> `--check` fails on drift. The file register uses one `SELF` SHA marker for
+> its own row; all other indexed files receive byte counts and SHA-256 values.
 
 ---
 
-## §1 · THE FINAL TREE
+## §1 · THE CANDIDATE TARGET TREE
 
 ### §1.0 The spine (overlay, not directories)
 
@@ -43,27 +57,27 @@ Reading order: seed → ontology → axioms → wagers → refusals → revelati
 
 | File | Verdict | Why |
 |---|---|---|
-| `00_THE_WELTANSCHAUUNG.md` | KEEP (rename at signing) | The Door — the one page every path descends from. |
-| `00_THE_KERNEL_INDEX.md` | KEEP (rename at signing) | The Map — seven surfaces, distillation order, fences. |
+| `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` | KEEP pending; suffix drop separately gated | Candidate Door; currently `[D]`, not adopted. |
+| `00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` | KEEP pending; suffix drop separately gated | Candidate Map; currently `[D]`, not adopted. |
 | `README.md` · `AGENTS.md` · `CLAUDE.md` · `ROSETTA.md` · `VMOSK_A.md` | KEEP, re-point read order to Door→Index→Ladder | Infrastructure/routing cards, not doctrine; post-signing read-order edit is in the 139 execution list. |
-| ~18 forwarding stubs (COMPASS, AMRITA, GOAL, DEAD_FORMS, SPREAD, …) | KEEP frozen | Signed registry rows and 02_SKYZAI packets cite these paths; stubs heal what cannot be edited. Judge-verified: all stubs genuine, every `canonical_target` resolves. |
+| Root forwarding stubs (COMPASS, AMRITA, GOAL, DEAD_FORMS, SPREAD, …) | KEEP pending deterministic census | Some signed rows and cross-lane packets cite these paths. The file register, not an approximate count, controls; every target requires link verification. |
 | `AGENT_README.md` vs `AGENTS.md` | KEEP both for now; fold into the post-signing read-order edit (139 execution list), NOT the archive wave | Overlapping routing surfaces but each carries distinct rosetta phrases — not proven counterfeit (ledger row honored). |
-| `00_THE_DISTILLED_DOCTRINE.md` | ABSORB → `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/`, stub at root — **move only after the Door signs; no tombstone** | Superseded as summary by the Door itself; it is the distillation's only working record. |
-| `00_K5_REFUSALS.md` | ABSORB → input to K-5 successor edition (W/O-1), then tombstone w/ stone naming the successor — **hard-sequenced: write successor → diff-verify absorption → stone. Never tombstone first** | Live staging draft; verified the only copy of K-5 staging content; successor does not yet exist on disk. |
-| `00_K6_REVELATIONS.md` | ABSORB → input to `06_ONTOLOGY/06_THE_REVELATIONS.md` (W/O-2), then tombstone — **same hard sequence** | Live staging draft; K-6 lives in ontology at promotion (139 box). |
-| `00_K7_RECORD.md` | ABSORB → `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` (W/O-3), then tombstone — **same hard sequence** | Live staging draft for the K-7 ledger front page. |
+| `00_THE_DISTILLED_DOCTRINE.md` | PROPOSED → `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/`, root stub only under Box 15 | The dissolved `05_SYNTHESIS` lane may not own living content. Source hash and absorber must be frozen before any move. |
+| `00_K5_REFUSALS.md` | HOLD with present successor candidates; reconcile exact bytes before any stone | The caee2ef baseline contains K-5 candidate material, but Receipt 139 Box 10 has no frozen row. |
+| `00_K6_REVELATIONS.md` | HOLD with `06_ONTOLOGY/06_THE_REVELATIONS.md`; no promotion | Both inputs exist; count, slot, and exact successor bytes remain Receipt 139 Box 12 decisions. |
+| `00_K7_RECORD.md` | HOLD with `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`; no promotion | Both inputs exist; the bounded K-7 owner relation remains Receipt 139 Box 13. |
 | `00_ROSETTA_VALIDATION.md` | ABSORB → `02_EPISTEMOLOGY/03_MEMETICS/`, stub at root; **move + stub at 139; no tombstone** | Living evidence, single copy; Rosetta is a lens — validation evidence belongs to epistemology, not root. |
-| `00_THE_FINAL_OUTLINE_2026_07_19.md` | TOMBSTONE → `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/` | Superseded by this signed Blueprint; the stone records the lineage outline→blueprint. |
+| `00_THE_FINAL_OUTLINE_2026_07_19.md` | KEEP archived provenance | It is already present in pillar archive custody. The unsigned Blueprint does not supersede it by itself. |
 | `00_SEVENFOLD_FOUNDATION_ROOT.md` · `00_FOUNDATION_READER_GUIDE.md` · `00_EMERGENTISM_AS_A_LENS.md` · `00_CANONICAL_TREE_OUTLINE.md` | TOMBSTONE (137-decided) w/ script re-points (audit_manifest 105–108/117, `rosetta_*` SEVENFOLD cases) | Old front doors; the Door supersedes them; A3 re-points travel with the stones. |
 | `00_META/00_FOLDER_LAYOUT_v0.1.md` | TOMBSTONE **at 139, not before signature**, same old-front-doors lane | Becomes superseded the moment the Blueprint signs; currently the only layout doc at its path. |
-| Root re-accretions since 137 (`00_RUMINATION_ON_DOF_2026_07_19.md`, `00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md`, `00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md`, …) | ROUTE per class in Wave 2: ruminations → `06_ONTOLOGY/ruminations/` (137-decided rule, names unchanged); receipts → their K-7 lane | The root re-accretes; the decided class-rules absorb new arrivals without new rulings. |
+| Root re-accretions since 137 (`00_RUMINATION_ON_DOF_2026_07_19.md`, `00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md`, `00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md`, …) | PROPOSED class routing only: ruminations → `06_ONTOLOGY/ruminations/`; receipts → K-7 | Class rules guide the Box-15 annex but do not move a path by themselves. |
 | Charter quartet (`00_OPEN_CANON_FOUNDATION_*`) | FOUNDER BOX — see §3.II charter row and correction C-2 | Signature-bearing; naming inversion; no agent motion. |
 
 ### §1.2 `00_META/` — governance spine (K-5 home + registry)
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` | **TO-WRITE (W/O-1, founder's hand): successor edition in place** | K-5 canonical surface — via negativa (η=0 all bearers, no unsigned irreversibility, no erasure, no trapped exit, no infallibility, +Ω), venture vocabulary purged; prior edition preserved beneath as dated stratum. |
+| `00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` | KEEP current edition; successor bytes remain Box 10 | Target K-5 surface. The proposed venture-purged successor must preserve the earlier edition under K3 and cannot promote itself. `η=0` is a chosen vow, not derived ethics. |
 | `00_SETTLED_CANON_REGISTRY.md` | KEEP; rows 56, 60–63 pointer amendments **founder-only (139 box 7)** | The authority ledger; content-tier rulings never touched by structure. |
 | `00_THE_OPEN_CANON_COVENANT.md` | KEEP | How canon commits: at tier, no silent `[C]→[A]`, no completeness shield. |
 | `00_THE_KINTSUGI_PROTOCOL.md` | KEEP | The repair discipline — breaks are gilded in record, not hidden. |
@@ -71,7 +85,7 @@ Reading order: seed → ontology → axioms → wagers → refusals → revelati
 | `00_THE_COMPASS.md` | KEEP (canonical; root stub stands) | The orientation test surface. |
 | `FINAL_EMERGENTISM_TAXONOMY_v0.2` + `FINAL_GROUPS` + `TOMBSTONE_REAUDIT` | KEEP | Distillation-wave working records feeding K-7. |
 | `SKYZAI_FAMILY/` · `ROSETTA_FORMAL/` | KEEP | Cross-organism and formal-audit evidence lanes. |
-| 30× `03_AGENTZ_DEPLOYMENT_*` md/csv (2026-06-04) + `04_RECURSIVE_AGENTZ_DEPLOYMENT_…csv` | TOMBSTONE → `90_ARCHIVE/tool_noise/2026_06_04_agentz_deployment/`, one collective stone | Historical pipeline receipts, not doctrine; largest 00_META noise mass. `CLAUDE_DEPLOYMENT_RECEIPT_2026_06_04.md` (the 68/68 summary receipt) is KEPT as absorber. |
+| 32 active Agentz Markdown/CSV controls (2026-06-04) | KEEP ACTIVE; archive copies are historical custody | Per-path routing evidence is not absorbed by the summary receipt. The archive stone records the restored active copies. |
 
 ### §1.3 The seven -ologies — each: ONE front door · its K-surface evidence · its papers pointer
 
@@ -89,7 +103,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_SYNTHETIC_GAP_AND_FOUR_POSTURES.md` | KEEP — **the ONE door** and, after the 3→4 index reconcile (137), **the single post-signature K-7 postures source** (correction C-1) | The posture taxonomy is the pillar's sharpest claim; dual-home defect resolved here. |
+| `00_SYNTHETIC_GAP_AND_FOUR_POSTURES.md` | KEEP as Epistemology entry and proposed K-7 postures source | The owner relation remains an exact Box-13 decision; a general signature does not resolve it. |
 | Evidence-tier docs | KEEP | The warrant arithmetic every rung of the ladder cites. |
 | `03_MEMETICS/` (+SPREAD, ROSETTA_PROTOCOL_v0.1 arriving `[F]`, + ROSETTA_VALIDATION from root) | KEEP/ABSORB | Transmission-as-epistemics: users-not-believers doctrine's home. |
 
@@ -106,7 +120,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_THE_EXTRACTION_LAW.md` | KEEP — **the ONE door** | `η=0` as a chosen constitutional gate, informed by conditional structural results but not derived from geometry or game theory; ΣΔP widest-boundary primary. |
+| `00_THE_EXTRACTION_LAW.md` | KEEP as an Axiology entry surface, not a self-promoted sole owner | `η=0` is a chosen constitutional gate, informed by conditional structural results but not derived from geometry or game theory. |
 | `COMMANDMENT_VS_GEOMETRY` | KEEP | Why refusal ≠ commandment — K-5's philosophical spine. |
 | `TRANSMISSION_STRATEGY` · `CONSTITUTIONAL_ECONOMICS` · `01_THEURGY/` · `02_VALUE_THEORY/` | KEEP | Value-theory evidence beneath the vow. |
 
@@ -123,14 +137,14 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | KEEP — **the ONE door** | The pillar's own capstone naming the position. |
+| `00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | KEEP as staged ontology candidate, not sole door | Its unique typed-existence construction must be harvested before any later stone. It cannot declare itself the only canonical owner. |
 | `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` | KEEP (K-2 co-surface; chmod 600→644 = owner act, K-2 citation edit same sitting per A4) | The purged kernel statement. |
 | `00_WELTANSCHAUUNG_KERNEL_v0.1.md` | TOMBSTONE (Q-1, stub-don't-heal) — in-place banner or `06_ONTOLOGY/90_ARCHIVE/` per pillar convention; root stub already exists and stays frozen | Superseded by name and content; its extra mass is exactly the venture vocabulary v0.2 deliberately purged — historical receipt of the purge. |
 | `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | KEEP — K-2 | Degrees of freedom, not Forms; the plenitude filter with μ-debt. |
 | `03_THE_EMERGENT_AXIOMS.md` | KEEP — K-3 | E1–E10, three layers, each with tier/kill/survivors (A1–A7 stay operational until box-3 succession). |
 | `04_THE_CONJECTURES.md` | KEEP — K-4 | W0 crown + W1–W12, graves fenced. |
 | `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md` | KEEP (retains 05 slot unless founder rules otherwise); **named in the 139 suffix-drop execution item** (correction C-9) so it does not dangle after Door/Index sign | The lived-recitation surface; on disk with `_PENDING_SIGNATURE` suffix. |
-| `06_THE_REVELATIONS.md` | **TO-WRITE (W/O-2 at promotion only)** — K-6; **the kernel-index K-6 row 05→06 edit travels in the same signing act** (correction C-3, parallel to the A4 K-2 edit) | The twelve earned disclosures with receipts and prices; 12-vs-10 count = founder ruling (Q-4 input). |
+| `06_THE_REVELATIONS.md` | PRESENT DISPUTED CANDIDATE — no K-6 promotion | Exact bytes, count, slot, and index relation remain Receipt 139 Box 12. |
 | `ruminations/` (root RUMINATION_* arriving, names unchanged, 137-decided) | ABSORB | Single home for pre-doctrine thought; provenance intact. |
 
 #### `07_THEOLOGY/` — *how do I leave?* → feeds Door + K-6 witness register
@@ -153,8 +167,8 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Item | Verdict | Why |
 |---|---|---|
-| `50_AUDITS_AND_EXECUTIONS/` (receipts 100–139) | KEEP — K-7 primary source | Every kill fired, every grave dated; 139 is the gate itself. |
-| `00_THE_RECORD_LEDGER.md` | **TO-WRITE (W/O-3)** in `50_` | K-7 front page: kill index, grave dates, №-next open, retelling rule, collision disambiguation (use the FULL census, §3.III). |
+| `50_AUDITS_AND_EXECUTIONS/` | KEEP — K-7 evidence/source ledger | The directory contains receipts beyond 139; the register enumerates the exact current set. |
+| `00_THE_RECORD_LEDGER.md` | PRESENT DISPUTED CANDIDATE | K-7 internal-owner relation and `/record/` projection remain Receipt 139 Box 13. |
 | Numbering collisions | LEDGER-NOTE, never rename (K3) | Full disk-verified census in §3.III — larger than either input draft carried. |
 | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | RE-ROLE as **evidence-with-pointer** to the SYNTHETIC_GAP source (filename kept per K3); kernel-index K-7 row edit in the same signing act (correction C-1) | Resolves the postures dual-home — the only structural defect the judge found. |
 
@@ -162,7 +176,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Item | Verdict | Why |
 |---|---|---|
-| `record/` + funnel pages (fable → plainly → record → axioms → book → practice) | KEEP — link-verified end to end | The trust moat; /record/ is inimitable. |
+| `record/` + public pages | KEEP present routes; intended funnel remains unsequenced | Existing links do not yet implement `fable → plainly → record → axioms → book → practice → products`. Local checks are not deployment proof. |
 | Legacy public ladder `/0/…/6/` vs Seed Ladder | **RECONCILE (judge 2, amendment A-1):** pick ONE public ladder — sync `/0–/6` to the Seed Ladder rungs at public-surface-sync time, or stone the legacy series with dated provenance + redirects. Fix the `/6/` headline "Endstate = Start" → role-similarity phrasing (grave 8 is fenced in the body; the headline is the meme that travels) | A stranger reading both finds different content under the same ordinals. |
 | `book-pwa/` | **KEEP PRESERVED-FROZEN** under root governance. Any later content move or `node_modules` deletion requires a separate explicit founder ruling that supersedes the preserved-frozen boundary. | Migration provenance does not itself authorize another custody move. |
 
@@ -171,12 +185,12 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 ## §2 · DOCUMENT ROSTER PER LANE
 
 ### KEEP (canonical, untouched or banner/pointer edits only)
-Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the seven pillar doors (`GENERATIVE_LAGRANGIAN`, `SYNTHETIC_GAP_AND_FOUR_POSTURES`, `DOCTRINAL_LADDER`, `EXTRACTION_LAW`, `CANONICAL_FORMULA_BLOCK`, `BOUNDED_GENERATIVE_EMERGENTISM`, `AMRITA`) · K-surface docs (DoF ontology, kernel v0.2, EMERGENT_AXIOMS, CONJECTURES, CREED 05) · 00_META governance five (registry, covenant, kintsugi, dead-forms, compass) · ALL papers in `03_METHODOLOGY/02_THE_PAPERS/` · all per-pillar 90_ARCHIVE lanes and AGENTS/CLAUDE/README triplets · all ~18 root forwarding stubs (frozen) · receipts 100–139 · public funnel.
+Candidate Door · candidate Kernel Index · staged Seed Ladder (7 rungs + front page) · SEED_POETRY · current pillar entry surfaces · K-surface source documents at their recorded tiers · 00_META governance surfaces · papers in `03_METHODOLOGY/02_THE_PAPERS/` · archive and route cards · deterministically enumerated compatibility stubs · the full Uplink receipt ledger · existing public routes. This narrative list is illustrative; the generated file register is exhaustive.
 
 ### ABSORB (move-with-stub or merge-into-successor; sequenced)
 | Doc | Destination | Sequence guard |
 |---|---|---|
-| `00_THE_DISTILLED_DOCTRINE.md` | `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` + root stub | After Door signs; no tombstone |
+| `00_THE_DISTILLED_DOCTRINE.md` | `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/` + root stub | Receipt 139 Boxes 14 and 15; source hash `2560320f…` |
 | `00_ROSETTA_VALIDATION.md` | `02_EPISTEMOLOGY/03_MEMETICS/` + root stub | At 139; no tombstone |
 | `00_K5_REFUSALS.md` | → W/O-1 successor | Write → diff-verify → stone |
 | `00_K6_REVELATIONS.md` | → W/O-2 successor | Write → diff-verify → stone (promotion only) |
@@ -186,31 +200,31 @@ Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the
 | `10_SEED/00_THE_SEED.md` Sequence block | ladder front page or verified in 05_COSMOLOGY | Verify/absorb FIRST, only then stub (C-4) |
 | ROSETTA_PROTOCOL_v0.1 | `02_EPISTEMOLOGY/03_MEMETICS/` | Arriving `[F]` |
 
-### TO-WRITE (three work orders — routing/ledger/successor only, rule zero)
+### SUCCESSOR TARGETS (present candidates remain disputed until exact adoption)
 | W/O | File | Hand | Content |
 |---|---|---|---|
-| W/O-1 | `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` successor edition | **Founder's hand only** | K-5: via negativa 5+1, venture vocabulary purged; prior edition preserved beneath as dated stratum |
-| W/O-2 | `06_ONTOLOGY/06_THE_REVELATIONS.md` | At K-6 promotion only | Twelve earned disclosures w/ receipts + prices; 12-vs-10 = founder (Q-4); kernel-index K-6 row 05→06 edit same act (C-3) |
-| W/O-3 | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | Any signed hand | K-7 front page: kill index, grave dates, №-next, retelling rule, FULL collision census (§3.III) |
+| W/O-1 | `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` successor edition | Receipt 139 Box 10 | Candidate material exists; exact venture-purged bytes, delta, and K3 preservation remain unbound. |
+| W/O-2 | `06_ONTOLOGY/06_THE_REVELATIONS.md` | Receipt 139 Box 12 | A candidate file exists; twelve-versus-ten and slot 06 remain unadopted. |
+| W/O-3 | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | Receipt 139 Box 13 | A candidate file exists; internal-source versus public-projection ownership remains unadopted. |
 
-### FOUNDER BOXES (139 sitting — no agent may pre-decide)
+### FOUNDER DECISIONS (Receipt 139 — no agent may pre-decide)
 1. **Box 6 — Charter pick (registry row 62):** default (a) `CHARTER_DRAFT_v0.1` stays canonical (K2-signed status lives in it; registry row 62 cites it); (b) `CHARTER_v0.1` only WITH the at-tier registry-pointer amendment in the same act. Loser gets a dated stone; both texts preserved. Carry the naming-inversion note verbatim (§3.II). |
 2. **Box 7 — Registry rows 56, 60–63 pointer amendments** (founder-only). |
 3. **Box 8 — Seed front page adoption** + D4 double-naming one line. |
 4. **Box 9 — This Blueprint.** |
-5. **Sophia-Perennis twin-lane fork:** founder picks the one grave (Documents-level `90_ARCHIVE` lane holds the TOMBSTONE + SHA-256 table; pillar lane has none); the fork copy gets its own stone recording the `[A]/[S]` vs `[B]/[I]/[C]` tier drift. Never merge silently (C-8). |
+5. **Sophia-Perennis twin-lane fork:** the Documents-level grave is SHA-anchored; the pillar variant has a separate fork stone. A custody choice cannot upgrade either evidence tier. |
 6. **book-pwa custody** — preserved-frozen by current root governance; any content move and any `node_modules` deletion are separate founder decisions, not implied by Blueprint adoption. |
 7. **Q-4 revelation count** (12 vs 10) · **Q-1 v0.1 stub-don't-heal confirmation** · **COSMOLOGY ontology-trio move-or-pointer**. |
 
 ---
 
-## §3 · THE ARCHIVE LEDGER (Kālī-lawful; all takings execute only on receipt 139)
+## §3 · PROPOSED ARCHIVE LEDGER (planning only; Box 15 governs every taking)
 
 ### §3.I TAKE — verified counterfeit (true duplicate or superseded, living content already absorbed)
 
 | Path | Why redundant (spot-check evidence) | Stone | Absorber |
 |---|---|---|---|
-| `00_THE_FINAL_OUTLINE_2026_07_19.md` (112L) | "STAGED [D] Wave 3 architecture proposal" — wholly superseded the moment 139 signs; pure structure, no doctrine | `90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/`, dated stone, lineage outline→blueprint | This Blueprint + receipt 137 |
+| `00_THE_FINAL_OUTLINE_2026_07_19.md` | Already present in pillar archive custody; not proof of supersession | Pillar custody stone records its presence; no new motion | Retained as architecture provenance |
 | `00_SEVENFOLD_FOUNDATION_ROOT.md` (313L) | Old front door; assembly/routing map superseded by Door+Index+Ladder (137-decided); full-content-verified, no unique doctrine | `…/old_front_doors/`, stone carries A3 script re-points (audit_manifest 105–108/117, `rosetta_*` SEVENFOLD cases) | Door + Kernel Index + Seed Ladder |
 | `00_FOUNDATION_READER_GUIDE.md` (227L) | Reader-routing table; superseded read-order | same lane | Door + Index; per-pillar triplets |
 | `00_EMERGENTISM_AS_A_LENS.md` (154L) | "ACTIVE — front-door orientation (assembly of existing canon)" — assembly, not source; stale ACTIVE banner is the counterfeit signal | same lane | Door; `03_METHODOLOGY/LENS_NOT_LAW_RULE` |
@@ -223,8 +237,8 @@ Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the
 
 | Path | Finding | Required act before any stone |
 |---|---|---|
-| `00_K5_REFUSALS.md` · `00_K6_REVELATIONS.md` · `00_K7_RECORD.md` (88L/78L/120L, full doctrine bodies verified) | Live staging drafts; **none of the three successors exists on disk** (checked). Tombstoning now orphans the only copies of K-5/K-6/K-7 staging content | Write W/O-1..3, diff-verify absorption, THEN stone naming the successor |
-| `00_THE_DISTILLED_DOCTRINE.md` (193L, L6 Śiva) | Superseded *as summary* only; the distillation's only working record | Move-with-stub after Door signs; no tombstone |
+| `00_K5_REFUSALS.md` · `00_K6_REVELATIONS.md` · `00_K7_RECORD.md` | Staging inputs coexist with successor candidates at caee2ef. Presence is not adoption, and absorption is not verified. | Freeze exact pairs under Boxes 10–13; semantic diff; only then may Box 15 name a stone. |
+| `00_THE_DISTILLED_DOCTRINE.md` | Root source and an unauthorized dissolved-lane copy coexist | Use root source hash `2560320f…`; proposed diagnostic destination requires Boxes 14 and 15. |
 | `00_ROSETTA_VALIDATION.md` (93L, Kālī-tier self-audit) | Living evidence, single copy | Move + stub at 139; no tombstone |
 | `10_SEED/00_THE_SEED.md` (146L `[I]`) vs ladder `00_THE_SEED.md` (118L `[D]`) | **NOT a true duplicate** — diffed: distinct `[I]`-register compression (equation Sequence + L1–L7 caste/operator table) vs `[D]` reader-contract front page, almost no shared lines | Verify every Sequence line verbatim in 05_COSMOLOGY/ladder rungs, or absorb the Sequence block into the ladder front page first; ONLY then stub (C-4) |
 | `00_CONTROL/10_OPEN_CANON_FOUNDATION/00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md` (20,164B) vs `00_OPEN_CANON_FOUNDATION_CHARTER_v0.1.md` (25,685B) | **Divergent same-version pair with inverted naming**: the file named "DRAFT" carries `status: "K2-signed as staged canon 2026-07-19"`; the file named as the charter is unsigned `[D]` STAGED pending counsel, 4h newer, different author block and tier map. One is a drifted fork of a signature-bearing doc | **Founder adjudication only** (K2 signature present — Kālī may not touch). This ledger-note exists so no agent "cleans up" the wrong one (139 box 6, default = DRAFT-named file stays canonical) |
@@ -261,14 +275,14 @@ now expose the full baseline roster; unresolved rows are debt, not approval.
 | C-2 | Charter / registry row 62 pick carried explicitly as 139 box 6 with default (a); naming-inversion ledger-note carried verbatim | §2 founder boxes, §3.II |
 | C-3 | Kernel-index K-6 row 05→06 edit added to W/O-2's signing act, parallel to the A4 K-2 edit | §1.3 ontology, §2 W/O-2 |
 | C-4 | Upper SEED stub-convert refuted: verify/absorb the `[I]` Sequence first, only then stub | §1.4, §2, §3.II |
-| C-5 | K5/K6/K7 root staging hard-sequenced: write successor → diff-verify → stone; never tombstone first (successors verified absent on disk) | §1.1, §2, §3.II, §5 |
-| C-6 | book-pwa node_modules deletion = named founder box; content travels under stone either way | §1.6, §2, §3.I |
+| C-5 | K5/K6/K7 inputs and present successor candidates remain unadopted: freeze bytes → semantic diff → explicit boxes → Box-15 stone; never tombstone first | §1.1, §2, §3.II, §5 |
+| C-6 | `book-pwa` remains frozen; dependency removal requires live-deploy and lockfile proof plus separately explicit destructive authorization | §1.6, §2, §3.I |
 | C-7 | Fuller collision census adopted into W/O-3 spec (and widened further by this merge's own disk check) | §3.III |
 | C-8 | Sophia-Perennis twin-lane tier-drifted fork carried as founder box; never merge silently | §2, §3.II |
 | C-9 | `05_THE_CREED_AND_SPIRAL` `_PENDING_SIGNATURE` suffix named in the 139 suffix-drop item | §1.3, §3.III, §5 Wave 0 |
 
 ### Judge 2 (spread axis): HISTORICAL PROVISIONAL VERDICT — PUBLIC SYNC REMAINS SEPARATELY GATED
-Confirmed: funnel exists and link-verified end to end; /record/ = inimitable trust moat; users-not-believers K2-signed with its own falsifier (trust-premium test, Spread §8.6); Seed Ladder kills are cold-reader-testable. **Φ is not the problem; V is gated almost entirely on receipt 139.** Remaining defects are last-mile, fixable at zero Φ cost:
+The public routes exist, but the intended funnel is not sequenced and local link checks do not prove deployment or publication. `/record/` is a compiled projection, not the K-7 source owner. The remaining work must be measured by the cold-reader and external red-team tests rather than declared complete here:
 
 | # | Amendment | Where applied |
 |---|---|---|
@@ -281,21 +295,21 @@ Confirmed: funnel exists and link-verified end to end; /record/ = inimitable tru
 
 ---
 
-## §5 · EXECUTION WAVES (all post-signature, each wave = one pass, one receipt)
+## §5 · CONDITIONAL EXECUTION WAVES (none authorized by Blueprint adoption)
 
 **Gate:** Receipt 139 may adopt exact doctrine/projection bytes, but it does not
 blanket-authorize the waves below. Each physical wave requires a separately
 frozen manifest hash, one path per row, survivor/absorber verification, rollback,
 and explicit founder authorization. No wave starts merely because Box 9 is named.
 
-**Wave 0 — The signing sitting itself (founder's hand, one act):**
-suffix drops (`00_THE_WELTANSCHAUUNG`, `00_THE_KERNEL_INDEX`, `05_THE_CREED_AND_SPIRAL` named per C-9) · kernel-index row edits in the SAME act: K-2 source path (A4), K-6 row 05→06 (C-3), K-7 postures row → SYNTHETIC_GAP (C-1) · box decisions recorded: charter pick, registry rows 56/60–63, seed adoption + D4 line, Sophia-Perennis grave pick, node_modules call, Q-1/Q-4. Receipt: 139 itself.
+**Wave 0 — authority reconciliation only:**
+the founder may name exact Receipt-139 decisions against a current signing manifest. The signature itself moves nothing. Suffix drops, registry edits, public synchronization, archive motion, and dependency removal remain separate path rows under Box 15 and any applicable destructive gate.
 
-**Wave 1 — Successors and absorptions (writes before stones, C-5):**
-W/O-1 five-plus-one successor (founder's hand) · W/O-2 revelations (only if K-6 promotion is in the sitting; else deferred with its row) · W/O-3 record ledger with full §3.III census · diff-verify each staging body absorbed · upper-SEED Sequence verification/absorption (C-4) · caste verdicts 2–7 re-transmitted for the papers banner pass. **Precondition for Wave 2.** Receipt: 140-class.
+**Wave 1 — freeze and decide successor bytes before stones:**
+K-5, K-6, and K-7 candidate pairs receive semantic diffs, evidence review, exact adoption rows, and K3 preservation instructions. Upper-Seed sequence absorption and any papers banner corrections require their own verified rows. Presence on disk is not promotion.
 
 **Wave 2 — Root heal:**
-ABSORB moves w/ stubs (DISTILLED_DOCTRINE, ROSETTA_VALIDATION, GOAL, ruminations incl. 07-19 arrivals per class-rule A-4) · tombstone the three staging drafts (successors now verified) · tombstone the four old front doors + FINAL_OUTLINE + FOLDER_LAYOUT with A3 script re-points on the stones · read-order edit on README/AGENTS/CLAUDE/ROSETTA/VMOSK_A + AGENT_README fold. Receipt: one.
+Only Box-15 rows may move Distilled Doctrine, Rosetta Validation, GOAL, or ruminations; convert old front doors; or repoint root route cards. Each row carries source hash, destination, absorber, inbound-reference treatment, stub/stone, rollback, and authority.
 
 **Wave 3 — Control-safe pillar review:**
 KEEP live Agentz deployment manifests · review kernel v0.1 only after a verified
@@ -305,16 +319,16 @@ ruling · papers receive evidence banners only from completed direct reviews.
 Receipt: one, if and only if its exact path manifest is separately authorized.
 
 **Wave 4 — Public-surface sync (spread amendments):**
-one public ladder (A-1) + `/6/` headline fix · practice→products handoff wired (A-2) · per-surface three-scripts check (A-3) · funnel re-verified green end to end. Receipt: one.
+after separate public authority: synchronize `/0–/6` to adopted Seed bytes, remove the `/6 ≡ /0` contradiction, implement `fable → plainly → record → axioms → book → practice → products`, preserve story/plain/receipt/machine separation, and run cold-reader plus external red-team tests. Local QA is not deployment proof.
 
 **Standing constraints across all waves:** K3 archive-with-stone, never delete · never rename receipts (census disambiguates) · stubs at every vacated cited path · registry content-tiers untouched by structure · founder boxes never pre-decided by agents · one pass per wave, receipted.
 
 ---
 
-## §6 · DONE-MEANS
+## §6 · ACCEPTANCE TARGETS (not current-state claims)
 
 1. **Stranger test:** a cold reader lands on the Door, reaches the Seed Ladder in one click, and can walk seed → ontology → axioms → wagers → refusals → revelations → record → evidence without hitting a superseded front door, a dangling `_PENDING_SIGNATURE` suffix, or two ladders claiming the same ordinals.
-2. **Funnel green:** fable → plainly → record → axioms → book → practice link-verified end to end; each surface passes the three-scripts check (story/plain/receipt/machine where applicable); practice hands off to products.
+2. **Funnel green:** fable → plainly → record → axioms → book → practice → products is verified; each surface keeps story/plain/receipt/machine roles distinct; deployment and DNS require separate evidence.
 3. **Zero orphans:** every root file is Door, Index, infrastructure card, or frozen stub; every vacated cited path has a stub; every stone names its absorber; the three staging drafts are tombstoned ONLY with their successors verified on disk; no `[I]` or `[D]` content lost (upper-SEED Sequence verified absorbed).
 4. **One home each:** seven K-surfaces resolve to exactly one canonical doc apiece (postures: SYNTHETIC_GAP only); no eighth surface exists; the kernel remains an overlay — no directory was created for it.
 5. **Ledger closed:** W/O-3 record ledger live with the full collision census; all Wave receipts filed in `50_`; all founder boxes bear a recorded decision; the two known drifted forks (charter pair, Sophia-Perennis) each carry a stone stating which text is canonical and why.
@@ -322,4 +336,4 @@ one public ladder (A-1) + `/6/` headline fix · practice→products handoff wire
 
 ---
 
-*Viṣṇu ⊙ preserves: nothing in this Blueprint destroys; it only names where each thing already belongs. The tree, once signed, reads as the worldview.*
+*This Blueprint proposes a target and records debts. Only owner evidence, explicit adoption, and a path-level execution annex can change the corpus.*

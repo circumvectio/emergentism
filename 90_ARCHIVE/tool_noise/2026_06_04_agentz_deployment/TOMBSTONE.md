@@ -1,5 +1,14 @@
 ---
-status: "K3 STONE — 2026-07-19. Per Magnum Opus Blueprint §3.I item 6 (receipt 139 signed)."
+status: "K3 CUSTODY SNAPSHOT — active routing copies restored; Receipt 139 remains unsigned"
 ---
-# Tombstone — AGENTZ recursive-deployment receipts (2026-06-04 run)
-Per-pillar pipeline receipts from ONE 2026-06-04 recursive Agentz deployment. Routing/control metadata, not doctrine — verified on disk. The living summary is preserved at `00_META/CLAUDE_DEPLOYMENT_RECEIPT_2026_06_04.md` (68/68). Moved whole under K3; nothing erased.
+# Tombstone — AGENTZ recursive-deployment receipt snapshot (2026-06-04 run)
+
+This folder preserves 32 Markdown/CSV artifacts from one recursive Agentz
+deployment. They are routing/control evidence, not doctrine and not disposable
+tool noise. Commit `caee2ef` restored the 32 active counterparts to `00_META/`.
+At that frozen baseline all 32 pairs were byte-identical. The additive
+stabilization wave then repaired links in the active recursive Markdown receipt,
+so 31 pairs remain byte-identical and one active file is intentionally newer.
+
+The active routing copies control. This archive is historical custody and a
+resurrection source; it does not authorize removal of `00_META/` coverage.

@@ -23,8 +23,8 @@ type: compatibility-index
 status: ACTIVE — compatibility shim
 scope: Legacy 01_FOUNDATIONS references after the sevenfold Foundation reorganization.
 sources:
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/01_FOUNDATIONS/AGENTS.md
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/TOMBSTONE.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/01_FOUNDATIONS/AGENTS.md
+  - 01_EMERGENTISM/91_COMPATIBILITY/TOMBSTONE.md
 ---
 
 # 01_FOUNDATIONS Compatibility Stubs
@@ -39,7 +39,7 @@ Files here are link-preservation stubs or legacy copies. They are not the prefer
 
 ## Active Homes
 
-Use the current Foundation roots under `01_EMERGENTISM_ORG/`:
+Use the current Foundation roots under `01_EMERGENTISM/`:
 
 - `00_META/`
 - `01_TELEOLOGY/`

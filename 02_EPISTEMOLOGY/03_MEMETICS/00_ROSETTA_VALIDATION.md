@@ -9,6 +9,7 @@ rosetta:
   canonical_phrase: "Rosetta Validation — the distilled doctrine walked through all seven operators"
 title: "The Rosetta Validation"
 status: "STAGED [D] 2026-07-19 — validates 00_THE_DISTILLED_DOCTRINE.md + K5/K6/K7 through each of the seven operator lenses. No claim upgraded; findings routed to the founder."
+custody_status: "UNAUTHORIZED COPY LOCATION — root source remains controlling until Receipt 139 Boxes 14 and 15"
 date: 2026-07-19
 parents:
   - 00_THE_DISTILLED_DOCTRINE.md
@@ -19,6 +20,10 @@ parents:
   - 08_FRAMEWORK_SUPPORT/08_AGENTS/00_THE_SEVEN_OPERATOR_GENOTYPE.md
 evidence_tier: "[D] — a self-audit; the sphere walked. Findings carry their own tiers; the pass is staged, not signed"
 ---
+
+> **COPY LOCATION ONLY.** This path was populated during the disputed Receipt-141
+> wave. It does not prove validation, absorption, or authorized motion. Compare
+> against the root source before any later disposition.
 
 # The Rosetta Validation
 

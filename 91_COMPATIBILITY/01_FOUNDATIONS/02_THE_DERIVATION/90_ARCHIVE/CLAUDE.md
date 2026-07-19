@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Sādhu"
   register: "[I]"
-  canonical_phrase: "01_EMERGENTISM_ORG/91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE/CLAUDE.md — Agent First-Touch"
+  canonical_phrase: "01_EMERGENTISM/91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE/CLAUDE.md — Agent First-Touch"
 ---
 
 # 90_ARCHIVE — Agent First-Touch
