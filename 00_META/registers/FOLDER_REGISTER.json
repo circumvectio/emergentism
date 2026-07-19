@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 656,
+  "entry_count": 658,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living wor",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2911,
+      "tracked_file_count": 2923,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -25,7 +25,7 @@
       "owns": "**Lane scope:** the control plane of `01_EMERGENTISM` — publication receipts, source",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 22,
+      "tracked_file_count": 24,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -33,12 +33,12 @@
     {
       "path": "00_CONTROL/10_OPEN_CANON_FOUNDATION",
       "type": "meta",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "00_CONTROL/10_OPEN_CANON_FOUNDATION/README.md",
+      "front_door_requirement": "present",
+      "owns": "10_OPEN_CANON_FOUNDATION — front door",
       "must_not_own": null,
-      "status": "unrated",
-      "tracked_file_count": 5,
+      "status": "staged",
+      "tracked_file_count": 6,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -46,12 +46,12 @@
     {
       "path": "00_CONTROL/PRIMETIME_AUDIT",
       "type": "meta",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "00_CONTROL/PRIMETIME_AUDIT/README.md",
+      "front_door_requirement": "present",
+      "owns": "PRIMETIME_AUDIT — front door",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 11,
+      "tracked_file_count": 12,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -64,7 +64,7 @@
       "owns": "**Canonical phrase:** The map helps the practitioner walk, then gets out of the way.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 140,
+      "tracked_file_count": 144,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -213,14 +213,27 @@
       "review_state": "unreviewed"
     },
     {
-      "path": "00_META/worldview_consolidation_2026_06_12",
+      "path": "00_META/registers",
       "type": "meta",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "00_META/registers/README.md",
+      "front_door_requirement": "present",
+      "owns": "00_META/registers — FILE_REGISTER + FOLDER_REGISTER",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 3,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "00_META/worldview_consolidation_2026_06_12",
+      "type": "meta",
+      "nearest_front_door": "00_META/worldview_consolidation_2026_06_12/README.md",
+      "front_door_requirement": "present",
+      "owns": "worldview_consolidation_2026_06_12 — front door",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -597,7 +610,7 @@
       "owns": "> **L6 · Śiva • · Sādhu · Freedom · Mokṣa — Gate VI** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. Th",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 23,
+      "tracked_file_count": 24,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -605,12 +618,12 @@
     {
       "path": "06_ONTOLOGY/ruminations",
       "type": "lane",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "06_ONTOLOGY/ruminations/README.md",
+      "front_door_requirement": "present",
+      "owns": "06_ONTOLOGY/ruminations — front door",
       "must_not_own": null,
-      "status": "unrated",
-      "tracked_file_count": 3,
+      "status": "signed",
+      "tracked_file_count": 4,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1078,7 @@
       "owns": "09_TOOLS — Tooling Architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 331,
+      "tracked_file_count": 332,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1091,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 61,
+      "tracked_file_count": 62,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1507,7 +1520,7 @@
       "owns": "> The compressed kernel. See `../11_UPLINK/00_CORE/00_INDEX.md` for the master route.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 13,
+      "tracked_file_count": 14,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1515,12 +1528,12 @@
     {
       "path": "10_SEED/01_THE_SEED_LADDER",
       "type": "seed",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "10_SEED/01_THE_SEED_LADDER/README.md",
+      "front_door_requirement": "present",
+      "owns": "01_THE_SEED_LADDER — front door",
       "must_not_own": null,
-      "status": "unrated",
-      "tracked_file_count": 8,
+      "status": "staged",
+      "tracked_file_count": 9,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7552,7 +7565,20 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 318,
+      "tracked_file_count": 321,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/00_INDEX",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7643,7 +7669,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 5,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
