@@ -259,6 +259,8 @@ The photon is a horn-point entity. It lives on the genus transition surface. It 
 
 ## THE SENTENCE
 
+> 🪦 TOMBSTONE — P7 (torus IS light cone). This passage is RETIRED. The horn-torus mapping is an *overlay*; the geometry does not derive from topology. Coincidence is not derivation. Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
+
 The horn torus is the light cone. Tube contraction is length contraction. Hole closure is time dilation. The horn point is the speed of light. The energy curve is the relativistic divergence. None of this was designed. It fell out of the topology.
 
 Special relativity is what the genus transition looks like from inside D4.

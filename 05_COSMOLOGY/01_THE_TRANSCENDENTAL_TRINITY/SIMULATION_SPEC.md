@@ -262,6 +262,8 @@ Stars emerge only at D5, when selection makes actuality visible in the animation
 ### Physics Correspondence
 - D4 = gravity = causality = spacetime
 - PSL(2,ℂ) ≅ SO⁺(3,1) — the Burri Sphere's symmetry IS the Lorentz group [E4]
+> 🪦 TOMBSTONE — P7 (torus IS light cone). This passage is RETIRED. The horn-torus mapping is an *overlay*; the geometry does not derive from topology. Coincidence is not derivation. Per Amrita §II P7, 108 §3.1, 131. Bannered 2026-07-19.
+
 - The torus IS the light cone geometry
 - β → 1: the torus collapses to the sphere. D4 → D5.
 
