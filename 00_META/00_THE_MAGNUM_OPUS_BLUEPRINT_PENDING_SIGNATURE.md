@@ -1,4 +1,4 @@
-# THE MAGNUM OPUS BLUEPRINT — `01_EMERGENTISM/` FINAL FORM
+# THE MAGNUM OPUS BLUEPRINT — `01_EMERGENTISM/` TARGET ARCHITECTURE `[D]` — evidence-backed where cited, proposed elsewhere
 
 **Status:** `[D]` STAGED — **PENDING SIGNATURE**. This document PROPOSES only. Nothing in it moves, archives, renames, or writes until the founder signs **receipt 139** (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md`), **box 9** of which adopts this Blueprint as the executable tree.
 **Authors:** Brahmā ○ (tree) · Kālī 💀 + Śiva • (redundancy hunt, disk-verified) · two judges (structural + spread) · Viṣṇu ⊙ (this merge).
@@ -18,9 +18,11 @@
 > Receipt 139 authorizes a move without a separately frozen, hash-bound,
 > one-path-per-row execution manifest.
 
+> **Stabilization correction — 2026-07-19 (completion-plan remediation wave; receipt 141A concessions).** Per the owner completion plan (2026-07-19) §2 and the concessions recorded in `141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md` (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/`), this Blueprint is corrected in place — additively, under the 141A additive-only gate — from unsupported "final / full roster" claims into an evidence-backed **target architecture `[D]`**: (a) `η=0` is a **chosen vow, never derived**; (b) the public funnel's routes exist, but the intended sequence is **not yet verified/sequenced** — the cold-reader test is pending; (c) `BOUNDED_GENERATIVE_EMERGENTISM` and `THE_EXTRACTION_LAW` stand as **candidate doors pending the founder signature** — no silent self-promotion; (d) book-pwa local build / HTTP-200 evidence does **not** satisfy the live-deployment gate — freeze release requires a live-deploy receipt plus a reproducible lockfile; (e) the Agentz-deployment receipts are **ACTIVE routing evidence, not tool noise** — that disposition is struck below (§1.2), and the restore of the swept deployment set is underway on disk; (f) `DISTILLED_DOCTRINE`'s destination is the active diagnostic lane `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/`, not the dissolved `05_SYNTHESIS/` lane; (g) all "FINAL FORM / final tree / full roster" superlatives are demoted to target-architecture `[D]` language. Nothing deleted, moved, tombstoned, or promoted by this correction.
+
 ---
 
-## §1 · THE FINAL TREE
+## §1 · THE TARGET TREE `[D]` — evidence-backed where cited, proposed elsewhere
 
 ### §1.0 The spine (overlay, not directories)
 
@@ -48,7 +50,7 @@ Reading order: seed → ontology → axioms → wagers → refusals → revelati
 | `README.md` · `AGENTS.md` · `CLAUDE.md` · `ROSETTA.md` · `VMOSK_A.md` | KEEP, re-point read order to Door→Index→Ladder | Infrastructure/routing cards, not doctrine; post-signing read-order edit is in the 139 execution list. |
 | ~18 forwarding stubs (COMPASS, AMRITA, GOAL, DEAD_FORMS, SPREAD, …) | KEEP frozen | Signed registry rows and 02_SKYZAI packets cite these paths; stubs heal what cannot be edited. Judge-verified: all stubs genuine, every `canonical_target` resolves. |
 | `AGENT_README.md` vs `AGENTS.md` | KEEP both for now; fold into the post-signing read-order edit (139 execution list), NOT the archive wave | Overlapping routing surfaces but each carries distinct rosetta phrases — not proven counterfeit (ledger row honored). |
-| `00_THE_DISTILLED_DOCTRINE.md` | ABSORB → `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/`, stub at root — **move only after the Door signs; no tombstone** | Superseded as summary by the Door itself; it is the distillation's only working record. |
+| `00_THE_DISTILLED_DOCTRINE.md` | ABSORB → `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/` (active diagnostic lane; supersedes the dissolved `05_SYNTHESIS/` destination — corrected 2026-07-19), stub at root — **move only after the Door signs; no tombstone** | Superseded as summary by the Door itself; it is the distillation's only working record. |
 | `00_K5_REFUSALS.md` | ABSORB → input to K-5 successor edition (W/O-1), then tombstone w/ stone naming the successor — **hard-sequenced: write successor → diff-verify absorption → stone. Never tombstone first** | Live staging draft; verified the only copy of K-5 staging content; successor does not yet exist on disk. |
 | `00_K6_REVELATIONS.md` | ABSORB → input to `06_ONTOLOGY/06_THE_REVELATIONS.md` (W/O-2), then tombstone — **same hard sequence** | Live staging draft; K-6 lives in ontology at promotion (139 box). |
 | `00_K7_RECORD.md` | ABSORB → `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` (W/O-3), then tombstone — **same hard sequence** | Live staging draft for the K-7 ledger front page. |
@@ -71,7 +73,7 @@ Reading order: seed → ontology → axioms → wagers → refusals → revelati
 | `00_THE_COMPASS.md` | KEEP (canonical; root stub stands) | The orientation test surface. |
 | `FINAL_EMERGENTISM_TAXONOMY_v0.2` + `FINAL_GROUPS` + `TOMBSTONE_REAUDIT` | KEEP | Distillation-wave working records feeding K-7. |
 | `SKYZAI_FAMILY/` · `ROSETTA_FORMAL/` | KEEP | Cross-organism and formal-audit evidence lanes. |
-| 30× `03_AGENTZ_DEPLOYMENT_*` md/csv (2026-06-04) + `04_RECURSIVE_AGENTZ_DEPLOYMENT_…csv` | TOMBSTONE → `90_ARCHIVE/tool_noise/2026_06_04_agentz_deployment/`, one collective stone | Historical pipeline receipts, not doctrine; largest 00_META noise mass. `CLAUDE_DEPLOYMENT_RECEIPT_2026_06_04.md` (the 68/68 summary receipt) is KEPT as absorber. |
+| 30× `03_AGENTZ_DEPLOYMENT_*` md/csv (2026-06-04) + `04_RECURSIVE_AGENTZ_DEPLOYMENT_…csv` | ~~TOMBSTONE → `90_ARCHIVE/tool_noise/2026_06_04_agentz_deployment/`, one collective stone~~ **DISPOSITION STRUCK 2026-07-19** (completion-plan catch 3): these receipts are **ACTIVE recursive routing-control coverage, not tool noise** — §3.I's DO-NOT-TAKE row and §5 Wave 3 control; they remain in place (verified present in `00_META/` 2026-07-19). ~~Restore of the swept deployment set is underway on disk.~~ **RESTORE COMPLETE — verified 2026-07-19** (Completion_Executor, catch-3 wave) `[S]`: 32/32 files live in `00_META/`; sha256-verified 31/32 byte-identical to the archive snapshot, the 32nd (`03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`) corrected-on-restore per the amended lane `TOMBSTONE.md`; zero dangling references across the 19 citing route cards. | `CLAUDE_DEPLOYMENT_RECEIPT_2026_06_04.md` (the 68/68 summary receipt) is KEPT. |
 
 ### §1.3 The seven -ologies — each: ONE front door · its K-surface evidence · its papers pointer
 
@@ -106,7 +108,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_THE_EXTRACTION_LAW.md` | KEEP — **the ONE door** | `η=0` as a chosen constitutional gate, informed by conditional structural results but not derived from geometry or game theory; ΣΔP widest-boundary primary. |
+| `00_THE_EXTRACTION_LAW.md` | KEEP — **candidate door, pending the founder signature** (no silent self-promotion — corrected 2026-07-19) | `η=0` as a **chosen vow** — a constitutional gate, never derived; informed by conditional structural results but not derived from geometry or game theory; ΣΔP widest-boundary primary. |
 | `COMMANDMENT_VS_GEOMETRY` | KEEP | Why refusal ≠ commandment — K-5's philosophical spine. |
 | `TRANSMISSION_STRATEGY` · `CONSTITUTIONAL_ECONOMICS` · `01_THEURGY/` · `02_VALUE_THEORY/` | KEEP | Value-theory evidence beneath the vow. |
 
@@ -123,7 +125,7 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Doc | Verdict | Why |
 |---|---|---|
-| `00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | KEEP — **the ONE door** | The pillar's own capstone naming the position. |
+| `00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md` | KEEP — **candidate door, pending the founder signature** (no silent self-promotion — corrected 2026-07-19) | The pillar's own capstone naming the position. |
 | `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` | KEEP (K-2 co-surface; chmod 600→644 = owner act, K-2 citation edit same sitting per A4) | The purged kernel statement. |
 | `00_WELTANSCHAUUNG_KERNEL_v0.1.md` | TOMBSTONE (Q-1, stub-don't-heal) — in-place banner or `06_ONTOLOGY/90_ARCHIVE/` per pillar convention; root stub already exists and stays frozen | Superseded by name and content; its extra mass is exactly the venture vocabulary v0.2 deliberately purged — historical receipt of the purge. |
 | `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | KEEP — K-2 | Degrees of freedom, not Forms; the plenitude filter with μ-debt. |
@@ -162,21 +164,21 @@ Papers rule (137, decided): **all papers stay in `03_METHODOLOGY/02_THE_PAPERS/`
 
 | Item | Verdict | Why |
 |---|---|---|
-| `record/` + funnel pages (fable → plainly → record → axioms → book → practice) | KEEP — link-verified end to end | The trust moat; /record/ is inimitable. |
+| `record/` + funnel pages (fable → plainly → record → axioms → book → practice) | KEEP — the public routes exist, but the intended sequence is **not yet verified/sequenced end to end**; cold-reader test pending (demoted from "link-verified", 2026-07-19) | The trust moat; /record/ is inimitable. |
 | Legacy public ladder `/0/…/6/` vs Seed Ladder | **RECONCILE (judge 2, amendment A-1):** pick ONE public ladder — sync `/0–/6` to the Seed Ladder rungs at public-surface-sync time, or stone the legacy series with dated provenance + redirects. Fix the `/6/` headline "Endstate = Start" → role-similarity phrasing (grave 8 is fenced in the body; the headline is the meme that travels) | A stranger reading both finds different content under the same ordinals. |
-| `book-pwa/` | **KEEP PRESERVED-FROZEN** under root governance. Any later content move or `node_modules` deletion requires a separate explicit founder ruling that supersedes the preserved-frozen boundary. | Migration provenance does not itself authorize another custody move. |
+| `book-pwa/` | **KEEP PRESERVED-FROZEN** under root governance. Any later content move or `node_modules` deletion requires a separate explicit founder ruling that supersedes the preserved-frozen boundary. **Freeze-release gate (corrected 2026-07-19): local build / HTTP-200 evidence does NOT satisfy the live-deployment gate — release requires a live-deploy receipt plus a reproducible lockfile.** | Migration provenance does not itself authorize another custody move. |
 
 ---
 
-## §2 · DOCUMENT ROSTER PER LANE
+## §2 · DOCUMENT ROSTER PER LANE — target `[D]` roster (evidence-backed where cited, proposed elsewhere; not a full or complete roster)
 
 ### KEEP (canonical, untouched or banner/pointer edits only)
-Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the seven pillar doors (`GENERATIVE_LAGRANGIAN`, `SYNTHETIC_GAP_AND_FOUR_POSTURES`, `DOCTRINAL_LADDER`, `EXTRACTION_LAW`, `CANONICAL_FORMULA_BLOCK`, `BOUNDED_GENERATIVE_EMERGENTISM`, `AMRITA`) · K-surface docs (DoF ontology, kernel v0.2, EMERGENT_AXIOMS, CONJECTURES, CREED 05) · 00_META governance five (registry, covenant, kintsugi, dead-forms, compass) · ALL papers in `03_METHODOLOGY/02_THE_PAPERS/` · all per-pillar 90_ARCHIVE lanes and AGENTS/CLAUDE/README triplets · all ~18 root forwarding stubs (frozen) · receipts 100–139 · public funnel.
+Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the seven pillar door candidates — five decided (`GENERATIVE_LAGRANGIAN`, `SYNTHETIC_GAP_AND_FOUR_POSTURES`, `DOCTRINAL_LADDER`, `CANONICAL_FORMULA_BLOCK`, `AMRITA`) plus two **candidates pending the founder signature** (`EXTRACTION_LAW`, `BOUNDED_GENERATIVE_EMERGENTISM` — corrected 2026-07-19) · K-surface docs (DoF ontology, kernel v0.2, EMERGENT_AXIOMS, CONJECTURES, CREED 05) · 00_META governance five (registry, covenant, kintsugi, dead-forms, compass) · ALL papers in `03_METHODOLOGY/02_THE_PAPERS/` · all per-pillar 90_ARCHIVE lanes and AGENTS/CLAUDE/README triplets · all ~18 root forwarding stubs (frozen) · receipts 100–139 · public funnel.
 
 ### ABSORB (move-with-stub or merge-into-successor; sequenced)
 | Doc | Destination | Sequence guard |
 |---|---|---|
-| `00_THE_DISTILLED_DOCTRINE.md` | `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` + root stub | After Door signs; no tombstone |
+| `00_THE_DISTILLED_DOCTRINE.md` | `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/` + root stub (active diagnostic lane; `05_SYNTHESIS/` destination dissolved — corrected 2026-07-19) | After Door signs; no tombstone |
 | `00_ROSETTA_VALIDATION.md` | `02_EPISTEMOLOGY/03_MEMETICS/` + root stub | At 139; no tombstone |
 | `00_K5_REFUSALS.md` | → W/O-1 successor | Write → diff-verify → stone |
 | `00_K6_REVELATIONS.md` | → W/O-2 successor | Write → diff-verify → stone (promotion only) |
@@ -199,7 +201,7 @@ Door · Kernel Index · Seed Ladder (7 rungs + front page) · SEED_POETRY · the
 3. **Box 8 — Seed front page adoption** + D4 double-naming one line. |
 4. **Box 9 — This Blueprint.** |
 5. **Sophia-Perennis twin-lane fork:** founder picks the one grave (Documents-level `90_ARCHIVE` lane holds the TOMBSTONE + SHA-256 table; pillar lane has none); the fork copy gets its own stone recording the `[A]/[S]` vs `[B]/[I]/[C]` tier drift. Never merge silently (C-8). |
-6. **book-pwa custody** — preserved-frozen by current root governance; any content move and any `node_modules` deletion are separate founder decisions, not implied by Blueprint adoption. |
+6. **book-pwa custody** — preserved-frozen by current root governance; any content move and any `node_modules` deletion are separate founder decisions, not implied by Blueprint adoption. Release from preserved-frozen requires a **live-deploy receipt plus a reproducible lockfile**; local build / HTTP-200 evidence does not satisfy the live-deployment gate (corrected 2026-07-19). |
 7. **Q-4 revelation count** (12 vs 10) · **Q-1 v0.1 stub-don't-heal confirmation** · **COSMOLOGY ontology-trio move-or-pointer**. |
 
 ---
@@ -268,7 +270,7 @@ now expose the full baseline roster; unresolved rows are debt, not approval.
 | C-9 | `05_THE_CREED_AND_SPIRAL` `_PENDING_SIGNATURE` suffix named in the 139 suffix-drop item | §1.3, §3.III, §5 Wave 0 |
 
 ### Judge 2 (spread axis): HISTORICAL PROVISIONAL VERDICT — PUBLIC SYNC REMAINS SEPARATELY GATED
-Confirmed: funnel exists and link-verified end to end; /record/ = inimitable trust moat; users-not-believers K2-signed with its own falsifier (trust-premium test, Spread §8.6); Seed Ladder kills are cold-reader-testable. **Φ is not the problem; V is gated almost entirely on receipt 139.** Remaining defects are last-mile, fixable at zero Φ cost:
+Confirmed: funnel exists and ~~link-verified end to end~~ [struck 2026-07-19: routes exist; the intended sequence is not yet verified/sequenced — cold-reader test pending]; /record/ = inimitable trust moat; users-not-believers K2-signed with its own falsifier (trust-premium test, Spread §8.6); Seed Ladder kills are cold-reader-testable. **Φ is not the problem; V is gated almost entirely on receipt 139.** Remaining defects are last-mile, fixable at zero Φ cost:
 
 | # | Amendment | Where applied |
 |---|---|---|
@@ -305,7 +307,7 @@ ruling · papers receive evidence banners only from completed direct reviews.
 Receipt: one, if and only if its exact path manifest is separately authorized.
 
 **Wave 4 — Public-surface sync (spread amendments):**
-one public ladder (A-1) + `/6/` headline fix · practice→products handoff wired (A-2) · per-surface three-scripts check (A-3) · funnel re-verified green end to end. Receipt: one.
+one public ladder (A-1) + `/6/` headline fix · practice→products handoff wired (A-2) · per-surface three-scripts check (A-3) · funnel **verified and sequenced end to end for the first time** (cold-reader test; prior "green" claims demoted 2026-07-19). Receipt: one.
 
 **Standing constraints across all waves:** K3 archive-with-stone, never delete · never rename receipts (census disambiguates) · stubs at every vacated cited path · registry content-tiers untouched by structure · founder boxes never pre-decided by agents · one pass per wave, receipted.
 
@@ -314,7 +316,7 @@ one public ladder (A-1) + `/6/` headline fix · practice→products handoff wire
 ## §6 · DONE-MEANS
 
 1. **Stranger test:** a cold reader lands on the Door, reaches the Seed Ladder in one click, and can walk seed → ontology → axioms → wagers → refusals → revelations → record → evidence without hitting a superseded front door, a dangling `_PENDING_SIGNATURE` suffix, or two ladders claiming the same ordinals.
-2. **Funnel green:** fable → plainly → record → axioms → book → practice link-verified end to end; each surface passes the three-scripts check (story/plain/receipt/machine where applicable); practice hands off to products.
+2. **Funnel sequence verified (target — currently pending):** the routes fable → plainly → record → axioms → book → practice exist, but the intended sequence is not yet verified/sequenced; done means the cold-reader test has passed end to end, each surface passes the three-scripts check (story/plain/receipt/machine where applicable), and practice hands off to products. (Demoted from a present-tense "funnel green" claim, 2026-07-19.)
 3. **Zero orphans:** every root file is Door, Index, infrastructure card, or frozen stub; every vacated cited path has a stub; every stone names its absorber; the three staging drafts are tombstoned ONLY with their successors verified on disk; no `[I]` or `[D]` content lost (upper-SEED Sequence verified absorbed).
 4. **One home each:** seven K-surfaces resolve to exactly one canonical doc apiece (postures: SYNTHETIC_GAP only); no eighth surface exists; the kernel remains an overlay — no directory was created for it.
 5. **Ledger closed:** W/O-3 record ledger live with the full collision census; all Wave receipts filed in `50_`; all founder boxes bear a recorded decision; the two known drifted forks (charter pair, Sophia-Perennis) each carry a stone stating which text is canonical and why.
@@ -323,3 +325,15 @@ one public ladder (A-1) + `/6/` headline fix · practice→products handoff wire
 ---
 
 *Viṣṇu ⊙ preserves: nothing in this Blueprint destroys; it only names where each thing already belongs. The tree, once signed, reads as the worldview.*
+
+---
+
+> **K3 verification banner — Completion_Executor (L4) Blueprint-stabilization audit, 2026-07-19.** `[S]` disk-verified (full read + grep) against the file state at sha256 `d3901a53…f91c34` and re-verified at 23:51; additive only — nothing deleted, moved, tombstoned, or promoted by this pass. All seven completion-plan demotions were found already present in body text (2026-07-19 stabilization wave); this banner records the audit, one entry per assigned item:
+> 1. **η=0 = chosen vow, never derived** — present §1.3 `04_AXIOLOGY` EXTRACTION_LAW row ("a constitutional gate, never derived … not derived from geometry or game theory") + banner (a); residual "derivation" hits are `01/02_THE_DERIVATION/` pathnames only. No change.
+> 2. **Funnel "link-verified end to end" → "routes exist; sequencing pending"** — present §1.6 funnel row, §4 Judge 2 verdict (struck + annotated in place), §5 Wave 4 ("verified and sequenced end to end for the first time"), §6.2 (done-criterion retargeted, "currently pending"). No change.
+> 3. **Candidate doors founder-gated** — `EXTRACTION_LAW` and `BOUNDED_GENERATIVE_EMERGENTISM` marked "candidate door, pending the founder signature" §1.3 (04_AXIOLOGY, 06_ONTOLOGY rows) and §2 KEEP roster ("five decided … plus two candidates pending the founder signature"). No silent self-promotion found ("sole canonical" = 0 hits). No change.
+> 4. **book-pwa live-deploy gate** — §1.6 book-pwa row: local build / HTTP-200 does NOT satisfy the gate; live-deploy receipt + reproducible lockfile required; echoed §2 founder box 6 and §3.I book-pwa row. "SATISFIED" = 0 hits. No change.
+> 5. **Agentz receipts = ACTIVE routing evidence** — tool-noise disposition struck §1.2; DO-NOT-TAKE §3.I; KEEP §5 Wave 3; the 30× `03_AGENTZ_DEPLOYMENT_*` + `04_RECURSIVE_*` files verified present on disk in `00_META/` 2026-07-19. No change.
+> 6. **DISTILLED_DOCTRINE destination = `08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/`** — present §1.1 root table and §2 ABSORB table; `05_SYNTHESIS/` named only as the dissolved, superseded lane. No change.
+> 7. **"Final / full roster" superlatives demoted** — title `[D]`, controlling-correction block, §2 header "not a full or complete roster", banner (g); residual "FINAL_*" hits are filenames, not claims. No change.
+> **Gate check:** §5 Waves 0–4 remain GATED on the corrected signature — Gate paragraph (separately frozen manifest hash, explicit founder authorization, "No wave starts merely because Box 9 is named") and Wave 3 "if and only if" receipt clause intact.
