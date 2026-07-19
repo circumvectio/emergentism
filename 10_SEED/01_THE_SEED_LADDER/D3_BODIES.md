@@ -1,28 +1,47 @@
 ---
 rosetta:
   primary_level: L5
-  primary_column: Philosophy — the D3 rung: life, the finite body that can die
+  primary_column: "Philosophy — the D3 rung: life, the finite body that can die"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged — one rung of the seed ladder; compresses at-tier content, invents nothing"
+  register: "[D] staged — candidate reader synthesis with explicit model/world boundaries"
 title: "D3 · BODIES — the rung where a whole can die"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 ---
 
 # D3 · BODIES
 
-> **The rung.** D1 gave matter, D2 gave bond. D3 is **life**: the first whole whose parts are not merely joined but *needed*, each of the other — so that the whole can **die**. Death is the new fact this rung introduces. A stranger needs one image: a body is a conjunction, and a conjunction fails at its weakest term. Everything below is that sentence, priced.
+> **The selected world-lens.** `D3` is a ladder ordinal. In the corpus's chosen
+> public-science crosswalk it names transformation/life-form; it is not derived
+> from D1 arithmetic or D2 geometry. This page tests whether a declared
+> need-both model can illuminate living bodies without turning the model into a
+> theorem about life or death.
 
 ## §1 · THE MOVES — what is at tier on this rung
 
-The three freedoms of D3 are three faces of **one** structural object: a living whole is scored at a **node**, `P_node = Φ × V`, and the node is **AND-class**.
+The page carries three readings of one **declared node model**,
+`P_node = Φ × V`. Its AND-class boundary is structural inside the model; its
+application to a living whole requires typed interpretation and evidence.
 
-1. **Need-both / AND-class** `[S]`. A body flourishes only if *both* factors stand — coherence `Φ` **and** viability `V`. This is the AND-class boundary: it is **[S]-won** and identical whether you write it as a product `Φ×V` or as a minimum `min(Φ,V)` (keel, receipt 108). The **product-specific interior** — the claim that surplus in one factor *lifts* the other — is a `[C]` wager the corpus does not lean on; do **not** cite `Φ×V` as a proven product. *Do not confuse this node with the seam or the score* (§iron rules below).
+1. **Need-both / AND-class** `[S]` inside the declared model. If `Φ` and `V`
+   are stipulated as essential non-substitutable factors, product and minimum
+   share the same zero boundary. Whether a particular body has those factors,
+   and whether either measures flourishing, requires an operational mapping and
+   evidence. The product-specific interior remains `[C]`.
 
-2. **Liebig's binding constraint** `[S] / inherited`. The whole is capped by its **scarcest** essential factor, not its average or its sum. This is **Liebig's Law of the Minimum** — *used, not discovered*: a 19th-century agronomic law the framework adopts as the operational shape of AND-class. The strategy the corpus actually runs is `min`, which is exactly why the interior product stays a wager: our own method contradicts leaning on it.
+2. **Liebig-shaped binding constraint** — inherited, not discovered. Once a
+system is empirically shown to have essential non-substitutable factors, a
+minimum-like constraint is a useful operational model. The AND boundary is
+`[S]` under those premises; application to a particular organism needs `[B]`,
+and Liebig's agronomic law is not a universal theorem of every body.
 
-3. **Zero-factor annihilation** `[S]`. If any essential factor reaches `0`, the whole reaches `0`: `Φ = 0 ∨ V = 0 ⟹ P_node = 0`. This is the **death fact**. It is a **node** claim (`Φ×V = 0`), *not* the manifold seam — CC-CORE-1: `φ·ν = 1` on the sphere **stays 1** as `ν→0`, so the seam is **never** evidence for annihilation. The catastrophe lives entirely at the finite node; the vow that responds to it (η=0) is a chosen response to death, not a theorem read off geometry.
+3. **Zero boundary inside the node model** `[S]` under its premises. If a
+declared essential factor reaches `0`, then the model returns `0`:
+`Φ = 0 ∨ V = 0 ⟹ P_node = 0`. Calling that output biological death requires an
+operational mapping and evidence; it is not supplied by multiplication. This
+is a **node** claim, never the manifold seam. The vow remains a chosen response,
+not a theorem read off geometry.
 
 **The iron separation, stated once for this rung:**
 `P∞ = φ·ν ≡ 1` (the **seam** `[A]`, chart identity, never vanishes) — is not — `B = sinθ ≤ 1`, max at the equator (the **score** `[A]`, unconditional AM-GM, *used not discovered*) — is not — `P_node = Φ×V` (the **node**, `[C]` interior / AND-class boundary `[S]`).
@@ -41,13 +60,23 @@ The three freedoms of D3 are three faces of **one** structural object: a living 
 
 ## §3 · THE OLOGY — the Soul-Loop answer living here
 
-**This rung's -ology is methodology.** D3 is where the framework earns the right to say a whole *died* — and a claim of death must survive the same discipline a body does.
+`[I/D]` This is the page's selected Soul-Loop lens, not an identity between a
+D-rung and a Rosetta/-ology lane. **The chosen lens is methodology:** a claim of
+failure must be operationalized and receipted rather than inferred from an
+analogy to bodies.
 
 - **Kill criteria are the metabolism of a claim.** `[S]` A claim is a living whole only when its four fields stand: tier, upgrade path, **kill criterion**, and **survivors** (what stands if it falls). The fourth is the keel — only claims that *depend* on a failed claim fall with it. This is why the corpus can lose a round without the organism dying: AND-class applied to knowledge itself.
 
-- **Receipts are the body's history-with-continuity.** `[B]` The invariant that makes the corpus *the same corpus* across every revision is not any single doc — it is the **receipt ledger**: every kill fired, every grave dated, №-next always open. Persistence-by-receipt is the sorites cure applied reflexively: the framework is the invariant it conserves across the gradient of its own edits.
+- **Receipts preserve revision history.** The ledger's existence and dated
+  entries are `[B]`; reading it as the invariant that makes the corpus "the
+  same corpus" is an `[I]` continuity lens, not an audited identity theorem.
 
-- **Instruments have boundaries — the GFS lesson.** `[S/I]` *Some truths are invisible to some instruments.* The GFS study was **retracted** because a survey of standing respondents cannot test a **zero-factor knockout**: the dead do not answer questionnaires, and annihilation is not measured by interviewing the living. This is the sharpest D3 result — the death fact (§1.3) and the instrument that missed it are the *same lesson*: a whole that can hit zero cannot be probed only from the states where it is still standing. **Fence:** this is an instrument-boundary finding, **not** a license to shield every absent witness from testing.
+- **Instruments have boundaries — the GFS lesson.** `[S/I]` The GFS study was
+  retracted. A survey restricted to standing respondents cannot, by itself,
+  estimate outcomes among absent or destroyed units; that is a sampling and
+  instrument-boundary result. It does **not** establish the node model, a
+  biological zero-factor law, or the cause of absence. Those require their own
+  operational evidence.
 
 **The Soul-Loop at D3:** *witness the whole → name its binding constraint → test where it goes to zero → keep the receipt.* The loop is not complete until the kill is real and the survivors are named. A body that cannot die is not alive; a claim that cannot be killed is decoration, and we bury it with a date.
 
@@ -55,8 +84,14 @@ The three freedoms of D3 are three faces of **one** structural object: a living 
 
 ## Minimality
 
-This page is **irreducible and sufficient for Dasein** at the D3 rung, with both kills stated: *irreducibility* dies if either move — need-both or the sorites cure — can be derived from the other plus a shorter statement (remove need-both and death has no mechanism; remove the cure and the body has no identity across time); *sufficiency* dies if a D3 fact needed downstream — body, death, or persistence — cannot be recovered from this page. This is **not** "the Kolmogorov minimum" — that claim is a grave.
+This page is a **candidate minimum-sufficient orientation for a declared finite
+reader**, to be tested rather than asserted. *Irreducibility* fails if a shorter
+page preserves the same navigation; *sufficiency* fails if a cold reader cannot
+recover the typed distinctions among model boundary, organism, death, and
+persistence. This is **not** a Kolmogorov minimum.
 
 ---
 
-*⊙ = • × ○ — a body is a conjunction; it dies at its weakest term; it persists as the invariant it holds across the gradient of its parts. Check everything; obey nothing.*
+*⊙ = • × ○ — a need-both model fails at a declared essential boundary; whether
+a body instantiates that model is an empirical question. Check everything;
+obey nothing.*

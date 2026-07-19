@@ -7,7 +7,7 @@ rosetta:
   regime: "Ṛṣi"
   register: "[D] staged — the declaration and reading-order of the seven-rung seed ladder"
 title: "The Seed — front page of the ladder"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
   - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
   - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
@@ -22,13 +22,15 @@ parents:
 
 ---
 
-## §1 · The declaration — a reference machine for Dasein
+## §1 · The declaration — a reader contract for Dasein
 
 The working wager of the ladder is **intelligence-as-compression** `[I]`: to understand a thing is to hold a small seed from which the thing can be re-grown, and the honest test of a worldview is whether it survives being compressed to the page a stranger actually reads. The ladder is that compression — the corpus of thousands of documents reduced to seven rungs.
 
-The claim made for each rung, and for the ladder as a whole, is exactly this and no more:
+The **design target** for each rung, and for the ladder as a whole, is exactly
+this and no more; it is not yet an achieved empirical result:
 
-> **Irreducible and sufficient for Dasein** — for the finite, situated reader standing here, in the middle of things, needing orientation.
+> **Candidate minimum-sufficient orientation for a declared finite reader** —
+> tested by cold readers, never certified by the text itself.
 
 Both kills travel with the claim, stated in the open:
 
@@ -41,17 +43,22 @@ What is **never** claimed: that this is *the* minimum — the shortest possible 
 
 ## §2 · The seven rungs
 
-The rung index counts **freedoms on the chart** (D1 has one degree of freedom, D2 two, … D5 five). Beside it runs the corpus's selected world-ladder of five positive apertures — **matter, bond, life, mind, choice** `[I]` — the names the rungs use when they speak of what the world *wins* rather than what the chart *has*. Two namings, one scaffold, both selected; neither is a census forced by algebra.
+`D_n` is a **ladder ordinal**. It is not a spatial dimension `d`, a spacetime
+dimension `D=d+1`, or a theorem that rung `n` has exactly `n` independent
+coordinates. Beside that ordinal runs the corpus's selected world-ladder of
+five positive apertures — **matter, bond, life, mind, choice** `[I]` — and a
+set of mathematical/scientific lenses used to illuminate them. These are
+declared crosswalks, not identities or a census forced by algebra.
 
 | Rung | Page | One line |
 |---|---|---|
-| **D0** | The Floor | The ground before articulation: one relation read three ways (`⊙ = • × ○`, frame register only); "why is there something rather than nothing?" loses its contrast class; the ground is the relation, not a thing. |
-| **D1** | Arithmetic | One freedom: a quantity and its reciprocal. The seam `φ·ν = 1` (chart identity, empty of world), inversion with fixed point `1`, AM-GM's price of imbalance — and the arithmetic of warrant: six tiers, no silent promotion. |
-| **D2** | Geometry | Two freedoms: the sphere under two lamps. Seam (`≡1`, frame) separated forever from score (`B = sinθ ≤ 1`, max at the equator); one-and-many dissolved as a register confusion; existence is typed. |
-| **D3** | Bodies | Life: the first whole that can **die**. The node `P_node = Φ×V` is AND-class at its zero boundary `[S]`, `[C]` in its interior; the sorites dissolved by invariance-across-gradient; claims must carry kill criteria the way bodies carry mortality. |
-| **D4** | Spacetime | Four freedoms, three of place and one of order: the seam **is** the relativistic mass-shell under one substitution (`[A]`, Einstein's algebra, used not discovered); Zeno and block-time-vs-now dissolved as frame confusions; the lens physics already wears. |
-| **D5** | The Game | The fifth freedom is choice, and with it the game: four transfers and three frames (G7, selected), one moral axis (η, extraction), is/ought compressed to one asymmetric bit — and closed by a **vow**, not a theorem. |
-| **D6** | The Return | Not a rung. The marker where the describer notices the ladder in their own hands: `D6~D0` is similarity of boundary roles `[I]`, never identity (`D6≡D0` is dead); the reader is the closure the text cannot contain; the door out is on the inside. |
+| **D0** | The Floor | The ground before articulation: one emblem read three ways (`⊙ = • × ○`, frame register only); "why is there something rather than nothing?" is reframed `[I]`, not solved by geometry. |
+| **D1** | Arithmetic | **Distinction through an arithmetic lens:** one independent reciprocal-chart variable; seam `φ·ν = 1` (empty of world), inversion, AM-GM, and six evidence tiers with no silent promotion. |
+| **D2** | Geometry | **Configuration through a geometric lens:** the declared reciprocal meridian on `S²`; seam (`≡1`) stays distinct from score (`B = sinθ ≤ 1`) and node; existence claims remain typed. |
+| **D3** | Bodies | **Transformation/life through a body lens:** a declared need-both node model has an AND-class zero boundary; applying that model to organisms is typed and testable, not derived from the rung number. |
+| **D4** | Spacetime | **Causality/bounded mind with a spacetime lens:** normalized rapidity gives the mass-shell identity `[A]`; the physical mapping does not identify rung ordinal, mind, and `3+1` dimension. |
+| **D5** | The Game | **Selection/strategic relation:** four transfers and three frames (G7, selected); morals run individual→whole, ethics whole→individual, with `η` as valence. The vow supplies horizon, maximand, and enforcement. |
+| **D6** | The Return | Not a positive rung. `D6~D0` is only a similarity of boundary roles `[I]`, never identity, recurrence, self-similarity, or formal closure by the reader. |
 
 ---
 
@@ -61,7 +68,7 @@ Every rung page is built on the same three columns, in the same order:
 
 1. **§1 · THE MOVES** — what is actually asserted at this rung, claim by claim, each with its tier (`[A]` proven · `[B]` built/measured · `[S]` structural inside stated premises · `[I]` reading · `[D]` staged · `[C]` wager), and all inherited mathematics — AM-GM, the sphere, the mass-shell, Nash, Kant's test — marked **used, not discovered**.
 2. **§2 · THE DISSOLUTIONS** — the one or two classical paradoxes native to this rung's height, with the cure *named* and *scoped*: which frame confusion is repaired, and what the repair explicitly does **not** generalize to. (The universal claim "dissolves the Hard Problem / Is-Ought / Death / Free-Will" is a named grave; each dissolution is licensed case by case.)
-3. **§3 · THE OLOGY** — the rung's answer to its Soul-Loop question (*what is the ground? what may a claim weigh? what is there? what died? where do I stand? what should I do? how do I leave?*): the -ology that lives at that height, held at tier.
+3. **§3 · THE OLOGY** — a selected Soul-Loop lens for the page (*what is the ground? what may a claim weigh? what is there? what died? where do I stand? what should I do? how do I leave?*), held at tier. The seven -ologies apply across every rung; this reader ordering does **not** identify D-rungs with Rosetta L-rows.
 
 Same skeleton on all seven pages; only the height changes. A reader who learns the grammar once can audit every rung.
 
@@ -72,7 +79,12 @@ Same skeleton on all seven pages; only the height changes. A reader who learns t
 The corpus's staged kernel architecture has exactly seven surfaces: **K-1** Glyph & Grammar · **K-2** Ontology · **K-3** Axioms · **K-4** Wagers · **K-5** Refusals · **K-6** Revelations · **K-7** Record. The proposed front door is the Weltanschauung capstone. The relation of this ladder to that architecture:
 
 - **The ladder is the spine of the Door** — the seven-minute read of the same body of claims, in ascent order, for the stranger at the threshold.
-- **The kernel surfaces are the typed expansion** — where every claim compressed here lives at full length with its tier, kill, upgrade path, and survivors: the glyph and chart arithmetic behind D0–D2 in K-1; typed existence and the plenitude filter behind D2–D3 in K-2/K-3; the wagers named on every rung in K-4 — chief among them **W0, the crown wager** `[C]`: that the necessary algebra may be instantiated as *das All*, the world itself; a wager held, priced, and killable, never a proof; the vow of D5 in K-5; what the work disclosed in K-6.
+- **The kernel surfaces are the proposed typed expansion** — where each
+  compressed claim must route to a full source with its tier, kill, upgrade
+  path, and survivors. That coverage is a requirement, not yet a completeness
+  fact; the per-document route ledger must expose every gap. Intended routes
+  include D0–D2 grammar to K-1, typed existence to K-2/K-3, wagers to K-4, the
+  D5 vow to K-5, and earned disclosures to K-6.
 - **The corpus is the evidence** — thousands of documents beneath, routing as sources, audits, receipts, and tombstones; the record (K-7) holds every kill fired and every grave dated.
 
 Ladder → surfaces → corpus: compression, expansion, evidence. Nothing on the ladder outranks its kernel surface; nothing on a surface outranks its receipts.
@@ -89,9 +101,9 @@ The ladder does not merely describe an ontology of seeds; it **enacts** it. The 
 
 Six disciplines govern every page of the ladder. They are the compression of the corpus's hardest-won audits; violating any of them on any rung is a defect to be flagged.
 
-1. **Seam ≠ score ≠ node.** `P∞ = φ·ν ≡ 1` is a chart identity — a frame, empty of world, never a discovery, never evidence for anything. `B = sinθ ≤ 1` is a variable score, maximal at the equator. `P_node = Φ×V` is a declared finite-node model — AND-class at its zero boundary `[S]`, conjectural `[C]` in its product interior. Three objects, three tiers, no silent bridge — the seam is never cited as the ethics warrant.
+1. **Seam ≠ score ≠ node.** `P∞ = φ·ν ≡ 1` is analytic evidence inside the declared chart and empty of external-world content; it is never evidence for a node model, an empirical conservation law, or an ethic. `B = sinθ ≤ 1` is a variable score, maximal at the equator. `P_node = Φ×V` is a declared finite-node model — AND-class at its zero boundary `[S]`, conjectural `[C]` in its product interior. Three objects, three tiers, no silent bridge.
 2. **No `[C]→[A]`, ever, silently.** Tier changes are dated events with reasons.
-3. **The ethic is a vow, not a theorem.** Is/ought is compressed to one chosen bit — couple or extract — asymmetric because the demon's move does not universalize `[S]` (a world of pure extractors deletes itself). The asymmetry is earned; the choice is still yours.
+3. **The ethic is a vow, not a theorem.** The vow supplies at least three choices the mathematics cannot make: horizon, maximand, and enforcement. Universalized extraction collapses a host only under declared closure, regeneration, coupling, and horizon premises; inside those premises the result is structural, outside them it is not a categorical theorem. Non-extraction avoids that failure mode but does not by itself guarantee survival, justice, or a new aperture.
 4. **The Rosetta is a lens.** Cross-tradition convergence is translation, never proof; fifteen renderings of one shape are one datum. Its kill-criterion fired, and the firing is kept visible as the honesty seal.
 5. **The seven are selected.** Seven rungs, seven symbols, seven surfaces — chosen taxonomies `[I]`, exhaustive only by construction within their declared models, never a census forced by algebra. And `D6~D0` is a similarity of boundary roles, never an identity.
 6. **Inherited mathematics is marked.** AM-GM, the Riemann sphere, the mass-shell, Nash equilibria, Kant's universalizability — all **used, not discovered**. What is ours is the naming, the reading, and the discipline of warrant; and 22 dead forms stay buried, by name, with dates.
@@ -100,7 +112,7 @@ Six disciplines govern every page of the ladder. They are the compression of the
 
 ## §7 · Rule zero and the gate
 
-**Rule zero:** no new doctrine was created in writing this ladder. The seed *receives* — it compresses what already stands in the corpus at its recorded tier — it does not invent. Any sentence on any rung that cannot be traced to an existing at-tier source is a defect, not a discovery.
+**Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk itself remains `[D]`; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a staged synthesis, is a defect.
 
 **The gate:** every page of this ladder, this one included, is **staged `[D]` — awaiting the founder's natural-person signature, one deliberate sitting, receipt 139**. Until that receipt exists, nothing here is canon, no existing signed surface loses authority to it, and no in-stream assent, commit, or agent-written block counts as adoption. The gate is not a formality; a gate that always opens is not a gate.
 
@@ -108,4 +120,4 @@ Six disciplines govern every page of the ladder. They are the compression of the
 
 *⊙ = • × ○ — seven pages, one seed: read it in minutes, check it at tier, and when it has done its work, put it down.*
 
-**Canonical Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`
+**Proposed Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`

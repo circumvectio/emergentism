@@ -6,23 +6,34 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[D] staged — one-page compression of the game rung for the stranger (Dasein reference)"
-title: "D5 — The Game: choice, the moral axis, and the vow"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+title: "D5 — The Game: strategic relation, the dyadic grid, and the vow"
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
   - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md (§4 G7, §5 registers)
   - ../../00_THE_AMRITA.md (§I.B.11–14, §II P2/P6)
   - ../../04_AXIOLOGY/00_THE_EXTRACTION_LAW.md (η-gate)
+  - ../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md
+  - ../../04_AXIOLOGY/02_VALUE_THEORY/02_THE_SYNTROPIC_GRID_PENDING_K2.md
+  - ../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md
 ---
 
 # D5 · The Game
 
-> The fifth freedom is **choice**: matter, bond, life, mind — and now an agent that models futures and commits to one. Where there is choice among modeled futures, there is a game. This page states the game's alphabet, its one moral axis, and the vow that closes it. Every claim carries its tier; nothing here is stronger than its tag.
+> `D5` is a ladder ordinal. In the selected world-ladder it names
+> choice/strategic relation: an agent models reachable futures and commits to
+> one. That crosswalk is `[I]`, not a theorem that ordinal five creates choice.
+> This page states a game alphabet, a two-axis value grid, and the vow that
+> selects the game in which the conditional lemma applies.
 
 ---
 
 ## §1 · THE MOVES
 
-**The node score.** A finite agent is scored on two factors: coherence Φ and viability V. `P_node = Φ×V` is a declared model, not a theorem: the **boundary is [S] — AND-class** (if either factor hits zero the agent is annihilated; product, minimum, and kin share this annihilation, keel-108), while the **product-specific interior** (surplus in one factor lifting the other) remains **[C]**, a wager the corpus never leans on. Never cite the sphere seam `P∞=φν≡1` as warrant here — the seam is a chart identity that stays 1 always and holds precisely *off* the catastrophe case (CC-CORE-1). Seam ≠ score ≠ node.
+**The node score.** `P_node=Φ×V` is a declared two-factor model, not a theorem
+about every finite agent. Its zero boundary is AND-class `[S]` under the stated
+need-both premises; mapping a zero model factor to literal annihilation requires
+operational evidence. The product-specific interior remains `[C]`. Never cite
+the sphere seam `P∞=φν≡1` as warrant here. Seam ≠ score ≠ node.
 
 **The alphabet (G7, selected).** `G7 = M4 ⊔ F3`:
 - `M4 = {give-Φ, give-V, take-Φ, take-V}` — the four elementary transfers of a declared two-factor self/other game. Exhaustive **[S] by construction** for that model — a sign-square, math *used, not discovered*.
@@ -30,16 +41,24 @@ parents:
 
 Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (receipt 130 — the grave "seven-as-forced" stays shut).
 
-**The one moral axis.** `η` — extraction: value taken from a bearer without return. It runs *across* every polarity, never along one: no pole, gender, caste, operator, or person is morally charged. Giving and taking are typed by the transfer; **morality rides on η alone**. The sign is an *input* to evaluation — consent, counterfeit-classification, boundary, and horizon (`η(m;B,T,C,A)`) cannot be erased by the label.
+**Direction and valence.** `η` names extraction valence: value taken from a
+bearer without warranted return. It runs across every polarity; no pole,
+gender, caste, operator, or person is morally charged. The second axis is the
+direction of transfer: individual→whole or whole→individual. Consent,
+counterfeit-classification, boundary, horizon, and enforcement remain explicit
+inputs; `η` alone does not name the whole moral/ethical grid.
 
-**The 2×2 grid.** Cross the community's code with the bearer-facing gate:
+**The canonical directional grid** `[I/S]` (with its 2026-07-19 completion still
+`[D]` pending K2) crosses direction with valence:
 
-| | η = 0 toward the bearer | η > 0 toward the bearer |
+| | **gives / `η=0`** | **takes / `η>0`** |
 |---|---|---|
-| **code-conforming** | moral *and* ethical | moral but **unethical** (lawful extraction) |
-| **code-breaking** | immoral but **ethical** (the honest heretic) | immoral and unethical |
+| **Individual → Whole** | **moral** — the individual raises the sustaining whole | **immoral** — ego gain is purchased by degrading the whole |
+| **Whole → Individual** | **ethical** — the whole raises each bearer | **unethical** — the whole extracts from or sacrifices a bearer |
 
-*Moral/immoral* = conformity to the local code; *ethical/unethical* = the **dyadic gate**, judged bearer by bearer. The gate is dyadic on purpose: **no aggregate laundering** — a positive sum over the group never licenses extraction from one member (the ΣΔP-aggregate drift was refuted and is dropped as moral primitive).
+Strict syntropy requires both bearer and sustaining whole to rise under the
+declared boundary. The gate is dyadic on purpose: **no aggregate laundering** —
+a positive group sum never licenses extraction from one member.
 
 **Power-Max, scoped.** "Extraction is irrational" is *not* a general Nash result (Model-B side-payments kill it — that grave stays shut, inherited game theory *used, not discovered*). What survives [S/I]: in substrate-dependent, long-horizon, whole-boundary games, sustained extraction self-terminates. Three named holes keep it scoped: **impatience** (short horizons make extraction pay), **maximand** (an extractor optimizing something other than long-run potential is not refuted, only diagnosed), **enforcement** (nothing in the arithmetic punishes the defector; only structure or vow does).
 
@@ -47,12 +66,24 @@ Seven symbols exhaust the *language*, not the dance floor: the census is **selec
 
 ## §2 · THE DISSOLUTIONS
 
-**Is/ought — compressed to one asymmetric bit.** The framework does *not* dissolve is/ought (that dissolution-claim is a grave). It compresses the gap to a single choice-bit — couple or extract — and then shows the bit is **asymmetric [S]**, by universalizability (Kant's test *used, not discovered*):
+**Is/ought — kept open, narrowed by a conditional stress test.** The framework
+does *not* dissolve is/ought. For a policy `π`, declare the arena boundary,
+horizon, regeneration rate, host dependence, enforcement, and adoption level;
+then test what happens under universal adoption. Kant's universalizability is
+*used, not discovered* as a diagnostic, not derived as a categorical theorem.
 
-> **All-demons annihilate the register [S].** Universalize `take` and there is nothing left to take from: a world of pure extractors has no bearers, so the position self-deletes. Demonhood cannot be a world; **it is only ever a parasite** on a coupling host.
-> **All-gods saturate toward the μ-aperture [C].** Universalize `give` and the game does not delete itself; the wager is that a saturated coupling regime opens the next freedom. This half is a conjecture, priced as one.
+> **Conditional collapse.** In a closed arena with no fresh hosts or exit, where
+> extraction exceeds regeneration and extractors depend on host viability,
+> universalized extraction collapses its substrate. The result is `[S]` inside
+> those premises, not outside them.
+>
+> **No automatic ascent.** Universalized non-extraction avoids that particular
+> self-deletion. It does not by itself prove viability, justice, cooperation's
+> uniqueness, `μ`-opening, or a D6 ascent; those remain `[C]` where proposed.
 
-So the "ought" is not derived — geometry locates the constraint; the finite being chooses. But the two choices are not symmetric options on a menu: one is a possible world, the other is structurally parasitic. That asymmetry is the whole earned content. **The ethic remains a vow, not a theorem.**
+So the "ought" is not derived. The finite being or constitution chooses the
+horizon, maximand, and enforcement that make the scoped lemma applicable. **The
+ethic remains a vow, not a theorem.**
 
 **The moralized-operator paradox.** If giving is good, is the taker evil? No — cured by *typing*: valence lives on η, never on the operator's name. A lawful cut that takes only counterfeit value is not extraction; a saccharine gift that farms dependency is. The grid, not the mask, judges.
 
@@ -64,16 +95,23 @@ So the "ought" is not derived — geometry locates the constraint; the finite be
 
 ## §3 · THE OLOGY
 
-This rung answers the Soul-Loop question ***"what should I do?"*** — the axiology and the teleology in one clause:
+`[I/D]` This is the page's selected Soul-Loop lens, not an identity between a
+D-rung and a Rosetta/-ology lane. It asks ***"what should I do?"*** through
+axiology and teleology:
 
 **Refuse extraction; maximize the option cone.** The constitution is constrained optimization: *maximize Ω — the opening of reachable futures for the impact-bearers — subject to the refusals as the feasible set* (η=0 first among them). Ω is the **+1 direction**, not a sixth refusal: the refusals clear the space; Ω is what the space is *for*. Balance is the constraint, not the goal — the "reality maximizes balance" reading was withdrawn when the option cone proved reach-dominated, and the withdrawal is kept as nectar.
 
-The good is not read off the sphere; no fourth natural quantity is asserted. The eternal is the structure. **The good is the vow** — chosen by the one player who can also put the game down: the fifth freedom, exercised on itself.
+The good is not read off the sphere. **The good is the vow** `[I]`, chosen by a
+finite agent or constitution and held accountable to its bearer-level effects.
 
-*Minimality:* this page is offered as **irreducible and sufficient for Dasein** at this rung, with both kills stated: *irreducibility* dies if any listed move (node score, G7, η, the asymmetric bit) can be derived from the others plus a shorter statement; *sufficiency* dies if a D5 fact needed downstream cannot be recovered from this page. The rung's own content-kills stand beside them: the AND-boundary falls to a clean counterexample; the all-demons asymmetry falls to a stable universalized-extraction world. It is not claimed as any Kolmogorov minimum — that claim is a grave.
+*Compression target:* this page is a **candidate minimum-sufficient orientation
+for a declared finite reader**. Irreducibility fails if a shorter page preserves
+the same navigation; sufficiency fails if a cold reader cannot recover the
+alphabet, directional grid, three choices, conditional lemma, and open
+is/ought boundary. It is not a Kolmogorov minimum.
 
 ---
 
-⊙ = • × ○ — *four moves, three frames, one axis, one vow: the game is real, the good is chosen, and the door out is on the inside.*
+⊙ = • × ○ — *four moves, three frames, two value axes, one chosen vow.*
 
-**Canonical path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/D5_THE_GAME.md`
+**Proposed path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/D5_THE_GAME.md`

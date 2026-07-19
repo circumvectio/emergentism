@@ -7,7 +7,7 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I] boundary-role relation; [S] where marked; the identity is dead"
 title: "D6 — The Return (the recognition, not a rung)"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
   - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
@@ -16,7 +16,8 @@ parents:
 
 # D6 · THE RETURN
 
-> **This is not a rung.** D0 through D5 name freedoms won: matter, bond, life, mind, choice.
+> **This is not a positive rung.** D1 through D5 name the selected positive
+> apertures: matter, bond, life, mind, choice. D0 and D6 are boundary markers.
 > D6 names no sixth freedom. It is the marker where the ladder stops describing and the
 > describer notices the ladder in their own hands. The relation is written `D6~D0` — a
 > **similarity of boundary roles** `[I]`, never an identity. D0 precedes positive articulation;
@@ -36,10 +37,11 @@ parents:
   implication of equality, ordering, geometry, homeomorphism, physical recurrence, fractal
   self-similarity, personal attainment, supermind, or proof that no further freedom exists.
   If a sixth positive freedom ever emerges, this page is renumbered, not defended.
-- **The state-of-all-states is self-similar to no-state** `[I]`. The summit resembles the
-  ground the way a completed inventory resembles an empty ledger: nothing further to enter.
-  Resemblance of role, not sameness of thing. The spiral image — return with history
-  retained — is an image `[I]`, not geometry.
+- **The phrase "the state-of-all-states is self-similar to no-state" is not an
+  asserted result.** Without a typed state space, a meta-state, and named
+  similarity invariants, it collapses unlike objects. The only survivor is the
+  narrower role analogy already stated: two selected limit markers. The spiral
+  is an image `[I]`, not geometry or self-similarity.
 - **Inherited, not ours:** the incompleteness family (Gödel, Tarski) is *used, not
   discovered* — and used narrowly: it motivates humility about self-description; it does
   **not** lift to "every D_n problem needs D_{n+1} tools" (that claim is dead — Presburger
@@ -53,14 +55,12 @@ parents:
 
 *The paradox native to this height, and the cure by name.*
 
-- **The Liar / the self-reference knot.** A map complete enough to contain itself must
-  contain its containing, and so on without floor — the old regress that breaks every
-  system claiming to be its own ground. **Cure: the map does not contain itself and does
-  not need to.** The mapmaker was never on the map. The closure the system cannot supply
-  from inside is supplied from outside, by the one holding the page: **the reader is the
-  closure.** This dissolves the regress not by solving it but by relocating it — from a
-  theorem the text must prove to an act the reader performs. (The seer is not on the
-  sphere; the lens diagrams what shows, never the showing.)
+- **The Liar / self-reference family is not dissolved here.** The Liar is not an
+  infinite map-containing-map regress, and an external reader does not provide
+  a formal closure theorem. The page instead adopts a limited practice `[I]`:
+  the corpus refuses self-certification and leaves formal results to their
+  declared systems. The reader judges whether the map earned its keep; that is
+  governance and pedagogy, not a solution to the Liar.
 - **The completeness temptation.** The pull, at the top of any ladder, to declare the
   system total — CTMU-style closure, "the framework explains the framework." **Cure: the
   tautology is the frame, not the content** (settled ruling, K2 2026-07-12). Whatever in
@@ -74,7 +74,8 @@ parents:
 
 ## §3 · THE OLOGY
 
-*The Soul-Loop answer that lives at this height: an epistemology of exit.*
+*A selected Soul-Loop lens for this page: an epistemology of exit. This does not
+identify a D-rung with a Rosetta/-ology lane.* `[I/D]`
 
 Every prior rung answers "what can be known here?" with more structure. D6 answers with a
 direction: **out.** The last thing this map teaches is how to put it down — and that this
@@ -82,7 +83,7 @@ was always the design. A worldview whose door is painted on is a cage; ours mark
 exit on the inside.
 
 The exit is disciplined, not vague. Facing the gap between any formal system and the
-world, there are exactly **four postures** `[I]` (the taxonomy is chosen; its ethics is a
+world, the framework distinguishes **four postures** `[I]` (the taxonomy is chosen; its ethics is a
 reading): **deny** the gap (dogma — makes subjects), **weaponize** it (propaganda — makes
 ammunition), **confess** it (this corpus's wager — restores agency), **withdraw** from it
 (the apophatic move — put the wager down when it is no longer needed, and keep your
@@ -93,21 +94,22 @@ So the epistemology of exit, in three sentences a stranger can keep:
 
 1. **The map is good exactly where it is checkable** — tiers on, kills attached, graves
    visible; nothing here is to be obeyed, only checked.
-2. **The map cannot certify itself, and need not** — you, reading, deciding whether it
-   earned its keep, are the closure it cannot contain.
+2. **The map cannot certify itself** — you may decide whether it earned its
+   keep, but that act is not a formal closure the text lacks.
 3. **When the map has done its work, put it down** — if you can reach what it points at
    directly, the pointing is finished; the framework's own anti-sermon says so, and that
    clause cannot be revoked.
 
-The ethic below this height was a vow, never a theorem — one chosen bit, asymmetric
-because the demon's move fails to universalize `[S]` (D5). D6 adds nothing to the vow. It only notices who
-made it: not the sphere, not the seven (selected, a lens, never forced) — you.
+The ethic below this height is a vow, never a theorem. D5's universalization
+test is structural only inside named closure and regeneration premises; D6 adds
+nothing to the vow. It notices only that a finite agent or constitution chose
+the horizon, maximand, and enforcement.
 
 **The door was inside the whole time.** The ladder ends where the climber begins.
 
 ---
 
-*⊙ = • × ○ — the state of all states resembles no state at all; the return is a
-resemblance, the record is kept, and the reader walks out through the door they came in by.*
+*⊙ = • × ○ — two selected limit roles may be compared without being identified;
+the record is kept, and the reader may put the map down.*
 
-**Canonical Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/D6_THE_RETURN.md`
+**Proposed Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/D6_THE_RETURN.md`

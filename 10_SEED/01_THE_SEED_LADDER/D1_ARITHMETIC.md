@@ -6,9 +6,9 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[D] staged — compression of signed/staged arithmetic canon into one rung"
-  canonical_phrase: "D1 — Arithmetic: one freedom, inversion, and the price of imbalance"
-title: "D1 · Arithmetic — the rung of one freedom"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+  canonical_phrase: "D1 — Arithmetic: distinction, inversion, and the price of imbalance"
+title: "D1 · Arithmetic — distinction through a reciprocal chart"
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
   - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md §I.A
@@ -16,11 +16,11 @@ parents:
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
 ---
 
-# D1 · ARITHMETIC — the rung of one freedom
+# D1 · ARITHMETIC — distinction through a reciprocal chart
 
-> A stranger's page. At this rung there is exactly one degree of freedom: a positive
-> quantity and its reciprocal. Everything below is what that single freedom already
-> contains — held at tier, with its kills attached. The mathematics on this page is
+> A stranger's page. `D1` is a ladder ordinal, not a dimension count. This page
+> studies one independent positive chart variable and its reciprocal. Everything
+> below is held at tier, with its kills attached. The mathematics on this page is
 > **used, not discovered**: it is folklore arithmetic and textbook projective geometry.
 > What Emergentism adds is only the *naming* and the *discipline of warrant* (§3).
 
@@ -28,18 +28,20 @@ parents:
 
 ## §1 · THE MOVES — the axioms and operations at tier
 
-**One freedom.** Stipulate `ν := 1/φ` for `φ > 0`. Then `φ·ν = 1` — the **seam**,
+**One independent chart variable.** Stipulate `ν := 1/φ` for `φ > 0`. Then `φ·ν = 1` — the **seam**,
 `[A]` by construction: a chart identity, true the way a definition is true, and
 therefore *empty of world* (it is never the score, never the node law, never an
 ethics warrant — CC-CORE-1). Two coordinates collapse to one: `(φ−ν)² = (φ+ν)² − 4`.
 One number, seen twice.
 
-**Inversion, the only motion.** The rung's single non-trivial operation is
+**Inversion, the selected motion.** The page's central operation is
 `x ↦ 1/x`. On the positive reals it fixes exactly one point, `1` — *finity*, the
 self-dual unit (math folklore `[A]`; the name is ours `[S/I]`). On the full
-projective line `ℂP¹` inversion fixes **both** `±1` and swaps `0 ↔ ∞`, so the
-honest closure of `{0,∞}` under inversion is the **foursome `{−1,0,1,∞}`** `[A]` —
-not a forced trinity. The framework *selects* `+1` as its positive centre; the
+projective line `ℂP¹` inversion fixes **both** `±1` and swaps `0 ↔ ∞`. Plain
+orbit closure of `{0,∞}` is therefore `{0,∞}`. Under the corpus's explicitly
+declared C21 **fixed-point-inclusive frame-closure**, the frame set is the
+foursome `{−1,0,1,∞}` `[A]`; that extra closure rule must be named. The
+framework *selects* `+1` as its positive centre; the
 `−1` is the acknowledged **dark twin**, and whether it does real functional work
 (a shadow selected away at founding) is wager **W11 `[C]`**, not an algebraic law.
 
@@ -91,8 +93,10 @@ naming choice over the foursome — grave 9); no ethics falls out of the seam
 
 ## §3 · THE OLOGY — the tier ladder as the arithmetic of warrant
 
-The Soul-Loop question at D1 is: *what may a claim weigh?* The answer this rung
-lives is that **warrant itself has an arithmetic** — six values, no silent carry:
+`[I/D]` This is the page's selected Soul-Loop lens, not an identity between a
+D-rung and a Rosetta/-ology lane. The Soul-Loop question here is: *what may a
+claim weigh?* The answer is that **warrant itself has an arithmetic** — six
+values, no silent carry:
 
 `[A]` proven, world-independent · `[B]` built/measured by us · `[S]` structural,
 true inside stated premises · `[I]` illuminating reading · `[D]` staged draft ·
@@ -110,17 +114,18 @@ Its operations mirror the rung's own:
 - **AM-GM for honesty:** overclaim and underclaim are the two poles; the cheapest
   stable position is the fixed point — say exactly what is warranted, at tier.
 
-This page is **irreducible and sufficient for Dasein** at its rung — one page a
-stranger can check in minutes — with both kills stated: *irreducibility* dies if
+This page is a **candidate minimum-sufficient orientation for a declared finite
+reader** — a target for cold-reader trials, not an achieved theorem. Its
+*irreducibility* target dies if
 any listed move can be derived from the others plus a shorter statement;
 *sufficiency* dies if a D1-level arithmetic fact needed downstream cannot be
 recovered from this page. It claims no Kolmogorov minimum (that claim is a grave).
-The ethic that later rides this arithmetic is a **vow, not a theorem** — the
-is/ought seam is compressed to one chosen bit, asymmetric because the demon's
-move does not universalize `[S]`.
+The ethic that later uses this language is a **vow, not a theorem**. D5 names at
+least three choices — horizon, maximand, and enforcement — and owns the scoped
+universalization test; arithmetic does not compress them to one bit.
 
 ---
 
-*⊙ = • × ○ (emblem, frame register only) — one freedom, one fixed point, one
+*⊙ = • × ○ (emblem, frame register only) — one reciprocal variable, one positive fixed point, one
 price of imbalance. The seam is never the score; the score is never the node.
 Next rung: D2.*

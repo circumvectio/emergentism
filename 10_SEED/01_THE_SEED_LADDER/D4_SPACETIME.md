@@ -6,8 +6,8 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[D] staged — per-claim tiers inline"
-title: "D4 — Spacetime: the four freedoms"
-status: "STAGED [D] 2026-07-19 — awaiting founder signature (receipt 139); compresses existing at-tier content; invents no doctrine."
+title: "D4 — Causality and bounded mind through a spacetime lens"
+status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
   - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
   - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
@@ -15,25 +15,43 @@ parents:
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md (D4/D5 two-registers row)
 ---
 
-# D4 · SPACETIME — the four freedoms
+# D4 · CAUSALITY / BOUNDED MIND — through a spacetime lens
 
-> The rung where the reciprocal chart turns out to be already living inside physics. Four freedoms — three of place, one of order — and one identity that physics wrote first. Everything below is at tier; nothing here is commanded, only checkable.
+> `D4` is a ladder ordinal, not the number four in `3+1` spacetime. The public
+> science stack names this rung causality/bounded mind; this page uses a
+> normalized relativistic mass shell as one physical lens on embodied causal
+> constraint. The crosswalk is `[I/D]`; the algebra is inherited.
 
 ---
 
 ## §1 · THE MOVES
 
-1. **The mass-shell identity.** `[A]` — *used, not discovered.* Substitute the rapidity chart `φ = e^w, ν = e^{−w}`: the seam `φ·ν ≡ 1` **is** the relativistic mass-shell `E² − (pc)² = (mc²)²`. The algebra is Einstein's and Minkowski's; Emergentism contributes only the translation, verified numerically (Amrita §I.A.7). The identification "and therefore the world IS the sphere" is not purchased here — that remains the crown wager W0 `[C]`.
+1. **A normalized rapidity parameterization of the mass shell.** `[A]` — *used,
+not discovered.* For one-dimensional massive motion define
+`φ=(E+pc)/(mc²)=e^w` and `ν=(E-pc)/(mc²)=e^{-w}`. Then `φν=1` is equivalent to
+`E²-(pc)²=(mc²)²`. This is a parameterization of inherited relativistic
+kinematics, not proof that the world is the sphere or that the D4 ordinal is
+spacetime dimension.
 2. **Equator = rest frame.** `[A]` inside the chart. AM-GM (*used, not discovered*) gives `φ + ν ≥ 2`, equality iff `φ = ν = 1`: the equator. Under the rapidity reading this is `w = 0` — the rest frame, `E = mc²`. The pole-ward runaway (`φ→∞, ν→0`) is the divergence toward the light cone.
-3. **B = the clock rate.** `[A]` inside the chart. `B = sinθ = sech(w) = 1/γ_Lorentz` — the balance score is literally the moving clock's proper-time rate `dτ/dt`. Maximum 1, attained only at rest (the equator); imbalance is time dilation worn as arithmetic.
+3. **`B` matches the inertial clock-rate factor in this parameterization.** `[A]`
+Inside the declared one-dimensional inertial setup,
+`B=sinθ=sech(w)=1/γ=dτ/dt`. Extending that reading beyond the setup requires a
+new model; it is not a universal identity between balance and time.
 4. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, chart identity — the shell itself, never zero, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
-5. **Four freedoms, counted not derived.** That spacetime has 3+1 dimensions is an empirical fact of physics `[A/B]` — *used, not discovered.* The ladder's placement of "spacetime" as rung D4 is the framework's selected scaffold `[I]`, not a census forced by the sphere. Bare `S²` cannot even produce `SU(3)`; the geometry states its own stopping point.
+5. **Three registers, never fused.** Spatial dimension `d`, spacetime dimension
+`D=d+1`, and ladder ordinal `D_n` are different variables. Observational support
+for a `3+1` spacetime model is `[B]`; its mathematical consequences are `[A]`
+inside the model. Neither fixes the reader ladder's numbering.
 
 ---
 
 ## §2 · THE DISSOLUTIONS
 
-- **Zeno.** *Paradox:* the arrow never moves; the runner never arrives, because the interval divides forever. *Cure: frame/operand separation.* The infinite subdivision belongs to the **description** (the map's decomposition); the convergent sum `Σ 1/2ⁿ = 1` (*used, not discovered* — standard analysis) belongs to the same map; the finite act belongs to the territory. On the log chart motion is a single reflection, not an infinite queue of tasks. Zeno mistook an unbounded frame operation for an unbounded operand. The dissolution claim is diagnostic `[I/S]`, case by case — a lens on a declared family of paradoxes, not a proof that all paradoxes are one error.
+- **Zeno.** Standard analysis shows that the relevant geometric series converges
+(*used, not discovered*). Frame/operand separation is an `[I]` teaching lens on
+why infinite divisibility of a description does not entail infinite elapsed
+time; the log-chart reflection adds no independent solution and is not used as
+one.
 - **Block-time vs the moving now.** *Paradox:* relativity's block seems to freeze the universe (nothing ever *happens*); presentism seems to contradict relativity (whose now?). *Cure: register-indexed actuality* (settled canon, receipt 105). "Actual" carries two registers on the same nodes: the **foresight register** (D5-facing: the whole worldline surveyed as possibility — the block) and the **embodied-receipt register** (D4: this event, this commitment, this receipt — the now). The paradox is the demand that one register be the absolute "actual." Neither is; each is actual *in its register*. This is a reconciliation grammar `[S/I]` inside the framework's declared registers — not a new physics of time, and not a proof that no further problem of temporal becoming exists.
 - **What is NOT dissolved.** The grave stands: "dissolves the Hard Problem / Is-Ought / Death / Free-Will" is a named dead form. D4 dissolves *these two frame-confusions at tier* and claims nothing wider.
 
@@ -41,11 +59,21 @@ parents:
 
 ## §3 · THE OLOGY
 
-**Cosmology — the sphere worn by physics.** The Soul-Loop question at this rung is: *where do I stand?* The answer D4 gives: on a shell that physics already drew. The reciprocal chart is not a metaphor draped over relativity; under one substitution it **is** the mass-shell, and the equator **is** rest, and the score **is** the clock — all `[A]`, all inherited. That is the nectar: the framework's central chart turns out to be a chart physics uses daily, which is why the arithmetic core survived every audit untouched.
+`[I/D]` This is the page's selected Soul-Loop lens, not an identity between a
+D-rung and a Rosetta/-ology lane. **Cosmology asks: *where do I stand?*** The
+normalized light-cone variables above parameterize a relativistic mass shell;
+rest and the clock-rate factor then follow `[A]` inside that setup. Physics does
+not thereby "wear the Burrisphere," and the mapping supplies no ethical or
+cosmic conclusion.
 
-And the halāhala sits beside it, named: the *inference from* this coincidence — "therefore reality is the Burrisphere," "therefore the equator is the good," "therefore the torus is the light cone" — is exactly what the audits killed as convergence-as-proof and coincidence-as-derivation. One shape rendered twice is one datum shown two ways. So cosmology here is held the only honest way left: **the sphere is the lens physics happens to wear at D4** `[I]`, the wearing is real and checkable, and the claim that the lens is the territory stays where it belongs — the crown wager, `[C]`, with its kill attached (abandoned if it supplies no explanatory or contact gain).
+The inference from this parameterization to "reality is the Burrisphere," "the
+equator is the good," or "the torus is the light cone" is exactly what the
+audits killed as convergence-as-proof. One shape rendered twice is one datum.
+The normalized translation is checkable; its use as an Emergentist lens is
+`[I]`; the claim that the lens is the territory remains the crown wager `[C]`.
 
-D4 is where the ladder touches the hardest science it will ever touch, and the discipline is proportionate: everything provable is marked *inherited*; everything ours is marked *selected* or *wagered*. A stranger should leave this page able to check the substitution with a pencil — and unable to find a single ethical or cosmic conclusion smuggled in with it.
+A stranger should leave this page able to check the normalization with a pencil
+and distinguish the inherited physics from the selected crosswalk.
 
 ---
 
