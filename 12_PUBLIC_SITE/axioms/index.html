@@ -24,7 +24,7 @@
   --bone:#F5F5F3; --bone-dim:#9a9d9f; --bone-faint:#63676c; --bone-ghost:#34373c;
   --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
   --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
-  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
+  --t-a:#7fb2e6; --t-d:#a4a7a9; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
   --v-fenced:#e8b23a; --v-held:#5bbf88; --v-mixed:#5aa9e6; --v-refuted:#e0453b;
   --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
   --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
@@ -64,7 +64,7 @@ h1 .kill{font-weight:900;letter-spacing:-.04em;color:var(--crimson)}
 .dek b{color:var(--bone);font-weight:500}
 .legend{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin:1.7rem 0 0;font-family:var(--mono);font-size:.78rem;color:var(--bone-faint);align-items:center}
 .t{font-family:var(--mono);font-size:.72em;font-weight:700;padding:.06em .42em;border-radius:3px;border:1px solid currentColor;line-height:1.5;white-space:nowrap}
-.t-a{color:var(--t-a)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
+.t-a{color:var(--t-a)}.t-d{color:var(--t-d)}.t-e{color:var(--t-e)}.t-s{color:var(--t-s)}.t-i{color:var(--t-i)}.t-c{color:var(--t-c)}.t-b{color:var(--t-b)}
 
 .readout{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem 1.4rem;margin:2rem 0 .2rem;font-family:var(--mono);font-size:.83rem;color:var(--bone-dim);
   border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:.85rem 0}
@@ -161,8 +161,8 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot .mono{color:var(--bone-faint)}
 
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
 @media(max-width:720px){
   .case{grid-template-columns:74px 1fr}
   .rail{padding-right:.8rem}
@@ -174,7 +174,7 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
 }
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}
-  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .js .reveal{opacity:1!important;transform:none!important;transition:none!important}
 }
 </style>
 <!-- pwa-chrome -->
@@ -182,11 +182,12 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
 <header class="topbar">
-  <a class="brand" href="../home/">Emergent<b>ism</b></a>
+  <a class="brand" href="../">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
     <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
     <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
@@ -202,19 +203,23 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
     <p class="dek reveal in">Each carries its evidence tier — and its verdict after the peer-review program, the ten model-internal experiments, and the literature grounding. <b>The credential is not the self-narrative; it is the one refutation the framework accepted against its own interest (R6).</b></p>
     <div class="legend reveal in">
       <span><span class="t t-a">[A]</span> established maths</span>
-      <span><span class="t t-e">[E]</span> established science</span>
+      <span><span class="t t-b">[B]</span> external evidence / receipt</span>
       <span><span class="t t-s">[S]</span> structural</span>
       <span><span class="t t-i">[I]</span> interpretive</span>
       <span><span class="t t-c">[C]</span> conjecture</span>
-      <span><span class="t t-b">[B]</span> receipt</span>
+      <span><span class="t t-d">[D]</span> draft / pending adoption</span>
     </div>
     <div class="readout reveal in" role="group" aria-label="Summary">
       <span class="r"><span class="n">7</span><span class="lab">axioms</span></span><span class="pipe">|</span>
       <span class="r"><span class="n">5</span><span class="lab">corollaries</span></span><span class="pipe">|</span>
-      <span class="r"><span class="n">8</span><span class="lab">open conjectures</span></span><span class="pipe">|</span>
+      <span class="r"><span class="n">8</span><span class="lab">tracked conjectures</span></span><span class="pipe">|</span>
       <span class="r bad"><span class="n">1</span><span class="lab">kill accepted (R6)</span></span>
     </div>
   </header>
+
+  <aside class="record-note reveal in" style="margin:0 0 2.5rem;padding:1.2rem 1.35rem;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;background:rgba(255,235,59,.035)">
+    <p style="margin:0;color:var(--bone-dim)"><span class="t t-d">[D]</span> <b style="color:var(--bone)">Status: legacy A1–A7 audit projection, not a final Kintsugi canon.</b> It preserves older claims so their verdicts remain legible. In particular, literal <code>D6≡D0</code>, forced-product language, and dimensional or quantum identifications must not be read as established conclusions. The current public proposals use similarity rather than identity, a selected AND-class model rather than a forced product, and removable correspondences rather than proof transfer.</p>
+  </aside>
 
   <!-- KERNEL -->
   <section>
@@ -225,10 +230,10 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
 (φ − ν)² ≥ 0           a square (always true)
 φ + ν   ≥ 2            AM–GM</pre>
       <p>The mathematics is <span class="t t-a">[A]</span> — correct, and <b>elementary</b> (a reciprocal identity, a square, AM–GM, a hyperbolic-trig substitution). <b>Correct ≠ deep.</b></p>
-      <p><b>The strongest anchor (2026-06-11):</b> read in light-cone coordinates of the four-momentum (φ = (E+pc)/mc², ν = (E−pc)/mc²), the three lines above <em>are</em> special relativity term for term — the mass-shell E²−(pc)²=(mc²)², momentum real, and E ≥ mc² (the equator is the rest frame; B = sin θ = 1/γ = dτ/dt, the rate of lived time) <span class="t t-a">[A]</span>. Derivation: Paper B §8.</p>
+      <p><b>The strongest algebraic correspondence (2026-06-11):</b> in a 1+1-dimensional or collinear fixed-mass slice, with <code>p</code> the signed momentum component, set φ = (E+pc)/mc² and ν = (E−pc)/mc². Then φν=1 is the mass-shell E²−(pc)²=(mc²)², (φ−ν)²≥0 is p²≥0, and φ+ν≥2 is E≥mc². In that selected frame, the equator is p=0 and B=sin θ=1/γ=dτ/dt <span class="t t-a">[A]</span>. This exact slice does not identify human meaning with four-momentum or transfer physical evidence to the framework's interpretation.</p>
       <p>That reality <em>is</em> this geometry — beyond kinematics, where the identity holds exactly — is the load-bearing wager <span class="t t-s">[S]</span><span class="t t-i">[I]</span> — not a theorem. The formula block draws this line itself ("the maths is [A]; the identification is [S]"), which is the single most honest sentence in the corpus.</p>
       <p><b>R6 note:</b> the block carries <em>both</em> the multiplicative form (φ·ν=1) and the additive form (φ+ν≥2). The experiment showed the <b>additive form is correct for the teleology/empowerment register</b>, the multiplicative for the organizational register. The kernel contains both; the error was claiming <em>one geometry governs all scales</em>.</p>
-      <p class="analysis fence" style="--v:var(--v-fenced)"><b>Kernel↔ethics fence (audit 2026-07-13):</b> the sphere identity `φ·ν=1` <em>stays 1 always</em> — as ν→0, φ→∞ and the product never vanishes. But the "zero-factor catastrophe" that grounds the ethic needs `Φ×V=0`. The identity holds precisely <em>off</em> the catastrophe case, so it was never evidence for the multiplicative floor: the kernel and the ethics are two different objects, and the bridge between them is a wager, not a proof. A full formal audit of the whole worldview (2026-07-13) found this and 65 other coherence breaks on the framework's own terms; the analytic core survives, most derivations downgrade from <em>proved</em> to <em>posited</em>. Staged for K2. See <a href="../record/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">the trial record</a>.</p>
+      <p class="analysis fence" style="--v:var(--v-fenced)"><b>Kernel↔ethics fence (audit 2026-07-13):</b> the sphere identity `φ·ν=1` <em>stays 1 always</em> — as ν→0, φ→∞ and the product never vanishes. But the "zero-factor catastrophe" that grounds the ethic needs `Φ×V=0`. The identity holds precisely <em>off</em> the catastrophe case, so it was never evidence for the multiplicative floor: the kernel and the ethics are two different objects, and the bridge between them is a wager, not a proof. A full formal audit found this and 65 other coherence breaks on the framework's own terms; the analytic core survives, most derivations downgrade from <em>proved</em> to <em>posited</em>. It was staged for natural-person review at the time; current authority must be checked against the live record. See <a href="../record/" style="color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px">the trial record</a>.</p>
     </div>
   </section>
 
@@ -254,7 +259,7 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
         <p class="claimline">The axiom</p>
         <p class="claim">"Ethical" ≡ dyadic node/boundary rise: <code>ΔP_node,i &gt; 0</code> and <code>ΔP_node,H &gt; 0</code> under <code>η = 0</code>. <em>ΣΔB / ΣΔP_node remains the widest-boundary audit. Posited, not derived from "is." Evaluates outcomes, not operators.</em></p>
         <div class="verdict-row"><span class="stamp">Holds</span><span class="qual">survives, as a posit</span></div>
-        <p class="analysis"><b>Honest after register split</b> — the is/ought seam is acknowledged <em>in the axiom itself</em>. Survives as an <span class="t t-i">[I]</span> posit, never <span class="t t-a">[A]</span>. R3 added: the verdict is <em>objective-relative</em> (maximin, sum, and per-capita welfare disagree), so the dyadic test must declare boundary and aggregator.</p>
+        <p class="analysis"><b>Honest after register split</b> — the is/ought seam is acknowledged <em>in the axiom itself</em>. Survives as an <span class="t t-i">[I]</span> posit, never <span class="t t-a">[A]</span>. The dyadic test must declare boundary and aggregator, while aggregate gain may not compensate for destroying either side. Payer, beneficiary, consent, custody, reversibility, contest, and exit remain visible.</p>
       </div>
     </article>
 
@@ -262,14 +267,14 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
       <div class="rail reveal"><div class="no">A3</div><div class="axname">The Scaffold</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span><span class="t t-i">[I]</span></div></div>
       <div class="doc reveal">
         <p class="claimline">The axiom</p>
-        <p class="claim">Reality unfolds D0→D6; D6≡D0 closure; each level emerges at the μ-limit. <em>Force–dimension assignments are [I], "mapped by analogy."</em></p>
+        <p class="claim"><s>Legacy claim: reality unfolds D0→D6 with literal D6≡D0 closure and every level forced at a μ-limit.</s> Current proposal: D0–D6 is a selected scaffold; five candidate crossings are separately testable; the non-μ return is written <code>D6 ~ D0</code>, similar rather than identical.</p>
         <div class="verdict-row"><span class="stamp">Mixed</span><span class="qual">structure coherent, physics weak</span></div>
-        <p class="analysis">Structure <span class="t t-s">[S]</span> coherent; the physics is weak. The force↔dimension map is numerology (gauge groups ≠ dimensions) — and the axiom <em>already tiers it [I] by analogy</em>, honestly. D6≡D0 as Penrose CCC is <span class="t t-c">[C]</span> and "on life support." Keep 0 and ∞ as distinct poles, not "the same."</p>
+        <p class="analysis">The scaffold is <span class="t t-i">[I]</span>; saturation-caused crossings and the closed five-count are <span class="t t-c">[C]</span>. Missing reduction is not proof of irreducibility. Force↔dimension assignments remain analogy, not physics. Literal identity failed its order test; the surviving return is similarity only.</p>
       </div>
     </article>
 
     <article class="case" style="--v:var(--v-held)">
-      <div class="rail reveal"><div class="no">A4</div><div class="axname">The Boundary</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span><span class="t t-e">[E]</span></div></div>
+      <div class="rail reveal"><div class="no">A4</div><div class="axname">The Boundary</div><div class="vdot"></div><div class="ct">corpus <span class="t t-s">[S]</span><span class="t t-b">[B]</span></div></div>
       <div class="doc reveal">
         <p class="claimline">The axiom</p>
         <p class="claim">self↔others is real; η=0 vs cooperators, tit-for-tat vs defectors; 2 Gods + 2 Demons — <b>"the boundary is the move's direction η, not the operator."</b></p>
@@ -337,7 +342,7 @@ code{font-family:var(--mono);font-size:.9em;color:var(--bone)}
     <table class="tbl">
       <thead><tr><th>Conjecture</th><th>Tier · status</th><th>Kill criterion</th></tr></thead>
       <tbody>
-        <tr class="killed"><td class="c1"><b>R6 — empowerment = Φ×V under a conserved conjugate product φ·ν=1</b></td><td class="status"><span class="t t-c">[A] refuted</span><br>REFUTED 2026-06-10</td><td>The decomposition is <b>additive (a simplex), not multiplicative (a sphere)</b>: E = H(S)−H(S|A), so iso-empowerment sets are lines and φ·ν=1 is the <em>dead state</em>. Mortality does not rescue balance. <b>The "one geometry at all scales" claim fails here.</b> Kill criterion fired (twice) and was honoured. <em>Chart-fence (2026-06-12): E is a logarithm, so "additive" is the log-chart of multiplicative reach; the substantive kill is one axis + no conjugate coupling in the solipsistic register — not "power adds." The reflexive register (R10, below) is where the coupling is conjectured to appear: adversarial contact is the arrival of the second agent the solipsistic setting lacks.</em></td></tr>
+        <tr class="killed"><td class="c1"><b>R6 — empowerment = Φ×V under a conserved conjugate product φ·ν=1</b></td><td class="status"><span class="t t-a">[A] refuted</span><br>REFUTED 2026-06-10</td><td>The decomposition is <b>additive (a simplex), not multiplicative (a sphere)</b>: E = H(S)−H(S|A), so iso-empowerment sets are lines and φ·ν=1 is the <em>dead state</em>. Mortality does not rescue balance. <b>The "one geometry at all scales" claim fails here.</b> Kill criterion fired (twice) and was honoured. <em>Chart-fence (2026-06-12): E is a logarithm, so "additive" is the log-chart of multiplicative reach; the substantive kill is one axis + no conjugate coupling in the solipsistic register — not "power adds." The reflexive register (R10, below) is where the coupling is conjectured to appear: adversarial contact is the arrival of the second agent the solipsistic setting lacks.</em></td></tr>
         <tr><td class="c1"><b>R10 — reflexive empowerment: Φ (recursion depth / plan) × ν (execution)</b></td><td class="status"><span class="t t-a">[A]</span> R10a / <span class="t t-c">[C]</span> R10b<br>EXECUTED 2026-06-12 — SPLIT; V3 2026-06-15 — depth route closed</td><td>Three deterministic games run (E2: V1+V2 2026-06-12, V3 depth-vs-depth 2026-06-15). <b>R10a supported within the models:</b> the contact register is multiplicative where the single-agent register was additive — the plan's value is <em>exactly zero</em> at no-execution ("everybody has a plan until they get punched in the mouth", as a number), reliability amplifies plan quality <em>including its badness</em> (a sign-crossing no additive surface can produce), and in the p-beauty game depth is a <em>strict total order</em> (deeper always wins; payoff = the sign of the depth difference). <b>R10b not recovered — and the depth route is now closed:</b> no conserved φ·ν frontier appears by <em>either</em> failure mode — depth <em>saturates</em> against fixed opponents (V2), and against a mutual modeller it becomes a <em>positional arms race</em> (V3) — deeper always pays, so both run to the wall, where the advantage is competed to zero at equilibrium. What survives at contact is the product and its catastrophe, not the conservation law. Across the program, three registered predictions were wrong and are scored as wrong.</td></tr>
         <tr><td class="c1"><b>R5 — the 0/1/∞ triptych + the Euclid→Stevin→Buckingham→2019-SI arc as one story</b></td><td class="status"><span class="t t-a">[A]</span> history, <span class="t t-i">[I]</span> thesis<br>strongest surviving</td><td>If Rotman / de Courtenay already triangulate all three items and the full arc → it is exposition, not a claim.</td></tr>
         <tr><td class="c1"><b>R4 — two-factor multiplicative structure of evaluated productivity</b> (the keystone)</td><td class="status"><span class="t t-i">[I]</span><br>real but narrow</td><td>If additive ≥ multiplicative on cross-validated outcomes, or a single general factor predicts as well, or there is no floor non-compensation. The register where the sphere <em>is</em> appropriate.</td></tr>
