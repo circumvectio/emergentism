@@ -9,8 +9,8 @@ rosetta:
 title: "D4 — Causality and bounded mind through a spacetime lens"
 status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md (§I.A.7 mass-shell)
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md (D4/D5 two-registers row)
 ---
@@ -78,3 +78,5 @@ and distinguish the inherited physics from the selected crosswalk.
 ---
 
 *Seam ≠ score ≠ node. The shell is Einstein's; the reading is ours; the reading is priced.* ⊙ = • × ○
+
+> **Founder addendum (receipt 139, 2026-07-19).** The double naming is blessed as one selected scaffold `[I]`: **"spacetime"** names this rung by its *chart freedoms* (place/order), while the world-ladder's fourth aperture is **"mind"**. Neither is forced; both are honest views of the same crossing. A stranger meeting "mind" as an already-won freedom at D5 should read it here.

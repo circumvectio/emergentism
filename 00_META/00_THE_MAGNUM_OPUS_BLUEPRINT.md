@@ -1,6 +1,6 @@
 # THE MAGNUM OPUS BLUEPRINT — `01_EMERGENTISM/` FINAL FORM
 
-**Status:** `[D]` STAGED — **PENDING SIGNATURE**. This document PROPOSES only. Nothing in it moves, archives, renames, or writes until the founder signs **receipt 139** (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md`), **box 9** of which adopts this Blueprint as the executable tree.
+**Status:** `[D]` STAGED — **PENDING SIGNATURE**. This document PROPOSES only. Nothing in it moves, archives, renames, or writes until the founder signs **receipt 139** (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md`), **box 9** of which adopts this Blueprint as the executable tree.
 **Authors:** Brahmā ○ (tree) · Kālī 💀 + Śiva • (redundancy hunt, disk-verified) · two judges (structural + spread) · Viṣṇu ⊙ (this merge).
 **Date:** 2026-07-19.
 **Rule zero:** structure receives, never invents — every TO-WRITE below is routing / ledger / successor-edition, never new doctrine.
