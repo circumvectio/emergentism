@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Titans — the three that are not numbers</title>
+<meta name="description" content="Why 0, 1, and ∞ are frames, not numbers: the blow-up from both sides, the 2=1 catastrophe, the forbidden forms — and the one indeterminate that became the emblem. ⊙ = • × ○" />
+<meta name="color-scheme" content="dark" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Titans — the three that are not numbers" />
+<meta property="og:description" content="The limit is fine; the value is the casualty. Division by zero from both sides, the 2=1 proof, and the three boundary-frames of the number field." />
+<meta property="og:url" content="https://www.emergentism.org/titans.html" />
+<meta property="og:image" content="https://www.emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<style>
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('/assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('/assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --void:#050505; --panel:#0d0d0c; --panel-2:#131312;
+  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
+  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b; --crimson-dim:#8f312c;
+  --green:#5bbf88; --blue:#5aa9e6;
+  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
+  --t-a:#7fb2e6; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0;
+  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --read:46rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
+             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
+::selection{background:rgba(255,235,59,.26);color:#050505}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+.read{max-width:var(--read);margin:0 auto}
+.mono{font-family:var(--mono)}
+.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
+.brand b{color:var(--gold);font-weight:800}
+.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
+.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
+.nav a:hover{color:var(--void);background:var(--gold)}
+.nav a.here{color:var(--gold);border:1px solid var(--line)}
+header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem;text-align:left}
+.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
+h1{font-size:clamp(2.4rem,6.4vw,4.6rem);letter-spacing:-.03em;line-height:1.0;margin:0 0 1.4rem;text-wrap:balance;font-weight:200}
+h1 .gold{color:var(--gold);font-weight:900}
+.dek{font-size:clamp(1.1rem,1.7vw,1.36rem);color:var(--bone-dim);max-width:62ch;margin:0 0 1.4rem;font-weight:300;line-height:1.6}
+.dek b{color:var(--bone);font-weight:500}
+.tierline{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.4rem 0 0;font-family:var(--mono);font-size:.72rem}
+.tier{border:1px solid var(--line);border-radius:3px;padding:.18rem .5rem}
+.tier.t-a{color:var(--t-a)} .tier.t-s{color:var(--t-s)} .tier.t-i{color:var(--t-i)} .tier.t-c{color:var(--t-c)}
+section{padding:clamp(2.6rem,6vw,4.4rem) 0;border-top:1px solid var(--line-soft)}
+.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.2rem;line-height:1.1;text-wrap:balance}
+h2 b{font-weight:800}
+p{margin:0 0 1.2rem}
+.body p{color:var(--bone-dim)}
+.body p b{color:var(--bone);font-weight:500}
+.small{font-size:.92rem;color:var(--bone-faint)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.6rem;margin:1.6rem 0}
+.panel.gold-edge{border-left:3px solid var(--gold)}
+.panel.red-edge{border-left:3px solid var(--crimson)}
+.eq{font-family:var(--mono);font-size:clamp(1.1rem,2.4vw,1.5rem);color:var(--bone);text-align:center;padding:1rem 0;letter-spacing:.02em}
+.eq .gold{color:var(--gold)} .eq .dim{color:var(--bone-faint)} .eq .red{color:var(--crimson)}
+canvas.viz{display:block;width:100%;height:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;margin:1.2rem 0}
+.controls{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center;margin:.6rem 0 1rem;font-family:var(--mono);font-size:.78rem;color:var(--bone-dim)}
+.controls button{font-family:var(--mono);font-size:.78rem;background:transparent;color:var(--bone);border:1px solid var(--line);border-radius:6px;padding:.5rem .9rem;cursor:pointer;transition:.15s}
+.controls button:hover{border-color:var(--gold);color:var(--gold)}
+.steps{display:grid;gap:.7rem;margin:1.4rem 0}
+.step-line{font-family:var(--mono);font-size:clamp(.95rem,1.9vw,1.15rem);padding:.7rem 1rem;border:1px solid var(--line-soft);border-radius:8px;color:var(--bone-dim);opacity:.28;transition:.3s;background:var(--panel)}
+.step-line.on{opacity:1;color:var(--bone)}
+.step-line.crime{opacity:1;border-color:var(--crimson);background:rgba(224,69,59,.08);color:var(--bone)}
+.step-line.crime b{color:var(--crimson)}
+table.forms{width:100%;border-collapse:collapse;margin:1.4rem 0;font-family:var(--mono);font-size:.9rem}
+table.forms th,table.forms td{border:1px solid var(--line-soft);padding:.6rem .8rem;text-align:left}
+table.forms th{color:var(--gold-deep);font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
+td.no{color:var(--crimson)} td.yes{color:var(--green)} td.mid{color:var(--t-i)}
+.glyph-big{font-family:var(--mono);font-size:clamp(2.2rem,7vw,4.4rem);text-align:center;color:var(--gold);padding:1.4rem 0;font-weight:400}
+.cta-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:2rem}
+.cta{display:inline-block;font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:.7rem 1.1rem;color:var(--bone);transition:.15s}
+.cta:hover{border-color:var(--gold);color:var(--gold)}
+.cta.primary{background:var(--gold);color:var(--void);border-color:var(--gold);font-weight:700}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-size:.92rem}
+footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
+footer.foot a{color:var(--bone-dim)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="brand" href="./">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Site">
+    <a href="fable/">Fable</a><a href="plainly/">Plainly</a><a href="record/">Record</a>
+    <a href="axioms/">Axioms</a><a href="book/">Book</a><a href="practice/">Practice</a>
+    <a class="here" href="titans.html">Titans</a>
+  </nav>
+</div>
+
+<main class="wrap">
+
+<header class="hero read reveal in">
+  <p class="fileno">The floor · D0 — where the map begins</p>
+  <h1>The three that are<br><span class="gold">not numbers.</span></h1>
+  <p class="dek">Before arithmetic there are three frames: the dot <b>•</b>, the unit <b>⊙</b>, the ring <b>○</b>. Everyone learns their names in school — <b>0, 1, ∞</b> — and almost nobody learns the one thing that matters: <b>they are not operands. They are the frames the operations live in.</b> This page proves it, breaks it, and then puts it back together.</p>
+  <div class="tierline">
+    <span class="tier t-a">[A] the limit and the field laws</span>
+    <span class="tier t-s">[S] the three boundary-frames</span>
+    <span class="tier t-i">[I] the emblem — sung, not summed</span>
+  </div>
+</header>
+
+<section class="read reveal">
+  <p class="kicker">Scene one — the three transformations</p>
+  <h2>One glyph, <b>three readings.</b></h2>
+  <div class="body">
+    <p>The framework's whole floor fits in one line — but the line is read three ways, and only two of them are arithmetic:</p>
+  </div>
+  <div class="glyph-big">⊙ = • × ○</div>
+  <div class="panel gold-edge">
+    <p class="eq"><span class="dim">descent 1 ·</span> 0 = 1 / ∞ <span class="dim">— computable</span> <span class="tier t-a">[A]</span></p>
+    <p class="eq"><span class="dim">descent 2 ·</span> ∞ = 1 / 0 <span class="dim">— computable as a limit, never a value</span> <span class="tier t-a">[A]</span></p>
+    <p class="eq"><span class="gold">ascent ·</span> <span class="gold">1 = 0 × ∞</span> <span class="dim">— the indeterminate. The emblem. Sung, not summed.</span> <span class="tier t-i">[I]</span></p>
+  </div>
+  <div class="body">
+    <p>Watch the difference the whole page hangs on: <b>the descents can be computed</b> — they are limits, honest and one-sided. <b>The ascent cannot</b> — <code>0 × ∞</code> is one of arithmetic's forbidden forms. The framework's most famous line is the one line its own floor refuses to calculate. Hold that thought; it becomes the punchline.</p>
+    <p class="small">A precision the schoolroom skips: <code>lim<sub>x→0⁺</sub> N/x = +∞</code> is <b>true</b> — a well-defined limit. <code>N/0</code> as a <b>value</b> is <b>undefined</b> — no number at all. The limit is fine. The value is the casualty. The next scene shows why.</p>
+  </div>
+</section>
+
+<section class="read reveal">
+  <p class="kicker">Scene two — the blow-up, both arms</p>
+  <h2>Approach zero. <b>From both sides.</b></h2>
+  <div class="body">
+    <p>From the right, <code>1/x</code> climbs without bound. From the left, it falls without bound. The two arms fly to <b>opposite</b> infinities — so no single value can be assigned. That is the real proof that division by zero is undefined.</p>
+  </div>
+  <canvas class="viz" id="blowup" width="960" height="540" aria-label="Animation of 1/x diverging to plus and minus infinity as x approaches zero from both sides"></canvas>
+  <div class="controls">
+    <button id="blowup-replay" type="button">↻ replay</button>
+    <span id="blowup-readout" class="mono"></span>
+  </div>
+</section>
+
+<section class="read reveal">
+  <p class="kicker">Scene three — the catastrophe</p>
+  <h2>Force a value. <b>Lose the field.</b></h2>
+  <div class="body">
+    <p>What happens if you ignore the fence and divide by zero anyway? The whole of arithmetic pays. Watch the most famous wrong proof in the world — one hidden division, and 2 becomes 1:</p>
+  </div>
+  <div class="steps" id="steps">
+    <div class="step-line">let &nbsp;a = b</div>
+    <div class="step-line">a² = ab</div>
+    <div class="step-line">a² − b² = ab − b²</div>
+    <div class="step-line">(a − b)(a + b) = b(a − b)</div>
+    <div class="step-line crime">a + b = b &nbsp;&nbsp;←&nbsp; <b>divided both sides by (a − b) = 0</b></div>
+    <div class="step-line">b + b = b</div>
+    <div class="step-line crime">2 = 1</div>
+  </div>
+  <div class="controls">
+    <button id="steps-play" type="button">▶ run the proof</button>
+  </div>
+  <div class="body">
+    <p>Every line looks legal. One line is a crime scene: the moment both sides were divided by <code>(a − b)</code> — which is <b>zero</b>, because <code>a = b</code>. <b>Assign division-by-zero a value, and any equality becomes provable.</b> The field's price for one forced value is the whole field.</p>
+  </div>
+</section>
+
+<section class="read reveal">
+  <p class="kicker">Scene four — turn the table</p>
+  <h2>So these three <b>were never numbers.</b></h2>
+  <div class="body">
+    <p>Look at what just happened. Zero broke addition's inverse. Infinity absorbed every product. The unit sat untouched at the center of both. These three do not behave like the others — because they are not <i>in</i> the game. <b>They are the boundary-frames that define it:</b></p>
+  </div>
+  <div class="panel gold-edge">
+    <p class="eq">• &nbsp;0 — <b>the additive identity</b> <span class="dim">the floor of counting</span> <span class="tier t-s">[S]</span></p>
+    <p class="eq">⊙ &nbsp;1 — <b>the multiplicative identity</b> <span class="dim">the self-dual center</span> <span class="tier t-s">[S]</span></p>
+    <p class="eq">○ &nbsp;∞ — <b>the projective point at infinity</b> <span class="dim">the ring's own edge</span> <span class="tier t-s">[S]</span></p>
+  </div>
+  <div class="body">
+    <p>Three boundary-frames of the number field. <b>The Titans.</b> They define the operations; they are not operands. Every number you will ever use lives between them — on the charts they frame.</p>
+    <p class="small">Not claimed here: anything about countability. Our ○ is Riemann's one added point that compactifies the line into a ring — not Cantor's ℵ₀, and the dot is not 𝔠. Two infinities worth of poetry live in that mistake, and it is a mistake; the frames above are the whole definition.</p>
+  </div>
+</section>
+
+<section class="read reveal">
+  <p class="kicker">Scene five — the rule of forbidden forms</p>
+  <h2>Where a Titan <b>may not sit.</b></h2>
+  <div class="body">
+    <p>The rule is not "never touch a Titan." It is sharper: <b>a frame may not sit in an operand slot where it collapses the operation.</b> Frame-role and operand-role are contextual, not exclusive — <code>1/1 = 1</code> and <code>0 + 5 = 5</code> are perfectly ordinary. The forbidden set is exactly the forms that break:</p>
+  </div>
+  <table class="forms">
+    <tr><th>form</th><th>verdict</th><th>why</th></tr>
+    <tr><td>N / 0</td><td class="no">undefined</td><td>the arms part — no value exists (scene two)</td></tr>
+    <tr><td>0 / 0</td><td class="no">indeterminate</td><td>any value fits — no unique answer</td></tr>
+    <tr><td>∞ / ∞</td><td class="no">indeterminate</td><td>race of two frames — undecided by form</td></tr>
+    <tr><td class="mid">0 × ∞</td><td class="mid">indeterminate</td><td><b>the ascent itself — the emblem, [I]</b></td></tr>
+    <tr><td>∞ − ∞</td><td class="no">indeterminate</td><td>the gap of two infinities — undecided by form</td></tr>
+    <tr><td>1 / 1 = 1</td><td class="yes">lawful</td><td>the identity being itself — an ordinary operand</td></tr>
+    <tr><td>0 + 5 = 5</td><td class="yes">lawful</td><td>the additive identity at work — ordinary</td></tr>
+  </table>
+  <div class="body">
+    <p>And there it is — the punchline the floor was saving. <b><code>0 × ∞</code> sits in the forbidden column, and it is the framework's own glyph.</b> The descents compute; the ascent is the one indeterminate — which is precisely why the ascent is the sung line, the wager, the emblem <code>[I]</code>, and never <code>[A]</code> arithmetic. The forbidden-forms table and the glyph's own typing are the same fact.</p>
+  </div>
+</section>
+
+<section class="read reveal">
+  <p class="kicker">Scene six — the numbers return</p>
+  <h2>Everything else <b>lives between them.</b></h2>
+  <div class="body">
+    <p>Once the three frames stand, the rest of mathematics walks back in — as the content that plays between the poles, around the center, on the charts the Titans define. One beautiful chart of exactly that shape is already on this site: Suda's Egg of Infinity, <code>u = (x−1)/(x+1)</code> — the whole number line folded into a finite egg, the poles as its tips. An independent convergence, kept in its own chart.</p>
+  </div>
+  <div class="cta-row">
+    <a class="cta primary" href="egg/">See Suda's Egg — the numbers, folded →</a>
+    <a class="cta" href="0/">Read the floor in the Seed Ladder →</a>
+    <a class="cta" href="fable/">Start the whole path — the fable →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot wrap">
+  <div class="glyph">⊙ = • × ○</div>
+  <p>The Titans · D0, the floor of the Emergentism ladder. The limit is fine; the value is the casualty. The frames define the game; the game plays between the frames.<br>
+  <a href="fable/">fable</a> · <a href="plainly/">plainly</a> · <a href="record/">record</a> · <a href="axioms/">axioms</a> · <a href="book/">book</a> · <a href="practice/">practice</a> · <a href="egg/">egg</a></p>
+</footer>
+
+<script>
+(function(){
+  var rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = [].slice.call(document.querySelectorAll('.reveal:not(.in)'));
+  if (rm || !('IntersectionObserver' in window)) { reveals.forEach(function(e){e.classList.add('in');}); }
+  else {
+    var io = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -6% 0px', threshold:0.05});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+  setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
+
+  /* ---------- Scene 2: the blow-up, both arms ---------- */
+  var cv = document.getElementById('blowup');
+  var ctx = cv.getContext('2d');
+  var W = cv.width, H = cv.height;
+  var ox = W/2, oy = H/2;           // origin
+  var sx = 110, sy = 26;            // scale: px per unit
+  var GOLD = '#FFEB3B', DIM = '#6b6f74', BONE = '#F5F5F3', RED = '#e0453b', BLUE = '#5aa9e6';
+
+  function axes(){
+    ctx.clearRect(0,0,W,H);
+    ctx.strokeStyle = 'rgba(245,245,243,.16)'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(0,oy); ctx.lineTo(W,oy); ctx.moveTo(ox,0); ctx.lineTo(ox,H); ctx.stroke();
+    ctx.fillStyle = DIM; ctx.font = '12px "Roboto Mono", monospace';
+    ctx.fillText('x', W-18, oy-8);
+    ctx.fillText('1/x', ox+8, 16);
+    ctx.fillText('0', ox-16, oy+16);
+  }
+  function curve(){
+    ctx.lineWidth = 1.6;
+    [[1,GOLD],[-1,BLUE]].forEach(function(pair){
+      var side = pair[0], col = pair[1];
+      ctx.strokeStyle = col; ctx.beginPath();
+      var started = false;
+      for (var px = 0; px <= W; px += 2){
+        var x = (px - ox) / sx;
+        if (side < 0 && x >= -0.06) continue;
+        if (side > 0 && x <=  0.06) continue;
+        var y = 1/x;
+        var py = oy - y*sy;
+        if (py < -4000) py = -4000;
+        if (py > H+4000) py = H+4000;
+        if (!started){ ctx.moveTo(px, Math.max(-50,Math.min(H+50,py))); started = true; }
+        else ctx.lineTo(px, Math.max(-50,Math.min(H+50,py)));
+      }
+      ctx.stroke();
+    });
+  }
+  var t0 = null, dur = 5200, raf = null;
+  function frame(ts){
+    if (!t0) t0 = ts;
+    var p = Math.min(1, (ts - t0) / dur);
+    axes(); curve();
+    // phase 1: right side approaching 0+, phase 2: left side approaching 0-
+    var phase = p < 0.5 ? 0 : 1;
+    var q = phase === 0 ? p/0.5 : (p-0.5)/0.5;
+    var x = (phase === 0 ? 1 : -1) * (1 - q*0.985); // → 0±
+    var y = 1/x;
+    var px = ox + x*sx, py = oy - y*sy;
+    var col = phase === 0 ? GOLD : BLUE;
+    // tracer line
+    ctx.strokeStyle = 'rgba(245,245,243,.25)'; ctx.setLineDash([4,4]);
+    ctx.beginPath(); ctx.moveTo(px, oy); ctx.lineTo(px, Math.max(6,Math.min(H-6,py))); ctx.stroke();
+    ctx.setLineDash([]);
+    // point
+    ctx.fillStyle = col; ctx.beginPath(); ctx.arc(px, Math.max(6,Math.min(H-6,py)), 5, 0, 7); ctx.fill();
+    // labels
+    ctx.fillStyle = col; ctx.font = 'bold 15px "Roboto Mono", monospace';
+    var label = (phase===0 ? 'x → 0⁺' : 'x → 0⁻') + '    x = ' + x.toFixed(3) + '    1/x = ' + (y>99||y<-99 ? y.toExponential(1) : y.toFixed(1));
+    ctx.fillText(label, 18, 30);
+    var out = document.getElementById('blowup-readout');
+    if (out) out.textContent = (phase===0 ? 'from the right: 1/x climbs without bound' : 'from the left: 1/x falls without bound — opposite infinities ⇒ no value');
+    if (p < 1 && !rm) { raf = requestAnimationFrame(frame); }
+    else if (rm) { /* static: draw final both-arms state */ }
+  }
+  function start(){ if (raf) cancelAnimationFrame(raf); t0 = null; raf = requestAnimationFrame(frame); }
+  document.getElementById('blowup-replay').addEventListener('click', start);
+  var started = false;
+  if ('IntersectionObserver' in window){
+    var io2 = new IntersectionObserver(function(en){ en.forEach(function(e){ if(e.isIntersecting && !started){ started = true; start(); io2.disconnect(); } }); }, {threshold:0.3});
+    io2.observe(cv);
+  } else { start(); }
+  if (rm){ axes(); curve(); ctx.fillStyle=GOLD; ctx.font='bold 15px "Roboto Mono", monospace'; ctx.fillText('x → 0⁺ ⇒ +∞    x → 0⁻ ⇒ −∞    no value assignable', 18, 30); }
+
+  /* ---------- Scene 3: the 2=1 step-through ---------- */
+  var lines = [].slice.call(document.querySelectorAll('#steps .step-line'));
+  var playing = false;
+  document.getElementById('steps-play').addEventListener('click', function(){
+    if (playing) return; playing = true;
+    lines.forEach(function(l){ l.classList.remove('on'); });
+    var i = 0;
+    (function next(){
+      if (i > 0) lines[i-1].classList.remove('on');
+      if (i >= lines.length){ lines.forEach(function(l){ l.classList.add('on'); }); playing = false; return; }
+      var el = lines[i];
+      el.classList.add('on');
+      if (el.classList.contains('crime')){
+        el.animate([{transform:'translateX(0)'},{transform:'translateX(-6px)'},{transform:'translateX(6px)'},{transform:'translateX(0)'}],{duration:320,iterations:2});
+        setTimeout(next, 1300);
+      } else {
+        setTimeout(next, 850);
+      }
+      i++;
+    })();
+  });
+})();
+</script>
+</body>
+</html>
