@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Floor — why 0, 1, ∞ are not numbers — Emergentism</title>
+<meta name="description" content="D0: watch N/x fly to opposite infinities as x → 0, watch the 2 = 1 proof break the field on a hidden divide-by-zero, and then turn the table — 0, 1, ∞ were never numbers. They are the Titans: the frames that define the operations." />
+<meta property="og:title" content="The Floor — 0, 1, ∞ are not numbers" />
+<meta property="og:description" content="Division by zero flies to opposite infinities; forcing it a value proves 2 = 1. The resolution: 0, 1, ∞ are frames, not operands — the Titans that define arithmetic." />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:,">
+<style>
+  :root{ --bg:#050505; --ink:#e9e6df; --dim:#8a8577; --gold:#e8b84b; --red:#e5533d; --grn:#7bbf6a; --line:rgba(233,230,223,.14); }
+  *{ box-sizing:border-box; } html,body{ margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; line-height:1.6; }
+  header.topbar{ position:sticky; top:0; height:52px; display:flex; align-items:center; gap:1.2rem;
+    padding:0 1.2rem; z-index:9; background:rgba(5,5,5,.85); backdrop-filter:blur(4px); border-bottom:1px solid var(--line); }
+  .brand{ color:var(--gold); font-weight:700; text-decoration:none; } nav a{ color:var(--dim); text-decoration:none; font-size:.8rem; margin-right:.5rem; } nav a:hover{ color:var(--ink); }
+  .wrap{ max-width:940px; margin:0 auto; padding:40px 20px 60px; }
+  .kicker{ color:var(--gold); font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; }
+  h1{ font-size:clamp(2rem,5.5vw,3.4rem); margin:.3rem 0; letter-spacing:-.01em; }
+  h2{ font-size:1.15rem; color:var(--gold); margin:2.4rem 0 .4rem; }
+  .lede{ color:var(--dim); max-width:64ch; margin:.6rem 0 1.2rem; }
+  .glyph{ text-align:center; font-size:clamp(1.6rem,5vw,2.4rem); color:var(--gold); margin:.8rem 0; letter-spacing:.05em; }
+  canvas#zero{ width:100%; aspect-ratio:16/9; display:block; border:1px solid var(--line); border-radius:12px; background:#070707; }
+  .readout{ display:flex; flex-wrap:wrap; gap:.5rem 1.4rem; justify-content:center; margin:.7rem 0 .2rem; font-size:.85rem; }
+  .readout b{ color:var(--gold); } .readout .neg b{ color:var(--red); }
+  .verdict{ text-align:center; color:var(--dim); font-size:.9rem; margin:.2rem 0 .4rem; }
+  .verdict b{ color:var(--ink); }
+  table{ width:100%; border-collapse:collapse; margin:.8rem 0; font-size:.86rem; }
+  td,th{ text-align:left; padding:.4rem .6rem; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ color:var(--dim); font-weight:400; }
+  .tier{ color:var(--gold); font-size:.7rem; border:1px solid var(--gold); border-radius:999px; padding:.02rem .4rem; }
+  .tier.emblem{ color:var(--red); border-color:var(--red); }
+  .proof{ font-size:.92rem; line-height:2; background:#080808; border:1px solid var(--line); border-radius:10px; padding:1rem 1.3rem; }
+  .proof .bad{ color:var(--red); }
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; } @media(max-width:680px){ .grid2{ grid-template-columns:1fr; } }
+  .box{ border:1px solid var(--line); border-radius:10px; padding:.8rem 1rem; }
+  .box.no{ border-color:rgba(229,83,61,.4); } .box.yes{ border-color:rgba(123,191,106,.4); }
+  .box h3{ margin:.1rem 0 .5rem; font-size:.9rem; } .box.no h3{ color:var(--red); } .box.yes h3{ color:var(--grn); }
+  .box code{ display:block; color:var(--ink); padding:.15rem 0; }
+  .foot{ color:var(--dim); font-size:.76rem; border-top:1px solid var(--line); margin-top:2.4rem; padding-top:1rem; }
+  .foot a{ color:var(--gold); } .cta{ color:var(--gold); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav aria-label="routes"><a href="../0/">0</a><a href="../1/">1</a><a href="../egg/">Egg</a><a href="../sphere.html">Sphere</a><a href="../record/">Record</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="kicker">D0 · The Floor</div>
+  <h1>0, 1, ∞ are not numbers</h1>
+  <p class="lede">Watch what happens when you try to make them behave like numbers. Then watch the resolution: they were never operands. They are the <b>Titans</b> — the frames that <em>define</em> the operations, and cannot sit inside them.</p>
+
+  <h2>1 · Divide by zero — and it flies apart</h2>
+  <canvas id="zero" aria-label="The graph of y = 1/x, both branches. As the denominator approaches zero from the right the value runs to positive infinity; from the left it runs to negative infinity."></canvas>
+  <div class="readout">
+    <span>denominator&nbsp;<b id="r-d">1.000</b></span>
+    <span>1 / d = <b id="r-v">1.000</b></span>
+    <span class="neg">from the left: 1 / (−d) = <b id="r-vn">−1.000</b></span>
+  </div>
+  <p class="verdict">The right arm runs to <b>+∞</b>. The left arm runs to <b>−∞</b>. Two roads, opposite ends — so no single value can be <b>1/0</b>. The one-sided limits are perfectly defined; the <em>value</em> is <b>undefined</b>. <span class="tier">[A]</span></p>
+
+  <h2>2 · Force it a value, and the field breaks</h2>
+  <p class="lede">Here is the price of pretending <code>1/0</code> is a number. The proof looks airtight — one step secretly divides by zero.</p>
+  <div class="proof">
+    let <b>a = b</b><br>
+    a² = ab<br>
+    a² − b² = ab − b²<br>
+    (a − b)(a + b) = b(a − b)<br>
+    <span class="bad">a + b = b &nbsp;&nbsp;← divide both sides by (a − b) — but a = b, so this is ÷ 0</span><br>
+    2b = b &nbsp;&nbsp;(since a = b)<br>
+    <b>2 = 1</b>
+  </div>
+  <p class="verdict">Allow division by zero and arithmetic proves anything. That is why it is <em>forbidden</em>, not merely hard.</p>
+
+  <h2>3 · Turn the table — they were frames all along</h2>
+  <p class="lede">The mistake was the category. <b>0</b>, <b>1</b>, and <b>∞</b> are not values that live <em>in</em> the number field — they are its three <b>boundary-frames</b>, the structure that makes the operations possible:</p>
+  <table>
+    <tr><th>Titan</th><th>Role — what it <em>defines</em></th><th>What it is <b>not</b></th></tr>
+    <tr><td style="color:var(--gold)">•&nbsp; 0</td><td>the additive identity — the origin the whole line is measured from</td><td>a quantity you can divide by</td></tr>
+    <tr><td style="color:var(--gold)">⊙&nbsp; 1</td><td>the multiplicative identity — <em>finity</em>, the self-dual unit, the fixed point of inversion</td><td>a "mere one"</td></tr>
+    <tr><td style="color:var(--gold)">○&nbsp; ∞</td><td>the projective point at infinity — the single point that closes the plane into a sphere</td><td>a countable or uncountable cardinal; not a real number</td></tr>
+  </table>
+  <p class="lede">A frame can still appear as an ordinary operand where the operation survives (<code>1/1 = 1</code>, <code>0 + 5 = 5</code>). It is forbidden only where it would <em>collapse</em> the operation. That is the whole rule.</p>
+
+  <h2>4 · The rule of the floor</h2>
+  <div class="grid2">
+    <div class="box no">
+      <h3>Forbidden — the frame collapses the operation</h3>
+      <code>N / 0 &nbsp;— undefined</code>
+      <code>0 / 0 &nbsp;— indeterminate</code>
+      <code>∞ / ∞ &nbsp;— indeterminate</code>
+      <code>0 × ∞ &nbsp;— indeterminate</code>
+      <code>∞ − ∞ &nbsp;— indeterminate</code>
+    </div>
+    <div class="box yes">
+      <h3>Allowed — the frame is an ordinary operand</h3>
+      <code>1 / 1 = 1 &nbsp;(identity law)</code>
+      <code>0 + 5 = 5</code>
+      <code>5 × 1 = 5</code>
+      <code>1 / ∞ → 0 &nbsp;(a limit)</code>
+      <code>N / ∞ → 0</code>
+    </div>
+  </div>
+
+  <h2>5 · The glyph is this rule, sung</h2>
+  <p class="lede">The three term-transformations of <span style="color:var(--gold)">⊙ = • × ○</span> are the forbidden table and the allowed table, side by side:</p>
+  <div class="glyph">⊙ = • × ○ &nbsp; · &nbsp; • = ⊙ / ○ &nbsp; · &nbsp; ○ = ⊙ / •</div>
+  <table>
+    <tr><td style="color:var(--gold)">• = ⊙ / ○ &nbsp;(0 = 1/∞)</td><td>the descent — a clean limit, <code>1/∞ → 0</code></td><td><span class="tier">[A]</span> computable</td></tr>
+    <tr><td style="color:var(--gold)">○ = ⊙ / • &nbsp;(∞ = 1/0)</td><td>the descent — the projective pole, <code>1/0 → ∞</code></td><td><span class="tier">[A]</span> projective</td></tr>
+    <tr><td style="color:var(--gold)">⊙ = • × ○ &nbsp;(1 = 0 × ∞)</td><td>the ascent — <b>0 × ∞ is the one indeterminate</b>. It cannot be computed; it is <em>sung</em>, not summed.</td><td><span class="tier emblem">emblem</span> a wager, not arithmetic</td></tr>
+  </table>
+  <p class="verdict">The descents are theorems. The ascent — the finite arising from nothing times everything — is exactly the forbidden form, which is why it is the framework's crown wager and never its proof. The floor's forbidden operation and the glyph's sung line are the <em>same fact</em>.</p>
+
+  <div class="foot">
+    <p><b>Then the numbers return.</b> With the frames set aside, ordinary numbers live <em>between</em> the poles, on the charts the Titans make. Another philosopher, <b>Minoru Suda</b>, mapped that field from the other side and named the center the <em>Egg of Infinity</em>. <a class="cta" href="../egg/">See where the numbers live — the egg &rarr;</a> · then the reciprocal line at <a class="cta" href="../1/">D1</a> and its saturation into the <a class="cta" href="../sphere.html">sphere</a>.</p>
+    <p>Every claim here is standard mathematics — used, not discovered: division-by-zero undefinedness, the field axioms, indeterminate forms, the projective point at infinity. The <em>reading</em> of 0, 1, ∞ as boundary-frames is <span class="tier">[S/I]</span> ours; it invents no arithmetic. Where a strong version of it overreached, the death is dated on <a href="../record/">the record</a>.
+    &nbsp;·&nbsp; <a class="exit" href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cv=document.getElementById('zero'), ctx=cv.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2), W=0,H=0;
+  function resize(){ W=cv.clientWidth; H=cv.clientHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize', resize);
+  var el=function(id){return document.getElementById(id);};
+
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    var cx=W/2, cy=H/2, ux=W/9, uy=H/6;   // pixels per unit
+    // axes
+    ctx.strokeStyle='rgba(233,230,223,0.14)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(0,cy); ctx.lineTo(W,cy); ctx.moveTo(cx,0); ctx.lineTo(cx,H); ctx.stroke();
+    ctx.fillStyle='rgba(138,133,119,0.8)'; ctx.font='11px ui-monospace,monospace';
+    ctx.fillText('x', W-14, cy-6); ctx.fillText('1/x', cx+8, 14); ctx.fillText('0', cx+5, cy+13);
+    // hyperbola y = 1/x, both branches
+    function branch(sign){
+      ctx.beginPath(); var first=true;
+      for(var px=1; px<W; px++){
+        var x=(px-cx)/ux; if(sign>0 && x<=0.02) continue; if(sign<0 && x>=-0.02) continue;
+        var y=1/x; var py=cy - y*uy; if(py< -H || py>2*H) { first=true; continue; }
+        first?ctx.moveTo(px,py):ctx.lineTo(px,py); first=false;
+      }
+      ctx.strokeStyle='rgba(232,184,75,0.75)'; ctx.lineWidth=1.6; ctx.stroke();
+    }
+    branch(1); branch(-1);
+    // the marching denominator d -> 0 (right arm) and mirror on the left
+    var d=Math.pow(10, -((t*0.6)%3.2));          // 1 -> ~0.0006 loop
+    var v=1/d;
+    // right marker (gold, +inf)
+    var mx=cx + d*ux, my=cy - v*uy;
+    ctx.strokeStyle='rgba(232,184,75,0.5)'; ctx.setLineDash([3,3]);
+    ctx.beginPath(); ctx.moveTo(mx,cy); ctx.lineTo(mx, Math.max(my,6)); ctx.stroke();
+    // left marker (red, -inf)
+    var mxn=cx - d*ux, myn=cy + v*uy;
+    ctx.strokeStyle='rgba(229,83,61,0.5)';
+    ctx.beginPath(); ctx.moveTo(mxn,cy); ctx.lineTo(mxn, Math.min(myn,H-6)); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.beginPath(); ctx.arc(mx,Math.max(my,7),4,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(mxn,Math.min(myn,H-7),4,0,7); ctx.fillStyle='rgba(229,83,61,1)'; ctx.fill();
+    // arrows to the top / bottom edges (flying to ±∞)
+    ctx.fillStyle='rgba(232,184,75,0.9)'; ctx.font='13px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillText('→ +∞', mx, 16);
+    ctx.fillStyle='rgba(229,83,61,0.9)'; ctx.fillText('→ −∞', mxn, H-6);
+    ctx.textAlign='left';
+    // readout
+    el('r-d').textContent = d>=0.001? d.toFixed(3) : d.toExponential(1);
+    el('r-v').textContent = v>=1000? v.toExponential(1) : v.toFixed(2);
+    el('r-vn').textContent = '−'+(v>=1000? v.toExponential(1) : v.toFixed(2));
+  }
+  var t0=performance.now();
+  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
+  resize(); requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
