@@ -29,7 +29,11 @@ Riemann/stereographic geometry — used, not discovered).* Take the unit sphere
 point on that meridian at polar angle `θ` reads `φ = cot(θ/2)` and
 `ν = tan(θ/2)`. The pair omits azimuth and therefore does **not** parameterize an
 arbitrary point of the full sphere. Two lamps, one position on the declared
-slice.
+slice. **Projection convention (load-bearing, receipt 150):** each chart
+projects from its pole onto the **equatorial plane through the center**. The
+convention must be declared: under the other standard convention (tangent
+plane at the opposite pole) the two-chart product is identically **4**, not 1.
+The seam below reads 1 only on the equatorial-plane convention.
 
 **The seam** `[A]`. Multiply the two readings:
 
@@ -50,8 +54,10 @@ B = sinθ = 2/(φ + ν) ≤ 1,   with equality iff φ = ν = 1 (AM-GM)
 ```
 
 `B` is a genuine **variable** on the slice: it moves with `θ`, and peaks where
-the selected meridian crosses the **equator**, at `φ=ν=1`. The equator of the
-full sphere is a circle, not one point. The imbalance price
+the selected meridian crosses the **equator**, at `φ=ν=1` — on the declared
+slice the maximum locus is that single crossing point; that the equator of the
+**full sphere** is a circle, not one point, is a full-`S²` remark, outside the
+slice scope (receipt 150 scope-note). The imbalance price
 `γ = (φ+ν)/2` rises toward either pole along the slice.
 
 **The iron separation** (keel-108, CC-CORE-1): the **seam is never the score is never the node.** `P∞ ≡ 1` is a constant (chart identity); `B ≤ 1` is a variable (max at the equator); `P_node = Φ×V` is a *finite-node model* whose product interior is `[C]` — only its AND-class boundary (lose either factor entirely, lose everything) is settled. The seam stays 1 even as `ν → 0`; it therefore never witnesses the zero-factor catastrophe, and citing it as the ethics warrant is the convicted laundering move. Three objects, three tiers, no silent bridge.
@@ -143,14 +149,23 @@ Riemann sphere, Bernhard Riemann, 1850s; stereographic projection, ancient
 Greek in origin — used, not discovered)*. The **seam**: `φ·ν ≡ 1` on the
 declared slice — a transition identity between the two charts, exact and
 empty of world. The **score**: `B = sinθ`, a genuine variable, maximal at
-the equator (`φ = ν = 1`). The **poles** are uninhabitable — each chart
-loses its own projection point. Every point carries its **dark twin**: the
-antipode, product-signature `−1` — an `[I]` reading riding wager W11, not
-part of the warranted core. **The seer is not on the sphere** `[I]`: no
-point of the surface is the seer. The projection sources are the two
-**poles** themselves — not the center; the center belongs to neither chart
-and casts nothing (receipt 149 corrects the earlier "center from which both
-shadows are cast" — that sentence was false as chart geometry). Reading the
+the equator (`φ = ν = 1`). At the **poles** each chart loses its own
+projection point: `B → 0`, `γ → ∞` `[A]`; "uninhabitable" / "cannot be held
+at finite cost" is the `γ`-as-cost reading `[I]`, not chart arithmetic —
+there is no dynamics, holding, or paying on the sphere (receipt 150 split).
+Every point carries its **dark twin**: the antipode, product-signature `−1`
+(`z ↦ −1/z̄` on CP¹; the inversion `z ↦ 1/z` fixes exactly `{+1,−1}`) —
+algebra `[A]` **on full CP¹ only**: the antipode of a declared-slice point
+lands on the negative real axis, *off the slice*, so the twin sits outside
+the slice-scoped citability rule; the twin-*reading* is `[I]` riding wager
+W11, not part of the warranted core. **The seer is not on the sphere**
+`[I]`: no point of the surface is the seer. `[A]` content: the projection
+sources are the two **poles** themselves — the center is not a projection
+source of either chart (receipt 149 corrects the earlier "center from which
+both shadows are cast" — false as chart geometry). The caster/lamp *verb*
+itself is `[I]` vocabulary in every register: a pole is a parameter of a
+chosen map, not an agent; "casts" has no `[A]` truth-conditions
+(receipt 150). Reading the
 center as *turiya* is a **SHOWS overlay**, severable from this model and
 never citable — and it is presently a live fork against the ACTIVE Rosetta
 R8 row (turiya = equator): forked renderings of one tradition are at most
