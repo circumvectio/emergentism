@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Hinge — the μ-limit — Emergentism</title>
+<meta name="description" content="The μ-limit as a function: L(x) = x/(1−x) unrolls the finite interval [0,1) onto the whole ray [0,∞). Its pole at x=1 is the saturation that opens the next degree of freedom — the door between the reciprocal line and the sphere." />
+<meta property="og:title" content="The Hinge — the μ-limit made a function" />
+<meta property="og:description" content="L(x)=x/(1−x): the bounded freedom saturates toward x=1 and unrolls into an unbounded one. The pole is the μ-limit — the door from the line to the sphere." />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:,">
+<style>
+  :root{ --bg:#050505; --ink:#e9e6df; --dim:#8a8577; --gold:#e8b84b; --warm:#e0913a; --line:rgba(233,230,223,.14); }
+  *{ box-sizing:border-box; } html,body{ margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; line-height:1.6; }
+  header.topbar{ position:sticky; top:0; height:52px; display:flex; align-items:center; gap:1.2rem;
+    padding:0 1.2rem; z-index:9; background:rgba(5,5,5,.85); border-bottom:1px solid var(--line); }
+  .brand{ color:var(--gold); font-weight:700; text-decoration:none; } nav a{ color:var(--dim); text-decoration:none; font-size:.8rem; margin-right:.5rem; } nav a:hover{ color:var(--ink); }
+  .wrap{ max-width:920px; margin:0 auto; padding:38px 20px 56px; }
+  .kicker{ color:var(--warm); font-size:.78rem; letter-spacing:.15em; text-transform:uppercase; }
+  h1{ font-size:clamp(2rem,5.5vw,3.3rem); margin:.3rem 0 .1rem; letter-spacing:-.01em; }
+  .lede{ color:var(--dim); max-width:64ch; margin:.6rem 0 1.2rem; }
+  .fml{ color:var(--gold); font-size:1.15rem; text-align:center; margin:.4rem 0 1rem; }
+  canvas#hinge{ width:100%; aspect-ratio:16/9; display:block; border:1px solid var(--line); border-radius:12px; background:#070707; }
+  .readout{ display:flex; flex-wrap:wrap; gap:.5rem 1.6rem; justify-content:center; margin:.7rem 0 .2rem; font-size:.88rem; }
+  .readout b{ color:var(--gold); }
+  .verdict{ text-align:center; color:var(--dim); font-size:.9rem; margin:.2rem auto .4rem; max-width:64ch; }
+  .verdict b{ color:var(--ink); }
+  .card{ border:1px solid var(--line); border-radius:10px; padding:.9rem 1.15rem; margin-top:1.5rem; }
+  .card h3{ margin:.1rem 0 .5rem; font-size:.95rem; color:var(--gold); }
+  .card p{ color:var(--dim); font-size:.87rem; margin:.5rem 0; }
+  .fence{ border-left:2px solid var(--warm); padding-left:.9rem; }
+  .tier{ color:var(--gold); font-size:.7rem; border:1px solid var(--gold); border-radius:999px; padding:.02rem .4rem; }
+  .tier.c{ color:var(--warm); border-color:var(--warm); }
+  .foot{ color:var(--dim); font-size:.76rem; border-top:1px solid var(--line); margin-top:1.8rem; padding-top:1rem; }
+  .foot a,.cta{ color:var(--gold); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav aria-label="routes"><a href="../1/">1 · Line</a><a href="../saturation/">μ · Hinge</a><a href="../sphere.html">Sphere</a><a href="../discoveries/">Discoveries</a><a href="../record/">Record</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="kicker">The μ-limit · the door between rungs</div>
+  <h1>The Hinge</h1>
+  <p class="lede">A degree of freedom, run to its limit, becomes the opening of the next. That saturation has a function — and it is nothing exotic: the odds function, which takes the <em>finite</em> interval and unrolls it onto the <em>whole</em> ray.</p>
+  <div class="fml">L(x) = x / (1 &minus; x) &nbsp;:&nbsp; [0, 1) &nbsp;&rarr;&nbsp; [0, &infin;)</div>
+
+  <canvas id="hinge" aria-label="The saturation map: a point on the finite interval from 0 to 1 maps, via L(x)=x/(1-x), to a point on the infinite ray; as the input approaches 1 the output runs to infinity."></canvas>
+  <div class="readout">
+    <span>x (bounded) <b id="r-x">0.000</b></span>
+    <span>L(x) = x/(1&minus;x) <b id="r-l">0.000</b></span>
+    <span>distance to the μ-limit &nbsp;1 &minus; x = <b id="r-g">1.000</b></span>
+  </div>
+  <p class="verdict">The bar above is the <b>bounded</b> freedom [0,&nbsp;1). The bar below is the <b>unbounded</b> one [0,&nbsp;∞). As x saturates toward the μ-limit at&nbsp;<b>1</b>, its image runs to&nbsp;<b>∞</b> — the finite interval unrolls into the whole ray. The pole <em>is</em> the saturation. <span class="tier">[A]</span></p>
+
+  <div class="card">
+    <h3>Why this is the door, not a room</h3>
+    <p><b>The line, then the hinge, then the sphere.</b> The reciprocal <a href="../1/" style="color:var(--gold)">line</a> (D1) carries one bounded coordinate. This hinge takes that coordinate to its limit and manufactures the one thing the line lacked — a point at infinity. And a ray with its point at infinity, closed up, <em>is</em> the <a href="../sphere.html" style="color:var(--gold)">sphere</a> (D2). So the μ-limit is exactly the passage <b>D1 &rarr; D2</b>: line &rarr; (pole) &rarr; sphere.</p>
+    <p><b>Approached, never occupied.</b> The point never reaches x&nbsp;=&nbsp;1 — at the μ-limit the function has no value, only a limit. Saturation is a horizon a freedom runs toward, never a place it stands. (The same shape as the poles, and as the speed of light on the <a href="../passage.html" style="color:var(--gold)">passage</a>.)</p>
+  </div>
+
+  <div class="card fence">
+    <h3>The honest fence</h3>
+    <p><b>The function is inherited.</b> L(x)=x/(1−x) is the odds/logit map, standard mathematics — used, not discovered <span class="tier">[A]</span>. Reading its pole as "the μ-limit, where one freedom opens the next" is our interpretation <span class="tier">[A] the pole · [I] the reading</span>.</p>
+    <p><b>The strong claim stays a wager.</b> That measurable saturation of one register actually <em>raises the probability</em> of a genuinely new freedom emerging is <b>μ-at-saturation</b>, held at <span class="tier c">[C]</span> — a conjecture with a stated kill, not a theorem. This page shows the <em>shape</em> of the door; that emergence walks through it is the bet.</p>
+    <p><b>Kept in its own frame.</b> This is the D1&rarr;D2 <em>transition</em> — distinct from the reciprocal line, the egg chart, the sphere, and the torus family. A hinge is not a room; we do not fuse it with the rungs it joins.</p>
+  </div>
+
+  <div class="foot">
+    <p>Walk the ladder: the <a class="cta" href="../1/">reciprocal line</a> &rarr; <b>this hinge</b> &rarr; the <a class="cta" href="../sphere.html">sphere</a>. Or meet the numbers that live on it at <a class="cta" href="../egg/">the egg</a>. Where a strong version of the saturation claim overreached, its death is dated on <a href="../record/">the record</a>.
+    &nbsp;·&nbsp; <a class="exit" href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cv=document.getElementById('hinge'), ctx=cv.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2), W=0,H=0;
+  function resize(){ W=cv.clientWidth; H=cv.clientHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize', resize);
+  var el=function(id){return document.getElementById(id);};
+  var K=2.5;                                 // ray compression: c(L)=L/(L+K) maps [0,∞)->[0,1)
+  function cmap(L){ return L/(L+K); }
+
+  function bar(y, label){                     // horizontal track with margins
+    var x0=W*0.09, x1=W*0.91;
+    ctx.strokeStyle='rgba(233,230,223,0.22)'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(x1,y); ctx.stroke();
+    return [x0,x1];
+  }
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    var yTop=H*0.30, yBot=H*0.72;
+    var ft=bar(yTop), fb=bar(yBot);
+    var x0=ft[0], x1=ft[1], wspan=x1-x0;
+    ctx.font='11px ui-monospace,monospace'; ctx.fillStyle='rgba(138,133,119,0.85)'; ctx.textAlign='center';
+    // top ticks: finite interval [0,1)
+    [[0,'0'],[0.5,'½'],[0.9,'0.9'],[1,'1 · μ-limit']].forEach(function(p){
+      var px=x0+p[0]*wspan; ctx.strokeStyle='rgba(233,230,223,0.18)';
+      ctx.beginPath(); ctx.moveTo(px,yTop-5); ctx.lineTo(px,yTop+5); ctx.stroke();
+      ctx.fillStyle=(p[0]===1)?'rgba(232,184,75,1)':'rgba(138,133,119,0.85)';
+      ctx.fillText(p[1], px, yTop-12);
+    });
+    ctx.fillStyle='rgba(138,133,119,0.7)'; ctx.textAlign='left';
+    ctx.fillText('bounded freedom  [0, 1)', x0, yTop-30);
+    // bottom ticks: infinite ray [0,∞) compressed
+    ctx.textAlign='center';
+    [[0,'0'],[1,'1'],[2,'2'],[5,'5'],[20,'20'],[1e9,'∞']].forEach(function(p){
+      var px=x0+cmap(p[0])*wspan; ctx.strokeStyle='rgba(233,230,223,0.18)';
+      ctx.beginPath(); ctx.moveTo(px,yBot-5); ctx.lineTo(px,yBot+5); ctx.stroke();
+      ctx.fillStyle=(p[0]>1e8)?'rgba(232,184,75,1)':'rgba(138,133,119,0.85)';
+      ctx.fillText(p[1], px, yBot+20);
+    });
+    ctx.fillStyle='rgba(138,133,119,0.7)'; ctx.textAlign='left';
+    ctx.fillText('unbounded freedom  [0, ∞)', x0, yBot+38);
+
+    // the moving point x on [0,1) (approached, never 1) and its image L(x)
+    var x=0.5*(1-Math.cos(t*0.5))*0.985;      // 0 .. 0.985, easing
+    var L=x/(1-x);
+    var pxT=x0+x*wspan, pyT=yTop;
+    var pxB=x0+cmap(L)*wspan, pyB=yBot;
+    // connecting map line
+    ctx.strokeStyle='rgba(232,184,75,0.45)'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(pxT,pyT); ctx.lineTo(pxB,pyB); ctx.stroke();
+    // input dot (gold), image dot (warm)
+    ctx.beginPath(); ctx.arc(pxT,pyT,6,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(pxB,pyB,6,0,7); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fill();
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.font='12px ui-monospace,monospace';
+    ctx.fillText('x', pxT, pyT-12); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fillText('L(x)', pxB, pyB-12);
+
+    el('r-x').textContent=x.toFixed(3);
+    el('r-l').textContent=(L>=1000?L.toExponential(1):L.toFixed(2));
+    el('r-g').textContent=(1-x).toFixed(3);
+  }
+  var t0=performance.now();
+  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
+  resize(); requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
