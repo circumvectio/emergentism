@@ -46,8 +46,9 @@ inside the model. Neither fixes the reader ladder's numbering.
 
 ### The Inherited Axioms
 
-> These axioms are more real than any particular experience because they are
-> maximally invariant: they survive every transformation that erases a memory.
+> Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the
+> invariance these axioms **describe** — never the D5 ink that states them —
+> survives every transformation that erases a memory.
 
 - **The two postulates of special relativity** — Albert Einstein, 1905. `[A]`
   *inherited — used, not discovered.* (i) The laws of physics take the same form
@@ -108,6 +109,37 @@ The normalized translation is checkable; its use as an Emergentist lens is
 
 A stranger should leave this page able to check the normalization with a pencil
 and distinguish the inherited physics from the selected crosswalk.
+
+---
+
+### The Model
+
+**THE MASS-SHELL HYPERBOLOID** — inherited (Hermann Minkowski, 1908 lineage;
+*used, not discovered*). **Type: ARGUES.**
+
+- **What it represents:** the honest geometry of this rung. The invariant
+  hyperboloid `E² − (pc)² = (mc²)²` on which every free massive particle
+  lives. Rapidity `w` is its natural coordinate (`φ = e^w`, `ν = e^{-w}`,
+  so `φν = 1` IS the shell in this chart — Move 1); rest sits at the
+  vertex, `w = 0` — our equator reading (Move 2). Every `[A]` claim on
+  this page is a statement about this surface and nothing else.
+- **Its one kill:** it kills the sphere-as-physics temptation. The shell
+  is a hyperboloid, not a sphere; whatever the Burrisphere renders, the
+  physics itself supplies only this surface. Any argument that leaves the
+  shell has left the `[A]` register.
+- **Animation:** [/4/](/4/).
+
+**Companion emblem — THE HORN TORUS.** **Type: SHOWS ONLY.** All generating
+circles converge at the single self-intersection point: an image of `v → c`
+— mass gain as the deepening overlap, convergence at the limit. It is an
+emblem for recognition, never cited in any derivation. **P7 grave applies:
+"the torus does not know about dimensional stages"** — the horn torus
+derives nothing, licenses nothing, and carries no `[A]`/`[S]` content on
+this page. Its one kill: it kills the claim that the emblem is the
+argument — if a proof needs the torus, the proof is dead. Animation:
+[/4/](/4/).
+
+The model argues; the emblem shows. Neither is the territory (§3).
 
 ---
 

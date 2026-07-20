@@ -56,10 +56,19 @@ every page above — is D5 ink aimed at Dn invariance: the *described* is as
 deep as the rung; the *describing* is always at five. D0 is the unique rung
 with no sentences of its own. Frames, not statements. Titans, not theorems.
 
-*Reality-gradient:* what the instruments below describe is more real than any
-particular experience because it is maximally invariant — it survives every
-transformation that erases a memory. The ink is at five; the invariance is at
-zero.
+*Reality-gradient* `[I/C]` — **tiered here once**; every other rung's ledger
+cites this statement rather than restating it as fact. The reading: what the
+instruments below *describe* is more real than any particular experience
+because it is maximally invariant — it survives every transformation that
+erases a memory. The ink is at five; the invariance is at zero. The ranking
+invariance → "more real" is an interpretive ontology `[I]` riding a realism
+wager `[C]`, not a theorem, and it applies to the *described* invariance only,
+never to the D5 sentences that state it. Its kill: an inherited axiom set that
+is normative rather than descriptively invariant caps the claim at
+theorem-validity — the vN–M axioms are exactly that (Allais 1953, Ellsberg
+1961; see D5's ledger) — so "survives every transformation" is false as a
+description of agents, and the gradient scopes to what the theorems prove,
+or dies.
 
 #### The D5 instruments this floor is read with (inherited — used, not discovered)
 
@@ -124,6 +133,50 @@ shape shown two ways is one datum.
 **What the floor gives the rungs above it:** a grammar in which *finitude is not a defect*. `⊙ = • × ○` says the finite is not fallen from the infinite nor stranded in the void; it is their meeting, and the only seat from which anything is said at all. Everything after D0 is the biography of that meeting.
 
 ---
+
+### The Model
+
+**THE GLYPH TRIPLE** — the Titans and their term-transformations:
+
+```text
+⊙ = • × ○        (the finite = origin × infinity)
+• = ⊙ / ○        (the point, solved from the relation)
+○ = ⊙ / •        (the horizon, solved from the relation)
+```
+
+**What it represents.** One relation, three solvings. The triple is the ONLY
+model at D0, because the floor has no other content: no world-stuff, no
+sentences, no axioms — just three boundary frames (• the origin, ○ the
+horizon, ⊙ the finite) and the single relation that binds them. The three
+transformations ARE the model's dynamics: term-rearrangement as the floor's
+only motion. Nothing happens at D0 except a relation being read from a
+different seat.
+
+**Type.** Split by direction. **ARGUES** for the descents — the two divisions
+`• = ⊙/○` and `○ = ⊙/•` carry doc-41 `[A]` content (the inherited projective
+machinery of the Riemann sphere, 19th c. — used, not discovered). **SHOWS**
+for the ascent — the product `⊙ = • × ○` is emblem only, the wager read; it
+supports recognition and is never cited in a proof (no product-forced, no
+proven-where-wagered).
+
+**Register fence on the split** *(receipt 149)*. The descents' `[A]` content is
+*operand-register* projective fact — `1/∞ = 0` and `1/0 = ∞` are defined on
+`ℂP¹`, while `0·∞` is not; that asymmetry is the explicit license for typing
+the descents ARGUES while §1 holds the Titans as frames. The frame/operand
+distinction is register-scoped, not exclusive (dead form 14, D1 §2): the same
+symbol may be an operand in one register and a boundary role in another. The
+**one-way rule** governs any split-typed model: a model with any SHOWS face is
+never citable in a proof *by its name* — cite the underlying inherited theorem
+directly. And type attaches to the **use**, not the object: this same glyph is
+SHOWS only when re-read at D6.
+
+**One kill.** Force the triple into the operand register: in field
+arithmetic `0 × ∞` is undefined, so read as ordinary equations over
+`{0, ∞, 1}` all three lines are nonsense. The model lives or dies on the
+frame/operand distinction of §1 — collapse it and the floor is empty.
+
+**Animation.** [/sphere.html](/sphere.html) — the projective stage the
+divisions inherit. The sphere shows the frames; it does not derive them.
 
 *One emblem, three readings, no new theorems, one question reframed. The ground
 is not established as a thing by the chart; it is the page's `[I]` reading.*

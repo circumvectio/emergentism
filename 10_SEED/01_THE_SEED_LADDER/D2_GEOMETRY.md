@@ -60,9 +60,9 @@ full sphere is a circle, not one point. The imbalance price
 
 ## §1b · THE INHERITED AXIOMS
 
-> Reality-gradient: these axioms are more real than any particular experience
-> because they are maximally invariant — they survive every transformation
-> that erases a memory.
+> Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the
+> invariance these axioms **describe** — never the D5 ink that states them —
+> survives every transformation that erases a memory.
 
 **Euclid's five postulates** *(Euclid of Alexandria, ~300 BC — `[A]` inherited
 — used, not discovered).* Five demands ground the *Elements*; the fifth (the
@@ -130,3 +130,42 @@ So the rung's ontology in one breath: **being is position-under-constraint, read
 
 *⊙ = • × ○ — two scalar readings on one declared slice; the seam is a frame,
 and whether the world instantiates the geometry remains a wager.*
+
+---
+
+### The Model
+
+**THE BURRI SPHERE** — the workhorse. Animation: [/sphere.html](/sphere.html).
+
+**What it represents.** One point on the unit sphere, cast as two
+stereographic shadows — `φ` from one pole, `ν` from the other *(inherited:
+Riemann sphere, Bernhard Riemann, 1850s; stereographic projection, ancient
+Greek in origin — used, not discovered)*. The **seam**: `φ·ν ≡ 1` on the
+declared slice — a transition identity between the two charts, exact and
+empty of world. The **score**: `B = sinθ`, a genuine variable, maximal at
+the equator (`φ = ν = 1`). The **poles** are uninhabitable — each chart
+loses its own projection point. Every point carries its **dark twin**: the
+antipode, product-signature `−1` — an `[I]` reading riding wager W11, not
+part of the warranted core. **The seer is not on the sphere** `[I]`: no
+point of the surface is the seer. The projection sources are the two
+**poles** themselves — not the center; the center belongs to neither chart
+and casts nothing (receipt 149 corrects the earlier "center from which both
+shadows are cast" — that sentence was false as chart geometry). Reading the
+center as *turiya* is a **SHOWS overlay**, severable from this model and
+never citable — and it is presently a live fork against the ACTIVE Rosetta
+R8 row (turiya = equator): forked renderings of one tradition are at most
+one datum, and count as negative Rosetta evidence until the host reconciles
+them.
+
+**Type: ARGUES.** This model supports derivation and carries the kernel's
+`[A]` content — the seam identity, the chord-product score, the AM-GM
+equator bound are proven chart arithmetic at tier, citable in proofs
+*within the declared slice*. The ARGUES label covers that warranted core
+**only**: every `[I]` sentence above (dark twin, seer, overlay) carries its
+own inline tier and is never citable under this model's name.
+
+**Its one kill.** The seam is never the score is never the node. `P∞ ≡ 1`
+holds even as `ν → 0`; the instant it is cited as witnessing the
+zero-factor catastrophe or warranting the ethics of `P = Φ×V`, the model is
+being laundered, not used — that move is convicted (CC-CORE-1), and the
+argument dies there.

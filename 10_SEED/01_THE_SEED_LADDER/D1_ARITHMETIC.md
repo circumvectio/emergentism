@@ -67,8 +67,9 @@ its interior; only its AND-class zero boundary is won).
 
 ### The Inherited Axioms
 
-These axioms are more real than any particular experience because they are
-maximally invariant: they survive every transformation that erases a memory.
+*Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the
+invariance these axioms **describe** — never the D5 ink that states them —
+survives every transformation that erases a memory.*
 
 **Dedekind–Peano axioms** — Richard Dedekind & Giuseppe Peano, 1888–89. Zero,
 successor, induction: the finite generative engine of number. `[A] inherited —
@@ -161,6 +162,38 @@ least three choices — horizon, maximand, and enforcement — and owns the scop
 universalization test; arithmetic does not compress them to one bit.
 
 ---
+
+### The Model
+
+**The log line — `s = log ν`.** Take the rung's one chart variable `ν > 0` and
+lay it on a line by the Suda move `s = log ν`. Inherited machinery: `log/exp`
+(John Napier, 1614; Leonhard Euler, 18th c.) — `[A]`, **used, not discovered**.
+
+**What it represents.** The multiplicative world of §1 redrawn so that its
+structure becomes the line's own arithmetic:
+
+- reciprocation becomes reflection: `ν ↦ 1/ν` is `s ↦ −s`;
+- the multiplicative unit lands on the additive origin: `log 1 = 0`;
+- the fixed points `φ = ν = 1` sit at the symmetric pair `±1` of the reflection's
+  eigenstructure — the seam `φ·ν = 1` is the literal zero-sum `log φ + log ν = 0`;
+- the equator inequality (`φ + ν ≥ 2`, §1's AM-GM) reads off the line directly:
+  `e^s + e^{−s} = 2·cosh s ≥ 2`, equality iff `s = 0`.
+
+**Type: ARGUES.** This model carries `[A]` content and supports derivation: the
+inequalities and identities above are theorems of the chart, citable in proofs
+at their inherited tier. It is the first model on the ladder **where computation
+lives** — numbers can actually be added, compared, and bounded here, which no
+emblem can do. It derives nothing beyond its own hypotheses: no product is
+forced, no seven, no ethics; seam (`s + (−s) = 0`), score (`2/(e^s+e^{−s})`),
+and node remain three distinct objects.
+
+**One kill.** If any multiplicative fact of §1 failed to transfer under
+`log`/`exp` — a bijection `(0,∞) ↔ ℝ` failing, or an order reversal — the model
+dies. (It cannot die: the isomorphism is Napier/Euler's `[A]` theorem. What
+*can* die is any reading smuggled in beyond the chart — that dies at its own tier.)
+
+**Animation.** None yet dedicated to the line; the sphere view of the same chart
+lives at /sphere.html (downstream rung's model, not this one's warrant).
 
 *⊙ = • × ○ (emblem, frame register only) — one reciprocal variable, one positive fixed point, one
 price of imbalance. The seam is never the score; the score is never the node.

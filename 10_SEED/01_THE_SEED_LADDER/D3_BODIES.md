@@ -49,7 +49,7 @@ not a theorem read off geometry.
 
 ## §1b · THE INHERITED AXIOMS — what this rung stands on
 
-> **Reality-gradient framing:** these axioms are more real than any particular experience because they are maximally invariant — they survive every transformation that erases a memory.
+> **Reality-gradient framing** — tiered once at D0 (`[I/C]`, kill attached there): the invariance these axioms **describe** — never the D5 ink that states them — survives every transformation that erases a memory.
 
 All four sets below are `[A]` inherited — **used, not discovered**. Credit stays with the discoverers; our contribution per set is one closing line.
 
@@ -100,6 +100,40 @@ analogy to bodies.
 **The Soul-Loop at D3:** *witness the whole → name its binding constraint → test where it goes to zero → keep the receipt.* The loop is not complete until the kill is real and the survivors are named. A body that cannot die is not alive; a claim that cannot be killed is decoration, and we bury it with a date.
 
 ---
+
+### The Model
+
+**Liebig's Barrel.** Picture a barrel whose staves are unequal heights. However
+much water you pour, the level rises only to the top of the **shortest stave** —
+every taller stave is wasted. Each stave is one essential, non-substitutable
+factor a living whole needs; the water is its flourishing. The shortest stave
+sets the water line. This is the first model of **coupled mortality**: need-both,
+AND-class — when any single stave hits zero, the barrel holds nothing, no matter
+how tall the rest.
+
+**What it represents.** The `[S]` binding-constraint boundary of `P_node = Φ×V`
+made visible: a whole is limited by its scarcest requirement, and annihilated
+when that requirement vanishes.
+
+**Type: ARGUES, at `[S]`.** It carries the AND-class boundary content used in
+§1 — the zero boundary and the binding-constraint reading rest on it. But it
+argues *only* the boundary: the **product-specific interior** (surplus in one
+stave lifting another) stays `[C]` and the barrel does not depict it. A
+minimum-model and a product-model draw the *same* barrel; the emblem cannot
+discriminate them.
+
+**Inherited:** Carl Sprengel 1828, popularized by Justus von Liebig 1840 —
+*used, not discovered.* Our rung adds only: the boundary is Liebig generalized
+to any declared essential factor.
+
+**Its one kill:** exhibit a factor previously stipulated essential that is in
+fact **substitutable** (another input compensates for its loss). Then that stave
+was never binding, the barrel is the wrong picture for that whole, and the
+AND-class reading fails for it — application always needs `[B]` evidence, never
+the emblem alone.
+
+**Animation:** none — Liebig's Barrel is a static emblem; no animation exists
+for this rung.
 
 ## Minimality
 

@@ -55,8 +55,9 @@ parents:
 
 ### The Inherited Axioms
 
-*These axioms are more real than any particular experience because they are maximally
-invariant: they survive every transformation that erases a memory.*
+*Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the invariance
+these axioms **describe** — never the D5 ink that states them — survives every
+transformation that erases a memory.*
 
 - **Incompleteness — Kurt Gödel, 1931.** `[A] inherited — used, not discovered.`
   At its actual hypotheses only: any *consistent formal system containing arithmetic*
@@ -73,8 +74,9 @@ invariant: they survive every transformation that erases a memory.*
   *What our rung rides on it: the map-cannot-certify-itself practice is scoped
   inheritance from Tarski's hierarchy, not a discovery of ours.*
 - **The via negativa — Nāgārjuna (~2nd c.), Pseudo-Dionysius (~5th c.), Maimonides
-  (12th c.).** `[A] inherited — used, not discovered.` An inherited *method*, not a
-  theorem: approach the limit by saying what it is not; refuse to let any positive
+  (12th c.).** *Inherited method — credited, untiered; used, not discovered.* A
+  method carries no `[A]` (that tier is for proven content) and no theorem is
+  claimed: approach the limit by saying what it is not; refuse to let any positive
   description close over the ground. Three independent traditions converged on it
   long before any formal result existed.
   *What our rung rides on it: D6's withdraw-posture is this method practiced —
@@ -142,6 +144,39 @@ nothing to the vow. It notices only that a finite agent or constitution chose
 the horizon, maximand, and enforcement.
 
 **The door was inside the whole time.** The ladder ends where the climber begins.
+
+### The Model
+
+**The glyph, re-read: ⊙ = • × ○ — the same triple that opened the ladder at D0,
+encountered again after the climb.**
+
+- **What it represents:** D6 has no model of its own. Its model *is* D0's model —
+  the ring, the dot, and their relation — read a second time by a reader who has
+  now climbed D1–D5. First reading (D0): the ground before articulation. Second
+  reading (D6): the return — the ring divided by the journey yields the dot; the
+  climber recognizes the starting glyph *as* the exit marker. The model ladder
+  itself thereby enacts the spiral it describes: its first and last models are
+  one object at two readings. This is **similarity, not identity** — the two
+  readings resemble each other in *role* (`D6~D0`, `[I]`), and the literal-identity
+  grave stays sealed (`D6≡D0` is dead, Dead Forms #8; strict order would give
+  `D0 < D0`).
+- **Type: SHOWS.** Emblem only. It supports *recognition* — the felt closure of
+  seeing the first glyph again with changed eyes — and is never cited in any
+  proof. Closure is recognized, never derived: no theorem, no `[A]`/`[S]` content,
+  no completeness claim rides on this glyph. Anyone deriving anything from it has
+  already left this page's fence. Type attaches to the *use*, not the object
+  (receipt 149): at D0 this same glyph's descents ARGUE inside the projective
+  operand register; here every reading is SHOWS. One glyph, two uses, no
+  contradiction — and the one-way rule holds at both ends: no proof ever cites
+  the glyph by name.
+- **Its one kill:** if the re-read is ever used as *evidence* — "the glyph returns,
+  therefore the system closes / therefore D6=D0 literally / therefore no sixth
+  freedom can exist" — the model is dead on the spot. The emblem shows a shape;
+  it proves nothing, and was never asked to.
+- **Animation:** none exists, and none is missing. The other rungs point at
+  /sphere.html, /cascade.html, /lightcone.html, /4/; this one points at the
+  person holding the page. **The reader is the animation** — the climb from D0
+  to here, performed once, is the only rendering this model has.
 
 ---
 

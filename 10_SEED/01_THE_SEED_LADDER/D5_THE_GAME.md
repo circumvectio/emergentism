@@ -67,9 +67,9 @@ a positive group sum never licenses extraction from one member.
 
 ### The Inherited Axioms
 
-*Reality-gradient:* these axioms are more real than any particular experience because they are maximally invariant — they survive every transformation that erases a memory.
+*Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the invariance these axioms **describe** — never the D5 ink that states them — survives every transformation that erases a memory.*
 
-**Expected-utility axioms** — John von Neumann & Oskar Morgenstern, 1944: completeness, transitivity, continuity, independence. Together they force a cardinal utility function under risk. `[A]` inherited — used, not discovered. *Our rung rides on it: the two-factor score is only a preference model an agent can coherently hold because these four axioms license cardinal comparison at all.*
+**Expected-utility axioms** — John von Neumann & Oskar Morgenstern, 1944: completeness, transitivity, continuity, independence. Together they force a cardinal utility function under risk. `[A]` inherited — used, not discovered. *Our rung rides on it: the two-factor score is only a preference model an agent can coherently hold because these four axioms license cardinal comparison at all.* **Fence (receipt 149):** the four axioms are **normative** and descriptively violated by real agents (Allais 1953; Ellsberg 1961) — their `[A]` is the representation theorem's validity, never descriptive invariance of agents. This ledger is also a registered open pressure case: vN–M, Nash, and the folk theorem are mathematics prima facie capturing choice-content, which any upward-incompressibility reading must either scope around or be scoped by (see the Seed's Reduction-Asymmetry paragraph — one datum, held in the open).
 
 **Nash existence** — John Nash, 1950: every finite game has at least one equilibrium in mixed strategies. `[A]` inherited — used, not discovered. *Our rung rides on it: the arena always has a resting point to analyze, which is exactly why "extraction is irrational" cannot be claimed in general and must be scoped to the conditional lemma.*
 
@@ -126,6 +126,20 @@ for a declared finite reader**. Irreducibility fails if a shorter page preserves
 the same navigation; sufficiency fails if a cold reader cannot recover the
 alphabet, directional grid, three choices, conditional lemma, and open
 is/ought boundary. It is not a Kolmogorov minimum.
+
+---
+
+### The Model
+
+**THE POTENTIAL CONE.** From any point on the sphere, draw the cone of futures still reachable from there: that cone is the game board. A D5 being — anything that models its reachable futures and commits to one — plays by widening or narrowing option cones: its own and other bearers'. The score inside a cone is the declared two-factor model `P = Φ × V` under the ceiling — a preference model an agent can coherently hold (licensed by the inherited vN–M axioms above), not a theorem about every finite agent. Every reading must declare *whose* cone and *what horizon*; an undeclared boundary is not a move, it is a hiding place.
+
+- **Type: ARGUES in-model / SHOWS as image.** Inside the declared Model A with the dyadic gate, the cone carries the `[S]` conditional lemma and the grid verdicts of §1–§2 — ARGUES, strictly in-model. The cone *picture* — light-cone-as-option-cone — is SHOWS: an emblem for recognition, never cited in a proof.
+- **Legal moves.** The four movers `M4` are the only transfers; the three frames `F3` are read on a move, never played. Nothing on this board derives from the torus (P7: the torus does not know about dimensional stages), and no seam value (`P∞ = φν ≡ 1`) is ever a score — seam ≠ score ≠ node.
+- **The one moral axis.** `η` — extraction valence — is the board's only morally charged coordinate: value taken from a bearer without warranted return, judged per bearer through the dyadic gate. No aggregate launders it; no operator name carries it.
+- **Reflexivity** (George Soros, 20th c. — *used, not discovered*). The board is not fixed: the players' models of the game feed back into the game, so cones redraw under play. Adoption, enforcement, and horizon in §1 are reflexive inputs; a strategy that ignores this is optimizing last turn's board.
+- **The one kill.** Model-B side-payments: an extractor paid from outside the declared boundary faces no self-termination, and the cone-argument dies the moment the arena is not closed. That is why every use must re-declare boundary, horizon, and host-dependence — the model never argues past its own premises.
+
+**Animations:** [/lightcone.html](/lightcone.html) — the Will to Potential (the option cone itself) · [/cascade.html](/cascade.html) — the emergence cascade (why there is a D5 rung at all).
 
 ---
 
