@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Egg of Infinity — Suda's convergence — Emergentism</title>
+<meta name="description" content="Minoru Suda reached our reciprocal geometry by another road: the Egg of Infinity, the Cayley coordinate u=(x−1)/(x+1), where inversion becomes a half-twist and 1 sits at the center. Independent convergence, not proof." />
+<meta property="og:title" content="The Egg of Infinity — an independent convergence" />
+<meta property="og:description" content="A working philosopher, Minoru Suda, formalized the same reciprocal geometry from a different starting point. His 'egg' is our 'finity' — one center, two names. Corroboration, tier-marked." />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:,">
+<style>
+  :root{ --bg:#050505; --ink:#e9e6df; --dim:#8a8577; --gold:#e8b84b; --warm:#e0913a;
+    --line:rgba(233,230,223,.14); }
+  *{ box-sizing:border-box; } html,body{ margin:0; min-height:100%; background:var(--bg); color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; }
+  header.topbar{ position:fixed; top:0; left:0; right:0; height:54px; display:flex; align-items:center;
+    gap:1.3rem; padding:0 1.2rem; z-index:6; background:linear-gradient(#050505,rgba(5,5,5,0)); }
+  .brand{ color:var(--gold); font-weight:700; text-decoration:none; }
+  nav a{ color:var(--dim); text-decoration:none; font-size:.82rem; margin-right:.55rem; }
+  nav a:hover{ color:var(--ink); }
+  .wrap{ max-width:1120px; margin:0 auto; padding:80px 20px 40px; }
+  h1{ font-size:clamp(2rem,5vw,3.2rem); margin:.2rem 0 .1rem; letter-spacing:-.01em; }
+  .kicker{ color:var(--warm); font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; }
+  .lede{ color:var(--dim); max-width:60ch; line-height:1.65; margin:.6rem 0 1.4rem; }
+  .chip{ display:inline-block; padding:.08rem .55rem; border:1px solid var(--line); border-radius:999px;
+    font-size:.68rem; color:var(--dim); margin-right:.35rem; }
+  .chip.i{ border-color:var(--warm); color:var(--warm); }
+  .stage{ display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); gap:1.4rem; align-items:start; }
+  @media(max-width:820px){ .stage{ grid-template-columns:1fr; } }
+  canvas#egg{ width:100%; aspect-ratio:1/1; display:block; border:1px solid var(--line); border-radius:12px;
+    background:radial-gradient(circle at 50% 50%, #0c0a06, #050505 70%); }
+  .hud{ font-size:.8rem; line-height:1.55; }
+  .hud .row{ display:flex; justify-content:space-between; gap:1rem; padding:.15rem 0; border-bottom:1px dashed rgba(255,255,255,.06); }
+  .hud .k{ color:var(--dim); } .hud .v{ color:var(--ink); } .hud .v.gold{ color:var(--gold); }
+  .fml{ color:var(--gold); font-size:.92rem; margin:.4rem 0 .9rem; }
+  .card{ border:1px solid var(--line); border-radius:10px; padding:1rem 1.15rem; margin-top:1.4rem; }
+  .card h3{ margin:.1rem 0 .5rem; font-size:.95rem; color:var(--gold); }
+  .card p{ color:var(--dim); line-height:1.62; font-size:.86rem; margin:.5rem 0; }
+  .card .src{ color:var(--ink); }
+  .fence{ border-left:2px solid var(--warm); padding-left:.9rem; }
+  .foot{ color:var(--dim); font-size:.75rem; border-top:1px solid var(--line); margin-top:1.6rem; padding-top:1rem; line-height:1.6; }
+  .foot a{ color:var(--gold); } a.exit{ color:var(--dim); }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav aria-label="routes">
+    <a href="../1/">1</a><a href="../sphere.html">Sphere</a><a href="../passage.html">Passage</a>
+    <a href="../discoveries/">Discoveries</a><a href="../record/">Record</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="kicker">An independent convergence</div>
+  <h1>The Egg of Infinity</h1>
+  <p class="lede">A working philosopher — <b>Minoru Suda</b> — reached our reciprocal geometry from a different starting point, and gave it a different name. Where we say <em>finity</em>, he says <em>the egg</em>. One center, two names, two roads.
+  <span class="chip i">[I] convergence</span><span class="chip">[A] the coordinate</span></p>
+
+  <div class="stage">
+    <canvas id="egg" aria-label="The Cayley coordinate as an egg: 0 and infinity on the rim, 1 at the center; a point x and its reciprocal 1/x sit diametrically opposite through the center, and inversion is the half-twist u to minus u."></canvas>
+
+    <div class="hud">
+      <div class="fml">u = (x &minus; 1)/(x + 1) = tanh( &frac12; log x )</div>
+      <div class="row"><span class="k">x (moving)</span><span class="v gold" id="v-x">1.000</span></div>
+      <div class="row"><span class="k">1/x (opposite)</span><span class="v" id="v-xi">1.000</span></div>
+      <div class="row"><span class="k">u = egg coord</span><span class="v" id="v-u">0.000</span></div>
+      <div class="row"><span class="k">inversion x&rarr;1/x</span><span class="v" id="v-inv">u &rarr; &minus;u</span></div>
+      <div class="row"><span class="k">E(x) = (log x)²</span><span class="v" id="v-e">0.000</span></div>
+      <div class="row"><span class="k">min of E</span><span class="v gold">at x = 1 (the center)</span></div>
+      <div class="row"><span class="k">rim poles</span><span class="v">0 &nbsp;·&nbsp; &infin;</span></div>
+      <div class="row"><span class="k">half-twist</span><span class="v" id="v-tw">enacting u &rarr; &minus;u &hellip;</span></div>
+
+      <div class="card">
+        <h3>What the egg shows</h3>
+        <p><span class="src">•</span> The two poles <b>0</b> and <b>&infin;</b> sit on the rim; <b>1</b> — <em>finity</em>, Suda's <em>Critical-One</em> — sits at the dead center.</p>
+        <p><span class="src">•</span> A number <b>x</b> and its reciprocal <b>1/x</b> are always diametrically opposite <em>through the center</em>. Inversion is the <b>half-twist</b> u&nbsp;&rarr;&nbsp;&minus;u — a rotation by &pi;. Only 1 stays fixed.</p>
+        <p><span class="src">•</span> The warmth toward the center is <b>E(x)=(log x)²</b> at its minimum: 1 is the calm, the still point the whole reciprocal tension turns around.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card fence">
+    <h3>The honest fence — corroboration, not proof</h3>
+    <p><b>Independent convergence, tier [I].</b> Suda reached this reciprocal geometry by his own road. That it agrees with our <em>finity</em> is corroboration — not proof, and not authority. <b>He did not originate Emergentism or the doctrine of finity; we did not originate his egg.</b> Two people, two vocabularies, one structure — which is exactly the kind of agreement that is worth something <em>because</em> neither borrowed it from the other.</p>
+    <p><b>Two registers of one fact.</b> The egg is the <em>generative</em> reading — how 1 hatches from the fusion of 0 and &infin;. Finity is the <em>structural</em> reading — how 1 stabilizes the tension between them. Same center, genesis-voice and state-voice.</p>
+    <p><b>Un-mixed.</b> This is the <em>Cayley / egg chart</em> (u = (x&minus;1)/(x+1)) — a distinct coordinate from the <a href="../sphere.html" style="color:var(--gold)">stereographic sphere</a> and the <a href="../passage.html" style="color:var(--gold)">torus family</a>. Different charts of one related structure; we keep them in separate frames on purpose.</p>
+    <p class="src" style="font-size:.82rem"><b>Sources.</b> Minoru Suda, <em>A New Ontology of Energy: Zero, Infinity, and the Infinite Egg</em> (2025); <em>Fractional Structure and Möbius Transformation — Part II: The Critical-One Hypothesis and the Egg of Infinity</em> (2025); <em>Kant 2.0: Dynamic Epistemology</em> (2025).</p>
+  </div>
+
+  <div class="foot">
+    The <b>[A]</b> facts — inversion swaps 0 and &infin; and fixes 1; the Cayley coordinate carries it to the half-twist; E=(log x)² is minimized at 1 — are standard mathematics, used, not discovered by us or by Suda. The convergence with our finity reading is <b>[I]</b>. Where a strong claim about Suda ever overreaches, its death is dated on <a href="../record/">the record</a>.
+    &nbsp;·&nbsp; <a class="exit" href="../exit/">If you can see directly, put this down &rarr;</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cv=document.getElementById('egg'), ctx=cv.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2), S=0;
+  function resize(){ S=cv.clientWidth; cv.width=S*DPR; cv.height=S*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize', resize);
+  var el=function(id){return document.getElementById(id);};
+
+  function draw(t){
+    var c=S/2, Rd=S*0.40;                      // disk (the egg) center + radius
+    ctx.clearRect(0,0,S,S);
+    // iso-E warmth: center (x=1, E=0) is warmest, rim coldest
+    var grd=ctx.createRadialGradient(c,c,2,c,c,Rd);
+    grd.addColorStop(0,'rgba(232,184,75,0.16)'); grd.addColorStop(1,'rgba(232,184,75,0)');
+    ctx.fillStyle=grd; ctx.beginPath(); ctx.arc(c,c,Rd,0,7); ctx.fill();
+    // rim
+    ctx.strokeStyle='rgba(233,230,223,0.28)'; ctx.lineWidth=1.2;
+    ctx.beginPath(); ctx.arc(c,c,Rd,0,7); ctx.stroke();
+    // real-axis diameter (the image of the positive real line)
+    ctx.strokeStyle='rgba(233,230,223,0.12)'; ctx.beginPath(); ctx.moveTo(c-Rd,c); ctx.lineTo(c+Rd,c); ctx.stroke();
+    // tick images of x = e^k
+    ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.font='11px ui-monospace,monospace'; ctx.textAlign='center';
+    [[0.25,'¼'],[0.5,'½'],[1,'1'],[2,'2'],[4,'4']].forEach(function(p){
+      var uu=(p[0]-1)/(p[0]+1); var px=c+uu*Rd;
+      ctx.fillStyle=(p[0]===1)?'rgba(232,184,75,1)':'rgba(138,133,119,0.7)';
+      ctx.beginPath(); ctx.arc(px,c,(p[0]===1)?4:2,0,7); ctx.fill();
+    });
+    // pole + center labels
+    ctx.font='14px ui-monospace,monospace';
+    ctx.fillStyle='rgba(233,230,223,0.85)';
+    ctx.fillText('0', c-Rd-14, c+4);
+    ctx.fillText('∞', c+Rd+16, c+5);
+    ctx.fillStyle='var(--gold)'; ctx.fillStyle='rgba(232,184,75,1)';
+    ctx.fillText('1 · finity', c, c+Rd+22);
+    // center dot (1 = the still point)
+    ctx.beginPath(); ctx.arc(c,c,5,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(c,c,10,0,7); ctx.strokeStyle='rgba(232,184,75,0.35)'; ctx.stroke();
+
+    // the moving point x and its reciprocal, always opposite through center
+    var s=3.0*Math.sin(t*0.55);               // s = log x oscillates in [-3,3]
+    var x=Math.exp(s), u=Math.tanh(s/2);       // u=(x-1)/(x+1)
+    var px=c+u*Rd, py=c;
+    var pxi=c-u*Rd;                            // reciprocal at -u
+    // connecting chord through the center (through 1)
+    ctx.strokeStyle='rgba(232,184,75,0.5)'; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.moveTo(px,py); ctx.lineTo(pxi,py); ctx.stroke();
+    // x dot (gold), 1/x dot (bone)
+    ctx.beginPath(); ctx.arc(px,py,6,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(pxi,py,5,0,7); ctx.fillStyle='rgba(233,230,223,0.85)'; ctx.fill();
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.font='12px ui-monospace,monospace';
+    ctx.fillText('x', px, py-12); ctx.fillStyle='rgba(233,230,223,0.8)'; ctx.fillText('1/x', pxi, py-12);
+
+    // the half-twist: a rotating arc showing inversion = rotation by π
+    var tw=(t*0.5)%(Math.PI*2);
+    ctx.strokeStyle='rgba(224,145,58,0.55)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.arc(c,c,Rd*0.62,-tw,-tw+Math.PI,false); ctx.stroke();
+    // arrowhead at the sweeping end
+    var ax=c+Rd*0.62*Math.cos(-tw+Math.PI), ay=c+Rd*0.62*Math.sin(-tw+Math.PI);
+    ctx.beginPath(); ctx.arc(ax,ay,3,0,7); ctx.fillStyle='rgba(224,145,58,0.9)'; ctx.fill();
+
+    // HUD
+    el('v-x').textContent=x.toFixed(3);
+    el('v-xi').textContent=(1/x).toFixed(3);
+    el('v-u').textContent=u.toFixed(3);
+    el('v-e').textContent=(s*s).toFixed(3);
+    var near=Math.abs(((tw)%Math.PI))<0.18;
+    el('v-tw').textContent = near ? '0 ⇄ ∞ swapped · 1 fixed' : 'enacting u → −u …';
+  }
+  var t0=performance.now();
+  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
+  resize(); requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
