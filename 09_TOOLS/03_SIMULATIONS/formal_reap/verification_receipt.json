@@ -65,15 +65,13 @@
   "dependency_checkouts_changed_during_run": false,
   "duplicate_proof_ledger_rows": [],
   "expected_theorem_count": 36,
-  "failures": [
-    "verification inputs changed during run"
-  ],
+  "failures": [],
   "forbidden_declarations": [],
-  "generated_at_utc": "2026-07-20T17:37:54.248374+00:00",
-  "git_head_at_end": "08cfebf11a8d5f7008c940e142043bae37057436",
-  "git_head_at_start": "08cfebf11a8d5f7008c940e142043bae37057436",
+  "generated_at_utc": "2026-07-20T17:41:55.052608+00:00",
+  "git_head_at_end": "86f1d74e197549b3a11f853f1a6874b08bef9de0",
+  "git_head_at_start": "86f1d74e197549b3a11f853f1a6874b08bef9de0",
   "git_head_changed_during_run": false,
-  "git_worktree_clean_before_receipt_write": false,
+  "git_worktree_clean_before_receipt_write": true,
   "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
   "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
   "ledger_row_by_theorem": {
@@ -144,20 +142,18 @@
     "FormalReap/Structure.lean": "8093792366f69b9d94d6197167e0a705e0d4081d454d0f41b115d90af565b4c4"
   },
   "source_under_test": "10_SEED/02_THE_REAP.md",
-  "source_under_test_sha256": "1a92a251046f1752cea12b753b43ebe46b325d52e6c3b8dec4822e76ec53b05a",
-  "status": "FAIL",
+  "source_under_test_sha256": "610c05f4eb3b897d2267373a70450112567890efd2ee9904eafa15f53a7c5c77",
+  "status": "PASS",
   "stored_receipt_matches_current_core": true,
   "support_artifact_sha256": {
     "PROOF_LEDGER.md": "ff721e35ce48e8c994d1701ce2fedbaa44ceaadcf3de5f3883959a421a578fb2",
     "README.md": "7631e51440d60a6d463f539d763c6cf8c441304b00700ea48aa60240c4b69153",
-    "verify.py": "6d7d9ee699f74b32dbeeb33bd50f4b2c3edce6f28bc3f84c7949e05c6be75b49"
+    "verify.py": "55aab979d548bbf9a5ae60df473f7fe94835f2df2938abbe62f0052b156b12a2"
   },
   "theorem_count": 36,
   "theorems_missing_from_ledger": [],
   "unexpected_axioms": [],
   "unexpected_parsed_audit_outputs": [],
   "unregistered_theorems": [],
-  "verification_input_changes": [
-    "/Users/Yves/Documents/01_EMERGENTISM/10_SEED/02_THE_REAP.md"
-  ]
+  "verification_input_changes": []
 }
