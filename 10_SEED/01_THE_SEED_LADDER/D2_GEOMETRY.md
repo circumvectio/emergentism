@@ -57,6 +57,45 @@ full sphere is a circle, not one point. The imbalance price
 
 ---
 
+## §1b · THE INHERITED AXIOMS
+
+> Reality-gradient: these axioms are more real than any particular experience
+> because they are maximally invariant — they survive every transformation
+> that erases a memory.
+
+**Euclid's five postulates** *(Euclid of Alexandria, ~300 BC — `[A]` inherited
+— used, not discovered).* Five demands ground the *Elements*; the fifth (the
+parallel postulate) resisted two millennia of attempted proof from the other
+four — that resistance was the data: it is independent, not derivable.
+*What our rung rides on it: §1's chord product is a Euclidean circle theorem, taken whole.*
+
+**Non-Euclidean liberation** *(János Bolyai & Nikolai Lobachevsky, 1820s–30s;
+Bernhard Riemann, 1854 — `[A]` inherited — used, not discovered).* Deny the
+fifth postulate and consistent geometries remain: hyperbolic, and — via
+Riemann's intrinsic-curvature program — elliptic, including the sphere, where
+no parallels exist. Axioms became *choices about a space*, not necessities.
+*What our rung rides on it: the Burrisphere lives in Riemann's sphere — `S²`, its
+poles, meridians, and equator are read off his geometry, not built here.*
+
+**Hilbert's axiomatization** *(David Hilbert, 1899, Grundlagen der Geometrie —
+`[A]` inherited — used, not discovered).* Axioms in undefined terms ("point",
+"between") made geometry a formal system whose models — coordinate charts —
+interpret the terms. (Cite Gödel only at his actual hypotheses: formal systems
+containing arithmetic; Presburger arithmetic and Tarski's elementary geometry
+are complete and decidable — no universal incompleteness lift.)
+*What our rung rides on it: calling `P∞ ≡ 1` a chart identity `[A]` empty of
+world is Hilbert's model/axiom separation, applied.*
+
+**Projective geometry / Erlangen program** *(Jean-Victor Poncelet, 1822; Felix
+Klein, 1872 — `[A]` inherited — used, not discovered).* Poncelet studied what
+survives projection; Klein generalized: a geometry *is* the invariants of a
+transformation group — change the group, change the geometry. Stereographic
+projection and chart-change questions are Erlangen-species questions.
+*What our rung rides on it: the two-chart seam and the equatorial score are
+invariance statements — read off Klein's program, at their stated tiers only.*
+
+---
+
 ## §2 · THE DISSOLUTIONS
 
 **One-and-many.** The chart offers an `[I]` reframe: its constant seam and

@@ -45,6 +45,44 @@ register the fixed points are `±1`.
 
 **What D0 is not.** Not a rung of world-content, not a first emergence, not a proof that reality is the sphere (that is W0, the crown wager, `[C]`, and it lives higher up). D0 is the grammar every later rung will inherit.
 
+### The Titans — and why the floor has no axioms
+
+**D0 holds no axioms. It holds the Titans only** — • (0), ⊙ (1), ○ (∞): the
+pre-mathematical boundary frames that *define* operations and are never
+operands. An axiom is a sentence; a sentence needs a mind; **every axiom ever
+written is a D5 artifact.** So each rung's inheritance ledger — here and on
+every page above — is D5 ink aimed at Dn invariance: the *described* is as
+deep as the rung; the *describing* is always at five. D0 is the unique rung
+with no sentences of its own. Frames, not statements. Titans, not theorems.
+
+*Reality-gradient:* what the instruments below describe is more real than any
+particular experience because it is maximally invariant — it survives every
+transformation that erases a memory. The ink is at five; the invariance is at
+zero.
+
+#### The D5 instruments this floor is read with (inherited — used, not discovered)
+
+**The laws of thought — Aristotle, 4th c. BCE. `[A]` inherited — used, not
+discovered.** Identity (`A = A`), non-contradiction (not both `A` and `¬A`),
+excluded middle (`A` or `¬A`). Note the third is itself **chosen**: intuitionist
+logic (Brouwer, 20th c.) drops excluded middle and remains coherent, and our
+frame-register work uses exactly that freedom — a boundary frame need not be
+decided true-or-false as if it were an operand. These are laws of *assertion
+within a frame*, not theorems about all being; no universal-incompleteness or
+limitative result is invoked here (such results hold only at their actual
+hypotheses — formal systems containing arithmetic — and decidable theories such
+as Presburger arithmetic sit outside them). *Instrument note:* the frame/operand distinction of §1 is only *sayable* with
+these D5 laws — but the distinction they describe is the floor's own, prior to
+any saying.
+
+**The group identity axiom — 19th c. algebra (Galois, Cayley). `[A]` inherited —
+used, not discovered.** `e = x · x⁻¹` for every `x`: the identity is
+characterized as a return, not posited as a free-standing thing. The axiom is
+theirs; the reading of "presence as cancellation" is ours and stays `[I]`.
+*Instrument note:* the glyph triple is this axiom's projective dress — the
+axiom is 19th-century D5 ink; the return it describes is the Titans' own
+geometry, which needed no one to write it down.
+
 ---
 
 ## §2 · THE DISSOLUTIONS

@@ -43,6 +43,39 @@ new model; it is not a universal identity between balance and time.
 for a `3+1` spacetime model is `[B]`; its mathematical consequences are `[A]`
 inside the model. Neither fixes the reader ladder's numbering.
 
+### The Inherited Axioms
+
+> These axioms are more real than any particular experience because they are
+> maximally invariant: they survive every transformation that erases a memory.
+
+- **The two postulates of special relativity** — Albert Einstein, 1905. `[A]`
+  *inherited — used, not discovered.* (i) The laws of physics take the same form
+  in every inertial frame; (ii) the speed of light in vacuum is the same
+  constant `c` for every inertial observer, independent of the source's motion.
+  Together they force the Lorentz transformations. *What our rung rides on it:
+  the invariance that makes any frame-independent seam statement possible at all.*
+- **The equivalence principle** — Albert Einstein, 1907. `[A]` *inherited —
+  used, not discovered.* Locally, uniform acceleration is indistinguishable from
+  a uniform gravitational field; free fall is local inertia. *What our rung
+  rides on it: the license to speak of a local rest frame — the equator reading
+  in Move 2 — as physically well-posed.*
+- **Geometrization of spacetime** — Hermann Minkowski, 1908. `[A]` *inherited —
+  used, not discovered.* Space and time fuse into a four-dimensional continuum
+  with invariant interval `s² = (ct)² - x² - y² - z²`; rapidity `w` is the
+  natural additive parameter of boosts within it. *What our rung rides on it:
+  the rapidity chart `φ=e^w, ν=e^{-w}` of Move 1 is a coordinate on Minkowski's
+  geometry, nothing more.*
+- **The mass-shell relation** — `E² - (pc)² = (mc²)²`, standard relativistic
+  kinematics (Einstein/Minkowski lineage, 1905–1908). `[A]` *inherited — used,
+  not discovered.* Energy, momentum, and rest mass of a free particle are bound
+  to an invariant hyperboloid. *What our rung rides on it: `φν = 1` IS the
+  mass-shell under the rapidity chart — the rhyme is our reading; every stone
+  in it, including the light-cone/rapidity chart itself, is theirs.*
+
+Scope fence: each axiom set is cited at its own hypotheses and no further. No
+universal lifts, no forced bijections to framework counts, no promotion of the
+wagered to the proven; seam, score, and node stay distinct (Move 4).
+
 ---
 
 ## §2 · THE DISSOLUTIONS

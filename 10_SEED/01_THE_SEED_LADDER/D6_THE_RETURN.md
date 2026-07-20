@@ -52,6 +52,39 @@ parents:
   axiom that everything else stands on. No description closes or certifies itself;
   contact with living readers remains external evidence, not metaphysical closure.
 
+### The Inherited Axioms
+
+*These axioms are more real than any particular experience because they are maximally
+invariant: they survive every transformation that erases a memory.*
+
+- **Incompleteness — Kurt Gödel, 1931.** `[A] inherited — used, not discovered.`
+  At its actual hypotheses only: any *consistent formal system containing arithmetic*
+  can state truths it cannot prove, and cannot prove its own consistency. The
+  hypotheses are load-bearing — Presburger arithmetic and Tarski's real-closed
+  fields are complete and decidable, so **no universal lift exists**: nothing here
+  licenses "every system outruns itself" or "every D_n needs D_{n+1} tools."
+  *What our rung rides on it: scoped humility — the exit marker cites Gödel only
+  where his hypotheses hold, and claims nothing beyond them.*
+- **Undefinability of truth — Alfred Tarski, 1933.** `[A] inherited — used, not
+  discovered.` A sufficiently rich language cannot contain its own truth predicate;
+  "true-in-L" lives in a metalanguage. Same fence: this is a theorem about formal
+  languages meeting its conditions, not a cosmic ban on self-knowledge.
+  *What our rung rides on it: the map-cannot-certify-itself practice is scoped
+  inheritance from Tarski's hierarchy, not a discovery of ours.*
+- **The via negativa — Nāgārjuna (~2nd c.), Pseudo-Dionysius (~5th c.), Maimonides
+  (12th c.).** `[A] inherited — used, not discovered.` An inherited *method*, not a
+  theorem: approach the limit by saying what it is not; refuse to let any positive
+  description close over the ground. Three independent traditions converged on it
+  long before any formal result existed.
+  *What our rung rides on it: D6's withdraw-posture is this method practiced —
+  put the pointing down when the pointing is finished.*
+
+**The single line that is ours:** the map-cannot-contain-itself is *scoped
+inheritance* (Gödel and Tarski at their hypotheses, the apophatic method at its);
+the **reader-as-closure** — that the check the text cannot perform on itself is
+performed, informally and revocably, by the living reader — is our reading `[I]`,
+a governance stance, never a theorem.
+
 ## §2 · THE DISSOLUTIONS
 
 *The paradox native to this height, and the cure by name.*

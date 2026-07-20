@@ -64,6 +64,39 @@ point is never free. Downstream it becomes the equatorial maximum of the
 never the seam, never the finite-node model `P_node = Φ×V` (which stays `[C]` in
 its interior; only its AND-class zero boundary is won).
 
+### The Inherited Axioms
+
+These axioms are more real than any particular experience because they are
+maximally invariant: they survive every transformation that erases a memory.
+
+**Dedekind–Peano axioms** — Richard Dedekind & Giuseppe Peano, 1888–89. Zero,
+successor, induction: the finite generative engine of number. `[A] inherited —
+used, not discovered`. What our rung rides on it: the very existence of a
+countable ladder of distinctions — `D1`'s "one number, seen twice" presupposes
+that numbers are there to be seen.
+
+**Ordered-field axioms** — the axiomatic distillation (19th–early 20th c.,
+Hilbert-era formalization) of field operations plus a total order compatible
+with them. They license `φ > 0`, reciprocals `ν = 1/φ`, and every inequality
+this page states. `[A] inherited — used, not discovered`. What our rung rides
+on it: inversion's fixed points (`x = 1/x ⇒ x² = 1 ⇒ x = ±1`) are theorems
+*inside* this system — we added the reading (finity, the dark twin), not the
+arithmetic.
+
+**AM-GM inequality** — arithmetic-mean ≥ geometric-mean; Augustin-Louis
+Cauchy's 1821 proof (*Cours d'analyse*, forward-backward induction). For our
+pair: `φ + ν ≥ 2√(φν) = 2`, equality iff `φ = ν = 1`. `[A] inherited — used,
+not discovered`. What our rung rides on it: the equator minimum — "the price
+of imbalance" and the downstream score maximum `B = 2/(φ+ν) ≤ 1` — is this
+inherited theorem wearing our chart; we added the name, not the bound.
+
+None of this lifts: these systems earn their `[A]` at their own hypotheses,
+nowhere else (Gödel's incompleteness, likewise, holds for formal systems
+containing enough arithmetic — Presburger arithmetic and Tarski's real closed
+fields are complete and decidable, so no universal lesson transfers). Seam,
+score, and node remain distinct; nothing here forces a product, a seven, or
+an ethics.
+
 ---
 
 ## §2 · THE DISSOLUTIONS — this rung's paradox, and its exact cure

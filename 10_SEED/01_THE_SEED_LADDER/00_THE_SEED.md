@@ -106,7 +106,7 @@ Six disciplines govern every page of the ladder. They are the compression of the
 3. **The ethic is a vow, not a theorem.** The vow supplies at least three choices the mathematics cannot make: horizon, maximand, and enforcement. Universalized extraction collapses a host only under declared closure, regeneration, coupling, and horizon premises; inside those premises the result is structural, outside them it is not a categorical theorem. Non-extraction avoids that failure mode but does not by itself guarantee survival, justice, or a new aperture.
 4. **The Rosetta is a lens.** Cross-tradition convergence is translation, never proof; fifteen renderings of one shape are one datum. Its kill-criterion fired, and the firing is kept visible as the honesty seal.
 5. **The seven are selected.** Seven rungs, seven symbols, seven surfaces — chosen taxonomies `[I]`, exhaustive only by construction within their declared models, never a census forced by algebra. And `D6~D0` is a similarity of boundary roles, never an identity.
-6. **Inherited mathematics is marked.** AM-GM, the Riemann sphere, the mass-shell, Nash equilibria, Kant's universalizability — all **used, not discovered**. What is ours is the naming, the reading, and the discipline of warrant; and 22 dead forms stay buried, by name, with dates.
+6. **Inherited mathematics is marked.** AM-GM, the Riemann sphere, the mass-shell, Nash equilibria, Kant's universalizability — all **used, not discovered**. What is ours is the naming, the reading, and the discipline of warrant; and 22 dead forms stay buried, by name, with dates. Each rung now carries its **inheritance ledger** — an "Inherited Axioms" block crediting, by discoverer and era, the axiom systems that rung rides on.
 
 ---
 

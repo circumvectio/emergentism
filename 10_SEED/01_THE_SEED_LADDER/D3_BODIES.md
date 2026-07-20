@@ -46,6 +46,24 @@ not a theorem read off geometry.
 **The iron separation, stated once for this rung:**
 `P∞ = φ·ν ≡ 1` (the **seam** `[A]`, chart identity, never vanishes) — is not — `B = sinθ ≤ 1`, max at the equator (the **score** `[A]`, unconditional AM-GM, *used not discovered*) — is not — `P_node = Φ×V` (the **node**, `[C]` interior / AND-class boundary `[S]`).
 
+## §1b · THE INHERITED AXIOMS — what this rung stands on
+
+> **Reality-gradient framing:** these axioms are more real than any particular experience because they are maximally invariant — they survive every transformation that erases a memory.
+
+All four sets below are `[A]` inherited — **used, not discovered**. Credit stays with the discoverers; our contribution per set is one closing line.
+
+1. **Newton's three laws** — Isaac Newton, *Principia*, 1687. Inertia; `F = ma`; action–reaction. The grammar of any body that pushes or is pushed, valid in the classical regime bodies live in.
+   *What our rung rides on it:* a body is a bounded thing forces act on — without that, "binding constraint" has nothing to bind.
+
+2. **Conservation laws via Noether's theorem** — Emmy Noether, 1918. Every continuous symmetry of the action yields a conserved quantity: time-invariance → energy, translation → momentum, rotation → angular momentum. Symmetry → conservation is the deepest inherited exactness on this page.
+   *What our rung rides on it:* annihilation-at-zero is conservation's shadow — what a body cannot create from nothing, it cannot survive the loss of.
+
+3. **The laws of thermodynamics (0th–3rd)** — Carnot, Clausius, Kelvin, Nernst, 19th–early 20th c. Equilibrium is transitive; energy is conserved; entropy of a closed system does not decrease; absolute zero is unattainable. The reason a living body must metabolize or die.
+   *What our rung rides on it:* the mortality of every finite whole — the D3 "can die" — is thermodynamic before it is biological.
+
+4. **Liebig's law of the minimum** — Carl Sprengel, 1828/1840, popularized by Justus von Liebig. Growth is limited by the scarcest essential resource, not the total supply.
+   *What our rung rides on it:* the AND-class need-both boundary is Liebig generalized — the `[S]` zero boundary of §1 is his minimum, restated for declared essential factors.
+
 ---
 
 ## §2 · THE DISSOLUTIONS — the paradox this rung answers

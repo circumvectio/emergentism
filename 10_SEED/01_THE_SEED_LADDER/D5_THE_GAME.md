@@ -64,6 +64,20 @@ a positive group sum never licenses extraction from one member.
 
 **Power-Max, scoped.** "Extraction is irrational" is *not* a general Nash result (Model-B side-payments kill it — that grave stays shut, inherited game theory *used, not discovered*). What survives `[S/I]` is only the conditional lemma stated below: in a declared whole-boundary, long-horizon, closed arena with no fresh hosts or exit, extraction above regeneration self-terminates when extractors remain dependent on host viability and the relevant adoption/enforcement conditions hold. Outside those premises, the result does not follow. Short horizons may make extraction pay; an extractor optimizing another maximand is diagnosed rather than refuted; and arithmetic alone does not punish a defector.
 
+### The Inherited Axioms
+
+*Reality-gradient:* these axioms are more real than any particular experience because they are maximally invariant — they survive every transformation that erases a memory.
+
+**Expected-utility axioms** — John von Neumann & Oskar Morgenstern, 1944: completeness, transitivity, continuity, independence. Together they force a cardinal utility function under risk. `[A]` inherited — used, not discovered. *Our rung rides on it: the two-factor score is only a preference model an agent can coherently hold because these four axioms license cardinal comparison at all.*
+
+**Nash existence** — John Nash, 1950: every finite game has at least one equilibrium in mixed strategies. `[A]` inherited — used, not discovered. *Our rung rides on it: the arena always has a resting point to analyze, which is exactly why "extraction is irrational" cannot be claimed in general and must be scoped to the conditional lemma.*
+
+**The folk theorem** — repeated-games tradition (Friedman 1971, Fudenberg & Maskin 1986), mid-20th-century era: with sufficiently patient players (discount factor above threshold), a vast set of outcomes — cooperative and extractive alike — is sustainable in equilibrium. `[A]` inherited — used, not discovered. *Our rung rides on it: the horizon and discount inputs of the conditional collapse are these thresholds pointed at host-dependent extraction.*
+
+**Universalizability** — Immanuel Kant, 1785 (*Groundwork*): test a maxim by willing its universal adoption. `[A]` inherited — used, not discovered. *Our rung rides on it: the universal-adoption stress test in §2 is Kant's instrument run as a diagnostic, never derived as a categorical theorem.*
+
+The moral grid and the non-universalizability of the taker are these instruments pointed at the coupling law — the arithmetic of the verdict is ours, every court in it is theirs.
+
 ---
 
 ## §2 · THE DISSOLUTIONS
