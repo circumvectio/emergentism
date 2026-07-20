@@ -8,8 +8,9 @@
   "expected_theorem_count": 36,
   "failures": [],
   "forbidden_declarations": [],
-  "generated_at_utc": "2026-07-20T17:02:43.186636+00:00",
-  "git_head": "0f0b53e4de6861fd4ae202864d8a5bfd96ddd7a2",
+  "generated_at_utc": "2026-07-20T17:07:22.204240+00:00",
+  "git_head_at_end": "e867aa3861523b5a0f295ab80770d12ea36a783d",
+  "git_head_at_start": "e867aa3861523b5a0f295ab80770d12ea36a783d",
   "git_head_changed_during_run": false,
   "git_worktree_clean_before_receipt_write": false,
   "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
@@ -48,7 +49,7 @@
   "support_artifact_sha256": {
     "PROOF_LEDGER.md": "ff721e35ce48e8c994d1701ce2fedbaa44ceaadcf3de5f3883959a421a578fb2",
     "README.md": "69b8b54b5e607353777e28c4268e202d059c8d86dfdaa2278fc237c68b468afb",
-    "verify.py": "678c0e2fb05d0c84b91630d3c44b47de16caa1c0ca49395988dd6321a6fd2e8a"
+    "verify.py": "a84439a9b7aab6db04842e431fefb160a03ce94a4614ae9711547f8682440228"
   },
   "theorem_count": 36,
   "theorems_missing_from_ledger": [],
