@@ -246,6 +246,8 @@ footer.foot a{color:var(--bone-dim)}
   var cv = document.getElementById('blowup');
   var ctx = cv.getContext('2d');
   var W = cv.width, H = cv.height;
+  var dpr = window.devicePixelRatio || 1;          // GeoGebra-grade crispness: render at device resolution
+  if (dpr > 1) { cv.width = W * dpr; cv.height = H * dpr; ctx.scale(dpr, dpr); }
   var ox = W/2, oy = H/2;           // origin
   var sx = 110, sy = 26;            // scale: px per unit
   var GOLD = '#FFEB3B', DIM = '#6b6f74', BONE = '#F5F5F3', RED = '#e0453b', BLUE = '#5aa9e6';
@@ -259,26 +261,58 @@ footer.foot a{color:var(--bone-dim)}
     ctx.fillText('1/x', ox+8, 16);
     ctx.fillText('0', ox-16, oy+16);
   }
-  function curve(){
-    ctx.lineWidth = 1.6;
-    [[1,GOLD],[-1,BLUE]].forEach(function(pair){
-      var side = pair[0], col = pair[1];
-      ctx.strokeStyle = col; ctx.beginPath();
-      var started = false;
-      for (var px = 0; px <= W; px += 2){
-        var x = (px - ox) / sx;
-        if (side < 0 && x >= -0.06) continue;
-        if (side > 0 && x <=  0.06) continue;
-        var y = 1/x;
-        var py = oy - y*sy;
-        if (py < -4000) py = -4000;
-        if (py > H+4000) py = H+4000;
-        if (!started){ ctx.moveTo(px, Math.max(-50,Math.min(H+50,py))); started = true; }
-        else ctx.lineTo(px, Math.max(-50,Math.min(H+50,py)));
+  /* Adaptive function plotter after GeoGebra's CurveSegmentPlotter (Gillam's algorithm):
+     bisect until pixel distance ≤ 10 and bend ≤ tan(10°); isolate undefined regions by
+     bisection; before joining a rough segment, verify continuity — if distance fails to
+     shrink decisively within 8 bisections, lift the pen (never join across a pole);
+     skip off-screen segments instead of clamping. */
+  var MAXPX = 10, MAXBEND = Math.tan(10 * Math.PI / 180), MAXD = 14, MAXUNDEF = 8;
+    function fx(x){ return 1/x; }
+    function X(x){ return ox + x*sx; }
+    function Y(y){ return oy - y*sy; }
+    function buildBranch(a, b){
+      var path = new Path2D();
+      var stack = [[a, b, 0]];
+      var pen = false;
+      while (stack.length){
+        var seg = stack.pop(), l = seg[0], r = seg[1], d = seg[2];
+        var yl = fx(l), yr = fx(r);
+        var finite = isFinite(yl) && isFinite(yr);
+        if (!finite){
+          if (d < MAXUNDEF){ var m0 = (l+r)/2; stack.push([l, m0, d+1]); stack.push([m0, r, d+1]); }
+          else pen = false;                       // isolated pole — pen lifts
+          continue;
+        }
+        var px1 = X(l), py1 = Y(yl), px2 = X(r), py2 = Y(yr);
+        var dist = Math.hypot(px2-px1, py2-py1);
+        var bend = Math.abs((py2-py1) / Math.max(1e-9, px2-px1));
+        var offscreen = (py1 < -60 && py2 < -60) || (py1 > H+60 && py2 > H+60);
+        if (offscreen){ pen = false; continue; }  // skip invisible — never clamp
+        var rough = dist > MAXPX || bend > MAXBEND;
+        if (rough && d < MAXD){ var m = (l+r)/2; stack.push([l, m, d+1]); stack.push([m, r, d+1]); continue; }
+        if (rough){
+          // continuity check (GeoGebra isContinuous): bisect ≤8; distance must shrink below 0.9× initial
+          var cl = l, cr = r, init = dist, dd = Infinity, it = 0, cont = false;
+          while (it++ < 8 && dd > init*0.9){
+            var cm = (cl+cr)/2;
+            var dL = Math.hypot(X(cm)-X(cl), Y(fx(cm))-Y(fx(cl)));
+            var dR = Math.hypot(X(cr)-X(cm), Y(fx(cr))-Y(fx(cm)));
+            if (dL > dR){ dd = dL; cr = cm; } else { dd = dR; cl = cm; }
+          }
+          cont = dd <= init*0.9;
+          if (!cont){ pen = false; continue; }    // discontinuity — pen lifts, no join across the pole
+        }
+        if (!pen){ path.moveTo(px2, py2); pen = true; } else path.lineTo(px2, py2);
       }
-      ctx.stroke();
-    });
-  }
+      return path;
+    }
+    var pathR = buildBranch(0.06, (W-ox)/sx);     // right arm: x → 0⁺ (built once)
+    var pathL = buildBranch((0-ox)/sx, -0.06);    // left arm:  x → 0⁻ (built once)
+    function curve(){
+      ctx.lineWidth = 1.6;
+      ctx.strokeStyle = GOLD; ctx.stroke(pathR);
+      ctx.strokeStyle = BLUE; ctx.stroke(pathL);
+    }
   var t0 = null, dur = 5200, raf = null;
   function frame(ts){
     if (!t0) t0 = ts;
