@@ -127,6 +127,7 @@ def main() -> int:
     source_under_test = (ROOT / "../../../10_SEED/02_THE_REAP.md").resolve()
     verification_inputs = [*sources, *project_inputs, *support_artifacts, source_under_test]
     input_snapshot_before = snapshot(verification_inputs)
+    git_head_before = run(["/usr/bin/git", "rev-parse", "HEAD"]).stdout.strip()
     forbidden: list[str] = []
     theorem_names: set[str] = set()
     for source in sources:
@@ -177,7 +178,8 @@ def main() -> int:
     mathlib_package = next(
         package for package in manifest["packages"] if package["name"] == "mathlib"
     )
-    git_head = run(["/usr/bin/git", "rev-parse", "HEAD"]).stdout.strip()
+    git_head_after = run(["/usr/bin/git", "rev-parse", "HEAD"]).stdout.strip()
+    git_head_changed = git_head_before != git_head_after
     git_status = run(["/usr/bin/git", "status", "--porcelain"]).stdout
     sources_after = sorted([ROOT / "FormalReap.lean", *LEAN_ROOT.rglob("*.lean")])
     verification_inputs_after = [
@@ -187,6 +189,9 @@ def main() -> int:
         source_under_test,
     ]
     input_snapshot_after = snapshot(verification_inputs_after)
+    def verified_hash(path: Path) -> str:
+        return input_snapshot_after[str(path.resolve())]
+
     changed_inputs = sorted(
         path
         for path in set(input_snapshot_before) | set(input_snapshot_after)
@@ -231,6 +236,9 @@ def main() -> int:
     if changed_inputs:
         status = "FAIL"
         failures.append("verification inputs changed during run")
+    if git_head_changed:
+        status = "FAIL"
+        failures.append("git HEAD changed during run")
 
     receipt = {
         "schema": "formal-reap-verification-v1",
@@ -238,9 +246,10 @@ def main() -> int:
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "scope": "local machine-checked theorem and countermodel kernel; no doctrine promotion",
         "source_under_test": "10_SEED/02_THE_REAP.md",
-        "source_under_test_sha256": sha256(source_under_test),
-        "git_head": git_head,
-        "git_worktree_clean": not bool(git_status.strip()),
+        "source_under_test_sha256": verified_hash(source_under_test),
+        "git_head": git_head_after,
+        "git_head_changed_during_run": git_head_changed,
+        "git_worktree_clean_before_receipt_write": not bool(git_status.strip()),
         "lean_version": lean_version,
         "lake_version": lake_version,
         "mathlib_input_revision": mathlib_package["inputRev"],
@@ -263,13 +272,13 @@ def main() -> int:
         "unexpected_axioms": unexpected_axioms,
         "verification_input_changes": changed_inputs,
         "source_sha256": {
-            str(path.relative_to(ROOT)): sha256(path) for path in sources
+            str(path.relative_to(ROOT)): verified_hash(path) for path in sources
         },
         "project_input_sha256": {
-            str(path.relative_to(ROOT)): sha256(path) for path in project_inputs
+            str(path.relative_to(ROOT)): verified_hash(path) for path in project_inputs
         },
         "support_artifact_sha256": {
-            str(path.relative_to(ROOT)): sha256(path) for path in support_artifacts
+            str(path.relative_to(ROOT)): verified_hash(path) for path in support_artifacts
         },
         "failures": failures,
     }

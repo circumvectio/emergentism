@@ -33,6 +33,7 @@ This ledger answers one question for every major claim in **The Reap**: what exa
 | R0.4 | The floor “holds no axioms.” | **INTERPRETIVE ONLY** | A formal D0 theory necessarily has types, constructors, and inference rules. The phrase can mean “no agent-authored empirical/ethical law,” not literally no formal assumptions. |
 | R0.5 | The one relation “could not have been otherwise.” | **NOT PROVED** | Uniqueness requires a class of admissible grammars and invariance criteria. Neither is defined by the sentence itself. |
 | R0.6 | `{−1,0,1,∞}` is the “honest closure witness.” | **UNDERDEFINED** | Closure is relative to a carrier and specified operations. `inversion_fixed_points` certifies only that `±1` are the nonzero real reciprocal fixed points; it does not prove that the displayed foursome is closed, minimal, or uniquely forced. |
+| R0.7 | Maximal invariance and zero dependence make the floor “the most real thing.” | **INTERPRETIVE / UNDERDEFINED** | A proof would require formal invariance and dependence orderings plus a bridge from extremality in those orderings to ontological reality. None is supplied by the typed frame grammar. |
 
 ## D1 — arithmetic and the reciprocal chart
 
@@ -115,6 +116,7 @@ This ledger answers one question for every major claim in **The Reap**: what exa
 | RC.2 | Operator name/mask fixes moral valence. | **REFUTED** | `operator_mask_does_not_determine_valence` constructs the same `take` mask with opposite valences. “Valence lives on `η`, never on the operator's name” survives. |
 | RC.3 | Titans can be deployed at D5 but not D4. | **TYPE ERROR UNDER THE FRAME READING** | A frame is carried/selected/witnessed by a game but is not accepted by the move executor at either rung. D-rungs and Rosetta L-rows also remain distinct. |
 | RC.4 | Caste patterns are conserved exactly like physical energy. | **NOT PROVED / CATEGORY RISK** | No conserved scalar, continuity equation, transformation law, or empirically measured invariant is defined. A future typed-translation theorem could prove preservation of specified structure, not energy identity. |
+| RC.5 | Crown, weaponize, confess, and withdraw exhaust all possible titanic postures. | **UNDERDEFINED / NOT PROVED** | Exhaustiveness requires a formal posture type, equivalence relation, and coverage theorem. The present frame/move typing certifies only that frames are not executable moves. |
 | R6.1 | D6 matches D0 in role rather than literal identity. | **MACHINE-PROVED AS A TYPED MODEL** | `FloorWitness` and `ReturnWitness` are distinct types; `return_matches_floor_in_role` assigns them the same `BoundaryRole`. |
 | R6.2 | The summit is metaphysically the state of all states. | **INTERPRETIVE `[I/C]`** | No complete state space, ceiling, or return map establishing world-instantiation is provided. |
 

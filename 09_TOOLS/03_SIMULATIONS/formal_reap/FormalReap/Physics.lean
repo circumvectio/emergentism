@@ -61,7 +61,7 @@ theorem null_product_iff_mass_shell
     field_simp [hmass, hc]
     nlinarith
 
-/-- At zero momentum, the positive-energy massive branch has `E = mc²`. -/
+/-- At zero momentum, the nonnegative-energy/nonnegative-mass branch has `E = mc²`. -/
 theorem rest_energy_of_mass_shell
     (energy mass lightSpeed : ℝ)
     (henergy : 0 ≤ energy) (hmass : 0 ≤ mass)
@@ -73,7 +73,7 @@ theorem rest_energy_of_mass_shell
     mul_nonneg hmass (sq_nonneg lightSpeed)
   nlinarith [h]
 
-/-- The selected rest-energy ratio cannot exceed one on the massive positive branch. -/
+/-- The selected rest-energy ratio is bounded under positive energy and `mc² ≤ E`. -/
 noncomputable def restRatio (energy mass lightSpeed : ℝ) : ℝ :=
   mass * lightSpeed ^ 2 / energy
 
