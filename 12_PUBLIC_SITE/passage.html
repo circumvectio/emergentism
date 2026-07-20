@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Passage — Emergentism</title>
+<meta name="description" content="A torus-family passage: the sphere of matter opens into worldline anatomy, boosts along R = r·sech(w), and approaches — never occupies — the twice-covered limit. [A] family geometry · [I] relativistic emblem (receipts 151–152)." />
+<link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="assets/css/xai.css">
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+<style>
+/* passage-local chrome — tokens only, no restyle of the shared classes */
+#act-caption {
+  position: fixed; top: 60px; left: 50%; transform: translateX(-50%);
+  z-index: 6; max-width: min(740px, 92vw); text-align: center;
+  font: 600 .72rem/1.55 var(--font-mono, ui-monospace, monospace);
+  letter-spacing: .04em; color: var(--text-muted, #9CA3AF);
+  background: var(--instrument-bg, rgba(5,5,5,.92));
+  border: 1px solid var(--instrument-line, rgba(243,244,246,.15));
+  padding: .5rem .95rem; pointer-events: none;
+}
+#act-caption .cap-act { color: var(--gold, #FFEB3B); margin-right: .6em; letter-spacing: .14em; }
+#act-caption .cap-tier { color: var(--gold, #FFEB3B); opacity: .85; margin-left: .5em; white-space: nowrap; }
+#station-chip {
+  position: fixed; top: 36%; left: 50%; transform: translate(-50%,-50%) scale(.92);
+  z-index: 7; font: 700 .8rem/1 var(--font-mono, ui-monospace, monospace);
+  letter-spacing: .12em; color: var(--gold-bright, #FFF176);
+  background: rgba(5,5,5,.88); border: 1px solid var(--gold, #FFEB3B);
+  padding: .65rem 1.1rem; opacity: 0; pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+#station-chip.live { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+#station-flash {
+  position: fixed; inset: 0; z-index: 5; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 50% 46%, rgba(255,241,118,.8), rgba(255,235,59,.22) 42%, transparent 70%);
+}
+body.sphere-instrument.passage-instrument .lab-frame .corner:nth-child(1)::after { content: "30 Hz rapidity scan"; }
+body.sphere-instrument.passage-instrument .lab-frame .corner:nth-child(4)::after { content: "torus family grid"; }
+@media (max-width: 720px) {
+  #act-caption { top: 54px; font-size: .6rem; padding: .4rem .6rem; }
+  #station-chip { font-size: .66rem; padding: .5rem .8rem; }
+}
+</style>
+</head>
+<body class="sphere-instrument passage-instrument">
+<h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0">The Passage</h1>
+<header class="topbar">
+  <a class="brand" href="./">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="0/">0</a>
+    <a href="1/">1</a>
+    <a href="2/">2</a>
+    <a href="3/">3</a>
+    <a href="4/">4</a>
+    <a href="5/">5</a>
+    <a href="6/">6</a>
+    <a href="rosetta/">R</a>
+    <a href="soul-loop/">S</a>
+    <a href="atlas/">A</a>
+    <a href="read/">Read</a>
+  </nav>
+</header>
+<canvas id="scene" aria-label="Animated torus-family passage: the sphere opens into the horn torus, a rapidity boost contracts the mouth as R equals r times sech w, and the family approaches — never occupies — the twice-covered limit"></canvas>
+<div class="vignette"></div>
+<div class="lab-frame" aria-hidden="true"><span class="corner"></span><span class="corner"></span><span class="corner"></span><span class="corner"></span></div>
+
+<span class="brand">Emergentism · The Passage</span>
+<a class="exit" href="index.html">Open index</a>
+<div class="title"><div class="eq">R = r · sech(w)</div><div class="sub">Three acts · the mouth contracts as the boost saturates</div></div>
+
+<div id="act-caption" aria-live="polite">
+  <span class="cap-act" id="cap-act">ACT 1 · MATTER OPENS</span><span id="cap-text">the sphere of matter acquires its worldline anatomy — at rest, the mouth barely touches itself: w = 0, overlap = 0</span><span class="cap-tier" id="cap-tier">[I]</span>
+</div>
+<div id="station-chip" aria-hidden="true">45° STATION · sinh w = 1 · β = 1/√2 · p = mc</div>
+<div id="station-flash" aria-hidden="true"></div>
+
+<div id="panel">
+  <div class="lvl" id="p-lvl">ACT 1 / 3 · MATTER OPENS</div>
+  <div class="op" id="p-op">Matter Opens</div>
+  <div class="tier" id="p-tier" style="color:var(--gold)">[A] family geometry · [I] emblem</div>
+  <div class="ology" id="p-ology">φ = eʷ · ν = e⁻ʷ · mass-shell chart</div>
+  <div class="q" id="p-q">( (R + r cos u) cos v , r sin u , (R + r cos u) sin v )</div>
+  <div class="row"><span class="k">rapidity w</span><span class="v" id="p-w">0.000</span></div>
+  <div class="row"><span class="k">β = tanh w</span><span class="v" id="p-beta">0.000</span></div>
+  <div class="row"><span class="k">γ = cosh w</span><span class="v" id="p-gamma">1.000</span></div>
+  <div class="row"><span class="k" id="p-rho-k">R/r · opening</span><span class="v" id="p-rho">0.000</span></div>
+  <div class="row"><span class="k">overlap / r = tanh w</span><span class="v" id="p-ov">0.000</span></div>
+  <div class="row"><span class="k">dτ/dt = 1/γ</span><span class="v" id="p-dtau">1.000</span></div>
+  <div class="row"><span class="k">φ · ν</span><span class="v" id="p-chart">1.00 · 1.00</span></div>
+  <div class="row"><span class="k">residual</span><span class="v" id="p-residual">|φν−1| 0.0e+0</span></div>
+  <label class="position-scrub" for="position-scrub">
+    <span>act</span>
+    <input id="position-scrub" type="range" min="0" max="1000" step="1" value="0" aria-label="Scrub through the three acts" />
+  </label>
+</div>
+
+<div class="hint" id="hint">drag to rotate · scrub or step the acts</div>
+<div class="standalone-telemetry" id="passage-telemetry" aria-hidden="true">
+  <span data-field="mode">passage assay</span>
+  <span data-field="fps">display sync</span>
+  <span data-field="sample">sample --</span>
+  <span data-field="time">t+0.00s</span>
+  <span data-field="phase">act 1/3 · p 0.00</span>
+  <span data-field="metric">β 0.000 · γ 1.000</span>
+  <span data-field="uncertainty">σ φν --</span>
+  <span data-field="state">RUN</span>
+</div>
+<div class="standalone-measurements" id="passage-measurements" aria-hidden="true">
+  <div class="standalone-meter" data-signal="primary"><span>β</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter" data-signal="secondary"><span>R/r</span><i><b></b></i><em>--</em></div>
+  <div class="standalone-meter error" data-signal="error"><span>φν σ</span><i><b></b></i><em>--</em></div>
+</div>
+<div class="instrument-spec" aria-hidden="true">
+  <span>invariant: φ · ν = eʷ · e⁻ʷ = 1 (mass-shell normalization)</span>
+  <span>axes: w rapidity · R/r = sech w · overlap = r tanh w</span>
+  <span>contract: [A] torus family geometry · [I] relativistic emblem — approached, never occupied</span>
+</div>
+<div id="stage-readout" aria-live="polite">PASSAGE INSTRUMENT</div>
+<div class="instrument-controls standalone-controls sphere-controls" id="passage-controls">
+  <button id="scan-toggle" type="button" aria-pressed="false">HOLD</button>
+  <button id="position-step" type="button">STEP</button>
+  <button id="position-zero" type="button">ZERO</button>
+  <label>
+    <span>rate</span>
+    <input id="scan-rate" type="range" min="25" max="150" step="5" value="100" aria-label="Passage playback rate" />
+    <output id="scan-rate-value" data-rate-output>1.00x</output>
+  </label>
+</div>
+<div class="legend">
+  <span><i style="background:#F44336"></i>overlap bar = r · tanh w (β)</span>
+  <span><i style="background:#FFEB3B"></i>⊙ equator — the present (0↔∞ exchange)</span>
+  <span><i style="background:#F3F4F6"></i>cage at ±r = c — approached, never occupied</span>
+  <span><i style="background:#2196f3"></i>strip: overlap saturation</span>
+</div>
+<div class="legend-note" style="font-size:.78rem;opacity:.8;text-align:center">Euclidean surface — no null directions; the relativistic readings are a priced emblem (receipts 151–152); the mass-shell hyperboloid is the citable geometry. <span style="color:var(--gold)">[A family geometry · I emblem]</span></div>
+
+<div id="fallback">
+  <div class="g">R = r · sech(w)</div>
+  <p style="max-width:42ch;line-height:1.7">Your browser could not start WebGL. The Passage sweeps a torus family:
+  the sphere of matter opens into the horn torus at rest (R = r, w = 0), a rapidity boost contracts the mouth
+  as R = r·sech(w) while the axis overlap r·tanh(w) saturates at r, and the family approaches — never occupies —
+  the twice-covered limit. Euclidean surface; the relativistic readings are a priced emblem (receipts 151–152).</p>
+  <a href="index.html">Open index</a>
+</div>
+
+<!-- Three.js is self-hosted under ./vendor/three-0.160.0/ — no external CDN.
+     Run ./predeploy_check.sh before deploy to verify zero remote dependencies. -->
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three-0.160.0/three.module.js",
+  "three/addons/": "./vendor/three-0.160.0/"
+}}
+</script>
+<script type="module">
+import { createTextSprite, createStripChart, clearStripChart, updateStripChart } from './assets/js/instrument-charts.js?v=2026-06-14-instrument-19';
+
+let THREE, OrbitControls;
+try {
+  THREE = await import('three');
+  ({ OrbitControls } = await import('three/addons/controls/OrbitControls.js'));
+} catch (e) { document.getElementById('fallback').style.display = 'flex'; throw e; }
+
+const REDUCED_MOTION = !!(window.matchMedia
+  && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+const TAU = Math.PI * 2;
+const SAMPLE_HZ = 30;
+const SAMPLE_MS = 1000 / SAMPLE_HZ;
+const MAX_FRAME_MS = 120;
+const DESKTOP_PIXEL_RATIO_CAP = 1.45;
+const MOBILE_PIXEL_RATIO_CAP = 1.2;
+const GOLD = 0xffeb3b, GOLD_BRIGHT = 0xfff176, TEAL = 0x2196f3, CRIMSON = 0xf44336, WHITE = 0xf3f4f6;
+
+// ---- the family and its chart (all HUD numbers computed live from these) ----
+const r = 1.1;                       // tube radius (fixed): the matter sphere's radius
+const W_BOOST = 3.5;                 // act 2 terminal rapidity
+const W_CAP = 6.6;                   // act 3 asymptotic ceiling — eased toward, never reached
+const W_STAR = Math.asinh(1);        // the 45° station: sinh w = 1 ⇒ β = 1/√2, p = mc
+
+// ---- the three acts (auto-loop 1 → 2 → 3 with holds) ----
+const ACTS = [
+  { name: 'Matter Opens', label: 'ACT 1 · MATTER OPENS', dur: 7,  hold: 2.2, col: TEAL,
+    caption: 'the sphere of matter acquires its worldline anatomy — at rest, the mouth barely touches itself: w = 0, overlap = 0' },
+  { name: 'The Boost',    label: 'ACT 2 · THE BOOST',    dur: 13, hold: 2.6, col: CRIMSON,
+    caption: 'overlap = β, saturating — c as a shape running out of room',
+    captionB: 'E = mc² lives on the mass-shell; this family displays it' },
+  { name: 'The Limit',    label: 'ACT 3 · THE LIMIT',    dur: 9,  hold: 4.6, col: GOLD,
+    caption: 'the V-model, saturated, arrives at the Φ-model — twice-covered, two charts pre-installed' }
+];
+const ACT_STARTS = [];
+let TOTAL = 0;
+ACTS.forEach((a) => { ACT_STARTS.push(TOTAL); TOTAL += a.dur + a.hold; });
+
+const canvas = document.getElementById('scene');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+function instrumentPixelRatio() {
+  const ratio = window.devicePixelRatio || 1;
+  return Math.min(ratio, innerWidth < 720 ? MOBILE_PIXEL_RATIO_CAP : DESKTOP_PIXEL_RATIO_CAP);
+}
+renderer.setPixelRatio(instrumentPixelRatio());
+renderer.setSize(innerWidth, innerHeight);
+renderer.setClearColor(0x050505, 1);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(46, innerWidth / innerHeight, 0.1, 100);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.dampingFactor = 0.06; controls.enablePan = false;
+controls.minDistance = 3.4; controls.maxDistance = 14; controls.autoRotate = false; controls.autoRotateSpeed = 0;
+
+function nowMs() {
+  return (typeof performance !== 'undefined' && typeof performance.now === 'function')
+    ? performance.now()
+    : Date.now();
+}
+
+function scheduleFrame(callback) {
+  let settled = false;
+  const timer = setTimeout(() => {
+    if (settled) return;
+    settled = true;
+    callback(nowMs());
+  }, 1000 / 60);
+  if (typeof requestAnimationFrame !== 'function') return timer;
+  return requestAnimationFrame((time) => {
+    if (settled) return;
+    settled = true;
+    clearTimeout(timer);
+    callback(typeof time === 'number' ? time : nowMs());
+  });
+}
+
+function framePassageCamera() {
+  const portrait = innerWidth < 700 || innerHeight > innerWidth * 1.35;
+  camera.fov = portrait ? 40 : 46;
+  camera.aspect = innerWidth / innerHeight;
+  camera.position.set(portrait ? 1.0 : 3.1, portrait ? 0.9 : 1.7, portrait ? 12.6 : 6.1);
+  controls.target.set(0, portrait ? 0.04 : 0, 0);
+  camera.updateProjectionMatrix();
+  controls.update();
+}
+framePassageCamera();
+
+const root = new THREE.Group(); scene.add(root);
+
+// ---- the live torus family: preallocated LineSegments, recalibrated per sample ----
+const U_RINGS = 26, V_SEG = 72, V_SPOKES = 36, U_SEG = 56;
+const TORUS_SEGMENTS = U_RINGS * V_SEG + V_SPOKES * U_SEG;
+const torusPositions = new Float32Array(TORUS_SEGMENTS * 6);
+const torusMat = new THREE.LineBasicMaterial({ color: GOLD, transparent: true, opacity: 0.3 });
+const torusGeo = new THREE.BufferGeometry();
+torusGeo.setAttribute('position', new THREE.BufferAttribute(torusPositions, 3));
+const torus = new THREE.LineSegments(torusGeo, torusMat);
+root.add(torus);
+
+// surface family (u, v) ↦ ((R + r cos u) cos v, r sin u, (R + r cos u) sin v) — axis vertical
+function writeTorusSegments(target, R, rr) {
+  let n = 0;
+  const push = (x0, y0, z0, x1, y1, z1) => {
+    target[n++] = x0; target[n++] = y0; target[n++] = z0;
+    target[n++] = x1; target[n++] = y1; target[n++] = z1;
+  };
+  for (let k = 0; k < U_RINGS; k++) {
+    const u = (k / U_RINGS) * TAU;
+    const ringR = R + rr * Math.cos(u), y = rr * Math.sin(u);
+    for (let i = 0; i < V_SEG; i++) {
+      const a0 = (i / V_SEG) * TAU, a1 = ((i + 1) / V_SEG) * TAU;
+      push(ringR * Math.cos(a0), y, ringR * Math.sin(a0), ringR * Math.cos(a1), y, ringR * Math.sin(a1));
+    }
+  }
+  for (let j = 0; j < V_SPOKES; j++) {
+    const v = (j / V_SPOKES) * TAU, cv = Math.cos(v), sv = Math.sin(v);
+    for (let i = 0; i < U_SEG; i++) {
+      const u0 = (i / U_SEG) * TAU, u1 = ((i + 1) / U_SEG) * TAU;
+      const w0 = R + rr * Math.cos(u0), w1 = R + rr * Math.cos(u1);
+      push(w0 * cv, rr * Math.sin(u0), w0 * sv, w1 * cv, rr * Math.sin(u1), w1 * sv);
+    }
+  }
+  return n / 3;
+}
+
+// ---- fixed calibration: the Φ-model cage (sphere of radius r) the family approaches, never occupies ----
+root.add(new THREE.Mesh(new THREE.SphereGeometry(r, 48, 32),
+  new THREE.MeshBasicMaterial({ color: WHITE, wireframe: true, transparent: true, opacity: 0.035 })));
+// the worldline axis
+root.add(new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, -r * 1.7, 0), new THREE.Vector3(0, r * 1.7, 0)]),
+  new THREE.LineBasicMaterial({ color: 0x3a3a3a, transparent: true, opacity: 0.4 })));
+// speed-limit tick rings at y = ±r: the saturation the overlap approaches, never occupies
+function axisRing(y, radius, color, opacity, tube = 0.008) {
+  const mesh = new THREE.Mesh(
+    new THREE.TorusGeometry(radius, tube, 10, 120),
+    new THREE.MeshBasicMaterial({ color, transparent: true, opacity })
+  );
+  mesh.rotation.x = Math.PI / 2;
+  mesh.position.y = y;
+  return mesh;
+}
+root.add(axisRing(r, 0.34, WHITE, 0.16), axisRing(-r, 0.34, WHITE, 0.16));
+const cageLabel = createTextSprite(THREE, '±r = c · never occupied', { color: '#9CA3AF', align: 'center', scale: [1.15, 0.16] });
+cageLabel.material.opacity = 0.55;
+cageLabel.position.set(-(r + 1.05), r + 0.02, 0);
+root.add(cageLabel);
+// the 45° station rings at y = ±r/√2 (overlap height when sinh w = 1)
+const stationRings = [axisRing(r * Math.SQRT1_2, 0.3, GOLD, 0.08), axisRing(-r * Math.SQRT1_2, 0.3, GOLD, 0.08)];
+stationRings.forEach((m) => root.add(m));
+
+// ---- the overlap bar on the axis: half-height r·tanh(w) = r·β, saturating at r ----
+const overlapMat = new THREE.LineBasicMaterial({ color: CRIMSON, transparent: true, opacity: 0.9 });
+const overlapLine = new THREE.Line(
+  new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]), overlapMat);
+root.add(overlapLine);
+const overlapCaps = [1, -1].map((s) => {
+  const cap = new THREE.Mesh(new THREE.SphereGeometry(0.035, 12, 12),
+    new THREE.MeshBasicMaterial({ color: CRIMSON, transparent: true, opacity: 0.95 }));
+  cap.position.set(0, 0, 0); root.add(cap); return cap;
+});
+
+// ---- act 3 glyph geography (fades in as the family nears the limit) ----
+const glyphGroup = new THREE.Group(); root.add(glyphGroup);
+const southDot = new THREE.Mesh(new THREE.SphereGeometry(0.05, 16, 16),
+  new THREE.MeshBasicMaterial({ color: 0x9CA3AF, transparent: true, opacity: 0.9 }));
+southDot.position.set(0, -r, 0); glyphGroup.add(southDot);
+const equatorRing = axisRing(0, r, GOLD, 0.6, 0.012); glyphGroup.add(equatorRing);
+const northRing = axisRing(r, 0.085, WHITE, 0.85, 0.01); glyphGroup.add(northRing);
+const southLabel = createTextSprite(THREE, '•  0 — the floor', { color: '#9CA3AF', align: 'center', scale: [1.1, 0.16] });
+southLabel.position.set(0, -r - 0.34, 0); glyphGroup.add(southLabel);
+const equatorLabel = createTextSprite(THREE, '⊙  |z| = 1 — the present', { color: '#FFEB3B', align: 'center', scale: [1.3, 0.18] });
+equatorLabel.position.set(r + 1.05, 0.16, 0); glyphGroup.add(equatorLabel);
+const northLabel = createTextSprite(THREE, '○  ∞ — the gathered endless', { color: '#F3F4F6', align: 'center', scale: [1.3, 0.18] });
+northLabel.position.set(0, r + 0.36, 0); glyphGroup.add(northLabel);
+const glyphBase = new Map();
+glyphGroup.traverse((obj) => { if (obj.material) glyphBase.set(obj, obj.material.opacity); });
+
+// ---- strip chart: overlap saturation, target band at the speed limit ----
+const overlapStrip = createStripChart(THREE, {
+  origin: new THREE.Vector3(-2.78, -1.9, 0.06),
+  width: 2.22,
+  height: 0.5,
+  color: TEAL,
+  max: 144,
+  label: 'overlap = tanh w',
+  labelColor: TEAL,
+  targetValue: 1,
+  targetBand: [0.94, 1],
+  targetColor: GOLD
+});
+root.add(overlapStrip.group);
+
+// ---- DOM wiring ----
+const els = {
+  lvl: document.getElementById('p-lvl'),
+  op: document.getElementById('p-op'),
+  tier: document.getElementById('p-tier'),
+  panel: document.getElementById('panel'),
+  w: document.getElementById('p-w'),
+  beta: document.getElementById('p-beta'),
+  gamma: document.getElementById('p-gamma'),
+  rhoK: document.getElementById('p-rho-k'),
+  rho: document.getElementById('p-rho'),
+  ov: document.getElementById('p-ov'),
+  dtau: document.getElementById('p-dtau'),
+  chart: document.getElementById('p-chart'),
+  residual: document.getElementById('p-residual')
+};
+const capAct = document.getElementById('cap-act');
+const capText = document.getElementById('cap-text');
+const capTier = document.getElementById('cap-tier');
+const stationChip = document.getElementById('station-chip');
+const stationFlashEl = document.getElementById('station-flash');
+const positionScrub = document.getElementById('position-scrub');
+const stageReadout = document.getElementById('stage-readout');
+const scanToggle = document.getElementById('scan-toggle');
+const positionStep = document.getElementById('position-step');
+const positionZero = document.getElementById('position-zero');
+const scanRate = document.getElementById('scan-rate');
+const scanRateValue = document.getElementById('scan-rate-value');
+const telemetry = document.getElementById('passage-telemetry');
+const measurements = document.getElementById('passage-measurements');
+const labFrame = document.querySelector('.lab-frame');
+
+let masterT = 0;                       // sample-clock seconds along the looping timeline
+let playing = !REDUCED_MOTION;
+let prevW = 0;
+let stationFlash = 0;
+let lastFrame = 0;
+let fps = 0;
+let sampleAccumulatorMs = 0;
+let sampleIndex = 0;
+let lastCaptionKey = '';
+
+function rateValue() {
+  return scanRate ? parseFloat(scanRate.value) / 100 : 1;
+}
+
+function setTelemetry(fields) {
+  if (!telemetry) return;
+  Object.entries(fields).forEach(([key, value]) => {
+    const el = telemetry.querySelector('[data-field="' + key + '"]');
+    if (el) el.textContent = value;
+  });
+}
+
+function clamp01(value) {
+  return Math.max(0, Math.min(1, Number.isFinite(value) ? value : 0));
+}
+
+function setMeasurements(signals) {
+  if (!measurements) return;
+  ['primary', 'secondary', 'error'].forEach((key) => {
+    const meter = measurements.querySelector('[data-signal="' + key + '"]');
+    if (!meter) return;
+    const value = clamp01(signals[key]);
+    const label = signals[key + 'Label'] || key;
+    const text = signals[key + 'Text'] || value.toFixed(3);
+    const labelEl = meter.querySelector('span');
+    const valueEl = meter.querySelector('em');
+    const barEl = meter.querySelector('b');
+    if (labelEl) labelEl.textContent = label;
+    if (valueEl) valueEl.textContent = text;
+    if (barEl) barEl.style.transform = 'scaleX(' + value.toFixed(4) + ')';
+  });
+}
+
+function advanceSamples(frameMs, rate = 1) {
+  sampleAccumulatorMs += Math.min(Math.max(frameMs, 0), MAX_FRAME_MS) * rate;
+  const steps = Math.min(12, Math.floor(sampleAccumulatorMs / SAMPLE_MS));
+  if (steps > 0) {
+    sampleAccumulatorMs -= steps * SAMPLE_MS;
+    sampleIndex += steps;
+  }
+  return steps * SAMPLE_MS;
+}
+
+function sampleLabel() {
+  return SAMPLE_HZ + 'Hz n' + String(sampleIndex).padStart(5, '0');
+}
+
+function displayLabel() {
+  if (REDUCED_MOTION) return 'static frame';
+  if (!Number.isFinite(fps) || fps <= 0) return 'display sync';
+  return 'display ' + Math.min(120, Math.max(1, Math.round(fps))) + 'Hz';
+}
+
+function smooth01(x) {
+  const c = clamp01(x);
+  return c * c * (3 - 2 * c);
+}
+
+function timelineState(t) {
+  const tm = ((t % TOTAL) + TOTAL) % TOTAL;
+  let acc = 0;
+  for (let i = 0; i < ACTS.length; i++) {
+    const a = ACTS[i];
+    if (tm < acc + a.dur) return { i, p: (tm - acc) / a.dur, holding: false, tm };
+    if (tm < acc + a.dur + a.hold) return { i, p: 1, holding: true, tm };
+    acc += a.dur + a.hold;
+  }
+  return { i: ACTS.length - 1, p: 1, holding: true, tm };
+}
+
+function syncPlayButton() {
+  if (!scanToggle) return;
+  scanToggle.textContent = playing ? 'HOLD' : 'PLAY';
+  scanToggle.setAttribute('aria-pressed', playing ? 'false' : 'true');
+  if (scanRateValue) scanRateValue.textContent = rateValue().toFixed(2) + 'x';
+}
+
+// single writer: recomputes the family, the chart, and every HUD surface from masterT
+function applyState(sampledMs = 0, manual = false) {
+  const st = timelineState(masterT);
+  const act = ACTS[st.i];
+
+  // the real hyperbolic chart — every displayed number derives from these calls
+  let w, rho, opening = false;
+  if (st.i === 0) {
+    w = 0;
+    rho = smooth01(st.p);              // R/r: 0 → 1, the sphere opens into the horn torus
+    opening = true;
+  } else if (st.i === 1) {
+    w = W_BOOST * smooth01(st.p);      // rapidity drive
+    rho = 1 / Math.cosh(w);            // R/r = sech w = 1/γ — the mouth contraction
+  } else {
+    // approached, never attained: ease asymptotically toward W_CAP, never snap to R = 0
+    w = W_BOOST + (W_CAP - W_BOOST) * (1 - Math.exp(-2.5 * st.p));
+    rho = 1 / Math.cosh(w);
+  }
+  const beta = Math.tanh(w);
+  const gamma = Math.cosh(w);
+  const phi = Math.exp(w);
+  const nu = Math.exp(-w);
+  const residual = Math.abs(phi * nu - 1);
+  const dtau = 1 / gamma;
+  const overlap = r * beta;            // axis overlap half-height, saturating at r (the speed limit as geometry)
+
+  // 45° station: one-beat golden highlight when sinh(w) = 1 is crossed upward
+  if (prevW < W_STAR && w >= W_STAR) stationFlash = 1;
+  prevW = w;
+
+  // geometry
+  const R = rho * r;
+  torusGeo.setDrawRange(0, writeTorusSegments(torusPositions, R, r));
+  torusGeo.attributes.position.needsUpdate = true;
+  torusMat.opacity = 0.3 + stationFlash * 0.3;
+  torusMat.color.setHex(stationFlash > 0.4 ? GOLD_BRIGHT : GOLD);
+  overlapLine.geometry.setFromPoints([new THREE.Vector3(0, -overlap, 0), new THREE.Vector3(0, overlap, 0)]);
+  overlapCaps[0].position.y = overlap;
+  overlapCaps[1].position.y = -overlap;
+  const overlapVisible = overlap > 0.004;
+  overlapLine.visible = overlapVisible;
+  overlapCaps.forEach((cap) => { cap.visible = overlapVisible; });
+  stationRings.forEach((m) => { m.material.opacity = 0.08 + stationFlash * 0.5; });
+
+  // glyph geography fades in through act 3
+  const glyphAlpha = st.i === 2 ? smooth01(Math.min(1, st.p * 1.5)) : 0;
+  glyphGroup.visible = glyphAlpha > 0.01;
+  glyphBase.forEach((base, obj) => { obj.material.opacity = base * glyphAlpha; });
+
+  if (labFrame) {
+    labFrame.style.setProperty('--instrument-phase', (st.tm / TOTAL).toFixed(4));
+    labFrame.style.setProperty('--instrument-primary', beta.toFixed(4));
+  }
+
+  // captions (tier-carrying; act 2 swaps to its second line past midpoint)
+  let caption = act.caption;
+  if (st.i === 1 && act.captionB && (st.p > 0.55 || st.holding)) caption = act.captionB;
+  const captionKey = st.i + (caption === act.captionB ? 'b' : 'a');
+  if (captionKey !== lastCaptionKey) {
+    lastCaptionKey = captionKey;
+    if (capAct) capAct.textContent = act.label;
+    if (capText) capText.textContent = caption;
+    if (capTier) capTier.textContent = '[I]';
+  }
+
+  // station chrome
+  if (stationChip) stationChip.classList.toggle('live', stationFlash > 0.03);
+  if (stationFlashEl) stationFlashEl.style.opacity = (stationFlash * 0.22).toFixed(3);
+
+  // panel
+  const colHex = '#' + act.col.toString(16).padStart(6, '0');
+  els.lvl.textContent = 'ACT ' + (st.i + 1) + ' / 3 · ' + act.name.toUpperCase() + (st.holding ? ' · HOLD' : '');
+  els.op.textContent = act.name;
+  els.tier.textContent = '[A] family geometry · [I] emblem';
+  els.tier.style.color = colHex;
+  els.panel.style.borderLeftColor = colHex;
+  els.w.textContent = w.toFixed(3);
+  els.beta.textContent = beta.toFixed(4);
+  els.gamma.textContent = gamma.toFixed(3);
+  els.rhoK.textContent = opening ? 'R/r · opening' : 'R/r = sech w = 1/γ';
+  els.rho.textContent = rho.toFixed(4);
+  els.ov.textContent = beta.toFixed(4) + ' · r';
+  els.dtau.textContent = dtau.toFixed(4);
+  els.chart.textContent = phi.toFixed(phi >= 100 ? 1 : 2) + ' · ' + (nu < 0.01 ? nu.toExponential(2) : nu.toFixed(4));
+  els.residual.textContent = '|φν−1| ' + residual.toExponential(1);
+
+  updateStripChart(THREE, overlapStrip, beta, 0, 1, manual || sampledMs > 0 || overlapStrip.samples.length === 0);
+
+  setTelemetry({
+    fps: displayLabel(),
+    sample: REDUCED_MOTION ? 'sample static' : sampleLabel(),
+    time: 't+' + st.tm.toFixed(2) + 's',
+    phase: 'act ' + (st.i + 1) + '/3 · p ' + st.p.toFixed(2) + (st.holding ? ' hold' : ''),
+    metric: 'β ' + beta.toFixed(3) + ' · γ ' + gamma.toFixed(2) + ' · R/r ' + rho.toFixed(3),
+    uncertainty: 'σ φν ' + residual.toExponential(1),
+    state: (playing ? 'RUN' : 'HOLD') + ' · ' + rateValue().toFixed(2) + 'x'
+  });
+  setMeasurements({
+    primary: beta,
+    primaryLabel: 'β',
+    primaryText: beta.toFixed(3),
+    secondary: rho,
+    secondaryLabel: 'R/r',
+    secondaryText: rho.toFixed(3),
+    error: residual * 1e6,
+    errorLabel: 'φν σ',
+    errorText: residual.toExponential(1)
+  });
+  if (stageReadout) {
+    stageReadout.textContent = innerWidth < 900
+      ? 'PASSAGE INSTRUMENT\n' +
+        'ACT ' + (st.i + 1) + '/3 · ' + act.name.toUpperCase() + ' · ' + (playing ? 'RUN' : 'HOLD') + '\n' +
+        'w=' + w.toFixed(3) + ' · β=' + beta.toFixed(3) + ' · γ=' + gamma.toFixed(2) + ' · R/r=' + rho.toFixed(3) + '\n' +
+        '|φν−1|=' + residual.toExponential(1) + ' · [I] emblem'
+      : 'PASSAGE INSTRUMENT\n' +
+        'ACT ' + (st.i + 1) + '/3 · ' + act.name.toUpperCase() + ' · p ' + st.p.toFixed(2) + (st.holding ? ' · HOLD BEAT' : '') + '\n' +
+        'w=' + w.toFixed(3) + ' · β=tanh w=' + beta.toFixed(4) + ' · γ=cosh w=' + gamma.toFixed(3) + '\n' +
+        'R/r=sech w=' + rho.toFixed(4) + ' · overlap=r·tanh w=' + beta.toFixed(4) + 'r · dτ/dt=' + dtau.toFixed(4) + '\n' +
+        'φ=e^w=' + phi.toFixed(2) + ' · ν=e^−w=' + nu.toExponential(2) + ' · |φν−1|=' + residual.toExponential(1) + '\n' +
+        'clock ' + (REDUCED_MOTION ? 'static' : sampleLabel()) + ' · ' + (playing ? 'RUN' : 'HOLD') + ' · rate ' + rateValue().toFixed(2) + 'x\n' +
+        'tier: [A] torus family geometry · [I] relativistic emblem — approached, never occupied';
+  }
+  if (positionScrub && !manual) positionScrub.value = String(Math.round((st.tm / TOTAL) * 1000));
+}
+
+syncPlayButton();
+applyState(0, true);
+
+if (scanToggle) scanToggle.addEventListener('click', () => {
+  playing = !playing;
+  syncPlayButton();
+  applyState(0, false);
+  if (REDUCED_MOTION) render(nowMs());
+});
+if (positionStep) positionStep.addEventListener('click', () => {
+  playing = false;
+  syncPlayButton();
+  const st = timelineState(masterT);
+  masterT = ACT_STARTS[(st.i + 1) % ACTS.length];
+  applyState(0, true);
+  if (REDUCED_MOTION) render(nowMs());
+});
+if (positionZero) positionZero.addEventListener('click', () => {
+  playing = false;
+  masterT = 0;
+  prevW = 0;
+  stationFlash = 0;
+  sampleAccumulatorMs = 0;
+  sampleIndex = 0;
+  clearStripChart(THREE, overlapStrip);
+  syncPlayButton();
+  applyState(0, true);
+  if (REDUCED_MOTION) render(nowMs());
+});
+if (positionScrub) positionScrub.addEventListener('input', () => {
+  playing = false;
+  syncPlayButton();
+  masterT = (Number(positionScrub.value) / 1000) * TOTAL;
+  applyState(0, true);
+  if (REDUCED_MOTION) render(nowMs());
+});
+if (scanRate) scanRate.addEventListener('input', () => {
+  syncPlayButton();
+  applyState(0, false);
+});
+
+function render(time = 0) {
+  const now = typeof time === 'number' ? time : nowMs();
+  const dt = lastFrame ? Math.max(1, now - lastFrame) : 16.7;
+  fps = fps ? fps * 0.9 + (1000 / dt) * 0.1 : 1000 / dt;
+  lastFrame = now;
+  let sampledMs = 0;
+  if (playing) {
+    sampledMs = advanceSamples(dt, rateValue());
+    masterT += sampledMs / 1000;
+  }
+  if (stationFlash > 0) stationFlash = Math.max(0, stationFlash - dt / 1400);
+  applyState(sampledMs, false);
+  if (stageReadout) stageReadout.dataset.fps = displayLabel();
+  controls.update();
+  renderer.render(scene, camera);
+  if (!REDUCED_MOTION) scheduleFrame(render);
+}
+controls.addEventListener('change', () => {
+  if (REDUCED_MOTION) render(nowMs());
+});
+if (REDUCED_MOTION) {
+  masterT = 3.5;                      // a readable mid-act-1 pose for static frames
+  applyState(0, true);
+  render(0);
+} else {
+  scheduleFrame(render);
+}
+addEventListener('resize', () => {
+  framePassageCamera();
+  renderer.setPixelRatio(instrumentPixelRatio());
+  renderer.setSize(innerWidth, innerHeight);
+  if (REDUCED_MOTION) render(0);
+});
+</script>
+
+<footer class="site-footer">
+  <div class="phi">⊙ = • × ○</div>
+  <p>Emergentism · The Passage instrument</p>
+</footer>
+
+</body>
+</html>
