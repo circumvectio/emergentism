@@ -5,10 +5,10 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Executive"
   regime: "Kṣatriya"
-  register: "[D] staged-per-tier — the ledger rows are [B] dated events; per-row provenance cited; the assembly executes the K2-signed line 2026-07-20 (receipt 145)"
+  register: "[D] staged-per-tier — the ledger rows are [B] dated events; per-row provenance cited; the assembly executes the K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE)"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145)"
+status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE, which closed the 145-vs-145 fork)"
 date: 2026-07-20
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft formerly at this path (same content, pre-signature) — source draft 00_K7_RECORD.md remains at root pending orchestrator tombstone"
@@ -92,10 +92,11 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 141 / 141A | Sovereign execution · Witness attestation & writer freeze | Disputed/attested provenance for the sitting; resolved under 145 per the 00:01 line. |
 | 142–143 | Magnum Opus reconciliation manifest · verification | Pending-execution manifest; verification pass, 2026-07-19. |
 | 144 | Corrected receipt-139 natural-person signature | Selective adoption (boxes 1, 2, 4, 5, 7, 8, 9; box 3 declined; box 6 + 10–15 deferred); no physical execution authorized. |
-| 145 | **Two receipts share this №** — Authority Fork Resolution · Independent Final Review | See the collision census (§6). The successor wave executed under the 00:01 line per 145 Authority Fork Resolution. |
-| 146 | Papers lens closure | 2026-07-20. |
+| 145 | **Two receipts share this №** — Authority Fork Resolution · Independent Final Review | See the collision census (§6). The successor wave executed under the 00:01 line per 145 Authority Fork Resolution; that receipt **stands as authority of record per receipt 146** (which closed its internal self-disputing banner). |
+| 146 | **Two receipts share this №** — Founder Ruling: EXECUTE · Papers lens closure | `146_FOUNDER_RULING_EXECUTE_2026_07_20.md` is the **authority of record for all execution waves**: the founder's one-word "execute" (06:17) that closed the 145-vs-145 fork — the 00:01 line governs, receipt 144 superseded per 145 §3, the NO-GO review preserved as K3 dissent. `146_PAPERS_LENS_CLOSURE_2026_07_20.md` records the Papers lens closure. 2026-07-20. |
+| 147 | Post-audit reconciliation | Mechanical audit-trio findings repaired forward (all additive); revert calls overruled by receipt 146; register regenerated clean. 2026-07-20. |
 
-**Post-signature state (2026-07-20, recorded not resolved).** Receipt 139 stands signed in two dated file forms. The founder's 00:01 line (*"boxes 1–9; charter = DRAFT; K6 = 12 at slot 06; …"*, recorded in 145 Authority Fork Resolution) is the authority under which this successor wave (K5/K6/K7) executed. Standing in recorded dispute: receipt 144 (selective adoption), the self-disputing banner inside 145 Authority Fork Resolution itself ("receipt 144 remains controlling"), and 145 Independent Final Review (signature valid; physical execution NO-GO). **This ledger records the fork; it does not resolve it.** `[B]` the dated files; `[D]` the authority reading, pending any founder countersign. The pre-sitting standing fact (receipt 136: A1–A7 operational) is preserved as the state the sitting superseded.
+**Post-signature state (2026-07-20, recorded not resolved).** Receipt 139 stands signed in two dated file forms. The founder's 00:01 line (*"boxes 1–9; charter = DRAFT; K6 = 12 at slot 06; …"*, recorded in 145 Authority Fork Resolution) is the authority under which this successor wave (K5/K6/K7) executed. Formerly standing in recorded dispute: receipt 144 (selective adoption), the self-disputing banner inside 145 Authority Fork Resolution itself ("receipt 144 remains controlling"), and 145 Independent Final Review (signature valid; physical execution NO-GO). **Receipt 146 (Founder Ruling — EXECUTE, 06:17) closed the fork:** the founder ruled "execute" with the NO-GO review on the table, so receipt 145 Authority Fork Resolution stands as authority of record, receipt 144 is superseded per 145 §3, and the Independent Final Review is preserved as K3 dissent (its technical findings remain open maintenance items, not authority). `[B]` the dated files; `[S]` the founder's ruling; the fork is resolved, not merely recorded. The pre-sitting standing fact (receipt 136: A1–A7 operational) is preserved as the state the sitting superseded.
 
 ---
 
@@ -179,6 +180,9 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 141 / 141A | `141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md` | 2026-07-19 | Witness attestation & writer freeze (letter-suffix disambiguated) |
 | 145 | `145_AUTHORITY_FORK_RESOLUTION_2026_07_20.md` | 2026-07-20 | Authority fork resolution — 00:01 line supersedes r144; **carries an internal self-disputing banner ("receipt 144 remains controlling")** |
 | 145 | `145_INDEPENDENT_FINAL_REVIEW_AND_WORLD_GATED_REMAINDER_2026_07_20.md` | 2026-07-20 | Independent final review — corrected-139 signature valid; physical execution NO-GO; world-gated remainder |
+| 146 | `146_FOUNDER_RULING_EXECUTE_2026_07_20.md` | 2026-07-20 | Founder ruling "execute" — **authority of record for all execution waves**; closed the 145-vs-145 fork |
+| 146 | `146_PAPERS_LENS_CLOSURE_2026_07_20.md` | 2026-07-20 | Papers lens closure (same № as the Founder Ruling — cite the full filename) |
+| 147 | `147_POST_AUDIT_RECONCILIATION_2026_07_20.md` | 2026-07-20 | Post-audit reconciliation — single file at this prefix (no collision); listed for census completeness |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.
@@ -190,6 +194,6 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 
 ## Execution surface
 
-`[D]` staged-per-tier — **ACTIVE under the K2-signed line 2026-07-20 (receipt 145)**. This surface *routes* the audit sources beneath one kernel record; the sources (`00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, the postures doc) remain controlling. The public `12_PUBLIC_SITE/record/` lane is still a stub; consolidating the receipts + the tombstone catalog into it is Final Outline **W/O-3**, a founder-gated close-out. **Agents:** never log a fired kill as a pass (row 22 is why); never erase a tombstone (K3); cite receipts by full filename where §6 lists a collision; the next entry comes from contact. **Canonical path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`. Source draft: `01_EMERGENTISM/00_K7_RECORD.md` (staged 2026-07-19; absorbed here).
+`[D]` staged-per-tier — **ACTIVE under the K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE)**. This surface *routes* the audit sources beneath one kernel record; the sources (`00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, the postures doc) remain controlling. The public `12_PUBLIC_SITE/record/` lane is still a stub; consolidating the receipts + the tombstone catalog into it is Final Outline **W/O-3**, a founder-gated close-out. **Agents:** never log a fired kill as a pass (row 22 is why); never erase a tombstone (K3); cite receipts by full filename where §6 lists a collision; the next entry comes from contact. **Canonical path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`. Source draft: `01_EMERGENTISM/00_K7_RECORD.md` (staged 2026-07-19; absorbed here).
 
 ⊙ = • × ○ — *every grave dated, every kill legible, and one line left blank for the world to write.*

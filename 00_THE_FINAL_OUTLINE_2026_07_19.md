@@ -8,9 +8,22 @@ rosetta:
   register: "[D] STAGED — a suggestion, not an execution. Nothing on this page moves, signs, purges, or tombstones anything."
 title: "The Final Outline — Emergentism pillar after full distillation"
 status: "STAGED [D] 2026-07-19 — Wave 3 architecture proposal. Rule zero honored: every surface named below already exists, or is explicitly marked a work order. No new doctrine; no eighth surface."
-parent: "00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md (the spec this outline maps)"
+parent: "00_THE_KERNEL_INDEX.md (the spec this outline maps)"
 date: 2026-07-19
 ---
+
+> **⚠️ SUPERSEDED-STATE BANNER (added 2026-07-20, receipt 146).** This is a
+> **historical `[D]` proposal** written *before* the signing. The signing has
+> since happened (receipt 139 boxes 1–2 signed at the 00:01 line, executed by
+> authority receipt 146). The Door and Index are now named
+> `00_THE_WELTANSCHAUUNG.md` / `00_THE_KERNEL_INDEX.md` (suffixes dropped), and the
+> K-5 / K-6 / K-7 gaps this outline lists as MISSING/PARTIAL are now **seated**:
+> K-5 → `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` (staged successor
+> `00_META/00_K5_THE_REFUSALS.md`), K-6 → `06_ONTOLOGY/06_THE_REVELATIONS.md`
+> (ACTIVE, 12 at slot 06), K-7 → `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`.
+> Read this document as provenance of the pre-signature plan, not as current
+> state; every `_PENDING_SIGNATURE` filename and "awaiting signature" phrase below
+> is pre-heal wording. For current state, read the Door and the Kernel Index.
 
 # The Final Outline — Emergentism, distilled
 

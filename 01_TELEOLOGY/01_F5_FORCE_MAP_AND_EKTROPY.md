@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L1
+  primary_column: Teleology
+  operator: "Kali 🎲"
+  tier: "Demon"
+  regime: "Caṇḍāla"
+  register: "[S/I]"
+  canonical_phrase: "F5 Force Map and Ektropy"
+---
+
+---
 title: "The 7 Generative Actions and Ektropy"
 type: objective function-doctrine
 status: v2.0

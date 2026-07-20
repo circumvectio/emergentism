@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
 type: emergentism-creed
 title: "The Creed and the Spiral"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure Weltanschauung expansion; companion to the signed E1–E10 successor set."
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure Weltanschauung expansion; companion to the staged E1–E10 successor-candidate set (03_THE_EMERGENT_AXIOMS.md; box 3(b) — A1–A7 remains operational, E1–E10 staged)."
 evidence_tier: "Per clause below; assembly staged [D], promoted per the 00:01 line (receipt 145/146)"
 owner: 01_EMERGENTISM
 scope_lock: "Philosophy only. No Skyzai warrant."

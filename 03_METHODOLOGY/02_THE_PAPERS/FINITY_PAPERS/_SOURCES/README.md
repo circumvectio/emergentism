@@ -19,8 +19,8 @@ status: "ACTIVE provenance record — 2026-06-06. Full 11-paper corpus tracked. 
 **Class:** third-party **published reference** material — *not* Magnum Opus canon.
 
 **Policy.** Per the K2-signed published-reference-PDF discipline
-([`/90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md`](../../../../../90_ARCHIVE/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md),
-founder sign-off 2026-05-27), published third-party PDFs are **kept on disk but git-ignored**, with a
+(founder sign-off 2026-05-27; the policy tombstone formerly at the pre-2026-04-25 `90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md` path is no longer tracked in the corpus),
+published third-party PDFs are **kept on disk but git-ignored**, with a
 tracked bibliographic record (this file) and a public re-acquisition route. The bytes are re-downloadable
 from the public source of record (PhilArchive, where available). The `.gitignore` rule lives at repo root under
 "Finity Papers external source PDFs (Suda 2025)".

@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L5
+  primary_column: Cosmology
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[S/I]"
+  canonical_phrase: "The Burri Rules — derivation ledger"
+---
+
+---
 title: "The Burri Rules — derivation ledger (full)"
 date: 2026-07-10
 status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The full per-line ledger (30 items, 14 downgrade rules) is canonical. Generated verbatim from the tier-audit of workflow wf_0101b320-ad9 (42 agents); adjudications and downgrades K2-accepted in session 2026-07-10 (receipt 104). File rename owed: 00_THE_BURRI_RULES_LEDGER.md (this file) replaces 05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER_PENDING_K2.md. Open Canon Covenant §4.4 honored."

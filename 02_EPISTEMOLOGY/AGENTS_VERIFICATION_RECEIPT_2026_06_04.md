@@ -41,7 +41,7 @@ rosetta:
 - Added exception discipline table (standard rule vs memetics exception)
 - Added boundary note: memetics analysis ≠ claim truth (virality ≠ veracity)
 - Added K3 preservation note for legacy `[E]` tier documents
-- Added routing: formal evidence questions → `../01_EVIDENCE_TIERS/`
+- Added routing: formal evidence questions → `01_EVIDENCE_TIERS/`
 
 ## Pre-Existing Files (Unchanged)
 

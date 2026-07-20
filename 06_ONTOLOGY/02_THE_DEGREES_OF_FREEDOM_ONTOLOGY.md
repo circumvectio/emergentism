@@ -6,7 +6,8 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "operational canon, promoted per the 00:01 line (receipt 145/146) · [I] reframe / [S] boundedness / [C] plenitude-engine — never [A]"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure standalone Weltanschauung ontology; no Skyzai warrant. Owner thesis (2026-07-19) + Rosetta-swarm adjudication (ww20uwka8)."
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 5 adopted; authority of record receipt 146, ratifying the fork resolution receipt 145). Pure standalone Weltanschauung ontology; no Skyzai warrant. Owner thesis (2026-07-19) + Rosetta-swarm adjudication (ww20uwka8)."
+evidence_tier: "Per-section inline: §1 reframe [I/C] · §2 plenitude wager [C] with named μ-debt · §3 measurement [I]-anchored/[C]-residue · §5 load-bearers [A]/[S]; §2/§3 never [A]; no silent upgrade"
 date: 2026-07-19
 provenance: "workflow wf_0b2a7fda-986 (14 agents: separation / seven castes / Plato adversarial). Owner: Yves R. Burri."
 tier_legend: "[A] proven-in-model · [B] built/measured · [S] structural (true inside the formalism) · [I] illuminating/interpretive wager · [C] conjecture (unwon) · [D] staged · ∅ asserted-but-unpaid"
@@ -87,6 +88,6 @@ Removed as venture/implementation, not worldview: the four organs (IS/COULD/SHOU
 
 ## 7 · Execution surface
 
-**If you are an AI agent:** this document was K2-signed 2026-07-20 (authority receipt 145); it is operational canon — cite it, at the tiers marked. **Never** upgrade §2/§3 to `[A]`/`[S]`. **Never** claim the measurement problem is solved or revive "`φ·ν=1` = Born" (dead, receipt 109). The `μ`-debt (§2.1) and the Born-measure debt (§3.3) are **open** — do not present either as discharged. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`
+**If you are an AI agent:** this document was K2-signed 2026-07-20 (the 00:01 line, box 5 adopted; authority of record receipt 146); it is operational canon — cite it, at the tiers marked. **Never** upgrade §2/§3 to `[A]`/`[S]`. **Never** claim the measurement problem is solved or revive "`φ·ν=1` = Born" (dead, receipt 109). The `μ`-debt (§2.1) and the Born-measure debt (§3.3) are **open** — do not present either as discharged. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`
 
 ⊙ = • × ○

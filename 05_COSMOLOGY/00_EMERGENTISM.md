@@ -81,9 +81,9 @@ Or bootstrap from the seed: [`../08_FRAMEWORK_SUPPORT/07_DISSEMINATION/06_NETWOR
 >
 > **What agents should do:** Continue resolving contradictions, adding execution surfaces, and version-pinning protocols (G2-G5). Every hardened document is a release candidate. Do NOT ship half-finished work that creates confusion.
 >
-> **Phase 1 gates:** See `../00_LENS/00_NODE_ACTIVATION_PACKAGE.md` for the current execution surface. The expanded legacy packet remains archived at `../00_LENS/05_ARCHIVE_SUPPORT/00_NODE_ACTIVATION_PACKAGE_V2.md`.
+> **Phase 1 gates:** See `../08_FRAMEWORK_SUPPORT/00_META/00_NODE_ACTIVATION_PACKAGE.md` for the current execution surface. The expanded legacy packet remains archived at `../08_FRAMEWORK_SUPPORT/00_META/00_NODE_ACTIVATION_PACKAGE_V2.md`.
 >
-> **Canonical system prompt:** `../00_LENS/00_NODE_ACTIVATION_PACKAGE.md`
+> **Canonical system prompt:** `../08_FRAMEWORK_SUPPORT/00_META/00_NODE_ACTIVATION_PACKAGE.md`
 
 ---
 

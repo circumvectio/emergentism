@@ -145,7 +145,7 @@ L1 (perceive) → L2 (explore) → L3 (rank) → L4 (execute with K2 bind)
 | [\`00_THE_MASTER_ROSETTA.md\`](../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | Canonical cross-domain table |
 | [\`00_GENERATIVE_TABLE.md\`](../03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md) | Operator x geometry core |
 | [\`03_ROSETTA_DAC_OPERATING_SYSTEM.md\`](../03_EVIDENCE/ROSETTA_STONE/03_ROSETTA_DAC_OPERATING_SYSTEM.md) | Organism application |
-| [`rosetta_agent_rows.toml`](../../../.codex/agents/rosetta_agent_rows.toml) | Machine-readable row registry |
+| `rosetta_agent_rows.toml` | Machine-readable row registry — lives in external `.codex/agents/` tooling (not tracked in this repo); no in-repo link |
 
 ## Relationship to Skyzai Agents
 

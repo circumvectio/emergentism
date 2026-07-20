@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced:",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2955,
+      "tracked_file_count": 2957,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1520,7 +1520,7 @@
       "owns": "> The compressed kernel. See `../11_UPLINK/00_CORE/00_INDEX.md` for the master route.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 14,
+      "tracked_file_count": 15,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1546,7 +1546,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 472,
+      "tracked_file_count": 473,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1754,7 +1754,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 142,
+      "tracked_file_count": 143,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

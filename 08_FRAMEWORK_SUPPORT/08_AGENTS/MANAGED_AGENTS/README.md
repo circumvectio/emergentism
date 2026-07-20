@@ -170,6 +170,8 @@ MANAGED_AGENTS/
 └── run_session.py                  ← data-plane entry: one L4 (Arjuna) session, stream-first
 ```
 
+> `agents/` holds provisioning YAML only (one `*.agent.yaml` per caste) — a machine-config leaf with **no front-door triplet (README/AGENTS/CLAUDE) by design**; its routing front door is this file, and each YAML is annotated in the tree above.
+
 Canon: [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) ·
 [`../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) ·
 [`../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)

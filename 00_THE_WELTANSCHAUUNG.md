@@ -5,10 +5,10 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] STAGED — PENDING FOUNDER SIGNATURE. Per Rule zero, no in-stream 'yes', commit, or agent-written signature block is canon adoption."
-  canonical_phrase: "The Emergentist Weltanschauung — the shrine before the signing"
-title: "The Emergentist Weltanschauung (PENDING SIGNATURE)"
-status: "[D] STAGED — receipt 135 is provisional; no completed founder-promotion receipt exists (receipt 136)"
+  register: "[D] — adopted as the subordinate reader Door per receipt 139 box 1 (00:01 line, 2026-07-20) / authority receipt 146; inline per-clause tiers govern. Reader surface, never source authority where an owner surface or receipt conflicts."
+  canonical_phrase: "The Emergentist Weltanschauung — the Door, the subordinate reader surface"
+title: "The Emergentist Weltanschauung"
+status: "[D] — adopted as the subordinate reader Door per receipt 139 box 1 (signed 2026-07-20 00:01 line) / authority receipt 146; inline per-clause tiers govern. Box 3(b): E1–E10 remains staged, A1–A7 operational."
 date: 2026-07-19
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
 provenance: "Composed from the post-recovery arc: receipts 108 (keel), 109 (four false lemmas), 126 (Weltanschauung formal audit, K2-signed), 130 (algebra objection, split verdict), 131 (recovery ledger), 132 (tombstones-halāhala reaudit), 133 (full Rosetta council), 134 (purification audit, 7 caste verdicts); the Emergent Axioms E1–E10, the DoF ontology, the four-clause creed, the W0–W12 wagers, the μ aperture hypothesis, the D6 boundary-role relation, the −1 dark twin, and the three publication gates."
@@ -25,7 +25,7 @@ relates:
 
 # The Emergentist Weltanschauung
 
-> *The shrine before the signing. Read before signing; batched.*
+> *The Door — the subordinate reader surface, adopted at inline tiers (receipt 139 box 1 / authority 146, 2026-07-20). Check everything, obey nothing.*
 
 ---
 
@@ -153,7 +153,7 @@ Every box remains open until the founder signs these exact consequences in one d
 
 ## 9 · The execution surface
 
-`[D]` until the founder-signature sitting. **Agents: execute the cleanup items only on explicit owner instruction, one scoped pass at a time, with receipts.** Receipt 135 exists as a provisional execution record; receipt 136 rules that it is not completed promotion authority. Canonical path: `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` (this file).
+Adopted as the subordinate reader Door at inline `[D]` tiers per receipt 139 box 1 (00:01 line, 2026-07-20) / authority receipt 146. **Agents: execute the cleanup items only on explicit owner instruction, one scoped pass at a time, with receipts.** Canonical path: `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md` (this file).
 
 ---
 
@@ -200,6 +200,6 @@ This document was composed from the post-recovery arc:
 - The seven exhausts the dance, not the dance floor
 - The mortal signer was always meant to stand outside the operator table
 
-**K2 sign status:** PENDING. Per Rule zero, the founder reads before signing, batched. No in-stream "yes" is canon signature.
+**K2 sign status:** SIGNED — adopted as the subordinate reader Door, receipt 139 box 1 (00:01 line, 2026-07-20) / authority receipt 146. Adoption was a deliberate natural-person signing sitting, batched, per Rule zero — not an in-stream "yes". Content tier stays `[D]`; adoption seated the Door as reader surface, it did not promote the per-clause tiers.
 
-*Read before signing.*
+*Signed and adopted as the Door — now read, check, and leave through the door we built.*

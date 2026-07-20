@@ -7,7 +7,8 @@ rosetta:
   regime: "Sādhu"
   register: "operational canon, promoted per the 00:01 line (receipt 145/146) — every entry [I]/[C], each with a kill; none may upgrade silently"
 title: "The Conjectures (W0–W12)"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 4 adopted; authority receipt 145). Companion to E1–E10 (03_THE_EMERGENT_AXIOMS.md). Emergentism-only; venture out of warrant."
+status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 4 adopted; authority of record receipt 146, ratifying the fork resolution receipt 145). Companion to E1–E10 (03_THE_EMERGENT_AXIOMS.md, staged successor-candidate per box 3(b)). Emergentism-only; venture out of warrant."
+evidence_tier: "Per-wager inline (W0–W12): every entry [I] or [C], each with a stated kill; W0 [C] metaphysical wager; no entry upgrades without a receipt; no silent upgrade"
 parents:
   - 03_THE_EMERGENT_AXIOMS.md
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md

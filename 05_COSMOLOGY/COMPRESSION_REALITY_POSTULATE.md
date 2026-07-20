@@ -1,3 +1,14 @@
+---
+rosetta:
+  primary_level: L5
+  primary_column: Cosmology
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
+  register: "[D/C]"
+  canonical_phrase: "The Compression-Reality Postulate"
+---
+
 # The Compression-Reality Postulate
 
 **Status:** `[D/C]` — retained source draft under objection; **not in the Receipt

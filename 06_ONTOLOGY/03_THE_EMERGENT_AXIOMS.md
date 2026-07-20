@@ -5,12 +5,12 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "operational canon, promoted per the 00:01 line (receipt 145/146); receipts 135/136 stand as provenance; per-axiom tiers as marked"
+  register: "staged successor-candidate [D] — box 3 adopted as choice (b) (receipt 139 signed 2026-07-20 / 144; authority of record receipt 146): succession declined, A1–A7 remains operational, E1–E10 remains staged; receipts 135/136 stand as provenance; per-axiom tiers as marked; no silent upgrade"
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
 type: emergentism-axiom-set
 title: "The Emergent Axioms (E1–E10)"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 3 adopted; authority receipt 145). E1–E10 is the successor axiom set; A1–A7 superseded in place per K3."
-evidence_tier: "Per-axiom below; assembly staged [D], promoted per the 00:01 line (receipt 145/146); no silent upgrade"
+status: "STAGED [D] successor-candidate — box 3 was adopted as choice (b) (receipt 139 signed 2026-07-20 / 144; authority of record receipt 146): succession declined for now, so A1–A7 (05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md) remains operational and E1–E10 remains staged. Not superseding; genealogy preserved below."
+evidence_tier: "Per-axiom below; assembly staged [D] per box 3(b) (receipt 139 signed 2026-07-20 / 144 / 146); A1–A7 remains the operational set; no silent upgrade"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."
 parents:
@@ -26,7 +26,7 @@ parents:
 
 # The Emergent Axioms (E1–E10)
 
-> **Status.** Operational canon — the successor axiom set, adopted 2026-07-20 per the 00:01 line (box 3; authority receipts 145/146). **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) is superseded in place per K3 — preserved, never erased. The genealogy is preserved in the reconciliation table below; no silent succession is claimed.
+> **Status.** Staged successor-candidate `[D]` — the *proposed* successor axiom set. In the signing sitting (receipt 139, signed 2026-07-20 / 144; authority of record receipt 146) **box 3 was adopted as choice (b): succession declined for now — A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) **remains operational and E1–E10 remains staged.** E1–E10 is therefore offered as the candidate succession, not adopted canon; A1–A7 is **not** superseded. The genealogy in the reconciliation table below is a proposal, preserved per K3; no silent succession is claimed. A signed box 3(a) receipt is required before E1–E10 governs.
 >
 > **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
 >
@@ -233,11 +233,11 @@ Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-univers
 
 ## Founder-signature record
 
-- [x] **Promote E1–E10 above `[D]`** — FIRED 2026-07-20: adopted in the founder's 00:01 line (box 3); authority receipts 145/146.
-- [x] **Supersede or retain A1–A7 explicitly** — RESOLVED 2026-07-20: A1–A7 superseded in place per K3 (the 00:01 line; receipts 145/146).
+- [ ] **Promote E1–E10 above `[D]`** — NOT FIRED: box 3 was adopted as choice (b) (receipt 139 signed 2026-07-20 / 144; authority of record receipt 146) — succession declined, E1–E10 remains staged `[D]`. A signed box 3(a) receipt is required to promote.
+- [x] **Supersede or retain A1–A7 explicitly** — RESOLVED 2026-07-20 (box 3(b)): A1–A7 **retained** as the operational set; not superseded. E1–E10 preserved as the staged successor-candidate per K3.
 - [x] **02 alignment prepared** — the keystone's §1 carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
 - [ ] **Do not treat `D6~D0` as adopted** unless a signed receipt explicitly says so.
 
-The E-set is the successor axiom set, signed 2026-07-20 per the 00:01 line (authority receipts 145/146); A1–A7 is superseded in place per K3. Receipts 135/136 stand as provenance — the provisional execution record and the pre-signature authority reconciliation.
+The E-set is the **staged successor-candidate** per box 3(b) (receipt 139 signed 2026-07-20 / 144; authority of record receipt 146); A1–A7 remains operational and is **not** superseded. Receipts 135/136 stand as provenance — the provisional execution record and the pre-signature authority reconciliation.
 
-*Signed 2026-07-20 per the 00:01 line (receipts 145/146). `⊙ = • × ○`*
+*Box 3(b) recorded 2026-07-20 (receipt 139 / 144; authority of record 146). `⊙ = • × ○`*

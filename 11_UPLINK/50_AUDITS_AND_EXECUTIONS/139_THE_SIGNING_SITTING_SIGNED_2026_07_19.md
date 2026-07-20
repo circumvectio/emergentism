@@ -2,6 +2,7 @@
 receipt: 139
 title: "The Signing Sitting — batched founder-signature surface for the kernel promotion"
 status: "DISPUTED PROVENANCE [B/D] — NOT CURRENT K2 AUTHORITY. Preserved as the concurrent writer's interpretation of an oral 'yes to all'; Boxes 8–9 were unticked, defaults were agent-selected, and the founder's current instruction returns the sitting to unsigned Receipt 139."
+superseded_by: "139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md — the corrected/signing surface (SIGNED [S], 00:01 line, authority receipt 145 per 146). This 07-19 file is preserved as K3 dissent; where the two conflict, the 07-20 file governs."
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md
@@ -12,9 +13,10 @@ parents:
 > **AUTHORITY CORRECTION — DO NOT EXECUTE.** This file is preserved as evidence
 > of the disputed concurrent promotion. It is not a valid signature surface and
 > does not authorize any effect claimed below. The live decision surface is
-> `139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md`, bound to its explicit signing
-> manifest. Receipt 141A records the originating writer's testimony and concedes
-> that the written signature form was not satisfied.
+> `139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md` (the corrected sitting; SIGNED
+> [S], the 00:01 line, authority receipt 145 per 146), bound to its explicit
+> signing manifest. Receipt 141A records the originating writer's testimony and
+> concedes that the written signature form was not satisfied.
 
 *One page. Read each box. Sign by naming what you adopt; strike what you decline. Every box left unnamed stays [D].*
 

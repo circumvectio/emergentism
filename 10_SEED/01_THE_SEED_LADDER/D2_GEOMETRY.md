@@ -7,7 +7,8 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[D] staged — one-page compression of the D2 rung: geometry, one-and-many, ontology"
 title: "D2 — Geometry: configuration on a reciprocal meridian"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
+evidence_tier: "[D] staged reader projection — per-claim tiers inline (inherited geometry [A], structural [S], readings [I]); not canon, not a tier promotion"
 sources: "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md · 00_THE_AMRITA.md §I.A · receipt 108 (keel) · receipt 126 (CC-CORE-1)"
 ---
 

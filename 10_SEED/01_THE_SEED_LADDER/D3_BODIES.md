@@ -7,7 +7,8 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[D] staged — candidate reader synthesis with explicit model/world boundaries"
 title: "D3 · BODIES — the rung where a whole can die"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
+evidence_tier: "[D] staged reader projection — per-claim tiers inline (inherited science [A], model-boundary [S], readings [I]); not canon, not a tier promotion"
 ---
 
 # D3 · BODIES

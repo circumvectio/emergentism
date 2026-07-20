@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Front door — the seven-rung Seed Ladder, staged reader synthesis, not canon"
 type: route-card
 title: "01_THE_SEED_LADDER — front door"
-status: "ACTIVE 2026-07-19 — additive front door, completion-plan remediation wave (additive-only gate, receipt 141A); ladder contents remain STAGED [D] awaiting receipt-139 box-8 disposition"
+status: "ACTIVE 2026-07-19 — additive front door, completion-plan remediation wave (additive-only gate, receipt 141A); ladder contents remain STAGED [D] as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146 — adopted as reader projection, not canon and not a tier promotion"
 owner: 01_EMERGENTISM
 ---
 
@@ -36,10 +36,11 @@ compressed narrative; the witness never overrides source).
 
 ## Evidence posture
 
-Per `00_THE_SEED.md`'s own frontmatter: **STAGED [D] 2026-07-19 — candidate reader
-synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier
-promotion.** Under the current additive-only gate (completion plan §1, receipt 141A) no
-promotion occurs; this front door navigates the ladder without signing it.
+Per `00_THE_SEED.md`'s own frontmatter: **STAGED [D] — candidate reader
+synthesis adopted as a subordinate reader projection per receipt 139 box 8
+(SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion.** The
+adoption is as a *reader projection* subordinate to K-1…K-7, not an eighth
+authority; this front door navigates the ladder without promoting it.
 
 ## Front-door requirement status
 
@@ -48,7 +49,7 @@ by this file** [S].
 
 ## Onward links
 
-- `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md` — the signing sitting whose box-8 disposition governs this ladder.
+- `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md` — the corrected signing sitting (SIGNED [S], the 00:01 line, authority receipt 145 per 146) whose box-8 disposition governs this ladder. (The 2026-07-19 form is preserved as K3 dissent.)
 - `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md` — the freeze and concessions governing tonight's wave.
 - `../../AGENTS.md` — `01_EMERGENTISM` route card.
 

@@ -1,3 +1,14 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: Methodology
+  operator: "Kṛṣṇa ◇"
+  tier: "God"
+  regime: "Vaiśya"
+  register: "[A]"
+  canonical_phrase: "The Lens-Not-Law Rule"
+---
+
 # The Lens-Not-Law Rule
 ### Standing discipline against over-claim regeneration
 

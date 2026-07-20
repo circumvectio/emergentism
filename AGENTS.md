@@ -28,11 +28,17 @@ This root contains doctrine, framework support, Uplink, tools, and seed.
 
 ## Read First
 
+Post-signature chain (2026-07-20, receipt 139 boxes 1–2 signed / authority 146):
+
 1. `README.md`
-2. `00_SEVENFOLD_FOUNDATION_ROOT.md`
-3. `11_UPLINK/00_CORE/00_INDEX.md`
-4. `11_UPLINK/00_CORE/06_AGENTS.md`
-5. `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`
+2. `AGENT_README.md`
+3. `00_THE_WELTANSCHAUUNG.md` — **the Door** (adopted subordinate reader surface)
+4. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
+5. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (D0–D6)
+6. `11_UPLINK/00_CORE/00_INDEX.md` — the Uplink record
+7. `11_UPLINK/00_CORE/06_AGENTS.md` — agent caste dispatch
+
+Former stop `00_SEVENFOLD_FOUNDATION_ROOT.md` is a K3 tombstone stub since 2026-07-20; the signed Door/Map carry the front-door role. The `../.codex/agents/` deployment table is external tooling — use it only when present (see the Rosetta Dispatch note below).
 
 ## Agentz Cloud / Rosetta Dispatch
 

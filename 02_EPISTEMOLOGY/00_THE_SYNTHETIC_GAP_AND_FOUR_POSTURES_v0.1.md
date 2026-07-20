@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L2
+  primary_column: Epistemology
+  operator: "Kālī 💀"
+  tier: "God"
+  regime: "Śūdra"
+  register: "[A]"
+  canonical_phrase: "The Synthetic Gap and the Four Postures"
+---
+
+---
 type: emergentism-canonical-doctrine
 title: "The Synthetic Gap and the Four Postures v0.1 — The Meta-Philosophy of the Wager (K2-signed 2026-07-18)"
 description: "The meta-philosophy of the wager: all Weltanschauungen live in the synthetic gap (formally valid, beyond proof, held as wagers). The competitive axis is the posture toward the gap — deny, weaponize, confess, withdraw. The 4th posture (withdraw) is the missing piece. Emergentism's 5+1 constitution is posture 3 (confess) structuralized. The Weimar caveat is the keystone honest concession: posture 3 is not proven to win."

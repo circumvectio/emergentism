@@ -31,10 +31,16 @@ Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D5](01_THE_SEED_LADDER/D5_THE_GAME.md) →
 [D6](01_THE_SEED_LADDER/D6_THE_RETURN.md).
 
-**Known contradiction:** the existing seed concludes with literal `D6 ≡ D0`;
-the staged ladder rejects literal identity and permits only `D6~D0` as a
-boundary-role similarity. Until Receipt 139 explicitly disposes of box 8, this
-is an unresolved comparison—not permission to harmonize the two texts.
+**Recorded comparison (not a defect to harmonize):** the existing seed concludes
+with literal `D6 ≡ D0`; the staged ladder rejects literal identity and permits
+only `D6~D0` as a boundary-role similarity. Receipt 139 box 8 has since been
+disposed (SIGNED 2026-07-20; `../11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md`)
+— but it adopted the *ladder* as a subordinate reader projection; it did **not**
+authorize harmonizing or rewriting the existing seed. The canonical survivor is
+`D6 ∼ D0` (boundary-role similarity; literal `D6 ≡ D0` is dead form #8 in the
+Record Ledger / Dead-Forms Catalog, grave dated 2026-07-13). The existing seed's
+`≡` line is preserved as a pre-audit `[I]` provenance surface per K3; keep the
+two texts visibly distinct and do not silently merge them.
 
 ## Authority Rule
 

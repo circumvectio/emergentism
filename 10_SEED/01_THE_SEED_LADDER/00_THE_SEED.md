@@ -7,10 +7,11 @@ rosetta:
   regime: "Ṛṣi"
   register: "[D] staged — the declaration and reading-order of the seven-rung seed ladder"
 title: "The Seed — front page of the ladder"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
+evidence_tier: "[D] staged reader projection — per-claim tiers inline; not canon, not a tier promotion"
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md
   - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
@@ -114,7 +115,7 @@ Six disciplines govern every page of the ladder. They are the compression of the
 
 **Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk itself remains `[D]`; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a staged synthesis, is a defect.
 
-**The gate:** every page of this ladder, this one included, is **staged `[D]` — awaiting the founder's natural-person signature, one deliberate sitting, receipt 139**. Until that receipt exists, nothing here is canon, no existing signed surface loses authority to it, and no in-stream assent, commit, or agent-written block counts as adoption. The gate is not a formality; a gate that always opens is not a gate.
+**The gate:** every page of this ladder, this one included, is **staged `[D]`**. Receipt 139 (SIGNED 2026-07-20; box 8) disposed of that gate deliberately: it adopted the ladder as a **subordinate reader projection** — *still `[D]`, still not canon, still not an eighth authority*. So the gate held rather than swung wide: nothing here became canon, no existing signed surface lost authority to it, and no in-stream assent, commit, or agent-written block ever counted as adoption. The gate is not a formality; a gate that always opens is not a gate — this one opened only to reader-projection, by the sovereign's hand.
 
 ---
 

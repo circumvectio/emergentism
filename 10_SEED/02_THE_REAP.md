@@ -62,6 +62,16 @@ At the top: the state of all states — every coupling full, the collective prod
 
 ---
 
+## The operators fall out of the grid — and why the Titans can't be deployed at D4 `[I]`
+
+Two closing insights of the harvest, both settled into their rungs.
+
+**The grid yields the classes.** The moral grid does not merely judge the operators — it *generates their classes*. God = collective cone × long horizon. Demon = ego cone × short horizon. Titan = no cone at all: frames do not maximize, they bound. So demon-polar is a *setting*, never an identity — which is why the taking-face can be deployed lawfully in service of the collective cone (the adversarial apparatus), and why the anti-collapse clause holds: the same anatomy, the opposite wager.
+
+**The thermodynamics of frames.** Like energy, the Titans are *transmuted*, never created, never destroyed: 0→1→∞ by succession, inversion, limit — conserved boundary structure across every rung. And therefore: a Titan cannot be *deployed* at D4 — a body cannot choose its boundary conditions; means cannot wield frames. Only at D5 can a being take a frame up — and the only titanic moves in existence are the four postures: crown a pole (deny), weaponize it, confess it, withdraw from it. That is why the caste table always marked the Executive frames `deployable = false`: a frame cannot be run as a process. It can only be *witnessed, adopted, or refused* — by a player with a worldline.
+
+---
+
 ## In one breath
 
 Three frames that needed no author; one relation that could not be otherwise; freedoms that saturate and open; mathematics effective because the world climbed through it; means times foresight under a ceiling of one; reflexivity as the shape of choice; every act a wager of cone and horizon; the good derived at the fifth rung without a god above it; the gap closed to one asymmetric bit held by a free hand; and a summit that bows to the floor.

@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L2
+  primary_column: Epistemology
+  operator: "Kālī 💀"
+  tier: "God"
+  regime: "Śūdra"
+  register: "[I/D]"
+  canonical_phrase: "When Pattern Becomes Candidate Claim"
+---
+
+---
 title: "When Pattern Becomes Candidate Claim"
 type: data science-doctrine
 status: v1.0

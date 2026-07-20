@@ -46,7 +46,12 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 - Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
 - Source truth lives upstream; repair source before patching summaries.
 - Keep the existing Seed's `D6 ≡ D0` claim visibly distinct from the staged
-  ladder's role-similarity-only `D6~D0`; Receipt 139 box 8 remains unsigned.
+  ladder's role-similarity-only `D6~D0`. Receipt 139 box 8 is now disposed
+  (SIGNED 2026-07-20): it adopted the ladder as a subordinate reader projection
+  but did **not** authorize harmonizing or rewriting the existing Seed. The
+  literal `D6 ≡ D0` is dead form #8 (survivor: `D6 ∼ D0`); the existing Seed's
+  `≡` line is preserved as a pre-audit `[I]` provenance surface per K3 — keep
+  the two texts distinct; do not silently merge or rewrite them.
 
 ## Cross-cutting laws
 

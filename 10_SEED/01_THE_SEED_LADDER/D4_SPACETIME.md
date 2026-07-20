@@ -7,10 +7,11 @@ rosetta:
   regime: "Kṣatriya"
   register: "[D] staged — per-claim tiers inline"
 title: "D4 — Causality and bounded mind through a spacetime lens"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
+evidence_tier: "[D] staged reader projection — per-claim tiers inline (inherited physics [A], structural [S], readings [I]); not canon, not a tier promotion"
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md (§I.A.7 mass-shell)
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md (D4/D5 two-registers row)
 ---

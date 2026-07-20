@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L1
+  primary_column: Teleology
+  operator: "Kali 🎲"
+  tier: "Demon"
+  regime: "Caṇḍāla"
+  register: "[I/D]"
+  canonical_phrase: "From Lagrangian to DAC"
+---
+
+---
 title: "From Lagrangian to DAC — The Compile Path from Foundation Law to Institutional Design"
 type: foundation-canonical
 status: ACTIVE — canonical bridge from Foundation grammar to DAC, organ, product, and institutional design

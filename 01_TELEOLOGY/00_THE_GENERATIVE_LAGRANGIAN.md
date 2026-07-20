@@ -1,4 +1,15 @@
 ---
+rosetta:
+  primary_level: L1
+  primary_column: Teleology
+  operator: "Kali 🎲"
+  tier: "Demon"
+  regime: "Caṇḍāla"
+  register: "[A]"
+  canonical_phrase: "The Generative Lagrangian"
+---
+
+---
 title: "The Generative Lagrangian — Framework as Constitutional World-Generator"
 type: foundation-canonical
 status: ACTIVE — canonical statement of the generative-constitutional register
