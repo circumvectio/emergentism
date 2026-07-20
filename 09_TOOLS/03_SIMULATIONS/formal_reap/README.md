@@ -13,7 +13,11 @@ each compiled and individually covered by `#print axioms`.
 export PATH="$HOME/.elan/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 cd 09_TOOLS/03_SIMULATIONS/formal_reap
 lake build
+python3 verify.py
+
+# Maintainers only, after intentional source/support changes:
 python3 verify.py --write-receipt
+python3 verify.py
 ```
 
 Pinned inputs:
@@ -23,11 +27,16 @@ Pinned inputs:
 
 `lake build` compiles every proof from the checked-in manifest. `verify.py` rebuilds
 the project; rejects `sorry`, `admit`, and custom `axiom`/`constant`
-declarations; registers both `theorem` and `lemma` declarations; requires every
-certificate to be expected, individually axiom-audited, and named in the proof
-ledger; hashes all proof and support inputs; and fails if any verification input
-changes during the run. With `--write-receipt`, it writes
-`verification_receipt.json`.
+declarations even when qualified or attributed; registers both `theorem` and
+`lemma` declarations; requires every certificate to be expected, individually
+axiom-audited, and linked from its designated proof-ledger claim row; hashes all
+authored proof and support inputs; attests every live dependency checkout against
+its pinned manifest revision and clean Git tree before and after the build; and
+fails if any verification input or dependency changes during the run. By default
+it also requires the stored receipt's stable core to match the recomputed result.
+With `--write-receipt`, it atomically refreshes `verification_receipt.json`; the
+receipt is an output and therefore is semantically recomputed rather than
+self-hashed.
 
 ## Modules
 

@@ -55,6 +55,8 @@ parents:
 
 ### The Inherited Axioms
 
+> *Cross-reference (receipt 153):* the rule-zero catalog of what others have discovered at each rung — discoverers, headline axioms, and the tier-descends-with-rung pattern — lives canonically at [`06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md`](../../06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md) §7 (D6). This block is the rung's *inherited-instrument* stack; `07` is the *axiom-seat* index. The two cuts are complementary, not redundant; which (if either) is canonical at promotion is a K2 Door-§7 decision. *(Note: `07` §7 names no discoverer for D6 — "the return is not discovered; it is recognized" — whereas this block seats Gödel/Tarski/Nāgārjuna/Pseudo-Dionysius/Maimonides as inherited instruments. The two readings coexist; the `07` framing is the rung-tier statement, this block is the instrument stack.)*
+
 *Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the invariance
 these axioms **describe** — never the D5 ink that states them — survives every
 transformation that erases a memory.*

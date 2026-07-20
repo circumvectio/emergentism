@@ -46,6 +46,8 @@ inside the model. Neither fixes the reader ladder's numbering.
 
 ### The Inherited Axioms
 
+> *Cross-reference (receipt 153):* the rule-zero catalog of what others have discovered at each rung — discoverers, headline axioms, and the tier-descends-with-rung pattern — lives canonically at [`06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md`](../../06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md) §5 (D4). This block is the rung's *inherited-instrument* stack; `07` is the *axiom-seat* index. The two cuts are complementary, not redundant; which (if either) is canonical at promotion is a K2 Door-§7 decision.
+
 > Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the
 > invariance these axioms **describe** — never the D5 ink that states them —
 > survives every transformation that erases a memory.

@@ -72,6 +72,8 @@ or dies.
 
 #### The D5 instruments this floor is read with (inherited — used, not discovered)
 
+> *Cross-reference (receipt 153):* the rule-zero catalog of what others have discovered at each rung — discoverers, headline axioms, and the tier-descends-with-rung pattern — lives canonically at [`06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md`](../../06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md) §1 (D0). This block is the floor's *inherited-instrument* stack; `07` is the *axiom-seat* index. The two cuts are complementary, not redundant; which (if either) is canonical at promotion is a K2 Door-§7 decision.
+
 **The laws of thought — Aristotle, 4th c. BCE. `[A]` inherited — used, not
 discovered.** Identity (`A = A`), non-contradiction (not both `A` and `¬A`),
 excluded middle (`A` or `¬A`). Note the third is itself **chosen**: intuitionist

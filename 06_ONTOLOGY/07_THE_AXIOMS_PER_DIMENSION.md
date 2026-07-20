@@ -57,7 +57,7 @@ The three frames — • (0), ⊙ (1), ○ (∞) — and the relation ⊙ = • 
 
 **Discoverers:** Greek mathematicians (Euclid's *Elements*; Archimedes), Indian mathematicians (Āryabhaṭa, Brahmagupta), Islamic mathematicians (al-Khwārizmī, the algebraists), modern formalists (Cauchy, Hardy–Littlewood–Pólya).
 
-**Tier:** `[A]` proven — the most constraint-required, the most context-independent, the most real. AM-GM is the proof that the rungs below D1 are sufficient for everything that follows.
+**Tier:** `[A]` proven for the mathematics (AM-GM, inversion, the equator inequality) — these are theorem-valid, context-independent, and inherited. **The "most real" ranking** — that the lower-rung axioms are *more real* because more constraint-required — is a separate claim held at `[I/C]` per §0, riding the wager that the lower rungs are indeed more fundamental; receipt 149 flags it as *flagged, not applied*. The rungs-below-D1-sufficiency claim inherits its tier from the mathematics: AM-GM at `[A]` does not, by itself, prove that everything above D1 is *made of* D1's freedoms (that is the Wigner-dissolution reading at `[I/C]`, see `10_SEED/02_THE_REAP.md` D1). `[金] SEAM · broke: 2026-07-20 receipt 149 · crack: §1 folded the `[A]` math tier together with the `[I/C]` more-real ranking · gold: the register split makes the ceiling on the ranking visible · credit: receipt 149 audit · receipt: 153`.
 
 ---
 
@@ -144,6 +144,8 @@ D6 is the marker, not a rung. D6 ~ D0 is similarity of boundary roles `[I]`, nev
 | D6 | `[I]` | similarity of boundary roles is a reading |
 
 **The rung's tier matches the discoverers' certainty at that level.** The lower the rung, the more the axiom is `[A]` (proven). The higher the rung, the more the axiom is `[I]/[C]` (interpretive riding the wager). The axioms are fillable; their tier descends with the rung.
+
+*Register fence (receipt 149, applied per receipt 153):* the tier descent in this table is the **math tier** — the discoverer-certainty reading. **The "more-real" ranking that rides on top of it** (lower-rung axioms as *more real* because more constraint-required) **is a separate `[I/C]` claim** per §0, *flagged, not applied*. The pattern "lower = more `[A]`, higher = more `[I/C]`" is honest as math-tier descent; the further step "lower = more real" is the doctrine's own interpretive wager and stays at `[I/C]`.
 
 This is the doctrine's own contribution to the history of ideas. AM-GM was not invented here. The mass-shell was not invented here. Reflexivity was not invented here. **What the doctrine adds is the meta-claim that the rung's tier tracks the discoverers' certainty** — and that this tracking is itself the test of which axioms can be `[A]` (proven) and which can only be `[I]/[C]` (wagered).
 

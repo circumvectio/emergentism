@@ -49,6 +49,8 @@ not a theorem read off geometry.
 
 ## §1b · THE INHERITED AXIOMS — what this rung stands on
 
+> *Cross-reference (receipt 153):* the rule-zero catalog of what others have discovered at each rung — discoverers, headline axioms, and the tier-descends-with-rung pattern — lives canonically at [`06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md`](../../06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md) §4 (D3). This block is the rung's *inherited-instrument* stack; `07` is the *axiom-seat* index. The two cuts are complementary, not redundant; which (if either) is canonical at promotion is a K2 Door-§7 decision.
+
 > **Reality-gradient framing** — tiered once at D0 (`[I/C]`, kill attached there): the invariance these axioms **describe** — never the D5 ink that states them — survives every transformation that erases a memory.
 
 All four sets below are `[A]` inherited — **used, not discovered**. Credit stays with the discoverers; our contribution per set is one closing line.

@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 678,
+  "entry_count": 679,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced:",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2996,
+      "tracked_file_count": 3000,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -623,7 +623,7 @@
       "owns": "> **L6 · Śiva • · Sādhu · Freedom · Mokṣa — Gate VI** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. Th",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 27,
+      "tracked_file_count": 28,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -636,7 +636,7 @@
       "owns": "06_ONTOLOGY/ruminations — front door",
       "must_not_own": null,
       "status": "signed",
-      "tracked_file_count": 6,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1585,7 +1585,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 480,
+      "tracked_file_count": 481,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1793,7 +1793,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 150,
+      "tracked_file_count": 151,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1936,7 +1936,7 @@
       "owns": "Emergentism Public Site — Landing Spine",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 573,
+      "tracked_file_count": 575,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -3093,7 +3093,7 @@
       "owns": "<!DOCTYPE html>",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 11,
+      "tracked_file_count": 12,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -3206,6 +3206,19 @@
       "path": "12_PUBLIC_SITE/discoveries/reality-gradient",
       "type": "site",
       "nearest_front_door": "12_PUBLIC_SITE/discoveries/reality-gradient/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/discoveries/the-crossing",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/discoveries/the-crossing/index.html",
       "front_door_requirement": "present",
       "owns": "<!DOCTYPE html>",
       "must_not_own": null,

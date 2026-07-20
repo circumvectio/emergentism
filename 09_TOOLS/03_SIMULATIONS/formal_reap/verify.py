@@ -15,45 +15,57 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 LEAN_ROOT = ROOT / "FormalReap"
-EXPECTED = {
-    "reciprocal_seam",
-    "positive_inversion_fixed_point",
-    "inversion_fixed_points",
-    "reciprocal_amgm",
-    "reciprocal_amgm_eq_iff",
-    "normalized_balance_le_one",
-    "normalized_balance_eq_one_iff",
-    "multiplication_need_both",
-    "minimum_need_both",
-    "zero_boundary_does_not_force_multiplication",
-    "effective_power_zero_iff",
-    "effective_power_positive",
-    "effective_power_unit_interval",
-    "ladder_inheritance",
-    "inheritance_requires_preservation",
-    "forecast_changes_outcome",
-    "not_every_forecast_is_reflexive",
-    "typed_boundary_composition",
-    "extended_zero_times_infinity_is_not_one",
-    "operator_mask_does_not_determine_valence",
-    "return_matches_floor_in_role",
-    "finite_horizon_host_collapse",
-    "gated_universal_collapse_certificate",
-    "positive_extraction_can_persist",
-    "non_extraction_does_not_imply_justice_or_ascent",
-    "no_universal_is_ought",
-    "ought_from_declared_bridge",
-    "bool_action_has_utility_maximizer",
-    "action_need_not_maximize_utility",
-    "cone_and_horizon_do_not_determine_justice",
-    "dyadic_gate_implies_nonnegative_aggregate",
-    "positive_aggregate_does_not_imply_dyadic_gate",
-    "mass_shell_iff_normalized",
-    "null_product_iff_mass_shell",
-    "rest_energy_of_mass_shell",
-    "rest_ratio_le_one",
+LEDGER_ROW_BY_THEOREM = {
+    "reciprocal_seam": "R1.1",
+    "positive_inversion_fixed_point": "R1.3",
+    "inversion_fixed_points": "R1.2",
+    "reciprocal_amgm": "R1.4",
+    "reciprocal_amgm_eq_iff": "R1.4",
+    "normalized_balance_le_one": "R1.5",
+    "normalized_balance_eq_one_iff": "R1.5",
+    "multiplication_need_both": "R3.1",
+    "minimum_need_both": "R3.2",
+    "zero_boundary_does_not_force_multiplication": "R3.2",
+    "effective_power_zero_iff": "R5.2",
+    "effective_power_positive": "R5.3",
+    "effective_power_unit_interval": "R5.3a",
+    "ladder_inheritance": "R1.6",
+    "inheritance_requires_preservation": "R1.7",
+    "forecast_changes_outcome": "R5.4",
+    "not_every_forecast_is_reflexive": "R5.5",
+    "typed_boundary_composition": "R0.2",
+    "extended_zero_times_infinity_is_not_one": "R0.3",
+    "operator_mask_does_not_determine_valence": "RC.2",
+    "return_matches_floor_in_role": "R6.1",
+    "finite_horizon_host_collapse": "R5.12",
+    "gated_universal_collapse_certificate": "R5.12",
+    "positive_extraction_can_persist": "R5.13",
+    "non_extraction_does_not_imply_justice_or_ascent": "R5.14",
+    "no_universal_is_ought": "R5.15",
+    "ought_from_declared_bridge": "R5.15",
+    "bool_action_has_utility_maximizer": "R5.9",
+    "action_need_not_maximize_utility": "R5.10",
+    "cone_and_horizon_do_not_determine_justice": "R5.11",
+    "dyadic_gate_implies_nonnegative_aggregate": "R5.11b",
+    "positive_aggregate_does_not_imply_dyadic_gate": "R5.11b",
+    "mass_shell_iff_normalized": "R4.1",
+    "null_product_iff_mass_shell": "R4.1",
+    "rest_energy_of_mass_shell": "R4.2",
+    "rest_ratio_le_one": "R4.3",
 }
+EXPECTED = set(LEDGER_ROW_BY_THEOREM)
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
+LEAN_NAME_TOKEN = r"(«[^»]+»|[^\s({:]+)"
+THEOREM_DECLARATION = re.compile(rf"\b(?:theorem|lemma)\s+{LEAN_NAME_TOKEN}")
+FORBIDDEN_DECLARATION = re.compile(rf"\b(?:axiom|constant)\s+{LEAN_NAME_TOKEN}")
+VOLATILE_RECEIPT_FIELDS = {
+    "generated_at_utc",
+    "git_head_at_start",
+    "git_head_at_end",
+    "git_head_changed_during_run",
+    "git_worktree_clean_before_receipt_write",
+    "stored_receipt_matches_current_core",
+}
 
 
 def run(command: list[str]) -> subprocess.CompletedProcess[str]:
@@ -66,6 +78,23 @@ def run(command: list[str]) -> subprocess.CompletedProcess[str]:
         text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
+        check=False,
+    )
+
+
+def run_probe(
+    command: list[str], cwd: Path = ROOT
+) -> subprocess.CompletedProcess[str]:
+    """Run a metadata probe with stderr separated from machine-readable stdout."""
+    env = os.environ.copy()
+    env["PATH"] = f"{Path.home()}/.elan/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    return subprocess.run(
+        command,
+        cwd=cwd,
+        env=env,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
         check=False,
     )
 
@@ -112,6 +141,93 @@ def snapshot(paths: list[Path]) -> dict[str, str]:
     }
 
 
+def parse_ledger_certificate_cells(text: str) -> tuple[dict[str, str], list[str]]:
+    """Return claim-ID to certificate-cell mappings and duplicate claim IDs."""
+    rows: dict[str, str] = {}
+    duplicates: list[str] = []
+    for line in text.splitlines():
+        if not line.startswith("|"):
+            continue
+        cells = [cell.strip() for cell in line.split("|")]
+        if len(cells) < 6 or not cells[1].startswith("R"):
+            continue
+        claim_id = cells[1]
+        if claim_id in rows:
+            duplicates.append(claim_id)
+        rows[claim_id] = cells[4]
+    return rows, sorted(set(duplicates))
+
+
+def receipt_core(receipt: dict[str, object]) -> dict[str, object]:
+    """Remove intentionally volatile provenance fields for stored-receipt checks."""
+    return {
+        key: value
+        for key, value in receipt.items()
+        if key not in VOLATILE_RECEIPT_FIELDS
+    }
+
+
+def dependency_snapshot(
+    manifest: dict[str, object],
+) -> tuple[dict[str, dict[str, object]], list[str]]:
+    """Attest that every manifest dependency is at its pinned, clean Git tree."""
+    attestations: dict[str, dict[str, object]] = {}
+    errors: list[str] = []
+    packages = manifest.get("packages")
+    if not isinstance(packages, list):
+        return {}, ["lake manifest has no package list"]
+
+    for package in packages:
+        if not isinstance(package, dict):
+            errors.append("lake manifest contains a non-object package entry")
+            continue
+        name = package.get("name")
+        expected_revision = package.get("rev")
+        if not isinstance(name, str) or not isinstance(expected_revision, str):
+            errors.append("lake manifest package lacks name or revision")
+            continue
+        package_dir = ROOT / ".lake" / "packages" / name
+        if not package_dir.is_dir():
+            errors.append(f"dependency checkout missing: {name}")
+            continue
+
+        head_probe = run_probe(["/usr/bin/git", "rev-parse", "HEAD"], package_dir)
+        tree_probe = run_probe(["/usr/bin/git", "rev-parse", "HEAD^{tree}"], package_dir)
+        status_probe = run_probe(
+            ["/usr/bin/git", "status", "--porcelain=v1", "--untracked-files=all"],
+            package_dir,
+        )
+        probes = {
+            "HEAD": head_probe,
+            "tree": tree_probe,
+            "status": status_probe,
+        }
+        for label, probe in probes.items():
+            if probe.returncode != 0:
+                errors.append(f"dependency {name} {label} probe failed")
+
+        actual_revision = head_probe.stdout.strip()
+        tree = tree_probe.stdout.strip()
+        clean = status_probe.returncode == 0 and not status_probe.stdout.strip()
+        if not re.fullmatch(r"[0-9a-f]{40,64}", actual_revision):
+            errors.append(f"dependency {name} returned an invalid HEAD")
+        if not re.fullmatch(r"[0-9a-f]{40,64}", tree):
+            errors.append(f"dependency {name} returned an invalid tree hash")
+        if actual_revision != expected_revision:
+            errors.append(f"dependency {name} is not at its manifest revision")
+        if not clean:
+            errors.append(f"dependency {name} checkout is dirty")
+
+        attestations[name] = {
+            "expected_revision": expected_revision,
+            "actual_revision": actual_revision,
+            "tree": tree,
+            "clean": clean,
+        }
+
+    return dict(sorted(attestations.items())), sorted(set(errors))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--write-receipt", action="store_true")
@@ -127,7 +243,15 @@ def main() -> int:
     source_under_test = (ROOT / "../../../10_SEED/02_THE_REAP.md").resolve()
     verification_inputs = [*sources, *project_inputs, *support_artifacts, source_under_test]
     input_snapshot_before = snapshot(verification_inputs)
-    git_head_before = run(["/usr/bin/git", "rev-parse", "HEAD"]).stdout.strip()
+    manifest = json.loads((ROOT / "lake-manifest.json").read_text(encoding="utf-8"))
+    dependency_state_before, dependency_errors_before = dependency_snapshot(manifest)
+    git_head_before_probe = run_probe(["/usr/bin/git", "rev-parse", "HEAD"])
+    probe_errors: list[str] = []
+    if git_head_before_probe.returncode != 0:
+        probe_errors.append("initial Git HEAD probe failed")
+    git_head_before = git_head_before_probe.stdout.strip()
+    if not re.fullmatch(r"[0-9a-f]{40,64}", git_head_before):
+        probe_errors.append("initial Git HEAD probe returned invalid output")
     forbidden: list[str] = []
     theorem_names: set[str] = set()
     for source in sources:
@@ -135,16 +259,21 @@ def main() -> int:
         for token in ("sorry", "admit"):
             if re.search(rf"\b{token}\b", stripped):
                 forbidden.append(f"{source.relative_to(ROOT)}: token {token}")
-        if re.search(r"(?m)^\s*(?:axiom|constant)\s+", stripped):
-            forbidden.append(f"{source.relative_to(ROOT)}: custom axiom/constant declaration")
-        theorem_names.update(
-            re.findall(r"(?m)^(?:theorem|lemma)\s+([A-Za-z0-9_']+)", stripped)
-        )
+        for name in FORBIDDEN_DECLARATION.findall(stripped):
+            forbidden.append(
+                f"{source.relative_to(ROOT)}: custom axiom/constant declaration {name}"
+            )
+        theorem_names.update(THEOREM_DECLARATION.findall(stripped))
 
     missing = sorted(EXPECTED - theorem_names)
     unexpected_theorems = sorted(theorem_names - EXPECTED)
     ledger_text = (ROOT / "PROOF_LEDGER.md").read_text(encoding="utf-8")
-    unledgered_theorems = sorted(name for name in EXPECTED if f"`{name}`" not in ledger_text)
+    ledger_rows, duplicate_ledger_rows = parse_ledger_certificate_cells(ledger_text)
+    unledgered_theorems = sorted(
+        name
+        for name, claim_id in LEDGER_ROW_BY_THEOREM.items()
+        if f"`{name}`" not in ledger_rows.get(claim_id, "")
+    )
     audit_source = (LEAN_ROOT / "Audit.lean").read_text(encoding="utf-8")
     audited_names = set(re.findall(
         r"(?m)^#print axioms FormalReap\.[A-Za-z0-9_']+\.([A-Za-z0-9_']+)$",
@@ -172,15 +301,33 @@ def main() -> int:
     unexpected_audit_outputs = sorted(audit_output_names - EXPECTED)
     unexpected_axioms = sorted(reported_axioms - ALLOWED_AXIOMS)
 
-    lean_version = run([str(Path.home() / ".elan/bin/lean"), "--version"]).stdout.strip()
-    lake_version = run([str(Path.home() / ".elan/bin/lake"), "--version"]).stdout.strip()
-    manifest = json.loads((ROOT / "lake-manifest.json").read_text(encoding="utf-8"))
+    lean_version_probe = run_probe([str(Path.home() / ".elan/bin/lean"), "--version"])
+    lake_version_probe = run_probe([str(Path.home() / ".elan/bin/lake"), "--version"])
+    if lean_version_probe.returncode != 0:
+        probe_errors.append("Lean version probe failed")
+    if lake_version_probe.returncode != 0:
+        probe_errors.append("Lake version probe failed")
+    lean_version = lean_version_probe.stdout.strip()
+    lake_version = lake_version_probe.stdout.strip()
     mathlib_package = next(
         package for package in manifest["packages"] if package["name"] == "mathlib"
     )
-    git_head_after = run(["/usr/bin/git", "rev-parse", "HEAD"]).stdout.strip()
+    dependency_state_after, dependency_errors_after = dependency_snapshot(manifest)
+    dependency_errors = sorted(
+        set(dependency_errors_before) | set(dependency_errors_after)
+    )
+    dependency_checkouts_changed = dependency_state_before != dependency_state_after
+    git_head_after_probe = run_probe(["/usr/bin/git", "rev-parse", "HEAD"])
+    git_status_probe = run_probe(["/usr/bin/git", "status", "--porcelain"])
+    if git_head_after_probe.returncode != 0:
+        probe_errors.append("final Git HEAD probe failed")
+    if git_status_probe.returncode != 0:
+        probe_errors.append("Git status probe failed")
+    git_head_after = git_head_after_probe.stdout.strip()
+    if not re.fullmatch(r"[0-9a-f]{40,64}", git_head_after):
+        probe_errors.append("final Git HEAD probe returned invalid output")
     git_head_changed = git_head_before != git_head_after
-    git_status = run(["/usr/bin/git", "status", "--porcelain"]).stdout
+    git_status = git_status_probe.stdout
     sources_after = sorted([ROOT / "FormalReap.lean", *LEAN_ROOT.rglob("*.lean")])
     verification_inputs_after = [
         *sources_after,
@@ -218,6 +365,9 @@ def main() -> int:
     if unledgered_theorems:
         status = "FAIL"
         failures.append(f"theorems missing from proof ledger: {', '.join(unledgered_theorems)}")
+    if duplicate_ledger_rows:
+        status = "FAIL"
+        failures.append(f"duplicate proof-ledger rows: {', '.join(duplicate_ledger_rows)}")
     if missing_audits:
         status = "FAIL"
         failures.append(f"missing axiom audits: {', '.join(missing_audits)}")
@@ -236,18 +386,24 @@ def main() -> int:
     if changed_inputs:
         status = "FAIL"
         failures.append("verification inputs changed during run")
-    if git_head_changed:
+    if probe_errors:
         status = "FAIL"
-        failures.append("git HEAD changed during run")
-
+        failures.extend(sorted(set(probe_errors)))
+    if dependency_errors:
+        status = "FAIL"
+        failures.extend(dependency_errors)
+    if dependency_checkouts_changed:
+        status = "FAIL"
+        failures.append("dependency checkouts changed during run")
     receipt = {
-        "schema": "formal-reap-verification-v1",
+        "schema": "formal-reap-verification-v2",
         "status": status,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "scope": "local machine-checked theorem and countermodel kernel; no doctrine promotion",
         "source_under_test": "10_SEED/02_THE_REAP.md",
         "source_under_test_sha256": verified_hash(source_under_test),
-        "git_head": git_head_after,
+        "git_head_at_start": git_head_before,
+        "git_head_at_end": git_head_after,
         "git_head_changed_during_run": git_head_changed,
         "git_worktree_clean_before_receipt_write": not bool(git_status.strip()),
         "lean_version": lean_version,
@@ -260,6 +416,8 @@ def main() -> int:
         "missing_expected_theorems": missing,
         "unregistered_theorems": unexpected_theorems,
         "theorems_missing_from_ledger": unledgered_theorems,
+        "duplicate_proof_ledger_rows": duplicate_ledger_rows,
+        "ledger_row_by_theorem": LEDGER_ROW_BY_THEOREM,
         "audited_theorem_count": len(audited_names),
         "missing_axiom_audits": missing_audits,
         "orphan_axiom_audits": orphan_audits,
@@ -270,6 +428,10 @@ def main() -> int:
         "reported_axioms": sorted(reported_axioms),
         "allowed_axioms": sorted(ALLOWED_AXIOMS),
         "unexpected_axioms": unexpected_axioms,
+        "metadata_probe_errors": sorted(set(probe_errors)),
+        "dependency_checkout_errors": dependency_errors,
+        "dependency_checkouts_changed_during_run": dependency_checkouts_changed,
+        "dependency_checkouts": dependency_state_after,
         "verification_input_changes": changed_inputs,
         "source_sha256": {
             str(path.relative_to(ROOT)): verified_hash(path) for path in sources
@@ -283,11 +445,28 @@ def main() -> int:
         "failures": failures,
     }
 
+    receipt_path = ROOT / "verification_receipt.json"
     if args.write_receipt:
-        (ROOT / "verification_receipt.json").write_text(
-            json.dumps(receipt, indent=2, sort_keys=True) + "\n",
-            encoding="utf-8",
-        )
+        receipt["stored_receipt_matches_current_core"] = True
+        serialized_receipt = json.dumps(receipt, indent=2, sort_keys=True) + "\n"
+        temporary_receipt = receipt_path.with_suffix(".json.tmp")
+        temporary_receipt.write_text(serialized_receipt, encoding="utf-8")
+        os.replace(temporary_receipt, receipt_path)
+    else:
+        stored_receipt_matches = False
+        try:
+            stored_receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+            stored_receipt_matches = (
+                isinstance(stored_receipt, dict)
+                and receipt_core(stored_receipt) == receipt_core(receipt)
+            )
+        except (FileNotFoundError, json.JSONDecodeError):
+            stored_receipt_matches = False
+        if not stored_receipt_matches:
+            status = "FAIL"
+            failures.append("stored verification receipt does not match current core")
+            receipt["status"] = status
+        receipt["stored_receipt_matches_current_core"] = stored_receipt_matches
 
     print(json.dumps(receipt, indent=2, sort_keys=True))
     if build.returncode != 0:
