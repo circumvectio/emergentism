@@ -13,6 +13,8 @@ set_option autoImplicit false
 
 namespace FormalReap.Ethics
 
+open scoped BigOperators
+
 /-- Linear closed-arena host accounting at a declared finite horizon. -/
 def hostAfter
     (initialHost regeneration extraction : ℝ) (horizon : ℕ) : ℝ :=
@@ -86,5 +88,73 @@ theorem no_universal_is_ought :
 theorem ought_from_declared_bridge
     (Is Ought : Prop) (fact : Is) (bridge : Is → Ought) : Ought :=
   bridge fact
+
+/-- A finite action type with an explicitly supplied utility has a maximizer. -/
+theorem bool_action_has_utility_maximizer (utility : Bool → ℝ) :
+    ∃ action : Bool, ∀ alternative : Bool, utility alternative ≤ utility action := by
+  by_cases h : utility false ≤ utility true
+  · refine ⟨true, ?_⟩
+    intro alternative
+    cases alternative with
+    | false => exact h
+    | true => exact le_rfl
+  · refine ⟨false, ?_⟩
+    intro alternative
+    cases alternative with
+    | false => exact le_rfl
+    | true => exact le_of_lt (lt_of_not_ge h)
+
+/-- A chosen action need not maximize even a declared utility function. -/
+theorem action_need_not_maximize_utility :
+    ∃ utility : Bool → ℝ, ∃ chosen alternative : Bool,
+      utility chosen < utility alternative := by
+  refine ⟨(fun action => if action then 1 else 0), false, true, ?_⟩
+  norm_num
+
+structure EthicalSummary where
+  cone : ℕ
+  horizon : ℕ
+  just : Prop
+
+/-- Cone and horizon cannot determine justice unless a normative bridge is added. -/
+theorem cone_and_horizon_do_not_determine_justice :
+    ∃ first second : EthicalSummary,
+      first.cone = second.cone ∧
+      first.horizon = second.horizon ∧
+      first.just ∧ ¬ second.just := by
+  refine ⟨
+    { cone := 1, horizon := 10, just := True },
+    { cone := 1, horizon := 10, just := False },
+    rfl,
+    rfl,
+    True.intro,
+    ?_⟩
+  simp
+
+/-- The minimal dyadic gate: no declared impact-bearer has negative impact. -/
+def DyadicGate {ι : Type*} (impact : ι → ℝ) : Prop :=
+  ∀ bearer, 0 ≤ impact bearer
+
+/-- Pointwise bearer protection entails a nonnegative aggregate. -/
+theorem dyadic_gate_implies_nonnegative_aggregate
+    {ι : Type*} [Fintype ι]
+    (impact : ι → ℝ)
+    (hgate : DyadicGate impact) :
+    0 ≤ ∑ bearer, impact bearer := by
+  exact Finset.sum_nonneg (fun bearer _ => hgate bearer)
+
+def launderingCounterexample : Bool → ℝ
+  | false => 2
+  | true => -1
+
+/-- A positive group sum does not imply the dyadic gate: one bearer may lose. -/
+theorem positive_aggregate_does_not_imply_dyadic_gate :
+    0 < ∑ bearer, launderingCounterexample bearer ∧
+      ¬ DyadicGate launderingCounterexample := by
+  constructor
+  · norm_num [launderingCounterexample, Fintype.sum_bool]
+  · intro hgate
+    have hprotected := hgate true
+    norm_num [launderingCounterexample] at hprotected
 
 end FormalReap.Ethics

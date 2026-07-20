@@ -21,6 +21,7 @@ Two distinct surfaces currently coexist; do not silently merge or promote them:
 |---|---|---|
 | [`00_THE_SEED.md`](00_THE_SEED.md) | `[I]` L7 compression | The existing equation-and-Rosetta seed surface. |
 | [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[D]` staged reader projection | Optional cold-reader candidate only; not canon and not an eighth kernel owner. |
+| [`02_THE_REAP.md`](02_THE_REAP.md) | `[I]` narrative synthesis · `[D]` staged | The harvest: the whole ladder in one ascent (Titans → arithmetic → μ-limits → D5 game → is/ought verdict → return). Subordinate to the Door, Index, and Ladder; staged for K2 signature after the receipt-148 coherence audit. |
 
 Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D0](01_THE_SEED_LADDER/D0_THE_FLOOR.md) →

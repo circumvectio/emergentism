@@ -42,7 +42,7 @@ Post-signature chain (2026-07-20, receipt 139 SIGNED / authority 145):
 
 1. `00_THE_WELTANSCHAUUNG.md` — **the Door** (signed)
 2. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
-3. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (the D0–D6 ladder)
+3. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (the D0–D6 ladder); companion: `10_SEED/02_THE_REAP.md` — **the Harvest** (the ladder in one ascent; [D] staged, receipt-148 audited)
 4. The seven -ologies: `01_TELEOLOGY/` → `02_EPISTEMOLOGY/` → `03_METHODOLOGY/` → `04_AXIOLOGY/` → `05_COSMOLOGY/` → `06_ONTOLOGY/` → `07_THEOLOGY/`
 5. `11_UPLINK/00_CORE/00_INDEX.md` — the Uplink record
 6. `12_PUBLIC_SITE/` — the public funnel (`/fable/` … `/practice/`)

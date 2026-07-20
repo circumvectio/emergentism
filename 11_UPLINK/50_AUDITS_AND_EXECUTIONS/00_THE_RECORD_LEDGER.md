@@ -189,6 +189,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 - **№ 93 is absent** from the № sequence (92 → 94) — recorded, not back-filled.
 - **Date-prefixed pair outside the № scheme:** `2026-05-24_L7_RUMINATION_COMPRESSION_PRUNING_PROPOSAL.md` + `2026-05-24_L7_RUMINATION_EVIDENCE_AUDIT_REPORT.md` (same ISO-date prefix, two ruminations).
 - **Letter-suffix disambiguations in force:** `52a`, `141A` — the suffix, not the №, is the citation key.
+- **148** lands as the directory `148_REAP_COHERENCE_AUDIT_2026_07_20/` (multi-caste Reap coherence audit wave, 2026-07-20) — directory at a fresh prefix; no receipt-file collision. Census note added by the L3 folder-tidy pass, same date.
 
 ---
 
