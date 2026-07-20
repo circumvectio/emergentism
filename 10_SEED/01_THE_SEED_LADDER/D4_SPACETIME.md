@@ -121,8 +121,14 @@ and distinguish the inherited physics from the selected crosswalk.
   hyperboloid `E² − (pc)² = (mc²)²` on which every free massive particle
   lives. Rapidity `w` is its natural coordinate (`φ = e^w`, `ν = e^{-w}`,
   so `φν = 1` IS the shell in this chart — Move 1); rest sits at the
-  vertex, `w = 0` — our equator reading (Move 2). Every `[A]` claim on
-  this page is a statement about this surface and nothing else.
+  vertex, `w = 0` — our equator reading (Move 2). Rapidity is the shell's
+  own intrinsic Minkowski arc length; `γ = cosh w` is its embedding
+  `t`-coordinate; boosts act as the shell's isometry flow with exact
+  additivity; and the light cone is the shell's asymptotic cone at a
+  genuine 45°. These are the structures no embedded Riemannian surface
+  (torus included) can carry — a surface in Euclidean `ℝ³` has no null
+  directions at all (receipt 151). Every `[A]` claim on this page is a
+  statement about this surface and nothing else.
 - **Its one kill:** it kills the sphere-as-physics temptation. The shell
   is a hyperboloid, not a sphere; whatever the Burrisphere renders, the
   physics itself supplies only this surface. Any argument that leaves the
@@ -130,14 +136,30 @@ and distinguish the inherited physics from the selected crosswalk.
 - **Animation:** [/4/](/4/).
 
 **Companion emblem — THE HORN TORUS.** **Type: SHOWS ONLY.** All generating
-circles converge at the single self-intersection point: an image of `v → c`
-— mass gain as the deepening overlap, convergence at the limit. It is an
-emblem for recognition, never cited in any derivation. **P7 grave applies:
-"the torus does not know about dimensional stages"** — the horn torus
-derives nothing, licenses nothing, and carries no `[A]`/`[S]` content on
-this page. Its one kill: it kills the claim that the emblem is the
-argument — if a proof needs the torus, the proof is dead. Animation:
-[/4/](/4/).
+circles meet at the single pinch point — a **tangency, not a
+self-intersection** (self-intersection begins only in the spindle regime
+`r > R`; overlap volume is exactly zero for all `r ≤ R`). The old captions
+are retired as geometry (receipt 151, computed): the mouth is **not** a
+light cone — near the pinch the surface is the cusp `ρ = z²/2R`, whose
+tangent cone is the degenerate axis line (opening angle → 0), not
+Minkowski's genuine 45° cone; "mass gain as deepening overlap" is inverted
+at the limit (the torus quantity is 0 where `γ` diverges, positive only
+where SR is undefined); and no natural torus parameter reproduces `γ`
+(hole-circumference ratio is linear `1−β` against Lorentz `√(1−β²)` —
+MF-69 §4.2.1, on file). The one reading that survives, `[S]`-capped,
+mechanism-match only: under one-point conformal closure, worldlines become
+circles through the added point — the pinch is an image of *where
+worldlines end* (the compactification point at infinity), never of *how
+fast they may go*. It is an emblem for recognition, never cited in any
+derivation. **P7 grave applies: "the torus does not know about dimensional
+stages"** — the horn torus derives nothing, licenses nothing, and carries
+no `[A]` content on this page. Its one kill: it kills the claim that the
+emblem is the argument — if a proof needs the torus, the proof is dead.
+Upgrade bar (receipt 151): SHOWS → ARGUES requires an actual computed
+theorem — a canonical, pre-declared torus-intrinsic parameter yielding a
+Lorentz identity exactly — and the boost-subgroup route is closed as a
+theorem (the inversion-conjugated flow is parabolic, one fixed point;
+boosts are hyperbolic, two). Animation: [/4/](/4/).
 
 The model argues; the emblem shows. Neither is the territory (§3).
 
