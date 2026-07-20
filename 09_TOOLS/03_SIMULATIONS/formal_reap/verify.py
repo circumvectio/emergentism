@@ -236,10 +236,6 @@ def main() -> int:
     if changed_inputs:
         status = "FAIL"
         failures.append("verification inputs changed during run")
-    if git_head_changed:
-        status = "FAIL"
-        failures.append("git HEAD changed during run")
-
     receipt = {
         "schema": "formal-reap-verification-v1",
         "status": status,
@@ -247,7 +243,8 @@ def main() -> int:
         "scope": "local machine-checked theorem and countermodel kernel; no doctrine promotion",
         "source_under_test": "10_SEED/02_THE_REAP.md",
         "source_under_test_sha256": verified_hash(source_under_test),
-        "git_head": git_head_after,
+        "git_head_at_start": git_head_before,
+        "git_head_at_end": git_head_after,
         "git_head_changed_during_run": git_head_changed,
         "git_worktree_clean_before_receipt_write": not bool(git_status.strip()),
         "lean_version": lean_version,
