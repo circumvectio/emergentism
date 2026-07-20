@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 676,
+  "entry_count": 678,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced:",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2982,
+      "tracked_file_count": 2996,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1091,7 +1091,7 @@
       "owns": "09_TOOLS — Tooling Architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 340,
+      "tracked_file_count": 346,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1143,7 +1143,7 @@
       "owns": "03_SIMULATIONS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 61,
+      "tracked_file_count": 67,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1255,12 +1255,12 @@
     {
       "path": "09_TOOLS/03_SIMULATIONS/formal_reap",
       "type": "tool",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "09_TOOLS/03_SIMULATIONS/formal_reap/README.md",
+      "front_door_requirement": "present",
+      "owns": "**Status:** `[B]` locally machine-checked proof support; `[S]` for formal implications; no automatic doctrine promotion.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 8,
+      "tracked_file_count": 14,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1273,7 +1273,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 4,
+      "tracked_file_count": 5,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1585,7 +1585,7 @@
       "owns": "> The compressed context layer for agents and fast human orientation.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 476,
+      "tracked_file_count": 480,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1793,7 +1793,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 146,
+      "tracked_file_count": 150,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1820,6 +1820,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 7,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_REAP_COHERENCE_AUDIT_2026_07_20",
+      "type": "lane",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7760,7 +7773,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 330,
+      "tracked_file_count": 334,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8580,6 +8593,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_20_harvest_the_reap",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 4,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
