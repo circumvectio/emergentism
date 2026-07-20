@@ -5,12 +5,12 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[D] staged successor set; receipt 135 provisional, 136 controls; per-axiom tiers as marked"
+  register: "operational canon, promoted per the 00:01 line (receipt 145/146); receipts 135/136 stand as provenance; per-axiom tiers as marked"
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
-type: emergentism-axiom-set-pending-founder-signature
+type: emergentism-axiom-set
 title: "The Emergent Axioms (E1–E10)"
 status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 3 adopted; authority receipt 145). E1–E10 is the successor axiom set; A1–A7 superseded in place per K3."
-evidence_tier: "Per-axiom below; assembly is [D]; no silent upgrade"
+evidence_tier: "Per-axiom below; assembly staged [D], promoted per the 00:01 line (receipt 145/146); no silent upgrade"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."
 parents:
@@ -26,7 +26,7 @@ parents:
 
 # The Emergent Axioms (E1–E10)
 
-> **Status.** `[D]` successor proposal. **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) remains signed operational canon until an explicit founder-promotion receipt adopts this set. The genealogy is preserved in the reconciliation table below; no silent succession is claimed.
+> **Status.** Operational canon — the successor axiom set, adopted 2026-07-20 per the 00:01 line (box 3; authority receipts 145/146). **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) is superseded in place per K3 — preserved, never erased. The genealogy is preserved in the reconciliation table below; no silent succession is claimed.
 >
 > **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
 >
@@ -116,7 +116,7 @@ Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a p
 
 ### E5 · The Two Motions `[I/C]` framework distinction · μ content open
 
-The framework distinguishes two candidate motions: **μ ascends** names an aperture at which a new effective freedom becomes available, while **χ descends** names deployment or selection among already available futures. Neither name yet defines a mathematical operator. The selected scaffold has five positive rungs and five indexed apertures from the D0 boundary through D5 `[I]`; reading those as five empirically established saturation events or world-level irreducible freedoms remains `[C]`. **μ-at-saturation is `[C]` as a cross-domain causal hypothesis:** system boundaries, saturation statistics and thresholds, novelty tests, detection power, time windows, interventions, and prospective predictions are still owed. “Only at saturation,” “rare,” and “unpredictable from below” remain hypotheses. **D6** is the selected exit marker; `D6~D0` means only `D6≈roleD0` `[I]`: both are non-positive boundary markers, with D0 preceding articulation and D6 suspending further articulation. It is not identity, ordering, geometry, physical recurrence, attainment, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
+The framework distinguishes two candidate motions: **μ ascends** names an aperture at which a new effective freedom becomes available, while **χ descends** names deployment or selection among already available futures. Neither name yet defines a mathematical operator. The selected scaffold has five positive rungs and five indexed apertures from the D0 boundary through D5 `[I]`; reading those as five empirically established saturation events or world-level irreducible freedoms remains `[C]`. **μ-at-saturation is `[C]` as a cross-domain causal hypothesis:** system boundaries, saturation statistics and thresholds, novelty tests, detection power, time windows, interventions, and prospective predictions are still owed. “Only at saturation,” “rare,” and “unpredictable from below” remain hypotheses. **D6** is the selected exit marker; `D6~D0` means only `D6≈roleD0` `[I]`: both are non-positive boundary markers, with D0 preceding articulation and D6 suspending further articulation. It is not identity, ordering, geometry, physical recurrence, attainment, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
 
 **Forbids:** conflating μ and χ; reading either gap as *proof* of strong emergence; five- or six-as-necessity; literal D6≡D0.
 
@@ -231,13 +231,13 @@ Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-univers
 
 ---
 
-## Founder-signature surface
+## Founder-signature record
 
-- [ ] **Promote or revise E1–E10 above `[D]`** in one dedicated founder-signature receipt.
-- [ ] **Supersede or retain A1–A7 explicitly**; until then A1–A7 controls.
+- [x] **Promote E1–E10 above `[D]`** — FIRED 2026-07-20: adopted in the founder's 00:01 line (box 3); authority receipts 145/146.
+- [x] **Supersede or retain A1–A7 explicitly** — RESOLVED 2026-07-20: A1–A7 superseded in place per K3 (the 00:01 line; receipts 145/146).
 - [x] **02 alignment prepared** — the keystone's §1 carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
 - [ ] **Do not treat `D6~D0` as adopted** unless a signed receipt explicitly says so.
 
-No signature block is embedded in this candidate. Receipt 135 is a provisional execution record only; receipt 136 controls the authority reconciliation. Until the unchecked consequences above are adopted in one deliberate founder receipt, this file remains `[D]` and A1–A7 remains the operational predecessor.
+The E-set is the successor axiom set, signed 2026-07-20 per the 00:01 line (authority receipts 145/146); A1–A7 is superseded in place per K3. Receipts 135/136 stand as provenance — the provisional execution record and the pre-signature authority reconciliation.
 
-*Staged. Read before signing. `⊙ = • × ○`*
+*Signed 2026-07-20 per the 00:01 line (receipts 145/146). `⊙ = • × ○`*

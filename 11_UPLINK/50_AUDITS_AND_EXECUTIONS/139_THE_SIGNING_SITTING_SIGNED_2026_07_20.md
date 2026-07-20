@@ -27,11 +27,11 @@ adopt exact content bytes, but it cannot silently authorize physical migration.*
 ## Adoption boxes
 
 - [x] **1 · The Door.** Adopt the exact manifest-bound bytes of
-  `00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` as the subordinate reader Door at
+  `00_THE_WELTANSCHAUUNG.md` (path healed 2026-07-20) as the subordinate reader Door at
   its inline tiers. If adopted, its suffix may drop in a separately verified
   content-only action.
 - [x] **2 · The Index.** Adopt the exact manifest-bound bytes of
-  `00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` as router/index, never source
+  `00_THE_KERNEL_INDEX.md` (path healed 2026-07-20) as router/index, never source
   authority where an owner surface or receipt conflicts.
 - [x] **3 · The Succession — choice (b).** Choose exactly one:
   **(a)** E1–E10 succeeds A1–A7, with A1–A7 preserved genealogically under K3;

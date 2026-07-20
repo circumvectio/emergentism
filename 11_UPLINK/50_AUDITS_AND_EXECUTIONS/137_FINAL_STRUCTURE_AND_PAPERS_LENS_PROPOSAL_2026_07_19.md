@@ -55,7 +55,7 @@ Kernel = **overlay index, not a folder**. No K-directories are created. Reading 
 │   ├── 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md  = K-2 ONTOLOGY
 │   ├── 03_THE_EMERGENT_AXIOMS.md              = K-3 AXIOMS (E1–E10 staged; A1–A7 operational until promoted)
 │   ├── 04_THE_CONJECTURES.md                  = K-4 WAGERS (W0–W12)
-│   ├── 05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md   STAYS in its 05_ slot (A8 — was silently omitted from draft)
+│   ├── 05_THE_CREED_AND_SPIRAL.md   STAYS in its 05_ slot (A8 — was silently omitted from draft; path healed 2026-07-20)
 │   ├── 06_THE_REVELATIONS.md                  = K-6 REVELATIONS — created at promotion, RENUMBERED 05→06 to resolve A8 collision (founder may rule the slot otherwise)
 │   └── ruminations/                           SINGLE rumination home (root RUMINATION_* docs join 00_E1_E10_RUMINATION_L7_RSI; names unchanged)
 ├── 07_THEOLOGY/                      + 00_THE_AMRITA.md ← from root (evidence under K-6)
@@ -85,8 +85,8 @@ Legend: **[F]** = founder's signature/hand required (doctrine, signed, or canoni
 
 | File | Gate | Same-sitting edit required |
 |---|---|---|
-| 00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md | [F] | Drop suffix at signing; rewire links to AMRITA/COMPASS/GOAL new homes (A5) |
-| 00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md | [F] | Drop suffix; edit K-2 source citation + `sources:` frontmatter (lines 12–13) to 06_ONTOLOGY path (A4); reconcile K-7 row `01_THE_THREE_POSTURES.md` → FOUR postures doc (A5/draft #20) |
+| 00_THE_WELTANSCHAUUNG.md (path healed 2026-07-20) | [F] | Drop suffix at signing; rewire links to AMRITA/COMPASS/GOAL new homes (A5) |
+| 00_THE_KERNEL_INDEX.md (path healed 2026-07-20) | [F] | Drop suffix; edit K-2 source citation + `sources:` frontmatter (lines 12–13) to 06_ONTOLOGY path (A4); reconcile K-7 row `01_THE_THREE_POSTURES.md` → FOUR postures doc (A5/draft #20) |
 | README.md | [F] | Point orientation at front door |
 | CLAUDE.md | [F] | Fix read-order rows 3–4 (reference tombstoned files); link 00_META/00_FOLDER_LAYOUT |
 | AGENTS.md | [F] | Fix SEVENFOLD citation (A5) |
@@ -233,4 +233,4 @@ A3 script re-points, then run all four scripts green · A5 edits to AGENTS.md, A
 
 A9 arrived truncated mid-sentence ("…project_emergentism_amr"); its intact head (real stone dates + memory-pointer refresh) is incorporated; its tail is unknown. **Castes 2–7: verdicts truncated in transmission — not received, not assumed. Recommend re-transmission before Wave 1; absence of dissent is recorded as absence of data, not as approval.**
 
-Key paths: proposal target `/Users/Yves/Documents/01_EMERGENTISM/` · kernel index `/Users/Yves/Documents/01_EMERGENTISM/00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md` · registry `/Users/Yves/Documents/01_EMERGENTISM/00_META/00_SETTLED_CANON_REGISTRY.md` · papers `/Users/Yves/Documents/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/` · scripts `/Users/Yves/Documents/01_EMERGENTISM/09_TOOLS/01_SCRIPTS/`.
+Key paths: proposal target `/Users/Yves/Documents/01_EMERGENTISM/` · kernel index `/Users/Yves/Documents/01_EMERGENTISM/00_THE_KERNEL_INDEX.md` (path healed 2026-07-20) · registry `/Users/Yves/Documents/01_EMERGENTISM/00_META/00_SETTLED_CANON_REGISTRY.md` · papers `/Users/Yves/Documents/01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/` · scripts `/Users/Yves/Documents/01_EMERGENTISM/09_TOOLS/01_SCRIPTS/`.

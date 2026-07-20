@@ -1,7 +1,7 @@
 > **TOMBSTONE — 2026-07-20 · K3 archive-first · receipt 139 (Wave 2) + authority receipt 145.**
 > Superseded at the 2026-07-20 signing per the Blueprint; the folder-layout truth is now carried by the signed Door stack + `00_THE_KERNEL_INDEX.md`.
 > Absorber: `00_THE_KERNEL_INDEX.md` / signed Door stack.
-> Original path: `01_EMERGENTISM/00_META/00_FOLDER_LAYOUT_v0.1.md`. Content preserved verbatim below — moved, never erased. [S]
+> Original path: `01_EMERGENTISM/00_META/00_FOLDER_LAYOUT_v0.1.md` — that path now carries a forwarding stub resolving citations to this stone (the root `00_FOLDER_LAYOUT_v0.1.md` compat stub forwards to `00_META/`). Full original content preserved verbatim below this stone; absorber named above. K3: stubbed, never erased. [S]
 
 ---
 rosetta:

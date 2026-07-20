@@ -27,7 +27,7 @@ rosetta:
 
 > **Companion document:** The broader cross-paradox synthesis for this slice is [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md), which argues that many classical paradoxes persist because direct experience is extracted into formal systems that cannot reconstruct what was removed.
 
-> **Related documents:** See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the indexed mind-body summary and [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) for the richer legacy treatment with the mu-limit Finitor mechanism and zombie refutation.
+> **Related documents:** See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the indexed mind-body summary and the linked legacy treatment. Legacy μ/Finitor and quantum-collapse language is non-authoritative wherever it conflicts with the typed distinction below.
 
 > **Evidence Tier: [I] Interpretive.** The dissolution offered here does not claim to solve the hard problem in a way acceptable to contemporary analytic philosophy or neuroscience. It reframes the problem as an artifact of extraction: direct awareness is treated as insufficient, replaced by third-person formalisms, and then declared unexplained when those formalisms cannot reproduce it. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
@@ -225,7 +225,7 @@ Ground-facing immediacy is here in the practice register.
 
 The extraction-pattern narrative above is the dissolution's experiential leg. For completeness, here is how the hard problem maps onto the S² geometry that structures the rest of the paradox suite.
 
-On the Burri Sphere, systemic awareness is modeled as the **equatorial operator** — the μ-limit boundary operation that relates the D5/coherence reading (possibility, option-space, `φ`) to the D4/actuality reading (actualized state, `ν`). The hard problem asks: "why does this transition *feel* like something?" The framework's answer is interpretive: feeling is what the transition looks like from inside the model. The sphere has an outside reading (physics, being, the Bloch sphere) and an inside reading (phenomenology, systemic awareness, the Burri sphere). This is a disciplined model of the gap, not a public proof that the gap is closed.
+On the Burri Sphere, systemic awareness is modeled `[I]` as an equatorial relation between D5 counterfactual capacity and D4 causal embodiment. `μ₄` names the candidate emergence of that capacity from D4 organization; it does not name the later commitment of an option into action and it is not quantum measurement. The claim that feeling is the “inside” of this relation is a phenomenological interpretation whose physical reduction status is `currently_unreduced`, not proven irreducible.
 
 - **φ** (coherence) = the integration axis. What holds the field together. The phenomenological correlate is *meaning*, *gestalt*, *recognition*.
 - **ν** (viability) = the actuality / capability coordinate. What the system can bear or enact as substrate. The phenomenological correlate is *embodiment*, *sensation*, *motor affordance*.
@@ -233,9 +233,9 @@ On the Burri Sphere, systemic awareness is modeled as the **equatorial operator*
 - **P_node = Φ × V** = the finite-node action read. `Φ` is D5 worldline-foresight; `V` is D4 means-to-act. Agency appears when both are usable.
 - **The equator** (`φ = ν = 1`; action read: `Φ` and `V` both usable) = maximum balance, not infinite quantity on either pole. The phenomenological correlate is *flow*, *presence*, *the sublime* (Erhaben).
 
-The hard problem persists, in this reading, because it was formulated on flat coordinates (D4 only), where the φ-axis is invisible. The extraction pattern (above) is the historical mechanism by which the φ-axis was made invisible. The geometric reading offers a structural reframe: on S², the physical and the phenomenal are treated as two projections of the same point.
+The geometric reading offers a structural reframe: physical description and first-person report are represented as different projections of one modeled point. This correspondence neither supplies an extra spacetime dimension nor rules out a future physical reduction.
 
-See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the Zombie Refutation (you cannot have finity without a finitor) and [PD_12_MEASUREMENT_PROBLEM.md](PD_12_MEASUREMENT_PROBLEM.md) for the Bloch-Burri correspondence.
+See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the indexed mind-body treatment. [PD_12_MEASUREMENT_PROBLEM.md](PD_12_MEASUREMENT_PROBLEM.md) contains an optional Bloch-Burri correspondence; removing that quantum inset leaves this practice-first and operational argument unchanged.
 
 ---
 

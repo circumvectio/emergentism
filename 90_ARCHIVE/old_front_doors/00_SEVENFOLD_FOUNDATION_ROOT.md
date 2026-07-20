@@ -1,7 +1,7 @@
 > **TOMBSTONE — 2026-07-20 · K3 archive-first · receipt 139 (Wave 2) + authority receipt 145.**
 > Former front door, superseded at the 2026-07-20 signing by Door `00_THE_WELTANSCHAUUNG.md` + `00_THE_KERNEL_INDEX.md` + the Seed Ladder (`10_SEED/`).
 > Absorber: `00_THE_WELTANSCHAUUNG.md` (the Door carries the sevenfold doctrine into the signed kernel stack).
-> Original path: `01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md`. Content preserved verbatim below — moved, never erased. [S]
+> Original path: `01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md` — that path now carries a forwarding stub resolving citations to this stone. Full original content preserved verbatim below this stone; absorber named above. K3: stubbed, never erased. [S]
 
 ---
 rosetta:

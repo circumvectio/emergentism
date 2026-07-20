@@ -57,7 +57,7 @@ The framework relocates necessity from entity to topology. S² with the constrai
 
 Because ontological nothingness is not generative. **Important distinction:** the empty set ∅ is a perfectly consistent mathematical object — set theory builds all of mathematics from it. The framework does not dispute this. What the framework claims is that *physical/ontological* nothingness (the complete absence of structure, constraint, and geometry) cannot *generate* anything, because generation requires at least the triadic relation {0, 1, ∞} to be present. The empty set as a mathematical starting point already presupposes the structural framework of set theory. True nothingness — no structure, no axioms, no framework — has Φ=0, V=0, P=0. There is no emergence, no persistence, no recursion.
 
-The triadic system IS stable. Not because a necessary being wills it, but because the triadic structure satisfies the self-sustaining condition: φ·ν=1 holds, η = 0 is achievable, and the D0-D6 dimensional hierarchy generates recursive actualization from the μ-limit.
+The triadic system is proposed as stable inside this interpretation. The chart identity `φ·ν=1`, the normative `η = 0` constraint, and the D0-D6 scaffold have different types and do not jointly prove recursive actualization. Candidate μ-crossings concern the emergence of new capacities; they do not select possibilities into facts.
 
 **Necessity is topological, not theological.**
 
@@ -70,7 +70,7 @@ Leibniz's necessary being is a personification of a topological necessity. The f
 - **Triadic Stability:** The framework's core claim is that reality requires three co-arising elements (D0-D6 scaffold). This is not a contingent fact about our universe but a structural requirement for any stable generative system. See [03_EFR_AXIOMS.md](../../../README.md).
 - **Transcendental Trinity {0, 1, ∞}:** The three members map onto the roles Leibniz assigned. ∞ (the necessary being, totality of reasons) grounds the system. 0 (nothing, the alternative) is excluded by instability. 1 (the equatorial identity, the actualized world) is what emerges.
 - **η = 0:** A necessary being in the theological sense would be a being with η = 0 by definition — perfect, non-extractive, self-sustaining. The framework replaces this with the claim that any stable system must satisfy η = 0, which is a constraint on structure, not a description of an entity.
-- **μ-limit:** The μ-limit is the boundary between D4 actuality and D5 possibility. It is the mechanism by which the possible becomes actual. This is the framework's version of the cosmological argument: not "what caused the first thing?" but "what selects possibility into actuality?" The answer is the μ-limit — a structural feature of the sphere, not an entity.
+- **μ-limit:** `μ₄` is the framework's `[C]` label for a candidate D4→D5 emergence crossing into counterfactual capacity. Selection and commitment run separately from an agent's D5 model into a reachable D4 action, after which the environment returns the outcome. Neither operation answers the cosmological question of why anything exists.
 - **PD_05 connection:** The One and the Many dissolution parallels this: unity is a structural property of S², not a substance. Similarly, necessity is a structural property, not a being.
 - **PD_10 connection:** The Is-Ought bypass argues that normative constraints can be operationally aligned with structural conditions inside the framework. PD_09 extends this: metaphysical necessity is also structural, not substantive.
 

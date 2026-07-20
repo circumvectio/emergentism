@@ -5,7 +5,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged ontology · [I] reframe / [S] boundedness / [C] plenitude-engine — never [A]"
+  register: "operational canon, promoted per the 00:01 line (receipt 145/146) · [I] reframe / [S] boundedness / [C] plenitude-engine — never [A]"
 status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure standalone Weltanschauung ontology; no Skyzai warrant. Owner thesis (2026-07-19) + Rosetta-swarm adjudication (ww20uwka8)."
 date: 2026-07-19
 provenance: "workflow wf_0b2a7fda-986 (14 agents: separation / seven castes / Plato adversarial). Owner: Yves R. Burri."

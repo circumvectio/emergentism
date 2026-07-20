@@ -5,16 +5,16 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged synthesis — no completed founder promotion; receipt 135 provisional / 136 controls; no Skyzai warrant"
+  register: "operational canon, promoted per the 00:01 line (receipt 145/146); receipts 135/136 stand as provenance; no Skyzai warrant"
   canonical_phrase: "Constrained freedoms, typed existence, costed emergence, correction, vow, exit"
 type: emergentism-weltanschauung-kernel
 version: "v0.2"
 date: 2026-07-19
 status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Supersedes v0.1, archived with frozen stub per the line."
-evidence_tier: "Each statement is typed below; this assembly remains [D]"
+evidence_tier: "Each statement is typed below; assembly staged [D], promoted per the 00:01 line (receipt 145/146)"
 owner: 01_EMERGENTISM
 scope_lock: "Emergentism-only philosophy. Skyzai runtime, products, entities, commerce, DAV/PRISM/K2 execution machinery, and cross-root propagation are excluded as warrant."
-supersedes_candidate: "00_WELTANSCHAUUNG_KERNEL_v0.1.md only if explicitly promoted; v0.1 remains the reconciled predecessor"
+supersedes: "00_WELTANSCHAUUNG_KERNEL_v0.1.md — superseded 2026-07-20 per the 00:01 line (receipt 145/146); v0.1 preserved as the reconciled predecessor, archived with frozen stub per K3"
 parents:
   - 00_THE_AMRITA.md
   - 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
@@ -277,4 +277,4 @@ The kernel is internally coherent **as a corrigible metaphysical wager plus meth
 
 > **Not Forms, and not bare degrees of freedom as new substances: constrained freedoms and the stable invariants that emerge across them. Not every coherent possibility is actual: existence is typed, and every bridge has a cost. The mathematics constrains; the world selects; emergence must earn its standing; the good is chosen; correction and exit remain open.**
 
-*Staged `[D]`. No cross-root decision, product, runtime, or signature upgrades this claim.*
+*Promoted from staged `[D]` to operational canon per the 00:01 line (receipts 145/146); per-statement tiers stand exactly as typed above. No cross-root decision, product, runtime, or signature upgrades any claim.*

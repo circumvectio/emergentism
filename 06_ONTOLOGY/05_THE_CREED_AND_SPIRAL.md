@@ -5,12 +5,12 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — every clause inherits the final capstone prices; pending founder signature"
+  register: "operational canon, promoted per the 00:01 line (receipt 145/146) — every clause inherits the final capstone prices"
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
-type: emergentism-creed-pending-founder-signature
-title: "The Creed and the Spiral — PENDING FOUNDER SIGNATURE"
+type: emergentism-creed
+title: "The Creed and the Spiral"
 status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure Weltanschauung expansion; companion to the signed E1–E10 successor set."
-evidence_tier: "Per clause below; assembly [D]"
+evidence_tier: "Per clause below; assembly staged [D], promoted per the 00:01 line (receipt 145/146)"
 owner: 01_EMERGENTISM
 scope_lock: "Philosophy only. No Skyzai warrant."
 parents:
@@ -18,7 +18,7 @@ parents:
   - 04_THE_CONJECTURES.md
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - ../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
-  - ../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../00_THE_WELTANSCHAUUNG.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md
@@ -81,7 +81,7 @@ Emergence order is honest **abduction** (game suggested operators; operators the
 
 > *The seven exhaust the game space; all other moves are combinations.*
 
-**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. Receipt 130 still rules that algebra does **not** universally force the count seven.
+**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. Receipt 130 still rules that algebra does **not** universally force the count seven.
 
 **Fence that matters:** the seven exhaust the *dance*, not the *dance floor*. The moves that audit the framework, sign verdicts, and hold the exit open are **constitutional** — no God, Demon, or Titan can make them. The mortal signer stands **outside** the operator table.
 
@@ -177,11 +177,11 @@ Ground axioms (E1–E10), wagers ledgered, creed priced, ladder closes as spiral
 
 ---
 
-## K2 surface
+## K2 signature record
 
-- [ ] Sign creed as wager (not revelation)
+- [x] Sign creed as wager (not revelation) — SIGNED 2026-07-20 per the 00:01 line (authority receipts 145/146); slot 05 retained; K6 lives at `06_THE_REVELATIONS.md`
 - [ ] Promote or revise E5 μ-saturation wording to match §II
 - [ ] Keep the five-world-crossings reading `[I/C]`; keep G7 exhaustion `[S]` only by scoped language construction and the seven names/assembly `[I]`—never algebraically forced universal census
 - [ ] Do not claim K2-8 countersignature without registry row
 
-*Staged. Hold as wager. `⊙ = • × ○`*
+*Signed 2026-07-20 per the 00:01 line (receipts 145/146). Hold as wager. `⊙ = • × ○`*

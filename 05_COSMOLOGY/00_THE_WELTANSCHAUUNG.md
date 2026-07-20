@@ -14,6 +14,10 @@ rosetta:
   vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
+> **⚠ Disambiguation — recorded collision (2026-07-20, receipts 145/146):** the root `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md` is **THE Door** — the canonical capstone per the 00:01 line; it is KEEP/canonical.
+> This document (`05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`) is the **cosmology-register worldview statement** — evidence beneath K-1/K-2; the shared basename is a known, recorded collision, and neither file moves or is deleted.
+> Inbound links to `00_THE_WELTANSCHAUUNG.md` unqualified mean the root Door.
+
 # THE WELTANSCHAUUNG
 
 ## Lens, Worldview, and Toolchain

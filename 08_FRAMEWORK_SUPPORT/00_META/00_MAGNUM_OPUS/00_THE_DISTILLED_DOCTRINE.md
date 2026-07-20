@@ -11,10 +11,10 @@ title: "The Distilled Doctrine"
 status: "STAGED [D] 2026-07-19 — the shortest document that carries the complete doctrine. Awaiting the founder's natural-person signature. Rule zero: the kernel receives, it does not invent."
 date: 2026-07-19
 evidence_tier: "Per-line below; the compression is [D]; nothing here upgrades a source tier"
-supersedes: "nothing — compresses 00_THE_AMRITA.md, 00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md, the E1–E10 / W0–W12 ledgers, the 5+1 constitution, and the Compression-Reality Postulate"
+supersedes: "nothing — compresses 00_THE_AMRITA.md, 00_THE_WELTANSCHAUUNG.md, the E1–E10 / W0–W12 ledgers, the 5+1 constitution, and the Compression-Reality Postulate"
 parents:
-  - 00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - 00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - 00_THE_KERNEL_INDEX.md
+  - 00_THE_WELTANSCHAUUNG.md
   - 07_THEOLOGY/00_THE_AMRITA.md
   - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
@@ -205,6 +205,6 @@ reality without an independently warranted theory.
 
 ## Execution surface
 
-`[D]` until the founder signs. **Agents:** cite at the tiers marked; **never** upgrade E4 / the plenitude wager above `[C]`; **never** read `φ·ν=1` as anything but a chart identity; A1–A7 controls until an explicit promotion receipt says otherwise. This document compresses; it invents nothing and moves nothing. **Canonical path:** `01_EMERGENTISM/00_THE_DISTILLED_DOCTRINE.md`
+`[D]` until the founder signs. **Agents:** cite at the tiers marked; **never** upgrade E4 / the plenitude wager above `[C]`; **never** read `φ·ν=1` as anything but a chart identity; A1–A7 controls until an explicit promotion receipt says otherwise. This document compresses; it invents nothing and moves nothing. **Canonical path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md`
 
 ⊙ = • × ○ — *the shortest true thing we could say, and the tiers that keep it honest.*

@@ -5,7 +5,7 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[D] staged ledger — every entry [I]/[C], each with a kill; none may upgrade silently"
+  register: "operational canon, promoted per the 00:01 line (receipt 145/146) — every entry [I]/[C], each with a kill; none may upgrade silently"
 title: "The Conjectures (W0–W12)"
 status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 4 adopted; authority receipt 145). Companion to E1–E10 (03_THE_EMERGENT_AXIOMS.md). Emergentism-only; venture out of warrant."
 parents:
@@ -42,6 +42,6 @@ parents:
 
 ## Execution surface
 
-`[D]` until explicit founder signature. No entry upgrades without a receipt; a lost wager moves to the graves with a date, not to silence. The axioms stand if every wager dies — that is what makes them axioms and these wagers. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md`
+K2-signed 2026-07-20 per the 00:01 line (box 4 adopted; authority receipts 145/146). No entry upgrades without a receipt; a lost wager moves to the graves with a date, not to silence. The axioms stand if every wager dies — that is what makes them axioms and these wagers. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md`
 
 ⊙ = • × ○
