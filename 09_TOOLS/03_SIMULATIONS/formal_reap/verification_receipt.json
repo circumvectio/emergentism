@@ -67,11 +67,11 @@
   "expected_theorem_count": 36,
   "failures": [],
   "forbidden_declarations": [],
-  "generated_at_utc": "2026-07-20T17:41:55.052608+00:00",
-  "git_head_at_end": "86f1d74e197549b3a11f853f1a6874b08bef9de0",
-  "git_head_at_start": "86f1d74e197549b3a11f853f1a6874b08bef9de0",
+  "generated_at_utc": "2026-07-20T17:53:39.137926+00:00",
+  "git_head_at_end": "62b3f8b115e24aa00166dd3be71972c6bf836b72",
+  "git_head_at_start": "62b3f8b115e24aa00166dd3be71972c6bf836b72",
   "git_head_changed_during_run": false,
-  "git_worktree_clean_before_receipt_write": true,
+  "git_worktree_clean_before_receipt_write": false,
   "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
   "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
   "ledger_row_by_theorem": {
@@ -142,7 +142,7 @@
     "FormalReap/Structure.lean": "8093792366f69b9d94d6197167e0a705e0d4081d454d0f41b115d90af565b4c4"
   },
   "source_under_test": "10_SEED/02_THE_REAP.md",
-  "source_under_test_sha256": "610c05f4eb3b897d2267373a70450112567890efd2ee9904eafa15f53a7c5c77",
+  "source_under_test_sha256": "b1510c0d67c2944f98068517bad93cb0bb67455052ae44f216b3b7f8388a9bdb",
   "status": "PASS",
   "stored_receipt_matches_current_core": true,
   "support_artifact_sha256": {
