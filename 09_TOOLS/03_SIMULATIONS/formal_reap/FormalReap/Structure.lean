@@ -53,7 +53,7 @@ theorem forecast_changes_outcome
   exact hout
 
 /-- A policy may ignore every forecast, so reflexivity is not automatic. -/
-def constant_policy_system : ForesightSystem Unit Bool Bool where
+def constant_policy_system : ForesightSystem Bool Bool Bool where
   policy := fun _ => false
   evolve := fun _ action => action
 
@@ -61,7 +61,8 @@ def constant_policy_system : ForesightSystem Unit Bool Bool where
 theorem not_every_forecast_is_reflexive :
     true ≠ false ∧
     constant_policy_system.policy true = constant_policy_system.policy false ∧
-    outcome constant_policy_system () true = outcome constant_policy_system () false := by
+    outcome constant_policy_system false true =
+      outcome constant_policy_system false false := by
   decide
 
 /-- Boundary frames are a separate type from executable moves. -/
@@ -70,6 +71,20 @@ inductive Frame where
   | unit
   | infinity
   deriving DecidableEq, Repr
+
+/-- A typed formation relation; it is deliberately not ordinary multiplication. -/
+inductive FrameComposition : Frame → Frame → Frame → Prop where
+  | boundary : FrameComposition .void .infinity .unit
+
+/-- The Reap's boundary glyph sentence is a declared grammar rule. -/
+theorem typed_boundary_composition :
+    FrameComposition .void .infinity .unit :=
+  FrameComposition.boundary
+
+/-- In ordinary extended nonnegative-real multiplication, `0 * ∞` is `0`, not `1`. -/
+theorem extended_zero_times_infinity_is_not_one :
+    (0 : ENNReal) * ⊤ ≠ 1 := by
+  simp
 
 /-- An operator name or mask is not its moral valence. -/
 inductive OperatorMask where
@@ -107,5 +122,26 @@ theorem operator_mask_does_not_determine_valence :
     rfl,
     ?_⟩
   decide
+
+/-- D0 and D6 witnesses are distinct types even when assigned the same role. -/
+inductive FloorWitness where
+  | floor
+  deriving DecidableEq, Repr
+
+inductive ReturnWitness where
+  | return
+  deriving DecidableEq, Repr
+
+inductive BoundaryRole where
+  | witness
+  deriving DecidableEq, Repr
+
+def floorRole (_ : FloorWitness) : BoundaryRole := .witness
+def returnRole (_ : ReturnWitness) : BoundaryRole := .witness
+
+/-- D6 can match D0 in role without asserting literal object identity. -/
+theorem return_matches_floor_in_role :
+    returnRole .return = floorRole .floor := by
+  rfl
 
 end FormalReap.Structure

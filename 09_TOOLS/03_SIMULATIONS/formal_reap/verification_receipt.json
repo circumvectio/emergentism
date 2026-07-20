@@ -1,0 +1,58 @@
+{
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "audited_theorem_count": 36,
+  "expected_theorem_count": 36,
+  "failures": [],
+  "forbidden_declarations": [],
+  "generated_at_utc": "2026-07-20T16:43:45.327802+00:00",
+  "git_head": "6c7842e737ee691f0b137b0d0df2e307ac15c569",
+  "git_worktree_clean": false,
+  "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+  "mathlib_input_revision": "v4.32.0",
+  "mathlib_resolved_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "missing_axiom_audits": [],
+  "missing_expected_theorems": [],
+  "missing_parsed_audit_outputs": [],
+  "orphan_axiom_audits": [],
+  "parsed_audit_output_count": 36,
+  "project_input_sha256": {
+    "lake-manifest.json": "7fc92fce5d15b26d50d4a3e53143653ba491dbd708d0a6feb3623bd4bdca7bb6",
+    "lakefile.toml": "9d90e5e1f44302b7d457d2c47b3f998284410aa9a4ead4a93124a3f8e89a9052",
+    "lean-toolchain": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+  },
+  "reported_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "schema": "formal-reap-verification-v1",
+  "scope": "local machine-checked theorem and countermodel kernel; no doctrine promotion",
+  "source_count": 6,
+  "source_sha256": {
+    "FormalReap.lean": "d67a301cc467fcc56cd7da34b2a5dd210f1adfe35e33dedb60c30cf836f08831",
+    "FormalReap/Arithmetic.lean": "93ae4aebecc6e0c969618065774c1413464cdf20ad53e3cbf956346246202a45",
+    "FormalReap/Audit.lean": "9eea178cf91ad97cdab791e43f2a4a8a795d556f004fb8ce0aabb33f696931dd",
+    "FormalReap/Ethics.lean": "2370acdb0ec2eb3349d431899bf347ce22409ff05d7c0a7b50b55dc8ba0a6a4e",
+    "FormalReap/Physics.lean": "447751e40c53adbbd2d4be8abb1327103be09bb58d4df82bc8db41e80e7c6ba5",
+    "FormalReap/Structure.lean": "8093792366f69b9d94d6197167e0a705e0d4081d454d0f41b115d90af565b4c4"
+  },
+  "source_under_test": "10_SEED/02_THE_REAP.md",
+  "source_under_test_sha256": "a05714893f5a1119cd4b4faebbe0e494e086f613b1983a276960a1fe54e7e00b",
+  "status": "PASS",
+  "support_artifact_sha256": {
+    "PROOF_LEDGER.md": "00a500f5d7baafc882a8e5269802237d7a6261c357c1754483f1472de19c5674",
+    "README.md": "17a9e7d8b2881d458fd08f5c80e2d6925ce71358753ac7b12f178bb9dbd511bb",
+    "verify.py": "92f768029840939e1c3d4282cfb0d9442d2a549c45964249ef7cce3c9b730a63"
+  },
+  "theorem_count": 36,
+  "theorems_missing_from_ledger": [],
+  "unexpected_axioms": [],
+  "unexpected_parsed_audit_outputs": [],
+  "unregistered_theorems": [],
+  "verification_input_changes": []
+}
