@@ -100,7 +100,7 @@ active Markdown links resolve
 xmllint passed for both SVG views
 git diff --check passed
 0 protected-tree changes under 12_PUBLIC_SITE, 02_SKYZAI, or 91_COMPATIBILITY
-original checkout: 0 tracked changes; 131 pre-existing untracked files retained
+original checkout: 0 tracked changes; 133 out-of-scope untracked files observed
 ```
 
 Deterministic topology artifacts remain byte-identical to Receipt 154:
@@ -118,7 +118,9 @@ no empirical, ontological, or ethical claim.
 ## Custody and release boundary
 
 No file under `12_PUBLIC_SITE/` or `02_SKYZAI/` is part of this change. The
-original checkout and its pre-existing untracked files remain untouched. There
+original checkout and its out-of-scope untracked files remain untouched. The
+untracked count changed from 131 to 133 during the run without a tracked diff;
+those concurrent arrivals were not opened, staged, moved, or deleted. There
 is no push, deployment, DNS change, publication, private financial act, or
 contractual act. Website projection and external calibration remain separate
 future gates.

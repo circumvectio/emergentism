@@ -17346,8 +17346,8 @@
     },
     {
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md",
-      "sha256": "d4be3327962cdb02dcd99c82594a8943aa3d38601997563c4c9f3f5a81236a40",
-      "bytes": 6206,
+      "sha256": "14a978cd12b37cc4cc578c99ae3a3e155cc7c13cf65c18f716b2f17557175755",
+      "bytes": 6359,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",
