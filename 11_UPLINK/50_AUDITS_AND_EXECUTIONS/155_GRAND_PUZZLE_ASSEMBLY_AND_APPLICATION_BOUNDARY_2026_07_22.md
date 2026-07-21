@@ -95,7 +95,7 @@ model-mediated future influence, not evidence of physical retrocausality.
 37 Lean theorems/countermodels audited; 0 failures or forbidden Titan operations
 EMERGENTISM PURITY: PASS (767 active files)
 9 archived application bodies match their original Git blobs exactly
-3,095 file-register entries and 740 folder-register entries current
+3,109 file-register entries and 740 folder-register entries current
 active Markdown links resolve
 xmllint passed for both SVG views
 git diff --check passed

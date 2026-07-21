@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3094,
+      "tracked_file_count": 3108,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -51,7 +51,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 47,
+      "tracked_file_count": 48,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -415,7 +415,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 113,
+      "tracked_file_count": 114,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -454,7 +454,7 @@
       "owns": "> **[金] reconciliation — 2026-07-20.** The triadic frame is selected, not",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 38,
+      "tracked_file_count": 39,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -506,7 +506,7 @@
       "owns": "08_FRAMEWORK_SUPPORT — translation and stress tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 224,
+      "tracked_file_count": 233,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -571,7 +571,7 @@
       "owns": "02 Operators — bounded symbolic and audit grammar",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 35,
+      "tracked_file_count": 44,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -766,7 +766,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 117,
+      "tracked_file_count": 118,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -792,7 +792,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 7,
+      "tracked_file_count": 8,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +974,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 370,
+      "tracked_file_count": 371,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 153,
+      "tracked_file_count": 154,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7136,7 +7136,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1057,
+      "tracked_file_count": 1058,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7981,7 +7981,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 9,
+      "tracked_file_count": 10,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
