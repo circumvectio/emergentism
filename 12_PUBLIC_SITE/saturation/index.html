@@ -25,7 +25,7 @@
   .lede{color:var(--dim);max-width:66ch;margin:.7rem 0 1.1rem}
   .fml{color:var(--gold);text-align:center;font-size:1.05rem;margin:.5rem 0 1rem}
   canvas{width:100%;display:block;border:1px solid var(--line);border-radius:12px;background:#070707;touch-action:none}
-  #hinge{aspect-ratio:16/9} #curve{aspect-ratio:16/10} #nest{aspect-ratio:16/7}
+  #hinge{aspect-ratio:16/9} #window{aspect-ratio:16/9} #curve{aspect-ratio:16/10} #nest{aspect-ratio:16/7}
   .readout{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:center;margin:.7rem 0 .2rem;font-size:.83rem}
   .readout b{color:var(--gold)}
   .note{color:var(--dim);font-size:.87rem;max-width:66ch;margin:.7rem auto;text-align:center}
@@ -82,6 +82,24 @@
     <tr><td>space &nbsp;ℝ³</td><td>ℝ³ ∪ {∞} ≅ <b>S³</b></td><td>4 dimensions — <em>we cannot picture it; we are inside it</em></td><td>—</td></tr>
   </table>
   <p class="note"><b>This is "opaque from below, legible from above" in geometry.</b> A freedom run to closure becomes invisible to itself and obvious from one rung up. The climb is not a metaphor about knowledge; at least here, it is the literal difference between being inside a closed freedom and seeing it whole. <span class="tier">[A]</span> the topology · <span class="tier c">[I]</span> the reading</p>
+
+  <h2>4 · The window that cannot tell</h2>
+  <div class="fml">sagitta &nbsp;s = a&sup2; / (R + &radic;(R&sup2;&minus;a&sup2;)) &nbsp;&nbsp;&rarr;&nbsp;&nbsp; undetectable when s &lt; &delta;</div>
+  <canvas id="window" aria-label="A circular arc of shrinking radius seen through a fixed window: at large radius it is indistinguishable from a straight line, and a gauge below shows the bulge measured against the instrument's precision."></canvas>
+  <div class="readout">
+    <span>radius R <b id="w-R">—</b> windows</span>
+    <span>bulge s <b id="w-s">—</b></span>
+    <span>precision &delta; <b id="w-d">0.004</b></span>
+    <span id="w-v" style="color:var(--cyan)">indistinguishable from straight</span>
+  </div>
+  <div class="readout" style="font-size:.78rem;opacity:.85">
+    <span>all this window can honestly report: <b id="w-b">R &gt; 31.3</b> windows</span>
+    <span>bound check R(s) &minus; R = <span style="color:var(--warm)" id="w-i">0.000000</span></span>
+  </div>
+  <p class="note">The gold arc and the dashed chord are drawn at <b>true aspect</b> — no vertical exaggeration. At large R they are the same pixels, because the bulge really is smaller than the line is thick. The gauge measures that bulge against a stated precision δ. Cross the threshold and curvature becomes detectable; above it, <b>the window is silent</b> — and silence is not evidence of straightness. <b>All a bounded window can ever return is a lower bound on R, never the verdict "infinite."</b> <span class="tier">[A]</span></p>
+  <p class="note" style="max-width:70ch"><b>And the distinction it is straining to detect may not even be intrinsic.</b> On the sphere, lines and circles are a single family: a line is exactly a circle through the point at infinity, and a Möbius map carries any circle to a line and back. So "straight" is not a property of the curve — it is a statement about where infinity was placed. <b>The line was not approximately a circle. It was one.</b> <span class="tier">[A]</span> used, not discovered</p>
+  <p class="note" style="max-width:70ch"><b>This is not a toy.</b> It is how cosmology treats the shape of space: measurements constrain the curvature to be small, which places a <em>lower bound</em> on the radius of curvature — if space is closed, its radius exceeds the region we can see. No measurement returns "flat and infinite"; the observable universe is the window, and the window cannot tell. <span class="tier">[A]</span> the method · <span class="tier c">[I]</span> the reading</p>
+  <p class="note" style="max-width:70ch;border-left:2px solid var(--warm);padding-left:.9rem;text-align:left"><b>The fence, and it cuts both ways.</b> None of this shows the line <em>is</em> closed. It shows you cannot tell from here — which forbids the confident "it goes on forever" exactly as much as it forbids the confident "it comes back." The honest output of a bounded window is a <b>bound</b>, not a belief. Treating unboundedness as the default is a choice too, and it is the one that usually goes unexamined. <span class="tier">[S]</span></p>
 
   <!--INSTRUMENTS-->
 
@@ -243,6 +261,79 @@
     var w=0.5*(1-Math.cos(t*0.32));
     Cc.set('kappa',Math.max(1e-5,w*2*Math.PI/Cc.val('Lc'))); drawCurve(); });
   window.muRegister('nest',function(cv,ctx,W,Hh,t){ drawNest(t); });
+
+
+  /* ---- 4 · the window that cannot tell -------------------------------------
+     Declared: window width w, precision delta, radius R (animated).
+     sagitta uses the numerically STABLE form a^2/(R+sqrt(R^2-a^2)) rather than
+     R-sqrt(R^2-a^2), which catastrophically cancels at large R. The bound is
+     inverted independently from the sagitta and must return R exactly.       */
+  var Wn=new Construct.Construction();
+  Wn.free('w','number',1.0);
+  Wn.free('delta','number',0.004);
+  Wn.free('R','number',200);
+  Wn.dep('a','number',['w'],function(w){ return w/2; });
+  Wn.dep('sag','number',['R','a'],function(R,a){
+    return R<=a ? R : a*a/(R+Math.sqrt(R*R-a*a)); });
+  Wn.dep('detect','number',['sag','delta'],function(s,d){ return s>d?1:0; });
+  Wn.dep('Rmin','number',['a','delta'],function(a,d){ return (a*a+d*d)/(2*d); });
+  Wn.dep('Rback','number',['a','sag'],function(a,s){ return (a*a+s*s)/(2*s); });
+  Wn.dep('resid','number',['Rback','R'],function(rb,R){ return rb-R; });
+  Wn.solve();
+
+  window.muRegister('window',function(cv,ctx,W,Hh,t){
+    var cyc=(1-Math.cos(t*0.30))/2;                 /* 0 → 1 → 0 */
+    var R=Math.exp(Math.log(400)*(1-cyc)+Math.log(0.62)*cyc);
+    Wn.set('R',R); 
+    var a=Wn.val('a'), sag=Wn.val('sag'), del=Wn.val('delta'), det=Wn.val('detect');
+    ctx.clearRect(0,0,W,Hh);
+
+    /* --- true-aspect view: world unit = W px, so no vertical exaggeration --- */
+    var vy=Hh*0.40, px=function(x){ return W/2+x*W; }, py=function(y){ return vy-y*W; };
+    ctx.setLineDash([5,5]); ctx.strokeStyle='rgba(233,230,223,.30)'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(px(-a),py(0)); ctx.lineTo(px(a),py(0)); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.beginPath();
+    for(var i=0;i<=200;i++){
+      var x=-a+2*a*i/200, y=(R<=Math.abs(x))?0:(x*x)/(R+Math.sqrt(R*R-x*x));
+      i?ctx.lineTo(px(x),py(y)):ctx.moveTo(px(x),py(y));
+    }
+    ctx.strokeStyle='rgba(232,184,75,0.95)'; ctx.lineWidth=2.2; ctx.stroke();
+    ctx.font='11px ui-monospace,monospace'; ctx.textAlign='center';
+    ctx.fillStyle='rgba(138,133,119,.8)';
+    ctx.fillText('the window — true aspect, no exaggeration',W/2,Hh*0.09);
+    ctx.fillStyle='rgba(233,230,223,.35)'; ctx.textAlign='left';
+    ctx.fillText('chord',px(-a)+4,py(0)-8);
+
+    /* --- the gauge: bulge against precision, log scale --- */
+    var gy=Hh*0.78, gx0=W*0.12, gx1=W*0.88, gs=gx1-gx0;
+    var LO=-6, HI=0, lg=function(v){
+      var e=Math.log(Math.max(v,1e-9))/Math.LN10;
+      return gx0+Math.max(0,Math.min(1,(e-LO)/(HI-LO)))*gs; };
+    ctx.strokeStyle='rgba(233,230,223,.18)'; ctx.lineWidth=1.2;
+    ctx.beginPath(); ctx.moveTo(gx0,gy); ctx.lineTo(gx1,gy); ctx.stroke();
+    var dX=lg(del);
+    ctx.strokeStyle='rgba(224,145,58,.9)'; ctx.lineWidth=1.6;
+    ctx.beginPath(); ctx.moveTo(dX,gy-14); ctx.lineTo(dX,gy+14); ctx.stroke();
+    ctx.fillStyle='rgba(224,145,58,1)'; ctx.textAlign='center';
+    ctx.fillText('δ · precision',dX,gy+28);
+    ctx.strokeStyle=det?'rgba(232,184,75,.95)':'rgba(138,133,119,.55)'; ctx.lineWidth=5;
+    ctx.beginPath(); ctx.moveTo(gx0,gy); ctx.lineTo(lg(sag),gy); ctx.stroke();
+    ctx.beginPath(); ctx.arc(lg(sag),gy,5.5,0,7);
+    ctx.fillStyle=det?'rgba(232,184,75,1)':'rgba(94,200,216,1)'; ctx.fill();
+    ctx.fillStyle='rgba(138,133,119,.75)'; ctx.textAlign='left';
+    ctx.fillText('bulge s',gx0,gy-16);
+    ctx.textAlign='right'; ctx.fillStyle=det?'rgba(232,184,75,1)':'rgba(94,200,216,1)';
+    ctx.fillText(det?'curvature detected':'below precision — silent',gx1,gy-16);
+
+    var G=function(i){return document.getElementById(i);};
+    G('w-R').textContent = R>=100?R.toFixed(0):R.toFixed(2);
+    G('w-s').textContent = sag<1e-4?sag.toExponential(2):sag.toFixed(5);
+    G('w-v').textContent = det?'curvature detected — it is a circle':'indistinguishable from straight';
+    G('w-v').style.color = det?'var(--gold)':'var(--cyan)';
+    G('w-b').textContent = det?('R = '+R.toFixed(2)+' — measured'):('R > '+Wn.val('Rmin').toFixed(1)+' windows');
+    G('w-i').textContent = Wn.val('resid').toFixed(6);
+  });
 
   var io=null;
   function bind(){
