@@ -25,7 +25,7 @@
   .lede{color:var(--dim);max-width:66ch;margin:.7rem 0 1.1rem}
   .fml{color:var(--gold);text-align:center;font-size:1.05rem;margin:.5rem 0 1rem}
   canvas{width:100%;display:block;border:1px solid var(--line);border-radius:12px;background:#070707;touch-action:none}
-  #hinge{aspect-ratio:16/9} #window{aspect-ratio:16/9} #curve{aspect-ratio:16/10} #nest{aspect-ratio:16/7}
+  #hinge{aspect-ratio:16/9} #pole{aspect-ratio:16/9} #projline{aspect-ratio:16/9} #planefull{aspect-ratio:5/4} #inv-rot{aspect-ratio:2/1} #wrapscreen{aspect-ratio:5/4} #tangent{aspect-ratio:2/1} #horizon{aspect-ratio:16/9} #poincare{aspect-ratio:4/3} #window{aspect-ratio:16/9} #curve{aspect-ratio:16/10} #nest{aspect-ratio:16/7}
   .readout{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:center;margin:.7rem 0 .2rem;font-size:.83rem}
   .readout b{color:var(--gold)}
   .note{color:var(--dim);font-size:.87rem;max-width:66ch;margin:.7rem auto;text-align:center}
@@ -101,6 +101,46 @@
   <p class="note" style="max-width:70ch"><b>This is not a toy.</b> It is how cosmology treats the shape of space: measurements constrain the curvature to be small, which places a <em>lower bound</em> on the radius of curvature — if space is closed, its radius exceeds the region we can see. No measurement returns "flat and infinite"; the observable universe is the window, and the window cannot tell. <span class="tier">[A]</span> the method · <span class="tier c">[I]</span> the reading</p>
   <p class="note" style="max-width:70ch;border-left:2px solid var(--warm);padding-left:.9rem;text-align:left"><b>The fence, and it cuts both ways.</b> None of this shows the line <em>is</em> closed. It shows you cannot tell from here — which forbids the confident "it goes on forever" exactly as much as it forbids the confident "it comes back." The honest output of a bounded window is a <b>bound</b>, not a belief. Treating unboundedness as the default is a choice too, and it is the one that usually goes unexamined. <span class="tier">[S]</span></p>
 
+  <h2>5 · The pole — up off the top, back from the bottom</h2>
+<div class="fml">y = 1/x&nbsp;&nbsp;&middot;&nbsp;&nbsp;v = (2/&pi;)&thinsp;arctan&thinsp;y&nbsp;&nbsp;&middot;&nbsp;&nbsp;glue v = +1 to v = &minus;1&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&#8477; &cup; {&infin;}</div>
+<canvas id="pole" aria-label="The curve y = 1 over x drawn with a compactified vertical axis. The axis rolls from a straight segment, where plus infinity and minus infinity are two different edges and the curve is torn at x = 0, into a closed circle where the two edges are one location and the two branches join into a single closed curve. A moving point runs along the curve and passes through infinity without stopping."></canvas>
+<div class="readout"><span>x <b id="pole-a">0.000</b></span> <span>y = 1/x <b id="pole-b">0.000</b></span> <span>x&middot;y <b id="pole-c">1.000000</b></span> <span>|+&infin; &minus; &minus;&infin;| <b id="pole-d">0.000 px</b></span> <span>chart <b id="pole-e">two-point</b></span></div>
+<p class="note">The vertical axis is compactified, the horizontal one is not: v = (2/&pi;)&thinsp;arctan&thinsp;y sends +&infin; and &minus;&infin; to the two edges, and the axis then rolls until those edges are one location &mdash; the roll is presentational; every intermediate frame is still two-point, and the identification happens only in the last instant, when the ends coincide. Read as two points, the branch ends stay apart and 1/x has no continuous extension at x = 0; read as one point, the ends coincide, the separation readout falls to 0.000 px, and the travelling dot crosses &infin; without stopping. The y readout shows the finite float the parametrisation actually produces; it never literally prints &infin;, because the drawing never divides by zero. The tear was in the chart, not in the function &mdash; which infinity you take is a choice, and only the one-point choice makes the object whole. One-point compactification is inherited topology, used here, not discovered; the dot still leaves the frame at |x| &gt; 3, because the x-axis was deliberately left open. <span class="tier">[A]</span> <span class="tier">[S]</span></p>
+  <h2>6 · The projective line &mdash; one-point compactification</h2>
+<div class="fml">x = tan(&theta;/2) &nbsp;&middot;&nbsp; &theta; = 2&nbsp;arctan&nbsp;x &nbsp;&middot;&nbsp; sin&nbsp;&theta; = 2x/(1+x&sup2;), cos&nbsp;&theta; = (1&minus;x&sup2;)/(1+x&sup2;) &nbsp;&middot;&nbsp; &#8477;&nbsp;&cup;&nbsp;{&infin;} &cong; S&sup1; &nbsp;&middot;&nbsp; one lap = 2&pi;</div>
+<canvas id="projline" aria-label="A circle of diameter one rests on a number line, touching it at zero. Lines from the top point of the circle join each point of the line to a point of the circle; a dashed horizontal line through that top point marks the one direction that meets no number. A moving point travels at constant speed around the circle; its number-line coordinate runs off the right edge of the frame, passes through the top of the circle, and returns from the far left edge without jumping."></canvas>
+<div class="readout"><span>x <b id="projline-a">0.000</b></span><span>&theta; <b id="projline-b">0.0000 rad</b></span><span>|P(x) &minus; P(&theta;)| <b id="projline-c">0.00e+0</b></span><span>state <b id="projline-d">near 0</b></span></div>
+<p class="note">Every line through N except the horizontal tangent at N meets the number line exactly once, and meets the circle exactly once more besides N itself. That one exceptional direction &mdash; the only one with no partner on the line &mdash; is what the extra point &infin; names. So all of &#8477;, plus one point, fits inside a finite circle. +&infin; and &minus;&infin; are the same place here by choice of compactification: this is &#8477;&nbsp;&cup;&nbsp;{&infin;}, one point added, not the two-endpoint line [&minus;&infin;,&nbsp;+&infin;] of elementary calculus, where they stay distinct. The moving point travels at constant speed on the circle while its chart coordinate x = tan(&theta;/2) accelerates, leaves the frame past the last tick (the thickened arc at the top is everything beyond the visible line), passes through N, and returns from the far left: the blow-up is in the number, not in the point. The readout builds the same circle point down two chains that share only &theta; &mdash; from &theta; by sine and cosine, and from x = tan(&theta;/2) by actually intersecting the ray N&rarr;(x,0) with the circle &mdash; and prints their difference. That tests the half-angle identities and the intersection algebra; it does not test &theta; itself. This is the one-dimensional case of the move that turns the plane into the sphere. <span class="tier">[A] used, not discovered</span> <span class="tier">[S]</span></p>
+  <h2>7 · An infinite plane, entire</h2>
+<div class="fml">unit&nbsp;sphere, plane&nbsp;through&nbsp;the&nbsp;equator, projection&nbsp;from&nbsp;the&nbsp;north&nbsp;pole &nbsp;·&nbsp; X&nbsp;=&nbsp;d &nbsp;&#8614;&nbsp; sphere&nbsp;&cap;&nbsp;{&thinsp;x&nbsp;+&nbsp;dz&nbsp;=&nbsp;d&thinsp;} &nbsp;·&nbsp; radius&nbsp;=&nbsp;1/&radic;(1+d&sup2;) &nbsp;·&nbsp; &infin;&nbsp;lies&nbsp;on&nbsp;every&nbsp;one</div>
+<canvas id="planefull" aria-label="An infinite square grid wrapped onto a sphere by stereographic projection, the sphere drawn in orthographic projection so front and back halves overlap. Every straight line of the plane appears as a circle, and all of those circles pass through one point at the top, the image of infinity. The plane slowly rotates and zooms out by a factor of ten every thirteen seconds, so ever more distant regions sweep through the picture without anything leaving it."></canvas>
+<div class="readout"><span>plane radius already inside 1&nbsp;px of &infin; <b id="planefull-a">0</b></span><span>|image| / sphere radius <b id="planefull-b">1</b></span><span>two chains, same circle, differ by <b id="planefull-c">0</b></span><span>|centre&nbsp;&minus;&nbsp;&infin;|&nbsp;&minus;&nbsp;radius <b id="planefull-d">0</b></span></div>
+<p class="note">The whole plane is here, not a window onto it: stereographic projection wraps every point of it onto the sphere, so the entire thing fits inside one finite outline — the silhouette of that sphere, seen straight on, so near and far halves of the surface overlap in the drawing. Each straight grid line arrives as a circle, and all of those circles meet at the top point, which is the image of infinity — an ordinary point of the surface, with nothing singular about it, though it is the one point that every straight line passes through. The plane rotates and zooms out tenfold every thirteen seconds, so arbitrarily distant regions sweep in through that point while the image radius stays exactly the sphere radius; readout (c) builds the cyan circle twice down independent chains — three mapped points versus the closed form — and shows the difference vanish, while readout (d) confirms that the circle fitted to three ordinary finite points passes through the image of infinity to machine precision. This is the one-point compactification: every direction of escape arrives at the same single &infin;, unlike the projective closure where opposite directions land on distinct points of a circle at infinity. Stereographic projection is inherited mathematics, used, not discovered. <span class="tier">[A]</span> <span class="tier">[S]</span></p>
+  <h2>8 · The singularity that was only a rotation</h2>
+<div class="fml">w(&theta;) = (cos&#189;&theta; &middot; z &minus; i&#8202;sin&#189;&theta;) / (&minus;i&#8202;sin&#189;&theta; &middot; z + cos&#189;&theta;) &nbsp;&mdash;&nbsp; at &theta; = &pi; this is w = 1/z</div>
+<canvas id="inv-rot" aria-label="Left: a sphere turning steadily about the horizontal axis through the points plus one and minus one, carrying a marked point smoothly from the bottom pole labelled zero to the top pole labelled infinity. Right: the same point in the flat plane, racing off the edge of the chart as its modulus runs to enormous values and back."></canvas>
+<div class="readout"><span>rotation <b id="inv-rot-a">0.000&pi;  (0.0&deg;)</b></span><span>flat chart |z| <b id="inv-rot-b">0.000</b></span><span>sphere arc s / 2&pi; <b id="inv-rot-c">0.0000 / 6.2832</b></span><span>chart&rarr;sphere gap <b id="inv-rot-d">0.0e+0</b></span><span>&theta; recovered &minus; &theta; <b id="inv-rot-e">0.0e+0</b></span></div>
+<p class="note">Both frames show one motion. On the sphere it is a rigid turn about the axis through +1 and &minus;1: the marked point leaves 0, crosses the unit circle, and reaches &infin; at &theta; = &pi;, having travelled an arc of exactly &pi; &mdash; uniform in &theta;, ds/d&theta; = 1 at every point including &pi;, with nothing occurring anywhere along it. In the flat chart the same point is |z| = |tan &#189;&theta;|, which leaves every window and returns from the opposite side. The gap readout builds the sphere position twice by independent routes &mdash; once by rotating the starting point, once by projecting the exploded chart number back up &mdash; and their difference stays at machine zero while |z| reads in the thousands, so the explosion is in the coordinates, not in the point. As a map of the Riemann sphere, 1/z is a rotation by &pi;; the sphere is not singular there. <span class="tier">[A]</span> used, not discovered <span class="tier">[S]</span></p>
+  <h2>9 · The wrap-around screen</h2>
+<div class="fml">(x, y) = ((x&#8320; + a&middot;s) mod 1, (y&#8320; + b&middot;s) mod 1) on T&sup2; = &#8477;&sup2;/&#8484;&sup2; &nbsp;&middot;&nbsp; for a &ne; 0, the orbit closes &#8660; b/a &#8712; &#8474;</div>
+<canvas id="wrapscreen" aria-label="A square screen whose left and right edges are glued together and whose top and bottom edges are glued together. A point travels on a fixed slope, leaves one edge and re-enters at the identified point on the opposite edge, and its trail builds up as many separate segments that are one path on the torus. The slope alternates between three halves, which closes after five wraps, and the golden slope, which never closes."></canvas>
+<div class="readout"><span>x <b id="wrapscreen-a">0.0000</b></span> <span>y <b id="wrapscreen-b">0.0000</b></span> <span>wraps right / up (cumulative) <b id="wrapscreen-c">0 / 0</b></span> <span>slope b/a <b id="wrapscreen-d">1.500000</b></span> <span>exact return, s = m/a <b id="wrapscreen-e">&mdash;</b></span> <span>|chart &minus; lift| on T&sup2; <b id="wrapscreen-f">0.0e+0</b></span></div>
+<p class="note">The point moves in one straight line; the screen cuts it wherever it meets an edge, and every cut arrives back at the identified point on the opposite edge, marked by the paired ticks and the dashed continuation into the next copy. The last readout builds the torus position twice, once from the wrapped coordinates that were actually drawn and once from the unwrapped straight line, and the difference stays at round-off, ~10&#8315;&sup1;&#8308; (the two routes descend from the same straight line, so this checks the drawing pipeline &mdash; an off-by-one cell index would push it to O(1) &mdash; it is not an independently discovered invariant). The breaks are in the chart, not in the path. With slope 3/2 the construction returns exactly to its start at s = 8 s, so the trail closes after 2 right wraps and 3 up wraps and then only retraces itself; with slope (&radic;5&minus;1)/2 no exact return exists, and the witness reports the closest miss over the first 10&#8308; candidate return times. <span class="tier">[S]</span> The animation runs on a double-precision stand-in for (&radic;5&minus;1)/2, which is itself a rational number; the never-closes verdict is a statement about the exact slope, and what the instrument actually establishes is the 10&#8308;-candidate miss reported in the readout. That second orbit is dense in the square, but far too slowly for this animation to show &mdash; what you can see is only that it has not repeated in the 34 s shown; that it never repeats is inherited from the irrationality of the slope, not observed. <span class="tier">[A] used, not discovered</span></p>
+  <h2>10 · The periodic pole — tan, and why it repeats</h2>
+<div class="fml">tan &theta; = height where the line O&thinsp;P meets x = 1 &nbsp;&middot;&nbsp; tan(&theta; + &pi;) &minus; tan &theta; = 0 &nbsp;(&theta; &ne; &pi;/2 + k&pi;)</div>
+<canvas id="tangent" aria-label="Two panels side by side. Left: the graph of tangent over four pi, with dashed vertical poles at plus and minus pi over two and three pi over two. Right: a unit circle at the same angle, with the vertical tangent line x equals 1; the line through the centre and the moving point cuts that tangent line at height tan theta. The radius turns at constant speed while the intercept runs off the top of the frame and returns from the bottom each time the line passes vertical."></canvas>
+<div class="readout"><span>&theta; <b id="tangent-a">0.0000</b></span><span>tan &theta; <b id="tangent-b">0.0000</b></span><span>circle angle <b id="tangent-c">0.00&deg;</b></span><span>|OP| <b id="tangent-d">1.000000000000</b></span><span>tan &theta; &minus; tan(&theta;+&pi;) <b id="tangent-e">0 (exact)</b></span></div>
+<p class="note">Left is the graph of tan; right is the same &theta; on the unit circle, where tan &theta; is read off as the height at which the line through the centre cuts the tangent line x = 1. At &theta; = &pi;/2 that line is parallel to x = 1, so the height has nowhere to land — meanwhile the point crosses the top of the circle at the same steady speed it has everywhere, and |OP| stays 1 to twelve decimals. The height depends only on the line, not on which of its two ends carries the point, so the antipodal chain returns the identical number: the displayed difference tan &theta; &minus; tan(&theta;+&pi;) is exactly 0 — exact by construction, not by numerical luck: the two chains are the same line read from its two ends; &pi; is a period, and the graph beside it shows the branch does not repeat any sooner. The trigonometry here is <span class="tier">[A]</span> used, not discovered — including the reading of tan &theta; as the intercept on the tangent line x = 1, which is the classical construction the function is named after. Nothing on this canvas is framework-derived.</p>
+  <h2>11 · The horizon is the line at infinity</h2>
+<div class="fml">x<sub>V</sub>(&theta;) = c<sub>x</sub> + f&#8201;tan&#8201;&theta;&emsp;&middot;&emsp;y<sub>V</sub> = c<sub>y</sub> for every |&theta;| &lt; 90&deg;&emsp;&middot;&emsp;&theta; = 90&deg;: no finite V</div>
+<canvas id="horizon" aria-label="A ground plane ruled by two families of parallel lines drawn in perspective. One family slowly turns and its vanishing point slides left and right along the horizon line; the other family stays parallel to the picture plane, so its lines stay parallel on screen and meet at no point of the drawing at all. A moving point runs outward along one rail and lands on the vanishing point."></canvas>
+<div class="readout"><span>direction &theta; <b id="horizon-a">0.0</b>&deg;</span><span>vanishing point x <b id="horizon-b">0 px</b></span><span>formula &minus; crossing <b id="horizon-c">0</b> px</span><span>third rail off crossing <b id="horizon-d">0</b> px</span><span>&mu;-point gap <b id="horizon-e">0.00</b> px</span></div>
+<p class="note">One camera, one ground plane: the gold family turns while the teal family stays parallel to the picture plane, so its lines stay parallel on screen and their meeting point is not merely off-frame &mdash; it is the point at infinity of the picture plane itself, the single point of the horizon that no affine drawing can reach. The gold vanishing point is built twice by different routes &mdash; once from the direction alone, once as the crossing of two drawn rails &mdash; and a third drawn rail is measured against that crossing; both residuals sit at floating-point zero, on the horizon, at every angle the sweep visits. When f&#8201;tan&#8201;&theta; passes the frame edge the gold point merely slides outside the rendered rectangle &mdash; a crop, not a boundary; enlarge the canvas and it returns. The ground plane's line at infinity maps bijectively to the horizon line of the projectively completed picture plane; the drawn horizon carries every direction but one, and the teal family owns the one it is missing. The projective geometry is used, not discovered; the reading of Renaissance practice &mdash; painters ruling this line by construction centuries before it was axiomatised &mdash; is historical interpretation. <span class="tier">[A]</span> <span class="tier">[S]</span> <span class="tier">[I]</span></p>
+  <h2>12 · An infinite hyperbolic plane in a finite disk — and how it differs</h2>
+<div class="fml">r = tanh(s&#8202;/&#8202;2) &nbsp;&middot;&nbsp; d(0,P) = ln&#8202;[(1+r)&#8202;/&#8202;(1&minus;r)] = 2&#8239;artanh&#8239;r &nbsp;&middot;&nbsp; s &rarr; &infin; : r &rarr; 1, d &rarr; &infin;</div>
+<canvas id="poincare" aria-label="Inside a dashed circle, gold circular arcs meet the rim at right angles. A cyan point travels outward from the centre at constant hyperbolic speed, crossing one gold distance ring per second. It slows to a crawl in the picture as it nears the rim, and the run dissolves at hyperbolic distance 12 without ever reaching it."></canvas>
+<div class="readout"><span>hyperbolic distance from centre <b id="poincare-a">0.000</b></span><span>Euclidean picture radius <b id="poincare-b">0.000000000</b></span><span>largest residual, three closures <b id="poincare-c">0.0e+0</b></span><span>geodesic angle at the rim <b id="poincare-d">90.000&deg;</b></span><span>total distance travelled <b id="poincare-e">0.0</b></span></div>
+<p class="note">The cyan point moves at constant hyperbolic speed — one gold ring, one unit of distance, one second — so its picture radius climbs toward 1 while the distance readout climbs at a steady one unit per second. The run is cut at distance 12, where the point is already within 0.003 of a pixel of the rim: the picture and the arithmetic both run out long before the distance does, and past that point only the number would still be telling the truth. Distance is computed forward as r = tanh(s&#8202;/&#8202;2) and then read back out of the picture as the log cross-ratio of four Euclidean distances to the two ideal endpoints of the point's own geodesic — a round trip, not two independent derivations. What it certifies is that the point really moves at unit hyperbolic speed; it is not evidence for the metric itself, which is inherited mathematics here, used, not discovered. The largest residual — cross-ratio against arclength, Cayley against arclength, and the orthogonality identity |Q|&sup2; &minus; &rho;&sup2; = 1 for the highlighted geodesic — stays at rounding level: worst about 1e-12 at the far end, where |PA| = 1 &minus; r is a subtraction of nearly equal numbers and the arithmetic, not the geometry, is what degrades. This is not a one-point compactification: the rim is an ideal boundary at infinite distance, it carries a whole circle of distinct ideal points rather than one added point. The closed disk you are looking at is a compactification — of the model, by its ideal boundary, which for the hyperbolic plane is canonically a circle and not an artefact of this chart — but the added set is a whole circle of points at infinite distance, and unlike the single added point of the one-point construction, none of it belongs to the space. That is why it is drawn dashed and why the point never lands on it. What this shares with the other instruments is only that an infinite object is shown whole in a finite frame; the crowding at the rim is a fact about the chart, not about the plane. <span class="tier">[A]</span> <span class="tier">[S]</span> <span class="tier">[I]</span></p>
   <!--INSTRUMENTS-->
 
   <div class="card">
@@ -334,6 +374,1950 @@
     G('w-b').textContent = det?('R = '+R.toFixed(2)+' — measured'):('R > '+Wn.val('Rmin').toFixed(1)+' windows');
     G('w-i').textContent = Wn.val('resid').toFixed(6);
   });
+
+  window.muRegister("pole", (function (cv, ctx, W, H, t) {
+  var PI = Math.PI, TAU = 2 * PI;
+  var XM = 3, cx = W * 0.5, cy = H * 0.50, sxx = (W * 0.80) / (2 * XM);
+  var Lh = H * 0.60, KX = 0.30, KY = 0.34;
+  var GOLD = function (a) { return 'rgba(232,184,75,' + a + ')'; };
+  var WARM = function (a) { return 'rgba(224,145,58,' + a + ')'; };
+  var CYA  = function (a) { return 'rgba(94,200,216,' + a + ')'; };
+  var DIM  = function (a) { return 'rgba(138,133,119,' + a + ')'; };
+  var INK  = function (a) { return 'rgba(233,230,223,' + a + ')'; };
+  var MONO = 'ui-monospace, Menlo, Consolas, monospace';
+
+  function sstep(z) { z = z < 0 ? 0 : z > 1 ? 1 : z; return z * z * (3 - 2 * z); }
+
+  /* morph schedule: hold two-point, glue, hold one-point, unglue */
+  var T = 18, u = t % T, s;
+  if (u < 4) s = 0;
+  else if (u < 7.5) s = sstep((u - 4) / 3.5);
+  else if (u < 14) s = 1;
+  else s = 1 - sstep((u - 14) / 4);
+  var glued = s > 0.995;                              /* one predicate for every glued visual */
+
+  var Phi = TAU * s;                                  /* total turn of the fibre */
+  var f = Phi < 1e-4 ? 1 : (Phi <= PI ? Math.sin(Phi / 2) / (Phi / 2) : 2 / Phi);
+  var Z = (1 - 0.42 * s) / f;                         /* keeps the drawing a usable size */
+  var Rr = Phi < 1e-4 ? 1 : Lh / Phi;
+  var amax = Phi < 1e-4 ? 1 : 2 * Rr;
+
+  /* pure fibre map, shared by the kernel deps and by the drawing loops */
+  function endFn(v, Phi, R, Z, Lh, kx, ky, X0, Y0) {
+    var a, b, l = Lh * 0.5 * v;
+    if (Phi < 1e-4) { a = 0; b = l; }
+    else { var p = l / R; a = R * (1 - Math.cos(p)); b = R * Math.sin(p); }
+    return { x: X0 + kx * Z * a, y: Y0 - Z * (b + ky * a), a: a };
+  }
+  function P(x, v) { return endFn(v, Phi, Rr, Z, Lh, KX, KY, cx + x * sxx, cy); }
+  function xOfV(v) { var a = PI * v * 0.5; return Math.cos(a) / Math.sin(a); }
+
+  /* ---- construction (built once, cached on the canvas) ---- */
+  var C = cv._C;
+  if (C === undefined) {
+    try {
+      C = new Construct.Construction();
+      C.free('Phi', 'number', 0); C.free('R', 'number', 1); C.free('Z', 'number', 1);
+      C.free('Lh', 'number', 1); C.free('kx', 'number', KX); C.free('ky', 'number', KY);
+      C.free('cx', 'number', 0); C.free('cy', 'number', 0); C.free('vdot', 'number', 0.5);
+      var IN = ['Phi', 'R', 'Z', 'Lh', 'kx', 'ky', 'cx', 'cy'];
+      C.dep('Ptop', 'point', IN, function (p, r, z, l, a, b, X, Y) {
+        var q = endFn(1, p, r, z, l, a, b, X, Y); return { x: q.x, y: q.y };
+      });
+      C.dep('Pbot', 'point', IN, function (p, r, z, l, a, b, X, Y) {
+        var q = endFn(-1, p, r, z, l, a, b, X, Y); return { x: q.x, y: q.y };
+      });
+      C.dep('gap', 'number', ['Ptop', 'Pbot'], function (A, B) {
+        var d = Construct.G.dist(A, B);
+        return (typeof d === 'number' && isFinite(d)) ? d : Math.sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
+      });
+      C.dep('ang',  'number', ['vdot'], function (v) { return PI * v * 0.5; });
+      C.dep('ydot', 'number', ['ang'], function (a) { return Math.sin(a) / Math.cos(a); });
+      C.dep('xdot', 'number', ['ang'], function (a) { return Math.cos(a) / Math.sin(a); });
+      C.dep('prod', 'number', ['xdot', 'ydot'], function (x, y) { return x * y; });
+      cv._C = C;
+    } catch (e) { C = null; cv._C = null; }
+  }
+
+  /* period 9 divides the 18 s morph: v = -1 lands alternately on s = 0 and s = 1 */
+  var vd = ((t / 9) % 1) * 2 - 1;
+  if (Math.abs(vd) < 1e-9) vd = 1e-9;
+
+  var Ptop, Pbot, gap, xd, yd, prod, ok = false;
+  if (C) {
+    try {
+      C.set('Phi', Phi); C.set('R', Rr); C.set('Z', Z); C.set('Lh', Lh);
+      C.set('kx', KX); C.set('ky', KY); C.set('cx', cx); C.set('cy', cy); C.set('vdot', vd);
+      C.solve();
+      Ptop = C.val('Ptop'); Pbot = C.val('Pbot'); gap = C.val('gap');
+      xd = C.val('xdot'); yd = C.val('ydot'); prod = C.val('prod');
+      ok = !!Ptop && !!Pbot && isFinite(Ptop.x) && isFinite(Ptop.y) && isFinite(Pbot.x) && isFinite(Pbot.y)
+           && isFinite(gap) && isFinite(xd) && isFinite(yd);
+    } catch (e) { cv._C = null; C = null; ok = false; }
+  }
+  if (!ok) {
+    Ptop = P(0, 1); Pbot = P(0, -1);
+    gap = Math.sqrt((Ptop.x - Pbot.x) * (Ptop.x - Pbot.x) + (Ptop.y - Pbot.y) * (Ptop.y - Pbot.y));
+    var ad = PI * vd * 0.5; yd = Math.sin(ad) / Math.cos(ad); xd = Math.cos(ad) / Math.sin(ad); prod = xd * yd;
+  }
+
+  /* ---- draw ---- */
+  ctx.clearRect(0, 0, W, H);
+  ctx.lineJoin = 'round'; ctx.lineCap = 'round';
+  var LX = cx - XM * sxx, RX = cx + XM * sxx;
+  ctx.font = '10px ' + MONO;
+
+  /* level lines of constant y (constant v) */
+  var lv = [[0, 'y = 0', 0.62], [1, 'y = 1', 0.62], [-1, 'y = −1', 0.62],
+            [1 / 3, 'y = 1/3', 0.40], [-1 / 3, 'y = −1/3', 0.40],
+            [3, 'y = 3', 0.40], [-3, 'y = −3', 0.40]];
+  ctx.lineWidth = 1;
+  for (var i = 0; i < lv.length; i++) {
+    var yv = lv[i][0], vv = (2 / PI) * Math.atan(yv), q = P(0, vv), off = q.x - cx;
+    ctx.strokeStyle = DIM(yv === 0 ? 0.30 : 0.12);
+    ctx.beginPath(); ctx.moveTo(LX + off, q.y); ctx.lineTo(RX + off, q.y); ctx.stroke();
+    if (lv[i][1]) { ctx.fillStyle = DIM(lv[i][2]); ctx.textAlign = 'right'; ctx.fillText(lv[i][1], LX + off - 7, q.y + 3); }
+  }
+
+  /* fibres: one compactified y-axis over each x */
+  ctx.lineWidth = 1; ctx.strokeStyle = DIM(0.13);
+  for (var k = -4; k <= 4; k++) {
+    var x0 = k * 0.75; if (Math.abs(x0) > XM) continue;
+    ctx.beginPath();
+    for (var j = 0; j <= 56; j++) { var pp = P(x0, -1 + 2 * j / 56); if (j === 0) ctx.moveTo(pp.x, pp.y); else ctx.lineTo(pp.x, pp.y); }
+    ctx.stroke();
+  }
+
+  /* the two infinity edges */
+  var Etop = P(0, 1), Ebot = P(0, -1);
+  ctx.lineWidth = 1.2; ctx.textAlign = 'right';
+  if (!glued) {
+    ctx.strokeStyle = WARM(0.42);
+    ctx.beginPath(); ctx.moveTo(LX + Etop.x - cx, Etop.y); ctx.lineTo(RX + Etop.x - cx, Etop.y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(LX + Ebot.x - cx, Ebot.y); ctx.lineTo(RX + Ebot.x - cx, Ebot.y); ctx.stroke();
+    ctx.fillStyle = WARM(0.85);
+    ctx.fillText('+∞', LX + Etop.x - cx - 7, Etop.y + 3);
+    ctx.fillText('−∞', LX + Ebot.x - cx - 7, Ebot.y + 3);
+  } else {
+    ctx.strokeStyle = WARM(0.72);
+    ctx.beginPath(); ctx.moveTo(LX + Etop.x - cx, Etop.y); ctx.lineTo(RX + Etop.x - cx, Etop.y); ctx.stroke();
+    ctx.fillStyle = WARM(0.95);
+    ctx.fillText('+∞ = −∞', LX + Etop.x - cx - 7, Etop.y + 3);
+  }
+
+  /* the curve y = 1/x, sampled in v so both ends reach infinity exactly */
+  var v0 = (2 / PI) * Math.atan(1 / XM);
+  ctx.lineWidth = 2.4;
+  function branch(vA, vB) {
+    var N = 200, prev = null;
+    for (var n = 0; n <= N; n++) {
+      var v = vA + (vB - vA) * (n / N), q = P(xOfV(v), v);
+      if (prev) {
+        var d = (prev.a + q.a) * 0.5 / amax;
+        ctx.strokeStyle = GOLD(0.95 - 0.60 * d);
+        ctx.beginPath(); ctx.moveTo(prev.x, prev.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+      }
+      prev = q;
+    }
+  }
+  branch(v0, 1); branch(-1, -v0);
+
+  /* the tear, drawn as the segment whose length the readout reports */
+  if (!glued) {
+    ctx.setLineDash([3, 5]); ctx.lineWidth = 1.2; ctx.strokeStyle = CYA(0.55);
+    ctx.beginPath(); ctx.moveTo(Ptop.x, Ptop.y); ctx.lineTo(Pbot.x, Pbot.y); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.lineWidth = 1.4; ctx.strokeStyle = WARM(0.9);
+    ctx.beginPath(); ctx.arc(Ptop.x, Ptop.y, 4, 0, TAU); ctx.stroke();
+    ctx.beginPath(); ctx.arc(Pbot.x, Pbot.y, 4, 0, TAU); ctx.stroke();
+    if (gap > 26) {
+      ctx.fillStyle = CYA(0.8); ctx.textAlign = 'left';
+      ctx.fillText('gap ' + gap.toFixed(1) + ' px', (Ptop.x + Pbot.x) * 0.5 + 9, (Ptop.y + Pbot.y) * 0.5 + 3);
+    }
+  } else {
+    ctx.lineWidth = 1.6; ctx.strokeStyle = WARM(0.95);
+    ctx.beginPath(); ctx.arc(Ptop.x, Ptop.y, 5.5, 0, TAU); ctx.stroke();
+    ctx.fillStyle = WARM(0.95); ctx.textAlign = 'left';
+    ctx.fillText('∞', Ptop.x + 10, Ptop.y - 6);
+  }
+
+  /* travelling point, with a short trail */
+  for (var m = 12; m >= 1; m--) {
+    var vt = vd - m * 0.0035; while (vt < -1) vt += 2;
+    var xt = xOfV(vt); if (Math.abs(xt) > XM) continue;
+    var pt = P(xt, vt);
+    ctx.fillStyle = CYA(0.30 * (1 - m / 13));
+    ctx.beginPath(); ctx.arc(pt.x, pt.y, 3.2, 0, TAU); ctx.fill();
+  }
+  var offWin = Math.abs(xd) > XM;
+  var xc = offWin ? (xd > 0 ? XM : -XM) : xd;
+  var pd = P(xc, vd);
+  if (offWin) {
+    ctx.lineWidth = 1.4; ctx.strokeStyle = CYA(0.45);
+    ctx.beginPath(); ctx.arc(pd.x, pd.y, 5, 0, TAU); ctx.stroke();
+  } else {
+    ctx.save(); ctx.shadowColor = 'rgba(94,200,216,0.85)'; ctx.shadowBlur = 12;
+    ctx.fillStyle = CYA(1); ctx.beginPath(); ctx.arc(pd.x, pd.y, 5, 0, TAU); ctx.fill();
+    ctx.restore();
+  }
+
+  /* x scale — deliberately not compactified, drawn on y = 0 where the projection offset is zero */
+  var q0 = P(0, 0);
+  ctx.textAlign = 'center'; ctx.fillStyle = DIM(0.70);
+  for (var g2 = -3; g2 <= 3; g2++) {
+    var gx = cx + g2 * sxx;
+    ctx.fillRect(gx - 0.5, q0.y - 3, 1, 6);
+    ctx.fillText(String(g2), gx, q0.y + 15);
+  }
+  ctx.textAlign = 'right'; ctx.fillStyle = DIM(0.55);
+  ctx.fillText('x — not compactified · scale exact on y = 0', RX, H - 12);
+
+  /* state badge */
+  var chart = s < 0.005 ? 'two-point  [−∞, +∞]'
+            : glued ? 'one-point  +∞ = −∞'
+            : 'gluing · turn ' + Math.round(Phi * 180 / PI) + '°';
+  var claim = s < 0.005 ? 'no continuous extension at x = 0'
+            : glued ? 'extends continuously at x = 0, value ∞'
+            : '';
+  ctx.textAlign = 'left';
+  ctx.font = '12px ' + MONO; ctx.fillStyle = INK(0.92); ctx.fillText(chart, 14, 20);
+  ctx.font = '10px ' + MONO; ctx.fillStyle = DIM(0.85); ctx.fillText(claim, 14, 35);
+
+  /* readouts */
+  function fmt(n) {
+    if (!isFinite(n)) return '∞';
+    var m2 = Math.abs(n);
+    if (m2 >= 1e4 || (m2 > 0 && m2 < 1e-4)) return n.toExponential(2);
+    return n.toFixed(3);
+  }
+  function put(id, txt) { var el = document.getElementById(id); if (el) el.textContent = txt; }
+  put('pole-a', fmt(xd));
+  put('pole-b', fmt(yd));
+  put('pole-c', prod.toFixed(6));
+  put('pole-d', gap.toFixed(3) + ' px');
+  put('pole-e', chart + (offWin ? ' · dot off window in x' : ''));
+}));
+  window.muRegister("projline", (function (cv, ctx, W, H, t) {
+  var PI = Math.PI, TAU = PI * 2;
+
+  /* the kernel is a hard dependency: without it, draw an empty frame rather than throw */
+  if (typeof Construct === "undefined" || !Construct.Construction) { ctx.clearRect(0, 0, W, H); return; }
+
+  /* ---------- construction: declared once, cached on the canvas ---------- */
+  var C = cv._C;
+  if (!C) {
+    var G = Construct.G || {};
+    var dist = null;
+    try {
+      if (G.dist && Math.abs(G.dist({ x: 3, y: 0 }, { x: 0, y: 4 }) - 5) < 1e-12) dist = G.dist;
+    } catch (e) { dist = null; }
+    if (!dist) dist = function (A, B) { return Math.hypot(A.x - B.x, A.y - B.y); };
+
+    /* second meeting of the ray N->L with the circle (centre O, radius r).
+       N lies on the circle, so the quadratic loses its constant term and
+       k = -2 (N-O).(L-N) / |L-N|^2 is exact. |L-N| infinite  =>  the point is N. */
+    var project = function (L, N, O, r) {
+      var dx = L.x - N.x, dy = L.y - N.y, dd = dx * dx + dy * dy;
+      if (!isFinite(dd) || dd === 0) return { x: N.x, y: N.y };
+      var k = -2 * ((N.x - O.x) * dx + (N.y - O.y) * dy) / dd;
+      return { x: N.x + k * dx, y: N.y + k * dy };
+    };
+
+    C = new Construct.Construction();
+    C.free("theta", "number", 0);              /* arc position, 0 at the tangency */
+    C.free("r", "number", 0.5);                /* diameter 1: pole sits at height 1 */
+    C.dep("O", "point", ["r"], function (r) { return { x: 0, y: r }; });
+    C.dep("N", "point", ["r"], function (r) { return { x: 0, y: 2 * r }; });
+    C.dep("x", "number", ["theta"], function (a) { return Math.tan(a / 2); });
+    C.dep("L", "point", ["x"], function (v) { return { x: v, y: 0 }; });
+    C.dep("Pchart", "point", ["L", "N", "O", "r"], project);          /* chain A: via x */
+    C.dep("Pcirc", "point", ["theta", "O", "r"], function (a, o, r) { /* chain B: via theta */
+      return { x: o.x + r * Math.sin(a), y: o.y - r * Math.cos(a) };
+    });
+    C.dep("gap", "number", ["Pchart", "Pcirc"], function (A, B) { return dist(A, B); });
+    C.free("xm", "number", 1);                 /* sampler for the marked points */
+    C.dep("Lm", "point", ["xm"], function (v) { return { x: v, y: 0 }; });
+    C.dep("Pm", "point", ["Lm", "N", "O", "r"], project);
+    C.solve();
+    cv._C = C;
+  }
+
+  /* ---------- driver: uniform motion on the object, one lap = 2*pi ---------- */
+  var period = 16;
+  var ang = function (tt) {
+    var p = (tt / period) * TAU;
+    var q = p - Math.floor(p / TAU) * TAU;
+    return q > PI ? q - TAU : q;
+  };
+  var th = ang(t);
+  C.set("theta", th);
+  C.solve();
+  var x = C.val("x"), P = C.val("Pchart"), gap = C.val("gap");
+
+  /* ---------- layout: ONE scale for line and circle (diameter = 1 unit) ---------- */
+  var s = Math.min(W / 8.6, H * 0.55);
+  var lineY = H - Math.max(42, H * 0.22);
+  var cx = W / 2, R = s / 2, Oy = lineY - R, Ny = lineY - s;
+  var hr = (W / 2 - 8) / s;                    /* visible half-range of the line */
+  var SX = function (u) { return cx + s * u; };
+  var SY = function (u) { return lineY - s * u; };
+
+  var GOLD = "232,184,75", WARM = "224,145,58", CYAN = "94,200,216", DIM = "138,133,119";
+  var rgba = function (c, a) { return "rgba(" + c + "," + a + ")"; };
+  var fs = Math.max(9, Math.min(13, W / 78));
+  var F = function (k) { return (fs * k).toFixed(1) + "px ui-monospace, SFMono-Regular, Menlo, monospace"; };
+  var fx = function (v, d) { return (v < 0 ? "−" : "") + Math.abs(v).toFixed(d); };
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.lineCap = "round"; ctx.lineJoin = "round";
+  ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+
+  var MARK = [1, 2, 3, 4, 6, 8, 12, 16, 24];
+  var i, sg, m, Pm, X;
+
+  /* rays from N to marked points of the line (the wrapping map, drawn whole) */
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = rgba(GOLD, 0.15);
+  ctx.beginPath(); ctx.moveTo(cx, Ny); ctx.lineTo(cx, lineY); ctx.stroke();
+  for (i = 0; i < MARK.length; i++) {
+    ctx.strokeStyle = rgba(GOLD, MARK[i] <= 4 ? 0.15 : 0.09);
+    for (sg = -1; sg <= 1; sg += 2) {
+      m = sg * MARK[i];
+      ctx.beginPath(); ctx.moveTo(cx, Ny); ctx.lineTo(cx + s * m, lineY); ctx.stroke();
+    }
+  }
+
+  /* the one exceptional direction: the horizontal tangent at N, which meets no number */
+  ctx.save();
+  ctx.setLineDash([4, 5]);
+  ctx.strokeStyle = rgba(WARM, 0.25);
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(8, Ny); ctx.lineTo(W - 8, Ny); ctx.stroke();
+  ctx.restore();
+  ctx.font = F(0.8);
+  var tanMsg = "the one ray with no number";
+  if (ctx.measureText(tanMsg).width < (W - 10) - (cx + R + 12)) {
+    ctx.textAlign = "right";
+    ctx.fillStyle = rgba(DIM, 0.8);
+    ctx.fillText(tanMsg, W - 10, Ny - 5);
+    ctx.textAlign = "center";
+  }
+
+  /* the number line */
+  ctx.strokeStyle = rgba(DIM, 0.9); ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(6, lineY); ctx.lineTo(W - 6, lineY); ctx.stroke();
+  ctx.strokeStyle = rgba(DIM, 0.5); ctx.lineWidth = 1;
+  for (i = -9; i <= 9; i++) {
+    if (i % 2 === 0) continue;
+    X = cx + s * (i / 2);
+    if (X < 8 || X > W - 8) continue;
+    ctx.beginPath(); ctx.moveTo(X, lineY - 3); ctx.lineTo(X, lineY + 3); ctx.stroke();
+  }
+  ctx.font = F(1);
+  for (i = -4; i <= 4; i++) {
+    X = cx + s * i;
+    if (X < 8 || X > W - 8) continue;
+    if (i === 0) {
+      ctx.strokeStyle = rgba(WARM, 0.9); ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(X, lineY); ctx.lineTo(X, lineY + 7); ctx.stroke();
+      ctx.fillStyle = rgba(WARM, 0.95);
+    } else {
+      ctx.strokeStyle = rgba(DIM, 0.9); ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(X, lineY - 5); ctx.lineTo(X, lineY + 5); ctx.stroke();
+      ctx.fillStyle = rgba(DIM, 0.95);
+    }
+    ctx.fillText((i < 0 ? "−" : "") + Math.abs(i), X, lineY + 12 + fs);
+  }
+
+  /* the circle */
+  ctx.fillStyle = rgba(GOLD, 0.035);
+  ctx.beginPath(); ctx.arc(cx, Oy, R, 0, TAU); ctx.fill();
+  ctx.strokeStyle = rgba(GOLD, 0.9); ctx.lineWidth = 1.6;
+  ctx.beginPath(); ctx.arc(cx, Oy, R, 0, TAU); ctx.stroke();
+
+  /* the arc whose line-images lie outside the frame */
+  var arcPoly = function (a0, a1, n) {
+    ctx.beginPath();
+    for (var j = 0; j <= n; j++) {
+      var a = a0 + (a1 - a0) * (j / n);
+      var qx = cx + R * Math.sin(a), qy = Oy + R * Math.cos(a);
+      if (j === 0) ctx.moveTo(qx, qy); else ctx.lineTo(qx, qy);
+    }
+    ctx.stroke();
+  };
+  var thA = 2 * Math.atan(hr);
+  ctx.strokeStyle = rgba(WARM, 0.28); ctx.lineWidth = 3;
+  arcPoly(thA, PI, 20); arcPoly(-PI, -thA, 20);
+
+  /* circle images of the marked points, each one solved by the construction */
+  for (i = 0; i < MARK.length; i++) {
+    for (sg = -1; sg <= 1; sg += 2) {
+      C.set("xm", sg * MARK[i]); C.solve();
+      Pm = C.val("Pm");
+      ctx.fillStyle = rgba(GOLD, 0.7);
+      ctx.beginPath(); ctx.arc(SX(Pm.x), SY(Pm.y), 1.9, 0, TAU); ctx.fill();
+    }
+  }
+
+  /* poles */
+  ctx.fillStyle = rgba(WARM, 1);
+  ctx.beginPath(); ctx.arc(cx, lineY, 3.2, 0, TAU); ctx.fill();
+  ctx.beginPath(); ctx.arc(cx, Ny, 3.2, 0, TAU); ctx.fill();
+  ctx.textBaseline = "bottom";
+  ctx.font = F(1.35);
+  ctx.fillStyle = rgba(WARM, 0.95);
+  ctx.fillText("∞", cx, Ny - 9);
+  if (Ny - 9 - fs * 1.6 > fs * 1.2) {
+    ctx.font = F(0.86);
+    var msg = "x → +∞ and x → −∞ arrive at this one point";
+    var mw = ctx.measureText(msg).width;
+    if (!(mw < W - 16)) { msg = "both ends arrive here"; mw = ctx.measureText(msg).width; }
+    if (mw < W - 16) {
+      ctx.fillStyle = rgba(DIM, 0.95);
+      ctx.fillText(msg, cx, Ny - 9 - fs * 1.6);
+    }
+  }
+  ctx.textBaseline = "alphabetic";
+  ctx.font = F(0.95);
+  ctx.textAlign = "right";
+  ctx.fillStyle = rgba(DIM, 0.85);
+  ctx.fillText("N", cx - 8, Ny + fs * 0.36);
+  ctx.textAlign = "left";
+  ctx.fillText("S¹", cx + R + 8, Oy + fs * 0.36);
+  ctx.fillText("ℝ", 9, lineY - 9);
+
+  /* trail: sampled from theta by sine and cosine (chain B) */
+  var K = 16, dtr = 0.06, k, thk, qx, qy, px0 = null, py0 = null;
+  for (k = K; k >= 0; k--) {
+    thk = ang(t - k * dtr);
+    qx = cx + R * Math.sin(thk); qy = Oy + R * Math.cos(thk);
+    if (px0 !== null) {
+      ctx.strokeStyle = rgba(CYAN, 0.05 + 0.5 * (1 - k / K));
+      ctx.lineWidth = 1.2 + 1.6 * (1 - k / K);
+      ctx.beginPath(); ctx.moveTo(px0, py0); ctx.lineTo(qx, qy); ctx.stroke();
+    }
+    px0 = qx; py0 = qy;
+  }
+
+  /* live ray N -> circle point -> line point */
+  var Psx = SX(P.x), Psy = SY(P.y);
+  var vx = Psx - cx, vy = Psy - Ny, vl = Math.hypot(vx, vy);
+  var ux, uy;
+  if (vl < 1e-7) { ux = (th >= 0 ? 1 : -1); uy = 0; } else { ux = vx / vl; uy = vy / vl; }
+  var lxc = cx + s * Math.max(-1e6, Math.min(1e6, x));
+  var len = Math.min(Math.hypot(lxc - cx, lineY - Ny), 4 * (W + H));
+  ctx.strokeStyle = rgba(CYAN, 0.3); ctx.lineWidth = 1.1;
+  ctx.beginPath(); ctx.moveTo(cx, Ny); ctx.lineTo(cx + ux * len, Ny + uy * len); ctx.stroke();
+  ctx.strokeStyle = rgba(CYAN, 0.65); ctx.lineWidth = 1.4;
+  ctx.beginPath(); ctx.moveTo(cx, Ny); ctx.lineTo(Psx, Psy); ctx.stroke();
+
+  /* the point itself, drawn from chain A */
+  ctx.fillStyle = rgba(CYAN, 0.16);
+  ctx.beginPath(); ctx.arc(Psx, Psy, 9, 0, TAU); ctx.fill();
+  ctx.fillStyle = rgba(CYAN, 1);
+  ctx.beginPath(); ctx.arc(Psx, Psy, 3.8, 0, TAU); ctx.fill();
+
+  /* its coordinate on the line, or the edge it left through */
+  var fmtx = function (v) {
+    if (!isFinite(v)) return "∞";
+    var a = Math.abs(v);
+    return (v < 0 ? "−" : "") + (a < 1e4 ? a.toFixed(3) : a.toExponential(3));
+  };
+  ctx.font = F(0.95);
+  if (Math.abs(x) > hr) {
+    sg = x > 0 ? 1 : -1;
+    var ex = sg > 0 ? W - 11 : 11;
+    ctx.fillStyle = rgba(CYAN, 0.95);
+    ctx.beginPath();
+    ctx.moveTo(ex + sg * 7, lineY);
+    ctx.lineTo(ex - sg * 4, lineY - 6);
+    ctx.lineTo(ex - sg * 4, lineY + 6);
+    ctx.closePath(); ctx.fill();
+    ctx.textAlign = sg > 0 ? "right" : "left";
+    ctx.fillText("x = " + fmtx(x), ex - sg * 10, lineY - 22);
+  } else {
+    ctx.fillStyle = rgba(CYAN, 0.18);
+    ctx.beginPath(); ctx.arc(cx + s * x, lineY, 8, 0, TAU); ctx.fill();
+    ctx.fillStyle = rgba(CYAN, 1);
+    ctx.beginPath(); ctx.arc(cx + s * x, lineY, 3.4, 0, TAU); ctx.fill();
+  }
+
+  /* ---------- readout ---------- */
+  var st;
+  if (Math.abs(x) > 1e3) st = "the pole: +∞ and −∞ are one point";
+  else if (x > hr) st = "off the right edge — still on the circle";
+  else if (x < -hr) st = "re-entering from the left — no jump";
+  else if (Math.abs(x) <= 1) st = "near 0 — chart comfortable";
+  else if (x > 0) st = "running right, x rising";
+  else st = "climbing back toward 0";
+
+  var put = function (id, v) { var e = document.getElementById(id); if (e) e.textContent = v; };
+  put("projline-a", fmtx(x));
+  put("projline-b", fx(th, 4) + " rad = " + fx(th / PI, 4) + "π" + (Math.abs(th) > 3.0 ? "  (±π: same point)" : ""));
+  put("projline-c", gap.toExponential(2));
+  put("projline-d", st);
+}));
+  window.muRegister("planefull", (function (cv, ctx, W, H, t) {
+  function V3(p) {
+    if (p == null) return { x: 0, y: 0, z: 0 };
+    if (typeof p.length === "number") return { x: +p[0], y: +p[1], z: +p[2] };
+    var X = p.x !== undefined ? p.x : (p.X !== undefined ? p.X : 0);
+    var Y = p.y !== undefined ? p.y : (p.Y !== undefined ? p.Y : 0);
+    var Z = p.z !== undefined ? p.z : (p.Z !== undefined ? p.Z : 0);
+    return { x: +X, y: +Y, z: +Z };
+  }
+  function sb(a, b) { return { x: a.x - b.x, y: a.y - b.y, z: a.z - b.z }; }
+  function ad(a, b) { return { x: a.x + b.x, y: a.y + b.y, z: a.z + b.z }; }
+  function sc(a, k) { return { x: a.x * k, y: a.y * k, z: a.z * k }; }
+  function dt(a, b) { return a.x * b.x + a.y * b.y + a.z * b.z; }
+  function cr(a, b) { return { x: a.y * b.z - a.z * b.y, y: a.z * b.x - a.x * b.z, z: a.x * b.y - a.y * b.x }; }
+  function ln(a) { return Math.sqrt(dt(a, a)); }
+  function un(a) { var L = ln(a); return L > 1e-300 ? sc(a, 1 / L) : { x: 0, y: 0, z: 1 }; }
+  var TWO = 6.283185307179586;
+
+  var C = cv._C;
+  if (C === undefined) {
+    var NS = (typeof Construct !== "undefined") ? Construct : null;
+    var GG = (NS && NS.G) ? NS.G : {};
+    var own = function (X, Y) { var S = X * X + Y * Y, q = 1 / (S + 1); return { x: 2 * X * q, y: 2 * Y * q, z: (S - 1) * q }; };
+    var ker = (typeof GG.toSphere === "function") ? function (X, Y) { return V3(GG.toSphere(X, Y)); } : null;
+
+    var build = function (useKernel, toS) {
+      var K;
+      if (useKernel && NS && NS.Construction) { K = new NS.Construction(); }
+      else {
+        var vals = {}, ord = [];
+        K = {
+          free: function (l, ty, v) { vals[l] = v; },
+          dep: function (l, ty, inp, f) { ord.push({ l: l, i: inp, f: f }); },
+          solve: function () { var i, j, n, a; for (i = 0; i < ord.length; i++) { n = ord[i]; a = []; for (j = 0; j < n.i.length; j++) a.push(vals[n.i[j]]); vals[n.l] = n.f.apply(null, a); } },
+          set: function (l, v) { vals[l] = v; },
+          val: function (l) { return vals[l]; }
+        };
+      }
+      K.free("one", "number", 1);
+      K.free("zero", "number", 0);
+      K.free("d", "number", 0.8);
+      K.free("az", "number", 0.22);
+      K.free("y1", "number", -2.6);
+      K.free("y2", "number", 0.4);
+      K.free("y3", "number", 3.1);
+      K.free("far", "number", 1e12);
+      K.dep("E1", "point", ["one", "zero"], function (o, z) { return toS(o, z); });
+      K.dep("E2", "point", ["one", "zero"], function (o, z) { return toS(-o, z); });
+      K.dep("E3", "point", ["one", "zero"], function (o, z) { return toS(z, o); });
+      K.dep("E4", "point", ["one", "zero"], function (o, z) { return toS(z, -o); });
+      K.dep("O", "point", ["E1", "E2", "E3", "E4"], function (a, b, c, e) { return sc(ad(ad(a, b), ad(c, e)), 0.25); });
+      K.dep("R", "number", ["E1", "O"], function (p, O) { return ln(sb(p, O)); });
+      K.dep("P0", "point", ["zero"], function (z) { return toS(z, z); });
+      K.dep("Inf", "point", ["O", "P0"], function (O, P0) { return sb(sc(O, 2), P0); });
+      K.dep("ez", "point", ["Inf", "O"], function (N, O) { return un(sb(N, O)); });
+      K.dep("ex", "point", ["E1", "O", "ez"], function (p, O, ez) { var u = sb(p, O); return un(sb(u, sc(ez, dt(u, ez)))); });
+      K.dep("ey", "point", ["ez", "ex", "E3", "O"], function (ez, ex, q, O) { var c = cr(ez, ex), u = sb(q, O); return dt(c, u) < 0 ? sc(c, -1) : c; });
+      K.dep("fx", "point", ["ex", "ey", "az"], function (ex, ey, a) { return ad(sc(ex, Math.cos(a)), sc(ey, Math.sin(a))); });
+      K.dep("A1", "point", ["d", "az", "y1"], function (d, a, y) { var c = Math.cos(a), s = Math.sin(a); return toS(d * c - y * s, d * s + y * c); });
+      K.dep("A2", "point", ["d", "az", "y2"], function (d, a, y) { var c = Math.cos(a), s = Math.sin(a); return toS(d * c - y * s, d * s + y * c); });
+      K.dep("A3", "point", ["d", "az", "y3"], function (d, a, y) { var c = Math.cos(a), s = Math.sin(a); return toS(d * c - y * s, d * s + y * c); });
+      K.dep("cA", "point", ["A1", "A2", "A3"], function (a, b, c) {
+        var u = sb(b, a), v = sb(c, a), w = cr(u, v), w2 = dt(w, w);
+        if (!(w2 > 1e-280)) return a;
+        return ad(a, sc(ad(sc(cr(v, w), dt(u, u)), sc(cr(w, u), dt(v, v))), 1 / (2 * w2)));
+      });
+      K.dep("rA", "number", ["cA", "A1"], function (c, a) { return ln(sb(c, a)); });
+      K.dep("cB", "point", ["O", "R", "fx", "ez", "d"], function (O, R, fx, ez, d) {
+        var q = 1 / (1 + d * d);
+        return ad(O, sc(ad(sc(fx, d * q), sc(ez, d * d * q)), R));
+      });
+      K.dep("rB", "number", ["R", "d"], function (R, d) { return R / Math.sqrt(1 + d * d); });
+      K.dep("gap", "number", ["rA", "rB", "cA", "cB"], function (ra, rb, ca, cb) { return Math.max(Math.abs(ra - rb), ln(sb(ca, cb))); });
+      K.dep("thru", "number", ["cA", "Inf", "rA"], function (c, N, r) { return ln(sb(N, c)) - r; });
+      K.dep("bound", "number", ["O", "R", "far", "d", "az"], function (O, R, F, d, a) {
+        var c = Math.cos(a), s = Math.sin(a);
+        var pts = [[0, 0], [1, 0], [-0.37, 2.9], [F, 0], [0, -F], [F, F], [-3 * F, 7 * F],
+                   [d * c - F * s, d * s + F * c], [d * c + F * s, d * s - F * c]];
+        var m = 0, i, p, e;
+        for (i = 0; i < pts.length; i++) { p = toS(pts[i][0], pts[i][1]); e = Math.abs(ln(sb(p, O)) / R - 1); if (e > m) m = e; }
+        return m;
+      });
+      return K;
+    };
+
+    var cand = [[true, ker], [true, own], [false, own]], ci, K2, ok;
+    C = null;
+    for (ci = 0; ci < cand.length && !C; ci++) {
+      if (!cand[ci][1]) continue;
+      try {
+        K2 = build(cand[ci][0], cand[ci][1]);
+        K2.solve();
+        ok = isFinite(K2.val("R")) && K2.val("R") > 1e-9 &&
+             isFinite(K2.val("cA").z) && isFinite(K2.val("O").z) &&
+             Math.abs(K2.val("thru")) < 1e-6 && Math.abs(K2.val("gap")) < 1e-6 &&
+             Math.abs(K2.val("bound")) < 1e-6;
+        try {
+          K2.set("d", 1.15); K2.set("az", 0.31); K2.solve();
+          ok = ok && Math.abs(K2.val("thru")) < 1e-6 && Math.abs(K2.val("gap")) < 1e-6 &&
+               Math.abs(K2.val("bound")) < 1e-6 && isFinite(K2.val("cA").z);
+          K2.set("d", 0.8); K2.set("az", 0.22); K2.solve();
+        } catch (e) { ok = false; }
+        if (ok) C = K2;
+      } catch (err) { C = null; }
+    }
+    cv._C = C;
+  }
+  if (!C) return;
+
+  var tau = t / 13;
+  C.set("d", 0.75 + 0.65 * Math.sin(0.19 * t));
+  C.set("az", 0.22 + 0.04 * t);
+  C.set("y2", 0.4 + 0.9 * Math.sin(0.37 * t));
+  C.solve();
+
+  var azv = C.val("az");
+  var caz = Math.cos(azv), saz = Math.sin(azv);
+  var TILT = -1.0821, ca = Math.cos(TILT), sa = Math.sin(TILT);
+  var cx = W * 0.5, cy = H * 0.53;
+  var Rp = Math.min(W * 0.335, H * 0.395);
+
+  function scr(a, b, c) { return { x: cx + Rp * a, y: cy - Rp * (b * ca - c * sa), w: b * sa + c * ca }; }
+
+  ctx.clearRect(0, 0, W, H);
+
+  var gr = ctx.createRadialGradient(cx - Rp * 0.35, cy - Rp * 0.45, Rp * 0.04, cx, cy, Rp);
+  gr.addColorStop(0, "rgba(232,184,75,0.055)");
+  gr.addColorStop(1, "rgba(232,184,75,0.006)");
+  ctx.fillStyle = gr;
+  ctx.beginPath(); ctx.arc(cx, cy, Rp, 0, TWO); ctx.fill();
+
+  ctx.strokeStyle = "rgba(138,133,119,0.5)";
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(cx, cy, Rp, 0, TWO); ctx.stroke();
+
+  var sep = W < 520 ? 2.2 : 1.0;
+  var budget = W < 520 ? 320 : 700;
+  var kmin = Math.ceil(tau - 1.8), kmax = Math.floor(tau + 0.2);
+  var k, Lg, sig, wq, dmax, J;
+
+  var demand = 0;
+  for (k = kmin; k <= kmax; k++) {
+    Lg = k - tau;
+    if (Lg <= -1.8 || Lg >= 0.2) continue;
+    sig = Math.pow(10, Lg);
+    wq = Math.sin(Math.PI * (Lg + 1.8) / 2); wq = wq * wq;
+    if (wq < 0.02) continue;
+    dmax = Math.sqrt(2 * Rp * sig / sep);
+    J = Math.min(200, Math.floor(dmax / sig));
+    demand += 2 * (2 * J + 1);
+  }
+  var sh = demand > budget ? budget / demand : 1;
+
+  ctx.globalCompositeOperation = "lighter";
+  ctx.lineWidth = 1;
+  for (k = kmin; k <= kmax && budget > 0; k++) {
+    Lg = k - tau;
+    if (Lg <= -1.8 || Lg >= 0.2) continue;
+    sig = Math.pow(10, Lg);
+    wq = Math.sin(Math.PI * (Lg + 1.8) / 2); wq = wq * wq;
+    if (wq < 0.02) continue;
+    dmax = Math.sqrt(2 * Rp * sig / sep);
+    J = Math.min(200, Math.floor(dmax / sig));
+    var Jk = Math.max(1, Math.floor(J * sh));
+    for (var fam = 0; fam < 2; fam++) {
+      var ux = fam === 0 ? caz : -saz, uy = fam === 0 ? saz : caz;
+      ctx.strokeStyle = fam === 0 ? "#e8b84b" : "#e0913a";
+      for (var m = 0; m <= Jk && budget > 0; m++) {
+        for (var sgn = -1; sgn <= 1; sgn += 2) {
+          if (m === 0 && sgn > 0) break;
+          var j = sgn * m;
+          budget--;
+          var d = j * sig, q = 1 / (1 + d * d), rho = Math.sqrt(q);
+          var kk = Rp * rho;
+          var Ax = kk * (-uy), Ay = kk * (-ux * ca);
+          var Bx = kk * (-rho * d * ux), By = kk * (rho * (d * uy * ca + sa));
+          var na = Ax * Ax + Ay * Ay, nb = Bx * Bx + By * By, abv = Ax * Bx + Ay * By;
+          var th0 = 0.5 * Math.atan2(2 * abv, na - nb);
+          var c0 = Math.cos(th0), s0 = Math.sin(th0);
+          var Ux = Ax * c0 + Bx * s0, Uy = Ay * c0 + By * s0;
+          var Vx = -Ax * s0 + Bx * c0, Vy = -Ay * s0 + By * c0;
+          var rx = Math.sqrt(Ux * Ux + Uy * Uy), ry = Math.sqrt(Vx * Vx + Vy * Vy);
+          if (!(rx >= 0) || !(ry >= 0)) continue;
+          if (rx < 0.4 && ry < 0.4) continue;
+          var Cs = scr(d * q * ux, d * q * uy, d * d * q);
+          if (!isFinite(Cs.x) || !isFinite(Cs.y)) continue;
+          var fp = 2 * d * q * uy * sa + (2 * d * d * q - 1) * ca;
+          ctx.globalAlpha = wq * 0.13 * (0.45 + 0.55 * (0.5 + 0.5 * fp));
+          ctx.beginPath();
+          ctx.ellipse(Cs.x, Cs.y, rx, ry, Math.atan2(Uy, Ux), 0, TWO);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+  ctx.globalAlpha = 1;
+  ctx.globalCompositeOperation = "source-over";
+
+  var Ov = C.val("O"), Rv = C.val("R"), exv = C.val("ex"), eyv = C.val("ey"), ezv = C.val("ez");
+  function loc(P) { var u = sb(P, Ov); return { x: dt(u, exv) / Rv, y: dt(u, eyv) / Rv, z: dt(u, ezv) / Rv }; }
+  var l1 = loc(C.val("A1")), l2 = loc(C.val("A2")), l3 = loc(C.val("A3"));
+  var cl = loc(C.val("cA")), rl = C.val("rA") / Rv;
+  var nn = un(cr(sb(l2, l1), sb(l3, l1)));
+  var t1 = cr(nn, { x: 0, y: 0, z: 1 });
+  if (ln(t1) < 1e-6) t1 = cr(nn, { x: 1, y: 0, z: 0 });
+  t1 = un(t1);
+  var t2 = cr(nn, t1);
+  var NSEG = 128, pts = [], i, th, cth, sth;
+  for (i = 0; i <= NSEG; i++) {
+    th = i / NSEG * TWO; cth = Math.cos(th); sth = Math.sin(th);
+    pts.push(scr(cl.x + rl * (t1.x * cth + t2.x * sth),
+                 cl.y + rl * (t1.y * cth + t2.y * sth),
+                 cl.z + rl * (t1.z * cth + t2.z * sth)));
+  }
+  ctx.strokeStyle = "#5ec8d8";
+  ctx.lineWidth = 1.6;
+  ctx.globalAlpha = 0.28;
+  ctx.beginPath();
+  for (i = 0; i <= NSEG; i++) { if (i === 0) ctx.moveTo(pts[0].x, pts[0].y); else ctx.lineTo(pts[i].x, pts[i].y); }
+  ctx.stroke();
+  ctx.globalAlpha = 0.95;
+  ctx.beginPath();
+  var pen = false;
+  for (i = 0; i < NSEG; i++) {
+    if (pts[i].w > 0 && pts[i + 1].w > 0) {
+      if (!pen) { ctx.moveTo(pts[i].x, pts[i].y); pen = true; }
+      ctx.lineTo(pts[i + 1].x, pts[i + 1].y);
+    } else pen = false;
+  }
+  ctx.stroke();
+  ctx.globalAlpha = 1;
+
+  var pf = scr(2 * cl.x, 2 * cl.y, 2 * cl.z - 1);
+  ctx.fillStyle = "#5ec8d8";
+  ctx.beginPath(); ctx.arc(pf.x, pf.y, 3.2, 0, TWO); ctx.fill();
+
+  var Np = scr(0, 0, 1), Sp = scr(0, 0, -1);
+  var hg = ctx.createRadialGradient(Np.x, Np.y, 0, Np.x, Np.y, 30);
+  hg.addColorStop(0, "rgba(224,145,58,0.30)");
+  hg.addColorStop(1, "rgba(224,145,58,0)");
+  ctx.fillStyle = hg;
+  ctx.beginPath(); ctx.arc(Np.x, Np.y, 30, 0, TWO); ctx.fill();
+  ctx.fillStyle = "#e0913a";
+  ctx.beginPath(); ctx.arc(Np.x, Np.y, 3.4, 0, TWO); ctx.fill();
+  ctx.fillStyle = "rgba(138,133,119,0.85)";
+  ctx.beginPath(); ctx.arc(Sp.x, Sp.y, 2.4, 0, TWO); ctx.fill();
+
+  ctx.font = "500 14px ui-sans-serif, -apple-system, system-ui, sans-serif";
+  ctx.textBaseline = "middle";
+  ctx.fillStyle = "#e0913a";
+  ctx.fillText("∞", Np.x + 11, Np.y - 9);
+  ctx.fillStyle = "rgba(138,133,119,0.9)";
+  ctx.fillText("0", Sp.x + 11, Sp.y + 10);
+  ctx.font = "400 12px ui-sans-serif, -apple-system, system-ui, sans-serif";
+  ctx.fillStyle = "rgba(138,133,119,0.65)";
+  ctx.fillText("the plane, entire", 12, H - 16);
+
+  function put(id, s) { var e = document.getElementById(id); if (e) e.textContent = s; }
+  var rh = Math.sqrt(Math.max(4 * Rp * Rp - 1, 1)) * Math.pow(10, tau);
+  put("planefull-a", isFinite(rh) ? rh.toExponential(2) : "beyond 1e+308");
+  put("planefull-b", "1 ± " + C.val("bound").toExponential(1));
+  put("planefull-c", C.val("gap").toExponential(1));
+  put("planefull-d", C.val("thru").toExponential(1));
+}));
+  window.muRegister("inv-rot", (function (cv, ctx, W, H, t) {
+var PI = Math.PI, TAU = 2 * PI;
+var C = cv._C;
+if (!C) {
+  var sph = function (z) {
+    var q = z.x * z.x + z.y * z.y;
+    if (!isFinite(q)) return { x: 0, y: 0, z: 1 };
+    var d = 1 + q;
+    return { x: 2 * z.x / d, y: 2 * z.y / d, z: (q - 1) / d };
+  };
+  var rot = function (S, th) {
+    var c = Math.cos(th), s = Math.sin(th);
+    return { x: S.x, y: S.y * c + S.z * s, z: -S.y * s + S.z * c };
+  };
+  C = new Construct.Construction();
+  C.free("theta", "number", 0);
+  C.free("z0", "point", { x: 0, y: 0 });
+  C.dep("S0", "point3", ["z0"], function (z) { return sph(z); });
+  C.dep("rad", "number", ["S0"], function (S) { return Math.hypot(S.y, S.z); });
+  C.dep("SA", "point3", ["S0", "theta"], function (S, th) { return rot(S, th); });
+  C.dep("w", "point", ["z0", "theta"], function (z, th) {
+    var c = Math.cos(th / 2), s = Math.sin(th / 2);
+    var ax = c * z.x, ay = c * z.y - s, px = s * z.y + c, py = -s * z.x;
+    var den = px * px + py * py;
+    if (den === 0) return { x: Infinity, y: Infinity };
+    return { x: (ax * px + ay * py) / den, y: (ay * px - ax * py) / den };
+  });
+  C.dep("absw", "number", ["w"], function (q) { return Math.hypot(q.x, q.y); });
+  C.dep("SB", "point3", ["w"], function (q) { return sph(q); });
+  C.dep("gap", "number", ["SA", "SB"], function (A, B) { return Math.hypot(A.x - B.x, A.y - B.y, A.z - B.z); });
+  C.dep("arc", "number", ["theta", "rad"], function (th, r) { return th * r; });
+  C.dep("thC", "number", ["S0", "SB"], function (P, Q) { return Math.atan2(Q.y * P.z - P.y * Q.z, P.y * Q.y + P.z * Q.z); });
+  C.dep("thErr", "number", ["theta", "thC"], function (th, tc) { return ((th - tc + PI) % TAU + TAU) % TAU - PI; });
+  C.dep("ring", "list", ["S0", "theta"], function (S, th) {
+    var o = [], k, P, dn;
+    for (k = 1; k < 8; k++) {
+      P = rot(S, th + k * TAU / 8); dn = 1 - P.z;
+      o.push({ S: P, z: dn > 1e-13 ? { x: P.x / dn, y: P.y / dn } : { x: Infinity, y: Infinity } });
+    }
+    return o;
+  });
+  cv._C = C; cv._rot = rot;
+}
+var rot3 = cv._rot;
+var T = 20, pp = (t / T) % 1, u = 2 * pp - 1, ae = 0.15;
+var th = PI * (1 + (ae * u + (1 - ae) * u * u * u));
+C.set("theta", th); C.solve();
+var S0 = C.val("S0"), SA = C.val("SA"), w = C.val("w"), absw = C.val("absw"),
+    gap = C.val("gap"), arc = C.val("arc"), thErr = C.val("thErr"), ring = C.val("ring");
+
+var GOLD = "232,184,75", WARM = "224,145,58", CY = "94,200,216", DIM = "138,133,119";
+function lab(s, x, y, col, size, al) {
+  ctx.fillStyle = col; ctx.font = (size || 11) + "px ui-sans-serif,system-ui,-apple-system,sans-serif";
+  ctx.textAlign = al || "left"; ctx.textBaseline = "middle"; ctx.fillText(s, x, y);
+}
+ctx.clearRect(0, 0, W, H);
+ctx.fillStyle = "rgba(255,255,255,0.013)"; ctx.fillRect(0, 0, W, H);
+var hw = W / 2, j;
+ctx.strokeStyle = "rgba(" + DIM + ",0.20)"; ctx.lineWidth = 1;
+ctx.beginPath(); ctx.moveTo(hw, 14); ctx.lineTo(hw, H - 14); ctx.stroke();
+lab("sphere · one rigid rotation by θ", 14, 16, "rgba(" + DIM + ",0.95)", 11);
+lab("plane chart · the same motion", hw + 14, 16, "rgba(" + DIM + ",0.95)", 11);
+
+var R = Math.min(hw * 0.86, H * 0.80) * 0.42, Lx = hw * 0.5, Ly = H * 0.54;
+var e1 = [0.4067, 0.9135, 0], e2 = [-0.1899, 0.08455, 0.9781], dv = [0.8935, -0.3978, 0.2079];
+function pr(P) {
+  return [Lx + R * (P.x * e1[0] + P.y * e1[1] + P.z * e1[2]),
+          Ly - R * (P.x * e2[0] + P.y * e2[1] + P.z * e2[2]),
+          P.x * dv[0] + P.y * dv[1] + P.z * dv[2]];
+}
+function curve(fn, n) { var a = [], i; for (i = 0; i <= n; i++) a.push(pr(fn(i / n))); return a; }
+function poly(pts, cf, cb, lw) {
+  if (!pts || pts.length < 2) return;
+  ctx.lineWidth = lw;
+  var i, A, B, col, cur = null, open = false;
+  for (i = 0; i < pts.length - 1; i++) {
+    A = pts[i]; B = pts[i + 1];
+    col = ((A[2] + B[2]) * 0.5 >= 0) ? cf : cb;
+    if (col !== cur) {
+      if (open) ctx.stroke();
+      ctx.strokeStyle = col; ctx.beginPath(); ctx.moveTo(A[0], A[1]);
+      cur = col; open = true;
+    }
+    ctx.lineTo(B[0], B[1]);
+  }
+  if (open) ctx.stroke();
+}
+function mer(ph) { return function (s) { var a = s * TAU; return { x: Math.cos(a) * Math.cos(ph), y: Math.cos(a) * Math.sin(ph), z: Math.sin(a) }; }; }
+function par(hh) { var r = Math.sqrt(Math.max(0, 1 - hh * hh)); return function (s) { var a = s * TAU; return { x: r * Math.cos(a), y: r * Math.sin(a), z: hh }; }; }
+
+var gkey = W + "x" + H, geo = cv._geo, k;
+if (!geo || geo.key !== gkey) {
+  var fns = [], hs = [-0.8, -0.5, 0.5, 0.8];
+  for (k = 0; k < 6; k++) fns.push(mer(k * PI / 6));
+  for (k = 0; k < hs.length; k++) fns.push(par(hs[k]));
+  geo = { key: gkey, wf: [],
+          eq: curve(par(0), 96),
+          orb: curve(function (s) { var a = s * TAU; return { x: 0, y: Math.sin(a), z: -Math.cos(a) }; }, 96),
+          ax: curve(function (s) { return { x: -1 + 2 * s, y: 0, z: 0 }; }, 32) };
+  for (k = 0; k < fns.length; k++) geo.wf.push(curve(fns[k], 72));
+  cv._geo = geo;
+}
+for (j = 0; j < geo.wf.length; j++) poly(geo.wf[j], "rgba(" + DIM + ",0.15)", "rgba(" + DIM + ",0.15)", 1);
+
+var g = ctx.createRadialGradient(Lx - R * 0.34, Ly - R * 0.40, R * 0.04, Lx, Ly, R * 1.06);
+g.addColorStop(0, "rgba(74,71,63,0.50)"); g.addColorStop(1, "rgba(9,9,10,0.90)");
+ctx.fillStyle = g; ctx.beginPath(); ctx.arc(Lx, Ly, R, 0, TAU); ctx.fill();
+ctx.strokeStyle = "rgba(" + DIM + ",0.50)"; ctx.lineWidth = 1;
+ctx.beginPath(); ctx.arc(Lx, Ly, R, 0, TAU); ctx.stroke();
+for (j = 0; j < geo.wf.length; j++) poly(geo.wf[j], "rgba(" + DIM + ",0.30)", "rgba(0,0,0,0)", 1);
+poly(geo.eq, "rgba(" + GOLD + ",0.55)", "rgba(" + GOLD + ",0.16)", 1.3);
+poly(geo.orb, "rgba(" + GOLD + ",0.34)", "rgba(" + GOLD + ",0.12)", 1);
+poly(geo.ax, "rgba(" + WARM + ",0.80)", "rgba(" + WARM + ",0.26)", 1.6);
+
+var nA = Math.max(2, Math.ceil(th / TAU * 110));
+poly(curve(function (s) { return rot3(S0, s * th); }, nA), "rgba(" + CY + ",0.85)", "rgba(" + CY + ",0.24)", 2.6);
+
+function dot3(P, col, r, lw) {
+  var q = pr(P); ctx.beginPath(); ctx.arc(q[0], q[1], r, 0, TAU);
+  if (q[2] >= 0) { ctx.fillStyle = col; ctx.fill(); }
+  else { ctx.strokeStyle = col; ctx.lineWidth = lw || 1.2; ctx.stroke(); }
+  return q;
+}
+for (j = 0; j < ring.length; j++) dot3(ring[j].S, "rgba(" + GOLD + ",0.62)", 2.6);
+var qp = pr({ x: 1, y: 0, z: 0 }), qm = pr({ x: -1, y: 0, z: 0 });
+dot3({ x: 1, y: 0, z: 0 }, "rgba(" + WARM + ",0.95)", 3.4);
+dot3({ x: -1, y: 0, z: 0 }, "rgba(" + WARM + ",0.95)", 3.4);
+lab("+1", qp[0] + 8, qp[1] + 2, "rgba(" + WARM + ",0.85)", 11);
+lab("−1", qm[0] - 8, qm[1] - 2, "rgba(" + WARM + ",0.85)", 11, "right");
+var qn = pr({ x: 0, y: 0, z: 1 }), qs = pr({ x: 0, y: 0, z: -1 });
+dot3({ x: 0, y: 0, z: 1 }, "rgba(" + DIM + ",0.95)", 2.8);
+dot3({ x: 0, y: 0, z: -1 }, "rgba(" + DIM + ",0.95)", 2.8);
+lab("∞", qn[0], qn[1] - 12, "rgba(" + DIM + ",0.95)", 12, "center");
+lab("0", qs[0], qs[1] + 12, "rgba(" + DIM + ",0.95)", 12, "center");
+var qa = pr(SA);
+ctx.save(); ctx.shadowColor = "rgba(" + CY + ",0.85)"; ctx.shadowBlur = 14;
+if (qa[2] < 0) ctx.globalAlpha = 0.55;
+ctx.fillStyle = "rgba(" + CY + ",1)"; ctx.beginPath(); ctx.arc(qa[0], qa[1], 4.6, 0, TAU); ctx.fill();
+ctx.restore();
+if (W >= 660) {
+  lab("arc s = θ (orbit radius 1) · ds/dθ = 1 at every θ, including π", 14, H - 16, "rgba(" + DIM + ",0.70)", 10);
+}
+
+var Rx = hw + hw * 0.5, Ry = H * 0.54;
+var un = Math.min(hw * 0.86, H * 0.80) * 0.5 / 2.9;
+var xr = (hw * 0.44) / un, yr = (H * 0.42) / un;
+function fx(x) { return Rx + x * un; }
+function fy(y) { return Ry - y * un; }
+ctx.save();
+ctx.beginPath(); ctx.rect(hw + 2, 26, hw - 4, H - 44); ctx.clip();
+ctx.lineWidth = 1; ctx.strokeStyle = "rgba(" + DIM + ",0.10)";
+for (j = -5; j <= 5; j++) {
+  ctx.beginPath(); ctx.moveTo(fx(j), fy(-9)); ctx.lineTo(fx(j), fy(9)); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(fx(-9), fy(j)); ctx.lineTo(fx(9), fy(j)); ctx.stroke();
+}
+ctx.strokeStyle = "rgba(" + DIM + ",0.32)";
+ctx.beginPath(); ctx.moveTo(fx(-9), fy(0)); ctx.lineTo(fx(9), fy(0)); ctx.stroke();
+ctx.setLineDash([4, 5]); ctx.strokeStyle = "rgba(" + GOLD + ",0.34)"; ctx.lineWidth = 1.2;
+ctx.beginPath(); ctx.moveTo(fx(0), fy(-9)); ctx.lineTo(fx(0), fy(9)); ctx.stroke();
+ctx.setLineDash([]);
+ctx.strokeStyle = "rgba(" + GOLD + ",0.55)"; ctx.lineWidth = 1.3;
+ctx.beginPath(); ctx.arc(fx(0), fy(0), un, 0, TAU); ctx.stroke();
+var cl = Math.max(-yr, Math.min(yr, isFinite(w.y) ? w.y : (th < PI ? -yr : yr)));
+ctx.strokeStyle = "rgba(" + CY + ",0.45)"; ctx.lineWidth = 2;
+ctx.beginPath(); ctx.moveTo(fx(0), fy(0)); ctx.lineTo(fx(0), fy(cl)); ctx.stroke();
+for (j = 0; j < ring.length; j++) {
+  var rz = ring[j].z;
+  if (!isFinite(rz.x) || !isFinite(rz.y) || Math.abs(rz.y) > yr || Math.abs(rz.x) > xr) continue;
+  ctx.fillStyle = "rgba(" + GOLD + ",0.60)"; ctx.beginPath(); ctx.arc(fx(rz.x), fy(rz.y), 2.8, 0, TAU); ctx.fill();
+}
+ctx.fillStyle = "rgba(" + WARM + ",0.95)";
+ctx.beginPath(); ctx.arc(fx(1), fy(0), 3.4, 0, TAU); ctx.fill();
+ctx.beginPath(); ctx.arc(fx(-1), fy(0), 3.4, 0, TAU); ctx.fill();
+lab("+1", fx(1) + 7, fy(0) + 11, "rgba(" + WARM + ",0.85)", 11);
+lab("−1", fx(-1) - 7, fy(0) + 11, "rgba(" + WARM + ",0.85)", 11, "right");
+ctx.fillStyle = "rgba(" + DIM + ",0.9)"; ctx.beginPath(); ctx.arc(fx(0), fy(0), 2.4, 0, TAU); ctx.fill();
+lab("0", fx(0) - 8, fy(0) + 11, "rgba(" + DIM + ",0.9)", 11, "right");
+var onchart = isFinite(w.x) && isFinite(w.y) && Math.abs(w.y) <= yr && Math.abs(w.x) <= xr;
+if (onchart) {
+  ctx.save(); ctx.shadowColor = "rgba(" + CY + ",0.85)"; ctx.shadowBlur = 14;
+  ctx.fillStyle = "rgba(" + CY + ",1)"; ctx.beginPath(); ctx.arc(fx(w.x), fy(w.y), 4.6, 0, TAU); ctx.fill();
+  ctx.restore();
+} else {
+  var down = !isFinite(w.y) ? (th < PI) : (w.y < 0);
+  var ey = down ? Math.min(fy(-yr) + 2, H - 27) : Math.max(fy(yr) - 2, 33), sg = down ? 1 : -1;
+  ctx.fillStyle = "rgba(" + CY + ",0.95)";
+  ctx.beginPath(); ctx.moveTo(fx(0), ey + sg * 7); ctx.lineTo(fx(0) - 6, ey - sg * 3); ctx.lineTo(fx(0) + 6, ey - sg * 3);
+  ctx.closePath(); ctx.fill();
+  lab("point is off this chart · |z| = " + fnum(absw), fx(0) + 12, ey - sg * 12, "rgba(" + CY + ",0.80)", 10);
+}
+ctx.restore();
+if (W >= 660) {
+  lab("clock eased near θ = π so |z| stays readable · geometry unchanged", hw + 14, H - 16, "rgba(" + DIM + ",0.70)", 10);
+}
+
+function fnum(v) { if (!isFinite(v)) return "∞"; return v < 1000 ? v.toFixed(3) : v.toExponential(2); }
+function put(id, s) { var el = document.getElementById(id); if (el) el.textContent = s; }
+put("inv-rot-a", (th / PI).toFixed(3) + "π  (" + (th * 180 / PI).toFixed(1) + "°)");
+put("inv-rot-b", fnum(absw));
+put("inv-rot-c", arc.toFixed(4) + " / " + TAU.toFixed(4));
+put("inv-rot-d", gap.toExponential(1));
+put("inv-rot-e", thErr.toExponential(1));
+}));
+  window.muRegister("wrapscreen", (function (cv, ctx, W, H, t) {
+  var TAU = Math.PI * 2;
+  var PHI = (Math.sqrt(5) - 1) / 2;
+  var GOLD = "#e8b84b", WARM = "#e0913a", CYAN = "#5ec8d8", DIM = "#8a8577";
+  var FONT = "ui-monospace, SFMono-Regular, Menlo, monospace";
+  var X0 = 0.12, Y0 = 0.20, TC = 8;
+  var i;
+
+  /* ---- construction: built once, cached on the canvas element ---- */
+  if (!cv._C) {
+    var B = new Construct.Construction();
+    B.free("s", "number", 0);          /* elapsed time inside the current phase */
+    B.free("a", "number", 2 / TC);     /* horizontal speed, screens per second  */
+    B.free("b", "number", 3 / TC);     /* vertical speed                        */
+    B.free("x0", "number", X0);
+    B.free("y0", "number", Y0);
+    B.free("hx", "number", X0);        /* head x AS DRAWN, from the segment pipeline */
+    B.free("hy", "number", Y0);        /* head y AS DRAWN                            */
+
+    /* the lift: a straight line in the plane, never reduced */
+    B.dep("u", "number", ["x0", "a", "s"], function (p, q, r) { return p + q * r; });
+    B.dep("v", "number", ["y0", "b", "s"], function (p, q, r) { return p + q * r; });
+    /* the chart: reduce mod 1, and count the wraps that were thrown away */
+    B.dep("nx", "number", ["u"], function (z) { return Math.floor(z); });
+    B.dep("ny", "number", ["v"], function (z) { return Math.floor(z); });
+    B.dep("x", "number", ["u", "nx"], function (z, n) { return z - n; });
+    B.dep("y", "number", ["v", "ny"], function (z, n) { return z - n; });
+
+    /* chain A: the torus point built from the coordinates the drawing used */
+    B.dep("Axc", "number", ["hx"], function (h) { return Math.cos(TAU * h); });
+    B.dep("Axs", "number", ["hx"], function (h) { return Math.sin(TAU * h); });
+    B.dep("Ayc", "number", ["hy"], function (h) { return Math.cos(TAU * h); });
+    B.dep("Ays", "number", ["hy"], function (h) { return Math.sin(TAU * h); });
+    /* chain B: the same torus point built from the unreduced lift */
+    B.dep("Bxc", "number", ["u"], function (z) { return Math.cos(TAU * z); });
+    B.dep("Bxs", "number", ["u"], function (z) { return Math.sin(TAU * z); });
+    B.dep("Byc", "number", ["v"], function (z) { return Math.cos(TAU * z); });
+    B.dep("Bys", "number", ["v"], function (z) { return Math.sin(TAU * z); });
+    B.dep("gap", "number", ["Axc", "Axs", "Ayc", "Ays", "Bxc", "Bxs", "Byc", "Bys"],
+      function (p1, p2, p3, p4, q1, q2, q3, q4) {
+        return Math.max(Math.abs(p1 - q1), Math.abs(p2 - q2),
+                        Math.abs(p3 - q3), Math.abs(p4 - q4));
+      });
+
+    /* distance back to the start, flat metric on the unit torus */
+    B.dep("ru", "number", ["a", "s"], function (p, q) { var z = p * q; return Math.abs(z - Math.round(z)); });
+    B.dep("rv", "number", ["b", "s"], function (p, q) { var z = p * q; return Math.abs(z - Math.round(z)); });
+    B.dep("dret", "number", ["ru", "rv"], function (p, q) { return Math.sqrt(p * p + q * q); });
+    B.dep("slope", "number", ["a", "b"], function (p, q) { return q / p; });
+    B.solve();
+
+    /* the orbit can only return exactly at s = m/a, where dret = |m*PHI - round(m*PHI)| */
+    var bd = Infinity, bm = 0, zz, dd;
+    for (i = 1; i <= 10000; i++) {
+      zz = i * PHI; dd = Math.abs(zz - Math.round(zz));
+      if (dd < bd) { bd = dd; bm = i; }
+    }
+    cv._C = B; cv._bd = bd; cv._bm = bm;
+  }
+  var K = cv._C;
+
+  /* ---- phase: rational slope, then irrational slope ---- */
+  var TR = 16, TI = 34, CYC = TR + TI;
+  var tc = t % CYC, rat = tc < TR;
+  var s = rat ? tc : tc - TR;
+  var dur = rat ? TR : TI;
+  var a = rat ? 2 / TC : 0.5;
+  var b = rat ? 3 / TC : 0.5 * PHI;
+  var fade = Math.max(0, Math.min(1, Math.min(s, dur - s) / 0.7));
+
+  /* ---- the drawn path: exact edge crossings, one straight piece between them ---- */
+  var cuts = [], k;
+  var kx = Math.floor(X0 + a * s), ky = Math.floor(Y0 + b * s);
+  for (k = 1; k <= kx; k++) cuts.push({ s: (k - X0) / a, v: 1 });
+  for (k = 1; k <= ky; k++) cuts.push({ s: (k - Y0) / b, v: 0 });
+  cuts.sort(function (p, q) { return p.s - q.s; });
+  var segs = [], prev = 0, qe, sm, cx, cy;
+  for (i = 0; i <= cuts.length; i++) {
+    qe = i < cuts.length ? cuts[i].s : s;
+    if (qe - prev > 1e-9) {
+      sm = (prev + qe) / 2;
+      cx = Math.floor(X0 + a * sm); cy = Math.floor(Y0 + b * sm);
+      segs.push({ x1: X0 + a * prev - cx, y1: Y0 + b * prev - cy,
+                  x2: X0 + a * qe - cx,   y2: Y0 + b * qe - cy,
+                  cx: cx, cy: cy, te: qe });
+    }
+    prev = qe;
+  }
+  var last = segs[segs.length - 1];
+  if (!last) { last = { x1: X0, y1: Y0, x2: X0, y2: Y0, cx: 0, cy: 0, te: 0 }; segs.push(last); }
+
+  /* ---- solve, feeding the DRAWN head back in as a free object ---- */
+  K.set("a", a); K.set("b", b); K.set("s", s);
+  K.set("x0", X0); K.set("y0", Y0);
+  K.set("hx", last.x2); K.set("hy", last.y2);
+  K.solve();
+
+  var wit;
+  if (rat) {
+    K.set("s", TC); K.solve();
+    wit = "m = 2 → s = " + TC.toFixed(3) + " s, d = " + K.val("dret").toExponential(1);
+    K.set("s", s); K.solve();
+  } else {
+    wit = "none for m ≤ 10⁴; min d = " + cv._bd.toExponential(1) + " (m = " + cv._bm + ")";
+  }
+
+  function put(id, txt) { var e = document.getElementById(id); if (e) e.textContent = txt; }
+  put("wrapscreen-a", K.val("x").toFixed(4));
+  put("wrapscreen-b", K.val("y").toFixed(4));
+  put("wrapscreen-c", K.val("nx") + " / " + K.val("ny"));
+  put("wrapscreen-d", K.val("slope").toFixed(6) + (rat ? "  = 3/2, rational" : "  = (√5−1)/2, irrational"));
+  put("wrapscreen-e", wit);
+  put("wrapscreen-f", K.val("gap").toExponential(1));
+
+  /* ---- layout ---- */
+  ctx.clearRect(0, 0, W, H);
+  var SQ = Math.min(H * 0.78, W * 0.62);
+  var ox = (W - SQ) / 2, oy = (H - SQ) / 2;
+  function PX(x) { return ox + x * SQ; }
+  function PY(y) { return oy + (1 - y) * SQ; }
+  var fs = Math.max(9, Math.min(12, H * 0.027));
+  ctx.lineCap = "round"; ctx.lineJoin = "round";
+
+  function chev(px, py, dx, dy, r) {
+    var nx = -dy, ny = dx;
+    ctx.beginPath();
+    ctx.moveTo(px - dx * r + nx * r * 0.8, py - dy * r + ny * r * 0.8);
+    ctx.lineTo(px, py);
+    ctx.lineTo(px - dx * r - nx * r * 0.8, py - dy * r - ny * r * 0.8);
+    ctx.stroke();
+  }
+
+  /* neighbouring copies of the same screen: the lift, same chart continued */
+  ctx.save();
+  ctx.setLineDash([2, 7]); ctx.lineWidth = 1; ctx.strokeStyle = GOLD; ctx.globalAlpha = 0.11;
+  ctx.strokeRect(ox - SQ, oy, SQ, SQ);
+  ctx.strokeRect(ox + SQ, oy, SQ, SQ);
+  ctx.strokeRect(ox, oy - SQ, SQ, SQ);
+  ctx.strokeRect(ox, oy + SQ, SQ, SQ);
+  ctx.restore();
+
+  /* quarter grid */
+  ctx.save(); ctx.globalAlpha = 0.05; ctx.strokeStyle = GOLD; ctx.lineWidth = 1;
+  for (i = 1; i < 4; i++) {
+    ctx.beginPath(); ctx.moveTo(PX(i / 4), PY(0)); ctx.lineTo(PX(i / 4), PY(1)); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(PX(0), PY(i / 4)); ctx.lineTo(PX(1), PY(i / 4)); ctx.stroke();
+  }
+  ctx.restore();
+
+  /* every break comes in a matched pair of ticks on the two identified edges */
+  ctx.save(); ctx.strokeStyle = GOLD; ctx.lineWidth = 1.4;
+  var cc, yy, xx;
+  for (i = 0; i < cuts.length; i++) {
+    cc = cuts[i];
+    ctx.globalAlpha = (0.15 + 0.5 * Math.exp(-(s - cc.s) / 2.5)) * fade;
+    if (cc.v === 1) {
+      yy = Y0 + b * cc.s; yy -= Math.floor(yy);
+      ctx.beginPath(); ctx.moveTo(PX(1), PY(yy)); ctx.lineTo(PX(1) + 7, PY(yy)); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(PX(0), PY(yy)); ctx.lineTo(PX(0) - 7, PY(yy)); ctx.stroke();
+    } else {
+      xx = X0 + a * cc.s; xx -= Math.floor(xx);
+      ctx.beginPath(); ctx.moveTo(PX(xx), PY(1)); ctx.lineTo(PX(xx), PY(1) - 7); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(PX(xx), PY(0)); ctx.lineTo(PX(xx), PY(0) + 7); ctx.stroke();
+    }
+  }
+  ctx.restore();
+
+  /* the trail, clipped to the screen */
+  ctx.save();
+  ctx.beginPath(); ctx.rect(ox, oy, SQ, SQ); ctx.clip();
+  var g;
+  for (i = 0; i < segs.length; i++) {
+    g = segs[i];
+    ctx.globalAlpha = (0.18 + 0.6 * Math.exp(-(s - g.te) / 9)) * fade;
+    ctx.strokeStyle = (i === segs.length - 1) ? WARM : GOLD;
+    ctx.lineWidth = (i === segs.length - 1) ? 2.4 : 1.8;
+    ctx.beginPath(); ctx.moveTo(PX(g.x1), PY(g.y1)); ctx.lineTo(PX(g.x2), PY(g.y2)); ctx.stroke();
+  }
+  ctx.restore();
+
+  /* the coming crossing, drawn on both sides of the identification */
+  var nsx = (last.cx + 1 - X0) / a, nsy = (last.cy + 1 - Y0) / b;
+  var isX = nsx <= nsy, sn = Math.min(nsx, nsy);
+  var ex = X0 + a * sn - last.cx, ey = Y0 + b * sn - last.cy;
+  var px2 = isX ? ex - 1 : ex, py2 = isX ? ey : ey - 1;
+  var dl = 0.095 / Math.sqrt(a * a + b * b);
+  ctx.save();
+  ctx.setLineDash([3, 4]); ctx.lineWidth = 1.6; ctx.strokeStyle = DIM; ctx.globalAlpha = 0.55 * fade;
+  ctx.beginPath(); ctx.moveTo(PX(ex), PY(ey)); ctx.lineTo(PX(ex + a * dl), PY(ey + b * dl)); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(PX(px2 - a * dl), PY(py2 - b * dl)); ctx.lineTo(PX(px2), PY(py2)); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.globalAlpha = (0.3 + 0.35 * (0.5 + 0.5 * Math.sin(t * 2.4))) * fade;
+  ctx.strokeStyle = CYAN; ctx.lineWidth = 1.6;
+  ctx.beginPath(); ctx.arc(PX(ex), PY(ey), 4, 0, TAU); ctx.stroke();
+  ctx.beginPath(); ctx.arc(PX(px2), PY(py2), 4, 0, TAU); ctx.stroke();
+  ctx.restore();
+
+  /* the screen, with the gluing arrows */
+  ctx.save();
+  ctx.strokeStyle = GOLD; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.4;
+  ctx.strokeRect(ox, oy, SQ, SQ);
+  var r = Math.max(5, SQ * 0.022);
+  ctx.globalAlpha = 0.62; ctx.lineWidth = 2;
+  chev(PX(0), PY(0.5), 0, -1, r);
+  chev(PX(1), PY(0.5), 0, -1, r);
+  chev(PX(0.5) - r * 0.75, PY(0), 1, 0, r); chev(PX(0.5) + r * 0.75, PY(0), 1, 0, r);
+  chev(PX(0.5) - r * 0.75, PY(1), 1, 0, r); chev(PX(0.5) + r * 0.75, PY(1), 1, 0, r);
+  ctx.restore();
+
+  /* the moving point */
+  var hxp = PX(last.x2), hyp = PY(last.y2);
+  ctx.save(); ctx.fillStyle = CYAN;
+  ctx.globalAlpha = 0.22 * fade;
+  ctx.beginPath(); ctx.arc(hxp, hyp, 9, 0, TAU); ctx.fill();
+  ctx.globalAlpha = fade;
+  ctx.beginPath(); ctx.arc(hxp, hyp, 3.4, 0, TAU); ctx.fill();
+  ctx.restore();
+
+  /* captions */
+  ctx.save(); ctx.textAlign = "center"; ctx.textBaseline = "alphabetic";
+  function cap(txt, cyp, col, al) {
+    var f = fs;
+    ctx.font = f + "px " + FONT;
+    while (f > 7 && ctx.measureText(txt).width > W - 10) { f -= 0.5; ctx.font = f + "px " + FONT; }
+    ctx.globalAlpha = al; ctx.fillStyle = col; ctx.fillText(txt, W / 2, cyp);
+  }
+  cap("single ↑ : left ≡ right      double → : top ≡ bottom",
+      Math.max(fs + 2, oy - fs * 1.6), DIM, 0.75);
+  cap(rat ? (s < TC ? "slope 3/2 · rational · closes at s = 8 s, then only retraces"
+                    : "closed at s = 8 s · now retracing (wrap 3/4 of the same loop)")
+          : "slope (√5−1)/2 · irrational · never closes",
+      Math.min(H - 3, oy + SQ + fs * 2.1), rat ? GOLD : CYAN, 0.9);
+  ctx.restore();
+}));
+  window.muRegister("tangent", (function (cv, ctx, W, H, t) {
+  var G = Construct.G, PI = Math.PI, TAU = 2 * PI;
+  var GOLD = "#e8b84b", WARM = "#e0913a", CYAN = "#5ec8d8", INK = "#e9e6df", DIM = "#8a8577";
+
+  var C = cv._C;
+  if (!C) {
+    C = new Construct.Construction();
+    C.free("theta", "number", 0);
+    C.free("O", "point", { x: 0, y: 0 });
+    C.dep("P", "point", ["theta"], function (th) { return { x: Math.cos(th), y: Math.sin(th) }; });
+    C.dep("Q", "point", ["P", "O"], function (p, o) { return G.pointReflect(p, o); });
+    C.dep("rad", "number", ["P", "O"], function (p, o) { return G.dist(p, o); });
+    C.dep("kP", "number", ["P"], function (p) { return 1 / p.x; });
+    C.dep("T", "point", ["P", "kP"], function (p, k) { return { x: p.x * k, y: p.y * k }; });
+    C.dep("kQ", "number", ["Q"], function (q) { return 1 / q.x; });
+    C.dep("U", "point", ["Q", "kQ"], function (q, k) { return { x: q.x * k, y: q.y * k }; });
+    C.dep("tanP", "number", ["T"], function (p) { return p.y; });
+    C.dep("tanQ", "number", ["U"], function (p) { return p.y; });
+    C.dep("gap", "number", ["tanP", "tanQ"], function (a, b) { return a - b; });
+    C.dep("deg", "number", ["theta"], function (th) { var d = (th * 180 / PI) % 360; return d < 0 ? d + 360 : d; });
+    cv._C = C;
+  }
+
+  var turn = 8, span = 2 * TAU;
+  var theta = (0.85 + (t / turn) * TAU) % span;
+  if (theta < 0) theta += span;
+  theta -= span / 2;
+  C.set("theta", theta); C.solve();
+  var P = C.val("P"), T = C.val("T");
+  var tv = C.val("tanP"), gap = C.val("gap"), dg = C.val("deg"), rr = C.val("rad");
+  var aw = theta % TAU; if (aw < 0) aw += TAU;
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.fillStyle = "#070707"; ctx.fillRect(0, 0, W, H);
+
+  var FS = Math.max(8, Math.min(12, Math.round(W / 78)));
+  var pad = Math.max(8, Math.round(W * 0.015));
+  var split = Math.round(W * 0.615);
+  var top = Math.round(FS * 2.4), bot = H - Math.round(FS * 2.0);
+  var gx0 = pad + 2, gx1 = split - Math.round(W * 0.020);
+  var cx0 = split + Math.round(W * 0.020), cx1 = W - pad;
+  var y0 = Math.round((top + bot) / 2);
+  var halfH = Math.min(y0 - top, bot - y0);
+  var r = Math.max(6, Math.min((cx1 - cx0) * 0.30, halfH / 2.3));
+  var ymax = halfH / r;
+  var ccx = cx0 + (cx1 - cx0) * 0.42, ccy = y0;
+  var xs = (gx1 - gx0) / span;
+  var wide = W >= 520;
+
+  function gX(a) { return gx0 + (a + span / 2) * xs; }
+  function pY(v) { return y0 - v * r; }
+  function txt(s, x, y, col, size, align, alpha) {
+    ctx.save();
+    ctx.globalAlpha = (alpha === undefined ? 1 : alpha);
+    ctx.fillStyle = col;
+    ctx.font = size + "px ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif";
+    ctx.textAlign = align; ctx.textBaseline = "middle";
+    ctx.fillText(s, x, y);
+    ctx.restore();
+  }
+  function dot(x, y, rd, col, alpha) {
+    ctx.save(); ctx.globalAlpha = (alpha === undefined ? 1 : alpha);
+    ctx.beginPath(); ctx.arc(x, y, rd, 0, TAU); ctx.fillStyle = col; ctx.fill(); ctx.restore();
+  }
+  function chev(x, up, col) {
+    var y = up ? top + 8 : bot - 8, s = 6, d = up ? 1 : -1;
+    ctx.save(); ctx.globalAlpha = 0.9; ctx.fillStyle = col;
+    ctx.beginPath();
+    ctx.moveTo(x, y - d * s);
+    ctx.lineTo(x - s * 0.8, y + d * s * 0.5);
+    ctx.lineTo(x + s * 0.8, y + d * s * 0.5);
+    ctx.closePath(); ctx.fill(); ctx.restore();
+  }
+
+  txt("panel 1  —  graph of  θ ↦ tan θ", gx0, Math.round(FS * 1.1), DIM, FS, "left", 0.85);
+  txt("panel 2  —  unit circle, same θ", cx0, Math.round(FS * 1.1), DIM, FS, "left", 0.85);
+  ctx.save();
+  ctx.globalAlpha = 0.25; ctx.strokeStyle = DIM; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(split + 0.5, top - 10); ctx.lineTo(split + 0.5, bot + 10); ctx.stroke();
+  ctx.restore();
+
+  var live = Math.abs(tv) <= ymax;
+
+  /* ---------------- panel 1 : the graph ---------------- */
+  ctx.save();
+  ctx.beginPath(); ctx.rect(gx0 - 3, top - 8, (gx1 - gx0) + 6, (bot - top) + 16); ctx.clip();
+
+  ctx.save();
+  ctx.globalAlpha = 0.055; ctx.fillStyle = GOLD;
+  ctx.fillRect(gX(PI / 2), top - 8, gX(3 * PI / 2) - gX(PI / 2), (bot - top) + 16);
+  ctx.restore();
+  if (wide) txt("one period = π", gX(PI), top + FS, GOLD, FS - 1, "center", 0.55);
+
+  ctx.save();
+  ctx.globalAlpha = 0.45; ctx.strokeStyle = DIM; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(gx0, y0 + 0.5); ctx.lineTo(gx1, y0 + 0.5); ctx.stroke();
+  ctx.globalAlpha = 0.22;
+  ctx.beginPath(); ctx.moveTo(gX(0) + 0.5, top - 6); ctx.lineTo(gX(0) + 0.5, bot + 6); ctx.stroke();
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.42; ctx.strokeStyle = WARM; ctx.lineWidth = 1; ctx.setLineDash([3, 4]);
+  for (var k = -2; k <= 1; k++) {
+    var xp = gX(PI / 2 + k * PI);
+    ctx.beginPath(); ctx.moveTo(xp + 0.5, top - 6); ctx.lineTo(xp + 0.5, bot + 6); ctx.stroke();
+  }
+  ctx.restore();
+
+  var clampv = ymax * 30;
+  ctx.beginPath();
+  var N = 1600, started = false, prevc = 1;
+  for (var i = 0; i <= N; i++) {
+    var th = -span / 2 + span * i / N;
+    var c = Math.cos(th);
+    var v = Math.sin(th) * (1 / c);
+    if (v > clampv) v = clampv; else if (v < -clampv) v = -clampv;
+    var X = gX(th), Y = pY(v);
+    if (!started || ((c < 0) !== (prevc < 0))) { ctx.moveTo(X, Y); started = true; }
+    else ctx.lineTo(X, Y);
+    prevc = c;
+  }
+  ctx.save();
+  ctx.strokeStyle = GOLD; ctx.lineWidth = 1.6; ctx.globalAlpha = 0.9;
+  ctx.lineJoin = "round"; ctx.stroke();
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.55; ctx.strokeStyle = DIM; ctx.lineWidth = 1;
+  var lbl = ["−2π", "−π", "0", "π", "2π"];
+  for (var m = -2; m <= 2; m++) {
+    var X2 = gX(m * PI);
+    ctx.beginPath(); ctx.moveTo(X2 + 0.5, y0 - 3); ctx.lineTo(X2 + 0.5, y0 + 3); ctx.stroke();
+    var al = m === -2 ? "left" : (m === 2 ? "right" : "center");
+    var ox = m === -2 ? 2 : (m === 2 ? -2 : 0);
+    txt(lbl[m + 2], X2 + ox, y0 + FS + 4, DIM, FS - 1, al, 0.7);
+  }
+  for (var u = -2; u <= 2; u++) {
+    if (u === 0 || Math.abs(u) > ymax) continue;
+    ctx.beginPath(); ctx.moveTo(gX(0) - 3, pY(u)); ctx.lineTo(gX(0) + 3, pY(u)); ctx.stroke();
+    txt(u > 0 ? String(u) : "−" + Math.abs(u), gX(0) + 7, pY(u), DIM, FS - 1, "left", 0.6);
+  }
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.22; ctx.strokeStyle = CYAN; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(gX(theta) + 0.5, top - 6); ctx.lineTo(gX(theta) + 0.5, bot + 6); ctx.stroke();
+  ctx.restore();
+
+  if (live) {
+    ctx.save();
+    ctx.globalAlpha = 0.2; ctx.strokeStyle = CYAN; ctx.lineWidth = 1; ctx.setLineDash([2, 5]);
+    ctx.beginPath(); ctx.moveTo(gx0, pY(tv)); ctx.lineTo(gx1, pY(tv)); ctx.stroke();
+    ctx.restore();
+    for (var g = -4; g <= 4; g++) {
+      if (g === 0) continue;
+      var th2 = theta + g * PI;
+      if (th2 < -span / 2 || th2 > span / 2) continue;
+      dot(gX(th2), pY(tv), 2.6, CYAN, 0.4);
+    }
+    dot(gX(theta), pY(tv), 4.6, CYAN, 1);
+    ctx.save(); ctx.globalAlpha = 0.35; ctx.strokeStyle = INK; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(gX(theta), pY(tv), 7.5, 0, TAU); ctx.stroke(); ctx.restore();
+  } else {
+    chev(gX(theta), tv > 0, CYAN);
+    if (wide) {
+      var rt = gX(theta) > gx1 - 60;
+      txt("off chart", gX(theta) + (rt ? -10 : 10), tv > 0 ? top + 8 : bot - 8, CYAN, FS - 2, rt ? "right" : "left", 0.6);
+    }
+  }
+  ctx.restore();
+
+  /* ---------------- panel 2 : the circle ---------------- */
+  ctx.save();
+  ctx.beginPath(); ctx.rect(cx0 - 6, top - 8, (cx1 - cx0) + 12, (bot - top) + 16); ctx.clip();
+
+  if (live) {
+    ctx.save();
+    ctx.globalAlpha = 0.2; ctx.strokeStyle = CYAN; ctx.lineWidth = 1; ctx.setLineDash([2, 5]);
+    ctx.beginPath(); ctx.moveTo(cx0, pY(tv)); ctx.lineTo(ccx + r, pY(tv)); ctx.stroke();
+    ctx.restore();
+  }
+
+  ctx.save();
+  ctx.globalAlpha = 0.3; ctx.strokeStyle = DIM; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(ccx - r * 1.3, ccy + 0.5); ctx.lineTo(ccx + r, ccy + 0.5); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(ccx + 0.5, ccy - r * 1.25); ctx.lineTo(ccx + 0.5, ccy + r * 1.25); ctx.stroke();
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.55; ctx.strokeStyle = GOLD; ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.arc(ccx, ccy, r, 0, TAU); ctx.stroke();
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.4; ctx.strokeStyle = WARM; ctx.lineWidth = 1.4;
+  ctx.beginPath(); ctx.moveTo(ccx - 4, ccy - r); ctx.lineTo(ccx + 4, ccy - r); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(ccx - 4, ccy + r); ctx.lineTo(ccx + 4, ccy + r); ctx.stroke();
+  ctx.restore();
+
+  ctx.save();
+  ctx.globalAlpha = 0.4; ctx.strokeStyle = INK; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.moveTo(ccx + r + 0.5, top - 6); ctx.lineTo(ccx + r + 0.5, bot + 6); ctx.stroke();
+  ctx.restore();
+  txt("x = 1", ccx + r + 7, top + FS * 0.6, DIM, FS - 1, "left", 0.75);
+  if (wide) txt("tangent at (1, 0)", cx1, top + FS * 2.0, DIM, FS - 2, "right", 0.5);
+
+  for (var j = 0; j < 5; j++) {
+    var a1 = aw - 0.55 * (j + 1) / 5, a2 = aw - 0.55 * j / 5;
+    ctx.save();
+    ctx.globalAlpha = 0.26 * (1 - j / 5); ctx.strokeStyle = CYAN; ctx.lineWidth = 2.6;
+    ctx.beginPath(); ctx.arc(ccx, ccy, r, -a2, -a1, false); ctx.stroke();
+    ctx.restore();
+  }
+
+  ctx.save();
+  ctx.globalAlpha = 0.45; ctx.strokeStyle = GOLD; ctx.lineWidth = 1.2;
+  ctx.beginPath(); ctx.arc(ccx, ccy, r * 0.27, 0, -aw, true); ctx.stroke();
+  ctx.restore();
+  txt(String(Math.round(dg) % 360) + "°", ccx + r * 0.36 * Math.cos(aw / 2), ccy - r * 0.36 * Math.sin(aw / 2), GOLD, FS - 1, "center", 0.7);
+
+  var L = 3 * (W + H);
+  ctx.save();
+  ctx.globalAlpha = 0.32; ctx.strokeStyle = CYAN; ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(ccx - P.x * L, ccy + P.y * L);
+  ctx.lineTo(ccx + P.x * L, ccy - P.y * L);
+  ctx.stroke();
+  ctx.restore();
+
+  if (Math.abs(T.y) <= ymax * 1.4) {
+    ctx.save();
+    ctx.globalAlpha = 0.6; ctx.strokeStyle = CYAN; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(ccx, ccy); ctx.lineTo(ccx + T.x * r, ccy - T.y * r); ctx.stroke();
+    ctx.restore();
+  }
+
+  ctx.save();
+  ctx.globalAlpha = 1; ctx.strokeStyle = CYAN; ctx.lineWidth = 2.2;
+  ctx.beginPath(); ctx.moveTo(ccx, ccy); ctx.lineTo(ccx + P.x * r, ccy - P.y * r); ctx.stroke();
+  ctx.restore();
+
+  dot(ccx - P.x * r, ccy + P.y * r, 3.4, CYAN, 0.45);
+  if (wide) txt("θ + π", ccx - P.x * r - 8 * (P.x > 0 ? 1 : -1), ccy + P.y * r + 12, CYAN, FS - 2, P.x > 0 ? "right" : "left", 0.45);
+  dot(ccx + P.x * r, ccy - P.y * r, 4.6, CYAN, 1);
+  dot(ccx, ccy, 3, WARM, 1);
+  dot(ccx + r, ccy, 3, WARM, 0.8);
+
+  if (live) {
+    dot(ccx + T.x * r, ccy - T.y * r, 4.6, CYAN, 1);
+    ctx.save(); ctx.globalAlpha = 0.35; ctx.strokeStyle = INK; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(ccx + T.x * r, ccy - T.y * r, 7.5, 0, TAU); ctx.stroke(); ctx.restore();
+    if (wide) txt("tan θ", ccx + r + 7, ccy - T.y * r, CYAN, FS - 1, "left", 0.8);
+  } else {
+    chev(ccx + r, tv > 0, CYAN);
+  }
+
+  var near = 1 - Math.min(1, Math.abs(P.x) / 0.06);
+  if (near > 0 && wide) {
+    if (Math.abs(P.x) < 2e-3) txt("line ∥ tangent line — no intersection", ccx, bot - FS, CYAN, FS - 1, "center", 0.75 * near);
+    else txt("line nearly ∥ tangent line — intercept off frame", ccx, bot - FS, CYAN, FS - 1, "center", 0.75 * near);
+  }
+  ctx.restore();
+
+  /* ---------------- readouts ---------------- */
+  function fmt(v) {
+    var a = Math.abs(v);
+    if (!isFinite(v)) return "not defined";
+    if (a >= 1e4 || (a > 0 && a < 1e-4)) return v.toExponential(3);
+    return v.toFixed(4);
+  }
+  var e;
+  e = document.getElementById("tangent-a");
+  if (e) e.textContent = theta.toFixed(4) + " rad  (" + (theta / PI).toFixed(3) + " π)";
+  e = document.getElementById("tangent-b");
+  if (e) e.textContent = fmt(tv);
+  e = document.getElementById("tangent-c");
+  if (e) e.textContent = dg.toFixed(2) + "°";
+  e = document.getElementById("tangent-d");
+  if (e) e.textContent = rr.toFixed(12);
+  e = document.getElementById("tangent-e");
+  if (e) e.textContent = (gap === 0 ? "0 (exact)" : gap.toExponential(2));
+}));
+  window.muRegister("horizon", (function (cv, ctx, W, H, t) {
+  var G = Construct.G;
+
+  function proj(q, f, h, cx, cy) { return { x: cx + f * q.x / q.y, y: cy + f * h / q.y }; }
+  function isect(a1, a2, b1, b2) {
+    var rx = a2.x - a1.x, ry = a2.y - a1.y, sx = b2.x - b1.x, sy = b2.y - b1.y;
+    var den = rx * sy - ry * sx, px = b1.x - a1.x, py = b1.y - a1.y;
+    if (!isFinite(den) || Math.abs(den) < 1e-12) return { x: NaN, y: NaN };
+    var k = (px * sy - py * sx) / den;
+    return { x: a1.x + k * rx, y: a1.y + k * ry };
+  }
+  function ptLine(p, a, b) {
+    var vx = b.x - a.x, vy = b.y - a.y, L = Math.sqrt(vx * vx + vy * vy);
+    return Math.abs((p.x - a.x) * vy - (p.y - a.y) * vx) / L;
+  }
+
+  var C = cv._C;
+  if (!C) {
+    C = cv._C = new Construct.Construction();
+    C.free("f", "number", 1); C.free("h", "number", 1);
+    C.free("cx", "number", 0); C.free("cy", "number", 0);
+    C.free("th", "number", 0); C.free("mu", "number", 0);
+    C.free("Zc", "number", 9); C.free("zs", "number", 2);
+    C.free("o1", "number", 8.4); C.free("o2", "number", -5.6);
+    C.dep("d", "point", ["th"], function (a) { return { x: Math.sin(a), y: Math.cos(a) }; });
+    C.dep("nm", "point", ["d"], function (u) { return { x: u.y, y: -u.x }; });
+    C.dep("b0", "point", ["Zc"], function (z) { return { x: 0, y: z }; });
+    C.dep("b1", "point", ["b0", "nm", "o1"], function (b, n, o) { return { x: b.x + n.x * o, y: b.y + n.y * o }; });
+    C.dep("b2", "point", ["b0", "nm", "o2"], function (b, n, o) { return { x: b.x + n.x * o, y: b.y + n.y * o }; });
+    var at = function (s) { return function (b, u) { return { x: b.x + s * u.x, y: b.y + s * u.y }; }; };
+    C.dep("g0a", "point", ["b0", "d"], at(1)); C.dep("g0b", "point", ["b0", "d"], at(9));
+    C.dep("g1a", "point", ["b1", "d"], at(1)); C.dep("g1b", "point", ["b1", "d"], at(9));
+    C.dep("g2a", "point", ["b2", "d"], at(1)); C.dep("g2b", "point", ["b2", "d"], at(9));
+    C.dep("P0a", "point", ["g0a", "f", "h", "cx", "cy"], proj);
+    C.dep("P0b", "point", ["g0b", "f", "h", "cx", "cy"], proj);
+    C.dep("P1a", "point", ["g1a", "f", "h", "cx", "cy"], proj);
+    C.dep("P1b", "point", ["g1b", "f", "h", "cx", "cy"], proj);
+    C.dep("P2a", "point", ["g2a", "f", "h", "cx", "cy"], proj);
+    C.dep("P2b", "point", ["g2b", "f", "h", "cx", "cy"], proj);
+    C.dep("vX", "point", ["P0a", "P0b", "P1a", "P1b"], isect);
+    C.dep("vF", "point", ["d", "f", "cx", "cy"], function (u, f, cx, cy) { return { x: cx + f * (u.x / u.y), y: cy }; });
+    C.dep("eAB", "number", ["vF", "vX"], function (a, b) { return G.dist(a, b); });
+    C.dep("e3", "number", ["vX", "P2a", "P2b"], ptLine);
+    C.dep("Zm", "number", ["zs", "mu"], function (z, m) { return z * (1 + m / (1 - m)); });
+    C.dep("gm", "point", ["b0", "d", "Zm"], function (b, u, Z) { var s = (Z - b.y) / u.y; return { x: b.x + s * u.x, y: Z }; });
+    C.dep("Pm", "point", ["gm", "f", "h", "cx", "cy"], proj);
+    C.dep("gap", "number", ["Pm", "vX"], function (p, v) { return G.dist(p, v); });
+  }
+
+  var cx = Math.round(W / 2) + 0.5;
+  var cy = Math.round(0.40 * H) + 0.5;
+  var f = 0.28 * W, hc = 1;
+  var zN = 0.78, zF = 45, aF = 0.62 * W / f, wsp = 2.8, KM = 38;
+  var thMax = 64 * Math.PI / 180;
+  var th = thMax * Math.sin(2 * Math.PI * t / 17);
+  var mu = 0.9975 * ((t / 6.5) % 1);
+
+  function clipRange(bx, bz, dx, dz) {
+    var lo = -1e9, hi = 1e9, bad = false;
+    function le(p, q) {
+      if (Math.abs(q) < 1e-12) { if (p > 0) bad = true; return; }
+      var s = -p / q;
+      if (q > 0) { if (s < hi) hi = s; } else { if (s > lo) lo = s; }
+    }
+    le(zN - bz, -dz); le(bz - zF, dz);
+    le(bx - aF * bz, dx - aF * dz); le(-bx - aF * bz, -dx - aF * dz);
+    if (bad || !(lo < hi)) return null;
+    return [lo, hi];
+  }
+
+  C.set("f", f); C.set("h", hc); C.set("cx", cx); C.set("cy", cy);
+  C.set("th", th); C.set("mu", mu); C.set("zs", 2); C.solve();
+
+  var d = C.val("d"), nm = C.val("nm"), b0 = C.val("b0");
+  var r0 = clipRange(b0.x, b0.y, d.x, d.y);
+  var zEnter = r0 ? Math.max(zN, b0.y + r0[0] * d.y) * 1.25 : 2;
+  zEnter = Math.max(zEnter, f / Math.max(1e-6, H - 12 - cy));
+  C.set("zs", zEnter); C.solve();
+
+  var vX = C.val("vX"), vF = C.val("vF"), Pm = C.val("Pm");
+
+  ctx.fillStyle = "#070707"; ctx.fillRect(0, 0, W, H);
+  var gw = ctx.createLinearGradient(0, cy, 0, H);
+  gw.addColorStop(0, "rgba(224,145,58,0.075)"); gw.addColorStop(1, "rgba(224,145,58,0.012)");
+  ctx.fillStyle = gw; ctx.fillRect(0, cy, W, H - cy);
+
+  ctx.lineWidth = 1; ctx.strokeStyle = "rgba(94,200,216,0.28)"; ctx.beginPath();
+  for (var Z = 0.85; Z <= zF; Z *= 1.22) {
+    var xl = aF * Z;
+    var pa = proj({ x: -xl, y: Z }, f, hc, cx, cy), pb = proj({ x: xl, y: Z }, f, hc, cx, cy);
+    ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y);
+  }
+  ctx.stroke();
+
+  function railEnds(k) {
+    var bx = b0.x + nm.x * wsp * k, bz = b0.y + nm.y * wsp * k;
+    var rr = clipRange(bx, bz, d.x, d.y);
+    if (!rr) return null;
+    return [proj({ x: bx + rr[0] * d.x, y: bz + rr[0] * d.y }, f, hc, cx, cy),
+            proj({ x: bx + rr[1] * d.x, y: bz + rr[1] * d.y }, f, hc, cx, cy)];
+  }
+
+  ctx.strokeStyle = "rgba(232,184,75,0.34)"; ctx.beginPath();
+  for (var k = -KM; k <= KM; k++) {
+    if (k === 0 || k === 3 || k === -2) continue;
+    var e = railEnds(k); if (!e) continue;
+    ctx.moveTo(e[0].x, e[0].y); ctx.lineTo(e[1].x, e[1].y);
+  }
+  ctx.stroke();
+
+  var wit = [0, 3, -2], tails = [], i, e2;
+  ctx.strokeStyle = "rgba(232,184,75,0.92)"; ctx.lineWidth = 1.6; ctx.beginPath();
+  for (i = 0; i < 3; i++) {
+    e2 = railEnds(wit[i]); if (!e2) continue;
+    ctx.moveTo(e2[0].x, e2[0].y); ctx.lineTo(e2[1].x, e2[1].y); tails.push(e2[1]);
+  }
+  ctx.stroke();
+
+  var band = Math.max(8, 3 * f / zF);
+  var fg = ctx.createLinearGradient(0, cy, 0, cy + band);
+  fg.addColorStop(0, "rgba(7,7,7,0.85)"); fg.addColorStop(1, "rgba(7,7,7,0)");
+  ctx.fillStyle = fg; ctx.fillRect(0, cy, W, band);
+
+  if (isFinite(vX.x) && isFinite(vX.y)) {
+    ctx.setLineDash([3, 5]); ctx.lineWidth = 1; ctx.strokeStyle = "rgba(232,184,75,0.70)"; ctx.beginPath();
+    for (i = 0; i < tails.length; i++) { ctx.moveTo(tails[i].x, tails[i].y); ctx.lineTo(vX.x, vX.y); }
+    ctx.stroke(); ctx.setLineDash([]);
+  }
+
+  ctx.strokeStyle = "rgba(233,230,223,0.55)"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(0, cy); ctx.lineTo(W, cy); ctx.stroke();
+
+  ctx.strokeStyle = "rgba(138,133,119,0.85)";
+  ctx.beginPath();
+  ctx.moveTo(cx - 4, cy); ctx.lineTo(cx + 4, cy);
+  ctx.moveTo(cx, cy - 4); ctx.lineTo(cx, cy + 4);
+  ctx.stroke();
+
+  ctx.strokeStyle = "#e8b84b"; ctx.lineWidth = 1;
+  for (i = 1; i <= 12; i++) {
+    var tp = t - i * 0.09;
+    var xp = cx + f * Math.tan(thMax * Math.sin(2 * Math.PI * tp / 17));
+    if (xp < 2 || xp > W - 2) continue;
+    ctx.globalAlpha = 0.28 * (1 - i / 13);
+    ctx.beginPath(); ctx.moveTo(xp, cy - 4); ctx.lineTo(xp, cy + 4); ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+
+  function chev(x, dir, col, filled) {
+    ctx.beginPath();
+    ctx.moveTo(x + dir * 5, cy); ctx.lineTo(x - dir * 3, cy - 4.5); ctx.lineTo(x - dir * 3, cy + 4.5);
+    ctx.closePath();
+    if (filled) { ctx.fillStyle = col; ctx.fill(); } else { ctx.strokeStyle = col; ctx.lineWidth = 1.1; ctx.stroke(); }
+  }
+  chev(6, -1, "rgba(94,200,216,0.85)", false);
+  chev(W - 6, 1, "rgba(94,200,216,0.85)", false);
+
+  ctx.font = "11px ui-sans-serif,-apple-system,Segoe UI,Helvetica,Arial,sans-serif";
+  ctx.textBaseline = "middle"; ctx.textAlign = "left";
+
+  var onF = vF.x >= 8 && vF.x <= W - 8;
+  if (onF) {
+    ctx.fillStyle = "rgba(232,184,75,0.18)";
+    ctx.beginPath(); ctx.arc(vF.x, cy, 9, 0, 6.283185307179586); ctx.fill();
+    ctx.strokeStyle = "rgba(232,184,75,0.75)"; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(vF.x, cy, 7, 0, 6.283185307179586); ctx.stroke();
+    ctx.fillStyle = "#e8b84b";
+    ctx.beginPath(); ctx.arc(vF.x, cy, 3.2, 0, 6.283185307179586); ctx.fill();
+    ctx.fillStyle = "rgba(232,184,75,0.9)";
+    ctx.textAlign = vF.x > W - 70 ? "right" : "left";
+    ctx.fillText("V(θ)", vF.x + (vF.x > W - 70 ? -12 : 12), cy - 13);
+    ctx.textAlign = "left";
+  } else {
+    var side = vF.x > W / 2 ? 1 : -1;
+    var xe = side > 0 ? W - 20 : 20;
+    chev(xe, side, "#e8b84b", true);
+    ctx.fillStyle = "rgba(232,184,75,0.9)";
+    ctx.textAlign = side > 0 ? "right" : "left";
+    ctx.fillText("V(θ) off frame", xe - side * 10, cy - 13);
+    ctx.textAlign = "left";
+  }
+
+  ctx.fillStyle = "rgba(233,230,223,0.16)";
+  ctx.beginPath(); ctx.arc(Pm.x, Pm.y, 10, 0, 6.283185307179586); ctx.fill();
+  ctx.fillStyle = "#e9e6df";
+  ctx.beginPath(); ctx.arc(Pm.x, Pm.y, 3.4, 0, 6.283185307179586); ctx.fill();
+  if (C.val("gap") > 26) {
+    ctx.fillStyle = "rgba(233,230,223,0.85)";
+    ctx.fillText("μ → 1", Pm.x + 10, Pm.y + 9);
+  }
+
+  var lx = 14, ly = 16, lh = 15;
+  var leg = [["rgba(232,184,75,0.9)", "A — swept family, direction θ"],
+             ["rgba(94,200,216,0.85)", "B — parallel to the picture plane: its point is that plane's point at infinity, not off-frame"],
+             ["rgba(233,230,223,0.7)", "horizon — the line at infinity of the ground plane"]];
+  for (i = 0; i < leg.length; i++) {
+    ctx.strokeStyle = leg[i][0]; ctx.lineWidth = 1.6;
+    ctx.beginPath(); ctx.moveTo(lx, ly + i * lh); ctx.lineTo(lx + 14, ly + i * lh); ctx.stroke();
+    ctx.fillStyle = i === 2 ? "rgba(138,133,119,0.95)" : leg[i][0];
+    ctx.fillText(leg[i][1], lx + 21, ly + i * lh);
+  }
+
+  function put(id, s) { var el = document.getElementById(id); if (el) el.textContent = s; }
+  put("horizon-a", (th * 180 / Math.PI).toFixed(1));
+  put("horizon-b", vF.x.toFixed(0) + " px" + (onF ? "" : " · off frame"));
+  put("horizon-c", C.val("eAB").toExponential(2));
+  put("horizon-d", C.val("e3").toExponential(2));
+  put("horizon-e", C.val("gap").toFixed(2));
+}));
+  window.muRegister("poincare", (function (cv, ctx, W, H, t) {
+  var TWO = Math.PI * 2;
+  var C = cv._C;
+
+  if (!C) {
+    var G = Construct.G || {};
+    var dist = function (P, Q) { var dx = P.x - Q.x, dy = P.y - Q.y; return Math.sqrt(dx * dx + dy * dy); };
+    if (G.dist && Math.abs(G.dist({ x: 0, y: 0 }, { x: 3, y: 4 }) - 5) < 1e-12) dist = G.dist;
+    var cinv = function (u) { return (1 + u) / (1 - u); };
+    if (G.cayleyInv && Math.abs(G.cayleyInv(0.5) - 3) < 1e-12) cinv = G.cayleyInv;
+
+    C = cv._C = new Construct.Construction();
+
+    C.free("s", "number", 0);            // hyperbolic arclength walked from the centre
+    C.free("th", "number", 0);           // direction of the walk
+    C.free("rad", "number", 0.4);        // hyperbolic radius of the marker disk
+    C.free("mu", "number", 0);           // geodesic: mid-angle of its two ideal endpoints
+    C.free("del", "number", Math.PI / 3);// geodesic: half-separation of those endpoints
+    C.free("O", "point", { x: 0, y: 0 });
+
+    // chain 1 : arclength -> picture radius -> point
+    C.dep("r", "number", ["s"], function (s) { return Math.tanh(s / 2); });
+    C.dep("P", "point", ["r", "th"], function (r, th) { return { x: r * Math.cos(th), y: r * Math.sin(th) }; });
+
+    // the two ideal endpoints of the geodesic the point walks along (a diameter)
+    C.dep("A", "point", ["th"], function (th) { return { x: Math.cos(th), y: Math.sin(th) }; });
+    C.dep("B", "point", ["th"], function (th) { return { x: -Math.cos(th), y: -Math.sin(th) }; });
+
+    // chain 2 : four EUCLIDEAN distances -> cross-ratio -> hyperbolic distance
+    C.dep("PA", "number", ["P", "A"], function (P, A) { return dist(P, A); });
+    C.dep("PB", "number", ["P", "B"], function (P, B) { return dist(P, B); });
+    C.dep("OA", "number", ["O", "A"], function (O, A) { return dist(O, A); });
+    C.dep("OB", "number", ["O", "B"], function (O, B) { return dist(O, B); });
+    C.dep("dCross", "number", ["PA", "PB", "OA", "OB"], function (pa, pb, oa, ob) {
+      return pa > 0 && ob > 0 ? Math.log((pb * oa) / (pa * ob)) : NaN;
+    });
+    // chain 3 : Cayley transform of the picture radius
+    C.dep("dCayley", "number", ["r"], function (r) { return Math.log(cinv(r)); });
+    C.dep("gap", "number", ["dCross", "dCayley", "s"], function (a, b, s) {
+      return Math.max(Math.abs(a - s), Math.abs(b - s));
+    });
+
+    // marker: a disk of CONSTANT hyperbolic radius around P, met along the walk line
+    C.dep("near", "number", ["s", "rad"], function (s, k) { return Math.tanh((s - k) / 2); });
+    C.dep("far", "number", ["s", "rad"], function (s, k) { return Math.tanh((s + k) / 2); });
+
+    // geodesic = circle orthogonal to the unit circle through both ideal endpoints
+    C.dep("Q", "point", ["mu", "del"], function (mu, del) {
+      var c = Math.cos(del); return { x: Math.cos(mu) / c, y: Math.sin(mu) / c };
+    });
+    C.dep("rho", "number", ["del"], function (del) { return Math.abs(Math.tan(del)); });
+    C.dep("E1", "point", ["mu", "del"], function (mu, del) { return { x: Math.cos(mu - del), y: Math.sin(mu - del) }; });
+    C.dep("E2", "point", ["mu", "del"], function (mu, del) { return { x: Math.cos(mu + del), y: Math.sin(mu + del) }; });
+    C.dep("orth", "number", ["Q", "rho"], function (Q, rho) { return Q.x * Q.x + Q.y * Q.y - rho * rho - 1; });
+    C.dep("ang", "number", ["E1", "Q"], function (E, Q) {
+      var ux = E.x, uy = E.y, vx = E.x - Q.x, vy = E.y - Q.y;
+      var c = (ux * vx + uy * vy) / (Math.sqrt(ux * ux + uy * uy) * Math.sqrt(vx * vx + vy * vy));
+      return Math.acos(c < -1 ? -1 : (c > 1 ? 1 : c)) * 180 / Math.PI;
+    });
+    C.solve();
+  }
+
+  // ---- clock: unit hyperbolic speed, cut at distance 12, dissolve, restart in a new direction ----
+  var SMAX = 12, PARK = 0.8, PER = SMAX + PARK;
+  var pass = Math.floor(t / PER), tau = t - pass * PER;
+  var s = tau < SMAX ? tau : SMAX;
+  var th = pass * 2.399963229728653;
+  var total = pass * SMAX + s;
+
+  C.set("s", s); C.set("th", th); C.solve();
+  var r = C.val("r"), P = C.val("P");
+  var dCross = C.val("dCross"), gap = C.val("gap");
+  var nearR = C.val("near"), farR = C.val("far");
+
+  var cx = W / 2, cy = H / 2, R = Math.min(W, H) * 0.44;
+  var ux = Math.cos(th), uy = Math.sin(th);
+  var fs = Math.max(9, Math.min(12, W / 66));
+
+  var fade = 1;
+  if (tau < 0.5) fade = tau / 0.5;
+  else if (tau > SMAX) fade = (PER - tau) / PARK;
+
+  ctx.clearRect(0, 0, W, H);
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+
+  // interior
+  var gi = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
+  gi.addColorStop(0, "rgba(232,184,75,0.060)");
+  gi.addColorStop(0.72, "rgba(232,184,75,0.018)");
+  gi.addColorStop(1, "rgba(94,200,216,0.055)");
+  ctx.fillStyle = gi;
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, TWO); ctx.fill();
+
+  // rings of hyperbolic radius 1,2,3,... — they pile up at the rim, which is the chart's doing
+  for (var n = 1; n <= 15; n++) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, Math.tanh(n / 2) * R, 0, TWO);
+    ctx.strokeStyle = "rgba(232,184,75," + (0.03 + 0.15 * Math.pow(0.87, n - 1)).toFixed(4) + ")";
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+
+  // geodesics: every one is an arc orthogonal to the rim, solved by the construction
+  function geo(mu, del, col, lw) {
+    C.set("mu", mu); C.set("del", del); C.solve();
+    var Q = C.val("Q"), rho = C.val("rho"), E1 = C.val("E1"), E2 = C.val("E2");
+    var qx = cx + Q.x * R, qy = cy - Q.y * R;
+    var x1 = cx + E1.x * R, y1 = cy - E1.y * R;
+    var x2 = cx + E2.x * R, y2 = cy - E2.y * R;
+    var a1 = Math.atan2(y1 - qy, x1 - qx), a2 = Math.atan2(y2 - qy, x2 - qx);
+    var d = a2 - a1;
+    while (d <= -Math.PI) d += TWO;
+    while (d > Math.PI) d -= TWO;
+    ctx.beginPath();
+    ctx.arc(qx, qy, rho * R, a1, a1 + d, d < 0);
+    ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.stroke();
+    return { Q: Q, E1: E1 };
+  }
+
+  var rot = t * 0.032, N = 12, k, mu;
+  for (k = 0; k < N; k++) {
+    mu = rot + TWO * (k + 1) / N;
+    geo(mu, Math.PI * 2 / N, "rgba(232,184,75,0.13)", 1);
+  }
+  for (k = 0; k < N; k++) {
+    mu = rot + TWO * (k + 2) / N;
+    geo(mu, Math.PI * 4 / N, "rgba(232,184,75,0.26)", 1);
+  }
+  var hl = geo(rot + TWO * 2 / N, Math.PI * 4 / N, "rgba(232,184,75,0.82)", 1.6);
+  var ang = C.val("ang");
+  var resid = Math.max(gap, Math.abs(C.val("orth")));
+
+  // right-angle glyph where that geodesic meets the rim
+  (function () {
+    var E = hl.E1, Q = hl.Q, L = Math.max(6, R * 0.034);
+    var ex = cx + E.x * R, ey = cy - E.y * R;
+    var vx = E.x - Q.x, vy = E.y - Q.y, vn = Math.sqrt(vx * vx + vy * vy);
+    var d1x = vx / vn * L, d1y = -vy / vn * L;   // along the rim
+    var d2x = -E.x * L, d2y = E.y * L;           // inward, along the geodesic
+    ctx.beginPath();
+    ctx.moveTo(ex + d1x, ey + d1y);
+    ctx.lineTo(ex + d1x + d2x, ey + d1y + d2y);
+    ctx.lineTo(ex + d2x, ey + d2y);
+    ctx.strokeStyle = "rgba(233,230,223,0.7)"; ctx.lineWidth = 1; ctx.stroke();
+  })();
+
+  // the ideal boundary — dashed, because it is not part of the space
+  ctx.save();
+  ctx.setLineDash([2.5, 5]);
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, TWO);
+  ctx.strokeStyle = "rgba(232,184,75,0.62)"; ctx.lineWidth = 1.4; ctx.stroke();
+  ctx.restore();
+
+  // ideal points: a circle's worth of them, twelve marked
+  for (k = 0; k < 96; k++) {
+    var af = rot + TWO * k / 96;
+    ctx.beginPath();
+    ctx.arc(cx + Math.cos(af) * R, cy - Math.sin(af) * R, 0.8, 0, TWO);
+    ctx.fillStyle = "rgba(232,184,75,0.30)"; ctx.fill();
+  }
+  for (k = 0; k < N; k++) {
+    var a = rot + TWO * k / N;
+    ctx.beginPath();
+    ctx.arc(cx + Math.cos(a) * R, cy - Math.sin(a) * R, 2.4, 0, TWO);
+    ctx.fillStyle = "rgba(224,145,58,0.9)"; ctx.fill();
+  }
+
+  // ---- the walk ----
+  ctx.save();
+  ctx.globalAlpha = fade;
+
+  // the geodesic walked (a diameter is a geodesic too)
+  ctx.beginPath();
+  ctx.moveTo(cx - ux * R, cy + uy * R);
+  ctx.lineTo(cx + ux * R, cy - uy * R);
+  ctx.strokeStyle = "rgba(224,145,58,0.30)"; ctx.lineWidth = 1; ctx.stroke();
+
+  // its two ideal endpoints A and B — the pair the cross-ratio reads
+  var ends = [[ux, uy, "A"], [-ux, -uy, "B"]];
+  ctx.font = fs + "px ui-monospace, SFMono-Regular, Menlo, monospace";
+  ctx.textAlign = "center"; ctx.textBaseline = "middle";
+  for (k = 0; k < 2; k++) {
+    var e = ends[k];
+    ctx.beginPath();
+    ctx.arc(cx + e[0] * R, cy - e[1] * R, 3.6, 0, TWO);
+    ctx.strokeStyle = "rgba(94,200,216,0.85)"; ctx.lineWidth = 1.2; ctx.stroke();
+    ctx.fillStyle = "rgba(94,200,216,0.72)";
+    ctx.fillText(e[2], cx + e[0] * (R + fs + 3), cy - e[1] * (R + fs + 3));
+  }
+
+  // travelled segment
+  var pxs = cx + P.x * R, pys = cy - P.y * R;
+  var gl = ctx.createLinearGradient(cx, cy, pxs, pys);
+  gl.addColorStop(0, "rgba(94,200,216,0.10)");
+  gl.addColorStop(1, "rgba(94,200,216,0.85)");
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(pxs, pys);
+  ctx.strokeStyle = gl; ctx.lineWidth = 2; ctx.stroke();
+
+  // one tick per unit of hyperbolic distance already walked; they bunch, the walk does not
+  for (n = 1; n <= Math.floor(s); n++) {
+    var rr = Math.tanh(n / 2);
+    var bx = cx + ux * rr * R, by = cy - uy * rr * R;
+    var age = s - n, fl = age < 0.4 ? 1 - age / 0.4 : 0;
+    var L2 = 5 + 7 * fl;
+    ctx.beginPath();
+    ctx.moveTo(bx - uy * L2, by - ux * L2);
+    ctx.lineTo(bx + uy * L2, by + ux * L2);
+    ctx.strokeStyle = "rgba(232,184,75," + (0.45 + 0.5 * fl).toFixed(3) + ")";
+    ctx.lineWidth = 1 + fl; ctx.stroke();
+  }
+
+  // a disk of CONSTANT hyperbolic radius around the point: its picture shrinks to nothing
+  var hc = (nearR + farR) / 2, hr = (farR - nearR) / 2;
+  var showMarker = hr * R > 0.6;
+  if (showMarker) {
+    ctx.beginPath();
+    ctx.arc(cx + ux * hc * R, cy - uy * hc * R, hr * R, 0, TWO);
+    ctx.strokeStyle = "rgba(94,200,216,0.40)"; ctx.lineWidth = 1; ctx.stroke();
+  }
+
+  var gp = ctx.createRadialGradient(pxs, pys, 0, pxs, pys, 13);
+  gp.addColorStop(0, "rgba(94,200,216,0.55)");
+  gp.addColorStop(1, "rgba(94,200,216,0)");
+  ctx.fillStyle = gp;
+  ctx.beginPath(); ctx.arc(pxs, pys, 13, 0, TWO); ctx.fill();
+  ctx.fillStyle = "#5ec8d8";
+  ctx.beginPath(); ctx.arc(pxs, pys, 3, 0, TWO); ctx.fill();
+  ctx.restore();
+
+  // centre
+  ctx.beginPath(); ctx.arc(cx, cy, 2.2, 0, TWO);
+  ctx.fillStyle = "#e0913a"; ctx.fill();
+
+  // ---- text ----
+  ctx.font = fs + "px ui-monospace, SFMono-Regular, Menlo, monospace";
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "center";
+  ctx.fillStyle = "rgba(138,133,119,0.85)";
+  for (n = 1; n <= 3; n++) {
+    var rl = Math.tanh(n / 2) * R;
+    ctx.fillText(String(n), cx + Math.cos(1.83) * rl, cy - Math.sin(1.83) * rl);
+  }
+
+  ctx.textAlign = "left";
+  if (W > 470) {
+    ctx.fillStyle = "rgba(138,133,119,0.9)";
+    ctx.fillText("gold rings · hyperbolic radius 1, 2, 3, …", 10, fs * 1.1);
+    ctx.fillText(showMarker
+      ? "cyan circle · constant hyperbolic radius 0.4"
+      : "cyan circle · constant hyperbolic radius 0.4 — now smaller than a pixel", 10, fs * 2.5);
+  }
+  ctx.textAlign = "center";
+  ctx.fillStyle = "rgba(138,133,119,0.9)";
+  var cap = W > 700
+    ? "dashed rim · ideal boundary: infinitely many distinct ideal points, all at infinite distance, none of them in the space"
+    : (W > 470
+      ? "dashed rim · infinitely many ideal points, at infinite distance, not in the space"
+      : "dashed rim · not part of the space");
+  ctx.fillText(cap, cx, H - fs * 0.9);
+
+  // ---- readouts ----
+  function put(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; }
+  put("poincare-a", isFinite(dCross) ? dCross.toFixed(3) : "—");
+  put("poincare-b", r.toFixed(9));
+  put("poincare-c", resid === 0 ? "0.0e+0" : resid.toExponential(1));
+  put("poincare-d", ang.toFixed(3) + "°");
+  put("poincare-e", total.toFixed(1));
+}));
 
   var io=null;
   function bind(){
