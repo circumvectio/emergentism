@@ -11,7 +11,7 @@ title: "K-7 · The Record Ledger"
 status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE, which closed the 145-vs-145 fork)"
 date: 2026-07-20
 owner: 01_EMERGENTISM
-supersedes: "the 2026-07-19 staged draft formerly at this path (same content, pre-signature) — source draft 00_K7_RECORD.md remains at root pending orchestrator tombstone"
+supersedes: "the 2026-07-19 staged draft formerly at this path (same content, pre-signature) — source draft 00_K7_RECORD.md (tombstoned 2026-07-20 per receipt 146; root now carries a forwarding stub to this successor)"
 parents:
   - 00_K7_RECORD.md
   - 00_THE_KERNEL_INDEX.md

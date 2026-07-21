@@ -21,11 +21,11 @@ title: "00 The Weltanschauung"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
 status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md"
+canonical_target: "../../00_THE_WELTANSCHAUUNG.md"
 ---
 
 # MOVED
 
-This file moved to: [05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md)
+This file moved to: [00_THE_WELTANSCHAUUNG.md](../../00_THE_WELTANSCHAUUNG.md) (the canonical Door, per receipt 146 / 00:01 line). The 05_COSMOLOGY/00_THE_WELTANSCHUAUNG.md is a cosmology-register worldview (disambiguation banner on its own line 6) — a *different* document, not the surface.
 
 Canonical content lives at the new path (Phase 2c reorg per packet 156). Old link preservation only.

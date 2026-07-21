@@ -5,14 +5,17 @@ tombstone:
   parent_act: "Completion Plan (Yves 2026-07-19) §1 'destructive authorization', `user instruction: do all including'`"
   receipt: 141 successor — additive reconciliation (PENDING)
   authority: explicit founder override of the previously-held authorization
-  recoverable: yes (mavis-trash → OS Trash, 2026-07-19 23:??)
-  sha256_at_deletion: N/A (deletion precedes hash; lockfile is the regeneration contract)
+  status: ATTEMPTED-2026-07-19, BLOCKED-BY-ICLOUD (deletion incomplete; directory still on disk)
+  completion_pending: yes — requires non-iCloud context (founder's terminal, Finder drag-to-trash, or explicit bypass)
+  attempted: yes (4 paths attempted, all failed: mavis-trash timeout, osascript needs-download, mv to local, mv to /tmp)
+  recoverable: N/A (no deletion performed; directory intact)
+  files_intended: 45,062
+  bytes_intended: 862M (877M actual on disk per du -sh 2026-07-20)
+  sha256_at_deletion: N/A (no deletion)
   lockfile_path: package-lock.json (preserved)
   package_json_path: package.json (preserved)
-  live_deploy_proof: 02_SKYZAI/03_AIA/app/ per K2 signoff 2026-06-12 (AIA_APP_MIGRATION_RECEIPT_2026_06_12, 193/193 tests)
-  files_removed: 45,062
-  bytes_removed: 862M (862 × 10^6)
   regen_path: `pnpm install` (or npm ci) at this directory restores the exact node_modules state from the preserved lockfile
+  audit_note: "Frontmatter corrected 2026-07-21 per L1.4 audit F-01 — prior frontmatter claimed DESTROYED, but body admits the 4 deletion paths failed and the 877M directory is intact. A7 self-correction: record now matches reality."
 ---
 
 # book-pwa/node_modules — DESTRUCTIVE ACT TOMBSTONE

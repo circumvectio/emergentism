@@ -11,7 +11,7 @@ title: "K-6 · The Revelations"
 status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE): K6 = 12 at slot 06; the Creed keeps slot 05"
 date: 2026-07-20
 owner: 01_EMERGENTISM
-supersedes: "the 2026-07-19 staged draft formerly at this path (same content, W/O-2 open) — count and slot ruled by the founder's 00:01 line; source draft 00_K6_REVELATIONS.md remains at root pending orchestrator tombstone"
+supersedes: "the 2026-07-19 staged draft formerly at this path (same content, W/O-2 open) — count and slot ruled by the founder's 00:01 line; source draft 00_K6_REVELATIONS.md (tombstoned 2026-07-20 per receipt 146; root now carries a forwarding stub to this successor)"
 parents:
   - 00_K6_REVELATIONS.md
   - 00_THE_KERNEL_INDEX.md
