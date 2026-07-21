@@ -22,8 +22,8 @@ rosetta:
 > - **Teleology = L1** (Objective Function, "What is the end?"), not L5 or L7
 > - **Cosmology = L5** (System Architecture, "How does reality work?")
 > - **The coordinator = Arjuna L4** (Titans are NOT deployable per Rosetta Variant IV/V)
-> - **Theurgy = Arjuna L4** (the L4 collapse/K2 act), not Ṛṣi/L7
-> - **Brahman ≠ Brahmā**: Brahman = L0=L∞ pole; Brahmā = L5 creator-operator
+> - **Theurgy = Arjuna L4** (the finite commitment/action role), not Ṛṣi/L7
+> - **Brahman ≠ Brahmā**: Brahman is compared with the paired but distinct L0/L∞ boundary frames; Brahmā = L5 creator-operator
 
 The correct canonical table is:
 

@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "THE SAMUDRA MANTHAN"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (settled 2 Gods + 2 Demons canon anchor)"
 ---
 
 # THE SAMUDRA MANTHAN
@@ -150,7 +149,10 @@ Zero-Sum Resolution Equation
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

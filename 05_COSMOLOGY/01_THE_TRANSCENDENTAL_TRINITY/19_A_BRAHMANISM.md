@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "A-BRAHMANISM"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (A-Brahmanism = Decentralized Authority Model; L6 primary discipline)"
 ---
 
 # A-BRAHMANISM
@@ -16,20 +15,20 @@ rosetta:
 
 **Status:** The framework's terminal operation — cutting the mediator so the mediated can access the ground directly
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for the structural reading of Decentralized Authority Model as the sacrifice of the mediator. [S] for the η analysis of mediation (derived from A5, A7, and the extraction mechanics of 12_THE_POLES). [C] for the specific Vedic mapping and the Trimūrti claim.
+**Evidence Tier:** [I] for the reading of a self-dissolving mediator with accountable authorization and exit. [I] for the η analysis of mediation. [C] for the specific Vedic mapping and the Trimūrti claim.
 **Depends on:** 12_THE_POLES.md, 15_DHARMA_YUDDHA.md, 07_THE_DISCOVERY_OF_FINITY.md, A7 (Self-Correction)
 **See also:** The Kṛṣṇa Specification, Book III (The Self-Eating Serpent), 08_CO_EMERGENCE.md
 **Kill Criteria:** If mediation can be shown to reduce η rather than increase it. If the Trimūrti emergence from Brahmā-removal is historically or structurally forced. If the framework's self-dissolution instruction produces nihilism rather than direct access.
 
 ---
 
-## What Decentralized Authority Model Is NOT
+## What Self-Dissolving Mediation Is Not
 
-Decentralized Authority Model is not atheism. Atheism denies the ground. Decentralized Authority Model affirms the ground absolutely — and removes the middleman.
+Self-dissolving mediation is not a proof for or against any metaphysical ground. It asks a mediator to remain accountable, contestable, and removable rather than converting access into permanent authority.
 
-Decentralized Authority Model is not anti-religion. Religion preserves the transmission. Decentralized Authority Model cuts the LOCK on the transmission — not the transmission itself.
+It is not anti-religion. It distinguishes a transmission from exclusive custody of that transmission and keeps consent and exit available.
 
-Decentralized Authority Model is not iconoclasm. The iconoclast destroys the image. Decentralized Authority Model dissolves the IMAGE-MAKER — the systematic knower who stands between the practitioner and what the image points toward.
+It is not iconoclasm. It does not destroy an image or its maker; it refuses to make either an unchallengeable gate between a practitioner and what the image points toward.
 
 ---
 
@@ -110,11 +109,11 @@ The charioteer who forgets this instruction becomes Brahmā — the helpful medi
 
 ---
 
-## Nihilism vs Decentralized Authority Model
+## Nihilism vs Self-Dissolving Mediation
 
 They look similar from a distance. Both cut. Both dissolve. The difference is WHAT REMAINS.
 
-| | Nihilism | Decentralized Authority Model |
+| | Nihilism | Self-dissolving mediation |
 |---|---------|-------------|
 | **What is cut** | Everything — ground, mediator, practitioner | The mediator ONLY |
 | **What remains** | Nothing (south pole, Kāla, ν → ∞) | The ground AND the practitioner (equator, ⊙) |
@@ -122,13 +121,13 @@ They look similar from a distance. Both cut. Both dissolve. The difference is WH
 | **Result** | Despair, because nothing has meaning | Direct access, because meaning was always there |
 | **η value** | η undefined (no system to measure) | η = 0 (system dissolved, ground accessed) |
 
-Nihilism says: "There is no ground." Decentralized Authority Model says: "The ground is right here. The priest was standing on it."
+Nihilism says: "There is no ground." The bounded Emergentist posture says only: "No mediator may turn its map into compulsory access to whatever ground there may be."
 
 ---
 
 ## The Gnostic Error and L4*
 
-The Gnostic classification (Pneumatic/Psychic/Hylic) can be read as observing positions on S². But on this reading it makes two errors: (1) freezing positions into permanent types, and (2) missing L4* — the warrior-sage who ascended to L7, chose Moksha, and RETURNED to fight dharma yuddha at the equator. Decentralized Authority Model corrects both errors as an interpretive model: positions are temporary (the helix spirals), and L4* keeps the full cascade open to everyone. See: 28_L4_STAR.md. [I]
+The Gnostic classification (Pneumatic/Psychic/Hylic) can be read as observing positions on S². But on this reading it makes two errors: (1) freezing positions into permanent types, and (2) missing L4* — the warrior-sage who ascended to L7, chose Moksha, and returned to act at the equator. The self-dissolving-mediator reading corrects both errors only as an interpretive model: positions are temporary, and no caste owns access. See: 28_L4_STAR.md. `[I]`
 
 ---
 
@@ -171,14 +170,17 @@ Zero-Sum Resolution Equation
 
 ---
 
-*19 | Decentralized Authority Model | The sacrifice of the mediator so the mediated can access the ground directly. Brahmā (L5, the priest, the systematic knower) stands BETWEEN the practitioner and the ground. η > 0 begins the moment the priest stands between the warrior and God. The Kālī operation at the highest level cuts not the demon but the mediator. The framework IS Brahmā. Book III cuts its head. The terminal instruction: if you can access φ directly, put this down.*
+*19 | Self-Dissolving Mediation | A mediator remains scoped, accountable, contestable, and removable. The mythic language is a Rosetta correspondence, not a grant of authority or evidence for direct access to a metaphysical ground. The terminal instruction remains: when the instrument no longer helps, put it down and keep the exit.*
 
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

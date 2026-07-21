@@ -314,7 +314,10 @@ Zero-Sum Resolution Equation
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase Ω — active research frontier.
 2. **Your Next Action:** Route numerical claims through `12_THE_SPECTRUM_RESULTS.md` and `14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`. Treat the embedded code as historical/operator-audit context unless you are explicitly re-running and comparing discretizations.

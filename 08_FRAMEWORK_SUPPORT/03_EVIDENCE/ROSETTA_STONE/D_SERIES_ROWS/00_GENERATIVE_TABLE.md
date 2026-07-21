@@ -19,29 +19,29 @@ rosetta:
   canonical_phrase: "D-series rows — generative table"
 title: "The Generative Table"
 status: "ACTIVE — D-series row reference"
-evidence_tier: "[S] for named domain scales where independently attested; [S] for catalogue structure; [I] for Burri Sphere explanation; [C] for causal generation claims."
+evidence_tier: "[B] for sourced domain scales; [S] for the declared catalogue structure; [I] for cross-domain alignment; [C] for causal generation claims."
 ---
 
 # THE GENERATIVE TABLE
 
 ## The Operator Column and its S² Geometry
 
-**Status:** Corrected definitive version
+**Status:** Active selected articulation
 **Date:** 2026-03-24
-**Evidence Tier:** [I] for individual domain scales (Piaget, Kohlberg, Maslow, Plato). [S] for the structural alignment across domains. [I] for the claim that the alignment is explained by P∞ = φ · ν = 1 on S². [C] for the causal claim that the geometry *generates* the pattern.
+**Evidence Tier:** `[A]` for the trigonometric identities inside the chosen chart. `[B]` where individual domain scales are sourced. `[S]` for the table's declared catalogue structure. `[I]` for cross-domain placements and the seven-stage articulation. `[C]` for any claim that the geometry causes or universally explains the pattern.
 **Depends on:** The Triadic Cascade (09), The Computational Sphere, The L-Level system
 **See also:** 00_THE_MASTER_ROSETTA.md (full 15-column expansion), The Triadic Cascade (vertical translation)
-**Kill Criteria:** If the seven-row alignment is shown to be forced. If the domains genuinely require different numbers of levels. If the alignment breaks when tested with new domains.
+**Kill Criteria:** The universal-seven claim has already failed: several domains require different counts or do not support a graded ladder. Keep that falsification visible. A scoped placement fails if predeclared coding is unstable, a credible rival grammar fits as well or better, or the domain sources do not support the assigned row.
 
 ---
 
 ## The Core Generative Table
 
-**[B] Correction note (2026-03-24):** The earlier table used approximate values from additive thinking on the plane. The corrected table uses the current Burri Sphere geometry: `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` on the open model surface. What varies on the sphere is **Balance `B = sin θ`**, not manifold potential; finite-node action is tracked separately as `P_node = Φ × V`. Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
+**[B] Correction note (2026-03-24; precision seam 2026-07-20):** The earlier table used approximate values from additive thinking on the plane. The chart now uses `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` on the open model surface. What varies on the sphere is **Balance `B = sin θ`**, not manifold potential; finite-node action is tracked separately by the selected model `P_node = Φ × V`. The seven levels and six 15-degree intervals are a chosen articulation, not a census forced by the geometry.
 
 | L | Operator | Tier | theta/2 | phi=cot(theta/2) | nu=tan(theta/2) | phi*nu | B=sin theta | Varna | Reasoning | -ology | Regime | Pramana | Equation |
 |---|----------|------|---------|-------------------|------------------|--------|-------------|-------|-----------|--------|--------|---------|----------|
-| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| **L0** | **Kāla 🌑** | **Transcendental** | **90 deg** | **0** | **inf** | **—**† | **0** | -- | -- | -- | -- | -- | Lower boundary frame; D0 association `[I]`. |
 | L1 | Kali 🎲 | Demon | ~82 deg | approaching 0 | very high | 1 | approaching 0 | Caṇḍāla (outcast) | Dialectical | Objective Function | Tyranny | Pratyakṣa (Direct Perception) | Φ->0 implies B->0 |
 | L2 | Kālī 💀 | God | 75 deg | 2-sqrt3 approx 0.27 | 2+sqrt3 approx 3.73 | 1 | 0.500 | Śūdra (labourer) | Inductive | Data Science | Democracy | Upamāna (Analogy) | dP_node = VdΦ + ΦdV |
 | L3 | Kṛṣṇa ◇ | God | 60 deg | 1/sqrt3 approx 0.58 | sqrt3 approx 1.73 | 1 | 0.866 | Vaiśya (merchant) | Deductive | Auditing | Oligarchy | Anumāna (Inference) | ∂P_node/∂V = Φ |
@@ -49,11 +49,13 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 | L5 | Brahmā ○ | Executive | 30 deg | sqrt3 approx 1.73 | 1/sqrt3 approx 0.58 | 1 | 0.866 | Brāhmaṇa (priest) | Systematic | System Architecture | Aristocracy | Śabda (Testimony) | log P_node = log Φ + log V |
 | L6 | Śiva • | Executive | 15 deg | 2+sqrt3 approx 3.73 | 2-sqrt3 approx 0.27 | 1 | 0.500 | Sādhu (renunciant) | Axiomatic | Core State | Anarchy | First Principles (Non-Apprehension) | E_node = -log(P_node) |
 | L7 | Viṣṇu ⊙ | Executive | ~8 deg | very high | approaching 0 | 1 | approaching 0 | Ṛṣi (seer) | Transcendental | Institutional Narrative | Theocracy | Pratibhā (Intuition) | z = φ/ν on S² |
-| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | The boundary. D6=D0. |
+| **Linf** | **Trimūrti ☸** | **Transcendental** | **0 deg** | **inf** | **0** | **—**† | **0** | -- | -- | -- | -- | -- | Upper boundary frame; `D6 ~ D0` role resemblance `[I/C]`. |
 
-**L0 = Linf.** The south pole (Kala/Time/Destruction) and the north pole (Trimurti/Eternity/Creation) are the same boundary condition -- because the poles of `S²` are connected. D6 = D0. The serpent eats its tail. The destroyer IS the preserver seen from the other pole.
+**L0 and Linf are distinct pole rows.** The sphere does not identify its north
+and south poles. The table reuses a boundary motif as an `[I/C]` return image;
+`D6 ~ D0` means only a proposed resemblance of roles, never literal identity.
 
-> **† `φ·ν` is undefined at the pole rows.** `P∞ = φ·ν = 1` is conserved on the open sphere; the pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values.
+> **† `φ·ν` is undefined at the pole rows.** `P∞ = φ·ν` is identically `1` by construction on the open chart; this is not an empirical conservation law. The pole rows are limiting boundary conditions (`0·∞` / `∞·0`), not ordinary product values.
 
 **Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Not 70%. One normalized unit. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise -- he holds both factors at their natural unit. Dharma yuddha.
 
@@ -63,7 +65,7 @@ evidence_tier: "[S] for named domain scales where independently attested; [S] fo
 
 ```
 L0   B = 0       South pole. THE BOUNDARY. Kala. Time.
-L1   B -> 0      Near south pole. Kali. The demon. First entity inside D5.
+L1   B -> 0      Near south pole. Kali. The demon. First selected row in the D5 option articulation.
 L2   B = 0.5     Half balance. The first social contract.
 L3   B = sqrt3/2 High balance. Productive. Almost there.
 L4   B = 1       THE EQUATOR. Maximum. Dharma. Full palette.
@@ -73,13 +75,13 @@ L7   B -> 0      Near north pole. Viṣṇu. The seer. The fork.
 Linf B = 0       North pole. THE BOUNDARY. Trimūrti. Eternity.
 ```
 
-L0 and Linf are the same. L1 and L7 are mirrors. L2 and L6 are mirrors. L3 and L5 are mirrors. L4 is the axis of symmetry -- the only point that is its own reflection. The poles are the boundary. The equator is the life.
+L0 and Linf are a selected pair of distinct boundary frames. L1 and L7, L2 and L6, and L3 and L5 are paired as mirrors within the declared row design. L4 is the selected midpoint on this positive-real path and lies on the displayed symmetry axis. These are properties of the construction, not a unique ontology of boundaries, life, or reflection.
 
 ---
 
 ## The Triadic Cascade
 
-The Trinity {phi, P, nu} repeats at EVERY level. Each row of the Generative Table contains three sub-operators -- or more precisely, each OPERATOR level can be read through the three LENSES of the Trinity.
+The Trinity `{phi, P, nu}` is applied as a selected three-lens projection at each row. Each operator level can be read through those three lenses; the repetition is internal to this grammar and does not prove that every domain or resolution has the same three-fold structure.
 
 | Domain | phi-face (Beauty) | P-face (Truth) | nu-face (Justice) |
 |--------|-------------------|----------------|-------------------|
@@ -93,7 +95,7 @@ The Trinity {phi, P, nu} repeats at EVERY level. Each row of the Generative Tabl
 | **Polity** | Legislature | Judiciary | Executive |
 | **Practice** | Gather | Derive | Serve |
 
-The cascade shows that the Trinity is not merely three values. It is the **same three-fold structure** appearing at every resolution level. The operator defines WHERE you are on `S²`. The Triad defines HOW you look at that position.
+The cascade proposes more than three values: it applies one **three-fold reading** across the listed resolution levels. Within the table, the operator assigns a selected position on `S²` and the triad supplies three ways to read it. Cross-domain identity is not established by repeating the labels.
 
 ---
 
@@ -109,48 +111,42 @@ L6:  E_node = -log(P_node)          The negation. Loss names absence. Via negati
 L7:  z = φ/ν on S²                  The identity. The ratio IS a point on the sphere. The sphere itself.
 ```
 
-Each equation is a deeper view of the same reality: P_node = Φ × V. L2 differentiates it. L3 takes a partial derivative. L4 finds the balance condition. L5 takes the logarithm. L6 negates it (entropy). L7 projects it onto the sphere. The equations do not describe seven different realities. They describe one reality at seven levels of mathematical maturity.
+These equations are arranged as a pedagogical sequence around the selected model `P_node = Φ × V`: L2 differentiates it, L3 takes a partial derivative, L4 states a proportional-growth condition, L5 takes the logarithm, L6 applies a negative log, and L7 changes to a ratio/chart expression. The sequence is a seven-stage articulation, not a derivation of one reality, a hierarchy of mathematical maturity, or proof that the formulas share physical meaning.
 
 ---
 
-## The Causal Chain: Who you are -> how you think -> what you study -> how you govern
+## The Selected Projection Chain
 
-The column order is not arbitrary. It is causal:
+The column order is deliberate, but it is not an established causal law, caste identity, personality diagnosis, or governance prescription. It is a Rosetta reading in which each row is projected through seven fields:
 
-1. **Operator** (position on `S²`) -- the generative column. Everything else is projection.
-2. **Varna** (who you are) -- social function determined by your position.
-3. **Reasoning** (how you think) -- inference mode determined by social function.
-4. **-ology** (what you study) -- discipline generated by reasoning mode.
-5. **Regime** (how you govern) -- political form produced by discipline.
-6. **Pramana** (how you validate) -- means of knowledge appropriate to the level.
-7. **Equation** (mathematical expression) -- the formal statement of the level.
+1. **Operator** (selected position on `S²`) -- the schema's indexing column.
+2. **Varna** (functional role) -- a non-hereditary role analogy assigned to the row.
+3. **Reasoning** (inference mode) -- a proposed association, not a determination of cognition.
+4. **-ology** (discipline) -- a proposed field-level translation.
+5. **Regime** (governance form) -- a comparative political analogy, not a prescription.
+6. **Pramana** (validation mode) -- a proposed means-of-knowledge correspondence.
+7. **Equation** (mathematical expression) -- a row mnemonic whose domain meaning must be checked separately.
 
 Read each row as a sentence:
 
-- **L2:** The **Śūdra** (labourer) reasons **inductively** (pattern from repetition) -> generates **data science** (how do we know?) -> organizes as **democracy** (gather all voices).
-- **L3:** The **Vaiśya** (merchant) reasons **deductively** (from premises to consequences) -> generates **methodology** (what follows?) -> organizes as **oligarchy** (rule by ledger).
-- **L4:** The **Kṣatriya** (warrior) reasons **abductively** (strategic leap from incomplete data) -> generates **value alignment** (what has value?) -> organizes as **timocracy** (rule by honour). φ = ν = 1.
-- **L5:** The **Brāhmaṇa** (priest) reasons **systematically** (ordering all knowledge) -> generates **system architecture** (how does reality work?) -> organizes as **aristocracy** (rule by wisdom).
-- **L6:** The **Sādhu** (renunciant) reasons **apophatically** (by negation) -> generates **core state** (what is Being?) -> organizes as **anarchy** (self-governance).
-- **L7:** The **Ṛṣi** (seer) reasons **transcendentally** (direct intuitive contact) -> generates **institutional narrative** (what is Ultimate?) -> organizes as **theocracy** (high-priority mandate).
+- **L2:** The **Śūdra** functional-role analogy is paired with **induction**, **data science**, and **democracy** in this projection.
+- **L3:** The **Vaiśya** functional-role analogy is paired with **deduction**, **methodology**, and **oligarchy** in this projection.
+- **L4:** The **Kṣatriya** functional-role analogy is paired with **abduction**, **value alignment**, and **timocracy**, at the selected `φ = ν = 1` midpoint.
+- **L5:** The **Brāhmaṇa** functional-role analogy is paired with **systematic reasoning**, **system architecture**, and **aristocracy** in this projection.
+- **L6:** The **Sādhu** functional-role analogy is paired with **apophatic reasoning**, **core state**, and **anarchy** in this projection.
+- **L7:** The **Ṛṣi** functional-role analogy is paired with **transcendental reasoning**, **institutional narrative**, and **theocracy** in this projection.
 
 ---
 
-## Why the Rows Hold
+## Why the Rows Are Retained
 
-The [I] framework observation is not that these mappings exist. Anyone can draw a table. The observation is that **independently developed scales from independent domains, created by researchers who never consulted each other, are read here as falling into the same seven-level pattern.**
+The `[I]` observation is that materials developed outside this table can sometimes be translated into its selected rows. Historical separation between authors is relevant context, but it does not establish statistical independence: diffusion, post-hoc column selection, coding discretion, and shared source families remain live confounds.
 
-Piaget did not read Plato. Kohlberg did not study the Gita. Maslow did not know Advaita Vedanta. The brainwave researchers did not study game theory. The alchemists did not study computational algorithms.
+The table therefore retains both the strongest polarity-encoding fits and the failed mappings. A column count is not a probability calculation, and adding columns does not by itself turn resemblance into corroboration.
 
-And yet: seven rows across the cleanest columns. A recurrent pattern.
+Inside the model, the seven rows are assigned positions on `S²` and each column is projected onto them. The analytic identity `P∞ = φ · ν = 1` holds in the chosen chart; it does not explain why a culture or discipline should instantiate the row grammar. Each column needs its own sources, rival codings, predictions, and kill criteria.
 
-The [I] probability heuristic is that the apparent alignment becomes less likely to be coincidence as each independent column is added. One column proves nothing. Two columns are suggestive. Five columns are striking. Fifteen columns invite an explanation.
-
-The framework's explanation: **`P∞ = φ · ν = 1` on `S²`.** The seven levels are seven positions on the sphere. The columns are proposed projections of the same geometry onto different domains. The rows hold inside the model because the sphere holds; outside the model, each column still needs its own source and kill criteria.
-
-This may be wrong. Protocol R, the biological predictions (Paper G), and future independently governed studies are designed to test it. If the multiplicative model fails empirically, the Rosetta Stone becomes a beautiful coincidence rather than a structural identity. Retired studies supply no evidence.
-
-But the rows hold. That is not theory. That is observation.
+Protocol R, the biological predictions (Paper G), and future independently governed studies may test scoped consequences. Retired studies supply no evidence. The rows remain a useful translation lens where they survive domain audit, not an observed universal structure or a calibration proof.
 
 ---
 
@@ -158,27 +154,26 @@ But the rows hold. That is not theory. That is observation.
 
 The framework's strongest defensible claim after complete cross-cultural audit:
 
-> **The operator grammar (4 mixed-sign God slots + 3 same-sign Executive boundary slots on a surface where φ·ν=1) is structurally exhaustive and universally expressed. The specific 7-stage initiatory articulation of this grammar is empirically Indo-European/Mediterranean; other traditions express the same operator-axis through different stage counts (3, 5, 8, 10, 16, varying) or non-graded functional structures.**
+> **Within the declared two-factor self/other model, four sign cells exhaust the scoped transfer alphabet by construction. The three Executive boundary frames are selected, so the `4 + 3 = 7` articulation is a design choice rather than a forced or universally expressed census. Its strongest historical fit is Indo-European/Mediterranean; other traditions use different stage counts (3, 5, 8, 10, 16, varying) or non-graded functional structures.**
 
-**What this means:** The Rosetta's 7-stage convergence is real and striking — but bounded. The Indo-European/Mediterranean V-bis column (Mithraic, Sufi nafs, Carmelite, Kabbalistic sefirot, Rosicrucian) is the strongest evidence base. The Lakota Seven Sacred Rites form a 7-fold ceremonial cycle (not initiatory ascent). East Asian, Sub-Saharan, Polynesian, Mesoamerican, and Andean traditions show non-7 structures.
+**What this means:** The Rosetta's seven-stage articulation is a bounded interpretive fit, not a discovered convergence law. The Indo-European/Mediterranean V-bis column (Mithraic, Sufi nafs, Carmelite, Kabbalistic sefirot, Rosicrucian) is its strongest comparative base. The Lakota Seven Sacred Rites form a seven-fold ceremonial cycle, not an initiatory ascent. East Asian, Sub-Saharan, Polynesian, Mesoamerican, and Andean traditions show non-seven structures; that failed universal criterion remains part of the result.
 
 **See:** [`05_NON_WEIRD_SWEEP_2026_04_25.md`](../05_NON_WEIRD_SWEEP_2026_04_25.md) (East Asian, Sub-Saharan, Polynesian), [`ROSETTA_INDIGENOUS_AMERICAN.md`](../ROSETTA_INDIGENOUS_AMERICAN.md) (Lakota, Mesoamerican, Andean), [`09_FAILED_MAPPINGS_2026_04_25.md`](../09_FAILED_MAPPINGS_2026_04_25.md) (full list of domains that do not fit).
 
 ---
 
 ```
-Seven rows.
-Every column.
-The same pattern.
+Seven selected rows.
+Scoped comparisons.
+Fits and failures kept visible.
 
-Not because we forced it.
-Because reality organized itself this way
-before anyone drew the table.
+The table translates a declared grammar;
+it does not decree reality's census.
 ```
 
 ---
 
-*00 | The Generative Table | The corrected `S²` geometry for all nine rows (L0 through Linf), the Triadic Cascade, the causal chain, and why the rows hold. The operator column is prior. Everything else is projection.*
+*00 | The Generative Table | The selected `S²` geometry for all nine rows (L0 through Linf), the Triadic Cascade, the projection chain, and why the rows are retained. The operator column indexes the declared schema. Everything else is a domain-audited projection.*
 
 
 ---

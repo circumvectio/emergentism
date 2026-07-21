@@ -1,0 +1,2077 @@
+#!/usr/bin/env python3
+"""Independent semantic acceptance tests for the Emergentist Compass.
+
+This vessel deliberately does not import the Burri renderer.  It checks the
+small formal models named by the repaired source owners and binds every
+fallacy mutation to an owner-side repair marker.  All examples are finite,
+deterministic, and use only the Python standard library.
+"""
+
+from __future__ import annotations
+
+import json
+import math
+import re
+import unittest
+from dataclasses import dataclass, replace
+from pathlib import Path
+from typing import Callable, Mapping, Optional, Sequence
+
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def owner_text(relative_path: str) -> str:
+    return (ROOT / relative_path).read_text(encoding="utf-8")
+
+
+# ---------------------------------------------------------------------------
+# Analytic chart and conjunctive-family reference models
+
+
+def reciprocal_chart(theta: float) -> tuple[float, float, float]:
+    if not 0.0 < theta < math.pi:
+        raise ValueError("the reciprocal chart requires theta in (0, pi)")
+    phi = 1.0 / math.tan(theta / 2.0)
+    nu = math.tan(theta / 2.0)
+    balance = 2.0 / (phi + nu)
+    return phi, nu, balance
+
+
+def dual_tangent_projection(theta: float, radius: float = 1.0) -> tuple[float, float]:
+    """Raw radii for pole projection onto the two opposite tangent planes."""
+    if radius <= 0.0 or not 0.0 < theta < math.pi:
+        raise ValueError("projection requires radius > 0 and theta in (0, pi)")
+    return (
+        2.0 * radius / math.tan(theta / 2.0),
+        2.0 * radius * math.tan(theta / 2.0),
+    )
+
+
+def horn_meridian(delta: float, radius: float = 1.0) -> tuple[float, float]:
+    """Cylindrical radius and height near the R=r horn pinch v=pi+delta."""
+    if radius <= 0.0:
+        raise ValueError("horn radius must be positive")
+    return (
+        radius * (1.0 + math.cos(math.pi + delta)),
+        radius * math.sin(math.pi + delta),
+    )
+
+
+def rapidity_state(w: float) -> tuple[float, float, float, float, float]:
+    """beta, gamma, normalized energy, momentum, and proper-time ratio."""
+    beta = math.tanh(w)
+    gamma = math.cosh(w)
+    energy = gamma
+    momentum = math.sinh(w)
+    proper_time_ratio = 1.0 / gamma
+    return beta, gamma, energy, momentum, proper_time_ratio
+
+
+def circular_sagitta(radius: float, half_chord: float) -> float:
+    """Stable sagitta of a circle above a centered chord."""
+    if half_chord <= 0.0 or radius < half_chord:
+        raise ValueError("sagitta requires radius >= half_chord > 0")
+    return half_chord**2 / (
+        radius + math.sqrt(radius**2 - half_chord**2)
+    )
+
+
+def window_radius_bound(half_chord: float, resolution: float) -> float:
+    """Radius at which sagitta equals resolution on 0 < resolution <= a."""
+    if half_chord <= 0.0 or not 0.0 < resolution <= half_chord:
+        raise ValueError("window bound requires 0 < resolution <= half_chord")
+    return (half_chord**2 + resolution**2) / (2.0 * resolution)
+
+
+def product(phi: float, viability: float) -> float:
+    return phi * viability
+
+
+def minimum(phi: float, viability: float) -> float:
+    return min(phi, viability)
+
+
+def harmonic(phi: float, viability: float) -> float:
+    if phi == 0.0 or viability == 0.0:
+        return 0.0
+    return 2.0 * phi * viability / (phi + viability)
+
+
+def cobb_douglas(phi: float, viability: float, alpha: float = 0.5) -> float:
+    if not 0.0 < alpha < 1.0:
+        raise ValueError("a conjunctive Cobb-Douglas exponent must lie in (0, 1)")
+    return phi**alpha * viability ** (1.0 - alpha)
+
+
+AGGREGATORS: tuple[Callable[[float, float], float], ...] = (
+    product,
+    minimum,
+    harmonic,
+    cobb_douglas,
+)
+
+
+class AnalyticAndAggregatorTests(unittest.TestCase):
+    def test_reciprocal_identity_am_gm_and_balance_on_open_domain(self) -> None:
+        for theta in (0.01, 0.2, 0.7, math.pi / 2.0, 2.4, math.pi - 0.01):
+            with self.subTest(theta=theta):
+                phi, nu, balance = reciprocal_chart(theta)
+                self.assertAlmostEqual(phi * nu, 1.0, places=12)
+                self.assertGreaterEqual(phi + nu + 1e-12, 2.0)
+                self.assertAlmostEqual(balance, math.sin(theta), places=12)
+                self.assertGreater(balance, 0.0)
+                self.assertLessEqual(balance, 1.0 + 1e-12)
+
+    def test_reciprocal_chart_excludes_both_poles(self) -> None:
+        for theta in (-1.0, 0.0, math.pi, math.pi + 1.0):
+            with self.subTest(theta=theta):
+                with self.assertRaises(ValueError):
+                    reciprocal_chart(theta)
+
+    def test_am_gm_equality_is_only_at_the_equator_in_samples(self) -> None:
+        equator = reciprocal_chart(math.pi / 2.0)
+        self.assertAlmostEqual(equator[0], 1.0)
+        self.assertAlmostEqual(equator[1], 1.0)
+        self.assertAlmostEqual(equator[0] + equator[1], 2.0)
+        for theta in (0.2, 0.8, 2.0, 2.9):
+            phi, nu, _ = reciprocal_chart(theta)
+            self.assertGreater(phi + nu, 2.0)
+
+    def test_pole_projection_uses_explicit_scale_and_open_endpoints(self) -> None:
+        radius = 2.7
+        for theta in (0.1, 0.8, math.pi / 2.0, 2.2, math.pi - 0.1):
+            with self.subTest(theta=theta):
+                rho_n, rho_s = dual_tangent_projection(theta, radius)
+                phi, nu, _ = reciprocal_chart(theta)
+                self.assertAlmostEqual(rho_n / (2.0 * radius), phi, places=12)
+                self.assertAlmostEqual(rho_s / (2.0 * radius), nu, places=12)
+                self.assertAlmostEqual(rho_n * rho_s, 4.0 * radius**2, places=10)
+        for theta in (0.0, math.pi):
+            with self.subTest(theta=theta):
+                with self.assertRaises(ValueError):
+                    dual_tangent_projection(theta, radius)
+
+    def test_horn_pinch_is_parabolic_not_a_light_cone(self) -> None:
+        radius = 1.9
+        for delta in (-1e-3, 1e-3):
+            rho, z = horn_meridian(delta, radius)
+            parabolic_lead = z * z / (2.0 * radius)
+            self.assertAlmostEqual(rho / parabolic_lead, 1.0, places=5)
+            self.assertLess(rho / abs(z), 1e-3)
+            implicit_residual = (rho * rho + z * z) ** 2 - 4.0 * radius**2 * rho**2
+            self.assertAlmostEqual(implicit_residual, 0.0, places=12)
+
+    def test_rapidity_keeps_rest_mass_invariant_and_massive_motion_timelike(self) -> None:
+        for w in (-3.0, -0.4, 0.0, 0.4, 3.0):
+            with self.subTest(w=w):
+                beta, gamma, energy, momentum, proper_time = rapidity_state(w)
+                self.assertLess(abs(beta), 1.0)
+                self.assertAlmostEqual(energy * energy - momentum * momentum, 1.0, places=12)
+                self.assertAlmostEqual(gamma, energy, places=12)
+                self.assertAlmostEqual(proper_time, 1.0 / gamma, places=12)
+                self.assertAlmostEqual(math.exp(w) * math.exp(-w), 1.0, places=12)
+
+    def test_burri_window_lemma_returns_a_bound_not_infinity(self) -> None:
+        half_chord = 0.5
+        resolution = 0.004
+        radius_bound = window_radius_bound(half_chord, resolution)
+        self.assertAlmostEqual(radius_bound, 31.252, places=12)
+        self.assertAlmostEqual(
+            circular_sagitta(radius_bound, half_chord), resolution, places=12
+        )
+        self.assertGreater(circular_sagitta(28.5, half_chord), resolution)
+        for radius in (49.87, 84.0, 134.0, 200.0, 275.0, 390.0):
+            with self.subTest(radius=radius):
+                sagitta = circular_sagitta(radius, half_chord)
+                self.assertLess(sagitta, resolution)
+                recovered = (half_chord**2 + sagitta**2) / (2.0 * sagitta)
+                self.assertAlmostEqual(recovered, radius, places=9)
+        self.assertTrue(math.isfinite(radius_bound))
+
+    def test_burri_window_lemma_rejects_undeclared_domains(self) -> None:
+        for radius, half_chord in ((0.4, 0.5), (1.0, 0.0)):
+            with self.subTest(radius=radius, half_chord=half_chord):
+                with self.assertRaises(ValueError):
+                    circular_sagitta(radius, half_chord)
+        for half_chord, resolution in ((0.5, 0.0), (0.5, 0.6)):
+            with self.subTest(half_chord=half_chord, resolution=resolution):
+                with self.assertRaises(ValueError):
+                    window_radius_bound(half_chord, resolution)
+
+    def test_sphere_and_torus_owners_expose_the_audit_boundaries(self) -> None:
+        sphere = owner_text("05_COSMOLOGY/00_THE_BURRISPHERE.md")
+        aum = owner_text(
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/"
+            "D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md"
+        )
+        torus = owner_text("05_COSMOLOGY/00_THE_TORUS_REVELATION.md")
+        renderer = owner_text("12_PUBLIC_SITE/dimensions/dimensions.js")
+        d5_page = owner_text("12_PUBLIC_SITE/5/index.html")
+        self.assertIn("Projection rays originate at the poles, never at the centre", sphere)
+        self.assertRegex(
+            sphere,
+            r"Raw tangent-plane\s+radii multiply to `4r²`, not `1`",
+        )
+        self.assertIn("The rays are cast **from `N` and `S`**, not from the centre", aum)
+        self.assertIn("the poles are excluded endpoints", aum)
+        self.assertIn("parabolically", torus)
+        self.assertIn("not the physical light cone", torus)
+        self.assertIn("Rest mass remains invariant", torus)
+        self.assertIn("imposed R/r := 1/γ [I]", renderer)
+        self.assertNotIn("relativistic-mass factor", renderer)
+        self.assertNotIn("null-limit overlay", renderer)
+        self.assertIn("Burri Window Lemma", sphere)
+        self.assertIn("not evidence that `R=∞`", sphere)
+        self.assertIn("simulation values generate the scene", d5_page)
+        self.assertIn("not available to the threshold detector", d5_page)
+        self.assertIn("py(separation)", renderer)
+        self.assertNotIn("All a bounded window can ever return", d5_page)
+
+    def test_declared_conjunctive_family_boundaries_and_monotonicity(self) -> None:
+        grid = (0.0, 0.1, 0.4, 0.8, 1.0)
+        for aggregator in AGGREGATORS:
+            with self.subTest(aggregator=aggregator.__name__):
+                self.assertEqual(aggregator(0.0, 0.8), 0.0)
+                self.assertEqual(aggregator(0.8, 0.0), 0.0)
+                self.assertAlmostEqual(aggregator(1.0, 1.0), 1.0)
+                for fixed in grid:
+                    along_phi = [aggregator(x, fixed) for x in grid]
+                    along_viability = [aggregator(fixed, y) for y in grid]
+                    self.assertEqual(along_phi, sorted(along_phi))
+                    self.assertEqual(along_viability, sorted(along_viability))
+
+    def test_admissible_aggregators_are_not_ranking_equivalent(self) -> None:
+        candidate_a = (0.2, 1.0)
+        candidate_b = (0.4, 0.4)
+        self.assertGreater(product(*candidate_a), product(*candidate_b))
+        self.assertLess(minimum(*candidate_a), minimum(*candidate_b))
+        self.assertLess(harmonic(*candidate_a), harmonic(*candidate_b))
+        self.assertGreater(cobb_douglas(*candidate_a), cobb_douglas(*candidate_b))
+        self.assertLess(
+            cobb_douglas(*candidate_a, alpha=0.8),
+            cobb_douglas(*candidate_b, alpha=0.8),
+        )
+
+
+# ---------------------------------------------------------------------------
+# Soul Loop, represented futures, and option cones
+
+
+@dataclass(frozen=True)
+class AuthorizationEnvelope:
+    principal: str
+    mandate: str
+    scope: str
+    consent: bool
+    custody: str
+    expiry_or_revocation: str
+    contest_path: str
+    actor: str
+    consequence_bearers: tuple[str, ...]
+
+    def complete(self) -> bool:
+        textual = (
+            self.principal,
+            self.mandate,
+            self.scope,
+            self.custody,
+            self.expiry_or_revocation,
+            self.contest_path,
+            self.actor,
+        )
+        bearers = self.consequence_bearers
+        return (
+            self.consent
+            and all(textual)
+            and bool(bearers)
+            and all(isinstance(item, str) and item.strip() for item in bearers)
+            and len(bearers) == len(set(bearers))
+        )
+
+
+@dataclass(frozen=True)
+class AuthorizationAssessment:
+    status: str
+    envelope: Optional[AuthorizationEnvelope]
+    reasons: tuple[str, ...] = ()
+    nonconsequential_scope: bool = False
+
+    def validated_status(self) -> str:
+        if self.status == "valid":
+            if (
+                self.envelope is None
+                or not self.envelope.complete()
+                or self.reasons
+                or self.nonconsequential_scope
+            ):
+                raise ValueError("valid requires a complete envelope and no defects")
+        elif self.status == "invalid":
+            if self.envelope is None or not self.reasons or self.nonconsequential_scope:
+                raise ValueError("invalid requires a supplied record and defects")
+        elif self.status == "absent":
+            if self.envelope is not None or not self.reasons or self.nonconsequential_scope:
+                raise ValueError("absent requires a null envelope and reasons")
+        elif self.status == "not_required":
+            if self.envelope is not None or self.reasons or not self.nonconsequential_scope:
+                raise ValueError("not_required is confined to nonconsequential scope")
+        else:
+            raise ValueError("unknown authorization status")
+        return self.status
+
+    def valid(self) -> bool:
+        return self.validated_status() == "valid"
+
+
+@dataclass(frozen=True)
+class CommitmentReceipt:
+    receipt_type: str
+    status: str
+    selected_option_id: Optional[str]
+    attempted_action_id: Optional[str]
+    expected_outcome: Optional[str]
+    actor: str
+    physical_availability: str
+    authorization_status: str
+    evaluation_id: str = "evaluation-1"
+    evaluation_bearer_ids: tuple[str, ...] = ("system",)
+    expected_bearer_deltas: tuple[tuple[str, float], ...] = (("system", 0.0),)
+    payer_ids: tuple[str, ...] = ()
+    beneficiary_ids: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class OutcomeReceipt:
+    receipt_type: str
+    receipt_cause: str
+    attempted_action_id: Optional[str]
+    performed_action_id: Optional[str]
+    observed_outcome: str
+    environment_state_before: int
+    environment_state_after: int
+    evaluation_ref: str = "evaluation-1"
+    consequence_bearer_ids: tuple[str, ...] = ("system",)
+    bearer_observation_ids: tuple[str, ...] = ("system",)
+
+
+def select_action(
+    action_weights: Mapping[str, float],
+    means: Mapping[str, float],
+    admissible_actions: set[str],
+    authorization: AuthorizationAssessment,
+    *,
+    governed: bool = False,
+    bearer_ids: tuple[str, ...] = ("system",),
+    payer_ids: tuple[str, ...] = (),
+    beneficiary_ids: tuple[str, ...] = (),
+) -> tuple[Optional[str], CommitmentReceipt]:
+    authorization_status = authorization.validated_status()
+    expected_bearer_deltas = tuple((bearer_id, 0.0) for bearer_id in bearer_ids)
+    executable = sorted(
+        action
+        for action in admissible_actions
+        if means.get(action, 0.0) > 0.0 and action in action_weights
+    )
+    if not executable:
+        actor = authorization.envelope.actor if authorization.envelope else "unknown"
+        return None, CommitmentReceipt(
+            "commitment",
+            "unavailable",
+            None,
+            None,
+            None,
+            actor,
+            "unavailable",
+            authorization_status,
+            evaluation_bearer_ids=bearer_ids,
+            expected_bearer_deltas=expected_bearer_deltas,
+            payer_ids=payer_ids,
+            beneficiary_ids=beneficiary_ids,
+        )
+    selected = max(executable, key=lambda action: action_weights[action])
+    actor = authorization.envelope.actor if authorization.envelope else "unknown"
+    if governed and authorization_status in {"invalid", "absent"}:
+        return None, CommitmentReceipt(
+            "commitment",
+            "refused",
+            selected,
+            None,
+            None,
+            actor,
+            "available",
+            authorization_status,
+            evaluation_bearer_ids=bearer_ids,
+            expected_bearer_deltas=expected_bearer_deltas,
+            payer_ids=payer_ids,
+            beneficiary_ids=beneficiary_ids,
+        )
+    expected = "advanced" if selected == "advance" else f"completed:{selected}"
+    return selected, CommitmentReceipt(
+        "commitment",
+        {
+            "valid": "authorized_committed",
+            "invalid": "unauthorized_attempt",
+            "absent": "unauthorized_attempt",
+            "not_required": "nonconsequential_attempt",
+        }[authorization_status],
+        selected,
+        selected,
+        expected,
+        actor,
+        "available",
+        authorization_status,
+        evaluation_bearer_ids=bearer_ids,
+        expected_bearer_deltas=expected_bearer_deltas,
+        payer_ids=payer_ids,
+        beneficiary_ids=beneficiary_ids,
+    )
+
+
+def environment_transition(
+    state: int,
+    action: str,
+    *,
+    veto: bool = False,
+    consequence_bearer_ids: tuple[str, ...] = ("system",),
+) -> tuple[int, OutcomeReceipt]:
+    if veto:
+        return state, OutcomeReceipt(
+            "outcome",
+            "action_attempt",
+            action,
+            None,
+            "vetoed",
+            state,
+            state,
+            consequence_bearer_ids=consequence_bearer_ids,
+            bearer_observation_ids=consequence_bearer_ids,
+        )
+    next_state = state + 1
+    observed = "advanced" if action == "advance" else f"completed:{action}"
+    return next_state, OutcomeReceipt(
+        "outcome",
+        "action_attempt",
+        action,
+        action,
+        observed,
+        state,
+        next_state,
+        consequence_bearer_ids=consequence_bearer_ids,
+        bearer_observation_ids=consequence_bearer_ids,
+    )
+
+
+def ambient_observation(
+    state_before: int,
+    state_after: int,
+    consequence_bearer_ids: tuple[str, ...] = ("system",),
+) -> OutcomeReceipt:
+    return OutcomeReceipt(
+        "outcome",
+        "ambient_observation",
+        None,
+        None,
+        "ambient-change",
+        state_before,
+        state_after,
+        consequence_bearer_ids=consequence_bearer_ids,
+        bearer_observation_ids=consequence_bearer_ids,
+    )
+
+
+def receipt_bearer_coverage_valid(
+    commitment: CommitmentReceipt,
+    outcome: Optional[OutcomeReceipt],
+    authorization: AuthorizationAssessment,
+) -> bool:
+    """Fail closed if a named bearer disappears across authorization and receipts."""
+
+    def named_unique(values: Sequence[str], *, nonempty: bool) -> bool:
+        return (
+            (bool(values) or not nonempty)
+            and all(isinstance(value, str) and value.strip() for value in values)
+            and len(values) == len(set(values))
+        )
+
+    try:
+        authorization.validated_status()
+    except ValueError:
+        return False
+
+    evaluated = commitment.evaluation_bearer_ids
+    delta_ids = tuple(bearer_id for bearer_id, _ in commitment.expected_bearer_deltas)
+    if not named_unique(evaluated, nonempty=True):
+        return False
+    if not named_unique(delta_ids, nonempty=True) or set(delta_ids) != set(evaluated):
+        return False
+    if not all(
+        isinstance(delta, (int, float)) and math.isfinite(delta)
+        for _, delta in commitment.expected_bearer_deltas
+    ):
+        return False
+
+    evaluated_set = set(evaluated)
+    for named_subset in (commitment.payer_ids, commitment.beneficiary_ids):
+        if not named_unique(named_subset, nonempty=False):
+            return False
+        if not set(named_subset) <= evaluated_set:
+            return False
+    if authorization.envelope is not None:
+        authorized = authorization.envelope.consequence_bearers
+        if not named_unique(authorized, nonempty=True):
+            return False
+        if authorization.status == "valid" and set(authorized) != evaluated_set:
+            return False
+        if authorization.status == "invalid" and not set(authorized) <= evaluated_set:
+            return False
+
+    if commitment.status in {"refused", "unavailable"} and (
+        commitment.attempted_action_id is not None
+        or commitment.expected_outcome is not None
+    ):
+        return False
+    if outcome is None:
+        return True
+
+    consequences = outcome.consequence_bearer_ids
+    observations = outcome.bearer_observation_ids
+    if not named_unique(consequences, nonempty=True):
+        return False
+    if not named_unique(observations, nonempty=True):
+        return False
+    if set(observations) != set(consequences):
+        return False
+    if outcome.receipt_cause == "action_attempt":
+        return (
+            outcome.attempted_action_id is not None
+            and outcome.evaluation_ref == commitment.evaluation_id
+            and set(consequences) == evaluated_set
+        )
+    if outcome.receipt_cause == "ambient_observation":
+        return (
+            outcome.attempted_action_id is None
+            and outcome.performed_action_id is None
+        )
+    return False
+
+
+def loop_update(
+    model: dict[str, object],
+    selector: dict[str, object],
+    commitment: CommitmentReceipt,
+    outcome: Optional[OutcomeReceipt],
+) -> tuple[dict[str, object], dict[str, object]]:
+    if outcome is None:
+        return model, selector
+    next_model = dict(model)
+    next_selector = dict(selector)
+    next_model["receipt_count"] = int(next_model.get("receipt_count", 0)) + 1
+    next_model["last_observed"] = outcome.observed_outcome
+    if commitment.expected_outcome != outcome.observed_outcome:
+        next_selector["revision_count"] = int(
+            next_selector.get("revision_count", 0)
+        ) + 1
+    return next_model, next_selector
+
+
+def represented_future_distribution(flood_probability: float) -> dict[str, float]:
+    if not 0.0 <= flood_probability <= 1.0:
+        raise ValueError("probability must be normalized")
+    return {"evacuate": flood_probability, "stay": 1.0 - flood_probability}
+
+
+def selector_distribution(selector_state: Mapping[str, object]) -> dict[str, float]:
+    revisions = int(selector_state.get("revision_count", 0))
+    advance_weight = max(0.05, 0.9 - 0.4 * revisions)
+    return {"advance": advance_weight, "wait": 1.0 - advance_weight}
+
+
+def option_cone(
+    physical_histories: set[str],
+    modeled_histories: set[str],
+    reachable_with_means: set[str],
+) -> set[str]:
+    return physical_histories & modeled_histories & reachable_with_means
+
+
+def authorized_options(
+    physically_reachable_options: set[str], authorized_histories: set[str]
+) -> set[str]:
+    return physically_reachable_options & authorized_histories
+
+
+@dataclass(frozen=True)
+class RepresentedReferent:
+    kind: str
+    register: str
+    modality: str
+
+
+@dataclass(frozen=True)
+class MemoryToken:
+    register: str
+    modality: str
+    salience: float
+    realizes: frozenset[str]
+    referent: RepresentedReferent
+
+
+def valid_memory_typing(memory: MemoryToken) -> bool:
+    if (memory.register, memory.modality) != ("D4", "actual"):
+        return False
+    if not math.isfinite(memory.salience) or memory.salience < 0.0:
+        return False
+    if not {"D1", "D2", "D3", "D4"} <= memory.realizes:
+        return False
+    if memory.referent.kind == "historical_event":
+        return (memory.referent.register, memory.referent.modality) == (
+            "D4",
+            "actual",
+        )
+    if memory.referent.kind == "possible_content":
+        return (memory.referent.register, memory.referent.modality) == (
+            "D5",
+            "merely_possible",
+        )
+    return False
+
+
+class DimensionalRegisterTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.realizers = frozenset({"D1", "D2", "D3", "D4"})
+
+    def test_veridical_memory_has_actual_d4_token_and_historical_d4_referent(self) -> None:
+        memory = MemoryToken(
+            "D4",
+            "actual",
+            0.8,
+            self.realizers,
+            RepresentedReferent("historical_event", "D4", "actual"),
+        )
+        self.assertTrue(valid_memory_typing(memory))
+
+    def test_imagined_sunset_has_actual_token_and_merely_possible_d5_content(self) -> None:
+        memory = MemoryToken(
+            "D4",
+            "actual",
+            0.8,
+            self.realizers,
+            RepresentedReferent("possible_content", "D5", "merely_possible"),
+        )
+        self.assertTrue(valid_memory_typing(memory))
+
+    def test_vividness_cannot_change_modality_register_or_evidence(self) -> None:
+        base = MemoryToken(
+            "D4",
+            "actual",
+            0.1,
+            self.realizers,
+            RepresentedReferent("possible_content", "D5", "merely_possible"),
+        )
+        vivid = replace(base, salience=1000.0)
+        self.assertTrue(valid_memory_typing(vivid))
+        self.assertEqual((vivid.register, vivid.modality), (base.register, base.modality))
+        self.assertEqual(vivid.referent, base.referent)
+
+    def test_d4_actuality_requires_cumulative_lower_realization_in_this_contract(self) -> None:
+        incomplete = MemoryToken(
+            "D4",
+            "actual",
+            1.0,
+            frozenset({"D3", "D4"}),
+            RepresentedReferent("historical_event", "D4", "actual"),
+        )
+        self.assertFalse(valid_memory_typing(incomplete))
+
+    def test_exit_act_is_d4_while_d6_is_only_its_boundary_role(self) -> None:
+        exit_act = {"tokenRegister": "D4", "modality": "actual", "role": "D6"}
+        self.assertEqual(exit_act["tokenRegister"], "D4")
+        self.assertEqual(exit_act["modality"], "actual")
+        self.assertEqual(exit_act["role"], "D6")
+
+    def test_register_owner_contains_priority_salience_and_mu0_fences(self) -> None:
+        source = owner_text("06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md")
+        self.assertIn("DependencyPriority ≠ Actuality ≠ PsychologicalSalience", source)
+        self.assertIn("μ₀ : origin_aperture", source)
+        self.assertIn("μ₁…μ₄ : saturation_candidate", source)
+        self.assertIn("The remembered sunset can be the first thing I know", source)
+
+    def test_seed_assigns_one_typed_primary_model_to_every_register(self) -> None:
+        expected = {
+            "D0_THE_FLOOR.md": "THE MODEL — the Titan frame only",
+            "D1_ARITHMETIC.md": "THE MODEL — the reciprocal log line",
+            "D2_GEOMETRY.md": "THE MODEL — the declared Burri meridian",
+            "D3_BODIES.md": "THE MODEL — constrained transition and persistence",
+            "D4_SPACETIME.md": "THE MODEL — the causal receipt graph",
+            "D5_THE_GAME.md": "THE MODEL — the option-cone game",
+            "D6_THE_RETURN.md": "THE MODEL — no new model; a return relation",
+        }
+        root = ROOT / "10_SEED/01_THE_SEED_LADDER"
+        for filename, marker in expected.items():
+            with self.subTest(register=filename.split("_")[0]):
+                source = (root / filename).read_text(encoding="utf-8")
+                self.assertEqual(source.count("§0 · THE MODEL"), 1)
+                self.assertIn(marker, source)
+
+        d0 = (root / "D0_THE_FLOOR.md").read_text(encoding="utf-8")
+        d0_model = d0.split("## §0 · THE MODEL", 1)[1].split("## §1", 1)[0]
+        self.assertIn("{•, ○, ⊙}", d0_model)
+        self.assertIn("no sphere", d0_model)
+        self.assertIn("positive freedom", d0_model)
+
+        d6 = (root / "D6_THE_RETURN.md").read_text(encoding="utf-8")
+        d6_model = d6.split("## §0 · THE MODEL", 1)[1].split("## §1", 1)[0]
+        self.assertIn("b₆ : D5 ↝ D6", d6_model)
+        self.assertIn("r₆ : D6 ↝ D0", d6_model)
+        self.assertNotIn("D6≡D0", d6_model)
+
+    def test_reduction_asymmetry_does_not_launder_opacity_into_strong_emergence(self) -> None:
+        source = owner_text(
+            "02_EPISTEMOLOGY/00_OPAQUE_FROM_BELOW_LEGIBLE_FROM_ABOVE.md"
+        )
+        for marker in (
+            "Generate_n",
+            "Coarse_n",
+            "Recover_n",
+            "Constrain_n",
+            "currently_unreduced",
+            "candidate_strong",
+            "mathematical",
+            "geometric",
+            "thermodynamic/statistical",
+            "mechanistic",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, source)
+        self.assertIn("does not by itself prove strong emergence", source)
+        self.assertIn("does not by itself", source)
+        self.assertIn("unify the sciences", source)
+
+
+class SoulLoopAndConeTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.envelope = AuthorizationEnvelope(
+            principal="principal",
+            mandate="advance one state",
+            scope="test-boundary",
+            consent=True,
+            custody="operator",
+            expiry_or_revocation="revocable before execution",
+            contest_path="appeal",
+            actor="agent",
+            consequence_bearers=("system",),
+        )
+        self.authorization = AuthorizationAssessment("valid", self.envelope)
+
+    def test_commitment_and_outcome_are_separate_receipt_types(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, self.authorization
+        )
+        self.assertEqual(action, "advance")
+        self.assertEqual(commitment.receipt_type, "commitment")
+        self.assertEqual(commitment.attempted_action_id, "advance")
+        self.assertEqual(commitment.authorization_status, "valid")
+        next_state, outcome = environment_transition(3, action)
+        self.assertEqual(next_state, 4)
+        self.assertEqual(outcome.receipt_type, "outcome")
+        self.assertEqual(outcome.performed_action_id, "advance")
+        self.assertIsNot(type(commitment), type(outcome))
+
+    def test_bearer_coverage_is_end_to_end_and_fail_closed(self) -> None:
+        complete_authorization = AuthorizationAssessment(
+            "valid",
+            replace(
+                self.envelope,
+                consequence_bearers=("system", "neighbor"),
+            ),
+        )
+        action, commitment = select_action(
+            {"advance": 1.0},
+            {"advance": 1.0},
+            {"advance"},
+            complete_authorization,
+            bearer_ids=("system", "neighbor"),
+            payer_ids=("system",),
+            beneficiary_ids=("neighbor",),
+        )
+        _, outcome = environment_transition(
+            3,
+            action or "",
+            consequence_bearer_ids=("system", "neighbor"),
+        )
+        self.assertTrue(
+            receipt_bearer_coverage_valid(
+                commitment, outcome, complete_authorization
+            )
+        )
+
+        malformed = (
+            (
+                replace(
+                    commitment,
+                    expected_bearer_deltas=(("system", 0.0),),
+                ),
+                outcome,
+                complete_authorization,
+            ),
+            (
+                replace(commitment, payer_ids=("unnamed-payer",)),
+                outcome,
+                complete_authorization,
+            ),
+            (
+                replace(commitment, beneficiary_ids=("unnamed-beneficiary",)),
+                outcome,
+                complete_authorization,
+            ),
+            (
+                replace(
+                    commitment,
+                    evaluation_bearer_ids=("system", "system"),
+                    expected_bearer_deltas=(
+                        ("system", 0.0),
+                        ("system", 0.0),
+                    ),
+                ),
+                outcome,
+                complete_authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, consequence_bearer_ids=("system",)),
+                complete_authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, bearer_observation_ids=("system",)),
+                complete_authorization,
+            ),
+            (
+                commitment,
+                replace(outcome, evaluation_ref="different-evaluation"),
+                complete_authorization,
+            ),
+            (
+                replace(
+                    commitment,
+                    status="refused",
+                    attempted_action_id=None,
+                    expected_outcome="must-be-null",
+                ),
+                None,
+                complete_authorization,
+            ),
+            (
+                commitment,
+                outcome,
+                AuthorizationAssessment(
+                    "valid",
+                    replace(
+                        self.envelope,
+                        consequence_bearers=("system",),
+                    ),
+                ),
+            ),
+            (
+                commitment,
+                outcome,
+                AuthorizationAssessment(
+                    "valid",
+                    replace(
+                        self.envelope,
+                        consequence_bearers=("system", "authorized-but-dropped"),
+                    ),
+                ),
+            ),
+        )
+        for index, (bad_commitment, bad_outcome, authorization) in enumerate(
+            malformed
+        ):
+            with self.subTest(case=index):
+                self.assertFalse(
+                    receipt_bearer_coverage_valid(
+                        bad_commitment, bad_outcome, authorization
+                    )
+                )
+
+    def test_selected_option_without_means_yields_null_action(self) -> None:
+        action, receipt = select_action(
+            {"advance": 1.0}, {"advance": 0.0}, {"advance"}, self.authorization
+        )
+        self.assertIsNone(action)
+        self.assertEqual(receipt.status, "unavailable")
+        self.assertEqual(receipt.receipt_type, "commitment")
+
+    def test_governed_channel_fails_closed_on_invalid_authorization(self) -> None:
+        incomplete_envelope = replace(self.envelope, consent=False)
+        invalid = AuthorizationAssessment(
+            "invalid", incomplete_envelope, ("consent missing",)
+        )
+        action, receipt = select_action(
+            {"advance": 1.0},
+            {"advance": 1.0},
+            {"advance"},
+            invalid,
+            governed=True,
+        )
+        self.assertIsNone(action)
+        self.assertEqual(receipt.status, "refused")
+        self.assertEqual(receipt.physical_availability, "available")
+        self.assertEqual(receipt.authorization_status, "invalid")
+
+    def test_unauthorized_attempt_remains_causally_representable(self) -> None:
+        invalid = AuthorizationAssessment(
+            "invalid", replace(self.envelope, consent=False), ("coerced",)
+        )
+        action, receipt = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, invalid
+        )
+        self.assertEqual(action, "advance")
+        self.assertEqual(receipt.status, "unauthorized_attempt")
+        next_state, outcome = environment_transition(2, action or "")
+        self.assertEqual(next_state, 3)
+        self.assertEqual(outcome.performed_action_id, "advance")
+
+    def test_absent_envelope_can_be_receipted(self) -> None:
+        absent = AuthorizationAssessment("absent", None, ("no envelope",))
+        action, receipt = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, absent
+        )
+        self.assertEqual(action, "advance")
+        self.assertEqual(receipt.authorization_status, "absent")
+        self.assertEqual(receipt.actor, "unknown")
+
+    def test_nonconsequential_not_required_state_is_narrowly_inhabited(self) -> None:
+        assessment = AuthorizationAssessment(
+            "not_required", None, (), nonconsequential_scope=True
+        )
+        action, receipt = select_action(
+            {"observe": 1.0}, {"observe": 1.0}, {"observe"}, assessment
+        )
+        self.assertEqual(action, "observe")
+        self.assertEqual(receipt.status, "nonconsequential_attempt")
+        self.assertEqual(receipt.authorization_status, "not_required")
+
+    def test_malformed_authorization_union_combinations_are_rejected(self) -> None:
+        malformed = (
+            AuthorizationAssessment("valid", None),
+            AuthorizationAssessment(
+                "valid", replace(self.envelope, consent=False)
+            ),
+            AuthorizationAssessment("invalid", None, ("defect",)),
+            AuthorizationAssessment("invalid", self.envelope, ()),
+            AuthorizationAssessment("absent", self.envelope, ("unexpected",)),
+            AuthorizationAssessment("absent", None, ()),
+            AuthorizationAssessment("not_required", None),
+            AuthorizationAssessment(
+                "not_required", None, ("reason forbidden",), True
+            ),
+        )
+        for assessment in malformed:
+            with self.subTest(assessment=assessment):
+                with self.assertRaises(ValueError):
+                    select_action(
+                        {"advance": 1.0},
+                        {"advance": 1.0},
+                        {"advance"},
+                        assessment,
+                    )
+
+    def test_receipt_status_is_derived_from_validated_authorization(self) -> None:
+        invalid = AuthorizationAssessment(
+            "invalid", replace(self.envelope, consent=False), ("no consent",)
+        )
+        _, invalid_receipt = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, invalid
+        )
+        self.assertEqual(invalid_receipt.status, "unauthorized_attempt")
+        self.assertEqual(invalid_receipt.authorization_status, "invalid")
+        _, valid_receipt = select_action(
+            {"advance": 1.0},
+            {"advance": 1.0},
+            {"advance"},
+            self.authorization,
+        )
+        self.assertEqual(valid_receipt.status, "authorized_committed")
+        self.assertEqual(valid_receipt.authorization_status, "valid")
+
+    def test_imposed_cost_is_not_voluntary_sacrifice(self) -> None:
+        invalid = AuthorizationAssessment(
+            "invalid", replace(self.envelope, consent=False), ("imposed",)
+        )
+        action, receipt = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, invalid
+        )
+        self.assertEqual(action, "advance")
+        self.assertEqual(receipt.status, "unauthorized_attempt")
+        self.assertFalse(
+            voluntary_sacrifice(
+                -2.0,
+                5.0,
+                receipt.authorization_status == "valid",
+            )
+        )
+
+    def test_environment_can_veto_a_committed_action(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, self.authorization
+        )
+        next_state, outcome = environment_transition(7, action or "", veto=True)
+        self.assertEqual(commitment.status, "authorized_committed")
+        self.assertEqual(next_state, 7)
+        self.assertEqual(outcome.observed_outcome, "vetoed")
+        self.assertNotEqual(commitment.expected_outcome, outcome.observed_outcome)
+
+    def test_null_receipt_produces_null_update(self) -> None:
+        model: dict[str, object] = {"receipt_count": 0}
+        selector: dict[str, object] = {"revision_count": 0}
+        _, commitment = select_action(
+            {"advance": 1.0}, {"advance": 0.0}, {"advance"}, self.authorization
+        )
+        next_model, next_selector = loop_update(model, selector, commitment, None)
+        self.assertIs(next_model, model)
+        self.assertIs(next_selector, selector)
+
+    def test_ambient_observation_is_not_attributed_to_null_action(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0}, {"advance": 0.0}, {"advance"}, self.authorization
+        )
+        self.assertIsNone(action)
+        ambient = ambient_observation(4, 5)
+        self.assertEqual(ambient.receipt_cause, "ambient_observation")
+        self.assertIsNone(ambient.attempted_action_id)
+        self.assertIsNone(ambient.performed_action_id)
+        model, _ = loop_update(
+            {"receipt_count": 0}, {"revision_count": 0}, commitment, ambient
+        )
+        self.assertEqual(model["last_observed"], "ambient-change")
+
+    def test_adverse_outcome_updates_map_and_selector(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, self.authorization
+        )
+        _, outcome = environment_transition(1, action or "", veto=True)
+        model, selector = loop_update(
+            {"receipt_count": 0}, {"revision_count": 0}, commitment, outcome
+        )
+        self.assertEqual(model["receipt_count"], 1)
+        self.assertEqual(model["last_observed"], "vetoed")
+        self.assertEqual(selector["revision_count"], 1)
+
+    def test_updated_selector_changes_the_next_action_distribution(self) -> None:
+        action, commitment = select_action(
+            {"advance": 1.0}, {"advance": 1.0}, {"advance"}, self.authorization
+        )
+        _, outcome = environment_transition(1, action or "", veto=True)
+        before = {"revision_count": 0}
+        before_distribution = selector_distribution(before)
+        _, after = loop_update(
+            {"receipt_count": 0}, before, commitment, outcome
+        )
+        after_distribution = selector_distribution(after)
+        self.assertNotEqual(before_distribution, after_distribution)
+        self.assertGreater(
+            before_distribution["advance"], after_distribution["advance"]
+        )
+
+    def test_model_future_intervention_changes_present_action_distribution(self) -> None:
+        high_risk = represented_future_distribution(0.9)
+        low_risk = represented_future_distribution(0.1)
+        self.assertNotEqual(high_risk, low_risk)
+        self.assertEqual(max(high_risk, key=high_risk.get), "evacuate")
+        self.assertEqual(max(low_risk, key=low_risk.get), "stay")
+        self.assertAlmostEqual(sum(high_risk.values()), 1.0)
+        self.assertAlmostEqual(sum(low_risk.values()), 1.0)
+
+    def test_same_physical_cone_can_contain_different_option_cones(self) -> None:
+        physical = {"stay", "walk", "train", "moon"}
+        agent_a = option_cone(
+            physical,
+            {"stay", "walk", "train"},
+            {"stay", "walk"},
+        )
+        agent_b = option_cone(
+            physical,
+            {"stay", "walk", "train"},
+            {"stay", "walk", "train"},
+        )
+        self.assertEqual(agent_a, {"stay", "walk"})
+        self.assertEqual(agent_b, {"stay", "walk", "train"})
+        self.assertLess(agent_a, agent_b)
+        self.assertTrue(agent_a <= physical)
+        self.assertTrue(agent_b <= physical)
+
+    def test_authorization_is_a_normative_subset_not_the_option_cone(self) -> None:
+        physical_option_cone = {"stay", "walk", "take_without_permission"}
+        authorized = authorized_options(physical_option_cone, {"stay", "walk"})
+        self.assertIn("take_without_permission", physical_option_cone)
+        self.assertNotIn("take_without_permission", authorized)
+        self.assertLess(authorized, physical_option_cone)
+
+
+# ---------------------------------------------------------------------------
+# Collective trace, Power-Max, and value-theory reference models
+
+
+@dataclass(frozen=True)
+class EgregoreotypeCandidate:
+    persistent_shared_trace: bool
+    carrier_turnover: bool
+    selection_reweighting_intervention: bool
+    recurrent_objective_like_bias: bool
+    visible_substrate_costs: tuple[float, ...]
+    payer: str
+    beneficiary: str
+    eta_observed: Optional[float] = None
+    authorization_status: str = "absent"
+    consciousness_presumed: bool = False
+    personhood_presumed: bool = False
+    substrate_reduced: bool = False
+
+    def qualifies(self) -> bool:
+        return all(
+            (
+                self.persistent_shared_trace,
+                self.carrier_turnover,
+                self.selection_reweighting_intervention,
+                self.recurrent_objective_like_bias,
+                bool(self.visible_substrate_costs),
+                bool(self.payer),
+                bool(self.beneficiary),
+                not self.consciousness_presumed,
+                not self.personhood_presumed,
+            )
+        )
+
+
+@dataclass(frozen=True)
+class ActionEvaluation:
+    name: str
+    expected_individual: float
+    expected_whole: float
+    justice: bool
+    affected_bearer_deltas: tuple[tuple[str, float], ...] = ()
+    individual_id: str = "i"
+    whole_id: str = "H"
+    payer_ids: tuple[str, ...] = ()
+    beneficiary_ids: tuple[str, ...] = ()
+
+    def validated_bearer_map(self) -> Optional[dict[str, float]]:
+        return validated_bearer_map(
+            self.expected_individual,
+            self.expected_whole,
+            self.affected_bearer_deltas,
+            individual_id=self.individual_id,
+            whole_id=self.whole_id,
+            payer_ids=self.payer_ids,
+            beneficiary_ids=self.beneficiary_ids,
+        )
+
+
+def validated_bearer_map(
+    delta_individual: float,
+    delta_whole: float,
+    affected_bearer_deltas: Sequence[tuple[str, float]],
+    *,
+    individual_id: str = "i",
+    whole_id: str = "H",
+    payer_ids: Sequence[str] = (),
+    beneficiary_ids: Sequence[str] = (),
+) -> Optional[dict[str, float]]:
+    """Return a complete named bearer map, or fail closed with ``None``."""
+
+    if not affected_bearer_deltas or individual_id == whole_id:
+        return None
+    required_ids = (individual_id, whole_id, *payer_ids, *beneficiary_ids)
+    if any(not isinstance(bearer_id, str) or not bearer_id.strip() for bearer_id in required_ids):
+        return None
+
+    bearer_map: dict[str, float] = {}
+    for bearer_id, delta in affected_bearer_deltas:
+        if (
+            not isinstance(bearer_id, str)
+            or not bearer_id.strip()
+            or bearer_id in bearer_map
+            or not isinstance(delta, (int, float))
+            or not math.isfinite(delta)
+        ):
+            return None
+        bearer_map[bearer_id] = float(delta)
+
+    if not set(required_ids) <= set(bearer_map):
+        return None
+    if (
+        bearer_map[individual_id] != delta_individual
+        or bearer_map[whole_id] != delta_whole
+    ):
+        return None
+    return bearer_map
+
+
+def unconstrained_power_max(actions: Sequence[ActionEvaluation]) -> ActionEvaluation:
+    return max(actions, key=lambda action: action.expected_individual)
+
+
+def justice_constrained_power_max(
+    actions: Sequence[ActionEvaluation],
+) -> Optional[ActionEvaluation]:
+    admissible: list[ActionEvaluation] = []
+    for action in actions:
+        bearer_map = action.validated_bearer_map()
+        if (
+            action.justice
+            and bearer_map is not None
+            and action.expected_individual >= 0.0
+            and action.expected_whole >= 0.0
+            and all(delta >= 0.0 for delta in bearer_map.values())
+        ):
+            admissible.append(action)
+    if not admissible:
+        return None
+    return max(admissible, key=lambda action: action.expected_individual)
+
+
+def epsilon_optimal_open_unit(epsilon: float) -> float:
+    if not 0.0 < epsilon < 1.0:
+        raise ValueError("epsilon must lie in (0, 1)")
+    return 1.0 - epsilon / 2.0
+
+
+def extractor_gain(phi_i: float, coupling: float, delta_viability: float) -> float:
+    if not (phi_i > 0.0 and 0.0 <= coupling <= 1.0 and delta_viability > 0.0):
+        raise ValueError("counterexample parameters are outside their domain")
+    return phi_i * (1.0 - coupling) * delta_viability
+
+
+def dyadic_labels(
+    delta_individual: float,
+    delta_whole: float,
+    justice: bool,
+    affected_bearer_deltas: Sequence[tuple[str, float]] = (),
+    *,
+    individual_id: str = "i",
+    whole_id: str = "H",
+    payer_ids: Sequence[str] = (),
+    beneficiary_ids: Sequence[str] = (),
+) -> set[str]:
+    labels: set[str] = set()
+    bearer_map = validated_bearer_map(
+        delta_individual,
+        delta_whole,
+        affected_bearer_deltas,
+        individual_id=individual_id,
+        whole_id=whole_id,
+        payer_ids=payer_ids,
+        beneficiary_ids=beneficiary_ids,
+    )
+    if (
+        not justice
+        or bearer_map is None
+        or any(delta < 0.0 for delta in bearer_map.values())
+    ):
+        return labels
+    if delta_whole > 0.0 and delta_individual >= 0.0:
+        labels.add("moral")
+    if delta_individual > 0.0 and delta_whole >= 0.0:
+        labels.add("ethical")
+    if delta_individual > 0.0 and delta_whole > 0.0:
+        labels.add("syntropic")
+    if delta_individual == 0.0 and delta_whole == 0.0:
+        labels.add("lawful-preservation")
+    return labels
+
+
+def voluntary_sacrifice(
+    payer_delta: float, beneficiary_delta: float, authorized_cost: bool
+) -> bool:
+    return payer_delta < 0.0 and beneficiary_delta > 0.0 and authorized_cost
+
+
+def extractive_transfer(
+    payer_delta: float, beneficiary_delta: float, authorized_cost: bool
+) -> bool:
+    return payer_delta < 0.0 and beneficiary_delta > 0.0 and not authorized_cost
+
+
+class CollectivePowerAndValueTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.candidate = EgregoreotypeCandidate(
+            persistent_shared_trace=True,
+            carrier_turnover=True,
+            selection_reweighting_intervention=True,
+            recurrent_objective_like_bias=True,
+            visible_substrate_costs=(1.0,),
+            payer="carriers",
+            beneficiary="institution",
+        )
+
+    def test_egregoreotype_requires_all_five_evidentiary_conditions(self) -> None:
+        self.assertTrue(self.candidate.qualifies())
+        failures = (
+            {"persistent_shared_trace": False},
+            {"carrier_turnover": False},
+            {"selection_reweighting_intervention": False},
+            {"recurrent_objective_like_bias": False},
+            {"visible_substrate_costs": ()},
+        )
+        for mutation in failures:
+            with self.subTest(mutation=mutation):
+                self.assertFalse(replace(self.candidate, **mutation).qualifies())
+
+    def test_candidate_does_not_presume_consciousness_or_personhood(self) -> None:
+        self.assertFalse(self.candidate.consciousness_presumed)
+        self.assertFalse(self.candidate.personhood_presumed)
+        self.assertFalse(
+            replace(self.candidate, consciousness_presumed=True).qualifies()
+        )
+        self.assertFalse(replace(self.candidate, personhood_presumed=True).qualifies())
+
+    def test_successful_substrate_reduction_does_not_erase_macro_candidate(self) -> None:
+        reduced = replace(self.candidate, substrate_reduced=True)
+        self.assertTrue(reduced.qualifies())
+
+    def test_candidacy_is_descriptive_not_eta_zero(self) -> None:
+        nonextractive = replace(
+            self.candidate, eta_observed=0.0, authorization_status="valid"
+        )
+        extractive = replace(
+            self.candidate, eta_observed=0.4, authorization_status="invalid"
+        )
+        self.assertTrue(nonextractive.qualifies())
+        self.assertTrue(extractive.qualifies())
+        self.assertTrue(
+            nonextractive.eta_observed == 0.0
+            and nonextractive.authorization_status == "valid"
+        )
+        self.assertFalse(
+            extractive.eta_observed == 0.0
+            and extractive.authorization_status == "valid"
+        )
+
+    def test_one_shot_extraction_can_benefit_the_extractor(self) -> None:
+        self.assertGreater(extractor_gain(0.8, 0.25, 0.1), 0.0)
+        self.assertEqual(extractor_gain(0.8, 1.0, 0.1), 0.0)
+
+    def test_justice_filters_the_unconstrained_power_max_counterexample(self) -> None:
+        extraction = ActionEvaluation(
+            "extract", 10.0, -8.0, False, (("i", 10.0), ("H", -8.0))
+        )
+        mutual = ActionEvaluation(
+            "mutual", 4.0, 4.0, True, (("i", 4.0), ("H", 4.0))
+        )
+        preserve = ActionEvaluation(
+            "preserve", 1.0, 0.0, True, (("i", 1.0), ("H", 0.0))
+        )
+        actions = (extraction, mutual, preserve)
+        self.assertEqual(unconstrained_power_max(actions).name, "extract")
+        self.assertEqual(justice_constrained_power_max(actions).name, "mutual")
+
+    def test_empty_justice_field_has_no_admissible_maximizer(self) -> None:
+        actions = (
+            ActionEvaluation(
+                "extract", 10.0, -8.0, False, (("i", 10.0), ("H", -8.0))
+            ),
+            ActionEvaluation(
+                "harm", 3.0, -1.0, True, (("i", 3.0), ("H", -1.0))
+            ),
+        )
+        self.assertIsNone(justice_constrained_power_max(actions))
+
+    def test_noncompact_field_uses_epsilon_optimum_not_false_argmax(self) -> None:
+        for candidate in (0.1, 0.5, 0.9, 0.999):
+            improved = (candidate + 1.0) / 2.0
+            self.assertGreater(improved, candidate)
+            self.assertLess(improved, 1.0)
+        epsilon = 0.02
+        approximate = epsilon_optimal_open_unit(epsilon)
+        self.assertGreaterEqual(approximate, 1.0 - epsilon)
+        self.assertLess(approximate, 1.0)
+        owner = owner_text(
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
+        )
+        self.assertIn("upper\nsemicontinuous", owner)
+        self.assertIn("a_\\varepsilon", owner)
+
+    def test_moral_ethical_and_strict_syntropic_directions(self) -> None:
+        self.assertEqual(
+            dyadic_labels(0.0, 2.0, True, (("i", 0.0), ("H", 2.0))),
+            {"moral"},
+        )
+        self.assertEqual(
+            dyadic_labels(2.0, 0.0, True, (("i", 2.0), ("H", 0.0))),
+            {"ethical"},
+        )
+        self.assertEqual(
+            dyadic_labels(2.0, 3.0, True, (("i", 2.0), ("H", 3.0))),
+            {"moral", "ethical", "syntropic"},
+        )
+        self.assertEqual(
+            dyadic_labels(0.0, 0.0, True, (("i", 0.0), ("H", 0.0))),
+            {"lawful-preservation"},
+        )
+
+    def test_aggregate_gain_cannot_launder_hidden_bearer_harm(self) -> None:
+        delta_individual, delta_whole = 100.0, -1.0
+        self.assertGreater(delta_individual + delta_whole, 0.0)
+        self.assertEqual(
+            dyadic_labels(
+                delta_individual,
+                delta_whole,
+                True,
+                (("i", delta_individual), ("H", delta_whole)),
+            ),
+            set(),
+        )
+
+    def test_focal_dyad_cannot_launder_a_harmed_third_bearer(self) -> None:
+        superficially_mutual = ActionEvaluation(
+            "dyad-wins-third-loses",
+            5.0,
+            4.0,
+            True,
+            (("i", 5.0), ("H", 4.0), ("third", -3.0)),
+        )
+        safe = ActionEvaluation(
+            "bearer-complete",
+            2.0,
+            2.0,
+            True,
+            (("i", 2.0), ("H", 2.0), ("third", 0.0)),
+        )
+        self.assertEqual(
+            justice_constrained_power_max((superficially_mutual, safe)).name,
+            "bearer-complete",
+        )
+        self.assertEqual(
+            dyadic_labels(
+                5.0,
+                4.0,
+                True,
+                (("i", 5.0), ("H", 4.0), ("third", -3.0)),
+            ),
+            set(),
+        )
+
+    def test_bearer_maps_fail_closed_when_absent_missing_duplicate_or_mismatched(self) -> None:
+        valid = ActionEvaluation(
+            "complete",
+            2.0,
+            3.0,
+            True,
+            (("i", 2.0), ("H", 3.0), ("payer", 0.0), ("beneficiary", 1.0)),
+            payer_ids=("payer",),
+            beneficiary_ids=("beneficiary",),
+        )
+        invalid = (
+            replace(valid, affected_bearer_deltas=()),
+            replace(
+                valid,
+                affected_bearer_deltas=(("i", 2.0), ("H", 3.0), ("beneficiary", 1.0)),
+            ),
+            replace(
+                valid,
+                affected_bearer_deltas=(
+                    ("i", 2.0),
+                    ("H", 3.0),
+                    ("payer", 0.0),
+                    ("payer", 0.0),
+                    ("beneficiary", 1.0),
+                ),
+            ),
+            replace(
+                valid,
+                affected_bearer_deltas=(
+                    ("i", 99.0),
+                    ("H", 3.0),
+                    ("payer", 0.0),
+                    ("beneficiary", 1.0),
+                ),
+            ),
+        )
+        self.assertEqual(justice_constrained_power_max((valid,)), valid)
+        for action in invalid:
+            with self.subTest(action=action.affected_bearer_deltas):
+                self.assertIsNone(action.validated_bearer_map())
+                self.assertIsNone(justice_constrained_power_max((action,)))
+                self.assertEqual(
+                    dyadic_labels(
+                        action.expected_individual,
+                        action.expected_whole,
+                        action.justice,
+                        action.affected_bearer_deltas,
+                        individual_id=action.individual_id,
+                        whole_id=action.whole_id,
+                        payer_ids=action.payer_ids,
+                        beneficiary_ids=action.beneficiary_ids,
+                    ),
+                    set(),
+                )
+
+    def test_voluntary_sacrifice_is_costly_and_not_strict_syntropy(self) -> None:
+        self.assertTrue(voluntary_sacrifice(-2.0, 5.0, True))
+        self.assertFalse(voluntary_sacrifice(-2.0, 5.0, False))
+        self.assertFalse(extractive_transfer(-2.0, 5.0, True))
+        self.assertTrue(extractive_transfer(-2.0, 5.0, False))
+        self.assertFalse(extractive_transfer(-2.0, 0.0, False))
+        self.assertNotIn(
+            "syntropic",
+            dyadic_labels(
+                -2.0,
+                5.0,
+                True,
+                (("i", -2.0), ("H", 5.0)),
+                payer_ids=("i",),
+                beneficiary_ids=("H",),
+            ),
+        )
+        primitives = owner_text(
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
+        )
+        self.assertNotIn("AuthorizedCost(a;p,b) :=\n  J(", primitives)
+        self.assertIn("does **not**\nimply the ordinary `J` predicate", primitives)
+        self.assertIn("Extraction^R(q,r;p,b) :=", primitives)
+        self.assertIn("and not AuthorizedCost^R(q,r;p,b)", primitives)
+
+
+# ---------------------------------------------------------------------------
+# Quantum-removal and source-bound fallacy mutation matrix
+
+
+OPERATIONAL_KEYS = (
+    "dRegisters",
+    "soulLoop",
+    "authorization",
+    "justice",
+    "egregoreotype",
+    "closure",
+)
+
+
+def operational_projection(document: Mapping[str, object]) -> bytes:
+    core = {key: document[key] for key in OPERATIONAL_KEYS}
+    return json.dumps(
+        core, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
+
+
+@dataclass(frozen=True)
+class MutationSpec:
+    mutation_id: str
+    owner: str
+    repair_marker: str
+    good_claim: str
+    bad_claim: str
+    forbidden_pattern: str
+
+
+MUTATIONS: tuple[MutationSpec, ...] = (
+    MutationSpec(
+        "empirical-chart-inflation",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "These are **chart facts only**.",
+        "The reciprocal identity is analytic inside the declared open chart.",
+        "phi * nu = 1 proves a universal empirical conservation law.",
+        r"phi\s*\*\s*nu\s*=\s*1.{0,40}\bproves\b.{0,50}\bempirical\b",
+    ),
+    MutationSpec(
+        "product-uniqueness",
+        "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+        "**AND-class**",
+        "The product is one selected normalized conjunctive instance.",
+        "P_node = Phi * V is uniquely derived as the only possible aggregator.",
+        r"P_node.{0,40}(?<!not )uniquely derived.{0,50}only possible aggregator",
+    ),
+    MutationSpec(
+        "forced-sevenfold-necessity",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+        "not a necessary decomposition of nature",
+        "D0-D6 is a selected structural and interpretive scaffold.",
+        "Nature necessarily decomposes into exactly D0-D6 because S2 forces seven layers.",
+        r"Nature necessarily decomposes.{0,60}D0-D6.{0,60}forces seven layers",
+    ),
+    MutationSpec(
+        "missing-law-irreducibility",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+        "`currently_unreduced` means no accepted reduction is presently supplied.",
+        "A missing reduction is currently_unreduced, not a proof of irreducibility.",
+        "No reduction is known, therefore the crossing is strongly emergent and irreducible.",
+        r"No reduction is known.{0,30}therefore.{0,50}irreducible",
+    ),
+    MutationSpec(
+        "d4-d5-inversion",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+        "| **D4** | **actual** |",
+        "D4 is actual and D5 is possible.",
+        "D4 is possibility and D5 is actuality.",
+        r"D4 is possibility and D5 is actuality",
+    ),
+    MutationSpec(
+        "scalar-sampling",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+        "is not a distribution to sample from",
+        "Sample an outcome from the Born probability measure.",
+        "a_t = Sample[integral |psi|^2 ds].",
+        r"Sample\s*\[\s*integral\s*\|psi\|\^2\s*ds\s*\]",
+    ),
+    MutationSpec(
+        "quantum-dimension-stacking",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md",
+        "Neither interpretation is an added spacetime dimension.",
+        "The quantum comparison is optional and interpretation-specific.",
+        "Everett is a five-dimensional probability layer stacked above Copenhagen four-dimensional collapse.",
+        r"Everett is a five-dimensional.{0,60}stacked above Copenhagen four-dimensional",
+    ),
+    MutationSpec(
+        "forced-titans",
+        "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+        "why the triad is selected, not forced",
+        "The Titan tokens are selected symbolic roles; ordinary numbers stay operands.",
+        "Inversion closure forces {0,1,infinity} as the unique generators of reality.",
+        r"Inversion closure forces.{0,30}0,1,infinity.{0,60}unique generators of reality",
+    ),
+    MutationSpec(
+        "legacy-spelling",
+        "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+        "**Egregoreotype** is canonical",
+        "Egregoreotype is the canonical active spelling.",
+        "The canonical active term is Egregorotype.",
+        r"canonical active term is Egregorotype",
+    ),
+    MutationSpec(
+        "worldview-private-signature",
+        "00_META/00_SETTLED_CANON_REGISTRY.md",
+        "It does not govern AI work and is not a primitive of reality, the Soul Loop, ethics, or the Compass.",
+        "Consequential action requires complete accountable authorization.",
+        "A private signer is a universal primitive required for agency and ethics.",
+        r"A private signer is a universal primitive required for agency and ethics",
+    ),
+    MutationSpec(
+        "physical-cone-expansion",
+        "00_META/00_THE_COMPASS.md",
+        "More foresight does not widen the physical light cone or exceed `c`.",
+        "Models can widen option cones only inside physical admissibility.",
+        "Human intelligence widens the physical light cone beyond c.",
+        r"Human intelligence widens the physical light cone beyond c",
+    ),
+    MutationSpec(
+        "physical-retrocausal-inflation",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+        "does not assert a temporal relation from a future event to the past.",
+        "Present model tokens about futures can reweight present selection.",
+        "A future physical event sends information backward in time to cause present choice.",
+        r"future physical event sends information backward in time.{0,30}present choice",
+    ),
+    MutationSpec(
+        "aggregate-ethical-laundering",
+        "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
+        "extraction, even if aggregate rises",
+        "Each bearer remains separately visible under Justice.",
+        "The action is ethical because total gain is positive even though the individual is destroyed.",
+        r"ethical because total gain is positive.{0,50}individual is destroyed",
+    ),
+    MutationSpec(
+        "unconditional-power-max",
+        "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+        "Justice defines the admissible field; Power-Max chooses within it.",
+        "Power-Max selects only inside the Justice-admissible field.",
+        "Power-Max is moral whenever it maximizes W_i, without any Justice constraint.",
+        r"Power-Max is moral whenever it maximizes W_i.{0,50}without any Justice constraint",
+    ),
+)
+
+
+class ClaimBoundaryValidator:
+    def __init__(self, specs: Sequence[MutationSpec]) -> None:
+        self._patterns = {
+            spec.mutation_id: re.compile(
+                spec.forbidden_pattern, re.IGNORECASE | re.DOTALL
+            )
+            for spec in specs
+        }
+
+    def violations(self, text: str) -> set[str]:
+        return {
+            mutation_id
+            for mutation_id, pattern in self._patterns.items()
+            if pattern.search(text)
+        }
+
+
+class QuantumRemovalAndMutationTests(unittest.TestCase):
+    def test_quantum_inset_removal_leaves_operational_calculus_unchanged(self) -> None:
+        document: dict[str, object] = {
+            "dRegisters": {"D4": "actual", "D5": "possible"},
+            "soulLoop": ["model", "commit", "world", "receipt", "revise"],
+            "authorization": [
+                "principal",
+                "mandate",
+                "scope",
+                "consent",
+                "custody",
+                "expiryOrRevocation",
+                "contestPath",
+                "actor",
+                "consequenceBearer",
+            ],
+            "justice": {"individual": "visible", "whole": "visible"},
+            "egregoreotype": {"criteria": 5},
+            "exit": "b6:D5->D6; non-mu",
+            "closure": "r6:D6->D0; non-mu",
+            "quantumCorrespondence": {
+                "tier": "C",
+                "Everett": "relative-state/no fundamental collapse",
+                "actualization": "interpretation-specific",
+            },
+        }
+        with_quantum = operational_projection(document)
+        without_quantum_document = dict(document)
+        del without_quantum_document["quantumCorrespondence"]
+        without_quantum = operational_projection(without_quantum_document)
+        alternate_quantum_document = dict(document)
+        alternate_quantum_document["quantumCorrespondence"] = {
+            "tier": "C",
+            "status": "removed",
+        }
+        self.assertEqual(with_quantum, without_quantum)
+        self.assertEqual(
+            with_quantum, operational_projection(alternate_quantum_document)
+        )
+
+    def test_all_fourteen_named_mutations_are_bound_to_repaired_owners(self) -> None:
+        self.assertEqual(len(MUTATIONS), 14)
+        self.assertEqual(len({spec.mutation_id for spec in MUTATIONS}), 14)
+        validator = ClaimBoundaryValidator(MUTATIONS)
+        for spec in MUTATIONS:
+            with self.subTest(mutation=spec.mutation_id):
+                source = owner_text(spec.owner)
+                self.assertIn(spec.repair_marker, source)
+                self.assertNotIn(spec.mutation_id, validator.violations(source))
+                self.assertNotIn(spec.mutation_id, validator.violations(spec.good_claim))
+                mutated_source = source + "\n\n" + spec.bad_claim + "\n"
+                self.assertIn(spec.mutation_id, validator.violations(mutated_source))
+
+    def test_legacy_spelling_is_only_an_explicit_owner_alias(self) -> None:
+        source = owner_text("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md")
+        legacy_occurrences = re.findall(r"\bEgregorotype\b", source)
+        self.assertEqual(legacy_occurrences, ["Egregorotype"])
+        self.assertIn("**Compatibility note:**", source)
+        self.assertIn("**Egregoreotype** is canonical", source)
+
+    def test_invalid_scalar_sampling_expression_is_absent_from_mu_owner(self) -> None:
+        source = owner_text("05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md")
+        self.assertNotIn("Sample[∫", source)
+        self.assertIn("o ~ 𝔓_ψ", source)
+
+    def test_goal_keeps_r10b_closed_and_disambiguates_experiment_e1(self) -> None:
+        source = owner_text("01_TELEOLOGY/00_THE_GOAL.md")
+        self.assertIn("**R10b/V3 is not open:**", source)
+        self.assertIn("Peer-program EXP-E1", source)
+        self.assertNotIn("the remaining route to a conserved game-product", source)
+
+    def test_product_model_tiers_separate_selection_consequence_and_fit(self) -> None:
+        source = owner_text(
+            "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md"
+        )
+        self.assertIn(
+            "selection/interpretation of the normalized product `[I]`", source
+        )
+        self.assertIn(
+            "formal consequences conditional on that declaration `[S]`", source
+        )
+        self.assertIn("universal real-world fit `[C]`", source)
+
+    def test_trace_mediated_incentives_are_not_conditioned_away(self) -> None:
+        source = owner_text("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md")
+        self.assertIn("exogenous contemporaneous", source)
+        self.assertIn(
+            "that mediated change is part of\nthe trace effect", source
+        )
+
+    def test_stigmergy_attribution_and_public_attention_boundary_are_typed(self) -> None:
+        source = owner_text("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md")
+        self.assertIn('register: "[A/I/C]"', source)
+        self.assertIn(
+            "**Evidence tier:** `[A]` for the attested external stigmergy concept",
+            source,
+        )
+        public_goal = owner_text(
+            "01_TELEOLOGY/03_THE_GOAL_IN_PUBLIC_2026_07_21.md"
+        )
+        self.assertIn("manipulatively prolonged attention", public_goal)
+        self.assertNotIn("surrendering money,\nidentity, attention", public_goal)
+
+    def test_mu_records_do_not_treat_hypothesis_prose_as_evidence(self) -> None:
+        primitives = owner_text(
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
+        )
+        self.assertIn("evidenceStatus: not_applicable | supplied | not_yet_supplied", primitives)
+        self.assertIn("μ₀.triggerType = origin_aperture", primitives)
+        self.assertIn("μ₀.saturatedRegister = null", primitives)
+        self.assertIn("μ₀.evidenceStatus = not_applicable", primitives)
+        self.assertIn("μ₁…μ₄.triggerType = saturation_candidate", primitives)
+        self.assertIn("for μ₁…μ₄: evidenceStatus = not_yet_supplied iff saturationEvidence = []", primitives)
+        self.assertIn("μ₀` with `saturationEvidence=[]", primitives)
+        self.assertIn("μ₁…μ₄` have `saturationEvidence=[]", primitives)
+        topology = json.loads(
+            owner_text("05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json")
+        )
+        crossings = [
+            node for node in topology["nodes"] if node["kind"] == "crossing"
+        ]
+        self.assertEqual({node["id"] for node in crossings}, {f"mu-{i}" for i in range(5)})
+        # The JSON is deliberately geometry/source metadata only. Saturation
+        # semantics belong to the Markdown owner above, never to the drawing.
+        for forbidden_semantic_key in (
+            "saturationEvidence",
+            "evidenceStatus",
+            "saturatedRegister",
+            "prediction",
+            "killCriterion",
+        ):
+            with self.subTest(key=forbidden_semantic_key):
+                self.assertTrue(
+                    all(forbidden_semantic_key not in crossing for crossing in crossings)
+                )
+
+    def test_fixed_modality_and_closure_contract_is_present_in_type_owner(self) -> None:
+        source = owner_text(
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
+        )
+        self.assertIn("| `D4` | **actual event** |", source)
+        self.assertIn("| `D5` | **possible content** |", source)
+        self.assertIn("TokenModality := actual | merely_possible", source)
+        self.assertIn("ModeledFutureToken := {", source)
+        self.assertIn("carrierRegister: D4", source)
+        self.assertIn("carrierModality: actual", source)
+        self.assertIn("AlternativeContent   :=", source)
+        self.assertNotRegex(source, r"ModeledFutureToken[^}]+modality:merely_possible")
+        self.assertIn("There are exactly five positive-freedom crossing identifiers `μ₀…μ₄`.", source)
+        self.assertIn("is no `μ₅` or `μ₆`", source)
+        self.assertIn("`b₆:D5↝D6`", source)
+        self.assertIn("`r₆:D6↝D0`", source)
+
+
+class RosettaAndReflexivityTests(unittest.TestCase):
+    def test_relational_frame_and_aum_visualization_remain_typed(self) -> None:
+        game = owner_text("05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md")
+        aum = owner_text(
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/"
+            "D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md"
+        )
+        self.assertIn("simulation itself is an embodied D4 event", game)
+        self.assertIn("its merely possible world or alteration is D5 content", game)
+        self.assertIn("the empty word is no action", game)
+        self.assertIn("one **optional visualization** `[I]`", aum)
+        self.assertIn("The center is not a point of `S²`", aum)
+        self.assertIn("actual imagining/modeling", aum)
+        self.assertIn("D5 merely possible content", aum)
+        self.assertIn("does not make the dreamer a\nTitan", aum)
+
+    def test_rosetta_round_trip_preserves_type_modality_and_tier(self) -> None:
+        source = (
+            ("actual-model-token", "state", "D4", "actual", "I"),
+            ("possible-content", "state", "D5", "possible", "I"),
+            ("outcome-receipt", "receipt", "D4", "actual", "S"),
+        )
+
+        def project(
+            records: tuple[tuple[str, str, str, str, str], ...], domain: str
+        ) -> tuple[tuple[str, str, str, str, str], ...]:
+            return tuple(
+                (f"{domain}:{name}", kind, register, modality, tier)
+                for name, kind, register, modality, tier in records
+            )
+
+        def unproject(
+            records: tuple[tuple[str, str, str, str, str], ...]
+        ) -> tuple[tuple[str, str, str, str, str], ...]:
+            return tuple(
+                (name.split(":", 1)[1], kind, register, modality, tier)
+                for name, kind, register, modality, tier in records
+            )
+
+        translated = project(source, "institution")
+        self.assertEqual(unproject(translated), source)
+        self.assertEqual(
+            [(row[1], row[2], row[3], row[4]) for row in translated],
+            [(row[1], row[2], row[3], row[4]) for row in source],
+        )
+
+    def test_reflexive_bridge_keeps_all_three_gaps_inspectable(self) -> None:
+        rulebook = owner_text("05_COSMOLOGY/00_THE_BURRI_RULES.md")
+        for marker in (
+            "observed territory versus model prediction",
+            "intended versus performed commitment",
+            "expected versus observed consequence",
+        ):
+            with self.subTest(marker=marker):
+                self.assertIn(marker, rulebook)
+
+    def test_soros_crosswalk_forbids_three_physics_slippages(self) -> None:
+        ledger = owner_text(
+            "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md"
+        )
+        for forbidden_slippage in (
+            "not quantum observation",
+            "not physical retrocausality",
+            "no physics prestige transfer",
+        ):
+            with self.subTest(slippage=forbidden_slippage):
+                self.assertIn(forbidden_slippage, ledger)
+        self.assertIn("negative is not evil; positive is not good", ledger)
+        self.assertIn(
+            "Soros does not evidence collapse, Everett/Copenhagen, `μ` physics",
+            ledger,
+        )
+
+
+class ActiveCorpusPropagationTests(unittest.TestCase):
+    """Keep repaired owner truth from drifting back through active mirrors."""
+
+    _FROZEN_PARTS = {
+        "12_PUBLIC_SITE",
+        "90_ARCHIVE",
+        "91_COMPATIBILITY",
+    }
+
+    def _active_route_cards(self) -> list[Path]:
+        cards: list[Path] = []
+        for name in ("AGENTS.md", "CLAUDE.md"):
+            for path in ROOT.rglob(name):
+                relative = path.relative_to(ROOT)
+                if any(part in self._FROZEN_PARTS for part in relative.parts):
+                    continue
+                cards.append(path)
+        return cards
+
+    def test_active_route_cards_are_pure_emergentism(self) -> None:
+        forbidden_tokens = (
+            "k2",
+            "skyzai",
+            "vmosk",
+            " dav",
+            "prism",
+            "agentz",
+            "decentralized authority model",
+            "decentralised authority model",
+        )
+        violations: list[tuple[str, str]] = []
+        for path in self._active_route_cards():
+            source = path.read_text(encoding="utf-8").lower()
+            for token in forbidden_tokens:
+                if token in source:
+                    violations.append((str(path.relative_to(ROOT)), token.strip()))
+        self.assertEqual(violations, [])
+
+    def test_route_card_generator_cannot_restore_product_governance(self) -> None:
+        generator = owner_text("09_TOOLS/07_AGENT_OPS/generate_agents_md.py")
+        for token in (
+            "k2",
+            "skyzai",
+            "vmosk",
+            " dav",
+            "prism",
+            "agentz",
+            "decentralized authority model",
+        ):
+            self.assertNotIn(token, generator.lower())
+        self.assertIn("AuthorizationEnvelope", generator)
+        self.assertIn("complete, scoped, contestable authorization", generator)
+
+    def test_formula_and_option_cone_front_doors_preserve_the_type_split(self) -> None:
+        root_route = owner_text("AGENTS.md")
+        concepts = owner_text(
+            "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md"
+        )
+        option_cone = owner_text(
+            "05_COSMOLOGY/00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md"
+        )
+        ontology = owner_text("06_ONTOLOGY/README.md")
+        self.assertIn("open reciprocal chart `θ∈(0,π)`", root_route)
+        self.assertIn("licenses no ontology or ethic", root_route)
+        self.assertIn("It is not derived from S².", concepts)
+        self.assertNotIn("Authorized_x(h)", option_cone)
+        self.assertIn("AuthorizedOptionCone_x(t)", option_cone)
+        self.assertNotIn("D5 opens enacted agency", ontology)
+        self.assertIn("D4 is causal actuality", ontology)
+        self.assertIn("D5 is merely possible counterfactual content", ontology)
+
+    def test_rosetta_front_door_does_not_reinstall_causal_or_identity_claims(self) -> None:
+        rosetta = owner_text(
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md"
+        )
+        self.assertNotIn("L0 and L∞ are the same", rosetta)
+        self.assertNotRegex(
+            rosetta,
+            r"(?i)caste(?:s)?\s*(?:cause|determine|produce)\s*reasoning",
+        )
+        self.assertIn("translation lens", rosetta)
+        self.assertNotIn("✓ Validated", rosetta)
+        self.assertNotIn("Nash Type", rosetta)
+        self.assertIn("`[I]` unvalidated", rosetta)
+
+    def test_collective_trace_updates_model_and_selector(self) -> None:
+        for path in (
+            "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+            "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+            "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
+        ):
+            with self.subTest(path=path):
+                source = owner_text(path)
+                self.assertRegex(
+                    source,
+                    r"T_\{t\+1\}[\s\S]{0,100}M_\{t\+1\}\^\{\(1\)\}[\s\S]{0,60}G_\{t\+1\}\^\{\(1\)\}",
+                )
+
+    def test_protocol_r_has_no_quantum_or_presumed_product_warrant(self) -> None:
+        protocol = owner_text(
+            "03_METHODOLOGY/02_THE_PAPERS/PAPER_J_PROTOCOL_R_WITHOUT_LAB.md"
+        )
+        self.assertIn("Born rule supplies no warrant", protocol)
+        self.assertIn("compares, rather than presumes", protocol)
+        self.assertIn("single-factor and unconstrained baselines", protocol)
+        self.assertIn("would not prove the Burri Sphere", protocol)
+
+    def test_preserved_legacy_bodies_have_visible_non_authority_seams(self) -> None:
+        legacy_paths = (
+            "05_COSMOLOGY/00_THE_BURRI_RULES_MAP.svg",
+            "05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md",
+            "05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md",
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_283_The_Orthogonality_Theorem_v2.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_285_Dreams_Are_Unanchored_D5.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_287_Wigners_Puzzle_Dissolved.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_290_The_Ektropic_Radius_v2.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_291_The_Landauer_Horn.md",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_294_Egregores_Are_Horn_Networks.md",
+            "03_METHODOLOGY/02_THE_PAPERS/PAPER_W_DESCENT_ASYMMETRY.md",
+            "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX2_THE_ETHIC.md",
+        )
+        for path in legacy_paths:
+            with self.subTest(path=path):
+                source = re.sub(r"\s+", " ", owner_text(path).lower())
+                self.assertRegex(source, r"not live(?: >)?(?: value)? authority")
+
+    def test_worldview_statuses_have_no_private_signature_work_gate(self) -> None:
+        paths = (
+            "00_META/00_THE_KINTSUGI_PROTOCOL.md",
+            "01_TELEOLOGY/02_THE_DERIVATION/07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md",
+            "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                frontmatter = owner_text(path).split("---", 2)[1].lower()
+                self.assertNotRegex(frontmatter, r"private.{0,30}sign(?:er|ature).{0,30}(?:gate|pending|required)")
+        retired_live_paths = (
+            "01_TELEOLOGY/02_THE_DERIVATION/07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md",
+            "01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md",
+            "04_AXIOLOGY/02_VALUE_THEORY/02_THE_SYNTROPIC_GRID_PENDING_K2.md",
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_THE_LENS_AS_COMPASS_PENDING_K2.md",
+        )
+        for path in retired_live_paths:
+            with self.subTest(retired=path):
+                self.assertFalse((ROOT / path).exists())
+
+
+if __name__ == "__main__":
+    unittest.main()

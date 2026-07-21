@@ -1,299 +1,218 @@
 #!/usr/bin/env python3
-"""
-Probe the live Emergentism domain against the generated public reading manifest.
-
-This is a post-deploy/cutover audit, not the local predeploy gate. By default it
-prints an evidence summary and exits 0 so it can be used while the domain is
-still known to be pointed at an older host. Use --strict after cutover to fail
-when expected corpus routes, core front doors, or repository root markers are
-missing.
-"""
+"""Verify a deployed URL byte-for-byte against the pure release artifact."""
 
 from __future__ import annotations
 
 import argparse
-import concurrent.futures
+import hashlib
 import json
 import re
-import sys
-from collections import Counter
-from dataclasses import asdict, dataclass
+import ssl
 from pathlib import Path
-from typing import Any
-from urllib.error import HTTPError
-from urllib.parse import urljoin
+from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
 
 
-SITE_ROOT = Path(__file__).resolve().parent
-DEFAULT_BASE_URL = "https://www.emergentism.org/"
-CORE_PATHS = [
-    "",
-    "read/",
-    "robots.txt",
-    "sitemap.xml",
-    "reading-manifest.json",
-    "operators/",
-    "will/",
-    "value/",
-    "ground/",
-    "sacred/",
-    "papers/",
-    "canon/",
-    "foundations/",
-    "trinity/",
-    "formal/",
-    "paradox/",
-    "memetic/",
-    "rosettad/",
-    "0/",
-    "1/",
-    "2/",
-    "3/",
-    "4/",
-    "5/",
-    "6/",
-    "five-plus-one/",
-    "dasein/",
-    "complete-ontology/",
-]
+ROOT = Path(__file__).resolve().parent
+MANIFEST = ROOT / "release-manifest.json"
+FORBIDDEN = re.compile(
+    r"(?i)(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A)?|K2|PRISM|DAV|DAC|Agentz|Menexus|Aureus|OFN|APU\.BOT|Circle\.news)(?![A-Za-z0-9])"
+)
+TEXT_TYPES = ("text/", "application/json", "application/javascript", "application/manifest+json", "application/xml")
+RETIRED_ALWAYS = {
+    "/book/", "/read/", "/papers/", "/canon/", "/amrita/", "/book-pwa/",
+    "/90_ARCHIVE/pure_emergentism_boundary_2026_07_20/",
+}
 
 
-@dataclass(frozen=True)
-class ProbeResult:
-    path: str
-    status: int | str
-    final_url: str
-    title: str
-    bytes_read: int
-    repo_read_framework: bool
-    repo_d0_ground: bool
-    repo_generated_manifest: bool
-    old_vmgsta_markers: bool
-    google_sites_markers: bool
-    error: str = ""
-
-
-def load_manifest() -> dict[str, Any]:
-    manifest_path = SITE_ROOT / "reading-manifest.json"
-    with manifest_path.open(encoding="utf-8") as handle:
-        return json.load(handle)
-
-
-def title_from_html(text: str) -> str:
-    match = re.search(r"<title[^>]*>(.*?)</title>", text, flags=re.I | re.S)
-    if not match:
-        return ""
-    return re.sub(r"\s+", " ", match.group(1)).strip()[:120]
-
-
-def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
-    url = urljoin(base_url, path)
-    request = Request(
+def request(base: str, path: str, timeout: float) -> tuple[int, dict[str, str], bytes, str]:
+    url = urljoin(base.rstrip("/") + "/", path.lstrip("/"))
+    req = Request(
         url,
-        headers={"User-Agent": "Codex Emergentism live corpus audit"},
+        headers={
+            "User-Agent": "Emergentism-release-audit/2.0",
+            "Accept-Encoding": "identity",
+        },
     )
     try:
-        with urlopen(request, timeout=timeout) as response:
-            body = response.read(220_000)
-            text = body.decode(
-                response.headers.get_content_charset() or "utf-8",
-                errors="replace",
+        with urlopen(req, timeout=timeout, context=ssl.create_default_context()) as response:
+            return (
+                response.status,
+                {k.lower(): v for k, v in response.headers.items()},
+                response.read(),
+                response.geturl(),
             )
-            return build_result(path, response.status, response.geturl(), text, len(body))
     except HTTPError as exc:
-        try:
-            body = exc.read(60_000)
-            text = body.decode("utf-8", errors="replace")
-            return build_result(path, exc.code, exc.geturl(), text, len(body))
-        except Exception as read_exc:  # pragma: no cover - network dependent
-            return ProbeResult(
-                path=path,
-                status=exc.code,
-                final_url=exc.geturl(),
-                title="",
-                bytes_read=0,
-                repo_read_framework=False,
-                repo_d0_ground=False,
-                repo_generated_manifest=False,
-                old_vmgsta_markers=False,
-                google_sites_markers=False,
-                error=f"HTTPError body read failed: {type(read_exc).__name__}: {read_exc}",
-            )
-    except Exception as exc:  # pragma: no cover - network dependent
-        return ProbeResult(
-            path=path,
-            status="ERR",
-            final_url=url,
-            title="",
-            bytes_read=0,
-            repo_read_framework=False,
-            repo_d0_ground=False,
-            repo_generated_manifest=False,
-            old_vmgsta_markers=False,
-            google_sites_markers=False,
-            error=f"{type(exc).__name__}: {exc}",
-        )
+        return exc.code, {k.lower(): v for k, v in exc.headers.items()}, exc.read(), exc.geturl()
 
 
-def build_result(path: str, status: int, final_url: str, text: str, size: int) -> ProbeResult:
-    return ProbeResult(
-        path=path,
-        status=status,
-        final_url=final_url,
-        title=title_from_html(text),
-        bytes_read=size,
-        repo_read_framework="Read the Framework" in text,
-        repo_d0_ground="D0 Ground of Finity" in text,
-        repo_generated_manifest=(
-            "Generated by 12_PUBLIC_SITE" in text or "reading-manifest.json" in text
-        ),
-        old_vmgsta_markers=all(
-            marker in text for marker in ["Vision", "Mission", "Strategy", "Tactics", "Action"]
-        ),
-        google_sites_markers=("Google Sites" in text or "sites.google.com" in text),
-    )
+def artifact_hash(release: Path) -> str:
+    digest = hashlib.sha256()
+    for path in sorted(p for p in release.rglob("*") if p.is_file() and p.name != "RELEASE_SHA256"):
+        rel = path.relative_to(release).as_posix()
+        digest.update(rel.encode("utf-8") + b"\0")
+        digest.update(path.read_bytes())
+        digest.update(b"\0")
+    return digest.hexdigest()
 
 
-def unique_paths(paths: list[str]) -> list[str]:
-    seen: set[str] = set()
-    result: list[str] = []
-    for path in paths:
-        if path not in seen:
-            result.append(path)
-            seen.add(path)
-    return result
+def expected_url_map(data: dict) -> dict[str, str]:
+    mapping = {row["path"]: row["file"] for row in data["routes"]}
+    for rel in data["rootFiles"] + data["assetFiles"] + ["RELEASE_SHA256"]:
+        # Vercel is configured with trailingSlash=true. Extensionless root
+        # artifacts therefore have a slash-canonical public URL.
+        path = "/" + rel + ("/" if "." not in Path(rel).name else "")
+        prior = mapping.setdefault(path, rel)
+        if prior != rel:
+            raise ValueError(f"URL collision {path}: {prior} versus {rel}")
+    return mapping
 
 
-def run_audit(base_url: str, timeout: float, workers: int) -> dict[str, Any]:
-    manifest = load_manifest()
-    manifest_paths = [doc["href"].lstrip("/") for doc in manifest["documents"]]
-    paths = unique_paths(CORE_PATHS + manifest_paths)
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-        results = list(executor.map(lambda path: probe(base_url, path, timeout), paths))
-
-    manifest_set = set(manifest_paths)
-    core_set = set(CORE_PATHS)
-    manifest_results = [result for result in results if result.path in manifest_set]
-    core_results = [result for result in results if result.path in core_set]
-
+def allowed_mimes(rel: str) -> tuple[str, ...]:
+    suffix = Path(rel).suffix.lower()
     return {
-        "base_url": base_url,
-        "generated_by": manifest.get("generated_by"),
-        "source_snapshot": manifest.get("source_snapshot"),
-        "manifest_documents": len(manifest_paths),
-        "total_probes": len(results),
-        "status_counts": dict(Counter(str(result.status) for result in results)),
-        "manifest_status_counts": dict(
-            Counter(str(result.status) for result in manifest_results)
-        ),
-        "core_results": [asdict(result) for result in core_results],
-        "sample_manifest_failures": [
-            asdict(result) for result in manifest_results if result.status != 200
-        ][:20],
+        ".html": ("text/html",),
+        ".css": ("text/css",),
+        ".js": ("application/javascript", "text/javascript"),
+        ".mjs": ("application/javascript", "text/javascript"),
+        ".json": ("application/json", "text/plain"),
+        ".webmanifest": ("application/manifest+json", "application/json"),
+        ".xml": ("application/xml", "text/xml"),
+        ".txt": ("text/plain",),
+        ".png": ("image/png",),
+        ".woff2": ("font/woff2", "application/font-woff2", "application/octet-stream"),
+        "": ("text/plain", "application/octet-stream"),
+    }.get(suffix, ("application/octet-stream",))
+
+
+def retired_paths(data: dict) -> list[str]:
+    """Derive retired top-level route families while never probing active roots."""
+    paths = set(RETIRED_ALWAYS)
+    active_heads = {
+        row["path"].strip("/").split("/", 1)[0]
+        for row in data["routes"]
+        if row["path"].strip("/")
     }
-
-
-def print_summary(report: dict[str, Any]) -> None:
-    print("Emergentism live-domain corpus audit")
-    print(f"base_url: {report['base_url']}")
-    print(f"manifest_documents: {report['manifest_documents']}")
-    print(f"total_probes: {report['total_probes']}")
-    print(f"status_counts: {report['status_counts']}")
-    print(f"manifest_status_counts: {report['manifest_status_counts']}")
-    print()
-    print("Core routes:")
-    for result in report["core_results"]:
-        path = result["path"] or "/"
-        marker_bits = []
-        if result["repo_read_framework"]:
-            marker_bits.append("repo:Read")
-        if result["repo_d0_ground"]:
-            marker_bits.append("repo:D0")
-        if result["old_vmgsta_markers"]:
-            marker_bits.append("old:VMGSTA")
-        if result["google_sites_markers"]:
-            marker_bits.append("google-sites")
-        markers = ",".join(marker_bits) or "-"
-        print(f"- {path}: {result['status']} final={result['final_url']} markers={markers}")
-
-
-def strict_failures(report: dict[str, Any]) -> list[str]:
-    failures: list[str] = []
-
-    manifest_status = report["manifest_status_counts"]
-    all_manifest_live = manifest_status == {"200": report["manifest_documents"]}
-    if not all_manifest_live:
-        failures.append(
-            "generated manifest documents are not all 200 "
-            f"(manifest_status_counts={manifest_status})"
-        )
-
-    bad_core = [
-        result for result in report["core_results"] if result["status"] != 200
-    ]
-    if bad_core:
-        sample = ", ".join(
-            f"{result['path'] or '/'}={result['status']}" for result in bad_core[:12]
-        )
-        suffix = "" if len(bad_core) <= 12 else f", +{len(bad_core) - 12} more"
-        failures.append(f"core/front-door routes are not all 200 ({sample}{suffix})")
-
-    root = next(
-        (result for result in report["core_results"] if result["path"] == ""),
-        None,
+    archive = ROOT / "90_ARCHIVE" / "pure_emergentism_boundary_2026_07_20"
+    if archive.is_dir():
+        for child in archive.iterdir():
+            if child.name in active_heads or child.name in {"90_ARCHIVE", "_archive"}:
+                continue
+            paths.add("/" + child.name + ("/" if child.is_dir() else ""))
+    return sorted(
+        path
+        for path in paths
+        if path.strip("/").split("/", 1)[0] not in active_heads
     )
-    if root is None:
-        failures.append("root route was not probed")
-        return failures
-
-    if not root["repo_read_framework"]:
-        failures.append("root route is missing repository marker: Read the Framework")
-    if not root["repo_d0_ground"]:
-        failures.append("root route is missing repository marker: D0 Ground of Finity")
-    if root["old_vmgsta_markers"]:
-        failures.append("root route still contains old VMGSTA link-hub markers")
-    if root["google_sites_markers"]:
-        failures.append("root route still contains Google Sites markers")
-
-    return failures
 
 
-def parse_args(argv: list[str]) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--base-url", default=DEFAULT_BASE_URL)
-    parser.add_argument("--timeout", type=float, default=12.0)
-    parser.add_argument("--workers", type=int, default=20)
-    parser.add_argument("--json", action="store_true", help="print full JSON report")
-    parser.add_argument(
-        "--strict",
-        action="store_true",
-        help=(
-            "exit non-zero unless generated documents, core routes, and root "
-            "repository markers prove cutover"
-        ),
-    )
-    return parser.parse_args(argv)
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--base-url", required=True)
+    parser.add_argument("--release", default=".release")
+    parser.add_argument("--strict", action="store_true")
+    parser.add_argument("--timeout", type=float, default=20.0)
+    args = parser.parse_args()
 
+    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    release = (ROOT / args.release).resolve()
+    errors: list[str] = []
+    checked = 0
+    if not release.is_dir():
+        print(f"FAIL: local release missing: {release}")
+        return 1
+    recorded = (release / "RELEASE_SHA256").read_text(encoding="ascii").strip()
+    actual = artifact_hash(release)
+    if recorded != actual:
+        errors.append(f"local release hash mismatch: recorded={recorded} actual={actual}")
+    local_manifest = json.loads((release / "release-manifest.json").read_text(encoding="utf-8"))
+    if local_manifest != data:
+        errors.append("local release manifest differs from source manifest")
 
-def main(argv: list[str]) -> int:
-    args = parse_args(argv)
-    report = run_audit(args.base_url, args.timeout, args.workers)
-    if args.json:
-        print(json.dumps(report, indent=2, sort_keys=True))
+    try:
+        mapping = expected_url_map(data)
+    except ValueError as exc:
+        print(f"FAIL: {exc}")
+        return 1
+
+    body_hashes: dict[str, list[str]] = {}
+    for path, rel in sorted(mapping.items()):
+        expected_file = release / rel
+        if not expected_file.is_file():
+            errors.append(f"local expected file missing: {rel}")
+            continue
+        try:
+            status, headers, body, final_url = request(args.base_url, path, args.timeout)
+        except URLError as exc:
+            errors.append(f"request failed {path}: {exc}")
+            continue
+        checked += 1
+        if status != 200:
+            errors.append(f"expected 200, got {status}: {path}")
+            continue
+        final_path = urlsplit(final_url).path
+        if final_path != path:
+            errors.append(f"unexpected redirect: {path} -> {final_path}")
+        content_type = headers.get("content-type", "").split(";", 1)[0].strip().lower()
+        if content_type not in allowed_mimes(rel):
+            errors.append(f"wrong MIME {content_type or 'missing'} for {path} ({rel})")
+        expected_body = expected_file.read_bytes()
+        if body != expected_body:
+            errors.append(
+                f"artifact byte mismatch: {path} expected={hashlib.sha256(expected_body).hexdigest()} "
+                f"actual={hashlib.sha256(body).hexdigest()}"
+            )
+        digest = hashlib.sha256(body).hexdigest()
+        body_hashes.setdefault(digest, []).append(path)
+        if content_type.startswith(TEXT_TYPES):
+            text = body.decode("utf-8", errors="replace")
+            if FORBIDDEN.search(text):
+                errors.append(f"external-system leakage: {path}")
+
+    # This catches a server that maps many declared routes to one clean body,
+    # even if a future caller accidentally weakens the byte comparison above.
+    for digest, paths in sorted(body_hashes.items()):
+        if len(paths) > 1:
+            expected_digests = {
+                hashlib.sha256((release / mapping[path]).read_bytes()).hexdigest()
+                for path in paths
+            }
+            if len(expected_digests) > 1:
+                errors.append(f"distinct routes collapsed to one body {digest}: {paths}")
+
+    try:
+        root_status, root_headers, _, _ = request(args.base_url, "/", args.timeout)
+    except URLError as exc:
+        errors.append(f"root security-header probe failed: {exc}")
     else:
-        print_summary(report)
+        if root_status == 200:
+            for header in ("content-security-policy", "x-frame-options", "x-content-type-options"):
+                if header not in root_headers:
+                    errors.append(f"root response lacks security header: {header}")
 
     if args.strict:
-        failures = strict_failures(report)
-        if failures:
-            print("\nStrict audit failures:", file=sys.stderr)
-            for failure in failures:
-                print(f"- {failure}", file=sys.stderr)
-            return 2
+        for path in retired_paths(data):
+            try:
+                status, _, _, final_url = request(args.base_url, path, args.timeout)
+            except URLError as exc:
+                errors.append(f"retired-path probe failed {path}: {exc}")
+                continue
+            checked += 1
+            if status not in {404, 410}:
+                errors.append(f"retired path remains public ({status}): {path} -> {final_url}")
+
+    if errors:
+        print(f"FAIL: live audit checks={checked} findings={len(errors)}")
+        for error in errors:
+            print(f" - {error}")
+        return 1
+    print(
+        f"PASS: byte-identical live release checks={checked} routes={len(data['routes'])} "
+        f"sha256={actual} strict={args.strict}"
+    )
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main(sys.argv[1:]))
+    raise SystemExit(main())

@@ -1,96 +1,51 @@
 ---
-rosetta:
-  primary_level: L4
-  primary_column: Agent-Ops Front Door
-  secondary:
-    - level: L3
-      column: Validator Receipts
-      role: "separate current audit outputs from stale generated inventories"
-    - level: L5
-      column: Agent-Tool Architecture
-      role: "map scaffold, compaction, skill, loader, and router utilities"
-    - level: L6
-      column: Authority Boundary
-      role: "keep generated agent surfaces downstream from owner-lane canon"
-  operator: "Arjuna ⚔"
-  tier: "God"
-  regime: "Kṣatriya"
-  register: "[B/D/I]"
-  canonical_phrase: "07_AGENT_OPS"
 title: "07_AGENT_OPS"
-status: "ACTIVE — agent-operation front door"
-evidence_tier: "[B] for current validator/generator receipts; [D] for scaffolds and dry-run plans; [I] for route-control synthesis."
+status: "ACTIVE — pure Emergentism route-card maintenance"
+evidence_tier: "[B] current generator behavior; [S] routing boundary"
 ---
 
-# 07_AGENT_OPS
+# Agent operations
 
-Agent-operation utilities for scaffolding, validation, compaction, and batch
-maintenance across AI-facing repo surfaces.
+This lane contains the deterministic route-card generator for the Emergentism
+repository. It maintains navigation and epistemic boundaries; it does not
+create doctrine or import instructions from any product, venture, company, or
+external governance system.
 
-## What Belongs Here
+## Active utility
 
-- agent-surface validators
-- batch utilities that add or repair CLAUDE/working-backwards surfaces
-- helper scripts for agent skill compilation or Rosetta-oriented loading
-- repo-wide `AGENTS.md` generation helpers when the output remains tied to
-  source-owner routing
+`generate_agents_md.py` renders every active `AGENTS.md` and `CLAUDE.md` route
+card from one pure-worldview template. Historical archives, compatibility
+material, session packets, and the public projection are excluded.
 
-## Current Focus
-
-The scripts in this folder currently support:
-
-- depth-aware `AGENTS.md` scaffold generation
-- execution-surface validation
-- batch PWA/tools surface creation
-- agent skill compilation
-- compaction and Rosetta loading helpers
-- syntropic router scaffolding for lane locks, transitions, and Soma-event logs
-
-## Current Inventory
-
-| Surface | Tier | Role |
-|---|---|---|
-| `execution_surface_validator.py` | [B/D] | Validates agent-facing execution surfaces when run; stale output must not be promoted without a fresh receipt. |
-| `AGENT_GAPS.json` | [B] | Generated gap inventory for its producing run; current corpus truth requires rerun or Rosetta index evidence. |
-| `generate_agents_md.py` | [D/B] | Dry-run/write generator for route cards; dry-run output is a plan, written files require owner-lane review. |
-| `batch_add_pwa_wiki_surfaces.py`, `batch_add_tools_surfaces.py` | [D] | Batch scaffold helpers; output remains draft until path-scoped review. |
-| `compile_agent_skills.py`, `agent_framework_integration.py` | [D/I] | Skill/framework support utilities; runtime claims need explicit execution receipts. |
-| `auto_compaction.py`, `rosetta_loader.py` | [D/I] | Loading and compaction helpers; preserve source-owner routing and tier boundaries. |
-| `syntropic_router.py` | [D/I] | Router scaffold for session records, lane locks, and Soma-event logs; local runtime state is not doctrine. |
-
-## Authority Rule
-
-These scripts maintain agent-facing surfaces, but they do not become doctrine.
-If generated or batch-written output conflicts with upstream source truth, fix
-the owning source lane first and rerun the utility.
-
-## AGENTS.md Generator
-
-`generate_agents_md.py` is dry-run first:
+Check without changing files:
 
 ```bash
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 2
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 2 --write
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 4 --only-prefix 02_SKYZAI/01_NOOSPHERE/02_INFRASTRUCTURE/Cascade
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 4 --only-prefix 02_SKYZAI/01_NOOSPHERE/02_INFRASTRUCTURE/Cascade --write --refresh-generated
+python3 -B 09_TOOLS/07_AGENT_OPS/generate_agents_md.py --repo . --check
 ```
 
-Use the dry run as the subfolder navigation inventory. Use `--write` only after
-reviewing the planned files and confirming they are owner-lane route surfaces,
-not generated output, vendor trees, or cold archives. Use `--refresh-generated`
-only to repair files that this utility previously generated; hand-authored
-`AGENTS.md` files are skipped.
+Regenerate after an intentional instruction change:
 
-## Route Upstream
+```bash
+python3 -B 09_TOOLS/07_AGENT_OPS/generate_agents_md.py --repo . --write
+```
 
-- tool inventory: `../README.md` and `../CLAUDE.md`
-- agent grammar: `../../11_UPLINK/00_CORE/06_AGENTS.md`
-- agent runtime resolutions: `../../11_UPLINK/00_CORE/06c_AGENTS_RESOLUTIONS_v3.md`
-- organism routing: `../../../02_SKYZAI/01_NOOSPHERE/AGENTS.md`
+The generator ignores tracked paths that have been relocated from the working
+tree so an archive move cannot accidentally recreate an obsolete instruction
+surface.
 
-## Router Surface
+## Authority boundary
 
-- `syntropic_router.py` is the first tracked router scaffold.
-- It owns session records, lane locks, and Soma-event logging at runtime.
-- Lane home registries live with their owning organ/entity in `LANES.md`.
-- Runtime state is local, not doctrine; if state conflicts with canon, fix the canon lane first.
+- Ordinary repository and AI work follows the user's scoped request, tool and
+  repository permissions, provenance, reversibility, and tests.
+- A private person's financial or contractual signature convention is not a
+  work gate and is not part of Emergentist doctrine.
+- Consequential actions are described through a complete, scoped, contestable
+  `AuthorizationEnvelope`.
+- Generated cards remain downstream from the Kernel Index, Settled Canon
+  Registry, and source-owning documents.
+
+## Read upstream
+
+- [Emergentism route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)

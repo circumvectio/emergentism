@@ -7,12 +7,11 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "THE TRIADIC CASCADE"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # THE TRIADIC CASCADE
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 3 (Triadic N=3) applies: N=3 is **selected, not uniquely forced/proved**. The "Why Three and Not More" section's claim that MF-511 *proves N=3 is the unique stable configuration* (the N≥5 discharge used a false group lemma — Z₅ is a counterexample) is downgraded proved→posited; read triadic selection as `[C]/[S]`-selected, not a derived uniqueness theorem. The cascade's three-fold mapping remains the framework's discovery voice at `[S]/[I]`. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+> **[K3 reconciliation — 2026-07-13, per receipt 126.]** Ruling 3 (Triadic N=3) applies: N=3 is **selected, not uniquely forced/proved**. The "Why Three and Not More" section's claim that MF-511 *proves N=3 is the unique stable configuration* (the N≥5 discharge used a false group lemma — Z₅ is a counterexample) is downgraded proved→posited; read triadic selection as `[C]/[S]`-selected, not a derived uniqueness theorem. The cascade's three-fold mapping remains the framework's discovery voice at `[S]/[I]`. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 
 ## The Trinity Repeating Across Every Level of Knowledge
 
@@ -242,7 +241,10 @@ Zero-Sum Resolution Equation
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

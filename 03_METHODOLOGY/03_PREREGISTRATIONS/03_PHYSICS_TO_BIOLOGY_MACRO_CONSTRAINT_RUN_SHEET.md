@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "Physics-to-Biology Macro-Constraint Run Sheet"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # Physics-to-Biology Macro-Constraint Run Sheet
 

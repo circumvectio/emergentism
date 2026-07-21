@@ -68,7 +68,7 @@ Treat everything here as:
 
 ## Insight 1: AI Is The Fifth Finger — And The Bridge Into The Biological Substrate
 
-### Core claim
+### Former core claim — withdrawn as a derivation
 
 AI is not merely part of the algorithmic substrate.
 It is the bridge between the algorithmic and biological substrates, and therefore a more dangerous Interface than the earlier corpus may have fully stated.
@@ -410,7 +410,10 @@ This file is instead:
 
 ### Core claim
 
-The ektropic force (ΣΔP_node > 0) is not merely a structural property of coupled multiplicative systems. It is the will of *Dyēus Pḥtḗr* — the Proto-Indo-European "Bright Sky Father" — the same observation every PIE daughter-tradition independently personified. (Correction per Doc 30: Dyēus names the *perception* of the ordering — the shining. The ordering force itself is ***h₂r̥tó-*** — Ṛta/Asha/Ordo — "to fit together.")
+The former note identified an aggregate model direction with the will of
+*Dyēus Pḥtḗr*. That was poetic interpretation, not mathematics, etymological
+proof, or evidence of a physical force. Cross-tradition recurrence may motivate
+comparison `[I]`; it cannot corroborate the ontology.
 
 ### The etymological chain
 
@@ -420,19 +423,21 @@ All of them. Same root. Same observation. Different personifications across mill
 
 ### The critical fork
 
-This forces a choice the corpus has not yet made:
+This frames an interpretive choice the corpus does not settle:
 - **Physicalist:** Ektropy is structural, "will" is metaphor, systemic awareness is emergent.
 - **Idealist:** Ektropy is volitional, systemic awareness is foundational, the PIE traditions were correct.
 
-### Recommendation
+### Current boundary
 
-Own idealism, but derive it through the mathematics. The framework's unique move is not "systemic awareness is fundamental" (every idealist says that). It's: "systemic awareness is fundamental AND this can be shown through the mathematics of coupled multiplicative systems, not just asserted through direct perception."
-
-Three paths to the same conclusion: sitting practice (Pratyakṣa confirms it), mathematics (ΣΔP_node > 0, the cooperation threshold derives it — note: R* ≈ 1.5 has been **falsified**, actual η_c ≈ 0.58 [C]; see `../../../90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md`), comparative mythology (Dyēus Pḥtḗr across all PIE traditions corroborates it historically). Not proof. Convergence.
+First-person practice may inform personal interpretation; conjunctive
+mathematics describes a selected model; comparative mythology documents family
+resemblances. The three do not converge into proof of idealism, a cosmic will,
+or one shared ancient disclosure.
 
 ### Status
 
-**Preserve as high-value applied insight.** This is witness-tier (God: Viśvarūpa ☀️). Needs manuscript integration and explicit fork resolution before promotion to stable canon.
+**Preserve as a corrected historical insight.** It is not a promotion candidate
+without independent evidence and a discriminator unavailable to its rivals.
 
 **Filed at:** `../../03_EVIDENCE/ROSETTA_STONE/D-SERIES/INSIGHT_EKTROPY_AS_WILL_OF_DYEUS.md`
 

@@ -16,9 +16,9 @@ rosetta:
 
 ## Contents (what actually remains)
 
-- [`07_DEFINITIVE_ONE_BOOK_MOVED.md`](07_DEFINITIVE_ONE_BOOK_MOVED.md) — **K3 tombstone.** The book moved to `03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`. Keep; do not re-add the book here.
+- [`07_DEFINITIVE_ONE_BOOK_MOVED.md`](07_DEFINITIVE_ONE_BOOK_MOVED.md) — historical move tombstone. The book left this doctrine lane for an external application corpus. Keep the provenance note; do not re-add the book here.
 - [`00_WEBSITE_NARRATIVE_SPEC_2026_05_30.md`](../../90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_WEBSITE_NARRATIVE_SPEC_2026_05_30.md) — **superseded (K3).** The canonical website narrative now lives at [`../../12_PUBLIC_SITE/WEBSITE_NARRATIVE.md`](../../12_PUBLIC_SITE/WEBSITE_NARRATIVE.md); this brainstorm spec is kept for provenance only.
-- [`00_ECOSYSTEM_ARCHITECTURE_ROOT_NOTE_2026_05_25.md`](../../90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/00_ECOSYSTEM_ARCHITECTURE_ROOT_NOTE_2026_05_25.md) — `[I/C]` synthesis note on the Tokencen / Aureus entity-separation model; not source authority for those entities.
+- The archive also preserves application-specific ecosystem-architecture notes. They are provenance, not Emergentist source authority.
 
 ## Must Not Own
 
@@ -37,7 +37,7 @@ rosetta:
 ## Open Routing Decisions
 
 - **Dissolved (done, 2026-05-31).** The book moved, the website spec was superseded, and the two synthesis notes were archived to `../../90_ARCHIVE/00_K3_SWEEP_2026_05_31/`. The lane now holds only the move tombstone.
-- Any resurrection of moved book canon must point back to the AIA instance and the source-owner framework files, preserving K3 provenance.
+- Any resurrection of moved book canon must return through the active Emergentism source owners and preserve the historical move provenance.
 
 `Zero-Sum Resolution Equation`
 
@@ -45,7 +45,10 @@ rosetta:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not promote archive material silently.** Move only with source ownership and K3 lineage.
 2. **Keep PWA/RAG claims bounded.** Blueprint status is not deployed-product status.

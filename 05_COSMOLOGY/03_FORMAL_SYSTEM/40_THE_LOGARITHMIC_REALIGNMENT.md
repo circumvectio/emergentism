@@ -179,25 +179,32 @@ On the logarithmic line, all of these become elementary:
 - Hamiltonian: `H = 2 cosh(s)` (hyperbolic cosine)
 - Balance: `B = sech(s)` (hyperbolic secant)
 
-The log chart does not change the content. It reveals that the content is **hyperbolic** — the natural geometry of the manifold in additive coordinates is hyperbolic, not trigonometric.
+The log coordinate does not change the identities. Hyperbolic functions give a
+convenient expression for them; this does **not** make the sphere's intrinsic
+geometry hyperbolic.
 
 ### 4.3 The Equator Is the Origin
 
-In log coordinates, the equator (`φ = ν = 1, B = 1`) is `s = 0` — the origin of the additive line. Every direction is measured from it. Every distance is `|s|`. The balance-register audit "move toward B = 1" becomes "move toward s = 0" — minimize your log-distance from finity. The current A2 ethic adds the contact-register condition: the finite node and its sustaining boundary must rise together under `η = 0`.
+In log coordinates, the equator (`φ=ν=1`, `B=1`) is `s=0`, the origin of the
+selected additive coordinate. `|s|` measures coordinate displacement from that
+point. Any instruction to minimize it is an added model objective, not an
+analytic command. The current value theory is separately declared and requires
+bearer-complete Justice; joint rise and `η=0` are not sufficient by themselves.
 
 ### 4.4 The Two Poles Are Symmetric
 
-On the additive line, 0 is the center and ∞ is unreachable. On the log line, 0 (`s = −∞`) and ∞ (`s = +∞`) are symmetric — equidistant from the center in opposite directions. This is the structural reason why the Titan emblem works: the two poles are not "zero and infinity" in an asymmetric sense; they are `−∞` and `+∞` on a line centered at finity.
+For `x∈ℝ₊`, the limits `x→0⁺` and `x→∞` correspond to `s→−∞` and
+`s→+∞`. This symmetry motivates the Titan emblem `[I]`; it does not make
+`0×∞=1` arithmetic or force the Titan interpretation.
 
-### 4.5 The Old Model Is the Zero-Curvature Limit
+### 4.5 Coordinate change, not curvature limit
 
-The standard number line (0-centered, additive) is not wrong — it is the correct model for the operation of addition. But it is the **zero-curvature limit** of the richer structure. In the same way that a flat map is a projection of the curved Earth, the 0-centered line is a projection of the log-centered structure:
-
-```
-Standard line (0-centered, flat) = zero-curvature limit of log line (1-centered, curved)
-```
-
-The projection works locally (addition is fine near 0) but fails at the boundary (division by zero, 0 × ∞ indeterminate). The log line works everywhere because it centers on the point that is equidistant from both boundaries.
+The ordinary real line and the logarithmic coordinate serve different domains
+and operations. `s=log x` is a bijection from `ℝ₊` to `ℝ`; it is not a
+zero-curvature limit, and it does not extend through `x=0`. Division by zero
+and `0×∞` remain undefined or indeterminate in their ordinary contexts. The
+log coordinate makes reciprocal symmetry additive; it does not repair every
+boundary operation or establish a richer physical geometry.
 
 ---
 
@@ -208,7 +215,7 @@ The three-chart structure was independently derived by Minoru Suda (2025) in *Fr
 See:
 - [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) §2a — the formal bridge
 - [`00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md) — convergent-source reference
-- [`00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) — full value extraction
+- [`00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) — full value extraction
 - [`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](../../01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) — the earlier exploratory derivation note
 
 ---

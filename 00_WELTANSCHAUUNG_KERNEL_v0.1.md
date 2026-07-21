@@ -1,6 +1,7 @@
 ---
-canonical_target: 06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.1.md
-status: "FORWARDING STUB — 2026-07-19 root tidy (receipts 137/138). K3: content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
+canonical_target: 06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
+historical_custody: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.1.md
+status: "FORWARDING STUB — v0.1 archived; v0.2 is the active pure-Emergentism kernel"
 ---
 
-Compatibility stub. The canonical home of this document moved to [06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.1.md](06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.1.md).
+Compatibility stub. Read the active [Weltanschauung Kernel v0.2](06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md). The v0.1 bytes remain in [dated archive custody](90_ARCHIVE/pure_emergentism_boundary_2026_07_20/06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.1.md).

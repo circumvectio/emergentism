@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Front door — the ruminations shelf: illuminating readings, not doctrine"
 type: route-card
 title: "06_ONTOLOGY/ruminations — front door"
-status: "ACTIVE 2026-07-19 — additive front door, completion-plan remediation wave (additive-only gate, receipt 141A); the ruminations themselves are [I], K2 aware, not K2 signed"
+status: "ACTIVE 2026-07-19 — interpretive front door; ruminations remain [I] and are not authority instruments"
 owner: 01_EMERGENTISM
 ---
 
@@ -31,7 +31,7 @@ accompany the 2026-07 audit-and-kernel wave without claiming doctrinal force.
 ## Evidence posture
 
 Every file here is **[I] — illuminating reading, not doctrine**; per their own
-frontmatter: *K2 aware, not K2 signed*. The audit and the kernel stand on their own;
+frontmatter: *interpretive rumination, not an authority instrument*. The audit and the kernel stand on their own;
 these are readings of them. Nothing on this shelf promotes, demotes, or tombstones
 anything.
 

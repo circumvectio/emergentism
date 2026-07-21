@@ -36,8 +36,7 @@ support experiments.
 ## Current Focus
 
 This folder currently includes sphere-spectrum and flat-control simulations, R*
-historical material, proof-of-concept model scripts, and DAC harness scenario
-fixtures under `00_SCENARIOS/`.
+historical material, and proof-of-concept mathematical models.
 
 ## Authority Rule
 
@@ -48,7 +47,7 @@ through the owning framework or audit lane with proper tier discipline.
 ## Route Upstream
 
 - tool inventory: `../README.md` and `../CLAUDE.md`
-- DAC harness guide: `README_SIMULATION.md`
-- DAC harness entry point: `harness.py`
 - foundations and formal system: `../../`
-- organism proof/audit lanes: `../../../02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/`
+
+The former organization-specific harness and scenario fixtures are retained in
+the [pure-boundary archive](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/03_SIMULATIONS/).

@@ -83,5 +83,5 @@ Domain mappings must distinguish the established source fact `[A]` from the Emer
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)
-- Sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
 - Longer-form domain translations in the parent folder: `../ROSETTA_PSYCHOLOGY.md`, `../ROSETTA_NEUROSCIENCE.md`, `../ROSETTA_COMPUTATION.md`, and siblings.

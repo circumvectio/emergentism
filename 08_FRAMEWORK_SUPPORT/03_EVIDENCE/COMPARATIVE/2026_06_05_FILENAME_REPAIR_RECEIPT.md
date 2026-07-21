@@ -25,9 +25,10 @@ rosetta:
 [B] Updated active references in:
 
 - `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/README.md`
-- `02_SKYZAI/01_NOOSPHERE/07_PWAs/emergentism_org/FILE_INDEX.md`
-- `02_SKYZAI/01_NOOSPHERE/07_PWAs/emergentism_org/outline.json`
-- `02_SKYZAI/01_NOOSPHERE/07_PWAs/emergentism_org/insights.json`
+- Three historical public-projection indexes in an external application lane.
+
+Their exact former paths remain recoverable from Git history; they are not
+active Emergentism source routes.
 
 ## Boundary
 

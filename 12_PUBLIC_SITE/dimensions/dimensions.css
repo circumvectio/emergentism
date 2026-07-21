@@ -1,4 +1,4 @@
-/* Skyzai web brand typography, self-hosted for offline/public-gate safety. */
+/* Emergentism public typography, self-hosted for offline safety. */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -1333,7 +1333,7 @@ body.dimension-page .model-slider {
   position: absolute;
   inset: 0;
   z-index: 5;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -1341,8 +1341,16 @@ body.dimension-page .model-slider {
   text-align: center;
 }
 
-.webgl-failed .fallback {
-  display: flex;
+/* Progressive enhancement: readable fallback by default; a scripting-capable
+   browser may replace it with the canvas. Runtime failure restores it. */
+@media (scripting: enabled) {
+  body.dimension-page .fallback {
+    display: none;
+  }
+
+  body.dimension-page.webgl-failed .fallback {
+    display: flex;
+  }
 }
 
 .fallback-inner {
@@ -1399,6 +1407,108 @@ body.dimension-page .model-slider {
   color: var(--ink) !important;
   max-width: 100%;
   overflow-x: auto;
+}
+
+.window-lemma {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(20rem, 1.22fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 4vw, 4rem);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.window-lemma-copy,
+.window-instrument,
+.window-fence {
+  min-width: 0;
+}
+
+.window-lemma p {
+  color: var(--muted);
+  font-size: clamp(0.96rem, 1.15vw, 1.06rem);
+}
+
+.window-equation {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--line-strong);
+  background: var(--code-bg);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.window-instrument {
+  align-self: center;
+}
+
+#window-lemma-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line-strong);
+  border-radius: 0.75rem;
+  background: #050505;
+}
+
+.window-readout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.25rem;
+  padding: 0.85rem 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.window-readout strong {
+  color: var(--ink);
+}
+
+.window-readout .window-verdict {
+  width: 100%;
+  color: var(--instrument-blue);
+}
+
+.window-ground-truth-note {
+  margin: -0.25rem 0 0.85rem;
+  color: var(--dim) !important;
+  font-family: var(--font-mono);
+  font-size: 0.72rem !important;
+}
+
+.window-controls {
+  display: grid;
+  grid-template-columns: auto auto minmax(8rem, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.window-controls button {
+  min-height: 2.5rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--control-bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.window-controls input {
+  width: 100%;
+  min-width: 0;
+}
+
+.window-fence {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 1rem;
+  border-left: 2px solid var(--instrument-warn);
+  background: var(--code-bg);
 }
 
 .mu-limit {
@@ -1460,7 +1570,8 @@ noscript {
 
 @media (max-width: 980px) {
   .hero,
-  .chapter {
+  .chapter,
+  .window-lemma {
     grid-template-columns: 1fr;
   }
 
@@ -1474,6 +1585,10 @@ noscript {
 
   .chapter-number {
     position: static;
+  }
+
+  .window-fence {
+    grid-column: auto;
   }
 }
 
@@ -1532,6 +1647,10 @@ noscript {
 
   .route-footer {
     flex-direction: column;
+  }
+
+  .window-controls {
+    grid-template-columns: 1fr;
   }
 
   .label {

@@ -11,10 +11,10 @@ rosetta:
 
 # The Glyph Transformations
 
-**Status:** Canonical companion to the emblem ruling (Trinity Canon §4) and the Titan-on-Titan scope (§3). **K2-ratified 2026-07-13 (receipt 127)** — restates signed rulings; adds none.
+**Status:** Canonical companion to the emblem ruling (Trinity Canon §4) and the Titan-on-Titan scope (§3). **ratified 2026-07-13 (receipt 127)** — restates signed rulings; adds none.
 **Date:** 2026-07-13
 **Evidence Tier:** per line, marked throughout.
-**Authority context:** the emblem row + Titan-on-Titan row (`00_META/00_SETTLED_CANON_REGISTRY.md`), receipt 126 (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, K2-signed), Paper B §8 (mass-shell).
+**Authority context:** the emblem row + Titan-on-Titan row (`00_META/00_SETTLED_CANON_REGISTRY.md`), receipt 126 (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, founder-signed), Paper B §8 (mass-shell).
 **One-sentence content:** solve `⊙ = • × ○` for each mark and the two *rearrangements* turn out to be legitimate `[A]` mathematics while the *product form itself* remains emblem-only — the glyph has two solid legs and one winged one, and that asymmetry is not a defect but the precise shape of the framework's central wager.
 
 ---
@@ -69,11 +69,25 @@ One register down, every transformation is an honest `[A]` chart identity:
 B = 2/(φ+ν) = sin θ    balance = harmonic mean
 ```
 
-And in light-cone coordinates (`φ = e^w`, `ν = e^{−w}`), the product **is** the mass-shell of special relativity; the equator is the rest frame; `B = dτ/dt` (Paper B §8, verified numerically). The glyph's rigorous shadow. What it does *not* do — per CC-CORE-1 (receipt 126, registry row) — is license the node-level zero-factor catastrophe: on the sphere the product *stays 1 always* and can never vanish. The knockout (`Φ×V = 0`) is a **node** claim; the manifold identity was never its warrant.
+Under a declared special-relativistic identification—`w` is rapidity, rest
+mass `m>0`, `φ=(E+pc)/(mc²)=e^w`, and
+`ν=(E−pc)/(mc²)=e^{-w}`—the product is the **normalized 1+1 mass-shell
+coordinate identity** `φν=1`; the equator is `w=0`, and for timelike inertial
+motion `B=sech(w)=1/γ=dτ/dt` `[A]`. This is a conditional change of
+coordinates using established special relativity, not evidence that the bare
+chart is physical spacetime. What it does *not* do—per CC-CORE-1 (receipt 126,
+registry row)—is license the node-level zero-factor catastrophe: on the open
+chart the product stays `1` and cannot vanish. The knockout (`Φ×V=0`) is a
+**node** claim; the manifold identity was never its warrant.
 
 ## 5 · The dark twin — the honest asterisk
 
-Receipt 126 (K2-signed): the inversion `z ↦ 1/z` that generates this structure fixes **two** points — `+1` *and* `−1`. The closure of `{•, ○}` under the glyph's own symmetry is the **foursome** `{−1, 0, 1, ∞}`. The trinity is therefore a **naming choice** `[S/I]`, not a forced closure: the framework elects the positive fixed point — the light-side One — and leaves `−1` (the same balance, opposite orientation) undrawn. The glyph should be worn knowing it has a dark twin it does not draw. *(Do not re-flag: this is the signed ruling; the Titan naming survives as naming.)*
+Receipt 126: inversion `z↦1/z` swaps `0↔∞` and fixes **two** points,
+`+1` and `−1`. The inversion orbit-closure of `{0,∞}` is only `{0,∞}`.
+Emergentism instead **adjoins** the fixed set `{−1,+1}` to select the invariant
+four-point union `{−1,0,1,∞}`. The trinity `{0,1,∞}` is therefore a naming
+choice `[S/I]`, not a forced closure: it elects the positive fixed point and
+leaves `−1` undrawn. The glyph should be worn knowing that selected dark twin.
 
 ## 6 · In one breath
 
@@ -83,13 +97,16 @@ Receipt 126 (K2-signed): the inversion `z ↦ 1/z` that generates this structure
 
 ## Kill criteria
 
-- If a rigorous system is exhibited in which `0×∞ = 1` holds as *operand arithmetic* without collapse, §2's asymmetry claim dies (and the emblem ruling would need re-opening — via K2 only).
+- If a rigorous system is exhibited in which `0×∞ = 1` holds as operand arithmetic without collapse, §2's asymmetry claim dies and the emblem ruling must be reopened explicitly.
 - If the descent identities (`0 = 1/∞` as limit; `∞ = 1/0` as pole-map) are shown not to be standard mathematics, §2 dies outright.
-- If a derivation forces `+1` over `−1` from the inversion symmetry alone, §5's "naming choice" weakens back toward "forced closure" (would require overturning receipt 126 — via K2 only).
+- If a derivation forces `+1` over `−1` from inversion symmetry alone, §5's naming-choice ruling must be reopened against receipt 126.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Never cite `1 = 0 × ∞` as `[A]` / field arithmetic.** The rearrangements `0 = 1/∞` and `∞ = 1/0` *are* citable as `[A]` (limit; pole-map with `N≠0`).
 2. **Do not re-flag** the emblem, the Titan-on-Titan diagonal, or the foursome — all are settled (registry + receipt 126). This document *restates* rulings; it changes none.

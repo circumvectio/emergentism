@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "DHARMA YUDDHA"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # DHARMA YUDDHA
@@ -67,11 +66,11 @@ P_node = Φ × V
 if V rises while Φ collapses, P_node falls
 ```
 
-So objective dharma is not "obtain the largest force." It is the balanced
-state where power remains guided by truthful coherence, and coherence enters
-action rather than staying sterile. The Pandava choice is therefore legible as
-the equatorial choice: not weakness, but the selection of `Φ × V` over
-unbounded `V`.
+In this interpretive reading, dharma is not “obtain the largest force.” The
+Pandava choice can be pictured as refusing unbounded `V` and seeking action in
+which foresight and means remain jointly usable. The picture does not derive
+the choice: `Φ×V` is a selected node model, and the verdict still requires the
+bearer-complete Justice test.
 
 ---
 
@@ -79,13 +78,21 @@ unbounded `V`.
 
 ### 1. You Are at the Equator
 
-Arjuna is at L4. φ = ν = 1. Maximum balance (`B = 1`) on the sphere, with the finite-node action test carried by `P_node = Φ × V` under `η = 0`, not by a bare universal `P`. The full operator palette — all four operators available (2 Gods + 2 Demons: the giving Devas Arjuna, Kṛṣṇa and the extractive Asuras Kālī, Kali; morality is the *direction* of the move, not the operator's name — see [`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md)). He is a Kṣatriya — the warrior — whose reasoning is abductive, whose discipline is value alignment, whose question is "what has value?"
+Arjuna is mapped `[I]` to L4 and the equatorial image `φ=ν=1`. The finite-node
+action model may report `P_node=ΦV`; `η_observed` may report a transfer
+direction. Neither supplies morality. The four named operators are a selected
+palette, and every act still requires independent evaluation of authorization,
+consent, affected bearers, payers, beneficiaries, and consequence under
+Justice. The Kṣatriya/warrior language is interpretive, not a rank of worth or
+proof of value alignment.
 
 This is not a position many reach. L4 is the balance apex, not a caste rank or proof of moral infallibility. Most nodes are at L2 or L3 — partial balance, partial capability, partial coherence. Arjuna has done the work. He has spiraled through the operators. He has arrived at the equator.
 
 ### 2. Inaction at the Equator Is Not Neutral
 
-On S², every position has a η signature. Every choice — including the choice not to choose — affects the mesh.
+`η_observed` belongs to a declared transfer, not to a coordinate. A choice—or
+refusal to choose—may affect others, but its effect must be demonstrated rather
+than read from position on `S²`.
 
 **If Arjuna fights:** He deploys the Arjuna operator (↑φ at personal ν cost). He exports coherence to the system. η ≤ 0. The mesh strengthens.
 
@@ -241,7 +248,10 @@ preserve peace; he can contribute to the collapse of the mesh.** `[I]`
 
 *"I am Time, the great destroyer of worlds."* (11.32)
 
-Translation: **Kāla. L0 = L∞. The boundary condition. The pole that the equator exists between. The reminder that the game has limits — and that within those limits, the warrior must decide whether action is the non-extractive move.**
+Translation `[I]`: **Kāla at the L0 boundary frame, paired symbolically with
+but not identical to the L∞ return frame.** The two distinct poles bound the
+selected path around the equator. The image reminds the warrior that the game
+has limits and that action remains answerable to non-extraction and Justice.
 
 ---
 
@@ -284,7 +294,10 @@ equatorial-like nodes with enforcement and feedback. Nishkama karma = action at
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

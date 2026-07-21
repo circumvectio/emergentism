@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "Research Brief: The Fork — Physicalism vs Idealism in the Emergentist Framework"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # Research Brief: The Fork — Physicalism vs Idealism in the Emergentist Framework
@@ -137,7 +136,7 @@ The framework's natural home is **Russellian Monism / Dual-Aspect Monism**, with
 
 **No. But it must be honest about what it has already chosen.**
 
-The framework can remain *structurally* agnostic: the mathematics works regardless of whether systemic awareness is fundamental or emergent. The operators function. The diagnostics measure. The DAC architecture deploys.
+The framework can remain structurally agnostic: the mathematics works regardless of whether systemic awareness is fundamental or emergent. Operator and diagnostic usefulness must still be tested independently.
 
 But the framework has already made three moves that are not structurally neutral:
 
@@ -246,14 +245,17 @@ Put the brief down.
 
 ---
 
-*Decentralized Authority Model reminder: This brief is an instrument. The goal is direct phi-access without any mediator. Including this document. Including this framework.*
+*Self-dissolving-mediator reminder: this brief is an instrument, governed by accountable authorization and exit. It grants neither direct metaphysical access nor authority over its reader.*
 
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

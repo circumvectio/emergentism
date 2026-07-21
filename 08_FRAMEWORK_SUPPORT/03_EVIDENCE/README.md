@@ -34,8 +34,8 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../00_STA
 The geometry this evidence layer calibrates is canonized in cosmology — read the Rosetta and paradox surfaces **with** them:
 
 - [The Burrisphere](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, and the equator `L4` (the Master Rosetta's nine-row table is the evidence source for that closure).
-- [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the moral axis is `η` (closed vs syntropic), never a gender, pole, caste, or operator name.
-- [Constitutional Invariants — Canonical Enumeration](../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — the constitution is **5 + 1**, never "six refusals".
+- [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — separates analytic coupling from the declared Justice construction; `etaObserved=0` is necessary but insufficient.
+- [Constitutional Invariants — Canonical Enumeration](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — the constitution is **5 + 1**, never "six refusals".
 
 ## Read First
 

@@ -8,7 +8,7 @@ rosetta:
 # Mirror Symmetry as a Falsification Engine — Per-Column Test
 
 **Date:** 2026-04-25
-**Lane:** Charioteer engagement on sovereign's Pressure Point #2 from [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md)
+**Lane:** Charioteer engagement on sovereign's Pressure Point #2 from [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md)
 **Status:** Operationalized falsification protocol — applied to representative columns
 **Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md), [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md)
 **Evidence tier:** [I] interpretive throughout. The scoring below is a charioteer judgment that any reader can independently re-score.
@@ -17,7 +17,11 @@ rosetta:
 
 ## 0. Axiomatic guard
 
-The framework claims that mirror symmetry around L4 is **geometric necessity, not aesthetic preference**. On S² with φ = cot(θ/2) and ν = tan(θ/2), every L-level at colatitude θ has a unique partner at the complementary angle (90° − θ) where the φ/ν roles are reversed. The pole-meeting (L0=L∞) closes the topology.
+Inside the selected chart, reciprocal reflection around L4 is an analytic
+property; the chosen row placements and domain mirrors remain hypotheses. On
+`S²` with `φ = cot(θ/2)` and `ν = tan(θ/2)`, a point on the declared
+positive-real path has a reciprocal partner. The distinct L0 and L∞ poles do
+not meet or close by identity.
 
 This means: **for any column claiming to be a 7-projection of S², the L1↔L7, L2↔L6, L3↔L5 pairs must show *functional inversion* — same kind, opposite direction.** If a column passes this test cleanly, it's a genuine S² projection. If it fails, it's a forced fit or a linear domain pasted onto a circular geometry.
 
@@ -249,7 +253,11 @@ Path 2 is genuinely generative: the framework must EARN its L5-L7 entries by mir
 
 **Honest framing:** the framework's universal-7 claim has already been narrowed by the non-WEIRD sweep ([`05_*`](05_NON_WEIRD_SWEEP_2026_04_25.md)) to "7-stage Indo-European/Mediterranean traditions converge." The mirror symmetry test narrows further: **even within the IE/Med 7-stage traditions, only some columns pass the geometric test**. The framework's strongest defensible claim becomes:
 
-> **The operator grammar is geometrically exhaustive on S². The 7-stage articulation converges in IE/Med traditions. Mirror symmetry holds cleanly in Vedāntic, Sanskrit, and Mithraic columns; it is partially forced in Plato's Regimes and substantially forced in Neuroscience post-L4 and Computation. Each column's mirror score is a published transparency receipt.**
+> **G7 is a selected comparison vocabulary, not a geometrically exhaustive
+> consequence of `S²`. In this dataset, mirror symmetry fits some Vedāntic,
+> Sanskrit, and Mithraic columns better than others; several mappings are partly
+> imposed by row construction. Each score is a receipt for this comparison
+> only and transfers no proof across domains.** `[I]`
 
 That is a *much stronger* claim than "15 columns demand an explanation," because it survives the sharpest scrutiny.
 
@@ -257,10 +265,10 @@ That is a *much stronger* claim than "15 columns demand an explanation," because
 
 ## 6. References
 
-- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §2 — sovereign's source pressure point
+- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §2 — sovereign's source pressure point
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — Generative Table + symmetry section + per-section columns
 - [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) — universal-7 narrowing
-- [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) — kill-criterion discipline
+- [`04_DEEP_RUMINATION_2026_04_25.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) — kill-criterion discipline
 - [`02_ROWS_COLUMNS_DEEPENING_2026_04_25.md`](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md) §"Row Symmetry" — mirror-symmetry-as-test groundwork
 
 ---

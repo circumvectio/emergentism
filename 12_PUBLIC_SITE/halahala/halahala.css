@@ -343,7 +343,7 @@
   display: block;
 }
 
-.surface-card h4 {
+.surface-card h3 {
   font-family: var(--font-heading);
   font-size: 15px;
   font-weight: 700;
@@ -404,7 +404,7 @@
   font-size: 13px;
 }
 
-.amrita-poison h4 {
+.amrita-poison h3 {
   font-family: var(--font-heading);
   font-size: 16px;
   font-weight: 700;

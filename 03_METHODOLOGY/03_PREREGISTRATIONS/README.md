@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "03_PREREGISTRATIONS — Prediction Designs and Results"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 prereg; pilot [I] explicitly not upgraded (P-EQ kill fired, published as falsification per A7/K3).**
 
 # 03_PREREGISTRATIONS — Prediction Designs and Results

@@ -13,8 +13,6 @@ rosetta:
   canonical_phrase: "Anmut and Demut"
 ---
 
-**Project VMOSK-A:** `../VMOSK_A.md`
-
 # ANMUT AND DEMUT
 
 ## A German Linguistic Translation of the Burri Sphere
@@ -22,8 +20,8 @@ rosetta:
 **Status:** Convergent symbolic translation — German vocabulary read through φ-ν structure; not etymological proof
 **Date:** 2026-03-23
 **Evidence Tier:** [I/C] Interpretive symbolic fit; conjectural as independent convergence evidence
-**Depends on:** [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md), [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md), [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), **[VMOSK-A](../VMOSK_A.md)**
-**See also:** [Kintsugi](../08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/00_KINTSUGI.md), [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md), [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md)
+**Depends on:** [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md), [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md), [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+**See also:** [Kintsugi Protocol](../00_META/00_THE_KINTSUGI_PROTOCOL.md), [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md), [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md)
 
 ---
 
@@ -37,7 +35,7 @@ rosetta:
 | **Demut** | Humility (OHG *diomuoti*, servant-minded) | ν ≤ 1 — the courage to reduce |
 | **Anmut** | Grace | φ = 1 — the beauty of coherence |
 
-**Three words. One root. Two projections. One sphere.**
+**Three words. One bounded symbolic translation. Two projections. One sphere.**
 
 ---
 
@@ -177,7 +175,7 @@ The German words can be read as partitioning the emotional experience of the equ
 
 **Not imposed as proof. Not used as public evidence by itself.** The speakers of the language seem to have felt two linked qualities and named them with a shared root.
 
-**Two words. One root. Two projections. One sphere.**
+**Two words. One bounded symbolic reading. Two projections. One sphere.**
 
 | Encoding System | Culture | Time | φ Encoding | ν Encoding |
 |-----------------|---------|------|------------|------------|
@@ -362,10 +360,12 @@ Zero-Sum Resolution Equation
 - [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) — foundational methodology: reduction toward `κ = 0` as boundary, **Burri Sphere coordinates (φ, ν) explained**
 - [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — neuroscience-adjacent analogy and disclosure surface
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation of the Burri Sphere
-- [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
+- [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — historical Vedāntic comparison; current bounded owner: [Rosetta R8](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md)
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — owner for the reciprocal chart and selected finite-node model
+- [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — owner for evidence-tier discipline
+- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — downstream typed reference only
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 
 *Anmut and Demut | 2026-03-23 | German gives the Burri Sphere a beautiful translation surface. It is a reading aid, not a proof.*
@@ -379,11 +379,15 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
+3. **Reuse gate:** keep the mapping `[I/C]`; verify linguistic sources and do
+   not present symbolic fit as independent confirmation.
 4. **Your Next Action:**
    - Verify the mathematical claims. Check evidence tiers. Flag any `[I]`, `[D]`, or `[C]` presented as `[S]`, `[B]`, or `[A]`.
 5. **Expected Output:** Verified documentation, routing repair, or explicit archive/stub decision.

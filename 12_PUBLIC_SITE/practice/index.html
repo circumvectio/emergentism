@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Practice — what a person actually does</title>
-<meta name="description" content="Three practices, transmissible in an afternoon, valuable with zero belief: the sitting, the personal trial record, and the dyadic check. Emergentism as something you do, not something you join." />
+<title>The Soul Loop — a five-step practice</title>
+<meta name="description" content="A five-step worksheet for consequential action: model, means, commitment, outcome, and update—with a bearer-complete Justice gate." />
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="The Practice" />
-<meta property="og:description" content="A worldview without a practice is a book. Three practices — no membership, no belief required, nothing to sign except your own verdicts." />
-<meta property="og:url" content="https://emergentism.org/practice/" />
-<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta property="og:title" content="Run the Soul Loop" />
+<meta property="og:description" content="Model a future, name your means, receipt the commitment, receive the outcome, and update instead of protecting the story." />
+<meta property="og:url" content="https://www.emergentism.org/practice/" />
+<meta property="og:image" content="https://www.emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
-<meta name="twitter:title" content="The Practice" />
-<meta name="twitter:description" content="The sitting. The personal trial record. The dyadic check. Transmissible in an afternoon; graded honestly." />
+<meta name="twitter:image" content="https://www.emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:title" content="Run the Soul Loop" />
+<meta name="twitter:description" content="A five-step worksheet for consequential action, with a bearer-complete Justice gate." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
 <style>
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -70,6 +70,13 @@ p{margin:0 0 1.25rem}
 .practice h3 .sub{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-top:.3rem;font-weight:400}
 .practice p{color:var(--bone-dim);margin:0 0 .9rem}
 .practice p b{color:var(--bone);font-weight:500}
+.loop{border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,rgba(255,235,59,.025),transparent 30%),var(--panel);padding:0 clamp(1rem,3vw,2rem);margin-top:1.6rem}
+.loop .practice{position:relative}
+.loop .practice:not(:last-child)::after{content:"";position:absolute;left:1.15rem;bottom:-.42rem;width:1px;height:.84rem;background:var(--gold-deep)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem .8rem;margin:.8rem 0 0;padding:0;list-style:none}
+.fields li{border-left:1px solid var(--line);padding:.2rem .7rem;color:var(--bone-dim);font-size:.9rem}
+.fields b{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--gold-deep);font-weight:500}
+.type-note{font-family:var(--mono);font-size:.78rem;color:var(--bone-faint);border:1px solid var(--line-soft);border-radius:5px;padding:.65rem .8rem;margin:.8rem 0 0}
 .howto{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 70%);padding:1.1rem 1.4rem;margin:.9rem 0 0;max-width:64ch}
 .howto .lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .5rem}
 .howto p{font-size:.98rem;margin:0 0 .5rem}
@@ -98,13 +105,15 @@ p{margin:0 0 1.25rem}
 .cta:hover{border-color:var(--gold);color:var(--gold)}
 .cta.primary{background:var(--gold);color:var(--void);border-color:var(--gold);font-weight:700}
 .cta.primary:hover{background:var(--bone);border-color:var(--bone);color:var(--void)}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
 footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-size:.92rem}
 footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
 footer.foot a{color:var(--bone-dim)}
-@media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}}
+@media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}.fields{grid-template-columns:1fr}.loop .practice:not(:last-child)::after{left:.35rem}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="canonical" href="https://www.emergentism.org/practice/" />
 </head>
 <body>
 
@@ -117,124 +126,147 @@ footer.foot a{color:var(--bone-dim)}
     <a href="../record/">Record</a>
     <a href="../axioms/">Axioms</a>
     <a class="here" href="../practice/" aria-current="page">Practice</a>
-    <a href="../book/">Book</a>
+    <a href="../about/">About</a>
   </nav>
 </div>
 
 <main class="wrap">
 
   <header class="hero read reveal in">
-    <p class="fileno">The path · stage six — the practice</p>
-    <h1>What a person<br><span class="gold">actually does.</span></h1>
-    <p class="dek">A worldview without a practice is a book. Here are three practices — <b>transmissible in an afternoon, valuable with zero belief</b>. No membership. Nothing to join. The only signature is your own, on your own verdicts.</p>
+    <p class="fileno">The practice · one consequential act at a time</p>
+    <h1>Run the<br><span class="gold">Soul Loop.</span></h1>
+    <p class="dek">Model one reachable future, name your actual means, receipt the commitment, receive what the world returns, and <b>update instead of protecting the story</b>. No membership and no metaphysical belief required.</p>
     <div class="tierline">
-      <span class="tier t-i">[I] interpretive — the practices, not the metaphysics, are what this page asks of you</span>
-      <span class="tier t-s">[S] the trial record they imitate is public and dated</span>
+      <span class="tier t-i">[I] practical grammar — proposed, usable, and corrigible</span>
+      <span class="tier t-s">[S] typed receipts keep intention separate from outcome</span>
     </div>
   </header>
 
   <section class="read reveal">
-    <p class="kicker">Practice one</p>
-    <div class="practice">
-      <div class="n">01</div>
-      <div>
-        <h3>The sitting <span class="sub">Pratyakṣa — the first-person anchor</span></h3>
-        <p>Every map on this site points at one place it cannot go: the crossing where a bounded view and an embodied hand meet. That crossing is not ahead of you. <b>It is the reader — it always was.</b> The sitting is the direct check: stop reading the map and look at where you're standing.</p>
-        <div class="howto">
-          <p class="lab">How — ten minutes</p>
-          <p>Sit. Eyes open or closed. Let one thing be seen — a sound, a breath, the room — and notice the one to whom it appears. Don't name it, don't improve it. When a thought offers to explain the framework to you, decline politely. The framework dissolves here on purpose.</p>
+    <p class="kicker">The primary practice</p>
+    <h2>Five steps. <b>Two receipts.</b></h2>
+    <div class="body">
+      <p>The loop keeps three gaps visible: territory versus model, intention versus performed action, and expected versus received consequence. A modeled future can influence the present only through an actual model token and an actual act.</p>
+    </div>
+    <div class="loop">
+      <div class="practice">
+        <div class="n">01</div>
+        <div>
+          <h3>Model <span class="sub">D4 token · D5 represented possibilities</span></h3>
+          <p>Describe the current state and at least two reachable futures. State what would show your model is wrong.</p>
+          <ul class="fields"><li><b>CURRENT</b> observed state</li><li><b>FUTURES</b> desired, feared, alternatives</li><li><b>CONFIDENCE</b> evidence tier</li><li><b>KILL</b> disconfirming observation</li></ul>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="n">02</div>
+        <div>
+          <h3>Means <span class="sub">D4 actual capacities</span></h3>
+          <p>Name what is available now. Imagining a move does not supply the body, time, access, permission, or custody needed to perform it.</p>
+          <ul class="fields"><li><b>BODY / TOOLS</b> actual capacities</li><li><b>TIME / ACCESS</b> present constraints</li><li><b>AUTHORITY</b> mandate and scope</li><li><b>CUSTODY</b> what you may alter</li></ul>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="n">03</div>
+        <div>
+          <h3>Commitment <span class="sub">D4 action receipt q</span></h3>
+          <p>Write the act before performing it. Record who authorizes it, who acts, who may bear the consequence, and how it can be contested.</p>
+          <ul class="fields"><li><b>ACT</b> concrete and time-bounded</li><li><b>PRINCIPAL</b> mandate and scope</li><li><b>BEARERS</b> every materially affected party</li><li><b>CONSENT</b> given, absent, or impossible</li><li><b>PAYER / BENEFICIARY</b> predicted</li><li><b>ALTERNATIVES</b> rejected and why</li><li><b>REVERSIBILITY</b> what cannot be undone</li><li><b>CONTEST / EXIT</b> remedy path</li></ul>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="n">04</div>
+        <div>
+          <h3>Outcome <span class="sub">D4 environment receipt r</span></h3>
+          <p>The selector does not manufacture its consequence. Record what the world—including other agents—actually returned, even when the action was blocked or nothing changed.</p>
+          <ul class="fields"><li><b>OBSERVED</b> expected versus actual</li><li><b>STATUS</b> enacted, blocked, or null</li><li><b>COSTS</b> actual payer and beneficiary</li><li><b>SURPRISES</b> harms and side effects</li></ul>
+        </div>
+      </div>
+      <div class="practice">
+        <div class="n">05</div>
+        <div>
+          <h3>Return <span class="sub">update map and mapper</span></h3>
+          <p>Update the model and the habit that selected the act. Repair harm before narrating success. Retain, modify, or abandon the rule.</p>
+          <ul class="fields"><li><b>MODEL Δ</b> what belief changed</li><li><b>SELECTOR Δ</b> what habit changed</li><li><b>REMEDY</b> restoration owed</li><li><b>NEXT</b> smaller test or withdrawal</li></ul>
         </div>
       </div>
     </div>
-    <div class="practice">
-      <div class="n">02</div>
-      <div>
-        <h3>The personal trial record <span class="sub">№017 — the practice that is ours alone</span></h3>
-        <p>Keep a ledger of your own claims — the ones you actually load weight onto. For each, write four things: <b>its tier</b> (how you know), <b>what would change your mind</b> (the kill criterion), <b>what would upgrade it</b>, and <b>what survives if it falls</b>. When one dies, hold the funeral: strike it through, date it, leave it legible. Sign the verdict.</p>
-        <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It works even if every metaphysical claim we make is wrong. That is deliberate.</p>
-        <div class="howto">
-          <p class="lab">How — one page, forever</p>
-          <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it. <a href="#artifact" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px">Copy the template below ↓</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="practice">
-      <div class="n">03</div>
-      <div>
-        <h3>The dyadic check <span class="sub">The ethic as a habit, not a theory</span></h3>
-        <p>Before an act that matters, ask one question with two ends: <b>does this move raise me — and raise what sustains me?</b> If it raises you by draining your ground, it subtracts from the very product you live inside. If it feeds the ground by hollowing you, the same. Both directions, or neither.</p>
-        <div class="howto">
-          <p class="lab">How — one question, two ends</p>
-          <p>i = you, at the scale being tested. H = the whole that sustains you, at that scale. The move is clean only if both sides are preserved or raised — under η = 0: nothing taken without return.</p>
-        </div>
-      </div>
+    <p class="type-note">Type fence: actual modeling, ranking, commitment, action, and receipts are D4. The alternatives they represent are D5 possible content. Anticipated futures affect present selection through those actual representations—not by a physical signal from the future.</p>
+  </section>
+
+  <section class="read reveal">
+    <p class="kicker">The Justice gate</p>
+    <h2>Before commitment, <b>name every bearer.</b></h2>
+    <div class="body">
+      <p>Do not hide a harmed person inside a positive total. Name every materially affected bearer, their consent, the predicted payer and beneficiary, rejected alternatives, authorization and custody, reversibility, contest, remedy, and exit.</p>
+      <p>Voluntary sacrifice is a distinct costly act. Record whose sacrifice it is, whether consent is informed and revocable, and what becomes irreversible. A collective may never demand sacrifice as proof of ethics or relabel it strict syntropy.</p>
     </div>
   </section>
 
   <section class="read reveal" id="artifact">
     <p class="kicker">Take it with you</p>
-    <h2>The artifact — <b>copy it, start today.</b></h2>
+    <h2>The worksheet — <b>copy it before the act.</b></h2>
     <div class="body">
-      <p>The whole second practice, as one copy-paste block. Paste it into any plain-text note — that document is now your trial record. <b>Sixty seconds to install; a lifetime to fill.</b></p>
+      <p>Use one copy per consequential act. Fill the commitment section before acting and the outcome section only after the world answers. Never silently rewrite the prediction after seeing the result.</p>
     </div>
 
     <div class="artifact">
-      <div class="bar"><span>personal-trial-record.txt · the template</span><button class="copybtn" type="button" aria-label="Copy the trial-record template to the clipboard">Copy</button></div>
-      <pre id="tpl">MY TRIAL RECORD
-started: YYYY-MM-DD
-rule: never delete — strike through, date, sign.
-newest entries on top. once a year, count the funerals.
+      <div class="bar"><span>soul-loop.txt · commitment and outcome</span><button class="copybtn" type="button" aria-label="Copy the Soul Loop worksheet to the clipboard">Copy</button></div>
+      <pre id="tpl">SOUL LOOP · opened YYYY-MM-DD
 
-------------------------------------------------------------
-No.002 · opened YYYY-MM-DD · status: OPEN
-CLAIM      (a claim you actually load weight on)
-TIER       how I know: proven / reasoned / lens / bet
-KILL       what result would change my mind
-UPGRADE    what evidence would raise the tier
-SURVIVES   what still stands for me if this falls
-VERDICT    —
-------------------------------------------------------------
-No.001 · opened YYYY-MM-DD · status: OPEN
-CLAIM
-TIER
-KILL
-UPGRADE
-SURVIVES
-VERDICT    —
-------------------------------------------------------------</pre>
-    </div>
+1 MODEL
+CURRENT:
+DESIRED / FEARED / ALTERNATIVE FUTURES:
+CONFIDENCE + EVIDENCE TIER:
+WHAT WOULD DISCONFIRM THIS MODEL:
 
-    <div class="worked">
-      <p class="lab">A worked entry — one funeral, held properly</p>
-      <pre>No.001 · opened 2026-02-03 · status: <span class="vd">STRUCK 2026-06-28</span>
-CLAIM      <s>My project is stalled only because I lack time.</s>
-TIER       bet
-KILL       one clear week with nothing else in it, and no progress
-UPGRADE    shipping anything during a busy month
-SURVIVES   the project may still be worth doing — for other reasons
-VERDICT    refuted 2026-06-28 — took the clear week; made no
-           progress. the constraint was never time.
-           struck, dated, signed.</pre>
+2 ACTUAL MEANS
+BODY / TOOLS / TIME / ACCESS:
+PRINCIPAL + MANDATE + SCOPE:
+AUTHORIZATION + CUSTODY:
+
+3 COMMITMENT RECEIPT q · signed before action
+ACTION + TIME HORIZON:
+EVERY MATERIALLY AFFECTED BEARER:
+CONSENT OF EACH BEARER:
+PREDICTED PAYER / BENEFICIARY:
+ALTERNATIVES REJECTED + WHY:
+REVERSIBILITY / IRREVERSIBILITY:
+CONTEST / REMEDY / EXIT PATH:
+PREDICTED EFFECTS:
+SIGNED + DATED:
+
+4 OUTCOME RECEIPT r · written after the world answers
+STATUS — enacted / blocked / null:
+OBSERVED OUTCOME:
+ACTUAL PAYER / BENEFICIARY:
+HARMS / SURPRISES:
+EXPECTED ≠ OBSERVED:
+
+5 RETURN
+MODEL CHANGED:
+SELECTOR / HABIT CHANGED:
+REMEDY OWED:
+NEXT TEST — retain / modify / abandon:
+DATED:</pre>
     </div>
 
     <div class="pocket">
-      <p class="lab">The dyadic check — pocket card</p>
-      <p><b>Does this move raise me — and raise what sustains me?</b><br>Both directions, or don't.</p>
+      <p class="lab">Pocket gate</p>
+      <p><b>Who authorized this consequence, who acts, who bears it, who pays, who benefits—and how can each bearer contest, recover, or exit?</b></p>
     </div>
   </section>
 
   <section class="read reveal">
-    <p class="kicker">Why these three</p>
-    <h2>No belief <b>required.</b></h2>
+    <p class="kicker">Supporting practices</p>
+    <h2>Attention, correction, <b>non-extraction.</b></h2>
     <div class="body">
-      <p>The sitting teaches you to check maps against ground. The trial record teaches you to grade claims and bury the dead ones. The dyadic check teaches you to spot extraction before you commit it. <b>None of them asks you to believe the framework</b> — they install the posture, and the posture is the part every audit has left standing.</p>
-      <p>If the framework is right, the practices are its shortest path into a life. If the framework is wrong, the practices still leave you sharper than they found you. That asymmetry is the honest offer of this page — and it is the same offer the whole site makes, at every stage of the path: verify first, believe never, keep what works.</p>
+      <p><b>The sitting</b> checks maps against present experience. <b>The personal trial record</b> grades claims, names kill criteria, and leaves refutations legible. <b>The dyadic check</b> asks whether a gain preserves both the acting individual and the sustaining whole under the Justice gate.</p>
+      <p>None asks you to believe the metaphysics. If the framework fails, keep any discipline that survives and record the rest.</p>
     </div>
     <div class="cta-row">
-      <a class="cta primary" href="../build/">See what we're building →</a>
-      <a class="cta" href="../book/">← Read the book</a>
-      <a class="cta" href="../record/">The public trial record →</a>
-      <a class="cta" href="../fable/">Start the path over — the fable →</a>
+      <a class="cta primary" href="../record/">Check the public trial record →</a>
+      <a class="cta" href="../plainly/">← Read it plainly</a>
+      <a class="cta" href="../about/">Accountability and AI disclosure →</a>
     </div>
   </section>
 
@@ -242,7 +274,7 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
 
 <footer class="foot wrap">
   <div class="glyph">⊙ = • × ○</div>
-  <p>The Practice · the sixth stage of the path: <a href="../fable/">fable</a> → <a href="../plainly/">plainly</a> → <a href="../record/">record</a> → <a href="../axioms/">axioms</a> → <a href="../book/">book</a> → <b>practice</b> → <a href="../build/">build</a>.<br>The framework succeeds when you can <a href="../exit/">put it down</a>. The practice is how you find out you could all along.</p>
+  <p>The Practice · model → means → commitment → outcome → update.<br>The framework succeeds when you can <a href="../exit/">put it down</a>; the receipt remains useful after the map is gone.</p>
 </footer>
 
 <script>
@@ -256,7 +288,7 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
   }
   setTimeout(function(){ document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in');}); }, 2000);
 
-  // copy-to-clipboard for the trial-record template (progressive enhancement — the text is selectable without it)
+  // Copy-to-clipboard is progressive enhancement; the Soul Loop text remains selectable without it.
   var btn = document.querySelector('.copybtn');
   var pre = document.getElementById('tpl');
   if (btn && pre) {

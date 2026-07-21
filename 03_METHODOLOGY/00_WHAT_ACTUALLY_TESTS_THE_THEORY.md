@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "What actually tests the theory"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 falsification doctrine; the retired GFS archive is provenance, not a test.**
 
 # What Actually Tests the Theory
@@ -23,7 +23,7 @@ rosetta:
 **Date:** 2026-04-11
 **Evidence Tier:** Meta-epistemic (test design)
 **Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-**See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), [BREAKTHROUGH_REPLICATION_PACKET](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md), [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md) (archive provenance only)
+**See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), BREAKTHROUGH_REPLICATION_PACKET, [GFS retirement receipt](../90_ARCHIVE/2026_07_13_gfs_retraction/2026-07-16_GFS_RETIREMENT_RECEIPT.md) (archive provenance only)
 
 Retrieval handles: geometry flagship = Protocol R; emergence flagship =
 Macro-Constraint Physics-to-Biology; toy macro-constraint harness `[B]`;
@@ -36,9 +36,15 @@ pending.
 
 **`P∞ = φ · ν = 1` on the open `S²` register.**
 
-This is a claim about the *geometry* of reality — not about survey responses, not about self-reported flourishing, not about any particular operationalization. The claim is that the underlying substrate is the Riemann sphere, that coherence and viability are its two complementary projections, and that their product is constant on the open sphere, with the poles handled as limiting boundaries rather than evaluated finite points.
+The equation is an analytic identity in the declared reciprocal chart. The
+additional claim that reality itself has this geometry is a killable `[I/C]`
+wager—not a consequence of the identity, survey responses, self-reported
+flourishing, or any operationalization. A test can move a specified bridge from
+measured variables to the chart; it cannot turn the chart definition into an
+empirical discovery by fitting variables that were defined reciprocally.
 
-**Numbering note:** when this document discusses the uniqueness of S² under O1-O5, it is referring to the older public ontological wager used for substrate selection. The active formal-system canon is broader (A1-A7).
+**Numbering note:** O1-O5 and A1-A7 are superseded genealogy. E1-E10 is the
+live axiom owner. Neither historical packet uniquely selects `S²`.
 
 ## Current Hardening Frame
 
@@ -87,9 +93,13 @@ These tests are informative. They are not decisive. They test operationalization
 - **Status:** Designed. Needs lab. 2026-2027.
 - **Evidence tier if confirmed:** [S] → potential [A] with independent replication.
 
-**2. Bloch-Burri Identity — Direct Geometric Test**
-- **What it tests:** Whether the quantum state space (Bloch sphere = S²) and the systemic awareness state space share structure beyond isomorphism.
-- **Why it's decisive:** The established fact [A] is that the qubit state space IS CP¹ = S². The framework claims the systemic awareness state space is ALSO S². If an experiment shows that cognitive states map onto S² with the same metric properties as quantum states, the identity claim goes from [I] to [S].
+**2. Bloch–Burri Crosswalk — Direct Geometric Test**
+- **What it tests:** Whether a specified cognitive state space is empirically
+  well modeled by `S²` with a preregistered metric and out-of-sample advantage.
+- **Why it matters:** The qubit pure-state space is `CP¹≅S²` `[A]`. A successful
+  cognitive fit could establish a scoped empirical isomorphism or useful
+  crosswalk. It would not make cognition quantum, identify two domains, or
+  transfer proof between them.
 - **Status:** Conceptual. Requires formal experimental design.
 
 **3. Cross-Scale Invariance — Paper G Prediction 6**
@@ -99,9 +109,13 @@ These tests are informative. They are not decisive. They test operationalization
 
 ### Tier B: Tests of the Mathematical Structure
 
-**4. Power-Max Lemma — Independent Replication**
+**4. Bounded simulation transfer — Independent replication**
 - **What it tests:** Whether coupled multiplicative agents under long horizon and enforced `η = 0` select syntropic-frontier outcomes (`ΔP_node,i >= 0` and `ΔP_node,H >= 0`) more strongly than additive baselines in agent simulations NOT designed by the framework authors.
-- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional: it requires coupling, product scoring, long horizon, and an enforced non-extraction floor. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
+- **Why it matters:** Protocol D is a local `[B]` result with conditional `[S]`
+  model consequences. Independent preregistered replication could establish
+  the frozen CM12 empirical transfer `[A]`. It cannot promote the
+  Justice-constrained Power-Max objective from its chosen normative tier `[I]`
+  or prove universal convergence `[C]`.
 - **Status:** Submission-ready paper. Needs independent team.
 
 **5. AMRITA — Spherical Alignment vs. RLHF**
@@ -129,14 +143,21 @@ These tests are informative. They are not decisive. They test operationalization
 ### Tier C: Tests That Would Falsify
 
 **7. Alternative Geometry Challenge**
-- **What would falsify:** Demonstrating that a non-S² substrate (hyperbolic, toroidal, higher-dimensional) reproduces the same cross-domain convergence with equal or greater parsimony.
-- **Why it matters:** The framework claims S² is *unique* given the older public ontological wager O1-O5. But if someone constructs a viable framework on a torus or H² that explains the same data, the uniqueness claim collapses.
-- **Status:** Open challenge. No takers yet.
+- **What would falsify:** Demonstrating that a non-`S²` representation reproduces
+  the same calibrated cross-domain results with equal or greater parsimony.
+- **Why it matters:** `S²` is selected, not uniquely derived. A better
+  representation kills or narrows the ontological and explanatory wager while
+  leaving the reciprocal-chart identity intact.
+- **Status:** Open comparison; no exclusivity result exists.
 
 **8. Core Proof Error**
-- **What would falsify:** Finding an uncorrectable error in Correspondence 21 (Triadic Stability), Demonstration 22 (Power Maximum), or Convergence 24 (Geometric Exclusion).
-- **Why it matters:** The formal system stands or falls on the mathematics.
-- **Status:** Open challenge. AI reviews have not found fatal errors.
+- **What would falsify:** Finding an error in a precisely typed local theorem,
+  derivation, or implementation claim.
+- **Why it matters:** Each local mathematical claim stands or falls on its own
+  assumptions. The worldview does not stand or fall as one block, and the
+  superseded geometric-exclusion proof cannot derive morality or make
+  extraction impossible.
+- **Status:** Ongoing local review; prior AI review is not external calibration.
 
 ---
 
@@ -186,11 +207,10 @@ The emergence public route is therefore:
 
 The GFS lane is retired and is not a public validation path. It may not be revived by relabeling a follow-up as a refinement; a future human study must be newly preregistered and independently evidenced.
 
-The current stranger-runnable companion for that route now lives in:
-
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md)
+The former stranger-runnable companion was an external application artifact. It
+is not an active Emergentism source route. Any successor must be rebuilt inside
+this corpus from the current formula hierarchy, evidence tiers, and proof
+boundaries before it can count as a replication packet.
 
 ---
 
@@ -257,7 +277,10 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Report test status honestly.** CONFIRMED, MIXED, NEGATIVE, PENDING — use the actual status. Do not upgrade or downgrade.
 2. **Do not excuse failures.** If a test fails, report it. The framework's integrity depends on honest reporting.

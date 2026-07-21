@@ -17,7 +17,7 @@ const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
 const INITIAL_ASSAY_SECONDS = 1.6;
-// Skyzai motion discipline: bounded drift, no bounce/spring. These are assay
+// Motion discipline: bounded drift, no bounce/spring. These are assay
 // cycles, not decorative loops; motion only exists to expose a measured state.
 const INSTRUMENT_CPS = {
   slow: 0.018,
@@ -72,22 +72,22 @@ const modeLabels = {
   logline: "D1 reciprocal line",
   muLimit: "D2 mu-limit",
   bloch: "D3 Riemann/Bloch",
-  horn: "D4 rapidity torus",
-  burrisphere: "D5 dual projection",
+  horn: "D4 actuality · mass-shell overlay",
+  burrisphere: "D5 possible-content projection",
   constitution: "5+1 constitution",
-  ccc: "/6 CCC return",
-  convergence: "/6 CCC return"
+  ccc: "D6 boundary return",
+  convergence: "D6 boundary return"
 };
 const modeInvariants = {
   titans: "s_left + s_right = 0",
   logline: "x·1/x = 1",
   muLimit: "rank +1 at μ",
   bloch: "φ·ν = 1",
-  horn: "R/r = 1/γ",
+  horn: "visual overlay: R/r = 1/γ",
   burrisphere: "φ·ν = 1 · B=sinθ",
   constitution: "5 refusals + Ω",
-  ccc: "/6 ≡ /0",
-  convergence: "/6 ≡ /0"
+  ccc: "/6 ~ /0",
+  convergence: "/6 ~ /0"
 };
 const modeInstrumentIds = {
   titans: "E0-FRM",
@@ -105,8 +105,8 @@ const modeScales = {
   logline: { x: "log₂(x) axis", y: "E=(ln x)² well" },
   muLimit: { x: "λ along source line", y: "μ orthogonal lift" },
   bloch: { x: "complex-plane radius", y: "sphere latitude θ" },
-  horn: { x: "rapidity w", y: "means ratio dτ/dt" },
-  burrisphere: { x: "ν means radius", y: "Φ worldline sight θ" },
+  horn: { x: "rapidity w", y: "optional visual ratio" },
+  burrisphere: { x: "ν chart radius", y: "φ chart latitude θ" },
   constitution: { x: "fence index", y: "closure residual" },
   ccc: { x: "aeon phase q", y: "conformal radius Ω" },
   convergence: { x: "aeon phase q", y: "conformal radius Ω" }
@@ -184,14 +184,14 @@ const dimensionCommands = [
   { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "/1/" },
   { key: "/2", aliases: ["/2", "2", "d2", "mu", "mu-limit"], label: "/2 · Mu-Limit", detail: "Line to plane", href: "/2/" },
   { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Sphere", detail: "Closure surface", href: "/3/" },
-  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Horn Torus", detail: "Energy overlap", href: "/4/" },
-  { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Burrisphere", detail: "Dual projection", href: "/5/" },
-  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · CCC Return", detail: "Endstate = start", href: "/6/" },
+  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Actuality", detail: "Mass-shell lens; torus optional", href: "/4/" },
+  { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Possibility", detail: "Modeled option field", href: "/5/" },
+  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · Boundary Return", detail: "Role similarity, never identity", href: "/6/" },
   { key: "R", aliases: ["rosetta", "r"], label: "Rosetta", detail: "Sevenfold map", href: "/rosetta/" },
   { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "/soul-loop/" },
   { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "/atlas/" },
-  { key: "EM", aliases: ["cascade", "emergence"], label: "Emergence", detail: "Animation", href: "/cascade.html" },
-  { key: "SP", aliases: ["sphere-instrument", "burri", "burri-sphere"], label: "Burri Sphere", detail: "Instrument", href: "/sphere.html" }
+  { key: "EM", aliases: ["cascade", "emergence"], label: "Emergence lens", detail: "Degrees of freedom", href: "/discoveries/degrees-of-freedom/" },
+  { key: "SP", aliases: ["sphere-instrument", "burri", "burri-sphere"], label: "Burrisphere", detail: "Selected chart", href: "/discoveries/burrisphere/" }
 ];
 
 let THREE;
@@ -831,7 +831,7 @@ function drawConstitutionInstrument(time = 0) {
   const sampleClock = createSampleClock();
   const fences = [
     { key: "η=0", title: "no extraction", tier: "[S]", color: "#FFEB3B" },
-    { key: "K2", title: "human signature", tier: "[B/S]", color: "#42A5F5" },
+    { key: "AUTH", title: "accountable authorization", tier: "[I/S]", color: "#42A5F5" },
     { key: "K3", title: "archive first", tier: "[S]", color: "#F3F4F6" },
     { key: "K4", title: "grace exit", tier: "[S]", color: "#8B5CF6" },
     { key: "A7", title: "self-correction", tier: "[S]", color: "#4CAF50" }
@@ -1317,9 +1317,9 @@ function isCompactInstrument(width = 0) {
   return measured < 700;
 }
 
-// Morphing horn torus driven by one-sided RAPIDITY. At w = 0 it is the horn
-// touch (R = rt). As w grows, v/c = tanh(w) -> 1 and the major radius R tends
-// to 0: the torus converges asymptotically toward the sphere/light boundary.
+// Optional horn-torus visualization driven by one-sided rapidity. This is a
+// deliberately selected graphic overlay, not the physical light cone, a
+// topology change in relativity, or a D4-to-D5 emergence mechanism.
 function makeMorphTorus(outer = 1.7, rings = 48, seg = 18, color = 0xffffff) {
   const verts = [];
   for (let i = 0; i < rings; i++) {            // meridian rings (around the tube)
@@ -1707,11 +1707,10 @@ function buildScene(mode, scene) {
 
   if (mode === "horn") {
     if (visual) visual.classList.add("horn-visual");
-    // The horn torus STANDS ON the complex plane the Riemann sphere stands on.
-    // At rest (rapidity w = 0) it is a HORN: the throat touches at a single
-    // relative centre on the fixed plane / unit circle |z|=1. A one-way rapidity
-    // slider sends w toward infinity: β tends to c, R/r tends to 0, and the
-    // finite drawing approaches the sphere limit without pretending to reach it.
+    // The renderer places a selected horn-torus emblem over a reference plane.
+    // This placement is pedagogical, not the geometry of special relativity and
+    // not a derivation from the mass shell. A one-way rapidity slider drives a
+    // selected morph law while the tested relativistic quantities remain separate.
     root.add(createGridPlane(6.4, 21));                          // the complex plane
     root.add(createTickedRing(1.0, 0xffeb3b, 0.38, 40));          // unit circle |z|=1  (x=1, Suda)
     root.add(line([new THREE.Vector3(-3.1, 0, 0), new THREE.Vector3(3.1, 0, 0)], 0x555555, 0.36));
@@ -1726,9 +1725,9 @@ function buildScene(mode, scene) {
     const properTimeGauge = createTickedRing(1.0, 0x42a5f5, 0.36, 40);
     properTimeGauge.position.y = 0.014;
     addSceneLabel(root, "horn touch", new THREE.Vector3(-1.42, 0.12, 0.12), 0xffeb3b, [0.78, 0.14]);
-    addSceneLabel(root, "sphere limit shell", new THREE.Vector3(1.15, 1.58, 0.06), 0x42a5f5, [1.0, 0.15]);
-    addSceneLabel(root, "R/r = 1/γ", new THREE.Vector3(1.32, -0.16, 1.1), 0xf3f4f6, [0.78, 0.14]);
-    addSceneLabel(root, "dτ/dt gauge", new THREE.Vector3(-1.2, 0.18, -1.15), 0x42a5f5, [0.86, 0.14]);
+    addSceneLabel(root, "optional limit shell", new THREE.Vector3(1.15, 1.58, 0.06), 0x42a5f5, [1.0, 0.15]);
+    addSceneLabel(root, "imposed R/r := 1/γ [I]", new THREE.Vector3(1.32, -0.16, 1.1), 0xf3f4f6, [1.08, 0.14]);
+    addSceneLabel(root, "dτ/dt = L∥/L₀ = 1/γ (scoped)", new THREE.Vector3(-1.2, 0.18, -1.15), 0x42a5f5, [1.22, 0.14]);
     const rapidityTrace = line([new THREE.Vector3(0, 0.018, 0), new THREE.Vector3(0, 0.018, 0)], 0x42a5f5, 0.58);
     const properTimeChart = createStripChart(new THREE.Vector3(-1.55, -1.58, 0.08), 3.1, 0.42, 0x42a5f5, 120, "dτ/dt = 1/γ", 0x42a5f5, {
       targetValue: 1,
@@ -1752,9 +1751,9 @@ function buildScene(mode, scene) {
       sliderControl = createModelSlider({
         className: "rapidity-slider",
         leftLabel: "w=0 · horn",
-        rightLabel: "w→∞ · sphere limit",
+        rightLabel: "w→∞ · selected sphere morph",
         value: "0",
-        ariaLabel: "rapidity from horn touch toward the infinite light-speed sphere limit"
+        ariaLabel: "optional torus overlay across a rapidity range"
       });
       slider = sliderControl ? sliderControl.input : null;
       if (slider) slider.addEventListener("input", () => { userActive = true; });
@@ -1778,13 +1777,11 @@ function buildScene(mode, scene) {
       if (sliderControl) sliderControl.setOutput("w = " + w.toFixed(2));
       const vc = Math.tanh(w);                                  // β = v/c — tends to 1
       const aB = Math.abs(vc);
-      const gamma = Math.cosh(w);                               // γ — the relativistic-mass factor
+      const gamma = Math.cosh(w);                               // γ — Lorentz factor; E/(mc²) for invariant rest mass m
       const k = Math.exp(w);                                    // Doppler factor = e^w (the log line: w = ln k)
-      // EXACT morph law: f = γ/(γ+1), so the mouth ratio R/rt = (1−f)/f = 1/γ
-      // = B = dτ/dt — the throat IS the rate of lived (proper) time. At rest
-      // γ=1 → R=rt (HORN); as β→1, γ→∞ and R→0 asymptotically — the overlap
-      // completes only in the limit, and the torus RESOLVES INTO A SPHERE —
-      // the Burrisphere — which then projects upward.
+      // Selected morph law: f = γ/(γ+1), so the drawn ratio is 1/γ. This
+      // visual equality is imposed by the renderer and does not derive a torus
+      // from relativity or make a sphere the physical limit of the torus.
       const f = gamma / (gamma + 1);
       const g = torus.setF(f);
       torus.mesh.material.opacity = 0.24 + 0.045 * aB;
@@ -1822,32 +1819,33 @@ function buildScene(mode, scene) {
       );
       if (readout) {
         const limitState = !moving
-          ? "rest: E=mc² · R=r"
+          ? "rest: E=mc² · invariant m · R=r"
           : gamma > 20
-            ? "asymptote: γmc² diverges"
-            : "approach: β tends to c";
+            ? "asymptote: E/mc²=γ diverges"
+            : "approach: massive β<c";
         readout.textContent = isCompactInstrument()
-          ? "D4 HORN · RAPIDITY 0→∞\n" +
+          ? "D4 ACTUALITY · OPTIONAL TORUS OVERLAY\n" +
             "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=" + gamma.toFixed(1) + "\n" +
-            "R/r=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + "\n" +
+            "imposed R/r:=" + (1 / gamma).toFixed(3) + " · dτ/dt=" + (1 / gamma).toFixed(3) + "\n" +
             "σ(R/r)=" + morphResidual.toExponential(1) + " · " + limitState
-          : "D4 HORN · RAPIDITY ASSAY\n" +
+          : "D4 ACTUALITY · RAPIDITY / OPTIONAL OVERLAY\n" +
             "w=" + w.toFixed(2) + " · β=" + vc.toFixed(4) + " · γ=" + gamma.toFixed(1) + " · E/mc²=γ\n" +
-            "R/r=dτ/dt=" + (1 / gamma).toFixed(3) + " · k=e^w=" + k.toFixed(2) + " · σ(R/r)=" + morphResidual.toExponential(1) + "\n" +
-            "trace: sampled proper-time ratio · " + limitState;
+            "dτ/dt=L∥/L₀=" + (1 / gamma).toFixed(3) + " (distinct scoped measurements) · k=e^w=" + k.toFixed(2) + "\n" +
+            "overlay R/r:=" + (1 / gamma).toFixed(3) + " by renderer · σ=" + morphResidual.toExponential(1) + " · " + limitState;
       }
     });
   }
 
   if (mode === "burrisphere") {
     if (visual) visual.classList.add("burrisphere-visual");
-    // THE DUAL TANGENT-PLANE STEREOGRAPHIC PROJECTION — the real geometry.
+    // THE DECLARED DUAL TANGENT-PLANE STEREOGRAPHIC PROJECTION.
     // The sphere is sandwiched between two copies of the SAME complex plane:
     // the floor touches it at 0 (south pole), the top plane touches it at ∞
     // (north pole). From ∞ a straight ray through P lands DOWN on the floor at
     // radius 2r·cot(θ/2) = 2r·φ; from 0 a straight ray through P lands UP on
     // the top plane at 2r·tan(θ/2) = 2r·ν. Both rays pass through P — the two
-    // projections meet ON the sphere. φ·ν = 1 throughout. The unit circles
+    // projections meet ON the sphere. After normalization by 2r, φ·ν = 1
+    // throughout the open chart; the raw radii multiply to 4r². The unit circles
     // (radius 2r on each plane) are the equator's two shadows: the φ/ν
     // balance boundary. As ψ rotates while θ sweeps, both landings SPIRAL through the
     // quadrants — reciprocal radii, crossing their unit circles together.
@@ -1877,6 +1875,7 @@ function buildScene(mode, scene) {
     addSceneLabel(root, "∞ plane", new THREE.Vector3(-3.1, r + 0.08, -2.35), 0x9ca3af, [0.9, 0.15]);
     addSceneLabel(root, "0 plane", new THREE.Vector3(-3.1, -r + 0.08, -2.35), 0x9ca3af, [0.84, 0.15]);
     addSceneLabel(root, "equator B=1", new THREE.Vector3(1.18, 0.12, 0.08), 0xffeb3b, [0.86, 0.14]);
+    addSceneLabel(root, "quadrant tint = game gloss [I]", new THREE.Vector3(2.55, r + 0.08, -2.35), 0x9ca3af, [1.15, 0.13]);
 
     // four quadrant probes on the ∞-plane (the ν-chart): balanced/foresight
     // samples stay inside the unit circle; means-heavy samples fall outside.
@@ -1886,9 +1885,9 @@ function buildScene(mode, scene) {
     // Map the instrument into quadrants without moralizing the geometry. The
     // ∞-plane splits by two axes: Im(z) = foresight-heavy / means-heavy,
     // Re(x) = outward / inward move orientation.
-    // The OVERLAP is the unit-circle disc (the equator's shadow): the region
-    // where the φ-chart and ν-chart coincide and all four moves meet at balance
-    // — ⊙1, L4. It is a calibrated target band, not an automatic moral verdict.
+    // Equality φ=ν=1 occurs on the two unit-circle RINGS (the equator's two
+    // projections), not throughout either disc. Quadrant tints are optional
+    // game-reading guides and carry no geometric or moral valence.
     const quadTint = (sx, sz, color) => {
       const m = new THREE.Mesh(
         new THREE.PlaneGeometry(U, U),
@@ -1899,18 +1898,12 @@ function buildScene(mode, scene) {
     };
     quadTint(1, 1, FORESIGHT); quadTint(-1, 1, FORESIGHT); // Im>0 — Φ-heavy
     quadTint(-1, -1, MEANS); quadTint(1, -1, MEANS);       // Im<0 — V-heavy
-    const overlap = new THREE.Mesh(
-      new THREE.CircleGeometry(U, 48),
-      new THREE.MeshBasicMaterial({ color: FORESIGHT, transparent: true, opacity: 0.05, side: THREE.DoubleSide, depthWrite: false }));
-    overlap.rotation.x = -Math.PI / 2; overlap.position.y = r + 0.006; root.add(overlap); // the balance overlap (⊙1 / L4)
-
-    // THE TRANSCENDENTALS ARE THE STATIONS OF THE GEOMETRY ITSELF — the
-    // {0, 1, ∞} scaffold the game is played on: • 0 at the floor touch,
-    // ○ ∞ at the top touch, ⊙ 1 at the centre (the gold equator is the
-    // circle of the ⊙ glyph). The Titans READ these signs from latitudes —
-    // Śiva reads •, Brahmā reads ○, Viṣṇu reads ⊙ — they are not seated at
-    // the poles (the pole ROWS are L0 Kāla / L∞ Trimūrti per the nine-row).
-    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055)); // ⊙ — the One at the centre (Viṣṇu's sign)
+    // {0,1,∞} are selected frame labels: 0 and ∞ mark chart limits, while the
+    // self-reciprocal value 1 occurs on the equator. The Euclidean centre is not
+    // on S² and is not the value 1. We retain a gold centre point only as the
+    // optional [I] Turīya/interior marker requested by the AUM visualization.
+    root.add(makeMarker(new THREE.Vector3(0, 0, 0), 0xffeb3b, 0.055));
+    addSceneLabel(root, "centre / Turīya marker [I]", new THREE.Vector3(0.22, -0.2, 0.08), 0xffeb3b, [1.0, 0.13]);
 
     const pMark = makeMarker(new THREE.Vector3(r, 0, 0), 0xffffff, 0.085); // P — where the two rays meet
     const rayDown = line([N, new THREE.Vector3(U, -r, 0)], FORESIGHT, 0.58); // ∞ → P → floor: lands at 2r·φ
@@ -1941,7 +1934,7 @@ function buildScene(mode, scene) {
     const nuRange = createTickedRing(U, MEANS, 0.14, 56);
     phiRange.position.y = -r + 0.01;
     nuRange.position.y = r + 0.01;
-    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "U_B bridge", 0x42a5f5, {
+    const balanceChart = createStripChart(new THREE.Vector3(-1.7, -1.36, 0.08), 3.4, 0.42, 0x42a5f5, 120, "B chart score", 0x42a5f5, {
       targetValue: 1,
       targetBand: [0.94, 1],
       targetColor: 0xffeb3b
@@ -1964,10 +1957,10 @@ function buildScene(mode, scene) {
     if (visual) {
       thetaSliderControl = createModelSlider({
         className: "theta-slider",
-        leftLabel: "Φ sight",
-        rightLabel: "V means",
+        leftLabel: "φ foresight gloss [I]",
+        rightLabel: "ν means gloss [I]",
         value: "50",
-        ariaLabel: "theta latitude from D5 worldline foresight through balance to D4 means-to-act"
+        ariaLabel: "reciprocal chart latitude across modeled foresight and actual means proxies"
       });
       thetaSlider = thetaSliderControl ? thetaSliderControl.input : null;
       if (thetaSlider) thetaSlider.addEventListener("input", () => { thetaUserActive = true; });
@@ -2005,7 +1998,7 @@ function buildScene(mode, scene) {
       const cps = Math.cos(psi), sps = Math.sin(psi), sT = Math.sin(theta);
       const P = new THREE.Vector3(r * sT * cps, r * Math.cos(theta), r * sT * sps);
       pMark.position.copy(P);
-      // the TRUE landings: collinear with (∞,P) and (0,P) by the half-angle identities
+      // Analytic landings in this declared convention: collinear with pole and P.
       const Lphi = new THREE.Vector3(U * phi * cps, -r, U * phi * sps);
       const Lnu = new THREE.Vector3(U * nu * cps, r, U * nu * sps);
       phiPt.position.copy(Lphi);
@@ -2044,17 +2037,17 @@ function buildScene(mode, scene) {
       const moveName = isBalance
         ? "BALANCED (φ≈ν≈1)"
         : isForesightDominant
-          ? "D5 sight proxy > D4 means proxy"
-          : "D4 means proxy > D5 sight proxy";
+          ? "modeled foresight proxy > actual means proxy"
+          : "actual means proxy > modeled foresight proxy";
       const balance = Math.sin(theta);
       const imbalance = Math.abs(Math.log(Math.max(phi, 1e-6)));
-      const energyCost = 1 / Math.max(balance, 1e-6);
+      const inverseScore = 1 / Math.max(balance, 1e-6);
       const reciprocalResidual = Math.abs(phi * nu - 1);
       const rayResidual = Math.max(pointLineResidual(N, P, Lphi), pointLineResidual(S, P, Lnu));
-      const finiteCouplingProxy = balance;
-      updateStripChart(balanceChart, finiteCouplingProxy, 0, 1, sampled);
+      const chartScore = balance;
+      updateStripChart(balanceChart, chartScore, 0, 1, sampled);
       setInstrumentMetric(
-        "B " + balance.toFixed(3) + " · U " + finiteCouplingProxy.toFixed(3),
+        "B " + balance.toFixed(3) + " · chart only",
         thetaUserActive ? "manual latitude" : "reciprocal sweep",
         "phase " + (((psi % TAU) + TAU) % TAU / TAU).toFixed(2),
         "σ φν " + reciprocalResidual.toExponential(1) + " · ray " + rayResidual.toExponential(1),
@@ -2070,15 +2063,15 @@ function buildScene(mode, scene) {
         }
       );
       if (readout) readout.textContent = isCompactInstrument()
-        ? "D5 BURRISPHERE · DUAL PROJECTION\n" +
+        ? "D5 POSSIBLE CONTENT · DUAL PROJECTION\n" +
           "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + "\n" +
-          "B=" + balance.toFixed(3) + " · U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + "\n" +
+          "B=" + balance.toFixed(3) + " · 1/B=" + inverseScore.toFixed(2) + " · normalized φν=1\n" +
           "σφν=" + reciprocalResidual.toExponential(1) + " · σray=" + rayResidual.toExponential(1) + "\n" +
           "quadrant " + q + " · " + opName
-        : "D5 BURRISPHERE · DUAL-PROJECTION ASSAY\n" +
+        : "D5 POSSIBLE CONTENT · DUAL-PROJECTION ASSAY\n" +
           "θ=" + (theta * 180 / Math.PI).toFixed(0) + "° " + (thetaUserActive ? "hold" : "sweep") + " · φ=" + phi.toFixed(2) + " · ν=" + nu.toFixed(2) + " · φν=1 · B=" + balance.toFixed(3) + "\n" +
-          "U_B=" + finiteCouplingProxy.toFixed(3) + " · γ≈" + energyCost.toFixed(2) + " · |lnφ|=" + imbalance.toFixed(2) + " · σ=" + Math.max(reciprocalResidual, rayResidual).toExponential(1) + "\n" +
-          "trace: bridge viability · quadrant " + q + " · " + opName;
+          "1/B=" + inverseScore.toFixed(2) + " · |lnφ|=" + imbalance.toFixed(2) + " · σ=" + Math.max(reciprocalResidual, rayResidual).toExponential(1) + "\n" +
+          "trace: selected chart score · quadrant " + q + " · " + opName;
     });
   }
 
@@ -2205,7 +2198,7 @@ function buildScene(mode, scene) {
       updateStripChart(closureChart, q, 0, 1, sampled);
       setInstrumentMetric(
         "a " + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω " + (conformalRadius / boundaryRadius).toFixed(2),
-        "CCC rescale analogy",
+        "optional rescale analogy",
         "phase " + leadPhase.toFixed(2),
         "σ q-map " + mapResidual.toExponential(1) + " · close " + closureResidual.toExponential(1),
         {
@@ -2220,10 +2213,10 @@ function buildScene(mode, scene) {
         }
       );
       if (readout) readout.textContent =
-        "CCC RETURN · CONFORMAL RESCALE\n" +
-        "/6 ≡ /0 · route closure, not a new object\n" +
+        "BOUNDARY RETURN · OPTIONAL RESCALE\n" +
+        "/6 ~ /0 · role similarity, never identity\n" +
         "a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + " · q+(1−q)=1 · σ=" + mapResidual.toExponential(1) + "\n" +
-        "trace: boundary return · Penrose CCC is analogy, not identity";
+        "trace: boundary return · cosmological analogies are removable";
     });
   }
 
@@ -2400,4 +2393,174 @@ async function boot() {
   }
 }
 
+function initWindowLemmaInstrument() {
+  const windowCanvas = document.getElementById("window-lemma-canvas");
+  const radiusControl = document.getElementById("window-radius-control");
+  const motionControl = document.getElementById("window-motion");
+  if (!windowCanvas || !radiusControl || !motionControl) return;
+
+  const context = windowCanvas.getContext("2d");
+  if (!context) return;
+
+  const halfChord = 0.5;
+  const resolution = 0.004;
+  const radiusLow = 0.62;
+  const radiusHigh = 400;
+  const radiusBound = (halfChord * halfChord + resolution * resolution) / (2 * resolution);
+  const radiusNode = document.getElementById("window-radius");
+  const sagittaNode = document.getElementById("window-sagitta");
+  const residualNode = document.getElementById("window-residual");
+  const verdictNode = document.getElementById("window-verdict");
+  let running = !REDUCED_MOTION;
+  let cssWidth = 1;
+  let cssHeight = 1;
+
+  function radiusFromControl() {
+    const u = Number(radiusControl.value) / 1000;
+    return Math.exp(Math.log(radiusLow) + u * (Math.log(radiusHigh) - Math.log(radiusLow)));
+  }
+
+  function setControlFromRadius(radius) {
+    const u = (Math.log(radius) - Math.log(radiusLow)) / (Math.log(radiusHigh) - Math.log(radiusLow));
+    radiusControl.value = String(Math.round(clamp01(u) * 1000));
+  }
+
+  function sagitta(radius) {
+    return (halfChord * halfChord) / (
+      radius + Math.sqrt(radius * radius - halfChord * halfChord)
+    );
+  }
+
+  function resizeWindowInstrument() {
+    const bounds = windowCanvas.getBoundingClientRect();
+    cssWidth = Math.max(1, bounds.width);
+    cssHeight = Math.max(1, bounds.height);
+    const pixelRatio = instrumentPixelRatio();
+    windowCanvas.width = Math.max(1, Math.round(cssWidth * pixelRatio));
+    windowCanvas.height = Math.max(1, Math.round(cssHeight * pixelRatio));
+    context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    drawWindowInstrument(radiusFromControl());
+  }
+
+  function drawWindowInstrument(radius) {
+    const separation = sagitta(radius);
+    const detected = separation > resolution;
+    const recoveredRadius = (halfChord * halfChord + separation * separation) / (2 * separation);
+    const residual = recoveredRadius - radius;
+    const scale = cssWidth * 0.78;
+    const originY = cssHeight * 0.38;
+    const px = (x) => cssWidth / 2 + x * scale;
+    const py = (y) => originY - y * scale;
+
+    context.clearRect(0, 0, cssWidth, cssHeight);
+    context.fillStyle = "#050505";
+    context.fillRect(0, 0, cssWidth, cssHeight);
+
+    context.strokeStyle = "rgba(243,244,246,.34)";
+    context.lineWidth = 1;
+    context.setLineDash([5, 5]);
+    context.beginPath();
+    context.moveTo(px(-halfChord), py(separation));
+    context.lineTo(px(halfChord), py(separation));
+    context.stroke();
+    context.setLineDash([]);
+
+    context.strokeStyle = "#FFEB3B";
+    context.lineWidth = 2.2;
+    context.beginPath();
+    for (let index = 0; index <= 220; index += 1) {
+      const x = -halfChord + (2 * halfChord * index) / 220;
+      const y = (x * x) / (radius + Math.sqrt(radius * radius - x * x));
+      if (index === 0) context.moveTo(px(x), py(y));
+      else context.lineTo(px(x), py(y));
+    }
+    context.stroke();
+
+    context.font = "11px Roboto Mono, monospace";
+    context.textAlign = "center";
+    context.fillStyle = "rgba(243,244,246,.62)";
+    context.fillText("fixed window · true aspect", cssWidth / 2, cssHeight * 0.09);
+    context.textAlign = "left";
+    context.fillStyle = "rgba(243,244,246,.45)";
+    context.fillText("chord", px(-halfChord) + 5, py(separation) - 8);
+    context.fillStyle = "#FFEB3B";
+    context.fillText("arc", px(-halfChord) + 5, py(0) + 16);
+
+    const gaugeY = cssHeight * 0.78;
+    const gaugeStart = cssWidth * 0.12;
+    const gaugeEnd = cssWidth * 0.88;
+    const gaugeSpan = gaugeEnd - gaugeStart;
+    const logPosition = (value) => {
+      const exponent = Math.log10(Math.max(value, 1e-7));
+      return gaugeStart + clamp01((exponent + 7) / 7) * gaugeSpan;
+    };
+    context.strokeStyle = "rgba(243,244,246,.22)";
+    context.lineWidth = 1;
+    context.beginPath();
+    context.moveTo(gaugeStart, gaugeY);
+    context.lineTo(gaugeEnd, gaugeY);
+    context.stroke();
+    const resolutionX = logPosition(resolution);
+    context.strokeStyle = "#FF7A17";
+    context.lineWidth = 1.5;
+    context.beginPath();
+    context.moveTo(resolutionX, gaugeY - 13);
+    context.lineTo(resolutionX, gaugeY + 13);
+    context.stroke();
+    context.fillStyle = "#FF7A17";
+    context.textAlign = "center";
+    context.fillText("δ", resolutionX, gaugeY + 28);
+    context.strokeStyle = detected ? "#FFEB3B" : "#2196F3";
+    context.lineWidth = 5;
+    context.beginPath();
+    context.moveTo(gaugeStart, gaugeY);
+    context.lineTo(logPosition(separation), gaugeY);
+    context.stroke();
+    context.beginPath();
+    context.arc(logPosition(separation), gaugeY, 5, 0, TAU);
+    context.fillStyle = detected ? "#FFEB3B" : "#2196F3";
+    context.fill();
+    context.textAlign = "right";
+    context.fillText(detected ? "resolved" : "below resolution", gaugeEnd, gaugeY - 14);
+
+    if (radiusNode) radiusNode.textContent = radius >= 100 ? radius.toFixed(0) : radius.toFixed(2);
+    if (sagittaNode) sagittaNode.textContent = separation < 0.0001 ? separation.toExponential(2) : separation.toFixed(5);
+    if (residualNode) residualNode.textContent = residual.toExponential(1);
+    if (verdictNode) {
+      verdictNode.textContent = detected
+        ? "curvature resolved under circle model · R = " + radius.toFixed(2)
+        : "curvature unresolved · R ≥ " + radiusBound.toFixed(3) + " · not infinity";
+      verdictNode.style.color = detected ? "#FFEB3B" : "#2196F3";
+    }
+  }
+
+  function animateWindowInstrument(time) {
+    if (!running) return;
+    const sweep = (1 - Math.cos(time * 0.0001)) / 2;
+    radiusControl.value = String(Math.round(sweep * 1000));
+    drawWindowInstrument(radiusFromControl());
+    scheduleFrame(animateWindowInstrument);
+  }
+
+  motionControl.addEventListener("click", () => {
+    running = !running;
+    motionControl.textContent = running ? "Pause sweep" : "Resume sweep";
+    motionControl.setAttribute("aria-pressed", running ? "false" : "true");
+    if (running) scheduleFrame(animateWindowInstrument);
+  });
+  radiusControl.addEventListener("input", () => {
+    running = false;
+    motionControl.textContent = "Resume sweep";
+    motionControl.setAttribute("aria-pressed", "true");
+    drawWindowInstrument(radiusFromControl());
+  });
+  window.addEventListener("resize", resizeWindowInstrument);
+  setControlFromRadius(49.87);
+  motionControl.textContent = running ? "Pause sweep" : "Animate sweep";
+  motionControl.setAttribute("aria-pressed", running ? "false" : "true");
+  resizeWindowInstrument();
+  if (running) scheduleFrame(animateWindowInstrument);
+}
+
+initWindowLemmaInstrument();
 boot();

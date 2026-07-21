@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 90_ARCHIVE/old_front_doors/00_FOLDER_LAYOUT_v0.1.md
+canonical_target: ../90_ARCHIVE/old_front_doors/00_FOLDER_LAYOUT_v0.1.md
 status: "FORWARDING STUB — 2026-07-20 (receipt 139 Wave 2). K3: tombstoned, not erased; citations to this path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-20

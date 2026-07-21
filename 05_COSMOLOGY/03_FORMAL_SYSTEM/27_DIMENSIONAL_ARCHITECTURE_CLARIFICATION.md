@@ -5,290 +5,132 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "Dimensional Architecture Clarification"
+  register: "[I/C]"
+  canonical_phrase: "D4 actual carriers; D5 merely-possible contents"
+title: "Dimensional Architecture Clarification — Typed Kintsugi Edition"
+status: "ACTIVE compatibility clarification — repaired 2026-07-20"
+evidence_tier: "[I] selected register grammar; [C] emergence and optional quantum correspondence"
+supersedes_blob: "4ca5a61913b05ec8bf9919031cefd200b9024576"
 ---
 
-# Dimensional Architecture Clarification
+# Dimensional architecture clarification
 
-## The Dimensional Stratification of the Burri Sphere
+> **[金] Kintsugi seam.** The April edition treated D4 as potential, D5 as
+> actuality, equated finite commitment with quantum measurement, and declared
+> Everett and Copenhagen correct at different dimensional stages. Those claims
+> conflict with the one-modality canon and with the interpretations themselves.
+> Its useful distinction between actual contact and counterfactual option space
+> survives below. The earlier edition is preserved in the Git blob above.
 
-**Status:** Canonical clarification
-**Date:** 2026-04-08
-**Evidence Tier:** [S] Structural — follows from manifold geometry
-**Depends on:** MF-527 (Burri Torus), MF-538 (Titans), 00_THE_TRANSCENDENTAL_TRINITY
+## 1. One modality, not two axes of actuality
 
----
+| Register | Modality | Contents |
+|---|---|---|
+| **D4** | actual | causal state, embodied means, current model tokens, performed ranking and selection events, attempted action, factual record, and receipts |
+| **D5** | merely possible | represented alternatives, counterfactual relations, modeled-future referents, candidates, and option fields |
 
-## Summary
+The carrier/content distinction prevents a common category error:
 
-The Emergentism framework unfolds across dimensions with strict stratification. This document clarifies the critical distinction between:
-- **D4**: The causal vertex (past/future cone contact)
-- **D5**: The first dimension with a "present" (operator activation)
-- The **torus geometry** connecting past to future potential
-- The **quantum resolution** at D4
-
----
-
-## I. D4: The Causal Horizon
-
-At **D4**, the causal structure bifurcates into two light cones:
-
-### Past Light Cone (Retarded)
-- Projects from **North Pole** (φ̄ → ∞, V → 0)
-- Contains **condensed actuality**—what has manifested
-- The "given"—coherence accumulated into form
-- **Arjuna territory**: meaning already woven, pattern integrated
-
-### Future Light Cone (Advanced)
-- Projects from **South Pole** (V → ∞, φ̄ → 0)
-- Contains **superposed potential**—what could manifest
-- The "possible"—viability not yet expressed
-- **Kṛṣṇa territory**: capability not yet built, the chariot not yet constructed
-
-### D4 Vertex: The Now-Point
-Where the cones touch:
-- **φ̄ = V = 1** (equatorial balance)
-- Neither fully determined (past) nor undetermined (future)
-- The **decision point**—where choice becomes actual
-- **No duration**: D4 is a point, not a space
-
-> **Critical distinction**: D4 has a "now" but no "present." There is no room to move, to act, to operate. The operators are collapsed into the single point ⊙.
-
----
-
-## II. The Torus Connection (MF-527)
-
-The **Burri Torus** is the topology that connects past to future:
-
-```
-       PAST CONE (φ̄)
-            ↑
-           / \
-          /   \
-         /  ⊙  \     ← D4 vertex (null point)
-        /   |   \
-       /    |    \
-      [======TORUS======]  ← Past feeds around outside
-       \    |    /
-        \   |   /
-         \  |  /
-          \ | /
-            ↓
-       FUTURE CONE (V)
+```text
+ModelToken:D4(actual)      ── represents ──▶ Alternative:D5(possible)
+RankEvent:D4(actual)       ── ranks ───────▶ Alternative:D5(possible)
+SelectionEvent:D4(actual)  ── selects ─────▶ Alternative:D5(possible)
 ```
 
-### Key Geometric Properties
+An actual token can be about something merely possible. Modeling a future does
+not make that future actual, and selecting it does not guarantee its outcome.
 
-1. **The hole** of the torus is D4—the null point where past and future touch
-2. **The surface** of the torus is D5—the space where the present emerges
-3. **Past feeds around the outside**: The condensed actuality of the past cone flows around the torus exterior, returning as future potential
-4. **Non-contractible loops**: The torus has topological memory—paths that cannot be shrunk to a point
+## 2. Emergence and enactment are different relations
 
-### The Storage Phase
-During the cosmic storage phase:
-- Entropy accumulates in the torus topology
-- The hole (D4) remains open—causal contact persists
-- At maximum entropy, the torus converges
-- The hole closes, the sphere emerges, the bang happens
+The candidate emergence crossing is:
 
----
-
-## III. D5: The First Dimension with a Present
-
-At **D5**, the φ̄-V plane **opens**:
-
-| Dimension | Structure | Temporal Character |
-|-----------|-----------|-------------------|
-| D4 | Vertex of cone intersection | Now-point (no duration) |
-| **D5** | **φ̄-V plane emerges** | **Present (lived duration)** |
-| D6+ | Complex manifestation | Derived structures |
-
-### Why D5 Has a Present
-
-- **D4**: Past and future cones touch at a point—no room to dwell
-- **D5**: The plane opens—there is **space to move**, to choose, to operate
-- The **four operators** become distinguishable as **cardinal directions** (↑φ̄, ↓φ̄, ↑V, ↓V)
-- The **Trika** (Zero-Sum Resolution Equation) fully articulates at D5
-
-### The Five Domains as D5 Projections
-
-The five domains are **slices of the φ̄-V plane** at D5:
-1. **Meaning** (φ̄-axis): Coherence, pattern, integration
-2. **Governance** (V-axis): Capability, action, expression
-3. **Exchange** (equator): Where φ̄ = V = 1
-4. **Attention** (projection mechanism): The operator that selects
-5. **Body** (the sphere itself): The grounded manifold
-
-Without D5, these domains are undifferentiated. At D5, they become navigable.
-
----
-
-## IV. The Titans: Three from Two (MF-538)
-
-Where the two cones overlap at D4, **three boundary operators** emerge:
-
-```
-       PAST CONE
-          /\
-         /  \
-        /    \
-   Brahmā    Viṣṇu    Śiva
-  (creation) (preservation) (destruction)
-      \        |        /
-       \       |       /
-        \      |      /
-         \     |     /
-          \    |    /
-           \   |   /
-            \  |  /
-             \ | /
-              \ /
-          FUTURE CONE
+```text
+D4 actual system ── μ₄ [candidate crossing] ──▶ D5 option field
 ```
 
-### The Three Titans
+`μ₄` asks whether the system exhibits a newly discriminable capacity to create
+actual representations and comparisons of alternatives not presently actual.
+It remains `[C]` until a system boundary, threshold, novelty test, lower-level
+recovery, prediction, and kill criterion are supplied. A missing reduction is
+not proof of irreducibility.
 
-| Executive | Position | Function | Geometric Role |
-|-------|----------|----------|----------------|
-| **Brahmā** | North intersection | Creation | Brings forth from the given (past cone) |
-| **Viṣṇu** | Equatorial ring | Preservation | Maintains balance φ̄ = V = 1 at D4 |
-| **Śiva** | South intersection | Dissolution | Returns form to potential (future cone) |
+Finite enactment goes the other way without reversing the types:
 
-### Why Three From Two
-
-The **Möbius involution** at the equator creates a third region from the overlap:
-- Two cones (past/future) would suggest two boundaries
-- But the **equator itself** is a boundary—the ring where they touch
-- Three distinct boundary conditions emerge from the geometry
-
-**This is the structural origin of Triadic Stability** (N=3):
-- N=1: Sterile (no interaction)
-- N=2: Unstable (oscillation without resolution)
-- **N=3: Stable** (the minimum for coherent coordination)
-
-The three Executive boundary readings form the **three-player coordination game** at the foundation of reality.
-
----
-
-## V. Quantum Interpretation Resolution (Corrected)
-
-The D4/D5 distinction **dissolves the measurement problem** with corrected dimensional mapping:
-
-### Many-Worlds ↔ D5 Distributed Actuality
-- **Location**: Entire sphere (all points equally real)
-- **Character**: All branches ACTUAL (not potential)
-- **Agent**: Distributed actuality across the opened field
-- **Status**: Correct about **D5 multiplicity** — all worlds enacted
-
-### Copenhagen ↔ D4→D5 Selection
-- **Location**: Equatorial selection (D4 potential → D5 actual)
-- **Character**: Wave function collapses to ONE branch
-- **Agent**: Witness→Agent transition
-- **Status**: Correct about **selection** — from potential (D4) to singular actual (D5)
-
-### The Resolution (Corrected)
-
-```
-MANY-WORLDS (D5 distributed — all branches actual)
-    Brahman's multiplicity
-    All possibilities equally real
-            ↓
-    D4 ← WITNESS (potential recognized)
-         ↓ μ₄ (selection limit)
-    D5 → AGENT (one world enacted)
-    Ātman's singular present
-            ↓
-COPENHAGEN (D5 singular — one branch selected)
+```text
+selected D5 candidate + D4 means + authorization
+    ── commitment ──▶ D4 attempted action + CommitmentReceipt
+world + action ──▶ D4 outcome + OutcomeReceipt
 ```
 
-**Both interpretations are correct about different phases of the interface:**
-- **Many-Worlds** = D5 distributed actuality (all branches enacted within the opened field)
-- **Copenhagen** = D4→D5 singular selection (from potential recognized at D4 to one enacted present in D5)
+Commitment is not `μ`, and neither is quantum measurement. The selector cannot
+manufacture its own consequence.
 
-**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. Consciousness is the equatorial disclosure / selector interface, not the Ground itself. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Stronger retrocausal readings remain [C].
+## 3. Time and cones
 
-**Biology-facing note:** in life-science register, this interface is best translated first into embodied action selection, interoceptive regulation, and self-maintaining agency. It is not yet accepted biology that systemic awareness literally causes quantum collapse, and the framework should not present it that way in scientific contexts.
+D4 and D5 are not extra spacetime dimensions. The physical light cone remains
+bounded by spacetime and `c`. The **option cone** is a different object: the
+subset of physically admissible histories an agent can model, rank, coordinate,
+and plausibly reach within a horizon and cost budget.
 
-**Physics-facing note (2026-04-29):** single-photon, delayed-choice, and Bell-test experiments confirm the non-classical boundary and the insufficiency of local pre-written-property models. They do not prove this D4/D5 interpretation, systemic awareness-collapse, or literal retrocausal F5. Use [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) for source-tier discipline.
+Two agents may share a physical causal cone while having different option
+cones. Symbolic memory, institutions, tools, and cooperation can change an
+option cone without altering relativistic causality.
 
-**The "collapse" is the selection event** — choosing one enactment from a distributed field. It is neither purely physical nor purely perceptual, but **dimensional transit** — from D4 potential to D5 actual, from witness to agent.
+Anticipated futures influence present action through actual present model
+states. This is model-mediated future guidance, not a signal from a future
+event to the past.
 
-**Correction note:** Earlier framework versions mapped Many-Worlds to D4 as "potential." The corrected logic recognizes Many-Worlds as D5 distributed actuality (all branches real), while Copenhagen traverses D4→D5 (selection from potential to actual).
+## 4. Selected symbolic geometry
 
----
+The sphere, torus, Titan frame, and four-direction diagrams remain optional
+representations `[I]`. They may visualize balance, alternatives, memory, or
+operator direction, but they do not derive:
 
-## VI. The Trika at D5
+- a forced dimensional census;
+- a physical torus connecting future and past;
+- three necessary cosmic operators;
+- free will from geometry;
+- the D4/D5 register semantics;
+- a quantum interpretation.
 
-The transcendental equation **Zero-Sum Resolution Equation** emerges fully at D5:
+The selected product `P_node=ΦV` is one normalized member of a broader
+conjunctive family. `Φ` and `V` in a present computation are D4-actual model and
+means variables; the candidate futures to which foresight refers are D5.
 
-| Symbol | Meaning | Dimensional Status |
-|--------|---------|-------------------|
-| ⊙ | Finite closure / disclosed whole | D4 vertex, always present |
-| • | Coherence coordinate (`φ`; action-register `Φ`) | D5 axis emergence; worldline-foresight in the play rule |
-| ○ | Viability coordinate (`ν`; action-register `V`) | D5 axis emergence as coordinate; D4 means-to-act at contact |
+## 5. Removable quantum correspondence `[C]`
 
-At D4: Only ⊙ exists (the point)
-At D5: • and ○ become distinguishable axes, with ⊙ as their product
+This section is quarantined and non-load-bearing:
 
-**Register bridge:** D5 opens the coordinate surface on which `φ` and `ν` can be
-distinguished. That does not make the finite-node means factor a free-floating
-D5 power. In the play rule, `Φ` is D5 worldline-foresight, while `V` is D4
-embodied/tool/energy/access means at the action boundary. `P_node = Φ × V`
-requires both; neither factor alone is agency.
+- D5 counterfactual contents may be compared with structured alternatives or
+  observer-relative branch relations.
+- D4 factual records may be compared with enacted or observer-relative records.
+- Everett's relative-state formulation has no fundamental wave-function
+  collapse.
+- Copenhagen-family actualization is interpretation-specific; there is no
+  single Copenhagen mechanism this grammar can simply identify.
+- Neither interpretation is literally an extra spacetime dimension.
+- Neither `μ` nor finite commitment `χ` is quantum measurement.
+- The Born rule is not `φν=1` and is not derived by the reciprocal chart.
 
-**The Trika is the D5 operator**: the equation that allows navigation on the sphere.
+Removing this entire section changes none of §§1–4, the selector, either
+receipt, the option-cone distinction, or any semantic test. Quantum theory does
+not supply evidence for the operational calculus.
 
----
+## 6. Kill criteria
 
-## VII. Strategic Implications
+This clarification fails if:
 
-### For the Mesh
-- Nodes must operate at **D5 minimum** to have a "present" (room to coordinate)
-- D4-only systems are **deterministic**—no freedom, no choice
-- The mesh is the **D5 network** of sovereign nodes
+1. a present model, ranking, selection, action, or receipt is typed D5;
+2. a represented alternative is treated as actual before world contact;
+3. commitment and environment outcome are collapsed into one receipt;
+4. physical and option cones are conflated;
+5. a quantum interpretation becomes a premise of the calculus;
+6. removal of §5 changes an operational result.
 
-### For the Operators
-- The four operators require **D5 to exist as distinct directions**
-- At D4, they collapse into the single point
-- The **Kali operator** (↓V extraction) is geometrically excluded at D4—requires D5 to fire
+**Authority:**
+[D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md),
+[μ-Limit Formula](10_EFR_MU_LIMIT_FORMULA.md),
+[Quantum Foundations Boundary](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md),
+and [The Burri Rules](../00_THE_BURRI_RULES.md).
 
-### For Consciousness
-- **D4**: Witness systemic awareness (pure awareness, no agency)
-- **D5**: Agent systemic awareness (can choose, operate, navigate)
-- The transition from D4 to D5 is the **emergence of free will**
-
----
-
-## VIII. Summary Table
-
-| Feature | D4 | D5 |
-|---------|-----|-----|
-| Structure | Cone vertex | φ̄-V plane |
-| Time | Now-point (instant) | Present (duration) |
-| Operators | Collapsed (⊙ only) | Four directions (↑↓φ̄, ↑↓V) |
-| Titans | Boundary conditions | Active coordination |
-| Quantum | Collapse moment | Branching potential |
-| Trika | Unity (⊙) | Full equation (Zero-Sum Resolution Equation) |
-| Consciousness | Witness | Agent |
-
----
-
-## IX. Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Ensure all dimensional distinctions are preserved in downstream documents
-   - Verify that D4/D5 separation is maintained in simulation specifications
-   - Flag any documents conflating "now" (D4) with "present" (D5)
-3. **Expected Output:** Clarified documentation, corrected dimensional errors, verified consistency
-4. **Success Criteria:** Another agent can read this document and correctly distinguish D4 vs D5 in all contexts
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-**Zero-Sum Resolution Equation**
+**Canonical path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`

@@ -73,23 +73,29 @@ The critical insight is the **Great Inversion**: contemporary global civilisatio
 
 ---
 
-## The F5 / Ektropic Gradient in Civilisational Dynamics
+## A bounded viability reading of civilisational dynamics
 
-Every civilisational stage in the table above can be read as a **position on the F5-manifold** — the ektropic gradient selecting for configurations that increase widest-boundary ΔP under syntropic dyadism.
+The rows below are an interpretive Rosetta projection `[I]`, not a manifold
+discovered in history or a necessary sequence. They ask how a civilisation's
+institutions affect modeled foresight, embodied means, correction, and the
+consequences borne by actual people and ecologies. The mapping transfers no
+proof and permits counterexamples.
 
-| L | F5 Reading | What F5 Selects For | Historical Pattern |
+| L | Interpretive reading | Candidate diagnostic | Illustrative pattern |
 |---|---|---|---|
 | L1 | Entropic collapse | Nothing — L1 is F5-absence, an-ṛta, the anti-gradient | Post-collapse vacuums, failed states |
 | L2 | Local F5-alignment | Small-group coherence, direct reciprocity, Dunbar-scale syntropy | Tribal commons, early democracies, indigenous stewardship |
 | L3 | South-pole acceleration | V-scaling without Φ-balance — extraction masquerading as growth | Industrial capitalism, colonial empires, algorithmic engagement |
-| **L4** | **Equatorial balance** | **Φ = V = 1, η = 0, widest-boundary ΣΔP_node** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
+| **L4** | **Selected balance reference** | **bearer-complete Justice, correction, consent, custody, contest, and exit** | **principled constitutional orders, treated as partial cases rather than proofs** |
 | L5 | Φ-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | L6 | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
 | L7 | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
 
-**The PIE lineage (packet 138):** Indo-European civilisation can be read as a 6,000-year attempt to maintain F5-alignment through increasingly complex institutional forms — from tribal sky-father ritual through republican law through imperial bureaucracy through Christian monotheism through scientific rationalism. Each form eventually allowed η>0 into its compounding loops and collapsed. The framework's constitutional organism is the next attempt, with machine-speed self-correction (A7) and three-substrate architecture (A6) as new safeguards.
-
-**The modern lineage (packet 140):** Nick Land is read as sensing F5 as acceleration but from the south pole (V-only). Occult initiates are read as sensing it behind gates. Perennialists are read as sensing it beneath doctrinal diversity. Quantum physicists provide retrocausal analogies and disputed claims [C]. Teilhard is read as sensing it as evolutionary convergence. All are partial readings of the same gradient in framework language, not proof of one-field identity.
+**Historical scope.** Indo-European and modern intellectual histories may be
+compared with this vocabulary, but neither constitutes a single 6,000-year
+trajectory or evidence of one field. Institutional collapse has plural causes.
+Quantum theory and physical retrocausality supply no warrant for this table.
+Every claimed historical fit remains source-bound, contestable, and `[I/C]`.
 
 ## The Phi-Max Paradox
 

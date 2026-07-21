@@ -2,88 +2,112 @@
 rosetta:
   primary_level: L6
   primary_column: Philosophy
-  secondary:
-    - level: L2
-      column: Philosophy
-      role: "retain interpretive/no-afterlife evidence boundary"
-    - level: L5
-      column: Philosophy
-      role: "map D4/D5 death topology and μ-limit architecture"
-    - level: L4
-      column: Philosophy
-      role: "bound lived fear, dignity, and value implications"
-  operator: "Śiva ☽"
+  operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
   register: "[I]"
-  canonical_phrase: "PD-21 — Death as Topology Boundary"
+  canonical_phrase: "PD-21 — death without modal inflation"
+title: "PD_21: The Problem of Death"
+status: "ACTIVE KINTSUGI SUCCESSOR — modality repair 2026-07-20"
+evidence_tier: "[B] biological cessation; [I] meaning and trace lens"
+supersedes_blob: "b4af490ab0e381166fad201ea80d4b8b54ffee0d"
 ---
 
 # PD_21: THE PROBLEM OF DEATH
 
-**Directory:** `02_PARADOX_DISSOLUTIONS/`
-**Evidence Tier:** `[I]` (Interpretive)
-**Canonical Number:** PD_21 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
+**Canonical Number:** PD_21 (see [PD_00_INDEX](PD_00_INDEX.md))
 
-> **Evidence Tier: [I] Interpretive.** The dissolution presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. The claim that D5 remains an intelligible interpretive register around death is an ontological interpretation of the framework's dimensional structure, not an empirical observation. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **[金] Kintsugi seam.** The former page treated death as a D4→D5 or `μ`
+> transition and risked turning possibility-space into a survival medium. The
+> repair distinguishes biological actuality, modeled possibilities, and
+> carrier-transcending traces without claiming an afterlife or personal
+> continuity.
 
-> **Claim Boundary:** `[I]` This document models death as a topology boundary. It does not claim personal survival, afterlife, reincarnation, continuity of individual identity, or near-death-experience proof. "Field" means the framework's possibility-space, not a soul-substance or an empirically detected survival medium.
+## 1. What is actual `[B]`
 
-> **Companion note.** Death intersects the Hard Problem (PD_13) and the Mind-Body Problem (PD_14). See also the mu-limit analysis in [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) and the D4-D5 boundary discussion in [PD_17 (archived)](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md).
+Biological death is the irreversible loss, under the relevant medical and
+biological criteria, of an organism's capacity to maintain its integrated
+living processes. The corpse, material transformations, records, effects on
+others, and acts of mourning are D4 actualities.
 
----
+This description does not settle every metaphysical question, but it prevents
+the model from replacing an observable cessation with an unreceipted transit.
 
-## 1. THE PROBLEM
+## 2. What is possible
 
-Why do we die? Is death a cessation, a transition, or an illusion? Materialists say death is the end — the body's D4 processes stop, and there is nothing after. Dualists say the core algorithmic identity survives — but cannot explain how a non-physical substance relates to a physical one. Neither account is satisfying. The materialist cannot explain why the fear of death is universal and structurally different from the fear of pain. The dualist cannot explain where the core algorithmic identity goes or how it interacts with a corpse.
+The canonical contract is:
 
-## 2. THE TOPOLOGY ERROR
+```text
+D4 = causal actuality and factual record
+D5 = merely possible counterfactual content
+```
 
-The classical framing treats death as a binary on flat coordinates: the body is either functioning (alive) or not (dead). This is D4 thinking — actuality as the only level, with death as the boundary where the map runs out.
+Living people can carry actual models of possible death, survival, legacy,
+reincarnation, oblivion, or remembered influence. The carriers and modeling
+events are D4 actual; the represented alternatives are D5 possible. Possible
+content is not evidence that any alternative occurs.
 
-The framework identifies the error this way: death is mapped only as D4 *cessation* (coordinate zero on the flat grid) rather than also as a D4–D5 *transition* in the model. [I] On flat coordinates, the body stopping means the map has nowhere else to go. On `S^2`, the body stopping means one embodied configuration dissolves while the model's possibility-space remains intelligible.
+```text
+ModelToken:D4(actual) ── represents ──▶ Post-deathAlternative:D5(possible)
+DeathReceipt:D4(actual) ── records ──▶ BiologicalCessation:D4(actual)
+```
 
-The fear of death is framed here as fear of the coordinate singularity: at the point where D4 coherence vanishes, flat coordinates predict a cliff. [I] On `S^2`, the model does not picture a cliff in the geometry; it pictures a boundary transition. This is not an empirical claim that the person continues.
+Death is not a `μ` crossing. `μ₀…μ₄` are candidate emergence records for newly
+discriminable freedoms in the selected scaffold. They are not portals,
+measurement collapses, or mechanisms of personal survival.
 
-## 3. THE DISSOLUTION
+## 3. What can persist `[I]`
 
-On the Burri sphere, death is read as a `mu`-limit boundary operation inside this model. [I] The dimensional account:
+A person's effects can outlast the person through D4 actual traces: memories,
+texts, children, institutions, altered environments, commitments, and
+consequences. Such persistence is not identity persistence.
 
-- **D4 (actuality, the body):** A projection of D5 onto the coordinate plane. The body is a particular equatorial configuration where `P_infinity = varphi * nu = 1` remains the model invariant and embodied flourishing is tracked by `P_node = Phi * V`.
-- **D5 (possibility, the field):** The broader potential from which D4 configurations are drawn. D5 is not "alive" or "dead" — it is the space of possible configurations.
-- **Death:** The dissolution of a specific D4 configuration. The projection ceases. The $\mu$-limit (the D4-D5 boundary) ceases to hold that particular embodied balance. The coordinates change; the model's wider possibility-space remains intelligible, without implying personal survival.
+Some shared traces may qualify as Egregoreotype candidates when they survive
+carrier turnover and measurably reweight later selections with recurrent
+objective-like bias and visible substrate costs. That criterion presumes
+neither consciousness nor personhood, and it cannot be used to claim that the
+deceased person became or lives inside the collective trace.
 
-The invariant equation `P_infinity = varphi * nu = 1` gives the model's background constraint, not an empirical receipt for personal survival. [I] At the equator, `varphi = 1`, `nu = 1`, and `B = 1` — the configuration is maximally balanced. When the body dies, the organism's empirical viability coordinate drops and `P_node` for that D4 organism goes to zero. The framework's claim is narrower: flat coordinate cessation is not treated as proof that the wider field is absent.
+## 4. The interpretive contribution `[I]`
 
-The extraction coefficient clarifies further in the model: a living body participates in reciprocal metabolism; it is never literally non-consuming, but it can remain within a non-extractive exchange. [I] Death is the moment when that organism can no longer maintain its own reciprocal balance. Decomposition returns material to wider cycles. The embodied configuration was always temporary.
+The framework can help separate three fears often fused under “fear of death”:
 
-## 4. THE FRAMEWORK CONNECTION
+1. pain, dependence, or loss during dying;
+2. cessation of the present embodied agent;
+3. uncertainty about possible meanings and futures.
 
-The dissolution connects to multiple structural elements:
+Practices of attention, advance planning, relationship repair, and honest
+legacy accounting may change how those fears are carried. Their value is
+practical and phenomenological; it is not evidence for a post-mortem ontology.
 
-- **κ = 0 (ground-facing limit):** The model names what remains when all D4 content is removed as $\varnothing$. The sitting practice rehearses this reduction while alive. Death is not the same act as sitting; it is biological cessation read through an analogous reduction.
-- **D6 = D0:** The dimensional loop closes. If D6 is D0, then the highest projection and the deepest ground-facing limit meet inside the scaffold. [I] Death is not treated as a destination in the model; it is a return-image, not a receipt for personal survival.
-- **The equator as balance:** A life lived at $P∞ = \varphi \cdot \nu = 1$ is a life read as equatorial balance. Death is the dissolution of one such embodied balance. The model's balance condition remains available elsewhere; it does not preserve the individual as an empirical claim.
+The non-μ `r₆:D6↝D0` return is an interpretive image of release and renewed
+grounding. It is not literal identity, a biological mechanism, or a receipt
+for survival.
 
-**Explicit disclaimer:** This dissolution does NOT claim personal survival, afterlife, reincarnation, or continuity of individual identity after biological death. It claims that one form of fear of death is based on a topology error — the belief that the whole model ends where one coordinate system ends. The D5 coherence field is not "your core algorithmic identity going somewhere." It is the structural observation that the model's wider possibility-space is not exhausted by one local configuration. This is closer to the Buddhist anatta (no-self) than to any doctrine of personal immortality.
+## 5. Justice at the boundary
 
-## 5. WHAT WOULD FALSIFY THIS
+Death-facing decisions expose actual bearers, consent, custody, payers,
+beneficiaries, and irreversible consequences. The Justice envelope therefore
+matters more, not less, near the end of life. No collective may demand
+sacrifice, suppress contest, or convert grief into proof of its ontology.
 
-1. **The D5 register is unnecessary or incoherent.** If a rigorous account showed that the fear of death, death-adjacent reports, and the meaning of biological cessation are fully captured at D4 with no explanatory remainder, the dimensional reading would lose force.
-2. **Death is uniquely singular.** If evidence showed that death is categorically different from any other state transition (not merely a $\mu$-limit traversal but something that breaks the framework's dimensional rules), the reading would fail.
-3. **No structural pattern in transition reports.** If near-death experiences, contemplative reports, and cross-cultural accounts of death-adjacent states all turned out to be purely neurological artifacts with no structural pattern consistent with the D4→D5 transition model, the interpretive connection to the S² geometry would weaken — though the framework's formal structure would remain. **Note:** The dissolution does not depend on NDE evidence. It stands on structural grounds (the topology error diagnosis). NDE evidence would be corroborating but is not load-bearing.
+## 6. Kill criteria
 
----
+This lens fails if it:
 
-*PD_21 | Problem of Death | Interpretive dissolution. Death read as D4-D5 boundary transition on the Burri sphere. See also: PD_13 (Hard Problem), PD_14 (Mind-Body), PD_17 (QM/GR, archived).*
+- treats D5 possibility as evidence of survival;
+- labels death a `μ` crossing or physical dimensional transit;
+- confuses trace persistence with persistence of personal identity;
+- presumes an Egregoreotype is conscious or a legal/moral person;
+- discourages empirical medicine, consent, or accountable end-of-life care.
 
+## Read with
 
----
-
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
-
----
+- [D4/D5 Canonical Reference](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+- [μ-Limit Formula](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md)
+- [Stigmergy and the Egregoreotype](../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+- [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 
 ## Execution Surface
 
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_21_PROBLEM_OF_DEATH.md
+- **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_21_PROBLEM_OF_DEATH.md`

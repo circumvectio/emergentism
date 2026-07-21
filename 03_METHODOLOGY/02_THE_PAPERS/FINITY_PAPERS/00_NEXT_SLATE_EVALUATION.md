@@ -13,10 +13,10 @@ rosetta:
   canonical_phrase: "The Finity Papers — what to write next, and what to refuse"
 title: "The Finity Papers — Next-Slate Evaluation"
 status: "ACTIVE — 2026-05-31. Team evaluation (8 disciplinary lenses + 2 adversarial critics; the synthesizer hit the weekly model limit, so this slate was composed in the main loop from the recovered agent outputs). Tier-honest; refuses the closures. Nothing here is committed work — it is a ranked plan plus an explicit refusal list."
-evidence_tier: "[S] the ranking and scoping; defers to each named paper's own tier. The naming question is an open author/K2 decision, not a result."
+evidence_tier: "[S] the ranking and scoping; defers to each named paper's own tier. The naming question is an open author/owner decision, not a result."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary per 02_THE_PAPERS lane.**
 
 # The Finity Papers — Next-Slate Evaluation
@@ -55,7 +55,7 @@ The cleanest new mathematics on the slate; zero RH/CH exposure.
 ### The `z/(1/z) = z²` worked example `[A]` + `[S/I]` — *as a section, not a standalone*
 Both critics: ship this **inside a Paper I/II revision**, not as "Paper VII: The Dynamics…" — it is one `[A]` computation, and a normative-sounding standalone title invites the exact moralization the η-discipline forbids.
 - **Kernel `[A]`:** `z/(1/z) = z²` is total/holomorphic on `ℂP¹`; at the poles it evaluates by the **determinate** forms `0/∞ = 0`, `∞/0 = ∞` (NOT the indeterminate `0/0`); `Fix(z²) = {0, 1, ∞}`; `Julia(z²) =` the unit circle `=` Paper I's equator; poles super-attracting, equator repelling. The **load-bearing deliverable is the contrast**: `z·(1/z) = 1` is indeterminate at the poles (the EMBLEM, frame-register) while `z/(1/z) = z²` is determinate-and-total — sharpening Paper II §4's fence.
-- **Two load-bearing guards (both critics):** (a) **emblem-quarantine** — `z²` is the *determinate sibling*; it does **not** vindicate or "make rigorous" `1 = 0×∞`; (b) **no valence on attractors** — the equator (balance) is the *repelling* Julia set; the poles are super-attracting; this carries **no** moral charge (η lives on moves, never on coordinates or basins). "De-balancing" is an `[S/I]` reading laid over `[A]` dynamics; the Paper III runaway link is an *echo*, not an entailment.
+- **Two load-bearing guards (both critics):** (a) **emblem-quarantine** — `z²` is the *determinate sibling*; it does **not** vindicate or "make rigorous" `1 = 0×∞`; (b) **no valence on attractors** — the equator (balance) is the *repelling* Julia set; the poles are super-attracting; this carries **no** moral charge. `η_observed` describes a declared transfer, while moral standing requires an independent bearer-complete Justice test. "De-balancing" is an `[S/I]` reading laid over `[A]` dynamics; the Paper III runaway link is an *echo*, not an entailment.
 - **Kill:** a fixed point off `{0,1,∞}`; Julia set `≠ |z|=1`; or a pole genuinely landing on `0/0`. (None can hold — stated so it could.)
 
 ### *(Optional, fenced)* The categorical "frames-not-operands" restatement `[S]`
@@ -94,7 +94,7 @@ The `[S]` blind-**human** study on the published instruments, with the top-by-co
 
 ---
 
-## 5. Naming — DECIDED 2026-05-31 (author/K2)
+## 5. Naming — DECIDED 2026-05-31 (author/owner)
 
 - **`transcendentals` → RETIRED; the three `{0, 1, ∞}` are now named the Titans.** **boundary-frames** is the technical role descriptor. "Transcendentals" collides with transcendental *numbers* (which `0` and `1` precisely are **not**) and the scholastic transcendentals; it is K3-tombstoned — kept only in legacy filenames/paths (link stability) and as a disambiguated Kantian gloss.
 - **`finity` kept** (over `unity`, which would re-import the One-at-apex monism the framework inverts).

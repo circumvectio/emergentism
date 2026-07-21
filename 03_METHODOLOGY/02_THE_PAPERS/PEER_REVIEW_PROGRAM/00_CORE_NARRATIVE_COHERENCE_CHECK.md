@@ -17,7 +17,7 @@ Coherence is not truth. A self-consistent grammar can be coherently wrong (the c
 
 | Restatement element | Coherent? | Tier | Consistent with session results? |
 |---|---|---|---|
-| **D0 ≡ D6** — "infinite zero self-similar to self-recursive infinity" (cyclic closure) | Yes, as a model loop `[S]` | `[C]` as physics | **Weak.** The physical reading (= Penrose CCC) is "on life support" (2020 CMB look-elsewhere). And **"zero = infinity" risks the un-counted (0) vs uncountable (∞) conflation the corpus already tombstoned (E1)** — 0 and ∞ are *distinct poles related by reciprocity x↦1/x*, not "the same." Keep them distinct. |
+| **Former literal D0/D6 identity** | **No: rejected after the strict-order audit.** | dead identity; `D6~D0` only `[I]` | `b₆` and `r₆` are non-μ boundary edges. Penrose CCC is a separate cosmological proposal and supplies no evidence for this scaffold. Keep `0` and `∞` distinct. |
 | **Titans {0,1,∞} → emerge the dimensions** | Yes `[S/I]` | `[I]` structure, `[C]` emergence | **Partly.** The frame/operand law is real but is **Lawvere/Priest** (prior art); the unit-as-frame is partly **Rotman**; the dimensional *emergence* is `[C]`; the 0/0 fixed-point-witness (would it be reduction or analogy?) is **open**. Coherent; not novel-as-stated; conjectural where it touches physics. |
 | **D5 game space; the 2 gods exhaust it, "objectively ethical" over the long horizon** | Coherent as a claim | `[I]` | **REFUTED as stated.** R7/R8/R9: the two gods do **not** exhaust or self-stabilize the ethical game space — cooperation is collectively optimal but **free-ridden into collapse without the enforcement layer**. The gods *need* the demons. And **"objectively"** is **model-objective only** (Paper III's inherited is/ought premise). |
 | **The 2 demons "objectively immoral," tolerated only for individual short-term survival** | Coherent | `[I]` | **REVERTS a correction the corpus's OWN doctrine forbids.** Paper III **F-1**: valence never pins to an operator. R7/R8/R9: the *fenced* demons are the **necessary immune system** that makes the gods evolutionarily stable — not "immoral." Calling them objectively immoral **breaks the four-move scheme** and contradicts this session's central cooperation finding. The honest frame: gods = cooperation, **demons = the bounded enforcement that protects it.** |
@@ -34,4 +34,9 @@ That is *more* impressive than "2 good, 2 evil," not less — it's the major-evo
 
 ## Verdict
 
-The narrative is a coherent grammar; the math kernel is correct (and elementary); the structure hangs together. But "coherent and consistent" cannot be upgraded to "true," and the restatement re-inflates two claims the session's own work corrected (the gods/demons ethics; the sphere geometry) and leans on one that's empirically weak (D0≡D6 physics). The corpus is at its strongest when it states the *refined* result and its honest tier — not the confident headline. The decisive move remains the unrun experiment, not a tighter restatement.
+The narrative is a coherent grammar; the math kernel is correct (and
+elementary); the structure hangs together. But "coherent and consistent" cannot
+be upgraded to "true," and the restatement re-inflated claims the session's own
+work corrected: operator morality, sphere geometry, and literal D0/D6 identity.
+The corpus is strongest when it states the repaired result and its honest tier.
+The decisive move remains external testing, not a tighter restatement.

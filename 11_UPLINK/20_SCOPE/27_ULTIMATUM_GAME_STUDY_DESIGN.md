@@ -187,16 +187,16 @@ If the multiplicative model captures rejection there better, the bridge is meani
 
 ## 12. Kill Criteria
 
-### K1
+### KC-1
 If payoff-only or additive models perform as well or better than the multiplicative candidate, the strong claim fails in this domain.
 
-### K2
+### KC-2
 If the multiplicative advantage only appears after arbitrary preprocessing or parameter tuning, the result is not robust.
 
-### K3
+### KC-3
 If a second ultimatum dataset or replication sample fails to show the same pattern, the broader claim remains provisional.
 
-### K4
+### KC-4
 If fairness coding cannot be made simple and transparent enough for an external reader to reproduce, the study design is too interpretive and must be narrowed.
 
 ---

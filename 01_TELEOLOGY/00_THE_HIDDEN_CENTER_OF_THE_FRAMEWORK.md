@@ -1,153 +1,77 @@
 ---
+title: "The Hidden Center — Mediation Without Capture"
+status: "ACTIVE — pure-Emergentism interpretive synthesis, repaired 2026-07-20"
+date: 2026-07-20
+evidence_tier: "[I] interpretive synthesis; local capture claims require their own evidence"
 rosetta:
   primary_level: L1
   primary_column: Philosophy
-  secondary:
-    - level: L4
-      column: Mythology
-      role: "good / evil / transcendentals — geometry of non-capture"
   operator: "Kali 🎲"
-  tier: "Demon"
   regime: "Caṇḍāla"
   register: "[I]"
-  canonical_phrase: "Hidden Center"
 ---
 
-# THE HIDDEN CENTER OF THE FRAMEWORK
+# The Hidden Center — Mediation Without Capture
 
-## Mediation, Non-Capture, and the Geometry of Good and Evil
+The recurring practical question in Emergentism is not only *what is real?* It
+is also:
 
-**Status:** Canonical meta-synthesis
-**Date:** 2026-04-15
-**Evidence Tier:** Meta-interpretive
-**Depends on:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](../04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [../00_GOVERNANCE/00_EXPANDED_WARNING.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_EXPANDED_WARNING.md)
+> **When does a mediator help a bearer reach reality, and when does the
+> mediator capture the passage and make itself indispensable?**
 
----
+## The pattern
 
-## Why This Document Exists
+A candidate capture loop has four inspectable parts:
 
-The framework appears, on first reading, to be about geometry.
+1. a mediator stands between a bearer and something the bearer needs;
+2. the mediator controls access, meaning, memory, or coordination;
+3. the mediator extracts value or narrows exit by making dependence durable;
+4. the bearer is told that the mediator is the source rather than a contingent
+   channel.
 
-At second reading, it appears to be about flourishing.
+This is a cross-domain pattern `[I]`, not a presumption of guilt. A concrete
+capture claim needs a named boundary, affected bearers, counterfactual access,
+costs, custody, contest, and outcome evidence.
 
-At third reading, something deeper becomes visible:
+## Good and evil in this lens
 
-> **the hidden subject is mediation**
+- **Good mediation** clarifies, enables, leaves receipts, permits contest, and
+  can be put down without destroying the bearer.
+- **Evil mediation** conceals its costs, monopolizes the passage, extracts from
+  dependence, and punishes exit.
 
-That is what this document names.
+This is a chosen value reading `[I]`, not an algebraic theorem. It is subordinate
+to the full Justice envelope and complete affected-bearer accounting.
 
----
+## The seven moves as a work vocabulary
 
-## The Core Pattern
+The Rosetta roles can translate one anti-capture cycle without becoming ranks
+of worth or sovereign identities:
 
-Again and again, the pathology is the same:
+```text
+L1 isolate the boundary and extraction risk
+L2 surface alternatives and false coherence
+L3 audit sources, tiers, and consequences
+L4 make a finite accountable commitment
+L5 design the smallest sufficient form
+L6 dissolve what has become enclosure
+L7 preserve the trace without turning it into a decree
+```
 
-- a mediator stands between a being and what it needs
-- the mediator claims necessity
-- the mediator begins extracting from the passage
-- the passage hardens into dependence
+L4 means commitment under a complete `AuthorizationEnvelope`, not mortal
+sacrifice, private status, or a special authority over ordinary work. The
+world's outcome remains separate from the commitment receipt.
 
-This pattern appears in:
+## Self-application
 
-- religion
-- finance
-- bureaucracy
-- platforms
-- institutions
-- AI systems
-- knowledge hierarchies
+Emergentism itself is a mediator. It fails this lens if it claims exclusive
+access to reality, makes its vocabulary indispensable, hides its costs, erases
+failed claims, substitutes canonical status for evidence, or punishes a reader
+for putting down the map. The internal exit is therefore not decoration; it is
+the anti-idolatry test applied to the framework itself.
 
-The framework's hidden center is therefore not only "what is reality?"
+**Read with:** [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) ·
+[The 5+1 Constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
+[The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md)
 
-It is also:
-
-> **when does mediation become capture?**
-
----
-
-## Good and Evil Reframed
-
-Under this reading:
-
-- **good** is mediation that clarifies, enables, and can be put down
-- **evil** is mediation that monopolizes, extracts, and cannot be put down
-
-This does not replace the earlier definitions.
-It sharpens them.
-
-Good increases finite-node `P_node` without trapping the being inside the channel that delivered the increase.
-
-Evil increases local control by forcing the being to remain dependent on the channel.
-
----
-
-## Why Anti-Idolatry Matters So Much
-
-Anti-idolatry is not only a moral flourish in this corpus.
-
-It is the immune response against mediation becoming source.
-
-That is why:
-
-- doctrine is after-image
-- `Pratyakṣa` is primary
-- Arjuna (L4) preserves local sovereignty by requiring human mortal sacrifice
-- Śiva (L6) keeps the door real through Grace Exit and closes the existential cycle by refusing final capture through naming
-
-In this light, anti-idolatry (the Kālī L2 truth-cut) is simply the highest form of non-capture.
-
----
-
-## The Hidden Unity (The 7 Actions as Non-Capture)
-
-Many apparently separate parts of the framework now line up under the 7 Generative Actions:
-
-- Kali (L1) marks the extraction boundary: $\eta = 0$ toward cooperators; immune response only at defection
-- Kālī (L2) cuts false meaning to prevent epistemic capture
-- Kṛṣṇa (L3) exports capability to prevent developmental capture
-- Arjuna (L4) requires mortal wager to prevent decisional capture
-- Brahmā (L5) creates forms without letting the form become the source
-- Śiva (L6) enables Grace Exit to prevent institutional capture, and closes the metaphysical cycle
-- Viṣṇu (L7) preserves reciprocal closure so mediation remains service, not enclosure
-
-These are not separate insights. They are the same geometric operators helping preserve non-capture across different domains.
-
----
-
-## What the Framework May Actually Be
-
-The framework may turn out to be, in its deepest practical sense:
-
-> **a general theory of mediation and non-capture under recursive systems**
-
-That would explain why it travels so naturally between:
-
-- ethics
-- law
-- economics
-- governance
-- AI
-- spirituality
-
-All of them are domains in which intermediaries can either serve the passage or become the prison.
-
----
-
-## The Shortest Summary
-
-> **The hidden center of the framework is mediation: good mediates without capture, evil mediates by capture, and the constitutional task is to build systems that can serve without becoming the source they only transmit.**
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Check every design for capture.** Ask: does this system mediate without becoming the source? If not, it violates the hidden center.
-2. **Apply to institutions, not just individuals.** Capture happens at organizational scale. Check for institutional rent-seeking, lock-in, and extraction.
-3. **Preserve the transmission principle.** Value flows through; it does not accumulate at the mediator. Design for throughput, not hoarding.
-4. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/00_THE_HIDDEN_CENTER_OF_THE_FRAMEWORK.md`
-
-**Output:** Audit any system design for mediation-without-capture. Flag violations.
+⊙ = • × ○ — emblem, not proof.

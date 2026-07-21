@@ -319,7 +319,10 @@ That is a gain in clarity, not a loss.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [S]/[B]/[I] mixed. Keep them separate.
 2. **Depends on:** `12_THE_SPECTRUM_RESULTS.md` and `14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`.

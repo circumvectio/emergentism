@@ -1,51 +1,56 @@
 ---
 rosetta:
   primary_level: L3
-  primary_column: Philosophy
+  primary_column: Methodology
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[S/I]"
-  canonical_phrase: "PAPER 2: WORLDLINE FORESIGHT IS PHYSICAL"
+  register: "[A/S/I/C]"
+  canonical_phrase: "Paper 2 — actual carriers of possible worldlines are physical"
+title: "Worldline Foresight Is Physical"
+status: "KINTSUGI SUCCESSOR — D4/D5 type repair, 2026-07-20"
 ---
 
-# PAPER 2: WORLDLINE FORESIGHT IS PHYSICAL
+# Paper 2: Worldline Foresight Is Physical
 
-**Status:** Stub scaffold.
+**Program home:** [The D5 Landauer Barrier Program](README.md)
 
-**Program Home:** [`The D5 Landauer Barrier Program`](README.md)
+## Precision repair
 
-**Depends On:** [`Paper 1`](PAPER_1_THE_D5_LANDAUER_BARRIER.md)
+The title is historical compression. Possible D5 worldlines are not themselves
+physical objects asserted by this paper. What is physical or socially realized
+is the D4 carrier: sensor state, memory, model token, diagram, institution,
+conversation, ranking event, and control channel by which an actual agent
+represents alternatives.
 
-## Thesis
+## Cost model
 
-Worldline foresight is not an immaterial view from nowhere. Any usable foresight must be carried by physical state: sensors, memory, models, bodies, tools, institutions, ledgers, computation, and control channels.
-
-## Role In The Program
-
-This paper turns the D5 Landauer Barrier into a cost model. It owns the light-speed analogy:
+For horizon `T`, resolution `ε`, confidence `q`, and represented option set
+`Ω_t`, specify the actual D4 channels used to create and maintain `M_t`:
 
 ```text
-Massive object approaching c:
-  more speed requires more energy; reaching c is not finite.
-
-D5 selector approaching perfect branch discrimination:
-  more horizon, actor coverage, resolution, and confidence require more physical information handling;
-  perfect foresight is not finite.
+measurement -> memory -> computation -> ranking -> commitment -> control
 ```
 
-The analogy is structural, not identity. Relativity is not being reduced to D5. D5 is being disciplined by a known limit-form: finite embodied systems cannot treat asymptotes as free moves.
+Each arrow is an actual event and therefore D4. Only the alternatives carried
+as semantic content are D5. Reversible computation may move or reduce some
+erasure costs; it does not make sensing, reliable storage, noise handling,
+authorization, control, or eventual reset disappear.
 
-## Required Sections
+The relativity analogy is limited: finite systems often pay increasing cost for
+greater reach or resolution. It neither identifies option cones with physical
+light cones nor proves a universal divergence law for foresight.
 
-1. Define branch horizon `T`, resolution `ε`, confidence `q`, actor set `A`, and branch partition `π_ε(B_R(T,A))`.
-2. Specify measurement, memory, computation, control, and erasure/reset channels.
-3. Distinguish reversible computation from irreversible erasure.
-4. Add noise, error correction, maintenance, and update costs.
-5. State lower bounds and scaling behavior without pretending the model is complete.
+## Falsifiers
 
-## Kill Criteria
+- treating a represented future as the physical model token that represents it;
+- calling an actual model, rank, selector, or institution D5;
+- applying `k_B T ln 2` to every logical step;
+- claiming a quantitative asymptote without a specified channel and cost model;
+- letting a commitment receipt stand in for an environment-returned outcome.
 
-- The model treats Landauer cost as applying to every logical step rather than erasure / logical irreversibility.
-- The model ignores reversible computation.
-- The model claims quantitative precision before its channels and assumptions are defined.
+## Kintsugi seam
+
+The prior stub placed branch discrimination in a “D5 selector.” The actual
+discrimination event is D4; D5 is its possible content. Original Git blob:
+`0c9629465f3a2eaa70a27ec9f31f1c1b80deb7dd`.

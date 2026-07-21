@@ -351,7 +351,7 @@ The alignment itself. Nobody else has mapped these three traditions onto a singl
 
 *This brief was compiled from systematic web research on 2026-04-04. All claims are marked with evidence tiers per the Emergentism framework's own standards. The framework's honesty protocol requires acknowledging what the evidence does and does not support.*
 
-*Per Decentralized Authority Model: this research brief is an instrument, not a destination. If direct observation of developmental progression in your own experience is available to you, that is primary data. This document is secondary.*
+*Self-dissolving-mediator boundary: this research brief is an instrument, not a destination. It remains accountable to evidence, correction, contest, and exit; private experience is data for the experiencer, not automatic public proof.*
 
 
 ---

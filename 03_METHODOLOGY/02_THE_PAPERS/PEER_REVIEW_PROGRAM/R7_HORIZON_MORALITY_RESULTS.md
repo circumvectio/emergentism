@@ -2,14 +2,25 @@
 rosetta:
   primary_column: "Methodology"
   register: "[A] model-internal results; [I] readings"
-  canonical_phrase: "R7 — Does Morality Emerge From Self-Interest"
+  canonical_phrase: "R7 — historical strategy-selection experiment"
 ---
 
-# R7 — Does Morality Emerge From Long-Horizon Self-Interest? A Direct Test of the Greatest Conjecture
+# R7 — Historical Test of a Horizon/Self-Interest Conjecture
 
-**Status:** Executed 2026-06-10. Two experiments, verbatim output below. Tests the founder's "greatest conjecture," claim 4: *pure self-interest yields objective morality over a long time horizon (the 2 gods) and immorality over a short one (the 2 demons), under the power-max lemma.*
+**Status:** Executed 2026-06-10; normative interpretation withdrawn
+2026-07-20. The two experiments tested a historical claim that pure
+self-interest would select strategies labeled moral at long horizons. They did
+not implement bearer-complete Justice and cannot test objective morality.
 **Artifacts:** [R7_SUPPORT_HORIZON_MORALITY_SIM.py](R7_SUPPORT_HORIZON_MORALITY_SIM.py) (v1), [R7_SUPPORT_HORIZON_MORALITY_SIM_V2.py](R7_SUPPORT_HORIZON_MORALITY_SIM_V2.py) (v2). Stdlib, deterministic, 16 seeds.
 **Tier:** [A] for the model-internal facts; [I] for every reading beyond the model; the is/ought identification of "wins selection" with "is moral" is **model-objective only** (Paper III's inherited premise stands — see §5).
+
+> **[金] Current boundary (2026-07-20).** The inherited premise no longer
+> stands. "Cooperator/god," "defector/demon," and "morality" below are historical
+> strategy labels in a synthetic model. Winning selection, reciprocity, or
+> `etaObserved=0` supplies no moral verdict. Only bearer-complete Justice can
+> evaluate an actual act, and these simulations contain no complete bearer,
+> authorization, consent, custody, contest, or consequence ledger. Model outputs
+> remain `[A]` only as facts about the code run.
 
 ---
 
@@ -31,7 +42,7 @@ LONG    COUPLED   |    75.00%    88.69% |      37.50% |    1679.9    1958.4 | DE
 
 **F13 — Defectors win in every cell, including long-horizon + coupled.** [A] The conjecture as literally stated — *self-interest + long horizon → morality* — is **false in this model.** A long horizon and even a shared-fate coupling are not sufficient. Mechanism: the coupling is a **public good**. Cooperators pay the cost; the benefit (more survivors → more regeneration) accrues to everyone, defectors included, who free-ride. This is the textbook free-rider problem (Olson; Hardin), and it defeats the naive conjecture cleanly. P2 confirmed (demons rule the short horizon); P1 refuted; P3 confirmed (long horizon alone does not rescue cooperation).
 
-## 3. Experiment 2 — the corpus's OWN machinery rescues it, with a sharpened precondition
+## 3. Experiment 2 — allocation and punishment alter the result
 
 The rigorous fix for free-riding is reciprocity / assortment / punishment (Axelrod 1984; Nowak 2006 "Five Rules for the Evolution of Cooperation"; Fehr & Gächter 2002 costly punishment). The corpus already contains exactly this: **K\*** (reciprocate; never extract from cooperators) and the **licensed immune response** (the demon-operators, permitted only against defectors). v2 adds those as allocation rules.
 
@@ -47,19 +58,42 @@ PUNISH     LONG    ISOLATED  |      43.75% |     980.1      16.7 |    99680 |  C
 PUNISH     LONG    COUPLED   |       0.00% |      58.5      16.2 |     7473 |  COOP(god)
 ```
 
-**F14 — Reciprocity rescues the conjecture; the true precondition is long horizon AND reciprocity.** [A] Under RECIPROCAL allocation (the club good — you receive only if you give, which is K*/η=0 made concrete), cooperators win selection and out-earn defectors over the long horizon (coop welfare 2365 vs 1611; final cooperator share 61%). The conjecture is **true after all — but not as stated.** The omitted precondition is reciprocity: long-horizon self-interest converges on morality *only when giving is conditioned on giving* (assortment), never as a pure public good. "Pure self-interest over a long horizon" is insufficient; "reciprocal self-interest over a long horizon" suffices.
+**F14 — Reciprocity changes the selected strategy in these cells.** `[A]`
+Under RECIPROCAL allocation, the fixed cooperator strategy out-earns the fixed
+defector strategy in the reported long-horizon cells (2365 vs 1611 in the
+isolated cell; final cooperator share 61%). This shows that allocation and
+assortment matter in this implementation. It does **not** rescue the moral
+conjecture, establish a necessary or sufficient condition across games, or make
+"wins selection" equivalent to "is moral."
 
-**F15 — The "2 demons" are NECESSARY, and this is why the corpus is right to license them.** [A] Under PUNISH (reciprocity + costly retaliation against defectors — the licensed immune response), cooperators win in **every** cell, including the short horizon (26 vs 11) where nothing else rescued them. Conditional defection against defectors is what makes the gods evolutionarily stable against invasion. This vindicates the corpus's refusal to call the taking-dyad operators "demonic-by-valence": they are the enforcement layer without which cooperation cannot establish. The four-move scheme (2 gods + 2 conditional demons) is not 2 good + 2 bad — it is **cooperation + the enforcement that protects it**, and the experiment shows both halves are load-bearing.
+**F15 — Punishment changes the winner but is not licensed by winning.** `[A]`
+Under PUNISH, the strategy labeled COOP has the greater carrier welfare in the
+reported cells. This is a result of the chosen payoffs, fixed strategies, and
+parameters. It does not prove that punishment is necessary, validate a
+four-move census, confer moral valence on "demon" or "god" labels, or authorize
+retaliation in an actual situation.
 
-**F16 — But the demons must be FENCED, or they collapse the world.** [A] Punishment carries a collective cost: PUNISH LONG ISOLATED total welfare is 99,680 vs RECIPROCAL's 397,592 — retaliation burns ~75% of aggregate welfare. And PUNISH LONG COUPLED collapses almost entirely (total 7,473; near-total extinction) — unbridled mutual punishment is self-destroying. This is the precise, quantified vindication of the corpus's **fences on the demon-operators**: K* = 0 toward cooperators, the 6-gate test, retaliation licensed *only* against confirmed defectors. The fences are not moral squeamishness; they are the difference between stable cooperation and mutually-assured destruction. Necessary, but only if bounded.
+**F16 — Punishment is costly and can collapse the modeled population.** `[A]`
+PUNISH LONG ISOLATED reports total welfare 99,680 versus RECIPROCAL's 397,592,
+and PUNISH LONG COUPLED reports 7,473 with near-total extinction. This is a
+warning about the implementation's punishment regime, not quantified
+vindication of a corpus fence. Actual defensive action requires independent
+evidence, proportionality, accountable authorization, complete bearer custody,
+contest, exit, and outcome receipts. Aggregate welfare alone cannot decide it.
 
-## 4. The sharpened conjecture (what the data supports)
+## 4. The bounded conclusion (what the data supports)
 
-The greatest conjecture survives — reformulated, and stronger:
+The moral conjecture does not survive as an empirical conclusion. The model
+supports only this bounded strategic statement:
 
-> Rational self-interest converges on cooperative morality **only under two conditions together: a long time horizon (the future in which cooperation pays must arrive) and reciprocity (giving conditioned on giving — K*/η=0).** Cooperation must additionally be defended by *bounded, targeted* conditional retaliation against defectors (the licensed immune response). Remove the horizon, and defectors win (short-termism is immoral). Remove reciprocity, and free-riders win (naive universal giving is evolutionarily dominated). Remove the fences on retaliation, and the system self-destructs. The corpus's full operator set — two gods, two fenced demons, K*, η=0 — is not a moral aesthetic; it is, in this minimal model, *exactly* the architecture required for cooperation to be the rational long-horizon equilibrium under mortality.
+> In this fixed-strategy implementation and reported parameterization, a longer
+> horizon alone did not make the cooperator strategy win; reciprocal allocation
+> did in the reported long-horizon cells; and the tested punishment rule changed
+> winners while imposing large costs and sometimes collapse.
 
-The original "gods = long horizon, demons = short horizon" mapping is too simple. The data says: **gods = cooperation, demons = enforcement; horizon and reciprocity are the conditions under which the gods-plus-fenced-demons equilibrium is the self-interested one.**
+The god/demon labels are historical display names. The data does not identify
+morality, assign operator essence, or establish that horizon and reciprocity
+are universal necessary or sufficient conditions.
 
 ## 5. Honest limitations
 
@@ -67,6 +101,11 @@ The original "gods = long horizon, demons = short horizon" mapping is too simple
 
 ## 6. Disposition
 
-This is the most decisive experiment in the program so far: it tested the corpus's ethical keystone, broke it as stated, and rebuilt it sharper using the corpus's own machinery — vindicating the full 2+2 operator architecture and its fences, while exposing the omitted reciprocity precondition. Publication path: a strong companion to R3 ("the evolution of cooperation under mortality with a conjugate-constrained welfare"), citing Axelrod, Nowak 2006, Fehr-Gächter, Olson. Owes: the parameter sweeps in §5(i) and the standard-reciprocity (reputation) variant. **No API key required** — this whole line is runnable now, and is the highest-leverage theory-testing on the board.
+This experiment falsified the literal claim that long-horizon self-interest by
+itself yields the strategy labeled moral in this model. It also showed that
+allocation and punishment assumptions can reverse results. It did not rebuild
+the ethical claim, vindicate G7, or test bearer-complete Justice. Any publication
+claim owes parameter sweeps, alternative strategies and payoff structures,
+standard reputation variants, preregistration, and independent replication.
 
 Ledger: R7 v1, v2 → entries 4 and 5 (total experiments executed: R3 v1/v2/v3, R7 v1/v2 = 5 distinct runs across 2 conjectures).

@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "The Inferential Logic Audit Protocol"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 audit protocol; handoff from L2, to L4. Evidence ladder enforced.**
 
 # The Inferential Logic Audit Protocol
@@ -225,7 +225,8 @@ After ranking, L3 assigns one of three dispositions to every claim.
 - Any flags or tensions L3 identified during audit
 
 **L3's role at L4:** L3 does not decide. L3 recommends. The decision belongs
-to L4 Kṣatriya (with K2 or PRISM signature for binding acts). L3's
+to L4 Kṣatriya. Any consequential act then requires a complete accountable
+authorization envelope under the actor's actual legal and operational context. L3's
 recommendation is the ranked "SHOULD" list — the merchant's account of what
 the books say the warrior should do.
 
@@ -599,8 +600,9 @@ L3 does not explore (L2). L3 does not decide (L4). L3 audits.
 
 In the Three-Stage Process cognitive cycle (L1 → L2 → L3 → L4), L3 is the rhetoric
 preparation stage: filtering and ranking what L2 explored so that L4 can act.
-In the organism, this corresponds to RealityFutures — the procedure that prices
-what could follow from what TheCircle observed.
+In pure Emergentist terms, this is the bounded audit between observation and
+commitment: it ranks what may follow from the evidence without importing a
+product runtime, manufacturing an outcome receipt, or authorizing the act.
 
 **The merchant's discipline:** audit the books, rank the claims, send the
 account to the warrior. Do not fight. Do not explore. Do not preach. Account.
@@ -617,7 +619,10 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

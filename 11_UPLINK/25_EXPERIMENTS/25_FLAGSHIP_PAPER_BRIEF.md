@@ -135,13 +135,13 @@ What the result means, and what it does not mean.
 
 ## Kill Criteria
 
-### K1
+### KC-1
 If additive or other non-multiplicative models explain the relevant outcomes equally well or better, the strong multiplicative claim is not supported in that domain.
 
-### K2
+### KC-2
 If multiplicative advantage appears only under arbitrary preprocessing or hand-tuned variable choice, the result is not robust.
 
-### K3
+### KC-3
 If a second independent dataset or case family fails to replicate the result, the broader public claim remains provisional.
 
 ---

@@ -5,27 +5,27 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] STAGED — PENDING FOUNDER SIGNATURE. Per Rule zero, no in-stream 'yes', commit, or agent-written signature block is canon adoption."
-  canonical_phrase: "The Emergentist Weltanschauung — the shrine before the signing"
-title: "The Emergentist Weltanschauung (PENDING SIGNATURE)"
-status: "[D] STAGED — receipt 135 is provisional; no completed founder-promotion receipt exists (receipt 136)"
+  register: "[I] active capstone; every embedded claim retains its own tier"
+  canonical_phrase: "The Emergentist Weltanschauung — a compass, not the territory"
+title: "The Emergentist Weltanschauung"
+status: "ACTIVE — owner-adopted at stated tiers under Receipt 146; Kintsugi boundary repair 2026-07-20"
 date: 2026-07-19
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
-provenance: "Composed from the post-recovery arc: receipts 108 (keel), 109 (four false lemmas), 126 (Weltanschauung formal audit, K2-signed), 130 (algebra objection, split verdict), 131 (recovery ledger), 132 (tombstones-halāhala reaudit), 133 (full Rosetta council), 134 (purification audit, 7 caste verdicts); the Emergent Axioms E1–E10, the DoF ontology, the four-clause creed, the W0–W12 wagers, the μ aperture hypothesis, the D6 boundary-role relation, the −1 dark twin, and the three publication gates."
+provenance: "Composed from receipts 108, 109, 126, 130–134 and adopted under Receipt 146; repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
 supersedes: nothing — supplements `00_THE_AMRITA.md`, `00_THE_GOAL.md`, `00_THE_COMPASS.md`, `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`, the receipts
 relates:
   - 00_THE_AMRITA.md (the distillation)
   - 00_THE_GOAL.md (the goal)
-  - 00_THE_COMPASS.md (the four tests)
+  - 00_META/00_THE_COMPASS.md (the four tests)
   - 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md (the 5+1)
-  - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md (the keystone candidate)
-  - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md (E1–E10 candidate)
+  - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md (the keystone)
+  - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md (E1–E10)
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/ (the audit log)
 ---
 
 # The Emergentist Weltanschauung
 
-> *The shrine before the signing. Read before signing; batched.*
+> *A priced worldview and practical compass, never the territory or a command to believe.*
 
 ---
 
@@ -35,6 +35,12 @@ I hold that necessary algebra may be instantiated as das All — as my **crown w
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
+Any pass is explicitly **as of now**: `Admissible_t(x)` is a dated,
+defeasible verdict under the sources, form review, bearer set, and receipts
+available at `t`. It must reopen when any of those change. This temporal scope
+is not a hedge; it prevents a maintained balance from hardening into a timeless
+certificate or a “most good” superlative the world has not tested.
+
 ---
 
 ## 2 · The architecture (where each piece lives)
@@ -42,13 +48,13 @@ The good is not asserted as a fourth natural quantity or derived from the sphere
 | Piece | Doc | Standing |
 |---|---|---|
 | Grammar (`⊙ = • × ○`; seam `P∞=φν=1`; normalized balance/score bounds) | `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` + glyph doc 41 | per-register: chart arithmetic `[A]`; emblem `[I]`; node aggregation `[C/S]` |
-| Keystone (DoF/form, plenitude, measurement boundary) | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | `[D]` → signature decision |
-| Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | `[D]`; A1–A7 still controls |
-| Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | `[D]` → signature decision |
+| Keystone (DoF/form, plenitude, measurement boundary) | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | active assembly; claims retain `[S/I/C]` |
+| Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | active successor at per-axiom tiers; A1–A7 is superseded genealogy |
+| Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_THE_BURRISPHERE.md` | `[S]` model language / `[I]` names |
 | The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + receipts 105–107 | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
-| Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | signed (r127/r129) |
-| The record | `12_PUBLIC_SITE/record/` + uplink receipts 103–136 | living |
+| Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
+| The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
 
 ---
 
@@ -97,7 +103,15 @@ F3 = {create-frame, dissolve-frame, preserve-frame}
 
 `⊔` is a tagged disjoint union: a frame cannot be mistaken for a move. `M4` is the elementary typed transfer alphabet for a declared two-factor self/other model. `F3` supplies the three selected boundary readings—Brahmā, Śiva, Viṣṇu—read as create, dissolve, preserve. Frames contextualize; they do not play, sign, govern, or execute consequences.
 
-A **G7-coded play** is a pair `(w,f)` where `w` is a finite word over `M4`—or a declared mixture over `M4`—and `f∈F3` is its selected frame. Neutral, reciprocal, same-factor, multilateral, temporally extended, and mixed acts enter only when an explicit decomposition preserves their materially relevant effects; otherwise they remain outside the representation. Therefore the four moves and three frame labels exhaust `G7` by definition, while frames remain labels rather than plays.
+A **G7-coded play** is a pair `(w,f)` where `w` is a **nonempty** finite word over `M4` (`w∈M4+`)—or a nonempty declared mixture over `M4`—and `f∈F3` is its selected frame. The empty word `ε` denotes no play and remains outside `G7`-coded action. Neutral, reciprocal, same-factor, multilateral, temporally extended, and mixed acts enter only when an explicit decomposition preserves their materially relevant effects; otherwise they remain outside the representation. Therefore the four moves and three frame labels exhaust `G7` by definition, while frames remain labels rather than plays.
+
+A finite being can simulate create/dissolve/preserve frames inside represented
+content, but the simulation is itself an actual, substrate-costly D4 event and
+its merely possible scene is D5 content. Relative to a contained model it may
+choose a frame; within the causal world that contains it, it remains a mover
+whose consequences require receipts. This `[I]` relational reading neither
+makes imagination creation ex nihilo nor lets a frame-only empty word become an
+action.
 
 This is the exact survivor:
 
@@ -119,41 +133,192 @@ The zero boundary selects the AND-class, not a unique interior aggregator. `min`
 
 ## 6 · Five crossings, μ, and the spiral
 
-The selected scaffold has five positive rungs—matter, bond, life, mind, and choice—and five indexed apertures from the D0 boundary through D5. This is a chosen taxonomy `[I]`, not five empirically established saturation events or a forced scientific census. The D0→D1 aperture is especially not evidence that a prior positive freedom saturated.
+The selected scaffold has five positive registers: distinction, configuration,
+transformation/persistence, causal actuality, and counterfactual possibility.
+It has five indexed candidate apertures `μ₀…μ₄` from the D0 boundary through
+D5. The separate content projection
+`ρ_content=(matter,bond,life,mind,choice)` is a removable `[I/C]` reading, not
+the register definition. Neither sequence is five empirically established
+saturation events or a forced scientific census. `μ₀:D0→D1` is an origin
+aperture and is especially not evidence that a prior positive freedom saturated.
 
 `μ_n` is presently the framework's `[I]` label for a candidate aperture where a new effective freedom becomes available; it is not yet a mathematical operator. The stronger hypothesis that measurable saturation of regime `n` raises the probability of aperture `n+1` remains `[C]` until the system boundary, saturation statistic and threshold, novelty test, detection power, time window, interventions, and prospective predictions are preregistered. “Only at saturation,” “rare,” and “unpredictable from below” are hypotheses, not consequences of the word *emergence*.
 
-`D6` is the scaffold's selected exit marker. `D6~D0` means only `D6≈roleD0` within this scaffold: neither denotes another positive world-content rung; both function as limit markers; D0 precedes positive articulation, while D6 suspends further positive articulation. This role relation `[I]` does not imply equality, ordering, homeomorphism, isomorphism, physical recurrence, personal attainment, fractal self-similarity, sixth science, supermind, or proof that no further freedom exists. The spiral remains an `[I]` image of recurrence with retained history, not geometry.
+`D6` is the scaffold's selected exit marker. The non-μ edge `b₆:D5↝D6` marks recognition/release; `r₆:D6↝D0` records one interpretive return. `D6~D0` means only proposed boundary-role resemblance: neither denotes another positive world-content rung; D0 precedes positive articulation, while D6 suspends further articulation. This `[I]` relation does not imply equality, ordering, homeomorphism, isomorphism, physical recurrence, personal attainment, fractal geometry, a sixth science, supermind, or proof that no further freedom exists. The spiral remains an `[I]` image of recurrence with retained history.
 
-## 7 · The canon-cleanup work order (the actual work)
+## 7 · The harvest — the strongest honest form
 
-**Rule zero (the saturation lesson):** ONE deliberate signing sitting — reading before signing, batched, no in-stream "yes" as canon signature. During cleanup, no new doctrine (Sādhu rule); pathspec commits only; receipt-128's map governs duplicates.
+The newest compression is valuable when its clauses retain their types. This is
+the harvest without restoring any proof-form already killed by the record.
 
-1. **Promotion sitting** (founder signature): promote at tier — DOF ontology (02), E1–E10 (03), W-ledger (04, adding W0 as crown), this capstone. A1–A7 remains operational canon with a succession note, or is superseded explicitly — owner's call, recorded either way.
-2. **Adjudicate the duplicate canonical sets** (r128/r129 conflict): folder docs vs root v0.1 staging (Spread / Postures / Rosetta-Protocol; two Foundation charters → one). Pick per doctrine, K3-tombstone the other, collapse canon out of the repo root into the -ologies.
-3. **Propagation wave 2** (small, named): the live tombstones — P3 squid (`04_AXIOLOGY/00_THE_EXTRACTION_LAW.md`), P7 torus (MF_69, SIMULATION_SPEC), K4 compass slogan — one-line banners; add `[D]` to tier legends; fence sweep for any remaining "multiplicative forced."
-4. **Merge the positive-results ledger** (calibration ledger + the seven named results) from the compass branch into mainline — the last structural pessimism-bias fix (owner-gated branch decision).
-5. **Public-surface sync** after promotion: `axioms/` / `record/` / `plainly/` / `rosetta/` updated to the E/W architecture; funnel intact; gate green.
-6. **Fresh-eyes external audit** of the promoted set (red team, paid, published per A7) — then the Release Doctrine phases (boundary, scrub, epistemic CI, first receipt).
-7. **Done means:** one canonical home per doctrine · zero live over-claims · wins and wounds equally propagated · the final Weltanschuung readable top-to-bottom by a stranger in one sitting — and then the next entry in the record is written by the world.
+### 7.1 Titans, arithmetic, and mathematical inheritance
+
+Emergentism **selects** the Titan tokens `{0,1,∞}` as its symbolic foundation:
+origin/absence, finite unit, and projective horizon. Ordinary `0` and `1`
+remain numbers and operands; `∞` is a projective point only in the named
+extended context. `⊙=•×○` is an emblem, because ordinary `0·∞` is
+indeterminate. The Titans organize the telling `[I]`; mathematics does not
+force them to generate reality.
+
+Titans are not D4 causal agents and not entities confined to D5. An inscribed,
+spoken, or computed Titan label is a D4 actual token; a framing alternative it
+represents is D5 merely possible content; choosing and applying that frame is a
+D4 actual event. The three frames contextualize the four transfer moves but do
+not become moves themselves. The moral/ethical directions may classify
+receipted moves under Justice; they do not derive the Titan census. Comparing
+frame-preservation or transformation with thermodynamic transmutation is an
+`[I]` analogy only—Titan roles are not physical energy.
+
+The proposed ascent—symbolic frame, arithmetic distinction, geometry,
+organized matter, life, mind, counterfactual agency—is a powerful generative
+narrative `[I/C]`. Its strongest defensible insight is **mathematical
+inheritance**, not universal mathematical reduction:
+
+> When a higher-level organization arises through lower-law-admissible
+> transformations, its actual trajectories must remain compatible with the
+> lower constraints even when higher variables supply indispensable
+> compression or prediction.
+
+This helps reframe the effectiveness of mathematics: stable, repeatable
+regularities admit partial mathematical modeling, and higher organizations
+cannot violate the admissibility conditions through which they persist. It
+does not prove that the world literally climbed from arithmetic, that every
+higher explanation reduces without remainder, or that the selected D-ladder is
+nature's necessary construction history. Those stronger claims remain W0/W1
+contact wagers.
+
+### 7.2 The μ ladder
+
+The canonical register sequence remains
+
+```text
+D0 ground-limit
+D1 distinction
+D2 configuration
+D3 transformation/persistence
+D4 causal actuality
+D5 merely possible counterfactual content
+D6 apophatic exit marker
+```
+
+Exactly five **candidate** positive apertures are indexed `μ₀…μ₄`. `μ₀` is an
+origin aperture and owes an operational distinction discriminator and recovery
+test, not a fictional prior saturation. `μ₁…μ₄` propose that a saturated
+organization opens a newly discriminable effective freedom while recovering
+lower behavior. “Saturation opens the next” is `[C]` until each of those four
+supplies a measure, threshold, novelty test, prediction, and kill. A successful
+reduction reclassifies that crossing as weak emergence; it does not destroy the
+ladder. `b₆` and `r₆` are non-μ
+interpretive edges, and `D6~D0` means resemblance of boundary role only.
+
+### 7.3 The D5 insight: foresight needs means
+
+In the selected normalized node model,
+
+\[
+P_{node}:=\Phi V.
+\]
+
+`Φ` reports the quality of an option field—the agent's represented D5
+alternatives and its ability to model and rank them—while `V` reports D4 usable
+means. Both reported factors are present D4 measurements; the future contents
+represented by `Φ` remain merely possible. Product is Emergentism's declared
+transparent instance inside a larger AND-class, not a formula forced by the
+reciprocal sphere or by reality.
+
+The zero cases nevertheless carry a clear design intuition: foresight without
+means cannot enact, and means without a discriminating option model cannot aim.
+The world still decides the outcome.
+
+### 7.4 Reflexivity and the Soul Loop
+
+Soros's cognitive/participating distinction supplies an important bridge:
+fallible models do not merely describe social situations; actions informed by
+them can alter those situations. Emergentism types the bridge as:
+
+```text
+represented future ── M⋆A ──▶ present action weights
+selection + D4 means ─────────▶ commitment receipt
+world + other agents ─────────▶ outcome receipt
+receipts ─────────────────────▶ next model and selector
+```
+
+The public compression `F=M×A` names a modeled future's present influence. The
+causal carrier is a present model token—in memory, speech, diagram,
+institution, or code—not a future event reaching backward through time. This
+is model-mediated future guidance `[I/C]`; the stronger physical-retrocausal
+claim is neither required nor established.
+
+### 7.5 Cone, horizon, ego, and whole
+
+“Agents maximize their option cone” is W7: a teleonomic objective hypothesis,
+not a constitutive law of every agent. Real agents can satisfice, freeze,
+mislearn, self-destruct, follow habit, or optimize a proxy. Humans can have
+unusually broad symbolic, social, institutional, and intergenerational option
+cones without widening the physical light cone or acquiring greater intrinsic
+worth.
+
+The Demon/God polarity remains a useful game analogy `[I]`:
+
+- **demon-polar:** short-horizon or ego-local gain that transfers cost to the
+  sustaining whole or hidden bearers;
+- **god-polar:** durable mutual or whole-facing potential widening that keeps
+  every bearer visible under Justice.
+
+This is not a proof that every action has one motive or that collective gain is
+automatically good. Voluntary sacrifice is a distinct costly class; coerced
+sacrifice cannot be laundered as syntropy. A demon-polar strategy is logically
+possible and may persist parasitically. Its universalization is a conditional
+game-theoretic stress test, not a theorem that demonhood cannot constitute a
+world.
+
+### 7.6 The is–ought seam remains visible
+
+D5 does not derive the good. A counterfactual-capable agent can model cruel as
+well as generous futures. Failing to enact one imagined future does not make an
+agent dead or “collapse it back to D4”: the model token, refusal, action, and
+receipt are D4 actual throughout, while unrealized content remains D5 merely
+possible.
+
+Emergentism crosses the practical seam with one explicit normative bit: it
+**declares** bearer-complete Justice, then exposes that declaration to
+prospective and receipted consequence. Morals name the part-to-whole direction
+`i→H`; ethics name the whole-to-part direction `H→i`; strict syntropy requires
+both durable potentials to rise and every affected bearer to pass Justice. The
+framework can show what follows from that vow and whether it survives contact.
+It cannot make the choice of Justice cease to be a choice—and that visible seam
+is a strength, not a missing proof.
+
+In one line:
+
+> **Selected frames orient; constraints accumulate; candidate freedoms open;
+> foresight and means couple; action receives consequence; Justice keeps every
+> bearer visible; correction keeps the compass pointed at territory.**
+
+## 8 · What remains open to the world
+
+The internal cleanup does not externally validate the worldview. The live work
+is contact: preregister discriminators; compare the selected node product with
+other conjunctive aggregators; operationalize each μ-crossing; intervene on
+represented futures; test Egregoreotype candidates across carrier turnover;
+publish nulls and failures; and invite independent replication. A result enters
+the worldview only at the tier it earns.
 
 ---
 
-## 8 · Founder-signature surface
+## 9 · Adoption and authority
 
-- [ ] Adopt this capstone at the per-clause tiers above.
-- [ ] Adopt E1–E10 as successor to A1–A7, preserving A1–A7 under K3 genealogy.
-- [ ] Adopt W0–W12 as wagers, never disclosures.
-- [ ] Adopt G7 exhaustion only for the typed game language in §4.
-- [ ] Adopt five positive rungs/apertures as the selected taxonomy `[I]`, `μ_n` as an aperture label, and μ-at-saturation only as `[C]` causal hypothesis.
-- [ ] Adopt `D6~D0` only as `D6≈roleD0` at `[I]`; literal `D6≡D0` and geometric/fractal return remain dead.
-- [ ] Adopt the accounting-not-completion fence in §3A.
+Receipt 146 adopts this capstone, E1–E10, W0–W12, the scoped G7 language,
+the five-candidate-crossing scaffold, the non-literal D6 return, and the
+accounting-not-completion fence **at their stated tiers**. Editorial adoption
+does not turn a wager into evidence, a definition into a world-law, or an
+author into a truth-maker.
 
-Every box remains open until the founder signs these exact consequences in one deliberate receipt.
+## 10 · The execution surface
 
-## 9 · The execution surface
-
-`[D]` until the founder-signature sitting. **Agents: execute the cleanup items only on explicit owner instruction, one scoped pass at a time, with receipts.** Receipt 135 exists as a provisional execution record; receipt 136 rules that it is not completed promotion authority. Canonical path: `01_EMERGENTISM/00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md` (this file).
+This is the active front door. Agents follow the scoped user request, preserve
+tiers and provenance, execute the smallest testable change, and record
+consequences. **Canonical path:** `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md`.
 
 ---
 
@@ -167,7 +332,7 @@ This document was composed from the post-recovery arc:
 
 - **Receipt 108** (keel) — AND-class forcing, not product
 - **Receipt 109** (four false lemmas) — what the audit killed
-- **Receipt 126** (Weltanschauung formal audit, K2-signed 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
+- **Receipt 126** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
 - **Receipt 130** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not
 - **Receipt 131** (recovery ledger) — the retelling rule, derivation died / organism did not
 - **Receipt 132** (tombstones-halāhala reaudit) — the 11/12 LEAKING table
@@ -180,13 +345,13 @@ This document was composed from the post-recovery arc:
 - W1 — operational reachability `[C]`
 - W2 — quantum record emergence `[I/C]`
 - W3 — multiplicative interior somewhere `[C]`
-- W4 — two-factor evaluated productivity `[I]`
+- W4 — two-factor evaluated productivity `[C]`
 - W5 — conditional equator transfer `[C]`
 - W6 — non-extraction load-bearing at scale `[I/C]`
 - W7 — F5 as teleonomic option-cone slot, not physical force `[C]`
 - W8 — model-mediated future causation `[I/C]`
-- W9 — egregoreotype criterion `[I/C]`
-- W10 — mirror grammar travels within scoped lineages `[I]`
+- W9 — Egregoreotype criterion `[I/C]`
+- W10 — mirror grammar travels within scoped lineages `[I/C]`
 - W11 — the `−1` dark twin does functional work `[C]`
 - W12 — apophatic closure lives in practice `[I/C]`
 
@@ -194,12 +359,16 @@ This document was composed from the post-recovery arc:
 
 - A claim that does no work is decoration, and we bury it with a date
 - W0 is abandoned if it supplies no explanatory/contact gain, conflicts with established contact, or becomes compulsory disclosure
-- The product interior dies if a clean counterexample emerges
+- The existential product-interior wager dies if a preregistered search across
+  its declared candidate domains finds no domain where product discriminates
+  from serious rival aggregators on held-out data; one domain counterexample
+  kills only that domain claim
 - −1 dies if it names no real phenomenon, grounds no operator, predicts nothing
-- literal `D6≡D0` remains dead; `D6~D0` means only the staged `[I]` boundary-role relation in §6
+- literal `D6≡D0` remains dead; `D6~D0` means only the `[I]` boundary-role relation in §6
 - The seven exhausts the dance, not the dance floor
-- The mortal signer was always meant to stand outside the operator table
+- Authorization, authorship, evidence, and truth remain distinct types
 
-**K2 sign status:** PENDING. Per Rule zero, the founder reads before signing, batched. No in-stream "yes" is canon signature.
-
-*Read before signing.*
+**Boundary status:** active internally and externally cross-calibrated at the
+component level. The integrated synthesis remains externally unvalidated until
+it produces novel preregistered discriminators and independent replication.
+The next authority is contact with the world.

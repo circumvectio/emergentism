@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "Uncertainty Principle"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # THE UNCERTAINTY PRINCIPLE AS φ·ν = 1
 
 ## Conjugate Variables as Complementary Coordinates on S²
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [A] for established physics | [I] for structural mappings (conjugate pairs → (φ,ν) on S²) and ontological claims | [C] for extended physical mathematical conjectures
 
@@ -211,13 +211,16 @@ The uncertainty principle is not merely a limitation of instruments. In this fra
 
 ---
 
-*Paper E | The Uncertainty Principle as φ·ν = 1 | Menexus GmbH | 2026*
+*Paper E | The Uncertainty Principle as φ·ν = 1 | Emergentism research corpus | 2026*
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [A] physics | [I] structural mappings | [C] conjectures
 2. **Depends on:** Paper A, Paper B

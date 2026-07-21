@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture**
@@ -101,7 +100,7 @@ Crucially, specialized protocols utilizing the amygdala electrical fingerprint (
 ### **Rapid Synaptic Restoration and Pharmacological Interventions**
 
 In environments characterized by continuous informational conflict, chronic stress induces severe structural impairments in the neural architecture.10 Basic neuroscience research demonstrates that prolonged stress and memetic load lead to neuronal atrophy, dendritic spine loss, and synaptic depression specifically localized in the medial prefrontal cortex (mPFC) and the hippocampus.10 This stress-induced dysplasticity leaves the host trapped in perseverative, inflexible thought patterns and rigid, negative cognitive biases—the exact psychological conditions required for parasitic memetic infection to thrive.10
-To counter this structural degradation, rapid-acting pharmacological interventions are increasingly studied as mechanisms for synaptic restoration.10 Sub-anesthetic administrations of agents like ketamine act directly on the glutamatergic system in clinical research settings and can be associated with rapid changes in mPFC synaptic function.10 The framework reads this as evidence that cognitive flexibility has biological substrate constraints, not as a memetic-defense prescription.10 Any pharmacological intervention belongs under qualified clinical governance, not under self-directed operator hardening.10
+To counter this structural degradation, rapid-acting pharmacological interventions are increasingly studied as mechanisms for synaptic restoration.10 Sub-anesthetic administrations of agents like ketamine act directly on the glutamatergic system in clinical research settings and can be associated with rapid changes in mPFC synaptic function.10 The framework reads this as evidence that cognitive flexibility has biological substrate constraints, not as a memetic-defense prescription.10 Any pharmacological intervention belongs under qualified clinical oversight, not under self-directed operator hardening.10
 When rapid synaptic restoration is combined with intensive, neuroscience-informed cognitive training, the results are profound.32 Deliberately focused, effortful training protocols harness neuroplasticity to sharpen auditory and visual cortical representations, increasing serum levels of brain-derived neurotrophic factor (BDNF) and establishing robust, long-term defense against cortical dysplasticity and memetic capture.42
 
 ## **Autonomic Nervous System Regulation as a Cognitive Firewall**
@@ -295,7 +294,10 @@ By institutionalizing these physical disciplines and actively optimizing the epi
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

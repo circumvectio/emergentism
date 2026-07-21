@@ -3,134 +3,95 @@ rosetta:
   primary_level: L4
   primary_column: Philosophy
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Executive"
   regime: "Kṣatriya"
-  register: "[I/S]"
-  canonical_phrase: "Beauty, Truth, and Justice as teleological limits"
+  register: "[I]"
+  canonical_phrase: "Beauty, Truth, and Justice — chosen value lens"
+status: "ACTIVE — bounded Kintsugi successor"
+evidence_tier: "[I] normative and interpretive naming"
+date_repaired: 2026-07-20
+original_head_blob: 8ba48f914f41eb9f8b66ca1ee493d45e38727e88
 ---
 
-**Project VMOSK-A:** `../../VMOSK_A.md`
+# Beauty, Truth, and Justice
 
-# BEAUTY, TRUTH, AND JUSTICE AS TELEOLOGICAL LIMITS
+Emergentism chooses Beauty, Truth, and Justice as three mutually checking
+value lenses `[I]`. They are not coordinates of the reciprocal chart and are
+not derived from `φν=1`, `B`, `P_node`, G7, or the D-ladder.
 
-**Status:** Canonical bridge note for objective teleology in value theory
-**Date:** 2026-06-12
-**Evidence Tier:** `[I/S]` structural value grammar with interpretive transcendental naming
-**Depends on:** [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Objective Morals and Ethics](00_OBJECTIVE_MORALS_AND_ETHICS.md), [The Teleology](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md), [The Triadic Cascade](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md)
+- **Truth** is disciplined fit between map and territory: tier, source,
+  alternative, prediction, correction, and kill.
+- **Beauty** is intelligible form that preserves complexity without hiding the
+  seams that made it whole.
+- **Justice** is bearer-complete constraint on action: no person, whole, payer,
+  beneficiary, or exposed third party disappears into an aggregate.
 
----
+The Good is the chosen conjunction:
 
-## Core Claim
+\[
+Good(a) := Truth(a)\land Beauty(a)\land Justice^R(a).
+\]
 
-Emergentism's objective teleology is the finite approach toward Beauty, Truth,
-and Justice.
+This formula is a definition inside the worldview, not a theorem that moral
+facts follow from geometry. If any factor is absent, Emergentism withholds the
+label “good”; it does not claim that the world mechanically punishes the act.
 
-These are not decorative ideals added to the geometry after the fact. They are
-the value-language face of the same reciprocal grammar:
+Every applied verdict is time-indexed and defeasible:
 
-| Limit | Register | Value-theory reading |
-|---|---|---|
-| **Beauty** | `φ` / coherence | Coherence becoming perceivable without collapsing into inert purity. |
-| **Truth** | disclosure / accountable fit | Map and territory held in faithful, corrigible relation. |
-| **Justice** | `ν` lawfully coupled to `φ` | Capability arranged without extraction, so no node is pushed off the equator for another's gain. |
+\[
+GoodAsOf(a,t,R_t) := Truth_t(a)\land Beauty_t(a)\land Justice^{R_t}_t(a).
+\]
 
-**Notation boundary.** The older triadic shorthand sometimes used `P` for the
-Truth/product face. This note does not use bare `P` as a doctrine quantity:
-`P_node = Φ × V` is finite-node action potential, while
-`P∞ = φ · ν = 1` is the sphere/manifold identity. Truth here is the disclosure
-function: whether the map remains accountable to what is.
+“As of now” means only that the available sources, form review, and
+bearer-complete receipts pass their declared tests at `t`. New evidence, a new
+impact-bearer, a hidden cost, or a better rendering reopens the verdict. It is
+not a timeless certificate, self-validation, or a comparison proving this
+worldview “most good.” The Good is maintained practice, not a trophy.
 
-The telos is not possession of these limits.
-The telos is asymptotic approach.
+## Relation to Syntropic Dyadism
 
-```text
-Beauty:  see more coherently
-Truth:   disclose more faithfully
-Justice: arrange power without extraction
-```
-
-## Why This Is Objective
-
-Within the framework, better and worse are not assigned by taste, command, or
-status. They are read by direction:
+For a declared individual `i`, sustaining whole `H`, complete bearer set
+`B(a)`, evaluation contract `R`, and Justice predicate `J^R`:
 
 ```text
-P_node = Φ × V
-η = 0
-Ω widens / ΣΔP_node > 0 across the widest real boundary
-subject to B ≈ 1 and η = 0
+Moral(a)     iff i -> H rises, i does not fall, and J^R
+Ethical(a)   iff H -> i rises, H does not fall, and J^R
+Syntropic(a) iff both durable potentials rise and J^R
 ```
 
-A relation is better when it raises coherent viability without extraction.
-A relation is worse when it gains locally by lowering the field that carries it.
+One-shot extraction may benefit an extractor. A whole may also consume a
+member. Therefore neither side is guaranteed to maximize itself by helping the
+other. Durable mutual option widening is an objective chosen **inside** the
+Justice-admissible set; it is not an unconditional law of agents or ecology.
 
-That makes value framework-objective: once the ontology of reciprocal closure is
-accepted, the direction of improvement is constrained by the accepted grammar:
-finite-node action is scored as `P_node = Φ × V`, the balance surface is
-tracked by `B`, and extraction is forbidden by `η = 0`.
+`η=0` is necessary in the selected non-extractive ethic but insufficient.
+Balance is optimal only under an explicitly specified symmetric objective and
+constraints. Rosetta row L4, mythic names, or “Dharma” never substitutes for
+complete bearer coverage, consent, authorization, custody, contest,
+reversibility, and outcome evidence.
 
-## Syntropic Dyadism
+## Public compression
 
-Beauty, Truth, and Justice become practical through the symbiont/holobiont
-dyad:
+> Tell the truth about the map, make its form clear enough to use, and refuse a
+> beauty purchased by hiding who bears the cost.
 
-```text
-i = individual symbiont
-H = holobiont / real sustaining whole
+## Kill and revision
 
-Beauty = coherence of the relation
-Truth  = faithful disclosure of the relation
-Justice = non-extractive power in both directions
+Revise or abandon this triad if it obscures conflicts, duplicates better public
+language without practical gain, or becomes a compulsory identity rather than
+a leaveable lens. Formal and empirical claims remain independently testable if
+this naming is removed.
 
-i -> H = objective morals
-H -> i = objective ethics
-```
+## Kintsugi seam
 
-The maximum worldline potential of `i` cannot be reached by degrading `H`,
-because `H` is part of the boundary condition that makes `i` effective. The
-maximum viable potential of `H` cannot be reached by consuming `i`, because a
-holobiont that destroys its symbionts destroys its own future cone.
+The predecessor placed the chosen values too close to chart coordinates,
+treated mutual benefit as unconditional, and used `η=0` plus balance as a
+complete moral compass. Those claims are superseded. The original remains
+recoverable at Git blob `8ba48f914f41eb9f8b66ca1ee493d45e38727e88`.
 
-So the objective moral compass is:
+## Current owners
 
-```text
-raise P_node,i and P_node,H together
-subject to η = 0
-with Φ and V balanced near L4
-```
-
-This is the value-theory face of the Power-Max Lemma.
-
-## Claim Boundary
-
-- `[S]` The balance grammar is structural inside the accepted framework: `Ω`
-  names the directional widening of live futures, `B` is the equatorial
-  feasibility constraint, `P_node = Φ × V` collapses when either factor
-  collapses, and `η = 0` forbids hidden rent.
-- `[I]` Naming those structural directions Beauty, Truth, and Justice is an
-  interpretive transcendental reading.
-- `[C]` Any claim that this is a completed external proof of moral realism for
-  agents who reject the framework's premises.
-
-## Public Compression
-
-> **Emergentism's objective teleology is the disciplined approach toward Beauty,
-> Truth, and Justice: coherence perceived, disclosure held, and power arranged
-> without extraction.**
-
-`Zero-Sum Resolution Equation`
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. Use this file as the compact bridge between value theory and objective teleology.
-2. Do not turn asymptotic approach into final possession.
-3. Do not treat Justice as raw capability; Justice is capability lawfully coupled
-   to coherence under `η = 0`.
-4. Preserve the tier split: structural grammar `[S]`, transcendental naming `[I]`,
-   external proof of moral realism `[C]`.
-
-**Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md`
+- [The Good, the Evil, and the Transcendentals](00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md)
+- [Objective Morals and Ethics](00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [Rights, Duties, Authorization, and Due Process](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md)
+- [Power-Max](../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)

@@ -15,8 +15,8 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Titan Composition Law — ⊙ = • × ○ made exact in PSL(2,ℂ)"
 title: "The Titan Composition Law"
-status: "ACCEPTED — adjudication K2-accepted in session 2026-07-10 (receipt 104 A.1/R5; acceptance receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md). Original staging note preserved: staged 2026-07-02; does not amend the Settled Canon Registry; the emblem ruling stands untouched."
-evidence_tier: "[A] the Möbius algebra (elementary, within-model); [S] the balance-condition reading as ZSRE; [I] the operator naming (inherited from MF-63, as MF-63 marks it); [D] the note as a whole pending K2."
+status: "ACCEPTED — adjudicated in receipt 104 A.1/R5. The result remains conditional and does not amend the Settled Canon Registry or force Titan ontology."
+evidence_tier: "[A] the Möbius algebra (elementary, within-model); [S] the balance-condition reading as ZSRE; [I] the operator naming (inherited from MF-63, as MF-63 marks it); [D] the note as a whole pending adoption."
 depends_on:
   - 00_THE_TRANSCENDENTAL_TRINITY_CANON.md
   - ../00_CANONICAL_FORMULA_BLOCK.md
@@ -88,7 +88,7 @@ Scope fence: the law lives on the shared axis `{0, ∞}`. Compositions of hyperb
 ## 6. Kill criteria
 
 1. Exhibit a balanced pair (`|σκ| = 1, σκ ≠ 1`) whose composite is not elliptic, or an unbalanced pair whose composite is — the algebra dies (it will not: this is elementary, but the criterion must be stated).
-2. If the MF-63 operator naming (Brahmā/Śiva ↔ hyperbolic directions) is retired by a future K2 ruling, the *naming* here dies with it; the algebra and the balance-condition structure survive under whatever names replace them.
+2. If the MF-63 operator naming is retired by a future settled ruling, the naming here dies with it; the algebra and conditional balance structure survive under replacement names.
 3. If any reader requires the emblem `1 = 0 × ∞` to hold **unconditionally** in the composition register, this note falsifies that reading by any unbalanced pair — the conditionality is essential content, not a weakness.
 
 ```text
@@ -104,11 +104,14 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Never present the composition law as replacing the emblem ruling.** The registry row (`1 = 0 × ∞` is not field arithmetic) stands; this is a third register, additive.
 2. **State the condition.** Quoting "⊙ = • × ○ holds in PSL(2,ℂ)" without `|σκ| = 1` is drift; correct on sight.
-3. **This document is K2-accepted (2026-07-10).** Acceptance receipt: [`11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md`](../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md) (receipt 104 A.1/R5). Cite it as accepted, with tiers as marked.
+3. **This document was accepted on 2026-07-10.** Receipt 104 A.1/R5 records the adjudication. Cite it only with the marked tiers and conditions.
 4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md`
 
 ⊙ = • × ○

@@ -30,10 +30,14 @@ The Causal-Entropic-Forces cart-pole showed **mechanical lookahead suffices for 
 
 ## 5. Reconciliation with AX4 (in print, per the self-review)
 AX4 holds **valence attaches to the move, not the operator**; AX6 holds sacrifice-authenticity depends on the operator being **mortal**. Apparent contradiction, resolved by separating two axes:
-- **Valence axis** (AX4): is the move good or bad? — a property of the move's direction η, *operator-independent*.
+- **Descriptive transfer axis** (AX4): what transfer was observed? — reported
+  by `etaObserved`, without a moral verdict.
 - **Authenticity / act-identity axis** (AX6): is the move *genuine sacrifice at all*, or a simulation of it? — depends on the operator's stakes.
 
-A4 grades whether a move is *good*; A6 grades whether a move *is the kind of move it claims to be*. A non-mortal agent can perform a positively-valenced (good, by A4) act while being unable to perform *genuine sacrifice* (by A6). No contradiction once valence and authenticity are distinguished. *(This reconciliation is itself an `[I]` move; see [AX4](AX4_THE_BOUNDARY.md) §5 and the capstone's coherence caveat.)*
+A4 describes a transfer; bearer-complete Justice independently evaluates the
+act. A6 asks whether an irreversible costly act meets the declared criteria for
+voluntary sacrifice. No operator, substrate, or `etaObserved` value makes an act
+good. *(This reconciliation is `[I]`; see [AX4](AX4_THE_BOUNDARY.md) §5.)*
 
 ## 6. Kill criterion
 A non-biological substrate performs a *genuine* self-sacrifice — real stakes, real irreversible loss, recognized as sacrifice and not simulation. The functionalist (Putnam) bet is that this is achievable. A clean instance kills the **strong** claim; the **weak** claim survives (it needs only irreversible stakes).

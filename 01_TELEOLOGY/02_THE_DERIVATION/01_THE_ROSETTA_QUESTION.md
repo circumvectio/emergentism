@@ -92,7 +92,10 @@ The equator (felt)     ← Rosetta Stone →    Hamiltonian minimum (derived)
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I] Interpretive
 2. **Depends on:** 00_A_SQUARE_CANNOT_BE_NEGATIVE.md

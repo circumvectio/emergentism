@@ -11,7 +11,7 @@ rosetta:
       role: "keep root-level compatibility aliases from becoming authority"
     - level: L4
       column: Execution Handoff
-      role: "route current decisions to owner lanes and K2-gated actions"
+      role: "route current decisions to source owners and scoped authorizations"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -61,7 +61,10 @@ It is where the corpus records:
 | `60_BREAKTHROUGH_HARDENING_BRIEF.md` | shortest honest re-entry brief for humans and agents |
 | `61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md` | routing audit across Uplink and wiki-facing surfaces |
 
-### 2026-05-04 Caste-Audit Series (added 2026-05-23 per K2-Q17)
+### Historical 2026-05-04 Caste-Audit Series
+
+This dated series preserves its original provenance. Its former signoff labels
+do not govern current repository or AI work.
 
 L3 audit Wave SK-5 E-SK5.6 flagged that audit-number slots 72-76 each have two files — a 2026-04-23 first-pass and a 2026-05-04 caste-specific deep audit. Both series co-exist intentionally:
 
@@ -89,6 +92,7 @@ The two series are intentionally co-located (per memory `feedback_emergentism_nu
 
 ## Do Not Use This Lane For
 
-- inventing new doctrine that belongs upstream in `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/` or `SKYZAI_ORG/`
+- inventing new doctrine that belongs upstream in the owning Emergentism
+  ontology, methodology, cosmology, or framework-support lane
 - treating root compatibility aliases as competing authority surfaces
 - editing summaries first when the owner surface is what actually needs repair

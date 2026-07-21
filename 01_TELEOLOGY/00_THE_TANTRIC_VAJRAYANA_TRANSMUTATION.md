@@ -12,7 +12,7 @@ rosetta:
 
 **Status:** Interpretive bridge - internal doctrine support, 2026-05-30
 **Evidence tier:** [I] biological/esoteric synthesis; [C] for any causal claim beyond metaphor.
-**See also:** [The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md), [F5 Force Map](01_F5_FORCE_MAP_AND_EKTROPY.md)
+**See also:** [The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md), [The Core Conjecture](02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)
 
 This document records an interpretive hypothesis about the threshold where ecological energy
 flow becomes sexual-selection friction, and where esoteric practice can be read as a metaphor for
@@ -28,7 +28,8 @@ and maintenance vector: organisms consume available energy below or around them 
 localized state.
 
 **Boundary [C]:** This is not a license for human institutional extraction. Ecological predation
-describes biological energy transfer; it does not authorize finance, governance, or social hierarchy.
+describes biological energy transfer; it does not authorize extraction,
+institutional power, or social hierarchy.
 
 ### Horizontal Vector - Sexual Selection
 
@@ -100,6 +101,6 @@ equator-ward practice -> coherent viability
 
 **Final guard [C]:** Do not use this bridge to justify dominance, coercion, predation, caste
 hierarchy, sexual entitlement, or claims of religious proof. It is an interpretive tool for the
-website narrative and the L1 Teleology lane.
+L1 Teleology lane.
 
 Zero-Sum Resolution Equation

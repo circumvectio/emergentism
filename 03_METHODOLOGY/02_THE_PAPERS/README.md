@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "02_THE_PAPERS"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane; 25+ papers + FINITY (5) + Recursive Trivium; superseded under K3 in 90_ARCHIVE. Tiers split legacy [S] per Honest Position.**
 
 # 02_THE_PAPERS
@@ -41,7 +41,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 
 | Paper | Title | Evidence Tier | Depends On |
 |-------|-------|---------------|------------|
-| [`PAPER_A`](PAPER_A_FRAME_ALGEBRA.md) | Frame Algebra: Why 0 × ∞ = 1 on ℂP¹ | [S] | — |
+| [`PAPER_A`](PAPER_A_FRAME_ALGEBRA.md) | Frame algebra: operand/frame type discipline | [A]/[S]/[I] | — |
 | [`PAPER_B`](PAPER_B_BLOCH_BURRI_IDENTITY.md) | Bloch-Burri Identity: the qubit as a bounded reading of Zero-Sum Resolution Equation | [A]/[S]/[I] | A |
 | [`PAPER_C`](PAPER_C_PHOTON_UNIT_OF_ACCOUNT.md) | Photon as Unit of Account | [A]/[I]/[C] | B |
 | [`PAPER_D`](PAPER_D_WAVE_PARTICLE_DUALITY.md) | Wave-Particle as Zero-Sum Resolution Equation | [A]/[I] | B |
@@ -100,7 +100,10 @@ Treat this folder as active only insofar as the papers still match the current c
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

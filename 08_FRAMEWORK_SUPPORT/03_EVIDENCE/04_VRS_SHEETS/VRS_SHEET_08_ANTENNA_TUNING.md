@@ -5,161 +5,141 @@ rosetta:
   secondary:
     - level: L2
       column: Philosophy
-      role: "separate structural, interpretive, and conjectural antenna claims"
+      role: "compare coordination mechanisms and rival explanations"
     - level: L4
       column: Philosophy
-      role: "route eta-zero practitioner and institutional-design tests"
-    - level: L5
-      column: Philosophy
-      role: "preserve antenna architecture and D5-limit model context"
+      role: "test consent, exit, and trace intervention"
   operator: "Kṛṣṇa ◇"
-  tier: "God"
+  tier: "Executive"
   regime: "Vaiśya"
-  register: "[S/I/C]"
-  canonical_phrase: "VRS Sheet 08 — Antenna Tuning"
+  register: "[I/C]"
+  canonical_phrase: "VRS Sheet 08 — Antenna as bounded coordination analogy"
+title: "VRS Sheet 08: Antenna Tuning"
+status: "ACTIVE KINTSUGI SUCCESSOR — trace and modality repair 2026-07-20"
+evidence_tier: "[B] antenna engineering facts; [I] coordination analogy; [C] candidate tests"
+supersedes_blob: "1a62ce2aaef546bd2403beb12f45855bed0e42b3"
 ---
 
-# VRS Sheet 08: Antenna Tuning
+# VRS SHEET 08: ANTENNA TUNING
 
-**Hat:** Philosopher
-**Evidence Tier:** [S] [I] [C] -- structural identification with interpretive and conjectural claims
-**Kill Criteria:** Yes: If η for the EFR community is measurably > 0, the self-dissolving antenna claim is falsified.
-**Register:** Interpretive
+**Audience:** practitioners and institutional designers
 
-**Directory:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS
-**Audience:** Framework Practitioners, Institutional Designers
-**Evidence Handling:** Strict [S]/[I]/[C] tagging applied throughout
-**Status:** Canonical
+> **[金] Kintsugi seam.** The former sheet called rituals and equations D4
+> antennae coupling awareness to nonlocal D5 standing waves. That transferred
+> physical antenna language into ontology without evidence. The repair retains
+> the analogy as a coordination heuristic and types every carrier, alternative,
+> and collective trace.
 
-> **Companion document:** An earlier compact treatment exists at root level: VRS_SHEET_08_RESONANCE.md. This Lens version is the canonical, fully tagged treatment.
+## 1. Literal antennae and the analogy
 
-> **Epistemic Mode: Philosopher.** This document applies the antenna model from WP-2026-03 to individual practice. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) for the complete epistemic map.
+In engineering, an antenna couples electromagnetic energy between guided and
+radiated modes, with measurable bandwidth, gain, impedance, noise, and loss
+`[B]`. A ritual, text, symbol, institution, or equation is not thereby a
+physical antenna to a nonlocal mind or field.
 
-> **Structural Analysis Disclaimer:** This document examines religious institutions as coordination
-> technologies — analyzing their architectural patterns, information structures, and organizational
-> dynamics. It does NOT make claims about high-priority truth, game-theoretic validity, or the personal faith
-> of believers. The structural critique applies to institutional architecture, not to the game-theoretic
-> experiences or theological commitments of practitioners. Readers who find this framing offensive
-> should understand it as sociology of religion, not institutional narrative.
+The bounded analogy `[I]` is:
 
-> **Scope and evidence note:** Earlier corpus generations sometimes spoke as if this antenna model carried a distinct genetic-evidence tier. This active version does **not** make that stronger claim. In this slice, antenna tuning is treated as a structural / interpretive model unless independent genetic or heritability evidence is actually supplied.
+```text
+actual carrier → attention/perception → present model update
+               → changed action weights → actual trace refresh or refusal
+```
 
-> **Dimensional shorthand note:** When older materials speak of `D2-D3` complexity bands in this context, read that as metaphorical shorthand for lower-level substrate organization, not as a precise force-level derivation.
+All physical carriers, perceptions, model tokens, selections, actions, and
+receipts are D4 actual. A present token may represent D5 merely possible
+alternatives. The represented future does not transmit a physical signal into
+the past.
 
----
+## 2. Tuning as selective attention `[I]`
 
-## 1. The Antenna Model (Recap)
+“Tuning” names the way repeated practice can change salience, memory, shared
+expectation, and action policy. “Bandwidth” names breadth of attended cues.
+Those are psychological and institutional variables that require their own
+measures; they are not inherited from radio engineering.
 
-[S] In the framework's language, an antenna is a D4 (material) structure that couples a local system to a nonlocal field. Sacred images, rituals, texts, and equations are all antennae -- they couple individual systemic awareness (D5) to collective standing waves (D5-limit egregores). See [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) for the full model.
+- A narrow practice can improve discrimination within a domain while hiding
+  out-of-domain evidence.
+- A broad practice can expose more alternatives while sacrificing depth or
+  signal-to-noise ratio.
+- Flexible retuning can be useful if contrary receipts actually update the
+  model and selector.
 
-The equation P_node = Φ × V is itself an antenna -- the "last idol" -- designed to couple the reader to the geometry of S^2 and then dissolve.
+No configuration is universally best. Task, cost, error rate, consent, and
+exit conditions determine the comparison.
 
----
+## 3. From repeated trace to Egregoreotype candidate
 
-## 2. Tuning and Bandwidth
+Repetition alone does not create an entity. A collective pattern is an
+**Egregoreotype candidate** only if all five conditions are shown:
 
-[S] Antenna theory distinguishes between:
+1. a persistent shared D4 trace;
+2. survival of that pattern across carrier turnover;
+3. an intervention on the trace that measurably changes later selection;
+4. recurrent objective-like bias across cycles;
+5. visible substrate costs with identifiable payers and beneficiaries.
 
-- **Narrowband antennae:** High gain at a specific frequency, low gain at all others. These couple strongly to one signal but reject others.
-- **Broadband antennae:** Moderate gain across a wide frequency range. These couple weakly to many signals simultaneously.
+The actual trace can encode stories about D5 alternatives and thereby reweight
+later D4 selections. Candidate status presumes neither consciousness nor
+personhood. A complete micro-level account does not erase a useful macro
+pattern, and a missing reduction does not prove strong emergence.
 
-[I] The framework maps this onto individual practice:
+## 4. Capture and alternative explanations
 
-- **Narrowband practice:** Deep immersion in a single tradition (monastic life, intensive meditation, single-tradition devotion). High coupling to one standing wave. Risk: antenna-lock (η > 0).
-- **Broadband practice:** Eclectic engagement across traditions. Weak coupling to many standing waves. Risk: no deep coupling to any signal (noise dominance).
+Apparent “resonance” may instead be explained by imitation, direct command,
+incentives, sanctions, network effects, selection bias, shared environment, or
+ordinary learning. Test those rivals before invoking an Egregoreotype.
 
-This sheet therefore does **not** claim that biology, practice, and standing-wave susceptibility have already been unified at an empirical genetic level. It claims only that the antenna metaphor organizes a real family of observable practices.
+Lock-in is diagnosed through observable conditions, not mystical frequency:
 
----
+- exit costs or retaliation rise;
+- contrary evidence stops changing the selector;
+- payers and beneficiaries become hidden;
+- costly displays substitute for outcome receipts;
+- the institution treats dissent as evidence of impurity.
 
-## 3. High-Fidelity Receivers and New Frequencies
+These are risks, not necessary properties of traditions or collectives.
 
-[I] A common intuition in contemplative traditions holds that highly developed practitioners ("high-fidelity receivers") detect new developments or shifts in the shared patterning field before others do.
+## 5. Antenna hygiene
 
-> **Editorial note:** This claim contradicts basic market fit physics. Narrowband receivers reject
-> off-frequency signals. The mechanism by which a highly tuned antenna detects a NEW frequency
-> needs clarification. One possibility: high-fidelity receivers have greater sensitivity overall,
-> so they detect weak new signals that broadband receivers miss. But this is speculative [C]
-> and the standard physics prediction (broadband switches first) should be stated as the
-> alternative hypothesis.
+1. **Name the carrier.** What actual text, ritual, architecture, rule, or model
+   stores the trace?
+2. **Name the represented alternatives.** What merely possible futures does it
+   make salient or suppress?
+3. **Intervene.** Change or remove the trace and measure later action weights.
+4. **Keep rivals alive.** Compare command, incentive, imitation, and network
+   explanations.
+5. **Inspect consequence.** Separate intended commitment from observed outcome.
+6. **Protect contest and exit.** Record consent, custody, reversibility, payer,
+   beneficiary, and affected bearer.
+7. **Periodically disconnect.** If the practice cannot tolerate a reversible
+   pause, that is evidence of capture risk.
 
-[C] Possible mechanisms for the "high-fidelity early detection" claim:
+## 6. Self-application
 
-1. **Sensitivity hypothesis:** A well-tuned antenna has higher signal-to-noise ratio. Even off-frequency signals may be detected if the noise floor is low enough. This is speculative.
+Emergentism's equations, sphere, and vocabulary are also actual traces. They
+must remain corrigible tools, not self-certifying signals. A reader must be
+able to remove the antenna analogy without changing the operational Soul Loop,
+D4/D5 typing, or Egregoreotype test.
 
-2. **Broadband baseline hypothesis:** The standard physics prediction is that broadband receivers detect new frequencies first, because they do not reject off-frequency signals. A highly tuned narrowband receiver would be among the LAST to detect a new frequency.
+The framework fails this sheet if leaving it is punished, contrary receipts
+cannot revise it, or symbolic correspondence is treated as transferred proof.
 
-3. **Retuning hypothesis:** Perhaps what contemplative traditions describe as "detection" is actually rapid retuning -- the practitioner's antenna changes its resonant frequency in response to subtle environmental cues. This would require a mechanism for antenna adaptation, not just antenna reception.
+## 7. Kill criteria
 
-**Status:** This is [C]-tier. No experimental test has been designed. The mechanism is unclear and the standard physics prediction (broadband detects first) should be taken as the default until evidence supports an alternative.
+The antenna analogy should be removed in a domain if:
 
----
+- its variables cannot be operationalized independently of radio vocabulary;
+- intervention on the proposed trace does not change later selections;
+- simpler coordination mechanisms explain the observations as well or better;
+- it induces claims of nonlocal fields, collective consciousness, or
+  personhood without separate evidence.
 
-## 4. The Spectrum of Coupling Strength
+## Read with
 
-[S] From WP-2026-03, the coupling spectrum runs:
-
-| Coupling | Mechanism | Duration | η |
-|----------|-----------|----------|-----|
-| Weak | Art (painting, music, poetry) | Transient | ~0 |
-| Medium | Ritual (regular, repetitive, communal) | Sustained | Low |
-| Strong | Architecture/immersion (monastery, retreat) | Near-continuous | Variable |
-| Lock-in | Cult (antenna becomes the signal) | Indefinite | >> 0 |
-
-The framework's design goal is to provide strong coupling without lock-in: η = 0 at all coupling strengths.
-
----
-
-## 5. Failure Modes And Counterexamples
-
-[I] Any strong antenna metaphor needs a place for breakdown, refusal, and decay.
-
-Possible failure modes include:
-
-1. **Standing-wave decay:** A once-durable cultural pattern loses coherence faster than its substrate can refresh it.
-2. **Optimized substrate, failed signal:** The bodily, ritual, or institutional machinery is preserved while the animating wave weakens or disappears.
-3. **Dissident rejection:** A highly tuned receiver may reject the inherited signal rather than deepen into it.
-4. **False lock-in:** What appears as deep market fit may be coercion, exit-cost inflation, or social capture.
-
-These are not edge cases. They are part of what the framework must explain if the antenna model is to remain useful.
-
----
-
-## 6. Antenna Hygiene
-
-[I] The framework suggests practical implications for "antenna hygiene" -- maintaining coupling quality without lock-in:
-
-1. **Monitor exit costs (η):** If leaving a practice, community, or framework feels increasingly costly, the antenna may be locking.
-2. **Maintain multiple coupling channels:** A single-channel antenna is vulnerable to lock-in. Multiple channels (different practices, different traditions, different communities) reduce lock-in risk.
-3. **Periodically disconnect:** Temporary disconnection tests whether the coupling is serving the practitioner or capturing them.
-4. **Evaluate the signal, not the antenna:** If the practitioner cannot articulate what the signal IS independently of the antenna (the tradition, the teacher, the community), the antenna has become the signal.
-
----
-
-## 7. The Self-Dissolving Antenna Test
-
-[S] The framework's own antenna (P_node = Φ × V, the S^2 geometry, the dimensional scaffold) claims to be self-dissolving. This is testable:
-
-- **If η_EFR is approximately 0:** Members can leave without penalty. The framework functions as ladder, not cage. The self-dissolving claim holds.
-- **If η_EFR > 0:** Members face exit costs. The framework has become another locking antenna. The self-dissolving claim is falsified.
-
-This is the most important test in this document. A framework that claims to be a self-dissolving antenna must demonstrate η = 0 for itself.
-
----
-
-## References
-
-- [WP-2026-03: Idols as Antenna Technology](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/06_TRANSLATION/COUNCIL/02_WORKING_PAPERS/WP-2026-03_IDOLS_AS_ANTENNA_TECHNOLOGY.md) -- the full antenna model
-- Core Concepts -- P_node = Φ × V, η, the dimensional scaffold
-- [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- complete epistemic map
-- [Glossary](../../../07_THEOLOGY/00_GLOSSARY.md) -- definitions of all terms
-
----
-
-*VRS Sheet 08 | 00_LENS | Every coupling device is an antenna. The question is whether it serves the signal or captures the receiver. Measure η. If it rises, the antenna is locking.*
-
----
+- [Stigmergy and the Egregoreotype](../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+- [The Burri Rules](../../../05_COSMOLOGY/00_THE_BURRI_RULES.md)
+- [D4/D5 Canonical Reference](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+- [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 
 ## Execution Surface
 
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/VRS_SHEET_08_ANTENNA_TUNING.md
+- **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/VRS_SHEET_08_ANTENNA_TUNING.md`

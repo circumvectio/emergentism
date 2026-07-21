@@ -1,28 +1,78 @@
-# AX4 — THE BOUNDARY
-### Enforcement-Conditioned Cooperation: The Boundary Is the Move, Not the Agent
+# AX4 — THE BOUNDARY (historical study)
 
-**Axiom (faithful):** self↔others is a real boundary; extract nothing from cooperators (η=0), retaliate against defectors (tit-for-tat); the 2 Gods + 2 Demons exhaust the operator space; **valence attaches to the move's direction η, not to the operator.**
-**Corpus tier:** `[S/E]`. **Honest tier:** `[S/E]` — vindicated in substance, with one headline corrected (η=0 is *conditional/enforced*, not unconditional Nash).
+### Enforcement-Conditioned Cooperation Does Not Derive Moral Valence
 
-## 1. The claim
-Stable cooperation is *conditional*: take zero surplus from those who cooperate, punish those who defect, and fence the arrangement with enforcement. "Good" and "evil" are not agent types — they are the sign of the extraction coefficient η on a given move.
+**Status:** A1-A7 genealogy; not a live axiom. E1-E10 is the live owner.
+**Standing:** `[A]` for cited model outputs and established results within their
+specified models; `[I]` for the Emergentist reading; no moral verdict follows.
 
-## 2. Prior art (it is not new; cite, don't claim)
-- **Nowak's five rules for the evolution of cooperation** (verified): kin selection, direct & indirect reciprocity, network reciprocity, group selection — the canonical map.
-- **Axelrod & Hamilton tit-for-tat** (1981): conditional retaliation is the named, winning strategy.
-- **Fehr–Gächter altruistic punishment** (verified, Nature 2002): cooperation collapses without punishment, recovers with it.
-- **Ostrom's 8 design principles** (verified): graduated sanctions + monitoring are how real commons survive.
-- **Green–Laffont impossibility** (verified): no dominant-strategy mechanism is both efficient and budget-balanced with self-interested agents — so η=0 *cannot* be an *unconditional* Nash equilibrium; it requires enforcement.
-- **Hirschman, Exit/Voice/Loyalty** (1970): the boundary's exit option.
+## 1. What the former claim proposed
 
-## 3. The genuine delta — what the coupling buys: a *prediction*
-The **single-control framing**: collapse the cooperation apparatus onto one signed scalar η (extraction) and read valence off its *direction*, not off agent identity. Beyond dissolving the "good god / evil demon" reification (an internal tidy-up), this buys a **falsifiable prediction Nowak's separate rules do not make**: if cooperation really is governed by one order parameter, then *heterogeneous* enforcement mechanisms — punishment, reputation, network reciprocity, exit — should share a **common critical threshold η\*** (a single phase transition between cooperation and collapse), not each its own irreducible structure. **It dies if** the mechanisms do *not* collapse to a common threshold — then η is mere notation, a relabeling of Nowak, not a unification. That is the wager the single-control framing actually makes.
+Former A4 coupled three propositions: non-extraction toward cooperators,
+conditional retaliation toward defectors, and a four-move operator vocabulary.
+It then read the sign of an extraction coefficient `eta` as moral valence.
 
-## 4. This session's evidence — the axiom's own kill criterion FIRED (and it survived)
-A4's stated kill criterion: *"unconditional cooperation outperforms tit-for-tat in repeated mixed populations."* Across **R7 (horizon morality), R8 (moral circle), R9 (holobiont ×3)**, unconditional cooperation was *robustly free-ridden*; enforcement/conditionality was necessary every time — and that is exactly the mainstream major-transitions result. **The kill criterion fired against the *negation* of A4, so A4 survives its own test.** Two corrections logged: (i) "η=0 is Nash" must read *conditional/enforced* (Green–Laffont), per the constitution audit; (ii) since A4 itself locates valence in the *move not the operator*, the later "two objectively immoral demons" claim **contradicts the corpus's own axiom** — the demons are the *fenced enforcement* that keeps the gods stable, not a separate evil substance.
+The useful question survives: under what game conditions do cooperation,
+reciprocity, punishment, monitoring, reputation, or exit stabilize a population?
+The normative identification does not. `etaObserved` is a declared descriptive
+measurement and cannot disclose consent, hidden bearers, proportionality,
+authorization, custody, contest, irreversibility, or exit.
 
-## 5. Kill criterion
-As stated and tested: show a repeated mixed-population setting where unconditional cooperation strictly beats conditional retaliation without external enforcement. Not observed in R7–R9; matches the literature. Live extension: find a real institution where η=0 is sustained with *no* monitoring or sanction → would challenge the "enforcement-necessary" reading.
+## 2. Prior art and scope
 
-## 6. Verdict + venue
-`[S/E]`, the best-evidenced of the seven, and honest once the two headlines are corrected. Submittable to evolution-of-cooperation / mechanism-design venues as "cooperation as a signed-extraction boundary under enforcement," citing Nowak, Fehr–Gächter, Ostrom, and Green–Laffont, with R7–R9 as the model-internal support. **Reconciliation with AX6 (per the self-review):** A4's "valence in the move, not the operator" appears to clash with A6's "genuine sacrifice requires a *mortal* operator." Resolved by separating the **valence axis** (good/bad of a move — A4, operator-independent) from the **authenticity axis** (whether a move *is* genuine sacrifice — A6, stakes-dependent). See [AX6](AX6_THE_ARCHITECTURE.md) §5.
+- Nowak's rules, Axelrod-Hamilton reciprocity, Fehr-Gaechter punishment, Ostrom's
+  commons principles, and Green-Laffont mechanism limits constrain the model
+  question.
+- These sources do not show that one scalar is a universal moral order
+  parameter, that every setting shares one critical threshold, or that a mythic
+  operator label has stable valence.
+- R7-R9 are deterministic synthetic-model receipts. They are evidence about
+  those implementations, not human institutions or objective ethics.
+
+## 3. What the runs actually showed
+
+In the tested parameterizations, unconditional public-good cooperation was
+vulnerable to free-riding, while reciprocity or punishment changed which fixed
+strategy won. Punishment could also destroy aggregate welfare. This supports
+the modest conclusion that horizon, assortment, enforcement design, and cost
+matter.
+
+The former kill criterion did **not** "fire against the negation." A kill
+criterion fires only when its stated falsifying observation occurs. The runs
+did not observe unconditional cooperation outperforming conditional strategies
+in their tested cells, so that historical falsifier was not observed. That is
+neither proof of former A4 nor evidence that the tested conditions are
+necessary in all repeated games.
+
+## 4. Current Justice boundary
+
+No strategy name is good or evil. Before classifying an actual act, identify
+every materially affected bearer and record boundary, payer, beneficiary,
+principal, mandate, actor, consent, custody, reversibility, contest, exit, and
+consequence. A harmed bearer cannot be laundered by higher focal or aggregate
+welfare. Defense or punishment additionally requires evidence of the threat,
+proportionality, bounded scope, and an accountable outcome receipt.
+
+The demon/god analogy may describe short-horizon ego-potential maxing versus
+durable collective-potential maxing only as `[I]` shorthand. It does not rank
+persons and cannot make retaliation, sacrifice, or collective demand just by
+renaming it.
+
+## 5. Live research questions and kill criteria
+
+The single-control hypothesis remains a conjecture: preregister heterogeneous
+mechanisms and test whether one independently measured `eta` predicts a shared
+critical threshold better than mechanism-specific models. It contracts to
+notation if thresholds do not collapse, if `eta` cannot be measured
+independently, or if it hides material bearer costs.
+
+Claims that a particular reciprocity or enforcement design is robust require
+parameter sweeps, alternative strategies, sensitivity tests, held-out settings,
+and independent replication. A result in one game cannot upgrade the E8 vow or
+the bearer-complete Justice contract; those are chosen normative commitments.
+
+## 6. Disposition
+
+Retain this paper as a historical peer-review route and research prompt. Do not
+cite it as vindication of former A4, proof that morality emerges from
+self-interest, proof of a four-operator census, or authorization to punish.

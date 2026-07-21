@@ -36,7 +36,7 @@ rosetta:
 - **"Holobiont" is a contested term** (Douglas–Werren 2016; Moran–Sloan 2015) — usable only if framed as tested, not assumed.
 
 ### A5. Corpus-stated closures `[corpus-stated]` (not re-verified here)
-- The D5/D6 boundary; register-based resolution of the "remaining philosophical questions"; D5 as strong-in-genesis / weak-in-governance; the 5+1 constitution; the four-move (2 gods + 2 fenced demons) scheme. *These are the corpus's own "Closed" list; this program did not audit them, except to note R7–R9 give the fenced-demon architecture real (if non-novel) support.*
+- The D5/D6 boundary; register-based resolution of the "remaining philosophical questions"; the former D5 strong-in-genesis / weak-in-governance slogan; the 5+1 constitution; the four-move (2 gods + 2 fenced demons) scheme. *These were the corpus's own "Closed" list and were not re-verified by this program. The universal emergence slogan is now superseded by the crossing-specific Reduction Asymmetry owner; R7–R9 only supplied support for parts of the historical operator architecture.*
 
 ---
 

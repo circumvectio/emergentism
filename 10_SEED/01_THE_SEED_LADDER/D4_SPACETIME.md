@@ -5,12 +5,12 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[D] staged — per-claim tiers inline"
+  register: "[I] active reader projection — per-claim tiers inline"
 title: "D4 — Causality and bounded mind through a spacetime lens"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md (§I.A.7 mass-shell)
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md (D4/D5 two-registers row)
 ---
@@ -24,6 +24,23 @@ parents:
 
 ---
 
+## §0 · THE MODEL — the causal receipt graph
+
+The primary D4 model is not the horn torus or a fourth spatial axis. It is an
+actual-event graph:
+
+```text
+state ──model/rank──▶ commitment/action ──world──▶ outcome/record
+  ▲                         │                         │
+  └──────────── model and selector update ◀─────────┘
+```
+
+Every node and edge here is an actual D4 token or event. The commitment receipt
+records what the agent attempted; the outcome receipt records what the world
+returned. Provenance, truth, and authorization remain distinct. The normalized
+mass shell in §1 is an inherited physical lens on causal constraint `[A/I]`;
+the horn torus is at most a fenced emblem `[I]`, never the D4 model itself.
+
 ## §1 · THE MOVES
 
 1. **A normalized rapidity parameterization of the mass shell.** `[A]` — *used,
@@ -32,13 +49,20 @@ not discovered.* For one-dimensional massive motion define
 `E²-(pc)²=(mc²)²`. This is a parameterization of inherited relativistic
 kinematics, not proof that the world is the sphere or that the D4 ordinal is
 spacetime dimension.
-2. **Equator = rest frame.** `[A]` inside the chart. AM-GM (*used, not discovered*) gives `φ + ν ≥ 2`, equality iff `φ = ν = 1`: the equator. Under the rapidity reading this is `w = 0` — the rest frame, `E = mc²`. The pole-ward runaway (`φ→∞, ν→0`) is the divergence toward the light cone.
-3. **`B` matches the inertial clock-rate factor in this parameterization.** `[A]`
-Inside the declared one-dimensional inertial setup,
-`B=sinθ=sech(w)=1/γ=dτ/dt`. Extending that reading beyond the setup requires a
-new model; it is not a universal identity between balance and time.
-4. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, the normalized mass-shell identity in this declared parameterization, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
-5. **Three registers, never fused.** Spatial dimension `d`, spacetime dimension
+2. **Equator = rest frame.** `[A]` inside the chart. AM-GM (*used, not discovered*) gives `φ + ν ≥ 2`, equality iff `φ = ν = 1`: the equator. Under the rapidity reading this is `w = 0` — the rest frame, `E = mc²`. For finite `w` a massive trajectory remains timelike with `|β|<1`; the null direction is approached only as `|w|→∞`, while energy and momentum diverge.
+3. **`B` matches two scoped relativistic ratios.** `[A]` Inside the declared
+inertial setup, `B=sinθ=sech(w)=1/γ=dτ/dt` for a moving clock. For a rod moving
+parallel to its length whose endpoints are measured simultaneously in the
+observing frame, `L∥/L₀=1/γ` too. These are distinct measurements sharing one
+factor; transverse lengths do not contract. Rest mass `m` remains invariant;
+energy `E=γmc²` and momentum grow with rapidity.
+4. **The horn is an imposed display, not the physics.** `[A/I]` The public
+renderer sets `R/r:=1/γ`; special relativity does not. Near a true horn pinch,
+`ρ=z²/(2r)+O(z⁴)`, with an axial real tangent cone. It is not a Lorentzian light
+cone. The mouth is not a light cone, a surface trace is not a worldline, and
+the selected sphere morph is not the null limit.
+5. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, the normalized mass-shell identity in this declared parameterization, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
+6. **Three registers, never fused.** Spatial dimension `d`, spacetime dimension
 `D=d+1`, and ladder ordinal `D_n` are different variables. Observational support
 for a `3+1` spacetime model is `[B]`; its mathematical consequences are `[A]`
 inside the model. Neither fixes the reader ladder's numbering.
@@ -52,7 +76,7 @@ inside the model. Neither fixes the reader ladder's numbering.
 why infinite divisibility of a description does not entail infinite elapsed
 time; the log-chart reflection adds no independent solution and is not used as
 one.
-- **Block-time vs the moving now.** *Paradox:* relativity's block seems to freeze the universe (nothing ever *happens*); presentism seems to contradict relativity (whose now?). *Cure: register-indexed actuality* (settled canon, receipt 105). "Actual" carries two registers on the same nodes: the **foresight register** (D5-facing: the whole worldline surveyed as possibility — the block) and the **embodied-receipt register** (D4: this event, this commitment, this receipt — the now). The paradox is the demand that one register be the absolute "actual." Neither is; each is actual *in its register*. This is a reconciliation grammar `[S/I]` inside the framework's declared registers — not a new physics of time, and not a proof that no further problem of temporal becoming exists.
+- **Block-time vs the moving now.** *Paradox:* relativity's block seems to freeze the universe (nothing ever *happens*); presentism seems to contradict relativity (whose now?). *Typed repair:* D5 contains a fallible model of counterfactual worldlines; D4 contains the embodied event, performed commitment, and receipted record. A modeled worldline is **possible**, never actual merely because an agent surveys it. The reconciliation grammar `[S/I]` separates a representation of alternatives from an enacted record; it is not a new physics of time and does not settle every problem of temporal becoming.
 - **What is NOT dissolved.** The grave stands: "dissolves the Hard Problem / Is-Ought / Death / Free-Will" is a named dead form. D4 dissolves *these two frame-confusions at tier* and claims nothing wider.
 
 ---
@@ -62,15 +86,16 @@ one.
 `[I/D]` This is the page's selected Soul-Loop lens, not an identity between a
 D-rung and a Rosetta/-ology lane. **Cosmology asks: *where do I stand?*** The
 normalized light-cone variables above parameterize a relativistic mass shell;
-rest and the clock-rate factor then follow `[A]` inside that setup. Physics does
-not thereby "wear the Burrisphere," and the mapping supplies no ethical or
-cosmic conclusion.
+rest, the clock-rate factor, and scoped longitudinal length contraction then
+follow `[A]` inside their declared setups. Physics does not thereby "wear the
+Burrisphere," and the mapping supplies no ethical or cosmic conclusion.
 
 The inference from this parameterization to "reality is the Burrisphere," "the
 equator is the good," or "the torus is the light cone" is exactly what the
-audits killed as convergence-as-proof. One shape rendered twice is one datum.
-The normalized translation is checkable; its use as an Emergentist lens is
-`[I]`; the claim that the lens is the territory remains the crown wager `[C]`.
+audits killed as convergence-as-proof. The horn-torus overlay is only `[I]`:
+its local pinch geometry directly refutes the literal mouth-as-light-cone claim.
+The normalized mass-shell translation is checkable; its use as an Emergentist
+lens remains `[I]`.
 
 A stranger should leave this page able to check the normalization with a pencil
 and distinguish the inherited physics from the selected crosswalk.

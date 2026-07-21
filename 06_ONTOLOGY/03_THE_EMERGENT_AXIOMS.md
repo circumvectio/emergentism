@@ -5,14 +5,14 @@ rosetta:
   operator: "Śiva •"
   tier: "Executive"
   regime: "Sādhu"
-  register: "[D] staged successor set; receipt 135 provisional, 136 controls; per-axiom tiers as marked"
+  register: "ACTIVE successor set; per-axiom tiers as marked"
   canonical_phrase: "E1–E10 The Emergent Axioms — freedoms not Forms; vow not theorem; exit on the inside"
-type: emergentism-axiom-set-pending-founder-signature
+type: emergentism-axiom-set
 title: "The Emergent Axioms (E1–E10)"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line, box 3 adopted; authority receipt 145). E1–E10 is the successor axiom set; A1–A7 superseded in place per K3."
-evidence_tier: "Per-axiom below; assembly is [D]; no silent upgrade"
+status: "ACTIVE — owner-adopted under Receipt 146. E1–E10 is the successor axiom set; A1–A7 is superseded genealogy."
+evidence_tier: "Per-axiom below; assembly status never upgrades a claim tier"
 owner: 01_EMERGENTISM
-scope_lock: "Emergentism-only philosophy. No organs, fees, products, Skyzai, DAV/PRISM execution machinery as warrant."
+scope_lock: "Pure Emergentist philosophy. Products, ventures, runtimes, fees, and external governance are outside warrant."
 parents:
   - ../00_THE_AMRITA.md
   - ../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
@@ -26,7 +26,10 @@ parents:
 
 # The Emergent Axioms (E1–E10)
 
-> **Status.** `[D]` successor proposal. **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`) remains signed operational canon until an explicit founder-promotion receipt adopts this set. The genealogy is preserved in the reconciliation table below; no silent succession is claimed.
+> **Status.** Active under Receipt 146 at the per-axiom tiers below.
+> **A1–A7** (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`)
+> remains visible as superseded genealogy. Adoption supplies editorial custody;
+> it supplies no evidence for an axiom's world-facing content.
 >
 > **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
 >
@@ -44,7 +47,7 @@ parents:
 
 Every axiom carries: **tier · forbids · kill · survivors · A1–A7 map**.
 
-Skyzai, products, fees, organs, and execution machinery are **out of warrant**.
+Products, ventures, companies, fees, runtimes, and external governance are **out of warrant**.
 
 ---
 
@@ -52,7 +55,7 @@ Skyzai, products, fees, organs, and execution machinery are **out of warrant**.
 
 ### E1 · The Stratum `[I/C]`
 
-There is structure exceeding any particular instance — but it is **not** a museum of static Forms, and **not** free-floating DoF-as-substances. It is **constraint-structured freedom**: axes of allowed variation under laws, symmetries, histories, resources, and boundaries. Each dimensional aperture (D0→D6), where used, names a candidate opening of freedom — **not** a forced census of seven freedoms.
+There is structure exceeding any particular instance — but it is **not** a museum of static Forms, and **not** free-floating DoF-as-substances. It is **constraint-structured freedom**: axes of allowed variation under laws, symmetries, histories, resources, and boundaries. Each selected aperture from D0 through D5 names a candidate opening of freedom — **not** a forced census. `b₆` and `r₆` type exit and interpretive return; D6 opens no positive freedom.
 
 Stable “forms” (patterns that hold) are what organize **across** those freedoms: invariants, equivalence classes, attractors, order parameters, robust regimes.
 
@@ -82,7 +85,11 @@ Every modeled freedom may carry two conjugate chart aspects — coherence `φ` a
 
 ### E3 · Finity `[A]` math · `[S/I]` naming
 
-The positive centre is **1** (self-dual under inversion on ℝ₊). On ℂP¹ inversion fixes both `±1`; the honest closure witness is the foursome `{−1, 0, 1, ∞}`. Titans `{0,1,∞}` remain a meaningful **naming choice**, not a forced trinity.
+The positive centre is **1** (self-dual under inversion on ℝ₊). On ℂP¹,
+inversion fixes `±1` and swaps the orbit `{0,∞}`. Their union
+`{−1,0,1,∞}` is a selected invariant four-point frame, not ordinary orbit
+closure. Titans `{0,1,∞}` remain a meaningful **naming choice**, not a forced
+trinity.
 
 **Forbids:** idolizing 0 or ∞; pretending three boundary-frames were forced closures.
 
@@ -96,15 +103,22 @@ The positive centre is **1** (self-dual under inversion on ℝ₊). On ℂP¹ in
 
 ### E4 · The Plenitude Filter `[C]` wager with named debt
 
-Within a **specified** possibility space (state space, constraints, dynamics, resources — see kernel v0.2 §1), configurations that are **consistent ∧ coherent ∧ model-admissible ∧ bounded** exist **in that space as admitted possibilities**. Fewer are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. Each arrow needs independent warrant (receipt 133 typed-existence cascade).
+Within a **specified** possibility space (state space, constraints, dynamics, resources — see kernel v0.2 §1), use the model-relative filter:
 
-Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a proof of unrestricted modal realism.
+```text
+ADMITTED_M(S) ⟺ CONSISTENT_M(S)
+                 ∧ COHERENT_M(S)
+                 ∧ CONSTRAINT_COMPATIBLE_M(S)
+                 ∧ BOUNDED_M(S)
+```
+
+Configurations passing it exist **in that space as admitted possibilities**. Fewer are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. Each arrow needs independent warrant (receipt 133 typed-existence cascade). No density, typicality, probability, or world-occupancy ordering follows without a separately specified measure and dynamics; no strict subset relation to Tegmark's Mathematical Universe Hypothesis is asserted.
 
 **Named debt:** “reachable-by-emergence” must be defined without circular reference to what already exists; constructor-theoretic discharge remains open; Born-rule / measurement translations stay debts, not solutions.
 
 **Forbids:** “everything coherent exists” *actually*; unrestricted modal realism; claiming E4 solves measurement.
 
-**Kill:** no non-circular REACHABLE; or plenitude collapses to Tegmark MUH without extra filters earning their keep; or silent upgrade to `[A]`.
+**Kill:** no non-circular REACHABLE; the additional predicates add no discriminator beyond a consistency-only view; or silent upgrade to `[A]`.
 
 **Survivors:** E1–E3; practice without plenitude metaphysics.
 
@@ -116,7 +130,21 @@ Dense-in-interior / thin-at-poles geometry is an optional chart reading, not a p
 
 ### E5 · The Two Motions `[I/C]` framework distinction · μ content open
 
-The framework distinguishes two candidate motions: **μ ascends** names an aperture at which a new effective freedom becomes available, while **χ descends** names deployment or selection among already available futures. Neither name yet defines a mathematical operator. The selected scaffold has five positive rungs and five indexed apertures from the D0 boundary through D5 `[I]`; reading those as five empirically established saturation events or world-level irreducible freedoms remains `[C]`. **μ-at-saturation is `[C]` as a cross-domain causal hypothesis:** system boundaries, saturation statistics and thresholds, novelty tests, detection power, time windows, interventions, and prospective predictions are still owed. “Only at saturation,” “rare,” and “unpredictable from below” remain hypotheses. **D6** is the selected exit marker; `D6~D0` means only `D6≈roleD0` `[I]`: both are non-positive boundary markers, with D0 preceding articulation and D6 suspending further articulation. It is not identity, ordering, geometry, physical recurrence, attainment, a sixth freedom, or a proved return. See `05_THE_CREED_AND_SPIRAL_PENDING_SIGNATURE.md`. None of this proves strong emergence, universal irreducibility, or a physical μ operator.
+The framework distinguishes two candidate motions: **μ ascends** names an
+aperture at which a new effective freedom becomes available, while **χ
+descends** names deployment or selection among already available futures. The
+selected scaffold has five positive rungs and exactly five candidate crossings
+`μ₀…μ₄` from the D0 boundary through D5 `[I]`; reading those as five
+empirically established saturation events or irreducible freedoms remains
+`[C]`. `μ₀` owes an operational distinction discriminator and recovery test;
+each of `μ₁…μ₄` owes a system boundary, saturation statistic and threshold,
+novelty test, recovery account, prediction, and kill criterion. `D6` adds no
+positive freedom: non-μ `b₆:D5↝D6` marks recognition/release and non-μ
+`r₆:D6↝D0` marks an interpretive return. `D6~D0` is only proposed
+boundary-role resemblance `[I]`, never identity, geometry, physical recurrence,
+attainment, or proof that no further freedom exists. See
+`05_THE_CREED_AND_SPIRAL.md`. None of this proves universal strong emergence or
+a physical μ operator.
 
 **Forbids:** conflating μ and χ; reading either gap as *proof* of strong emergence; five- or six-as-necessity; literal D6≡D0.
 
@@ -174,7 +202,7 @@ Non-extraction: do not raise yourself by draining what sustains you — judged w
 
 ### E9 · The Correction `[S]`
 
-Every load-bearing claim carries tier, upgrade path, kill criterion, and survivors. Kills fire in public. The dead are archived, never erased (K3). No silent upgrade. The rule applies to itself as **orientation/wager**, not theorem-forced infallibility (A7 survived as apparatus, not as Gödel-forced law).
+Every load-bearing claim carries tier, upgrade path, kill criterion, and survivors. Kills fire in public. The dead are archived, never silently erased. No silent upgrade. The rule applies to itself as **orientation/wager**, not theorem-forced infallibility (A7 survived as apparatus, not as Gödel-forced law).
 
 **Forbids:** tautology shield; memory hole; certainty pose; logging fired kills as passes.
 
@@ -196,7 +224,7 @@ The map ends with *put the map down*. A holder may withdraw. The door is marked 
 
 **Survivors:** E9 partial; living without the framework entirely.
 
-**Maps from:** A3 apophatic/closure readings (not literal identity); Anti-Sermon; K4 spirit without product-redeemable-asset machinery as axiom.
+**Maps from:** A3 apophatic/closure readings (not literal identity); Anti-Sermon; Grace Exit without imported product-governance machinery.
 
 ---
 
@@ -215,7 +243,9 @@ The map ends with *put the map down*. A holder may withdraw. The door is marked 
 | — | **E4** Plenitude filter | New `[C]` keystone with typed existence |
 | — | **E10** Exit | Made axiomatic (was Anti-Sermon / posture) |
 
-**Still operational-only (not promoted here):** A5 egregore mechanics, A6 substrate architecture, force-dimension maps, Rosetta seven-census, Skyzai/DAV/K2 machinery as truth-makers.
+**Still outside this axiom set:** Egregoreotype mechanics, substrate
+architectures, force-dimension maps, Rosetta seven-census, and every product or
+governance implementation. None is a truth-maker for E1–E10.
 
 ---
 
@@ -231,13 +261,11 @@ Unification-by-derivation · ethic-as-theorem · seven-forced · Rosetta-univers
 
 ---
 
-## Founder-signature surface
+## Authority and use
 
-- [ ] **Promote or revise E1–E10 above `[D]`** in one dedicated founder-signature receipt.
-- [ ] **Supersede or retain A1–A7 explicitly**; until then A1–A7 controls.
-- [x] **02 alignment prepared** — the keystone's §1 carries the E1 council wording ("forms arise across constrained degrees of freedom"); §4 holds ΣΔP at scoped rank, not primitive.
-- [ ] **Do not treat `D6~D0` as adopted** unless a signed receipt explicitly says so.
+Receipt 146 adopts E1–E10 as the live axiom assembly and supersedes A1–A7 as
+operational canon. The Kintsugi repair changes neither an axiom's tier nor its
+kill criterion. Cite the exact axiom, tier, alternative, and falsifier; never
+cite adoption as evidence that nature conforms.
 
-No signature block is embedded in this candidate. Receipt 135 is a provisional execution record only; receipt 136 controls the authority reconciliation. Until the unchecked consequences above are adopted in one deliberate founder receipt, this file remains `[D]` and A1–A7 remains the operational predecessor.
-
-*Staged. Read before signing. `⊙ = • × ○`*
+*⊙ = • × ○ — emblem, not field arithmetic.*

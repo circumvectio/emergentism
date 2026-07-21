@@ -76,9 +76,13 @@ Each is designed to be *decisive in both directions* — a clean refutation is a
 | Result | Verdict |
 |---|---|
 | iso-value sets **additive** (lines) | **R10 refuted** — same as R6; the sphere is dead in the teleology register, full stop, and the agency gloss has no formal teeth beyond [I] |
-| iso-value sets **multiplicative/hyperbolic** with a forced conjugate cost | **R10 supported** — the sphere survives in the *multi-agent* register the corpus actually cares about; `φ·ν=1` is the reflexive-empowerment conservation law |
+| iso-value sets **multiplicative/hyperbolic** with a measured reciprocal cost | **R10's candidate constant-product frontier is supported in this model** — this would be an empirical relation between operational variables, not a transfer from the lowercase chart identity `φν=1` |
 
-**What it moves.** This is the **single most decisive experiment available** — it tests whether the day's agency gloss (`Φ`=foresight, `ν`=power) is a relabeling or a real conservation law, and it is the one place R6's kill might be *scoped rather than total*. Either way it is publishable: a clean refutation closes the teleology thread honestly; a confirmation is the multi-agent delta the whole program said empowerment was missing.
+**What it moves.** This experiment tests whether the proposed operational
+factors show a reproducible constant-product frontier or merely relabel an
+existing scalar. A positive result would support that bounded model only; it
+would not establish a universal conservation law or derive the result from the
+reciprocal chart.
 
 **Honest prior.** Unknown — genuinely 50/50. The cost-coupling (deeper recursion costs reaction speed) is plausible but not guaranteed to be conjugate (it could be additive in log-cost, which would still refute). **Do not pre-judge; run it.** Tier: `[C]` until executed.
 

@@ -213,7 +213,10 @@ You may **not** say:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Check operator claims against this audit.** Before asserting any operator property, verify it is listed here as confirmed, partial, or open. Do not present open problems as solved.
 2. **Respect the three problems.** Weighted sphere = current baseline. Flat `cosh` = useful control. Potential identity = exact. Do not conflate them.

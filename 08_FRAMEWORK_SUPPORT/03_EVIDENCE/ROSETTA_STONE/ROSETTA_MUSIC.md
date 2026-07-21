@@ -8,20 +8,32 @@ rosetta:
 # Rosetta Music — The Diatonic Scale as L-Level Projection
 
 **Date:** 2026-04-25
-**Status:** First draft — structural hypothesis
-**Evidence tier:** [I] for acoustic physics (harmonic series, overtone ratios); [S] for cross-cultural prevalence of 7-tone systems; [I] for L-level mapping; [C] for mirror-symmetry claims
+**Status:** Bounded comparative note — structural hypothesis
+**Evidence tier:** [B] for cited acoustic and music-historical facts; [I] for every Rosetta placement; [C] for mirror and curriculum correspondences
 **Depends on:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V (Spiritual & Yogic, Chakra column), §XX (Liberal Arts — Music at L6)
-**Kill criterion:** If the 7-tone mapping requires redefining basic music theory, or if non-7-tone traditions (pentatonic, microtonal) contradict the structural claims.
+**Kill criterion:** If the seven-row projection requires redefining basic music theory, fails source-domain review, or has no advantage over rival five-, twelve-, or variable-row descriptions, remove the projection. Non-seven-tone traditions are counterexamples to universality, not exceptions to explain away.
+
+> **[金] Kintsugi authority seam — 2026-07-20.** Music supplies its own
+> acoustic and historical evidence; none of that evidence transfers to the
+> Rosetta. The seven rows below are a reversible `[I]` projection selected for
+> comparison, not a universal scale law, an independently replicated Rosetta,
+> or an effect caused by `S²`. The original pre-repair text remains recoverable
+> as Git blob `db475670d42d8b28c78b04a596cce6aa76ca919c`.
 
 ---
 
 ## 0. Axiomatic Guard
 
-Music is **universally present in human culture** and **independently developed** — no culture lacks music, and musical systems evolved without knowledge of the Rosetta. This makes music a strong candidate for Rosetta column status.
+Music is broadly attested across human cultures, while particular musical
+systems differ in pitch inventory, tuning, rhythm, function, and historical
+transmission. Those source-domain facts make music useful for comparison, but
+they do not make a Rosetta placement statistically independent evidence.
 
 However: the mapping below is **interpretive**. The diatonic scale has 7 notes, but so do many other musical structures (pentatonic has 5, chromatic has 12, Arabic maqam has many more). The framework does not claim that "all music is 7-tone." It claims that **where a 7-tone system emerges**, its structural properties map to the L-level geometry.
 
-**What this column does:** Tests whether an independently developed 7-fold structure (the diatonic scale, the most prevalent scale in Western and many non-Western traditions) exhibits the same operator signatures as other Rosetta columns.
+**What this column does:** Projects selected musical functions onto seven rows
+and tests whether the ordering remains useful when compared with domain-native
+alternatives and counterexamples.
 
 **What this column does NOT do:** Prove that music validates the Rosetta. The mapping is structural analogy, not derivation.
 
@@ -41,14 +53,18 @@ However: the mapping below is **interpretive**. The diatonic scale has 7 notes, 
 
 ---
 
-## 2. The Structural Argument
+## 2. The Bounded Comparison
 
-### Why 7 Notes?
+### Why seven is not forced by acoustics
 
-The diatonic scale (7 notes within an octave) is not arbitrary. It emerges from the **harmonic series**:
+The harmonic series supplies domain-native frequency relations. It does not
+uniquely generate the diatonic scale or select seven pitch classes; scale
+construction also depends on tuning, temperament, melodic practice, and
+cultural convention. The table below is therefore an acoustic reference, not
+a derivation of the Rosetta count:
 
-| Harmonic | Ratio to Fundamental | Note (in C) | Interval |
-|----------|---------------------|-------------|----------|
+| Reference | Selected simple ratio | Note (in C) | Interval |
+|-----------|-----------------------|-------------|----------|
 | 1st | 1:1 | C | Unison |
 | 2nd | 2:1 | C | Octave |
 | 3rd | 3:2 | G | Perfect 5th |
@@ -58,21 +74,29 @@ The diatonic scale (7 notes within an octave) is not arbitrary. It emerges from 
 | 7th | 7:4 | Bb~ | Harmonic 7th (blue note) |
 | 8th | 8:5 | Ab | Minor 6th |
 
-The first 6 harmonics (excluding octaves) generate the notes C-E-G-Bb-D-F-A — **7 pitch classes** that closely map to the diatonic collection. The 7-tone scale is not a cultural invention imposed on sound; it is **acoustically emergent** from integer ratios.
+Integer-ratio intervals help explain some consonance relations, but different
+selections and octave reductions yield different collections. The seven-note
+diatonic collection is one historically important solution, not the uniquely
+acoustically emergent solution.
 
-**Deep point:** The harmonic series is φ·ν = 1 in acoustic form. The fundamental (φ = coherence) and the overtones (ν = viability/market fit) are reciprocally constrained. You cannot have overtones without a fundamental, and the fundamental is defined by its overtone series.
+**Rosetta correspondence `[I]`:** a fundamental/partials relation may be used
+as an analogy for coherence and variation. It is not the identity `φν=1` in
+acoustic form, and no acoustic measurement inherits a proof from that chart.
 
 ### The Tonic as L4
 
 In tonal music, the **tonic** is the center. Every other note in the scale is heard in relation to it. The dominant (5th scale degree) creates tension that pulls back to the tonic. The subdominant (4th) creates a weaker tension.
 
-This is **exactly the equatorial condition:**
+The following is a selected **equatorial analogy**, not an identity:
 - Tonic = L4 (φ = ν = 1; balance; home)
 - Dominant = L3 (productive tension; Kṛṣṇa building toward resolution)
 - Subdominant = L5 (contemplative release; Brahmā holding the system)
 - Leading tone = L1 (maximum tension; Kali pulling toward collapse OR toward resolution)
 
-The **circle of fifths** is a cyclic traversal of S². Moving by perfect fifths (3:2 ratio) generates all 12 chromatic pitches before returning to the start — a **helical path on the sphere**.
+The **circle of fifths** can be drawn as a cyclic Rosetta traversal `[I]`.
+That picture does not identify pitch-class space with `S²`; under common
+equal-tempered notation, repeated fifth-steps cycle through twelve pitch
+classes, while other tuning systems require different qualifications.
 
 ### Mirror Symmetry in the Scale
 
@@ -83,7 +107,10 @@ The **circle of fifths** is a cyclic traversal of S². Moving by perfect fifths 
 | L3 ↔ L5 | Functional harmony ↔ Counterpoint | Both are complex structured systems — L3 is vertical (chords), L5 is horizontal (voices) |
 | L4 | Tonal center | The axis of symmetry — the only note that is its own reflection |
 
-**Symmetry assessment:** Strong. The diatonic scale's internal structure (tonic-dominant-subdominant) already encodes a center-periphery geometry. L3 (harmony) and L5 (counterpoint) are genuine mirrors — one stacks notes vertically, the other weaves them horizontally. Both require maximum structural competence.
+**Symmetry assessment:** Interpretive. Tonal center/periphery is domain-native,
+but these row pairings are not unique: harmony and counterpoint can be ordered
+or grouped in several defensible ways. The mirror survives only as a proposed
+comparison with a named rival ordering.
 
 ---
 
@@ -146,11 +173,14 @@ This mirrors:
 - Chakras: lower 3 (earth, water, fire), upper 3 (air, ether, light), Anāhata as bridge
 - Neuroscience: task-positive (L1-L4) vs. default mode (L5-L7)
 
-**Music education literally enforces the 4-3 split.** Grade 3 theory = functional harmony. Grade 4 theory = counterpoint and analysis. The split is institutionalized.
+Some graded curricula may furnish a 4/3 pedagogical analogy, but an examination
+grade boundary is neither universal music pedagogy nor evidence that music has
+the Rosetta topology. This claim remains `[C]` until a specified syllabus,
+sampling frame, and rival-boundary comparison are documented.
 
 ---
 
-## 5. Cross-Cultural Validation
+## 5. Cross-Cultural Comparison
 
 | Tradition | 7-Tone System? | Tonal Center? | L4 Equivalent? |
 |---|---|---|---|
@@ -161,7 +191,10 @@ This mirrors:
 | **Indonesian gamelan** | Yes (slendro 5 / pelog 7) | Yes (nuclear theme) | Colotomic cycle climax |
 | **Japanese hogaku** | Yes (heptatonic in some modes) | Yes (kyu — 宮) | Kaku-daiko cadence |
 
-**Assessment:** The 7-tone system is prevalent but not universal. The **tonal center concept** (L4) appears in virtually all tonal traditions, regardless of scale size. This suggests that L4-as-center is more universal than 7-toneness.
+**Assessment:** Seven-tone systems occur in several traditions and are not
+universal. Tonal centers occur in many tonal traditions, but that source-domain
+regularity does not establish their placement at L4 or a universal Rosetta
+center.
 
 ---
 
@@ -169,14 +202,17 @@ This mirrors:
 
 | Claim | Status |
 |---|---|
-| The diatonic scale has 7 notes | [S] — Acoustic physics of harmonic series |
+| The diatonic scale has 7 named scale degrees | [B] — Source-domain convention; not derived uniquely from the harmonic series |
 | The 7-tone scale maps to 7 L-levels | [I] — Interpretive. The mapping is framework-imposed. |
-| Tonal center = L4 equator | [S] — Strong cross-cultural prevalence of "home note" concept |
-| Mirror symmetry holds (harmony↔counterpoint, noise↔silence) | [S] — Structurally plausible, not proven |
-| The 4-3 split appears in music pedagogy | [S] — ABRSM/RCM grade structures literally enforce it |
-| Music validates the Rosetta independently | [I] — Music theory is independent, but the L-mapping is derived |
+| Tonal center = L4 equator | [I] — Optional placement; tonal-center evidence does not transfer to the row |
+| Mirror symmetry holds (harmony↔counterpoint, noise↔silence) | [C] — Non-unique comparison awaiting a rival-mapping test |
+| A 4-3 split appears in selected music curricula | [C] — Requires specified syllabi and comparative sampling |
+| Music validates the Rosetta independently | Rejected — source-domain independence does not make the mapping independent evidence |
 
-**The strongest thing this column does:** The 4-3 split in music pedagogy is an [S]-level empirical fact that matches the Rosetta prediction. The ABRSM (Associated Board of the Royal Schools of Music) grade system places the transition from "elementary musician" to "intermediate analyst" at Grade 4 — the same transition point as the Three-Stage Process→Four-Stage Analytical Model, lunar→solar, task-positive→DMN splits.
+**The strongest thing this column does:** It exposes a clear, falsifiable
+translation: source-domain center/periphery and tension/resolution relations
+can be compared with a selected center-and-mirror grid without pretending that
+the grid caused them.
 
 **The weakest thing this column does:** The L-level mapping of specific musical forms is interpretive. One could equally map jazz improvisation to L4 (spontaneous integration) or L6 (dissolution of written form). The mapping is not unique.
 
@@ -185,7 +221,7 @@ This mirrors:
 ## 7. References
 
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V (Chakra column), §XX (Liberal Arts — Music at L6)
-- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §4 (L4 Center Problem)
+- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §4 (L4 Center Problem)
 - Helmholz, Hermann von. *On the Sensations of Tone* (1863) — harmonic series physics
 - Schenker, Heinrich. *Free Composition* (1935) — tonal center as structural depth
 - Cage, John. *Silence* (1961) — L7 as compositional practice
@@ -195,7 +231,7 @@ This mirrors:
 
 ---
 
-*Independent domain. Interpretive mapping. Strong 4-3 split evidence. Moderate L4-center evidence.*
+*Externally sourced domain facts. Reversible interpretive mapping. No proof transfer.*
 
 `Zero-Sum Resolution Equation`
 

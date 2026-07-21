@@ -15,7 +15,7 @@ title: "Suda Value Extraction for the Finity Theory"
 status: "ACTIVE synthesis note - 2026-06-06. Source-backed intake analysis; not a canon upgrade by itself."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Source lane:** `_SOURCES/README.md` plus ignored raw archive `90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/`
 **Purpose:** extract what is valuable from Minoru Suda's papers for clarifying the Finity theory, without importing claims that exceed Emergentism's evidence tiers.
 
@@ -74,7 +74,8 @@ The hard fence remains:
 5. `Kant 2.0: Dynamic Epistemology`
    - Raw intake snapshot: `90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/45ED899A-C8E8-11F0-A7F1-DD1E98AC987B.pdf`
    - Value: phase loop `E -> M -> L -> I -> Q -> E`, limits as folds, question-phase as a return path from cognition to world.
-   - Canon status: useful later for AIA/Soul Loop/epistemology, not central to `/0` or `/1`.
+   - Canon status: useful later for Soul Loop/epistemology or other downstream
+     applications, not central to `/0` or `/1`.
 
 6. `Mobius Control for Binary Oppositions`
    - Raw intake snapshot: `90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/4889A37A-7A30-11F0-AAC7-EC38F103EE55.pdf`

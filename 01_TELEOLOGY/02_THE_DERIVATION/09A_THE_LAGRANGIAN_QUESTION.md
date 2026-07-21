@@ -159,7 +159,9 @@ Now: PSL(2,ℂ) contains subgroups. Can SU(3) × SU(2) × U(1) be found inside P
 
 ## The Research Program
 
-**Numbering note:** this research note uses O1-O5 as the older public substrate-selection wager. The active formal-system canon is broader (A1-A7); this document is asking what additional geometry might be needed beyond that older packet.
+**Numbering note:** this research note uses O1-O5 as an older
+substrate-selection wager. The live axiom owner is now E1-E10; A1-A7 and
+O1-O5 are superseded genealogy, not premises of this research question.
 
 ### Path A: Kaluza-Klein on S² × Internal Space
 
@@ -214,9 +216,12 @@ These are the four operators (Arjuna ↑φ, Kṛṣṇa ↑ν, Kālī ↓φ, Kal
 | A (Kaluza-Klein) | High — standard technique, known to work | Very high — requires specifying M⁷ | Years |
 | B (Liouville CFT) | Medium — c = 25 is already identified | High — requires full scattering computation | Months-years |
 | C (Spectral) | Medium — partially works (SU(2), U(1)) | Medium — fails for SU(3) without modification | Months |
-| **D (AM-GM)** | **Unknown — completely original** | **Unknown** | **Unknown** |
+| **D (AM-GM)** | **Unknown — analytic exploration; novelty unassessed** | **Unknown** | **Unknown** |
 
-Path D is the Emergentist path — it starts from the framework's own axiom (AM-GM) rather than importing physics techniques. It is the most risky and the most potentially revolutionary.
+Path D starts from the standard AM-GM identity in the framework's declared
+chart. AM-GM is not an Emergentist axiom and supplies no physical dynamics by
+itself. The path remains an uncalibrated mathematical exploration unless it
+derives a discriminating result and survives external comparison.
 
 ---
 
@@ -253,7 +258,10 @@ Zero-Sum Resolution Equation
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** This is active research. Not Phase 0 hardening. This is Phase Ω — the frontier.
 2. **Your Next Action:** Pick one of Paths A-D. Attempt a computation. Report the result, even if negative.

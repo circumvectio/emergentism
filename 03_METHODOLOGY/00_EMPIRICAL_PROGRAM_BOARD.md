@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "Empirical Program Board"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 test surface; board ≠ results.**
 
 # THE EMPIRICAL PROGRAM BOARD
@@ -43,7 +43,7 @@ If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wi
 | Program | What it tests | Current status | Tier affected | Current honest verdict | Next milestone | Upgrade / downgrade rule |
 |---|---|---|---|---|---|---|
 | **GFS study lane** | Former survey-proxy study of human flourishing | **Retired / archived** | None active; CM14 records the disposition only | Supplies no active evidence, validation claim, or pending program | None. A future human study must be constituted as a new preregistered lane with raw-data custody and independent authority. | The archive cannot upgrade. A new study stands or falls on its own frozen design and receipts. |
-| **Protocol D** | Whether multiplicative fitness structures generate cooperation in agent simulations | Done (framework-designed) | S15 | Confirmed internally; not independent public evidence yet | independent preregistered replication and paper submission | Upgrades to [A] only via independent replication |
+| **Protocol D** | Behavior of a specified multiplicative fitness model in agent simulations | Done (framework-designed) | CM12 | Deterministic local result `[B]`; conditional model consequences `[S]`; not a general cooperation theorem | independent preregistered replication and paper submission | Replication may establish the scoped empirical result `[A]`; it cannot turn the normative objective into a theorem |
 | **Agent V×Φ** | Whether balance predicts performance ranking in simulated agents | Done (framework-designed) | S16 | Confirmed internally; still structurally tiered | independent replication in non-framework environments | Upgrades to [A] only via independent replication |
 | **SPHERE Probe** | Whether equatorial projection improves coherence in a first public-model lane | Done | bridge confidence, not core math | Negative / informative first run | redesign or replacement probe | A negative here does not kill the framework; it only weakens one operational bridge |
 | **Φ-meter validation** | Whether coherence can be measured in a way that correlates with expert judgment | Built, not validated | AK4, CM15 | Prototype exists; evidence not yet established | validation study against expert panels | Upgrade if correlation is stable and replicated; abandon if correlation fails |
@@ -51,7 +51,7 @@ If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wi
 | **Macro-Constraint Physics-to-Biology Boundary** | Whether a membrane, autocatalytic loop, or homeostasis controller behaves as a costed macro-constraint over lower-law chemistry | Toy vesicle harness executed with negative controls; real domain run not yet run | CM8g, CM8h, I20 | `[B]` only for the deterministic toy receipt (`W_C=0.415356`, `SYN_C=0.775347`, `KL=0.141286`) and for the same scoring path rejecting no-gate, high-cost, and forbidden-support controls; no biology upgrade yet | freeze one real candidate system using `03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md` and run the support-subset, perturbability, cost, witness, and negative-control checks | Upgrade the tested domain only if `W_C > 0` or cost-matched held-out/intervention loss improves while the negative controls reject; downgrade if the macro layer only wins by hidden costs, hidden variables, lower-law support violations, or blinding the micro/domain baseline |
 | **AMRITA vs baselines** | Whether spherical alignment beats standard alignment baselines at comparable compute | Specified / reframed | AK3, CM10 | Practical bridge still untested | POC against RLHF-style baselines | Upgrade if it outperforms; abandon architecture if it underperforms |
 | **Cross-Scale Invariance** | Whether the same functional form appears at cellular, organismic, and ecological scales | Open, testable now | I1, life-science bridge | High-value, low-cost missing test | run against existing biological datasets | Upgrade if the same function fits across scales; weaken cross-domain unification if it fails |
-| **Power-Max independent replication** | Whether the cooperation theorem survives external authorship and preregistration | Ready for externalization | S15, S16 | The cleanest public upgrade path for internal simulation results | external team and preregistered run | Upgrade from [S] to [A] if external replication succeeds |
+| **Power-Max independent replication** | Whether preregistered behavior under a specified model generalizes beyond framework-designed simulations | Ready for externalization | CM12, S16 | A public test of a bounded empirical transfer claim, not of a cooperation theorem | external team and preregistered run | Successful replication can support the scoped empirical result `[A]`; it does not prove universal Power-Max or derive Justice |
 
 ---
 
@@ -86,7 +86,10 @@ The framework has a real empirical program, but only some parts are confirmed, s
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Check the status board before making empirical claims.** Only CONFIRMED findings may be presented as established. MIXED, NEGATIVE, and PENDING findings must be labeled with their actual status.
 2. **Route to the appropriate test.** D2/D3 neurophysiology → brain-imaging labs. D4 agent models → simulation. D5 game theory and phenomenology → behavioral/experiential studies. D6 apophasis → boundary-discipline reports and failure-to-possess checks.

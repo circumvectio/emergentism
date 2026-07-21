@@ -385,7 +385,10 @@ It is not enough to rewrite canon.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** `[A]`/`[S]`/`[I]` mixed. Do not flatten the tiers.
 2. **Depends on:** `09_PATH_D_THE_AMGM_GEOMETRY.md`, `12_THE_SPECTRUM_RESULTS.md`, and the standard Riemann-sphere / exponential map facts.

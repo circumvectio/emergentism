@@ -1,428 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canon Atlas — Emergentism</title>
-  <meta name="description" content="The Emergentism public canon atlas: public routes, source files, evidence tiers, intake queue, and archive boundaries." />
-
-<link rel="stylesheet" href="../assets/css/xai.css">
-<!-- pwa-chrome -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="The compact public atlas of the Emergentist compass.">
+  <title>The release atlas · Emergentism</title>
+  <link rel="icon" href="/assets/icons/icon-192.png">
+  <link rel="stylesheet" href="../assets/css/xai.css">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <style>
+    body{background:#050505;color:#fffde7}.atlas{width:min(1120px,92vw);margin:0 auto;padding:7rem 0 5rem}
+    .atlas-head{display:grid;grid-template-columns:minmax(0,1fr) 14rem;gap:4rem;align-items:end;border-bottom:1px solid #4d471b;padding-bottom:2.5rem}
+    .eyebrow,.tier{font:600 .72rem/1.4 'Roboto Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:#ffeb3b}
+    h1{font-size:clamp(3.2rem,9vw,7.8rem);line-height:.86;letter-spacing:-.065em;margin:.5rem 0 1.5rem;max-width:10ch}
+    .lede{font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.6;color:#d5d0b5;max-width:58ch}
+    .glyph{aspect-ratio:1;border:1px solid #ffeb3b;border-radius:50%;display:grid;place-items:center;font-size:clamp(3rem,8vw,6rem);color:#ffeb3b;position:relative}
+    .glyph:after{content:"";position:absolute;left:-28%;right:-28%;height:1px;background:#ffeb3b;transform:rotate(-17deg);box-shadow:0 0 18px rgba(255,235,59,.65)}
+    .route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#282713;border:1px solid #282713;margin-top:3.5rem}
+    .route{background:#090909;padding:2rem;min-height:15rem}.route h2{font-size:1.25rem;margin:0 0 1.4rem;color:#ffeb3b}
+    .route a{display:block;color:#fffde7;text-decoration:none;padding:.62rem 0;border-top:1px solid #282713}.route a:hover,.route a:focus-visible{color:#ffeb3b;padding-left:.35rem}
+    .route small{display:block;color:#8f8b75;margin-top:.15rem}.boundary{margin-top:3rem;padding:1.25rem 0;border-top:1px solid #4d471b;color:#aaa58b;max-width:70ch}
+    nav{position:absolute;top:1.4rem;left:4vw;right:4vw;display:flex;justify-content:space-between;gap:1rem}nav a{color:#fffde7;text-decoration:none}nav a:last-child{color:#ffeb3b}
+    @media(max-width:800px){.atlas{padding-top:6rem}.atlas-head{grid-template-columns:1fr;gap:2rem}.glyph{width:10rem}.route-grid{grid-template-columns:1fr}.route{min-height:auto}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+  <script src="/assets/js/pwa.js" defer></script>
+<meta property="og:title" content="The release atlas · Emergentism" />
+<meta property="og:description" content="Traverse the compact public release from discoveries and practice to tests, corrections, and Grace Exit." />
+<meta property="og:url" content="https://www.emergentism.org/atlas/" />
+<link rel="canonical" href="https://www.emergentism.org/atlas/" />
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="../">Emergentism</a>
-  <nav class="number-nav" aria-label="Public doctrine routes">
-    <a href="../0/">0</a>
-    <a href="../1/">1</a>
-    <a href="../2/">2</a>
-    <a href="../3/">3</a>
-    <a href="../4/">4</a>
-    <a href="../5/">5</a>
-    <a href="../6/">6</a>
-    <a href="../rosetta/">R</a>
-    <a href="../soul-loop/">S</a>
-    <a href="../atlas/">A</a>
-    <a href="../read/">Read</a>
-  </nav>
-</header>
-
-<!-- Framework update banner (2026-06-06): the Canon Atlas source ledger now reflects the 2026-06-06 framework stabilisation. New entries added for the 5+1 constitution (K2-ruled 2026-05-30), the Dasein argument, the Complete Ontology D0-D6 scaffold, the Logarithmic Realignment, the Five Forces / Geometric Ontology, the /r/0-/r/6 Rosetta Phase 2 spine, and the Reciprocal Public Edition Ch. 6 integration. The K3 archive-first discipline is preserved: mapped source material is not automatically public canon. See 01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md (5+1 canon), 01_EMERGENTISM/05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md (Dasein), 01_EMERGENTISM/05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md (D0-D6), 01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md (log realignment), 01_EMERGENTISM/05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md (geometric re-expression + five forces), 01_EMERGENTISM/12_PUBLIC_SITE/r/ (Rosetta Phase 2 spine), and [internal lane — withheld] (Ch. 6 finity integration). -->
-
-
-
-<div class="container">
-  <div class="intro-grid">
-    <section>
-      <div class="eyebrow">Public Canon Map</div>
-      <h1>Emergentism Canon Atlas</h1>
-      <div class="badge badge-S">Evidence Tier: [S/I] Routing Surface</div>
-      <p>
-        The Canon Atlas maps the public doctrine surfaces, their source files, their
-        evidence tiers, and the next intake decisions. It is a routing map, not a new
-        doctrine authority.
-      </p>
-    </section>
-    <section class="tree" aria-label="Atlas control rules">
-      <div class="tree-branch">
-        <div class="branch-header"><span class="branch-name">source-ledger.json</span><span class="badge badge-B">Control</span></div>
-        <div class="branch-desc">The JSON ledger is the structured control surface for source paths, route status, tiers, and next actions.</div>
+  <nav aria-label="Primary"><a href="../">Emergentism</a><a href="../exit/">Put down the map</a></nav>
+  <main class="atlas">
+    <header class="atlas-head">
+      <div>
+        <div class="eyebrow">36 served routes · one source manifest</div>
+        <h1>The release atlas</h1>
+        <p class="lede">A small public compass: encounter the proposals, try the Soul Loop, inspect the failures, and leave with whatever remains useful.</p>
       </div>
-      <div class="tree-branch">
-        <div class="branch-header"><span class="branch-name">HTML atlas</span><span class="badge badge-I">Public map</span></div>
-        <div class="branch-desc">This page mirrors the ledger in plain HTML so the map remains readable without JavaScript.</div>
-      </div>
-      <div class="tree-branch">
-        <div class="branch-header"><span class="branch-name">No promotion by proximity</span><span class="badge badge-D">Boundary</span></div>
-        <div class="branch-desc">Mapped source material is not automatically public canon. Archive and frozen lanes retain their status.</div>
-      </div>
-    </section>
-  </div>
+      <div class="glyph" aria-label="The Emergentist relational glyph">⊙</div>
+    </header>
 
-  <h2>Current Public Spine</h2>
-  <div class="conventions">
-    <div class="conv-card">
-      <h3>/0-/6 Dimensions</h3>
-      <p><a href="../0/index.html">Start at /0</a>. Titans, finity, Mu-limit, Bloch sphere, horn torus, Burrisphere, and CCC Return.</p>
+    <div class="route-grid">
+      <section class="route"><h2>Start</h2><a href="../discoveries/">Ten proposals<small>Wonder first; tiers beside the claims.</small></a><a href="../fable/">The fable<small>Five minutes, one story.</small></a><a href="../plainly/">Plain words<small>No notation required.</small></a></section>
+      <section class="route"><h2>Use</h2><a href="../practice/">Try the Soul Loop<small>Model, means, commitment, outcome, return.</small></a><a href="../compass/">Open the compass<small>A compressed decision lens.</small></a><a href="../map/">See the Stone<small>The Rosetta as translation, never proof.</small></a><a href="../build/">Build under constraint<small>Authorization, custody, contest, consequence.</small></a></section>
+      <section class="route"><h2>Test</h2><a href="../axioms/">Price the claims<small>Analytic, structural, interpretive, conjectural.</small></a><a href="../test/">Try the falsifiers<small>What could make the proposal lose?</small></a><a href="../halahala/">Read the poisons<small>The failures remain visible.</small></a><a href="../record/">Check the record<small>Receipts, corrections, and external limits.</small></a></section>
+      <section class="route"><h2>Traverse</h2><a href="../0/">D0 → D6<small>A candidate ladder, not a forced census.</small></a><a href="../five-plus-one/">The refusals<small>Chosen constraints, not laws of nature.</small></a><a href="../exit/">Grace Exit<small>The door stays on the inside.</small></a></section>
     </div>
-    <div class="conv-card">
-      <h3>Rosetta</h3>
-      <p><a href="../rosetta/index.html">Open Rosetta</a>. The L1-L7 table is structural and must remain falsifiable.</p>
-    </div>
-    <div class="conv-card">
-      <h3>Soul Loop</h3>
-      <p><a href="../soul-loop/index.html">Open Soul Loop</a>. Recursive editing and disambiguation method, not therapy.</p>
-    </div>
-    <div class="conv-card">
-      <h3>L1-L7 Pages</h3>
-      <p><a href="../will/index.html">Start L1</a>. Seven public translations of the Rosetta ladder.</p>
-    </div>
-  </div>
-  <div class="route-list" aria-label="Current public routes">
-    <a href="../0/index.html">/0</a>
-    <a href="../1/index.html">/1</a>
-    <a href="../2/index.html">/2</a>
-    <a href="../3/index.html">/3</a>
-    <a href="../4/index.html">/4</a>
-    <a href="../5/index.html">/5</a>
-    <a href="../6/index.html">/6</a>
-    <a href="../rosetta/index.html">/rosetta</a>
-    <a href="../r/0/index.html">/r/0</a>
-    <a href="../r/1/index.html">/r/1</a>
-    <a href="../r/2/index.html">/r/2</a>
-    <a href="../r/3/index.html">/r/3</a>
-    <a href="../r/4/index.html">/r/4</a>
-    <a href="../r/5/index.html">/r/5</a>
-    <a href="../r/6/index.html">/r/6</a>
-    <a href="../soul-loop/index.html">/soul-loop</a>
-    <a href="../will/index.html">L1</a>
-    <a href="../epistemology/index.html">L2</a>
-    <a href="../methodology/index.html">L3</a>
-    <a href="../value/index.html">L4</a>
-    <a href="../cosmology/index.html">L5</a>
-    <a href="../ground/index.html">L6</a>
-    <a href="../sacred/index.html">L7</a>
-    <a href="../complete-ontology/index.html">/complete-ontology</a>
-    <a href="../dasein/index.html">/dasein</a>
-    <a href="../five-plus-one/index.html">/five-plus-one</a>
-    <a href="../log-realignment/index.html">/log-realignment</a>
-    <a href="../geometric-ontology/index.html">/geometric-ontology</a>
-    <a href="../finity-papers/index.html">/finity-papers</a>
-    <a href="../burrisphere/index.html">/burrisphere</a>
-    <a href="../suda-notes/index.html">/suda-notes</a>
-    <a href="../rosetta-d-series/index.html">/rosetta-d-series</a>
-    <a href="../app.html">/app.html</a>
-    <a href="../sources/index.html">/sources</a>
-    <a href="../about/index.html">/about</a>
-  </div>
 
-  <h2>Source Ledger</h2>
-  <p>
-    The table below mirrors <a href="source-ledger.json"><code>source-ledger.json</code></a>.
-    JSON is the structured control surface; this HTML keeps the atlas readable without JavaScript.
-  </p>
-
-  <div class="table-scroll">
-    <table class="ledger-table">
-      <thead>
-        <tr>
-          <th>Surface</th>
-          <th>Route</th>
-          <th>Status</th>
-          <th>Tier</th>
-          <th>Sources</th>
-          <th>Boundary</th>
-          <th>Next Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Numbered Dimensions Spine</td>
-          <td><a href="../0/index.html">/0/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Public-site README; Discovery of Finity</td>
-          <td>Glyph equations are frame/register doctrine, not ordinary field arithmetic. CCC remains analogy on /6.</td>
-          <td>Keep /0-/6 verified; add source citations when chapters expand.</td>
-        </tr>
-        <tr>
-          <td>Master Rosetta Stone</td>
-          <td><a href="../rosetta/index.html">/rosetta/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Master Rosetta; public-site README</td>
-          <td>Rosetta alignments are structural unless independently evidenced; failed mappings must remain visible.</td>
-          <td>Use as the public control table for L1-L7 pages.</td>
-        </tr>
-        <tr>
-          <td>Soul Loop</td>
-          <td><a href="../soul-loop/index.html">/soul-loop/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Transcendental Trinity: Soul Loop</td>
-          <td>Recursive editing and self-correction method, not therapy, medical guidance, or ontology proof.</td>
-          <td>Keep public page method-focused; later add source-note citations.</td>
-        </tr>
-        <tr>
-          <td>Rosetta L1-L7 Public Pages</td>
-          <td><a href="../teleology/index.html">/teleology/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Seven -ologies; Master Rosetta</td>
-          <td>Each page translates a Rosetta row; it does not prove empirical biology, product readiness, or physics claims.</td>
-          <td>Add per-page source notes after atlas route is stable.</td>
-        </tr>
-        <tr>
-          <td>Finity Papers</td>
-          <td><a href="../finity-papers/index.html">/finity-papers/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Finity papers README; Papers I-III</td>
-          <td>Public treatment must distinguish frame/register doctrine from ordinary field arithmetic.</td>
-          <td>Public source-note route is live; keep its frame/register arithmetic boundary visible.</td>
-        </tr>
-        <tr>
-          <td>Burrisphere and Game Space</td>
-          <td><a href="../burrisphere/index.html">/burrisphere/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I/C]</td>
-          <td>Bloch/Burri identity; D5 emergence; Burrisphere source</td>
-          <td>Dual projection geometry is public; game-space expansion and physics analogies remain tiered.</td>
-          <td>Public source-note route is live; keep /5 as the dimensional scene and /burrisphere as the source note.</td>
-        </tr>
-        <tr>
-          <td>Sitting Practice</td>
-          <td>unpublished</td>
-          <td><span class="badge badge-I">intake</span></td>
-          <td>[I]</td>
-          <td>Archived Sitting Practice</td>
-          <td>Archived practice material cannot become current public guidance without safety and tier review.</td>
-          <td>Decide whether to keep archived, rewrite as boundary note, or route later.</td>
-        </tr>
-        <tr>
-          <td>Public Visual Prototypes</td>
-          <td><a href="../cascade.html">/cascade.html</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[I]</td>
-          <td>Cascade, sphere, and lightcone prototypes</td>
-          <td>Interpretive support surfaces; they do not certify mathematical, physics, or deployment claims.</td>
-          <td>Keep local Three.js dependencies verified and avoid CDN regressions.</td>
-        </tr>
-        <tr>
-          <td>Infinite Book / book-pwa</td>
-          <td>frozen source</td>
-          <td><span class="badge badge-B">frozen</span></td>
-          <td>[S/I/B]</td>
-          <td>book-pwa route card; K2 migration envelope; AIA Infinite Book spec</td>
-          <td><code>book-pwa/</code> is source-preserved and frozen pending AIA migration; no public-site product features here.</td>
-          <td>Keep migration boundary visible; route product work to the AIA lane.</td>
-        </tr>
-        <tr>
-          <td>Rosetta D-Series</td>
-          <td><a href="../rosetta-d-series/index.html">/rosetta-d-series/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S/I]</td>
-          <td>Constitutional, domain, and row D-series files</td>
-          <td>D-series files are source material for later public notes, not automatically public doctrine pages.</td>
-          <td>Public source-note route is live; do not treat every D-series source as automatically promoted.</td>
-        </tr>
-        <tr>
-          <td>Archive and Compatibility Material</td>
-          <td>unpublished</td>
-          <td><span class="badge badge-D">archive</span></td>
-          <td>[D]</td>
-          <td>Archive README; compatibility README</td>
-          <td>Archive is provenance and historical record; it does not govern current public doctrine.</td>
-          <td>Only revive archive material through explicit source-owner review.</td>
-        </tr>
-        <tr>
-          <td>5+1 Constitution (K2-ruled 2026-05-30)</td>
-          <td><a href="../five-plus-one/index.html">/five-plus-one/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S]/[A]/[B]/[I]</td>
-          <td><code>00_THE_FIVE_PLUS_ONE_CONSTITUTION.md</code> + <code>00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md</code></td>
-          <td>Five refusals (η=0, K2, K3, K4, A7) + Ω as the directional +1. Ω is NOT a sixth refusal. The eta fence is register-explicit: <code>η_move = 0</code> is the action fence; <code>η_ratio</code> checks reciprocal/log drift toward or away from finity.</td>
-          <td>Canonical 5+1 public surface is live; the operational discipline remains unified at <code>00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md</code>.</td>
-        </tr>
-        <tr>
-          <td>The Dasein Argument (L5 doctrine)</td>
-          <td><a href="../dasein/index.html">/dasein/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[A]/[S]/[I]/[C]</td>
-          <td><code>00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md</code> (585 lines)</td>
-          <td>Mathematics is [A] standard. The Dasein argument is [S] framework structure. The ontological reading is [I]. The dimensional-crossing generalisation is [C] conjectural.</td>
-          <td>Source of truth for the 2026-06-06 stabilisation. The 5 Act arc carries the framework's argument: emergence as lens on Dasein, the ontological archetype (⊙ = • × ○), the μ-limit and dimensional crossing, one as the logarithmic centre, the Riemann sphere and the closure of infinity.</td>
-        </tr>
-        <tr>
-          <td>The Complete Ontology of Reality (D0-D6 scaffold)</td>
-          <td><a href="../complete-ontology/index.html">/complete-ontology/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S]/[I]/[C]</td>
-          <td><code>00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md</code> (430 lines) + <code>00_THE_ONTOLOGY_INDEX.md</code> (243 lines, entry point)</td>
-          <td>Scaffold structure is [S] definitional. Titan-generator readings are [I] interpretive. Force-dimension assignments are [C] conjectural analogies.</td>
-          <td>Canonical navigational index for the D0-D6 dimensional unfolding. Each dimension carries its log coordinate, sphere position, Titan generator, B balance, and Rosetta layer mapping.</td>
-        </tr>
-        <tr>
-          <td>The Logarithmic Realignment (formal system)</td>
-          <td><a href="../log-realignment/index.html">/log-realignment/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[A]/[S]/[I]</td>
-          <td><code>40_THE_LOGARITHMIC_REALIGNMENT.md</code> (223 lines)</td>
-          <td>All mathematics is [A] standard. The framework reading (additive line is right for action-fence language, log line is right for multiplicative accounting) is [S] framework structure. The register bridge from <code>η_move</code> to <code>η_ratio</code> is [I] interpretive.</td>
-          <td>The framework's name "Zero-Sum Resolution Equation" becomes a literal coordinate-identity statement: <code>log φ + log ν = 0</code>.</td>
-        </tr>
-        <tr>
-          <td>The Five Forces of Emergence (geometric re-expression, [C]-tier)</td>
-          <td><a href="../geometric-ontology/index.html">/geometric-ontology/</a></td>
-          <td><span class="badge badge-C">public</span></td>
-          <td>[C]/[I]</td>
-          <td><code>00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md</code> (354 lines)</td>
-          <td>Geometric re-expression where each D-level is identified with a specific geometric object. F1-F5 → D1-D5 is a framework reading [C/I], NOT a Standard Model replacement. Convergent at D0, D1, D4, D5, D6; divergent in emphasis at D2 and D3.</td>
-          <td>Pending theorem-upgrade audit per <code>32_THEOREM_UPGRADE_PROTOCOL.md</code>. Where convergent, the geometric language may be adopted as supplementary. Where divergent, an open question for L3 audit.</td>
-        </tr>
-        <tr>
-          <td>Rosetta Phase 2 Spine (/r/0-/r/6)</td>
-          <td><a href="../r/0/index.html">/r/0/</a></td>
-          <td><span class="badge badge-S">public</span></td>
-          <td>[S]/[I]</td>
-          <td>7 /r/ pages; <code>5609e634c</code> (initial ship) + <code>2b11ee874</code> (2026-06-06 refresh)</td>
-          <td>Phase 2 Rosetta: sevenfold ladder, evidence tier ladder, operator sequence, three powers, key-question ladder, Master Rosetta synthesis, and return loop back to the dimensions spine. Refreshed (2026-06-06) with 5+1 + Dasein + log realignment + five forces integration via dated update banners.</td>
-          <td>7 pages on the dimensions route pattern with <code>xai.css</code>, Three.js, and <code>DIMENSION_PAGE</code>. K3 archive-first rule preserved; new doctrine layered on top via dated banners.</td>
-        </tr>
-        <tr>
-          <td>Reciprocal Public Edition Ch. 6 (Finity: The Missing Number)</td>
-          <td>unpublished</td>
-          <td><span class="badge badge-S">mapped</span></td>
-          <td>[S]/[A]/[I]/[C]</td>
-          <td><code>THE_RECIPROCAL_PUBLIC_EDITION.md</code> (12,571 lines, Ch. 6 at line 2460)</td>
-          <td>The load-bearing public statement of finity, integrated (2026-06-06) with the 5+1 constitution, the Dasein argument, the log realignment, and the five forces. Six dated K3-style updates preserve the original finity argument.</td>
-          <td>Ch. 6 is integrated. Other chapters of the book may need the same 5+1 / log realignment / forces integration; this is a follow-up sprint. Ch. 6 is the doctrinal core (about finity, the central concept); the other chapters are about problems (Part I) and the kernel (Part II onward).</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>Intake Queue</h2>
-  <div class="conventions">
-    <div class="conv-card">
-      <h3>Finity Papers</h3>
-      <p>Public. Maintain the frame/register arithmetic boundary and link it from the generated papers wing.</p>
-    </div>
-    <div class="conv-card">
-      <h3>Burrisphere / Game Space</h3>
-      <p>Public. Keep /5 as the dimensional scene and /burrisphere as the source-note route.</p>
-    </div>
-    <div class="conv-card">
-      <h3>Sitting Practice</h3>
-      <p>Intake. Archived practice material needs safety and tier review before public guidance.</p>
-    </div>
-    <div class="conv-card">
-      <h3>Rosetta D-Series</h3>
-      <p>Public source-note route. Keep individual D-series records tiered and avoid automatic bulk promotion.</p>
-    </div>
-  </div>
-
-  <h2>Boundaries</h2>
-  <div class="tree">
-    <div class="tree-branch">
-      <div class="branch-header"><span class="branch-name">Archive</span><span class="badge badge-D">[D]</span></div>
-      <div class="branch-desc">Archive is provenance, not current authority.</div>
-    </div>
-    <div class="tree-branch">
-      <div class="branch-header"><span class="branch-name">book-pwa/</span><span class="badge badge-B">Frozen</span></div>
-      <div class="branch-desc"><code>book-pwa/</code> is source-preserved pending AIA migration. Do not add public-site product features here.</div>
-    </div>
-    <div class="tree-branch">
-      <div class="branch-header"><span class="branch-name">External Claims</span><span class="badge badge-C">Tiered</span></div>
-      <div class="branch-desc">Science, deployment, payment, auth, AI-provider, and product claims require dated receipts before [B].</div>
-    </div>
-    <div class="tree-branch">
-      <div class="branch-header"><span class="branch-name">CCC on /6</span><span class="badge badge-I">Analogy</span></div>
-      <div class="branch-desc">Convergence may resonate with CCC; it is not asserted identity.</div>
-    </div>
-  </div>
-
-  <section class="mu-limit">
-    <div class="mu-inner">
-      <div class="mu-mark">&mu;</div>
-      <h2>Next Handoff</h2>
-      <p>
-        The current source-note routes are live. The next public chapter should be a
-        post-cutover domain parity probe and then a narrow source-owner review of any
-        new handoff bundle before it becomes a generated public wing.
-      </p>
-      <a href="../0/index.html">Restart at /0 &rarr;</a>
-    </div>
-  </section>
-
-  <section style="padding:48px 0 16px">
-    <h2 style="letter-spacing:.04em">The Complete Tree</h2>
-    <p style="opacity:.8;max-width:60ch">
-      Every public page, in the order of the unfolding — overviews first
-      (the D0–D6 stations, doctrine, reading), then the twelve deep-library
-      wings. The same tree rides on every page as the
-      <strong>☰ ATLAS</strong> drawer (bottom-right), with full-corpus search.
-    </p>
-    <input id="atlas-full-q" type="search" placeholder="search all pages…" autocomplete="off"
-      style="width:min(420px,100%);padding:10px 14px;background:#111;border:1px solid #333;border-radius:8px;color:#FFFDE7;font:400 14px/1.2 'Roboto Mono',monospace;outline:none;margin:6px 0 18px">
-    <div id="atlas-full-tree" style="columns:2;column-gap:48px"></div>
-  </section>
-</div>
-
-<script>
-(function () {
-  "use strict";
-  var box = document.getElementById("atlas-full-tree");
-  var q = document.getElementById("atlas-full-q");
-  var data = null;
-  function render(filter) {
-    if (!data) return;
-    var needle = (filter || "").trim().toLowerCase();
-    box.textContent = "";
-    data.tree.forEach(function (sec) {
-      var det = document.createElement("details");
-      det.style.breakInside = "avoid";
-      det.style.marginBottom = "10px";
-      det.open = true;
-      var sum = document.createElement("summary");
-      sum.textContent = sec.label;
-      sum.style.cssText = "cursor:pointer;color:#FFEB3B;font-weight:600;letter-spacing:.05em;padding:4px 0";
-      det.appendChild(sum);
-      var any = false;
-      sec.pages.forEach(function (p) {
-        if (needle && p.title.toLowerCase().indexOf(needle) === -1 && p.href.toLowerCase().indexOf(needle) === -1) return;
-        var a = document.createElement("a");
-        a.href = p.href;
-        a.textContent = p.title;
-        a.style.cssText = "display:block;padding:3px 0 3px 16px;color:#FFFDE7;text-decoration:none;border-left:1px solid #2a2a2a;opacity:.85;font-size:14px";
-        a.onmouseenter = function () { a.style.color = "#FFEB3B"; };
-        a.onmouseleave = function () { a.style.color = "#FFFDE7"; };
-        det.appendChild(a);
-        any = true;
-      });
-      if (any) box.appendChild(det);
-    });
-  }
-  fetch("/atlas/site_index.json").then(function (r) { return r.json(); }).then(function (j) {
-    data = j; render("");
-  });
-  q.addEventListener("input", function () { render(q.value); });
-})();
-</script>
-
-<footer>
-  <div class="phi">⊙ = • × ○</div>
-  <p>
-    Emergentism · Canon Atlas<br>
-    The source is the Rosetta. Everything else is accretion.
-  </p>
-</footer>
-
-<script defer src="/assets/js/atlas-drawer.js"></script>
-<script defer src="/assets/js/book-ai.js"></script>
+    <p class="boundary"><span class="tier">[I] Public projection</span><br>The atlas creates no doctrine and upgrades no evidence. The exact ladder, integrated synthesis, and universal fit remain externally unvalidated.</p>
+  </main>
 </body>
 </html>

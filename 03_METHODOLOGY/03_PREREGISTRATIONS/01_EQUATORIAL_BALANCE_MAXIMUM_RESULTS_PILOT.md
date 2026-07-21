@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Paper V — RESULTS (Companion to Pre-Registration) — Tier [I] Pilot"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Status:** PRELIMINARY FALSIFICATION (kill fired); [I] pilot only. Next: [S]¹ blind HUMAN. No fabrication. Per L3 prereg discipline.
 
 # Paper V — RESULTS (Companion to Pre-Registration) — Tier [I] Pilot

@@ -15,12 +15,13 @@ rosetta:
 
 ## Reader routes
 
-Two distinct surfaces currently coexist; do not silently merge or promote them:
+Two distinct reader surfaces coexist beneath the active kernel; neither may
+override its source owners:
 
 | Surface | Recorded register | How to read it |
 |---|---|---|
-| [`00_THE_SEED.md`](00_THE_SEED.md) | `[I]` L7 compression | The existing equation-and-Rosetta seed surface. |
-| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[D]` staged reader projection | Optional cold-reader candidate only; not canon and not an eighth kernel owner. |
+| [`00_THE_SEED.md`](00_THE_SEED.md) | `[I]` legacy compression | Historical compressed surface; current owners win. |
+| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[D]` reader projection | Optional cold-reader surface; not an eighth kernel owner. |
 
 Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D0](01_THE_SEED_LADDER/D0_THE_FLOOR.md) →
@@ -31,10 +32,10 @@ Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D5](01_THE_SEED_LADDER/D5_THE_GAME.md) →
 [D6](01_THE_SEED_LADDER/D6_THE_RETURN.md).
 
-**Known contradiction:** the existing seed concludes with literal `D6 ≡ D0`;
-the staged ladder rejects literal identity and permits only `D6~D0` as a
-boundary-role similarity. Until Receipt 139 explicitly disposes of box 8, this
-is an unresolved comparison—not permission to harmonize the two texts.
+**Settled boundary:** any literal closure identity in the legacy seed is
+superseded. `D6~D0` means only a selected boundary-role similarity. There are
+exactly five candidate positive-freedom crossings `mu_0...mu_4`; `b6` and `r6`
+are non-mu interpretive edges.
 
 ## Authority Rule
 
@@ -43,8 +44,8 @@ is an unresolved comparison—not permission to harmonize the two texts.
 - when current runtime or planning truth is in question, route back through `../11_UPLINK/` and the owning source lane
 - treat this row as L7 compression: minimal identity, maximal abstraction
 - seed compression does not outrank the source folders; if `00_THE_SEED.md` conflicts with current ontology, runtime, or ACT/EXECUTE boundaries, repair the source owner first and then refresh the seed wording
-- the staged ladder remains subordinate to K-1…K-7 and cannot replace this
-  lane's existing surface without explicit natural-person adoption
+- the reader ladder remains subordinate to K-1…K-7 and cannot replace a source
+  owner without a dated adoption receipt
 
 Zero-Sum Resolution Equation
 
@@ -52,7 +53,10 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

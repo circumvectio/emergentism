@@ -6,17 +6,17 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-  canonical_phrase: "Front door — the seven-rung Seed Ladder, staged reader synthesis, not canon"
+  canonical_phrase: "Front door — the seven-rung Seed Ladder, active reader projection, not canon"
 type: route-card
 title: "01_THE_SEED_LADDER — front door"
-status: "ACTIVE 2026-07-19 — additive front door, completion-plan remediation wave (additive-only gate, receipt 141A); ladder contents remain STAGED [D] awaiting receipt-139 box-8 disposition"
+status: "ACTIVE 2026-07-20 — route and ladder are active reader projections subordinate to source owners; no canon promotion implied"
 owner: 01_EMERGENTISM
 ---
 
 # 01_THE_SEED_LADDER — Front Door
 
 **Purpose (one line):** the Seed Ladder — `00_THE_SEED.md` as front page, then seven
-rungs D0–D6 from the Floor to the Return — a staged reader synthesis of the Seed.
+rungs D0–D6 from the Floor to the Return — an active reader projection of the Seed.
 
 **Owner lane:** `01_EMERGENTISM/` (doctrine), `10_SEED/` surface (L7 Ṛṣi territory —
 compressed narrative; the witness never overrides source).
@@ -36,10 +36,10 @@ compressed narrative; the witness never overrides source).
 
 ## Evidence posture
 
-Per `00_THE_SEED.md`'s own frontmatter: **STAGED [D] 2026-07-19 — candidate reader
-synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier
-promotion.** Under the current additive-only gate (completion plan §1, receipt 141A) no
-promotion occurs; this front door navigates the ladder without signing it.
+Per `00_THE_SEED.md`'s own frontmatter, the ladder is an **ACTIVE [I/S] concise
+reader projection**. Activation changes its routing status, not the tiers of
+the claims it compresses. Source owners remain controlling; the ladder is not
+an independent canon owner.
 
 ## Front-door requirement status
 
@@ -54,4 +54,4 @@ by this file** [S].
 
 ---
 
-*A ladder staged for reading, not yet canon. The rungs wait on the founder's deliberate word. η = 0.*
+*A ladder active for reading, subordinate to its sources, and never a commandment. η = 0.*

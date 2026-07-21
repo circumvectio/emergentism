@@ -1,113 +1,150 @@
 ---
+title: "The Reduction Asymmetry — Opaque From Below, Legible After Stabilization"
+status: "ACTIVE — Kintsugi-repaired emergence note, 2026-07-20"
+date: 2026-07-20
+evidence_tier: "[I] cross-domain hypothesis; local reductions and constraints require evidence"
 rosetta:
   primary_level: L2
   primary_column: Philosophy
-  secondary:
-    - level: L5
-      column: Game theory
-      role: "emergence asymmetry in D5 register"
   operator: "Kālī 💀"
-  tier: "God"
   regime: "Śūdra"
-  register: "[I/S]"
-  canonical_phrase: "Opaque from below, legible from above"
+  register: "[I/C]"
 ---
 
-# OPAQUE FROM BELOW, LEGIBLE FROM ABOVE
+# The Reduction Asymmetry
 
-## The General Emergence Asymmetry
+## Verdict of the second logic audit
 
-**Status:** Canonical strategic note
-**Date:** 2026-04-15
-**Evidence Tier:** [I] Meta-structural routing document
-**Depends on:** [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md)
+The intuition **survives**, but the universal strong/weak-emergence wording
+does not. The defensible claim is:
 
----
+> A higher pattern may be costly or impossible *for a bounded investigator* to
+> predict before it forms, yet become easier to identify and compress after it
+> stabilizes. This is an epistemic/computational asymmetry `[I/C]`. It is not,
+> without further evidence, ontological strong emergence.
 
-## The Original Insight
+“Strong on the way up, weak looking down” is therefore a useful public
+mnemonic only when `strong` means **prospectively opaque** and `weak` means
+**retrospectively compressible**. Those are not the technical verdicts
+`candidate_strong` and `reduced`. The same words must not do both jobs.
 
-The corpus already states:
+## The asymmetry
 
-> **D5 is strongly emergent in genesis, weakly emergent in governance.**
+Some higher-level patterns are difficult to predict prospectively from a
+practical description of local state, yet easier to recognize, summarize, or
+control after they stabilize. This may occur in organisms, language, markets,
+institutions, software, and culture. The cross-domain generalization is `[I]`;
+each domain needs its own evidence.
 
-Or, more compactly:
+```text
+before stabilization: many trajectories, incomplete state, high computation
+after stabilization: persistent macro-pattern, compressed description,
+                     possible feedback on admissible lower trajectories
+```
 
-> **opaque from below, legible from above**
+For a declared system, keep four maps distinct:
 
-This document extends that insight.
+```text
+Generate_n : lower histories → candidate higher organization
+Coarse_n   : lower histories → macro-description
+Recover_n  : macro-description → compatible lower equivalence class
+Constrain_n: macro-context → reweighted lower-law-admissible histories
+```
 
----
+`Coarse_n` can be short even when `Generate_n` is computationally expensive.
+`Recover_n` is generally one-to-many and tolerance-bound; it need not recover a
+unique microhistory. `Constrain_n` is not backward magic: boundary conditions,
+memory, feedback, and control are implemented by actual lower-level carriers.
 
-## The Larger Claim
+## Why this does not make strong emergence foundational
 
-The asymmetry may not belong only to `D5`.
+The following inference is invalid:
 
-It may be a general law of emergence across many domains:
+```text
+we cannot presently predict H from L
+therefore H is irreducible in principle
+```
 
-- biology
-- language
-- markets
-- institutions
-- software systems
-- culture
+Prediction can fail because the state is unknown, the computation is
+intractable, the dynamics are chaotic, the coarse-graining is wrong, or the
+bridge law has not been found. A crossing earns `candidate_strong` only through
+affirmative, crossing-specific evidence against named reductions and
+interventions. Otherwise it is `currently_unreduced`. If a derivation or
+simulation within declared tolerance succeeds, the crossing is weak/reduced;
+the higher vocabulary may remain explanatorily indispensable in practice.
 
-From below:
+## What the asymmetry says about reductionisms
 
-- the higher-order pattern cannot be cleanly predicted from local state alone
+It does not prove one master reduction. It explains why several different
+reductions can be useful after a stable regularity has supplied the right
+variables:
 
-From above, once stabilized:
+| Reduction | Legitimate operation | Illegitimate inflation |
+|---|---|---|
+| mathematical | represent a pattern in a formal structure | mathematics causes or instantiates the world |
+| geometric | quotient coordinates, symmetries, or constraints | one chosen geometry is every domain's ontology |
+| thermodynamic/statistical | coarse-grain many microstates into macrovariables under limits and ensembles | one macrostate uniquely determines its microhistory |
+| mechanistic | derive or approximate higher behavior from lower interactions plus bridge laws | a lower description makes higher organization unreal or value-free |
 
-- the pattern can constrain, summarize, compress, and govern the lower layer
+Thus the asymmetry can clarify the *success and limits* of mathematical,
+geometric, thermodynamic, and mechanistic reduction. It does not by itself
+explain all of them, establish their equivalence, or unify the sciences. The
+unification claim remains a candidate translation grammar until a
+preregistered discriminator beats serious rivals.
 
-That is the asymmetry.
+## What opacity does not prove
 
----
+Epistemic or computational difficulty is not ontological irreducibility.
+Failure to derive a higher-level pattern today can reflect missing variables,
+poor coarse-graining, unavailable computation, chaotic sensitivity, or an
+incorrect model. “Currently unreduced” is therefore the strongest default
+status.
 
-## Why It Matters
+A successful reduction reclassifies the local crossing as weak emergence; it
+does not erase the usefulness of the higher-level description. Strong
+emergence remains a candidate per crossing `[C]`, never the inference from a
+missing law.
 
-This dissolves a common false choice:
+## Constraint without lower-law violation
 
-- either the higher level is reducible and therefore not real
-- or the higher level is real and therefore violates the lower level
+Once a macro-pattern is stabilized, it may constrain or reweight lower-level
+trajectories through boundary conditions, feedback, memory, selection, and
+control while remaining physically admissible:
 
-The framework offers a third option:
+\[
+\operatorname{support}(K_X^C)
+\subseteq
+\operatorname{support}(K_X).
+\]
 
-- higher-order patterns may be opaque in formation
-- yet legible in governance
+The higher-level constraint selects among lower-law-admissible histories; it
+does not manufacture a forbidden trajectory. This is a type rule `[S]` for the
+Emergentist constraint model, not a theorem that every real macro-pattern has
+been correctly identified.
 
-No violation is required.
-No flattening is required either.
+## Candidate-crossing test
 
----
+A proposed `μ`-crossing must name:
 
-## The General Formula
+1. the lower register claimed to be saturated;
+2. the newly observed freedom;
+3. how the lower register is recovered;
+4. the reduction status;
+5. evidence tier and sources;
+6. a novel prediction; and
+7. a kill criterion.
 
-The higher layer is:
+Without those fields, “opaque from below” is an invitation to research, not an
+emergence result.
 
-- **hard to derive prospectively**
-- **easy to recognize retrospectively**
-- **able to constrain once stabilized**
+## Shortest form
 
-This is why:
+> **A pattern may be hard to generate prospectively and easy to compress after
+> stabilization. That asymmetry can make higher-level descriptions useful; it
+> does not by itself prove strong emergence.**
 
-- institutions are hard to predict and easy to describe after the fact
-- markets are hard to compute locally and easy to summarize globally
-- living systems are hard to derive from chemistry and easy to identify as organisms
+**Read with:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) ·
+[The Burri Rules](../05_COSMOLOGY/00_THE_BURRI_RULES.md) ·
+[The μ-Limit Formula](../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md)
 
----
-
-## The Shortest Summary
-
-> **Emergence is often opaque in genesis and legible in governance. That asymmetry may be one of the framework's strongest general laws, not only a D5 local observation.**
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/00_OPAQUE_FROM_BELOW_LEGIBLE_FROM_ABOVE.md`
+⊙ = • × ○ — opacity is not irreducibility.

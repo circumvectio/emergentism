@@ -50,7 +50,7 @@ status: ACTIVE
 
 # D_SERIES_ROWS
 
-> Row papers of the Rosetta — each row is one cross-domain mapping of the Burri Sphere onto an independently developed tradition or scale.
+> Row papers of the Rosetta — each row is one cross-domain mapping of the Burri Sphere onto an externally sourced tradition or scale. “External” does not mean statistically independent after one table selected and coded the material.
 
 **Status:** Active
 **Register:** `[A]` for cited source scales · `[S]` for catalogue structure · `[I]` for the Rosetta mapping · `[C]` for causal-generation claims
@@ -58,7 +58,7 @@ status: ACTIVE
 
 ## What This Folder Is
 
-The "rows" of the Rosetta Stone. Each `D##_ROSETTA_R##_*` file develops one row — one independently attested domain read against `P∞ = φ · ν = 1 on S²`. The folder also holds the generative table that all rows project from and the complete row index.
+The "rows" of the Rosetta Stone. Each `D##_ROSETTA_R##_*` file develops one row — one externally sourced domain read against the selected reciprocal chart. The domains may have developed outside this table, but the mappings are not statistically independent confirmations. The folder also holds the generative table that all rows project from and the complete row index.
 
 These are evidence surfaces, not source doctrine. A row mapping does not upgrade itself above `[I]` without independent support. See [The Honest Position](../../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
@@ -88,4 +88,4 @@ These are evidence surfaces, not source doctrine. A row mapping does not upgrade
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)
-- Sibling lanes: [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Sibling lanes: [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)

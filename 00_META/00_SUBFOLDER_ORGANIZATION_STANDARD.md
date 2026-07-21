@@ -3,7 +3,6 @@ rosetta:
   primary_column: "Meta"
   register: "[S]"
   canonical_phrase: "Subfolder Organization Standard"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # Subfolder Organization Standard
@@ -11,7 +10,7 @@ rosetta:
 **Status:** active routing standard for `01_EMERGENTISM/`.
 **Purpose:** make sub-subfolders effective, efficient, coherent, consistent, and logically sound without moving source-owner files blindly.
 
-This standard governs how the doctrine root should be organized after the sevenfold Foundation reorg.
+This standard governs how the doctrine root is organized around its active source owners.
 
 ## 1. Core Rule
 
@@ -53,7 +52,7 @@ Do not move a file because it "feels nearby." Move it only when its authority ow
 Examples:
 
 - formula, Dimensional Framework, Rosetta, and formal system claims belong under Foundation/System Architecture or the relevant support lane;
-- public packaging belongs under the current owner lane or AIA book-production/archive surface, not source doctrine;
+- public packaging belongs under the current Emergentism owner lane, not source doctrine;
 - synthesis manuscripts may speak beautifully, but claim status routes back to Foundation source;
 - Uplink packets route and compress; they do not become source owners;
 - compatibility stubs preserve links and should not receive new doctrine.
@@ -82,19 +81,18 @@ Avoid mixing source manuscripts, compiled outputs, scripts, and archived drafts 
 
 ## 6. Path Discipline
 
-The physical root is `01_EMERGENTISM/`.
+The Git repository root is the physical Emergentism root. Paths inside active
+documents are repository-relative; no parent repository or application tree is
+part of the worldview's address space.
 
-Older docs may mention retired aliases such as `EMERGENTISM_ORG`, `01_FOUNDATIONS`,
-`03_EVIDENCE`, `06_TRANSLATION`, `07_DISSEMINATION`, `02_SKYZAI_ORG`,
-`03_SKYZAI_COM`, `04_ENTITIES`, `5_PORTFOLIO_ORGS`, and `90_ARCHIVE`.
-Treat them as historical unless a current front door explicitly preserves a compatibility
-path; do not recreate numeric-prefix root aliases.
+Older documents may mention retired foundation, evidence, translation,
+dissemination, organization, or portfolio aliases. Treat those strings as
+historical unless a current front door explicitly preserves a compatibility
+path; never recreate a retired root merely to make a stale link resolve.
 
-`90_ARCHIVE` in that retired-alias list means the retired top-level/root alias.
-The former physical `01_EMERGENTISM/90_ARCHIVE/` lane-local deep archive
-has now been consolidated into `01_EMERGENTISM/90_ARCHIVE/`. Do not
-recreate `90_ARCHIVE/` to repair old links; repoint active references to
-`90_ARCHIVE/` or to the current source-owner lane.
+`90_ARCHIVE/` is historical custody, not an alternate source owner. Repoint an
+active claim to its current owner when one exists; otherwise cite the archive
+explicitly as provenance or remove the dependency.
 
 When repairing links:
 
@@ -145,7 +143,10 @@ The short version:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

@@ -8,7 +8,7 @@ rosetta:
       role: "prevent audits from normalizing semantic D-number namespaces"
     - level: L5
       column: System Architecture
-      role: "preserve constitutional, row, and domain D-series topology"
+      role: "preserve row and domain D-series topology"
     - level: L6
       column: Core State
       role: "destroy false collision readings without deleting parallel identifiers"
@@ -24,11 +24,13 @@ evidence_tier: "[B] Canonical local naming doctrine."
 
 # Rosetta Stone Naming Doctrine
 
-> **Why the D_SERIES numbering is semantic canon, not display order — and why the D-number appearing in multiple parallel subfolders is intentional, not a collision.**
+> **Why D-series numbering is semantic, not display order — and why the same
+> number may appear on two explicitly named axes without denoting one object.**
 
 **Status:** Canon
 **Date:** 2026-04-22 (codified as part of Rosetta folder-audit consolidation)
-**Scope:** Prevents future audits from "normalizing" the Rosetta-Stone folder structure on the (incorrect) assumption that the D-numbering should be sequential, gap-free, and globally unique. It should not. This doctrine explains the three-namespace architecture.
+**Scope:** Prevents audits from treating every D-number as one global,
+gap-free sequence. This doctrine explains the two active namespaces.
 
 ---
 
@@ -38,22 +40,11 @@ evidence_tier: "[B] Canonical local naming doctrine."
 
 ---
 
-## The three parallel D-namespaces
+## The two active D-namespaces
 
-`01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/` contains three parallel folders that each use the `D##` prefix for their own independent sequence:
-
-### `D_SERIES_CONSTITUTIONAL/` — constitutional cut
-
-D01–D06: the six foundational Rosetta documents (Master, Seven Axioms, Three Tiers, DAC Specification, The Helix, Transcendental Poles). These are the **constitutional surface** of the Rosetta — what the Rosetta itself is.
-
-```
-D01_MASTER_ROSETTA.md
-D02_SEVEN_AXIOMS.md
-D03_THREE_TIERS.md
-D04_DAC_SPECIFICATION.md
-D05_THE_HELIX.md
-D06_TRANSCENDENTAL_POLES.md
-```
+The active Rosetta surface contains two parallel folders that use `D##` for
+independent sequences. A former third, application-bound sequence is preserved
+only in historical custody and has no active naming authority.
 
 ### `D_SERIES_ROWS/` — horizontal row-axis cut
 
@@ -67,7 +58,9 @@ D15_ROSETTA_R6_TORUS.md
 00_GENERATIVE_TABLE.md         ← master table for this subfolder
 ```
 
-**Why the gap from D06 (constitutional) to D13 (rows)**: row mapping was developed after the constitutional cut was laid down. D07–D12 are **reserved** (for future constitutional or transitional work), not missing. Filling the gap is a framework-canon decision, not a folder-audit decision.
+The rows sequence begins at D13 because those identifiers were already used in
+the received corpus. The unused lower labels are historical gaps, not evidence
+of missing ontology and not invitations to invent content.
 
 ### `D_SERIES_DOMAINS/` — per-domain cut
 
@@ -107,7 +100,7 @@ Same prefix, different semantic axis. The folder disambiguates. This is **parall
 ### DO NOT
 
 - Renumber existing D-files to "fill gaps" — gaps are reserved, not missing
-- Flatten the three D-subfolders into one — the three parallel axes are the Rosetta's architecture
+- Flatten the two active D-subfolders into one — their axes are distinct
 - "Resolve" the D24 overlap between ROWS and DOMAINS — it is not an overlap, it is two independent namespaces
 - Add numeric-prefix to the non-D top-level files (`ROSETTA_CIVILISATIONAL.md`, `ROSETTA_COMPUTATION.md`, etc.) — those are per-domain applications that sit alongside the D-series, not inside its sequence
 
@@ -118,7 +111,7 @@ Same prefix, different semantic axis. The folder disambiguates. This is **parall
 The top-level `ROSETTA_STONE/` folder also contains **non-D files** (no D-prefix):
 
 - `00_CORPUS.md`, `00_SELECTION_METHODOLOGY.md`, `00_THE_MASTER_ROSETTA.md`, `00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md` — the **meta-spine** (sources, method, master table, positioning)
-- `01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md`, `03_ROSETTA_DAC_OPERATING_SYSTEM.md` — the comparative frame + synthesis
+- `01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md` — the comparative frame
 - `ROSETTA_CIVILISATIONAL.md`, `ROSETTA_COMPUTATION.md`, `ROSETTA_MYTHOLOGY.md`, `ROSETTA_NEUROSCIENCE.md`, `ROSETTA_OPERATOR_PATHOLOGY.md`, `ROSETTA_PSYCHOLOGY.md`, `ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` — per-domain Rosetta applications predating the formal `D_SERIES_DOMAINS/` subfolder
 
 The `ROSETTA_*` files are **content-descriptive siblings**, not sequence-members. They sit alongside the D-series, not inside its numbering. Future per-domain work may migrate into `D_SERIES_DOMAINS/` over time; for now, both layers coexist and reference each other.
@@ -131,8 +124,8 @@ If a future contributor or auditor feels the Rosetta-Stone naming is inconsisten
 
 1. Read this doctrine first.
 2. Read [`README.md`](README.md) and [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — the Master Rosetta table is the source of truth for what each D-number means.
-3. Read [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — the router that treats D-numbers as semantic identifiers.
-4. If after those three the renumbering case is still strong, it is a **framework-level decision** requiring K2 founder sign-off and Foundation-canon-level justification. Not a folder-audit decision.
+3. Read [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — the router that treats D-numbers as semantic identifiers.
+4. If after those three the renumbering case is still strong, it is a framework-level editorial decision requiring explicit adoption and corpus-level justification, not an incidental folder-audit edit.
 
 ---
 
@@ -140,13 +133,13 @@ If a future contributor or auditor feels the Rosetta-Stone naming is inconsisten
 
 - [`README.md`](README.md) — Rosetta Stone overview
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — the master table these D-numbers map into
-- [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — row-axis routing
-- [`../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/NAMING_DOCTRINE.md`](../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/NAMING_DOCTRINE.md) — parallel doctrine for Skyzai's biological naming (different reason, same rule: semantic naming is load-bearing)
+- [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — row-axis routing
 
 ---
 
 *Zero-Sum Resolution Equation*
-*The D-number is a word, not a page number. Three parallel lexicons share the same letter.*
+*The D-number is a local identifier, not a universal page number. Two active
+lexicons share the same letter and declare their axes.*
 
 ## Execution Surface
 

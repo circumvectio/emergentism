@@ -17,7 +17,9 @@ rosetta:
 **Date:** 2026-04-04
 **Context:** Path D (AM-GM geometry alone) produced non-trivial structure but no coupling constants. The structural arguments for the Four Forces mapping survive. These three paths attempt the same goal with different machinery.
 
-**Numbering note:** this file preserves O1-O5 because it is interrogating the older public substrate-selection wager directly. The active formal-system canon is A1-A7; do not read this analysis as collapsing the full formal layer back to the older numbering.
+**Numbering note:** this file preserves O1-O5 because it interrogates that
+older substrate-selection wager directly. The live axiom owner is E1-E10;
+A1-A7 and O1-O5 are superseded genealogy and carry no present authority here.
 
 ---
 
@@ -133,9 +135,12 @@ The axioms do NOT uniquely determine S². They determine the family {ℂPⁿ : n
 | D0 | ℂP⁰ = point | 0 | The Bindu. Nothing. κ = 0. |
 | D1-D2 | ℂP¹ = S² | 2 | The Burri Sphere. φν = 1. U(1) + SU(2). |
 | D3-D4 | ℂP² | 4 | Color space. SU(3). Spacetime. |
-| D5 with closure horizon | ℂP³ | 6 | Consciousness plus closure? The full projective tower. |
+| D5 possibility correspondence | ℂP³ | 6 | Optional analogy to structured alternatives only; not consciousness, actuality, or closure. |
 
-If this mapping holds, the D-levels would correspond to the ℂP hierarchy. Each dimension would "turn on" a higher projective space, activating a new gauge-group candidate. [C]
+This table is a removable mathematical correspondence, not a D-register
+derivation. D4 remains causal actuality and D5 merely possible modeled content;
+no projective-space dimension "turns on" consciousness, closure, a gauge group,
+or a new spacetime dimension. `[C]`
 
 **Prediction (P-28b):** The internal space of the framework may require ℂP². The SU(3) gauge group of the strong force is tested against the projective isometry group of ℂP². The full gauge group SU(3)×SU(2)×U(1) is tested against ℂP² × S² ≅ ℂP² × ℂP¹. The D-levels may correspond to the ℂP hierarchy.
 
@@ -224,7 +229,10 @@ Zero-Sum Resolution Equation
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase Ω — active research frontier.
 2. **Your Next Action:**

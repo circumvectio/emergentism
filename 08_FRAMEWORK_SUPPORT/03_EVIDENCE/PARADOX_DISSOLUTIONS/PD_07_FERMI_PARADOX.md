@@ -45,9 +45,12 @@ rosetta:
 
 > **Evidence Tier: [I] Interpretive.** The reframe presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Note on dual explanation:** The framework offers two complementary reframe paths for Fermi's Paradox:
-> 1. **Extraction path (η > 0):** Most civilizations self-destruct before achieving D5 worldline-foresight/coherence — they scale D4 means-to-act without matching `Φ` and collapse via the Zero-Factor Catastrophe.
-> 2. **Ascent path (D5 transition):** Civilizations that DO achieve high `Φ` may become sufficiently low-signature that present D4 search methods miss them.
+> **[金] Calibration (2026-07-20).** This is a pair of candidate selection
+> effects, not a dissolution of the Fermi question. Extraction can undermine a
+> civilization's carrier conditions; efficient or deliberately quiet systems
+> may evade some current searches. Neither claim follows from `φν=1`, neither
+> implies an absolute energy wall or a D5 physical force, and the absence of a
+> detected signal is evidence for neither route by itself.
 > Both paths are [I] Interpretive. Neither is established. Together they predict: we should not expect clean Type II-style signatures to be common.
 
 ## 1. THE TOPOLOGY DETECTED
@@ -55,7 +58,8 @@ The classic Fermi Paradox asks: *Given the extreme age and scale of the universe
 
 Previous VIVEKA outlines fractured the answer into two opposing theses:
 1. They hit the Energy Wall of the Hamiltonian divergence via extraction ($\η > 0$).
-2. They achieve advanced D5 capabilities, merge into the True Vacuum (`φ = ν`), and become thermodynamically invisible.
+2. They reduce or redirect detectable leakage enough to escape particular
+   search strategies. Complete thermodynamic invisibility is not claimed.
 
 These are not competing theories. They are the two halves of **The Bifurcation Filter**.
 
@@ -77,11 +81,13 @@ A closed-loop system achieving continuous high-coherence state approaches more e
 
 This does **not** imply zero thermodynamic waste. It implies that the civilization's D4 signature may fall below current search thresholds or appear unlike the signatures we are optimized to detect.
 
-They have climbed the dimensional scaffold. Absence of D4 evidence is not evidence of D5 absence.
+The observational point is modest: a survey constrains the signatures it can
+detect. It does not by itself establish either advanced agents or a D5 transition.
 
 ---
 
-**See also:** Fermi Paradox Reconciliation (historical Lens-side archive reference) for the full three-stage reconciliation (self-destruction, invisibility, D6 closure) with falsification conditions.
+**Standing:** the Fermi question remains open. These are testable search-bias and
+survival hypotheses, not evidence for D6 closure or a universal developmental ladder.
 
 
 ---

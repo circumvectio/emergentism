@@ -26,15 +26,25 @@ evidence_tier: "[B] for local script/run instructions; [S] for structural B(ν) 
 
 ## What This Tests
 
-The Emergentism framework predicts a critical cooperation threshold **R\* ~ 0.60** on the Burri Sphere (S^2). Below this density, cooperation collapses to extinction; above it, cooperation becomes self-sustaining and goes to fixation.
+This model tested a conjectured cooperation threshold **R\* ~ 0.60** in one
+specified lattice simulation. It did not establish a universal Emergentist
+threshold. Below or above the fitted threshold, extinction or fixation is an
+outcome of this update rule and payoff specification only.
 
 This simulation tests whether that threshold coincides with the **site percolation threshold** on a 2D square lattice, commonly estimated numerically near **p_c = 0.5927...**
 
-The hypothesis: cooperation becomes self-sustaining precisely when cooperators can form a spanning (percolating) cluster -- a connected path across the entire lattice. The geometry of the framework (B = sin theta peaking at the equator where phi = nu = 1) predicts this transition at R* ~ 0.60, which is within 1.2% of p_c.
+The tested hypothesis was that cooperation becomes self-sustaining when
+cooperators form a spanning cluster. The numerical proximity between the
+chosen `R*` and the square-lattice site-percolation value motivated the test;
+the reciprocal-chart geometry did not derive that lattice threshold.
 
-Evidence tier: **[C] Conjecture — PARTIALLY FALSIFIED.** See `R_STAR_SIMULATION_RESULTS.md` for 2026-04-04 findings. The R* ≈ p_c numerical coincidence is NOT confirmed. However, the underlying result — that cooperation is universally dominant under B(ν) — IS confirmed [S].
+Evidence tier: **[C] Conjecture — PARTIALLY FALSIFIED.** See
+`R_STAR_SIMULATION_RESULTS.md` for the 2026-04-04 findings. The `R*≈p_c`
+coincidence was not confirmed. Any dominance result is structural only inside
+the implemented payoff and update rules; it is not a universal fact about
+cooperation.
 
-> **Canon ground.** The `S²` geometry, `B = sin θ`, and the equator `φ = ν = 1` this simulation tests are owned by [`../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../05_COSMOLOGY/00_THE_BURRISPHERE.md). The moral reading — cooperation is *coupling* (`η = 0`), extraction is *closure* (`η > 0`), sorted by the bond `φ × ν` and never by any pole or person — is [`../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md). This note is a downstream test, not a re-statement of canon.
+> **Canon ground.** The `S²` geometry, `B = sin θ`, and the equator `φ = ν = 1` this simulation tests are owned by [`../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../05_COSMOLOGY/00_THE_BURRISPHERE.md). In this simulation, “cooperate” and “defect” are strategy labels and `η_observed` is a descriptive transfer measure. Neither the labels nor the sign of `η_observed` supplies a moral verdict. Emergentist value judgments require the separately declared, bearer-complete Justice envelope. This note is a downstream model test, not a restatement of canon.
 
 ## How It Works
 
@@ -43,7 +53,8 @@ Evidence tier: **[C] Conjecture — PARTIALLY FALSIFIED.** See `R_STAR_SIMULATIO
 2. **Payoff function**: B(nu) = 2*nu / (1 + nu^2), derived from the balance function on S^2.
    - Cooperators sit at nu = 1 (the equator): B(1) = 1.0
    - Defectors extract Delta_nu from cooperating neighbors, gaining short-term viability but reducing overall balance
-   - Crucially, B(1 + delta) < B(1): extraction is self-defeating
+   - Under this payoff, `B(1 + delta) < B(1)`: the coded deviation lowers the
+     modeled balance score; that does not establish real-world self-defeat
 
 3. **Dynamics**: Fermi imitation rule -- each agent randomly selects a neighbor and copies their strategy with probability sigmoid(payoff_difference / kT).
 

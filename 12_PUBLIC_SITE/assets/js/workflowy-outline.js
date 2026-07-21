@@ -26,7 +26,7 @@
   var LS_OPEN = "emergentism-outline-open";
   var LS_COLLAPSED = "emergentism-outline-collapsed";
 
-  /* ---------- styles (Material type grammar, Skyzai palette) ---------- */
+  /* ---------- styles (compact outline grammar) ---------- */
   var css = [
     "#wf-tab{position:fixed;right:0;top:42%;z-index:8800;writing-mode:vertical-rl;",
     "background:var(--bg2,#111);color:var(--gold,#FFEB3B);border:1px solid rgba(255,235,59,.4);",

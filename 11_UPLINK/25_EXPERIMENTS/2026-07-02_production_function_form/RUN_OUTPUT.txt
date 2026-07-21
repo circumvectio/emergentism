@@ -19,7 +19,7 @@ Y=gsp  L=emp  K=pc+pcap  | 10-fold CV RMSE on output Y (lower = better)
   best CES rho = -0.9   (rho~0 => Cobb-Douglas; rho->inf => Leontief/min; rho=-1 => additive)
 
 --- PRE-REGISTERED KILL-CRITERIA ---
-  K1 multiplicative beats additive:        FAIL  (CD 6799 vs ADD 6721)
-  K2 SYMMETRIC balance-product (a~b, a+b~1): FAIL  (a=0.61, b=0.44)
+  PF1 multiplicative beats additive:       FAIL  (CD 6799 vs ADD 6721)
+  PF2 SYMMETRIC balance-product (a~b, a+b~1): FAIL  (a=0.61, b=0.44)
   K2b product-unit ~ general CD:           FAIL  (prod 580799 vs CD 6799)
-  K3 CES rho ~ 0 (Cobb-Douglas family):    FAIL  (rho=-0.9)
+  PF3 CES rho ~ 0 (Cobb-Douglas family):   FAIL  (rho=-0.9)

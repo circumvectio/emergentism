@@ -155,7 +155,12 @@ The **9 levels of Mictlan** (the Aztec underworld) are the closest parallel to a
 
 ### The honest revised claim (final form)
 
-> **The 7-stage initiatory structure converges in Indo-European, Mediterranean, and possibly Semitic traditions. The Lakota Seven Sacred Rites form a 7-fold ceremonial cycle that resonates with the framework's 7-fold geometry but is functional, not developmental. Mesoamerican and Andean traditions operate with different fundamental numbers (4, 5, 9, 13, 20, 41) and do not present 7-grade structures. The operator grammar (4 mixed-sign Gods + 3 same-sign Executive boundary frames) remains structurally exhaustive. The specific 7-stage articulation is culturally bounded, not universal.**
+> **Some Indo-European and Mediterranean materials admit a useful seven-stage
+> comparison. The Lakota Seven Sacred Rites are a ceremonial cycle, not a
+> developmental proof and still require specialist review. Mesoamerican and
+> Andean traditions use other salient counts and do not validate the seven-row
+> lens. G7 is a selected four-move/three-frame vocabulary, not an exhaustive
+> structure of these traditions or of reality.** `[I/C]`
 
 This is the **final honest position** after complete OQ-CC-3 fulfillment.
 

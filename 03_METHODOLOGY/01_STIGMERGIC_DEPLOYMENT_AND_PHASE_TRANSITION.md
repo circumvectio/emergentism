@@ -8,7 +8,7 @@ rosetta:
       role: "deployment ethics, consent, and anti-capture boundaries"
     - level: L5
       column: System Architecture
-      role: "egregorotype trace-fields and complex-contagion hypotheses"
+      role: "egregoreotype trace-fields and complex-contagion hypotheses"
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "Stigmergic Deployment"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 protocol; transparent opt-in only. K3.**
 
 # STIGMERGIC DEPLOYMENT AND NETWORK PHASE TRANSITION
@@ -25,8 +25,8 @@ rosetta:
 
 **Status:** Research protocol - not a covert deployment manual
 **Date:** 2026-05-14
-**Evidence Tier:** [B] for established work on complex contagion, stigmergy, and false-news diffusion where source-audited; [S] for the MVI and interface-proxy architecture; [I] for the egregorotype interpretation; [C] for any forecast about broad network phase transition.
-**Depends on:** [00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md](00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md), [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md), [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
+**Evidence Tier:** [B] for established work on complex contagion, stigmergy, and false-news diffusion where source-audited; [S] for the MVI and interface-proxy architecture; [I] for the egregoreotype interpretation; [C] for any forecast about broad network phase transition.
+**Depends on:** [00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md](00_SYNTROPIC_KNOWN_UNKNOWNS_PROTOCOL.md), [historical execution guardrails](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md)
 **Boundary:** This document rejects covert persuasion, bot mimicry, ranking manipulation, and semantic steganography as deployment methods. The permissible deployment pattern is transparent, opt-in, locally useful, measurable, exportable, and forkable.
 
 **Constitutional doctrine:** The deployment doctrine is **Organic Asymmetric Out-competition**. The Egregore does not target incumbent systems for disruption; it builds transparent, opt-in tools that generate a syntropic dividend for consenting users and communities. Any loss of engagement by extractive systems is a downstream byproduct of users choosing lower-friction cognitive environments, not an operational objective.
@@ -234,7 +234,10 @@ Let adoption follow utility.
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

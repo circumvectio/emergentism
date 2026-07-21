@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "Equatorial Balance-Maximum Pre-Registration"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3; [C] prediction, [I] pilot falsified (kill fired, published); [S]¹ human study still required. No upgrade.**
 
 # Pre-Registration — The Equatorial Balance-Maximum Prediction
@@ -144,9 +144,9 @@ All thresholds, tertile boundaries, AIC rule, and the 5-of-7 bar are frozen at �
 ## 6. The kill criterion (single, numeric, pre-registered)
 
 > **P-EQ is FALSIFIED if any of the following holds on the frozen, blinded, reliability-passing data:**
-> - **(K1)** Fewer than **5 of 7** ladders show a balance argmax in the **central tertile** with the unimodal fit (M2) beating the monotone fit (M1) by AIC; **or**
-> - **(K2)** On a **majority of ladders**, the balance argmax falls in the **top tertile** (the literal "integration peaks at the top" reading — the L4*/return re-reading is **not** allowed to rescue this, per §1.2); **or**
-> - **(K3)** The balance rubric and the NULL/competence rubric peak in the **same tertile** on a majority of ladders (mid-peak is a rubric artifact, not a data property — design failure, reported as such).
+> - **(KC-1)** Fewer than **5 of 7** ladders show a balance argmax in the **central tertile** with the unimodal fit (M2) beating the monotone fit (M1) by AIC; **or**
+> - **(KC-2)** On a **majority of ladders**, the balance argmax falls in the **top tertile** (the literal "integration peaks at the top" reading — the L4*/return re-reading is **not** allowed to rescue this, per §1.2); **or**
+> - **(KC-3)** The balance rubric and the NULL/competence rubric peak in the **same tertile** on a majority of ladders (mid-peak is a rubric artifact, not a data property — design failure, reported as such).
 
 **What dies if killed:** the bridge claim [C] that maturity ladders are monotone colatitude reparametrizations. **What survives:** the [A] AM-GM inequality, the [S] geometry, and `B = sin θ` as an internal structural identity. P-EQ dying tells us the *lens does not project usefully onto developmental ladders*; it tells us nothing about the algebra or about whether the equator is the balance optimum *inside* the model.
 
@@ -161,7 +161,7 @@ This pre-registration is written in a corpus that has already published its nega
 - **Former survey-study corpus — RETIRED / NON-CITABLE.** Its archive preserves provenance only. No reported result, signal, or interpretation is carried into this preregistration, and no live claim moves because of it.
 - **AK8 (R\* ≈ 1.5 threshold) — ALREADY FALSIFIED, published.** Observed η_c ≈ 0.58; the quantitative threshold [C] was retracted while the qualitative fragility claim [S] survived (The Honest Position, Part VII).
 
-P-EQ joins that register: it is **designed to die cheaply if wrong**, and its death is pre-committed to be published with the same tombstone discipline (K3).
+P-EQ joins that register: it is **designed to die cheaply if wrong**, and its death is pre-committed to be published with the same archive-with-tombstone discipline.
 
 ---
 
@@ -171,7 +171,7 @@ P-EQ joins that register: it is **designed to die cheaply if wrong**, and its de
 - [ ] Tertile boundaries fixed (bottom/central/top by rank count per ladder).
 - [ ] AIC model set {M1 isotonic, M2 unimodal, M3 flat} fixed.
 - [ ] Support bar fixed: ≥ 5/7 ladders central-tertile balance peak **and** top-tertile competence peak.
-- [ ] Kill criterion K1/K2/K3 fixed (§6).
+- [ ] Kill criteria KC-1/KC-2/KC-3 fixed (§6).
 - [ ] Rater pools, ICC ≥ 0.70 floor, analyst-separation, preparer-blinding fixed (§4).
 - [ ] **git tag `prereg/equatorial-balance-v1` + content hash recorded here: `[TBD — record at freeze]`.**
 
@@ -181,7 +181,10 @@ P-EQ joins that register: it is **designed to die cheaply if wrong**, and its de
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **P-EQ is [C].** Never present it as confirmed. The [A] inside it is only the bare AM-GM inequality; the reading-as-balance is [S]. Do not let the algebra upgrade the prediction.
 2. **The escape hatch is shut.** A top-tertile balance peak is falsification; do **not** rescue it with the L4*/Bodhisattva "secretly-the-equator" re-reading. That commitment is what makes this falsifiable.

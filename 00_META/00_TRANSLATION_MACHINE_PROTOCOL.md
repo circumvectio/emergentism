@@ -3,7 +3,6 @@ rosetta:
   primary_column: "Meta"
   register: "[S]"
   canonical_phrase: "Translation Machine Protocol"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # Translation Machine Protocol
@@ -50,7 +49,7 @@ Every live surface should preserve:
 - source ownership over summary convenience,
 - evidence tiers over rhetorical force (`A7` — no false witness),
 - `η = 0` as anti-extraction discipline,
-- `K2` only as private-DAV constitutional-signing boundary, with PRISM/public-governance receipts for public DAV/DAC action,
+- accountable authorization for consequential action, while private money/contract signatures remain an external legal convention,
 - `K3` as archive-first / no silent erasure (tombstone superseded canon, never overwrite it),
 - `K4` / Grace Exit as non-captivity,
 - Three-Stage Process separation,
@@ -96,7 +95,10 @@ The safest public compression is:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

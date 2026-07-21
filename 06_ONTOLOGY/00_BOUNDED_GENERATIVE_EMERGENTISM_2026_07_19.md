@@ -10,12 +10,12 @@ rosetta:
 type: ontology-candidate
 title: "Bounded Generative Emergentism — degrees of freedom, reachability, and measurement"
 date: 2026-07-19
-status: "[D] STAGED — Emergentism-only; no K2 adoption; no Skyzai warrant"
+status: "[D] STAGED — pure Emergentism; no application supplies warrant"
 evidence_tier: "[A] external mathematics/physics only where stated; [S] method and framework-internal distinctions; [I] ontological reading; [C] plenitude, constructor bridge, and quantum interpretation"
 parents:
   - ../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
   - ../00_RUMINATION_ON_DOF_2026_07_19.md
-  - 00_THE_ONTOLOGY_OF_BEING.md
+  - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - ../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_12_MEASUREMENT_PROBLEM.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
 ---
@@ -27,7 +27,7 @@ parents:
 
 > **The proposed repair of Plato:** particulars disclose structures that exceed any one instance, but those structures need not be separately existing Forms. A degree of freedom is a typed capacity for variation in a specified system after constraints and redundancies are declared. A form is not that freedom itself: it is a robust invariant, equivalence class, order parameter, attractor, or other stable organization formed across constrained freedoms. `[I/C]`
 
-This is a staged ontology, not a physical theory and not a totality claim. It neither identifies a chart with the Ground nor uses Skyzai institutions, products, runtime, governance, or receipts as warrant.
+This is a staged ontology, not a physical theory and not a totality claim. It neither identifies a chart with the Ground nor uses any institution, product, runtime, governance system, or application receipt as warrant.
 
 ---
 

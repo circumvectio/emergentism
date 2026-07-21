@@ -394,6 +394,8 @@
   display: flex;
   gap: var(--space-3);
   align-items: flex-start;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .step-num {
@@ -428,6 +430,9 @@
 .step-body pre {
   margin: 0;
   padding: var(--space-3);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--shape-md);
@@ -435,12 +440,39 @@
 }
 
 .step-body pre code {
+  display: block;
+  width: max-content;
+  min-width: 100%;
   background: transparent;
   border: 0;
   padding: 0;
   font-size: 0.82rem;
   line-height: 1.6;
   color: var(--text-muted);
+}
+
+@media (max-width: 480px) {
+  .content-section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .fork-step {
+    gap: 12px;
+  }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+  }
+
+  .step-body pre {
+    padding: 12px;
+  }
+
+  .step-body pre code {
+    font-size: 0.72rem;
+  }
 }
 
 .cmd-comment {

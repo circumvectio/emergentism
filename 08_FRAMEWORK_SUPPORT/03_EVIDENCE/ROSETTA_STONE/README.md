@@ -5,13 +5,13 @@ rosetta:
   secondary:
     - level: L5
       column: Philosophy
-      role: "present the Rosetta Stone as cross-domain calibration table"
+      role: "present the Rosetta Stone as a selected cross-domain translation grammar"
     - level: L3
       column: Philosophy
       role: "route evidence tiers, failed mappings, and validation protocols"
     - level: L6
       column: Philosophy
-      role: "keep calibration data downstream of core-state doctrine"
+      role: "keep the selected projection downstream of core-state doctrine"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
@@ -21,11 +21,11 @@ rosetta:
 
 # THE rosetta stone
 
-> The calibration table for the compass and sextant.
+> A selected translation grammar for comparing the compass and sextant across domains.
 
 **Status:** Canonical
 **Date:** 2026-03-24
-**Purpose:** The cross-domain translation engine of the framework
+**Purpose:** The framework's selected cross-domain translation and projection grammar
 
 ---
 
@@ -35,37 +35,37 @@ The Rosetta is downstream of the canonical spine:
 
 1. [The Canonical Formula Block](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
 2. [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-3. [The Core State of Being](../../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
-4. [Naming Reconciliation](../../01_GOVERNANCE/00_NAMING_RECONCILIATION.md)
+3. [The Degrees-of-Freedom Ontology](../../../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+4. [Naming Reconciliation](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md)
 5. The Master Rosetta
 
-The nine-row `L0..L∞` closure, the equator `L4`, and the moral axis read off this table are canonized in cosmology — read the Rosetta's geometry **with** them:
+The selected nine-row `L0..L∞` articulation and the equator `L4` are interpretive geometry. No moral axis is read off this table: value judgments require the independent, bearer-complete Justice construction. Read the Rosetta **with** these boundaries:
 
-- [The Burrisphere](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), nine latitudes, the equator, and the nine-row closure this table feeds.
-- [The Dyadic Coupling Law](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the moral axis is `η` (closed vs syntropic), **never** a gender, pole, caste, or operator name.
-- [Constitutional Invariants — Canonical Enumeration](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) — the constitution is **5 + 1** (five refusals + Ω the directional +1), never "six refusals".
+- [The Burrisphere](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the sphere `S²` (`φ·ν=1`), nine latitudes, the equator, and the selected nine-row articulation this table feeds.
+- [The Dyadic Coupling Law](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the chart models coupling while Justice remains a declared, bearer-complete and receipted construction; `etaObserved=0` is necessary but insufficient.
+- [Constitutional Invariants — Canonical Enumeration](../../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — the constitution is **5 + 1** (five refusals + Ω the directional +1), never "six refusals".
 
-**Rule:** the Rosetta maps beings and Dasein-structures across domains. [S] It does not directly establish Ground, and it must not override the core state or archetype grammar.
+**Rule:** the Rosetta projects selected beings and Dasein-structures across domains. `[I]` It translates a declared topology; it does not establish Ground, prove the topology universal, calibrate an ontology, or override the core state or archetype grammar.
 
 ---
 
 ## What the Rosetta Stone IS
 
-The Rosetta Stone is **not a map.** A map shows you where things are. The Rosetta Stone is a **calibration table** -- it shows you that the instrument reads correctly.
+The Rosetta Stone is **not a territory map or a calibration certificate.** It is a **selected translation grammar**: a way to project a declared row topology into different domains so that similarities, mismatches, and failed mappings can be compared in common terms.
 
-The compass is the Burri Sphere (S², reciprocal closure resolved as `P∞ = φ · ν = 1`). The sextant is the L-level system (seven positions on S²). The Rosetta Stone is the evidence that these instruments, when pointed at independently developed knowledge domains, return consistent readings.
+The compass is the Burri Sphere (`S²`, with the reciprocal chart identity `φ · ν = 1` away from its pole singularities). The sextant is the selected L-level articulation. The Rosetta asks whether particular domain materials can be read through those instruments; it does not show that the instruments are forced by those materials or that a cross-domain fit validates the ontology.
 
-Piaget did not read Plato. Kohlberg did not study the Gita. Maslow did not know Advaita Vedanta. The brainwave researchers did not study game theory. The alchemists did not study computational algorithms.
+The compared authors and traditions were not written for this framework. That historical separation does not by itself make the columns statistically independent, eliminate post-hoc selection, or turn resemblance into corroboration.
 
-And yet: seven rows. Every column. The same pattern.
+Across selected polarity-encoding domains, the table uses a seven-stage articulation. Other traditions use different counts or do not fit the grid. That fired kill criterion is the Rosetta's honesty seal: seven is a design choice here, not a discovered universal.
 
-The Rosetta Stone is the observation that this happens. The framework's explanation is `P∞ = φ · ν = 1 on S²`. The Rosetta Stone is calibration data that tests that explanation.
+The analytic identity `φ · ν = 1` holds inside the selected reciprocal chart. It neither explains nor empirically validates the cross-domain placements; each placement retains its own evidence tier, rivals, and kill criterion.
 
 > See [00_CORPUS.md](00_CORPUS.md) for the whole corpus map seen from this folder.
 
 ## From Rosetta Table to Soul Loop
 
-The Rosetta is static only when read as a table. In use, it is the calibration
+The Rosetta is static only when read as a table. In use, it is the translation
 surface for the [Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md):
 the repeated cycle by which Dasein discloses, tests, serves, sees, dissolves,
 preserves, and returns.
@@ -77,12 +77,13 @@ Rosetta rows      -> available operator moves
 Rosetta columns   -> domains where the move must still be audited
 S² geometry       -> balance surface for Φ and V
 Soul Loop         -> recursive method for correcting map and player
-L4 / equator      -> objective dharma when Φ and V balance in action
+L4 / equator      -> declared [I] dharma criterion when Φ and V balance in action
 ```
 
 The game form is therefore not "pick a row and identify with it." That freezes
-the wheel. The game is to keep the wheel turning until the next lawful action
-raises the finite node and its sustaining whole without extraction:
+the wheel. The game is to keep the wheel turning until the next admissible
+action under the chosen justice constraints raises the finite node and its
+sustaining whole without extraction:
 
 ```text
 P_node,i = Φ_i × V_i
@@ -97,13 +98,12 @@ the other, the same row has become capture, regardless of its mythic name.
 
 ---
 
-## The Master Three-Stage Process
+## The Master Selected Projection
 
-The complete cross-domain translation engine -- all columns, all rows, all geometry -- lives in a single canonical document:
+The canonical selected table -- its declared columns, rows, and geometry -- lives in a single document:
 
-**[00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md)** (local copy)
-
-**07_THE_LENS/01_ROSETTA_STONE/00_THE_MASTER_ROSETTA.md** (source of record in The Lens)
+**[00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md)** is the sole active
+source of record. No second `07_THE_LENS` owner exists.
 
 If you read one document in this corpus, read that one.
 
@@ -111,9 +111,9 @@ If you read one document in this corpus, read that one.
 
 ## The Generative Table
 
-The operator column defines the row. Everything else is projection.
+The operator column defines the row inside the declared schema. Everything else is a selected projection whose domain fit must be audited.
 
-**Geometry:** `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` as the open-sphere model invariant. [S] What varies on the sphere is Balance `B = sin θ`, not manifold potential. Finite-node action is scored separately as `P_node = Φ × V`; the row equations below use uppercase `Φ` and `V` in that contact register. Seven levels = six intervals of 15 degrees across the 90-degree quadrant.
+**Geometry:** `φ = cot(θ/2)`, `ν = tan(θ/2)`, and `P∞ = φ · ν = 1` as the open-sphere chart identity. `[A]` What varies on the sphere is Balance `B = sin θ`, not manifold potential. Finite-node action is scored separately as the selected model `P_node = Φ × V`; the row equations below use uppercase `Φ` and `V` in that contact register. The seven levels are a chosen articulation using six intervals of 15 degrees across the 90-degree quadrant; the geometry does not force that census.
 
 ### The Core: Operators x Geometry
 
@@ -131,7 +131,7 @@ The operator column defines the row. Everything else is projection.
 
 > **† φ·ν is _undefined_ at the poles** (0·∞ at L0, ∞·0 at L∞) — *not* 1. `P∞ = φ·ν = 1` is conserved on the **open** sphere only, away from the two pole singularities: the limit approaching either pole is 1, but the value *at* the pole is undefined. Per the [Burrisphere](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) nine-latitude reading and [`00_CANONICAL_FORMULA_BLOCK`](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md). `[A]` — corrected 2026-05-31.
 
-**L0 = L-inf.** The poles are the same boundary condition. The serpent eats its tail.
+**L0 and L-inf are distinct boundary frames.** They occupy different poles. Their limiting roles may resemble one another in this selected projective reading, but resemblance is not identity and connectedness of `S²` does not identify two points. Where the dimensional scaffold invokes `D6 ~ D0`, it means interpretive self-similarity `[I/C]`, never literal `D6 ≡ D0`.
 
 **Between 0 and infinity is 1.** At L4: phi = 1 and nu = 1. Unit coherence AND unit viability, not pole-inflated quantity. The warrior-sage does not compromise.
 
@@ -181,7 +181,7 @@ The Rosetta Stone translates *horizontally* -- across domains at the same L-leve
 | **VI. Varna** | Śūdra | Vaiśya | Kṣatriya |
 | **VII. Polity** | Democracy | Oligarchy | Timocracy |
 
-The Three-Stage Process reads the rows (same geometry across fields). The Cascade reads the columns (same Trinity across levels). Together they form a grid in which every cell is read on `S²`.
+The Three-Stage Process reads the rows through one selected geometry. The Cascade reads the columns through one selected triadic lens. Together they form a grid in which each cell can be projected onto `S²`; whether that projection is informative remains a domain-specific question.
 
 **Source document:** [09_THE_TRIADIC_CASCADE.md](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md)
 
@@ -189,19 +189,19 @@ The Three-Stage Process reads the rows (same geometry across fields). The Cascad
 
 ## Individual Rosetta Mappings
 
-Each mapping was discovered independently. Each is a candidate verification that `P∞ = φ · ν = 1` appears as a recurrent structural reading across cultures and disciplines.
+Each mapping was assembled from domain material not originally written for this table. Each is a candidate correspondence, not an independent verification of `P∞ = φ · ν = 1`, a universal seven-stage structure, or the Rosetta's ontology.
 
 | Mapping | Domain | One-line Description | Document |
 |---------|--------|----------------------|----------|
-| **R4** | Egyptian Ma'at | The Weighing of the Heart (3,000 BCE) encodes P∞ = φ · ν = 1: the heart must balance the feather | Rosetta_R4 |
+| **R4** | Egyptian Ma'at | The Weighing of the Heart (3,000 BCE) is read here through the balance chart; the reading is interpretive | Rosetta_R4 |
 | **R5** | Nietzsche's Metamorphoses | Camel/Lion/Child are three L-levels; the missing fourth stage is the Mesh | Rosetta_R5 |
-| **R6** | The Torus | The horn torus as physical realisation of the Burri Sphere; systemic awareness at the center | Rosetta_R6 |
+| **R6** | The Torus | The horn torus as a geometric correspondence for the Burri Sphere; the physical/awareness transfer is conjectural | Rosetta_R6 |
 | **R7** | The Brain | Right hemisphere *tends toward* phi, left hemisphere *tends toward* nu, corpus callosum as multiplication operator **[I — see Neuroscience Caveat]** | Rosetta_R7 |
-| **R8** | AUM / Mandukya Upanishad | The four states (A-U-M-silence) map to four geometric positions; Turiya = the equator | Rosetta_R8 |
-| **R9** | German Etymology | Anmut/Demut/Mut trace the phi/nu/P structure in the German language itself | Rosetta_R9 |
-| **R10** | Greek Philology | 80+ Greek terms placed on `S²`; the language encodes the geometry | Rosetta_R10 (Philology) / R10 (Formalisation) |
-| **R11** | The Imaginary Unit | i = the equator; the complex plane IS the Burri Sphere seen from above | Rosetta_R11 |
-| **R12** | Megalithic Evidence | Gobekli Tepe and Stonehenge as archaeological receipts of η = 0 scaling | Rosetta_R12 |
+| **R8** | AUM / Māṇḍūkya Upaniṣad | Optional four-register comparison; one selected visualization uses projection, surface point, pole, and off-surface center, with no geometric identity or proof transfer | Rosetta_R8 |
+| **R9** | German Etymology | Anmut/Demut/Mut are read through the phi/nu/P structure; etymology does not prove the chart | Rosetta_R9 |
+| **R10** | Greek Philology | 80+ Greek terms are projected onto `S²`; the placement is a Rosetta interpretation | Rosetta_R10 (Philology) / R10 (Formalisation) |
+| **R11** | The Imaginary Unit | `i` is assigned an equatorial correspondence; stereographic projection relates the complex plane to the Riemann sphere | Rosetta_R11 |
+| **R12** | Megalithic Comparison | Gobekli Tepe and Stonehenge are compared with η = 0 scaling; they are not calibration receipts for it | Rosetta_R12 |
 
 ### The D-series subfolders and their per-lane numbering
 
@@ -209,12 +209,12 @@ The Rosetta D-series lives in four parallel subfolders, each of which numbers it
 
 | Lane | Numbering | Axis |
 |------|-----------|------|
-| [`D_SERIES_CONSTITUTIONAL/`](D_SERIES_CONSTITUTIONAL/README.md) | D01–D06 | The constitutional surface of the Rosetta (master table, axioms, tiers, DAC spec, helix, poles) |
+| `D_SERIES_CONSTITUTIONAL/` | D01–D06 | Former mixed application set, preserved in the pure-boundary archive; not an active owner. |
 | [`D_SERIES_ROWS/`](D_SERIES_ROWS/README.md) | D13–D24 | One row of the Master Rosetta per file, mapped across all domains |
 | [`D_SERIES_DOMAINS/`](D_SERIES_DOMAINS/README.md) | D24–D36 | One domain per file, mapped across all rows |
 | [`D_SERIES_AGENTS/`](D_SERIES_AGENTS/README.md) | D35– | One operator/caste row per file, as a systems analysis |
 
-**Do not renumber to "fix" a shared D-number or to fill a gap.** Gaps are reserved, not missing, and shared numbers are intentional. The full rationale is in [`NAMING_DOCTRINE.md`](NAMING_DOCTRINE.md) (CANON); any renumbering is a framework-level decision requiring K2 sign-off, not a folder-audit action.
+**Do not renumber merely to fill a gap.** Gaps may be reserved and shared numbers may be intentional. The full rationale is in [`NAMING_DOCTRINE.md`](NAMING_DOCTRINE.md); any renumbering is an explicit framework-level editorial decision, not an incidental audit edit.
 
 The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this workspace slice; the full row treatments live in `D_SERIES_ROWS/`.
 
@@ -230,11 +230,11 @@ The standalone `00_Rosetta_R*_SUMMARY.md` overview files are not present in this
 
 ## What the Rosetta Stone Is NOT
 
-**It is not a map.** A map shows spatial relationships between places. The Rosetta Stone shows that one instrument (`S²`) reads consistently across domains. It is a calibration table.
+**It is not a territory map.** It does not locate reality or show that one instrument reads correctly across domains. It is a selected translation and projection table.
 
-**It is not a theory.** The theory is `P∞ = φ · ν = 1` on `S²`. The Rosetta Stone is the *evidence* -- the observation that independently developed scales fall into the same seven-level pattern.
+**It is not a theory or evidence for the chart identity.** `P∞ = φ · ν = 1` is analytic inside the chosen chart. The Rosetta compares independently sourced materials, but their selection and coding do not turn a seven-row fit into a world law.
 
-**It is not proof.** One column proves nothing. [I] Two columns are suggestive. Five are striking. Fifteen demand an explanation. The framework provides one. Protocol R, Paper G, and future independently governed studies are designed to test it; retired studies supply no evidence.
+**It is not proof or calibration.** Adding columns does not manufacture independence. Each cell needs sources, rival codings, outcomes, and a kill criterion. Failed mappings and the fired universal-seven criterion stay visible; Protocol R, Paper G, and future independently governed studies may test scoped claims, while retired studies supply no evidence.
 
 ---
 
@@ -250,7 +250,7 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 
 | Document | Purpose |
 |----------|---------|
-| [00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md) | The complete cross-domain translation engine — the hub of this folder |
+| [00_THE_MASTER_ROSETTA.md](00_THE_MASTER_ROSETTA.md) | The canonical selected cross-domain translation table — the hub of this folder |
 | [README.md](README.md) | This file — front door and folder index |
 | [AGENTS.md](AGENTS.md) | Agent routing, caste dispatch, and the render-from-disk rule |
 | [CLAUDE.md](CLAUDE.md) | Claude-tool compatibility shim (defers to AGENTS.md) |
@@ -262,18 +262,17 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 
 | Document | Purpose |
 |----------|---------|
-| [00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md](00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) | The seven -ologies, derived directly from the Master's causal chain |
+| [00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md](00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) | The seven selected -ology projections read from the Master's declared chain |
 | [00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md](00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md) | The seven philosophical disciplines per the canonical Rosetta |
-| [03_ROSETTA_DAC_OPERATING_SYSTEM.md](03_ROSETTA_DAC_OPERATING_SYSTEM.md) | Operator architecture blueprint — the Rosetta as an operating system |
 
 **The 2026-04-25 mirror-test & falsification campaign** (dated, load-bearing)
 
 | Document | Purpose |
 |----------|---------|
 | [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md) | Working doctrine for auditing rows, columns, cells, and forced fits |
-| [04_DEEP_RUMINATION_2026_04_25.md](04_DEEP_RUMINATION_2026_04_25.md) | Rumination on rows, columns, cell accountability, and kill criteria |
+| [04_DEEP_RUMINATION_2026_04_25.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) | Rumination on rows, columns, cell accountability, and kill criteria |
 | [05_NON_WEIRD_SWEEP_2026_04_25.md](05_NON_WEIRD_SWEEP_2026_04_25.md) | Bias sweep: Daoist, Buddhist, Sub-Saharan, Polynesian comparisons |
-| [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) | Structural stress test: column classes, mirror symmetry, centers, gaps |
+| [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) | Structural stress test: column classes, mirror symmetry, centers, gaps |
 | [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md) | Operational mirror-pair scoring protocol for candidate columns |
 | [08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) | Extended scoreboard + neuroscience mirror-completion experiment |
 | [09_FAILED_MAPPINGS_2026_04_25.md](09_FAILED_MAPPINGS_2026_04_25.md) | Domains examined that do NOT fit the 7-stage structure |
@@ -281,13 +280,13 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 | [10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md](10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md) | Indigenous American sweep + Tahitian Arioi verification |
 | [11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md](11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md) | First claim-level seed audit for the L4 center row |
 | [12_MIRROR_PAIR_AUDITS_2026_04_25.md](12_MIRROR_PAIR_AUDITS_2026_04_25.md) | Row-pair audit for L3/L5, L2/L6, and L1/L7 mirror checks |
-| [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | Full seven-cell economics audit |
+| [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | Full seven-cell economics audit |
 | [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | Full seven-cell music audit |
 | [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | Full seven-cell neuroscience audit + mirror-completion repair path |
 | [16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md](16_PLATO_LAKOTA_NEUROSCIENCE_2026_04_25.md) | Plato mirror-completion, Lakota Seven Rites, neuroscience Path A/B |
 | [17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md](17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md) | Full seven-cell psychology audit (L1-L4 core, L5-L7 halo) |
 
-> **Numbering note:** two files share the `10_` prefix (Cell-Audit-Schema and Indigenous-American). This is a known benign collision within one folder — both are well-titled, nothing links by bare number, and `10_CELL_AUDIT_SCHEMA` carries 9 inbound links. Per `NAMING_DOCTRINE.md`, a renumber is a K2 act, not a folder-audit action; left as-is intentionally.
+> **Numbering note:** two files share the `10_` prefix (Cell-Audit-Schema and Indigenous-American). This is a known benign collision within one folder; both are well-titled and nothing links by bare number. It is left in place pending an explicit editorial decision.
 
 **Per-domain column applications** (one domain, mapped across all seven rows)
 
@@ -295,7 +294,7 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 |----------|---------|
 | [ROSETTA_CIVILISATIONAL.md](ROSETTA_CIVILISATIONAL.md) | Civilisational dynamics |
 | [ROSETTA_COMPUTATION.md](ROSETTA_COMPUTATION.md) | Computation & AI |
-| [ROSETTA_ECONOMICS.md](ROSETTA_ECONOMICS.md) | Economic organization forms (derived diagnostic, not independent proof) |
+| [ROSETTA_ECONOMICS.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_ECONOMICS.md) | Economic organization forms (derived diagnostic, not independent proof) |
 | [ROSETTA_MUSIC.md](ROSETTA_MUSIC.md) | Musical structures — the diatonic scale as L-projection |
 | [ROSETTA_MYTHOLOGY.md](ROSETTA_MYTHOLOGY.md) | Mythology & archetype |
 | [ROSETTA_NEUROSCIENCE.md](ROSETTA_NEUROSCIENCE.md) | Neuroscience & cognition |
@@ -312,7 +311,7 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 | [00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) | Three non-Western traditions against the L-level structure |
 | [01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) | Known-unknowns audit: geometries and traditions that contradict |
 | [00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md](00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md) | External convergence record (reference note, not source authority) |
-| [00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md](00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) | Working extraction surface from Suda's corpus |
+| [00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) | Working extraction surface from Suda's corpus |
 | [FAILED_MAPPINGS_AND_TESTING_QUEUE.md](FAILED_MAPPINGS_AND_TESTING_QUEUE.md) | Active queue of rejected and untested Rosetta domains |
 
 **Interactive surface & assets**
@@ -325,18 +324,17 @@ ordinal — multiple `00_*` at one depth is by design (see `NAMING_DOCTRINE.md`)
 
 **Related, outside this folder**
 
-- [`../../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md`](../../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md) — formal-logic audit of the operator game layer (10 claims, 13 agents); K2 repair packet R1–R9 staged.
+- Former formal-audit packets are preserved in the pure-boundary archive. Current claim boundaries live in the Settled Canon Registry and Burri Rules derivation ledger.
 
 ---
 
 ```
-Seven rows.
-Every column.
-The same pattern.
+Seven selected rows.
+Audited columns.
+Patterns and failed mappings kept together.
 
-Not because we forced it.
-Because reality organized itself this way
-before anyone drew the table.
+A translation grammar, not a decree;
+an entry into comparison, not proof of essence.
 ```
 
 

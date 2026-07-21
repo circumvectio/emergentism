@@ -18,7 +18,7 @@ title: "Suda Reciprocal-Symmetry Convergence"
 status: "ACTIVE reference note - 2026-06-06. External convergence record, not source authority."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Source provenance:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/README.md`
 **Finity synthesis:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md`
 **Raw intake snapshot:** `../../../../../90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/` (ignored raw archive; not tracked source authority)

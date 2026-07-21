@@ -123,8 +123,10 @@ This table is the single source of truth. If any other document shows a differen
 ---
 
 ## THE ACTIVE DISSOLUTION SEQUENCE
-Each dissolution follows the specific diagnostic pipeline:
-*Detect Topology Error $\rightarrow$ Map to $\mathbb{C}P^1$ $\rightarrow$ Deploy the Metric $\rightarrow$ Verify Geometry*
+Each dissolution follows a bounded diagnostic pipeline:
+*separate claim types -> expose premises -> compare the selected lens with rivals
+-> state what remains unresolved*. No route presumes that every paradox is a
+topology error or that mapping to `CP^1` verifies the territory.
 
 > **Reading note:** The one-line summaries below are compressed mnemonics, not substitutes for the underlying papers. Where the local file is absent from this workspace slice, treat the summary as a corpus pointer rather than a verified local artifact.
 
@@ -134,7 +136,7 @@ Each dissolution follows the specific diagnostic pipeline:
 *   **PD_07: The Fermi Paradox** (Reframed: the bifurcation filter — most civilizations die under `η > 0`, survivors may become low-signature)
 *   **PD_08: The Liar Paradox** (Reframed: self-reference fails when the system exceeds its stable closure condition)
 *   **PD_09: Leibniz's Necessary Being** (Reframed: the framework relocates necessity from a supreme entity to a self-bounding condition)
-*   **PD_10: The Is-Ought Gap** (Reframed conditionally: within the axiom set, extraction is self-terminating and the multiplicative geometry constrains Ought)
+*   **PD_10: The Is-Ought Gap** (The gap remains: bearer-complete Justice is a declared norm; conditional game results may test consequences but geometry does not derive Ought)
 *   **PD_13: The Hard Problem** (Reframed: awareness is not missing from reality but extracted from direct experience and then falsely treated as absent from third-person description)
 
 *(PD_11 through PD_24 cover advanced problems: free will, measurement, the hard problem, mind-body, evil, meaning, QM/GR unification, universals, identity persistence, philosophical and scientific implications, the completion thesis, and the third unveiling. See the Definitive Numbering Table above for the full list.)*

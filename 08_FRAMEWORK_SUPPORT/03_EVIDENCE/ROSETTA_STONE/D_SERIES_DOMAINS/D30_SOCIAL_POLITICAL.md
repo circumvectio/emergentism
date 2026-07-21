@@ -57,7 +57,7 @@ evidence_tier: "[S] for stated Plato/Triple Lock source status; [I] for L-level 
 
 **Restoration:** The Warrior (L4) re-asserts the boundary. Three keys: attention sovereignty + full-palette training + genuine practice.
 
-**Key for DAC:** The DAC's constitutional constraint (η = 0, I4) is the structural defence against the Great Inversion. The Triple Lock cannot operate within an organism where extraction is constitutionally prohibited.
+**Institutional hypothesis:** enforceable zero-extraction, contest, and exit constraints may reduce capture by the Great Inversion. This is a testable design claim, not a guarantee.
 
 ---
 

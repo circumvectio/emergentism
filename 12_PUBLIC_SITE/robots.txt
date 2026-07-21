@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /90_ARCHIVE/
 
 Sitemap: https://www.emergentism.org/sitemap.xml

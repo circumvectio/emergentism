@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "Photon Unit of Account"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # THE PHOTON AS UNIT OF ACCOUNT
 
 ## Quantization, Emission, and the Universal Ledger
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [A] for established physics | [I] for interpretive readings (E=hν as φ·ν=1, photon as "unit of account," EM field as "ledger") | [C] for conjectures (shell quantization as topological closure, spectral line prediction)
 
@@ -73,11 +73,17 @@ The Planck scale is the scale of × itself — the scale at which the Zero-Sum R
 
 The angular part of every atomic wavefunction is a spherical harmonic Y_l^m(θ, φ), which is a function defined on S². The quantum numbers l and m specify the pattern on the sphere. **[A]**
 
-The quantization condition: the wavefunction must be single-valued on S². A wave that traverses the sphere must return to its starting value. If it doesn't close on itself, it destructively interferes and the state doesn't exist. **[A]**
+Angular wavefunctions are single-valued and satisfy the relevant boundary and
+eigenvalue conditions. Together with the Schrödinger equation and representation
+theory, these conditions yield discrete angular quantum numbers. This is not a
+proof of an Emergentist closure law. **[A] for standard quantum mechanics**
 
-### 2.2 D6 ≡ D0 at the Atomic Scale
+### 2.2 The former D6/D0 atomic correspondence `[C]`
 
-**Proposition 2.1 (Shell quantization as topological closure).** The quantization of electron energy levels is the topological requirement that standing waves close on S². This is D6 ≡ D0 — the dimensional closure — applied at the atomic scale: the wave that starts at a point on S² must return to that point after traversing the sphere. Only waves satisfying this closure condition exist as stable states. **[C]**
+The earlier manuscript equated single-valued angular states with literal
+D6/D0 identity. That inference is invalid: a boundary condition in a quantum
+eigenproblem does not establish the ontology or return edge of another model.
+The correspondence is withdrawn; standard shell quantization stands on its own.
 
 The allowed angular momentum quantum numbers l = 0, 1, 2, ... count the number of nodal lines on S². Each l corresponds to a family of (2l+1) spherical harmonics, representing (2l+1) independent standing wave patterns with l nodal lines. With spin degeneracy (factor of 2), each l level accommodates 2(2l+1) electrons. **[A]**
 
@@ -224,13 +230,16 @@ This paper is falsified if:
 
 ---
 
-*Paper C | The Photon as Unit of Account | Menexus GmbH | 2026*
+*Paper C | The Photon as Unit of Account | Emergentism research corpus | 2026*
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [A] physics | [I] interpretive readings | [C] conjectures
 2. **Depends on:** Paper A, Paper B

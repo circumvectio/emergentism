@@ -1,36 +1,17 @@
-# Public deployment boundary for emergentism.org.
-#
-# Vercel deploys from this directory. Keep source/control/tooling files out of
-# the uploaded static site; the repository copy remains authoritative.
-
-# Frozen app source pending AIA migration; not a public production surface.
+# Vercel receives only the inputs required to build the deny-by-default release.
+90_ARCHIVE/
+_archive/
+**/_archive/
 book-pwa/
-
-# Source/control bundles and local/generated tooling.
 docs/
-__pycache__/
-*.pyc
-*.py
-*.sh
-*.md
-
-# Amrita route: dev-only tooling/tests, not part of the shipped page.
-amrita/tools/
-amrita/runaway.test.mjs
-
-# Deploy-cuts + boundary hardening (audit 2026-07-04).
-# NOTE: gitignore syntax — one pattern per line, no trailing inline comments.
-# internal build partials (dev commentary):
-partials/
-# internal specs, plans, audit reports:
 _PLANS/
-# Vercel build output / project config:
+_STAGING_COMPASS_RESTRUCTURE/
+audit_receipts/
+__pycache__/
 .vercel/
-# unused three.js addons (referenced by zero pages):
-vendor/three-0.160.0/postprocessing/
-vendor/three-0.160.0/shaders/
-
-# Local runtime state if present in the deploy checkout.
+.release/
+output/
+.git/
 .env
 .env.*
 *.db
@@ -40,10 +21,12 @@ vendor/three-0.160.0/shaders/
 node_modules/
 .next/
 dist/
-build/
-# /build/ is a PUBLIC WING (the 7-wing restructure), not a build artifact — re-include it:
-!build/
-!build/**
 
-# Archive directories — old versions preserved per K3, not deployed
-_archive/
+# Source prose and local commands are not publication artifacts.
+*.md
+*.sh
+
+# Python is excluded except for the deterministic build and its gate.
+*.py
+!build_release.py
+!predeploy_check.py

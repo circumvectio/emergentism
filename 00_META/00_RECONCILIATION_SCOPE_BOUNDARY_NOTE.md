@@ -3,13 +3,12 @@ rosetta:
   primary_column: "Meta"
   register: "[I]"
   canonical_phrase: "Reconciliation Scope Boundary Note"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # RECONCILIATION SCOPE BOUNDARY NOTE
 
 **Evidence tier:** [I]
-*Organism document. Interpretive operational content. Bounded by current system state.*
+*Corpus document. Interpretive methodological content; source owners remain authoritative.*
 
 
 **Status:** Hardening source note -- scope discipline
@@ -87,7 +86,10 @@ The shortest safe compression is:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

@@ -23,8 +23,8 @@ rosetta:
 **Status:** Canonical epistemic bridge for first-person evidence
 **Date:** 2026-04-14
 **Evidence Tier:** [I/A] Interpretive inside the core state; partially supported by established neurophenomenology, interoceptive systemic awareness research, and contemplative science literatures
-**Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
-**See also:** [The Replication Protocol](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_REPLICATION_PROTOCOL.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
+**Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+**See also:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
 
 ---
 
@@ -184,7 +184,10 @@ This sentence may be reused verbatim.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. Do not treat first-person disclosure as a shortcut around evidence tiers.
 2. Do not treat doctrine as prior to disclosure.

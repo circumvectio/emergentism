@@ -5,124 +5,48 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[s]"
-  canonical_phrase: "η Disambiguation"
+  register: "[A/S/I]"
+  canonical_phrase: "One symbol, one quantity, one declared protocol"
+title: "η and Complexity — Disambiguation"
+status: "ACTIVE KINTSUGI SUCCESSOR"
+evidence_tier: "[A] standard K(x); [S] typed notation; [I] Emergentist measurement choice."
+supersedes_blob: "c498b1428bbccda3ce8127a03faca01d1805ec46"
 ---
 
-# η Disambiguation
+# η and Complexity — Disambiguation
 
-**Status:** CANONICAL — referenced by all documents using η
-**Date:** 2026-03-23 (updated after audit)
+> **[金] Crack:** the former owner confused `η`, `K*`, an extraction ratio,
+> selection complexity, self-containment, geometry, and morality. **Repair:**
+> every symbol has one typed use and no moral verdict follows from a scalar.
 
----
+## Canonical notation
 
-The symbol η carries three distinct meanings across the Emergentism framework. This document disambiguates and establishes the convention.
+| Symbol | Meaning | Standing |
+|---|---|---|
+| `etaObserved` | scoped, protocol-defined observed extraction or harm magnitude; `Number or unknown` | `[S/I]` measurement contract |
+| `r_take_give` | optional extraction/contribution ratio with declared units and zero-denominator rule | application-specific |
+| `K_sel(A)` | declared code length for selecting an element of finite alternative set `A`, when useful | `[A/S]` after coding choice |
+| `K_U(x)` | standard prefix/plain Kolmogorov complexity relative to named universal machine `U` | `[A]` theory; generally uncomputable |
 
-## Convention
+Bare `η` may appear in prose as shorthand for `etaObserved` only when the
+boundary, horizon, protocol, units, uncertainty, affected bearers, payers, and
+beneficiaries are locally recoverable. Otherwise write the full field name.
 
-**Bare η = extraction coefficient** (the dominant usage, ~87% of instances). No subscript needed for this sense — it is the default.
+`etaObserved=0` means no extraction was detected in the declared scope. It is
+necessary but insufficient for Justice. `etaObserved>0` defeats Justice for
+that scope; `unknown` prevents a positive classification. Geometry does not
+require zero extraction, and real one-shot extraction can benefit an extractor.
 
-**K*_sel = selection complexity** (minority usage, appears only in Correspondence 21 Corollary 4.2). Always subscripted to distinguish from the default.
+`r_take_give=1` means equality of two measured quantities. It is not goodness,
+balance, or `etaObserved=0`. Selection code length and Kolmogorov complexity do
+not measure extraction and are never written as `η`.
 
-**K(x) = standard Kolmogorov complexity** (Kolmogorov 1965, Chaitin 1966). Never written as η — always K(x) or K_C to avoid confusion.
+No value of any of these quantities proves self-containment, ontological
+grounding, a shortest dictionary, or the Crown Wager. Comparative compression
+requires a fixed language, decoder, side information, task, comparator, and
+kill criterion.
 
----
-
-## Sense 1: Extraction Coefficient — η (default, no subscript needed)
-
-**Definition:** The aggregate extraction in an exchange or system. η = 0 means no party extracts value the other does not comprehend (zero extraction). η > 0 means structural parasitism — one party extracts at the other's expense.
-
-**Formal definition (from Convergence 24):**
-
-$$K^* = \sum_{i=1}^{N} \max(0, \Delta\nu_i^{\text{ext}})$$
-
-**Used in:** Convergence 24 (Strategic Exclusion), Proof 2 (Power-Max Corollary), Packet F2 (Extraction Coefficient), Packet F7 (Coordination Theorem), PD_10 (Is-Ought), Kill Criteria, Glossary, and ~87% of all η references across the framework.
-
-**Status:** [S] Structural — well-defined within the game-theoretic framework.
-
-**Key results:**
-- η = 0 is the enforced conditional equilibrium at the equator (Convergence 24, Theorem 4.2; bounded by the EFR 33 / Green-Laffont caveat)
-- η > 0 is self-defeating — extraction strategies are strictly dominated (Convergence 24, Theorem 3.1)
-- η = 0 is structural, not moral — it's what the geometry requires, not what a commandment demands
-
----
-
-## Sense 2: Selection Complexity — K*_sel (always subscripted)
-
-**Definition:** The number of bits required to select a specific structure from a set of alternatives.
-
-$$K^*_{\text{sel}} = \log_2(|\text{alternatives}|)$$
-
-When there is exactly one alternative (up to isomorphism), K*_sel = 0.
-
-**Used in:** Correspondence 21 (Triadic Stability), Corollary 4.2 ONLY.
-
-**Status:** [I] Interpretive — resembles but is NOT standard Kolmogorov complexity.
-
-**Critical distinction:**
-- K*_sel measures how many bits to SELECT a structure from alternatives
-- K(x) measures how many bits to DESCRIBE a structure
-- A unique structure has K*_sel = 0 (nothing to choose from) but K(x) > 0 (still needs description)
-- The framework's early documents sometimes conflated these — this is the error the disambiguation corrects
-
----
-
-## Sense 3: Standard Kolmogorov Complexity — K(x) or K_C (never written as η)
-
-**Definition:** The length of the shortest Turing machine that outputs a given string (Kolmogorov 1965, Chaitin 1966).
-
-**Used in:** Paper 3 (Irrationals — correctly distinguished in v2.0), Packet F3 (Kolmogorov Zero — needs revision, currently in REJECT category).
-
-**Status:** [S] Established — this is standard information theory, not framework-specific.
-
-**IMPORTANT:** K(x) ≠ K*_sel ≠ η. These are three different quantities. When citing Kolmogorov complexity, use K(x) or K_C, never bare η.
-
----
-
-## Quick Reference
-
-| Symbol | Meaning | Default? | Subscript? | Tier |
-|--------|---------|----------|-----------|------|
-| η | Extraction coefficient | YES — default usage | No subscript needed | [S] |
-| K*_sel | Selection complexity | No — minority usage | Always subscripted | [I] |
-| K(x) | Standard Kolmogorov complexity | No | Different notation entirely | [S] |
-
----
-
-## The Unifying Concept: Self-Containment
-
-All three η senses measure the same thing at different scales: **the amount of external information required.**
-
-| Scale | η = 0 means | Self-containment of... |
-|-------|-------------|----------------------|
-| Exchange (Convergence 24) | No external mediator needed | The transaction |
-| Description (F8 Gödel) | No external definitions needed | The axiom set |
-| Ground (F3 Wolfram) | No external cause needed | The ontological structure |
-
-Zero-Sum Resolution Equation is K-minimal: the shortest self-contained description, because it is the unique equation that requires no external definitions. The terms define each other. The equation IS its own dictionary. See `15_EFR_WOLFRAM_NKS_INTEGRATION.md` §1.3 for the formal development.
-
----
-
-φ · ν = 1
-
-Zero-Sum Resolution Equation
-
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+Read measurement semantics in
+[`12_EFR_EXTRACTION_COEFFICIENT.md`](12_EFR_EXTRACTION_COEFFICIENT.md) and moral
+classification in
+[`Objective Morals and Ethics`](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).

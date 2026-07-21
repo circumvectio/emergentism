@@ -7,9 +7,9 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I] boundary-role relation; [S] where marked; the identity is dead"
 title: "D6 — The Return (the recognition, not a rung)"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
 ---
@@ -26,6 +26,22 @@ parents:
 > contradiction; Dead Forms row 8). The ouroboros does not swallow its tail. It bites at "~".
 
 ---
+
+## §0 · THE MODEL — no new model; a return relation
+
+D6 adds no positive model. It reuses the D0 Titan frame only through two
+non-`μ`, noncausal interpretive edges:
+
+```text
+b₆ : D5 ↝ D6       exit / recognition
+r₆ : D6 ↝ D0       return to the frame grammar
+```
+
+The emblem is encountered after the climb, with the intervening record still
+present. That supports an `[I]` spiral image—same token, changed reading—not
+identity, recurrence, self-similarity, or a closed causal loop. If a new
+positive freedom is found, the scaffold is revised; D6 is not defended as a
+ceiling.
 
 ## §1 · THE MOVES
 
@@ -64,7 +80,7 @@ parents:
   governance and pedagogy, not a solution to the Liar.
 - **The completeness temptation.** The pull, at the top of any ladder, to declare the
   system total — CTMU-style closure, "the framework explains the framework." **Cure: the
-  tautology is the frame, not the content** (settled ruling, K2 2026-07-12). A
+  tautology is the frame, not the content** (settled analytic/empirical boundary). A
   tautological chart identity carries no contingent world-content; this does not
   imply that every necessary truth is empty. Contentful world-claims can still lose.
   Named open debts stay open: consciousness, Born weights, why this world, μ-saturation.

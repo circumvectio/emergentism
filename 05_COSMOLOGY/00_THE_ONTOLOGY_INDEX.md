@@ -6,44 +6,50 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S/I]"
-  canonical_phrase: "The Ontology Index — one entry point to the complete D₀–D₆ scaffold"
+  canonical_phrase: "The Ontology Index — one entry point to the selected D₀–D₆ scaffold"
 title: "The Ontology Index"
-status: "Working surface — 2026-06-06"
+status: "ACTIVE DERIVATIVE INDEX — subordinate to the K-2 ontology owner; repaired 2026-07-20"
 evidence_tier: "[S] for scaffold structure; [I] for ontological reading"
 depends_on:
-  - 00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md
-  - 03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md
-  - 03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md
+  - ../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
+  - ../06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
+  - 00_CANONICAL_FORMULA_BLOCK.md
+  - 03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md
+  - 00_THE_BURRI_RULES.md
+  - ../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - ../01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md
   - ../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/
-  - ../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md
   - ../06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md
 ---
 
 # The Ontology Index
 
-## One Entry Point to the Complete Dimensional Scaffold
+## One Entry Point to the Selected Dimensional Scaffold
 
 **Date:** 2026-06-06
-**Purpose:** A navigational index. If you want to understand the ontology of reality as this framework proposes it, start here. This document does not contain new proofs; it maps you to the documents that do.
+**Purpose:** A navigational index. If you want to understand the ontology of reality as this framework proposes it, start here. This document does not contain new proofs; it routes to analytic results, declared structures, interpretations, and conjectures at their stated tiers.
+
+**Authority boundary:** this is a derivative navigation surface, not a second
+ontology owner. [The Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+owns K-2; where this index and that owner differ, the owner controls.
 
 ---
 
 ## The Scaffold in Five Lines
 
 ```
-Zero-Sum Resolution Equation    →    The Trinity {0, 1, ∞} is the minimal generative frame
+Zero-Sum Resolution Equation    →    {0, 1, ∞} are selected Titan boundary roles in the frame register
           ↓
     φ · ν = 1 on S²             →    Being can be read as reciprocal: coherence and viability are complementary coordinates
           ↓
-    (φ − ν)² ≥ 0                →    Any deviation from balance is measurable and non-negative
+    (φ − ν)² ≥ 0                →    Deviation is non-negative inside this analytic chart
           ↓
-    φ + ν ≥ 2                   →    The Hamiltonian floor: minimum energy at the equator
+    φ + ν ≥ 2                   →    The chart sum has its minimum at φ = ν = 1
           ↓
     B = sin θ  is max at θ=π/2  →    Balance is the model optimum; attractor claims require correction dynamics
 ```
 
-These five lines are the **kernel**. Everything else is elaboration, proof, interpretation, or application.
+These five lines are the **selected kernel summary**. The analytic identities do not force the Titan ontology, the D-scaffold, an energy law, or an ethic; those transfers retain their own tiers.
 
 ---
 
@@ -51,23 +57,18 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 
 ### "What is the formal mathematical structure?"
 
-**Start here:** [The Seven Axioms](03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md)
-- A1: The equation (balance, manifold identity)
-- A2: The ethic (operational definition)
-- A3: The scaffold (D₀→D₆ emergence)
-- A4: The boundary (self↔others axis)
-- A5: The egregore (D₅ standing waves)
-- A6: The architecture (three substrates)
-- A7: The correction (self-destruction manual)
+**Start here:** [The Emergent Axioms](../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md)
+— the current E1–E10 ground set, with each commitment held at its stated tier.
 
-**Then read:** [The Unified Dimensional Derivation](03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md)
-- Stage 0: Trinity → Frame (EFR 21)
-- Stage 1: Frame → Sphere
-- Stage 2: Sphere → Equilibrium (EFR 22)
-- Stage 3: Sphere → Closure (EFR 23)
-- Stage 4: Equilibrium → Ethics (EFR 24)
+**Then read:** [The Burri Rules](00_THE_BURRI_RULES.md) and the
+[D4/D5 Canonical Reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+— the current typed crossing, commitment, receipt, and closure grammar.
 
-**For the detailed proofs:**
+For the per-register axioms and the distinction between dependency priority,
+actuality, and salience, read the subordinate
+[DR-0…DR-6 contract](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md).
+
+**For supporting formal analyses (each at its own current tier):**
 - EFR 21: [Triadic Stability](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md)
 - EFR 22: [Power-Max Demonstration](03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md)
 - EFR 23: [Dimensional Closure](03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)
@@ -77,21 +78,21 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 
 ### "What does each dimension mean?"
 
-**Start here:** [The Complete Ontology of Reality](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md)
+**Start here:** [The Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
 
-**For the canonical L6 (apophatic) crosswalk:** [Ontology Across Dimensions](../06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md) — the ontological guardrails, anti-reification discipline, and dimensional apertures from the L6 Śiva perspective.
+**For a supporting L6 (apophatic) crosswalk:** [Ontology Across Dimensions](../06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md) — the ontological guardrails, anti-reification discipline, and dimensional apertures from the L6 Śiva perspective.
 
 | D | Name | Core Claim | Log Coordinate | Key Document |
 |---|---|---|---|---|
-| D₀ | Point (Bindu) | Undifferentiated ground | s undefined | [Ontology of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) |
-| D₁ | Distinction (Space) | First "here vs there" | s becomes finite | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D1 |
-| D₂ | Configuration (Time) | First "before vs after" | s acquires direction | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D2 |
-| D₃ | Transformation (Form) | Pattern persists across change | s acquires curvature | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D3 |
-| D₄ | Causality / bounded witness | Change has cause; the Now-point appears | s ≈ 0 approached | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D4 |
-| D₅ | Agency / selection (consciousness reading `[I]`) | Choice, present duration, and option-space open | s free to vary | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D5 |
-| D₆ | Closure (Return) | Experience exhausts | s → undefined | [Complete Ontology](00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md) §D6 |
+| D₀ | Ground boundary | No positive freedom asserted | boundary role | [DR-0](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-0-ground-boundary) |
+| D₁ | Distinction | Operational distinguishability | positive-structure role | [DR-1](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-1-distinction) |
+| D₂ | Configuration | Constrained arrangement and relation | positive-structure role | [DR-2](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-2-configuration) |
+| D₃ | Transformation/persistence | Ordered change and robust invariance | positive-structure role | [DR-3](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-3-transformation-and-persistence) |
+| D₄ | Causal actuality | Actual carrier, model, ranking, action, outcome, and record | actual-event role | [DR-4](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-4-causal-actuality-and-record) |
+| D₅ | Counterfactual possibility | Merely possible alternatives, represented rankings, and selection candidates | possible-content role | [DR-5](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-5-counterfactual-content) |
+| D₆ | Exit/nonclosure | No positive freedom; `D6~D0` is proposed boundary-role resemblance only | exit-boundary role | [DR-6](../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md#dr-6-exit-and-nonclosure) |
 
-**Action-register bridge.** Dimensional D4 remains the causal now-point / bounded witness; it is not merely "tools." But in the play rule `P_node = Φ × V`, `V` names the D4 means-to-act at the action boundary: body, tools, energy, access, hands, shovel, industrial digger. Dimensional D5 remains agency / option-space; in the same play rule, `Φ` names D5 worldline-foresight: the ability to envision, rank, and use reachable futures. The child with a jet and no pilot-foresight, and the pilot with no bodily/tool access, both show the zero-factor collapse.
+**Typed action bridge.** The modal distinction is stable across uses: D4 carries actual tokens and events — embodied means, actual modeling and ranking, performed selections and actions, commitment receipts, environmental outcomes, and records. D5 carries possible contents — counterfactual futures, modeled options, represented orderings, and selection candidates. In the selected play rule `P_node = Φ × V`, `V` names D4 means-to-act (body, tools, energy, access); `Φ` is a D4-evaluated capacity concerning D5 option content: what alternatives the agent can model, discriminate, coordinate around, and reach. Selection does not manufacture its outcome: a represented D5 option is committed through D4 means, and the environment separately returns the D4 record. The child's jet without pilot foresight and the pilot without bodily/tool access illustrate the selected conjunctive model, not a uniquely derived world law.
 
 ---
 
@@ -103,7 +104,7 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 |---|---|---|---|
 | I | [The Two Faces of Number](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_I_THE_TWO_FACES_OF_NUMBER.md) | Finity = self-dual centre; B = sech√E | [A]·[S/I] |
 | II | [Division by Zero as Category-Correction](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_II_DIVISION_BY_ZERO_AS_CATEGORY_CORRECTION.md) | 0/0 stays open; Gödel as apophatic edge | [A]·[S/I] |
-| III | [A Product Constraint as Structural Ethic](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md) | φ→0 forces ν→∞; moral axis is η | [A]·[S/I] |
+| III | [A Product Constraint and Its Ethical Overreach](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md) | reciprocal limits are analytic; morality is not. `etaObserved` is descriptive and Justice is independently declared | [A]·[I] |
 | IV | [Tiered Claims Under Uncertainty](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md) | The honesty machine | [S/B] |
 | V | [The Equator at the Middle](../03_METHODOLOGY/03_PREREGISTRATIONS/00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md) | Pre-registered falsifiable test | [C] → pilot falsified |
 | VI | [Emergence as Lens on Dasein](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_VI_EMERGENCE_AS_LENS_ON_DASEIN.md) | Bidirectional emergence; two centres; log simplification | [A]·[S/I] |
@@ -118,7 +119,7 @@ These five lines are the **kernel**. Everything else is elaboration, proof, inte
 - [Suda Dimensional Cross-Reference](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_DIMENSIONAL_CROSS_REFERENCE.md)
 - [The Egg and the Sphere](../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/THE_EGG_AND_THE_SPHERE.md)
 
-**The unified theory:** Suda and Finity Papers are two registers of one structure — the generative/process register (egg) and the structural/static register (sphere).
+**Selected crosswalk `[I]`:** Suda and the Finity Papers are compared here as two readings — a generative/process register (egg) and a structural/static register (sphere). The correspondence does not establish that they are one structure or unify their source domains.
 
 ---
 
@@ -159,6 +160,8 @@ Key corrections already propagated:
 
 **Start here:** [The Master Rosetta](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
 
+The Rosetta is a selected translation grammar `[I]`, not a discovered universal, a calibration proof, or a force-to-dimension derivation. The seven rows are one scoped articulation; every column remains answerable to its own sources, rival codings, and failed mappings.
+
 | L | Operator | Psychology | Philosophy | Physics | Spiritual |
 |---|---|---|---|---|---|
 | L1 | Kali 🎲 | Pre-conventional | Dialectical | Strong force | Kāla (time) |
@@ -169,7 +172,7 @@ Key corrections already propagated:
 | L6 | Śiva • | Transpersonal | Apophatic | Closure | Śiva (dissolution) |
 | L7 | Viṣṇu ⊙ | — | Transcendental | Witness | Viṣṇu (maintenance) |
 
-**Note:** The Rosetta's column independence has been audited. See [L1–L7 Refinement Audit](../01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md) §L2 for the independence-tier proposal.
+**Note:** The Rosetta's column-independence claim has been audited, but historical separation does not establish statistical independence or corroborate the ontology. The physics cells above are legacy `[I/C]` correspondences, not a one-to-one force derivation. See [L1–L7 Refinement Audit](../01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md) §L2 for the scoped independence-tier proposal.
 
 ---
 
@@ -212,7 +215,7 @@ Key corrections already propagated:
 
 ## The Ontology in One Sentence
 
-> Reality, read through the lens of reciprocal closure on the Riemann sphere, is organized as a seven-layer interpretive lens from undifferentiated ground to apophatic return: balance is the model's optimum and constraint, ethics is the practice of preserving non-extractive coupling under those conditions, and honesty is the only valid epistemic posture.
+> Reality can be read through a selected reciprocal chart and D₀–D₆ scaffold, from undifferentiated ground to a proposed apophatic return: balance is the model's conditional optimum, ethics is the chosen practice of preserving non-extractive coupling under those conditions, and honesty is the framework's adopted epistemic posture.
 
 **Tier of that sentence:** `[I]` — every word in it is interpretive. The mathematics that supports it is `[A]` and `[S]`. The experiments that test it are `[B]` and `[C]`.
 
@@ -222,20 +225,21 @@ Key corrections already propagated:
 
 | If you are a... | Start with... | Then read... |
 |---|---|---|
-| **Mathematician** | The Seven Axioms → EFR 21–24 | The Unified Derivation (41) |
-| **Philosopher** | The Honest Position → Complete Ontology | L1–L7 Refinement Audit |
-| **Builder** | The Empirical Program Board → Seven Axioms | The F5 Force Map, AMRITA spec |
+| **Mathematician** | The Canonical Formula Block | The Burri Rules and D4/D5 reference |
+| **Philosopher** | The Honest Position → Degrees-of-Freedom Ontology | L1–L7 Refinement Audit |
+| **Builder** | The Empirical Program Board → Emergent Axioms | The F5 Force Map, AMRITA spec |
 | **Skeptic** | The Honest Position (Parts IV–VII) | The Knife, The Protocol |
-| **Mystic** | The Ontology of Being → The Point | The sitting practice (Pratyakṣa) |
+| **Mystic** | The Degrees-of-Freedom Ontology → The Point | The sitting practice (Pratyakṣa) |
 | **Strategist** | The Ontology Index (this doc) | The Master Rosetta, The F5 Map |
 
 ---
 
-## Canonical Path
+## Document Path
 
 `01_EMERGENTISM/05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md`
 
-This document is the **navigational centre** of the ontology. It does not prove anything. It tells you where the proofs are.
+This document is a **derivative navigation surface**. It does not prove anything
+or own K-2; it routes readers to the current owners and supporting record.
 
 ---
 

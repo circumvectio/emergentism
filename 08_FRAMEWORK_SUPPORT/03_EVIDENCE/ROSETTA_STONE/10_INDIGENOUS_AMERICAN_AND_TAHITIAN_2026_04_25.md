@@ -249,7 +249,13 @@ After this sweep, the V-bis canonical column has **6 entries**: 5 Indo-European/
 
 **The framework's strongest defensible claim post-this-sweep:**
 
-> The operator grammar (4 Gods + 3 Titans on S²) is structurally exhaustive. The 7-stage articulation with clean mirror symmetry around L4 converges in **polarity-encoding traditions** — five Indo-European/Mediterranean + one Indigenous American candidate (Lakota, pending verification). Most other surveyed traditions either lack 7-grade structure entirely (Mesoamerican, Iroquois, Sub-Saharan, most Polynesian) OR are 7-graded with non-mirror-symmetric (monotonic-accumulation) structure (Tahitian arioi). The mirror-symmetric subset is small but well-defined; the framework documents both successes and failures via published transparency receipts.
+> The selected G7 vocabulary (four move labels plus three frame labels) is a
+> scoped Emergentist comparison lens, not a structurally exhaustive ontology.
+> Seven-stage articulation with mirror symmetry appears in a bounded set of
+> polarity-encoding traditions in this survey; the Lakota comparison remains
+> pending specialist verification. Other surveyed traditions use different
+> counts or non-mirror structures. These outcomes limit the Rosetta's scope;
+> they do not validate G7 or transfer proof between domains.
 
 This is a *much smaller* claim than "all human knowledge converges on 7 stages," and *much more defensible* because every test produces a documented receipt — pass or fail.
 

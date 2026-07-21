@@ -14,7 +14,7 @@ rosetta:
 **Version:** v2026.04.04
 **Date:** 2026-04-04
 **Evidence Tier:** [I] Interpretive → [S] Structural (some of these are derivable, not just suggested)
-**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md), [05_EXHAUSTIVE_OBSERVATIONS.md](05_EXHAUSTIVE_OBSERVATIONS.md)
+**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md). The former exhaustive-observations source is [archived genealogy](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/05_EXHAUSTIVE_OBSERVATIONS.md), not active authority.
 
 ---
 
@@ -150,7 +150,10 @@ These are not additions to the framework. They are proposed implications of the 
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I] Interpretive to [S] Structural
 2. **Depends on:** 00_A_SQUARE_CANNOT_BE_NEGATIVE.md, 05_EXHAUSTIVE_OBSERVATIONS.md

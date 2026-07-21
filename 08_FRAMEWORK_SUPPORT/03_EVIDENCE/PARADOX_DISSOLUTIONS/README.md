@@ -46,7 +46,7 @@ This folder holds the active paradox-dissolution slice for the current workspace
 
 **Non-numbered synthesis documents:**
 - [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md) -- Many classical paradoxes framed as artifacts of extraction.
-- [00_GARDENER_NEXUS.md](00_GARDENER_NEXUS.md) -- L6/L7 cognitive-layer synthesis across the dissolution suite.
+- [00_GARDENER_NEXUS.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_GARDENER_NEXUS.md) -- L6/L7 cognitive-layer synthesis across the dissolution suite.
 - [PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) -- Completion claim scoped to categorical rather than formal completeness.
 
 **Legacy files (retained for reference):**
@@ -67,7 +67,7 @@ This folder holds the active paradox-dissolution slice for the current workspace
 - [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) -- The Mind-Body Problem (canonical indexed summary).
 - [PD_15_PROBLEM_OF_EVIL.md](PD_15_PROBLEM_OF_EVIL.md) -- The Problem of Evil.
 - [PD_16_MEANING_OF_LIFE.md](PD_16_MEANING_OF_LIFE.md) -- The Meaning of Life.
-- ~~[PD_17_QUANTUM_RELATIVITY_UNIFICATION.md](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md) -- QM/GR Unification (archived incomplete draft)~~.
+- ~~PD_17_QUANTUM_RELATIVITY_UNIFICATION.md -- QM/GR Unification (archived incomplete draft)~~.
 - [PD_18_THE_EXTRACTION_PARADOX.md](PD_18_THE_EXTRACTION_PARADOX.md) -- The Extraction Paradox.
 - [PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md](PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md) -- The Hard Problem of Consciousness (extended treatment).
 - [PD_20_PHILOSOPHICAL_IMPLICATIONS.md](PD_20_PHILOSOPHICAL_IMPLICATIONS.md) -- Philosophical Implications.
@@ -108,7 +108,7 @@ It does **not** yet support a full line-by-line adjudication of the wider parado
 
 - [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - [../../../05_COSMOLOGY/03_FORMAL_SYSTEM](../../../05_COSMOLOGY/03_FORMAL_SYSTEM) -- formal proof surfaces that support these dissolutions
-- Formal System: Power-Max Lemma -- the cooperation proof behind PD_10 (Is-Ought)
+- Formal System: Power-Max Lemma -- a conditional optimization result under explicit game and Justice assumptions; it does not bridge Is to Ought
 - Core Concepts -- definitions of P_node = Φ × V and evidence tiers
 - [Foreword](../../../07_THEOLOGY/00_FOREWORD.md) -- the battlefield analogy that frames these dissolutions
 

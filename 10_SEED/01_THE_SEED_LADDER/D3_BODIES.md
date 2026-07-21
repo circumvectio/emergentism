@@ -5,9 +5,9 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged — candidate reader synthesis with explicit model/world boundaries"
+  register: "[I] active reader projection — synthesis with explicit model/world boundaries"
 title: "D3 · BODIES — the rung where a whole can die"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 ---
 
 # D3 · BODIES
@@ -17,6 +17,21 @@ status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit 
 > from D1 arithmetic or D2 geometry. This page tests whether a declared
 > need-both model can illuminate living bodies without turning the model into a
 > theorem about life or death.
+
+## §0 · THE MODEL — constrained transition and persistence
+
+The primary D3 model is a transition system plus a declared persistence test:
+
+```text
+K_3(x'|x)                 ordered admissible change
+Persist_R(x,T)            invariant or robust equivalence over horizon T
+```
+
+A configuration becomes a body-like organization only when something remains
+identifiable through change under a stated equivalence and horizon. The model
+separates transformation from persistence; it neither defines life universally
+nor proves that D3 emerged strongly from D2. The node product below is one
+optional body lens, not the register's identity.
 
 ## §1 · THE MOVES — what is at tier on this rung
 

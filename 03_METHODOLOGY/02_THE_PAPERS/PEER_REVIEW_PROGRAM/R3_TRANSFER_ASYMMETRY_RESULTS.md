@@ -132,7 +132,13 @@ TAKE     6730      4825       0.0        0.644      100.3
 
 **F10 — Correction to v1's F4: RANDOM's gain is mostly a boundary artifact.** [A, model-internal] RANDOM > NONE persists *unchanged* under linear welfare (1.044) where the Jensen explanation predicts zero gain. The actual mechanism: payment clipping at the absorbing wall — near-dead donors pay less than recipients receive (min(θ+Δ, π)), a small free lunch harvested from the boundary, growing with volume (B: RANDOM rises with K). v1's "mid-distribution transfers keep the Jensen gain" is hereby demoted: at these parameters the concavity contribution to RANDOM is ≈ 0. The honest ledger now contains a self-correction of a self-correction — recorded with some satisfaction.
 
-**F11 — The objective is morally load-bearing: maximin reverses the verdict on giving.** [A, model-internal] Under sum welfare-time, GIVE-to-poorest is the worst redistribution policy; under Rawlsian maximin it is the *best* by an order of magnitude (worst-off lifetime welfare 65.5 vs 6.8) at unchanged total lifespan. The triage inversion is objective-relative: "naive" giving is exactly what a maximin evaluator should choose. Corpus consequence: ΣΔP > 0 is a sum-type objective, and the corpus should say so explicitly — sum and maximin *disagree about Arjuna*, and the disagreement is now quantified.
+**F11 — The selected objective is verdict-load-bearing inside the model, not
+morally self-authorizing.** [A, model-internal] Under sum welfare-time,
+GIVE-to-poorest is the worst redistribution policy; under Rawlsian maximin it is
+the *best* by an order of magnitude (worst-off lifetime welfare 65.5 vs 6.8) at
+unchanged total lifespan. The inversion proves that sum and maximin disagree.
+Corpus consequence: no aggregate can supply the moral verdict; the normative
+boundary and Justice commitments must be declared separately.
 
 **F12 — Per-capita averaging endorses extraction.** [A, model-internal] TAKE nearly doubles mean per-living-capita welfare (0.644 vs 0.336) by killing the depleted — while halving total lifespan and zeroing the Rawlsian floor. Any evaluator scoring mean welfare of survivors would select the extraction policy. This is survivorship bias as a policy instrument, generated in 100 lines of Python; the paper must flag it as a warning about per-capita metrics under mortality.
 

@@ -5,16 +5,15 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[D] staged — one-page compression of the game rung for the stranger (Dasein reference)"
+  register: "[I] active reader projection — one-page compression of the game rung for the stranger (Dasein reference)"
 title: "D5 — The Game: strategic relation, the dyadic grid, and the vow"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md (§4 G7, §5 registers)
-  - ../../00_THE_AMRITA.md (§I.B.11–14, §II P2/P6)
+  - ../../00_THE_WELTANSCHAUUNG.md
+  - ../../07_THEOLOGY/00_THE_AMRITA.md
   - ../../04_AXIOLOGY/00_THE_EXTRACTION_LAW.md (η-gate)
   - ../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md
-  - ../../04_AXIOLOGY/02_VALUE_THEORY/02_THE_SYNTROPIC_GRID_PENDING_K2.md
-  - ../../00_META/ROSETTA_FORMAL/ROSETTA_D5_GAMESPACE_FORMAL_AUDIT_2026_07_18.md
+  - ../../05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md
 ---
 
 # D5 · The Game
@@ -26,6 +25,22 @@ parents:
 > selects the game in which the conditional lemma applies.
 
 ---
+
+## §0 · THE MODEL — the option-cone game
+
+The primary D5 model is a field of merely possible contents organized by an
+actual D4 agent:
+
+```text
+actual D4 model token ──represents/ranks──▶ D5 option field
+actual D4 means + authorization ──commit──▶ one attempted D4 action
+```
+
+The option cone is the subset of admissible histories an agent can model,
+rank, coordinate around, and reach under current constraints. It is not a
+physical light cone and does not exceed `c`. The contents are D5; imagining,
+ranking, selecting, and committing are actual D4 events. The board displays
+the game; the Justice vow independently restricts which moves are admissible.
 
 ## §1 · THE MOVES
 
@@ -49,7 +64,7 @@ counterfeit-classification, boundary, horizon, and enforcement remain explicit
 inputs; `η` alone does not name the whole moral/ethical grid.
 
 **The canonical directional grid** `[I/S]` (with its 2026-07-19 completion still
-`[D]` pending K2) crosses direction with valence. The surface verbs *give* and
+`[D]` historical synthesis) crosses direction with valence. The surface verbs *give* and
 *take* do not determine valence: warranted receipt or a lawful cut may be
 non-extractive, while dependency-producing generosity may still extract.
 
@@ -87,7 +102,12 @@ So the "ought" is not derived. The finite being or constitution chooses the
 horizon, maximand, and enforcement that make the scoped lemma applicable. **The
 ethic remains a vow, not a theorem.**
 
-**The moralized-operator paradox.** If giving is good, is the taker evil? No — cured by *typing*: valence lives on η, never on the operator's name. A lawful cut that takes only counterfeit value is not extraction; a saccharine gift that farms dependency is. The grid, not the mask, judges.
+**The moralized-operator paradox.** If giving is good, is the taker evil? No.
+Operator names and `etaObserved` are descriptive, not moral types. The
+bearer-complete Justice envelope—including payer, beneficiary, authorization,
+consent, custody, contest, consequence, reversibility, and exit—judges the act.
+A giving label cannot rescue dependency or coercion; a taking label cannot
+condemn proportionate defense by itself.
 
 **The altruism-laundering paradox.** "The greatest good for the greatest number" can vote a bearer into the furnace. Cured by the **dyadic gate**: every impact-bearer faces the gate individually; aggregates report, they do not license.
 

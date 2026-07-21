@@ -1,102 +1,72 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Philosophy
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[C/I]"
-  canonical_phrase: "PAPER J: PROTOCOL R REFRAMED"
+title: "Paper J — Protocol R as a preregistered model comparison"
+date: 2026-07-20
+status: "ACTIVE RESEARCH PROPOSAL — not executed"
+evidence_tier: "[C] empirical hypothesis; [I] relation to the Emergentist chart"
+original_head_blob: "31ba762f3f19051d23c5b3d1140c776ae3928294"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+# Paper J — Protocol R without a new laboratory
 
-# PAPER J: PROTOCOL R REFRAMED
+## Verdict
 
-## Bistable Perception, the Necker Cube, and the Multiplicative Bound
+Existing bistable-perception and global/local-attention datasets may be able to
+test a narrow question: do two independently defined perceptual capacities show
+a stable tradeoff, and which candidate aggregation law predicts held-out data
+best? No such analysis has yet been completed here.
 
-**Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+The predecessor compared this proposal to the Born rule, called ambiguous
+perception a superposition, predicted a strict uncertainty law, and treated a
+multiplicative fit as validation of `S²`. Those inferences are withdrawn. The
+Born rule supplies no warrant for this study, and perceptual rivalry is not a
+quantum measurement claim.
 
-**Evidence Tier:** [C/I] — Meta-analysis proposal; upgrade only after real-data execution
-**Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](../00_WHAT_ACTUALLY_TESTS_THE_THEORY.md)
+## Frozen question
 
----
+Before inspecting outcomes, define two measurable proxies:
 
-## Abstract
+- `g`: accuracy or sensitivity to declared global structure;
+- `l`: accuracy or sensitivity to declared local detail.
 
-Protocol R was originally designed as a high-cost laboratory experiment intended to detect a Heisenberg-like perceptual complementarity bound ($\delta\psi \times \delta\theta \geq \kappa$) in human cognition, serving as the ultimate geometric validation of the `S²` manifold substrate.
+The labels `Φ` and `V` may be added only after those domain-native definitions
+are frozen. The primary test compares, rather than presumes, at least:
 
-This paper reframes Protocol R by asking whether some of the requisite data already exists within a century of psychological literature on **bistable perception and binocular rivalry** (e.g., the Necker cube, the duck-rabbit illusion). By analyzing timing mechanisms of bistable switching across existing studies, we can test whether alternation between semantic coherence (`Φ`) and localized target resolution (`ν`) fits the framework's multiplicative constraint better than additive alternatives. This transforms Protocol R from an expensive future hypothesis into a low-cost meta-analysis proposal. It elevates the evidence tier only if run on real datasets with preregistered criteria.
+```text
+product / inverse-tradeoff model
+additive model
+minimum or bottleneck model
+CES or other preregistered nonlinear model
+single-factor and unconstrained baselines
+```
 
-**Keywords:** Protocol R, bistable perception, Necker cube, perceptual rivalry, multiplicative bound, geometric validation.
+Models must be evaluated on held-out participants, stimuli, or studies with the
+split rule declared in advance. A product fit is not enough; it must improve
+predictive performance, calibration, and residual behavior over serious rivals.
 
----
+## Evidence plan
 
-## 1. The Core Geometric Prediction
+1. Register dataset eligibility, search strategy, exclusions, effect variables,
+   transformations, missing-data rules, and dependency handling.
+2. Obtain raw trial-level data where possible; do not infer a conservation law
+   from dwell-time distributions alone.
+3. Establish reliability and construct validity for `g` and `l` independently
+   of the desired curve.
+4. Freeze models, priors or penalties, comparison metrics, smallest effect of
+   interest, multiplicity correction, and sensitivity analyses.
+5. Report all eligible datasets, nulls, heterogeneity, and failed replications.
 
-The emergentist architecture wagers that the deep grammar of perception is mathematically continuous with the geometry of `S²`.
+## Outcomes and kill criteria
 
-Just as the Born rule dictates `|α|² + |β|² = 1` for a superposition of quantum states, human perception operates along an equatorial constraint where the product of broad integration (Coherence, `Φ`) and localized resolution (Viability, `ν`) is bounded:
-`P_perceptual = Φ_proxy × ν_proxy`
+- If `g` and `l` are not reliable separable constructs, Protocol R is
+  uninterpretable and stops.
+- If the product family does not outperform the preregistered rivals on held-out
+  data, retract the product bridge for this domain.
+- If any apparent advantage disappears under plausible operationalizations,
+  selection-bias controls, or independent replication, do not promote it.
+- Even a robust product discriminator would calibrate one perceptual model. It
+  would not prove the Burri Sphere as neural substrate, derive a universal
+  uncertainty principle, or validate the integrated Weltanschauung.
 
-**The Hypothesis:** You cannot simultaneously maximize hyper-local resolution and global structural coherence. As resolution approaches infinity, coherence approaches zero (and vice-versa). A strict mathematical uncertainty bound governs cognition.
-
----
-
-## 2. Reframing the Test: The Mistake of the "New Lab"
-
-The original, naive framing of Protocol R presumed the need to build a custom visual-tracking apparatus (estimated cost: hundreds of thousands of dollars) to artificially force subjects to alternate between 'global' and 'local' visual tasks to measure the decay curve.
-
-This may have been an error of translation. A closely related cognitive phenomenon has been extensively studied by experimental psychologists under the terminology of **Bistable Perception**.
-
-### 2.1 The Duck-Rabbit and the Necker Cube
-When a subject views an ambiguous stimulus (like the Necker cube or Rubin vase), their visual cortex alternates stochastically between two mutually exclusive perceptual interpretations.
-* They are viewing a **superposition** of semantic geometries.
-* Accessing Interpretation A (e.g., the Duck) mathematically excludes Interpretation B (e.g., the Rabbit).
-* The framework treats this as a candidate structural footprint of the brain resolving competing phase variables; that reading remains to be tested.
-
----
-
-## 3. The Meta-Analytical Execution Plan
-
-To execute Protocol R today at zero laboratory cost, we utilize the existing mathematical modeling literature regarding bistable rivalry dwell-times (commonly modeled via Gamma or Log-Normal distributions).
-
-### The Testable Metric:
-According to the framework, the transition between interpretation A and B is not a linear fade. It is an arc crossing the geometric boundary of `S²`. Therefore:
-1. Do the switching times and threshold disruptions mathematically fit a multiplicative conservation law rather than an additive one?
-2. If forced to process higher localized detail (increasing `ν_proxy`), does the dwell-time of the global semantic lock (`Φ_proxy`) decay according to the `Φ_proxy × ν_proxy = C` inverse curve?
-
-We aggregate datasets from 20+ prominent visual rivalry studies and run the multiplicative bound equation across their raw switching-time distributions.
-
----
-
-## 4. The Strategic Value of the Meta-Analysis
-
-This reframing solves one of the major "Deferred Technical Elements" mentioned in Paper I.
-
-By transitioning from *Protocol* to *Meta-Analysis*, the framework shortens one path to empirical public-tier validation. It does not prove the geometry in advance; it proposes a mathematical lens for testing whether existing sciences have already gathered data relevant to the bridge.
-
----
-
-## 5. Kill Criteria
-
-This paper and the Protocol R meta-analysis are falsified if:
-
-1. **Additive Collapse:** The raw switching times from established rivalry datasets obey a strictly additive linear constraint (`Φ_proxy + ν_proxy = C`) rather than the predicted multiplicative inverse curve (`Φ_proxy × ν_proxy = C`).
-2. **Infinite Scaling:** It is proven mathematically possible in rivalrous attention models to simultaneously increase both processing variables without bound, totally destroying the predicted complementarity limit ($\delta\psi \times \delta\theta \geq \kappa$).
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Evidence tier:** [C/I] until a real-data meta-analysis is complete.
-2. **Depends on:** The multiplicative bridge (`P_perceptual = Φ_proxy × ν_proxy`), not the invariant `P∞`.
-3. **Next action:** If prompted to design empirical validation tests, do not default to generating expensive novel laboratory setups. Sweep the existing historical literature for datasets that inadvertently map to the target geometry.
-4. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_J_PROTOCOL_R_WITHOUT_LAB.md`
-
----
-
-Zero-Sum Resolution Equation
+The proposal remains `[C]` until data, code, preregistration, and results are
+publicly auditable. The predecessor is preserved at Git blob
+`31ba762f3f19051d23c5b3d1140c776ae3928294`.

@@ -5,25 +5,37 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Executive"
   regime: "Kṣatriya"
-  register: "[D] staged-per-tier — the ledger rows are [B] dated events; per-row provenance cited; the assembly executes the K2-signed line 2026-07-20 (receipt 145)"
+  register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145)"
-date: 2026-07-20
+status: "ACTIVE — receipt 147 records pure-worldview completion and public release; historical receipts preserved"
+date: 2026-07-21
 owner: 01_EMERGENTISM
-supersedes: "the 2026-07-19 staged draft formerly at this path (same content, pre-signature) — source draft 00_K7_RECORD.md remains at root pending orchestrator tombstone"
+supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
-  - 00_K7_RECORD.md
+  - 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md
   - 00_THE_KERNEL_INDEX.md
   - 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
   - 08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/
-evidence_tier: "[B] catalog — the ledger is a record of dated events; per-row provenance cited; the assembly is [D]"
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_PAPERS_LENS_CLOSURE_2026_07_20.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/147_PURE_EMERGENTISM_KINTSUGI_COMPLETION_2026_07_21.md
+evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 ---
 
 # K-7 · The Record Ledger
 
 > **What this is.** The trial ledger — the framework's memory of every kill it fired and every grave it dug, kept legible so nothing that died can quietly come back. A scripture hides its retractions; this surface *is* the retractions. Four things live here: the **kill index with grave dates** (what was tried and buried, and when), the **living ledger** (the dated receipts), the **rules of the record** (the postures and the retelling rule), and the **receipt-prefix collision census** (so a bare № can never be misread). One rule governs the whole: **№-next is always open** — the next entry is written by contact with the world, not by us.
+
+> **Current authorization boundary (2026-07-20).** Older receipts sometimes
+> treated a private natural-person signature convention as a gate for ordinary
+> editorial, repository, or AI work. That interpretation is superseded. Such a
+> signature is relevant only when moving that private person's money or entering,
+> amending, or terminating a legal contract on that person's behalf. All other
+> work follows the user's scoped request, applicable permissions, source custody,
+> reversibility, evidence, and consequence reporting. Historical labels remain
+> below as provenance; they create no present work authority.
 
 ---
 
@@ -46,7 +58,7 @@ Full registry with per-row provenance: `00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.m
 | 5 | `φ·ν=1` as a conserved discovery | Coordinate tautology; the arithmetic *use* survives, the discovery does not. | P1 · catalog v0.1 2026-07-19 |
 | 6 | The symmetric balance *hump* as empirical law | Broken on real data (Munnell trough; GFS retracted). | P2 + Munnell empirical program 2026-07-02/03 · r126 · 2026-07-13 |
 | 7 | The squid as `η=0` witness | False-to-fact (*D. gigas* panmictic, semelparous, weak-targeting) — a counterexample, not a witness. | P3 · r126 · 2026-07-13 |
-| 8 | Literal `D6 ≡ D0` | Loop-as-equation fails; apophatic return (`∼`) survives. | r126 (A3-5) · 2026-07-13; P7; K2-8 ("∼" adopted) sign-all · 2026-07-19 |
+| 8 | Literal `D6 ≡ D0` | Loop-as-equation fails; apophatic return (`∼`) survives. | r126 (A3-5) · 2026-07-13; P7; later similarity ruling adopted · 2026-07-19 |
 | 9 | Forced Titan-3 | Inversion fixes `±1` and swaps `{0,∞}`; their union is a selected invariant frame, not ordinary closure. | C21 · r126 · 2026-07-13 |
 | 10 | Force bijection (forces ↔ lines) | Electroweak unification collapses D2/D3 above ~246 GeV. | r126 (A3-6) · 2026-07-13; P4 |
 | 11 | N=3-forced | ℤ₅ counterexample; the group lemma fails; N=3 selected, not derived. | C11, P11 · r126 · 2026-07-13 |
@@ -76,7 +88,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 |---|---|---|
 | 108 | Formal stress ledger — keel resolution | AND-class forcing, **not** the product; the "one unwon wager" is operationally weightless. |
 | 109 | Proof-layer audit — four false lemmas | Killed `φ·ν=1`=Born, the triadic group lemma, the LV "attractor," "all paths helical." |
-| 126 | Weltanschauung formal audit (K2-signed 2026-07-13) | 7 settled / 66 broken / 34 synthetic-gap; A7 survived reflexively. |
+| 126 | Weltanschauung formal audit (2026-07-13) | 7 settled / 66 broken / 34 synthetic-gap; A7 survived reflexively. |
 | 127 | Transmission doctrine | Users-not-believers; the confessing posture as strategy. |
 | 129 | Fourth posture adopted | Withdraw grafted onto deny/weaponize/confess. |
 | 130 | Rosetta algebra objection adjudicated | Split verdict — **grammar real, census selected**. |
@@ -84,18 +96,27 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 132 | Tombstones / halāhala reaudit | The planetary confound sharpens convergence-as-proof (P12). |
 | 133 | Full Rosetta council | DoF ≠ Forms correction; seven caste reports. |
 | 134 | Full-set purification audit | Seven caste verdicts; contamination inventory. (Lives as a directory — see census.) |
-| 135 | K2 promotion — Emergent Axioms | **Provisional** execution record only. |
+| 135 | Provisional promotion — Emergent Axioms | **Provisional** execution record only; later authority receipts control. |
 | 136 | Authority & completeness reconciliation | 135 is *not* completed promotion authority; A1–A7 then controlled. |
 | 137–138 | Final structure / root tidy wave 2 | Root staging → archive; forwarding stubs; one canonical home per doctrine. |
 | 139 | The signing sitting — **SIGNED** | Exists in two dated file forms (2026-07-19, 2026-07-20 — see census). Wave A signing mechanics executed 2026-07-20. |
 | 140 | Seed ladder truth-cut & stabilization | Seed-lane reconciliation, 2026-07-19. |
-| 141 / 141A | Sovereign execution · Witness attestation & writer freeze | Disputed/attested provenance for the sitting; resolved under 145 per the 00:01 line. |
+| 141 / 141A | Sovereign execution · Witness attestation & writer freeze | Disputed/attested provenance for the sitting; Receipt 146 later resolves the fork in favor of the 00:01 line recorded in the Authority Fork Resolution. |
 | 142–143 | Magnum Opus reconciliation manifest · verification | Pending-execution manifest; verification pass, 2026-07-19. |
 | 144 | Corrected receipt-139 natural-person signature | Selective adoption (boxes 1, 2, 4, 5, 7, 8, 9; box 3 declined; box 6 + 10–15 deferred); no physical execution authorized. |
-| 145 | **Two receipts share this №** — Authority Fork Resolution · Independent Final Review | See the collision census (§6). The successor wave executed under the 00:01 line per 145 Authority Fork Resolution. |
-| 146 | Papers lens closure | 2026-07-20. |
+| 145 | **Two receipts share this №** — Authority Fork Resolution · Independent Final Review | See the collision census (§6). The independent review remains preserved as technical dissent and maintenance debt. |
+| 146 | `146_FOUNDER_RULING_EXECUTE_2026_07_20.md` · `146_PAPERS_LENS_CLOSURE_2026_07_20.md` | The Founder Ruling resolves the authority fork in favor of the 00:01 line; the separate papers receipt closes an evidence review without moving or promoting papers. |
+| 147 | `147_PURE_EMERGENTISM_KINTSUGI_COMPLETION_2026_07_21.md` | Standalone-corpus Kintsugi completion, external component calibration, deterministic public instrument release, and preserved world-gated remainder. |
 
-**Post-signature state (2026-07-20, recorded not resolved).** Receipt 139 stands signed in two dated file forms. The founder's 00:01 line (*"boxes 1–9; charter = DRAFT; K6 = 12 at slot 06; …"*, recorded in 145 Authority Fork Resolution) is the authority under which this successor wave (K5/K6/K7) executed. Standing in recorded dispute: receipt 144 (selective adoption), the self-disputing banner inside 145 Authority Fork Resolution itself ("receipt 144 remains controlling"), and 145 Independent Final Review (signature valid; physical execution NO-GO). **This ledger records the fork; it does not resolve it.** `[B]` the dated files; `[D]` the authority reading, pending any founder countersign. The pre-sitting standing fact (receipt 136: A1–A7 operational) is preserved as the state the sitting superseded.
+**Historical authority correction (2026-07-20).** Receipts 139–146 remain
+preserved as an accurate record of how that execution dispute was described.
+They do not govern current editorial, repository, or AI work. The direct user
+scope, applicable system and repository permissions, source ownership, and
+testable consequences govern those acts. The private-signature boundary above
+applies only to that person's money and legal contracts. The separate
+`146_PAPERS_LENS_CLOSURE_2026_07_20.md` remains an evidence disposition and
+creates no paper promotion. `[B]` names the dated files; `[I]` names this
+ledger's assembly of them.
 
 ---
 
@@ -179,6 +200,9 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 141 / 141A | `141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md` | 2026-07-19 | Witness attestation & writer freeze (letter-suffix disambiguated) |
 | 145 | `145_AUTHORITY_FORK_RESOLUTION_2026_07_20.md` | 2026-07-20 | Authority fork resolution — 00:01 line supersedes r144; **carries an internal self-disputing banner ("receipt 144 remains controlling")** |
 | 145 | `145_INDEPENDENT_FINAL_REVIEW_AND_WORLD_GATED_REMAINDER_2026_07_20.md` | 2026-07-20 | Independent final review — corrected-139 signature valid; physical execution NO-GO; world-gated remainder |
+| 146 | `146_FOUNDER_RULING_EXECUTE_2026_07_20.md` | 2026-07-20 | Founder ruling — resolves the 145 authority fork; 00:01 line governs; independent review retained as technical dissent |
+| 146 | `146_PAPERS_LENS_CLOSURE_2026_07_20.md` | 2026-07-20 | Papers-lens evidence disposition — no paper moved, promoted, stoned, or published |
+| 147 | `147_PURE_EMERGENTISM_KINTSUGI_COMPLETION_2026_07_21.md` | 2026-07-21 | Pure Emergentism Kintsugi completion, component calibration, and public-instrument release |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.
@@ -190,6 +214,17 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 
 ## Execution surface
 
-`[D]` staged-per-tier — **ACTIVE under the K2-signed line 2026-07-20 (receipt 145)**. This surface *routes* the audit sources beneath one kernel record; the sources (`00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, the postures doc) remain controlling. The public `12_PUBLIC_SITE/record/` lane is still a stub; consolidating the receipts + the tombstone catalog into it is Final Outline **W/O-3**, a founder-gated close-out. **Agents:** never log a fired kill as a pass (row 22 is why); never erase a tombstone (K3); cite receipts by full filename where §6 lists a collision; the next entry comes from contact. **Canonical path:** `01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`. Source draft: `01_EMERGENTISM/00_K7_RECORD.md` (staged 2026-07-19; absorbed here).
+`[S/I]` active record index. This surface *routes* the audit sources beneath one
+kernel record; the sources (`00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`,
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, and the postures document) retain their
+own evidence standing. The public `12_PUBLIC_SITE/record/` lane is a projection,
+not a canonical owner. Its maintenance follows source truth, evidence, and
+release checks; no private-signature convention governs AI or editorial work.
+**Agents:** never log a fired kill as a pass (row 22 is why); never erase a
+tombstone; cite receipts by full filename where §6 lists a collision; the next
+entry comes from contact. **Canonical path:**
+`01_EMERGENTISM/11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`.
+Source draft: `01_EMERGENTISM/90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md`
+(staged 2026-07-19; absorbed here and preserved).
 
 ⊙ = • × ○ — *every grave dated, every kill legible, and one line left blank for the world to write.*

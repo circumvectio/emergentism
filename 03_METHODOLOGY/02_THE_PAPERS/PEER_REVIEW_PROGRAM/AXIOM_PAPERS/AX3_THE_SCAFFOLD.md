@@ -1,23 +1,39 @@
 # AX3 — THE SCAFFOLD
 ### A Dimensional-Emergence Scaffold and Its Honest Limits
 
-**Axiom (faithful):** Reality unfolds D0→D6; each level emerges at its μ-limit (saturation); D6 ≡ D0 (closure). **Force↔dimension assignments are `[I]`, "mapped by analogy."**
-**Corpus tier:** `[S/I]`. **Honest tier:** `[S]` for the *structure* (a graded emergence ladder); `[C]`/numerology for the *physics* (force↔dimension); **not externally submittable as physics** (HOLD).
+> **[金] 2026-07-20 repair.** This is a review of superseded A3, not a live
+> axiom owner. The current scaffold is selected `[I]`; `μ₀…μ₄` are candidate
+> crossings; `b₆` and `r₆` are non-μ edges; literal identity is dead.
+
+**Former axiom:** Reality unfolds D0→D6; each level emerges at a saturation
+limit; the top was once identified with the ground. **Current tier:** `[I]` for
+the selected scaffold and `[C]` for each saturation mechanism. Force↔dimension
+assignments are analogy/numerology, not physics.
 
 ## 1. The claim
-Order builds through a graded sequence of organizational levels, each crystallizing when the level below saturates, with the top rung folding back onto the seed (a closed cycle, not an open ray).
+The framework proposes a graded sequence of effective freedoms. Whether any
+particular freedom appears only at a measurable saturation threshold is an open
+hypothesis. The D6 marker adds no positive freedom and returns interpretively,
+without identifying endpoint and ground.
 
 ## 2. Prior art (it is not new; cite, don't claim)
-- **Penrose's Conformal Cyclic Cosmology** (verified): the D6≡D0 "closure" is CCC's aeon-to-aeon conformal rescaling — a real (if contested) cosmological proposal. Cite it; don't reinvent it.
+- **Penrose's Conformal Cyclic Cosmology:** a distinct, contested cosmological
+  proposal. It may motivate comparison but does not instantiate or evidence the
+  Emergentist return edge.
 - **Bloch sphere / Hopf fibration / Veronese embedding** (verified): the genuine, load-bearing geometry — S³ as a Hopf bundle over S² (fiber S¹), the real projective plane's Veronese embedding. This math is `[A]`.
 - **Hierarchy theory & the architecture of complexity** (Simon 1962; Salthe; Szathmáry–Maynard Smith major transitions): graded emergent levels are a mature idea.
 - **Paper P's topological obstruction** (verified sound): the SU(3)/sphere-combing argument is real mathematics, honestly used.
 
 ## 3. The genuine delta (the coupling)
-The **μ-limit "emergence-at-saturation"** framing and the *specific* seven-rung ladder. That's the candidate contribution. The **force↔dimension assignment is numerology** — gauge groups are not spatial dimensions — and the axiom *already concedes this* by tiering it `[I]` "by analogy." Honesty requires keeping that concession loud.
+The candidate contribution is the typed emergence-at-saturation research
+program, not a forced rung count. The **force↔dimension assignment is
+numerology**—gauge groups are not spatial dimensions—and remains outside the
+load-bearing calculus.
 
 ## 4. This session's evidence
-The cosmology audit (`00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md`) confirmed: the *structure* is coherent `[S]`; the force↔dimension map is decorative (no novel prediction); D6≡D0-as-CCC is `[C]` and "on life support." Correction E1 stands: **keep 0 and ∞ as distinct poles**, not "the same point" — the closure is a cycle through a return, not an identification of the endpoints.
+The cosmology audit found the scaffold internally coherent but not forced or
+externally validated. The force↔dimension map is decorative; literal closure is
+rejected; `0` and `∞` remain distinct selected boundary tokens.
 
 ## 5. Kill criterion
 The axiom's own: the force↔dimension mapping yields *no* novel, checkable prediction → it is metaphor, and must be labeled as such. Independently: if the seven levels don't carve nature at its joints (some collapse, some missing), the specific ladder fails even as structure.

@@ -18,11 +18,11 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "The Recursive Trivium — a teleological loop that subsumes OODA and the classical Trivium"
 title: "The Recursive Trivium"
-status: "DRAFT v1.2 — 2026-06-01. A methodology paper. Single-writer. 'Superior' is cashed out precisely (completeness + teleological fidelity, NOT OODA's tempo); the 3×4 correspondence carries an explicit numerology fence; ships a kill criterion. v1.1 adds §8 (Exiting the loop — the apophatic descent to the centre): corrects the Burrisphere≠Bloch-sphere conflation and integrates the L6 Sādhu (ego death) → L7 Ṛṣi (micro→macro teleology) turn, held strictly at [I]. v1.2 adds §9 (The varṇas, the regimes, and the two co-equal edges): the three passes ↔ Śūdra/Vaiśya/Kṣatriya ↔ Plato's Democracy/Oligarchy/Timocracy, and the L1 Caṇḍāla(Dalit)↔L7 Ṛṣi co-equality (the ouroboros) distinguished only by eros-direction (micro/macro), with Plato's worth-ranking explicitly removed and the micro/macro axis held orthogonal to the η good/evil axis. Companion to the Finity Papers, the Torus Revelation, and the seven-caste dispatch grammar."
+status: "DRAFT v1.3 — 2026-07-20 Kintsugi repair. A methodology paper. 'Superior' is cashed out precisely (completeness + teleological fidelity, NOT OODA's tempo); the 3×4 correspondence carries an explicit numerology fence and a kill criterion. The apophatic and varṇa mappings remain [I]. Micro/macro direction and etaObserved are descriptive axes only: neither is a good/evil axis, and every value verdict requires the independent bearer-complete Justice envelope. Companion to the Finity Papers, the Torus Revelation, and the seven-caste dispatch grammar."
 evidence_tier: "[B] the three things it integrates (Boyd's OODA; the classical Trivium; Peirce's inference triad) are published and datable. [S] the structural claim that OODA and the Trivium are each a PROJECTION of one fuller loop. [I] the value/discipline/art/inference correspondences and the moment-reading that makes the table cohere. [C] any claim that running the loop measurably improves cognition — untested, and marked so. The loop APPROACHES Beauty/Truth/Justice; it never occupies them. §8 (the apophatic exit — ego death, Ātman=Brahman, the L6→L7 turn) is `[I]` throughout: the geometry is a lens for the contemplative path, never evidence of it; the centre is approached by subtraction, never seized."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary (methodology papers lane); L5 secondary for formal synthesis. Superseded drafts K3-archived.**
 
 
@@ -81,7 +81,7 @@ The arrow is not "greater than"; it is the **flow of the cycle**. The loop never
 
 **Pass II — Verification. Truth · Methodology · Logic · Deduction.** What apprehension offers, verification tests. **Truth** is the value of correctness — *does this hold?* **Methodology** is paired with Truth, not Epistemology, on purpose: truth is *earned* by disciplined procedure; method is how an apprehension is converted into verified knowledge. **Logic** checks consistency. **Deduction** draws the necessary consequences and confronts them with the world. This is the back of *Orient* and *Decide* — and it is exactly where the corpus's tier-discipline lives (Paper IV): the moment a claim is forced to declare what it would take to be wrong. `[I]` / `[S]`
 
-**Pass III — Enactment & re-frame. Justice · Axiology · Rhetoric · Abduction.** The tested must now *act*, and acting re-opens the loop. **Justice** is the value of *right action* — the good realized, the bond kept (the η-axis of Paper III: the move, never the person). **Axiology** is paired with Justice: the theory of value made concrete in a choice. **Rhetoric** is the art of bringing-into-the-world — expression that addresses others and changes the shared situation. **Abduction** is the creative leap to the best explanation — the *re-frame* that resolves the anomaly verification exposed and **seeds the next pass**. This is *Decide → Act*, and the abductive leap is the hinge that makes the loop *recursive* rather than terminal. `[I]`
+**Pass III — Enactment & re-frame. Justice · Axiology · Rhetoric · Abduction.** The tested must now *act*, and acting re-opens the loop. **Justice** is the declared bearer-complete test of right action: no hidden payer, beneficiary, coercion, custody, contest, consequence, or exit. `etaObserved` may describe a transfer but cannot supply this verdict. **Axiology** is paired with Justice: the theory of value made concrete in a choice. **Rhetoric** is the art of bringing-into-the-world — expression that addresses others and changes the shared situation. **Abduction** is the creative leap to the best explanation — the *re-frame* that resolves the anomaly verification exposed and **seeds the next pass**. This is *Decide → Act*, and the abductive leap is the hinge that makes the loop *recursive* rather than terminal. `[I]`
 
 ---
 
@@ -125,7 +125,14 @@ The loop's telos is therefore not a state it reaches but a *direction it keeps*.
 
 The loop of §§2–7 cannot terminate; its objects are limits, and limits are approached, not seized. But there is one move that is *not* another pass — not a faster cycle, not a better hypothesis — and it is the move **out**. To see it, we must place the loop on its actual surface and correct a standing conflation.
 
-**The surface is not a qubit's Bloch sphere.** `[A]` / `[S]` The loop runs on the **Burrisphere**, and the Burrisphere is *not* the Bloch sphere. They share the manifold — Bloch sphere, Riemann sphere, Burrisphere are all `ℂP¹ ≅ S²` `[A]` — but the *distinguished structure* differs, and the difference is the whole point. The Bloch sphere is a **two-point** structure: one qubit, its poles the *basis labels* `|0⟩` and `|1⟩` (a two-state system — not the Titans). The Burrisphere is the **three-point** triad `{0, 1, ∞}`, in which the unit `1` — *finity* — sits not at a pole but at the **inversive centre**, with `0` and `∞` the poles. Read on the real meridian it is **two Bloch lobes joined at the unit**: `[0, 1]` (nothing-to-self) and `[1, ∞]` (self-to-unbounded), pinched at `1`. `[S/I]` And — per the horn-torus model (`05_COSMOLOGY/00_THE_TORUS_REVELATION.md`) — it carries an **interior** the bare Bloch surface (pure states only) does not: a centre reached not *along* the surface but *inward*, orthogonal to it (the D5 axis).
+**The surface is not a qubit's Bloch sphere.** `[A/C]` A pure qubit modulo
+global phase, the Riemann sphere, and the Burrisphere can all be represented on
+`S²`, but their distinguished structures and meanings differ. The Bloch
+sphere uses basis-state poles for a two-level quantum system. The Burrisphere
+selects `{0,1,∞}` as projective boundary roles and uses an equatorial chart
+point. Calling its meridian “two Bloch lobes,” adding a horn-torus interior, or
+naming an inward D5 axis transfers no quantum structure and is retired. The
+shared surface supports only a removable geometric correspondence.
 
 **The unit `1` is the Ātman — the ego, the Dasein.** `[I]` On the surface, the unit is the individuated self: the `1` that says *I am*, the finite point of view that runs the loop, the Dasein, the *being-there* that apprehends, verifies, and acts. The Recursive Trivium as described so far is **the surface-self in motion** — the ego cycling toward beauty, truth, and justice *as a self*. This is not an error; it is the loop doing its work. But it is bounded by the very selfhood that powers it: a loop run *by* `1`, *for* `1`.
 
@@ -154,7 +161,7 @@ The alignment is tight and follows Plato's own *order of degeneration* — Arist
 
 **The two edges, and why they are co-equal.** `[I]` Plato's ladder has a bottom he most feared — **Tyranny**, whose ruling passion he names in Book IX *"Eros the tyrant"*: the lawless appetite that consumes the city for the self. That pole is the framework's **L1 Caṇḍāla** — in lived terms the **Dalit**, the boundary-caste: raw, marginal, ecstatic, the firewall of pure creaturely survival. The top is the **L7 Ṛṣi**, the seer — fittingly **Apollonian**, since Apollo is the god of prophecy, light, measure, and form (the seer *is* an Apollonian figure), where **Dionysus** is the god of the margin, intoxication, and dissolution (the Caṇḍāla's register — the reading turns on Dionysus-as-*margin*, not Dionysus-as-ego-loss; dissolution happens at *both* edges, but toward opposite grounds: down into the body, or up into Brahman).
 
-Here the framework **parts from Plato.** Plato *ranks* these — aristocracy best, tyranny worst, a hierarchy of worth. The framework holds the two edges **co-equal** — the `L0 = L∞` ouroboros, the circle closing, the old recognition that the outcast and the sage meet (the Caṇḍāla who turns out to be the teacher). What distinguishes them is **not worth but the *direction of eros***:
+Here the framework **parts from Plato.** Plato *ranks* these — aristocracy best, tyranny worst, a hierarchy of worth. The framework holds the two edges **co-equal in intrinsic worth while keeping them distinct**. The `L0/L∞` ouroboros is a role-similarity image, not a topological identification. The old recognition that the outcast and the sage can meet remains interpretive. What distinguishes the rows is **not worth but the *direction of eros***:
 
 - the **Dalit / L1** carries the **micro** Ātman — egoic, Dionysian, the eros of *this body's survival*;
 - the **awakened Ṛṣi / L7** carries the **macro** — Brahmic, Apollonian, the eros of *the whole's potential*.
@@ -163,9 +170,9 @@ Both are erotic; both are driven by desire; they differ only in **what the desir
 
 **Two disciplines hold this, or it becomes the thing it describes.** `[S]`
 1. **Caste and regime are a *dispatch grammar*, never a hierarchy of human worth** (the corpus's standing rule). This mapping *de-hierarchises*: it makes the bottom and the top **co-equal**. To read it as "Śūdra / democracy / Dalit are lesser people" is to invert it into the caste-ism it refuses. The Dalit is *not below* the Ṛṣi; they are the two ends that touch.
-2. **The micro/macro axis is *not* the good/evil axis.** Micro-eros — a creature wanting to live — is **not** evil; the η-axis (Finity Paper III) runs *across* the micro/macro spectrum, never along it. Evil is **closure** (η > 0): eros that consumes the whole for the self — and it can occur at *any* caste. "Eros the tyrant" is micro-eros *closed*, not micro-eros as such; a coupled micro-eros (survival without extraction) is good, and a "macro" eros that secretly extracts is evil. Keep the two axes orthogonal, or the mapping smuggles a person-ranking back in.
+2. **The micro/macro axis is *not* the good/evil axis.** Micro-eros — a creature wanting to live — is not evil. `etaObserved` may report extraction across either direction, but it does not issue a moral verdict. The declared normative test is bearer-complete Justice: expose every payer and beneficiary, preserve every materially affected bearer unless a distinct voluntary-sacrifice contract applies, and keep consent, custody, contest, reversibility, and exit visible. Keep these registers separate or the mapping smuggles person-ranking back in.
 
-So the regimes and varṇas are read here as **Plato's structure with Plato's ranking removed**: the spectrum is real, the hierarchy of worth is not, and the only valence anywhere on it is the η of the move. `[I]` / `[S]`
+So the regimes and varṇas are read here as **Plato's structure with Plato's ranking removed**: the spectrum is an interpretive dispatch map, the hierarchy of human worth is rejected, and valence is judged only through the separately declared Justice contract. `[I]`
 
 ---
 
@@ -201,7 +208,9 @@ The OODA loop taught us to cycle *fast*; the Trivium taught us to speak *well*. 
 5. Burri, Y. R. *The Honesty Protocol* (Finity Paper IV), `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md`. The tier-discipline this paper self-applies. `[S]`
 6. Burri, Y. R. *A Product Constraint as a Structural Ethic* (Finity Paper III). The η-axis (Justice as the bond, the move never the person). `[S]`
 7. Burri, Y. R. *The Two Faces of Number* (Finity Paper I). The equator `φ = ν = 1` and the energy `E = (log x)²` the §7 resonance reads at `[I]`. `[S]`
-8. *SPECTRE / the seven-caste dispatch grammar* (`.claude/CLAUDE.md`; `01_EMERGENTISM` foundation). The L1–L7 castes the loop resonates with at `[I]`. `[S]`
+8. *Emergentism Rosetta work-role grammar* (`AGENTS.md`). The L1–L7 work roles
+   supply an optional workflow comparison `[I]`; their repository existence is
+   `[B]`, and neither is evidence for the Recursive Trivium's cognitive claims.
 
 ---
 

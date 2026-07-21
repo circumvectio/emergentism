@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "PAPER K: AMRITA REFRAMED"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER K: AMRITA REFRAMED
 
 ## Multiplicative Validation on Open-Source Substrates at Low Cost
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [C/I] — Practical validation proposal; upgrade only after benchmark results
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md)
@@ -25,9 +25,21 @@ Menexus GmbH, 2026
 
 ## Abstract
 
-The AMRITA project was originally conceived as a practical validation of the emergentist framework: a $710,000 initiative to pre-train a novel artificial neural network using D5 constitutional constraints over traditional cross-entropy mechanics. This paper reframes that validation protocol.
+The AMRITA project was originally conceived as a practical validation of the
+Emergentist framework: a $710,000 initiative to pre-train a novel artificial
+neural network using what the proposal called "D5 constitutional constraints"
+over traditional cross-entropy mechanics. The corrected type signature is:
+training, inference, gating, commitments, and outcome records are actual D4
+processes; only the alternative outputs and futures represented by model tokens
+are D5 content. This paper reframes that validation protocol.
 
-Rather than undertaking the prohibitive cost of base-model training, we propose that *Constitutional Outperformance* can be tested directly on existing open-source substrates at lower cost. By deploying the multiplicative bridge as a post-training gating threshold rather than a pre-training objective, we preserve the core empirical test: does a system constrained by emergentist multi-polar geometry practically outperform RLHF or DPO baselines on adversarial safety and coherence benchmarks?
+Rather than undertaking the prohibitive cost of base-model training, we propose
+that *Constitutional Outperformance* can be tested directly on existing
+open-source substrates at lower cost. A post-training D4 gate can compare
+represented D5 alternatives before committing one actual output. The empirical
+question is limited: does a fully specified Emergentist decision procedure
+outperform matched RLHF or DPO baselines on preregistered safety, truthfulness,
+coherence, and bearer-harm measures?
 
 **Keywords:** AMRITA, LLM alignment, RLHF, multi-polar geometry, constitutional outperformance, multiplicative gating.
 
@@ -35,21 +47,42 @@ Rather than undertaking the prohibitive cost of base-model training, we propose 
 
 ## 1. The False Necessity of "Scratch" Training
 
-Early framework specifications assumed that to test the structural truth of the `S²` manifold, the artificial intelligence had to be mathematically grown on that geometry from randomized initialization weights (epoch 0).
+Early framework specifications assumed that to test the usefulness of an `S²`
+model, the artificial intelligence had to be mathematically grown on that
+geometry from randomized initialization weights (epoch 0).
 
 This was strategically naive.
-Base model training is essentially the brute-force computation of syntactic probabilities (`D2` linguistic mechanics). The emergentist framework asserts that systemic awareness and normative alignment live at `D5` (steering, coherence, telos), which operates asynchronously over the lower substrate. Therefore, there is no structural necessity to burn $700K training a model to speak English when the actual test is whether the model can coordinate D5 ethical geometry.
+Base-model training, sensing, memory, inference, model evaluation, and
+coordination are embodied D4 processes. Systemic awareness and normative
+alignment do not "live at D5." D5 names the merely possible contents that an
+actual system can represent and rank. Therefore no dimensional premise requires
+scratch training; the lower-cost experiment tests a D4 decision procedure over
+represented alternatives.
 
 ---
 
 ## 2. Multiplicative Gating vs. RLHF
 
-Standard open-source models are "aligned" using RLHF or DPO (Direct Preference Optimization). These methods are statistically fragile as they merely map the model to local, culturally-bounded human preference metrics, which are mathematically arbitrary (`D4`).
+Standard open-source models may be aligned using RLHF or DPO (Direct Preference
+Optimization). Their strengths and failures are empirical questions; being D4
+does not make a method arbitrary or inferior.
 
-The AMRITA Reframed protocol replaces RLHF with **Multiplicative Gating**.
-* **The Method:** We load a highly capable open-source language model. We inject an external framework filter mechanism (the Gate) that evaluates generated output paths.
-* **The Math:** The Gate computes `Φ` (global logical coherence of the intent) and `V` or `ν_proxy` (localized semantic viability/resolution). It filters node actuations by a defined `P_node = Φ × V` threshold.
-* **The Test:** If the framework is structurally true, the multiplicatively bound LLM should exhibit significantly higher adversarial resistance, lower sycophancy, and fewer schizophrenic failure states than the identical LLM aligned via standard RLHF fine-tuning.
+The AMRITA Reframed protocol compares a declared **Emergentist gate** with RLHF
+and DPO baselines.
+
+* **The method:** A D4 filter scores represented candidate outputs, commits one
+  actual output, records the commitment, and obtains a separate outcome receipt.
+* **The model:** `P_node=ΦV` is the framework's selected normalized conjunctive
+  score, not a uniquely derived or intrinsically ethical formula. Rival
+  aggregators and ablations must be included.
+* **The Justice boundary:** `etaObserved=0` is necessary but never sufficient.
+  Each consequential test requires complete affected-bearer coverage, a valid
+  `AuthorizationEnvelope`, explicit payer and beneficiary, consent, custody,
+  expiry or revocation, contest path, exit, and prospective and receipted
+  consequence predicates. Justice is declared `[I]`; geometry does not prove it.
+* **The test:** Compare preregistered distributions of adversarial resistance,
+  sycophancy, truthfulness, task performance, and bearer harm. A positive result
+  supports this procedure in the tested domain; it does not prove the worldview.
 
 ---
 
@@ -57,7 +90,9 @@ The AMRITA Reframed protocol replaces RLHF with **Multiplicative Gating**.
 
 This reframing transitions AMRITA from a philosophical thought experiment into an executable test of **Constitutional Science**.
 
-If applying an artificial `S²` multiplier gate to a generic neural network transforms its behavior from statistically fragile to structurally coherent under adversarial limits, that would be strong practical evidence for the constitutional grammar. It would not by itself prove the full core state.
+If a declared Emergentist gate improves preregistered outcomes against matched
+baselines, that would support the tested decision procedure. It would not prove
+that reality has `S²` geometry, derive Justice, or establish the full core state.
 
 ---
 
@@ -65,17 +100,23 @@ If applying an artificial `S²` multiplier gate to a generic neural network tran
 
 This paper and the AMRITA protocol are falsified if:
 
-1. **Alignment Collapse:** The open-source model gated by the multiplicative `φ · ν` threshold suffers catastrophic mode collapse, halting permanently, or underperforming basic DPO-trained equivalents across standard multi-turn reasoning benchmarks.
+1. **Alignment Collapse:** The open-source model gated by the declared
+   `P_node=ΦV` procedure suffers catastrophic mode collapse, halts permanently,
+   or underperforms matched DPO equivalents across the preregistered benchmark.
 2. **Computational Impotence:** The gating mechanism is mathematically proven to be indistinguishable from simple top-K/top-p sampling, demonstrating that the conceptual framework adds zero unique topological filtering to the neural weight processing.
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [C/I] until benchmark results exist.
-2. **Depends on:** The "Opaque from below, Legible from above" Cross-Scale Theorem (Paper O) — establishing that D5 overrides D2 mechanics.
+2. **Compare with:** Paper O's candidate cross-scale hypothesis. No higher
+   register overrides lower mechanics; every actual intervention remains D4.
 3. **Next action:** If prompted to run alignment validation, initialize the protocol on an existing local open-weights model using API-gated evaluation loops instead of requisitioning GPU clusters for scratch training.
 4. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_K_AMRITA_AT_ZERO_COST.md`
 

@@ -11,7 +11,7 @@ title: "Suda Convergence Analysis"
 status: "ACTIVE — 2026-06-06. Full read of 11-paper Suda corpus against Finity Papers framework."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane / intake analysis.**
 
 # Suda Corpus Convergence Analysis
@@ -255,7 +255,9 @@ Suda uses the Cayley transform `u = (x−1)/(x+1)` (his "egg of infinity"), but 
 
 **Paper III (*A Product Constraint as a Structural Ethic*):**
 - Cite *Möbius Control for Binary Oppositions* for the triad `(A,B,T)` and the "mid-stability point" — this is a control-theoretic expression of the same structural ethic.
-- The "safe inversion" protocol (flip only when purity `P < ε`) is an operationalization of the ethical axis `η`.
+- Treat the "safe inversion" protocol as a domain-specific candidate control
+  rule. It neither operationalizes an ethical axis nor replaces bearer-complete
+  Justice; `etaObserved` remains descriptive.
 
 ### 7.2 Provenance Record Updates
 
@@ -270,7 +272,7 @@ The `_SOURCES/README.md` should be updated to include:
 - *Demythologizing Luck*
 - *Resonating Genes*
 
-All are third-party published reference PDFs; per K2 policy they should be **kept on disk but git-ignored**, with bibliographic records and public re-acquisition routes.
+All are third-party published reference PDFs; per corpus custody policy they should be **kept on disk but git-ignored**, with bibliographic records and public re-acquisition routes.
 
 ### 7.3 Proposed New Document
 

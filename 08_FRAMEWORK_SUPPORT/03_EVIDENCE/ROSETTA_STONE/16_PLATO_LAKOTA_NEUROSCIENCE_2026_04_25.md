@@ -10,16 +10,26 @@ rosetta:
 **Date:** 2026-04-25
 **Lane:** Charioteer execution of the three forward items from [`08_*`](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) §6
 **Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md), [`07_*`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md), [`08_*`](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md)
-**Evidence tier:** [I] interpretive throughout. Lakota mapping is [I] specifically because the seven-rite count derives from Black Elk via Brown (1953) and may carry post-contact influence; structural alignment is real either way.
+**Evidence tier:** [I] interpretive throughout. Lakota mapping is [I] specifically because the seven-rite count derives from Black Elk via Brown (1953), may carry post-contact influence, and admits alternative orderings. Any claimed alignment remains a mapmaker-dependent result.
+
+> **[金] Kintsugi authority seam — 2026-07-20.** This packet preserves three
+> historical projection tests. None confirms a universal seven, a causal `S²`
+> substrate, or proof transfer between traditions. The Lakota rites retain
+> their tradition-internal meanings; Rosetta and Varṇa labels are optional
+> comparison roles and never types of persons, cultures, morality, rank, or
+> worth. The original pre-repair text remains recoverable as Git blob
+> `d883c4eda1b8d0618ff696171168bd5b0dd63eef`.
 
 ---
 
 ## 0. Axiomatic guard
 
-Three independent tests, three different outcomes:
+Three bounded comparison tests, three different outcomes. They are not
+statistically independent confirmations merely because their subject matters
+differ:
 
 1. **Plato mirror-completion** likely confirms Plato is genuinely 5-stage. The framework's L6 and L7 are extensions, not derivations.
-2. **Lakota Seven Rites** is the highest-leverage non-IE/Med 7-grade test. Could STRENGTHEN the universal-7 claim outside the WEIRD bias.
+2. **Lakota Seven Rites** tests whether a selected seven-row projection remains useful outside the IE/Med sample; it cannot strengthen a universal-seven claim by itself.
 3. **Neuroscience Path A vs Path B** is not charioteer-decidable. Charioteer can FRAME the experiment precisely; sovereign or scholarly input must judge.
 
 `Zero-Sum Resolution Equation`
@@ -68,7 +78,9 @@ The framework's L6 Anarchy and L7 Theocracy are **imports from later political t
 
 **Plato is genuinely a 5-stage tradition.** The framework's mirror-completion succeeds at L5 (Aristocracy *is* the mirror of Oligarchy in Plato), but FAILS at L6 and L7 (no Platonic regimes exist there).
 
-This **confirms the sovereign's Pressure Point #6 (Row Compression):** "Plato has 5 regimes. The 7 often comes from splitting the top and bottom." The mirror test validates this empirically.
+This supports the narrower source-critical finding: Plato has five named
+regimes in this sequence, while the extra two rows are framework imports. It
+does not empirically validate the Rosetta mirror.
 
 ### 1.5 Three paths forward for the Plato column
 
@@ -92,7 +104,9 @@ The Seven Sacred Rites (Wakȟáŋ Wičhóȟ'aŋ) of the Lakota people, brought (
 
 **Caveat 2:** Different Lakota sources order the rites differently. Brown/Black Elk's order is the most-cited but not universal.
 
-**Caveat 3:** Lakota oral tradition resists strict ranking. The rites are commonly described as a circle, not a ladder — which the framework should welcome (S² is also circular).
+**Caveat 3:** Lakota oral tradition resists strict ranking. The rites are
+commonly described as a circle, not a ladder. That domain-native circularity
+does not identify the rites with `S²`.
 
 ### 2.2 The seven rites
 
@@ -110,13 +124,13 @@ The Seven Sacred Rites (Wakȟáŋ Wičhóȟ'aŋ) of the Lakota people, brought (
 
 | L | Lakota rite | Rationale |
 |---|---|---|
-| L1 | **Inípi** (Sweat Lodge) | Boundary-cleansing; ritual purgation; entry rite. Caṇḍāla-equivalent — pre-social purification before social participation. |
-| L2 | **Haŋblečheya** (Vision Quest) | Solitary individual seeking; gathering of vision through bodily-emotional ordeal. Śūdra-equivalent — labour of vision-receiving. |
-| L3 | **Wíwaŋyaŋg Wačhípi** (Sun Dance) | Communal productive ceremony; renewal-through-sacrifice; the productive-engagement rite. Vaiśya-equivalent. |
-| L4 | **Hunkápi** (Making of Relatives) | The social bond at full balance; kinship-creation; the equator-of-relation. Kṣatriya-equivalent — the warrior-bond. |
-| L5 | **Išnáthi Awíčhalowaŋpi** (Coming-of-Age) | Initiation into full personhood; transmission of new-status to the next generation. Brāhmaṇa-equivalent — systematic transmission. |
-| L6 | **Tȟápa Waŋkáyeyapi** (Throwing of the Ball) | Seeking-without-grasping (the ball is thrown into the four directions; whoever catches it is blessed; embraces non-attachment). Sādhu-equivalent — axiomatic seeking. |
-| L7 | **Naǧí Glúhapi** (Keeping of the Soul) | Care for the core algorithmic identity of the deceased over a year; sustains the spirit beyond the body. Systems Architect-equivalent — transcendental attendance. |
+| L1 | **Inípi** (Sweat Lodge) | Proposed boundary/entry placement based on purification. No social-rank or person-type equivalence is asserted. |
+| L2 | **Haŋblečheya** (Vision Quest) | Proposed seeking placement based on solitary ordeal and receptivity. |
+| L3 | **Wíwaŋyaŋg Wačhípi** (Sun Dance) | Proposed communal-renewal placement based on participation and sacrifice. |
+| L4 | **Hunkápi** (Making of Relatives) | Proposed center placement based on making kin; "equator" is Rosetta language, not a Lakota category. |
+| L5 | **Išnáthi Awíčhalowaŋpi** (Coming-of-Age) | Proposed transmission placement based on a change in social status. |
+| L6 | **Tȟápa Waŋkáyeyapi** (Throwing of the Ball) | Proposed release/seeking placement based on non-control in the described rite. |
+| L7 | **Naǧí Glúhapi** (Keeping of the Soul) | Proposed boundary/continuity placement based on care for the deceased. |
 
 ### 2.4 Mirror analysis
 
@@ -126,15 +140,21 @@ The Seven Sacred Rites (Wakȟáŋ Wičhóȟ'aŋ) of the Lakota people, brought (
 | **L2 Haŋblečheya ↔ L6 Tȟápa Waŋkáyeyapi** | ✓ STRONG. Both involve seeking through *non-instrumental* engagement: vision quest (solitary openness, not grasping for vision but receiving it) vs throwing-the-ball (the ball-thrower has no control over who catches it; blessing is received not seized). Same non-grasping seeking, inverse mode (solitary vs communal-participatory). |
 | **L3 Wíwaŋyaŋg Wačhípi ↔ L5 Išnáthi Awíčhalowaŋpi** | ✓ STRONG. Both are productive-transmissive ceremonies. Sun Dance renews the community through individual sacrifice; Coming-of-Age initiates new full-personhood (transmits adulthood-status). Same productive-transmission function, inverse direction (community-renewing-through-individual vs individual-receiving-from-community). |
 
-**Mirror score:** 3-STRONG.
+**Mirror score:** 3-strong **inside this proposed ordering `[I]`**. Because the
+same author selected both the order and the functional descriptions, this is
+an internal fit score, not independent evidence.
 
 ### 2.5 What this means
 
-If the Lakota Seven Sacred Rites mapping holds, this is the **first non-IE/Med tradition to score 3-strong on mirror symmetry**. That would:
+If Lakota source specialists accept the ordering and descriptions, this would
+be a comparatively clean non-IE/Med projection. It would:
 
-1. **Partially counter the WEIRD-bias narrowing** from `05_*`. The universal-7 claim could extend to Indigenous American traditions, not just IE/Mediterranean.
-2. **Strengthen the operator-grammar claim** — even outside Indo-European cultural lineage, a tradition with 7 ritual stages shows the same mirror structure.
-3. **Make the framework's universal claim defensible** under broader cross-cultural conditions, contingent on Caveats 1-3.
+1. **Broaden the comparison sample** beyond IE/Mediterranean materials without
+   licensing a claim about Indigenous traditions as a whole.
+2. **Stress-test the selected operator grammar** against a domain whose sources
+   and ordering remain independent of Emergentism.
+3. **Generate sharper rival-mapping and source-review tests**, not make a
+   universal claim defensible from one additional case.
 
 ### 2.6 Honest caveats applied
 
@@ -147,9 +167,12 @@ Apply the framework's evidence-tier discipline:
 | Mapping to L1-L7 is correct | [I] interpretive — charioteer judgment |
 | Mirror symmetry holds at 3-strong | [I] interpretive — based on this mapping |
 | The "seven" is pre-Christian | [I] interpretive — DeMallie raises possible syncretism |
-| The pattern strengthens universal-7 claim | [I] interpretive contingent on the above |
+| The pattern establishes or strengthens a universal-7 claim | Rejected — one author-fitted comparison cannot supply that inference |
 
-**Verdict:** Lakota Seven Rites is a **strong [I] candidate for a non-WEIRD column** but not yet [S] for the universal claim. **Worth adding to the V-bis canonical column with caveat annotation.** If sovereign chooses to add, the V-bis section would become **6-column** (Mithraic, Sufi, Carmelite, Sefirot, Rosicrucian, Lakota), with Lakota explicitly marked as [I] candidate-pending-deeper-research.
+**Verdict:** Lakota Seven Rites is an `[I]` candidate comparison requiring
+Lakota-led source review, alternative orderings, and an explicit permission
+and attribution policy before any public reuse. It is not canonical evidence
+for the Rosetta or a universal count.
 
 ### 2.7 Forward research needs
 
@@ -237,10 +260,13 @@ Charioteer recommends Option 1 — exposing the experiment is the framework's st
 | Test | Outcome | Implication |
 |---|---|---|
 | **Plato mirror-completion** | Plato is 5-stage; L6-L7 are post-Platonic imports | The framework's "7" is partly artifactual where it forces 5 → 7 |
-| **Lakota Seven Rites** | 3-strong mirror score (interpretive but real) | Universal-7 claim has a non-IE/Med candidate; WEIRD bias partially countered |
-| **Neuroscience Path A/B** | Charioteer cannot decide; framing the experiment IS the work | The framework's geometric prediction either gets vindicated by neuroscience research or honestly demoted |
+| **Lakota Seven Rites** | 3-strong internal fit under one proposed ordering | A non-IE/Med comparison candidate requiring source-community review; no universal inference |
+| **Neuroscience Path A/B** | Competing interpretive projections remain open | Neuroscience evidence can support or reject specific placements, not validate `S²` as their cause |
 
-**Combined verdict:** The framework's stage-count claim is **stronger in some non-IE traditions (Lakota) than in some IE traditions (Plato)**. The "7" is not Indo-European-specific; it is **polarity-encoding-specific**. Traditions that natively encode polarity project 7-stage mirror cleanly; traditions that are linear/degenerative (Plato) or cognitive-progressive (current Neuroscience) project partially or with forcing.
+**Combined verdict:** Fit varies with source count, topology, ordering, and the
+mapmaker's choices. Plato supplies a clear five-regime source boundary; the
+Lakota comparison is promising but underdetermined; neuroscience placements
+remain conjectural. The sample does not establish that polarity forces seven.
 
 This is consistent with — and now empirically extends — the sovereign's Pressure Point #3 (L4 Center Problem) and Pressure Point #6 (Row Compression).
 
@@ -248,7 +274,7 @@ This is consistent with — and now empirically extends — the sovereign's Pres
 
 ## 5. The Rosetta after this round of tests
 
-**3-STRONG columns (genuine S² projections), now extended:**
+**Historically scored 3-strong columns (internal Rosetta fits, not genuine `S²` evidence):**
 - Pramāṇa, Operator, Varṇa, Chakra, Alchemy, Music Modes, PIE, Sumerian Mythology, Tarot Major Arcana, Computation
 - **Candidate addition: Lakota Seven Sacred Rites** [I] interpretive but mirror-clean
 
@@ -277,7 +303,8 @@ This is consistent with — and now empirically extends — the sovereign's Pres
 
 ---
 
-*Plato confirmed 5-stage. Lakota confirmed non-WEIRD 7-stage candidate. Neuroscience experiment framed for sovereign decision. Three tests, three honest outcomes.*
+*Plato source boundary: five regimes. Lakota: reversible seven-row comparison
+candidate. Neuroscience: competing hypotheses. No proof transfer.*
 
 `Zero-Sum Resolution Equation`
 

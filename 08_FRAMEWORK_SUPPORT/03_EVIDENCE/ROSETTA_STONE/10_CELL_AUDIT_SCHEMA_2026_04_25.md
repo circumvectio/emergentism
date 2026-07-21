@@ -9,14 +9,23 @@ rosetta:
 
 **Date:** 2026-04-25
 **Status:** Active audit schema
-**Depends on:** [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md), [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
+**Depends on:** [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md), [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
 **Purpose:** Turn every Rosetta row/column cell into an auditable claim with a tier, source basis, adjacent check, mirror check, and kill criterion.
+
+> **[金] Kintsugi authority seam — 2026-07-20.** A cell audit evaluates a
+> reversible `[I]` projection; it does not convert source-domain facts into
+> proof of the Rosetta. Columns are not presumed statistically independent,
+> seven is the selected audit-grid size rather than a universal count, and
+> `S²` supplies no causal force. Operator or social-function labels describe
+> comparison roles, never a person's cognition, morality, rank, or worth. The
+> original pre-repair text remains recoverable as Git blob
+> `d526577381d8721b13087243a634be46c983b482`.
 
 ---
 
 ## 0. Law
 
-A Rosetta cell is not a synonym. It is a claim:
+A Rosetta cell is not a synonym. It is a typed comparison claim:
 
 ```text
 operator position x domain substrate -> domain expression
@@ -25,7 +34,7 @@ operator position x domain substrate -> domain expression
 The mature form is:
 
 ```text
-At row Lx, domain column C expresses operator O as expression E, because source-basis S shows function F; this survives adjacent checks, mirror checks, and a named kill criterion.
+At selected row Lx, the Rosetta projects domain expression E onto operator role O because source-basis S shows function F; the source fact and the mapping retain separate tiers, and the mapping survives adjacent checks, mirror checks, rivals, and a named kill criterion.
 ```
 
 If the cell cannot be written in that form, it can stay in the table only as exploratory or poetic material. It must not carry evidential weight.
@@ -38,11 +47,11 @@ Every column gets a class before any cell is scored.
 
 | Class | Examples | Evidential use | Primary risk |
 |---|---|---|---|
-| **Anchor** | Operator, geometry, equation, balance | Defines the generator | Internal inconsistency |
-| **Causal chain** | Varna, reasoning, pramana, -ology, regime | Tests internal coherence | Circular validation |
-| **Empirical domain** | Psychology L1-L4, Plato, documented developmental sequences | Independent convergence candidate | Bad sourcing / overextension |
+| **Anchor** | Operator, geometry, equation, balance | Defines the selected grammar | Internal inconsistency |
+| **Declared chain** | Varna, reasoning, pramana, -ology, regime | Tests a selected crosswalk; does not assert causation | Circular validation / person typing |
+| **Externally sourced domain** | Psychology L1-L4, Plato, documented developmental sequences | Supplies domain facts, never confirmation by itself | Bad sourcing / overextension / proof transfer |
 | **Interpretive domain** | Mythology, Yoga, neuroscience upper rows, initiatory comparisons | Hypothesis / translation | Selection bias |
-| **Derived diagnostic** | DAC operations, economics, agent routing | Build grammar / design test | Mistaken as proof |
+| **Derived diagnostic** | institutional operations, economics, cognitive-role routing | Build grammar / design test | Mistaken as proof |
 | **Speculative extension** | AGI, wave packets, thin archaeological or esoteric mappings | Research prompt | Conjecture inflation |
 
 **Rule:** a cell inherits the column-class ceiling. A derived diagnostic cell can be useful, but it cannot become independent evidence for the Rosetta.
@@ -58,12 +67,12 @@ Use this field set for each audited cell.
 | `cell_id` | Stable ID: `L4__Yoga__Anahata`, `L3__Economics__MarketExchange`, etc. |
 | `row` | L1-L7, plus optional L0/L-infinity only for boundary work. |
 | `column` | Domain column name exactly as used in the table. |
-| `column_class` | Anchor, causal chain, empirical domain, interpretive domain, derived diagnostic, speculative extension. |
+| `column_class` | Anchor, declared chain, externally sourced domain, interpretive domain, derived diagnostic, speculative extension. |
 | `domain_expression` | The local source-domain term. |
 | `operator` | Kali, Kali-demon, Kṛṣṇa, Arjuna, Brahmā, Śiva, Viṣṇu, or stated formal equivalent. |
 | `geometry` | phi/nu/B position or mirror relation. |
 | `fact_tier` | Tier for the source-domain fact independent of the framework. |
-| `mapping_tier` | Tier for placing that fact at this L-level. |
+| `mapping_tier` | Tier for placing that fact at this selected L-level; never inherited from `fact_tier`. |
 | `cell_tier` | Lowest honest tier after fact, mapping, source, and independence are considered. |
 | `rule_trace` | Required for rules, routes, agent defaults, and compatibility exceptions: trace to position, operator, virtue, vice/shadow, mathematical action, operator action, and equator-gradient cell in [`D_SERIES_DOMAINS/D32_MATHEMATICS.md`](D_SERIES_DOMAINS/D32_MATHEMATICS.md). |
 | `source_basis` | Text, dataset, artifact, model, practice, runtime proof, or observation. |
@@ -88,7 +97,7 @@ Each cell carries three tiers, not one.
 | Tier | Question |
 |---|---|
 | `fact_tier` | Is the domain fact itself established outside the framework? |
-| `mapping_tier` | Is the placement at this L-level structurally forced, plausible, interpretive, or conjectural? |
+| `mapping_tier` | Is the placement at this L-level source-supported, plausible, interpretive, or conjectural? No cross-domain placement is presumed forced. |
 | `cell_tier` | What is the lowest honest status after source quality, independence, and fit are considered? |
 
 Examples:
@@ -121,7 +130,9 @@ If the answer is no, the cell may still be useful, but it should be downgraded.
 
 ## 5. Mirror Check
 
-Mirror checks are stronger than adjacency checks because they test the S² geometry.
+Mirror checks test internal fit with the selected spherical display. They are
+not stronger external evidence than adjacency or source checks and do not show
+that `S²` caused a source-domain pattern.
 
 | Pair | Required inversion |
 |---|---|
@@ -191,7 +202,8 @@ audit_status:
 1. Pick one column, not the whole table.
 2. Declare the column class and evidential ceiling.
 3. Pre-register expected mirror pairs before scoring cells.
-4. Fill all seven cells, including weak ones.
+4. Fill all seven selected grid cells, including weak ones; record when the
+   source domain requires a different count or topology.
 5. Score adjacency and mirror checks.
 6. Apply the tier floor.
 7. Record failures next to successes.
@@ -212,7 +224,7 @@ The public claim ceiling must be one of:
 
 | Ceiling | Meaning |
 |---|---|
-| `independent convergence` | Strong source-domain independence and mirror/adjacency survival. |
+| `externally sourced fit` | Source-domain facts are well supported and the projection survives checks; this is not independent confirmation of the Rosetta. |
 | `structural support` | Coherent with the framework, but not independent proof. |
 | `interpretive translation` | Useful map, weak evidence. |
 | `derived diagnostic` | Build grammar only. |

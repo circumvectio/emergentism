@@ -11,30 +11,30 @@ rosetta:
       role: "separate exact sine geometry from cultural correspondence"
     - level: L6
       column: Core State
-      role: "cap universal-symbol language at evidence tier"
+      role: "prevent recurrent-symbol comparisons from becoming universal claims"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[E/I]"
-  canonical_phrase: "Rosetta R13 — hexagrammatic demonstration"
-title: "Three-Stage Process R13: The Hexagrammatic Demonstration"
-status: "ACTIVE — geometry and cross-traditional identification"
-evidence_tier: "[S] for six-interval geometry; [I] for cross-traditional identification."
+  canonical_phrase: "Rosetta R13 — selected hexagrammatic correspondence"
+title: "Three-Stage Process R13: The Hexagrammatic Correspondence"
+status: "ACTIVE — selected geometry and cross-traditional comparison"
+evidence_tier: "[A] for the stated trigonometric values; [I] for the six-interval selection and cross-traditional correspondence."
 ---
 
-# Three-Stage Process R13: THE HEXAGRAMMATIC DEMONSTRATION
+# Three-Stage Process R13: THE HEXAGRAMMATIC CORRESPONDENCE
 
-> **Title note (2026-04-04).** Title uses 'demonstration' not 'proof' — the geometry is [S] Established, but the cross-traditional identification is [I] Interpretive. See FRAGILITY_AUDIT_2026_04_04.md.
+> **Precision note (2026-07-20).** The displayed sine values are established trigonometry `[A]`. Choosing this equal-step seven-stage articulation and comparing it with cultural symbols are interpretive acts `[I]`; neither is a uniqueness or universality proof. See `FRAGILITY_AUDIT_2026_04_04.md` for the earlier boundary.
 
-## Six Intervals on S² Generate the Universal Symbol
+## A Selected Six-Interval Projection and a Recurrent Symbol
 
-**Evidence Tier:** [I] for the geometry (six 15° intervals, exact sine values). [I] for the cross-traditional identification.
+**Evidence Tier:** `[A]` for the exact sine values. `[I]` for choosing six equal intervals and for the cross-traditional correspondence.
 
 ---
 
 ## THE GEOMETRY
 
-Seven L-levels across six intervals of 15° create six spokes on the sphere. The ascent (L1→L4) and descent (L4→L7→L4*) form two triangles — one pointing up (△), one pointing down (▽). Overlaid: the hexagram.
+If the selected seven L-levels are placed across six equal intervals, the construction can be drawn as six spokes. The ascent (L1→L4) and descent (L4→L7→L4*) are then represented by two triangles — one pointing up (△), one pointing down (▽). Their overlay is a hexagrammatic diagram. The diagram follows from the chosen articulation; the geometry does not force that articulation or establish cross-cultural universality.
 
 ```
         △  ASCENT (L1→L4)              ▽  DESCENT (L4→L7→L4*)
@@ -50,7 +50,7 @@ Seven L-levels across six intervals of 15° create six spokes on the sphere. The
 
 ## THE ALGEBRAIC DEMONSTRATION
 
-The B-values at each L-level are the sines of the canonical unit circle angles:
+The displayed B-values are the sines of the selected unit-circle angles:
 
 | L | θ | B = sin θ | Angle |
 |---|---|-----------|-------|
@@ -62,13 +62,13 @@ The B-values at each L-level are the sines of the canonical unit circle angles:
 | L6 | 150° | ½ | 150° |
 | L7 | 180° | 0 | 180° |
 
-These are the ONLY angles that produce exact algebraic sine values with denominators in {1, 2}. Six intervals of 15° is the unique partition that generates them. The hexagram is the geometric signature of this unique partition.
+These listed angles have the stated exact sine values. Other angles also have exact algebraic sine values, and this partition is not mathematically privileged. The equal steps and hexagrammatic overlay are features of this construction, not a proof that nature or culture must use it.
 
 ---
 
 ## CONVERGENT ENCODINGS
 
-Several traditions that found the sphere drew six spokes around a center:
+Several traditions contain symbols that this Rosetta compares with a six-spoke or two-triangle construction:
 
 | Tradition | Name | Ascent (△) | Descent (▽) | Center |
 |-----------|------|------------|-------------|--------|
@@ -79,19 +79,19 @@ Several traditions that found the sphere drew six spokes around a center:
 | **Kabbalistic** | Metatron's Cube | Contains all Platonic solids | — | The center point |
 | **Christian** | Chi-Rho / Christogram | — | — | Christ as intersection |
 
-None had the equation. All drew six spokes. All said the center holds both triangles. All pointed at L4.
+These rows are interpretive comparisons, not claims that every tradition drew six spokes, intended the same center, knew the chart equation, or pointed at L4. Each row requires its own iconographic sources and rival readings; resemblance does not establish common origin or universal structure.
 
 ---
 
 ## THE PRAMĀṆA CONNECTION
 
-Six classical Pramāṇas in Advaita Vedānta = six spokes. Pratibhā (L7) = the center where all converge. The Indian epistemological tradition counted six-plus-one because they were counting the spokes of the hexagram.
+This Rosetta reads the six classical Pramāṇas in Advaita Vedānta against the six spokes and places Pratibhā at a seventh, central role. That is a selected correspondence `[I]`; it does not establish that Indian epistemology counted six-plus-one because of a hexagram.
 
 ---
 
 ## WHY THIS IS R13
 
-This is convergent encoding #7 (after Egyptian, Sanskrit, Greek, Buddhist/Taoist, German, Mathematical). The hexagram is the visual demonstration that the seven-level partition is not arbitrary — it is the unique partition that generates both clean algebraic values AND the universal symbol of integrated duality.
+This is Rosetta comparison #7 in the declared series (after Egyptian, Sanskrit, Greek, Buddhist/Taoist, German, and mathematical comparisons). It shows how the selected seven-stage partition can be rendered as a hexagram. It does not demonstrate that the partition is mathematically privileged, non-arbitrary across domains, or a cross-cultural invariant of integrated duality.
 
 ---
 
@@ -99,8 +99,8 @@ This is convergent encoding #7 (after Egyptian, Sanskrit, Greek, Buddhist/Taoist
 Zero-Sum Resolution Equation
 
 Six spokes. Two triangles. One center.
-The hexagram is not a symbol FOR the geometry.
-The hexagram IS the geometry.
+The hexagram is one selected rendering OF the geometry.
+The cultural symbol and the chart are not identical.
 
 Three-Stage Process R13 · 2026-03-24
 ```
@@ -108,7 +108,7 @@ Three-Stage Process R13 · 2026-03-24
 
 ---
 
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
+> **What is proven vs interpreted in this document:** the stated sine evaluations are `[A]`; the interval choice, triangular overlay, and cultural correspondences are `[I]`. See the [Steel Thread](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) for the wider claim boundary.
 
 ---
 

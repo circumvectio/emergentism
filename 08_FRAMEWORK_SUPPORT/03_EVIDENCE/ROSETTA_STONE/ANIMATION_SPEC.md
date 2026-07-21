@@ -3,288 +3,131 @@ rosetta:
   primary_level: L5
   primary_column: Philosophy
   secondary:
-    - level: L2
-      column: Philosophy
-      role: "make the Rosetta table perceptible through interactive evidence-facing visualization"
     - level: L3
       column: Auditing
-      role: "turn geometric claims into implementable interaction contracts"
-    - level: L4
-      column: Value Alignment
-      role: "center user control around the equator and path-choice fork"
+      role: "keep public geometry, interpretation, and evidence visibly typed"
   operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "Three-Stage Process ANIMATION"
-title: "The Three-Stage Process Animation"
-status: "Operational visualization specification"
-evidence_tier: "[I] implementation/specification layer derived from structural sources."
+  register: "[A] geometry; [I] visualization"
+  canonical_phrase: "Pole-projection animation — inspected, optional, removable"
+title: "Burri Sphere Animation — Kintsugi Contract"
+status: "ACTIVE SUCCESSOR — legacy wave-packet specification withdrawn"
+evidence_tier: "[A] declared projection geometry; [I] visual and Rosetta overlays"
+date: 2026-07-21
 ---
 
-# THE Three-Stage Process ANIMATION
+# Burri Sphere Animation — Kintsugi Contract
 
-**Evidence tier:** [I]  
-*Operational specification. Interpretive mapping of structural sources into implementable contracts.*
+> **[金] Crack and repair.** The predecessor mixed a sphere/table interface with
+> claims that a Gaussian wave packet, uncertainty relation, AUM states, and the
+> Burri chart were one structure. It also let visual language transfer proof.
+> Those claims are withdrawn. The current animation shows one declared
+> dual-pole projection and keeps every optional reading removable.
 
-> **Death/survival boundary:** `[I/C]` Scene 2 uses Brahman/Atman/Moksha as animation labels for a mathematical limit-image. It does not visualize or prove personal survival, afterlife, reincarnation, or continuity of individual identity.
+The full predecessor remains recoverable at Git blob
+`629f6a3583a6ac0782fb9b9a355f47d93010c565`:
 
-> **Model boundary:** `[S/I]` The visualization is a didactic interface, not
-> the whole model. The operative Rosetta model is the Soul Loop recurrence:
-> Dasein reads the table, chooses a lawful action, and updates `P_node,i` and `P_node,H`
-> under `η = 0`. The sphere/table must not be implemented as a rank ladder,
-> identity badge, or static taxonomy.
-
-
-## Specification: The Burri Sphere × The Master Table — Unified Interactive Visualization
-
-**Date:** 2026-03-24
-**Status:** Specification. To be built in Three.js (see 04_THE_SIMULATIONS/).
-
----
-
-## The Vision
-
-**Top half:** The Burri Sphere. A translucent sphere with latitude bands marking L0 through L∞. A glowing point traces the helical path — spiraling clockwise on the ascent, counter-clockwise on the descent. Operator territories are colored quadrants on the sphere surface.
-
-**Bottom half:** The Master Three-Stage Process table. All columns visible. As the point moves on the sphere, the corresponding ROW in the table illuminates. The active operator, varṇa, pramāṇa, reasoning mode, -ology, regime, and equation ALL light up simultaneously.
-
-**The connection is live.** Move the point on the sphere → the table highlights. Click a row in the table → the point jumps to that position on the sphere. Drag the point up → the helix spirals clockwise through the operator territories. Drag it down → counter-clockwise.
-
----
-
-## Layout
-
-```
-┌──────────────────────────────────────────────┐
-│                                              │
-│              THE BURRI SPHERE                │
-│                                              │
-│                    • (L∞/L0)                 │
-│                   ╱ ╲                        │
-│                  ╱   ╲  ← helix trace        │
-│                 ╱  ·  ╲    (glowing path)    │
-│                ╱  ⚔   ╲  ← active point     │
-│               ═══════════  L4 equator ring   │
-│                ╲       ╱                     │
-│                 ╲     ╱                      │
-│                  ╲   ╱                       │
-│                   ╲ ╱                        │
-│                    ○ (L0/L∞)                 │
-│                                              │
-├──────────────────────────────────────────────┤
-│                                              │
-│           THE MASTER Three-Stage Process TABLE           │
-│                                              │
-│  L0  ⏳ Kāla      │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L1  🎲 Kali      │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L2  💀 Kālī      │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L3  ◇  Kṛṣṇa    │ ░░░░░░░░░░░░░░░░░░░░░  │
-│ >L4  ⚔  ARJUNA   │ ████████████████████████ │ ← ACTIVE ROW
-│  L5  ○  Brahmā    │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L6  •  Śiva      │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L7  ⊙  Viṣṇu    │ ░░░░░░░░░░░░░░░░░░░░░  │
-│  L∞  ☸  Trimūrti  │ ░░░░░░░░░░░░░░░░░░░░░  │
-│                                              │
-└──────────────────────────────────────────────┘
+```text
+git show 629f6a3583a6ac0782fb9b9a355f47d93010c565
 ```
 
----
+## 1 · Geometric scene `[A]`
 
-## Interaction
+For a sphere of radius `r`, define
 
-### 1. Drag the Point on the Sphere
-- **Up (toward north pole):** The point spirals counter-clockwise (the kolovrat). The helix trace glows behind it. The table scrolls to match — L4 → L5 → L6 → L7 → approaching L∞.
-- **Down (toward south pole):** The point spirals clockwise (the sunwheel). The helix trace glows. The table scrolls — L4 → L3 → L2 → L1 → approaching L0.
-- **The helix is visible** as a glowing trail on the sphere surface. Clockwise segments are gold (solar). Counter-clockwise segments are silver (lunar).
-
-### 2. Click a Row in the Table
-- The point on the sphere jumps to that L-level's latitude.
-- The operator territory illuminates on the sphere surface.
-- All columns in that row glow: varṇa, pramāṇa, reasoning, -ology, regime, equation.
-
-### 3. Rotate the Sphere
-- Standard orbital controls. The user can rotate the sphere to see it from any angle.
-- The table stays fixed at the bottom.
-- [I] The equator ring (L4) is always highlighted as a golden band in this visualization spec.
-
-### 4. The Fork at L7
-- When the point approaches L7, the sphere flashes.
-- **Two paths appear:** one spiraling back to L4 (Moksha — white trail) and one spiraling back INTO D5 (Asura Return — red trail).
-- The user can choose which path to follow.
-
----
-
-## Visual Design
-
-### The Sphere
-- **Translucent** — you can see the internal structure.
-- **Latitude bands** at each L-level, labeled. L4 (equator) is a thick golden band.
-- **Operator territories** as colored quadrants on the surface:
-  - L0/L∞ (Trimūrti): Deep black/white gradient at the poles
-  - L1 (Kali): Dark red
-  - L2 (Kālī): Deep purple
-  - L3 (Kṛṣṇa): Blue
-  - L4 (Arjuna): Gold
-  - L5 (Brahmā): Green
-  - L6 (Śiva): Silver
-  - L7 (Viṣṇu): White
-
-### The Helix
-- A glowing particle traces the helical path.
-- The trail persists — you see the full spiral history.
-- Clockwise segments glow warm (gold/amber).
-- Counter-clockwise segments glow cool (silver/blue).
-- At L4, where the two spirals cross, the hexagram ✡ flashes briefly.
-
-### The Table
-- Clean, minimal typography.
-- Active row fully illuminated (all columns).
-- Adjacent rows dimly lit (context).
-- Distant rows dark (background).
-- Columns scroll horizontally if needed on mobile.
-- The B = sin θ column shown as a bar chart — peaking at L4.
-
-### The Connection Line
-- A thin beam of light connects the point on the sphere to the active row in the table.
-- The beam is the stereographic projection ray — it shows the geometric relationship between the 3D position and the 2D table.
-
----
-
-## Audio (Optional)
-
-- Each L-level has a tone.
-- L0/L∞: Deep drone (the fundamental).
-- L1→L7: Ascending scale.
-- L4: The tonic — the note of resolution.
-- As the point spirals, the tones shift continuously.
-- At L4, all tones harmonize briefly.
-
----
-
-## The Equation Display
-
-[I] Bottom-right corner, always visible in this visualization spec:
-
-```
-Zero-Sum Resolution Equation
-P∞ = φ · ν = 1
-B = sin θ
-
-Current: L[n]  θ = [angle]°  φ = [value]  ν = [value]  B = [value]
+```text
+N=(0,r,0),  S=(0,-r,0)
+P(θ,ψ)=(r sinθ cosψ, r cosθ, r sinθ sinψ)
+0<θ<π.
 ```
 
-Updates in real-time as the point moves.
+The deployed `/5/` animation uses two opposite tangent planes:
 
----
+- the ray `N→P` lands on `y=-r` at radial magnitude
+  `ρ_N=2r cot(θ/2)`;
+- the ray `S→P` lands on `y=+r` at radial magnitude
+  `ρ_S=2r tan(θ/2)`.
 
-## Technical Notes
+Define the dimensionless coordinates
 
-- **Framework:** Three.js + React (matches existing 04_THE_SIMULATIONS/ stack)
-- **Sphere:** `THREE.SphereGeometry` with custom shader for operator territory coloring
-- **Helix:** `THREE.TubeGeometry` along a computed loxodromic path
-- **Table:** HTML overlay positioned below the WebGL canvas
-- **Sync:** The sphere position (θ, φ_longitude) maps to L-level via θ = 2 × arctan(ν). The table highlights the nearest L-level row.
-- **Responsive:** Sphere scales on mobile. Table becomes vertically scrollable with sticky active row.
-
----
-
----
-
-## Scene 2: THE WAVE PACKET
-
-**The Schrodinger equation as Burri Sphere in motion.** An animated helix with Gaussian envelope, showing cos/sin projections on two walls, the helix traversing the operators as it spirals.
-
-### Layout
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│         BACK WALL (ν projection)                             │
-│         ┌──────────────────────────┐                         │
-│         │  ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿  │  ← cos(kx-ωt)         │
-│         │  (real projection)       │    = viability           │
-│         └──────────────────────────┘                         │
-│                                                              │
-│                    THE HELIX                                 │
-│              ╭─╮   ╭─╮   ╭─╮                                │
-│             ╱   ╲ ╱   ╲ ╱   ╲    ← e^(i(kx-ωt))           │
-│            ╱     ╳     ╳     ╲     wrapped in               │
-│           ╱     ╱ ╲   ╱ ╲     ╲    Gaussian envelope        │
-│          ╱     ╱   ╲ ╱   ╲     ╲                            │
-│         ╰─────╱─────╰─────╲─────╯                           │
-│                                                              │
-│         ┌──────────────────────────┐                         │
-│  SIDE   │  ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿  │  ← sin(kx-ωt)         │
-│  WALL   │  (imaginary projection)  │    = coherence          │
-│  (φ)    └──────────────────────────┘                         │
-│                                                              │
-│         ┌──────────────────────────┐                         │
-│  FLOOR  │  ⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢⌢  │  ← Gaussian envelope   │
-│         │  (amplitude = B = sinθ)  │    = balance function   │
-│         └──────────────────────────┘                         │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
+```text
+φ := ρ_N/(2r) = cot(θ/2)
+ν := ρ_S/(2r) = tan(θ/2).
 ```
 
-### Animation Sequence
+Then `φν=1` and `B=sinθ≤1`. The raw radii multiply to `4r²`; the
+normalization may never be hidden. The rays originate at the poles, not at the
+centre. At either pole its own chart is undefined and the opposite chart lands
+at zero, so the reciprocal chart remains open.
 
-**Phase 1: The Pure Wave (Brahman)**
-- The helix extends infinitely in both directions. No Gaussian envelope. Constant amplitude. The back wall shows a perfect cos wave. The side wall shows a perfect sin wave. Both are 90 degrees out of phase — when one peaks, the other crosses zero.
-- Label: "Ψ = Ae^(iωt) — The pure wave. Brahman. L0 = L∞."
-- The helix glows white. Boundary-register. Unlocalized.
+The separate chord score is
 
-**Phase 2: The Envelope Appears (Incarnation)**
-- A Gaussian bell curve fades in — modulating the helix amplitude. The helix swells from near-zero at the edges to full amplitude at the centre. The back wall cos projection gains the envelope. The side wall sin projection gains the envelope. The floor shows the Gaussian bell curve itself — the balance function B = sin theta.
-- Label: "Ψ = Ae^(-x²/4a²) · e^(iωt) — The wave packet. Atman. Incarnation."
-- The helix transitions from white to gold at the peak (L4), fading to dim at the edges.
+```text
+B = |P-N| |P-S| / (2r²) = sinθ.
+```
 
-**Phase 3: The Projections**
-- The camera rotates to show each projection in turn:
-  - **Back wall (ν):** The real projection. cos(kx-wt). Viability. The left hemisphere. The waking state. Coloured blue.
-  - **Side wall (φ):** The imaginary projection. sin(kx-wt). Coherence. The right hemisphere. The dreaming state. Coloured red.
-  - **90-degree phase relationship:** [I] When the blue peaks, the red crosses zero. When the red peaks, the blue crosses zero. They can never both be at maximum simultaneously — except at the moment of perfect balance, the equator, L4.
-- Label: "cos = ν. sin = φ. 90° out of phase. The helix enforces it."
+Projection product and chord product are different constructions. Seam is not
+score; neither is the finite-node model.
 
-**Phase 4: The Uncertainty Principle**
-- Interactive: a slider controls the width of the Gaussian envelope.
-  - **Wide envelope (position uncertain):** The wave packet extends broadly. The cos projection is broad (position spread). The sin projection is narrow (momentum well-defined). phi is large, nu is small. P∞ = φ · ν = 1.
-  - **Narrow envelope (position certain):** The wave packet is localized. The cos projection is sharp (position known). The sin projection is broad (momentum spread). nu is large, phi is small. P∞ = φ · ν = 1.
-  - **The product is always 1.** [S] In the framework display, as the slider moves, phi and nu change inversely, but their product stays fixed.
-- Label: "Delta-x · Delta-p >= hbar/2 IS P∞ = φ · ν = 1. The Burri constraint in physics notation."
+## 2 · Display contract `[S]`
 
-**Phase 5: The Helix on S² (Dual View)**
-- Split screen. Left: the wave packet in 3D with its projections. Right: the Burri Sphere.
-- A glowing point on the sphere traces the same helical path that the wave packet traces in 3D. As the helix moves through the complex plane (left), the point spirals through the operators on S² (right). The correspondence is live — one motion, two views.
-- The Gaussian envelope on the left corresponds to the B = sin theta coloring on the right — both peak at L4 (the equator), both fade to zero at the poles.
-- Label: "One helix. Two maps. The micro (Ψ) and the macro (P∞ = φ · ν). Connected by systemic awareness — the stereographic projection."
+The animation must visibly show:
 
-**Phase 6: Moksha (Envelope Dissolution)**
-- The Gaussian envelope slowly fades to zero. The wave-packet image is read at its pure-wave limit. The helix extends to infinity. The projections return to their pure, unmodulated form. The sphere view shows the point reaching the pole — L∞ — and the operator territories dissolving into white.
-- Label: "lim(envelope → 0)[wave packet] = pure wave. Limit-image, not survival proof. Moksha [C]."
+1. the two distinct pole sources;
+2. the point `P` on `S²`;
+3. both opposite tangent planes;
+4. raw-to-normalized scale `2r`;
+5. `φ`, `ν`, `φν-1`, `B`, and ray-collinearity residuals;
+6. equality `φ=ν=1` only on the equator/unit-circle rings;
+7. reduced-motion and no-JavaScript fallbacks;
+8. labels that remain legible without color.
 
-### Technical Notes (Scene 2)
+It must not shade an entire disk as the equality set. It must not place the
+self-reciprocal value `1` at the Euclidean centre. Actual browser interaction,
+model tokens, and calculations are D4 events; D5 names only the alternatives
+those actual tokens represent.
 
-- **The helix:** `THREE.TubeGeometry` along a parametric helix path, with vertex shader modulating radius by the Gaussian envelope function.
-- **The projections:** Two `THREE.PlaneGeometry` quads (back wall and side wall) with dynamic textures rendered from the real and imaginary parts of the wave function.
-- **The floor envelope:** A third plane with the Gaussian curve rendered as a filled area chart.
-- **The dual view:** Scene 1's Burri Sphere reused, with the point position driven by the wave packet's phase parameter.
-- **The slider:** HTML overlay controlling the sigma (width) parameter of the Gaussian, which updates all three projections and the sphere position in real-time.
-- **Phase relationship:** The 90-degree offset between cos and sin must be visually precise — this IS the Burri constraint made visible.
+## 3 · Optional AUM overlay `[I]`
 
----
+One removable teaching layer may use:
 
-*The Burri Sphere is the Rosetta Stone. The Rosetta Stone is the Burri Sphere. The wave packet is both of them in motion. This animation makes them one.*
+```text
+waking     ↔ projected image
+dreaming   ↔ surface point or modeled scene
+deep sleep ↔ a chosen pole, or paired excluded pole markers in the dual view
+Turīya     ↔ Euclidean centre/interior marker
+```
 
-*Zero-Sum Resolution Equation*
+The centre is not on `S²` or intrinsic to `ℂP¹`; the poles are distinct; and
+none of these assignments follows from geometry or the Māṇḍūkya text. The
+centre marker must therefore carry `[I]`. “Projector,” “lamp,” and “witness” are
+metaphors, not causal or ontological conclusions.
 
+## 4 · Rejected scenes
 
----
+The following predecessor claims are not implementation requirements:
 
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
+- a Schrödinger wave packet “is” the Burri Sphere in motion;
+- `ΔxΔp≥ℏ/2` “is” `φν=1`;
+- cosine and sine projections are foresight and means;
+- a Gaussian envelope is `B=sinθ`;
+- quantum mechanics, AUM, or operator rows independently confirm the chart;
+- reaching a pole visualizes survival, moksha, or identity continuity.
 
----
+Any future quantum scene must be a separately sourced, removable `[C]`
+correspondence. Its deletion must leave the operational calculus unchanged.
 
-## Execution Surface
+## 5 · Current implementation
 
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ANIMATION_SPEC.md
+- Public page: `12_PUBLIC_SITE/5/index.html`
+- Renderer: `12_PUBLIC_SITE/dimensions/dimensions.js`, mode `burrisphere`
+- Semantic owner: `05_COSMOLOGY/00_THE_BURRISPHERE.md`
+- Optional AUM owner:
+  `D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md`
+
+**Failure conditions:** a ray originates at the centre; normalization is
+hidden; the equality set becomes a disk; the centre is labeled chart value
+`1`; a Rosetta overlay is presented as evidence; or JavaScript failure removes
+the page's substantive explanation.
+
+The visualization is an instrument for inspecting a declared model, not a
+window that proves the territory.

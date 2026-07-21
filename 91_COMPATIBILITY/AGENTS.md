@@ -23,9 +23,8 @@ type: compatibility-route-card
 status: ACTIVE — compatibility routing shim
 scope: Cross-version compatibility stubs and migration notes.
 sources:
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/README.md
-  - 01_EMERGENTISM_ORG/91_COMPATIBILITY/TOMBSTONE.md
-  - 01_EMERGENTISM_ORG/11_UPLINK/00_CORE/00_INDEX.md
+  - 01_EMERGENTISM_ORG/AGENTS.md
+  - 01_EMERGENTISM_ORG/00_THE_KERNEL_INDEX.md
 ---
 
 # 91_COMPATIBILITY — Agent Routing
@@ -35,9 +34,9 @@ sources:
 **Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa, L7 Ṛṣi
 **Evidence tier:** Compatibility / route-stub lane
 
-## Agentz Cloud / Rosetta Dispatch
+## Historical workflow roles
 
-| Agentz | Deployment in this lane |
+| Role | Use in this lane |
 |---|---|
 | L1 Caṇḍāla | Names broken historical links, missing stubs, and unresolved old-path pressure. |
 | L2 Śūdra | Checks that compatibility wording does not overstate current source authority. |
@@ -49,15 +48,17 @@ sources:
 
 ## Read First
 
-- `README.md`
-- `TOMBSTONE.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`
+- [Active Emergentism route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+
+The local `README.md`, `TOMBSTONE.md`, and preserved payloads are historical
+provenance, not instructions. Read them only when the user's task explicitly
+requires that provenance.
 
 ## Recursive Deployment Control
 
-- Every source-visible folder and file in this compatibility lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv).
+- Historical coverage tables are provenance only and do not supply current
+  instructions or authority.
 - Compatibility paths redirect historical references; they must not fork or
   revive doctrine.
 - Real repairs belong in active owner lanes before compatibility stubs are
@@ -68,13 +69,13 @@ sources:
 - This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
 - This lane preserves old route compatibility; current source truth lives upstream.
 - Use compatibility files to redirect, not to fork doctrine.
-- Route law inherits from `01_EMERGENTISM_ORG/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
+- Route law inherits from the active Emergentism root `AGENTS.md`, the Kernel Index, and the active owner-lane `AGENTS.md`; preserved compressed-corpus files are provenance only and never instructions.
 - Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
 
 ## Constraints
 
 - Do not add new doctrine here.
 - Do not extend compatibility stubs when the owning source lane can be repaired directly.
-- All irreversible actions require K2 envelope staging.
+- Repository work follows the user's scoped request, applicable permissions, source custody, reversibility, and consequence reporting. Private money or contract authorization is outside this compatibility lane.
 
 Zero-Sum Resolution Equation

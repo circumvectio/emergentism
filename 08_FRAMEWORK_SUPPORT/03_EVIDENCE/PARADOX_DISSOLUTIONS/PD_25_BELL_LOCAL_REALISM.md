@@ -26,7 +26,7 @@ rosetta:
 **Canonical number:** PD_25
 **Boundary source:** [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
 
-> **Evidence-tier note.** Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are `[A]` established physics when stated in the language of the cited experiments. The framework reading of these results through D4/D5, S², and `Zero-Sum Resolution Equation` is `[I]`. Consciousness-collapse, literal retrocausal, K2-as-physics, or F5-as-physical-force readings remain `[C]`.
+> **Evidence-tier note.** Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are `[A]` established physics when stated in the language of the cited experiments. The framework reading of these results through D4/D5 and S² is `[I]`. Consciousness-collapse, literal retrocausality, authorization-as-physics, or F5-as-physical-force readings remain `[C]`.
 
 ---
 
@@ -85,9 +85,9 @@ The stable lens is:
 •  definite mark after the record exists
 ```
 
-In this register, a measurement is the event that produces a receipt under a specified apparatus and observable. This is analogous to the framework's selection grammar, but not identical to K2 or systemic awareness.
+In this register, a measurement is the event that produces a record under a specified apparatus and observable. This is analogous to the framework's selection grammar, but not identical to authorization or systemic awareness.
 
-**K2 boundary:** K2 is mortal responsibility for action in governance and organism design. It is not the physical cause of quantum measurement.
+**Authorization boundary:** responsibility for a human or institutional act is not the physical cause of quantum measurement.
 
 **D4/D5 boundary:** D4/D5 can interpret why D4-only local inventory fails as a metaphysical picture. [I] The cited experiments do not establish that D5 is literally a physical stratum. [C]
 
@@ -102,7 +102,7 @@ PD_25 does not prove the following framework claims: [I]
 - systemic awareness as a wave-function-collapse mechanism;
 - F5 as an established physical force;
 - naive retrocausality;
-- K2 as a quantum-measurement operator.
+- any authorization convention as a quantum-measurement operator.
 
 All such readings remain `[C]` unless separately supported.
 

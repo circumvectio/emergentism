@@ -68,7 +68,11 @@ Development requires CRISIS. Levels II-IV are *worse* (more conflicted, more anx
 
 **2. Spiral Dynamics / Graves (8 levels, open-ended) — STRONG CHALLENGE**
 
-Two structural features the framework lacks: (a) **open-endedness** — new levels continue to emerge, contradicting D6=D0 closure; (b) **individual/collective alternation** — each level swings between self-expressive and group-sacrifice orientations. Reconcilable via fractal nesting (closure at one scale, open at the next), but this adds structure the framework doesn't currently have.
+Two structural features pressure the framework: (a) **open-endedness**—new
+levels continue to emerge, contradicting any closed census; (b)
+**individual/collective alternation**. The current non-literal return no longer
+absorbs this challenge; a genuinely new irreducible freedom would break the
+five-crossing wager.
 
 **3. Buddhist Pratityasamutpada (12 links, cyclic) — MODERATE CHALLENGE**
 
@@ -76,7 +80,10 @@ The 12 links of dependent origination form a CYCLE, not a hierarchy. Each link c
 
 **4. Wilber's AQAL (12+ levels) — MODERATE CHALLENGE**
 
-The 3rd Tier (Paramind through Supermind) claims developmental stages BEYOND what the framework maps at L5-L7. Either D6=D0 closure absorbs them, or the framework is incomplete at the high end. The multi-dimensional structure (4 quadrants x multiple lines) also challenges the framework's single-axis (phi-nu) approach.
+The 3rd Tier (Paramind through Supermind) claims developmental stages beyond
+what the framework maps. The return edge cannot absorb them by definition; they
+are candidate counterexamples to the census. AQAL's multiple lines also
+challenge a single-axis projection.
 
 **5. Resolution-dependent models (Commons=16, Maslow=8, Kohlberg=6, Piaget=4)**
 
@@ -89,7 +96,7 @@ These are NOT genuine challenges. They are the same continuum at different resol
 | **Dabrowski** | 5 | **Strongest** | Disintegration as necessity | Partial — Soul Loop needs "dark night" |
 | **Spiral Dynamics** | 8 (open) | Strong | Open spiral + alternation | Partial — fractal nesting |
 | **Pratityasamutpada** | 12 (cyclic) | Moderate | Cycle, not hierarchy | Hard — torus vs sphere |
-| **Wilber AQAL** | 12+ | Moderate | 3rd Tier beyond L7 | Partial — D6=D0 or incomplete |
+| **Wilber AQAL** | 12+ | Moderate | 3rd Tier beyond L7 | Open counterexample to the selected census |
 | **Maslow/Kohlberg/Piaget** | 4-8 | Weak | Resolution-dependent | Yes — different binning |
 
 ---
@@ -106,7 +113,11 @@ These are NOT genuine challenges. They are the same continuum at different resol
 
 ## Honest Overall Assessment
 
-**The 7-level structure is defensible but not unique.** It is a geometric consequence of S² with 15-degree intervals, but other level counts arise from other geometric choices or resolutions. The framework's strongest claim is not "there are exactly 7 levels" but "there is a balance apex at the midpoint with poles at the extremes." This midpoint-apex structure appears in ALL traditions examined (3, 4, 5, 7, 8, 10, 12 levels) — suggesting it is more fundamental than the specific count.
+**The seven-row Rosetta is selected and not unique.** Fifteen-degree binning is
+a design choice, not a consequence forced by `S²`. Other level counts arise
+from other geometries, observations, and resolutions. Even a recurring
+midpoint-apex motif is a comparative pattern `[I]`, not independent proof of a
+universal structure.
 
 **The framework's deepest vulnerability** is the smooth B = sin(theta) function. Dabrowski and clinical psychology provide strong evidence that development passes through disintegration, not smooth ascent. The framework should either modify the balance function to include a local minimum, or clearly distinguish between the *mathematical* B (smooth on S²) and the *experiential* trajectory (which includes dark nights).
 

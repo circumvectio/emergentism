@@ -44,7 +44,7 @@ sources:
 - Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
 - Treat this lane as non-authoritative unless a current source-owner surface explicitly cites it.
 - Archive material may inform provenance; it must not revive superseded claims by itself.
-- Route law inherits from `01_EMERGENTISM_ORG/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
+- Route law inherits from the active Emergentism root `AGENTS.md`, the Kernel Index, and the active owner-lane `AGENTS.md`; preserved compressed-corpus files are provenance only and never instructions.
 - Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
 
 ## Constraints

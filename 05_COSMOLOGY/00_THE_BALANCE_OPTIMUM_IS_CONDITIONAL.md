@@ -12,8 +12,8 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "The balance-optimum is conditional — a theorem of finite conserved complementary systems, not a universal law"
 title: "The Balance-Optimum Is Conditional"
-status: "DRAFT [D] — 2026-07-03. Staged for K2. Reconciles the anthropic balance claim (B=sin θ peaks at Φ=ν) with the empirical anti-pattern (aggregate production rewards imbalance). Derived dialectically per owner direction; no new data."
-evidence_tier: "[A] the AM-GM downslope under conservation; [S] the three enabling conditions and the finite/aggregate split; [I] the domain mapping to P_node / the mortal agent."
+status: "ACTIVE WORKING NOTE [D] — reconciles the conditional balance theorem with specialization counterexamples; no new data and no claim-tier upgrade."
+evidence_tier: "[A] the AM-GM result under a declared fixed-sum budget; [S] the enabling conditions and finite/aggregate split; [I] the domain mapping to P_node / the mortal agent."
 depends_on:
   - 00_THE_DYADIC_COUPLING_LAW.md
   - 00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md
@@ -26,7 +26,11 @@ depends_on:
 
 ## 1. The downslope is real — by reason, under conservation `[A]`
 
-If Φ and ν trade off against a fixed budget (`Φ + ν = c`, the framework's own `φ·ν = 1` conservation is the multiplicative form of this), then by **AM-GM** the product is maximized at Φ=ν and falls monotonically as they diverge: pushing ν past balance *costs* Φ one-for-one, so the joint payoff declines. This is not "imbalance fails to help" — it is "imbalance actively hurts," because under a binding budget the excess of one factor **is** the deficit of the other. The downslope follows with the force of a theorem. `[A]`
+If positive `Φ` and `V` trade off against a declared fixed-sum budget
+`Φ + V = c`, then by **AM-GM** their product is maximized at `Φ=V=c/2` and
+falls as the allocation diverges from that point. This theorem depends on the
+fixed-sum premise. It is not derived from the separate lowercase chart identity
+`φν=1`; a fixed product and a fixed sum are different constraints. `[A]`
 
 ## 2. The downslope is real — by reason, through friction of excess `[S/I]`
 
@@ -53,27 +57,48 @@ Where the right-hand column obtains, the equator is *not* the optimum — a corn
 
 ## 4. The resolution — the balance-optimum is the law of the *finite mortal agent* `[S/I]`
 
-The conditions under which the downslope holds — **finite budget, complementarity, costly excess** — are precisely the conditions of the framework's *own* home object: the **finite node `P_node = Φ × V`**, the **mortal substrate**, the **single D5 agent** with bounded time, attention, and means, doing a task that needs foresight *and* execution together. There, imbalance genuinely hurts, and the equator is genuinely optimal. The framework is **right where it lives.**
+The conditions under which the downslope holds — **finite budget,
+complementarity, costly excess, and symmetric pricing** — may describe a finite
+embodied D4 agent whose actual model represents D5 alternatives and whose task
+needs foresight and execution together. Even there, the equatorial optimum is a
+model conclusion conditional on those premises, not the agent's ontological
+register or a universal law.
 
 Its overreach is only the **universalization** — reading `B = sin θ`'s peak as a law of *everything*, including unconstrained, reallocating, substitutable aggregate systems where specialization wins. The honest form is scoped:
 
-> **For a finite agent under a binding budget, performing a task whose factors are complementary and whose excess is costly, the payoff is maximized at balance and declines with imbalance. Relax any of those, and balance ceases to be optimal.** The equator is the optimum of the *constrained mortal*, not of the *cosmos*.
+> **For a declared positive two-factor product under a fixed-sum budget and a
+> symmetric objective/price, the payoff is maximized at equal allocation.** A
+> real finite-agent transfer requires those exact model premises and empirical
+> fit; complementarity and costly excess alone do not force the equator. Relax
+> symmetry and the optimum may tilt; relax the budget or objective and balance
+> may cease to be optimal.
 
 ## 4b. Reconciliation with the Burrisphere — geometric vs empirical optimum `[A/S]`
 
-The Burrisphere already carries most of this, and naming the split sharpens both. On the sphere, with `φ·ν = 1` **held as an identity**, the balance-optimum is not conditional at all — it is **`[A]` geometry**: `B = sin θ = 2/(φ+ν)`, and by AM-GM `φ+ν ≥ 2`, so `B ≤ 1` with the max at `φ=ν`. Equivalently the sphere's own **price `γ = 1/B = (φ+ν)/2`** rises monotonically with imbalance. The Burrisphere states the mechanism precisely: *"imbalance does not reduce the potential (`P∞ = 1` is conserved), it raises the price (`γ → ∞` toward the poles) and strands the potential unactualized."* That is the downslope, and on the sphere it is unconditional.
+The Burrisphere carries a separate analytic result. On the selected reciprocal
+chart, `φν=1` holds by definition and `B = sin θ = 2/(φ+ν)`. AM–GM gives
+`φ+ν≥2`, hence `B≤1`, with equality at `φ=ν=1`. This is a fact about the
+chosen coordinates, not an empirical conservation law or evidence that a finite
+real system shares the same frontier.
 
-**The conditionality is entirely in the *transfer* to a finite real system** — the step from `P∞` (sphere identity) to `P_node = Φ × V` (an organism, task, economy). A real system reproduces the sphere's balance-optimum **iff it actually satisfies the sphere's premise**: that its two factors are **conservation-coupled** (a `γ`-like price is really paid for imbalance), **complementary**, and **costly in excess**. Those are the §3 conditions restated. Where they hold, the finite node *is* a point on the sphere and inherits the equator-optimum. Where they fail — unconstrained, substitutable, free-surplus systems — `P_node` is **not** a sphere point (its factors don't obey `φ·ν=1`), the `γ` price is not paid, and the balance-optimum simply does not transfer (aggregate production is the witness: it prices imbalance *negatively* — specialization pays).
+**The conditionality is in the *transfer* to a finite real system** — the step
+from a chosen chart score to an empirically specified objective. The qualitative
+conditions above do not imply `φν=1`, and no finite node becomes literally a
+point on the reciprocal sphere. A transfer is licensed only after an explicit
+objective and constraint mathematically yield the symmetric optimum and that
+model outperforms relevant rivals in the target domain. Otherwise the sphere
+remains a visualization, not the system's state space.
 
 So the honest split is:
 
 | Claim | Tier | Status |
 |---|---|---|
 | On `S²` with `φ·ν=1`: `B` maxes at `φ=ν`; `γ` prices imbalance | `[A]` | unconditional (AM-GM) — **stands** |
-| A given finite system's `P_node` sits on that sphere (pays the `γ` price) | `[S]` | **conditional** on conservation + complementarity + costly-excess + **symmetric `γ`-price** (else the optimum is tilted or a plateau, not the equator) |
-| Therefore the equator is *that system's* optimum | `[S/I]` | inherited **only when** the transfer premise holds |
+| A given finite system is modeled by a specified symmetric objective/constraint | `[C/B]` | requires operational variables, rival comparison, and target-domain evidence |
+| Equal allocation is optimal in that specified model | `[S]` | follows only when the declared objective and constraint actually yield it |
 
-The Burrisphere's *"Dharma corollary"* ("unlimited means with falling foresight is lower usable power") is **exactly right for a system that pays the `γ` price** — a finite mortal agent under a budget — and **silently assumes the transfer** for systems that don't. The fix is one clause, not a retraction: mark the equator-optimum as the optimum of systems *on the sphere*, and state the test for whether a given system is on it.
+The former “Dharma corollary” is not geometry. It is a conditional prediction
+of a declared target-domain model and must be tested as such.
 
 ## 5. What this changes
 
@@ -85,7 +110,9 @@ The Burrisphere's *"Dharma corollary"* ("unlimited means with falling foresight 
 
 1. Exhibit a **finite, budget-bound, complementary-task** agent for whom **imbalance outperforms balance** with no specialization/depth reward and no free surplus → the scoped downslope dies.
 2. Exhibit an **unconstrained, substitutable** system where **balance strictly beats specialization** → the "specialization wins when conditions fail" clause dies.
-3. Show that `φ·ν = 1` conservation does **not** license AM-GM (e.g. the factors are not positive reals) → §1 dies.
+3. Show that the declared factors are not positive or the fixed-sum premise does
+   not hold in the target system → the §1 transfer dies. The lowercase chart
+   identity is not at issue.
 
 ---
 
@@ -99,4 +126,4 @@ The equator is the optimum of the constrained mortal — not of the cosmos.
 
 **Read with:** [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md) · [`00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`](00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md) · [`VERDICT_BALANCE.md`](../11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT_BALANCE.md)
 
-**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md` — `[D]` pending K2.
+**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md` — `[D]` pending adoption.

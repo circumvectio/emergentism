@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "Research Brief: The Objective Function Spectrum — Can You Have Objective Function Without Volition?"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # Research Brief: The Objective Function Spectrum — Can You Have Objective Function Without Volition?
@@ -293,13 +292,16 @@ Put the brief down.
 
 ---
 
-*Decentralized Authority Model reminder: This document is an instrument. The goal is direct phi-access without any mediator. Including this taxonomy. Including this framework.*
+*Self-dissolving-mediator reminder: this document is an instrument, governed by accountable authorization and exit. It grants neither direct metaphysical access nor authority over its reader.*
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 -- this is a research brief, not an implementation spec.
 2. **Your Next Action:**

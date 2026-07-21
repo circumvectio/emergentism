@@ -1,50 +1,38 @@
 ---
-rosetta:
-  primary_level: L1
-  primary_column: Philosophy
-  operator: "Kali 🎲"
-  tier: "Demon"
-  regime: "Caṇḍāla"
-  register: "[I]"
-  canonical_phrase: "01_F5_FORCE"
+title: "01 F5 Force — Conjectural ordering language"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[I] symbolic/teleological reading; [C] literal-force claim"
 ---
 
-# 01_F5_FORCE
+# 01 F5 Force — Conjectural ordering language
 
-## What This Folder Is
+This sublane retains `F5` as an Emergentist name for a teleological or ordering
+reading of viable completion. It does **not** establish a fifth physical
+interaction, a force↔dimension bijection, physical retrocausality, or a universal
+will.
 
-This is the focused Objective Function lane for F5 / ektropy / ordering-force material.
+## Active content
 
-> **Canonical F5 referent:** Canonical F5 = the ektropic / Ω equator-ward force (the via-positiva +1). The north-pole-drift rows and the F5-as-sphere [C] conjecture are DISTINCT usages, disambiguated in `../01_F5_FORCE_MAP_AND_EKTROPY.md`.
+- [The Serpent Is F5](02_THE_SERPENT_IS_F5.md) — symbolic and philological
+  ordering-force correspondence `[I/C]`.
 
-## What It Owns
+The former staged-gradient application and force-map application were moved to
+the pure-boundary archive on 2026-07-20. They remain provenance, not active
+owners.
 
-- F5 as directional-gradient language.
-- The serpent / `h2rto` / Rta ordering-force face where it belongs to L1 Objective Function.
-- Conjectural force-language surfaces when clearly marked as conjectural.
+## Routing
 
-## What It Must Not Own
+- Mathematical identities and proofs route to
+  [`../02_THE_DERIVATION/`](../02_THE_DERIVATION/).
+- The current viable-completion conjecture is
+  [`../02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md`](../02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md).
+- Candidate emergence crossings route to the Burri Rules and the formal μ owner.
+- Biology-facing statements begin with established vocabularies such as
+  teleonomy, selection, autopoiesis, homeostasis, allostasis, and niche
+  construction.
 
-- Formal-system proofs. Route those to `../02_THE_DERIVATION/` or `../../05_COSMOLOGY/03_FORMAL_SYSTEM/`.
-- Axiomatic First Principles claims. Route those to `../../06_ONTOLOGY/`.
-- Public symbolic institutional narrative. Route that to `../../07_THEOLOGY/`.
+Any stronger F5 claim requires a quantitative discriminator and independent
+reproduction. Symbol, etymology, cross-domain fit, or canonical status cannot
+substitute for that evidence.
 
-## Read First
-
-- `02_THE_SERPENT_IS_F5.md` — the helix / *h₂r̥tó-* / Ṛta ordering-force face (symbolic + philological)
-- `03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md` — F5 refined as staged-gradient selection (MEGA-plate current [A] third-party empirical referent; F5 mapping [I]; theurgical implications [C])
-- Parent route: `../README.md`
-
-## Status
-
-Active source-owner subfolder. Literal fifth-force claims remain conjectural unless independently established.
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/01_F5_FORCE/README.md`
+⊙ = • × ○ — emblem, not proof.

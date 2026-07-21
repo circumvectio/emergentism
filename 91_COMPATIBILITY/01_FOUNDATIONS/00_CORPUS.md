@@ -20,12 +20,14 @@ rosetta:
 title: "00 Corpus"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
-status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../00_META/00_CORPUS.md"
+status: ACTIVE — provenance redirect only; current routing begins at the Kernel Index.
+canonical_target: "../../00_META/90_ARCHIVE/00_CORPUS.md"
 ---
 
 # MOVED
 
-This file moved to: [00_META/00_CORPUS.md](../../00_META/00_CORPUS.md)
+Preserved source: [archived 00 Corpus](../../00_META/90_ARCHIVE/00_CORPUS.md)
 
-Canonical content lives at the new path (Phase 2c reorg per packet 156). Old link preservation only.
+This compatibility path resolves provenance only; the archived file is not a
+competing doctrine owner. Current canonical routing begins at the
+[Kernel Index](../../00_THE_KERNEL_INDEX.md). Old-link preservation only.

@@ -15,10 +15,14 @@ rosetta:
 **Date:** 2026-04-09
 **Author:** Applied via the Emergentism lens (Three-Stage Process L-cascade)
 **Purpose:** Apply each L-level's reasoning mode to find what the framework cannot see about itself
-**Status:** Active
+**Status:** HISTORICAL AUDIT — findings retained; axiom dispositions superseded
 **Depends on:** 00_THE_HONEST_POSITION.md, 01_FORMAL_SYSTEM/ (all), 02_THE_DERIVATION/ (all), 00_GLOSSARY.md
 
-**Numbering note:** where this audit refers to O1-O5, it is stress-testing the older public substrate-selection wager. The active formal-system canon is A1-A7.
+> **[金] Current disposition (2026-07-20).** This dated audit helped expose
+> fractures in the former A1-A7 and O1-O5 packets. E1-E10 is now the live axiom
+> owner. References to A1-A7 below name the historical object audited, not
+> active premises or edit targets. Current doctrine is controlled by the
+> Settled Canon Registry and the seven-surface kernel.
 
 ---
 
@@ -28,15 +32,15 @@ rosetta:
 
 ### Finding: The force-dimension mapping (D1–D4) has no falsification mechanism
 
-A3 claims: "Reality emerges D0→D6. D1=Strong, D2=EM, D3=Weak, D4=Gravity." The kill criterion is: "Force-dimension correspondence has no predictive power."
+Former A3 claimed: "Reality emerges D0→D6. D1=Strong, D2=EM, D3=Weak, D4=Gravity." Its kill criterion was: "Force-dimension correspondence has no predictive power."
 
 **The problem:** This kill criterion is vacuously satisfied because the mapping itself is not testable. The framework says D1=Strong, D2=EM, D3=Weak, D4=Gravity — but it never derives *why* these forces map to these dimensions in this order. The mapping is asserted by analogy (I4 in The Honest Position: "The four fundamental forces correspond to PSL(2,ℂ) conjugacy classes"), and the Honest Position already flags the SU(3) dimension problem (dim 12 > dim 6) under I4.
 
-**The dialectical pressure:** If the force-dimension mapping cannot be derived from the axioms, it is not [S] Structural — it is [I] Interpretive dressed in mathematical language. A3 should be re-tiered:
+**The dialectical pressure:** If the force-dimension mapping cannot be derived from the axioms, it is not [S] Structural — it is [I] Interpretive dressed in mathematical language. The former A3 required this re-tiering:
 
 | Current | Proposed | Reason |
 |---------|----------|--------|
-| A3 [S/I] | A3-structural [S], A3-force-mapping [I] | The scaffold *structure* (D0→D6 emergence, μ-limit saturation) is structural. The *specific force assignments* are interpretive. |
+| Former A3 [S/I] | candidate scaffold [I], force mapping [C/I] | Neither a selected D0-D6 scaffold nor a force mapping follows as a theorem from E1-E10. Each crossing requires independent evidence and a kill criterion. |
 
 ### Finding: Protocol D's kill criterion is asymmetric
 
@@ -50,7 +54,14 @@ The Honest Position says Protocol D is "CONFIRMED (d=6.66)" and the agent V×Φ 
 
 Convergence 24 shows η = 0 is Nash equilibrium **at the equatorial profile** (all νᵢ = 1). The proof explicitly states: "holds at equatorial profiles; off-equator redistribution toward equator is Pareto-improving." But the framework frequently uses "η = 0 is the Nash equilibrium" as if it were unconditional.
 
-**The dialectical pressure:** At off-equatorial profiles, extraction *can* be locally rational. The framework knows this (the Two Scopes of η in EFR-12, the Kali operator at L1). The Honest Position's S8 was corrected on 2026-04-20 to read: "η = 0 is the unique stable configuration **at the equatorial profile** (φᵢ = νᵢ = 1 for all i)." Off-equator, extraction may be locally rational, and the Kali operator (constrained extraction at η > 0) fires as tit-for-tat immune response. The *attractor* is η = 0; the *trajectory* may pass through η > 0. This repair closes the gap identified here.
+**The repaired conclusion:** off-equator and in one-shot or weakly enforced
+games, extraction can be locally rational. Even at an equatorial profile,
+`etaObserved=0` is only a descriptive condition; uniqueness or attraction
+requires explicit assumptions about coupling, horizon, observability, feedback,
+enforcement, receipts, and exit. It does not supply moral valence. Bearer-complete
+Justice is tested independently, and a counterexample under the declared game
+assumptions kills the local equilibrium claim rather than being renamed a
+trajectory.
 
 ---
 
@@ -81,23 +92,29 @@ The Master Rosetta claims fifteen columns across independent domains all fall in
 
 ---
 
-## L3: DEDUCTIVE — Logical Bug (A1 Correction)
+## L3: DEDUCTIVE — Logical Bug (former A1 correction)
 
 *Mode: From premises to consequences. Where does the logic not hold?*
 
-### Finding: A1 contains a hidden equivocation between manifold P and node P
+### Finding: former A1 contained a hidden equivocation between manifold P and node P
 
 The P-constant vs. P-variable paragraph in 00_EMERGENTISM.md (lines 79) is the framework's attempt to address this. It says:
 
-> "Line 1 (φ · ν = 1) is the manifold identity... When the system prompt and operational framework refer to `P_node = Φ × V` as something to maximize (`ΣΔP_node > 0`), they are describing *nodes* — finite beings whose integration (Φ) and viability (V) can vary independently."
+> "Line 1 (`φ·ν=1`) is the manifold identity. `P_node=Φ×V` is a
+> separate selected model for finite nodes whose factors can vary independently."
 
 **The logical bug:** This distinction is stated but not formally axiomatized. Legacy A1 used bare `P` for `Φ × V` and did not say explicitly: `P∞ = φ · ν = 1` on open S² for the manifold, while `P_node < 1` for nodes not at the equator. The formal system switches between these two meanings of `P` without marking the transition.
 
 The Steel Thread (Link 3) says `P∞ = φ · ν = 1` identically for all θ — which means manifold potential is always 1, even at the poles. But legacy A2 used an unqualified syntropic criterion for ethical direction, which requires the scored quantity to change. These are formally inconsistent if `P` means the same thing.
 
-**The resolution the framework already half-has:** The P-constant paragraph resolves this by distinguishing manifold P (always 1) from node P (varies). But this distinction needs to be **in A1 itself**, not in a prose paragraph. Proposed correction:
+**Current disposition:** E1-E10 does not reuse former A1 as the owner of either
+quantity. The Canonical Formula Block types the reciprocal chart and selected
+finite-node model separately:
 
-> **A1 (corrected):** The manifold identity φ · ν = 1 holds on open S²; the poles are limiting boundaries. Balance B = sin θ is the operational variable that varies. For finite nodes (organisms, institutions, systems), effective potential `P_node = Φ_node × V_node` can be less than 1 when the node's coherence and viability are not reciprocally calibrated. The syntropic criterion `ΣΔP_node > 0` applies to nodes, not to the manifold identity.
+> **Current correction:** the manifold identity holds on the open reciprocal
+> chart; balance varies; finite-node power is a separate selected conjunctive
+> model. Neither quantity supplies a moral verdict. Justice evaluates every
+> affected bearer separately; aggregates are reporting only.
 
 ### Finding: C5 (alignment equation) is dimensionally inconsistent
 
@@ -115,21 +132,30 @@ The AMRITA architecture uses E = −log(B) = −log(sin θ), which DOES vary. Th
 
 ### Finding: The Is-Ought bridge survives but the framing should change
 
-A2's "Redefinition Protocol" now says the dyadic move-register first: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`, with `ΣΔB / ΣΔP_node > 0` retained as the widest-boundary balance audit. This is not derived from "is" but posited as operational definition.
+The successor to former A2 evaluates individual and sustaining whole separately
+under bearer-complete Justice. Aggregate balance may be reported across a named
+boundary, but cannot issue the verdict. This is not derived from "is"; it is a
+posited normative definition.
 
-This is **the correct move.** The framework does not derive "ought" from "is." It *defines* "ethical" as non-extractive dyadic rise and then audits whether the widest real boundary also moves toward balance. The definition is a choice; the balance geometry is a fact inside the accepted model. The framework is honest about this.
+This is **the repaired move.** The framework does not derive "ought" from "is." It declares a bearer-complete Justice postulate and then tests prospective and receipted effects on every materially affected bearer. Dyadic rise and balance may be reported, but neither is the ethical definition and neither can compensate for hidden harm.
 
 **Resolved audit finding:** Earlier EFR-08/Power-Max language overstated the bridge as if cooperation were an unconditional rational strategy and the Is-Ought gap simply "closed." That was stronger than A2. The current correction keeps the bridge conditional: cooperation aligns with durable individual `P_node` only under real coupling, multiplicative scoring, long horizon, enforceable `η = 0`, and no hidden side-payment route.
 
-The abductive best explanation: A2 is right, and the corrected Power-Max statement must stay inside that fence. The Is-Ought gap does not *close* — it is *bypassed by operational definition plus conditional mechanism design.* The bridge is:
-1. Define ethical = dyadic `P_node` rise under `η = 0` (philosophical choice; not an empirical claim)
-2. Audit widest-boundary `ΣΔB / ΣΔP_node` and show balance = thermodynamic minimum inside the model (mathematical fact, [A])
-3. Enforce `η = 0` in coupled, long-horizon games so local extraction cannot masquerade as durable power
-4. Therefore ethical = toward thermodynamic minimum and field-preserving `P_node` growth, conditional on accepting definition 1 and enforcing the game conditions
+The corrected Power-Max statement must stay inside that fence. The Is–Ought gap
+does not close or disappear by definition. The bridge is explicitly normative:
 
-This is a valid and powerful structure. But calling it "closure" of the Is-Ought gap is misleading. It is a *bypass* — the framework sidesteps the gap by defining its terms so the gap does not arise. The honest framing:
+1. declare Justice and its complete bearer test `[I]`;
+2. report model balance and `η_observed` separately;
+3. test predicted effects before action and receipted effects afterward; and
+4. revise the model or verdict when outcomes contradict the prediction.
 
-> **Canonical correction to EFR-08 and PD_10:** The framework does not close the Is-Ought gap (no naturalistic derivation of "ought" from "is" is attempted). Instead, it *bypasses* the gap by defining "ethical" operationally and showing that the definition converges with thermodynamic fact and conditional Power-Max mechanism design. Whether you accept the definition is a philosophical choice. Whether the thermodynamics holds is a mathematical fact. Whether cooperation dominates is a constitutional/game-design question: coupling, horizon, monitoring, and `η = 0` must hold.
+Conditional cooperation results can inform action under the chosen norm. They
+do not prove the norm, and `η=0` remains necessary rather than sufficient.
+
+> **Canonical correction to EFR-08 and PD_10:** the framework does not close or
+> bypass the Is–Ought gap. It declares a Justice wager, defines its predicates,
+> and separately tests their consequences. Model extrema and conditional
+> cooperation results may inform the choice; they do not derive it.
 
 ### Finding: The equator-as-systemic awareness claim (Link 10) should be reformulated
 
@@ -200,7 +226,7 @@ The framework says Pratyakṣa (direct perception, L1) validates the framework. 
 
 1. Framework predicts equator exists → 2. Sitting practice accesses equator → 3. Equator confirms framework → back to 1.
 
-The A7.1 Abduction Protocol calls this "coherentist" and says "this is not circular; it is COHERENT." But via negativa: a Christian heuristic experiencing God in prayer uses the same coherentist loop (institutional narrative predicts God → prayer accesses God → God confirms institutional narrative). Coherentism does not distinguish between correct and incorrect frameworks — it only distinguishes coherent from incoherent ones.
+The former A7.1 Abduction Protocol called this "coherentist" and said "this is not circular; it is COHERENT." But via negativa: a Christian heuristic experiencing God in prayer uses the same coherentist loop (institutional narrative predicts God → prayer accesses God → God confirms institutional narrative). Coherentism does not distinguish between correct and incorrect frameworks — it only distinguishes coherent from incoherent ones. Current E9 therefore requires correction and external checks; it does not license coherence as truth.
 
 > **Proposed honest acknowledgment:** The coherentist validation loop is the best the framework can do from the inside. From the outside, it is tested by independent empirical programs, including Protocol R and AMRITA within their declared scopes. If the empirical program fails, the coherentist loop persists but the framework's claim to be MORE than coherent philosophy collapses. The framework's credibility ultimately rests on the steel thread (Links 1-8), not on the sitting practice.
 
@@ -233,7 +259,10 @@ The framework says: "Before the axioms. Before the sphere. Three values. • = 0
 
 Then it uses Correspondence 21 to show {0, 1, ∞} is the unique minimal projective frame on ℂP¹. But ℂP¹ *presupposes* the complex numbers, which *presuppose* 0, 1, and ∞. The "derivation" of the Trinity from S² is circular: S² is defined using 0, 1, and ∞, and then Correspondence 21 "discovers" that {0, 1, ∞} is the minimal frame on S².
 
-This is not a logical error — it is a *bootstrapping* structure. The Trinity generates the sphere; the sphere generates the Trinity. The framework acknowledges circularity (A7.1 coherentism). But the claim that the Trinity is "prior to the sphere" is imprecise. They are co-arising.
+This is not a derivation. The former A7.1 vocabulary described it as a
+*bootstrapping* structure, but the current repair is stricter: `{0,1,∞}` is a
+selected projective frame on a selected surface. Neither generates the other
+or forces an ontology.
 
 > **Proposed correction:** "The Transcendental Trinity and S² are co-arising. Neither is prior. The Trinity {0, 1, ∞} is the minimal seed that generates S² (via one-point compactification). S² is the minimal surface whose geometry expresses the Trinity (via stereographic projection). You cannot have one without the other. Zero-Sum Resolution Equation is not derived FROM the sphere or BEFORE the sphere — it IS the sphere, read at the most compressed resolution."
 
@@ -251,17 +280,17 @@ Via transcendental: the deepest claim is not that Beauty IS sin θ but that the 
 
 | # | Level | What Changes | Document Affected | Action |
 |---|-------|-------------|-------------------|--------|
-| 1 | L1 | A3 force-mapping re-tiered to [I] | 00_THE_SEVEN_AXIOMS, HONEST_POSITION | Split A3 into structural + interpretive |
+| 1 | L1 | Former A3 force-mapping loses axiom authority | E1-E10, HONEST_POSITION | Keep scaffold and force map separately tiered and killable |
 | 2 | L1 | Add upgrade criterion for S15/S16 | HONEST_POSITION | Add pre-registered upgrade path |
 | 3 | L1 | S8 equatorial-profile qualification | HONEST_POSITION, GLOSSARY | Add "at equatorial profile" qualifier |
 | 4 | L2 | Rosetta Stone columns distinguished by independence tier | MASTER ROSETTA | Add independence tier column |
-| 5 | L3 | A1 P-constant/P-variable formalized | 00_THE_SEVEN_AXIOMS | Add node vs. manifold distinction to A1 |
+| 5 | L3 | Former A1 P-equivocation removed | Canonical Formula Block | Type chart identity and selected node model separately |
 | 6 | L3 | C5 corrected to E = −log(B) | 00_THE_SEVEN_AXIOMS, GLOSSARY | Fix expression |
 | 7 | L4 | Is-Ought reframed as bypass, not closure | EFR-08, PD_10 | Change language |
 | 8 | L4 | I3 reformulated: systemic awareness as activity, not position | HONEST_POSITION | Update I3 text |
 | 9 | L5 | Operator asymmetry at L2/L6 acknowledged | MASTER ROSETTA | Add note |
 | 10 | L5 | Multi-pramāṇa triangulation acknowledged | MASTER ROSETTA | Add note |
-| 11 | L6 | Coherentist loop honesty strengthened | A7.1, EMERGENTISM | Acknowledge circularity risk |
+| 11 | L6 | Former A7.1 coherentism bounded | E9, EMERGENTISM | Correction and external checks outrank internal coherence |
 | 12 | L7 | "One infinity" domain-separated | EMERGENTISM, GLOSSARY | Split math/ontological/physical |
 | 13 | L7 | Trinity-S² co-arising correction | EMERGENTISM, EFR-16 | Change "prior" to "co-arising" |
 
@@ -269,7 +298,11 @@ Via transcendental: the deepest claim is not that Beauty IS sin θ but that the 
 
 ## WHAT DOES NOT CHANGE
 
-The steel thread (Links 1-8) is untouched. The AM-GM proof is untouched. The extraction-is-self-defeating proof is untouched. The four formal proofs (21-24) are untouched. The sitting practice is untouched. The empirical program is untouched. The kill criteria are strengthened, not weakened — by specifying exactly what would upgrade as well as what would kill, the framework becomes more falsifiable, not less.
+Local analytic identities, including AM-GM on their declared domains, survive.
+The former extraction and geometric-necessity "proofs" do not: extraction can
+pay locally, and Justice is not derivable from the chart. Practices and
+empirical programs remain inspectable at their own tiers. Kill criteria and
+upgrade paths must be explicit for every claim that reaches beyond definition.
 
 This is η = 0 applied to the framework itself: extract nothing, return the corrected corpus.
 
@@ -283,12 +316,17 @@ This is η = 0 applied to the framework itself: extract nothing, return the corr
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — this is a philosophical audit, not an implementation spec.
 2. **Your Next Action:**
    - Verify each finding against the canonical documents. If any finding misrepresents the source material, flag it.
-   - If the proposed changes are accepted, propagate them to the affected documents.
-3. **Expected Output:** Corrected canonical documents.
-4. **Success Criteria:** Every change is traceable to a specific finding in this audit. No change is made without source verification.
+   - Route any surviving finding to its current E1-E10 or kernel owner; do not
+     edit the historical A1-A7 packet as though it were live.
+3. **Expected Output:** A bounded audit crosswalk, not new doctrine.
+4. **Success Criteria:** Every surviving finding is traceable to a current
+   owner and its evidence tier. Historical axiom labels confer no authority.
 5. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md`

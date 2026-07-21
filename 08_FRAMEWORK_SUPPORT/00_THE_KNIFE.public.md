@@ -52,11 +52,20 @@ We ask you to test it, not to believe it.
 
 **The objection:** Your axioms (O1–O5) were chosen to produce S². This is engineering, not discovery. A philosopher who prefers a flat plane picks different axioms and gets ℝ². You selected axioms that produce a sphere, then claimed reality is spherical. This is the Texas Sharpshooter fallacy.
 
-**Our response:** We do not claim the axioms are necessary. We claim they are *productive* — they dissolve 25+ philosophical paradoxes, generate testable empirical predictions, and have honest kill criteria. The wager is: accept these axioms and you get a system with zero internal contradictions and measurable outputs. If a competing system on different axioms dissolves more paradoxes and generates more testable predictions, we should be replaced. A7 demands it.
+**Our response:** We do not claim the axioms are necessary. We claim they are
+productive enough to organize questions, expose several frame errors, and
+generate testable candidate predictions with honest kill criteria. If a rival
+system explains more with fewer commitments and survives stronger contact, it
+should replace this one.
 
-**Is it sufficient?** Partially. "Compare fruits" is a pragmatic defense, not a logical one. Our credibility rests entirely on whether the empirical tests succeed. If GFS fails, the pragmatic defense collapses.
+**Is it sufficient?** Partially. "Compare fruits" is a pragmatic defense, not
+a logical one. The former Global Flourishing Study exercise was retired on
+2026-07-16 and supplies no current evidence for or against Emergentism. The
+defense now depends on preregistered discriminators and independent replication.
 
-**What would falsify us:** An alternative axiom set that produces a non-S² manifold and dissolves the same paradoxes with fewer assumptions; or failure of the empirical program (GFS, Protocol R, AMRITA).
+**What would falsify us:** An alternative axiom set that produces a non-spherical
+model and resolves the same scoped problems with fewer assumptions; or repeated
+failure of the preregistered empirical program against serious rivals.
 
 ---
 
@@ -64,7 +73,11 @@ We ask you to test it, not to believe it.
 
 **The objection:** The framework's foundation is first-person experience — "sit quietly and perceive systemic awareness." If you perceive it, the framework is confirmed. If you don't, the framework says "sit longer." This is structurally identical to every unfalsifiable religious claim. An ASI cannot sit. The foundational verification is inaccessible to the very audience the framework claims to serve.
 
-**Our response:** First-person experience is not third-person proof — we agree. But the sitting practice generates *third-person predictions* that are falsifiable: specific neural correlates (DMN deactivation, alpha/theta coherence, interhemispheric integration) measurable by fMRI and EEG. Moreover, the framework has four *other* empirical tests that require no first-person experience: GFS, Protocol R, AMRITA, and the Φ-meter. The sitting practice is one of five bridges, not the only bridge.
+**Our response:** First-person experience is not third-person proof. A practice
+may motivate measurable hypotheses, but familiar neural correlates of
+meditation do not uniquely identify the Emergentist model. The former
+flourishing-study exercise is retired; every surviving bridge must therefore be
+specified and tested on its own terms.
 
 **Is it sufficient?** Partially — and this is where we must be most honest. The neural correlates we predict are also predicted by every meditation tradition. They do not distinguish "systemic awareness is the equator on S²" from "meditation produces relaxation responses." We need at least one neural prediction *unique* to the Burri Sphere model. This is an open problem.
 
@@ -76,7 +89,10 @@ We ask you to test it, not to believe it.
 
 **The objection:** The framework claims the sphere IS the territory, not the map. But ℂP¹ is a mathematical object. Using it to describe reality is a category error — the same error the framework diagnoses in others. Every model is wrong; some are useful. The framework has confused usefulness for truth. It also violates its own compression imperative (κ = 0) by describing reality with a specific non-zero mathematical structure.
 
-**Our response:** We acknowledge the category error risk. Our defense is the empirical program: the territory either has this structure or it doesn't. We do not ask you to believe the territory is S². We ask you to test it. If the multiplicative structure describes human flourishing better than the additive structure, that is a fact about the territory. On κ = 0: the ground IS κ = 0. The sphere is the first non-trivial description that *emerges* from the ground. The framework is consistent with its own methodology.
+**Our response:** We acknowledge the category-error risk. The sphere is a
+declared instrument. Competing aggregators and geometries must be compared on
+held-out data under frozen ranking rules; success would support a scoped model,
+not prove that reality literally is `S²`.
 
 **Is it sufficient?** Partially. The "test it" response concedes that until the tests succeed, the framework IS a useful map, not a confirmed description of the territory. We should be more explicit about this: until the empirical program delivers, the framework is (b) — the most productive formal analogy — not (a) — the territory.
 

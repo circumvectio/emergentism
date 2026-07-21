@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "01_THE_DERIVATION"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 Methodology sublane per `../AGENTS.md` and root.**
 
 # 01_THE_DERIVATION
@@ -27,7 +27,7 @@ This is the Auditing sublane for the complete derivation spine.
 
 - The broader F5 derivation archive under `../../01_TELEOLOGY/02_THE_DERIVATION/`.
 - Formal-system theorem catalogues under `../../05_COSMOLOGY/03_FORMAL_SYSTEM/`.
-- Public paper packaging under `../02_THE_PAPERS/` (and the dissemination paper packets that now live under the `03_AIA` book-production lane; the old `08_FRAMEWORK_SUPPORT/07_DISSEMINATION/07_PAPERS/` path was retired in the 2026-04-25 reorg).
+- Public paper packaging under `../02_THE_PAPERS/`. Historical packets moved to an external application corpus are provenance, not active Emergentism source routes; the old `08_FRAMEWORK_SUPPORT/07_DISSEMINATION/07_PAPERS/` path was retired in the 2026-04-25 reorganization.
 
 ## Read First
 
@@ -42,7 +42,10 @@ Active source-owner subfolder.
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

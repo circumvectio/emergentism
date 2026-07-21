@@ -241,16 +241,16 @@ The multiplicative model identifies cases where additive utility is positive but
 
 These must be pre-registered.
 
-### K1
+### KC-1
 If additive models predict behavior as well or better than the multiplicative model, the strong claim fails in that domain.
 
-### K2
+### KC-2
 If the Φ coding cannot be replicated independently, the result is not trustworthy.
 
-### K3
+### KC-3
 If multiplicative advantage depends entirely on arbitrary preprocessing or post-hoc tuning, the result is not robust.
 
-### K4
+### KC-4
 If the result fails to generalize across at least one second domain (for example, trust game after ultimatum game), the broader claim remains provisional.
 
 ---

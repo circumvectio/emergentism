@@ -21,7 +21,7 @@ companion_to:
   - "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md (v1.3)"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary (papers lane).**
 
 # The Recursive Trivium: A Briefing on Teleological Cognition
@@ -121,7 +121,10 @@ The framework identifies two "edges" that touch in an "ouroboros" (circle):
 **Critical Distinctions:**
 
 * **No Hierarchy:** The Dalit is not "below" the Ṛṣi; they are co-equal poles distinguished only by the direction of their desire (eros).
-* **The η (Eta) Axis:** Good and evil (defined as "closure") are orthogonal to the micro/macro axis. Evil is the consumption of the whole for the self and can occur at any level or caste.
+* **The Justice boundary:** Good/evil is not an `eta`, micro/macro, caste, or
+  operator axis. `etaObserved` may report extraction; bearer-complete Justice
+  separately evaluates actual effects, authorization, consent, custody,
+  contest, consequence, and exit.
 
 ---
 

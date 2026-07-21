@@ -20,12 +20,14 @@ rosetta:
 
 ## What This Folder Is
 
-Framework-support meta lane for agent-facing compilers, routing tables, analysis notes, and older Lens material that still supports the framework but is not itself a Foundation root.
+Framework-support meta lane for downstream analyses, routing notes, and
+historical Lens/compiler material. It is not a Foundation root or an agent
+runtime.
 
 ## What It Owns
 
-- Agent entry and onboarding surfaces.
-- Routing tables and compiler notes.
+- Current local repository route cards.
+- Historical routing tables and compiler notes as provenance.
 - Magnum Opus review/support material.
 - Analysis documents that explain the framework-support layer.
 
@@ -33,16 +35,14 @@ Framework-support meta lane for agent-facing compilers, routing tables, analysis
 
 - Root Foundation doctrine. Route that to `../../00_META/` or the seven Foundation roots.
 - Active governance law. Route that to `../01_GOVERNANCE/`.
-- Public dissemination packages. Archived dissemination provenance lives at `../../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; create a new active owner only through the parent lane.
+- Public dissemination packages. Historical external-application provenance is not an active source route; create a new active owner only through this Emergentism lane.
 
 ## Read First
 
 - `AGENTS.md`
-- `00_AGENT_ENTRY_POINT.md`
-- `00_AGENT_ONBOARDING_SEQUENCE.md`
-- `00_AGENT_ROUTING_TABLE.md`
-- `00_CORPUS.md`
-- `README_LENS.md` for historical Lens/compiler context
+- `CLAUDE.md`
+- `00_BRIEF.md`
+- `README_LENS.md` only when auditing the retired Lens/compiler architecture
 
 ## Subfolders
 
@@ -55,12 +55,12 @@ Active support-meta lane. This folder absorbs the useful part of the former `01_
 
 ## Current Boundary
 
-The active route surface is this README plus `AGENTS.md`, with upstream
-authority in `../AGENTS.md` and `../../11_UPLINK/00_CORE/`.
+The active route surface is this README plus `AGENTS.md` and `CLAUDE.md`, with
+upstream repository routing in `../AGENTS.md` and worldview routing in
+[`../../00_THE_KERNEL_INDEX.md`](../../00_THE_KERNEL_INDEX.md).
 
-The older agent entry, onboarding, routing-table, and node-activation documents
-remain useful as Lens-era compatibility material. Treat them as historical
-support unless their frontmatter and current route notes say otherwise.
+Older entry, onboarding, routing-table, node-activation, and compiler documents
+are Lens-era provenance. They never override the current route cards.
 
 Archived translation and dissemination corridors are provenance lanes, not
 active owner folders. Route current public or release work through the parent

@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "Macro-Constraint Causal-Emergence Measurement Protocol"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol
 
@@ -330,7 +330,10 @@ No domain result is canonical until this block is frozen.
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. Do not present macro-constraint causation as proven physics. The protocol is
    `[S]`; domain universality is not.

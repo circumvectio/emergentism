@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "PAPER U: THE PRACTICE BRIDGE"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER U: THE PRACTICE BRIDGE
 
 ## First-Person Disclosure and Veridical Pratyakṣa
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [I] — Phenomenological disclosure mechanics
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_THE_REMAINING_QUESTIONS.md](../../00_META/00_THE_REMAINING_QUESTIONS.md)
@@ -39,7 +39,7 @@ The scientific method validates objects in the third-person. Constitutional Scie
 
 The corpus implies a sequence of initiation that we now formalize as the **Pedagogy of Becoming**:
 1. **Witness:** The practitioner reads the framework (the geometry, the physics bridge). The intellect maps the terrain.
-2. **Enactment:** The practitioner applies the framework (building a DAC, writing aligned code, balancing daily viability).
+2. **Enactment:** The practitioner applies the framework (building a cooperative institution, writing accountable code, balancing daily viability).
 3. **Correction:** The framework’s predictive boundaries (`η = 0`, Grace Exit) trigger when the practitioner drifts into idolatry.
 4. **Release (Pratyakṣa):** The practitioner physically sits, dropping the conceptual mapping layer, and directly experiences the unmediated substrate.
 
@@ -81,7 +81,10 @@ This paper is falsified if:
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I] (Phenomenological disclosure / internal posture).
 2. **Depends on:** The Meta-Resolution table.

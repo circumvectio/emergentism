@@ -39,7 +39,7 @@ evidence_tier: "[S] for stated algorithm classes; [I] for L-level mapping; [C] f
 | L6 | Compression (VAE, PCA) | High-dim data | Abstract → Simplify | Essence | ✓ Validated |
 | L7 | Universal Function (AGI) | All inputs | Integrate → Transcend | Optimal response | ⚠️ Theoretical |
 
-**Key for DAC:** Each agent tier computes with its L-level's algorithm class. An L1 sensor runs anomaly detection. An L3 planner runs generative models. An L4 commander runs optimisation. The algorithm IS the agent's way of knowing, expressed in code.
+**Computational reading:** each selected cognitive role is compared with an algorithm class. This is an analogy, not a claim that an algorithm has caste, identity, or authority.
 
 ---
 

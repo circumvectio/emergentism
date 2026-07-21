@@ -141,16 +141,16 @@ Any post-hoc adjustment must be explicitly labeled exploratory.
 
 ## 10. Kill Criteria
 
-### K1
+### KC-1
 If additive or fairness-threshold models explain the data as well or better than the multiplicative model on the preregistered primary metric, the strong multiplicative claim is not supported in this domain.
 
-### K2
+### KC-2
 If the multiplicative advantage depends on arbitrary preprocessing or post-hoc tuning, the result is not robust.
 
-### K3
+### KC-3
 If the Phi coding cannot be independently reproduced from the same data and rubric, the result is not trustworthy as a public bridge.
 
-### K4
+### KC-4
 If a second dataset fails to replicate the qualitative result, the broader claim remains provisional.
 
 ---

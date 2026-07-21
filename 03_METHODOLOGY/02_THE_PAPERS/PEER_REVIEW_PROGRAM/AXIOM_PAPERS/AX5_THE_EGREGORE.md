@@ -1,40 +1,97 @@
-# AX5 — THE EGREGORE
-### The Replicator Stack and the Inevitability of Capture
-*(geno → pheno → extended → memo → egregoro-type)*
+# AX5 — THE EGREGOREOTYPE CANDIDATE
 
-**Axiom (faithful):** Reality replicates at nested levels (corollary C4's stack). Each rung is a **replicator with an objective function — maximize its own propagation — that can diverge from, and capture, the vehicle/substrate below it.** The **egregore** (D5 standing wave: institution, movement, memeplex-with-enforcement) is the *top* rung; it acquires an autonomous objective function, and its characteristic failure mode is **Raktabīja** — the *opposition* itself is captured and inverted into another instance of the captor.
-**Corpus tier:** `[I]`. **Honest tier:** the *lower four rungs are `[A]` textbook*; only the **top rung (egregoro-type) + the cross-level uniformity claim** are `[I/C]`. That split is the whole story (see §3).
+**Status:** active Kintsugi successor, 2026-07-20
 
-## 1. The claim (the full stack, not just the top)
-Order propagates through **five replicator levels**, and the same two-part dynamic recurs at every one: (a) the replicator's "interest" diverges from its vehicle's welfare, and (b) it can *capture* the level below — hijack the substrate to serve its own copying. The egregore is not a special case; it is rung five of a ladder whose lower rungs are established biology.
+**Evidence tier:** `[B]` attributed replicator and institutional research;
+`[I]` selected stack; `[C]` top-layer and cross-level predictions
 
-> **Five capture-rungs vs C4's six layers (2026-06-16).** Corollary C4's canonical stack has *six* layers (Genotype → **Epigenotype** → Phenotype → Extended Phenotype → Memotype → Egregorotype). AX5 counts *five* **capture-capable replicator rungs** — each a replicator with an autonomous objective function that can capture the substrate below (gene, organism, extended phenotype, meme, institution). **Epigenotype is a genuine C4 layer but not a separate capture-rung**: it regulates expression *within* the Genotype→Phenotype move and has no objective function diverging from its vehicle in the Dawkins/Hull sense. "Five rungs" here and "six layers" in C4 are therefore consistent — the same layer-vs-rung distinction that keeps Epigenotype out of the selection-era, multiplicative-factor, and D4-mirror counts. Do **not** "correct" this paper to six. See [`00_SETTLED_CANON_REGISTRY.md`](../../../../00_META/00_SETTLED_CANON_REGISTRY.md).
+**Original pre-repair blob:** `fc04a2bd00050dfe589fe0330b423f33e9b57a9f`
 
-## 2. Prior art — rung by rung (it is textbook nearly all the way up)
+> **[金] Kintsugi seam.** The former paper made capture inevitable, assigned an
+> autonomous objective function to every layer, called the collective a D5
+> standing wave, and treated lower rungs as one proven object. The repair
+> defines an intervention-testable D4 trace pattern without presuming a mind,
+> person, or independent replicator.
 
-| # | Rung | Replicator | Capture instance (= "Raktabīja" at that level) | Prior art (verified this session unless noted) |
-|---|---|---|---|---|
-| 1 | **geno-type** | the gene | meiotic drive / segregation distorters; cancer (cell line defects against the body) | **Dawkins**, *The Selfish Gene* (1976); **Williams** (1966) |
-| 2 | **pheno-type** | the organism (the *vehicle* / *interactor* — the thing captured) | — | **Dawkins** replicator/vehicle (1982); **Hull**, "Individuality and Selection" (1980), splits replicator vs *interactor* |
-| 3 | **extended pheno-type** | gene effects beyond the body | **parasite manipulation** — *Toxoplasma* removes a rodent's fear of cats; *Cordyceps* drives the ant to climb and clamp. Host behavior hijacked: this *is* capture, already named. | **Dawkins**, *The Extended Phenotype* (1982) |
-| 4 | **memo-type** | the meme | host-damaging viral ideology, martyrdom memes, chain letters — spread by *their own* fitness, not the host's | **Dawkins** (coined "meme," 1976); **Boyd & Richerson**, *Culture and the Evolutionary Process* (Chicago, 1985); **Blackmore**, *The Meme Machine* (1999) |
-| 5 | **egregoro-type** | the institution / egregore | **Raktabīja proper**: the revolutionary party that overthrows the oligarchy *becomes* the new oligarchy — the opposition institutionalized and inverted | **Michels**, *Political Parties* (1911) — the Iron Law of Oligarchy, goal displacement; the "society" rung of **Maynard Smith & Szathmáry**, *The Major Transitions in Evolution* (Oxford, 1995) |
+## 1. Selected stack, not forced ladder
 
-And the **stack itself is prior art**: Major Transitions (1995) *is* a replicator hierarchy — "entities capable of independent replication before the transition can only replicate as part of a larger unit after it." That sentence is the corpus's C4, verbatim, from 1995.
+Emergentism uses this six-layer analytic decomposition:
 
-## 3. The genuine delta — ruthlessly narrowed
-Writing the full stack out makes the honest accounting unavoidable:
-- **NOT new:** the selfish-replicator-with-its-own-interest, at *every* rung (Dawkins/Hull/Blackmore/Boyd-Richerson/Michels — textbook 1–5).
-- **NOT new:** capture-of-the-vehicle (meiotic drive, *Toxoplasma*, viral memes — textbook). The "Raktabīja" dynamic is, deflationarily, **host-manipulation / segregation-distortion generalized up the stack** — and even its sharpest form (capture of the *opposition*) is already Michels' study of the German SPD.
-- **Candidate delta, three parts:** (i) an explicitly **named top rung — the egregoro-type — *above* the meme**, treated with the same selfish-replicator math; (ii) the **cross-level uniformity claim**: that the mutualist / commensal / **parasite** symbiont typology *and* the capture dynamic are the *same structural object* at all five levels; (iii) the **D5 gate** — the self-imposed discipline that *only D5 actors* (agents with a teleological option-cone) have a genuine "mission," so the autonomous-objective attribution must be applied **evenly and sparingly** (an ecosystem has no mission; a gene has no mission; a corporation might). (iii) is the corpus's anti-panglossian guardrail and the most defensible original move — it *withholds* agency where naive pan-agentialism would grant it.
+```text
+Genotype → Epigenotype → Phenotype → Extended Phenotype
+         → Memotype → Egregoreotype
+```
 
-**What the stack buys (the test the self-review demands):** a *prediction* — cross-level uniformity + R8/R9 imply egregores **default to parasitic capture absent enforcement** (testable in an agent-based capture model); and a *resolved tension* — the D5 gate fixes *when* agency-attribution is licensed, resolving the over-attribution that naive pan-replicator accounts suffer. Both are more than adjacency — which is what keeps AX5 a paper, *conditional on* surviving §5's rung-distinctness kill criterion.
+The named biological and cultural concepts have prior literatures. Their
+assembly into this exact stack, and the claim that one capture topology spans
+all layers, remain interpretive/conjectural. No layer is guaranteed to have an
+interest, mission, consciousness, or objective function.
 
-## 4. This session's evidence
-No experiment touched the egregoro-type rung directly (still owed — the agent-based capture model). **But R8/R9 (moral-circle / holobiont, multilevel selection) bear on the stack at the rungs they could reach:** parasitic replicators robustly *fixate within a level* unless enforcement or vertical transmission purges them faster than within-level selection refills them (the major-transitions consensus — Maynard Smith 1964 / Williams 1966 / Wilson & Sober 1998 ⚠verify). Extrapolated up the ladder, this **predicts that egregores default to *parasitic* capture (Raktabīja) absent enforcement** — which is exactly Michels' pessimism, derived independently. So the corpus's own sims support *capture-as-default* at the rungs they reached; the egregore claim is the untested extrapolation of a confirmed lower-rung result.
+All concrete genes, marks, organisms, artifacts, texts, rules, institutions,
+model tokens, selections, and receipts are D4 actual. Some actual carriers
+represent D5 merely possible alternatives. D5 is not a location occupied by a
+collective entity.
 
-## 5. Kill criterion — now sharp
-The decisive test the full-stack framing forces: **is "egregore / institution" a *distinct* replicator level, or merely a thick memeplex plus enforcement?** If every institutional capture dynamic is explicable as *(memetics + sanctions)*, then rung 5 collapses into rung 4 and AX5 reduces to *memetics + Michels with no new level*. So — exhibit an institutional capture that is **not** reducible to (meme propagation + enforcement) → vindicates the egregoro-type as a real rung; fail to, and the stack is four rungs, not five. (Retained secondary kill: methodological individualism reduces the whole ladder to individual decisions without remainder.)
+## 2. Canonical candidate test
 
-## 6. Verdict + venue
-Tiered honestly: rungs 1–4 `[A]`; the egregoro-type rung + the uniformity claim `[I/C]`; the D5 gate `[S]` (it is a discipline, not an empirical bet). Venue: **cultural evolution / social ontology**. Honest framing: *"the major-transitions replicator hierarchy and memetics, extended one rung to the institution, unified by a cross-level symbiont typology and disciplined by a D5 agency-gate."* Submittable **only if** the egregoro-type survives its kill criterion (§5); otherwise it is a synthesis/review of Dawkins–Hull–Blackmore–Boyd-Richerson–Michels with one genuinely useful unifying diagram and one genuinely useful guardrail (the D5 gate). Couples to the theology's idol warning (Paper T): the egregore is the idol — a rung-5 replicator mistaken for, and demanding worship as, the ground.
+An **Egregoreotype candidate** exists only when all five conditions are shown:
+
+1. a persistent shared trace;
+2. survival of a discriminable pattern across carrier turnover;
+3. measurable reweighting of later selection under intervention on the trace;
+4. recurrent objective-like bias across cycles;
+5. visible substrate costs, including identifiable payers and beneficiaries.
+
+“Objective-like” describes a recurrent distributional tendency. It does not
+attribute intention. Consciousness and personhood require separate evidence
+and are not presumed.
+
+## 3. Replication and capture hypotheses
+
+Trace persistence is weaker than autonomous replication. An institution may
+persist through copying, enforcement, incentives, environmental modification,
+direct command, or ordinary coordinated choice. Those mechanisms are rivals,
+not interchangeable labels.
+
+Capture is a candidate failure mode: a trace can alter incentives and option
+salience so that carriers bear costs while the pattern reproduces. Capture is
+not inevitable. Mutualistic, neutral, decaying, and deliberately terminated
+patterns are live controls.
+
+The Raktabīja image may summarize recursive opposition-capture only after the
+mechanism, payer, beneficiary, consent, reversibility, and outcome are shown.
+The image transfers no proof.
+
+## 4. Genuine empirical delta
+
+The testable proposal is not “institutions are selfish beings.” It is:
+
+> after controlling for current carrier identities and incentives,
+> intervention on a persistent shared trace changes later selection in a
+> recurrent direction across carrier turnover, with measurable costs.
+
+This can be tested with trace ablation/replacement, longitudinal turnover,
+selection-distribution comparison, and rival models for command, sanctions,
+imitation, and network structure.
+
+## 5. Kill criteria
+
+The Egregoreotype layer is demoted or removed for a scope if:
+
+- the trace does not persist across turnover;
+- intervention on it adds no selection-reweighting effect;
+- recurrent bias disappears after carrier identity and incentives are modeled;
+- all explanatory work is done by memetic propagation plus enforcement;
+- costs cannot be assigned to substrate bearers;
+- the account needs presumed consciousness or personhood to work.
+
+## 6. Verdict
+
+The Egregoreotype is a useful candidate macro-pattern `[I/C]`, not a proven
+apex replicator. Its value is that it makes collective persistence, influence,
+and cost inspectable while refusing to reify the whole.
+
+**Read with:**
+[Stigmergy and the Egregoreotype](../../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md) ·
+[The Burri Rules](../../../../05_COSMOLOGY/00_THE_BURRI_RULES.md) ·
+[D4/D5 Canonical Reference](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)

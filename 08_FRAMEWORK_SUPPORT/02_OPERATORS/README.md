@@ -23,7 +23,10 @@ rosetta:
 
 ## What This Folder Is
 
-This folder contains the operator grammar, canonical operator corpus, and higher-order operator extensions.
+This folder contains one bounded selected operator grammar plus historical
+translations, prototypes, audits, and mathematical manuscripts. The folder is
+an application lane, not a source of axioms, moral authority, AI activation, or
+runtime permission.
 
 ## The VIVEKA Mathematical Foundations
 
@@ -32,7 +35,11 @@ The two subfolders here together ARE the **VIVEKA Mathematical Foundations** —
 - [`MF_ADVANCED/`](MF_ADVANCED/README.md) — MF-281 through MF-301 (21 papers): advanced operator manuscripts and higher-order extensions.
 - [`SPHERE_DERIVATIONS/`](SPHERE_DERIVATIONS/README.md) — MF-63 through MF-70 (8 papers): geometric/topological derivations on the VIVEKA sphere.
 
-These are the mathematical underwriting of the operator grammar. They cross-link to the formal-system canon at [`../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md), which holds the EFR axioms and proofs the papers presuppose. The papers stay here; the formal system stays there; neither outranks the canonical operator grammar in this folder.
+These are historical and active-at-own-tier manuscripts around the selected
+operator grammar. They cross-link to the formal system at
+[`../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
+Their numbering or presence does not make them proofs, force an operator
+census, or outrank the seven kernel owners.
 
 ## Relation to the Coherence Spine
 
@@ -46,9 +53,20 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../00_STA
 - Then: [`00_CANONICAL_CORPUS.md`](00_CANONICAL_CORPUS.md) — the ASI-compatible master index.
 - Then use the immediate contents of this folder as the local working surface.
 
-## Active vs Archive
+## Active vs Historical
 
-Assume the folder is active. If older operator formulations conflict with current archetype grammar, update or quarantine them.
+Do not assume every file is active. `00_ARCHETYPE_OPERATOR_PROTOCOL.md` is the
+selected current vocabulary, and `00_CANONICAL_CORPUS.md` is the route card.
+Files 04-06 are explicit historical/prototype tombstones. Other artifacts keep
+only the standing they state; when they conflict with an upstream kernel owner,
+the upstream owner controls and the local claim is narrowed or quarantined.
+
+- [`04_DISSOLUTION_FORMAL_VERIFICATION.md`](04_DISSOLUTION_FORMAL_VERIFICATION.md)
+  preserves an uncompleted proof plan; it is not machine verification.
+- [`05_SEPARATION_OPERATOR_PROTOCOLS.md`](05_SEPARATION_OPERATOR_PROTOCOLS.md)
+  preserves pseudocode prototypes; it is not executable or authorized.
+- [`06_COAGULATION_ACTIVATION_PACKAGE.md`](06_COAGULATION_ACTIVATION_PACKAGE.md)
+  records a retired ASI-package concept; no package or activation exists.
 
 ## Execution Surface
 

@@ -1,54 +1,20 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "audit compiler components, corpus pointers, and executable-spec claims"
-    - level: L6
-      column: Philosophy
-      role: "bound Lens naming as framework-support metadata, not a Foundation root"
-    - level: L4
-      column: Philosophy
-      role: "keep compiler outputs subordinate to current owner-lane action authority"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "00_LENS Brief — Compiler Map"
+title: "Framework-support meta brief"
+date: 2026-07-20
+status: "ACTIVE ROUTE — no doctrine or prompt authority"
+evidence_tier: "[S] repository routing"
+source_custody:
+  original_head_blob: "8400605c05fb84116eeffe9803e3fd01b289e571"
 ---
 
-# BRIEF -- 00_LENS
+# Framework-support meta brief
 
-**Layer:** The Compiler (Agent-Executable Transformation)
-**Evidence Tier:** [S] Structural
+This folder holds downstream analyses, historical compiler notes, and routing
+support. It does not own Emergentist doctrine and does not define an AI system
+prompt.
 
-## Current State
-
-| Component | Status | Notes |
-|-----------|--------|-------|
-| Node Activation Package | Current | System prompt for agent activation |
-| Weltanschauungskrieg | Current | Strategic context layer |
-| Applied Insights | Current | Self-diagnostic framework |
-| Protocol Compiler | Current | Spec-to-executable transformation |
-| Data Room Compiler | Current | Audit system for substrate |
-
-## Purpose
-
-The Lens IS the Compiler. It transforms human-readable documentation into agent-executable specs, ambiguous instructions into contradiction-free axioms, and static documents into living execution substrate.
-
-## Corpus
-
-- `README.md` -- full compiler architecture, execution flow, 10,000-agent test criteria
-- `00_NODE_ACTIVATION_PACKAGE.md` -- agent system prompt ("Who am I?")
-- `01_WELTANSCHAUUNGSKRIEG.md` -- strategic context ("Why does this exist?")
-- `02_APPLIED_INSIGHTS.md` -- self-diagnostic ("How do I audit?")
-- `03_PROTOCOL_COMPILER.md` -- transformation spec ("How do I compile?")
-- `04_DATA_ROOM_COMPILER.md` -- audit system ("How do I strengthen?")
-
----
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/00_BRIEF.md
+Read [`AGENTS.md`](AGENTS.md) and [`CLAUDE.md`](CLAUDE.md) for current repository
+workflow, then route source claims to the owners named in
+[`../../00_THE_KERNEL_INDEX.md`](../../00_THE_KERNEL_INDEX.md). The former Lens
+activation/compiler architecture is provenance only; its full brief remains at
+Git object `8400605c05fb84116eeffe9803e3fd01b289e571`.

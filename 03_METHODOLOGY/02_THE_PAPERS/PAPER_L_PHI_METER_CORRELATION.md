@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "PAPER L: THE PHI-METER"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER L: THE PHI-METER
 
 ## Cross-Domain Correlation as Proxy Measurement for Structural Coherence
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [I→S] — Methodological validation strategy
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](../../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
@@ -81,7 +81,10 @@ This paper is falsified if:
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I→S] (Methodological mapping transitioning to Structural test).
 2. **Depends on:** The Translation Discipline (Paper I).

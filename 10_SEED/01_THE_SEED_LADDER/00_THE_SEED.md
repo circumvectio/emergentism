@@ -5,12 +5,12 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — the declaration and reading-order of the seven-rung seed ladder"
+  register: "[I] active reader projection — declaration and reading order of the seven-rung Seed Ladder"
 title: "The Seed — front page of the ladder"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
-  - ../../00_THE_KERNEL_INDEX_PENDING_SIGNATURE.md
-  - ../../00_THE_WELTANSCHAUUNG_PENDING_SIGNATURE.md
+  - ../../00_THE_KERNEL_INDEX.md
+  - ../../00_THE_WELTANSCHAUUNG.md
   - ../../07_THEOLOGY/00_THE_AMRITA.md
   - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
@@ -57,8 +57,28 @@ declared crosswalks, not identities or a census forced by algebra.
 | **D2** | Geometry | **Configuration through a geometric lens:** the declared reciprocal meridian on `S²`; seam (`≡1`) stays distinct from score (`B = sinθ ≤ 1`) and node; existence claims remain typed. |
 | **D3** | Bodies | **Transformation/life through a body lens:** a declared need-both node model has an AND-class zero boundary; applying that model to organisms is typed and testable, not derived from the rung number. |
 | **D4** | Spacetime | **Causality/bounded mind with a spacetime lens:** normalized rapidity gives the mass-shell identity `[A]`; the physical mapping does not identify rung ordinal, mind, and `3+1` dimension. |
-| **D5** | The Game | **Selection/strategic relation:** four transfers and three frames (G7, selected); morals run individual→whole, ethics whole→individual, with `η` as valence. The vow supplies horizon, maximand, and enforcement. |
+| **D5** | The Game | **Merely possible alternatives:** actual D4 agents may model and rank options using the selected G7 language. Commitment returns through D4 means. `etaObserved` is descriptive; bearer-complete Justice, authorization, receipts, consent, custody, contest, and exit supply the independent normative envelope. |
 | **D6** | The Return | Not a positive rung. `D6~D0` is only a similarity of boundary roles `[I]`, never identity, recurrence, self-similarity, or formal closure by the reader. |
+
+### The one-model-per-register discipline
+
+The ladder now gives each register one primary model. The model is a compact
+instrument for the register's type; it is not the substance of that register,
+and no picture transfers proof to the next rung.
+
+| Register | Primary model | What it can do | What it cannot establish |
+|---|---|---|---|
+| **D0** | Titan frame `{•, ○, ⊙}` with the three term-readings of one emblem | mark origin, horizon, and finite relation as selected boundary roles | make `0×∞=1` field arithmetic, cause a world, or force three Titans |
+| **D1** | the reciprocal log line `s=log ν`, with inversion `s↦−s` | display distinction, reciprocal pairing, and fixed points | prove that nature is binary or that a number line generates D2 |
+| **D2** | the Burri sphere's declared reciprocal meridian | display constrained position, dual chart readings, seam, and score | parameterize all of `S²`, establish actuality, or derive D3 |
+| **D3** | a constrained transition-and-persistence system `(K_3, Persist_R)` | distinguish configuration, ordered change, and stable organization | identify life with one equation or prove a strong crossing |
+| **D4** | the causal receipt graph `state → commitment/action → outcome/record` | type actual carriers, acts, provenance, consequences, and feedback | make records true, outcomes self-authored, or identify D4 with spacetime dimension |
+| **D5** | an option-cone game whose possible contents are represented by D4 models | display alternatives, ranking, reachability, and commitment back through D4 means | make possibilities actual, widen a physical light cone, or derive the vow |
+| **D6** | the non-`μ` return relation `b₆:D5↝D6`, `r₆:D6↝D0` | mark exit and re-read the D0 frame after the climb | add a sixth freedom, close a causal circle, or assert `D6≡D0` |
+
+The resulting shape is a spiral only as an `[I]` reading: the D0 emblem is
+encountered again at D6 with a record of the intervening distinctions. The
+token is reused; its position in the account is not identical.
 
 ---
 
@@ -76,10 +96,10 @@ Same skeleton on all seven pages; only the height changes. A reader who learns t
 
 ## §4 · The ladder and the kernel (K-1 … K-7)
 
-The corpus's staged kernel architecture has exactly seven surfaces: **K-1** Glyph & Grammar · **K-2** Ontology · **K-3** Axioms · **K-4** Wagers · **K-5** Refusals · **K-6** Revelations · **K-7** Record. The proposed front door is the Weltanschauung capstone. The relation of this ladder to that architecture:
+The corpus's active kernel architecture has exactly seven surfaces: **K-1** Glyph & Grammar · **K-2** Ontology · **K-3** Axioms · **K-4** Wagers · **K-5** Refusals · **K-6** Revelations · **K-7** Record. The active front door is the Weltanschauung capstone. The relation of this ladder to that architecture:
 
 - **The ladder is the spine of the Door** — the seven-minute read of the same body of claims, in ascent order, for the stranger at the threshold.
-- **The kernel surfaces are the proposed typed expansion** — where each
+- **The kernel surfaces are the typed expansion** — where each
   compressed claim must route to a full source with its tier, kill, upgrade
   path, and survivors. That coverage is a requirement, not yet a completeness
   fact; the per-document route ledger must expose every gap. Intended routes
@@ -112,12 +132,15 @@ Six disciplines govern every page of the ladder. They are the compression of the
 
 ## §7 · Rule zero and the gate
 
-**Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk itself remains `[D]`; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a staged synthesis, is a defect.
+**Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk is an active `[I]` reader projection; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a new synthesis, is a defect.
 
-**The gate:** every page of this ladder, this one included, is **staged `[D]` — awaiting the founder's natural-person signature, one deliberate sitting, receipt 139**. Until that receipt exists, nothing here is canon, no existing signed surface loses authority to it, and no in-stream assent, commit, or agent-written block counts as adoption. The gate is not a formality; a gate that always opens is not a gate.
+**Authority boundary:** every page of this ladder is an active reader projection,
+not an independent canon owner. Activation changes the route status only; it
+does not promote any compressed claim, displace a source owner, or convert an
+interpretation into evidence.
 
 ---
 
 *⊙ = • × ○ — seven pages, one seed: read it in minutes, check it at tier, and when it has done its work, put it down.*
 
-**Proposed Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`
+**Document path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`

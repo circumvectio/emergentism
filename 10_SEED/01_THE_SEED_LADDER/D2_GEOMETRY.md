@@ -5,9 +5,9 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged — one-page compression of the D2 rung: geometry, one-and-many, ontology"
+  register: "[I] active reader projection — one-page compression of the D2 rung: geometry, one-and-many, ontology"
 title: "D2 — Geometry: configuration on a reciprocal meridian"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 sources: "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md · 00_THE_AMRITA.md §I.A · receipt 108 (keel) · receipt 126 (CC-CORE-1)"
 ---
 
@@ -19,6 +19,15 @@ sources: "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGRE
 > the crosswalk to a world-rung remains `[I/D]`.
 
 ---
+
+## §0 · THE MODEL — the declared Burri meridian
+
+The primary D2 model is the Burri sphere restricted to one declared reciprocal
+meridian. A surface point supplies a constrained position; two stereographic
+chart readings supply `φ` and `ν`; their seam and the separate score can then
+be computed. This is the ladder's geometric workhorse, but only on its stated
+slice. It models configuration and relation `[S/I]`; it does not parameterize
+all of `S²`, make the configuration actual, or generate D3.
 
 ## §1 · THE MOVES
 

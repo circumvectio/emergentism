@@ -3,149 +3,106 @@ rosetta:
   primary_level: L4
   primary_column: Philosophy
   operator: "Arjuna ⚔"
-  tier: "God"
+  tier: "Interpretive"
   regime: "Kṣatriya"
-  register: "[I]"
-  canonical_phrase: "04_AXIOLOGY — Justice Signs"
+  register: "[S/I]"
+  canonical_phrase: "04_AXIOLOGY — Justice constrains commitment"
 ---
 
-**Project VMOSK-A:** `../VMOSK_A.md` (every file, spec, and decision in this lane traces to at least one Objective in the project VMOSK-A per 01_EMERGENTISM/AGENTS.md and root routing law)
+# 04_AXIology — Justice Constrains Commitment
 
-# 04_AXIOLOGY — Justice Signs
+This lane owns pure Emergentist value theory. It does not inherit authority or
+warrant from any institution, product, or external governance framework.
 
-> **L4 · Arjuna ⚔ · Kṣatriya · Justice · Dharma — Gate IV (the equator)** of the [seven-fold spine](../00_SEVENFOLD_FOUNDATION_ROOT.md). *Folder № = L-level. L4 is where ascent meets descent — value and signature are one act.*
+## Core contract
 
-> **Heuristic-mapping note:** Rosetta images and operator/deity names are heuristic mappings [I], not claims of physical or metaphysical fact.
+Morals name the direction `i → H`: the individual raises the durable potential
+of the sustaining whole. Ethics name `H → i`: the whole raises the durable
+potential of the individual. Strict Syntropic Dyadism requires both directions
+to rise under Justice:
 
-**Rosetta level:** L4 · Kṣatriya · Strategic Abduction
-**Canonical phrase:** Justice signs.
+\[
+\operatorname{Moral}(a)
+\iff \Delta_TW_H>0\land\Delta_TW_i\ge0\land J,
+\]
 
-**Definition:** Value Alignment is the root of value and the equator of action. It asks what matters and becomes real only when the mortal signs a branch under uncertainty. In this framework, Value Alignment and Strategic Implementation meet at L4.
+\[
+\operatorname{Ethical}(a)
+\iff \Delta_TW_i>0\land\Delta_TW_H\ge0\land J,
+\]
 
-**Must answer:** What is worth serving? What is worth refusing? What action raises widest-boundary `ΣΔB` / `ΣΔP_node` without extraction? Who signs?
+\[
+\operatorname{Syntropic}(a)
+\iff \Delta_TW_i>0\land\Delta_TW_H>0\land J.
+\]
 
-**Must not do:** Moralize extraction. Perform virtue without structural change. Delegate mortal responsibility to AI, doctrine, procedure, or priesthood.
+`J` is the Justice envelope. Every consequential collective form must identify
+the individual, the whole, payer, beneficiary, authorization, consent, custody,
+reversibility, contest path, and exit. Aggregate gain cannot compensate for
+destroying one side. Voluntary sacrifice remains a separate costly class and
+may never be demanded by a collective as proof of ethics.
 
-## Game-Spine Function
+## Power-Max boundary
 
-In the Soul Loop's game form, axiology owns **Know what matters**. It is the L4
-signature gate: Beauty, Truth, Justice, and non-extraction are not ornaments
-but the values the player must preserve before a possible move becomes a lawful
-act.
+For an agent `x`, let:
 
-Axiology receives L3's tested move and asks who or what would be raised, who or
-what would pay, whether the relation survives K2 consent, K4 exit, A7
-correction, and whether the move can raise `P_node,i` and `P_node,H` together
-under `η = 0`. It does not replace teleology; it signs the value boundary
-teleology must obey. `[S/I]`
+\[
+W_x(T)=\int_0^T P_x(t)\,dt.
+\]
 
-## Dasein Game Reading
+Power-Max is a constrained search, not an unconditional law of nature:
 
-Axiology is where the Soul Loop becomes a moral compass for a finite player.
-The question is not "what does the collective demand?" or "what does the
-individual want?" in isolation. The question is which signed move raises the
-individual symbiont and the sustaining holobiont together:
+\[
+\mathcal A_J=
+\{a:J(a;i,H)\land\Delta_TW_i(a)\ge0
+\land\Delta_TW_H(a)\ge0\},
+\]
 
-```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
-η = 0
+\[
+a^\star\in\arg\max_{a\in\mathcal A_J}
+\mathbb E_{M_t}[W_i(T)\mid a].
+\]
 
-objective morals = i -> H  (the symbiont raises the holobiont)
-objective ethics = H -> i  (the holobiont raises the symbiont)
-objective dharma   = both directions rising together at the action boundary
-```
+Without the Justice constraints, extraction can benefit an extractor. The
+unconditional maximization claim is therefore false.
 
-In the action register, `V` means usable D4 means-to-act: body, tools, energy,
-access, execution capacity. `Φ` means D5 worldline-foresight: the ability to
-envision the reachable future and use those means coherently. A value claim is
-not stable until it can state how it raises both `P_node,i` and `P_node,H`
-without hidden rent, coercion, or dependency manufacture.
+## Source owners
 
-This is framework-objective, not an external proof of moral realism. Once
-reciprocal closure, multiplicative `P_node`, real coupling, long horizon, and
-enforced `η = 0` are accepted, the Power-Max Lemma gives the conditional
-frontier: durable individual worldline potential is searched on trajectories
-that preserve or raise the boundary that makes the individual effective.
+| File | Role |
+|---|---|
+| [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | Formal value owner: Justice, morals, ethics, syntropy, sacrifice |
+| [Rights, Duties, and Due Process](02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) | Law-facing translation of the dyad |
+| [The Good, the Evil, and the Transcendentals](02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) | Interpretive value language |
+| [Bridge Laws](00_BRIDGE_LAWS_BETWEEN_LEVELS.md) | Cross-level creation, stabilization, and destruction tests |
+| [Extraction Law](00_THE_EXTRACTION_LAW.md) | Conditional extraction dynamics and counterexamples |
+| [Commandment vs Geometry](00_COMMANDMENT_VS_GEOMETRY.md) | Chosen vow versus analytic consequence |
+| [Anmut and Demut](00_ANMUT_AND_DEMUT.md) | Symbolic translation, not etymological proof |
+| [Strategic Implementation](01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) | D5 possibility to D4 commitment and receipt |
 
----
+Application-specific economic, release, transmission, and signature material
+is preserved under
+`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/04_AXIOLOGY/` and has no
+active doctrinal authority.
 
-## Rosetta Position
+## Claim boundaries
 
-L4 is Strategic Abduction: strategic postulation under incomplete data. The warrior cannot wait for omniscience; the warrior must choose.
+- The moral and ethical formulae are `[S]` inside their declared definitions;
+  they do not derive an ought from mathematics alone.
+- `P_node=ΦV` is the selected normalized Emergentist instance of a broader
+  conjunctive family, not the uniquely forced measure of value.
+- Sphere-chart identities are analytic facts only; they do not prove ethics.
+- The deity, warrior, and equator language is `[I]` translation.
+- Consequential action uses an `AuthorizationEnvelope`; ordinary reversible AI
+  work follows the user's scope and the available tool permissions.
 
-This is why theurgy is not a separate L6 root in the Rosetta-aligned structure. Strategic Implementation is the operative face of L4 value alignment:
+## Kill criteria
 
-- Value Alignment reads value.
-- Strategic Implementation signs the branch.
-- K2 records the mortal collapse from D5 possibility into D4 action.
-
-Value Alignment without theurgy is unsigned philosophy. Strategic Implementation without value alignment is blind activism.
-
----
-
-## Current Source Files / Owner Routes
-
-| File | Current Path | Role |
-|---|---|---|
-| Objective morals and ethics | `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md` | Directional individual/collective value-transfer dyad |
-| Rights, duties, and due process | `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md` | Law-facing translation of the moral/ethical dyad |
-| The good, the evil, and the transcendentals | `01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md` | Value theory |
-| Anmut and Demut | `01_EMERGENTISM/04_AXIOLOGY/00_ANMUT_AND_DEMUT.md` | German symbolic translation surface; not etymological proof |
-| Commandment vs geometry | `01_EMERGENTISM/04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md` | Ethics framework |
-| Constitutional economics | `01_EMERGENTISM/04_AXIOLOGY/00_CONSTITUTIONAL_ECONOMICS.md` | Economic rights/duties surface for token and protocol mechanics |
-| Bridge laws between levels | `01_EMERGENTISM/04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md` | Cross-level create/stabilize/destroy discipline |
-| The weighing of the heart (archived) | `01_EMERGENTISM_ORG/90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md` | Ethical test; preserved as archive/provenance rather than active L4 source |
-| Strategic Implementation and F5 force map | `01_EMERGENTISM/04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md` | L4 operative discipline |
-| Operators | `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/02_OPERATORS/` | Deployable value-transfer grammar |
-
-**Layout note:** Root-level `00_*.md` files remain in place for this pass. A future compatibility phase may add a foundations subfolder and stubs, but this discipline pass repairs source truth without moving canonical paths.
-
----
-
-## L4 Strategic Implementation Subsurface
-
-The operational practice material now routes through:
-
-[`01_THEURGY/`](01_THEURGY/)
-
-That subfolder exists to prevent a separate "theurgy root" from drifting away from value, K2, and mortal responsibility.
+The active value theory must be revised if it hides an impact-bearer, permits
+aggregate laundering, turns involuntary sacrifice into syntropy, makes an
+external signing convention a worldview primitive, or silently upgrades `[I/C]` to
+`[A]`.
 
 ---
 
-## Claim Boundaries
-
-- `P∞ = φ · ν = 1` names the invariant sphere-product.
-- `B = sin θ` names balance on the sphere.
-- `P_node = Φ × V` names empirical or organizational flourishing.
-- Value Alignment is `[S]` structural inside the accepted framework where it
-  applies the Power-Max frontier, `ΣΔB > 0` / `ΣΔP_node > 0`, `η = 0`, and the
-  `P∞` invariant to real coupled boundaries.
-- Value Alignment is `[I]` interpretive where it names those structural
-  directions morals, ethics, dharma, justice, or specific institutional
-  applications.
-- Value Alignment is `[C]` where it projects civilisational outcomes or claims
-  strong moral realism beyond the framework's accepted premises.
-- K2 is non-negotiable: no automation of mortal responsibility.
-
-## Public-Translation Risks
-
-- Risk: "Justice" read as partisan ideology. Correction: Justice = widest-boundary `ΣΔB` / `ΣΔP_node` under `η = 0`.
-- Risk: future-good language used to justify present extraction. Correction: receipts-first; K2; Grace Exit.
-- Risk: Strategic Implementation presented as magic. Correction: theurgy is signed action discipline, not supernatural control.
-
----
-
-*See also:* [03_METHODOLOGY](../03_METHODOLOGY/) (Truth tests) · [04_AXIOLOGY/01_THEURGY](01_THEURGY/) (K2 participates) · [05_COSMOLOGY](../05_COSMOLOGY/) (Emergentism models) · [The Dyadic Coupling Law](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (the moral axis this lane owns: good = the bond `φ × ν`, evil = closure `η > 0`, sorted by *move* — never by pole, gender, caste, or person)
-
-`Zero-Sum Resolution Equation`
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/README.md`
+*Justice asks: who may choose, who acts, who pays, who benefits, who keeps
+custody, and how can the consequence be contested or left?*

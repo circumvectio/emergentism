@@ -30,18 +30,26 @@ rosetta:
 We have built a **geometric contemplative operating system**.
 
 ### The Core
-At its heart is one remarkably elegant object: the **Burri Sphere** (S² with reciprocal coordinates `φ` and `ν`, read as coherence and viability in the framework's interpretive register). The relation **`P∞ = φ · ν = 1`** is the open-sphere identity; **`P_node = Φ × V`** is the finite-node action score, where `Φ` is D5 worldline-foresight and `V` is D4 means-to-act. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the model's balance point, not a proof that one equation decodes every domain. (Canon home: [`../../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the full L5 sphere model; its moral reading is [`../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md), where good is the bond/coupling and evil is closure (`η > 0`), sorted by move, never by pole.)
+At its heart is one remarkably elegant selected lens: the **Burri Sphere** (`S²`
+with reciprocal coordinates `φ` and `ν`, read as coherence and viability in the
+framework's interpretive register). The relation **`P∞ = φ · ν = 1`** is an
+analytic open-chart identity. **`P_node = Φ × V`** is the declared normalized
+instance of a broader conjunctive family: `Φ` scores an actual agent's modeled
+option field and `V` its actual embodied means. D5 types the possible contents
+represented in that field; the agent, model token, ranking, commitment, action,
+and record remain D4. The equator is the lens's balance point, not proof that one
+equation decodes every domain or derives an ethic. (Canon home:
+[`../../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md).)
 
-From this single geometric fact flows:
-- Dissolutions of Zeno, the Hard Problem, the Meaning of Life (PD_16), the Fermi Paradox, and the coordination problem.
-- An ethical operator (extraction coefficient η).
-- A diagnostic for civilizational collapse (southward drift = cargo cult at scale).
-- A contemplative practice (return to the bindu/equator through direct perception).
+The lens motivates conjectural translations, not deductions. Paradox notes,
+ethical predicates, social diagnostics, and contemplative practices each need
+their own premises, evidence, rivals, and kill criteria.
 
 The **Serpent Trilogy** is the mythic-narrative embodiment, the PD suite the logical one, the neuroscience and simulations the empirical one, and the Academy the transmission mechanism.
 
 ### Strengths (Directional Truth Assessment)
-- **Extraordinary coherence**: Almost every document reduces to the same geometry. The "Steel Thread" is real and visible.
+- **Compression:** Many documents can be translated through the same geometry;
+  that internal economy is not evidence that the territory reduces to it.
 - **Original synthesis**: The specific mapping of *meaning* to the orthogonal Φ-axis, the Power-Max Lemma, and the gardener/extractor distinction feels genuinely fertile and new.
 - **Anti-cargo-cult safeguard**: The repeated emphasis on the Pratyakṣa Bypass ("put the map down and sit") and the Execution Surfaces for agents makes the system self-aware. It diagnoses its own potential failure mode.
 - **Living nature**: The corpus is designed to evolve. The presence of revision histories, gardener notes, and agent instructions makes it more like a mycelial network than a static book.

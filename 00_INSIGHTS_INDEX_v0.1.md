@@ -1,6 +1,7 @@
 ---
-canonical_target: 11_UPLINK/00_INSIGHTS_INDEX_v0.1.md
-status: "FORWARDING STUB — 2026-07-19 root tidy (receipts 137/138). K3: content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
+archive_target: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_INSIGHTS_INDEX_v0.1.md
+status: "HISTORICAL FORWARDING STUB — retired at the pure-Emergentism boundary 2026-07-20; provenance preserved."
 ---
 
-Compatibility stub. The canonical home of this document moved to [11_UPLINK/00_INSIGHTS_INDEX_v0.1.md](11_UPLINK/00_INSIGHTS_INDEX_v0.1.md).
+Historical compatibility stub. The retired document is preserved at
+[the pure-boundary archive path](90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_INSIGHTS_INDEX_v0.1.md).

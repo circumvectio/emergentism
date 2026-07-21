@@ -163,14 +163,15 @@ Dark matter (27%): Mutual information between systems.
                    Attractive (gravitational). Binds structures.
                    = Φ between coupled systems (MF-294: network Φ)
 
-Dark energy (68%): F₅ at cosmological scale?
-                   Repulsive (anti-gravitational). Expands spacetime.
-                   = Syntropic pressure? ΣΔP_node > 0 at maximum radius?
+Dark energy (68%): historical F₅ correspondence question only.
+                   No mechanism, moral aggregate, or evidence is supplied.
 ```
 
-If F₅ (will, syntropy) acts anti-gravitationally (MF-296: conjugate of F₄), and F₅ operates at cosmological scale through the accumulated syntropic activity of all D5 agents and D5-adjacent processes, then dark energy is the cosmological-scale effect of F₅.
+The former manuscript speculated that F₅ might act anti-gravitationally and
+accumulate across agents. No accepted physics or Emergentist derivation supports
+that mechanism; it remains a removable comparison question.
 
-This is maximally speculative [S]. But it completes the picture:
+This is maximally speculative `[C]` and completes no physical picture:
 
 ```
 Visible matter (5%):   Individual information. I(A). Localisable. Luminous.

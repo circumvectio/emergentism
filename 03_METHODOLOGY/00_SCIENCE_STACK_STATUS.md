@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "Science Stack Status"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3; closed/open/deferred routing.**
 
 # SCIENCE STACK STATUS
@@ -59,9 +59,9 @@ So:
 
 ---
 
-## Canon Table: Closed, Open, Deferred
+## Canon Table: Route-Stabilized, Open, Deferred
 
-| **Closed** | **Open** | **Deferred** |
+| **Route-stabilized (not externally validated)** | **Open** | **Deferred** |
 |---|---|---|
 | **D0-D1 formal surface:** mathematics, logic, topology, and invariance are the most stable study surface in the stack | **Measurement lane:** `φ`/`ν` measurement remains open; the `Φ-meter` is not yet validated | **Physics bridge:** no Standard-Model-grade Lagrangian, no closed `2D -> 4D` bridge, and the `SU(3)` problem remains |
 | **D3 biology register:** the translation rule is now clean: teleonomy/autopoiesis/allostasis/interoception first, frontier theory second | **Protocol R / geometry lane:** the decisive perceptual geometry test is still pending | **Fine structure / coupling derivations:** still conjectural and mathematically unresolved |
@@ -76,7 +76,8 @@ So:
 
 ### 1. Formal and Foundational Sciences
 
-**Closed** as a public surface.
+**Route-stabilized** as a public surface; not externally validated as an
+integrated synthesis.
 
 The framework knows where these disciplines live:
 
@@ -198,7 +199,10 @@ This sentence may be reused verbatim.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. Do not confuse a closed register with a completed science.
 2. Route new work into the right bucket: register-stabilization, active empirical bridge, or deferred research.

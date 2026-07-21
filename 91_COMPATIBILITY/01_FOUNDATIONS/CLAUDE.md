@@ -34,7 +34,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 ## Scope
 
 **Lane scope:** Compatibility surface for old `01_FOUNDATIONS/` links after the sevenfold Foundation reorganization.
-- Doctrine and framework claims defer to source documents in this folder.
+- Doctrine and framework claims defer to the active owner linked by `AGENTS.md`; this folder is provenance and redirect only.
 - Evidence tiers mandatory on all claims.
 
 ## Routing
@@ -45,7 +45,7 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Work authority:** repository and editorial work follows the user's scoped request, applicable permissions, source custody, reversibility, and consequence reporting; private money or contract authorization is outside this lane.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").

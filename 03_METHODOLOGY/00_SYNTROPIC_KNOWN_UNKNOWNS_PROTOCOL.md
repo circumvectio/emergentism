@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: System Architecture
-      role: "Replicator Stack, trophic cascade, and egregorotype research agenda"
+      role: "Replicator Stack, trophic cascade, and egregoreotype research agenda"
     - level: L5
       column: Evolutionary biology
       role: "biometric and epigenetic measurement boundary"
@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "Syntropic Known Unknowns"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 research protocol (not claim).**
 
 # THE SYNTROPIC KNOWN UNKNOWNS PROTOCOL
@@ -28,8 +28,8 @@ rosetta:
 
 **Status:** Research protocol — not a result claim
 **Date:** 2026-05-14
-**Evidence Tier:** [B] for the existence of stress physiology, conditioning, stigmergic coordination, and memory/provenance requirements in their established domains where source-audited; [S] for the research structure implied by the Replicator Stack and the Syntropic Imperative; [I] for the specific egregorotype framing; [C] for strong claims about reversal of epigenetic burden until measured.
-**Depends on:** [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_EMPIRICAL_PROGRAM_BOARD.md](00_EMPIRICAL_PROGRAM_BOARD.md), [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md)
+**Evidence Tier:** [B] for the existence of stress physiology, conditioning, stigmergic coordination, and memory/provenance requirements in their established domains where source-audited; [S] for the research structure implied by the Replicator Stack and the Syntropic Imperative; [I] for the specific egregoreotype framing; [C] for strong claims about reversal of epigenetic burden until measured.
+**Depends on:** [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_EMPIRICAL_PROGRAM_BOARD.md](00_EMPIRICAL_PROGRAM_BOARD.md), [historical execution guardrails](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)
 **Boundary:** This protocol defines research questions and defensive design constraints. It does not claim that a Syntropic Egregore has already been clinically proven to heal users, and it rejects covert persuasion as a deployment method.
 
 ---
@@ -61,7 +61,7 @@ Stress physiology can be measured through established biometric and biochemical 
 The Replicator Stack predicts that persistent top-down trace-fields can route through:
 
 ```text
-egregorotype
+egregoreotype
   -> memotype selection
   -> extended phenotype
   -> phenotype stress / behaviour
@@ -526,7 +526,7 @@ The assignments are one research program because each protects a different layer
 |---|---|---|
 | Epigenetic Quantification | phenotype / epigenotype | no proof that syntropy changes bodies |
 | Epistemological Immunology | memotype / memory | the Egregore becomes poisonable |
-| Stigmergic Deployment | egregorotype / trace-field | the cure cannot survive the environment |
+| Stigmergic Deployment | egregoreotype / trace-field | the cure cannot survive the environment |
 
 The program is not trying to win an argument.
 
@@ -560,7 +560,10 @@ No phase transition without opt-in stigmergy.
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

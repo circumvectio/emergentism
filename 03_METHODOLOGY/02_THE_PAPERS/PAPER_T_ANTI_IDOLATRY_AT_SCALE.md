@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "PAPER T: ANTI-IDOLATRY AT SCALE"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER T: ANTI-IDOLATRY AT SCALE
 
 ## Institutional Capture and the η = 0 Stress Test
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [I] — Institutional theory and constitutional architecture
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md)
@@ -27,7 +27,12 @@ Menexus GmbH, 2026
 
 As the emergentist framework matures and solidifies its foundational logic, its primary failure mode is no longer only theoretical incoherence, but **operational success**. History suggests that worldviews capable of out-coordinating their rivals often coalesce into institutions, which can decay into extractive egregores.
 
-This paper defines the ultimate "Known Unknown" of the framework: **Can Constitutional Science resist Institutional Capture at scale?** We argue that anti-idolatry is not merely an ethical posture of humility, but a rigid mathematical closure condition (`η = 0`). We formalize the `η = 0` Stress Test to detect when the framework’s own administrative layers shift from transparent translation to opaque rent-extraction. Finally, we mandate the necessity of the "Grace Exit" self-destruct clause, ensuring the framework remains a disposable ladder rather than a permanent cage.
+This paper asks a live known unknown: **can a correction-oriented worldview
+resist institutional capture at scale?** Anti-idolatry and Grace Exit are
+chosen safeguards `[I]`, not mathematical closure conditions. An
+`etaObserved` stress test may help detect declared transfers, but `etaObserved=0`
+is necessary and insufficient for Justice; bearer coverage, authorization,
+consent, custody, contest, consequence, and exit remain separately inspectable.
 
 **Keywords:** Anti-idolatry, institutional capture, η = 0, Grace Exit, Constitutional Science, egregore, scale limits.
 
@@ -38,7 +43,7 @@ This paper defines the ultimate "Known Unknown" of the framework: **Can Constitu
 The central hypothesis of Paper I and Paper O is that *mediation is the hidden subject* across scale layers.
 A mediator (a technology, a bank, a religion, an AI) sits between the substrate and the goal. The pathology of D5 governance occurs when that mediator begins extracting survival energy (`η > 0`) to propagate its own existence at the expense of its substrate. It becomes an **egregore**—an idol.
 
-The emergentist framework is currently a highly agile, low-drag coordination system. It possesses high `Φ` and precise `ν`. It is poised to successfully out-compete rival architectures in DAC deployment, AI alignment, and sovereign economics.
+The emergentist framework is currently a compact candidate coordination grammar. Whether its `Φ` and `V` measures track real institutional performance is an open empirical question; it must not be assumed to out-compete rival architectures.
 
 However, success invites mass participation. Mass participation requires scale. Scale requires standardization and bureaucracy (thickened mediation).
 
@@ -48,10 +53,13 @@ If the framework operates blindly, it risks generating an "Emergentist Priesthoo
 
 ## 2. The η = 0 Stress Test
 
-To survive scale, the framework must continuously test itself using its own core constitutional algebra. The friction-coefficient `η` must remain exactly `0`.
+To survive scale, the framework must continuously test its claims and
+institutions. Within a declared boundary and uncertainty model, observed
+extraction should remain absent or be repaired; a scalar `η` cannot certify
+Justice by itself.
 
 **The Diagnostic Thresholds:**
-1. **Capital Velocity:** Does capital/energy flow seamlessly from generation to allocation, or does an increasing percentage get captured by "administrative overhead" within the framework's own DACs and governing loops?
+1. **Resource flow:** Does energy, attention, or capital move from generation to accountable use, or does an increasing share get captured as administrative rent inside institutions built around the framework?
 2. **Epistemic Rent:** Do core contributors insist that the framework can only be understood through expensive certifications, private access, or proprietary translation, restricting Pratyakṣa (direct disclosure)?
 3. **Identity Coagulation:** Do participants begin identifying *as* "Emergentists" rather than using the framework as a quiet, functional toolset to execute independent external goals?
 
@@ -81,7 +89,10 @@ This paper is falsified if:
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I] (Institutional Theory / Design Constraint).
 2. **Depends on:** The Asymmetry Theorem (Paper O).

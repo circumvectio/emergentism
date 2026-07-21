@@ -11,7 +11,7 @@ rosetta:
       role: "audit Sphere Probe and validation language"
     - level: L6
       column: Core State
-      role: "prevent software analogues from inheriting human K2 authority"
+      role: "prevent software analogues from inheriting human authority"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -85,7 +85,7 @@ The algorithms are not arbitrarily assigned. Each performs a specific (delta-phi
 - **L6:** (-, -) boundary condition (dissolve unnecessary structure)
 - **L7:** (approximately-equal, approximately-equal) boundary condition (integrate all into whole)
 
-This is the same sign pattern as the operators themselves. The algorithms are operational analogues for the operators when implemented on silicon; they do not inherit human K2 authority.
+This is the same sign pattern as the operators themselves. The algorithms are operational analogues for the operators when implemented on silicon; they do not inherit human authority merely by matching a pattern.
 
 ---
 

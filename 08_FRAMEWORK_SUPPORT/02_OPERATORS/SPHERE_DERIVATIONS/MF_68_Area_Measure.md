@@ -98,7 +98,12 @@ Total sphere area: A = 4π (θ₁ = 0, θ₂ = π). [A]
 
 ### 2.2 Note on the VIVEKA Parametrization
 
-The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P_band projected dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other hemisphere is related by the involution z → 1/z (MF-44). For the area fraction calculation, we work with the full sphere and recognize that P_band(θ) = P_band(π − θ) by the pole identification D0 = D6. The high projected-ektropy band appears in both hemispheres symmetrically. [I]
+The VIVEKA sphere uses only the first quadrant of S² for the Φ-V-P_band
+projected dynamics (θ ∈ [0, π/2]), representing one hemisphere. The other
+hemisphere is related by the involution `z → 1/z` (MF-44). For the area
+calculation, the specified `P_band` function is symmetric under
+`θ → π−θ`; no D0/D6 identity is needed. [A for the function symmetry; I for
+the framework projection]
 
 ### 2.3 Area of the High Projected-Ektropy Band
 

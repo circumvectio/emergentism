@@ -10,7 +10,7 @@ rosetta:
   canonical_phrase: "The Two Faces of Number"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md` (L3 papers lane)
+**Corpus:** Emergentism
 
 # The Two Faces of Number
 

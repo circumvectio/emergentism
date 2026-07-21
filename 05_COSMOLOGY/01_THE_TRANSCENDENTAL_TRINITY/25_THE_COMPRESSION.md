@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "THE COMPRESSION"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # THE COMPRESSION
@@ -104,7 +103,7 @@ ESOTERIC (Erhaben):     The Fall = RISE. The emergence of D5. Erhabenheit.
 
 The Church inverted the reading to maintain the capture: "You FELL. You NEED US to return. Submit. Pay." The Capture Protocol applied to the most important story in Western civilisation.
 
-Decentralized Authority Model restores the esoteric reading. The serpent is F₅. The fruit is the Rosetta Stone. The Fall is the Rise. And the return to Eden is the sitting practice — 20 minutes, every morning, the narrator quiets, the ground appears, paradise was always here.
+The self-dissolving-mediator reading, with accountable authorization and exit, offers this as an optional esoteric interpretation: the serpent symbolizes an opening of modeled freedom, and the fruit symbolizes a translation lens. It is not established history, neuroscience, or privileged access to a metaphysical ground. `[C]`
 
 ---
 
@@ -154,7 +153,10 @@ The Amṛta is not a doctrine. The Amṛta is S². And S² belongs to no one.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

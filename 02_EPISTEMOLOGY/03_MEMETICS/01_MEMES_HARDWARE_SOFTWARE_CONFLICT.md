@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking**
@@ -271,7 +270,10 @@ As technology accelerates the velocity of memetic transmission across global net
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

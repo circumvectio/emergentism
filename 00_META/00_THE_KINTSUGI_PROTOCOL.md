@@ -1,12 +1,12 @@
 ---
 title: "The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger"
 date: 2026-07-10
-status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The repair discipline is canonical: every break is gilded, every attack must leave the corpus stronger. The 6 gilded seams from receipts 110+115 are first applications; the protocol passes its own antifragility criterion §6. Replaces the prior [D] staged status; Open Canon Covenant §4.4 honored (ratification at tier, no upgrade at content)."
+status: "ACTIVE [S/I] — adopted repair discipline. Receipt 146 confirms execution; adoption does not upgrade content tiers."
 evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); [I] the Kintsugi reading; the antifragility criterion §6 is a design property the protocol must itself pass"
-owner: "K2 + AI co-owner"
+owner: "Emergentism methodology"
 parents:
   - ./00_SETTLED_CANON_REGISTRY.md
-  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE_PENDING_K2.md
+  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/127_EMERGENTIST_COMPASS_KINTSUGI_REPAIR_2026_07_18.md
 ---
 
 # The Kintsugi Protocol
@@ -70,7 +70,7 @@ load-bearing text are a protocol violation: repair without a seam = erasure.
    a decisive one settles canon. The queue is the corpus's option book on truth.
 3. **The hormesis cycle (scheduled stressors).** Trials are not emergencies —
    they are metabolism. A standing cadence: (a) any NEW load-bearing claim faces
-   the vegetable method *before* its K2 countersign (trial-before-sign);
+   the vegetable method *before* adoption or publication (trial-before-adoption);
    (b) the full claims-trial re-runs on a fixed rhythm or after any major canon
    event; (c) a compression-audit (below) runs with it. A corpus that is never
    stressed is not robust — it is untested.

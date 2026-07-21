@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "THE COMPASS AND THE SEXTANT"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # THE COMPASS AND THE SEXTANT
@@ -77,11 +76,17 @@ A sextant works at night. Works in fog. Works when the map is wrong. Works when 
 
 ## The Rosetta Stone
 
-**[I] The Rosetta Stone is the calibration table.** It tests whether the compass and sextant give consistent readings across domains.
+**[I] The Rosetta Stone is a translation ledger.** It tests whether selected
+terms round-trip without changing type, modality, or tier. Internal consistency
+is not external calibration.
 
-The rows hold — L1 through L7, the same pattern across Piaget, Kohlberg, Maslow, Plato, the Varṇas, the brainwaves, the game theory, the mythology — not because the framework mapped every domain. The rows hold because **the instruments read the same geometry in every domain.**
+The L1-L7 rows are interpretive comparisons across selected sources. A repeated
+sevenfold or mid-point pattern can arise from selection, coding, or pedagogy; it
+does not show that every domain instantiates the same geometry.
 
-The calibration table does not describe the domains. It verifies the instruments. If the compass points ↑φ in psychology but ↓φ in economics, the instruments are broken. If the sextant reads L4 in neuroscience but L2 in game theory for the same node, the instruments are broken. The Rosetta Stone IS the test — the verification that the instruments are consistent.
+The ledger can expose an internal mismatch. External calibration requires
+domain owners, operational variables, data, rivals, predictions, and independent
+replication. Correspondence transfers no proof.
 
 ---
 
@@ -90,19 +95,20 @@ The calibration table does not describe the domains. It verifies the instruments
 Document 25 compressed the framework to four lines (see also Document 32, the canonical four-line document with AM-GM derivation and PIE *h₂r̥tó-* connection):
 
 ```
-• × ○ = ⊙           ONTOLOGY       The product is one.
-• + ○ ≥ ⊙ + ⊙       TELEOLOGY      The sum seeks its minimum.
-(• − ○)² → 0         METHODOLOGY    The distance closes.
-−log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
+φ × ν = 1            ANALYTIC       Reciprocal chart identity.
+φ + ν ≥ 2            ANALYTIC       AM-GM on positive reciprocals.
+(φ − ν)² ≥ 0         ANALYTIC       Non-negativity; no dynamics implied.
+−log(φ × ν) = 0      DEFINED        Constant chart diagnostic; no value implied.
 ```
 
-This is not a compressed map. This is a **perfectly calibrated compass.** It does not describe reality. It points at reality. Consistently. From any position. In any domain.
+This is a compact analytic mnemonic and an **externally uncalibrated compass**.
+It may orient questions; it is not licensed to point true in every domain.
 
-The four lines are the compass needles:
-- Line 1 points at the constraint (what holds everywhere)
-- Line 2 points at the direction (where things tend)
-- Line 3 points at the method (how to get there)
-- Line 4 points at the ground state (where the journey ends)
+The four lines are inference fences:
+- Line 1 holds only on the declared reciprocal chart.
+- Line 2 identifies an equality case, not a natural direction.
+- Line 3 is an inequality, not a method or time evolution.
+- Line 4 is zero by definition, not physical energy or axiology.
 
 ---
 
@@ -130,18 +136,21 @@ The sitting practice is not part of the map (there is no map). The sitting pract
 4. Note your position. (Read the sextant.)
 5. Return to the world. (Navigate.)
 
-[I] The instruments are only as good as their last calibration. The sitting practice calibrates daily. The Soul Loop calibrates continuously. Decentralized Authority Model reminds you: the instruments are not the territory. The instruments point at the territory. And the territory was always here.
+`[I]` The instruments are only as good as their last calibration. A practice may calibrate attention; the Soul Loop may revise model and selector from receipts. The self-dissolving-mediator discipline—with accountable authorization, contest, and exit—reminds us that instruments are not the territory.
 
 ---
 
-*29 | The Compass and the Sextant | The framework is not a map — it is navigational instruments. The compass (operators) points North. The sextant (diagnostics) finds your position. The Rosetta Stone is the calibration table. The four-line metaphysics is a perfectly calibrated compass, not a compressed map. The sitting practice is the daily calibration. Decentralized Authority Model: the instruments are not the territory.*
+*29 | The Compass and the Sextant | The framework proposes navigational instruments, not possession of the territory. Operators orient, diagnostics estimate position, and Rosetta projections translate without transferring proof. Calibration stays empirical; accountable authorization, contest, and exit keep the instruments removable.*
 
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

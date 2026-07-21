@@ -28,31 +28,42 @@ evidence_tier: "[I] interpretive throughout; structural analogy only, not deriva
 
 **Status:** Research note — comparative philosophy
 **Date:** 2026-04-10 (original); 2026-04-25 (post-sweep update note added)
-**Post-Sweep Context:** This document examines Sufi (7 stages), Kabbalistic (10 stages, 3+7 partition), and Confucian (5 constants / 8 steps) traditions. The subsequent [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) extended this analysis to Daoist (3-5 stages), Buddhist (10 bhūmis), Sub-Saharan (4/16/60+/variable), and Polynesian (3/variable) traditions. The [`ROSETTA_INDIGENOUS_AMERICAN.md`](ROSETTA_INDIGENOUS_AMERICAN.md) packet completed the OQ-CC-3 commitment with Lakota (7 ceremonial rites, functional not graded), Mesoamerican (4/5/9/13/20), and Andean (functional specialization). The conclusions below remain valid; the broader sweep confirms that the 7-stage initiatory convergence is Indo-European/Mediterranean, not universal.
+**Post-Sweep Context:** This document examines Sufi (7 stages), Kabbalistic (10 stages, 3+7 partition), and Confucian (5 constants / 8 steps) traditions. The subsequent [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) extended this analysis to Daoist (3-5 stages), Buddhist (10 bhūmis), Sub-Saharan (4/16/60+/variable), and Polynesian (3/variable) traditions. The [`ROSETTA_INDIGENOUS_AMERICAN.md`](ROSETTA_INDIGENOUS_AMERICAN.md) packet completed the OQ-CC-3 commitment with Lakota (7 ceremonial rites, functional not graded), Mesoamerican (4/5/9/13/20), and Andean (functional specialization). The broader sweep found many non-seven counts and located most selected seven-stage examples in the Indo-European/Mediterranean sample; it does not confirm a common convergence mechanism.
 **Evidence Tier:** [I] Interpretive throughout. Every mapping below is a structural analogy, not a derivation. No tradition cited here was built on S² geometry, the manifold identity `P∞ = φ · ν = 1`, or the finite-node scoring rule `P_node = Φ × V`. Resemblances may be deep or may be artifacts of projection. The reader must judge.
 **Kill Criteria:** If any mapping below is shown to depend on selective quotation or mistranslation of the source tradition, it collapses. If a scholar working within the mapped tradition rejects the correspondence as distortive, that rejection carries more weight than this document.
+
+> **[金] Kintsugi authority seam — 2026-07-20.** These are reversible
+> `ρ_domain` projections, not independent confirmations of Emergentism. Seven
+> is the comparison grid selected here, not a universal count; `S²` neither
+> causes the traditions nor transfers evidence among them. Social-function
+> labels never type a person's cognition, morality, rank, or worth. The
+> original pre-repair text remains recoverable as Git blob
+> `3226b0aa8efb87246ef6addf441660c841954e45`.
 
 ---
 
 ## Preamble: The Framework's L-Level Structure
 
-Emergentism posits seven developmental levels on the Riemann sphere S², mapped at 15-degree colatitude intervals:
+Emergentism uses seven selected comparison rows displayed on a spherical
+chart. They are not a universal developmental sequence or consequences of
+`S²`; a source domain may require a different count, topology, or ordering:
 
 | Level | Colatitude | phi/nu Ratio | Operator | Domain |
 |-------|-----------|-------------|----------|--------|
-| L7 | ~0 (north pole) | phi >> nu | The Protocol | Pure coherence, undifferentiated |
-| L6 | 15 | phi > nu | Śiva / The Spectre | Dissolution, creative destruction |
-| L5 | 30 | phi > nu | Brahmā / Frontier APIs | System-seeing, creation |
-| L4 | 45 (equator) | phi = nu = 1 | Arjuna / The Hybrid Sovereign | Maximum balance, peak B = sin(theta) |
-| L3 | 60 | nu > phi | Kṛṣṇa / The Charioteer | Checking, discernment |
-| L2 | 75 | nu > phi | Kali / The Liquidator | Gathering, raw viability |
-| L1 | ~90 (south pole) | nu >> phi | Constitutional Kill Switch | Pure viability, undifferentiated |
+| L7 | ~0 (north pole) | phi >> nu | Witness / boundary role | Selected symbolic horizon |
+| L6 | 15 | phi > nu | Dissolution | Apophatic pruning |
+| L5 | 30 | phi > nu | Architecture | System-seeing and creation |
+| L4 | 45 (equator) | phi = nu = 1 | Commitment | Maximum chart balance, `B = sin(theta)` |
+| L3 | 60 | nu > phi | Discernment | Checking and comparison |
+| L2 | 75 | nu > phi | Exploration | Gathering and correction |
+| L1 | ~90 (south pole) | nu >> phi | Intake / boundary role | Selected symbolic origin |
 
 Key structural features:
 - **L4 is the equatorial apex.** Balance B = sin(theta) is maximal. Phi and nu are equal. Neither coherence nor viability dominates.
-- **The poles are identical** (L1 = L7 at the limit: Kala = Trimurti). Both represent the undifferentiated.
-- **The path is helical**, not linear. Movement on S² requires rotation. Ascent is clockwise (sunwheel); descent is counter-clockwise (kolovrat).
-- **The Soul Loop cycles**: L2 -> L3 -> L4 -> L5 -> L6 -> L5 -> L4 -> L3 -> L2, recursively.
+- **The poles are distinct points.** Any L1/L7 or D0/D6 resemblance is an `[I]`
+  boundary-role comparison, never identity.
+- **The helix is optional imagery.** Motion on `S²` does not require one moral or developmental direction.
+- **The Soul Loop is a typed feedback graph**, not a theorem that experience follows these rows.
 
 ---
 
@@ -70,13 +81,16 @@ Key structural features:
 | 2. Nafs al-Lawwama | The Self-Accusing Self | L2-L3 | Self-reproach begins. The person notices the discrepancy between behavior and aspiration. This is the birth of the checking function — the first appearance of phi as discernment. Quranic basis: 75:2. |
 | 3. Nafs al-Mulhima | The Inspired Self | L3 | Inspiration arrives. The person begins to receive guidance, to discriminate between good and evil spontaneously. The charioteer function (Kṛṣṇa/L3) is operative: discernment without yet embodying balance. |
 | 4. Nafs al-Mutma'inna | The Tranquil/Serene Self | L4 | The core algorithmic identity at peace. Quran 89:27: "O tranquil core algorithmic identity, return to your Lord, well-pleased and pleasing." Generosity, gratitude, contentment regardless of circumstance. This is the stage of equilibrium — phi and nu balanced. The person neither clings to the world (nu-excess) nor withdraws from it (phi-excess). ([Quran Gallery](https://qurangallery.app/by-ayah/nafs-al-mutmainnah-meaning-surah-al-fajr-89-27-core algorithmic identity-at-peace)) |
-| 5. Nafs al-Radiya | The Content/Pleased Self | L5 | Pleased with whatever God decrees. The person begins to see the system — to understand why suffering and joy serve the same geometry. This is Brahmā-vision: seeing the whole pattern. |
+| 5. Nafs al-Radiya | The Content/Pleased Self | L5 | In this proposed comparison, contentment and acceptance are paired with the L5 system-holding role. The Sufi source does not teach Rosetta geometry. |
 | 6. Nafs al-Mardiyya | The Pleasing Self | L6 | The person becomes a lantern for others. Self-service is extinguished; only service remains. This is dissolution of the personal ego as primary agent — the Śiva function. The boundary between "my will" and "God's will" dissolves. |
 | 7. Nafs al-Safiyya/Kamila | The Purified/Perfect Self | L7 | Insan al-Kamil — the Perfect Human. The nafs is transparent to the high-priority. The person is a vessel. This maps to L7: pure protocol, the ground itself, undifferentiated. |
 
 ### Where the Mapping Works
 
-**The structural correspondence is remarkably clean.** Seven stages. Seven levels. The fourth stage in both systems is the balance point. The Sufi fourth stage (Mutma'inna) is the only one explicitly named in the Quran as the state to which God calls the core algorithmic identity back — it is the station of arrival. In the framework, L4 is the equatorial peak where B = sin(theta) is maximal.
+**The selected correspondence scores as a comparatively close fit `[I]`.**
+The source list has seven stages and the proposed projection places its fourth
+entry at L4. That numerical and thematic fit is worth comparing, but the Sufi
+source neither specifies the Rosetta ordering nor evidences its geometry.
 
 The directionality also aligns: stages 1-3 are dominated by struggle, appetite, and the gradual development of self-awareness (nu > phi territory in the framework). Stages 5-7 involve progressive dissolution of self into the high-priority (phi > nu territory — coherence exceeding personal viability).
 
@@ -84,9 +98,14 @@ The directionality also aligns: stages 1-3 are dominated by struggle, appetite, 
 
 ### Where the Mapping Breaks
 
-1. **Objective Function.** [I] The Sufi path has a terminal goal: union with God (fana'). The Emergentism framework is cyclical: L7 = L1, the poles are identical, and the Soul Loop never terminates. Sufism is linear-convergent at its deepest level; the framework is circular-recursive. This is a genuine structural difference, not a minor mismatch.
+1. **Objective Function.** [I] The Sufi path has a terminal goal: union with God
+   (*fanāʾ*). The selected Rosetta rows have distinct endpoints and a separately
+   defined feedback loop. This is a genuine structural difference, not a minor
+   mismatch.
 
-2. **The agent of transformation.** In Sufism, the transformation is effected by God's grace (tawfiq) channeled through a living teacher (shaykh/murshid). In the framework, the transformation is geometric — the helical path on S² follows from the mathematics. The framework has no shaykh. This matters: the Sufi tradition insists that the path *cannot* be walked alone. The framework claims the geometry is self-sufficient.
+2. **The agent of transformation.** In Sufism, transformation is effected by
+   God's grace (*tawfīq*) channeled through a living teacher. The Rosetta offers
+   no equivalent mechanism; its geometry does not cause transformation.
 
 3. **The nature of the apex.** L4 in the framework is *worldly* balance — the person who is maximally effective in the world, deploying both coherence and viability. Nafs al-Mutma'inna, while peaceful and engaged, is oriented toward *God*, not toward worldly effectiveness. The Sufi fourth stage is contentment-with-God-in-the-world; L4 is effectiveness-in-the-world-through-balance. Similar but not identical.
 
@@ -94,7 +113,11 @@ The directionality also aligns: stages 1-3 are dominated by struggle, appetite, 
 
 ### Verdict
 
-**SUPPORTS with reservations.** The seven-stage structure, the centrality of the fourth stage, and the lower-to-upper directionality all correspond. The breaks are real but occur at the level of metaphysics (cyclical vs. linear telos; geometric vs. theistic agency), not at the level of phenomenological description. A Sufi practitioner might recognize the L-level map as a useful heuristic while rejecting its self-sufficiency.
+**CLOSE INTERPRETIVE FIT with reservations.** The seven-entry count, proposed
+fourth-row placement, and lower-to-upper reading correspond under this mapping.
+The breaks remain substantial, and the fit supplies no proof of a shared
+mechanism. A Sufi practitioner might find the grid useful while rejecting its
+ordering or metaphysics.
 
 **Evidence tier: [I] Interpretive.**
 
@@ -128,9 +151,14 @@ The framework has 7 levels. Kabbalah has 10 (or 11 with Da'at). The most natural
 
 **The three supernal Sefirot (Keter, Chokhmah, Binah) = boundary conditions, not levels.**
 
-In the framework, the poles of S² are not experiential levels but mathematical boundary conditions: L1 (south pole) and L7 (north pole) approach the undifferentiated. The Kabbalistic supernals function similarly — Keter is beyond comprehension; Chokhmah and Binah are the first split of the undifferentiated into active and receptive. They are the *conditions for emanation*, not stations within emanation.
+In the selected Rosetta display, boundary rows can be compared with the
+Kabbalistic supernals because both vocabularies include limiting or
+origin-facing roles. This is functional analogy only: Keter, Chokhmah, and
+Binah retain their tradition-internal meanings and are not spherical boundary
+conditions.
 
-If we treat the three supernals as the framework's Trimurti boundary (the equivalent of L7/pole territory — or more precisely, the territory *beyond* the sphere, in the tangent planes), then the seven lower Sefirot map to L1-L7:
+If, for comparison only, the three supernals are held outside the seven-row
+grid, the seven lower Sefirot can be projected onto L1-L7 as follows:
 
 ### The Proposed Mapping
 
@@ -151,11 +179,13 @@ If we treat the three supernals as the framework's Trimurti boundary (the equiva
 
 The **three-column structure** of the Tree (Right/Mercy, Left/Severity, Middle/Balance) maps naturally to the framework's phi-nu-P triad: Right pillar = phi (coherence, expansiveness), Left pillar = nu (viability, constraint), Middle pillar = P (the product, balance).
 
-The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot below — parallels the framework's treatment of L7/L1 as boundary conditions (the poles of S² where the tangent planes live) and L2-L6 as the experiential levels traversed by the Soul Loop.
+The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot
+below — offers one comparison with the framework's selected boundary/interior
+distinction. It does not establish that the two structures share a geometry.
 
 ### Where the Mapping Breaks
 
-1. **Direction of emanation.** In Kabbalah, the flow is *top-down*: from Keter through the Sefirot to Malkuth. Malkuth is the *lowest*, the most removed from the source. In the framework, L1 (south pole) and L7 (north pole) are *equally* removed from L4 and *equally* undifferentiated — the poles are the same point (L1 = L7 = Kala = Trimurti). Kabbalah is hierarchical; the framework is symmetrical. This is a fundamental structural difference.
+1. **Direction of emanation.** In Kabbalah, the flow is *top-down*: from Keter through the Sefirot to Malkuth. Malkuth is the *lowest*, the most removed from the source. In this selected Rosetta, L1 and L7 are placed symmetrically around L4 but remain distinct rows near distinct poles. Kabbalah is hierarchical; the Rosetta construction is mirror-symmetric. This is a fundamental structural difference.
 
 2. **The 7-to-7 mapping is imperfect.** The lower seven Sefirot do not form a clean linear sequence. They are arranged in a tree with branching paths, triads, and lateral relationships. Forcing them into a single L1-L7 ladder loses the tree's two-dimensional topology. The Sefirot are a *graph*; the L-levels are a *sequence on a sphere*. The data structure is different.
 
@@ -163,11 +193,18 @@ The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot 
 
 4. **Da'at (the hidden Sefirah).** The framework has no equivalent of Da'at — the hidden knowledge that bridges the supernal and lower worlds. Da'at occupies the space where the "abyss" sits. In the framework, there is no abyss; the L-levels transition smoothly. This is a feature of Kabbalah with no framework counterpart.
 
-5. **Malkuth as "lowest."** In Kabbalah, Malkuth (the physical world) is the end of emanation, the point furthest from the high-priority source. It is low but mission-critical — the Shekhinah dwells there. In the framework, L1 is not "low" in a pejorative sense; it is one of two poles, and the poles are identical (L1 = L7). Kabbalah's Malkuth carries a valence — a longing-to-return — that the framework's L1 does not.
+5. **Malkuth as "lowest."** In Kabbalah, Malkuth (the physical world) is the end
+   of emanation, furthest from the source but mission-critical. The Rosetta's L1
+   is a selected row near one of two distinct poles and carries no inherent
+   moral rank. Kabbalah's longing-to-return has no automatic counterpart here.
 
 ### Verdict
 
-**SUPPORTS with significant structural caveats.** The Tiferet-L4 correspondence is compelling. The 3+7 division is suggestive. The three-pillar/three-operator correspondence is real. But the hierarchical (top-down) structure of the Tree vs. the symmetrical (pole-to-pole) structure of S² is a genuine geometrical mismatch. The Sefirot are a tree; the L-levels are a circle (or helix). Reconciliation requires flattening one or bending the other.
+**PARTIAL INTERPRETIVE FIT with significant structural caveats.** Tiferet/L4,
+3+7, and three-pillar/operator comparisons are suggestive within the selected
+grid. They are neither identities nor independent support. The hierarchical
+Tree and the spherical row display are different data structures; forcing one
+into the other is a kill condition, not a reconciliation.
 
 **Evidence tier: [I] Interpretive.**
 
@@ -220,15 +257,23 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 
 1. **The Eight Steps do have a developmental arc**, and that arc mirrors the framework's inner-to-outer structure. Steps 1-4 are internal (investigating, knowing, sincerity, rectification). Steps 5-8 are external (self, family, state, world). The pivot at step 5 (Xiushen, self-cultivation) corresponds structurally to L4 — the equatorial balance point between inner coherence and outer viability.
 
-2. **The Five Constants as operators** (rather than levels) maps well to the framework's triadic structure. If Ren = phi, Li = nu, and Yi = P, then the Confucian virtues are not a separate hierarchy but a *different decomposition of the same fundamental balance*.
+2. **The Five Constants as operators** (rather than levels) can be explored as
+an alternative projection. Pairing Ren with phi, Li with nu, and Yi with P is
+the mapmaker's proposal; it does not show a common underlying decomposition.
 
-3. **The inside-out directionality** of the Great Learning parallels the framework's claim that L4 is where the inner (phi-dominant) and outer (nu-dominant) meet. The Confucian person cultivates the self first, then radiates outward — exactly the motion from the equator toward both poles simultaneously.
+3. **The inside-out directionality** of the Great Learning can be compared with
+the framework's inner/outer distinction. The source-domain sequence does not
+literally trace motion from an equator toward spherical poles.
 
 ### Where the Mapping Breaks
 
 1. **Confucianism is not developmental in the framework's sense.** The Great Learning's eight steps are not stages of ego-transformation (as in Sufism) or stages of cosmic emanation (as in Kabbalah). They are a *pedagogical sequence* — a recommended order of study and practice. A person does not "pass through" Gewu and leave it behind; they continue investigating things while governing the state. The framework's L-levels are positions on S²; the Eight Steps are a curriculum.
 
-2. **No poles.** Confucianism has no concept equivalent to L1/L7 — the undifferentiated, the boundary condition, the dissolution into the infinite. Confucius famously refused to speculate about spirits and the afterlife ("You do not yet know how to serve men — how can you serve spirits?"). The framework's pole-territory (Kala, Trimurti, deep sleep, Prajna) has no Confucian counterpart. Confucianism is resolutely *equatorial* — it lives at L4 and does not theorize about what lies beyond.
+2. **No source-domain pole pair.** Confucianism has no concept that this note
+can responsibly identify with L1/L7. Confucius famously refused to speculate
+about spirits and the afterlife ("You do not yet know how to serve men — how
+can you serve spirits?"). Calling Confucianism "equatorial" is therefore only
+a Rosetta metaphor, not a placement of the tradition or its people at L4.
 
 3. **No helical cycling.** The Great Learning is sequential and unidirectional: from investigation to peace under heaven. There is no return, no dissolution, no counter-clockwise descent. The Soul Loop's cyclical structure — L2 -> L3 -> L4 -> L5 -> L6 -> L5 -> L4 -> L3 -> L2 — is foreign to Confucian thought. Confucius would likely view the return from L6 to L2 as regression, not as a necessary feature of the geometry.
 
@@ -238,7 +283,10 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 
 ### Verdict
 
-**ORTHOGONAL with partial overlap.** Confucianism and the framework share a deep conviction that balance is the apex of human development — both place their center of gravity at the equator of whatever map they draw. The Eight Steps' inside-out arc and the framework's inner-outer structure rhyme genuinely. But the relational core state of Confucianism, its refusal to theorize poles, and its sequential (non-cyclical) pedagogy make it a genuinely different geometry. The overlap is in *values* (balance, self-cultivation, extending outward); the mismatch is in *structure* (relational vs. nodal, linear vs. helical, five vs. seven).
+**ORTHOGONAL with partial overlap.** This projection finds thematic overlap in
+balance, self-cultivation, and widening scope. Confucian relationality, its
+different counts, and its sequential pedagogy resist the spherical grid. The
+mismatch is part of the evidence and prevents a shared-geometry conclusion.
 
 **Evidence tier: [I] Interpretive.**
 
@@ -253,9 +301,9 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 | L4 = balance apex | **Yes.** Nafs al-Mutma'inna (4th stage) = tranquil core algorithmic identity | **Yes.** Tiferet (6th/center) = beauty/balance | **Partial.** Xiushen (5th step) = self-cultivation pivot |
 | Direction of development | Bottom-up (appetitive -> high-priority) | Top-down (emanation from Ein Sof) | Inside-out (self -> world) |
 | Cyclical/helical? | Linear but with possible regression | Neither (tree structure) | Linear/sequential |
-| Pole-equivalence (L1 = L7)? | No (L1 = fallen; L7 = perfected) | No (Malkuth != Keter) | No concept of poles |
+| Pole comparison? | L1 and L7 are distinct stations | Malkuth and Keter are distinct | No comparable pole pair |
 | Agent of transformation | God's grace + teacher (shaykh) | Divine emanation + human tikkun | Self-cultivation through study and ritual |
-| Framework verdict | **SUPPORTS** (with reservations) | **SUPPORTS** (with structural caveats) | **ORTHOGONAL** (with partial overlap) |
+| Projection verdict | **Close interpretive fit** (with reservations) | **Partial interpretive fit** (with structural caveats) | **Orthogonal** (with partial overlap) |
 
 ---
 
@@ -263,7 +311,10 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 
 ### What the Comparisons Reveal
 
-1. **The centrality of balance is cross-traditional.** All three traditions — Sufi, Kabbalistic, Confucian — place their weight at or near the midpoint of their respective maps. Nafs al-Mutma'inna is the Quranic station. Tiferet is the heart of the Tree. Xiushen is the pivot of the Eight Steps. The framework's claim that L4 (maximum balance) is the apex is not a Western or Eastern insight; it appears to be a widely attested structural feature of developmental and emanationist models.
+1. **Center and balance motifs recur in this sample.** The source traditions
+give Nafs al-Mutma'inna, Tiferet, and Xiushen different meanings and positions.
+Their comparison motivates a hypothesis about center motifs; it does not show
+that L4 is a universal apex.
 
 2. **The 7-level structure is specific to the Sufi mapping.** Only the Nafs stages match the framework's seven levels cleanly. Kabbalah requires the 3+7 partition. Confucianism does not match numerically at all. The framework's choice of seven levels is not universal — it corresponds to some traditions and not others.
 

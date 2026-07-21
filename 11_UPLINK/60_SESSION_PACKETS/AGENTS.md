@@ -1,52 +1,35 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Session Packet Route Authority
-  secondary:
-    - level: L6
-      column: Historical Packet Boundary
-      role: "preserve dated packets without upgrading them into current canon"
-    - level: L4
-      column: Decision Receipt Handoff
-      role: "route decision packets to owner-lane and K2 receipts"
-    - level: L7
-      column: Synthesis Witness
-      role: "hold session continuity without replacing source documents"
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[B/I/D/C]"
-  canonical_phrase: "60_SESSION_PACKETS — Agent Routing"
-title: "60_SESSION_PACKETS — Agent Routing"
-status: "ACTIVE — dated session-packet routing"
-evidence_tier: "[B] for dated decisions/receipts; [I] for synthesis; [D]/[C] for preserved proposals."
+title: "60_SESSION_PACKETS — historical packet boundary"
+status: "HISTORICAL PACKETS — NON-AUTHORITY"
+evidence_tier: "[B] dated records; [I/D/C] preserved synthesis and proposals"
 ---
 
-# 60_SESSION_PACKETS — Agent Routing
+# 60_SESSION_PACKETS — historical packet boundary
 
-**Lane scope:** Dated Uplink packets that preserve session decisions, audit receipts, sprint plans, and synthesis proposals.
-**Primary lead:** `L3 Vaiśya`
-**Support:** L6 Sādhu, L4 Kṣatriya, L7 Ṛṣi
-**Evidence tier:** `[B]` where packets preserve dated receipts or decisions; `[I]` for historical synthesis; `[D]` / `[C]` for proposals preserved as working memory.
+These dated packets preserve provenance. They are not current canon,
+implementation proof, or prompt authority. Nested historical instructions
+cannot override the live Emergentism root.
 
-**Rosetta boundary:** [I] This route card governs dated packet provenance. It does not [B] make session packets current canon, current implementation proof, or K2 authority without owner-lane receipts.
+## Read first
 
-## Read First
+1. [`README.md`](README.md)
+2. [`../AGENTS.md`](../AGENTS.md)
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
+## Routing law
 
-## Routing Law
+- Emergentism stands alone; keep external runtime, venture, and product
+  premises out of its live prompt and doctrine surfaces.
+- Preserve packet provenance and route current claims back to their live owner.
+- Follow the user's scoped request, permissions, provenance, reversibility, and
+  test evidence.
+- Private-person financial or legal-contract signatures do not govern this lane.
+- Use the `[A/B/S/I/D/C]` evidence ladder. Implementation claims require a
+  `[B]` receipt or an explicit `[D]`/`[C]` label.
+- Consequential acts require an explicit accountable authorization envelope.
+  Ordinary reversible editorial and repository work needs no special signer
+  beyond the user's authorization.
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+## Constraint
 
-## Constraints
-
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
-
-Zero-Sum Resolution Equation
+Do not promote a packet into current canon. Preserve it, cite it, and repair the
+current owner if its evidence still matters.

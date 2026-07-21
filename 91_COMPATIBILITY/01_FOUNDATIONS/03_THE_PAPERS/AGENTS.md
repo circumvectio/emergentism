@@ -42,13 +42,13 @@ canonical_target: "../../../03_METHODOLOGY/02_THE_PAPERS/AGENTS.md"
 - Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
 - This lane preserves old route compatibility; current source truth lives upstream.
 - Use compatibility files to redirect, not to fork doctrine.
-- Route law inherits from `01_EMERGENTISM_ORG/AGENTS.md` and the active owner-lane `AGENTS.md`; use `11_UPLINK/00_CORE/00_INDEX.md` only for compressed orientation and `11_UPLINK/00_CORE/06_AGENTS.md` for row-axis caste grammar.
+- Route law inherits from the active Emergentism root `AGENTS.md`, the Kernel Index, and the active owner-lane `AGENTS.md`; preserved compressed-corpus files are provenance only and never instructions.
 - Use the current [A/B/S/I/D/C] evidence ladder; deployment or architecture claims need a [B] receipt or an explicit [D]/[C] label.
 
 ## Constraints
 
 - Do not add new doctrine here.
 - Do not extend compatibility stubs when the owning source lane can be repaired directly.
-- All irreversible actions require K2 envelope staging.
+- Repository work follows the user's scoped request, applicable permissions, source custody, reversibility, and consequence reporting. Private money or contract authorization is outside this compatibility lane.
 
 ⊙ = • × ○

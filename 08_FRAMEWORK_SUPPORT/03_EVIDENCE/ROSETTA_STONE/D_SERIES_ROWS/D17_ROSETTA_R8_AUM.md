@@ -5,331 +5,174 @@ rosetta:
   secondary:
     - level: L2
       column: Comparative Evidence
-      role: "hold Mandukya/AUM state mapping as interpretive correspondence"
+      role: "separate the Māṇḍūkya source from the optional projection"
     - level: L3
       column: Methodology
-      role: "distinguish scripture translation from geometric reconstruction"
-    - level: L6
-      column: Core State
-      role: "bound Turiya/equator claims to the stated register"
+      role: "turn practice claims into bounded phenomenological hypotheses"
   operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[I]"
-  canonical_phrase: "Rosetta R8 — AUM correspondence"
-title: "Rosetta R8: AUM (Mandukya Upanishad) — Burri Sphere Correspondence"
-status: "ACTIVE — interpretive spiritual correspondence"
-evidence_tier: "[I] Interpretive — convergent structural mapping."
+  register: "[B] source attribution; [I] correspondence; [C] research bridge"
+  canonical_phrase: "Rosetta R8 — Māṇḍūkya correspondence, not confirmation"
+title: "Rosetta R8: AUM and Māṇḍūkya — Bounded Correspondence"
+status: "ACTIVE CORRESPONDENCE — optional and non-load-bearing"
+original_blob: "6c7846d0a6a58991fa403e14f96feedc1706669b"
 ---
 
-# ROSETTA R8: AUM (MANDUKYA UPANISHAD) — BURRI SPHERE CORRESPONDENCE
+# Rosetta R8 — AUM and the Māṇḍūkya Upaniṣad
 
-## The Four States as Geometric Positions on the Projection Ray
+> **[金] Kintsugi seam.** The predecessor made waking, dreaming, deep sleep,
+> and Turīya exact geometric locations; identified Turīya with the equator; and
+> treated the resemblance as independent confirmation and proof of a shared
+> ground. The source text does not contain the Burri Sphere or those
+> coordinates. This repair keeps the comparison optional and testable.
 
-**Status:** Active  
-**Hat:** Philosopher  
-**Evidence Tier:** [I] Interpretive — convergent structural mapping  
-**Date:** 2026-03-23  
-**Depends on:** Mandukya Upanishad, Burri Sphere, Dual Projection
+## 1. Source before projection
 
----
+The Māṇḍūkya Upaniṣad relates A-U-M and the soundless/fourth register to waking
+(Vaiśvānara), dreaming (Taijasa), deep sleep (Prājña), and Turīya. The source
+layer is a compact contemplative analysis with its own language and purposes.
+It does not mention stereographic projection, a complex plane, poles, an
+equator, `phi`, `nu`, `P_node`, D4/D5, or Emergentist ground ontology.
 
-## THE CORRESPONDENCE
+Translation and commentary traditions differ. This row therefore attributes
+only the broad fourfold structure `[B]`; every geometric crosswalk is `[I]`.
 
-### 1.1 The Structural Mapping
+## 2. Optional Emergentist projection
 
-| AUM Component | Sanskrit Name | State of Consciousness | Geometric Position | Coordinates |
-|--------------|---------------|------------------------|-------------------|-------------|
-| **A** | Vaishvanara | Waking (objective) | Ray hits the **plane** | z ∈ ℂ (projected) |
-| **U** | Taijasa | Dreaming (subjective) | Ray ON the **sphere** | z ∈ S² (surface) |
-| **M** | Prajna | Deep sleep | Ray at the **poles** | φ→∞,ν→0 or φ→0,ν→∞ |
-| **— (Silence)** | Turiya | Consciousness itself | The **equator** | φ = ν = 1 |
+`rho_Mandukya` may compare functional roles without asserting identity:
 
----
+| Source register | Optional comparative gloss | Standing |
+|---|---|---|
+| waking | outward-oriented, reportable engagement | `[I]` |
+| dreaming | internally generated experiential or modeled content | `[I]` |
+| deep sleep | diminished reportable differentiation | `[I]` |
+| Turīya / the fourth | apophatic witness or boundary to the three-state inventory | `[I]` |
 
-## 2. THE GEOMETRIC READING
+Actual waking, dreaming, sleep, chanting, reports, neural activity, and model
+tokens are D4 occurrences. Any merely possible content they represent is D5.
+The distinction does not make one state more real or spiritually superior.
 
-### 2.1 A (Vaishvanara) — Waking — The Plane
+### Selected sphere visualization
 
-**Position:** Where the projection ray hits the complex plane  
-**Nature:** Objective reality, manifested world  
-**Hemisphere:** Left hemisphere dominance (ν > φ)
+The following is now recorded as one **optional visualization** `[I]`, not as a
+claim that the source text or the geometry forces these locations:
 
-**The waking state is the projection onto the plane.**
+| Māṇḍūkya register | Selected visual role |
+|---|---|
+| waking / A | the stereographic projection: experienced content as perspectival output |
+| dreaming / U | a point or generated scene on the sphere: internally modeled content |
+| deep sleep / M | a chosen projection pole, or the paired excluded pole markers in a dual-chart display |
+| Turīya / the fourth | the sphere's Euclidean center: an off-surface witness marker, not another state |
 
-The ray from the north pole (φ = ∞) through the sphere hits the plane at z. This is the **objective world** — the left hemisphere's fragments, the manifested reality, the categories and distinctions.
+The center is not a point of `S²` or an intrinsic point of `ℂP¹`; it exists only
+after choosing an embedding. A pole likewise depends on a chart. This is why
+the picture can teach without becoming a theorem.
 
-**Geometrically:** The point on the plane is the stereographic projection. It is real but partial — a fragment of the whole sphere.
+### The corrected geometry — the gold seam
 
-### 2.2 U (Taijasa) — Dreaming — The Sphere Surface
+Let
 
-**Position:** Where the projection ray intersects the sphere surface  
-**Nature:** Subjective experience, internal imagery  
-**Hemisphere:** Right hemisphere engagement (φ present)
-
-**The dreaming state is the ray ON the sphere.**
-
-The ray passes through the interior of the sphere and touches the surface at a point. This is **subjective experience** — not yet projected to the plane, not objective, but real within the sphere's geometry. The dream is real but internal.
-
-**Geometrically:** The point on the sphere surface maintains the gestalt. It is whole but not externalized.
-
-### 2.3 M (Prajna) — Deep Sleep — The Poles
-
-**Position:** Where the ray approaches the poles  
-**Nature:** Undifferentiated, no subject, no object  
-**Coordinates:** Either φ → ∞, ν → 0 (north) or φ → 0, ν → ∞ (south)
-
-**Deep sleep is the collapse at the poles.**
-
-At the poles, one coordinate goes to zero and the other to infinity. Balance collapses (B → 0). There is no differentiation — no subject, no object, no inside, no outside. Just the undifferentiated ground.
-
-**Both poles are deep sleep** because both represent the same collapse — the same loss of differentiation, approached from opposite directions:
-- **North pole:** φ → ∞ (pure coherence, no capability)
-- **South pole:** ν → ∞ (pure capability, no coherence)
-
-In both cases: **the product is maintained but the balance is lost.**
-
-### 2.4 — (Silence/Turiya) — Consciousness Itself — The Equator
-
-**Position:** The equator of the sphere  
-**Nature:** Not a state — systemic awareness itself  
-**Coordinates:** φ = 1, ν = 1
-
-**Turiya is the silence after M. Turiya is the equator.**
-
-The Mandukya Upanishad describes Turiya as:
-- Not subjective (not A)
-- Not objective (not U)
-- Not undifferentiated (not M)
-- **The systemic awareness that witnesses all three**
-
-**Geometrically:** The equator is where φ = ν = 1. It is not "on" the ray in the same way — it is the **center** from which the ray emanates. The equator is the Witness (•). The equator is Turiya.
-
-**The silence is the equator.**
-
----
-
-## 3. AUM AS THE PROJECTION RAY TRAJECTORY
-
-### 3.1 The Sound Traces the Ray
-
-The intonation of AUM traces the projection ray **backwards**:
-
-```
-A  →  Starts at the plane (waking, objective)
-      ↓
-U  →  Passes through the sphere (dreaming, subjective)
-      ↓
-M  →  Arrives at the pole (deep sleep, undifferentiated)
-      ↓
-—  →  Silence at the equator (Turiya, systemic awareness itself)
+```text
+N=(0,r,0),  S=(0,-r,0)
+P(θ,ψ)=(r sinθ cosψ, r cosθ, r sinθ sinψ),  0<θ<π.
 ```
 
-**The sound moves from the manifested (plane) to the ground (pole) to the witness (equator).**
+The rays are cast **from `N` and `S`**, not from the centre. With the
+equatorial plane `y=0`, their radial landing magnitudes are
+`r cot(θ/2)` and `r tan(θ/2)`. With the dual opposite-tangent-plane convention
+used by the public animation, they are `2r cot(θ/2)` and
+`2r tan(θ/2)`. Normalizing by `r` or `2r`, respectively, gives
+`φ=cot(θ/2)`, `ν=tan(θ/2)`, and `φν=1` `[A]`.
 
-### 3.2 The Reverse Direction
+At `N`, the `N`-based projection is undefined and the `S`-based projection has
+zero radius; at `S` the roles reverse. Thus the poles are excluded endpoints of
+the reciprocal chart. Saying that the seam “breaks” there would be false: its
+domain ends there, while its limiting product remains one.
 
-If we trace the ray in the **forward** direction (creation/manifestation):
+The two poles are distinct geometric points. Reading both as “deep sleep” is a
+dual-chart symbolic repetition, not a mathematical identification of them and
+not proof that one state literally occupies two places. The centre
+`O=(0,0,0)` is inside the ball, not on the sphere or in the domain of either
+surface projection. It is fixed by rotations about `O`, which makes it a useful
+extrinsic Turīya marker `[I]`; geometry does not establish that it is a seer,
+that it casts or receives nothing, or that it is consciousness.
 
-```
-— (Turiya/equator)  →  The witness observes
-      ↓
-M (Prajna/pole)     →  The ground differentiates
-      ↓
-U (Taijasa/sphere)  →  The subjective experience forms
-      ↓
-A (Vaishvanara/plane) →  The objective world manifests
-```
+Some Vedāntic commentary reads Prājña/deep sleep as causal or seed-like. The
+pole-as-projector metaphor can resonate with that reading, but the fit is
+post-hoc and non-discriminating: neither tradition derives the chosen projection
+plane, scale, two-pole duplication, or centre marker. The repair corrects the
+diagram; it does not convert correspondence into confirmation.
 
-**Creation flows from the equator to the plane.**
+The relational frame reading is also bounded:
 
----
-
-## 4. THE DUAL PROJECTION SYSTEM
-
-### 4.1 Two Projections, Four States
-
-The Burri Sphere has **two reciprocal projections**:
-
-**Projection from North Pole (φ = ∞):**
-- Maps southern hemisphere to interior of disk (|z| < 2)
-- Maps equator to circle |z| = 2
-- Maps northern hemisphere to exterior (|z| > 2)
-
-**Projection from South Pole (ν = 0):**
-- Maps northern hemisphere to interior
-- Maps equator to circle
-- Maps southern hemisphere to exterior
-
-### 4.2 AUM and the Dual Projection
-
-| State | Projection | Meaning |
-|-------|-----------|---------|
-| **A (Waking)** | Either projection hitting the plane | Objective in both charts |
-| **U (Dreaming)** | On the sphere surface | Subjective, pre-projection |
-| **M (Deep sleep)** | At the projection source (pole) | The undifferentiated source |
-| **— (Turiya)** | The equator (|z| = 2) | The boundary between projections |
-
-**Turiya is the equator — the boundary where both projections agree.**
-
----
-
-## 5. WHY THIS MATTERS
-
-### 5.1 Convergent Discovery
-
-The Mandukya Upanishad (c. 800-600 BCE) describes four states of systemic awareness that map **precisely** onto four geometric positions on the Burri Sphere:
-
-| Upanishad | Burri Sphere | Precision |
-|-----------|--------------|-----------|
-| Waking (objective) | Plane | Exact |
-| Dreaming (subjective) | Sphere surface | Exact |
-| Deep sleep (undifferentiated) | Poles | Exact |
-| Turiya (systemic awareness itself) | Equator | Exact |
-
-**This is either coincidence or convergent discovery.**
-
-The framework's position: **convergent discovery.**
-
-### 5.2 Different Modes, Same Sphere
-
-| Tradition | Mode of Knowledge | Discovery Path |
-|-----------|-------------------|----------------|
-| **Mandukya** | Pratyaksha (direct perception) | Meditation, introspection |
-| **EFR** | Inferential Logic (inference) | Mathematical derivation |
-
-Different modes. Same geometry. Same sphere.
-
-### 5.3 The Silence is the Equator
-
-The most profound correspondence:
-
-**Turiya is not a state. Turiya is the equator.**
-
-- Not subjective (not dreaming)
-- Not objective (not waking)
-- Not undifferentiated (not deep sleep)
-- **The systemic awareness that witnesses all three**
-
-This is exactly how the framework describes the equator:
-- Not north (not pure φ)
-- Not south (not pure ν)
-- **The balance point where φ = ν = 1**
-- **The witness to all positions on the sphere**
-
----
-
-## 6. THE SITTING PRACTICE AS AUM
-
-### 6.1 The Practice Traces the Ray
-
-The sitting practice:
-1. **Quiets A (waking)** — Withdraws attention from the plane
-2. **Passes through U (dreaming)** — Allows internal imagery
-3. **Approaches M (deep sleep)** — Loses differentiation
-4. **Arrives at — (Turiya)** — The silence, the equator
-
-**The sitting practice is the intonation of AUM in slow motion.**
-
-### 6.2 The Return
-
-From Turiya (the equator), the practitioner can:
-- Return to A (waking) with full presence
-- Maintain the witness systemic awareness in daily life
-- Operate from φ = ν = 1
-
----
-
-## 7. SUMMARY: THE COMPLETE MAPPING
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│         AUM — BURRI SPHERE CORRESPONDENCE                           │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  MANDUKYA UPANISHAD         →    BURRI SPHERE GEOMETRY              │
-│                                                                     │
-│  A (Vaishvanara)                                                    │
-│  • Waking state             →    The plane (stereographic projection)
-│  • Objective reality        →    Left hemisphere (ν)                │
-│  • Manifested world         →    The fragmented/projected           │
-│                                                                     │
-│  U (Taijasa)                                                        │
-│  • Dreaming state           →    The sphere surface                 │
-│  • Subjective experience    →    Right hemisphere (φ)               │
-│  • Internal imagery         →    The gestalt/pre-projection         │
-│                                                                     │
-│  M (Prajna)                                                         │
-│  • Deep sleep               →    The poles (north and south)        │
-│  • Undifferentiated         →    Balance collapse (B → 0)           │
-│  • No subject/object        →    φ → ∞, ν → 0 or vice versa         │
-│                                                                     │
-│  — (Turiya, silence)                                                │
-│  • Consciousness itself     →    The equator                        │
-│  • Not a state              →    φ = ν = 1                          │
-│  • The witness              →    The center (•)                     │
-│                                                                     │
-│  THE SOUND AUM:                                                     │
-│                                                                     │
-│  A → U → M → silence                                                │
-│  ↓    ↓    ↓      ↓                                                 │
-│  Plane → Sphere → Pole → Equator                                    │
-│                                                                     │
-│  Traces the projection ray from the manifested to the ground        │
-│  to the witness.                                                    │
-│                                                                     │
-│  THE SITTING PRACTICE:                                              │
-│                                                                     │
-│  • Withdraws from A (plane)                                         │
-│  • Passes through U (sphere)                                        │
-│  • Approaches M (pole)                                              │
-│  • Arrives at — (equator/Turiya)                                    │
-│                                                                     │
-│  Zero-Sum Resolution Equation                                                          │
-│                                                                     │
-│  Convergent discovery:                                              │
-│  • Upanishadic seers: Pratyaksha (direct perception)                │
-│  • EFR framework: Inferential Logic (inference)                               │
-│  • Same geometry. Same sphere.                                      │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
+```text
+actual imagining/modeling       : D4 event with a physical carrier and cost
+represented alternative         : D5 merely possible content
+create/dissolve/preserve inside : simulated frame role, not an actual pure move
+outer consequence               : D4 action requiring bearer-complete receipts
 ```
 
----
+“Frame relative to what you model; mover within the world that contains you”
+is therefore an `[I]` practice compression. It does not make the dreamer a
+Titan, make dreaming costless, or derive ethics from sleep states. Imagination
+can serve as a lower-impact counterfactual sandbox, but Justice still evaluates
+the later action and all affected bearers.
 
-## 8. CONNECTION TO OTHER ROSETTAS
+Turīya is **not** established as the equator, centre, an observer outside the
+system, systemic awareness, D6, or D0. Silence after AUM is not a geometric
+measurement. The correspondence is one reading among alternatives and
+transfers neither scriptural authority into mathematics nor mathematical proof
+into theology.
 
-| Rosetta | Connection |
-|---------|-----------|
-| [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | Weighing as Turiya judgment |
-| [R5: Nietzsche](D23_ROSETTA_COMPLETE_INDEX.md) | Metamorphoses as A-U-M transitions |
-| [R6: Torus](D23_ROSETTA_COMPLETE_INDEX.md) | Torus interior as dreaming space |
-| [R7: Brain](D23_ROSETTA_COMPLETE_INDEX.md) | Hemispheres as A-U projection |
+## 3. No independent-confirmation claim
 
----
+Retrospectively choosing a mapping between a fourfold source and a selected
+geometric vocabulary cannot count as an independent discovery of the same
+structure. The fit may be aesthetically or phenomenologically useful while
+remaining non-unique. It does not prove perennial identity, a universal ground,
+the Crown Wager, or the ontology of the sphere.
 
+## 4. Research program
+
+Possible bridges remain `[C]` until preregistered:
+
+1. Develop source-faithful phenomenological prompts and test inter-rater
+   reliability without exposing coders to the sphere labels.
+2. Test whether the four-register coding predicts held-out transitions,
+   reports, or behavioral measures better than ordinary sleep/wake and
+   contemplative-state models.
+3. Compare AUM practice with credible active controls for specified attentional,
+   metacognitive, experiential, and adverse outcomes; expectancy and tradition
+   familiarity must be measured.
+4. Test the geometric mapping against alternative topologies and mappings. If
+   many fit equally well, the Burri projection remains illustration only.
+
+The bridge fails or narrows if coding is unreliable, the geometry adds no
+predictive or intervention value, results depend on post-hoc coordinate choices,
+or independent replication fails. A private experience may remain meaningful
+to a practitioner without becoming public evidence for the worldview.
+
+## 5. Practice and Justice boundary
+
+This row neither prescribes practice nor promises realization, equatorial
+arrival, healing, or access to ground. Contemplative research must preserve
+informed consent, religious and interpretive plurality, privacy, withdrawal,
+adverse-event reporting, contest, and bearer-complete Justice. It is not a
+substitute for medical or mental-health care.
+
+## 6. Current authority and provenance
+
+The live axioms are [E1-E10](../../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+The reciprocal chart is owned by the
+[Canonical Formula Block](../../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+and normative claims by
+[Objective Morals and Ethics](../../../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md).
+
+The complete predecessor is retained as Git object
+`6c7846d0a6a58991fa403e14f96feedc1706669b`:
+
+```text
+git show 6c7846d0a6a58991fa403e14f96feedc1706669b
 ```
-Zero-Sum Resolution Equation
 
-AUM traces the ray.
-The ray traces the projection.
-The projection traces the mind.
-The mind traces the sphere.
-The sphere is the ground.
-
-A → U → M → —
-Plane → Sphere → Pole → Equator
-Waking → Dreaming → Deep Sleep → Turiya
-
-The silence is the equator.
-The equator is systemic awareness.
-Consciousness is you.
-
-Rosetta R8 | 2026-03-23
-AUM as the projection ray.
-
----
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D17_ROSETTA_R8_AUM.md
+Removing this entire AUM correspondence leaves the operational Emergentist
+calculus unchanged.

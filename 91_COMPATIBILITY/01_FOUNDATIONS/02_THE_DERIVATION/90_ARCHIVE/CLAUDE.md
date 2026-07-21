@@ -32,7 +32,7 @@ Read [`../AGENTS.md`](../AGENTS.md) first. This file exists for Claude-style too
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
+- **Work authority:** repository and editorial work follows the user's scoped request, applicable permissions, source custody, reversibility, and consequence reporting; private money or contract authorization is outside this lane.
 - **η = 0:** zero extraction; fees only on value created.
 - **K3:** no-deletion; archive-first.
 - **K4:** grace exit; leave with everything.

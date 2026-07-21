@@ -23,7 +23,7 @@ rosetta:
 title: "The Recursive Trivium: Competitive, Neurobiological, and Cliodynamical Synthesis"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary.**
 
 

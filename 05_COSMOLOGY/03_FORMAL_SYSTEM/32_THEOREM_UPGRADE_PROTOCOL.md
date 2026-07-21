@@ -23,7 +23,7 @@ rosetta:
 
 ## Why This File Exists
 
-Several claims in the formal system are presented with theorem-style language but do not carry theorem-style infrastructure. They assert a structural relation; they do not explicitly fix the primitives' types, state an independent measurement procedure, supply a falsifier, or show the derivation. Without those, the claim is a *discipline* — a rule a practitioner follows — even if it happens to be correct. Disciplines are valuable; but if a discipline is labelled `[S]` or `[S]`, that is tier-inflation and the framework's A7 (self-correction) requires it be repaired.
+Several claims in the formal system are presented with theorem-style language but do not carry theorem-style infrastructure. They assert a structural relation; they do not explicitly fix the primitives' types, state an independent measurement procedure, supply a falsifier, or show the derivation. Without those, the claim is a *discipline* — a rule a practitioner follows — even if it happens to be correct. Disciplines are valuable; but if a discipline is labelled as a theorem, that is tier inflation and E9 (correction) requires repair.
 
 This file is the repair protocol. The discipline → theorem promotion is deliberately boring: five steps, each auditable, each documented upstream of the claim.
 
@@ -81,7 +81,7 @@ This ladder is the same one in [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_
 
 ## Worked Example: The φ-Meter Upgrade Path
 
-The framework's own open-problems list ([Paper L](../../../01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md)) names a gap: *"Phi-meter zero-cost validation."* This is the gap. We walk through what a promotion attempt looks like.
+The framework's own open-problems list ([Paper L](../../03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md)) names a gap: *"Phi-meter zero-cost validation."* This is the gap. We walk through what a promotion attempt looks like.
 
 ### Step 1 — Fix the primitives
 
@@ -134,7 +134,11 @@ Promoting any of these to `[I]` requires the first real empirical application pe
 
 - The seed (`Zero-Sum Resolution Equation`) and primary disclosure (Pratyakṣa) sit below the protocol and are not subject to it.
 - The coordinate identity (`φ · ν = 1 on S²`, `B = sin θ`, `H(φ) = φ + 1/φ`) sits at the level the protocol *operates from* — it is the formal machinery that would be plugged into Step 2 and Step 3.
-- The seven operational axioms `A1–A7` sit at the level the protocol is *meant to strengthen* — each one has a pulled falsifier in [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md), but most are still `[I]` or `[S]` on the empirical bridge pending real `Φ̂, ν̂` data.
+- E1-E10 is the live axiom owner. This protocol may harden a separately typed,
+  falsifiable bridge claim associated with an E-axiom, but it cannot promote an
+  axiom by accumulation or transfer proof from a historical A1-A7 falsifier.
+  The A1-A7 rows in [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) are
+  genealogy and audit provenance.
 
 The ordering is deliberate. The seed and the disclosure do not need a theorem-promotion machinery; they precede it. The operational axioms need the machinery, because they are the framework's public-facing claims.
 
@@ -147,13 +151,17 @@ The ordering is deliberate. The seed and the disclosure do not need a theorem-pr
 - [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) — Step 5 substrate
 - [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) — the reference derivation (T1–T4) and D5 (why the ladder dissolves at disclosure)
 - [`00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim
-- [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) A7.1 — the Abduction Protocol this file instantiates
+- [`../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md`](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) E9 — the live correction requirement
+- [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) — superseded A1-A7 genealogy
 
 ---
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
 2. **Your Next Action:**

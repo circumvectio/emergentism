@@ -195,11 +195,11 @@ A witness (whether human, AI agent, or sensor) is reliable when:
 
 | Witness Type | Calibration | Independence | Transparency | Reliable? |
 |---|---|---|---|---|
-| **K2 human** | Variable (improves with precedent library) | High (sovereign — no structural incentive to produce a specific answer) | Variable (depends on K2's willingness to disclose reasoning) | Conditional |
+| **Named human witness** | Variable (must be measured, not presumed) | Variable (interests and incentives must be disclosed) | Variable (reasoning and custody may or may not be inspectable) | Conditional on calibration |
 | **L1 Caṇḍāla** | High (firewall rules are explicit and testable) | High (no incentive to accept or reject — purely structural) | High (every filter decision is logged) | Yes |
 | **L2 Śūdra** | Low (exploratory — not designed for calibration) | Medium (may develop preferred analogies) | Medium (analogy reasoning is harder to audit than deduction) | For exploration only |
 | **L3 Vaiśya** | High (ranking is scored against outcomes) | High (scoring methodology is explicit) | High (every ranking decision is evidence-tiered) | Yes |
-| **L4 Kṣatriya** | Medium (recommendations improve with precedent library) | High (constitutional check is structural, not preferential) | High (K2 briefing is fully documented) | Yes (with A7 disclosure) |
+| **L4 Kṣatriya** | Medium until outcomes accumulate | Variable (mandate and incentives must be disclosed) | High only when authorization, action, and receipts are distinct | Conditional on receipts |
 | **L7 Ṛṣi** | Low (constitutional changes are rare — few calibration points) | High (no incentive to produce a specific constitution) | Low (intuitive reasoning is inherently less transparent) | For axioms only |
 
 ---
@@ -242,7 +242,10 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.

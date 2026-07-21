@@ -187,7 +187,9 @@ Without framework-specific predictions, the sitting practice remains an experien
 
 ### The Strongest Form
 
-The framework uses ℂP¹ (the Riemann sphere) as core state. It claims the sphere IS the territory, not the map. The complex plane ℂ is the map (the projection).
+The historical framework used ℂP¹ as a core-state image and sometimes claimed
+the sphere was the territory. Active canon retracts that identity: the sphere is
+a selected map whose fitness remains externally unvalidated.
 
 But ℂP¹ is a mathematical object. It exists in the formal system of complex analysis. Using it to describe reality is a category error — the same error the framework diagnoses in others when it warns against the Mercator Artifact (confusing the projection for the sphere).
 
@@ -197,21 +199,34 @@ The framework's own methodology says: reduce to κ = 0. The shortest description
 
 ### The Framework's Response
 
-**The framework acknowledges the category error risk. Its defense is the empirical program: the territory either has this structure or it doesn't.**
+**The repaired response accepts the category boundary.** Empirical success can
+support a domain model; it cannot turn a mathematical representation literally
+into the territory.
 
-The framework does not ask you to believe the territory is S². It asks you to test it. The derivation chain (THE_DERIVATION) shows what follows from the axioms. The active empirical program (Protocol R, AMRITA, Φ-meter, and new independent studies) tests whether reality agrees.
+The framework asks users to test precisely operationalized local claims against
+rivals. The derivation ledger records what follows only from declared premises;
+the external calibration ledger records what is and is not presently measured.
 
-If the multiplicative structure (P_node = Φ × V) describes human flourishing better than the additive structure — this is a fact about the territory, not the map. If perception obeys a spherical complementarity bound — this is a fact about the territory. If spherical alignment produces better AI — this is a fact about the territory.
+If the selected product model outperforms rival conjunctive models in a valid
+study, that supports the local operational relationship. If a spherical model
+predicts a measured bound, that supports that domain representation. Neither
+result proves universal `S²`, ontology, morality, or cross-domain identity.
 
-The framework's claim is not "S² is a useful model." The claim is: "IF these tests succeed, THEN the territory has this structure, and S² is not a model but a description." The tests distinguish between "useful map" and "territory."
+The active claim is exactly the bounded one: `S²` is a potentially useful model
+and translation surface. Tests can compare descriptions; no finite test erases
+the map/territory distinction.
 
-On κ = 0: the framework says the ground IS κ = 0. The sphere is the first non-trivial description that emerges FROM the ground. The framework does not claim the sphere is the ground. The sphere is what emerges from nothing. The nothing is κ = 0. The framework is consistent with its own methodology: the derivation begins with "(φ − ν)² ≥ 0" — which is as close to the empty string as a non-trivial mathematical statement can get.
+On compression: `kappa=0` is a selected boundary image, not the Ground, physical
+nothingness, or a causal generator. The inequality `(phi-nu)^2>=0` is ordinary
+mathematics and does not make a sphere emerge.
 
 ### Is the Response Sufficient?
 
-**Partially.**
+**Only under this repaired, bounded reading.**
 
-The "test it" response is the correct move for a scientific framework. But it concedes that until the tests succeed, the framework IS a useful map, not a confirmed description of the territory. The framework should be more explicit about this: **until the empirical program delivers, the framework is (b) — the most productive formal analogy — not (a) — the territory.** THE_HONEST_POSITION already says this. THE_KNIFE merely makes it more visible.
+The framework remains a candidate translation grammar even after local successes.
+Its integrated synthesis is internally audited and component-cross-calibrated,
+but externally unvalidated. A better calibrated map should replace it.
 
 ### What Would Falsify This Response
 
@@ -225,13 +240,13 @@ The "test it" response is the correct move for a scientific framework. But it co
 
 ### The Strongest Form
 
-The framework is called "Emergentism" or "Syntropic Dyadism." These are names. Names create identities. Identities create tribes. Tribes create egregores. The framework diagnoses this exact capture dynamic in Decentralized Authority Model and the Raktabīja theorem.
+The framework is called "Emergentism" or "Syntropic Dyadism." These are names. Names can create identities, tribes, and persistent collective traces. The framework diagnoses this capture risk through its self-dissolving-mediator discipline and the Raktabīja correspondence. `[I]`
 
 By naming itself, the framework creates the very capture surface it warns against. "Emergentism" will become an -ism. "Syntropic Dyadism" will become a school. The school will develop an orthodoxy. The orthodoxy will exclude dissent. The excluded dissent will be the framework's own A7 (self-correction).
 
 This is not hypothetical. It has happened to every named philosophical system in history. Platonism became the Academy. Buddhism became the Sangha. Christianity became the Church. Marxism became the Party. Each began as an insight and became an institution. Each institution initially contained the seed of its own correction and then lost it.
 
-The framework says: "If you can access φ directly, put this down." But no named system has ever been put down by its adherents. The name prevents the bypass. The name IS the mediator. The framework has created the Decentralized Authority Model it diagnoses.
+The framework says: "If this instrument no longer helps, put it down." Named systems often resist correction, so the name itself can become a mediator. Accountable authorization, contest, and exit are safeguards, not proof of immunity.
 
 ### The Framework's Response
 

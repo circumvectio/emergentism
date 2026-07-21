@@ -5,79 +5,80 @@ rosetta:
   secondary:
     - level: L3
       column: Auditing
-      role: "separate validated developmental scales from Rosetta extrapolation"
+      role: "separate source constructs from Rosetta row assignments"
     - level: L5
       column: System Architecture
-      role: "stabilize the psychology column as a seven-row projection"
+      role: "mirror the reversible psychology prototype without upgrading it"
     - level: L6
       column: Core State
-      role: "bound WEIRD bias and L5-L7 extension claims"
+      role: "exclude person-ranking, diagnosis, and moral typing"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[E/S/I]"
-  canonical_phrase: "Psychology and Development Cross-Domain Mappings"
-title: "Psychology & Development"
-status: "D-series domain mapping"
-evidence_tier: "[S] for cited L1-L4 developmental-stage source status; [S/I] for Rosetta alignment and extensions as stated."
+  register: "[I/C]"
+  canonical_phrase: "Psychology comparison prototype — domain mirror"
+title: "Psychology Comparison Prototype — Domain Mirror"
+status: "D-series domain mapping — selected and reversible"
+evidence_tier: "[B] for source descriptions; [I] for Rosetta correspondence; [C] for empirical fit"
+source_custody:
+  pre_kintsugi_head: "39cc83f048c5667a8b28508448df8f78513e1798"
+  pre_kintsugi_blob: "73266c0142749265a7e5f48087270c9f381fc995"
+  path: "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D24_PSYCHOLOGY.md"
+  retrieval: "git show 39cc83f048c5667a8b28508448df8f78513e1798:08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D24_PSYCHOLOGY.md"
 ---
 
-# ⊙ PSYCHOLOGY & DEVELOPMENT
+# Psychology Comparison Prototype — Domain Mirror
 
-## Cross-Domain Mappings (L1=Survival ascending)
+> **[金] Crack.** The predecessor treated selected Piaget, Kohlberg, and
+> Maslow entries as a validated seven-level convergence, attached virtues and
+> pathologies to the same rows, and marked several constructed alignments as
+> established facts.
+>
+> **Repair.** This path now mirrors the bounded psychology owner as a reversible
+> comparison `[I]`. Source evidence does not transfer to the Rosetta row,
+> geometry, or row count. Any predictive association remains `[C]` until tested.
 
-**Source:** Emergentism Rosetta Stone v10.0 · PSYCHOLOGY sheet
-**Evidence Tier:** [I] for L1-L4 developmental stages (Piaget cognitive, Kohlberg moral -- independently validated). [S] for Maslow hierarchy (universal needs confirmed but sequential ordering not supported -- Tay & Diener 2011). [I] for L5-L7 extensions (post-formal, post-conventional, self-transcendence -- beyond originators' empirical data). [S] for 7-level convergence structure (original Emergentism contribution -- alignment of independently validated scales onto geometric object). Note: Piaget and Kohlberg are NOT independent (Kohlberg built directly on Piaget). Maslow IS independent. [I] for Sanskrit virtue mappings and shadow/pathology column (framework-internal interpretation). See `../ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
+## Domain boundary
 
----
+The source families describe different targets: cognitive task performance,
+forms of moral justification, and motivational needs. Piaget and Kohlberg are
+not independent lineages; Maslow does not establish a universal compulsory
+sequence. Putting their vocabulary in adjacent columns is an editorial act,
+not statistically independent confirmation.
 
-## DEVELOPMENTAL PSYCHOLOGY
+The framework's seven labels are prompts. They are not discovered psychological
+coordinates, natural kinds, diagnoses, castes, or ranks of human worth. No
+operator determines a person's capacities. The chart's equator does not make
+L4 a measured maximum of morality, autonomy, maturity, or self-actualisation.
 
-| L | Stage | Piaget | Kohlberg | Maslow | Virtue (Sanskrit) | Shadow / Pathology | Rigor |
-|---|-------|--------|----------|--------|-------------------|-------------------|-------|
-| L1 | Survival | Sensorimotor | Pre-conventional | Physiological/Safety | Prāṇa (life force) | Terror / Rage | ✓ [S] |
-| L2 | Social-Emotional | Pre-operational | Pre/Conv boundary | Belonging/Love | Upekṣā (equanimity) | Addiction / Sloth | ✓ [S] |
-| L3 | Productive | Concrete operational | Conventional | Esteem | Artha (prosperity) | Greed / Workaholism | ✓ [S] |
-| L4 | INTEGRATED AGENCY | Formal operational | Post-conventional | Self-actualisation | Dhṛti (fortitude) | Violence / Cruelty | ✓ [S] |
-| L5 | Contemplative | Formal+ | Post-conv+ | Self-actualisation+ | Vidyā (knowledge) | Dogmatism / Rigidity | ⚠️ [I] |
-| L6 | Axiomatic | Post-formal | Universal principles | Self-transcendence | Tyāga (renunciation) | Nihilism / Dissociation | ⚠️ [I] |
-| L7 | Transcendent | Beyond formal | Beyond post-conv | Self-transcendence | Śraddhā (faith) | Fanaticism / Bypassing | ⚠️ [S] |
+## Selected crosswalk `[I]`
 
-> **Table Footnotes:**
-> - **†** Piaget and Kohlberg are NOT independent -- Kohlberg built directly on Piaget's stage theory. These represent two intellectual traditions (Piaget-Kohlberg and Maslow), not three.
-> - **‡** Maslow's hierarchy as a HIERARCHY is not empirically supported (Tay & Diener 2011, n=60,865 across 123 countries). The needs are universal; the sequential ordering is not.
-> - **§** L5-L7 extend beyond what the originators established empirically -- these are framework extrapolations [I], not validated developmental stages. Cross-cultural validity degrades at higher levels (WEIRD bias).
-> - See `../ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
+| Rosetta prompt | Source vocabulary that may be compared | Boundary |
+|---|---|---|
+| L1 · embodied constraint | sensorimotor activity; consequence-facing reasoning; physiological and safety needs | not a primitive person-type |
+| L2 · social relation | symbolic activity; interpersonal or rule-facing reasoning; belonging needs | not a caste, age, or moral rank |
+| L3 · stable operations | concrete operations; conventional justification; esteem needs | not evidence for one latent scale |
+| L4 · integration prompt | formal operations; post-conventional language; self-actualisation language | not a universal apex or person-coordinate |
+| L5 · systematic reflection | no exact source-native common stage | framework extrapolation only |
+| L6 · reflexive prompt | post-formal, universal-principle, or self-transcendence language in their distinct literatures | not a validated shared stage |
+| L7 · whole-field boundary | no exact source-native common stage | no measured terminal state |
 
-**Note:** L1-L4 are validated by standard developmental psychology [S]. L5-L7 are interpretive [I] to speculative [S]. Piaget and Kohlberg share lineage (NOT independent). Maslow's needs are universal but sequential ordering is not supported (Tay & Diener 2011). Cross-cultural validity degrades at higher levels (WEIRD bias). The 7-level structure is the framework's design choice, not a discovered constant. See `../ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
+Sanskrit virtue and shadow terms are omitted from the evidence table. They may
+be used as optional literary annotations only when marked `[I]`; they are not
+clinical variables, diagnoses, or moral classifications.
 
----
+## Use and failure
 
-## PHILOSOPHY & REASONING
+Use this mirror to generate questions for the protocol in
+`../17_CELL_AUDIT_PSYCHOLOGY_2026_04_25.md`, not to classify people. The mapping
+must be downgraded or withdrawn if blinded coders cannot reproduce assignments,
+if rival row counts perform as well, or if predictions depend on the labels
+being visible during coding.
 
-| L | Domain | Mode | Key Question | Exemplars | Rigor |
-|---|--------|------|-------------|-----------|-------|
-| L1 | Objective Function | Dialectical | What is the end/purpose? | Hegel, Marx, Adorno | ✓ |
-| L2 | Data Science | Inductive | How do we know? | Hume, Locke, Mill | ✓ |
-| L3 | Auditing | Deductive | What follows necessarily? | Descartes, Spinoza, Leibniz | ✓ |
-| L4 | Value Alignment | Abductive | What has value and why? | Nietzsche, Dewey, James | ✓ |
-| L5 | System Architecture | Systematic | How does reality work? | Aristotle, Aquinas, Whitehead | ✓ |
-| L6 | Core State | Axiomatic | What is Being itself? | Nāgārjuna, Plotinus | ✓ |
-| L7 | Institutional Narrative | Transcendental | What is the Ultimate? | Eckhart, Śaṅkara, Rūmī | ✓ |
-
----
-
-```
-Zero-Sum Resolution Equation · Psychology & Development · v10.0
-```
-
-
----
-
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
-
----
+The human semantic owner is `../ROSETTA_PSYCHOLOGY.md`. This domain mirror may
+not strengthen its tier. The pre-repair body remains recoverable from the Git
+object recorded in `source_custody`.
 
 ## Execution Surface
 
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D24_PSYCHOLOGY.md
+- **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D24_PSYCHOLOGY.md`

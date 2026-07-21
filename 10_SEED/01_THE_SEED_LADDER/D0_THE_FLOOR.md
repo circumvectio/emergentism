@@ -5,9 +5,9 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — seed-ladder compression of the non-dual floor"
+  register: "[I] active reader projection — seed-ladder compression of the non-dual floor"
 title: "D0 — The Floor"
-status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit receipt-139 box-8 disposition; not canon and not a tier promotion."
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 ---
 
 # D0 · THE FLOOR
@@ -17,6 +17,17 @@ status: "STAGED [D] 2026-07-19 — candidate reader synthesis awaiting explicit 
 > pages may correct it rather than inherit it as an axiom.
 
 ---
+
+## §0 · THE MODEL — the Titan frame only
+
+D0's sole primary model is the selected frame triple
+`{•, ○, ⊙}`. It has three term-readings—finite relation from point and horizon,
+point read against horizon, horizon read against point—but only one emblematic
+relation. These are **term transformations in a frame grammar**, not arithmetic
+operations, agents, causal particles, or three substances. D0 gains no sphere,
+torus, state machine, world-content, or positive freedom. The model is `[I]`;
+the frame/operand separation is `[S]`; the projective mathematics used to
+illustrate it is inherited `[A]`.
 
 ## §1 · THE MOVES
 

@@ -1,783 +1,318 @@
 #!/usr/bin/env python3
-"""
-Pre-deploy supply-chain gate for 12_PUBLIC_SITE.
+"""Fail-closed gate for the deny-by-default Emergentism public release."""
 
-Checks:
-1. No external http(s) resource references (security gate)
-2. All internal hrefs resolve to existing files
-3. No orphan pages (every public page has at least one inbound link)
-4. Required assets present where referenced
-5. Basic HTML well-formedness (DOCTYPE, html/head/body tags)
-6. Tier-marker presence on doctrine pages
-7. Active public pages use current evidence tier markers
-8. Discovery launch contract is progressive, root-led, and PWA-consistent
-9. Superseded quantum/closure prose is inert behind Kintsugi boundaries
-10. GFS public echoes carry the retirement boundary
-11. Public reading bundle is wired
-12. Generated library pages preserve the generator chrome contract
-13. Deployment publication boundary excludes source/control/runtime files
+from __future__ import annotations
 
-Exit 0 if all checks pass, 1 if any fail.
-"""
-
+import argparse
+import hashlib
 import json
-import fnmatch
-import os
 import re
 import sys
+from collections import defaultdict, deque
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urlsplit
+from xml.etree import ElementTree
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ERRORS = []
-WARNINGS = []
 
-def error(msg):
-    ERRORS.append(msg)
-    print(f"  ✗ {msg}")
+ROOT = Path(__file__).resolve().parent
+MANIFEST_PATH = ROOT / "release-manifest.json"
+TEXT_SUFFIXES = {".css", ".html", ".js", ".json", ".mjs", ".txt", ".webmanifest", ".xml"}
+FORBIDDEN_NAMES = (
+    "Skyzai", "VMOSK", "VMOSK-A", "K2", "PRISM", "DAV", "DAC", "Agentz",
+    "Menexus", "Aureus", "OFN", "APU.BOT", "Circle.news",
+)
+FORBIDDEN_NAME_RE = re.compile(
+    r"(?i)(?<![A-Za-z0-9])(?:" + "|".join(re.escape(x) for x in FORBIDDEN_NAMES) + r")(?![A-Za-z0-9])"
+)
+FORBIDDEN_CLAIM_RE = {
+    "physical light-cone inflation": re.compile(r"(?i)physical\s+light\s*cone.{0,24}(?:widen|expand)"),
+    "invalid scalar sampling": re.compile(r"Sample\s*\[\s*∫"),
+    "Born/chart conflation": re.compile(r"(?i)Born\s+rule\s*(?:=|is)\s*(?:φ\s*[·×*]\s*ν|phi\s*[·×*]\s*nu)"),
+    "quantum dimensional stacking": re.compile(r"(?i)(?:Everett|Copenhagen).{0,80}(?:five|four|5|4)[- ]dimensional"),
+    "retired GFS positive validation": re.compile(
+        r"(?is)(?:Global\s+Flourishing\s+Study|\bGFS\b).{0,100}"
+        r"(?:validat(?:e[sd]?|ion)|confirm(?:s|ed|ation)?|prov(?:e[sd]?|ing)|"
+        r"corroborat(?:e[sd]?|ion)|support(?:s|ed|ing)?|"
+        r"evidence\s+for\s+(?:the\s+)?(?:framework|Emergentism))"
+        r"|(?:validat(?:e[sd]?|ion)|confirm(?:s|ed|ation)?|prov(?:e[sd]?|ing)|"
+        r"corroborat(?:e[sd]?|ion)|support(?:s|ed|ing)?).{0,100}"
+        r"(?:Global\s+Flourishing\s+Study|\bGFS\b)"
+    ),
+    "noncanonical public host": re.compile(r"https://emergentism\.org(?:/|\b)"),
+}
+NOINDEX_ROUTES = {"/map/", "/journey/", "/test/", "/build/", "/atlas/", "/five-plus-one/"}
+PUBLIC_ORIGIN = "https://www.emergentism.org"
 
-def warn(msg):
-    WARNINGS.append(msg)
-    print(f"  ⚠ {msg}")
 
-def ok(msg):
-    print(f"  ✓ {msg}")
+class PageParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.refs: list[tuple[str, str, str]] = []
+        self.ids: list[str] = []
 
-def get_public_html_files():
-    files = []
-    for root, dirs, filenames in os.walk(BASE_DIR):
-        dirs[:] = [
-            d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel", ".next",
-                                          "90_ARCHIVE", "_archive", "_STAGING_COMPASS_RESTRUCTURE"}
-        ]
-        for f in filenames:
-            if f.endswith(".html"):
-                rel = os.path.relpath(os.path.join(root, f), BASE_DIR)
-                if not rel.startswith("partials/"):
-                    files.append(rel)
-    return sorted(files)
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        values = {key.lower(): value for key, value in attrs if value is not None}
+        if "id" in values:
+            self.ids.append(values["id"])
+        for attr in ("href", "src"):
+            if attr in values:
+                self.refs.append((tag.lower(), attr, values[attr]))
 
-def read_file(rel_path):
-    path = os.path.join(BASE_DIR, rel_path)
-    with open(path, "r", encoding="utf-8", errors="replace") as fh:
-        return fh.read()
 
-def extract_hrefs(body):
-    static_body = re.sub(r"<script\b[^>]*>.*?</script>", "", body, flags=re.IGNORECASE | re.DOTALL)
-    return re.findall(r'href="([^"]+)"', static_body)
+def fail(errors: list[str], message: str) -> None:
+    errors.append(message)
 
-def extract_base_href(body):
-    match = re.search(r'<base\b[^>]*href="([^"]+)"', body, flags=re.IGNORECASE)
-    return match.group(1) if match else None
 
-def resolve_link(from_file, href, base_href=None):
-    if href.startswith(("http://", "https://", "//", "mailto:", "javascript:", "data:", "#")):
-        return None, "external"
-    # Strip fragment before path resolution (page/#anchor targets the page)
-    href = href.split("#", 1)[0]
-    if not href:
-        return None, "external"
-    if href.startswith("/"):
-        target = os.path.normpath(os.path.join(BASE_DIR, href.lstrip("/")))
-        return target, "absolute"
-    from_dir = os.path.dirname(from_file)
-    base_dir = os.path.normpath(os.path.join(BASE_DIR, from_dir, base_href or ""))
-    target = os.path.normpath(os.path.join(base_dir, href))
-    return target, "relative"
+def manifest() -> dict:
+    data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    if data.get("schemaVersion") != 1 or data.get("status") != "pure-emergentism-release":
+        raise ValueError("unsupported release manifest")
+    return data
 
-def check_external_refs():
-    print("\n[1] External resource references (security gate)")
-    found = False
-    for html_file in get_public_html_files():
-        body = read_file(html_file)
-        # Flag external stylesheets (security concern)
-        matches = re.finditer(r'<link[^>]*rel="stylesheet"[^>]*href="(https?://[^"]+)"', body)
-        for m in matches:
-            found = True
-            error(f"{html_file}: external stylesheet -> {m.group(1)}")
-        # Flag external scripts/modules (security concern)
-        matches = re.finditer(r'<script[^>]*src="(https?://[^"]+)"', body)
-        for m in matches:
-            found = True
-            error(f"{html_file}: external script -> {m.group(1)}")
-        # Flag external img/media src
-        for tag in ["img", "video", "audio", "source", "iframe"]:
-            pattern = rf'<{tag}[^>]*src="(https?://[^"]+)"'
-            matches = re.finditer(pattern, body, re.IGNORECASE)
-            for m in matches:
-                found = True
-                error(f"{html_file}: external {tag} -> {m.group(1)}")
-    if not found:
-        ok("No external script/stylesheet/media references")
-    return not found
 
-def check_internal_links():
-    print("\n[2] Internal link resolution")
-    dead = []
-    for html_file in get_public_html_files():
-        body = read_file(html_file)
-        base_href = extract_base_href(body)
-        for href in extract_hrefs(body):
-            target, ltype = resolve_link(html_file, href, base_href)
+def expected_files(data: dict) -> set[str]:
+    files = {row["file"] for row in data["routes"]}
+    files.update(data["rootFiles"])
+    files.update(data["assetFiles"])
+    files.add("RELEASE_SHA256")
+    return files
+
+
+def output_files(out: Path) -> set[str]:
+    return {path.relative_to(out).as_posix() for path in out.rglob("*") if path.is_file()}
+
+
+def calculated_hash(out: Path) -> str:
+    digest = hashlib.sha256()
+    for path in sorted(p for p in out.rglob("*") if p.is_file() and p.name != "RELEASE_SHA256"):
+        rel = path.relative_to(out).as_posix()
+        digest.update(rel.encode("utf-8") + b"\0")
+        digest.update(path.read_bytes())
+        digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def local_target(out: Path, current: Path, raw: str) -> tuple[Path | None, str]:
+    parts = urlsplit(raw)
+    if parts.scheme or raw.startswith("//"):
+        return None, parts.fragment
+    if not parts.path:
+        return current, parts.fragment
+    target = out / parts.path.lstrip("/") if parts.path.startswith("/") else current.parent / parts.path
+    target = target.resolve()
+    try:
+        target.relative_to(out.resolve())
+    except ValueError:
+        return target, parts.fragment
+    if target.is_dir() or parts.path.endswith("/"):
+        target = target / "index.html"
+    elif not target.exists() and not target.suffix:
+        target = target / "index.html"
+    return target, parts.fragment
+
+
+def check_exact_tree(out: Path, data: dict, errors: list[str]) -> None:
+    expected = expected_files(data)
+    actual = output_files(out)
+    for rel in sorted(expected - actual):
+        fail(errors, f"missing release file: {rel}")
+    for rel in sorted(actual - expected):
+        fail(errors, f"undeclared release file: {rel}")
+    for archive in data["archiveRoots"]:
+        if any(rel == archive or rel.startswith(archive + "/") for rel in actual):
+            fail(errors, f"archive escaped into release: {archive}")
+    recorded = (out / "RELEASE_SHA256").read_text(encoding="ascii").strip() if (out / "RELEASE_SHA256").exists() else ""
+    actual_hash = calculated_hash(out)
+    if recorded != actual_hash:
+        fail(errors, f"release hash mismatch: recorded={recorded or 'missing'} actual={actual_hash}")
+
+
+def check_purity(out: Path, errors: list[str]) -> None:
+    for path in sorted(p for p in out.rglob("*") if p.is_file() and p.suffix.lower() in TEXT_SUFFIXES):
+        body = path.read_text(encoding="utf-8", errors="replace")
+        if FORBIDDEN_NAME_RE.search(body):
+            fail(errors, f"external-system leakage: {path.relative_to(out)}")
+        for label, pattern in FORBIDDEN_CLAIM_RE.items():
+            if pattern.search(body):
+                fail(errors, f"{label}: {path.relative_to(out)}")
+        for match in re.finditer(r"D6\s*(?:≡|=)\s*D0", body):
+            context = body[max(0, match.start() - 180):match.end() + 180].lower()
+            if not any(marker in context for marker in ("legacy", "literal", "died", "failed", "must not", "supersed", "<s>")):
+                fail(errors, f"live literal closure identity: {path.relative_to(out)}")
+        if "/book/rag_index.json" in body or "book-ai.js" in body:
+            fail(errors, f"retired retrieval dependency: {path.relative_to(out)}")
+
+
+def check_html_and_links(out: Path, data: dict, errors: list[str]) -> None:
+    route_by_file = {row["file"]: row["path"] for row in data["routes"]}
+    file_by_resolved = {(out / rel).resolve(): route for rel, route in route_by_file.items()}
+    graph: dict[str, set[str]] = defaultdict(set)
+    ids_by_path: dict[Path, set[str]] = {}
+    parsers: dict[Path, PageParser] = {}
+
+    for rel, route in route_by_file.items():
+        path = out / rel
+        if not path.exists():
+            continue
+        body = path.read_text(encoding="utf-8", errors="replace")
+        lowered = body.lower()
+        for required in ("<!doctype html", "<html", "<head", "<body"):
+            if required not in lowered:
+                fail(errors, f"HTML structure missing {required}: {rel}")
+        parser = PageParser()
+        parser.feed(body)
+        parsers[path.resolve()] = parser
+        ids_by_path[path.resolve()] = set(parser.ids)
+        if len(parser.ids) != len(set(parser.ids)):
+            fail(errors, f"duplicate HTML id: {rel}")
+        if route not in {"/", "/404/", "/offline/", "/atlas/"} and not re.search(r"\[(?:A|B|S|I|D|C)\]", body):
+            fail(errors, f"page lacks an evidence-tier marker: {rel}")
+
+    for current, parser in parsers.items():
+        current_route = file_by_resolved[current]
+        for tag, attr, raw in parser.refs:
+            parts = urlsplit(raw)
+            if parts.scheme in {"http", "https"}:
+                resource = attr == "src" or (tag == "link" and re.search(r"stylesheet|icon|manifest", raw, re.I))
+                if resource:
+                    fail(errors, f"external resource reference: {current.relative_to(out)} -> {raw}")
+                continue
+            if parts.scheme in {"mailto", "data", "javascript"} or raw.startswith(("//", "#")):
+                continue
+            target, fragment = local_target(out, current, raw)
             if target is None:
                 continue
-            if os.path.exists(target):
+            try:
+                rel_target = target.resolve().relative_to(out.resolve())
+            except ValueError:
+                fail(errors, f"link escapes release: {current.relative_to(out)} -> {raw}")
                 continue
-            if os.path.isdir(target) and os.path.exists(os.path.join(target, "index.html")):
+            if not target.is_file():
+                fail(errors, f"broken local reference: {current.relative_to(out)} -> {raw}")
                 continue
-            if not href.endswith("/") and not os.path.splitext(target)[1]:
-                index_file = os.path.join(target, "index.html")
-                if os.path.exists(index_file):
-                    continue
-            dead.append((html_file, href, os.path.relpath(target, BASE_DIR)))
-    if dead:
-        for src, href, missing in dead:
-            error(f"{src} -> {href} (missing: {missing})")
-    else:
-        ok("All internal links resolve")
-    return len(dead) == 0
+            resolved = target.resolve()
+            if resolved in file_by_resolved and tag == "a":
+                graph[current_route].add(file_by_resolved[resolved])
+            if fragment and resolved in ids_by_path and fragment not in ids_by_path[resolved]:
+                fail(errors, f"missing fragment #{fragment}: {current.relative_to(out)} -> {rel_target}")
 
-def check_orphans():
-    print("\n[3] Orphan page check")
-    html_files = get_public_html_files()
-    html_set = {os.path.normpath(os.path.join(BASE_DIR, f)) for f in html_files}
-    # Crawl root = the discovery-led homepage served at `/`.
-    entry = os.path.normpath(os.path.join(BASE_DIR, "index.html"))
-    reachable = set()
-    queue = [entry] if os.path.exists(entry) else []
+    atlas = json.loads((out / "atlas/site_index.json").read_text(encoding="utf-8"))
+    atlas_routes = {page["href"] for section in atlas.get("tree", []) for page in section.get("pages", [])}
+    expected_atlas = {row["path"] for row in data["routes"]} - {"/404/", "/offline/", "/atlas/"}
+    if atlas_routes != expected_atlas:
+        fail(errors, f"atlas route drift: missing={sorted(expected_atlas-atlas_routes)} extra={sorted(atlas_routes-expected_atlas)}")
+    graph["/atlas/"].update(atlas_routes)
+    for route in list(graph):
+        if route != "/atlas/":
+            graph[route].add("/atlas/")
+
+    reached = {"/"}
+    queue = deque(["/"])
     while queue:
-        full = os.path.normpath(queue.pop(0))
-        if full in reachable or full not in html_set:
-            continue
-        reachable.add(full)
-        html_file = os.path.relpath(full, BASE_DIR)
-        body = read_file(html_file)
-        base_href = extract_base_href(body)
-        for href in extract_hrefs(body):
-            target, _ = resolve_link(html_file, href, base_href)
-            if not target:
-                continue
-            target = os.path.normpath(target)
-            if os.path.isdir(target):
-                target = os.path.normpath(os.path.join(target, "index.html"))
-            elif not os.path.splitext(target)[1]:
-                target = os.path.normpath(os.path.join(target, "index.html"))
-            if target in html_set and target not in reachable:
-                queue.append(target)
-    ignored = {
-        # PWA offline fallback: served by the service worker, unlinked by design
-        os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
-        # Custom 404: served by Vercel on miss, unlinked by design
-        os.path.normpath(os.path.join(BASE_DIR, "404.html")),
-        # K3 provenance copy: preserved byte-for-byte, intentionally superseded
-        # by receipt 146 and excluded from navigation/search indexing by vercel.json.
-        os.path.normpath(os.path.join(BASE_DIR, "index_legacy_2026_07_19.html")),
-    }
-    orphans = [
-        os.path.relpath(full, BASE_DIR)
-        for full in sorted(html_set - reachable - ignored)
+        node = queue.popleft()
+        for nxt in graph[node]:
+            if nxt not in reached:
+                reached.add(nxt)
+                queue.append(nxt)
+    expected_reachable = {row["path"] for row in data["routes"]} - {"/404/", "/offline/"}
+    for route in sorted(expected_reachable - reached):
+        fail(errors, f"release route is unreachable: {route}")
+
+
+def check_css_and_js_closure(out: Path, errors: list[str]) -> None:
+    patterns = [
+        re.compile(r"url\(\s*['\"]?([^)'\"]+)"),
+        re.compile(r"\bfrom\s+['\"]([^'\"]+)['\"]"),
+        re.compile(r"\b(?:import|fetch)\(\s*['\"]([^'\"]+)['\"]"),
     ]
-    if orphans:
-        for o in orphans:
-            error(f"Not reachable from /: {o}")
-    else:
-        ok("All public pages reachable from /")
-    return len(orphans) == 0
+    for path in sorted(p for p in out.rglob("*") if p.suffix.lower() in {".css", ".js", ".mjs"}):
+        body = path.read_text(encoding="utf-8", errors="replace")
+        for pattern in patterns:
+            for raw in pattern.findall(body):
+                if raw.startswith(("data:", "#")) or urlsplit(raw).scheme or (not raw.startswith(("/", "."))):
+                    continue
+                target, _ = local_target(out, path.resolve(), raw)
+                if target is not None and not target.is_file():
+                    fail(errors, f"broken code dependency: {path.relative_to(out)} -> {raw}")
 
-def check_required_assets():
-    print("\n[4] Required asset presence")
-    all_ok = True
-    # Check xai.css exists
-    xai = os.path.join(BASE_DIR, "assets", "css", "xai.css")
-    if os.path.exists(xai):
-        ok("assets/css/xai.css present")
-    else:
-        error("assets/css/xai.css missing")
-        all_ok = False
-    # Check theme.js exists
-    theme = os.path.join(BASE_DIR, "assets", "js", "theme.js")
-    if os.path.exists(theme):
-        ok("assets/js/theme.js present")
-    else:
-        error("assets/js/theme.js missing")
-        all_ok = False
-    # Check source-note.css exists
-    sn = os.path.join(BASE_DIR, "assets", "css", "source-note.css")
-    if os.path.exists(sn):
-        ok("assets/css/source-note.css present")
-    else:
-        error("assets/css/source-note.css missing")
-        all_ok = False
-    # Check dimensions.js exists
-    dim = os.path.join(BASE_DIR, "dimensions", "dimensions.js")
-    if os.path.exists(dim):
-        ok("dimensions/dimensions.js present")
-    else:
-        error("dimensions/dimensions.js missing")
-        all_ok = False
-    return all_ok
 
-def check_html_wellformedness():
-    print("\n[5] HTML well-formedness")
-    issues = []
-    for html_file in get_public_html_files():
-        body = read_file(html_file)
-        if not body.strip().upper().startswith("<!DOCTYPE"):
-            issues.append((html_file, "missing DOCTYPE"))
-        if "<html" not in body.lower():
-            issues.append((html_file, "missing <html> tag"))
-        if "</html>" not in body.lower():
-            issues.append((html_file, "missing </html> tag"))
-        if "<head>" not in body.lower():
-            issues.append((html_file, "missing <head> tag"))
-        if "</head>" not in body.lower():
-            issues.append((html_file, "missing </head> tag"))
-        if "<body>" not in body.lower() and '<body ' not in body.lower():
-            issues.append((html_file, "missing <body> tag"))
-        if "</body>" not in body.lower():
-            issues.append((html_file, "missing </body> tag"))
-    if issues:
-        for f, issue in issues:
-            error(f"{f}: {issue}")
+def check_metadata(out: Path, data: dict, errors: list[str]) -> None:
+    pwa = json.loads((out / "manifest.webmanifest").read_text(encoding="utf-8"))
+    if pwa.get("start_url") != "/" or pwa.get("id") != "/compass/":
+        fail(errors, "PWA identity or start URL drifted")
+    sw = (out / "sw.js").read_text(encoding="utf-8")
+    precache_match = re.search(r"const PRECACHE = (\[.*?\]);", sw, flags=re.DOTALL)
+    if not precache_match:
+        fail(errors, "service-worker precache list missing")
     else:
-        ok("All pages have DOCTYPE, html, head, body tags")
-    return len(issues) == 0
+        precache = json.loads(precache_match.group(1))
+        for raw in precache:
+            target, _ = local_target(out, (out / "sw.js").resolve(), raw)
+            if target is None or not target.is_file():
+                fail(errors, f"service-worker precache target missing: {raw}")
+    sitemap = ElementTree.parse(out / "sitemap.xml")
+    namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    listed = {urlsplit(node.text or "").path for node in sitemap.findall(".//s:loc", namespace)}
+    expected = {row["path"] for row in data["routes"]} - {"/404/", "/offline/"} - NOINDEX_ROUTES
+    if listed != expected:
+        fail(errors, f"sitemap route drift: missing={sorted(expected-listed)} extra={sorted(listed-expected)}")
 
-def check_tier_markers():
-    print("\n[6] Evidence tier markers on doctrine pages")
-    missing = []
-    for html_file in get_public_html_files():
-        # Skip utility pages that don't need tier markers
-        if html_file in {"index.html", "app.html", "cascade.html", "sphere.html",
-                         "lightcone.html", "infinite.html", "about/index.html",
-                         "sources/index.html", "atlas/index.html"}:
-            continue
-        body = read_file(html_file)
-        # Check for at least one tier marker
-        if not re.search(r'\[A\]|\[S\]|\[I\]|\[C\]|\[B\]|\[D\]', body):
-            missing.append(html_file)
-    if missing:
-        for f in missing:
-            warn(f"No evidence tier markers: {f}")
-    else:
-        ok("All doctrine pages have evidence tier markers")
-    return True  # Warnings only
+    for row in data["routes"]:
+        route = row["path"]
+        body = (out / row["file"]).read_text(encoding="utf-8", errors="replace")
+        expected_url = PUBLIC_ORIGIN + route
+        canonical = re.findall(r'<link\s+[^>]*rel=["\']canonical["\'][^>]*href=["\']([^"\']+)', body, re.I)
+        og_urls = re.findall(r'<meta\s+[^>]*property=["\']og:url["\'][^>]*content=["\']([^"\']+)', body, re.I)
+        if canonical != [expected_url]:
+            fail(errors, f"canonical URL drift: {row['file']} expected={expected_url} actual={canonical}")
+        if og_urls != [expected_url]:
+            fail(errors, f"og:url drift: {row['file']} expected={expected_url} actual={og_urls}")
+        robots = re.findall(r'<meta\s+[^>]*name=["\']robots["\'][^>]*content=["\']([^"\']+)', body, re.I)
+        if route in NOINDEX_ROUTES | {"/offline/"} and not any("noindex" in value.lower() for value in robots):
+            fail(errors, f"secondary route lacks noindex: {row['file']}")
 
-def check_public_tier_hygiene():
-    print("\n[7] Public evidence-tier hygiene")
-    # Historical/library prose may quote old notation. This gate rejects an old
-    # badge presented as a current public tier, not a compatibility quotation.
-    legacy_badge = re.compile(
-        r'<(?:span|b)\b[^>]*class="[^"]*(?:\bt-e\b|\bte\b|\bt-t\b|\btt\b)[^"]*"'
-        r'[^>]*>\s*\[(?:E|T)\]',
-        re.IGNORECASE,
-    )
-    offenders = []
-    for html_file in get_public_html_files():
-        body = read_file(html_file)
-        if legacy_badge.search(body):
-            offenders.append(html_file)
-    if offenders:
-        for f in offenders:
-            error(f"{f}: legacy [E]/[T] tier marker escaped public normalization")
-    else:
-        ok("Active public pages use current [A/B/S/I/D/C] tier markers")
-    return len(offenders) == 0
 
-def check_discovery_launch_contract():
-    print("\n[8] Discovery launch contract")
-    all_ok = True
+def check_build_boundary(errors: list[str]) -> None:
+    vercel = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
+    if vercel.get("outputDirectory") != ".release" or "build_release.py" not in (vercel.get("buildCommand") or ""):
+        fail(errors, "Vercel is not bound to the manifest-built release")
+    ignored = (ROOT / ".vercelignore").read_text(encoding="utf-8")
+    for required in ("90_ARCHIVE/", ".release/", "output/", "*.md"):
+        if required not in ignored:
+            fail(errors, f".vercelignore lacks {required}")
 
-    detail_pages = [
-        "discoveries/degrees-of-freedom/index.html",
-        "discoveries/reality-gradient/index.html",
-        "discoveries/burrisphere/index.html",
-        "discoveries/mass-shell/index.html",
-        "discoveries/ladder/index.html",
-        "discoveries/nonduality/index.html",
-        "discoveries/game/index.html",
-        "discoveries/paradoxes/index.html",
-        "discoveries/universalizability/index.html",
-        "discoveries/is-ought/index.html",
-    ]
-    for rel in detail_pages:
-        body = read_file(rel)
-        if "document.documentElement.classList.add('js')" not in body:
-            error(f"{rel}: missing progressive-enhancement js marker")
-            all_ok = False
-        if re.search(r"(?m)^\s*\.reveal\s*\{[^}]*opacity\s*:\s*0", body):
-            error(f"{rel}: reveal content hidden when JavaScript is disabled")
-            all_ok = False
-        if '.js .reveal' not in body:
-            error(f"{rel}: reveal animation is not scoped to JavaScript")
-            all_ok = False
-        if '<a class="brand" href="../../">' not in body:
-            error(f"{rel}: brand does not return to the root front door")
-            all_ok = False
-    if all_ok:
-        ok("Ten discovery pages remain visible without JavaScript and route home to /")
 
-    for rel in ["plainly/index.html", "axioms/index.html", "record/index.html"]:
-        body = read_file(rel)
-        if "document.documentElement.classList.add('js')" not in body:
-            error(f"{rel}: missing progressive-enhancement js marker")
-            all_ok = False
-        if re.search(r"(?m)^\s*\.reveal\s*\{[^}]*opacity\s*:\s*0", body):
-            error(f"{rel}: primary content hidden when JavaScript is disabled")
-            all_ok = False
-        if '.js .reveal' not in body:
-            error(f"{rel}: reveal animation is not scoped to JavaScript")
-            all_ok = False
-    if all_ok:
-        ok("Plainly, Axioms, and Record also remain visible without JavaScript")
-
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--release", default=".release")
+    args = parser.parse_args()
+    out = (ROOT / args.release).resolve()
+    if not out.is_dir():
+        print(f"FAIL: release directory missing: {out}")
+        return 1
     try:
-        manifest = json.loads(read_file("manifest.webmanifest"))
+        data = manifest()
     except Exception as exc:
-        error(f"manifest.webmanifest is not valid JSON: {exc}")
-        return False
-    if manifest.get("start_url") != "/":
-        error("manifest.webmanifest start_url must be /")
-        all_ok = False
-    else:
-        ok("PWA start_url is the root front door")
-    if manifest.get("id") != "/compass/":
-        error("manifest.webmanifest changed the installed-app identity; migrate deliberately")
-        all_ok = False
-    else:
-        ok("PWA identity remains /compass/ while its launch route moves to /")
+        print(f"FAIL: release manifest invalid: {exc}")
+        return 1
 
-    sw_body = read_file("sw.js")
-    required_precache = ["'/'", "'/discoveries/'"] + [
-        repr("/" + rel.removesuffix("index.html")) for rel in detail_pages
-    ]
-    missing_precache = [route for route in required_precache if route not in sw_body]
-    if missing_precache:
-        for route in missing_precache:
-            error(f"sw.js missing discovery precache route: {route}")
-        all_ok = False
-    else:
-        ok("Service worker precaches the root, gallery, and ten discovery pages")
+    errors: list[str] = []
+    check_exact_tree(out, data, errors)
+    check_purity(out, errors)
+    check_html_and_links(out, data, errors)
+    check_css_and_js_closure(out, errors)
+    check_metadata(out, data, errors)
+    check_build_boundary(errors)
 
-    root_body = read_file("index.html")
-    if re.search(r'href="[^"]*index_legacy_2026_07_19', root_body):
-        error("Root navigation exposes the superseded legacy homepage")
-        all_ok = False
-    vercel_body = read_file("vercel.json")
-    if "/index_legacy_2026_07_19(.*)" not in vercel_body or "noindex, nofollow, noarchive" not in vercel_body:
-        error("Legacy homepage lacks the deployment-level noindex quarantine")
-        all_ok = False
-    else:
-        ok("Legacy homepage is preserved, unlinked, and noindex-quarantined")
+    if errors:
+        print(f"FAIL: {len(errors)} release finding(s)")
+        for message in errors:
+            print(f" - {message}")
+        return 1
+    print(f"PASS: pure release routes={len(data['routes'])} files={len(output_files(out))} sha256={calculated_hash(out)}")
+    return 0
 
-    return all_ok
-
-def check_kintsugi_claim_boundaries():
-    print("\n[9] Kintsugi claim boundaries")
-    all_ok = True
-    targets = {
-        "formal/10-efr-mu-limit-formula/index.html": {
-            "boundary": 'data-kintsugi-boundary="mu-formula-2026-07-20"',
-            "source": 'data-kintsugi-source="superseded-mu-formula-v3"',
-            "required": ["The repaired interface", "o ~ 𝔓ψ", "neither μ nor χ is quantum measurement"],
-            "forbidden": ["Sample[ ∫", "The Born Rule as φ·ν = 1", "identifies the framework's μ-limit with quantum measurement"],
-            "rag_id": "formal:10-efr-mu-limit-formula",
-        },
-        "trinity/simulation-spec/index.html": {
-            "boundary": 'data-kintsugi-boundary="simulation-spec-2026-07-20"',
-            "source": 'data-kintsugi-source="superseded-simulation-spec"',
-            "required": ["Current animation contract", "r₆:D6↝D0", "Quantum imagery"],
-            "forbidden": ["The Born rule = the solid angle", "Measurement = stereographic projection", "D4: The horn torus. Spacetime. Many-worlds."],
-            "rag_id": "trinity:simulation-spec",
-        },
-    }
-
-    visible_by_rag_id = {}
-    for rel, contract in targets.items():
-        body = read_file(rel)
-        if contract["boundary"] not in body or contract["source"] not in body:
-            error(f"{rel}: missing Kintsugi boundary or inert-source marker")
-            all_ok = False
-        visible = re.sub(r"<(?:template|script)\b[^>]*>.*?</(?:template|script)>", " ", body,
-                         flags=re.IGNORECASE | re.DOTALL)
-        for text in contract["required"]:
-            if text not in visible:
-                error(f"{rel}: repaired visible contract missing {text!r}")
-                all_ok = False
-        for text in contract["forbidden"]:
-            if text in visible:
-                error(f"{rel}: superseded claim remains visible: {text!r}")
-                all_ok = False
-        visible_by_rag_id[contract["rag_id"]] = contract["forbidden"]
-
-    try:
-        rag = json.loads(read_file("book/rag_index.json"))
-        rag_by_id = {row.get("id"): row.get("text", "") for row in rag.get("passages", [])}
-    except Exception as exc:
-        error(f"book/rag_index.json is invalid: {exc}")
-        return False
-    for rag_id, forbidden in visible_by_rag_id.items():
-        text = rag_by_id.get(rag_id)
-        if text is None:
-            error(f"book/rag_index.json missing repaired passage {rag_id}")
-            all_ok = False
-            continue
-        for phrase in forbidden:
-            if phrase in text:
-                error(f"book/rag_index.json exposes superseded claim in {rag_id}: {phrase!r}")
-                all_ok = False
-    if all_ok:
-        ok("Invalid μ sampling, quantum stacking, and literal closure prose is inert and absent from retrieval")
-    return all_ok
-
-def check_gfs_retirement_projection():
-    print("\n[10] GFS retirement projection")
-    all_ok = True
-    gfs_token = re.compile(
-        r"(^|[^A-Za-z0-9_])gfs([^A-Za-z0-9_]|$)|global flourishing study|gfs_",
-        re.IGNORECASE,
-    )
-    bespoke = {
-        "halahala/index.html": "no current positive or negative evidence",
-        "r/1/index.html": "no current evidence",
-        "record/index.html": "supplies no evidence either way",
-    }
-    projected = []
-    for html_file in get_public_html_files():
-        body = read_file(html_file)
-        if not gfs_token.search(body):
-            continue
-        if html_file in bespoke:
-            if bespoke[html_file] not in body:
-                error(f"{html_file}: bespoke GFS retraction wording drifted")
-                all_ok = False
-            continue
-        projected.append(html_file)
-        if 'data-gfs-retirement-boundary="2026-07-20"' not in body:
-            error(f"{html_file}: GFS historical text lacks the public retirement boundary")
-            all_ok = False
-    if projected and all_ok:
-        ok(f"{len(projected)} frozen library pages fence GFS as retired historical text")
-
-    try:
-        amrita = json.loads(read_file("amrita/amrita.json"))
-    except Exception as exc:
-        error(f"amrita/amrita.json is not valid JSON: {exc}")
-        return False
-    def string_values(value):
-        if isinstance(value, str):
-            yield value
-        elif isinstance(value, list):
-            for item in value:
-                yield from string_values(item)
-        elif isinstance(value, dict):
-            for item in value.values():
-                yield from string_values(item)
-    unsafe_amrita = [
-        value for value in string_values(amrita)
-        if gfs_token.search(value)
-        and not re.search(r"retir|archiv|non-citable|no current|unwon", value, re.IGNORECASE)
-    ]
-    if unsafe_amrita:
-        error("amrita/amrita.json contains an unfenced GFS retrieval statement")
-        all_ok = False
-    else:
-        ok("Amrita retrieval statements identify the former survey corpus as retired")
-
-    try:
-        rag = json.loads(read_file("book/rag_index.json"))
-    except Exception as exc:
-        error(f"book/rag_index.json is not valid JSON: {exc}")
-        return False
-    unsafe_rag = []
-    for passage in rag.get("passages", []):
-        text_value = " ".join(str(passage.get(key, "")) for key in ("title", "text", "href"))
-        if gfs_token.search(text_value) and not re.search(
-            r"retir|archiv|non-citable|no current|unwon", text_value, re.IGNORECASE
-        ):
-            unsafe_rag.append(passage.get("id", "unknown"))
-    if unsafe_rag:
-        for passage_id in unsafe_rag[:10]:
-            error(f"book/rag_index.json: unfenced GFS passage {passage_id}")
-        if len(unsafe_rag) > 10:
-            error(f"book/rag_index.json: {len(unsafe_rag) - 10} additional unfenced GFS passages")
-        all_ok = False
-    else:
-        ok("RAG retrieval contains no unfenced current GFS claim")
-
-    return all_ok
-
-def check_public_reading_bundle():
-    print("\n[11] Public reading bundle wiring")
-    required_surfaces = [
-        "read/index.html",
-        "papers/index.html",
-        "canon/index.html",
-        "foundations/index.html",
-        "operators/index.html",
-        "will/index.html",
-        "value/index.html",
-        "ground/index.html",
-        "sacred/index.html",
-        "method/index.html",
-        "meta/index.html",
-        "reading-manifest.json",
-    ]
-    all_ok = True
-    for rel in required_surfaces:
-        if os.path.exists(os.path.join(BASE_DIR, rel)):
-            ok(f"{rel} present")
-        else:
-            error(f"{rel} missing")
-            all_ok = False
-
-    manifest_path = os.path.join(BASE_DIR, "reading-manifest.json")
-    if not os.path.exists(manifest_path):
-        return False
-
-    try:
-        with open(manifest_path, "r", encoding="utf-8") as fh:
-            manifest = json.load(fh)
-    except Exception as exc:
-        error(f"reading-manifest.json is not valid JSON: {exc}")
-        return False
-
-    documents = manifest.get("documents", [])
-    counts = {}
-    for doc in documents:
-        counts[doc.get("section")] = counts.get(doc.get("section"), 0) + 1
-        href = doc.get("href", "")
-        if not href:
-            error(f"manifest document missing href: {doc}")
-            all_ok = False
-            continue
-        target = os.path.join(BASE_DIR, href)
-        if href.endswith("/"):
-            target = os.path.join(target, "index.html")
-        if not os.path.exists(target):
-            error(f"manifest target missing: {href}")
-            all_ok = False
-
-    expected = {
-        "papers": 26,
-        "canon": 8,
-        "foundations": 12,
-        "trinity": 42,
-        "formal": 37,
-        "paradox": 26,
-        "memetic": 6,
-        "rosettad": 38,
-        "operators": 29,
-        "will": 30,
-        "value": 10,
-        "ground": 9,
-        "sacred": 6,
-        "method": 12,
-        "meta": 6,
-    }
-    for section, expected_count in expected.items():
-        actual = counts.get(section, 0)
-        if actual == expected_count:
-            ok(f"{section}: {actual} rendered docs")
-        else:
-            error(f"{section}: expected {expected_count} rendered docs, found {actual}")
-            all_ok = False
-
-    total_expected = sum(expected.values())
-    if len(documents) == total_expected:
-        ok(f"public corpus documents wired: {len(documents)}")
-    else:
-        error(f"expected {total_expected} public corpus documents, found {len(documents)}")
-        all_ok = False
-
-    index_body = read_file("index.html")
-    # 2026-07-20 amendment (receipt 146; completion-plan step 5): the landing architecture is
-    # now discovery-led and /read/-mediated. The gate verifies the declared funnel + doorways.
-    # The 16-dir generated library grid is deliberately delinked from the landing per the
-    # compressed-map doctrine (sitemap policy: published, crawlable, never first-contact);
-    # its chrome is covered by check [9].
-    for href in [
-        "read/",
-        "discoveries/",
-        "fable/",
-        "plainly/",
-        "record/",
-        "axioms/",
-        "book/",
-        "practice/",
-        "build/",
-        "map/",
-    ]:
-        if f'href="{href}"' in index_body:
-            ok(f"landing links {href}")
-        else:
-            error(f"landing missing link to {href}")
-            all_ok = False
-
-    return all_ok
-
-def check_generated_library_chrome():
-    print("\n[12] Generated library chrome contract")
-    manifest_path = os.path.join(BASE_DIR, "reading-manifest.json")
-    if not os.path.exists(manifest_path):
-        error("reading-manifest.json missing; cannot verify generated chrome")
-        return False
-
-    try:
-        with open(manifest_path, "r", encoding="utf-8") as fh:
-            manifest = json.load(fh)
-    except Exception as exc:
-        error(f"reading-manifest.json is not valid JSON: {exc}")
-        return False
-
-    generated_pages = set()
-    for href in manifest.get("routes", {}).values():
-        if href.endswith("/"):
-            generated_pages.add(os.path.normpath(os.path.join(href, "index.html")))
-    for doc in manifest.get("documents", []):
-        href = doc.get("href", "")
-        if href.endswith("/"):
-            generated_pages.add(os.path.normpath(os.path.join(href, "index.html")))
-
-    required_markers = [
-        '<main class="library-shell">',
-        '<section class="library-hero">',
-        '<div class="library-route-row">',
-        '<article class="library-article">',
-        '<aside class="library-meta">',
-        "Generated by 12_PUBLIC_SITE/generate_public_library.py",
-    ]
-    drifted = []
-    for rel in sorted(generated_pages):
-        path = os.path.join(BASE_DIR, rel)
-        if not os.path.exists(path):
-            drifted.append((rel, "missing generated page"))
-            continue
-        body = read_file(rel)
-        missing = [marker for marker in required_markers if marker not in body]
-        if missing:
-            drifted.append((rel, "missing " + ", ".join(missing)))
-
-    if drifted:
-        for rel, finding in drifted:
-            error(f"{rel}: generated-library chrome drift ({finding})")
-        return False
-
-    ok(f"Generated library chrome present on {len(generated_pages)} pages")
-    return True
-
-def load_vercelignore_patterns():
-    path = os.path.join(BASE_DIR, ".vercelignore")
-    if not os.path.exists(path):
-        return None
-    patterns = []
-    with open(path, "r", encoding="utf-8") as fh:
-        for line in fh:
-            stripped = line.strip()
-            if stripped and not stripped.startswith("#"):
-                patterns.append(stripped)
-    return patterns
-
-def vercelignore_matches(rel_path, pattern):
-    rel_path = rel_path.replace(os.sep, "/")
-    pattern = pattern.replace(os.sep, "/")
-    if pattern.startswith("!"):
-        return False
-    if pattern.endswith("/"):
-        prefix = pattern.rstrip("/")
-        return rel_path == prefix or rel_path.startswith(prefix + "/")
-    if "/" not in pattern:
-        return fnmatch.fnmatch(os.path.basename(rel_path), pattern) or fnmatch.fnmatch(rel_path, pattern)
-    return fnmatch.fnmatch(rel_path, pattern.lstrip("/"))
-
-def is_vercel_ignored(rel_path, patterns):
-    ignored = False
-    for pattern in patterns:
-        negated = pattern.startswith("!")
-        raw = pattern[1:] if negated else pattern
-        if vercelignore_matches(rel_path, raw):
-            ignored = not negated
-    return ignored
-
-def check_publication_boundary():
-    print("\n[13] Deployment publication boundary")
-    patterns = load_vercelignore_patterns()
-    if patterns is None:
-        error(".vercelignore missing")
-        return False
-
-    required_patterns = {
-        "book-pwa/",
-        "docs/",
-        "__pycache__/",
-        "*.py",
-        "*.sh",
-        "*.md",
-        ".env",
-        ".env.*",
-        "*.db",
-        "*.tsbuildinfo",
-    }
-    missing = sorted(required_patterns - set(patterns))
-    if missing:
-        for pattern in missing:
-            error(f".vercelignore missing required pattern: {pattern}")
-        return False
-
-    risky_paths = [
-        "book-pwa/.env",
-        "book-pwa/dev.db",
-        "book-pwa/README.md",
-        "docs/superpowers/README.md",
-        "AGENTS.md",
-        "CLAUDE.md",
-        "README.md",
-        "00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md",
-        "generate_public_library.py",
-        "predeploy_check.py",
-        "predeploy_check.sh",
-        "audit_live_domain_against_manifest.py",
-        "deploy.sh",
-        "__pycache__/predeploy_check.cpython-311.pyc",
-    ]
-    leaked = [rel for rel in risky_paths if not is_vercel_ignored(rel, patterns)]
-    if leaked:
-        for rel in leaked:
-            error(f"publication boundary would not ignore: {rel}")
-        return False
-
-    ok(".vercelignore excludes source/control/runtime files")
-    return True
-
-def main():
-    print("=" * 60)
-    print("Pre-deploy supply-chain gate — 12_PUBLIC_SITE")
-    print("=" * 60)
-
-    results = [
-        check_external_refs(),
-        check_internal_links(),
-        check_orphans(),
-        check_required_assets(),
-        check_html_wellformedness(),
-        check_tier_markers(),
-        check_public_tier_hygiene(),
-        check_discovery_launch_contract(),
-        check_kintsugi_claim_boundaries(),
-        check_gfs_retirement_projection(),
-        check_public_reading_bundle(),
-        check_generated_library_chrome(),
-        check_publication_boundary(),
-    ]
-
-    print("\n" + "=" * 60)
-    if ERRORS:
-        print(f"FAIL: {len(ERRORS)} error(s), {len(WARNINGS)} warning(s)")
-        sys.exit(1)
-    elif WARNINGS:
-        print(f"PASS with warnings: {len(WARNINGS)} warning(s)")
-        sys.exit(0)
-    else:
-        print("PASS: all checks green")
-        sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

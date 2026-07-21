@@ -53,7 +53,10 @@ The architecture is internally consistent, but that consistency is not evidence.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Evidence tier:** [I/C] — proposed reconciliation, not a theorem
 2. **Depends on:** The Seven Axioms, Triadic Stability

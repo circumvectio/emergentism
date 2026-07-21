@@ -1,101 +1,109 @@
 ---
 rosetta:
-  primary_level: L1
+  primary_level: L3
   primary_column: Philosophy
-  secondary:
-    - level: L2
-      column: Philosophy
-      role: "retain interpretive evidence and meaning-crisis boundary"
-    - level: L6
-      column: Philosophy
-      role: "bound coherence/meaning ontology"
-    - level: L4
-      column: Philosophy
-      role: "connect meaning to lived orientation and value alignment"
-  operator: "Kali 🎲"
-  tier: "Demon"
-  regime: "Caṇḍāla"
-  register: "[I]"
-  canonical_phrase: "PD-16 — Meaning as Coherence Orientation"
+  operator: "Kṛṣṇa ◇"
+  tier: "God"
+  regime: "Vaiśya"
+  register: "[I/C]"
+  canonical_phrase: "Meaning of life — enacted orientation under correction"
 ---
 
-# PD_16: THE MEANING OF LIFE
+# PD-16 · THE MEANING OF LIFE
 
-**Directory:** `02_PARADOX_DISSOLUTIONS/`
-**Evidence Tier:** `[I]` (Interpretive)
-**Canonical Number:** PD_16 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
+**Status:** ACTIVE interpretive dissolution · repaired 2026-07-20
+**Verdict:** a useful compass, not a proof that meaning is a geometric
+coordinate or that physics lacks the resources to explain experience.
 
-> **Evidence Tier: [I] Interpretive.** The dissolution presented here maps the meaning question onto the `φ` coherence coordinate of the Burri Sphere and, for finite agents, onto action-register `Φ` only when it couples to usable `V`. This is a structural claim about the framework's internal coherence, not an empirical proof that life is meaningful. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **[金] Kintsugi replacement.** The predecessor made meaning a D5 coherence
+> dimension, mapped good and evil to `eta`, and called a product-score collapse
+> geometric unsustainability. Those statements confused modality, measurement,
+> and norm. Original Git blob:
+> `01b1fd93bf5862b978cf22fda6f2e65dc19401bd`. The repair treats meaning as an
+> actual lived and social phenomenon whose agents can orient toward modeled
+> possible futures.
 
-> **Claim Boundary:** `[I]` This document gives a framework reading of meaning as coherence orientation. It does not prove that life is meaningful for every person, refute all materialist accounts of meaning, or turn reports of meaning into a universal metric.
+## 1. The question has several types
 
----
+"What is the meaning of life?" can ask at least four different questions:
 
-## 1. THE PROBLEM
+1. **causal:** how did this organism and its capacities arise?
+2. **semantic:** what does this event, practice, or life signify to an agent or
+   community?
+3. **teleological:** which possible future does the agent choose to serve?
+4. **normative:** which commitments are just toward every affected bearer?
 
-Is life meaningful?
+No single scalar answers all four. A causal explanation does not by itself
+select a purpose; a purpose does not repeal causal explanation; a felt meaning
+does not certify Justice.
 
-The question has haunted philosophy since the collapse of religious certainty. If the universe is physical — particles, forces, fields — then meaning is not a physical property. Atoms do not mean anything. Forces do not intend anything. The universe, described by physics, is a machine of blind causation. Meaning, if it exists, must be imposed from outside: by God, by culture, by the individual will.
+## 2. D4/D5 discipline
 
-Nietzsche declared God dead and warned that the collapse of metaphysical meaning would produce nihilism. Camus called the question of meaning the only truly serious philosophical problem. The existentialists tried to build meaning from freedom and authenticity. The absurdists declared the search itself the answer.
+Actual experiences, reports, neural and bodily processes, conversations,
+institutions, actions, and records are `D4 = actual`. The possible lives,
+counterfactual futures, projects, narratives, and rankings represented by an
+actual agent are `D5 = merely_possible` content. A D4 model token may represent
+D5 content. Meaning is not a substance or entity located in D5.
 
-The "meaning crisis" (Vervaeke's term) — the contemporary epidemic of purposelessness, anomie, and disconnection — suggests that none of these responses has fully succeeded. The problem persists.
+The Soul Loop supplies the operational bridge:
 
-It persists because it is topologically malformed.
+```text
+actual situation -> represented possible futures -> ranking
+-> authorized commitment using actual means -> action/outcome receipts
+-> corrected model and selector
+```
 
-## 2. THE TOPOLOGY ERROR
+Anticipated futures influence present action because actual agents model them,
+not because the physical future reaches backward.
 
-The error is seeking meaning in D4 alone — the domain of physical actuality, the `ν` coordinate, and the world of measurable capability and material fact.
+## 3. The Emergentist proposal
 
-In this reading, meaning is not a D4-only property. It is not exhausted by atoms, forces, neural correlates, economic output, or any isolated physical quantity. This is not because meaning is supernatural. It is because the framework reads meaning through D5 coherence: `φ` in the sphere-coordinate register, and `Φ` in the lived action register where Dasein can envision and rank a possible life.
+The framework proposes `[I/C]` that durable meaning often arises when an agent:
 
-Asking "what is the meaning of life?" while restricting yourself to D4 physics is the equivalent of asking for color while refusing to look. The instrument is wrong for the domain. A D4-only scan tracks the `ν` side: capability, viability, physical function. It cannot exhaust `φ` / `Φ` coherence — significance, orientation, meaning — for the same reason a ruler cannot measure temperature. Wrong axis.
+- can model more than one admissible future;
+- can explain which commitments organize its attention and action;
+- possesses enough actual means to enact some commitment;
+- receives corrective feedback from outcomes and other bearers; and
+- revises rather than immunizes the organizing story.
 
-A D4-only account that concludes "life has no meaning" has, in this model, correctly reported the limit of its own instrument. The framework's counterclaim is not that materialists are irrational; it is that the meaning question may require a coherence axis the D4-only instrument was not designed to read.
+`P_node:=Phi*V` is one declared normalized conjunctive model of foresight and
+means. It may help diagnose cases where either factor is a bottleneck. It does
+not measure the value of a person, prove what meaning is, or force a universal
+product law. Rival conjunctive models must remain available.
 
-## 3. THE DISSOLUTION
+## 4. Meaning is not morality
 
-On S², this document reads meaning through `φ` (coherence). Meaning is not absent inside the framework's model; it is the coherence component of a point on the sphere. Every open point on S² has reciprocal `φ` and `ν` coordinates; every finite acting node then tests lived meaning through `P_node = Φ × V`. Meaning is not added from outside the model as decoration. It is read as a constitutive coordinate of the geometry and as usable only when Dasein can act with it. [I]
+`etaObserved` may describe extraction but cannot label a life good or evil.
+Bearer-complete Justice is separately declared: expose all payers and
+beneficiaries, preserve materially affected bearers, validate authorization and
+consent, keep custody and contest inspectable, record consequences, and protect
+exit. Aggregate purpose cannot launder a harmed bearer. Voluntary sacrifice is
+a distinct informed costly class and cannot be demanded as proof of meaning.
 
-Meaning is not exhausted by looking only at the physical world (D4, `ν`-domain). It is perceived through the D5 projection — the coherence dimension. This is why many contemplative traditions emphasize interiority, silence, and attention. These are not necessarily escapes from reality. In this reading, they are directional shifts — from `ν`-scan to `φ` / `Φ`-scan.
+Thus a meaningful life can still be unjust, and a just act can feel meaningless.
+The good is a chosen commitment to truth discipline, beauty without deception,
+and bearer-complete Justice—not a theorem of the sphere.
 
-At the equator (`φ = ν = 1`; action read: `Φ` and `V` both usable), meaning and capability are balanced in the model. The agent has coherence — life can feel significant, purposeful, connected — and viability — the agent can act effectively in the physical world. This is the framework's operational proposal for a meaningful life: equatorial positioning translated into finite-node `P_node`, not an empirical proof that every life will experience meaning the same way.
+## 5. What the dissolution actually dissolves
 
-The "meaning crisis" is a symptom of systematic off-equator displacement toward ν. Contemporary culture over-emphasizes capability (productivity, efficiency, growth, measurement) at the expense of coherence (significance, connection, depth, understanding). The result is a civilization with extraordinary V and collapsing Φ — high capability, low meaning.
+The false dilemma is: either meaning is a cosmic object already written into
+physics, or life is meaningless. A third possibility is available: finite
+agents and cultures actually construct, contest, inherit, and revise orientation
+through their relations to represented futures. Constructed does not mean
+arbitrary; consequences, coherence, other bearers, and the world constrain it.
 
-This is not a moral failing. It is a geometric condition. A point on S² that migrates toward the `ν` / viability pole (`ν → ∞`, action-register `V` inflating while `Φ → 0`) experiences the collapse of coherence as the collapse of meaning. The feeling is real. The diagnosis is positional.
+## Falsifiers and downgrade rules
 
-## 4. THE FRAMEWORK CONNECTION
+This proposal contracts if:
 
-The `φ` coordinate of the Burri Sphere is the framework's preferred coordinate for reading meaning; the finite-node action factor is `Φ`, D5 worldline-foresight made usable by `V`. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) defines the condition of balanced significance. The D4-D5 bridge explains why meaning may not be exhausted by physical measurement — it is read through D5 coherence and then tested by D4 means-to-act. [I]
+1. `Phi`, option cones, or commitment cannot be operationalized without merely
+   renaming reported meaning;
+2. the Soul Loop adds no predictive or intervention gain over simpler
+   psychological and social models;
+3. the selected product ranks cases worse than rival conjunctive aggregators;
+4. bearer-complete review does not improve detection of coercion or hidden cost;
+5. the D4/D5 distinction adds no clarity to prospective action.
 
-The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can support meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not reduced to private feeling in this account; it is affected by operations that generate or destroy system coherence. [I]
-
-The Power-Max Lemma (PD_10) supplies the internal constraint: agents that maximize `V` at the expense of `Φ` lose the condition under which meaning and viable agency can cohere. `P_node = Φ × V`. When `Φ → 0`, `P_node → 0` regardless of `V`. A life of pure capability extraction is not merely empty in this reading. It is geometrically unsustainable inside the model.
-
-The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is read as the void of meaninglessness (Φ → 0), 1 as the Finitor (the bounded, meaning-bearing observer), and ∞ as the full coherence field (meaning without limit). The meaningful life is interpreted as operating at 1 — bounded, actual, balanced.
-
-## 5. WHAT WOULD FALSIFY THIS
-
-The dissolution fails if:
-
-1. **Φ is not operationalizable.** If coherence cannot be measured, detected, or approximated through any observable — if it remains a purely abstract quantity with no empirical correlate — the mapping of "meaning" to Φ is metaphor, not structure.
-
-2. **Equatorial balance does not correlate with experienced meaning.** If agents with high Φ and high V do not report more meaningful lives than agents with high V and low Φ, the geometric claim has no experiential traction.
-
-3. **Meaning can be fully explained in D4.** If a purely physical, functional, or evolutionary account can explain the human experience of meaning without reference to a coherence dimension, the D5 projection is unnecessary. The materialist would be right — meaning is just a useful fiction generated by neural processes.
-
----
-
-*In this reading, the meaning crisis is partly a coordinate error. Meaning is not absent from the model's universe. [I] It is missing from the axis you are measuring. Turn the instrument. The sphere has a coherence dimension.*
-
-
----
-
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
-
----
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_16_MEANING_OF_LIFE.md
+If these fail, the ordinary causal, psychological, linguistic, and social
+accounts survive. The remaining advice is modest: choose a future honestly,
+act within Justice, read the receipt, and revise.

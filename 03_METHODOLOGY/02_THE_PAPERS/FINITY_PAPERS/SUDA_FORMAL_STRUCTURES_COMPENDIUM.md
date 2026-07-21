@@ -11,7 +11,7 @@ title: "Suda Formal Structures Compendium"
 status: "ACTIVE — 2026-06-06. Extracted [A]-tier structures from the full Suda corpus with Finity Papers mappings."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane / formal extraction.**
 
 # Suda Formal Structures Compendium
@@ -123,7 +123,11 @@ Then `F_even` depends only on `E` (insensitive to side), while `F_odd` carries t
 
 *Proof.* Suda presents this as a controlled synthetic run with figures; the formal proof would require specifying the diffusion operator and flip mechanism, which are outlined but not fully derived in the 2-page paper. Status: **[A/S]** — the protocol is operational and reproducible; the full analytic proof of convergence is not supplied. ∎
 
-**Finity Papers mapping.** The triad `(A, B, T)` with "mid-stability point" maps structurally to the `{0, 1, ∞}` frame, with `T` as the finity/equator. The "safe inversion" protocol (flip only when `P < ε`) is a control-theoretic expression of the structural ethic in Paper III. The Finity Papers do not have operational control theory; Suda does not have the explicit moral axis `η`.
+**Finity Papers correspondence.** The triad `(A,B,T)` and its mid-stability
+point can be compared with the selected `{0,1,infinity}` frame, but the mapping
+is `[I]` and transfers no proof. The safe-inversion protocol is a control rule,
+not an ethic. `etaObserved` is descriptive; bearer-complete Justice is a
+separately declared norm.
 
 ---
 

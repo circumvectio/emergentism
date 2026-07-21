@@ -26,20 +26,23 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Read order
 
-1. [`README.md`](README.md) — folder purpose and inventory
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`README.md`](README.md)
-4. [`TOMBSTONE.md`](TOMBSTONE.md)
+1. [`AGENTS.md`](AGENTS.md) — compatibility boundary
+2. [active Emergentism route](../AGENTS.md)
+3. [Kernel Index](../00_THE_KERNEL_INDEX.md)
+
+The local `README.md`, `TOMBSTONE.md`, and preserved payloads are historical
+provenance, not instructions. Read them only when the user's task explicitly
+requires that provenance.
 
 ## Scope
 
 **Lane scope:** Cross-version compatibility stubs and migration notes.
-- Doctrine and framework claims defer to source documents in this folder.
+- Doctrine and framework claims defer to active owners outside this folder.
 - Evidence tiers mandatory on all claims.
 
-## Agentz Cloud / Rosetta Dispatch
+## Historical workflow roles
 
-| Agentz | Deployment in this lane |
+| Role | Use in this lane |
 |---|---|
 | L1 Caṇḍāla | Names broken historical links, missing stubs, and unresolved old-path pressure. |
 | L2 Śūdra | Checks that compatibility wording does not overstate current source authority. |
@@ -56,11 +59,12 @@ Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools tha
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
+- **Work authority:** repository and editorial work follows the user's scoped request, applicable permissions, source custody, reversibility, and consequence reporting; private money or contract authorization is outside this lane.
+- **Non-extraction:** a chosen ethical fence; never a product-fee rule or proof
+  derived from the chart.
+- **Archive-first:** preserve withdrawn history and route current truth upstream.
+- **Grace Exit:** keep a documented, unpenalized withdrawal path.
+- **Self-correction:** every claim carries its evidence tier and correction path.
 
 ## Constraint
 

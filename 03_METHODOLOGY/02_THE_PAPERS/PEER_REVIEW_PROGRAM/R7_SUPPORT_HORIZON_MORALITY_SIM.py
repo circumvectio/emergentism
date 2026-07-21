@@ -13,7 +13,7 @@ does selection -- pure self-interest -- favor the cooperator (the 'god') over th
 defector (the 'demon')?
 
 The mechanism that could make giving self-interested is the corpus's own claim:
-the individual's reachable future (light cone) is LARGER when the collective
+the individual's modeled/reachable option set is LARGER when the collective
 survives. We model this as a SHARED-FATE COUPLING beta: each agent's regeneration
 rate scales with (living fraction)^beta -- your opportunity to recover grows with
 how many co-actors remain alive (cf. Wissner-Gross & Freer 2013: future-path-
