@@ -1,91 +1,56 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "01 The Transcendental Trinity — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 01_THE_TRANSCENDENTAL_TRINITY — Agent First-Touch
+# 01 The Transcendental Trinity — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**Lane:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY`
 
-## Read order
+## Read first
 
-1. [`README.md`](README.md) — folder purpose, document inventory (39 documents), core argument, simulation specs
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. `00_THE_POINT.md` — D0: the Bindu before emergence
-5. `01_THE_EMERGENCE.md` — D0→D1: the sphere emerges from the dot
-6. `07_THE_DISCOVERY_OF_FINITY.md` — the Third Recognition; Zero-Sum Resolution Equation
-7. `09_THE_TRIADIC_CASCADE.md` — the Trinity repeating at every level
-8. [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md) — tier-honest canonical statement of the five rulings on `{0, 1, ∞}`
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Scope
+## Pure-worldview boundary
 
-- 01 The Transcendental Trinity lane of the Emergentism framework.
-- Narrative and philosophical presentation of the {0, 1, ∞} ground and its emergence through S².
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Narrative vs. formal authority
+## Epistemic contract
 
-This folder **presents** the trinity narratively. For **formal notation, axioms, and evidence tiers**, route through:
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-| Authority | Path | Tier |
-|---|---|---|
-| Canonical formula block | [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) | `[A/S]` |
-| Honest position | [`../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | `[S/B]` |
-| Trinity canon | [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md) | `[A/S/I]` |
+## Rosetta dispatch
 
-## Evidence tier breakdown
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-| Claim type | Tier | Example |
-|---|---|---|
-| Riemann-sphere mathematics | `[A]` | `1/0 = ∞` on S² = ℂP¹ |
-| Model-internal structure | `[S]` | Reduction chain: Framework → Axioms → Equation → Sphere → Trinity |
-| Narrative / perennial translation | `[I]` | Seven convergent witnesses (Egyptian, Sanskrit, Greek, Buddhist/Taoist, German, Mathematical, Sitting practice) |
-| Frontier physics / Ground-exhaustion | `[C]` | Computational foundation, dimensional hierarchy closure |
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Pre-hardening genesis surfaces
+## Lane discipline
 
-Documents `02_THE_TRINITY.md` through `06_THE_COSMOLOGICAL_CYCLE.md` and `SIMULATION_SPEC.md` are **pre-hardening genesis / compatibility surfaces**. Read them for origin framing and design archaeology, not as current tier-authority surfaces. For present-tense canonical citation, route through:
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-- `00_THE_POINT.md`
-- `01_THE_EMERGENCE.md`
-- `07_THE_DISCOVERY_OF_FINITY.md`
-- `08_CO_EMERGENCE.md`
-- `09_THE_TRIADIC_CASCADE.md`
-- `00_THE_HONEST_POSITION.md`
-
-## Core sequence mapping
-
-| Range | Category | Example documents |
-|---|---|---|
-| 07–22 | Core ontological and teleological sequence | Discovery of Finity, Co-Emergence, Triadic Cascade, Soul Loop, Helix, Poles, Wave Packet, Tat Tvam Asi, Dharma Yuddha, Great Filter, Egregorocene, Strange Attractor, Brahmanism, Hybrid Sovereign, Tightrope, Teleology |
-| 23–29 | Extensions | DAC, Mycelium, Compression, Exoteric Inversion, Samudra Manthan, L4*, Compass and Sextant |
-| 31–35 | 2026-04 additions | VMOSK, Four Lines, Derivation pointer, Fork brief, Objective Function spectrum |
-| 36–39 | L5 biology/F5 sequence | Trophic cascade, Sexual selection, Tantra redirection, Neoteny/cultural womb |
-
-> **Ordinal gap:** The sequence runs 29 → 31 by design; chapter 30 was retired/merged. This is a documented gap, not a missing file.
-
-## Routing
-
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -155,7 +155,7 @@ The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot 
 
 ### Where the Mapping Breaks
 
-1. **Direction of emanation.** In Kabbalah, the flow is *top-down*: from Keter through the Sefirot to Malkuth. Malkuth is the *lowest*, the most removed from the source. In the framework, L1 (south pole) and L7 (north pole) are *equally* removed from L4 and *equally* undifferentiated — the poles are the same point (L1 = L7 = Kala = Trimurti). Kabbalah is hierarchical; the framework is symmetrical. This is a fundamental structural difference.
+1. **Direction of emanation.** In Kabbalah, the flow is *top-down*: from Keter through the Sefirot to Malkuth. Malkuth is the *lowest*, the most removed from the source. In the selected Rosetta chart, L1 and L7 are distinct rows placed at equal chart distance from L4; equal distance and mirror assignment do not identify them. Kabbalah is hierarchical while this projection is reflection-symmetric. This is a fundamental structural difference.
 
 2. **The 7-to-7 mapping is imperfect.** The lower seven Sefirot do not form a clean linear sequence. They are arranged in a tree with branching paths, triads, and lateral relationships. Forcing them into a single L1-L7 ladder loses the tree's two-dimensional topology. The Sefirot are a *graph*; the L-levels are a *sequence on a sphere*. The data structure is different.
 
@@ -163,7 +163,7 @@ The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot 
 
 4. **Da'at (the hidden Sefirah).** The framework has no equivalent of Da'at — the hidden knowledge that bridges the supernal and lower worlds. Da'at occupies the space where the "abyss" sits. In the framework, there is no abyss; the L-levels transition smoothly. This is a feature of Kabbalah with no framework counterpart.
 
-5. **Malkuth as "lowest."** In Kabbalah, Malkuth (the physical world) is the end of emanation, the point furthest from the high-priority source. It is low but mission-critical — the Shekhinah dwells there. In the framework, L1 is not "low" in a pejorative sense; it is one of two poles, and the poles are identical (L1 = L7). Kabbalah's Malkuth carries a valence — a longing-to-return — that the framework's L1 does not.
+5. **Malkuth as "lowest."** In Kabbalah, Malkuth (the physical world) is the end of emanation, the point furthest from the high-priority source. It is low but mission-critical — the Shekhinah dwells there. In the Rosetta projection, L1 is not "low" in a ranking of persons; it is one of two distinct boundary-adjacent rows. Kabbalah's Malkuth carries a valence — a longing-to-return — that the framework's L1 does not.
 
 ### Verdict
 

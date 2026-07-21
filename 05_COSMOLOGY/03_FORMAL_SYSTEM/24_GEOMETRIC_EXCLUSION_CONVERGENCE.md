@@ -380,12 +380,9 @@ This proof is **falsified** if any of the following is exhibited:
 
 > **Proof-local axiom convention.** The labels `A*n` below are
 > **proof-local** to this document, distinguished by the star (`*`)
-> from the operational canon `A1–A7` defined in
-> [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) and the
-> substrate-selection wager `O1–O5` reconciled in
-> [`../00_GOVERNANCE/00_MASTER_INDEX.md`](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_MASTER_INDEX.md)
-> Axiom Namespace section. When this proof references the operational
-> canon or the substrate-selection axioms, it does so explicitly.
+> from the current [Emergent Axioms](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+> A1–A7 and application-specific substrate-selection rows are superseded
+> genealogy and do not supply premises here.
 
 | # | Assumption | Status | Used in |
 |---|-----------|--------|---------|

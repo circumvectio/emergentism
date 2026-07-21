@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**The Human Architecture and Memetic Software: An Interdisciplinary Analysis of Cultural Parasitism, Algorithmic Epidemiology, and Evolutionary Conflict**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **The Human Architecture and Memetic Software: An Interdisciplinary Analysis of Cultural Parasitism, Algorithmic Epidemiology, and Evolutionary Conflict**

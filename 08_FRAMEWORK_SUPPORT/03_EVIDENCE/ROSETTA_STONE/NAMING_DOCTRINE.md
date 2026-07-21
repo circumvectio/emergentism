@@ -38,22 +38,11 @@ evidence_tier: "[B] Canonical local naming doctrine."
 
 ---
 
-## The three parallel D-namespaces
+## The two active D-namespaces
 
-`01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/` contains three parallel folders that each use the `D##` prefix for their own independent sequence:
-
-### `D_SERIES_CONSTITUTIONAL/` — constitutional cut
-
-D01–D06: the six foundational Rosetta documents (Master, Seven Axioms, Three Tiers, DAC Specification, The Helix, Transcendental Poles). These are the **constitutional surface** of the Rosetta — what the Rosetta itself is.
-
-```
-D01_MASTER_ROSETTA.md
-D02_SEVEN_AXIOMS.md
-D03_THREE_TIERS.md
-D04_DAC_SPECIFICATION.md
-D05_THE_HELIX.md
-D06_TRANSCENDENTAL_POLES.md
-```
+The active Rosetta surface contains two parallel folders that use `D##` for
+independent sequences. A former third, application-bound sequence is preserved
+only in historical custody and has no active naming authority.
 
 ### `D_SERIES_ROWS/` — horizontal row-axis cut
 
@@ -118,7 +107,7 @@ Same prefix, different semantic axis. The folder disambiguates. This is **parall
 The top-level `ROSETTA_STONE/` folder also contains **non-D files** (no D-prefix):
 
 - `00_CORPUS.md`, `00_SELECTION_METHODOLOGY.md`, `00_THE_MASTER_ROSETTA.md`, `00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md` — the **meta-spine** (sources, method, master table, positioning)
-- `01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md`, `03_ROSETTA_DAC_OPERATING_SYSTEM.md` — the comparative frame + synthesis
+- `01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md` — the comparative frame
 - `ROSETTA_CIVILISATIONAL.md`, `ROSETTA_COMPUTATION.md`, `ROSETTA_MYTHOLOGY.md`, `ROSETTA_NEUROSCIENCE.md`, `ROSETTA_OPERATOR_PATHOLOGY.md`, `ROSETTA_PSYCHOLOGY.md`, `ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` — per-domain Rosetta applications predating the formal `D_SERIES_DOMAINS/` subfolder
 
 The `ROSETTA_*` files are **content-descriptive siblings**, not sequence-members. They sit alongside the D-series, not inside its numbering. Future per-domain work may migrate into `D_SERIES_DOMAINS/` over time; for now, both layers coexist and reference each other.
@@ -131,8 +120,8 @@ If a future contributor or auditor feels the Rosetta-Stone naming is inconsisten
 
 1. Read this doctrine first.
 2. Read [`README.md`](README.md) and [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — the Master Rosetta table is the source of truth for what each D-number means.
-3. Read [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — the router that treats D-numbers as semantic identifiers.
-4. If after those three the renumbering case is still strong, it is a **framework-level decision** requiring K2 founder sign-off and Foundation-canon-level justification. Not a folder-audit decision.
+3. Read [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — the router that treats D-numbers as semantic identifiers.
+4. If after those three the renumbering case is still strong, it is a framework-level editorial decision requiring explicit adoption and corpus-level justification, not an incidental folder-audit edit.
 
 ---
 
@@ -140,13 +129,13 @@ If a future contributor or auditor feels the Rosetta-Stone naming is inconsisten
 
 - [`README.md`](README.md) — Rosetta Stone overview
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — the master table these D-numbers map into
-- [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — row-axis routing
-- [`../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/NAMING_DOCTRINE.md`](../../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/NAMING_DOCTRINE.md) — parallel doctrine for Skyzai's biological naming (different reason, same rule: semantic naming is load-bearing)
+- [`../../../11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/00_ROSETTA_ROW_ROUTER.md) — row-axis routing
 
 ---
 
 *Zero-Sum Resolution Equation*
-*The D-number is a word, not a page number. Three parallel lexicons share the same letter.*
+*The D-number is a local identifier, not a universal page number. Two active
+lexicons share the same letter and declare their axes.*
 
 ## Execution Surface
 

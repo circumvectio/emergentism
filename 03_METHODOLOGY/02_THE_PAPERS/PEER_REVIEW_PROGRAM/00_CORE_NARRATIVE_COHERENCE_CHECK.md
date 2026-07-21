@@ -7,6 +7,10 @@ rosetta:
 
 # Core Narrative — Coherence Check (2026-06-10)
 
+> **Historical peer-review artifact.** This table audits superseded A1–A7
+> language. Its quotations are evidence of the earlier claim state, not current
+> canon. Current authority sits in E1–E10 and the dimension-first owners.
+
 The founder restated the load-bearing narrative and asked to confirm it is "coherent and consistent." Three distinct questions hide in that — and they get three different answers:
 
 - **Coherent** (internally consistent as a grammar)? — **Largely yes.** The model hangs together.

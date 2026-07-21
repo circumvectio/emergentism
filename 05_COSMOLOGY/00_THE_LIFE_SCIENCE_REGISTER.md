@@ -28,8 +28,8 @@ rosetta:
 > (φ − ν)² ≥ 0
 > φ + ν ≥ 2
 > ```
-**Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
-**See also:** [The PHI Resolution](02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md), [The Glossary](../07_THEOLOGY/00_GLOSSARY.md), [The Canonical Claim Matrix](../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md), [The Empirical Program Board](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md), [Dimensional Architecture Clarification](03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md)
+**Depends on:** [The Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [Empirical Observation as Primary Disclosure](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md)
+**See also:** [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), [The Glossary](../07_THEOLOGY/00_GLOSSARY.md), [The Canonical Claim Matrix](../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md), [The Empirical Program Board](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md), [D4/D5 Canonical Reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
 
 ---
 

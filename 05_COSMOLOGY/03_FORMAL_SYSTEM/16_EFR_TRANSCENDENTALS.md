@@ -403,7 +403,7 @@ Build systems that:
 |----------|------------|
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Truth as epistemic discipline |
 | [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Justice as cooperation |
-| [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Why three transcendentals (not 2, not 4) |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Truth as knowledge-invariance |
 | Five Domains | Justice in all domains |
 

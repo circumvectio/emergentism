@@ -13,20 +13,20 @@ rosetta:
   canonical_phrase: "What actually tests the theory"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 falsification doctrine; GFS probe not proof.**
+**Corpus:** Emergentism
+**L3 falsification doctrine; the retired GFS archive is provenance, not a test.**
 
 # What Actually Tests the Theory
 
-> **The GFS is a probe, not a proof. This document identifies what would actually be decisive.**
+> **The former GFS study is retired. This document identifies what would actually be decisive.**
 
 **Date:** 2026-04-11
 **Evidence Tier:** Meta-epistemic (test design)
-**Depends on:** [GFS Wave 1 result and retraction](../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-**See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), [BREAKTHROUGH_REPLICATION_PACKET](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+**See also:** [00_KNOWN_UNKNOWNS_PROGRAM.md](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [00_RECONCILIATION_THEOREM_PACKET.md](../07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md), [00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md](../00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md), [16_OPERATOR_CONSISTENCY_AUDIT.md](../01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md), BREAKTHROUGH_REPLICATION_PACKET, [GFS retraction receipt](../90_ARCHIVE/tool_noise/2026_07_12_GFS_RETRACTION/GFS_RETRACTION_RECEIPT.md) (archive provenance only)
 
 Retrieval handles: geometry flagship = Protocol R; emergence flagship =
-Macro-Constraint Physics-to-Biology; toy macro-constraint harness `[B]`;
+Macro-Constraint Physics-to-Biology; toy macro-constraint harness `[B-internal]`;
 negative controls = no-gate, high-cost, forbidden-support; real domain run
 pending.
 
@@ -45,8 +45,8 @@ This is a claim about the *geometry* of reality — not about survey responses, 
 This document now sits inside a stricter hardening sequence:
 
 - the **canonical operational law** remains `Zero-Sum Resolution Equation` and `φ · ν = 1`
-- the **source-foundation mapping** `{•, ⊙, ○} = {0, 1, ∞}` remains canonical in the transcendental-trinity lane
-- the **derivation companion** `⊙ = •^○` remains non-canonical and cannot be tested or quoted as if it were already doctrinally closed
+- the **source-foundation type** `TitanFrame={0_T,1_T,∞_T}` remains canonical in the transcendental-trinity lane, with familiar labels as renderings only
+- all arithmetic-looking operations between Titan glyphs, including the former exponential companion, are retired as ill-typed
 
 For hostile-formalization and scope-boundary discipline, use:
 
@@ -69,7 +69,7 @@ biology upgrades only by a frozen domain run.
 
 | Instrument | Why It's Not Decisive | What It Tests Instead |
 |-----------|----------------------|----------------------|
-| **GFS (survey)** | Self-report measures are proxies for `φ` and `ν`, not the coordinates themselves. Cultural noise overwhelms signal. | Whether survey-operationalized "flourishing" follows a multiplicative structure in cross-cultural data |
+| **GFS (historical survey)** | Retired after mixed results and validity failures; it is not a live instrument. | What one failed/mixed operationalization taught about proxy risk |
 | **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether coupled, long-horizon, multiplicative agents under enforced `η = 0` select syntropic-frontier outcomes more strongly than additive baselines (internally supportive, but [S] not independent [A]) |
 | **Agent V x Phi** | Same circularity problem. | Whether framework-defined agent performance correlates with framework-defined balance |
 
@@ -149,7 +149,8 @@ If resources are limited, the framework should pursue tests in this order:
 3. **Cross-Scale Invariance** (testable now with existing data, low cost)
 4. **Power-Max independent replication** (needs external team, low cost to publish the paper)
 5. **AMRITA** (most expensive but most practical impact if successful)
-6. **GFS refinement** (only if a psychometrically validated phi/nu instrument is developed)
+6. **New independent human-data protocol** (only after its constructs,
+   discriminator, and kill criterion are defined without inheriting the GFS lane)
 
 ## The Current Flagship Path
 
@@ -185,13 +186,9 @@ The emergence public route is therefore:
 
 **lower law -> macro map -> constraint gate -> cost ledger -> witness -> controls**
 
-GFS remains useful. It is not the first public validation path.
-
-The current stranger-runnable companion for that route now lives in:
-
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/README.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/FORMULA_HIERARCHY.md)
-- [../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md](../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION/07_PAPERS/FORMAL_PROOF_PACKETS/BREAKTHROUGH_REPLICATION_PACKET/WHAT_THIS_DOES_NOT_PROVE.md)
+The archived GFS record is useful only as methodological history. No active
+replication or refinement route exists. A future human-data study would be a new
+program built from current owners, not a continuation of the retired lane.
 
 ---
 
@@ -214,7 +211,7 @@ If the practitioner says "I found nothing" — that is data. It does not falsify
 | Protocol D | Internally supportive [S] (framework-designed) | Coupled multiplicative cooperation works in the historical simulation; the current constrained-frontier spec still needs independent replication |
 | Agent V x Phi | Internally supportive [S] (framework-designed) | Balance tracked agent performance in simulation; independent validation still required |
 | SPHERE Probe | Negative/informative | First public-model run did not confirm equatorial projection |
-| GFS Wave 1 | **Mixed** (signal in 30%, pooled interaction marginally negative) | **Survey-operationalized flourishing does not cleanly follow multiplicative model. Instrument validity in question.** |
+| GFS Wave 1 (historical) | **RETRACTED / ARCHIVED** after mixed results and validity failures | One survey operationalization failed to supply a clean multiplicative bridge; no live upgrade path remains |
 | Protocol R | Not yet run | **THE decisive geometric test** |
 | Macro-Constraint Physics-to-Biology | Toy vesicle harness `[B]` proof-of-method; real domain run not yet run | First load-bearing test of information-topology emergence; no biology upgrade yet |
 | AMRITA | Not yet built | **THE decisive practical test** |
@@ -226,11 +223,10 @@ toy macro-constraint harness is `[B]` proof-of-method only. One is negative. One
 is mixed. Protocol R, Phi-meter validation, AMRITA, cross-scale invariance, and
 the real physics-to-biology domain run remain pending.**
 
-The bridge is under construction. The foundation (mathematics) is solid. The
-superstructure (empirical validation) is incomplete. The GFS pier is wobbling
-but may be a measurement problem, not a structural problem. The decisive
-geometry pier (Protocol R) is not built; the decisive emergence pier now has a
-toy load test but not a real domain run.
+The bridge is under construction. The analytic results stand only inside their
+named assumptions; empirical validation is incomplete. The GFS pier was removed,
+not repaired by reinterpretation. The geometry proposal (Protocol R) is not yet
+run; the emergence lane has a toy load test but not a real domain result.
 
 ---
 

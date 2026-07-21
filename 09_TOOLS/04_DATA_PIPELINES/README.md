@@ -35,18 +35,14 @@ artifacts.
 
 ## Current Focus
 
-This folder currently holds the GFS-oriented analysis lane and its supporting
-artifacts.
+No GFS study surface remains active. The complete retired lane is preserved
+under `90_ARCHIVE/2026_07_13_gfs_retraction/`.
 
 ## Current Pipeline Inventory
 
 | Surface | Status |
 |---|---|
-| `download_gfs.py` | [B] OSF file-list fetcher for the GFS node; network-dependent, no local data write by default. |
-| `gfs_22_country_analysis_v2_fixed.py` | [B] Preferred GFS Codebook v2 analysis script in this checkout. |
-| `gfs_22_country_analysis.py` | [I] Earlier/provenance script; superseded for codebook-v2 runs by the v2-fixed variant. |
-| `gfs_22_country_analysis_wave2.py` | [I] Wave-2/provenance variant; use only with matching source data and column-mapping review. |
-| `gfs_results_20260409.csv` / `gfs_meta_analysis_20260409.txt` | [B] Local dated outputs from the GFS analysis lane; evidence artifacts, not doctrine. |
+| GFS fetcher, three analysis scripts, and dated result artifacts | **RETIRED.** Byte-preserved under `90_ARCHIVE/2026_07_13_gfs_retraction/`; no active copy remains. |
 | `ra_files.txt` | [I] Legacy absolute-path inventory; do not treat as live route authority. |
 
 ## Authority Rule

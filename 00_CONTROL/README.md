@@ -1,44 +1,32 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: "Control Plane"
-  operator: "Kṛṣṇa ◇"
-  tier: "God · giver"
-  regime: "Vaiśya"
-  register: "[B]"
-  canonical_phrase: "00_CONTROL — receipts, boundaries, and audit verdicts"
+title: Control — receipts, boundaries, and verification
+status: ACTIVE ROUTE
+evidence_tier: "[B] repository and verification facts only"
+date: 2026-07-20
 ---
 
-# 00_CONTROL — Control Plane
+# Control
 
-**Lane scope:** the control plane of `01_EMERGENTISM` — publication receipts, source
-manifests, public-boundary declarations, and audit verdicts. This folder records
-**what was done and verified**, not doctrine. Doctrine lives in the seven -ology
-lanes; when a control document and a source document disagree, source wins and the
-control document is corrected with a dated note (K3 archive-first, no deletion).
+This lane records what was changed, checked, published, or bounded. It does not own
+doctrine. The live owners are routed through the [Kernel Index](../00_THE_KERNEL_INDEX.md).
 
-## Inventory
-
-| File / lane | Role |
+| Surface | Role |
 |---|---|
-| `SOURCE_MANIFEST.md` | What the public site may draw from — the source-of-truth manifest. |
-| `PUBLIC_SITE_BOUNDARY.md` | The publication boundary — what never ships. |
-| `GITHUB_MAP.md` | Repo/remote map for this root. |
-| `GITHUB_PUBLICATION_RECEIPT_2026_06_08.md` | Dated publication receipt `[B]`. |
-| `GENERATED_TISSUE_RECEIPT.md` | Receipt for generated/derived artifacts `[B]`. |
-| `PRIMETIME_AUDIT/` | The gods/demons readiness audit — charter, sprint verdicts, remediation routing, state-of-emergentism. |
+| [`SOURCE_MANIFEST.md`](SOURCE_MANIFEST.md) | Public-source boundary |
+| [`PUBLIC_SITE_BOUNDARY.md`](PUBLIC_SITE_BOUNDARY.md) | What the static site serves and excludes |
+| [`GITHUB_MAP.md`](GITHUB_MAP.md) | Repository/remote evidence; not deploy proof |
+| dated receipts | Evidence about a completed act at the stated scope |
+| [`../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) | K7 chronology and collisions |
 
-## Operator note
+The earlier readiness-audit packet moved intact to
+[`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_CONTROL/PRIMETIME_AUDIT/`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_CONTROL/PRIMETIME_AUDIT/)
+because it imported application-era governance and is no longer an active control surface.
 
-Control work is **L3 Kṛṣṇa ◇ auditing** (truth tests, receipts) feeding **L4
-Arjuna ⚔** signing: nothing in this folder authorizes an irreversible act by
-itself — K2 signature stays with the natural person. The Titans (L5–L7) read
-this lane as boundary evidence; they do not execute from it.
+## Control discipline
 
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path.
-- **A7:** self-correction with evidence tier on every claim.
+- Evidence tier, reproducibility, and the current owner determine claim standing.
+- User-scoped task authorization governs ordinary repository work.
+- Consequential action uses the typed `AuthorizationEnvelope`; a private natural
+  person's money or contract signature is outside this lane.
+- Preserve superseded material with dated archive custody; do not erase provenance.
+- A green test is not a deploy; a deploy is not DNS; a receipt is not empirical truth.

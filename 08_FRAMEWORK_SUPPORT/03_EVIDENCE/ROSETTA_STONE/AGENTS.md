@@ -1,63 +1,55 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  secondary:
-    - level: L5
-      column: Philosophy
-      role: "stabilize Rosetta table topology, rows, columns, and D-series routes"
-    - level: L3
-      column: Philosophy
-      role: "audit mapping evidence, failed mappings, and selection methodology"
-    - level: L6
-      column: Philosophy
-      role: "bound Rosetta evidence from core-state authority"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[S/I]"
-  canonical_phrase: "ROSETTA_STONE — Agent Routing"
+type: emergentism-agent-route
+title: "Rosetta Stone — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# ROSETTA_STONE — Agent Routing
+# Rosetta Stone — Agent route
 
-**Lane scope:** The calibration table for the compass and sextant.
-**Primary lead:** `L2 Śūdra`
-**Support:** L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[S/I]` Rosetta calibration and mapping discipline.
+**Lane:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L2 Śūdra | Owns cross-domain comparison and candidate mapping. |
-| L3 Vaiśya | Audits evidence tiers, failed mappings, and selection method. |
-| L4 Kṣatriya | Routes governance/public-language implications without upgrading claims. |
-| L5 Brāhmaṇa | Stabilizes Rosetta table topology, rows, columns, and D-series routes. |
-| L6 Sādhu | Prevents calibration tables from becoming ontology. |
-| L7 Ṛṣi | Translates only tier-cleared Rosetta meaning into witness narrative. |
+- [Local README](README.md)
+- [Emergentism root route](../../../AGENTS.md)
+- [Kernel Index](../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
-- `00_CORPUS.md`
-- `00_SELECTION_METHODOLOGY.md`
-- `00_THE_MASTER_ROSETTA.md`
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane is part of Emergentism doctrine root — Sevenfold Foundation, framework support, Uplink, tools, archives, and seed.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
-- **Render the Stone from disk, never from chat memory.** Any rendering, viewer, summary, or audit of the Master Rosetta must read `00_THE_MASTER_ROSETTA.md` on disk cell-by-cell. An in-chat "complete Stone" paste has twice drifted into a fabricated fork (swapped φ/ν header, altered cells, missing columns); render-from-memory is the failure mode. (Standing rule R9 from the 2026-07-18 game-layer audit.)
-- **Settled canon is classified around, not re-litigated.** Before flagging a contradiction, consult `../../../00_META/00_SETTLED_CANON_REGISTRY.md`: the four-move scheme (2 Gods + 2 Demons by give/take), Kālī's dual God · Demon register, φ·ν=1 on S², the η moral axis, and the 5+1 constitution are ratified. A7 audits are welcome; re-opening settled rows is not.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-⊙ = • × ○
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

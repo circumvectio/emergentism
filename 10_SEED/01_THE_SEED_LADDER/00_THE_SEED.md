@@ -5,10 +5,9 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] staged — the declaration and reading-order of the seven-rung seed ladder"
+  register: "[I] active reader projection — declaration and reading order of the seven-rung Seed Ladder"
 title: "The Seed — front page of the ladder"
-status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
-evidence_tier: "[D] staged reader projection — per-claim tiers inline; not canon, not a tier promotion"
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
   - ../../00_THE_KERNEL_INDEX.md
   - ../../00_THE_WELTANSCHAUUNG.md
@@ -47,19 +46,40 @@ What is **never** claimed: that this is *the* minimum — the shortest possible 
 `D_n` is a **ladder ordinal**. It is not a spatial dimension `d`, a spacetime
 dimension `D=d+1`, or a theorem that rung `n` has exactly `n` independent
 coordinates. Beside that ordinal runs the corpus's selected world-ladder of
-five positive apertures — **matter, bond, life, mind, choice** `[I]` — and a
-set of mathematical/scientific lenses used to illuminate them. These are
-declared crosswalks, not identities or a census forced by algebra.
+five positive registers — **distinction, configuration, quantum state, causal
+actuality, counterfactual possibility** `[I]` — and a removable content
+projection, **matter→bond→life→mind→choice** `[I/C]`. The projection is not a
+register definition, identity, or census forced by algebra.
 
 | Rung | Page | One line |
 |---|---|---|
-| **D0** | The Floor | The ground before articulation: one emblem read three ways (`⊙ = • × ○`, frame register only); "why is there something rather than nothing?" is reframed `[I]`, not solved by geometry. |
+| **D0** | The Floor | The ground before articulation: one emblem read three ways (`•   ⊙   ○`, frame register only); "why is there something rather than nothing?" is reframed `[I]`, not solved by geometry. |
 | **D1** | Arithmetic | **Distinction through an arithmetic lens:** one independent reciprocal-chart variable; seam `φ·ν = 1` (empty of world), inversion, AM-GM, and six evidence tiers with no silent promotion. |
-| **D2** | Geometry | **Configuration through a geometric lens:** the declared reciprocal meridian on `S²`; seam (`≡1`) stays distinct from score (`B = sinθ ≤ 1`) and node; existence claims remain typed. |
-| **D3** | Bodies | **Transformation/life through a body lens:** a declared need-both node model has an AND-class zero boundary; applying that model to organisms is typed and testable, not derived from the rung number. |
-| **D4** | Spacetime | **Causality/bounded mind with a spacetime lens:** normalized rapidity gives the mass-shell identity `[A]`; the physical mapping does not identify rung ordinal, mind, and `3+1` dimension. |
-| **D5** | The Game | **Selection/strategic relation:** four transfers and three frames (G7, selected); morals run individual→whole, ethics whole→individual, with `η` as valence. The vow supplies horizon, maximand, and enforcement. |
-| **D6** | The Return | Not a positive rung. `D6~D0` is only a similarity of boundary roles `[I]`, never identity, recurrence, self-similarity, or formal closure by the reader. |
+| **D2** | Functions & Geometry | **Configuration through a graph/geometry lens:** declared functions become inspectable relations; the reciprocal meridian is one atlas entry, never every function or the territory. |
+| **D3** | Quantum State | **Probability-bearing state:** `ρ` plus a declared measurement yields Born probabilities; the D3 ordinal is selected, and the next actual record belongs to D4. |
+| **D4** | Causal Actuality | **Actual carrier, interaction, action, outcome, and receipt:** spacetime, bodies, and cognition are application lenses; none defines the rung. |
+| **D5** | The Game | **Merely possible alternatives:** actual D4 agents may model and rank options using the selected G7 language. Commitment returns through D4 means. `etaObserved` is descriptive; bearer-complete Justice, authorization, receipts, consent, custody, contest, and exit supply the independent normative envelope. |
+| **D6** | The Return | Not a positive rung. `D6≈roleD0` is only a declared boundary-role resemblance `[I]`, never identity, recurrence, self-similarity, or formal closure by the reader. |
+
+### The one-model-per-register discipline
+
+The ladder now gives each register one primary model. The model is a compact
+instrument for the register's type; it is not the substance of that register,
+and no picture transfers proof to the next rung.
+
+| Register | Primary model | What it can do | What it cannot establish |
+|---|---|---|---|
+| **D0** | sovereign opaque `TitanFrame={0_T,1_T,∞_T}` rendered by `{•,⊙,○}` | mark ground, finite unit, and horizon as selected boundary roles without operations | coerce a Titan into a number, perform Titan arithmetic, cause a world, or force three roles mathematically |
+| **D1** | positive count spine `ℕ⁺` from finite singleton multiplicities, plus the reciprocal log line | distinguish arithmetic `1_N` from Titan `1_T`, display typed counting, reciprocal pairing, and explicit zero-adjunction | call one the unique first set, generate naturals as products of ones, include `0_N` in `ℕ⁺`, or prove that a number line generates D2 |
+| **D2** | a finite typed function atlas and configured graphs `Γ_f` | display domains, relations, singularities, symmetries, and the reciprocal meridian as one entry | contain literally every function, establish actuality, or derive quantum physics |
+| **D3** | density operator plus measurement context `(ρ,M)` | generate `p(k|ρ,M)=Tr(ρE_k)`; distinguish pure sphere from mixed ball and prediction from receipt | select a quantum interpretation, identify branches with D5, or prove a strong crossing |
+| **D4** | the causal receipt graph `state → commitment/action → outcome/record` | type actual carriers, acts, provenance, consequences, and feedback | make records true, outcomes self-authored, or identify D4 with spacetime dimension |
+| **D5** | an option-cone game whose possible contents are represented by D4 models | display alternatives, ranking, reachability, and commitment back through D4 means | make possibilities actual, widen a physical light cone, or derive the vow |
+| **D6** | the non-`μ` return relation `b₆:D5↝D6`, `r₆:D6↝D0` | mark exit and re-read the D0 frame after the climb | add a sixth freedom, close a causal circle, or assert `D6≡D0` |
+
+The resulting shape is a spiral only as an `[I]` reading: the D0 emblem is
+encountered again at D6 with a record of the intervening distinctions. The
+token is reused; its position in the account is not identical.
 
 ---
 
@@ -67,7 +87,7 @@ declared crosswalks, not identities or a census forced by algebra.
 
 Every rung page is built on the same three columns, in the same order:
 
-1. **§1 · THE MOVES** — what is actually asserted at this rung, claim by claim, each with its tier (`[A]` proven · `[B]` built/measured · `[S]` structural inside stated premises · `[I]` reading · `[D]` staged · `[C]` wager), and all inherited mathematics — AM-GM, the sphere, the mass-shell, Nash, Kant's test — marked **used, not discovered**.
+1. **§1 · THE MOVES** — what is actually asserted at this rung, claim by claim, each with its evidence type (`[A]` formal proof inside named assumptions · `[B]` observed/measured/attributed/built/tested/receipted contact with custody · `[S]` consequence inside declared premises · `[I]` reading · `[D]` staged · `[C]` wager), and all inherited mathematics — AM-GM, the sphere, the mass-shell, Nash, Kant's test — marked **used, not discovered**.
 2. **§2 · THE DISSOLUTIONS** — the one or two classical paradoxes native to this rung's height, with the cure *named* and *scoped*: which frame confusion is repaired, and what the repair explicitly does **not** generalize to. (The universal claim "dissolves the Hard Problem / Is-Ought / Death / Free-Will" is a named grave; each dissolution is licensed case by case.)
 3. **§3 · THE OLOGY** — a selected Soul-Loop lens for the page (*what is the ground? what may a claim weigh? what is there? what died? where do I stand? what should I do? how do I leave?*), held at tier. The seven -ologies apply across every rung; this reader ordering does **not** identify D-rungs with Rosetta L-rows.
 
@@ -77,10 +97,10 @@ Same skeleton on all seven pages; only the height changes. A reader who learns t
 
 ## §4 · The ladder and the kernel (K-1 … K-7)
 
-The corpus's staged kernel architecture has exactly seven surfaces: **K-1** Glyph & Grammar · **K-2** Ontology · **K-3** Axioms · **K-4** Wagers · **K-5** Refusals · **K-6** Revelations · **K-7** Record. The proposed front door is the Weltanschauung capstone. The relation of this ladder to that architecture:
+The corpus's active kernel architecture has exactly seven surfaces: **K-1** Glyph & Grammar · **K-2** Ontology · **K-3** Axioms · **K-4** Wagers · **K-5** Refusals · **K-6** Revelations · **K-7** Record. The active front door is the Weltanschauung capstone. The relation of this ladder to that architecture:
 
 - **The ladder is the spine of the Door** — the seven-minute read of the same body of claims, in ascent order, for the stranger at the threshold.
-- **The kernel surfaces are the proposed typed expansion** — where each
+- **The kernel surfaces are the typed expansion** — where each
   compressed claim must route to a full source with its tier, kill, upgrade
   path, and survivors. That coverage is a requirement, not yet a completeness
   fact; the per-document route ledger must expose every gap. Intended routes
@@ -107,25 +127,21 @@ Six disciplines govern every page of the ladder. They are the compression of the
 3. **The ethic is a vow, not a theorem.** The vow supplies at least three choices the mathematics cannot make: horizon, maximand, and enforcement. Universalized extraction collapses a host only under declared closure, regeneration, coupling, and horizon premises; inside those premises the result is structural, outside them it is not a categorical theorem. Non-extraction avoids that failure mode but does not by itself guarantee survival, justice, or a new aperture.
 4. **The Rosetta is a lens.** Cross-tradition convergence is translation, never proof; fifteen renderings of one shape are one datum. Its kill-criterion fired, and the firing is kept visible as the honesty seal.
 5. **The seven are selected.** Seven rungs, seven symbols, seven surfaces — chosen taxonomies `[I]`, exhaustive only by construction within their declared models, never a census forced by algebra. And `D6~D0` is a similarity of boundary roles, never an identity.
-6. **Inherited mathematics is marked.** AM-GM, the Riemann sphere, the mass-shell, Nash equilibria, Kant's universalizability — all **used, not discovered**. What is ours is the naming, the reading, and the discipline of warrant; and 22 dead forms stay buried, by name, with dates. Each rung now carries its **inheritance ledger** — an "Inherited Axioms" block crediting, by discoverer and era, the axiom systems that rung rides on. The ledger preamble (the "reality-gradient") is tiered **once, at D0** (`[I/C]`, kill attached); every other rung cites it, never restates it as fact.
-7. **Every model is typed — ARGUES or SHOWS — and the type attaches to the use, not the object.** ARGUES models support derivation and carry `[A]`/`[S]` content at tier; SHOWS models are emblems for recognition and are never cited in proofs. A split-typed model (D0's glyph, D5's cone) obeys the **one-way rule**: any SHOWS face makes the model *by name* uncitable in proof — cite the underlying inherited theorem directly. Inside an ARGUES model, the label covers the warranted core only; every `[I]` sentence carries its own inline tier.
-
----
-
-## §6b · The Reduction Asymmetry — the ladder's lens, at its audited tier
-
-**The Reduction Asymmetry** — `[C]` per rung-pair inside the ladder, `[I]` as world-reading; **never `[S]`** (receipt 149). The lens: for rungs `n<m`, *some* Dn-genesis-of-Dm transitions resist upward prediction (μ-flavored opacity from below), while Dm-descriptions of Dn content are often compressible and auditable looking down (χ-flavored) — so *some* X-reductionisms succeed as downward description while failing as upward prediction. Its fences, all load-bearing: (i) the quantifier is **some, never every** — the universal corollary ("every X-reductionism…") is the dead Gödel-lift ("every Dn needs Dn+1") in softened clothing and stays buried; (ii) "compressible looking down" is indexed to **scaffold-description only** — trajectory/dynamics description stays computationally irreducible (settled Wolfram correction, 2026-03-23; deterministic chaos and Rule 110 are standing counterexamples to any blanket downward compressibility); (iii) upward prediction **sometimes succeeds** (statistical mechanics → thermodynamics), so per-rung-pair opacity is an evidenced wager, never a schema — and if rung boundaries were *defined* as loci of opacity the claim would be analytic and empty, so it earns content only where opacity is evidenced independently of the rung selection; (iv) the asymmetry and the Wigner reading are **one datum, not two** — neither may cite the other as independent support, and Wigner's actual puzzle (pre-existing higher mathematics predicting unforeseen physics) is not dissolved and stays open; (v) there is no structurally "lower" description-seat — the describing is always D5 ink (D0), and μ-at-saturation stays `[C]`. **Kill:** one documented case of a lower-rung theory predicting a next-rung genesis phenomenon scopes it further or kills it for that pair; one registered pressure case already stands in the open — D5's vN–M/Nash/folk-theorem ledger is mathematics prima facie capturing choice-content.
+6. **Inherited mathematics is marked.** AM-GM, the Riemann sphere, the mass-shell, Nash equilibria, Kant's universalizability — all **used, not discovered**. What is ours is the naming, the reading, and the discipline of warrant; and 22 dead forms stay buried, by name, with dates.
 
 ---
 
 ## §7 · Rule zero and the gate
 
-**Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk itself remains `[D]`; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a staged synthesis, is a defect.
+**Rule zero:** the seed is intended to *receive* and compress what stands in the corpus at its recorded tier. The editorial crosswalk is an active `[I]` reader projection; it is not licensed to disguise a new mapping as old doctrine. Any sentence that cannot be traced to an existing at-tier source, or explicitly marked as a new synthesis, is a defect.
 
-**The gate:** every page of this ladder, this one included, is **staged `[D]`**. Receipt 139 (SIGNED 2026-07-20; box 8) disposed of that gate deliberately: it adopted the ladder as a **subordinate reader projection** — *still `[D]`, still not canon, still not an eighth authority*. So the gate held rather than swung wide: nothing here became canon, no existing signed surface lost authority to it, and no in-stream assent, commit, or agent-written block ever counted as adoption. The gate is not a formality; a gate that always opens is not a gate — this one opened only to reader-projection, by the sovereign's hand.
+**Authority boundary:** every page of this ladder is an active reader projection,
+not an independent canon owner. Activation changes the route status only; it
+does not promote any compressed claim, displace a source owner, or convert an
+interpretation into evidence.
 
 ---
 
-*⊙ = • × ○ — seven pages, one seed: read it in minutes, check it at tier, and when it has done its work, put it down.*
+*•   ⊙   ○ — seven pages, one seed: read it in minutes, check it at tier, and when it has done its work, put it down.*
 
-**Proposed Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`
+**Document path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md`

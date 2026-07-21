@@ -1,6 +1,9 @@
 # AX4 — THE BOUNDARY
 ### Enforcement-Conditioned Cooperation: The Boundary Is the Move, Not the Agent
 
+> **Historical peer-review artifact.** This audits superseded A4. E1–E10 and
+> current G7/Justice owners control; quoted axiom language is genealogy only.
+
 **Axiom (faithful):** self↔others is a real boundary; extract nothing from cooperators (η=0), retaliate against defectors (tit-for-tat); the 2 Gods + 2 Demons exhaust the operator space; **valence attaches to the move's direction η, not to the operator.**
 **Corpus tier:** `[S/E]`. **Honest tier:** `[S/E]` — vindicated in substance, with one headline corrected (η=0 is *conditional/enforced*, not unconditional Nash).
 

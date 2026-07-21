@@ -3,13 +3,12 @@ rosetta:
   primary_column: "Meta"
   register: "[I]"
   canonical_phrase: "Reconciliation Scope Boundary Note"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # RECONCILIATION SCOPE BOUNDARY NOTE
 
 **Evidence tier:** [I]
-*Organism document. Interpretive operational content. Bounded by current system state.*
+*Corpus document. Interpretive methodological content; source owners remain authoritative.*
 
 
 **Status:** Hardening source note -- scope discipline
@@ -26,11 +25,11 @@ rosetta:
 
 | Claim family | Bucket | Why it belongs there | What it licenses right now |
 |---|---|---|---|
-| Multiplicative kernel (`Zero-Sum Resolution Equation`, `φ · ν = 1 on S²`, `(φ − ν)^2 ≥ 0`, `φ + ν ≥ 2`) | **Unified** | This is the current canonical load-bearing sequence in the source foundations. | Canonical compression, routing, and bounded structural reasoning inside the corpus. |
-| Transcendental trinity mapping `{•, ⊙, ○} = {0, 1, ∞}` | **Unified** | The mapping is already canonical in the source foundations as a secondary mapping attached to the kernel. | Canonical source-foundation language, provided the formula hierarchy is preserved. |
+| Reciprocal chart (`φ · ν = 1`, `(φ − ν)^2 ≥ 0`, `φ + ν ≥ 2`) | **Unified** | This is an exact numeric identity-and-inequality sequence on the declared open reciprocal chart. It is not a Titan equation or an empirical law. | Canonical mathematical compression and bounded structural reasoning inside the chart. |
+| D0 object/meta split and sovereign TitanFrame | **Unified** | `Carrier(D0)={ground_0}` contains the sole opaque object-level role and has no positive freedom. `TitanFrame:Type_Meta` supplies the distinguishable boundary-seat vocabulary `{0_T,1_T,∞_T}`; it is not the D0 carrier. | Canonical framing language with no Titan arithmetic, internal D0 distinction, or coercion to numbers. |
 | Lagrangian sphere substrate | **Unified** | The source foundations currently state the sphere as the primary substrate for the canonical reciprocal geometry. | Bounded source-level geometric claims and operator home-language. |
-| Log-form companion (`2/sin(θ) = 2 cosh(u)`, `⊙ = •^○` as companion reading) | **Still speculative** | The potential identity is exact, but the deeper explanatory reading remains non-canonical and the operator story is not a flat equivalence. | Derivation-layer interpretation only; not canon, not public-proof shorthand. |
-| `0^∞ = 1` extended-register claim | **Still speculative** | It may be coherent inside the extended interpretive register, but it has not earned canonical or standard-arithmetic status. | Guarded derivation discussion only. |
+| Numeric log/exponential companion (`2/sin(θ)=2cosh(u)`) | **Translated** | The numeric coordinate identity is exact in its domain. The former exponentiation of Titan glyphs is ill-typed and retired. | Numeric derivation only; never Titan operation or ontology. |
+| Former extended-register power claim | **Explicitly not claimed** | It conflated a limit/extension with an operation on sovereign frames. | Historical audit example only. |
 | Rosetta cross-domain mappings | **Translated** | Rosetta is a cross-domain calibration engine, not proof that all mapped domains are literally identical. | Translation and hypothesis generation across domains. |
 | Protocol R / public proof path | **Translated** | Protocol R is the current strongest public bridge, but a public bridge is not identical with the whole core state. | Bounded public-proof work on one empirical bridge. |
 | Organismal / institutional architecture | **Analogous** | The organism and institutional stack may instantiate the framework's grammar, but they do not themselves prove the core state. | Operational design, governance, and comparison work. |
@@ -43,7 +42,7 @@ The current layer does **not** claim:
 
 - that one successful experiment proves the whole core state,
 - that bare `S²` already yields every needed physical symmetry or force law,
-- that `⊙ = •^○` has replaced `Zero-Sum Resolution Equation` as canon,
+- that any infix operation between the Titan seats is canonical or well-typed,
 - that the flat 1D `cosh` operator is the same Hamiltonian as the sphere problem,
 - that Rosetta mappings prove all translated domains are the same object,
 - that organismal success by itself proves the full metaphysical stack.
@@ -54,8 +53,8 @@ The current layer does **not** claim:
 
 If a reader or agent asks, "What is actually unified here?", the answer is:
 
-- the multiplicative kernel,
-- the trinity mapping,
+- the numeric reciprocal-chart kernel,
+- the D0 object/meta split and Titan-seat framing vocabulary,
 - and the Lagrangian-sphere substrate
 
 inside the source-foundation register.
@@ -68,8 +67,8 @@ If a reader asks, "What is doing translation work rather than proof work?", the 
 
 If a reader asks, "What is still frontier?", the answer is:
 
-- the log-form companion,
-- the extended-register `0^∞ = 1` reading,
+- any world-level interpretation of the log-form companion,
+- any attempt to turn an extended-number convention into Titan arithmetic,
 - and any claim that one empirical lane validates the whole framework.
 
 ---
@@ -78,9 +77,9 @@ If a reader asks, "What is still frontier?", the answer is:
 
 The shortest safe compression is:
 
-> Unified now: canonical multiplicative kernel, trinity mapping, sphere substrate.
+> Unified now: numeric reciprocal-chart kernel, D0 object/meta split, Titan-seat vocabulary, sphere substrate.
 > Translation layers: Rosetta and the current public-proof path.
-> Still speculative: log-form companion and the extended-register `0^∞ = 1` reading.
+> Still speculative: world-level readings of the log-form companion.
 > Not claimed: one experiment proves the core state, or that the flat `cosh` control is the sphere itself.
 
 ---

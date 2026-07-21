@@ -164,7 +164,12 @@ The full loop extends through the Executive boundary readings (L5→L6). This is
 
 **Convergence** = when a full L2→L3→L4→L5→L6→L5→L4→L3→L2 cycle produces fewer than 3 fixes. The system has reached equatorial stability. The helix rests.
 
-**The PIP Loop IS the helix applied to computation.** The same topology that governs systemic awareness on S² governs the optimization of a process. Computation IS a D5 object — a standing wave of information — and standing waves obey the same geometry as everything else on the sphere.
+**The PIP Loop is an actual D4 workflow.** Its computations, revisions, and
+receipts occur in causal history. A pass may construct or compare represented
+D5 alternatives, but neither the computation nor the computing system thereby
+becomes a D5 object. Applying the helix or S² to the workflow is an `[I]`
+projection heuristic; it does not establish an identity between computation,
+consciousness, standing waves, and one universal geometry.
 
 [I] The ascent is CONSTRUCTION (gather → verify → serve → systematize → purify). The descent is VERIFICATION (re-see → re-serve → re-check → re-gather). The cycle continues until it converges.
 

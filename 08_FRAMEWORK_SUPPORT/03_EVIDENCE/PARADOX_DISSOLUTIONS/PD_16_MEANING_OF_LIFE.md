@@ -45,19 +45,33 @@ It persists because it is topologically malformed.
 
 ## 2. THE TOPOLOGY ERROR
 
-The error is seeking meaning in D4 alone — the domain of physical actuality, the `ν` coordinate, and the world of measurable capability and material fact.
+The proposed error is reducing actual meaning-making to one physical measurement
+while leaving its represented alternatives, commitments, relations, and history
+out of the account. D4 is actuality; it is not identical to the chart coordinate
+`ν` or to a materialist doctrine.
 
-In this reading, meaning is not a D4-only property. It is not exhausted by atoms, forces, neural correlates, economic output, or any isolated physical quantity. This is not because meaning is supernatural. It is because the framework reads meaning through D5 coherence: `φ` in the sphere-coordinate register, and `Φ` in the lived action register where Dasein can envision and rank a possible life.
+Meaning-making is an actual D4 activity whose model tokens can refer to D5
+possible lives. The chart may use `φ` as a symbolic coherence coordinate; `Φ`
+is instead a present D4 assessment of D5 option-field quality. Neither symbol
+proves that meaning is a separate substance or dimension.
 
 Asking "what is the meaning of life?" while restricting yourself to D4 physics is the equivalent of asking for color while refusing to look. The instrument is wrong for the domain. A D4-only scan tracks the `ν` side: capability, viability, physical function. It cannot exhaust `φ` / `Φ` coherence — significance, orientation, meaning — for the same reason a ruler cannot measure temperature. Wrong axis.
 
-A D4-only account that concludes "life has no meaning" has, in this model, correctly reported the limit of its own instrument. The framework's counterclaim is not that materialists are irrational; it is that the meaning question may require a coherence axis the D4-only instrument was not designed to read.
+A narrowly chosen physical variable cannot by itself settle the meaning question,
+but a future physical or functional reduction remains open. The framework's claim
+is methodological: include actual reports, relations, modeled futures, action,
+and consequences before declaring the phenomenon absent.
 
 ## 3. THE DISSOLUTION
 
-On S², this document reads meaning through `φ` (coherence). Meaning is not absent inside the framework's model; it is the coherence component of a point on the sphere. Every open point on S² has reciprocal `φ` and `ν` coordinates; every finite acting node then tests lived meaning through `P_node = Φ × V`. Meaning is not added from outside the model as decoration. It is read as a constitutive coordinate of the geometry and as usable only when Dasein can act with it. [I]
+On `S²`, this document optionally reads meaning through `φ` as a coherence
+correspondence `[I]`. The identity `φν=1` is analytic within the chart and does
+not establish a law of meaning. A finite acting node may separately use
+`P_node=ΦV` as a selected model of represented option quality and usable means.
 
-Meaning is not exhausted by looking only at the physical world (D4, `ν`-domain). It is perceived through the D5 projection — the coherence dimension. This is why many contemplative traditions emphasize interiority, silence, and attention. These are not necessarily escapes from reality. In this reading, they are directional shifts — from `ν`-scan to `φ` / `Φ`-scan.
+Actual reports of meaning may concern D5 possible content, but D5 is not a
+coherence substance or a private dimension. Contemplative practices are D4 acts
+with receiptable outcomes; whether they improve meaning is an empirical question.
 
 At the equator (`φ = ν = 1`; action read: `Φ` and `V` both usable), meaning and capability are balanced in the model. The agent has coherence — life can feel significant, purposeful, connected — and viability — the agent can act effectively in the physical world. This is the framework's operational proposal for a meaningful life: equatorial positioning translated into finite-node `P_node`, not an empirical proof that every life will experience meaning the same way.
 
@@ -67,11 +81,18 @@ This is not a moral failing. It is a geometric condition. A point on S² that mi
 
 ## 4. THE FRAMEWORK CONNECTION
 
-The `φ` coordinate of the Burri Sphere is the framework's preferred coordinate for reading meaning; the finite-node action factor is `Φ`, D5 worldline-foresight made usable by `V`. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) defines the condition of balanced significance. The D4-D5 bridge explains why meaning may not be exhausted by physical measurement — it is read through D5 coherence and then tested by D4 means-to-act. [I]
+The `φ` coordinate is an optional symbolic reading of coherence. The finite-node
+factor `Φ` is a D4 assessment of D5 option-field quality, while `V` is D4 usable
+means. Their joint adequacy is a selected model of actionable meaning, not a
+derived condition for meaningful life. `[I/C]`
 
 The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can support meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not reduced to private feeling in this account; it is affected by operations that generate or destroy system coherence. [I]
 
-The Power-Max Lemma (PD_10) supplies the internal constraint: agents that maximize `V` at the expense of `Φ` lose the condition under which meaning and viable agency can cohere. `P_node = Φ × V`. When `Φ → 0`, `P_node → 0` regardless of `V`. A life of pure capability extraction is not merely empty in this reading. It is geometrically unsustainable inside the model.
+The [Power-Max model](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
+supplies only a Justice-constrained objective. The product model makes both
+factors necessary by definition; it does not prove that extraction is physically
+or geometrically self-defeating. Justice is a chosen constraint with visible
+bearers and consequences.
 
 The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is read as the void of meaninglessness (Φ → 0), 1 as the Finitor (the bounded, meaning-bearing observer), and ∞ as the full coherence field (meaning without limit). The meaningful life is interpreted as operating at 1 — bounded, actual, balanced.
 
@@ -83,11 +104,15 @@ The dissolution fails if:
 
 2. **Equatorial balance does not correlate with experienced meaning.** If agents with high Φ and high V do not report more meaningful lives than agents with high V and low Φ, the geometric claim has no experiential traction.
 
-3. **Meaning can be fully explained in D4.** If a purely physical, functional, or evolutionary account can explain the human experience of meaning without reference to a coherence dimension, the D5 projection is unnecessary. The materialist would be right — meaning is just a useful fiction generated by neural processes.
+3. **The added decomposition is unnecessary.** If physical, functional, or
+evolutionary accounts explain and predict meaning reports and behavior without
+the option-field vocabulary, this correspondence loses explanatory value. That
+would be a successful reduction, not proof that meaning is unreal.
 
 ---
 
-*In this reading, the meaning crisis is partly a coordinate error. Meaning is not absent from the model's universe. [I] It is missing from the axis you are measuring. Turn the instrument. The sphere has a coherence dimension.*
+*In this reading, the meaning crisis may partly reflect an incomplete measurement
+frame. `[I/C]` Turn the instrument—but do not mistake the instrument for ontology.*
 
 
 ---

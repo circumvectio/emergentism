@@ -11,7 +11,7 @@ rosetta:
       role: "separate operator-role analysis from runtime deployment claims"
     - level: L6
       column: Non-Runtime Boundary
-      role: "preserve the K2 envelope and prevent agent-analysis prose from becoming execution authority"
+      role: "preserve accountable authorization and prevent agent-analysis prose from becoming execution authority"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
@@ -35,7 +35,8 @@ status: ACTIVE
 
 The agent-row analyses of the D-series. Each file develops one operator/caste row (the seven caste functions of the framework) as a comprehensive systems analysis across social, cognitive, and computational registers.
 
-Analyses preserve the K2 envelope and the non-runtime boundary: agent-deployment claims require evidence-tier discipline and do not become runtime commitments here.
+Analyses preserve the authorization and non-runtime boundary: cognitive-role
+claims require evidence-tier discipline and do not become runtime commitments here.
 
 ## Contents
 
@@ -48,4 +49,4 @@ Analyses preserve the K2 envelope and the non-runtime boundary: agent-deployment
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)
-- Sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../D_SERIES_CONSTITUTIONAL/README.md)
+- Sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [D-series constitutional lane — historical](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_CONSTITUTIONAL/README.md)

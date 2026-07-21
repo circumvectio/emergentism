@@ -1,52 +1,24 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Session Packet Route Authority
-  secondary:
-    - level: L6
-      column: Historical Packet Boundary
-      role: "preserve dated packets without upgrading them into current canon"
-    - level: L4
-      column: Decision Receipt Handoff
-      role: "route decision packets to owner-lane and K2 receipts"
-    - level: L7
-      column: Synthesis Witness
-      role: "hold session continuity without replacing source documents"
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[B/I/D/C]"
-  canonical_phrase: "60_SESSION_PACKETS — Agent Routing"
-title: "60_SESSION_PACKETS — Agent Routing"
-status: "ACTIVE — dated session-packet routing"
-evidence_tier: "[B] for dated decisions/receipts; [I] for synthesis; [D]/[C] for preserved proposals."
+title: "60_SESSION_PACKETS — frozen provenance route"
+status: "FROZEN — historical packets; not an active instruction surface"
+date: 2026-07-21
+evidence_tier: "[B] provenance; [S] non-authority boundary"
 ---
 
-# 60_SESSION_PACKETS — Agent Routing
+# 60_SESSION_PACKETS — frozen provenance route
 
-**Lane scope:** Dated Uplink packets that preserve session decisions, audit receipts, sprint plans, and synthesis proposals.
-**Primary lead:** `L3 Vaiśya`
-**Support:** L6 Sādhu, L4 Kṣatriya, L7 Ṛṣi
-**Evidence tier:** `[B]` where packets preserve dated receipts or decisions; `[I]` for historical synthesis; `[D]` / `[C]` for proposals preserved as working memory.
+This directory preserves dated working packets. Its contents may record the
+language, permissions, and governance assumptions in force when they were
+written, but they do not instruct current agents and do not own Emergentist
+doctrine, evidence, or repository authority.
 
-**Rosetta boundary:** [I] This route card governs dated packet provenance. It does not [B] make session packets current canon, current implementation proof, or K2 authority without owner-lane receipts.
+For current work, return to:
 
-## Read First
+- [Uplink route](../AGENTS.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Internal Completion Register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
-
-## Routing Law
-
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
-
-## Constraints
-
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
-
-Zero-Sum Resolution Equation
+Do not execute, promote, or generalize a packet merely because it is present.
+Treat every dated instruction as provenance unless a current source owner adopts
+its claim under ordinary scoped authorization and current tests.

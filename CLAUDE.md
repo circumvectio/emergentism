@@ -1,87 +1,56 @@
 ---
-rosetta:
-  primary_level: L7
-  primary_column: Philosophy
-  operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[S]"
-  canonical_phrase: "01_EMERGENTISM/CLAUDE.md — Agent Routing"
+type: emergentism-agent-route
+title: "Emergentism — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This root carries 5+1 constitutional references. Canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local text preserved per K3 archive-first rule.
+# Emergentism — Claude compatibility route
 
-# 01_EMERGENTISM/CLAUDE.md — Agent Routing
+**Lane:** `.`
 
-This root is the **framework canon**: doctrine, core state, methodology, evidence, and the seven-fold foundation surface. Doctrine and framework claims in the rest of the repo defer here when authority is contested; runtime, entity, product, portfolio, deployment, and investor-room truth defer to their owner lanes.
+## Read first
 
-## Scope
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](AGENTS.md)
+- [Kernel Index](00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-Work here is framework-layer unless a document explicitly says otherwise. Do **not** modify product-layer specs (`02_SKYZAI/04_PUBLIC_SCAFFOLD/`), organism runtime (`02_SKYZAI/01_NOOSPHERE/`), entity DAVs (`03_VENTURES/`), portfolio ventures (`03_VENTURES/_PORTFOLIO/`), or substrate roots (`02_SKYZAI/06_SPECTRE/`) from this root without an explicit cross-root task.
+## Pure-worldview boundary
 
-## Read order
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-Post-signature chain (2026-07-20, receipt 139 SIGNED / authority 145): Door → Map → Compression → -ologies → Uplink record → public funnel.
+## Epistemic contract
 
-1. `README.md` — folder purpose
-2. `AGENT_README.md` — agent orientation
-3. `00_THE_WELTANSCHAUUNG.md` — **the Door** (signed 2026-07-20)
-4. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
-5. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (D0–D6)
-6. `VMOSK_A.md` — this root's V/M/O/S/K/A
-7. The relevant -ology child: `01_TELEOLOGY/` … `07_THEOLOGY/`
-8. `08_FRAMEWORK_SUPPORT/` for governance, operators, evidence, synthesis, and agent grammar; old applications/translation/dissemination lanes are archived under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`
-9. `11_UPLINK/` for session-packets and reconciliation work (the Uplink record)
-10. `09_TOOLS/` for scripts, data pipelines, audit artifacts
-11. `12_PUBLIC_SITE/` — the public funnel (`/fable/` … `/practice/`)
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-Former read-order stops `00_SEVENFOLD_FOUNDATION_ROOT.md` and `00_FOUNDATION_READER_GUIDE.md` are K3 tombstone stubs (2026-07-20); the signed Door/Map carry the front-door role. `00_THE_GOAL.md` resolves at `01_TELEOLOGY/00_THE_GOAL.md`.
+## Rosetta dispatch
 
-## Folder map
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-| # | Folder | Purpose |
-|---|---|---|
-| 00 | `00_META/` | Meta-canon notes, subfolder-organization standard, D-level studies |
-| 01 | `01_TELEOLOGY/` | F5 force, derivation chain |
-| 02 | `02_EPISTEMOLOGY/` | Evidence tiers, memetics, knowing-by-doing |
-| 03 | `03_METHODOLOGY/` | Derivation papers, the seven invariants in method |
-| 04 | `04_AXIOLOGY/` | Strategic Implementation, value theory |
-| 05 | `05_COSMOLOGY/` | Transcendental trinity, emergentism core, formal system |
-| 06 | `06_ONTOLOGY/` | What-is canon |
-| 07 | `07_THEOLOGY/` | Sacred / sovereign |
-| 08 | `08_FRAMEWORK_SUPPORT/` | Governance, operators, evidence, synthesis, and agents; archived applications/translation/dissemination live under `90_ARCHIVE/08_FRAMEWORK_SUPPORT/` |
-| 11 | `11_UPLINK/` | Session packets + reconciliation surface; compressed routing, not source authority |
-| 09 | `09_TOOLS/` | Scripts, data pipelines, audit artifacts |
-| 10 | `10_SEED/` | The seed |
-| 12 | `12_PUBLIC_SITE/` | Tracked public-site/app source currently frozen for migration. `book-pwa` is **K2-signed for migration to `03_AIA/app/`** under spec 13; do not add new feature work here except migration/tombstone repair. |
-| 90 | `90_ARCHIVE/` | Doctrine-supplement archive and archived support lanes; provenance, not current source authority. |
-| 91 | `91_COMPATIBILITY/` | Documented compatibility layer (182 stubs mirroring pre-2026-04-25 paths; see its TOMBSTONE.md). |
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Numbering conventions (intentional — do not normalize)
+## Lane discipline
 
-- `00_*` is a **semantic flag** for primitive-level / foundational content, not an ordinal. Multiple `00_*` files at the same depth is by design (see memory `emergentism-numbering-conventions-intentional`).
-- Date-format drift across the corpus is intentional provenance encoding: `YYYY_MM_DD` = native canon; `YYYY-MM-DD` = external import (Google Docs etc.); `YYYYMMDD` = pipeline artifact.
-- Lower-case suffixes (`103a`) mark machine-readable sidecars; upper-case suffixes (`175A`) mark variant content files.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Compatibility-stub pattern
-
-Filename collisions within this org (e.g., `02_THE_SERPENT_IS_F5.md` appearing in both `01_TELEOLOGY/01_F5_FORCE/` and `01_TELEOLOGY/02_THE_DERIVATION/`) are usually intentional **Rosetta-reorg compatibility stubs** preserving links after the 2026-04-22 folder reorganization. Check the stub's first 5 lines for "Compatibility stub. The canonical home of this document moved to…" before treating as a duplicate.
-
-## What this CLAUDE.md is NOT
-
-- Not the run-time governance surface (that's `AGENTS.md` here at root)
-- Not a place to add new doctrine (that goes inside the relevant -ology child)
-- Not a place to specify product behavior (that lives in `02_SKYZAI/04_PUBLIC_SCAFFOLD/`)
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Do not re-flag settled canon.** Before opening a contradiction, flag, or "fix", consult [`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md) — the four-move scheme (2 Gods + 2 Demons), Kālī's status, the **5+1 constitution** (canonical surface: [`00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md), K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1), the **five-force / F5 mapping** (five force slots D1–D5; F5 is the D5 teleological/syntropic option-cone, not a mainstream `[A]` fifth physical interaction), the `φ·ν = 1 on S²` shorthand, the η moral axis, and Viṣṇu's elliptic operator class are ratified; legacy wording is reconciled, not an error.
-4. **Canonical Path:** `01_EMERGENTISM/CLAUDE.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

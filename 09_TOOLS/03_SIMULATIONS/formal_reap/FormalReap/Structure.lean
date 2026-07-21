@@ -1,7 +1,7 @@
 import Mathlib
 
 /-!
-# Conditional inheritance, reflexivity, and typed frames
+# Conditional inheritance, reflexivity, and sovereign frames
 
 Theorems in this module expose the premises required by three Reap claims.
 Countermodels make clear that the conclusions do not follow without those premises.
@@ -65,21 +65,38 @@ theorem not_every_forecast_is_reflexive :
       outcome constant_policy_system false false := by
   decide
 
-/-- Boundary frames are a separate type from executable moves. -/
+/-- Sovereign boundary frames are a separate type from executable moves. -/
 inductive Frame where
-  | void
+  | ground
   | unit
-  | infinity
+  | horizon
   deriving DecidableEq, Repr
 
-/-- A typed formation relation; it is deliberately not ordinary multiplication. -/
-inductive FrameComposition : Frame → Frame → Frame → Prop where
-  | boundary : FrameComposition .void .infinity .unit
+/-- The three operator-free marks available to the frame renderer. -/
+inductive FrameGlyph where
+  | point
+  | bullseye
+  | ring
+  deriving DecidableEq, Repr
 
-/-- The Reap's boundary glyph sentence is a declared grammar rule. -/
-theorem typed_boundary_composition :
-    FrameComposition .void .infinity .unit :=
-  FrameComposition.boundary
+/-- Rendering changes presentation, never type and never into a number. -/
+def renderFrame : Frame → FrameGlyph
+  | .ground => .point
+  | .unit => .bullseye
+  | .horizon => .ring
+
+/-- The three sovereign seats remain distinguishable under the renderer. -/
+theorem frame_render_is_injective : Function.Injective renderFrame := by
+  intro first second h
+  cases first <;> cases second <;> simp_all [renderFrame]
+
+/-- The declared arithmetic signature of `Frame` has no operation constructor. -/
+inductive FrameArithmeticOp : Type
+
+/-- No Titan arithmetic operation can be formed inside the declared signature. -/
+theorem frame_arithmetic_signature_is_empty
+    (operation : FrameArithmeticOp) : False :=
+  nomatch operation
 
 /-- In ordinary extended nonnegative-real multiplication, `0 * ∞` is `0`, not `1`. -/
 theorem extended_zero_times_infinity_is_not_one :

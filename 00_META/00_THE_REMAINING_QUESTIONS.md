@@ -3,7 +3,6 @@ rosetta:
   primary_column: "Meta"
   register: "[I/S]"
   canonical_phrase: "Remaining Questions"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # THE REMAINING QUESTIONS
@@ -13,8 +12,8 @@ rosetta:
 **Status:** Provisional meta-routing synthesis; source-owner documents control doctrine
 **Date:** 2026-04-14
 **Evidence Tier:** [I/S] Interpretive routing constrained by structural discipline
-**Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_THE_ONTOLOGY_OF_BEING.md](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [00_EMERGENTISM_PHI_RESOLUTION.md](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md), [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](../04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [02_THE_DERIVATION/01_THE_ROSETTA_QUESTION.md](../01_TELEOLOGY/02_THE_DERIVATION/01_THE_ROSETTA_QUESTION.md)
-**See also:** [../08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS.md](../08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_THE_LIFE_SCIENCE_REGISTER.md](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md)
+**Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](../04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [02_THE_DERIVATION/01_THE_ROSETTA_QUESTION.md](../01_TELEOLOGY/02_THE_DERIVATION/01_THE_ROSETTA_QUESTION.md)
+**See also:** [../08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS.md](../08_FRAMEWORK_SUPPORT/00_KNOWN_UNKNOWNS.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_THE_LIFE_SCIENCE_REGISTER.md](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [Open Canon Covenant](00_THE_OPEN_CANON_COVENANT.md)
 
 **Claim Boundary:** `[I/C]` These questions are stabilized for navigation, not closed as public proof. "Resolved" below means register-sorted into internal commitment, public argument, and open wager; it does not mean Emergentism has exhausted `Pratyakṣa`, `S²`, consciousness, teleology, normativity, ontology, or the Real.
 
@@ -123,25 +122,34 @@ This preserves both ambition and honesty.
 
 ### The Question
 
-Is systemic awareness fundamental, dual-aspect, or only being interpreted as fundamental at D5, with D6 as closure?
+Is systemic awareness fundamental, dual-aspect, emergent, functional, or better
+explained by another ontology? The D-register scaffold does not decide this
+question by assigning awareness to a rung.
 
 ### The Register Routing
 
-**Structurally dual-aspect. Interpretively fundamental at `D5` inside the framework, with `D6` as non-experiential closure.**
+The ontology of consciousness remains open. The
+[Synthetic Gap](../02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md)
+permits phenomenological, dual-aspect, emergent, and idealist readings without
+letting one become a D-register definition.
 
-The PHI Resolution already points here.
-This document makes the synthesis explicit:
+- D4 carries actual organisms, neural processes, reports, and experiences;
+- D5 carries possible contents only when they are represented by actual D4
+  models or agents;
+- D5 is not consciousness by definition;
+- D6 is an exit/nonclosure marker, not a higher experience.
 
-- below D5, the mathematics is structurally neutral
-- at D5, the framework chooses the idealist reading of lived disclosure
-- at D6, that disclosure does not become a higher experience but exhausts into closure
+The current honest statement is:
 
-So the right closure is:
+> **Consciousness is not treated as an emergent afterthought inside this
+> interpretive question. D5 nevertheless remains the counterfactual-possibility
+> register, not consciousness by definition. D6 is not a higher experience;
+> non-μ `r₆` only compares its post-articulate boundary role with D0's
+> pre-articulate role and asserts no cycle or return in reality.**
 
-> **Consciousness is not treated as an emergent afterthought inside the framework's internal map. Structurally, the manifold is dual-aspect; interpretively, systemic awareness is treated as fundamental at D5 as the register in which Being is interpreted as becoming explicit. D6 is not a higher experience of systemic awareness but the terminal closure in which the cycle returns to `D0`.**
-
-This does not mean the framework has publicly proved systemic awareness as a cosmic primitive.
-It means the worldview no longer needs to pretend indecision about its own lived center.
+An Emergentist may hold a lived or metaphysical wager about consciousness at
+`[I/C]`, but the scaffold neither proves systemic awareness as a cosmic
+primitive nor rules it out.
 
 ---
 
@@ -162,11 +170,17 @@ So the canonical routing is:
 
 - **in biology-facing register:** `Teleological Force` is the framework's unifying name for viability-directed organization
 - **in disclosure-facing register:** the same field may be encountered as purposive rather than blind
-- **in operational register:** `theurgy` now names the disciplined practice of lawful D5 standing-wave formation, but the entire packet remains `[C]`
+- **in operational register:** `theurgy` names a conjectural D4 practice of
+  coordinating actual carriers around represented D5 alternatives; the entire
+  packet remains `[C]`
 
 This gives the clean sentence:
 
-> **Teleological Force is structurally the name for viability-directed tendency across domains, and phenomenologically the same tendency may be encountered as purposive at the upper horizon of D5. D6 is not a further phenomenological layer but the non-experiential closure of the cycle.**
+> **Teleological Force is the framework's interpretive name for
+> viability-directed tendency across domains, and an actual D4 subject may
+> report that tendency as purposive while representing D5 alternatives. D6 is
+> an exit/nonclosure marker, not a phenomenological layer or a cycle in
+> reality.**
 
 Mythic language remains downstream of this.
 Public science remains upstream of it.
@@ -199,7 +213,9 @@ This is one of the most important boundary placements in the corpus.
 
 The structural theorem is already conditional:
 
-- if rational D5 agents value continued agency, then balance-maintaining and `P_node`-maintaining action follows
+- if actual D4 agents capable of representing D5 alternatives value continued
+  agency, then a conditional argument for balance-maintaining and
+  `P_node`-maintaining action can be evaluated
 
 That is the public argument surface.
 
@@ -331,7 +347,7 @@ practitioners, institutions, and systems under measurement.
 |---|---|
 | **Pratyakṣa** | Veridical disclosure inwardly; disciplined phenomenology publicly |
 | **S²** | Translation method publicly; ontological wager internally |
-| **Consciousness** | Structurally dual-aspect; interpretively treated as fundamental at D5, with D6 as closure rather than further experience |
+| **Consciousness** | Ontology open; actual organisms, processes, reports, and experiences are D4, while represented counterfactual contents are D5; D6 supplies no experience claim |
 | **Teleological Force** | Unifying scientific name below; purposive encounter above |
 | **Normativity** | Conditional in formal proof; internally committed as grounded in worldview and core state |
 | **Axioms** | Productive transcendental wagers under open challenge |
@@ -363,7 +379,7 @@ That is the right remainder.
 |---|---|---|
 | `Pratyakṣa` stabilized by register: veridical disclosure inwardly, disciplined phenomenology publicly | Do the empirical tests justify the ontological wager? | Protocol `R` and the stronger geometry tests |
 | `S²` stabilized by register: translation method publicly, ontological wager internally | Does the sitting practice disclose what the worldview says it discloses for real practitioners? | `AMRITA` / practical alignment validation |
-| Consciousness treated as structurally dual-aspect and interpretively treated as fundamental at D5, with D6 as closure rather than further experience | Can anti-idolatry survive success, scale, and institutional sedimentation? | `Φ`/`ν` measurement hardening and `Φ-meter` validation |
+| Consciousness ontology left open while actual experience/report tokens remain D4 and represented alternatives remain D5 | Can anti-idolatry survive success, scale, and institutional sedimentation? | `Φ`/`ν` measurement hardening and `Φ-meter` validation |
 | `Teleological Force` held as scientific unifier below and purposive encounter above | Does Soul Loop practice reliably rebalance real practitioners and institutions without becoming a new capture technology? | Full physics bridge: Lagrangian, `2D -> 4D`, `SU(3)`, coupling derivations |
 | Normativity held as conditional in proof and internally committed as grounded in worldview |  | Historical phase transition: whether enough equatorial nodes actually emerge |
 | The axioms treated as productive transcendental wagers under challenge |  | Long-horizon institutional test: whether the framework resists capture in practice |
@@ -381,7 +397,16 @@ That is the right remainder.
 
 When this idea must be stated briefly, the default sentence is:
 
-> **The remaining philosophical questions are navigated by dual discipline: internal commitment for navigation, public tiering for truthfulness. Pratyakṣa is disclosure inwardly and phenomenology publicly; S² is ontological wager inwardly and translation method publicly; systemic awareness is structurally dual-aspect and interpretively treated as fundamental at D5, while D6 is closure rather than further experience; Teleological Force is scientific unifier below and purposive encounter at the upper horizon of D5; normativity is conditional in proof and internally committed as grounded in worldview; the axioms are productive transcendental wagers; and naming remains asymptotic to the Real rather than identical with it.**
+> **The remaining philosophical questions are navigated by dual discipline:
+> internal commitment for navigation, public tiering for truthfulness.
+> Pratyakṣa is disclosure inwardly and phenomenology publicly; S² is an
+> ontological wager inwardly and a translation method publicly; consciousness
+> ontology remains open while D4 actual tokens and D5 possible contents stay
+> typed; D6 is only an exit/nonclosure marker; Teleological Force remains an
+> interpretive unifier and a testable research proposal; normativity is
+> conditional in proof and internally committed as grounded in worldview; the
+> axioms are productive transcendental wagers; and naming remains asymptotic to
+> the Real rather than identical with it.**
 
 This sentence may be reused verbatim.
 

@@ -170,7 +170,7 @@ If the Rosetta only includes domains that fit, it is a file-drawer exercise — 
 
 ### The kill criterion is NOT triggered
 
-The Rosetta's kill criterion (from [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md)):
+The Rosetta's historical kill criterion (from the [archived deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md)):
 
 1. **A domain requires a fundamentally different number of levels** — PARTIALLY OBSERVED. Multiple domains have non-7 counts. But these are not "fundamentally different" in a way that breaks the operator grammar. They are different resolutions of the same surface.
 2. **The operator grammar proves non-exhaustive** — NOT OBSERVED.
@@ -184,7 +184,7 @@ The Rosetta's kill criterion (from [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_
 
 - [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) — Full sweep of Daoist, Buddhist, Sub-Saharan, Polynesian
 - [`00_SELECTION_METHODOLOGY.md`](00_SELECTION_METHODOLOGY.md) — How domains are selected for Rosetta inclusion
-- [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) — Kill criteria and honest position
+- [Archived deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) — historical kill criteria
 - Kohn, Livia. *Daoism and Chinese Culture* (2001)
 - Powers, John. *Introduction to Tibetan Buddhism* (2007)
 - Bascom, William. *Ifá Divination* (1969)

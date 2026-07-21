@@ -98,7 +98,7 @@ A column with one brilliant correspondence and six stretched cells is not a stro
 | Anchor columns | Operator, geometry, equation, balance | Define the formal generator; must be internally consistent. |
 | Structural columns | Varna, reasoning, pramana, -ology, polity | Test whether social and epistemic functions cohere with the generator. |
 | Domain columns | Psychology, computation, mythology, neuroscience, politics, linguistics | Test whether independent knowledge domains preserve the row pattern. |
-| Translation columns | Public language, pedagogy, agent routing, DAC operations | Make the structure usable without pretending usability is proof. |
+| Translation columns | Public language, pedagogy, cognitive-role routing, institutional operations | Make the structure usable without pretending usability is proof. |
 | Speculative columns | Weak, newly proposed, or highly interpretive mappings | Must carry explicit tier, failure condition, and exclusion notes. |
 
 The master table can contain all five classes, but readers must not confuse them. The strongest table is not the largest table. It is the one where every column knows what kind of claim it is making.
@@ -177,7 +177,7 @@ If all three hold, the mapping strengthens. If only one holds, it is probably an
 2. Audit `00_THE_MASTER_ROSETTA.md` for columns that currently mix anchor, structural, domain, translation, and speculative claims without labels.
 3. Repair remaining P/B naming drift where older language treats potential as the varying quantity on S².
 4. Continue the row-packet sequence begun in [11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md](11_CELL_AUDIT_SEED_L4_CENTER_2026_04_25.md) and extended by [12_MIRROR_PAIR_AUDITS_2026_04_25.md](12_MIRROR_PAIR_AUDITS_2026_04_25.md): one packet per L-level or mirror pair, each written as a horizontal invariant with domain cells underneath.
-5. Continue full column-cell audits after [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md), [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md), and [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md), prioritizing computation, initiatory systems, and any thinly sourced domain.
+5. Continue full column-cell audits after the [historical economics audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md), [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md), and [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md), prioritizing computation, initiatory systems, and any thinly sourced domain. Historical audits are provenance, not evidence transfer.
 6. Record failed or partial mappings next to included mappings, extending `00_SELECTION_METHODOLOGY.md` rather than hiding them.
 7. Only after those passes, refresh the public-facing Rosetta language.
 

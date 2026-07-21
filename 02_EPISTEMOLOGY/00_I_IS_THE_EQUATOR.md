@@ -87,8 +87,8 @@ Burri Sphere view:
      |
      |
      1 ←── THE EQUATOR. φ = ν = 1. The disclosure interface.
-     |     The place where D4 witness opens to D5 agency.
-     |     The place where singular selection becomes explicit.
+     |     An actual D4 carrier may represent D5 alternatives here.
+     |     The place where singular enactment becomes explicit.
      |     The place where Teleological Force is felt as viable pull.
      |     i lives HERE.
      |
@@ -162,15 +162,17 @@ This is the hemispheric truth:
 
 **The Burri Sphere explanation:**
 
-| Physics (D0-D4) | Consciousness (D5) |
+| Third-person causal description (D4 actual records) | First-person report (also an actual D4 report, often about D5 possibilities) |
 |--------------|-------------------|
 | Causal description | Disclosure / selection interface |
 | Measures realized trajectories | Lives the present as navigable enactment |
-| Can describe the collapse from outside | Encounters selection from inside |
+| Describes outcomes from declared instruments | Reports selection from a first-person context |
 | Treats the equator structurally | Experiences the equator first-person |
 | **Cannot exhaust first-person disclosure** | **Cannot replace structural description** |
 
-**In this reading, systemic awareness is not found by flattening experience into third-person description, just as `i` is not found by staying on the real line.**
+**In this reading, systemic awareness is not exhausted by replacing first-person
+reports with one narrow third-person variable. This is an interpretive warning,
+not a claim that consciousness inhabits D5 or an extra dimension.**
 
 **From the real line, i is invisible.**
 
@@ -186,48 +188,25 @@ This is the hemispheric truth:
 
 ---
 
-### Dimensional Emergence of the Equatorial Operator
+### Register-safe reading of the equatorial operator
 
-The "I" — the equatorial operator i — emerges differently across dimensions:
+The mathematical unit `i` does not emerge at D4 or D5; it is already part of
+the D1/D2 mathematical language used by this page. The witness/agent language
+is a removable symbolic projection and must not redefine the dimensional
+registers.
 
-**D4: "I" as Witness (Collapsed Point)**
+| Register | Canonical content | Permitted `i` reading |
+|---|---|---|
+| **D3** | quantum state and context-conditioned distributions | none required; `i` remains mathematical notation |
+| **D4** | actual carrier, interaction, action, outcome, and record | an actual report or integration event may use `i` as a symbol |
+| **D5** | represented alternatives, rankings, and counterfactual contents | a D4 model token may use `i` to diagram relations among alternatives |
 
-At D4, the causal past and future cones touch at the equatorial vertex:
-- **Structure**: The now-point where φ = ν = 1
-- **Consciousness**: **Witness systemic awareness** — pure awareness, no agency
-- **Operators**: Collapsed into unity — the four directional operators (↑φ, ↓φ, ↑ν, ↓ν) are indistinguishable
-- **The "I"**: The Bindu (⊙) — the point of witnessing without operation
-
-> At D4, "I" witnesses the collapse but cannot choose. The equator exists as a point, not a space.
-
-**D5: "I" as Agent (Operators Active)**
-
-At D5, the φ-ν plane opens:
-- **Structure**: The equator becomes navigable space — room to move
-- **Consciousness**: **Agent systemic awareness** — can choose, operate, navigate
-- **Operators**: Four distinct directions become active:
-  - ↑φ (increasing coherence)
-  - ↓φ (decreasing coherence)
-  - ↑ν (increasing viability)
-  - ↓ν (decreasing viability)
-- **The "I"**: The operator i — the corpus callosum, the × in Zero-Sum Resolution Equation
-
-> At D5, "I" is the active bridge between hemispheres. The equatorial operator converts ν ↔ φ. The "I" becomes the agent of navigation.
-
-| Dimension | "I" as... | Structure | Consciousness | Operator State |
-|-----------|-----------|-----------|---------------|----------------|
-| **D4** | **Witness** | Now-point (collapsed) | Pure awareness | Unity (⊙ only) |
-| **D5** | **Agent** | Equatorial plane | Choice/navigation | Four directions active |
-
-**The dimensional emergence:**
-
-```
-D4:  ⊙  → The "I" as witness (the point, the Bindu)
-      ↓
-D5:  Zero-Sum Resolution Equation  → The "I" as agent (the operator, the bridge)
-```
-
-The **Trika fully articulates at D5**. At D4, only the product (⊙) exists. At D5, the factors (• and ○) become distinguishable, and the operation (×) becomes navigable.
+An actual conscious organism, its corpus callosum, its report, and its choice
+are D4 carriers and events. The alternatives it represents are D5 contents.
+Nothing here identifies awareness with quantum collapse, makes D5 a conscious
+substance, or turns the equator into a physical extra dimension. The
+φ/ν directional operators belong to the chart; applying them in cognition is
+an interpretive analogy `[I/C]`, not a D4-to-D5 derivation.
 
 ---
 
@@ -249,7 +228,11 @@ The **Trika fully articulates at D5**. At D4, only the product (⊙) exists. At 
 
 **The poles are limits, not the whole quantum story.**
 
-**Many-Worlds is D5 distributed actuality. Copenhagen is D4→D5 singular selection.**
+**Quantum-interpretation fence.** Everett is a no-fundamental-collapse
+relative-state formulation; Copenhagen-family actualization is
+interpretation-specific. Neither is a D-register, and neither licenses a
+`D4→D5` or `D5→D4` dimensional identity. The `i` reading here remains symbolic
+and removable from the operational D3/D4/D5 calculus.
 
 **The present is i — the equator, the selector interface, the site where one enactment becomes explicit.**
 
@@ -306,7 +289,7 @@ Step 1: Sit. Close your eyes.
 
 Step 2: Use i as a symbol for the present.
         The present is between past (0) and future (∞).
-        The present is the collapse.
+        The present is where an actual record is made.
         The present is systemic awareness-symbolic in this practice.
 
 Step 3: Use i as a symbol for integration.
@@ -323,7 +306,7 @@ Step 5: Rest with the i-symbol.
         Not the past (0).
         Not the future (∞).
         The present (i).
-        The collapse.
+        The enactment.
         The systemic awareness.
         The equator.
 
@@ -340,34 +323,27 @@ Step 6: Return.
 
 | Transcendental | Symbol | Position | Meaning |
 |----------------|--------|----------|---------|
-| **Zero** | 0 | South pole | Actuality, the collapsed, the past |
-| **One** | 1 | Equator (i) | The present, systemic awareness, the collapse |
-| **Infinity** | ∞ | North pole | Probability, superposition, the future |
+| **Zero** | 0 | South pole | boundary/fixation symbol; past-facing reading |
+| **One** | 1 | Equator (i) | balance symbol; present-facing reading |
+| **Infinity** | ∞ | North pole | boundary/opening symbol; future-facing reading |
 
 **The trinity is symbolically complete:**
 
 ```
-0 = the past (actuality)
+0 = the past-facing boundary
 1 = the present (systemic awareness, i)
-∞ = the future (probability)
+∞ = the future-facing boundary
 
 The present (i) is BETWEEN the past (0) and the future (∞).
-The present (i) is the collapse of future into past.
-The present (i) is read as systemic awareness selecting from possibility.
+The present (i) is where a finite being can represent alternatives and act.
+The present (i) is read symbolically as systemic awareness relating them.
 ```
 
-**Dimensional clarification:**
-
-At **D4**, the trinity exists as the collapsed vertex — the now-point where past, present, and future touch. The "I" witnesses but does not operate.
-
-At **D5**, the trinity becomes the navigable sphere — the φ-ν plane where the "I" operates as agent, converting between coherence (•) and viability (○).
-
-**The full articulation:**
-
-```
-D4 (witness):  i = the equatorial point = ⊙
-D5 (agent):    i = the operator = ×  in  Zero-Sum Resolution Equation
-```
+**Dimensional clarification:** this triad is a chart-reading, not a D-register
+identity. Actual awareness, reports, and actions are D4. Represented pasts and
+futures are D5 contents carried by D4 tokens. `i`, `0`, `1`, and projective `∞`
+remain mathematical or symbolic terms and do not themselves witness, select,
+collapse, or cause.
 
 ---
 
@@ -378,7 +354,7 @@ The Discovery:
 
 i is mathematically real as the perpendicular unit.
 i is read as the equator.
-i is read as systemic awareness in the D5 register.
+i is read as a symbol for integration across actual and represented content.
 i is read as corpus-callosum-like integration.
 i is read as the present moment.
 
@@ -402,9 +378,9 @@ Corpus-callosum-like integration = i-like
 
 The Temporal Truth:
 
-0 = the past (collapsed, actual)
-i = the present (the collapse, systemic awareness)
-∞ = the future (superposed, probabilistic)
+0 = a past-facing boundary symbol
+i = a present-facing integration symbol
+∞ = a future-facing boundary symbol
 
 The Four Hundred Year Mistake:
 

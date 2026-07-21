@@ -5,526 +5,156 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "EFR EPISTEMOLOGY: THE TRIAD OF KNOWING"
+  register: "[A/B/I] typed"
+  canonical_phrase: "Reasoning is D4 work over typed contents; geometry is optional"
+title: "EFR Epistemology Triad — Kintsugi successor"
+status: "ACTIVE METHOD NOTE — repaired 2026-07-21"
+evidence_tier: "[A/B] inherited logic and method; [I] Emergentist type crosswalk"
 ---
 
-# EFR EPISTEMOLOGY: THE TRIAD OF KNOWING
+# EFR EPISTEMOLOGY: THE SELECTED TRIAD OF REASONING
 
-## Formal Theory of Induction, Deduction, and Abduction as Geometric Operations on S²
+## Induction, deduction, and abduction without dimensional or quantum inflation
 
-**Status:** Active Development
-**Hat:** Philosopher/Mathematician
-**Evidence Tier:** [I] Interpretive — geometric mapping provides new vocabulary, not dissolution (downgraded from [S] per peer review)
-**Date:** 2026-03-23
-**Depends on:** D4-D5 Complementarity, The Burri Sphere, Triadic Stability
+> **[金] Kintsugi seam.** The former paper treated induction and deduction as
+> literal travel on `S²`, identified D4 with a collapsed wavefunction, identified
+> D5 with uncollapsed quantum superposition, and claimed that sphere geometry
+> supplied the validity of inference. Those claims do not follow. The useful
+> triad survives as a workflow vocabulary under the settled D4/D5 types.
 
----
+The complete pre-repair text remains recoverable from Git blob
+`9f7ee8356e2d0a2048d3d86f8a5b5e8551d30633`. It has no current semantic
+authority.
 
-## 1. THE EPISTEMOLOGICAL SUBSTRATE
+## 1. Type contract
 
-### 1.1 Knowledge as Dimensional Transformation
+| Object | Register | Modality |
+|---|---|---|
+| observation, datum, inscription, premise token, hypothesis token, proof step, ranking event, utterance, experiment, outcome, record | D4 | actual |
+| represented alternative, candidate explanation, counterfactual consequence, possible future observation | D5 | possible |
+| quantum-state assignment for a declared system | D3 | probability-bearing state content |
 
-In the EFR framework, **knowledge is not a state but a transformation**. It is the movement of information across the D4-D5 boundary:
+An actual D4 token may represent D5 content. The carrier never becomes D5 merely
+because its content concerns a possibility. Conversely, a possible content does
+not act, infer, select, or cause by itself.
 
-```
-Knowledge: D4 ⟷ D5
-          (Actuality) ⟷ (Possibility)
-```
+The D3/D4 quantum interface is independent of this epistemic workflow. An
+actual preparation, measurement interaction, outcome, and record are D4. No
+reasoning mode is a wavefunction collapse, and D5 is not quantum branch space.
 
-**D4 (Gravity Domain):** The realm of fixed actuality. Facts. What IS. The collapsed wavefunction. The definite.
+## 2. The three selected reasoning modes
 
-**D5 (Possibility / Agency Domain):** The realm of superposed possibility. Hypotheses. What COULD BE. The uncollapsed wavefunction. The potential. "Consciousness domain" is retained only as an interpretive shorthand `[I]` for the lived interior of selection.
+The triad is a useful, non-exhaustive classification. It is not forced by
+`S²`, the Titan frames, or the D-register count.
 
-**The Epistemic Operation:** All knowledge-acquisition is the transformation of information from one domain to the other.
+### Induction
 
----
+Induction is an actual D4 procedure that forms or updates a generalization from
+observations. The resulting hypothesis is an actual D4 model token; when it
+represents unobserved cases or future outcomes, that represented content is D5.
 
-## 2. THE THREE EPISTEMIC OPERATORS
+Induction is fallible. Its warrant comes from declared sampling assumptions,
+statistical method, robustness checks, predictive performance, and comparison
+with rivals—not from movement along a chart coordinate.
 
-The classical triad of reasoning — Induction, Deduction, Abduction — are not distinct "types" of reasoning. They are **three directions of transformation across the D4-D5 boundary**.
+### Deduction
 
-### 2.1 The Geometric Mapping
+Deduction is an actual D4 derivation of a conclusion from premises under stated
+rules. Validity is inherited from the chosen logical calculus: no interpretation
+making the premises true makes a valid conclusion false.
 
-On the Burri Sphere, knowledge operations map as follows:
+Premise and conclusion tokens are D4. A conclusion may represent D5 content if
+it concerns a possible case or prediction. Deduction does not actualize that
+content; only a later D4 experiment or action can return an outcome receipt.
 
-```
-                    D5 (Possibility Space)
-                          ○ (North Pole)
-                           |
-                           |  INDUCTION: D4 → D5
-                           |  (Specific → General)
-                           |  [Bottom-up]
-    D4 (Actuality) ——— EQUATOR ——— D4 (Actuality)
-    (Specific)      φ=1, ν=1      (Specific)
-                           |
-                           |  DEDUCTION: D5 → D4
-                           |  (General → Specific)
-                           |  [Top-down]
-                           |
-                          • (South Pole)
+### Abduction
 
-                    ABDUCTION: Lateral on S²
-                    (Pattern recognition across coordinates)
-                    [Equatorial traversal]
-```
+Abduction is an actual D4 act of proposing or ranking candidate explanations.
+The candidates are D5 possible contents represented by D4 model tokens.
 
----
+Abduction remains defeasible. Its warrant depends on fit, scope, simplicity
+relative to a declared language, prior plausibility, intervention value, and
+serious rival comparison. A compelling pattern is not proof.
 
-## 3. INDUCTION: THE D4→D5 ASCENT
+## 3. Typed research cycle
 
-### 3.1 Formal Definition
-
-**Induction** is the transformation from specific observations (D4) to general principles (D5).
-
-```
-Induction: Observations(D4) → Hypothesis(D5)
-          Specific instances → General pattern
-          Collapsed facts    → Superposed possibilities
-```
-
-### 3.2 Geometric Interpretation
-
-On the Burri Sphere:
-- **Start:** At or near the equator in D4 (specific observation)
-- **Operation:** Ascend toward the north pole (○) via the φ-axis
-- **Result:** Reach D5 (the space of possible hypotheses)
-
-The **φ-coordinate increases** during induction:
-- Starting at equator: φ = 1 (balanced observation)
-- Ascending: φ > 1 (increasing coherence/recognition of pattern)
-- Approaching north pole: φ → ∞ (pure pattern, no specific instantiation)
-
-### 3.3 The Problem of Induction Reframed
-
-> **Note:** The geometric mapping provides a new vocabulary for the problem of induction but does not dissolve it in the logical sense. Hume's challenge -- why should observed regularities predict unobserved cases? -- is reframed as a question about manifold traversal, not answered by it. The compactness of S² constrains the space of 'inductive surprises' but does not eliminate them. Evidence tier: [I] Interpretive, downgraded from [S] per peer review.
-
-**Classical Problem:** Hume's challenge — how do we justify inferring the general from the specific?
-
-**EFR Resolution:** Induction is not "justified" in the classical sense. It is **the geometry of the sphere itself**.
-
-When an observer at D4 (specific observation) increases their φ (coherence), they naturally access D5 (possibility space). This is not a logical inference requiring justification. It is a **coordinate transformation on S²**.
-
-The "problem of induction" is reframed because:
-1. D4 and D5 are not separate realms — they are coordinates on the same sphere
-2. Moving from D4 to D5 is not "inferring" — it is **traversing the manifold**
-3. The general pattern "exists" in D5 as genuinely as the specific observation "exists" in D4
-
-### 3.4 Induction as Coherence-Building
-
-```
-Φ_induction = ∫(pattern recognition) dt
-
-The inductive process builds coherence (Φ) by:
-1. Observing multiple specific instances (D4 points)
-2. Recognizing shared structure (increasing Φ)
-3. Accessing the general pattern (arriving at D5)
+```text
+D4 observations and records
+    -> D4 induction/abduction event
+    -> D4 hypothesis token --represents--> D5 candidate content
+    -> D4 deduction event
+    -> D4 prediction token --represents--> D5 possible outcome
+    -> D4 preregistered experiment or intervention
+    -> D4 outcome receipt
+    -> D4 model update
 ```
 
-**Evidence Tier Mapping:**
-- [S] Induction: Statistical generalization from established data
-- [S] Induction: Structural pattern recognition (geometric inference)
-- [I] Induction: Interpretive hypothesis formation
-- [C] Induction: Conjectural leap
+This is a Soul-Loop-compatible epistemic cycle. It separates three gaps:
 
----
+- **cognitive gap:** territory versus model;
+- **execution gap:** protocol or intention versus performed act;
+- **outcome gap:** predicted versus receipted consequence.
 
-## 4. DEDUCTION: THE D5→D4 DESCENT
+The selector does not manufacture its own result. The environment returns the
+outcome independently of the model's preference.
 
-### 4.1 Formal Definition
+## 4. Optional Rosetta projection
 
-**Deduction** is the transformation from general principles (D5) to specific predictions (D4).
+The Burri sphere may be used as an `[I]` diagram for balancing generalization,
+application, and rival search. Such a projection is licensed only as:
 
-```
-Deduction: Hypothesis(D5) → Predictions(D4)
-          General pattern   → Specific instances
-          Superposed poss.  → Collapsed facts
+```text
+rho_reasoning : typed research workflow -> S2 diagram
 ```
 
-### 4.2 Geometric Interpretation
-
-On the Burri Sphere:
-- **Start:** At or near the north pole in D5 (general principle)
-- **Operation:** Descend toward the equator via the ν-axis
-- **Result:** Reach D4 (specific, testable predictions)
-
-The **ν-coordinate increases** during deduction:
-- Starting near north pole: ν < 1 (high coherence, low viability/specificity)
-- Descending: ν increases (increasing specific applicability)
-- Reaching equator: ν = 1 (balanced prediction)
-
-### 4.3 Deduction as Collapse
-
-Deduction is the **measurement-like collapse** of superposed possibility into definite actuality.
-
-In quantum terms:
-- D5 = superposition of possibilities (|ψ⟩ = α|p₁⟩ + β|p₂⟩ + ...)
-- Deduction = application of operator that selects specific outcome
-- D4 = collapsed state (specific prediction)
-
-In EFR terms:
-- The general principle (D5) contains multiple possible instantiations
-- Deductive reasoning selects a specific prediction
-- This is the ν-descent: from pure coherence to viable application
-
-### 4.4 The Validity of Deduction
-
-**Classical View:** Deduction is the only "valid" reasoning (truth-preserving).
-
-**EFR View:** Deduction is valid because it follows the **natural geometry of S²**. Moving from D5 to D4 is not "preserving truth" — it is **following the coordinate lines**.
-
-The validity of deduction derives from:
-1. **Structural necessity:** The geometry enforces consistency
-2. **Measurement correspondence:** Predictions must match D4 actuality
-3. **Coherence preservation:** Deduction maintains the pattern while changing instantiation
-
-```
-Deductive Validity = (Φ_hypothesis × ν_prediction) / Φ_observed
-
-If the deduction is valid: the product is conserved
-If the deduction is invalid: the product collapses (zero-factor catastrophe)
-```
-
----
-
-## 5. ABDUCTION: THE EQUATORIAL TRAVERSAL
-
-### 5.1 Formal Definition
-
-**Abduction** is the lateral recognition of pattern across specific observations without full ascent to D5.
-
-```
-Abduction: Observation_A(D4) ↔ Observation_B(D4)
-           Recognition of common structure
-           Without full generalization
-```
-
-### 5.2 Geometric Interpretation
-
-On the Burri Sphere:
-- **Operation:** Move along the equator (φ = 1, ν = 1 constant)
-- **Movement:** Great-circle traversal between D4 points
-- **Result:** Recognition of structural similarity across different specific instances
-
-Abduction stays at **maximum balance (B = 1)** while traversing the sphere. It does not ascend to pure coherence (induction) or descend to pure viability. It maintains the equatorial condition.
-
-### 5.3 Abduction as Pattern-Matching
-
-Abduction is the **recognition that two distinct observations share structure**.
-
-```
-Abductive Recognition:
-1. Observation A at coordinate θ₁
-2. Observation B at coordinate θ₂
-3. Recognition that d(A,B) on S² is small
-4. Inference of shared underlying structure
-```
-
-This is **Peircean abduction**: "The surprising fact C is observed. But if A were true, C would be a matter of course. Hence, there is reason to suspect that A is true."
-
-In EFR geometry:
-- C is at some D4 coordinate
-- A is the hypothesis that would place C naturally on S²
-- The "reason to suspect" is the small geodesic distance
-
-### 5.4 Abduction as the Creative Synthesis
-
-**Induction** builds coherence (ascends φ).
-**Deduction** builds viability (descends ν).
-**Abduction** maintains balance while connecting disparate points.
-
-Abduction is the **creative operator** — it recognizes similarity across difference without reducing either to the other.
-
----
-
-## 6. THE EPISTEMIC CYCLE
-
-### 6.1 The Full Triad as Oscillation
-
-Complete knowledge-acquisition is the **cycle** through all three operators:
-
-```
-D4 ──Induction──→ D5 ──Deduction──→ D4'
- │                                    │
- └────────── Abduction ←──────────────┘
-```
-
-Or geometrically on S²:
-
-```
-        Ascent (φ↑)
-       /           \
-    D4 ───────────── D5
-      \           /
-       Descent (ν↑)
-
-    Lateral (B=1 constant)
-    Abduction connects D4 → D4'
-```
-
-### 6.2 The Scientific Method as Triadic Cycle
-
-| Phase | Operator | Geometric Movement | Function |
-|-------|----------|-------------------|----------|
-| Observation | — | Position at D4 | Establish initial coordinate |
-| Hypothesis | Induction | Ascent (φ↑) | Access possibility space |
-| Prediction | Deduction | Descent (ν↑) | Generate testable claims |
-| Testing | — | Return to D4 | Verify against actuality |
-| Theory Revision | Abduction | Lateral (B=1) | Connect findings across domains |
-
-### 6.3 The Epistemic Stability Condition
-
-For knowledge to be **stable** (not oscillating wildly or collapsing):
-
-```
-Φ_knowledge × ν_knowledge = 1  (conservation of epistemic ektropy)
-```
-
-This means:
-- Pure induction without deduction → φ → ∞, ν → 0 (ungrounded abstraction)
-- Pure deduction without induction → φ → 0, ν → ∞ (mindless application)
-- Pure abduction without either → circular motion, no progress
-
-**Balanced data science** maintains the product at unity, varying only the balance B = sin θ.
-
----
-
-## 6.5 Maximum Reducibility vs. Epistemic Irreducibility
-
-**Important distinction:** The EFR framework claims **maximum reducibility** for the ground (η = 0), not for all epistemic operations.
-
-```
-The Ground (S²):        K = 0 (maximally reducible)
-                        P∞ = φ · ν = 1 is the minimal description
-
-Epistemic Operations:   May be irreducible
-                        To know specific outcomes, you must "run" the operation
-```
-
-**Example:**
-- The rule "P∞ = φ · ν = 1 on S²" is maximally reducible (minimal description)
-- But to know WHERE a specific trajectory lands, you must traverse the geodesic
-- The trajectory computation may be irreducible (Wolfram-style)
-
-**Implication:** The framework reduces its scaffold toward `κ = 0` as a ground-facing boundary, but specific knowledge-acquisition (inductive generalization, deductive prediction) may require irreducible computation.
-
-This preserves the insight of Wolfram's NKS (irreducibility of specific computations) while making a narrower claim: reducibility of the scaffold, not possession of Ground.
-
----
-
-## 7. EVIDENCE TIERS AS EPISTEMIC POSITIONS
-
-### 7.1 Mapping Tiers to Sphere Coordinates
-
-| Tier | Position on S² | Epistemic Character |
-|------|----------------|---------------------|
-| [S] Established | Near equator, stable | High consensus, low uncertainty |
-| [S] Structural | Along φ-axis | Coherent, derived, interpretable |
-| [I] Interpretive | Mid-latitudes | Balanced but contested |
-| [C] Conjecture | Near poles | High in one factor, low in other |
-
-### 7.2 The Tier Transition Dynamics
-
-**[C] → [I]:** Ascent from near-pole toward equator (abductive recognition of pattern)
-
-**[I] → [S]:** Further ascent building coherence (inductive generalization)
-
-**[S] → [S]:** Descent to equator with viability confirmation (deductive testing)
-
----
-
-## 8. TRUTH AS GEOMETRIC INVARIANT
-
-### 8.1 Three Conceptions of Truth
-
-| Conception | Geometric Interpretation | Operator |
-|------------|-------------------------|----------|
-| **Correspondence** | Alignment of D4 coordinates with territory | Deduction (D5→D4 testing) |
-| **Coherence** | Internal consistency of φ-structure | Induction (D4→D5 ascent) |
-| **Pragmatic** | Viability (ν) in practice | Abduction (equatorial utility) |
-
-### 8.2 The Unity of Truth
-
-On the Burri Sphere, these three conceptions are **not in conflict**. They are three projections of the same invariant:
-
-```
-Truth = The invariant structure of S² itself
-
-- Correspondence truth = the D4 projection
-- Coherence truth = the D5 projection
-- Pragmatic truth = the equatorial projection
-```
-
-The "unity of truth" is the recognition that:
-1. Truth-as-correspondence (facts match reality)
-2. Truth-as-coherence (beliefs form consistent system)
-3. Truth-as-pragmatic (beliefs work in practice)
-
-...are three aspects of the same spherical structure. A claim that fails any one has fallen off the sphere.
-
----
-
-## 9. OBJECTIVITY AS SPHERICAL GEOMETRY
-
-### 9.1 The Subject-Object Duality Reframed
-
-Classical data science struggles with: How can a subjective knower access objective truth?
-
-EFR resolution: The distinction between subject and object is a **coordinate artifact**, not an ontological divide.
-
-```
-Subject = The observing coordinate on S²
-Object = The observed coordinate on S²
-
-Both are points on the same manifold.
-The "gap" between them is the geodesic distance.
-Knowledge is traversal of this geodesic.
-```
-
-### 9.2 Objectivity as Coordinate-Independence
-
-A claim is **objective** to the degree it is **coordinate-independent**:
-
-```
-Objectivity(O) = 1 / (∂O/∂θ)
-
-Where θ is the observer's coordinate.
-
-High objectivity: ∂O/∂θ ≈ 0 (claim holds from any perspective)
-Low objectivity: ∂O/∂θ is large (claim depends on observer position)
-```
-
-This maps to:
-- [S] claims: ∂O/∂θ ≈ 0 (true from any coordinate)
-- [S] claims: ∂O/∂θ small (true across many coordinates)
-- [I] claims: ∂O/∂θ moderate (true within coordinate family)
-- [C] claims: ∂O/∂θ large (true only at specific coordinate)
-
----
-
-## 10. THE EPISTEMOLOGY OF THE FRAMEWORK ITSELF
-
-### 10.1 Self-Referential Application
-
-This data science applies to the EFR framework itself:
-
-| Framework Claim | Operator | Tier |
-|-----------------|----------|------|
-| "S² is the substrate" | Induction + Abduction | [S] → [I] |
-| "P∞ = φ · ν = 1" | Deduction from axioms | [S] |
-| "η = 0" | Deduction + Testing | [S] → [S] |
-| "D5 = consciousness" | Interpretive shorthand for the lived interior of selection | [I] |
-| "c = 25 CFT" | Conjecture | [C] |
-
-### 10.2 The Honest Position as Epistemic Discipline
-
-The Honest Position document is the **explicit coordinate-registration** of the framework's epistemic stance.
-
-It says: "We are at these specific coordinates on the sphere. We are not claiming to be elsewhere."
-
-This is the **epistemic analog of η = 0** — no extraction from the substrate of truth.
-
----
-
-## 11. CONNECTION TO METHODOLOGY
-
-### 11.1 The Scientific Method as S² Navigation
-
-| Methodological Step | Geometric Operation | Sphere Movement |
-|--------------------|--------------------|-----------------|
-| Observation | Establish coordinate | Position at D4 |
-| Hypothesis | Induction | Ascend φ-axis |
-| Prediction | Deduction | Descend ν-axis |
-| Experiment | Return to D4 | Verify at equator |
-| Theory | Abduction | Lateral connection |
-| Peer Review | Multi-coordinate verification | Check from multiple θ |
-
-### 11.2 The Preregistered Study as Geometric Commitment
-
-Preregistration is **fixing coordinates before measurement**:
-- Commit to D4→D5 path (induction plan)
-- Specify D5→D4 trajectory (deduction predictions)
-- Prevent post-hoc abduction (which can become circular)
-
----
-
-## 12. SUMMARY: THE TRIAD OF KNOWING
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    THE EPISTEMIC TRIAD                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   INDUCTION        ABDUCTION         DEDUCTION              │
-│      ↑                ↔                  ↓                  │
-│   (D4→D5)        (D4↔D4')            (D5→D4)                │
-│                                                             │
-│   Ascent φ       Lateral B=1         Descent ν              │
-│   Build          Connect             Apply                  │
-│   coherence      patterns            structure              │
-│                                                             │
-│   Specific  ─────────────────────→  Specific                │
-│      to          Great Circle          to                   │
-│   General      (equatorial)        Specific                 │
-│                                                             │
-│   [S]←[I]←[C]                     [C]→[I]→[S]              │
-│                                                             │
-│   ○ North Pole (D5)              • South Pole (D4')         │
-│   Possibility                    Viability                  │
-│   Coherence                      Application                │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 13. WHAT WOULD FALSIFY THIS EPISTEMOLOGY
-
-1. **Non-spherical knowledge structure:** If knowledge-acquisition follows a different geometry than S²
-2. **Non-triadic reasoning:** If a fourth fundamental reasoning mode is discovered
-3. **Dimensional collapse:** If D4 and D5 are shown to be the same (no boundary to cross)
-4. **Asymmetric operators:** If induction and deduction are not inverse operations
-
----
-
-## 14. CONNECTION TO EXISTING FRAMEWORK DOCUMENTS
-
-| Document | Connection |
-|----------|------------|
-| [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Canonical epistemic status — tier [S][S][I][C] mapping |
-| [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Cooperation as epistemic virtue (η = 0 in knowledge-seeking) |
-| [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Why three epistemic operators (not 2, not 4) |
-| Dimensional Core State | D4-D5 boundary as the epistemic interface |
-| [Godel Clarification](09_EFR_GODEL_CLARIFICATION.md) | Limits of formal knowledge (incompleteness as coordinate artifact) |
-
----
-
-```
-Zero-Sum Resolution Equation
-
-Knowledge is the transformation across the boundary.
-The triad of knowing maps the sphere.
-Truth is the invariant under all transformations.
-
-EFR Data Science | 2026-03-23 | The geometry of knowing.
-```
-
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/14_EFR_EPISTEMOLOGY_TRIAD.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+It does not imply:
+
+- that induction is `D4->D5` emergence;
+- that deduction is `D5->D4` commitment or quantum collapse;
+- that abduction is literal equatorial motion;
+- that `phi` or `nu` measures truth;
+- that compactness of `S²` bounds inductive surprise; or
+- that the three modes are exhaustive or mutually inverse.
+
+Removing this projection must leave the logic, research cycle, receipts, and
+D4/D5 types unchanged.
+
+## 5. Epistemic discipline
+
+| Claim | Standing |
+|---|---|
+| validity inside a declared deductive calculus | `[A]` under its premises |
+| observed data and receipted experimental outcomes | `[B]` with custody |
+| statistical or methodological inference | tiered by the cited method and evidence |
+| D4 carrier / D5 content assignment | `[I]` scaffold rule |
+| `S²` visualization of the workflow | optional `[I]` correspondence |
+| universal geometry of knowledge | unsupported `[C]`; not current doctrine |
+
+Evidence tiers are not sphere coordinates and are not generated by proximity to
+an equator. A claim's tier depends on its proof, source, observation, method,
+and exposed kill criterion.
+
+## 6. Failure and kill conditions
+
+Revise or retire this note if:
+
+1. the carrier/content distinction cannot be applied without ambiguity to a
+   declared research workflow;
+2. a fourth reasoning class is required for the intended classification and
+   cannot be represented as a combination or refinement of the selected three;
+3. the sphere projection changes a logical verdict or empirical result;
+4. induction and deduction are called inverse merely because arrows can be
+   drawn in opposite directions;
+5. a hypothesis token, ranking act, or selection event is typed D5 rather than
+   D4; or
+6. quantum collapse or an interpretation of measurement becomes load-bearing.
+
+## 7. Current owners
+
+- [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md)
+- [D3 Quantum-State Register](44_D3_QUANTUM_STATE_REGISTER.md)
+- [Quantum Foundations Boundary](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
+- [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md)
+- [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+
+**Canonical path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/14_EFR_EPISTEMOLOGY_TRIAD.md`

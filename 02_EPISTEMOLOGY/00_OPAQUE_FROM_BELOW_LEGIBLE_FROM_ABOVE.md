@@ -24,25 +24,28 @@ rosetta:
 
 ---
 
-## The Original Insight
+## The Original Insight, Reclassified
 
-The corpus already states:
+The older corpus stated:
 
 > **D5 is strongly emergent in genesis, weakly emergent in governance.**
 
-Or, more compactly:
+That sentence is retired. Difficulty predicting a pattern from a chosen lower
+description does not establish ontological irreducibility, and a later compact
+description does not change its reduction status.
 
-> **opaque from below, legible from above**
+The useful remainder is narrower:
 
-This document extends that insight.
+> **Some processes are prospectively opaque yet retrospectively compressible.**
+
+This is an epistemic and computational observation until a named emergence
+claim passes its own reduction and intervention tests.
 
 ---
 
 ## The Larger Claim
 
-The asymmetry may not belong only to `D5`.
-
-It may be a general law of emergence across many domains:
+This opacity/compression contrast may appear across many domains:
 
 - biology
 - language
@@ -51,54 +54,69 @@ It may be a general law of emergence across many domains:
 - software systems
 - culture
 
-From below:
+Before a history runs:
 
-- the higher-order pattern cannot be cleanly predicted from local state alone
+- a chosen local model may fail to predict the later macro-pattern within a
+  declared information and computation budget
 
-From above, once stabilized:
+After a pattern stabilizes:
 
-- the pattern can constrain, summarize, compress, and govern the lower layer
+- a macro-description may summarize it compactly and may qualify as a causal
+  constraint only if intervention on that constraint measurably reweights
+  lower-law-admissible trajectories after fair costs
 
-That is the asymmetry.
+That is the candidate asymmetry. It is not a universal law merely because the
+examples sound similar.
 
 ---
 
 ## Why It Matters
 
-This dissolves a common false choice:
+This helps avoid a common false choice:
 
 - either the higher level is reducible and therefore not real
 - or the higher level is real and therefore violates the lower level
 
-The framework offers a third option:
+The framework tests a third option:
 
-- higher-order patterns may be opaque in formation
-- yet legible in governance
+- higher-order patterns may be hard to predict in formation
+- yet compactly describable after stabilization
+- and sometimes causally useful when a perturbable macro-constraint beats fair
+  lower-level baselines after measurement, control, labor, and entropy costs
 
-No violation is required.
-No flattening is required either.
+No violation of lower laws is licensed. No claim of irreducibility is licensed
+without evidence either.
 
 ---
 
 ## The General Formula
 
-The higher layer is:
+The testable candidate is:
 
-- **hard to derive prospectively**
-- **easy to recognize retrospectively**
-- **able to constrain once stabilized**
+- **hard to predict prospectively** under a declared budget
+- **easier to compress retrospectively** at a declared grain
+- **causally admissible only when perturbable** and confined to
+  lower-law-supported trajectories
 
-This is why:
+Possible examples include:
 
 - institutions are hard to predict and easy to describe after the fact
 - markets are hard to compute locally and easy to summarize globally
-- living systems are hard to derive from chemistry and easy to identify as organisms
+- living systems may be hard to predict from a chosen chemical description and
+  easy to identify as organisms after the fact
+
+Each example remains a separate empirical claim. Failure of prediction can
+reflect incomplete information, computational cost, poor variables, or an
+immature theory. It is never, by itself, proof of strong emergence.
 
 ---
 
 ## The Shortest Summary
 
-> **Emergence is often opaque in genesis and legible in governance. That asymmetry may be one of the framework's strongest general laws, not only a D5 local observation.**
+> **Prospective opacity and retrospective compression are worth testing across
+> domains. Neither establishes strong emergence. A macro-pattern becomes a
+> causal claim only when a perturbable, costed constraint outperforms fair
+> lower-level baselines without adding forbidden trajectories.**
 
 Zero-Sum Resolution Equation
 

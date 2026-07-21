@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "Information topology as macro-constraint causation"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER X: INFORMATION TOPOLOGY AND MACRO-CONSTRAINTS
 
 ## How Higher Levels Cause Without Breaking Lower Laws
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [S/I] — structural calculus inside the framework; empirical per domain
 **Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md)

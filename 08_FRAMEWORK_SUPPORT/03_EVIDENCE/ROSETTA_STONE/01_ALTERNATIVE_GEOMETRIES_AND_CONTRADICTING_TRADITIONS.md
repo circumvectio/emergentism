@@ -24,6 +24,11 @@ evidence_tier: "[I] interpretive throughout; conditional geometry and contradict
 
 # Alternative Geometries and Contradicting Traditions
 
+> **Historical pressure-test boundary (2026-07-21).** This note records
+> objections to earlier closure language. The current scaffold has no literal
+> `D6=D0`: `b₆` and `r₆` are non-`μ` boundary relations. Rosetta remains a
+> translation audit and cannot resolve these objections by itself.
+
 > **UU-1 and UU-2 from the Known Unknowns register. The framework must know what could replace it and what resists it.**
 
 **Date:** 2026-04-11

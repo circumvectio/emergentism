@@ -1,55 +1,55 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Data Pipeline Exploration
-  secondary:
-    - level: L3
-      column: Result Audit
-      role: "separate source-backed dataset outputs from analytical or statistical claims"
-    - level: L4
-      column: Pipeline Execution
-      role: "route fetch, transform, and analysis scripts through explicit commands and receipts"
-    - level: L5
-      column: Analytical Architecture
-      role: "keep GFS model structure and upstream evidence routing visible without making outputs doctrine"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[B/I/C]"
-  canonical_phrase: "04_DATA_PIPELINES — Agent Routing"
-title: "04_DATA_PIPELINES — Agent Routing"
-status: "ACTIVE — data-pipeline route card"
-evidence_tier: "[B] where outputs cite source datasets and reproducible commands; [I] for analytical translation; [C] for unreplicated statistical claims."
+type: emergentism-agent-route
+title: "04 Data Pipelines — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 04_DATA_PIPELINES — Agent Routing
+# 04 Data Pipelines — Agent route
 
-**Lane scope:** Data ingestion, transformation, and analysis scripts plus their local output artifacts.
-**Primary lead:** `L2 Śūdra`
-**Support:** L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa
-**Evidence tier:** `[B]` where outputs cite source datasets and reproducible commands; `[I]` for analytical translation; `[C]` for unreplicated statistical claims.
+**Lane:** `09_TOOLS/04_DATA_PIPELINES`
 
-## Read First
+## Read first
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Routing Law
+## Pure-worldview boundary
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Constraints
+## Epistemic contract
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Prefer `gfs_22_country_analysis_v2_fixed.py` for the current GFS
-  Codebook v2 mapping; keep earlier variants as provenance unless a rerun
-  verifies otherwise with a `[B]` receipt.
-- Treat `ra_files.txt` as legacy absolute-path intake inventory, not live route
-  authority.
-- All irreversible actions require K2 envelope staging.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-Zero-Sum Resolution Equation
+## Rosetta dispatch
+
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

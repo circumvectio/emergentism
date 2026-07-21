@@ -46,7 +46,9 @@ rosetta:
 > **Evidence Tier: [I] Interpretive.** The reframe presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 > **Note on dual explanation:** The framework offers two complementary reframe paths for Fermi's Paradox:
-> 1. **Extraction path (η > 0):** Most civilizations self-destruct before achieving D5 worldline-foresight/coherence — they scale D4 means-to-act without matching `Φ` and collapse via the Zero-Factor Catastrophe.
+> 1. **Extraction path (η > 0):** The conjecture is that many civilizations
+> scale D4 means-to-act without a matching D4 capacity to represent and rank
+> relevant D5 alternatives, then collapse through extractive dynamics.
 > 2. **Ascent path (D5 transition):** Civilizations that DO achieve high `Φ` may become sufficiently low-signature that present D4 search methods miss them.
 > Both paths are [I] Interpretive. Neither is established. Together they predict: we should not expect clean Type II-style signatures to be common.
 
@@ -62,7 +64,11 @@ These are not competing theories. They are the two halves of **The Bifurcation F
 ## 2. THE BIFURCATION MECHANISM
 We run the Drake Equation through the Emergentist framework ($P_node = \Phi \times V$).
 
-As a civilization advances, its D4 means-to-act vector (`V` at contact: energy extraction, biological manipulation, compute, logistics, sensors, control) accelerates geometrically. If its D5 worldline-foresight/coherence (`Φ`: governance, long-horizon prediction, trust, non-extractive coordination, reflexive error correction) does not scale with it, the civilization violently generates a non-zero Kill factor ($\eta > 0$).
+As a civilization advances, its D4 means-to-act vector (`V` at contact: energy
+extraction, biological manipulation, compute, logistics, sensors, control) may
+scale rapidly. If its present D4 option-field assessment (`Φ`: how well actual
+models represent and rank relevant D5 alternatives) does not scale with it,
+the framework conjectures a rising risk of extractive dynamics (`η > 0`).
 
 ### Path 1: The Hamiltonian Great Filter (The Energy Wall)
 When `η > 0`, the civilizational structure becomes parasitic within the framework model. [I] Because the universe is modeled here through the Lagrangian density of the AM-GM inequality, allowing the gap `(φ - ν)^2` to grow causes the required stabilization energy (the Hamiltonian `H`) to spike exponentially.
@@ -77,7 +83,10 @@ A closed-loop system achieving continuous high-coherence state approaches more e
 
 This does **not** imply zero thermodynamic waste. It implies that the civilization's D4 signature may fall below current search thresholds or appear unlike the signatures we are optimized to detect.
 
-They have climbed the dimensional scaffold. Absence of D4 evidence is not evidence of D5 absence.
+Within this conjectural reading, improved coordination does not make a
+civilization a D5 entity. Absence of a searched-for D4 signature is only a
+non-detection under the declared instrument and threshold; it does not prove
+either civilizational absence or hidden ascent.
 
 ---
 

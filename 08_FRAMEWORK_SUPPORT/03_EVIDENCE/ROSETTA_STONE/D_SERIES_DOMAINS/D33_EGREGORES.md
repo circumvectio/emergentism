@@ -2,112 +2,61 @@
 rosetta:
   primary_level: L3
   primary_column: Egregores
-  secondary:
-    - level: L6
-      column: Core State
-      role: "bound A5 autonomous-standing-wave claims as conjectural where stated"
-    - level: L2
-      column: Philosophy
-      role: "surface capture instances and mythic source material"
-    - level: L5
-      column: System Architecture
-      role: "stabilize four-step capture mechanics as a pattern register"
   operator: "Kṛṣṇa ◇"
   tier: "Executive"
   regime: "Vaiśya"
-  register: "[E/I/C]"
-  canonical_phrase: "Egregores, Raktabīja, and the Triple Lock"
-title: "Egregores, Raktabīja & The Triple Lock"
-status: "D-series domain mapping"
-evidence_tier: "[S] for documented capture examples as stated; [I] for general capture mechanism; [C] for autonomous egregore claims."
+  register: "[I/C]"
+  canonical_phrase: "Egregoreotype candidates are persistent, testable collective traces"
+title: "Egregoreotype and Capture"
+status: "ACTIVE D-SERIES KINTSUGI SUCCESSOR"
+evidence_tier: "[I] candidate grammar; [C] case-specific autonomy and capture claims."
+supersedes_blob: "35433e08558ac62e6e2e0e5de1d2d4e94525a165"
 ---
 
-# ⊙ EGREGORES, RAKTABĪJA & THE TRIPLE LOCK
+# Egregoreotype and Capture
 
-## Institutional Capture Mechanics (A5, MF-273, MF-277)
+> **[金] Crack:** the earlier domain map called an egregore an autonomous D5
+> standing wave. That inverted modality and presumed the agency it needed to
+> test. **Repair:** start with actual traces and measurable selection effects.
 
-**Source:** Emergentism Rosetta Stone v10.0 · EGREGORES sheet
-**Evidence Tier:** [I] for domain instances where capture is historically documented (revolutionary movements, academic publish-or-perish, democratic lobbying). [I] for the four-step capture mechanism as a general pattern. [C] for egregores as autonomous D5-limit standing waves with objective function (A5).
+## Candidate contract
 
----
+An **Egregoreotype candidate** is admitted only when all five conditions are
+specified and tested:
 
-## THE RAKTABĪJA WARNING
+1. an actual shared trace persists through time;
+2. the trace survives substantial carrier turnover;
+3. intervention on the trace measurably reweights later selections;
+4. the reweighting exhibits a recurrent objective-like bias;
+5. the substrates, payers, beneficiaries, and visible costs are named.
 
-**A5 states:** D5-limit standing waves can exhibit autonomous objective-function behavior. Raktabīja warning `[C]`: opposition conducted only through a standing wave's own institutional infrastructure can be captured and inverted under the same incentives, language, and custody channels it is trying to oppose.
+The trace, institutions, artifacts, model tokens, actions, and receipts are
+`D4 = actual`. The futures, doctrines, and alternatives they represent are
+`D5 = merely_possible`. A candidate need not be conscious, unitary, alive, or
+a moral person. “Objective-like” describes a stable selection bias; it does
+not establish an inner subject.
 
-### Four-Step Capture Mechanism
+## Capture as a testable pattern `[I/C]`
 
-| Step | Phase | Mechanism | Status |
-|------|-------|-----------|--------|
-| 1 | Recognition | Standing wave identifies threat | [I] |
-| 2 | Encapsulation | Threat wrapped in institutional structure | [I] |
-| 3 | Inversion | Function reversed, aesthetic preserved | [I] |
-| 4 | Integration | Former threat becomes permanent organ | [I] |
+The Raktabīja analogy compresses a possible capture sequence:
 
-**Mythological source:** Raktabīja — the figure whose every drop of blood spawned a copy. Fighting through his own medium (spilling blood) multiplied him. Only Kālī (who drank the blood before it touched the ground) could defeat him. The warning: do not route anti-capture work only through the infrastructure a standing wave already controls. Use a medium, custody path, and correction channel it cannot fully decode or own.
-
----
-
-## DOMAIN INSTANCES
-
-| # | Domain | Original → Captured Form | Asura Level | Status |
-|---|--------|-------------------------|-------------|--------|
-| 1 | Environmental | Activism → ESG / Greenwashing | L3 (creation→debt) | [E/I] |
-| 2 | Spiritual | Mystery schools → Priesthood | L7 (satori→gatekeeping) | [I] |
-| 3 | Labour | Unions → HR departments | L2 (nurture→control) | [E/I] |
-| 4 | Revolutionary | Movements → New state apparatus | L4 (liberation→domination) | [S] |
-| 5 | Contemplative | Meditation → Wellness industry | L1 (practice→consumption) | [I] |
-| 6 | Academic | Free inquiry → Publish-or-perish | L6 (audit→performance) | [E/I] |
-| 7 | Democratic | People's governance → Lobbying capture | L5 (vision→purchase) | [S] |
-
-Every instance followed the same four steps. The structure was preserved. The function was inverted. The name stayed the same.
-
----
-
-## THREE ANTI-RAKTABĪJA PROPERTIES
-
-The DAC's constitutional defence:
-
-| # | Property | Mechanism | DAC Status |
-|---|----------|-----------|-----------|
-| 1 | **Non-institutional encoding** | Mathematics, not priesthood. P_node = Φ × V cannot be gatekept. The equation belongs to the sphere, not to any person or institution. | ✅ |
-| 2 | **Self-correction protocol** | A7 — detects capture, publishes errors. The Soul Loop runs continuously (φ/P/ν passes). Kill criteria on every axiom. | ✅ |
-| 3 | **Material independence** | Not funded by the egregoric economy it diagnoses. Revenue from value creation (ΣΔP_node > 0), not extraction. | ⚠️ In progress |
-
----
-
-## CONNECTION TO THE ASURA RETURN (D11)
-
-The Raktabīja theorem describes capture from OUTSIDE (an existing institution absorbing a threat). The Asura Return describes corruption from INSIDE (an agent that reaches L7 and returns with inverted function). Together they are the complete threat model:
-
-- **External threat:** Raktabīja — the market/institution/state co-opts the DAC
-- **Internal threat:** Asura Return — the DAC's own agents become inverted operators
-
-Both are defended by the same constitutional properties: non-institutional encoding, self-correction, material independence.
-
----
-
-```
-Zero-Sum Resolution Equation
-
-The demon's blood spawns copies.
-Fight him with his own medium and he multiplies.
-Fight him with a different medium and he dies.
-
-The medium is mathematics.
-The medium is the sphere.
-The medium cannot be gatekept.
-
-Egregores & Raktabīja · v10.0
+```text
+threat recognized → threat enclosed → function inverted → shell retained
 ```
 
+That sequence is a comparative hypothesis, not a universal law. A case must
+identify custody channels, incentives, decision records, the pre-intervention
+baseline, and a counterfactual comparator. If the apparent pattern disappears
+when ordinary coordination, selection bias, or archival survivorship is
+controlled, the capture claim fails.
 
----
+## Justice boundary
 
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
+Passing the candidate contract does not make a collective good, authoritative,
+or entitled to sacrifice. Every consequential act remains subject to the
+Justice envelope: affected bearers, authorization, consent, custody, payer,
+beneficiary, reversibility, exit, contest, and receipted consequence. A
+collective may not demand voluntary sacrifice as proof of loyalty or ethics.
 
----
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D33_EGREGORES.md
+**Compatibility alias:** `Egregorotype` is retained only for old filenames,
+links, quotations, and historical records. `Egregoreotype` is canonical.

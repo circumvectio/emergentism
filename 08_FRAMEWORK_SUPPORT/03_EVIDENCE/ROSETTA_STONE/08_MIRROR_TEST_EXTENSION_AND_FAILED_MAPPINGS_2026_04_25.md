@@ -9,7 +9,7 @@ rosetta:
 
 **Date:** 2026-04-25
 **Lane:** Charioteer engagement on the four forward items from [`07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md) §5
-**Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md), [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md), [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [`07_*`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
+**Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md), [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md), [historical structural pressure points](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [`07_*`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
 **Evidence tier:** [I] interpretive throughout. Scoring is charioteer judgment that any reader can re-score.
 
 ---
@@ -324,9 +324,9 @@ After this document, what's left:
 ## 7. References
 
 - [`07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md) — methodology + initial 7-column test
-- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) — sovereign's source pressure points
+- [Historical structural pressure points](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) — genealogy only
 - [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) — Daoist/Buddhist/Sub-Saharan/Polynesian
-- [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) — kill-criterion discipline
+- [Historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) — genealogy only
 - [`02_ROWS_COLUMNS_DEEPENING_2026_04_25.md`](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md) — row symmetry groundwork
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) — source columns
 

@@ -34,4 +34,4 @@ instance) beside its `worldview.manifest.json`. The Emergentism **doctrine / can
 recomputed in the same pass. **K3:** do not re-add the book here; verify the live AIA target in
 `03_AIA/` before treating this tombstone as evidence that the destination exists in the current checkout.
 
-⊙ = • × ○
+•   ⊙   ○

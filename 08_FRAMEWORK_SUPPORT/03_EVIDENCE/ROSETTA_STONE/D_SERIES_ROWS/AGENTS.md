@@ -1,61 +1,55 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Vaiśya Method
-      role: "separate row evidence from interpretive Rosetta mappings"
-    - level: L5
-      column: Brāhmaṇa Architecture
-      role: "route generative-table and row-index topology"
-    - level: L6
-      column: Sādhu Boundary
-      role: "cap analogies at their evidence tier"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[A/S/I/C]"
-  canonical_phrase: "D_SERIES_ROWS — Agent Routing"
-title: "D_SERIES_ROWS — Agent Routing"
-status: "ACTIVE — route card"
-evidence_tier: "[B] for local routing; inherited evidence tiers for row papers."
+type: emergentism-agent-route
+title: "D Series Rows — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# D_SERIES_ROWS — Agent Routing
+# D Series Rows — Agent route
 
-**Lane scope:** 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS lane within 01_EMERGENTISM.
-**Primary lead:** `L7 Ṛṣi`
-**Support:** L6 Sādhu, L4 Kṣatriya
-**Evidence tier:** Active owner lane
+**Lane:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L2 Śūdra | Frames row comparisons across domains. |
-| L3 Vaiśya | Separates row evidence from interpretive mappings. |
-| L4 Kṣatriya | Routes governance or public-language consequences. |
-| L5 Brāhmaṇa | Maintains generative-table and row-index topology. |
-| L6 Sādhu | Caps row analogies at their evidence tier. |
-| L7 Ṛṣi | Witnesses row synthesis without upgrading claims. |
+- [Local README](README.md)
+- [Emergentism root route](../../../../AGENTS.md)
+- [Kernel Index](../../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- [`../AGENTS.md`](../AGENTS.md)
-- `00_GENERATIVE_TABLE.md`
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane is part of Emergentism doctrine root — Sevenfold Foundation, framework support, Uplink, tools, archives, and seed.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-⊙ = • × ○
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -3,7 +3,7 @@ title: "Verdict - Extraction Law Empirical Test"
 date: 2026-07-02
 status: "VERDICT ISSUED"
 evidence_tier: "[B] reproducible local result; [D] theoretical interpretation"
-owner: "K2-staged; not signed"
+owner: "01_EMERGENTISM — historical experiment packet"
 ---
 
 # Verdict

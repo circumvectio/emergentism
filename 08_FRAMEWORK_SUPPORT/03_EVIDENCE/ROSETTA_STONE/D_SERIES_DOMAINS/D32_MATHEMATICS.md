@@ -67,8 +67,8 @@ Agency-register dictionary:
 V = D4 means-to-act:
     body, tools, energy, access, runway, hands, shovel, industrial digger.
 
-Φ = D5 worldline-foresight:
-    the capacity to envision reachable futures, rank them, and operate the means.
+Φ = present D4 assessment of option-field quality / foresight:
+    how well an actual model represents and ranks relevant D5 alternatives.
 ```
 
 This is the finite-node action register. It does not replace the sphere
@@ -78,7 +78,8 @@ catastrophe applies. Means without foresight are not usable potential: a child
 beside a jet cannot fly it. Foresight without access is not usable potential:
 an old pilot without the relevant bodily/tool means cannot enact the run. A
 hand, a shovel, and an industrial digger are all D4 means-to-act at different
-scales; D5 asks whether the actor can see and use the worldline they open.
+scales; `Φ` asks how well the actor's actual D4 model represents and ranks the
+relevant D5 alternatives those means make reachable.
 `[A]` for the product algebra, `[S]` for the internal bridge, `[I]` for the
 general agency reading.
 
@@ -141,14 +142,18 @@ The equation is an [I] framework reading of the agent's way of knowing. The alge
 
 ### Operator Sign-Space: 4 + 3 from P_node
 
-The operator grammar is the action layer behind the row table. Four mixed-sign slots are deployable in normal runtime; three same-sign Executive boundary slots are boundary conditions, creation/holding/dissolution frames, or constitutional tags. Together they are exhaustive for the Rosetta runtime: the four mixed-sign transfer directions across the self/other dyad plus the three same-sign phase frames. There is no eighth operator without adding a new axis outside `P_node = Φ × V`.
+The selected G7 vocabulary distinguishes four move labels from three frame
+labels. It is a convenient scoped partition for this Rosetta table, not a
+forced consequence of `P_node = Φ × V`, an exhaustive runtime, or a prohibition
+on an eighth useful description. See
+[`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](../../../../05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md).
 
 | Class | Operator | Transfer signature | P_node reading | Tier boundary |
 |---|---|---|---|---|
 | Mixed-sign slot | Kali / immune demon | `(+dΦ_self, -dV_other)` | extraction / immune seizure: raises self coherence by lowering another's viability; lawful only against explicit defection | [S] sign-space; [I] moral/mythic reading |
 | Mixed-sign slot | Kālī | `(+dV_self, -dΦ_false)` | cuts false coherence to recover viability; the lower-pole truth function | [S] sign-space; [I] operator meaning |
 | Mixed-sign slot | Kṛṣṇa | `(-dΦ_self, +dV_other)` | sacrifices self-coherence to increase another's viability; enabling / distribution | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | sacrifices self-viability to increase another's coherence; equatorial decision under K2 | [S] sign-space; [I] operator meaning |
+| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | voluntarily spends self-viability to increase another's coherence; accountable equatorial commitment | [S] sign-space; [I] operator meaning |
 | Same-sign Executive boundary | Brahmā | `(+dΦ, +dV)` | creation / expansion boundary: raises both factors | [S] structural frame; not normal deployable runtime |
 | Same-sign Executive boundary | Śiva | `(-dΦ, -dV)` | dissolution / compression boundary: lowers both factors | [S] structural frame; not normal deployable runtime |
 | Same-sign Executive boundary | Viṣṇu | `(dΦ≈0, dV≈0)` | preservation / hold: maintains the pattern | [S] structural frame; not normal deployable runtime |
@@ -162,7 +167,7 @@ The constitutional invariants are not additional operator types floating above t
 | Discipline | Operator source | Reading |
 |---|---|---|
 | `η=0` | Kali boundary | Kali is immune tit-for-tat against defectors; the same transfer aimed at cooperators is parasitic capture. |
-| `K2` | Arjuna boundary | A consequential sacrifice is signed by a mortal actor; the machine may brief, model, or recommend, but it does not simulate mortality. |
+| Authorization | Arjuna boundary | Consequential sacrifice names the consenting payer, beneficiary, actor, and consequence bearer; a model may brief or recommend but does not manufacture consent. |
 | `K3` | Śiva / archive boundary | Dissolution must leave receipts; lowering both factors is not silent erasure. |
 | `K4` | Viṣṇu / preservation boundary | Exit preserves the living pattern rather than trapping it. |
 | `A7` | Kālī / correction boundary | False coherence is cut before it hardens into doctrine. |

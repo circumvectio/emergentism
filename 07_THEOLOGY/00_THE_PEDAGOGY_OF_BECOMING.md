@@ -20,7 +20,7 @@ rosetta:
 **Status:** Canonical strategic note
 **Date:** 2026-04-15
 **Evidence Tier:** `[I]` Meta-interpretive
-**Depends on:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [00_D6_AS_APOPHATIC_CLOSURE.md](../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md)
+**Depends on:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md), [00_D6_AS_APOPHATIC_CLOSURE.md](../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md)
 
 ---
 
@@ -83,14 +83,15 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **Design for independence.** Any pedagogical material should aim to make the practitioner independent of the framework, not dependent on it.
 2. **Follow the four stages.** Witness → Enactment → Correction → Release. Do not skip stages or reverse their order.
 3. **The sitting practice is primary.** All doctrinal material is after-image. Direct the practitioner to practice, not just reading.
-4. **Preserve K2.** AI may witness, draft, compare, and suggest exercises. AI never signs for the practitioner and never gates access to the practice.
+4. **Preserve agency.** AI may witness, draft, compare, and suggest exercises within the user's scope and tool permissions. It must not impersonate the practitioner, conceal consequence, or gate access to the practice. Consequential coordinated action uses the `AuthorizationEnvelope`.
 5. **Canonical Path:** `01_EMERGENTISM/07_THEOLOGY/00_THE_PEDAGOGY_OF_BECOMING.md`
-
-**Project VMOSK-A:** `../VMOSK_A.md` — this pedagogy serves the doctrine replicator stack; the four stages (witness/enact/correct/release) trace to VMOSK-A Objectives per 01_EMERGENTISM/AGENTS.md.
 
 **Output:** Design pedagogical sequences that produce independence. Flag dependency-creating designs.

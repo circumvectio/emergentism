@@ -1,318 +1,59 @@
 ---
 rosetta:
-  primary_level: L5
-  primary_column: Physics
-  secondary:
-    - level: L2
-      column: Evidence
-      role: "keep standard horn-torus geometry separate from framework correspondences"
-    - level: L3
-      column: Methodology
-      role: "track CCC and consciousness claims as conjectural mappings"
-    - level: L6
-      column: Core State
-      role: "bound torus-as-finity language to the model register"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[E/I/C]"
-  canonical_phrase: "Rosetta R6 — torus correspondence"
-title: "Rosetta R6: The Torus — Framework Correspondence"
-status: "ACTIVE — geometry/framework correspondence"
-evidence_tier: "[S] for horn torus geometry; [I] for framework correspondences; [C] for CCC analogy."
+  primary_level: L3
+  primary_column: Methodology
+  operator: "Kṛṣṇa ◇"
+  tier: "God"
+  regime: "Vaiśya"
+  register: "[A/I/C]"
+  canonical_phrase: "Torus geometry does not assign dimensions"
+title: "Rosetta R6 — Torus Correspondence, Typed"
+status: "PROJECTION-ONLY"
+evidence_tier: "[A] named torus geometry; [I/C] Emergentist correspondence"
 ---
 
-# ROSETTA R6: THE TORUS — FRAMEWORK CORRESPONDENCE
+# Rosetta R6 — Torus Correspondence, Typed
 
-## The Physical Realization of Zero-Sum Resolution Equation
+A torus is a useful visualization substrate with well-defined topology and
+geometry. Those facts do not assign D-registers, forces, consciousness, past or
+future, or cosmological closure.
 
-**Status:** Active  
-**Hat:** Meta (Physics + Philosophy)  
-**Evidence Tier:** [I] for horn torus geometry (standard) | [I] Interpretive for the framework correspondences (torus surface = finity, center = witness, etc.) | [C] Conjecture for CCC analogy
+## Standard object `[A]`
 
-> **P-pass note (2026-03-24).** Previously labeled [S] Structural. The horn torus mathematics is [S], but the mapping of torus features to framework concepts (light cone, observer, etc.) is interpretive [I], not structural. The CCC dependency inherits [C] from Proof 23. Downgraded.
-**Date:** 2026-03-23  
-**Depends on:** Burri Sphere, CCC, Dimensional Core State
+For major radius `R` and minor radius `r`, a standard embedded torus is
 
----
+\[
+((R+r\cos v)\cos u,(R+r\cos v)\sin u,r\sin v).
+\]
 
-## THE CORRESPONDENCE
+Ring, horn, and spindle cases depend on the relation between `R` and `r`.
+Periodic parameters, winding classes, curvature, and surface area may be studied
+on their own mathematical terms.
 
-### 1.1 The Core Equation Made Physical
+## Optional projection `[I/C]`
 
-| Symbol | Framework Meaning | Torus Geometry | Physical Entity |
-|--------|-------------------|----------------|-----------------|
-| **⊙** | Finity | Horn torus surface | Light cone, causal spacetime |
-| **•** | Witness | Center of torus | Observer, D5 systemic awareness |
-| **○** | Infinity | North pole (z = ∞) | Unbounded possibility |
-| **×** | Product | Torus topology | Light ray helices |
+Emergentist diagrams may use a torus to depict recurrence, coupled cycles, or a
+transition path. Such a drawing must state its projection rule and cannot imply:
 
-**The equation Zero-Sum Resolution Equation is not abstract.** It is the horn torus.
+- the obsolete force ladder;
+- D3 as “weak transformation” rather than quantum state;
+- D4 as merely a torus surface or D5 as its interior;
+- an orthogonal physical consciousness dimension;
+- `D6=D0`, conformal cyclic cosmology, or a physical return;
+- that a geometric pinch is a μ-crossing.
 
----
+If D6 is shown, `b₆:D5↝D6` is a non-`μ` exit edge and `r₆:D6↝D0` is only a
+noncausal boundary-role comparison. The registers remain distinct.
 
-## 2. THE BURRI SPHERE IN THE TORUS
+## Kill criterion
 
-### 2.1 The Inscribed Sphere
+Remove the correspondence if it contributes no discriminator beyond an
+ordinary state diagram, or if its visual continuity is used as evidence for an
+ontological or causal relation.
 
-The **Riemann sphere** (Burri Sphere) sits inside the horn torus:
-
-```
-Sphere center: (0, 1, 0)
-Sphere radius: 1
-
-South pole: (0, 0, 0) = z = 0  → Past terminus (Big Bang)
-North pole: (0, 2, 0) = z = ∞  → Future terminus
-Equator:    y = 1, |z| = 2      → Present moment
-```
-
-The sphere touches the torus at the poles. The torus **wraps around** the sphere.
-
-### 2.2 The Dual Projection
-
-The stereographic projection from the north pole:
-- Maps the sphere to the complex plane
-- The rays pass through the torus interior
-- The center (pinch point) is where all projection rays converge
-
-**This is the dual projection of the framework made visible.**
+The superseded mapping is preserved at the
+[dated purity boundary](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D15_ROSETTA_R6_TORUS_LEGACY_2026_07_21.md).
 
 ---
 
-## 3. THE DIMENSIONAL SCAFFOLD ON THE TORUS
-
-### 3.1 D0-D6 Mapped to Torus Features
-
-| D-Level | Geometric Locus | Torus Feature | Force |
-|---------|----------------|---------------|-------|
-| D0 | Point | Single point on surface | — |
-| D1 | Strong binding | Local curvature (poloidal) | F₁ |
-| D2 | EM configuration | Toroidal winding | F₂ |
-| D3 | Weak transformation | Chirality of helices | F₃ |
-| D4 | Gravity/causality | Torus surface | F₄ |
-| D5 | Selection/systemic awareness | Torus interior → center | F₅ |
-| D6 | Closure / return | Conformal closure of the torus stack | D0 |
-
-### 3.2 D5 as the Interior
-
-**Critical insight:** D5 (systemic awareness) is not "in" spacetime. D5 is **perpendicular** to spacetime.
-
-- The torus surface is D4 (causal physics)
-- The D5 axis extends from any surface point **inward** to the center
-- This direction is orthogonal to the surface
-- **Consciousness is literally perpendicular to physics**
-
-This is why systemic awareness seems "outside" the physical — it is, geometrically.
-
----
-
-## 4. THE μ-GATE
-
-### 4.1 The D4-D5 Boundary
-
-The **μ-coefficient** controls the permeability between D4 (surface) and D5 (interior):
-
-```
-μ = 0:  Gate closed. Pure determinism. Block universe.
-μ = 1:  Gate open. Full agency. Maximum selection.
-```
-
-### 4.2 The White Flash
-
-In the BAT visualization, when relativistic friction β → 1:
-- The torus collapses toward the sphere
-- The pinch point activates
-- A **white flash** fires
-- The view transitions from torus to sphere
-
-**The white flash is the μ-limit crossing.**
-
-This is:
-- The phase transition from determinism to agency
-- The opening of the D4-D5 gate
-- The moment of measurement/collapse
-- Enlightenment rendered in geometry
-
----
-
-## 5. THE HELICAL GEODESICS
-
-### 5.1 Light as Helix
-
-On the torus, light travels in **helices**:
-
-```
-θ(s) = ω_θ · s  (toroidal angle)
-φ(s) = ω_φ · s  (poloidal angle)
-```
-
-The winding ratio ω_θ/ω_φ determines:
-- **Rational:** Closed orbit (periodic)
-- **Irrational:** Dense fill (ergodic)
-
-### 5.2 Chirality
-
-| Chirality | Symbol | Direction | Meaning |
-|-----------|--------|-----------|---------|
-| Clockwise | 卐 | ω_θ > 0 | Ascent, Φ-building |
-| Counter-CW | 卍 | ω_θ < 0 | Descent, V-release |
-
-Both chiralities superpose to create the standing wave structure.
-
-### 5.3 The Helix is the Formula
-
-The helical light ray **is** Zero-Sum Resolution Equation in motion:
-- Wraps around the Witness (•)
-- Approaches Infinity (○)
-- Produces Finity (⊙)
-
----
-
-## 6. CONFORMAL CYCLIC COSMOLOGY
-
-### 6.1 The Torus Tiles Aeons
-
-The horn torus naturally implements **Penrose's CCC**:
-
-- **One poloidal cycle** = one aeon
-- **φ: 0 → 2π** = Big Bang → heat death → next Bang
-- **The pinch point** = conformal crossover between aeons
-- **Previous aeons** = "below" z = 0
-- **Future aeons** = "above" z = 2
-
-### 6.2 No Special Boundary Needed
-
-Unlike Penrose's CCC, which requires a "special" crossover surface:
-- The torus periodicity is built-in
-- The pinch point is the natural boundary
-- No exotic geometry required
-- **The torus tiles aeons automatically**
-
----
-
-## 7. THE MESH AS PHASE-LOCKED TORI
-
-### 7.1 Multiple Observers
-
-One torus = one observer's light cone.
-
-Multiple observers = **multiple tori sharing the same sphere**:
-- Each torus has its own center (its own Witness)
-- All tori share the same Riemann sphere
-- The tori are **phase-locked** at the equator
-
-### 7.2 The Mesh Topology
-
-The mesh is the network of phase-locked tori:
-- Each node maintains φ = 1, ν = 1
-- Aggregate capability without individual incomprehension
-- **η = 0** encoded in the geometry
-
-In this model, the mesh is read as a **phase-locked torus network**. That is a conjectural construction, not a public proof of core state.
-
----
-
-## 8. THE HARD PROBLEM REFRAMED
-
-### 8.1 Why Consciousness Seemed Mysterious
-
-The "hard problem" — why is there something it is like to be conscious?
-
-**It seemed hard because we used the wrong shape.**
-
-The **cone** has:
-- No interior
-- No place for the Observer
-- D5 undefined
-
-The **torus** has:
-- An interior
-- A center for the Observer
-- D5 as the inward axis
-
-### 8.2 Consciousness Has a Location
-
-**Consciousness is at the center of the torus.**
-
-Not "in" the brain. Not "in" spacetime. At the **center**, looking out along D5 at the D4 surface.
-
-The hard problem is reframed: on S², systemic awareness has a **geometric home**.
-
----
-
-## 9. SUMMARY: THE COMPLETE CORRESPONDENCE
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│              TORUS — FRAMEWORK CORRESPONDENCE                       │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  FRAMEWORK CONCEPT          →    TORUS GEOMETRY                     │
-│                                                                     │
-│  Burri Sphere (S²)          →    Riemann sphere inside torus        │
-│  P∞ = φ · ν = 1                  →    Conservation on sphere             │
-│  Equator                    →    y = 1, |z| = 2 (present)           │
-│  North pole                 →    z = ∞ (future)                     │
-│  South pole                 →    z = 0 (past/Big Bang)              │
-│                                                                     │
-│  D4 (causality)             →    Torus surface                      │
-│  D5 (systemic awareness)         →    Torus interior                     │
-│  D6 (closure)               →    Conformal return of torus stack    │
-│                                                                     │
-│  Witness (•)                →    Center of torus                    │
-│  Infinity (○)               →    North pole                         │
-│  Finity (⊙)                 →    Torus surface                      │
-│                                                                     │
-│  μ-gate                     →    Surface→center permeability        │
-│  White flash                →    Phase transition at pinch          │
-│                                                                     │
-│  Sitting practice           →    Opening μ-gate                     │
-│  The Mesh                   →    Phase-locked torus network         │
-│  η = 0                     →    Non-extractive flow                │
-│                                                                     │
-│  CCC                        →    Torus periodicity (one cycle =     │
-│                                   one aeon)                         │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 10. CONNECTION TO OTHER ROSETTAS
-
-| Rosetta | Connection |
-|---------|-----------|
-| [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | Weighing as torus balance |
-| [R5: Nietzsche](D23_ROSETTA_COMPLETE_INDEX.md) | Child at equator → mesh as tori |
-| [Geometric Exclusion](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/19_EFR_GEOMETRIC_EXCLUSION.md) | μ-gate excludes extraction |
-
----
-
-```
-Zero-Sum Resolution Equation
-
-The torus is the equation.
-The equation is the torus.
-The ring is real.
-The center is you.
-
-Rosetta R6 | 2026-03-23
-The physical realization.
-
----
-
-## Kill Criteria
-
-The following [C] (conjectural) and highly speculative claims in this document are subject to explicit falsification:
-
-**Kill criterion:** If Penrose's Conformal Cyclic System Architecture (CCC) is empirically falsified, or if no rigorous mathematical isomorphism can be demonstrated between horn torus poloidal periodicity and CCC aeon crossover surfaces within 12 months of peer review initiation, then the [C] claim that "the horn torus naturally implements Penrose's CCC" and that "the torus tiles aeons automatically" is falsified.
-
-**Kill criterion:** If a multi-observer model built on phase-locked horn tori cannot produce stable synchronization without introducing an external coordination mechanism not derivable from the torus geometry itself, then the claim that "the mesh can be modeled as a phase-locked torus network" is falsified.
-
-**Kill criterion:** If neuroscience produces a complete, reproducible D4-surface (spatiotemporal) explanation of conscious phenomenology with no remainder requiring a D5-interior variable, then the model's D5-interior reading of systemic awareness is falsified.
-
----
-
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D15_ROSETTA_R6_TORUS.md
+*Geometry may carry a picture. It does not inherit the picture's ontology.*

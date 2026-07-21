@@ -5,13 +5,13 @@ rosetta:
   secondary:
     - level: L4
       column: Agent Execution
-      role: "keep write-enabled managed agents human-gated and non-autonomous"
+      role: "keep write-enabled managed agents permission-gated and non-autonomous"
     - level: L6
       column: Agent Compression
       role: "bind archive-first, tombstone, and no-competing-authority constraints"
     - level: L7
       column: Agent Constitution
-      role: "preserve K2 discipline and constitutional review boundaries"
+      role: "preserve accountable authorization and constitutional review boundaries"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -43,27 +43,29 @@ that Anthropic runs in hosted, sandboxed containers.
 | L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
 | L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | `claude-haiku-4-5` | + web | no |
 | L3 | Vaiśya · **Kṛṣṇa** (God) | −Φ_self, +V_other | auditor/charioteer — rank, enable | `claude-sonnet-4-6` | + web | no |
-| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | `claude-sonnet-4-6` | + write·edit·bash | **yes — human-gated** |
+| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | `claude-sonnet-4-6` | + write·edit·bash | **yes — permission-gated** |
 | L5 | Brāhmaṇa · **Brahmā** (Executive) | +Φ, +V | architect — redesign packets; advises | `claude-opus-4-8` | read·web | no |
-| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive-first (K3) | `claude-opus-4-8` | + write·edit·bash | **yes — human-gated** |
+| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive with a tombstone | `claude-opus-4-8` | + write·edit·bash | **yes — permission-gated** |
 | L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | `claude-opus-4-8` | read·grep·glob | no |
 
 **[T] Model tiers follow the framework's own caste doctrine** (CLAUDE.md *Quality × Quantity by Caste*),
 not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
 deep-reasoning L5–L7 → Opus. Reserve high-quality inference for higher-risk or constitutional lanes.
 
-## The K2 discipline, encoded structurally
+## Accountable authorization, encoded structurally
 
 Only **L4 (Arjuna)** and **L6 (Śiva)** can mutate state, and their `write`/`edit`/`bash`
 tools carry `permission_policy: {type: always_ask}`. The session goes idle and emits a
 `tool_use` event with `evaluated_permission: "ask"`; nothing lands until a human replies
-`user.tool_confirmation`. That **is** the constitution in the runtime:
+`user.tool_confirmation`. This is an ordinary platform permission safeguard:
 
-> **[S]** The machine *prepares* the collapse (drafts, stages the smallest-defensible diff);
-> the human performs the binding act (`K2 → Arjuna`: "do not simulate the mortal sacrifice").
+> **[S]** An agent acts only inside the user's scoped request and granted tool
+> permissions. Consequential work names its principal, mandate, scope, actor,
+> custody, reversibility, consequence bearer, and contest path.
 
-η=0 (Kali fires only at defectors), A7 (tier every claim), and K3 (Śiva archives with a
-tombstone rather than deletion) live in the system prompts.
+Zero extraction, evidence tiers, archive-with-tombstone, and Grace Exit live in
+the system prompts. A private natural person's authority to move money or execute a
+contract is outside this runtime and outside Emergentist doctrine.
 
 ---
 
@@ -133,7 +135,7 @@ session = client.beta.sessions.create(
 ```
 
 **The ensemble = a polygenic pipeline that brings a decision to the equator:**
-`L1 firewall → L2 explore → L3 rank → L4 decide & (human-signed) commit`, with the Executive boundaries
+`L1 firewall → L2 explore → L3 rank → L4 decide & execute within granted permissions`, with the Executive boundaries
 held as boundaries the work runs within (**L5** redesign only when L4 is structurally
 blocked; **L6** compress overgrowth; **L7** constitutional adjudication). You can run each
 caste as its own session, but the ensemble is now **wired as a coordinator**: at provision
@@ -173,5 +175,5 @@ MANAGED_AGENTS/
 > `agents/` holds provisioning YAML only (one `*.agent.yaml` per caste) — a machine-config leaf with **no front-door triplet (README/AGENTS/CLAUDE) by design**; its routing front door is this file, and each YAML is annotated in the tree above.
 
 Canon: [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) ·
-[`../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../../../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) ·
+[historical constitutional-invariants application](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) ·
 [`../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)

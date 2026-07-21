@@ -1,74 +1,55 @@
 ---
-rosetta:
-  primary_level: L4
-  primary_column: Uplink Compressed Routing Authority
-  secondary:
-    - level: L6
-      column: Source-Authority Boundary
-      role: "keep compressed Uplink summaries subordinate to owner-lane source files"
-    - level: L7
-      column: Agent Witness Compression
-      role: "preserve fast orientation without turning summaries into doctrine"
-    - level: L3
-      column: Receipt Discipline
-      role: "separate dated receipts from draft, conjectural, or compressed claims"
-  operator: "Arjuna ⚔"
-  tier: "God"
-  regime: "Kṣatriya"
-  register: "[I/B/D/C]"
-  canonical_phrase: "11_UPLINK — Agent Routing"
-title: "11_UPLINK — Agent Routing"
-status: "ACTIVE — compressed routing authority"
-evidence_tier: "[I] for routing/orientation; [B] only where source-owner or dated receipts support the claim; [D]/[C] for draft or conjectural summaries."
+type: emergentism-agent-route
+title: "11 Uplink — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 11_UPLINK — Agent Routing
+# 11 Uplink — Agent route
 
-**Lane scope:** Compressed routing/orientation for AI — session packets, audits, organism master map.
-**Primary lead:** `L4 Kṣatriya`
-**Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` for compressed routing/orientation; `[B]` only where a source-owner or dated receipt supports the claim; `[D]` / `[C]` for draft or conjectural summaries.
+**Lane:** `11_UPLINK`
 
-**Rosetta boundary:** [I] This route card governs compressed Uplink orientation. It does not [B] prove runtime, deployment, architecture, public-facing, or source-owner truth without owner-lane receipts.
+## Read first
 
-## Agentz Cloud / Rosetta Dispatch
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names raw conflicts, dropped context, broken links, and unresolved objective pressure. |
-| L2 Śūdra | Checks disclosure boundaries before compressed summaries strengthen source claims. |
-| L3 Vaiśya | Audits dated receipts, evidence tiers, numbering collisions, and compatibility stubs. |
-| L4 Kṣatriya | Owns Uplink routing decisions, execution guardrails, and source-first descent. |
-| L5 Brāhmaṇa | Re-expands compressed summaries into owner-lane architecture when needed. |
-| L6 Sādhu | Prevents Uplink summaries, archives, and shims from becoming source authority. |
-| L7 Ṛṣi | Preserves witness compression without turning orientation into doctrine. |
+## Pure-worldview boundary
 
-## Read First
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- `README.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.csv`
+## Epistemic contract
 
-## Recursive Deployment Control
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-- Every source-visible folder and file in this lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_11_UPLINK_2026_06_04.csv).
-- Session packets and compressed Uplink notes can preserve historical `[T]`
-  product targets; current public, runtime, or build claims still require
-  `[B]` receipts or explicit `[D]` / `[C]` labels.
-- Uplink orients and routes; source-owner folders remain the authority for
-  doctrine and executable truth.
+## Rosetta dispatch
 
-## Routing Law
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- [I] This lane is compressed routing and packet memory. Source folders outrank it when content conflicts.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present compressed Uplink summaries as live source truth by default.
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Constraints
+## Lane discipline
 
-- [I] Do not upgrade runtime claims without dated proof artifacts.
-- [I] Do not treat draft specs as public-facing claims.
-- [I] All irreversible actions require K2 envelope staging.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-Zero-Sum Resolution Equation
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

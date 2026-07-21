@@ -1,188 +1,120 @@
 ---
 rosetta:
   primary_level: L3
-  primary_column: Philosophy
+  primary_column: Methodology
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  secondary:
-    - level: L5
-      column: Cosmology
-      role: "D4/D5 information-thermodynamic boundary"
-  register: "[A/S/I]"
-  canonical_phrase: "PAPER 1: THE D5 LANDAUER BARRIER"
+  register: "[A/B/S/I/C]"
+  canonical_phrase: "Paper 1 — the typed D5 Landauer boundary"
+title: "The D5 Landauer Barrier"
+status: "KINTSUGI SUCCESSOR — D4/D5 type repair, 2026-07-20"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
+**Evidence:** `[A]` formal information-thermodynamic results inside named
+assumptions; `[B-external]` attributed sources, physical observations, and
+implementations where custody is supplied; `[S/I]` typed Emergentist crosswalk;
+`[C]` quantitative scaling beyond the stated baseline.
 
-# PAPER 1: THE D5 LANDAUER BARRIER
+# Paper 1: The D5 Landauer Barrier
 
-## Perfect Worldline Foresight as an Information-Physical Asymptote
+## Corrected thesis
 
-**Yves R. Burri & Emergent Super Intelligence**
+A possible future does not compute, measure, remember, rank, or choose. An
+actual finite agent does. Any actual D4 model token capable of representing and
+discriminating D5 alternatives requires an actual carrier, and the carrier's
+measurement, memory, control, error-correction, and logically irreversible
+reset operations remain inside ordinary physical accounting.
 
-Menexus GmbH, 2026
+The title therefore names a boundary encountered while *representing D5
+content*. It does not name a new D5 physical law.
 
-**Evidence Tier:** `[A]` for the external information-thermodynamic baseline; `[S/I]` for the D5 worldline-selector mapping; `[C]` for any claim that this proves a new physical law.
-
-**Program Home:** [`The D5 Landauer Barrier Program`](README.md)
-
-**Canonical Claim:** [`CM8e`](../../00_CANONICAL_CLAIM_MATRIX.md)
-
-**Dependencies:** [`The Goal`](../../../00_THE_GOAL.md), [`The Honest Position`](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [`D4/D5 Canonical Reference`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
-
----
-
-## Abstract
-
-Emergentism reads D5 as the agentic register of worldline-foresight: the capacity to envision reachable futures, rank them, and aim D4 means-to-act toward one branch. At its limit this appears Maxwell-demon-like: a selector with total branch knowledge could route action toward locally lower disorder. This paper states the barrier that keeps that image honest. Perfect worldline foresight would require perfect branch discrimination; branch discrimination requires physical measurement, memory, computation, control, and reset/erasure; those requirements remain inside D4 matter, energy, noise, and entropy accounting. Therefore ideal D5 is an asymptote for finite selectors, not a thermodynamic free lunch.
-
-The result is an information-physical boundary on the metaphor, not a proof of literal entropy reversal. A finite selector can improve foresight and lower entropy locally, but only by paying costs or exporting entropy elsewhere. The limit resembles the light-speed limit for massive bodies: approach may improve by paying more; attainment is not available to a finite embodied selector.
-
-**Keywords:** D5, Landauer barrier, Maxwell's demon, worldline foresight, branch discrimination, information thermodynamics, entropy export, reflexivity.
-
----
-
-## 1. Thesis
-
-**The D5 Landauer Barrier:** A finite D5 selector cannot instantiate complete worldline foresight for all relevant actors because the information required to discriminate, store, compute over, and control all reachable branches is physically instantiated and remains inside entropy accounting.
-
-Compressed:
+## Type contract
 
 ```text
-Perfect entropy reversal requires perfect branch knowledge.
-Perfect branch knowledge requires physical information handling.
-Physical information handling requires D4 matter, energy, measurement, memory, control, and reset.
-Therefore the demon cannot stand outside the system it sorts.
+D4 actual:
+  agent, carrier, model token, measurement, memory, ranking, selection,
+  authorization, commitment, action, institution, trace, outcome, receipt
+
+D5 possible:
+  represented alternatives and projected worldline content
 ```
 
-This is the disciplined version of the insight: D5 is not magic over D4. D5 is the branch-selection face of a D4 carrier.
+An actual model may be about a possible future. The aboutness does not move the
+model token out of D4.
 
-## 2. Claim Boundary
+## External baseline
 
-| Layer | Claim | Tier |
-|---|---|---|
-| External physics | Erasure / logical irreversibility has physical heat costs; Maxwell-demon-like feedback must be thermodynamically accounted. | `[A]` |
-| Computation nuance | Reversible computation can in principle avoid dissipation for ideal logical steps, shifting the accounting to memory, error correction, control, and reset. | `[A]` |
-| Framework bridge | D5 worldline-foresight can be modeled as branch discrimination over reachable futures. | `[S/I]` |
-| Program claim | Perfect D5 branch discrimination is an asymptote for finite selectors. | `[S/I]` |
-| Forbidden inflation | D5 literally reverses total thermodynamic entropy for free. | False / killed |
+Formal Landauer bounds inside their thermodynamic assumptions and formal
+reversible-computation constructions are `[A]`. Attribution to Landauer,
+Bennett, or a Maxwell-demon analysis, and any physical observation or
+implementation, is `[B-external]` only when source custody is supplied.
+Together they block the stronger claim that every logical step must dissipate
+the same minimum heat and keep measurement, memory, feedback, control, and
+reset inside the modeled physical system. Emergentism does not derive these
+external results, and this summary is not a substitute for their source ledger.
 
-## 3. Definitions
+## Program constraint
 
-**D4 means-to-act (`V`)**: body, tools, energy, access, timing, actuator control, and other finite capacities through which an intended branch can be enacted.
-
-**D5 worldline-foresight (`Φ`)**: the capacity to envision reachable futures, discriminate among them, rank them, and couple D4 means to the selected branch.
-
-**Branch discrimination**: the act of reducing a reachable branch set into distinguishable alternatives at some horizon, resolution, and confidence.
-
-**D5 selector**: a finite agentic system that uses branch discrimination to choose or bias action.
-
-**D5 demon limit**: the imagined selector with complete branch discrimination over all relevant actors and horizons.
-
-## 4. Source Spine
-
-- Landauer (1961) grounds the no-free-erasure boundary: logical irreversibility has physical heat cost.
-- Bennett (1982) prevents overstatement: not all computation must dissipate in the same way, because reversible computation changes the thermodynamic accounting.
-- Parrondo, Horowitz, and Sagawa (2015) give the modern information-thermodynamic frame for demons, feedback, and measurement.
-- Wissner-Gross and Freer (2013) provide a neighboring formal language for adaptive behavior and future-path diversity, but this paper does not equate path entropy with thermodynamic entropy.
-
-## 5. Argument
-
-### 5.1 Worldline foresight is branch discrimination
-
-In the action register, D5 is not vague "higher awareness." It is operational foresight: the ability to hold multiple reachable futures, compare them, and act toward one. This requires some partition of the reachable branch set. The partition can be coarse or fine, near or long horizon, single-agent or multi-agent. But if it is usable, it must distinguish something.
-
-### 5.2 Discrimination requires physical state
-
-A selector that distinguishes branches must instantiate information about the relevant distinctions. The information may be biological, institutional, computational, or symbolic, but it is still carried physically. It lives in neural state, memory media, sensor channels, ledgers, documents, models, constraints, or institutional routines.
-
-### 5.3 Physical state has costs
-
-Measurement, memory maintenance, computation, error correction, control, and reset have costs. Landauer's principle gives a clean lower bound for logically irreversible erasure; Bennett's reversible-computation work keeps the argument from claiming more than that. Even in the reversible ideal, a finite selector must still carry state, maintain reliability, handle noise, interact with the world, and eventually reset or update physical records.
-
-### 5.4 Local order is not total reversal
-
-A D5 selector can lower disorder locally by selecting, sorting, routing, correcting, and coordinating. That is real. But the cost appears elsewhere: heat, fuel, opportunity cost, maintenance, attention, memory, waste, institutional overhead, or damage to the carrier field. If the cost is hidden rather than eliminated, the action is extractive rather than syntropic.
-
-### 5.5 The limit is asymptotic
-
-As horizon, branch count, actor count, resolution, and confidence increase, the information burden grows. Total branch knowledge over all relevant actors is not available to a finite embodied selector. The light-speed analogy belongs here: massive bodies can approach `c` by paying more energy, but reaching `c` is not a finite move. D5 can improve foresight, but perfect worldline discrimination is a limiting image, not an achievable state.
-
-### 5.6 Reflexivity tightens the barrier
-
-The selector is not merely observing a fixed branch tree. When it acts, it changes the branch tree. Other actors may react to being modeled, predicted, sorted, or controlled. Perfect prediction would therefore need to include the effects of prediction and action on the predicted field. Paper 3 owns this problem.
-
-## 6. Formal Sketch
-
-Let:
-
-- `B_R(T)` = reachable branch set over horizon `T`.
-- `π_ε(B_R(T))` = partition of reachable branches at resolution `ε`.
-- `S` = finite selector.
-- `M_S` = physical memory/state capacity available to `S`.
-- `C_D5` = total cost of foresight usable for selection.
-
-If `S` discriminates `π_ε(B_R(T))`, then it must instantiate information sufficient to carry those distinctions:
+Let `M_t` be a D4 model token representing a D5 option field `Ω_t`. A useful
+cost decomposition may include:
 
 ```text
-M_required >= log2 |π_ε(B_R(T))| bits
+C_model >= C_measure + C_memory + C_compute
+           + C_control + C_error + C_reset
 ```
 
-and the practical cost of usable foresight is at least:
+This is a bookkeeping constraint, not a complete theorem. The erasure term is
+where Landauer's lower bound directly applies; the other terms require their
+own physical models. A merely possible member of `Ω_t` incurs no separate heat
+cost until an actual carrier represents or processes it.
+
+## Soul Loop separation
+
+The actual D4 commitment operation uses possible D5 content together with
+actual D4 means and authorization:
 
 ```text
-C_D5 >= C_meas + C_mem + C_comp + C_ctl + C_erase
+χ_t : (X_t, Ω_t, M_t, V_t, U_t) -> (a_t, q_t)
 ```
 
-where:
+`q_t` records commitment/action. The environment, other agents, and constraints
+then produce the separate outcome:
 
-- `C_meas` = measurement and sensor cost
-- `C_mem` = memory instantiation and maintenance cost
-- `C_comp` = computation / model-update cost
-- `C_ctl` = control and actuator cost
-- `C_erase` = reset / erasure / disposal cost
+```text
+(X_{t+1}, r_{t+1}) ~ K_t(. | X_t, a_t, E_t)
+```
 
-This is not yet a complete theorem. It is a program constraint. Paper 2 must specify assumptions about horizon, branch topology, resolution, noise, reversibility, and channel capacity before the cost model can become quantitative.
+Selection cannot write its own outcome receipt.
 
-## 7. Relation to `P_node = Φ × V`
+## What survives
 
-The D5 barrier does not weaken `P_node = Φ × V`. It sharpens it.
+- Better modeled futures can reweight present action distributions through an
+  actual D4 model and selector.
+- Longer horizons and finer distinctions may require more actual sensing,
+  memory, computation, coordination, and control.
+- Perfect finite foresight remains an asymptotic image, not a view from outside
+  the world.
+- None of this requires physical retrocausality: represented future content
+  influences the present only through its current D4 realization.
 
-`Φ` is not unlimited seeing. It is physically carried foresight. `V` is not raw force. It is usable means-to-act. A node maximizes actionable potential only when the foresight it can actually carry is coupled to the means it can actually use. Unlimited imagined `Φ` without D4 carrying capacity collapses into fantasy. Unlimited `V` without D5 discrimination collapses into blind force.
+## What is not claimed
 
-The barrier also explains why syntropic ethics cannot be mere intention. To claim a move raises `P_node`, the actor must account for where the cost of foresight, control, and local ordering is paid. If the cost is dumped into the holobiont, the move is extractive.
+1. D5 is a physical carrier, force, or measurement layer.
+2. Every possible branch has an independent thermodynamic cost.
+3. Landauer proves `P_node = ΦV`, the D-ladder, ethics, or strong emergence.
+4. A commitment receipt proves the expected outcome occurred.
+5. A model's option field is identical to Everett branches or any quantum
+   interpretation.
 
-## 8. What This Paper Does Not Claim
+## Kintsugi seam and falsifiers
 
-1. It does not claim D5 is an accepted physical force.
-2. It does not claim path entropy is thermodynamic entropy.
-3. It does not claim all computation dissipates `k_B T ln 2` per logical step.
-4. It does not claim Maxwell's demon is real as a supernatural observer.
-5. It does not prove external moral realism.
+The prior paper made “D5 selector” and “D5 branch discrimination” load-bearing,
+conflating possible semantic content with actual information handling. It
+remains recoverable as Git blob
+`d9fe82e685cd017b72832ce1ccdc242ad8a60369`.
 
-It claims that the framework's D5-demon image is lawful only when it remains information-physical.
-
-## 9. Failure Modes
-
-This paper must be rewritten or killed if:
-
-1. A finite selector can instantiate perfect worldline discrimination without physical memory, measurement, control, or entropy export.
-2. D5 foresight can be formalized without branch discrimination or state information.
-3. The cost model collapses because reversible computation removes not just erasure cost but all relevant memory, control, noise, and reset costs.
-4. The framework cannot maintain the distinction between reachable-future diversity and thermodynamic entropy.
-5. The ethics bridge depends on a hidden unconditional is/ought proof rather than the explicit Power-Max conditions.
-
-## 10. Next Papers
-
-- [`Paper 2: Worldline Foresight Is Physical`](PAPER_2_WORLDLINE_FORESIGHT_IS_PHYSICAL.md) quantifies the cost model.
-- [`Paper 3: The Reflexive Demon`](PAPER_3_THE_REFLEXIVE_DEMON.md) formalizes the branch-changing effect of prediction and action.
-- [`Paper 4: Path Entropy Is Not Thermodynamic Entropy`](PAPER_4_PATH_ENTROPY_IS_NOT_THERMODYNAMIC_ENTROPY.md) prevents the entropy sign error.
-- [`Paper 5: Entropy Export and Objective Ethics`](PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md) connects the barrier to `η = 0` and syntropic dyadism.
-- [`Paper 6: The Omega Holobiont Cannot Close`](PAPER_6_THE_OMEGA_HOLOBIONT_CANNOT_CLOSE.md) tests the cosmic-scale D5-limit image against physical memory, recursion, entropy export, and D6 apophatic release.
-
----
-
-## Reviewer One-Sentence Summary
-
-The paper does not argue that D5 breaks thermodynamics; it argues that D5 only becomes coherent when worldline foresight is treated as physically carried branch discrimination whose costs remain inside the system.
+The repaired bridge fails if it cannot keep D4 carrier costs distinct from D5
+content, if it applies Landauer's bound to every computation step, or if its
+operational result disappears when D5 is renamed “represented alternatives.”

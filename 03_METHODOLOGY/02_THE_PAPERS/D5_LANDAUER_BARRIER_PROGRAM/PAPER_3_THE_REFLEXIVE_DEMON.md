@@ -19,7 +19,10 @@ rosetta:
 
 ## Thesis
 
-A D5 selector does not observe a fixed future and then choose from it. The act of observing, modeling, communicating, or controlling changes the branch set being predicted.
+An actual D4 selector does not observe a fixed future and then choose from it.
+Its D4 model token represents D5 alternative histories, and the acts of
+observing, modeling, communicating, or controlling can change the system whose
+alternatives are being predicted.
 
 ## Role In The Program
 
@@ -33,7 +36,9 @@ The predicted branch set changes.
 Prediction becomes part of the system it predicts.
 ```
 
-This is why the D5 demon limit is stricter than ordinary storage cost. Even a hypothetical high-capacity selector must include its own modeling and action effects in the modeled field.
+This is why the “D5 demon” is only a name for a limit on D4 modeling of D5
+content. Even a hypothetical high-capacity selector must include its own
+modeling and action effects in the modeled field.
 
 ## Required Sections
 

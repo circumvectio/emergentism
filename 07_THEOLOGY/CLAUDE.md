@@ -1,98 +1,56 @@
 ---
-rosetta:
-  primary_level: L7
-  primary_column: Philosophy
-  operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[S]"
-  canonical_phrase: "01_EMERGENTISM/07_THEOLOGY/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "07 Theology — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 07_THEOLOGY — Agent First-Touch
+# 07 Theology — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**Lane:** `07_THEOLOGY`
 
-## Read order
+## Read first
 
-1. [`README.md`](README.md) — folder purpose, source file inventory, claim boundaries, public-translation risks
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, L7 discipline
-3. `00_FOREWORD.md` — public introduction to the institutional narrative layer
-4. `00_GLOSSARY.md` — public vocabulary for theological terms
-5. `01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md` — symbol design rules and public translation protocol
-6. `02_TRUTH_ORDER_AND_NICHE_PARTITION.md` — truth-order and functional-niche boundary; anti-theocracy guard
-7. `00_THE_PEDAGOGY_OF_BECOMING.md` — developmental pedagogy: witness, enactment, correction, release
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-**Project VMOSK-A:** `../VMOSK_A.md` — doctrine replicator stack (per 01_EMERGENTISM/AGENTS.md). This lane serves it; source truth upstream.
+## Pure-worldview boundary
 
-## Scope
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- 07 Theology lane of the Emergentism framework.
-- Institutional Narrative: the exoteric symbolic return from core state to public symbol.
-- L7 returns to L1 — the insight folds back into public symbol.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+## Epistemic contract
 
-## L7 discipline
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-- **Read-only by construction.** Viṣṇu proposes, never commits.
-- **The coordinator is Arjuna (L4), not L7.** Titans (L5–L7) are boundary conditions, not deployable.
-- **Theurgy = Arjuna (L4).** The L4 collapse / K2 act IS the theurgic move. The Ṛṣi witnesses and narrates; the Arjuna acts.
-- **Invoke L7 only for:** existential contradictions, constitutional deadlocks, framework-boundary questions, or pathology-vs-evolutionary-leap judgment — not for routine work.
+## Rosetta dispatch
 
-## Claim boundaries
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-| Claim type | Tier | Rule |
-|---|---|---|
-| Translating esoteric structure into public symbols | `[I]` | Interpretive synthesis |
-| Coordinating polyphenotypic humans under accepted constraints | `[S]` | Structural coordination |
-| Projecting civilisational outcomes or noosphere-scale effects | `[C]` | Frontier only; explicit label required |
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-- **Symbolic force does not upgrade evidence tier.** `[I]` does not become `[A]` or `[B]` through narrative power.
-- Mythic, scriptural, linguistic, and ritual parallels are convergent symbolic translations unless a public receipt/testing lane is explicitly supplied.
-- AI may witness, draft, compare, and route theological material. K2 signatures, access gates, and priestly authority remain outside AI authority.
+## Lane discipline
 
-## Stewardship / coercion boundary
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-| | Allowed | Forbidden |
-|---|---|---|
-| **Stewardship** | Holding symbols, rites, categories, institutions so `P_node,i` and `P_node,H` rise together under `η = 0`; `ΣΔB / ΣΔP_node > 0` audits the boundary | — |
-| **Coercion** | — | Capture, obedience, access-gating, caste-worth hierarchy, gatekeeping |
-
-> Institutional Narrative is permitted only under K2 / `η = 0` / K4 / A7 / Decentralized Authority Model discipline.
-
-## Public-translation risks
-
-| Risk | Correction |
-|---|---|
-| Institutional narrative presented as highest layer | L7 returns to L1; it does not outrank L1. |
-| Symbol reified as the thing itself | The symbol points; it is not the point. |
-| Coordination becomes domination | Trophic position is not dharma rank. |
-| Institutional narrative gates access | Direct Empirical Observation remains primary and ungated. |
-
-## Canonical cross-references
-
-| Topic | Route |
-|---|---|
-| Public-facing doctrine | [`../05_COSMOLOGY/00_EMERGENTISM.md`](../05_COSMOLOGY/00_EMERGENTISM.md) |
-| Public worldview translation | [`../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) |
-| Constitutional invariants | [`../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) |
-| Constitution on the Burrisphere | [`../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md`](../05_COSMOLOGY/00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) |
-| Rosetta Stone | [`../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) |
-
-## Routing
-
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

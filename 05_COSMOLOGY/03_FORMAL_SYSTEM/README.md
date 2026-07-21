@@ -11,7 +11,11 @@ rosetta:
 
 # The Formal System
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two file-index descriptions below assert overruled promotions: the `21_*` row calls the triadic structure "the unique stable configuration" (ruling 3 — N=3 is **selected, not uniquely forced**; the N≥5 discharge used a false group lemma that Z₅ refutes), and the `23_*` row labels D6 ≡ D0 a "Proof" (ruling 4 — D6≡D0 survives as the **apophatic-return / topological-loop reading `[I]`**, not a proved literal ontological identity). Read those descriptions as file labels at their honest tier; where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+> **[金] reconciliation — 2026-07-20.** The triadic frame is selected, not
+> uniquely forced. Literal D6/D0 identity and topological closure are dead;
+> `b₆` and `r₆` are non-μ boundary edges and `D6~D0` is only a named role
+> resemblance `[I]`. E1–E10, not the superseded A1–A7 genealogy, owns the live
+> axiom surface. Where local wording conflicts, the Settled Canon Registry rules.
 
 **Status:** Active
 **Evidence tier:** [S] Structural — conditional on the axiom set
@@ -26,14 +30,14 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | File | Content |
 |------|---------|
 | [`00_CORRECTION_WOLFRAM_NKS.md`](00_CORRECTION_WOLFRAM_NKS.md) | Correction and boundary note for Wolfram/NKS references. |
-| [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) | The canonical axiom set: A1–A7 (v0.4). Supersedes the earlier O1–O5 numbering. |
+| A1–A7 genealogy | Superseded historical layer. Current axiom authority is [`../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md`](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). |
 | [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) | Historical derivation-axiom label; current derivation owner is `../../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md`. |
-| [`27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md) | Clarifies D4/D5 dimensional distinctions, including witness/agent routing and canonical reference dependencies. |
+| [`27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md) | Historical forwarding stub. Current D4/D5 authority is document 34; quantum boundaries are documents 38 and 44. |
 | [`28_EFR_HYGIENE_BOUNDARY_THEOREM.md`](28_EFR_HYGIENE_BOUNDARY_THEOREM.md) | EFR hygiene boundary theorem; retained at 28 as the active on-disk compatibility label. |
 | [`00_KSTAR_DISAMBIGUATION.md`](00_KSTAR_DISAMBIGUATION.md) | Clarifies the three distinct senses of K: K* (extraction), K*_sel (selection complexity), and K(x) (Kolmogorov complexity). |
-| `21_TRIADIC_STABILITY_CORRESPONDENCE.md` | Correspondence showing the triadic structure is the unique stable configuration. |
-| `22_POWER_MAX_DEMONSTRATION.md` | The Power-Max Lemma: individual and collective optimization align under real coupling, long horizon, and enforced `eta = 0`. |
-| `23_DIMENSIONAL_CLOSURE_PROOF.md` | Proof of D6 ≡ D0 via coordinate degeneration on S². |
+| `21_TRIADIC_STABILITY_CORRESPONDENCE.md` | Historical correspondence; the selected triadic frame is not uniquely forced. |
+| `22_POWER_MAX_DEMONSTRATION.md` | Historical demonstration; current authority is `08_EFR_POWER_MAX_LEMMA.md`, including the extraction counterexample and Justice premise. |
+| `23_DIMENSIONAL_CLOSURE_PROOF.md` | Current D6 boundary contract: non-μ `b₆`/`r₆`, no literal identity or sixth positive freedom. |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE.md` | Convergence argument for the geometric exclusion (strategic/immune-response framing). |
 | [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Steel-thread path through the formal system for readers checking the proof spine. |
 | `08_EFR_POWER_MAX_LEMMA.md` | EFR-specific statement of the Power-Max Lemma. |
@@ -44,26 +48,28 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `13_EFR_TWO_SACRIFICES.md` | Analysis of the two sacrifice operators. |
 | `14_EFR_EPISTEMOLOGY_TRIAD.md` | Formalization of Empirical Observation, Inferential Logic, Structural Analysis. |
 | `15_EFR_WOLFRAM_NKS_INTEGRATION.md` | Integration with Wolfram's computational irreducibility. |
-| `16_EFR_TRANSCENDENTALS.md` | The transcendental numbers {0, 1, ∞}. |
-| `17_EFR_ONTOLOGY_COMPLETE.md` | Ontological completeness claim. |
+| `16_EFR_TRANSCENDENTALS.md` | Interpretive Beauty/Truth/Justice crosswalk; not a number taxonomy or Titan owner. |
+| `17_EFR_ONTOLOGY_COMPLETE.md` | Historical forwarding stub; no completeness claim remains active. |
 | `18_EFR_METHODOLOGY_COMPLETE.md` | Methodological completeness claim. |
 | `19_EFR_GEOMETRIC_EXCLUSION.md` | Geometric exclusion in the EFR context. |
 | `20_EFR_OPERATORS_ON_COMPLEX_PLANE.md` | Operator formalism on ℂ. |
 | [`29_PRIMITIVES_AND_TYPE_SIGNATURES.md`](29_PRIMITIVES_AND_TYPE_SIGNATURES.md) | Consolidated index of the formal system's primitives with their type signatures; points at canonical definitions without redefining them. |
-| [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md) | Proposed measurement protocols for `Φ̂, ν̂, B̂, Ê, η` — the empirical bridge the axiom layer has been missing. All protocols tiered `[C]`. |
+| [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md) | Independent node-measurement candidates for `Φ̂,V̂`, derived diagnostics, construct-validity kills, and the chart/node firewall. No instrument is validated. |
 | [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) | One-page consolidated audit of every falsifier attached to A1–A7, T1–T4, and the corollaries; distinguishes pulled vs. `[C] Proposed` rows. |
-| [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md) | The five-step discipline→theorem promotion protocol, with the φ-meter worked as the reference example. |
+| [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md) | Evidence-type transition protocol, Lyapunov discipline, noncircular testing, and rollback. |
 | [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md) | Game-theory treatment of `η = 0`, including the difference between public-goods-only and private-benefit channels. |
 | [`34_D4_D5_CANONICAL_REFERENCE.md`](34_D4_D5_CANONICAL_REFERENCE.md) | Canonical D4/D5 reference and routing surface for dimensional architecture claims. |
-| [`35_PHI_METER_V1_SPEC.md`](35_PHI_METER_V1_SPEC.md) | Concrete v1 rubric for measuring Φ̂ and ν̂ under the code-lens; retroactively formalizes the 2026-04-19 code audit and pre-registers the T3 cross-cycle falsifier. |
-| [`36_RUNTIME_LENS_V1_SPEC.md`](36_RUNTIME_LENS_V1_SPEC.md) | v1 rubric for the runtime lens (deploy / relay / uptime / recovery). Sibling of 35; no pilot yet; pilot lands via Sprint δ MEAS-7. |
-| [`37_ADOPTION_LENS_V1_SPEC.md`](37_ADOPTION_LENS_V1_SPEC.md) | v1 rubric for the adoption lens (activation / retention / referral / unit economics under η = 0). Forward-looking; no audit possible until Sprint 3 M21 (first paid pilot) lands. |
+| `35` / `36` historical application lenses | no active files; they do not define worldview evidence or notation |
+| [`37_ADOPTION_LENS_V1_SPEC.md`](37_ADOPTION_LENS_V1_SPEC.md) | superseded application stub; adoption metrics do not own worldview notation or evidence |
 | [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) | Source-first boundary for using single-photon, delayed-choice, Bell-test, and Nobel-2022 quantum-foundations results: `[A]` for independently established physics, `[I]` for Emergentism translation, `[C]` for systemic awareness-collapse / retrocausal / F5-as-physics claims. |
-| [`39_SUDA_CROSS_VALIDATION_PROTOCOLS.md`](39_SUDA_CROSS_VALIDATION_PROTOCOLS.md) | Cross-validation protocols for SUDA/formal-system measurement surfaces. |
+| [`39_SUDA_CROSS_VALIDATION_PROTOCOLS.md`](39_SUDA_CROSS_VALIDATION_PROTOCOLS.md) | Kintsugi calibration boundary: analytic reciprocal facts retained; circular pair-selection protocol withdrawn. |
 
 ## Axiom Count Note
 
-The framework currently canonicalizes **7 axioms (A1–A7)** in v0.4. Earlier documents may reference "5 axioms (O1–O5)"; this numbering is **retired** as the active formal canon. A7 (self-correction) was added in v0.4, and O3 (simple-connectedness) was shown to follow from O5.
+The framework currently seats **E1–E10** in
+[`../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md`](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).
+A1–A7 and O1–O5 remain genealogy only. The count of an editorial axiom assembly
+does not force a count of reality registers, transitions, or natural laws.
 
 `O1–O5` survives only as an **older public substrate-selection wager / compatibility packet** for pre-hardening references. It is not a second active axiom set running alongside `A1–A7`.
 

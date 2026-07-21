@@ -18,7 +18,7 @@ We fit competing functional forms on real output data and let cross-validation d
 Data: Munnell US-states panel (Rdatasets/plm/Produc.csv). Y=gsp, L=emp, K=pc+pcap.
 Kill-criteria (pre-registered here):
   K1 multiplicative-over-additive: Cobb-Douglas must beat ADDITIVE out-of-sample. (framework's weak leg)
-  K2 symmetric-balance-product:    (a,b) ~ (equal, sum~1) AND product-unit ~ general CD.
+  KC2 symmetric-balance-product:   (a,b) ~ (equal, sum~1) AND product-unit ~ general CD.
                                    If a != b (asymmetric) the phi=nu equator optimum is FALSE.
   K3 right substitution family:    best CES rho ~ 0 (Cobb-Douglas). rho far from 0 => wrong form.
 """
@@ -150,7 +150,7 @@ k1 = results["B cobb-douglas(free)"] < results["A additive(levels)"]
 print(f"  K1 multiplicative beats additive:        {'PASS' if k1 else 'FAIL'}  "
       f"(CD {results['B cobb-douglas(free)']:.0f} vs ADD {results['A additive(levels)']:.0f})")
 sym = abs(a_hat-b_hat) < 0.15 and abs(a_hat+b_hat-1) < 0.15
-print(f"  K2 SYMMETRIC balance-product (a~b, a+b~1): {'PASS' if sym else 'FAIL'}  "
+print(f"  KC2 SYMMETRIC balance-product (a~b, a+b~1): {'PASS' if sym else 'FAIL'}  "
       f"(a={a_hat:.2f}, b={b_hat:.2f})")
 prod_close = results["C product-unit(phi x nu)"] <= 1.05*results["B cobb-douglas(free)"]
 print(f"  K2b product-unit ~ general CD:           {'PASS' if prod_close else 'FAIL'}  "

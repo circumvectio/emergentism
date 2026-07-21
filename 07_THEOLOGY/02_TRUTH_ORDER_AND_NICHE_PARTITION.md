@@ -11,7 +11,7 @@ rosetta:
       role: "polyphenotypic niche partitioning across social functions"
     - level: L4
       column: Value Alignment
-      role: "K2/K4/eta-zero discipline preventing symbolic order from becoming domination"
+      role: "accountability, Grace Exit, and non-extraction preventing symbolic domination"
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
@@ -26,7 +26,7 @@ rosetta:
 **Status:** Canonical L7 boundary note
 **Date:** 2026-05-30
 **Evidence Tier:** [S] where applying existing non-capture invariants to institutional narrative; [I] where proposing social-theological morphology; [C] for any claim that this will replace existing states or corporations in the external world
-**Depends on:** [Symbol Design and Public Translation](01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md), [Pedagogy of Becoming](00_THE_PEDAGOGY_OF_BECOMING.md), [Framework Glossary](00_GLOSSARY.md), [Ontology: Finity as Boundary](../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [D4-D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Uplink Agents](../11_UPLINK/00_CORE/06_AGENTS.md), [`../VMOSK_A.md`](../VMOSK_A.md) (doctrine replicator stack)
+**Depends on:** [Symbol Design and Public Translation](01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md), [Pedagogy of Becoming](00_THE_PEDAGOGY_OF_BECOMING.md), [Framework Glossary](00_GLOSSARY.md), [Ontology: Finity as Boundary](../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [D4-D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
 **Kill Criteria:** If the note is used to justify coercive theocracy, state religion, corporate capture, priestly gatekeeping, birth caste, race rank, class rank, human-worth hierarchy, or denial of Grace Exit, it has failed and must be corrected or removed.
 
 ---
@@ -56,7 +56,8 @@ In shorter language:
 > sovereignty containers.**
 
 This is an L7 institutional-narrative proposal. It does not execute itself.
-Any binding implementation descends to L4/K2, receipts, and consent.
+Any binding implementation requires the L4 value boundary, informed consent,
+an `AuthorizationEnvelope`, and commitment/outcome receipts.
 
 ## Create: Truth as the Shared Orientation
 
@@ -108,7 +109,7 @@ what kind of truth they are fitted to handle:
 | L1 boundary | What is raw and present? | intake, labor, material contact, no status penalty |
 | L2 truth-cut | What is false or noisy? | analysis, detection, evidence filtering |
 | L3 method | What follows and what works? | audit, execution logic, procedure |
-| L4 value | What should be signed? | responsibility, judgment, K2-facing decision |
+| L4 value | What should be committed? | responsibility, judgment, accountable decision |
 | L5 architecture | What structure holds? | system design, institutional morphology |
 | L6 subtraction | What must be released? | anti-reification, pruning, finity, silence |
 | L7 symbol | What helps the whole remember? | public narrative, rites, shared language |
@@ -118,10 +119,10 @@ These roles are:
 - opt-in where possible;
 - mobile across time as capacity and context change;
 - receipt-bound rather than identity-bound;
-- constrained by K4 / Grace Exit;
+- constrained by Grace Exit;
 - forbidden from becoming human-worth hierarchy.
 
-**Capture kill-test — a functional caste is *falsified and must be dissolved* (L6 subtraction + L4 refusal) if ANY of these holds:** (1) anyone claims the role is permanent or by birth; (2) exit is refused or penalized (K4 Grace Exit broken); (3) the role's receipt is not public/auditable; (4) the selection gate becomes identity-capture (role → human-worth rank). **Named pathway:** any witness may invoke the test; an unresolved trip routes to L4/K2 with the role *suspended pending review*. (Stating "this must not happen" is not enough — this names who judges and what happens.)
+**Capture kill-test — a functional caste is *falsified and must be dissolved* (L6 subtraction + L4 refusal) if ANY of these holds:** (1) anyone claims the role is permanent or by birth; (2) exit is refused or penalized; (3) the role's receipt is not public/auditable; (4) the selection gate becomes identity-capture (role → human-worth rank). **Named pathway:** any witness may invoke the test; an unresolved trip suspends the role pending a contestable L4 review under the `AuthorizationEnvelope`. (Stating "this must not happen" is not enough — this names who judges and what happens.)
 
 The biological analogy is niche partitioning and speciation, not domination.
 Differentiated forms reduce destructive competition by taking different roles
@@ -172,7 +173,7 @@ biological superiority, racial destiny, eugenics, permanent human classes
 ```
 
 The safe claim is that social organisms can differentiate into distinct
-truth-serving forms: schools, guilds, protocols, monasteries, labs, DAVs,
+truth-serving forms: schools, guilds, protocols, monasteries, labs, associations,
 commons, councils, and archives. Each may develop its own symbols, rhythms,
 selection gates, and training lineages. None may claim final ownership of the
 person or the Ground.
@@ -206,19 +207,21 @@ Or shorter:
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. This file has no authority to justify birth caste, race hierarchy, class
    hierarchy, state religion, priestly authority, or corporate capture.
 2. Translate "caste" as functional role / pramana / niche posture unless a
    source is explicitly discussing historical caste systems.
 3. Keep L7 read-only in action: witness, narrate, and propose. Binding social
-   execution descends to L4/K2 with receipts and exit rights.
+   execution requires L4 value review, accountable authorization, receipts,
+   and exit rights.
 4. Treat any claim that this social morphology will replace states or
    corporations as `[C]` unless backed by external evidence.
 5. When a symbol or role becomes identity-capture, run L6 subtraction and L4
    refusal.
 
 **Canonical Path:** `01_EMERGENTISM/07_THEOLOGY/02_TRUTH_ORDER_AND_NICHE_PARTITION.md`
-
-**Project VMOSK-A:** `../VMOSK_A.md` — truth order / niche partition serves the doctrine replicator stack; functional caste as niche (not rank) and non-capture invariants trace to VMOSK-A per 01_EMERGENTISM/AGENTS.md.

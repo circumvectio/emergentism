@@ -136,13 +136,18 @@ B = sech(√E)          E = (arcsech B)²
 
 Near the equator: `E ≈ 2(1 − B)` — Suda's energy is twice the balance deficit to leading order.
 
-### 3.3 The Titan Emblem
+### 3.3 Numeric log symmetry; no Titan logarithm
 
-```
-⊙ = • × ○     →     log ⊙ = log • + log ○     →     0 = (−∞) + (+∞)
+```text
+φν=1  →  log φ+log ν=0
+s:=log ν  →  log φ=−s
 ```
 
-In log coordinates, the emblematic equation becomes a statement about pole symmetry: the two infinities of the logarithmic line are exactly balanced around the origin. The void is at `s = −∞`, the unbounded at `s = +∞`, and finity sits at `s = 0` — equidistant from both.
+These are numeric identities on the open positive chart. No `log`, addition,
+or multiplication is defined on sovereign TitanFrame, so the older step that
+applied `log` to Titan glyphs is retired. The limit statements `s→−∞` and
+`s→+∞` describe opposite ends of this numeric coordinate; they do not add
+projective infinities or Titan terms.
 
 ### 3.4 The Extraction Ratio Diagnostic
 
@@ -208,7 +213,7 @@ The three-chart structure was independently derived by Minoru Suda (2025) in *Fr
 See:
 - [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md) §2a — the formal bridge
 - [`00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md) — convergent-source reference
-- [`00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md) — full value extraction
+- [Suda value-extraction review](../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md) — current attributed source review
 - [`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](../../01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) — the earlier exploratory derivation note
 
 ---
@@ -220,4 +225,4 @@ See:
 3. **The mathematics is all [A].** Nothing here is a new theorem. The contribution is the *reading* — that centering the number line at 1 in log coordinates makes the framework's entire structure elementary.
 4. **The ontological claim remains [I].** That "1 is the center of the number line" is a mathematical truth in the multiplicative/logarithmic register `[A]`. That "this means finity is the center of Dasein" is an interpretive reading `[I]`.
 
-⊙ = • × ○
+•   ⊙   ○

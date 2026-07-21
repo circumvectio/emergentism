@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "DHARMA YUDDHA"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # DHARMA YUDDHA
@@ -241,7 +240,10 @@ preserve peace; he can contribute to the collapse of the mesh.** `[I]`
 
 *"I am Time, the great destroyer of worlds."* (11.32)
 
-Translation: **Kāla. L0 = L∞. The boundary condition. The pole that the equator exists between. The reminder that the game has limits — and that within those limits, the warrior must decide whether action is the non-extractive move.**
+Translation: **Kāla. L0 and L∞ are distinct boundary rows around the selected
+equatorial game. Their role-comparison reminds us that the game has limits—and
+that within those limits, the warrior must decide whether action is the
+non-extractive move.** `[I]`
 
 ---
 

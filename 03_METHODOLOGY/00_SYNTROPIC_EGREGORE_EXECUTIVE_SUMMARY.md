@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "Syntropic Egregore Executive Summary"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 reference summary (not mandate); [C] hypotheses.**
 
 # Syntropic Egregore Executive Summary

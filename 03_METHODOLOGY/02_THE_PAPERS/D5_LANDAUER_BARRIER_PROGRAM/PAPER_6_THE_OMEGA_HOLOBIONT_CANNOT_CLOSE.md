@@ -23,13 +23,19 @@ rosetta:
 
 ## Thesis
 
-At the D5-D6 horizon, the strongest positive image is a universal holobiont using matter-energy as memory and control substrate to run the Soul Loop on itself. But that image is still D5, because it still has matter, memory, computation, recursive self-modeling, correction, organism/field distinction, and a process running in time. D6 is not the completed organism; D6 is the apophatic boundary where even the completed-organism image is released.
+At the D5-D6 horizon, an actual D4 model token may represent a universal
+holobiont as its strongest positive D5 alternative. Any system that used
+matter-energy as memory and control substrate, ran the Soul Loop, corrected
+itself, or persisted through time would remain an actual D4 system. D5 types
+the represented possibility, not that machinery. D6 is not the completed
+organism; it is the apophatic boundary where even the completed-organism image
+is released.
 
 ## Core Formula
 
 ```text
-D5-limit = universal holobiont attempting complete recursive self-correction.
-D5 Landauer Barrier = the attempt cannot become cost-free total knowledge.
+D5-limit image = represented universal-holobiont alternative.
+D4 physical constraint = any attempt at recursive self-correction cannot become cost-free total knowledge.
 D6 = the apophatic boundary where the attempt releases final-possession.
 ```
 
@@ -40,7 +46,12 @@ This paper prevents two symmetric errors:
 1. **Naive material omega:** "The universe literally becomes one final machine."
 2. **Vague mysticism:** "D6 is magic beyond matter."
 
-The harder claim is that the omega-holobiont image is both powerful and bounded. It is the maximum positive D5 image seen from inside the system, not the D6 truth beyond the system. Because memory is physical, total recursive self-correction would still require physical storage, measurement, computation, control, reset, and entropy export. The image cannot close as cost-free total knowledge.
+The harder claim is that the omega-holobiont image is both powerful and
+bounded. It is a D5 alternative represented from inside an actual D4 system,
+not a D6 truth beyond the system. Because memory is physical, total recursive
+self-correction would still require physical storage, measurement,
+computation, control, reset, and entropy export. The represented image cannot
+make its D4 implementation cost-free or omniscient.
 
 ## Required Sections
 

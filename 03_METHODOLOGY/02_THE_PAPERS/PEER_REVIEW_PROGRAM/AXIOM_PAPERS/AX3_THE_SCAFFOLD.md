@@ -1,6 +1,10 @@
 # AX3 — THE SCAFFOLD
 ### A Dimensional-Emergence Scaffold and Its Honest Limits
 
+> **Historical peer-review artifact.** This paper audits superseded A3 and
+> preserves its wording as genealogy. It is not a current D-register owner;
+> the dimension-first register and Settled Canon Registry supersede it.
+
 **Axiom (faithful):** Reality unfolds D0→D6; each level emerges at its μ-limit (saturation); D6 ≡ D0 (closure). **Force↔dimension assignments are `[I]`, "mapped by analogy."**
 **Corpus tier:** `[S/I]`. **Honest tier:** `[S]` for the *structure* (a graded emergence ladder); `[C]`/numerology for the *physics* (force↔dimension); **not externally submittable as physics** (HOLD).
 

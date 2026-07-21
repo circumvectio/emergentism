@@ -3,7 +3,6 @@ rosetta:
   primary_column: "Meta"
   register: "[S/I]"
   canonical_phrase: "Known Unknowns Program"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # THE KNOWN UNKNOWNS PROGRAM
@@ -76,7 +75,7 @@ Questions intentionally parked until a gating condition is met.
 Examples:
 
 - expensive new-lab builds when a literature path can answer the first question more cheaply
-- large public deployment claims before `K2`, governance, and anti-capture architecture are hardened
+- large public deployment claims before accountable authorization, governance, and anti-capture architecture are hardened
 
 ---
 
@@ -104,7 +103,7 @@ Priority items:
 1. **AMRITA at zero cost**
 2. **Phi-meter without a new instrument**
 3. **Recommendation quality under multiplicative gates**
-4. **Private-DAV K2 / public-governance-safe recommendation evaluation**
+4. **Private-action / public-governance-safe recommendation evaluation**
 
 ### Lane C — Institution and Civilization
 
@@ -139,7 +138,7 @@ These are the strongest next papers implied by the present corpus:
 4. **Paper L — The Phi-Meter Without a New Instrument**
 5. **Paper M — The Sphere as Translation Layer**
 6. **Paper N — Productive Transcendental Wagers**
-7. **Paper O — D5 as Strong Emergence in Genesis, Weak Emergence in Governance**
+7. **Paper O — Epistemic Asymmetry and the Macro-Constraint Test**
 8. **Paper P — The SU(3) Obstruction on Bare `S²`**
 9. **Paper Q — From `S²` to `3+1`: The PSL(2,C) Bridge**
 10. **Paper R — Retrospective eta-Zero**
@@ -155,7 +154,7 @@ These are the strongest next papers implied by the present corpus:
 If only a few papers are written next, write them in this order:
 
 1. **Paper I — The Known Unknowns Program**
-2. **Paper O — D5 as Strong Emergence in Genesis, Weak Emergence in Governance**
+2. **Paper O — Epistemic Asymmetry and the Macro-Constraint Test**
 3. **Paper X — Information Topology and Macro-Constraints**
 4. **Paper M — The Sphere as Translation Layer**
 5. **Paper N — Productive Transcendental Wagers**

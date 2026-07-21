@@ -244,7 +244,7 @@ These must be pre-registered.
 ### K1
 If additive models predict behavior as well or better than the multiplicative model, the strong claim fails in that domain.
 
-### K2
+### KC2
 If the Φ coding cannot be replicated independently, the result is not trustworthy.
 
 ### K3

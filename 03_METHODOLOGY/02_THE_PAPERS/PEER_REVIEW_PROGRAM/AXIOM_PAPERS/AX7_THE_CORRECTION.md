@@ -1,6 +1,9 @@
 # AX7 — THE CORRECTION
 ### A Self-Correcting Framework: Built-In Falsification as a Design Principle
 
+> **Historical peer-review artifact.** This audits superseded A7. E1–E10 and
+> the current correction protocol control; quoted axiom language is genealogy.
+
 **Axiom (faithful):** Any encoding without falsification + evidence tiers + a self-correction protocol degrades into dogma; **the set includes its own destruction manual.** *(A7.1: the framework is abductive — coherentist inside, but from outside, coherence is not enough; the empirical bridge must survive.)*
 **Corpus tier:** `[S]`. **Honest tier:** `[S]` — the strongest axiom *as a principle*; its self-demonstration is the method, not the evidence (§6).
 

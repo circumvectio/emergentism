@@ -23,8 +23,8 @@ rosetta:
 **Status:** Canonical epistemic bridge for first-person evidence
 **Date:** 2026-04-14
 **Evidence Tier:** [I/A] Interpretive inside the core state; partially supported by established neurophenomenology, interoceptive systemic awareness research, and contemplative science literatures
-**Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md)
-**See also:** [The Replication Protocol](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_REPLICATION_PROTOCOL.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
+**Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+**See also:** [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
 
 ---
 
@@ -66,7 +66,9 @@ Empirical Observation does **not** mean that every private feeling becomes truth
 
 It means something narrower and more disciplined:
 
-- first-person disclosure is a valid evidence channel for the framework's D5 disclosure layer and its D6 closure horizon
+- first-person disclosure and every resulting report are actual D4 events; they
+  may concern represented D5 possibilities, but they do not disclose a D5
+  consciousness layer or turn D6 into an experiential horizon
 - it can justify choosing an idealist or disclosure-centered reading where mathematics alone underdetermines the core state
 - it does not, by itself, upgrade physics, biology, or public empirical claims
 

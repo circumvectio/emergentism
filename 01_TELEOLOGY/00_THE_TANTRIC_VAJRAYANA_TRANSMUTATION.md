@@ -12,7 +12,7 @@ rosetta:
 
 **Status:** Interpretive bridge - internal doctrine support, 2026-05-30
 **Evidence tier:** [I] biological/esoteric synthesis; [C] for any causal claim beyond metaphor.
-**See also:** [The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md), [F5 Force Map](01_F5_FORCE_MAP_AND_EKTROPY.md)
+**See also:** [The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md), [Theurgy and F5 projection](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md)
 
 This document records an interpretive hypothesis about the threshold where ecological energy
 flow becomes sexual-selection friction, and where esoteric practice can be read as a metaphor for

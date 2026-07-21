@@ -17,7 +17,7 @@ rosetta:
 
 ## The Burri-Anthropic Torus as the Physical Realization of the Framework
 
-> **Genesis document (pre-hardening, 2026-03-23).** This document makes strong physical-realism claims without evidence-tier discipline. The canonical treatment of the torus as physical realization is in [`00_THE_LAGRANGIAN_SPHERE.md`](00_THE_LAGRANGIAN_SPHERE.md) and [`00_THE_BINDU_WAS_ALWAYS_HERE.md`](../90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md). Read this document as historical synthesis, not as active canon.
+> **Genesis document (pre-hardening, 2026-03-23).** This document makes strong physical-realism claims without evidence-tier discipline. The current [Generative Lagrangian](../01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md) does not establish the torus as physical reality; the older [Lagrangian Sphere](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_THE_LAGRANGIAN_SPHERE.md) is archive genealogy. Read this document as historical synthesis, not active canon.
 >
 > **Evidence tier:** [C] throughout — the Burri-Anthropic Torus is a conjectural physical model, not an established mathematical object.
 >

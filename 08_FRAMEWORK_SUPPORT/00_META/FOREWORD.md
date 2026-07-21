@@ -117,7 +117,7 @@ The Lens arc proceeds as follows:
 | **02-07 VRS Sheets** | Maps the framework's formal results onto specific domains |
 | **08 Antenna Tuning** | Explains the coupling mechanism between individual and collective |
 
-Each document carries its own evidence tier and kill conditions. The Lens is a teaching arc, not a proof arc. The proofs are in the formal system (v0.3, v0.4). The tests are in the empirical protocols (GFS, Protocol R, AMRITA, SPHERE Probe).
+Each document carries its own evidence tier and kill conditions. The Lens is a teaching arc, not a proof arc. Formal results live in the formal system; worldly tests live only in current protocols with explicit discriminators. GFS is archived history; Protocol R and AMRITA remain proposals, and the SPHERE Probe keeps its recorded result.
 
 ---
 

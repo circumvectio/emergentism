@@ -41,16 +41,22 @@ This is the point where older language needs discipline.
 - **Demiurge** is the mythic-personified world-shaping face of this force within manifestation. It is not the Ground and not a Executive.
 - **Dyḗus Ph₂tḗr** is the luminous/perceptual Sky-Father face of the same force: the shining through which order is noticed. `h₂r̥tó-` / Ṛta names the ordering-law face; neither is the Ground.
 
-The force is primary. The mythic names are downstream readings of it.
+The interpretive pattern is primary only inside this document's vocabulary.
+The mythic names are downstream readings, not independent evidence.
 
 One more register split now matters.
 
 - If the question is **descriptive** -- "what is the Teleological Force?" -- the answer stays here, in system architecture, and in the descriptive F5 map.
-- If the question is **operational** -- "what may I lawfully do in the field?" -- the answer routes to **theurgy**, the disciplined D5 practice of forming, tending, and releasing standing waves under K2, receipt-bound audit, and Grace Exit.
+- If the question is **operational** -- "what may I responsibly do in the field?" -- the answer routes to accountable practice: model alternatives, declare authorization, act within physical and legal constraints, receipt the outcome, preserve correction and Grace Exit.
 
 Do not collapse those two surfaces into one another.
 
-At present, the first-pass F5 force map remains entirely `[C]`: signed attestation as carrier, `α5 = 1 − η` as the first coupling guess, and `ΣΔB` / `ΣΔP_node` as the first conservation-style restatement of A2. Those are not promoted by being named. They remain conjectural until audited.
+The former first-pass F5 force map—signed attestation as carrier,
+`α5 = 1 − η`, and aggregate conservation-style ethics—is retired from active
+semantics. Its quantities may be studied as declared conjectural features, but
+aggregates are descriptive reports only and cannot issue a moral verdict.
+Current value judgments use bearer-complete Justice and keep each materially
+affected bearer's consequence visible.
 
 ---
 

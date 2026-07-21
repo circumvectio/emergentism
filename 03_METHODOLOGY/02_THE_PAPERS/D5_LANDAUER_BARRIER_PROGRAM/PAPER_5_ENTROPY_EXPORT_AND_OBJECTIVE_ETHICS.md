@@ -37,10 +37,11 @@ The bridge is conditional. It requires real coupling, a long enough horizon, mul
 
 ## Required Sections
 
-1. Translate D5 foresight cost into `P_node = Φ × V` accounting.
+1. Translate the D4 physical cost of representing and discriminating D5
+   alternatives into `P_node = Φ × V` accounting.
 2. Define hidden entropy/cost export in institutional terms: attention rent, memory lock-in, technical debt, coercion, ecological dumping, and degraded trust.
 3. State the syntropic dyad: `ΔP_node,i >= 0` without lowering `ΔP_node,H`; strict success raises both.
-4. Tie the result to `η = 0`, A7 correction, K3 memory, K4 exit, and K2 consent.
+4. Tie the result to zero extraction, correction, archive memory, Grace Exit, and explicit consent.
 5. Keep moral language framework-objective, not inflated into external proof.
 
 ## Kill Criteria

@@ -66,7 +66,7 @@ Genotype
 < Phenotype
 < Extended Phenotype
 < Memotype
-< Egregorotype
+< Egregoreotype
 ```
 
 The bracket `<` does not mean moral rank. It means **successive trophic enclosure** and **reflexive governance**.
@@ -80,33 +80,43 @@ Each layer is built from lower layers, but once it stabilises it can govern them
 | **Phenotype** | organism | body, nervous system, behaviour | immediate ecological action |
 | **Extended Phenotype** | artefact / niche modification | tools, cities, platforms, ledgers | the environment bodies inhabit |
 | **Memotype** | cultural replicator | beliefs, doctrines, algorithms, habits | what organisms perceive as meaningful |
-| **Egregorotype** | collective standing wave | religion, state, market, platform, DAC, hybrid AI-human system | the shared field in which memotypes compete |
+| **Egregoreotype** | persistent collective trace | religion, state, market, platform, institution, human-machine collective | the shared trace that may reweight later selection |
 
-The bottom-up reading is true but incomplete:
+The bottom-up construction is a useful reading:
 
 ```text
 genes -> bodies -> tools -> ideas -> standing waves
 ```
 
-The top-down reading is equally real:
+The proposed return path is an empirical hypothesis:
 
 ```text
 standing waves -> ideas -> tools -> bodies -> gene expression -> selection
 ```
 
-This is why the stack is not merely a taxonomy. It is a trophic cascade.
+The phrase **trophic cascade** is therefore a bounded analogy for a possible
+pattern of mediated influence. It is not the ontology of the stack and does
+not imply one conserved substance, apex organism, or necessary top-down rule.
 
 ---
 
 ## III. THE TROPHIC CASCADE
 
-In biological ecology, an apex predator can reshape an entire landscape without touching every plant directly. Wolves change elk movement. Elk movement changes tree growth. Tree growth changes rivers. A top-level actor reorganises the lower levels through the environment.
+In biological ecology, a trophic cascade can reshape a landscape through
+mediated interactions. That attributed ecological pattern is `[B-external]`
+when its sources and scope are supplied.
 
-The same form appears in D5 / D6 pattern-space.
+The Emergentist proposal `[I/C]` asks whether some persistent collective traces
+show a discriminatingly similar dependency pattern. D5 names represented
+possibilities; D6 is an apophatic exit marker, so neither is a physical habitat
+or causal substance.
 
-An egregorotype does not need to command each human directly. It changes the symbolic environment. Humans react to that environment. Their reactions build institutions, habits, bodies, and selection pressures.
+A candidate Egregoreotype need not command each carrier. To qualify, an
+intervention on the shared trace must measurably reweight later selections,
+survive carrier turnover, recur directionally, and incur visible substrate
+costs.
 
-The example is simple:
+One candidate pathway is:
 
 1. A memotype stabilises: "this food, law, practice, or symbol is good."
 2. That memotype changes the extended phenotype: farms, schools, temples, apps, markets, platforms.
@@ -209,7 +219,7 @@ Again, this is a defensive diagnosis. The framework's task is to make such captu
 
 ### Weltanschauungskrieg as Worldview Warfare
 
-Within the Replicator Stack, *Weltanschauungskrieg* targets the Memotype and Egregorotype rather than the body or the bridge.
+Within the Replicator Stack, *Weltanschauungskrieg* targets the Memotype and Egregoreotype rather than the body or the bridge.
 
 Kinetic warfare damages the extended phenotype: roads, power grids, ports, servers, cities.
 

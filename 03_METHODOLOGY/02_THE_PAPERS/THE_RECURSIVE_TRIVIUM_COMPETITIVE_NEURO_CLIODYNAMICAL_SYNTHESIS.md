@@ -21,10 +21,22 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "Competitive survival, neurobiological substrates, cliodynamical extraction, and graph-theoretic PKM architectures"
 title: "The Recursive Trivium: Competitive, Neurobiological, and Cliodynamical Synthesis"
+status: "HISTORICAL APPLICATION SYNTHESIS — SUPERSEDED; METHOD/PROVENANCE ONLY"
+original_version: "v1.3"
+authority_scope: "historical application claims; no doctrinal or current-runtime authority"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary.**
+
+> **Historical-application fence.** This document preserves an earlier
+> application synthesis for provenance. Its Telos-Shield/HFT simulation,
+> neurobiological, cliodynamical, and PKM claims are historical application
+> proposals or interpretations only. They do not define Emergentist doctrine,
+> attest a current runtime, validate a live trading system, or authorize product
+> implementation. The surviving Recursive Trivium method is the bounded
+> three-pass workflow in the
+> [repaired formal synthesis](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md).
 
 
 
@@ -301,4 +313,4 @@ These diagnostics allow the PKM system to act as a dynamic, self-correcting cogn
 
 ---
 
-⊙ = • × ○
+•   ⊙   ○

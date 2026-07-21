@@ -16,14 +16,14 @@ rosetta:
   canonical_phrase: "The Doctrinal Ladder"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 public ladder.**
 
 # The Doctrinal Ladder
 
 **Status:** Active public reading path
 **Evidence tier:** [S] for corpus routing and formula order; [I] for doctrinal interpretation
-**Depends on:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [D-Scaffold / L-Ladder Bridge](../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+**Depends on:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [historical D-Scaffold / L-Ladder Bridge](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md), [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 
 ---
 
@@ -94,7 +94,7 @@ The Foundation roots remain:
 | L1 | Objective Function | Direction / F5 / direct gradient-sensing |
 | L2 | Data Science | How a pattern becomes knowable |
 | L3 | Auditing | How claims are tested, downgraded, and audited |
-| L4 | Value Alignment | Value and K2-signed action |
+| L4 | Value Alignment | Value, accountable commitment, and receipted action |
 | L5 | System Architecture | Affirmative structure: S², formula block, Rosetta, formal system |
 | L6 | Core State | Axiomatic guard: Ground not exhausted by structure |
 | L7 | Institutional Narrative | Public-symbol return without gatekeeping |
@@ -105,20 +105,20 @@ insight to signed action.
 
 ---
 
-## 4. K-System Specification
+## 4. Practice-Safeguard Specification
 
-The ladder is safe only when its operational claims remain bound by the K
-invariants:
+The ladder remains usable only while its operational claims stay bound by these
+plain safeguards:
 
-| K | Rule | Website implication |
+| Safeguard | Rule | Website implication |
 |---|---|---|
-| K0 | No receipt, no reality. | Claims need source paths, evidence tiers, and audit trails. |
-| K2 | The human signs. AI recommends. | No page may imply automated sovereignty, automated theurgy, or automated moral authority. |
-| K3 | Archive first; do not erase ground truth. | Public compression may hide complexity, but source-truth remains available. |
-| K4 | Grace Exit. | The framework must remain put-down-able; `/sit` is not ornamental. |
+| Receipts | No receipt, no reality. | Claims need source paths, evidence tiers, and audit trails. |
+| Authorization | Consequential action names principal, mandate, actor, custody, and consequence bearer. | No page may manufacture authority from a model output. |
+| Memory | Archive first; do not erase ground truth. | Public compression may hide complexity, but source truth remains available. |
+| Grace Exit | Leave with everything. | The framework must remain put-down-able; `/sit` is not ornamental. |
 
-K2 is especially important: the website may orient, warn, derive, and invite
-practice. It may not claim the reader's signature.
+The authorization boundary is especially important: the website may orient,
+warn, derive, and invite practice. It may not manufacture the reader's consent.
 
 ---
 

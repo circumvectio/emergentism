@@ -1,70 +1,56 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Tooling Compatibility Shim
-  secondary:
-    - level: L6
-      column: Authority Compression
-      role: "keep Claude-style tool discovery subordinate to AGENTS.md and README.md"
-    - level: L3
-      column: Tool Inventory Audit
-      role: "separate local command references from doctrine or runtime claims"
-    - level: L4
-      column: Runnable Commands
-      role: "preserve script entry points as executable support surfaces"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[B/S]"
-  canonical_phrase: "09_TOOLS — Claude Compatibility Shim"
-title: "09_TOOLS — Tooling Compatibility Shim"
-status: "ACTIVE — compatibility shim"
-evidence_tier: "[B] for local tool inventory; [S] for tool-authority boundary."
+type: emergentism-agent-route
+title: "09 Tools — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 09_TOOLS — Tooling Compatibility Shim
+# 09 Tools — Claude compatibility route
 
-Scripts, compilers, data pipelines, and deployment configs. The instruments that strip to essence.
+**Lane:** `09_TOOLS`
 
-## Tool Inventory
+## Read first
 
-| Tool | Purpose | Usage |
-|------|---------|-------|
-| `01_SCRIPTS/compile_uplink.py` | Compile Uplink files from source docs | `python 01_SCRIPTS/compile_uplink.py --check` |
-| `01_SCRIPTS/compile_state.py` | Auto-generate 09_STATE.md from P-SCORES | `python 01_SCRIPTS/compile_state.py` |
-| `01_SCRIPTS/run_backbone_tests.py` | Run backbone test suite | `PYTHONPATH=. python 01_SCRIPTS/run_backbone_tests.py` |
-| `01_SCRIPTS/add_frontmatter.py` | Add YAML frontmatter to markdown files | `python 01_SCRIPTS/add_frontmatter.py <file>` |
-| `01_SCRIPTS/check_links.py` | Verify cross-document links | `python 01_SCRIPTS/check_links.py` |
-| `01_SCRIPTS/scrub.py` | Clean sensitive data from files | `python 01_SCRIPTS/scrub.py` |
-| `01_SCRIPTS/visualize_lx.py` | Visualize L(x) rate curve | `python 01_SCRIPTS/visualize_lx.py` |
-| `03_SIMULATIONS/spectrum_sphere.py` | Reproduce the weighted sphere-spectrum baseline used by the hardening packet | `python 03_SIMULATIONS/spectrum_sphere.py` |
-| `03_SIMULATIONS/spectrum_flat_1d_cosh.py` | Reproduce the flat 1D `cosh` control used in the operator audit | `python 03_SIMULATIONS/spectrum_flat_1d_cosh.py` |
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Subdirectories
+## Pure-worldview boundary
 
-| Directory | Purpose |
-|-----------|---------|
-| `01_SCRIPTS/` | Active one-file repository utilities |
-| `02_COMPILERS/` | Uplink and wiki compilers |
-| `03_SIMULATIONS/` | Framework simulations, DAC harness, and scenario fixtures |
-| `04_DATA_PIPELINES/` | Data ingestion and transformation |
-| `05_DEPLOY/` | Docker, deployment configs (docker-compose.yml, Dockerfile.heartbeat) |
-| `06_PACKAGES/` | Reusable shared libraries |
-| `07_AGENT_OPS/` | Agent operation utilities |
-| `08_AUDIT_ARTIFACTS/` | Audit helpers and generated evidence outputs |
-| `09_DAC_FRAME/` | DAC Framework operational tools |
-| `10_SPRINT_GATES/` | Sprint-gate packaging and digest utilities |
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Constitutional Law
+## Epistemic contract
 
-> The cognition discriminates; the substrate trusts. (D35)
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-These tools serve the organism. They do not decide for it.
+## Rosetta dispatch
 
-## Authority Rule
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- tools may emit summaries, compiled docs, state files, and deploy artifacts
-- emitted output is not automatically canonical because a tool produced it
-- when tool output conflicts with source doctrine or source product truth, repair the owner and rerun the tool
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-Zero-Sum Resolution Equation
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

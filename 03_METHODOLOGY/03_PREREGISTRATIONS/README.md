@@ -5,12 +5,12 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[C/I]"
+  register: "[C/B/S]"
   canonical_phrase: "03_PREREGISTRATIONS — Prediction Designs and Results"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 prereg; pilot [I] explicitly not upgraded (P-EQ kill fired, published as falsification per A7/K3).**
+**Corpus:** Emergentism
+**L3 prereg; `[C]` designs, `[B]` executed results with custody, and `[S]` protocol consequences remain distinct. The P-EQ pilot is `[B-internal]` with an `[I]` preliminary-falsification reading.**
 
 # 03_PREREGISTRATIONS — Prediction Designs and Results
 

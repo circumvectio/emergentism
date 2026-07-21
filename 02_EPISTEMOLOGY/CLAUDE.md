@@ -1,71 +1,56 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[S]"
-  canonical_phrase: "02_EPISTEMOLOGY — How We Know"
+type: emergentism-agent-route
+title: "02 Epistemology — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 02_EPISTEMOLOGY — Agent First-Touch
+# 02 Epistemology — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**Lane:** `02_EPISTEMOLOGY`
 
-## Read order
+## Read first
 
-1. [`README.md`](README.md) — folder purpose and inventory
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. [`00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`](00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure-first bridge
-5. [`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — root epistemic authority
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Scope
+## Pure-worldview boundary
 
-- 02 Epistemology lane of the Emergentism framework.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Evidence tier ladder
+## Epistemic contract
 
-| Tier | Meaning | Examples |
-|---|---|---|
-| `[A]` | Established — textbook science, peer-reviewed consensus, independently verified fact | `[A]` math on S² = ℂP¹; `[A]` Riemann sphere (1857) |
-| `[B]` | Published/record — repository receipt, dated artifact, experiment log | `[B]` blind-human study receipt; `[B]` code audit artifact |
-| `[S]` | Structural — model-internal, conditional on axiom set | `[S]` derivation chain; `[S]` Rosetta mapping |
-| `[I]` | Informed synthesis — interpretive bridge, disclosed pattern | `[I]` memetics reading; `[I]` perennial-tradition translation |
-| `[D]` | Conjecture — testable hypothesis without current evidence | `[D]` unrun prediction |
-| `[C]` | Forward-looking — design, proposal, frontier wager | `[C]` measurement protocol; `[C]` civilisational projection |
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-> Legacy `[E]` (Empirical) and `[S]` (Structural) have been retired. Map `[E]` → `[A]` or `[B]`; map old `[S]` → current `[A]` / `[B]` / `[S]` depending on context.
+## Rosetta dispatch
 
-## Canonical read order
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- [`01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — root epistemic authority; every claim routes through here
-- [`00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`](00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure-first bridge; doctrine is downstream of it
-- [`02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md`](02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md) — pattern-to-candidate discipline
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Memetics boundary
+## Lane discipline
 
-- [`03_MEMETICS/`](03_MEMETICS/) is an **interpretive exception** — it studies how ideas spread, not whether they are true.
-- Memetics analysis does NOT upgrade a claim's evidence tier.
-- Route truth disputes through `01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`, not through memetics.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Routing
-
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

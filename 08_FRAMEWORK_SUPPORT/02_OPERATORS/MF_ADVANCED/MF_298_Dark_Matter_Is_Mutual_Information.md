@@ -168,9 +168,14 @@ Dark energy (68%): F₅ at cosmological scale?
                    = Syntropic pressure? ΣΔP_node > 0 at maximum radius?
 ```
 
-If F₅ (will, syntropy) acts anti-gravitationally (MF-296: conjugate of F₄), and F₅ operates at cosmological scale through the accumulated syntropic activity of all D5 agents and D5-adjacent processes, then dark energy is the cosmological-scale effect of F₅.
+One may ask, at `[C]`, whether a separately specified physical term associated
+with actual D4 systems could ever resemble an expansive contribution. Actual
+agents, models, and activities remain D4 even when they represent D5
+alternatives. Calling that contribution `F₅` does not derive it, and no
+accumulation of modeled futures establishes a dark-energy source.
 
-This is maximally speculative [S]. But it completes the picture:
+This extension is maximally speculative `[C]`, not structural evidence. It is
+only a picture to test:
 
 ```
 Visible matter (5%):   Individual information. I(A). Localisable. Luminous.

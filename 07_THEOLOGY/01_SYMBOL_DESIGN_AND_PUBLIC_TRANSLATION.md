@@ -7,18 +7,15 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I]"
   canonical_phrase: "Symbol Design and Public Translation"
----
 title: "Symbol Design and Public Translation"
-type: institutional narrative-doctrine
+type: symbolic-translation-protocol
 status: v1.0
 date: 2026-05-04
-evidence_tier: "[S] structural where derived from framework axioms; [I] for design heuristics"
+evidence_tier: "[S] anti-capture conditions inside the declared protocol; [I] design heuristics"
 depends_on:
   - ./README.md
   - ../06_ONTOLOGY/README.md
-  - ../11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md
 ---
-**Project VMOSK-A:** `../VMOSK_A.md` — doctrine replicator stack (per 01_EMERGENTISM/AGENTS.md and root routing). Every file in this lane traces to at least one Objective in VMOSK-A.
 
 # Symbol Design and Public Translation
 
@@ -57,17 +54,17 @@ These three rules are the Stewardship / Coercion boundary made concrete.
 
 ## §2. The Master Symbol: ⊙ `[S]`
 
-> **Packet-139 guard receipt (K2-Q4 ratified 2026-05-23):** This symbol passes the axiomatic-non-capture test because: (1) the **Ground** row explicitly names "axiomatic — the glyph points to what cannot be said; it does not say it"; (2) any practitioner who reaches Layer 1 directly via Pratyakṣa may discard the glyph (Rule 3 §1); (3) the glyph is freely reproducible — no gate, no ownership claim; (4) the framework's success condition is the practitioner no longer needing it (memory `feedback_when_in_doubt_read_framework`). Per `11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md` axiomatic-practice guard.
->
-> **Transparency note (primetime-audit P0, 2026-06-10):** "K2-Q4" denotes a dated K2 ratification *round* (the natural-person signature event of 2026-05-23, logged in packet 139) — **not** a person or office holding standing authority over the symbol. The symbol's non-capture status rests entirely on the four public tests above (reproducible, ungated, discardable, self-dissolving), **not** on the receipt. If the ratification record is not publicly retrievable, treat this line as `[I]` and rely on the four tests.
+> **Non-capture guard:** this symbol is admissible because it is freely
+> reproducible, ungated, discardable, and self-dissolving. Its standing rests on
+> those four public tests, not on a person, office, or signature.
 
 | Aspect | Description |
 |---|---|
 | **Glyph** | Zero-Sum Resolution Equation |
-| **Reading** | Finity = nothing × everything = one |
-| **Geometry** | Point (•) at center of circle (○) on S² (Riemann sphere) |
+| **Reading** | `•   ⊙   ○` as an emblem of finity between boundaries; not ordinary arithmetic |
+| **Geometry** | Selected point-and-circle translation on S² |
 | **Position** | θ = equator (φ = ν = 1, B = sin θ = 1) |
-| **Product** | φ · ν = 1 — coherence times viability is constant |
+| **Reciprocal seam** | `φ · ν = 1` — an analytic identity in the chosen chart, not an empirical conservation law |
 | **Balance** | B = sin θ — peaks at equator, vanishes at poles |
 | **Ground** | Axiomatic — the glyph points to what cannot be said; it does not say it |
 
@@ -139,9 +136,9 @@ What in the Layer 2 map needs public translation? Name it precisely.
 |---|---|
 | φ · ν = 1 | Coherence-viability trade-off |
 | B = sin θ | Balance peaks at equator |
-| K2 | Human signs, never AI |
+| AuthorizationEnvelope | Consequential action names authorization, actor, custody, and bearer |
 | η = 0 | Zero extraction |
-| K4 | Grace Exit — leave with everything |
+| Grace Exit | Leave with rightful custody and a contest path |
 
 ### Step 2: Find the Affective Core
 
@@ -151,9 +148,9 @@ What *feeling* does this structural feature produce when it is lived?
 |---|---|
 | φ · ν = 1 | "I can't have everything AND understand it — and that's the point" |
 | B = sin θ | "The sweet spot is in the middle, not at the top" |
-| K2 | "I am responsible. No one signs for me." |
+| AuthorizationEnvelope | "The actor, mandate, bearer, and contest path are visible." |
 | η = 0 | "I take nothing that I didn't create value for" |
-| K4 | "I can leave whole. The door is always open." |
+| Grace Exit | "I can leave whole. The door is always open." |
 
 ### Step 3: Find the Image
 
@@ -196,10 +193,8 @@ The symbol enters Layer 3. It is:
 | ν | Viability (the south pole) | Formal system | Technical use only |
 | B | Balance (sin θ) | Equator geometry | Technical use only |
 | η | Ego payload (zero) | η = 0 axiom | Technical + public ("zero extraction") |
-| K2 | Human signatory | Constitutional boundary | Technical + public ("human decides") |
-| K4 | Grace Exit | Constitutional boundary | Public ("leave whole") |
-| Halal Mark (Rub el Hizb) | Shariah-compliant surface | Tokencen KSA | Country-chapter specific |
-| Octagram {8/3} | Global infrastructural neutrality | Agentz Cloud | Entity-specific |
+| AuthorizationEnvelope | Consequential accountability | Justice boundary | Technical + public ("who authorized, acted, and bears it?") |
+| Open door | Grace Exit | Justice boundary | Public ("leave whole") |
 
 ---
 

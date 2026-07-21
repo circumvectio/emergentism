@@ -6,11 +6,15 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   secondary: {level: L5, column: Cosmology, role: "Finity geometry"}
-  register: "[A] the elementary identities (the trig facts on S², the inversion/energy/Cayley charts, the bridge B = sech(log x)); [S] the two-chart framing and the framework's use of finity as a named centre; [I] the naming of 1 as a third reification co-equal with 0 and ∞, the reading of E as imbalance and of B as balance, and the convergence/priority claims; the emblem 1 = 0 × ∞ is frame-register only, never [A]."
+  register: "[A] positive-real reciprocal-chart identities; [I] finity and balance readings; no Titan arithmetic."
   canonical_phrase: "The Two Faces of Number"
+title: "The Two Faces of Number — Corrected Reciprocal-Chart Study"
+status: "ACTIVE RESEARCH NOTE — subordinate to the D1 arithmetic and Titan owners"
+evidence_tier: "[A] stated identities on their domains; [I] naming and crosswalks."
+supersedes_blob: "0c1b1252e82ea5cb7f8b7c741a7820a626cfdf17"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md` (L3 papers lane)
+**Corpus:** Emergentism
 
 # The Two Faces of Number
 
@@ -20,6 +24,12 @@ rosetta:
 
 > **Tiering.** Every claim carries an evidence tier — `[A]` elementary mathematics, `[S]` framework-internal structure, `[I]` interpretive reading, `[C]` conjecture — and is never silently upgraded. The mathematics here is old and elementary; the framework's contribution is the *naming* and the *coupling*, not the theorems.
 
+> **[金] Boundary.** The predecessor treated numeric `0`, `1`, and projective
+> infinity as if they were the Titan roles, printed a Titan operation, and said
+> that division by zero was well-defined on the sphere. Those statements are
+> withdrawn. This paper now studies only the positive-real reciprocal chart.
+> The D1 arithmetic owner and Titan canon supersede every stronger reading.
+
 ---
 
 ## Abstract
@@ -28,7 +38,7 @@ We formalize the claim that the number system carries two complementary charts: 
 
 > `B = sin θ = 2x/(1 + x²) = sech(log x) = sech √E`   (per hemisphere, `s = log x` of fixed sign),
 
-so the multiplicative centre `x = 1` coincides with the equatorial maximum `B = 1`, with `E ≈ 2(1 − B)` near the equator. The two charts are conjugate by the group isomorphism `log : (ℝ₊, ·) ≅ (ℝ, +)`. Each claim is marked by evidence tier: the identities are `[A]`; the reading of `E` as *imbalance*, of `B` as *balance*, and of `1` as **finity** — a named third reification co-equal with `0` and `∞` — is `[S/I]`. We do **not** assert `1 = 0 × ∞` as a field theorem (`0 · ∞` is the indeterminate form); it is retained only as a frame-register emblem. The construction extends Suda's reciprocal-symmetry programme (Parts I–III) by coupling the multiplicative chart to the additive chart and to a balance functional on `S²`.
+so the multiplicative centre `x = 1` coincides with the equatorial maximum `B = 1`, with `E ≈ 2(1 − B)` near the equator. The two charts are conjugate by the group isomorphism `log : (ℝ₊, ·) ≅ (ℝ, +)`. Each claim is marked by evidence tier: the identities are `[A]`; the reading of `E` as *imbalance*, of `B` as *balance*, and of `1` as **finity** is `[I]`. The selected Titan seats are a separate metaframe and perform no arithmetic. The construction extends Suda's reciprocal-symmetry programme (Parts I–III) by coupling the multiplicative chart to the additive chart and to a selected coordinate on `S²`.
 
 **Keywords:** Riemann sphere; reciprocal symmetry; multiplicative identity; logarithmic coordinate; hyperbolic secant; Cayley transform; evidence tiers.
 
@@ -40,7 +50,7 @@ The number line is taught with `0` at the centre: a seesaw on which `+a` and `�
 
 The multiplicative face has a natural home — the Riemann sphere — and a natural symmetry — the reciprocal `I(x) = 1/x`, which exchanges the small and the large while fixing the unit. We make the centrality of `1` rigorous in three equivalent charts, and then prove that this multiplicative centre is *the same locus* as the equatorial maximum of the sphere's balance functional. The reciprocal-symmetry apparatus we use was given independently and rigorously by Suda (2025, Parts I–III) on the positive reals; we adopt it for the coordinate-level rigour and add two things: the coupling to the **additive** chart, and the bridge to a **balance functional** on `S²`.
 
-A note on provenance, marked at its honest tier. The framework's underlying ideas — `{0, 1, ∞}` as boundary-frames, the coinage *finity*, the emblem `1 = 0 × ∞` — were set out by the author in 2024. We do not here supply a third-party-dated, externally verifiable artifact (DOI or archived timestamp) for that 2024 statement; accordingly we do **not** advance it as a settled precedence claim, and the reader should treat the priority assertion as `[I]` until such a receipt is supplied. The principle that *an independent later rediscovery is evidence the structure is real* is likewise an `[I]` epistemic heuristic, not a result; nothing in §§2–6 depends on it. Suda's 2025 work is cited for the formalisation, and read here as an independent convergence — corroboration, not a precedence claim in either direction. `[I]`
+A note on provenance, marked at its honest tier. The framework's use of three selected boundary roles and the coinage *finity* were set out by the author in 2024. We do not here supply a third-party-dated, externally verifiable artifact (DOI or archived timestamp) for that 2024 statement; accordingly we do **not** advance it as a settled precedence claim, and the reader should treat the priority assertion as `[I]` until such a receipt is supplied. Independent later similarity can motivate comparison, but is not evidence that the shared interpretation is true. Suda's 2025 work is cited for the positive-real reciprocal formalism. `[I]`
 
 We claim nothing about the consistency or unification of mathematics, and nothing about physics. This is a paper about *one structure*, stated at its honest tier.
 
@@ -54,7 +64,14 @@ Let `ℝ₊ = (0, ∞)`. The exponential and logarithm furnish a group isomorphi
 
 Thus the **multiplicative** group `(ℝ₊, ·)` — centred on its identity `1` — is carried isomorphically onto the **additive** group `(ℝ, +)` — centred on its identity `0`. The two faces are not rivals; they are the *same* group in two dresses, and the bridge's keystone is `log 1 = 0`: the multiplicative centre maps to the additive centre.
 
-The faces differ in what they make visible. The additive line is ordered and forces *two* infinities `−∞, +∞`; division by zero has no home on it. The multiplicative chart, compactified, is the Riemann sphere `S² ≅ ℂP¹`, on which `0`, `1`, `∞` become ordinary points and `N ÷ 0 = ∞` is well-defined for `N ≠ 0` (treated in Paper II). This paper works the multiplicative face.
+The faces differ in what they make visible. The ordinary real line is ordered
+and has no infinite elements; its two-ended compactification may adjoin
+`−∞` and `+∞`. Division by zero remains undefined in the field. The positive
+ray embeds as a one-dimensional arc in the Riemann sphere
+`S²≅ℂP¹`; adjoining the projective point changes the structure but does not
+make field division at zero valid. The extended inversion map may exchange
+numeric `0` and projective `∞_P`. That map is not an evaluation of `N/0` in a
+field. This paper works on `x∈ℝ₊=(0,∞)`.
 
 ---
 
@@ -152,23 +169,36 @@ So the multiplicative centre, the energy well, and the equatorial maximum of `B`
 
 ---
 
-## 7. Finity, and the emblem fenced `[S/I]`
+## 7. Finity and the sovereign frame boundary `[I]`
 
-The mathematics of §§2–6 is elementary and old. The framework's reading is this: `1` deserves to be named a **third reification**, *finity*, co-equal with `0` (nothing) and `∞` (everything) — not as a larger number but as the self-dual centre that holds the two extremes in tension. `[I]` Where `0` reified absence and `∞` reified the unbounded, *finity* reifies the **bounded-as-coupling**: the unit is not a premise but, read in the frame register, the *product* of its own two boundaries. We write this emblem as
+The mathematics of §§2–6 is elementary and old. The framework calls the
+positive reciprocal fixed point `x=1` **finity**. The name highlights the
+self-dual centre of this particular chart; it does not make numeric `1` a new
+kind of number, a metaphysical substance, or a product of boundary values.
 
-> `⊙ = • × ○`,  i.e.  `1 = 0 × ∞`,
+The selected Titan roles are shown without an operator:
 
-and we **fence it precisely**: in the number field `0 · ∞` is the standard *indeterminate form*; there is no theorem `0 × ∞ = 1`, and we assert none. The identity holds only in the **frame register** — the algebra of the three boundary-frames, not of operands within the field — and is always to be marked as such, never written as bare field arithmetic, never tiered `[A]`. (Suda himself labels `0 · ∞` *indeterminate*; the emblem is a separate object from his fixed-point construction.) The constructive treatment of the frames, and the resolution of division by zero that licenses the emblem — including the wheel-algebraic precedent of Carlström (2004), where a totalized division operation is bought at the cost of leaving the field — are the subject of Paper II.
+```text
+•     ⊙     ○
+0_T   1_T   ∞_T
+```
+
+`0_T`, `1_T`, and `∞_T` are opaque labels, not numeric operands. Ordinary
+`0_N` and `1_N` remain numbers. `∞_P` is a projective point only in a named
+extension. `ArithmeticSignature(TitanFrame)=∅`; no multiplication or division
+licenses a transition among the seats. Alternative algebras may totalize
+division only by explicitly leaving the field and declaring their new laws;
+they do not change the field result or the Titan type boundary.
 
 ---
 
 ## 8. Tiers, kill criteria, and relation to prior work
 
-**Tiers.** §§2–6 (the isomorphism, the reflection, the energy, the egg, the bridge `B = sech √E`) are `[A]` — elementary, checked numerically. The two-chart *framing* and the framework's use of `1` as a named centre are `[S]`. The further readings — `1` as a *third reification* co-equal with `0` and `∞`, `E` as *imbalance*, `B` as *balance* — are `[I]`. The provenance/convergence language of §1 is `[I]`. The emblem `1 = 0 × ∞` is `[S/I]` frame-register, never `[A]`.
+**Tiers.** §§2–6 (the isomorphism, the reflection, the defined function `E`, the Cayley chart, and the bridge `B = sech √E`) are `[A]` on their stated domains. Calling `E` energy, `B` balance, and `1` finity is `[I]`. The provenance/convergence language of §1 is `[I]`. The operator-free Titan display is selected symbolic vocabulary and contributes no theorem.
 
 **Kill criteria.** (a) Exhibit `θ ∈ (0, π)` with `cot(θ/2) tan(θ/2) ≠ 1`, or `B ≠ sech(log ν)` — impossible, would break elementary trigonometry, but the claim is stated so it *could* fail. (b) Produce a pre-2024 source that *names* `1` the self-dual midpoint/third reification and builds on it — this would move the *naming* from novel to prior. (We hold ourselves to the same dated-receipt standard we apply to others: absent an externally dated 2024 artifact for the framework's own statement, the priority claim is `[I]`, not settled.) (c) Show the `[S/I]` reading produces a false operational prediction where the geometry is used.
 
-**Relation to prior work.** The Riemann sphere, the reciprocal's fixed point at `1`, and the log/exp isomorphism are classical (Riemann 1851; Ahlfors 1979). On the standing of `1` between `0` and `∞`: what is rigorously classical, and what §4 proves, is that `1` is the **`|log x|`-equidistant centre** of `0` and `∞` — the unique fixed point of the reciprocal and the minimizer of `E = (log x)²`. We do **not** call `1` the "geometric mean of `0` and `∞`": the geometric mean `√(0·∞)` is itself the indeterminate form the paper is careful to fence in §7, so that phrasing would smuggle the very object we refuse to treat as field arithmetic. The reciprocal-invariant energy `E = (log x)²`, the log-conjugacy `s ↦ −s`, the projective half-twist (the *egg of infinity*), and the twist index `τ = sign(log x)` are due to **Suda (2025)**, *Fractional Structure and Möbius Transformation, Parts I–III*, on `ℝ₊` — Part II for `E` and the egg, Part III for the twist index `ϕ(s) = sign(s)` and the operational invariant pair `(E, ϕ)` reused in §§4 and 6; we adopt them and add the additive-chart coupling (§2) and the balance bridge (§6). Suda's 205-page magnum opus *A New Ontology of Energy: Zero, Infinity, and the Infinite Egg* (2025, part Ⅰ) independently states the thesis 「1 は無限のたまごである」 ("1 is the infinite egg") — structurally the same centrality claim as finity, though Suda names it differently; this is read as further corroboration `[I]`. The full convergence analysis is at [`SUDA_CONVERGENCE_ANALYSIS.md`](SUDA_CONVERGENCE_ANALYSIS.md). The framework's ideas (`{0,1,∞}` as frames, *finity*, the emblem) are the author's 2024 statement; for the reasons given in §1 and kill-criterion (b) this priority is held at `[I]`. A later independent convergence is read as corroboration that the structure is real — an `[I]` heuristic, not a precedence claim against Suda.
+**Relation to prior work.** The Riemann sphere, the reciprocal's fixed point at `1`, and the log/exp isomorphism are classical (Riemann 1851; Ahlfors 1979). On `ℝ₊`, §4 proves that `1` is the unique fixed point of the reciprocal and the minimizer of the defined function `E=(log x)²`. It is not the geometric mean of numeric zero and projective infinity. The reciprocal-invariant function, log-conjugacy, bounded Cayley chart, and twist index are attributed here to **Suda (2025)** under the source record. Emergentism adds an interpretive naming and balance crosswalk. Similarity between the two programmes is an `[I]` comparison, not evidence that either ontology is true.
 
 ---
 
@@ -213,10 +243,10 @@ The unit is not "just another number." On the multiplicative face it is the fixe
 *Lower-right inset — the bridge curve.*
 - A 2-D plot: horizontal axis `s = log x` from `−3` to `+3`; vertical axis from `0` to `1`. Plot `B = sech s` as a bell curve peaking at `(0, 1)`. Mark the peak `(s=0, B=1)` with a dot labelled "equator, `E=0`." Shade the two tails toward `B→0` and label them "poles, `E→∞`." Overlay, as a light dashed parabola near the peak, `B ≈ 1 − s²/2`, with a caption "`1 − B = ½E + O(E²)` (per hemisphere)." A small two-headed left/right arrow under the axis labelled `τ = sign(s)` indicates the two hemispheres that share each `B`.
 
-*Style notes.* Monochrome or two-tone (one accent colour for the reflection arrow and the equator). Keep all annotations in the same math font as the paper. The three glyphs `0` (•, north), `1` (⊙, equator), `∞` (○, south) may carry the framework's emblem marks `• ⊙ ○` beside the numerals, but the figure must not print `1 = 0 × ∞` as an equation on the geometry — the emblem is frame-register only (§7).
+*Style notes.* Monochrome or two-tone (one accent colour for the reflection arrow and the equator). Keep all annotations in the same math font as the paper. Numeric coordinate labels and Titan glyphs must remain visually and typographically distinct; the figure may show the operator-free seats `•   ⊙   ○`, but no operation between them.
 
 ---
 
 *Canonical Path:* `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_I_THE_TWO_FACES_OF_NUMBER.md`
 
-⊙ = • × ○
+•   ⊙   ○

@@ -18,7 +18,7 @@ rosetta:
 
 Peer review does not referee worldviews. It referees **claims** — bounded, falsifiable or provable, stated in the target field's language, engaging that field's literature. The corpus as a whole is not a submittable object, and this is not a defect: it is a category fact. The weltanschauung is the **generator**; what gets submitted are **shards** — single claims cut from it, each translated into the register of the field that can adjudicate it.
 
-This is the corpus's own translation discipline (its second invention, per [00_WHAT_IS_ACTUALLY_NOVEL_HERE.md](../../../00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md)) pointed outward for the first time. The internal register — Titans, Gods, glyphs, ⊙ = • × ○ — does not appear in any external submission. Not because it is embarrassing, but because it is load-bearing scaffolding the reader has not earned yet, and a referee will (correctly) read it as a red flag for crankery. Every submission is written so that it stands even if the reader never learns the framework exists.
+This is the corpus's own translation discipline (its second invention, per [00_WHAT_IS_ACTUALLY_NOVEL_HERE.md](../../../00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md)) pointed outward for the first time. The internal register — Titans, Gods, glyphs, •   ⊙   ○ — does not appear in any external submission. Not because it is embarrassing, but because it is load-bearing scaffolding the reader has not earned yet, and a referee will (correctly) read it as a red flag for crankery. Every submission is written so that it stands even if the reader never learns the framework exists.
 
 **Rules of engagement for every external submission:**
 

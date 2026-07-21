@@ -53,7 +53,24 @@ So the light-cone value function is **not** the corpus's novelty — it exists. 
 
 Reading Klyubin–Polani–Nehaniv (2005) and Wissner-Gross–Freer (2013) line-by-line settles four things the briefing/memory left fuzzy:
 
-1. **Empowerment is definitionally SOLIPSISTIC — and this makes the corpus's "expand others' light cones" a genuine extension.** The formal object is `E_t = C(p(s_{t+n} | a^n_t)) = max_{p(a^n_t)} I(A^n_t ; S_{t+n})` — the channel capacity from the agent's own n-step action sequence to its own future sensor state, in bits. The authors are emphatic that it is single-agent and first-person by construction: *"it does not matter what other agents perceive about these actions; it does not matter how much control or influence the agent appears to have from a 'god's eye view'."* There is **no** representation of other agents, no others'-empowerment term, no cooperation anywhere in the paper (the experiments are lone-agent sensor/actuator evolution). So the corpus's teleology — *expand your light cone by expanding all other D5 actors' light cones* — is **not** contained in empowerment; it is a real multi-agent extension. **But it is not unincorporated territory:** Polani's own group later developed *coupled / social empowerment* (verify before external use: Salge, Glackin & Polani, "Empowerment — An Introduction," 2014; Guckelsberger & Salge on coupled empowerment maximization). The corpus must cite that lineage and position its delta as *the conjugate constraint* (Φ·ν=1) on coupled empowerment — not as inventing other-regarding empowerment from scratch.
+1. **Empowerment is definitionally SOLIPSISTIC — and this makes the corpus's
+   "expand others' option cones" a candidate extension.** The formal object is
+   `E_t = C(p(s_{t+n} | a^n_t)) = max_{p(a^n_t)} I(A^n_t ; S_{t+n})` — the
+   channel capacity from the agent's own n-step action sequence to its own
+   future sensor state, in bits. The authors are emphatic that it is
+   single-agent and first-person by construction: *"it does not matter what
+   other agents perceive about these actions; it does not matter how much
+   control or influence the agent appears to have from a 'god's eye view'."*
+   There is **no** representation of other agents, no others'-empowerment term,
+   no cooperation anywhere in the paper (the experiments are lone-agent
+   sensor/actuator evolution). So the corpus's teleology — expand one actual
+   agent's option cone by preserving or widening other agents' option cones —
+   is not contained in that paper. **But it is not unincorporated territory:**
+   Polani's group later developed *coupled / social empowerment* (verify before
+   external use: Salge, Glackin & Polani, "Empowerment — An Introduction,"
+   2014; Guckelsberger & Salge on coupled empowerment maximization). The corpus
+   must cite that lineage and test any added `Φ×V` constraint rather than claim
+   it invented other-regarding empowerment.
 
 2. **CEF's "social cooperation" is COORDINATION, not the free-rider problem — so it does NOT corroborate the corpus's ethics.** The PRL's cooperation puzzle (p. 4) has two disks under *independent* forcing whose *"masses and drag forces were chosen such that synchronized pulling resulted in a much larger downward force than asynchronous or single-sided pulling."* The payoff is engineered so the joint action is each agent's individual best move — a pure coordination game (Stag-Hunt-like) with **no defection incentive and no commons**. This is the *easy* half of "cooperation." The corpus's ethic is about the *hard* half — the public-goods / tragedy-of-commons case where defection individually pays — which is exactly what R7/R8/R9 tested and found requires enforcement. **Therefore CEF must not be cited as evidence the corpus's cooperation/ethics claim is solved by option-maximization.** It shows coordination-for-mutual-benefit emerges thermodynamically; it says nothing about free-riding. (This also dissolves the apparent tension between "CEF: cooperation emerges spontaneously" and "R7–R9: cooperation needs enforcement" — different games.)
 
@@ -83,9 +100,22 @@ A focused search for prior art on "empowerment of/for other agents" and "empower
 
 The founder's reading of Wissner-Gross & Freer (2013) and Klyubin et al. (2005) yields a sharper-than-the-source claim worth its own shard, engaging the existing published Comment (arXiv 1308.4375):
 
-- **Teleology requires an agent (the D5-gating).** CEF attributes future-path-maximization to a particle-in-a-box and a cart-pole. The corpus's position: those are not agents; the "force" is the *experimenter's* controller computing a path-entropy gradient and acting on it — imposed, not intrinsic. Genuine teleology (choosing among modeled futures) is a D5 capacity. **Tier honesty:** this is a *fork* with Wissner-Gross, not a correction — their explicit thesis is that no agency is needed. So the shard's claim is "future-path-maximization is a model of D5 teleology, and its applicability to non-agentic systems shows it is descriptive of gradient-following, not constitutive of agency" — a philosophical position `[I]`, contestable, and exactly the kind of thing a philosophy-of-mind/AI venue adjudicates. MCTS is the clean illustration: searching modeled future worlds and collapsing to one action is what a D5 agent does (the "many worlds → worldline" of the game space); a cart does not run playouts.
+- **Teleology requires an actual agent under this paper's selected definition.**
+  CEF attributes future-path-maximization to a particle-in-a-box and a
+  cart-pole. The corpus's position is a contestable `[I]` fork: an actual D4
+  agent may carry a model token that represents D5 futures, while a passive
+  plant need not. MCTS is the clean illustration of the type boundary: the
+  actual D4 computation searches represented D5 alternatives and an actual D4
+  selection/commitment emits one action. No “D5 agent” acts or collapses worlds.
 
-  *Sharpened against the paper's own equations (2026-06-10).* The cart-pole demo does not show a stick balancing itself. At each step the experimenter's algorithm Monte-Carlo-samples the cart's futures and applies the causal-path-entropy gradient (Eq. 11) as a force; the cart is a passive actuator, and the lookahead — which the paper explicitly calls "internal Monte Carlo sampling of future histories" — is external and is doing the balancing. The force **vanishes as τ→0** (the paper's own degenerate limit): no lookahead, no behavior. So the correct critique is not "they assume a cart self-balances" (they call it a physical process, carefully) but **"the teleological work is displaced into an external future-sampling computation."** THE CUT THE CORPUS MUST ACCEPT: that computation is **not conscious** (MCTS/AlphaGo run rollouts and feel nothing), so the demo is positive evidence that the task needs **lookahead (D5-as-process)** and positive evidence *against* its needing **consciousness (D5-as-soul)** — a non-conscious algorithm did it. The defensible shard claim is therefore "future-path-maximization establishes that *lookahead*, not thermodynamics-on-the-cart and not consciousness, produces the adaptive behavior." Gating teleology on lookahead is supported; gating it on a conscious soul is *refuted by this very experiment*. The particle-in-a-box is weaker still — a genuine no-lookahead statistical tendency (entropically favored center), needing neither soul nor playout.
+  *Sharpened against the paper's own equations (2026-06-10).* The cart-pole
+  demo does not show a stick balancing itself. At each step the experimenter's
+  algorithm samples possible futures and applies the path-entropy gradient.
+  That actual computation is D4; its represented futures are D5 content. It is
+  not conscious, so the demo may support the relevance of lookahead for that
+  controller but cannot support consciousness-gating. The particle-in-a-box is
+  weaker still—a no-lookahead statistical tendency needing neither awareness
+  nor playout.
 
 - **The maximand is syntropy, and "entropy" is a naming hazard — but not a sign error.** Causal *path* entropy (Shannon entropy over the future-path distribution) is correctly named *as a path-distribution entropy* and is genuinely maximized — Wissner-Gross made no math error. The corpus's reframing: operationally, maximizing reachable-future-diversity = maintaining the agent's own free energy / leverage / ΔP = Schrödinger's negentropy (the agent stays ordered-and-optioned by exporting *thermodynamic* entropy outward). The honest fix is **distinguish path-entropy from thermodynamic-entropy** (the source conflates two quantities under one word), not "they maximized the wrong sign." Stated that way it is defensible `[I]`; stated as "entropy is the opposite of what's maximized" it over-claims and a referee kills it. The global second law still holds (R3's no-perpetual-motion fence) — local syntropy, global entropy export.
 
@@ -97,7 +127,12 @@ geno → pheno → extended pheno (Dawkins' term; "products") → meme → egreg
 
 ## 3d. The internal-consistency catch (apply the D5-gate evenly)
 
-**The founder's own rule, turned on the founder's own new claim:** if attributing a "force/teleology" to a non-D5 cart is the error, then attributing a *"mission objective"* to an ecosystem / trophic cascade / niche-partition structure is the **same error** — ecosystems are not D5 entities and have no mission. Niche partitioning is an *emergent pattern* of many D5 (and sub-D5) actors under competitive exclusion, not a collective goal the system pursues. The corpus must say: only the D5 actors *within* the ecosystem have teleology; "expand all other D5 actors' light cones" is a coherent **individual** mission whose *aggregate* is the cooperative equilibrium, but the ecosystem itself wants nothing. Stating it the other way reintroduces precisely the teleology-attribution error just (correctly) levelled at CEF. Keeping the gate even is the hygiene move.
+**The rule turned on the paper's own claim:** attributing a mission to an
+ecosystem requires evidence for an actual persistent selector; a macro-pattern
+does not acquire agency from a D5 label. Individual agents and candidate
+Egregoreotype traces remain separate hypotheses. The normative proposal is to
+widen durable mutual option cones under Justice, not to call an ecosystem or a
+counterfactual content an actor.
 
 ## 4. The collective rule must be written with the R3 amendment baked in
 
@@ -114,7 +149,11 @@ So the teleology note's collective clause must read: *power-max governs the stat
 
 - **"Uncountable" for 0** → use *un-counted* (E1 tombstone; projective ∞ is independent of cardinality — Cantor untouched).
 - **"Objectively defined" ethics** → R3 upgraded the ethic to *model-objective* (real progress, quantified); *world-objective* it is not, and Paper III's inherited premise (the geometry binds only once you prize the coupling) stands. Say "model-objective."
-- **"Many worlds collapse into a worldline"** → externally, state it decision-theoretically (a policy selects one path from the causally reachable set; the light cone *is* that set). Keep the Everett resonance internal `[I]`; quantum vocabulary buys a fight you don't need.
+- **"Many worlds collapse into a worldline"** → state it decision-theoretically:
+  an actual D4 policy selects an attempted action using a model of D5
+  alternatives, and the environment returns a D4 outcome. The physical light
+  cone bounds causal reach but is not identical to the model's option set.
+  Everett is not load-bearing.
 - **The full arc** proto-dimensions → emergent reality → D6 stays `[C]`, HOLD list, under existing kill criteria. R6 earns external life via §2 (the dispute resolution) and §3 (constrained empowerment) — the grammar and the agency formalism — not via the cosmology.
 
 ## 6. Disposition

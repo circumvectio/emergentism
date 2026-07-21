@@ -1,57 +1,55 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  secondary:
-    - level: L7
-      column: Ṛṣi Witness
-      role: "public-symbol and institutional-narrative support for memetic defense"
-    - level: L6
-      column: Philosophy
-      role: "anti-reification boundary for egregore and collective-mind claims"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[I]"
-  canonical_phrase: "03_MEMETICS — Agent Routing"
+type: emergentism-agent-route
+title: "03 Memetics — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 03_MEMETICS — Agent Routing
+# 03 Memetics — Agent route
 
-**Lane scope:** This is the Data Science sublane for memetic evolution, attention dynamics, and memetic defense architectures.
-**Primary lead:** `L2 Śūdra`
-**Support:** L1 Caṇḍāla, L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
-**Rosetta boundary:** Sublane owner is L2 / Kālī. L1 / Kali frontmatter is valid only for individual papers analyzing memetic capture, parasitism, or immune-response dynamics.
+**Lane:** `02_EPISTEMOLOGY/03_MEMETICS`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names raw capture, parasitism, immune response, and attention-pressure patterns. |
-| L2 Śūdra | Owns memetic pattern admission, disclosure, and false-meaning cuts. |
-| L3 Vaiśya | Tests whether memetic claims are evidence-backed, analogical, or conjectural. |
-| L4 Kṣatriya | Routes applied defense, containment, and action claims through lawful operational surfaces. |
-| L5 Brāhmaṇa | Aligns memetic architecture with Rosetta and formal-system constraints. |
-| L6 Sādhu | Cuts egregore reification, paranoia, and unsupported collective-mind claims. |
-| L7 Ṛṣi | Translates tier-cleared memetic defense into public-symbol and institutional narrative. |
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane is part of Emergentism doctrine root — Sevenfold Foundation, framework support, Uplink, tools, archives, and seed.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current [A/B/S/I/D/C] evidence ladder; deployment or architecture claims need a [B] receipt or an explicit [D]/[C] label.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-⊙ = • × ○
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

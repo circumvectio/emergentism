@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "PAPER T: ANTI-IDOLATRY AT SCALE"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER T: ANTI-IDOLATRY AT SCALE
 
 ## Institutional Capture and the η = 0 Stress Test
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [I] — Institutional theory and constitutional architecture
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md)
@@ -38,7 +38,7 @@ This paper defines the ultimate "Known Unknown" of the framework: **Can Constitu
 The central hypothesis of Paper I and Paper O is that *mediation is the hidden subject* across scale layers.
 A mediator (a technology, a bank, a religion, an AI) sits between the substrate and the goal. The pathology of D5 governance occurs when that mediator begins extracting survival energy (`η > 0`) to propagate its own existence at the expense of its substrate. It becomes an **egregore**—an idol.
 
-The emergentist framework is currently a highly agile, low-drag coordination system. It possesses high `Φ` and precise `ν`. It is poised to successfully out-compete rival architectures in DAC deployment, AI alignment, and sovereign economics.
+The emergentist framework is currently a compact candidate coordination grammar. Whether its `Φ` and `V` measures track real institutional performance is an open empirical question; it must not be assumed to out-compete rival architectures.
 
 However, success invites mass participation. Mass participation requires scale. Scale requires standardization and bureaucracy (thickened mediation).
 
@@ -51,7 +51,7 @@ If the framework operates blindly, it risks generating an "Emergentist Priesthoo
 To survive scale, the framework must continuously test itself using its own core constitutional algebra. The friction-coefficient `η` must remain exactly `0`.
 
 **The Diagnostic Thresholds:**
-1. **Capital Velocity:** Does capital/energy flow seamlessly from generation to allocation, or does an increasing percentage get captured by "administrative overhead" within the framework's own DACs and governing loops?
+1. **Resource Velocity:** Does energy or attention flow from contribution to declared purpose, or does an increasing share get captured by administrative overhead within the framework's own institutions and governing loops?
 2. **Epistemic Rent:** Do core contributors insist that the framework can only be understood through expensive certifications, private access, or proprietary translation, restricting Pratyakṣa (direct disclosure)?
 3. **Identity Coagulation:** Do participants begin identifying *as* "Emergentists" rather than using the framework as a quiet, functional toolset to execute independent external goals?
 

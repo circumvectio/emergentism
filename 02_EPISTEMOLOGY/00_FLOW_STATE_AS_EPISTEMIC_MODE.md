@@ -34,7 +34,13 @@ The Burri Sphere constraint **φ · ν = 1 on S²** is not merely a formal ident
 
 ### Core State / Objective Function discipline
 
-This document operates in the **teleological domain**. The ontological seed (**• × ○ = ⊙**) needs no proof; it is the axiomatic ground. What follows is a *mapping* — structural, interpretive, phenomenological — between the formal constraint and lived experience.
+This document operates in the **teleological domain**. The D0 Titan glyphs are
+renderings of sovereign `TitanFrame` values, whose arithmetic signature is
+empty: they are not factors, sums, powers, logarithm arguments, or numbers.
+The formula used below is instead the typed numeric chart identity
+`φν = 1` for positive-real reciprocal coordinates on the open sphere. What
+follows is a *mapping* — structural, interpretive, phenomenological — between
+that chart constraint and lived experience.
 
 **Constraint vs. optimal state:**
 - **φ · ν = 1** is the *constraint* — every point on S² satisfies it. This is not a claim that everything is in flow.

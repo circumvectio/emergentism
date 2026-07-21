@@ -13,17 +13,15 @@ rosetta:
   canonical_phrase: "Bridge laws between levels"
 ---
 
-**Project VMOSK-A:** `../VMOSK_A.md`
-
 # BRIDGE LAWS BETWEEN LEVELS
 
-## How the D-Levels Connect Without Reducing One Another
+## How the Selected D-Level Lens Connects Explanations
 
 **Status:** Canonical bridge document
 **Date:** 2026-04-14
 **Evidence Tier:** [S/I] Structural in dimensional dependence, interpretive in disciplinary translation
-**Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_THE_ONTOLOGY_OF_BEING.md](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [00_D_LEVEL_STUDIES.md](../00_META/00_D_LEVEL_STUDIES.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), **[VMOSK-A](../VMOSK_A.md)**
-**See also:** [00_THE_LIFE_SCIENCE_REGISTER.md](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [00_EMERGENTISM_PHI_RESOLUTION.md](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md)
+**Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [00_D_LEVEL_STUDIES.md](../00_META/00_D_LEVEL_STUDIES.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+**See also:** [00_THE_LIFE_SCIENCE_REGISTER.md](../05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md), [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
 
 **Claim Boundary:** Bridge Law 2 becomes scientific only as the macro-constraint
 test: lower-law closure, fair baselines, effective information, a physical cost
@@ -67,24 +65,24 @@ moving from one level to another without losing `A7` honesty.
 
 ---
 
-## Bridge Law 1: Saturation Opens the Next Level
+## Bridge Law 1: Every Crossing Is Typed and Independently Earned
 
-**A new level opens when the prior level saturates its own explanatory horizon.**
+**A named interface does not establish emergence merely because the lower
+vocabulary reaches an explanatory limit.** The selected scaffold distinguishes:
 
-This is the framework's core dimensional rule.
+- `μ₀:D0→D1` — an origin aperture; no prior positive freedom is claimed to saturate;
+- `μ₁:D1→D2` — an open configuration hypothesis, with projective/function
+  continuation only a typed example;
+- `μ₂:D2→D3` — a formally reducible lift into Hilbert/state assignment;
+- `μ₃:D3→D4` — a reducible operational interface from probability assignment to
+  an actual run and record;
+- `μ₄:D4→D5` — an open counterfactual-capacity hypothesis requiring intervention
+  on represented futures;
+- `b₆:D5↝D6` and `r₆:D6↝D0` — non-`μ` boundary relations, not new freedoms.
 
-So:
-
-- D0 saturation opens distinction
-- D1 saturation opens configuration
-- D2 saturation opens transformation
-- D3 saturation opens embodied causal cognition
-- D4 saturation opens strategic relation and selection
-- D5 saturation opens the axiomatic boundary where positive description exhausts itself
-
-In public science, this means:
-
-- do not demand that a lower-level vocabulary explain what only appears after saturation
+Each emergence reading must name its evidence, newly observed freedom,
+lower-register recovery, reduction status, prediction, and kill criterion.
+Failure of a lower vocabulary is a research prompt, never proof of irreducibility.
 
 ---
 
@@ -201,27 +199,35 @@ This is the cross-disciplinary honesty rule.
 
 So:
 
-- D3 claims translate first through biology
-- D4 claims translate first through neuroscience and cognitive science
-- D5 claims translate first through game theory, behavioral economics, mechanism design, institutional economics, and the positive study of symbolic sediment
+- D3 claims translate first through quantum-state, operator, and measurement theory
+- D4 claims translate through the discipline owning the actual carrier or event:
+  physics, chemistry, biology, neuroscience, or social science as appropriate
+- D5 claims translate through counterfactual modeling and decision disciplines,
+  while their actual model tokens and choices remain D4
 - D6 has no nearest positive register; it may only be indicated through boundary disciplines and axiomatic practice
 
 Only after that may the framework add its larger synthesis.
 
 ---
 
-## Bridge Law 4: No Level Is Exhausted by the Level Below
+## Bridge Law 4: No Level Is Declared Irreducible by Default
 
-**Dependence is not reducibility.**
+**Dependence is not the same claim as reduction, and a missing reduction is not
+proof of irreducibility.**
 
-This is one of the framework's most important scientific claims.
+The framework may preserve a higher-level vocabulary while its reduction status
+is tested. Biology, cognition, and strategy can be indispensable explanatory
+registers without being ontologically independent substances. Each crossing
+must therefore record one of the declared reduction statuses and supply its own
+recovery test.
 
-- biology depends on chemistry, but is not exhausted by chemistry
-- cognition depends on biology, but is not exhausted by physiology
-- strategy depends on cognition, but is not exhausted by neural description
-- the axiomatic limit depends on strategic and social life as threshold, but is not exhausted by any positive equilibrium, institution, or symbolic order
+- a successful reduction changes the crossing to `reduced`;
+- an incomplete reduction is `currently_unreduced`;
+- `candidate_strong` remains a wager requiring a novel discriminator;
+- D6 is not a positive level for which irreducibility can be claimed.
 
-This is the bridge-law form of the framework's anti-reductionism.
+This is methodological pluralism under explicit reduction debt, not a theorem
+of strong emergence.
 
 ---
 
@@ -239,43 +245,42 @@ This matters especially at D5, and even more at the D6 boundary where naming its
 
 ---
 
-## Bridge Law 6: The D4 to D5 Bridge Is the Public Strategy Bridge
+## Bridge Law 6: The D4 to D5 Bridge Is Counterfactual Capacity
 
 This bridge deserves special status.
 
 At D4 we have:
 
-- bounded causal agents
-- perception
-- computation
-- embodied regulation
+- actual carriers and model tokens
+- interactions and attempted actions
+- outcomes, records, and embodied means `V`
+- agents, institutions, organisms, and instruments insofar as they are actual
 
 At D5 we have:
 
-- interaction among such agents
-- incentives
-- trust and defection
-- bargaining
-- capture
-- design of rules
+- represented alternative histories
+- counterfactual option fields
+- rankings, plans, and possible rule designs as content
+- D5 option quality `Φ`, assessed by an actual D4 process
 
-So the public bridge disciplines are:
+Decision theory, game theory, behavioral economics, mechanism design, and
+institutional economics are important application disciplines because actual
+D4 agents use D4 model tokens to represent D5 alternatives. Their interactions,
+trust, bargaining, institutions, and choices remain actual D4 phenomena; D5 is
+the modality of the alternatives they represent, not a social stratum.
 
-- decision theory
-- game theory
-- behavioral economics
-- mechanism design
-- institutional economics
+The crossing hypothesis `μ₄` is earned only if intervention on represented
+futures changes present selection distributions after lower-register recovery,
+cost accounting, controls, and a declared kill criterion. The corpus currently
+records that empirical crossing as unassessed.
 
-This is why D5 is the most important near-term scientific bridge for the framework.
+### Biology as a D4 application lens
 
-### Physics to Biology Boundary
-
-The biology boundary is the first place where this bridge becomes unavoidable
-for public science. A living system is not chemistry plus a poetic label. It is
-a macro-constraint architecture: membranes, catalysts, metabolic cycles,
-homeostasis, repair, reproduction, and niche construction change which
-chemical trajectories remain reachable, reinforced, or suppressed.
+A living system is an actual D4 carrier and macro-constraint architecture:
+membranes, catalysts, metabolic cycles, homeostasis, repair, reproduction, and
+niche construction change which lower-law-admissible chemical trajectories are
+reachable, reinforced, or suppressed. This is an application of Bridge Law 2,
+not the definition of D3 or a privileged rung transition.
 
 The lawful statement is:
 
@@ -291,28 +296,18 @@ life-cause = a non-chemical force that breaks chemistry
 
 The same form continues upward into cognition and agency. Nervous systems
 constrain motor and attentional policy; institutions constrain social action;
-present awareness constrains which modeled future receives `V`. The continuity
+present actual selection constrains which modeled future receives `V`. The continuity
 is syntropic only when the constraint raises local order, coherence, viability,
 or effective information while paying its physical costs.
 
-### Emergence Asymmetry
+### Emergence status
 
-This bridge must be read asymmetrically.
-
-- from **D4 upward**, `D5` is strongly emergent in genesis
-- from **D5 downward**, the stabilized higher-order pattern is weakly emergent in governance
-
-So:
-
-- lower-level description cannot usually predict the full strategic pattern in advance
-- but once the strategic pattern stabilizes, it can constrain lower-level behavior compactly and intelligibly
-
-This is why `D5` is often:
-
-- opaque from below
-- legible from above
-
-When this distinction matters, state it explicitly.
+No strong-emergence verdict follows from this bridge. `μ₄` is a
+counterfactual-capacity hypothesis `[C]`, presently `currently_unreduced` only
+where a named domain has an incomplete reduction and `unassessed` where no
+intervention study exists. A successful lower-register reconstruction makes a
+case weakly emergent without harming the descriptive scaffold. A strong claim
+requires a surviving novel discriminator; opacity from below is not enough.
 
 ---
 
@@ -330,11 +325,12 @@ When they sediment, they become:
 
 All of that still belongs to the upper horizon of positive D5.
 
-`D6` does not begin when one more object appears.
-It begins when the claim that these objects exhaust the Real is negated.
+`D6` does not begin when one more object appears and is not a state an agent
+reaches. It is the selected exit/nonclosure marker used when a positive account
+is deliberately released rather than inflated into totality.
 
-So the D5 to D6 bridge is not the invention of a further science.
-It is the onset of `Falsification Protocol`.
+So `b₆` and `r₆` do not invent a further science or prove that all description
+has been exhausted. They mark the framework's own refusal of closure.
 
 The disciplines that escort the threshold are:
 
@@ -348,25 +344,27 @@ The disciplines that escort the threshold are:
 
 The level shift is:
 
-- D5 asks how agents select, coordinate, institutionalize, and remember
-- D6 is reached when every such positive account is seen as real yet non-exhaustive
+- D5 contains possible counterfactual content that actual agents model and rank
+- D6 marks exit from the scaffold; it is not reached, enacted, or positively described
 
 ---
 
 ## The Bridge Sequence in Public Science
 
 ```text
-D0-D1  formal studies
-  ->
-D2     physical studies
-  ->
-D3     life studies
-  ->
-D4     embodied cognition studies
-  ->
-D5     strategic-relational studies
-  ->
-D6     axiomatic closure (not a positive science)
+D0     selected boundary/frame role
+  -> μ0
+D1     distinction and typed arithmetic
+  -> μ1
+D2     configuration: functions, relations, graphs, geometry
+  -> μ2
+D3     quantum-state content and measurement-relative distributions
+  -> μ3
+D4     actual carriers, interactions, actions, outcomes, and receipts
+  -> μ4
+D5     possible counterfactual content and option fields
+  ↝ b6
+D6     exit/nonclosure marker; r6 is an interpretive return to D0
 ```
 
 This sequence is not a prison.
@@ -393,7 +391,7 @@ The sciences are strongest when each level is allowed its own object and method.
 
 When this idea must be stated briefly, the default sentence is:
 
-> **The levels connect by saturation and constraint through D5: each higher positive level opens when the lower saturates, depends on what is below, and constrains without violating it. D6 is the axiomatic closure reached when positive description exhausts itself. Scientific unification therefore proceeds by bridge-law, nearest-register translation, and finally `Falsification Protocol`, not by flattening all explanation into one science.**
+> **The selected levels connect through five separately typed interfaces. Higher-level constraints may reweight only lower-law-admissible trajectories; every emergence claim must earn its own evidence and reduction status. D6 is an exit/nonclosure marker, not a positive level reached by saturation. Scientific translation therefore proceeds by typed bridge laws and nearest-register explanation, never by flattening all sciences or turning missing reduction into proof.**
 
 This sentence may be reused verbatim.
 
@@ -407,11 +405,11 @@ This sentence may be reused verbatim.
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. When moving between levels, ask what saturates, what newly appears, and what the nearest established science is.
+3. When moving between levels, ask what is observed, what newly appears, whether the lower register is recovered, what reduction status holds, and what would kill the crossing claim.
 4. Do not use a lower-level science to erase a higher-level object prematurely.
 5. Do not use a higher-level interpretation to override lower-level evidence.
 6. Treat D4 to D5 as the key public strategy bridge.
-7. Treat D5 to D6 not as one more public register but as the axiomatic boundary where public registers must relinquish finality.
+7. Treat `b₆` and `r₆` as non-`μ` exit relations, not one more public register or a proof that inquiry has ended.
 
 *Bridge-law becomes complete when it knows where public explanation must stop.*
 

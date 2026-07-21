@@ -3,7 +3,6 @@ rosetta:
   primary_column: "Meta"
   register: "[S/I]"
   canonical_phrase: "What Is Actually Novel Here"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # WHAT IS ACTUALLY NOVEL HERE
@@ -13,7 +12,7 @@ rosetta:
 **Status:** Meta-routing inventory; source-owner documents control doctrine and public claims
 **Date:** 2026-04-15
 **Evidence Tier:** Meta-interpretive
-**Depends on:** [00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [00_EXECUTION_GUARDRAILS.md](../03_METHODOLOGY/00_EXECUTION_GUARDRAILS.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md)
+**Depends on:** [00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [Open Canon Covenant](00_THE_OPEN_CANON_COVENANT.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md)
 
 ---
 
@@ -97,13 +96,13 @@ It specifies how a living system should be built if the core state is taken seri
 That architecture includes:
 
 - `η = 0`
-- `K2`
+- accountable authorization
 - Grace Exit
 - Three-Stage Process separation
 - Three Gates
 - anti-capture design
 
-> This is an illustrative inventory of the architecture's load-bearing pieces, **not** the constitution's formal enumeration. The constitution is canonically **5 + 1** — five refusals (η=0, K2, K3, K4, A7) plus Ω the directional +1 — per [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md); the Three-Stage Process is a deployment *separation*, not a refusal (see [`00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md`](00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md)). `[S]`
+> This is an illustrative inventory, not a proof. The active constitution declares five refusals plus the directional commitment Ω; its current owner is [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md). `[S]`
 
 This is not merely a governance appendix.
 It is a deployment architecture for keeping recursion from turning extractive.
@@ -157,11 +156,14 @@ At the current state of the corpus, the most defensible novelty claims are:
 2. **D5 as a public strategic-relational science**
    Game theory, behavioral economics, mechanism design, and institutional economics are treated as one register rather than scattered neighboring fields.
 
-3. **Strong in genesis, weak in governance**
-   The emergence asymmetry is one of the sharpest genuinely new formulations in the corpus.
+3. **The Reduction Asymmetry, explicitly typed**
+   The corpus distinguishes prospective generation cost, retrospective
+   compression, macro-constraint, and technical reduction status. The
+   synthesis is a candidate local contribution `[I/C]`; it does not establish
+   universal strong emergence, and priority searches remain owed.
 
 4. **A constitutional packet for recursion**
-   `η = 0`, `K2`, Grace Exit, and Three-Stage Process separation form a single non-extractive design grammar.
+   Zero extraction, accountable authorization, Grace Exit, and staged reasoning form a non-extractive design grammar.
 
 5. **Anti-idolatry as architecture**
    The system attempts to encode self-limitation structurally rather than preach it rhetorically.

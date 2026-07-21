@@ -1,37 +1,56 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Vaiśya Audit
-      role: "preserve source fact versus interpretation checks for Claude-style tools"
-    - level: L5
-      column: Brāhmaṇa Architecture
-      role: "mirror the domain route without becoming a second authority"
-    - level: L6
-      column: Sādhu Boundary
-      role: "cap analogy upgrades unless independent support exists"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[S/I]"
-  canonical_phrase: "D_SERIES_DOMAINS — Claude Compatibility Shim"
-title: "D_SERIES_DOMAINS — Claude Compatibility Shim"
-status: "Compatibility shim; AGENTS.md remains authority"
-evidence_tier: "[S] for route inheritance; [I] for compatibility-tool behavior."
+type: emergentism-agent-route
+title: "D Series Domains — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# D_SERIES_DOMAINS — Claude Compatibility Shim
+# D Series Domains — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it does not create a second routing authority.
+**Lane:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS`
 
-## Routing
+## Read first
 
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md) and root/owner-lane questions through [`../../../../AGENTS.md`](../../../../AGENTS.md); this shim does not create route authority.
-- Domain mappings must distinguish the established source fact from the Emergentism/Rosetta interpretation.
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../../../AGENTS.md)
+- [Kernel Index](../../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Constraint
+## Pure-worldview boundary
 
-Do not let a domain analogy upgrade itself above `[I]` without independent support or a repository receipt.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
+
+## Epistemic contract
+
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
+
+## Rosetta dispatch
+
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

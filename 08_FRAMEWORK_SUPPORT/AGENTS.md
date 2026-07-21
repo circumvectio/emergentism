@@ -1,76 +1,55 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "enforce evidence-tier and route-control audit discipline"
-    - level: L6
-      column: Philosophy
-      role: "bound support-library authority below source-owner lanes"
-    - level: L4
-      column: Philosophy
-      role: "route K2, eta-zero, and irreversible-action constraints"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "08_FRAMEWORK_SUPPORT — Agent Routing"
+type: emergentism-agent-route
+title: "08 Framework Support — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 08_FRAMEWORK_SUPPORT — Agent Routing
+# 08 Framework Support — Agent route
 
-**Lane scope:** Rosetta Stone, synthesis documents, operator architecture, and framework tooling.
-**Primary lead:** `L5 Brāhmaṇa`
-**Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
+**Lane:** `08_FRAMEWORK_SUPPORT`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names raw objective pressures entering support-library tooling. |
-| L2 Śūdra | Checks disclosure and evidence surfaces before support summaries strengthen claims. |
-| L3 Vaiśya | Audits route control, evidence tiers, drift scans, and support-library claims. |
-| L4 Kṣatriya | Routes K2, `η = 0`, and irreversible-action constraints. |
-| L5 Brāhmaṇa | Owns support-library topology across governance, operators, evidence, synthesis, and agents. |
-| L6 Sādhu | Bounds support authority below source-owner lanes and archive provenance. |
-| L7 Ṛṣi | Translates only source-owner-confirmed support surfaces into public symbol. |
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- `00_KNOWN_UNKNOWNS.md`
-- `00_KNOWN_UNKNOWNS_RESOLVED.md`
-- `00_MASTER_INDEX.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.md`
-- `../00_META/03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.csv`
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Recursive Deployment Control
+## Epistemic contract
 
-- Every source-visible folder and file in this lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_08_FRAMEWORK_SUPPORT_2026_06_04.csv).
-- Treat legacy `[T]` markers in support material as bounded structural or
-  technical aliases unless a current source-owner document explicitly promotes
-  them with a current `[A/B/S/I/D/C]` tier.
-- Support-library prose supports the seven source roots; it does not replace
-  them.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Routing Law
+## Rosetta dispatch
 
-- This lane is a post-sevenfold support library for governance, operators, evidence, synthesis, and agent grammar; it supports source owners rather than replacing them.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present them as live truth by default.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-## Constraints
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+## Lane discipline
 
-Zero-Sum Resolution Equation
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Execution Surface
-
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/AGENTS.md
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

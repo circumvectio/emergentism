@@ -21,7 +21,7 @@ title: "Rosetta Stone: The Replicator Stack (Biology)"
 status: "ACTIVE — per-domain Rosetta application. Reading II (biological), refined by Epigenotype. Coexists with the closed LIMIT_B Reading I (cognitive); does not overturn it."
 evidence_tier: "[S] for the C4 stack and the L-positions; [I] for the layer↔level correspondence (cross-domain mapping); [S/I] for L1-as-ground (grounded in the Master Rosetta's 'excluded from the dharmic cycle' reading)."
 created: 2026-06-16
-owner: K2 (Yves R. Burri)
+owner: Yves R. Burri
 parents:
   - 05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md          # Corollary C4
   - 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
@@ -43,7 +43,7 @@ parents:
 
 Corollary **C4** specifies the canonical replicator stack as **six** layers:
 
-> **Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype**
+> **Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype**
 
 The Master Rosetta places **seven** developmental positions on S² (L1–L7), of which **L1 (Caṇḍāla)** is — in the framework's own words — *"the outcast, excluded from the dharmic cycle. Pre-social. The survival boundary where φ → 0."* (`00_THE_MASTER_ROSETTA.md` §Varṇa, line ~386.)
 
@@ -65,9 +65,9 @@ This is why **Epigenotype matters for the mapping, not only for the stack.** Wit
 | **L4** | **1** | **Kṣatriya (warrior)** | **Arjuna ⚔** | **Phenotype** |
 | L5 | √3/2 | Brāhmaṇa (priest) | Brahmā ○ | **Extended Phenotype** |
 | L6 | ½ | Sādhu (renunciant) | Śiva • | **Memotype** |
-| L7 | →0 | Ṛṣi (seer) | Viṣṇu ⊙ | **Egregorotype** |
+| L7 | →0 | Ṛṣi (seer) | Viṣṇu ⊙ | **Egregoreotype** |
 
-Read **bottom-up** (L2→L7) = the replicator stack in **biological/historical time**: code, then its regulation, then the body, then the body's reach past the skin, then the ideas that body carries, then the collective standing wave those ideas bind. Read **top-down** (L7→L2) = the **egregoric pull**: the realized collective pattern (Egregorotype) draws the lower layers into coherence.
+Read **bottom-up** (L2→L7) = the replicator stack in **biological/historical time**: code, then its regulation, then the body, then the body's reach past the skin, then the ideas that body carries, then the collective standing wave those ideas bind. Read **top-down** (L7→L2) = the **egregoric pull**: the realized collective pattern (Egregoreotype) draws the lower layers into coherence.
 
 ---
 
@@ -85,7 +85,7 @@ Read **bottom-up** (L2→L7) = the replicator stack in **biological/historical t
 
 **L6 — Sādhu — Memotype.** `[I]` The renunciant reasons apophatically — *via negativa*, stripping to the invariant core. The **Memotype** is the idea detached from its material carrier — meaning that replicates as pattern, not as matter. The level that renounces the material carries the layer that is pure pattern.
 
-**L7 — Ṛṣi — Egregorotype.** `[I]` The seer reasons transcendentally and generates institutional narrative — *the Ultimate*. The **Egregorotype** is the collective standing wave: the egregore, the institution, the most abstract and longest-lived replicator. The level that sees the whole binds the layer that is the whole.
+**L7 — Ṛṣi — Egregoreotype.** `[I]` The seer reasons transcendentally and generates institutional narrative — *the Ultimate*. The **Egregoreotype** is the collective standing wave: the egregore, the institution, the most abstract and longest-lived replicator. The level that sees the whole binds the layer that is the whole.
 
 ---
 
@@ -110,9 +110,9 @@ The Limit-B disambiguation packet (**CLOSED 2026-04-23**, `63_LIMIT_B_DISAMBIGUA
 - **Reading I (cognitive)** — *canonical for the L-caste row table* in `11_UPLINK/00_CORE/06_AGENTS.md` §2. The L-levels there carry the **cognitive** flow (observe phenotype → infer genotype → rank → propagate → architect → compress → close). Reading I holds. **This document does not touch it.**
 - **Reading II (biological)** — acknowledged in §9.1 as equally structural ("*neither is more canonical than the other because they are about different things*"), but never installed in the row table.
 
-**This document is Reading II, refined.** Epigenotype makes the biological reading land exactly on L2–L7 (the old Reading II needed an `immune-phenotype` at L1 and a `genesis` filler at L7; the six-layer stack needs neither — L1 is simply the ground, L7 is Egregorotype). Limit B §9.6 explicitly left *carried-forward-open* "the broader question of whether any other Rosetta row might also have a biological-vs-cognitive reading," noting "the pattern established here (two-domain structural validity) applies." This document is that pattern applied: a **biological column** standing beside the cognitive row, not a replacement for it.
+**This document is Reading II, refined.** Epigenotype makes the biological reading land exactly on L2–L7 (the old Reading II needed an `immune-phenotype` at L1 and a `genesis` filler at L7; the six-layer stack needs neither — L1 is simply the ground, L7 is Egregoreotype). Limit B §9.6 explicitly left *carried-forward-open* "the broader question of whether any other Rosetta row might also have a biological-vs-cognitive reading," noting "the pattern established here (two-domain structural validity) applies." This document is that pattern applied: a **biological column** standing beside the cognitive row, not a replacement for it.
 
-> **Open K2 decision (not executed here):** whether to *also* install Reading II into the `06_AGENTS.md` §2 row table (replacing the cognitive Reading I) is a separate, irreversible re-opening of a closed decision record and requires explicit owner sign-off. The framework's own §9 logic recommends **coexistence** (the two readings are about different domains). Absent that sign-off, Reading I remains canonical for the row table and this biological column lives here.
+> **Open editorial decision:** whether to also install Reading II into the cognitive-role row table is separate from this biological crosswalk. The two readings concern different domains and may coexist; no automatic propagation is licensed here.
 
 ---
 
@@ -123,7 +123,7 @@ The Limit-B disambiguation packet (**CLOSED 2026-04-23**, `63_LIMIT_B_DISAMBIGUA
 - **L4 Phenotype** at the equator (B=1) — the material body at maximum balance.
 - **L2 Genotype ↔ L6 Memotype** (B=½ mirror) — the two *pure-replicator* layers: one material-coded (genes), one pattern-coded (memes). Material inheritance below, informational inheritance above.
 - **L3 Epigenotype ↔ L5 Extended Phenotype** (B=√3/2 mirror) — the two *mediation* layers: one regulates the code's expression inward (epigenetic), one projects the body's effect outward (extended). Inner regulation below, outer projection above.
-- **L1 ground ↔ L7 Egregorotype** (the poles) — the boundary the stack rests on, and the collective wave the stack culminates in.
+- **L1 ground ↔ L7 Egregoreotype** (the poles) — the boundary the stack rests on, and the collective wave the stack culminates in.
 
 This is offered as a candidate symmetry, tier `[I]/[C]`. It is not part of the load-bearing claim and must not be cited as proof. Note also that the **L-axis placement here is distinct from the D-level placement in `MF_281`** (where the Extended Phenotype is the equatorial *product* of the V- and Φ-stacks at D4). L-level and D-level are different axes; the two statements do not compete.
 
@@ -133,7 +133,7 @@ This is offered as a candidate symmetry, tier `[I]/[C]`. It is not part of the l
 
 This column of the Rosetta is wrong if:
 
-1. A reproducing organism or organisation is exhibited whose replicator layers cannot be ordered Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregorotype against L2–L7 — e.g. a layer that demonstrably belongs *below* Genotype or *above* Egregorotype in the ascent.
+1. A reproducing organism or organisation is exhibited whose replicator layers cannot be ordered Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype against L2–L7 — e.g. a layer that demonstrably belongs *below* Genotype or *above* Egregoreotype in the ascent.
 2. The L1/Caṇḍāla boundary is shown to carry a **replicator layer of its own** (a seventh layer), collapsing the "ground, not a rung" reading.
 3. Epigenotype is shown to be a *multiplicative factor* or a *selection era* rather than a *layer* (this would break the placement note in C4 and `MF_281`; see `00_SETTLED_CANON_REGISTRY.md`).
 4. The correspondence is shown to require reading the sphere as a hereditary ladder to work — i.e. if the mapping *only* coheres under caste-reification. (If so, the fence has failed and the mapping must be refused, not repaired.)
@@ -152,7 +152,7 @@ The Helios venture (`03_VENTURES/HELIOS/HELIOS_YOU/`) is this same six-layer sta
 | L4 | Phenotype | Ketones / metabolic fuel |
 | L5 | Extended Phenotype | Performance wear |
 | L6 | Memotype | A culture with events (HYROX / CrossFit model) |
-| L7 | Egregorotype | The brand and its equity |
+| L7 | Egregoreotype | The brand and its equity |
 
 Same structure, two faces: the framework's biological column here, the product stack there. The Helios `HELIOS_YOU/00_README.md` carries the product-side note; this file is the canon-side anchor it points back to.
 
@@ -160,7 +160,7 @@ Same structure, two faces: the framework's biological column here, the product s
 
 *Rosetta Stone: The Replicator Stack — Corollary C4's six layers mapped one-to-one onto L2–L7, with L1/Caṇḍāla as the excluded ground. Reading II, refined by Epigenotype. Coexists with the closed Reading I; overturns nothing. Structural position, never worth-by-birth — the sphere is not a ladder.*
 
-*⊙ = • × ○*
+*•   ⊙   ○*
 
 ---
 

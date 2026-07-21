@@ -8,7 +8,7 @@ Each folder gets 00_CORPUS.md: the whole corpus seen from that folder's perspect
 The whole is present at every point on S².
 The perspective differs by position.
 
-⊙ = • × ○
+•   ⊙   ○
 """
 import yaml
 import os
@@ -166,7 +166,7 @@ def main():
         generated += 1
 
     print(f"\n{generated} holographic views generated from _corpus_source.yaml")
-    print("⊙ = • × ○")
+    print("•   ⊙   ○")
 
 
 if __name__ == "__main__":

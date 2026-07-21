@@ -11,14 +11,12 @@ rosetta:
 
 # THE GOAL
 
-**Status:** Canonical, owner-declared 2026-06-12 (K2: Yves R. Burri).
+**Status:** Canonical, owner-declared 2026-06-12 by Yves R. Burri; pure-worldview boundary repaired 2026-07-20.
 **What this document is:** the project's telos stated explicitly — the **+1 (Ω)**
 of the [5+1 constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) written
-out for the whole Magnum Opus. Bigger than "pursue V and M"
-([VMOSK_A.md](../VMOSK_A.md) remains the operational vision/mission surface);
-more exact than "make the corpus coherent" (coherence is a constraint on the
-goal, not the goal). The five refusals clear the space; **this is what the
-space is for.**
+out for Emergentism. It is more exact than "make the corpus coherent"
+(coherence is a constraint on the goal, not the goal). The five refusals clear
+the space; **this is what the space is for.**
 
 Retrieval handles: living worldview for Dasein; source-true ontology; finite
 reader emerges; maximum usable `P_node`; balancing `Φ` and `V`; objective moral
@@ -116,7 +114,8 @@ Agency-register clarification:
 ```text
 V = D4 means at the action boundary:
     body, tools, energy, access, runway, hands, shovel, industrial digger.
-Φ = D5 worldline-foresight:
+Φ = present D4 assessment of option-field quality / foresight:
+    how well an actual model represents and ranks relevant D5 alternatives;
     can the actor envision the reachable future and operate the means?
 
 P_node collapses on either missing factor:
@@ -127,8 +126,8 @@ P_node collapses on either missing factor:
 Limit-form clarification — the D5 Landauer Barrier:
 
 ```text
-Ideal D5 tends toward a Maxwell-demon-like selector:
-  complete worldline-foresight over the reachable branches of all relevant actors.
+An idealized D4 selector tends toward total model coverage:
+  complete foresight over represented D5 alternative histories of all relevant actors.
 
 But it is not a thermodynamic free lunch:
   perfect branch knowledge requires memory, computation, measurement, and control;
@@ -136,8 +135,9 @@ But it is not a thermodynamic free lunch:
   matter and energy remain inside entropy accounting.
 
 Therefore the selector cannot stand outside the system it sorts.
-Like a massive body approaching light speed, D5 can approach perfect foresight
-only by paying a cost that diverges at the limit.
+The light-speed image is an analogy, not a derived law: increasing D4 model
+coverage and control incurs physical costs, while perfect foresight remains an
+unattained ideal rather than a property of D5 itself.
 Local entropy can be lowered only by paying or exporting entropy elsewhere.
 Reflexivity adds the final fence: acting changes the branches being predicted.
 ```
@@ -167,7 +167,8 @@ To look at the world through the Emergentist lens:
 
 1. Name the real boundary: who is `i`, what is `H`, at this scale?
 2. Ask what each side gives, takes, stores, hides, or exports.
-3. Score D4 means (`V`) and D5 worldline-foresight (`Φ`) for both sides.
+3. Score D4 means (`V`) and the present D4 assessment (`Φ`) of represented D5
+   alternatives for both sides.
 4. Reject hidden rent, coercion, capture, and dependency manufacture.
 5. Select the move that raises durable `W_i(T)` only while preserving or
    raising `P_node,H`.
@@ -198,7 +199,8 @@ the editor**. Ontology names the situation; epistemology checks the tier;
 methodology selects the repair; axiology tests the move against non-extraction;
 teleology acts; L7 preserves the witness; the witness re-enters as L1 pressure.
 A homeostat, not a project: per-document cycles terminate at equatorial rest;
-the corpus-wide loop never does (`D6 ≡ D0`). Convergence is not a final state —
+the corpus-wide correction practice remains open (`r₆` is a return posture,
+not `D6≡D0`). Convergence is not a final state —
 it is when correction becomes faster than drift and life moves as flow.
 
 ## 7. The receipts (what each load-bearing clause carries)
@@ -247,38 +249,37 @@ The goal obeys the constitution it serves — every clause wears its tier:
 
 ## 8. What moves the goal (and what would rewrite it)
 
-The goal's open edges are experiments, not opinions: **E1** (map where the
-product law actually governs), **R10b/V3** (depth-vs-depth mutual modeling —
-the remaining route to a conserved game-product), **R2 weak-model arm** (does
-the constitution beat generic honesty where the baseline actually fails),
-**R4** (the keystone organizational wager). **Kill clause (A7):** if E1 maps
-the registers Dasein actually inhabits as additive — if life's factors turn
-out substitutable where this goal says they are conjunctive — the
-`boundary-preserving frontier through Φ × V` clause must be rewritten in public. The goal is
-subject to the same ladder as every claim it governs.
+The goal's open edges are experiments, not opinions:
+**Peer-program EXP-E1** (the exponent-measurement protocol, distinct from
+Emergent Axiom E1: map where a product law actually governs),
+**R2 weak-model arm** (does the constitution beat generic honesty where the
+baseline actually fails), and **R4** (the keystone organizational wager).
+**R10b/V3 is not open:** V2 saturation and V3 positional cancellation closed
+the depth-axis routes to a conserved game-product on 2026-06-15. R10a's
+within-model conjunctive interaction and zero-factor result survive; the
+conservation law does not. **Kill clause (A7):** if Peer-program EXP-E1 maps
+the registers Dasein actually inhabits as additive—if life's factors turn out
+substitutable where this goal says they are conjunctive—the
+`boundary-preserving frontier through Φ × V` clause must be rewritten in
+public. The goal is subject to the same ladder as every claim it governs.
 
 ---
 
 ## 9. Current pursuit — run the goal as a Soul Loop
 
 The goal is pursued by a recurring execution loop, not by restating the vow.
-The operational form — source-anchoring, public-mirroring, retrieval,
-verification, receipting — is the **O11 Vision/Mission runtime** defined in
-[VMOSK_A.md](../VMOSK_A.md); this document does not re-derive it.[^goal-op-loop-ref]
+The operational form is the typed Soul Loop: source-anchor the model, declare
+its alternatives and means, commit an action, receive the world's outcome
+separately, compare expectation with receipt, and update map and selector.
 
 The philosophical commitment is the same as §0 and §6: **disciplined correction
-faster than drift.** The goal names the commitment; VMOSK-A names the runtime
-that executes it. The five-Knows Soul Loop (§6) is the *form* of the commitment;
-the O11 loop is its *operational surface*; the two are not the same loop and
-should not be conflated. The pursuit of any advance must move through both
-loops in their proper order.
-
-[^goal-op-loop-ref]: The 5-step operational loop (source truth → public mirror → retrieval/RAG → verification gate → receipt) lives in [VMOSK_A.md](../VMOSK_A.md) as the O11 Vision/Mission runtime. Repeating it here would re-derive the operational surface in the philosophical document; the L1 Caṇḍāla reclassification pass (2026-07-19) flags this as a layer-conflation (philosophical commitment vs operational runtime) and removes the inline restatement.
+faster than drift.** The goal names the commitment; the Soul Loop is its
+corrigible method. Repository workflows may implement that method, but no
+external application supplies the worldview's warrant.
 
 ---
 
-**Read with:** [VMOSK_A.md](../VMOSK_A.md) ·
-[00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
+**Read with:** [00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) ·
 [10_THE_SOUL_LOOP.md](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) ·
 [00_THE_DYADIC_COUPLING_LAW.md](../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) ·
 [00_THE_CORE_CONJECTURE.md](../01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md)

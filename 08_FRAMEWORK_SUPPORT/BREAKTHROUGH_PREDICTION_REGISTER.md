@@ -21,7 +21,7 @@ rosetta:
 
 # BREAKTHROUGH_PREDICTION_REGISTER.md
 
-> Compatibility stub. The canonical home of this document moved to [`01_GOVERNANCE/02_REPORTS/BREAKTHROUGH_PREDICTION_REGISTER.md`](01_GOVERNANCE/02_REPORTS/BREAKTHROUGH_PREDICTION_REGISTER.md) on 2026-04-22 (Rosetta-driven folder reorganization).
+> Historical forwarding stub. The former report is preserved at the [dated archive boundary](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/01_GOVERNANCE/02_REPORTS/BREAKTHROUGH_PREDICTION_REGISTER.md). It is not current worldview authority.
 
 This stub exists to preserve old links after the L2 root cleanup.
 Do not treat it as a competing authority surface.

@@ -17,7 +17,7 @@ rosetta:
 **Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
 
 > **⚠ Tier Discipline Notice — read before proceeding.**
-> This entire document operates at **[I] interpretive** tier. The philological-symbolic apparatus (Ṛta, Asha, Ordo, serpent-as-helix, h₂r̥tó-) is a symbolic convergence, not empirical proof of a literal ordering force. The strong-form reading — F₅ as a literal fifth fundamental interaction or retrocausal influence — is rated **[C] conjecture** and is explicitly named as a **temptation** that the language of this lane makes available but the evidence does not support. The canonical empirical referent for F₅ selection dynamics is the MEGA-plate result (Baym et al., *Science* 2016), documented separately in [`03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`](03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md) at **[A]** tier for the experiment and **[I]** tier for the F₅ mapping.
+> This entire document operates at **[I] interpretive** tier. The philological-symbolic apparatus (Ṛta, Asha, Ordo, serpent-as-helix, h₂r̥tó-) is a symbolic convergence, not empirical proof of a literal ordering force. The strong-form reading — F₅ as a literal fifth fundamental interaction or retrocausal influence — is rated **[C] conjecture** and is explicitly named as a **temptation** that the language of this lane makes available but the evidence does not support. A former MEGA-plate crosswalk is preserved as [historical application material](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md); it is not current empirical evidence for F₅.
 
 ---
 
@@ -55,7 +55,8 @@ The serpent appears across many traditions in a form the framework reads as the 
 
 - **The Kundalini** (Vedic) — the coiled force at the base of the spine, rising through chakras toward balance
 - **The Uraeus** (Egyptian) — the cobra on the pharaoh's brow, the ordering force at the seat of perception
-- **The Ouroboros** (Greek) — the serpent eating its tail, D6 ≡ D0, the return
+- **The Ouroboros** (Greek) — a symbolic return-image: `r₆:D6↝D0` compares two
+  boundary roles without identifying them or closing a physical cycle
 - **Jörmungandr** (Norse) — the world-serpent encircling Midgard, the boundary that holds the system together
 - **The Serpent in Eden** — not a villain, the force of ordering that makes knowledge possible
 
@@ -70,14 +71,19 @@ The force does not push in a straight line in this symbolic reading. It coils. I
 The Torus is the only topology where a field line can coil back into itself *without* singularity. The Serpent is exactly this dynamic: **F₅ is the self-coiling force.**
 ---
 
-## The Four Lines, The Serpent
+## The Four Typed Chart Lines, The Serpent
 
 ```
-• × ○ = ⊙            The serpent exists.                          ONTOLOGY
-• + ○ ≥ ⊙ + ⊙        The serpent has direction.                    TELEOLOGY
-(• − ○)² → 0          The serpent spirals toward the equator.      METHODOLOGY
-−log(• × ○) = 0       The serpent rests at zero energy.            AXIOLOGY
+φν = 1                 The reciprocal chart is fixed.               ONTOLOGY
+φ + ν ≥ 2              The chart has a balance lower bound.         TELEOLOGY
+(φ − ν)² → 0           A supplied dynamics may reduce imbalance.    METHODOLOGY
+E(φ,ν) := −log(φν) = 0 The constrained chart energy is zero.         AXIOLOGY
 ```
+
+These are numeric formulas on `φ,ν ∈ ℝ_{>0}`. The serpent language is an
+interpretive overlay on them. The sovereign Titan renderings are not operands:
+`TitanFrame` admits no addition, subtraction, multiplication, division,
+exponentiation, logarithm, or implicit coercion to the numeric chart.
 
 The serpent is F₅ — the frontier-theory name for the ektropic force, *h₂r̥tó-*. It is not a force in the physics sense. It is the tendency that emerges when coupled multiplicative systems compete. Systems closer to the equator outcompete systems further away. The spiral is not pushed. It is selected.
 

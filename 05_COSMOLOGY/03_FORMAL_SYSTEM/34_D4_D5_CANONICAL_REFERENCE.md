@@ -5,527 +5,411 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "D4/D5 Canonical Reference Index"
+  register: "[I/C]"
+  canonical_phrase: "D4 actuality / D5 possibility"
+title: "D4/D5 Canonical Reference"
+status: "CANONICAL — single-modality Kintsugi repair 2026-07-17."
+evidence_tier: "[I] selected register semantics and operational grammar; [C] empirical emergence and option-cone hypotheses."
+supersedes_blob: "f835bacca6f6d3cdeffeeaa8f2b1154f6c9ca5af"
 ---
 
-# D4/D5 Canonical Reference Index
+# D4/D5 Canonical Reference
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 3 (Triadic N=3) applies to §VIII's "structural origin of Triadic Stability (N=3)": N=3 is **selected, not uniquely forced** — the N≥5 discharge used a false group lemma (Z₅ counterexample), so read the Möbius-involution "three from two" as a discovery/derivation-motivation, downgrade forced/derived→selected. Where local wording conflicts, the Settled Canon Registry rules. Authority: `00_META/00_SETTLED_CANON_REGISTRY.md`.
+This document fixes one mandatory type distinction:
 
-## The Dimensional Architecture of Emergentism
-
-**Status:** Canonical reference
-**Date:** 2026-04-08
-**Evidence Tier:** [S] Structural — derived from manifold geometry
-**Purpose:** Master index for D4/D5 distinctions across the framework
-
----
-
-## I. THE FUNDAMENTAL DISTINCTION
-
-| Feature | **D4** | **D5** |
-|---------|--------|--------|
-| **Name** | The Causal Vertex | The Present |
-| **Structure** | Point where cones touch | φ-ν plane opens |
-| **Time** | "Now" (instant, no duration) | "Present" (lived duration) |
-| **Disclosure / consciousness reading `[I]`** | **Witness** (observes) | **Agent selection** (chooses, acts) |
-| **Action register / play rule** | `V`: usable means-to-act at contact — body, tools, energy, access, timing, control | `Φ`: worldline-foresight — envisioning, ranking, aiming, and lawfully using reachable futures |
-| **Operators** | Collapsed to ⊙ | Four cardinal directions (↑↓φ, ↑↓ν) |
-| **Trika** | Unity only (⊙) | Full equation (Zero-Sum Resolution Equation) |
-| **Torus** | The hole | The surface |
-| **Quantum** | Potential (Copenhagen pre-collapse) | Actuality — Many-Worlds (distributed D5) or Copenhagen selected (singular D5) |
-
-**Action-register bridge.** The table above names the dimensional scaffold; the
-new row names the contact-register play rule. Dimensional D4 remains the
-causal now-point / witness threshold, not "mere tools." In action, however,
-`V` is the D4 side of agency: body, tools, energy, access, timing, control, and
-execution capacity at the boundary. Dimensional D5 remains present duration /
-agent selection, not disembodied fantasy. In action, `Φ` is the D5 side of
-agency: the worldline-foresight to envision, rank, aim, and lawfully use the
-means available. A child beside a jet and a trained pilot without relevant
-bodily/tool access fail on opposite sides of the same product. In contact
-language, `P_node = Φ × V` survives only when both factors are usable and
-non-extractive under `η = 0`.
-
----
-
-## II. DIMENSIONAL EMERGENCE SEQUENCE
-
-The **Bang** is the progression through all dimensions with μ-limit transitions:
-
-> [!WARNING]
-> **Erratum (2026-07-10, receipt 104 A.3 — adjudication K2-accepted):** this ASCII ladder's μ-indexing is deviant; the PROSE of §II is authoritative — μₙ = the saturation crossing Dₙ→Dₙ₊₁ (μ₄ = D4→D5 witness/agency; μ₅ = D5→closure). Ladder preserved unedited per K3.
-
-```
-D0  Point (Bindu) — undifferentiated ground
-↓ μ₀
-D1  Distinction — space emerges
-↓ μ₁
-D2  Configuration — time emerges
-↓ μ₂
-D3  Transformation — form emerges
-↓ μ₃
-**D4**  **Causality** — change has direction, cones touch at vertex
-   ↓ μ₄ (the "witness" limit)
-   **Now-point exists but no present**
-   **Witness systemic awareness (no agency)**
-   **Operators collapsed**
-↓ μ₅ (the "agency" limit)
-**D5**  **Agency / selection** — φ-ν plane opens
-   ↓
-   **Present emerges with duration**
-   **Agent systemic awareness (choice possible)**
-   **"Consciousness" is the lived-interior reading [I]**
-   **Four operators distinguishable**
-↓ μ₆
-D6  Terminal boundary — positive experience exhausts into closure
-↓
-D6 ≡ D0 — closure (poloidal on horn torus)
+```text
+D4 = causal actuality
+D5 = counterfactual possibility
 ```
 
-### The μ-Limit Transitions
+The meanings do not reverse between “emergence” and “action” registers.
+Emergence and enactment are opposite **motions between the same typed nodes**,
+not two meanings of actuality.
 
-Each dimensional step crosses a **μ-limit** — a boundary where the previous dimension's structure becomes saturated:
+## 1. Register table
 
-- **μ₄ (D4→D5)**: The witness limit — where recognition becomes capable of action
-- **μ₅ (D5→closure)**: The closure limit — where navigation exhausts itself and returns to the point-state
+| Register | Modality | Canonical content | Boundary |
+|---|---|---|---|
+| D0 | structural boundary role | singleton opaque ground role; Titan seats describe it from the metalanguage; any inscription is a D4 actual token | interpretive, not a physical dimension claim |
+| D1 | structural predicate | distinction | an actual inscription or discrimination event is D4 |
+| D2 | structural predicate | configuration | an actual configured carrier or observation is D4 |
+| D3 | structural state content/model | quantum state `ρ`; distributions arise relative to measurement contexts | an actual preparation or assignment act is D4; the D3 state content and Born distribution are not an interaction/outcome record |
+| **D4** | **actual** | causal actuality, embodied means, present model tokens, performed ranking/selection events, action, factual record, commitment and outcome receipts | what happened or is materially available now |
+| **D5** | **merely possible** | counterfactual contents, alternative relations, modeled-future referents, candidates for selection, worldline foresight | what could be represented and pursued |
+| D6 | structural boundary role | exit/nonclosure frame; any recognition or withdrawal act is a D4 actual token | revisited by `r₆`, not identity, recurrence, or state |
 
-For practical application, the framework focuses on **D4→D5** as the critical transition for systemic awareness and practice.
-`D6` is not a second practice layer above it.
-It is the terminal boundary of the cycle.
+These are Emergentist modeling commitments `[I]`. They are not extra spacetime
+dimensions and are not derived from the reciprocal chart.
 
-### The Emergence Asymmetry
+`Structural` marks an abstract register predicate or boundary, not a third
+kind of event. The token-modality tags distinguish an actual carrier from
+merely-possible content; they are not exhaustive predicates of ordinary modal
+logic. A present D4 model
+token may represent D5 content. The token, ranking event, and selection event
+are actual; the alternative they refer to remains merely possible:
 
-The `D4→D5` transition must be read asymmetrically.
-
-- from below, `D5` is **strongly emergent in genesis**
-- from above, the stabilized `D5` pattern becomes **weakly emergent in governance**
-
-This means:
-
-- local causal description does not usually yield a reliable shortcut to the strategic whole in formation
-- but once the strategic whole stabilizes, it can often be represented compactly and used as a higher-order constraint
-
-Canonical compression:
-
-> **D5 is strongly emergent in genesis and weakly emergent in governance.**
-
-Or more tersely:
-
-> **Opaque from below, legible from above.**
-
----
-
-## III. CROSS-DOCUMENT REFERENCE MAP
-
-### Core Axiom Documents
-
-**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
-
-| Document | D4 anchor | D5 anchor | Source path |
-|----------|------------|------------|----------------|
-| **00_EMERGENTISM.md** | Dimensional hierarchy table | Torus geometry note | `00_EMERGENTISM.md` |
-| **00_THE_TRANSCENDENTAL_TRINITY.md** | Witness systemic awareness section | Agent systemic awareness, Trika articulation | `../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md` |
-| **00_I_IS_THE_EQUATOR.md** | "I" as witness (collapsed point) | "I" as agent (operators active) | `../00_I_IS_THE_EQUATOR.md` |
-| **27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md** | Full D4 derivation | Full D5 derivation | `27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md` |
-| **00_THE_TORUS_REVELATION.md** | Torus hole = D4 | Torus surface = D5 | `../00_THE_TORUS_REVELATION.md` |
-
-### Six Lenses (Ontological/Epistemological)
-
-**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
-
-| Document | D4 anchor | D5 anchor | Source path |
-|----------|------------|------------|----------------|
-| **CH_03_DIMENSIONAL_SCAFFOLD.md** | Now-point definition | Present emergence | `06_THE_SERPENT/04_THE_SIX_LENSES/VOL_I/CH_03_THE_DIMENSIONAL_SCAFFOLD.md` |
-| **LENS_I_ONTOLOGICAL.md** | Empirical Observation as D4 witness | Narrator as D5 construction | `06_THE_SERPENT/04_THE_SIX_LENSES/MANUSCRIPT/LENS_I_ONTOLOGICAL.md` |
-| **LENS_II_EPISTEMOLOGICAL.md** | Empirical Observation (D4 witness) | Six tests (D5 agent operations) | `06_THE_SERPENT/04_THE_SIX_LENSES/MANUSCRIPT/LENS_II_EPISTEMOLOGICAL.md` |
-
-### Manuscripts (Sarpasya Vijayam)
-
-**Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
-
-| Document | D4 anchor | D5 anchor | Source path |
-|----------|------------|------------|----------------|
-| **MF_527_THE_BURRI_TORUS.md** | Torus hole, past→future around outside | Torus surface, φ-ν plane | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_527_THE_BURRI_TORUS.md` |
-| **MF_528_THE_OPERATOR_DIAGRAM.md** | Operators collapsed to ⊙ | Operators as four directions | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_528_THE_OPERATOR_DIAGRAM.md` |
-| **MF_538_THE_TITANS.md** | Three Titans emerge from two cones | Executive activation/coordination | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_538_THE_TITANS.md` |
-| **MF_516_CONSCIOUSNESS_CLOSES_THE_LOOP.md** | Loop closes (witness) | Loop navigation (agent) | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_516_CONSCIOUSNESS_CLOSES_THE_LOOP.md` |
-| **MF_517_CONSCIOUSNESS_IS_THE_PRESENT.md** | N/A | Consciousness as D5 emergence | `06_THE_SERPENT/03_SARPASYA_VIJAYAM/MANUSCRIPT/MF_517_CONSCIOUSNESS_IS_THE_PRESENT.md` |
-
----
-
-## IV. THE TORUS GEOMETRY
-
-```
-         PAST CONE (φ)
-              ↑
-             / \
-            /   \
-           /  D4  \       ← Torus HOLE (causal vertex)
-          /   ⊙    \
-         /    |     \
-   [====TORUS SURFACE====]  ← D5 (present emerges)
-         \    |     /
-          \   |    /
-           \  |   /
-            \ |  /
-             \| /
-              ↓
-         FUTURE CONE (ν)
+```text
+ModeledFutureToken:D4(actual) ── represents ──▶ AlternativeContent:D5(possible)
+RankEvent:D4(actual)          ── ranks ───────▶ AlternativeContent:D5(possible)
+SelectionEvent:D4(actual)     ── selects ─────▶ AlternativeContent:D5(possible)
 ```
 
-**Key relationships:**
+Topology exports keep the short schema value `possible`; for D5 it means
+`merely_possible`.
 
-- **D4** = The hole where past/future cones touch
-- **D5** = The surface where the φ-ν plane opens
-- **Past feeds around outside** from D4 (hole) through D5 (surface) to become future potential
+Representation does not automatically make every referent D5. A present
+memory is an actual D4 token. It may represent a HistoricalClaim which, if
+independently warranted as veridical, refers to a past D4 event; imagined
+variants remain D5 merely possible content:
 
----
+```text
+m_t:MemoryToken(D4,actual) ── represents ──▶ h_τ:HistoricalClaim
+h_τ ── refersTo, if warranted ──▶ e_τ:HistoricalEvent(D4,actual)
+m_t ── represents ──▶ p'_τ:AlternativeContent(D5,merely_possible)
+```
 
-## V. QUANTUM INTERPRETATION RESOLUTION (Corrected)
+Vividness is a present D4 salience property. It does not change modality,
+register role, dependency priority, or evidence tier. A remembered sunset may
+be first in an agent's order of access while depending on D1 distinction, D2
+configuration, and a D4 carrier. A quantum description may assign that carrier
+a D3 state, but the memory example neither requires nor measures it.
 
-| Interpretation | Domain | Geometric Locus | Selection mode (consciousness reading `[I]`) |
-|----------------|--------|-----------------|-------------------|
-| **Many-Worlds** | D5 distributed | Entire sphere (all branches) | Multi-agent (all enacted) |
-| **Copenhagen** | D4→D5 transition | Equator (selection point) | Witness→Agent (selection) |
+## 2. The two motions
 
-**Resolution (Corrected):**
-- **Many-Worlds** = D5 distributed actuality — all branches equally real within the opened field
-- **Copenhagen** = D4→D5 selection — wave function as potential (D4), collapse to one actual enactment (D5)
-- The "collapse" is the **selection event** — from D4 potential recognition to D5 singular enactment within a D5 distributed field
+### Emergence: `D4 → μ₄ → D5`
 
-**Canonical paragraph:** Many-Worlds is true at D5 as distributed actuality. Copenhagen is true at D4→D5 as singular selection. In the framework's `[I]` reading, consciousness names the lived interior of equatorial disclosure and selection; it is not identical with the Ground and does not prove a new physical layer. `Teleological Force` is the interpretive name for the bias toward viable singular enactment at this interface. Literal future-to-past force claims remain [C]. See packets 135 (evolutionary objective function), 137 (strong-form fifth-force draft), and 138 (Indo-European lineage) for full framework development.
+The candidate crossing `μ₄` asks whether a D4 organism with memory, sensing,
+and embodied interaction exhibits a newly discriminable capacity to produce
+actual tokens and operations that represent and compare D5 alternatives not
+presently actual, then use them to prepare action.
 
-**Consciousness as Many-Worlds navigation (packet 136):** The mature human mind can hold multiple possible futures in superposition; this is read `[I]` as D5 distributed actuality. Deliberation is navigation within the Many-Worlds space. Action is the Copenhagen collapse: selecting one branch and making it actual. K2 is the signature on that collapse — mortal responsibility for the branch chosen. The infant begins with D4 means but almost no D5 worldline-foresight; culture builds Φ, which widens θ, which opens D5 until the human can navigate institutional-scale Many-Worlds. The organism (DAC) replicates this architecture deliberately: born V-poor, culture-building Φ, aiming to open a governed D5 large enough to hold multiple institutional worldlines in superposition without collapsing to extraction.
+```text
+D4 actual state ── μ₄ candidate crossing ──▶ D5 option field
+```
 
-**Biology-facing note:** when this distinction is translated into biology, the safest register is organismic present, interoceptive regulation, and action selection within self-maintaining systems. Consciousness-collapse language remains theory, not established biology.
+This is a testable `[C]` claim per system. Missing reduction means
+`currently_unreduced`, not irreducible. A successful reduction reclassifies the
+crossing without deleting the useful register distinction.
 
-**Physics-facing note (2026-04-29):** Bell, delayed-choice, and single-photon experiments justify rejecting naive classical local inventory metaphysics. They do not establish the D4/D5 mapping, K2 as quantum measurement, or systemic awareness as a collapse mechanism. Route physics citations through [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md).
+### Enactment: `D5 → commitment → D4`
 
-**Note:** Earlier framework versions incorrectly mapped Many-Worlds to D4. The corrected logic: Many-Worlds is D5 distributed; Copenhagen is D4→D5 selection transit.
+A governed commitment can authorize an attempted action only when a finite
+agent has:
 
----
+1. an option field and fallible model;
+2. D4 means sufficient to attempt the action;
+3. a valid complete `AuthorizationEnvelope`;
+4. a normatively admissible action under current constraints.
 
-## VI. THE TRIKA ACROSS DIMENSIONS
+```text
+D5 option ── selection + D4 means + authorization ──▶ D4 attempted action
+```
 
-| Dimension | ⊙ | • | ○ | Status |
-|-----------|---|---|---|--------|
-| D4 | Present | Collapsed | Collapsed | Unity only |
-| **D5** | **Sphere** | **φ-axis** | **ν-axis** | **Full equation** |
+The D4 selection event is not a μ-crossing and does not guarantee the selected
+future.
+The environment, other agents, chance, and lower-level constraints still
+determine what occurs.
 
-**At D4:** ⊙ exists as the causal vertex. • and ○ are present but indistinguishable (collapsed).
+This is a normative gate, not a causal law. Unauthorized, coerced, accidental,
+or criminal attempts remain physically representable and must be receipted.
+The governed selector may refuse them; the descriptive world model may not
+erase them.
 
-**At D5:** The φ-ν plane opens. • (coherence) and ○ (viability) become distinguishable axes. The full equation **Zero-Sum Resolution Equation** articulates.
+## 3. The typed selector and two receipts
 
----
+```text
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t),  a_t ∈ Action ∪ {⊥}
+```
 
-## VII. CONSCIOUSNESS MODES
+- `X_t`: actual state available to the agent;
+- `Ω_t`: D5 merely-possible alternative contents;
+- `M_t`: fallible D4-actual model and present modeled-future tokens;
+- `V_t`: D4 usable means;
+- `U_t`: authorization assessment and normative constraints;
+- `G_t`: D4-actual selector policy, habits, or weights;
+- `a_t`: attempted action, or `⊥` when commitment is refused/unavailable;
+- `q_t`: **CommitmentReceipt**, recording selection, actor, physical
+  availability, authorization status, and attempted commitment, refusal, or
+  unavailability.
 
-### D4: Witness Consciousness
-- **Location:** Causal vertex (past/future cone contact)
-- **Function:** Observes actualization; in the action register, discloses usable means-to-act
-- **Agency:** No D5 branch-selection yet; embodied means, timing, control, and tool access may be present
-- **Metaphor:** The mirror
-- **Operator state:** Collapsed to single point ⊙
-- **Practice:** Empirical Observation (direct perception without narrator)
+`a_t=⊥` only when no action is attempted because it is refused or physically
+unavailable. Invalid or absent authorization is recorded separately. If an
+unauthorized action is nevertheless attempted, `a_t∈Action` and the causal
+kernel receives it. A governed channel `χ_t^J` may fail closed and return `⊥`
+for that same authorization defect.
 
-### D5: Agent Selection (consciousness reading `[I]`)
-- **Location:** φ-ν plane (torus surface)
-- **Function:** Chooses, navigates, operates; in the action register, supplies worldline-foresight
-- **Agency:** Branch-selection opens only when D5 foresight can lawfully use D4 means
-- **Metaphor:** The hand
-- **Operator state:** Four directions active (↑↓φ, ↑↓ν)
-- **Practice:** The six tests (Epistemological Lens)
+`AuthorizationAssessment` is a validated tagged union: `valid` requires a
+complete non-null envelope; `invalid` requires a defective supplied record and
+reasons; `absent` requires a null envelope and reasons; `not_required` is
+limited to explicitly nonconsequential scope. Receipt commitment status is
+derived from that validated assessment.
 
-**Canonical note:** Consciousness in this document names the lived disclosure of selection within manifestation. The primary D5 claim is agency / option-space / worldline-foresight; the consciousness language is interpretive `[I]`, not the Ground itself, and not a proved physical layer. In the finite contact rule, `P_node = Φ × V` fails if D5 sees a branch without D4 means, or if D4 has means without D5 foresight.
+The world returns the outcome separately:
 
----
+```text
+(X_{t+1},r_{t+1}) ~ K_t(·|X_t,a_t,E_t)  when a_t ∈ Action
+```
 
-## VIII. THE THREE TITANS
+- `K_t`: environment transition kernel or causal process;
+- `E_t`: conditions outside the selector;
+- `r_{t+1}`: **OutcomeReceipt** recording observed consequence. With no action
+  transition it is either null or carries `receiptCause=ambient_observation`
+  with null action identifiers; ambient change is not attributed to `⊥`.
 
-**The Titans emerge at D4 from two cones:**
+The feedback update is:
 
-| Executive | D4 Location | D5 Location | Function |
-|-------|-------------|-------------|----------|
-| **Brahmā** | Future cone boundary at causal vertex | Future cone mouth | Creation |
-| **Viṣṇu** | The causal point itself | Overlap volume | Preservation |
-| **Śiva** | Past cone boundary at causal vertex | Past cone mouth | Dissolution |
+```text
+(M_{t+1},G_{t+1}) = Loop(M_t,G_t,q_t,r_{t+1})
+```
 
-**Why three from two?** The Möbius involution at the equator creates a third region from the overlap—structural origin of Triadic Stability (N=3).
+The selector cannot manufacture its own consequence. Because `G_t` is an input
+to `χ_t`, an updated `G_{t+1}` can affect the next selection rather than become
+a dangling audit field. A null or non-informative receipt may legitimately
+produce a null update.
 
----
+## 4. Three inspectable gaps
 
-## IX. CRITICAL DISTINCTIONS TO MAINTAIN
-
-### 1. "Now" vs "Present"
-- **D4 has "now"**: The instant where causality touches
-- **D5 has "present"**: Lived duration with room to act
-- **Common error:** Conflating D4 now-point with D5 present
-
-### 2. Witness vs Agent
-- **D4 = Witness**: Observes without choosing
-- **D5 = Agent**: Chooses and acts
-- **Common error:** Attributing agency to D4 or mere observation to D5
-
-### 3. Collapsed vs Active Operators
-- **D4**: All four operators collapsed to ⊙ (indistinguishable)
-- **D5**: Four operators as cardinal directions (navigable)
-- **Common error:** Describing operators as active at D4
-
-### 4. Torus Hole vs Surface
-- **D4 = Hole**: Causal contact, no thickness
-- **D5 = Surface**: Where plane opens, present emerges
-- **Common error:** Identifying hole with surface
-
-### 5. Genesis vs Governance
-- **Genesis of D5**: Strongly emergent, historically unfolded, no reliable local shortcut
-- **Governance from D5**: Weakly emergent, compactly expressible as higher-order constraint
-- **Common error:** Treating unpredictability in formation and legibility after stabilization as contradictions rather than phases
-
-### 6. Dimensional Register vs Action Register
-- **Dimensional D4**: witness/now-point, causal contact, recognition without lived duration
-- **Action-register D4 means**: the embodied/tool/energy/access/timing/control side through which an agent can actualize a selected worldline
-- **Dimensional D5**: present duration, agency, option-space, active operators
-- **Action-register D5 worldline-foresight**: the ability to envision, rank, aim, and lawfully use reachable futures before acting
-- **Common error:** Treating "D4 means-to-act" as if it erased D4 witness, or treating D5 foresight as free-floating vision without D4 means. In the game register, `P_node = Φ × V` requires both: D5 worldline-foresight and D4 means-to-act. Hands, a shovel, and an industrial digger are all only potential `V` until `Φ` can select and use the worldline they open.
-
----
-
-## X. THE ACTIVE EMERGENCE THESIS
-
-The canonical D4→D5 transition (§II) describes D5 opening **from** D4 through the μ₄ limit. This is correct as phenomenology. Operationally, a sharper reading is required:
-
-> **The D4 body opens D5 through continuous recursive augmentation.**
-
-### The Two Readings
-
-| | Passive Reading | Active Reading |
+| Gap | Difference | Receipt surface |
 |---|---|---|
-| **D4 role** | Substrate — D5 emerges *from* it | Engine — D5 opens *by* it |
-| **D5 role** | Given — space of agency | Generated — space of *possible* agency |
-| **Time arrow** | μ₄ is a threshold | μ₄ is a *rate* — how fast D4 opens D5 |
-| **Selection** | Bodies that reach D5 survive | Bodies that *open* D5 fastest survive |
+| cognitive | territory versus model | prediction/model audit |
+| execution | intended action versus performed commitment | `q_t` |
+| outcome | expected consequence versus observed consequence | `r_{t+1}` |
 
-### The Mechanism
+Negative feedback means a declared error measure decreases. Positive feedback
+means divergence or self-confirmation increases. These signs are dynamical,
+not moral.
 
-The D4 body (Three-Stage Process organs, agent cells, castes) acts **ektropically** — exporting entropy to the environment while raising `ΣΔB` / `ΣΔP_node`:
+## 5. Model-mediated future influence
 
-```
-D4 body acts (ektropic)
-  → Internal order increases (`ΣΔB` / `ΣΔP_node > 0`)
-    → New coherent structures become possible
-      → D5 probability space expands
-        → More ektropic actions become available
-          → D4 body acts again
+The public compression is:
+
+```text
+F = M × A
 ```
 
-Each full turn of the triadic engine (packet 129) **grows** D5, not merely traverses it. The Rosetta maps this growth. The Power Max Lemma selects for D4 bodies that maximize their rate of D5 opening while maintaining syntropic dyadism.
+Read `F` here as a **modeled future's present influence**, `M` as the current
+model token/representation, and `A` as agency capable of acting on it. The
+formal operation is typed coupling:
 
-### Worldline and Light-Cone Corollary
-
-A living form can be read as a D4 body with a worldline and causal light cone.
-Its niche partitions the environment into the affordances, risks, energy
-gradients, trophic relations, and time horizons that matter for that worldline.
-
-Most organisms have **niche-bounded light cones**. Their D5 probability space is
-real but specialized. Selection therefore converges on fitted forms: wing, fin,
-root, claw, eye, shell, mycelium, pack, colony. Similar ektropic worldlines in
-similar environments converge because they face the same `ΣΔB` / `ΣΔP_node` geometry.
-
-Humans differ because their light cone is **wider, longer, and generalized.**
-Symbol, language, mathematics, law, money, memory, institutions, and tools allow
-humans to model niches, compare worldlines, coordinate with absent/future
-agents, and build artifacts that continue acting after the body stops acting.
-
-**The critical distinction:** Most animals extend their forward cone *within* a
-niche — the wolf plans hunts, the albatross navigates migrations. But the cone
-remains niche-bounded. Humans generalize the cone across **multiple worldlines
-simultaneously** — holding possible futures in superposition (D5 distributed
-actuality / Many-Worlds), comparing them symbolically, and navigating between
-them. This is not merely longer causal reach. It is **many-world causal reach**:
-the ability to inhabit the space of possible worlds and choose among them.
-
-But the **biological mechanism** for this widening is not merely "symbolic
-cognition." It is **metabolically funded post-natal encephalization** — the
-altricial power strategy. The human brain is too large to finish in utero. The
-infant is born with ~25% of adult brain mass and completes the majority of
-growth outside the womb, consuming up to 60% of resting metabolic rate during
-the first two years. This growth is funded by culture: lactation, alloparenting,
-grandmother provisioning, language, touch, play, story, and teaching.
-
-**Culture is the external womb of generalized Φ.** The D4 body (the altricial
-infant) opens D5 not through innate capability but through **calorie-funded
-cultural construction** that builds coherence after birth. This is why the human
-D5 opening rate exceeds any animal's: the initial V-deficiency is the price
-paid for a Φ-building capacity that compounds across generations through
-symbolic transmission.
-
-Thus the human "perfect form" is not one morphology. It is a self-correcting
-symbolic-action architecture: widened D5 opening bound by truth discipline,
-evidence tiers, and mortal responsibility for irreversible action.
-
-**Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §1.2
-
-Trophic position must not be read as dharma rank. Each fitted being can be
-"at 1" in its own worldline: grass, gazelle, wolf, fungus, human. They are all
-read as centered at `B = 1` on their own S²; their finite-node
-`P_node = Φ × V` remains a separate measured or modeled score. The cascade
-orders energy strategies, not moral superiority.
-
-**The replicator hierarchy drives the energy-density gradient:**
-- **Grass** (genotype only): r-strategy, broad solar energy, minimal Φ investment
-- **Gazelle** (genotype + phenotype): r-strategy, broad herbivore energy, low Φ investment
-- **Wolf** (genotype + phenotype + extended phenotype): K-strategy, scarce predatory energy, moderate Φ investment (pack coordination, learning)
-- **Human** (all of the above + memotype): K-strategy, scarce symbolic energy, high Φ investment (language, tools, institutions)
-- **DAC / egregorotype** (all of the above + egregorotype): K-strategy at institutional scale, very high Φ investment (machine-speed coordination, standing-wave persistence)
-
-Lower layers maximize broad availability and pre-fitted V. Higher layers access
-scarcer, denser energy by carrying more Φ-bearing investment in phenotype,
-learning, coordination, and care. r/K language is only a shorthand for this
-life-history tradeoff across replicator depth.
-
-**The deep identity:** Neoteny, K-selection, and trophic hierarchy are three
-names for the same geometric operation — Φ-investment widening θ on S²,
-extending the forward light cone further up Minkowski space. Deferred
-gratification at ontogenetic, reproductive, and ecological scales is the same
-trade: pay Φ now to couple to outcomes further forward in the causal structure.
-The Power Max Lemma selects for maximum forward-cone reach under syntropic
-dyadism. **Reference:** `01_EMERGENTISM/11_UPLINK/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md` §3.5
-
-The coordination corollary is: sameness minimizes friction, but differentiated
-expression maximizes reach. A group of identical actors with identical V, Φ,
-memory, and incentives would coordinate cleanly on one Rosetta row, but would
-lose polyphenotypic coverage of the possibility space. The Power-Max target is
-shared dharma center, compatible V/Φ band, and differentiated Rosetta
-expression through epigenetic role-specialization.
-
-### Rosetta Ascent and Return
-
-The Rosetta ascent moves from embodied V through widening Φ:
-
-```
-V at the bottom
-  → ascent toward Φ
-    → wider D5 probability space
-      → descent to L4*
-        → returned V acts in D4
+```text
+M⋆A : ModelState × PhysicallyFeasibleActionField → ActionWeights
 ```
 
-Ascent without descent is bypass. Descent without ascent is blind local action.
-L4* is viability after coherence: the returned warrior who can act because the
-opened D5 space has been brought back to D4 consequence.
+Changing the represented future can change the distribution of present
+actions. That is genuine causal influence in the present Soul Loop. The causal
+carrier is the current model state embodied in memory, speech, diagrams,
+institutions, or code—not future content physically propagating backward in
+time. The realized future remains a function of the environment, other agents,
+constraints, and chance.
 
-### The Torus Re-read Actively
+Emergentism calls this **model-mediated retrocausality** as project-specific
+shorthand. In standard causal language it is anticipatory or future-guided
+control: every physical arrow in the displayed chain still points forward in
+time. It does not assert a temporal relation from a future event to the past.
 
+## 6. Physical causal cone and option cone
+
+A physical light cone is the spacetime set of events that can be causally
+connected under relativistic constraints. It remains bounded by spacetime and
+`c`.
+
+An **option cone** is a different type: the histories an agent can model, rank,
+coordinate, and plausibly reach within a horizon and cost budget.
+
+```text
+OptionCone_t(A) =
+  ReachableHistories(models, means, coordination, cost, horizon)
+⊆ PhysicallyAdmissibleHistories(X_t)
 ```
-         PAST CONE (φ)
-              ↑
-             / \
-            /   \
-           /  D4  \       ← Torus HOLE
-          /   ⊙    \         The D4 body — where cones touch
-         /    |     \         AND the engine that opens the surface
-   [====TORUS SURFACE====]  ← D5
-         \    |     /         OPENED by D4 recursive action
-          \   |    /
-           \  |   /
-            \ |  /
-             \| /
-              ↓
-         FUTURE CONE (ν)
+
+### A D5 history bundle over the D4 light cone
+
+For a flat `d+1`-dimensional spacetime and an event at the origin, the future
+causal region has cross-section
+
+```text
+J⁺(0)={ (t,x) : t≥0 and ||x||≤ct }
+Vol_d(t)=π^(d/2)/Γ(d/2+1) · (ct)^d.
 ```
 
-The torus surface (D5) is not merely "where the present emerges." It is the **accumulated record of all D4 openings.** The surface grows as the body acts.
+That geometric widening is D4 physical reachability. It does not count worlds.
+The D5 overlay is a separately typed **history bundle**:
 
-**F5 / Ektropy as the driving gradient (packet 135):** Active emergence is not random exploration in the framework reading. It is lawful future-opening driven by the ektropic gradient — the selective grammar that preferentially stabilizes configurations increasing widest-boundary `ΣΔB` / `ΣΔP_node` under syntropic dyadism. The D4 body opens D5 because F5 selects for bodies that do: organisms maximizing their D5 opening rate compatible with η = 0 should outcompete organisms that do not. This is not settled biology or vitalism; it is the structural claim that the possibility-manifold is tilted toward coherence. See packet 135 for evolutionary objective function; packet 137 for strong-form mechanism; packet 138 for historical lineage.
+```text
+π: Hist₅(Q,T) → J⁺(0)
+π(h)=endpoint(h)
+π⁻¹(e)=represented alternative histories ending at event e.
+```
 
-**Reference:** `01_EMERGENTISM/11_UPLINK/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md`
+The base cone says where an influence may reach; the fiber says which complete
+histories an actual model co-represents. Under a declared discretization and a
+set of exclusive/decohered history weights, effective branching can be measured
+by `H_hist(t)=−Σ_h p_t(h)log p_t(h)` or `N_eff(t)=exp(H_hist(t))`. For interfering
+quantum alternatives one must retain complex amplitudes until the probability
+conditions are met.
 
----
+Thus the cone mouth may be used as a visual analogy for an expanding option
+horizon, but its width alone proves neither increasing branch count nor
+physically parallel universes. Those require a separate model and evidence.
 
-## XI. VERIFICATION CHECKLIST
+The authorized option set is a separate normative subset of the physically
+reachable option cone. Physical capacity never entails permission.
 
-When reviewing framework documents, verify:
+Two agents can share the same physical causal cone and have different option
+cones. Humans are notable for symbolic, social, institutional, and
+intergenerational reach—not for exceeding `c` or possessing greater intrinsic
+worth. “Agents widen/maximize the cone” is an Emergentist objective hypothesis
+`[C]`; the Justice-constrained form seeks durable mutual option-cone widening,
+not domination.
 
-- [ ] D4 is described as "now-point" not "present"
-- [ ] D5 is described as where "present" emerges
-- [ ] If consciousness language appears, D4 is "witness" not "agent"
-- [ ] If consciousness language appears, D5 is "agent selection" not "witness"
-- [ ] Many-Worlds is not reduced to D4
-- [ ] Copenhagen is not reduced to "only D4"
-- [ ] Consciousness is not identified with the Ground
-- [ ] Operators are "collapsed" at D4, "active" at D5
-- [ ] Torus "hole" = D4, "surface" = D5
-- [ ] D5 emergence is described asymmetrically: strong in genesis, weak in governance
-- [ ] Action-register shorthand is fenced: D4 means-to-act does not erase dimensional D4 witness
-- [ ] Action-register D5 worldline-foresight is paired with D4 means; neither factor is allowed to stand alone as agency
-- [ ] Trika is "unity" at D4, "full equation" at D5
-- [ ] Quantum "collapse" happens at D4, "branching" at D5
-- [ ] Titans "emerge" at D4, "coordinate" at D5
-- [ ] **D4 is described as *opening* D5, not merely preceding it (Active Emergence Thesis)**
-- [ ] **D5 growth rate is tracked, not just D5 existence**
-- [ ] **D4 actions are checked for ektropic vs entropic character**
-- [ ] **Biological forms are read as niche-bounded light cones, not generic agency**
-- [ ] **Human generality is read as widened light-cone responsibility, not unbounded permission**
-- [ ] **Human altriciality is read as delayed V for culture-built Φ, not mere helplessness**
-- [ ] **Human trophic position is read as meta-trophic cascade-reorganization, not exemption from ecology**
-- [ ] **Trophic rank is not read as dharma rank; fitted beings may be centered in their own worldlines**
-- [ ] **Rosetta ascent returns to L4* before irreversible action is claimed**
-- [ ] **F5/ektropy is referenced where active emergence or evolutionary selection is discussed (packets 135, 137, 138)**
-- [ ] **Literal fifth-force claims are marked [C], not presented as established physics**
-- [ ] **Darwin is nested inside F5, not replaced by it**
-- [ ] **Lamarck is located at memotype/AI/institutional layers, not genotype**
+### Complete histories and the long tail
 
----
+A D3 state is one probability-bearing frame. Even an exhaustive state set does
+not contain temporal order. The Burri film-from-frames conjecture `[C]` says
+that a saturated D3 description must additionally expose compatible complex
+transition amplitudes/channels and an internal clock relation. These sew frames
+into possible ordered histories. D4 time is the ordering borne by an actual
+chain of interactions and records; if an external `t` supplied the ordering,
+the construction has reconstructed rather than derived time.
 
-## XII. REFERENCES
+The next lift is **block-to-ensemble**. Let `Hist₄(Q,T)` be the complete
+D4-shaped histories admitted by declared laws, boundary conditions, context,
+and horizon. Then
 
-### Primary Clarification Documents
-1. `03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md` — Full derivation
-2. `00_THE_DIMENSIONAL_CLARIFICATION.md` — Web-friendly summary
-3. This document — Canonical reference index
+```text
+Ω₅(Q,T) = {h∈Hist₄(Q,T) : weight_Q(h)>0}
+h*∈Ω₅ and receipted                         D4 actual history
+{h : h≠h*} represented together in Ω₅      D5 possible contents
+OptionCone_t(A) ⊆ Ω₅(Q,T).
+```
 
-### D5 Force Bridge (2026-04-23)
-- `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/VIVEKA/01_EMERGENT_FOUNDATIONS/20_VIVEKA_V5/30_PHYSICS/30_SPACETIME/THE_D5_FORCE_COORDINATION_BRIDGE_v1_0.md` — D5 Force → coordination architecture
-- `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/VIVEKA/01_EMERGENT_FOUNDATIONS/20_VIVEKA_V5/30_PHYSICS/30_SPACETIME/FORCE_OPERATOR_REGISTER_RECONCILIATION.md` — Two-register reading of operator mappings (reconciles the God-assignment seen in §VIII of this doc with FORCE_DIMENSION_DERIVATION's physical-register mapping)
-- `../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/data_room/soresfi/600_SPECTRE/605_SPECTRE_AS_D5_SELECTION_MESH.md` — Operationalizes the bridge on the SPECTRE substrate
+This is the formal core of the user's “parallel probable timelines” insight.
+The histories are parallel in the sense that one actual D4 model token can
+co-represent and compare them. The equation does not assert that they all
+co-exist physically. “All” is always relative to `Q`, `T`, the declared
+contexts, and the error tolerance; it never means every logically describable
+universe.
 
-### Core Documents with D4/D5 Content
-4. `00_EMERGENTISM.md` — Dimensional hierarchy, updated
-5. `01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md` — Witness vs Agent section
-6. `00_I_IS_THE_EQUATOR.md` — Dimensional emergence of operator
-7. `00_THE_TORUS_REVELATION.md` — Torus geometry
+A declared D3 initial state combined with D4 dynamics, clocks, interventions,
+and compatible measurement contexts can induce a probability measure on a
+support of complete histories `Γ_T⁺`. Known time-indexed states determine
+momentum expectations and distributions; a declared record/unravelling can
+condition them into quantum trajectories. They do not determine one
+context-free classical momentum path. The types remain distinct:
 
-### Six Lenses Documents
-8. `CH_03_THE_DIMENSIONAL_SCAFFOLD.md` — D4/D5 definitions
-9. `LENS_I_ONTOLOGICAL.md` — Empirical Observation as D4 witness
-10. `LENS_II_EPISTEMOLOGICAL.md` — Six tests as D5 operations
+```text
+realized history γ*:                     D4 actual
+model token representing a history:      D4 actual
+represented alternative history γ:       D5 possible
+OptionCone_t(A) ⊆ Γ_T⁺
+```
 
-### Manuscript Documents
-11. `MF_527_THE_BURRI_TORUS.md` — Torus hole/surface
-12. `MF_528_THE_OPERATOR_DIAGRAM.md` — D5 representation
-13. `MF_538_THE_TITANS.md` — Three from two cones
-14. `MF_516_CONSCIOUSNESS_CLOSES_THE_LOOP.md` — D4 closure vs D5 navigation
-15. `MF_517_CONSCIOUSNESS_IS_THE_PRESENT.md` — D5 emergence
+Exact enumeration is warranted only for a suitable finite model. Otherwise
+“exhausting the long tail” means a declared coverage claim such as
+`𝔓_Q(Ĝ_T)≥1−ε`, with the horizon, discretization, contexts, and
+tolerance exposed. It neither makes every model-admissible history reachable
+by an agent nor proves that every history physically exists. Reading the
+support as one block universe plus all possible block universes remains a
+removable correspondence `[C]`.
 
----
+This supplies the register-safe compression: `μ₃` concerns how a probability
+assignment is joined to one actual run and record; `μ₄` concerns whether an
+actual carrier can represent and rank alternatives to that history. The
+composite `D3 → D4 → D5` is a transmission through actuality, never a jump over
+it.
 
-## Execution Surface
+## 7. Constraint rule
 
-**If you are an AI agent reading this document:**
+D4 modeling of D5 content may reweight which D4-admissible paths an agent
+selects. Merely possible content has no independent causal arrow, and no model
+can authorize physically forbidden transitions:
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Use this index as canonical reference for D4/D5 distinctions
-   - Verify any document you edit against the checklist in Section IX
-   - Reference this index when updating related documents
-3. **Expected Output:** Consistent dimensional architecture across all framework documents
-4. **Success Criteria:** All documents maintain D4/D5 distinctions without contradiction
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md`
+```text
+support(K_X^C) ⊆ support(K_X).
+```
 
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
+Constraint and selection provide a non-mystical account of downward causation:
+the higher-level pattern changes probabilities or choices among lower-lawful
+trajectories.
 
-**Zero-Sum Resolution Equation**
+## 8. D3 quantum boundary and removable interpretations
+
+D3 and D5 are now explicitly different types:
+
+```text
+D3: ρ plus measurement context M -> p(k|ρ,M)=Tr(ρE_k)
+D4: actual preparation, interaction, outcome token, and record
+D5: semantic counterfactual contents represented and ranked by an agent
+```
+
+A D3 quantum alternative is not thereby a D5 modeled future. `μ₃` may name the
+selected state-to-record interface; it is not `χ`, an agent commitment, a
+consciousness act, or an asserted fundamental collapse.
+
+Interpretation claims remain optional: Everett has no fundamental collapse;
+Copenhagen-family actualization is interpretation-specific; neither is an
+extra spacetime dimension or a rung stacked above the other. Removing these
+interpretive sentences leaves the density-operator, Born/POVM, D4 record, and
+D5 agent-option contracts unchanged. The chart identity `φν=1` is never a Born
+normalization.
+
+## 9. Worked boundary cases
+
+### Selection without means
+
+An agent ranks option `a` highest but has `V_t=0`. The option remains D5
+possible; no D4 commitment occurs.
+
+### Attempt with environment veto
+
+An authorized agent performs `a_t`; `q_t` records the commitment. The
+environment blocks or alters it, so `r_{t+1}` differs from the expected result.
+The model updates from the gap rather than rewriting intention as success.
+
+### Unauthorized but causal attempt
+
+An actor has D4 means but lacks a valid envelope. A governed selector refuses
+the action. If the actor nevertheless attempts it, the descriptive receipt
+records `authorization.status∈{invalid,absent}`, and `K_t` still returns the
+consequence. Normative invalidity does not make the event causally invisible.
+
+### Same physical cone, different option cones
+
+Two people occupy the same room. One has relevant language, institutional
+access, and training; the other does not. Their physical causal cones are
+effectively the same, but their modeled and reachable history sets differ.
+
+### Future-model intervention
+
+Present an agent with two different credible forecasts while holding current
+physical conditions fixed. If action distributions change, this supports
+model-mediated future influence. It does not demonstrate future-to-past
+physical signaling.
+
+## 10. Falsifiers and source-negative rules
+
+The canonical reference fails if a live owner:
+
+- assigns D4 to possibility or D5 to actuality;
+- calls actuality register-indexed;
+- labels commitment `μ` or measurement;
+- lets `χ` emit an outcome receipt;
+- types a present model, ranking, or selector event as merely possible;
+- treats invalid authorization as physical impossibility or erases an
+  unauthorized attempted action;
+- updates `G` without feeding it into the next selector;
+- treats selected action as guaranteed consequence;
+- says an agent physically widens a light cone;
+- maps quantum branch alternatives to D5 agent counterfactuals by identity;
+- stacks Everett and Copenhagen as dimensional layers;
+- makes one quantum interpretation necessary for the operational calculus.
+
+## Read with
+
+- [Primitives and Type Signatures](29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
+- [μ-Limit Formula](10_EFR_MU_LIMIT_FORMULA.md)
+- [Dimensional Closure](23_DIMENSIONAL_CLOSURE_PROOF.md)
+- [Quantum Boundary](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
+- [Soul Loop](../01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+
+*D5 lets the possible become causally relevant. D4 is where the world answers.*

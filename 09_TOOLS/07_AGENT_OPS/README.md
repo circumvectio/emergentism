@@ -24,6 +24,9 @@ evidence_tier: "[B] for current validator/generator receipts; [D] for scaffolds 
 
 # 07_AGENT_OPS
 
+> **Tool boundary.** These are repository-maintenance aids. They do not encode
+> product/runtime governance and cannot authorize or define Emergentist claims.
+
 Agent-operation utilities for scaffolding, validation, compaction, and batch
 maintenance across AI-facing repo surfaces.
 
@@ -71,8 +74,8 @@ the owning source lane first and rerun the utility.
 ```bash
 python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 2
 python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 2 --write
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 4 --only-prefix 02_SKYZAI/01_NOOSPHERE/02_INFRASTRUCTURE/Cascade
-python3 01_EMERGENTISM/09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 4 --only-prefix 02_SKYZAI/01_NOOSPHERE/02_INFRASTRUCTURE/Cascade --write --refresh-generated
+python3 09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 3 --only-prefix 05_COSMOLOGY
+python3 09_TOOLS/07_AGENT_OPS/generate_agents_md.py --max-depth 3 --only-prefix 05_COSMOLOGY --write --refresh-generated
 ```
 
 Use the dry run as the subfolder navigation inventory. Use `--write` only after
@@ -86,7 +89,7 @@ only to repair files that this utility previously generated; hand-authored
 - tool inventory: `../README.md` and `../CLAUDE.md`
 - agent grammar: `../../11_UPLINK/00_CORE/06_AGENTS.md`
 - agent runtime resolutions: `../../11_UPLINK/00_CORE/06c_AGENTS_RESOLUTIONS_v3.md`
-- organism routing: `../../../02_SKYZAI/01_NOOSPHERE/AGENTS.md`
+- worldview routing: `../../AGENTS.md`
 
 ## Router Surface
 

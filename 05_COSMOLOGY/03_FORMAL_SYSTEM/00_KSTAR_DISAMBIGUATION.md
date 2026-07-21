@@ -5,124 +5,75 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[s]"
-  canonical_phrase: "η Disambiguation"
+  register: "[A]/[I]"
+  canonical_phrase: "K-star and eta notation — no shared theorem"
+title: "K-star and η Disambiguation — Kintsugi Successor"
+status: "ACTIVE NOTATION BOUNDARY — no K-minimality or self-containment theorem"
+evidence_tier: "[A] standard Kolmogorov and finite-cardinality facts; [I] framework notation."
+supersedes_blob: "c498b1428bbccda3ce8127a03faca01d1805ec46"
 ---
 
-# η Disambiguation
+# K-star and η Disambiguation — Kintsugi Successor
 
-**Status:** CANONICAL — referenced by all documents using η
-**Date:** 2026-03-23 (updated after audit)
+> **[金] Crack.** The predecessor used one narrative of “self-containment” to
+> join an extraction score, a finite selection count, Kolmogorov complexity,
+> and ontological grounding. It then asserted a K-minimal symbolic equation.
+> The quantities have different types, and no such theorem was proved.
+>
+> **Repair.** Preserve the stable path as a notation boundary. No shared
+> quantity, zero, or metaphor transfers a result between these rows.
 
----
+The superseded text is preserved as Git blob
+`c498b1428bbccda3ce8127a03faca01d1805ec46`.
 
-The symbol η carries three distinct meanings across the Emergentism framework. This document disambiguates and establishes the convention.
+## Current notation
 
-## Convention
+| Symbol | Typed meaning | Standing |
+|---|---|---|
+| `etaObserved` | a descriptive field recording an observed extraction measure under a declared accounting rule; it may be zero, positive, or unknown | `[I]` framework record |
+| `η=0` | a requirement used only inside a separately declared Justice or non-extraction condition | `[I]` normative model; not inferred from geometry |
+| `K_sel(A)=⌈log₂|A|⌉` | fixed-length bits sufficient to index a member of a named finite set `A` | `[A]` cardinality fact; not Kolmogorov complexity |
+| `K_U(x)` | shortest program length for output `x` relative to a fixed universal machine `U`, up to the usual machine-dependent additive constant | `[A]` standard definition |
 
-**Bare η = extraction coefficient** (the dominant usage, ~87% of instances). No subscript needed for this sense — it is the default.
+`K_sel`, `K_U`, and `etaObserved` are not interchangeable. A singleton needs
+zero index bits, yet its sole object can still have a nonzero description
+length. A zero observed extraction value says nothing about either complexity.
 
-**K*_sel = selection complexity** (minority usage, appears only in Correspondence 21 Corollary 4.2). Always subscripted to distinguish from the default.
+## Withdrawn claims
 
-**K(x) = standard Kolmogorov complexity** (Kolmogorov 1965, Chaitin 1966). Never written as η — always K(x) or K_C to avoid confusion.
+No active result says that:
 
----
+- all three quantities measure one universal self-containment property;
+- zero extraction proves equilibrium, dominance, goodness, or long-run
+  stability without a separately specified game and Justice envelope;
+- a symbolic triad is the shortest self-contained description;
+- a description supplies its own interpreter or ontology; or
+- minimal description length establishes self-grounding reality.
 
-## Sense 1: Extraction Coefficient — η (default, no subscript needed)
+Any comparative compression claim must fix the language, machine/interpreter,
+side information, target, comparison class, and loss function. It remains
+relative to those choices.
 
-**Definition:** The aggregate extraction in an exchange or system. η = 0 means no party extracts value the other does not comprehend (zero extraction). η > 0 means structural parasitism — one party extracts at the other's expense.
+## Titan boundary
 
-**Formal definition (from Convergence 24):**
+```text
+•     ⊙     ○
+0_T   1_T   ∞_T
+```
 
-$$K^* = \sum_{i=1}^{N} \max(0, \Delta\nu_i^{\text{ext}})$$
+This is a selected operator-free metaframe. It supplies no program, decoder,
+dictionary, multiplication, or complexity proof.
 
-**Used in:** Convergence 24 (Strategic Exclusion), Proof 2 (Power-Max Corollary), Packet F2 (Extraction Coefficient), Packet F7 (Coordination Theorem), PD_10 (Is-Ought), Kill Criteria, Glossary, and ~87% of all η references across the framework.
+## Current owners
 
-**Status:** [S] Structural — well-defined within the game-theoretic framework.
+- Typed records and authorization:
+  [Primitives and Type Signatures](29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
+- Justice and non-extraction:
+  [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- Compression retraction:
+  [Paper F — K-Minimality](../../03_METHODOLOGY/02_THE_PAPERS/PAPER_F_K_MINIMAL.md)
+- Supersession:
+  [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
 
-**Key results:**
-- η = 0 is the enforced conditional equilibrium at the equator (Convergence 24, Theorem 4.2; bounded by the EFR 33 / Green-Laffont caveat)
-- η > 0 is self-defeating — extraction strategies are strictly dominated (Convergence 24, Theorem 3.1)
-- η = 0 is structural, not moral — it's what the geometry requires, not what a commandment demands
-
----
-
-## Sense 2: Selection Complexity — K*_sel (always subscripted)
-
-**Definition:** The number of bits required to select a specific structure from a set of alternatives.
-
-$$K^*_{\text{sel}} = \log_2(|\text{alternatives}|)$$
-
-When there is exactly one alternative (up to isomorphism), K*_sel = 0.
-
-**Used in:** Correspondence 21 (Triadic Stability), Corollary 4.2 ONLY.
-
-**Status:** [I] Interpretive — resembles but is NOT standard Kolmogorov complexity.
-
-**Critical distinction:**
-- K*_sel measures how many bits to SELECT a structure from alternatives
-- K(x) measures how many bits to DESCRIBE a structure
-- A unique structure has K*_sel = 0 (nothing to choose from) but K(x) > 0 (still needs description)
-- The framework's early documents sometimes conflated these — this is the error the disambiguation corrects
-
----
-
-## Sense 3: Standard Kolmogorov Complexity — K(x) or K_C (never written as η)
-
-**Definition:** The length of the shortest Turing machine that outputs a given string (Kolmogorov 1965, Chaitin 1966).
-
-**Used in:** Paper 3 (Irrationals — correctly distinguished in v2.0), Packet F3 (Kolmogorov Zero — needs revision, currently in REJECT category).
-
-**Status:** [S] Established — this is standard information theory, not framework-specific.
-
-**IMPORTANT:** K(x) ≠ K*_sel ≠ η. These are three different quantities. When citing Kolmogorov complexity, use K(x) or K_C, never bare η.
-
----
-
-## Quick Reference
-
-| Symbol | Meaning | Default? | Subscript? | Tier |
-|--------|---------|----------|-----------|------|
-| η | Extraction coefficient | YES — default usage | No subscript needed | [S] |
-| K*_sel | Selection complexity | No — minority usage | Always subscripted | [I] |
-| K(x) | Standard Kolmogorov complexity | No | Different notation entirely | [S] |
-
----
-
-## The Unifying Concept: Self-Containment
-
-All three η senses measure the same thing at different scales: **the amount of external information required.**
-
-| Scale | η = 0 means | Self-containment of... |
-|-------|-------------|----------------------|
-| Exchange (Convergence 24) | No external mediator needed | The transaction |
-| Description (F8 Gödel) | No external definitions needed | The axiom set |
-| Ground (F3 Wolfram) | No external cause needed | The ontological structure |
-
-Zero-Sum Resolution Equation is K-minimal: the shortest self-contained description, because it is the unique equation that requires no external definitions. The terms define each other. The equation IS its own dictionary. See `15_EFR_WOLFRAM_NKS_INTEGRATION.md` §1.3 for the formal development.
-
----
-
-φ · ν = 1
-
-Zero-Sum Resolution Equation
-
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/00_KSTAR_DISAMBIGUATION.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+This file disambiguates notation only. It owns no moral, physical, or
+ontological inference.

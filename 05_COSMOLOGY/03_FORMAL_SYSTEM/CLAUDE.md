@@ -1,93 +1,56 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "03 Formal System — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 03_FORMAL_SYSTEM — Agent First-Touch
+# 03 Formal System — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**Lane:** `05_COSMOLOGY/03_FORMAL_SYSTEM`
 
-## Read order
+## Read first
 
-1. [`README.md`](README.md) — folder purpose, file inventory, axiom count note, naming convention
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) — canonical axiom set A1–A7 (v0.4)
-5. [`00_KSTAR_DISAMBIGUATION.md`](00_KSTAR_DISAMBIGUATION.md) — three senses of K clarified
-6. [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) — consolidated audit of every falsifier
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Scope
+## Pure-worldview boundary
 
-- 03 Formal System lane of the Emergentism framework.
-- Formal mathematical core: axiom architecture, theorem catalogues, definitions, proof infrastructure.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Axiom count note
+## Epistemic contract
 
-The framework canonicalizes **7 axioms (A1–A7)** in v0.4. Earlier documents may reference "5 axioms (O1–O5)"; this numbering is **retired**. A7 (self-correction) was added in v0.4, and O3 (simple-connectedness) was shown to follow from O5.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-> `O1–O5` survives only as an older public substrate-selection wager / compatibility packet. It is not a second active axiom set.
+## Rosetta dispatch
 
-## Naming convention
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-| Prefix | Meaning | Example |
-|---|---|---|
-| `08_EFR_*` through `20_EFR_*` | EFR-specific technical surfaces | `08_EFR_POWER_MAX_LEMMA.md` |
-| `21_*` onward | Broader framework-formal surfaces, compatibility pointers, measurement specs, theorem-upgrade infrastructure | `21_TRIADIC_STABILITY_CORRESPONDENCE.md` |
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-Preserve filenames in place; do not rename or archive unless a structural reorganization phase is explicitly opened.
+## Lane discipline
 
-## Formal-system-as-model discipline
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-This directory is **downstream** of the framework's canonical order:
-
-```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
-(φ − ν)² ≥ 0
-φ + ν ≥ 2
-```
-
-The formal-system files **codify and test** that order. They do not replace the seed, the core state, or Empirical Observation as primary disclosure.
-
-## Evidence tier
-
-- `[S]` where conditional on the axiom set.
-- `[I]` for route-control owner-lane synthesis.
-- `[C]` for proposed measurement protocols and frontier claims.
-- Do not present formal structure as `[A]` established fact without independent verification.
-
-## Canonical cross-references
-
-| Topic | Route |
-|---|---|
-| Epistemic status of every claim | [`../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) |
-| Canonical compression block | [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) |
-| Disclosure-first bridge | [`../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`](../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) |
-| Trinity narrative surface | [`../01_THE_TRANSCENDENTAL_TRINITY/README.md`](../01_THE_TRANSCENDENTAL_TRINITY/README.md) |
-| Ethical implications | [`../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md) |
-
-## Routing
-
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -14,7 +14,7 @@ rosetta:
 **Version:** v2026.04.04
 **Date:** 2026-04-04
 **Evidence Tier:** [I] Interpretive → [S] Structural (some of these are derivable, not just suggested)
-**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md), [05_EXHAUSTIVE_OBSERVATIONS.md](05_EXHAUSTIVE_OBSERVATIONS.md)
+**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md); [Exhaustive Observations](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/05_EXHAUSTIVE_OBSERVATIONS.md) is historical genealogy only
 
 ---
 
@@ -84,11 +84,16 @@ The operators are not roles. They are *vector fields* on S². The derivation def
 
 ---
 
-## 6. The GFS Test Hasn't Been Connected To The Derivation In One Sentence
+## 6. The Historical GFS Bridge Was Retired
 
-The GFS test (April 8 data release) is an empirical test of the multiplicative hypothesis in one public data domain. If it confirms multiplicative structure, the framework gains an empirical bridge. If it fails, the derivation survives as mathematics while the public ontological bridge downgrades.
+The former GFS study tested one operationalization of a multiplicative hypothesis
+in a public-data domain. It did not license an ontological bridge and was retired
+and archived on 2026-07-13 after mixed results and validity failures.
 
-**What hasn't been said in one crisp sentence:** "GFS either supports the multiplicative wellbeing bridge or it doesn't. If it does, Emergentism gains public empirical leverage in that domain. If it doesn't, the derivation remains mathematically valid while the world-facing claim downgrades. The wisdom survives either way."
+**What must now be said in one crisp sentence:** “A failed operationalization
+does not touch a valid analytic identity, but neither can that identity inherit
+empirical support from the retired study.” See the
+[archive tombstone](../../90_ARCHIVE/2026_07_13_gfs_retraction/TOMBSTONE.md).
 
 ---
 
@@ -98,7 +103,7 @@ The Honest Position says what's [A], [B], [S], [I], and [C]. It says what would 
 
 Not "is it coherent" or "is it useful" — but is it TRUE? And what would it mean for a framework to be true?
 
-**What hasn't been said:** Truth for Emergentism is not only correspondence (does the framework match reality?) or coherence (is it internally consistent?). Truth is *disciplined convergence*: when first-person evidence (sitting practice), third-person proof (derivation), and empirical data (GFS and any neuroscience-adjacent predictions) all point to the same structure without silently upgrading one another. Truth is not only a property of statements. It is a property of convergence under tier discipline.
+**What hasn't been said:** Truth for Emergentism is not only correspondence (does the framework match reality?) or coherence (is it internally consistent?). Truth is *disciplined convergence*: when first-person reports, formal proof, and independently designed empirical tests point to the same structure without silently upgrading one another. Truth is not only a property of statements. It is a property of convergence under tier discipline.
 
 If all three converge, the framework is true. If any one diverges, the framework is incomplete. If all three diverge, the framework is wrong.
 

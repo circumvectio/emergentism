@@ -138,7 +138,7 @@ What the result means, and what it does not mean.
 ### K1
 If additive or other non-multiplicative models explain the relevant outcomes equally well or better, the strong multiplicative claim is not supported in that domain.
 
-### K2
+### KC2
 If multiplicative advantage appears only under arbitrary preprocessing or hand-tuned variable choice, the result is not robust.
 
 ### K3

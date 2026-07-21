@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "Syntropic Known Unknowns"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 research protocol (not claim).**
 
 # THE SYNTROPIC KNOWN UNKNOWNS PROTOCOL
@@ -29,7 +29,7 @@ rosetta:
 **Status:** Research protocol — not a result claim
 **Date:** 2026-05-14
 **Evidence Tier:** [B] for the existence of stress physiology, conditioning, stigmergic coordination, and memory/provenance requirements in their established domains where source-audited; [S] for the research structure implied by the Replicator Stack and the Syntropic Imperative; [I] for the specific egregorotype framing; [C] for strong claims about reversal of epigenetic burden until measured.
-**Depends on:** [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_EMPIRICAL_PROGRAM_BOARD.md](00_EMPIRICAL_PROGRAM_BOARD.md), [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md)
+**Depends on:** [00_THE_SYNTROPIC_IMPERATIVE.md](../05_COSMOLOGY/00_THE_SYNTROPIC_IMPERATIVE.md), [00_STIGMERGY_AND_THE_EGREGOROTYPE.md](../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md), [00_WHAT_ACTUALLY_TESTS_THE_THEORY.md](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [00_EMPIRICAL_PROGRAM_BOARD.md](00_EMPIRICAL_PROGRAM_BOARD.md), [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md)
 **Boundary:** This protocol defines research questions and defensive design constraints. It does not claim that a Syntropic Egregore has already been clinically proven to heal users, and it rejects covert persuasion as a deployment method.
 
 ---

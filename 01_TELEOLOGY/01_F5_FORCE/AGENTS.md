@@ -1,69 +1,55 @@
 ---
-rosetta:
-  primary_level: L1
-  primary_column: Philosophy
-  operator: "Kali 🎲"
-  tier: "Demon"
-  regime: "Caṇḍāla"
-  register: "[I/C]"
-  canonical_phrase: "01_F5_FORCE — Agent Routing"
+type: emergentism-agent-route
+title: "01 F5 Force — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 01_F5_FORCE — Agent Routing
+# 01 F5 Force — Agent route
 
-**Lane scope:** This is the focused Objective Function lane for F5 / ektropy / ordering-force material.
-**Primary lead:** `L1 Caṇḍāla`
-**Support:** L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` for symbolic / philological / staged-gradient F5 mappings; `[C]` for literal fifth-force, retrocausal, or theurgical operating-manual claims; `[A/B]` only for independent empirical or repository receipts.
+**Lane:** `01_TELEOLOGY/01_F5_FORCE`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Owns the F5 / ektropy / ordering-force candidate. |
-| L2 Śūdra | Checks whether symbolic and philological disclosure is readable without false empirical weight. |
-| L3 Vaiśya | Separates empirical referents from interpretive F5 mappings. |
-| L4 Kṣatriya | Routes staging, containment, and theurgy claims into lawful action surfaces. |
-| L5 Brāhmaṇa | Tests whether F5 language fits Rosetta and formal-system architecture. |
-| L6 Sādhu | Downgrades or tombstones literal-force and destiny language when receipts are missing. |
-| L7 Ṛṣi | Translates cleared F5 language into public symbol and organism narrative. |
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- `02_THE_SERPENT_IS_F5.md`
-- `03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md`
-- [`../AGENTS.md`](../AGENTS.md)
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current [A/B/S/I/D/C] evidence ladder; deployment or architecture claims need a [B] receipt or an explicit [D]/[C] label.
-- L1 surfaces the F5 gradient and ordering-force candidate.
-- L3 checks whether a cited empirical result is evidence for the source phenomenon itself or only an analogy / referent.
-- L4 routes any operational claim about staging, K2 containment, or theurgy back through `../../04_AXIOLOGY/01_THEURGY/`.
-- L6 cuts literal-force or destiny language when the evidence tier does not support it.
-- L7 may translate F5 into public symbol only after L3/L6 tier checks.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
-- Do not present the MEGA-plate result as empirical proof of F5; it is an empirical referent for staged-gradient selection and an interpretive F5 mapping.
-- Do not present serpent, PIE, mythic, or theurgical continuity as settled science.
-- Keep "force" language explicitly descriptive / symbolic unless a local document provides independent evidence for a stronger claim.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-Zero-Sum Resolution Equation
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
----
+## Lane discipline
 
-## Agent Execution Surface
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/01_F5_FORCE/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "Macro-Constraint Causal-Emergence Measurement Protocol"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol
 

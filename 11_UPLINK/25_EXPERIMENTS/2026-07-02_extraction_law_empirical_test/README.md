@@ -3,7 +3,7 @@ title: "Extraction Law Empirical Test"
 date: 2026-07-02
 status: "RUN COMPLETE"
 evidence_tier: "[B] reproducible local analysis; [D] interpretation"
-owner: "K2-staged; not signed"
+owner: "01_EMERGENTISM — historical experiment packet"
 ---
 
 # Extraction Law Empirical Test
@@ -71,4 +71,3 @@ Product proxy:
 The bounded extraction/coherence proxy survives this dataset: fairness-aware models beat material payoff alone on held-out log loss and AUC.
 
 The stronger product-only scalar does **not** survive this dataset: `material_score * fairness_score` alone performs essentially the same as payoff-only and is not the best model.
-

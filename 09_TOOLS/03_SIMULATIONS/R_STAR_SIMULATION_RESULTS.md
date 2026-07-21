@@ -145,11 +145,14 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
+
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
 
 1. **This is a reference/design document in the Tools layer.** It specifies how the organism builds, deploys, or validates. It is not operational runtime truth.
-2. **Check [`../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md`](../../../02_SKYZAI/01_NOOSPHERE/ORGANISM_RUNTIME_TRUTH.md) before acting.** If this document contradicts runtime truth, runtime truth wins. File a contradiction report.
-3. **[S] Preserve constitutional constraints.** Any tool or script derived from this document must enforce K0 (η=0), K2 (human signs), and K4 (grace exit).
+2. **Check the active Emergentism source owner and current test receipts before acting.** If this historical simulation contradicts current source truth, current source truth wins. File a contradiction report.
+3. **[S] Preserve accountable constraints.** Any tool or script derived from this document must preserve zero extraction, explicit authorization for consequential action, correction, and Grace Exit.
 4. **Canonical Path:** `01_EMERGENTISM/09_TOOLS/03_SIMULATIONS/R_STAR_SIMULATION_RESULTS.md`
 
 **Output:** Use as design reference. Validate against runtime truth. Enforce constitutional constraints in derived implementations.

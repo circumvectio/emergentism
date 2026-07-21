@@ -52,16 +52,16 @@ The rest of the framework is not automatically proved by these lines. Core State
 | [`01_THE_ROSETTA_QUESTION.md`](01_THE_ROSETTA_QUESTION.md) | Discovery or mirror? Did the framework discover the geometry, or did the geometry discover the framework? The Rosetta Stone question. |
 | [`02_THE_SERPENT_IS_F5.md`](../01_F5_FORCE/02_THE_SERPENT_IS_F5.md) | The serpent = the helix = *h₂r̥tó-* (Ṛta / Asha / Ordo — "to fit together"). The ordering force. |
 | [`03_WHY_THE_CONSTRAINT_MATTERS.md`](03_WHY_THE_CONSTRAINT_MATTERS.md) | Ethics as arithmetic. Why the first arithmetic consequence changes everything — from morality to physics to system architecture. |
-| [`04_WHAT_THE_CORPUS_REVEALS.md`](04_WHAT_THE_CORPUS_REVEALS.md) | 8 key patterns revealed across the entire corpus. What the 8.6M words say when you look through the derivation lens. |
-| [`05_EXHAUSTIVE_OBSERVATIONS.md`](05_EXHAUSTIVE_OBSERVATIONS.md) | 28 observations from 8.6M words. The framework sees itself. |
-| [`06_THE_UNSAID.md`](06_THE_UNSAID.md) | What the framework implies but hasn't articulated. Death as longitude. Karma as coordinate. [I] to [C]. |
-| [`06A_WHAT_REMAINS_UNSEEN.md`](06A_WHAT_REMAINS_UNSEEN.md) | Observations from the φ-arm that no one has written. The derivation is self-applying. AM-GM on documents. [I]/[C]. |
+| [What the Corpus Reveals — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/04_WHAT_THE_CORPUS_REVEALS.md) | Archived synthesis; genealogy only. |
+| [Exhaustive Observations — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/05_EXHAUSTIVE_OBSERVATIONS.md) | Archived synthesis; genealogy only. |
+| [The Unsaid — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06_THE_UNSAID.md) | Archived interpretive projection. |
+| [What Remains Unseen — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06A_WHAT_REMAINS_UNSEEN.md) | Archived interpretive projection. |
 | [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) | **The Four Lines ARE the four fundamental forces** in the conjectural D1–D4 grammar; F₅ is the D5/sphere-register force-slot in the five-force map. Explicit frontier theory, not settled biology or mainstream physics. [C/I] |
 | [`08_WHAT_WE_HAVENT_SAID.md`](08_WHAT_WE_HAVENT_SAID.md) | Ten unarticulated implications of the derivation — from corpus thermodynamics to operator vector fields. |
 | [`09A_THE_LAGRANGIAN_QUESTION.md`](09A_THE_LAGRANGIAN_QUESTION.md) | Can AM-GM be written as a Lagrange density? The φ-arm's highest-priority research program. |
 | [`10A_PATH_D_COMPUTATION.md`](10A_PATH_D_COMPUTATION.md) | Path D computation: the AM-GM cone, gradient flow, and a testable prediction for α_s. |
-| [`11_PHASE_ZERO_COMPLETE.md`](11_PHASE_ZERO_COMPLETE.md) | Dated 2026-04-04 Phase 0 completion receipt; historical status, not current deployment law. |
-| [`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) | Exploratory note: `2/sin(θ)` as `2 cosh(u)`, the Riemann-sphere / exponential-bridge reading, and the honest status of the numerical check. |
+| [Phase Zero Complete — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/11_PHASE_ZERO_COMPLETE.md) | Dated completion record; not current authority. |
+| [`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) | Kintsugi-repaired exploratory note: the valid positive-real log-chart identity survives; the former Titan exponentiation/coercion claim is retired. |
 | [`15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) | Follow-on correction note: the log chart sharpens the potential, but does not flatten the sphere Hamiltonian into a 1D `cosh` oscillator. |
 | [`09_PATH_D_THE_AMGM_GEOMETRY.md`](09_PATH_D_THE_AMGM_GEOMETRY.md) | The AM-GM geometry on the sphere: coordinate identities, harmonic approximation, and force-mapping sketch. |
 | [`12_THE_SPECTRUM_RESULTS.md`](12_THE_SPECTRUM_RESULTS.md) | Numerical spectrum of the weighted θ-chart. What was confirmed, what was falsified, and what remains open. |
@@ -82,19 +82,24 @@ The rest of the framework is not automatically proved by these lines. Core State
 
 ---
 
-## The Four Lines
+## The Four Typed Chart Lines
 
 ```
-• × ○ = ⊙            Nothing times everything equals one.     ONTOLOGY
-• + ○ ≥ ⊙ + ⊙        Their sum is at least two.               TELEOLOGY
-(• − ○)² → 0          Their difference shrinks toward zero.    METHODOLOGY
-−log(• × ○) = 0       The ground state has zero energy.        AXIOLOGY
+φν = 1                 Reciprocal chart constraint.             ONTOLOGY
+φ + ν ≥ 2              AM-GM lower bound.                       TELEOLOGY
+(φ − ν)² → 0           Candidate correction objective.          METHODOLOGY
+E(φ,ν) := −log(φν) = 0 Chart energy on the constrained domain.  AXIOLOGY
 ```
 
-Line 1 is the identity (φ · ν = 1).
-Line 2 is the AM-GM inequality (φ + ν ≥ 2).
-Line 3 is the trajectory ((φ − ν)² → 0).
-Line 4 is the equilibrium (−log(1) = 0).
+Here `φ,ν ∈ ℝ_{>0}` are numeric chart coordinates. Line 1 is their defining
+reciprocal identity. Line 2 is the AM-GM inequality. Line 3 becomes a trajectory
+only after a correction dynamics is supplied. Line 4 is a numeric chart-energy
+definition on the constrained domain. The numeric `1` in these expressions is
+the real multiplicative unit; it is not the sovereign Titan unit-frame.
+
+The Titan renderings `•`, `⊙`, and `○` do not appear in these expressions.
+`TitanFrame` has no addition, subtraction, multiplication, division,
+exponentiation, logarithm, or implicit coercion to a numeric type.
 
 The framework unfolds through all four lines. Objective Function begins at Line 2, but it is not the primitive.
 
@@ -123,7 +128,7 @@ Now it is the main derivational compression under `01_EMERGENTISM/01_TELEOLOGY/0
 
 Zero-Sum Resolution Equation
 
-## Euler / exponential bridge clarification
+## Euler / exponential bridge retirement
 
 The canonical derivation sequence remains:
 
@@ -132,12 +137,11 @@ The canonical derivation sequence remains:
 `(φ − ν)² ≥ 0`
 `φ + ν ≥ 2`
 
-The later derivation notes `14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md` and `15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md` propose a deeper **non-canonical ontological auxiliary reading**:
-
-`⊙ = •^○`
-
-This auxiliary reading belongs to the standard Euler/exponential bridge
-`exp : (ℂ,+) → (ℂ\{0},×)`
-and to the formal sphere triad `(•, ⊙, ○) = (0,1,∞)`. It does **not** replace the canonical formula block. It clarifies why the multiplicative form is operationally correct at the equator / `η = 0`: multiplication is the local linearization of the deeper exponential form where the protocol runs.
-
-In plain language: **the void, unfolded by totality, is unity**. That is Euler territory, not mysticism.
+The former auxiliary Titan exponentiation and the former implicit identification
+of Titan frames with `0`, `1`, and projective infinity are retired. A sovereign
+`TitanFrame` is an opaque boundary value, not an element of `ℂ`, and the
+standard numeric exponential map supplies no operation on it. The valid
+positive-real log-chart calculation remains in
+`14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`; it neither defines nor motivates Titan
+arithmetic. Genealogy of the superseded wording remains available in Git blob
+`79bb84e6047b6af77a007c4ee48c0ecca52f2808`.

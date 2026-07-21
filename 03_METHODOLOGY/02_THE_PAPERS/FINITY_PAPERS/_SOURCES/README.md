@@ -11,16 +11,16 @@ title: "External Sources — Suda Corpus (2025–2026)"
 status: "ACTIVE provenance record — 2026-06-06. Full 11-paper corpus tracked. PDF bytes are git-ignored and kept on disk; this record stores bibliographic metadata, hashes, byte counts, and re-acquisition routes."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Third-party provenance (K3 git-ignore policy).**
 
 # Finity Papers — External Sources (Suda Corpus)
 
 **Class:** third-party **published reference** material — *not* Magnum Opus canon.
 
-**Policy.** Per the K2-signed published-reference-PDF discipline
-(founder sign-off 2026-05-27; the policy tombstone formerly at the pre-2026-04-25 `90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md` path is no longer tracked in the corpus),
-published third-party PDFs are **kept on disk but git-ignored**, with a
+**Policy.** Per the corpus published-reference-PDF discipline
+(`/90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md`,
+founder sign-off 2026-05-27), published third-party PDFs are **kept on disk but git-ignored**, with a
 tracked bibliographic record (this file) and a public re-acquisition route. The bytes are re-downloadable
 from the public source of record (PhilArchive, where available). The `.gitignore` rule lives at repo root under
 "Finity Papers external source PDFs (Suda 2025)".
@@ -71,7 +71,7 @@ fetch failure via Cloudflare (`403`) is superseded by this local acquisition.
 These eight papers were acquired in the 2026-06-06 Suda corpus drop in `01_EMERGENTISM/000_Intake/`.
 Papers 4–9 are dated 2025; papers 10–11 are dated 2026. Unlike Parts I–III, no public PhilArchive
 record or stable URL has been confirmed for these works. They are treated as **published reference**
-material per K2 policy (kept on disk, git-ignored, bibliographically tracked) with the re-acquisition
+material per corpus custody policy (kept on disk, git-ignored, bibliographically tracked) with the re-acquisition
 route noted as "private drop" pending confirmation of public sources. If public URLs become available,
 update the Source of record column and verify SHA-256 against the bytes on disk.
 
@@ -81,4 +81,4 @@ Download from the PhilArchive URLs above (where available) and verify against th
 the files back in this folder under the names in the table; the `.gitignore` rule keeps them untracked
 automatically.
 
-⊙ = • × ○
+•   ⊙   ○

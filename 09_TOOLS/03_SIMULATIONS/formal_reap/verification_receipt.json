@@ -4,7 +4,7 @@
     "Quot.sound",
     "propext"
   ],
-  "audited_theorem_count": 36,
+  "audited_theorem_count": 37,
   "dependency_checkout_errors": [],
   "dependency_checkouts": {
     "Cli": {
@@ -64,12 +64,12 @@
   },
   "dependency_checkouts_changed_during_run": false,
   "duplicate_proof_ledger_rows": [],
-  "expected_theorem_count": 36,
+  "expected_theorem_count": 37,
   "failures": [],
   "forbidden_declarations": [],
-  "generated_at_utc": "2026-07-20T17:53:39.137926+00:00",
-  "git_head_at_end": "62b3f8b115e24aa00166dd3be71972c6bf836b72",
-  "git_head_at_start": "62b3f8b115e24aa00166dd3be71972c6bf836b72",
+  "generated_at_utc": "2026-07-21T17:18:57.033803+00:00",
+  "git_head_at_end": "4154ebeb1637a11b3bca40f0cca0425b226f849c",
+  "git_head_at_start": "4154ebeb1637a11b3bca40f0cca0425b226f849c",
   "git_head_changed_during_run": false,
   "git_worktree_clean_before_receipt_write": false,
   "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
@@ -85,6 +85,8 @@
     "extended_zero_times_infinity_is_not_one": "R0.3",
     "finite_horizon_host_collapse": "R5.12",
     "forecast_changes_outcome": "R5.4",
+    "frame_arithmetic_signature_is_empty": "R0.2",
+    "frame_render_is_injective": "R0.2",
     "gated_universal_collapse_certificate": "R5.12",
     "inheritance_requires_preservation": "R1.7",
     "inversion_fixed_points": "R1.2",
@@ -109,7 +111,6 @@
     "rest_energy_of_mass_shell": "R4.2",
     "rest_ratio_le_one": "R4.3",
     "return_matches_floor_in_role": "R6.1",
-    "typed_boundary_composition": "R0.2",
     "zero_boundary_does_not_force_multiplication": "R3.2"
   },
   "mathlib_input_revision": "v4.32.0",
@@ -119,7 +120,7 @@
   "missing_expected_theorems": [],
   "missing_parsed_audit_outputs": [],
   "orphan_axiom_audits": [],
-  "parsed_audit_output_count": 36,
+  "parsed_audit_output_count": 37,
   "project_input_sha256": {
     "lake-manifest.json": "7fc92fce5d15b26d50d4a3e53143653ba491dbd708d0a6feb3623bd4bdca7bb6",
     "lakefile.toml": "9d90e5e1f44302b7d457d2c47b3f998284410aa9a4ead4a93124a3f8e89a9052",
@@ -130,27 +131,28 @@
     "Quot.sound",
     "propext"
   ],
+  "retired_titan_operation_violations": [],
   "schema": "formal-reap-verification-v2",
   "scope": "local machine-checked theorem and countermodel kernel; no doctrine promotion",
   "source_count": 6,
   "source_sha256": {
     "FormalReap.lean": "d67a301cc467fcc56cd7da34b2a5dd210f1adfe35e33dedb60c30cf836f08831",
     "FormalReap/Arithmetic.lean": "93ae4aebecc6e0c969618065774c1413464cdf20ad53e3cbf956346246202a45",
-    "FormalReap/Audit.lean": "9eea178cf91ad97cdab791e43f2a4a8a795d556f004fb8ce0aabb33f696931dd",
+    "FormalReap/Audit.lean": "66d7ab95dd1e5128a80f76341d9012ee655701723e486cb0c6bd4707070b4923",
     "FormalReap/Ethics.lean": "2370acdb0ec2eb3349d431899bf347ce22409ff05d7c0a7b50b55dc8ba0a6a4e",
     "FormalReap/Physics.lean": "22605c397d235147883fa14f3f49ac8933ba2e7d8c2368cc9718ca68a60c36c8",
-    "FormalReap/Structure.lean": "8093792366f69b9d94d6197167e0a705e0d4081d454d0f41b115d90af565b4c4"
+    "FormalReap/Structure.lean": "59108c46deea79ccfdb558bc1e8975cec2624268b7af81950b28c0a4b7472b53"
   },
   "source_under_test": "10_SEED/02_THE_REAP.md",
-  "source_under_test_sha256": "b1510c0d67c2944f98068517bad93cb0bb67455052ae44f216b3b7f8388a9bdb",
+  "source_under_test_sha256": "1752ea306231c21a0445b0efcdbfd5d94cd3d1928fe45c53705def915f7a55be",
   "status": "PASS",
   "stored_receipt_matches_current_core": true,
   "support_artifact_sha256": {
-    "PROOF_LEDGER.md": "ff721e35ce48e8c994d1701ce2fedbaa44ceaadcf3de5f3883959a421a578fb2",
-    "README.md": "7631e51440d60a6d463f539d763c6cf8c441304b00700ea48aa60240c4b69153",
-    "verify.py": "55aab979d548bbf9a5ae60df473f7fe94835f2df2938abbe62f0052b156b12a2"
+    "PROOF_LEDGER.md": "75236cb6e040ef556db9c4cad946ea24de3b61c0d828b885ed21f2043b6540bc",
+    "README.md": "8a9a52f287caa37c2e2cab1220ee1cb4c13b43f1588f324ab3c9e134e5431ced",
+    "verify.py": "d42bf7c8eeeedab8048cfd45d12cfe84659dccc17987186f5c5703984b272e60"
   },
-  "theorem_count": 36,
+  "theorem_count": 37,
   "theorems_missing_from_ledger": [],
   "unexpected_axioms": [],
   "unexpected_parsed_audit_outputs": [],

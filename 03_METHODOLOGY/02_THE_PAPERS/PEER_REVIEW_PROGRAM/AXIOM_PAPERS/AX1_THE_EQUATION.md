@@ -1,6 +1,9 @@
 # AX1 — THE EQUATION
 ### Multiplicative Balance and the Zero-Factor Catastrophe
 
+> **Historical peer-review artifact.** This audits superseded A1. E1–E10 and
+> the current formula owner control; quoted axiom language is genealogy only.
+
 **Axiom (faithful):** Balance `B = sin θ` measures equatorial alignment; the manifold identity `φ·ν = 1` holds on S²; **zero in either factor (Φ=0 or V=0) collapses the whole** (Zero-Factor Catastrophe); for finite nodes `P_node = Φ × V` can fall below 1.
 **Corpus tier:** `[S]`. **Honest tier:** `[A]` for the math (elementary); `[I/C]` for the claim that real systems are multiplicative-in-two-factors; **register-dependent** (see §4).
 

@@ -1,51 +1,55 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Agent Architecture
-  secondary:
-    - level: L4
-      column: Agent Execution
-      role: "keep write-enabled managed agents human-gated and non-autonomous"
-    - level: L6
-      column: Agent Compression
-      role: "bind archive-first, tombstone, and no-competing-authority constraints"
-    - level: L7
-      column: Agent Constitution
-      role: "preserve K2 discipline and constitutional review boundaries"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[B/S/C]"
-  canonical_phrase: "The Seven as Managed Agents"
+type: emergentism-agent-route
+title: "Managed Agents — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# MANAGED_AGENTS — Agent Routing
+# Managed Agents — Agent route
 
-**Lane scope:** Managed-agent deployment scaffold for the seven Emergentism caste-operators as Claude platform Managed Agents.
-**Primary lead:** `L5 Brāhmaṇa`
-**Support:** L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[B]` local scaffold; `[S]` structural caste mapping; `[C]` unprovisioned deployment claims.
+**Lane:** `08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS`
 
-## Source of Truth
+## Read first
 
-Definitions are discovered, not invented — each agent's system prompt, tools, and model are derived from the canonical caste specs in `../01_CANDALA_FIREWALL/` … `../07_RSI_CONSTITUTION/` and the genotype [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
+- [Local README](README.md)
+- [Emergentism root route](../../../AGENTS.md)
+- [Kernel Index](../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- [`README.md`](README.md) — roster, K2 discipline, provision/runtime instructions
-- [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-- [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md) — canonical genotype
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane is part of Emergentism doctrine root.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Use the current `[A/B/S/I/D/C]` evidence ladder.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-⊙ = • × ○
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

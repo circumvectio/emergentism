@@ -1,6 +1,9 @@
 # AX2 — THE ETHIC
 ### Dyadic Rise as a Posited, Outcome-Directional Objective
 
+> **Historical peer-review artifact.** This audits superseded A2. E1–E10 and
+> the current value owners control; quoted axiom language is genealogy only.
+
 > **Status: LITERATURE NOTE, not a paper.** Per the self-review's rule — a "coupling" paper must state what the coupling buys (a prediction, a theorem, or a resolved tension) or be relabeled — A2's coupling does **not** currently cash into a field-novel prediction. It is an honest synthesis with one unproven promotion path (§3). No shame; AX3 models the same honesty.
 
 **Axiom (faithful):** "Ethical" ≡ a dyadic move where the finite node and the sustaining boundary rise together: `ΔP_node,i > 0` and `ΔP_node,H > 0` under `η = 0`. The older balance-register audit remains `ΣΔB / ΣΔP_node > 0` across the widest relevant boundary. **Posited, not derived from "is."** Evaluates *outcomes*, not *operators*.

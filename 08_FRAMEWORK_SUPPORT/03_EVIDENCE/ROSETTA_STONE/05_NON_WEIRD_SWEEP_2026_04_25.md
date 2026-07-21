@@ -10,7 +10,7 @@ rosetta:
 **Date:** 2026-04-25
 **Lane:** Rosetta companion — kill-criterion engagement
 **Status:** Research note — comparative philosophy. Honest reporting; no forced fits.
-**Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis (Indo-European/Mediterranean 5-column convergence), [`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) (Sufi/Sefirot/Confucian), [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) (kill-criterion discipline)
+**Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis (Indo-European/Mediterranean 5-column convergence), [`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) (Sufi/Sefirot/Confucian), [historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) (genealogy only)
 **OQ-CC-3 commitment:** packet 189 §6 — "explicit future packet to sweep East Asian / Sub-Saharan African / Indigenous American / Polynesian initiatory systems before 'universal' can be claimed"
 **Evidence tier:** [I] throughout. Every mapping below is structural analogy, not derivation. **Kill criterion in force:** if a tradition does not have a 7-stage structure, this document REPORTS that, it does not invent one.
 
@@ -210,7 +210,7 @@ Sub-Saharan African religious-initiatory traditions are vast, varied, and often 
 
 ### 5.3 What this is NOT
 
-This is NOT a falsification of the framework. The kill-criterion section in [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) names three failure modes:
+This is NOT a falsification of the framework. The kill-criterion section in the [historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) names three failure modes:
 
 1. **A domain requires a fundamentally different number of levels** — partially observed (Buddhism: 10; Confucian: 8; Daoism: 3-5; Sub-Saharan: 4 or 16+; Polynesian: variable). **The framework is now obligated to explain *why* 7 specifically converges in Indo-European/Mediterranean traditions and not elsewhere.**
 2. **The operator grammar proves non-exhaustive** — NOT observed. No fifth operator type encountered.
@@ -243,7 +243,7 @@ To deepen this sweep:
 
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis (Indo-European/Mediterranean convergence)
 - [`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) (Sufi, Sefirot, Confucian)
-- [`04_DEEP_RUMINATION_2026_04_25.md`](04_DEEP_RUMINATION_2026_04_25.md) (kill-criterion discipline)
+- [Historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) (genealogy only)
 - Packet 189 §6 — OQ-CC-3 future-sweep commitment
 - Daśabhūmika Sūtra (Mahāyāna canonical source on 10 bhūmis)
 - *Daxue* 大學 (Confucian 8-step source)

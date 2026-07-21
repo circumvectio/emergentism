@@ -9,7 +9,7 @@ rosetta:
 
 **Status:** Executed 2026-06-10. Results below are actual output, not projections.
 **Artifact:** [R3_SUPPORT_TRANSFER_SIM.py](R3_SUPPORT_TRANSFER_SIM.py) (stdlib Python, deterministic, 20 seeds)
-**Tests:** Paper W, [PAPER_W_DESCENT_ASYMMETRY.md](../PAPER_W_DESCENT_ASYMMETRY.md), §3 (the Descent Theorem / giving-dyad-as-negentropy)
+**Tests:** [Paper W — historical](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/03_METHODOLOGY/02_THE_PAPERS/PAPER_W_DESCENT_ASYMMETRY.md), §3; the result is model-internal and the archived paper is genealogy, not current authority
 **Evidence tier:** [A] for the model-internal theorems and the numbers; [I] for every reading beyond the model. This experiment verifies internal consequences of the formalism. It says nothing about the world.
 
 ---

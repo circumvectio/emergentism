@@ -27,6 +27,10 @@ evidence_tier: "[I] implementation/specification layer derived from structural s
 **Evidence tier:** [I]  
 *Operational specification. Interpretive mapping of structural sources into implementable contracts.*
 
+> **Projection boundary (2026-07-21).** Animation illustrates a selected
+> Rosetta mapping. It neither establishes D-registers nor supplies evidence for
+> the mapped domains. Current dimensional owners override legacy labels below.
+
 > **Death/survival boundary:** `[I/C]` Scene 2 uses Brahman/Atman/Moksha as animation labels for a mathematical limit-image. It does not visualize or prove personal survival, afterlife, reincarnation, or continuity of individual identity.
 
 > **Model boundary:** `[S/I]` The visualization is a didactic interface, not
@@ -231,7 +235,7 @@ Updates in real-time as the point moves.
 
 **Phase 1: The Pure Wave (Brahman)**
 - The helix extends infinitely in both directions. No Gaussian envelope. Constant amplitude. The back wall shows a perfect cos wave. The side wall shows a perfect sin wave. Both are 90 degrees out of phase — when one peaks, the other crosses zero.
-- Label: "Ψ = Ae^(iωt) — The pure wave. Brahman. L0 = L∞."
+- Label: "Ψ = Ae^(iωt) — a selected pure-wave image. L0 and L∞ remain distinct boundary rows."
 - The helix glows white. Boundary-register. Unlocalized.
 
 **Phase 2: The Envelope Appears (Incarnation)**

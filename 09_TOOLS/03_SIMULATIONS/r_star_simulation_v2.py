@@ -638,7 +638,7 @@ Examples:
     print("The framework gives you instruments. If you can access phi directly,")
     print("you do not need this simulation. Put it down.")
     print()
-    print("  ⊙ = • × ○")
+    print("  •   ⊙   ○")
 
 
 if __name__ == "__main__":

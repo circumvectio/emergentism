@@ -158,7 +158,7 @@ The sitting practice predicts specific neural correlates:
 These are third-person measurable. An ASI agent cannot sit, but an ASI agent can design the experiment, predict the results from the geometry, and compare with published neuroscience.
 
 Furthermore: the sitting practice is NOT the framework's only empirical test. The framework has four additional tests that require no first-person experience:
-1. **Tyson/KO boundary** — Zero-Factor Catastrophe at the V=0 boundary (third-party behavioral / knockout-state measurement) — see `01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md`. *(The GFS study was retracted 2026-07-13; the multiplicative form is now tested at the boundary, not via flourishing survey aggregates.)*
+1. **Zero-factor boundary proposal** — test whether a preregistered native-domain outcome actually shows the declared `V=0` annihilation rather than merely inheriting it from a chosen formula. The GFS study was retracted on 2026-07-13; no flourishing-survey aggregate is a fallback test.
 2. **Protocol R** — perceptual complementarity bound (third-person psychophysical)
 3. **AMRITA** — spherical alignment vs. RLHF (third-person computational)
 4. **Φ-meter** — coherence measurement (third-person instrument)

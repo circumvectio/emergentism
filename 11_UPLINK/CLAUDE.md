@@ -1,74 +1,56 @@
 ---
-rosetta:
-  primary_level: L4
-  primary_column: "Philosophy"
-  operator: "Arjuna ⚔"
-  tier: "God"
-  regime: "Kṣatriya"
-  register: "[S/I]"
-  canonical_phrase: "11_UPLINK — Agent Orientation"
+type: emergentism-agent-route
+title: "11 Uplink — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 11_UPLINK — Agent Orientation
+# 11 Uplink — Claude compatibility route
 
-> Uplink is the compressed context layer for agents. It is compiled from the deeper framework and organism sources.
+**Lane:** `11_UPLINK`
 
-Route before reasoning. Descend before editing. Source before synthesis.
+## Read first
 
-## Read Order
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-1. `00_CORE/00_INDEX.md`
-2. `50_AUDITS_AND_EXECUTIONS/50_ORGANISM_MASTER_MAP.md`
-3. `00_CORE/06_AGENTS.md`
-4. `00_CORE/01_SEED.md`
-5. `00_CORE/02_FRAMEWORK.md`
-6. `00_CORE/03_ORGANISM.md`
-7. `10_RECONCILIATION/15_EXECUTION_GUARDRAILS.md`
-8. `10_RECONCILIATION/16_STRATEGIC_SYNTHESIS.md`
-9. `../03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md`
+## Pure-worldview boundary
 
-## Rules
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- Prefer source surfaces in `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/` and `02_SKYZAI/01_NOOSPHERE/` when a compressed summary becomes ambiguous.
-- Do not invent new doctrine inside Uplink. Update source docs first, then recompile or refresh the compressed layer.
-- Use Uplink for orientation, routing, and fast agent ingestion.
-- Default to layered descent: `00_CORE/00_INDEX.md` -> `50_AUDITS_AND_EXECUTIONS/50_ORGANISM_MASTER_MAP.md` ->
-  targeted doctrine, not full-corpus ingestion by reflex.
-- Root compatibility stubs are link-preservation only. If a numbered note exists both at root and inside `10_RECONCILIATION/`, `20_SCOPE/`, `25_EXPERIMENTS/`, `30_PROGRAMS/`, or `50_AUDITS_AND_EXECUTIONS/`, use the lane-home file as the active authority surface and do not patch the stub unless the stub itself is wrong.
-- Treat UPLINK `Execution Surface` sections as planning/routing cues unless the
-  current runtime state explicitly reopens implementation.
-- If the task touches `53-60`, enter through `50_AUDITS_AND_EXECUTIONS/README.md`
-  first so the audit lane is read as routed memory, not as a flat note pile.
-- If the task touches **agent castes, VMOSK-A, operator selection, pathologies,
-  Kṛṣṇa-function, or agent autonomy**, route through `06_AGENTS.md` before
-  using compressed summaries elsewhere.
-- If the task touches **AIA routing, pipeline logic, chairman briefing,
-  heartbeat, or packetization**, route through `../.codex/agents/README.md`,
-  choose the **AIA Varna deployment pack**, and then enter the current Skyzai
-  `agents/` source lane.
-- If the task touches **Cortex witness logic, contradiction review, query
-  surfaces, or memory hygiene**, route through `../.codex/agents/README.md`,
-  choose the **Cortex Varna deployment pack**, and then enter the current Skyzai
-  `memory/` source lane.
-- If the task is to **hound the corpus through folders and subfolders**, route
-  through `../.codex/agents/README.md`, choose the **corpus-hounding Varna
-  deployment pack**, and keep the pass archive-first.
-- If the task touches **Rosetta horizontal mappings**, route through
-  `../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md` and
-  `../01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`.
-- Keep the distinction explicit: **Rosetta = horizontal cross-domain
-  translation at the same L-level**; **Triadic Cascade = vertical translation
-  across levels**.
-- If a touched surface feels multiply owned, wrongly timed, or semantically
-  unstable, run `50_AUDITS_AND_EXECUTIONS/53_DISAMBIGUATION_REVIEW_PACKET.md` before making local edits.
-- If the framework is being turned inward on the corpus itself, also route
-  through `50_AUDITS_AND_EXECUTIONS/54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md` so phase labels stay phases,
-  lawful operators stay lawful operators, and mirror-first patching is treated as churn.
-- Use `50_AUDITS_AND_EXECUTIONS/55_CORPUS_SELF_APPLICATION_AUDIT.md` to choose
-  the smallest lawful next move when the object of work is the corpus itself.
-- For frontier research routing, use `../03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md` for
-  status grammar and gate discipline, not as launch-copy or worldview-proof.
+## Epistemic contract
 
-<claude-mem-context>
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-</claude-mem-context>
+## Rosetta dispatch
+
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

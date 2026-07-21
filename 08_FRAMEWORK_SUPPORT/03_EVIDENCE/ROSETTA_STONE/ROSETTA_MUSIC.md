@@ -185,7 +185,7 @@ This mirrors:
 ## 7. References
 
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V (Chakra column), §XX (Liberal Arts — Music at L6)
-- [`06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md`](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §4 (L4 Center Problem)
+- [Historical structural pressure points](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md) §4 (genealogy only)
 - Helmholz, Hermann von. *On the Sensations of Tone* (1863) — harmonic series physics
 - Schenker, Heinrich. *Free Composition* (1935) — tonal center as structural depth
 - Cage, John. *Silence* (1961) — L7 as compositional practice

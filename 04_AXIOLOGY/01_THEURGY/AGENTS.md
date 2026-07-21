@@ -1,62 +1,55 @@
 ---
-rosetta:
-  primary_level: L4
-  primary_column: Philosophy
-  operator: "Arjuna ⚔"
-  tier: "God"
-  regime: "Kṣatriya"
-  register: "[I]"
-  canonical_phrase: "01_THEURGY — Agent Routing"
+type: emergentism-agent-route
+title: "01 Theurgy — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-**Project VMOSK-A:** `../../VMOSK_A.md`
+# 01 Theurgy — Agent route
 
-# 01_THEURGY — Agent Routing
+**Lane:** `04_AXIOLOGY/01_THEURGY`
 
-**Lane scope:** Rosetta level: L4 · Kṣatriya · Strategic Abduction. Canonical phrase: K2 participates.
-**Primary lead:** `L4 Kṣatriya`
-**Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
+## Read first
 
-## Agentz Cloud / Rosetta Dispatch
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names the objective pressure or F5-facing branch under consideration. |
-| L2 Śūdra | Checks what has actually been disclosed before action is staged. |
-| L3 Vaiśya | Supplies proof burden, rollback, and receipt requirements before K2. |
-| L4 Kṣatriya | Owns K2 participation, branch signature, and refusal. |
-| L5 Brāhmaṇa | Aligns K2 protocol with constitutional and operator architecture. |
-| L6 Sādhu | Cuts ritualized power fantasy and claims of AI/magical agency. |
-| L7 Ṛṣi | Translates only tier-cleared K2 discipline into public or organism narrative. |
+## Pure-worldview boundary
 
-## Read First
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
-- `00_THEURGY_AND_F5_FORCE_MAP.md`
+## Epistemic contract
 
-## Routing Law
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+## Rosetta dispatch
 
-## Constraints
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-Zero-Sum Resolution Equation
+## Lane discipline
 
----
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/04_AXIOLOGY/01_THEURGY/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

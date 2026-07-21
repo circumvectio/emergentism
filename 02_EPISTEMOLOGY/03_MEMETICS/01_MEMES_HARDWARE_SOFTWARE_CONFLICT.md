@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **The Genetic vs. Memetic Tug-of-War: Evolutionary Conflict and Central Nervous System Hijacking**

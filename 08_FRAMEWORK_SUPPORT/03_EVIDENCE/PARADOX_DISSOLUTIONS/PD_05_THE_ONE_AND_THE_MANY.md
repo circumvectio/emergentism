@@ -25,7 +25,11 @@ rosetta:
 **Evidence Tier:** `[S/I]` (Structural/Interpretive)
 **Canonical Number:** PD_05 (see [PD_00_INDEX](PD_00_INDEX.md))
 
-> **Evidence Tier: [S/I] Structural-Interpretive.** The multiplicative complementarity of unity and plurality is a structural consequence of the S² geometry (φ·ν=1). The mapping of classical one/many disputes onto this geometry is interpretive. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
+> **Evidence Tier: [A/I/C].** `φ·ν=1` is an analytic identity inside the
+> selected reciprocal chart. Mapping unity/plurality onto those coordinates is
+> interpretive, and claiming that the map resolves the historical dispute is a
+> conjecture. The chart identity is not evidence for the world mapping. See
+> [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
 > **Companion note:** This dissolution connects directly to the D0-D6 dimensional hierarchy and the Burri Sphere identification. See also [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) for a parallel case where multiplicative constraint dissolves an apparent dichotomy.
 
@@ -45,33 +49,50 @@ Under additive logic, Parmenides is right (unity is real, plurality is illusion)
 
 ## 3. THE DISSOLUTION
 
-On S², unity and plurality are **multiplicative complements**, not additive rivals. The coherence-viability constraint φ·ν=1 IS the resolution.
+This document selects a model in which unity and plurality are read through
+reciprocal coordinates rather than treated as additive rivals. Within that
+chart, `φ·ν=1` holds analytically. **That fact does not prove that unity and
+plurality in reality obey a fixed product, nor does it settle the metaphysical
+dispute.** It supplies a disciplined alternative representation.
 
 - **φ** (coherence) measures the degree of systemic unity — how integrated, how singular the system is.
 - **ν** (viability) measures the degree of functional plurality — how differentiated, how many distinct stable configurations the system supports.
 
-Their product is fixed: φ·ν=1. Increasing coherence (the One becomes more One) necessarily increases the resolution of viable multiplicity (the One projects into more Many). Decreasing coherence (the One fragments) collapses viable distinctness (the Many dissolve into noise).
+Their coordinate product is fixed by definition. Any claim that increasing one
+world property changes another is a separate, testable model claim and does not
+follow from the chart.
 
 The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure unranked plurality — all coherence dissipates. In the agency register, this becomes the familiar contact rule: `Φ` without `V` is foresight without means, while `V` without `Φ` is means without a ranked worldline.
 
-The one *becomes* many through stereographic projection from the poles to the complex plane (S² ≅ ℂP¹). The many *return* to one through the μ-limit collapse as D4 actuality resolves D5 possibility into concrete singular states.
+Stereographic projection relates a sphere minus a pole to a plane; it does not
+cause the One to become the Many. In the action calculus, actual D4 model tokens
+may represent D5 possible content, and commitment uses actual D4 means to enact
+an actual D4 action. That enactment is not a `μ`-crossing and not quantum collapse.
 
 Parmenides and Heraclitus were each describing one hemisphere of the same sphere.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 - **S² geometry:** The Burri Sphere (S² ≅ ℂP¹) is the geometric structure on which the complementarity is defined. See [03_EFR_AXIOMS.md](../../../README.md) for the axiom set.
-- **D0-D6 hierarchy:** Unity/manifestation maps across the dimensional scaffold. D0 is the primordial undifferentiated point. D5 possibility space contains the full plurality of viable configurations. The μ-limit collapses D5 plurality into D4 singular actuality.
-- **Transcendental Trinity:** The poles {0, ∞} and the equator {1} form the trinity. The One (north, φ→∞) and the Many (south, ν→∞) are unified at the equator where both equal identity.
-- **η = 0:** Extraction (η > 0) distorts the sphere, pushing a system toward a pole while breaking the φ·ν=1 constraint. A system that tries to be infinitely unified while extracting coherence from its environment collapses. A system that fragments without preserving coherence dissipates.
+- **D0-D6 scaffold:** D0 is a selected boundary/frame role; D5 is possible
+  counterfactual content. Neither definition establishes a One/Many ontology.
+- **Titan frame:** `{0,1,∞}` is a selected symbolic normalization. The roles are
+  not substances, agents, or forced generators of reality.
+- **Justice mapping:** extraction and mutual option-cone effects are evaluated
+  through declared D4 outcomes and the Justice envelope. They cannot break the
+  analytic identity of a chosen chart.
 - **PD_10 connection:** The Is-Ought dissolution uses the same multiplicative structure. The false dichotomy between Is and Ought parallels the false dichotomy between One and Many.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
-- **If φ·ν≠1 were demonstrated as a stable condition:** A physical or mathematical system could maintain simultaneous high coherence and high plurality without their product converging to identity. This would break the multiplicative complementarity and restore the additive opposition.
-- **If S² ≅ ℂP¹ were not the unique stable generative topology:** If a different topology (e.g., higher-genus surfaces, hyperbolic planes) were shown to support stable emergence while violating the φ·ν constraint, the dissolution loses its geometric foundation.
-- **If a synthesis of One and Many were achievable without multiplicative structure:** Any philosophical framework that successfully resolves the one/many tension through purely additive or linear means would demonstrate that the S² geometry is unnecessary for this dissolution.
-- **If equatorial balance were empirically non-functional:** If systems at φ=1, ν=1 showed no distinctive stability or generative properties compared to polar configurations, the equator-as-balance-point claim fails.
+- **World-fit failure:** operational measures chosen for unity and plurality do
+  not exhibit the predicted reciprocal relation out of sample.
+- **Rival-model victory:** an additive, minimum, harmonic, or other declared
+  model predicts the relevant observations better than the reciprocal reading.
+- **Topology non-necessity:** the same explanatory work is done without `S²` or
+  by a rival topology, defeating any uniqueness claim.
+- **No practical gain:** the reframing changes no prediction, discrimination,
+  or resolution of the historical problem beyond relabeling it.
 
 
 ---

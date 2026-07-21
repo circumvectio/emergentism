@@ -9,6 +9,11 @@ rosetta:
 
 **As of 2026-06-10**, integrating the corpus's own frontier (`00_META/00_KNOWN_UNKNOWNS_PROGRAM.md`) with what the Peer Review Program *actually established* this session. **Source discipline:** items tagged `[corpus-stated]` are the corpus's self-classification (not independently re-verified here); items tagged `[verified]`, `[A]`, or `[refuted]` were established by this session's experiments, citation checks, or source reading. The point of the distinction is honesty about what we *know* vs. what the corpus *asserts*.
 
+> **[金] Current type boundary (2026-07-21).** This is a dated frontier record,
+> not a D-register owner. Actual processes, agents, measurements, experiences,
+> and reports are D4; represented possible content is D5; D6 supplies no
+> positive object. Missing reduction never establishes strong emergence.
+
 ---
 
 ## A. KNOWN KNOWNS (settled enough to build on)
@@ -36,7 +41,11 @@ rosetta:
 - **"Holobiont" is a contested term** (Douglas–Werren 2016; Moran–Sloan 2015) — usable only if framed as tested, not assumed.
 
 ### A5. Corpus-stated closures `[corpus-stated]` (not re-verified here)
-- The D5/D6 boundary; register-based resolution of the "remaining philosophical questions"; D5 as strong-in-genesis / weak-in-governance; the 5+1 constitution; the four-move (2 gods + 2 fenced demons) scheme. *These are the corpus's own "Closed" list; this program did not audit them, except to note R7–R9 give the fenced-demon architecture real (if non-novel) support.*
+- The then-stated D5/D6 boundary; register-based treatment of the “remaining
+  philosophical questions”; the 5+1 constitution; and the four-move scheme.
+  *These were the corpus's own “Closed” list, not findings of this program. The
+  strong-in-genesis/weak-in-governance formula is superseded: each candidate
+  crossing now carries a reduction status and a separate empirical test.*
 
 ---
 
@@ -53,7 +62,10 @@ rosetta:
 - **R7–R9:** is there **any** theoretical delta beyond the mainstream, or is it pedagogy? (The mortality/conjugate-welfare currency: is it irreducible to `b/c` or assortment?)
 
 ### B3. The deep conceptual unknowns
-- **Is there any task whose behavior provably requires a *conscious* lookahead rather than a mechanical one?** (The D5-as-soul question.) The CEF cart-pole shows lookahead suffices and consciousness is not needed *for that task*. If no such task can be named, the corpus's teleology gate narrows to **D5-as-process**, and "D5-as-soul" stays a wager.
+- **Is there any task whose behavior provably requires conscious experience
+  rather than mechanical lookahead?** The CEF cart-pole shows that an actual D4
+  computation over represented D5 alternatives suffices for that task. It does
+  not locate consciousness in D5; the ontology of consciousness remains open.
 - **What is the right manifold for each register?** R6 forced this open: sphere for organizations, simplex for empowerment — but the corpus has not re-derived which of its *other* registers (cosmology, ethics, number) are multiplicative vs. additive. The unification must be rebuilt register-by-register.
 
 ### B4. The corpus's own open empirical lanes `[corpus-stated]` (designed, unrun)

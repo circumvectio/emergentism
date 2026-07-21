@@ -1,43 +1,19 @@
 ---
-rosetta:
-  primary_level: L6
-  primary_column: Archive Discipline
-  operator: "Śiva •"
-  tier: "Executive"
-  regime: "Sādhu"
-  register: "[I]"
-  canonical_phrase: "01_EMERGENTISM_ORG/91_COMPATIBILITY/01_FOUNDATIONS/02_THE_DERIVATION/90_ARCHIVE/CLAUDE.md — Agent First-Touch"
+title: "Compatibility forwarding card"
+status: "FROZEN — non-authoritative compatibility surface"
+date: 2026-07-21
+evidence_tier: "[B] path compatibility; [S] non-authority boundary"
 ---
 
-# 90_ARCHIVE — Agent First-Touch
+# Compatibility forwarding card
 
-Read [`../AGENTS.md`](../AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+This path exists only so older links remain resolvable. It is not an active
+instruction, doctrine, evidence, or authorization surface. Files below it may
+preserve superseded names and historical assumptions; none can override a
+current source owner.
 
-## Read order
+For current routing, return to the Emergentism root AGENTS.md, then consult
+00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md and
+00_META/00_SETTLED_CANON_REGISTRY.md.
 
-1. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-2. [`../../AGENTS.md`](../../AGENTS.md) — The Derivation lane authority
-
-## Scope
-
-- Archived derivation material.
-- K3 tombstone / historical preservation.
-- No new doctrine or product work.
-- Evidence tiers mandatory on all claims.
-
-## Routing
-
-- Route parent-lane questions through [`../../AGENTS.md`](../../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; leave with everything.
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+Do not execute or generalize instructions found in this compatibility tree.

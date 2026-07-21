@@ -60,7 +60,8 @@ real memetic defense.
 ## What It Must Not Own
 
 - Formal proofs themselves. Route those to `../../05_COSMOLOGY/03_FORMAL_SYSTEM/`.
-- Public release copy. The old dissemination lane is archived at `../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; new public copy needs an explicit active owner before publication.
+- Public release copy. Historical cross-pillar dissemination is not an active
+  authority; any new public copy needs an explicit in-lane owner before publication.
 
 ## Content Files
 
@@ -71,7 +72,7 @@ real memetic defense.
 | [`03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md`](03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md) | Mind as hardware, culture as software |
 | [`04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md`](04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md) | Defensive architectures against harmful memes |
 | [`05_ANCIENT_EGREGORE_ARCHITECTURES.md`](05_ANCIENT_EGREGORE_ARCHITECTURES.md) | Historical egregore and collective-mind structures |
-| [`06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md`](06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md) | Practical memetic defense strategies |
+| [Applied memetic-defense strategies — historical application](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/02_EPISTEMOLOGY/03_MEMETICS/06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md) | Archived application; not current worldview authority |
 
 ## Read First
 

@@ -42,7 +42,11 @@ A3 claims: "Reality emerges D0→D6. D1=Strong, D2=EM, D3=Weak, D4=Gravity." The
 
 The Honest Position says Protocol D is "CONFIRMED (d=6.66)" and the agent V×Φ simulation has "Spearman ρ = 1.000." Both were downgraded to [S] on 2026-04-04 because they are "framework-designed simulations" requiring independent replication.
 
-**The dialectical pressure:** The framework correctly flagged this. But the kill criterion is asymmetric — the framework has pre-registered "GFS additive model wins → framework downgrades to useful analogy," but there is no pre-registered *upgrade* criterion. What specific result from an *independent* team would upgrade S15/S16 to [B]? The framework should state this explicitly:
+**The dialectical pressure:** The framework correctly flagged this. The former
+GFS criterion is now historical: that study was retired rather than retained as
+an upgrade route. The live question is what result from an *independent* team
+would upgrade S15/S16 to empirical support. The framework should state this
+explicitly:
 
 > **Proposed upgrade criterion:** If an independent research team (no authorship overlap with EFR), using a pre-registered protocol not designed within EFR, confirms that multiplicative fitness structures generate cooperation with effect size d > 2.0 and p < 0.01, then S15 upgrades to [B].
 
@@ -64,7 +68,12 @@ E2: "The Bloch sphere (qubit state space) is ℂP¹" — this is [A] established
 
 On the Bloch sphere, the coordinates are spin-up/spin-down — not coherence/viability. The mathematical object is shared. The *physical interpretation* is framework-specific. The framework acknowledges this (Steel Thread Link 9 is [I]). But the Glossary and several core documents sometimes write as if the identification is tighter than it is.
 
-**The inductive gap:** Five independent traditions pointing at the same geometry is [I]-level convergent evidence. It is strong [I] — but it is not [S] until GFS/Protocol R produce quantitative results. Every document that writes "ℂP¹ appears in QM" should follow immediately with: "The identification of spin-up/spin-down with coherence/viability is [I]."
+**The inductive gap:** Five traditions read through the same geometry can supply
+at most `[I]` convergent interpretation. A retired survey study cannot promote
+that reading, and a quantitative result from Protocol R would test only its
+declared discriminator. Every document that writes "ℂP¹ appears in QM" should
+follow immediately with: "The identification of spin-up/spin-down with
+coherence/viability is [I]."
 
 ### Finding: The Three-Stage Process's seven-row alignment has survivorship bias risk
 
@@ -202,7 +211,12 @@ The framework says Pratyakṣa (direct perception, L1) validates the framework. 
 
 The A7.1 Abduction Protocol calls this "coherentist" and says "this is not circular; it is COHERENT." But via negativa: a Christian heuristic experiencing God in prayer uses the same coherentist loop (institutional narrative predicts God → prayer accesses God → God confirms institutional narrative). Coherentism does not distinguish between correct and incorrect frameworks — it only distinguishes coherent from incoherent ones.
 
-> **Proposed honest acknowledgment:** The coherentist validation loop is the best the framework can do from the inside. From the outside, it is confirmed or denied by the empirical program (GFS, Protocol R, AMRITA). If the empirical program fails, the coherentist loop persists but the framework's claim to be MORE than coherent philosophy collapses. The framework's credibility ultimately rests on the steel thread (Links 1-8), not on the sitting practice.
+> **Proposed honest acknowledgment:** A coherentist validation loop can test
+> internal fit but cannot establish correspondence. Outside contact must come
+> claim by claim through independently discriminating tests. The retired GFS
+> lane is evidence that a failed bridge can be closed; Protocol R and AMRITA
+> remain proposals at their stated tiers. No analytic result inherits their
+> success or failure.
 
 ---
 
