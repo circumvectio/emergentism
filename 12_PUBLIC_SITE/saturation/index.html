@@ -3,142 +3,238 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Hinge — the μ-limit — Emergentism</title>
-<meta name="description" content="The μ-limit as a function: L(x) = x/(1−x) unrolls the finite interval [0,1) onto the whole ray [0,∞). Its pole at x=1 is the saturation that opens the next degree of freedom — the door between the reciprocal line and the sphere." />
-<meta property="og:title" content="The Hinge — the μ-limit made a function" />
-<meta property="og:description" content="L(x)=x/(1−x): the bounded freedom saturates toward x=1 and unrolls into an unbounded one. The pole is the μ-limit — the door from the line to the sphere." />
+<title>The μ-limit at every level — Emergentism</title>
+<meta name="description" content="How a degree of freedom saturates and opens the next: the hinge function L(x)=x/(1-x), the line that gains curvature and closes into a circle, and the pattern that repeats at every rung — a closed n-dimensional freedom can only be seen whole from n+1." />
+<meta property="og:title" content="The μ-limit at every level" />
+<meta property="og:description" content="A line is a circle of infinite radius. Give it curvature and it closes — and a closed freedom can only be seen whole from the freedom above it. The same move, rung after rung." />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="data:,">
 <style>
-  :root{ --bg:#050505; --ink:#e9e6df; --dim:#8a8577; --gold:#e8b84b; --warm:#e0913a; --line:rgba(233,230,223,.14); }
-  *{ box-sizing:border-box; } html,body{ margin:0; background:var(--bg); color:var(--ink);
-    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; line-height:1.6; }
-  header.topbar{ position:sticky; top:0; height:52px; display:flex; align-items:center; gap:1.2rem;
-    padding:0 1.2rem; z-index:9; background:rgba(5,5,5,.85); border-bottom:1px solid var(--line); }
-  .brand{ color:var(--gold); font-weight:700; text-decoration:none; } nav a{ color:var(--dim); text-decoration:none; font-size:.8rem; margin-right:.5rem; } nav a:hover{ color:var(--ink); }
-  .wrap{ max-width:920px; margin:0 auto; padding:38px 20px 56px; }
-  .kicker{ color:var(--warm); font-size:.78rem; letter-spacing:.15em; text-transform:uppercase; }
-  h1{ font-size:clamp(2rem,5.5vw,3.3rem); margin:.3rem 0 .1rem; letter-spacing:-.01em; }
-  .lede{ color:var(--dim); max-width:64ch; margin:.6rem 0 1.2rem; }
-  .fml{ color:var(--gold); font-size:1.15rem; text-align:center; margin:.4rem 0 1rem; }
-  canvas#hinge{ width:100%; aspect-ratio:16/9; display:block; border:1px solid var(--line); border-radius:12px; background:#070707; }
-  .readout{ display:flex; flex-wrap:wrap; gap:.5rem 1.6rem; justify-content:center; margin:.7rem 0 .2rem; font-size:.88rem; }
-  .readout b{ color:var(--gold); }
-  .verdict{ text-align:center; color:var(--dim); font-size:.9rem; margin:.2rem auto .4rem; max-width:64ch; }
-  .verdict b{ color:var(--ink); }
-  .card{ border:1px solid var(--line); border-radius:10px; padding:.9rem 1.15rem; margin-top:1.5rem; }
-  .card h3{ margin:.1rem 0 .5rem; font-size:.95rem; color:var(--gold); }
-  .card p{ color:var(--dim); font-size:.87rem; margin:.5rem 0; }
-  .fence{ border-left:2px solid var(--warm); padding-left:.9rem; }
-  .tier{ color:var(--gold); font-size:.7rem; border:1px solid var(--gold); border-radius:999px; padding:.02rem .4rem; }
-  .tier.c{ color:var(--warm); border-color:var(--warm); }
-  .foot{ color:var(--dim); font-size:.76rem; border-top:1px solid var(--line); margin-top:1.8rem; padding-top:1rem; }
-  .foot a,.cta{ color:var(--gold); }
+  :root{--bg:#050505;--ink:#e9e6df;--dim:#8a8577;--gold:#e8b84b;--warm:#e0913a;--cyan:#5ec8d8;--line:rgba(233,230,223,.14)}
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;line-height:1.65}
+  header.topbar{position:sticky;top:0;height:52px;display:flex;align-items:center;gap:1.1rem;
+    padding:0 1.2rem;z-index:9;background:#050505;border-bottom:1px solid var(--line)}
+  .brand{color:var(--gold);font-weight:700;text-decoration:none}
+  nav a{color:var(--dim);text-decoration:none;font-size:.8rem;margin-right:.5rem} nav a:hover{color:var(--ink)}
+  .wrap{max-width:940px;margin:0 auto;padding:40px 20px 90px}
+  .kicker{color:var(--warm);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase}
+  h1{font-size:clamp(2rem,5.5vw,3.2rem);margin:.3rem 0 .1rem;letter-spacing:-.01em}
+  h2{font-size:1.2rem;color:var(--gold);margin:3.4rem 0 .3rem;scroll-margin-top:70px}
+  .lede{color:var(--dim);max-width:66ch;margin:.7rem 0 1.1rem}
+  .fml{color:var(--gold);text-align:center;font-size:1.05rem;margin:.5rem 0 1rem}
+  canvas{width:100%;display:block;border:1px solid var(--line);border-radius:12px;background:#070707;touch-action:none}
+  #hinge{aspect-ratio:16/9} #curve{aspect-ratio:16/10} #nest{aspect-ratio:16/7}
+  .readout{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:center;margin:.7rem 0 .2rem;font-size:.83rem}
+  .readout b{color:var(--gold)}
+  .note{color:var(--dim);font-size:.87rem;max-width:66ch;margin:.7rem auto;text-align:center}
+  .note b{color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.83rem}
+  td,th{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:400}
+  .card{border:1px solid var(--line);border-radius:10px;padding:.9rem 1.15rem;margin-top:1.4rem}
+  .card h3{margin:.1rem 0 .5rem;font-size:.93rem;color:var(--gold)}
+  .card p{color:var(--dim);font-size:.86rem;margin:.5rem 0}
+  .fence{border-left:2px solid var(--warm);padding-left:.9rem}
+  .tier{color:var(--gold);font-size:.7rem;border:1px solid var(--gold);border-radius:999px;padding:.02rem .4rem}
+  .tier.c{color:var(--warm);border-color:var(--warm)}
+  .foot{color:var(--dim);font-size:.76rem;border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem}
+  .foot a,.cta{color:var(--gold)}
 </style>
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="../">Emergentism</a>
-  <nav aria-label="routes"><a href="../1/">1 · Line</a><a href="../saturation/">μ · Hinge</a><a href="../sphere.html">Sphere</a><a href="../discoveries/">Discoveries</a><a href="../record/">Record</a></nav>
+  <nav aria-label="routes"><a href="../titans/">Floor</a><a href="../1/">1 · Line</a><a href="../saturation/">μ</a><a href="../riemann/">2 · Sphere</a><a href="../record/">Record</a></nav>
 </header>
 
 <div class="wrap">
   <div class="kicker">The μ-limit · the door between rungs</div>
-  <h1>The Hinge</h1>
-  <p class="lede">A degree of freedom, run to its limit, becomes the opening of the next. That saturation has a function — and it is nothing exotic: the odds function, which takes the <em>finite</em> interval and unrolls it onto the <em>whole</em> ray.</p>
-  <div class="fml">L(x) = x / (1 &minus; x) &nbsp;:&nbsp; [0, 1) &nbsp;&rarr;&nbsp; [0, &infin;)</div>
+  <h1>How one freedom opens the next</h1>
+  <p class="lede">A degree of freedom, run to its limit, becomes the opening of the next. That happens the same way at every rung — and it is not a metaphor. Three renderings below: the <b>hinge function</b>, the <b>line that closes</b>, and the <b>pattern that repeats</b>.</p>
 
-  <canvas id="hinge" aria-label="The saturation map: a point on the finite interval from 0 to 1 maps, via L(x)=x/(1-x), to a point on the infinite ray; as the input approaches 1 the output runs to infinity."></canvas>
+  <h2>1 · The hinge — a bounded freedom unrolls into an unbounded one</h2>
+  <div class="fml">L(x) = x / (1 &minus; x) &nbsp;:&nbsp; [0, 1) &rarr; [0, &infin;)</div>
+  <canvas id="hinge" aria-label="A point on the finite interval maps to a point on the infinite ray; as the input saturates toward one, the output runs to infinity."></canvas>
+  <div class="readout"><span>x <b id="h-x">0.00</b></span><span>L(x) <b id="h-l">0.00</b></span><span>1 &minus; x <b id="h-g">1.000</b></span></div>
+  <p class="note">The bar above is the <b>bounded</b> freedom, the bar below the <b>unbounded</b> one. As x saturates toward the μ-limit at 1, its image runs to ∞. <b>The pole is the saturation.</b> <span class="tier">[A]</span></p>
+
+  <h2>2 · The line that closes — 1D saturating into 2D</h2>
+  <div class="fml">&kappa; : 0 &rarr; 2&pi;/L &nbsp;&nbsp; radius r = 1/&kappa; &nbsp;&nbsp; (a line is a circle of infinite radius)</div>
+  <canvas id="curve" aria-label="A curve of fixed length whose curvature rises from zero: it begins as a straight line, bends into an arc, and closes into a full circle when curvature times length reaches two pi."></canvas>
   <div class="readout">
-    <span>x (bounded) <b id="r-x">0.000</b></span>
-    <span>L(x) = x/(1&minus;x) <b id="r-l">0.000</b></span>
-    <span>distance to the μ-limit &nbsp;1 &minus; x = <b id="r-g">1.000</b></span>
+    <span>curvature &kappa; <b id="c-k">0.000</b></span><span>radius r = 1/&kappa; <b id="c-r">&infin;</b></span>
+    <span>wrap &kappa;L/2&pi; <b id="c-w">0.00</b></span><span id="c-s" style="color:var(--cyan)">straight — 1D</span>
   </div>
-  <p class="verdict">The bar above is the <b>bounded</b> freedom [0,&nbsp;1). The bar below is the <b>unbounded</b> one [0,&nbsp;∞). As x saturates toward the μ-limit at&nbsp;<b>1</b>, its image runs to&nbsp;<b>∞</b> — the finite interval unrolls into the whole ray. The pole <em>is</em> the saturation. <span class="tier">[A]</span></p>
+  <p class="note">Not slope — <b>curvature</b>. A straight line has κ = 0 and radius ∞; it is already a circle, one of infinite size. Raise κ and the same length of line bends; when <b>κ·L = 2π</b> the two ends meet and the circle is <b>seen whole</b>. The curve stays intrinsically one-dimensional the entire time — but the moment it closes, <em>you need a second dimension to see it at all.</em> <span class="tier">[A]</span></p>
+
+  <h2>3 · The pattern — and it repeats at every rung</h2>
+  <canvas id="nest" aria-label="Three panels: a line closing into a circle, a plane closing into a sphere, and space closing into a hypersphere that cannot be pictured."></canvas>
+  <p class="lede" style="margin-top:1rem">Adding <b>one point at infinity</b> to an n-dimensional freedom closes it into the n-sphere — and the closed object can only be seen whole from <b>n+1</b>. That is standard topology (one-point compactification), and it is the μ-limit's shape, rung after rung:</p>
+  <table>
+    <tr><th>Freedom</th><th>Closed by the point at infinity</th><th>Seen whole only from</th><th>Where we render it</th></tr>
+    <tr><td>the line &nbsp;ℝ</td><td>ℝ ∪ {∞} ≅ <b>S¹</b> — the circle</td><td>2 dimensions</td><td>§2 above</td></tr>
+    <tr><td>the plane &nbsp;ℂ</td><td>ℂ ∪ {∞} ≅ <b>S²</b> — the sphere</td><td>3 dimensions</td><td><a href="../riemann/" style="color:var(--gold)">the sphere &rarr;</a></td></tr>
+    <tr><td>space &nbsp;ℝ³</td><td>ℝ³ ∪ {∞} ≅ <b>S³</b></td><td>4 dimensions — <em>we cannot picture it; we are inside it</em></td><td>—</td></tr>
+  </table>
+  <p class="note"><b>This is "opaque from below, legible from above" in geometry.</b> A freedom run to closure becomes invisible to itself and obvious from one rung up. The climb is not a metaphor about knowledge; at least here, it is the literal difference between being inside a closed freedom and seeing it whole. <span class="tier">[A]</span> the topology · <span class="tier c">[I]</span> the reading</p>
 
   <div class="card">
-    <h3>Why this is the door, not a room</h3>
-    <p><b>The line, then the hinge, then the sphere.</b> The reciprocal <a href="../1/" style="color:var(--gold)">line</a> (D1) carries one bounded coordinate. This hinge takes that coordinate to its limit and manufactures the one thing the line lacked — a point at infinity. And a ray with its point at infinity, closed up, <em>is</em> the <a href="../sphere.html" style="color:var(--gold)">sphere</a> (D2). So the μ-limit is exactly the passage <b>D1 &rarr; D2</b>: line &rarr; (pole) &rarr; sphere.</p>
-    <p><b>Approached, never occupied.</b> The point never reaches x&nbsp;=&nbsp;1 — at the μ-limit the function has no value, only a limit. Saturation is a horizon a freedom runs toward, never a place it stands. (The same shape as the poles, and as the speed of light on the <a href="../passage.html" style="color:var(--gold)">passage</a>.)</p>
+    <h3>Level by level — where each μ-crossing is rendered, and at what tier</h3>
+    <table>
+      <tr><th>Crossing</th><th>What saturates</th><th>What opens</th><th>Tier</th></tr>
+      <tr><td>D0 → D1</td><td>the three frames, no extension</td><td>position — the line between 0 and ∞, mirrored at 1 <a href="../suda/" style="color:var(--gold)">→</a></td><td><span class="tier">[A]</span>/<span class="tier c">[I]</span></td></tr>
+      <tr><td>D1 → D2</td><td>the bounded interval; the line's ends</td><td>curvature and a second axis — circle, then plane, then sphere <a href="../riemann/" style="color:var(--gold)">→</a></td><td><span class="tier">[A]</span></td></tr>
+      <tr><td>D2 → D3</td><td>the surface</td><td>volume, and coupling — need-both, the binding constraint</td><td><span class="tier">[A]</span>/<span class="tier c">[I]</span></td></tr>
+      <tr><td>D3 → D4</td><td>the body's reach</td><td>spacetime — the mass shell, the clock <a href="../4/" style="color:var(--gold)">→</a></td><td><span class="tier">[A]</span> inherited</td></tr>
+      <tr><td>D4 → D5</td><td>means without foresight</td><td>the option cone — choice, reflexivity <a href="../lightcone.html" style="color:var(--gold)">→</a></td><td><span class="tier c">[C]</span></td></tr>
+      <tr><td>D5 → D6</td><td>the game at full coupling</td><td>the return — the summit resembling the ground</td><td><span class="tier c">[I]</span></td></tr>
+    </table>
   </div>
 
   <div class="card fence">
     <h3>The honest fence</h3>
-    <p><b>The function is inherited.</b> L(x)=x/(1−x) is the odds/logit map, standard mathematics — used, not discovered <span class="tier">[A]</span>. Reading its pole as "the μ-limit, where one freedom opens the next" is our interpretation <span class="tier">[A] the pole · [I] the reading</span>.</p>
-    <p><b>The strong claim stays a wager.</b> That measurable saturation of one register actually <em>raises the probability</em> of a genuinely new freedom emerging is <b>μ-at-saturation</b>, held at <span class="tier c">[C]</span> — a conjecture with a stated kill, not a theorem. This page shows the <em>shape</em> of the door; that emergence walks through it is the bet.</p>
-    <p><b>Kept in its own frame.</b> This is the D1&rarr;D2 <em>transition</em> — distinct from the reciprocal line, the egg chart, the sphere, and the torus family. A hinge is not a room; we do not fuse it with the rungs it joins.</p>
+    <p><b>The geometry is inherited and exact.</b> The hinge map, constant-curvature closure, and one-point compactification (ℝⁿ ∪ {∞} ≅ Sⁿ) are standard mathematics — used, not discovered <span class="tier">[A]</span>.</p>
+    <p><b>The reading is ours, and the causal claim is a wager.</b> That these geometric closures <em>are</em> the ladder's rungs is an interpretation <span class="tier c">[I]</span>. That measurable saturation of one register <em>raises the probability</em> of a genuinely new freedom emerging is <b>μ-at-saturation</b>, held at <span class="tier c">[C]</span> with its kill named: exhibit a lower-rung theory that predicts the next rung's genesis and the wager dies.</p>
+    <p><b>Two registers kept apart.</b> Closing a freedom (compactification) and gaining a dimension are <em>different moves</em>: the circle stays intrinsically 1D. What the closure forces is a <em>viewing</em> dimension. We do not collapse the two.</p>
   </div>
 
   <div class="foot">
-    <p>Walk the ladder: the <a class="cta" href="../1/">reciprocal line</a> &rarr; <b>this hinge</b> &rarr; the <a class="cta" href="../sphere.html">sphere</a>. Or meet the numbers that live on it at <a class="cta" href="../egg/">the egg</a>. Where a strong version of the saturation claim overreached, its death is dated on <a href="../record/">the record</a>.
-    &nbsp;·&nbsp; <a class="exit" href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
+    <p>Walk it: <a class="cta" href="../titans/">the floor</a> → <a class="cta" href="../suda/">the line, centred on 1</a> → <b>this hinge</b> → <a class="cta" href="../riemann/">the sphere</a> → <a class="cta" href="../4/">spacetime</a>. Deaths dated on <a href="../record/">the record</a>.
+    &nbsp;·&nbsp; <a href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
   </div>
 </div>
 
+<script src="../assets/js/construct.js"></script>
 <script>
 (function(){
-  var cv=document.getElementById('hinge'), ctx=cv.getContext('2d');
-  var DPR=Math.min(window.devicePixelRatio||1,2), W=0,H=0;
-  function resize(){ W=cv.clientWidth; H=cv.clientHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
-  window.addEventListener('resize', resize);
-  var el=function(id){return document.getElementById(id);};
-  var K=2.5;                                 // ray compression: c(L)=L/(L+K) maps [0,∞)->[0,1)
-  function cmap(L){ return L/(L+K); }
+  var G=Construct.G, g=function(i){return document.getElementById(i);};
+  function fit(cv){ var d=Math.min(window.devicePixelRatio||1,2);
+    var w=cv.clientWidth,h=cv.clientHeight; cv.width=w*d; cv.height=h*d;
+    var c=cv.getContext('2d'); c.setTransform(d,0,0,d,0,0); return {ctx:c,W:w,H:h}; }
 
-  function bar(y, label){                     // horizontal track with margins
-    var x0=W*0.09, x1=W*0.91;
-    ctx.strokeStyle='rgba(233,230,223,0.22)'; ctx.lineWidth=1.4;
-    ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(x1,y); ctx.stroke();
-    return [x0,x1];
-  }
-  function draw(t){
-    ctx.clearRect(0,0,W,H);
-    var yTop=H*0.30, yBot=H*0.72;
-    var ft=bar(yTop), fb=bar(yBot);
-    var x0=ft[0], x1=ft[1], wspan=x1-x0;
-    ctx.font='11px ui-monospace,monospace'; ctx.fillStyle='rgba(138,133,119,0.85)'; ctx.textAlign='center';
-    // top ticks: finite interval [0,1)
+  /* ---------- 1 · the hinge ---------- */
+  var H=new Construct.Construction();
+  H.free('x','number',0.2);
+  H.dep('L','number',['x'],function(x){ return x/(1-x); });
+  H.dep('gap','number',['x'],function(x){ return 1-x; });
+  H.solve();
+  var hc=g('hinge');
+  function drawHinge(){
+    var f=fit(hc), ctx=f.ctx, W=f.W, Hh=f.H;
+    ctx.clearRect(0,0,W,Hh);
+    var x0=W*0.09,x1=W*0.91,span=x1-x0,yT=Hh*0.32,yB=Hh*0.74;
+    function ax(y){ ctx.strokeStyle='rgba(233,230,223,.22)';ctx.lineWidth=1.4;
+      ctx.beginPath();ctx.moveTo(x0,y);ctx.lineTo(x1,y);ctx.stroke(); }
+    ax(yT); ax(yB);
+    ctx.font='11px ui-monospace,monospace'; ctx.textAlign='center';
+    var x=H.val('x'), L=H.val('L'), K=2.5, cm=function(v){ return x0+(v/(v+K))*span; };
     [[0,'0'],[0.5,'½'],[0.9,'0.9'],[1,'1 · μ-limit']].forEach(function(p){
-      var px=x0+p[0]*wspan; ctx.strokeStyle='rgba(233,230,223,0.18)';
-      ctx.beginPath(); ctx.moveTo(px,yTop-5); ctx.lineTo(px,yTop+5); ctx.stroke();
-      ctx.fillStyle=(p[0]===1)?'rgba(232,184,75,1)':'rgba(138,133,119,0.85)';
-      ctx.fillText(p[1], px, yTop-12);
-    });
-    ctx.fillStyle='rgba(138,133,119,0.7)'; ctx.textAlign='left';
-    ctx.fillText('bounded freedom  [0, 1)', x0, yTop-30);
-    // bottom ticks: infinite ray [0,∞) compressed
-    ctx.textAlign='center';
-    [[0,'0'],[1,'1'],[2,'2'],[5,'5'],[20,'20'],[1e9,'∞']].forEach(function(p){
-      var px=x0+cmap(p[0])*wspan; ctx.strokeStyle='rgba(233,230,223,0.18)';
-      ctx.beginPath(); ctx.moveTo(px,yBot-5); ctx.lineTo(px,yBot+5); ctx.stroke();
-      ctx.fillStyle=(p[0]>1e8)?'rgba(232,184,75,1)':'rgba(138,133,119,0.85)';
-      ctx.fillText(p[1], px, yBot+20);
-    });
-    ctx.fillStyle='rgba(138,133,119,0.7)'; ctx.textAlign='left';
-    ctx.fillText('unbounded freedom  [0, ∞)', x0, yBot+38);
-
-    // the moving point x on [0,1) (approached, never 1) and its image L(x)
-    var x=0.5*(1-Math.cos(t*0.5))*0.985;      // 0 .. 0.985, easing
-    var L=x/(1-x);
-    var pxT=x0+x*wspan, pyT=yTop;
-    var pxB=x0+cmap(L)*wspan, pyB=yBot;
-    // connecting map line
-    ctx.strokeStyle='rgba(232,184,75,0.45)'; ctx.lineWidth=1.4;
-    ctx.beginPath(); ctx.moveTo(pxT,pyT); ctx.lineTo(pxB,pyB); ctx.stroke();
-    // input dot (gold), image dot (warm)
-    ctx.beginPath(); ctx.arc(pxT,pyT,6,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
-    ctx.beginPath(); ctx.arc(pxB,pyB,6,0,7); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fill();
-    ctx.fillStyle='rgba(232,184,75,1)'; ctx.font='12px ui-monospace,monospace';
-    ctx.fillText('x', pxT, pyT-12); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fillText('L(x)', pxB, pyB-12);
-
-    el('r-x').textContent=x.toFixed(3);
-    el('r-l').textContent=(L>=1000?L.toExponential(1):L.toFixed(2));
-    el('r-g').textContent=(1-x).toFixed(3);
+      var px=x0+p[0]*span; ctx.strokeStyle='rgba(233,230,223,.18)';
+      ctx.beginPath();ctx.moveTo(px,yT-5);ctx.lineTo(px,yT+5);ctx.stroke();
+      ctx.fillStyle=p[0]===1?'rgba(232,184,75,1)':'rgba(138,133,119,.85)'; ctx.fillText(p[1],px,yT-12); });
+    [[0,'0'],[1,'1'],[3,'3'],[10,'10'],[1e9,'∞']].forEach(function(p){
+      var px=cm(p[0]); ctx.strokeStyle='rgba(233,230,223,.18)';
+      ctx.beginPath();ctx.moveTo(px,yB-5);ctx.lineTo(px,yB+5);ctx.stroke();
+      ctx.fillStyle=p[0]>1e8?'rgba(232,184,75,1)':'rgba(138,133,119,.85)'; ctx.fillText(p[1],px,yB+20); });
+    ctx.textAlign='left'; ctx.fillStyle='rgba(138,133,119,.7)';
+    ctx.fillText('bounded  [0, 1)',x0,yT-30); ctx.fillText('unbounded  [0, ∞)',x0,yB+38);
+    var pT=x0+x*span, pB=cm(L);
+    ctx.strokeStyle='rgba(232,184,75,.45)';ctx.lineWidth=1.4;
+    ctx.beginPath();ctx.moveTo(pT,yT);ctx.lineTo(pB,yB);ctx.stroke();
+    ctx.beginPath();ctx.arc(pT,yT,6,0,7);ctx.fillStyle='rgba(232,184,75,1)';ctx.fill();
+    ctx.beginPath();ctx.arc(pB,yB,6,0,7);ctx.fillStyle='rgba(224,145,58,1)';ctx.fill();
+    g('h-x').textContent=x.toFixed(3);
+    g('h-l').textContent=L>=1000?L.toExponential(1):L.toFixed(2);
+    g('h-g').textContent=H.val('gap').toFixed(3);
   }
-  var t0=performance.now();
-  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
-  resize(); requestAnimationFrame(frame);
+
+  /* ---------- 2 · the line that closes (constant curvature) ----------
+     Declared: arc length Lc fixed; kappa free; radius = 1/kappa;
+     wrap = kappa*Lc/(2pi)  -> 1 exactly when the circle closes.        */
+  var Cc=new Construct.Construction();
+  Cc.free('Lc','number',1.0);
+  Cc.free('kappa','number',0.0001);
+  Cc.dep('r','number',['kappa'],function(k){ return 1/k; });
+  Cc.dep('wrap','number',['kappa','Lc'],function(k,L){ return k*L/(2*Math.PI); });
+  Cc.solve();
+  var cc=g('curve');
+  function drawCurve(){
+    var f=fit(cc), ctx=f.ctx, W=f.W, Hh=f.H;
+    ctx.clearRect(0,0,W,Hh);
+    var k=Cc.val('kappa'), Lc=Cc.val('Lc'), N=260, scale=Math.min(W,Hh)*0.62;
+    var pts=[],i,s,px,py;
+    for(i=0;i<=N;i++){
+      s=Lc*i/N;
+      if(k<1e-6){ px=s-Lc/2; py=0; }
+      else { px=Math.sin(k*s)/k; py=(1-Math.cos(k*s))/k;
+             px-=Math.sin(k*Lc/2)/k; py-=(1-Math.cos(k*Lc/2))/k*0.5; }
+      pts.push({x:px,y:py});
+    }
+    var minx=1e9,maxx=-1e9,miny=1e9,maxy=-1e9;
+    pts.forEach(function(p){ minx=Math.min(minx,p.x);maxx=Math.max(maxx,p.x);
+      miny=Math.min(miny,p.y);maxy=Math.max(maxy,p.y); });
+    var cxm=(minx+maxx)/2, cym=(miny+maxy)/2;
+    var ext=Math.max(maxx-minx,maxy-miny,0.35), sc=scale/ext;
+    ctx.beginPath();
+    pts.forEach(function(p,idx){ var X=W/2+(p.x-cxm)*sc, Y=Hh/2-(p.y-cym)*sc;
+      idx?ctx.lineTo(X,Y):ctx.moveTo(X,Y); });
+    ctx.strokeStyle='rgba(232,184,75,0.9)'; ctx.lineWidth=2.4; ctx.stroke();
+    var a=pts[0], b=pts[pts.length-1];
+    var AX=W/2+(a.x-cxm)*sc, AY=Hh/2-(a.y-cym)*sc, BX=W/2+(b.x-cxm)*sc, BY=Hh/2-(b.y-cym)*sc;
+    ctx.beginPath();ctx.arc(AX,AY,5,0,7);ctx.fillStyle='rgba(94,200,216,1)';ctx.fill();
+    ctx.beginPath();ctx.arc(BX,BY,5,0,7);ctx.fillStyle='rgba(207,201,186,.95)';ctx.fill();
+    var gap=Math.hypot(AX-BX,AY-BY);
+    if(gap<14){ ctx.beginPath();ctx.arc((AX+BX)/2,(AY+BY)/2,13,0,7);
+      ctx.strokeStyle='rgba(232,184,75,.75)';ctx.lineWidth=1.5;ctx.stroke();
+      ctx.fillStyle='rgba(232,184,75,1)';ctx.font='11px ui-monospace,monospace';ctx.textAlign='center';
+      ctx.fillText('the ends meet',(AX+BX)/2,(AY+BY)/2-20); }
+    g('c-k').textContent=k<1e-4?'0.000':k.toFixed(3);
+    g('c-r').textContent=k<1e-4?'∞':(1/k).toFixed(2);
+    var w=Cc.val('wrap'); g('c-w').textContent=w.toFixed(2);
+    g('c-s').textContent = w<0.02?'straight — a circle of infinite radius'
+      : (w>0.985?'closed — seen whole, needs 2D':'bending — still 1D, curving into the plane');
+  }
+
+  /* ---------- 3 · the nested pattern ---------- */
+  var nc=g('nest');
+  function drawNest(t){
+    var f=fit(nc), ctx=f.ctx, W=f.W, Hh=f.H;
+    ctx.clearRect(0,0,W,Hh);
+    var cxs=[W*0.18,W*0.5,W*0.82], cy=Hh*0.48, R=Math.min(W/7,Hh*0.30);
+    var labels=[['ℝ ∪ ∞ ≅ S¹','line → circle','seen from 2D'],
+                ['ℂ ∪ ∞ ≅ S²','plane → sphere','seen from 3D'],
+                ['ℝ³ ∪ ∞ ≅ S³','space → hypersphere','cannot be pictured']];
+    for(var i=0;i<3;i++){
+      var cx=cxs[i];
+      ctx.strokeStyle=i<2?'rgba(232,184,75,0.8)':'rgba(232,184,75,0.28)';
+      ctx.lineWidth=2; ctx.beginPath(); ctx.arc(cx,cy,R,0,7); ctx.stroke();
+      if(i===1){ ctx.strokeStyle='rgba(233,230,223,0.2)'; ctx.lineWidth=1;
+        for(var j=1;j<4;j++){ var rr=R*Math.cos(j*Math.PI/8);
+          ctx.beginPath(); ctx.ellipse(cx,cy,R,Math.abs(R*Math.sin(j*Math.PI/8))*0.5,0,0,7); ctx.stroke(); } }
+      if(i===2){ ctx.setLineDash([4,4]); ctx.strokeStyle='rgba(233,230,223,0.18)';
+        ctx.beginPath(); ctx.arc(cx,cy,R*0.6,0,7); ctx.stroke();
+        ctx.beginPath(); ctx.arc(cx,cy,R*0.3,0,7); ctx.stroke(); ctx.setLineDash([]); }
+      var ang=t*0.5+i*2.1;
+      ctx.beginPath(); ctx.arc(cx+R*Math.cos(ang),cy+R*Math.sin(ang),4,0,7);
+      ctx.fillStyle='rgba(94,200,216,1)'; ctx.fill();
+      ctx.textAlign='center'; ctx.font='12px ui-monospace,monospace';
+      ctx.fillStyle=i<2?'rgba(232,184,75,1)':'rgba(232,184,75,.6)'; ctx.fillText(labels[i][0],cx,cy+R+24);
+      ctx.font='10px ui-monospace,monospace'; ctx.fillStyle='rgba(138,133,119,.9)';
+      ctx.fillText(labels[i][1],cx,cy+R+40); ctx.fillText(labels[i][2],cx,cy+R+54);
+    }
+  }
+
+  var t0=null;
+  function frame(now){ if(t0===null)t0=now; var t=(now-t0)/1000;
+    H.set('x',0.5*(1-Math.cos(t*0.5))*0.985);
+    var w=0.5*(1-Math.cos(t*0.32));                       // wrap 0 → 1 → 0
+    Cc.set('kappa',Math.max(1e-5, w*2*Math.PI/Cc.val('Lc')));
+    drawHinge(); drawCurve(); drawNest(t);
+    requestAnimationFrame(frame); }
+  window.addEventListener('resize',function(){});
+  requestAnimationFrame(frame);
 })();
 </script>
 </body>
