@@ -52,7 +52,10 @@
 <div class="wrap">
   <div class="kicker">The μ-limit · the door between rungs</div>
   <h1>How one freedom opens the next</h1>
-  <p class="lede">A degree of freedom, run to its limit, becomes the opening of the next. That happens the same way at every rung — and it is not a metaphor. Three renderings below: the <b>hinge function</b>, the <b>line that closes</b>, and the <b>pattern that repeats</b>.</p>
+  <p class="lede">A degree of freedom, run to its limit, becomes the opening of the next. But there is a plainer way to say what the μ-limit <em>does</em>, and it is the thing to hold onto:</p>
+  <p class="lede" style="border-left:2px solid var(--gold);padding-left:1rem;color:var(--ink)"><b>The μ-limit is the operation that makes an infinite object visible in full.</b> A function that escapes off the top of the screen and returns from the bottom. A line that runs past both edges forever. These look <em>broken</em> — and they are not. The tear is in the chart. Close the chart and the same object is whole, finite, and entirely on screen.</p>
+  <p class="lede">One consequence is worth stating before anything moves. A function like <code>1/x</code> "blows up" at zero only if you keep <b>two</b> points at infinity, so that <code>&minus;∞</code> and <code>+∞</code> are different places. Glue them into <b>one</b> point and <code>1/x</code> becomes a single continuous closed curve. Nothing about the function changed. <b>Which infinity you choose is a choice</b>, and only one of the two choices lets you see the thing entire. <span class="tier">[A]</span></p>
+  <p class="lede">Below: the <b>hinge</b>, the <b>line that closes</b>, the <b>pattern that repeats</b> — and then the gallery, one example after another, of infinity brought onto the screen.</p>
 
   <h2>1 · The hinge — a bounded freedom unrolls into an unbounded one</h2>
   <div class="fml">L(x) = x / (1 &minus; x) &nbsp;:&nbsp; [0, 1) &rarr; [0, &infin;)</div>
@@ -79,6 +82,8 @@
     <tr><td>space &nbsp;ℝ³</td><td>ℝ³ ∪ {∞} ≅ <b>S³</b></td><td>4 dimensions — <em>we cannot picture it; we are inside it</em></td><td>—</td></tr>
   </table>
   <p class="note"><b>This is "opaque from below, legible from above" in geometry.</b> A freedom run to closure becomes invisible to itself and obvious from one rung up. The climb is not a metaphor about knowledge; at least here, it is the literal difference between being inside a closed freedom and seeing it whole. <span class="tier">[A]</span> the topology · <span class="tier c">[I]</span> the reading</p>
+
+  <!--INSTRUMENTS-->
 
   <div class="card">
     <h3>Level by level — where each μ-crossing is rendered, and at what tier</h3>
@@ -226,15 +231,43 @@
     }
   }
 
+  /* ---- central animation harness ----
+     Every instrument registers a pure draw(cv,ctx,W,H,t). Only canvases actually
+     on screen are driven, so the gallery stays smooth however long it grows.   */
+  var REG=[];
+  window.muRegister=function(id,fn){ REG.push({id:id,fn:fn,cv:null,on:false}); };
+
+  window.muRegister('hinge',function(cv,ctx,W,Hh,t){
+    H.set('x',0.5*(1-Math.cos(t*0.5))*0.985); drawHinge(); });
+  window.muRegister('curve',function(cv,ctx,W,Hh,t){
+    var w=0.5*(1-Math.cos(t*0.32));
+    Cc.set('kappa',Math.max(1e-5,w*2*Math.PI/Cc.val('Lc'))); drawCurve(); });
+  window.muRegister('nest',function(cv,ctx,W,Hh,t){ drawNest(t); });
+
+  var io=null;
+  function bind(){
+    if(!('IntersectionObserver' in window)){ REG.forEach(function(r){ r.on=true; }); }
+    else { io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ REG.forEach(function(r){ if(r.cv===e.target) r.on=e.isIntersecting; }); });
+      },{rootMargin:'120px'}); }
+    REG.forEach(function(r){ r.cv=document.getElementById(r.id); if(r.cv&&io) io.observe(r.cv); });
+  }
+
   var t0=null;
-  function frame(now){ if(t0===null)t0=now; var t=(now-t0)/1000;
-    H.set('x',0.5*(1-Math.cos(t*0.5))*0.985);
-    var w=0.5*(1-Math.cos(t*0.32));                       // wrap 0 → 1 → 0
-    Cc.set('kappa',Math.max(1e-5, w*2*Math.PI/Cc.val('Lc')));
-    drawHinge(); drawCurve(); drawNest(t);
-    requestAnimationFrame(frame); }
-  window.addEventListener('resize',function(){});
-  requestAnimationFrame(frame);
+  function frame(now){
+    if(t0===null)t0=now; var t=(now-t0)/1000;
+    for(var i=0;i<REG.length;i++){
+      var r=REG[i]; if(!r.cv||!r.on) continue;
+      var d=Math.min(window.devicePixelRatio||1,2);
+      var w=r.cv.clientWidth,h=r.cv.clientHeight; if(!w||!h) continue;
+      if(r.cv.width!==Math.round(w*d)||r.cv.height!==Math.round(h*d)){ r.cv.width=w*d; r.cv.height=h*d; }
+      var c=r.cv.getContext('2d'); c.setTransform(d,0,0,d,0,0);
+      try{ r.fn(r.cv,c,w,h,t); }catch(err){
+        if(!r.dead){ r.dead=true; console.error('instrument "'+r.id+'" failed:',err); } }
+    }
+    requestAnimationFrame(frame);
+  }
+  bind(); requestAnimationFrame(frame);
 })();
 </script>
 </body>
