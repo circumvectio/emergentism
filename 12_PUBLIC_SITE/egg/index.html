@@ -71,7 +71,7 @@
       <div class="row"><span class="k">E(x) = (log x)²</span><span class="v" id="v-e">0.000</span></div>
       <div class="row"><span class="k">min of E</span><span class="v gold">at x = 1 (the center)</span></div>
       <div class="row"><span class="k">rim poles</span><span class="v">0 &nbsp;·&nbsp; &infin;</span></div>
-      <div class="row"><span class="k">half-twist</span><span class="v" id="v-tw">enacting u &rarr; &minus;u &hellip;</span></div>
+      <div class="row"><span class="k">u + u(1/x) &nbsp;<em>invariant</em></span><span class="v" id="v-tw" style="color:#e8b84b">0.000000</span></div>
 
       <div class="card">
         <h3>What the egg shows</h3>
@@ -96,77 +96,90 @@
   </div>
 </div>
 
+<script src="../assets/js/construct.js"></script>
 <script>
 (function(){
-  var cv=document.getElementById('egg'), ctx=cv.getContext('2d');
-  var DPR=Math.min(window.devicePixelRatio||1,2), S=0;
-  function resize(){ S=cv.clientWidth; cv.width=S*DPR; cv.height=S*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
-  window.addEventListener('resize', resize);
+  var cv=document.getElementById('egg'); if(!cv) return; var ctx=cv.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2), S=0, R=0, c0=0;
   var el=function(id){return document.getElementById(id);};
 
-  function draw(t){
-    var c=S/2, Rd=S*0.40;                      // disk (the egg) center + radius
+  /* ---------- THE CONSTRUCTION (declared, not drawn) -----------------------
+     P is the one free object. Everything else is a consequence:
+       u   = P.x                     the egg coordinate of P
+       x   = (1+u)/(1-u)             the positive real it represents  (Cayley inverse)
+       xi  = 1/x                     its reciprocal
+       ui  = (xi-1)/(xi+1)           the egg coordinate of 1/x, computed INDEPENDENTLY
+       tw  = u + ui                  the half-twist invariant  ->  0, by construction
+     Note ui is NOT set to -u; it is derived from xi on its own. That u+ui vanishes
+     is therefore a RESULT of the construction, not an assumption of the drawing. */
+  var G=Construct.G, C=new Construct.Construction();
+  C.free('O','point',{x:0,y:0});
+  C.free('r','number',1);
+  C.dep('c','circle',['O','r'], G.circle);
+  C.free('P','point',{x:0.42,y:0});                       // free — draggable along the diameter
+  C.dep('u','number',['P'], function(P){ return P.x; });
+  C.dep('x','number',['u'], G.cayleyInv);
+  C.dep('xi','number',['x'], function(x){ return 1/x; });
+  C.dep('ui','number',['xi'], G.cayley);
+  C.dep('Pi','point',['ui'], function(ui){ return {x:ui,y:0}; });
+  C.dep('tw','number',['u','ui'], function(u,ui){ return u+ui; });
+  C.solve();
+
+  function rs(){ S=cv.clientWidth; cv.width=S*DPR; cv.height=S*DPR; ctx.setTransform(DPR,0,0,DPR,0,0);
+    c0=S/2; R=S*0.40; }
+  window.addEventListener('resize', rs);
+  function px(p){ return {x:c0+p.x*R, y:c0-p.y*R}; }
+
+  function draw(){
+    if(!S){ rs(); if(!S) return; }
     ctx.clearRect(0,0,S,S);
-    // iso-E warmth: center (x=1, E=0) is warmest, rim coldest
-    var grd=ctx.createRadialGradient(c,c,2,c,c,Rd);
+    var cc=C.val('c'), O=px(C.val('O')), P=px(C.val('P')), Pi=px(C.val('Pi'));
+    var grd=ctx.createRadialGradient(c0,c0,2,c0,c0,R);
     grd.addColorStop(0,'rgba(232,184,75,0.16)'); grd.addColorStop(1,'rgba(232,184,75,0)');
-    ctx.fillStyle=grd; ctx.beginPath(); ctx.arc(c,c,Rd,0,7); ctx.fill();
-    // rim
+    ctx.fillStyle=grd; ctx.beginPath(); ctx.arc(c0,c0,R,0,7); ctx.fill();
     ctx.strokeStyle='rgba(233,230,223,0.28)'; ctx.lineWidth=1.2;
-    ctx.beginPath(); ctx.arc(c,c,Rd,0,7); ctx.stroke();
-    // real-axis diameter (the image of the positive real line)
-    ctx.strokeStyle='rgba(233,230,223,0.12)'; ctx.beginPath(); ctx.moveTo(c-Rd,c); ctx.lineTo(c+Rd,c); ctx.stroke();
-    // tick images of x = e^k
-    ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.font='11px ui-monospace,monospace'; ctx.textAlign='center';
-    [[0.25,'¼'],[0.5,'½'],[1,'1'],[2,'2'],[4,'4']].forEach(function(p){
-      var uu=(p[0]-1)/(p[0]+1); var px=c+uu*Rd;
-      ctx.fillStyle=(p[0]===1)?'rgba(232,184,75,1)':'rgba(138,133,119,0.7)';
-      ctx.beginPath(); ctx.arc(px,c,(p[0]===1)?4:2,0,7); ctx.fill();
-    });
-    // pole + center labels
-    ctx.font='14px ui-monospace,monospace';
+    ctx.beginPath(); ctx.arc(O.x,O.y,cc.r*R,0,7); ctx.stroke();
+    ctx.strokeStyle='rgba(233,230,223,0.12)'; ctx.beginPath();
+    ctx.moveTo(c0-R,c0); ctx.lineTo(c0+R,c0); ctx.stroke();
+    ctx.font='14px ui-monospace,monospace'; ctx.textAlign='center'; ctx.textBaseline='middle';
     ctx.fillStyle='rgba(233,230,223,0.85)';
-    ctx.fillText('0', c-Rd-14, c+4);
-    ctx.fillText('∞', c+Rd+16, c+5);
-    ctx.fillStyle='var(--gold)'; ctx.fillStyle='rgba(232,184,75,1)';
-    ctx.fillText('1 · finity', c, c+Rd+22);
-    // center dot (1 = the still point)
-    ctx.beginPath(); ctx.arc(c,c,5,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
-    ctx.beginPath(); ctx.arc(c,c,10,0,7); ctx.strokeStyle='rgba(232,184,75,0.35)'; ctx.stroke();
-
-    // the moving point x and its reciprocal, always opposite through center
-    var s=3.0*Math.sin(t*0.55);               // s = log x oscillates in [-3,3]
-    var x=Math.exp(s), u=Math.tanh(s/2);       // u=(x-1)/(x+1)
-    var px=c+u*Rd, py=c;
-    var pxi=c-u*Rd;                            // reciprocal at -u
-    // connecting chord through the center (through 1)
+    ctx.fillText('0', c0-R-14, c0); ctx.fillText('\u221e', c0+R+16, c0);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.fillText('1 \u00b7 finity', c0, c0+R+22);
+    ctx.beginPath(); ctx.arc(O.x,O.y,5,0,7); ctx.fill();
+    ctx.beginPath(); ctx.arc(O.x,O.y,10,0,7); ctx.strokeStyle='rgba(232,184,75,0.35)'; ctx.stroke();
     ctx.strokeStyle='rgba(232,184,75,0.5)'; ctx.lineWidth=1.4;
-    ctx.beginPath(); ctx.moveTo(px,py); ctx.lineTo(pxi,py); ctx.stroke();
-    // x dot (gold), 1/x dot (bone)
-    ctx.beginPath(); ctx.arc(px,py,6,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
-    ctx.beginPath(); ctx.arc(pxi,py,5,0,7); ctx.fillStyle='rgba(233,230,223,0.85)'; ctx.fill();
-    ctx.fillStyle='rgba(232,184,75,1)'; ctx.font='12px ui-monospace,monospace';
-    ctx.fillText('x', px, py-12); ctx.fillStyle='rgba(233,230,223,0.8)'; ctx.fillText('1/x', pxi, py-12);
-
-    // the half-twist: a rotating arc showing inversion = rotation by π
-    var tw=(t*0.5)%(Math.PI*2);
-    ctx.strokeStyle='rgba(224,145,58,0.55)'; ctx.lineWidth=2;
-    ctx.beginPath(); ctx.arc(c,c,Rd*0.62,-tw,-tw+Math.PI,false); ctx.stroke();
-    // arrowhead at the sweeping end
-    var ax=c+Rd*0.62*Math.cos(-tw+Math.PI), ay=c+Rd*0.62*Math.sin(-tw+Math.PI);
-    ctx.beginPath(); ctx.arc(ax,ay,3,0,7); ctx.fillStyle='rgba(224,145,58,0.9)'; ctx.fill();
-
-    // HUD
-    el('v-x').textContent=x.toFixed(3);
-    el('v-xi').textContent=(1/x).toFixed(3);
-    el('v-u').textContent=u.toFixed(3);
-    el('v-e').textContent=(s*s).toFixed(3);
-    var near=Math.abs(((tw)%Math.PI))<0.18;
-    el('v-tw').textContent = near ? '0 ⇄ ∞ swapped · 1 fixed' : 'enacting u → −u …';
+    ctx.beginPath(); ctx.moveTo(P.x,P.y); ctx.lineTo(Pi.x,Pi.y); ctx.stroke();
+    ctx.beginPath(); ctx.arc(Pi.x,Pi.y,5,0,7); ctx.fillStyle='rgba(207,201,186,0.9)'; ctx.fill();
+    ctx.beginPath(); ctx.arc(P.x,P.y,7,0,7); ctx.fillStyle='rgba(232,184,75,1)'; ctx.fill();
+    ctx.strokeStyle='rgba(232,184,75,0.35)'; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.arc(P.x,P.y,12,0,7); ctx.stroke();
+    ctx.font='12px ui-monospace,monospace';
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.fillText('x', P.x, P.y-18);
+    ctx.fillStyle='rgba(207,201,186,0.9)'; ctx.fillText('1/x', Pi.x, Pi.y-16);
+    var x=C.val('x');
+    el('v-x').textContent = x>=100? x.toExponential(1) : x.toFixed(3);
+    el('v-xi').textContent = C.val('xi')<0.01? C.val('xi').toExponential(1) : C.val('xi').toFixed(3);
+    el('v-u').textContent = C.val('u').toFixed(3);
+    var t=el('v-tw'); if(t) t.textContent = C.val('tw').toFixed(6);
   }
-  var t0=performance.now();
-  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
-  resize(); requestAnimationFrame(frame);
+
+  /* drag the free object; the kernel re-solves the graph */
+  var drag=false;
+  function at(e){ var b=cv.getBoundingClientRect(); return {x:e.clientX-b.left, y:e.clientY-b.top}; }
+  cv.style.touchAction='none'; cv.style.cursor='grab';
+  cv.addEventListener('pointerdown',function(e){ var p=at(e), P=px(C.val('P'));
+    if(Math.hypot(p.x-P.x,p.y-P.y)<28){ drag=true; cv.setPointerCapture(e.pointerId); cv.style.cursor='grabbing'; }});
+  cv.addEventListener('pointermove',function(e){ if(!drag) return; var p=at(e);
+    var u=Math.max(-0.97, Math.min(0.97, (p.x-c0)/R));
+    C.set('P',{x:u,y:0}); draw(); });
+  cv.addEventListener('pointerup',function(){ drag=false; cv.style.cursor='grab'; });
+
+  var t0=null, touched=false;
+  cv.addEventListener('pointerdown',function(){ touched=true; });
+  function frame(now){ if(t0===null)t0=now; var t=(now-t0)/1000;
+    if(!touched && !drag){ C.set('P',{x:0.80*Math.sin(t*0.5), y:0}); }
+    draw(); requestAnimationFrame(frame); }
+  rs(); requestAnimationFrame(frame);
 })();
 </script>
 </body>
