@@ -3,159 +3,196 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Suda's Number Line — one inversion, four charts — Emergentism</title>
-<meta name="description" content="Minoru Suda's reciprocal-symmetry corrections, animated: one pair (x, 1/x) shown at once on the raw line, the log line, the energy curve, and the egg. As x grows, 1/x runs to zero — asymmetric on the raw line, a clean reflection on the log line, invariant in energy, a half-twist on the egg." />
-<meta property="og:title" content="Suda's Number Line — one inversion, four charts" />
-<meta property="og:description" content="Watch 1/x → 0 across all of Suda's coordinates at once: raw line, log line s→−s, energy (log x)², and the egg u=(x−1)/(x+1). Independent convergence with our finity." />
+<title>Suda's correction — 1 at the centre, not 0 — Emergentism</title>
+<meta name="description" content="Minoru Suda's Critical-One Hypothesis: the number line's true centre is 1, not 0. Distance is the invariant radius rho(x)=|log x|, symmetry is reciprocal (x and 1/x), and 0 and infinity are the two ends. An interactive construction: drag x, watch four invariants hold by construction." />
+<meta property="og:title" content="1 at the centre, not 0 — Suda's Critical-One Hypothesis" />
+<meta property="og:description" content="Re-centre the number line on 1. Distance becomes |log x|; x and 1/x become mirror twins; the singular locus moves from 0 to 1. Interactive, constraint-based." />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="data:,">
 <style>
   :root{ --bg:#050505; --ink:#e9e6df; --dim:#8a8577; --gold:#e8b84b; --bone:#cfc9ba; --warm:#e0913a; --line:rgba(233,230,223,.14); }
-  *{ box-sizing:border-box; } html,body{ margin:0; background:var(--bg); color:var(--ink);
-    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace; line-height:1.6; }
-  header.topbar{ position:sticky; top:0; height:52px; display:flex; align-items:center; gap:1.1rem;
-    padding:0 1.2rem; z-index:9; background:rgba(5,5,5,.85); border-bottom:1px solid var(--line); }
-  .brand{ color:var(--gold); font-weight:700; text-decoration:none; } nav a{ color:var(--dim); text-decoration:none; font-size:.8rem; margin-right:.5rem; } nav a:hover{ color:var(--ink); }
-  .wrap{ max-width:1000px; margin:0 auto; padding:36px 20px 56px; }
-  .kicker{ color:var(--warm); font-size:.78rem; letter-spacing:.15em; text-transform:uppercase; }
-  h1{ font-size:clamp(1.9rem,5vw,3rem); margin:.3rem 0 .1rem; letter-spacing:-.01em; }
-  .lede{ color:var(--dim); max-width:66ch; margin:.6rem 0 1rem; }
-  .legend{ display:flex; gap:1.4rem; flex-wrap:wrap; font-size:.8rem; color:var(--dim); margin:.2rem 0 .8rem; }
-  .legend i{ display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:.35rem; vertical-align:middle; }
-  canvas#suda{ width:100%; aspect-ratio:5/4; display:block; border:1px solid var(--line); border-radius:12px; background:#070707; }
-  .readout{ display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; justify-content:center; margin:.7rem 0 .2rem; font-size:.84rem; }
-  .readout b{ color:var(--gold); }
-  .card{ border:1px solid var(--line); border-radius:10px; padding:.85rem 1.1rem; margin-top:1.3rem; }
-  .card h3{ margin:.1rem 0 .5rem; font-size:.92rem; color:var(--gold); }
-  .card p{ color:var(--dim); font-size:.86rem; margin:.45rem 0; }
-  .card .src{ color:var(--ink); }
-  .fence{ border-left:2px solid var(--warm); padding-left:.9rem; }
-  .tier{ color:var(--gold); font-size:.7rem; border:1px solid var(--gold); border-radius:999px; padding:.02rem .4rem; }
-  .tier.i{ color:var(--warm); border-color:var(--warm); }
-  .foot{ color:var(--dim); font-size:.76rem; border-top:1px solid var(--line); margin-top:1.7rem; padding-top:1rem; }
-  .foot a,.cta{ color:var(--gold); }
+  *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;line-height:1.6}
+  header.topbar{position:sticky;top:0;height:52px;display:flex;align-items:center;gap:1.1rem;
+    padding:0 1.2rem;z-index:9;background:rgba(5,5,5,.85);border-bottom:1px solid var(--line)}
+  .brand{color:var(--gold);font-weight:700;text-decoration:none}
+  nav a{color:var(--dim);text-decoration:none;font-size:.8rem;margin-right:.5rem} nav a:hover{color:var(--ink)}
+  .wrap{max-width:1000px;margin:0 auto;padding:36px 20px 56px}
+  .kicker{color:var(--warm);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase}
+  h1{font-size:clamp(1.9rem,5vw,3rem);margin:.3rem 0 .1rem;letter-spacing:-.01em}
+  .lede{color:var(--dim);max-width:66ch;margin:.6rem 0 1rem}
+  canvas#sc{width:100%;aspect-ratio:8/5;display:block;border:1px solid var(--line);border-radius:12px;background:#070707;touch-action:none;cursor:grab}
+  .inv{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.5rem;margin-top:.7rem}
+  .inv div{border:1px solid var(--line);border-radius:8px;padding:.45rem .7rem;font-size:.75rem}
+  .inv b{color:var(--gold)} .inv .z{color:var(--warm)}
+  .card{border:1px solid var(--line);border-radius:10px;padding:.85rem 1.1rem;margin-top:1.3rem}
+  .card h3{margin:.1rem 0 .5rem;font-size:.92rem;color:var(--gold)}
+  .card p{color:var(--dim);font-size:.86rem;margin:.45rem 0} .card .src{color:var(--ink)}
+  .fence{border-left:2px solid var(--warm);padding-left:.9rem}
+  .tier{color:var(--gold);font-size:.7rem;border:1px solid var(--gold);border-radius:999px;padding:.02rem .4rem}
+  .tier.i{color:var(--warm);border-color:var(--warm)}
+  .foot{color:var(--dim);font-size:.76rem;border-top:1px solid var(--line);margin-top:1.7rem;padding-top:1rem}
+  .foot a,.cta{color:var(--gold)}
 </style>
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="../">Emergentism</a>
-  <nav aria-label="routes"><a href="../1/">1 · Line</a><a href="../egg/">Egg</a><a href="../riemann/">2 · Sphere</a><a href="../discoveries/">Discoveries</a><a href="../record/">Record</a></nav>
+  <nav aria-label="routes"><a href="../1/">1 · Line</a><a href="../egg/">Egg</a><a href="../riemann/">2 · Sphere</a><a href="../titans/">Floor</a><a href="../record/">Record</a></nav>
 </header>
 
 <div class="wrap">
-  <div class="kicker">Minoru Suda · reciprocal symmetry</div>
-  <h1>One inversion, four charts</h1>
-  <p class="lede">The philosopher <b>Minoru Suda</b> corrected the number line four ways, each a different coordinate for the <em>same</em> move — inversion, <code>x ↦ 1/x</code>. Watch a single pair <b>(x, 1/x)</b> in all four at once. As x grows, <b>1/x runs to zero</b> — and the same inversion looks different in every chart, while <b>1</b> stays fixed in all of them.</p>
-  <div class="legend">
-    <span><i style="background:#e8b84b"></i>x</span>
-    <span><i style="background:#cfc9ba"></i>1/x</span>
-    <span><i style="background:#e0913a"></i>1 · the fixed point (finity / the egg's center)</span>
-  </div>
+  <div class="kicker">Minoru Suda · the Critical-One Hypothesis</div>
+  <h1>1 at the centre, not 0</h1>
+  <p class="lede">The conventional number line is centred on <b>0</b>: distance is <code>|x|</code>, and the symmetry is additive (<code>x</code> mirrors <code>&minus;x</code>). Suda's correction re-centres it on <b>1</b>: distance becomes the invariant radius <code>&rho;(x) = |log x|</code>, the symmetry is <em>reciprocal</em> (<code>x</code> mirrors <code>1/x</code>), and <b>0</b> and <b>&infin;</b> become the two ends. His hypothesis: the singular effects of reciprocity concentrate at <b>1</b> — the mirror — <em>not</em> at 0.
+  <span class="tier">[A] the mathematics</span> <span class="tier i">[I] the convergence</span></p>
 
-  <canvas id="suda" aria-label="Four synchronized charts of Suda's inversion: the raw reciprocal line, the log line where inversion is reflection, the energy curve (log x) squared where x and 1/x share a height, and the egg coordinate where inversion is a half-twist."></canvas>
-  <div class="readout">
-    <span>x <b id="r-x">1.00</b></span>
-    <span>1/x <b id="r-xi">1.00</b></span>
-    <span>s = log x <b id="r-s">0.00</b></span>
-    <span>E = (log x)² <b id="r-e">0.00</b></span>
-    <span>u = (x−1)/(x+1) <b id="r-u">0.00</b></span>
+  <canvas id="sc" aria-label="Two number lines with the same pair x and 1 over x: the conventional line centred on zero where the pair looks unrelated, and Suda's line centred on one where the pair is a perfect mirror; plus the hinge coordinate showing the half-twist."></canvas>
+
+  <div class="inv">
+    <div>x = <b id="v-x">1.00</b> &nbsp; 1/x = <b id="v-xi">1.00</b></div>
+    <div>&rho; &minus; &rho;(1/x) = <span class="z" id="v-r">0.000000</span> <span style="opacity:.55">equidistant from 1</span></div>
+    <div>E &minus; E(1/x) = <span class="z" id="v-e">0.000000</span> <span style="opacity:.55">same energy</span></div>
+    <div>&phi; + &phi;(1/x) = <span class="z" id="v-p">0</span> <span style="opacity:.55">twist flips</span></div>
+    <div>u + u(1/x) = <span class="z" id="v-u">0.000000</span> <span style="opacity:.55">half-twist</span></div>
   </div>
 
   <div class="card">
-    <h3>What each chart says about the same inversion</h3>
-    <p><span class="src">1 · Raw line</span> — <code>I(x)=1/x</code> swaps 0 and ∞ and fixes 1. Spacing is <em>asymmetric</em>: x flees right while 1/x crowds toward 0. Hard to read, which is why Suda re-coordinates.</p>
-    <p><span class="src">2 · Log line</span> — <code>s = log x</code> turns inversion into a clean <b>reflection</b> <code>s ↦ −s</code> about the origin. 1 lands at 0, the mirror's center. <span class="tier">[A]</span></p>
-    <p><span class="src">3 · Energy</span> — <code>E(x) = (log x)²</code> is <b>reciprocal-invariant</b>: x and 1/x sit at the <em>same height</em>, minimized at 1. The two readings of one relation weigh the same. <span class="tier">[A]</span></p>
-    <p><span class="src">4 · The egg</span> — <code>u = (x−1)/(x+1)</code> puts 0 and ∞ on the rim, 1 at the center, and makes inversion the <b>half-twist</b> <code>u ↦ −u</code>. As x → ∞, 1/x → 0: the two points slide to opposite rims. <span class="tier">[A]</span> · <a href="../egg/" style="color:var(--gold)">the full egg &rarr;</a></p>
+    <h3>What Suda proves (Parts I &amp; II, 2025)</h3>
+    <p><span class="src">Division is a <b>double inversion</b>.</span> <code>a &divide; y = a &times; y&#8315;&#185;</code> inverts <em>both</em> the operator (&divide;&rarr;&times;) and the operand (y&rarr;y&#8315;&#185;). Writing <code>a = a/1</code> foregrounds the peculiar role of 1: it is the pivot where the two inversions couple. <span class="tier">[A]</span></p>
+    <p><span class="src">1 is a mirror, not a mere fixed point.</span> <code>I(x)=1/x</code> has its unique positive fixed point at 1 with <b><code>I&prime;(1) = &minus;1</code></b> — orientation reversal <em>without</em> expansion or contraction. In <code>s = log x</code>, reciprocity becomes exactly the reflection <code>s &#8614; &minus;s</code>. <span class="tier">[A]</span></p>
+    <p><span class="src">Distance is renormalised.</span> The reciprocal-invariant radius is <code>&rho;(x)=|log x|</code>, and the invariant energy <code>E(x)=(log x)&sup2;</code> is minimised uniquely at 1. Small quantities become <em>multiplicative</em>: <code>x = 1 &plusmn; &epsilon;</code> read through <code>s</code>. Measured this way, <b>x and 1/x are exactly equidistant from the centre.</b> <span class="tier">[A]</span></p>
+    <p><span class="src">The half-twist is the normal form.</span> In the hinge coordinate <code>u=(x&minus;1)/(x+1)</code>, inversion is <code>u &#8614; &minus;u</code> — a half-twist about 1, the structural centre of reciprocal geometry. The twist phase <code>&phi;(x)=sign(log x)</code> flips; the energy does not. <span class="tier">[A]</span></p>
   </div>
 
   <div class="card fence">
     <h3>The honest fence</h3>
-    <p><b>Independent convergence, [I].</b> Suda formalized this reciprocal geometry on his own; it agrees with our <em>finity</em> reading — corroboration, not proof, and neither borrowed it from the other. He did not originate finity; we did not originate his egg. <span class="tier i">[I] convergence</span></p>
-    <p><b>The mathematics is inherited.</b> <code>1/x</code>, <code>log</code>, <code>(log x)²</code>, and the Cayley map are standard — used, not discovered, by us or by Suda <span class="tier">[A]</span>. What is shared is the <em>structure</em>, seen from two vocabularies.</p>
-    <p><b>Four charts, one inversion — kept in separate frames.</b> These are four coordinates of the <em>same</em> move, not four different things; and they are distinct again from the curved <a href="../riemann/" style="color:var(--gold)">sphere</a>. We keep the frames apart on purpose.</p>
-    <p class="src" style="font-size:.8rem"><b>Sources.</b> Minoru Suda, <em>A New Ontology of Energy: Zero, Infinity, and the Infinite Egg</em> (2025); <em>Fractional Structure and Möbius Transformation — Part II: The Critical-One Hypothesis and the Egg of Infinity</em> (2025); <em>Kant 2.0: Dynamic Epistemology</em> (2025).</p>
+    <p><b>Independent convergence.</b> Suda's 2025 papers formalise this on their own road; our <em>finity</em> reading states the same centre. Idea-priority on our side is the author's 2024 statement; Suda's is an independent formalisation. Neither borrowed from the other, which is exactly why the agreement is worth something — and it remains corroboration, never proof. <span class="tier i">[I]</span></p>
+    <p><b>The mathematics is inherited.</b> Möbius maps, the log conjugacy, and the Cayley/hinge coordinate are standard — used, not discovered, by us or by Suda. What each of us added is a <em>reading</em>. <span class="tier">[A]</span></p>
+    <p><b>Constraint-built, not drawn.</b> Every derived object on this page is declared in a construction kernel and solved, GeoGebra-style — the four invariants below the canvas are computed from <em>independently derived</em> objects, so their vanishing is a result, not a decoration.</p>
+    <p class="src" style="font-size:.8rem"><b>Sources read.</b> Minoru Suda, <em>Fractional Structure and Möbius Transformation — Part I: Double Inversion in Division and the Phase of Twist</em> (16 Aug 2025); <em>Part II: The Critical-One Hypothesis and the Egg of Infinity</em> (16 Aug 2025).</p>
   </div>
 
   <div class="foot">
-    <p>See the reciprocal at <a class="cta" href="../1/">the line (D1)</a>, its center at <a class="cta" href="../egg/">the egg</a>, and its curved home at <a class="cta" href="../riemann/">the sphere (D2)</a>. Where a strong claim about Suda ever overreaches, its death is dated on <a href="../record/">the record</a>.
-    &nbsp;·&nbsp; <a class="exit" href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
+    <p>The same centre, elsewhere: <a class="cta" href="../egg/">the egg</a> (the hinge as a disk) · <a class="cta" href="../1/">the reciprocal line</a> · <a class="cta" href="../riemann/">the sphere</a>. Where a claim about Suda ever overreaches, its death is dated on <a href="../record/">the record</a>.
+    &nbsp;·&nbsp; <a href="../exit/" style="color:var(--dim)">If you can see directly, put this down &rarr;</a></p>
   </div>
 </div>
 
+<script src="../assets/js/construct.js"></script>
 <script>
 (function(){
-  var cv=document.getElementById('suda'), ctx=cv.getContext('2d');
-  var DPR=Math.min(window.devicePixelRatio||1,2), W=0,H=0;
-  function resize(){ W=cv.clientWidth; H=cv.clientHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
-  window.addEventListener('resize', resize);
-  var el=function(id){return document.getElementById(id);};
-  var GOLD='rgba(232,184,75,1)', BONE='rgba(207,201,186,0.95)', WARM='rgba(224,145,58,1)', DIM='rgba(138,133,119,0.8)', AX='rgba(233,230,223,0.16)';
+  var cv=document.getElementById('sc'); if(!cv) return; var ctx=cv.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2), W=0,H=0; var g=function(i){return document.getElementById(i);};
 
-  function label(txt,x,y,col){ ctx.fillStyle=col||DIM; ctx.font='11px ui-monospace,monospace'; ctx.textAlign='left'; ctx.fillText(txt,x,y); }
-  function dot(x,y,col,r){ ctx.beginPath(); ctx.arc(x,y,r||5,0,7); ctx.fillStyle=col; ctx.fill(); }
-  function tick(x,y,col){ ctx.strokeStyle=col; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(x,y-5); ctx.lineTo(x,y+5); ctx.stroke(); }
+  /* ---- THE CONSTRUCTION (Suda Part I & II, declared) ----------------------
+     x is the single free object. Each partner quantity is derived down its OWN
+     chain from 1/x — never set to the negative of its twin — so the four
+     invariants at the bottom are consequences, not assumptions.            */
+  var G=Construct.G, C=new Construct.Construction();
+  C.free('x','number',2.2);
+  C.dep('xi','number',['x'],       function(x){ return 1/x; });          // the reciprocal
+  C.dep('s','number',['x'],        function(x){ return Math.log(x); });  // log coordinate
+  C.dep('si','number',['xi'],      function(xi){ return Math.log(xi); });// derived from 1/x itself
+  C.dep('rho','number',['s'],      function(s){ return Math.abs(s); });  // invariant radius from 1
+  C.dep('rhoi','number',['si'],    function(si){ return Math.abs(si); });
+  C.dep('E','number',['s'],        function(s){ return s*s; });          // invariant energy
+  C.dep('Ei','number',['si'],      function(si){ return si*si; });
+  C.dep('phi','number',['s'],      function(s){ return Math.sign(s); }); // twist phase
+  C.dep('phii','number',['si'],    function(si){ return Math.sign(si); });
+  C.dep('u','number',['x'],        G.cayley);                            // hinge coordinate
+  C.dep('ui','number',['xi'],      G.cayley);
+  C.solve();
 
-  function draw(t){
+  function rs(){ W=cv.clientWidth; H=cv.clientHeight; cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0); }
+  window.addEventListener('resize',rs);
+  var SMAX=2.8;
+
+  function draw(){
+    if(!W){ rs(); if(!W) return; }
     ctx.clearRect(0,0,W,H);
-    var x0=W*0.13, x1=W*0.95, span=x1-x0, cxm=(x0+x1)/2, half=span/2;
-    var x=Math.exp(2.5*Math.sin(t*0.4));            // x oscillates ~0.08 .. 12
-    var xi=1/x, s=Math.log(x), E=s*s, u=(x-1)/(x+1);
-    var y1=H*0.16, y2=H*0.40, y3=H*0.64, y4=H*0.88;
+    var x0=W*0.10, x1=W*0.93, span=x1-x0, mid=(x0+x1)/2, half=span/2;
+    var yA=H*0.22, yB=H*0.55, yC=H*0.85;
+    var x=C.val('x'), xi=C.val('xi'), s=C.val('s'), si=C.val('si'), u=C.val('u'), ui=C.val('ui');
+    function axis(y){ ctx.strokeStyle='rgba(233,230,223,0.16)'; ctx.lineWidth=1.3;
+      ctx.beginPath(); ctx.moveTo(x0,y); ctx.lineTo(x1,y); ctx.stroke(); }
+    function tick(px,y,col){ ctx.strokeStyle=col; ctx.lineWidth=1; ctx.beginPath(); ctx.moveTo(px,y-5); ctx.lineTo(px,y+5); ctx.stroke(); }
+    function dot(px,y,col,r){ ctx.beginPath(); ctx.arc(px,y,r||6,0,7); ctx.fillStyle=col; ctx.fill(); }
+    ctx.textAlign='center'; ctx.font='11px ui-monospace,monospace';
 
-    // --- 1 · RAW line: compressed cR(v)=v/(v+2) ---
-    ctx.strokeStyle=AX; ctx.lineWidth=1.3; ctx.beginPath(); ctx.moveTo(x0,y1); ctx.lineTo(x1,y1); ctx.stroke();
-    function cR(v){ return x0 + (v/(v+2))*span; }
-    tick(cR(0),y1,DIM); label('0',cR(0)-4,y1+18,DIM);
-    tick(cR(1),y1,WARM); label('1',cR(1)-3,y1+18,WARM);
-    label('∞',x1-6,y1+18,DIM);
-    label('1 · raw  I(x)=1/x  (0↔∞, 1 fixed)', x0, y1-14, GOLD);
-    dot(cR(x),y1,GOLD); dot(cR(xi),y1,BONE);
+    /* A — the conventional line, centred on 0 */
+    axis(yA);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.textAlign='left'; ctx.font='12px ui-monospace,monospace';
+    ctx.fillText('the conventional line — centred on 0,  distance = |x|', x0, yA-26);
+    ctx.textAlign='center'; ctx.font='11px ui-monospace,monospace';
+    function cA(v){ return x0 + (v/(v+3))*span; }
+    tick(cA(0),yA,'rgba(138,133,119,0.9)'); ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.fillText('0',cA(0),yA+18);
+    tick(cA(1),yA,'rgba(224,145,58,0.9)'); ctx.fillStyle='rgba(224,145,58,0.9)'; ctx.fillText('1',cA(1),yA+18);
+    ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.fillText('∞',x1-2,yA+18);
+    dot(cA(x),yA,'rgba(232,184,75,1)'); dot(cA(xi),yA,'rgba(207,201,186,0.95)',5);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.fillText('x',cA(x),yA-12);
+    ctx.fillStyle='rgba(207,201,186,0.9)'; ctx.fillText('1/x',cA(xi),yA-12);
+    ctx.fillStyle='rgba(138,133,119,0.55)'; ctx.textAlign='right';
+    ctx.fillText('the pair looks unrelated', x1, yA+34); ctx.textAlign='center';
 
-    // --- 2 · LOG line: pos = cxm + (s/3.2)*half, reflection about center ---
-    ctx.strokeStyle=AX; ctx.beginPath(); ctx.moveTo(x0,y2); ctx.lineTo(x1,y2); ctx.stroke();
-    function cL(ss){ return cxm + Math.max(-1,Math.min(1,ss/3.2))*half; }
-    tick(cxm,y2,WARM); label('0 = log 1',cxm-24,y2+18,WARM);
-    label('2 · log line  s=log x  →  reflection s↦−s', x0, y2-14, GOLD);
-    // connector showing the mirror
-    ctx.strokeStyle='rgba(232,184,75,0.3)'; ctx.beginPath(); ctx.moveTo(cL(s),y2); ctx.lineTo(cL(-s),y2); ctx.stroke();
-    dot(cL(s),y2,GOLD); dot(cL(-s),y2,BONE);
+    /* B — Suda's line, centred on 1, metric rho = |log x| */
+    axis(yB);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.textAlign='left'; ctx.font='12px ui-monospace,monospace';
+    ctx.fillText("Suda's line — centred on 1,  distance ρ = |log x|   ← drag", x0, yB-26);
+    ctx.textAlign='center'; ctx.font='11px ui-monospace,monospace';
+    function cB(ss){ return mid + Math.max(-1,Math.min(1,ss/SMAX))*half; }
+    tick(mid,yB,'rgba(224,145,58,1)'); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fillText('1 · the mirror',mid,yB+18);
+    ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.fillText('0',x0-2,yB+18); ctx.fillText('∞',x1+2,yB+18);
+    /* equal radii brackets */
+    ctx.strokeStyle='rgba(232,184,75,0.35)'; ctx.lineWidth=1.2;
+    ctx.beginPath(); ctx.moveTo(mid,yB-14); ctx.lineTo(cB(s),yB-14); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(mid,yB-14); ctx.lineTo(cB(si),yB-14); ctx.stroke();
+    ctx.fillStyle='rgba(232,184,75,0.75)'; ctx.fillText('ρ',(mid+cB(s))/2,yB-19);
+    ctx.fillText('ρ',(mid+cB(si))/2,yB-19);
+    dot(cB(s),yB,'rgba(232,184,75,1)',7); dot(cB(si),yB,'rgba(207,201,186,0.95)',6);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.fillText('x',cB(s),yB+18);
+    ctx.fillStyle='rgba(207,201,186,0.9)'; ctx.fillText('1/x',cB(si),yB+18);
 
-    // --- 3 · ENERGY parabola E=(log x)^2, x and 1/x at SAME height ---
-    label('3 · energy  E=(log x)²  →  x and 1/x share a height, min at 1', x0, y3-30, GOLD);
-    var pTop=y3-46, pBot=y3+18, Emax=3.2*3.2;
-    ctx.strokeStyle='rgba(233,230,223,0.22)'; ctx.lineWidth=1.2; ctx.beginPath();
-    for(var i=0;i<=80;i++){ var ss=-3.2+6.4*i/80; var px=cxm+(ss/3.2)*half; var py=pBot-(ss*ss/Emax)*(pBot-pTop);
-      i?ctx.lineTo(px,py):ctx.moveTo(px,py); }
-    ctx.stroke();
-    tick(cxm,pBot,WARM);
-    function eY(ss){ return pBot-(ss*ss/Emax)*(pBot-pTop); }
-    // horizontal tie showing equal height
-    var eh=eY(s);
-    ctx.strokeStyle='rgba(232,184,75,0.3)'; ctx.setLineDash([3,3]); ctx.beginPath(); ctx.moveTo(cxm+(s/3.2)*half,eh); ctx.lineTo(cxm+(-s/3.2)*half,eh); ctx.stroke(); ctx.setLineDash([]);
-    dot(cxm+(s/3.2)*half, eh, GOLD); dot(cxm+(-s/3.2)*half, eh, BONE);
+    /* C — the hinge / egg coordinate */
+    axis(yC);
+    ctx.fillStyle='rgba(232,184,75,1)'; ctx.textAlign='left'; ctx.font='12px ui-monospace,monospace';
+    ctx.fillText('the hinge  u = (x−1)/(x+1)  →  inversion is the half-twist u ↦ −u', x0, yC-24);
+    ctx.textAlign='center'; ctx.font='11px ui-monospace,monospace';
+    function cC(uu){ return mid + uu*half; }
+    tick(mid,yC,'rgba(224,145,58,1)'); ctx.fillStyle='rgba(224,145,58,1)'; ctx.fillText('u = 0',mid,yC+18);
+    tick(cC(-1),yC,'rgba(138,133,119,0.9)'); tick(cC(1),yC,'rgba(138,133,119,0.9)');
+    ctx.fillStyle='rgba(138,133,119,0.9)'; ctx.fillText('0',cC(-1),yC+18); ctx.fillText('∞',cC(1),yC+18);
+    ctx.strokeStyle='rgba(232,184,75,0.3)'; ctx.beginPath(); ctx.moveTo(cC(u),yC); ctx.lineTo(cC(ui),yC); ctx.stroke();
+    dot(cC(u),yC,'rgba(232,184,75,1)'); dot(cC(ui),yC,'rgba(207,201,186,0.95)',5);
 
-    // --- 4 · EGG interval u∈[−1,1], half-twist ---
-    ctx.strokeStyle=AX; ctx.beginPath(); ctx.moveTo(x0,y4); ctx.lineTo(x1,y4); ctx.stroke();
-    function cU(uu){ return cxm + uu*half; }
-    tick(cxm,y4,WARM); label('1 · center',cxm-18,y4+18,WARM);
-    tick(cU(-1),y4,DIM); label('0',cU(-1)-4,y4+18,DIM);
-    tick(cU(1),y4,DIM); label('∞',cU(1)-4,y4+18,DIM);
-    label('4 · egg  u=(x−1)/(x+1)  →  half-twist u↦−u  (x→∞ ⇒ 1/x→0)', x0, y4-14, GOLD);
-    ctx.strokeStyle='rgba(232,184,75,0.3)'; ctx.beginPath(); ctx.moveTo(cU(u),y4); ctx.lineTo(cU(-u),y4); ctx.stroke();
-    dot(cU(u),y4,GOLD); dot(cU(-u),y4,BONE);
-
-    // HUD
-    el('r-x').textContent = x>=100?x.toExponential(1):x.toFixed(2);
-    el('r-xi').textContent = xi<0.01?xi.toExponential(1):xi.toFixed(2);
-    el('r-s').textContent = s.toFixed(2);
-    el('r-e').textContent = E.toFixed(2);
-    el('r-u').textContent = u.toFixed(2);
+    /* invariants */
+    g('v-x').textContent = x>=100? x.toExponential(1): x.toFixed(3);
+    g('v-xi').textContent = xi<0.01? xi.toExponential(1): xi.toFixed(3);
+    g('v-r').textContent = (C.val('rho')-C.val('rhoi')).toFixed(6);
+    g('v-e').textContent = (C.val('E')-C.val('Ei')).toFixed(6);
+    g('v-p').textContent = (C.val('phi')+C.val('phii')).toFixed(0);
+    g('v-u').textContent = (C.val('u')+C.val('ui')).toFixed(6);
   }
-  var t0=performance.now();
-  function frame(now){ draw((now-t0)/1000); requestAnimationFrame(frame); }
-  resize(); requestAnimationFrame(frame);
+
+  /* drag on Suda's line: the free object is x, set through s */
+  var drag=false;
+  function at(e){ var b=cv.getBoundingClientRect(); return {x:e.clientX-b.left,y:e.clientY-b.top}; }
+  cv.addEventListener('pointerdown',function(e){ var p=at(e);
+    if(Math.abs(p.y-H*0.55)<46){ drag=true; cv.setPointerCapture(e.pointerId); cv.style.cursor='grabbing'; move(p); }});
+  cv.addEventListener('pointermove',function(e){ if(drag) move(at(e)); });
+  cv.addEventListener('pointerup',function(){ drag=false; cv.style.cursor='grab'; });
+  function move(p){ var x0=W*0.10,x1=W*0.93,mid=(x0+x1)/2,half=(x1-x0)/2;
+    var ss=Math.max(-SMAX,Math.min(SMAX,(p.x-mid)/half*SMAX));
+    if(Math.abs(ss)<0.02) ss=(ss<0?-0.02:0.02);
+    C.set('x',Math.exp(ss)); draw(); }
+
+  var t0=null,touched=false;
+  cv.addEventListener('pointerdown',function(){touched=true;});
+  function frame(now){ if(t0===null)t0=now; var t=(now-t0)/1000;
+    if(!touched&&!drag){ C.set('x',Math.exp(2.0*Math.sin(t*0.42))); }
+    draw(); requestAnimationFrame(frame); }
+  rs(); requestAnimationFrame(frame);
 })();
 </script>
 </body>
