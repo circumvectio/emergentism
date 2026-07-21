@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 737,
+  "entry_count": 740,
   "entries": [
     {
       "path": ".",
@@ -506,7 +506,7 @@
       "owns": "08_FRAMEWORK_SUPPORT — translation and stress tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 233,
+      "tracked_file_count": 224,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -568,10 +568,10 @@
       "type": "lane",
       "nearest_front_door": "08_FRAMEWORK_SUPPORT/02_OPERATORS/README.md",
       "front_door_requirement": "present",
-      "owns": "This folder contains the operator grammar, canonical operator corpus, and higher-order operator extensions.",
+      "owns": "02 Operators — bounded symbolic and audit grammar",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 44,
+      "tracked_file_count": 35,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7136,7 +7136,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1048,
+      "tracked_file_count": 1057,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7969,6 +7969,45 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 4,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_asi_operator_application_boundary",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 9,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_asi_operator_application_boundary/08_FRAMEWORK_SUPPORT",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 9,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_asi_operator_application_boundary/08_FRAMEWORK_SUPPORT/02_OPERATORS",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 9,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

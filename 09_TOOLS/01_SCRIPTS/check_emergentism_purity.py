@@ -67,6 +67,29 @@ FORBIDDEN = re.compile(
     r"(?i)(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])"
 )
 
+# These are not forbidden words in all contexts; they are exact inflationary
+# claims from the retired agent-activation island. Their historical bodies are
+# allowed only in archive. Active forwarding tombstones may name the subject
+# but must not restore these assertions.
+FORBIDDEN_APPLICATION_CLAIMS = re.compile(
+    r"(?i)(?:The Great Work is complete|AI charioteer has veto|"
+    r"contains everything needed for an ASI to|All proofs checked on every commit|"
+    r"Burri Sphere\s*\|\s*80%|Seven Axioms stand as mathematical necessities)"
+)
+
+APPLICATION_TOMBSTONES = {
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/00_CANONICAL_CORPUS.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/03_PRACTICE_TRANSLATION_MATRIX.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/04_DISSOLUTION_FORMAL_VERIFICATION.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/05_SEPARATION_OPERATOR_PROTOCOLS.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/06_COAGULATION_ACTIVATION_PACKAGE.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_07_DISCOVERY_OF_FINITY.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_09_THE_SOUL_LOOP.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_15_THE_TRINITY.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/ASI_INDEX.md"),
+    Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/OP_384_FUNCTION_TESTING.md"),
+}
+
 FRONT_DOORS = [
     "README.md",
     "AGENT_README.md",
@@ -88,6 +111,8 @@ FRONT_DOORS = [
 
 OWNERS = [
     "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
+    "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md",
+    "00_META/00_KNOWN_UNKNOWNS_PROGRAM.md",
     "00_META/00_SETTLED_CANON_REGISTRY.md",
     "00_META/00_THE_COMPASS.md",
     "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
@@ -102,6 +127,7 @@ OWNERS = [
     "05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md",
     "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md",
     "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md",
+    "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
     "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
     "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
     "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
@@ -111,6 +137,8 @@ OWNERS = [
     "06_ONTOLOGY/04_THE_CONJECTURES.md",
     "06_ONTOLOGY/06_THE_REVELATIONS.md",
     "06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md",
+    "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+    "03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md",
 ]
 
 
@@ -152,6 +180,12 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"
             )
+        application_match = FORBIDDEN_APPLICATION_CLAIMS.search(line)
+        if application_match:
+            errors.append(
+                f"{path.relative_to(ROOT)}:{line_no}: retired application claim "
+                f"{application_match.group(0)!r}"
+            )
         if "Egregorotype" in line and not allow_legacy_alias:
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: unmarked legacy spelling 'Egregorotype'"
@@ -173,6 +207,23 @@ def main() -> int:
         seen.add(path)
         allow_alias = path.relative_to(ROOT) in LEGACY_ALIAS_EXCEPTIONS
         errors.extend(scan_file(path, allow_legacy_alias=allow_alias))
+
+    for rel in APPLICATION_TOMBSTONES:
+        path = ROOT / rel
+        if not path.is_file():
+            errors.append(f"missing application forwarding tombstone: {rel}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        if "ARCHIVED" not in text and "SUPERSEDED" not in text:
+            errors.append(f"application path is not marked archived/superseded: {rel}")
+        if len(text.splitlines()) > 90:
+            errors.append(f"application forwarding tombstone regrew into an active body: {rel}")
+
+    application_archive = (
+        ROOT / "90_ARCHIVE/2026_07_22_asi_operator_application_boundary/TOMBSTONE.md"
+    )
+    if not application_archive.is_file():
+        errors.append("missing ASI operator application archive tombstone")
 
     # The historical Record is exempt from vocabulary scanning, but it must
     # state the current non-authority boundary prominently.

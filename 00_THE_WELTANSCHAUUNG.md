@@ -56,6 +56,12 @@ certificate or a “most good” superlative the world has not tested.
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
 
+The non-authoritative
+[`Grand Puzzle Assembly Ledger`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
+places all of these pieces on one dimension-first surface and gives every open
+world gate a rival, discriminator, kill, and survivor. It closes no empirical
+gate and creates no additional owner.
+
 ---
 
 ## 3 · The standing rules that survive into the final form

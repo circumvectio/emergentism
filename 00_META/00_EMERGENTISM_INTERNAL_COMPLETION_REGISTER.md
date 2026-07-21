@@ -137,3 +137,15 @@ outside active source authority. Consequential action is typed through the
 
 External calibration is deliberately outside “internal completion.” The
 framework remains a compass whose strongest world-facing claims can lose.
+
+## Assembly-packet status
+
+The eleven gates above now have packet-complete research contracts in the
+[`Grand Puzzle Assembly Ledger`](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md): each
+names its current contact, strongest rival, cheapest honest discriminator, kill,
+and survivor. **Packet-complete does not mean evidence-complete.** Every gate
+retains the `open` state above until its named world contact occurs.
+
+The same ledger assembles D0 through D6 and the five apertures without becoming
+a competing owner. Its saturation/contrast seam is formally fenced by
+[`45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md`](../05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md).

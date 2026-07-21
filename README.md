@@ -10,13 +10,14 @@ remain externally uncalibrated until independent contact decides them.
 
 1. [The Weltanschauung](00_THE_WELTANSCHAUUNG.md) — priced creed and front door.
 2. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
-3. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model, and type boundaries.
-4. [Degrees-of-Freedom Ontology](06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md) — the Plato repair and plenitude debt.
-5. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) — the active axiom assembly at per-axiom tiers.
-6. [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the killable wager ledger.
-7. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — five chosen constraints plus one direction.
-8. [The Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — disclosures earned by the audit record.
-9. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — authority, corrections, failures, and receipts.
+3. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the entire ladder, exact pieces, interpretations, wagers, and eleven world-contact sockets.
+4. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model, and type boundaries.
+5. [Degrees-of-Freedom Ontology](06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md) — the Plato repair and plenitude debt.
+6. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) — the active axiom assembly at per-axiom tiers.
+7. [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the killable wager ledger.
+8. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — five chosen constraints plus one direction.
+9. [The Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — disclosures earned by the audit record.
+10. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — authority, corrections, failures, and receipts.
 
 ## The compressed compass
 
@@ -101,5 +102,8 @@ tests. Consequential action uses a complete, scoped, contestable
   presumption of consciousness.
 - The external program—independent discriminators, replications, and world
   receipts—remains open.
+- The Grand Puzzle is assembled as a research packet: every declared open
+  socket has a rival, discriminator, kill, and survivor. Its evidence is not
+  thereby supplied.
 
 •   ⊙   ○ — sovereign frames; no arithmetic or coercion.

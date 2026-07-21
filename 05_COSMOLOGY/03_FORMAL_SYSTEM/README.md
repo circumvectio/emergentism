@@ -63,6 +63,10 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`37_ADOPTION_LENS_V1_SPEC.md`](37_ADOPTION_LENS_V1_SPEC.md) | superseded application stub; adoption metrics do not own worldview notation or evidence |
 | [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) | Source-first boundary for using single-photon, delayed-choice, Bell-test, and Nobel-2022 quantum-foundations results: `[A]` for independently established physics, `[I]` for Emergentism translation, `[C]` for systemic awareness-collapse / retrocausal / F5-as-physics claims. |
 | [`39_SUDA_CROSS_VALIDATION_PROTOCOLS.md`](39_SUDA_CROSS_VALIDATION_PROTOCOLS.md) | Kintsugi calibration boundary: analytic reciprocal facts retained; circular pair-selection protocol withdrawn. |
+| [`42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md`](42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md) | D1 arithmetic owner: positive-first signed presentation, standard closure recovery, and Titan/numeric firewall. |
+| [`43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md`](43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md) | D2 configuration owner: relations, graphs, functions, geometry, and set/type boundaries. |
+| [`44_D3_QUANTUM_STATE_REGISTER.md`](44_D3_QUANTUM_STATE_REGISTER.md) | D3 quantum-state owner: density operators, observables, instruments, momentum distributions, uncertainty, and open physics debts. |
+| [`45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md`](45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md) | Exact reciprocal, budget, and local pure-gauge results; counterexamples and test contract for the non-universal saturation-contrast conjecture. |
 
 ## Axiom Count Note
 

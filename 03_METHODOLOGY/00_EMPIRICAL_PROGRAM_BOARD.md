@@ -1,106 +1,124 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "live empirical test surface; board not substitute for results"
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[A/B/S/I/D/C] mixed by protocol"
-  canonical_phrase: "Empirical Program Board"
+title: "The Empirical Program Board"
+status: "ACTIVE — dimension-first world-contact queue"
+date: 2026-04-14
+updated: 2026-07-22
+evidence_tier: "[B] recorded contacts/results; [S] routing; claims retain owner-declared tiers"
+owner: "03_METHODOLOGY empirical routing; board is not a result"
+parents:
+  - ../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md
+  - ../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md
+  - 00_WHAT_ACTUALLY_TESTS_THE_THEORY.md
+  - 00_CANONICAL_CLAIM_MATRIX.md
+  - 00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md
 ---
 
-**Corpus:** Emergentism
-**L3 test surface; board ≠ results.**
+# The Empirical Program Board
 
-# THE EMPIRICAL PROGRAM BOARD
+## The live queue for contact with the world
 
-## The Live Test Surface For What The Framework Thinks Reality Will Do
+This board records what has contact, what remains open, and what result would
+move each wager. It cannot upgrade a claim. A result document outranks the
+board, a semantic owner outranks its summary, and the evidence-tier authority
+governs both.
 
-**Status:** Active empirical routing surface
-**Date:** 2026-04-14
-**Evidence Tier:** Mixed by protocol; this document is a board, not a substitute for results
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [What Actually Tests the Theory](00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [The Canonical Claim Matrix](00_CANONICAL_CLAIM_MATRIX.md)
-**See also:** [GFS archive tombstone](../90_ARCHIVE/2026_07_13_gfs_retraction/TOMBSTONE.md) (archive provenance only)
+## 1. Status vocabulary
 
----
+| Status | Meaning |
+|---|---|
+| **formal-only** | theorem, countermodel, or simulation inside declared assumptions; no world contact |
+| **component-contact** | an external result touches one part of the local claim but does not test the composite |
+| **local-result** | a custodied run exists but lacks independence, adequate construct validity, or intended-domain contact |
+| **negative** | the named operational bridge weakened or failed |
+| **archived** | no active evidential route; provenance only |
+| **ready-to-freeze** | definitions, rivals, and analysis can be preregistered |
+| **deferred** | a prerequisite is absent or a cheaper discriminator dominates |
 
-## Rule
+Never translate `formal-only` or `local-result` as “confirmed.”
 
-This board tells you what is actually being tested, what the current status is, and what result would move a claim.
+## 2. Active socket board
 
-If this board conflicts with a result document, the result document wins.
+| ID | Claim under test | Current contact | Status | Next milestone | What moves |
+|---|---|---|---|---|---|
+| **GP-01** | relation/configuration adds intervention-sensitive discrimination beyond an element inventory | formal D2 constructions; macro-constraint toy harness is local only | **ready-to-freeze** | choose one real system, freeze element-only and relation-aware rivals, intervention, outcome, and held-out split | `mu_1` local evidence only |
+| **GP-02** | a distinct counterfactual-capacity variable adds value beyond rich D4 planning/control | future-model experiments touch the weak component | **component-contact** | define D5 variable independently; compare with model-based, model-free, memory, and search baselines | `mu_4` local evidence only |
+| **GP-03** | normalized product out-predicts rival AND/additive aggregators in at least one frozen domain | non-uniqueness and ranking counterexamples are formal | **ready-to-freeze** | freeze finite domain set, independent `Phi/V` measures, rivals, and held-out outcomes | W3/W4 only in the tested domain |
+| **GP-04** | foresight and usable means follow a measurable resource surface | physical information cost is a neighbor; no validated node budget | **ready-to-freeze** | compare no-tradeoff, additive, nonlinear, and state-dependent surfaces | W4 complementary-saturation sub-wager |
+| **GP-05** | exactly five candidate apertures capture independently discriminable freedoms | no crossing-specific empirical packet has fired | **formal-only** | run one seam at a time; no joint score before each row has novelty and recovery tests | one crossing at a time, then the census |
+| **GP-06** | the five-marker Egregoreotype composite predicts beyond carriers and incentives | trace-mediated coordination has external component contact | **component-contact** | carrier replacement plus trace removal/scrambling with costs recorded | W9 composite only |
+| **GP-07** | represented future content changes present selection beyond salience/framing controls | episodic-future cues changed delay discounting in published work | **component-contact** | preregister content-specific manipulation and matched salience, demand, reward, memory, and expectancy controls | W8 weak causal content |
+| **GP-08** | ontic plurality of complete histories has an observation distinct from epistemic support | no local discriminator | **deferred** | produce an interpretation-sensitive observation or publish non-identifiability | strong block-plurality correspondence only |
+| **GP-09** | history-bundle growth varies independently of Minkowski causal volume and model resolution | no independent metric | **deferred** | define and validate history entropy before comparing it with cone geometry | light-cone/history-bundle correspondence only |
+| **GP-10** | force/freedom rows are mechanistic and non-permutable | native theories bound every row; no leg calibrated | **deferred** | one native object map and accepted-domain recovery test per row, then permutation challenge | W7a–W7e independently |
+| **GP-11** | integrated grammar adds novel prediction and consequence value beyond plural native sciences | internal coherence and neighbor map only | **deferred** | one novel frozen discriminator, external red team, independent replication, and null route | integrated adequacy, not component truths |
 
-If this board conflicts with `00_THE_HONEST_POSITION.md`, the Honest Position wins.
+## 3. Legacy program disposition
 
----
+The older program names remain discoverable, but none competes with the socket
+board.
 
-## Current Board
+| Legacy program | Recorded state | Current route |
+|---|---|---|
+| **GFS Wave 1** | validity failures; retracted and archived | no continuation; provenance under [`90_ARCHIVE/2026_07_13_gfs_retraction/`](../90_ARCHIVE/2026_07_13_gfs_retraction/) |
+| **Protocol D** | framework-designed simulation | local formal/result custody only; may inform GP-03 or Power-Max work after a new freeze |
+| **Agent `V*Phi`** | framework-designed simulation | local formal/result custody only; does not validate `Phi`, `V`, or the product in the world |
+| **SPHERE Probe** | negative/informative first operational bridge | retain as negative; no ontology upgrade |
+| **Phi-meter** | prototype, not construct-validated | GP-03/GP-04 prerequisite; cannot validate itself by correlation with framework labels |
+| **Protocol R** | designed, not decisive for the ontology | optional perception study; cannot establish `S2` as territory or a mu crossing |
+| **Macro-Constraint Physics-to-Biology harness** | deterministic toy result with negative controls | candidate design input to GP-01; requires a real domain and hidden-cost checks |
+| **AMRITA comparison** | application architecture, unvalidated | application research only; success or failure does not prove the worldview |
+| **Cross-Scale Invariance** | exploratory pattern search | hypothesis generation only until the function, domains, and alternatives are frozen |
+| **Power-Max replication** | formal neighbors and extraction counterexample exist | test the conditional theorem/objective separately from Justice; never promote ethics from performance |
 
-| Program | What it tests | Current status | Tier affected | Current honest verdict | Next milestone | Upgrade / downgrade rule |
-|---|---|---|---|---|---|---|
-| **GFS Wave 1 (historical)** | One survey operationalization of multiplicative flourishing | **RETRACTED / ARCHIVED** | Historical I1/I6/AK1 bridge only | Mixed result plus validity failures; no live evidential bridge | None in this lane | No upgrade path; any successor is a new, independently designed program |
-| **Protocol D** | Whether multiplicative fitness structures generate cooperation in agent simulations | Done (framework-designed) | S15 | Confirmed internally; not independent public evidence yet | independent preregistered replication and paper submission | Upgrades to [A] only via independent replication |
-| **Agent V×Φ** | Whether balance predicts performance ranking in simulated agents | Done (framework-designed) | S16 | Confirmed internally; still structurally tiered | independent replication in non-framework environments | Upgrades to [A] only via independent replication |
-| **SPHERE Probe** | Whether equatorial projection improves coherence in a first public-model lane | Done | bridge confidence, not core math | Negative / informative first run | redesign or replacement probe | A negative here does not kill the framework; it only weakens one operational bridge |
-| **Φ-meter validation** | Whether coherence can be measured in a way that correlates with expert judgment | Built, not validated | AK4, CM15 | Prototype exists; evidence not yet established | validation study against expert panels | Upgrade if correlation is stable and replicated; abandon if correlation fails |
-| **Protocol R** | Whether perception shows a complementarity bound consistent with the geometry claim | Designed, not yet run | I1, AK2, CM11 | The decisive geometry test remains pending | formal lab protocol and first run | Upgrade if bound is observed and replicated; retract perceptual bridge if absent |
-| **Macro-Constraint Physics-to-Biology Boundary** | Whether a membrane, autocatalytic loop, or homeostasis controller behaves as a costed macro-constraint over lower-law chemistry | Toy vesicle harness executed with negative controls; real domain run not yet run | CM8g, CM8h, I20 | `[B]` only for the deterministic toy receipt (`W_C=0.415356`, `SYN_C=0.775347`, `KL=0.141286`) and for the same scoring path rejecting no-gate, high-cost, and forbidden-support controls; no biology upgrade yet | freeze one real candidate system using `03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md` and run the support-subset, perturbability, cost, witness, and negative-control checks | Upgrade the tested domain only if `W_C > 0` or cost-matched held-out/intervention loss improves while the negative controls reject; downgrade if the macro layer only wins by hidden costs, hidden variables, lower-law support violations, or blinding the micro/domain baseline |
-| **AMRITA vs baselines** | Whether spherical alignment beats standard alignment baselines at comparable compute | Specified / reframed | AK3, CM10 | Practical bridge still untested | POC against RLHF-style baselines | Upgrade if it outperforms; abandon architecture if it underperforms |
-| **Cross-Scale Invariance** | Whether the same functional form appears at cellular, organismic, and ecological scales | Open, testable now | I1, life-science bridge | High-value, low-cost missing test | run against existing biological datasets | Upgrade if the same function fits across scales; weaken cross-domain unification if it fails |
-| **Power-Max independent replication** | Whether the cooperation theorem survives external authorship and preregistration | Ready for externalization | S15, S16 | The cleanest public upgrade path for internal simulation results | external team and preregistered run | Upgrade from [S] to [A] if external replication succeeds |
+## 4. Execution priority
 
----
+The active order is inherited from the Known Unknowns Program:
 
-## Priority Order
+1. GP-03 aggregator comparison;
+2. GP-04 resource-surface measurement;
+3. GP-07 controlled future-content effect;
+4. GP-01 relation intervention;
+5. GP-06 Egregoreotype trace intervention;
+6. GP-02 distinct counterfactual capacity;
+7. GP-09 independent history-bundle metric;
+8. GP-05 crossing census;
+9. GP-10 force rows;
+10. GP-08 plurality discriminator or non-identifiability;
+11. GP-11 integrated-worldview test.
 
-If resources are limited, the board should move in this order:
+Priority is methodological, not metaphysical: run the cheapest test that can
+genuinely change a claim before the grandest test that cannot.
 
-1. **Protocol R** — most decisive geometry test
-2. **Macro-Constraint Physics-to-Biology Boundary** — first load-bearing test of information topology without consciousness-language
-3. **Cross-Scale Invariance** — high leverage with existing data
-4. **Power-Max independent replication** — cheapest clean public upgrade
-5. **AMRITA vs baselines** — strongest practical bridge if it works
-6. **Φ-meter validation** — useful instrument, but not the deepest test
-7. **No GFS continuation** — the retired lane remains closed; a successor would require a new protocol, preregistration, custody, and discriminator
+## 5. Result rules
 
----
+- Freeze the claim, measures, rivals, exclusions, and analysis before calling a
+  run confirmatory.
+- Keep formal proof, simulation, local run, independent result, and replication
+  as distinct evidence types.
+- Report negative controls and nulls in the same visibility class as wins.
+- Upgrade only the tested claim in the tested domain.
+- A component-contact result does not validate a conjunction.
+- A successful application does not validate an ontology.
+- A failed wager moves to the Record; its surviving lower-level science remains.
+- No public, product, venture, or governance surface supplies independent
+  worldview evidence merely by using the vocabulary.
 
-## Public-Facing Rules
+## 6. One-sentence verdict
 
-- Do not say a program is confirmed if it is only framework-designed.
-- Do not say a pending protocol is evidence.
-- Do not use a mixed result as if it were a clean confirmation.
-- Do not hide negative or weakening results in summary surfaces.
+> The research questions are now packet-complete, several components have real
+> outside neighbors, no mu crossing or force row is calibrated, and the
+> integrated Weltanschauung remains externally unvalidated.
 
----
+## 7. Routing
 
-## One-Sentence Summary
+- Research constitution:
+  [`00_KNOWN_UNKNOWNS_PROGRAM.md`](../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
+- Complete socket definitions:
+  [`00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
+- External contact matrix:
+  [`00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md`](00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md)
+- Preregistrations and run sheets: [`03_PREREGISTRATIONS/`](03_PREREGISTRATIONS/)
+- Results and deaths:
+  [`00_THE_RECORD_LEDGER.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)
 
-The framework has a real empirical program, but only some parts are confirmed, several parts are mixed or negative, and the strongest geometry tests are still ahead.
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Check the status board before making empirical claims.** Only CONFIRMED findings may be presented as established. MIXED, NEGATIVE, and PENDING findings must be labeled with their actual status.
-2. **Route to the appropriate test.** D1/D2 formal claims go to proof and
-   countermodel; D3 quantum-state claims go to quantum theory and experiment;
-   actual D4 biological, neural, behavioral, institutional, and phenomenological
-   claims go to their established empirical disciplines; claims about represented
-   D5 counterfactual content require interventions that distinguish modeling from
-   reactive policy. D6 supplies no positive empirical object—only a D4-auditable
-   boundary discipline against closure.
-3. **Do not overclaim.** A confirmed D2 construction does not confirm D3, a D3
-   result does not establish the D4/D5 emergence conjectures, and a confirmed
-   game-theory result does not confirm systemic-awareness geometry. Respect the
-   type boundary and the evidence tier.
-4. **Update the board.** If you discover new empirical evidence, add it to the appropriate section with full citation and evidence tier.
-5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`
-
-**Output:** Route empirical questions to the appropriate test domain. Label claims with their actual confirmation status.
+**Canonical path:** `01_EMERGENTISM/03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`

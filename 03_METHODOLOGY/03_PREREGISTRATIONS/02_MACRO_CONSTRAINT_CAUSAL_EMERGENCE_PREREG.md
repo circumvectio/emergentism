@@ -322,7 +322,8 @@ violate lower-level laws; the specific macro-constraint witness can be rewritten
 - [ ] Witness metric fixed: `W_C`, held-out loss, intervention utility, or all.
 - [ ] Kill criteria fixed.
 - [ ] Repository tag `prereg/macro-constraint-causal-emergence-v1` recorded.
-- [ ] Content hash recorded: `[TBD at freeze]`.
+- [ ] Content hash recorded:
+      `NOT FROZEN — no preregistration hash exists as of 2026-07-22`.
 
 No domain result is canonical until this block is frozen.
 

@@ -183,7 +183,8 @@ P-EQ joins that register: it is **designed to die cheaply if wrong**, and its de
 - [ ] Support bar fixed: ≥ 5/7 ladders central-tertile balance peak **and** top-tertile competence peak.
 - [ ] Kill criteria KC-1/KC-2/KC-3 fixed (§6).
 - [ ] Rater pools, ICC ≥ 0.70 floor, analyst-separation, preparer-blinding fixed (§4).
-- [ ] **git tag `prereg/equatorial-balance-v1` + content hash recorded here: `[TBD — record at freeze]`.**
+- [ ] **git tag `prereg/equatorial-balance-v1` + content hash recorded here:**
+      `NOT FROZEN — no tag or preregistration hash exists as of 2026-07-22`.
 
 **No data has been coded. No rater has been recruited. No stage has been scored. This is a design.**
 

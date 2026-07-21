@@ -8,8 +8,8 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — dimension-first purification recorded; external calibration open; historical receipts preserved by full filename"
-date: 2026-07-21
+status: "ACTIVE — Grand Puzzle assembly recorded; eleven external contacts open; historical receipts preserved by full filename"
+date: 2026-07-22
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
@@ -28,6 +28,7 @@ parents:
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/152_THE_PASSAGE_BUILD_2026_07_20.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md
 evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 ---
 
@@ -121,6 +122,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 152 | `152_THE_PASSAGE_BUILD_2026_07_20.md` | Historical local publication build; its public changes and deployment state are not part of the dimension-first purification. |
 | 153 | `153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md` | Historical duplicate-owner wiring receipt; the conflicted per-dimension body is now archived and the DR owner controls. |
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | Dimension-first owners purified and test-closed; state→history→history-field compression recorded; external calibration and public projection remain open. |
+| 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | Grand Puzzle research map assembled; eleven world-contact sockets packet-complete/evidence-open; active ASI application material archived; phantom proof claims tombstoned. |
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -224,6 +226,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 152 | `152_THE_PASSAGE_BUILD_2026_07_20.md` | 2026-07-20 | Historical local Passage build |
 | 153 | `153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md` | 2026-07-20 | Historical axioms-per-dimension wiring/fence receipt |
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | 2026-07-21 | Dimension-first canon purification and internal closure |
+| 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | 2026-07-22 | Grand Puzzle assembly and application-boundary cleanup |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.

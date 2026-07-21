@@ -37,6 +37,10 @@ Categorical internal completion is tracked in
 [`00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md`](00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md).
 Attributed external-neighbor contact, which is not calibration, is recorded in
 [`03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md`](03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md).
+The non-authoritative whole-map assembly—every rung, aperture, exact result,
+interpretation, wager, rival, discriminator, and survivor—is
+[`00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md).
+It is a reading and research route, not an eighth kernel surface.
 
 ## Distillation law
 

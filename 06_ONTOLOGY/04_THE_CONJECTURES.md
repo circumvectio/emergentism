@@ -42,7 +42,9 @@ budget surface such as `Φ+V≤1`; only under that additional premise does
 `Φ=1⇒V=0⇒P_node=0`. This sub-wager dies if foresight costs do not measurably
 reduce usable means, if a different constraint predicts better, or if the
 result is asserted without naming the budget and measurement protocol. It must
-never be inferred from the lowercase analytic identity `φν=1`.
+never be inferred from the lowercase analytic identity `φν=1`. Exact results,
+countermodels, and the reusable `SC-CANDIDATE` packet are fenced in
+[`45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md`](../05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md).
 
 ### W7 modularity and origin custody
 
