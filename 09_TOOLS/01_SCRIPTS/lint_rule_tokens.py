@@ -37,6 +37,8 @@ import subprocess
 import sys
 
 # Paths never linted: archives are provenance (R3), compat stubs are frozen.
+INLINE_CODE = re.compile(r"`[^`\n]*`")
+BARE_PATH = re.compile(r"[\w./-]*[\w-]+\.(?:md|html|py|json|ya?ml)\b")
 EXEMPT_PATH = re.compile(r"(90_ARCHIVE|91_COMPATIBILITY|\.codex-worktrees|node_modules|book-pwa|\.vercel)/")
 
 # Lines that are quoting, aliasing, or explicitly historical.
@@ -98,6 +100,12 @@ def lint_file(path):
             continue
         if EXEMPT_LINE.search(line):
             continue
+        # A filename is not a rule reference. Inline code spans naming caste
+        # reports (`L2.4_CLAIM_VS_EVIDENCE_....md`) or paths carry L/K tokens
+        # as part of an identifier; flagging those asks the author to rename
+        # a file that exists. Blank the spans, keep the offsets stable.
+        line = INLINE_CODE.sub(lambda m: " " * len(m.group(0)), line)
+        line = BARE_PATH.sub(lambda m: " " * len(m.group(0)), line)
         for name, pat, advice in RULES:
             for m in pat.finditer(line):
                 # kernel-surface hyphen form K-1..K-7 never matches bare-K
