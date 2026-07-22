@@ -24,7 +24,7 @@ WHAT IS NOT A FINDING:
   - the citing document is itself a stub, an archive file, or audit machinery
     (a tombstone may freely cite tombstones)
   - the citing line ALREADY discloses the status — it contains one of the dead
-    words, or "was", "formerly", "retired", "grave", "historical", "provenance"
+    words, or "was", "formerly", "retired", "stub", "legacy", "historical", ...
   - the link points into 90_ARCHIVE (archival links are honest by construction)
 
 USAGE
@@ -42,7 +42,8 @@ DEAD_RE = re.compile(
     r"no current semantic authority|not current .{0,24}authority", re.I)
 DISCLOSED_RE = re.compile(
     r"SUPERSEDED|TOMBSTONE|RETRACTED|DISPUTED|DEPRECATED|\bwas\b|formerly|"
-    r"retired|grave|historical|provenance|archived|dead|killed|withdrawn", re.I)
+    r"retired|grave|historical|provenance|archived|dead|killed|withdrawn|"
+    r"\bstubs?\b|no longer|not current|absorbed|legacy", re.I)
 STUB_RE = re.compile(
     r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
 MACHINERY_RE = re.compile(r"AUDIT|RECEIPT|TIDY_PLAN|CENSUS|_LEDGER|HANDOFF|CITATION", re.I)
