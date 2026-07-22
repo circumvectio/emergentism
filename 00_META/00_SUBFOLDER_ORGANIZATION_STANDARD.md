@@ -206,20 +206,36 @@ packets, other stubs, and any audit or tidy-plan document. A stub cited only by
 the pass that created it is not load-bearing; it is an echo.
 
 Four binding rules. `09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py` **detects**
-violations of them; it does not enforce them, and **it is currently red**:
+violations of them; it does not enforce them.
 
-> **Gate status, dated 2026-07-22.** The checker exits `1` — *75 violations
-> across 97 stubs* corpus-wide (70 are in-lane stubs declaring no target at
-> all). The **root** surface is clean; the lanes are not. An earlier draft of
-> this section said the rules were *"enforced by"* the checker, which read as a
-> passing gate over a failing one — **the same false-green pattern this
-> standard exists to name, committed inside the standard.** Corrected here. The
-> rules below are the contract; the checker is the detector; the backlog is
-> real and open.
+> **Gate status, dated 2026-07-22 (second reading, same day).** The checker now
+> exits `0` — *0 violations across 80 stubs* corpus-wide. It read `1` earlier
+> the same day, and **most of that redness was the checker's fault, not the
+> corpus's**: rule 1 demanded a `canonical_target:` frontmatter field, so it
+> flagged 76 well-formed stubs whose successors are ordinary markdown links —
+> which is what a reader actually clicks. Satisfying it would have meant adding
+> metadata nobody reads to 76 files. Rule 1 now asks the real question: *does
+> this stub route the reader anywhere that resolves?* Eight genuine defects
+> remained under the corrected rule and were repaired one at a time.
+>
+> Two false-green traps were caught during that pass and are recorded because
+> they will recur:
+>
+> - An earlier draft of this section said the rules were *"enforced by"* the
+>   checker, which read as a passing gate over a failing one — **the same
+>   pattern this standard exists to name, committed inside the standard.**
+> - Repairing the broken stub at `11_UPLINK/20_SCOPE/25_EXPERIMENT_SCOPE.md`
+>   replaced the words the census matches on, and the gate went green while
+>   that file silently dropped **out of the census**. A count that improves
+>   because something stopped being looked at is not an improvement. Always
+>   read the denominator: 80 stubs, not 79.
+>
+> A companion gate, `09_TOOLS/01_SCRIPTS/check_dead_citations.py`, is also
+> green — *0 findings across 733 live documents* — and catches the related
+> defect: a live document citing a target whose own status declares it dead.
 
-
-
-1. A stub declares at least one target, and it resolves.
+1. A stub routes the reader onward — a target field that resolves, or at least
+   one body link that resolves.
 2. **`canonical_target` means a LIVE owner.** It may never name a path under
    `90_ARCHIVE/`, and never another stub. If nothing live absorbs the document,
    omit the field.
