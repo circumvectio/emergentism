@@ -1,234 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>/2 — D2 Geometry · Emergentism</title>
-<meta name="description" content="D2 Geometry: configuration on a declared reciprocal meridian of S². The seam (≡1) stays distinct from the score (B = sinθ ≤ 1) and the node; existence claims remain typed.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="/2 — D2 Geometry · Emergentism">
-<meta property="og:description" content="Configuration on a declared reciprocal meridian of the sphere.">
-<meta property="og:url" content="https://emergentism.org/2/">
-<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png">
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="../assets/css/xai.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>/2 — Configuration · Emergentism</title>
+<meta name="description" content="D2 owns configuration: inputs and outputs related across a domain, graphs and atlases, and geometric organization. A finite atlas illustrates a family; it is never all mathematical functions at once." />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="../assets/css/xai.css" />
+<link rel="stylesheet" href="../dimensions/dimensions.css" />
 <script type="importmap">
-{ "imports": {
-  "three": "../vendor/three-0.160.0/three.module.js",
-  "three/addons/": "../vendor/three-0.160.0/"
-}}
+{"imports":{"three":"../vendor/three-0.160.0/three.module.js","three/addons/":"../vendor/three-0.160.0/"}}
 </script>
-<!-- pwa-chrome -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
+<style>
+main{max-width:920px;margin:0 auto;padding:110px 22px 72px} .hero{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+.eyebrow,.tier,.source{font:700 .74rem/1.6 var(--font-mono);color:var(--gold)} h1{font-size:clamp(2.5rem,7vw,5.8rem);line-height:.98;margin:.6rem 0 1.2rem}
+.lede{font-size:1.15rem;color:var(--text-muted);max-width:68ch} .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin:2rem 0}
+.grid article{background:var(--surface);padding:1.35rem} .grid p{color:var(--text-muted)} .diagram{min-height:300px;display:grid;place-items:center;border:1px solid var(--border);margin:2rem 0;overflow:hidden}
+.dimension-canvas{width:100%;height:320px} .transition{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}
+dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)} dt,dd{margin:0;padding:.8rem;border-bottom:1px solid var(--border)} dt{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)} dd{color:var(--text-muted)}
+.next{display:inline-block;margin-top:1rem;color:var(--gold)} .pager{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem} code{overflow-wrap:anywhere}
+@media(max-width:700px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{padding-bottom:.2rem}dd{padding-top:.2rem}}
+</style>
 </head>
 <body>
-<!-- funnel-order: 2 of 6 -->
-<a class="ladder-return" href="../discoveries/" style="display:block;text-align:center;padding:.5rem 1rem;font-size:.76rem;letter-spacing:.05em;font-family:inherit;background:var(--surface,#0a0a0a);color:var(--accent,#FFEB3B);border-bottom:1px solid var(--border,#2a2a2a);text-decoration:none">You are on the deep ladder — back to the Discoveries →</a>
-
-<div class="site-shell">
-  <header class="topbar">
-    <a class="brand" href="../">Emergentism</a>
-    <nav class="number-nav">
-      <a href="../compass/">Compass</a>
-      <a href="../0/">0</a>
-      <a href="../1/">1</a>
-      <a href="../2/">2</a>
-      <a href="../3/">3</a>
-      <a href="../4/">4</a>
-      <a href="../5/">5</a>
-      <a href="../6/">6</a>
-      <a href="../rosetta/">R</a>
-      <a href="../soul-loop/">S</a>
-      <a href="../atlas/">A</a>
-      <a href="../game/">Game</a>
-      <a href="../read/">Read</a>
-    <a href="../halahala/">Poisons</a><a href="../exit/" class="nav-exit">Exit</a></nav>
-</header>
-
+<header class="topbar"><a class="brand" href="../compass/">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
+<main>
 <section class="hero">
-  <div class="hero-copy">
-    <div class="kicker">D2 · Geometry · Configuration on a reciprocal meridian</div>
-    <h1>Geometry</h1>
-    <p class="subtitle">
-      A declared one-parameter reciprocal meridian of the sphere: φ = cot(θ/2), ν = tan(θ/2). The seam is identically one; the score is at most one — and the whole discipline of the framework is refusing to confuse those two sentences. Inherited Riemann geometry, used, not discovered; the crosswalk to a world-rung stays [I/D]. <a href="../riemann/" style="color:var(--accent,#FFEB3B)">See the full sphere — where the plane gains i, ∞, and curvature &rarr;</a>
-    </p>
-    <div class="equation-strip">
-      <span>P∞ = φ · ν ≡ 1</span>
-      <span>B = sin θ = 2/(φ+ν) ≤ 1</span>
-      <span>γ = (φ+ν)/2</span>
-    </div>
-    <div class="evidence">[A] chart identities and score — used, not discovered · [S] iron separation · [I/D] world-rung crosswalk</div>
-    <div class="route-readout" aria-label="/2 operating readout">
-      <div>
-        <span>Read</span>
-        <strong>Two lamps, one position</strong>
-        <p>The pair omits azimuth; it does not parameterize an arbitrary point of the full sphere.</p>
-      </div>
-      <div>
-        <span>Use</span>
-        <strong>Find the equator</strong>
-        <p>The score peaks where the selected meridian crosses φ = ν = 1.</p>
-      </div>
-      <div>
-        <span>Fence</span>
-        <strong>Seam ≠ score ≠ node</strong>
-        <p>The seam stays 1 even as ν → 0; it never witnesses the zero-factor catastrophe (keel-108, CC-CORE-1).</p>
-      </div>
-    </div>
-  </div>
-  <div class="visual-panel">
-    <canvas class="dimension-canvas" aria-label="Animated dimensional visualization: the reciprocal chart recognized as a slice of the completed surface"></canvas>
-    <div class="visual-labels">
-      <div class="label top">declared reciprocal meridian</div>
-      <div class="label right">φ = cot(θ/2)</div>
-      <div class="label left">ν = tan(θ/2)</div>
-      <div class="label bottom">φ · ν ≡ 1 on the slice</div>
-    </div>
-    <div class="fallback">
-      <div class="fallback-inner">
-        <div class="fallback-equation">P∞ = φ · ν ≡ 1</div>
-        <p>Two scalar readings of one position on the declared slice: their product is always one; their balance is at most one.</p>
-      </div>
-    </div>
-  </div>
+  <p class="eyebrow">D2 · formal · [A/S/I]</p>
+  <h1>Configuration</h1>
+  <p class="lede">Functions, relations, graphs, and geometry. D2 owns configuration: inputs and outputs related across a domain, graphs and atlases, and geometric organization. A finite atlas illustrates a family; it is never all mathematical functions at once.</p>
 </section>
-
-<section class="chapters">
-  <article class="chapter">
-    <div class="chapter-number">01</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§1 · The Moves</div>
-      <h2>The Sphere, the Declared Slice, and the Iron Separation</h2>
-      <p>
-        <strong>The sphere, its charts, and the declared slice</strong> <em>(inherited: Riemann/stereographic geometry — used, not discovered).</em> Take the unit sphere S² and restrict the scalar pair to a chosen positive-real meridian. A point on that meridian at polar angle θ reads <code>φ = cot(θ/2)</code> and <code>ν = tan(θ/2)</code>. The pair omits azimuth and therefore does <strong>not</strong> parameterize an arbitrary point of the full sphere. Two lamps, one position on the declared slice.
-      </p>
-      <p>
-        <strong>The seam</strong> <span class="evidence">[A]</span>. Multiply the two readings: <code>P∞ = φ · ν = cot(θ/2) · tan(θ/2) ≡ 1</code> — identically one on the declared open reciprocal slice. A coordinate identity, true by construction and <strong>empty of world</strong>: never a discovery, a conserved quantity, or a maximum. The two scalar readings encode one independent parameter on this slice; that fact says nothing about the full dimension of S² or about the rung ordinal.
-      </p>
-      <p>
-        <strong>The score</strong> <span class="evidence">[A]</span> — derived by chord product <em>(inherited: circle geometry + AM-GM — used, not discovered).</em> Draw the two chords from the point to the two poles: lengths <code>2 sin(θ/2)</code> and <code>2 cos(θ/2)</code>. Their product is <code>4·sin(θ/2)·cos(θ/2) = 2·sin θ</code>. Normalize: <code>B = sin θ = 2/(φ + ν) ≤ 1</code>, with equality iff φ = ν = 1 (AM-GM). B is a genuine <strong>variable</strong> on the slice: it moves with θ and peaks where the selected meridian crosses the <strong>equator</strong>. The imbalance price <code>γ = (φ+ν)/2</code> rises toward either pole along the slice.
-      </p>
-      <p class="doctrine-note">
-        <strong>The iron separation</strong> (keel-108, CC-CORE-1): the <strong>seam is never the score is never the node.</strong> <code>P∞ ≡ 1</code> is a constant (chart identity); <code>B ≤ 1</code> is a variable (max at the equator); <code>P_node = Φ×V</code> is a <em>finite-node model</em> whose product interior is <span class="evidence">[C]</span> — only its AND-class boundary (lose either factor entirely, lose everything) is settled <span class="evidence">[S]</span>. The seam stays 1 even as ν → 0; it therefore never witnesses the zero-factor catastrophe, and citing it as the ethics warrant is the convicted laundering move. Three objects, three tiers, no silent bridge.
-      </p>
-    </div>
-  </article>
-
-  <article class="chapter">
-    <div class="chapter-number">02</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§2 · The Dissolutions</div>
-      <h2>One-and-Many, and Plato with the Debt Shown</h2>
-      <p>
-        <strong>One-and-many.</strong> The chart offers an <span class="evidence">[I]</span> reframe: its constant seam and variable positions answer different mathematical questions, so conflating them is a register error inside this lens. That does <strong>not</strong> dissolve the world-level metaphysical problem. The tautological unity says nothing about empirical plurality; register separation is a teaching aid, not a proof.
-      </p>
-      <p>
-        <strong>Plato, reframed — with the debt shown.</strong> The proposed survivor reads forms as <strong>stable organization across constrained degrees of freedom</strong>, not as degrees of freedom themselves and not as perfect objects in a separate realm. A typed freedom specifies admissibility; it does not establish actuality. The plenitude/filter and μ aperture remain <span class="evidence">[C]</span> causal wagers with named tests. This is an interpretive reframe <span class="evidence">[I]</span>, not a proof that two-world metaphysics is false.
-      </p>
-    </div>
-  </article>
-
-  <article class="chapter">
-    <div class="chapter-number">03</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§3 · The Ology</div>
-      <h2>What Is There? Typed Existence</h2>
-      <p>
-        <span class="evidence">[I/D]</span> Ontology asks: <em>what is there?</em> This page answers with <strong>typed existence</strong>. A thing exists <em>as</em> something — mathematical, modelled, possible, actual, stable, or lived — and no type silently entails the next. φ is a coordinate; B a derived score; the sphere a mathematical lens. None of those facts establishes that the world instantiates the lens.
-      </p>
-      <p>
-        So the rung's ontology in one breath: <strong>being is position-under-constraint, read through declared charts, with the seam as frame and the surface as content.</strong> What is <em>necessary</em> here is thin — the chart arithmetic, <span class="evidence">[A]</span>, empty of world. What is <em>actual</em> is thick and stays conjectural — which freedoms are instantiated, which patterns persist, whether das All realizes the algebra at all (W0, the crown wager, never the proof).
-      </p>
-      <p>
-        The stranger takes one thing from this page: the same point has two readings whose product is always one and whose balance is at most one — and the whole discipline of the framework is refusing to confuse those two sentences.
-      </p>
-      <p class="doctrine-note">
-        Rung D2 of the adopted seven-rung Seed Ladder — body synced to <code>10_SEED/01_THE_SEED_LADDER/D2_GEOMETRY.md</code> (receipt 139, signed 2026-07-20). Two scalar readings on one declared slice; the seam is a frame, and whether the world instantiates the geometry remains a wager.
-      </p>
-    </div>
-  </article>
+<section class="grid">
+  <article><h2>Inherited structure</h2><p>Function theory, topology, geometry, and coordinate charts are inherited mathematics [A].</p></article>
+  <article><h2>Claim boundary</h2><p>A picture may reveal structure hidden on a line, but visualization alone proves neither a new ontology nor strong emergence.</p></article>
 </section>
-
-<section class="axiom-ledger" aria-labelledby="d2-axioms">
-  <div class="axiom-ledger-header">
-    <div class="chapter-kicker">Foundations · Euclid to the Riemann sphere</div>
-    <h2 id="d2-axioms">The geometric axiom stack</h2>
-    <p>D2 uses more than one geometry. Euclidean circle geometry supports the chord calculation; complex-projective and manifold structure support the sphere. The selected reciprocal meridian is our lens, not Euclid's or Riemann's conclusion.</p>
-  </div>
-  <div class="axiom-list">
-    <article class="axiom-card">
-      <div class="axiom-origin">Euclid · inherited [A]</div>
-      <div>
-        <h3>The five Euclidean postulates</h3>
-        <ol>
-          <li>A straight line can be drawn from any point to any point.</li>
-          <li>A finite straight line can be extended continuously in a straight line.</li>
-          <li>A circle can be drawn with any centre and radius.</li>
-          <li>All right angles are equal.</li>
-          <li>The parallel postulate: in modern form, through a point outside a line there is exactly one parallel to that line.</li>
-        </ol>
-        <p>Modern rigorous treatments usually replace or complete this list with Hilbert- or Tarski-style incidence, order, congruence, continuity, and parallel axioms.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Manifold geometry · inherited [A]</div>
-      <div>
-        <h3>What makes the sphere a surface</h3>
-        <p>A topological 2-manifold is Hausdorff, second-countable, and locally homeomorphic to <code>ℝ²</code>. The sphere <code>S²</code> satisfies those conditions. The Riemann sphere adds a compatible complex chart structure and is equivalent to the complex projective line <code>ℂP¹</code>.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Geometry fence · inherited [A]</div>
-      <div>
-        <h3>Euclidean chord calculation; spherical surface</h3>
-        <p>The chord lengths and trigonometric identities on this page use ordinary Euclidean circle geometry. The sphere is locally planar only in the topological/chart sense, not locally flat as a metric surface; globally, its great-circle “lines” do not satisfy Euclid's parallel postulate. Stereographic projection is a standard conformal construction, not an Emergentist axiom.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Emergentism · declared [I/D]</div>
-      <div>
-        <h3>The local declaration</h3>
-        <p>This rung selects one positive-real meridian and assigns the reciprocal readings <code>φ = cot(θ/2)</code> and <code>ν = tan(θ/2)</code>. The chart identities are inherited; treating the slice as a world-ladder lens is our staged interpretation.</p>
-      </div>
-    </article>
-  </div>
-  <p class="axiom-note"><strong>Attribution:</strong> Euclidean, topological, Riemannian, and projective geometry predate this framework. Their presence establishes the mathematics of the model, not that reality instantiates the model.</p>
+<section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
+  <canvas class="dimension-canvas"></canvas>
+  <noscript>Illustration omitted. The text carries the claim.</noscript>
 </section>
+<p class="source">Semantic owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md</code></p>
 
-<section class="mu-limit">
-  <div class="mu-inner">
-    <div class="mu-mark">μ₂</div>
-    <h2>From Surface to Bodies</h2>
-    <p>
-      D2 gave the pair a surface and its equator. D3 asks whether a declared need-both model can illuminate living bodies — wholes that can die — without turning the model into a theorem about life or death.
-    </p>
-    <a href="../3/">Continue to /3 — D3 Bodies →</a>
-  </div>
+<section class="transition" id="mu2">
+  <p class="eyebrow">μ2 · candidate μ-crossing</p>
+  <h2>State-assignment aperture</h2>
+  <dl><dt>Saturation proposal</dt><dd>Classical configuration alone does not encode the full probability assignments associated with incompatible quantum measurement contexts.</dd><dt>New capability</dt><dd>Hilbert-space states, density operators, POVMs, and Born probability assignments become available.</dd><dt>Lower-level recovery</dt><dd>Quantum states must reproduce the declared measurement probabilities and classical limits where those limits apply.</dd><dt>Evidence</dt><dd>[A/S] formal lift; ontic-emergence reading [C]</dd><dt>Prediction</dt><dd>The D3 representation must distinguish states that agree on one context but differ on another.</dd><dt>Alternatives</dt><dd>The lift may be a reducible formal representation rather than a new degree of reality.</dd><dt>Kill criterion</dt><dd>If classical configuration suffices for all relevant probability assignments, or the D3 formalism adds no discriminating predictions, the emergence reading fails.</dd></dl>
+  <p class="source">Source owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md</code></p>
+  <a class="next" href="../3/">Continue through μ2 →</a>
 </section>
-
-<footer class="site-footer">
-  <div class="phi">⊙ = • × ○</div>
-  <p>Public doctrine surface · evidence tiers preserved</p>
-  <p><a href="../1/">← /1</a> · <a href="../sources/index.html">Sources</a> · <a href="../3/">/3 →</a></p>
-</footer>
-</div>
-
-<script>
-  window.DIMENSION_PAGE = { animationMode: "muLimit" };
-</script>
-<script type="module" src="../dimensions/dimensions.js?v=2026-06-14-instrument-21"></script>
-
-<script defer src="/assets/js/atlas-drawer.js"></script>
-
-<footer class="k4-footer" style="margin-top:3rem;padding:1.1rem 1.2rem;border-top:1px solid rgba(233,230,223,.14);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.74rem;line-height:1.7;color:#8a8577;text-align:center">
-  <a href="../record/" style="color:#e8b84b;text-decoration:none">The record</a> — every claim that died, with its date.
-  &nbsp;·&nbsp;
-  <a href="../exit/" style="color:#8a8577;text-decoration:none">The exit</a> — if you can see directly, put this down.
-</footer>
+<nav class="pager"><a href="../1/">← D1</a><a href="../3/">D3 →</a></nav>
+</main>
+<footer class="site-footer">Public projection · source tiers preserved · <a href="../practice/">use the compass</a> · <a href="../exit/">put it down</a></footer>
+<script>window.DIMENSION_PAGE={animationMode:"muLimit"};</script>
+<script type="module" src="../dimensions/dimensions.js"></script>
 </body>
 </html>

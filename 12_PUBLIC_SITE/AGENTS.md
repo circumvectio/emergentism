@@ -1,112 +1,57 @@
 ---
-title: "12_PUBLIC_SITE - Agent Routing"
-status: "ACTIVE - frozen public-site/source-preserving route"
-evidence_tier: "[S] for Rosetta-linked doctrine; [I]/[C] for public interpretation and scaffold claims; [B] only for dated build/deploy/product receipts."
+title: "12_PUBLIC_SITE — pure Emergentism projection route"
+status: "ACTIVE — release-candidate static projection"
+evidence_tier: "[B] build state; claim tiers inherited from named source owners"
 type: public-site-route-card
-scope: Emergentism public-site prototypes and frozen Infinite Book PWA source pending AIA migration.
-sources:
-  - 01_EMERGENTISM/12_PUBLIC_SITE/README.md
-  - 01_EMERGENTISM/12_PUBLIC_SITE/00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md
-  - 01_EMERGENTISM/12_PUBLIC_SITE/book-pwa/AGENTS.md
-rosetta:
-  primary_level: L5
-  primary_column: Cosmology
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "Public site agent routing"
+date: 2026-07-22
 ---
 
-# 12_PUBLIC_SITE - Agent Routing
+# 12_PUBLIC_SITE — Agent Routing
 
-**Lane scope:** public narrative prototypes plus the K3-frozen `book-pwa/` source — **moved → `02_SKYZAI/03_AIA/app/` per K2 signoff 2026-06-11** (see `00_BOOK_PWA_MOVED.md`). The K2 envelope is now CLOSED; source tree preserved per K3, archival pending deploy-readiness verification.
-**Primary lead:** L5 for public-site architecture, with L3 evidence audit and L6
-boundary control.
-**Evidence tier:** `[S]` only for Rosetta-linked doctrine; `[B]` only for dated
-build, deployment, payment, auth, model, or runtime receipts.
+This lane publishes **Emergentism only**. It is a reader projection, never a
+semantic owner, product runtime, governance system, or source of evidence.
 
-## Read First
+## Read first
 
-- [`README.md`](README.md)
-- [`WEBSITE_NARRATIVE.md`](WEBSITE_NARRATIVE.md)
-- [`00_BOOK_PWA_MOVED.md`](00_BOOK_PWA_MOVED.md) — **the K3 tombstone redirecting `book-pwa/` → `02_SKYZAI/03_AIA/app/`**
-- [`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md) — the signed K2 envelope (now CLOSED, execution receipt 2026-06-12)
-- [`book-pwa/AGENTS.md`](book-pwa/AGENTS.md) — preserved source (frozen)
-- [`../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md`](../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.md)
-- [`../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv)
+1. [`README.md`](README.md) — current site and release boundary.
+2. [`../00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](../00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — reader synthesis.
+3. [`../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md`](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — internal state.
+4. [`../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) — world-contact work.
+5. [`public_semantic_parity.json`](public_semantic_parity.json) — source-to-page contract.
 
-## Recursive Deployment Control
+## Public sequence
 
-- Every source-visible folder and file in this lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_12_PUBLIC_SITE_2026_06_04.csv).
-- `12_PUBLIC_SITE/` is the current physical path. Historical `10_PUBLIC_SITE`
-  strings are preserved only as signed-coordinate provenance.
-- `book-pwa/` remains source-preserved and frozen for migration, tombstone, and
-  public-claim repair only.
+The primary route is interleaved and typed:
 
-## Current Public Library State
+`D0 → μ₀ → D1 → μ₁ → D2 → μ₂ → D3 → μ₃ → D4 → μ₄ → D5 → b₆ → D6 → r₆ → D0`
 
-- 2026-06-07 control receipt:
-  [`../../00_START_HERE/agent_planning/2026_06_07_EMERGENTISM_ORG_PUBLIC_SITE_REORIENTATION.md`](../../00_START_HERE/agent_planning/2026_06_07_EMERGENTISM_ORG_PUBLIC_SITE_REORIENTATION.md).
-- `generate_public_library.py` currently renders `docs/handoff` public bundles
-  into `read/`, `papers/`, `canon/`, `foundations/`, `trinity`, `formal/`,
-  `paradox/`, `memetic/`, `rosettad/`, `operators/`, `will/`, `value/`,
-  `ground/`, `sacred/`, `method/`, and `meta/`.
-- `reading-manifest.json` currently wires `294` rendered public corpus
-  documents.
-- `sitemap.xml` currently exposes `351` URLs.
-- `predeploy_check.py` is the deploy gate for public-site link, tier, route,
-  reading-bundle, publication-boundary, and generated-library chrome coverage.
-- `audit_live_domain_against_manifest.py` is the post-deploy/live-domain audit
-  gate; run with `--strict` only after the domain is expected to serve this
-  static site.
-- The GitHub Actions Vercel deployment workflow now performs pull, production
-  build, prebuilt production deploy, and strict audit against the returned
-  Vercel deployment URL before the custom-domain probe. The custom-domain
-  strict gate remains manual/dispatch-only until DNS and hosting cutover are
-  expected to serve this repository site.
-- The linked Vercel project was refreshed on 2026-06-12
-  (`dpl_ELnhnyH9EF8qRXSDV3HQWJtczXWg`), and
-  `https://emergentism-org.vercel.app/` serves the repository site. A clean
-  staged public preview also exists at `https://emergentism-public.vercel.app/`.
-  Live `emergentism.org` / `www.emergentism.org` still requires DNS/host cutover:
-  current probes route apex through Squarespace and `www` through Google Sites.
+- `D0…D5` are the selected reality scaffold.
+- `μ₀…μ₄` are candidate apertures, not established universal transitions.
+- `b₆` enters the exit/nonclosure marker and is not a μ-crossing.
+- `r₆` is interpretive boundary-role resemblance, never identity or recurrence.
 
-## Routing Law
+Every μ surface must show its source, saturation proposal, newly opened
+capability, lower-level recovery, evidence, prediction, alternatives, and kill
+criterion.
 
-- `12_PUBLIC_SITE/` is the current physical path.
-- `10_PUBLIC_SITE/` references are historical after the migration to this lane.
-- `book-pwa/` remains source-preserved and frozen for migration/tombstone/public
-  claim repair until the `02_SKYZAI/03_AIA/app/` destination is explicitly accepted.
-- Public claims must preserve the `[A/B/S/I/D/C]` evidence ladder.
+## Rules
 
-## Numbered Doctrine Spine (/0–/6)
+- Repair source truth before public copy.
+- Preserve `[A/B/S/I/D/C]` exactly; no silent promotion.
+- Keep `φ,ν`, `Φ,V`, `P∞`, `B`, and `P_node` in their declared registers.
+- D3 is quantum state assignment; D4 is causal actuality; D5 is modeled
+  possibility and selection.
+- Do not claim physical retrocausality, quantum-dimensional stacking, solved
+  quantum gravity, literal closure, or an established five-force census.
+- No application, venture, product, private-contract, or private-signature
+  premise may govern this lane.
+- Historical generated-library pages must carry the frozen-library boundary
+  and are excluded from current retrieval.
 
-The dimensional ascent is exposed as 7 HTML route shells (`0/` through `6/`) sharing
-a single design system and Three.js bootstrap:
+## Release gate
 
-| Path | Shared assets (relative from route dir) |
-|------|----------------------------------------|
-| `0/`–`6/` | `../assets/css/xai.css`, `../dimensions/dimensions.js` |
-| All routes | `../vendor/three-0.160.0/` (self-hosted, pinned) |
+Run `python3 predeploy_check.py`. It includes semantic parity, public purity,
+links, tiers, static assets, and deployment-boundary checks. A local pass is
+not deployment, DNS, independent review, or empirical calibration.
 
-- Each page sets `window.DIMENSION_PAGE = { animationMode: "<mode>" }` before loading
-  `dimensions.js`. Live modes: `titans`, `logline`, `muLimit`, `bloch`,
-  `horn`, `burrisphere`, `ccc`. The script still accepts `convergence` as a
-  backward-compatible alias for `ccc`; new route shells should use `ccc`.
-- Page shells must not reference external CDNs. Run `./predeploy_check.sh` before deploy.
-- `assets/css/spine.css`, `partials/nav.html`, and `partials/topbar.html`
-  remain tracked compatibility/shared-layout assets. Do not duplicate them or
-  create alternate navigation partials without a route-card update.
-
-## Constraints
-
-- **MIGRATION COMPLETE 2026-06-12:** `book-pwa/` is moved → `02_SKYZAI/03_AIA/app/` per K2 signoff. Source tree preserved here per K3 (do not develop). New AIA engine work goes to `02_SKYZAI/03_AIA/`.
-- Do not add new PWA product features in this folder during the frozen interval.
-- Do not claim deployment, payment, auth, AI-provider, or runtime readiness
-  without fresh receipts.
-
-**Rosetta boundary:** [I] This route card governs public-site routing and source
-preservation. It does not make `book-pwa/` a live production surface; the canonical
-app at `02_SKYZAI/03_AIA/app/` is the live engine lane.
+No push, production deployment, or DNS change is implied by this route card.

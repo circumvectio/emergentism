@@ -13,6 +13,7 @@ Checks:
 8. Public reading bundle is wired
 9. Generated library pages preserve the generator chrome contract
 10. Deployment publication boundary excludes source/control/runtime files
+11. Current public semantics match the dimension-first source contract
 
 Exit 0 if all checks pass, 1 if any fail.
 """
@@ -21,6 +22,7 @@ import json
 import fnmatch
 import os
 import re
+import subprocess
 import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -480,6 +482,7 @@ def check_publication_boundary():
 
     required_patterns = {
         "book-pwa/",
+        "90_ARCHIVE/",
         "docs/",
         "__pycache__/",
         "*.py",
@@ -521,6 +524,22 @@ def check_publication_boundary():
     ok(".vercelignore excludes source/control/runtime files")
     return True
 
+def check_semantic_parity():
+    print("\n[11] Dimension-first semantic parity")
+    process = subprocess.run(
+        [sys.executable, os.path.join(BASE_DIR, "check_public_semantic_parity.py")],
+        cwd=BASE_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    ok(process.stdout.strip())
+    return True
+
 def main():
     print("=" * 60)
     print("Pre-deploy supply-chain gate — 12_PUBLIC_SITE")
@@ -537,6 +556,7 @@ def main():
         check_public_reading_bundle(),
         check_generated_library_chrome(),
         check_publication_boundary(),
+        check_semantic_parity(),
     ]
 
     print("\n" + "=" * 60)

@@ -150,8 +150,8 @@ This section makes the per-pillar rules explicit so future agents don't conflate
 1. **Per-pillar `90_ARCHIVE/` is allowed and recommended** for K3 tombstones that are pillar-specific (e.g., `02_EPISTEMOLOGY/90_ARCHIVE/`). The pillar-local archive is preferred over the root `90_ARCHIVE/` for tombstones whose absorber is the pillar itself.
 2. **Per-pillar `00_META/` is forbidden.** Governance lives at the root `01_EMERGENTISM/00_META/` only — never inside a pillar. This is the explicit design per Blueprint §1.2 ("00_META/ = governance spine").
 3. **Per-pillar `91_COMPATIBILITY/` is allowed** for -ology-specific legacy path resolution (e.g., `01_EMERGENTISM/02_EPISTEMOLOGY/91_COMPATIBILITY/`). The compatibility function is root-allowed, not root-required.
-4. **The `AGENTS.md` / `CLAUDE.md` / `README.md` triplet never carries doctrine.** These are L1 routing surfaces. A README is a front door; it is not a [S] source. A [S] source lives in a `00_THE_*.md` named Door or in a source-owner subfolder, never in the lane's routing triplet.
-5. **Per-pillar `Door` (the `00_THE_*.md` file) is the L5 architect's single load-bearing entry.** Each pillar's Door must carry an explicit `"active"` or `"candidate"` status in its frontmatter so the next agent can route to it without re-deriving the seating. Per receipt 145, the Doors are *candidate* until the founder signs; the signing act flips them to *active* with a `receipt:` parent.
+4. **The `AGENTS.md` / `CLAUDE.md` / `README.md` triplet never carries doctrine.** These are routing surfaces. A README is a front door; it is not a source theorem. Structural claims live in a named owner document and retain their own tier.
+5. **Per-pillar `Door` (the `00_THE_*.md` file) is the architect's single load-bearing entry.** Each Door must carry an explicit `"active"` or `"candidate"` status so the next reader can route without re-deriving the seating. Any transition is recorded by a dated receipt and the controlling source owner; no private financial-signature convention governs editorial, repository, or AI work.
 
 ---
 

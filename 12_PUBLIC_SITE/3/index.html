@@ -1,247 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>/3 — D3 Bodies · Emergentism</title>
-  <meta name="description" content="D3 Bodies: the rung where a whole can die. A declared need-both node model (P_node = Φ×V) has an AND-class zero boundary [S]; applying that model to organisms is typed and testable, not derived from the rung number.">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="/3 — D3 Bodies · Emergentism">
-  <meta property="og:description" content="The rung where a whole can die: the need-both node model, typed and testable.">
-  <meta property="og:url" content="https://emergentism.org/3/">
-  <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png">
-<link rel="icon" href="data:,">
-  <link rel="stylesheet" href="../assets/css/xai.css">
-  <script type="importmap">
-  { "imports": {
-    "three": "../vendor/three-0.160.0/three.module.js",
-    "three/addons/": "../vendor/three-0.160.0/"
-  }}
-  </script>
-<!-- pwa-chrome -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>/3 — Quantum state · Emergentism</title>
+<meta name="description" content="D3 is represented by a density operator rho together with a measurement context. It assigns Born probabilities to possible records. Valid D3 states may carry momentum distributions; uncertainty follows from noncommuting observables, not from an absence of momentum." />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="../assets/css/xai.css" />
+<link rel="stylesheet" href="../dimensions/dimensions.css" />
+<script type="importmap">
+{"imports":{"three":"../vendor/three-0.160.0/three.module.js","three/addons/":"../vendor/three-0.160.0/"}}
+</script>
+<style>
+main{max-width:920px;margin:0 auto;padding:110px 22px 72px} .hero{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+.eyebrow,.tier,.source{font:700 .74rem/1.6 var(--font-mono);color:var(--gold)} h1{font-size:clamp(2.5rem,7vw,5.8rem);line-height:.98;margin:.6rem 0 1.2rem}
+.lede{font-size:1.15rem;color:var(--text-muted);max-width:68ch} .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin:2rem 0}
+.grid article{background:var(--surface);padding:1.35rem} .grid p{color:var(--text-muted)} .diagram{min-height:300px;display:grid;place-items:center;border:1px solid var(--border);margin:2rem 0;overflow:hidden}
+.dimension-canvas{width:100%;height:320px} .transition{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}
+dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)} dt,dd{margin:0;padding:.8rem;border-bottom:1px solid var(--border)} dt{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)} dd{color:var(--text-muted)}
+.next{display:inline-block;margin-top:1rem;color:var(--gold)} .pager{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem} code{overflow-wrap:anywhere}
+@media(max-width:700px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{padding-bottom:.2rem}dd{padding-top:.2rem}}
+</style>
 </head>
 <body>
-<!-- funnel-order: 3 of 6 -->
-<a class="ladder-return" href="../discoveries/" style="display:block;text-align:center;padding:.5rem 1rem;font-size:.76rem;letter-spacing:.05em;font-family:inherit;background:var(--surface,#0a0a0a);color:var(--accent,#FFEB3B);border-bottom:1px solid var(--border,#2a2a2a);text-decoration:none">You are on the deep ladder — back to the Discoveries →</a>
-  <noscript>This page requires JavaScript for its primary visualization. The doctrine text below remains fully readable without it.</noscript>
+<header class="topbar"><a class="brand" href="../compass/">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
+<main>
+<section class="hero">
+  <p class="eyebrow">D3 · possible · [A/S/I]</p>
+  <h1>Quantum state</h1>
+  <p class="lede">Probability assignment before a particular actual record. D3 is represented by a density operator rho together with a measurement context. It assigns Born probabilities to possible records. Valid D3 states may carry momentum distributions; uncertainty follows from noncommuting observables, not from an absence of momentum.</p>
+</section>
+<section class="grid">
+  <article><h2>Inherited structure</h2><p>Density operators, POVMs, Born probabilities, Fourier duality, and uncertainty relations are inherited quantum theory [A].</p></article>
+  <article><h2>Claim boundary</h2><p>No realized D4 event does not mean zero change, zero momentum, or a timeless state. This scaffold does not solve measurement, quantum gravity, or quantum interpretation.</p></article>
+</section>
+<section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
+  <canvas class="dimension-canvas"></canvas>
+  <noscript>Illustration omitted. The text carries the claim.</noscript>
+</section>
+<p class="source">Semantic owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md</code></p>
 
-  <div class="site-shell">
-  <header class="topbar">
-    <a class="brand" href="../">Emergentism</a>
-    <nav class="number-nav">
-      <a href="../compass/">Compass</a>
-      <a href="../0/">0</a>
-      <a href="../1/">1</a>
-      <a href="../2/">2</a>
-      <a href="../3/">3</a>
-      <a href="../4/">4</a>
-      <a href="../5/">5</a>
-      <a href="../6/">6</a>
-      <a href="../rosetta/">R</a>
-      <a href="../soul-loop/">S</a>
-      <a href="../atlas/">A</a>
-      <a href="../game/">Game</a>
-      <a href="../read/">Read</a>
-    <a href="../halahala/">Poisons</a><a href="../exit/" class="nav-exit">Exit</a></nav>
-  </header>
-
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="kicker">D3 · Bodies · The rung where a whole can die</div>
-        <h1>Bodies</h1>
-        <p class="subtitle">
-          Transformation and life through a declared need-both model. If Φ and V are stipulated as essential, non-substitutable factors, then losing either entirely loses everything — an AND-class zero boundary, structural inside the model. Whether a living body instantiates that model is typed, testable, and never derived from the rung number.
-        </p>
-        <div class="equation-strip">
-          <span>P_node = Φ × V</span>
-          <span>Φ = 0 ∨ V = 0 ⟹ P_node = 0</span>
-          <span>B = sin θ ≤ 1</span>
-        </div>
-        <div class="evidence">[S] AND-class boundary inside the declared model · [C] product interior · [B] organism mapping requires operational evidence</div>
-        <div class="route-readout" aria-label="/3 operating readout">
-          <div>
-            <span>Read</span>
-            <strong>A whole that can die</strong>
-            <p>The first rung with a real zero in it: a declared essential factor can run out.</p>
-          </div>
-          <div>
-            <span>Use</span>
-            <strong>Name the binding constraint</strong>
-            <p>Ask which declared factor runs out first — and what evidence says it is essential.</p>
-          </div>
-          <div>
-            <span>Fence</span>
-            <strong>The seam never dies</strong>
-            <p>P∞ ≡ 1 never vanishes; death is a node claim, never a manifold claim.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="visual-panel">
-        <canvas class="dimension-canvas" aria-label="Animated sphere with the equatorial band where both factors stay alive"></canvas>
-        <div class="visual-labels">
-          <div class="label top"><strong>○</strong> north pole · ∞</div>
-          <div class="label right">θ = π/2 · B = 1</div>
-          <div class="label left">node zero boundary</div>
-          <div class="label bottom"><strong>•</strong> south pole · 0</div>
-        </div>
-        <div class="fallback">
-          <div class="fallback-inner">
-            <div class="fallback-equation">P_node = Φ × V</div>
-            <p>A declared need-both model: lose either essential factor entirely and the model returns zero. Whether a body instantiates the model is an empirical question.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="chapters">
-      <article class="chapter">
-        <div class="chapter-number">01</div>
-        <div class="chapter-body">
-          <div class="chapter-kicker">§1 · The Moves</div>
-          <h2>One Declared Model, Read Three Ways</h2>
-          <p>
-            The page carries three readings of one <strong>declared node model</strong>, <code>P_node = Φ × V</code>. Its AND-class boundary is structural inside the model; its application to a living whole requires typed interpretation and evidence.
-          </p>
-          <p>
-            <strong>1 · Need-both / AND-class</strong> <span class="evidence">[S]</span> inside the declared model. If Φ and V are stipulated as essential non-substitutable factors, product and minimum share the same zero boundary. Whether a particular body has those factors, and whether either measures flourishing, requires an operational mapping and evidence. The product-specific interior remains <span class="evidence">[C]</span>.
-          </p>
-          <p>
-            <strong>2 · Liebig-shaped binding constraint</strong> — inherited, not discovered. Once a system is empirically shown to have essential non-substitutable factors, a minimum-like constraint is a useful operational model. The AND boundary is <span class="evidence">[S]</span> under those premises; application to a particular organism needs <span class="evidence">[B]</span>, and Liebig's agronomic law is not a universal theorem of every body.
-          </p>
-          <p>
-            <strong>3 · Zero boundary inside the node model</strong> <span class="evidence">[S]</span> under its premises. If a declared essential factor reaches 0, then the model returns 0: <code>Φ = 0 ∨ V = 0 ⟹ P_node = 0</code>. Calling that output biological death requires an operational mapping and evidence; it is not supplied by multiplication. This is a <strong>node</strong> claim, never the manifold seam. The vow remains a chosen response, not a theorem read off geometry.
-          </p>
-          <p class="doctrine-note">
-            <strong>The iron separation, stated once for this rung:</strong> <code>P∞ = φ·ν ≡ 1</code> (the <strong>seam</strong> <span class="evidence">[A]</span>, chart identity, never vanishes) — is not — <code>B = sin θ ≤ 1</code>, max at the equator (the <strong>score</strong> <span class="evidence">[A]</span>, unconditional AM-GM, used not discovered) — is not — <code>P_node = Φ×V</code> (the <strong>node</strong>, <span class="evidence">[C]</span> interior / AND-class boundary <span class="evidence">[S]</span>).
-          </p>
-        </div>
-      </article>
-
-      <article class="chapter">
-        <div class="chapter-number">02</div>
-        <div class="chapter-body">
-          <div class="chapter-kicker">§2 · The Dissolutions</div>
-          <h2>The Sorites, Cured by the Invariance Gradient</h2>
-          <p>
-            <strong>The paradox.</strong> A body swaps every atom over years (Ship of Theseus; the sorites heap). Remove one plank, one cell, one grain — still the same body? Then when did it stop being itself? The classical trap demands a <em>sharp</em> threshold where identity flips, and finds none.
-          </p>
-          <p>
-            <strong>The cure named: invariance-gradient reality.</strong> <span class="evidence">[I]</span> The paradox assumes identity is a <strong>sharp predicate</strong> over parts. D3 replaces it: a body's identity is the <strong>invariant it conserves across the gradient of its parts</strong> — its form, its metabolic closure, its history-with-continuity — not the parts themselves. There is no threshold because identity was never <em>in</em> the substrate; it is the pattern held stable across constrained degrees of freedom (the DoF reading of form, W1 <span class="evidence">[C]</span>, marked as wager). The heap dissolves because "heap" names a gradient, not a knife-edge.
-          </p>
-          <p class="doctrine-note">
-            <strong>What it does not claim.</strong> This is a dissolution by re-framing <span class="evidence">[I]</span>, not a proof that identity is metaphysically sharp — and it carries its debt: <em>why this invariant persists</em> (metabolic self-maintenance) is asserted at the reading tier, not derived. It does not dissolve the Hard Problem, does not make persistence a measured quantity, and does not license "any gradual thing is the same thing." It relocates the question from <em>which part</em> to <em>which invariant</em>, and hands the invariant back to biology to measure.
-          </p>
-        </div>
-      </article>
-
-      <article class="chapter">
-        <div class="chapter-number">03</div>
-        <div class="chapter-body">
-          <div class="chapter-kicker">§3 · The Ology</div>
-          <h2>Methodology: A Claim That Cannot Be Killed Is Decoration</h2>
-          <p>
-            <span class="evidence">[I/D]</span> The chosen lens is methodology: a claim of failure must be operationalized and receipted rather than inferred from an analogy to bodies.
-          </p>
-          <p>
-            <strong>Kill criteria are the metabolism of a claim.</strong> <span class="evidence">[S]</span> A claim is a living whole only when its four fields stand: tier, upgrade path, <strong>kill criterion</strong>, and <strong>survivors</strong> (what stands if it falls). The fourth is the keel — only claims that <em>depend</em> on a failed claim fall with it. This is why the corpus can lose a round without the organism dying: AND-class applied to knowledge itself.
-          </p>
-          <p>
-            <strong>Receipts preserve revision history.</strong> The ledger's existence and dated entries are <span class="evidence">[B]</span>; reading it as the invariant that makes the corpus "the same corpus" is an <span class="evidence">[I]</span> continuity lens, not an audited identity theorem.
-          </p>
-          <p>
-            <strong>Instruments have boundaries — the GFS lesson.</strong> <span class="evidence">[S/I]</span> The GFS study was retracted. A survey restricted to standing respondents cannot, by itself, estimate outcomes among absent or destroyed units; that is a sampling and instrument-boundary result. It does <strong>not</strong> establish the node model, a biological zero-factor law, or the cause of absence. Those require their own operational evidence.
-          </p>
-          <p>
-            <strong>The Soul-Loop at D3:</strong> <em>witness the whole → name its binding constraint → test where it goes to zero → keep the receipt.</em> The loop is not complete until the kill is real and the survivors are named. A body that cannot die is not alive; a claim that cannot be killed is decoration, and we bury it with a date.
-          </p>
-          <p class="doctrine-note">
-            Rung D3 of the adopted seven-rung Seed Ladder — body synced to <code>10_SEED/01_THE_SEED_LADDER/D3_BODIES.md</code> (receipt 139, signed 2026-07-20). Candidate minimum-sufficient orientation, tested rather than asserted; not a Kolmogorov minimum. Check everything; obey nothing.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="axiom-ledger" aria-labelledby="d3-axioms">
-      <div class="axiom-ledger-header">
-        <div class="chapter-kicker">Foundations · biology is not geometry by decree</div>
-        <h2 id="d3-axioms">Principles and assumptions for bodies</h2>
-        <p>Biology has no single universally accepted formal axiom set. D3 therefore distinguishes established scientific principles, domain-limited heuristics, and the assumptions of its own node model.</p>
-      </div>
-      <div class="axiom-list">
-        <article class="axiom-card">
-          <div class="axiom-origin">Modern cell theory · inherited science</div>
-          <div>
-            <h3>The cellular foundation</h3>
-            <ul>
-              <li>Cellular organisms are composed of one or more cells.</li>
-              <li>The cell is the basic structural and functional unit of cellular life.</li>
-              <li>New cells arise from pre-existing cells.</li>
-            </ul>
-            <p>These are established biological generalizations, not axioms from which every fact about life is deduced.</p>
-          </div>
-        </article>
-        <article class="axiom-card">
-          <div class="axiom-origin">Thermodynamics + evolution · inherited science</div>
-          <div>
-            <h3>Constraints every body still pays</h3>
-            <p>Biological processes conserve energy, and an open organism can maintain local order only while exchanging energy and entropy with its environment. Evolution by natural selection requires heritable variation and differential reproductive success. Neither principle is ours, and neither alone defines life or identity.</p>
-          </div>
-        </article>
-        <article class="axiom-card">
-          <div class="axiom-origin">Liebig · inherited heuristic</div>
-          <div>
-            <h3>The limiting-factor rule</h3>
-            <p>Liebig's law of the minimum says growth can be constrained by the scarcest essential resource. It motivates a need-both model when essential, non-substitutable factors are empirically demonstrated. It is an agronomic principle, not a universal axiom of every organism.</p>
-          </div>
-        </article>
-        <article class="axiom-card">
-          <div class="axiom-origin">Emergentism · declared [S/C]</div>
-          <div>
-            <h3>The local model assumptions</h3>
-            <p>D3 stipulates two essential factors <code>Φ</code> and <code>V</code>. Under that premise, zero in either factor gives an AND-class zero boundary <span class="evidence">[S]</span>. The product-specific interior and any mapping from model-zero to biological death remain conjectural and require measurements <span class="evidence">[C/B]</span>.</p>
-          </div>
-        </article>
-      </div>
-      <p class="axiom-note"><strong>Attribution:</strong> cell theory, thermodynamics, natural selection, and Liebig's law are inherited. Emergentism supplies a typed model and must earn each biological application separately.</p>
-    </section>
-
-    <section class="mu-limit">
-      <div class="mu-inner">
-        <div class="mu-mark">μ₃</div>
-        <h2>From Bodies to Bounded Mind</h2>
-        <p>
-          D3 gave wholes that can die. D4 gives the bounded mind a physical lens: the normalized relativistic mass shell, where the seam is Einstein's, the reading is ours, and the reading is priced.
-        </p>
-        <p style="margin-top:1.5rem;">
-          <a href="../4/">Continue to /4 — D4 Spacetime →</a>
-        </p>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="phi">⊙ = • × ○</div>
-      <p>Public doctrine surface · evidence tiers preserved</p>
-      <p><a href="../2/">← Prev: /2 — D2 Geometry</a> · <a href="../sources/index.html">Sources</a> · <a href="../4/">Next: /4 — D4 Spacetime →</a></p>
-    </footer>
-  </div>
-
-  <script>
-    window.DIMENSION_PAGE = { animationMode: "bloch" };
-  </script>
-  <script type="module" src="../dimensions/dimensions.js?v=2026-06-14-instrument-21"></script>
-<script defer src="/assets/js/atlas-drawer.js"></script>
-
-<footer class="k4-footer" style="margin-top:3rem;padding:1.1rem 1.2rem;border-top:1px solid rgba(233,230,223,.14);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.74rem;line-height:1.7;color:#8a8577;text-align:center">
-  <a href="../record/" style="color:#e8b84b;text-decoration:none">The record</a> — every claim that died, with its date.
-  &nbsp;·&nbsp;
-  <a href="../exit/" style="color:#8a8577;text-decoration:none">The exit</a> — if you can see directly, put this down.
-</footer>
+<section class="transition" id="mu3">
+  <p class="eyebrow">μ3 · candidate μ-crossing</p>
+  <h2>Actual-record aperture</h2>
+  <dl><dt>Saturation proposal</dt><dd>A probability assignment, even if exhaustively specified, is not itself a particular performed interaction and recorded outcome.</dd><dt>New capability</dt><dd>An actual carrier, interaction, event, and receipted record enter the description.</dd><dt>Lower-level recovery</dt><dd>Repeated D4 records must remain statistically answerable to the D3 probability model under the stated preparation and measurement conditions.</dd><dt>Evidence</dt><dd>[A] probability/event distinction; [I/C] emergence interpretation</dd><dt>Prediction</dt><dd>Intervening on preparation or measurement context changes the distribution of D4 outcomes as the D3 model specifies.</dd><dt>Alternatives</dt><dd>Everettian, Copenhagen-family, hidden-variable, relational, and other interpretations disagree about actualization while sharing operational predictions.</dd><dt>Kill criterion</dt><dd>Conflating a probability scalar with a sampled outcome, or failing the model&#x27;s repeated-run statistics, defeats the proposed bridge.</dd></dl>
+  <p class="source">Source owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md</code></p>
+  <a class="next" href="../4/">Continue through μ3 →</a>
+</section>
+<nav class="pager"><a href="../2/">← D2</a><a href="../4/">D4 →</a></nav>
+</main>
+<footer class="site-footer">Public projection · source tiers preserved · <a href="../practice/">use the compass</a> · <a href="../exit/">put it down</a></footer>
+<script>window.DIMENSION_PAGE={animationMode:"bloch"};</script>
+<script type="module" src="../dimensions/dimensions.js"></script>
 </body>
 </html>

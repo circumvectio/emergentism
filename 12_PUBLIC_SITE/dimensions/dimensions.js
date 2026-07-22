@@ -17,7 +17,7 @@ const SAMPLE_HZ = 30;
 const SAMPLE_DT = 1 / SAMPLE_HZ;
 const MAX_FRAME_DT = 0.12;
 const INITIAL_ASSAY_SECONDS = 1.6;
-// Skyzai motion discipline: bounded drift, no bounce/spring. These are assay
+// Instrument motion discipline: bounded drift, no bounce/spring. These are assay
 // cycles, not decorative loops; motion only exists to expose a measured state.
 const INSTRUMENT_CPS = {
   slow: 0.018,
@@ -71,12 +71,12 @@ const modeLabels = {
   titans: "D0 frame",
   logline: "D1 reciprocal line",
   muLimit: "D2 mu-limit",
-  bloch: "D3 Riemann/Bloch",
-  horn: "D4 rapidity torus",
+  bloch: "D3 state-space illustration",
+  horn: "D4 rapidity illustration",
   burrisphere: "D5 dual projection",
   constitution: "5+1 constitution",
-  ccc: "/6 CCC return",
-  convergence: "/6 CCC return"
+  ccc: "D6 boundary-return illustration",
+  convergence: "D6 boundary-return illustration"
 };
 const modeInvariants = {
   titans: "s_left + s_right = 0",
@@ -86,8 +86,8 @@ const modeInvariants = {
   horn: "R/r = 1/γ",
   burrisphere: "φ·ν = 1 · B=sinθ",
   constitution: "5 refusals + Ω",
-  ccc: "/6 ≡ /0",
-  convergence: "/6 ≡ /0"
+  ccc: "r6: D6 ↝ D0",
+  convergence: "r6: D6 ↝ D0"
 };
 const modeInstrumentIds = {
   titans: "E0-FRM",
@@ -183,10 +183,10 @@ const dimensionCommands = [
   { key: "/0", aliases: ["/0", "0", "d0", "titans"], label: "/0 · Titans", detail: "Ground / finity", href: "/0/" },
   { key: "/1", aliases: ["/1", "1", "d1", "one", "finity"], label: "/1 · The Special One", detail: "Reciprocal mirror", href: "/1/" },
   { key: "/2", aliases: ["/2", "2", "d2", "mu", "mu-limit"], label: "/2 · Mu-Limit", detail: "Line to plane", href: "/2/" },
-  { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Sphere", detail: "Closure surface", href: "/3/" },
-  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Horn Torus", detail: "Energy overlap", href: "/4/" },
+  { key: "/3", aliases: ["/3", "3", "d3", "sphere", "bloch"], label: "/3 · Quantum state", detail: "State-space illustration", href: "/3/" },
+  { key: "/4", aliases: ["/4", "4", "d4", "torus", "horn"], label: "/4 · Causal actuality", detail: "Rapidity illustration", href: "/4/" },
   { key: "/5", aliases: ["/5", "5", "d5", "burrisphere", "game"], label: "/5 · Burrisphere", detail: "Dual projection", href: "/5/" },
-  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · CCC Return", detail: "Endstate = start", href: "/6/" },
+  { key: "/6", aliases: ["/6", "6", "d6", "convergence", "ccc"], label: "/6 · Exit / nonclosure", detail: "Interpretive return only", href: "/6/" },
   { key: "R", aliases: ["rosetta", "r"], label: "Rosetta", detail: "Sevenfold map", href: "/rosetta/" },
   { key: "S", aliases: ["soul", "soul-loop"], label: "Soul Loop", detail: "Loop doctrine", href: "/soul-loop/" },
   { key: "A", aliases: ["atlas", "a"], label: "Atlas", detail: "Public atlas", href: "/atlas/" },
@@ -831,9 +831,9 @@ function drawConstitutionInstrument(time = 0) {
   const sampleClock = createSampleClock();
   const fences = [
     { key: "η=0", title: "no extraction", tier: "[S]", color: "#FFEB3B" },
-    { key: "K2", title: "human signature", tier: "[B/S]", color: "#42A5F5" },
-    { key: "K3", title: "archive first", tier: "[S]", color: "#F3F4F6" },
-    { key: "K4", title: "grace exit", tier: "[S]", color: "#8B5CF6" },
+    { key: "AUTH", title: "contestable authorization", tier: "[S]", color: "#42A5F5" },
+    { key: "PROV", title: "preserve provenance", tier: "[S]", color: "#F3F4F6" },
+    { key: "EXIT", title: "grace exit", tier: "[S]", color: "#8B5CF6" },
     { key: "A7", title: "self-correction", tier: "[S]", color: "#4CAF50" }
   ];
   let bounds = resize();
@@ -2220,8 +2220,8 @@ function buildScene(mode, scene) {
         }
       );
       if (readout) readout.textContent =
-        "CCC RETURN · CONFORMAL RESCALE\n" +
-        "/6 ≡ /0 · route closure, not a new object\n" +
+        "BOUNDARY RETURN · CONFORMAL RESCALE ILLUSTRATION\n" +
+        "r6: D6 ↝ D0 · resemblance, not identity\n" +
         "a=" + (aeonRadius / boundaryRadius).toFixed(2) + " · Ω=" + (conformalRadius / boundaryRadius).toFixed(2) + " · q+(1−q)=1 · σ=" + mapResidual.toExponential(1) + "\n" +
         "trace: boundary return · Penrose CCC is analogy, not identity";
     });

@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Build book/rag_index.json — the retrieval corpus behind the AI-leveraged book.
 
-Chunks the long-scroll book by its heading anchors and adds the lede of every
-deep-library page, producing the passage corpus that assets/js/book-ai.js
-searches client-side (BM25). Retrieval is fully static and key-free; an
-owner-configured LLM endpoint upgrades answers from quoted passages to
-generated prose (RAG). Regenerable: run after rebuilding the book or library.
+Chunks the current pure-Emergentism book and front-of-house pages into the
+passage corpus searched client-side. Frozen generated-library pages are
+deliberately excluded so superseded prose cannot outrank current owners.
 
 Usage: python3 -B build_rag_index.py
 """
@@ -18,17 +16,16 @@ ROOT = Path(__file__).resolve().parent
 BOOK = ROOT / "book" / "index.html"
 OUT = ROOT / "book" / "rag_index.json"
 
-LIBRARY = ["papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators",
-           "will", "value", "ground", "sacred", "method", "meta"]
+LIBRARY = []
 
-LANDING_PAGES = ["value"]
+LANDING_PAGES = ["compass", "dimensions", "check", "plainly", "practice", "record", "exit"]
 
 # Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
 # RAG corpus stays current with the front-of-house surfaces — these carry the
 # 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
 # book prose does not yet hold.
-OVERVIEW_PAGES = ["about", "synthesis", "axioms", "0", "1", "2", "3", "4",
-                  "5", "6", "dasein", "soul-loop", "game"]
+OVERVIEW_PAGES = ["compass", "dimensions", "check", "plainly", "practice", "record", "exit",
+                  "0", "1", "2", "3", "4", "5", "6"]
 
 MAX_PASSAGE = 700          # chars of text per passage
 HEAD_RE = re.compile(r'<h([12]) id="([^"]+)"[^>]*>(.*?)</h\1>', re.S)
@@ -156,8 +153,9 @@ def overview_passages():
 
 
 def main() -> int:
-    passages = book_passages() + library_passages() + landing_passages() + overview_passages()
+    passages = book_passages() + landing_passages() + overview_passages()
     OUT.write_text(json.dumps({"generated": "build_rag_index.py",
+                               "scope": "current pure-Emergentism reader surfaces; frozen library excluded",
                                "count": len(passages), "passages": passages},
                               ensure_ascii=False), encoding="utf-8")
     size = OUT.stat().st_size

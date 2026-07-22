@@ -1,244 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>/1 — D1 Arithmetic · Emergentism</title>
-<meta name="description" content="D1 Arithmetic: distinction through a reciprocal chart. One independent variable, the seam φ·ν = 1 (empty of world), inversion, AM-GM, and six evidence tiers with no silent promotion.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="/1 — D1 Arithmetic · Emergentism">
-<meta property="og:description" content="Distinction through a reciprocal chart: the seam, inversion, and six evidence tiers.">
-<meta property="og:url" content="https://emergentism.org/1/">
-<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png">
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="../assets/css/xai.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>/1 — Distinction and arithmetic · Emergentism</title>
+<meta name="description" content="D1 owns distinction, arithmetic, inversion, limits, and type-correct boundary behavior. Division by zero remains undefined in a field; mapping to a projective pole changes the structure and must be named." />
+<link rel="icon" href="data:," />
+<link rel="stylesheet" href="../assets/css/xai.css" />
+<link rel="stylesheet" href="../dimensions/dimensions.css" />
 <script type="importmap">
-{ "imports": {
-  "three": "../vendor/three-0.160.0/three.module.js",
-  "three/addons/": "../vendor/three-0.160.0/"
-}}
+{"imports":{"three":"../vendor/three-0.160.0/three.module.js","three/addons/":"../vendor/three-0.160.0/"}}
 </script>
-<!-- pwa-chrome -->
-<link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
-<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-<script src="/assets/js/pwa.js" defer></script>
+<style>
+main{max-width:920px;margin:0 auto;padding:110px 22px 72px} .hero{padding:2rem 0 3rem;border-bottom:1px solid var(--border)}
+.eyebrow,.tier,.source{font:700 .74rem/1.6 var(--font-mono);color:var(--gold)} h1{font-size:clamp(2.5rem,7vw,5.8rem);line-height:.98;margin:.6rem 0 1.2rem}
+.lede{font-size:1.15rem;color:var(--text-muted);max-width:68ch} .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin:2rem 0}
+.grid article{background:var(--surface);padding:1.35rem} .grid p{color:var(--text-muted)} .diagram{min-height:300px;display:grid;place-items:center;border:1px solid var(--border);margin:2rem 0;overflow:hidden}
+.dimension-canvas{width:100%;height:320px} .transition{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}
+dl{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)} dt,dd{margin:0;padding:.8rem;border-bottom:1px solid var(--border)} dt{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)} dd{color:var(--text-muted)}
+.next{display:inline-block;margin-top:1rem;color:var(--gold)} .pager{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem} code{overflow-wrap:anywhere}
+@media(max-width:700px){.grid{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{padding-bottom:.2rem}dd{padding-top:.2rem}}
+</style>
 </head>
 <body>
-<!-- funnel-order: 1 of 6 -->
-<a class="ladder-return" href="../discoveries/" style="display:block;text-align:center;padding:.5rem 1rem;font-size:.76rem;letter-spacing:.05em;font-family:inherit;background:var(--surface,#0a0a0a);color:var(--accent,#FFEB3B);border-bottom:1px solid var(--border,#2a2a2a);text-decoration:none">You are on the deep ladder — back to the Discoveries →</a>
-
-<div class="site-shell">
-  <header class="topbar">
-    <a class="brand" href="../">Emergentism</a>
-    <nav class="number-nav">
-      <a href="../compass/">Compass</a>
-      <a href="../0/">0</a>
-      <a href="../1/">1</a>
-      <a href="../2/">2</a>
-      <a href="../3/">3</a>
-      <a href="../4/">4</a>
-      <a href="../5/">5</a>
-      <a href="../6/">6</a>
-      <a href="../rosetta/">R</a>
-      <a href="../soul-loop/">S</a>
-      <a href="../atlas/">A</a>
-      <a href="../game/">Game</a>
-      <a href="../read/">Read</a>
-    <a href="../halahala/">Poisons</a><a href="../exit/" class="nav-exit">Exit</a></nav>
-</header>
-
+<header class="topbar"><a class="brand" href="../compass/">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
+<main>
 <section class="hero">
-  <div class="hero-copy">
-    <div class="kicker">D1 · Arithmetic · Distinction through a reciprocal chart</div>
-    <h1>Arithmetic</h1>
-    <p class="subtitle">
-      One independent positive chart variable and its reciprocal. The seam φ·ν = 1 is true by construction and empty of world; inversion selects its fixed point; AM-GM prices every departure from it. The mathematics is inherited — used, not discovered. The naming and the discipline of warrant are ours.
-    </p>
-    <div class="equation-strip">
-      <span>ν := 1/φ</span>
-      <span>φ · ν = 1</span>
-      <span>φ + ν ≥ 2</span>
-    </div>
-    <div class="evidence">[A] seam, inversion, AM-GM — used, not discovered · [S/I] naming and fixed-point reading · [C] node-model interior</div>
-    <div class="route-readout" aria-label="/1 operating readout">
-      <div>
-        <span>Read</span>
-        <strong>One number, seen twice</strong>
-        <p>(φ−ν)² = (φ+ν)² − 4: two coordinates collapse to one independent variable.</p>
-      </div>
-      <div>
-        <span>Use</span>
-        <strong>Locate the fixed point</strong>
-        <p>The unique positive x with x = 1/x: finity, the self-dual unit.</p>
-      </div>
-      <div>
-        <span>Fence</span>
-        <strong>The seam is empty of world</strong>
-        <p>Never the score, never the node law, never an ethics warrant (CC-CORE-1).</p>
-      </div>
-    </div>
-  </div>
-  <div class="visual-panel">
-    <canvas class="dimension-canvas" aria-label="Animated reciprocal pair on the logarithmic line folding through the fixed point at one"></canvas>
-    <div class="visual-labels">
-      <div class="label top">s = log ν · seam → zero-sum</div>
-      <div class="label right"><strong>○</strong> s → +∞</div>
-      <div class="label left"><strong>•</strong> s → −∞</div>
-      <div class="label bottom"><strong>⊙</strong> log 1 = 0 · the fixed point</div>
-    </div>
-    <div class="fallback">
-      <div class="fallback-inner">
-        <div class="fallback-equation">x = 1/x ⟹ x = 1</div>
-        <p>One is the only positive real fixed by inversion — the self-dual unit. [A], used, not discovered.</p>
-      </div>
-    </div>
-  </div>
+  <p class="eyebrow">D1 · formal · [A/S/I]</p>
+  <h1>Distinction and arithmetic</h1>
+  <p class="lede">Numbers operate only inside a declared structure. D1 owns distinction, arithmetic, inversion, limits, and type-correct boundary behavior. Division by zero remains undefined in a field; mapping to a projective pole changes the structure and must be named.</p>
 </section>
-
-<section class="chapters">
-  <article class="chapter">
-    <div class="chapter-number">01</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§1 · The Moves</div>
-      <h2>One Variable, Its Reciprocal, and the Price of Imbalance</h2>
-      <p>
-        <strong>One independent chart variable.</strong> Stipulate <code>ν := 1/φ</code> for φ &gt; 0. Then <code>φ·ν = 1</code> — the <strong>seam</strong>, <span class="evidence">[A]</span> by construction: a chart identity, true the way a definition is true, and therefore <em>empty of world</em>. Two coordinates collapse to one: <code>(φ−ν)² = (φ+ν)² − 4</code>.
-      </p>
-      <p>
-        <strong>Inversion, the selected motion.</strong> The page's central operation is <code>x ↦ 1/x</code>. On the positive reals it fixes exactly one point, <code>1</code> — <em>finity</em>, the self-dual unit (math folklore <span class="evidence">[A]</span>; the name is ours <span class="evidence">[S/I]</span>). On the full projective line ℂP¹ inversion fixes <strong>both</strong> ±1 and swaps 0 ↔ ∞; plain orbit closure of {0,∞} is {0,∞}. Under the corpus's explicitly declared C21 <strong>fixed-point-inclusive frame-closure</strong>, the frame set is the foursome {−1,0,1,∞} <span class="evidence">[A]</span> — that extra closure rule must be named. The framework <em>selects</em> +1 as its positive centre; the −1 is the acknowledged <strong>dark twin</strong>, and whether it does real functional work is wager W11 <span class="evidence">[C]</span>, not an algebraic law.
-      </p>
-      <p>
-        <strong>Identity.</strong> <code>1</code> is the multiplicative identity and a perfectly ordinary operand (<code>1/1 = 1</code> by the identity law of the field). Its distinguished status here is <em>relational</em>: the unique positive fixed point of inversion and the origin of the declared logarithmic chart. Calling it a geometric midpoint of 0 and ∞ would require an additional metric and is not asserted here.
-      </p>
-      <p>
-        <strong>The log realignment.</strong> Under <code>s = log ν</code>: the seam becomes the literal zero-sum <code>log φ + log ν = 0</code>; inversion becomes reflection <code>s ↦ −s</code>; the fixed point becomes the origin (<code>log 1 = 0</code>). Multiplicative structure and additive structure are the two faces of number, coupled by log/exp <span class="evidence">[A]</span> — used, not discovered.
-      </p>
-      <p>
-        <strong>An independent convergence.</strong> The philosopher <strong>Minoru Suda</strong> reached this same reciprocal structure by another road — <code>s ↦ −s</code>, the Cayley coordinate <code>u = (x−1)/(x+1)</code>, and inversion as a half-twist <code>u ↦ −u</code> — and named its centre <em>the Egg of Infinity</em> (the Critical-One) where we name it <em>finity</em>. That two people formalized one structure from different starts is corroboration, not proof, and neither borrowed it from the other <span class="evidence">[I]</span>. <a href="../egg/" style="color:var(--accent,#FFEB3B)">See the egg — his convergence, kept in its own frame →</a>
-      </p>
-      <p>
-        <strong>AM-GM, the price of imbalance.</strong> For the conserved pair, <code>φ + ν ≥ 2</code>, with equality <strong>iff</strong> φ = ν = 1 <span class="evidence">[A]</span> (inherited inequality; used, not discovered). This is the rung's one theorem with a direction in it: departure from the fixed point is never free. Downstream it becomes the equatorial maximum of the <strong>score</strong> <code>B = 2/(φ+ν) = sin θ ≤ 1</code> — a <em>conditional</em> optimum for real systems, never the seam, never the finite-node model <code>P_node = Φ×V</code> (which stays <span class="evidence">[C]</span> in its interior; only its AND-class zero boundary is won). And when this bounded line runs to its own limit, the odds map <code>L(x)=x/(1−x)</code> unrolls it into the whole ray — the saturation that opens the next rung. <a href="../saturation/" style="color:var(--accent,#FFEB3B)">See the hinge — line → sphere &rarr;</a>
-      </p>
-    </div>
-  </article>
-
-  <article class="chapter">
-    <div class="chapter-number">02</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§2 · The Dissolutions</div>
-      <h2>Division by Zero, Repaired at the Frame</h2>
-      <p>
-        The old paradox: <code>N/0</code> "has no answer," yet limits scream toward one. The cure is a <strong>frame repair, scoped honestly</strong>. On the projective line, <code>N/0 = ∞</code> for N ≠ 0 is a well-defined map to the pole <span class="evidence">[A]</span> — the "impossible" answer was a <em>missing point</em>, not a missing number. Adding ∞ as an honest projective point dissolves the paradox for that case.
-      </p>
-      <p>
-        The diagonal <code>0/0</code> and <code>∞/∞</code> remain <strong>indeterminate by design</strong> — the sphere does not make <em>every</em> undefined operation well-defined; local dissolutions are justified case by case. The frame/operand distinction is <strong>register-scoped, not exclusive</strong> (the strong "identities are never operands" form is a named grave — dead form 14): <code>0</code> in <code>0+5</code> is an operand; <code>0</code> as the additive frame-point is a boundary role. Reading one register through the other is the error; banning either is a second error.
-      </p>
-      <p>
-        Consequently <code>⊙ = • × ○</code> is an <strong>emblem</strong> of the frame register, never field arithmetic: ∞ is not an operand and both parenthesizations involving 0·∞ are undefined, so no associativity counterexample is claimed.
-      </p>
-      <p class="doctrine-note">
-        What this rung refuses to claim: no conserved discovery hides in <code>φ·ν = 1</code> (it is <code>ν := 1/φ</code> restated — grave 5); no trinity is forced ({0,1,∞} is a naming choice over the foursome — grave 9); no ethics falls out of the seam (grave 21). The paradox dissolved here is arithmetic's own, and only arithmetic's.
-      </p>
-    </div>
-  </article>
-
-  <article class="chapter">
-    <div class="chapter-number">03</div>
-    <div class="chapter-body">
-      <div class="chapter-kicker">§3 · The Ology</div>
-      <h2>What May a Claim Weigh? The Arithmetic of Warrant</h2>
-      <p>
-        <span class="evidence">[I/D]</span> The Soul-Loop question here is <em>what may a claim weigh?</em> The answer: warrant itself has an arithmetic — six values, no silent carry. <code>[A]</code> proven, world-independent · <code>[B]</code> built/measured by us · <code>[S]</code> structural, true inside stated premises · <code>[I]</code> illuminating reading · <code>[D]</code> staged draft · <code>[C]</code> conjecture.
-      </p>
-      <p>
-        Its operations mirror the rung's own. <strong>Identity:</strong> a claim restated is a claim unchanged — fifteen renderings of one shape are one datum, never fifteen confirmations. <strong>No free promotion:</strong> tier changes are dated events with reasons; <code>[C]→[A]</code> without a trial is the arithmetic error the whole framework exists to refuse. <strong>The reciprocal check:</strong> every claim carries its kill — what would zero it — and its survivors — what stands if it falls. Warrant without a stated inverse is <code>0/0</code>: indeterminate, and inadmissible as load-bearing. <strong>AM-GM for honesty:</strong> overclaim and underclaim are the two poles; the cheapest stable position is the fixed point — say exactly what is warranted, at tier.
-      </p>
-      <p>
-        This page is a <strong>candidate minimum-sufficient orientation for a declared finite reader</strong> — a target for cold-reader trials, not an achieved theorem. Its <em>irreducibility</em> target dies if any listed move can be derived from the others plus a shorter statement; <em>sufficiency</em> dies if a D1-level arithmetic fact needed downstream cannot be recovered from this page. It claims no Kolmogorov minimum (that claim is a grave). The ethic that later uses this language is a <strong>vow, not a theorem</strong> — D5 names the choices arithmetic cannot make.
-      </p>
-      <p class="doctrine-note">
-        Rung D1 of the adopted seven-rung Seed Ladder — body synced to <code>10_SEED/01_THE_SEED_LADDER/D1_ARITHMETIC.md</code> (receipt 139, signed 2026-07-20). One reciprocal variable, one positive fixed point, one price of imbalance. The seam is never the score; the score is never the node.
-      </p>
-    </div>
-  </article>
+<section class="grid">
+  <article><h2>Inherited structure</h2><p>Field axioms, directional limits, inversion, logarithms, and projective extension are inherited mathematics [A].</p></article>
+  <article><h2>Claim boundary</h2><p>A limit toward infinity is not a field quotient by zero, and projective infinity is not an ordinary real number.</p></article>
 </section>
-
-<section class="axiom-ledger" aria-labelledby="d1-axioms">
-  <div class="axiom-ledger-header">
-    <div class="chapter-kicker">Foundations · arithmetic before interpretation</div>
-    <h2 id="d1-axioms">Axioms that support this rung</h2>
-    <p>D1 uses standard arithmetic on the positive reals. The axiom systems are inherited; inversion, logarithms, and AM–GM are consequences or constructions inside them, not Emergentist discoveries.</p>
-  </div>
-  <div class="axiom-list">
-    <article class="axiom-card">
-      <div class="axiom-origin">Peano arithmetic · inherited [A]</div>
-      <div>
-        <h3>The counting foundation</h3>
-        <ul>
-          <li><code>0</code> is a natural number, and every natural number has a successor.</li>
-          <li><code>0</code> is not a successor; equal successors have equal predecessors.</li>
-          <li><strong>Induction:</strong> a property true at <code>0</code> and preserved by successor is true for every natural number.</li>
-        </ul>
-        <p>Peano's axioms ground counting. They do not by themselves construct the positive real chart used below.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Real numbers · inherited [A]</div>
-      <div>
-        <h3>Complete ordered-field axioms</h3>
-        <p>The reals form a commutative field: addition and multiplication are associative and commutative, distribute over one another, have identities, and have the required inverses. Their total order is compatible with addition and positive multiplication. The least-upper-bound property supplies completeness.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Derived results · inherited [A]</div>
-      <div>
-        <h3>What is theorem, not axiom</h3>
-        <p>Given <code>ν := 1/φ</code> with <code>φ &gt; 0</code>, the seam <code>φν = 1</code> is definitional. The positive fixed point of inversion, the log/exp correspondence, and <code>φ + ν ≥ 2</code> by AM–GM are standard results. Emergentism contributes the names “seam,” “finity,” and “price of imbalance,” not the mathematics.</p>
-      </div>
-    </article>
-    <article class="axiom-card">
-      <div class="axiom-origin">Emergentism · selected [S/I]</div>
-      <div>
-        <h3>The local declaration</h3>
-        <p>The rung selects the positive reciprocal chart and uses its fixed point as a discipline of warrant. That reading is not entailed by Peano arithmetic or the ordered-field axioms, and no ethic follows from it.</p>
-      </div>
-    </article>
-  </div>
-  <p class="axiom-note"><strong>Attribution:</strong> Peano, the ordered-field construction of ℝ, logarithms, inversion, and AM–GM are prior art — used, not discovered.</p>
+<section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
+  <canvas class="dimension-canvas"></canvas>
+  <noscript>Illustration omitted. The text carries the claim.</noscript>
 </section>
+<p class="source">Semantic owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md</code></p>
 
-<section class="mu-limit">
-  <div class="mu-inner">
-    <div class="mu-mark">μ₁</div>
-    <h2>From One Variable to One Surface</h2>
-    <p>
-      D1 gave one variable and its mirror. D2 gives the pair a surface: a declared reciprocal meridian of the sphere, where the seam stays identically one and the score rises to its maximum at the equator — and where the discipline is refusing to confuse the two.
-    </p>
-    <a href="../2/">Continue to /2 — D2 Geometry →</a>
-  </div>
+<section class="transition" id="mu1">
+  <p class="eyebrow">μ1 · candidate μ-crossing</p>
+  <h2>Configuration aperture</h2>
+  <dl><dt>Saturation proposal</dt><dd>One-dimensional values and limits cease to display relations among many inputs, outputs, and charts economically.</dd><dt>New capability</dt><dd>Functions, graphs, relations, atlases, and geometry become explicit configurations.</dd><dt>Lower-level recovery</dt><dd>Every D2 configuration must recover valid D1 values and operations on its declared domain.</dd><dt>Evidence</dt><dd>[S/I] formal example; not proof of universal emergence</dd><dt>Prediction</dt><dd>A configuration representation should make some D1 limit behavior finite and inspectable without changing the underlying arithmetic result.</dd><dt>Alternatives</dt><dd>The added representation may be a convenience, compression, or definitional extension rather than an ontic emergence.</dd><dt>Kill criterion</dt><dd>If the proposed D2 representation adds no relational capability or fails to recover its D1 values, this crossing fails.</dd></dl>
+  <p class="source">Source owner: <code>05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md</code></p>
+  <a class="next" href="../2/">Continue through μ1 →</a>
 </section>
-
-<footer class="site-footer">
-  <div class="phi">⊙ = • × ○</div>
-  <p>Public doctrine surface · evidence tiers preserved</p>
-  <p><a href="../0/">/0</a> · <a href="../sources/index.html">Sources</a> · <a href="../2/">/2</a></p>
-</footer>
-</div>
-
-<script>
-  window.DIMENSION_PAGE = { animationMode: "logline" };
-</script>
-<script type="module" src="../dimensions/dimensions.js?v=2026-06-14-instrument-21"></script>
-
-<script defer src="/assets/js/atlas-drawer.js"></script>
-
-<footer class="k4-footer" style="margin-top:3rem;padding:1.1rem 1.2rem;border-top:1px solid rgba(233,230,223,.14);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.74rem;line-height:1.7;color:#8a8577;text-align:center">
-  <a href="../record/" style="color:#e8b84b;text-decoration:none">The record</a> — every claim that died, with its date.
-  &nbsp;·&nbsp;
-  <a href="../exit/" style="color:#8a8577;text-decoration:none">The exit</a> — if you can see directly, put this down.
-</footer>
+<nav class="pager"><a href="../0/">← D0</a><a href="../2/">D2 →</a></nav>
+</main>
+<footer class="site-footer">Public projection · source tiers preserved · <a href="../practice/">use the compass</a> · <a href="../exit/">put it down</a></footer>
+<script>window.DIMENSION_PAGE={animationMode:"logline"};</script>
+<script type="module" src="../dimensions/dimensions.js"></script>
 </body>
 </html>

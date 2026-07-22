@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Render THE_LONG_SCROLL.md -> a self-contained static long-scroll reader at book/index.html.
+"""Render the pure Emergentism reader stack into book/index.html.
 
 A Network-State-style free online book: sticky chapter table-of-contents, scroll
 progress, deep-linkable sections, inline evidence-tier chips, light/dark reading
 themes. Output is fully self-contained (no external resource references) so it
-passes the 12_PUBLIC_SITE predeploy supply-chain gate. This .py is .vercelignored
-(build tooling, not shipped). The book SOURCE is canonical in the SKYZAI lane;
-this writes a published static snapshot into the public site.
+passes the 12_PUBLIC_SITE predeploy supply-chain gate. This .py is
+.vercelignored (build tooling, not shipped). Source authority stays with the
+three Emergentism documents named below; the result is only a public snapshot.
 
 Run:  python3 -B build_book.py
 """
@@ -14,9 +14,12 @@ import os, re, sys
 import markdown
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.normpath(os.path.join(
-    HERE, "..", "..", "02_SKYZAI", "02_AIA", "EMERGENTISM_AIA",
-    "07_DEFINITIVE_ONE_BOOK", "THE_LONG_SCROLL.md"))
+ROOT = os.path.normpath(os.path.join(HERE, ".."))
+SOURCES = [
+    os.path.join(ROOT, "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"),
+    os.path.join(ROOT, "06_ONTOLOGY", "08_THE_HUMAN_CONDITION.md"),
+    os.path.join(ROOT, "01_TELEOLOGY", "04_THE_LIVED_COMPASS.md"),
+]
 OUT_DIR = os.path.join(HERE, "book")
 OUT = os.path.join(OUT_DIR, "index.html")
 
@@ -32,14 +35,21 @@ def wrap_tiers(htmltext):
     return TIER_RE.sub(repl, htmltext)
 
 def build():
-    if not os.path.exists(SRC):
-        sys.exit(f"book source not found: {SRC}")
-    raw = open(SRC, encoding="utf-8").read()
-    raw = re.sub(r'^<!--.*?-->\s*', '', raw, flags=re.S)  # drop build-artifact banner
-    raw = re.sub(r'\n---\s*\n(?:rosetta:|title:).*?\n---\s*\n', '\n\n', raw, flags=re.S)  # strip chapter metadata
+    missing = [source for source in SOURCES if not os.path.exists(source)]
+    if missing:
+        sys.exit(f"book source not found: {missing[0]}")
+    bodies = []
+    for source in SOURCES:
+        text = open(source, encoding="utf-8").read()
+        text = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, flags=re.S)
+        bodies.append(text.strip())
+    raw = "\n\n---\n\n".join(bodies)
 
     md = markdown.Markdown(extensions=["extra", "toc", "sane_lists"])
     body = md.convert(raw)
+    # Repository Markdown sources are not deployed. Route their links to the
+    # public source boundary instead of emitting dead filesystem-relative URLs.
+    body = re.sub(r'href="[^"#]*\.md(?:#[^"]*)?"', 'href="../sources/"', body)
     body = wrap_tiers(body)
 
     # Split into chapter sections at each <h1 id=...>.
@@ -110,7 +120,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 <style>
-/* Self-hosted Roboto (Apache-2.0) — accessible, gate-safe; the Skyzai grammar in the chrome */
+/* Self-hosted Roboto (Apache-2.0) — accessible and gate-safe */
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:optional;src:url('../assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 @font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:optional;src:url('../assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -291,7 +301,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
       %%BODY%%
       <footer class="book-foot">
         <div class="phi">⊙ = • × ○</div>
-        <p>The book is free. The source it distills is open at the <a href="../read/">framework library</a>.</p>
+        <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>
         <p>Its highest success is that you can put it down.</p>
       </footer>
     </div>
