@@ -7,6 +7,8 @@ rosetta:
   regime: "Kṣatriya"
   register: "[D] forwarding-stub"
 type: forwarding-stub
+canonical_target: 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
+historical_target: 90_ARCHIVE/staging_drafts_2026_07_20/00_K5_REFUSALS.md
 title: "00_K5_REFUSALS.md — tombstoned 2026-07-20"
 status: FORWARDING STUB
 ---

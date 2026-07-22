@@ -21,11 +21,11 @@ title: "00 Corpus"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
 status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../08_FRAMEWORK_SUPPORT/00_META/00_CORPUS.md"
+canonical_target: "../../00_THE_KERNEL_INDEX.md"
 ---
 
 # MOVED
 
-This file moved to: [08_FRAMEWORK_SUPPORT/00_META/00_CORPUS.md](../../08_FRAMEWORK_SUPPORT/00_META/00_CORPUS.md)
+The retired corpus index is superseded by the [Kernel Index](../../00_THE_KERNEL_INDEX.md). This file is a compatibility route, not an authority surface.
 
 Canonical content lives at the new path (Phase 2c reorg per packet 156). Old link preservation only.

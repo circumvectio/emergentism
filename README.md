@@ -71,6 +71,8 @@ tests. Consequential action uses a complete, scoped, contestable
 
 | Path | Role |
 |---|---|
+| `00_CONTROL/` | validation policies and control surfaces; never doctrine |
+| `00_HANDOFF/` | dated working packets and session transfer; never doctrine |
 | `00_META/` | canon registry, Compass, Refusals, corpus maps |
 | `01_TELEOLOGY/` | goals, option-cone and future-oriented hypotheses |
 | `02_EPISTEMOLOGY/` | evidence tiers, disclosure, limits of instruments |

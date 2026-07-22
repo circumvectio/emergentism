@@ -12,11 +12,14 @@ the kernel, ontology, formal system, axiology, and methodology owners.
 ## Active map
 
 - [`00_START_HERE.md`](00_START_HERE.md) — short reader route and boundary.
-- [`00_META/`](00_META/) — posture and synthesis notes.
+- [`04_COMPILERS_AND_ANALYSIS/`](04_COMPILERS_AND_ANALYSIS/) — compilers,
+  historical synthesis, and analysis downstream of source owners.
 - [`01_GOVERNANCE/`](01_GOVERNANCE/) — domain-general corrigibility concepts;
   “governance” here means accountable constraint, not a product constitution.
 - [`02_OPERATORS/`](02_OPERATORS/) — operator and correspondence studies.
 - [`03_EVIDENCE/`](03_EVIDENCE/) — Rosetta, comparative evidence, and paradox work.
+- [`91_COMPATIBILITY/`](91_COMPATIBILITY/) — route map for retired support paths;
+  never a doctrine owner.
 - [`05_SYNTHESIS/`](05_SYNTHESIS/) — compressed readings downstream of owners.
 - [`08_AGENTS/`](08_AGENTS/) — optional cognitive-role grammar; selected roles,
   never human castes, identities, or work authority.

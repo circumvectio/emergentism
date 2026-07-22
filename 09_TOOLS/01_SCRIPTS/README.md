@@ -34,6 +34,8 @@ General-purpose repository scripts.
 - Uplink/state compilation.
 - Rosetta annotation helpers.
 - Path and link repair utilities.
+- `check_tree_contract.py` — enforce top-level lanes, route triplets, Doors,
+  forwarding targets, the single root governance spine, and a noise-free tree.
 - One-file support scripts that are not large enough to become packages.
 
 ## What It Must Not Own

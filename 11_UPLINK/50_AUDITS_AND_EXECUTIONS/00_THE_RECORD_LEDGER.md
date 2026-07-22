@@ -16,7 +16,7 @@ parents:
   - 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md
   - 00_THE_KERNEL_INDEX.md
   - 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
-  - 08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md
+  - 02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_PAPERS_LENS_CLOSURE_2026_07_20.md
@@ -150,7 +150,7 @@ ledger's assembly of them.
 
 ## 4 · The rules of the record — the four postures
 
-Every worldview lives in the synthetic gap (formally valid, beyond proof, held as a wager). They cannot compete *in* the gap; they compete by their **posture toward** it. `[I]`. Full source: `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` (filename retained per K3; content is four postures, r129).
+Every worldview lives in the synthetic gap (formally valid, beyond proof, held as a wager). They cannot compete *in* the gap; they compete by their **posture toward** it. `[I]`. Active source: `02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`; the earlier three-postures filename is preserved as dated provenance.
 
 | Posture | Stance toward the gap | Signature | Makes people |
 |---|---|---|---|
@@ -249,6 +249,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 160 | `160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md` | 2026-07-22 | Physical cache cleanup, repository-authority correction, and archival separation of a mixed cross-pillar rule compilation |
 | 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | 2026-07-22 | Weltanschauung/ToE gap audit and scaffold-first frontier-model assembly strategy |
 | 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | 2026-07-22 | Static Living Map, public Gap Lab, bounded contribution contract, and rendered release verification |
+| 163 | `163_TREE_CONTRACT_AND_AUTHORITY_RECONCILIATION_2026_07_22.md` | 2026-07-22 | Executable tree contract, framework-support route repair, handoff front door, and active-authority reconciliation |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.

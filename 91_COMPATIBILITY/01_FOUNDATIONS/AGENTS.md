@@ -39,7 +39,7 @@ sources:
 - `README.md`
 - [`../AGENTS.md`](../AGENTS.md)
 - [`../../AGENTS.md`](../../AGENTS.md)
-- [`../../08_FRAMEWORK_SUPPORT/00_META/00_CORPUS.md`](../../08_FRAMEWORK_SUPPORT/00_META/00_CORPUS.md)
+- [`../../00_THE_KERNEL_INDEX.md`](../../00_THE_KERNEL_INDEX.md)
 
 ## Preserved Payloads
 

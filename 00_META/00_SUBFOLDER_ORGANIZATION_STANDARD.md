@@ -39,7 +39,8 @@ Use these types consistently.
 
 ## 3. Local README Contract
 
-Every sub-subfolder with files should have a `README.md` or `00_INDEX.md` that states:
+Every active documentary sub-subfolder with files should have a `README.md` or
+`00_INDEX.md` that states:
 
 1. what the folder is,
 2. what it owns,
@@ -48,6 +49,12 @@ Every sub-subfolder with files should have a `README.md` or `00_INDEX.md` that s
 5. whether it is active, archived, generated, or compatibility-only.
 
 Short is better than ornate. A folder front door is a routing instrument, not an essay.
+
+Code packages, generated dependency/build trees, and raw data leaves follow
+their native package or dataset conventions. Deep cold-archive descendants may
+inherit the nearest archive README when they are one custody batch and have no
+independent active meaning. This exception must never be used to hide an active
+owner or an unmarked compatibility route.
 
 ## 4. Source Ownership
 
@@ -140,6 +147,28 @@ The short version:
 - keep anti-capture as structure, not ornament.
 
 `Zero-Sum Resolution Equation`
+
+## 9A. Canonical Root Shape
+
+The active root has four classes and no fifth:
+
+```text
+01_EMERGENTISM/
+├── reader doors                 README, Weltanschauung, Kernel Index, Rosetta
+├── control surfaces             00_CONTROL, 00_HANDOFF, 00_META
+├── semantic and support lanes   01_TELEOLOGY … 12_PUBLIC_SITE
+└── custody surfaces             90_ARCHIVE, 91_COMPATIBILITY
+```
+
+Root forwarding stubs are permitted only when they resolve an older citation to
+an existing active or historical target. A forwarding stub cannot contain new
+doctrine. The repository map in `README.md` is the human front door; this
+standard is the architectural owner; `09_TOOLS/01_SCRIPTS/check_tree_contract.py`
+is the executable guard. Generated registers describe the tree but do not own it.
+
+Within `08_FRAMEWORK_SUPPORT/`, compilers and historical analysis live under
+`04_COMPILERS_AND_ANALYSIS/`. No semantic or support lane may create its own
+`00_META/`; old references are explained through a `91_COMPATIBILITY/` map.
 
 ---
 

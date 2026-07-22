@@ -7,6 +7,8 @@ rosetta:
   regime: "Kṣatriya"
   register: "[D] forwarding-stub"
 type: forwarding-stub
+canonical_target: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md
+historical_target: 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md
 title: "00_K7_RECORD.md — tombstoned 2026-07-20"
 status: FORWARDING STUB
 ---

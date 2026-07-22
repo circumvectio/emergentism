@@ -6,10 +6,11 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 90_ARCHIVE/old_front_doors/00_CANONICAL_TREE_OUTLINE.md
-status: "FORWARDING STUB — 2026-07-20 (receipt 139 Wave 2). K3: tombstoned, not erased; citations to this root path resolve here."
+canonical_target: 00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md
+historical_target: 90_ARCHIVE/old_front_doors/00_CANONICAL_TREE_OUTLINE.md
+status: "FORWARDING STUB — active tree contract plus preserved historical outline."
 owner: 01_EMERGENTISM
 date: 2026-07-20
 ---
 
-Forwarding stub. This former front door was tombstoned to [90_ARCHIVE/old_front_doors/00_CANONICAL_TREE_OUTLINE.md](90_ARCHIVE/old_front_doors/00_CANONICAL_TREE_OUTLINE.md). The active door is [00_THE_WELTANSCHAUUNG.md](00_THE_WELTANSCHAUUNG.md); the index is [00_THE_KERNEL_INDEX.md](00_THE_KERNEL_INDEX.md).
+Forwarding stub. The active tree contract is the [Subfolder Organization Standard](00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md). The former outline remains [historical provenance](90_ARCHIVE/old_front_doors/00_CANONICAL_TREE_OUTLINE.md). The reader door is [The Weltanschauung](00_THE_WELTANSCHAUUNG.md); its semantic index is [The Kernel Index](00_THE_KERNEL_INDEX.md).

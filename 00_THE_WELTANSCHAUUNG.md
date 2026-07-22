@@ -60,7 +60,7 @@ certificate or a “most good” superlative the world has not tested.
 | Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `[S]` model language / `[I]` names |
 | The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + receipts 105–107 | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
-| Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
+| Postures (deny / weaponize / confess / withdraw) | `02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
 | Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | derived `[S/I]` anthropology; consciousness, death and ultimate identity remain open |
 | Lived practice | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | derived `[S/I]` Soul Loop decision practice; external outcomes `[C]` |
