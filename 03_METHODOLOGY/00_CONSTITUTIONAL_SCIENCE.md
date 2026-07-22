@@ -118,7 +118,7 @@ authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.
 1. **Enforce the refusals.** Zero extraction, accountable authorization, Grace Exit, archive-with-tombstone custody, and self-correction are non-negotiable. A consequential proposal must declare its principal, mandate, scope, consent, custody, contest path, actor, and consequence bearer.
 2. **Check extraction vectors.** `η = 0` means fees only on value created. Toll access, data extraction, and participation rent are unconstitutional; value-created compensation must remain receipt-bound and exit-safe.
 3. **Verify corrigibility.** Every system must have a self-correction path (A7). If a design cannot be updated or rolled back, it is not constitutional.
-4. **Preserve exit-safety.** Operators must be able to leave with everything. No lock-in, no sunk-cost traps, no institutional capture.
+4. **Preserve exit-safety.** Operators must be able to leave with what is theirs — their legitimate property and data (a pro-rata claim on redeemable assets, not full-NAV). No lock-in, no sunk-cost traps, no institutional capture.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md`
 
 **Output:** Flag any proposal that launders evidence, extracts from a bearer, obscures authorization or consequence, blocks correction, or removes exit. Route defensible designs to implementation.

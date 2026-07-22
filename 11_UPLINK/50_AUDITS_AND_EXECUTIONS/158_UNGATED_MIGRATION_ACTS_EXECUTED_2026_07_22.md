@@ -60,9 +60,14 @@ Wire-up to predeploy remains available via `--changed`.
 
 ## Act 4 · The protocol monitor — DONE; census claim strengthened, one target void
 
-- `13_K_INVARIANTS.md` **does not exist anywhere** (find across both pillars,
-  worktrees excluded). The census's "file named K contains the L-list" target
-  is gone; recorded void.
+- `13_K_INVARIANTS.md` — **ERRATUM (same day, council-caught):** this receipt
+  originally said "does not exist anywhere (find across both pillars)." The
+  claim was a **scope error**: the find searched 01_EMERGENTISM and 02_SKYZAI
+  only, and the file is **live at
+  `03_VENTURES/OPEN_FINANCE_NETWORK/GOVERNANCE/FOUNDATION/CANON/ONTOLOGY/ONTOLOGY/FOUNDATION/13_K_INVARIANTS.md`**
+  (286 lines, "L Invariants — The Ten Unforkable Laws", v0.1.0 Draft; verified
+  by direct read 2026-07-22). A two-pillar search may never wear a universal
+  claim. FG-7 therefore has two live parties; see the Twelve Rulings.
 - `invariant_monitor.ex`: naming + coverage note added to its `@moduledoc`.
   Coverage verified **stronger than the census**: `verify_all/0` invokes 4 of
   9 checks, and `check_k3/0` and `check_k5/0` **unconditionally return `:ok`**
