@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3167,
+  "entry_count": 3171,
   "entries": [
     {
       "path": ".gitattributes",
@@ -923,6 +923,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "00_META/00_PLAIN_LANGUAGE_NAMING_LAW.md",
+      "sha256": "b1bfc7430b91a9e5ff50b2bb448fe4d60587e9ae8a9e81440b4bf12cd768f2d3",
+      "bytes": 1462,
+      "owner_lane": "00_META",
+      "artifact_class": "doctrine",
+      "authority_status": "unrated",
+      "evidence_tier": "[S]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 6,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "00_META/00_RECONCILIATION_SCOPE_BOUNDARY_NOTE.md",
       "sha256": "1c316fea61f6e51d4c60dbcdde1d5e6728616be4099e6896f098a63aaa43b581",
       "bytes": 5141,
@@ -1025,6 +1042,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "00_META/00_THE_FINAL_RULES_2026_07_22.md",
+      "sha256": "ac62a8d6ce57033ae5325ecb4836266355e3b4bf4f34d31bb0188a90f2ef0131",
+      "bytes": 1013,
+      "owner_lane": "00_META",
+      "artifact_class": "doctrine",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 7,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "00_META/00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md",
       "sha256": "e86597cfcf986c703f5314a9bec8221872ba379c6c0a0bc76ab638be4e757dc2",
       "bytes": 497,
@@ -1054,7 +1088,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 108,
+      "inbound_references": 109,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -13498,7 +13532,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 0,
+      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -13515,7 +13549,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 5,
+      "inbound_references": 6,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15045,7 +15079,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 5,
+      "inbound_references": 6,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -18004,6 +18038,23 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 2,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md",
+      "sha256": "2c263184be5e6823c3516f14567b5751041a28916804e494ff157f77ea99e1ac",
+      "bytes": 3330,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -37145,7 +37196,24 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 2,
+      "inbound_references": 7,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_mixed_final_rules_boundary/README.md",
+      "sha256": "29324f3d79cfdf8c00088a8bb48bd6b7fa6e70c1b64a2897c29fa62c54c32a7b",
+      "bytes": 918,
+      "owner_lane": "90_ARCHIVE",
+      "artifact_class": "archive",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 999,
       "gate": null,
       "review_state": "unreviewed"
     },

@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3166,
+      "tracked_file_count": 3170,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -129,7 +129,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 57,
+      "tracked_file_count": 59,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 383,
+      "tracked_file_count": 384,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1195,7 +1195,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 163,
+      "tracked_file_count": 164,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7253,7 +7253,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1072,
+      "tracked_file_count": 1073,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8184,12 +8184,12 @@
     {
       "path": "90_ARCHIVE/2026_07_22_mixed_final_rules_boundary",
       "type": "archive",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "90_ARCHIVE/2026_07_22_mixed_final_rules_boundary/README.md",
+      "front_door_requirement": "present",
+      "owns": "This archive preserves the byte-for-byte body moved from",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1,
+      "tracked_file_count": 2,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

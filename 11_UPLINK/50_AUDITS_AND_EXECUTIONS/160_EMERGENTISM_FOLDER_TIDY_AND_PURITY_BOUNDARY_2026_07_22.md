@@ -66,7 +66,8 @@ checker rather than mistaken for leaked authority.
 - the full compiler semantic suite: 92 tests passed; its stricter link test
   exposed and then verified repairs to ten incorrectly rooted forwarding links
   left by the preceding root move;
-- deterministic registers: clean at 3,167 files and 756 folders;
+- deterministic registers: clean at 3,171 files and 756 folders after the
+  four new paths became tracked;
 - `git diff --check`: clean;
 - no source, archive, public deployment, DNS, or external product repository
   was deleted or changed by this receipt.
