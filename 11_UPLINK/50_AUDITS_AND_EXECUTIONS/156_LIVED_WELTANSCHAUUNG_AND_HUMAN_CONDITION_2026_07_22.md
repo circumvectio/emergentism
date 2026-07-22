@@ -16,6 +16,14 @@ parents:
 
 # Receipt 156 — Lived Weltanschauung and Human Condition
 
+> **[金] Correction, 2026-07-22.** At the receipt's original commit
+> (`80c6c22`), the final verification line incorrectly said
+> `91_COMPATIBILITY` was untouched. Fourteen compatibility route cards had in
+> fact changed. Receipt `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md`
+> preserves the independent finding. The cards were subsequently restored
+> byte-for-byte from the declared base `4154ebe`; therefore the zero-change
+> statement below describes the repaired lineage, not the original commit.
+
 ## Disposition
 
 Pure Emergentism now has a continuous one-sitting reader synthesis, an explicit
@@ -95,7 +103,8 @@ active Markdown links resolve
 canonical file/folder registers regenerated and drift-clean
 archive object hashes match their pre-move owners
 staged and worktree diff checks pass
-0 changes under 12_PUBLIC_SITE, 02_SKYZAI, or 91_COMPATIBILITY
+0 net changes under 12_PUBLIC_SITE, 02_SKYZAI, or 91_COMPATIBILITY after the
+Receipt-156A compatibility restoration
 ```
 
 The formal kernel remains local machine-checked evidence only. The reader

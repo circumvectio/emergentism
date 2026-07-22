@@ -683,6 +683,17 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         self.assertEqual(process.returncode, 0, process.stdout + process.stderr)
         self.assertIn("EMERGENTISM PURITY: PASS", process.stdout)
 
+    def test_purity_scope_excludes_compatibility_route_cards(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_scope", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        compatibility_card = ROOT / "91_COMPATIBILITY/AGENTS.md"
+        self.assertFalse(module.is_active_route(compatibility_card))
+        self.assertFalse(module.is_active_corpus_file(compatibility_card))
+
     def test_purity_tokenizer_catches_underscore_and_plural_forms(self):
         checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
         spec = importlib.util.spec_from_file_location("emergentism_purity", checker)

@@ -125,6 +125,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | Dimension-first owners purified and test-closed; state→history→history-field compression recorded; external calibration and public projection remain open. |
 | 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | Grand Puzzle research map assembled; eleven world-contact sockets packet-complete/evidence-open; active ASI application material archived; phantom proof claims tombstoned. |
 | 156 | `156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md` | One-sitting worldview, Human Condition, and Lived Compass completed as subordinate reader/practice syntheses; Torus and Ring overclaims archived; external calibration remains open. |
+| 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | Preserves and reconciles the concurrent independent verification: compatibility drift was real and repaired; the later ASI tombstone state closes the earlier copy-versus-move finding. |
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -230,12 +231,13 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | 2026-07-21 | Dimension-first canon purification and internal closure |
 | 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | 2026-07-22 | Grand Puzzle assembly and application-boundary cleanup |
 | 156 | `156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md` | 2026-07-22 | Lived Weltanschauung, Human Condition, and archive reconciliation |
+| 156 / 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | 2026-07-22 | Independent verification preserved under a letter suffix after a concurrent receipt-number collision |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.
 - **№ 93 is absent** from the № sequence (92 → 94) — recorded, not back-filled.
 - **Date-prefixed pair outside the № scheme:** `2026-05-24_L7_RUMINATION_COMPRESSION_PRUNING_PROPOSAL.md` + `2026-05-24_L7_RUMINATION_EVIDENCE_AUDIT_REPORT.md` (same ISO-date prefix, two ruminations).
-- **Letter-suffix disambiguations in force:** `52a`, `141A` — the suffix, not the №, is the citation key.
+- **Letter-suffix disambiguations in force:** `52a`, `141A`, `156A` — the suffix, not the №, is the citation key.
 
 ---
 

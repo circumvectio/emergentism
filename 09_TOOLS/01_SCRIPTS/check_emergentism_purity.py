@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 ROUTE_EXCLUDED_PARTS = {
     "90_ARCHIVE",
+    "91_COMPATIBILITY",
     "12_PUBLIC_SITE",
     "00_HANDOFF",
     "50_AUDITS_AND_EXECUTIONS",
