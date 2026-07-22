@@ -205,8 +205,19 @@ count only citers that are live doctrine — excluding archives, dated handoff
 packets, other stubs, and any audit or tidy-plan document. A stub cited only by
 the pass that created it is not load-bearing; it is an echo.
 
-Four binding rules, enforced by
-`09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py`:
+Four binding rules. `09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py` **detects**
+violations of them; it does not enforce them, and **it is currently red**:
+
+> **Gate status, dated 2026-07-22.** The checker exits `1` — *75 violations
+> across 97 stubs* corpus-wide (70 are in-lane stubs declaring no target at
+> all). The **root** surface is clean; the lanes are not. An earlier draft of
+> this section said the rules were *"enforced by"* the checker, which read as a
+> passing gate over a failing one — **the same false-green pattern this
+> standard exists to name, committed inside the standard.** Corrected here. The
+> rules below are the contract; the checker is the detector; the backlog is
+> real and open.
+
+
 
 1. A stub declares at least one target, and it resolves.
 2. **`canonical_target` means a LIVE owner.** It may never name a path under
