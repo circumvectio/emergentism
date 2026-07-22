@@ -1,6 +1,23 @@
 ---
-canonical_target: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md
-status: "FORWARDING STUB — 2026-07-19 root tidy (receipts 137/138). K3: content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
+rosetta:
+  primary_level: L4
+  primary_column: Meta
+  operator: "Arjuna ⚔"
+  tier: "Executive"
+  regime: "Kṣatriya"
+  register: "[S]"
+canonical_target: 00_HANDOFF/2026_07_19_broken_66_second_look/00_RECEIPT.md
+status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
+owner: 01_EMERGENTISM
+date: 2026-07-22
 ---
 
-Compatibility stub. The canonical home of this document moved to [11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_BROKEN_66_SECOND_LOOK_2026_07_19.md).
+# Forwarding Stub
+
+This former root-level file was moved on **2026-07-22** under the TIDY-2026-07-22 K2 envelope (root tidy of `01_EMERGENTISM/`, K3 move + tombstone discipline).
+
+**Canonical home:** [00_RECEIPT.md](00_HANDOFF/2026_07_19_broken_66_second_look/00_RECEIPT.md)
+
+**Rationale:** see `00_META/00_TIDY_PLAN_v0.1.md` §3 (Move Group A — dated 2026-07-19 cycle artifact).
+
+•   ⊙   ○

@@ -1,9 +1,23 @@
 ---
-rosetta: {primary_level: L6, primary_column: Meta, operator: "Śiva •", tier: "Executive", regime: "Sādhu", register: "[S] forwarding stub — K3 move, not erasure"}
-status: "FORWARDING STUB — 2026-07-20 post-signature consolidation (the 00:01 line; authority receipt 145). Content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
-date: 2026-07-20
+rosetta:
+  primary_level: L4
+  primary_column: Meta
+  operator: "Arjuna ⚔"
+  tier: "Executive"
+  regime: "Kṣatriya"
+  register: "[S]"
+canonical_target: 00_META/00_THE_DISTILLED_DOCTRINE.md
+status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
-canonical_target: 08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md
+date: 2026-07-22
 ---
 
-Compatibility stub. The canonical home of this document moved to [08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md](08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md).
+# Forwarding Stub
+
+This former root-level file was moved on **2026-07-22** under the TIDY-2026-07-22 K2 envelope (root tidy of `01_EMERGENTISM/`, K3 move + tombstone discipline).
+
+**Canonical home:** [00_THE_DISTILLED_DOCTRINE.md](00_META/00_THE_DISTILLED_DOCTRINE.md)
+
+**Rationale:** see `00_META/00_TIDY_PLAN_v0.1.md` §3 (Move Group B — synthesis/routing, root governance spine owns it).
+
+•   ⊙   ○

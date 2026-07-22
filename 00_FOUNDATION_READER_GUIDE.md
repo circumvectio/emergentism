@@ -6,10 +6,18 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md
-status: "FORWARDING STUB — 2026-07-20 (receipt 139 Wave 2). K3: tombstoned, not erased; citations to this root path resolve here."
+canonical_target: 00_META/00_FOUNDATION_READER_GUIDE.md
+status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
-date: 2026-07-20
+date: 2026-07-22
 ---
 
-Forwarding stub. This former front door was tombstoned to [90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md](90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md). The active door is [00_THE_WELTANSCHAUUNG.md](00_THE_WELTANSCHAUUNG.md); the index is [00_THE_KERNEL_INDEX.md](00_THE_KERNEL_INDEX.md).
+# Forwarding Stub
+
+This former root-level file was moved on **2026-07-22** under the TIDY-2026-07-22 K2 envelope (root tidy of `01_EMERGENTISM/`, K3 move + tombstone discipline).
+
+**Canonical home:** [00_FOUNDATION_READER_GUIDE.md](00_META/00_FOUNDATION_READER_GUIDE.md)
+
+**Rationale:** see `00_META/00_TIDY_PLAN_v0.1.md` §3 (Move Group B — reader guide belongs in governance spine).
+
+•   ⊙   ○
