@@ -101,16 +101,20 @@ The equator isn't a moral recommendation. It's the **boundary of what's structur
 
 ---
 
-## The Frame
+## The Typed Numeric Chart
 
 ```
-• × ○ = ⊙            Nothing times everything equals one.     ONTOLOGY
-• + ○ ≥ ⊙ + ⊙        Their sum is at least two.               TELEOLOGY
-(• − ○)² → 0          Their difference shrinks toward zero.    METHODOLOGY
-−log(• × ○) = 0       The ground state has zero energy.        AXIOLOGY
+φν = 1                 Reciprocal chart constraint.             ONTOLOGY
+φ + ν ≥ 2              AM-GM lower bound.                       TELEOLOGY
+(φ − ν)² → 0           Candidate correction objective.          METHODOLOGY
+E(φ,ν) := −log(φν) = 0 Chart energy on the constrained domain.  AXIOLOGY
 ```
 
-**Reciprocal closure is the seed. A square cannot be negative is the first arithmetic consequence. Everything else is translation.**
+These are formulas on `φ,ν ∈ ℝ_{>0}`. They are not operations on the D0 Titan
+renderings. `TitanFrame` is sovereign and has no arithmetic or implicit numeric
+coercion. Reciprocal closure is a selected chart definition; non-negativity of
+the square and the AM-GM bound are its arithmetic consequences. The ethical and
+dynamical readings remain translations with separately stated assumptions.
 
 ---
 

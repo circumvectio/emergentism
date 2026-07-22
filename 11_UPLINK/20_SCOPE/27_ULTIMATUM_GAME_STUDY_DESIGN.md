@@ -190,7 +190,7 @@ If the multiplicative model captures rejection there better, the bridge is meani
 ### K1
 If payoff-only or additive models perform as well or better than the multiplicative candidate, the strong claim fails in this domain.
 
-### K2
+### KC2
 If the multiplicative advantage only appears after arbitrary preprocessing or parameter tuning, the result is not robust.
 
 ### K3

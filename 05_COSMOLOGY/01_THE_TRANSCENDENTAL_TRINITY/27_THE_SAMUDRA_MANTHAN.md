@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "THE SAMUDRA MANTHAN"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (settled 2 Gods + 2 Demons canon anchor)"
 ---
 
 # THE SAMUDRA MANTHAN

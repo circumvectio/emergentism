@@ -5,14 +5,21 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[I]"
-  canonical_phrase: "Paper V — RESULTS (Companion to Pre-Registration) — Tier [I] Pilot"
+  register: "[B-internal/I]"
+  canonical_phrase: "Paper V — bounded internal pilot receipt and interpretation"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**Status:** PRELIMINARY FALSIFICATION (kill fired); [I] pilot only. Next: [S]¹ blind HUMAN. No fabrication. Per L3 prereg discipline.
+**Corpus:** Emergentism
+**Status:** `[B-internal]` executed pilot receipt; `[I]` preliminary-falsification interpretation. A future blind-human study remains `[C]` until run and can yield only scoped `[B]` contact with custody.
 
-# Paper V — RESULTS (Companion to Pre-Registration) — Tier [I] Pilot
+# Paper V — Results (Companion to Pre-Registration)
+
+> **Current evidence-type override — 2026-07-21.** This result body is preserved
+> as historical custody. Its legacy phrase “`[I]` pilot” now separates into the
+> executed scoring/result receipt `[B-internal]` and the preliminary
+> falsification reading `[I]`. Its legacy “`[S]` study” names an unexecuted study
+> design, which is `[C]` until run; any execution remains `[B]`, qualified by
+> its actual custody. Replication never turns empirical contact into `[A]`.
 
 ## 1. What was pre-registered
 The pre-registered prediction (Paper V): across independent developmental

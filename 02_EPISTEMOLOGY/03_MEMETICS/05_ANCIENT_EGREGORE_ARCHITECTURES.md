@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**The Architecture of Capture and Syntropy: Reverse-Engineering Ancient Egregoric Systems as Societal Operating Systems**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **The Architecture of Capture and Syntropy: Reverse-Engineering Ancient Egregoric Systems as Societal Operating Systems**

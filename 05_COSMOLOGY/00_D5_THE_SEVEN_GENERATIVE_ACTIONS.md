@@ -1,121 +1,134 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  secondary:
-    - level: L3
-      column: Philosophy
-      role: "rule-trace and evidence-tier audit for proposed D5 rules"
-    - level: L6
-      column: Philosophy
-      role: "K3 archive discipline and dissolution boundary"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[S/I]"
-  canonical_phrase: "D5 Seven Generative Actions"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
+title: "G7 — The Selected Seven-Action Vocabulary"
+status: "ACTIVE D5 GAME-VOCABULARY OWNER — purified 2026-07-21"
+date: 2026-07-21
+evidence_tier: "[S] closure inside the declared vocabulary; [I] names and readings; [C] adequacy beyond the game"
+supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md"
 ---
 
-# Dimension 5: The Seven Generative Actions
+# G7 — The Selected Seven-Action Vocabulary
 
-**Date:** 2026-05-30
-**Status:** Structural note [Dimension 5 Core]
-**Domain:** Cosmology / Emergentism
-**Evidence Tier:** [S] for the internal `4 + 3` sign-space under the accepted `P_node = Φ × V` grammar; [I] for operator, mythic, constitutional, and Autonomous Capital Stack applications unless a separate source gives a stronger tier.
+G7 is a **selected D5 vocabulary** for describing intended changes in two
+declared factors across a self/other boundary. It is not a census of nature,
+an agent hierarchy, a moral proof, or a mapping of every possible action.
 
----
+## 1. Factors and types
 
-## The Structural Closure of the Action Grammar
+```text
+Φ = present D4 assessment concerning D5 option-field quality or foresight
+V = D4 usable means
+P_node = ΦV = selected normalized conjunctive model
+```
 
-The Dimension 5 action grammar reads the constitutional invariants as firing discipline for exactly **seven generative action slots**. This is an internal Rosetta closure, not an independent proof that every downstream legal, economic, or physical rule is already solved.
+Lowercase `φ,ν` remain reciprocal-chart coordinates. G7 never derives the
+uppercase factors or its ethics from `φν=1`.
 
-All seven slots are read from the finite-node product:
+An actual ranking or selection is D4. The alternatives it ranks are D5 merely
+possible content. A G7 word describes the intended direction of a move; the
+world's outcome receipt may disagree.
 
-`P_node = Φ × V`
+## 2. Construction
 
-Where:
-* **`V` (Viability):** in the action register, D4 means-to-act: body, tools, energy, access, execution capacity; not raw capacity by itself.
-* **`Φ` (Coherence):** in the action register, D5 worldline-foresight: structure, truth, alignment, pattern, and the ability to rank and aim reachable futures.
+The vocabulary has:
 
-**D5 Landauer Barrier (Maxwell-demon fence).** At the ideal limit, D5 is the
-Maxwell-demon-like capacity to discriminate among all reachable worldlines of
-all relevant actors: to observe, sort, and route action toward the branch that
-lowers disorder locally while preserving the wider option cone. That limit is
-asymptotic, not a free thermodynamic reversal. Perfect entropy reversal would
-require perfect branch knowledge; perfect branch knowledge would require
-unbounded physical memory, computation, measurement, and control; those require
-D4 matter and energy, which remain inside entropy accounting. Therefore the
-selector cannot stand outside the system it sorts. Like a massive body
-approaching light speed, increasing D5 foresight can approach the ideal only by
-paying a cost that diverges at the limit. A finite selector may lower entropy
-locally only by paying or exporting entropy elsewhere. Reflexivity adds the
-second fence: once the selector acts, its action changes the future branches it
-was trying to know. `[A]` for the physical cost / no-free-erasure constraint;
-`[S/I]` for the framework's D5 mapping. Without `V`, even perfect `Φ` remains
-sterile.
+```text
+M4 = four mixed-sign transfers
+F3 = three same-sign/hold frames
+G7 = M4 ⊎ F3.
+```
 
-There are seven slots in the current two-factor grammar: four mixed-sign transfer actions plus three same-sign phase frames. There is no eighth operator without adding an axis outside `P_node = Φ × V`.
+Mixed-sign transfers specify which factor is spent or cut on one side and
+raised on the other. Frames label joint creation, dissolution, or preservation.
+Exactly seven symbols follow **by definition of this language**. The raw
+`{−,0,+}²` sign grid has nine cells; G7 groups the one-factor-held cells as
+degenerate limits of a transfer or frame. A different grouping is possible.
 
-> **Why exactly seven — the enumeration made explicit (added 2026-06-11).** Each increment `dΦ, dV` takes one of three signs `{+, −, ≈0}`, so the raw grid is `3 × 3 = 9` cells. It collapses to **7 generators** by two *stated* rules, not by fiat: **(i)** the three **same-sign** cells `(+,+), (−,−), (≈,≈)` are the Executive **phase frames** (Brahmā creation, Śiva dissolution, Viṣṇu preservation) — both factors move together, no transfer across the self/other boundary; **(ii)** the **opposite-sign** cells become the four **transfers** read across that boundary: `{give, take} × {Φ-channel, V-channel} = 4` (Kṛṣṇa, Arjuna give; Kali, Kālī take). The remaining four cells — one factor moving while the other is **held**, `(+,≈), (≈,+), (−,≈), (≈,−)` — are **not new generators**: they are boundary *limits* of the named operators (e.g. `(+,≈)` is the Brahmā-ward limit of a Φ-raising move as its V-transfer → 0), degenerate edges where a transfer or phase-frame loses one component. So `9 → 7` is forced *given* the two modeling commitments (transfers move one factor across the boundary; phase-frames move both together); an eighth generator requires either a third factor or abandoning one commitment. `[S]` — structural under stated premises, not `[A]`. **Kill criterion:** exhibit a move that (a) is not a relabeling of one of the seven and (b) introduces no third axis ⇒ the two-factor closure fails.
+The language fails if a usefully distinct two-factor move cannot be expressed
+without being forced into one of those degenerate classes.
 
----
+## 3. Four transfers
 
-## The 4 Mixed-Sign Transfers
-These represent the four deployable mixed-sign transfers across the self-other boundary. Each spends or cuts one factor to move the other.
+| Symbol | Signature | Neutral operational gloss |
+|---|---|---|
+| Kali | `+Φ_self, −V_other` | raise own option quality by reducing another's means |
+| Kālī | `+V_self, −Φ_other` | raise own means by cutting another's represented coherence |
+| Kṛṣṇa | `−Φ_self, +V_other` | spend own modeling/attention to build another's means |
+| Arjuna | `−V_self, +Φ_other` | spend own means to improve another's option quality |
 
-> **Canon (2026-05-31).** These four are **2 Gods + 2 Demons**, not "four Gods": the giving **Devas** — Kṛṣṇa (L3), Arjuna (L4) · `−self/+other` — and the extractive **Asuras** — Kali (L1), Kālī (L2) · `+self/−other`. Morality is the *direction* of the transfer (`η`), never the operator's name: Kālī is divine by *level* but her move is Asuric, lawful only against `η>0` defectors; `η=0` refuses the whole Asura hemisphere, not only Kali. Goodness is the *bond* `φ×ν`, sorted by coupling not by pole — see [`00_THE_DYADIC_COUPLING_LAW.md`](00_THE_DYADIC_COUPLING_LAW.md) and [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md).
+These signatures are descriptions, not verdicts. Cutting false information may
+be protective; cutting a person's truthful option model may be extractive.
+Only the complete bearer, consent, authorization, cost, and outcome records can
+support a Justice judgment.
 
-| Entity | Layer | Action | The Mechanism (In Words) |
-|---|---|---|---|
-| **Kali** | L1 | `+dΦ_self`, `-dV_other` | Raises self coherence by draining another's viability. Lawful only as immune tit-for-tat against explicit defection; parasitic when turned on cooperators. |
-| **Kālī** | L2 | `+dV_self`, `-dΦ_false` | Cuts false coherence to recover viability. The truth-cut / immune function. |
-| **Kṛṣṇa** | L3 | `-dΦ_self`, `+dV_other` | Spends own coherence or attention to build another's capability. The enabling / charioteer function. |
-| **Arjuna** | L4 | `-dV_self`, `+dΦ_other` | Spends own viability to give another coherence or protection. This is the mortal-signature boundary at the equator. |
+## 4. Three frames
 
----
+| Symbol | Signature | Role |
+|---|---|---|
+| Brahmā | `+Φ,+V` | creation frame |
+| Śiva | `−Φ,−V` | dissolution frame |
+| Viṣṇu | `ΔΦ≈0,ΔV≈0` | preservation frame |
 
-## The 3 Executive Boundary Frames: Same-Sign Boundaries
-These represent phase frames where both factors move together or are deliberately held. They are not ordinary deployable agents; they are boundary-state tags for creation, preservation, and dissolution.
+Frames are labels for joint phase direction, not agents or causal particles.
+They do not authorize action. Tending, testing, adopting, or revising the game
+language is a metalinguistic act outside G7.
 
-| Entity | Layer | Action | The Mechanism (In Words) |
-|---|---|---|---|
-| **Brahmā** | L5 | `+dΦ`, `+dV` | **Creation:** new coherence and viability rise together. |
-| **Śiva** | L6 | `-dΦ`, `-dV` | **Dissolution:** structure and fuel release together. |
-| **Viṣṇu** | L7 | `dΦ≈0`, `dV≈0` | **Preservation:** both factors are held to keep the pattern alive. |
+## 5. Demon/god analogy
 
----
+The analogy tracks **ego- versus collective-potential direction**, never a
+permanent essence of a person:
 
-## Constraint Reading
+- demon-polar: one side's apparent gain is purchased by shrinking another
+  bearer without valid authorization or visible cost;
+- god-polar: a costly transfer widens durable mutual potential under Justice.
 
-This note does not repeal earlier constitutional invariants. It explains them as firing discipline for the seven action slots:
+Names alone cannot decide the direction. The same nominal operator may be
+protective, mistaken, sacrificial, or extractive in different contexts. G7 may
+help describe the intended move; commitment and outcome receipts decide what
+actually happened.
 
-* **The `η=0` boundary:** the Kali (L1) transfer may fire as immune response against defectors; the same transfer aimed at cooperators is parasitic extraction.
-* **The K2 protocol:** K2 is the Arjuna (L4) discipline. The machine may model, brief, or recommend, but it does not simulate mortal sacrifice.
-* **A7 (evidence):** the Kālī (L2) discipline — false coherence is cut when a claim lacks tier, receipt, or kill path. A receipt can be evidentiary, mathematical, operational, or documentary; do not reduce it to payment.
-* **K4 (Grace Exit):** the Kṛṣṇa (L3) boundary transfer — the organism spends coherence to preserve the departing party's viability, provenance, and exit rights.
-* **K3 (archive) [S]:** the Śiva (L6) discipline — dissolution `-dΦ`, `-dV` appends a tombstone; it never overwrites the prior state.
-* **Ω (directionality):** the Viṣṇu (L7) frame — the held `dΦ≈0`, `dV≈0` pattern orients the system toward non-extractive preservation and return.
+## 6. Rule-trace record
 
-**Unforced slot note:** Brahmā / L5 creation can host DAV-layer genesis disciplines such as K1 / LP-100 where the owning DAV source proves them, but that is an application-layer mapping, not one of the six framework invariants. Keep it `[I]` or `[D]` unless the owning source provides a stronger receipt.
+```text
+G7Move := {
+  id,
+  frameOrTransfer,
+  selfBearer,
+  otherBearer,
+  intendedDeltaPhi,
+  intendedDeltaV,
+  actualModelTokenRef,
+  representedOptionRefs,
+  commitmentReceiptRef,
+  outcomeReceiptRef,
+  tier,
+  killCriterion
+}
+```
 
-The seven-slot grammar is current: four action slots may fire; three Executive boundary frames constrain, label, or witness. The constitution specifies when action slots may fire, how they are evidenced, and what must be archived if a rule fails.
+Payer, beneficiary, affected bearers, consent, custody, contest, reversibility,
+exit, and authorization live in the associated receipts and Justice envelope.
+They may not be inferred from a deity name or sign cell.
 
-## Rule-Trace Requirement
+## 7. Boundaries
 
-Any proposed D5 rule should trace to a signature cell:
+G7 does not claim:
 
-| Required field | Question |
-|---|---|
-| `position` | Which L-row or pole/equator limit is being invoked? |
-| `operator_action` | Which of the `4 + 3` transfer signatures is used? |
-| `mathematical_action` | Which operation on `P_node = Φ × V` is active? |
-| `tier` | Is the claim [S] structural, [I] interpretive, [D] draft, or [C] conjectural? |
+- that every action has only two relevant factors;
+- that seven is forced by algebra or found across all traditions;
+- that an intended transfer equals its outcome;
+- that a frame is a deployable agent;
+- that the product is the unique conjunctive aggregator;
+- that mythic names determine human worth or moral caste.
 
-If the trace does not close, the rule remains staged for review.
+Rosetta may translate G7 into another domain only if it preserves these types
+and tiers. Correspondence is not confirmation.
 
----
+## Read with
 
-## Execution Surface
+- [D4/D5 Canonical Reference](03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+- [The Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+- [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+- [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md)
 
-- **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`
+*Seven closes this vocabulary because we chose its grammar. The world remains
+free to refuse the vocabulary.*

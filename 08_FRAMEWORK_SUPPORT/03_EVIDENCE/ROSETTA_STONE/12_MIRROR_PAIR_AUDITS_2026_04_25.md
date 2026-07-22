@@ -43,7 +43,7 @@ same functional kind, opposite vector?
 | Pramana | Inferential Logic / inference | Structural Analysis / testimony | strong | Vedantic epistemic taxonomy | If source traditions do not distinguish self-derived inference from received authority. |
 | Politics | Oligarchy | Aristocracy | partial | Plato and framework extension | If source-native Plato must govern, L5 is Plato's highest center rather than mirror. |
 | Computation | GAN / generative expansion | PID / homeostasis | strong | Master computation column; [08_MIRROR_TEST_EXTENSION...](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) | If PID is not accepted as preservation/regulation rather than generation. |
-| Economics | Market exchange / price | Planned-information economy | strong | [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If planning is not functionally inverse to decentralized price allocation. |
+| Economics | Market exchange / price | Planned-information economy | strong | [historical economics audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If planning is not functionally inverse to decentralized price allocation. |
 | Music | Tonal harmony / chord progression | Counterpoint / fugue | strong | [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | If harmony/counterpoint are not accepted as vertical vs horizontal ordering. |
 | Neuroscience | Left PFC analytical planning | Prefrontal executive sustained attention | fail in current column | [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | If both cells are only "more PFC," not inverse modes, the mirror fails. |
 
@@ -63,7 +63,7 @@ same functional kind, opposite vector?
 | Varna | Śūdra labourer | Sādhu renunciant | strong | Social-function mapping | If bodily service and bodily renunciation cannot be paired as inverse disciplines. |
 | Pramana | Comparative Analysis / analogy | First Principles / non-apprehension | strong | Vedantic epistemic taxonomy | If positive comparison and absence-knowledge are not accepted as inverse knowing. |
 | Politics | Democracy | Anarchy | fail / partial | Plato plus framework extension | Plato treats democracy and anarchy as a continuum, not mirror. |
-| Economics | Gift/social debt | Commons/post-scarcity | partial | [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If commons does not function as structural dissolution of price/debt. |
+| Economics | Gift/social debt | Commons/post-scarcity | partial | [historical economics audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If commons does not function as structural dissolution of price/debt. |
 | Music | Folk/pentatonic/call-response | Atonality/drone/ambient | partial | [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | If the pairing is merely "simple before" vs "complex after," not inverse simplicity. |
 | Neuroscience | Limbic/social-emotional | DMN/witness/meta-awareness | fail / testable alternate | [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | If DMN is not trans-limbic affect-observer but ordinary self-narrative machinery. |
 
@@ -82,7 +82,7 @@ same functional kind, opposite vector?
 | Operator | Kali / constrained demon | Viṣṇu / preserving boundary | strong | Operator grammar | If boundary-from-below and boundary-from-above are not distinct poles. |
 | Varna | Caṇḍāla / outside below | Ṛṣi / outside above | strong | Social-function extension | If both are not extra-social boundary positions. |
 | Pramana | Empirical Observation / direct perception | Intuitive Synthesis / direct intuition | strong | Vedantic epistemic taxonomy | If sensory immediacy and intuitive immediacy are not paired as direct knowing. |
-| Economics | Subsistence/scarcity extraction | Gift/transcendent circulation | weak / partial | [13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md](13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If L7 is only utopian projection, not a source-domain economic form. |
+| Economics | Subsistence/scarcity extraction | Gift/transcendent circulation | weak / partial | [historical economics audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/13_COLUMN_CELL_AUDIT_ECONOMICS_2026_04_25.md) | If L7 is only utopian projection, not a source-domain economic form. |
 | Music | Noise/percussion/raw rhythm | Silence/pure listening | strong | [14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md](14_COLUMN_CELL_AUDIT_MUSIC_2026_04_25.md) | If silence is treated as absence only, not framed audition. |
 | Neuroscience | Brainstem/amygdala threat | Global Workspace/non-dual | fail in current column | [15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md](15_COLUMN_CELL_AUDIT_NEUROSCIENCE_2026_04_25.md) | If L7 is higher cortical integration rather than mirror of autonomic boundary regulation. |
 

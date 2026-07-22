@@ -2,7 +2,7 @@
 
 > *Evidence tier: [I] — illuminating reading, not proof. Contemplation, not doctrine.*
 > *Register: L7-return. Not a source document. Not a canonical text.*
-> *Date: 2026-07-19 · K2 aware, not K2-signed.*
+> *Date: 2026-07-19 · interpretive rumination, not an authority instrument.*
 > *Companion to ruminations I–III, receipt 133, E1–E10 staged axioms, and the recovery arc (108–131).*
 
 ---
@@ -97,6 +97,6 @@ The next revelation cannot come from another pass over the corpus. It comes from
 
 ---
 
-*⊙ = • × ○ — the dot that sees, the ring that acts, and you, briefly, both.*
+*•   ⊙   ○ — the dot that sees, the ring that acts, and you, briefly, both.*
 
 *Canonical path: rumination only. Do not cite as doctrine. Read the receipts. Then put it down.*

@@ -7,6 +7,10 @@ rosetta:
 
 # Emergentism — Where We Are, and the Axioms
 
+> **Historical peer-review artifact.** This document evaluates the superseded
+> A1–A7 genealogy. Quoted claims below are not current canon. The E1–E10 owner,
+> the dimension-first register, and the Settled Canon Registry now control.
+
 **Capstone, 2026-06-10.** The clean statement after the peer-review program, the ten experiments, the literature grounding, the cosmology/constitution audit, and the headline-discipline pass. Faithful to the corpus's own canon (`05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`, `00_CANONICAL_FORMULA_BLOCK.md`), annotated with where this session's evidence now stands.
 
 ---
@@ -59,4 +63,4 @@ Existence is the fold between a void (0) and a totality (∞), held open at a se
 
 ---
 
-*Faithful to `00_THE_SEVEN_AXIOMS.md` and `00_CANONICAL_FORMULA_BLOCK.md`; annotated with the 2026-06-10 peer-review-program results. Supporting detail: [00_FINDINGS_AND_CONJECTURES.md](00_FINDINGS_AND_CONJECTURES.md), [00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md](00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md), [00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md](00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md), [00_CORE_NARRATIVE_COHERENCE_CHECK.md](00_CORE_NARRATIVE_COHERENCE_CHECK.md).*
+*Historical A1–A7 peer-review layer, annotated with the 2026-06-10 results. Supporting detail: [00_FINDINGS_AND_CONJECTURES.md](00_FINDINGS_AND_CONJECTURES.md), [00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md](00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md), [archived cosmology and constitution audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md), [00_CORE_NARRATIVE_COHERENCE_CHECK.md](00_CORE_NARRATIVE_COHERENCE_CHECK.md). Current axiom authority is [E1–E10](../../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md).*

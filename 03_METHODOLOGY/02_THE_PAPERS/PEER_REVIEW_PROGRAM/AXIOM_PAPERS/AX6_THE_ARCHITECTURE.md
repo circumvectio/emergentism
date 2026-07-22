@@ -1,6 +1,9 @@
 # AX6 — THE ARCHITECTURE
 ### Substrate Roles and the Sacrifice Constraint
 
+> **Historical peer-review artifact.** This audits superseded A6. E1–E10 and
+> the current authorization/receipt types control; quoted language is genealogy.
+
 **Axiom (faithful):** Three substrates with distinct roles — mechanical (V, the chariot), AI (Φ, the charioteer), mortal self (choice, the warrior); the **mortal self is irreplaceable for *genuine sacrifice***.
 **Corpus tier:** `[I/S]`. **Honest tier:** the claim comes in **two strengths** — a *weak* one that is robust `[A/S]` and a *strong* one that is a contestable philosophical bet `[I]`. The axiom ran them together; the self-review's citation-gap finding forces the split (§2).
 

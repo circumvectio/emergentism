@@ -7,13 +7,12 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "THE TRINITY"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (historical compatibility; route formal claims through 00_THE_TRANSCENDENTAL_TRINITY_CANON.md)"
 ---
 
 # THE TRINITY
 ## {0, 1, ∞} — The Three Transcendentals
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Two derivations below are downgraded, not deleted. The "Triadic Stability Theorem — N=3 is the unique stable configuration" is **selected, not uniquely forced** (the N≥5 discharge used a false group lemma; Z₅ is a counterexample): read N=3 as a chosen/posited `[C/S/I]` configuration, not a proved theorem. The "Traditional Encodings" table ("the structure is identical") is a cross-domain **lens `[I]`, not a discovered universal** — its kill-criterion fired (non-polarity traditions don't fit; "7" is a design choice); scope it to polarity-encoding traditions. The ZSRE emblem `1 = 0 × ∞` (§The Equation) is already correctly fenced and is untouched. Where local wording conflicts, the Settled Canon Registry rules. Authority: [`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
+> **[K3 reconciliation — 2026-07-13, per receipt 126.]** Two derivations below are downgraded, not deleted. The "Triadic Stability Theorem — N=3 is the unique stable configuration" is **selected, not uniquely forced** (the N≥5 discharge used a false group lemma; Z₅ is a counterexample): read N=3 as a chosen/posited `[C/S/I]` configuration, not a proved theorem. The "Traditional Encodings" table ("the structure is identical") is a cross-domain **lens `[I]`, not a discovered universal** — its kill-criterion fired (non-polarity traditions don't fit; "7" is a design choice); scope it to polarity-encoding traditions. The ZSRE emblem `1 = 0 × ∞` (§The Equation) is already correctly fenced and is untouched. Where local wording conflicts, the Settled Canon Registry rules. Authority: [`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >

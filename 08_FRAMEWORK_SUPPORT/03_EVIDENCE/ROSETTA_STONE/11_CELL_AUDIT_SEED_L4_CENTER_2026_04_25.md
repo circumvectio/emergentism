@@ -9,7 +9,7 @@ rosetta:
 
 **Date:** 2026-04-25
 **Status:** Seed packet for full cell audits
-**Depends on:** [10_CELL_AUDIT_SCHEMA_2026_04_25.md](10_CELL_AUDIT_SCHEMA_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md), [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md)
+**Depends on:** [10_CELL_AUDIT_SCHEMA_2026_04_25.md](10_CELL_AUDIT_SCHEMA_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md), [archived structural pressure points](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md)
 **Purpose:** Start the cell-audit pass at the most dangerous row: L4, where the framework claims center, balance, and action.
 
 ---
@@ -148,13 +148,13 @@ This packet therefore audits L4 cells first. A strong L4 cell must show at least
 | `column_class` | Derived diagnostic |
 | `domain_expression` | Mechanism design / constitutional allocation |
 | `operator` | Arjuna: institution that converts conflicting incentives into signed, accountable action |
-| `source_basis` | Mechanism design, market design, constitutional economics; see [ROSETTA_ECONOMICS.md](ROSETTA_ECONOMICS.md) |
+| `source_basis` | Mechanism design, market design, constitutional economics; see [ROSETTA_ECONOMICS.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_ECONOMICS.md) |
 | `fit_reason` | Mechanism design bridges market exchange (L3) and planned optimization (L5) without identifying wholly with either. |
 | `adjacent_check_prev` | L3 market price is decentralized allocation by exchange. |
 | `adjacent_check_next` | L5 planning/information economy is centralized or system-level allocation. |
 | `mirror_check` | Self-center is plausible as design-of-the-rules; still derived from the framework's diagnostic need. |
 | `kill_criterion` | If mechanism design cannot be shown to mediate market and planning failures in source-domain terms, the L4 placement fails. |
-| `downgrade_path` | Keep for Skyzai economic diagnostics only; do not cite as independent convergence. |
+| `downgrade_path` | Keep only as an applied economic diagnostic; do not cite as independent convergence. |
 | `audit_status` | Draft checked / derived |
 
 ---

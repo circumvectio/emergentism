@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "THE COMPASS AND THE SEXTANT"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # THE COMPASS AND THE SEXTANT
@@ -85,16 +84,21 @@ The calibration table does not describe the domains. It verifies the instruments
 
 ---
 
-## The Four-Line Metaphysics
+## The Four-Line Numeric Chart
 
 Document 25 compressed the framework to four lines (see also Document 32, the canonical four-line document with AM-GM derivation and PIE *h₂r̥tó-* connection):
 
 ```
-• × ○ = ⊙           ONTOLOGY       The product is one.
-• + ○ ≥ ⊙ + ⊙       TELEOLOGY      The sum seeks its minimum.
-(• − ○)² → 0         METHODOLOGY    The distance closes.
-−log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
+φν = 1                 ONTOLOGY       Reciprocal chart constraint.
+φ + ν ≥ 2              TELEOLOGY      AM-GM lower bound.
+(φ − ν)² → 0           METHODOLOGY    Candidate correction objective.
+E(φ,ν) := −log(φν) = 0 AXIOLOGY       Constrained chart energy.
 ```
+
+Here `φ,ν ∈ ℝ_{>0}` are typed numeric chart coordinates. The D0 Titan glyphs
+are sovereign `TitanFrame` renderings, not aliases for those coordinates or
+their boundary values. No addition, subtraction, multiplication, division,
+power, logarithm, or implicit numeric coercion is defined on `TitanFrame`.
 
 This is not a compressed map. This is a **perfectly calibrated compass.** It does not describe reality. It points at reality. Consistently. From any position. In any domain.
 
@@ -112,7 +116,7 @@ Korzybski's objection — "the map is not the territory" — is the most common 
 
 The framework's response: **we agree. We are not building a map.**
 
-Check the compass against the stars (the empirical tests — ~~GFS~~ *(GFS retracted 2026-07-12 — tested wrong claim; K2 directive)*, Protocol R, SPHERE, Paper G's biological predictions). If the compass points true, use it. If it doesn't, recalibrate or discard.
+Check the compass against the stars (Protocol R, SPHERE, Paper G's biological predictions, and future independently governed studies). If the compass points true, use it. If it doesn't, recalibrate or discard.
 
 A compass that points true is not a map. A compass that points true is a TOOL. And tools do not claim to be the territory. Tools help you navigate it.
 

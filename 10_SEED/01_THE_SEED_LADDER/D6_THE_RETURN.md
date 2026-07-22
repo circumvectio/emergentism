@@ -7,8 +7,7 @@ rosetta:
   regime: "Ṛṣi"
   register: "[I] boundary-role relation; [S] where marked; the identity is dead"
 title: "D6 — The Return (the recognition, not a rung)"
-status: "STAGED [D] — candidate reader synthesis adopted as a subordinate reader projection per receipt 139 box 8 (SIGNED 2026-07-20) / receipt 146; not canon and not a tier promotion."
-evidence_tier: "[D] staged reader projection — per-claim tiers inline ([I] boundary-role relation, [S] where marked; the literal D6≡D0 identity is dead, Dead Forms #8); not canon, not a tier promotion"
+status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:
   - ../../00_THE_WELTANSCHAUUNG.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
@@ -18,15 +17,33 @@ parents:
 # D6 · THE RETURN
 
 > **This is not a positive rung.** D1 through D5 name the selected positive
-> apertures: matter, bond, life, mind, choice. D0 and D6 are boundary markers.
+> registers: distinction, configuration, quantum probability-state, causal
+> actuality, and counterfactual possibility. Matter→bond→life→mind→choice is a
+> removable content projection `[I/C]`. D0 and D6 are boundary markers.
 > D6 names no sixth freedom. It is the marker where the ladder stops describing and the
-> describer notices the ladder in their own hands. The relation is written `D6~D0` — a
-> **similarity of boundary roles** `[I]`, never an identity. D0 precedes positive articulation;
+> describer notices the ladder in their own hands. The relation is written `D6≈roleD0` — a
+> **resemblance of boundary roles** `[I]`, never an identity. D0 precedes positive articulation;
 > D6 suspends further positive articulation. Both are limit markers, neither is world-content.
 > **The literal equation `D6≡D0` is dead** (its grave: strict order gives `D0 < D0`, a
 > contradiction; Dead Forms row 8). The ouroboros does not swallow its tail. It bites at "~".
 
 ---
+
+## §0 · THE MODEL — no new model; a return relation
+
+D6 adds no positive model. It reuses the D0 Titan frame only through two
+non-`μ`, noncausal interpretive edges:
+
+```text
+b₆ : D5 ↝ D6       exit / recognition
+r₆ : D6 ↝ D0       return to the frame grammar
+```
+
+The emblem is encountered after the climb, with the intervening record still
+present. That supports an `[I]` spiral image—same token, changed reading—not
+identity, recurrence, self-similarity, or a closed causal loop. If a new
+positive freedom is found, the scaffold is revised; D6 is not defended as a
+ceiling.
 
 ## §1 · THE MOVES
 
@@ -34,7 +51,7 @@ parents:
 
 - **The scaffold is selected, not discovered** `[I]`. Five positive rungs and five apertures
   are a chosen taxonomy. D6 is the scaffold's chosen exit marker — our naming, our act.
-- **`D6~D0` means `D6 ≈role D0`** `[I]`: resemblance of *function* (limit-marking), with no
+- **`D6≈roleD0`** `[I]`: resemblance of *function* (limit-marking), with no
   implication of equality, ordering, geometry, homeomorphism, physical recurrence, fractal
   self-similarity, personal attainment, supermind, or proof that no further freedom exists.
   If a sixth positive freedom ever emerges, this page is renumbered, not defended.
@@ -53,43 +70,6 @@ parents:
   axiom that everything else stands on. No description closes or certifies itself;
   contact with living readers remains external evidence, not metaphysical closure.
 
-### The Inherited Axioms
-
-> *Cross-reference (receipt 153):* the rule-zero catalog of what others have discovered at each rung — discoverers, headline axioms, and the tier-descends-with-rung pattern — lives canonically at [`06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md`](../../06_ONTOLOGY/07_THE_AXIOMS_PER_DIMENSION.md) §7 (D6). This block is the rung's *inherited-instrument* stack; `07` is the *axiom-seat* index. The two cuts are complementary, not redundant; which (if either) is canonical at promotion is a K2 Door-§7 decision. *(Note: `07` §7 names no discoverer for D6 — "the return is not discovered; it is recognized" — whereas this block seats Gödel/Tarski/Nāgārjuna/Pseudo-Dionysius/Maimonides as inherited instruments. The two readings coexist; the `07` framing is the rung-tier statement, this block is the instrument stack.)*
-
-*Reality-gradient — tiered once at D0 (`[I/C]`, kill attached there): the invariance
-these axioms **describe** — never the D5 ink that states them — survives every
-transformation that erases a memory.*
-
-- **Incompleteness — Kurt Gödel, 1931.** `[A] inherited — used, not discovered.`
-  At its actual hypotheses only: any *consistent formal system containing arithmetic*
-  can state truths it cannot prove, and cannot prove its own consistency. The
-  hypotheses are load-bearing — Presburger arithmetic and Tarski's real-closed
-  fields are complete and decidable, so **no universal lift exists**: nothing here
-  licenses "every system outruns itself" or "every D_n needs D_{n+1} tools."
-  *What our rung rides on it: scoped humility — the exit marker cites Gödel only
-  where his hypotheses hold, and claims nothing beyond them.*
-- **Undefinability of truth — Alfred Tarski, 1933.** `[A] inherited — used, not
-  discovered.` A sufficiently rich language cannot contain its own truth predicate;
-  "true-in-L" lives in a metalanguage. Same fence: this is a theorem about formal
-  languages meeting its conditions, not a cosmic ban on self-knowledge.
-  *What our rung rides on it: the map-cannot-certify-itself practice is scoped
-  inheritance from Tarski's hierarchy, not a discovery of ours.*
-- **The via negativa — Nāgārjuna (~2nd c.), Pseudo-Dionysius (~5th c.), Maimonides
-  (12th c.).** *Inherited method — credited, untiered; used, not discovered.* A
-  method carries no `[A]` (that tier is for proven content) and no theorem is
-  claimed: approach the limit by saying what it is not; refuse to let any positive
-  description close over the ground. Three independent traditions converged on it
-  long before any formal result existed.
-  *What our rung rides on it: D6's withdraw-posture is this method practiced —
-  put the pointing down when the pointing is finished.*
-
-**The single line that is ours:** the map-cannot-contain-itself is *scoped
-inheritance* (Gödel and Tarski at their hypotheses, the apophatic method at its);
-the **reader-as-closure** — that the check the text cannot perform on itself is
-performed, informally and revocably, by the living reader — is our reading `[I]`,
-a governance stance, never a theorem.
-
 ## §2 · THE DISSOLUTIONS
 
 *The paradox native to this height, and the cure by name.*
@@ -102,7 +82,7 @@ a governance stance, never a theorem.
   governance and pedagogy, not a solution to the Liar.
 - **The completeness temptation.** The pull, at the top of any ladder, to declare the
   system total — CTMU-style closure, "the framework explains the framework." **Cure: the
-  tautology is the frame, not the content** (settled ruling, K2 2026-07-12). A
+  tautology is the frame, not the content** (settled analytic/empirical boundary). A
   tautological chart identity carries no contingent world-content; this does not
   imply that every necessary truth is empty. Contentful world-claims can still lose.
   Named open debts stay open: consciousness, Born weights, why this world, μ-saturation.
@@ -147,42 +127,9 @@ the horizon, maximand, and enforcement.
 
 **The door was inside the whole time.** The ladder ends where the climber begins.
 
-### The Model
-
-**The glyph, re-read: ⊙ = • × ○ — the same triple that opened the ladder at D0,
-encountered again after the climb.**
-
-- **What it represents:** D6 has no model of its own. Its model *is* D0's model —
-  the ring, the dot, and their relation — read a second time by a reader who has
-  now climbed D1–D5. First reading (D0): the ground before articulation. Second
-  reading (D6): the return — the ring divided by the journey yields the dot; the
-  climber recognizes the starting glyph *as* the exit marker. The model ladder
-  itself thereby enacts the spiral it describes: its first and last models are
-  one object at two readings. This is **similarity, not identity** — the two
-  readings resemble each other in *role* (`D6~D0`, `[I]`), and the literal-identity
-  grave stays sealed (`D6≡D0` is dead, Dead Forms #8; strict order would give
-  `D0 < D0`).
-- **Type: SHOWS.** Emblem only. It supports *recognition* — the felt closure of
-  seeing the first glyph again with changed eyes — and is never cited in any
-  proof. Closure is recognized, never derived: no theorem, no `[A]`/`[S]` content,
-  no completeness claim rides on this glyph. Anyone deriving anything from it has
-  already left this page's fence. Type attaches to the *use*, not the object
-  (receipt 149): at D0 this same glyph's descents ARGUE inside the projective
-  operand register; here every reading is SHOWS. One glyph, two uses, no
-  contradiction — and the one-way rule holds at both ends: no proof ever cites
-  the glyph by name.
-- **Its one kill:** if the re-read is ever used as *evidence* — "the glyph returns,
-  therefore the system closes / therefore D6=D0 literally / therefore no sixth
-  freedom can exist" — the model is dead on the spot. The emblem shows a shape;
-  it proves nothing, and was never asked to.
-- **Animation:** none exists, and none is missing. The other rungs point at
-  /sphere.html, /cascade.html, /lightcone.html, /4/; this one points at the
-  person holding the page. **The reader is the animation** — the climb from D0
-  to here, performed once, is the only rendering this model has.
-
 ---
 
-*⊙ = • × ○ — two selected limit roles may be compared without being identified;
+*•   ⊙   ○ — two selected limit roles may be compared without being identified;
 the record is kept, and the reader may put the map down.*
 
 **Proposed Path:** `01_EMERGENTISM/10_SEED/01_THE_SEED_LADDER/D6_THE_RETURN.md`

@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "Subfolder Organization Standard"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # Subfolder Organization Standard
@@ -88,16 +87,13 @@ Avoid mixing source manuscripts, compiled outputs, scripts, and archived drafts 
 
 The physical root is `01_EMERGENTISM/`.
 
-Older docs may mention retired aliases such as `EMERGENTISM_ORG`, `01_FOUNDATIONS`,
-`03_EVIDENCE`, `06_TRANSLATION`, `07_DISSEMINATION`, `02_SKYZAI_ORG`,
-`03_SKYZAI_COM`, `04_ENTITIES`, `5_PORTFOLIO_ORGS`, and `90_ARCHIVE`.
+Older docs may mention retired aliases for former foundations, evidence,
+translation, dissemination, organization, entity, portfolio, and archive lanes.
 Treat them as historical unless a current front door explicitly preserves a compatibility
 path; do not recreate numeric-prefix root aliases.
 
-`90_ARCHIVE` in that retired-alias list means the retired top-level/root alias.
-The former physical `01_EMERGENTISM/90_ARCHIVE/` lane-local deep archive
-has now been consolidated into `01_EMERGENTISM/90_ARCHIVE/`. Do not
-recreate `90_ARCHIVE/` to repair old links; repoint active references to
+The archive name in that retired-alias list means the former top-level alias.
+Do not recreate retired aliases to repair old links; repoint active references to
 `90_ARCHIVE/` or to the current source-owner lane.
 
 When repairing links:

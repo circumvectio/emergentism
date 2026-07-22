@@ -29,12 +29,15 @@ This paper turns the D5 Landauer Barrier into a cost model. It owns the light-sp
 Massive object approaching c:
   more speed requires more energy; reaching c is not finite.
 
-D5 selector approaching perfect branch discrimination:
+Actual D4 selector modeling D5 alternatives with increasing discrimination:
   more horizon, actor coverage, resolution, and confidence require more physical information handling;
   perfect foresight is not finite.
 ```
 
-The analogy is structural, not identity. Relativity is not being reduced to D5. D5 is being disciplined by a known limit-form: finite embodied systems cannot treat asymptotes as free moves.
+The analogy is structural, not identity. Relativity is not being reduced to D5,
+and the limit form is not derived from relativity. The claim concerns finite D4
+carriers of models whose semantic contents include D5 alternatives: embodied
+systems cannot treat increasing model coverage as a free move.
 
 ## Required Sections
 

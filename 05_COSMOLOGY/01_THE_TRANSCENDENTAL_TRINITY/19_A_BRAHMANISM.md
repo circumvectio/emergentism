@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "A-BRAHMANISM"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (A-Brahmanism = Decentralized Authority Model; L6 primary discipline)"
 ---
 
 # A-BRAHMANISM

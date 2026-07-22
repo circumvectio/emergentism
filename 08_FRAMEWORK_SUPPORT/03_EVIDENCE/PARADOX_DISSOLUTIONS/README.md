@@ -46,7 +46,7 @@ This folder holds the active paradox-dissolution slice for the current workspace
 
 **Non-numbered synthesis documents:**
 - [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md) -- Many classical paradoxes framed as artifacts of extraction.
-- [00_GARDENER_NEXUS.md](00_GARDENER_NEXUS.md) -- L6/L7 cognitive-layer synthesis across the dissolution suite.
+- [Gardener Nexus — historical synthesis](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_GARDENER_NEXUS.md) — archived application-layer synthesis, not current authority.
 - [PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) -- Completion claim scoped to categorical rather than formal completeness.
 
 **Legacy files (retained for reference):**
@@ -67,7 +67,7 @@ This folder holds the active paradox-dissolution slice for the current workspace
 - [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) -- The Mind-Body Problem (canonical indexed summary).
 - [PD_15_PROBLEM_OF_EVIL.md](PD_15_PROBLEM_OF_EVIL.md) -- The Problem of Evil.
 - [PD_16_MEANING_OF_LIFE.md](PD_16_MEANING_OF_LIFE.md) -- The Meaning of Life.
-- ~~[PD_17_QUANTUM_RELATIVITY_UNIFICATION.md](../../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/00_DEEP_ARCHIVE/PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md) -- QM/GR Unification (archived incomplete draft)~~.
+- PD_17 QM/GR unification — archived incomplete external draft; not a current source route.
 - [PD_18_THE_EXTRACTION_PARADOX.md](PD_18_THE_EXTRACTION_PARADOX.md) -- The Extraction Paradox.
 - [PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md](PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md) -- The Hard Problem of Consciousness (extended treatment).
 - [PD_20_PHILOSOPHICAL_IMPLICATIONS.md](PD_20_PHILOSOPHICAL_IMPLICATIONS.md) -- Philosophical Implications.

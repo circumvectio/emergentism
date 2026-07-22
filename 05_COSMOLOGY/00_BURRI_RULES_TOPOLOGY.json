@@ -1,0 +1,1211 @@
+{
+  "schemaVersion": "0.4",
+  "rules": [
+    {
+      "id": "BR-1",
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ]
+    },
+    {
+      "id": "BR-2",
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu",
+        "src-closure",
+        "src-external-crosswalk"
+      ]
+    },
+    {
+      "id": "BR-3",
+      "sourceIds": [
+        "src-rulebook",
+        "src-cone",
+        "src-external-crosswalk"
+      ]
+    },
+    {
+      "id": "BR-4",
+      "sourceIds": [
+        "src-rulebook",
+        "src-types",
+        "src-auth"
+      ]
+    },
+    {
+      "id": "BR-5",
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul",
+        "src-soros",
+        "src-external-crosswalk"
+      ]
+    },
+    {
+      "id": "BR-6",
+      "sourceIds": [
+        "src-rulebook",
+        "src-egregoreotype",
+        "src-values",
+        "src-external-crosswalk"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-rulebook",
+      "path": "05_COSMOLOGY/00_THE_BURRI_RULES.md"
+    },
+    {
+      "id": "src-ledger",
+      "path": "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md"
+    },
+    {
+      "id": "src-types",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
+    },
+    {
+      "id": "src-mu",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md"
+    },
+    {
+      "id": "src-d45",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
+    },
+    {
+      "id": "src-closure",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md"
+    },
+    {
+      "id": "src-soul",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md"
+    },
+    {
+      "id": "src-auth",
+      "path": "04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md"
+    },
+    {
+      "id": "src-values",
+      "path": "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md"
+    },
+    {
+      "id": "src-egregoreotype",
+      "path": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"
+    },
+    {
+      "id": "src-cone",
+      "path": "05_COSMOLOGY/00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md"
+    },
+    {
+      "id": "src-quantum",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md"
+    },
+    {
+      "id": "src-d3-state",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md"
+    },
+    {
+      "id": "src-formula",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "src-external-crosswalk",
+      "path": "03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md"
+    },
+    {
+      "id": "src-soros",
+      "url": "https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "titan-frame",
+      "kind": "frame",
+      "dRegister": "D0",
+      "modality": "structural",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-1"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 105,
+      "y": 530
+    },
+    {
+      "id": "d0",
+      "kind": "frame",
+      "dRegister": "D0",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 70,
+      "y": 180
+    },
+    {
+      "id": "mu-0",
+      "kind": "crossing",
+      "dRegister": "D1",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu"
+      ],
+      "x": 190,
+      "y": 180
+    },
+    {
+      "id": "d1",
+      "kind": "state",
+      "dRegister": "D1",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 310,
+      "y": 180
+    },
+    {
+      "id": "mu-1",
+      "kind": "crossing",
+      "dRegister": "D2",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu"
+      ],
+      "x": 430,
+      "y": 180
+    },
+    {
+      "id": "d2",
+      "kind": "state",
+      "dRegister": "D2",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 550,
+      "y": 180
+    },
+    {
+      "id": "mu-2",
+      "kind": "crossing",
+      "dRegister": "D3",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu"
+      ],
+      "x": 670,
+      "y": 180
+    },
+    {
+      "id": "d3",
+      "kind": "state",
+      "dRegister": "D3",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types",
+        "src-d3-state",
+        "src-quantum"
+      ],
+      "x": 790,
+      "y": 180
+    },
+    {
+      "id": "mu-3",
+      "kind": "crossing",
+      "dRegister": "D4",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu"
+      ],
+      "x": 910,
+      "y": 180
+    },
+    {
+      "id": "d4",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d45"
+      ],
+      "x": 1030,
+      "y": 180
+    },
+    {
+      "id": "mu-4",
+      "kind": "crossing",
+      "dRegister": "D5",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-mu",
+        "src-d45"
+      ],
+      "x": 1150,
+      "y": 180
+    },
+    {
+      "id": "d5",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d45"
+      ],
+      "x": 1270,
+      "y": 180
+    },
+    {
+      "id": "d6",
+      "kind": "frame",
+      "dRegister": "D6",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-closure"
+      ],
+      "x": 1510,
+      "y": 180
+    },
+    {
+      "id": "d4-model-token",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul",
+        "src-types"
+      ],
+      "x": 340,
+      "y": 405
+    },
+    {
+      "id": "d4-rank-event",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-d45",
+        "src-types"
+      ],
+      "x": 535,
+      "y": 405
+    },
+    {
+      "id": "d4-selector-token",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul",
+        "src-types"
+      ],
+      "x": 730,
+      "y": 405
+    },
+    {
+      "id": "d5-option-a",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d45"
+      ],
+      "x": 430,
+      "y": 535
+    },
+    {
+      "id": "d5-option-b",
+      "kind": "state",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-d45"
+      ],
+      "x": 650,
+      "y": 535
+    },
+    {
+      "id": "d4-means",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 430,
+      "y": 655
+    },
+    {
+      "id": "physical-availability",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types",
+        "src-cone"
+      ],
+      "x": 610,
+      "y": 655
+    },
+    {
+      "id": "authorization",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-auth",
+        "src-types"
+      ],
+      "x": 610,
+      "y": 705
+    },
+    {
+      "id": "chi",
+      "kind": "commitment",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 875,
+      "y": 585
+    },
+    {
+      "id": "commitment-receipt",
+      "kind": "receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types"
+      ],
+      "x": 1050,
+      "y": 585,
+      "receiptType": "commitment"
+    },
+    {
+      "id": "d4-action",
+      "kind": "state",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul"
+      ],
+      "x": 1215,
+      "y": 585
+    },
+    {
+      "id": "outcome-receipt",
+      "kind": "receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-types",
+        "src-soul"
+      ],
+      "x": 1390,
+      "y": 585,
+      "receiptType": "outcome"
+    },
+    {
+      "id": "shared-trace",
+      "kind": "trace",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-egregoreotype",
+        "src-types"
+      ],
+      "x": 1300,
+      "y": 780,
+      "collectiveOwnerRefs": [
+        "src-types#EgregoreotypeCandidate.individual",
+        "src-types#EgregoreotypeCandidate.whole",
+        "src-types#EgregoreotypeCandidate.affectedBearerIds",
+        "src-types#EgregoreotypeCandidate.etaObserved",
+        "src-types#EgregoreotypeCandidate.custody",
+        "src-types#EgregoreotypeCandidate.consent",
+        "src-types#EgregoreotypeCandidate.reversibility",
+        "src-types#EgregoreotypeCandidate.exit",
+        "src-types#EgregoreotypeCandidate.payerIds",
+        "src-types#EgregoreotypeCandidate.beneficiaryIds",
+        "src-types#JusticeEnvelope.eta"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-d0-mu0",
+      "from": "d0",
+      "to": "mu-0",
+      "edgeType": "crossing-ingress",
+      "dRegister": "D0",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-mu0-d1",
+      "from": "mu-0",
+      "to": "d1",
+      "edgeType": "crossing-egress",
+      "dRegister": "D1",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-d1-mu1",
+      "from": "d1",
+      "to": "mu-1",
+      "edgeType": "crossing-ingress",
+      "dRegister": "D1",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-mu1-d2",
+      "from": "mu-1",
+      "to": "d2",
+      "edgeType": "crossing-egress",
+      "dRegister": "D2",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-d2-mu2",
+      "from": "d2",
+      "to": "mu-2",
+      "edgeType": "crossing-ingress",
+      "dRegister": "D2",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-mu2-d3",
+      "from": "mu-2",
+      "to": "d3",
+      "edgeType": "crossing-egress",
+      "dRegister": "D3",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-d3-mu3",
+      "from": "d3",
+      "to": "mu-3",
+      "edgeType": "crossing-ingress",
+      "dRegister": "D3",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-mu3-d4",
+      "from": "mu-3",
+      "to": "d4",
+      "edgeType": "crossing-egress",
+      "dRegister": "D4",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu"
+      ]
+    },
+    {
+      "id": "e-d4-mu4",
+      "from": "d4",
+      "to": "mu-4",
+      "edgeType": "crossing-ingress",
+      "dRegister": "D4",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu",
+        "src-d45"
+      ]
+    },
+    {
+      "id": "e-mu4-d5",
+      "from": "mu-4",
+      "to": "d5",
+      "edgeType": "crossing-egress",
+      "dRegister": "D5",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "C",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu",
+        "src-d45"
+      ]
+    },
+    {
+      "id": "b6",
+      "from": "d5",
+      "to": "d6",
+      "edgeType": "boundary",
+      "dRegister": "D6",
+      "modality": "structural",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-mu",
+        "src-closure"
+      ]
+    },
+    {
+      "id": "r6",
+      "from": "d6",
+      "to": "d0",
+      "edgeType": "closure",
+      "dRegister": "D6",
+      "modality": "structural",
+      "role": "feedback",
+      "tier": "I",
+      "ruleIds": [
+        "BR-2"
+      ],
+      "sourceIds": [
+        "src-closure"
+      ]
+    },
+    {
+      "id": "e-d5-model-content",
+      "from": "d4-model-token",
+      "to": "d5",
+      "edgeType": "represented-content",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-d45",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-model-option-a",
+      "from": "d4-model-token",
+      "to": "d5-option-a",
+      "edgeType": "represents",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-model-option-b",
+      "from": "d4-model-token",
+      "to": "d5-option-b",
+      "edgeType": "represents",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-rank-option-a",
+      "from": "d4-rank-event",
+      "to": "d5-option-a",
+      "edgeType": "represented-ranking",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-rank-option-b",
+      "from": "d4-rank-event",
+      "to": "d5-option-b",
+      "edgeType": "represented-ranking",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-model-rank",
+      "from": "d4-model-token",
+      "to": "d4-rank-event",
+      "edgeType": "actual-model-use",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-rank-selector",
+      "from": "d4-rank-event",
+      "to": "d4-selector-token",
+      "edgeType": "actual-ranked-input",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-model-chi",
+      "from": "d4-model-token",
+      "to": "chi",
+      "edgeType": "model-coupling",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-selector-chi",
+      "from": "d4-selector-token",
+      "to": "chi",
+      "edgeType": "selection-policy",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4",
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-option-a-chi",
+      "from": "d5-option-a",
+      "to": "chi",
+      "edgeType": "selected-option",
+      "dRegister": "D5",
+      "modality": "possible",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul"
+      ]
+    },
+    {
+      "id": "e-d4-means",
+      "from": "d4",
+      "to": "d4-means",
+      "edgeType": "actual-means",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-d45"
+      ]
+    },
+    {
+      "id": "e-d4-authorization",
+      "from": "d4",
+      "to": "authorization",
+      "edgeType": "authorization-assessment",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-auth"
+      ]
+    },
+    {
+      "id": "e-means-availability",
+      "from": "d4-means",
+      "to": "physical-availability",
+      "edgeType": "physical-assessment",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types",
+        "src-cone"
+      ]
+    },
+    {
+      "id": "e-availability-chi",
+      "from": "physical-availability",
+      "to": "chi",
+      "edgeType": "physical-availability",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-3",
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types",
+        "src-cone"
+      ]
+    },
+    {
+      "id": "e-authorization-chi",
+      "from": "authorization",
+      "to": "chi",
+      "edgeType": "authorization-assessment",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-auth"
+      ]
+    },
+    {
+      "id": "e-chi-commitment",
+      "from": "chi",
+      "to": "commitment-receipt",
+      "edgeType": "commitment-receipt",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-commitment-action",
+      "from": "commitment-receipt",
+      "to": "d4-action",
+      "edgeType": "submitted-action",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-4"
+      ],
+      "sourceIds": [
+        "src-soul"
+      ]
+    },
+    {
+      "id": "e-commitment-model-feedback",
+      "from": "commitment-receipt",
+      "to": "d4-model-token",
+      "edgeType": "feedback",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-commitment-selector-feedback",
+      "from": "commitment-receipt",
+      "to": "d4-selector-token",
+      "edgeType": "feedback",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-rulebook",
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-action-outcome",
+      "from": "d4-action",
+      "to": "outcome-receipt",
+      "edgeType": "environment-outcome",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "forward",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-soul"
+      ]
+    },
+    {
+      "id": "e-outcome-model-feedback",
+      "from": "outcome-receipt",
+      "to": "d4-model-token",
+      "edgeType": "feedback",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-soul"
+      ]
+    },
+    {
+      "id": "e-outcome-selector-feedback",
+      "from": "outcome-receipt",
+      "to": "d4-selector-token",
+      "edgeType": "feedback",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "feedback",
+      "tier": "S",
+      "ruleIds": [
+        "BR-5"
+      ],
+      "sourceIds": [
+        "src-soul",
+        "src-types"
+      ]
+    },
+    {
+      "id": "e-outcome-trace",
+      "from": "outcome-receipt",
+      "to": "shared-trace",
+      "edgeType": "trace-write",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-egregoreotype"
+      ]
+    },
+    {
+      "id": "e-trace-selector",
+      "from": "shared-trace",
+      "to": "d4-selector-token",
+      "edgeType": "selection-reweighting",
+      "dRegister": "D4",
+      "modality": "actual",
+      "role": "coupling",
+      "tier": "I",
+      "ruleIds": [
+        "BR-6"
+      ],
+      "sourceIds": [
+        "src-egregoreotype"
+      ]
+    }
+  ],
+  "views": {
+    "proof": {
+      "output": "05_COSMOLOGY/00_BURRI_RULES_PLATE.svg",
+      "width": 1600,
+      "height": 1000,
+      "title": "The Burri Rules - Ivory Proof Plate",
+      "theme": "ivory-proof",
+      "showQuantumInset": false
+    },
+    "emblem": {
+      "output": "05_COSMOLOGY/00_BURRI_RULES_EMBLEM.svg",
+      "width": 1600,
+      "height": 1000,
+      "title": "The Burri Rules - Obsidian Emblem",
+      "theme": "obsidian-emblem",
+      "showQuantumInset": false
+    }
+  }
+}

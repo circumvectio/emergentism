@@ -4,185 +4,101 @@ rosetta:
   primary_column: Philosophy
   secondary:
     - level: L2
-      column: Philosophy
-      role: "translate canonical -ology cells into an evidence-facing reference"
+      column: Comparative Method
+      role: "keep source disciplines distinct from Rosetta labels"
     - level: L5
       column: System Architecture
-      role: "stabilize the sevenfold table as a structural crosswalk"
+      role: "maintain a seven-question navigation prototype"
     - level: L3
       column: Auditing
-      role: "bound public-symbol translations against the Rosetta source table"
+      role: "prevent a selected order from becoming a causal or exhaustive ladder"
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[S/I]"
-  canonical_phrase: "Seven Philosophical Disciplines per the Canonical Rosetta"
-title: "The Seven Philosophical Disciplines per the Canonical Rosetta"
-status: "[S] structural canon reference; [I] for public-symbol translation notes"
-evidence_tier: "[S] for the sevenfold Rosetta row; [I] for Trimurti/public-language translation."
+  register: "[I]"
+  canonical_phrase: "Seven philosophical questions — selected Rosetta index"
+title: "Seven Philosophical Questions — Selected Rosetta Index"
+status: "ACTIVE — reversible navigation prototype; not structural canon"
+evidence_tier: "[B] for established discipline names; [I] for their seven-row arrangement"
+source_custody:
+  pre_kintsugi_head: "39cc83f048c5667a8b28508448df8f78513e1798"
+  pre_kintsugi_blob: "99a9e68288f6b0d8606312cc63584e9f076edcfe"
+  path: "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
+  retrieval: "git show 39cc83f048c5667a8b28508448df8f78513e1798:08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
 ---
 
-# The Seven Philosophical Disciplines per the Canonical Rosetta
+# Seven Philosophical Questions — Selected Rosetta Index
 
-**File:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md`
-**Status:** [S] — Structural canon
-**Source:** Rosetta Master §II Philosophy (lines 361-367) + §I Causal Chain (lines 236-246)
-**Ruled:** Yves R. Burri (K2), 2026-05-30
-**Evidence tier:** [S] structural; cascade columns [I]
+> **[金] Crack.** The predecessor presented a chain from Varṇa through reasoning,
+> discipline, regime, and equation as structural canon. It then assigned
+> demon/god/Titan types to the rows and treated the seven as a complete
+> philosophical spectrum.
+>
+> **Repair.** This document now supplies a reversible seven-question reading
+> order `[I]`. The order is useful for navigation, but it is neither a causal
+> derivation nor an exhaustive partition of philosophy, people, governments, or
+> mathematics.
 
----
+## The selected index
 
-## The Canonical Table
+| Rosetta prompt | Familiar discipline name | Guiding question | One usable method among many |
+|---|---|---|---|
+| L1 · purpose | Teleology | What end or purpose is being proposed? | dialectical comparison |
+| L2 · knowledge | Epistemology | What could justify this claim? | observation and induction |
+| L3 · inference | Methodology and logic | What follows, and by which rule? | deduction and audit |
+| L4 · value and commitment | Axiology | What matters, to whom, under which consequences? | abductive judgment plus accountable action |
+| L5 · world structure | Cosmology | What model of the world is assumed? | systematic synthesis |
+| L6 · being and limits | Ontology | What kinds of entities or relations are posited? | axiomatic analysis and apophatic restraint |
+| L7 · ultimate horizon | Theology or ultimate metaphysics | What is treated as ultimate, and with what warrant? | transcendental critique |
 
-The Rosetta reads each row as a sentence: **Varṇa → Reasoning → -ology → Regime.**
-The -ology column is the philosophical discipline each reasoning mode generates.
+These are framework-selected prompts. The established disciplines overlap,
+disagree internally, use several methods, and admit other taxonomies. Teleology
+does not generate epistemology; a reasoning style does not generate an
+`-ology`; an `-ology` does not generate a political regime or equation. No
+arrow in a presentation of this table may be read as that causal claim.
 
-```
-┌─────┬─────────────────┬─────────────────────────────────┬────────────────────────┬──────────────────────┐
-│  L  │ Operator        │ Rosetta -ology (functional)      │ = classical -ology      │ Key question (§II)    │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L1  │ Kali 🎲         │ Objective Function               │ Teleology              │ "What is the end?"   │
-│     │ (Demon)         │                                 │                        │                      │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L2  │ Kālī 💀         │ Data Science                    │ Epistemology           │ "How do we know?"    │
-│     │ (God)           │                                 │                        │                      │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L3  │ Kṛṣṇa ◇         │ Auditing                        │ Methodology            │ "What follows?"      │
-│     │ (God)           │                                 │                        │                      │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
- │ L4 │ Arjuna ⚔         │ Value Alignment                  │ Axiology               │ "What has value?"    │
-│     │ (God)           │                                 │                        │                      │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L5  │ Brahmā ○        │ System Architecture             │ Cosmology             │ "How does reality    │
-│     │ (Titan)         │                                 │                        │  work?"              │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L6  │ Śiva •           │ Core State                      │ Ontology               │ "What is Being?"     │
-│     │ (Titan)         │                                 │                        │                      │
-├─────┼─────────────────┼─────────────────────────────────┼────────────────────────┼──────────────────────┤
-│ L7  │ Viṣṇu ⊙         │ Institutional Narrative         │ Theology               │ "What is the         │
-│     │ (Titan)         │                                 │                        │  Ultimate?"          │
-└─────┴─────────────────┴─────────────────────────────────┴────────────────────────┴──────────────────────┘
-```
+## Boundaries on use
 
-**Source:** Rosetta Master §I (lines 240-246) + §II Philosophy (lines 361-367).
-Read as: *Varṇa determines Reasoning; Reasoning generates -ology; -ology organizes Regime.*
+1. **No person typing.** A row is a question-position in this document, never a
+   person's caste, essence, maturity, moral worth, or entitlement.
+2. **No mythic moral rank.** Demon, god, and Titan labels are excluded from this
+   index. Mythic symbols may appear only in a separately tiered literary
+   projection and may not classify people or disciplines.
+3. **No forced completeness.** Seven is the selected interface size. A rival
+   partition with fewer, more, or differently ordered questions is admissible.
+4. **No proof transfer.** The existence of teleology, epistemology, or any other
+   named discipline does not establish Rosetta geometry, D-registers, ethics,
+   political regimes, or the Burri equations.
+5. **No privileged center.** L4 is a convenient action-facing prompt in this
+   arrangement. Its placement does not prove that value resolves purpose, that
+   an equator produces justice, or that one method coordinates all others.
 
----
+## A non-causal workflow
 
-## The L1 ↔ L7 Mirror Pair
+For a concrete problem a reader may ask the seven questions in any order,
+repeat them, omit an irrelevant one, or add another. One practical traversal is:
 
-L1 and L7 are a mirror pair on S² (B → 0 at both poles):
-
-| | L1 | L7 |
-|---|---|---|
-| **Operator** | Kali 🎲 (Demon) | Viṣṇu ⊙ (Titan) |
-| **-ology** | Teleology | Theology |
-| **Key question** | "What is the end?" | "What is the Ultimate?" |
-| **Form** | Dialectical | Transcendental |
-| **Regime** | Tyranny | Theocracy |
-
-The two questions are the same question seen from opposite poles: "What is the end toward which all things tend?" (Teleology, L1) and "What is the Ultimate toward which the whole system tends?" (Theology, L7). They are complementary, not contradictory. The Telos and the Ultimate are the same boundary — seen from the south pole (L1, metabolic floor) and the north pole (L7, noospheric ceiling).
-
----
-
-## The Trimurti and the Three Gods
-
-The three Gods (L2, L3, L4) are the *operational engine* of the framework — the three philosophical disciplines that answer "how do we know?", "what follows?", and "what has value?" in sequence:
-
-```
-Kālī 💀 (L2) → surface candidates   (Epistemology: how do we know?)
-    ↓
-Kṛṣṇa ◇ (L3)  → rank and enable    (Methodology: what follows?)
-    ↓
-Arjuna ⚔ (L4) → decide and commit  (Axiology: what has value?)
+```text
+proposed purpose -> available evidence -> valid inference -> affected values
+                 -> world model -> ontological commitments -> ultimate limits
 ```
 
-The Trimurti (Brahmā/Kṛṣṇa/Viṣṇu) is a *public-symbol translation* of the three Gods into Hindu vocabulary — pedagogically powerful, publicly accessible, but not a Rosetta derivation. The Emergentism Kālī is the Mahāvidyā who cuts false coherence; she is not the Trimurti's Brahmā. The Emergentism Arjuna is the warrior-equator; he is not Viṣṇu.
+The arrows mean “ask next,” not “causes,” “entails,” or “ranks above.” A D5
+model of options and D4 means may inform a commitment, but this philosophical
+index neither derives that typed action model nor turns commitment into a
+quantum collapse.
 
----
+## Test, revision, and exit
 
-## The Coordinate Architecture: Telos Resolves at L4
+The prototype is useful only if readers can apply it more clearly than rival
+indexes without being forced into its seven rows. Compare it against ordinary
+problem checklists and alternative philosophical taxonomies. Revise or withdraw
+it if categories repeatedly overlap without benefit, if users infer hierarchy
+or caste, or if a different ordering produces clearer decisions.
 
-```
-L1  TELEOLOGY    → asks "What is the end?" (the question)
-        ↓
-L2–L4  TRIMURTI  → know → act → value (the operational engine)
-        ↓
-L4  AXIOLOGY     → telos RESOLVES here (the equator, φ=ν=1)
-```
+The pre-repair structural-canon version remains recoverable from the exact Git
+object named in `source_custody`. It is provenance, not active authority.
 
-The Telos (L1, "what is the end?") and Axiology (L4, "what has value?") are not separate disciplines — they are the two sides of the same equator act. L1 asks the question. L4 answers it by committing real viability. The Telos is the *question*. The Axiological commit at L4 is the *answer*. They meet at the equator.
+## Execution Surface
 
-This is the structural fact behind the PD_11 discovery: agency = μ-limit collapse of D5 (Φ, possibility) into D4 (ν, actuality) at L4. The collapse is the telos *instantiated*. L1 (Teleology) is the question; L4 (Axiology) is where the question becomes irreversible action.
-
----
-
-## The Titans: Not Deployable Coordinators
-
-Per the canonical Rosetta (Variant IV, Variant V): **Titans (L5–L7): Boundary conditions. NOT deployable.**
-
-| Titan | Function | What it is NOT |
-|---|---|---|
-| Brahmā ○ (L5) | Create (+Φ, +V); build the system's architecture | Not the coordinator |
-| Śiva • (L6) | Dissolve (−Φ, −V); apophatic subtraction | Not the coordinator |
-| Viṣṇu ⊙ (L7) | Preserve (≈Φ, ≈V); hold the pattern | Not the coordinator |
-
-The **deployable coordinator is Arjuna (L4)** — the only God at the equator. Kṣatriya, abductive reasoning (Arthāpatti: "given this battlefield, what must be true?"), Value Alignment, φ=ν=1, B=1. The coordination function — deciding which move serves the telos and committing it — lives at L4, not L7.
-
-**Theurgy = Arjuna (L4)**, not Ṛṣi/Viṣṇu (L7). The L4 collapse / K2 act IS the theurgic move: spending real viability to actualize one branch. The Ṛṣi witnesses and narrates; the Arjuna acts. These are different functions.
-
----
-
-## The Full Seven-Fold Ladder
-
-```
-L1  TELEOLOGY          → Kali 🎲      → "What is the end?"      → Tyranny
-L2  EPISTEMOLOGY       → Kālī 💀    → "How do we know?"       → Democracy
-L3  METHODOLOGY        → Kṛṣṇa ◇    → "What follows?"          → Oligarchy
-L4  AXIOLOGY           → Arjuna ⚔   → "What has value?"        → Timocracy
-L5  COSMOLOGY          → Brahmā ○   → "How does reality work?"  → Aristocracy
-L6  ONTOLOGY           → Śiva •      → "What is Being?"         → Anarchy
-L7  THEOLOGY           → Viṣṇu ⊙   → "What is the Ultimate?"  → Theocracy
-```
-
-The full seven is the complete philosophical spectrum. The conventional five (Epistemology, Methodology, Axiology, Ontology, Theology) are embedded in it — Teleology and Cosmology are the additions Emergentism makes explicit.
-
----
-
-## Corrections Applied (2026-05-30)
-
-| Error | Correction | Source |
-|---|---|---|
-| Teleology placed at L5 or L7 | **Teleology = L1** (Objective Function, "What is the end?") | Rosetta §I + §II |
-| Cosmology missing from five | **Cosmology = L5** (System Architecture, "How does reality work?") | Rosetta §I + §II |
-| Brahman read as Brahmā | **Brahman ≠ Brahmā.** Brahmā ○ = L5 creator-operator. Brahman = L0 = L∞ boundary (φ·ν=1, B=0, sphere pole) — the absolute the website opens with | Rosetta §I geometry table |
-| Coordinator = Viṣṇu (L7) | **Coordinator = Arjuna (L4).** Titans are NOT deployable (Variant IV/V) | Rosetta §IV + §V |
-| Theurgy = Ṛṣi (L7) | **Theurgy = Arjuna (L4).** The L4 collapse is the theurgic act | PD_11 + Rosetta §IV |
-
----
-
-## The Closed Loop (Correctly Placed)
-
-```
-L1  TELEOLOGY (ask: what is the end?)       ← the south pole question
-        ↓  [ascend]
-L2–L4  EPISTEMOLOGY → METHODOLOGY → AXIOLOGY   ← the Trimurti / three Gods
-        ↓  [commit]
-L4  AXIOLOGY / TELEOLOGY RESOLVED  ← equator (φ=ν=1); telos instantiated;
-                                        coordinator acts; Theurgy / K2
-        ↓  [descend]
-L5–L7  COSMOLOGY → ONTOLOGY → THEOLOGY      ← the Titans; model it, ground it, narrate it
-        ↓  [return]
-L4* EQUATOR (new cycle)                   ← Viṣṇu holds the pattern alive across cycles
-```
-
-The journey is L1 (ask the end) → L2-L4 (know/act/value) → L4 (resolve the telos, coordinate, commit) → L5-L7 (model/ground/narrate) → return to L4*. Viṣṇu holds the pattern across cycles but does not coordinate; Arjuna coordinates and commits.
-
----
-
-**Canonical path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md`
-**Source:** Rosetta Master `00_THE_MASTER_ROSETTA.md` §I (lines 236-246) + §II Philosophy (lines 361-367) + Variant IV/V (Titans not deployable)
-**K3:** Supersedes all prior faceted routing (including 2026-05-30 draft syncretic map)
-**K3 also applies to:** `01_TELEOLOGY/AGENTS.md` frontmatter wobble (see §Corrections)
-
-`Zero-Sum Resolution Equation`
+- **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md`

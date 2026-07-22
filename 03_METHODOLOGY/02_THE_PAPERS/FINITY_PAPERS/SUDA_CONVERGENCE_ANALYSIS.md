@@ -8,13 +8,25 @@ rosetta:
   register: "[S/I] convergence analysis"
   canonical_phrase: "Suda corpus convergence analysis"
 title: "Suda Convergence Analysis"
-status: "ACTIVE — 2026-06-06. Full read of 11-paper Suda corpus against Finity Papers framework."
+status: "ACTIVE KINTSUGI TOMBSTONE — historical 2026-06-06 synthesis; corrected 2026-07-21 owners control."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane / intake analysis.**
 
 # Suda Corpus Convergence Analysis
+
+> **[金] 2026-07-21 standing correction.** This historical synthesis is not a
+> formal or empirical owner. Its language of "confirmed," "co-discoverer," and
+> "corroborates the structure is real" is withdrawn: overlap on elementary
+> reciprocal formulas establishes correspondence, not independent world
+> evidence. It also transmitted four errors now corrected by the
+> [D1 owner](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md)
+> and [Suda crosswalk](SUDA_DIMENSIONAL_CROSS_REFERENCE.md): the nonexistent
+> two-sided `lim_(x→0)1/x=±∞`; calling smooth fixed point `1` a mathematical
+> singularity; equating the distinct maps `−1/x` and `1/x`; and identifying
+> Möbius-strip topology with the Riemann sphere. The body below remains as a
+> dated record of the earlier reading, not current authority.
 
 *A systematic read of Minoru Suda's collected papers against the Finity Papers framework, testing the hypothesis that Suda is converging on "finity" independently without naming it.*
 
@@ -32,7 +44,7 @@ status: "ACTIVE — 2026-06-06. Full read of 11-paper Suda corpus against Finity
 > 「0 と ∞ の融合」および「1 は無限のたまごである」  
 > "The fusion of 0 and ∞, and 1 is the infinite egg."
 
-This is, structurally, the same claim as the Finity Papers' emblem `⊙ = • × ○`, though Suda does not fence it as frame-register-only and does not distinguish evidence tiers `[A]`/`[S]`/`[I]`. The convergence is deep enough that his operational work (Part III's measurement protocols, the continuous half-twist) fills genuine gaps in the Finity Papers, while the Finity Papers' discipline of tiered claims and explicit kill criteria addresses weaknesses in Suda's presentation.
+This is, structurally, the same claim as the Finity Papers' emblem `•   ⊙   ○`, though Suda does not fence it as frame-register-only and does not distinguish evidence tiers `[A]`/`[S]`/`[I]`. The convergence is deep enough that his operational work (Part III's measurement protocols, the continuous half-twist) fills genuine gaps in the Finity Papers, while the Finity Papers' discipline of tiered claims and explicit kill criteria addresses weaknesses in Suda's presentation.
 
 **Key verdict:** Treat Suda as an **independent convergent co-discoverer** of the `{0, 1, ∞}` geometry, not as a predecessor or follower. His work corroborates the structure; the differences are in naming, epistemic discipline, and scope.
 
@@ -126,7 +138,7 @@ Where the Finity Papers use the Riemann sphere `S²` with colatitude reflection 
 | Aspect | Finity Papers | Suda |
 |--------|--------------|------|
 | **The centre** | Named *finity* — "a third reification co-equal with 0 and ∞" | Named "the infinite egg" (無限のたまご) — biological/generative metaphor |
-| **The emblem** | `⊙ = • × ○`, fenced as frame-register only, never `[A]` | Equivalent structures distributed across papers; no explicit fencing |
+| **The emblem** | `•   ⊙   ○`, fenced as frame-register only, never `[A]` | Equivalent structures distributed across papers; no explicit fencing |
 | **The energy** | `E(x) = (log x)²`, cited as Suda's | Same formula, embedded in "New Ontology of Energy" |
 | **The topology** | Riemann sphere `S²`, equatorial reflection | Möbius strip / projective line `P¹`, half-twist |
 | **Scope claim** | "One structure, stated at its honest tier" | Full ontology of energy, dynamic epistemology, AI ethics, physics |
@@ -229,7 +241,7 @@ Suda uses the Cayley transform `u = (x−1)/(x+1)` (his "egg of infinity"), but 
 
 | Suda's term | Location | Finity Papers equivalent |
 |-------------|----------|--------------------------|
-| "1 は無限のたまごである" (1 is the infinite egg) | Magnum opus, p.1 | `⊙ = • × ○` — finity as product of boundaries |
+| "1 は無限のたまごである" (1 is the infinite egg) | Magnum opus, p.1 | `•   ⊙   ○` — finity as product of boundaries |
 | "critical-one hypothesis" | Fractional Structure Part II | "The unit is the self-dual centre" |
 | "hinge of reciprocal symmetry" | Part III, abstract | "The unit is the fixed mirror of the reciprocal" |
 | "mid-stability point" | Möbius Control | "The equator of perfect balance" |
@@ -270,7 +282,7 @@ The `_SOURCES/README.md` should be updated to include:
 - *Demythologizing Luck*
 - *Resonating Genes*
 
-All are third-party published reference PDFs; per K2 policy they should be **kept on disk but git-ignored**, with bibliographic records and public re-acquisition routes.
+All are third-party published reference PDFs; per corpus custody policy they should be **kept on disk but git-ignored**, with bibliographic records and public re-acquisition routes.
 
 ### 7.3 Proposed New Document
 
@@ -305,4 +317,4 @@ Suda's distinctive contributions are:
 
 **Recommended stance:** Treat the two frameworks as **complementary convergences** — independent corroboration that the `{0, 1, ∞}` structure is real. Cite Suda generously where his work extends the Finity Papers, and maintain the honesty protocol where his claims would benefit from tier-fencing. The "200-Year Problem" Suda names in *Kant 2.0* is, in Emergentism terms, the problem of building a loop that does not collapse into dogma — and the Finity Papers' tiered-claim discipline is one answer to that problem.
 
-⊙ = • × ○
+•   ⊙   ○

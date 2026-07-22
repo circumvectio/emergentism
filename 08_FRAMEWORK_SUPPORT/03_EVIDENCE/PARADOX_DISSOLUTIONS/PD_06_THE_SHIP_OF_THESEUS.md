@@ -45,24 +45,35 @@ Under this framing, the paradox is unresolvable. Every plank replaced reduces ma
 
 ## 3. THE DISSOLUTION
 
-The framework separates two readings, not two substances: **D4 substrate / means conditions** and **D5 operational coherence**.
+The framework separates two actual D4 descriptions: **material substrate** and
+**the persistent relational/functional trace carried across receipts**. D5 enters
+only when an actual agent models counterfactual continuations of that identity.
 
 - **Substrate** tracks material composition — the parts, their arrangement, their physical support.
-- **Coherence** tracks operational continuity — the systemic integration that makes the parts function as a unified vessel. In the action register, this becomes `Φ` only when a finite agent can use that coherence as worldline-foresight.
+- **Continuity trace** tracks actual operational persistence—the organization,
+  custody, use, and history that make the parts function as one vessel. A present
+  `Φ` score may assess the quality of represented D5 continuations, but it is not
+  the identity trace itself.
 
-On S², the ship's identity is its **equatorial position** (φ=1, ν=1) — the balance point where coherence and viability are in equilibrium. This is the state in which the ship functions *as a ship*: carrying cargo, maintaining structural integrity, executing the operations that define it.
+As an `[I]` correspondence, the equator can depict a case in which material
+support and operational continuity are jointly adequate. It does not prove that
+identity is literally a coordinate or that all persistence is maximized at balance.
 
 As planks are replaced incrementally, substrate changes while operational coherence is maintained. The ship's continuity (structural function, crew continuity, naming, institutional role) persists across material substitution. The vessel remains near the identity-equator.
 
 The reconstructed original — the pile of old planks reassembled — has restored substrate but lacks operational continuity. No functional coherence, no systemic integration, no carried history of use. It is a collection of historically significant timber. Its φ is low in the identity reading; it is not at the equator.
 
-**Identity = position on S², not material constitution.**
+**Operational proposal:** identity judgments should track persistent organization
+and history as well as material constitution; the `S²` picture is optional.
 
 This is why a river can be the same river despite completely different water, a band can be the same band despite member changes, and a body can be the same person despite extensive cellular turnover (most somatic cells replaced over years, though neurons persist for decades). Identity tracks operational continuity, not bare substrate.
 
 ## 4. THE FRAMEWORK CONNECTION
 
-- **P_node = Φ × V:** In the action register, the framework separates D5 foresight/coherence from D4 means-to-act. The Ship paradox uses the same distinction analogically: substrate conditions can change while operational coherence persists. It is not claiming that material composition is literally the whole `V` factor in every register.
+- **P_node = Φ × V:** In the action register, `Φ` is a present D4 assessment of
+  D5 option-field quality and `V` is D4 usable means. The Ship analogy instead
+  tracks a D4 continuity trace across changing substrate; it does not make either
+  identity term equal to `Φ` or `V`.
 - **Equatorial balance:** The equator (φ=1, ν=1) is the framework's balance point. Identity persists at the equator; it degrades toward either pole. Pure material identity (north pole, φ→∞) would mean identity is only the arrangement of atoms — fragile, destroyed by any replacement. Pure functional abstraction (south pole, ν→∞) would mean identity is completely independent of material — nothing anchors it.
 - **Soul-Loop continuity:** Identity continuity does not require μ to select actuality. `μ₄` names the candidate emergence of counterfactual capacity; once such capacity exists, repeated commitment, outcome, and model update may preserve an identifiable trace across material turnover. That persistence—not quantum collapse—is the relevant analogy here.
 - **η = 0:** A system maintains identity when it sustains coherence without extracting it from its environment. The ship's identity persists because the operational structure is internally sustained, not parasitically dependent on any single material component.
@@ -71,7 +82,10 @@ This is why a river can be the same river despite completely different water, a 
 ## 5. WHAT WOULD FALSIFY THIS
 
 - **If the continuity criterion adds nothing beyond material description:** The operational pattern is presently `currently_unreduced`, not proven irreducible. A successful material reduction would reclassify the emergence as weak while leaving open whether operational continuity remains the more useful identity criterion.
-- **If systems with maintained Φ but total V replacement showed no measurable identity persistence:** Empirically, if organisms, institutions, or artifacts undergoing complete material turnover showed no detectable trace of prior identity — no functional, behavioral, or structural continuity — the Φ-tracking claim fails.
+- **If systems with a declared continuity trace but total substrate replacement
+  showed no measurable persistence:** if organisms, institutions, or artifacts
+  undergoing turnover preserve no functional, behavioral, custodial, or structural
+  trace, this proposal fails.
 - **If the equator had no distinctive identity-persistence properties:** If systems at φ=1, ν=1 showed no greater identity stability than systems at either pole, the S² mapping of identity to equatorial position is unjustified.
 - **If non-incremental replacement preserved identity equally:** If replacing all planks simultaneously (total V change with no Φ disruption) preserved identity just as well as incremental replacement, the Φ-continuity claim weakens — it would suggest identity is merely a point-in-time snapshot, not an ongoing coherence.
 

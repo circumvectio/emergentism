@@ -45,7 +45,7 @@ The ancient egregore intake is useful as a metaphor for collective operating sys
 
 ## Routing
 
-This note may support Emergentism methodology, governance hardening, and comparative evidence. It should not rewrite active Skyzai runtime architecture.
+This note may support Emergentism methodology, institutional hardening, and comparative evidence. It does not govern any external application runtime.
 
 ## Execution Surface
 

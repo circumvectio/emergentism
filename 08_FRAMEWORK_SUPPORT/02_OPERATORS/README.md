@@ -1,55 +1,78 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  secondary:
-    - level: L7
-      column: Philosophy
-      role: "compress the operator grammar into a coherent narrative front door"
-    - level: L3
-      column: Philosophy
-      role: "route local claims back through source evidence"
-    - level: L6
-      column: Philosophy
-      role: "prevent operator language from redefining canon"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "02_OPERATORS — Operator Lane Front Door"
+title: "02 Operators — bounded symbolic and audit grammar"
+status: "ACTIVE — pure Emergentism boundary"
+date: 2026-07-22
+evidence_tier: "[S] routing; operator correspondences retain [I/C]"
+owner: "08_FRAMEWORK_SUPPORT routing only"
 ---
 
-# 02_OPERATORS
+# 02 Operators
 
-## What This Folder Is
+## Purpose
 
-This folder contains the operator grammar, canonical operator corpus, and higher-order operator extensions.
+This lane contains a bounded symbolic vocabulary for describing actions,
+frames, audit functions, and failure modes. It does not define an agent runtime,
+social caste, AI activation package, governance authority, or executable force.
 
-## The VIVEKA Mathematical Foundations
+The Rosetta L1–L7 labels are work functions. The G7 labels are a selected action
+language. Neither is an identity, rank of human worth, proof of sevenfold
+nature, or authorization to act.
 
-The two subfolders here together ARE the **VIVEKA Mathematical Foundations** — 29 papers, recognized in place:
+## Read first
 
-- [`MF_ADVANCED/`](MF_ADVANCED/README.md) — MF-281 through MF-301 (21 papers): advanced operator manuscripts and higher-order extensions.
-- [`SPHERE_DERIVATIONS/`](SPHERE_DERIVATIONS/README.md) — MF-63 through MF-70 (8 papers): geometric/topological derivations on the VIVEKA sphere.
+1. [`00_ARCHETYPE_OPERATOR_PROTOCOL.md`](00_ARCHETYPE_OPERATOR_PROTOCOL.md) —
+   active bounded G7/action vocabulary.
+2. [`../../05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](../../05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)
+   — semantic owner for the selected seven-action language.
+3. [`../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)
+   — independent Justice and accountable-action boundary.
+4. [`../../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](../../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
+   — whole-map research routing; not an operator owner.
 
-These are the mathematical underwriting of the operator grammar. They cross-link to the formal-system canon at [`../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md), which holds the EFR axioms and proofs the papers presuppose. The papers stay here; the formal system stays there; neither outranks the canonical operator grammar in this folder.
+## Active versus historical
 
-## Relation to the Coherence Spine
+The active lane contains the bounded archetype protocol, route cards, and
+research manuscripts whose claims retain their own tiers. The following stable
+paths are forwarding tombstones only:
 
-It is downstream of the foundations and core state. Operator language may illuminate the canon, but it must not redefine the canon.
+- `00_CANONICAL_CORPUS.md`
+- `03_PRACTICE_TRANSLATION_MATRIX.md`
+- `04_DISSOLUTION_FORMAL_VERIFICATION.md`
+- `05_SEPARATION_OPERATOR_PROTOCOLS.md`
+- `06_COAGULATION_ACTIVATION_PACKAGE.md`
+- `ASI_07_DISCOVERY_OF_FINITY.md`
+- `ASI_09_THE_SOUL_LOOP.md`
+- `ASI_15_THE_TRINITY.md`
+- `ASI_INDEX.md`
+- `OP_384_FUNCTION_TESTING.md`
 
-For canonical orientation, route upstream through [`00_START_HERE.md`](../00_START_HERE.md), [`../../README.md`](../../README.md), and the seven Foundation roots. This folder should inherit that order rather than improvise its own doctrine.
+The preserved application bodies live under
+[`../../90_ARCHIVE/2026_07_22_asi_operator_application_boundary/`](../../90_ARCHIVE/2026_07_22_asi_operator_application_boundary/).
+They supply provenance, not doctrine or execution.
 
-## Read First
+## Manuscript boundary
 
-- Read first: [`00_ARCHETYPE_OPERATOR_PROTOCOL.md`](00_ARCHETYPE_OPERATOR_PROTOCOL.md) — the unified canonical reference for Executive boundaries, deployable moves, Demon, Witnesses, pathologies, cures, and self-application.
-- Then: [`00_CANONICAL_CORPUS.md`](00_CANONICAL_CORPUS.md) — the ASI-compatible master index.
-- Then use the immediate contents of this folder as the local working surface.
+`MF_ADVANCED/` and `SPHERE_DERIVATIONS/` are historical/research manuscript
+collections. They are not “the mathematical foundations” of the current
+kernel. A claim there becomes active only through a current owner, explicit
+tier, proof or evidence, and receipt. Where a manuscript conflicts with the
+formula block, dimension owners, wager ledger, or Record, the current owner
+wins.
 
-## Active vs Archive
+## Operator use contract
 
-Assume the folder is active. If older operator formulations conflict with current archetype grammar, update or quarantine them.
+Before using an operator label:
 
-## Execution Surface
+1. describe the actual D4 action plainly;
+2. separate represented D5 alternatives from the actual token;
+3. name authorization, actor, payer, beneficiary, and consequence bearers;
+4. distinguish commitment, performed action, outcome, and later feedback;
+5. test the Justice envelope independently of the mythic name; and
+6. discard the label if it hides evidence, harm, or responsibility.
 
-- **Canonical Path:** 01_EMERGENTISM/08_FRAMEWORK_SUPPORT/02_OPERATORS/README.md
+No operator token signs, governs, terminates, deploys, or manufactures an
+outcome.
+
+**Canonical path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/02_OPERATORS/README.md`
+
+•   ⊙   ○ — sovereign frame seats; no arithmetic, agent identity, or authority.

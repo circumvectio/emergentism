@@ -1,7 +1,7 @@
 ---
 title: "Verdict — Production-function form: the agency-register P = Φ × V"
 date: 2026-07-02
-status: "VERDICT ISSUED — STAGED for K2, not signed"
+status: "RECORDED HISTORICAL VERDICT — result unchanged"
 evidence_tier: "[B] reproducible result on a real public dataset; [I] interpretation"
 data: "Munnell US-states productivity panel (Rdatasets/plm/Produc.csv), n=816 (48 states × 17 yrs, 1970-1986). Y=gsp, L=emp, K=pc+pcap."
 provenance: "Executes the agency-register test that supersedes the GFS well-being test (see ../2026-07-02_gfs_pooled_multiplicative_vs_additive/VERDICT.md post-verdict correction). run_prodfn.py, RUN_OUTPUT.txt."
@@ -32,8 +32,8 @@ Cobb-Douglas elasticities (full sample): **labor a = 0.611, capital b = 0.442** 
 | # | Criterion | Result | Why |
 |---|---|---|---|
 | K1 | multiplicative beats additive | **FAIL** | additive (6,721) **ties/edges** Cobb-Douglas (6,799) out-of-sample — the product earns no advantage |
-| K2 | symmetric balance-product (a≈b, a+b≈1) | **FAIL** | a=0.61 ≠ b=0.44 — labor and capital enter **asymmetrically**, so there is **no `Φ=ν` equator optimum** |
-| K2b | literal `Φ×V` (unit elasticities) ≈ general CD | **FAIL** | forcing a=b=1 gives a+b=2 (wrong returns-to-scale) → an ~85× worse fit |
+| KC2 | symmetric balance-product (a≈b, a+b≈1) | **FAIL** | a=0.61 ≠ b=0.44 — labor and capital enter **asymmetrically**, so there is **no `Φ=ν` equator optimum** |
+| KC2b | literal `Φ×V` (unit elasticities) ≈ general CD | **FAIL** | forcing a=b=1 gives a+b=2 (wrong returns-to-scale) → an ~85× worse fit |
 | K3 | CES substitution ρ ≈ 0 (Cobb-Douglas family) | **FAIL** | best ρ = −0.9, at the **additive/linear** end, away from the product |
 
 ## What this kills
@@ -55,4 +55,4 @@ The agency reframe (correct as a critique of the GFS verdict) does **not** rescu
 
 Isolate the surviving claim: a **task/production dataset that samples near-zero inputs** — subjects with the skill but *no tool*, or the tool but *no skill* — and test whether output collapses to ~0 (product/min) rather than degrading linearly (additive). That is the only place `Φ×V` can beat the sum, and it is the only test that would move the claim from `[I]` toward `[B]`.
 
-*— Staged for K2. Sign, hold, or return. Nothing here is canon until you sign it.*
+*— Reproducible local result; not canon, deployment evidence, or external replication.*

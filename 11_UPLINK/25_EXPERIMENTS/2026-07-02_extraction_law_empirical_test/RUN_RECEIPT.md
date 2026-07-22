@@ -3,7 +3,7 @@ title: "Run Receipt - Extraction Law Empirical Test"
 date: 2026-07-02
 status: "RUN COMPLETE"
 evidence_tier: "[B] command-run receipt; [D] interpretation"
-owner: "K2-staged; not signed"
+owner: "01_EMERGENTISM — historical experiment packet"
 ---
 
 # Run Receipt
@@ -53,5 +53,5 @@ The run is deterministic under:
 - Seed `20260702`
 - Repeated stratified 5-fold cross-validation, 50 repeats
 
-This receipt verifies a local reproducible analysis, not a K2-signed doctrine update.
-
+This receipt verifies a local reproducible analysis, not a doctrine update or
+external replication.

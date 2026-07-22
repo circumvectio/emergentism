@@ -1,36 +1,55 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Methodology
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[B]"
-  canonical_phrase: "The Finity Papers — External Source Reference"
+type: emergentism-agent-route
+title: "Sources — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# _SOURCES — Agent Routing
+# Sources — Agent route
 
-**Lane scope:** Third-party source reference folder for the Finity Papers programme.
-**Primary lead:** `L3 Vaiśya`
-**Evidence tier:** `[B]` for external source routing; `[I]` for re-acquisition provenance.
+**Lane:** `03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES`
 
-## Read First
+## Read first
 
-- [`README.md`](README.md) — source inventory, SHA-256 hashes, PhilArchive re-acquisition routes
-- [`../AGENTS.md`](../AGENTS.md) — parent lane authority
+- [Local README](README.md)
+- [Emergentism root route](../../../../AGENTS.md)
+- [Kernel Index](../../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Routing Law
+## Pure-worldview boundary
 
-- This folder contains git-ignored third-party references (Suda 2025 Parts I & II).
-- SHA-256 and PhilArchive re-acquisition routes are recorded in README.md.
-- Do not treat third-party sources as framework-authored claims.
-- Route Finity Papers authority through [`../AGENTS.md`](../AGENTS.md).
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Constraints
+## Epistemic contract
 
-- Do not edit PDF content.
-- Do not upgrade third-party claims without independent verification.
-- All irreversible actions require K2 envelope staging.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-⊙ = • × ○
+## Rosetta dispatch
+
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

@@ -1,7 +1,7 @@
 ---
 title: "Verdict — Balance-hump (Burri anthropic sphere): output peaks at Φ=ν?"
 date: 2026-07-03
-status: "VERDICT ISSUED — STAGED for K2, not signed"
+status: "RECORDED HISTORICAL VERDICT — result unchanged"
 evidence_tier: "[B] reproducible result on real public data; [I] interpretation"
 data: "Munnell US-states panel (Rdatasets/plm/Produc.csv), n=816. Y=gsp, L=emp, K=pc+pcap."
 provenance: "Tests the CORRECTED claim (owner, 2026-07-03): P is multiplicative but the payoff is MAXIMIZED at balance Φ=ν (B=sin θ peaks at 1), a HUMP in the factor ratio — not the unbounded Cobb-Douglas of VERDICT.md. run_balance.py, RUN_OUTPUT_BALANCE.txt."
@@ -50,4 +50,4 @@ The curvature term is **real and strongly significant** — but the **wrong sign
 
 Single-agent task data sampling **near-zero** inputs (skill-but-no-tool, tool-but-no-skill): does output (a) collapse to ~0 off either axis — conjunction; (b) **peak at balance and decline past it** — the anthropic hump; or (c) plateau — Leontief. Only (b) vindicates the anthropic sphere. Neither the aggregate data nor the axe intuition has produced (b) yet.
 
-*— Staged for K2. Sign, hold, or return. Nothing here is canon until you sign it.*
+*— Reproducible local result; not canon, deployment evidence, or external replication.*

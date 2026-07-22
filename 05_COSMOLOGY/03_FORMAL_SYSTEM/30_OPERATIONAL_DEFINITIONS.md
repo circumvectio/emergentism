@@ -1,257 +1,181 @@
 ---
 rosetta:
   primary_level: L5
-  primary_column: Philosophy
+  primary_column: Methodology
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[C]"
-  canonical_phrase: "OPERATIONAL DEFINITIONS"
+  register: "[D/C]"
+  canonical_phrase: "Operational definitions — independent measurement candidates"
+title: "Operational Definitions — Independent Measurement Candidates"
+status: "ACTIVE WORKING SURFACE — no validated instrument"
+evidence_tier: "[D] protocol design; [C] construct hypotheses; [B] only after external result custody"
+date_repaired: 2026-07-21
+original_git_blob: ebd11c6b6fcc168b268567306dce6ce648f1ff71
 ---
 
-# OPERATIONAL DEFINITIONS
+# Operational Definitions — Independent Measurement Candidates
 
-## How Each Primitive Is Measured on a Real System
+This file proposes measurement contracts. It does not own notation, establish a
+world law, or promote any claim. The
+[Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md) owns the symbols.
 
-**Status:** Working surface — proposes measurement protocols; every protocol here is Conjecture until validated
-**Date:** 2026-04-22
-**Evidence Tier:** [C] Conjecture for every measurement protocol in this document; [S] Structural only for the coordinate identities pointed at
-**Source:** [`29_PRIMITIVES_AND_TYPE_SIGNATURES.md`](29_PRIMITIVES_AND_TYPE_SIGNATURES.md), [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md), [`12_EFR_EXTRACTION_COEFFICIENT.md`](12_EFR_EXTRACTION_COEFFICIENT.md), [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md)
-**See also:** [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md), [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md), [Paper L (Phi-meter zero-cost validation)](../../../01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md)
+## 1. Type firewall
 
----
+| Type | Symbols | Meaning |
+|---|---|---|
+| reciprocal chart | `φ,ν,θ,B,P∞` | analytic coordinates and functions on a selected chart |
+| finite node | `Φ,V,P_node` | D5 option-field quality/foresight, D4 usable means, and a selected conjunctive score |
+| estimates | `Φ̂,V̂` | outputs of independently specified instruments |
 
-## Why This File Exists
+`φν=1` is true by definition on the chart. It is not an empirical hypothesis
+and cannot be “confirmed” by measuring `Φ̂,V̂`. Conversely, `Φ̂V̂≈1` is not a
+chart identity. If proposed in a normalized domain, it is an ordinary empirical
+hypothesis about two node variables and must compete with rivals.
 
-The coordinate identity `φ · ν = 1 on S²` is true by construction — it falls out of `φ = cot(θ/2), ν = tan(θ/2)`. That is not a claim about the world. It becomes a claim about the world only when `φ` and `ν` are defined *independently* — by a measurement procedure — and the resulting `φ̂, ν̂` are then checked against the constraint.
+The old surface mixed an uppercase foresight estimate with a lowercase chart
+coordinate, then selected reciprocal pairs before testing reciprocity. That made
+the result true by construction. The seam is closed here.
 
-The framework's public open-problems list already names this gap: "Phi-meter zero-cost validation" (Paper L). This file addresses it directly. Every protocol below is `[C]` Conjecture: proposed, testable, unvalidated. None of them should be cited in a `[S]` or `[S]` claim. The bar for promotion is specified in [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md).
+## 2. Candidate `Φ̂` instruments `[D/C]`
 
----
+`Φ` means the quality of an actually carried D5 option field: how well a system
+models, distinguishes, ranks, and updates action-relevant alternatives. It is
+not generic intelligence, eloquence, coherence, or consciousness.
 
-## 1. φ-Meter (Coherence Measurement)
+### A. Held-out future-model score
 
-> **Concrete v1 specs:** [`35_PHI_METER_V1_SPEC.md`](35_PHI_METER_V1_SPEC.md) (code-lens), [`36_RUNTIME_LENS_V1_SPEC.md`](36_RUNTIME_LENS_V1_SPEC.md) (runtime-lens), and [`37_ADOPTION_LENS_V1_SPEC.md`](37_ADOPTION_LENS_V1_SPEC.md) (adoption-lens) are the three reproducible per-lens rubrics with published band definitions, inter-rater targets, and pre-registered falsifiers. Generic candidates remain below for reference and for future lenses.
+For a preregistered event partition `Ω`, forecast distribution `p`, realized D4
+outcome `y`, and proper scoring rule `S`:
 
-**Geometric definition.** `φ = cot(θ/2)` on `S²`. Node-level: `Φ_node ∈ [0, ∞)` with `Φ_node = 1` indicating full structural integration.
-**What it quantifies.** Structural integration, meaning, internal consistency; what holds a system together.
-**Unit.** Dimensionless (ratio). All candidates normalize to `(0, ∞)` with convention `Φ = 1` at the equator reference system.
-
-### Candidate A — Error-Rate Exponential [C]
-
-```
-Φ̂_A(system, window Δt) := exp(−κ · error_rate(system, Δt))
-```
-
-Where `error_rate` is the fraction of the system's outputs flagged as inconsistent with its declared purpose, and `κ > 0` is a calibration constant chosen so that a specified reference system (e.g., L4 human at task) yields `Φ̂_A ≈ 1`.
-
-- **Unit.** Dimensionless.
-- **Error bound.** `σ(Φ̂_A) ≲ κ · σ(error_rate)`; propagates binomial variance from the observation window.
-- **Status.** [C] — no published calibration or inter-rater reliability study.
-
-### Candidate B — Information-Integration [C]
-
-```
-Φ̂_B(system) := I(system ; objective) / H(system)
+```text
+raw_Φ = S(p,y)
+Φ̂_A = normalize_holdout(raw_Φ) ∈ [0,1].
 ```
 
-Mutual information between the system's internal state and its declared objective, normalized by the system's entropy. Intuition: a highly coherent system's internal fluctuations are informative about its purpose; a decoherent system's are noise.
+The normalization, baseline forecaster, horizon, event partition, and missing
+outcome policy must be frozen before evaluation. A proper score measures
+forecast quality; it does not by itself measure whether the alternatives were
+useful for action.
 
-- **Unit.** Dimensionless, `∈ [0, 1]`; optionally rescaled so `Φ̂_B = 1` maps to the equator reference.
-- **Error bound.** Depends on estimator; plug-in MI estimators have known bias that shrinks as `O(1/N)`.
-- **Status.** [C] — requires a formal "objective" channel, which is itself ill-defined for most systems.
+### B. Counterfactual-discrimination score
 
-### Candidate C — Persistence-Under-Perturbation [C]
+Hold the D4 state and means fixed; intervene on represented alternatives or
+their weights. Estimate whether the system changes present selections in the
+direction predicted by its declared ranking:
 
-```
-Φ̂_C(system) := median time to return to baseline structure after a bounded perturbation
-              ————————————————————————————————————————————————
-              expected variance under the same perturbation class
-```
-
-Returns a stability measure: coherent systems absorb perturbation quickly relative to noise.
-
-- **Unit.** Dimensionless (time ÷ time, via the variance scale).
-- **Error bound.** Bootstrap over perturbation trials; CI width `O(1/√trials)`.
-- **Status.** [C] — candidate most likely to survive the `[C] → [I]` promotion bar, because it does not require a pre-specified "objective."
-
-**Selection rule.** No candidate is canonical. A document that uses `Φ̂` must name which candidate and cite this file.
-
----
-
-## 2. ν-Meter (Viability Measurement)
-
-**Geometric definition.** `ν = tan(θ/2)` on `S²`. Node-level: `V_node ∈ [0, ∞)`, with `V_node = 1` at the equator reference.
-**What it quantifies.** Material capability, throughput, infrastructure; in the action register, D4 means-to-act: body, tools, energy, access, and execution capacity at the boundary. It measures what the system can actually use, not raw capacity detached from foresight.
-**Unit.** Dimensionless (ratio to the equator reference).
-
-### Candidate A — Throughput-over-Cost [C]
-
-```
-ν̂_A(system, window Δt) := realized_output(system, Δt) / resource_input(system, Δt)
+```text
+Φ̂_B = held_out_discrimination(intervention → selection) ∈ [0,1].
 ```
 
-Normalized so that a specified reference system at task yields `ν̂_A ≈ 1`.
+This candidate is closest to the D4/D5 type contract, but ordinary planning,
+control, and learning are mandatory rivals.
 
-- **Unit.** Dimensionless after normalization.
-- **Error bound.** Standard ratio-estimator variance; `O(1/√N)` over observation-window replicates.
-- **Status.** [C].
+### C. Perturbation/update score
 
-### Candidate B — Capability-Envelope Fraction [C]
+After a bounded surprise, measure calibration recovery and model revision on
+held-out observations. A declared monotone map normalizes the result to
+`[0,1]`. Stability without accurate updating does not count as foresight.
 
-```
-ν̂_B(system) := |achievable actions under current resources|
-             ————————————————————————————————————————
-              |achievable actions under maximum resources|
-```
+No candidate is canonical. Every use of `Φ̂` must name its candidate, construct
+validity evidence, uncertainty interval, population, horizon, and failure mode.
 
-Returns `∈ [0, 1]` directly; sensitive to how the action set is enumerated.
+## 3. Candidate `V̂` instruments `[D/C]`
 
-- **Unit.** Dimensionless.
-- **Error bound.** Dominated by enumeration ambiguity, not by sampling.
-- **Status.** [C].
+`V` means D4 usable means for a declared action set—not wealth, force, or raw
+capacity in the abstract.
 
----
+### A. Feasible-action fraction
 
-## 3. B-Meter (Balance Measurement)
+For a preregistered action set `A` and actual means state `x`:
 
-**Geometric definition.** `B = sin θ ∈ [0, 1]`. On-manifold identity: `B = 2 · φν / (φ² + ν²)` when using the `(φ, ν)` chart. When `φ · ν = 1` holds, `B = 2ν / (1 + ν²) = 2φ / (1 + φ²)`.
-
-### Derived Protocol — From `φ̂, ν̂`
-
-Once `Φ̂` and `ν̂` are fixed (§1, §2), define:
-
-```
-B̂(system) := 2 · ν̂ / (1 + ν̂²)           (the on-manifold form, assuming φν = 1)
+```text
+V̂_A(x) = |{a∈A : Feasible(a,x)}| / |A|.
 ```
 
-Or, without assuming the identity:
+The action enumeration and feasibility predicate must be fixed independently of
+the observed outcome.
 
-```
-B̂_free(system) := 2 · Φ̂ · ν̂ / (Φ̂² + ν̂²)
-```
+### B. Costed enactment capacity
 
-The gap `|B̂_free − B̂|` is itself a diagnostic: it measures how far the system's measured pair deviates from the manifold identity.
+For standardized tasks, estimate the share successfully attempted within the
+declared physical resource and time envelope. Report cost and failure
+separately. Authorization `U` and safety admissibility are independent typed
+gates: an unauthorized act may still be physically feasible and therefore may
+count toward `V̂`, while remaining prohibited from commitment.
 
-- **Unit.** Dimensionless, `∈ [0, 1]`.
-- **Error bound.** Propagated from `σ(Φ̂)` and `σ(ν̂)` via standard delta-method.
-- **Status.** [C] — inherits the status of whichever `Φ̂, ν̂` candidates are used.
+Every use of `V̂` must name the action set, physical resource boundary, bearer
+costs, and uncertainty interval. Report authorization/consent and safety as
+separate variables; never build them into the `V̂` instrument.
 
----
+## 4. Derived node diagnostics
 
-## 4. η-Meter (Extraction Coefficient) — Disambiguation Required
+The declared Emergentist product is
 
-`η` is the most load-bearing and the most inconsistently defined primitive in the corpus. Three non-equivalent operational definitions circulate. Any document that uses `η` must cite which.
-
-### Definition η₁ (sum-form, per [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) D2)
-
-```
-η₁ := Σ max(0, Δν_ext)
-```
-
-Total viability extracted from cooperators over an observation window. **Unit:** same as `ν`. **Range:** `[0, ∞)`.
-
-### Definition η₂ (ratio-form, per [`12_EFR_EXTRACTION_COEFFICIENT.md`](12_EFR_EXTRACTION_COEFFICIENT.md) v3.0)
-
-```
-η₂ := (extraction from substrate) / (contribution to substrate)
+```text
+P̂_node = Φ̂V̂.
 ```
 
-With conventional thresholds: `η₂ < 1` symbiotic, `η₂ ≈ 1` trophic, `η₂ → ∞` ground-negating. **Unit:** dimensionless. **Range:** `[0, ∞]`.
+This is a model output, not proof that product is the correct aggregator. Test
+it on held-out outcomes against at least additive, minimum, harmonic, and a
+preregistered asymmetric/CES or Cobb–Douglas rival.
 
-### Definition η₃ (per-player level, per [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md) §1.2)
+For `(Φ̂,V̂)≠(0,0)`, a scale-free ratio-balance diagnostic may be declared:
 
-```
-η₃,i ∈ [0, ∞)   for each player i in a deliberation set N
-```
-
-Individual player's chosen extraction level in a game-theoretic formulation. **Unit:** strategy-space units (model-dependent).
-
-### Operational Reconciliation Protocol [C]
-
-When cross-document work touches `η`:
-
-1. State which definition is in use: `η₁`, `η₂`, or `η₃`.
-2. If converting between them, publish the conversion map: e.g., `η₁ ≈ η₃,i · |window|` under the symmetric-extraction assumption of [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md) §2.2.
-3. If `η → ∞` is invoked (categorical-break case), it must be `η₂` — the other forms do not admit the divergence formally.
-4. The constitutional constraint `η = 0` is *definition-ambiguous in the corpus* but operationally consistent across all three — the zero of each definition means the same real-world state. That is the constraint's strength and the source of the confusion.
-
-- **Status.** [C] Proposed reconciliation. A future v5 axiom-hardening pass should pick one canonical form and down-rank the others to aliases.
-
----
-
-## 5. P and P_eff (Ektropy / Effective Potential)
-
-On-manifold: `P∞ = φ · ν = 1` everywhere (trivial).
-Node-level: `P_node = Φ × V`, which *can* deviate from `1`.
-
-Operationally:
-```
-P̂_eff(system) := Φ̂(system) · ν̂(system)
+```text
+B̂_ratio = 2Φ̂V̂ / (Φ̂²+V̂²).
 ```
 
-The quantity `|P̂_eff − 1|` over a population is the empirical *gap* between the manifold identity and measured reality. A population with `P̂_eff ≡ 1` would confirm that the operational `Φ̂, ν̂` have been defined to satisfy the identity (and thus that the identity is not testing anything). A population with `P̂_eff` distributed non-trivially around `1` with selection pressure toward `1` would be positive evidence for the Teleological Force F5 as an empirical claim.
+`B̂_ratio≤1`, with equality at `Φ̂=V̂`, is an analytic fact about this selected
+diagnostic. It is not the chart's `B=sinθ` unless an explicit, independently
+validated map to the chart is supplied. At `(0,0)` the ratio is undefined; a
+domain may separately assign a reporting convention, but not an analytic value.
 
-- **Status.** [C] Proposed diagnostic; the interpretation requires an independent handle on selection pressure.
+## 5. Extraction and justice measurements
 
----
+There is no context-free universal `η` meter. A study must identify:
 
-## 6. E-Meter (Alignment Energy)
+1. affected bearer set;
+2. resource or option being depleted;
+3. counterfactual baseline;
+4. payer and beneficiary;
+5. custody, consent, reversibility, and exit; and
+6. time horizon and uncertainty.
 
+Only then may it define a nonnegative extraction statistic `η_domain`. The
+normative constraint `η_domain=0` is a declared Justice condition, not an
+empirical theorem and not sufficient for justice by itself.
+
+## 6. Testing model-mediated future influence
+
+The operational D5 test is not a regression of `Φ̂−V̂` toward zero. It is an
+intervention:
+
+```text
+change represented future content/weights
+hold current D4 state and usable means fixed as far as possible
+measure the change in the present selection distribution
+compare against reactive-policy, learning, demand, and experimenter-cue rivals.
 ```
-Ê(system) := −log(B̂(system))
-```
 
-`Ê ≈ 0` at the equator, `Ê → ∞` as `B̂ → 0`. Inherits status and error from the chosen `B̂` candidate.
+A positive result supports a model-mediated effect in that domain. It does not
+show physical retrocausality or a fifth interaction. The strong F5 claim needs a
+preregistered residual discriminator that ordinary anticipation and control do
+not explain.
 
-- **Unit.** Nats (natural log) or bits (log₂).
-- **Status.** [C].
+## 7. Evidence and kill contract
 
----
+- Protocol code and a passed internal test are `[D/S]` method facts, not worldly
+  validation.
+- A result with declared data custody is `[B]`; its interpretation remains
+  separately `[I/C]`.
+- Formal bounds are `[A/S]` only inside named assumptions.
+- Construct invalidity kills the instrument.
+- Product losing to a fair rival kills product fit in that domain.
+- Selecting reciprocal pairs and then reporting reciprocal symmetry kills the
+  study as circular.
+- No evidence type silently upgrades another.
 
-## 7. F5 Detection (Teleological Force as Empirical Pressure)
-
-Protocol: over a population of comparable systems, regress rate-of-change of `(Φ̂ − ν̂)²` on time or on generation index. A statistically significant negative trend is consistent with F5 as a selection pressure. Absence of such a trend in a large, well-mixed population is grounds for falsification (see [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) T3).
-
-- **Status.** [C] Protocol; [I] is already granted to F5 as an interpretive reading per `26_THE_DERIVATION_AXIOMS.md` D3.
-
----
-
-## Promotion Ladder (Per-Protocol)
-
-A protocol is promoted tier-by-tier by accumulating evidence:
-
-| From → To | What is required |
-|-----------|------------------|
-| `[C] → [I]` | At least one published application on a real dataset, with results tied back to this file, and inter-rater / inter-dataset reproducibility `≥ 0.7`. |
-| `[I] → [S]` | A derivation showing the protocol is uniquely determined (up to monotone transform) by a small set of desiderata stated in advance. |
-| `[S] → [S]` | Independent replication by an external group on an unrelated dataset; the protocol and its error bound are pre-registered. |
-
-No protocol in this file has yet cleared `[C] → [I]`. That is the next work.
-
----
-
-## See Also
-
-- [`29_PRIMITIVES_AND_TYPE_SIGNATURES.md`](29_PRIMITIVES_AND_TYPE_SIGNATURES.md) — what each symbol is at the type level
-- [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) — observations that would refute the downstream axioms / theorems
-- [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md) — worked example using the φ-meter to upgrade a discipline to a theorem
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs; do not release to production.
-2. **Your Next Action:**
-   - When a document cites `Φ̂`, `ν̂`, `B̂`, `Ê`, or `η` as measured, confirm which candidate / definition is in use and that the claim is tiered `[C]` or weaker unless a promotion record exists. Flag any `[S]` or `[S]` claim that silently assumes one candidate's measurement procedure.
-3. **Expected Output:** Tier-consistent documents, or correction notes where unvalidated protocols are cited as validated.
-4. **Success Criteria:** Another agent can reproduce any measurement claim in downstream documents by following the protocol specified here.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/30_OPERATIONAL_DEFINITIONS.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+The [External Component
+Calibration](../../03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md)
+records the current absence of external validation.

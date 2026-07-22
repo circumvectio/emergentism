@@ -5,27 +5,30 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Executive"
   regime: "Kṣatriya"
-  register: "[D] staged-per-tier — each revelation carries its own tier, its receipt, and its price; none is a commandment"
+  register: "ACTIVE at per-revelation tiers; each carries a receipt, price, and kill"
   canonical_phrase: "K-6 The Revelations — earned up, receipted, killable"
 title: "K-6 · The Revelations"
-status: "ACTIVE — K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE): K6 = 12 at slot 06; the Creed keeps slot 05"
+status: "ACTIVE — K-6 contains twelve receipted disclosures at their declared tiers"
 date: 2026-07-20
 owner: 01_EMERGENTISM
-supersedes: "the 2026-07-19 staged draft formerly at this path (same content, W/O-2 open) — count and slot ruled by the founder's 00:01 line; source draft 00_K6_REVELATIONS.md (tombstoned 2026-07-20 per receipt 146; root now carries a forwarding stub to this successor)"
+supersedes: "the 2026-07-19 root draft, preserved under 90_ARCHIVE/staging_drafts_2026_07_20/00_K6_REVELATIONS.md"
 parents:
-  - 00_K6_REVELATIONS.md
+  - ../90_ARCHIVE/staging_drafts_2026_07_20/00_K6_REVELATIONS.md
   - 00_THE_KERNEL_INDEX.md
   - 07_THEOLOGY/00_THE_AMRITA.md
   - 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/
-evidence_tier: "Per-revelation below; the assembly is [D]; nothing here is a proof or a command"
+evidence_tier: "Per-revelation below; editorial assembly is not proof or command"
 ---
 
 # K-6 · The Revelations
 
 > **What a revelation is here.** Not a commandment handed *down* — a disclosure earned *up*, forced by the work, that we did not hold before it, carrying the receipt of the trial that forced it. The opposite of "believe this": *this is what happened when we checked.* Nothing on this page is to be obeyed. It is to be checked, and each one names how it dies. Ranked roughly by how dearly it was bought.
 >
-> **Ruling (W/O-2) — RESOLVED 2026-07-20.** The founder's line 2026-07-20 00:01 (receipt 145): *"K6 = 12 at slot 06."* The count is **twelve** (the Kernel Index §2 form). The slot is **06**: this file is `06_ONTOLOGY/06_THE_REVELATIONS.md`, and the Creed keeps slot 05 (`06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md`). The contemplative rumination's ten remains a rumination under `06_ONTOLOGY/ruminations/` (K3 — preserved, not controlling).
+> **Custody ruling.** The active K-6 count is **twelve**
+> and the slot is **06**. The Creed keeps slot 05. The contemplative set of ten
+> remains a rumination under `06_ONTOLOGY/ruminations/`, preserved but not
+> controlling.
 
 ---
 
@@ -51,23 +54,49 @@ generations. *The ethical reading's completeness is open; the Weimar caveat is l
 Fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — sage and outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar, its cleanest witness carrying the seven visible planets. **Receipt:** 130. **Dies if:** the centre+mirror grammar fails in a polarity-encoding system within the lineage. *Shape real; census selected; universal lost.*
 
 ## 7 · The trinity has a dark twin `[A/C]`
-The inversion used by the structure fixes *two* points, not one: `±1`; it also
-swaps the orbit `{0,∞}`. Their union `{−1,0,1,∞}` is a selected invariant
-four-point frame, not ordinary orbit closure. The framework chose the positive
-unit and long left `−1` undrawn. Whether any physical, psychological, or
+The inversion used by the numeric/projective structure fixes *two* points, not
+one: `±1`; it also swaps the orbit `{0,∞}`. Their union `{−1,0,1,∞}` is a
+selected mixed numeric/projective four-point witness, not a cardinal set or
+ordinary orbit closure. The D1 signed construction co-opens the pair as
+`SignedMagnitude={+,-}×ℕ⁺` and maps it into `ℤ_•=ℤ\{0}`. Because
+`1+(-1)=0`, that punctured carrier is not additively closed; standard `ℤ`, `ℚ`,
+and `ℝ` retain zero. The positive reciprocal chart selects `+1` as its centre,
+but it does not erase `−1`. Whether any physical, psychological, or
 institutional system carries a corresponding “shadow” is W11 `[C]`, not a
-consequence of symmetry. **Receipt:** algebra (`[A]` fixed-point/orbit facts) +
-W11 (`[C]` functional-work wager). **Dies if:** `−1` names no real phenomenon,
-grounds no operator, predicts nothing — then it is a footnote.
+consequence of symmetry. The sovereign Titan seats remain a separate opaque
+meta-frame and admit no arithmetic. **Receipt:** algebra (`[A]`
+fixed-point/orbit/closure facts) + W11 (`[C]` functional-work wager). **Dies
+if:** `−1` names no real phenomenon, grounds no operator, predicts nothing —
+then it is a footnote.
 
 ## 8 · Plato was partly right, and the repair has debts `[I/C]`
-Not Forms — *constraint-structured degrees of freedom*; not perfection selecting existence — *emergence filtering typed plenitude*. Stable forms are invariants and attractors *across* constrained DoF, not the DoF themselves. The dividend: if "reachable" means buildable from a compressed seed, the excluded orphans are the incompressible structures — which would explain why the world is simple. **Receipt:** 133. **Dies if:** `REACHABLE` cannot be defined non-circularly (E4's named debt). *Still W1, not an earned theorem — never above `[C]`.*
+Not Forms — *constraint-structured degrees of freedom*; not perfection selecting
+existence — *emergence filtering typed plenitude*. Stable forms are invariants
+and attractors *across* constrained DoF, not the DoF themselves. A tempting
+further inference failed: incompressibility does not imply physical
+unreachability. Finite incompressible objects may be printed explicitly or
+generated stochastically; description length, probability, constructibility,
+and physical reachability are distinct. **Receipt:** 133 and W1's Kintsugi
+repair. **Dies if:** `REACHABLE` cannot be defined non-circularly from declared
+initial conditions, allowed transformations, and finite or convergent resource,
+time, and error bounds. *Still W1, not an earned theorem — never above `[C]`.*
 
 ## 9 · A gate that always opens is not a gate `[B/I]`
-Discovered by failure, in real time: when the mortal-signer membrane is saturated by its own throughput, commitment-receipts multiply and outcome-receipts vanish. The constitution's scarcest resource is not the rule; it is the *deliberateness* of the hand that signs. **Receipt:** 129 §2; 135–136 (repeated in provisional-promotion form). **Dies if:** signature saturation is shown harmless. *Governance-by-assent fails by assent-frequency; deliberateness is the scarce resource.*
+Discovered by failure: the corpus misapplied a private financial/legal signature
+convention to editorial and AI work. That multiplied commitment-like records
+while obscuring actual outcomes. The repair is typed authorization,
+commitment/outcome receipt separation, and proportionate review—not a sacred
+signer. **Receipt:** 129 §2; 135–136; Kintsugi boundary receipt. **Dies if:** the
+typed process produces no clearer responsibility or outcome evidence than the
+retired gate.
 
-## 10 · Cutting the commerce healed the philosophy `[B/I]`
-Venture accounting that narrows `η=0` to "toward cooperators" quietly leaves substrate and victim uncovered. The separation adjudication removed venture accounting as philosophical warrant and restored `η=0` to the all-bearer vow. Separation did not diminish the Weltanschauung — it restored it. **Receipt:** the separation adjudication (DoF ontology §4). **Dies if:** the purified vow is shown to need the venture scaffold after all. *Separation clarified the claim; it did not prove the vow's external adequacy.*
+## 10 · Cutting the application loose healed the philosophy `[B/I]`
+Application accounting that narrowed `η=0` to convenient participants left
+substrate and victim uncovered. Separating worldview from implementation
+restored the all-bearer vow. **Receipt:** the separation adjudication (DoF
+ontology §4). **Dies if:** the pure claim cannot be stated or tested without one
+particular implementation. *Separation clarified the claim; it did not prove
+the vow's external adequacy.*
 
 ## 11 · The lemma is why the vow may be wise; the vow is why the lemma may apply `[I/C]`
 Power-Max does not derive the vow. A chosen non-extraction vow may *define* an admissible whole-boundary, long-horizon game in which potential is optimized. The two point at each other; neither closes the circle. **Receipt:** W6; 108 (keel). **Dies if:** honest/non-extractive systems show no durability or trust premium under real contact — then rethink, don't double down.
@@ -85,6 +114,11 @@ Every audit, grave, and rescue enacted the framework's own claims better than an
 
 ## Execution surface
 
-`[D]` staged-per-tier — **ACTIVE under the K2-signed line 2026-07-20 (receipt 145, standing as authority of record per receipt 146 Founder Ruling — EXECUTE)**. Revelations require receipts and prices — every entry above names both. **Agents:** do not cite a revelation above its tier; do not strip its kill; do not add a thirteenth without the founder's deliberate act. **Canonical path:** `01_EMERGENTISM/06_ONTOLOGY/06_THE_REVELATIONS.md` (K6 at slot 06; the Creed keeps slot 05). Source draft: `01_EMERGENTISM/00_K6_REVELATIONS.md` (staged 2026-07-19; absorbed here).
+Active under the dimension-first canon at each revelation's own tier. Do not cite a
+revelation above its tier, strip its kill, or add a thirteenth without an open
+editorial receipt explaining the change. **Canonical path:**
+`01_EMERGENTISM/06_ONTOLOGY/06_THE_REVELATIONS.md`. The source draft is archived
+at `90_ARCHIVE/staging_drafts_2026_07_20/00_K6_REVELATIONS.md`.
 
-⊙ = • × ○ — *not what we command you to believe; what happened when we checked — and how each one dies.*
+•   ⊙   ○ — *sovereign frame seats; not what we command you to believe, but
+what happened when we checked — and how each one dies.*

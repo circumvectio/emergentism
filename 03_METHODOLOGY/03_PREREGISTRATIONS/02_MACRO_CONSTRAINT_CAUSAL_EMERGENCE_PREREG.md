@@ -16,7 +16,7 @@ rosetta:
   canonical_phrase: "Macro-Constraint Causal-Emergence Measurement Protocol"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # Pre-Registration — Macro-Constraint Causal-Emergence Measurement Protocol
 
@@ -217,7 +217,7 @@ serious load-bearing test.
 | Biology | membrane, metabolism, homeostasis | chemistry + thermodynamics | viability-preserving reachable futures after costs | `[A/B]` locally; `[I]` as unified reading |
 | Cognition | attention, policy, embodied controller | physiology/neural dynamics | action-space prediction/control gain | `[A/B]` locally; `[I]` as D4/D5 bridge |
 | Social | institution, law, market, narrative | agents + incentives + communication | changed strategy topology and held-out behavior | `[A/B]` locally; `[I/C]` for egregore language |
-| Agency | Soul Loop, present-awareness selection, objective dharma | embodied cognition + social feedback | dyadic `P_node` improvement under `eta=0` after costs | `[S/I]` until measured |
+| Agency | Soul Loop and present model-mediated selection under chosen Justice | embodied cognition + social feedback | held-out decision or correction gain after costs and bearer audit | `[I/C]` until measured |
 
 The continuity claim is continuity of constraint form, not proof of one new
 force across all domains.
@@ -322,7 +322,8 @@ violate lower-level laws; the specific macro-constraint witness can be rewritten
 - [ ] Witness metric fixed: `W_C`, held-out loss, intervention utility, or all.
 - [ ] Kill criteria fixed.
 - [ ] Repository tag `prereg/macro-constraint-causal-emergence-v1` recorded.
-- [ ] Content hash recorded: `[TBD at freeze]`.
+- [ ] Content hash recorded:
+      `NOT FROZEN — no preregistration hash exists as of 2026-07-22`.
 
 No domain result is canonical until this block is frozen.
 

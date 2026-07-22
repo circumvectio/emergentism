@@ -19,8 +19,8 @@ rosetta:
   canonical_phrase: "The Inferential Logic Audit Protocol"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3 audit protocol; handoff from L2, to L4. Evidence ladder enforced.**
+**Corpus:** Emergentism
+**L3 audit protocol; handoff from L2, to L4. Evidence-type register enforced.**
 
 # The Inferential Logic Audit Protocol
 
@@ -225,7 +225,8 @@ After ranking, L3 assigns one of three dispositions to every claim.
 - Any flags or tensions L3 identified during audit
 
 **L3's role at L4:** L3 does not decide. L3 recommends. The decision belongs
-to L4 Kṣatriya (with K2 or PRISM signature for binding acts). L3's
+to L4 Kṣatriya. Any consequential act then requires a complete accountable
+authorization envelope under the actor's actual legal and operational context. L3's
 recommendation is the ranked "SHOULD" list — the merchant's account of what
 the books say the warrior should do.
 

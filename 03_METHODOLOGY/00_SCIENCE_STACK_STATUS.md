@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "Science Stack Status"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3; closed/open/deferred routing.**
 
 # SCIENCE STACK STATUS
@@ -63,12 +63,12 @@ So:
 
 | **Closed** | **Open** | **Deferred** |
 |---|---|---|
-| **D0-D1 formal surface:** mathematics, logic, topology, and invariance are the most stable study surface in the stack | **Measurement lane:** `φ`/`ν` measurement remains open; the `Φ-meter` is not yet validated | **Physics bridge:** no Standard-Model-grade Lagrangian, no closed `2D -> 4D` bridge, and the `SU(3)` problem remains |
-| **D3 biology register:** the translation rule is now clean: teleonomy/autopoiesis/allostasis/interoception first, frontier theory second | **Protocol R / geometry lane:** the decisive perceptual geometry test is still pending | **Fine structure / coupling derivations:** still conjectural and mathematically unresolved |
-| **D4 public register:** neuroscience/cognitive science/cybernetics are the settled nearest disciplines for bounded embodied cognition | **Cross-scale invariance lane:** whether the same functional form appears across cellular, organismic, and ecological scales is still untested | **Long-horizon institutional lane:** whether the architecture resists capture in the long run cannot be closed quickly |
-| **D5 public register:** game theory, behavioral economics, mechanism design, institutional economics, and the positive study of strategic sediment are now canonically stabilized as the highest public sciences of the stack | **AMRITA / alignment lane:** the strongest practical AI bridge remains untested | **Civilizational phase-transition lane:** whether enough equatorial nodes emerge for macro-historical shift remains a time-bound wager |
-| **D6 boundary rule:** D6 is now canonically clarified not as a missing public science but as the axiomatic closure of all public registers through `Falsification Protocol` | **Independent replication lane:** Protocol D and Agent `V×Φ` need external replication before upgrading | **Long-horizon anti-idolatry lane:** whether the framework can scale without reifying itself remains a long-duration test |
-| **Philosophical remainder grammar:** internal commitment / public tiering is now stabilized for the science-facing worldview | **GFS / human flourishing lane:** human-population validation remains mixed and instrument-limited | **Alternative geometry challenge:** no rival has won, but the challenge remains structurally open |
+| **Typed formal surface:** D0 boundary, D1 distinction/arithmetic, and D2 configuration have stable internal owners; their world-mappings retain separate tiers | **Measurement lane:** `φ`/`ν` measurement remains open; the `Φ-meter` is not yet validated | **Physics bridge:** no Standard-Model-grade Lagrangian, no closed dimensional bridge to observed spacetime, and the `SU(3)` proposal remains unresolved |
+| **D3 quantum-state register:** standard density-operator/POVM mathematics is inherited; its placement at D3 is an interpretive scaffold choice | **D3/D4 time-seam lane:** the conjectured emergence of clock-correlated history and an entropy arrow needs a recovery test | **Fine-structure / coupling derivations:** still conjectural and mathematically unresolved |
+| **D4 actuality register:** actual biological, neural, behavioral, institutional, and phenomenological objects route to their established sciences | **Cross-scale macro-constraint lane:** whether a shared constraint form improves intervention or prediction after fair costs remains untested | **Long-horizon institutional lane:** whether the architecture resists capture in the long run cannot be closed quickly |
+| **D5 possible-content register:** decision and strategic sciences formalize counterfactual alternatives while collecting D4 evidence; they are methods, not a positive D5 realm | **Counterfactual-capacity lane:** `μ₄` requires interventions that distinguish represented futures from reactive policy | **Civilizational phase-transition lane:** macro-historical claims remain time-bound wagers |
+| **D6 boundary rule:** D6 is an exit/nonclosure marker, not a science, state, experience, or completed cycle | **Independent replication lane:** Protocol D and the `Φ×V` action model need external replication before upgrading | **Long-horizon anti-idolatry lane:** whether the framework can scale without reifying itself remains a long-duration test |
+| **Philosophical remainder grammar:** internal commitment / public tiering is now stabilized for the science-facing worldview | **Human-data lane:** GFS is retired; no successor exists until a new construct and discriminator are preregistered | **Alternative geometry challenge:** no rival has won, but the challenge remains structurally open |
 
 ---
 
@@ -106,22 +106,25 @@ What is open:
 
 ### 3. Neuroscience and Cognitive Science
 
-**Closed** as the nearest public register for D4.
-**Open** where the framework makes stronger systemic awareness-bridge claims.
+**Established disciplines govern the actual D4 application domain.**
+**Open** where the framework makes stronger cross-register claims.
 
 What is stable:
 
-- D4 belongs publicly to embodied cognition, control, and neuroscience
+- actual organisms, cognition, control processes, observations, and reports are
+  D4 carriers or events studied by biology, neuroscience, cognitive science,
+  phenomenology, and related disciplines; no one discipline defines D4
 
 What remains live:
 
-- framework-specific tests of the D4→D5 bridge
+- framework-specific tests of the candidate `μ₄:D4→D5` emergence of
+  counterfactual-representation capacity
 - measurement of integration/selection structures
 
 ### 4. Strategy, Economics, and Institutional Design
 
-**Closed** as a public register.
-**Open** in validation.
+**Established as public methods for strategic phenomena.**
+**Open** as a claim about the D5 content type.
 
 This is currently the strongest public science surface for the framework because:
 
@@ -131,29 +134,32 @@ This is currently the strongest public science surface for the framework because
 
 What remains open:
 
-- whether the full D5 unification is empirically stronger than a looser coalition of strategic sciences
+- whether typing represented counterfactuals as D5 predicts more than a looser
+  coalition of strategic sciences
 - whether AI alignment and human cooperation data actually support the deeper geometry
 
 ### 5. D6 and the Axiomatic Boundary
 
 **Closed** as a boundary rule.
-**Open** in lived verification and institutional discipline.
+**Open** only in whether D4 practices and institutions honor the boundary
+discipline.
 
 The important clarification is now the opposite of what this file previously implied.
 
 D6 is not a missing public register still waiting to be completed.
-D6 is the point where the demand for a public register must stop.
+D6 marks where this scaffold stops asserting positive content.
 
 So what is now closed is:
 
-- the rule that `D5` is the highest positive study surface
-- the rule that `D6` is axiomatic rather than disciplinary
+- the rule that `D5` is the highest positive content type in this scaffold
+- the rule that `D6` is an exit/nonclosure marker rather than a discipline
 - the anti-idolatry correction to the whole science stack
 
 What remains open is:
 
-- whether practice actually discloses what the worldview says it discloses
-- whether a living institution can preserve `D6` without turning it back into doctrine
+- whether actual practices produce their declared D4 outcomes
+- whether a living institution can preserve the D6 boundary rule without
+  turning it into positive doctrine
 - whether the anti-capture posture survives success
 
 ### 6. Physics
@@ -180,7 +186,7 @@ So physics remains the great deferred lane rather than the current proof surface
 
 ## Compression
 
-- **Closed in the science stack:** the public registers through `D5`, the bridge grammar, and the D6 boundary rule
+- **Closed in the science stack:** only the internal type grammar and the D6 boundary rule
 - **Open in the science stack:** measurement, replication, geometry tests, alignment, human validation, and lived anti-idolatry
 - **Deferred in the science stack:** high physics, long-run institutional evidence, and civilizational scaling
 
@@ -190,7 +196,7 @@ So physics remains the great deferred lane rather than the current proof surface
 
 When this idea must be stated briefly, the default sentence is:
 
-> **Across the science stack, what is mostly closed is the translation grammar through D5: formal studies at D0-D1, life at D3, embodied cognition at D4, and strategic relation at D5. D6 is closed differently: not as a public register, but as the axiomatic boundary of every public register through `Falsification Protocol`. What remains open is the empirical and lived bridge: measurement, replication, geometry tests, alignment, human validation, and anti-idolatry in practice. What remains deferred is the highest physics and long-duration historical evidence.**
+> **Across the science stack, what is internally closed is only the typed translation grammar: D0 boundary/frame, D1 distinction and arithmetic, D2 configuration, D3 quantum-state content, D4 causal actuality and record, D5 counterfactual possibility, and D6 exit/nonclosure. Life and embodied cognition are D4 application domains studied through D1–D3 models; they do not define rungs. What remains open is empirical calibration: measurement, replication, geometry tests, human validation, and consequence tracking. High physics and long-duration historical evidence remain deferred.**
 
 This sentence may be reused verbatim.
 
@@ -202,9 +208,11 @@ This sentence may be reused verbatim.
 
 1. Do not confuse a closed register with a completed science.
 2. Route new work into the right bucket: register-stabilization, active empirical bridge, or deferred research.
-3. Treat D5 as the strongest current public science surface.
+3. Treat D5 as a possible-content type studied indirectly through actual D4
+   models, interventions, and records—not as a public science or actor.
 4. Treat physics and long-run civilizational claims as deferred unless a specific result upgrades them.
-5. Do not propose a positive D6 science as missing work; preserve D6 as the axiomatic limit of the stack.
+5. Do not propose a positive D6 science as missing work; preserve D6 as the
+   exit/nonclosure marker of the stack.
 
 *A metascience matures when it knows which lanes are grammatically closed, empirically open, and honestly deferred.*
 

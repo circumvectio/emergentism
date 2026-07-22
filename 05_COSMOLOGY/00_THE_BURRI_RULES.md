@@ -4,295 +4,699 @@ rosetta:
   primary_column: Philosophy
   operator: "Brahmā ○"
   tier: "Executive"
-  register: "[A/S/I/C] — per line, by the four-register law below"
-  canonical_phrase: "THE BURRI RULES — the dimensional derivation grammar, tier-honest"
-title: "The Burri Rules — the canonical dimensional map"
-status: "CANONICAL — K2-COUNTERSIGNED in session 2026-07-10 (Yves R. Burri: 'I accept and sign!'). Provenance: staged v1→v3 through two adversarial BTJ rounds (wf_d742f55d-880, wf_ce2bd165-b99); v1 failed all three gates (17 defects), v2 re-audit found 18 more, all folded in v3; built on the K2-accepted adjudication packet (receipt 104); repairs R1-R3+R5-R6 applied to the lagging docs (R4 Cerberus queued in 02_SKYZAI). The four-register law, the eight stated absences, and Rule 8 (incl. the terminal retirement clause) govern from here. **[REFRAME 2026-07-10 · receipt 105 · K2 'Accept']:** Rule 3's D4/D5 rows, Rule 2, Rule 8 clause 3, and the SVG crossing were re-issued to two register-indexed axes — emergence/μ (D4=potential→D5=actual, UP) + action/χ (D5=foresight→D4=embodied receipt, DOWN); A.2's emergence-axis core stands — a reframe, not an overturn (terminal clause 6 not triggered)."
-evidence_tier: "per line — every row carries register + tier + receipt + kill criterion; unsourced lines are marked ABSENT or PROPOSED, never drawn solid"
-visual: "00_THE_BURRI_RULES_MAP.svg — companion visual (canonical on countersign): the frame/ladder/loops/closure skeleton; Rules 5–8 live in this document"
-ledger: "00_THE_BURRI_RULES_LEDGER.md — the full 30-item derivation ledger (register · tier · counterexample · kill criterion per line)"
-depends_on:
-  - 00_EMERGENTISM.md
-  - 01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md
-  - 01_THE_TRANSCENDENTAL_TRINITY/40_THE_TITAN_COMPOSITION_LAW.md
-  - 03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md
-  - 03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md
-  - ../00_META/00_SETTLED_CANON_REGISTRY.md
+  register: "[I] semantic grammar; per-claim [A/B/S/I/D/C] tiers"
+  canonical_phrase: "THE BURRI RULES — A GRAPHICAL GRAMMAR OF EMERGENCE, AGENCY, AND RECEIPT"
+title: "The Burri Rules"
+status: "ACTIVE [I] — internally accepted; external-neighbor crosswalk present; externally uncalibrated"
+evidence_tier: "[I] as an internally coherent translation grammar; [C] for empirical emergence and universal-fit claims."
+topology: "00_BURRI_RULES_TOPOLOGY.json"
+plate: "00_BURRI_RULES_PLATE.svg"
+emblem: "00_BURRI_RULES_EMBLEM.svg"
+ledger: "../03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md"
 ---
 
-# The Burri Rules
+# THE BURRI RULES
 
-> **The name.** The finished system stands under its own name and grammar
-> (session ruling, 2026-07-10 — **K2-countersigned this document: "I accept and
-> sign!"**). An earlier diagrammatic comparison served as scaffolding
-> and is retired to this one gloss, per the house pattern (registry row
-> 2026-05-31: retired names survive as glosses, never leads).
->
-> **The one line.** Three boundary-frames hold the number field open; a
-> seven-rung scaffold orders what emerges inside it; the crossings are
-> *asserted* saturations, not derived ones — and the map says which is which
-> on every line.
+## A Graphical Grammar of Emergence, Agency, and Receipt
 
-## Rule 0 · The four-register law
+**Original pre-repair blob:** `5916598d99a1a37ba855e277decb6821729a0248`
 
-Every statement in this map carries one register and one tier:
+> **[金] Kintsugi seam — one modality, two receipts, no forced ontology.** The
+> earlier map kept several good boundaries but conflated Titan tokens with
+> ordinary numerical operands,
+> inverted D4/D5 on one axis, treated missing reductions as strong emergence,
+> identified literal closure, used quantum collapse as mechanism, and made a
+> signer status part of reality. The repair retains the visual topology while
+> giving every relation one type and every consequence an accountable receipt.
 
-| Register | Means | Example |
+The Burri Rules are not merely an infographic. They are a small grammar from
+which diagrams, audits, experiments, and public compressions can be generated
+without silently changing meaning.
+
+```text
+TitanFrame {0_T, 1_T, ∞_T} ──render──▶ {0, 1, ∞}
+
+D4 event ──▶ D4 actual model/rank/selection tokens
+                    │ represent/select
+                    ▼
+             D5 merely-possible contents
+                    │ referenced by commitment
+                    ▼
+next D4 state ◀── Loop(M,G,q,r) ◀── q commitment + optional r outcome
+    └────────── revise actual map and selector ───────────┘
+```
+
+---
+
+## 0. Type law: distinguish actual carrier from possible content
+
+This distinction is mandatory and is **not a seventh rule**:
+
+```text
+TokenModality := actual | merely_possible
+TopologyMode := structural | actual | possible
+
+D0…D3,D6 abstract register/crossing nodes = structural
+D4 tokens/events = actual
+D5 contents = merely_possible (`possible` in topology export)
+```
+
+- `D4` contains causal actuality: embodied means, present model tokens,
+  performed ranking/selection events, attempted/performed action, factual
+  record, and receipts.
+- `D5` contains counterfactual content: alternatives, future referents,
+  rankings-as-represented, and candidates for selection.
+
+A D4 actual token can represent D5 merely-possible content. Topology exports
+retain `possible` as the short schema value for `merely_possible`; they must
+not type a present model or selector state as possible.
+
+`D4→μ₄→D5` asks whether counterfactual agency emerges. Commitment uses a
+selected D5 option and D4 means to produce an attempted D4 action. The world,
+not the selector, determines the resulting history.
+
+Solid edges denote enacted D4 relations. Dotted edges denote modeled D5
+alternatives. Curved return edges denote feedback. Evidence must remain legible
+without color.
+
+---
+
+## BR-1 · Frame
+
+> `{0_T,1_T,∞_T}` are selected sovereign Titan frame terms, never arithmetic
+> operands, causal particles, or a mathematically forced ontology.
+
+```text
+TitanFrame := 0_T | 1_T | ∞_T
+role_T(0_T)=Ground_T; role_T(1_T)=Unit_T; role_T(∞_T)=Horizon_T
+render_T(0_T)="0"; render_T(1_T)="1"; render_T(∞_T)="∞"
+
+no implicit coercion: TitanFrame ↛ Number
+ArithmeticSignature(TitanFrame)=∅
+add_T, sub_T, mul_T, div_T, pow_T, log_T : undefined
+```
+
+The rendering map is symbolic, not an embedding into an arithmetic carrier.
+This is **Titan sovereignty**: the frames delimit and orient a model but no
+object-level operation consumes them.
+
+Ordinary `0` and `1` remain numbers and lawful operands. `∞` is the projective
+point at infinity in the explicitly named extended context. The triad is a
+standard useful normalization for projective transformations; it neither
+generates the D-ladder nor exhausts number.
+
+The framework assigns symbolic roles:
+
+```text
+0_T → absence / origin / ground-facing boundary
+1_T → finite presence / unit-facing boundary
+∞_T → unbounded horizon / horizon-facing boundary
+```
+
+Those assignments are `[I]`. The mathematics of the numbers and projective
+point is `[A]` in its proper domain.
+
+Consequently even division or multiplication by the apparent unit is not
+licensed in this type: `1_T/1_T`, `0_T×1_T`, `0_T×∞_T`, and `∞_T/1_T` are all
+inadmissible Titan expressions. This restriction says nothing against the
+ordinary numerical identities `x/1=x` and `0·x=0` in their proper domains.
+
+The live sovereign emblem
+
+```text
+•     ⊙     ○
+0_T   1_T   ∞_T
+```
+
+contains no operation or equality. The retired infix typography survives only
+as historical provenance. In field arithmetic, projective infinity is not an
+element, so the superficially similar numeric product is not a well-formed
+field expression; in limit calculus, its corresponding form may be
+indeterminate.
+
+**Kill criterion:** any diagram or argument that needs the triad to be a forced
+closure, ontological generator, implicit number coercion, or arithmetic identity
+fails BR-1.
+
+---
+
+## BR-2 · Crossing
+
+> A valid `μ`-crossing names whether it is an origin aperture or saturation
+> candidate, the lower register, newly observed freedom, recovery of lower
+> behavior, evidence, reduction status,
+> prediction, and kill criterion.
+
+The scaffold has exactly five typed transition identifiers. Their stronger
+positive-freedom emergence readings remain crossing-specific candidates:
+
+```text
+μ₀:D0→D1
+μ₁:D1→D2
+μ₂:D2→D3
+μ₃:D3→D4
+μ₄:D4→D5
+```
+
+Each record implements:
+
+```text
+MuCrossing := {
+  id,
+  source,
+  target,
+  triggerType: origin_aperture | saturation_candidate,
+  saturatedRegister: null | DRegister,
+  saturationEvidence,
+  evidenceStatus: not_applicable | supplied | not_yet_supplied,
+  newFreedom,
+  lowerRegisterRecovery,
+  reductionStatus: reduced | currently_unreduced | candidate_strong,
+  prediction,
+  tier,
+  killCriterion
+}
+```
+
+`μ₀` has `triggerType=origin_aperture` and `saturatedRegister=null`; it does not
+claim that a prior positive freedom saturated. `μ₁…μ₄` are saturation
+candidates. Their saturation descriptions remain hypotheses until evidence is
+supplied.
+
+`currently_unreduced` is the default when no reducing law is known. It is not
+evidence of irreducibility. `candidate_strong` requires affirmative evidence
+beyond absence of explanation. A successful reduction reclassifies the
+crossing as weak emergence without deleting the useful scaffold.
+
+`D6` is an apophatic closure boundary and opens no additional positive freedom.
+Entry to the exit marker and its return are non-`μ` interpretive edges:
+
+\[
+b_6:D5\rightsquigarrow D6,
+\qquad
+r_6:D6\rightsquigarrow D0.
+\]
+
+There is no `μ₅` or `μ₆`, and no literal identity between D6 and D0.
+
+**Kill criterion:** a crossing without an operational novelty, lower-level
+recovery, prediction, or falsifier is an unlabeled metaphor, not a Burri
+crossing.
+
+---
+
+## BR-3 · Constraint
+
+> Higher-level organization may restrict or reweight lower-law-admissible
+> trajectories; it may not manufacture a forbidden one.
+
+For a lower-level transition kernel `K_X` and higher-level constraint `C`:
+
+\[
+\operatorname{support}(K_X^C)
+\subseteq
+\operatorname{support}(K_X).
+\]
+
+This is the operational form of downward constraint. A membrane changes which
+chemical trajectories occur; a plan changes which physically possible action
+is attempted; a law changes incentives and permissions. None suspends the
+underlying admissibility conditions.
+
+Constraint claims must state:
+
+- the lower-level possibility set;
+- the higher-level variable;
+- the reweighting or restriction mechanism;
+- an intervention on the constraint;
+- the expected lower-level distribution change;
+- a null model and kill criterion.
+
+**Kill criterion:** if the higher-level variable adds no intervention-sensitive
+predictive value, remove it or treat it as a summary. If it requires a forbidden
+trajectory, the model is false.
+
+---
+
+## BR-4 · Commitment
+
+> A finite agent combines a fallible D5 option field with D4 means to attempt
+> one D4 action; accountable authorization determines whether that attempt is
+> normatively valid, not whether it is causally representable.
+
+\[
+\chi_t:(X_t,\Omega_t,M_t,V_t,U_t,G_t)
+\longrightarrow(a_t,q_t),
+\qquad a_t\in Action\cup\{\bot\}.
+\]
+
+`U_t` contains an `AuthorizationAssessment`. A potentially valid envelope
+contains:
+
+```text
+principal + mandate + scope + consent + custody + expiry/revocation
++ contest path + actor + consequence bearer set
+```
+
+The assessment is a validated tagged union. `valid` requires both a complete
+envelope and evaluated principal authority, mandate/scope, actor match, current
+consent, custody, non-expiry/non-revocation, contest availability, and complete
+bearer coverage for the attempted action. A complete but failed envelope is
+still `invalid`. `invalid` requires a supplied defective record plus reasons;
+`absent` requires a null envelope plus reasons; `not_required` is limited to an
+explicitly nonconsequential scope. Commitment status is derived from the union,
+not copied from an unvalidated label.
+
+If no action is attempted because it is refused or physically unavailable,
+`a_t=⊥`; no action transition is submitted. Invalid or absent authorization is
+recorded separately. A governed channel `χ_t^J` refuses it, but if an actor
+nevertheless attempts the action, the descriptive causal kernel receives it.
+
+For an attempted action, `q_t:CommitmentReceipt` records selection, actor,
+physical availability, authorization status and nullable envelope, means,
+intention, every affected bearer, payers, beneficiaries, and expected result.
+The environment separately returns:
+
+\[
+(X_{t+1},r_{t+1})
+\sim K_t(\cdot\mid X_t,a_t,E_t).
+\]
+
+`r_{t+1}:OutcomeReceipt` records observed consequence. It is nullable while
+the loop waits for, or never receives, a world observation. Let `E_q` be the
+bearer set anticipated by the commitment and `R_r` the full bearer set found
+by observation. A valid receipt requires `E_q⊆R_r`, not equality. Every bearer
+in `R_r` has at least one observation, and observations are unique by
+`observationId` or `(bearerId,measureId)`, so one bearer may lawfully carry
+several distinct measures. The drift `R_r\E_q` remains valid evidence of an
+unforeseen consequence; it simultaneously fails retrospective Justice and the
+prior authorization's bearer coverage. Evidence is not discarded merely
+because it indicts the commitment.
+
+If `a_t=⊥`, a non-null world receipt must have
+`receiptCause=ambient_observation` and null action identifiers; it is not an
+outcome caused by `⊥`. The selector cannot manufacture its own outcome. `G_t`
+is an input to the selector, so updating `G_{t+1}` can change the next action
+distribution.
+
+The existing **G7 vocabulary** remains available inside BR-4 as the selected
+typed union `G7=M4⊔F3`. Only `M4` contains move labels; `F3` contains boundary
+frames, not actions. The Burri Rules type the conditions under which an option
+is modeled and an actual move is selected, authorized, attempted, and
+receipted. G7 is not an exhaustive ontology and does not prohibit an eighth
+useful description.
+
+**Kill criterion:** if intention, action, authorization, and consequence cannot
+be distinguished, the commitment is not auditable and fails closed.
+
+---
+
+## BR-5 · Reflexive Return
+
+> Every commitment receipt enters the return, and any later outcome receipt
+> joins it. Either can update both the agent's model and the selector that uses
+> it.
+
+\[
+(M_{t+1},G_{t+1})
+=\operatorname{Loop}(M_t,G_t,q_t,r_{t+1}).
+\]
+
+Here `r_{t+1}\in OutcomeReceipt\cup\{null\}`. The commitment receipt is not a
+decorative prelude to the world receipt: it records execution-relevant facts
+such as refusal, physical unavailability, authorization status, and expected
+bearer deltas. New information in `q_t` may therefore change `M` or `G` while
+`r_{t+1}=null`. A null update is justified only when the available `q_t` is
+genuinely non-informative for the current state and `r_{t+1}=null`.
+
+| Return case | Required observable contract |
+|---|---|
+| informative `q_t`, `r_{t+1}=null` | at least one of `M` or `G` changes in the canonical witness case |
+| non-informative `q_t`, `r_{t+1}=null` | `M` and `G` remain unchanged; this is the genuine null update |
+| non-null `r_{t+1}` | the world receipt is evaluated as a further independent input |
+
+The return preserves three gaps:
+
+| Gap | Difference |
+|---|---|
+| cognitive | observed territory versus model prediction in a common observation space |
+| execution | intended versus performed commitment |
+| outcome | expected versus observed consequence |
+
+Negative feedback means a declared error decreases. Positive feedback means
+divergence or self-confirmation increases. These signs are dynamical, not
+moral.
+
+### Reflexive Bridge `[B/I]`
+
+Soros's [General Theory of Reflexivity
+transcript](https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf)
+provides primary-source attribution `[B]` for fallibility, cognitive and
+participating functions, circular feedback, and reinforcing/corrective loops.
+The mapping to this typed Soul Loop is `[I]`. Soros does not evidence the
+D-registers, quantum collapse, `μ` physics, or physical retrocausality.
+
+### Model-mediated future influence
+
+The public compression is
+
+\[
+F=M\times A.
+\]
+
+The formal interface is
+
+\[
+M\star A:
+\operatorname{ModelState}\times\operatorname{PhysicallyFeasibleActionField}
+\to\operatorname{ActionWeights}.
+\]
+
+A present model token carrying content about a possible future can change
+present selection. This is future-guided or anticipatory agency. Emergentism's
+term **model-mediated retrocausality** is project-specific shorthand, not a
+temporal causal relation. It does not require a realized future event to
+transmit a physical signal into the past.
+
+**Kill criterion:** if controlled changes to represented futures do not alter
+present action distributions, the future-influence claim fails for that scope.
+If informative commitment or contrary outcome receipts cannot update either
+`M` or `G`, the loop has become self-sealing.
+
+---
+
+## BR-6 · Composition
+
+> Coupled Soul Loops constitute a candidate Egregoreotype only when a
+> persistent shared trace survives carrier turnover and measurably reweights
+> later selections.
+
+For agents `1…n`:
+
+\[
+((q_t^{(1)},r_{t+1}^{(1)}),\ldots,(q_t^{(n)},r_{t+1}^{(n)}))
+\longrightarrow T_{t+1}
+\longrightarrow
+((M_{t+1}^{(1)},G_{t+1}^{(1)}),\ldots,
+ (M_{t+1}^{(n)},G_{t+1}^{(n)})).
+\]
+
+The candidate must declare:
+
+```text
+persistentSharedTrace
+carrierTurnover
+selectionReweightingIntervention
+recurrentObjectiveLikeBias
+visibleSubstrateCosts
+individual + whole + affectedBearerIds
+etaObserved + custody + consent + reversibility + exit
+payerIds + beneficiaryIds + authorizationStatus
+```
+
+All five evidentiary conditions are mandatory. Consciousness and personhood are
+not presumed. Substrate reducibility does not disqualify a useful macro-pattern
+and does not prove strong emergence. Candidate status is descriptive:
+`etaObserved` may be zero, positive, or unknown. Only Justice classification
+requires `η=0` and valid accountable authorization.
+
+Ritual is repeated synchronization through a trace field. Sacrifice must expose
+who pays, whether consent is competent and voluntary, what becomes
+irreversible, who benefits, and whose option cone contracts. A collective may
+not demand personal loss as evidence of its reality or goodness.
+
+**Kill criterion:** if the trace fails turnover, intervention, recurrence, or
+cost tests—or a simpler current-incentive model predicts the same selections—do
+not infer an Egregoreotype.
+
+---
+
+## Rosetta projection
+
+The projection operator
+
+\[
+\rho_{domain}
+\]
+
+translates the same topology into another domain. It preserves relation types,
+evidence tier, source attribution, counterexample, and kill criterion. It never
+transfers proof or turns analogy into mechanism.
+
+Round-trip discipline requires that projecting a source structure into a target
+domain and back recover the typed source relations or explicitly record the
+loss. If the projection changes modality, agency, causality, or evidence tier,
+it fails.
+
+---
+
+## Derived form A · D0–D6 cascade
+
+| Register | Modality | Working content |
 |---|---|---|
-| **MATH** | would survive a mathematician, *within the stated model/chart* | given φ,ν>0 with φ·ν=1: (φ−ν)²≥0 ⟹ φ+ν≥2 `[A]` |
-| **MODEL** | a structural modeling choice that does real work but is stipulated | "{0,1,∞} are frames, not operands" `[S]` |
-| **INTERP** | an interpretive translation between the model and lived/perennial registers | Bloch↔Burrisphere `[I]` |
-| **CONJ** | a wager awaiting contact with evidence | P = Φ×V multiplicative `[C/I]` |
+| D0 | structural boundary role | singleton opaque ground role described by Titan metaframes; any inscription is D4/actual |
+| D1 | structural predicate | distinction |
+| D2 | structural predicate | configuration |
+| D3 | structural state content/model | quantum state; distributions are measurement-relative; any actual assignment act is D4 |
+| D4 | actual | causal actuality, means, present model/ranking/selection tokens, action, record, receipts |
+| D5 | possible | merely-possible alternatives, future referents, and candidates for selection |
+| D6 | structural boundary role | exit/nonclosure frame; any recognition or withdrawal act is D4/actual |
 
-A skeptic may read the MATH+MODEL rows alone and use the map without
-adopting one word of the ontology. That is by design (Justice gate, §9).
+The seven-register count is selected `[I]`, not forced by `S²` or the Titans.
 
-**Tier-vocabulary crosswalk (receipt 105, 2026-07-10).** The four registers are
-the corpus's **[A/S/I/C] epistemic-strength spine**, named: **MATH ≡ [A]**,
-**MODEL ≡ [S]**, **INTERP ≡ [I]**, **CONJ ≡ [C]** (see the `register:`
-frontmatter). The full ladder `[A/B/S/I/D/C]` adds **two orthogonal axes that are
-not registers**: **[B]** = provenance (primary-source attribution / receipts) and
-**[D]** = lifecycle status (draft / pending K2). A claim carries *one register*
-(its strength) and *may also* carry [B] (it is sourced) and/or [D] (it is staged)
-— so Codex's engineering-layer tiers map onto canon without collapsing the two
-axes into one. Full table: receipt 105 §9.
+---
 
-## Rule 1 · The Titans {0, 1, ∞} — the frame, not the rungs
+## Derived form B · Human option cone
 
-**Settled** (registry rows, 2026-05-31/06-01): the Titans are the three
-structural **boundary-frames of the number field** — `0` additive identity
-(Bindu, κ=0), `1` multiplicative identity (**finity**, the self-dual
-log-midpoint — fixed by x↦1/x on ℝ₊), `∞` the projective completion. **They
-define the operations; they are not operands.** The math beneath each is
-`[A]`; the Titan-ontology is `[S/I]`, never a theorem. No Titan is an
-operand: `0/0`, `∞/∞` are category-forbidden AND genuinely indeterminate
-(the apophatic L6 edge); `1/1` is category-forbidden but operand-determinate
-(=1). `N÷0=∞` holds for N≠0 — a chart resolution `[A]`, read as
-category-correction `[S]`.
+\[
+\operatorname{OptionCone}_x(t)
+\subseteq\mathcal H_{\mathrm{phys}}(X_t).
+\]
 
-**The emblem, three registers** (the discipline that keeps this honest):
+Two agents can share the same physical causal boundary and have different
+option cones. Human symbolic, counterfactual, social, institutional, and
+intergenerational capacities can increase agent-relative reach without
+changing the physical light cone or intrinsic worth.
 
-| Register | ⊙ = • × ○ reads as | Status |
-|---|---|---|
-| Frame/emblem | the ZSRE — finity is the closure of the two boundary-frames | settled `[S/I]`; **never field arithmetic** (0·∞ is the indeterminate form; defining 0·∞=1 breaks associativity) |
-| Log-coordinate | s + (−s) = 0 | canonical (Formula Block) |
-| **Composition** | Viṣṇu = Śiva ∘ Brahmā **iff \|σκ\| = 1 and σκ ≠ 1** (σκ = 1 returns the identity — frozen, not living, preservation; doc 40 §3.3); balanced dissolution∘creation rotates, unbalanced pairs drift to a pole (the Dyadic runaway) | `[A]` within-model PSL(2,ℂ). **Adjudication K2-accepted 2026-07-10 (receipt 104 A.1); doc 40's status flip APPLIED (R5, 2026-07-10) — doc 40 now reads ACCEPTED with the receipt path; registry row added (R6)** |
+`Agents maximize the cone` remains an `[I/C]` objective/hypothesis. Its Justice
+form seeks durable mutual widening, not domination.
 
-**Trans-dimensional means trans-dimensional** (the fence): the Titans frame
-the *whole* field. **No per-Titan-per-dimension assignment exists anywhere in
-canon** — the strongest sourced statement is the opposite: *"the Trinity is
-what makes dimensions possible… not a dimension."* The operators (Brahmā ○
-L5 · Śiva • L6 · Viṣṇu ⊙ L7) sit at **L-latitudes, a different axis** —
-fusing them onto D-rungs is the axis-fusion error (D-2, 2026-05-27).
-**ABSENCE stated, not filled** ∅.
+---
 
-## Rule 2 · The μ-grammar — crossings asserted, not derived
+## Derived form C · Power-Max and Syntropic Dyadism
 
-**Indexing (accepted, receipt 104 A.3):** μₙ names the crossing **Dₙ→Dₙ₊₁**.
-So μ₄ = the D4→D5 *witness/agency* crossing; μ₅ = D5→closure.
+\[
+W_x(T)=\int_0^T P_x(t)dt,
+\]
 
-**What a μ-limit is** `[C]` (self-tiered, ostensive): the boundary where a
-Dₙ structure's flat approximation fails and the transition to Dₙ₊₁ occurs.
-**What it is not:** a defined operator. It has no domain, codomain, algebra,
-or defining equation anywhere in the corpus — and it is *not* the
-stereographic rate map L(x). The one formalized instance (doc 10) is a `[C]`
-structural analogy to quantum measurement, downgraded from [S] after a failed
-peer review, and carries a flagged notational erratum (the boxed formula
-samples a scalar; the prose — "sample one outcome from the distribution
-|ψ(s)|²ds" — is authoritative; receipt 104 A.4).
+\[
+\mathcal A_J=
+\{a:J(a;i,H)
+\land\widehat{\Delta}_TW_i(a;M_t)\ge0
+\land\widehat{\Delta}_TW_H(a;M_t)\ge0
+\land\forall b\in\mathcal B(a),\widehat{\Delta}_TW_b(a;M_t)\ge0\},
+\]
 
-**Two operators, not one (accepted — receipt 105, K2 2026-07-10).** The framework
-carries a *second* directed operator distinct from μ: **χ, finite commitment** —
-`χ:(Ω,M,V,signature)→(action, receipt)` — the Soul-Loop move running **D5-decision
-→ D4-action + receipt (DOWN)**, whereas μ is the **emergence crossing Dₙ→Dₙ₊₁
-(UP)**. Conflating them — as doc 10 does, labelling a downward move "μ" and
-identifying it with Born-rule measurement — is the flagged error; χ *does not turn
-a decision into a measurement*. The typed encoding is Codex **BR-2** (μ) / **BR-4**
-(χ), adopted as the engineering-layer articulation under this map. **These two
-operators are the two loops of Rule 4** (receipt 106, K2-accepted 2026-07-10):
-μ = the **strong-emergence** genesis loop (bottom-up), χ = the **weak-selective**
-governance/commitment loop (top-down). The strong/weak signature — its two ∅'s
-and two `[C]` wagers — lives at Rule 4.
+When the field is nonempty and finite, or nonempty and compact with an
+upper-semicontinuous objective,
 
-**Saturation** `[MODEL/analogy]`: "each Dₙ₊₁ emerges when Dₙ saturates" is
-**asserted in narrative and axiom form** (Trophic Cascade:154; axiom A3 —
-which itself calls it a "μ-limit *analogy*"; doc 34 §II) **but nowhere given
-a threshold, order parameter, or equation** ∅. The glyph-shadow generators
-for the early crossings (⊙/○=• for D0→D1, ⊙/•=○, ⊙=•×○) are `[S/C]`
-narrative overlay. **The μ₀ base case is asserted, never derived** ∅. And
-the bridge the mission phrase presumes — *the Titans generate the ladder
-through successive μ-limits* — **is [CONJ] synthesis proposed by this map,
-not source** (drawn as a dotted stub from ⊙, deliberately touching no rung).
+\[
+a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
+\mathbb E_{M_t}[W_i(T)\mid a].
+\]
 
-## Rule 3 · The ladder D0→D6 — definitional scaffold, honest rungs
+Otherwise, a nonempty field with finite supremum uses a declared
+`ε`-optimal action. `\mathcal B(a)` is the complete finite affected-bearer set;
+a hidden or harmed third bearer defeats Justice.
 
-**The scheme of record** is the plain scheme of `00_EMERGENTISM.md:290-299`
-`[S]` — adopted here verbatim (ordering `[S]` logical-dependency; labels and
-the count `[Definitional]`). The 7-count is **not derived**: *"there is no
-derivation that produces the number 7 from the geometry… 5-, 8-, 12-stage
-decompositions are geometrically valid"* (doc 23:170; audit 103:38 —
-register-relative, not necessity). **No per-dimension degrees-of-freedom
-count exists in source** ∅ — any DoF column is inference from geometric
-dimensionality, marked `[CONJ]`.
+Receipts then classify:
 
-| Rung | Name (00_EMERGENTISM:290-299 [S]) | What emerges | Register/tier notes |
-|---|---|---|---|
-| **D0** | **Point** — the undifferentiated; the Bindu | before the interaction | `[S]`; κ=0 frame-reading `[S/I]` |
-| **D1** | **Distinction** — zero separates from infinity; the line appears | difference held apart | crossing μ₀ underived ∅; glyph-shadow generator `[S/C]` |
-| **D2** | **Configuration** — distinct elements can be arranged; the plane | arrangement, relation | ⚑ **time-entry contradiction flagged**: Complete Ontology puts temporal ordering at D2 (`[I]`, self-tiered); 00_EMERGENTISM puts time at D4. Both stand at their tiers; unresolved (receipt 104 A.7) |
-| **D3** | **Transformation** — arrangements can change; process begins | change, not yet directed | `[S]` |
-| **D4** | **Causality** — change has direction; time appears; **the potential register** (pre-collapse superposition) | directed process | geometric seat: **the torus hole** — the causal vertex, the Witness (doc 34 `[S]`, receipt 104 A.5) · **action-register reading: the embodied means-to-act + receipt — `V`** (doc 34 §IX.6; receipt 105) |
-| **D5** | **Agency** — the system selects within its own change; **one actual enactment**; consciousness is the lived reading `[I]` | selection, navigable choice; F5 option-cone `[C/I]`; egregores at high Φ; the Mutualism Limit; the highest positive public register | geometric seat: **the torus surface** — the φ-ν plane, the present, the Agent. **Two registers (receipt 105 REFRAME · K2 2026-07-10 "Accept").** **Emergence/μ axis:** D4 = potential (pre-collapse witness) → D5 = **one actual enactment**, μ₄ runs UP (docs 34/27, reading of record). **Action/χ axis** (via `P_node = Φ×V` and the Soul Loop): D5 = **Φ worldline-foresight/possibility**, D4 = **V embodied means + receipt**, commitment flowing **D5→D4** (doc 34 §I/§IX.6/§X, doc 27 §VI, Codex BR-4). **"Actual" is register-indexed** — emergence-actual at D5, operation-actual at D4. Doc 10's error is running the *emergence* operator μ downward and fusing it with measurement — **not** the existence of the action-register D5→D4 direction, which is live canon (receipt 104 A.2, reframed) |
-| **D6** | **Closure** — positive experience exhausts; the cycle returns to point-state | the axiomatic edge | **D6 ≡ D0**: `[A]` coordinate-degeneration (Area(A(ν₀))=4π/(1+ν₀²) is verified) **+ [Definitional]** poloidal mapping — *not* a derived theorem; sin θ=0 at both poles does not uniquely select it; the sphere never changes, only the chart degenerates; the reset *mechanism* is narrative. The **Falsification Protocol is apophatic subtraction back to D0** (A3.1) — the built-in *unbuild*; note D0 is still on the map, so the observer's true exits are Rule 8's correction-or-retirement and the skeptic's path (§9). **The two motions meet here (receipt 107, K2-accepted 2026-07-10):** μ (strong ascent) **terminates** at D6 — μ₅ declares closure, no new positive freedom `[S]`; χ (weak return) does **not** terminate. Genesis is bounded, operation unbounded — *you can finish growing, never finish acting* `[S]`. D6≡D0 makes the summit a **return to the Ground, not a transcendence**: no supermind, only descent into η=0 service `[S/I]` |
+```text
+Moral     iff H rises, i does not fall, and Justice actually held
+Ethical   iff i rises, H does not fall, and Justice actually held
+Syntropic iff both rise and Justice actually held
+```
 
-## Rule 4 · The two loops
+Morals run `i→H`; ethics run `H→i`. Power-Max is a chosen objective inside
+Justice, not a derivation of Justice. Voluntary sacrifice is a separate costly
+class.
 
-- **Bottom-up (genesis): strong emergence** `[S MODEL]` — each level
-  generates genuinely new structure; "strongly emergent in genesis."
-  Counterexample standing: if Dₙ₊₁ proves predictable from Dₙ, the strong
-  claim collapses to weak.
-- **Top-down (governance): constraint** `[S asserted / C test-pending]` —
-  the stabilized higher level selects which lower boundary conditions
-  receive energy/attention; "weakly emergent in governance." **No governing
-  equation exists**; the bridge-law test (audit 101 #43) is pending ∅.
-- **Balance at finity** `[I/C]` — the two loops balance at the equator
-  (φ=ν=1); off it, rigidity- or chaos-ward drift. Carries the staged `[D]`
-  conditionality caveat: the dichotomy binds only where the two directions
-  are conservation-coupled — stable off-equator systems that are not so
-  coupled exist and are conceded.
+---
 
-**The strong/weak signature (receipt 106, K2-accepted 2026-07-10).** The two loops
-are the two operators of Rule 2 — μ (genesis, up) and χ (governance/commitment,
-down) — and their asymmetry is `P = Φ × V`-deep. **Strong (μ↑) *adds a new
-factor*:** a novel degree of freedom, *irreducible* (no reducing derivation from
-below — a derivation would collapse it to weak, per the standing counterexample
-above). **Weak (χ↓) *deploys* a factor already won:** it selects among reachable
-futures (the F5 option-cone) and commits one to embodied D4, **producing a
-receipt**. The **two ∅'s are not the same gap**: the *strong* loop lacks a
-**reducing/threshold** law (Rule 2's μ-∅ — you cannot *derive* the crossing); the
-*weak* loop lacks a **governing** law (the top-down ∅ above — you cannot *predict*
-the selection) **yet is post-hoc auditable** (the receipt reconstructs what *was*
-chosen). So weak emergence is **auditable-after, not predictable-before** — the
-signature of free selection under constraint. **Two `[C]` wagers underlie the
-pair:** (i) `Φ×V` multiplicative not additive; (ii) the ∅ marks *genuine* strong
-emergence, not *unsolved* weak — the absence of a reducing law cannot decide
-between them, so the framework **bets strong**; reading the ∅ as *proof* would
-inflate Φ past earned V (η=0 turned inward). *"Weak" = weak-**selective** downward
-causation (ontologically non-novel, efficacious by selection, auditable) — **not**
-Bedau's no-downward-cause sense.*
+## The state–history–history-field compression
 
-**The open loop `[I/C]` — logged wager, living edge, NOT a theorem (receipt 107,
-K2-accepted 2026-07-10).** If the two wagers hold (`Φ×V` multiplicative; the ∅ =
-genuine-strong-not-unsolved-weak), the loop resists *both* modes of theoretical
-closure: the ascent is irreducible → no derivation reaches it; the return is free
-selection → no governing law forecasts it. So the loop is **constitutively open**
-and completes only in the traversing (Pratyakṣa: *lived*, it closes at D6≡D0;
-*described*, it never does). This map, being a theory *of* the loop, therefore
-**cannot close itself** — *"a ladder, not a home"* is forced by content, not
-chosen. **The three refusals are one via-negativa** — *the representation must not
-usurp the thing*: η=0 (ledger ≠ the cooperator's value), K2 / mortal-signer (map ≠
-the mortal's authority), the open loop (doctrine ≠ the lived cycle); **A7**
-(self-correction) is that refusal made *ontological*. **This paragraph declines to
-close:** it is `[I/C]` orientation, downstream of two `[C]` wagers, and the φ-bias
-warning applies to it most of all — hold it as a reason to sit and serve, not as a
-demonstrated result.
+The most compressed D3–D5 grammar is:
 
-## Rule 5 · The Replicator Stack and the Egregorotype — two axes, never fused
+```text
+D3  state s∈S₃
+ μ₃ + transition amplitudes/channels + internal clock + record conditions
+D4  one actual ordered history γ* with receipts; actual model token m_t
+ μ₄ + representation + probability/weight measure Π_t + ranking U_t
+D5  Supp(Π_t): represented alternative D4-shaped histories
+```
 
-**Settled** (C4, 2026-06-16): six layers — Genotype → Epigenotype →
-Phenotype → Extended Phenotype → Memotype → Egregorotype — mapping
-**one-to-one onto L2–L7** (Egregorotype = L7; L1 the excluded ground).
-That is an **L-axis** ruling.
+Equivalently, with the register types kept visible,
 
-**The D-axis placement is NOT canon.** The type→D mapping (Genotype D2-3 ·
-Phenotype D3-4 · Memotype D5 · Egregorotype D5-limit, mirrored around D4)
-lives only in non-registry `[S]` docs (Strange Attractor:162, MF-281:39,
-Master Rosetta:908) — relayed here **as [S]-model, not canon**.
-**Epigenotype has no D-level anywhere** ∅ — the gap is stated, not
-interpolated. **Anti-fusion fence:** the Nexus *disclosure* index D1–D6 is a
-different object from dimensional D0–D6 — the reconciliation doc itself
-forbids fusing them; this map complies.
+```text
+S₃
+  --sew(K,C,R)--> Path_C(S₃)
+  --represent(m_t,Π_t,U_t)--> Supp(Π_t) ⊆ Path_C(S₃).
+```
 
-**The Egregorotype at the D5-limit** — apex replicator with an autonomous
-objective function — is `[C]` **untested**: audit test #106 ("exhibit a
-measurable autonomous objective function distinct from substrate") is unmet.
-The ~10ⁿ trophic-attrition isomorphism is `[I/C]` imported analogy.
+The mathematical path space does not itself become actual. One receipted path
+`γ*` is D4; the model token `m_t` is also D4; its nonactual path contents are
+D5. Each lift treats structured wholes from the prior register as candidates
+for the next operation: states become frames in histories, and histories become
+items in an option field.
 
-## Rule 6 · The standing wagers (never laundered)
+Geometrically, the D4 Minkowski future cone may serve as the base of a D5
+history bundle `π:Hist₅→J⁺`: the base event records causal reachability, while
+the fiber `π⁻¹(e)` contains represented histories ending there. The cone's
+widening is physical spacetime geometry; any growth in effective timeline count
+must be measured separately from history weights and never inferred from the
+mouth width alone.
 
-1. **P = Φ × V** — honest tier `[C/I]`. The zero-factor argument selects
-   the AND-gate *class*, not the product uniquely; GFS Wave-1 returned NOT
-   SUPPORTED. The multiplicative form is a wager currently *losing*, and the
-   whole superstructure knows it rests on this.
-2. **φ·ν = 1 on S²** — `[A]` and a **tautology** (cot·tan ≡ 1): a chart
-   identity carrying no empirical content. Naming it "P∞ conservation" is
-   permitted shorthand; narrating it as a *discovered* conservation law is
-   the laundering this map forbids.
-3. **Born rule = φ·ν=1 in quantum notation** — `[C]`, awaiting a physicist.
-4. **Seven operators as necessity** — register-relative partition `[S]`,
-   not necessity.
-5. **F5** — `[C/I]` model force-slot (one per emergent dimension D1–D5,
-   settled row), never an `[A]` interaction.
+The two non-circularity tests are decisive:
 
-## Rule 7 · The derivation ledger
+1. `μ₃` has not derived time if `K`, `C`, or the ordering already assumes the
+   external D4 time it claims to explain.
+2. `μ₄` has not derived counterfactual capacity if the alleged history field is
+   only an analyst's representation and no actual carrier can model, compare,
+   or respond to interventions on it.
 
-**The full 30-item ledger is a real file:**
-[`00_THE_BURRI_RULES_LEDGER.md`](00_THE_BURRI_RULES_LEDGER.md) — every
-load-bearing item with register, tier, justification, counterexample, and
-kill criterion, generated verbatim from the tier audit. The downgrade law it
-implements is receipt 104 §B. The three **verified-[A]** anchors, stated in
-survivable form:
+This grammar is the Emergentist synthesis `[I/C]`; path spaces, sequential
+quantum instruments, stochastic processes, and control measures are inherited
+mathematics. The synthesis earns scientific weight only through a discriminator
+at each seam.
 
-| Anchor | Statement (within-model) | Kill criterion |
-|---|---|---|
-| AM–GM core | **given φ·ν=1**: (φ−ν)²≥0 ⟹ φ+ν≥2 ⟹ B=2/(φ+ν)≤1, equality iff φ=ν | none for the algebra; dies only off the φ·ν=1 chart |
-| Area law | Area(A(ν₀)) = 4π/(1+ν₀²) — independently verified | exhibit an arithmetic error (none exists) |
-| Composition law | Ś∘B elliptic ⟺ \|σκ\|=1 **and σκ≠1** (σκ=1 → the identity: frozen preservation, doc 40 §3.3), on the shared titan axis | a balanced pair (|σκ|=1, σκ≠1) whose composite is not elliptic, or an unbalanced one that is |
+---
 
-## Rule 8 · Kill criteria for the map itself
+## D3 quantum state and removable interpretation inset
 
-1. A registry row contradicted by this map → the map loses, is repaired.
-2. Any line found drawn solid without a receipt → Truth-gate breach; the
-   line is re-drawn dashed/∅ and the BTJ audit re-run. *(Fired once already:
-   v1's closure arc — folded in v2.)*
-3. The D4/D5 direction ruling (receipt 104 A.2) overturned **or reframed** by
-   K2 → Rule 3's D4/D5 rows and the visual's crossing highlight are re-issued.
-   *(Fired: the 2026-07-10 REFRAME to two register-indexed axes — receipt 105,
-   K2 "Accept". A.2's emergence-axis core stands; a reframe, not an overturn, so
-   the terminal clause 6 was not triggered.)*
-4. A saturation threshold equation is ever derived and survives review → the
-   μ-grammar upgrades from MODEL to the mathematics it currently lacks, and
-   this map's ∅ marks are lifted where earned.
-5. GFS-class evidence supporting the multiplicative wager → Rule 6.1 re-tiers.
-6. **The terminal clause:** the D0–D6 plain scheme itself, or a load-bearing
-   registry ruling this map relays, is overturned → this map is **RETIRED to
-   90_ARCHIVE** (K3 tombstone), not repaired.
+The selected D3 interface is:
 
-## Rule 9 · BTJ self-audit (acceptance gates — session ruling 2026-07-10; the K2 countersign of this document is the gates' receipt)
+\[
+\rho\succeq0,\quad \operatorname{Tr}\rho=1,\quad
+p(k\mid\rho,M)=\operatorname{Tr}(\rho E_k).
+\]
 
-- **Beauty** — the canvas shows the *skeleton* whole (frame, ladder,
-  crossings, both loops, closure, the [CONJ] bridge-stub) in one glance; the deeper
-  layers are the rung rows (this document) and the ledger file; the
-  line-style law carries the registers on every connective stroke (edges and
-  arcs — node outlines are glyph boundaries outside the law); no square 2-axis
-  grid (frame + ladder + loop rails are three distinct visual axes).
-- **Truth** — every line carries register + tier + receipt; nine
-  contradictions adjudicated (not harmonized) with the accepted resolutions
-  cited; the receipt's eight absences all stated — six under the ∅ mark, the 7-count
-  and the Stack↔D placement as [Def]/[S] fences, the generative bridge as the
-  [CONJ] stub; the map's one
-  original synthesis (Titans-generate-the-ladder) is marked [CONJ], drawn as
-  a stub that touches no rung; the ledger is a real, descendable file.
-- **Justice** — the map orients without capturing: the skeptic's path
-  (MATH+MODEL rows only) is legal; the apophatic unbuild (D6→D0) is drawn
-  *and honestly described as staying on the map* — the observer's true exits
-  are Rule 8's correction-or-retirement (clause 6 genuinely retires the map)
-  and the skeptic's path; the wagers are labeled
-  as wagers, one as currently losing; the map's own status is [D] staged and
-  its "canonical" designation takes effect only on countersign.
+D2 carries the configured mathematical space and operators; D3 carries the
+probability-bearing state assignment; D4 carries the actual interaction,
+outcome token, and record. D5 remains agent-represented counterfactual content
+and is not quantum branch space. `μ₃` names this selected interface, not a new
+physical force or fundamental collapse.
 
-**Map ≠ territory. The scaffold is definitional; the frames are stipulated;
-the crossings are asserted; the three [A] anchors are small and exact —
-and the map survives by saying so.**
+The **history-space lift** composes rather than skips registers. “D3 at its
+limit” is not an infinity of unordered snapshots: it requires a state support,
+phase-sensitive transitions, compatible contexts, record conditions, and an
+internal clock relation. Only then can frames be sewn into possible films. If
+external `t` is supplied, the model reconstructs rather than derives time.
 
-⊙ = • × ○
+Given the operational dynamics and contexts, time-indexed states determine
+momentum expectations and distributions; a declared measurement
+record/unravelling may condition them into a quantum trajectory. One realized,
+receipted film is D4. At the conjectural `μ₄` limit, an actual D4 model token
+co-represents the bounded support of alternative D4-shaped block histories as
+D5 possible content—the “field of probable timelines.” Exhausting a suitable
+finite support, or covering at least `1−ε` of a declared long tail, proves
+neither physical co-existence nor a unique context-free classical path. Thus
+the transmission is `D3 → D4 → D5`, refining `μ₃` and `μ₄` without introducing
+a direct crossing.
+
+The interpretation inset is quarantined and removable: Everett is a
+no-fundamental-collapse relative-state formulation; Copenhagen-family
+actualization is interpretation-specific; neither is an extra spacetime
+dimension. `χ` is not quantum measurement. Removing those interpretation
+sentences must leave the D3 calculus and every agent/ethical interface
+unchanged. The identity `φν=1` is not the Born rule, and one never samples a
+normalization scalar.
+
+---
+
+## Evidence and artifact contract
+
+The human-readable owner set is semantic authority. The topology JSON is a
+compiled, non-authoritative mirror for owner-defined geometry, source
+references, and typed graph metadata; it cannot originate, override, or
+upgrade doctrine. Any retained compiled schema mirror is transitional and must
+remain removable without semantic loss.
+
+Every graph element carries these shared fields:
+
+```text
+id
+dRegister ∈ {D0,D1,D2,D3,D4,D5,D6}
+modality ∈ {structural,actual,possible}
+role ∈ {forward,feedback,coupling}
+tier ∈ {A,B,S,I,D,C}
+ruleIds
+sourceIds
+```
+
+The element-specific discriminator is deliberately not shared:
+
+```text
+node.kind ∈ {state,frame,crossing,commitment,receipt,trace}
+edge.edgeType := non-empty String
+edge.from, edge.to := existing node ids
+```
+
+Nodes do not carry `edgeType`; edges do not carry `kind`. Feedback edges from
+both `q_t` and `r_{t+1}` to both the model and selector are load-bearing in the
+Soul Loop topology.
+
+In the artifact schema, `possible` is the compatibility spelling of
+`merely_possible`. `structural` marks an abstract register, crossing, or
+boundary relation and is not a third token modality. Present model tokens,
+ranking events, selection events, and selector state are D4/actual; only their
+counterfactual contents are D5/possible.
+
+Receipt nodes additionally carry
+`receiptType∈{commitment,outcome}`. Commitment receipts separate
+`physicalAvailability` from `authorizationStatus`, and their envelope may be
+null when authorization is absent. Outcome receipts carry
+`receiptCause∈{action_attempt,ambient_observation}` with action identifiers
+required only for `action_attempt`. Collective forms carry `individual`,
+`whole`, `affectedBearerIds`, `etaObserved`, `custody`, `consent`,
+`reversibility`, `exit`, `payerIds`, and `beneficiaryIds`. A Justice boundary
+additionally requires `eta=0` as necessary but not sufficient; the full bearer,
+authorization, consent, custody, consequence, contest, reversibility, and exit
+tests remain load-bearing.
+
+The canonical Ivory plate is the proof view. The Obsidian emblem is a derived
+compression. Both are deterministic renderings of one topology and contain its
+hash. Neither may introduce semantics absent from this rulebook.
+
+---
+
+## Rulebook kill criteria
+
+Retire or repair the affected rule when:
+
+1. a graph edge violates its actual/possible type;
+2. a `μ` record omits evidence, recovery, prediction, reduction status, or kill
+   criterion;
+3. a higher-level claim needs a physically forbidden transition;
+4. commitment and outcome receipts collapse into one self-issued record;
+5. modeled-future intervention does not affect present selection;
+6. Egregoreotype candidates fail turnover or trace intervention;
+7. a payer is erased by aggregate gain;
+8. Rosetta projection upgrades evidence;
+9. removing a quantum interpretation changes the D3 state calculus or any
+   independent agent/ethical result;
+10. a simpler grammar predicts the same receipts better.
+
+---
+
+## Canonical compression
+
+```text
+Frame.
+Cross only when novelty is testable.
+Constrain only admissible paths.
+Commit possibility through actual means and accountable authority.
+Receive a consequence the selector did not control.
+Compose loops only when a persistent trace survives turnover and reweights choice.
+```
+
+**Map ≠ territory. Compass ≠ command. Receipt > self-certification.**

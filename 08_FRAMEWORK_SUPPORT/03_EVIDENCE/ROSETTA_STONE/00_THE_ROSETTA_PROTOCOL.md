@@ -5,9 +5,9 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[D] staged doctrine awaiting K2 · cites only signed rulings"
+  register: "[S/I] active translation protocol · cites settled rulings"
   canonical_phrase: "The Rosetta Protocol — Be the Stone, Not the Decree"
-status: "SIGNED [E] — K2 countersigned by Yves R. Burri (natural person), 2026-07-13, in-session authorization; recorded in receipt 127. The three-scripts rule is now shipping doctrine."
+status: "ACTIVE [S/I] — adopted by Yves R. Burri and recorded in receipt 127; bounded by the Settled Canon Registry."
 date: 2026-07-13
 depends:
   - "00_THE_MASTER_ROSETTA.md (the table this doc re-purposes)"
@@ -29,7 +29,7 @@ The historical Rosetta Stone records the Memphis Decree of 196 BC — a proclama
 
 ## 1 · What the audit settled about our Rosetta (signed — do not re-litigate)
 
-Per the registry row (receipt 126, K2 2026-07-13): the seven-row alignment is a **cross-domain lens, honest as such — not a discovered universal.** Its stated kill-criterion **fired** (Mesoamerican, Buddhist, Daoist, Tahitian systems do not fit; the count "7" is a conceded design choice; the narrowing to polarity-encoding traditions *is* the falsification, recorded as such). This protocol builds **only** on the surviving function. Any use of the Rosetta as evidence of a native sevenfold universal violates the signed ruling.
+Per the registry row and receipt 126, the seven-row alignment is a **cross-domain lens, honest as such — not a discovered universal.** Its stated kill criterion **fired** (Mesoamerican, Buddhist, Daoist, and Tahitian systems do not fit; the count "7" is a conceded design choice; the narrowing to polarity-encoding traditions *is* the falsification). This protocol builds only on the surviving translation function.
 
 What survives is precisely what the Memphis stone had: **parallel registers of one structure, entered from whichever column the reader already reads.** The audits' own convergent verdict on the whole framework — *"it does not unify the sciences by derivation; it translates between them"* — makes the Rosetta not a damaged exhibit but the framework's **central instrument**.
 
@@ -47,7 +47,7 @@ Every public artifact of the framework — page, product, institution, contract 
 
 | Script | Register | Carries | Example surface |
 |---|---|---|---|
-| **Sacred** | story / symbol | why this exists; the fable, the glyph | the Fable; ⊙ = • × ○ |
+| **Sacred** | story / symbol | why this exists; the fable, the glyph | the Fable; •   ⊙   ○ |
 | **Demotic** | plain vernacular | what it is and refuses, honestly tiered | `/plainly/`; plain-terms pages |
 | **Greek** | commercial / verifiable | the receipt: fee table, exit clause, ledger entry, kill-criteria | η=0 receipts; K4 exit docs; `/record/` |
 
@@ -57,7 +57,7 @@ Every public artifact of the framework — page, product, institution, contract 
 
 The economy the Great-Filter wager concerns is agent-saturated; its scribes are machines. The corpus already carries a proto-machine register (every canonical doc ends in an agent Execution Surface). This protocol names it and directs its completion:
 
-- **The constitution as middleware:** the five refusals (η=0, K2, K3, K4, A7) expressed as machine-checkable invariants — receipt schemas, gate checks, signature requirements, archive-first storage rules, kill-criterion fields on claims.
+- **The constitution as middleware:** zero extraction, accountable authorization, archive-with-tombstone custody, Grace Exit, and self-correction expressed as machine-checkable invariants.
 - **Canonical schemas:** one consistent, versioned schema family for receipts, tiers, kill-criteria, and rulings, so any agent can parse the canon's epistemic state without reading prose.
 - **The registry as API:** the Settled Canon Registry's Do-NOT-flag / Still-flag-if discipline is already a machine-shaped contract; formalize it so audit agents consume it directly (this week's 37-agent audit did so by prose; the next should do so by schema).
 
@@ -71,9 +71,12 @@ The economy the Great-Filter wager concerns is agent-saturated; its scribes are 
 
 ## 6 · Execution surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
 
-1. This protocol is `[D]` until K2-signed; do not cite it as ruled doctrine. The *registry row it builds on* (Rosetta = lens; kill fired) **is** signed — cite that freely.
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
+
+1. Cite this protocol only for translation discipline. It does not upgrade the evidence tier of any projected domain claim.
 2. Never present the Rosetta as evidence of a discovered universal; present it as a translation instrument, with the fired criterion visible.
 3. When shipping any public artifact, check the three-scripts conformance test; flag mono-script artifacts.
 4. Machine-register work inherits tiers; never emit a schema field asserting above the signed tier.
@@ -81,4 +84,4 @@ The economy the Great-Filter wager concerns is agent-saturated; its scribes are 
 
 *The decree dies with its dynasty. The parallel text unlocks civilizations. Be the stone.*
 
-⊙ = • × ○
+•   ⊙   ○

@@ -9,7 +9,7 @@ rosetta:
 
 **Date:** 2026-04-25
 **Status:** Active audit schema
-**Depends on:** [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md), [06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md](06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
+**Depends on:** [02_ROWS_COLUMNS_DEEPENING_2026_04_25.md](02_ROWS_COLUMNS_DEEPENING_2026_04_25.md), [archived structural pressure points](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/06_STRUCTURAL_PRESSURE_POINTS_2026_04_25.md), [07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md)
 **Purpose:** Turn every Rosetta row/column cell into an auditable claim with a tier, source basis, adjacent check, mirror check, and kill criterion.
 
 ---
@@ -38,11 +38,11 @@ Every column gets a class before any cell is scored.
 
 | Class | Examples | Evidential use | Primary risk |
 |---|---|---|---|
-| **Anchor** | Operator, geometry, equation, balance | Defines the generator | Internal inconsistency |
-| **Causal chain** | Varna, reasoning, pramana, -ology, regime | Tests internal coherence | Circular validation |
-| **Empirical domain** | Psychology L1-L4, Plato, documented developmental sequences | Independent convergence candidate | Bad sourcing / overextension |
+| **Anchor** | Operator, geometry, equation, balance | Defines the selected grammar | Internal inconsistency |
+| **Declared chain** | Varna, reasoning, pramana, -ology, regime | Tests a selected crosswalk; does not assert causation | Circular validation / person typing |
+| **Externally sourced domain** | Psychology L1-L4, Plato, documented developmental sequences | Supplies domain facts, never confirmation by itself | Bad sourcing / overextension / proof transfer |
 | **Interpretive domain** | Mythology, Yoga, neuroscience upper rows, initiatory comparisons | Hypothesis / translation | Selection bias |
-| **Derived diagnostic** | DAC operations, economics, agent routing | Build grammar / design test | Mistaken as proof |
+| **Derived diagnostic** | institutional operations, economics, cognitive-role routing | Build grammar / design test | Mistaken as proof |
 | **Speculative extension** | AGI, wave packets, thin archaeological or esoteric mappings | Research prompt | Conjecture inflation |
 
 **Rule:** a cell inherits the column-class ceiling. A derived diagnostic cell can be useful, but it cannot become independent evidence for the Rosetta.

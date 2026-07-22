@@ -1,52 +1,55 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Audit and Execution Route Authority
-  secondary:
-    - level: L4
-      column: Execution Receipt Boundary
-      role: "separate dated execution history from current runtime authority"
-    - level: L6
-      column: Archive and Compression Boundary
-      role: "prevent audit packets from silently deleting or pruning source material"
-    - level: L7
-      column: Constitutional Witness
-      role: "preserve cross-caste audit context without promoting it into founder authority"
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[B/I/D]"
-  canonical_phrase: "50_AUDITS_AND_EXECUTIONS — Agent Routing"
-title: "50_AUDITS_AND_EXECUTIONS — Agent Routing"
-status: "ACTIVE — audit and execution-history routing"
-evidence_tier: "[B] for dated receipts; [I] for synthesis; [D] for planned packets."
+type: emergentism-agent-route
+title: "50 Audits And Executions — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 50_AUDITS_AND_EXECUTIONS — Agent Routing
+# 50 Audits And Executions — Agent route
 
-**Lane scope:** Compressed audit, review, disambiguation, hardening-memory, and execution-history lane.
-**Primary lead:** `L3 Vaiśya`
-**Support:** L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[B]` for dated audit/execution receipts; `[I]` for disambiguation synthesis; `[D]` for planned review packets.
+**Lane:** `11_UPLINK/50_AUDITS_AND_EXECUTIONS`
 
-**Rosetta boundary:** [I] This route card governs audit/execution-history provenance. It does not [B] prove current runtime state, authorize deletion, or override current owner-lane route law without fresh receipts.
+## Read first
 
-## Read First
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
+## Pure-worldview boundary
 
-## Routing Law
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
+## Epistemic contract
 
-## Constraints
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+## Rosetta dispatch
 
-Zero-Sum Resolution Equation
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
+
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
+
+## Lane discipline
+
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
+
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

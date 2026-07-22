@@ -33,7 +33,8 @@ LEDGER_ROW_BY_THEOREM = {
     "inheritance_requires_preservation": "R1.7",
     "forecast_changes_outcome": "R5.4",
     "not_every_forecast_is_reflexive": "R5.5",
-    "typed_boundary_composition": "R0.2",
+    "frame_render_is_injective": "R0.2",
+    "frame_arithmetic_signature_is_empty": "R0.2",
     "extended_zero_times_infinity_is_not_one": "R0.3",
     "operator_mask_does_not_determine_valence": "RC.2",
     "return_matches_floor_in_role": "R6.1",
@@ -58,6 +59,13 @@ ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 LEAN_NAME_TOKEN = r"(«[^»]+»|[^\s({:]+)"
 THEOREM_DECLARATION = re.compile(rf"\b(?:theorem|lemma)\s+{LEAN_NAME_TOKEN}")
 FORBIDDEN_DECLARATION = re.compile(rf"\b(?:axiom|constant)\s+{LEAN_NAME_TOKEN}")
+RETIRED_TITAN_OPERATION_PATTERNS = {
+    "retired infix Titan equation": re.compile(r"⊙\s*=\s*•\s*(?:×|\*)\s*○"),
+    "retired reverse-infix Titan equation": re.compile(r"•\s*(?:×|\*)\s*○\s*=\s*⊙"),
+    "retired frame-composition API": re.compile(
+        r"\b(?:FrameComposition|typed_boundary_composition)\b"
+    ),
+}
 VOLATILE_RECEIPT_FIELDS = {
     "generated_at_utc",
     "git_head_at_start",
@@ -268,6 +276,18 @@ def main() -> int:
     missing = sorted(EXPECTED - theorem_names)
     unexpected_theorems = sorted(theorem_names - EXPECTED)
     ledger_text = (ROOT / "PROOF_LEDGER.md").read_text(encoding="utf-8")
+    retired_titan_operation_violations: list[str] = []
+    titan_scan_inputs = [*sources, ROOT / "PROOF_LEDGER.md", ROOT / "README.md"]
+    for path in titan_scan_inputs:
+        text = path.read_text(encoding="utf-8")
+        if path.suffix == ".lean":
+            text = strip_lean_comments(text)
+        for label, pattern in RETIRED_TITAN_OPERATION_PATTERNS.items():
+            for match in pattern.finditer(text):
+                line = text.count("\n", 0, match.start()) + 1
+                retired_titan_operation_violations.append(
+                    f"{path.relative_to(ROOT)}:{line}: {label}"
+                )
     ledger_rows, duplicate_ledger_rows = parse_ledger_certificate_cells(ledger_text)
     unledgered_theorems = sorted(
         name
@@ -356,6 +376,9 @@ def main() -> int:
     if forbidden:
         status = "FAIL"
         failures.extend(forbidden)
+    if retired_titan_operation_violations:
+        status = "FAIL"
+        failures.extend(retired_titan_operation_violations)
     if missing:
         status = "FAIL"
         failures.append(f"missing expected theorems: {', '.join(missing)}")
@@ -425,6 +448,7 @@ def main() -> int:
         "missing_parsed_audit_outputs": missing_audit_outputs,
         "unexpected_parsed_audit_outputs": unexpected_audit_outputs,
         "forbidden_declarations": forbidden,
+        "retired_titan_operation_violations": retired_titan_operation_violations,
         "reported_axioms": sorted(reported_axioms),
         "allowed_axioms": sorted(ALLOWED_AXIOMS),
         "unexpected_axioms": unexpected_axioms,

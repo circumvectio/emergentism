@@ -15,10 +15,10 @@ rosetta:
   register: "[A/S/I/C]"
   canonical_phrase: "Suda reciprocal-symmetry convergence"
 title: "Suda Reciprocal-Symmetry Convergence"
-status: "ACTIVE reference note - 2026-06-06. External convergence record, not source authority."
+status: "ACTIVE KINTSUGI REFERENCE — analytic correspondence corrected 2026-07-21; not source authority or world evidence."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Source provenance:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/README.md`
 **Finity synthesis:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md`
 **Raw intake snapshot:** `../../../../../90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/` (ignored raw archive; not tracked source authority)
@@ -140,7 +140,7 @@ Do not overstate this as proof-authority for the Burrisphere, or as an identity 
 Suda does not name *finity* as a third reification. Emergentism adds:
 
 - the glyph `⊙` for the finity boundary-frame;
-- the frame-register emblem `⊙ = • × ○`;
+- the frame-register emblem `•   ⊙   ○`;
 - the explicit rule that `0 * infinity = 1` is **not** field arithmetic;
 - the bridge from reciprocal energy to sphere balance;
 - evidence-tier discipline and kill criteria;
@@ -153,7 +153,7 @@ Suda-adjacent papers sometimes treat undefinedness and `0/0` too aggressively. E
 ```text
 field arithmetic: 0/0 is indeterminate; 0 * infinity is indeterminate
 projective geometry: N/0 = infinity for N != 0 in the proper completion
-frame register: ⊙ = • × ○ is a glyph emblem, not a field theorem
+frame register: •   ⊙   ○ is a glyph emblem, not a field theorem
 ```
 
 The broader claims around black holes, QFT, holography, AI rights, population genetics, or cultural behavior are not promoted by this note. They remain intake or future comparative material until independently sourced and tiered.
@@ -180,4 +180,4 @@ Claim to avoid: Suda's whole ontology as canon.
 - `/1` should use Suda precisely: `I(x)=1/x`, `s=log x`, `E=(log x)^2`, `u=(x-1)/(x+1)`, and `u -> -u`.
 - `/2` may refer to the half-twist as a coordinate analogy for the Mu-limit, not as proof of the Mu-limit.
 
-⊙ = • × ○
+•   ⊙   ○

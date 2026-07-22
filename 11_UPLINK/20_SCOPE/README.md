@@ -30,13 +30,12 @@ evidence_tier: "[I] for scope routing; [B] only for source-owner boundary receip
 
 ## Files In This Lane
 
-- `../19_K1_CLARIFICATION.md`
-- `../20_K2_SOVEREIGNTY_SCOPE.md`
-- `../21_GRACE_EXIT_SCOPE.md`
-- `../22_F1_F2_BOUNDARY_SCOPE.md`
-- `../23_P_SCORE_SCOPE.md`
-- `../24_A_BRAHMANISM_SCOPE.md`
 - `25_EXPERIMENT_SCOPE.md`
+- `25_FLAGSHIP_PAPER_BRIEF.md`
+- `26_BEHAVIOR_IS_MULTIPLICATIVE_NOT_ADDITIVE_BRIEF.md`
+- `27_ULTIMATUM_GAME_STUDY_DESIGN.md`
+- `28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md`
+- `29_ULTIMATUM_PREREGISTRATION_SKELETON.md`
 
 ## Use This Lane For
 

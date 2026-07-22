@@ -8,7 +8,8 @@
 # from MIDUS Wave 2 (Study 4652, ICPSR).
 #
 # Evidence tier: [C] Conjecture — exploratory proof-of-concept.
-# The confirmatory test is the GFS 22-country analysis (preregistered).
+# The former GFS confirmatory lane was retracted and archived on 2026-07-13;
+# this script defines no successor and no canon-upgrade route.
 #
 # Data source: https://www.icpsr.umich.edu/web/NACDA/studies/4652
 # Download the MIDUS 2 data and place the .rda or .tsv file in this directory.
@@ -428,9 +429,9 @@ cat("========================================\n\n")
 if (h1_supported & robust_curv) {
   cat("Result: PROOF-OF-CONCEPT PASSED\n")
   cat("The multiplicative model outperforms the additive model.\n")
-  cat("Proceed with GFS preregistered confirmatory test.\n")
+  cat("The historical GFS confirmatory lane was retired on 2026-07-13.\n")
   cat("Evidence tier: [C] → remains [C] (single dataset, one country, exploratory)\n")
-  cat("Upgrade to [S] requires: GFS 22-country replication (preregistered)\n")
+  cat("No canon upgrade follows from this exploratory output.\n")
 } else if (coef(m2)["phi_x_nu"] > 0 & f_test_m1_m2$`Pr(>F)`[2] < 0.05) {
   cat("Result: SUGGESTIVE (p < .05 but not < .005)\n")
   cat("The interaction is in the predicted direction but does not meet\n")
@@ -442,11 +443,11 @@ if (h1_supported & robust_curv) {
   cat("  1. Alternative phi/nu operationalization\n")
   cat("  2. Non-linear but non-multiplicative structure\n")
   cat("  3. The prediction may not hold for this population\n")
-  cat("The GFS test remains the confirmatory analysis regardless.\n")
+  cat("The retired GFS lane supplies no fallback confirmation.\n")
 }
 
 cat("\n--- Analysis complete ---\n")
 cat("This is a PROOF-OF-CONCEPT analysis on MIDUS data (single US sample).\n")
-cat("The preregistered confirmatory test uses GFS (22 countries, 200K respondents).\n")
-cat("All claims remain at [C] Conjecture until GFS results are in.\n")
-cat("\n⊙ = • × ○\n")
+cat("The former GFS study and pipeline are archived as retracted history.\n")
+cat("Current claims remain at their declared tiers pending a new independent test.\n")
+cat("\n•   ⊙   ○\n")

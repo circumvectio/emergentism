@@ -88,4 +88,5 @@ These are evidence surfaces, not source doctrine. A row mapping does not upgrade
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)
-- Sibling lanes: [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Active sibling lanes: [`../D_SERIES_DOMAINS/`](../D_SERIES_DOMAINS/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Historical genealogy: [D-series constitutional lane](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_CONSTITUTIONAL/README.md) — archived; not an active sibling or worldview authority.

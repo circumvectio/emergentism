@@ -1,70 +1,55 @@
 ---
-rosetta:
-  primary_level: L7
-  primary_column: Philosophy
-  operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[I]"
-  canonical_phrase: "10_SEED — Agent Routing"
+type: emergentism-agent-route
+title: "10 Seed — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 10_SEED — Agent Routing
+# 10 Seed — Agent route
 
-**Lane scope:** The transcendent seed — Zero-Sum Resolution Equation. The L7 Ṛṣi reading and the self-dissolving exit.
-**Primary lead:** `L7 Ṛṣi`
-**Support:** L6 Sādhu, L4 Kṣatriya
-**Evidence tier:** `[I]` for compressed seed doctrine; `[B]` only where source-owner receipts exist; `[C]` / `[D]` for speculative or draft extensions.
+**Lane:** `10_SEED`
 
-## Read First
+## Read first
 
-- `README.md`
-- `00_THE_SEED.md`
-- `01_THE_SEED_LADDER/00_THE_SEED.md` — optional `[D]` cold-reader candidate;
-  then D0 through D6 in order
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Agentz Cloud / Rosetta Dispatch
+## Pure-worldview boundary
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Recovers the raw seed pressure without adding doctrine. |
-| L2 Śūdra | Checks that compressed intuition is not mistaken for proof. |
-| L3 Vaiśya | Tests formula, tier, and source-reference integrity. |
-| L4 Kṣatriya | Blocks runtime, management, or K2 claims from seed compression alone. |
-| L5 Brāhmaṇa | Re-expands the seed into source-owner architecture when needed. |
-| L6 Sādhu | Cuts reification: the seed is not the Ground. |
-| L7 Ṛṣi | Owns witness, compression, preservation, and return-to-L1 teaching. |
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Recursive Deployment Receipt
+## Epistemic contract
 
-Every source-visible folder and file in this lane is covered by
-[`../00_META/03_AGENTZ_DEPLOYMENT_10_SEED_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_10_SEED_2026_06_04.csv).
-The receipt preserves local doctrine files in place: route cards live in this
-lane, while per-file control rows live in `00_META/`.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Routing Law
+## Rosetta dispatch
 
-- This lane is L7 seed compression: minimal identity, not a replacement for the source folders.
-- The existing Seed and staged Seed Ladder are distinct surfaces. The former's
-  `D6 ≡ D0` and the latter's role-similarity-only `D6~D0` are an unresolved
-  contradiction pending Receipt 139 box 8; agents must not merge or promote them.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present compressed seed doctrine as live runtime truth by default.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-## Constraints
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
+## Lane discipline
 
-Zero-Sum Resolution Equation
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/10_SEED/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

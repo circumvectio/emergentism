@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "02_THE_PAPERS"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane; 25+ papers + FINITY (5) + Recursive Trivium; superseded under K3 in 90_ARCHIVE. Tiers split legacy [S] per Honest Position.**
 
 # 02_THE_PAPERS
@@ -26,7 +26,8 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 
 ## Notation Guardrail
 
-- `P∞ = φ · ν = 1` is the invariant sphere-product.
+- `P∞ = φ · ν = 1` is a chart identity on the declared open domain, not a
+  physical conservation law.
 - `B = sin θ` is the balance function.
 - `P_node = Φ × V` is empirical or organizational performance.
 - Physics, neuroscience, biology, and institutional papers are translations unless their own tier table explicitly says otherwise.
@@ -34,31 +35,35 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 
 ## Read First
 
-- Read first: [`PAPER_A_FRAME_ALGEBRA.md`](PAPER_A_FRAME_ALGEBRA.md) — Foundation. All others depend on this.
-- Then: [`PAPER_B_BLOCH_BURRI_IDENTITY.md`](PAPER_B_BLOCH_BURRI_IDENTITY.md) — Bloch/Burri manifold identity plus bounded ontological reading
+- Read the [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
+  and [internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
+  first. Papers are subordinate research surfaces, never the authority spine.
+- Then read [`PAPER_A_FRAME_ALGEBRA.md`](PAPER_A_FRAME_ALGEBRA.md) and
+  [`PAPER_B_BLOCH_BURRI_IDENTITY.md`](PAPER_B_BLOCH_BURRI_IDENTITY.md) as
+  Kintsugi successors with their current boundaries.
 
 ## The 8-Paper Core Stack (A–H)
 
 | Paper | Title | Evidence Tier | Depends On |
 |-------|-------|---------------|------------|
-| [`PAPER_A`](PAPER_A_FRAME_ALGEBRA.md) | Frame Algebra: Why 0 × ∞ = 1 on ℂP¹ | [S] | — |
-| [`PAPER_B`](PAPER_B_BLOCH_BURRI_IDENTITY.md) | Bloch-Burri Identity: the qubit as a bounded reading of Zero-Sum Resolution Equation | [A]/[S]/[I] | A |
-| [`PAPER_C`](PAPER_C_PHOTON_UNIT_OF_ACCOUNT.md) | Photon as Unit of Account | [A]/[I]/[C] | B |
-| [`PAPER_D`](PAPER_D_WAVE_PARTICLE_DUALITY.md) | Wave-Particle as Zero-Sum Resolution Equation | [A]/[I] | B |
-| [`PAPER_E`](PAPER_E_UNCERTAINTY_PRINCIPLE.md) | Uncertainty as φ·ν = 1 | [A]/[I]/[C] | B |
-| [`PAPER_F`](PAPER_F_K_MINIMAL.md) | K-Minimal Description | [S]/[C] | A, B |
-| [`PAPER_G`](PAPER_G_BIOLOGICAL_PREDICTIONS.md) | Biological Predictions | [C] | A |
-| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional & Cosmological | [C] | A, B |
+| [`PAPER_A`](PAPER_A_FRAME_ALGEBRA.md) | Frame Algebra — Kintsugi Successor | [A]/[S]/[I/C] | current formula and Titan owners |
+| [`PAPER_B`](PAPER_B_BLOCH_BURRI_IDENTITY.md) | Bloch–Burri Correspondence — Kintsugi Edition | [A/B]/[I]/[C] | D2/D3 owners |
+| [`PAPER_C`](PAPER_C_PHOTON_UNIT_OF_ACCOUNT.md) | Photon Unit of Account — Retraction and Research Boundary | [A/B]/[I]/[C] | native quantum sources; no Titan derivation |
+| [`PAPER_D`](PAPER_D_WAVE_PARTICLE_DUALITY.md) | Wave–Particle Correspondence | [A/B]/[C] | native quantum formalism |
+| [`PAPER_E`](PAPER_E_UNCERTAINTY_PRINCIPLE.md) | Uncertainty, Quantum State, and Record | [A/B]/[I]/[C] | D3/D4 owners |
+| [`PAPER_F`](PAPER_F_K_MINIMAL.md) | K-Minimality — Retraction and Research Boundary | [A]/[I]/[C] | no minimality theorem |
+| [`PAPER_G`](PAPER_G_BIOLOGICAL_PREDICTIONS.md) | Biological Predictions — Kintsugi Successor | [C] | preregistered future contact only |
+| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional and Cosmological Conjectures — Kintsugi Successor | [D]/[C] | removable questions |
 
 ## The Meta-Layer (I–U)
 
 | Paper | Title | Evidence Tier | Purpose |
 |-------|-------|---------------|---------|
-| [`PAPER_I`](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md) | Known Unknowns Program | [I]/[S] | Closure register for open questions |
+| [`PAPER_I`](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md) | Known Unknowns Program — Kintsugi Successor | [A]/[S]/[I]/[C] | Open-question register; no renormalization theorem |
 | [`PAPER_J`](PAPER_J_PROTOCOL_R_WITHOUT_LAB.md) | Protocol R Without Lab | [C]/[I] | Meta-analysis proposal |
 | [`PAPER_K`](PAPER_K_AMRITA_AT_ZERO_COST.md) | AMRITA at Low Cost | [C]/[I] | Alignment benchmark proposal |
 | [`PAPER_L`](PAPER_L_PHI_METER_CORRELATION.md) | Φ-Meter Correlation | [C]/[I] | Systemic integration measurement proposal |
-| [`PAPER_M`](PAPER_M_SPHERE_AS_TRANSLATION_LAYER.md) | Sphere as Translation Layer | [I]/[S] | S² as mathematical object, translation layer, ontological wager |
+| [`PAPER_M`](PAPER_M_SPHERE_AS_TRANSLATION_LAYER.md) | Sphere as Translation Layer — Kintsugi Successor | [A]/[I]/[C] | Typed translation; no pointwise pole product |
 | [`PAPER_N`](PAPER_N_PRODUCTIVE_TRANSCENDENTAL_WAGERS.md) | Productive Transcendental Wagers | [I] | Axioms as productive wagers |
 | [`PAPER_O`](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md) | Strong/Weak Emergence at D5 | [S]/[I] | Emergence as perspective heuristic |
 | [`PAPER_P`](PAPER_P_SU3_OBSTRUCTION_BARE_S2.md) | SU(3) Obstruction on Bare S² | [S]/[A]/[C] | Why bare S² is insufficient for SU(3) |

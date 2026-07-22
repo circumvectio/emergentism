@@ -2,6 +2,9 @@
 ### The Replicator Stack and the Inevitability of Capture
 *(geno → pheno → extended → memo → egregoro-type)*
 
+> **Historical peer-review artifact.** This audits superseded A5. The current
+> Egregoreotype owner controls; legacy spelling below is preserved as genealogy.
+
 **Axiom (faithful):** Reality replicates at nested levels (corollary C4's stack). Each rung is a **replicator with an objective function — maximize its own propagation — that can diverge from, and capture, the vehicle/substrate below it.** The **egregore** (D5 standing wave: institution, movement, memeplex-with-enforcement) is the *top* rung; it acquires an autonomous objective function, and its characteristic failure mode is **Raktabīja** — the *opposition* itself is captured and inverted into another instance of the captor.
 **Corpus tier:** `[I]`. **Honest tier:** the *lower four rungs are `[A]` textbook*; only the **top rung (egregoro-type) + the cross-level uniformity claim** are `[I/C]`. That split is the whole story (see §3).
 

@@ -13,7 +13,7 @@ rosetta:
   canonical_phrase: "Constitutional Science"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3; science of corrigible systems.**
 
 # CONSTITUTIONAL SCIENCE
@@ -23,7 +23,7 @@ rosetta:
 **Status:** Canonical strategic note
 **Date:** 2026-04-15
 **Evidence Tier:** [I] Meta-strategic routing document
-**Depends on:** [00_EXECUTION_GUARDRAILS.md](00_EXECUTION_GUARDRAILS.md), [00_D5_AS_THE_RESEARCH_ENGINE.md](00_D5_AS_THE_RESEARCH_ENGINE.md), [../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md)
+**Depends on:** [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md), [00_D5_AS_THE_RESEARCH_ENGINE.md](00_D5_AS_THE_RESEARCH_ENGINE.md), [Kintsugi Protocol](../00_META/00_THE_KINTSUGI_PROTOCOL.md)
 
 ---
 
@@ -69,12 +69,12 @@ That is the constitutional science question.
 The answer is not one mechanism.
 It is a packet:
 
-- Three-Stage Process separation
-- `K2`
-- `η = 0`
+- evidence-tier separation
+- accountable authorization for consequential action
+- zero extraction
 - Grace Exit
-- Three Gates
-- anti-idolatry
+- archive-with-tombstone custody
+- anti-idolatry and self-correction
 
 Each prevents one class of failure.
 Together they create a system that can remain active without becoming total.
@@ -83,7 +83,7 @@ Together they create a system that can remain active without becoming total.
 
 ## Why This Matters Beyond the Organism
 
-If this packet works, it is not only relevant to one DAC.
+If this packet works, it is not only relevant to one institution.
 
 It could apply to:
 
@@ -110,12 +110,15 @@ Zero-Sum Resolution Equation
 
 ## Agent Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
 
-1. **Enforce the refusals.** K2 (human signs), K4 (grace exit), η = 0 (zero extraction) are non-negotiable. Any proposal that violates them is automatically rejected. (`η = 0` is the canonical refusal-set name for zero-extraction; in the separate DAC `K0–K9` namespace it is `K6`, never `K0` — see [`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md) §2.)
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
+
+1. **Enforce the refusals.** Zero extraction, accountable authorization, Grace Exit, archive-with-tombstone custody, and self-correction are non-negotiable. A consequential proposal must declare its principal, mandate, scope, consent, custody, contest path, actor, and consequence bearer.
 2. **Check extraction vectors.** `η = 0` means fees only on value created. Toll access, data extraction, and participation rent are unconstitutional; value-created compensation must remain receipt-bound and exit-safe.
 3. **Verify corrigibility.** Every system must have a self-correction path (A7). If a design cannot be updated or rolled back, it is not constitutional.
 4. **Preserve exit-safety.** Operators must be able to leave with everything. No lock-in, no sunk-cost traps, no institutional capture.
 5. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/00_CONSTITUTIONAL_SCIENCE.md`
 
-**Output:** Flag any proposal violating K0/K2/K4 as unconstitutional. Route constitutional designs to implementation.
+**Output:** Flag any proposal that launders evidence, extracts from a bearer, obscures authorization or consequence, blocks correction, or removes exit. Route defensible designs to implementation.

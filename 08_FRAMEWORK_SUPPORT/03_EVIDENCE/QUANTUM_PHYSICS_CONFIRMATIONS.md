@@ -21,7 +21,7 @@ rosetta:
 
 # Quantum Physics Confirmations: Source Ledger And Boundary
 
-**Evidence tier:** `[B]` for cited physics results; `[I]` for Emergentism translation; `[C]` for systemic awareness-collapse, literal retrocausal, K2-as-physics, or F5-as-physics claims
+**Evidence tier:** `[B]` for cited physics results; `[I]` for Emergentism translation; `[C]` for systemic awareness-collapse, literal retrocausality, authorization-as-physics, or F5-as-physics claims
 **Last updated:** 2026-04-29
 **Formal boundary:** [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
 
@@ -65,7 +65,7 @@ These claims remain `[C]` unless independently supported:
 - that Emergentism is proven;
 - that `S²` is literally the territory;
 - that human systemic awareness causes quantum collapse;
-- that K2 is a quantum-measurement mechanism;
+- that an authorization convention is a quantum-measurement mechanism;
 - that delayed choice proves naive retrocausality `[C]`;
 - that F5 is an established physical force;
 - that the Born rule is derived from `φ · ν = 1`.
@@ -76,9 +76,9 @@ These claims remain `[C]` unless independently supported:
 
 When this source set is cited:
 
-1. Use `[S]` only for the paper's experimental result.
-2. Use `[I]` for D4/D5, `Zero-Sum Resolution Equation`, `φ · ν = 1`, or possibility-context-receipt translation.
-3. Use `[C]` for systemic awareness-collapse, literal retrocausal, K2-as-physics, or F5-as-physics claims.
+1. Use `[B-external]` for the paper's attributed experimental result and state source custody.
+2. Use `[I]` for the D3-state/D4-record ordinal assignment. Treat any comparison with the `Zero-Sum Resolution Equation` or `φ · ν = 1` as separate and removable `[C]`.
+3. Use `[C]` for systemic awareness-collapse, literal retrocausality, authorization-as-physics, or F5-as-physics claims.
 4. Prefer apparatus/protocol language when saying "measurement."
 5. Treat Scientific American's "not locally real" headline as public shorthand, not source authority.
 

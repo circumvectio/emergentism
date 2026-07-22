@@ -4,7 +4,7 @@
 
 This project tests the mathematical claims in `10_SEED/02_THE_REAP.md`. It proves the consequences that follow from explicit definitions and premises, and it supplies countermodels where the Reap's prose is stronger than those premises permit.
 
-**Current checked surface:** 36 registered theorem/countermodel certificates,
+**Current checked surface:** 37 registered theorem/countermodel certificates,
 each compiled and individually covered by `#print axioms`.
 
 ## Reproduce
@@ -42,7 +42,7 @@ self-hashed.
 
 - `FormalReap/Arithmetic.lean` — reciprocal seam, inversion fixed points, AM–GM/equator peak, AND-class results, and the selected `P = ΦV` model.
 - `FormalReap/Physics.lean` — exact normalized-hyperbola and null-coordinate-product equivalence to Einstein's one-axis mass shell, with nonzero mass/`c`; rest-energy branch and ratio bound.
-- `FormalReap/Structure.lean` — conditional rung inheritance, reflexivity theorem and countermodel, typed frame/move fence, ordinary `0·∞` rejection, operator-mask/valence independence, and D6 role-return.
+- `FormalReap/Structure.lean` — conditional rung inheritance, reflexivity theorem and countermodel, typed frame/move fence, operator-free injective frame rendering, empty frame-arithmetic signature, ordinary `0·∞` rejection, operator-mask/valence independence, and D6 role-return.
 - `FormalReap/Ethics.lean` — scoped host-collapse certificate, persistence and non-extraction countermodels, is/ought independence, finite utility results, cone/horizon underdetermination, and the bearer-level dyadic anti-laundering gate.
 - `FormalReap/Audit.lean` — `#print axioms` audit for exported certificates.
 - `PROOF_LEDGER.md` — claim-by-claim adjudication against the Reap.

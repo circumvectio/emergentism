@@ -1,68 +1,56 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "01_EMERGENTISM/05_COSMOLOGY/02_EMERGENTISM_CORE/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "02 Emergentism Core — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 02_EMERGENTISM_CORE — Agent First-Touch
+# 02 Emergentism Core — Claude compatibility route
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**Lane:** `05_COSMOLOGY/02_EMERGENTISM_CORE`
 
-## Read order
+## Read first
 
-1. [`README.md`](README.md) — folder purpose, owns/must-not-own boundaries
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. [`00_EMERGENTISM_PHI_RESOLUTION.md`](00_EMERGENTISM_PHI_RESOLUTION.md) — resolves the physicalist/idealist fork by dimensional assignment
-5. [`01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md`](01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md) — Teleological Force as canonical name for F5
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Scope
+## Pure-worldview boundary
 
-- 02 Emergentism Core lane of the Emergentism framework.
-- Focused System Architecture sublane for the positive Emergentism model.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## What This Lane Owns
+## Epistemic contract
 
-- Core Emergentism structure that is more specific than the parent root but not part of the formal theorem catalogue.
-- Phi-resolution and D5/D6 boundary model language where it belongs to the affirmative model.
-- Teleological Force (`F5`) as the selective/generative bias toward viable closure — a doctrinal consequence of `φ · ν = 1`, not a fifth line or new primitive.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## What This Lane Must Not Own
+## Rosetta dispatch
 
-| Topic | Correct Route | Why |
-|---|---|---|
-| Axiomatic First Principles | `../../06_ONTOLOGY/` | Core State, not positive model |
-| Formal-system theorem files | `../03_FORMAL_SYSTEM/` | Proof catalogue, not architecture |
-| Public-symbol translation | `../../07_THEOLOGY/` | Narrative layer, not source |
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-## Evidence tier
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-- `[S]` for model-internal architecture.
-- `[I]` for positive worldview translation.
-- `[C]` for frontier F5 or scientific-unification claims.
-- Do not upgrade `[I]` to `[A]` or `[B]` without independent evidence or dated receipts.
+## Lane discipline
 
-## Routing
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

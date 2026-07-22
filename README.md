@@ -1,239 +1,109 @@
----
-rosetta:
-  primary_level: L7
-  primary_column: Philosophy
-  operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[I]"
-  canonical_phrase: "01_EMERGENTISM — Perennial Doctrine"
----
+# Emergentism
 
-# 01_EMERGENTISM — Perennial Doctrine
+Emergentism is a fallibilist worldview about constraint, degrees of freedom,
+emergence, agency, consequence, collective traces, and accountable action. It
+is offered as a **lens and compass**, not a completed theory of everything.
+Its formal grammar is internally testable; its stronger world-facing wagers
+remain externally uncalibrated until independent contact decides them.
 
-> **The Goal (Ω stated):** [`00_THE_GOAL.md`](01_TELEOLOGY/00_THE_GOAL.md) — the project's telos, owner-declared 2026-06-12 and tier-fenced: a living worldview for Dasein (ontology of the finite reader, teleology of dharma-in-the-game, recursive method), played as the Soul Loop cycling the five Knows until durable `W_i(T)` is maximized only on the boundary-preserving frontier of `P_node = Φ × V` under `η = 0`, with symbiont and holobiont rising together. The five refusals clear the space; the Goal is what the space is for.
+## Read in one sitting
 
-> **Current Vision/Mission (2026-06-13):** [`VMOSK_A.md`](VMOSK_A.md) now states the operational V/M explicitly: make Emergentism a living Weltanschauung for Dasein, and build the canon, method, public site, AIA medium, papers, and Soul Loop practice that let finite players continuously and recursively disambiguate reality into action without extraction.
+1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
+2. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.
+3. [The Human Condition](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) — self, consciousness, agency, suffering, meaning and death.
+4. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice.
+5. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
+6. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and eleven world-contact sockets.
+7. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model and type boundaries.
+8. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) and [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the active axiom and wager ledgers.
+9. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) and [Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — chosen constraints and disclosures earned by audit.
+10. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — corrections, failures and receipts.
 
-> **Canonical enumeration:** For the crisp authoritative list of the constitutional invariants, the K*/A* namespace disambiguation, and the Ω ratification status, see the canonical anchor `01_EMERGENTISM/05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md` (or equivalent relative path). Current K2 ruling (2026-05-30): **5 + 1** — five refusals plus Ω as the directional +1. Ω is not a sixth refusal.
-
-> **Read order (post-signature, 2026-07-20 — receipt 139 SIGNED / authority 145):** the signed kernel stack is now the front-door chain — [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) (**the Door**) → [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md) (**the Map**) → [`10_SEED/01_THE_SEED_LADDER/`](10_SEED/01_THE_SEED_LADDER/) (**the Compression**) → the seven -ologies (`01_TELEOLOGY/` … `07_THEOLOGY/`) → the [`11_UPLINK/`](11_UPLINK/) record → the [`12_PUBLIC_SITE/`](12_PUBLIC_SITE/) funnel. The former root front-door routings (TREE_OUTLINE, LENS, READER_GUIDE, SEVENFOLD) are K3-tombstoned stubs beneath this chain; `00_THE_GOAL.md` resolves at its canonical home `01_TELEOLOGY/00_THE_GOAL.md`.
-
-> **Current state — 2026-07-19 (K2-signed wave, receipt K2_SESSION_2026_07_19):** new root-level strategy canon now sits beside the Foundation readers —
-> - [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the funnel fable → /plainly/ → /record/ → /axioms/ → book → /practice/ → /build/; Open Canon Foundation, not a religion; immune system (№017 rule, red-team budget, forkable canon).
-> - [`00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) — K2-signed arena map: all worldviews are wagers; posture is the competitive axis.
-> - [`00_THE_ROSETTA_PROTOCOL_v0.1.md`](00_THE_ROSETTA_PROTOCOL_v0.1.md) — K2-signed 2026-07-19: be the stone, not the decree; the three-scripts rule (story / plain terms / receipt); the fourth script is machine.
-> - [`00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md`](00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md) — K2-ratified: the REFU play-money public forecast ledger is the first visible η = 0 receipt.
-> - [`00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md`](00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md) — staged charter canon; filing remains counsel-gated.
-> - [`00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md`](00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md) — the counsel-question companion to the charter draft.
-> - Site: the `/fable/` and `/practice/` funnel stages now live under [`12_PUBLIC_SITE/`](12_PUBLIC_SITE/).
-
-**Status:** Active  
-**Date:** 2026-06-16 (root tree synced to 2026-06-15 three-pillar reorganization; canonical surface preserved per K3)
-**Scope:** Perennial doctrine root, sevenfold Foundation, Uplink packets, tools, seed
-
-*Last updated 2026-06-16: state-headers synced; "Does NOT Contain" section's path references updated to current canonical pillars (post-2026-06-15 three-pillar reorg + retired-alias cleanup); DS_Store sweep covered by the 2026-06-16 7-Varṇa hidden-file cleanup cycle; AGENTZ dispatch surface live at `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`. 2026-07-19: current-state note and Quick Links extended for the 2026-07-18/19 K2-signed strategy canon (Spread, Synthetic Gap, Rosetta Protocol, First Receipt, OCF charter pair) and the `/fable/` + `/practice/` site stages. 2026-07-20: read order re-pointed to the signed kernel stack (Door → Map → Seed Ladder → -ologies → Uplink record → public funnel) per receipt 139 SIGNED / authority 145; GOAL resolves at `01_TELEOLOGY/00_THE_GOAL.md`; old root front doors K3-tombstoned.*
-
-## Quick Links
-- [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) — **the Door** (signed 2026-07-20, receipt 139 SIGNED): the compact worldview statement; start here
-- [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md) — **the Map**: kernel architecture and distillation order beneath the Door
-- [`10_SEED/01_THE_SEED_LADDER/`](10_SEED/01_THE_SEED_LADDER/) — **the Compression**: the seed ladder D0–D6
-- [`AGENT_README.md`](AGENT_README.md) — agent route card for this org
-- [`00_CANONICAL_TREE_OUTLINE.md`](00_CANONICAL_TREE_OUTLINE.md) — K3 tombstone stub (2026-07-20); the disk-verified whole-tree map, superseded as front door by the Door/Map above
-- [`00_EMERGENTISM_AS_A_LENS.md`](00_EMERGENTISM_AS_A_LENS.md) — K3 tombstone stub (2026-07-20); compressed lens entry, superseded by the Door
-- [`00_FOUNDATION_READER_GUIDE.md`](00_FOUNDATION_READER_GUIDE.md) — K3 tombstone stub (2026-07-20); long-form reading spine, superseded by the Map + Seed Ladder
-- [`00_THE_SPREAD_v0.1.md`](00_THE_SPREAD_v0.1.md) — K2-signed spread strategy: users, not believers; the public funnel (2026-07-19)
-- [`00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md`](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) — K2-signed arena: all worldviews are wagers; posture is the axis (2026-07-19)
-- [`00_THE_ROSETTA_PROTOCOL_v0.1.md`](00_THE_ROSETTA_PROTOCOL_v0.1.md) — three-scripts rule (story / plain terms / receipt); fourth script is machine (K2-signed 2026-07-19)
-- [`00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md`](00_THE_FIRST_RECEIPT_RECOMMENDATION_v0.1.md) — first visible η = 0 receipt: REFU play-money forecast ledger (K2-ratified)
-- [`00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md`](00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md) — staged Open Canon Foundation charter; counsel-gated
-- [`00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md`](00_OPEN_CANON_FOUNDATION_COUNSEL_QUESTIONS_v0.1.md) — counsel questions for the charter draft
-- [`11_UPLINK/00_CORE/00_INDEX.md`](11_UPLINK/00_CORE/00_INDEX.md) — uplink route map
-- [`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README.md) — Rosetta Stone horizontal translations
-
-`01_EMERGENTISM/` is the Above: the perennial doctrine root and slow-cadence Foundation.
-
-> **Classical lens:** the seven L-levels here align with the classical cognitive partition. L2 Data Science = *Aisthesis* / Beauty (perceiving what is). L3 Auditing = *Dianoia* / Truth (pricing what could be). L4 Value Alignment = *Phronesis* / Goodness (recommending what should). L5 System Architecture = *Sophia* (memory / structure). L6 Core State = *Logos* (the gardener that tends coherence). L7 Institutional Narrative = *Nous* and the axiomatic silence. The cognitive-cycle reading of how these doctrinal layers express in the Skyzai organs is at [`../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md`](../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/05_ORGAN_CLASSICAL_LENS.md). The five constitutional refusals (the constitution is the **5+1** — five refusals plus Ω, the directional +1) in classical vocabulary at [`../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md`](../02_SKYZAI/01_NOOSPHERE/02_ORGANS/_DOCTRINE/06_CONSTITUTIONAL_INVARIANTS_CLASSICAL.md).
->
-> The organism's six organs map to the classical cognitive cycle: Beauty (TheCircle / *Aisthesis*) → Truth (RealityFutures / *Dianoia*) → Goodness (Agentz / *Phronesis*) → Apophasis (Evolutionary.Network / *Ananke*) → Sovereignty (K2 / *Nous*) → The Made (Skyzai / *Techne*). Lens, not law.
-
-The former `01_FRAMEWORK/01_FOUNDATIONS/` content now lives here directly. The first seven folders are the Rosetta-aligned Foundation, so the doctrine is visible at the root instead of hidden under an intermediate framework shell.
-
-## Worldview / Lens Spine
-
-When this root is used as a compact Weltanschauung, read the actual source folders in this order (front-door chain post-2026-07-20: the signed Door → Map → Seed Ladder above; this spine is the source-folder depth beneath it):
-
-1. `00_THE_WELTANSCHAUUNG.md` (root — the signed Door, 2026-07-20; retained L5 source: `05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`) — the compact statement that Emergentism is a lens, worldview, and toolchain.
-2. `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md` and `D_SERIES_DOMAINS/D32_MATHEMATICS.md` — the seven Rosetta rows as mathematical action signatures on `P_node = Φ × V`.
-3. `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md` — Ground, Being, Teleological Force, Dasein, and beings kept distinct.
-4. `01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md` and `01_TELEOLOGY/00_FROM_LAGRANGIAN_TO_DAC.md` — the directional / world-building reading.
-5. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` and `03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md` — claim discipline, downgrade paths, and public-safe wording.
-6. `04_AXIOLOGY/README.md` and `04_AXIOLOGY/01_THEURGY/README.md` — value becomes signed action without turning action into occult causality.
-7. `07_THEOLOGY/README.md` and `10_SEED/README.md` — public symbol and seed compression teach; they do not override source truth.
-
-The shortest bridge is: **Weltanschauung -> Rosetta calculus -> Ground / Being / F5 / Dasein -> Soul Loop -> syntropic dyad -> public symbol -> release.**
-
-## Dasein Game Spine
-
-The reader is not outside the framework looking in. In the core-state register,
-the reader is **Dasein**: the finite witness-agent in whom Being becomes
-explicit enough to ask what is, what is good, and what to do next.
-
-The practical answer is the Rosetta Soul Loop. It applies the sevenfold root as
-a recursive game:
+## The compressed compass
 
 ```text
-Know what is:      ontology -> Ground, Being, Teleological Force, Dasein, beings
-Know how to know:  epistemology -> direct disclosure, inference, evidence tiers
-Know how to move:  methodology -> derive, test, build, correct, recurse
-Know what matters: axiology -> Beauty, Truth, Justice, non-extraction
-Know how to act:   teleology -> maximize durable W_i(T) only where P_node,H is preserved or raised under η = 0
+territory → fallible model → possible futures (D5)
+                              │ selection + embodied means
+                              ▼
+                         actual action (D4)
+                              │ commitment receipt
+                              ▼
+                world transition + outcome receipt
+                              │
+                              └── feedback → next model and selector
 ```
 
-Play:
+Anticipated futures influence present action because present agents model them.
+No physical event in the future is required to send information backward.
+Physical light cones remain bounded by spacetime and `c`; option cones name
+admissible histories an agent can model, rank, coordinate, and reach.
 
-- `Φ` without `V` is sterile seeing.
-- `V` without `Φ` is blind force.
-- unbounded `V` that collapses `Φ` lowers `P_node`.
-- `Φ` and `V` balanced at L4 is objective dharma / flow-state action.
-- `i` raises `H` and `H` raises `i` is the strict syntropic dyad.
-- one side rises by degrading the other is extraction / evil.
+The selected D-scaffold uses exactly five named transition interfaces
+`μ₀…μ₄` through D5; each emergence reading is tiered separately. Non-μ `b₆:D5↝D6` marks apophatic
+recognition/release; non-μ `r₆:D6↝D0` is an interpretive return. The
+scaffold is `[I/C]`, not a necessary decomposition of nature.
 
-Action-register gloss: `V` here is D4 means-to-act — body, tools, energy,
-access, runway, hands, shovel, industrial digger. `Φ` is D5
-worldline-foresight — the ability to envision reachable futures, rank them, and
-operate the means. A child beside a jet and a pilot without usable bodily/tool
-access are opposite zero-factor failures; durable `P_node` needs both.
+## Evidence contract
 
-D5 Landauer Barrier: ideal worldline-foresight is Maxwell-demon-like selection
-across reachable branches, but it is an asymptote, not a thermodynamic free
-lunch. Perfect branch knowledge would require physical memory, computation,
-measurement, and control; those require matter and energy, which remain inside
-entropy accounting. The selector cannot stand outside the system it sorts.
-Local disorder can be lowered only by paying or exporting entropy elsewhere,
-and reflexive action changes the branches being predicted.
-
-Canonical sources:
-
-- [`05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md`](05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) — compact worldview and game rule.
-- [`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md`](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md) — recursive method that edits the corpus and the player.
-- [`06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`](06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) — how the reader appears as Dasein.
-- [`04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — syntropic morality/ethics and Power-Max holobiont form.
-
-## Sevenfold Foundation — The L1→L7 Spine
-
-> **Canonical spine (corrected 2026-05-31).** The seven -ology folders **are** the Rosetta L1→L7 ladder, in folder order:
-> **L1** Teleology (Kali 🎲) → **L2** Epistemology (Kālī 💀) → **L3** Methodology (Kṛṣṇa ◇) → **L4** Axiology (Arjuna ⚔ — the equator / K2) → **L5** Cosmology (Brahmā ○) → **L6** Ontology (Śiva •) → **L7** Theology (Viṣṇu ⊙). L2–L4 are the operational engine (know → act → value); L1 is the firewall; L5–L7 are Executive boundary functions, read as non-deployable frames before L4/K2 execution.
-> The diagram below is a **superseded draft** — it placed Teleology at L7 and Theurgy at Viṣṇu/L7, which the canonical Rosetta retired; kept here tombstoned, not as live canon.
-
-> **Public-symbol guardrail (primetime-audit, 2026-06-10):** The seven -ologies and the L1–L7 / Varṇa names denote **institutional and cognitive *functions*, not human-worth tiers or social castes.** No person "is an L1" or "an L7"; the Varṇa vocabulary is a dispatch/translation grammar, **not** a hierarchy of human value and **not** a social prescription. Read as roles assigned to work, never as rank assigned to people.
-
-```
-   ⚠  K3 SUPERSEDED DRAFT — NOT LIVE CANON.  See the corrected L1→L7 spine above.
-┌─────────────────┬────────────────────┬───────────────────────────────────┐
-│ FACET           │ OPERATOR · LEVEL   │ REGIME                            │
-├─────────────────┼────────────────────┼───────────────────────────────────┤
-│ ONTOLOGY        │ Śiva •  L6         │ THE DIMENSIONS — what IS          │
-│                 │ / Sādhu             │ (prior to knowing/acting/valuing)  │
-├─────────────────┼────────────────────┼───────────────────────────────────┤
-│ EPISTEMOLOGY    │ Kālī 💀 L2        │ THE TRUTH-CUT — how we know       │
-│ METHODOLOGY     │ Kṛṣṇa ◇ L3        │ THE CHARIOTEER — how we act       │
-│ AXIOLOGY        │ Arjuna ⚔ L4       │ THE EQUATOR — what we value       │
-│                 │   ↑ TRIMURTI ↑     │ (operational engine: know→act→value)│
-├─────────────────┼────────────────────┼───────────────────────────────────┤
-│ TELEOLOGY       │ Brahman    L7      │ THE ULTIMATE ATTRACTOR            │
-│ THEURGY         │ Ṛṣi/Viṣṇu ⊙ L7   │ THE BRIDGE — Rishi coordinates    │
-│                 │  ↑ RṚṢI ↑         │ potential toward Brahman           │
-└─────────────────┴────────────────────┴───────────────────────────────────┘
-```
-
-**Why the map is closed:** L1 Teleology names the end; L2-L4 know, audit, value,
-and commit at L4/K2; L5-L7 model, cut, and narrate as Executive boundary frames.
-L7 returns to L1 without becoming an action surface.
-
-**Canonical anchor:** [`00_SEVENFOLD_FOUNDATION_ROOT.md`](00_SEVENFOLD_FOUNDATION_ROOT.md) · source: [`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md) — the prior `06_ONTOLOGY/00_THE_SYNCRETIC_MAP.md` is a K3 tombstone (superseded).
-
-Rules:
-
-- Strategic Implementation is not a peer root. It lives at `04_AXIOLOGY/01_THEURGY/`.
-- Emergentism as a positive model is L5 Brāhmaṇa system architecture, not L6 Sādhu closure.
-- L6 Sādhu closure is axiomatic only.
-- L7 Ṛṣi institutional narrative routes through the packet-139 guard before public-symbol work.
-
-## Support Lanes
-
-| Folder | Purpose |
+| Tier | Meaning |
 |---|---|
-| `00_META/` | cross-cutting Foundation maps, D/L bridge, corpus-level discipline |
-| `00_SEVENFOLD_FOUNDATION_ROOT.md` | canonical sevenfold Foundation anchor |
-| `08_FRAMEWORK_SUPPORT/` | former framework support lanes that are not Foundation roots |
-| `11_UPLINK/` | numbered packet archive and compressed agent surfaces |
-| `09_TOOLS/` | scripts, compilers, annotation tools, audit utilities |
-| `10_SEED/` | seed closure material |
-| `12_PUBLIC_SITE/` | tracked public-site source; the `book-pwa/` app moved to `02_SKYZAI/03_AIA/app/` (migration executed 2026-06-12 per K2 signoff 2026-06-11; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`), source tree preserved frozen pending deploy-readiness |
-| `91_COMPATIBILITY/` | old stubs and moved compatibility surfaces |
-| `90_ARCHIVE/` | local doctrine-supplement archive |
+| `[A]` | analytic or established within a named formal system |
+| `[B]` | observed, measured, attributed, built, tested, or receipted—with custody and scope |
+| `[S]` | structural result inside declared assumptions |
+| `[I]` | interpretation or translation |
+| `[D]` | draft or staged artifact |
+| `[C]` | conjecture or unpaid bridge |
 
-### The post-sevenfold tiers — deliberate, not drift
+Never promote a claim silently. Adoption, publication, beauty, coherence, an AI
+answer, or institutional survival supplies no world evidence by itself. Every
+strong claim should expose its alternative, prediction, and kill criterion.
 
-After the sevenfold core (01–07), the support tiers are numbered by function, not by a single sequence:
+## Pure-worldview boundary
 
-| Tier | Folder | Mode | What it holds |
-| --- | --- | --- | --- |
-| 08 | `08_FRAMEWORK_SUPPORT/` | slow-moving / library | Evidence, citations, supporting scholarship for the seven -ologies. The framework's static support material. |
-| 09 | `09_TOOLS/` | operational | Scripts, compilers, simulations, packages — the executable layer. |
-| 10 | `10_SEED/` | closure | The transcendent seed material. |
-| 11 | `11_UPLINK/` | fast-moving / stream | Operational packets uplinked from the running organism back into doctrine. The framework's living feedback channel. |
+Emergentism stands alone. A product, venture, company, runtime, fee model,
+governance system, or legal entity may apply it; none is a premise, authority,
+or independent confirmation of the worldview. Ordinary AI and repository work
+follows the user's scoped request, permissions, provenance, reversibility, and
+tests. Consequential action uses a complete, scoped, contestable
+`AuthorizationEnvelope` and distinct commitment/outcome receipts.
 
-`08_FRAMEWORK_SUPPORT` and `11_UPLINK` form a conceptual pair: one passive (reference), one active (uplink). Both are post-sevenfold operational apparatus. They are numbered by their folder position, not forced into a doublet.
+## Repository map
 
-`12_PUBLIC_SITE/` is the renamed public-site surface (formerly `10_PUBLIC_SITE/`), updated to resolve the prefix namespace conflict with `10_SEED/`. The K2-signed AIA migration executed 2026-06-12 (signoff 2026-06-11): the `book-pwa/` app now lives at `02_SKYZAI/03_AIA/app/`; the source tree here is preserved frozen per K3 pending deploy-readiness (tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`).
+| Path | Role |
+|---|---|
+| `00_META/` | canon registry, Compass, Refusals, corpus maps |
+| `01_TELEOLOGY/` | goals, option-cone and future-oriented hypotheses |
+| `02_EPISTEMOLOGY/` | evidence tiers, disclosure, limits of instruments |
+| `03_METHODOLOGY/` | derivations, preregistrations, audits, papers |
+| `04_AXIOLOGY/` | Justice, morals/ethics, Syntropic Dyadism |
+| `05_COSMOLOGY/` | Burri Rules, Soul Loop, D-registers, formal system |
+| `06_ONTOLOGY/` | degrees of freedom, axioms, wagers, creed, revelations |
+| `07_THEOLOGY/` | bounded symbolic and perennial translations |
+| `08_FRAMEWORK_SUPPORT/` | Rosetta, operators, comparative evidence |
+| `09_TOOLS/` | validators, renderers, simulations, register tooling |
+| `10_SEED/` | minimal D0–D6 pedagogical seed |
+| `11_UPLINK/` | active record, audits, reconciliation, compressed routes |
+| `12_PUBLIC_SITE/` | public projection; never the canon owner |
+| `90_ARCHIVE/` | cold provenance and superseded bodies |
+| `91_COMPATIBILITY/` | forwarding paths only |
 
-**Resolution:** [`REPO_REORGANIZATION_PLAN_2026_05_09.md`](../02_SKYZAI/01_NOOSPHERE/09_REFERENCE/REPO_REORGANIZATION_PLAN_2026_05_09.md) Tier 2 is **resolved as documentation-only** because the layout is doctrinal and stable. No filesystem rename.
+## Current standing
 
-## Downstream Application Doctrines
+- The operational Burri calculus and its semantic tests are internally
+  coherent at their declared types.
+- The reciprocal chart is mathematics; the finite-node product is a selected
+  model; the ontology and cosmology remain tiered commitments.
+- The historical `S²`/hyperbola force-derivation routes are Kintsugi
+  tombstones, not live physics. The only current correspondence is the modular
+  [W7-ORIGIN wager](01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md):
+  it derives no interaction and replaces no native force theory.
+- The quantum comparison is optional and removable.
+- Egregoreotype is a candidate test for persistent collective traces, not a
+  presumption of consciousness.
+- The external program—independent discriminators, replications, and world
+  receipts—remains open.
+- The Grand Puzzle is assembled as a research packet: every declared open
+  socket has a rival, discriminator, kill, and survivor. Its evidence is not
+  thereby supplied.
 
-The following doctrines are downstream applications of the Foundation to the Autonomous Capital Stack. They are not the ontology itself and must be read through the evidence-tier and owner-lane controls above:
-
-> **`[C]` tier + relocation-staged (primetime-audit P0, 2026-06-10):** the items below — including "creatively destroys the Big Four" and "the Bulge Bracket investment banks" — are **conjectural competitive strategy `[C]`, not framework results and not market outcomes the framework asserts.** Their canonical home is the `03_VENTURES` strategy lane; they remain on this front door only until a K2-signed relocation moves them. Read them as *one venture's thesis*, not doctrine. The framework's front door claims no market conquest.
-
-1. **The Visa/Chase Topology:** OFN is strictly the neutral, non-extractive standard layer (Visa). TokenCen is the localized asset originator (Chase). OFN holds NO ALGORITHMIC TRO DEPENDENCY, NO CUSTODY. Legacy locking is replaced by "Algorithmic TROs".
-2. **The Schumpeterian Pincer Movement:** We creatively destroy the legacy intermediaries. Aureus + OFN creatively destroys the Big Four audit firms (replacing the manual audit with zkML Kinetic Oracles). SkyzAI + OFN creatively destroys the Bulge Bracket investment banks (replacing structuring and syndication with AIA and AMMs).
-3. **Aureus Pricing:** Aureus operates on a Hybrid RaaS + Yield DePIN model, avoiding physical hardware balance-sheet risk.
-
-## Reader Guides
-
-- `AGENT_README.md` is the one-page route card for AI agents.
-- `00_FOUNDATION_READER_GUIDE.md` preserves the detailed old Foundation README after the move (K3-tombstoned 2026-07-20; stub resolves — the signed Door/Map now carry the front-door role).
-- `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` defines the standard for sub-subfolder front doors, source ownership, archives, compatibility stubs, and safe moves.
-- `90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/2026-05-08_GOOGLE_DOCS_APPLICATION_BACKLOG.md` (archived 2026-04-25 reorg) routes the 2026-05-08 Google Docs corpus into doctrine/application actions without promoting it to canon. Per L3 audit Wave SK-4 — 04_APPLICATIONS lane was archived, not relocated; live system architecture citations were inadvertently broken.
-- `11_UPLINK/00_CORE/00_INDEX.md` remains the Uplink route index.
-- `09_TOOLS/README.md` remains the tool front door.
-
-## Boundary
-
-This root owns doctrine. It does not own the living runtime body. Runtime, entities, products, intake, and PWAs live under `../02_SKYZAI/01_NOOSPHERE/`. The only exception is the preserved `12_PUBLIC_SITE/book-pwa/` source tree, kept frozen per K3 after the executed AIA migration (2026-06-12; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`) pending deploy-readiness verification.
-
-## Does NOT Contain
-
-Per the [Tree Constitution](08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_TREE_CONSTITUTION.md):
-
-- **Runtime state, product code, organs, agents, intake, PWAs** → `../02_SKYZAI/01_NOOSPHERE/` except the preserved `12_PUBLIC_SITE/book-pwa/` source tree (AIA migration executed 2026-06-12; frozen per K3 pending deploy-readiness)
-- **Public DAC factory / product scaffold** → `../02_SKYZAI/04_PUBLIC_SCAFFOLD/`
-- **Legal entities, foundation, brand membranes** → `../03_VENTURES/`
-- **Portfolio ventures (Tokencen, QNTM, etc.)** → `../03_VENTURES/OPEN_FINANCE_NETWORK/`, `../03_VENTURES/QNTM/`, etc. (per owning lane; the former `_PORTFOLIO/` namespace was retired 2026-06-15)
-- **Canonical code** → `../04_CODE/<owning-lane>/`
-- **Physical-mesh substrate, energy/capacity market** → `../02_SKYZAI/06_SPECTRE/`
-- **Cold history, intake archive, tombstones, tool noise** → `../90_ARCHIVE/` (the former `90_ARCHIVE_AND_COMPATIBILITY/` namespace was retired 2026-06-07; see [`../RETIRED.md`](../RETIRED.md) for the full retired-surfaces index)
-
-Tools live here only because they serve doctrine maintenance. Runtime services live in `02_SKYZAI/01_NOOSPHERE/00_BACKBONE/`.
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/README.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

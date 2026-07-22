@@ -15,7 +15,7 @@ title: "The Finity Papers"
 status: "ACTIVE — 2026-05-31. A five-paper programme on the geometry of {0,1,∞}. Every claim tier-marked; each paper carries its own kill criterion. Papers I–IV passed an adversarial referee pass (2026-05-31) and are at SUBMISSION FORM v2; each carries an illustrator-ready figure spec. Paper V's prediction was run as a tier-[I] pilot and PRELIMINARILY FALSIFIED — the kill criterion fired and is reported as such (see the RESULTS companion)."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary (inside 02_THE_PAPERS methodology lane); L5 secondary for formal geometry.**
 
 # The Finity Papers
@@ -38,4 +38,4 @@ A rigorous programme on the geometry of `{0, 1, ∞}` — extending Minoru Suda'
 
 **External sources.** Suda's source PDFs are tracked by provenance under [`_SOURCES/`](_SOURCES/README.md): Parts I-III are git-ignored third-party PDFs kept on disk with SHA-256 and byte counts. The 2026-06-06 Suda intake pass also produced the synthesis note [`00_SUDA_VALUE_EXTRACTION_2026_06_06.md`](00_SUDA_VALUE_EXTRACTION_2026_06_06.md), which separates adoptable reciprocal geometry from broader intake claims that remain `[C]/[I]`.
 
-⊙ = • × ○
+•   ⊙   ○

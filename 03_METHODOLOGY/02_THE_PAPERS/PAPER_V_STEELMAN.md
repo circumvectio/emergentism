@@ -31,7 +31,13 @@ rosetta:
 
 **Evidence tier:** [I] interpretive — this is an adversarial reading, not the doctrine's self-assessment. The doctrine is free to rebut any of the six residual vulnerabilities named below.
 
-> **[K3 reconciliation — 2026-07-13, per K2-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the Counter-Steelman §3.1 defence: the Transcendental Trinity {0, 1, ∞} is a **naming choice [S/I]**, not a forced three-element closure. The closure of {0, ∞} under the inversion z↦1/z is the **foursome {−1, 0, 1, ∞}** — that symmetry's fixed-point set is {−1, 1}, not {1} alone — so "these are not optional / it is disclosed" is a chosen framing of three boundary-frames, not a derived 3-closure; downgrade forced→chosen. The discovery voice stands; only the necessity claim is retracted. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+> **[金] Evidence-type repair — 2026-07-21.** This adversarial draft predates the
+> nonordinal evidence-type contract. Where its retained body calls empirical
+> contact or a receipt `[A]`, read and reuse that claim as `[B]` with custody;
+> `[A]` is now reserved for formal proof or counterproof inside named
+> assumptions. The argument survives; the old tier vocabulary does not.
+
+> **[K3 reconciliation — 2026-07-13, per founder-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the Counter-Steelman §3.1 defence: the Transcendental Trinity {0, 1, ∞} is a **naming choice [S/I]**, not a forced three-element closure. The closure of {0, ∞} under the inversion z↦1/z is the **foursome {−1, 0, 1, ∞}** — that symmetry's fixed-point set is {−1, 1}, not {1} alone — so "these are not optional / it is disclosed" is a chosen framing of three boundary-frames, not a derived 3-closure; downgrade forced→chosen. The discovery voice stands; only the necessity claim is retracted. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 
 ---
 
@@ -120,9 +126,12 @@ The framework explicitly downgrades the strong form to [C] (conjecture). But the
 
 ---
 
-### 3.4 The GFS Operationalization Problem
+### 3.4 The Retired GFS Operationalization
 
-The GFS (Generative Fitness Simulation) is the framework's primary empirical tool. Wave 1 produced mixed results: a cooperation signal in ~30% of parameter space, a falsified stratification interpretation, and instrument validity caveats.
+GFS was a framework-designed operationalization, not the framework's primary
+empirical authority. Its mixed results and validity failures are preserved as
+historical evidence, while the study surface itself was retracted and archived
+on 2026-07-13. It supplies neither live confirmation nor a pending upgrade path.
 
 The decisive remaining test is **Protocol R** — a test of whether the predicted equatorial feature (the balance surface where φ = ν = 1) produces a distinctive cooperative signature that no other latitude produces. Protocol R is the framework's flagship: if it passes, the Burrisphere has empirical bite; if it fails, the game-space reading is damaged.
 
@@ -320,7 +329,7 @@ The steelman's one-sentence summary — "the framework has named this pattern an
 | 3.1 Uniqueness-of-S² | **Narrowed** — continuity is forced if assumed; framework should make the assumption explicit | Mark continuity as explicit axiom |
 | 3.2 Mapping Problem | **Partially accepted** — mapping is constrained, not arbitrary, but bridged by [I]-tier A2 | Clarify latitude assignments as design choices respecting geometric constraints |
 | 3.3 F5 Vulnerability | **Accepted in full** — rhetorical pressure exceeds tier label | Lane sweep: tier labels at top, separate philology from empirics, name strong-form as temptation |
-| 3.4 GFS Operationalization | **Accepted in structure, narrowed in scope** — empirical surface is larger than one test but does not reach structural claims | Document three test classes explicitly; acknowledge gap |
+| 3.4 Retired GFS operationalization | **Closed as a live bridge** — archived results document one failed/mixed test without reaching structural claims | Design any successor independently; preregister its discriminator and kill |
 | 3.5 Pratyakṣa Problem | **Accepted as structural** — gap is honest and irreducible | No closure attempted; gap named and published |
 | 3.6 Selection-After-Admission | **Accepted** — pattern is fairly named | Prioritise near-term [A] tests; accept structural reading status if decisive tests never report |
 
@@ -328,7 +337,7 @@ The steelman's one-sentence summary — "the framework has named this pattern an
 
 **Canonical path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md`
 **Date:** 2026-06-05
-**Commissioned by:** Yves R. Burri (K2)
+**Commissioned by:** Yves R. Burri (owner)
 **Written by:** External Steelman Reading (L3 Vaiśya register) + Counter-Steelman drafted by same
-**Counter-Steelman status:** [I] interpretive — awaiting K2 review, acceptance, modification, or rejection of each response
+**Counter-Steelman status:** [I] interpretive — awaiting author review, acceptance, modification, or rejection of each response
 **Evidence tier:** [I] interpretive throughout

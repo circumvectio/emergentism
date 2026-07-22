@@ -26,7 +26,8 @@ may report Lean's standard logical foundations (`propext`, `Classical.choice`,
 #print axioms FormalReap.Structure.inheritance_requires_preservation
 #print axioms FormalReap.Structure.forecast_changes_outcome
 #print axioms FormalReap.Structure.not_every_forecast_is_reflexive
-#print axioms FormalReap.Structure.typed_boundary_composition
+#print axioms FormalReap.Structure.frame_render_is_injective
+#print axioms FormalReap.Structure.frame_arithmetic_signature_is_empty
 #print axioms FormalReap.Structure.operator_mask_does_not_determine_valence
 #print axioms FormalReap.Structure.extended_zero_times_infinity_is_not_one
 #print axioms FormalReap.Structure.return_matches_floor_in_role

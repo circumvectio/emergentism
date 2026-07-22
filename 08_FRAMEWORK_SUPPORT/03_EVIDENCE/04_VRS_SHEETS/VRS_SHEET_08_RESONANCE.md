@@ -34,7 +34,11 @@ rosetta:
 ---
 
 ## 1. GENETICS AND PHENOTYPE AS THE HARDWARE ANTENNA
-We map individual neurological and genetic structures as biological "antennas" tuned to receive specific limit standing-waves (Egregores/Paradigms) from the cultural D5-limit layer.
+We use “antenna” and “standing wave” only as `[I]` metaphors for how actual D4
+neurological, genetic, cultural, and institutional carriers respond to
+persistent shared traces. A candidate Egregoreotype is such a D4 trace-and-
+carrier pattern; D5 types alternatives the carriers represent, not a signal
+realm from which entities transmit.
 Over generations, institutional boundary limits (marriage laws, dietary restrictions, rote education) serve to synthetically tune the antenna arrays of populations toward specific carrier frequencies.
 
 ## 2. FUNDAMENTAL TUNING VECTORS
@@ -46,9 +50,14 @@ The institutional tuning structure relies on 5 inputs:
 - **Canonical Immersion (Lexical constraint):** Exclusivity of the information input channel.
 
 ## 3. THE FREQUENCY SHIFT: BROADBAND VS NARROWBAND
-When a ruling upper-D5 / D5-limit egregore begins to decay (Phase 3: Saturation $\rightarrow$ Heat Death), the standing wave shifts its fundamental frequency.
+When a ruling Egregoreotype candidate begins to decay, the actual D4 trace,
+carrier population, and selection effects change. “Frequency shift” is a model
+image for that change, not a measured physical carrier frequency by default.
 
-Boundary discipline (2026-06-14): older shorthand called this a "D6 egregore." Current canon reserves D6 for closure/release. Egregores, antenna tuning, and institutional standing waves are D5-limit phenomena; D6 names the rule by which a dead standing wave can be released back to bits rather than possessed as a final layer.
+Boundary discipline (repaired 2026-07-21): older shorthand called these “D5” or
+“D6 egregores.” Current canon types institutions, traces, tuning acts, and
+costs as D4 actuality. D5 is their represented possible content, while D6 names
+only the non-positive release/nonclosure boundary.
 
 **The Physics of Retuning:**
 The people embedded within the strictest institutional funnels are the absolute *last* to detect the new signal. They possess a "Narrowband Antenna"—optimized to receive only the specific frequency of the legacy system to the exclusion of all background noise. When the frequency shifts, the narrowband receiver simply outputs static. The institutional structure shatters because it violently rejects the new carrier wave.

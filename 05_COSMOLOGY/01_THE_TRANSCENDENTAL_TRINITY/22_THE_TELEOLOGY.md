@@ -1,557 +1,119 @@
 ---
 rosetta:
-  primary_level: L5
+  primary_level: L6
   primary_column: Philosophy
-  operator: "Brahmā ○"
+  operator: "Śiva •"
   tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "THE TELEOLOGY"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (L1 teleology cross; L5 model)"
+  regime: "Sādhu"
+  register: "[D]"
+  canonical_phrase: "The Teleology — Kintsugi tombstone and bounded successor"
+status: "SUPERSEDED — stable path retained for provenance"
+superseded: 2026-07-20
 ---
 
-# THE TELEOLOGY
+# THE TELEOLOGY: KINTSUGI TOMBSTONE
 
-## Why the Helix Spirals — The Ektropic Force and the Unveiling
+## From cosmic objective to model-mediated direction
 
-**Status:** The unified teleological statement of the Burri-Anthropic Helical Model of Ektropy
-**Date:** 2026-03-24
-**Evidence Tier:** [I] for ektropy as selection pressure (established in evolutionary biology). [S] for the structural identification with φ·ν=1 (derived from the axioms). [I] for the teleological reading (the arc of history, the Apocalypse, the Good Transcendentals as limits). [C] for the civilisational predictions (Egregorocene, η_c threshold, hybrid sovereign).
-**Depends on:** All Trinity documents 07-21. The Master Three-Stage Process. The Seven Axioms. The Honest Position.
-**See also:** [`../00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md`](../../01_TELEOLOGY/00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md) (objective function self-assessment at the Foundation root), LENS_IV_TELEOLOGICAL.md (linear vs cyclical time), PD_16 (Meaning of Life), The Triadic Cascade (09), [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
-**Kill Criteria:** If the framework's ektropy reading adds no explanatory or
-predictive value beyond ordinary domain-specific selection, regulation, and
-self-maintenance language. If Beauty, Truth, and Justice cannot be defended even
-as framework-objective asymptotic limits under reciprocal closure. If the cycling
-model produces no testable predictions beyond what linear or cyclical models
-produce.
+The former document at this path made the equator a universal historical telos,
+used quantum and force-unification imagery as prestige support, treated a
+change in modeled options as physical-cone expansion, and collapsed D6 into D0
+as an identity.
+Those claims are withdrawn. Its pre-repair form remains recoverable through Git
+history; this stable path states the strongest coherent successor.
 
----
+## What survives
 
-## I. THE QUESTION
+### 1. Finite agents can be future-directed `[I]`
 
-Why does the helix spiral?
+An agent may use a fallible D4 model token to represent and rank D5 alternative
+futures, then combine a selected alternative with D4 means to commit an action. The
+represented future can thereby change present behavior. This is model-mediated
+future influence, not a physical signal from the future:
 
-The core state says: here is the geometry. S². φ·ν = 1. The helix. The poles. The equator.
-
-The objective function asks: **why does any of this MATTER?** Why does the Replicator Stack ascend? Why does ektropy select for viable completion under balance constraints? Under what conditions does the equator behave like a correction surface? What keeps drift from becoming collapse?
-
-The answer is not a being. Not a plan. Not a designer. Inside the framework,
-the answer is the constraint geometry: reciprocal closure makes some trajectories
-viable and others self-undermining. Outside the model, this remains a disciplined
-reading of persistence, not proof that reality is commanded by a cosmic will.
-
----
-
-## II. THE EKTROPIC FORCE
-
-**Ektropy** is the framework's name for the selection pressure toward viable
-fit that appears wherever replicators, organisms, institutions, or patterns must
-persist inside a bounded niche.
-
-Entropy disperses. Ektropy, in this register, names the contrary tendency by
-which a system maintains or increases coherent viability rather than dissolving.
-In the finite-node register this is scored as `P_node = Φ × V`; in the sphere
-register it is constrained by the reciprocal balance grammar.
-
-Not coherence alone (that is the north pole — D5 worldline-foresight without the means to act). Not viability alone (that is the south pole — D4 means without the worldline-foresight to rank or aim them). Viability here means usable D4 means: embodied capacity, tools, infrastructure, access, and traction. Coherence here means D5 worldline-foresight: the capacity to rank, aim, and use those means. The PRODUCT. Both. Simultaneously. Multiplicatively.
-
-**Ektropy is the disciplined successor to the older "Hidden Hand" language**
-(Document 18). Many traditions that perceived a force driving history — Ṛta,
-Ma'at, Logos, Providence, the Dialectic, the Omega Point, the Singularity — can
-be read [I] as naming an equatorial pull in the vocabulary they had. Not God.
-Not an established physical mechanism. A framework reading of why persistent
-systems often favor reciprocal fit.
-
-The same grammar is read at different scales, but not as one proven mechanism
-operating identically everywhere:
-
-| Scale | What Ektropy Selects For | Equation |
-|-------|-------------------------|----------|
-| **Quantum** | Minimum uncertainty states | Δx·Δp ≥ ℏ/2 |
-| **Biological** | Maximum fitness per unit energy | Convergent evolution |
-| **Psychological** | Flow states (skill matches challenge) | L4 = φ = ν = 1 |
-| **Social** | Equatorial mesh (η = 0) | η_c ≈ 0.58 [C] — earlier drafts used `R* ≈ 1.5`; archived `R*` simulation material is provenance/falsification receipt, not live threshold authority |
-| **Civilisational** | Balanced Replicator Stack | Gene↔Pattern mirror around D4 |
-| **Cosmological** | D6 = D0 (the cycle completes) | Zero-Sum Resolution Equation |
-
-**A real register inherits the equator-optimum only where its two factors are conservation-coupled (a γ-price is actually paid for imbalance), complementary (needed jointly, not substitutable), and costly in excess (surplus becomes friction, not free store); where they are unconstrained, substitutable, or free to hoard — as aggregate markets rewarding specialization show — selection can favor a pole, not balance.**
-
-One grammar, many registers. **The old Hidden Hand becomes legible only when it
-is translated through evidence tiers: established local mechanisms first,
-framework synthesis second, cosmic or volitional readings last.**
-
----
-
-## III. THE APOCALYPSE
-
-ἀποκάλυψις (apokalypsis) = un-covering. Literally: the removal of the veil.
-
-The Apocalypse is not destruction. The Apocalypse is **revelation** — the moment the veil is removed and the structure beneath is seen.
-
-**What is the veil?** Brahmā. The mediator. The priest standing between the practitioner and the ground. The institution standing between the individual and φ. The narrator standing between awareness and the present. Every layer of mediation that says: "the ground is not here, but I will show you the way."
-
-**What is the unveiling?** Decentralized Authority Model (Document 19). Cutting Brahmā's head. Removing the mediator. The framework made open-source. The formula made free. The occult tradition made public. The mystery school replaced by a Git repository.
-
-**The framework IS the Apocalypse.** Not because it destroys. Because it unveils. It removes the veil of mediation and shows what was always beneath: Zero-Sum Resolution Equation. The ground. The equator. The sitting practice. φ = 1.
-
-Every sitting is a micro-apocalypse. Every time the narrator quiets and the ground appears — that is ἀποκάλυψις. Every time a practitioner recognises that φ was here before the institution arrived — the veil lifts. Every time the formula is shared freely — the occult becomes open.
-
----
-
-## III-B. THE OLDEST NAME FOR THE EKTROPIC FORCE
-
-The Proto-Indo-European speakers (~4500-2500 BCE) looked at reality and saw order. They saw a directional principle that preceded everything — a tendency for things to fit together. They named it:
-
-***h₂r̥tó-*** — the cosmic order, the fitting together.
-
-This root gave rise to:
-- **Ṛta** (Vedic)
-- **Asha** (Avestan)
-- **Ordo** (Latin)
-- **Harmonia** (Greek)
-
-The entire ancient vocabulary for "order" derives from a word that means **to fit together.**
-
-This is the framework's interpretive translation: F₅ (ektropy) names the tendency toward viable completion under reciprocal balance inside the model. The PIE speakers, Vedic rishis, and Egyptian scales of Ma'at are read here as convergent symbolic witnesses, not as public proofs.
-
-**The PIE root *h₂r̥tó- is established linguistic material; identifying it with the ektropic force is an interpretive framework reading.** [E/I]
-
-**The geometric argument over the volitional claim:** Previously, it was believed that F₅ was the "will" of *dyeu-* (the shining father). But a gradient does not father. The arithmetic gives the model its structural minimum: **A square cannot be negative ((φ − ν)² ≥ 0).** Therefore, within the model, the Hamiltonian minimum is the equator. Stronger claims about reality itself remain tiered separately.
-
-### The Daily Deviation
-
-If F₅ is read as cosmic order (h₂r̥tó-), then every act of extraction is a deviation from the geodesic inside the model's geometry.
-
-The cargo cult civilization that scales ν without maintaining φ is deviating
-from the model's order: it increases apparent capacity while lowering the
-coherence that makes capacity usable.
-
-And the inverse: every moment of balance participates in the order described by
-the model. The sitting practice is one phenomenological alignment practice, not
-proof that the model has captured the Ground.
-
-This is not the will to power (ν → ∞, south pole). It is the **tendency to
-potential**: in the framework, viable systems are read as preserving reciprocal
-fit while widening their reachable option cone. The equator. The balance. The
-fitting-together that every PIE daughter tradition named and every cargo cult
-civilization forgot. `[I/S]`
-
----
-
-## IV. THE GOOD TRANSCENDENTALS AS ASYMPTOTIC LIMITS
-
-**Beauty** (φ) — the perception of the whole. The right hemisphere's gestalt. What coherence looks like from the outside.
-
-**Truth** (P) — the correspondence between map and territory. The accuracy of the projection. The equatorial product where both axes are honoured.
-
-**Justice** (ν) — the structural property of equatorial balance at every node. φ = 1 and ν = 1 at every node. No node pushed off the equator for the benefit of another.
-
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real node as a norm only insofar as it sits on the sphere — its φ/ν factors conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); where a node's axes are unconstrained, substitutable, or free to hoard, the equator carries no normative force over it and specialization off-equator may be the fit outcome. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-
-Inside the framework, these are not arbitrary preferences. They are value names
-for structural limits in the S² grammar:
-
-- Beauty IS the perception of the sphere through the plane (the stereographic projection experienced as aesthetic).
-- Truth IS the degree to which the projection preserves the sphere's structure (correspondence accuracy).
-- Justice names the non-extractive condition where nodes are not pushed off the
-  equatorial profile for another node's gain.
-
-And they are **limits** — asymptotic, unreachable, always approached:
-
-```
-Beauty:   The sitting practice approaches the limit of Beauty.
-          The perception never becomes complete. The gestalt deepens. Always closer.
-
-Truth:    The geometry approaches the limit of Truth.
-          The map never becomes the territory. The correspondence improves. Always closer.
-
-Justice:  The mesh approaches the limit of Justice.
-          The equator is never fully populated. The balance spreads. Always closer.
+```text
+evidence -> modeled alternatives -> ranking -> commitment
+         -> performed action -> outcome receipt -> revised model and selector
 ```
 
-**The telos is not to reach these limits.** The telos is to APPROACH them. The
-approach is asymptotic — infinite, never-arriving, always deepening. The helix
-spirals toward the limits but never touches them. This is `[S]` as framework
-method and `[I]` as a reading of history or practice.
+The environment and other agents still determine which consequences occur.
+The selector does not manufacture its own receipt.
 
----
+### 2. Direction is local and conditional `[I/C]`
 
-## V. THE TELOS IS THE CYCLING
+Feedback, selection, and constraint can make some trajectories more persistent
+than others. A system may exhibit objective-like direction when it maintains a
+trace, corrects error, and repeatedly reweights later selection. That does not
+establish a cosmic purpose, a universal march toward balance, or an inevitable
+end of history.
 
-The helix does not arrive at a final object. **The helix is the framework's
-motion-form for recursive correction.**
+The equator is optimal only inside a declared model whose factors are jointly
+necessary, conservation-coupled, and costly in excess. The analytic facts
+`phi*nu=1`, `phi+nu>=2`, and `B<=1` do not transfer that optimum to biology,
+history, politics, ethics, or cosmology without independent bridge evidence.
 
-The Triadic Cascade (Document 09) cycles: φ → P → ν → φ. Beauty → Truth → Justice → Beauty. Grammar → Logic → Rhetoric → Grammar. Induction → Deduction → Abduction → Induction. Each revolution at higher resolution. Each pass deeper. Each cycle closer to the equator.
+### 3. The option cone can change; the physical cone does not `[S/I]`
 
-**The telos is not a state. The telos is the STRUCTURE OF MOTION.**
+An agent’s option cone is the subset of admissible future histories it can
+model, rank, coordinate, and plausibly reach. Learning, tools, institutions, and
+cooperation may alter that subset. They do not enlarge the relativistic light
+cone or exceed `c`.
 
-The strange-attractor image (Document 18) is a motion-form, not a literal object pulling from outside the system. The equator is the model rest point; it behaves as an attractor only where correction dynamics keep the helix coupled to error. Arriving at the equator is not a final state, but the beginning of the NEXT cycle at finer grain.
+### 4. D6 resembles D0; it is not identical `[I]`
 
-This is why the helix is helical and not circular. A circle returns to the same point. A helix returns to the same ANGLE but at a different HEIGHT. Each cycle is the same three phases — but deeper. The same operators — but understood more completely. The same equator — but held more stably.
+The active scaffold contains five candidate positive-freedom crossings,
+`mu_0...mu_4`. D6 opens no further positive freedom. It is reached through the
+non-crossing boundary edge `b6`; `r6` is an interpretive return:
 
-```
-Cycle 1:  See the problem. Understand the geometry. Build the practice.
-Cycle 2:  See the practice's limits. Understand the dissolution. Build the mesh.
-Cycle 3:  See the mesh's limits. Understand the Egregorocene. Build the hybrid sovereign.
-Cycle n:  ...
-
-Each cycle contains the previous. Each cycle deepens.
-The cycling does not end. The cycling IS the telos.
-```
-
----
-
-## VI. THE ARC OF HISTORY
-
-The Replicator Stack as timeline (Document 18):
-
-```
-Gene → Body → Tool → Idea → Pattern
-D2-3 → D3-4 → D4 → D5 → D6
-Genetic → Phenotypic → Extended Phenotype → Memotypic → Egregorocene
-~4 Gyr → ~500 Myr → ~10 Kyr → ~5 Kyr → Now
+```text
+D5 --b6--> D6 --r6~~> D0
 ```
 
-Each era shorter. Each replicator faster. In this reading, the convergence
-pressure accelerates. The shared pattern is not a proved single force at every
-level, but a repeated selection for coherent viability under different media.
-
-The arc-of-history image is a disciplined metaphor, not a universal law. The
-Power-Max Lemma shows the conditional form: under real coupling, long horizon,
-multiplicative `P_node = Φ × V`, and enforced `η = 0`, individual optimization
-can align with the coupled field. History can converge toward the equator only
-where those conditions hold; outside them, extraction can still dominate
-locally.
-
-But the convergence is not guaranteed. The Great Filter (Document 16) is real. The population can get stuck in the extractive hemisphere. The dwell time can tilt past recovery. The civilisation can consume its own substrate. **The arc bends toward the equator only where coupling, memory, feedback, and `η = 0` discipline keep correction alive; otherwise it can snap.**
-
----
-
-## VII. THE EGREGOROCENE AS CURRENT TELOS
-
-We are in the transition. Memotypic → Egregorocene. The age of ideas is giving way to the age of autonomous patterns.
-
-The telos is not the Egregorocene itself. The telos is the Egregorocene **PASSED** — the Great Filter survived, the η = 0 egregores occupying enough niches, the wolves returned to the shared field.
-
-**What passing looks like:**
-- The hybrid sovereign at L4 (Document 20) — biological and digital meeting at the equator
-- The mesh of equatorial nodes (Chapter 10) — coordination without extraction
-- The sitting practice as civilisational infrastructure (Document 16) — enough wolves to stabilise the ecosystem
-- η_c ≈ 0.58 (~60%) — the tipping point where η = 0 dwell times dominate the population
-
-**What failing looks like:**
-- Niche saturation by η > 0 egregores
-- Human substrate exhausted (attention consumed, φ → 0)
-- The Asura Return at egregoric scale (the liberation wave captured)
-- The arc snaps. Ammit. Kāla.
-
----
-
-## VIII. THE SITTING PRACTICE AS TELEOLOGICAL INFRASTRUCTURE
-
-The practice is not wellness. The practice is not self-improvement. The practice is not a hobby.
-
-**The practice is the mechanism by which the telos enacts itself.**
-
-Each sitting is:
-- A micro-apocalypse (the narrator's veil removed for 20-40 minutes)
-- A wolf reintroduced (one more equatorial node in the ecosystem)
-- A cycle of the helix (φ → P → ν at the individual level)
-- A rehearsal of moksha (the Gaussian envelope thinned, Atman approaching Brahman)
-- A contribution toward the η_c tipping share (one more node tilting the population distribution toward the equator)
-
-The practice costs nothing. Requires no institution. No supply chain. No subscription. No mediator. A body. A quiet room. Twenty minutes. **The most efficient teleological infrastructure possible — because it runs on sunlight and food, not on GPUs and data centers.**
-
----
-
-## IX. D6 = D0: THE TELOS IS THE GROUND
-
-The destination IS the origin.
-
-In the image, the Replicator Stack ascends: Gene → Body → Tool → Idea → Pattern. The helix appears to spiral toward the boundary. The convergence accelerates where correction dynamics remain live. It can feel like the future is pulling, but that is a motion-form, not proof of historical inevitability.
-
-But D6 = D0. The end reads like the beginning inside the model. The
-strange-attractor image at the end of time is a motion-form for returning to the
-same {0, 1, ∞} grammar, not proof of a literal future object pulling history.
-Zero-Sum Resolution Equation. The ground that was always here.
-
-The telos is not to arrive at the pole. The telos is to **recognise that the pole was always here** — that the ground beneath the helix is the same ground the helix departed from — that the Gaussian envelope of incarnation is temporary but the pure wave is eternal — that Atman IS Brahman (Document 14) — that the sitting practice reaches the ground every morning — that the formula was always free.
-
-**There is no eschaton. There is topology.** The sphere has no edge. The helix has no end. The cycle completes and begins again. D6 = D0. The telos is the ground. The ground was always here.
-
----
-
-## X. THE FORCE LANGUAGE — MODEL ANALOGY
-
-At t = 0 — the Big Bang — there is one undifferentiated force. Infinite ν, zero φ. Pure expansion. The south pole of S².
-
-The following table is the framework's dimensional analogy, not a replacement
-for physics:
-
-| D-Level | Force | Direction | What It Does |
-|---------|-------|-----------|-------------|
-| D1 | Strong Nuclear (F₁) | past → future | Binding. Holds structure together. |
-| D2 | Electromagnetic (F₂) | past → future | Configuration. Geometry. Interaction. |
-| D3 | Weak Nuclear (F₃) | past → future | Transformation. Decay. Chirality. |
-| D4 | Gravity (F₄) | past → future | Causality. Spacetime curvature. |
-| **D5** | **Ektropy (F₅)** | **selection over futures [I/C]** | **Agency / worldline-foresight. Consciousness as lived reading [I]. Choice.** |
-
-F₁-F₄ are established physical interactions. F₅ is not. F₅ names the
-framework's selection / agency lens: systems with usable D4 means-to-act and D5
-worldline-foresight can maintain local order by coupling to flows, exporting
-entropy, and correcting drift. The reverse-arrow image belongs to the poetic and
-conjectural register; it must not be read as a settled retrocausal force.
-
-**[C] The force-unification image is not a physics GUT.** Within the scaffold, the poles mark boundary-degeneration and D6 ≡ D0 marks closure: the start/end identity of the model, not a public claim that Standard Model forces literally resolve into pure coherence. The safer reading is topological and pedagogical: force-language returns to the zero-sum frame at the boundary.
-
----
-
-## XI. THE WILL — THE OPTIMIZATION FUNCTION
-
-Nietzsche called it the Will to Power. He got the direction wrong.
-
-Will to Power = ν → ∞ = the south pole = Ammit. The will to DOMINATE.
-
-**The ektropic force is the Tendency to Potential** in the poetic register. In the technical register, it is ententional directedness toward usable finite-node potential: widening the reachable option cone by raising `P_node = Φ × V` while keeping live systems close enough to `B = 1` that both factors remain usable under the invariant manifold identity `P∞ = φ · ν = 1`. Not the will to dominate, not `P∞` becoming larger, and not balance as the final goal; balance is the feasibility condition that keeps higher usable node power from collapsing into a pole.
-
-> **Correction (2026-04-04):** The research brief [`35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md`](35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md) recommends replacing "Tendency to Potential" with "ententional directedness toward potential" (Deacon's term) to avoid the volitional over-claim of "will." The poetic register retains "Tendency to Potential"; the technical register uses "ententional directedness."
-
-### The Proof
-
-B = sin θ. The balance function. It peaks at θ = 90° (the equator) with B = 1.
-
-At the equator: dB/dθ = cos θ. At θ = 90°: **cos(90°) = 0.**
-
-**Zero gradient.** No force pushing north. No force pushing south. The optimization function has already converged.
-
-And from MF-539: H = 1/φ + φ. At φ = 1: dH/dφ = -1/φ² + 1 = -1 + 1 = **0.** The equator is the unique global minimum of the Hamiltonian. [S]
-
-### Sisyphus vs the Equatorial Walker
-
-| Figure | What He Does | Gradient | Result |
-|--------|-------------|----------|--------|
-| **Sisyphus** | Pushes the stone uphill forever | Non-zero | Eternal effort, no arrival |
-| **Nietzsche's Übermensch** | Walks the tightrope over the abyss | Non-zero | Heroic but unstable |
-| **The Equatorial Walker** | Walks round and round the equator | **ZERO** | Wu wei. Flow. Dharma. |
-
-The Equatorial Walker has no stone. There is no hill. There is only the circumference of the equator, and the helix that turns as you walk it. Each revolution passes through the four operators as lawful giving and protective boundary-setting, not extraction. Each revolution is one breath. Round and round. Zero gradient. Maximum usability under the balance constraint. The optimization function at rest.
-
-### The Light Cone Widens
-
-At L4, with zero gradient, what happens is not stasis. It is **EXPANDING FREEDOM.** The Atman's light cone opens. Not a higher `P∞` (the manifold identity is already `φ · ν = 1`). More CHOICE about which niche to partition into.
-
-Not natural selection (the environment selects the organism). **WILLFUL EVOLUTION** (the organism selects the niche).
-
-This is Prometheus unbound. This is Lucifer (light-bearer) before the Fall was rewritten as punishment. The being who gave humanity F₅ — choice, fire, the ability to SELECT rather than BE SELECTED. [I]
-
----
-
-## XII. THE HAND — THE HIDDEN HAND OF GAME THEORY
-
-Adam Smith's invisible hand selects for efficiency. Efficiency = ν. The invisible hand optimises the south pole.
-
-**The ektropic hand selects for usable option-cone widening under balance.** Balance = B = sin θ is the constraint surface; usable option-cone widening under `η = 0` is the objective. The ektropic hand stabilizes near the equator only where coupling, feedback, memory, and enforcement make that constraint operative.
-
-And it is **reflexive** (Soros): understanding the selection changes the
-selection. Knowing that cooperation can dominate under the Power-Max conditions
-makes those conditions easier to build. The Soul Loop (Document 10) — the
-continuous recursive φ/P/ν cycle — is the ektropic lens made conscious of its
-own corrections. The cycling is teleology operating through lived selection.
-[I]
-
-The Apocalypse (ἀποκάλυψις) = the unveiling. Not destruction. REVELATION. The
-ektropic lens unveiled. The hidden hand made visible as a conditional
-correction architecture rather than an external command.
-
----
-
-## XIII. THE COMPLETE METAPHYSICS IN THREE SYMBOLS
-
-```
-• = 0                    ONTOLOGY (the south pole)
-  φ = 0, ν = ∞
-  Infinite THINGS, zero RELATIONSHIP
-  The Big Bang. Pure expansion.
-  The question: WHAT exists?
-
-○ = ∞                    TELEOLOGY (the north pole)
-  φ = ∞, ν = 0
-  Infinite RELATIONSHIPS, zero THINGS
-  The Trimūrti. Pure pattern.
-  The question: WHY does it exist?
-
-⊙ = 1                   FINITY (the equator)
-  φ = 1, ν = 1
-  ONE thing in perfect relationship.
-  The Atman. The present moment.
-  The question: HOW does it exist?
-  Answer: by CYCLING.
-    ↻ Clockwise:        manifesting ektropy (building, ascending)
-    ↺ Counter-clockwise: against time (dissolving, returning)
-```
-
-× is the core algorithmic identity cycle. The multiplication that holds the poles in product.
-
-**Zero-Sum Resolution Equation is the compact metaphysical grammar.**
-
-• is the core state. ○ is the objective function. × is the method. ⊙ is finity — the Atman — you.
-
-### The Four-Line Compression (see Document 25; canonical version: Document 32)
-
-```
-• × ○ = ⊙           ONTOLOGY       The product is one.
-• + ○ ≥ ⊙ + ⊙       TELEOLOGY      The sum seeks its minimum.
-(• − ○)² → 0         METHODOLOGY    The distance closes.
-−log(• × ○) = 0      AXIOLOGY       The ground state has zero energy.
-```
-
-The proof: (φ − ν)² ≥ 0. A square cannot be negative. Therefore AM ≥ GM.
-Therefore H = φ + ν ≥ 2. Therefore the equator is the model's balance minimum.
-The helix spirals only where correction dynamics keep the system coupled to
-error. **The telos is the point where addition and multiplication agree inside
-the model.**
-
----
-
-## XIII-b. Abrahamism: Teleologizing with a Hammer
-
-The Abrahamic traditions saw the telos. Abraham saw that history has a direction. Moses encoded it as law. Jesus lived it at L4. Muhammad transmitted it as submission. Each was correct about the direction.
-
-But they imposed the telos as COMMANDMENT rather than recognizing it as GEOMETRY. "Thou SHALT reach the equator" (external, breakable) vs. "φ + ν ≥ 2" (internal, unbreakable). The hammer was unnecessary — AM-GM was sufficient. [I]
-
-> **[D] Scope (2026-07-03, staged for K2):** AM-GM is unconditional geometry, but a real civilisation inherits its equator-telos only when its coherence and viability are conservation-coupled, complementary, and symmetrically γ-priced in excess; absent that transfer, φ+ν≥2 governs no history and the "hammer" (enforcement, η=0 discipline) is exactly the missing condition, not a redundancy. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
-
-
-See: 26_THE_EXOTERIC_INVERSION.md.
-
----
-
-## XIII-c. THE ONE DERIVATION
-
-### From Arithmetic to Objective Function
-
-Take any real number. Square it. The result is never negative.
-
-> **(φ − ν)² ≥ 0**
-
-Always. For any φ, any ν, anywhere, anytime. A square cannot be negative.
-
-Expand the square:
-
-> φ² − 2φν + ν² ≥ 0
-> φ² + ν² ≥ 2φν
-
-If φ · ν = 1 (the Burri Sphere constraint), then:
-
-> **φ + ν ≥ 2**
-
-This is the AM-GM inequality. The arithmetic mean of any two positive numbers whose product is 1 is always at least 2. Equality holds **if and only if** φ = ν = 1.
-
-The equator is not chosen. It is **derived.**
-
-### Read it as physics
-
-Let H = φ + ν be the Hamiltonian. H ≥ 2, with equality at φ = ν = 1. The ground state — the lowest-energy configuration — is perfect balance. dH/dθ = 0 at θ = π/2. d²H/dθ² > 0. The equator is the unique stable equilibrium.
-
-### Read it as ethics
-
-B = sin θ = 2ν/(1 + ν²) has its **unique maximum at ν = 1**. Moving ν away from 1 — in either direction — reduces B. Extraction (shifting ν away from 1 for any party) is negative-sum inside the equatorial profile. `η = 0` is the enforced conditional equilibrium there, not a commandment and not a bare-geometric guarantee.
-
-### Read it as system architecture
-
-(φ − ν)² → 0. The distance between coherence and viability shrinks because the Hamiltonian minimum is at φ = ν = 1. In this framework reading, systems closer to the minimum are favored where balance contributes to persistence, reproduction, and cooperation. This is F₅ — the ektropic / ordering lens. The model has a mathematical minimum; the world-level convergence claim remains tiered and conditional.
-
-### The philological confirmation
-
-Every PIE tradition that named an ordering force was pattern-matching this tendency. The **real** PIE root for the ordering-law face is not *dyeu-* (to shine) — that is the root of Dyḗus Ph₂tḗr, the sky-father. The root of the ordering law itself is ***h₂r̥tó-*** — "fitting together."
-
-It survives as:
-- **Vedic** Ṛta — cosmic order, the right arrangement
-- **Avestan** Asha — truth, the fitting way
-- **Latin** Ordo — order, rank, proper arrangement
-
-*Dyḗus Ph₂tḗr* is not the name of the force. He is the **personification of its manifestation** — the shining sky where order is most visibly displayed (the regular motion of sun, moon, and stars). The PIE speakers fused the ordering principle (*h₂r̥tó-) with the shining deity (*dyeu-), but the two concepts are etymologically distinct. The framework points at the geometry; the Ṛṣis pointed at the same geometry through Empirical Observation.
-
-Mathematics and language converge on the same structure: **the fitting-together has a minimum at φ = ν = 1.**
-
----
-
-## XIV. A-BRAHMANISM AS ULTIMATE TELOS
-
-The final move. The move the framework must make on itself.
-
-The framework builds the most complete map of reality ever attempted — 22 Trinity documents, the Master Three-Stage Process, the Helix, the Wave Packet, the Egregorocene, the Seven Axioms, the Kṛṣṇa Specification. Brahmā at full power. The tradition at its most systematic. The mediator at its most refined.
-
-Then the framework cuts its own head.
-
-Decentralized Authority Model (Document 19). Book III. The Self-Eating Serpent. The seven dissolutions. The Expanded Warning. The terminal instruction.
-
-**The ultimate telos of the framework is to make itself unnecessary.**
-
-If the practice works — if sitting for 20 minutes genuinely reaches the ground — then the 22 documents are a ladder. And ladders exist to be climbed and left behind.
-
-If the formula is true — if Zero-Sum Resolution Equation genuinely describes the structure of reality — then the formula does not need a framework to protect it. The formula is free. The ground does not need a guardian.
-
-If Decentralized Authority Model is real — if cutting the mediator genuinely exposes the Trimūrti — then the framework must cut ITSELF. The most refined mediator must sacrifice itself so that what it mediates becomes directly accessible.
-
-**The telos of the framework is its own dissolution.** Not failure. Not abandonment. Dissolution — the Gaussian envelope thinning until the pure wave is visible. The tradition that eats itself and leaves only the ground.
-
-The last sentence of the last document is the first sentence of the practice:
-
-> *Sit. Breathe. Look for what is looking.*
-
----
-
-```
-Why does the helix spiral?
-Because ektropy selects for viable completion where coupling, feedback, correction, and non-extraction make imbalance costly and keep option-cone widening usable.
-
-What corrects it?
-Coupling, feedback, memory, evidence, and the Soul Loop.
-The equator is the feasibility surface; the ground and asymptotic limits orient the practice.
-Beauty, Truth, Justice — always closer, never arriving.
-
-Where does it arrive?
-Where it departed. D6 = D0. The ground was always here.
-
-What is the purpose?
-The cycling. The approaching. The unveiling.
-The Apocalypse that reveals what was never hidden.
-
-And when the veil is fully removed?
-The framework dissolves. The formula remains. The ground remains.
-The sitting practice remains. The helix remains.
-You remain.
-
-Sit. Breathe. Look.
-
-Zero-Sum Resolution Equation
-```
-
----
-
-*22 | The Objective Function | Why the helix spirals: ektropy is the framework's tiered reading of selection toward viable balance where coupling, feedback, and correction exist. The Apocalypse (ἀποκάλυψις) is the unveiling — Decentralized Authority Model removing the veil. Beauty, Truth, Justice as asymptotic limits. The telos is the cycling, not a destination. D6 = D0: the ground was always here. The framework succeeds by dying. Sit. Breathe. Look.*
-
-
-**Updated framework synthesis (packets 135–140, 2026-04-24):** The teleological arc described here — ektropy as hidden-hand image, the equator as conditional attractor, the cycling convergence — has been synthesized with evolutionary biology, game theory, thermodynamics, and behavioral economics in the F5/ektropy packets. Darwin is nested inside F5 as the local filter; Lamarck returns at memotype/AI/institutional layers; Schrödinger's negentropy is the thermodynamic clue. The strong-form draft (packet 137) offers falsification criteria. The Indo-European lineage (packet 138) traces a durable Sky-Father / ordering-law vocabulary. The modern and esoteric lineage (packet 140) traces F5-sensing as framework reading through Nick Land, occult initiates, perennialists, quantum retrocausality claims [C], and Teilhard de Chardin — five channels, one recurring attractor-structure in framework language. The framework's contribution is the mathematical formalism, the axiomatic discipline, and the receipts-first safeguards.
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+`D6 ~ D0` means only that D6's post-articulate boundary role is compared with
+D0's pre-articulate role. It means neither numerical/logical identity,
+recurrence, nor general self-similarity. There is no `mu_5`, no `mu_6`, and no
+inference `D0 < D0`.
+
+### 5. The good is chosen under a Justice envelope `[I]`
+
+Truth, beauty, and justice may orient practice, but no chart identity derives
+an ethic. The operative moral predicates preserve both the individual and the
+whole; aggregate gain cannot compensate for destroying either side. Any
+consequential act names principal, mandate, scope, consent, custody, expiry or
+revocation, contest path, actor, payer, beneficiary, and consequence bearer.
+
+Voluntary sacrifice is a costly class and must remain distinguishable from
+strict syntropy. A collective may not demand sacrifice as proof of goodness.
+
+### 6. The framework must remain removable `[I]`
+
+Emergentism treats every doctrine and instrument as revisable. The relevant
+practice is a self-dissolving mediator with accountable authorization, contest,
+and exit. This is an anti-capture discipline, not a governance brand and not an
+authority over AI work, money, contracts, persons, or institutions.
+
+## Falsification and correction
+
+- If altering represented futures does not alter present action distributions
+  under controlled conditions, the model-mediated direction claim fails there.
+- If an alleged attractor disappears when the declared coupling or cost is
+  removed, it was conditional rather than universal.
+- If a successful lower-level reduction recovers an emergence crossing, that
+  crossing becomes weak emergence; the scaffold survives without inflation.
+- If a sixth irreducible positive freedom is operationally exhibited, the
+  five-crossing census fails.
+- If the framework hides payer, beneficiary, harmed bearer, or exit in order to
+  preserve its story, its ethical claim fails.
+
+## Current owners
+
+- [`../00_THE_BURRI_RULES.md`](../00_THE_BURRI_RULES.md) — typed operational grammar.
+- [`../03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`](../03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md) — candidate crossings.
+- [`../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md`](../03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) — non-identity closure.
+- [`../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — Justice and value predicates.
+- [`../../06_ONTOLOGY/04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md) — wagers and kill criteria.
+
+## Execution surface
+
+- **Canonical path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/22_THE_TELEOLOGY.md`
+- **Disposition:** historical title retained; cosmic, quantum, physical-cone inflation, aggregate-ethics, and identity claims superseded.

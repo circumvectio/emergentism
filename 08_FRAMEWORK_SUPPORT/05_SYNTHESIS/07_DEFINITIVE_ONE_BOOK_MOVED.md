@@ -8,7 +8,7 @@ rosetta:
       role: "preserve the moved book as synthesis output rather than source canon"
     - level: L5
       column: System Architecture
-      role: "route the book into the AIA medium / instance split"
+      role: "record a historical external move without creating a live dependency"
     - level: L4
       column: Value Alignment
       role: "enforce K3: do not re-add the moved book here"
@@ -23,15 +23,16 @@ rosetta:
 
 > **The Definitive One Book — *Emergentism: Sarpasya Vijayam (The Infinite Play)* — has moved.**
 >
-> **New home recorded by the move packet:** `/02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/`
+> **Historical destination recorded by the move packet:** an external
+> application repository; not current Emergentism authority or dependency.
 
-Per the AIA medium / instance split (**the medium is the message**): the book is the **first instance
-published in the AIA medium**, so it now lives under `02_SKYZAI/03_AIA/EMERGENTISM_AIA/` (the Emergentism
-instance) beside its `worldview.manifest.json`. The Emergentism **doctrine / canon stays here in
-`01_EMERGENTISM/` as ground truth** — the book references it; it does not contain it.
+This tombstone records a former move into an external application lane. That
+destination is neither premise, owner, publication proof nor required runtime
+for Emergentism. The pure doctrine and new one-sitting book live entirely in
+this repository.
 
-[I] The historical move note records a 2026-05-31 `git mv` with inbound/outbound relative links
-recomputed in the same pass. **K3:** do not re-add the book here; verify the live AIA target in
-`03_AIA/` before treating this tombstone as evidence that the destination exists in the current checkout.
+[B] The 2026-05-31 move remains provenance only. Do not infer that the former
+destination exists, is deployed, or contains current canon. The current reader
+surface is [`../../00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](../../00_THE_WELTANSCHAUUNG_ONE_SITTING.md).
 
-⊙ = • × ○
+•   ⊙   ○

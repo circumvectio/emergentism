@@ -8,7 +8,8 @@ human flourishing. Uses Ryff's six psychological wellbeing dimensions
 from MIDUS Wave 2 (Study 4652, ICPSR).
 
 Evidence tier: [C] Conjecture — exploratory proof-of-concept.
-The confirmatory test is the GFS 22-country analysis (preregistered).
+The former GFS confirmatory lane was retracted and archived on 2026-07-13;
+this script does not define a successor or a canon-upgrade route.
 
 Data source: https://www.icpsr.umich.edu/web/NACDA/studies/4652
 
@@ -338,9 +339,9 @@ print("=" * 60)
 if h1_supported and robust_curv:
     print("\nResult: PROOF-OF-CONCEPT PASSED")
     print("The multiplicative model outperforms the additive model.")
-    print("Proceed with GFS preregistered confirmatory test.")
+    print("The historical GFS confirmatory lane was retired on 2026-07-13.")
     print("Evidence tier: [C] → remains [C] (single dataset, one country, exploratory)")
-    print("Upgrade to [S] requires: GFS 22-country replication (preregistered)")
+    print("No canon upgrade follows from this exploratory output.")
 elif m2_ols.params["phi_x_nu"] > 0 and p_val_12 < 0.05:
     print("\nResult: SUGGESTIVE (p < .05 but not < .005)")
     print("The interaction is in the predicted direction but does not meet")
@@ -348,10 +349,10 @@ elif m2_ols.params["phi_x_nu"] > 0 and p_val_12 < 0.05:
 else:
     print("\nResult: PROOF-OF-CONCEPT FAILED")
     print("The multiplicative model does not outperform the additive model.")
-    print("The GFS test remains the confirmatory analysis regardless.")
+    print("The retired GFS lane supplies no fallback confirmation.")
 
 print("\n--- Analysis complete ---")
 print("This is a PROOF-OF-CONCEPT on MIDUS data (single US sample).")
-print("The preregistered confirmatory test uses GFS (22 countries, 200K respondents).")
-print("All claims remain at [C] Conjecture until GFS results are in.")
-print("\n⊙ = • × ○")
+print("The former GFS study and pipeline are archived as retracted history.")
+print("Current claims remain at their declared tiers pending a new independent test.")
+print("\n•   ⊙   ○")

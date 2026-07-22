@@ -9,29 +9,38 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[C] for the pre-registered prediction (P-EQ); [S] for the geometric mechanism; [A] for the bare AM-GM inequality only — the algebra never upgrades the prediction"
+  register: "[C] prediction/design; [B-internal] executed pilot receipt; [S] geometric mechanism inside declared premises; [A] bare AM-GM inequality only"
   canonical_phrase: "Equatorial Balance-Maximum Pre-Registration"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**L3; [C] prediction, [I] pilot falsified (kill fired, published); [S]¹ human study still required. No upgrade.**
+**Corpus:** Emergentism
+**L3; `[C]` prediction/design, `[B-internal]` pilot receipt with `[I]` interpretation, and a new human study remains `[C]` until executed. No empirical result becomes `[A]`.**
 
 # Pre-Registration — The Equatorial Balance-Maximum Prediction
 
+> **Current evidence-type override — 2026-07-21.** The study design below is
+> frozen provenance and its original tier words remain legible. Wherever that
+> frozen body calls the executed pilot `[I]`, read the executed scoring and
+> result receipt as `[B-internal]` and the preliminary-falsification reading as
+> `[I]`. Wherever it calls the future human study `[S]`, read the unexecuted
+> design as `[C]`; execution could create only the matching `[B]` result with
+> custody. The old promotion sentence in §6 is superseded: replication changes
+> `[B]` custody and scope, never empirical evidence into analytic `[A]`.
+
 > **⚠️ A TIER-[I] PILOT HAS RUN, AND IT WENT AGAINST P-EQ.** A recall-based, AI-blind-coded **pilot** (two coders blind to the prediction, five standard developmental ladders) found the integration/balance maximum in the **TOP** tertile on every construct, 5/5 inter-coder agreement — the top-dominant, high-agreement pattern this pre-registration designates (§6) as the **kill criterion**. Per the discipline below, this is reported as a **preliminary falsification**, not reframed as support. It does **not** settle the question — it is a pilot at tier `[I]`, not the `[S]¹` blind-**human** study on the actual instruments — and it surfaces the confound the real test must control for (these ladders are *built* top-integrated, so a naïve coding peaks at the top by construction). **Full result, honestly stated:** [`01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md). The design below stands unchanged as the specification of the still-required `[S]¹` study.
 
-> **This is a falsifiable DESIGN, and now a pilot has touched it.** The prediction (P-EQ) is tier **[C]** (conjecture); the pilot result is tier **[I]** (preliminary, not confirmatory). Nothing here upgrades the [S] geometry or the [A] inequality it rests on, and the pilot downgrades nothing below `[I]`. The blind-coding pilot went against the prediction, so P-EQ is preliminarily wounded on the single numeric kill criterion in §6 and we publish the failure — the same way the GFS Wave 1 *mixed* result and the *mu-limit falsification* were published and tombstoned (§7). A negative `[S]¹` study would retire P-EQ; this `[I]` pilot only weighs against it.
+> **This is a falsifiable DESIGN, and now a pilot has touched it.** The prediction (P-EQ) is tier **[C]** (conjecture); the pilot result is tier **[I]** (preliminary, not confirmatory). Nothing here upgrades the [S] geometry or the [A] inequality it rests on, and the pilot downgrades nothing below `[I]`. The blind-coding pilot went against the prediction, so P-EQ is preliminarily wounded on the single numeric kill criterion in §6 and we publish the failure. A negative `[S]¹` study would retire P-EQ; this `[I]` pilot only weighs against it. The former survey-study corpus is retired and non-citable and is not precedent or evidence for this design.
 
 **Status:** Pre-registration draft. To be time-stamped and frozen (git tag + content hash) **before any rater touches any scale, and before any stage text is prepared.**
 **Evidence tier:** **[C]** for the prediction P-EQ; **[S]** for the framework mechanism (S10/S11 geometry; the identification of `B = sin θ` with "balance"); **[A]** for the bare AM-GM inequality `(φ − ν)² ≥ 0 ⟹ φ + ν ≥ 2` that the mechanism cites. The [A] inequality is true independent of the framework; it does **not** make P-EQ anything but [C].
-**Depends on:** [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) (S10, S11, B = sin θ, AK1, AK8); [Sevenfold Foundation Root](../../00_SEVENFOLD_FOUNDATION_ROOT.md) §2.1 (the L4 equator) and **§2.3 (the loop is not monotone)**; [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (poles = runaway); [GFS Wave 1 result and retraction](../../90_ARCHIVE/2026_07_13_gfs_retraction/canonical/00_GFS_WAVE1_RESULTS.md); [What Actually Tests the Theory](../00_WHAT_ACTUALLY_TESTS_THE_THEORY.md).
+**Depends on:** [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) (S10, S11, B = sin θ, AK1, AK8); [Sevenfold Foundation Root](../../00_SEVENFOLD_FOUNDATION_ROOT.md) §2.1 (the L4 equator) and **§2.3 (the loop is not monotone)**; [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) (poles = runaway); [What Actually Tests the Theory](../00_WHAT_ACTUALLY_TESTS_THE_THEORY.md).
 **Guard:** The geometry is a LENS, never the Ground (L6 apophatic guard). This study tests whether one structural consequence of the lens predicts a pattern in independently-built developmental ladders. A positive result makes the lens *useful*; it does not make it *true*, and it does not "unify", "prove", "fix", or "solve" developmental psychology. A negative result kills P-EQ, not the [A] inequality and not the [S] geometry — only the bridge claim that maturity ladders are monotone colatitude reparametrizations.
 
 ---
 
 ## 0. Why this is the cleanest available test (not "the one clean test")
 
-Most empirical surfaces in this corpus (GFS, Protocol D, Agent V×Φ) are either survey-proxy-dependent or framework-designed and therefore circular (per `00_WHAT_ACTUALLY_TESTS_THE_THEORY.md`). This prediction is *less* circular than those on three counts — though it carries its own residual circularity risk, disclosed and mitigated in §3:
+Most active empirical surfaces in this corpus (Protocol D and Agent V×Φ) are framework-designed and therefore circular (per `00_WHAT_ACTUALLY_TESTS_THE_THEORY.md`). This prediction is *less* circular than those on three counts — though it carries its own residual circularity risk, disclosed and mitigated in §3. The retired survey-study corpus supplies no comparison or evidence:
 
 1. **The data already exists and was built by people who never heard of this framework.** Piaget, Kohlberg, Loevinger, Kegan, Maslow, Erikson, and Commons each independently constructed an ordered ladder of human stages. The framework did not design these instruments, so the test is not circular *in the instrument* the way Protocol D is.
 2. **The prediction is sharp and non-obvious.** It says the integration/balance optimum sits at the *middle* of a maturity ladder, not the top — the *opposite* of the default reading of almost every stage theory.
@@ -144,9 +153,9 @@ All thresholds, tertile boundaries, AIC rule, and the 5-of-7 bar are frozen at �
 ## 6. The kill criterion (single, numeric, pre-registered)
 
 > **P-EQ is FALSIFIED if any of the following holds on the frozen, blinded, reliability-passing data:**
-> - **(K1)** Fewer than **5 of 7** ladders show a balance argmax in the **central tertile** with the unimodal fit (M2) beating the monotone fit (M1) by AIC; **or**
-> - **(K2)** On a **majority of ladders**, the balance argmax falls in the **top tertile** (the literal "integration peaks at the top" reading — the L4*/return re-reading is **not** allowed to rescue this, per §1.2); **or**
-> - **(K3)** The balance rubric and the NULL/competence rubric peak in the **same tertile** on a majority of ladders (mid-peak is a rubric artifact, not a data property — design failure, reported as such).
+> - **(KC-1)** Fewer than **5 of 7** ladders show a balance argmax in the **central tertile** with the unimodal fit (M2) beating the monotone fit (M1) by AIC; **or**
+> - **(KC-2)** On a **majority of ladders**, the balance argmax falls in the **top tertile** (the literal "integration peaks at the top" reading — the L4*/return re-reading is **not** allowed to rescue this, per §1.2); **or**
+> - **(KC-3)** The balance rubric and the NULL/competence rubric peak in the **same tertile** on a majority of ladders (mid-peak is a rubric artifact, not a data property — design failure, reported as such).
 
 **What dies if killed:** the bridge claim [C] that maturity ladders are monotone colatitude reparametrizations. **What survives:** the [A] AM-GM inequality, the [S] geometry, and `B = sin θ` as an internal structural identity. P-EQ dying tells us the *lens does not project usefully onto developmental ladders*; it tells us nothing about the algebra or about whether the equator is the balance optimum *inside* the model.
 
@@ -172,9 +181,10 @@ P-EQ joins that register: it is **designed to die cheaply if wrong**, and its de
 - [ ] Tertile boundaries fixed (bottom/central/top by rank count per ladder).
 - [ ] AIC model set {M1 isotonic, M2 unimodal, M3 flat} fixed.
 - [ ] Support bar fixed: ≥ 5/7 ladders central-tertile balance peak **and** top-tertile competence peak.
-- [ ] Kill criterion K1/K2/K3 fixed (§6).
+- [ ] Kill criteria KC-1/KC-2/KC-3 fixed (§6).
 - [ ] Rater pools, ICC ≥ 0.70 floor, analyst-separation, preparer-blinding fixed (§4).
-- [ ] **git tag `prereg/equatorial-balance-v1` + content hash recorded here: `[TBD — record at freeze]`.**
+- [ ] **git tag `prereg/equatorial-balance-v1` + content hash recorded here:**
+      `NOT FROZEN — no tag or preregistration hash exists as of 2026-07-22`.
 
 **No data has been coded. No rater has been recruited. No stage has been scored. This is a design.**
 

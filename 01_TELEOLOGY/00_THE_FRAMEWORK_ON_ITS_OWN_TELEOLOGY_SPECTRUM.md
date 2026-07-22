@@ -20,8 +20,8 @@ rosetta:
 **Status:** Canonical self-diagnostic
 **Date:** 2026-04-14
 **Evidence Tier:** [I] Interpretive synthesis with governance consequences
-**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [The Core State of Being](../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md), [The PHI Resolution](../05_COSMOLOGY/02_EMERGENTISM_CORE/00_EMERGENTISM_PHI_RESOLUTION.md), [The Antifragility Protocol](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_ANTIFRAGILITY_PROTOCOL.md), [Objective Function Spectrum Research](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md)
-**See also:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [The Master Index](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_MASTER_INDEX.md), [The Master Rosetta](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
+**Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [Synthetic Gap and Four Postures](../02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md), [Kintsugi Protocol](../00_META/00_THE_KINTSUGI_PROTOCOL.md), [Objective Function Spectrum Research](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/35_RESEARCH_BRIEF_TELEOLOGY_SPECTRUM.md)
+**See also:** [The Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [Framework Start Here](../08_FRAMEWORK_SUPPORT/00_START_HERE.md), [The Master Rosetta](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md)
 
 ---
 
@@ -100,8 +100,8 @@ This is the level at which the framework can be said to have **real direction wi
 
 - `Zero-Sum Resolution Equation -> φ · ν = 1 on S² -> (φ − ν)^2 ≥ 0 -> φ + ν ≥ 2`
 - `Ground -> Being -> Teleological Force -> Dasein -> beings`
-- `Many-Worlds = D5 distributed actuality`
-- `Copenhagen = D4→D5 singular selection`
+- a removable Everett correspondence: relative branches are not D5 ontology
+- a removable Copenhagen-family correspondence: actualization is interpretation-specific, not a `D4→D5` crossing
 
 The framework at Level 2 is not yet alive in the strong sense. But it is no longer arbitrary.
 

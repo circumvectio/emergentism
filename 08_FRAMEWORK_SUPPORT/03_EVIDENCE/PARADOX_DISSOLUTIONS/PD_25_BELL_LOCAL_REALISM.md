@@ -8,25 +8,25 @@ rosetta:
       role: "audit Bell-test source boundaries and claim language"
     - level: L5
       column: Philosophy
-      role: "map D4/D5 interpretation against quantum-foundations boundary"
+      role: "map D3 state and D4 record against the quantum-foundations boundary"
     - level: L6
       column: Philosophy
       role: "bound physics evidence versus ontology interpretation"
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[A/I/C]"
+  register: "[A/B/I/C]"
   canonical_phrase: "PD-25 — Bell Local Realism Boundary"
 ---
 
 # PD_25: Bell Inequalities, Locality, Realism, And The 2022 Nobel Prize
 
 **Directory:** `03_EVIDENCE/PARADOX_DISSOLUTIONS/`
-**Evidence tier:** `[A/I/C] split`
+**Evidence tier:** `[A/B/I/C] split`
 **Canonical number:** PD_25
 **Boundary source:** [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
 
-> **Evidence-tier note.** Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are `[A]` established physics when stated in the language of the cited experiments. The framework reading of these results through D4/D5, S², and `Zero-Sum Resolution Equation` is `[I]`. Consciousness-collapse, literal retrocausal, K2-as-physics, or F5-as-physical-force readings remain `[C]`.
+> **Evidence-type note.** Bell's theorem and the relevant mathematical results are `[A]` inside their stated assumptions. Bell-test violations, delayed-choice outcomes, and single-photon anticorrelation / interference are attributed experimental results `[B]`, with source custody required. The framework assigns probability-bearing quantum state to D3 and actual apparatus interactions/outcome records to D4 `[I]`. Consciousness-collapse, literal retrocausality, authorization-as-physics, or F5-as-physical-force readings remain `[C]`.
 
 ---
 
@@ -79,17 +79,22 @@ This is an interpretive dissolution, not a new physics derivation.
 The stable lens is:
 
 ```text
-○  possibility-field / relational preparation
-×  apparatus, protocol, context, interaction
-⊙  finite recorded event / receipt
-•  definite mark after the record exists
+D3  quantum state ρ + declared instrument {I_k}
+D3  p(k|ρ,I)=Tr[I_k(ρ)]
+D4  actual preparation + apparatus interaction
+D4  finite outcome record + provenance
 ```
 
-In this register, a measurement is the event that produces a receipt under a specified apparatus and observable. This is analogous to the framework's selection grammar, but not identical to K2 or systemic awareness.
+In this register, the state and instrument assign probabilities; an actual
+measurement run produces a D4 record under a specified apparatus and observable.
+This is not the framework's agent-selection grammar and is not identical to
+authorization or systemic awareness.
 
-**K2 boundary:** K2 is mortal responsibility for action in governance and organism design. It is not the physical cause of quantum measurement.
+**Authorization boundary:** responsibility for a human or institutional act is not the physical cause of quantum measurement.
 
-**D4/D5 boundary:** D4/D5 can interpret why D4-only local inventory fails as a metaphysical picture. [I] The cited experiments do not establish that D5 is literally a physical stratum. [C]
+**D3/D4 boundary:** D3 state and D4 record are distinct typed objects `[I]`.
+The cited experiments do not establish the D3 ordinal, a D5 physical stratum,
+or a unique quantum interpretation.
 
 ---
 
@@ -102,7 +107,7 @@ PD_25 does not prove the following framework claims: [I]
 - systemic awareness as a wave-function-collapse mechanism;
 - F5 as an established physical force;
 - naive retrocausality;
-- K2 as a quantum-measurement operator.
+- any authorization convention as a quantum-measurement operator.
 
 All such readings remain `[C]` unless separately supported.
 

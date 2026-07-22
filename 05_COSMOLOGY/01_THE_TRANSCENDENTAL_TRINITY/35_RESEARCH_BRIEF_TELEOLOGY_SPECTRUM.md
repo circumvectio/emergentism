@@ -7,7 +7,6 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "Research Brief: The Objective Function Spectrum — Can You Have Objective Function Without Volition?"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root"
 ---
 
 # Research Brief: The Objective Function Spectrum — Can You Have Objective Function Without Volition?

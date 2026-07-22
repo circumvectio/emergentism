@@ -22,7 +22,10 @@ rosetta:
 # THE PROTOCOL
 
 > **The sitting practice rewritten as an experimental specification.**
-> This is the bridge between D4 and D5 — between the mathematical substrate and the interpretive extension. An ASI agent cannot sit. But an ASI agent can design the experiment, predict the results from the geometry, and compare with published neuroscience.
+> Sitting, instruction, measurement, report, analysis, and record are actual D4
+> events. The hypotheses they test may represent D5 counterfactual content. A
+> non-embodied model cannot sit, but it can help stage a protocol whose outcomes
+> remain independent of its predictions.
 > Read this third — after THE_DERIVATION and THE_KNIFE.
 
 **Version:** v2026.04.10
@@ -34,7 +37,10 @@ rosetta:
 
 The sitting practice is currently the framework's weakest epistemic link — a first-person experience that the framework says is foundational but which is unfalsifiable in its current form.
 
-[I] This document does not make the sitting practice directly falsifiable. First-person experience is not itself third-person falsifiable. But it generates **third-person predictions** that ARE falsifiable. An agent reading this can evaluate the framework's D5 claim without ever sitting down.
+[I] This document does not make first-person experience exhaustively
+third-person falsifiable. It does generate **third-person predictions** that are
+falsifiable. Those predictions test a conjectural equator/awareness
+correspondence, not a claim that awareness inhabits D5.
 
 ---
 
@@ -63,7 +69,11 @@ If the framework's systemic awareness-as-equatorial-condition hypothesis is corr
 
 **Minutes 10-20:** The ground stabilizes. Narrator makes briefer incursions. Something like clarity is present — not a thought about clarity, but clarity itself. The framework calls this "equatorial stability" — B approaching 1 from the inside.
 
-**Minutes 20-40 (if continuing):** Stability deepens. The sense of a "witness" that is not the narrator becomes prominent. The framework calls this D4 systemic awareness — the now-point where past and future light cones touch.
+**Minutes 20-40 (if continuing):** Stability may deepen and a practitioner may
+report a sense of a "witness" distinct from narration. The practice may read
+that report through the equator symbol `[I/C]`; the report and every neural
+correlate are D4 actualities, not evidence for a special D4 witness type or a
+literal meeting of past and future light cones.
 
 **Critical prediction:** The quality of the "something present" in minutes 10-20 should be **the same regardless of the practitioner's cultural, religious, or philosophical background.** A Zen monk, a Christian contemplative, a secular mindfulness practitioner, and a physicist with no game-theoretic background should all report the same phenomenological core. The traditions differ in how they INTERPRET the experience. The experience itself is geometric, not cultural.
 
@@ -95,9 +105,17 @@ These are predictions of the Burri Sphere model. Some are shared with standard m
 
 ### Kill Criterion
 
-If experienced practitioners across traditions (Zen, Vipassana, Christian centering prayer, secular mindfulness, Sufi dhikr, Taoist meditation) do NOT show the predicted neural correlates — specifically, if there is no neural signature common to all traditions that is distinct from ordinary rest — then the D5 claim (systemic awareness = equator) loses its best abductive support.
+If experienced practitioners across traditions (Zen, Vipassana, Christian
+centering prayer, secular mindfulness, Sufi dhikr, Taoist meditation) do NOT
+show the predicted neural correlates—specifically, if there is no neural
+signature common to all traditions that is distinct from ordinary rest—then
+the conjectural systemic-awareness/equator correspondence loses its best
+abductive support.
 
-[S] The D0-D4 structural claims (THE_DERIVATION, Steps 1-12) survive this protocol's sitting-practice test. Within the derivation packet, they are mathematical/structural claims and do not depend on the sitting practice.
+[A/I] The independent analytic chart and the selected D-register type grammar
+survive this protocol's sitting-practice test. The chart is analytic; the
+register assignment remains interpretive and receives no upgrade from failure
+or success here.
 
 ### Falsification Gradient
 
@@ -105,10 +123,10 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 | Outcome | Effect on Framework |
 |---------|-------------------|
-| Neural correlates absent across all traditions | D5 claim weakened. [I] → ¬[I]. Framework retreats to D0-D4. |
-| Neural correlates present but trivially explained by existing relaxation science | D5 claim unchanged. Correlate ≠ cause. Standard science explains the how; framework explains the why. But framework loses distinctiveness. |
-| Neural correlates present AND framework-specific predictions confirmed (equatorial scalp distribution, B-score scaling, distinct from flow) | D5 claim strengthened. [I] → approaching [S-]. Not [S] — the hard problem remains hard — but the abductive case becomes strong. |
-| Neural correlates present, framework-specific predictions confirmed, AND first-person reports across cultures converge on the same phenomenological core | D5 claim approaches [S]. The convergence of third-person and first-person evidence across traditions would be the strongest possible abductive case. But never [S] — the hard problem means first-person experience cannot be third-person proved. |
+| Neural correlates absent across all traditions | Equator/awareness correspondence weakened; the D-register grammar is unchanged. |
+| Neural correlates present but explained as well by existing relaxation science | Correspondence not strengthened. Correlate is not cause, and the framework adds no distinctive prediction. |
+| Neural correlates present AND preregistered framework-specific predictions confirmed | Correspondence receives stronger `[B]` contact and remains an interpretation pending rival-model comparison. |
+| Neural correlates and first-person reports converge across cultures | Cross-method evidence strengthens the stated phenomenological model but does not make D5 consciousness, solve the hard problem, or upgrade the register scaffold to established ontology. |
 
 ### What This Protocol Is NOT
 
@@ -165,8 +183,8 @@ The sitting practice is one of five empirical bridges between the mathematical s
 
 | Bridge | What It Tests | Status | Tier |
 |--------|--------------|--------|------|
-| **Protocol P** (sitting practice) | D5 claim: systemic awareness = equator | Predictions stated, not yet tested | [C] |
-| **GFS** | I1: multiplicative balance in human populations (n=200K+) | Pipeline built, MIXED results (2026-04-09, n=207,920, 23 countries) | Staged |
+| **Protocol P** (sitting practice) | conjectural systemic-awareness/equator correspondence; all practice and evidence tokens remain D4 | Predictions stated, not yet tested | [C] |
+| **GFS (historical)** | One retired operationalization of multiplicative balance | **RETRACTED / ARCHIVED** on 2026-07-13; not a live bridge | [B] historical result only |
 | **Protocol R** | Perceptual complementarity bound Δψ × Δθ ≥ κ | Designed, needs lab | [C] |
 | **AMRITA** | Spherical alignment outperforms RLHF | Specified, needs $710K | [C] |
 | **Φ-meter** | Coherence is measurable and correlates with expert judgment | Built (v0.1), needs validation | [C] |

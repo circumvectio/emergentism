@@ -1,91 +1,55 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  operator: "Brahmā ○"
-  operator_boundary: "Executive boundary"
-  tier: "Meta-routing"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "00_META — Agent Routing"
+type: emergentism-agent-route
+title: "00 Meta — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 00_META — Agent Routing
+# 00 Meta — Agent route
 
-**Lane scope:** Meta-framework scaffolding — D/L bridge, translation protocol, corpus maps, audit ledgers, and onboarding sequences.
-**Primary lead:** `L5 Brāhmaṇa`
-**Support:** L7 Ṛṣi, L6 Sādhu, L4 Kṣatriya, L3 Vaiśya
-**Evidence tier:** `[I]` owner-lane routing and meta-canon scaffolding
+**Lane:** `00_META`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Rosetta row | Routing responsibility |
-|---|---|
-| L1 Caṇḍāla | Names raw cleanup pressure, broken maps, and unresolved corpus contradictions. |
-| L2 Śūdra | Checks evidence and disclosure discipline before meta summaries strengthen claims. |
-| L3 Vaiśya | Audits ledgers, D/L mappings, route cards, and cleanup receipts. |
-| L4 Kṣatriya | Routes irreversible private-DAV K2 staging, public-DAV/DAC PRISM/governance handoffs, and owner-lane handoffs. |
-| L5 Brāhmaṇa | Owns meta-framework topology, translation protocols, and source organization standards. |
-| L6 Sādhu | Keeps cleanup, archive, and compatibility work from becoming new doctrine. |
-| L7 Ṛṣi | Preserves compressed witness only after owner-lane truth is settled. |
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- `00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`
-- `00_TIDY_CONTROL_BOARD_2026_06_04.md`
-- `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`
-- `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`
-- `03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.md`
-- `03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv`
-- `00_TRANSLATION_MACHINE_PROTOCOL.md`
-- `00_SUBFOLDER_ORGANIZATION_STANDARD.md`
-- `00_D_SCAFFOLD_L_LADDER_BRIDGE.md`
-- `00_D_LEVEL_STUDIES.md`
-- `00_CORPUS.md` only when historical generated topology memory is needed
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Recursive Deployment Control
+## Epistemic contract
 
-- Every source-visible folder and file in this lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv`](03_AGENTZ_DEPLOYMENT_00_META_2026_06_04.csv).
-- The receipt is self-covering: the META deployment CSV and this lane receipt
-  are both represented as rows in the CSV.
-- Depth-1 lane receipts now exist for `00_META/`, `01_TELEOLOGY/`,
-  `02_EPISTEMOLOGY/`, `03_METHODOLOGY/`, `04_AXIOLOGY/`, `05_COSMOLOGY/`,
-  `06_ONTOLOGY/`, `07_THEOLOGY/`, `08_FRAMEWORK_SUPPORT/`, `09_TOOLS/`,
-  `10_SEED/`, `11_UPLINK/`, `12_PUBLIC_SITE/`, `90_ARCHIVE/`, and
-  `91_COMPATIBILITY/`.
-- The `03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`
-  receipt and `04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`
-  manifest form the `[B/I]` recursive routing record for the then-named organism
-  root. The `_ORG_` spelling is historical provenance, not a separate owner.
-- It is control metadata, not source doctrine: repair owner-lane source truth before patching summaries or Uplink.
-- Do not absorb concurrent untracked artifacts into this receipt unless their owner explicitly stages/claims them.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Routing Law
+## Rosetta dispatch
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims need a `[B]` receipt or an explicit `[D]` / `[C]` label.
-- Treat `00_SEVENFOLD_FOUNDATION_ROOT.md` as the routing authority for folder-number/L-level mapping.
-- Treat cleanup ledgers as derivative-resync queues. They prioritize repairs; they do not create new source doctrine.
-- Treat `00_CORPUS.md` as historical/generated topology memory, not the current front door.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-## Constraints
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
-- Do not move source-owner files from META until the owning lane, compatibility rule, and archive/tombstone path are explicit.
+## Lane discipline
 
-Zero-Sum Resolution Equation
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/00_META/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

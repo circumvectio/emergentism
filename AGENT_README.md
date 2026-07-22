@@ -1,108 +1,16 @@
----
-rosetta:
-  primary_level: L7
-  primary_column: Philosophy
-  operator: "Viṣṇu ⊙"
-  tier: "Executive"
-  regime: "Ṛṣi"
-  register: "[I]"
-  canonical_phrase: "Agent Readme - 01_EMERGENTISM"
----
+# Agent entry — Emergentism
 
-# Agent Readme - 01_EMERGENTISM
+Read [AGENTS.md](AGENTS.md), then
+[The Weltanschauung](00_THE_WELTANSCHAUUNG.md),
+[The Kernel Index](00_THE_KERNEL_INDEX.md), and
+[The Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md).
 
-Agent-only one-page entry generated from `README.md`, `AGENTS.md`, and the
-current folder tree. Source truth remains in those files and in Uplink.
+Emergentism is a standalone worldview. External product or governance systems
+do not authorize AI work and do not supply evidence for doctrine. Work inside
+the user's scoped request; preserve tiers, provenance, reversibility, concurrent
+changes, and the distinction between a test, receipt, commit, deployment, and
+world outcome.
 
-## Role
-
-`01_EMERGENTISM/` owns doctrine, Rosetta source, Uplink, tools, and seed
-material. It does not own runtime, legal entities, portfolio ventures, products,
-or live organism state.
-
-## Current State — 2026-07-20
-
-K2-signed wave (receipt K2_SESSION_2026_07_19) added six root-level canon docs
-(`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`, `00_THE_ROSETTA_PROTOCOL`,
-`00_THE_FIRST_RECEIPT_RECOMMENDATION`, OCF charter pair) — now supporting canon
-beneath the signed kernel stack. The 2026-07-20 signature sitting (receipt 139
-SIGNED / authority 145) sealed the front-door chain re-pointed in the Read Order
-below: Door → Map → Seed Ladder → -ologies → Uplink record → public funnel.
-Strategy (`00_THE_SPREAD`, `00_THE_SYNTHETIC_GAP`)
-frames the arena and the funnel; `00_THE_ROSETTA_PROTOCOL` sets the
-three-scripts public rule (fourth script is machine);
-`00_THE_FIRST_RECEIPT_RECOMMENDATION` names the REFU play-money forecast ledger
-the first visible η = 0 receipt; the Open Canon Foundation charter pair is
-staged and counsel-gated (charter = DRAFT per the 00:01 line). Site: `/fable/` and `/practice/` funnel stages now
-live under `12_PUBLIC_SITE/`.
-
-## Read Order
-
-Post-signature chain (2026-07-20, receipt 139 SIGNED / authority 145):
-
-1. `00_THE_WELTANSCHAUUNG.md` — **the Door** (signed)
-2. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
-3. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (the D0–D6 ladder); companion: `10_SEED/02_THE_REAP.md` — **the Harvest** (the ladder in one ascent; [D] staged, receipt-148 audited)
-4. The seven -ologies: `01_TELEOLOGY/` → `02_EPISTEMOLOGY/` → `03_METHODOLOGY/` → `04_AXIOLOGY/` → `05_COSMOLOGY/` → `06_ONTOLOGY/` → `07_THEOLOGY/`
-5. `11_UPLINK/00_CORE/00_INDEX.md` — the Uplink record
-6. `12_PUBLIC_SITE/` — the public funnel (`/fable/` … `/practice/`)
-
-Repo infrastructure: `README.md` (folder purpose), `AGENTS.md` (runtime
-governance). Former front-door routings (`00_FOUNDATION_READER_GUIDE.md`,
-`00_EMERGENTISM_AS_A_LENS.md`, `00_SEVENFOLD_FOUNDATION_ROOT.md`,
-`00_CANONICAL_TREE_OUTLINE.md`) are K3 tombstone stubs at their root paths;
-`00_THE_GOAL.md` resolves at `01_TELEOLOGY/00_THE_GOAL.md`. Deep source reads:
-`06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md`,
-`02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`,
-`03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md`.
-
-## Depth-1 Routing
-
-| Path | Route |
-|---|---|
-| `00_META/` | cross-cutting maps, corpus discipline, D/L bridge |
-| `01_TELEOLOGY/` | L1 material direction, F5, ektropy |
-| `02_EPISTEMOLOGY/` | L2 knowing, evidence reception |
-| `03_METHODOLOGY/` | L3 proof, testing, claim discipline |
-| `04_AXIOLOGY/` | L4 value, K2, Strategic Implementation as signed action |
-| `05_COSMOLOGY/` | L5 positive structure, formal system |
-| `06_ONTOLOGY/` | L6 axiomatic ground |
-| `07_THEOLOGY/` | L7 bounded public symbol |
-| `08_FRAMEWORK_SUPPORT/` | governance, operators, evidence, synthesis, agents (applications/translation/dissemination archived to `90_ARCHIVE/08_FRAMEWORK_SUPPORT/`) |
-| `11_UPLINK/` | compressed AI routing and packet archive |
-| `09_TOOLS/` | scripts, compilers, simulations, audit utilities, DAC frame |
-| `10_SEED/` | seed closure |
-| `12_PUBLIC_SITE/` | tracked public-site app source, frozen pending signed AIA migration to `02_SKYZAI/03_AIA/app/`; 2026-07-19: `/fable/` and `/practice/` funnel stages live |
-| `90_ARCHIVE/` | local doctrine archive |
-| `91_COMPATIBILITY/` | compatibility stubs only |
-
-## Depth-2 Hotspots
-
-| Path | Use |
-|---|---|
-| `08_FRAMEWORK_SUPPORT/01_GOVERNANCE/` | tree constitution, canonical agent pipeline, data-room map |
-| `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/` | Rosetta master source |
-| `08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` | dissolved 2026-05-31 (K3) (✗ archived/dissolved 2026-05-31 — governance is NOT here; live governance is 08_FRAMEWORK_SUPPORT/01_GOVERNANCE/); holds only the Definitive-One-Book move tombstone — the book moved to `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/`; the two superseded synthesis notes are archived under `90_ARCHIVE/00_K3_SWEEP_2026_05_31/08_FRAMEWORK_SUPPORT/05_SYNTHESIS/` |
-| `08_FRAMEWORK_SUPPORT/08_AGENTS/` | canonical L1-L7 agent specs |
-| `11_UPLINK/00_CORE/` | first-descent AI route map |
-| `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` | structure and runtime audit receipts |
-| `09_TOOLS/01_SCRIPTS/` | coordination, manifest, audit, and compile scripts |
-
-## Hard Stops
-
-- Do not move files out of this root to satisfy runtime convenience.
-- Do not edit compressed Uplink if the upstream source truth is wrong; repair
-  upstream first, then compile or update Uplink.
-- Do not create new peer roots for doctrine concepts.
-- Do not delete archive or compatibility material without a move packet,
-  tombstone, and audit receipt.
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/AGENT_README.md`
+Consequential action requires a complete `AuthorizationEnvelope`. D4 is actual,
+D5 is possible, the positive crossings are `μ₀…μ₄`, and `b₆`/`r₆`
+are non-μ interpretive edges.

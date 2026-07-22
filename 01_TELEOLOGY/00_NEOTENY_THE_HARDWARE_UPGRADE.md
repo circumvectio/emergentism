@@ -12,7 +12,7 @@ rosetta:
 
 **Status:** Interpretive bridge - internal doctrine support, 2026-05-30
 **Evidence tier:** [I] biological/civilizational synthesis; [C] for AI-alignment analogy or causal claims beyond metaphor.
-**See also:** [The Tantric Transmutation](00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [F5 Force Map](01_F5_FORCE_MAP_AND_EKTROPY.md)
+**See also:** [The Tantric Transmutation](00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [Theurgy and F5 projection](../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md)
 
 If Tantra and Vajrayana name the conscious transmutation of biological friction, **neoteny** can
 be read as the systemic condition that makes such transmutation scalable: delayed closure,
@@ -42,10 +42,12 @@ can accumulate, and cultural transfer can supplement slower genetic transfer.
 **[I]** Extended juvenile vulnerability forces a social response: adults must protect, teach, and
 coordinate care. This can be read as a stewardship condition at social scale.
 
-**Rosetta boundary [S/I]:** The operative coordinator remains L4 Arjuna/private-DAV K2. The Ṛṣi/Viṣṇu
-function witnesses, narrates, and preserves the pattern at L7; it does not replace the L4 decision.
-Culture, ritual, education, and shared values can prepare the field, but consequential collapse
-still routes through L4.
+**Rosetta boundary [S/I]:** L4 names finite commitment, not a sovereign person or
+work-approval office. Culture, ritual, education, and shared values can prepare
+the field, but consequential action requires a scoped `AuthorizationEnvelope`
+and leaves a commitment receipt distinct from the world's outcome receipt. The
+Ṛṣi/Viṣṇu function witnesses, narrates, and preserves the pattern at L7; it
+does not manufacture or authorize the consequence.
 
 ## 4. AI-Alignment Analogy
 
@@ -71,7 +73,7 @@ stewardship constraints instead of rewarding dominance or irreversible objective
 neoteny -> delayed closure / plasticity / care
 horizontal sexual selection -> friction / desire / rivalry
 tantric-vajrayana transmutation -> disciplined redirection
-L4 decision -> consequential private-DAV act under K2
+L4 decision -> accountable finite commitment under an AuthorizationEnvelope
 L7 narrative -> society remembers the pattern
 ```
 

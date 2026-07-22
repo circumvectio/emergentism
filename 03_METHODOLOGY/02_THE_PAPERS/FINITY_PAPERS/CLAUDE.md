@@ -1,73 +1,56 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Philosophy
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[S/I/C]"
-  canonical_phrase: "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "Finity Papers — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+# Finity Papers — Claude compatibility route
 
-# The Finity Papers — Agent First-Touch
+**Lane:** `03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS`
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+## Read first
 
-## Read order
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../../AGENTS.md)
+- [Kernel Index](../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-1. [`README.md`](README.md) — programme index, paper table, honesty headline
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. [`PAPER_I_THE_TWO_FACES_OF_NUMBER.md`](PAPER_I_THE_TWO_FACES_OF_NUMBER.md) — foundation; all others depend
+## Pure-worldview boundary
 
-## Scope
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- Five-paper programme on the geometry of `{0, 1, ∞}`.
-- Papers I–IV at SUBMISSION FORM v2 (adversarial referee pass 2026-05-31).
-- Paper V pre-registered prediction **preliminarily falsified** — kill criterion fired honestly.
-- Suda 2025 cited as independent formalisation; idea-priority is author's 2024 statement.
+## Epistemic contract
 
-## Programme dependency
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-| # | Paper | File | Role | Tier |
-|---|---|---|---|---|
-| **I** | The Two Faces of Number | [`PAPER_I_THE_TWO_FACES_OF_NUMBER.md`](PAPER_I_THE_TWO_FACES_OF_NUMBER.md) | Foundation | `[A]` math · `[S/I]` reading |
-| **II** | Division by Zero as Category-Correction | [`PAPER_II_DIVISION_BY_ZERO_AS_CATEGORY_CORRECTION.md`](PAPER_II_DIVISION_BY_ZERO_AS_CATEGORY_CORRECTION.md) | Depends on I | `[A]` · `[S/I]` |
-| **III** | A Product Constraint as a Structural Ethic | [`PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md`](PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md) | Depends on I | `[A]` algebra · `[S/I]` ethic |
-| **IV** | Tiered Claims Under Uncertainty | [`../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md`](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md) | Evidence protocol | `[S/B]` method |
-| **V** | The Equator at the Middle | [`../../03_PREREGISTRATIONS/00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md`](../../03_PREREGISTRATIONS/00_EQUATORIAL_BALANCE_MAXIMUM_PREREG.md) | Pre-registered prediction | `[C]` → pilot ran |
-| **V–R** | Pilot Results | [`../../03_PREREGISTRATIONS/01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md`](../../03_PREREGISTRATIONS/01_EQUATORIAL_BALANCE_MAXIMUM_RESULTS_PILOT.md) | Preliminary falsification | `[I]` pilot |
+## Rosetta dispatch
 
-## Routing
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Paper IV → [`../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md`](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_HONESTY_PROTOCOL_STANDALONE.md)
-- Paper V + Results → [`../../03_PREREGISTRATIONS/`](../../03_PREREGISTRATIONS/)
-- External sources → [`_SOURCES/README.md`](_SOURCES/README.md) (Suda PDFs with SHA-256)
-- Source truth lives upstream; repair source before patching summaries.
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Cross-cutting laws
+## Lane discipline
 
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Notation guardrail
-
-- `1 = 0 × ∞` is a **frame-register emblem**, never field arithmetic.
-- The geometry is a lens, never the Ground.
-
-## Honesty discipline
-
-- Paper V's middle-tertile prediction did **not** survive first contact with data.
-- The kill condition is recorded as a **preliminary falsification**, not reframed as support.
-- The standing requirement: a definitive blind-human study on the actual instruments.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

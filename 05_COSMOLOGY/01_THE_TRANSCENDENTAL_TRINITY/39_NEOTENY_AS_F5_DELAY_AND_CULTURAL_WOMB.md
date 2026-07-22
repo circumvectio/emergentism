@@ -26,7 +26,8 @@ rosetta:
 **Status:** Canonical L5 synthesis note
 **Date:** 2026-05-30
 **Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the Power-Max / `P_node = Φ × V` conditional inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims
-**Depends on:** [36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [37 Sexual Selection as Visible F5](37_SEXUAL_SELECTION_AS_VISIBLE_F5.md), [38 Tantra as F5-Redirection](38_TANTRA_AS_F5_REDIRECTION.md), [D4-D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Power-Max Lemma](../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md), [Neotenous Strategy Packet](../../11_UPLINK/60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md)
+**Depends on:** [36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [Tantric Transmutation — current interpretive source](../../01_TELEOLOGY/00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [D4-D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Power-Max Lemma](../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
+**Historical provenance:** [sexual-selection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md), [F5-redirection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/38_TANTRA_AS_F5_REDIRECTION.md), and [session packet](../../11_UPLINK/60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md). These records do not own the claim.
 **Kill Criteria:** If the comparative-development claims fail source review; if extended juvenile plasticity is not correlated with later generalized learning / symbolic capacity in the relevant species; if the framework cannot show how the early `V` deficit is carried without extraction; if designed institutional neoteny reliably produces dependency capture rather than sovereign return.
 
 > **Anchor Sequence:**
@@ -126,7 +127,7 @@ dependent. Without long horizon, the early viability deficit looks irrational.
 So neoteny requires constitutional support:
 
 - **η = 0**: care cannot hide extraction.
-- **K2**: the maturing node must become able to sign consequential branches.
+- **Accountable commitment**: the maturing node must learn to authorize, perform, and receipt consequential choices without laundering costs through others.
 - **K4**: the grown node must be able to leave the carrying field.
 - **K3**: memory preserves what the node contributed during development.
 - **A7**: developmental claims remain corrigible; early errors must be cut.

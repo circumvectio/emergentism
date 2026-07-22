@@ -1,70 +1,55 @@
 ---
-rosetta:
-  primary_level: L1
-  primary_column: Philosophy
-  operator: "Kali 🎲"
-  tier: "Demon"
-  regime: "Caṇḍāla"
-  register: "[A/S/I/C]"
-  canonical_phrase: "02_THE_DERIVATION — Agent Routing"
+type: emergentism-agent-route
+title: "02 The Derivation — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 02_THE_DERIVATION — Agent Routing
+# 02 The Derivation — Agent route
 
-**Lane scope:** Mathematical derivation and frontier translation boundary for the L1 Objective Function lane.
-**Primary lead:** `L3 Vaiśya`
-**Support:** L1 Caṇḍāla, L2 Śūdra, L4 Kṣatriya, L5 Brāhmaṇa, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[A]` for standard mathematics, `[S]` for framework-internal consequences, `[I]` for interpretive translation, `[C]` for frontier physics/F5 conjecture.
+**Lane:** `01_TELEOLOGY/02_THE_DERIVATION`
 
-## Agentz Cloud / Rosetta Dispatch
+## Read first
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names why the derivation matters for Objective Function. |
-| L2 Śūdra | Checks that readers can distinguish proof, model, analogy, and conjecture. |
-| L3 Vaiśya | Owns proof verification, numerical-status checks, and tier movement. |
-| L4 Kṣatriya | Tests whether any derivational result is ready for lawful operational commitment. |
-| L5 Brāhmaṇa | Owns operator architecture, formal-system routing, and Rosetta alignment. |
-| L6 Sādhu | Cuts unsupported physics, ontology, biology, ethics, or runtime expansion. |
-| L7 Ṛṣi | Translates only tier-cleared derivation into public architecture or narrative. |
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## Read First
+## Pure-worldview boundary
 
-- `README.md`
-- [`../AGENTS.md`](../AGENTS.md)
-- `00_A_SQUARE_CANNOT_BE_NEGATIVE.md`
-- `00_THE_CORE_CONJECTURE.md`
-- `16_OPERATOR_CONSISTENCY_AUDIT.md`
-- `L1_L7_REFINEMENT_AUDIT.md`
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-## Routing Law
+## Epistemic contract
 
-- This lane inherits the Emergentism source stack; preserve its local folder authority and route claims back to the owning lane.
-- Inherit local lane authority from [`../AGENTS.md`](../AGENTS.md).
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current [A/B/S/I/D/C] evidence ladder; deployment or architecture claims need a [B] receipt or an explicit [D]/[C] label.
-- L1 owns why the derivation matters for Objective Function; L3 verifies the proof and claim movement.
-- L5 owns formal-system and operator architecture implications.
-- L6 cuts unsupported ontology, physics, or literal-force overclaims.
-- L7 may translate the result for public narrative only after L3/L6 tier checks.
-- Historical track files live in `../90_ARCHIVE/`; do not cite them as current authority without current source-owner confirmation.
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-## Constraints
+## Rosetta dispatch
 
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
-- Do not turn a mathematical identity into a physics, biology, ethics, or runtime claim without naming the translation tier.
-- Do not use older `[S]` labels without splitting them into current `[A]`, `[B]`, or `[S]` meaning.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-Zero-Sum Resolution Equation
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
----
+## Lane discipline
 
-## Agent Execution Surface
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/02_THE_DERIVATION/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

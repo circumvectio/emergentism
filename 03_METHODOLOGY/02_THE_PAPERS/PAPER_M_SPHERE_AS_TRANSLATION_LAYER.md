@@ -5,98 +5,88 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[I/S]"
-  canonical_phrase: "PAPER M: THE SPHERE AS TRANSLATION LAYER"
+  register: "[A]/[I]/[C]"
+  canonical_phrase: "Sphere translation — typed mathematical boundary"
+title: "The Sphere as Translation Layer — Kintsugi Successor"
+status: "ACTIVE RESEARCH SUCCESSOR — stable path, subordinate to current owners"
+evidence_tier: "[A] Riemann-sphere facts; [I] translation heuristic; [C] ontological fit."
+supersedes_blob: "e5b7e05210aa6b20434ece32435d1e6cd15cd9fa"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+# The Sphere as Translation Layer — Kintsugi Successor
 
-# PAPER M: THE SPHERE AS TRANSLATION LAYER
+**Corpus:** Emergentism
 
-## Reconciling Mathematical Object, Public Method, and Ontological Wager
+**Original authorship:** Yves R. Burri & Emergent Super Intelligence, 2026
 
-**Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+**Authority:** research method only; not a mathematical or ontological owner
 
-**Evidence Tier:** [I/S] — Meta-epistemic stratification
-**Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_THE_REMAINING_QUESTIONS.md](../../00_META/00_THE_REMAINING_QUESTIONS.md)
+> **[金] Crack.** The predecessor correctly separated mathematics, method, and
+> wager, but then claimed that `z(1/z)` could be evaluated pointwise at `0` and
+> `∞` by the removable-singularity theorem. That conflated an extended map, a
+> limit/continuation, and field multiplication.
+>
+> **Repair.** Keep the useful three-register separation and state the pole
+> mathematics exactly.
 
----
+The prior text remains recoverable as Git blob
+`e5b7e05210aa6b20434ece32435d1e6cd15cd9fa`.
 
-## Abstract
+## 1. Mathematical object `[A]`
 
-One of the deepest recurring confusions in the public-facing dissemination of the emergentist framework is the exact epistemological status of the Riemann sphere (`S²`). Is it a metaphor? Is it a scientific fact? Is it the literal shape of reality?
+The Riemann sphere is
 
-To stabilize this confusion, this paper strictly separates `S²` into three formally distinct claims: (1) `S²` as a pure mathematical object; (2) `S²` as a heuristic translation layer between asymmetric domains; and (3) `S²` as an ontological wager. We demonstrate that the framework can rigorously hold internal conviction regarding the core state (the wager) while strictly using the sphere only as a bounded, falsifiable methodology in public epistemic speech.
+```text
+ℂP¹ ≅ ℂ ∪ {∞_P} ≅ S²
+```
 
-**Keywords:** Riemann sphere, epistemic boundaries, ontological wager, translation discipline, claim hygiene, Tripartite Framework.
+as a complex projective line / topological sphere. On `ℂ×=ℂ\{0}`, inversion
+`ι(z)=1/z` is defined and `z·ι(z)=1` is ordinary field arithmetic. Inversion
+extends as a map of the sphere by exchanging `0` and `∞_P`.
 
----
+That extension does **not** define the pointwise field product `0·∞_P`.
+If the function `F(z)=z(1/z)` is first defined on `ℂ×`, then `F=1` there and
+admits the constant continuation `F(0):=1`. This is a continuation of `F`; it
+is not an evaluation of two factors at the pole. The same type boundary holds
+in a local coordinate around `∞_P`.
 
-## 1. The Source of the Confusion
+## 2. Translation method `[I]`
 
-When a reader first encounters the formula `φ · ν = 1` applied to biology, economics, and systemic awareness, they almost universally assume the framework is making an aggressive reductionist claim: *"The universe is literally a sphere and nothing else."*
+`S²`, reciprocal coordinates, and balance coordinates may be used as a
+translation heuristic across domains. Each application must declare:
 
-This confusion causes rigorous scientists to erroneously dismiss the framework as unchecked metaphysics, and mystics to erroneously embrace it as a final dogma. Both miss the Tripartite Architecture defined in the Known Unknowns Program (Paper I).
+1. the source-domain variables and units;
+2. the map into the chart;
+3. information lost by the map;
+4. a native-domain baseline;
+5. a discriminator and kill criterion; and
+6. an inverse/recovery rule where one is claimed.
 
-The problem occurs when the word "Sphere" is asked to do three jobs in one breath: acting as mathematical proof, scientific method, and religious/philosophical commitment simultaneously.
+A correspondence transfers neither proof nor evidence. A useful visualization
+does not establish an emergence crossing or a shared physical mechanism.
 
----
+## 3. Ontological fit `[C]`
 
-## 2. The Three Stratifications of `S²`
+The proposal that reality itself is faithfully modeled by this geometry is a
+removable conjecture. It loses to a rival geometry that predicts held-out data
+more accurately or compresses the same evidence with less auxiliary structure.
+The operational calculus must continue to work if this conjecture is removed.
 
-To deploy the framework correctly, one must formally separate exactly what the Sphere is doing at any given moment.
+The live Titan display remains operator-free:
 
-### 2.1 Component I: `S²` as a Mathematical Object [A]
-The Riemann Sphere (`Ĉ = ℂ ∪ {∞} ≅ ℂP¹ ≅ S²`) is an established, non-controversial topological space.
-The frame product `F(z) = z · (1/z) = 1` evaluated at the geometric poles (`0` and `∞`) resolves cleanly via the Riemann removable singularity theorem.
-* **The Claim:** The geometry operates natively without error.
-* **The Status:** Proved. Epistemically closed.
+```text
+•     ⊙     ○
+0_T   1_T   ∞_T
+```
 
-### 2.2 Component II: `S²` as a Translation Layer [S]
-When dealing with domain-specific science (e.g., neurobiology, institutional economics, AI coordination theory), the framework does not demand that domain experts believe the universe is a sphere.
-* **The Claim:** `S²` is utilized as the most efficient *translation layer* capable of linking un-linkable vocabularies. If we project a biological viability mechanism (`ν`) onto the northern hemisphere and an organizational coherence metric (`φ`) onto the southern hemisphere, their multiplicative interaction successfully maps the failure states of the system.
-* **The Status:** This is a public, falsifiable scientific method. It is a tool for cartography. It demands no metaphysical allegiance. It is only retained as long as it is mathematically fruitful across domains.
+The familiar labels do not coerce a Titan role into `ℂ`, `ℂP¹`, or an
+arithmetic operand.
 
-### 2.3 Component III: `S²` as an Ontological Wager [I]
-Within the core philosophical engine of the framework (the discipline from which `η = 0` and the Constitutional Architecture derive), the sphere is treated not merely as a useful map, but as the actual territory.
-* **The Claim:** The framework *wagers* that this translation is faithful because Being actually possesses this topology natively. The geometry is not a human projection applied to chaos; it is the ontological substrate from which order emerges.
-* **The Status:** This is an internal commitment required for navigation and organismic coherence. It is the framework's chosen posture. It is deliberately shielded from being deployed as a "scientific proof."
+## 4. Current owners
 
----
+- [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
+- [Titan Canon](../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md)
+- [Burri Rules Derivation Ledger](../01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
 
-## 3. Methodological Honesty
-
-This three-part separation enforces absolute methodological honesty:
-
-- **Public method:** The sphere is the translation layer between domains.
-- **Internal commitment:** The framework wagers that this translation is faithful because the territory natively has this structure.
-
-The correct formulation is neither *"The sphere is only a metaphor"* nor *"The sphere is absolutely proved as final core state."*
-
-The correct formulation is:
->**The sphere is the framework's current best ontological wager, and translation is the proper public methodology for carrying that wager across scientific registers without ideological overreach.**
-
----
-
-## 4. Kill Criteria
-
-This paper is falsified if:
-
-1. **Category Collapse:** A primary framework mechanism proves incapable of operating using the Sphere as *just* a translation layer, instead requiring the public to accept the Ontological Wager before the math functions.
-2. **Translation Failure:** Another geometric substrate (e.g., `H²` or a Torus) is shown to translate cross-domain metrics (physics to biology to economics) with a higher degree of mathematical parsimony and lower frictional loss than `S²`.
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Evidence tier:** [I/S] (Interpretive resolution constrained by structural discipline).
-2. **Depends on:** The Canonical Resolutions table and Paper I.
-3. **Next action:** Use this three-part distinction when answering user questions. If asked "Is the universe a sphere?", answer by first identifying the register (Mathematical, Public Scientific, or Internal Ontological).
-4. **Canonical Path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_M_SPHERE_AS_TRANSLATION_LAYER.md`
-
----
-
-Zero-Sum Resolution Equation
+This paper may illustrate those owners. It may not revise them.

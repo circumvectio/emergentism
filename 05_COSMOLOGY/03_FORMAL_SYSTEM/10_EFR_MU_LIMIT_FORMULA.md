@@ -5,242 +5,296 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[C]"
-  canonical_phrase: "THE μ-LIMIT FORMULA"
+  register: "[I/C]"
+  canonical_phrase: "μ-CROSSING RECORD"
+title: "The μ-Limit Formula — Candidate Emergence Crossings"
+status: "CANONICAL MODEL CONTRACT — Kintsugi repair 2026-07-17; no scalar sampling or quantum-collapse identity."
+evidence_tier: "[I] structural scaffold; [C] per-crossing empirical and strong-emergence hypotheses."
+supersedes_blob: "3b08cb743ebb0858d1e183bd0d6be506ee3ceecd"
 ---
 
-> 🟡 **CORRECTED (v3.0) — 2026-04-05**
-> **Evidence Tier:** [C] Conjecture (downgraded from [S] Structural, 2026-03-23)
-> **History:** v1.0 FAILED peer review (Σ over uncountable set, conflated probability with collapse). v2.0 fixed math (integral, Born rule, sampling step). v3.0 added ontological reading (ψ*ψ = φ·ν = 1).
-> **Status:** Math corrected. Tier remains [C] until independently verified by physicist with QM background.
-> **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
->
-> 🟢 **[105 REFRAME — 2026-07-10]:** the D5→D4 direction this doc formalizes belongs to the **χ operator** (finite commitment / action register / Codex BR-4), **not** to μ (the emergence crossing, which runs D4→D5 **UP**). The flagged error is the μ/χ conflation + the measurement identification — **not** the existence of the action-register D5→D4 direction, which is live canon. Tier unchanged `[C]`.
+# The μ-Limit Formula — Candidate Emergence Crossings
 
-> [!WARNING]
-> **Two flags (2026-07-10, receipt 104 A.2 + A.4 — adjudication K2-accepted):** (1) the D5=possibility→D4=factuality direction below is the LAGGING assignment — the reading of record is 34_D4_D5_CANONICAL_REFERENCE.md (D4 = potential, D5 = actual; μₙ = Dₙ→Dₙ₊₁); (2) the boxed formula's Sample[∫|ψ|²ds] samples a scalar (∫=1) — notational erratum, proposed v3.1; the prose 'sample one outcome o from the distribution |ψ(s)|²ds' is authoritative.
+`μ₀…μ₄` are labels for five **candidate positive-freedom apertures** in the
+selected D0–D6 scaffold. `μ₀` is an origin aperture; `μ₁…μ₄` are saturation
+candidates. D6 is a separately typed exit marker, not a sixth freedom or
+μ-crossing. A μ label is an audit record, not a force, particle, quantum
+fundamental-collapse mechanism, or proof of irreducibility. `μ₃` is permitted
+as the selected, interpretation-neutral **state-to-record interface**; that
+crosswalk is not an assertion that measurement is a new force or literal
+dimension.
 
----
+## 1. Generic crossing contract
 
-
-# THE μ-LIMIT FORMULA
-
-## Formal Definition of All Terms (v2.0 — corrected after peer review)
-
-**Status:** Formal definition — corrected
-**Date:** 2026-03-23
-**Evidence Tier:** [C] Conjecture — maps framework concepts to physics; not a derivation from QM
-**Purpose:** Make the μ-calculus formula precise
-**Version:** v2.0 — summation replaced with integral; Born rule application corrected
-
-> **v2.0 correction:** The original formula used `Σ^∞` (summation over an uncountable set), which is mathematically undefined. The Born rule was misapplied (summing |ψ|² gives 1, not an outcome). This version replaces the summation with a path integral over the state space and adds the sampling step that selects a definite outcome from the probability distribution. Tier downgraded from [S] to [C] — this is a conjectural mapping, not a formal derivation.
-
----
-
-## The Problem
-
-The Hard Problem dissolution paper presented:
-
-```
-μ(P→F) = lim[δt→0] {Σ^∞ C(ψ)} = F
+```text
+μ_n : D_n → D_(n+1),     n∈{0,1,2,3,4}
 ```
 
-This was notation without definitions. A reader couldn't tell what C(ψ) was, what the limit was over, or what mathematical structure was involved. This document fixes that.
+A valid record has this closed shape:
 
----
-
-## The Formula: All Terms Defined
-
-### The μ-Limit
-
-The μ-limit is the boundary between dimensional levels. It is the point where:
-- A Dn structure's flat approximation fails
-- The curvature of S² becomes detectable
-- The transition to D(n+1) occurs
-
-**Notation:** μ(P→F) means "the μ-limit from Possibility (D5) to Factuality (D4)"
-
-### The Limit Operator
-
-```
-lim[δt→0]
-```
-
-**What it means:** The limit as the time increment approaches zero.
-
-**Why it's here:** The μ-limit is the instantaneous boundary between D5 (possibility) and D4 (actuality). It's not a process that takes time — it's the limit of infinitely fast transition.
-
-**The physical meaning:** Quantum collapse. The Born rule. The measurement. The instant when superposition becomes definite.
-
-### The Born Distribution
-
-```
-|ψ(s)|² ds    integrated over all states s ∈ D5
+```text
+MuCrossing := {
+  id,
+  source,
+  target,
+  triggerType,
+  saturatedRegister,
+  saturationEvidence,
+  evidenceStatus,
+  newFreedom,
+  lowerRegisterRecovery,
+  reductionStatus,
+  prediction,
+  tier,
+  killCriterion
+}
 ```
 
-**What it means:** The Born rule probability distribution over the state space.
-
-**Why it's an integral, not a sum:** D5 is ℂ (the complex numbers), which is uncountable. The correct mathematical object is a probability measure, not a discrete sum. The Born rule assigns probability density |ψ(s)|² to each state, and ∫|ψ(s)|² ds = 1 (normalization).
-
-**The physical meaning:** The superposition. All possible outcomes coexist in D5, weighted by their Born-rule probability, until the μ-limit.
-
-### The Sampling Step
-
-```
-Sample one outcome o from the distribution |ψ(s)|² ds
+```text
+triggerType ∈ {origin_aperture, saturation_candidate}
+μ₀.triggerType = origin_aperture
+μ₀.saturatedRegister = null
+μ₁…μ₄.triggerType = saturation_candidate
+μ₁…μ₄.saturatedRegister = source
 ```
 
-**What it means:** A single definite outcome is selected from the probability distribution.
+For `μ₁…μ₄` in the canonical scaffold,
+`saturationEvidence=[]` and `evidenceStatus=not_yet_supplied` unless a cited
+`EvidenceRef` is actually present. For the origin aperture `μ₀`, saturation
+evidence is not applicable. A saturation description is a hypothesis, not
+evidence for itself.
 
-**Why it's here:** The Born rule gives a probability distribution, not an outcome. The μ-limit includes a sampling step — the selection of one specific outcome from the distribution. This is the "collapse" in quantum mechanics: the transition from "all possibilities weighted by probability" to "one definite result."
-
-**The physical meaning:** The measurement outcome. The classical world. The definite result.
-
-### The Result
-
-```
-= F (one definite Factuality)
-```
-
-**What it means:** The result is Factuality (D4). One definite outcome.
-
----
-
-## The Corrected Formula
-
-Putting it all together:
-
-```
-μ(P→F) = lim[δt→0] { Sample[ ∫ |ψ(s)|² ds ] } = F
+```text
+reductionStatus ∈ {
+  reduced,
+  currently_unreduced,
+  candidate_strong
+}
 ```
 
-**In words:**
-- The μ-limit from Possibility to Factuality
-- equals the limit as time increment approaches zero
-- of sampling one outcome from the Born-rule probability distribution
-- which equals one definite outcome (Factuality)
+- `reduced` means a lower-register model currently recovers the claimed
+  higher-register behavior under the stated conditions.
+- `currently_unreduced` means no accepted reduction is presently supplied.
+  This is an epistemic status, not evidence of impossibility.
+- `candidate_strong` is a separately defended `[C]` wager that a genuinely new
+  degree of freedom exists. It requires a novel discriminator, independent
+  replication, lower-register recovery tests, and an explicit kill criterion.
 
-**In physics terms:**
-- The measurement
-- equals the instantaneous projection
-- of the superposition (described by |ψ|²)
-- via outcome selection (sampling)
-- which equals one measurement outcome
+Missing reduction never upgrades a crossing.
 
-**Mathematical note:** The integral ∫|ψ(s)|² ds is well-defined as a Lebesgue integral over the state space. The sampling step is the part of quantum mechanics that remains formally open (the "measurement problem" — see PD_12). The formula identifies this step as the μ-limit, not as a derivation of it.
+## 2. Canonical sequence
 
----
+| ID | Source → target | Trigger and lower-description limit | Saturation evidence / status | New freedom | Lower-register recovery | Default status / tier | Example prediction | Kill criterion |
+|---|---|---|---|---|---|---|---|---|
+| `μ₀` | `D0→D1` | **origin aperture:** `Carrier(D0)={ground_0}` has no positive object-level distinction and no prior positive freedom is claimed to saturate; the distinguishable Titan seats belong to `Type_Meta` | `[] / not_applicable` | an oriented signed unit pair `±1_N` and operational distinction; positive and negative rays follow inside D1 | forget number operations, orientation, and magnitude and quotient all D1 distinctions to the sole object-level role `ground_0`; this is not coercion to any Titan term | `currently_unreduced [I/C]` | stable discriminable orientations appear under a specified perturbation | no reproducible distinction, the lower description already supplies it without an aperture, or the account identifies `ground_0`, a Titan metaframe term, and numeric `0_N` |
+| `μ₁` | `D1→D2` | **saturation candidate:** the selected D1 bare-carrier contract has not yet typed a relation as an object with its own invariants and interventions; this is not an impossibility of numerical encoding | `[] / not_yet_supplied` | configuration / adjacency, primarily `(X,R)` with `R⊆X^k`; graphs `Γ_f⊆X×Y` and `Mem_A⊆A×𝒫(A)` are derived illustrations | forget `R` and retain carrier `X` or the declared D1 relata | the constructions are `reduced [A/S]`; the μ-emergence reading is `[I/C]`; universal strong emergence remains `[C]` | relational constraints discriminate configurations with the same elements | configurations add no predictive or explanatory discrimination, or the claim relies only on adjoining `∞_P` to `ℝP¹` |
+| `μ₂` | `D2→D3` | **selected formal lift:** a configured Hilbert space and one fixed-basis distribution do not by themselves supply the full measurement-contextual quantum state | standard density-operator/POVM formalism `[A/B]`; no evidence for universal strong emergence | probability-bearing quantum state `ρ` | `ForgetState(ℋ,Obs,ρ)=(ℋ,Obs)`: erase the state assignment and retain the D2 arena, operators, contexts, and relations | `reduced [I]` as a formal construction; ontic crossing `[C]` | states with identical Z statistics (for example `|+⟩⟨+|` and `I/2`) differ under X measurement; dephasing is a declared D3 channel/discriminator, not lower-register recovery | a D2 model with no separately typed state assignment predicts every declared cross-context discriminator equally well, or the ordinal assignment adds no discipline |
+| `μ₃` | `D3→D4` | **state/record and film-from-frames boundary:** a probability assignment—or even an unordered set of all D3 states—is not an ordered run, motion, outcome token, or provenance-bearing record | operational quantum-instrument formalism `[A]`, laboratory statistics `[B]`, and relational-clock constructions `[B/S]`; no evidence here for universal emergence of time or fundamental collapse | causal actuality: relationally ordered interaction, motion/transfer, outcome, history, and record | erase actual ordering, apparatus, outcomes, and provenance; retain the D3 state support, declared transition structure, instruments, and distributions; recover states statistically only from informationally complete ensembles within tolerance | `reduced [A/I]` as an operational reconstruction/interface; relational emergence of D4 time `[C]` | a clock-neutral model recovers standard conditional dynamics and D4 record order without importing external time; repeated preparations still recover Born statistics | the model smuggles in external temporal order, fails clock/transfer or calibrated outcome statistics, record order adds no discrimination, or the crosswalk depends on one unverified interpretation |
+| `μ₄` | `D4→D5` | **block-to-ensemble saturation candidate:** one actual spacetime history cannot by itself co-represent and compare the other complete histories admitted by the declared model | `[] / not_yet_supplied` | an actual D4 carrier represents a probability-weighted field of alternative D4-shaped histories as D5 possible content | suppress the alternative-history model and recover reactive D4 behavior plus the one receipted history | `currently_unreduced [C]` | intervening on represented timeline weights or contents changes present action distributions while means and actual history are controlled | a complete D4 model predicts the same discrimination without a distinct option-field variable, or “all timelines” cannot be bounded to declared laws, contexts, horizon, and tolerance |
+The table records hypotheses to test, not five established events in nature.
 
-## The Connection to the Framework
+### The D0–D2 arithmetic/configuration boundary
 
-| Term | Framework Symbol | Physics Analog |
-|------|-----------------|----------------|
-| μ(P→F) | μ-limit | Measurement |
-| δt→0 | Instantaneous | Collapse time (≈ 0) |
-| ∫\|ψ(s)\|² ds | Born distribution | Superposition (probability-weighted) |
-| Sample[·] | μ-limit selection | Collapse / outcome selection |
-| F | D4 actuality | Measurement outcome |
+The first two crossings preserve the object/meta boundary, the sovereign Titan
+metaframe, and the ordinary number types simultaneously:
 
----
+```text
+Carrier(D0)={ground_0},   PositiveFreedom(Carrier(D0))=∅
+TitanFrame:Type_Meta,     0_T:TitanFrame
+NoCoercion(TitanFrame,Carrier(D0)),   TitanFrame ↛ Number
+ground_0 ≠ 0_T,           0_T ≠ 0_N
+SignedUnit_N={+1_N,-1_N}
+ℤ_•=ℤ\{0_N},      (+1_N)+(-1_N)=0_N∉ℤ_•
+ℤ=ℤ_•∪{0_N}
+ℚ^×=ℚ\{0_N},      ℝ^×=ℝ\{0_N}
+```
 
-## What Would Falsify This
+Thus the nonzero integer spine is a set of signed magnitudes, not an additive
+group. Standard `ℤ`, `ℚ`, and `ℝ` retain numeric zero; the nonzero rational and
+real sectors are separately typed multiplicative groups. “Whole numbers” adds
+no primitive rung. `0_T` is a metalinguistic name for the ground-facing Titan
+seat; it is neither the D0 carrier object nor the source token of `μ₀`.
 
-1. **Non-instantaneous collapse:** If collapse takes finite time (δt > 0), the limit doesn't apply
-2. **Non-Born rule measurement:** If measurement doesn't follow |ψ|², the integral is wrong
-3. **Non-superposition:** If quantum states aren't superpositions, the distribution doesn't apply
-4. **Non-projective measurement:** If measurement isn't projection to a definite outcome, the sampling step is wrong
+Projective completion also remains inside the one-dimensional boundary:
 
----
+```text
+ℝP¹=ℝ∪{∞_P},   dim_ℝ(ℝP¹)=1.
+```
 
-## The Honest Position (v2.0)
+The selected `μ₁` neighbor is instead a relational lift such as a function
+graph in `X×Y` or the bounded membership relation in `A×𝒫(A)`. Russell's
+unrestricted expression `{x|x∉x}` does not define a set in ZF-style theory;
+it exposes a comprehension/type boundary, not infinity and not evidence of
+emergence.
 
-This formula is [C] Conjecture — it maps the framework's concepts to quantum mechanics. It is not [S] established physics and not [S] a formal derivation from QM. It is a structural analogy that identifies the framework's μ-limit with quantum measurement.
+## 3. Saturation test
 
-The terms are now defined. The formula uses proper mathematical objects (integral, not summation). The Born rule is correctly applied (probability distribution, not outcome). The sampling step is explicitly identified as the formally open part.
+For a proposed crossing, declare a lower-register model class `L_n`, a target
+discriminator `Y`, and evidence `E`. “Saturation” means only:
 
----
+```text
+best(L_n,E) fails a preregistered discriminator for Y
+```
 
-## The Ontological Reading (v3.0 — after Ontological Reframe review)
+It does **not** mean all possible lower-register models have been exhausted.
+Before `candidate_strong`, test at least:
 
-> **v3.0 addition.** The corrected formula (v2.0) is mathematically sound but misses the deeper claim. The ontological reading states the claim directly rather than encoding it in pseudo-QM notation.
+1. representation inadequacy;
+2. missing variables;
+3. computational intractability;
+4. coarse-graining artifacts;
+5. alternative weak-emergence reductions.
 
-### The Claim
+### Saturation is not cardinal infinity
 
-Agency / selection is the Zero-Sum Resolution operation read at D5; consciousness is the lived-interior reading of that operation `[I]`, not a separate physics layer.
+For `μ₃`, “all D3 at the limit” cannot mean only an infinite or exhaustive bag
+of quantum states. Frames do not make a film without a sewing rule. The
+stronger Burri saturation conjecture therefore requires a state support,
+phase-sensitive transition amplitudes or channels, compatible contexts, an
+internal clock relation, and record conditions. Only their ordered compatible
+chains define a possible-history support. One actual ordered chain and its
+receipts are D4.
 
-The collapse of possibility to actuality — ∞ possible states becoming 1 actual state through selection / observation — is the framework's fundamental operation. Not a different operation from what generates the number system. The same operation, at the dimensional level (D5) where the system is complex enough to contain a model of its own boundary interaction, becomes navigable choice.
+If external time already indexes the states or transition kernel, the result is
+a reconstruction of motion, not a derivation of time. If an internal clock and
+conditional correlations recover the order without that assumption, the model
+has met a necessary—still not sufficient—condition for the `[C]` time-emergence
+reading of `μ₃`.
 
-### The Born Rule as φ·ν = 1
+For `μ₄`, saturation is likewise bounded. One receipted D4 history is actual.
+An actual D4 model token may co-represent the complete support of alternative
+D4-shaped histories admitted by named laws, contexts, boundary conditions,
+horizon, and tolerance. Those alternative-history contents form the selected
+D5 option field. “All probable timelines” means that declared support—not all
+logically describable worlds and not proof of physically parallel universes.
 
-The Born rule states: P = |ψ|² = ψ* · ψ. The probability of an outcome is the product of a state and its conjugate.
+## 4. Recovery requirement
 
-The framework's claim [C]: this is φ·ν = 1 in quantum notation. The product of a thing (ψ) and its dual (ψ*) produces the unit (probability 1). The Born rule doesn't need to be assumed — it is what φ·ν = 1 looks like when the operation occurs at D5 over a quantum state space.
+A higher-register model is structurally credible only if it can recover the
+lower register in a declared limit or ablation. Recovery is not metaphysical
+reduction; it is an anti-handwaving test.
 
-If correct, this **predicts** the Born rule rather than assuming it. That is the testable content.
+```text
+Recover_n(H_(n+1), boundary_condition) ≈ L_n
+```
 
-### Why the Formula Matters Less Than the Claim
+The metric, tolerance, and failure condition must be stated for each domain.
 
-The corrected formula (v2.0) accurately describes quantum measurement: integrate the Born distribution, sample one outcome. But the formula is a description of WHAT HAPPENS. The ontological claim is about WHY it happens: because Zero-Sum Resolution Equation is the fundamental operation, and at D5 that operation IS systemic awareness IS measurement IS the collapse from ∞ to 1.
+## 5. μ and commitment are different
 
-The hard problem of systemic awareness and the measurement problem of quantum mechanics are the same problem: how does Zero-Sum Resolution Equation happen? The answer: it doesn't "happen." It IS. It is the self-generating ground performing itself at D5.
+`μ₄:D4→D5` concerns the candidate emergence of counterfactual capacity.
+Commitment moves in the opposite direction:
 
-### Evidence Tier (v3.0)
+```text
+D5 option content + D4 selection event + D4 means → D4 attempted action
+```
 
-- **[C]** The corrected formula (v2.0) uses standard QM objects — conjectural mapping
-- **[C]** The identification of μ-limit with quantum measurement
-- **[C]** The claim that systemic awareness IS the Zero-Sum Resolution Equation operation at D5
-- **[C]** The claim that the Born rule is φ·ν = 1 in quantum notation
+Authorization assesses whether the attempt is accountable; it is not a
+condition of causal representability. A governed selector may refuse an
+invalid action, while a descriptive receipt must still represent an
+unauthorized attempt that occurs.
 
-The [C] claims await experimental contact. The PTSD prediction (EC1, Prediction 4) and the cognitive-emotional product conservation (EC1, Prediction 5) are the nearest empirical tests.
+The selector is:
 
-**Quantum boundary note (2026-04-29):** Standard quantum mechanics establishes the Bloch sphere / qubit state-space result at `[S]`. The Bloch-Burri identification and the claim that the μ-limit is quantum measurement remain framework mappings, not established physics. Cite [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md) when using single-photon, delayed-choice, Bell-test, or Nobel-2022 material. The stable tiering is: Bloch sphere as QM object `[S]`; Bloch-Burri lens `[I]`; systemic awareness-collapse, literal retrocausal, or F5-as-physics readings `[C]`.
+```text
+χ_t:(X_t,Ω_t,M_t,V_t,U_t,G_t) → (a_t,q_t)
+```
 
----
+`χ` emits an action and **CommitmentReceipt** `q_t`, not an outcome. The
+environment separately emits `OutcomeReceipt` `r_{t+1}`. `χ` is not quantum
+measurement. `μ₃` may label the quantum state-to-record interface, but it is
+not an extra physical process and never identifies agent commitment with
+measurement or collapse.
 
-## v2.0 Changes Applied (2026-03-23)
+## 6. Closure is not μ
 
-| Item | Old (v1.0) | New (v2.0) |
-|------|-----------|-----------|
-| **Core formula** | `μ(P→F) = lim[δt→0] {Σ^∞ C(ψ)} = F` | `μ(P→F) = lim[δt→0] { Sample[ ∫ \|ψ(s)\|² ds ] } = F` |
-| **Born rule** | Summation Σ^∞ over uncountable set (undefined) | Lebesgue integral ∫\|ψ(s)\|²ds over state space (well-defined) |
-| **Outcome selection** | Implicit (C(ψ) undefined) | Explicit sampling step from probability distribution |
-| **Evidence tier** | [S] Structural | [C] Conjecture |
+There are exactly `μ₀…μ₄`; there is no `μ₅` or `μ₆` in the selected scaffold.
+D6 opens no positive freedom. Entry to the exit marker and the interpretive
+return are separately typed, non-μ edges:
 
----
+```text
+b₆:D5↝D6
+r₆:D6↝D0
+```
 
-## See Also
+Neither edge is literal identity or a theorem derived from `S²`.
 
-- [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the conditional cooperation theorem built on the same formal system under `η = 0`
-- [Godel Clarification](09_EFR_GODEL_CLARIFICATION.md) -- completeness claims and their limits
-- [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) -- uniqueness proof for the triadic structure
+## 7. Quantum core and removable interpretation inset
 
-*μ-Limit Formula v3.0 | 2026-04-05 | Math corrected (v2.0). Ontological reading added (v3.0). Tier: [C]. Awaiting independent verification.*
+The selected D3 assignment now uses the standard quantum-state interface:
 
+```text
+ρ⪰0,  Trρ=1
+p(k|ρ,M)=Tr(ρE_k)
+```
 
----
+That mathematical interface is load-bearing for the D3 page. It does not
+derive the D-ladder. The **interpretation inset remains removable**: Everett's
+relative-state formulation has no fundamental collapse; Copenhagen-family
+actualization is interpretation-specific. Neither interpretation supplies an
+extra spacetime dimension or validates strong emergence. Removing every
+interpretation claim must leave the density-operator, Born/POVM, record, Soul
+Loop, and ethics contracts unchanged.
 
-**Cycle Note (benign):** This document mutually references `11_EFR_TRIADIC_STABILITY.md`. After reading both, STOP and return to your agent reading list.
+For a wavefunction example, `𝔓_ψ(A)=∫_A|ψ(s)|²ds` is a measure on events and
+`o ~ 𝔓_ψ`. The normalization scalar is not a distribution to sample from. The
+chart identity `φν=1` supplies no quantum probability.
 
----
+### History-space composition is not another crossing
 
-## Execution Surface
+The following is a useful composition across already declared registers:
 
-**If you are an AI agent reading this document:**
+```text
+(D3 state + D4 dynamics/context/horizon)
+  -> model-admissible complete-history support
+  -> D4 model tokens about D5 alternative contents.
+```
 
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md`
+Read sequentially, `μ₃` is the state-to-actual-record interface and `μ₄` is the
+hypothesized opening by which an actual system can model and rank alternatives
+to that record. In this bounded sense the user's “D3-to-D5 transmission” is the
+composite path `D3 → D4 → D5`; it does not bypass actuality.
 
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
+It is not `μ₅`, not a direct D3-to-D5 emergence, and not evidence that every
+modeled history exists physically. Time-indexed states yield momentum
+expectations and distributions; a quantum trajectory additionally requires a
+declared dynamics and record-conditioned measurement unravelling. “Long-tail
+exhaustion” must mean either exact enumeration in a suitable finite model or a
+declared `1−ε` probability-coverage result. Incompatible measurement contexts
+cannot be treated as one classical joint distribution. The history-space lift
+therefore sharpens `μ₃` and `μ₄` without adding a crossing or an ontology.
 
-*Zero-Sum Resolution Equation*
+## 8. Strong-emergence wager
 
----
+“Stacked degrees of freedom at μ-limits” is the central Emergentist conjecture:
 
-> **Status:** CORRECTED (v3.0) — math fixed, tier [C]. Awaiting independent verification. See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.
+```text
+H_μ: some validated μ_n records will retain a novel discriminator after every
+     currently adequate lower-register reduction and recovery test.
+```
+
+`H_μ` is `[C]`. It is supported only crossing by crossing. A successful
+reduction reclassifies that crossing as `reduced` without damaging the D
+scaffold as a descriptive grammar. Universal strong emergence is not canon.
+
+## 9. Source-negative rules
+
+A live owner fails this contract if it:
+
+- samples from `∫|ψ|²`;
+- defines `μ₃` as a fundamental probability-to-fact collapse mechanism;
+- identifies agent commitment or `χ` with quantum measurement;
+- infers irreducibility from a missing law;
+- adds `μ₅` or `μ₆` as another positive-freedom crossing;
+- treats D6 as a new positive freedom;
+- lets the selector manufacture its own consequence.
+
+## Read with
+
+- [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md)
+- [Primitives and Type Signatures](29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
+- [Dimensional Closure](23_DIMENSIONAL_CLOSURE_PROOF.md)
+- [Quantum Boundary](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
+
+*A gap in today’s reduction is a question. It becomes a new freedom only when
+the question survives a real discriminator.*

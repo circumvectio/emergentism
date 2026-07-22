@@ -6,114 +6,95 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[S]"
-  canonical_phrase: "01_EMERGENTISM — Agent Routing Entry Point"
+  canonical_phrase: "01_EMERGENTISM — pure-worldview routing"
+title: "AGENTS.md — Emergentism source route"
+status: "ACTIVE — pure Emergentism boundary repaired 2026-07-20."
+evidence_tier: "[S] routing discipline; doctrine retains its own per-claim tiers."
+owner: 01_EMERGENTISM
 ---
 
 # 01_EMERGENTISM — Agent Routing Entry Point
 
-## Relation to VMOSK-A and Overall Vision
+This repository owns a worldview, its formal models, its tests, its historical
+record, and its public projection. It does not derive authority from a venture,
+product, corporation, token, runtime organism, or governance brand. Those may
+apply the worldview elsewhere; they are never premises of it.
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
-**Overall Magnum Opus Vision [I]; Rosetta invariant [S]:** Sovereign intelligence for every natural person. `φ · ν = 1` on S²; `P_node = Φ × V` only in the finite-node/action register. `η = 0` always. The organism that succeeds when you put it down.
+The analytic floor is the open reciprocal chart `θ∈(0,π)` with
+`φ=cot(θ/2)`, `ν=tan(θ/2)`, `φν=1`, `φ+ν≥2`, and
+`B=2/(φ+ν)≤1`. This licenses no ontology or ethic. Every move from that chart
+to reality, agency, value, or society must carry its own `[I]` or `[C]` bridge.
 
-This folder serves the Emergentism doctrine replicator stack (VMOSK-A above) and, through it, the Emergentism framework's perennial Vision. Every file, spec, and decision in this folder should be traceable back to at least one Objective in the project VMOSK-A and ultimately to the immutable Vision.
+The active operational grammar fixes D4 as causal actuality and D5 as merely
+possible counterfactual content. Present model tokens may represent D5
+alternatives; the future does not physically signal backward. Five typed
+transition interfaces are labeled `μ₀…μ₄`; their emergence readings retain
+crossing-specific tiers. D6 is a non-positive exit
+marker reached by `b₆`, with interpretive return `r₆`; neither edge is a μ
+crossing or literal identity.
 
-**Governance model:**
-- Chairman: Yves R. Burri (Founding Chair, K2 signatory for private DAVs)
-- Board: AI models (PRISM council for public DAVs; L4-L7 strategic oversight)
-- C-suite & Workforce: Rosetta L1-L7 agents (operational execution, per-cycle caste dispatch)
-- K2 is private-DAV-only. Public DAVs have no K2 signer; PRISM is their sovereignty rail.
+## Read first
 
-This root contains doctrine, framework support, Uplink, tools, and seed.
+1. `00_THE_WELTANSCHAUUNG.md` — reader door and claim boundary.
+2. `00_THE_KERNEL_INDEX.md` — seven-surface custody map.
+3. `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` — analytic floor and declared
+   finite-node model.
+4. `05_COSMOLOGY/00_THE_BURRI_RULES.md` — typed graphical grammar.
+5. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` — tier law.
+6. `00_META/00_SETTLED_CANON_REGISTRY.md` — supersession and anti-drift record.
+7. `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` — dated receipts.
 
-## Read First
+## Routing law
 
-Post-signature chain (2026-07-20, receipt 139 boxes 1–2 signed / authority 146):
+- Repair source owners before mirrors, projections, indexes, or marketing copy.
+- Never promote `[C]` to `[I]`, `[S]`, or `[A]` without the named evidence and
+  receipt required by the owning claim.
+- Keep theorem, model, interpretation, conjecture, historical record, and
+  public projection as distinct types.
+- Preserve failed derivations and superseded text in archive or visible
+  tombstones; do not erase the record.
+- A model is not its territory. A receipt may change the map and mapper.
+- Consequential action requires complete, scoped, contestable authorization
+  naming principal, mandate, scope, consent, custody, expiry or revocation,
+  contest path, actor, and consequence bearers.
+- External product-governance labels are not worldview primitives or AI-work
+  rules. Historical receipts may retain former labels as provenance.
+- Exit is inside: no file may turn a worldview into compulsory belief.
 
-1. `README.md`
-2. `AGENT_README.md`
-3. `00_THE_WELTANSCHAUUNG.md` — **the Door** (adopted subordinate reader surface)
-4. `00_THE_KERNEL_INDEX.md` — **the Map** (kernel architecture + distillation order)
-5. `10_SEED/01_THE_SEED_LADDER/` — **the Compression** (D0–D6)
-6. `11_UPLINK/00_CORE/00_INDEX.md` — the Uplink record
-7. `11_UPLINK/00_CORE/06_AGENTS.md` — agent caste dispatch
+## Rosetta dispatch
 
-Former stop `00_SEVENFOLD_FOUNDATION_ROOT.md` is a K3 tombstone stub since 2026-07-20; the signed Door/Map carry the front-door role. The `../.codex/agents/` deployment table is external tooling — use it only when present (see the Rosetta Dispatch note below).
+The L1–L7 names are work functions, never ranks of human worth or sovereign
+identities. Use the smallest combination needed for the task:
 
-## Agentz Cloud / Rosetta Dispatch
-
-All seven project Agentz are available recursively under this root. Local
-`AGENTS.md` or `CLAUDE.md` files narrow the lane.
-
-| Agentz | Deployment under this root |
+| Level | Function |
 |---|---|
-| L1 Caṇḍāla | Names raw objective pressure, broken claims, and contradiction surfaces. |
-| L2 Śūdra | Checks disclosure, evidence, and public-safe claim boundaries. |
-| L3 Vaiśya | Audits receipts, evidence tiers, route drift, and numbered collision surfaces. |
-| L4 Kṣatriya | Routes K2, irreversible actions, and execution handoffs. |
-| L5 Brāhmaṇa | Owns doctrine architecture, source topology, and Rosetta alignment. |
-| L6 Sādhu | Preserves non-reification, archive discipline, and source-authority boundaries. |
-| L7 Ṛṣi | Holds witness, public symbol, and compressed narrative without overriding source truth. |
+| L1 | isolate contradiction, harm, and raw boundary conditions |
+| L2 | compare evidence, rivals, and alternative readings |
+| L3 | audit logic, citations, tests, tiers, and receipts |
+| L4 | execute an authorized, bounded change and report consequence |
+| L5 | design schemas, source ownership, and structural maps |
+| L6 | compress, archive, tombstone, and prevent reification |
+| L7 | witness and communicate without overriding source truth |
 
-Use the subfolder deployment table in `../.codex/agents/ROOT_AND_GOD_DEPLOYMENT.md`
-before descending when that file exists; this root card is the live Rosetta shim.
+The Rosetta is a translation lens. It may preserve topology across domains; it
+never transfers proof, causal force, identity, or evidence tier.
 
-## Recursive Agentz Deployment — 2026-06-04
+## Protected surfaces
 
-Full tracked-path coverage for this doctrine root is recorded in
-[`00_META/03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md`](00_META/03_AGENTZ_DEPLOYMENT_RECURSIVE_01_EMERGENTISM_2026_06_04.md)
-and its paired manifest
-[`00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv`](00_META/04_RECURSIVE_AGENTZ_DEPLOYMENT_01_EMERGENTISM_ORG_2026_06_04.csv).
+- `90_ARCHIVE/` is historical custody, not live doctrine.
+- `91_COMPATIBILITY/` redirects old paths; it must not fork doctrine.
+- `12_PUBLIC_SITE/` is a public projection and must remain weaker than or equal
+  to its source owners.
+- `11_UPLINK/60_SESSION_PACKETS/` and dated receipts are historical evidence;
+  reconcile them additively rather than rewriting them.
 
-Deployment rule:
+## Agent execution surface
 
-1. Local `AGENTS.md` / `CLAUDE.md` files remain the live route-control surfaces.
-2. The recursive manifest supplies a row for every git-tracked folder and file/document under `01_EMERGENTISM/`, plus the deployment receipt/manifest.
-3. The manifest is routing/control metadata only; it does not upgrade evidence tiers, create doctrine, authorize runtime/product/entity claims, or move/delete archive material.
-4. `90_ARCHIVE/` and `91_COMPATIBILITY/` remain K3/provenance/compatibility preservation surfaces.
-5. `12_PUBLIC_SITE/book-pwa/` remains preserved-frozen post-migration (AIA migration executed 2026-06-12 per K2 signoff 2026-06-11; tombstone `12_PUBLIC_SITE/00_BOOK_PWA_MOVED.md`); this deployment adds route-control coverage only, not feature work.
+1. Inspect repository status and local route cards before editing.
+2. Preserve concurrent work and use path-limited commits.
+3. Run the owner-specific tests plus links, source-negative searches, register
+   checks, and `git diff --check` before claiming closure.
+4. Report external calibration, publication, DNS, signatures, and deployment as
+   separate states. A green local gate proves none of them by itself.
 
-## Routing Law
-
-- Source truth lives upstream. Repair source truth before patching summaries.
-- Evidence tiers are mandatory.
-- Uplink is compressed routing, not source authority when it conflicts with
-  source documents.
-- L5-L7 name Executive altitude only as boundary; they do not deploy as
-  sovereign runtime modes.
-
-Zero-Sum Resolution Equation
-
----
-
-## The Rosetta -ology Map (Canonical)
-
-The Master Rosetta already carries the controlling `-ology` column. Classical
-translations preserve the sevenfold numbering:
-
-```
-L1 Objective Function      -> Teleology
-L2 Data Science            -> Epistemology
-L3 Auditing                -> Methodology
-L4 Value Alignment         -> Axiology
-L5 System Architecture     -> Cosmology
-L6 Core State              -> Ontology
-L7 Institutional Narrative -> Theology
-```
-
-The operative Gods remain L2-L4 (know -> audit -> value/commit). Ontology remains
-L6 Sadhu. The L7 Rishi/Viṣṇu lane witnesses and narrates the Ultimate; it does
-not replace L1 Teleology or L4 K2-signed Theurgy.
-
-**Canonical anchor:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`.
-`06_ONTOLOGY/00_THE_SYNCRETIC_MAP.md` is a K3 tombstone for the prior mapping, not a live anchor.
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/AGENTS.md`
+**Canonical path:** `01_EMERGENTISM/AGENTS.md`

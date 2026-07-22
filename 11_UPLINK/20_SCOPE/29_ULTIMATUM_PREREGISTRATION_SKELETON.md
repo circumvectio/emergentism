@@ -144,7 +144,7 @@ Any post-hoc adjustment must be explicitly labeled exploratory.
 ### K1
 If additive or fairness-threshold models explain the data as well or better than the multiplicative model on the preregistered primary metric, the strong multiplicative claim is not supported in this domain.
 
-### K2
+### KC2
 If the multiplicative advantage depends on arbitrary preprocessing or post-hoc tuning, the result is not robust.
 
 ### K3

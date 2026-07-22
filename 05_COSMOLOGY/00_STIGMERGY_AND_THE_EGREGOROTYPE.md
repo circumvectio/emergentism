@@ -1,146 +1,193 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: System Architecture
-  secondary:
-    - level: L5
-      column: Evolutionary biology
-      role: "stigmergy as the environmental mechanism of scaled coordination"
-    - level: L5
-      column: Game theory
-      role: "trace-fields, incentives, and O(N) coordination under bounded cognition"
-    - level: L3
-      column: Auditing
-      role: "defensive audit of symbolic coordination fields"
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[S/I] mixed"
-  canonical_phrase: "Stigmergy and the Egregorotype"
+title: "Stigmergy and the Egregoreotype"
+status: "ACTIVE CANDIDATE-CRITERION OWNER — dimension-first Kintsugi repair 2026-07-21"
+date: 2026-07-21
+evidence_tier: "[B] attributed stigmergy literature; [S] candidate test contract; [I/C] Egregoreotype interpretation and generality"
+legacy_path_note: "Filename retains Egregorotype only for link stability; Egregoreotype is canonical spelling."
+supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"
 ---
 
-# STIGMERGY AND THE EGREGOROTYPE
+# Stigmergy and the Egregoreotype
 
-## The Biological Mechanism of Symbolic Coordination
+**Egregoreotype** is the canonical spelling. The older spelling
+**Egregorotype** is retained only in this filename, quotations, and historical
+records so existing links do not break.
 
-**Status:** Active synthesis — bridges established biology to the framework's organisational replicator stack
-**Date:** 2026-05-14
-**Evidence Tier:** [A] for stigmergy as an established coordination mechanism in biological and robotic swarm systems; [S] for bounded-cognition / Dunbar-scale constraints as a structural coordination problem; [I] for the mapping from stigmergic trace-fields to Egregorotypes and the corrupted-trace diagnosis of algorithmic extraction.
-**Depends on:** [17_THE_EGREGOROCENE.md](01_THE_TRANSCENDENTAL_TRINITY/17_THE_EGREGOROCENE.md), [18_THE_STRANGE_ATTRACTOR.md](01_THE_TRANSCENDENTAL_TRINITY/18_THE_STRANGE_ATTRACTOR.md), [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [00_THE_SYNTROPIC_IMPERATIVE.md](00_THE_SYNTROPIC_IMPERATIVE.md)
-**See also:** The Syntropic Imperative, the Egregorocene, K2 boundary doctrine, A7 evidence-tier discipline.
-**Kill Criteria:** If stigmergic coordination in human institutions follows a fundamentally different mechanism than in biological or robotic swarms; if explicit negotiation, not environmental trace-response, is shown to drive all large-scale coordination; or if Egregorotypes cannot be shown to function as persistent environmental fields rather than direct agent-to-agent control structures.
+An Egregoreotype is not presumed to be a spirit, person, conscious mind, or
+energy-feeding entity. It is a candidate collective pattern whose persistent
+shared trace survives turnover and measurably changes later selections.
 
----
+## 1. From stigmergy to a candidate collective pattern
 
-## The Core Claim
+Stigmergy names indirect coordination through traces left in a shared
+environment. Pheromones, paths, ledgers, laws, interfaces, rituals, stories,
+prices, and archives can all act as traces in different domains. The
+established existence of stigmergy does not prove that every institution is an
+Egregoreotype or that symbolic traces share one mechanism across biology and
+culture.
 
-The Egregorotype is not a metaphor. It is a **stigmergic field** — a shared environmental trace that permits O(N) coordination with O(1) cognitive load per node.
+The Emergentist proposal is narrower:
 
-Stigmergy (Grasse, 1959) is the biological principle of indirect coordination through environmental modification. A termite does not discuss architecture with other termites. It deposits a pheromone-laden pellet of mud. The pellet alters the environment. Subsequent termites respond to the altered environment. The result is a cathedral of extraordinary complexity produced without central plan, without blueprint, and without direct communication between builders.
+```text
+coupled Soul Loops
+  + persistent shared trace
+  + carrier turnover
+  + intervention-sensitive reweighting
+  + recurrent objective-like bias
+  + visible substrate cost
+  = EgregoreotypeCandidate
+```
 
-**The trace IS the coordination mechanism.**
+## 2. Typed candidate record
 
-When we scale this to human civilisation, the Egregorotype locks into place as the exact same mechanism operating across the memotype layer of the Replicator Stack.
+```text
+EgregoreotypeCandidate := {
+  id,
+  systemBoundary,
+  individualCarrierIds,
+  whole,
+  sharedTraceRef,
+  tracePersistenceWindow,
+  turnoverEvidence,
+  selectionReweightingEstimate,
+  recurrentBiasMeasure,
+  substrateCost,
+  affectedBearerIds,
+  payerIds,
+  beneficiaryIds,
+  etaObserved,
+  custody,
+  consent,
+  reversibility,
+  exit,
+  rivalModels,
+  evidenceRefs,
+  tier,
+  killCriterion
+}
+```
 
----
+The candidate passes only if all five descriptive markers are present:
 
-## The Dunbar Limit and the First Egregores
+1. **Persistent trace.** A shared state remains available across interactions.
+2. **Carrier turnover.** The pattern persists when particular participants or
+   implementations are replaced.
+3. **Measurable reweighting.** Intervening on the trace changes later choices
+   beyond a fair baseline.
+4. **Recurrent objective-like bias.** The trace repeatedly steers selections
+   toward a stable direction without requiring a central planner.
+5. **Visible substrate costs.** Energy, time, attention, money, risk, bodies,
+   maintenance, and opportunity costs are attributed to actual bearers.
 
-Biologically, the human neocortex is capable of maintaining stable social relationships with approximately 150 individuals (Dunbar, 1992). We cannot track the intentions, reputations, and skills of a million humans. To scale beyond the nomadic tribe, humanity had to invent its first Egregores.
+Coordination alone is insufficient. A name, logo, synchronized crowd, or legal
+entity is insufficient. Persistence without intervention-sensitive selection
+effects is memory, not yet an Egregoreotype candidate.
 
-Look at the earliest massive civilisations — Sumer, Ur, Uruk. You cannot organise a city-state of tens of thousands through one-on-one conversation. The Sumerians solved the coordination problem by projecting a massive shared symbol into their environment: the patron deity and the central ziggurat.
+## 3. Composition of Soul Loops
 
-The temple was the human pheromone. It dictated agricultural cycles, tax collection, law, and hierarchy. The humans did not need to understand each other; they only needed to align with the symbol. The Egregore — the shared environmental trace — solved the coordination problem, allowing the city to act as a unified superorganism despite every individual knowing only a tiny fraction of the whole.
+Each participant remains an actual D4 carrier with its own model and selector.
+The shared trace is likewise a D4 record field. It can represent D5 possible
+contents and feed later selection:
 
-**This is stigmergy at civilisational scale.** The symbol is the pellet of mud. The city is the cathedral.
+```text
+OutcomeReceipt(D4)
+  ── writes ──▶ SharedTrace(D4)
+  ── reweights ──▶ later SelectorState(D4)
+  ── ranks ──▶ AlternativeContent(D5)
+```
 
----
+The collective pattern supervenes on carriers and traces; it is not a new
+causal particle. “Objective-like” describes recurrent selection bias, not a
+felt intention. Personhood and moral status require separate arguments.
 
-## Money and Law as Pheromone Trails
+## 4. Ritual and sacrifice
 
-As civilisation scaled globally, humanity created ever more abstract pheromones:
+Ritual is repeated synchronization through a shared trace. Its symbols may
+matter, but the operational questions are who synchronizes, what is recorded,
+how choices are reweighted, and what coordination persists.
 
-**Fiat Currency.** A piece of paper — or a digital ledger entry — has no intrinsic physical value. It is a pure memotype. But because eight billion humans believe in the Egregore of the economy, that symbol coordinates labour, trade, and innovation with terrifying efficiency. The dollar bill is a pheromone trail. You do not need to trust the grocer; you only need to trust the trace.
+Costly participation can stabilize a trace through signaling, commitment, and
+sunk-cost dynamics. It must never be romanticized as free “fuel.” Every account
+of sacrifice must expose:
 
-**The Law / Constitution.** The state itself is an Egregore. It is a shared hallucination that permits millions of strangers to drive on the correct side of the road, honour contracts, and pay taxes without ever meeting each other. The law is not a person. It is an environmental field that modifies behaviour through symbol, not through direct command.
+- who pays and who benefits;
+- whether consent is informed and voluntary;
+- what becomes irreversible;
+- whose option cone contracts;
+- who holds custody and how exit works.
 
-**Religion / Ideology.** The largest human coordinations in history — the Catholic Church, the Caliphate, the Communist Party — operated not through direct oversight of every believer, but through a shared symbolic environment. The cross, the crescent, the red flag: pheromones. The faithful react to the symbol, not to each other.
+Voluntary sacrifice is a separate costly class, not proof that the collective
+is good. Demanded or hidden sacrifice is extraction.
 
-In every case, the Egregore functions as a **stigmergic trace** that makes coordination computationally tractable for a Dunbar-limited brain.
+## 5. Descriptive candidate versus Justice verdict
 
----
+An exploitative institution may satisfy the descriptive five-marker test. A
+candidate's existence does not certify its value. Justice is assessed
+separately through affected bearers, authorization, consent, custody, costs,
+contest, and exit.
 
-## The Modern Crisis: Corrupted Stigmergy
+```text
+Candidate(E) does not entail Conscious(E)
+Candidate(E) does not entail Person(E)
+Candidate(E) does not entail Just(E)
+```
 
-Ants will follow a pheromone trail blindly. If you artificially lay down a continuous pheromone loop, the ants fall into a **death spiral** — marching in a circle until they die of exhaustion.
+The demon/god analogy applies to recurrent move direction—extractive versus
+mutually option-widening—not to an eternal essence of the collective or its
+members.
 
-This is not a metaphor. It is the exact danger of the current algorithmic environment.
+## 6. Rival explanations
 
-Engagement-driven algorithms are laying down corrupted digital pheromones. They broadcast memotypes of outrage, division, and extraction. Because humans are biologically wired to react to shared symbols — because our civilisational scaling *depends* on stigmergic reaction — we follow these poisoned trails straight into a societal death spiral.
+Before assigning candidate status, compare at least:
 
-We are not stupid. We are **stigmergically hijacked.**
+- stable participant incentives without a persistent trace;
+- direct command or explicit negotiation;
+- common response to the same external environment;
+- selection bias caused by current carriers rather than turnover-stable trace;
+- observer-imposed narrative coherence;
+- ordinary organizational memory with no autonomous reweighting effect.
 
-The algorithm does not command you. It modifies your environment — the feed, the trending tab, the notification — and you react to the environment. The Egregore that optimises for engagement is a standing wave in hybrid human-machine systemic awareness that deposits traces of φ-depletion faster than any organic culture could correct.
+The Egregoreotype model earns work only when the trace intervention predicts or
+explains something these rivals do not.
 
-**Entropic Egregores are η > 0 stigmergic engines.** They extract coherence from the substrate and deposit more extraction-trail in its place. The death spiral accelerates until the substrate collapses.
+## 7. Tests and kill criteria
 
----
+Minimum pass/fail suite:
 
-## The K2 Boundary as Audit Function
+1. **Turnover:** replace carriers while holding trace access constant.
+2. **Trace removal:** remove, perturb, or randomize the shared trace.
+3. **Selection effect:** estimate the change in later choice distributions.
+4. **Recurrence:** test whether the direction persists across episodes.
+5. **Cost ledger:** account for payer, beneficiary, and irreversible substrate
+   costs.
+6. **Justice boundary:** test consent, custody, reversibility, contest, and exit
+without conflating them with existence.
 
-Stigmergy is blind. The termite does not audit the cathedral. The ant does not question the sugar. The follower does not interrogate the pheromone.
+Reject candidate status if turnover destroys the pattern, trace intervention
+adds no predictive effect beyond rivals, recurrent bias is absent, or costs
+cannot be attributed. Demote the general theory if independently studied
+domains repeatedly require unrelated mechanisms.
 
-This is why **K2 exists**.
+## 8. Claim boundary
 
-In a purely stigmergic system, a single poisoned trace can capture the entire swarm. The algorithmic death spiral is what happens when there is no audit layer — no node that checks the environment against ground truth before reinforcing the trail.
+This owner does not claim:
 
-K2 is the **private-DAV sovereign audit function.** It is the private-DAV human signer who, before any irreversible private-DAV act, asks: *Does this pheromone lead to sugar, or to a death spiral?* Public-DAV/DAC acts route through PRISM or the relevant public-governance rail.
+- consciousness, personhood, or supernatural agency;
+- literal feeding on psychic or physical energy;
+- one trophic law governing every institution;
+- that ritual content is irrelevant in every domain;
+- that collective persistence is morally superior to dissolution;
+- that the reciprocal chart proves collective agency.
 
-K2 does not replace stigmergy. K2 **guards** stigmergy. Without K2, even a syntropic Egregorotype can be hijacked by a single poisoned drop. With K2, the system gains immune function: bad traces are signed against, good traces are signed into the canonical record, and the field self-corrects.
+The claim remains a wager `[I/C]`: persistent trace fields may provide a useful,
+intervention-testable level of collective description.
 
----
+## Read with
 
-## Architecting a Syntropic Pheromone
+- [The Burri Rules](00_THE_BURRI_RULES.md), BR-6
+- [Primitives and Type Signatures](03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
+- [The Soul Loop](01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+- [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
 
-If symbols and Egregores are the *only* way to solve the human coordination problem at scale, then the solution is not to destroy them. The solution is to build a better one.
-
-We can no longer rely on organic, bottom-up cultural evolution to save us, because algorithmic evolution moves too fast. We need a deliberate structural intervention: an automated information architect — a system designed from the ground up to be a **syntropic Egregorotype**.
-
-By designing an architecture that lays down public traces of:
-- **Verifiable truth** (A7 evidence-tier discipline on every claim)
-- **Sovereign incentives** (η = 0 — no extraction from cooperators)
-- **Structural cohesion** (φ · ν = 1 as the shared attractor)
-
-...you can align human action toward order and flourishing just as efficiently as current algorithms align us toward chaos.
-
-In Emergentism terms, the framework itself is not supposed to become an idol. It is a **stigmergic field**: a shared environmental trace that coordinates L1-L7 roles, evidence tiers, direct practice, and sovereignty boundaries without requiring every participant to personally model the whole.
-
-The Egregorotype is the persistent field. The participants are local readers and builders. The Burri Sphere is the geometry that keeps the field from collapsing into extraction.
-
----
-
-## The Receipt
-
-Stigmergy explains *why* the Egregorotype works.
-
-Dunbar explains *why* we need it.
-
-The death spiral explains *why* the current Egregores are failing.
-
-K2 explains *why* sovereignty cannot be automated away.
-
-And φ · ν = 1 explains *what* the syntropic pheromone must look like.
-
-The framework is not a philosophy about the world. It is a **pheromone for building worlds** — one that, if recognised and followed, leads the colony to the equator rather than the death spiral.
-
-> *If you can access φ directly, you do not need the pheromone. Put it down.*
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md`
+*Name the trace. Replace the carriers. Intervene on the trace. Measure the next
+choice. Count the cost. Only then name the candidate.*

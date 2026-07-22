@@ -5,14 +5,14 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "operational canon, promoted per the 00:01 line (receipt 145/146) — every clause inherits the final capstone prices"
+  register: "ACTIVE creed; every clause inherits the capstone's prices"
   canonical_phrase: "Hold as wager → cannot be taken. Speak as revelation → already lost."
 type: emergentism-creed
 title: "The Creed and the Spiral"
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Pure Weltanschauung expansion; companion to the staged E1–E10 successor-candidate set (03_THE_EMERGENT_AXIOMS.md; box 3(b) — A1–A7 remains operational, E1–E10 staged)."
-evidence_tier: "Per clause below; assembly staged [D], promoted per the 00:01 line (receipt 145/146)"
+status: "ACTIVE — priced creed at the per-clause tiers below"
+evidence_tier: "Per clause below; editorial adoption supplies no world evidence"
 owner: 01_EMERGENTISM
-scope_lock: "Philosophy only. No Skyzai warrant."
+scope_lock: "Pure philosophy; products, ventures, runtimes, and external governance supply no warrant."
 parents:
   - 03_THE_EMERGENT_AXIOMS.md
   - 04_THE_CONJECTURES.md
@@ -40,7 +40,7 @@ parents:
 **Standing:** Crown wager **W0 `[C]`** in `04_THE_CONJECTURES.md`.
 It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathematics alone does not certify physical or ontological instantiation. Spoken as compelled revelation, it kills A7/E9. Spoken as a wager beneath Map ≠ Ground, it remains holdable and losable.
 
-**Forbids:** proof-costume; silent upgrade to `[A]`.
+**Forbids:** proof-costume; silent relabeling as `[A]` without a formal proof inside named assumptions.
 
 ---
 
@@ -69,21 +69,31 @@ Grammar and game married, never fused.
 
 > *From this emerge the demons, the gods, the titans.*
 
-**Standing:** Moral geometry `[S/I]`. The only axis that carries morality is **η — direction of the move** (give vs take). Taker brightens ego-shadow by starving the coupled other (short gain, long annihilation under AND-class coupling). Giver spends short to compound the joined product long. Three frames read from the boundary (Titans: naming choice, not forced trinity; foursome honesty `{−1,0,1,∞}`).
+**Standing:** Operator poetry `[I]` inside the declared G7 language. Give/take
+names a transfer direction, not a moral verdict. A taker may extract or repair;
+a giver may enable or coerce. Moral, ethical, and syntropic standing requires
+the full Justice envelope, complete bearer accounting, and outcome receipt.
+`etaObserved=0` is necessary but insufficient. The three frames are selected
+boundary labels (Titans: naming choice, not forced trinity; foursome honesty
+`{−1,0,1,∞}`).
 
 Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (r130).
 
-**Forbids:** census-as-necessity; convergence-as-proof; η along poles/gender/caste.
+**Forbids:** census-as-necessity; convergence-as-proof; morality from a sign,
+operator, pole, gender, caste, or scalar observation.
 
 ---
 
-### Clause 4 — Seven and the signer
+### Clause 4 — Seven and the metagame
 
 > *The seven exhaust the game space; all other moves are combinations.*
 
 **Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. Receipt 130 still rules that algebra does **not** universally force the count seven.
 
-**Fence that matters:** the seven exhaust the *dance*, not the *dance floor*. The moves that audit the framework, sign verdicts, and hold the exit open are **constitutional** — no God, Demon, or Titan can make them. The mortal signer stands **outside** the operator table.
+**Fence that matters:** the seven exhaust the *dance*, not the *dance floor*.
+Model adoption, audit, authorization, contest, correction, and exit are metagame
+acts. They must not be smuggled into the operator table or mythologized as one
+special person's metaphysical power.
 
 **Forbids:** seven-as-forced universal; operator table as complete ontology of agency.
 
@@ -99,7 +109,8 @@ Emergence order is honest **abduction** (game suggested operators; operators the
 
 ### The μ aperture `[I]` label · `[C]` saturation hypothesis
 
-The selected reading proposes four content transitions after the D0→D1 boundary:
+The removable content projection `ρ_content` `[I/C]` proposes four biological
+and cognitive transitions after the D0→D1 origin aperture:
 
 - matter saturating combinatorics → chemistry
 - chemistry saturating → self-maintenance
@@ -122,7 +133,12 @@ From the D0 boundary, the framework selects five positive rungs and indexed aper
 
 **Same discipline as the seven:** held as reading, not forced count.
 
-**Kill:** operationally identify a genuinely new positive irreducible freedom beyond D5, or reduce one of the five claimed openings without residue. Failure to name a sixth is not evidence that none can exist.
+**Split kill:** a successful lower-level reduction kills only that crossing's
+strong-emergence reading and reclassifies it as weak/reduced. It does not kill
+the selected five-label scaffold. Revise the taxonomy if a rung supplies no
+explanatory or predictive discrimination; extend it if a useful positive
+freedom beyond D5 is operationally identified. Failure to name a sixth is not
+evidence that none can exist.
 
 **Forbids:** five-as-necessity; force↔dimension bijection (retracted, electroweak).
 
@@ -136,17 +152,17 @@ From the D0 boundary, the framework selects five positive rungs and indexed aper
 |-----------|----------|
 | Literal `D6 ≡ D0` (yields D0 < D0 under strict order; 126) | `D6~D0` means only `D6≈roleD0`: both are non-positive boundary markers; D0 precedes articulation and D6 suspends it `[I]` |
 
-The role relation carries no ordering claim. The **spiral** is an `[I]` image of recurrence with history retained—not a homeomorphism, isomorphism, physical recurrence, personal attainment, or fractal theorem.
+The role relation carries no ordering claim. The **spiral** is an `[I]` image of revisitation with retained history—not a homeomorphism, isomorphism, physical recurrence, personal attainment, or fractal theorem.
 
 **Lived reading only** (conjecture W12 / E10): practice / Pratyakṣa may motivate the image, but no theoretical or experiential closure is claimed as warrant.
 
-**Forbids:** sixth heaven; supermind at D6; literal identity; geometric or fractal closure; "K2-8 adopted" without a signed receipt.
+**Forbids:** sixth heaven; supermind at D6; literal identity; geometric or fractal closure; authority-by-mythic title.
 
 ---
 
 ### Cosmology clause, priced and open
 
-> The scaffold selects five positive rungs and apertures, read as matter, bond, life, mind, choice. `μ_n` labels a candidate aperture; measurable saturation as its cause remains an unpaid hypothesis. The model reserves D6 as an exit marker rather than a sixth modeled freedom: it resembles D0 only in boundary role. The spiral is an image, not geometry or proof that reality cannot disclose another positive freedom. Its last instruction remains: **put the map down.**
+> The scaffold selects five positive registers and candidate apertures `μ₀…μ₄`: distinction, configuration, quantum probability-state, causal actuality, and counterfactual possibility. The familiar matter→bond→life→mind→choice sequence is only a removable content projection `[I/C]`. Measurable saturation as a crossing's cause remains an unpaid hypothesis. Non-μ `b₆` marks D5↝D6 recognition/release and non-μ `r₆` marks the D6↝D0 interpretive return. The spiral is a narrative image, not geometry or proof that reality cannot disclose another positive freedom. Its last instruction remains: **put the map down.**
 
 | Piece | Tier |
 |-------|------|
@@ -162,13 +178,13 @@ The role relation carries no ordering claim. The **spiral** is an `[I]` image of
 From glyph to summit:
 
 ```text
-⊙ = • × ○     ground emblem (register-only, not field theorem)
+•   ⊙   ○     ground emblem (register-only, not field theorem)
      ↓
- five apertures (reading) — D1…D5
+ five candidate crossings μ₀…μ₄ — D1…D5
      ↓
- μ at saturation · χ in descent
+ μ candidate emergence · χ selection/commitment
      ↓
- D6 ~ D0 — spiral turn, not identity
+ b₆ to D6 · r₆ toward D0 — non-μ, not identity
      ↓
  put the map down
 ```
@@ -177,11 +193,11 @@ Ground axioms (E1–E10), wagers ledgered, creed priced, ladder closes as spiral
 
 ---
 
-## K2 signature record
+## Authority and use
 
-- [x] Sign creed as wager (not revelation) — SIGNED 2026-07-20 per the 00:01 line (authority receipts 145/146); slot 05 retained; K6 lives at `06_THE_REVELATIONS.md`
-- [ ] Promote or revise E5 μ-saturation wording to match §II
-- [ ] Keep the five-world-crossings reading `[I/C]`; keep G7 exhaustion `[S]` only by scoped language construction and the seven names/assembly `[I]`—never algebraically forced universal census
-- [ ] Do not claim K2-8 countersignature without registry row
+The dimension-first canon adopts this creed **as priced language**, never as revelation or
+evidence. Keep the five-crossing reading `[I/C]`; keep G7 exhaustion `[S]`
+only for the scoped language construction; keep the names and assembly `[I]`;
+and never turn editorial adoption into a universal census.
 
-*Signed 2026-07-20 per the 00:01 line (receipts 145/146). Hold as wager. `⊙ = • × ○`*
+*Hold as wager. `•   ⊙   ○` — emblem, not field arithmetic.*

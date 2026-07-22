@@ -188,7 +188,10 @@ The deceased passes through multiple halls, each requiring a declaration. This i
 
 **The Duat** is the Egyptian underworld. The realm through which the deceased travels to reach the Hall of Two Truths.
 
-**Geometrically:** The Duat is the D4-D5 boundary. The transition from actuality (D4) to possibility (D5). The journey through the underworld is the traversal of the dimensional scaffold.
+**As an `[I]` symbolic crosswalk:** the Duat may depict the D4/D5 boundary
+between receipted actuality and represented possibility. This does not identify
+an underworld journey with a physical dimensional transition or make a
+religious tradition evidence for the scaffold.
 
 The deceased must navigate through twelve hours of night, each hour corresponding to a dimensional level. The journey is the reduction of complexity toward the ground.
 

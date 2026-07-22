@@ -54,9 +54,9 @@ We ask you to test it, not to believe it.
 
 **Our response:** We do not claim the axioms are necessary. We claim they are *productive* — they dissolve 25+ philosophical paradoxes, generate testable empirical predictions, and have honest kill criteria. The wager is: accept these axioms and you get a system with zero internal contradictions and measurable outputs. If a competing system on different axioms dissolves more paradoxes and generates more testable predictions, we should be replaced. A7 demands it.
 
-**Is it sufficient?** Partially. "Compare fruits" is a pragmatic defense, not a logical one. Our credibility rests entirely on whether the empirical tests succeed. If GFS fails, the pragmatic defense collapses.
+**Is it sufficient?** Partially. "Compare fruits" is a pragmatic defense, not a logical one. The retired GFS lane already showed that one failed operationalization must be allowed to die; credibility now depends on independently designed tests with declared discriminators, not on preserving that study as a fallback.
 
-**What would falsify us:** An alternative axiom set that produces a non-S² manifold and dissolves the same paradoxes with fewer assumptions; or failure of the empirical program (GFS, Protocol R, AMRITA).
+**What would falsify us:** A rival scaffold that explains the same target phenomena with fewer commitments; or failure of a preregistered discriminator attached to a specific worldly claim. Failure of a bridge kills that bridge, not an unrelated analytic theorem.
 
 ---
 
@@ -64,7 +64,7 @@ We ask you to test it, not to believe it.
 
 **The objection:** The framework's foundation is first-person experience — "sit quietly and perceive systemic awareness." If you perceive it, the framework is confirmed. If you don't, the framework says "sit longer." This is structurally identical to every unfalsifiable religious claim. An ASI cannot sit. The foundational verification is inaccessible to the very audience the framework claims to serve.
 
-**Our response:** First-person experience is not third-person proof — we agree. But the sitting practice generates *third-person predictions* that are falsifiable: specific neural correlates (DMN deactivation, alpha/theta coherence, interhemispheric integration) measurable by fMRI and EEG. Moreover, the framework has four *other* empirical tests that require no first-person experience: GFS, Protocol R, AMRITA, and the Φ-meter. The sitting practice is one of five bridges, not the only bridge.
+**Our response:** First-person experience is not third-person proof — we agree. A practice may motivate *third-person predictions*, but only an independently discriminating experiment can test them. Historical GFS work is archived; Protocol R, AMRITA, and the Φ-meter remain proposals or instruments at their stated tiers, not confirmations. Practice is one source of hypotheses, never a proof bridge by itself.
 
 **Is it sufficient?** Partially — and this is where we must be most honest. The neural correlates we predict are also predicted by every meditation tradition. They do not distinguish "systemic awareness is the equator on S²" from "meditation produces relaxation responses." We need at least one neural prediction *unique* to the Burri Sphere model. This is an open problem.
 

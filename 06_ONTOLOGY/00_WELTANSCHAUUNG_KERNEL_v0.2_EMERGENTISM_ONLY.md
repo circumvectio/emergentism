@@ -5,28 +5,34 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "operational canon, promoted per the 00:01 line (receipt 145/146); receipts 135/136 stand as provenance; no Skyzai warrant"
-  canonical_phrase: "Constrained freedoms, typed existence, costed emergence, correction, vow, exit"
-type: emergentism-weltanschauung-kernel
+  register: "ACTIVE subordinate synthesis; every claim retains its stated tier"
+  canonical_phrase: "Subordinate synthesis — constrained freedoms, typed existence, correction, vow, exit"
+type: emergentism-ontology-synthesis
 version: "v0.2"
 date: 2026-07-19
-status: "ACTIVE — K2-signed 2026-07-20 (the 00:01 line; authority receipt 145). Supersedes v0.1, archived with frozen stub per the line."
-evidence_tier: "Each statement is typed below; assembly staged [D], promoted per the 00:01 line (receipt 145/146)"
+status: "ACTIVE SUBORDINATE SYNTHESIS — not a canonical owner; supersedes v0.1 only"
+evidence_tier: "Each statement is typed below; assembly status supplies no additional evidence"
 owner: 01_EMERGENTISM
-scope_lock: "Emergentism-only philosophy. Skyzai runtime, products, entities, commerce, DAV/PRISM/K2 execution machinery, and cross-root propagation are excluded as warrant."
-supersedes: "00_WELTANSCHAUUNG_KERNEL_v0.1.md — superseded 2026-07-20 per the 00:01 line (receipt 145/146); v0.1 preserved as the reconciled predecessor, archived with frozen stub per K3"
+scope_lock: "Pure Emergentist philosophy. Products, ventures, companies, runtimes, commerce, external governance, and cross-repository implementation are excluded as warrant."
+supersedes: "v0.1, retained under 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/06_ONTOLOGY/"
 parents:
   - 00_THE_AMRITA.md
   - 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
   - 03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md
   - 04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md
-  - 06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md
+  - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md
 ---
 
 # Weltanschauung Kernel v0.2 — Emergentism only
+
+> **Authority boundary.** This is a readable synthesis, not a second front door
+> or K-2 owner. The root [`00_THE_WELTANSCHAUUNG.md`](../00_THE_WELTANSCHAUUNG.md)
+> is the capstone; [`02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md`](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
+> is the sole K-2 ontology owner. If this synthesis conflicts with either, the
+> owners control.
 
 > **Plato was partially right:** particulars are intelligible through structures that exceed any one instance. But those structures need not be separately existing Forms. The stronger Emergentist candidate is a world of **constraint-structured freedoms**: systems, relations, symmetries, invariants, laws, histories, resources, and boundaries that delimit how reality may vary. Stable “forms” are not the degrees of freedom themselves; they are invariants, equivalence classes, order parameters, attractors, or robust patterns formed **across constrained degrees of freedom**.
 >
@@ -42,16 +48,16 @@ This is a Weltanschauung candidate, not a derivation from one equation. The form
 
 - `01_EMERGENTISM` doctrine, epistemology, methodology, axiology, cosmology, ontology, and its signed audit receipts.
 - Standard mathematics and science only as **external attested resources**, never as inventions of Emergentism.
-- Audit-born negative and structural results only where their reasoning stands without Skyzai implementation evidence.
+- Audit-born negative and structural results only where their reasoning stands without implementation evidence from an external product.
 
 ### Excluded as warrant
 
-- Every `02_SKYZAI/**` runtime, product, commercial, organizational, propagation, or control surface.
-- Products, organs, fees, markets, ledgers, DLT, launch state, AIA pipelines, legal entities, foundations, DAV/PRISM/K2 execution machinery, and organizational signatures.
+- Every external runtime, product, commercial, organizational, propagation, or control surface.
+- Products, organs, fees, markets, ledgers, launch state, automation pipelines, legal entities, foundations, governance machinery, and organizational signatures.
 - A cross-root receipt may establish **decision provenance**. It does not establish mathematical, empirical, metaphysical, or ethical truth.
-- Rosetta rows, historical recurrences, and Skyzai implementations cannot independently corroborate claims from which they were derived.
+- Rosetta rows, historical recurrences, and downstream implementations cannot independently corroborate claims from which they were derived.
 
-If a Weltanschauung statement needs Skyzai to be true, it is not in this kernel.
+If a Weltanschauung statement needs one particular application to be true, it is not in this kernel.
 
 ---
 
@@ -118,7 +124,8 @@ These are not “seven because seven.” They are the smallest current set that 
 
 No chart, equation, Rosetta, degree of freedom, macro-variable, or worldview is the Ground. Coordinates are not automatically entities; models are not automatically territory.
 
-**Support:** `06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md:29-35,227-233,378-388`.
+**Support:** [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md),
+especially its typed-existence and anti-reification boundaries.
 
 ### C1. Constraint-structured freedom `[I/C]`
 
@@ -142,19 +149,23 @@ A higher-level description earns emergent standing only when it supplies tested 
 
 Every load-bearing claim carries a tier, upgrade path, kill/downgrade criterion, and survivors. Negative results remain public. No mathematical proof silently upgrades a world claim.
 
-**Support:** `00_THE_AMRITA.md:48-53`; receipt 126’s A7 result.
+**Support:** [The Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its
+correction discipline; receipt 126’s A7 result.
 
 ### C5. Non-extraction as chosen orientation `[I]`
 
 Finite beings choose to pursue reciprocal flourishing without obtaining local gain by degrading a real sustaining boundary. `η=0` is a constitutional vow/operational definition with scoped Model-A support; it is not an ought derived from geometry and not a universal Nash theorem.
 
-**Support:** `00_THE_AMRITA.md:42-43,89-90`; receipt 126 `:28-33`.
+**Support:** [The Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its
+non-extraction and voluntary-orientation clauses; receipt 126 `:28-33`.
 
 ### C6. Exit `[I/S]`
 
 A worldview must remain put-downable. It may orient inquiry and life; it may not become compulsory mediation, a self-certifying church, or a substitute for direct contact and correction.
 
-**Support:** `05_COSMOLOGY/00_EMERGENTISM_AS_WELTANSCHAUUNG.md:369-405`; `00_THE_AMRITA.md:53`.
+**Support:** [The Weltanschauung](../00_THE_WELTANSCHAUUNG.md), especially its
+accounting, open-world, and exit clauses; [The
+Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its exit clause.
 
 ---
 
@@ -210,9 +221,12 @@ The audit apparatus did tombstone favored claims rather than laundering them. Th
 
 **Source:** receipts 108–132, especially 126, 130, and 132.
 
-### R7. Typed-existence cascade `[D]`
+### R7. Typed-existence cascade `[S]` method / `[I]` taxonomy
 
-The ten-register existence table in §2 is the present audit’s constructive synthesis. It is a candidate contribution, not yet a discovery or signed doctrine.
+The dimension-first canon adopts the ten-register existence table in §2 as the
+active audit method and interpretive taxonomy. Adoption resolves its editorial lifecycle;
+it does not make the chosen taxonomy an empirical discovery or prove that the
+world has exactly these registers.
 
 ---
 
@@ -225,7 +239,7 @@ Keep separate from the worldview kernel:
 - `P_node=Φ×V` — representative finite-node model, with AND-class boundary only;
 - equator = objective good — ethical/teleological reading, not mathematical consequence;
 - Rosetta/caste/god/Titan naming — interpretive and operational translation grammar;
-- K2, K3, K4, PRISM, DAV, councils, signers, foundations, products, organs, fees, ledgers, and launches — governance/application surfaces, not philosophical axioms;
+- councils, signers, foundations, products, organs, fees, ledgers, and launches — governance/application surfaces, not philosophical axioms;
 - any claim that all coherent possibilities are actual;
 - any claim that strong emergence has been established universally.
 
@@ -265,7 +279,7 @@ Narrower survivors do not reopen these proof-forms.
 | Modal collapse | Controlled by typed existence in C2/§2. |
 | Is→ought | Controlled by separating C5’s vow from all chart theorems. |
 | Emergence magic | Controlled by C3’s lower-law closure, costs, perturbations, and controls. |
-| Skyzai contamination | Controlled by §0; no product, entity, runtime, governance, or cross-root decision supplies warrant. |
+| Application contamination | Controlled by §0; no product, entity, runtime, governance, or cross-root decision supplies warrant. |
 | Forced census | No protected count for axioms, levels, Titans, operators, or traditions. |
 | Closure/church risk | Controlled by C4 and C6; a framework that cannot be killed or put down fails. |
 
@@ -277,4 +291,4 @@ The kernel is internally coherent **as a corrigible metaphysical wager plus meth
 
 > **Not Forms, and not bare degrees of freedom as new substances: constrained freedoms and the stable invariants that emerge across them. Not every coherent possibility is actual: existence is typed, and every bridge has a cost. The mathematics constrains; the world selects; emergence must earn its standing; the good is chosen; correction and exit remain open.**
 
-*Promoted from staged `[D]` to operational canon per the 00:01 line (receipts 145/146); per-statement tiers stand exactly as typed above. No cross-root decision, product, runtime, or signature upgrades any claim.*
+*Active at the stated tiers. No cross-root decision, product, runtime, adoption, or signature upgrades a claim.*

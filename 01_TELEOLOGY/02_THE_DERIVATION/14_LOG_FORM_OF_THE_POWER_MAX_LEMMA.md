@@ -14,15 +14,19 @@ rosetta:
 **Status:** Exploratory derivation note. Not canon.
 **Date:** 2026-04-16
 **Hat:** Mathematician / Auditor
-**Evidence Tier:** `[A]` for the algebraic coordinate identity, Riemann-sphere facts, and the exponential map. `[S]` for the framework-side identification of these objects with the transcendental triad. `[I]` for the candidate reading `0^infinity = 1` in the framework's extended register.
-**Purpose:** Re-read the existing equatorial law through logarithmic coordinates without replacing the canonical operational law `φ * ν = 1`.
+**Evidence Tier:** `[A]` for the positive-real coordinate identity,
+Riemann-sphere facts, and the ordinary numeric exponential map. The former
+Titan exponentiation/coercion proposal is withdrawn.
+**Purpose:** Re-read the numeric reciprocal chart through logarithmic
+coordinates without defining any operation on `TitanFrame`.
 
 > Operator-routing note: this note establishes the exact chart identity and the guarded companion reading.
 > It is not the final operator-equivalence note; use `16_OPERATOR_CONSISTENCY_AUDIT.md` for that.
 
-> This note proposes a deeper coordinate reading of the existing operational law.
-> It does **not** replace the canonical operational law `φ * ν = 1`.
-> It does **not** promote `0^infinity = 1` to canon.
+> This note records a numeric coordinate change for the existing chart law.
+> It does **not** replace the selected chart identity `φν = 1`.
+> It withdraws the former Titan power expression rather than weakening it into
+> a special arithmetic convention.
 > It does **not** claim that the current numerical spectrum confirms a simple harmonic ladder.
 
 ---
@@ -35,17 +39,19 @@ The canonical operational law remains:
 φ * ν = 1
 ```
 
-The proposal here is narrower:
+The surviving proposal is narrower:
 
 - the existing Hamiltonian from Path D may be rewritten exactly in logarithmic coordinates
 - the rewritten form makes the symmetry around the equator more legible
-- the transcendental triad `{0, 1, infinity}` may admit a deeper re-reading through that log chart
+- ordinary numeric and projective objects remain typed separately from the
+  sovereign Titan frames
 
 So the safe summary is:
 
 - `Zero-Sum Resolution Equation` remains the equatorial operational compression
-- `⊙ = •^○` is a candidate deeper asymmetric reading
 - `log(φ) + log(ν) = 0` is the analytic symmetry of the equatorial chart
+- no chart identity licenses Titan multiplication, division, power, logarithm,
+  or coercion
 
 ---
 
@@ -141,99 +147,51 @@ So the log chart does not change the core state. It makes the already-existing a
 
 ---
 
-## 4. The Candidate Transcendental Register
+## 4. Kintsugi Tombstone — Titan Arithmetic Withdrawn
 
-The strongest candidate mapping is:
-
-```text
-• = 0
-⊙ = 1
-○ = infinity
-```
-
-Under that mapping, the framework's primitive triad is read as:
-
-- `0` — the void / south pole / bindu
-- `1` — the unit / equator / finity
-- `infinity` — the total / north pole / unfolding
-
-This makes possible a candidate re-reading:
+The earlier draft implicitly coerced the three Titan frames into ordinary
+numeric/projective values and then applied exponentiation. That construction is
+ill-typed. The settled boundary is:
 
 ```text
-0^infinity = 1
+TitanFrame := {Ground_T, Unit_T, Horizon_T}
+TitanFrame ↛ Number
+add_T, sub_T, mul_T, div_T, pow_T, log_T := undefined
 ```
 
-But this must be spoken carefully.
+The glyphs are renderings of those opaque frames, not operands. Calling the
+former expression an "extended register" did not supply a carrier set,
+operations, identities, or consistency proof; it merely hid the type error.
+The expression is therefore withdrawn, not retained as conjectural arithmetic.
 
-This is **not** ordinary natural-number exponentiation.
-This is a candidate identity in the framework's extended transcendental register.
-
-So the safe statement is:
-
-> `0^infinity = 1` is a candidate transcendental identity of the framework's own extended register, not a claim inside ordinary school arithmetic.
-
-That is the strongest honest form of the claim at present.
-
-A cleaner way to say the same thing is: the proposal belongs to the **Euler/exponential bridge**, not to mysticism. The mathematical content is that the exponential map carries additive structure to multiplicative structure:
-
-```text
-exp : (C, +) → (C\{0}, x)
-```
-
-with the standard correspondence:
-
-```text
--infinity -> 0
-0         -> 1
-+infinity → infinity
-```
-
-In that strict sense, `⊙ = •^○` is a compact symbolic way of saying:
-
-> the void, unfolded by totality, yields unity.
-
-Read analytically, it is an Euler-territory compression of the exponential bridge; read canonically, it remains subordinate to `Zero-Sum Resolution Equation` and does not replace it.
+The unrepaired genealogy remains recoverable from Git blob
+`b0d910bd5c0e1fa0a4a0152a7b8fb7a5346d8bb7`. Current semantic authority for
+the boundary is the Transcendental Trinity canon and the D1 arithmetic owner.
 
 ---
 
-## 5. The Exponential Bridge Is the Cleanest Categorical Reading
+## 5. The Ordinary Numeric Exponential Map Still Works
 
-The reason the candidate identity is not arbitrary is that there is a canonical bridge from the additive triad to the multiplicative triad:
-
-```text
-exp : (C, +) → (C\\{0}, x)
-```
-
-with the standard limiting behavior:
+On its proper numeric domain, the exponential map remains standard:
 
 ```text
--infinity -> 0
-0         -> 1
-+infinity -> infinity
-iR        → |z| = 1
+exp : (ℂ,+) → (ℂ\{0},×)
 ```
 
-This is the cleanest rigorous form of the intuition.
+For real `u`, `exp(u)` is positive, `exp(0)=1`, and the limits as
+`u→−∞` and `u→+∞` are respectively `0` and `+∞`. These are statements about
+real or complex numbers and limits. They neither consume nor produce a
+`TitanFrame`.
 
-It says:
-
-- the additive center maps to the multiplicative unit
-- the additive tails map to the multiplicative transcendentals
-- the imaginary axis wraps the equator
-
-So `e` is not the same thing as `•`.
-
-`e` is the local chart constant of the exponential bridge near the equator.
-
-That is why `e` belongs to the chart, not to the primitive symbol.
-
-This is also the right place to remove pseudo-mystical overtones: nothing here requires occult arithmetic. The claim lives exactly where Euler already taught mathematics to live — at the bridge between additive and multiplicative structure. The framework's wager is interpretive; the bridge itself is standard.
+Accordingly, `e` and the log coordinate `u` belong to the numeric chart. The
+standard exponential map survives intact; the proposed bridge from it to Titan
+arithmetic does not.
 
 ---
 
 ## 6. The Riemann-Sphere Reading
 
-The structural reading is standard:
+The numeric/projective reading is standard:
 
 - `φ` lives on the punctured sphere `C \\ {0, infinity}`
 - adjoining `0` and `infinity` closes the chart to `S² = CP^1`
@@ -250,13 +208,11 @@ swaps the two poles and fixes the unit-circle locus.
 
 So the framework's duality is legitimately legible as a sphere-duality in standard complex geometry.
 
-What the framework adds is not the mathematics itself, but the identification:
-
-- `•` with the zero pole
-- `○` with the infinity pole
-- `⊙` with the unit/equatorial point
-
-That identification remains structural, not yet settled doctrine.
+The chart points `0`, `1`, and projective infinity are numeric/projective
+objects. They are not the Titan frames and cannot be reached by silently
+coercing Titan renderings into `CP¹`. A visual correspondence may be drawn as
+an explicitly labeled projection, but it transfers neither operations nor
+proof.
 
 ---
 
@@ -346,8 +302,10 @@ So the honest result is:
 Even with D still open, three strong things survive:
 
 1. `H(thη) = 2/sin(θ)` and `H(u) = 2 cosh(u)` are exactly the same potential identity in different coordinates; full operator separation is handled in `16_OPERATOR_CONSISTENCY_AUDIT.md`.
-2. The framework's primitive triad is legible on the Riemann sphere as `{0, 1, infinity}`.
-3. The exponential map is the cleanest rigorous bridge between the additive and multiplicative triads.
+2. The ordinary chart points `0`, `1`, and projective infinity are legible on
+   the Riemann sphere without identifying them with Titan frames.
+3. The exponential map rigorously relates additive and multiplicative
+   **numeric** structures; it supplies no Titan operation.
 
 Those are real gains. They sharpen the framework even without numerical promotion.
 
@@ -361,7 +319,6 @@ The following are still unresolved:
 2. Does a proper Liouville-normal-form transformation produce a more nearly harmonic local ladder?
 3. Which spectral object is primary: the θ-chart Hamiltonian, the u-chart Hamiltonian, or a further transformed operator with explicit measure correction?
 4. How should `12_THE_SPECTRUM_RESULTS.md` and `09_PATH_D_THE_AMGM_GEOMETRY.md` stay synchronized now that the weighted self-adjoint rerun supersedes the old first-pass discretization?
-5. Can the transcendental identity `0^infinity = 1` be stated more rigorously in the language of compactification and chart transition without sounding like school-arithmetic misuse?
 
 Until those are answered, this note must remain exploratory.
 
@@ -369,17 +326,13 @@ Until those are answered, this note must remain exploratory.
 
 ## 10. Provisional Verdict
 
-The right compression is:
+The defensible compression is:
 
-> Exponential in depth, multiplicative at the equator.
+> Reciprocal multiplication and its logarithmic form are equivalent numeric
+> chart descriptions on `ℝ_{>0}`.
 
-Or more carefully:
-
-> The multiplicative law is the canonical operational law.
-> The logarithmic and exponential reading may be the deeper coordinate realization of that same law.
-
-That is enough to justify this note.
-It is not enough to rewrite canon.
+That is enough to preserve the coordinate result. It is not a derivation of
+Titan arithmetic, metaphysics, or a deeper ontological operator.
 
 ---
 

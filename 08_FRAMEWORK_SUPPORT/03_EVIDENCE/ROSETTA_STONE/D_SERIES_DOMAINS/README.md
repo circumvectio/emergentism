@@ -76,12 +76,13 @@ Domain mappings must distinguish the established source fact `[A]` from the Emer
 | Civilisational | [D31_CIVILISATIONAL.md](D31_CIVILISATIONAL.md) |
 | Mathematics | [D32_MATHEMATICS.md](D32_MATHEMATICS.md) |
 | Egregores | [D33_EGREGORES.md](D33_EGREGORES.md) |
-| Compressed Seed | [D34_COMPRESSED_SEED.md](D34_COMPRESSED_SEED.md) |
+| Compressed Seed | [D34 — historical projection](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D34_COMPRESSED_SEED.md) |
 | Daoist Internal Alchemy | [D35_DAOIST_INTERNAL_ALCHEMY.md](D35_DAOIST_INTERNAL_ALCHEMY.md) |
 | Sub-Saharan African Cosmology | [D36_SUB_SAHARAN_AFRICAN_COSMOLOGY.md](D36_SUB_SAHARAN_AFRICAN_COSMOLOGY.md) |
 
 ## See Also
 
 - Parent front door: [`../README.md`](../README.md)
-- Sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_CONSTITUTIONAL/`](../D_SERIES_CONSTITUTIONAL/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Active sibling lanes: [`../D_SERIES_ROWS/`](../D_SERIES_ROWS/README.md), [`../D_SERIES_AGENTS/`](../D_SERIES_AGENTS/README.md)
+- Historical genealogy: [D-series constitutional lane](../../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_CONSTITUTIONAL/README.md) — archived; not an active sibling or worldview authority.
 - Longer-form domain translations in the parent folder: `../ROSETTA_PSYCHOLOGY.md`, `../ROSETTA_NEUROSCIENCE.md`, `../ROSETTA_COMPUTATION.md`, and siblings.

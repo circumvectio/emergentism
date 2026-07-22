@@ -35,7 +35,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../00_
 
 ## Read First
 
-- Read first: [`00_MAGNUM_OPUS_REVIEW.md`](00_MAGNUM_OPUS_REVIEW.md)
+- Historical review: [Magnum Opus Review](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_MAGNUM_OPUS_REVIEW.md) — provenance only
 - Then use the immediate contents of this folder as the local working surface.
 
 ## Active vs Archive

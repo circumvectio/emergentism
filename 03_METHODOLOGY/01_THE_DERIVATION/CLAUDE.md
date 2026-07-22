@@ -1,68 +1,56 @@
 ---
-rosetta:
-  primary_level: L3
-  primary_column: Philosophy
-  operator: "Kṛṣṇa ◇"
-  tier: "God"
-  regime: "Vaiśya"
-  register: "[S/I]"
-  canonical_phrase: "01_EMERGENTISM/03_METHODOLOGY/01_THE_DERIVATION/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "01 The Derivation — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 01_THE_DERIVATION — Agent First-Touch
+# 01 The Derivation — Claude compatibility route
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md` (L3 lane compliance)
+**Lane:** `03_METHODOLOGY/01_THE_DERIVATION`
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+## Read first
 
-## Read order
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../../AGENTS.md)
+- [Kernel Index](../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-1. [`README.md`](README.md) — folder purpose and inventory
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. `00_THE_DERIVATION.md` — root derivation document; ordered reasoning path
+## Pure-worldview boundary
 
-## Scope
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-- 01 The Derivation lane of the Emergentism framework.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+## Epistemic contract
 
-## Derivation discipline
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-- **Ordered reasoning:** the path from assumptions to consequences is sequenced and inspectable.
-- **Proof burden:** every step carries the burden of justification; gaps must be flagged, not papered over.
-- **Falsification posture:** every derivational claim must be accompanied by a way it could fail.
+## Rosetta dispatch
 
-## Upstream / downstream routing
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-| Direction | Target | What to route |
-|---|---|---|
-| **Upstream** | `../../01_TELEOLOGY/02_THE_DERIVATION/` | The broader F5 derivation archive — defer to that lane for teleological derivation history. |
-| **Upstream** | `../../05_COSMOLOGY/03_FORMAL_SYSTEM/` | Formal-system theorem catalogues — route proof formalisation there. |
-| **Downstream** | `../02_THE_PAPERS/` | Public paper packaging — the derivation feeds into published formulations. |
-| **Peer** | `../03_PREREGISTRATIONS/` | Frozen predictions that test derivational consequences. |
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Evidence tier
+## Lane discipline
 
-- `[S]` for derivation sequence and method structure.
-- `[I]` where the derivation is translated into wider framework meaning.
-- Do not upgrade `[I]` to `[A]` or `[B]` without independent evidence or dated receipts.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Routing
-
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
-
-## Cross-cutting laws
-
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

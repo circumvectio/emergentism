@@ -28,7 +28,7 @@ This ledger answers one question for every major claim in **The Reap**: what exa
 | ID | Reap claim | Verdict | Certificate / reason |
 |---|---|---|---|
 | R0.1 | `•`, `⊙`, and `○` are boundary frames, not operands. | **DEFINITIONAL, TYPE-CHECKED** | `Frame` is distinct from `Move`; `Game.execute` accepts only `Move` (`Structure.lean`). |
-| R0.2 | `⊙ = • × ○`. | **DEFINITIONAL** as typed grammar | `FrameComposition.boundary` and `typed_boundary_composition`. This is a formation rule, not ordinary multiplication. |
+| R0.2 | The three Titan frames have an operator-free rendering and an empty arithmetic signature. | **TYPE-CHECKED** | `frame_render_is_injective` proves that the point, bullseye, and ring render three distinguishable frame seats. `FrameArithmeticOp` has no constructors, and `frame_arithmetic_signature_is_empty` eliminates every purported inhabitant. No relation composes frames. |
 | R0.3 | Ordinary `0 · ∞ = 1`. | **REFUTED** | `extended_zero_times_infinity_is_not_one` proves `(0 : ENNReal) * ⊤ ≠ 1`; ordinary extended multiplication gives zero. |
 | R0.4 | The floor “holds no axioms.” | **INTERPRETIVE ONLY** | A formal D0 theory necessarily has types, constructors, and inference rules. The phrase can mean “no agent-authored empirical/ethical law,” not literally no formal assumptions. |
 | R0.5 | The one relation “could not have been otherwise.” | **NOT PROVED** | Uniqueness requires a class of admissible grammars and invariance criteria. Neither is defined by the sentence itself. |

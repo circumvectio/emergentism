@@ -12,18 +12,27 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "Suda value extraction for the Finity theory"
 title: "Suda Value Extraction for the Finity Theory"
-status: "ACTIVE synthesis note - 2026-06-06. Source-backed intake analysis; not a canon upgrade by itself."
+status: "ACTIVE KINTSUGI COMPATIBILITY — source synthesis corrected 2026-07-21; D1 owner controls."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **Source lane:** `_SOURCES/README.md` plus ignored raw archive `90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/`
 **Purpose:** extract what is valuable from Minoru Suda's papers for clarifying the Finity theory, without importing claims that exceed Emergentism's evidence tiers.
 
 # Suda Value Extraction for the Finity Theory
 
+> **[金] 2026-07-21 standing correction.** Suda is credited for packaging and
+> interpreting reciprocal structures, not for originating standard mathematics
+> or empirically corroborating Emergentism. The `/0→/1` order, finity reading,
+> and μ handoff are selected `[I/C]` architecture. Ordinary `0` and `1` remain
+> operands; only their selected Titan roles are frames. D2 is now functions and
+> configuration, not "the μ-limit." The
+> [D1 owner](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md)
+> and [source crosswalk](SUDA_DIMENSIONAL_CROSS_REFERENCE.md) control.
+
 ## Executive Read
 
-Suda is valuable because he independently circles the same hard structure from a different entrance: reciprocal symmetry, Mobius/projective geometry, the special position of `1`, the duality of `0` and `infinity`, and the "egg of infinity." He does **not** originate the Finity doctrine in this corpus. He does, however, give us a sharper way to explain why `/1` must follow `/0`: once the Titans are named, reciprocal geometry shows why the middle glyph is not arbitrary.
+Suda is valuable because he packages a closely related reading of reciprocal symmetry, projective geometry, the special position of `1`, the duality of `0` and `infinity`, and the "egg of infinity." He does **not** originate the elementary mathematics or the Finity doctrine in this corpus. His work offers one attributed explanation for the selected `/0→/1` order; it does not force that order or make the middle glyph non-arbitrary.
 
 The clean adoption is:
 
@@ -306,7 +315,7 @@ The Finity theory begins by separating three registers:
    0 and infinity exchange under I(x) = 1/x; 1 is the unique positive fixed point.
 
 3. Frame/glyph doctrine:
-   •, ⊙, ○ are boundary frames. The emblem ⊙ = • × ○ says that bounded one-ness is read as the held relation of void and unboundedness, not computed as a field product.
+   •, ⊙, ○ are boundary frames. The emblem •   ⊙   ○ says that bounded one-ness is read as the held relation of void and unboundedness, not computed as a field product.
 ```
 
 ### Public one-line version
@@ -465,7 +474,7 @@ This is the correct bridge from the line to the plane and later from sphere to t
 
 The clarified Finity theory:
 
-> The number system has three boundary frames: zero, finity, and infinity. In ordinary field arithmetic these cannot be treated as ordinary operands without contradiction. In reciprocal/projective geometry, zero and infinity are exchanged by inversion, while one is fixed. In Emergentism, this fixed point is named finity: the boundary-frame in which the void and the unbounded are held as one bounded appearance. The glyph equation `⊙ = • × ○` is the emblem of that frame relation, not a theorem of field arithmetic. The Mu-limit is the register transition where a boundary that blocked one chart becomes the bridge into the next.
+> The number system has three boundary frames: zero, finity, and infinity. In ordinary field arithmetic these cannot be treated as ordinary operands without contradiction. In reciprocal/projective geometry, zero and infinity are exchanged by inversion, while one is fixed. In Emergentism, this fixed point is named finity: the boundary-frame in which the void and the unbounded are held as one bounded appearance. The glyph equation `•   ⊙   ○` is the emblem of that frame relation, not a theorem of field arithmetic. The Mu-limit is the register transition where a boundary that blocked one chart becomes the bridge into the next.
 
 This is the clean public spine:
 
@@ -476,4 +485,4 @@ This is the clean public spine:
 /3+ build dimensions from that disciplined base
 ```
 
-⊙ = • × ○
+•   ⊙   ○

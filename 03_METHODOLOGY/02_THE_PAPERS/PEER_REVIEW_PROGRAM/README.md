@@ -10,7 +10,7 @@ Opened 2026-06-10. The lane where corpus claims are grounded against reality, cu
 
 - [00_FINDINGS_AND_CONJECTURES.md](00_FINDINGS_AND_CONJECTURES.md) — ranked findings, achievements, conjectures (the backward-looking capstone)
 - [00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md](00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md) — open tasks, known knowns/unknowns, prioritized
-- [00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md](00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md) — the two big territories audited + the headline-discipline corrections log
+- [Historical cosmology and constitution audit](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_COSMOLOGY_AND_CONSTITUTION_AUDIT.md) — archived corrections log; not current owner
 - [00_CORE_NARRATIVE_COHERENCE_CHECK.md](00_CORE_NARRATIVE_COHERENCE_CHECK.md) — the grand narrative mapped to coherence-vs-consistency-vs-truth
 - [00_PROGRAM.md](00_PROGRAM.md) — original program design, slate table, run log
 - [LITERATURE_GROUNDING.md](LITERATURE_GROUNDING.md) — per-paper prior-art grounding + download lists

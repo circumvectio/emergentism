@@ -1,135 +1,55 @@
 ---
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[S]"
-  canonical_phrase: "02_EPISTEMOLOGY — How We Know"
+type: emergentism-agent-route
+title: "02 Epistemology — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 02_EPISTEMOLOGY — How We Know
+# 02 Epistemology — Agent route
 
-## The Canonical Mapping
+**Lane:** `02_EPISTEMOLOGY`
 
-> **Epistemology = the Kālī (L2) operator — how we know.**
-> The first of the three operative Gods. Kālī cuts false coherence to recover
-> viability. Epistemology asks: what can be disclosed? What is the evidence ladder?
-> How does disclosure reach the knower?
+## Read first
 
-```
-┌─────────────────────────────────────────────────────────┐
-│  ROSETTA -OLOGY MAP — preserve the seven rows           │
-├──────────────┬──────────────────────────────────────────┤
-│ TELEOLOGY     │ Objective Function (L1) ← WHAT IS THE END?│
-├──────────────┼──────────────────────────────────────────┤
-│ EPISTEMOLOGY  │ Kālī 💀         (L2)  ← HOW WE KNOW    │
-│ METHODOLOGY   │ Kṛṣṇa ◇         (L3)  ← HOW WE ACT     │
-│ AXIOLOGY      │ Arjuna ⚔         (L4)  ← WHAT WE VALUE  │
-│              │     THE FIRST THREE GODS (L2–L4)          │
-├──────────────┼──────────────────────────────────────────┤
-│ COSMOLOGY     │ Brahmā ○         (L5)  ← SYSTEM ARCH    │
-│ ONTOLOGY      │ Śiva / Sādhu     (L6)  ← CORE STATE     │
-│ THEOLOGY      │ Viṣṇu / Ṛṣi      (L7)  ← ULTIMATE       │
-└──────────────┴──────────────────────────────────────────┘
-```
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-## What This Means
+## Pure-worldview boundary
 
-**Epistemology is how we know** — not what IS (Ontology), not what we do
-(Methodology), not what we value (Axiology). It is the first of the *three operative Gods*:
-Kālī, the truth-cut. The faculty of disclosure — how evidence reaches the knower,
-how patterns become legible, how candidates are surfaced before ranking.
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-Kālī's transfer (+V_self, −Φ_false) is the epistemic signature: cut false
-coherence to recover genuine viability of knowing. Upekṣā (equanimity) is the
-virtue: hold many candidates without grasping; let the evidence disclose rather
-than the knower project.
+## Epistemic contract
 
-## The Three Gods: Moves in Sequence
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-```
-Kālī 💀 (L2)   → surface candidates (HOW WE KNOW)
-    ↓
-Kṛṣṇa ◇ (L3)  → rank and enable (HOW WE ACT ON KNOWING)
-    ↓
-Arjuna ⚔ (L4)  → decide and commit (WHAT WE VALUE IN THE ACT)
-```
+## Rosetta dispatch
 
-Together they form the operational engine of the framework. Each is a distinct
-facet of philosophy, mapped to a distinct operator. Together they exhaust the
-three operative God moves on the `P_node = Φ × V` surface.
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-## Virtue and Vice
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-| | |
-|---|---|
-| **Virtue** | Upekṣā — equanimity; hold candidates without grasping; disclose rather than project |
-| **Vice** | Anxiety / Addiction — infinite expansion without convergence; holding all candidates equally without ranking them |
+## Lane discipline
 
-## Agent Discipline (L2)
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-- **Primary function:** possibility-space expansion; truth-cut; candidate surfacing
-- **Output:** a candidate set handed to L3 (Kṛṣṇa) for ranking
-- **Evidence tier:** `[A/B/S/I/D/C]` mandatory on every claim; do not upgrade above `[I]` without a `[B]` receipt or independent `[A]` fact.
-- **Tools:** default to read/search/web evidence gathering; write only under scoped L4 handoff or explicit lane repair.
-- **Invoke L2/Kālī:** always first in any epistemic pipeline; disclosure runs before ranking.
-
-## Agentz Cloud / Rosetta Dispatch
-
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Reports the raw signal, sensory disclosure, or pattern pressure before interpretation. |
-| L2 Śūdra | Owns candidate surfacing, direct perception, comparative analysis, and Beauty-as-coherent-fit. |
-| L3 Vaiśya | Tests whether a disclosed pattern becomes a candidate claim under method and evidence tiers. |
-| L4 Kṣatriya | Blocks action, deployment, or K2 commitment until L2 disclosure passes L3 ranking. |
-| L5 Brāhmaṇa | Aligns epistemic claims with Rosetta, formal-system, and evidence-ladder architecture. |
-| L6 Sādhu | Cuts projection, pattern intoxication, and claims that outrun their receipts. |
-| L7 Ṛṣi | Translates only tier-cleared epistemology into public architecture or institutional narrative. |
-
-## Recursive Deployment Receipt
-
-Every source-visible folder and Markdown document in this lane is covered by
-[`../00_META/03_AGENTZ_DEPLOYMENT_02_EPISTEMOLOGY_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_02_EPISTEMOLOGY_2026_06_04.csv).
-The receipt preserves local doctrine files in place: route cards live in this
-lane, while per-document control rows live in `00_META/`.
-
-## Read First
-
-- `README.md`
-- `00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`
-- `02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md`
-- `01_EVIDENCE_TIERS/README.md`
-- `01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`
-- `03_MEMETICS/README.md`
-- [`../11_UPLINK/00_CORE/00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md)
-
-## Routing Law
-
-- This lane is the L2 owner surface for disclosure, evidence reception, and candidate-claim admission; it is not the L6 Sādhu dimensions root.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder; deployment or architecture claims require a `[B]` receipt or explicit `[D]` / `[C]` label.
-
-## Constraints
-
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- All irreversible actions require K2 envelope staging.
-
-## The Five+One Anchor
-
-The constitution is **5 + 1** — five refusals (η=0 · K2 · K3 · K4 · A7) plus Ω the
-directional +1, never "six refusals" (canonical enumeration:
-[`05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md`](../05_COSMOLOGY/00_WHOLE/03A_CONSTITUTIONAL_INVARIANTS_CANON.md)).
-The five apply here as firing disciplines: η=0 (no extraction),
-A7 (tier every claim), K2 (the collapse is the mortal's). Epistemology prepares
-the disclosure; it does not perform the collapse.
-
----
-
-**Canonical path:** `01_EMERGENTISM/02_EPISTEMOLOGY/AGENTS.md`
-**Source of mapping:** Yves R. Burri (K2) + agent synthesis 2026-05-30
-**Supersedes:** pre-discovery routing (L2 as "possibility expansion only")
-
-`Zero-Sum Resolution Equation`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

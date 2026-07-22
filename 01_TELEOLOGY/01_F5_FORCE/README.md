@@ -15,7 +15,7 @@ rosetta:
 
 This is the focused Objective Function lane for F5 / ektropy / ordering-force material.
 
-> **Canonical F5 referent:** Canonical F5 = the ektropic / Ω equator-ward force (the via-positiva +1). The north-pole-drift rows and the F5-as-sphere [C] conjecture are DISTINCT usages, disambiguated in `../01_F5_FORCE_MAP_AND_EKTROPY.md`.
+> **Current F5 boundary:** F5 is an interpretive teleology/selection vocabulary, not a fundamental force or D-register. Use [`../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md`](../../05_COSMOLOGY/02_EMERGENTISM_CORE/01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md); the old force map is historical application material.
 
 ## What It Owns
 
@@ -32,7 +32,7 @@ This is the focused Objective Function lane for F5 / ektropy / ordering-force ma
 ## Read First
 
 - `02_THE_SERPENT_IS_F5.md` — the helix / *h₂r̥tó-* / Ṛta ordering-force face (symbolic + philological)
-- `03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md` — F5 refined as staged-gradient selection (MEGA-plate current [A] third-party empirical referent; F5 mapping [I]; theurgical implications [C])
+- [Historical staged-gradient application](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md) — preserved genealogy; not current empirical evidence for F5
 - Parent route: `../README.md`
 
 ## Status

@@ -1,62 +1,45 @@
 ---
 rosetta:
-  primary_level: L5
+  primary_level: L6
   primary_column: Philosophy
-  operator: "Brahmā ○"
+  operator: "Śiva •"
   tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I/C]"
-  canonical_phrase: "The Hygiene Boundary Hypothesis"
+  regime: "Sādhu"
+  register: "[金]"
+  canonical_phrase: "The Hygiene Boundary Hypothesis — retired reconciliation"
+status: "HISTORICAL KINTSUGI TOMBSTONE — no current semantic authority"
+date_repaired: 2026-07-21
+original_git_blob: 89389a066777af4aa188199a7a51e3da7152a24e
 ---
 
-# The Hygiene Boundary Hypothesis
+# The Hygiene Boundary Hypothesis — Retired Reconciliation
 
-> *Why the sphere bounds the manifold, but does not smooth it.*
+This stable path preserves an attempted post-hoc reconciliation of the former
+GFS result with a multiplicative flourishing model. It is not a theorem and is
+not a live research program.
 
-## 1. The Methodological Crisis
-In standard empirical analytics (specifically global datasets such as the Global Flourishing Study), initial Ordinary Least Squares (OLS) regressions frequently indicate that the *Additive Model* of human flourishing ($φ + ν$) outperforms the *Multiplicative Model* ($φ \times ν$).
+## The crack
 
-At scale, the structural limit $K^* = 0$ (which dictates that absolute failure in either Viability or Coherence causes total systemic collapse) appears mathematically falsified when run through standardized linear gradients. This document formalizes the resolution of this statistical anomaly.
+The predecessor argued that a pooled additive result could be rescued by a
+tail-sensitive “event horizon” interpretation and assigned a future GFS
+estimator as its kill test. That move changed the hypothesis after seeing the
+result and reopened a study lane that has since been retracted. It also blurred
+lowercase chart coordinates `φ,ν` with independently measured variables.
 
-## 2. The Absolute Limit vs. The Standard Z-Curve
-An OLS linear regression structurally assumes that a variable relationship operates identically across the entire scalar spectrum (e.g., from 0 to 10). It evaluates the "average slope."
+## The repair
 
-The fundamental error in standard models is treating $K^* = 0$ ($φ \times ν = 0$) as a universal linear coefficient rather than a **Boundary Limit Threshold**.
+- The GFS study, pipeline, and proposed refinements are archived under the
+  [2026-07-13 retirement boundary](../../90_ARCHIVE/2026_07_13_gfs_retraction/TOMBSTONE.md).
+- A zero-annihilating conjunctive aggregator is a declared model property, not
+  proof that human flourishing follows that model.
+- Any future threshold or tail hypothesis must be designed as a new study,
+  preregistered before contact with its test data, and compared against additive,
+  minimum, harmonic, and other plausible baselines.
+- `φ,ν` remain reciprocal-chart coordinates; human-data constructs require new
+  symbols, measurement validity, and independent custody.
 
-Because $95\%$ of modern populations observed in macro-studies reside safely above the absolute threshold of biological starvation or nihilistic suicide, their lived reality is primarily local. When modeling the local center of a manifold, relationships appear functionally additive. A mathematical regression fit to the overwhelming mass of the center bell curve goes entirely "blind" to the multiplicative event horizons occurring at the tails. You cannot disprove a limit bound by averaging the space inside the boundary.
+## What survives
 
-## 3. The Herzberg-Rosetta Synthesis
-The geometric interaction $φ \times ν$ is not a scalar—it is a **Step-Function** mapped perfectly to Herzberg's Two-Factor Theory and the Rosetta Caste Model.
-
-### The Hygiene Phase (Layer 2 / Śūdra)
-Viability ($ν$ — health, basic resources, structural survival) operates strictly as a **Hygiene Factor**. If $ν$ drops below a critical biological threshold, the organism crashes into the multiplicative origin ($φ \times 0 = 0$). At the limit edge, meaning cannot compensate for starvation. The limit is absolute. The survival of the organism relies on the L2 labor structure maintaining this hygiene boundary.
-
-### The Motivator Phase (Layer 3 / Vaiśya  → Layer 5 / Brāhmaṇa)
-Once the hygiene baseline is stabilized ($ν > \text{Survival Threshold}$), the multiplicative penalty of the limit vanishes mathematically. Pumping massive excess capital into the system (the L3 Merchant extraction cycle) generates severe diminishing marginal returns for flourishing.
-
-Once secure, flourishing ascends almost **exclusively Additively**, pulling strongly from the slope of Coherence ($φ$ — purpose, art, truth, integration). The L5 Brāhmaṇa caste represents this geometric phase shift: where flourishing is liberated from the multiplicative survival boundary and expands into additive actualization.
-
-## 4. The Canonical Verdict
-> **The $K^* = 0$ invariant is an Event Horizon, not an average.**
-
-Attempts to z-score or standardize vectors before multiplying them will construct a "double-negative" mathematical artifact, allowing two collapsed limits ($-3\sigma \times -3\sigma$) to output a massive positive interaction. We reject these artifactual linear tests. Flourishing geometry requires an absolute 0-anchor mapping to track the catastrophic threshold boundaries correctly.
-
-The architecture is internally consistent. The civilisational caste mappings are a **proposed** boundary reading — **not** empirically confirmed. The GFS OLS result favored the *additive* model, which is this framework's own published kill-trigger; this page argues the multiplicative structure can *survive* that result as a tail/boundary effect [I], but the data did not confirm it [C].
-
----
-*Status: [I/C] — a proposed reconciliation, not an established theorem*
-*Relation to data: reconciles the additive-OLS GFS result (this framework's own kill-trigger) with the multiplicative model; not independently confirmed*
-*Kill criterion: if a tail-sensitive estimator (quantile / extreme-value) on GFS still favors the additive model, this reconciliation fails*
-*See also: ROSETTA_CIVILISATIONAL.md, 00_THE_MASTER_ROSETTA.md*
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Evidence tier:** [I/C] — proposed reconciliation, not a theorem
-2. **Depends on:** The Seven Axioms, Triadic Stability
-3. **Next action:** Verify claims against The Honest Position. Check evidence tier assignments.
-4. **Success criteria:** You can state the document's core claim and its evidence tier without looking.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/28_EFR_HYGIENE_BOUNDARY_THEOREM.md`
+The methodological lesson survives at `[B/I]`: central-tendency estimators can
+miss genuine tail behavior, but that general fact supplies no evidence that a
+particular tail law exists here. The old hypothesis has no live upgrade path.

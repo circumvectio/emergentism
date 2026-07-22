@@ -6,17 +6,17 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] doctrine — the epistemic ground of the Weltanschauungskrieg lane"
-status: "SIGNED [E] — K2 r127 (2026-07-13); AMENDED to four postures r129 (2026-07-13, K2 'adopt the 4th'). Filename retained per K3."
+status: "ACTIVE [I] — adopted in receipts 127/129; amended to four postures. Filename retained for link stability."
 date: 2026-07-13
 companion: "01_WELTANSCHAUUNGSKRIEG.md (this doc is its epistemic ground)"
 depends:
-  - "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md (K2-signed: the synthetic-gap ruling)"
+  - "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md (synthetic-gap ruling)"
   - "00_META/00_SETTLED_CANON_REGISTRY.md (three-bucket ruling row)"
 ---
 
 # The Four Postures Toward the Gap
 
-> **[Amended 2026-07-13 — receipt 129, K2 "adopt the 4th posture".]** Promoted from three postures to **four** by adopting **Withdraw** (§2, Posture IV), grafted from the concurrent `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1` staging draft (now superseded to this doc). Filename `01_THE_THREE_POSTURES.md` **retained per K3** (receipt 127 + registry cite it); the doc's content is the four-posture form.
+> **[Amended 2026-07-13 — receipt 129.]** Promoted from three postures to **four** by adopting **Withdraw** (§2, Posture IV), grafted from the concurrent `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1` staging draft (now superseded to this doc). Filename `01_THE_THREE_POSTURES.md` is retained for link stability; the doc's content is the four-posture form.
 
 **One sentence:** every Weltanschauung lives in the synthetic gap — formally valid, permanently beyond proof, held as a wager on the world — so worldviews cannot compete *in* the gap and compete instead by their **posture toward** it; there are **four** (deny / weaponize / confess / withdraw), and in the arena where nothing is provable, **the epistemics becomes the ethics.**
 
@@ -51,7 +51,7 @@ The five refusals are not decoration around the wager — they are point-for-poi
 | **A7** | infallibility | Posture I's forbidden falsifier — and Posture II's "the shield of the myth" | III (confess) |
 | **η = 0** | extraction | the blood-myth's *content* (in-group flourishing BY draining the out-group — extraction absolutized into cosmology) | III |
 | **K3** | unrecorded overwrite | the memory-hole every certainty-claiming system requires | III |
-| **K2** | model-only action | the automated absolutism both rival postures reach for at scale | III |
+| **Unaccountable automation** | model-only action | the automated absolutism both rival postures reach for at scale | III |
 | **K4** | no-exit | the no-exit doctrine in all its forms (blood-as-fate; apostasy-as-impossibility) | **IV (withdraw)** — the grace exit *is* the exit hatch in the wager; the Gödel criterion ("adherents = failure") is Posture IV made constitutional |
 
 The framework's genuine originality was never the sphere, the seven, or the product — the audits broke or re-scoped those. What survived every audit is **the posture**: the only stance that can lose an argument and live — *and then, if the world no longer needs it, quietly close.*
@@ -70,13 +70,16 @@ The framework's genuine originality was never the sphere, the seven, or the prod
 
 ## 6 · Execution surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
 
-1. This doc is `[D]` until K2-signed. The synthetic-gap ruling it builds on **is** signed (receipt 126) — cite that freely.
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
+
+1. This doc is active at its stated `[I]` tier. Adoption does not upgrade the synthetic-gap argument or any evidence it cites.
 2. Never argue the framework is *superior because unprovable-like-the-others-but-honest* as if that were `[A]`; the posture-advantage is `[I]` and the long-game claim is `[I/C]` with a live kill.
 3. When writing public or strategic material, classify rival systems by posture only with §4.1's care: postures classify *strands*, not whole traditions.
 4. **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md`
 
 *The competitors need believers. A confessed wager needs only witnesses — and a way out for when the witnessing is done.*
 
-⊙ = • × ○
+•   ⊙   ○

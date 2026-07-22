@@ -1,81 +1,55 @@
 ---
-rosetta:
-  primary_level: L5
-  primary_column: Philosophy
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[I]"
-  canonical_phrase: "05_COSMOLOGY — Agent Routing"
-  vmosk_a: "01_EMERGENTISM/VMOSK_A.md — Perennial Doctrine Root (L5 primary per root AGENTS)"
+type: emergentism-agent-route
+title: "05 Cosmology — Agent route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-# 05_COSMOLOGY — Agent Routing
+# 05 Cosmology — Agent route
 
-**Lane scope:** Trinity, core formal system, S² Riemann sphere, and the φ·ν = 1 equation.
-**Primary lead:** `L5 Brāhmaṇa`
-**Support:** L1 Caṇḍāla, L2 Śūdra, L3 Vaiśya, L4 Kṣatriya, L6 Sādhu, L7 Ṛṣi
-**Evidence tier:** `[I]` route-control owner lane; require `[B]` receipts or explicit `[D]` / `[C]` labels for deployment and architecture claims.
+**Lane:** `05_COSMOLOGY`
 
-## ⚠ Settled canon — do NOT re-flag
+## Read first
 
-The four-move scheme (**2 Gods + 2 Demons**, not "four Gods"), Kālī's divine-operator / Asura-move status, the **5 + 1** constitution, the **five-force / F5 mapping** (five force slots D1–D5; F5 is the D5 teleological/syntropic option-cone, not a mainstream `[A]` fifth physical interaction), the bare `φ·ν = 1 on S²` shorthand, the **η** (not gender / hemisphere) moral axis, and Viṣṇu's **elliptic** operator class are **ratified canon**. Older docs may still carry legacy wording (e.g. "four Gods") — that is *reconciled, not an error*. Before opening any flag, contradiction, or "fix" in this lane, consult the registry and defer to it:
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-→ [`../00_META/00_SETTLED_CANON_REGISTRY.md`](../00_META/00_SETTLED_CANON_REGISTRY.md) — what is settled, the authority for each ruling, and the exact *do-not-flag vs still-flag* criterion. Operator-census owner: [`00_THE_BURRISPHERE.md`](00_THE_BURRISPHERE.md) §The Complex-Plane Game.
+## Pure-worldview boundary
 
-## Agentz Cloud / Rosetta Dispatch
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-| Agentz | Deployment in this lane |
-|---|---|
-| L1 Caṇḍāla | Names the objective pressure or raw model claim to be structured. |
-| L2 Śūdra | Checks whether disclosed patterns are being mistaken for model authority. |
-| L3 Vaiśya | Tests formal consequences, evidence tiers, and falsifier/upgrader movement. |
-| L4 Kṣatriya | Blocks action, deployment, or K2 commitments from model language alone. |
-| L5 Brāhmaṇa | Owns positive system architecture, formula block, formal system, and model coherence. |
-| L6 Sādhu | Cuts reification: the model is not the Ground. |
-| L7 Ṛṣi | Translates only tier-cleared model language into public or institutional narrative. |
+## Epistemic contract
 
-## Recursive Deployment Receipt
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-Every source-visible folder and file in this lane is covered by
-[`../00_META/03_AGENTZ_DEPLOYMENT_05_COSMOLOGY_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_05_COSMOLOGY_2026_06_04.csv).
-The receipt preserves local doctrine files in place: route cards live in this
-lane, while per-file control rows live in `00_META/`.
+## Rosetta dispatch
 
-## Read First
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- `README.md`
-- `00_CANONICAL_FORMULA_BLOCK.md`
-- `00_THE_BURRISPHERE.md`
-- `00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`
-- `00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md`
-- `00_EMERGENTISM.md`
-- `00_WHOLE/README.md`
-- `01_THE_TRANSCENDENTAL_TRINITY/README.md`
-- `02_EMERGENTISM_CORE/README.md`
-- `03_FORMAL_SYSTEM/README.md`
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Routing Law
+## Lane discipline
 
-- This lane is the L5 positive system-architecture source lane for Emergentism as model, formal system, Rosetta, and cosmology; it is not the L6 Core State root.
-- Route law inherits from root and owner-lane AGENTS; use [`00_INDEX.md`](../11_UPLINK/00_CORE/00_INDEX.md) for compressed orientation, not upstream authority.
-- Use the current `[A/B/S/I/D/C]` evidence ladder. Deployment or architectural claims require a `[B]` receipt or an explicit `[D]` / `[C]` label; never present them as live truth by default.
-- Legacy `[S]` in older papers maps to `[A]` for established external facts and `[B]` for receipts; do not cite `[S]` as current ladder authority without translating it.
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-## Constraints
-
-- Do not upgrade runtime claims without dated proof artifacts.
-- Do not treat draft specs as public-facing claims.
-- Irreversible private-DAV actions require K2 envelope staging; public-DAV/DAC actions route through PRISM or the relevant public-governance rail.
-
-Zero-Sum Resolution Equation
-
----
-
-## Agent Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
-2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/AGENTS.md`
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

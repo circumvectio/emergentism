@@ -1,9 +1,9 @@
 ---
 title: "Implementation Plan - Extraction Law Empirical Test"
 date: 2026-07-02
-status: "ACTIVE PLAN"
+status: "HISTORICAL PLAN — executed 2026-07-02"
 evidence_tier: "[D] plan; outputs may become [B] only for reproducible analysis execution"
-owner: "K2-staged; no irreversible act"
+owner: "01_EMERGENTISM — historical experiment packet"
 ---
 
 # Implementation Plan - Extraction Law Empirical Test
@@ -62,7 +62,6 @@ Primary metrics: held-out log loss, AUC, and accuracy with fixed-seed stratified
 
 - Do not rewrite canon.
 - Do not claim the framework is proven.
-- Do not alter the Skyzai tree.
+- Do not alter any external application tree.
 - Do not promote any document above its evidence tier.
 - Do not stage or commit the unrelated untracked doctrine drafts already present in `01_EMERGENTISM`.
-

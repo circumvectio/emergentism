@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **Biological Prerequisites for Cybernetic Integration: Hardening the Human Hardware Against Memetic Capture**

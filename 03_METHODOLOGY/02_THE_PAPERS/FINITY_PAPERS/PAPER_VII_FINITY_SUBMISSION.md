@@ -276,4 +276,4 @@ The strongest sentence:
 
 *Evidence tiers: [A] = established external fact; [B] = dated receipt; [S] = framework-internal structural claim; [I] = interpretive; [C] = conjectural. The mathematical content is [A]. The ontological reading is [I]. The dimensional scaffold assignments are [C].*
 
-⊙ = • × ○
+•   ⊙   ○

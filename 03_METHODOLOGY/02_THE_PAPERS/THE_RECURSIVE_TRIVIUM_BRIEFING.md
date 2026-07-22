@@ -15,16 +15,26 @@ rosetta:
   register: "[S/I]"
   canonical_phrase: "Executive briefing — teleological cognition in three recursive passes"
 title: "The Recursive Trivium: A Briefing on Teleological Cognition"
-status: "v1.0 — 2026-06-02"
+status: "SUPERSEDED APPLICATION BRIEF; METHOD/PROVENANCE ONLY"
+original_version: "v1.0 — 2026-06-02"
+authority_scope: "historical application evidence; no doctrinal or current-runtime authority"
 companion_to:
   - "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md (v1.2)"
   - "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md (v1.3)"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 primary (papers lane).**
 
 # The Recursive Trivium: A Briefing on Teleological Cognition
+
+> **Historical-application fence.** This briefing preserves the v1.0 account and
+> its application history. The surviving method is the bounded three-pass
+> workflow in the [repaired formal synthesis](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md).
+> References here to APU, `core/` code, runtime implementation, Telos-Shield,
+> HFT, or simulations are historical application evidence only. They neither
+> define Emergentist doctrine, report current runtime truth, nor authorize work
+> on any product or runtime.
 
 ## Executive Summary
 

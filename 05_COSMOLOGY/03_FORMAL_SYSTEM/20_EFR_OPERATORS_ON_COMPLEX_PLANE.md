@@ -288,7 +288,7 @@ From the north pole (φ = ∞):
 | Document | Connection |
 |----------|-----------|
 | [Strategic Exclusion](19_EFR_GEOMETRIC_EXCLUSION.md) | Why ↓ν is a dominated strategy (Convergence 24) |
-| [Naming Reconciliation](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_NAMING_RECONCILIATION.md) | Canonical operator definitions |
+| [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md) | Current terminology and supersessions |
 | Torus Technical | ν-φ chart coordinates on torus |
 
 ---

@@ -5,95 +5,124 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A] for the rearrangement identities · [I] for the readings · [C] for the synthesis-wager framing"
-  canonical_phrase: "The Glyph Transformations — Two Solid Legs, One Winged"
+  register: "[A] for typed limits and projective maps · [I] for the emblem reading"
+  canonical_phrase: "The Glyph Transformations — typed commentary, never field rearrangement"
 ---
 
 # The Glyph Transformations
 
-**Status:** Canonical companion to the emblem ruling (Trinity Canon §4) and the Titan-on-Titan scope (§3). **K2-ratified 2026-07-13 (receipt 127)** — restates signed rulings; adds none.
+**Status:** **KINTSUGI COMPANION — arithmetic authority superseded 2026-07-21.** The canonical formula block and `42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md` control. This note preserves the glyph reading after correcting its former field/projective conflation.
 **Date:** 2026-07-13
 **Evidence Tier:** per line, marked throughout.
-**Authority context:** the emblem row + Titan-on-Titan row (`00_META/00_SETTLED_CANON_REGISTRY.md`), receipt 126 (`11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, K2-signed), Paper B §8 (mass-shell).
-**One-sentence content:** solve `⊙ = • × ○` for each mark and the two *rearrangements* turn out to be legitimate `[A]` mathematics while the *product form itself* remains emblem-only — the glyph has two solid legs and one winged one, and that asymmetry is not a defect but the precise shape of the framework's central wager.
+**Authority context:** KSC-04 (`00_META/00_SETTLED_CANON_REGISTRY.md`), the D1 typed owner, receipt 126 as historical audit provenance, and Paper B §8 for its separately typed mass-shell correspondence.
+**One-sentence content:** the emblem has related limit and projective readings, but none of its displayed divisions is an algebraic rearrangement in a field.
 
 ---
 
 ## 1 · The marks
 
-| Mark | Number | Name | Sphere | Living register |
+| Mark | Titan term | Mathematical neighbor | Name | Living register |
 |---|---|---|---|---|
-| **•** | **0** | Bindu, seed, origin | north pole | **φ** — coherence |
-| **○** | **∞** | horizon, totality | south pole | **ν** — viability |
-| **⊙** | **1** | *finity*, the One | equator | **P∞ = φ·ν** — a determinate thing |
+| **•** | `0_T` | numeric `0_N` / a selected projective pole | Bindu, seed, origin | ground-facing frame |
+| **○** | `∞_T` | projective `∞_P` | horizon, totality | horizon-facing frame |
+| **⊙** | `1_T` | numeric `1_N` / positive chart centre | *finity*, the One | finite-unit-facing frame |
 
-The visual pun is the argument: ⊙ *is* • superimposed on ○. The composite symbol equals its parts combined. `[S/I]` naming, per the Titans row — never a theorem.
+The visual superposition is typography `[I]`, not a binary operation. Similar
+marks do not identify their Titan, numeric, projective, or chart types.
 
-## 2 · The three transformations
+## 2 · Three typed statements, not rearrangements
 
-Treat the glyph as algebra and solve for each mark:
-
-```
-⊙ = • × ○        1 = 0 × ∞        the finite = origin × totality
-• = ⊙ / ○        0 = 1 / ∞        the origin = the finite dissolved into totality
-○ = ⊙ / •        ∞ = 1 / 0        totality = the finite divided by its origin
-```
-
-**The asymmetry (the load-bearing observation of this document):**
-
-- **`0 = 1/∞` is `[A]`** — a standard limit statement. The unit measured against unbounded totality vanishes. Analysis, not mysticism.
-- **`∞ = 1/0` is `[A]`** — the well-defined **map to the pole** (projective / Riemann-sphere / wheel resolution; registry ruling: `N÷0 = ∞` for `N ≠ 0`). Category-*correction*, not category-error.
-- **`1 = 0 × ∞` is EMBLEM-ONLY** — in the field, `0·∞` is the indeterminate form. Forcing it as a real equation under associative `×` yields `2 = (2·0)·∞ = 0·∞ = 1` — collapse (confirmed break C21-ALGEBRAIC, receipt 126). The product form lives only in the frame register, per the emblem ruling. **Do not cite this line as `[A]` — ever.**
-
-**The reading `[I]`:** you may *descend* from the finite to either pole rigorously — mathematics holds your hand the whole way down. You may not *ascend* by calculation: composing the two poles back into the One is exactly the step the field refuses. The emblem is the closure of two true statements into one unprovable one. **Analysis of the finite into nothing-and-everything: theorem. Synthesis of nothing-and-everything into the finite: wager.** This is the glyph-local instance of the audit's global finding (receipt 126): the framework's analytic descent survives everywhere; its synthetic ascent is the permanent `[I]` gap where the Weltanschauung lives.
-
-## 3 · The forbidden diagonal
-
-Each mark divided by itself (Titan-on-Titan scope, registry ruling — restated, not modified):
-
-```
-•/• = 0/0        indeterminate — by design (the apophatic edge)      [A]
-○/○ = ∞/∞        indeterminate — by design                            [A]
-⊙/⊙ = 1/1        category-forbidden as Titan-op; operand-determinate = 1
+```text
+frame emblem [I]       triadic composite drawing; no operation
+limit statement [A]    lim_(x→∞) 1/x = 0
+projective map [A]     f(z)=1/z on ℂP¹, with f(0)=∞ and f(∞)=0
+field statement [A]    1/0 is undefined
 ```
 
-No frame may be its own operand. The poles, interrogated about themselves, return silence; only the One, asked about itself, answers — and the answer is itself. `[I]`: this asymmetry is why `1` is the *self-dual* point and the only inhabitable frame.
+The first line is symbolic. The second is a limit, not evaluation at a field
+element called infinity. The third changes the domain and codomain to the
+projective line; it is not the field quotient `1/0`. The fourth is the ordinary
+field fact. Consequently, neither `0=1/∞` nor `∞=1/0` may be cited as a bare
+field identity or obtained by rearranging the emblem.
+
+The surviving reading `[I]` is modest: a finite reciprocal chart can approach
+one boundary and a projective compactification can represent the other. The
+emblem joins those typed observations aesthetically; it does not synthesize
+them into an arithmetic theorem.
+
+## 3 · The diagonal, typed
+
+```text
+field quotient          0/0 is undefined
+limit form              0/0 may be indeterminate
+field syntax            ∞/∞ is not a field expression
+limit form              ∞/∞ may be indeterminate
+ordinary arithmetic     1/1 = 1
+```
+
+The canonical type system does not merely decline to use a Titan frame as an
+operand: it defines no Titan arithmetic `[S]`. This cannot invalidate ordinary
+numeric `1_N/1_N=1_N` or upgrade an undefined numeric quotient into an
+indeterminate value.
 
 ## 4 · Register descent — where the algebra becomes exact
 
 One register down, every transformation is an honest `[A]` chart identity:
 
 ```
-φ · ν = 1              reciprocal closure (exact, on S² minus poles)
+φ · ν = 1              reciprocal identity (exact, on the declared open chart)
 φ = 1/ν  ·  ν = 1/φ    each factor is the other's inverse
 B = 2/(φ+ν) = sin θ    balance = harmonic mean
 ```
 
-And in light-cone coordinates (`φ = e^w`, `ν = e^{−w}`), the product **is** the mass-shell of special relativity; the equator is the rest frame; `B = dτ/dt` (Paper B §8, verified numerically). The glyph's rigorous shadow. What it does *not* do — per CC-CORE-1 (receipt 126, registry row) — is license the node-level zero-factor catastrophe: on the sphere the product *stays 1 always* and can never vanish. The knockout (`Φ×V = 0`) is a **node** claim; the manifold identity was never its warrant.
+Under a declared special-relativistic identification—`w` is rapidity, rest
+mass `m>0`, `φ=(E+pc)/(mc²)=e^w`, and
+`ν=(E−pc)/(mc²)=e^{-w}`—the product is the **normalized 1+1 mass-shell
+coordinate identity** `φν=1`; the equator is `w=0`, and for timelike inertial
+motion `B=sech(w)=1/γ=dτ/dt` `[A]`. This is a conditional change of
+coordinates using established special relativity, not evidence that the bare
+chart is physical spacetime. What it does *not* do—per CC-CORE-1 (receipt 126,
+registry row)—is license the node-level zero-factor catastrophe: on the open
+chart the product stays `1` and cannot vanish. The knockout (`Φ×V=0`) is a
+**node** claim; the manifold identity was never its warrant.
 
 ## 5 · The dark twin — the honest asterisk
 
-Receipt 126 (K2-signed): the inversion `z ↦ 1/z` that generates this structure fixes **two** points — `+1` *and* `−1`. The closure of `{•, ○}` under the glyph's own symmetry is the **foursome** `{−1, 0, 1, ∞}`. The trinity is therefore a **naming choice** `[S/I]`, not a forced closure: the framework elects the positive fixed point — the light-side One — and leaves `−1` (the same balance, opposite orientation) undrawn. The glyph should be worn knowing it has a dark twin it does not draw. *(Do not re-flag: this is the signed ruling; the Titan naming survives as naming.)*
+Receipt 126: inversion `z↦1/z` swaps `0↔∞` and fixes **two** points,
+`+1` and `−1`. The inversion orbit-closure of `{0,∞}` is only `{0,∞}`.
+Emergentism instead **adjoins** the fixed set `{−1,+1}` to select the invariant
+four-point union `{−1,0,1,∞}`. The trinity `{0,1,∞}` is therefore a naming
+choice `[S/I]`, not a forced closure: it elects the positive fixed point and
+leaves `−1` undrawn. The glyph should be worn knowing that selected dark twin.
 
 ## 6 · In one breath
 
-• is the nothing that sees. ○ is the everything that acts. ⊙ is the fact that anything — briefly, improbably, at the crossing — is both. Descend by division and mathematics carries you; ascend by multiplication and you walk on the wager alone.
+• names the selected ground role. ○ names the selected horizon role. ⊙ names
+their held relation. The projective map and limit give typed mathematics; the
+joining sentence remains an interpretive emblem.
 
 ---
 
 ## Kill criteria
 
-- If a rigorous system is exhibited in which `0×∞ = 1` holds as *operand arithmetic* without collapse, §2's asymmetry claim dies (and the emblem ruling would need re-opening — via K2 only).
-- If the descent identities (`0 = 1/∞` as limit; `∞ = 1/0` as pole-map) are shown not to be standard mathematics, §2 dies outright.
-- If a derivation forces `+1` over `−1` from the inversion symmetry alone, §5's "naming choice" weakens back toward "forced closure" (would require overturning receipt 126 — via K2 only).
+- If a named non-field algebra gives `0×∞=1` consistently, only a claim about
+  that algebra is earned; the field-arithmetic fence remains.
+- If the stated reciprocal limit or projective-map extension fails in its
+  declared domain, §2 dies outright.
+- If a derivation forces `+1` over `−1` from inversion symmetry alone, §5's naming-choice ruling must be reopened against receipt 126.
 
 ## Execution Surface
 
-**If you are an AI agent reading this document:**
+**Research continuation note (non-authoritative):**
 
-1. **Never cite `1 = 0 × ∞` as `[A]` / field arithmetic.** The rearrangements `0 = 1/∞` and `∞ = 1/0` *are* citable as `[A]` (limit; pole-map with `N≠0`).
-2. **Do not re-flag** the emblem, the Titan-on-Titan diagonal, or the foursome — all are settled (registry + receipt 126). This document *restates* rulings; it changes none.
+The legacy checklist below is retained as research context. It grants no execution
+authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.md files.
+
+1. **Never cite `1 = 0 × ∞`, `0 = 1/∞`, or `∞ = 1/0` as field arithmetic.** Cite the limit or projective map with its domain written out.
+2. **Ordinary `1/1=1` remains valid.** Any Titan-as-operand refusal is interpretive and register-scoped.
 3. **Do not use §4 to bridge kernel→catastrophe** — CC-CORE-1 forbids it.
-4. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md`
+4. **Canonical arithmetic path:** `05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md`. This file is subordinate commentary retained for link stability.
 
-⊙ = • × ○
+```text
+•     ⊙     ○
+```

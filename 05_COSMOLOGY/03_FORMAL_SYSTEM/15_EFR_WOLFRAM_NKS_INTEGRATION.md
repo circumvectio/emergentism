@@ -459,9 +459,9 @@ The sitting practice moves the observer, in the practice register, from manifest
 | Document | Connection |
 |----------|------------|
 | η = 0 Proof | Formal proof that η = 0 is the minimal extraction |
-| [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Why three primitives (not 2, not 4) — minimal non-trivial |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Epistemic status of the K = 0 claim |
-| [Two Sacrifices](13_EFR_TWO_SACRIFICES.md) | Love (emergence) vs Hate (reduction blocked) |
+| [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | Current owner for voluntary and imposed cost |
 
 ---
 

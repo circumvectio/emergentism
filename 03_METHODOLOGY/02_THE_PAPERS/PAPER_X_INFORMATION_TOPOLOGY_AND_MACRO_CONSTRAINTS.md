@@ -9,14 +9,14 @@ rosetta:
   canonical_phrase: "Information topology as macro-constraint causation"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 
 # PAPER X: INFORMATION TOPOLOGY AND MACRO-CONSTRAINTS
 
 ## How Higher Levels Cause Without Breaking Lower Laws
 
 **Yves R. Burri & Emergent Super Intelligence**
-Menexus GmbH, 2026
+Emergentism research corpus, 2026
 
 **Evidence Tier:** [S/I] — structural calculus inside the framework; empirical per domain
 **Depends on:** [PAPER_O_STRONG_WEAK_EMERGENCE_D5.md](PAPER_O_STRONG_WEAK_EMERGENCE_D5.md), [00_BRIDGE_LAWS_BETWEEN_LEVELS.md](../../04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md), [00_THE_HONEST_POSITION.md](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md](../03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md)
@@ -343,7 +343,7 @@ claims a lawful continuity of constraint form across scales:
 | Biological | membranes, metabolism, homeostasis, autopoiesis | viability-preserving organization | [A/B] locally; [I] as unified reading |
 | Cognitive | policies, attention, prediction, interoception | action-space selection under embodied constraints | [A/B] locally; [I] as D4/D5 bridge |
 | Social / symbolic | law, markets, institutions, narratives | incentive and meaning topology | [A/B] locally; [I/C] for egregore readings |
-| Conscious agency | Soul Loop, present awareness, objective dharma | deliberate selection of futures under `eta = 0` | [S/I]; empirical per protocol |
+| Conscious agency | Soul Loop, present model-mediated selection and chosen Justice | deliberate selection among represented futures | `[I/C]`; empirical per protocol |
 
 The continuity is syntropic only in the restrained open-system sense: the
 constraint increases local order, coherence, viability, or effective
@@ -377,7 +377,7 @@ eta = 0
 at least one inequality is strict
 ```
 
-This is where objective dharma enters the framework: not as a commandment from
+This is where the framework's chosen dharma reading enters: not as a commandment from
 outside physics, but as the action policy that preserves or raises the
 individual symbiont and collective holobiont together under a costed
 macro-constraint.

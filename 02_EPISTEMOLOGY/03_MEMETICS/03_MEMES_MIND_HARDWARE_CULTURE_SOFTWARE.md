@@ -7,7 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I]"
   canonical_phrase: "**The Architecture of Mind and Culture: A Comprehensive Analysis of Memetic Theory**"
-  vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
 ---
 
 # **The Architecture of Mind and Culture: A Comprehensive Analysis of Memetic Theory**

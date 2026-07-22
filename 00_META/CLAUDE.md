@@ -1,69 +1,56 @@
 ---
-rosetta:
-  canonical_phrase: 00_META — Agent Routing
-  operator: Brahmā ○
-  operator_boundary: Executive boundary
-  primary_column: Philosophy
-  primary_level: L5
-  regime: Brāhmaṇa
-  register: '[I]'
-  tier: Meta-routing
-  canonical_phrase: "00_META/CLAUDE.md — Agent First-Touch"
+type: emergentism-agent-route
+title: "00 Meta — Claude compatibility route"
+status: "ACTIVE — pure Emergentism route, 2026-07-20"
+evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ---
 
-> **[K3 banner — 2026-06-06; eta-register bridge updated 2026-06-13]** This file carries 5+1 constitutional references. Canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) (K2-ruled 2026-05-30; five refusals η=0, K2, K3, K4, A7 + Ω as the directional +1). The eta fence is register-explicit: `η_move = 0` is the action / zero-extraction fence, while `η_ratio` is the log-coordinate diagnostic for reciprocal drift toward or away from finity. Local meta-routing role preserved per K3 archive-first rule.
+# 00 Meta — Claude compatibility route
 
-# 00_META — Agent First-Touch
+**Lane:** `00_META`
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+## Read first
 
-## Read order
+- [Local agent route](AGENTS.md)
+- [Local README](README.md)
+- [Emergentism root route](../AGENTS.md)
+- [Kernel Index](../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
-1. [`README.md`](README.md) — folder purpose and inventory
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`README.md`](README.md)
-4. [`00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md`](00_CLEANUP_AUDIT_CORRECTIONS_2026_05_31.md)
-5. [`00_TIDY_CONTROL_BOARD_2026_06_04.md`](00_TIDY_CONTROL_BOARD_2026_06_04.md)
+## Pure-worldview boundary
 
-## Scope
+- Emergentism stands on its own axioms, wagers, methods, and receipts.
+- Product, venture, company, runtime, and external-governance systems are neither premises nor authorities here.
+- AI and repository work follows the user's scoped request, repository permissions, provenance, reversibility, and tests; no private person's financial or contractual signature is an AI-work gate.
+- Consequential action requires a complete, scoped, contestable authorization represented by `AuthorizationEnvelope = principal + mandate + scope + consent + custody + expiry/revocation + contest path + actor + consequence bearer`.
 
-**Lane scope:** Meta-framework scaffolding — D/L bridge, translation protocol, corpus maps, audit ledgers, and onboarding sequences.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+## Epistemic contract
 
-## Agentz Cloud / Rosetta Dispatch
+- Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
+- Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
+- Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.
+- The physical light cone remains bounded by spacetime and `c`; model-mediated option cones are a different type.
+- D4 is actual; D5 is possible. Five typed interfaces are `μ₀…μ₄`; each emergence reading is tiered separately, while `b₆` and `r₆` are non-μ interpretive edges.
 
-| Rosetta row | Routing responsibility |
-|---|---|
-| L1 Caṇḍāla | Names raw cleanup pressure, broken maps, and unresolved corpus contradictions. |
-| L2 Śūdra | Checks evidence and disclosure discipline before meta summaries strengthen claims. |
-| L3 Vaiśya | Audits ledgers, D/L mappings, route cards, and cleanup receipts. |
-| L4 Kṣatriya | Routes irreversible private-DAV K2 staging, public-DAV/DAC PRISM/governance handoffs, and owner-lane handoffs. |
-| L5 Brāhmaṇa | Owns meta-framework topology, translation protocols, and source organization standards. |
-| L6 Sādhu | Keeps cleanup, archive, and compatibility work from becoming new doctrine. |
-| L7 Ṛṣi | Preserves compressed witness only after owner-lane truth is settled. |
+## Rosetta dispatch
 
-## Routing
+Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
+- L1 isolates boundaries and contradictions.
+- L2 expands alternatives and counterexamples.
+- L3 audits logic, evidence, sources, and routes.
+- L4 executes the smallest authorized, testable change.
+- L5 designs schemas and owner maps.
+- L6 compresses, archives, and removes false necessity.
+- L7 witnesses and translates without overriding source truth.
 
-## Cross-cutting laws
+## Lane discipline
 
-The constitution is **5 + 1** (K2-ruled 2026-05-30; canonical surface: [`00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`](00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)). The five refusals + Ω as the directional +1:
+- Stay inside this lane unless the scoped task requires a named owner elsewhere.
+- Preserve concurrent work and inspect Git state before edits.
+- A commit, test, receipt, preview, deployment, domain, and independent replication are different claims.
+- If a local instruction conflicts with the root route or Settled Canon Registry, repair or escalate the conflict; do not silently choose the grander claim.
 
-- **K2:** every irreversible act requires natural-person signature. *Via-negativa — refusal of model-only action.*
-- **η = 0:** zero extraction in the live move register; fees only on value created. Register bridge: `η_move = 0` is the action fence, while `η_ratio` checks reciprocal/log drift toward or away from finity. *Via-negativa — refusal of extraction.*
-- **K3:** no-deletion; archive-first. *Via-negativa — refusal of unrecorded overwrite.*
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything"). *Via-negativa — refusal of no-exit entrapment.*
-- **A7:** self-correction with evidence tier on every claim. *Via-negativa — refusal of infallibility.*
-- **+1 Ω:** noospheric directionality. *Via-positiva telos — the syntopic attractor the five clear the space for. Not a sixth refusal; a categorically distinct directional element.*
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
-
-
-<claude-mem-context>
-
-</claude-mem-context>
+•   ⊙   ○ — sovereign frames; no arithmetic or coercion.

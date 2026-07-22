@@ -13,8 +13,6 @@ rosetta:
   canonical_phrase: "Anmut and Demut"
 ---
 
-**Project VMOSK-A:** `../VMOSK_A.md`
-
 # ANMUT AND DEMUT
 
 ## A German Linguistic Translation of the Burri Sphere
@@ -22,8 +20,8 @@ rosetta:
 **Status:** Convergent symbolic translation — German vocabulary read through φ-ν structure; not etymological proof
 **Date:** 2026-03-23
 **Evidence Tier:** [I/C] Interpretive symbolic fit; conjectural as independent convergence evidence
-**Depends on:** [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md), [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md), [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), **[VMOSK-A](../VMOSK_A.md)**
-**See also:** [Kintsugi](../08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/00_KINTSUGI.md), [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md), [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md)
+**Depends on:** [The Computational Sphere](../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md), [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md), [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+**See also:** [Kintsugi Protocol](../00_META/00_THE_KINTSUGI_PROTOCOL.md), [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md), [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md)
 
 ---
 

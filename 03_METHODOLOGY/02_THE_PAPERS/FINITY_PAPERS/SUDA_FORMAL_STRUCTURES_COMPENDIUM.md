@@ -5,18 +5,27 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[A] formal extraction; [S] framework mapping"
+  register: "[A] corrected formal extraction; [I/C] source interpretations"
   canonical_phrase: "Suda formal structures compendium"
 title: "Suda Formal Structures Compendium"
-status: "ACTIVE — 2026-06-06. Extracted [A]-tier structures from the full Suda corpus with Finity Papers mappings."
+status: "ACTIVE KINTSUGI COMPATIBILITY — 2026-07-21. Corrected extraction; D1 owner controls."
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 papers lane / formal extraction.**
 
 # Suda Formal Structures Compendium
 
-*A rigorous extraction of every `[A]`-tier (provable, checkable) structure from Minoru Suda's 2025–2026 corpus, mapped to the Finity Papers framework. Philosophical interpretations are deliberately excluded here; they are treated in the companion `SUDA_ONTOLOGICAL_RESONANCE_MAP.md`.*
+> **[金] 2026-07-21 correction.** The first extraction mixed elementary
+> reciprocal mathematics with four overclaims: global convexity in `x`, a
+> two-valued phase at `x=1`, projective equivalence of `−1/x` and `1/x`, and a
+> nonexistent two-sided limit written as `±∞`. Those claims are corrected
+> below. Protocols are proposals until executed; analytic overlap is not
+> independent empirical corroboration. The D1 formal owner controls.
+
+*A corrected extraction of the checkable structures in Minoru Suda's
+2025–2026 corpus. Interpretive terms retain their own tiers and transfer no
+proof.*
 
 ---
 
@@ -172,7 +181,7 @@ Where `e^{iπ} + 1` symbolizes "harmonic zero" and the integral encodes "infinit
 
 **Status.** This is a **symbolic proposal**, not a rigorous theorem. The integral `∮ e^{iπx} dx` is not standardly convergent; the equation is presented as a structural operator, not an analytic identity. Tier: **[C]** conjecture / **[I]** interpretive emblem.
 
-**Finity Papers mapping.** The Möbius Structural Equation is Suda's attempt to write the boundary algebra in analytic form. It is structurally parallel to the Finity Papers' emblem `⊙ = • × ○` (`1 = 0 × ∞`), but Suda uses complex analysis where the Finity Papers use real projective geometry. Both are frame-register only, never `[A]`. The Finity Papers' version is more carefully fenced.
+**Finity Papers mapping.** The Möbius Structural Equation is Suda's attempt to write the boundary algebra in analytic form. It is structurally parallel to the Finity Papers' emblem `•   ⊙   ○` (`1 = 0 × ∞`), but Suda uses complex analysis where the Finity Papers use real projective geometry. Both are frame-register only, never `[A]`. The Finity Papers' version is more carefully fenced.
 
 ---
 
@@ -194,4 +203,4 @@ Where `e^{iπ} + 1` symbolizes "harmonic zero" and the integral encodes "infinit
 
 **Net assessment:** Suda contributes 4 genuinely new `[A]`/`[S]` structures the Finity Papers lack (measurement protocols, continuous half-twist, PSL(2,ℝ) lift, Möbius control triad). The rest is convergent corroboration.
 
-⊙ = • × ○
+•   ⊙   ○

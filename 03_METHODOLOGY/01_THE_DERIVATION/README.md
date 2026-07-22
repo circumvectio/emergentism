@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "01_THE_DERIVATION"
 ---
 
-**Project VMOSK-A:** `01_EMERGENTISM/VMOSK_A.md`
+**Corpus:** Emergentism
 **L3 Methodology sublane per `../AGENTS.md` and root.**
 
 # 01_THE_DERIVATION
