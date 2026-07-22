@@ -44,6 +44,7 @@ DISCLOSED_RE = re.compile(
     r"SUPERSEDED|TOMBSTONE|RETRACTED|DISPUTED|DEPRECATED|\bwas\b|formerly|"
     r"retired|grave|historical|provenance|archived|dead|killed|withdrawn|"
     r"\bstubs?\b|no longer|not current|absorbed|legacy", re.I)
+ALIVE_RE = re.compile(r"(ACTIVE|CURRENT|CANONICAL|LIVE)\b", re.I)
 STUB_RE = re.compile(
     r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
 MACHINERY_RE = re.compile(r"AUDIT|RECEIPT|TIDY_PLAN|CENSUS|_LEDGER|HANDOFF|CITATION", re.I)
@@ -72,7 +73,18 @@ def is_dead(path):
     fields = re.findall(r'^(?:status|title):\s*"?([^"\n]*)', head, re.M)
     # an H1 that literally announces a tombstone also counts as self-declaration
     h1 = re.findall(r'^#\s+(.{0,80})$', head, re.M)
-    return any(DEAD_RE.search(f) for f in fields + h1)
+    for f in fields + h1:
+        if not DEAD_RE.search(f):
+            continue
+        # A status that OPENS with ACTIVE/CURRENT/CANONICAL is alive, and any
+        # dead word after it describes what this document SUPERSEDES, not
+        # itself: "ACTIVE — E1-E10 successor axiom set; A1-A7 is superseded".
+        # The one exception is a document that calls itself an ACTIVE TOMBSTONE
+        # — that is a grave that still answers the door.
+        if ALIVE_RE.match(f.strip()) and not re.search(r"TOMBSTONE|RETRACTED", f, re.I):
+            continue
+        return True
+    return False
 
 
 def check(root):
