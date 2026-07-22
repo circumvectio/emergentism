@@ -187,10 +187,23 @@ guard already refuses the file; this sentence says why.
 
 ### 9A.2 · The stub law `[D]`
 
-Everything else at root — **30 files, verified 2026-07-22** — is a forwarding
-stub. Each carries **2–33 inbound citations**, so none may be moved, renamed,
-or deleted: a stub only works at the path it forwards *from*. The set is
-**append-only**.
+Everything else at root — **11 files, verified 2026-07-22** — is a forwarding
+stub carrying real demand. A stub only works at the path it forwards *from*, so
+a stub **with live citers** may not be moved, renamed, or deleted.
+
+> **Correction, same day.** An earlier draft of this section said *30 stubs,
+> 2–33 citations each, append-only, none may be moved.* That count was wrong:
+> it never asked **who** was citing. Five tidy passes had generated their own
+> audit trail, and those audits name every stub they created — so the machinery
+> was citing its own output and the count read it as demand. Re-measured
+> against live doctrine only: **11 stubs carry all 58 live citations; 19 had
+> zero.** The 19 were relocated to `91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/`
+> with a dated stone and a lookup index. Root: 38 → 19 files.
+
+**The demand test is now the rule:** before claiming a stub is load-bearing,
+count only citers that are live doctrine — excluding archives, dated handoff
+packets, other stubs, and any audit or tidy-plan document. A stub cited only by
+the pass that created it is not load-bearing; it is an echo.
 
 Four binding rules, enforced by
 `09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py`:

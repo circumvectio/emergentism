@@ -69,17 +69,19 @@ tests. Consequential action uses a complete, scoped, contestable
 
 ## Repository map
 
-> **Reading the root directory.** Thirty-eight `.md` files sit at this root, and
-> **only eight are live**: `README.md`, `AGENTS.md`, `AGENT_README.md`,
-> `CLAUDE.md`, `ROSETTA.md` (a routing shim), `00_THE_KERNEL_INDEX.md`,
+> **Reading the root directory.** Nineteen `.md` files sit at this root, and
+> **eight are live**: `README.md`, `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`,
+> `ROSETTA.md` (a routing shim), `00_THE_KERNEL_INDEX.md`,
 > `00_THE_WELTANSCHAUUNG.md`, and `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`.
-> The other **thirty are forwarding stubs** — each holds a path, not a claim, and
-> each exists because 2–33 live documents still cite it. They cannot be moved or
-> deleted without breaking those citations, so they stay. Every stub declares
-> `type: forwarding-stub`; a stub's `canonical_target` always names a **live**
-> owner and never an archive, while preserved bytes are named by
-> `historical_target`. Verified 2026-07-22: all thirty resolve, none points at a
-> grave or at another stub.
+> The other **eleven are forwarding stubs** — each holds a path, not a claim,
+> and each is cited by live doctrine (58 citations across the eleven), so they
+> stay where they are. A stub's `canonical_target` always names a **live**
+> owner, never an archive; preserved bytes are named by `historical_target`.
+>
+> Nineteen further stubs with **zero live-doctrine demand** were relocated on
+> 2026-07-22 to
+> [`91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/`](91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/INDEX.md)
+> — nothing deleted, lookup index included.
 
 
 | Path | Role |
