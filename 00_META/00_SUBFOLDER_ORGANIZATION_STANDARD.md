@@ -166,6 +166,89 @@ doctrine. The repository map in `README.md` is the human front door; this
 standard is the architectural owner; `09_TOOLS/01_SCRIPTS/check_tree_contract.py`
 is the executable guard. Generated registers describe the tree but do not own it.
 
+### 9A.1 · The root live-set is CLOSED at eight `[D]` — staged 2026-07-22
+
+The root holds exactly **eight live documents**. This is not a description; it
+is a closed set, and it is already enforced — `check_tree_contract.py`
+`ROOT_BODY_ALLOWLIST` contains these eight names and no others:
+
+| file | job |
+|---|---|
+| `README.md` | what this is, for a human |
+| `AGENTS.md` · `AGENT_README.md` · `CLAUDE.md` | routing, for machines |
+| `ROSETTA.md` | shim to the Rosetta Stone lane |
+| `00_THE_KERNEL_INDEX.md` | the map — seven owner surfaces |
+| `00_THE_WELTANSCHAUUNG.md` | the technical door — the priced creed |
+| `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` | the reader's door — one sitting |
+
+**A ninth live root file is a contract amendment, not a file drop.** Adding one
+means editing this section and the allowlist together, with a receipt. The
+guard already refuses the file; this sentence says why.
+
+### 9A.2 · The stub law `[D]`
+
+Everything else at root — **30 files, verified 2026-07-22** — is a forwarding
+stub. Each carries **2–33 inbound citations**, so none may be moved, renamed,
+or deleted: a stub only works at the path it forwards *from*. The set is
+**append-only**.
+
+Four binding rules, enforced by
+`09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py`:
+
+1. A stub declares at least one target, and it resolves.
+2. **`canonical_target` means a LIVE owner.** It may never name a path under
+   `90_ARCHIVE/`, and never another stub. If nothing live absorbs the document,
+   omit the field.
+3. `historical_target` means preserved bytes and *may* be archival.
+4. **No chains.** A stub points at its terminus, not at another stub.
+
+*Why rules 2 and 4 exist:* on 2026-07-22 fourteen root stubs declared a
+`canonical_target` that resolved to a grave or to another tombstone. Every one
+existed, so an existence-only check reported zero broken — while readers
+following a link labelled "canonical home" landed on a headstone. **Existence
+is not status.**
+
+### 9A.3 · The placement rule `[D]` — one line, no judgement call
+
+> **A new document goes to the one owner that would have to be corrected if the
+> document turned out to be false.**
+>
+> If nothing would have to be corrected, it is not doctrine. Route it to
+> `00_CONTROL` (receipt for a completed act), `00_HANDOFF` (dated in-flight
+> packet), `90_ARCHIVE` (superseded body), or `91_COMPATIBILITY` (path only) —
+> **and never to the root.**
+
+### 9A.4 · Lane names are glossed, never renamed `[D]`
+
+There are **seventeen lanes**. The `-ology` names are hard-coded in
+`check_tree_contract.py` (three separate lists), the `README.md` repository
+map, seventeen route-card triplets, and the Kernel Index. **Renaming buys
+cosmetics and costs a mass-breakage event.** The Plain-Language Naming Law is
+satisfied by a function gloss, not a directory rename:
+
+| lane | in plain words |
+|---|---|
+| `00_CONTROL` | receipts and boundaries for completed acts |
+| `00_HANDOFF` | dated in-flight working packets |
+| `00_META` | the governance spine — routing and claim custody |
+| `01_TELEOLOGY` | what is it for |
+| `02_EPISTEMOLOGY` | how do we know |
+| `03_METHODOLOGY` | how do we work |
+| `04_AXIOLOGY` | what is worth |
+| `05_COSMOLOGY` | what is the world |
+| `06_ONTOLOGY` | what is there |
+| `07_THEOLOGY` | what is ultimate |
+| `08_FRAMEWORK_SUPPORT` | evidence, compilers, analysis |
+| `09_TOOLS` | validators and renderers |
+| `10_SEED` | the minimal teachable core |
+| `11_UPLINK` | the record — audits and receipts |
+| `12_PUBLIC_SITE` | projection; never an owner |
+| `90_ARCHIVE` | cold provenance |
+| `91_COMPATIBILITY` | paths only, never doctrine |
+
+*Count correction:* an earlier pass in this session twice said "16 lanes."
+`ls -1d */` returns **17**. Recorded so the miscount is not inherited.
+
 Within `08_FRAMEWORK_SUPPORT/`, compilers and historical analysis live under
 `04_COMPILERS_AND_ANALYSIS/`. No semantic or support lane may create its own
 `00_META/`; old references are explained through a `91_COMPATIBILITY/` map.

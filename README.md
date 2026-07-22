@@ -84,23 +84,23 @@ tests. Consequential action uses a complete, scoped, contestable
 
 | Path | Role |
 |---|---|
-| `00_CONTROL/` | validation policies and control surfaces; never doctrine |
-| `00_HANDOFF/` | dated working packets and session transfer; never doctrine |
-| `00_META/` | canon registry, Compass, Refusals, corpus maps |
-| `01_TELEOLOGY/` | goals, option-cone and future-oriented hypotheses |
-| `02_EPISTEMOLOGY/` | evidence tiers, disclosure, limits of instruments |
-| `03_METHODOLOGY/` | derivations, preregistrations, audits, papers |
-| `04_AXIOLOGY/` | Justice, morals/ethics, Syntropic Dyadism |
-| `05_COSMOLOGY/` | Burri Rules, Soul Loop, D-registers, formal system |
-| `06_ONTOLOGY/` | degrees of freedom, axioms, wagers, creed, revelations |
-| `07_THEOLOGY/` | bounded symbolic and perennial translations |
-| `08_FRAMEWORK_SUPPORT/` | Rosetta, operators, comparative evidence |
+| `00_CONTROL/` | receipts and boundaries for completed acts — *never doctrine* |
+| `00_HANDOFF/` | dated in-flight working packets — *never doctrine* |
+| `00_META/` | the governance spine — routing, claim custody, the Refusals |
+| `01_TELEOLOGY/` | **what is it for** — goals, option cones, future-oriented hypotheses |
+| `02_EPISTEMOLOGY/` | **how do we know** — evidence tiers, disclosure, limits of instruments |
+| `03_METHODOLOGY/` | **how do we work** — derivations, preregistrations, audits, papers |
+| `04_AXIOLOGY/` | **what is worth** — Justice, morals/ethics, Syntropic Dyadism |
+| `05_COSMOLOGY/` | **what is the world** — Burri Rules, Soul Loop, D-registers, formal system |
+| `06_ONTOLOGY/` | **what is there** — degrees of freedom, axioms, wagers, revelations |
+| `07_THEOLOGY/` | **what is ultimate** — bounded symbolic and perennial translations |
+| `08_FRAMEWORK_SUPPORT/` | evidence, compilers, analysis — Rosetta, operators |
 | `09_TOOLS/` | validators, renderers, simulations, register tooling |
-| `10_SEED/` | minimal D0–D6 pedagogical seed |
-| `11_UPLINK/` | active record, audits, reconciliation, compressed routes |
-| `12_PUBLIC_SITE/` | public projection; never the canon owner |
+| `10_SEED/` | the minimal teachable core (D0–D6) |
+| `11_UPLINK/` | **the record** — audits, receipts, reconciliation |
+| `12_PUBLIC_SITE/` | public projection — *never the canon owner* |
 | `90_ARCHIVE/` | cold provenance and superseded bodies |
-| `91_COMPATIBILITY/` | forwarding paths only |
+| `91_COMPATIBILITY/` | forwarding paths only — *never doctrine* |
 
 ## Current standing
 
