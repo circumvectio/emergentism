@@ -20,8 +20,8 @@ rosetta:
 title: "00 Emergentism"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
-status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../05_COSMOLOGY/00_EMERGENTISM.md"
+status: "FORWARDING STUB — owner archived 2026-07-20; corrected 2026-07-22"
+historical_target: ../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_EMERGENTISM.md
 ---
 
 # MOVED

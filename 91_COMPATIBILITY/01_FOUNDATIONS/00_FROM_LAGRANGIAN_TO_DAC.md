@@ -20,8 +20,8 @@ rosetta:
 title: "00 From Lagrangian To Dac"
 evidence_tier: "[D] compatibility stub; [I] route metadata."
 type: compatibility-stub
-status: ACTIVE — old-link preservation only; canonical content lives in the linked owner lane.
-canonical_target: "../../01_TELEOLOGY/00_FROM_LAGRANGIAN_TO_DAC.md"
+status: "FORWARDING STUB — owner archived 2026-07-20; corrected 2026-07-22"
+historical_target: ../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/00_FROM_LAGRANGIAN_TO_DAC.md
 ---
 
 # MOVED

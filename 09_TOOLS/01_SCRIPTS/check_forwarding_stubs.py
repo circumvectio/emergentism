@@ -71,6 +71,9 @@ def check(root):
                 problems.append((rel, "R1", "declares no target field"))
                 continue
             for key, val in found:
+                # YAML targets are often quoted — strip quotes before
+                # resolving, or every quoted path reads as broken.
+                val = val.strip().strip('"').strip("'")
                 # a target may be written relative to the FILE or to the repo root;
                 # accept either, preferring file-relative (the common convention)
                 cand = [os.path.normpath(os.path.join(dirpath, val)),
