@@ -299,6 +299,12 @@ From Turiya (the equator), the practitioner can:
 
 ## 8. CONNECTION TO OTHER ROSETTAS
 
+*Route note: all four links in this table resolve to `D23_ROSETTA_COMPLETE_INDEX.md`,
+whose own status reads "SUPERSEDED CATALOGUE; ROUTE ONLY" (2026-07-20). That file no
+longer carries row content — it routes to the [Rosetta front door](../README.md) and to
+the individual row files. The connections listed below are this document's own
+correspondences; the index certifies none of them.*
+
 | Rosetta | Connection |
 |---------|-----------|
 | [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | Weighing as Turiya judgment |

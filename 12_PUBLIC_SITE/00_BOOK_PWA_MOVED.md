@@ -11,7 +11,7 @@ rosetta:
 
 # book-pwa has moved to its canonical home
 
-**As of 2026-06-12** (per K2 signoff [`02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md), 2026-06-11), the canonical AIA app lives at:
+**As of 2026-06-12** (per K2 signoff [`02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md), 2026-06-11 — that path now holds a tombstone; per its own text the signoff body was renamed 2026-07-22 to [`RATIFICATION_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/RATIFICATION_AIA_APP_MIGRATION_SIGNOFF.md)), the canonical AIA app lives at:
 
 ```text
 02_SKYZAI/03_AIA/app/
@@ -53,7 +53,7 @@ Full execution receipt: [`02_SKYZAI/03_AIA/AUDITS/AIA_APP_MIGRATION_RECEIPT_2026
 ## References
 
 - [`00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`](00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md) — the K2 envelope (SIGNED 2026-05-31)
-- [`02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md) — the K2 signoff (Approved 2026-06-11)
+- [`02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/K2_AIA_APP_MIGRATION_SIGNOFF.md) — the K2 signoff (Approved 2026-06-11); **this path is now a tombstone** (dated 2026-07-22, no current authority) and per its own text the body was renamed to [`RATIFICATION_AIA_APP_MIGRATION_SIGNOFF.md`](../../02_SKYZAI/03_AIA/AUDITS/RATIFICATION_AIA_APP_MIGRATION_SIGNOFF.md)
 - [`02_SKYZAI/03_AIA/AUDITS/AIA_APP_MIGRATION_RECEIPT_2026_06_12.md`](../../02_SKYZAI/03_AIA/AUDITS/AIA_APP_MIGRATION_RECEIPT_2026_06_12.md) — execution receipt
 - [`02_SKYZAI/03_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md`](../../02_SKYZAI/03_AIA/13_APP_BOOKS_SEPARATION_2026_05_31.md) — the engine/content separation spec
 - [`book-pwa/MOVED_TO_CANONICAL.md`](book-pwa/MOVED_TO_CANONICAL.md) — the existing in-book-pwa/ redirect (K3 archive-first; both files preserved per discipline)

@@ -387,7 +387,7 @@ The cargo cult is the Übermensch claiming to be the mesh.
 |----------|-----------|
 | η = 0 Proof | Formal proof of non-extraction |
 | [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Cooperation as geometric necessity |
-| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Kintsugi tombstone — its own status reads "ACTIVE TOMBSTONE — invalid uniqueness proof superseded". There is no Triadic Stability Theorem: a selected correspondence only, no forced count of nature |
 | [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md) | Current terminology and supersessions |
 | Three-Stage Process R5 | The fourth metamorphosis (mesh) |
 

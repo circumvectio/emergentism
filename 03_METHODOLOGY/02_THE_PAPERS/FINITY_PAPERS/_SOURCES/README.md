@@ -34,7 +34,7 @@ and the "egg of infinity." Idea-priority for `{0, 1, ∞}` / *finity* is the aut
 held at `[I]` for want of a dated artifact; Suda's papers are the externally-dated artifacts (Aug 2025)
 and are read as **corroboration, not a precedence claim in either direction**.
 
-The full 2026-06-06 Suda corpus convergence analysis is at [`../SUDA_CONVERGENCE_ANALYSIS.md`](../SUDA_CONVERGENCE_ANALYSIS.md).
+The full 2026-06-06 Suda corpus convergence analysis is at [`../SUDA_CONVERGENCE_ANALYSIS.md`](../SUDA_CONVERGENCE_ANALYSIS.md) — read it as a dated historical record, not as a current result: a 2026-07-21 standing correction at the head of that file withdraws its "confirmed" / "co-discoverer" / "corroborates the structure is real" verdict, lists four errors it transmitted as now corrected elsewhere, and states that the body below it is not current authority.
 
 ## Bibliographic record
 

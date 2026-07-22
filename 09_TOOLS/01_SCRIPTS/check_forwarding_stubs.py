@@ -11,7 +11,9 @@ EXISTENCE was being checked; target STATUS was not.
 
 THE FOUR RULES ENFORCED (from the caste-adjudicated stub template):
 
-  R1  A stub must declare at least one target, and it must resolve.
+  R1  A stub must route the reader onward: a target FIELD that resolves, or
+      at least one body link that resolves. Field-or-link, not field-only —
+      demanding the field flagged 76 well-formed stubs on 2026-07-22.
   R2  `canonical_target` means a LIVE owner. It must NOT start with
       `90_ARCHIVE/` and must NOT point at another forwarding stub.
       If nothing live absorbs the document, omit the field and use
@@ -30,6 +32,7 @@ import sys
 
 STUB_RE = re.compile(
     r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
+LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+)[^)]*\)")
 TARGET_RE = re.compile(
     r"^(canonical_target|historical_target|archive_target):\s*(\S+)\s*$", re.M)
 SKIP_DIRS = {"90_ARCHIVE", "91_COMPATIBILITY", "node_modules", ".git",
@@ -46,11 +49,48 @@ def head_of(path):
 
 
 def is_stub(path):
-    return bool(STUB_RE.search(head_of(path)))
+    """A stub DECLARES itself one — in its title, status, H1, or opening note.
+
+    Matching the phrase anywhere in the first 1500 chars swept in documents
+    that merely TALK about stubs: 00_META/00_TIDY_PLAN_v0.1.md is a 235-line
+    executed plan, not a forwarding stub, and every rule applied to it was
+    noise.
+    """
+    head = head_of(path)
+    decls = re.findall(r'^(?:title|status):\s*"?([^"\n]*)', head, re.M)
+    decls += re.findall(r"^#\s+(.{0,90})$", head, re.M)
+    decls += re.findall(r"^>?\s*((?:Compatibility|Forwarding|Historical)\s+stub[^\n]*)",
+                        head, re.M | re.I)
+    return any(STUB_RE.search(d) for d in decls)
 
 
 def targets(path):
     return TARGET_RE.findall(head_of(path))
+
+
+def body_routes(path, dirpath, root):
+    """Does this stub name at least one onward route the reader can follow?
+
+    Any markdown link in the body that resolves counts — an archive copy, a
+    successor, a receipt. Links into 90_ARCHIVE count: preserving the body is
+    exactly what a stub is for under archive-first.
+    """
+    try:
+        with open(path, encoding="utf-8", errors="replace") as fh:
+            body = fh.read()
+    except OSError:
+        return False
+    for t in LINK_RE.findall(body):
+        if t.startswith("http"):
+            continue
+        for cand in (os.path.join(dirpath, t), os.path.join(root, t)):
+            cand = os.path.normpath(cand)
+            if not os.path.exists(cand):
+                continue
+            if os.path.abspath(cand) == os.path.abspath(path):
+                continue        # a stub forwarding to itself is a loop
+            return True
+    return False
 
 
 def check(root):
@@ -68,7 +108,18 @@ def check(root):
             found = targets(p)
             rel = os.path.relpath(p, root)
             if not found:
-                problems.append((rel, "R1", "declares no target field"))
+                # A stub's duty is to route the reader onward, not to use a
+                # particular field name. Most stubs in this corpus name their
+                # archive body and successors as ordinary markdown links —
+                # which is what the reader actually clicks. Demanding a
+                # `canonical_target:` field instead flagged 76 well-formed
+                # stubs and would have "fixed" them by adding metadata nobody
+                # reads. A stub fails R1 only when it routes the reader
+                # NOWHERE: no field, and no body link that resolves.
+                if body_routes(p, dirpath, root):
+                    continue
+                problems.append((rel, "R1", "routes nowhere — no target field "
+                                            "and no body link that resolves"))
                 continue
             for key, val in found:
                 # YAML targets are often quoted — strip quotes before

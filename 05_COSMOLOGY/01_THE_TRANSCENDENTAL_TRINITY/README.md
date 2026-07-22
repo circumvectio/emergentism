@@ -19,7 +19,9 @@ repaired formal system. Where an older document conflicts, those owners rule.
 - [`12_THE_POLES.md`](12_THE_POLES.md) — boundary reading with literal identity retired.
 - [`16_THE_GREAT_FILTER.md`](16_THE_GREAT_FILTER.md) — candidate developmental reading.
 - [`17_THE_EGREGOROCENE.md`](17_THE_EGREGOROCENE.md) — collective-trace hypothesis.
-- [`22_THE_TELEOLOGY.md`](22_THE_TELEOLOGY.md) — conditional teleological reading.
+- [`22_THE_TELEOLOGY.md`](22_THE_TELEOLOGY.md) — Kintsugi tombstone, status "SUPERSEDED"
+  (2026-07-20): the universal-telos claims are withdrawn, and the same file states a
+  narrower conditional teleological reading in their place.
 - [`36_THE_DIMENSIONAL_TROPHIC_CASCADE.md`](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md)
   — trophic analogy, not energy-metabolism proof.
 - [`40_THE_TITAN_COMPOSITION_LAW.md`](40_THE_TITAN_COMPOSITION_LAW.md) and

@@ -376,7 +376,7 @@ The mesh is **Nietzsche's completion** — the fourth metamorphosis that makes t
 
 | Rosetta | Connection |
 |---------|-----------|
-| [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | The weighing as balance test |
+| [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) *(superseded catalogue, route only — 2026-07-20)* | The weighing as balance test — the index no longer carries the row; the current front door is the [Rosetta README](../README.md) |
 | R3: Shannon-Boltzmann | Information as φ-variation |
 | [Power-Max Lemma](../../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) | Cooperation at equator |
 

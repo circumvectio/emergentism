@@ -362,7 +362,7 @@ Zero-Sum Resolution Equation
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation of the Burri Sphere
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
-- [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
+- [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators *(forwarding tombstone, status "ARCHIVED … no current authority" 2026-07-22; the devotional-symbolic body is preserved in the archive and the stub makes no active claim)*
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 

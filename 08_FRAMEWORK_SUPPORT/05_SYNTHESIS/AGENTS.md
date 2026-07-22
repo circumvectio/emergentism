@@ -11,7 +11,7 @@ evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 
 ## Read first
 
-- [Local README](README.md)
+- [Local README](README.md) — its own status is "DISSOLVED 2026-05-31 (K3)": no live source canon remains in this lane, only the Definitive One Book move tombstone. Read it as the record of a hollow lane, not as a live synthesis index.
 - [Emergentism root route](../../AGENTS.md)
 - [Kernel Index](../../00_THE_KERNEL_INDEX.md)
 - [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)

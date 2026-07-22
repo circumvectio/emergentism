@@ -16,9 +16,26 @@ An all-lanes caste audit on 2026-07-22 found the same shape in lane after lane:
 Every instance is the same mechanical fact: **a LIVE document links to a target
 whose OWN FRONTMATTER declares itself dead, and says nothing about it.**
 
-WHAT COUNTS AS DEAD (read from the target's own first ~1500 chars):
-  SUPERSEDED · TOMBSTONE · RETRACTED · DISPUTED · DEPRECATED ·
-  "no current semantic authority" · "not current ... authority"
+WHAT COUNTS AS DEAD — read from the target's own `status:` field, which is
+authoritative. A title is a NAME, not a declared state.
+
+  DEAD    SUPERSEDED · TOMBSTONE · RETRACTED · DISPUTED · DEPRECATED ·
+          leading HISTORICAL · "not current ..." · "no current semantic authority"
+
+  ALIVE   a status OPENING with ACTIVE / CURRENT / CANONICAL / LIVE — the dead
+          word then names what this document REPLACES, not itself. This covers
+          the Kintsugi pattern, which is the corpus's normal repair: the file
+          keeps its historical path so inbound links survive, tombstones its own
+          former blob, and carries the live content. "ACTIVE TOMBSTONE" is a
+          LIVE OWNER. Also alive: "live owner repaired", "former X superseded",
+          "KINTSUGI SUCCESSOR".
+
+  EXCEPT  an explicit disclaimer beats every liveness marker: 25_STEEL_THREAD
+          is repaired AND says "not current semantic authority" — dead.
+
+Getting this wrong in the ALIVE direction is worse than missing a finding: it
+sends readers away from the live owner, which is the very defect being hunted.
+A thirteen-case suite over real corpus files pins both directions.
 
 WHAT IS NOT A FINDING:
   - the citing document is itself a stub, an archive file, or audit machinery
@@ -39,12 +56,19 @@ import sys
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+\.md)[^)]*\)")
 DEAD_RE = re.compile(
     r"SUPERSEDED|TOMBSTONE|RETRACTED|DISPUTED|DEPRECATED|"
-    r"no current semantic authority|not current .{0,24}authority", re.I)
+    # "HISTORICAL — not current force canon" disclaims authority without ever
+    # using the word "authority"; requiring that word let 09A read as live.
+    r"^HISTORICAL\b|\bnot current\b|no current semantic authority", re.I)
 DISCLOSED_RE = re.compile(
     r"SUPERSEDED|TOMBSTONE|RETRACTED|DISPUTED|DEPRECATED|\bwas\b|formerly|"
     r"retired|grave|historical|provenance|archived|dead|killed|withdrawn|"
     r"\bstubs?\b|no longer|not current|absorbed|legacy", re.I)
 ALIVE_RE = re.compile(r"(ACTIVE|CURRENT|CANONICAL|LIVE)\b", re.I)
+# the dead word names something OTHER than this file, or this file is the owner
+LIVE_MARK_RE = re.compile(r"\blive owner\b|\bformer\b|KINTSUGI SUCCESSOR", re.I)
+# an explicit disclaimer of authority beats every liveness marker
+DISCLAIMS_RE = re.compile(
+    r"no current semantic authority|\bnot current\b|not canonical authority", re.I)
 STUB_RE = re.compile(
     r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
 MACHINERY_RE = re.compile(r"AUDIT|RECEIPT|TIDY_PLAN|CENSUS|_LEDGER|HANDOFF|CITATION", re.I)
@@ -70,18 +94,42 @@ def is_dead(path):
     own self-declaration — count.
     """
     head = read(path, HEAD)
-    fields = re.findall(r'^(?:status|title):\s*"?([^"\n]*)', head, re.M)
-    # an H1 that literally announces a tombstone also counts as self-declaration
-    h1 = re.findall(r'^#\s+(.{0,80})$', head, re.M)
-    for f in fields + h1:
+    # STATUS is authoritative. A title is a NAME, not a declared state:
+    # 21_TRIADIC is titled "… — Kintsugi Tombstone" while its status reads
+    # "ACTIVE TOMBSTONE", and the file is 55 lines of live mathematics. Judging
+    # by whichever field matched first made the name outrank the declaration.
+    status = re.findall(r'^status:\s*"?([^"\n]*)', head, re.M)
+    if status:
+        fields = status
+    else:
+        fields = (re.findall(r'^title:\s*"?([^"\n]*)', head, re.M)
+                  + re.findall(r'^#\s+(.{0,80})$', head, re.M))
+    for f in fields:
         if not DEAD_RE.search(f):
             continue
         # A status that OPENS with ACTIVE/CURRENT/CANONICAL is alive, and any
         # dead word after it describes what this document SUPERSEDES, not
         # itself: "ACTIVE — E1-E10 successor axiom set; A1-A7 is superseded".
-        # The one exception is a document that calls itself an ACTIVE TOMBSTONE
-        # — that is a grave that still answers the door.
-        if ALIVE_RE.match(f.strip()) and not re.search(r"TOMBSTONE|RETRACTED", f, re.I):
+        #
+        # This includes "ACTIVE TOMBSTONE" and "ACTIVE KINTSUGI TOMBSTONE".
+        # Kintsugi in this corpus means REPAIRED IN PLACE: the file keeps its
+        # historical path so inbound links survive, tombstones its own former
+        # blob, and carries the live content. 21_TRIADIC_STABILITY reads
+        # "ACTIVE TOMBSTONE — invalid uniqueness proof superseded" and is 55
+        # lines of live mathematics with a kill criterion. Calling it a grave
+        # sends readers away from the live owner — the exact inversion of the
+        # defect this gate exists to catch.
+        #
+        # Same for a status naming the dead thing as FORMER ("former
+        # Titan-operation reading superseded"), or declaring a LIVE OWNER
+        # ("KINTSUGI-SUPERSEDED PROOF — live owner repaired 2026-07-17").
+        #
+        # A repaired file is still dead if it explicitly disclaims authority:
+        # 25_STEEL_THREAD carries date_repaired AND says "not current semantic
+        # authority". That disclaimer wins over every liveness marker.
+        if DISCLAIMS_RE.search(f):
+            return True
+        if ALIVE_RE.match(f.strip()) or LIVE_MARK_RE.search(f):
             continue
         return True
     return False

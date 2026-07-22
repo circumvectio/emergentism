@@ -53,7 +53,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 | [`PAPER_E`](PAPER_E_UNCERTAINTY_PRINCIPLE.md) | Uncertainty, Quantum State, and Record | [A/B]/[I]/[C] | D3/D4 owners |
 | [`PAPER_F`](PAPER_F_K_MINIMAL.md) | K-Minimality — Retraction and Research Boundary | [A]/[I]/[C] | no minimality theorem |
 | [`PAPER_G`](PAPER_G_BIOLOGICAL_PREDICTIONS.md) | Biological Predictions — Kintsugi Successor | [C] | preregistered future contact only |
-| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional and Cosmological Conjectures — Kintsugi Successor | [D]/[C] | removable questions |
+| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional and Cosmological Conjectures — Kintsugi Successor *(own status: "SUPERSEDED; RESEARCH QUESTIONS ONLY"; it names no successor document)* | [D]/[C] | removable questions |
 
 ## The Meta-Layer (I–U)
 
@@ -82,9 +82,9 @@ This grouped program does not consume the reserved `Q`, `R`, or `S` letters in t
 ## Standalone Methodological Papers
 
 - [`THE_RECURSIVE_TRIVIUM.md`](THE_RECURSIVE_TRIVIUM.md) — **Canonical paper (v1.2).** The teleological loop that subsumes OODA and the classical Trivium; ships the §8 apophatic exit and the §9 varṇa/regime mapping.
-- [`THE_RECURSIVE_TRIVIUM_BRIEFING.md`](THE_RECURSIVE_TRIVIUM_BRIEFING.md) — Executive briefing on teleological cognition (OODA loop, classical Trivium, Peirce's inference triad).
-- [`THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md) — **Formal synthesis (v1.2).** Peirce state-machine, permutation-test argument, synthetic teleology, transcendental metrics, Burrisphere thermodynamics, apophatic computing; wired to the APU runtime (`apu_cycle.py`). Supersedes the Deep-Synthesis (v1.0) and Operationalization (v1.1) drafts.
-- [`THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md) — **Competitive / neuro / cliodynamical synthesis (v1.3).** Telos-Shield HFT simulation, neurobiology of the three passes, HANDY η-axis cliodynamics, PKM anti-stagnation engine. Supersedes the Competitive-Survival (v1.0) draft.
+- [`THE_RECURSIVE_TRIVIUM_BRIEFING.md`](THE_RECURSIVE_TRIVIUM_BRIEFING.md) — Executive briefing on teleological cognition (OODA loop, classical Trivium, Peirce's inference triad). *Own status: "SUPERSEDED APPLICATION BRIEF; METHOD/PROVENANCE ONLY" — historical application evidence, with no doctrinal or current-runtime authority.*
+- [`THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md) — **Formal synthesis, repaired 2026-07-20; own status: "SUPERSEDED FORMALIZATION; METHOD REMAINS".** The file now carries the bounded three-pass method and the retraction that produced it. The v1.2 material — Peirce state-machine, permutation-test argument, synthetic teleology, transcendental metrics, Burrisphere thermodynamics, apophatic computing, and the `apu_cycle.py` runtime wiring — is withdrawn there and recoverable only at the pre-repair git blob that file names. It still supersedes the Deep-Synthesis (v1.0) and Operationalization (v1.1) drafts.
+- [`THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md) — **Competitive / neuro / cliodynamical synthesis (v1.3).** Telos-Shield HFT simulation, neurobiology of the three passes, HANDY η-axis cliodynamics, PKM anti-stagnation engine. Supersedes the Competitive-Survival (v1.0) draft. *Own status: "HISTORICAL APPLICATION SYNTHESIS — SUPERSEDED; METHOD/PROVENANCE ONLY" — those application claims are preserved as history, not as current authority.*
 
 > **Superseded drafts archived under K3 (2026-06-03):** the Deep-Synthesis (v1.0), Operationalization (v1.1), and Competitive-Survival (v1.0) drafts now live in [`../90_ARCHIVE/`](../90_ARCHIVE/) with tombstones; cite the current docs above instead.
 

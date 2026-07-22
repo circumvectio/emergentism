@@ -357,6 +357,14 @@ Healthy cognition requires:
 
 ## 9. CONNECTION TO OTHER ROSETTAS
 
+> The first three links below all point at `D23_ROSETTA_COMPLETE_INDEX.md`, whose
+> own status reads "SUPERSEDED CATALOGUE; ROUTE ONLY" (2026-07-20). It is a
+> 23-line route record and contains no R4, R5, or R6 material. It routes readers
+> to the [Rosetta front door](../README.md) and to the individual row files —
+> [D13 · R4](D13_ROSETTA_R4_EGYPTIAN_MAAT.md),
+> [D14 · R5](D14_ROSETTA_R5_NIETZSCHE.md),
+> [D15 · R6](D15_ROSETTA_R6_TORUS.md).
+
 | Rosetta | Connection |
 |---------|-----------|
 | [R4: Egyptian Ma'at](D23_ROSETTA_COMPLETE_INDEX.md) | Weighing as hemispheric balance |

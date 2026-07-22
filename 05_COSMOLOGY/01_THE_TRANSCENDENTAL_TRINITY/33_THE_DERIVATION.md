@@ -13,10 +13,15 @@ rosetta:
 
 **Status:** COMPATIBILITY POINTER · no independent doctrine
 
-The active analytic owner is
-[A Square Cannot Be Negative](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md).
-It proves only the reciprocal-chart AM-GM equality case and explicitly derives
-no physics, dynamics, ontology, ethics, cooperation, or civilization design.
+This pointer formerly named
+[A Square Cannot Be Negative](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+as the active analytic owner. That is no longer accurate: as of 2026-07-21 that
+file is a Kintsugi tombstone whose own status reads "SUPERSEDED IN PLACE — not
+canonical authority", and it names
+[`00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) as its owner.
+What the tombstone retains is the reciprocal-chart AM-GM equality case alone; it
+explicitly derives no physics, dynamics, ontology, ethics, cooperation, or
+civilization design.
 
 > **[金] Kintsugi tombstone.** The historical excerpt formerly copied here
 > retained a Hamiltonian, stable-equilibrium, derived-ethics, and forced-system

@@ -237,7 +237,7 @@ On the Burri Sphere, systemic awareness is modeled `[I]` as an equatorial relati
 
 The geometric reading offers a structural reframe: physical description and first-person report are represented as different projections of one modeled point. This correspondence neither supplies an extra spacetime dimension nor rules out a future physical reduction.
 
-See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the indexed mind-body treatment. [PD_12_MEASUREMENT_PROBLEM.md](PD_12_MEASUREMENT_PROBLEM.md) contains an optional Bloch-Burri correspondence; removing that quantum inset leaves this practice-first and operational argument unchanged.
+See [PD_14_MIND_BODY.md](PD_14_MIND_BODY.md) for the historical mind-body treatment — *superseded 2026-07-21; it is now a forwarding stub whose own status reads "no current semantic authority", and it routes to the [Internal Completion Register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) and to the current D3 and D4/D5 owners.* [PD_12_MEASUREMENT_PROBLEM.md](PD_12_MEASUREMENT_PROBLEM.md) contains an optional Bloch-Burri correspondence; removing that quantum inset leaves this practice-first and operational argument unchanged.
 
 ---
 

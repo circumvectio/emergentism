@@ -459,7 +459,7 @@ The sitting practice moves the observer, in the practice register, from manifest
 | Document | Connection |
 |----------|------------|
 | η = 0 Proof | Formal proof that η = 0 is the minimal extraction |
-| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Tombstone (repaired 2026-07-20): the uniqueness proof is retracted, there is no stability theorem; the selected triad survives only as an optional frame |
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Epistemic status of the K = 0 claim |
 | [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | Current owner for voluntary and imposed cost |
 

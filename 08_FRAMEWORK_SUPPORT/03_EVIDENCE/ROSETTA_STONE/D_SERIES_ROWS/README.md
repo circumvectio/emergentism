@@ -65,7 +65,7 @@ These are evidence surfaces, not source doctrine. A row mapping does not upgrade
 ## Read Order
 
 1. [`00_GENERATIVE_TABLE.md`](00_GENERATIVE_TABLE.md) — the corrected L0–L∞ table; every row is a projection of this.
-2. [`D23_ROSETTA_COMPLETE_INDEX.md`](D23_ROSETTA_COMPLETE_INDEX.md) — index of all mappings with per-row tiers.
+2. [`D23_ROSETTA_COMPLETE_INDEX.md`](D23_ROSETTA_COMPLETE_INDEX.md) — no longer an index of mappings with per-row tiers. Superseded on 2026-07-20 and kept as a route-only stub; it sends readers to the [Rosetta front door](../README.md) for current projection rules, and each row file below carries its own tier.
 3. The individual row papers below, in any order.
 
 ## Row Papers

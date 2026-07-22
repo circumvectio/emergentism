@@ -21,7 +21,7 @@ rosetta:
 **Date:** 2026-03-23
 **Evidence Tier:** [S] Structural (methodological foundation)
 **Depends on:** [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-**See also:** [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md), [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md)
+**See also:** [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md) *(tombstone, repaired 2026-07-20 — the uniqueness proof is retracted and there is no stability theorem; the file now names the Canonical Formula Block, the Burri Rules and Emergent Axioms E3 as owners)*, [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md)
 
 ---
 
@@ -354,14 +354,14 @@ Always.
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian mythology read through S² geometry
 - [The Four Metamorphoses](00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
-- [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, the four operators (2 Gods + 2 Demons)
+- [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, the four operators (2 Gods + 2 Demons). *Forwarding stub only: archived 2026-07-22 with no current authority, its full text preserved under `90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation/`. It names no single successor for this reading.*
 - [Commandment vs. Geometry](../04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md) — religion vs. Dharma, obedience vs. recognition
 - [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — neuroscience proxy: hemispheres as φ/ν analogy, corpus callosum as ×
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Bindu Was Always Here](../90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md) — the mission-critical point: mandala, third eye, Zero-Sum Resolution Equation
 - [Anmut and Demut](../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md) — linguistic translation: German etymology read as φ/ν axis-language
 - [The Transcendental Trinity](../90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md) — computational breakthrough: 0, ∞, 1 as transcendentals, division by zero resolved
-- [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md) — selected structural correspondence, not a forced ontology
+- [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md) — selected structural correspondence, not a forced ontology. *Tombstone, repaired 2026-07-20: the uniqueness proof is retracted and there is no stability theorem.*
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 - [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — current owner for voluntary and imposed cost

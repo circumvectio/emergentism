@@ -15,7 +15,7 @@ rosetta:
 
 **Status:** Correction Applied
 **Date:** 2026-03-23
-**Affects:** [15_EFR_WOLFRAM_NKS_INTEGRATION.md](15_EFR_WOLFRAM_NKS_INTEGRATION.md), [17_EFR_ONTOLOGY_COMPLETE.md](17_EFR_ONTOLOGY_COMPLETE.md), [14_EFR_EPISTEMOLOGY_TRIAD.md](14_EFR_EPISTEMOLOGY_TRIAD.md)
+**Affects:** [15_EFR_WOLFRAM_NKS_INTEGRATION.md](15_EFR_WOLFRAM_NKS_INTEGRATION.md), [17_EFR_ONTOLOGY_COMPLETE.md](17_EFR_ONTOLOGY_COMPLETE.md) *(since 2026-07-21 a forwarding stub — not current authority)*, [14_EFR_EPISTEMOLOGY_TRIAD.md](14_EFR_EPISTEMOLOGY_TRIAD.md)
 
 ---
 
@@ -83,7 +83,7 @@ Other registers are then reconstructed or translated through the scaffold: core 
    - Clarifies distinction from computational irreducibility
    - κ = 0 as ground-facing boundary
 
-2. **[17_EFR_ONTOLOGY_COMPLETE.md](17_EFR_ONTOLOGY_COMPLETE.md)**
+2. **[17_EFR_ONTOLOGY_COMPLETE.md](17_EFR_ONTOLOGY_COMPLETE.md)** *(the sections below are no longer at this path: since 2026-07-21 the file is a forwarding stub with no current authority. It points to a dated archive copy of the 2026-03-23 text and lists the current owners by type.)*
    - Section 4.1 updated: "EFR as Minimal Description"
    - Section 4.2 updated: "The Minimal Description"
    - Emphasizes that the description IS the structure

@@ -403,7 +403,7 @@ Build systems that:
 |----------|------------|
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Truth as epistemic discipline |
 | [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Justice as cooperation |
-| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Tombstone (repaired 2026-07-20): the uniqueness proof is retracted, there is no stability theorem; the selected triad survives only as an optional frame |
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Truth as knowledge-invariance |
 | Five Domains | Justice in all domains |
 

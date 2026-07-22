@@ -31,7 +31,7 @@ rosetta:
 > conjecture. The chart identity is not evidence for the world mapping. See
 > [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Companion note:** This dissolution connects directly to the D0-D6 dimensional hierarchy and the Burri Sphere identification. See also [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) for a parallel case where multiplicative constraint dissolves an apparent dichotomy.
+> **Companion note:** This dissolution connects directly to the D0-D6 dimensional hierarchy and the Burri Sphere identification. [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) was formerly cited here as a parallel case where multiplicative constraint dissolves an apparent dichotomy; it is now a forwarding stub, status "SUPERSEDED — no current semantic authority" (2026-07-21), so that parallel is withdrawn. The stub names no replacement dissolution, only current D3 and D4/D5 owners and an archived copy of the old essay.
 
 ---
 
