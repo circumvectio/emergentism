@@ -28,7 +28,7 @@ calibration, independent replication, or integrated-worldview validation.
 
 ## Git custody
 
-The reconciled release was pushed through commit `b480986f`:
+The reconciled release body was pushed through commit `0d9510c7`:
 
 - `https://github.com/circumvectio/emergentism.git`, branch `main`;
 - `https://github.com/Menexus-GmbH/emergentism.git`, branch `main`; and
@@ -40,7 +40,7 @@ deleted, staged, overwritten, or included in the release.
 
 ## Production artifact
 
-Vercel project `emergentism-org` produced deployment
+Vercel project `emergentism-org` first produced deployment
 `dpl_GX9JjUMAWJpn7kkmgqqHfwBMzhFK`:
 
 `https://emergentism-q0tuz3kc5-yves-projects-c163dce1.vercel.app`
@@ -49,6 +49,17 @@ Deployment authentication was disabled for this public project. Direct HTTP
 checks returned `200` for `/`, `/dimensions/`, `/3/`, and `/formal/`. The D3
 page retained density-operator, momentum-distribution, POVM, Born, and
 uncertainty wording. `/formal/` retained `x-robots-tag: noindex, follow`.
+
+After the public Record gained the outside-review and GP-03 links, production
+was synchronized from commit `0d9510c7` as deployment
+`dpl_EMXVa5Vg1menRK6UEdPxQ5J7zQbq`:
+
+`https://emergentism-ejhj767bk-yves-projects-c163dce1.vercel.app`
+
+Fresh checks returned `200` for `/`, `/dimensions/`, `/3/`, `/record/`, and
+`/formal/`; the Record contained both world-contact links, and the formal route
+retained its no-index header. This receipt-only correction follows that source
+snapshot and changes no deployed public semantics.
 
 ## Custom-domain boundary
 
