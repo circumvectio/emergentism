@@ -1,6 +1,10 @@
 ---
 rosetta:
+  primary_level: L5
   primary_column: "Meta"
+  operator: "Brahmā ○"
+  tier: "Executive"
+  regime: "Brāhmaṇa"
   register: "[S]"
   canonical_phrase: "Subfolder Organization Standard"
   vmosk_a_ref: "01_EMERGENTISM/VMOSK_A.md"
@@ -140,6 +144,18 @@ The short version:
 - keep anti-capture as structure, not ornament.
 
 `Zero-Sum Resolution Equation`
+
+---
+
+## 10. Per-pillar Surface Ownership (L5 clarification, 2026-07-22)
+
+This section makes the per-pillar rules explicit so future agents don't conflate lane-caste with doc-caste:
+
+1. **Per-pillar `90_ARCHIVE/` is allowed and recommended** for K3 tombstones that are pillar-specific (e.g., `02_EPISTEMOLOGY/90_ARCHIVE/`). The pillar-local archive is preferred over the root `90_ARCHIVE/` for tombstones whose absorber is the pillar itself.
+2. **Per-pillar `00_META/` is forbidden.** Governance lives at the root `01_EMERGENTISM/00_META/` only — never inside a pillar. This is the explicit design per Blueprint §1.2 ("00_META/ = governance spine").
+3. **Per-pillar `91_COMPATIBILITY/` is allowed** for -ology-specific legacy path resolution (e.g., `01_EMERGENTISM/02_EPISTEMOLOGY/91_COMPATIBILITY/`). The compatibility function is root-allowed, not root-required.
+4. **The `AGENTS.md` / `CLAUDE.md` / `README.md` triplet never carries doctrine.** These are L1 routing surfaces. A README is a front door; it is not a [S] source. A [S] source lives in a `00_THE_*.md` named Door or in a source-owner subfolder, never in the lane's routing triplet.
+5. **Per-pillar `Door` (the `00_THE_*.md` file) is the L5 architect's single load-bearing entry.** Each pillar's Door must carry an explicit `"active"` or `"candidate"` status in its frontmatter so the next agent can route to it without re-deriving the seating. Per receipt 145, the Doors are *candidate* until the founder signs; the signing act flips them to *active* with a `receipt:` parent.
 
 ---
 

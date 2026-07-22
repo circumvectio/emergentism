@@ -83,4 +83,4 @@ A worldview that knows it lives in a chart is a worldview that knows how to be w
 
 ---
 
-*Canonical Path: `01_EMERGENTISM/00_RUMINATION_ON_DOF_2026_07_19.md` — a rumination, not a source. Lives in the contemplative register. Do not cite it as doctrine.*
+*Canonical Path: `01_EMERGENTISM/06_ONTOLOGY/ruminations/00_RUMINATION_ON_DOF_2026_07_19.md` — a rumination, not a source. Lives in the contemplative register. Do not cite it as doctrine.*

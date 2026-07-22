@@ -5,7 +5,7 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Executive"
   regime: "Kṣatriya"
-  register: "[S]"
+  register: "[D] forwarding-stub"
 type: forwarding-stub
 title: "00_K7_RECORD.md — tombstoned 2026-07-20"
 status: FORWARDING STUB
