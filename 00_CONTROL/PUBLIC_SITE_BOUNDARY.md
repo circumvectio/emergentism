@@ -2,7 +2,22 @@
 
 **Path:** `12_PUBLIC_SITE/`
 
-**Status:** FROZEN — outside the dimension-first purification, 2026-07-21
+**Status:** ~~FROZEN~~ **SUPERSEDED BY EVENTS — corrected 2026-07-22.**
+
+> **This document's factual claims are no longer true, and it did not withdraw itself.**
+> It stated that "this purification deliberately makes **zero changes** under
+> `12_PUBLIC_SITE/`" and that "no release manifest, generated payload, preview,
+> deployment, production promotion, or domain state is claimed by this branch."
+> Since it was committed (`fbf78536`, 2026-07-22), **360 files changed under
+> `12_PUBLIC_SITE/`**, the site was **promoted to production**, and
+> **`emergentism.org` now serves it** (verified `HTTP 200`, DNS `216.198.79.1`).
+>
+> The freeze sentence was *true of the pass that wrote it* — that commit touched
+> zero site files. It became false the moment other passes ran, and nothing
+> re-scoped it. **A boundary that cannot notice its own breach is not a boundary.**
+> Its six-step required sequence is retained below as an unmet standard: steps 2
+> (deny-by-default build contract) and 3 (double-build hash comparison) have no
+> artifact, while step 6 (promotion) has occurred.
 
 **Tier:** `[I]` public translation; `[B]` only for dated build/deploy results
 

@@ -48,9 +48,16 @@ Source library, cold archive, and deployed payload must never be added together
 or treated as equivalent.
 
 The Vercel release is publicly reachable at
-<https://emergentism-org.vercel.app/>. The custom name is not cut over:
+<https://emergentism-org.vercel.app/>. ~~The custom name is not cut over:
 `emergentism.org` resolves to `198.185.159.144` and reaches the legacy
-`www.emergentism.org` surface. Route count, build pass, deployment, Vercel
+`www.emergentism.org` surface.~~
+
+> **CORRECTED 2026-07-22 — THE CUT-OVER HAS HAPPENED.** `emergentism.org` now
+> resolves to `216.198.79.1` and serves this site: apex `HTTP 200`, `/record/`
+> `200`, and `/check/` and `/saturation/` — both authored 2026-07-22 — return
+> `200`. The sentence above was true when written and was overtaken the same
+> day. **This is the single largest state change in the document: the site is
+> no longer a local artifact, it is published.** Route count, build pass, deployment, Vercel
 alias, custom-domain DNS, reader understanding, and world validation are
 therefore separate facts.
 

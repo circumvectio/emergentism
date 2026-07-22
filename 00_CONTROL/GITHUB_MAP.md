@@ -3,7 +3,9 @@
 **Target repo:** `circumvectio/emergentism`
 **Source root:** `/Users/yves/Documents/01_EMERGENTISM`
 **Canonicalized:** 2026-06-08
-**Visibility:** private
+**Visibility:** **PUBLIC** — corrected 2026-07-22 (`gh repo view` returns `isPrivate:false, visibility:PUBLIC`). This file previously read *private*.
+> **Everything in this repository is world-readable**: doctrine, receipts, archives,
+> drafts, and every tombstone. Write accordingly.
 
 ## Repository Structure
 
@@ -34,7 +36,7 @@ None. Emergentism root is a clean doctrinal body.
 ## Public Site Boundary
 
 `12_PUBLIC_SITE/book-pwa/` is a Next.js PWA for the Emergentism book.
-It is the public surface. All other directories are private doctrine.
+It is the *deployed* surface. **All other directories are also world-readable** — they are simply not served by the site. 'Not deployed' is not 'not published'; corrected 2026-07-22.
 
 ## Publication Rule
 

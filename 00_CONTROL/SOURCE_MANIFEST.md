@@ -32,7 +32,10 @@
 
 - `12_PUBLIC_SITE/book-pwa/package.json`
 - `12_PUBLIC_SITE/book-pwa/package-lock.json`
-- `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`
+- ~~`09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`~~ — **corrected 2026-07-22:**
+  not present at this path. The only non-vendored copy is
+  `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`.
+  `06_PACKAGES/` now holds route cards only.
 
 ## Authority Rule
 

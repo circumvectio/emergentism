@@ -16,7 +16,9 @@
 
 - [x] package.json exists at `12_PUBLIC_SITE/book-pwa/package.json`
 - [x] package-lock.json exists at `12_PUBLIC_SITE/book-pwa/package-lock.json`
-- [x] pyproject.toml exists at `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`
+- [ ] ~~pyproject.toml exists at `09_TOOLS/06_PACKAGES/emergentism-core/pyproject.toml`~~
+      **UNCHECKED 2026-07-22** — verification was signed off against a path that does not
+      exist. File is archived; see SOURCE_MANIFEST.md.
 - [x] No `node_modules`, `.next`, `.pytest_cache`, `__pycache__`, `dist`, `build`, `.turbo`, or `coverage` directories remain under root
 - [x] No `.tsbuildinfo` compiler cache files remain under root
 - [x] No nested `.git` directories exist under root
