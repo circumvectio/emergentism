@@ -91,10 +91,12 @@ def build_sw():
     sw = """// Emergentism PWA service worker — receipt 124. Precache the spine; SWR runtime; offline fallback.
 const CACHE = 'emergentism-__VERSION__';
 const SPINE = [
-  '/compass/', '/journey/', '/map/', '/halahala/', '/test/', '/build/', '/exit/',
+  '/compass/', '/journey/', '/map/', '/lab/', '/contribute/', '/halahala/', '/test/', '/build/', '/exit/',
   '/five-plus-one/', '/amrita/', '/offline/',
   '/manifest.webmanifest',
   '/assets/css/xai.css', '/amrita/amrita.css',
+  '/assets/css/living-map.css', '/assets/js/living-map.js',
+  '/living-map.json', '/public_semantic_parity.json',
   '/assets/fonts/Roboto-latin.woff2', '/assets/fonts/RobotoMono-latin.woff2',
   '/assets/icons/icon-192.png',
 ];

@@ -183,7 +183,13 @@
     "practice/index.html",
     "record/index.html",
     "exit/index.html",
-    "book/index.html"
+    "book/index.html",
+    "map/index.html",
+    "lab/index.html",
+    "contribute/index.html",
+    "assets/css/living-map.css",
+    "assets/js/living-map.js",
+    "living-map.json"
   ],
   "frozenLibraryRoots": ["papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators", "will", "value", "ground", "sacred", "method", "meta"]
 }

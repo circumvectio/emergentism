@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 756,
+  "entry_count": 758,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3172,
+      "tracked_file_count": 3179,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 385,
+      "tracked_file_count": 386,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1195,7 +1195,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 165,
+      "tracked_file_count": 166,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1325,7 +1325,7 @@
       "owns": "Emergentism public site",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 589,
+      "tracked_file_count": 595,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1572,7 +1572,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 21,
+      "tracked_file_count": 23,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1585,7 +1585,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3,
+      "tracked_file_count": 4,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1624,7 +1624,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 7,
+      "tracked_file_count": 8,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2439,6 +2439,19 @@
       "path": "12_PUBLIC_SITE/complete-ontology",
       "type": "site",
       "nearest_front_door": "12_PUBLIC_SITE/complete-ontology/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!doctype html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/contribute",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/contribute/index.html",
       "front_door_requirement": "present",
       "owns": "<!doctype html>",
       "must_not_own": null,
@@ -3624,6 +3637,19 @@
       "nearest_front_door": "12_PUBLIC_SITE/journey/index.html",
       "front_door_requirement": "present",
       "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/lab",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/lab/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!doctype html>",
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,

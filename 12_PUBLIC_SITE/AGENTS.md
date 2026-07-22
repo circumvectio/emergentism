@@ -18,6 +18,7 @@ semantic owner, product runtime, governance system, or source of evidence.
 3. [`../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md`](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — internal state.
 4. [`../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md`](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) — world-contact work.
 5. [`public_semantic_parity.json`](public_semantic_parity.json) — source-to-page contract.
+6. [`living-map.json`](living-map.json) — open-work routing contract.
 
 ## Public sequence
 
@@ -47,6 +48,11 @@ criterion.
   premise may govern this lane.
 - Historical generated-library pages must carry the frozen-library boundary
   and are excluded from current retrieval.
+- The Living Map may expose gaps and candidate packets but may never create,
+  promote, or settle doctrine.
+- Never collect reusable API keys, payment credentials, or private data in a
+  public browser surface. Live compute requires a separate server-side bounded
+  authorization and cost envelope.
 
 ## Release gate
 

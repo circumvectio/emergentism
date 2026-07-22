@@ -31,6 +31,7 @@ parents:
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md
 evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 ---
 
@@ -129,6 +130,11 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 156 | `156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` | Independent verification from the concurrent main lineage; its two discrepancies are preserved and closed by 156A and later tree state. |
 | 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | Preserves and reconciles the concurrent independent verification: compatibility drift was real and repaired; the later ASI tombstone state closes the earlier copy-versus-move finding. |
 | 157 | `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` | Purified canon integrated onto current lineage; dimension-first public projection regenerated and locally release-gated; deployment and external calibration remain open. |
+| 158 | `158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md` | Public artifact and first world-contact requests recorded; custom-domain state remained unresolved. |
+| 159 / 159A | `159_UNTRACKED_ARRIVALS_RECONCILIATION_2026_07_22.md` · `159A_CONCURRENT_PUBLIC_SITE_STAGING_RECONCILED_2026_07_22.md` | Loose arrivals and a concurrent public-site staging collision preserved, audited, and reconciled. |
+| 160 | `160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md` | Reconstructible cache cleanup, authority-language correction, and archive separation of a mixed cross-pillar compilation. |
+| 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | Weltanschauung/ToE gaps made explicit; scaffold-first frontier-model assembly strategy recorded without promotion. |
+| 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | Living Map, eleven-question Lab, static bounded-contribution contract, and rendered-browser verification completed; live compute and deployment withheld. |
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -242,6 +248,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 159 / 159A | `159A_CONCURRENT_PUBLIC_SITE_STAGING_RECONCILED_2026_07_22.md` | 2026-07-22 | Concurrent public-site staging collision disclosed, audited, and release-gate repaired |
 | 160 | `160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md` | 2026-07-22 | Physical cache cleanup, repository-authority correction, and archival separation of a mixed cross-pillar rule compilation |
 | 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | 2026-07-22 | Weltanschauung/ToE gap audit and scaffold-first frontier-model assembly strategy |
+| 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | 2026-07-22 | Static Living Map, public Gap Lab, bounded contribution contract, and rendered release verification |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.

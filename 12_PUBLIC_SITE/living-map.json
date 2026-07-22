@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "status": "public-research-routing-only",
+  "sourceAuthority": "This file routes open work. Source owners, result receipts, and the evidence-tier contract retain semantic authority.",
+  "updated": "2026-07-22",
+  "pipeline": [
+    "open",
+    "proposed",
+    "typed",
+    "adversarially-tested",
+    "testable",
+    "world-contacted",
+    "independently-replicated"
+  ],
+  "terminalStates": ["killed", "superseded", "unresolved"],
+  "openQuestions": [
+    {
+      "id": "GP-01",
+      "title": "Do relations add causal information?",
+      "shortTitle": "Relation intervention",
+      "registers": ["D1", "mu1", "D2"],
+      "lane": "formal-choice",
+      "status": "ready-to-freeze",
+      "tier": "[C]",
+      "question": "Can a relation-aware model predict an intervention better than a model with the same elements but no explicit relation structure?",
+      "nextMilestone": "Choose one real system and freeze the element-only rival, relation-aware rival, intervention, outcome, and held-out split.",
+      "moves": "Local evidence for the D1-to-D2 aperture only.",
+      "kill": "The relation-aware model adds no held-out discrimination or merely renames information already present in the baseline.",
+      "priority": 4
+    },
+    {
+      "id": "GP-02",
+      "title": "Is counterfactual capacity distinct?",
+      "shortTitle": "Counterfactual capacity",
+      "registers": ["D4", "mu4", "D5"],
+      "lane": "state-history",
+      "status": "component-contact",
+      "tier": "[C]",
+      "question": "Does a separately measured capacity to represent alternatives predict action beyond rich reactive, planning, memory, and search baselines?",
+      "nextMilestone": "Define the D5 variable independently, then compare model-based, model-free, memory, and search controls.",
+      "moves": "Local evidence for the D4-to-D5 aperture only.",
+      "kill": "A fair D4 baseline predicts the same behavior without a distinct counterfactual-capacity variable.",
+      "priority": 6
+    },
+    {
+      "id": "GP-03",
+      "title": "Which conjunctive model fits?",
+      "shortTitle": "Aggregator comparison",
+      "registers": ["D5"],
+      "lane": "formal-choice",
+      "status": "ready-to-freeze",
+      "tier": "[C]",
+      "question": "Does the normalized product Phi times V predict held-out outcomes better than additive, minimum, harmonic, CES, and Cobb-Douglas rivals in a frozen domain?",
+      "nextMilestone": "Freeze the domain, independent factor measures, rival models, exclusions, and held-out outcomes before data contact.",
+      "moves": "The product wager only in the tested domain.",
+      "kill": "The product fails to discriminate from simpler or preregistered rival aggregators.",
+      "priority": 1,
+      "publicIssue": "https://github.com/circumvectio/emergentism/issues/3"
+    },
+    {
+      "id": "GP-04",
+      "title": "Do foresight and means trade off?",
+      "shortTitle": "Resource surface",
+      "registers": ["D4", "D5"],
+      "lane": "formal-choice",
+      "status": "ready-to-freeze",
+      "tier": "[C]",
+      "question": "What measurable budget surface, if any, relates option-model quality, its resource cost, and remaining usable means?",
+      "nextMilestone": "Compare no-tradeoff, additive, nonlinear, and state-dependent surfaces using independently measured factors.",
+      "moves": "The foresight-means saturation sub-wager.",
+      "kill": "No stable tradeoff appears, or the selected measurement encodes the desired surface.",
+      "priority": 2
+    },
+    {
+      "id": "GP-05",
+      "title": "Do five apertures survive separately?",
+      "shortTitle": "Crossing census",
+      "registers": ["mu0", "mu1", "mu2", "mu3", "mu4"],
+      "lane": "crossings-forces",
+      "status": "formal-only",
+      "tier": "[I/C]",
+      "question": "Does each proposed aperture possess an independent novelty discriminator and a lower-register recovery test?",
+      "nextMilestone": "Run one seam at a time. Do not compute a joint score before every row has its own test.",
+      "moves": "One crossing at a time, then the five-crossing census.",
+      "kill": "Rows fail independently, remain permutable, or add no capability beyond their lower-register descriptions.",
+      "priority": 8
+    },
+    {
+      "id": "GP-06",
+      "title": "Can a shared trace outlive its carriers?",
+      "shortTitle": "Egregoreotype intervention",
+      "registers": ["D4", "D5"],
+      "lane": "agency-collectives",
+      "status": "component-contact",
+      "tier": "[I/C]",
+      "question": "Does a persistent shared trace survive carrier turnover and measurably reweight later choices beyond current incentives and direct coordination?",
+      "nextMilestone": "Replace carriers and remove or scramble the trace while recording payers, beneficiaries, and substrate costs.",
+      "moves": "The five-marker Egregoreotype composite only.",
+      "kill": "The trace adds no intervention-sensitive predictive value beyond carriers, incentives, or direct coordination.",
+      "priority": 5
+    },
+    {
+      "id": "GP-07",
+      "title": "Can represented futures change present choice?",
+      "shortTitle": "Future-content effect",
+      "registers": ["D4", "mu4", "D5"],
+      "lane": "state-history",
+      "status": "component-contact",
+      "tier": "[I/C]",
+      "question": "Does changing represented future content alter present selection beyond salience, demand, reward framing, memory, and expectancy?",
+      "nextMilestone": "Preregister a content-specific manipulation with matched negative controls.",
+      "moves": "The weak model-mediated future-influence claim.",
+      "kill": "Future-content interventions add no value beyond fair present-state and framing controls.",
+      "priority": 3
+    },
+    {
+      "id": "GP-08",
+      "title": "Can block plurality be observed?",
+      "shortTitle": "Plurality discriminator",
+      "registers": ["D3", "D4", "D5"],
+      "lane": "state-history",
+      "status": "deferred",
+      "tier": "[C]",
+      "question": "Is there any observation that distinguishes ontic plurality of complete histories from epistemic support over alternatives?",
+      "nextMilestone": "Produce an interpretation-sensitive observation or publish a non-identifiability result.",
+      "moves": "The strong block-plurality correspondence only.",
+      "kill": "No observation can distinguish the ontologies within the declared empirical domain.",
+      "priority": 10
+    },
+    {
+      "id": "GP-09",
+      "title": "Can history-bundle growth be measured?",
+      "shortTitle": "History-bundle metric",
+      "registers": ["D4", "D5"],
+      "lane": "state-history",
+      "status": "deferred",
+      "tier": "[C]",
+      "question": "Can history entropy be defined independently of Minkowski causal volume, model resolution, and search budget?",
+      "nextMilestone": "Define and validate the metric before comparing it with cone geometry.",
+      "moves": "The light-cone and history-bundle correspondence only.",
+      "kill": "The metric collapses into causal volume, model resolution, or arbitrary search budget.",
+      "priority": 7
+    },
+    {
+      "id": "GP-10",
+      "title": "Are force and freedom rows non-permutable?",
+      "shortTitle": "Force-affinity map",
+      "registers": ["mu0", "mu1", "mu2", "mu3", "mu4"],
+      "lane": "crossings-forces",
+      "status": "deferred",
+      "tier": "[C]",
+      "question": "Does each proposed force-affinity row recover its native theory and outperform every permutation on a quantitative discriminator?",
+      "nextMilestone": "Build one native object map and accepted-domain recovery test per row before attempting a joint correspondence.",
+      "moves": "Each force-affinity leg independently; joint unification only last.",
+      "kill": "Rows can be permuted without predictive loss or fail accepted-domain recovery.",
+      "priority": 9
+    },
+    {
+      "id": "GP-11",
+      "title": "Does the integrated grammar add anything?",
+      "shortTitle": "Integrated adequacy",
+      "registers": ["D0", "D1", "D2", "D3", "D4", "D5", "D6"],
+      "lane": "agency-collectives",
+      "status": "deferred",
+      "tier": "[C]",
+      "question": "Can the complete grammar make one novel frozen prediction with consequence value beyond serious plural-domain rivals?",
+      "nextMilestone": "Wait until modular measures work, then obtain an external red team, independent replication, and a published null route.",
+      "moves": "Integrated adequacy, never the native component truths.",
+      "kill": "The integrated framework adds no prediction, compression, or consequence value beyond its source disciplines.",
+      "priority": 11
+    }
+  ],
+  "contributionModes": [
+    {
+      "id": "sponsor",
+      "title": "Sponsor bounded compute",
+      "description": "Fund one declared question through a site-controlled provider project with hard cost, model, tool, retention, and expiry limits."
+    },
+    {
+      "id": "local",
+      "title": "Run a packet locally",
+      "description": "Use your own provider credentials on your own machine and return only the prompts, outputs, costs, and provenance receipt."
+    },
+    {
+      "id": "review",
+      "title": "Contribute expertise or evidence",
+      "description": "Strengthen the native account, rival, discriminator, dataset, replication, or contradiction report without funding model inference."
+    }
+  ]
+}

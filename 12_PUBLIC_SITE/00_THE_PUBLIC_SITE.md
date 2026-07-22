@@ -18,14 +18,15 @@ supersedes: nothing — supplements the existing pillar README
 
 **Status:** ACTIVE (public projection surface, not a doctrine pillar)
 **Role:** an operable compass for a stranger: the reality scaffold in order, the method usable without assent, the claims priced, the deaths dated, and the exit visible.
-**Owns:** the seven chapter directories `0/` through `6/`, `90_ARCHIVE/`, `_PLANS/`, `_STAGING_COMPASS_RESTRUCTURE/`, `__pycache__/` (build output), `404.html`, `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`, `WEBSITE_NARRATIVE.md`, plus the migration receipts (`00_BOOK_PWA_MOVED.md`, `00_COMPASS_DEPLOYMENT_RECEIPT.md`, `00_K2_ENVELOPE_APP_MIGRATION_2026_05_31.md`).
+**Owns:** the seven chapter directories `0/` through `6/`, the public Living Map routes (`map/`, `lab/`, `contribute/`), their routing contracts, `90_ARCHIVE/`, `_PLANS/`, `_STAGING_COMPASS_RESTRUCTURE/`, `__pycache__/` (build output), `404.html`, `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`, plus historical migration receipts.
 **Must not own:** source doctrine, claim authority, K-1 through K-7 surfaces. Per KSC-13, the public site applies the worldview; it does not premise it.
 
 ## Read first
 
 1. `README.md` — pillar README (status: RELEASE CANDIDATE — local, not deployed by this work).
-2. `WEBSITE_NARRATIVE.md` — the public-narrative frame.
-3. The seven chapter directories `0/` through `6/` — one typed register per page.
+2. `public_semantic_parity.json` — the current source-to-page contract.
+3. `living-map.json` — open-work routing only; never doctrine authority.
+4. The seven chapter directories `0/` through `6/` — one typed register per page.
 
 ## Authority rule
 

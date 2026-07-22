@@ -386,6 +386,8 @@ def check_public_reading_bundle():
         "practice/",
         "build/",
         "map/",
+        "lab/",
+        "contribute/",
     ]:
         if f'href="{href}"' in index_body:
             ok(f"landing links {href}")

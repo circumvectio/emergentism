@@ -18,13 +18,13 @@ OUT = ROOT / "book" / "rag_index.json"
 
 LIBRARY = []
 
-LANDING_PAGES = ["compass", "dimensions", "check", "plainly", "practice", "record", "exit"]
+LANDING_PAGES = ["compass", "map", "lab", "contribute", "dimensions", "check", "plainly", "practice", "record", "exit"]
 
 # Overview/doctrine pages chunked at their own headings (h2/h3 chapters) so the
 # RAG corpus stays current with the front-of-house surfaces — these carry the
 # 2026-06 findings (mass-shell, agency gloss, the unfolding) that the frozen
 # book prose does not yet hold.
-OVERVIEW_PAGES = ["compass", "dimensions", "check", "plainly", "practice", "record", "exit",
+OVERVIEW_PAGES = ["compass", "map", "lab", "contribute", "dimensions", "check", "plainly", "practice", "record", "exit",
                   "0", "1", "2", "3", "4", "5", "6"]
 
 MAX_PASSAGE = 700          # chars of text per passage

@@ -28,6 +28,8 @@
   <url><loc>https://emergentism.org/compass/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/journey/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/map/</loc><priority>0.7</priority></url>
+  <url><loc>https://emergentism.org/lab/</loc><priority>0.85</priority></url>
+  <url><loc>https://emergentism.org/contribute/</loc><priority>0.8</priority></url>
   <url><loc>https://emergentism.org/halahala/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/test/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/exit/</loc><priority>0.7</priority></url>
