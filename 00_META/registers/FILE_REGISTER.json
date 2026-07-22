@@ -13572,8 +13572,8 @@
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/lint_rule_tokens.py",
-      "sha256": "3036d7afa4cb0d9bffc283b536b836084fe1d7ba3a66e4ea93fad16b8f422336",
-      "bytes": 5802,
+      "sha256": "e9b40d90851effe987322bcfb93f0f042a8720fdd97d3440f8368add9d8e6378",
+      "bytes": 5964,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
