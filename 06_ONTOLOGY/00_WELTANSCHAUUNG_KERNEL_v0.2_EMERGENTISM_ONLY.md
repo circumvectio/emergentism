@@ -143,7 +143,7 @@ No inference may move from logical coherence to mathematical existence, physical
 
 A higher-level description earns emergent standing only when it supplies tested explanatory, predictive, control, or causal value as a lower-law-admissible macro-constraint, with costs and negative controls included. It does not violate lower-level transition laws.
 
-**Support:** `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md:171-172`; `03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md:112-127`; `04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md:91-164`.
+**Support:** `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` — general tier separation only; `03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md:112-127`; `04_AXIOLOGY/00_BRIDGE_LAWS_BETWEEN_LEVELS.md:91-164`. *(Corrected 2026-07-22: the first citation formerly read `:171-172`. That file ends at line 158 — `wc -l` = 158 — so the anchor addressed no text, and its only emergence sentence, at `:93`, does not carry the macro-constraint/costs/negative-controls claim. The two anchors that do resolve carry it: the second is the macro-constraint physics-to-biology test, the third is "A higher level does not break the laws below it. It selects among their admissible trajectories.")*
 
 ### C4. Correction before closure `[S]`
 

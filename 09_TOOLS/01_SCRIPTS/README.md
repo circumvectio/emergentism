@@ -30,8 +30,14 @@ General-purpose repository scripts.
 
 ## What It Owns
 
-- Manifest validation.
-- Uplink/state compilation.
+- Manifest validation. **Archived 2026-07-20** — `manifest_check.py` moved to the
+  [pure-boundary archive](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/01_SCRIPTS/);
+  no manifest validator remains in this lane (corrected 2026-07-22).
+- Uplink/state compilation. **Archived 2026-07-20** — `compile_uplink.py` and
+  `compile_state.py` moved to the same archive; this lane no longer compiles
+  UPLINK or state (corrected 2026-07-22).
+- Corpus gates: dead citations, forwarding stubs, tree contract, purity, and
+  rule-token linting.
 - Rosetta annotation helpers.
 - Path and link repair utilities.
 - `check_tree_contract.py` — enforce top-level lanes, route triplets, Doors,
@@ -46,11 +52,20 @@ General-purpose repository scripts.
 
 ## Read First
 
-- `manifest_check.py`
-- `compile_uplink.py`
-- `compile_state.py`
-- `validate_spec_links.py`
-- `path_rewrite_sweep.py`
+The gates this lane actually runs:
+
+- `check_tree_contract.py`
+- `check_dead_citations.py`
+- `check_forwarding_stubs.py`
+- `check_emergentism_purity.py`
+
+**Corrected 2026-07-22.** This block previously listed `manifest_check.py`,
+`compile_uplink.py`, `compile_state.py`, `validate_spec_links.py`, and
+`path_rewrite_sweep.py` as the lane's entry points. Counted by testing each of
+those five names against this folder: 0 present, 5 absent. All five were moved on
+2026-07-20 and are preserved byte-intact in the
+[pure-boundary archive](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/01_SCRIPTS/).
+An agent following the old block reached nothing.
 
 ## Status
 

@@ -39,13 +39,13 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `22_POWER_MAX_DEMONSTRATION.md` | Historical demonstration; current authority is `08_EFR_POWER_MAX_LEMMA.md`, including the extraction counterexample and Justice premise. |
 | `23_DIMENSIONAL_CLOSURE_PROOF.md` | Current D6 boundary contract: non-μ `b₆`/`r₆`, no literal identity or sixth positive freedom. |
 | `24_GEOMETRIC_EXCLUSION_CONVERGENCE.md` | Convergence argument for the geometric exclusion (strategic/immune-response framing). |
-| [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Steel-thread path through the formal system for readers checking the proof spine. |
+| [`25_STEEL_THREAD.md`](25_STEEL_THREAD.md) | Kintsugi tombstone (repaired 2026-07-21) — "HISTORICAL ARGUMENT MAP — not current semantic authority". The unified "steel" derivation is retracted; the file preserves the April 2026 provenance and routes the surviving results to their separate owners. It is not a proof spine and must not be read as one. *Description corrected 2026-07-22.* |
 | `08_EFR_POWER_MAX_LEMMA.md` | EFR-specific statement of the Power-Max Lemma. |
 | `09_EFR_GODEL_CLARIFICATION.md` | Clarification of the framework's relationship to Gödelian incompleteness. |
 | `10_EFR_MU_LIMIT_FORMULA.md` | The μ-limit formula and D4–D5 boundary. |
-| `11_EFR_TRIADIC_STABILITY.md` | Triadic stability in the EFR context. |
+| `11_EFR_TRIADIC_STABILITY.md` | **Not in this directory.** Archived 2026-07-20 to `../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/03_FORMAL_SYSTEM/` (compatibility copy under `../../91_COMPATIBILITY/01_FOUNDATIONS/01_FORMAL_SYSTEM/`). Triadic uniqueness is retracted; the historical correspondence is `21_TRIADIC_STABILITY_CORRESPONDENCE.md`. *Row corrected 2026-07-22 after an existence check found the file absent here.* |
 | `12_EFR_EXTRACTION_COEFFICIENT.md` | Formal definition of the extraction coefficient η. |
-| `13_EFR_TWO_SACRIFICES.md` | Analysis of the two sacrifice operators. |
+| `13_EFR_TWO_SACRIFICES.md` | **Not in this directory.** Archived 2026-07-20 to `../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/03_FORMAL_SYSTEM/` (compatibility copy under `../../91_COMPATIBILITY/01_FOUNDATIONS/01_FORMAL_SYSTEM/`). Historical analysis of the two sacrifice operators; not an active surface here. *Row corrected 2026-07-22 after an existence check found the file absent here.* |
 | `14_EFR_EPISTEMOLOGY_TRIAD.md` | Formalization of Empirical Observation, Inferential Logic, Structural Analysis. |
 | `15_EFR_WOLFRAM_NKS_INTEGRATION.md` | Integration with Wolfram's computational irreducibility. |
 | `16_EFR_TRANSCENDENTALS.md` | Interpretive Beauty/Truth/Justice crosswalk; not a number taxonomy or Titan owner. |
@@ -55,7 +55,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `20_EFR_OPERATORS_ON_COMPLEX_PLANE.md` | Operator formalism on ℂ. |
 | [`29_PRIMITIVES_AND_TYPE_SIGNATURES.md`](29_PRIMITIVES_AND_TYPE_SIGNATURES.md) | Consolidated index of the formal system's primitives with their type signatures; points at canonical definitions without redefining them. |
 | [`30_OPERATIONAL_DEFINITIONS.md`](30_OPERATIONAL_DEFINITIONS.md) | Independent node-measurement candidates for `Φ̂,V̂`, derived diagnostics, construct-validity kills, and the chart/node firewall. No instrument is validated. |
-| [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) | One-page consolidated audit of every falsifier attached to A1–A7, T1–T4, and the corollaries; distinguishes pulled vs. `[C] Proposed` rows. |
+| [`31_FALSIFIERS_INDEX.md`](31_FALSIFIERS_INDEX.md) | Route index: 11 current claim families mapped to their owners and to a declared kill-or-downgrade event. It is not an audit of "every" falsifier — a missing test is recorded there as debt, not confirmation. The former A1–A7 / T1–T4 / corollary falsifier audit is superseded (recoverable from Git object `7578267a56a8bb117b303a51460a150011625560`); A1–A7 labels now identify provenance only. *Description corrected 2026-07-22; the count of 11 was taken by tallying the table rows of that file.* |
 | [`32_THEOREM_UPGRADE_PROTOCOL.md`](32_THEOREM_UPGRADE_PROTOCOL.md) | Evidence-type transition protocol, Lyapunov discipline, noncircular testing, and rollback. |
 | [`33_NASH_EQUILIBRIUM_ETA_ZERO.md`](33_NASH_EQUILIBRIUM_ETA_ZERO.md) | Game-theory treatment of `η = 0`, including the difference between public-goods-only and private-benefit channels. |
 | [`34_D4_D5_CANONICAL_REFERENCE.md`](34_D4_D5_CANONICAL_REFERENCE.md) | Canonical D4/D5 reference and routing surface for dimensional architecture claims. |

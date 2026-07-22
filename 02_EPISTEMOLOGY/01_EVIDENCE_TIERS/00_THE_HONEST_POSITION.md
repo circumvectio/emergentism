@@ -134,10 +134,17 @@ must therefore be audited separately.
 ## 8. External-calibration boundary
 
 The Emergentist Compass is internally testable as a translation grammar and
-repository discipline. Its components have now been cross-calibrated against
-external mathematics, experiments, theories, and normative instruments; see
-the [external component calibration ledger](../../03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md).
-That contact does not validate the integrated worldview. Whole-system
+repository discipline. Its components now have an attributed **external-neighbor crosswalk** against
+external mathematics, experiments, theories, and normative instruments — this
+is comparison, not calibration; see the
+[external-neighbor crosswalk](../../03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md).
+That contact validates neither the integrated worldview nor any single
+component: the crosswalk's own rows record "sovereign-frame selection
+unvalidated", "μ₁ reading unvalidated", and "Origin wager externally bounded;
+no leg calibrated". *(Corrected 2026-07-22: this paragraph previously said the
+components "have now been cross-calibrated", which is the exact upgrade the
+cited ledger refuses — its status line reads "not external calibration or
+validation".)* Whole-system
 validation still requires novel quantitative discriminators independently
 reproduced against serious alternatives. “Unifies the sciences” therefore
 means **candidate translation grammar**, not achieved unification.

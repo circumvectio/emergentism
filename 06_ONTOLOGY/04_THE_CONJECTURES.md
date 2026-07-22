@@ -16,7 +16,7 @@ parents:
 
 # The Conjectures (W0–W12)
 
-> The axioms are what we propose to stand on; **these are what we're betting.** Every wager is keyed to the axiom it extends, carries its tier and its kill, and may be lost without the axioms falling. The Crown Wager's stable identifier is `W0-CROWN` (display number W0). The historical v0.1 `W0 · Map is not Ground` is henceforth `W0-LEGACY`, a retired identifier rather than a competing wager. Map ≠ Ground remains the constitutional fence above every wager. Three graves are listed at the end so no wager resurrects them.
+> The axioms are what we propose to stand on; **these are what we're betting.** Every wager is keyed to the axiom it extends, carries its tier and its kill, and may be lost without the axioms falling. The Crown Wager's stable identifier is `W0-CROWN` (display number W0). The historical v0.1 `W0 · Map is not Ground` is henceforth `W0-LEGACY`, a retired identifier rather than a competing wager. Map ≠ Ground remains the constitutional fence above every wager. Four graves are listed at the end so no wager resurrects them. *(Count corrected 2026-07-22: the header read "Three"; the numbered list under **The graves** has four entries — counted by reading that section's top-level numbered items, the fourth being the five-freedoms↔five-forces bijection that scopes `W7-ORIGIN`.)*
 
 | # | Wager | Extends | Tier | Kill criterion |
 |---|---|---|---|---|

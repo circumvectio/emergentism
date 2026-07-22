@@ -23,7 +23,12 @@ rosetta:
 
 ## What This Folder Is
 
-This folder collects specialized derivations and technical side-paths related to sphere geometry: MF-63 through MF-70 (8 papers, footed "VIVEKA Mathematical Foundations Series — Sphere Derivations"). Together with [`../MF_ADVANCED/`](../MF_ADVANCED/README.md) (MF-281 through MF-301, 21 papers), these 29 papers ARE the **VIVEKA Mathematical Foundations**. The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
+This folder collects specialized derivations and technical side-paths related to sphere geometry: MF-63 through MF-69 (**7 papers**, footed "VIVEKA Mathematical Foundations Series — Sphere Derivations"). Together with [`../MF_ADVANCED/`](../MF_ADVANCED/README.md) (MF-281 through MF-300, 17 papers), these **24 papers** are the active remainder of the **VIVEKA Mathematical Foundations**; MF-70 and four MF_ADVANCED numbers moved to the 2026-07-20 pure-boundary archive.
+
+> **Count corrected 2026-07-22.** This line claimed 8 papers here and 29 across both folders.
+> Counted by `ls MF_*.md | wc -l`: 7 here (MF-63, 64, 65, 66, 67, 68, 69) and 17 in
+> `MF_ADVANCED/` → 24. `MF_70_Kali_Closes_Sphere.md` is not in this folder; it is intact at
+> [`90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/). The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
 
 ## Relation to the Coherence Spine
 

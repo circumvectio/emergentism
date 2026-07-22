@@ -11,7 +11,17 @@ rosetta:
 
 # 10_SEED — L7 Ṛṣi Compressed Seed
 
-> The compressed kernel. See `../11_UPLINK/00_CORE/00_INDEX.md` for the master route.
+> The compressed kernel. See [`../00_THE_KERNEL_INDEX.md`](../00_THE_KERNEL_INDEX.md)
+> for the master route.
+>
+> **Corrected 2026-07-22.** This line previously routed to
+> `../11_UPLINK/00_CORE/00_INDEX.md`, which does not exist: that lane was archived
+> 2026-07-20 under the pure-worldview boundary pass, and the address now holds only a
+> forwarding stub ([`../11_UPLINK/00_CORE/README.md`](../11_UPLINK/00_CORE/README.md)).
+> The byte-intact content is preserved at
+> `../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/00_INDEX.md`
+> — provenance, not an owner. For Uplink routing specifically, see
+> [`../11_UPLINK/00_INDEX/README.md`](../11_UPLINK/00_INDEX/README.md).
 
 ## Reader routes
 
@@ -21,7 +31,15 @@ override its source owners:
 | Surface | Recorded register | How to read it |
 |---|---|---|
 | [`00_THE_SEED.md`](00_THE_SEED.md) | `[I]` legacy compression | Historical compressed surface; current owners win. |
-| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[D]` reader projection | Optional cold-reader surface; not an eighth kernel owner. |
+| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[I]` active reader projection — owner declares `status: "ACTIVE [I/S]"` | Optional cold-reader surface; not an eighth kernel owner. |
+
+*Register cell corrected 2026-07-22.* This column reports the register the owning
+document carries, and the cell read `[D]` while its owner's frontmatter reads
+`register: "[I] active reader projection"` / `status: "ACTIVE [I/S]"`. `[D]` was
+right while receipt 140 held the gate closed; box 8 was then adopted in the
+corrected signing surface of 2026-07-20. This repairs a stale mirror of the owner's
+own declaration — it promotes no tier on any claim the seed compresses, and the
+"not an eighth kernel owner" fence is unchanged.
 
 Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D0](01_THE_SEED_LADDER/D0_THE_FLOOR.md) →

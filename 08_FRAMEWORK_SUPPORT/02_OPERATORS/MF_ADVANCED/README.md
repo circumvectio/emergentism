@@ -23,7 +23,15 @@ rosetta:
 
 ## What This Folder Is
 
-This folder holds advanced operator manuscripts and higher-order speculative extensions: MF-281 through MF-301 (21 papers). Together with [`../SPHERE_DERIVATIONS/`](../SPHERE_DERIVATIONS/README.md) (MF-63 through MF-70, 8 papers), these 29 papers ARE the **VIVEKA Mathematical Foundations** — the term every paper carries in its footer. The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
+This folder holds advanced operator manuscripts and higher-order speculative extensions: MF-281 through MF-300, **17 papers held here** (MF-290, MF-292, MF-294 and MF-301 moved to the 2026-07-20 pure-boundary archive). Together with [`../SPHERE_DERIVATIONS/`](../SPHERE_DERIVATIONS/README.md) (MF-63 through MF-69, 7 papers; MF-70 likewise archived), these **24 papers** are what remains active of the **VIVEKA Mathematical Foundations** — the term every paper carries in its footer.
+
+> **Count corrected 2026-07-22.** This line claimed 21 papers here and 29 across both folders.
+> Counted by `ls MF_*.md | wc -l`: 17 here, 7 in `SPHERE_DERIVATIONS/` → 24. The five absent
+> numbers left in the 2026-07-20 pure-boundary move and are intact at
+> [`90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/02_OPERATORS/`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/02_OPERATORS/):
+> `MF_290_The_Ektropic_Radius_v2.md`, `MF_292_The_Bekenstein_Ceiling.md`,
+> `MF_294_Egregores_Are_Horn_Networks.md`, `MF_301_Photosynthesis_Is_the_Original_F5.md`, and
+> `MF_70_Kali_Closes_Sphere.md`. The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
 
 ## Relation to the Coherence Spine
 

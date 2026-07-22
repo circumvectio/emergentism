@@ -40,26 +40,31 @@ maintenance across AI-facing repo surfaces.
 
 ## Current Focus
 
-The scripts in this folder currently support:
+This folder holds one script. It supports:
 
 - depth-aware `AGENTS.md` scaffold generation
-- execution-surface validation
-- batch PWA/tools surface creation
-- agent skill compilation
-- compaction and Rosetta loading helpers
-- syntropic router scaffolding for lane locks, transitions, and Soma-event logs
+
+Execution-surface validation, batch PWA/tools surface creation, agent skill
+compilation, compaction and Rosetta loading helpers, and syntropic router
+scaffolding are **no longer capabilities of this lane**; those scripts were moved
+on 2026-07-20 and are retained in the
+[pure-boundary archive](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/07_AGENT_OPS/).
 
 ## Current Inventory
 
 | Surface | Tier | Role |
 |---|---|---|
-| `execution_surface_validator.py` | [B/D] | Validates agent-facing execution surfaces when run; stale output must not be promoted without a fresh receipt. |
-| `AGENT_GAPS.json` | [B] | Generated gap inventory for its producing run; current corpus truth requires rerun or Rosetta index evidence. |
 | `generate_agents_md.py` | [D/B] | Dry-run/write generator for route cards; dry-run output is a plan, written files require owner-lane review. |
-| `batch_add_pwa_wiki_surfaces.py`, `batch_add_tools_surfaces.py` | [D] | Batch scaffold helpers; output remains draft until path-scoped review. |
-| `compile_agent_skills.py`, `agent_framework_integration.py` | [D/I] | Skill/framework support utilities; runtime claims need explicit execution receipts. |
-| `auto_compaction.py`, `rosetta_loader.py` | [D/I] | Loading and compaction helpers; preserve source-owner routing and tier boundaries. |
-| `syntropic_router.py` | [D/I] | Router scaffold for session records, lane locks, and Soma-event logs; local runtime state is not doctrine. |
+
+**Corrected 2026-07-22.** This table previously named ten surfaces as present.
+Nine of them — `execution_surface_validator.py`, `AGENT_GAPS.json`,
+`batch_add_pwa_wiki_surfaces.py`, `batch_add_tools_surfaces.py`,
+`compile_agent_skills.py`, `agent_framework_integration.py`,
+`auto_compaction.py`, `rosetta_loader.py`, `syntropic_router.py` — were moved to
+the pure-boundary archive on 2026-07-20 and are preserved byte-intact at
+[`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/07_AGENT_OPS/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/07_AGENT_OPS/).
+Counted by testing each of the ten backticked names against this folder:
+1 present, 9 absent. The parent lane README already reports the corrected state.
 
 ## Authority Rule
 
@@ -87,13 +92,28 @@ only to repair files that this utility previously generated; hand-authored
 ## Route Upstream
 
 - tool inventory: `../README.md` and `../CLAUDE.md`
-- agent grammar: `../../11_UPLINK/00_CORE/06_AGENTS.md`
-- agent runtime resolutions: `../../11_UPLINK/00_CORE/06c_AGENTS_RESOLUTIONS_v3.md`
+- agent grammar: **archived provenance, not live routing authority** — `06_AGENTS.md`
+  left `11_UPLINK/00_CORE/` on 2026-07-20; it now lives at
+  [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/06_AGENTS.md`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/06_AGENTS.md)
+- agent runtime resolutions: **archived provenance** — same pass, same date;
+  [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/06c_AGENTS_RESOLUTIONS_v3.md`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/00_CORE/06c_AGENTS_RESOLUTIONS_v3.md)
+- forwarding stub for both: [`../../11_UPLINK/00_CORE/README.md`](../../11_UPLINK/00_CORE/README.md)
+  (that directory now contains only that stub)
 - worldview routing: `../../AGENTS.md`
+
+> **Corrected 2026-07-22.** The two `11_UPLINK/00_CORE/` bullets above previously
+> named live upstream authorities. Counted by path test: 3 targets under that
+> directory were cited across this lane's route cards (`06_AGENTS.md`,
+> `06c_AGENTS_RESOLUTIONS_v3.md`, and `00_INDEX.md` in `../02_COMPILERS/README.md`);
+> 0 are present. They were bare backticked paths, so the mechanical dead-citation
+> and forwarding-stub gates did not see them.
 
 ## Router Surface
 
-- `syntropic_router.py` is the first tracked router scaffold.
-- It owns session records, lane locks, and Soma-event logging at runtime.
+- `syntropic_router.py` was the first tracked router scaffold. **Archived
+  2026-07-20** to
+  [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/07_AGENT_OPS/syntropic_router.py`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/07_AGENT_OPS/syntropic_router.py);
+  this lane currently has no router surface (corrected 2026-07-22).
+- When it ran, it owned session records, lane locks, and Soma-event logging at runtime.
 - Lane home registries live with their owning organ/entity in `LANES.md`.
 - Runtime state is local, not doctrine; if state conflicts with canon, fix the canon lane first.

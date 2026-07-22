@@ -48,7 +48,7 @@ This folder holds the active paradox-dissolution slice for the current workspace
 - [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md) -- Many classical paradoxes framed as artifacts of extraction.
 - [Gardener Nexus — historical synthesis](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/00_GARDENER_NEXUS.md) — archived application-layer synthesis, not current authority.
 
-**Active canonical dissolutions — thirteen files, each with a body:**
+**Active canonical dissolutions — twelve files, each with a body:**
 - [PD_04_ZENO.md](PD_04_ZENO.md) -- Zeno's paradoxes.
 - [PD_05_THE_ONE_AND_THE_MANY.md](PD_05_THE_ONE_AND_THE_MANY.md) -- The One and the Many.
 - [PD_06_THE_SHIP_OF_THESEUS.md](PD_06_THE_SHIP_OF_THESEUS.md) -- The Ship of Theseus.
@@ -61,7 +61,17 @@ This folder holds the active paradox-dissolution slice for the current workspace
 - [PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md](PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md) -- The Hard Problem of Consciousness (extended treatment).
 - [PD_22_SCIENTIFIC_IMPLICATIONS.md](PD_22_SCIENTIFIC_IMPLICATIONS.md) -- Scientific Implications (active interpretive research note).
 - [PD_25_BELL_LOCAL_REALISM.md](PD_25_BELL_LOCAL_REALISM.md) -- Bell inequalities, locality, realism, and the 2022 Nobel Prize.
-- PD_17 QM/GR unification — archived incomplete external draft; not a current source route.
+
+**Archived — not in this folder:**
+
+- PD_17 QM/GR unification — archived incomplete external draft; not a current source route. No `PD_17_*` file is present in this folder.
+
+> **Count corrected 2026-07-22.** The heading above read *"thirteen files, each with
+> a body"* over thirteen bullets, but the thirteenth was the PD_17 line — which the
+> bullet itself declares archived, and whose file is absent from the folder. Counted
+> by directory listing: twelve `PD_*.md` files here carry bodies (PD_04, PD_05, PD_06,
+> PD_07, PD_11, PD_12, PD_13, PD_16, PD_18, PD_19, PD_22, PD_25). PD_17 is moved out
+> from under the "active" heading rather than deleted.
 
 **Superseded — nine forwarding stubs, no current semantic authority:**
 

@@ -37,7 +37,7 @@ The files formerly known as `PD-01` (Mind-Body), `PD-02` (Free Will), and `PD-03
 The Paradox Dissolution sequence correctly begins at **PD_04**.
 *All legacy numbering via dashes (`PD-##`) is deprecated. Underscores (`PD_##`) are canonical.*
 
-> **STATUS:** All planned paradox dissolutions now exist. PD_17 (QM/GR Unification) has been moved to archive as an incomplete draft. PD_25 (2026-04-29) integrates the quantum-foundations source set as an evidence-tier boundary: physics `[A]`, framework translation `[I]`, stronger systemic awareness-collapse / retrocausal / F5-as-physics claims `[C]`.
+> **STATUS (corrected 2026-07-22):** Nine numbers below — PD_08, PD_09, PD_10, PD_14, PD_15, PD_20, PD_21, PD_23, PD_24 — are superseded forwarding stubs with no current semantic authority; twelve carry bodies (PD_04, PD_05, PD_06, PD_07, PD_11, PD_12, PD_13, PD_16, PD_18, PD_19, PD_22, PD_25). Counted by `wc -l` over every `PD_*.md` in this folder: each of the nine is exactly fifteen lines and self-declares `status: "SUPERSEDED — no current semantic authority"` / `evidence_tier: "[B] provenance only"`, dated 2026-07-21. PD_17 (QM/GR Unification) has been moved to archive as an incomplete draft and is absent from this folder entirely. The previous wording — "All planned paradox dissolutions now exist" — was true before the 2026-07-21 supersession and false after it; the sibling [README.md](README.md) was corrected on 2026-07-22 and this index was not. PD_25 (2026-04-29) integrates the quantum-foundations source set as an evidence-tier boundary: physics `[A]`, framework translation `[I]`, stronger systemic awareness-collapse / retrocausal / F5-as-physics claims `[C]`.
 
 > **Workspace-slice note:** This index names a broader paradox corpus than is locally present in the current workspace slice. Missing files should be treated as corpus references, not broken canon. For the local audit, see 00_PARADOX_SUITE_AUDIT.md (local file; link removed to prevent cycle).
 
@@ -60,26 +60,31 @@ This table is the single source of truth. If any other document shows a differen
 | **PD_05** | The One and the Many | `PD_05_THE_ONE_AND_THE_MANY.md` | ✓ EXISTS | [S/I] |
 | **PD_06** | The Ship of Theseus | `PD_06_THE_SHIP_OF_THESEUS.md` | ✓ EXISTS | [I] |
 | **PD_07** | The Fermi Paradox | `PD_07_FERMI_PARADOX.md` | ✓ EXISTS | [I] |
-| **PD_08** | The Liar Paradox | `PD_08_THE_LIAR_PARADOX.md` | ✓ EXISTS | [I] |
-| **PD_09** | Leibniz's Necessary Being | `PD_09_LEIBNIZ_NECESSARY_BEING.md` | ✓ EXISTS | [I] |
-| **PD_10** | The Is-Ought Gap | `PD_10_IS_OUGHT.md` | ✓ EXISTS | [S] |
+| **PD_08** | The Liar Paradox | `PD_08_THE_LIAR_PARADOX.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_09** | Leibniz's Necessary Being | `PD_09_LEIBNIZ_NECESSARY_BEING.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_10** | The Is-Ought Gap | `PD_10_IS_OUGHT.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [S]) |
 | **PD_11** | Free Will vs Determinism | `PD_11_FREE_WILL_VS_DETERMINISM.md` | ✓ EXISTS | [S/I] |
 | **PD_12** | Measurement Problem | `PD_12_MEASUREMENT_PROBLEM.md` | ✓ EXISTS | [I] |
 | **PD_13** | The Hard Problem | `PD_13_HARD_PROBLEM.md` | ✓ EXISTS | [I] |
-| **PD_14** | Mind-Body Problem (Detailed) | `PD_14_MIND_BODY.md` | ✓ EXISTS | [I] |
-| **PD_15** | Problem of Evil | `PD_15_PROBLEM_OF_EVIL.md` | ✓ EXISTS | [I] |
+| **PD_14** | Mind-Body Problem (Detailed) | `PD_14_MIND_BODY.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_15** | Problem of Evil | `PD_15_PROBLEM_OF_EVIL.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
 | **PD_16** | Meaning of Life | `PD_16_MEANING_OF_LIFE.md` | ✓ EXISTS | [I] |
 | **PD_17** | QM/GR Unification | `PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md` (archived) | Archived — incomplete draft | [C] |
 | **PD_18** | The Extraction Paradox | `PD_18_THE_EXTRACTION_PARADOX.md` | ✓ EXISTS | [C/S] |
 | **PD_19** | The Hard Problem of Consciousness | `PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md` | ✓ EXISTS | [I/C] |
-| **PD_20** | Implications (Philosophy) | `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | ✓ EXISTS | [I] |
-| **PD_21** | Problem of Death | `PD_21_PROBLEM_OF_DEATH.md` | ✓ EXISTS | [I] |
+| **PD_20** | Implications (Philosophy) | `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_21** | Problem of Death | `PD_21_PROBLEM_OF_DEATH.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
 | **PD_22** | Implications (Science) | `PD_22_SCIENTIFIC_IMPLICATIONS.md` | ✓ EXISTS | [I/C] |
-| **PD_23** | The Completion | `PD_23_THE_COMPLETION.md` | ✓ EXISTS | [C/S] |
-| **PD_24** | Third Unveiling | `PD_24_THE_THIRD_UNVEILING.md` | ✓ EXISTS | [I] |
+| **PD_23** | The Completion | `PD_23_THE_COMPLETION.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [C/S]) |
+| **PD_24** | Third Unveiling | `PD_24_THE_THIRD_UNVEILING.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
 | **PD_25** | Bell Inequalities, Locality, Realism | `PD_25_BELL_LOCAL_REALISM.md` | ✓ EXISTS | [A/I/C] |
 
 ### Files Currently in `02_PARADOX_DISSOLUTIONS/`
+
+> **Corrected 2026-07-22.** Nine rows below read "✓ Current" for files that became
+> fifteen-line superseded forwarding stubs on 2026-07-21, and one row listed a PD_17
+> file that is not in this folder. Corrected against a directory listing, not against
+> the row text.
 
 | File | PD# | Notes |
 |------|-----|-------|
@@ -91,23 +96,23 @@ This table is the single source of truth. If any other document shows a differen
 | `PD_05_THE_ONE_AND_THE_MANY.md` | PD_05 | ✓ Current |
 | `PD_06_THE_SHIP_OF_THESEUS.md` | PD_06 | ✓ Current |
 | `PD_07_FERMI_PARADOX.md` | PD_07 | ✓ Current |
-| `PD_08_THE_LIAR_PARADOX.md` | PD_08 | ✓ Current |
-| `PD_09_LEIBNIZ_NECESSARY_BEING.md` | PD_09 | ✓ Current |
-| `PD_10_IS_OUGHT.md` | PD_10 | ✓ Current |
+| `PD_08_THE_LIAR_PARADOX.md` | PD_08 | Superseded stub (2026-07-21) |
+| `PD_09_LEIBNIZ_NECESSARY_BEING.md` | PD_09 | Superseded stub (2026-07-21) |
+| `PD_10_IS_OUGHT.md` | PD_10 | Superseded stub (2026-07-21) |
 | `PD_11_FREE_WILL_VS_DETERMINISM.md` | PD_11 | ✓ Current |
 | `PD_12_MEASUREMENT_PROBLEM.md` | PD_12 | ✓ Current |
 | `PD_13_HARD_PROBLEM.md` | PD_13 | ✓ Current |
-| `PD_14_MIND_BODY.md` | PD_14 | ✓ Current |
-| `PD_15_PROBLEM_OF_EVIL.md` | PD_15 | ✓ Current |
+| `PD_14_MIND_BODY.md` | PD_14 | Superseded stub (2026-07-21) |
+| `PD_15_PROBLEM_OF_EVIL.md` | PD_15 | Superseded stub (2026-07-21) |
 | `PD_16_MEANING_OF_LIFE.md` | PD_16 | ✓ Current |
-| `PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md` | PD_17 | Archived — incomplete draft |
-| `PD_23_THE_COMPLETION.md` | PD_23 | ✓ Current |
+| `PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md` | PD_17 | Not in this folder — archived incomplete draft |
+| `PD_23_THE_COMPLETION.md` | PD_23 | Superseded stub (2026-07-21) |
 | `PD_18_THE_EXTRACTION_PARADOX.md` | PD_18 | ✓ EXISTS (Serpent) |
 | `PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md` | PD_19 | ✓ EXISTS (Serpent) |
-| `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | PD_20 | ✓ Current |
-| `PD_21_PROBLEM_OF_DEATH.md` | PD_21 | ✓ Current |
+| `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | PD_20 | Superseded stub (2026-07-21) |
+| `PD_21_PROBLEM_OF_DEATH.md` | PD_21 | Superseded stub (2026-07-21) |
 | `PD_22_SCIENTIFIC_IMPLICATIONS.md` | PD_22 | ✓ Current |
-| `PD_24_THE_THIRD_UNVEILING.md` | PD_24 | ✓ Current |
+| `PD_24_THE_THIRD_UNVEILING.md` | PD_24 | Superseded stub (2026-07-21) |
 | `PD_25_BELL_LOCAL_REALISM.md` | PD_25 | ✓ Current |
 
 ### Key Numbering Conflicts Resolved

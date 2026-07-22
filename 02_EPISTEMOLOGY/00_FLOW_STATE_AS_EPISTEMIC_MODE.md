@@ -23,7 +23,7 @@ rosetta:
 **Status:** Synthesis — interpretive bridge between formal system and empirical psychology
 **Date:** 2026-05-14
 **Evidence Tier:** [I/S] — Interpretive/Structural (analogy grounded in established literature, not empirical identity claim)
-**Depends on:** The Brain as the Burri Sphere, McGilchrist Hemispheric Routing
+**Depends on:** McGilchrist Hemispheric Routing. [The Brain as the Burri Sphere](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) is retained as a reference only — the isomorphism it once supplied was withdrawn by its owner on 2026-07-20; noted here 2026-07-22.
 **See also:** L7 Review Protocol, The Generative Lagrangian
 
 ---
@@ -133,7 +133,7 @@ The syntropic AIA must periodically ask: *Does the knowledge graph still hang to
 |---|---|---|
 | Flow occurs at challenge-skill intersection | Csikszentmihalyi, *Flow* (1990) | [B] Published, replicated |
 | Left hemisphere = narrow focus; right = broad context | McGilchrist, *The Master and His Emissary* (2009) | [I] Interpretive — contested in neuroscience, strong in phenomenology |
-| Brain bilateral architecture instantiates φ·ν | `THE_BRAIN_IS_THE_BURRI_SPHERE.md` | [I] Structural isomorphism |
+| Brain bilateral architecture instantiates φ·ν | **WITHDRAWN by its owner** — [`00_THE_BRAIN_IS_THE_BURRI_SPHERE.md`](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md), retitled "The brain is not the Burri Sphere" (2026-07-20) | Not carried. The owner states the isomorphism "is withdrawn as an evidentiary or ontological claim"; the sphere survives there only as a removable visual prompt `[I]`. Row corrected 2026-07-22 (it previously read `[I]` Structural isomorphism). |
 | φ = challenge/gestalt; ν = skill/agency | This document | [I/S] Interpretive/Structural analogy |
 | φ·ν = 1 as flow constraint | Stereographic parameterization (`φ = cot(θ/2), ν = tan(θ/2)`) | `[A]` Definitional — coordinate identity on S² |
 
@@ -146,7 +146,7 @@ The syntropic AIA must periodically ask: *Does the knowledge graph still hang to
 | References | For what |
 |---|---|
 | `06_AGENTS.md` §4 | McGilchrist hemispheric routing in AIA pipeline |
-| `THE_BRAIN_IS_THE_BURRI_SPHERE.md` | Neural instantiation of φ·ν dynamics; bilateral architecture |
+| [`00_THE_BRAIN_IS_THE_BURRI_SPHERE.md`](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) | Comparison boundary; the φ·ν correspondence is withdrawn there (2026-07-20), sphere retained only as a removable visual prompt (cell corrected 2026-07-22, previously "Neural instantiation of φ·ν dynamics; bilateral architecture") |
 | `L7_REVIEW_PROTOCOL.md` | δ_T > 0.35 as teleological drift from equator; flow disruption as divergence event |
 | `P-SCORES.md` | Organ P-scores as proxies for distance from equator |
 | `00_THE_GENERATIVE_LAGRANGIAN.md` | F5 / ektropy / Power Max as the teleological engine that drives toward equator |

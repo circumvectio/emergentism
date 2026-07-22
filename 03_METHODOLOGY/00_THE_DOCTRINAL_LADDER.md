@@ -33,9 +33,20 @@ This document exists because the website no longer needs a new front door. The
 current public surface already has:
 
 - an axiom-first homepage,
-- `/sit` as the axiomatic exit,
-- `/seed`, `/foundation`, `/study`, `/formal`, `/research`, `/corpus`, and
-  the Foundation reader routes.
+- `/exit/` as the axiomatic exit,
+- the primary journey `/map/`, `/discoveries/`, `/lab/`, `/contribute/`,
+  `/practice/`, `/record/`, `/exit/`, plus `/formal/` and `/foundations/`, with
+  the detailed spine at `/dimensions/` and `/0/`–`/6/`.
+
+> **Route list corrected 2026-07-22.** This list previously read "`/sit` as the
+> axiomatic exit" and "`/seed`, `/foundation`, `/study`, `/formal`, `/research`,
+> `/corpus`". Six of those seven do not resolve: `12_PUBLIC_SITE/` contains no
+> `sit`, `seed`, `foundation`, `study`, `research`, or `corpus` path — only
+> `formal/` exists, and `foundations/` is a different, plural route — while
+> `12_PUBLIC_SITE/vercel.json` sets `cleanUrls`/`trailingSlash` and carries
+> exactly one redirect (`/home/` → `/`), so nothing supplies the missing paths.
+> The routes above are the site's own primary journey per
+> [`12_PUBLIC_SITE/README.md`](../12_PUBLIC_SITE/README.md) (dated 2026-07-22).
 
 The missing piece is smaller: one explicit ladder that tells the reader how the
 seed moves through the public doctrine without collapsing L5 System Architecture into L6
@@ -115,7 +126,7 @@ plain safeguards:
 | Receipts | No receipt, no reality. | Claims need source paths, evidence tiers, and audit trails. |
 | Authorization | Consequential action names principal, mandate, actor, custody, and consequence bearer. | No page may manufacture authority from a model output. |
 | Memory | Archive first; do not erase ground truth. | Public compression may hide complexity, but source truth remains available. |
-| Grace Exit | Leave with everything. | The framework must remain put-down-able; `/sit` is not ornamental. |
+| Grace Exit | Leave with everything. | The framework must remain put-down-able; `/exit/` is not ornamental, and `/practice/` carries the sitting practice. (Route names corrected 2026-07-22; `/sit` never existed on the public surface.) |
 
 The authorization boundary is especially important: the website may orient,
 warn, derive, and invite practice. It may not manufacture the reader's consent.
@@ -160,8 +171,9 @@ This ladder inherits the 2026-05-14 derivation audit:
 
 The website does not need to be rebuilt from scratch.
 
-The front door already exists. The axiomatic exit already exists. The route
-topology already exists.
+The front door already exists. The axiomatic exit already exists — it is
+`/exit/`, not the `/sit` this document named before 2026-07-22. The route
+topology already exists, in the corrected form enumerated in §0.
 
 The current task is disciplined addition:
 

@@ -27,12 +27,22 @@ are canonical, at different read depths:
 | Read depth | Canonical file | What it is |
 |---|---|---|
 | **Entry** (start here) | [`03_EVIDENCE/ROSETTA_STONE/README.md`](../03_EVIDENCE/ROSETTA_STONE/README.md) | The folder's own front door: what the Rosetta is, the generative table, the folder map. |
-| **Deep read** (the table itself) | [`03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | The complete cross-domain translation engine — "if you read one document, read that one." |
+| **Deep read** (the protocol) | [`03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](../03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) | The translation and audit protocol: non-transfer laws, the audit sequence, pass/fail/kill. Status line: "ACTIVE METHOD — never evidence or ontology." The former 1,100-line mapping catalogue is archived at the 2026-07-20 purity boundary and carries no current semantic authority. |
 
-This matches the folder's own self-description in
-[`00_CORPUS.md`](../03_EVIDENCE/ROSETTA_STONE/00_CORPUS.md): the folder is "THE TABLE … if you read
-one folder, read this one," its `README.md` is "this folder's own guide," and the Master Rosetta is
-the deep-read document named from the front door.
+[`00_CORPUS.md`](../03_EVIDENCE/ROSETTA_STONE/00_CORPUS.md) names the Master Rosetta as the folder's
+principal owner document, and states that the Rosetta is a translation instrument which does not
+transfer proof or upgrade evidence.
+
+> **Corrected 2026-07-22.** Two errors were repaired here. (1) The Deep-read row promised
+> "the complete cross-domain translation engine — the table itself." The current file is a
+> 124-line protocol containing no table rows (`grep -c "|"` returns 0); the mappings are in
+> `90_ARCHIVE`, per that file's own §7. (2) The paragraph above previously placed three
+> strings in quotation marks and attributed them to `00_CORPUS.md` — "THE TABLE … if you read
+> one folder, read this one," "this folder's own guide," and "if you read one document, read
+> that one." **None of the three appears in that file, or anywhere in the corpus**
+> (`grep -rin` over `00_CORPUS.md`, `README.md`, and `00_THE_MASTER_ROSETTA.md` exits 1). The
+> quoted framing also inverted the cited source, which says the Rosetta transfers no proof.
+> The fabricated quotations are replaced with an unquoted paraphrase of what the file says.
 
 **Naming convention in the corpus** (measured 2026-06-17): the bare folder path
 `03_EVIDENCE/ROSETTA_STONE/` is the standard *descriptive* form when naming the Rosetta as a body of

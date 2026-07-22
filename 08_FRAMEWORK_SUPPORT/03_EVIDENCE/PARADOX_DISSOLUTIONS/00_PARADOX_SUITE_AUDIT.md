@@ -89,6 +89,14 @@ Related bridge material also exists in:
 
 ## Already Resolved Locally
 
+> **Superseded 2026-07-21 — disclosed 2026-07-22.** PD_10, PD_23 and seven other
+> numbers (PD_08, PD_09, PD_14, PD_15, PD_20, PD_21, PD_24) became fifteen-line
+> forwarding stubs carrying `status: "SUPERSEDED — no current semantic authority"`.
+> Assessments in this section and in **Still Open** that describe the *content* of
+> those documents describe bodies now held only in `90_ARCHIVE`, not text at the
+> in-lane path. This file's own header still reads "Active integrity bridge"; treat
+> its per-document verdicts as dated to before 2026-07-21.
+
 ### 1. Numbering authority now exists
 
 The workspace already has a single canonical numbering file:
@@ -111,9 +119,16 @@ is already handled locally as a two-path or staged account:
 
 The remaining issue is tone and physical plausibility, not bare contradiction.
 
-### 3. The completion claim already names the Godel boundary
+### 3. The completion claim named the Godel boundary — in a body since archived
 
-[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) now distinguishes categorical from formal completeness. That directly answers one of the most obvious objections to any "completion" language.
+The distinction between categorical and formal completeness is **no longer at the
+in-lane path**. [PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) is now a fifteen-line
+forwarding stub and contains no discussion of completeness. The text this section
+credited is preserved at
+[PD_23_THE_COMPLETION_LEGACY_2026_07_21.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_23_THE_COMPLETION_LEGACY_2026_07_21.md),
+which has no current semantic authority. So this objection is **not** currently answered
+in-lane. *(Corrected 2026-07-22; the previous sentence read "now distinguishes categorical
+from formal completeness.")*
 
 ### 4. The literature layer already carries verdicts
 
@@ -132,7 +147,13 @@ So the literature bridge is ahead of some earlier critiques.
 
 ### 1. Power-Max remains compressed
 
-[PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) still states the Power-Max Lemma in abbreviated form. It does not yet provide:
+[PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) no longer states the Power-Max Lemma at all — it
+became a forwarding stub on 2026-07-21. The abbreviated statement this section describes
+is preserved at
+[PD_10_IS_OUGHT_LEGACY_2026_07_21.md](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT_LEGACY_2026_07_21.md),
+which has no current semantic authority. *(Corrected 2026-07-22; the previous sentence read
+"still states the Power-Max Lemma in abbreviated form.")* Neither the stub nor the archived
+body provides:
 
 - the full derivation
 - the exact assumptions
@@ -142,7 +163,11 @@ The numerical threshold claim has been falsified. The qualitative claim (that a 
 
 ### 2. Completion language still needs proof debt attached
 
-[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) now handles the Godel boundary well, but the wider “categorical completion” posture still depends on unclosed proof surfaces elsewhere in the corpus.
+[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) is a forwarding stub and handles the
+Godel boundary nowhere; the archived body did. The wider “categorical completion” posture
+still depends on unclosed proof surfaces elsewhere in the corpus, and now has no in-lane
+document stating its own boundary. *(Corrected 2026-07-22; the previous sentence read "now
+handles the Godel boundary well.")*
 
 ### 3. Tone still outruns tier in places
 

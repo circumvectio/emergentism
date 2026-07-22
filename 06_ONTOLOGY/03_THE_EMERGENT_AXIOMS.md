@@ -65,7 +65,7 @@ Stable “forms” (patterns that hold) are what organize **across** those freed
 
 **Survivors if E1 falls:** E2–E3 as pure math; E8–E10 as practice without ontology story.
 
-**Maps from:** none directly in A1–A7 (new Plato repair). Companion: `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` (refine: that draft’s “Forms *are* DoF” line is **over-strong** per 133 — use this E1 wording).
+**Maps from:** none directly in A1–A7 (new Plato repair). Companion: `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` — the sole K-2 ontology owner **already carries the receipt-133 repair**; keep the two wordings aligned rather than refining it. The over-strong “Forms *are* DoF” reading survives only in the `[I]` rumination [`ruminations/00_RUMINATION_ON_DOF_2026_07_19.md:31`](ruminations/00_RUMINATION_ON_DOF_2026_07_19.md) (“degrees of freedom whose sampled values look like things”); read that line through this E1 wording. *(Corrected 2026-07-22: this note previously reported the companion as still carrying an over-strong “Forms *are* DoF” line. It does not — §1 states “A ‘form’ is not that freedom itself: it is a robust invariant, equivalence class, order parameter, attractor, or stable organization formed **across** constrained freedoms,” and §6 repeats it.)*
 
 ---
 

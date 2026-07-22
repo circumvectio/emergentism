@@ -171,9 +171,11 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 
 ---
 
-## 6 · The receipt-prefix collision census (full)
+## 6 · The receipt-prefix collision census
 
 Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **Rule: never rename any receipt.** A bare № is ambiguous wherever this table lists more than one entry — cite the **full filename**, not the number. Dates are filename dates where present; otherwise the file's modification date on 2026-07-20 (`[B]` disk state). One-line scopes are filename-derived `[B]`.
+
+> **Correction 2026-07-22 — this section was headed "(full)" and was not full; the word has been withdrawn.** Prefix **148** already carried two entries on disk on 2026-07-20 — `148_COHERENCE_PASS_2026_07_20.md` and the directory `148_REAP_COHERENCE_AUDIT_2026_07_20/` — but only the `.md` was listed, and the Anomalies block below never named 148, even though that wave's own L3 Vaiśya receipt ([`148_REAP_COHERENCE_AUDIT_2026_07_20/L3_VAISYA_FOLDER_TIDY_AND_LEDGER_CENSUS_2026_07_20.md`](148_REAP_COHERENCE_AUDIT_2026_07_20/L3_VAISYA_FOLDER_TIDY_AND_LEDGER_CENSUS_2026_07_20.md)) records that the 148 directory landing was added here as a recorded anomaly. It was not. The 148 row is added below, in the same form as the 133 file↔directory row. **Recount, 2026-07-22** (`ls -1` of this directory, each entry folded to its leading number — letter suffixes folded to that number, as this table already does for `52a`/`141A`/`156A`/`159A` — then `uniq -c`): **31 numeric prefixes carry two or more entries**; 122 and 156 carry three each. This table listed 28 of the 31; with the 148 row it lists 29. The two still outside the table, **157** and **158**, are recorded under *Pending registrations* below rather than as rows, because each of those files states that its registration here is founder-gated. `[B]` disk state, 2026-07-22.
 
 | Prefix | Filename | Date | One-line scope |
 |---|---|---|---|
@@ -232,6 +234,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 146 | `146_PAPERS_LENS_CLOSURE_2026_07_20.md` | 2026-07-20 | Papers-lens evidence disposition — no paper moved, promoted, stoned, or published |
 | 147 | `147_POST_AUDIT_RECONCILIATION_2026_07_20.md` | 2026-07-20 | Historical post-audit reconciliation |
 | 148 | `148_COHERENCE_PASS_2026_07_20.md` | 2026-07-20 | Historical coherence pass |
+| 148 | `148_REAP_COHERENCE_AUDIT_2026_07_20/` (directory) | 2026-07-20 | Reap coherence audit components (`L1_FIREWALL.md`, `L2_TRUTH_CUT.md`, `L3_VAISYA_FOLDER_TIDY_AND_LEDGER_CENSUS_2026_07_20.md`, `README.md`) — file↔directory prefix collision; added 2026-07-22 |
 | 149 | `149_MODELS_AND_CORRECTIONS_LOGIC_AUDIT_2026_07_20.md` | 2026-07-20 | Models and corrections logic audit |
 | 150 | `150_BURRI_SPHERE_FORMAL_AUDIT_2026_07_20.md` | 2026-07-20 | Burri Sphere formal audit |
 | 151 | `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md` | 2026-07-20 | Horn-torus / special-relativity formal audit |
@@ -256,6 +259,11 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 - **№ 93 is absent** from the № sequence (92 → 94) — recorded, not back-filled.
 - **Date-prefixed pair outside the № scheme:** `2026-05-24_L7_RUMINATION_COMPRESSION_PRUNING_PROPOSAL.md` + `2026-05-24_L7_RUMINATION_EVIDENCE_AUDIT_REPORT.md` (same ISO-date prefix, two ruminations).
 - **Letter-suffix disambiguations in force:** `52a`, `141A`, `156A` — the suffix, not the №, is the citation key.
+
+**Pending registrations (recorded 2026-07-22 — live collisions, deliberately not entered as rows):**
+- **157** — `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` + `157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md`.
+- **158** — `158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md` + `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md`.
+- In each pair the later file carries its own internal collision banner and states that "registration in the K-7 collision census is founder-gated". They are recorded here so the census is not read as complete, and they are left out of the table pending that founder act. **Cite all four by full filename; "receipt 157" and "receipt 158" are ambiguous.**
 
 ---
 

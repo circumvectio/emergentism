@@ -150,8 +150,17 @@ It may also be the more durable one.
 
 At the current state of the corpus, the most defensible novelty claims are:
 
-1. **A unified D-level translation stack**
-   Science is unified by bridge law and translation, not by reduction.
+1. **A candidate D-level translation stack**
+   The proposal is that the sciences be *related* by bridge law and translation
+   rather than by reduction. Corrected 2026-07-22: this is a proposal, not an
+   achieved unification. The owning document
+   [00_D_LEVEL_STUDIES.md](00_D_LEVEL_STUDIES.md) states that the framework
+   "does not claim to have unified the sciences or to replace them with one
+   vocabulary", and
+   [00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
+   records that this "is not yet a unification theory because no common
+   dynamics, constants, or novel replicated discriminator has been derived"
+   — socket `GP-11` is still externally unvalidated.
 
 2. **D5 as a public strategic-relational science**
    Game theory, behavioral economics, mechanism design, and institutional economics are treated as one register rather than scattered neighboring fields.

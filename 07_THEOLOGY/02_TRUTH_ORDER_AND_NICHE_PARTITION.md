@@ -76,12 +76,27 @@ A society ordered by truth is not ordered by uniform belief. It is ordered by
 shared refusal to let any institution own the disclosure channel.
 
 The first social unit is therefore not the nation or corporation. Those are
-D5 institutional containers. They may be useful, but they are not ultimate.
+D4 institutional containers — actual, acting coordination forms whose
+alternative futures are modeled in D5. They may be useful, but they are not
+ultimate.
 The first social unit is the finite witness-node inside a truth-bearing field:
 
 ```text
 Dasein -> role -> contribution -> receipt -> release
 ```
+
+> **Register correction (2026-07-22):** the sentence above read "Those are **D5**
+> institutional containers." That inverted the modality of this document's own
+> declared source. [D4-D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
+> §1 fixes D4 as "causal actuality, embodied means, present model tokens,
+> performed ranking/selection events, action, factual record" and D5 as
+> "counterfactual contents, alternative relations, modeled-future referents,
+> candidates for selection"; §5 names institutions among the D4 causal carriers;
+> §10 fails any live owner that "assigns D4 to possibility or D5 to actuality."
+> The in-lane [Framework Glossary](00_GLOSSARY.md) carries the same split. Nations
+> and corporations are existing, acting institutions, so they are D4. The
+> argument — that they may be useful but are not ultimate — is unaffected by the
+> register correction.
 
 The role exists to disclose and serve truth. It does not own the person.
 

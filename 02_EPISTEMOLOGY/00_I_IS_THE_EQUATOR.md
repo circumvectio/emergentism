@@ -404,7 +404,9 @@ Keep the tiers intact.
 
 ## See Also
 
-- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — canonical source-owner for the sphere S², the equator L4 (`φ = ν = 1`), and the complex-plane visualization caveat (`φ`, `ν` are real-positive; the complex plane is projective convenience) that bounds the `i`-reading here.
+- [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — current owner of `φ`, `ν`, `P∞`, and `B`, and so of the chart identities on which the equator (`φ = ν = 1`) sits.
+- [EFR Operators on the Complex Plane](../05_COSMOLOGY/03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md) — live owner of the caveat that bounds the `i`-reading here: "Both φ and ν are real positive numbers. The constraint φ·ν = 1 defines a hyperbola in R^2_+, not a curve in C. The complex plane notation `z = ν + i·φ` is used for visual convenience and stereographic projection, not because `i` plays a role in the dynamics."
+- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — forwarding stub since 2026-07-21, `[S]` routing only, "no semantic authority"; it does not contain the caveat above and bounds nothing here. *(Route corrected 2026-07-22: this entry previously named the stub canonical source-owner of the sphere, the equator, and the caveat; the two owners above are the ones the stub itself names.)*
 - The Transcendental Trinity — computational breakthrough: 0, ∞, 1 as transcendentals
 - The Brain As the Burri Sphere — neuroscience-adjacent mapping: processing modes read as φ/ν
 - The Genesis Simulation — D0→S²→D0 animated

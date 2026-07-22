@@ -33,9 +33,18 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../00_STA
 
 The geometry this evidence layer calibrates is canonized in cosmology — read the Rosetta and paradox surfaces **with** them:
 
-- [The Burrisphere](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, and the equator `L4` (the Master Rosetta's nine-row table is the evidence source for that closure).
+- [The Burrisphere](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, and the equator `L4` (the archived Rosetta catalogue records a nine-row projection of these latitudes at `[I]`; it is **not** evidence for the closure, which is owned by cosmology).
 - [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the moral axis is `η` (closed vs syntropic), never a gender, pole, caste, or operator name.
 - [Five-plus-One Constitution](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — current refusal owner; application-specific constitutional enumerations are historical only.
+
+> **Corrected 2026-07-22.** The Burrisphere line above read "the Master Rosetta's nine-row
+> table is the evidence source for that closure." Two errors: there is no nine-row table in
+> [`ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) — the
+> current file contains no table at all (`grep -c "|"` returns 0), the catalogue having been
+> archived on 2026-07-21 — and naming a Rosetta table as an *evidence source* for a cosmological
+> closure is the warrant-transfer the Master Rosetta forbids ("A theorem in `A` does not become
+> a theorem in `B`"; "A Rosetta result cannot promote `[I]` or `[C]` to `[S]` or `[A]`"). This
+> lane's front door is the last place that licence should sit.
 
 ## Read First
 

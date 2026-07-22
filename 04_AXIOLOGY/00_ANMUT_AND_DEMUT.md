@@ -363,7 +363,7 @@ Zero-Sum Resolution Equation
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators *(forwarding tombstone, status "ARCHIVED … no current authority" 2026-07-22; the devotional-symbolic body is preserved in the archive and the stub makes no active claim)*
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — downstream reference for the *selected* `P_node = Φ × V` instance and evidence tiers; **not an owner** (read its authority spine first) *(corrected 2026-07-22: the target retracted the phrase "single source of truth" by name in its 2026-07-20 Kintsugi repair — "This file is not an ontological root and cannot override the owners it cites" — and now carries `P_node := Phi * V` as "one transparent instance" of a normalized conjunctive family `C(Phi,V)`, not as an owned law; matches this lane's own README line 91)*
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 
 *Anmut and Demut | 2026-03-23 | German gives the Burri Sphere a beautiful translation surface. It is a reading aid, not a proof.*

@@ -41,11 +41,17 @@ evidence_tier: "[S] for cited L1-L4 developmental-stage source status; [S/I] for
 | L4 | INTEGRATED AGENCY | Formal operational | Post-conventional | Self-actualisation | Dhṛti (fortitude) | Violence / Cruelty | ✓ [S] |
 | L5 | Contemplative | Formal+ | Post-conv+ | Self-actualisation+ | Vidyā (knowledge) | Dogmatism / Rigidity | ⚠️ [I] |
 | L6 | Axiomatic | Post-formal | Universal principles | Self-transcendence | Tyāga (renunciation) | Nihilism / Dissociation | ⚠️ [I] |
-| L7 | Transcendent | Beyond formal | Beyond post-conv | Self-transcendence | Śraddhā (faith) | Fanaticism / Bypassing | ⚠️ [S] |
+| L7 | Transcendent | Beyond formal | Beyond post-conv | Self-transcendence | Śraddhā (faith) | Fanaticism / Bypassing | ⚠️ [I] |
 
 > **Table Footnotes:**
 > - **†** Piaget and Kohlberg are NOT independent -- Kohlberg built directly on Piaget's stage theory. These represent two intellectual traditions (Piaget-Kohlberg and Maslow), not three.
 > - **‡** Maslow's hierarchy as a HIERARCHY is not empirically supported (Tay & Diener 2011, n=60,865 across 123 countries). The needs are universal; the sequential ordering is not.
+> - **Tier corrected 2026-07-22.** The `L7` row carried `[S]` while `L5` and `L6`
+>   above it carried `[I]`, and footnote **§** directly below already stated that
+>   L5-L7 are `[I]`. The row now reads `[I]`, matching this document's own
+>   footnote. This is a correction toward the WEAKER claim — the table was
+>   asserting more than its own note supports — not a re-tiering of doctrine.
+>   The prior value is recorded here so the change is reversible.
 > - **§** L5-L7 extend beyond what the originators established empirically -- these are framework extrapolations [I], not validated developmental stages. Cross-cultural validity degrades at higher levels (WEIRD bias).
 > - See `../ROSETTA_PSYCHOLOGY_RESEARCH_BRIEF.md` for full meta-analysis with 20 references.
 

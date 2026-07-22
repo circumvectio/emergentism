@@ -46,10 +46,10 @@ It is where the corpus records:
 
 | File | Function |
 |------|----------|
-| ~~`50_IMPLEMENTATION_REVIEW.md`~~ | **Archived 2026-04-22** to `/08_ARCHIVE/uplink_legacy/2026-04-22/audits_50-52/` — superseded by `61_`. Root compat stub updated. |
-| ~~`51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md`~~ | **Archived 2026-04-22** — same reason. |
-| ~~`51_END_OF_SESSION_SUMMARY.md`~~ | **Archived 2026-04-22** — same reason (also resolved `51_` numbering collision). |
-| ~~`52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md`~~ | **Archived 2026-04-22** — same reason. |
+| ~~`50_IMPLEMENTATION_REVIEW.md`~~ | **Archived 2026-04-22** — superseded by `61_`. Root compat stub updated. **Archive destination unresolved (flagged 2026-07-22)** — this row previously asserted `/08_ARCHIVE/uplink_legacy/2026-04-22/audits_50-52/`; see the note below the table. |
+| ~~`51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md`~~ | **Archived 2026-04-22** — same reason; same unresolved destination (see note below). |
+| ~~`51_END_OF_SESSION_SUMMARY.md`~~ | **Archived 2026-04-22** — same reason (also resolved `51_` numbering collision); same unresolved destination (see note below). |
+| ~~`52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md`~~ | **Archived 2026-04-22** — same reason; same unresolved destination (see note below). |
 | `52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` | active version after resolving collision with `52_K4_BOND_SMART_CONTRACT_SPEC.md` |
 | `53_DISAMBIGUATION_REVIEW_PACKET.md` | operational packet for running disambiguation on a touched surface |
 | `54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md` | lawful way to turn the framework inward on the corpus |
@@ -60,6 +60,8 @@ It is where the corpus records:
 | `59_BREAKTHROUGH_HARDENING_DEBRIEF.md` | what the hardening wave changed, corrected, and left open |
 | `60_BREAKTHROUGH_HARDENING_BRIEF.md` | shortest honest re-entry brief for humans and agents |
 | `61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md` | routing audit across Uplink and wiki-facing surfaces |
+
+> **Archive destination unresolved — flagged 2026-07-22.** The four `50–52` rows above are marked archived 2026-04-22, but the two addresses given for them in this lane disagree with each other and neither exists on disk. This table named `/08_ARCHIVE/uplink_legacy/2026-04-22/audits_50-52/`; the compatibility stubs standing at `50_IMPLEMENTATION_REVIEW.md`, `51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md`, `51_END_OF_SESSION_SUMMARY.md` and `52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` each name `/90_ARCHIVE/01_LANE_LEGACY/uplink/2026-04-22/audits_50-52/`. Checked 2026-07-22 (`[B]` disk state): there is no `08_ARCHIVE` at the corpus root at all; `90_ARCHIVE/01_LANE_LEGACY` does not exist; and a corpus-wide `find` for directories named `audits_50-52`, `uplink_legacy` or `01_LANE_LEGACY` returns nothing. **Archived bodies located at either named address: 0 of 4.** What is on disk instead: three of the four filenames (`50_IMPLEMENTATION_REVIEW.md`, `51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md`, `51_END_OF_SESSION_SUMMARY.md`) stand in this lane as compatibility stubs — bodies not restored — and `52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` is absent under that name, its stub standing under `52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md`. The archive-never-delete claim for these four is therefore **unverified, not disproved**: the bodies may sit under a name this lane never recorded. The addresses are kept as written above rather than silently corrected, since no successor location is named by any source. **This needs an owner:** locate the four bodies, or record that they were lost, and then reconcile this table with the four stubs so both name one address.
 
 ### 2026-05-04 Caste-Audit Series (added 2026-05-23 per K2-Q17)
 

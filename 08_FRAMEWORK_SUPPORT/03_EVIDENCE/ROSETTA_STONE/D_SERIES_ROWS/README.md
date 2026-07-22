@@ -54,7 +54,9 @@ status: ACTIVE
 
 **Status:** Active
 **Register:** `[A]` for cited source scales · `[S]` for catalogue structure · `[I]` for the Rosetta mapping · `[C]` for causal-generation claims
-**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card; `CLAUDE.md` does not exist here — agents read `AGENTS.md`.
+**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card. [`CLAUDE.md`](CLAUDE.md) is also present as the standard per-lane Claude compatibility route; it defers to `AGENTS.md`.
+
+> **Corrected 2026-07-22.** This line previously read *"`CLAUDE.md` does not > exist here — agents read `AGENTS.md`"*. The file does exist in this > directory and always has; the sentence told Claude-family agents that > their own route card was absent.
 
 ## What This Folder Is
 

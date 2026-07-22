@@ -96,4 +96,6 @@ Each of these rises with the nectar and *looks* like it. Śiva holds them here.
 
 The eternal is the structure. The good is the vow. The rest is churning.
 
-**Canonical Path:** `01_EMERGENTISM/00_THE_AMRITA.md` — the distilled essence; read the tiers, not the poetry.
+**Canonical Path:** `01_EMERGENTISM/07_THEOLOGY/00_THE_AMRITA.md` — the distilled essence; read the tiers, not the poetry.
+
+> **Path correction (2026-07-22):** this line named `01_EMERGENTISM/00_THE_AMRITA.md`. That root path is now a six-line forwarding stub left by the 2026-07-19 root tidy (`canonical_target: 07_THEOLOGY/00_THE_AMRITA.md`; `status: "FORWARDING STUB — 2026-07-19 root tidy (receipts 137/138)"`), so the field pointed a reader away from the owner document that carries it. The root path still resolves here for signed legacy citations — the stub is kept, not removed — but the canonical home is this file. No tier, content, or signature changed.

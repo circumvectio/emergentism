@@ -39,9 +39,19 @@ This folder stores outputs and helper scripts for tooling audits.
 | Surface | Tier | Use |
 |---|---|---|
 | `audit_dependency_graph.py` | [D/B] | Read-only dependency graph audit script; output is only current when rerun against the live tree. |
-| `audit_output.md` | [B] | Generated dependency graph report from its recorded run; use as triage evidence, not live truth. |
-| `CROSS_FOLDER_LINK_VERIFICATION_REPORT_2026_04_25.md` | [B] | Dated cross-folder link scan; some path recommendations are stale and must be rechecked before repair. |
-| `TOOLS_AUDIT_REPORT.md` | [B/I] | Dated 09_TOOLS health audit; treat findings as queue input, not automatic edit authority. |
+
+**The folder currently holds no generated audit artifact — only the helper
+script above.** The `## What It Owns` list preceding this section is a standing
+mandate, not a present holding; run the script to produce a current artifact.
+
+**Corrected 2026-07-22.** This table previously named four surfaces as present.
+The three dated reports — `audit_output.md`,
+`CROSS_FOLDER_LINK_VERIFICATION_REPORT_2026_04_25.md`, and
+`TOOLS_AUDIT_REPORT.md` — were moved on 2026-07-20 and are preserved byte-intact
+in the
+[pure-boundary archive](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/08_AUDIT_ARTIFACTS/).
+Counted by testing each of the four backticked names against this folder:
+1 present, 3 absent.
 
 ## What It Must Not Own
 

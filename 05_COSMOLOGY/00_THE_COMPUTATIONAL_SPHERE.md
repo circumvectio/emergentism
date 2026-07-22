@@ -348,8 +348,8 @@ Always.
 
 ## See Also
 
-- [The Burrisphere](00_THE_BURRISPHERE.md) — the canonical L5 synthesis of this same S²: φ·ν=1, the nine latitudes L0..L∞, the equator L4, and the agent foundation
-- [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md) — the moral reading of the poles/equator: goodness is the bond φ×ν; evil is closure (η>0), sorted by coupling, never by pole
+- [The Burrisphere](00_THE_BURRISPHERE.md) — *forwarding stub since 2026-07-21; routing only, no semantic authority.* The synthesis body (φ·ν=1, the latitudes, the equator L4, the agent foundation) is archived at [`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_THE_BURRISPHERE.md`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_THE_BURRISPHERE.md) and is a reader projection, not an owner. Current owners named by the stub are the [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md) and the [Burri Rules](00_THE_BURRI_RULES.md). *Description corrected 2026-07-22.*
+- [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md) — separates the analytic chart `[A]` from the declared value commitment: "goodness is the bond" is an `[I]` metaphor for durable mutual option-capacity, not a theorem about every real dyad, and `etaObserved=0` is necessary but never sufficient for the Justice predicate. *Description corrected 2026-07-22: the predecessor reading — "goodness is the bond φ×ν; evil is closure (η>0)" — is the claim that file's Kintsugi repair retracted.*
 - [The Constitution on the Burrisphere](00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — a projection of the [Five-plus-One Constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md), which remains the current refusal owner
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian mythology read through S² geometry

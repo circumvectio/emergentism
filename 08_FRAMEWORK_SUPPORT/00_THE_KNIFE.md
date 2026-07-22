@@ -106,8 +106,16 @@ The wager is: accept O1, O2, O4, O5 and you get a system that:
 - Dissolves 25+ philosophical paradoxes (parsimony)
 - Generates testable empirical predictions (Protocol R, AMRITA, Φ-meter, Tyson/KO boundary)
 - Has honest kill criteria (if predictions fail, the wager is abandoned)
-- Has zero internal contradictions (formal system verified)
-- Is the minimal axiom set (O3 is redundant; A0 is a theorem, not an axiom)
+- Has no known internal contradiction at the tiers canon assigns `[S]`; the proof layer under it carried four hand-checkable false lemmas, repaired under [receipt 109](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md) (K2-countersigned 2026-07-12), and the Lean harness records refuted sub-claims (`09_TOOLS/03_SIMULATIONS/formal_reap/PROOF_LEDGER.md`: R0.3, R1.7, R3.2). **No completed formal verification exists.**
+- Is the minimal axiom set (O3 is redundant; A0 is a theorem, not an axiom) — noting that receipt 109 records this pairing itself as a defect: `WHY_THESE_AXIOMS:118` claims "cannot drop any axiom" while conceding O3 redundant.
+
+> **Corrected 2026-07-22.** The first bullet read "Has zero internal contradictions (formal
+> system verified)." That named a verification which does not exist and asserted a state the
+> formal layer contradicts. This lane's own tombstone
+> [`02_OPERATORS/04_DISSOLUTION_FORMAL_VERIFICATION.md`](02_OPERATORS/04_DISSOLUTION_FORMAL_VERIFICATION.md) — a tombstone, `SUPERSEDED`
+> — states the rule that was being broken: only successfully checked results in the current
+> artifacts may be reported as formal verification. The claim was not stale by neglect — this
+> document was edited after 2026-07-13 (the GFS retraction note below) and the bullet survived.
 
 The response to "why these axioms?" is: **compare fruits.** Build a competing system on different axioms. If your system dissolves more paradoxes, generates more testable predictions, and has honest kill criteria — the framework should be replaced by yours. The framework welcomes this. A7 demands it.
 
