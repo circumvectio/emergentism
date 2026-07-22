@@ -237,6 +237,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 156 | `156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` | 2026-07-22 | Independent verification of Receipt 155 from the concurrent main lineage |
 | 156 / 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | 2026-07-22 | Independent verification preserved under a letter suffix after a concurrent receipt-number collision |
 | 157 | `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` | 2026-07-22 | Dimension-first integration and local public release candidate |
+| 158 | `158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md` | 2026-07-22 | Main push, public Vercel artifact, external-review request, GP-03 preregistration request, and unresolved custom-domain DNS |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.

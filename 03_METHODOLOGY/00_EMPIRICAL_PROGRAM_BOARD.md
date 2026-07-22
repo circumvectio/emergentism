@@ -42,7 +42,7 @@ Never translate `formal-only` or `local-result` as “confirmed.”
 |---|---|---|---|---|---|
 | **GP-01** | relation/configuration adds intervention-sensitive discrimination beyond an element inventory | formal D2 constructions; macro-constraint toy harness is local only | **ready-to-freeze** | choose one real system, freeze element-only and relation-aware rivals, intervention, outcome, and held-out split | `mu_1` local evidence only |
 | **GP-02** | a distinct counterfactual-capacity variable adds value beyond rich D4 planning/control | future-model experiments touch the weak component | **component-contact** | define D5 variable independently; compare with model-based, model-free, memory, and search baselines | `mu_4` local evidence only |
-| **GP-03** | normalized product out-predicts rival AND/additive aggregators in at least one frozen domain | non-uniqueness and ranking counterexamples are formal | **ready-to-freeze** | freeze finite domain set, independent `Phi/V` measures, rivals, and held-out outcomes | W3/W4 only in the tested domain |
+| **GP-03** | normalized product out-predicts rival AND/additive aggregators in at least one frozen domain | non-uniqueness and ranking counterexamples are formal; [public preregistration request opened](https://github.com/circumvectio/emergentism/issues/3) | **ready-to-freeze** | accept a timestamped freeze of domain, independent `Phi/V` measures, rivals, exclusions, and held-out outcomes before data contact | W3/W4 only in the tested domain |
 | **GP-04** | foresight and usable means follow a measurable resource surface | physical information cost is a neighbor; no validated node budget | **ready-to-freeze** | compare no-tradeoff, additive, nonlinear, and state-dependent surfaces | W4 complementary-saturation sub-wager |
 | **GP-05** | exactly five candidate apertures capture independently discriminable freedoms | no crossing-specific empirical packet has fired | **formal-only** | run one seam at a time; no joint score before each row has novelty and recovery tests | one crossing at a time, then the census |
 | **GP-06** | the five-marker Egregoreotype composite predicts beyond carriers and incentives | trace-mediated coordination has external component contact | **component-contact** | carrier replacement plus trace removal/scrambling with costs recorded | W9 composite only |
@@ -102,6 +102,8 @@ genuinely change a claim before the grandest test that cannot.
 - A failed wager moves to the Record; its surviving lower-level science remains.
 - No public, product, venture, or governance surface supplies independent
   worldview evidence merely by using the vocabulary.
+- A public issue is a request and custody surface, not a preregistration,
+  outside review, run, result, replication, or tier upgrade.
 
 ## 6. One-sentence verdict
 
