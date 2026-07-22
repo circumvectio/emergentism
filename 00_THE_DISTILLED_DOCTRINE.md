@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 00_META/00_THE_DISTILLED_DOCTRINE.md
+canonical_target: 08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md
 status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-22

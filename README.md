@@ -69,6 +69,19 @@ tests. Consequential action uses a complete, scoped, contestable
 
 ## Repository map
 
+> **Reading the root directory.** Thirty-eight `.md` files sit at this root, and
+> **only eight are live**: `README.md`, `AGENTS.md`, `AGENT_README.md`,
+> `CLAUDE.md`, `ROSETTA.md` (a routing shim), `00_THE_KERNEL_INDEX.md`,
+> `00_THE_WELTANSCHAUUNG.md`, and `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`.
+> The other **thirty are forwarding stubs** — each holds a path, not a claim, and
+> each exists because 2–33 live documents still cite it. They cannot be moved or
+> deleted without breaking those citations, so they stay. Every stub declares
+> `type: forwarding-stub`; a stub's `canonical_target` always names a **live**
+> owner and never an archive, while preserved bytes are named by
+> `historical_target`. Verified 2026-07-22: all thirty resolve, none points at a
+> grave or at another stub.
+
+
 | Path | Role |
 |---|---|
 | `00_CONTROL/` | validation policies and control surfaces; never doctrine |

@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 00_HANDOFF/2026_07_19_final_outline/00_THE_FINAL_OUTLINE.md
+historical_target: 90_ARCHIVE/00_KERNEL_DISTILLATION_2026_07_19/00_THE_FINAL_OUTLINE_2026_07_19.md
 status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-22

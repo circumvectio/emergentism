@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
+historical_target: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
 status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; citations to this root path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-22

@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-canonical_target: 90_ARCHIVE/old_front_doors/00_WELTANSCHAUUNG_KERNEL_v0.1.md
+canonical_target: 06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
 status: "FORWARDING STUB — 2026-07-22 (TIDY-2026-07-22). K3: tombstoned, not erased; superseded by v0.2; citations to this root path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-22
