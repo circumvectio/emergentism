@@ -19,15 +19,27 @@ created: 2026-07-20
 sources:
   - 00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md (filed, 143 lines)
   - 00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md (filed, 168 lines)
-  - bg_7210baaf L2.4 claim-vs-evidence Reap+Seed+Door (text output, not yet filed)
-  - bg_74a3fb0e L3.4 citations 12+90+91 (text output, not yet filed)
-  - bg_6dd41834 L1.3 contradiction firewall 06_ONTOLOGY (text output, not yet filed)
-  - bg_7d38db3a L3.2 citations 00_META + 11_UPLINK (text output, not yet filed)
+  - bg_7210baaf L2.4 claim-vs-evidence Reap+Seed+Door (filed: `L2.4_CLAIM_VS_EVIDENCE_REAP_SEED_DOOR_2026_07_20.md`)
+  - bg_74a3fb0e L3.4 citations 12+90+91 (filed: `L3.4_CITATIONS_12_90_91_2026_07_20.md`)
+  - bg_6dd41834 L1.3 contradiction firewall 06_ONTOLOGY (filed: `L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md`)
+  - bg_7d38db3a L3.2 citations 00_META + 11_UPLINK (filed: `L3.2_CITATIONS_00_META_11_UPLINK_2026_07_20.md`)
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/147_POST_AUDIT_RECONCILIATION_2026_07_20.md
 ---
 
 # K2 Packet — Audit-Trio Handoff (2026-07-20)
+
+> **Docket corrected 2026-07-22 — every packet was already filed.** This
+> document said *"not yet filed"* twenty-one times, about thirteen distinct
+> caste packets, and named each only by its background task id. All thirteen
+> ids were checked against the working directory: **every one resolves to a
+> sibling file in `00_HANDOFF/` that carries that same task id in its own
+> text.** They were filed and the docket was never updated. Each of the
+> twenty-one lines now names the file instead of the task id, so a reader can
+> open the packet rather than hunt for a task that no longer exists. Nothing
+> was added, removed, or re-adjudicated — only the filing status was corrected
+> to match the directory. The `STAGED — K2 adjudication requested` status is
+> untouched: filing a packet is not signing it.
 
 ## 0 · TL;DR
 
@@ -110,10 +122,10 @@ The 8 background castes + verifier still in flight (per the rumination team) wil
 
 - L2 (full corpus): `00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
 - L6 (K3 archive): `00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
-- L2.4 (Reap+Seed+Door instance): task output `bg_7210baaf` (per-cite tables, A/B/C/D sections) — not yet filed to `00_HANDOFF/`
-- L3.4 (citations 12+90+91): task output `bg_74a3fb0e` (12,811 hrefs walked, 0 hard-broken) — not yet filed
-- L1.3 (contradiction firewall 06_ONTOLOGY): task output `bg_6dd41834` (HIGH W0 collision, HIGH R4/R10a, HIGH S² drift) — not yet filed
-- L3.2 (citations 00_META + 11_UPLINK): task output `bg_7d38db3a` (139–145 chain, 4 receipt collisions, 5 ACTIVE banners on DISPUTED) — not yet filed
+- L2.4 (Reap+Seed+Door instance): task output `bg_7210baaf` (per-cite tables, A/B/C/D sections) — filed as `L2.4_CLAIM_VS_EVIDENCE_REAP_SEED_DOOR_2026_07_20.md`
+- L3.4 (citations 12+90+91): task output `bg_74a3fb0e` (12,811 hrefs walked, 0 hard-broken) — filed as `L3.4_CITATIONS_12_90_91_2026_07_20.md`
+- L1.3 (contradiction firewall 06_ONTOLOGY): task output `bg_6dd41834` (HIGH W0 collision, HIGH R4/R10a, HIGH S² drift) — filed as `L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md`
+- L3.2 (citations 00_META + 11_UPLINK): task output `bg_7d38db3a` (139–145 chain, 4 receipt collisions, 5 ACTIVE banners on DISPUTED) — filed as `L3.2_CITATIONS_00_META_11_UPLINK_2026_07_20.md`
 - Parents: receipt 146 (founder ruling, execute), receipt 147 (post-audit reconciliation), receipt 148 (coherence, COHERENT), the audit-trio on signing-sitting surface
 - 8 background castes + verifier: still in flight; verdicts stage into the next sitting
 
@@ -181,22 +193,22 @@ The L7's 5 cold-reader failures on the public site (5+1 two-clicks-deep, /record
 **First wave (5 verdicts, 2026-07-20 evening):**
 - L2 corpus: `00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
 - L6 K3 archive: `00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
-- L2.4 Reap+Seed+Door: task output `bg_7210baaf` (not yet filed)
-- L3.4 citations 12+90+91: task output `bg_74a3fb0e` (not yet filed)
-- L1.3 06_ONTOLOGY firewall: task output `bg_6dd41834` (not yet filed)
-- L3.2 citations 00_META+11_UPLINK: task output `bg_7d38db3a` (not yet filed)
+- L2.4 Reap+Seed+Door: task output `bg_7210baaf` (filed: `L2.4_CLAIM_VS_EVIDENCE_REAP_SEED_DOOR_2026_07_20.md`)
+- L3.4 citations 12+90+91: task output `bg_74a3fb0e` (filed: `L3.4_CITATIONS_12_90_91_2026_07_20.md`)
+- L1.3 06_ONTOLOGY firewall: task output `bg_6dd41834` (filed: `L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md`)
+- L3.2 citations 00_META+11_UPLINK: task output `bg_7d38db3a` (filed: `L3.2_CITATIONS_00_META_11_UPLINK_2026_07_20.md`)
 
 **Second wave (10 verdicts, 2026-07-20 late / 2026-07-21 morning):**
-- L5 architect review: task output `bg_1d4199ca` (not yet filed)
-- L2.2 E1-10 + W0-12: task output `bg_85ea29cf` (not yet filed)
-- L1 corpus firewall: task output `bg_a3264c01` (not yet filed)
-- L2.3 5+1 + 22 dead: task output `bg_fea2b9e2` (not yet filed)
-- L1.2 shadow scan (7 insights): task output `bg_a1236f17` (not yet filed)
+- L5 architect review: task output `bg_1d4199ca` (filed: `L5_BRAHMANA_ARCHITECT_REVIEW_2026_07_20.md`)
+- L2.2 E1-10 + W0-12: task output `bg_85ea29cf` (filed: `L2.2_CLAIM_VS_EVIDENCE_E1-10_W0-12_2026_07_20.md`)
+- L1 corpus firewall: task output `bg_a3264c01` (filed: `L1_CORPUS_CONTRADICTION_FIREWALL_2026_07_20.md`)
+- L2.3 5+1 + 22 dead: task output `bg_fea2b9e2` (filed: `L2.3_CLAIM_VS_EVIDENCE_5+1_22_DEAD_2026_07_20.md`)
+- L1.2 shadow scan (7 insights): task output `bg_a1236f17` (filed: `L1.2_SHADOW_SCAN_7_INSIGHTS_2026_07_20.md`)
 - L3 tier-compliance: filed at `00_META/L3_AUDIT_REPORT_2026_07_20_CITATION_TIER_PASS.md` (248 lines, [B])
-- L6 K3 archive (second instance): task output `bg_84e688df` (not yet filed)
-- L7 constitutional witness: task output `bg_17999bb2` (not yet filed)
-- L1.4 11+12 firewall: task output `bg_10eb303c` (not yet filed)
-- L1.2 00_META firewall: task output `bg_6ffb1e40` (not yet filed)
+- L6 K3 archive (second instance): task output `bg_84e688df` (filed: `L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md`)
+- L7 constitutional witness: task output `bg_17999bb2` (filed: `L7_RSI_CONSTITUTIONAL_WITNESS_2026_07_20.md`)
+- L1.4 11+12 firewall: task output `bg_10eb303c` (filed: `L1.4_CONTRADICTION_FIREWALL_11_12_2026_07_20.md`)
+- L1.2 00_META firewall: task output `bg_6ffb1e40` (filed: `L1.2_CONTRADICTION_FIREWALL_00_META_2026_07_20.md`)
 
 **Filing the 13 unfiled verdicts to `00_HANDOFF/` is in the next Box-9 batch** (additive, no move, no rename, no archive, no tier promotion).
 
