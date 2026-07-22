@@ -105,6 +105,63 @@ The Justice envelope governs how studies treat participants and consequence
 bearers. It does not count as evidence that the Egregoreotype or integrated
 worldview is true.
 
+## 2A. Scaffold-first frontier-model assembly strategy
+
+Emergentism's development strategy is not to ask one author or one model to
+declare the completed picture. It is to build a stable, typed scaffold and let
+frontier AI models propose missing pieces **one bounded piece at a time**.
+
+The scaffold owns only:
+
+- registers, interfaces, and type distinctions;
+- source ownership and evidence tiers;
+- open sockets, rivals, discriminators, and kill criteria;
+- provenance, correction, and exit;
+- the rule that native sciences keep their own warrant.
+
+Frontier models may search, compare, formalize, translate, simulate, attack,
+and propose candidate connections. They do not supply empirical warrant merely
+by agreeing, sounding certain, or producing an elegant fit. Model consensus is
+a search signal, never replication. A model may assemble evidence; it may not
+manufacture its own evidence or promote its own candidate.
+
+Every proposed puzzle piece must arrive as a packet:
+
+```text
+nativeSourceAndDomain
+nativeDefinitions
+candidateSocket
+claimAndTier
+formalMap
+assumptions
+strongestRivals
+nonCircularDiscriminator
+killCriterion
+survivorIfKilled
+dataCodeAndCitationCustody
+independentReviewRoute
+```
+
+The assembly loop is sequential:
+
+1. recover the strongest native account;
+2. state it without Emergentist vocabulary;
+3. propose a typed placement in the scaffold;
+4. run formal, source, and category-error attacks;
+5. compare alternative placements and the no-placement rival;
+6. freeze one discriminator before outcome contact;
+7. test or simulate at the warranted evidence class;
+8. seek independent human and machine criticism;
+9. replicate where the claim is empirical;
+10. promote only the surviving local claim, or archive it visibly if killed.
+
+The picture is therefore allowed to emerge asymptotically. The scaffold is not
+proof that every socket has a real occupant, that the selected sockets exhaust
+reality, or that a final theory must result. If repeated pieces add no
+incremental prediction, compression, or consequence value beyond their native
+sciences, the honest endpoint is a useful worldview and research index—not a
+theory of everything.
+
 ## 3. Cheapest-honest execution order
 
 Work proceeds in this order unless a new enabling condition changes the cost:

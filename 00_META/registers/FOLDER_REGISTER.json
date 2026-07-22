@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3170,
+      "tracked_file_count": 3172,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -129,7 +129,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 59,
+      "tracked_file_count": 60,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 384,
+      "tracked_file_count": 385,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1195,7 +1195,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 164,
+      "tracked_file_count": 165,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
