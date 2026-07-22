@@ -33,7 +33,7 @@ Two lessons, both structural:
 
 ## 2. The inversion (the Kintsugi move)
 
-The corpus already refuses to hide its history (K3 archive-first, banners,
+The corpus already refuses to hide its history (provenance-first archives, banners,
 receipts). Kintsugi completes the refusal by **inverting the shame polarity**:
 
 **A repaired claim outranks an untested one.** A seam is not an apology — it is
