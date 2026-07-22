@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3141,
+  "entry_count": 3142,
   "entries": [
     {
       "path": ".gitattributes",
@@ -17595,7 +17595,24 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 2,
+      "inbound_references": 3,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/159A_CONCURRENT_PUBLIC_SITE_STAGING_RECONCILED_2026_07_22.md",
+      "sha256": "46cd1f1341d7fa048e15e071d61a4cc16550b54c978ea514c9f933a75ba21ead",
+      "bytes": 3018,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -17612,7 +17629,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
