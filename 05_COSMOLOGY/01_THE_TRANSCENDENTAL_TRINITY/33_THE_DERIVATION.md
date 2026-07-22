@@ -14,7 +14,7 @@ rosetta:
 **Status:** COMPATIBILITY POINTER · no independent doctrine
 
 This pointer formerly named
-[A Square Cannot Be Negative](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+[A Square Cannot Be Negative](../../01_TELEOLOGY/02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — now a tombstone
 as the active analytic owner. That is no longer accurate: as of 2026-07-21 that
 file is a Kintsugi tombstone whose own status reads "SUPERSEDED IN PLACE — not
 canonical authority", and it names

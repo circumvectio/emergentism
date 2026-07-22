@@ -176,7 +176,7 @@ mathematics.
 - [Dimensional Register Axioms](../../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md)
 - [μ-Limit Formula](10_EFR_MU_LIMIT_FORMULA.md)
 - [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md)
-- [Dimensional Architecture Clarification](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md)
+- [Dimensional Architecture Clarification](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md) — *forwarding stub; its own status reads "HISTORICAL FORWARDING STUB — not current authority". It routes to [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md) and [D3 Quantum-State Register](44_D3_QUANTUM_STATE_REGISTER.md).*
 - [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
 - [Emergent Axioms — current owner](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md); A1–A7 survive only as superseded genealogy
 

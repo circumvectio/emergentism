@@ -135,6 +135,15 @@ def is_dead(path):
     return False
 
 
+def _positions(hay, needle):
+    """every index at which needle occurs in hay"""
+    out, i = [], hay.find(needle)
+    while i != -1:
+        out.append(i)
+        i = hay.find(needle, i + 1)
+    return out
+
+
 def check(root):
     problems, scanned = [], 0
     for dirpath, dirnames, filenames in os.walk(root):
@@ -150,7 +159,8 @@ def check(root):
             if STUB_RE.search(head) or MACHINERY_RE.search(rel) or is_dead(p):
                 continue
             scanned += 1
-            for lineno, line in enumerate(body.splitlines(), 1):
+            lines = body.splitlines()
+            for lineno, line in enumerate(lines, 1):
                 for target in LINK_RE.findall(line):
                     if target.startswith("http") or "90_ARCHIVE" in target:
                         continue
@@ -159,6 +169,32 @@ def check(root):
                         continue
                     if DISCLOSED_RE.search(line):
                         continue                      # the citer already says so
+                    # A table of four rows all pointing at the same grave does
+                    # not want four identical footnotes. One route note above
+                    # the table is better writing, and the reader meets it
+                    # BEFORE any link. Accept it — but only when the note names
+                    # this same target, so a disclosure about one file can never
+                    # silently clear a different one.
+                    # Real route notes wrap: the filename lands on one line and
+                    # "SUPERSEDED" on the next. Requiring both on a single line
+                    # missed every hand-written block. Join the window and bind
+                    # them by PROXIMITY — a disclosure word within 240 chars of
+                    # the target's name — so a disclosure about one file still
+                    # cannot clear a different one further down the page.
+                    name = os.path.basename(target)
+                    # span the whole sentence: a disclosure can land either side of a
+# wrapped link ("This pointer formerly named [X]\n as the active
+# owner. That is no longer accurate: ...").
+                    # BACKWARD ONLY, deliberately. Widening the window forward
+                    # to catch a disclosure that lands after a wrapped link
+                    # made a note about one file clear the NEXT row pointing at
+                    # a different grave — proximity alone cannot tell which
+                    # target a nearby sentence is about. A missed finding is
+                    # cheap; a silently cleared one is the defect itself.
+                    window = "\n".join(lines[max(0, lineno - 16):lineno - 1])
+                    if any(DISCLOSED_RE.search(window, max(0, i - 240), i + 240)
+                           for i in _positions(window, name)):
+                        continue
                     status = ""
                     m = re.search(r'^(?:status|title):\s*"?([^"\n]{0,70})',
                                   read(tp, HEAD), re.M)
