@@ -18,6 +18,16 @@ rosetta:
 ---
 
 
+> **Register bridge (2026-07-22, per `46_THE_ETA_CONVERSION_MAP.md`).** The η
+> defined in this paper is the **ratio register** (`η_ratio`): break-even is
+> **1**, not 0. It is *not* the constitutional fence `η_move = 0` (refusal R1 /
+> DAC D6), whose zero names non-extraction, and not a study's `η_domain`. The
+> three registers convert only as licensed in the map — in particular the two
+> zeros do not translate ("do not compare the two thresholds as if they were
+> the same number," `40_THE_LOGARITHMIC_REALIGNMENT.md` §3). This banner closes
+> gap G7 (Final Rules §4c): this file previously presented the ratio as *the*
+> definition with no register marker.
+
 # THE EXTRACTION COEFFICIENT (η)
 
 ## Formal Definition of Good, Bad, and Evil (v3.0)

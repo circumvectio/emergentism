@@ -540,6 +540,17 @@ All eight streams feed the phi-split. All eight are gated by the Three Gates. No
 
 The canonical invariants that govern the financial system. No governance vote can override these:
 
+> **Splice note (2026-07-22, Final Rules migration act 5 — dated annotation, body unchanged).**
+> This table is a **splice of two rule families**: the η/K1–K4 rows are
+> constitutional/refusal material, while **rows K5–K9 are lifted verbatim from
+> the settlement checklist** (`THE_UNIFIED_ARCHITECTURE.md:72-76`) — they are
+> settlement rules, not constitutional invariants. The closing amendability
+> sentence ("K1-K4 immutable, K5-K9 adjustable") is contradicted by
+> `60-invariants-overview.md:106` (all nine unamendable) — an open founder gate
+> (FG-8, `01_EMERGENTISM/00_META/00_THE_FINAL_RULES_2026_07_22.md`). This file
+> is an archived snapshot; `13_FINANCIAL_RECONCILIATION.md` overrides it on
+> conflict per its own lines 24-25.
+
 | Code | Constraint | Economic Meaning |
 |------|-----------|-----------------|
 | **η = 0** | Zero extraction | No fee on access. Protocol layer charges exactly zero issuance, transfer, or redemption fees. Revenue only at application layer from demonstrated value. |

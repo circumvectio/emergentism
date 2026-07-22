@@ -177,7 +177,7 @@ repairs it — FG-4 rules whether it is excised or kept as declared poetry.
 |---|---|
 | η=0 (refusal prose) · *ou pleonexia* | R1 |
 | η=0 (DAC table) | D6 *(number FG-1)* |
-| "K0 = η=0" (`00_L6_LEGAL_SADHU.md:126`) | D6 — **live mislabel; that agent enforces "K0–K5" and silently excludes the real zero-extraction rule. One-line fix, high consequence.** |
+| "K0 = η=0" (`00_L6_LEGAL_SADHU.md:126`) | D6 — **correction (2026-07-22, execution pass): the census's "silently excludes zero-extraction" claim was FALSE — that card's K0–K5 is a *local Agentz metric list* whose own K0 *is* η=0 and *is* enforced. The real defect: a seventh K-namespace squatting on the letter, with η=0 wearing yet another number (FG-1 evidence). Fixed by renaming the card's list to plain names, provenance kept.** |
 | K2 (refusal) · *ou kratos* | R2 |
 | K2 (invariant) | D2 *(scope FG-2)* |
 | K2 (person / envelope / verb) | the founder as signatory / the staging process / the act of ratifying — **roles, not rules**; write them as words |
@@ -206,7 +206,7 @@ repairs it — FG-4 rules whether it is excised or kept as declared poetry.
 | FG-3 | The exit slogan | "leave with everything" retracted 2026-06-10 → pro-rata redeemable assets; still live in **14 files in 01_EMERGENTISM and 0 in 02_SKYZAI (both verified by grep 2026-07-22; an attack lens claimed ~124 live Skyzai files — refuted by direct count)**; the disambiguation authority itself ships it |
 | FG-4 | The K\* fusion | excise `A7 = K* = 0 = Planck`, or declare it poetry |
 | FG-5 | The 62/38 split | "derived" (public wiki) vs constitutional-no-hedge vs "chosen, not forced, `[I]`" (owning doc) — plus four incompatible destination pairs |
-| FG-6 | Interest routing | commons rule vs deployed treasury-transfer; the cited decision record does not exist on disk |
+| FG-6 | Interest routing | commons rule vs deployed treasury-transfer; the decision record is absent **at its own exact cited path** (`.../Mechanics/K5_DECISION_RECORD.md` — directory exists, file does not; verified 2026-07-22) |
 | FG-7 | Protocol source of truth | `81_…` (nine, Locked) vs `13_K…` (ten, Draft) on P3/P4/P5 |
 | FG-8 | Amendability | K5–K9 adjustable vs all-nine-unamendable vs three-items-freely-modifiable |
 | FG-9 | Is the DAC set closed? | "closed at ten" exists nowhere; an addition procedure exists |
@@ -218,17 +218,28 @@ repairs it — FG-4 rules whether it is excised or kept as declared poetry.
 
 ## 7 · Migration, in order (costs verified where stated)
 
-1. **Fix the one-line high-consequence mislabel** in `00_L6_LEGAL_SADHU.md`
-   (η=0 tagged K0; agent enforcement caps at K0–K5). Ungated.
-2. **Write the η conversion map** (η_move / η_ratio / η_domain) — the corpus's
-   own highest-priority notation repair, open since 2026-05-04. Ungated.
-3. **Add the lint** (N-4): reject bare K/L/A rule tokens in new prose. Ungated.
-4. **Header-note the two mislabelled protocol files** (`13_K_INVARIANTS.md`,
-   `invariant_monitor.ex` — and note only 4 of its 9 checks execute). Ungated.
-5. **Splice-note the economics §14 table** (rows 5–9 are settlement rules). Ungated.
-6. **Repoint dead canonical paths** (four cited-as-live addresses exist only
-   under `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/`; one compatibility
-   stub points at a file that does not exist). Ungated.
+1. **DONE 2026-07-22 — the Sadhu card renamed to plain names.** (And the
+   original claim corrected: the card never excluded zero-extraction — its
+   local K0 *was* η=0 and was enforced; the defect was a seventh namespace on
+   the letter K. See the alias-table row and receipt 158.)
+2. **DONE 2026-07-22** — `05_COSMOLOGY/03_FORMAL_SYSTEM/46_THE_ETA_CONVERSION_MAP.md`
+   (three registers, three lawful conversions, five non-conversion theorems),
+   plus the register-bridge banner on `12_EFR_EXTRACTION_COEFFICIENT.md` (gap G7 closed).
+3. **DONE 2026-07-22** — `09_TOOLS/01_SCRIPTS/lint_rule_tokens.py`; verified on
+   positive controls (the map, the constitution, /check/ — all clean) and a negative
+   control (3 planted violations caught, exit 1). Frontmatter L-levels exempted.
+4. **DONE (half-void) 2026-07-22** — `13_K_INVARIANTS.md` **does not exist anywhere**
+   (verified by find across both pillars; that census target is gone). The
+   `invariant_monitor.ex` note is in its moduledoc — and verified STRONGER than
+   the census: `verify_all/0` invokes 4 of 9 checks, but two (`check_k3`,
+   `check_k5`) return `:ok` unconditionally, so **only 2 of 9 invariants are
+   actually tested** (fixed supply, liquidation bound).
+5. **DONE 2026-07-22** — dated splice banner above the archived table; body unchanged.
+6. **DONE 2026-07-22** — four K3 forwarding stubs created (`11_UPLINK/00_CORE/`,
+   `11_UPLINK/10_RECONCILIATION/`, `05_COSMOLOGY/00_WHOLE/`,
+   `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`); the last also heals
+   the `91_COMPATIBILITY` stub whose mapped target was that address. The archive
+   stays provenance, not a competing owner.
 7. **Slogan cleanup (FG-3), public pages and campaign copy** — gated on the
    FG-3 ruling; scope is exactly the 14 verified files in 01_EMERGENTISM
    (02_SKYZAI is clean — 0 live occurrences, verified).
