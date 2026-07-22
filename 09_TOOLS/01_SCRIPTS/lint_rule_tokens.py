@@ -43,7 +43,7 @@ EXEMPT_PATH = re.compile(r"(90_ARCHIVE|91_COMPATIBILITY|\.codex-worktrees|node_m
 EXEMPT_LINE = re.compile(
     r"(verbatim|alias|legacy|was local|historical|retired|"
     r"formerly|old name|provenance|tombstone|superseded|naming law|"
-    r"naming law|register tag|FG-\d|receipt \d|№\d)",
+    r"naming law|register tag|FG-\d|receipt \d|№\d|Rosetta|caste|Directorate)",
     re.IGNORECASE,
 )
 
@@ -51,7 +51,7 @@ RULES = [
     # (name, pattern, advice)
     ("bare-K", re.compile(r"(?<!\[)(?<![-\w])K(?:10|[0-9])(?![-\w\]])"),
      "bare K-number — use the plain name or a register tag ([DAC-K]n); see the alias index"),
-    ("bare-L", re.compile(r"(?<!\[)(?<![-\w])L[0-9](?![-\w\]])"),
+    ("bare-L", re.compile(r"(?<!\[)(?<![-\w])L[0-9](?![-\w\]])(?!\s+(?:Sensor|Operations|Intelligence|Treasury|Chief|Legal|Rishi|Sadhu|Ṛṣi|Caṇḍāla|Śūdra|Vaiśya|Kṣatriya|Brāhmaṇa)\b)"),
      "bare L-number — protocol invariants are P0–P9 plain-named; L-levels of the Rosetta are exempt only in Rosetta context (add context or tag)"),
     ("bare-A", re.compile(r"(?<!\[)(?<![-\w])A[1-7](?![-\w\]])"),
      "bare A-number — 'no infallibility' (R5) or [Axiom-A]n; say which"),
