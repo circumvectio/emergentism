@@ -52,6 +52,7 @@ PROVENANCE_EXCEPTIONS = {
     Path("08_FRAMEWORK_SUPPORT/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK_MOVED.md"),
     Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/2026_06_05_FILENAME_REPAIR_RECEIPT.md"),
     Path("09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"),
+    Path("09_TOOLS/01_SCRIPTS/lint_rule_tokens.py"),
     Path("09_TOOLS/02_COMPILERS/test_dimension_first_canon.py"),
 }
 

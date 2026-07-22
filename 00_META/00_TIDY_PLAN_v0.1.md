@@ -7,20 +7,20 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S] architectural plan, follows 00_SUBFOLDER_ORGANIZATION_STANDARD.md"
 title: "01_EMERGENTISM Tidy Plan v0.1"
-status: "EXECUTED — K2-SIGNED 2026-07-22, receipt at 00_HANDOFF/2026_07_22_tidy/00_TIDY_RECEIPT.md"
+status: "EXECUTED — OWNER-APPROVED 2026-07-22, receipt at 00_HANDOFF/2026_07_22_tidy/00_TIDY_RECEIPT.md"
 date: 2026-07-22
 owner: Mavis (L5 Brāhmaṇa, dispatch via Rosetta A-layer)
 evidence_tier: "[S] routing plan; per-claim tiers retained by their owners"
 canonical_path: 01_EMERGENTISM/00_META/00_TIDY_PLAN_v0.1.md
 supersedes: nothing
-k2_sign: "TIDY-2026-07-22 — K2 signs root tidy of 01_EMERGENTISM/, K3 move + tombstone envelope. Tier: [D] STAGED → [A] K2-SIGNED 2026-07-22 (Yves)."
+owner_approval: "TIDY-2026-07-22 — Yves approved the root tidy of 01_EMERGENTISM/ and its archive-first move + tombstone envelope on 2026-07-22."
 ---
 
 # 01_EMERGENTISM Tidy Plan v0.1
 
 **Date:** 2026-07-22
 **Author:** Mavis (L5 Brāhmaṇa coordinator) — cycle orchestrated via Rosetta A-layer
-**Status:** STAGED — K2 (Yves) signature required before any move
+**Status:** EXECUTED — corpus-owner approval recorded 2026-07-22
 **Method:** apply `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` (§1–§10) where the root surface has drifted
 **Reversibility:** K3 — every move is "move + tombstone", no content erased
 
@@ -38,7 +38,7 @@ k2_sign: "TIDY-2026-07-22 — K2 signs root tidy of 01_EMERGENTISM/, K3 move + t
 | **L6 Sādhu** | flagged three things to surface as dissent (see §6) |
 | **L7 Ṛṣi** | reframed: this is not a "clean-up" — it is **applying** the standard where the root drifted, after a high-velocity 2026-07-19 → 2026-07-22 cycle wave |
 
-**The cycle:** IS (root state, §1) → COULD (target per standard, §2) → SHOULD (move list, §3) → K2 sign → EXECUTE → RECEIPT → REVIEW
+**The cycle:** IS (root state, §1) → COULD (target per standard, §2) → SHOULD (move list, §3) → owner approval → EXECUTE → RECEIPT → REVIEW
 
 ---
 
@@ -77,7 +77,7 @@ k2_sign: "TIDY-2026-07-22 — K2 signs root tidy of 01_EMERGENTISM/, K3 move + t
 |---|---|---|---|
 | `00_CONTROL/` | 6 | agent control, github map, public-site boundary, source manifest | ✓ correct |
 | `00_META/` | 24 | governance spine (standard, settled canon, completion register, K-namespace, kintsugi, translations, etc.) | ✓ correct — this is where governance lives |
-| `00_HANDOFF/` | 32 | session/cycle audit surface (L1–L7 worker reports from 2026-07-20 wave, K2 packets) | ✓ correct, this is the active handoff spine |
+| `00_HANDOFF/` | 32 | session/cycle audit surface (L1–L7 worker reports, decision packets, and receipts) | ✓ correct, this is the active handoff spine |
 
 ### 1.4 Archive + compat
 
@@ -116,7 +116,7 @@ Every pillar must carry a `00_THE_*.md` Door with explicit `active` / `candidate
 
 ---
 
-## 3 · SHOULD — staged move list (K2 sign required)
+## 3 · SHOULD — staged move list (owner approval required)
 
 ### Move Group A — Dated cycle artifacts → `00_HANDOFF/2026_07_19_*`/
 
@@ -160,7 +160,7 @@ Three pillars are missing the standard's required Door:
 | **11_UPLINK** | Either (a) rename `00_INDEX` → `00_THE_UPLINK.md` with explicit `status: active` and routing law, or (b) keep `00_INDEX` and add a thin `00_THE_UPLINK.md` Door that delegates navigation to the index |
 | **12_PUBLIC_SITE** | Draft `00_THE_PUBLIC_SITE.md` Door naming this as the **public projection surface** (not a doctrine pillar), per KSC-13's pure-Emergentism boundary. Resolve the "1, 2, 3, 4, 5, 6" subdirectory naming (rename to `01_*`–`06_*` or document as chapter numbers) |
 
-**K2 question (held for sign):** for 12_PUBLIC_SITE, the user's intent matters. Options:
+**Owner question (held for decision):** for 12_PUBLIC_SITE, the user's intent matters. Options:
 - (a) Rename numbered dirs `1–6` to `01_*`–`06_*` for consistency with the rest of the corpus
 - (b) Keep as chapter numbers with a Door that documents the public-projection semantics
 - (c) Leave the public-site as-is — it is a separate surface with its own conventions
@@ -169,24 +169,24 @@ Three pillars are missing the standard's required Door:
 
 Current state: K-5, K-6, K-7 have root forwarding stubs; K-1, K-2, K-3, K-4 do not. The K-1 canonical (`05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`) and K-2/K-3/K-4 canonicals (`06_ONTOLOGY/02_…` / `03_…` / `04_…`) are reachable via the Kernel Index.
 
-**Options for K2:**
+**Options for the owner:**
 - (a) Leave as-is (K-1/2/3/4 are reachable via the Index; K-5/6/7 have root stubs because the canonicals are 1-2 hops deeper)
 - (b) Add forwarding stubs for K-1, K-2, K-3, K-4 at root for full K-1 → K-7 consistency
 - (c) Remove the K-5/6/7 stubs (they're redundant if the Index routes correctly)
 
 ---
 
-## 4 · K2 envelope (staged, not signed)
+## 4 · Owner-approval envelope (historical staging record)
 
 | Field | Value |
 |---|---|
-| **Authority** | K2 (Yves R. Burri) — signs before any move executes |
+| **Authority** | Yves R. Burri as corpus owner — approves before any move executes |
 | **Scope** | root-level file moves only; per-pillar-internal moves deferred to per-pillar tiddies |
 | **Reversibility** | K3 — every move is `mv` + forwarding-stub pair; no content erased |
 | **Expiry** | none (one-shot tidy, not a recurring authorization) |
 | **Receipts** | one dated receipt per Move Group (A, B, C, D, E) at `00_HANDOFF/2026_07_22_tidy/` |
 | **L6 dissent preserved** | yes, in D5 envelope (see §6) |
-| **K2 sign line** | `☐ I sign TIDY-2026-07-22 — root tidy of 01_EMERGENTISM/, K3 move + tombstone envelope. Tier: [D] STAGED → [A] K2-SIGNED YYYY-MM-DD.` |
+| **Owner approval line** | `☐ I approve TIDY-2026-07-22 — root tidy of 01_EMERGENTISM/, archive-first move + tombstone envelope. YYYY-MM-DD.` |
 
 ---
 
@@ -195,17 +195,17 @@ Current state: K-5, K-6, K-7 have root forwarding stubs; K-1, K-2, K-3, K-4 do n
 | Item | Tier | Note |
 |---|---|---|
 | Plan itself | [S] | architectural, follow the existing standard |
-| Move list | [I] | interpretive, subject to K2 sign |
+| Move list | [I] | interpretive, subject to owner approval |
 | K3 compat stubs at root | [S] | constitutional (K3 = archive-first) |
 | Per-pillar Door requirement | [S] | per standard §10.5 |
-| 09_TOOLS / 11_UPLINK / 12_PUBLIC_SITE Doors (drafts) | [D] | STAGED — K2 sign converts to [B] on commit |
-| 12_PUBLIC_SITE naming question | [I] | interpretive, 3 options held for K2 |
+| 09_TOOLS / 11_UPLINK / 12_PUBLIC_SITE Doors (drafts) | [D] | STAGED — owner approval permits the bounded commit |
+| 12_PUBLIC_SITE naming question | [I] | interpretive, 3 options held for the owner |
 
 ---
 
 ## 6 · Mandatory dissent (L6 Sādhu turn)
 
-Before K2 signs, the L6 surfaces three things:
+Before the owner approves, the L6 review surfaces three things:
 
 1. **"Are the dated cycle artifacts *really* not at root for a reason?"** The standard's §4 says "do not move a file because it feels nearby — move it only when its authority owner changes." The 2026-07-19 cycle artifacts have a *cycle* owner (`2026_07_19`), not a *doctrine* owner. They belong in `00_HANDOFF/2026_07_19_*`/, not at root. The move is *with* the standard, not against it.
 
@@ -219,7 +219,7 @@ The L6 verdict: **UPHOLD** the move list as staged, with the 3 dissents above pr
 
 ## 7 · The single sentence
 
-The current `01_EMERGENTISM/` root has 44 files; ~25 are intentional K3 forwarding stubs (keep), ~7 are 2026-07-19 cycle artifacts (move to `00_HANDOFF/2026_07_19_*`/), ~6 are source-owner misplacements (move to `00_META/` or the owning pillar), and 3 pillars (09_TOOLS, 11_UPLINK, 12_PUBLIC_SITE) are missing the standard's required `00_THE_*.md` Door; the standard already exists at `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` and the move is **applying** the standard where the root has drifted, not inventing a new structure, with every move as a K3 (move + tombstone) reversible pair and K2 sign required before execution.
+The current `01_EMERGENTISM/` root has 44 files; ~25 are intentional archive-first forwarding stubs (keep), ~7 are 2026-07-19 cycle artifacts (move to `00_HANDOFF/2026_07_19_*`/), ~6 are source-owner misplacements (move to `00_META/` or the owning pillar), and 3 pillars (09_TOOLS, 11_UPLINK, 12_PUBLIC_SITE) are missing the standard's required `00_THE_*.md` Door; the standard already exists at `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` and the move is **applying** the standard where the root has drifted, not inventing a new structure, with every move as a reversible move + tombstone pair and owner approval required before execution.
 
 ---
 

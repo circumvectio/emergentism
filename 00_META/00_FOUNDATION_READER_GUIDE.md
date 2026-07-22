@@ -12,4 +12,4 @@ owner: 01_EMERGENTISM
 date: 2026-07-20
 ---
 
-Forwarding stub. This former front door was tombstoned to [90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md](90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md). The active door is [00_THE_WELTANSCHAUUNG.md](00_THE_WELTANSCHAUUNG.md); the index is [00_THE_KERNEL_INDEX.md](00_THE_KERNEL_INDEX.md).
+Forwarding stub. This former front door was tombstoned to [90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md](../90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md). The active door is [00_THE_WELTANSCHAUUNG.md](../00_THE_WELTANSCHAUUNG.md); the index is [00_THE_KERNEL_INDEX.md](../00_THE_KERNEL_INDEX.md).

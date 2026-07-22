@@ -30,7 +30,7 @@ supersedes: nothing — supplements the existing pillar README
 ## Authority rule
 
 - Uplink is **the record, not the source**. A claim that wants to live here must name its tier and its source owner; if the source owner contradicts, the source owner wins.
-- `60_SESSION_PACKETS/` carries the dated cycle artifacts (L1–L7 worker reports, K2 packets, the 2026-07-20 audit wave). New cycle work goes here, not at the corpus root.
+- `60_SESSION_PACKETS/` carries dated cycle artifacts (worker reports, decision packets, and audit waves). New cycle work goes here, not at the corpus root.
 - `90_ARCHIVE/` (local) is the K3 cold memory for this lane; cross-lane tombstones go to the root `90_ARCHIVE/`.
 
 ## Routing law

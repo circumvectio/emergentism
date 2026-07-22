@@ -9,13 +9,13 @@ rosetta:
   canonical_phrase: "46 — The η Conversion Map (three registers, one letter)"
 title: "The η Conversion Map — what converts between the three extraction registers, and what provably does not"
 date: 2026-07-22
-status: "[D] STAGED — closes the notation gap rated highest-priority repair 2026-05-04; per Final Rules migration act 2"
+status: "[D] STAGED — closes the notation gap rated highest-priority repair 2026-05-04; recorded by Receipt 158"
 depends_on:
   - 40_THE_LOGARITHMIC_REALIGNMENT.md
   - 30_OPERATIONAL_DEFINITIONS.md
   - 00_KSTAR_DISAMBIGUATION.md
   - 12_EFR_EXTRACTION_COEFFICIENT.md
-  - ../../00_META/00_THE_FINAL_RULES_2026_07_22.md
+  - ../../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
 ---
 
 # THE η CONVERSION MAP
@@ -40,7 +40,7 @@ non-extraction, while `η_move > 0` names extraction or closure."*
 
 - **Type:** a binary/ordinal fence on an *action or standing arrangement*.
 - **Zero means:** the fence holds — no sustained extraction.
-- **This is refusal R1 / DAC invariant D6.** It is a *rule*, not a measurement.
+- **This is the R1 non-extraction rule.** It is a *rule*, not a measurement.
 - Tier: `[S]` as constitutional structure; the vow itself `[I]`.
 
 ### 1b · `η_ratio` — the log-accounting diagnostic (measurement register)
@@ -159,10 +159,10 @@ A marketplace charges a 2% fee on transactions.
 
 ## 5 · What this map does not do
 
-It does not decide FG-1 (which *number* the zero-extraction rule wears in the
-DAC set), does not touch the retired `K*`, and does not upgrade any study. It
+It does not decide which application-specific number a zero-extraction rule
+may wear, does not touch retired ambiguous aliases, and does not upgrade any study. It
 is a translation table with refusals — the conversions in §2 are the only ones
 licensed, and §3 is the part to cite when someone equates the zeros.
 
-*Staged 2026-07-22 under Final Rules migration act 2. Every quoted source
+*Staged 2026-07-22 and recorded by Receipt 158. Every quoted source
 opened and verified this date.*

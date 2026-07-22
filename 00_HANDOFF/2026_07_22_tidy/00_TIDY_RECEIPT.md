@@ -5,12 +5,12 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Executive"
   regime: "Kṣatriya"
-  register: "[S] K3 receipt — K2-SIGNED 2026-07-22"
+  register: "[S] archive-first receipt — OWNER-APPROVED 2026-07-22"
 title: "TIDY-2026-07-22 Receipt — root tidy of 01_EMERGENTISM/"
-status: "EXECUTED — K2-SIGNED 2026-07-22; K3 move + tombstone envelope complete"
+status: "EXECUTED — OWNER-APPROVED 2026-07-22; archive-first move + tombstone envelope complete"
 date: 2026-07-22
 owner: Mavis (L5 Brāhmaṇa, dispatch via Rosetta A-layer)
-k2_sign: "TIDY-2026-07-22 — K2 signs root tidy of 01_EMERGENTISM/, K3 move + tombstone envelope. Tier: [D] STAGED → [A] K2-SIGNED 2026-07-22 (Yves)."
+owner_approval: "TIDY-2026-07-22 — Yves approved the root tidy of 01_EMERGENTISM/ and its archive-first move + tombstone envelope on 2026-07-22."
 evidence_tier: "[S] K3 archive-first receipt; per-claim tiers retained by their owners"
 supersedes: nothing
 ---
@@ -18,7 +18,7 @@ supersedes: nothing
 # TIDY-2026-07-22 — Root Tidy Receipt
 
 **Plan:** `00_META/00_TIDY_PLAN_v0.1.md`
-**K2 envelope:** TIDY-2026-07-22
+**Owner-approval envelope:** TIDY-2026-07-22
 **Method:** apply `00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md` (§1–§10) where the root surface has drifted
 **Discipline:** K3 (move + tombstone, never erase); every move paired with a forwarding stub at the original path
 
@@ -64,7 +64,7 @@ The four `00_OPEN_CANON_FOUNDATION_*.md` files (charter v0.1, draft, counsel cov
 
 ### Group E — K-series root stub consistency
 
-K-2 ruling (K2 sign 2026-07-22): **option (a) — leave asymmetric.** K-5/6/7 have root forwarding stubs because their canonicals are 1–2 hops deeper; K-1/2/3/4 are reachable via the WELTANSCHAUUNG and Kernel Index. Asymmetry is intentional and consistent with standard §6.
+Owner ruling (2026-07-22): **option (a) — leave asymmetric.** K-5/6/7 have root forwarding stubs because their canonicals are 1–2 hops deeper; K-1/2/3/4 are reachable via the WELTANSCHAUUNG and Kernel Index. Asymmetry is intentional and consistent with standard §6.
 
 ---
 
@@ -81,7 +81,7 @@ K-2 ruling (K2 sign 2026-07-22): **option (a) — leave asymmetric.** K-5/6/7 ha
 
 | Item | Before | After | Note |
 |---|---|---|---|
-| `00_META/00_TIDY_PLAN_v0.1.md` | [D] STAGED | [A] K2-SIGNED 2026-07-22 | K2 signs TIDY-2026-07-22 |
+| `00_META/00_TIDY_PLAN_v0.1.md` | [D] STAGED | owner-approved 2026-07-22 | Yves approved TIDY-2026-07-22 as corpus owner |
 | `00_HANDOFF/2026_07_22_tidy/00_TIDY_RECEIPT.md` | — | [S] K3 receipt | this file |
 | 14 forwarding stubs at root | — | [S] K3 compat | per standard §6 |
 | 3 new pillar Doors | — | [D]→[B] on commit | per standard §10.5 |
@@ -108,6 +108,15 @@ The 405 lines of content (294 + 111) were recovered from `git show HEAD:<path>` 
 
 Dissent preserved in D5: a future tidy should explicitly detect stub-vs-content before any `mv`.
 
+## Authority correction (2026-07-22)
+
+The first committed version mislabeled ordinary repository approval with a
+private financial-signature term. That term governs money and contracts for
+private individuals; it is not an AI-work, editorial, or repository authority
+inside Emergentism. This receipt and its plan now say **owner approval**. The
+original wording remains recoverable in Git history; it has no current
+authority.
+
 ## Cleanup note (out-of-scope leftover — 5 empty dirs pending)
 
 During execution, the `mkdir` for 6 target directories ran before the `cd` was applied (cwd didn't carry over between bash calls); 6 empty directories were created at the Magnum Opus root `/Users/Yves/Documents/00_HANDOFF/2026_07_19_*` and `…/2026_07_22_tidy/`. They were then re-created at the correct location (`/Users/Yves/Documents/01_EMERGENTISM/00_HANDOFF/2026_07_19_*/` and `…/2026_07_22_tidy/`), and the moves used the correct targets.
@@ -118,6 +127,28 @@ During execution, the `mkdir` for 6 target directories ran before the `cd` was a
 - `mavis-trash` and `trash` both hung on subsequent calls in this session
 
 **Recommended follow-up:** a single `rmdir` (or `mavis-trash` with patience) on each of the 5 remaining empty dirs. They contain no content; cleanup is a tidy-side effect, not a content concern.
+
+**Follow-up completed 2026-07-22:** all five wrongly placed, verified-empty
+directories were removed with `rmdir`. No content existed at those paths.
+
+## Physical working-copy cleanup (2026-07-22)
+
+After confirming that no Lean, Node, Next, or Vercel build process was using
+the repository paths, the tidy removed only ignored and reconstructible local
+outputs:
+
+- the Lean `.lake/` build and dependency cache (about 7.7 GB; reconstructible
+  from `lake-manifest.json` and `lean-toolchain`),
+- `book-pwa/node_modules/` and `.next/` (about 1.0 GB; reconstructible from
+  `package.json` and `package-lock.json`),
+- Vercel's generated `.vercel/output/` while preserving `project.json`, the
+  local environment file, and linkage metadata,
+- Python bytecode, test caches, Ruff caches, Finder metadata, and obsolete
+  empty local directories.
+
+The working copy fell from roughly 8.9 GB to 145 MB. This was filesystem
+hygiene only: no source, archive, lockfile, credential, project linkage,
+doctrine, deployment, or remote state was deleted or changed.
 
 ---
 

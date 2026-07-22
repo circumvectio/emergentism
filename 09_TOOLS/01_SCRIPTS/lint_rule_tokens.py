@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""lint_rule_tokens.py — the naming-law lint (Final Rules N-4, 2026-07-22).
+"""lint_rule_tokens.py — the plain-language naming-law lint (2026-07-22).
 
 Rejects BARE letter-number rule tokens in new or changed prose. The letter K
-alone carries six namespaces in this corpus (K2 ≈ 24 senses); the Final Rules
-(00_META/00_THE_FINAL_RULES_2026_07_22.md) made plain-language names canonical
+alone carried several namespaces in the historical corpus; the active
+00_META/00_PLAIN_LANGUAGE_NAMING_LAW.md makes plain-language names canonical
 and demoted letters to a read-only alias index. A voluntary convention already
 failed once (K2_PRISM_BOUNDARY_2026_05_16.md:160) — hence a check, not a hope.
 
@@ -42,7 +42,7 @@ EXEMPT_PATH = re.compile(r"(90_ARCHIVE|91_COMPATIBILITY|\.codex-worktrees|node_m
 # Lines that are quoting, aliasing, or explicitly historical.
 EXEMPT_LINE = re.compile(
     r"(verbatim|alias|legacy|was local|historical|retired|"
-    r"formerly|old name|provenance|tombstone|superseded|Final Rules|"
+    r"formerly|old name|provenance|tombstone|superseded|naming law|"
     r"naming law|register tag|FG-\d|receipt \d|№\d)",
     re.IGNORECASE,
 )
@@ -132,7 +132,7 @@ def main(argv):
     for path, ln, kind, msg in all_findings:
         print(f"{path}:{ln}: [{kind}] {msg}")
     print(f"\nlint_rule_tokens: {len(all_findings)} violation(s) in {len(paths)} file(s)")
-    print("Plain names are canonical (Final Rules N-1); letters live in the alias index only.")
+    print("Plain names are canonical; ambiguous aliases live in provenance only.")
     return 1
 
 
