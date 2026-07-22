@@ -15,6 +15,23 @@ ROOT = SITE.parent
 MANIFEST_PATH = SITE / "public_semantic_parity.json"
 EXPECTED_SEQUENCE = ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"]
 FORBIDDEN = {
+    # --- added 2026-07-22 after a Rosetta caste sweep found the sharpest tier
+    # violation on the site sitting INSIDE the scanned bytes while this gate
+    # reported PASS. plainly/index.html asserted the product form as settled and
+    # derived the extraction ethic from it — CC-CORE-1, which the K-5 owner
+    # forbids ("selected [I/S], not forced by the reciprocal chart"). The gate
+    # could not see it because it had no pattern for this class.
+    "product uniqueness asserted as settled": re.compile(
+        r"they\s+multiply(?![^.]*(?:unproven|not\s+earned|selected|wager))"
+        r"|because\s+they\s+multiply"
+        r"|must\s+multiply(?![^.]*(?:unproven|turned\s+out|downgrad))", re.I),
+    "ethic derived from arithmetic": re.compile(
+        r"what\s+the\s+multiplication\s+says"
+        r"|(?:ethic|ought|morality)\s+(?:falls?\s+out|follows?)\s+(?:from\s+)?"
+        r"(?:as\s+)?(?:the\s+)?(?:arithmetic|multiplication|geometry|maths?|math)"
+        r"|(?:arithmetic|multiplication|the\s+sphere)\s+prov(?:es|ed)\s+"
+        r"(?:the\s+)?(?:good|ethic|justice)", re.I),
+
     "literal D6 identity": re.compile(r"D6\s*(?:≡|=)\s*D0"),
     "extra mu crossing": re.compile(r"μ[56]|mu[56]", re.I),
     "invalid scalar sampling": re.compile(r"Sample\s*\[\s*∫[^\]]*\|ψ\|²"),
@@ -69,6 +86,12 @@ def main() -> int:
             if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
             scan_text = text
+            # Tier-claim patterns must survive inline markup: the site writes
+            # "They <b>multiply</b>", which no raw-text regex can cross. Strip
+            # tags for these two only, leaving the tuned legacy patterns alone.
+            if name in ("product uniqueness asserted as settled",
+                        "ethic derived from arithmetic"):
+                scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
             if pattern.search(scan_text):
