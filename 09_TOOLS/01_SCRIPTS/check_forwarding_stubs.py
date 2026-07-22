@@ -31,7 +31,13 @@ import re
 import sys
 
 STUB_RE = re.compile(
-    r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
+    # SINGULAR only. A self-declaration is "forwarding stub"; a receipt
+    # describing its own work says "20 files, each leaving a forwarding
+    # stubs" / "Compatibility stubs are not clutter" — plural, about
+    # stubs in general, not about itself. Two 2026-07-22 false positives
+    # (a 26-line execution receipt and a 237-line packet) turned on this.
+    r"FORWARDING STUB(?!S)|Compatibility stub(?!s)|forwarding-stub(?!s)|"
+    r"HISTORICAL FORWARDING", re.I)
 LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+)[^)]*\)")
 TARGET_RE = re.compile(
     r"^(canonical_target|historical_target|archive_target):\s*(\S+)\s*$", re.M)

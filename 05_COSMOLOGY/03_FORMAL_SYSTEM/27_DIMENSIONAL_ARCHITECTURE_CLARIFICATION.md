@@ -3,7 +3,7 @@ title: "Dimensional Architecture Clarification — superseded integration stub"
 status: "HISTORICAL FORWARDING STUB — not current authority"
 date: 2026-07-21
 evidence_tier: "[B] provenance only"
-archive_target: ../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION_LEGACY_2026_07_21.md
+historical_target: ../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION_LEGACY_2026_07_21.md
 ---
 
 # Dimensional Architecture Clarification — superseded

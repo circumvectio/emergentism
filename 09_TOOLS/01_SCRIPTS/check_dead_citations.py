@@ -70,7 +70,13 @@ LIVE_MARK_RE = re.compile(r"\blive owner\b|\bformer\b|KINTSUGI SUCCESSOR", re.I)
 DISCLAIMS_RE = re.compile(
     r"no current semantic authority|\bnot current\b|not canonical authority", re.I)
 STUB_RE = re.compile(
-    r"FORWARDING STUB|Compatibility stub|forwarding-stub|HISTORICAL FORWARDING", re.I)
+    # SINGULAR only. A self-declaration is "forwarding stub"; a receipt
+    # describing its own work says "20 files, each leaving a forwarding
+    # stubs" / "Compatibility stubs are not clutter" — plural, about
+    # stubs in general, not about itself. Two 2026-07-22 false positives
+    # (a 26-line execution receipt and a 237-line packet) turned on this.
+    r"FORWARDING STUB(?!S)|Compatibility stub(?!s)|forwarding-stub(?!s)|"
+    r"HISTORICAL FORWARDING", re.I)
 MACHINERY_RE = re.compile(r"AUDIT|RECEIPT|TIDY_PLAN|CENSUS|_LEDGER|HANDOFF|CITATION", re.I)
 SKIP_DIRS = {"90_ARCHIVE", "node_modules", ".git", ".lake",
              ".codex-worktrees", "book-pwa", ".vercel", "__pycache__"}
