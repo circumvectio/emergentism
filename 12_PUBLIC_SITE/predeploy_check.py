@@ -138,8 +138,8 @@ def check_orphans():
     print("\n[3] Orphan page check")
     html_files = get_public_html_files()
     html_set = {os.path.normpath(os.path.join(BASE_DIR, f)) for f in html_files}
-    # Crawl root = the site's actual front door (vercel.json redirects / -> /compass/)
-    entry = os.path.normpath(os.path.join(BASE_DIR, "compass", "index.html"))
+    # Crawl root = the site's actual front door.
+    entry = os.path.normpath(os.path.join(BASE_DIR, "index.html"))
     reachable = set()
     queue = [entry] if os.path.exists(entry) else []
     while queue:
@@ -162,7 +162,6 @@ def check_orphans():
             if target in html_set and target not in reachable:
                 queue.append(target)
     ignored = {
-        os.path.normpath(os.path.join(BASE_DIR, "index.html")),
         # PWA offline fallback: served by the service worker, unlinked by design
         os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
         # Custom 404: served by Vercel on miss, unlinked by design
@@ -176,9 +175,9 @@ def check_orphans():
     ]
     if orphans:
         for o in orphans:
-            error(f"Not reachable from /compass/: {o}")
+            error(f"Not reachable from /: {o}")
     else:
-        ok("All public pages reachable from /compass/")
+        ok("All public pages reachable from /")
     return len(orphans) == 0
 
 def check_required_assets():
