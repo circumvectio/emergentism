@@ -126,6 +126,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | Dimension-first owners purified and test-closed; state→history→history-field compression recorded; external calibration and public projection remain open. |
 | 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | Grand Puzzle research map assembled; eleven world-contact sockets packet-complete/evidence-open; active ASI application material archived; phantom proof claims tombstoned. |
 | 156 | `156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md` | One-sitting worldview, Human Condition, and Lived Compass completed as subordinate reader/practice syntheses; Torus and Ring overclaims archived; external calibration remains open. |
+| 156 | `156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` | Independent verification from the concurrent main lineage; its two discrepancies are preserved and closed by 156A and later tree state. |
 | 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | Preserves and reconciles the concurrent independent verification: compatibility drift was real and repaired; the later ASI tombstone state closes the earlier copy-versus-move finding. |
 | 157 | `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` | Purified canon integrated onto current lineage; dimension-first public projection regenerated and locally release-gated; deployment and external calibration remain open. |
 
@@ -233,6 +234,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 154 | `154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md` | 2026-07-21 | Dimension-first canon purification and internal closure |
 | 155 | `155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md` | 2026-07-22 | Grand Puzzle assembly and application-boundary cleanup |
 | 156 | `156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md` | 2026-07-22 | Lived Weltanschauung, Human Condition, and archive reconciliation |
+| 156 | `156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` | 2026-07-22 | Independent verification of Receipt 155 from the concurrent main lineage |
 | 156 / 156A | `156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md` | 2026-07-22 | Independent verification preserved under a letter suffix after a concurrent receipt-number collision |
 | 157 | `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` | 2026-07-22 | Dimension-first integration and local public release candidate |
 

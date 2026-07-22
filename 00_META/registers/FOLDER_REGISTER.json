@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 744,
+  "entry_count": 745,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3118,
+      "tracked_file_count": 3130,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -51,7 +51,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 48,
+      "tracked_file_count": 49,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -766,7 +766,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 119,
+      "tracked_file_count": 120,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -792,7 +792,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 9,
+      "tracked_file_count": 10,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +974,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 373,
+      "tracked_file_count": 375,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 156,
+      "tracked_file_count": 158,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1208,7 +1208,7 @@
       "owns": "Emergentism public site",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 583,
+      "tracked_file_count": 588,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2360,12 +2360,12 @@
     {
       "path": "12_PUBLIC_SITE/dimensions",
       "type": "site",
-      "nearest_front_door": null,
-      "front_door_requirement": "missing",
-      "owns": null,
+      "nearest_front_door": "12_PUBLIC_SITE/dimensions/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!DOCTYPE html>",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7136,7 +7136,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1062,
+      "tracked_file_count": 1065,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8013,6 +8013,19 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "90_ARCHIVE/2026_07_22_k_namespace_cross_pillar_analysis",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation",
       "type": "archive",
       "nearest_front_door": null,
@@ -8059,7 +8072,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1,
+      "tracked_file_count": 2,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

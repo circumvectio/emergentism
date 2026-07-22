@@ -16,12 +16,12 @@ parents:
 ## Why the suffix exists
 
 A concurrent writer created
-`156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` in the dirty main
-checkout while the isolated feature branch later created a different Receipt
-156. The original untracked file remains untouched in that checkout. This
-letter-suffixed receipt preserves its findings in the branch's collision
-census without pretending that the two files were one act or silently
-renaming another writer's arrival.
+`156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md` in the main lineage
+while the isolated feature branch later created a different Receipt 156. Main
+subsequently committed that independent receipt at `0b08b6f9`; the release
+integration imported it unchanged when it reconciled post-release main. This
+letter-suffixed receipt preserves and closes its findings without pretending
+that the two Receipt-156 files were one act or silently renaming either file.
 
 ## Findings rechecked
 
@@ -66,10 +66,10 @@ commit, tag, reflog, or remote was changed.
 
 ## Scope boundary
 
-This reconciliation does not rewrite the dirty main checkout, delete its
-untracked independent receipt, promote a philosophical claim, touch Skyzai,
-or claim deployment. It corrects repository truth only. Citations must use the
-full filename or the `156A` suffix because bare `156` is ambiguous.
+This reconciliation does not rewrite the independent receipt, promote a
+philosophical claim, change an external application tree, or claim deployment.
+It corrects repository truth only. Citations must use the full filename or the
+`156A` suffix because bare `156` is ambiguous.
 
 ## Kill criterion
 
@@ -77,6 +77,6 @@ This receipt fails if any of the following is shown:
 
 - a nonempty base-to-current diff under `91_COMPATIBILITY/`;
 - a full ASI activation body still operating from an active path;
-- deletion or mutation of the concurrent untracked receipt in main; or
+- deletion or mutation of the imported independent receipt; or
 - loss of a valid Git ref or reachable object caused by the malformed-ref repair; or
 - citation of bare Receipt 156 as though no collision occurred.
