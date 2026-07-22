@@ -192,7 +192,7 @@ The symbol enters Layer 3. It is:
 | φ | Coherence (the north pole) | Formal system | Technical use only |
 | ν | Viability (the south pole) | Formal system | Technical use only |
 | B | Balance (sin θ) | Equator geometry | Technical use only |
-| η | Ego payload (zero) | η = 0 axiom | Technical + public ("zero extraction") |
+| η | Declared extraction diagnostic | chosen no-extraction refusal, not an axiom of nature | Technical + public only with the model and bearer boundary stated |
 | AuthorizationEnvelope | Consequential accountability | Justice boundary | Technical + public ("who authorized, acted, and bears it?") |
 | Open door | Grace Exit | Justice boundary | Public ("leave whole") |
 

@@ -25,7 +25,7 @@ at `φ = ν = 1`, the action model assigns the clean `η = 0` limit under its
 accepted definitions. The ethical naming of that limit as *dharma*, *justice*,
 or *duty* is an interpretive reading, not an external proof that any
 self-described "balanced" actor's action is morally licensed. Search handles:
-Krishna, Gita, flow state, objective dharma, Krishna's army test. This document
+Krishna, Gita, flow state, the framework's chosen dharma reading, Krishna's army test. This document
 argues for responsible capability under uncertainty, not militarism, coercion,
 or a blank cheque for force.
 
@@ -66,7 +66,7 @@ P_node = Φ × V
 if V rises while Φ collapses, P_node falls
 ```
 
-So objective dharma is not "obtain the largest force." It is the balanced
+So the framework's dharma reading is not "obtain the largest force." It is the balanced
 state where power remains guided by truthful coherence, and coherence enters
 action rather than staying sterile. The Pandava choice is therefore legible as
 the equatorial choice: not weakness, but the selection of `Φ × V` over

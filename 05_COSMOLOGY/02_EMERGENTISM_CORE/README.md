@@ -31,7 +31,7 @@ This is the focused System Architecture sublane for the positive Emergentism mod
 | File | Role |
 |---|---|
 | [Synthetic Gap and Four Postures](../../02_EPISTEMOLOGY/00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) | Keeps physicalist, emergent, dual-aspect, and idealist readings distinct; none defines D5 or D6 by fiat. |
-| [`01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md`](01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md) | Teleological Force as the canonical name for `F5` — the selective/generative bias toward viable closure; a doctrinal consequence of `φ · ν = 1`, not a fifth line or new primitive. |
+| [`01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md`](01_TELEOLOGICAL_FORCE_AND_F5_DYNAMICS.md) | Typed boundary: weak teleonomy synthesis `[I]`; literal fifth-force, retrocausal, or universal-purpose reading `[C]`; nothing is derived from `φν=1`. |
 | [`README.md`](README.md) | This local route note. |
 
 Parent route: [`../README.md`](../README.md)

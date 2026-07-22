@@ -139,7 +139,9 @@ Empirical Observation belongs most directly to `Dasein`.
 
 Ground is prior.
 Being is reciprocal closure.
-Teleological Force is the bias within manifestation.
+Teleological Force is an optional `[I]` name for perceived or modeled
+viability-direction; native mechanisms must be stated first, and no literal
+force follows from disclosure.
 Dasein is where disclosure occurs.
 Empirical Observation is the name for that disclosure when it becomes explicit.
 

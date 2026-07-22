@@ -90,6 +90,17 @@ APPLICATION_TOMBSTONES = {
     Path("08_FRAMEWORK_SUPPORT/02_OPERATORS/OP_384_FUNCTION_TESTING.md"),
 }
 
+REQUIRED_READER_SURFACES = {
+    Path("00_THE_WELTANSCHAUUNG_ONE_SITTING.md"),
+    Path("01_TELEOLOGY/04_THE_LIVED_COMPASS.md"),
+    Path("06_ONTOLOGY/08_THE_HUMAN_CONDITION.md"),
+}
+
+LIVED_TOMBSTONES = {
+    Path("05_COSMOLOGY/00_THE_TORUS_REVELATION.md"),
+    Path("06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md"),
+}
+
 FRONT_DOORS = [
     "README.md",
     "AGENT_README.md",
@@ -218,6 +229,30 @@ def main() -> int:
             errors.append(f"application path is not marked archived/superseded: {rel}")
         if len(text.splitlines()) > 90:
             errors.append(f"application forwarding tombstone regrew into an active body: {rel}")
+
+    for rel in REQUIRED_READER_SURFACES:
+        if not (ROOT / rel).is_file():
+            errors.append(f"missing lived Weltanschauung reader surface: {rel}")
+
+    for rel in LIVED_TOMBSTONES:
+        path = ROOT / rel
+        if not path.is_file():
+            errors.append(f"missing lived-synthesis forwarding tombstone: {rel}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        if "ARCHIVED" not in text:
+            errors.append(f"lived-synthesis path is not marked archived: {rel}")
+        if len(text.splitlines()) > 45:
+            errors.append(f"lived-synthesis tombstone regrew into an active body: {rel}")
+
+    lived_archive = ROOT / "90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation"
+    for rel in (
+        Path("TOMBSTONE.md"),
+        Path("05_COSMOLOGY/00_THE_TORUS_REVELATION.md"),
+        Path("06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md"),
+    ):
+        if not (lived_archive / rel).is_file():
+            errors.append(f"missing lived-synthesis archive artifact: {rel}")
 
     application_archive = (
         ROOT / "90_ARCHIVE/2026_07_22_asi_operator_application_boundary/TOMBSTONE.md"

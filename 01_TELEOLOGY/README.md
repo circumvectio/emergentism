@@ -22,6 +22,7 @@ from the reciprocal chart.
 | Owner | Role | Standing |
 |---|---|---|
 | [The Goal](00_THE_GOAL.md) | Declared `Ω`: durable mutual option widening inside the refusals | vow `[I]`; world fit `[C]` |
+| [The Lived Compass](04_THE_LIVED_COMPASS.md) | Reader practice for ordinary, tragic, sacrificial and conflict decisions | protocol `[S]`; value orientation `[I]`; outcome adequacy `[C]` |
 | [The Generative Lagrangian](00_THE_GENERATIVE_LAGRANGIAN.md) | Conditional construction grammar, typed future influence, receipts, constrained Power-Max | `[A/S/I/C]` by claim |
 | [The Core Conjecture](02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md) | Viable-completion wager and kill criteria | `[S/I/C]` |
 | [Saturation and Return](00_SATURATION_AND_RETURN.md) | Candidate saturation and boundary-role return | `[I/C]` |

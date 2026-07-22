@@ -8,16 +8,16 @@ remain externally uncalibrated until independent contact decides them.
 
 ## Read in one sitting
 
-1. [The Weltanschauung](00_THE_WELTANSCHAUUNG.md) — priced creed and front door.
-2. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
-3. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the entire ladder, exact pieces, interpretations, wagers, and eleven world-contact sockets.
-4. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model, and type boundaries.
-5. [Degrees-of-Freedom Ontology](06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md) — the Plato repair and plenitude debt.
-6. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) — the active axiom assembly at per-axiom tiers.
-7. [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the killable wager ledger.
-8. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — five chosen constraints plus one direction.
-9. [The Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — disclosures earned by the audit record.
-10. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — authority, corrections, failures, and receipts.
+1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
+2. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.
+3. [The Human Condition](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) — self, consciousness, agency, suffering, meaning and death.
+4. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice.
+5. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
+6. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and eleven world-contact sockets.
+7. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model and type boundaries.
+8. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) and [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the active axiom and wager ledgers.
+9. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) and [Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — chosen constraints and disclosures earned by audit.
+10. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — corrections, failures and receipts.
 
 ## The compressed compass
 

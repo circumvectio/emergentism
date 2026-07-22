@@ -343,7 +343,7 @@ claims a lawful continuity of constraint form across scales:
 | Biological | membranes, metabolism, homeostasis, autopoiesis | viability-preserving organization | [A/B] locally; [I] as unified reading |
 | Cognitive | policies, attention, prediction, interoception | action-space selection under embodied constraints | [A/B] locally; [I] as D4/D5 bridge |
 | Social / symbolic | law, markets, institutions, narratives | incentive and meaning topology | [A/B] locally; [I/C] for egregore readings |
-| Conscious agency | Soul Loop, present awareness, objective dharma | deliberate selection of futures under `eta = 0` | [S/I]; empirical per protocol |
+| Conscious agency | Soul Loop, present model-mediated selection and chosen Justice | deliberate selection among represented futures | `[I/C]`; empirical per protocol |
 
 The continuity is syntropic only in the restrained open-system sense: the
 constraint increases local order, coherence, viability, or effective
@@ -377,7 +377,7 @@ eta = 0
 at least one inequality is strict
 ```
 
-This is where objective dharma enters the framework: not as a commandment from
+This is where the framework's chosen dharma reading enters: not as a commandment from
 outside physics, but as the action policy that preserves or raises the
 individual symbiont and collective holobiont together under a costed
 macro-constraint.

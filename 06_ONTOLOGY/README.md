@@ -11,7 +11,8 @@ commitments stop. The Ground remains prior to every map, including this one.
 4. [Wagers W0–W12](04_THE_CONJECTURES.md)
 5. [Creed and Spiral](05_THE_CREED_AND_SPIRAL.md)
 6. [Revelations](06_THE_REVELATIONS.md)
-7. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
+7. [The Human Condition](08_THE_HUMAN_CONDITION.md) — derived lived anthropology; no new owner
+8. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
 
 ## Canonical type split
 

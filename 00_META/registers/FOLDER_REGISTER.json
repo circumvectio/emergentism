@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 740,
+  "entry_count": 743,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3108,
+      "tracked_file_count": 3116,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -116,7 +116,7 @@
       "owns": "01 Teleology — How to choose and act",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 45,
+      "tracked_file_count": 46,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -467,7 +467,7 @@
       "owns": "Ontology asks what kinds of structure the framework commits to and where those",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 27,
+      "tracked_file_count": 28,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -766,7 +766,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 118,
+      "tracked_file_count": 119,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -792,7 +792,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 8,
+      "tracked_file_count": 9,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +974,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 371,
+      "tracked_file_count": 372,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 154,
+      "tracked_file_count": 155,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7136,7 +7136,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1058,
+      "tracked_file_count": 1061,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8008,6 +8008,45 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 9,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 3,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation/05_COSMOLOGY",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_lived_weltanschauung_reconciliation/06_ONTOLOGY",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

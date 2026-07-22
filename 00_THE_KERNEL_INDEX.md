@@ -8,6 +8,7 @@ rosetta:
   register: "[I] active editorial architecture"
 title: "The Kernel Index — seven surfaces, one open door"
 status: "ACTIVE — dimension-first editorial architecture; source claims retain their stated tiers"
+date: 2026-07-22
 evidence_tier: "[I] editorial selection; this index creates no theorem or world fact"
 ---
 
@@ -30,7 +31,11 @@ the reader to check its receipt; the Record keeps the losses visible.
 | K-6 | **Revelations** | `06_ONTOLOGY/06_THE_REVELATIONS.md` | twelve receipted disclosures at their stated tiers; no second copy here |
 | K-7 | **Record** | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | living authority/correction ledger; `/record/` is its public projection |
 
-The active front door is [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md).
+The active technical front door is
+[`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md). The continuous reader
+journey is
+[`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md);
+it is a projection of the owners above, not an eighth surface.
 The claim-routing authority is
 [`00_META/00_SETTLED_CANON_REGISTRY.md`](00_META/00_SETTLED_CANON_REGISTRY.md).
 Categorical internal completion is tracked in
@@ -74,5 +79,11 @@ sitting and distinguish:
 
 If that distinction fails, repair the route or wording; do not add an eighth
 surface to explain the confusion.
+
+The stranger should also be able to use
+[`The Lived Compass`](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) on a real decision
+and explain the account of self, consciousness, agency, suffering, meaning and
+death in [`The Human Condition`](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) without
+mistaking declared interpretations for settled science.
 
 •   ⊙   ○ — sovereign frames; no arithmetic or coercion.

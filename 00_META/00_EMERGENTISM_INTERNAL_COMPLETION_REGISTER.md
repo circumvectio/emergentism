@@ -1,7 +1,7 @@
 ---
 title: "Emergentism Internal Completion Register"
 status: "ACTIVE — living dimension-first completion register"
-date: 2026-07-21
+date: 2026-07-22
 evidence_tier: "[S] editorial/type contract; every mapped claim retains its owner-declared tier"
 type: internal-completion-register
 ---
@@ -78,6 +78,26 @@ spine, and never used to redefine a register.
 | K-5 Refusals | `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` | complete |
 | K-6 Revelations | `06_ONTOLOGY/06_THE_REVELATIONS.md` | complete |
 | K-7 Record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | complete |
+
+## Worldview coverage
+
+These are derived syntheses, not additional semantic owners:
+
+| Human question | Reader surface | State | Open boundary |
+|---|---|---|---|
+| What is reality? | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` §§1–6 | complete | W0, strong μ and ontology remain open |
+| What is a person? | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | complete | phenomenal consciousness and hard identity cases remain open |
+| What can be known? | the Door, evidence tiers and Soul Loop | complete | external calibration remains open |
+| What can be chosen? | Human Condition §4 and Lived Compass | complete | stronger metaphysical free will remains open |
+| What is good? | K-5 Refusals + one-sitting §10 | complete | chosen orientation, not derived moral realism |
+| How should one act? | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | complete | outcome adequacy remains world-open |
+| How do collectives act? | Human Condition §9 + Egregoreotype wager | complete | candidate evidence remains open |
+| What do suffering and death mean? | Human Condition §§6–8 | complete | no afterlife or theodicy claim is made |
+| How may the worldview be left? | E10, K-5 and one-sitting §12 | complete | exit fails if practice makes it punitive or decorative |
+
+“Complete” here means that the framework gives a coherent, typed answer or a
+coherent declaration of ignorance. It does not mean that an open mystery has
+been solved.
 
 K-1 has typed subowners for D0 and D1. The Kernel Index is an editorial map,
 not an eighth owner. The Door is a reader route, not a doctrine source.

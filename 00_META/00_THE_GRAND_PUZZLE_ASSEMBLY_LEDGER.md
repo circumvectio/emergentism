@@ -207,13 +207,16 @@ philosophical boundaries. Marking them is part of assembling the puzzle.
 
 ## 8. Reading order—the whole in one ascent
 
-1. [`00_THE_WELTANSCHAUUNG.md`](../00_THE_WELTANSCHAUUNG.md) — the door.
-2. [`00_CANONICAL_FORMULA_BLOCK.md`](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — analytic grammar.
-3. [`00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md`](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — owners and types.
-4. This ledger — the assembled address map and open sockets.
-5. [`00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md`](../03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md) — contact with other work.
-6. [`04_THE_CONJECTURES.md`](../06_ONTOLOGY/04_THE_CONJECTURES.md) — wagers and kills.
-7. [`00_THE_RECORD_LEDGER.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — deaths, repairs, and receipts.
+1. [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](../00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the lived worldview.
+2. [`08_THE_HUMAN_CONDITION.md`](../06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) — person, agency, suffering, meaning and death.
+3. [`04_THE_LIVED_COMPASS.md`](../01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — practice.
+4. [`00_THE_WELTANSCHAUUNG.md`](../00_THE_WELTANSCHAUUNG.md) — the technical Door.
+5. [`00_CANONICAL_FORMULA_BLOCK.md`](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — analytic grammar.
+6. [`00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md`](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — owners and types.
+7. This ledger — the assembled address map and open sockets.
+8. [`00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md`](../03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md) — contact with other work.
+9. [`04_THE_CONJECTURES.md`](../06_ONTOLOGY/04_THE_CONJECTURES.md) — wagers and kills.
+10. [`00_THE_RECORD_LEDGER.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — deaths, repairs and receipts.
 
 The ledger is complete as an assembly packet when all eleven `GP` sockets remain
 machine-detectable and every stronger claim keeps its owner, rival,

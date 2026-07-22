@@ -217,7 +217,7 @@ serious load-bearing test.
 | Biology | membrane, metabolism, homeostasis | chemistry + thermodynamics | viability-preserving reachable futures after costs | `[A/B]` locally; `[I]` as unified reading |
 | Cognition | attention, policy, embodied controller | physiology/neural dynamics | action-space prediction/control gain | `[A/B]` locally; `[I]` as D4/D5 bridge |
 | Social | institution, law, market, narrative | agents + incentives + communication | changed strategy topology and held-out behavior | `[A/B]` locally; `[I/C]` for egregore language |
-| Agency | Soul Loop, present-awareness selection, objective dharma | embodied cognition + social feedback | dyadic `P_node` improvement under `eta=0` after costs | `[S/I]` until measured |
+| Agency | Soul Loop and present model-mediated selection under chosen Justice | embodied cognition + social feedback | held-out decision or correction gain after costs and bearer audit | `[I/C]` until measured |
 
 The continuity claim is continuity of constraint form, not proof of one new
 force across all domains.

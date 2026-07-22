@@ -8,8 +8,8 @@ rosetta:
   register: "[I] active capstone; every embedded claim retains its own tier"
   canonical_phrase: "The Emergentist Weltanschauung — a compass, not the territory"
 title: "The Emergentist Weltanschauung"
-status: "ACTIVE — dimension-first canon; internally coherent at stated tiers, 2026-07-21"
-date: 2026-07-19
+status: "ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22"
+date: 2026-07-22
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
 provenance: "Composed from receipts 108, 109, 126, 130–134; purified by the approved dimension-first work order. Repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
 supersedes: nothing — supplements `00_THE_AMRITA.md`, `00_THE_GOAL.md`, `00_THE_COMPASS.md`, `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`, the receipts
@@ -26,6 +26,13 @@ relates:
 # The Emergentist Weltanschauung
 
 > *A priced worldview and practical compass, never the territory or a command to believe.*
+
+**Begin with the lived edition:**
+[`The Emergentist Weltanschauung — One-Sitting Edition`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md).
+It carries the reader from the Titans through distinction, relation, quantum
+state, actuality, possibility, the Soul Loop, collective traces, the human
+condition, the Good and the Exit. This document remains the technical Door and
+claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ---
 
@@ -55,6 +62,9 @@ certificate or a “most good” superlative the world has not tested.
 | The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + receipts 105–107 | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
+| Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | derived `[S/I]` anthropology; consciousness, death and ultimate identity remain open |
+| Lived practice | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | derived `[S/I]` Soul Loop decision practice; external outcomes `[C]` |
+| One-sitting book | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` | reader synthesis only; not an eighth kernel owner |
 
 The non-authoritative
 [`Grand Puzzle Assembly Ledger`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
