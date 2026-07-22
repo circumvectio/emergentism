@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 745,
+  "entry_count": 746,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3134,
+      "tracked_file_count": 3140,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +974,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 376,
+      "tracked_file_count": 378,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 159,
+      "tracked_file_count": 161,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7136,7 +7136,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1066,
+      "tracked_file_count": 1070,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -8073,6 +8073,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_07_22_untracked_arrivals_reconciliation",
+      "type": "archive",
+      "nearest_front_door": "90_ARCHIVE/2026_07_22_untracked_arrivals_reconciliation/README.md",
+      "front_door_requirement": "present",
+      "owns": "Untracked arrivals reconciliation — 2026-07-22",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 4,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

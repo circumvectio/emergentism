@@ -168,6 +168,12 @@ def check_orphans():
         os.path.normpath(os.path.join(BASE_DIR, "404.html")),
         # 2026-07-20 (receipt 146): legacy homepage snapshot, intentionally unlinked (K3)
         os.path.normpath(os.path.join(BASE_DIR, "index_legacy_2026_07_19.html")),
+        # /home/ is a retained legacy body behind the permanent /home/ -> / redirect.
+        os.path.normpath(os.path.join(BASE_DIR, "home", "index.html")),
+        # Frozen discipline projections remain directly addressable and noindex,
+        # but no longer participate in the current reader funnel.
+        os.path.normpath(os.path.join(BASE_DIR, "ontology", "index.html")),
+        os.path.normpath(os.path.join(BASE_DIR, "theology", "index.html")),
     }
     orphans = [
         os.path.relpath(full, BASE_DIR)
