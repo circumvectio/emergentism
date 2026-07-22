@@ -126,11 +126,12 @@
 <!-- ── 3. THE GATE ───────────────────────────────────────────────────────── -->
 <section class="content-section gate-section" id="gate">
   <div class="section-inner">
-    <p class="section-kicker">Evidence tier [A] — enforced by code</p>
+    <p class="section-kicker">Mixed tiers — what the gate enforces, and what it does not</p>
     <h2>The Gate</h2>
     <p class="lead">
       <code>predeploy_check.py</code> is the last thing that runs before a deploy. It does not ask permission.
-      It fails the build if any of these conditions are violated.
+      <strong>It does not fail the build on every card below.</strong> Read each one: some are hard failures, one raises a warning only, and two are planned and not implemented at all.</p>
+    <p class="note"><em>Corrected 2026-07-22. The sentence above read &ldquo;It fails the build if any of these conditions are violated&rdquo; &mdash; false for three of the six tiered cards. And the section kicker read &ldquo;Evidence tier [A] &mdash; enforced by code&rdquo; above this block. After four of the seven cards below were corrected the same day, the six that carry a tier read one [A], three [B] and two [C] planned (the seventh, &ldquo;Clone the repository&rdquo;, carries none) &mdash; so a blanket [A] over all of them was itself the false green this page is about. The heading now says what the block actually contains.</em>
     </p>
 
     <div class="gate-grid">
