@@ -17567,8 +17567,8 @@
     },
     {
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md",
-      "sha256": "91fe24981ab5370c1c948af15a284928edd038ae34a38fc54ffde05cc4920ef5",
-      "bytes": 5659,
+      "sha256": "4a8e2470f6b0bf88bf5ba66126a7da14848e88291e037a3aaa53c89e5e3bc5a9",
+      "bytes": 5715,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",

@@ -73,10 +73,11 @@ www.emergentism.org   CNAME ghs.googlehosted.com.
 ```
 
 The apex still reaches Squarespace and redirects to the former Google Sites
-surface. Vercel reports the minimum corrective record as:
+surface. Vercel reports the required records for the two attached hosts as:
 
 ```text
-A emergentism.org 76.76.21.21
+A emergentism.org     76.76.21.21
+A www.emergentism.org 76.76.21.21
 ```
 
 The current nameservers are `ns-cloud-d1` through `ns-cloud-d4.googledomains.com`.
