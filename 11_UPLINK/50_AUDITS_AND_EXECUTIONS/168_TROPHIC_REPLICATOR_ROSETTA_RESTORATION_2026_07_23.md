@@ -102,7 +102,7 @@ paths remain provenance only.
 | TRR-21 | Trophic depth, replicator depth, and Rosetta row are one hierarchy | packet 134 provenance only; corrected by doc 36 | historical compression fused the axes | separate-coordinate model | a single counterexample with different positions on the axes defeats identity | `ARCHIVE_ONLY` |
 | TRR-22 | Neoteny preserves developmental plasticity and can support longer learning `[S/I]` | live `39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md`; `00_NEOTENY_THE_HARDWARE_UPGRADE.md` | developmental delay/plasticity plus a bounded framework reading | costs and dependency may outweigh flexibility | compare life-history and learning measures without moral rank | `LIVE_EQUIVALENT` |
 | TRR-23 | Neoteny is automatically the Power-Max-winning strategy `[C]` | live doc 39 retiered; packet 134 provenance | selected long-horizon hypothesis only | many environments reward early reproduction/specialization | domain-specific fitness/option comparison; rival superiority kills | `RESTORE_AND_RETIER` |
-| TRR-24 | Four sexual-selection phenomena instantiate all four operators and necessarily maximize `Φ×V` | archived doc 37 | suggestive interpretive crosswalk; no necessity proof | other decompositions, missing phenomena, non-product AND models | requires an explicit comparative model and evidence; founder must decide whether the poetic crosswalk deserves a new live owner | `CONFLICT_REQUIRES_RULING` |
+| TRR-24 | Four sexual-selection phenomena instantiate all four operators and necessarily maximize `Φ×V` | archived doc 37 | suggestive interpretive crosswalk; no necessity proof | other decompositions, missing phenomena, non-product AND models | requires an explicit comparative model and evidence; founder must decide whether the poetic crosswalk deserves a new live owner | `RULED` → `Receipt 170` (2026-07-23, K2): crosswalk RESTORED live at [I]/[C] in the KSC-24 mating niche (doc 37 → `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md`, repaired); "necessarily maximize Φ×V" / all-four / product-uniqueness REFUSED at every tier |
 | TRR-25 | “will-to-ektropy is what selection geometry feels like” `[C]` | archived doc 37; no current pure owner | phenomenological analogy | ordinary evolved drive without F5 geometry | operational internal-representation discriminator is not yet supplied | `ARCHIVE_ONLY` |
 | TRR-26 | Polyphenotypic public narrative should assign people to Rosetta castes `[I/C]` | packet 143 provenance only | differentiated pedagogy may help different learners | assignment reifies class and becomes self-fulfilling | only voluntary, reversible, non-status pilot could adjudicate; broad assignment requires explicit ruling | `RULED` → `KSC-25` / R169 (2026-07-23): self-ascribed reversible non-status function admissible; fixed-status / birth / broad assignment refused; default describe-and-self-locate |
 | TRR-27 | Full DAC/agent operating systems are pure Emergentist premises | pure-boundary archive only | application provenance | pure worldview stands independently | any proof dependency on Skyzai/DAC fails `KSC-13` | `ARCHIVE_ONLY` |
@@ -158,9 +158,7 @@ checker actually fires.
 
 ## 7. Open ruling items
 
-Only TRR-24 and TRR-26 remain `CONFLICT_REQUIRES_RULING`. Neither blocks this
-restoration because neither is needed for the controlling doctrine. Until a
-ruling and warrant arrive, both stay non-canonical.
+Both TRR-24 and TRR-26 are now **`RULED`** (2026-07-23, K2): TRR-26 → `KSC-25` (Receipt 169 — public-narrative row-assignment boundary); TRR-24 → `Receipt 170` (sexual-selection crosswalk restored live at [I]/[C] in the KSC-24 mating niche; the necessity / maximization / product-uniqueness upgrade refused at every tier). No `CONFLICT_REQUIRES_RULING` items remain open in this receipt.
 
 No deployment was performed.
 
