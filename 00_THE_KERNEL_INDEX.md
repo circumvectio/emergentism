@@ -47,6 +47,16 @@ interpretation, wager, rival, discriminator, and survivor—is
 [`00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md).
 It is a reading and research route, not an eighth kernel surface.
 
+The restored cross-cutting
+[`Trophic–Replicator–Rosetta doctrine`](05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md)
+also creates no eighth surface. It keeps vertical ecological transfer,
+replicator depth, human functional differentiation, and bounded mating-domain
+competition as separate coordinates. Its active biological crosswalk is the
+[`Rosetta Replicator`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_REPLICATOR.md):
+L1 is ground/firewall; L2–L7 map interpretively to the six replicator layers.
+Human rows are cooperating, changeable functions of equal worth, never trophic
+prey for one another.
+
 ## Distillation law
 
 - The kernel receives; it does not invent.
@@ -62,6 +72,9 @@ It is a reading and research route, not an eighth kernel surface.
   govern editorial or repository work.
 - The Rosetta translates structure while preserving type and tier. It transfers
   no proof.
+- Species, trophic stratum, replicator layer, Rosetta row, and dignity remain
+  separate coordinates. Sexual selection is a bounded mating-domain exception,
+  not a general licence.
 - Exit stays on the inside. A reader may use, test, reject, or put down the map.
 
 ## Stranger test

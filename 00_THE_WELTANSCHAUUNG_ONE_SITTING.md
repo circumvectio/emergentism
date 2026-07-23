@@ -217,6 +217,36 @@ History can therefore be reread as interacting Soul Loops: persons change
 institutions; institutions change persons; both inherit traces from dead
 carriers and project futures into unborn ones.
 
+### 8A. Ecology, replicators and human functions — do not collapse the axes
+
+Four coordinates can correspond without becoming one hierarchy:
+
+- a **trophic stratum** describes vertical ecological matter and energy flow;
+- a **replicator layer** names Genotype → Epigenotype → Phenotype →
+  Extended Phenotype → Memotype → Egregoreotype;
+- a **Rosetta row** names a complementary human function—L1 ground/firewall,
+  then L2–L7 as the interpretive biological crosswalk;
+- a **mating domain** bounds the horizontal competition of sexual selection.
+
+Cross-trophic consumption can be coupled ecological flow. The relational
+`η_move=0` fence instead refuses hidden, decoupled, or ground-negating
+arrangements among human peers and institutions. `η_ratio=1` names balance in
+a declared trophic model; every `η_domain` still owes bearers, payer,
+beneficiary, baseline, horizon, consent, reversibility, and regenerative
+capacity.
+
+`[I/C]` Power-Max selects a strategic corollary: seek cooperation with peers
+in the same trophic stratum or functional guild and among complementary
+Rosetta functions. This is not a mathematical theorem. Human functions are
+specialized but trainable, combinable, and changeable; differentiation grants
+no extraction right and no hereditary worth.
+
+Sexual selection is the bounded mating-domain exception. The Kundalini image
+is symbolic `[I]`; Tantra as redirection of sexual drive is a historical and
+practice claim plus testable hypothesis `[I/C]`; Vajrayana's poison-to-path
+framing is an interpretive practice analogy `[I/C]`. No physiological or
+power-effect claim is established without independent evidence.
+
 ## 9. The Human Condition — finite freedom
 
 A person is an embodied continuity through change, a bearer of experience and

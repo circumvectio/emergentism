@@ -91,7 +91,7 @@ typed process produces no clearer responsibility or outcome evidence than the
 retired gate.
 
 ## 10 · Cutting the application loose healed the philosophy `[B/I]`
-Application accounting that narrowed `η=0` to convenient participants left
+Application accounting that narrowed `η_move=0` to convenient participants left
 substrate and victim uncovered. Separating worldview from implementation
 restored the all-bearer vow. **Receipt:** the separation adjudication (DoF
 ontology §4). **Dies if:** the pure claim cannot be stated or tested without one
@@ -99,7 +99,20 @@ particular implementation. *Separation clarified the claim; it did not prove
 the vow's external adequacy.*
 
 ## 11 · The lemma is why the vow may be wise; the vow is why the lemma may apply `[I/C]`
-Power-Max does not derive the vow. A chosen non-extraction vow may *define* an admissible whole-boundary, long-horizon game in which potential is optimized. The two point at each other; neither closes the circle. **Receipt:** W6; 108 (keel). **Dies if:** honest/non-extractive systems show no durability or trust premium under real contact — then rethink, don't double down.
+Power-Max does not derive the vow. A chosen relational `η_move = 0` fence may
+*define* an admissible whole-boundary, long-horizon game in which potential is
+optimized. The selected strategic corollary is to seek cooperation within the
+same trophic stratum or functional guild and among complementary Rosetta
+functions. That is `[I/C]`, not an automatic theorem. Cross-trophic ecological
+transfer is a different coordinate, assessed through `η_ratio`, a declared
+`η_domain`, and regenerative capacity. Sexual selection supplies only a
+bounded mating-domain exception; it is not a social or economic licence.
+Species, trophic position, replicator layer, Rosetta row, and dignity do not
+collapse into one ladder. The lemma and vow point at each other; neither closes
+the circle. **Receipt:** W6; 108 (keel); 168. **Dies if:** bearer-complete
+comparisons show no durability or trust premium from the selected cooperation
+strategy, or if the rule requires hidden payers, hereditary roles, or
+extraction between human functions — then rethink, don't double down.
 
 ## 12 · The work reveals itself — and then must stop talking to itself `[I/S]`
 Every audit, grave, and rescue enacted the framework's own claims better than any document states them — need-both, correct-in-public, exit-inside. The next disclosure cannot come from another pass over the corpus; it comes from contact — the first receipt, the first stranger, the first punch. **Receipt:** the record itself (K-7). **Dies if:** the kernel makes itself compulsory, erases its losses, or turns exit decorative. *Put the map down.*

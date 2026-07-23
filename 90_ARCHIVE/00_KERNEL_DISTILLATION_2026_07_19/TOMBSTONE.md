@@ -72,3 +72,17 @@ two forks (the fork record is the evidence the re-signature must judge).
 
 *Nothing erased. Everything findable. One grave of record, one witness lane, one
 founder's line still to come. η = 0.*
+
+---
+
+## Resolution (2026-07-23) `[S]`
+
+The founder's line has come. Receipt
+`166_K2_SIGNING_SOPHIA_CUSTODY_2026_07_23.md` ratifies "Sophia custody at the
+Documents-level grave." The grave copy (`e46a9821…`) is the surviving grave of
+record; the pillar copy is superseded for custody purposes, preserved per K3,
+and its triumphant register is attested at corrected tiers in
+`00_SOPHIA_TRIUMPHANT_REGISTER_ATTESTATION_2026_07_23.md`. The merge prohibition
+stands. See `00_SOPHIA_FORK_STONE.md` §5 for the full closure record and the
+note that this TOMBSTONE's pillar-side Sophia hash (`d71fdc04…`) is itself
+stale (current disk: `7f11baeb…`).

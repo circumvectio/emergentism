@@ -99,6 +99,47 @@ is load-bearing: non-extraction cannot be inferred from coupling, the product,
 evolution, or rational self-interest. It is enforced by the Justice-admissible
 field and then tested for long-run consequences.
 
+### 4A. Selected cooperation corollary
+
+`[I/C]` Power-Max selects the following strategic corollary; the mathematics
+above does not force it:
+
+> Within the same trophic stratum or functional guild, seek cooperation with
+> peers and complementary functions because specialization, trust, and shared
+> capacity may widen durable options. Do not silently convert a peer or a
+> human Rosetta function into trophic substrate.
+
+Four boundaries keep the rule typed:
+
+1. **Trophic transfer is vertical ecological flow.** Cross-trophic consumption
+   is assessed at system scale through `η_ratio`, regenerative capacity, and a
+   declared `η_domain`; it is not automatically a violation of the human
+   relational fence.
+2. **Rosetta differentiation is horizontal functional complementarity.** L1 is
+   the ground/firewall and L2–L7 interpretively correspond to replicator layers,
+   but no row acquires a right to extract from another row.
+3. **Sexual selection is a bounded horizontal exception.** Competition may
+   occur within a declared reproductive population and mating domain. It does
+   not license general social, political, or economic predation.
+4. **Tantric/Vajrayana transmutation remains a candidate practice claim.** The
+   proposed redirection of sexual rivalry and drive into attention, restraint,
+   cooperation, and durable power is `[I/C]`, not an established physiological
+   result.
+
+**Strongest rivals:** short-horizon defection can dominate; division of labour
+can create bottlenecks and coercive dependency; mating competition can spill
+into other domains; and cooperation can shelter free riders.
+
+**Discriminator:** compare bearer-complete, pre-registered strategies over the
+same horizon and resource boundary. The corollary earns support only if the
+cooperative strategy preserves peer option sets and regenerative capacity
+better than the strongest rival without hiding payers.
+
+**Kill criterion:** reject the corollary for a domain if repeated controlled or
+natural comparisons show that its declared cooperation strategy reduces
+durable potential relative to a rival, or if it requires hereditary role,
+coercion, concealed subsidy, or higher-row extraction from lower rows.
+
 ## 5. Syntropic Dyadism
 
 With all bearer and Justice conditions still explicit:
@@ -140,10 +181,13 @@ Power-Max operates only inside physically admissible and authorized option
 cones. “Maximize the cone” is therefore shorthand for:
 
 > prefer durable mutual option widening among declared bearers, under physical
-> cost, accountable authorization, non-extraction, custody, contest, and exit.
+> cost, accountable authorization, the relational `η_move = 0` fence, custody,
+> contest, and exit.
 
 It is not a universal law of agency, a warrant for domination, or a claim that
-cognition enlarges the relativistic light cone.
+cognition enlarges the relativistic light cone. Species identity, trophic
+position, replicator depth, Rosetta row, and dignity remain separate
+coordinates.
 
 ## 8. Acceptance and kill criteria
 

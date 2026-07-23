@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
 status: "ACTIVE — dimension-first release candidate recorded; external calibration and deployment open; historical receipts preserved by full filename"
-date: 2026-07-22
+date: 2026-07-23
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
@@ -32,6 +32,7 @@ parents:
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md
+  - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md
 evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 ---
 
@@ -135,6 +136,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 160 | `160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md` | Reconstructible cache cleanup, authority-language correction, and archive separation of a mixed cross-pillar compilation. |
 | 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | Weltanschauung/ToE gaps made explicit; scaffold-first frontier-model assembly strategy recorded without promotion. |
 | 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | Living Map, eleven-question Lab, static bounded-contribution contract, and rendered-browser verification completed; live compute and deployment withheld. |
+| 168 | `168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md` | Restored the trophic/replicator/Rosetta coordinate separation, typed η registers, Power-Max cooperation corollary, bounded mating exception, retiered Tantra chain, and corrected the classical Lotka–Volterra center; no deployment. |
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -249,6 +251,7 @@ Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **R
 | 160 | `160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md` | 2026-07-22 | Physical cache cleanup, repository-authority correction, and archival separation of a mixed cross-pillar rule compilation |
 | 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | 2026-07-22 | Weltanschauung/ToE gap audit and scaffold-first frontier-model assembly strategy |
 | 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | 2026-07-22 | Static Living Map, public Gap Lab, bounded contribution contract, and rendered release verification |
+| 168 | `168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md` | 2026-07-23 | Trophic–Replicator–Rosetta doctrine restoration and claim-level recovery ledger |
 
 **Anomalies (recorded, not collisions):**
 - **134** exists only as the directory `134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/` — no `.md` receipt file at that prefix.

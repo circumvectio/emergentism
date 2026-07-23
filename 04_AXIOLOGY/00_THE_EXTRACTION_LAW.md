@@ -12,6 +12,24 @@ status: "ACTIVE — conditional Kintsugi owner; overclaiming predecessor archive
 
 # The Extraction Law
 
+## Register and scope correction — 2026-07-23
+
+The word *extraction* names two different objects and must not travel between
+them unmarked:
+
+1. **Ecological/accounting extraction (`η_ratio`)** — matter or energy taken
+   from a substrate. At a declared system boundary, `η_ratio = 1` may describe
+   trophic balance. Individual prey loss can coexist with population-level
+   renewal; this is not automatically an `η_move` breach.
+2. **Relational action extraction (`η_move`)** — concealed, unauthorized,
+   decoupled, or ground-negating cost transfer inside a cooperative, social, or
+   institutional relation. `η_move = 0` names the action fence.
+
+Producer, primary-consumer, secondary-consumer, and tertiary-consumer strata
+describe ecological transfer. They do not rank dignity. Replicator layers and
+Rosetta rows are different axes again. Nothing in the trophic exception permits
+one human caste, class, institution, or functional row to feed on another.
+
 ## One line
 
 > **Extraction can create local gain by transferring cost to another bearer.
@@ -36,13 +54,15 @@ class:
 \Delta_TW_p(a)<0.
 \]
 
-Extraction is the unauthorized or concealed subclass:
+In the relational action register, extraction is the unauthorized, concealed,
+or structurally decoupled subclass:
 
 \[
 \operatorname{Extractive}(a;p,b)
 \iff
 \operatorname{AsymmetricCostTransfer}(a;p,b)
-\land \neg\operatorname{AuthorizedCost}(a;p,b).
+\land (\neg\operatorname{AuthorizedCost}(a;p,b)
+       \lor \operatorname{Decoupled}(a;p,b)).
 \]
 
 The retrospective form substitutes receipted deltas and
@@ -102,7 +122,7 @@ beneficiaries, and exposed third parties. This is a normative choice `[I]` made
 operational through structural tests `[S]`. It is not derived from `φν=1`,
 balance geometry, natural selection, or a claim that injustice always loses.
 
-The Justice envelope requires:
+For cooperative human and institutional relations, the Justice envelope requires:
 
 - individual and whole identified;
 - payer and beneficiary visible;
@@ -113,14 +133,21 @@ The Justice envelope requires:
 - commitment and outcome receipts;
 - no aggregate laundering.
 
-## Predation, sacrifice, and immune response
+## Trophic flow, predation, sacrifice, and immune response
 
 Taking is not one undifferentiated class.
 
-- **Predation/parasitism:** benefits one bearer by degrading another without a
-  valid authorized-cost relation; extractive under the selected boundary.
-- **Regenerative harvest:** may be admissible if the substrate remains
-  non-decreasing over the relevant horizon and all Justice conditions hold.
+- **Cross-trophic predation:** an ecological matter/energy transfer. The
+  individual predator's prey-relative `η_ratio` can be unbounded while the
+  declared population system remains coupled and regenerative. It is not
+  automatically relational `η_move > 0`.
+- **Parasitism or decoupled harvest:** becomes action-register extraction when
+  the arrangement conceals its payer, escapes feedback, or destroys the
+  substrate's regenerative capacity over the declared horizon.
+- **Regenerative harvest:** may be admissible when the population/substrate
+  boundary, renewal rate, welfare costs, affected humans, alternatives, and
+  irreversible losses are declared. `η_ratio ≈ 1` is not sufficient for
+  Justice by itself.
 - **Immune response:** constrains or destroys a threat to protect a bearer; it
   still owes necessity, proportionality, evidence, and contest where possible.
 - **Voluntary sacrifice:** a competent bearer knowingly accepts a disclosed,
@@ -139,6 +166,8 @@ For any claimed extraction dynamic, measure:
 5. access to replacement substrate or exit;
 6. externalized and delayed costs;
 7. intervention effects, not narrative similarity alone.
+8. the coordinate being used: trophic stratum, species, replicator layer,
+   Rosetta row, or mating domain.
 
 The general hypothesis that durable power tends to require non-destructive
 substrate relations remains `[C]` until tested across preregistered domains.
@@ -156,6 +185,9 @@ substrate relations remains `[C]` until tested across preregistered domains.
    cost inside the stated boundary and horizon.
 5. **Geometry inflation:** any derivation of this law from the reciprocal chart
    identity alone is invalid.
+6. **Axis collapse:** reject any application that treats trophic position as
+   Rosetta rank, species identity as trophic identity, or cross-trophic flow as
+   a human institutional extraction license.
 
 ## Kintsugi seam `[金]`
 
@@ -172,5 +204,7 @@ has failed.
 
 ---
 
-*A cost transfer becomes extraction when authorization fails or the bearer is
-hidden. Justice begins by naming both.*
+*Ecological taking and relational extraction are different registers. In the
+action register, cost transfer becomes extraction when authorization or
+coupling fails, or when the payer disappears from view. Justice begins by
+naming the register and the boundary.*

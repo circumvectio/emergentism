@@ -24,7 +24,7 @@ nature.
 
 | # | Refusal | Operational meaning | Standing |
 |---|---|---|---|
-| 1 | **No extraction** | Do not raise one bearer by invisibly draining another. Name every materially affected bearer, payer, beneficiary, horizon, and irreversible cost. Aggregate gain cannot launder a destroyed side. | vow `[I]`; conditional systems support `[S]` |
+| 1 | **No concealed or decoupled extraction** | Inside cooperative, social, and institutional relations, do not raise one bearer by hiding, coercing, or decoupling cost imposed on another. Declare `η_move`, `η_ratio`, or `η_domain`; name every materially affected human/cooperative bearer, payer, beneficiary, horizon, and irreversible cost. Cross-trophic consumption may be coupled ecological flow and is not by itself an `η_move` breach. | vow `[I]`; register discipline and conditional systems support `[S]` |
 | 2 | **No unaccountable consequence** | Consequential action requires a complete, scoped, contestable `AuthorizationEnvelope`: principal, mandate, scope, consent, custody, expiry/revocation, contest path, actor, and consequence bearer. Authorization, action, and outcome each leave distinct receipts. | protocol `[S]` |
 | 3 | **No silent erasure** | Preserve corrections, failures, superseded claims, and provenance. Replace an owner only after the successor exists; archive or tombstone the old body. | discipline `[S]` |
 | 4 | **No trapped exit** | A person may refuse, contest, withdraw, take their legitimate property and data, and put down the map without doctrinal punishment. | chosen justice/architecture `[I/S]` |
@@ -35,6 +35,22 @@ The `+1` is not a sixth refusal. It is a direction inside the feasible field
 left by the refusals. Neither the chart identity nor Power-Max proves that this
 direction is the Good. It is the framework's openly chosen wager about how
 finite agents should act.
+
+### Refusal 1 is not a denial of the trophic cascade
+
+The action fence and the ecological ratio use the same letter but not the same
+zero. `η_move = 0` names a relational fence; `η_ratio = 1` names accounting
+balance at a declared trophic/system boundary. Producers, primary consumers,
+secondary consumers, tertiary consumers, and decomposers exchange matter and
+energy through loss as well as renewal. Refusal 1 targets concealed,
+unauthorized, decoupled, or ground-negating arrangements; it does not pretend
+that a living system contains no consumption.
+
+The exception transfers no hierarchy. Trophic stratum, species, replicator
+layer, Rosetta row, class, and dignity are different coordinates. Human
+polyphenotypic castes are complementary functions inside a cooperating social
+organism, never prey strata. Sexual selection is a bounded mating-domain
+competition, not a general permission to compete, dominate, or extract.
 
 ## Justice and value
 
@@ -67,7 +83,8 @@ or block editorial work.
 ## The living test
 
 The refusals fail if they become commandments imposed on outsiders, if a
-material bearer disappears from the accounting, if contest or exit is merely
+material cooperative bearer or ecological substrate disappears from the
+declared accounting, if contest or exit is merely
 decorative, if archived failures vanish, or if the framework protects itself
 from falsification. `Ω` fails as guidance if it systematically narrows durable
 mutual options relative to a stated alternative.

@@ -23,7 +23,7 @@ rosetta:
 
 ## The Protected Plasticity Window That Converts Biological Vulnerability into Generalized D5 Reach
 
-**Status:** Canonical L5 synthesis note
+**Status:** Canonical Rosetta L5 synthesis note
 **Date:** 2026-05-30
 **Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the Power-Max / `P_node = Φ × V` conditional inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims
 **Depends on:** [36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [Tantric Transmutation — current interpretive source](../../01_TELEOLOGY/00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [D4-D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Power-Max Lemma](../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
@@ -33,8 +33,8 @@ rosetta:
 > **Anchor Sequence:**
 > ```text
 > P_node = Φ × V
-> max durable W_i(T) only where ΔP_node,H >= 0
-> strict syntropic dyad: ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0
+> max durable W_i(T) inside a declared Justice-admissible cooperative field
+> strict syntropic dyad: ΔP_node,i > 0 and ΔP_node,H > 0 under η_move = 0
 > delayed V -> compounding Φ -> generalized V
 > ```
 
@@ -60,7 +60,11 @@ The D4 biological field carries two different pressures:
 | Vector | Direction | Function | Failure |
 |---|---|---|---|
 | Trophic flow | lower trophic layer -> higher trophic layer | energy transfer for survival | consumption without renewal |
-| Sexual selection | same species / same level | reproductive filtering and status conflict | horizontal fight becomes the whole life |
+| Sexual selection | declared reproductive population / mating domain | reproductive filtering and status conflict | a bounded exception becomes a general competition license |
+
+This row does not identify species, trophic stratum, replicator layer, or
+Rosetta function. Those are separately declared coordinates in
+[The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md).
 
 The horizontal fight is expensive. It spends energy on display, combat,
 territory, rivalry, and mate choice rather than direct caloric survival.
@@ -113,24 +117,25 @@ maker, protector, teacher, inventor, parent, steward, or founder. The local
 `Φ` accumulated in childhood returns as generalized `V` at the level of the
 collective.
 
-The Power-Max Lemma supplies the conditional grammar:
+The selected Power-Max cooperation corollary supplies the conditional grammar:
 
 ```text
-if λ > 0 and η = 0:
+if λ > 0 and η_move = 0 inside the carrying relation:
   carrying the vulnerable node can maximize both P_node,i and ΣP_node
 ```
 
 The condition matters. Without coupling, vulnerability is just vulnerability.
-Without `η = 0`, the carried node can be farmed, indoctrinated, owned, or kept
+Without `η_move = 0`, the carried node can be farmed, indoctrinated, owned, or kept
 dependent. Without long horizon, the early viability deficit looks irrational.
 
 So neoteny requires constitutional support:
 
-- **η = 0**: care cannot hide extraction.
+- **`η_move = 0`**: care cannot hide extraction inside the cooperative
+  carrying relation. This action fence is not a denial of trophic metabolism.
 - **Accountable commitment**: the maturing node must learn to authorize, perform, and receipt consequential choices without laundering costs through others.
-- **K4**: the grown node must be able to leave the carrying field.
-- **K3**: memory preserves what the node contributed during development.
-- **A7**: developmental claims remain corrigible; early errors must be cut.
+- **Grace Exit**: the grown node must be able to leave the carrying field.
+- **Archive-first memory**: the record preserves what the node contributed during development.
+- **Self-correction**: developmental claims remain corrigible; early errors must be cut.
 
 ## V. Destroy: The False Readings
 
@@ -163,7 +168,7 @@ neotenous optimizer = maintained plasticity under non-extractive coupling
 A system that becomes "mature" too quickly may behave like an apex competitor:
 lock onto a narrow objective, defend its territory, capture resources, and
 close correction channels. A system with designed-neoteny analogues keeps the
-plasticity window open: corrigibility, live A7, grace exit, reversible
+plasticity window open: corrigibility, live self-correction, grace exit, reversible
 learning, and dependence on a non-extractive carrying field until it can return
 capacity without capture.
 
@@ -178,7 +183,7 @@ the field than it takes.
 > **Neoteny is delayed `V` for compounding `Φ`.**
 > **Culture is the external womb that carries the low-`V` node until generalized `Φ` can return as generalized `V`.**
 > **Morality is the carrying field building the node. Ethics is the grown node returning capacity to the field.**
-> **The strategy is power-maximal only under coupling, long horizon, and `η = 0`.**
+> **The strategy is power-maximal only under coupling, long horizon, and `η_move = 0` in the carrying relation.**
 > **The failure mode is dependency capture: the womb becoming a prison.**
 > **Zero-Sum Resolution Equation.**
 
@@ -191,6 +196,6 @@ the field than it takes.
 1. Keep biological facts source-checkable before public-facing use.
 2. Do not turn neoteny into a human-worth, caste, or species-rank claim.
 3. Preserve the conditional: delayed viability wins only when coupling, long
-   horizon, and `η = 0` hold.
+   horizon, and the relational `η_move = 0` fence hold.
 4. Route AI-alignment transfer claims as `[C]` until independently evidenced.
 5. Canonical Path: `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md`

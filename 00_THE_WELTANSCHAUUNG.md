@@ -80,6 +80,16 @@ gate and creates no additional owner.
 - **The seam is never the score** — CC-CORE-1: the kernel `[A]` and the ethics bridge are two objects; the bridge is a wager
 - **AND-class, never "product forced"** — keel-108
 - **Lens, never discovered-universal** — the Rosetta is a translation instrument, not a proof of the traditions
+- **Coordinates, never a caste ladder** — trophic stratum, species, replicator
+  layer, Rosetta function, and dignity remain distinct; human rows cooperate
+  and may be trained, combined, or changed
+- **Typed η, never a bare zero** — `η_ratio=1` is declared trophic balance,
+  `η_move=0` is the relational action fence, and `η_domain` names the
+  bearers, payer, beneficiary, baseline, horizon, consent, reversibility, and
+  regenerative capacity
+- **Bounded mating exception** — sexual selection does not license general
+  social or economic predation; Tantra/Vajrayana transmutation remains a
+  symbolic, historical/practice, and testable `[I/C]` proposal
 - **Wager grammar for W0, never disclosure** — Spinoza / Hegel / Tegmark stand in its lineage; none can prove it
 - **The retelling rule** (r131 §9): the knife cut proof-status; the load-bearing uses stand
 - **No believers as metric** — adherents are not a success metric; a worldview that needs believers has already failed

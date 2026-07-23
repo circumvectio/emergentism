@@ -19,7 +19,9 @@ without assent, the claims priced, the deaths dated, and the exit visible.
 4. [`contribute/`](contribute/) — bounded compute, local runs, review, and evidence.
 5. [`practice/`](practice/) — use the discipline without required assent.
 6. [`record/`](record/) — corrections, nulls, and dated deaths.
-7. [`exit/`](exit/) — put the map down.
+7. [`ecology/`](ecology/) — trophic, replicator, Rosetta, and mating-domain
+   coordinates without caste collapse.
+8. [`exit/`](exit/) — put the map down.
 
 The detailed spine remains available at [`dimensions/`](dimensions/) and
 [`0/`](0/) through [`6/`](6/). The older [`compass/`](compass/) remains a

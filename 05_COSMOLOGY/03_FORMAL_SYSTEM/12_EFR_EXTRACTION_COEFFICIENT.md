@@ -6,19 +6,19 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S]"
-  canonical_phrase: "THE EXTRACTION COEFFICIENT (η)"
+  canonical_phrase: "THE EXTRACTION COEFFICIENT (η_ratio)"
 ---
 
-> 🟡 **CORRECTED (v3.0) — 2026-04-05**
-> **Evidence Tier:** [S] Structural for Lotka-Volterra formalization; [C] Conjecture for Good/Bad/Evil mapping
-> **History:** v1.0 FAILED peer review (predator's η w.r.t. prey is ∞ not <1; logical error in proof). v2.0 removed circular predator proof, replaced with substrate-maintenance criterion, added "Two Scopes of η" section. v3.0 adds Population-Dynamics Proof formalizing the categorical break via Lotka-Volterra vs. uncoupled exponential dynamics.
-> **Status:** Categorical break now formalized. [S] tier for dynamical-systems claim. [C] tier for moral-ontological mapping. Awaiting independent verification by ecological modeler.
+> 🟡 **CORRECTED (v3.1) — 2026-07-23**
+> **Evidence Tier:** [S] for the stated classical Lotka–Volterra equilibrium and closed-orbit result; [C] for the selected bounded/ground-negating distinction and Good/Bad/Evil mapping
+> **History:** v1.0 FAILED peer review (predator's `η_ratio` w.r.t. prey is ∞ not <1; logical error in proof). v2.0 removed the circular predator proof. v3.0 added a population-dynamics contrast but incorrectly described the classical coexistence equilibrium as attracting. v3.1 restores the correct center/closed-orbit result and confines the broader categorical claim to `[C]`.
+> **Status:** Model contrast repaired. The classical equilibrium is a center, not an attractor. Generalisation to real ecosystems, cancer, or moral categories still requires independent evidence.
 > **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
 
 ---
 
 
-> **Register bridge (2026-07-22, per `46_THE_ETA_CONVERSION_MAP.md`).** The η
+> **Register bridge (2026-07-22, per `46_THE_ETA_CONVERSION_MAP.md`).** The `η_ratio`
 > defined in this paper is the **ratio register** (`η_ratio`): break-even is
 > **1**, not 0. It is *not* the action fence `η_move = 0` (the R1
 > non-extraction rule), whose zero names non-extraction, and not a study's `η_domain`. The
@@ -28,17 +28,17 @@ rosetta:
 > the register gap recorded by Receipt 158: this file previously presented the ratio as *the*
 > definition with no register marker.
 
-# THE EXTRACTION COEFFICIENT (η)
+# THE EXTRACTION COEFFICIENT (`η_ratio`)
 
-## Formal Definition of Good, Bad, and Evil (v3.0)
+## Formal Definition of Good, Bad, and Evil (v3.1)
 
-**Status:** Corrected after peer review; categorical break now formalized
-**Date:** 2026-04-05
-**Evidence Tier:** [S] Structural (Lotka-Volterra dynamics); [C] Conjecture (moral-ontological mapping)
+**Status:** Corrected after peer review; model contrast stated without an attractor claim
+**Date:** 2026-07-23
+**Evidence Tier:** [S] for the declared classical Lotka–Volterra result; [C] for generalised ecology and moral-ontological mapping
 **Purpose:** Provide the moral-ontological foundation for the Magnum Opus
-**Version:** v3.0 — population-dynamics proof added; categorical break formalized via coupled vs. uncoupled dynamics
+**Version:** v3.1 — classical center/closed-orbit correction; categorical extension retiered
 
-> **v2.0 correction:** The original predator/cancer proof contained a logical error: it claimed the predator has η < 1 because it "would starve without prey," but η is defined as extraction/contribution, and a predator contributes nothing to its prey's substrate. The predator's η w.r.t. prey is formally ∞, not <1. The predator-prey cycle is maintained by population dynamics and co-evolution, not by the predator's η being bounded. The categorical break between Bad and Evil is now justified by the substrate-maintenance criterion (whether the system's operation preserves the regenerative capacity of its environment) rather than by the predator's individual η. Tier corrected from [S] to [C] — Good/Bad/Evil are normative categories mapped onto structural features, not structural derivations.
+> **v2.0 correction:** The original predator/cancer proof contained a logical error: it claimed the predator has `η_ratio < 1` because it "would starve without prey," but the ratio is extraction/contribution, and a predator contributes nothing to its prey's substrate. The predator's prey-relative `η_ratio` is formally ∞, not <1. Predator–prey cycling is maintained by the declared population dynamics, not by the predator's individual ratio being bounded. The Good/Bad/Evil categories remain normative mappings, not structural derivations.
 
 ---
 
@@ -52,62 +52,79 @@ Without this axis, the reader has no vocabulary for distinguishing natural destr
 
 ## The M-Axis: Moral Core State
 
-### Definition: η (Extraction Coefficient)
+### Definition: `η_ratio` (Extraction Coefficient)
 
-Let η represent the ratio of what a system takes from its substrate to what it contributes:
+Let `η_ratio` represent the ratio of what a system takes from its substrate to what it contributes:
 
 ```
-η = (extraction) / (contribution)
+η_ratio = (extraction) / (contribution)
 ```
 
-- **η < 1:** The system contributes more than it takes (symbiotic)
-- **η = 1:** The system takes and gives equally (trophic balance)
-- **η > 1:** The system takes more than it gives (parasitic)
-- **η → ∞:** The system eliminates the substrate's capacity to generate (ground negation)
+- **`η_ratio < 1`:** The system contributes more than it takes (symbiotic)
+- **`η_ratio = 1`:** The system takes and gives equally (trophic balance)
+- **`η_ratio > 1`:** The system takes more than it gives (parasitic)
+- **`η_ratio → ∞`:** The chosen denominator approaches zero while extraction persists (candidate ground-negation signal)
 
 ### The Three Levels
 
-| Level | Name | η | Operation | Ground Status |
+| Level | Name | `η_ratio` | Operation | Ground Status |
 |-------|------|---|-----------|---------------|
-| **Good** | Ektropy | η < 1 | Cooperative, positive-sum integration | Φ present, expanding |
-| **Bad** | Clearing | η ≈ 1 | Natural destruction within cycle | Φ intact, cycle turns |
-| **Evil** | Ground Negation | η → ∞ | Engineered elimination of regeneration | Φ declared absent |
+| **Good** | Ektropy | `η_ratio < 1` | Cooperative, positive-sum integration | Φ present, expanding |
+| **Bad** | Clearing | `η_ratio ≈ 1` | Natural destruction within cycle | Φ intact, cycle turns |
+| **Evil** | Ground Negation | `η_ratio → ∞` | Elimination of declared regeneration | Φ declared absent |
 
 ### The Critical Distinction
 
 **Bad and Evil are categorically different, not degrees of the same thing.**
 
-- The predator (Bad) kills the prey but does not eliminate the capacity for future prey. The cycle continues. The ground holds.
-- The cancer (Evil) eliminates the host's capacity to regenerate. The cycle stops. The ground is salted.
+- A modeled predator–prey system may cycle while preserving positive populations
+  under its declared equations. This does not prove every real trophic system
+  persists.
+- A stipulated depletion model can cross an irreversible regenerative floor.
+  Calling a real cancer or institution ground-negating requires separate
+  evidence, boundary, and horizon.
 
-**The distinction:** [C] A predator's extraction is bounded by population dynamics — co-evolution enforces equilibrium because prey collapse eliminates the predator's substrate. The predator's η is not literally < 1 (a predator extracts everything from each individual prey), but the *system-level* extraction rate is bounded by the prey's regeneration rate.
+**The distinction:** `[C]` A predator's individual `η_ratio` with respect to
+one prey can be infinite, while a declared system-level ratio can remain finite
+and periodic. Classical Lotka–Volterra does not enforce convergence; it supplies
+a center with closed orbits under its idealized assumptions.
 
-A cancer extracts without regenerative constraint — η → ∞ at the system level until the host is gone. The cancer eliminates the substrate it depends on.
+A separately stipulated uncoupled depletion model can make `η_ratio`
+diverge. Actual cancer biology is not established by that contrast.
 
-**The categorical break:** η → ∞ is not "η = 1 taken to extremes." It is a qualitative discontinuity. Below η → ∞, the system maintains the substrate. At η → ∞, the system eliminates the substrate. These are different operations, not different degrees.
+**The selected categorical proposal `[C]`:** preserve regenerative capacity
+over the declared horizon versus erase it. A divergent `η_ratio` can diagnose
+the latter in some models, but the moral category is not derived from the
+number alone.
 
 ---
 
-## Two Scopes of η
+## Two scopes of `η_ratio`
 
-η operates at two distinct scales:
+`η_ratio` operates at two distinct scales:
 
 | Scope | What It Captures | Interpretation |
 |-------|-----------------|----------------|
 | **Single system** | Extraction ratio (what system takes vs gives) | Instantaneous measure — can fluctuate |
 | **Network / structural** | Extraction coefficient (standing wave vs substrate) | Persistent diagnostic — defines the system's category |
 
-**The instantaneous η is a measure. The structural η is a diagnostic.**
+**The instantaneous ratio is a measure. The structural ratio is a diagnostic.**
 
-A system can have η > 1 temporarily (bad quarter, crisis response) without being parasitic. Structural η > 1 means the system is architecturally parasitic — it will continue extracting regardless of circumstances.
+A system can have `η_ratio > 1` temporarily without being architecturally
+parasitic. A persistent ratio above one is evidence only relative to the
+declared baseline, horizon, and regenerative model.
 
-**The test:** η > 1 temporarily is Bad. Structural η → ∞ permanently is Evil.
+**The test:** name the domain and regenerative floor; do not infer moral status
+from one instantaneous ratio.
 
 ---
 
-## The Population-Dynamics Proof (v3.0)
+## The population-dynamics contrast (v3.1)
 
-The v2.0 correction identified the problem: a predator's individual η w.r.t. prey is ∞, yet predators are Bad (cyclical), not Evil (ground-negating). The substrate-maintenance criterion was asserted but not formalized. This section provides the formalization.
+The v2.0 correction identified the problem: a predator's individual ratio with
+respect to prey can be infinite while the system-level model remains bounded.
+This section states the classical result and one contrast model; it does not
+formalize a universal moral break.
 
 ### 1. Lotka-Volterra: The Predator Case
 
@@ -140,21 +157,39 @@ Substituting y* into η_sys:
 η_sys* = β(α/β) / α = 1
 ```
 
-**Result:** [S] At the Lotka-Volterra equilibrium, η_sys = 1 exactly. The system self-regulates to trophic balance.
+**Result:** [S] At the Lotka-Volterra coexistence equilibrium, `η_sys = 1`
+exactly. The classical coexistence equilibrium is a center. Outside that
+equilibrium, positive trajectories form closed periodic orbits around it. It does **not**
+converge to the equilibrium or supply a basin of attraction.
 
-**The negative feedback mechanism:** If predators over-extract (η_sys > 1), prey declines, which starves predators, which reduces y, which reduces η_sys back toward 1. If predators under-extract (η_sys < 1), prey grows, predators thrive, y increases, η_sys rises back toward 1. The coupling between predator and prey populations creates a basin of attraction around η_sys = 1.
+**The cycling mechanism:** If predators over-extract (`η_sys > 1`), prey
+declines; after a phase lag, predators decline and `η_sys` falls. If predators
+under-extract, prey can grow; after a phase lag, predators grow and `η_sys`
+rises. In the classical equations this produces neutral oscillation around the
+coexistence equilibrium, not damping toward it. Density dependence, functional
+responses, spatial structure, stochasticity, or other mechanisms are needed
+for claims about attraction in real ecosystems.
 
-**Key insight:** The individual predator's η w.r.t. a single prey is ∞ (total extraction, zero contribution). But the SYSTEM-level η_sys is bounded at 1 because the predator population is dynamically coupled to the prey population. The predator cannot escape this coupling — over-extraction destroys the predator, not just the prey.
+**Key insight:** The individual predator's `η_ratio` with respect to a single
+prey can be infinite (total extraction, zero contribution), while the modeled
+system ratio remains finite and cycles around `1` on a closed classical orbit.
+The equilibrium value is `1`; the orbit is not identically `1`. The broader
+claim that real trophic systems are bounded requires a separately stated model
+and evidence.
 
-### 2. Cancer: The Uncoupled Case
+### 2. A stipulated uncoupled contrast
 
-[S] Cancer cell growth within a host:
+`[A]` Consider the following deliberately simplified exponential-growth model.
+It is a mathematical contrast, not a sufficient model of cancer biology:
 
 ```
 dC/dt = rC      (exponential growth, rate r > 0)
 ```
 
-This is NOT a Lotka-Volterra system. The critical structural difference: cancer growth rate r is not coupled to host health. There is no term of the form (-γC) that increases as the host weakens. The cancer does not "starve" as the host declines — it continues growing until physical resource exhaustion.
+This is not a Lotka–Volterra system. In the stipulated equations, growth rate
+`r` is not coupled to host health. No claim follows that actual cancers lack
+feedback, resource limits, immune interaction, spatial structure, or treatment
+response.
 
 **System-level extraction rate:**
 
@@ -168,23 +203,45 @@ As cancer grows exponentially and host capacity H declines:
 dH/dt = -rC + σ      (host loses resources to cancer, regenerates at rate σ)
 ```
 
-Once rC > σ (cancer consumption exceeds host regeneration), H declines monotonically. As H → 0, η_sys → ∞. There is no negative feedback loop: the cancer does not reduce its growth rate as the host weakens. The system has no finite attractor.
+Once `rC > σ` in this model, `H` declines monotonically. As `H → 0`, the
+chosen ratio diverges. The result belongs to the stipulated equations only.
 
 ### 3. The Formal Criterion
 
-**Definition (Trophically Bounded).** A system S operating on substrate G is *trophically bounded* if its system-level extraction rate η_sys possesses a finite attractor under the system's own dynamics — i.e., the dynamics of S include a negative feedback coupling between S's extraction rate and G's capacity, such that η_sys converges to a finite equilibrium.
+**Definition (Trophically Bounded).** A system `S` operating on substrate `G`
+is *trophically bounded over a declared horizon* if its system-level extraction
+rate `η_sys` remains inside a finite invariant or absorbing set under the
+declared dynamics. Convergence to a finite equilibrium is one possible case;
+bounded periodic orbit is another.
 
-**Definition (Ground-Negating).** A system S operating on substrate G is *ground-negating* if η_sys has no finite attractor under the system's own dynamics — i.e., S's extraction rate is not coupled to G's declining capacity, and η_sys diverges as G is depleted.
+**Definition (Ground-Negating).** A system `S` operating on substrate `G` is
+*ground-negating over a declared horizon* if the chosen system ratio diverges
+or regenerative capacity crosses a declared irreversible floor under the
+stated dynamics. This is a framework definition `[I/C]`, not a theorem that
+every uncoupled system behaves this way.
 
 **Theorem (sketch).**
 
-> In any coupled predator-prey system with Lotka-Volterra dynamics (or any system with analogous negative feedback between extraction and substrate), η_sys converges to a finite equilibrium.
+> In the classical two-species Lotka-Volterra predator-prey model with positive
+> initial populations, `η_sys` remains finite and oscillates on a closed orbit
+> around the coexistence value `1`; it does not converge to that value.
 >
-> In any uncoupled exponential growth system (or any system lacking negative feedback between extraction and substrate), η_sys diverges.
+> A specifically declared uncoupled exponential model can make `η_sys`
+> diverge while regenerative capacity is treated as bounded. This is a
+> model-specific contrast, not a theorem about every system lacking one named
+> feedback term.
 >
-> The categorical break between trophically bounded and ground-negating systems is a structural property of the coupling topology, not a matter of degree.
+> The proposed categorical break between trophically bounded and
+> ground-negating systems is `[C]` when extended beyond those declared models.
 
-**Proof sketch.** For Lotka-Volterra: the equilibrium (x*, y*) is a center in the phase plane; trajectories orbit it. η_sys = βy/α oscillates around 1. The system cannot reach η_sys → ∞ without y → ∞, which requires x → ∞ (since dy/dt > 0 only when δx > γ), creating an unbounded positive feedback loop that contradicts the bounded orbits of the Lotka-Volterra system. For uncoupled exponential growth: dC/dt = rC has solution C(t) = C₀e^(rt). Since H is bounded and C grows without bound, η_sys = rC/σ → ∞ as t → ∞. No structural mechanism arrests this divergence. QED (sketch).
+**Proof sketch.** For classical Lotka-Volterra, the coexistence equilibrium is a
+center and positive non-equilibrium trajectories follow conserved closed level
+sets; `η_sys = βy/α` therefore oscillates rather than converges. For the
+stipulated exponential contrast, `C(t)=C₀e^(rt)` and a separately bounded
+regeneration denominator makes the chosen ratio diverge. This establishes the
+contrast between these two models only. It does not prove that every ecological
+predator-prey system is bounded or that every cancer follows uncoupled
+exponential growth.
 
 ### 4. The Mapping to Good / Bad / Evil
 
@@ -192,16 +249,23 @@ Once rC > σ (cancer consumption exceeds host regeneration), H declines monotoni
 
 | Dynamical Category | η_sys Behavior | Moral Category | Example |
 |--------------------|---------------|----------------|---------|
-| Mutualistic coupling | η_sys < 1 (finite attractor below 1) | **Good** | Mycorrhizal networks, open-source ecosystems |
-| Predatory coupling | η_sys ≈ 1 (finite attractor at 1) | **Bad** | Predator-prey cycles, creative destruction, market competition |
-| Uncoupled extraction | η_sys → ∞ (no finite attractor) | **Evil** | Cancer, Ponzi schemes, totalitarian resource extraction |
+| Regenerative coupling | `η_sys < 1` over the declared horizon | **Good** `[C]` | candidate mutualistic cases |
+| Trophic coupling | equilibrium `η_sys = 1`; bounded motion may cycle | **Bad** `[C]` | classical predator–prey model as formal analogy |
+| Ground-negating dynamics | ratio diverges or regenerative floor is crossed | **Evil** `[C]` | stipulated depletion models; institutional analogies require evidence |
 
-**The categorical break is between coupled and uncoupled dynamics.** A system with any finite attractor for η_sys — whether at 0.5 or at 1 or at 1.5 — is categorically different from a system with no finite attractor. The former preserves the substrate (even if roughly). The latter eliminates it. This is a topological property of the phase space, not a quantitative threshold.
+**Selected categorical proposal `[C]`.** The proposed break is between dynamics
+that preserve regenerative capacity over the declared horizon and dynamics
+that erase it. A finite equilibrium is not required: a bounded cycle may also
+preserve the modeled ground. Coupling alone is insufficient, and the proposal
+is not established as a universal topological law.
 
 ### 5. Evidence Tier and Kill Criterion
 
 **Evidence tiers:**
-- [S] Structural: The Lotka-Volterra equilibrium result and the divergence of uncoupled exponential growth are established mathematical ecology. The definitions of trophically bounded and ground-negating are structural.
+- [S] Structural: In the declared classical Lotka–Volterra model the coexistence
+  equilibrium has `η_sys = 1` and positive non-equilibrium trajectories are
+  closed periodic orbits around a center. Divergence follows analytically for
+  the separately stipulated exponential contrast.
 - [C] Conjecture: The mapping of these dynamical categories onto Good/Bad/Evil is a normative interpretation, not a mathematical derivation. The claim that moral categories track coupling topology is a philosophical thesis.
 
 **Kill criterion:** If a system with η_sys → ∞ (ground-negating dynamics) can achieve stable coexistence with its substrate WITHOUT structural modification to introduce negative feedback coupling, the categorical break fails and the three-level model collapses to a continuum.
@@ -212,7 +276,7 @@ Once rC > σ (cancer consumption exceeds host regeneration), H declines monotoni
 
 The M-Axis connects to every other axis:
 
-| Axis | Relationship to η |
+| Axis | Relationship to `η_ratio` |
 |------|-------------------|
 | D (Dimensions) | Evil operates at D4 (physical extraction) and D5 (informational extraction) |
 | L (Levels) | Evil is L1-L2 operating at scale (survival-level extraction applied systemically) |
@@ -223,22 +287,21 @@ The M-Axis connects to every other axis:
 
 ## What Would Falsify This
 
-1. **No categorical break found:** If η → ∞ is reachable through gradual increase of η > 1, the three-level model is wrong
+1. **No categorical break found:** If `η_ratio → ∞` is reached without the proposed regenerative discontinuity, the three-level model is wrong
 2. **Evil operates regeneratively:** If ground negation somehow preserves the substrate, the model is wrong
-3. **Good and Evil are interchangeable:** If systems can switch between η < 1 and η → ∞ without structural change, the model is wrong
+3. **Good and Evil are interchangeable:** If systems can switch between `η_ratio < 1` and `η_ratio → ∞` without structural change, the model is wrong
 
 ---
 
 ## Summary
 
 ```
-η < 1: Good (symbiotic)
-η ≈ 1: Bad (trophic balance)
-η → ∞: Evil (ground negation)
+η_ratio < 1: candidate regenerative relation
+η_ratio ≈ 1: declared trophic balance
+η_ratio → ∞: candidate ground-negation signal
 
-The categorical break is at η → ∞.
-Not a continuum. A discontinuity.
-Good and Evil are different operations, not different degrees.
+The selected categorical proposal concerns regenerative capacity, not a bare
+number. Its moral mapping remains [C].
 ```
 
 *Extraction Coefficient | 2026-03-22 | Good, Bad, and Evil are categorically different.*
@@ -265,4 +328,7 @@ Good and Evil are different operations, not different degrees.
 
 ---
 
-> **Status:** CORRECTED (v3.0) — population-dynamics proof added; categorical break formalized via Lotka-Volterra vs. uncoupled dynamics. Tier: [S] for dynamical claim, [C] for moral mapping. Awaiting independent verification by ecological modeler. See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.
+> **Status:** CORRECTED (v3.1) — the classical coexistence equilibrium is a
+> center with closed periodic orbits, not an attractor. Tier: [S] for that
+> declared model result; [C] for ecological generalisation and moral mapping.
+> See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.

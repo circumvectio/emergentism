@@ -40,7 +40,9 @@ non-extraction, while `η_move > 0` names extraction or closure."*
 
 - **Type:** a binary/ordinal fence on an *action or standing arrangement*.
 - **Zero means:** the fence holds — no sustained extraction.
-- **This is the R1 non-extraction rule.** It is a *rule*, not a measurement.
+- **This is the R1 relational action fence.** It governs cooperative, social,
+  and institutional arrangements; it is a *rule*, not a measurement and not a
+  denial of ecological consumption.
 - Tier: `[S]` as constitutional structure; the vow itself `[I]`.
 
 ### 1b · `η_ratio` — the log-accounting diagnostic (measurement register)
@@ -135,6 +137,14 @@ is not honest. `[S]`
 complexity and Kolmogorov complexity — different units, no conversion exists.
 See `00_KSTAR_DISAMBIGUATION.md`; the identity `A7 = K* = 0` is FG-4. `[S]`
 
+**N-6 · No trophic/replicator/Rosetta conversion.** `[S]` A trophic stratum
+(producer, primary, secondary, tertiary consumer), a replicator layer
+(Genotype through Egregoreotype), a Rosetta row, a species, and a mating domain
+are distinct coordinates. No `η` value converts one into another. In
+particular, `η_ratio = 1` for a declared predator-prey system does not license
+human institutional extraction, and a higher replicator or Rosetta position
+does not create a lower trophic prey class.
+
 ---
 
 ## 4 · Worked reading (one arrangement, three registers)
@@ -154,6 +164,18 @@ A marketplace charges a 2% fee on transactions.
   defensible declaration showing net depletion ⟹ the fence is breached; the
   fee must fall or the arrangement must end. One bad quarter proves nothing
   (N-2); a slogan proves nothing (N-3).
+
+### Cross-trophic reading
+
+An eagle consuming a rabbit can have prey-relative `η_ratio → ∞` at the
+individual encounter while a declared predator-prey population has a bounded,
+oscillating system ratio. That ecological fact does not itself instantiate a
+social `η_move` judgment. A human fishery, farm, hunt, or habitat intervention
+must additionally declare the population boundary, regeneration, welfare and
+human consequence bearers, alternatives, feedback coupling, and irreversible
+cost. That declaration includes the system's **regenerative capacity** over the
+chosen horizon. Neither the individual encounter nor the system ratio alone
+settles the Justice question.
 
 ---
 

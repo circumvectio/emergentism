@@ -35,7 +35,8 @@ evidence_tier: "[S] for build artifacts; [B] for path and timestamp evidence."
 ## Page Structure
 
 1. **Hero** — "The door is marked on the inside." Kicker, headline, subtitle, evidence tier [S], CTA row.
-2. **What K4 Means** — Four cards: [A] Leave with everything, [B] No extraction, [S] Enforced by code, [I] Grace not mere permission.
+2. **What K4 Means** — Four cards: [A] Leave with what you came with (the organism retains nothing of yours by claim), [B] No extraction, [S] Enforced by code, [I] Grace not mere permission.
+   > *Wording note (2026-07-23).* Card 1's guarantee was previously labeled "Leave with everything." That shorter tagline was retracted 2026-06-10 (Box D / receipt 157) as an overclaim and superseded by the full K4 envelope wording above. The deployed `exit/index.html` already uses post-retraction phrasing ("Leave without penalty, keep the useful method"). This design doc's checklist table below retains the old label as a row-name pointer for audit traceability; the guarantee itself is the envelope wording.
 3. **How to Exit** — Four numbered steps: Export, Rotate, Close, Return. Each with evidence tier.
 4. **Verify It Yourself** — Three verify cards (Open Source, Running Tests, Public Audit) + animated terminal console showing `npm run test:k4` output.
 5. **Sibling Invariants** — Six fence cards linking to Five + One Constitution: η=0, K2, K3, K4 (active), A7, Ω.

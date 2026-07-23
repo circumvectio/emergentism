@@ -15,11 +15,11 @@ rosetta:
   operator: "Brahmā ○"
   tier: "God"
   regime: "Brāhmaṇa"
-  register: "[S/I]"
+  register: "[S/I/C]"
   canonical_phrase: "Rosetta Stone — the replicator stack on the L-axis"
 title: "Rosetta Stone: The Replicator Stack (Biology)"
 status: "ACTIVE — per-domain Rosetta application. Reading II (biological), refined by Epigenotype. Coexists with the closed LIMIT_B Reading I (cognitive); does not overturn it."
-evidence_tier: "[S] for the C4 stack and the L-positions; [I] for the layer↔level correspondence (cross-domain mapping); [S/I] for L1-as-ground (grounded in the Master Rosetta's 'excluded from the dharmic cycle' reading)."
+evidence_tier: "[S] for established biological genotype, regulation, phenotype, plasticity, and division-of-labour observations; [I/C] for the six-layer C4 extension, layer↔level correspondence, and human polyphenotypic reading; [S/I] for L1-as-ground inside the Master Rosetta."
 created: 2026-06-16
 owner: Yves R. Burri
 parents:
@@ -33,7 +33,12 @@ parents:
 ## Corollary C4 mapped to the seven L-levels
 
 **Hat:** 🧬 Cross-Domain Translation (Biology / Replicator Theory)
-**Evidence Tier:** `[S]` for the C4 stack (established biology for the first three layers, structural extension for the last three) and for the L-positions on S². `[I]` for the **layer ↔ level correspondence** itself — this is a cross-domain Rosetta mapping, interpretive unless separately evidenced (per the ROSETTA_STONE evidence shim). `[S/I]` for L1-as-ground.
+**Evidence Tier:** `[S]` for the separately sourced biological observations
+about genotype, expression regulation, phenotype, plasticity, and division of
+labour. `[I/C]` for the **six-layer C4 extension**, the **layer ↔ level
+correspondence**, and its proposed reading in humans. `[S/I]` for L1-as-ground
+inside the Master Rosetta. Geometry can fix a row position without proving the
+world-level correspondence placed on that row.
 **Kill Criteria:** If a reproducing system is exhibited whose replicator layers cannot be placed in this ascending order against the L-positions — or if the Caṇḍāla/L1 boundary is shown to carry a *replicator layer of its own* (rather than being the substrate/firewall the stack rests on) — this mapping falls. See §Kill Criteria.
 **Source:** Corollary C4 (`00_THE_SEVEN_AXIOMS.md`); the Master Rosetta varṇa table (`00_THE_MASTER_ROSETTA.md` §Varṇa); the Limit-B disambiguation packet (2026-04-23).
 
@@ -101,6 +106,55 @@ Three guardrails follow, and any use of this table must carry them:
 2. **Historical priority is not ontological priority.** A replicator layer's *position* in the ascent is not a rank of value. (`194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT` §1.2: the captured-priesthood move is "transmuting historical priority into ontological priority"; the framework's anti-capture project is the explicit refusal of that move.)
 3. **The sphere is not a ladder.** All seven positions share the same potential φ·ν = 1. L4 (Phenotype) has maximum *balance*, not maximum *rank*. A mapping that reads as a hereditary hierarchy of human beings has been captured and must be refused.
 
+## Polyphenotypic human reading — specialized, changeable functions
+
+`[I/C]` The proposed human correspondence is functional rather than
+taxonomic: shared humanity can express different, complementary Rosetta
+functions through disposition, development, training, circumstance, and life
+stage. A person may specialize, combine rows, or change operative row. No row
+is a birth class, a fixed genome, a species, a trophic stratum, or a measure of
+worth.
+
+The ant analogy supplies one architectural insight only: one social organism
+can coordinate differentiated functions. Ant caste development is itself
+biologically plastic and can involve environmental, maternal, hormonal, and
+genetic effects; it does **not** establish genetic equivalence between ant
+castes and human roles. Nor does insect division of labour prove that a human
+Rosetta assignment is natural, optimal, or compulsory.
+
+The Power-Max corollary therefore reads the seven functions as cooperating
+organs. Complementarity may enlarge collective reach, while specialization can
+also produce bottlenecks, dependency, elite capture, and lost flexibility.
+Those rival effects must remain visible. Caste differentiation creates no
+trophic relation among humans and grants no higher row an extraction right
+over a lower row.
+
+**Warrant:** the mapping combines the active L1/L2–L7 table above with
+independently observed phenotypic plasticity and division of labour. The human
+role claim is an interpretation and testable organizational hypothesis, not a
+biological classification.
+
+**Strongest rival:** human task differentiation may be better explained by
+learned skill, institutions, incentives, class power, and situational demand
+without any Rosetta or replicator correspondence. Specialization can also
+reduce group performance when it creates inflexible queues or asymmetric
+control.
+
+**Discriminator:** in voluntary settings, compare the Rosetta reading with
+simpler task-allocation models using preregistered measures of role mobility,
+coordination quality, option coverage, coercion, and distribution of costs.
+
+**Kill criterion:** reject the human reading if row assignment is not more
+predictive or useful than simpler rivals, if people cannot reliably change or
+combine functions, or if the mapping repeatedly produces hereditary status,
+worth ranking, coerced assignment, or extraction between rows.
+
+**External source anchors:** [ant phenotypic plasticity and caste
+development](https://pmc.ncbi.nlm.nih.gov/articles/PMC4666092/), [maternal
+effects in ant caste determination](https://pmc.ncbi.nlm.nih.gov/articles/PMC3704040/),
+and a [comparative review of division of labour and its possible
+inefficiencies](https://pmc.ncbi.nlm.nih.gov/articles/PMC11923618/).
+
 ---
 
 ## Relationship to Limit B (this does not overturn the closed decision)
@@ -140,13 +194,19 @@ This column of the Rosetta is wrong if:
 
 ---
 
-## The Helios Expression
+## Application boundary
 
-The Helios venture (`03_VENTURES/HELIOS/HELIOS_YOU/`) is this same six-layer stack realised as a **product** ascent — the public, commercial face of the biological column:
+Venture or product projections may reuse this six-layer stack, including the
+historical Helios expression, but they are downstream applications. They do
+not supply evidence for the biological column, the human functional reading,
+or pure Emergentism. No commercial implementation is a premise of this file.
+
+For provenance only, the earlier Helios projection used the following
+crosswalk:
 
 | L | Replicator layer | Helios product |
 |---|------------------|----------------|
-| L1 | ground / firewall | the honesty gate (not-medical-advice; receipts; η = 0) |
+| L1 | ground / firewall | the honesty gate (not-medical-advice; receipts; `η_move = 0`) |
 | L2 | Genotype | Genetic testing (third-party labs) |
 | L3 | Epigenotype | Peptides / signalling |
 | L4 | Phenotype | Ketones / metabolic fuel |
@@ -154,11 +214,15 @@ The Helios venture (`03_VENTURES/HELIOS/HELIOS_YOU/`) is this same six-layer sta
 | L6 | Memotype | A culture with events (HYROX / CrossFit model) |
 | L7 | Egregoreotype | The brand and its equity |
 
-Same structure, two faces: the framework's biological column here, the product stack there. The Helios `HELIOS_YOU/00_README.md` carries the product-side note; this file is the canon-side anchor it points back to.
+The crosswalk is `[I]` application history, not a validated human ontology or
+an instruction to preserve the product mapping.
 
 ---
 
-*Rosetta Stone: The Replicator Stack — Corollary C4's six layers mapped one-to-one onto L2–L7, with L1/Caṇḍāla as the excluded ground. Reading II, refined by Epigenotype. Coexists with the closed Reading I; overturns nothing. Structural position, never worth-by-birth — the sphere is not a ladder.*
+*Rosetta Stone: The Replicator Stack — Corollary C4's six layers mapped
+interpretively onto L2–L7, with L1/Caṇḍāla as the ground/firewall. Human
+functions are specialized but changeable cooperating organs: never trophic
+prey, hereditary worth classes, or a ladder.*
 
 *•   ⊙   ○*
 

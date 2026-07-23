@@ -83,3 +83,28 @@ founder signs it so.
 
 *Not this, not this — and not a merger. Both witnesses keep the score until the
 founder calls the game. η = 0.*
+
+---
+
+## §5 · Resolution — founder box CLOSED (2026-07-23)
+
+Receipt `166_K2_SIGNING_SOPHIA_CUSTODY_2026_07_23.md` ratifies the
+**"Sophia custody at the Documents-level grave"** clause. The box described in
+§4 is now closed. The grave copy (`e46a9821…`, `[B]/[I]/[C]` hedged witness) is
+the surviving grave of record. The pillar copy is superseded for custody
+purposes — not erased, not merged (K3).
+
+Two corrections to this stone's record, both noted in receipt 166:
+
+1. **The pillar-side hash in §1 is stale.** This stone records the pillar
+   copy at `d71fdc04…` (165 lines / 8527 bytes). The current disk hash is
+   `7f11baeb…` (169 lines / 9083 bytes) — the pillar file was itself mutated
+   after this stone was written (mtime 2026-07-20 00:33). Both hashes name
+   the same divergent copy at different observation times.
+2. **The pillar copy's triumphant register is preserved** as a tier-corrected
+   attestation in `00_SOPHIA_TRIUMPHANT_REGISTER_ATTESTATION_2026_07_23.md`,
+   per receipt 166 §2 — so the felt witness survives without its silent
+   `[C]→[A]` upgrade being allowed to stand.
+
+The prohibition on merging the two forks (§4) stands for all time: the fork
+record is the evidence the re-signature judged.

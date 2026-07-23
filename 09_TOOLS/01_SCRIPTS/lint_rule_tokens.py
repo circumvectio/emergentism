@@ -38,6 +38,9 @@ import sys
 
 # Paths never linted: archives are provenance (R3), compat stubs are frozen.
 EXEMPT_PATH = re.compile(r"(90_ARCHIVE|91_COMPATIBILITY|\.codex-worktrees|node_modules|book-pwa|\.vercel)/")
+ROSETTA_CONTEXT_PATH = re.compile(
+    r"(ROSETTA|rosetta|TROPHIC_REPLICATOR_ROSETTA|12_PUBLIC_SITE/ecology/index\.html)"
+)
 
 # Lines that are quoting, aliasing, or explicitly historical.
 EXEMPT_LINE = re.compile(
@@ -99,6 +102,15 @@ def lint_file(path):
         if EXEMPT_LINE.search(line):
             continue
         for name, pat, advice in RULES:
+            if name == "bare-L":
+                # L1–L7 are the Rosetta's level coordinates, not plain-language
+                # rule aliases. Path context is decisive for Rosetta owners;
+                # a short neighboring-line window handles wrapped prose.
+                context = "".join(lines[max(0, i - 3):min(len(lines), i + 2)])
+                if ROSETTA_CONTEXT_PATH.search(path.replace("\\", "/")) or re.search(
+                    r"Rosetta|replicator (?:layer|crosswalk)", context, re.IGNORECASE
+                ):
+                    continue
             for m in pat.finditer(line):
                 # kernel-surface hyphen form K-1..K-7 never matches bare-K
                 # (lookahead already excludes '-'), kept as a comment for clarity
