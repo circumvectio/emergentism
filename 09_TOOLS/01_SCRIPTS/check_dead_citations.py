@@ -79,7 +79,12 @@ STUB_RE = re.compile(
     r"HISTORICAL FORWARDING", re.I)
 MACHINERY_RE = re.compile(r"AUDIT|RECEIPT|TIDY_PLAN|CENSUS|_LEDGER|HANDOFF|CITATION", re.I)
 SKIP_DIRS = {"90_ARCHIVE", "node_modules", ".git", ".lake",
-             ".codex-worktrees", "book-pwa", ".vercel", "__pycache__"}
+             ".codex-worktrees", ".claude", "book-pwa", ".vercel", "__pycache__"}
+# .claude holds nested git worktrees (.claude/worktrees/<name>/) — full repo
+# mirrors. Scanning one doubles every count and re-surfaces already-repaired
+# findings from the mirror as if they were live corpus. A worktree is never
+# the live tree. .codex-worktrees is a SIBLING of the repo so it was never
+# walked; .claude sits INSIDE the root and was, until 2026-07-23.
 HEAD = 1500
 
 

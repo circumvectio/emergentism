@@ -42,7 +42,10 @@ LINK_RE = re.compile(r"\[[^\]]*\]\(([^)\s#]+)[^)]*\)")
 TARGET_RE = re.compile(
     r"^(canonical_target|historical_target|archive_target):\s*(\S+)\s*$", re.M)
 SKIP_DIRS = {"90_ARCHIVE", "91_COMPATIBILITY", "node_modules", ".git",
-             ".codex-worktrees", "book-pwa", ".vercel", "__pycache__"}
+             ".codex-worktrees", ".claude", "book-pwa", ".vercel", "__pycache__"}
+# .claude holds nested git worktrees (full repo mirrors); scanning one doubles
+# every count and re-surfaces repaired findings from the mirror. Never the live
+# tree. (.codex-worktrees is a sibling and was never walked; .claude is inside.)
 HEAD = 1500
 
 

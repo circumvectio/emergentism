@@ -49,7 +49,8 @@ def build(root):
     """returns (docs, text_by_rel, stub_set)"""
     docs, text, stubs = [], {}, set()
     for dirpath, dirnames, filenames in os.walk(root):
-        dirnames[:] = [d for d in dirnames if d not in (".git", "node_modules", "__pycache__")]
+        dirnames[:] = [d for d in dirnames if d not in
+                       (".git", ".claude", ".codex-worktrees", "node_modules", "__pycache__")]
         for fn in filenames:
             if not fn.endswith(SCAN_EXT):
                 continue
