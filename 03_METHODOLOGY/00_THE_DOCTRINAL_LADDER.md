@@ -126,7 +126,7 @@ plain safeguards:
 | Receipts | No receipt, no reality. | Claims need source paths, evidence tiers, and audit trails. |
 | Authorization | Consequential action names principal, mandate, actor, custody, and consequence bearer. | No page may manufacture authority from a model output. |
 | Memory | Archive first; do not erase ground truth. | Public compression may hide complexity, but source truth remains available. |
-| Grace Exit | Leave with everything. | The framework must remain put-down-able; `/exit/` is not ornamental, and `/practice/` carries the sitting practice. (Route names corrected 2026-07-22; `/sit` never existed on the public surface.) |
+| Grace Exit | Leave with what you came with; the organism retains nothing of yours by claim. | The framework must remain put-down-able; `/exit/` is not ornamental, and `/practice/` carries the sitting practice. (Route names corrected 2026-07-22; `/sit` never existed on the public surface. Wording restored 2026-07-23 to the post-retraction K4 envelope per Box D / receipt 157; the earlier "Leave with everything" tagline was retracted 2026-06-10 as overclaim.) |
 
 The authorization boundary is especially important: the website may orient,
 warn, derive, and invite practice. It may not manufacture the reader's consent.

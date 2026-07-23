@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "04_AXIOLOGY — Justice constrains commitment"
 ---
 
-# 04_AXIology — Justice Constrains Commitment
+# 04_AXIOLOGY — Justice Constrains Commitment
 
 This lane owns pure Emergentist value theory. It does not inherit authority or
 warrant from any institution, product, or external governance framework.

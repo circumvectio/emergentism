@@ -102,7 +102,7 @@ The lockfile's integrity hashes guarantee byte-identity for every package. The d
 - **K2** (one natural person signs): the user explicitly authorized. The act is not an agent-discovered irreversibility.
 - **K3** (archive-first): this tombstone IS the archive. The lockfile IS the resurrection contract. The Trash IS the recoverable store.
 - **A7** (self-correction): the act is reversible by name (`mavis-trash` restore, or `pnpm install` regen). No memory hole.
-- **K4** (Grace Exit): the user can leave with everything — the package.json + lockfile is "everything" needed to recreate the deleted content.
+- **K4** (Grace Exit): the user can leave with everything — the package.json + lockfile is "everything" needed to recreate the deleted content. *[Wording note 2026-07-23: "leave with everything" here names the concrete node_modules/lockfile custody guarantee for this deletion act, not the public K4 tagline retracted 2026-06-10 (Box D / receipt 157). Preserved in this frozen tombstone per K3.]*
 
 **The act is η=0-compliant, K3-fenced, A7-self-correctable, K4-graceful, and K2-signed.**
 

@@ -395,8 +395,6 @@ When this idea must be stated briefly, the default sentence is:
 
 This sentence may be reused verbatim.
 
-`Zero-Sum Resolution Equation`
-
 ---
 
 ## Agent Execution Surface

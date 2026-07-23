@@ -13,9 +13,9 @@ doctrine. The live owners are routed through the [Kernel Index](../00_THE_KERNEL
 | Surface | Role |
 |---|---|
 | [`SOURCE_MANIFEST.md`](SOURCE_MANIFEST.md) | Public-source boundary |
-| [`PUBLIC_SITE_BOUNDARY.md`](PUBLIC_SITE_BOUNDARY.md) | What the static site serves and excludes |
-| [`GITHUB_MAP.md`](GITHUB_MAP.md) | Repository/remote evidence; not deploy proof |
-| dated receipts | Evidence about a completed act at the stated scope |
+| [`PUBLIC_SITE_BOUNDARY.md`](PUBLIC_SITE_BOUNDARY.md) | Current deployment boundary, historical freeze, and open release-custody gates |
+| [`GITHUB_MAP.md`](GITHUB_MAP.md) | Repository, remote, and dated homepage evidence; not full deploy proof |
+| dated receipts | Historical evidence about a completed act at the stated scope; never a current-state certificate |
 | [`../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md`](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) | K7 chronology and collisions |
 
 The earlier readiness-audit packet moved intact to
@@ -30,3 +30,7 @@ because it imported application-era governance and is no longer an active contro
   person's money or contract signature is outside this lane.
 - Preserve superseded material with dated archive custody; do not erase provenance.
 - A green test is not a deploy; a deploy is not DNS; a receipt is not empirical truth.
+- Volatile facts—HEAD, remote visibility, file counts, DNS, HTTP, and served hashes—
+  must name their verification date and scope.
+- A historical receipt remains historical. Record current drift additively rather
+  than rewriting the act it receipted.

@@ -112,7 +112,8 @@ this note's claim. Nothing here establishes a unique “world-axis.”
 
 ```text
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0, π)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```

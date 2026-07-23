@@ -45,7 +45,7 @@ Emergentism makes the **opposite model-claim**: its scaffold is reducible toward
 The EFR framework claims a κ = 0 ground-facing boundary inside the scaffold:
 
 ```
-P∞ = φ · ν = 1 on S²
+P∞ = φ · ν = 1  (for θ ∈ (0, π); the open reciprocal chart)
 
 Prerequisites:
 • = 0 (the origin)

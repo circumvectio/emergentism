@@ -566,6 +566,12 @@ def main():
         check_semantic_parity(),
     ]
 
+    # ERRORS (populated via error()) is the gate's source of truth. Guard the
+    # return values too, so a future check that signals failure only by returning
+    # False still fails the build instead of passing silently.
+    if not all(results):
+        error("a predeploy check returned False without recording an error")
+
     print("\n" + "=" * 60)
     if ERRORS:
         print(f"FAIL: {len(ERRORS)} error(s), {len(WARNINGS)} warning(s)")

@@ -40,6 +40,16 @@ FORBIDDEN = {
     "quantum-gravity solution inflation": re.compile(r"(?<!not )(?<!no )(?:solve[sd]?|solution to) quantum gravity", re.I),
     "zero-momentum D3 inflation": re.compile(r"D3 has no momentum", re.I),
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
+    # --- added 2026-07-23 after the K2 packet Box D / receipt 157 found the
+    # retracted 2026-06-10 K4 tagline "Leave with everything" still shipping
+    # live on journey/index.html:529 — a file that was NOT in currentSurfaces,
+    # so this gate could not see it. The tagline was retracted as an overclaim
+    # and superseded by the K4 envelope ("leave with what you came with, the
+    # organism retains nothing of yours by claim"). Catches the contiguous
+    # slogan; legitimate structural uses ("the user can leave with everything
+    # needed to recreate…") are scoped to archive/tombstone files that are not
+    # in currentSurfaces and so are not scanned here.
+    "retracted K4 tagline": re.compile(r"leave with everything", re.I),
 }
 
 
@@ -90,7 +100,8 @@ def main() -> int:
             # "They <b>multiply</b>", which no raw-text regex can cross. Strip
             # tags for these two only, leaving the tuned legacy patterns alone.
             if name in ("product uniqueness asserted as settled",
-                        "ethic derived from arithmetic"):
+                        "ethic derived from arithmetic",
+                        "retracted K4 tagline"):
                 scan_text = re.sub(r"<[^>]+>", " ", text)
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)

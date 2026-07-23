@@ -388,7 +388,7 @@ This proof is **falsified** if any of the following is exhibited:
 |---|-----------|--------|---------|
 | A1* | S² = CP¹ with standard coordinates | Standard | Def 1.1 |
 | A2* | φ = cot(θ/2), ν = tan(θ/2) | Definition | Def 1.2 |
-| A3* | φ · ν = 1 on S² \ {N, S} | Follows from A2* | Def 1.2 |
+| A3* | φ · ν = 1 for θ ∈ (0, π) | Follows from A2* | Def 1.2 |
 | A4* | B = sin θ is the balance function | Definition | Def 1.4 |
 | A5* | Extraction conserves total ν (zero-sum) | Definition | Def 1.9 |
 | A6* | Agents maximize individual Bᵢ | Definition | Def 4.1 |
