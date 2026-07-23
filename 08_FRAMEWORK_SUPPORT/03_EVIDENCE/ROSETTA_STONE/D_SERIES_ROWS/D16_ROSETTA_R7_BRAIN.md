@@ -124,6 +124,28 @@ The product flows both ways:
 - Gestalt × Fragments = Meaningful Action
 ```
 
+### 2.3 Why the callosum inhibits — and why that is what makes it × and not +
+
+`[I]` refinement, 2026-07-23. §2.1 reads the corpus callosum as a bridge that
+"maintains wholeness." That is half the anatomy. A large fraction of callosal
+fibres are **inhibitory** — their work is to keep the two hemispheres *apart* so
+each can hold its own mode; and, McGilchrist's comparative point, larger brains
+carry proportionally *smaller* callosa: more separation and specialisation, not
+more fusion.
+
+This does not weaken "the callosum is the ×." It is *why* the operator is × and
+not `+`:
+
+- If the two modes merged (no inhibition), you get one blurred attention —
+  collapse to a single factor, and the two-quantity law dissolves.
+- Inhibition keeps φ-mode and ν-mode **non-fungible**: a surplus of one cannot
+  substitute for a deficit of the other. Non-fungibility is exactly the
+  algebraic signature that forces `min`/× (AND-class, keel-108) over `+`.
+- `+` would let vigilance cover for feeding — but the animal that only watches
+  still starves. The inhibitory callosum forbids that substitution. So it
+  *earns* the ×, and it earns it **by** inhibiting: the separation is the
+  conservation.
+
 ---
 
 ## 3. THE OPERATORS AS NEURAL DIRECTIONS
@@ -242,6 +264,70 @@ The cargo cult is:
 - The product collapsed
 
 **The cure is not to destroy the left hemisphere.** The cure is to **restore the multiplication.** The cure is the corpus callosum functioning at full capacity. The cure is P∞ = φ · ν = 1.
+
+### 6.3 The mouse and the bird — McGilchrist's empirical leg `[I]`, with a `[B]` datum under it
+
+Added 2026-07-23. The Master/Emissary table above (§6.1) is the *rhetorical*
+form of McGilchrist. His *empirical* form is sharper and belongs on this row,
+because it is the closest thing the R7 correspondence has to data rather than
+metaphor.
+
+A feeding bird runs two attentions at once. The narrow beam that pecks one grain
+of seed out of grit is **left-hemisphere** (right-eye) — targeted grasping, the
+single graspable object: **ν, capability, "sees the cheese and takes it."** The
+broad watch on the sky for a hawk is **right-hemisphere** (left-eye) —
+vigilance, the whole field, the context that is not the local reward: **φ,
+coherence, "senses the trap."** The left-eye/right-eye division of feeding and
+vigilance in birds is a real `[B]` lateralization finding; the mapping of that
+finding onto φ/ν is `[I]`.
+
+The image does two things for this row. It fixes the **direction** — right→φ,
+left→ν, the same as §1, now with a concrete case rather than an assertion. And
+it is **symmetric** in exactly the way keel-108 requires: the animal dies *both*
+ways — all-ν (mouse, never looks up) is eaten; all-φ (bird, too vigilant to ever
+peck) starves. Either factor at zero is fatal. That symmetry is why mouse/bird
+is a *better* carrier of the node law than §6.1's Master/Emissary, which is
+asymmetric by construction (see §6.5).
+
+### 6.4 Kill criterion I — the mouse is maximally coherent, and dead
+
+`[I]`/`[C]` kill criterion, 2026-07-23. The mouse's model — *cheese → good →
+eat* — is **maximally internally coherent**. It hangs together perfectly. It is
+lethal, because it coheres with *itself* and not with the *situation* (the hawk).
+So this row must never let φ be read as **internal consistency**. A framework
+that scores φ by "does the model hang together" rates the mouse's tunnel-vision
+as high-φ — exactly backwards, and exactly the standing **φ-bias warning**: the
+framework detects coherence better than capability; watch purity-escalation as
+ν-avoidance.
+
+φ on this row means the **bird's** coherence: fidelity to the whole field, the
+trap included — not the mouse's closure. The word "coherence" carries at least
+four different senses here (internal consistency; fidelity-to-the-whole;
+Apollonian form/measure; Dionysian dissolution-into-the-whole) and φ can be only
+one of them. **Kill test:** any use of this row that scores φ by the internal
+consistency of a model, rather than by its fit to the whole situation, is
+refuted — it has crowned the mouse.
+
+### 6.5 Kill criterion II — "φ prior" is a wager the multiplication does not make
+
+`[C]` kill criterion, 2026-07-23. §6.1's Master/Emissary carries a hierarchy:
+the Master *rules*, the Emissary *serves*, and pathology *is* the inversion. The
+bird likewise looks prior — you must not-die before you eat; the whole contains
+the part. That containment is real, but it lives **outside** the operator,
+because φ × ν = ν × φ. keel-108 settled the node law as symmetric AND-class on
+purpose: either factor at zero is equally fatal. So "φ rules ν" / "φ is the
+deeper factor" / "the Master after all" is a **`[C]` wager**, not a consequence
+of the ×. The moment this row is used to argue φ *rules* rather than φ
+*multiplies* ν, it has left the law and become an argument the law declines to
+make — and re-opened the exact question keel-108 closed.
+
+**Dionysian/Apollonian** may be stacked on this row (Dionysian = dissolution
+into the whole = φ = bird; Apollonian = individuation, the single clear object =
+ν = mouse) but only as decoration. Nietzsche's Apollonian is *also* form and
+measure — a fourth claimant on the word "coherence" — and that reading drags φ
+back onto the Apollonian/left, inverting the stack. The mouse/bird cut is clean
+because it never says the word. Keep it as the load-bearing image; never let
+Dionysian/Apollonian redefine φ (see §6.4).
 
 ---
 
