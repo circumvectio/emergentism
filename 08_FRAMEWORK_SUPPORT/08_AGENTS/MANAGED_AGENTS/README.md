@@ -38,15 +38,15 @@ that Anthropic runs in hosted, sandboxed containers.
 
 ## The roster
 
-| L | Caste · Operator | Transfer on `P_node=Φ×V` | Function | Model | Tools | Mutates? |
-|---|---|---|---|---|---|---|
-| L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
-| L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | `claude-haiku-4-5` | + web | no |
-| L3 | Vaiśya · **Kṛṣṇa** (God) | −Φ_self, +V_other | auditor/charioteer — rank, enable | `claude-sonnet-4-6` | + web | no |
-| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | `claude-sonnet-4-6` | + write·edit·bash | **yes — permission-gated** |
-| L5 | Brāhmaṇa · **Brahmā** (Executive) | +Φ, +V | architect — redesign packets; advises | `claude-opus-4-8` | read·web | no |
-| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive with a tombstone | `claude-opus-4-8` | + write·edit·bash | **yes — permission-gated** |
-| L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | `claude-opus-4-8` | read·grep·glob | no |
+| L | Caste · Operator | Transfer on `P_node=Φ×V` | Function | Agentz.cloud trunk | Model | Tools | Mutates? |
+|---|---|---|---|---|---|---|---|
+| L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | **guards** | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
+| L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | **primitives** | `claude-haiku-4-5` | + web | no |
+| L3 | Vaiśya · **Kṛṣṇa** (God) | −Φ_self, +V_other | auditor/charioteer — rank, enable | **axiom-card-schemas** | `claude-sonnet-4-6` | + web | no |
+| L4 | Kṣatriya · **Arjuna** (God) | −V_self, +Φ_other | **executor — the equator; the only write-caste** | **templates** (STAGE, never F4 in public-DAV mode) | `claude-sonnet-4-6` | + write·edit·bash | **yes — permission-gated** |
+| L5 | Brāhmaṇa · **Brahmā** (Executive) | +Φ, +V | architect — redesign packets; advises | **value-chain (Porter)** | `claude-opus-4-8` | read·web | no |
+| L6 | Sādhu · **Śiva** (Executive) | −Φ, −V | compressor — prune, archive with a tombstone | **schemas-compress + primitives-archive** | `claude-opus-4-8` | + write·edit·bash | **yes — permission-gated** |
+| L7 | Ṛṣi · **Viṣṇu** (Executive) | ≈Φ, ≈V | seer — constitutional review; proposes | **value-chain (public-tree commit — only publishing caste)** | `claude-opus-4-8` | read·grep·glob | no |
 
 **[T] Model tiers follow the framework's own caste doctrine** (CLAUDE.md *Quality × Quantity by Caste*),
 not the SDK default: low-quality/high-throughput L1–L2 → Haiku; balanced/decisive L3–L4 → Sonnet;
@@ -66,6 +66,18 @@ tools carry `permission_policy: {type: always_ask}`. The session goes idle and e
 Zero extraction, evidence tiers, archive-with-tombstone, and Grace Exit live in
 the system prompts. A private natural person's authority to move money or execute a
 contract is outside this runtime and outside Emergentist doctrine.
+
+### Agentz.cloud projection (added 2026-07-23)
+
+Each caste maps to a *trunk* of the Agentz.cloud Public Polymemetic Tree (see
+`02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/AGENTZ_CLOUD_APP/05_PUBLIC_POLYMEMETIC_TREE.md`).
+The Axiom Card is the load-bearing join: every other layer (3-pass loop, 12-step
+arc, 5 trunks, 7 SPECTRE rows, 3-Tier Entity Model, 6 replicator layers, 7 consumer
+Modes) is a projection on it. In **public-DAV mode** (2026-07-12), Agentz.cloud is
+a deliberation/unsigned-proposal surface; PRISM multisig (≥2 natural-person
+councilors) signs consequence; the K2-of-the-time signs the unsigned proposal. L4
+*stages*, never F4s (acts/transmits/settles). The convergence-memo holds: one
+V-forcing directive, one commit, stop.
 
 ---
 
