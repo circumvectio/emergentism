@@ -126,15 +126,30 @@ The following is drift and should be corrected on sight:
 
 ## Finite-node conjunctive model
 
-Let normalized node factors satisfy `Φ,V∈[0,1]`. A conjunctive aggregator is a
-declared model
+The node model couples powers at the D4/D5 seam:
+
+```text
+V₄ := D4 actual power: causally usable capability available now
+Φ₅ := D5 possible power: structured modal potential in the option field
+Φ̂₄ := Eval₄(M,Φ₅) ∈ [0,1]: present D4 estimate of that possible power
+```
+
+`Φ₅` is possible power, not a causal force exerted by the future. Its estimate,
+inscription, ranking, and update are present D4 events. In all arithmetic below,
+the familiar uppercase shorthand `Φ` means `Φ̂₄`, while `V` means normalized
+`V₄`. Thus `P_node=ΦV` remains the public compression without confusing the D5
+referent with its D4 numerical carrier. Lowercase `φ,ν` remain the unrelated
+reciprocal-chart coordinates.
+
+Let the normalized numerical factors satisfy `Φ̂₄,V₄∈[0,1]`. A conjunctive
+aggregator is a declared model
 
 ```text
 C : [0,1]² → [0,1]
 ```
 
 that is monotone in each argument and satisfies
-`C(0,V)=C(Φ,0)=0` and `C(1,1)=1`. These conditions define a normalized
+`C(0,V₄)=C(Φ̂₄,0)=0` and `C(1,1)=1`. These conditions define a normalized
 **AND-class**; they do not select
 a unique formula. Minimum, normalized harmonic, Cobb–Douglas with
 `0<α<1`, and product forms can rank the same candidates differently.
@@ -142,7 +157,8 @@ a unique formula. Minimum, normalized harmonic, Cobb–Douglas with
 Emergentism selects the normalized product as its transparent working model:
 
 ```text
-P_node := C×(Φ,V) := ΦV
+P_node := C×(Φ̂₄,V₄) := Φ̂₄V₄
+public shorthand: P_node = ΦV
 ```
 
 This is structural **by declaration inside the framework** and conjectural as a
@@ -154,14 +170,14 @@ consequence of the product. For example, if a declared finite-resource domain
 also imposes
 
 ```text
-Φ+V≤1,
+Φ̂₄+V₄≤1,
 ```
 
-then `Φ=1` entails `V=0` and hence `P_node=0`. In that model, exhaustive
+then `Φ̂₄=1` entails `V₄=0` and hence `P_node=0`. In that model, exhaustive
 representation leaves no means for enactment. Without this budget premise,
-`Φ=1` instead gives `P_node=V`; perfect modeled foresight does **not** by itself
-consume usable means. Testing whether foresight and means actually trade off,
-and which budget surface fits, is empirical `[C]` work.
+`Φ̂₄=1` instead gives `P_node=V₄`; perfect modeled foresight does **not** by
+itself consume usable means. Testing whether evaluated possible power and
+actual power trade off, and which budget surface fits, is empirical `[C]` work.
 
 ## Notation rule for `P`
 
@@ -172,7 +188,7 @@ has its own regime. When compressing, name the regime explicitly:
 |---|---|---|---|
 | `P∞ = φ · ν = 1` | Reciprocal identity in the chosen open chart | Constant by definition for `θ∈(0,π)`; one coordinate diverges at each excluded pole | `[A]` analytic |
 | `B = sin θ` | Selected balance coordinate | Varies from the limiting value 0 at the poles to 1 at the equator | `[A]` analytic; `[I]` as “balance” |
-| `P_node = C×(Φ,V) = ΦV` | Selected normalized finite-node conjunctive model | present D4-evaluated capacity concerning D5 option content (`Φ`) and D4 usable means (`V`) are jointly necessary in the declared model; alternative AND-class aggregators remain possible | `[I]` model; `[C]` universal fit |
+| `P_node = C×(Φ̂₄,V₄) = Φ̂₄V₄` (public: `ΦV`) | Selected normalized finite-node conjunctive model | a present D4 estimate of D5 possibility power (`Φ̂₄`) and D4 actual power (`V₄`) are jointly necessary in the declared model; alternative AND-class aggregators remain possible | `[I]` model; `[C]` universal fit |
 | `Δ_TW_i`, `Δ_TW_H` | Individual and whole durable-potential changes | Kept separate under the Justice envelope; never laundered into one compensating aggregate | `[I]` value model |
 
 **Disambiguation convention:** do not use `P` bare in source-truth
@@ -180,9 +196,10 @@ documents unless the regime is named in the same sentence. Write the
 manifold identity as `P∞` or `φ · ν = 1`; write the operational node
 measure as `P_node`. Aggregates such as `ΣΔB` or `ΣΔP_node` may be used
 descriptively only; they never compensate ethically for destroying one bearer.
-Likewise, do not write the finite-node means factor as lowercase `ν` when the
-action register is meant: `ν` is the sphere coordinate, while uppercase `V` is
-the node's usable D4 means at the boundary.
+Likewise, do not write either finite-node factor as lowercase chart notation:
+`ν` is the sphere coordinate, while uppercase `V` is D4 actual power; `φ` is the
+other chart coordinate, while uppercase `Φ` names D5 possible power and `Φ̂₄`
+its present numerical evaluation.
 
 ## Paired Canonical Documents
 

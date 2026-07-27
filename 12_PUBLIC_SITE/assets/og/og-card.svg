@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Finity makes limits navigable</title>
+  <desc id="desc">The Infinite, Finity, and Infinity arranged across a horizon for Emergentism.</desc>
+  <defs>
+    <radialGradient id="blueGlow" cx="82%" cy="4%" r="78%">
+      <stop offset="0" stop-color="#79A8FF" stop-opacity=".20"/>
+      <stop offset=".58" stop-color="#79A8FF" stop-opacity=".025"/>
+      <stop offset="1" stop-color="#070A12" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="34%" r="42%">
+      <stop offset="0" stop-color="#F0C85A" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#F0C85A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="horizon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F5F0E6" stop-opacity="0"/>
+      <stop offset=".14" stop-color="#F5F0E6" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#F0C85A" stop-opacity=".95"/>
+      <stop offset=".79" stop-color="#79A8FF" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#79A8FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#070A12"/>
+  <rect width="1200" height="630" fill="url(#blueGlow)"/>
+  <rect width="1200" height="630" fill="url(#goldGlow)"/>
+  <text x="600" y="570" fill="#F5F0E6" fill-opacity=".025" font-family="Arial, sans-serif" font-size="238" font-weight="800" letter-spacing="-15" text-anchor="middle">FINITY</text>
+
+  <text x="74" y="72" fill="#F5F0E6" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="7">EMERGENTISM</text>
+  <text x="1126" y="72" fill="#F0C85A" font-family="monospace" font-size="15" letter-spacing="2" text-anchor="end">FINITE · ACCOUNTABLE · FORWARD</text>
+
+  <line x1="78" y1="208" x2="1122" y2="208" stroke="url(#horizon)"/>
+
+  <circle cx="228" cy="208" r="12" fill="#C0C1C5"/>
+  <circle cx="600" cy="208" r="42" fill="none" stroke="#F0C85A" stroke-width="4"/>
+  <circle cx="600" cy="208" r="11" fill="#F0C85A"/>
+  <circle cx="972" cy="208" r="38" fill="none" stroke="#79A8FF" stroke-width="4"/>
+
+  <text x="228" y="279" fill="#959CAB" font-family="monospace" font-size="13" letter-spacing="3" text-anchor="middle">THE INFINITE</text>
+  <text x="600" y="279" fill="#F0C85A" font-family="monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">FINITY</text>
+  <text x="972" y="279" fill="#79A8FF" font-family="monospace" font-size="13" letter-spacing="3" text-anchor="middle">INFINITY</text>
+
+  <text x="74" y="386" fill="#F5F0E6" font-family="Georgia, serif" font-size="70" letter-spacing="-2">Finity makes</text>
+  <text x="74" y="458" fill="#F0C85A" font-family="Georgia, serif" font-size="70" font-style="italic" letter-spacing="-2">limits navigable.</text>
+  <text x="78" y="520" fill="#C0C1C5" font-family="Arial, sans-serif" font-size="21" font-weight="300">A practical worldview for turning endless possibility into accountable progress.</text>
+</svg>

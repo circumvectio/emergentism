@@ -40,39 +40,42 @@ These are identities on the selected chart `[A]`. The product is constant by
 definition; it is not an empirical conservation law, a resource budget, or
 evidence for a real optimum.
 
-The finite-node model uses uppercase measurements:
+The finite-node model uses typed uppercase powers and a present evaluation:
 
 ```text
-Φ,V∈[0,1]
-P_node=ΦV,
+Φ₅∈[0,1]                    D5 possible power
+Φ̂₄=Eval₄(M,Φ₅)∈[0,1]      present D4 evaluation
+V₄∈[0,1]                   D4 actual power
+P_node=Φ̂₄V₄,
 ```
 
-where `Φ` is a present assessment of D5 option-field quality or foresight and
-`V` is D4 usable means. The product is a selected conjunctive model `[I/C]`,
-not a consequence of the lowercase chart.
+The public expression `ΦV` abbreviates this typed model; it does not multiply
+an unrealized possibility directly. The product is a selected conjunctive model
+`[I/C]`, not a consequence of the lowercase chart.
 
 ## 2. The fixed-sum theorem `[A]`
 
 If a separately declared domain imposes the binding budget
 
 ```text
-Φ+V=c,  c>0,
+Φ̂₄+V₄=c,  c>0,
 ```
 
 then AM–GM gives
 
 ```text
-P_node=ΦV≤c²/4,
+P_node=Φ̂₄V₄≤c²/4,
 ```
 
-with equality exactly at `Φ=V=c/2`. Moving away from that point along the
+with equality exactly at `Φ̂₄=V₄=c/2`. Moving away from that point along the
 fixed-sum line lowers the product. The budget premise—not the product and not
 `φν=1`—does the constraining work.
 
-If the budget is normalized to `c=1`, then `Φ=1` entails `V=0` and
-`P_node=0`. Without the budget, `Φ=1` entails only `P_node=V`. Thus “complete
-foresight leaves no means” is a conditional resource hypothesis, not a sphere
-identity.
+If the budget is normalized to `c=1`, then `Φ̂₄=1` entails `V₄=0` and
+`P_node=0`. Without the budget, `Φ̂₄=1` entails only `P_node=V₄`. Thus “a
+maximal present evaluation leaves no means” is a conditional resource
+hypothesis, not a sphere identity and not a claim that D5 possible power itself
+consumes D4 resources.
 
 ## 3. Why balance may fail `[A/I]`
 
@@ -84,7 +87,7 @@ The equatorial ratio is not universal:
 | excess can be stored at negligible cost | surplus may create a plateau rather than a downslope |
 | factors substitute | a corner or broad ridge may outperform balance |
 | task rewards specialization | imbalance may be optimal |
-| asymmetric Cobb–Douglas exponents `a,b>0` under `Φ+V=c` | optimum satisfies `Φ/V=a/b`, equal only when `a=b` |
+| asymmetric Cobb–Douglas exponents `a,b>0` under `Φ̂₄+V₄=c` | optimum satisfies `Φ̂₄/V₄=a/b`, equal only when `a=b` |
 
 Friction, maintenance, analysis paralysis, or unused-capacity costs may make
 excess harmful, but each mechanism needs a measurable native-domain variable.
@@ -94,7 +97,7 @@ Examples and analogies are not evidence that a given system pays the cost.
 
 Before applying the balance theorem to a real system, declare:
 
-1. how `Φ` and `V` are measured and normalized;
+1. how `Φ₅` is defined, how `Φ̂₄` evaluates it, and how `V₄` is measured and normalized;
 2. the actual feasible set or budget surface;
 3. whether the factors are complements or substitutes;
 4. the price and storage cost of excess;
@@ -109,12 +112,12 @@ balanced even when the real system's optimum lies elsewhere.
 ## 5. Kill criteria
 
 - A fixed-sum, symmetric product model whose maximum is not `c²/4` at
-  `Φ=V=c/2` would kill the analytic claim.
+  `Φ̂₄=V₄=c/2` would kill the analytic claim.
 - Failure to measure the budget or factor costs kills the empirical transfer,
   not AM–GM.
 - A preregistered rival that predicts held-out outcomes better kills the
   selected node model in that domain.
-- Any inference from `φν=1` to `Φ+V=c`, physical conservation, or ethics is a
+- Any inference from `φν=1` to `Φ̂₄+V₄=c`, physical conservation, or ethics is a
   type failure and must be withdrawn.
 
 **Current authority:** the [Canonical Formula

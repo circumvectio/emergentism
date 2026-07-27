@@ -14,6 +14,13 @@ repaired formal system. Where an older document conflicts, those owners rule.
 
 - [`00_THE_TRANSCENDENTAL_TRINITY_CANON.md`](00_THE_TRANSCENDENTAL_TRINITY_CANON.md)
   — sovereign opaque Titan frames: rendered with familiar labels, never operands.
+- [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md)
+  — Finity as a selected recognition and midpoint reading, not arithmetic discovery.
+- [`42_THE_CASE_FOR_FINITY.md`](42_THE_CASE_FOR_FINITY.md)
+  — tiered case and research gates for Finity as a forward programme; companion only.
+- [`43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md`](43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md)
+  — typed narrative formulation of The Infinite, Finity, and Infinity as
+  research modes; it interprets but does not redefine the canonical Titan seats.
 - [`10_THE_SOUL_LOOP.md`](10_THE_SOUL_LOOP.md) — modeled future, commitment,
   environment outcome, and reflexive return.
 - [`12_THE_POLES.md`](12_THE_POLES.md) — boundary reading with literal identity retired.

@@ -55,13 +55,16 @@ reciprocity: when one chart coordinate grows, the other contracts.
 For finite agents, Emergentism selects the normalized conjunctive model
 
 \[
-P_{node}=\Phi V,
+P_{node}=\widehat{\Phi}_{4}V_{4},
 \]
 
-where `Φ` is modeled worldline foresight and `V` is usable embodied means.
-Both are needed; either at zero annihilates the product. The product is a
-declared member of a broader need-both family, not the uniquely forced measure
-of power or flourishing. Its universal empirical adequacy remains `[C]`.
+Here `Φ₅` names D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
+evaluation, and `V₄` is D4 actual power—embodied capability and usable means.
+The public shorthand is `P_node=ΦV`. Both evaluated possibility and actual
+means are needed in this selected model; either at zero annihilates the product.
+The product is a declared member of a broader need-both family, not the uniquely
+forced measure of power or flourishing. Its universal empirical adequacy
+remains `[C]`.
 
 The ethical question does not follow from the multiplication sign. It arrives
 through a chosen and inspectable Justice envelope: can the individual and the

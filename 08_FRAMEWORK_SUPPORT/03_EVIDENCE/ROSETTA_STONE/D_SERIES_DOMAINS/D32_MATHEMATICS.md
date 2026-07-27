@@ -35,9 +35,9 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 |------|----------|----------|-------|
 | Standard Product | P_node = Φ × V | Default calculation | ✓ Axiomatic |
 | Solve for V | V = P_node / Φ | Resources needed for target P_node? | ✓ Algebraic |
-| Solve for Φ | Φ = P_node / V | Coherence needed for target P_node? | ✓ Algebraic |
+| Solve for Φ | Φ = P_node / V | Evaluated possible power needed for target P_node? | ✓ Algebraic |
 | Differential | dP_node = V dΦ + Φ dV | Dynamic analysis, optimisation | ✓ Calculus |
-| Partial (Φ) | ∂P_node/∂Φ = V | ROI on coherence-building | ✓ Calculus |
+| Partial (Φ) | ∂P_node/∂Φ = V | Marginal return on evaluated possible power | ✓ Calculus |
 | Partial (V) | ∂P_node/∂V = Φ | ROI on resource-adding | ✓ Calculus |
 | Logarithmic | log P_node = log Φ + log V | Growth rates, statistics | ✓ Log transform |
 | Alignment Energy | E_node = −log(P_node) | Negative-log transform over the finite-node product | ✓ Theoretical |
@@ -49,7 +49,10 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 
 ## Rosetta Mathematical Signature
 
-Use regime-specific notation. `P_node := Φ × V` is the finite-node operational product. `P∞ = φ · ν = 1` is the S² manifold identity. Do not collapse them.
+Use regime-specific notation. `V₄` is D4 actual power; `Φ₅` is D5 possible
+power; `Φ̂₄=Eval₄(M,Φ₅)` is the present D4 estimate that can enter arithmetic.
+The typed product is `P_node:=Φ̂₄×V₄`; the familiar `Φ×V` remains its public
+shorthand. `P∞=φ·ν=1` is the `S²` manifold identity. Do not collapse them.
 
 ### Soul Loop Recurrence and Power-Max Form
 
@@ -57,29 +60,33 @@ The Soul Loop gives the Rosetta mathematics a runtime form. Let `i` be the
 individual symbiont and `H` the holobiont / sustaining whole:
 
 ```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
+P_node,i = Φ̂₄,i × V₄,i
+P_node,H = Φ̂₄,H × V₄,H
 ```
 
 Agency-register dictionary:
 
 ```text
-V = D4 means-to-act:
+V₄ = D4 actual power / means-to-act:
     body, tools, energy, access, runway, hands, shovel, industrial digger.
 
-Φ = present D4 assessment of option-field quality / foresight:
-    how well an actual model represents and ranks relevant D5 alternatives.
+Φ₅ = D5 possible power:
+    structured modal potential in the relevant option field.
+
+Φ̂₄ = present D4 evaluation of Φ₅:
+    how well an actual model represents, discriminates, and ranks that field.
 ```
 
 This is the finite-node action register. It does not replace the sphere
 coordinates: lowercase `φ` and `ν` name the reciprocal chart on `S²`; uppercase
-`Φ` and `V` name practical factors in `P_node = Φ × V`. The same zero-factor
+`Φ` and `V` publicly name the D5/D4 power factors in `P_node=Φ×V`, while
+modality-sensitive mathematics writes `Φ̂₄,V₄`. The same zero-factor
 catastrophe applies. Means without foresight are not usable potential: a child
 beside a jet cannot fly it. Foresight without access is not usable potential:
 an old pilot without the relevant bodily/tool means cannot enact the run. A
 hand, a shovel, and an industrial digger are all D4 means-to-act at different
-scales; `Φ` asks how well the actor's actual D4 model represents and ranks the
-relevant D5 alternatives those means make reachable.
+scales; `Φ₅` names the possible power of the relevant alternatives and `Φ̂₄`
+asks how well the actor's actual D4 model represents and ranks them.
 `[A]` for the product algebra, `[S]` for the internal bridge, `[I]` for the
 general agency reading.
 

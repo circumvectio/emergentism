@@ -52,10 +52,15 @@ out of the account. D4 is actuality; it is not identical to the chart coordinate
 
 Meaning-making is an actual D4 activity whose model tokens can refer to D5
 possible lives. The chart may use `φ` as a symbolic coherence coordinate; `Φ`
-is instead a present D4 assessment of D5 option-field quality. Neither symbol
-proves that meaning is a separate substance or dimension.
+instead names D5 possible power, while its present model score `Φ̂₄` is D4.
+Neither symbol proves that meaning is a separate substance or dimension.
 
-Asking "what is the meaning of life?" while restricting yourself to D4 physics is the equivalent of asking for color while refusing to look. The instrument is wrong for the domain. A D4-only scan tracks the `ν` side: capability, viability, physical function. It cannot exhaust `φ` / `Φ` coherence — significance, orientation, meaning — for the same reason a ruler cannot measure temperature. Wrong axis.
+Asking "what is the meaning of life?" while restricting the inquiry to a narrow
+physical variable leaves reports, relations, represented futures, and purposes
+out of the model. D4 nevertheless carries every actual report and instrument;
+it is not the lowercase `ν` axis. D5 supplies possible-life content, not a
+separate meaning substance. The error is an incomplete measurement frame, not
+a proof that physics is incapable in principle.
 
 A narrowly chosen physical variable cannot by itself settle the meaning question,
 but a future physical or functional reduction remains open. The framework's claim
@@ -73,20 +78,35 @@ Actual reports of meaning may concern D5 possible content, but D5 is not a
 coherence substance or a private dimension. Contemplative practices are D4 acts
 with receiptable outcomes; whether they improve meaning is an empirical question.
 
-At the equator (`φ = ν = 1`; action read: `Φ` and `V` both usable), meaning and capability are balanced in the model. The agent has coherence — life can feel significant, purposeful, connected — and viability — the agent can act effectively in the physical world. This is the framework's operational proposal for a meaningful life: equatorial positioning translated into finite-node `P_node`, not an empirical proof that every life will experience meaning the same way.
+At the reciprocal-chart equator, `φ=ν=1`. Separately, a finite-node model may
+compare normalized `Φ̂₄` and `V₄`. Treating their equality as a balance condition
+is an `[I]` projection, not a derivation from the chart. The operational proposal
+is that meaningful agency may require both a discriminating model of possible
+lives and actual capacity to act, not that every life must maximize one score.
 
-The "meaning crisis" is a symptom of systematic off-equator displacement toward ν. Contemporary culture over-emphasizes capability (productivity, efficiency, growth, measurement) at the expense of coherence (significance, connection, depth, understanding). The result is a civilization with extraordinary V and collapsing Φ — high capability, low meaning.
+The "meaning crisis" can be investigated as a proposed imbalance: extraordinary
+`V₄` alongside falling `Φ̂₄`. This is a social hypothesis about actual capacity
+and evaluated possible lives, not literal displacement toward lowercase `ν`.
 
-This is not a moral failing. It is a geometric condition. A point on S² that migrates toward the `ν` / viability pole (`ν → ∞`, action-register `V` inflating while `Φ → 0`) experiences the collapse of coherence as the collapse of meaning. The feeling is real. The diagnosis is positional.
+This is not automatically a moral failing. The chart may illustrate imbalance,
+but it does not diagnose a population. The empirical claim would require
+operational measures showing `V₄` rises while `Φ̂₄` falls and that the change
+predicts independently measured loss of meaning.
 
 ## 4. THE FRAMEWORK CONNECTION
 
 The `φ` coordinate is an optional symbolic reading of coherence. The finite-node
-factor `Φ` is a D4 assessment of D5 option-field quality, while `V` is D4 usable
-means. Their joint adequacy is a selected model of actionable meaning, not a
-derived condition for meaningful life. `[I/C]`
+factor `Φ₅` is D5 possible power, its estimate `Φ̂₄` is a D4 model token, and
+`V₄` is D4 actual power. Their modeled coupling is a selected account of
+actionable meaning, not a derived condition for meaningful life. `[I/C]`
 
-The extraction coefficient η connects meaning to ethics inside the model. Systems that operate regeneratively tend to maintain or increase Φ over time — they can support meaning. Systems at η → ∞ (evil, extractive) destroy Φ — they can produce nihilism as a structural byproduct. Meaning is not reduced to private feeling in this account; it is affected by operations that generate or destroy system coherence. [I]
+The extraction coefficient η connects meaning to ethics inside the model.
+Regenerative systems may preserve or widen a bearer's D5 possible power;
+extractive systems may close options and deplete D4 actual power. That is a
+testable social hypothesis, not a consequence of the symbols. Meaning is not
+reduced to private feeling in this account; actual operations can change both
+the futures a bearer can represent and the means available to pursue them.
+`[I/C]`
 
 The [Power-Max model](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
 supplies only a Justice-constrained objective. The product model makes both
@@ -94,15 +114,24 @@ factors necessary by definition; it does not prove that extraction is physically
 or geometrically self-defeating. Justice is a chosen constraint with visible
 bearers and consequences.
 
-The transcendental Trinity {0, 1, ∞} provides the grammar: 0 is read as the void of meaninglessness (Φ → 0), 1 as the Finitor (the bounded, meaning-bearing observer), and ∞ as the full coherence field (meaning without limit). The meaningful life is interpreted as operating at 1 — bounded, actual, balanced.
+The transcendental Trinity `{0,1,∞}` supplies a symbolic frame: origin/absence,
+finite unit, and horizon/unboundedness. It neither computes `Φ₅` nor proves a
+meaning score. A meaningful life is interpreted here as bounded, actual, and
+open to possible futures—not as a Titan equation.
 
 ## 5. WHAT WOULD FALSIFY THIS
 
 The dissolution fails if:
 
-1. **Φ is not operationalizable.** If coherence cannot be measured, detected, or approximated through any observable — if it remains a purely abstract quantity with no empirical correlate — the mapping of "meaning" to Φ is metaphor, not structure.
+1. **Possible power is not operationalizable.** If `Φ₅` cannot be defined and
+   its D4 evaluation `Φ̂₄` cannot be distinguished from generic forecast or
+   model-quality scores, the mapping of meaning to possible power is metaphor,
+   not structure.
 
-2. **Equatorial balance does not correlate with experienced meaning.** If agents with high Φ and high V do not report more meaningful lives than agents with high V and low Φ, the geometric claim has no experiential traction.
+2. **The paired powers do not correlate with experienced meaning.** If agents
+   with high evaluated possible power and high actual power do not report more
+   meaningful lives than declared comparison groups, this correspondence has
+   no experiential traction.
 
 3. **The added decomposition is unnecessary.** If physical, functional, or
 evolutionary accounts explain and predict meaning reports and behavior without

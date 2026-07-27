@@ -65,6 +65,33 @@ three symbolic frames. Its completeness is by construction inside that game,
 not a census of nature or humanity. `L0` and `L∞` are distinct chart-boundary
 rows; connectedness of `S²` does not identify its poles.
 
+### The D5 Rosetta kernel
+
+G7 translates the D4/D5 power seam; it does not define that seam:
+
+```text
+V₄ = D4 actual power
+Φ₅ = D5 possible power
+Φ̂₄ = present D4 evaluation of Φ₅
+P_node = Φ̂₄V₄                 public shorthand: ΦV
+
+M4 = two demon-polar taking forms + two god-polar giving forms
+F3 = three Titan-frame projections: create, dissolve, preserve
+G7 = M4 ⊎ F3
+```
+
+Kali and Kālī name the two taking shapes; Kṛṣṇa and Arjuna name the two giving
+shapes; Brahmā, Śiva, and Viṣṇu project the three Titan frames. Kālī retains her
+two-face rule: demon-polar on the taking axis and God in truth-cutting function.
+These are symbolic positions, not moral essences. Justice, authorization, and
+receipts judge actual D4 acts. The sovereign Titans remain boundary roles—not
+D5 agents, causal particles, or arithmetic operands.
+
+The lowercase chart pair `φ,ν` never substitutes for uppercase `Φ,V`.
+Possible power is modal; it becomes causally relevant only through an actual
+model token and actual means. Rosetta translates these relations but neither
+defines them nor transfers warrant.
+
 Current owners:
 
 - [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)

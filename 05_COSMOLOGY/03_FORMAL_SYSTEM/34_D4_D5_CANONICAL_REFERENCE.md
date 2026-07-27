@@ -8,7 +8,7 @@ rosetta:
   register: "[I/C]"
   canonical_phrase: "D4 actuality / D5 possibility"
 title: "D4/D5 Canonical Reference"
-status: "CANONICAL — single-modality Kintsugi repair 2026-07-17."
+status: "CANONICAL — D4/D5 power typing amended 2026-07-27."
 evidence_tier: "[I] selected register semantics and operational grammar; [C] empirical emergence and option-cone hypotheses."
 supersedes_blob: "f835bacca6f6d3cdeffeeaa8f2b1154f6c9ca5af"
 ---
@@ -74,6 +74,40 @@ be first in an agent's order of access while depending on D1 distinction, D2
 configuration, and a D4 carrier. A quantum description may assign that carrier
 a D3 state, but the memory example neither requires nor measures it.
 
+### Power at the D4/D5 seam
+
+Emergentism reserves uppercase `V` and `Φ` for two different kinds of power:
+
+```text
+V₄,t := ActualPower₄(X_t)
+       D4 power: embodied, causally usable capability available now.
+
+Φ₅,t := PossiblePower₅(Ω_t)
+       D5 power: the structured modal potential of the relevant option field.
+
+Φ̂₄,t := Eval₄(M_t,Φ₅,t) ∈ [0,1]
+       D4 estimate: an actual model token's normalized assessment of Φ₅,t.
+```
+
+`V₄` is **enactment power**. `Φ₅` is **possibility power**: quality, coverage,
+discriminability, and coordinability of relevant merely possible alternatives.
+Here “power” is modal, not a physical force. A future that has not occurred
+does not push the present. Its possible power becomes action-relevant only
+through an actual `Φ̂₄` model token, an actual selector, and actual `V₄` means.
+
+The selected normalized node model is therefore typed as
+
+```text
+P_node,t := C×(Φ̂₄,t,V₄,t) := Φ̂₄,t V₄,t.
+```
+
+The familiar public compression `P_node=ΦV` is permitted when this bridge has
+already been declared: `Φ` names the D5 semantic factor and, inside the numeric
+expression, abbreviates its D4 estimate `Φ̂₄`; `V` abbreviates `V₄`. Lowercase
+`φ,ν` remain reciprocal-chart coordinates and are never aliases for these
+powers. `V₄` records ability, not permission; authorization and Justice remain
+separately typed.
+
 ## 2. The two motions
 
 ### Emergence: `D4 → μ₄ → D5`
@@ -124,7 +158,7 @@ erase them.
 - `X_t`: actual state available to the agent;
 - `Ω_t`: D5 merely-possible alternative contents;
 - `M_t`: fallible D4-actual model and present modeled-future tokens;
-- `V_t`: D4 usable means;
+- `V_t` (fully typed `V₄,t`): D4 actual power or usable means;
 - `U_t`: authorization assessment and normative constraints;
 - `G_t`: D4-actual selector policy, habits, or weights;
 - `a_t`: attempted action, or `⊥` when commitment is refused/unavailable;
@@ -395,6 +429,10 @@ The canonical reference fails if a live owner:
 - labels commitment `μ` or measurement;
 - lets `χ` emit an outcome receipt;
 - types a present model, ranking, or selector event as merely possible;
+- treats D5 possibility power `Φ₅` as an independently causal substance or
+  multiplies it directly without a D4 evaluation bridge;
+- conflates `Φ₅` with its actual estimate `Φ̂₄`, or substitutes lowercase
+  chart coordinates `φ,ν` for uppercase power factors;
 - treats invalid authorization as physical impossibility or erases an
   unauthorized attempted action;
 - updates `G` without feeding it into the next selector;

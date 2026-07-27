@@ -23,6 +23,21 @@ FORBIDDEN = {
     "quantum-gravity solution inflation": re.compile(r"(?<!not )(?<!no )(?:solve[sd]?|solution to) quantum gravity", re.I),
     "zero-momentum D3 inflation": re.compile(r"D3 has no momentum", re.I),
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
+    "legacy public Phi definition": re.compile(r"Φ\s+is\s+(?:a\s+)?present\s+(?:measurement|assessment)|present\s+measurement\s+of\s+D5", re.I),
+    "legacy untyped node product": re.compile(r"P\s*=\s*Φ\s*(?:×|x|\*)\s*V"),
+    "derived ethic inflation": re.compile(r"ethic(?:s)?\s+(?:falls?|follow(?:s|ed)?)\s+(?:directly\s+)?(?:out\s+of|from)\s+(?:the\s+)?arithmetic", re.I),
+    "exclusive ethic inflation": re.compile(r"the only lawful move", re.I),
+    "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
+    "bare legacy public footer": re.compile(r'<div class="glyph">⊙\s*=\s*•\s*×\s*○</div>'),
+    "retired evidence tier": re.compile(r"\[E\]"),
+}
+
+REQUIRED_PUBLIC_CONTRACTS = {
+    "index.html": ("Use the Finity Card", "Φ₅", "V₄", "P_node = Φ̂₄V₄"),
+    "plainly/index.html": ("possible power", "actual power", "chosen conjunctive model"),
+    "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
+    "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
+    "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
 }
 
 
@@ -68,11 +83,25 @@ def main() -> int:
         for name, pattern in FORBIDDEN.items():
             if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
+            if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
+                continue
             scan_text = text
             if name == "quantum-gravity solution inflation":
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
+    for rel, alternatives in REQUIRED_PUBLIC_CONTRACTS.items():
+        path = SITE / rel
+        if not path.is_file():
+            continue
+        text = path.read_text(encoding="utf-8", errors="replace")
+        if rel == "contribute/index.html":
+            if not any(needle in text for needle in alternatives):
+                errors.append(f"{rel}: missing static no-payment boundary")
+            continue
+        for needle in alternatives:
+            if needle not in text:
+                errors.append(f"{rel}: missing founder contract marker {needle!r}")
     render = subprocess.run([sys.executable, str(SITE / "render_dimension_site.py"), "--check"], cwd=SITE, text=True, capture_output=True)
     if render.returncode:
         errors.append(render.stdout.strip() or render.stderr.strip() or "dimension renderer drift")

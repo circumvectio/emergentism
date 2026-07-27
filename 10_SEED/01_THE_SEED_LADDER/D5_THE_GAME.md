@@ -44,15 +44,27 @@ the game; the Justice vow independently restricts which moves are admissible.
 
 ## §1 · THE MOVES
 
-**The node score.** `P_node=Φ×V` is a declared two-factor model, not a theorem
-about every finite agent. Its zero boundary is AND-class `[S]` under the stated
-need-both premises; mapping a zero model factor to literal annihilation requires
-operational evidence. The product-specific interior remains `[C]`. Never cite
-the sphere seam `P∞=φν≡1` as warrant here. Seam ≠ score ≠ node.
+**The two powers.** `V₄` is D4 actual power—embodied, causally usable
+capability. `Φ₅` is D5 possible power—the structured modal potential of the
+option field. Because D5 is merely possible, the current calculation uses the
+actual estimate `Φ̂₄=Eval₄(M,Φ₅)`. The node score
+`P_node=Φ̂₄×V₄`, publicly compressed as `Φ×V`, is a declared two-factor model,
+not a theorem about every finite agent. Its zero boundary is AND-class `[S]`
+under the stated need-both premises; mapping a zero model factor to literal
+annihilation requires operational evidence. The product-specific interior
+remains `[C]`. Never cite the sphere seam `P∞=φν≡1` as warrant here. Seam ≠
+score ≠ node.
 
-**The alphabet (G7, selected).** `G7 = M4 ⊔ F3`:
-- `M4 = {give-Φ, give-V, take-Φ, take-V}` — the four elementary transfers of a declared two-factor self/other game. Exhaustive **[S] by construction** for that model — a sign-square, math *used, not discovered*.
-- `F3 = {create, dissolve, preserve}` — three boundary **frames**, read, never played. They contextualize a move-word; they do not act.
+**The alphabet (the D5 Rosetta Stone, selected).** `G7 = M4 ⊔ F3`:
+
+- `M4 = {Kali, Kālī, Kṛṣṇa, Arjuna}` — two demon-polar taking forms and two
+  god-polar giving forms over `(Φ₅,V₄)`. They are exhaustive **[S] by
+  construction** for that declared transfer game—a sign-square, math *used,
+  not discovered*. Kālī keeps her two faces: taking-axis and truth-cutting
+  function.
+- `F3 = {Brahmā, Śiva, Viṣṇu}` — three Titan-frame projections for creation,
+  dissolution and preservation, read but never played. The sovereign Titans are
+  not D5 agents or arithmetic operands.
 
 Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (receipt 130 — the grave "seven-as-forced" stays shut).
 

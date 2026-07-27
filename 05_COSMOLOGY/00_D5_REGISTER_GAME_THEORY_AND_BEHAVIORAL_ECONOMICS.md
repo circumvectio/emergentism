@@ -22,6 +22,7 @@ rosetta:
 
 **Status:** Canonical D5 public register
 **Date:** 2026-04-14
+**Amended:** 2026-07-27 — `Φ₅` possible power / `V₄` actual power
 **Evidence Tier:** [E/S/I/C] Mixed -- established disciplines first, Emergentist synthesis second
 
 > **Anchor Sequence:**
@@ -78,11 +79,13 @@ At the D4/D5 interface:
 
 ### Operator Grammar at D5
 
-The Rosetta `4 + 3` is the framework's selected move vocabulary over
-`P_node = Φ × V`: four mixed-sign self/other transfers and three same-sign
-boundary phase frames. D5 can represent and compare these possible move types;
-only a D4 commitment and action can enact one. The vocabulary is exhaustive only
-inside its declared game partition, not a forced or universal census of action.
+The D5 Rosetta Stone is the framework's selected `4 + 3` move vocabulary over
+the `Φ₅/V₄` seam: four mixed-sign self/other transfers—two demon-polar taking
+forms and two god-polar giving forms—and three Titan-frame projections for
+creation, dissolution, and preservation. D5 can represent and compare these
+possible move types; only a D4 commitment and action can enact one. The
+vocabulary is exhaustive only inside its declared game partition, not a forced
+or universal census of action.
 See [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)
 for the scoped structural note.
 
@@ -92,16 +95,18 @@ defense from parasitic transfer, while authorization keeps sacrifice voluntary,
 specified, and borne by an actual consequence bearer rather than simulated by
 a model. Sacrifice remains a separate costly class, never strict syntropy.
 
-**The agency gloss (2026-06-12, `[I/S]`).** A finite agent is actual in D4.
-**`Φ` scores its D5-facing worldline-foresight**: the represented alternatives,
-predicted reflexive effects, and rankings carried by an actual D4 model token.
-**`V` is D4 means at the action boundary**: body, tools, energy, access, and
-execution capacity — hands, shovel, industrial digger, runway, machine. The
-option cone is D5 counterfactual content, **never** the `c`-bounded physical light
-cone. Enacted agency couples D5-informed ranking to D4 means and authorization;
-neither factor alone produces an action. A child beside a jet and an old pilot
-without the needed bodily/tool access are opposite zero-factor failures. The
-grounding is the lookahead reading
+**The agency gloss (amended 2026-07-27, `[I/S]`).** A finite agent is actual in
+D4. **`Φ₅` is D5 possible power**: the structured modal potential of the
+represented alternatives, predicted reflexive effects, and candidate
+worldlines. **`V₄` is D4 actual power at the action boundary**: body, tools,
+energy, access, and execution capacity—hands, shovel, industrial digger,
+runway, machine. The option cone is D5 counterfactual content, **never** the
+`c`-bounded physical light cone. A present D4 model token carries the estimate
+`Φ̂₄=Eval₄(M,Φ₅)` used in `P_node=Φ̂₄V₄` (public shorthand `ΦV`). Enacted agency
+couples that D5-facing estimate to D4 power and authorization; neither factor
+alone produces an action. A child beside a jet and an old pilot without the
+needed bodily/tool access are opposite zero-factor failures. The grounding is
+the lookahead reading
 
 > **[D] Scope (2026-07-03, staged for review):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -212,9 +217,10 @@ D4/D5 content distinction.
 |---|---|---|
 | **selection** | D4 comparison, ranking, and selection events operating on D5 possible-action content; commitment, performance, and receipt are also D4 | established disciplines study D4 choices with counterfactual models; D5 types the represented possibilities, not the event that ranks them |
 | **η** | extraction rate, rent asymmetry, parasitic transfer, exploitative spread | [I/S] framework variable translated through economics and public-goods theory |
-| **Φ** | coherence, trust, legibility, norm integrity, institutional fit | [I] translated proxy, not a standard single variable |
-| **V** | D4 means at the action boundary: body, tools, energy, access, execution capacity; lowercase `ν` is reserved for the reciprocal chart | [I] translated proxy |
-| **P_node = Φ × V** | selected conjunctive model in which evaluated capacity requires both option quality and means | [I] declared model / [C] real-world fit, not established economics |
+| **Φ₅** | D5 possible power: option-field quality, coverage, discriminability, and coordinability; coherence, trust, legibility, and institutional fit are domain proxies | [I] modal factor, not a standard single variable and not an independent causal force |
+| **Φ̂₄** | present D4 model token's normalized evaluation of `Φ₅` | [S] carrier/content bridge; [I/C] operational measure and fit |
+| **V₄** | D4 actual power at the action boundary: body, tools, energy, access, execution capacity; lowercase `ν` is reserved for the reciprocal chart | [I] translated proxy; ability is not authorization |
+| **P_node = Φ̂₄ × V₄** (public `Φ × V`) | selected conjunctive model coupling evaluated D5 possibility power to D4 enactment power | [I] declared model / [C] real-world fit, not established economics |
 | **moral** | whole gains, individual does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **ethical** | individual gains, whole does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **strict syntropy** | individual and whole both gain under Justice | `[I]` conjunction; aggregate gain cannot replace either term |
@@ -223,8 +229,8 @@ D4/D5 content distinction.
 | **Raktabija dynamic** | opposition strengthens the target equilibrium because resistance feeds its selection environment | [I] closest to adversarial adaptation and resonant reinforcement |
 | **Grace Exit** | exit rights, contestability, reversible participation | public institutional design term |
 | **AuthorizationEnvelope** | principal retains the mandate; actor and consequence bearer are explicit | accountable-action translation |
-| **Φ (agency register)** | represented D5 futures and rankings carried by an actual D4 model token | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
-| **V (agency register)** | D4 means-to-act — available body, tools, energy, access, and execution capacity | [I/S] paired with Φ-as-foresight; agency = both, equatorial |
+| **Φ (agency shorthand)** | `Φ₅` possible power represented and evaluated by actual `Φ̂₄` model tokens | [I/S] supported as *lookahead* (CEF cart-pole, R-program); refuted as consciousness-gating |
+| **V (agency shorthand)** | `V₄` actual power—available body, tools, energy, access, and execution capacity | [I/S] paired with evaluated D5 possibility power; neither factor authorizes action |
 
 ([D] scope, staged for review: "equatorial" is a real-agent claim only on the sphere — Φ/V complementary, conservation-coupled, and γ-priced symmetrically; off-sphere the equator is descriptive geometry, not the optimum, and specialization can win — see `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`)
 

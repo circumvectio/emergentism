@@ -12,6 +12,7 @@ This lane owns routing and claim custody, not new cosmology.
 - [Registers](registers/README.md) — deterministic tracked-file and folder inventories.
 - [Internal Completion Register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — one owner and state per dimension, transition, and kernel surface.
 - [Grand Puzzle Assembly Ledger](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — non-authoritative whole-map assembly and eleven world-contact sockets.
+- [Ontology Decision Matrix](00_ONTOLOGY_DECISION_MATRIX.md) — non-authoritative profile of internal coherence, paradox adjudication, science organization, and outstanding world-contact gates.
 - [Plain-Language Naming Law](00_PLAIN_LANGUAGE_NAMING_LAW.md) — prevents ambiguous aliases from silently carrying multiple rules.
 
 Drafts, executed plans, prior editions, and superseded front doors belong under

@@ -38,7 +38,7 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. In a declared finite-node model, `P_node=Φ×V` represents need-both potential only under its stated normalization and contact premises; `min(Φ,V)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **G7 game language** has exactly seven canonical symbols — **two giving transfers, two taking transfers, three frame labels** — and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]` — because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
@@ -153,7 +153,7 @@ The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,
 |---|---|---|
 | seam | `P∞=φν=1` | `[A]` chart identity; not the finite-node score |
 | balance | `B=2/(φ+ν)=sinθ` | `[A]`; `0<B≤1` on the open chart |
-| finite node | `P_node=Φ×V` | `[C]` general model; ceiling one only after explicit normalization |
+| finite node | `P_node=Φ̂₄V₄` (public `ΦV`) | `[C]` general model; ceiling one only after explicit normalization |
 
 The zero boundary selects the AND-class, not a unique interior aggregator. `min`, product, and CES require separate model choices and tests.
 
@@ -293,29 +293,36 @@ but physical co-existence of every represented history remains an independent
 `[C]` wager. “All probable timelines” always means all histories admitted by a
 declared model, context, horizon, and tolerance.
 
-### 7.3 The D5 insight: foresight needs means
+### 7.3 The D5 insight: possible power needs actual power
+
+Emergentism names the two powers at this seam before combining them:
+
+```text
+V₄ = D4 actual power — embodied capability and usable means
+Φ₅ = D5 possible power — structured potential in the option field
+Φ̂₄ = Eval₄(M,Φ₅) — the present D4 estimate of that possible power
+```
 
 In the selected normalized node model,
 
 \[
-P_{node}:=\Phi V.
+P_{node}:=\widehat{\Phi}_4 V_4,
 \]
 
-`Φ` reports the quality of an option field—the agent's represented D5
-alternatives and its ability to model and rank them—while `V` reports D4 usable
-means. Both reported factors are present D4 measurements; the future contents
-represented by `Φ` remain merely possible. Product is Emergentism's declared
+publicly compressed as `P_node=ΦV`. `Φ₅` names possible power; it is not a force
+sent backward by a future event. Its report `Φ̂₄` is an actual model token.
+`V₄` names actual enactment power. Their product is Emergentism's declared
 transparent instance inside a larger AND-class, not a formula forced by the
 reciprocal sphere or by reality.
 
-The zero cases nevertheless carry a clear design intuition: foresight without
-means cannot enact, and means without a discriminating option model cannot aim.
-The world still decides the outcome. The stronger boundary intuition—“complete
-foresight leaves zero means”—requires an additional finite-resource model such
-as `Φ+V≤1`. Under that declared premise, `Φ=1⇒V=0⇒P_node=0`; without it,
-`Φ=1⇒P_node=V`. This complementarity is therefore a testable wager about the
-cost of representation, not an identity borrowed from the lowercase sphere
-chart.
+The zero cases nevertheless carry a clear design intuition: possible power
+without actual power cannot enact, and actual power without a discriminating
+option model cannot aim. The world still decides the outcome. The stronger
+boundary intuition—“complete foresight leaves zero means”—requires an
+additional finite-resource model such as `Φ̂₄+V₄≤1`. Under that declared
+premise, `Φ̂₄=1⇒V₄=0⇒P_node=0`; without it, `Φ̂₄=1⇒P_node=V₄`. This
+complementarity is therefore a testable wager about the cost of representation,
+not an identity borrowed from the lowercase sphere chart.
 
 ### 7.4 Reflexivity and the Soul Loop
 

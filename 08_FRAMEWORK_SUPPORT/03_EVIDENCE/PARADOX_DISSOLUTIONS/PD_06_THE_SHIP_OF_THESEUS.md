@@ -70,10 +70,10 @@ This is why a river can be the same river despite completely different water, a 
 
 ## 4. THE FRAMEWORK CONNECTION
 
-- **P_node = Φ × V:** In the action register, `Φ` is a present D4 assessment of
-  D5 option-field quality and `V` is D4 usable means. The Ship analogy instead
-  tracks a D4 continuity trace across changing substrate; it does not make either
-  identity term equal to `Φ` or `V`.
+- **P_node = Φ̂₄ × V₄** (public `ΦV`): `Φ₅` is D5 possible power, `Φ̂₄` is its
+  present D4 evaluation, and `V₄` is D4 actual power. The Ship analogy instead
+  tracks a D4 continuity trace across changing substrate; it does not make any
+  identity term equal to either power.
 - **Equatorial balance:** The equator (φ=1, ν=1) is the framework's balance point. Identity persists at the equator; it degrades toward either pole. Pure material identity (north pole, φ→∞) would mean identity is only the arrangement of atoms — fragile, destroyed by any replacement. Pure functional abstraction (south pole, ν→∞) would mean identity is completely independent of material — nothing anchors it.
 - **Soul-Loop continuity:** Identity continuity does not require μ to select actuality. `μ₄` names the candidate emergence of counterfactual capacity; once such capacity exists, repeated commitment, outcome, and model update may preserve an identifiable trace across material turnover. That persistence—not quantum collapse—is the relevant analogy here.
 - **η = 0:** A system maintains identity when it sustains coherence without extracting it from its environment. The ship's identity persists because the operational structure is internally sustained, not parasitically dependent on any single material component.

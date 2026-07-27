@@ -57,9 +57,9 @@ the mathematics in which it appears.
 
 ## 2. The finite-node family
 
-Let `Φ∈[0,1]` denote a declared measure of modeled foresight or coherence and
-`V∈[0,1]` a declared measure of embodied means or viability. A conjunctive
-aggregator belongs to the family
+Let `Φ₅` denote D5 possible power and let `Φ̂₄=Eval₄(M,Φ₅)∈[0,1]` be its
+present D4 estimate. Let `V₄∈[0,1]` denote D4 actual power or embodied means.
+A conjunctive aggregator belongs to the family
 
 \[
 C:[0,1]^2\to[0,1]
@@ -68,7 +68,7 @@ C:[0,1]^2\to[0,1]
 when it is monotone and satisfies
 
 \[
-C(0,V)=C(\Phi,0)=0.
+C(0,V_4)=C(\widehat\Phi_4,0)=0.
 \]
 
 Minimum, product, harmonic, CES, and other functions may rank interior points
@@ -78,8 +78,11 @@ select one member uniquely.
 Emergentism declares the normalized product as its default instance:
 
 \[
-P_x:=C_{\times}(\Phi_x,V_x)=\Phi_xV_x.
+P_x:=C_{\times}(\widehat\Phi_{4,x},V_{4,x})=\widehat\Phi_{4,x}V_{4,x}.
 \]
+
+The public compression remains `P_x=Φ_xV_x` after the evaluation bridge has
+been declared.
 
 That declaration is structural inside the model `[S]`. Its universal fit to
 real agents or domains is conjectural `[C]`. Every application must state the

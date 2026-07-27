@@ -1,13 +1,13 @@
 {
- "name": "Emergentism \u2014 A Compass, Not a Cathedral",
+ "name": "Emergentism \u2014 Finity for an Infinite World",
  "short_name": "Emergentism",
- "description": "A navigational instrument assembled from constraints. Tier-honest claims, published poisons, visible exit.",
- "id": "/compass/",
- "start_url": "/compass/",
+ "description": "A practical worldview for turning endless possibility into finite, accountable progress.",
+ "id": "/",
+ "start_url": "/",
  "scope": "/",
  "display": "standalone",
- "background_color": "#050505",
- "theme_color": "#050505",
+ "background_color": "#070A12",
+ "theme_color": "#070A12",
  "icons": [
   {
    "src": "/assets/icons/icon-192.png",

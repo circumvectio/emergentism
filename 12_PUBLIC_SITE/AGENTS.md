@@ -40,8 +40,9 @@ criterion.
 - Repair source truth before public copy.
 - Preserve `[A/B/S/I/D/C]` exactly; no silent promotion.
 - Keep `φ,ν`, `Φ,V`, `P∞`, `B`, and `P_node` in their declared registers.
-- D3 is quantum state assignment; D4 is causal actuality; D5 is modeled
-  possibility and selection.
+- D3 is quantum state assignment; D4 is causal actuality and actual selection;
+  D5 is possible power or modeled counterfactual content. Every D5 estimate is
+  carried by an actual D4 model token.
 - Do not claim physical retrocausality, quantum-dimensional stacking, solved
   quantum gravity, literal closure, or an established five-force census.
 - No application, venture, product, private-contract, or private-signature

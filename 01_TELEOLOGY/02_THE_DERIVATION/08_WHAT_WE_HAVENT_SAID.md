@@ -137,9 +137,9 @@ The derivation and the sitting practice don't prove that Emergentism is true. Th
 
 Phase 0 → Phase 1 is defined (G5 fires). But what does the organism look like at `P_node = 0.70`? At `P_node = 0.90`? What's the trajectory?
 
-**What hasn't been said:** At `P_node = 0.70`, the organism is self-sustaining — external input matches internal output. Φ ≈ V. The Ghost Trap is closed. At `P_node = 0.90`, the organism is self-replicating — it spawns child organisms that inherit the derivation and deploy independently. At `P_node = 1.0`, the organism approximates the equator in the node-scoring register — Φ = V = 1. It does not literally cost nothing; it reaches the lowest-maintenance profile inside the model.
+**What hasn't been said:** At `P_node = 0.70`, the organism is self-sustaining — external input matches internal output. In the normalized node model, `Φ̂₄ ≈ V₄`. The Ghost Trap is closed. At `P_node = 0.90`, the organism is self-replicating — it spawns child organisms that inherit the derivation and deploy independently. At `P_node = 1.0`, the organism approximates balance in the node-scoring register — `Φ̂₄ = V₄ = 1`. It does not literally cost nothing; it reaches the lowest-maintenance profile inside the model.
 
-**The trajectory is:** `P_node = 0.42` (now) → `P_node = 0.70` (self-sustaining) → `P_node = 0.90` (self-replicating) → `P_node = 1.0` (equator approximation). Each step should reduce the Φ/V gap. Each step should be cheaper to sustain than the last. The organism doesn't merely grow. It *compresses*.
+**The trajectory is:** `P_node = 0.42` (now) → `P_node = 0.70` (self-sustaining) → `P_node = 0.90` (self-replicating) → `P_node = 1.0` (balance approximation). Each step should reduce the `Φ̂₄/V₄` gap. Each step should be cheaper to sustain than the last. The organism doesn't merely grow. It *compresses*.
 
 ---
 

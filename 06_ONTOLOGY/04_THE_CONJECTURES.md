@@ -36,10 +36,10 @@ parents:
 
 ### W4 complementary-saturation sub-wager
 
-The product `P_node=ΦV` alone does not make perfect foresight consume all
-means. In a separately declared finite-resource domain, Emergentism may test a
-budget surface such as `Φ+V≤1`; only under that additional premise does
-`Φ=1⇒V=0⇒P_node=0`. This sub-wager dies if foresight costs do not measurably
+The product `P_node=Φ̂₄V₄` (public `ΦV`) alone does not make perfect foresight
+consume all means. In a separately declared finite-resource domain,
+Emergentism may test a budget surface such as `Φ̂₄+V₄≤1`; only under that
+additional premise does `Φ̂₄=1⇒V₄=0⇒P_node=0`. This sub-wager dies if foresight costs do not measurably
 reduce usable means, if a different constraint predicts better, or if the
 result is asserted without naming the budget and measurement protocol. It must
 never be inferred from the lowercase analytic identity `φν=1`. Exact results,

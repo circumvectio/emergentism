@@ -68,6 +68,21 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
     number = ident[1:]
     prev_link = f'<a href="../{prev_id[1:]}/">← {prev_id}</a>' if prev_id else '<a href="../dimensions/">← Spine</a>'
     next_link = f'<a href="../{next_id[1:]}/">{next_id} →</a>' if next_id else '<a href="../dimensions/">Spine →</a>'
+    stone_html = ""
+    stone_style = ""
+    if stone := item.get("stone"):
+        stone_style = ".stone{margin:2rem 0;padding:clamp(1.3rem,4vw,2rem);border:1px solid var(--gold);background:linear-gradient(135deg,var(--surface),transparent)} .stone h2{font-size:clamp(1.8rem,4vw,3rem);margin:.35rem 0} .stone p,.stone li{color:var(--text-muted)} .stone li{margin:.5rem 0} .stone-formula{font:700 .85rem/1.8 var(--font-mono);color:var(--gold)!important} .stone-boundary{border-left:2px solid var(--border);padding-left:1rem}\n"
+        families = "".join(f"<li>{esc(family)}</li>" for family in stone["families"])
+        stone_html = f"""
+<section class="stone" aria-labelledby="stone-title">
+  <p class="eyebrow">D5 · G7 · four moves + three frames</p>
+  <h2 id="stone-title">{esc(stone['title'])}</h2>
+  <p class="stone-formula">{esc(stone['formula'])}</p>
+  <p>{esc(stone['summary'])}</p>
+  <ul>{families}</ul>
+  <p class="stone-boundary">{esc(stone['boundary'])}</p>
+  <a class="next" href="../rosetta/">Open the Rosetta →</a>
+</section>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,13 +102,13 @@ main{{max-width:920px;margin:0 auto;padding:110px 22px 72px}} .hero{{padding:2re
 .lede{{font-size:1.15rem;color:var(--text-muted);max-width:68ch}} .grid{{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin:2rem 0}}
 .grid article{{background:var(--surface);padding:1.35rem}} .grid p{{color:var(--text-muted)}} .diagram{{min-height:300px;display:grid;place-items:center;border:1px solid var(--border);margin:2rem 0;overflow:hidden}}
 .dimension-canvas{{width:100%;height:320px}} .transition{{margin:3rem 0;padding:1.5rem;border:1px solid var(--gold);border-radius:12px;background:var(--surface)}}
-dl{{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)}} dt,dd{{margin:0;padding:.8rem;border-bottom:1px solid var(--border)}} dt{{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)}} dd{{color:var(--text-muted)}}
+{stone_style}dl{{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:1px solid var(--border)}} dt,dd{{margin:0;padding:.8rem;border-bottom:1px solid var(--border)}} dt{{font:700 .75rem/1.5 var(--font-mono);color:var(--text-dim)}} dd{{color:var(--text-muted)}}
 .next{{display:inline-block;margin-top:1rem;color:var(--gold)}} .pager{{display:flex;justify-content:space-between;border-top:1px solid var(--border);padding-top:1rem}} code{{overflow-wrap:anywhere}}
 @media(max-width:700px){{.grid{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}dt{{padding-bottom:.2rem}}dd{{padding-top:.2rem}}}}
 </style>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="../compass/">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
+<header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../dimensions/">Spine</a><a href="../check/">Check</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
 <main>
 <section class="hero">
   <p class="eyebrow">{esc(ident)} · {esc(item['modality'])} · {esc(item['tier'])}</p>
@@ -103,7 +118,7 @@ dl{{display:grid;grid-template-columns:minmax(150px,.35fr) 1fr;gap:0;border-top:
 <section class="grid">
   <article><h2>Inherited structure</h2><p>{esc(item['inherited'])}</p></article>
   <article><h2>Claim boundary</h2><p>{esc(item['boundary'])}</p></article>
-</section>
+</section>{stone_html}
 <section class="diagram visual-panel" aria-label="Historical geometric instrument used as an illustration, not evidence or semantic authority">
   <canvas class="dimension-canvas"></canvas>
   <noscript>Illustration omitted. The text carries the claim.</noscript>
@@ -140,7 +155,7 @@ main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clam
 .rung,.crossing{{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:baseline;padding:1rem;border-bottom:1px solid var(--border);text-decoration:none}} .rung:hover{{background:var(--surface)}}
 .rung b{{color:var(--gold)}} .crossing{{margin-left:1.5rem;color:var(--text-muted);font-style:italic}} .crossing b{{color:var(--text-dim)}} small{{font:600 .68rem/1.4 var(--font-mono);color:var(--text-dim)}}
 .contract{{border:1px solid var(--border);padding:1.3rem;background:var(--surface)}} .contract li{{margin:.55rem 0;color:var(--text-muted)}} @media(max-width:650px){{.rung,.crossing{{grid-template-columns:55px 1fr}}small{{grid-column:2}}}}
-</style></head><body><header class="topbar"><a class="brand" href="../compass/">Emergentism</a><nav class="number-nav"><a href="../check/">Check</a><a href="../practice/">Practice</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
+</style></head><body><header class="topbar"><a class="brand" href="../">Emergentism</a><nav class="number-nav"><a href="../check/">Check</a><a href="../practice/">Practice</a><a href="../record/">Record</a><a href="../exit/">Exit</a></nav></header>
 <main><p class="sequence">{esc(' → '.join(pretty_id(x) for x in sequence))}</p><h1>The dimension-first spine</h1><p class="lede">A scaffold, not a census forced on nature. Each page separates inherited mathematics or science from Emergentist interpretation, and every crossing carries a prediction and a way to fail.</p>
 <section class="contract"><h2>How to read it</h2><ul><li>D4 is actual; D5 is possible. An actual D4 model token may represent D5 possible content.</li><li>μ₀…μ₄ are candidate apertures. Empty evidence remains unassessed.</li><li>b₆ and r₆ are boundary relations, not additional μ-crossings.</li><li>The matter→bond→life→mind→choice story is an optional interpretation, not the owner of the formal registers.</li></ul></section>
 <section class="spine">{''.join(rows)}</section><section class="contract"><h2>Related instruments and preserved visual studies</h2><p><a href="../titans/">Titans</a> · <a href="../titans.html">Titan animation</a> · <a href="../suda/">Suda notes</a> · <a href="../egg/">The Egg</a> · <a href="../saturation/">Saturation instrument</a> · <a href="../riemann/">Riemann view</a> · <a href="../journey/">Earlier journey view</a></p><p>These are supporting projections. The typed spine above governs where they conflict.</p></section><p><a href="../0/">Begin with D0 →</a></p></main><footer class="site-footer">[I/C] scaffold · externally uncalibrated · <a href="../record/">corrections remain visible</a></footer></body></html>"""

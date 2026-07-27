@@ -93,13 +93,14 @@ rights. Justice constrains the objective before optimization begins.
 For a declared task, Emergentism may model usable action capacity as
 
 ```text
-P_node = ΦV,
+P_node = Φ̂₄V₄,              public shorthand: ΦV
 ```
 
-where `Φ` is a present measurement of option-field quality and `V` is present
-usable means. This is one selected normalized AND-class model `[S/C]`, not a
-universal law and not a metric of human worth. Product, minimum, CES, additive
-and other aggregators must be compared where prediction matters.
+where `Φ₅` is D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
+evaluation, and `V₄` is D4 actual power or usable means. This is one selected
+normalized AND-class model `[S/C]`, not a universal law and not a metric of
+human worth. Product, minimum, CES, additive and other aggregators must be
+compared where prediction matters.
 
 The model supplies two practical warnings:
 

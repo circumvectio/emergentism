@@ -35,14 +35,15 @@ rosetta:
 For a bearer `x`, Emergentism selects the normalized conjunctive instance
 
 \[
-P_x=\Phi_xV_x,
+P_x=\widehat\Phi_{4,x}V_{4,x},
 \qquad
 W_x(T)=\int_0^T P_x(t)\,dt,
 \]
 
-where `Φ` is an operationalized measure of modeled foresight/coherence and
-`V` an operationalized measure of embodied means/viability. The zero-factor
-condition supports an AND-class family; it does not force multiplication.
+where `Φ₅` is D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` its operationalized D4
+estimate, and `V₄` an operationalized measure of D4 actual power or embodied
+means. The public compression remains `P_x=Φ_xV_x`. The zero-factor condition
+supports an AND-class family; it does not force multiplication.
 Product, minimum, harmonic, CES, and other rivals must be compared in every
 real domain.
 

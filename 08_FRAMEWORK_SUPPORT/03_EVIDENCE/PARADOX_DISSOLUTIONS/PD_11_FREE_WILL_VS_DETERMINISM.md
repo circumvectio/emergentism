@@ -82,9 +82,10 @@ typed interface. Enacting one modeled option is **not** the reverse `μ`-crossin
 D5 content is carried by an actual D4 model token, and actual D4 means help cause
 an actual D4 action. The world may veto or alter the intended outcome.
 
-At the equator (Φ = 1, V = 1 in the normalized contact reading), the agent has
-maximum balance in the model — a maximal present D4 assessment of relevant D5
-option quality together with maximal usable D4 means. Balance is the constraint
+At the finite-node balance point (`Φ̂₄=1`, `V₄=1` in this normalized contact
+reading), the agent has maximal evaluated D5 possible power together with
+maximal D4 actual power. This is only an `[I]` analogy to the reciprocal-chart
+equator. Balance is the constraint
 that keeps agency usable, not the whole objective by itself. The objective is
 the lawful selection of a reachable future without extraction.
 

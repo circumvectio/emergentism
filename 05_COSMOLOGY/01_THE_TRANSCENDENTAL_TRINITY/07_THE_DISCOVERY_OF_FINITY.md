@@ -54,10 +54,11 @@ Emergentism calls the midpoint role **finity** and writes the glyph
 ```
 
 to picture finite presence as relation between a lower boundary and a horizon.
-The `×` belongs to the emblem's frame grammar. It is not multiplication of the
-ordinary operands `0` and `∞`; infinity is not a field element, so this is not
-a field product. In limit calculus, `0·∞` may be an indeterminate form. The
-glyph can therefore orient a reading without rewriting arithmetic.
+The spacing belongs to the emblem's frame grammar; the live display contains
+no infix operator. The older `×` is historical notation, not multiplication of
+ordinary operands; infinity is not a field element, so no field product is
+formed. In limit calculus, `0·∞` may be an indeterminate form. The glyph can
+therefore orient a reading without rewriting arithmetic.
 
 ## What remains a wager `[C]`
 
@@ -70,6 +71,14 @@ The wager weakens or dies if the emblem repeatedly causes field/frame
 confusion, if a rival account explains the intended phenomena better, or if
 the relational reading yields no independent discriminator. Removing this
 document leaves the formal calculus unchanged.
+
+## Companion: the forward research programme
+
+[The Case for Finity](42_THE_CASE_FOR_FINITY.md) develops the project's current
+tier-honest case for Finity as a forward research programme in analogy with
+zero. It is a companion, not an arithmetic, `μ`, or ontological owner: it may
+not upgrade the inherited mathematics, the selected name, or the world-reading
+beyond their stated tiers.
 
 The original narrative is recoverable from Git object
 `304ebe8df55edf07e2d4a6bc1692d377924cd2b5`.

@@ -27,8 +27,10 @@ essence, clinical diagnosis, or a proof that nature has seven positions.
 
 An operator token names an **actual D4 action or posture**. An actual agent may
 use a D4 model token to represent and rank **D5 merely possible** alternatives.
-Nothing here is an entity in D5. An archetype name never creates authorization,
-performs an act, or manufactures an outcome.
+`V₄` names D4 actual power; `Φ₅` names D5 possible power; the latter enters a
+present numeric model only through its D4 estimate `Φ̂₄`. Nothing here is an
+entity in D5. An archetype name never creates authorization, performs an act,
+or manufactures an outcome.
 
 The chart `phi*nu=1` is analytic on its declared open domain. `P_node:=Phi*V`
 is a selected normalized conjunctive model. Neither fact yields operator names,
@@ -36,18 +38,19 @@ sevenfold necessity, moral status, an attractor, or ontology.
 
 ## 2. The selected G7 language
 
-G7 contains four mixed-sign transfer descriptions and three same-sign frame
-labels. It exhausts only this declared two-party sign vocabulary.
+G7 contains four mixed-sign transfer descriptions over `(Φ₅,V₄)` and three
+same-sign Titan-frame projections. It exhausts only this declared two-party
+sign vocabulary.
 
 | ID | Symbolic name | Descriptive transfer | Use |
 |---|---|---|---|
-| G1 | Arjuna | actor cost / other option support | protection or boundary support |
-| G2 | Kṛṣṇa | actor attention / other means support | enabling or instruction |
-| G3 | Kālī | recovery / removal of represented false structure | correction or pruning |
-| G4 | Kali | actor gain / other loss | extraction candidate or bounded defense |
-| F1 | Brahmā | both reported factors rise | creation-frame label |
-| F2 | Viṣṇu | both reported factors approximately hold | preservation-frame label |
-| F3 | Śiva | both reported factors fall | dissolution-frame label |
+| G1 | Arjuna ⚔ · God-polar giving | actor D4-power cost / other D5-power support | protection or boundary support |
+| G2 | Kṛṣṇa ◇ · God-polar giving | actor modeling cost / other D4-power support | enabling or instruction |
+| G3 | Kālī 💀 · demon-polar taking, God-function truth-cut | recovery / removal of represented false possibility structure | correction or pruning |
+| G4 | Kali 🎲 · Demon-polar taking | actor gain / other D4-power loss | extraction candidate or bounded defense |
+| F1 | Brahmā ○ · Titan projection | both factors rise | creation-frame label |
+| F2 | Viṣṇu ⊙ · Titan projection | both factors approximately hold | preservation-frame label |
+| F3 | Śiva • · Titan projection | both factors fall | dissolution-frame label |
 
 The mythic words are memory aids. They are not beings, genders, castes,
 personalities, clinical types, or intrinsic good/evil classes. Same-sign frames

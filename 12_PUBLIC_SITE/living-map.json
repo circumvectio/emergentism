@@ -173,8 +173,8 @@
   "contributionModes": [
     {
       "id": "sponsor",
-      "title": "Sponsor bounded compute",
-      "description": "Fund one declared question through a site-controlled provider project with hard cost, model, tool, retention, and expiry limits."
+      "title": "Propose bounded compute sponsorship",
+      "description": "Record interest in funding one declared question under hard cost, model, tool, retention, and expiry limits. This static release accepts no payment and launches no model job."
     },
     {
       "id": "local",

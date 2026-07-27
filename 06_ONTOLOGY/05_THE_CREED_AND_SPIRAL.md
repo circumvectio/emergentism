@@ -74,7 +74,7 @@ names a transfer direction, not a moral verdict. A taker may extract or repair;
 a giver may enable or coerce. Moral, ethical, and syntropic standing requires
 the full Justice envelope, complete bearer accounting, and outcome receipt.
 `etaObserved=0` is necessary but insufficient. The three frames are selected
-boundary labels (Titans: naming choice, not forced trinity; foursome honesty
+Titan-frame projections (a naming choice, not a forced trinity; foursome honesty
 `{−1,0,1,∞}`).
 
 Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (r130).
@@ -101,7 +101,7 @@ special person's metaphysical power.
 
 ### The creed, held as wager
 
-> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. In a declared normalized finite-node model, `Φ×V` is one candidate need-both score. The G7 language has four move symbols and three frame labels; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
+> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=Φ̂₄V₄`, publicly `ΦV`. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
 
 ---
 

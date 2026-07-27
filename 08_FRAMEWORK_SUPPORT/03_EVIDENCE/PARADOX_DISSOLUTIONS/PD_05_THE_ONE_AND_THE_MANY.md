@@ -62,7 +62,7 @@ Their coordinate product is fixed by definition. Any claim that increasing one
 world property changes another is a separate, testable model claim and does not
 follow from the chart.
 
-The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure unranked plurality — all coherence dissipates. In the agency register, this becomes the familiar contact rule: `Φ` without `V` is foresight without means, while `V` without `Φ` is means without a ranked worldline.
+The **equator** (φ=1, ν=1) is the balance point where unity and plurality are in perfect equipoise. The **north pole** (φ→∞, ν→0) is pure coherent unity — all differentiation collapses. The **south pole** (ν→∞, φ→0) is pure unranked plurality — all coherence dissipates. Separately, the agency register uses the contact rule: D5 possible power without D4 actual power cannot enact, while actual power without an evaluated possible field has no represented worldline to select. This is the `Φ₅/Φ̂₄/V₄` model, not an identity inherited from `φν=1`.
 
 Stereographic projection relates a sphere minus a pole to a plane; it does not
 cause the One to become the Many. In the action calculus, actual D4 model tokens

@@ -230,9 +230,10 @@ On the Burri Sphere, systemic awareness is modeled `[I]` as an equatorial relati
 - **φ** (coherence) = the integration axis. What holds the field together. The phenomenological correlate is *meaning*, *gestalt*, *recognition*.
 - **ν** (viability) = the actuality / capability coordinate. What the system can bear or enact as substrate. The phenomenological correlate is *embodiment*, *sensation*, *motor affordance*.
 - **P∞ = φ · ν = 1** = the invariant sphere product in the model. Experience is interpreted as redistributed across the two axes, not empirically conserved by this equation.
-- **P_node = Φ × V** = the selected finite-node action read. `Φ` is a present
-  D4 assessment of D5 option-field quality; `V` is D4 usable means. The model
-  scores both as jointly necessary without deriving consciousness from them.
+- **P_node = Φ̂₄ × V₄** (public `ΦV`) = the selected finite-node action read.
+  `Φ₅` is D5 possible power, `Φ̂₄` is its present D4 evaluation, and `V₄` is
+  D4 actual power. The model scores the evaluated coupling as jointly necessary
+  without deriving consciousness from it.
 - **The equator** (`φ = ν = 1`; action read: `Φ` and `V` both usable) = maximum balance, not infinite quantity on either pole. The phenomenological correlate is *flow*, *presence*, *the sublime* (Erhaben).
 
 The geometric reading offers a structural reframe: physical description and first-person report are represented as different projections of one modeled point. This correspondence neither supplies an extra spacetime dimension nor rules out a future physical reduction.

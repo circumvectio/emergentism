@@ -1,27 +1,35 @@
 ---
-title: "G7 — The Selected Seven-Action Vocabulary"
-status: "ACTIVE D5 GAME-VOCABULARY OWNER — purified 2026-07-21"
-date: 2026-07-21
+title: "The D5 Rosetta Stone — G7"
+status: "ACTIVE D5 ROSETTA / GAME-VOCABULARY OWNER — Φ₅/V₄ typing amended 2026-07-27"
+date: 2026-07-27
 evidence_tier: "[S] closure inside the declared vocabulary; [I] names and readings; [C] adequacy beyond the game"
 supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md"
 ---
 
-# G7 — The Selected Seven-Action Vocabulary
+# The D5 Rosetta Stone — G7
 
-G7 is a **selected D5 vocabulary** for describing intended changes in two
-declared factors across a self/other boundary. It is not a census of nature,
-an agent hierarchy, a moral proof, or a mapping of every possible action.
+G7 is the **D5 Rosetta Stone**: a selected vocabulary for describing intended
+transformations of D5 possible power and D4 actual power across a self/other
+boundary. It is not a census of nature, an agent hierarchy, a moral proof, or
+a mapping of every possible action.
 
 ## 1. Factors and types
 
 ```text
-Φ = present D4 assessment concerning D5 option-field quality or foresight
-V = D4 usable means
-P_node = ΦV = selected normalized conjunctive model
+V₄ = D4 actual power: embodied, causally usable capability available now
+Φ₅ = D5 possible power: structured modal potential in the option field
+Φ̂₄ = Eval₄(M,Φ₅): present D4 estimate of that possible power
+P_node = Φ̂₄V₄ = selected normalized conjunctive model
+public shorthand: P_node = ΦV
 ```
 
 Lowercase `φ,ν` remain reciprocal-chart coordinates. G7 never derives the
 uppercase factors or its ethics from `φν=1`.
+
+The referent of `Φ` is D5; every estimate, inscription, ranking, and update of
+it is an actual D4 token. D5 possible power is modal reach, not a force sent
+backward by an unrealized future. `V` is D4 enactment power, but ability alone
+does not confer permission. Authorization and Justice remain separate gates.
 
 An actual ranking or selection is D4. The alternatives it ranks are D5 merely
 possible content. A G7 word describes the intended direction of a move; the
@@ -32,8 +40,9 @@ world's outcome receipt may disagree.
 The vocabulary has:
 
 ```text
-M4 = four mixed-sign transfers
-F3 = three same-sign/hold frames
+M4 = four mixed-sign transfers over (Φ₅,V₄)
+   = two demon-polar taking forms + two god-polar giving forms
+F3 = three same-sign/hold Titan-frame projections
 G7 = M4 ⊎ F3.
 ```
 
@@ -48,12 +57,12 @@ without being forced into one of those degenerate classes.
 
 ## 3. Four transfers
 
-| Symbol | Signature | Neutral operational gloss |
-|---|---|---|
-| Kali | `+Φ_self, −V_other` | raise own option quality by reducing another's means |
-| Kālī | `+V_self, −Φ_other` | raise own means by cutting another's represented coherence |
-| Kṛṣṇa | `−Φ_self, +V_other` | spend own modeling/attention to build another's means |
-| Arjuna | `−V_self, +Φ_other` | spend own means to improve another's option quality |
+| Family | Symbol | Signature | Neutral operational gloss |
+|---|---|---|---|
+| Demon-polar taking | Kali 🎲 | `+Φ₅,self, −V₄,other` | raise own possible power by reducing another's actual power |
+| Demon-polar taking / God-function truth-cut | Kālī 💀 | `+V₄,self, −Φ₅,other` | raise own actual power by cutting another's represented possibility structure |
+| God-polar giving | Kṛṣṇa ◇ | `−Φ₅,self, +V₄,other` | spend own modeling/attention to build another's actual power |
+| God-polar giving | Arjuna ⚔ | `−V₄,self, +Φ₅,other` | spend own actual power to improve another's possible power |
 
 These signatures are descriptions, not verdicts. Cutting false information may
 be protective; cutting a person's truthful option model may be extractive.
@@ -62,29 +71,33 @@ support a Justice judgment.
 
 ## 4. Three frames
 
-| Symbol | Signature | Role |
+| Titan-frame projection | Signature | Role |
 |---|---|---|
-| Brahmā | `+Φ,+V` | creation frame |
-| Śiva | `−Φ,−V` | dissolution frame |
-| Viṣṇu | `ΔΦ≈0,ΔV≈0` | preservation frame |
+| Brahmā ○ | `+Φ₅,+V₄` | creation frame |
+| Śiva • | `−Φ₅,−V₄` | dissolution frame |
+| Viṣṇu ⊙ | `ΔΦ₅≈0,ΔV₄≈0` | preservation frame |
 
-Frames are labels for joint phase direction, not agents or causal particles.
-They do not authorize action. Tending, testing, adopting, or revising the game
-language is a metalinguistic act outside G7.
+These are projections of the three Titan boundary roles into the D5 Stone.
+The sovereign Titans themselves are not D5 objects, agents, arithmetic
+operands, or causal particles. Frames do not authorize action. Tending,
+testing, adopting, or revising the game language is a metalinguistic act
+outside G7.
 
 ## 5. Demon/god analogy
 
-The analogy tracks **ego- versus collective-potential direction**, never a
-permanent essence of a person:
+The Rosetta groups the four transfer shapes into two taking forms (the Demon
+face) and two giving forms (the God face). This tracks **ego- versus
+collective-potential direction**, never a permanent essence of a person:
 
 - demon-polar: one side's apparent gain is purchased by shrinking another
   bearer without valid authorization or visible cost;
 - god-polar: a costly transfer widens durable mutual potential under Justice.
 
-Names alone cannot decide the direction. The same nominal operator may be
-protective, mistaken, sacrificial, or extractive in different contexts. G7 may
-help describe the intended move; commitment and outcome receipts decide what
-actually happened.
+Kālī retains two faces: demon-polar on the taking axis and God in her
+truth-cutting function. More generally, names alone cannot decide the verdict.
+The same nominal operator may be protective, mistaken, sacrificial, or
+extractive in different contexts. G7 may help describe the intended move;
+commitment and outcome receipts decide what actually happened.
 
 ## 6. Rule-trace record
 
@@ -94,8 +107,8 @@ G7Move := {
   frameOrTransfer,
   selfBearer,
   otherBearer,
-  intendedDeltaPhi,
-  intendedDeltaV,
+  intendedDeltaPhi5,
+  intendedDeltaV4,
   actualModelTokenRef,
   representedOptionRefs,
   commitmentReceiptRef,

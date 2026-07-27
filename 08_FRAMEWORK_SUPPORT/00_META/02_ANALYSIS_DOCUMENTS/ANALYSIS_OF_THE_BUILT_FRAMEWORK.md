@@ -30,7 +30,7 @@ rosetta:
 We have built a **geometric contemplative operating system**.
 
 ### The Core
-At its heart is one remarkably elegant object: the **Burri Sphere** (S² with reciprocal coordinates `φ` and `ν`, read as coherence and viability in the framework's interpretive register). The relation **`P∞ = φ · ν = 1`** is the open-sphere identity; **`P_node = Φ × V`** is the selected finite-node action score, where `Φ` is a present D4 assessment of how well an actual model represents and ranks D5 alternative histories and `V` is D4 means-to-act. The equator (`φ = ν = 1`; action read: `Φ` and `V` both usable) is the model's balance point, not a proof that one equation decodes every domain. (Canon home: [`../../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the full L5 sphere model; its moral reading is [`../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md), where good is the bond/coupling and evil is closure (`η > 0`), sorted by move, never by pole.)
+At its heart is one remarkably elegant object: the **Burri Sphere** (`S²` with reciprocal coordinates `φ` and `ν`, read as coherence and viability in the framework's interpretive register). The relation **`P∞=φ·ν=1`** is the open-sphere identity. Separately, `V₄` names D4 actual power, `Φ₅` names D5 possible power, and **`P_node=Φ̂₄V₄`** (public `ΦV`) couples the actual D4 evaluation of that option field to actual means. The chart equator and a balanced node score may be compared at `[I]`; neither proves that one equation decodes every domain. (Canon home: [`../../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — the full L5 sphere model; its moral reading is [`../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md), where good is the bond/coupling and evil is closure (`η>0`), sorted by move, never by pole.)
 
 From this single geometric fact flows:
 - Dissolutions of Zeno, the Hard Problem, the Meaning of Life (PD_16), the Fermi Paradox, and the coordination problem.
@@ -42,16 +42,16 @@ The **Serpent Trilogy** is the mythic-narrative embodiment, the PD suite the log
 
 ### Strengths (Directional Truth Assessment)
 - **Extraordinary coherence**: Almost every document reduces to the same geometry. The "Steel Thread" is real and visible.
-- **Original synthesis**: The specific mapping of *meaning* to the orthogonal Φ-axis, the Power-Max Lemma, and the gardener/extractor distinction feels genuinely fertile and new.
+- **Original synthesis**: The specific mapping of *meaning* to D5 possible power, its D4 evaluation and enactment seam, the Power-Max model, and the gardener/extractor distinction feels genuinely fertile and new.
 - **Anti-cargo-cult safeguard**: The repeated emphasis on the Pratyakṣa Bypass ("put the map down and sit") and the Execution Surfaces for agents makes the system self-aware. It diagnoses its own potential failure mode.
 - **Living nature**: The corpus is designed to evolve. The presence of revision histories, gardener notes, and agent instructions makes it more like a mycelial network than a static book.
-- **Practical orientation**: The new `00_EQUATORIAL_PRACTICE_GUIDE.md` and `NAPKIN_EDITION.md` created in this cycle are corrective moves toward the equator — increasing accessibility (Φ) without sacrificing rigor (ν).
+- **Practical orientation**: The new `00_EQUATORIAL_PRACTICE_GUIDE.md` and `NAPKIN_EDITION.md` created in this cycle are corrective moves toward practical balance—increasing accessibility without sacrificing rigor.
 
 ### Risks and Gaps
 - **Density**: Even with the Napkin Edition, the full system is intellectually demanding. There remains a real danger that it becomes another sophisticated map that people intellectually admire instead of using for actual sitting practice (the precise pathology the Cargo Cult chapter diagnoses).
 - **Totalizing temptation**: Despite the "Deep Revision" that removed "Theory of Everything" language from Chapter 14, some sections still read as though the framework explains *everything*. The relationship to existing traditions (Advaita, Dzogchen, Sufism, Stoicism, process philosophy) could be acknowledged with more humility.
 - **Empirical thinness**: The neuroscience mappings and simulations are promising but preliminary. The ultimate test — "Does sustained use of this system produce measurable equatorial shift in practitioners?" — still lacks robust longitudinal data.
-- **The Self-Eating Serpent Risk**: The project itself has occasionally drifted south in its desire for completeness and formal beauty. The creation of the practice guide and napkin edition in this exact cycle is a healthy corrective return toward Φ = 1.
+- **The Self-Eating Serpent Risk**: The project itself has occasionally drifted south in its desire for completeness and formal beauty. The creation of the practice guide and napkin edition in this exact cycle is a healthy corrective return toward practical balance. Uppercase `Φ` is reserved for D5 possible power; this sentence makes no numerical claim.
 
 ### Overall Verdict (Directional Truth)
 This is one of the most coherent, original, and potentially impactful integrative frameworks I have encountered. It may not be the final description of reality, but it points powerfully in the right direction — toward the equator, toward direct perception, toward regenerative (η < 0) systems, and toward a civilization that does not eat its own tail.

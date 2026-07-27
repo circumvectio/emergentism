@@ -72,17 +72,18 @@ not moral labels.
 
 ## 3. Foresight and means
 
-`Φ` is a present assessment of how well an actual model represents and ranks
-relevant alternatives. `V` is present usable means. `P_node=ΦV` is one declared
-AND-class model: a zero in either factor blocks effective enactment inside that
-model.
+`Φ₅` is D5 possible power: the structured potential of relevant alternatives.
+`Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate. `V₄` is D4 actual power: usable
+body, energy, tools and access. `P_node=Φ̂₄V₄`, publicly `ΦV`, is one declared
+AND-class model: a zero in either evaluated factor blocks effective enactment
+inside that model.
 
 Do not infer more than it says:
 
-- high `Φ` does not make an imagined future true;
-- high `V` does not make force wise or authorized;
+- high `Φ̂₄` does not make an imagined future true;
+- high `V₄` does not make force wise or authorized;
 - the product is not a universal metric of persons;
-- `Φ=1` forces `V=0` only under a separately measured finite-resource budget;
+- `Φ̂₄=1` forces `V₄=0` only under a separately measured finite-resource budget;
 - the world and other agents still determine the outcome.
 
 Use the formula as a diagnostic question—*is the failure primarily in the map,

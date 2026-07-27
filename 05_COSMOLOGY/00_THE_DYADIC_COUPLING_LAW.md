@@ -40,19 +40,21 @@ ontological proofs, or ethical imperatives.
 
 ## 2. Coupling model `[I/C]`
 
-Let `C(Φ,V)` be a normalized, monotone conjunctive aggregator satisfying
+Let `V₄` name D4 actual power, `Φ₅` D5 possible power, and
+`Φ̂₄=Eval₄(M,Φ₅)` its present D4 estimate. Let `C(Φ̂₄,V₄)` be a normalized,
+monotone conjunctive aggregator satisfying
 
 \[
-C(0,V)=C(\Phi,0)=0.
+C(0,V_4)=C(\widehat\Phi_4,0)=0.
 \]
 
 Emergentism selects the normalized product instance
 
 \[
-P_{node}:=C_\times(\Phi,V)=\Phi V
+P_{node}:=C_\times(\widehat\Phi_4,V_4)=\widehat\Phi_4 V_4
 \]
 
-for its canonical compression. The product expresses the chosen AND-class
+for its canonical compression, publicly `P_node=ΦV`. The product expresses the chosen AND-class
 intuition that foresight/coherence and embodied means/viability are jointly
 necessary. It is not uniquely forced; minimum, harmonic, Cobb–Douglas, and
 other conjunctive aggregators can rank states differently.

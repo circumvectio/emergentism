@@ -18,17 +18,22 @@ evidence_tier: "[B/S] retained by source domains; [I] for every cross-domain row
 > prove seven stages, rank persons, or make one column cause another. The
 > [Master Rosetta](../00_THE_MASTER_ROSETTA.md) governs its use.
 
+Its numerical annotations use the typed node convention: `V₄` is D4 actual
+power, `Φ₅` is D5 possible power, and `Φ̂₄` is the present D4 evaluation that
+can enter arithmetic. For compactness only, the table writes `Φ,V` for
+`Φ̂₄,V₄`. Lowercase `φ,ν` remain reciprocal-chart coordinates.
+
 ## Selected rows
 
 | Row | G7 symbol | Historical-social analogy | Inference / question / regime analogy | Mathematical note | Standing |
 |---|---|---|---|---|---|
-| L1 | Kali 🎲 | Caṇḍāla | dialectical / objective-function / tyranny | if bounded `V>0`, `Φ→0` sends selected `P_node=ΦV→0` | `[I]`; algebraic consequence conditional on the model |
-| L2 | Kālī 💀 | Śūdra | inductive / epistemology / democracy | `dP_node=V dΦ+Φ dV` | `[I]`; differential `[A]` inside the product model |
-| L3 | Kṛṣṇa ◇ | Vaiśya | deductive / methodology / oligarchy | `∂P_node/∂V=Φ` | `[I]`; derivative `[A]` inside the product model |
-| L4 | Arjuna ⚔ | Kṣatriya | abductive / axiology / timocracy | `Φ=V` is a selected normalized balance condition, not a universal optimum | `[I]` |
-| L5 | Brahmā ○ | Brāhmaṇa | systematic / ontology / aristocracy | `log P_node=log Φ+log V` for positive factors | `[I]`; identity `[A]` inside the product model |
-| L6 | Śiva • | Sādhu | apophatic / metaphysics / anarchy | `E_node=-log(P_node)` is a declared loss, not automatically entropy | `[I]` |
-| L7 | Viṣṇu ⊙ | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the finite-node score | `[I]` |
+| L1 | Kali 🎲 · Demon-polar taking | Caṇḍāla | dialectical / objective-function / tyranny | if bounded `V>0`, `Φ→0` sends selected `P_node=ΦV→0` | `[I]`; algebraic consequence conditional on the model |
+| L2 | Kālī 💀 · taking / God-function truth-cut | Śūdra | inductive / epistemology / democracy | `dP_node=V dΦ+Φ dV` | `[I]`; differential `[A]` inside the product model |
+| L3 | Kṛṣṇa ◇ · God-polar giving | Vaiśya | deductive / methodology / oligarchy | `∂P_node/∂V=Φ` | `[I]`; derivative `[A]` inside the product model |
+| L4 | Arjuna ⚔ · God-polar giving | Kṣatriya | abductive / axiology / timocracy | `Φ=V` is a selected normalized balance condition, not a universal optimum | `[I]` |
+| L5 | Brahmā ○ · Titan creation frame | Brāhmaṇa | systematic / ontology / aristocracy | `log P_node=log Φ+log V` for positive factors | `[I]`; identity `[A]` inside the product model |
+| L6 | Śiva • · Titan dissolution frame | Sādhu | apophatic / metaphysics / anarchy | `E_node=-log(P_node)` is a declared loss, not automatically entropy | `[I]` |
+| L7 | Viṣṇu ⊙ · Titan preservation frame | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the finite-node score | `[I]` |
 
 Varṇa and regime labels are attributed historical analogies, never classes of
 human worth or prescriptions. The -ologies are cross-cutting questions, not

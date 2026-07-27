@@ -298,13 +298,16 @@ Salience(x,agent) > Salience(y,agent)
 ## 3. Finite-node model types
 
 ```text
-Φ : Node×Time → [0,1]       # D4-evaluated score of capacity concerning D5 option content
-V : Node×Time → [0,1]       # D4 usable means / viability score
+Φ₅ : Node×Time → D5Power           # D5 possible power / structured option potential
+Φ̂₄ : Node×Time → [0,1]             # Eval₄(ModelToken,Φ₅), an actual D4 score
+V₄ : Node×Time → [0,1]             # D4 actual power / usable means score
 P_node : Node×Time → [0,1]
 ```
 
-Lowercase `φ,ν` are chart coordinates. Uppercase `Φ,V` are separately
-operationalized node factors and are never inferred from the lowercase pair.
+Lowercase `φ,ν` are chart coordinates. Uppercase `Φ,V` publicly name the D5
+possible-power and D4 actual-power factors and are never inferred from the
+lowercase pair. Modality-sensitive arithmetic writes `Φ̂₄,V₄`; D5 `Φ₅` never
+acts or enters a present calculation without that D4 evaluation bridge.
 
 ### ConjunctiveAggregator
 
@@ -325,7 +328,7 @@ ConjunctiveAggregator := {
 ```
 
 The selected normalized instance is
-`C×(Φ,V)=ΦV`, so `P_node:=C×(Φ,V)`. Selection is `[I]`; universal fit is
+`C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, so `P_node:=C×(Φ̂₄,V₄)`. Selection is `[I]`; universal fit is
 `[C]`.
 
 ## 4. Emergence record

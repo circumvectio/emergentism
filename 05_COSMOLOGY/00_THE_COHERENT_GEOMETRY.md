@@ -58,8 +58,10 @@ ethic. The formula is not defined for a photon by dividing through `m=0`.
 ## 4 · Finite-node model `[S/C]`
 
 A finite action may be modeled with a normalized monotone conjunctive family
-`C(Φ,V)` satisfying `C(0,V)=C(Φ,0)=0`. Emergentism declares
-`C×(Φ,V)=ΦV` as one normalized instance. Minimum, harmonic, CES,
+`C(Φ̂₄,V₄)` satisfying `C(0,V₄)=C(Φ̂₄,0)=0`. Here `V₄` is D4 actual
+power, `Φ₅` is D5 possible power, and `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
+estimate. Emergentism declares `C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, as one
+normalized instance. Minimum, harmonic, CES,
 Cobb–Douglas, and other members can rank interior cases differently; data must
 decide where the product fits.
 

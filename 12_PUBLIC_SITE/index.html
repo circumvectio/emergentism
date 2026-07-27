@@ -3,357 +3,492 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emergentism — Reality has a shape. We drew it.</title>
-<meta name="description" content="Eleven discoveries about freedom, balance, and value — stated boldly, graded exactly, and kept on trial in public. Users, not believers: try the practice, check the trial record." />
+<title>Emergentism — Finity for an Infinite World</title>
+<meta name="description" content="A practical worldview for turning endless possibility into finite, accountable progress." />
 <meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://emergentism.org/" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Emergentism — Reality has a shape. We drew it." />
-<meta property="og:description" content="Eleven discoveries about freedom, balance, and value — stated boldly, graded exactly, and kept on trial in public." />
+<meta property="og:site_name" content="Emergentism" />
+<meta property="og:title" content="Finity makes limits navigable." />
+<meta property="og:description" content="A practical worldview for turning endless possibility into finite, accountable progress." />
 <meta property="og:url" content="https://emergentism.org/" />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Infinite, Finity, and Infinity arranged across a horizon." />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Finity makes limits navigable." />
+<meta name="twitter:description" content="A practical worldview for turning endless possibility into finite, accountable progress." />
 <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
+<meta name="twitter:image:alt" content="The Infinite, Finity, and Infinity arranged across a horizon." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23F0C85A' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%2379A8FF' stroke-width='1' opacity='.55'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23F0C85A'/%3E%3C/svg%3E" />
 <style>
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('assets/fonts/Roboto-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('assets/fonts/RobotoMono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:100 700;font-display:swap;src:url('assets/fonts/RobotoMono-greek.woff2') format('woff2');unicode-range:U+0370-0377,U+037A-037F,U+0384-038A,U+038C,U+038E-03A1,U+03A3-03FF}
 :root{
-  --void:#050505; --void-2:#080807; --panel:#0d0d0c; --panel-2:#131312;
-  --bone:#F5F5F3; --bone-dim:#a4a7a9; --bone-faint:#6b6f74; --bone-ghost:#3a3d42;
-  --gold:#FFEB3B; --gold-deep:#CBB800; --crimson:#e0453b;
-  --blue:#5aa9e6; --green:#5bbf88;
-  --line:rgba(245,245,243,.10); --line-soft:rgba(245,245,243,.05);
-  --t-a:#7fb2e6; --t-e:#6fc79a; --t-s:#5fc6b0; --t-i:#e8d24a; --t-c:#b59ce0; --t-b:#FFEB3B;
-  --sans:"Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  --mono:"Roboto Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-  --maxw:1080px; --read:44rem;
+  --ink:#070A12;
+  --ink-raised:#0C1220;
+  --panel:#111A2B;
+  --bone:#F5F0E6;
+  --muted:#C0C1C5;
+  --faint:#959CAB;
+  --gold:#F0C85A;
+  --gold-hot:#FFE392;
+  --blue:#79A8FF;
+  --mint:#72D6C0;
+  --line:rgba(245,240,230,.14);
+  --line-strong:rgba(245,240,230,.24);
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1180px;
+  --read:46rem;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--void);color:var(--bone);font-family:var(--sans);font-weight:300;font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:radial-gradient(110% 60% at 84% -8%, rgba(255,235,59,.05), transparent 45%),
-             radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
-::selection{background:rgba(255,235,59,.26);color:#050505}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--sans);font-size:18px;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(80% 60% at 82% 8%,rgba(121,168,255,.10),transparent 58%),radial-gradient(55% 46% at 49% 38%,rgba(240,200,90,.045),transparent 64%),var(--ink)}
+::selection{background:var(--gold);color:var(--ink)}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
+:focus-visible{outline:2px solid var(--gold-hot);outline-offset:4px;border-radius:2px}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--ink);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
+.skip:focus{transform:translateY(0)}
+.wrap{width:min(100% - clamp(2rem,8vw,5rem),var(--maxw));margin-inline:auto}
 .read{max-width:var(--read)}
 .mono{font-family:var(--mono)}
-/* topbar */
-.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:1rem;
-  padding:.72rem clamp(1rem,4vw,2.6rem);background:rgba(5,5,5,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
-.brand{font-weight:800;font-size:1.02rem;letter-spacing:-.01em;text-decoration:none}
-.brand b{color:var(--gold);font-weight:800}
-.nav{display:flex;gap:.15rem;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem}
-.nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
-.nav a:hover{color:var(--void);background:var(--gold)}
-.nav a.here{color:var(--gold);border:1px solid var(--line)}
-/* hero */
-header.hero{padding:clamp(3.4rem,9vw,7rem) 0 clamp(2rem,5vw,3.4rem)}
-.fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
-.fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
-.glyph-line{font-family:var(--mono);font-size:clamp(1.6rem,4.4vw,3rem);color:var(--gold);font-weight:400;letter-spacing:.06em;margin:0 0 1.4rem}
-.glyph-line .gloss{display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-faint);margin-top:.5rem}
-h1{font-size:clamp(2.5rem,7vw,5.4rem);letter-spacing:-.03em;line-height:.99;margin:0 0 1.5rem;text-wrap:balance;font-weight:200}
-h1 .heavy{font-weight:900;letter-spacing:-.04em}
-h1 .gold{color:var(--gold);font-weight:900}
-.dek{font-size:clamp(1.12rem,1.7vw,1.4rem);color:var(--bone-dim);max-width:60ch;margin:0 0 1.6rem;font-weight:300;line-height:1.6}
-.dek b{color:var(--bone);font-weight:500}
-.cta-row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
-.btn{font-family:var(--mono);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;
-  min-height:48px;padding:0 1.35rem;border-radius:999px;border:1px solid var(--line);transition:.2s;display:inline-flex;align-items:center;gap:.5rem;color:var(--bone)}
-.btn.primary{background:var(--gold);color:#1a1206;border-color:var(--gold);font-weight:600}
-.btn.primary:hover{background:#FFF176;transform:translateY(-1px)}
-.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
-/* sections */
-section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
-.kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1rem}
-h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:200;letter-spacing:-.02em;margin:0 0 1.3rem;line-height:1.08;text-wrap:balance}
-h2 b{font-weight:800}
-.lead{font-size:clamp(1.06rem,1.4vw,1.2rem);color:var(--bone-dim);margin:0 0 1.5rem;font-weight:300}
-p{margin:0 0 1.25rem}
-.body p{color:var(--bone-dim);font-weight:300}
-.body p b{color:var(--bone);font-weight:500}
-/* discovery gallery — triaxial: three columns as the structural unit */
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);border-radius:14px;overflow:hidden}
-@media(max-width:900px){.gallery{grid-template-columns:1fr}}
-.card{display:flex;flex-direction:column;gap:.55rem;background:var(--panel);padding:1.5rem 1.4rem 1.3rem;text-decoration:none;transition:.2s;position:relative}
-.card:hover{background:var(--panel-2)}
-.card .n{font-family:var(--mono);font-size:.7rem;color:var(--gold-deep);letter-spacing:.18em}
-.card h3{font-size:1.22rem;font-weight:700;letter-spacing:-.015em;margin:0;line-height:1.22;color:var(--bone)}
-.card p{font-size:.9rem;color:var(--bone-dim);margin:0;font-weight:300;flex:1 1 auto}
-.card::after{content:"→";position:absolute;right:1.2rem;top:1.35rem;color:var(--bone-ghost);font-family:var(--mono);transition:.2s}
-.card:hover::after{color:var(--gold);transform:translateX(3px)}
-.card.wide{grid-column:1 / -1;border-top:1px solid var(--line-soft);background:linear-gradient(90deg,rgba(255,235,59,.05),transparent 60%),var(--panel)}
-.card.featured{grid-column:1 / -1;border-bottom:1px solid var(--line-soft);background:linear-gradient(90deg,rgba(255,235,59,.09),transparent 65%),var(--panel);outline:1px solid rgba(255,235,59,.28);outline-offset:-1px}
-.card.featured .n b{color:var(--gold);font-weight:700;letter-spacing:.18em}
-.tchip{font-family:var(--mono);font-size:.64rem;letter-spacing:.05em;color:var(--bone-faint);border:1px solid var(--line);border-radius:3px;padding:.22rem .5rem;align-self:flex-start;line-height:1.4}
-.tchip b{font-weight:700}
-.tchip .ta{color:var(--t-a)}.tchip .te{color:var(--t-e)}.tchip .ts{color:var(--t-s)}.tchip .ti{color:var(--t-i)}.tchip .tc{color:var(--t-c)}
-.strength{font-family:var(--mono);font-size:.78rem;color:var(--bone-faint);margin:1.4rem 0 0}
-.strength a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
-.strength a:hover{color:var(--gold)}
-/* tier legend */
-.tier-legend{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.4rem 0 0}
-.chip{font-family:var(--mono);font-size:.74rem;padding:.35rem .7rem;border-radius:3px;border:1px solid var(--line);display:inline-flex;gap:.5rem;align-items:center;color:var(--bone-dim)}
-.chip i{width:.55rem;height:.55rem;border-radius:50%;display:inline-block;font-style:normal}
-.chip.a i{background:var(--t-a)}.chip.e i{background:var(--t-e)}.chip.s i{background:var(--t-s)}.chip.i i{background:var(--t-i)}.chip.c i{background:var(--t-c)}
-/* practice / build panels — triaxial trio */
-.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-@media(max-width:860px){.trio{grid-template-columns:1fr}}
-.panelcard{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,var(--panel),var(--void-2));padding:1.7rem 1.6rem;display:flex;flex-direction:column;gap:.6rem}
-.panelcard .lab{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0}
-.panelcard h3{font-size:1.3rem;font-weight:700;letter-spacing:-.015em;margin:0;line-height:1.2}
-.panelcard p{font-size:.94rem;color:var(--bone-dim);margin:0;flex:1 1 auto}
-.panelcard .go{font-family:var(--mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gold);text-decoration:none;margin-top:.6rem}
-.panelcard .go:hover{text-decoration:underline;text-underline-offset:3px}
-/* deeper links */
-.deep{display:flex;flex-wrap:wrap;gap:.5rem;font-family:var(--mono);font-size:.78rem}
-.deep a{color:var(--bone-dim);border:1px solid var(--line-soft);border-radius:999px;padding:.4rem .9rem;text-decoration:none;transition:.15s}
-.deep a:hover{border-color:var(--gold);color:var(--gold)}
-/* footer */
-.foot{border-top:1px solid var(--line);padding-top:clamp(2rem,5vw,3.2rem);padding-bottom:clamp(2.4rem,6vw,4rem);text-align:center}
-.foot .glyph{font-family:var(--mono);font-size:1.7rem;color:var(--gold);margin-bottom:.8rem}
-.foot p{font-family:var(--mono);font-size:.76rem;color:var(--bone-faint);max-width:56ch;margin:0 auto;line-height:1.9}
-.foot a{color:var(--bone-dim);text-decoration:underline;text-underline-offset:3px}
-.foot a:hover{color:var(--gold)}
-/* reveal */
-.js .reveal{opacity:0}
-.js .reveal.in{opacity:1;transition:opacity .42s linear}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1}}
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:.85rem max(1rem,calc((100vw - var(--maxw))/2));background:rgba(7,10,18,.78);backdrop-filter:blur(16px);border-bottom:1px solid rgba(245,240,230,.08)}
+.brand{font-weight:800;font-size:1rem;letter-spacing:-.015em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--gold)}
+.nav{display:flex;align-items:center;gap:1.1rem;font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.nav a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:.45rem 0;border-bottom:1px solid transparent;transition:color .16s,border-color .16s}
+.nav a:hover{color:var(--bone);border-color:var(--gold)}
+.nav a.nav-action{color:var(--ink);background:var(--gold);border:1px solid var(--gold);padding:.5rem .75rem}
+.nav a.nav-action:hover{color:var(--ink);background:var(--gold-hot);border-color:var(--gold-hot)}
+.hero{position:relative;min-height:min(860px,calc(100svh - 64px));display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);align-items:center;gap:clamp(2.5rem,7vw,7rem);padding-block:clamp(4.8rem,10vw,8.4rem);isolation:isolate}
+.hero::after{content:"FINITY";position:absolute;z-index:-1;left:-.05em;bottom:-.15em;font:800 clamp(7rem,20vw,16rem)/.75 var(--sans);letter-spacing:-.08em;color:rgba(245,240,230,.022);pointer-events:none}
+.eyebrow,.kicker{font:500 .7rem var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0 0 1.25rem}
+.hero h1{margin:0;letter-spacing:-.045em;text-wrap:balance}
+.hero h1 .prelude{display:block;font:400 clamp(1.25rem,2.2vw,1.8rem)/1.25 var(--serif);font-style:italic;letter-spacing:-.01em;color:var(--muted);margin-bottom:.55rem}
+.hero h1 strong{display:block;max-width:8.4ch;font:500 clamp(4rem,8.3vw,7.8rem)/.86 var(--serif);letter-spacing:-.055em;color:var(--bone)}
+.hero h1 em{color:var(--gold);font-style:normal}
+.dek{max-width:62ch;margin:1.65rem 0 0;font-size:clamp(1.06rem,1.5vw,1.28rem);line-height:1.62;color:var(--muted)}
+.dek strong{color:var(--bone);font-weight:500}
+.cta-row{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.2rem 1.3rem;border:1px solid var(--line-strong);background:transparent;color:var(--bone);font:600 .74rem var(--mono);letter-spacing:.055em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .17s,border-color .17s,background .17s,color .17s}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#16120A}
+.btn.primary:hover{background:var(--gold-hot);transform:translateY(-2px)}
+.btn.secondary:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+.text-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font:500 .78rem var(--mono);text-decoration-color:rgba(192,193,197,.45);text-underline-offset:4px}
+.text-link:hover{color:var(--gold)}
+.horizon-figure{position:relative;margin:0;min-height:420px;display:flex;flex-direction:column;justify-content:center}
+.horizon-line{position:absolute;top:47%;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-strong) 12%,var(--blue) 52%,var(--line-strong) 80%,transparent)}
+.horizon-line::after{content:"";position:absolute;left:50%;top:50%;width:9rem;height:9rem;border-radius:50%;background:radial-gradient(circle,rgba(240,200,90,.18),transparent 68%);transform:translate(-50%,-50%)}
+.seats{position:relative;z-index:1;display:grid;grid-template-columns:repeat(3,1fr);align-items:center;text-align:center}
+.seat{min-width:0}
+.seat .mark{display:grid;place-items:center;height:7rem;font:300 clamp(3.1rem,6vw,5rem)/1 var(--serif);color:var(--muted);text-shadow:0 0 2rem rgba(192,193,197,.08)}
+.seat.center .mark{font-size:clamp(5rem,8vw,7.5rem);color:var(--gold);text-shadow:0 0 2.8rem rgba(240,200,90,.28)}
+.seat:last-child .mark{color:var(--blue)}
+.seat .name{display:block;font:500 .64rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.seat.center .name{color:var(--gold)}
+.horizon-figure figcaption{align-self:center;max-width:28rem;margin-top:4rem;text-align:center;color:var(--faint);font:400 .72rem/1.6 var(--mono)}
+.section{padding-block:clamp(4.5rem,9vw,8rem);border-top:1px solid rgba(245,240,230,.08);scroll-margin-top:5rem}
+.section-head{display:grid;grid-template-columns:minmax(12rem,.7fr) minmax(0,1.3fr);gap:clamp(2rem,8vw,8rem);align-items:start;margin-bottom:clamp(2.8rem,6vw,5rem)}
+.section h2{font:400 clamp(2.5rem,5.3vw,5.1rem)/.98 var(--serif);letter-spacing:-.045em;margin:0;text-wrap:balance}
+.section h2 em{color:var(--gold);font-style:italic}
+.lead{max-width:40rem;color:var(--muted);font-size:clamp(1.08rem,1.5vw,1.26rem);margin:.25rem 0 0}
+.lead strong{color:var(--bone);font-weight:500}
+.triad{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong)}
+.mode{position:relative;min-height:300px;padding:2rem clamp(1.2rem,3vw,2.4rem);border-right:1px solid var(--line)}
+.mode:last-child{border-right:0}
+.mode .mark{font:300 3.5rem/1 var(--serif);color:var(--faint)}
+.mode:nth-child(2){background:linear-gradient(180deg,rgba(240,200,90,.09),transparent)}
+.mode:nth-child(2)::before{content:"";position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--gold)}
+.mode:nth-child(2) .mark{color:var(--gold);font-size:4.6rem}
+.mode:nth-child(3) .mark{color:var(--blue)}
+.mode h3{margin:1.35rem 0 .65rem;font-size:1.25rem;letter-spacing:-.02em}
+.mode p{margin:0;color:var(--muted);font-size:.96rem}
+.mode .definition{color:var(--bone);font-family:var(--serif);font-size:1.12rem;line-height:1.45}
+.compass-line{margin:2.2rem 0 0;color:var(--bone);font:400 clamp(1.2rem,2vw,1.7rem)/1.5 var(--serif);text-align:center}
+.compass-line em{color:var(--gold);font-style:normal}
+.power{position:relative;background:linear-gradient(120deg,rgba(121,168,255,.08),rgba(114,214,192,.035) 48%,rgba(240,200,90,.04));overflow:hidden}
+.power::after{content:"Φ₅  ×  V₄";position:absolute;right:-.02em;bottom:-.1em;font:500 clamp(5rem,16vw,13rem)/1 var(--serif);letter-spacing:-.06em;color:rgba(245,240,230,.025);pointer-events:none}
+.power-bridge{position:relative;z-index:1;display:grid;grid-template-columns:1fr minmax(240px,.8fr) 1fr;border:1px solid var(--line-strong);background:rgba(7,10,18,.46)}
+.power-source,.power-aperture{position:relative;min-height:320px;padding:clamp(1.5rem,3vw,2.5rem);display:flex;flex-direction:column;justify-content:space-between}
+.power-source:first-child{border-right:1px solid var(--line)}
+.power-source:last-child{border-left:1px solid var(--line)}
+.power-source .dimension{font:500 .68rem var(--mono);letter-spacing:.17em;text-transform:uppercase;color:var(--faint)}
+.power-source .symbol{font:400 clamp(4rem,8vw,7rem)/1 var(--serif);letter-spacing:-.06em;margin:.6rem 0}
+.power-source.possible .symbol{color:var(--blue)}
+.power-source.actual .symbol{color:var(--mint)}
+.power-source h3{font:400 clamp(1.5rem,2.5vw,2.15rem)/1.08 var(--serif);margin:0 0 .7rem}
+.power-source p{color:var(--muted);font-size:.94rem;margin:0;max-width:30ch}
+.power-aperture{align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,rgba(240,200,90,.10),transparent)}
+.power-aperture::before,.power-aperture::after{content:"";position:absolute;top:50%;width:22%;height:1px}
+.power-aperture::before{left:0;background:linear-gradient(90deg,var(--blue),var(--gold))}
+.power-aperture::after{right:0;background:linear-gradient(90deg,var(--gold),var(--mint))}
+.aperture-mark{width:5.5rem;height:5.5rem;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:400 2.8rem var(--serif);box-shadow:0 0 3rem rgba(240,200,90,.15);margin-bottom:1rem}
+.power-aperture .lab{font:500 .64rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.power-aperture strong{display:block;font:400 1.35rem/1.2 var(--serif);margin:.55rem 0;color:var(--bone)}
+.power-aperture code{font:500 .78rem var(--mono);color:var(--gold-hot)}
+.power-aperture small{display:block;max-width:24ch;color:var(--faint);font-size:.72rem;line-height:1.5;margin-top:.8rem}
+.rosetta-band{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;margin-top:1rem;padding:1.25rem 1.5rem;border:1px solid var(--line);background:var(--ink-raised)}
+.rosetta-band p{margin:0;color:var(--muted);font-size:.93rem}
+.rosetta-band strong{color:var(--bone);font-weight:500}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-strong)}
+.step{padding:1.8rem clamp(1rem,2.5vw,2rem) 0 0;margin-right:clamp(1rem,2.5vw,2rem);border-right:1px solid var(--line);min-height:260px}
+.step:last-child{border-right:0;margin-right:0}
+.step .n{font:500 .68rem var(--mono);letter-spacing:.14em;color:var(--gold)}
+.step h3{font:400 1.55rem/1.1 var(--serif);margin:1.4rem 0 .8rem}
+.step p{color:var(--muted);font-size:.92rem;margin:0}
+.finity-tool{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(2rem,7vw,7rem);align-items:start;margin-top:clamp(3.5rem,7vw,6rem);padding:clamp(1.7rem,4vw,3.2rem);border:1px solid var(--line-strong);background:linear-gradient(135deg,rgba(240,200,90,.075),transparent 44%),var(--ink-raised)}
+.tool-copy h3{font:400 clamp(2rem,4vw,3.4rem)/1 var(--serif);letter-spacing:-.035em;margin:0 0 1rem;max-width:9ch}
+.tool-copy p:not(.kicker){color:var(--muted);font-size:.95rem;max-width:30ch}
+.card-prompts{border-top:1px solid var(--line-strong)}
+.prompt{display:grid;grid-template-columns:7rem 1fr;gap:1.2rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.prompt span{font:500 .64rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.prompt p{margin:0;color:var(--bone);font-size:.94rem}
+.tool-actions{display:flex;align-items:center;gap:.8rem 1.2rem;flex-wrap:wrap;margin-top:1.4rem}
+.copy-status{min-height:1.2em;color:var(--blue);font:500 .68rem var(--mono)}
+.center-cta{text-align:center;margin-top:3.2rem}
+.trust-strip{display:grid;grid-template-columns:.55fr 1.45fr auto;align-items:center;gap:1.5rem;margin-top:2rem;padding:1.25rem 1.5rem;border-block:1px solid var(--line)}
+.trust-strip .lab{font:500 .64rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.trust-strip p{margin:0;color:var(--muted);font-size:.9rem}
+.trust-links{display:flex;gap:1rem;white-space:nowrap;font:500 .7rem var(--mono)}
+.trust-links a{color:var(--muted);text-underline-offset:4px}.trust-links a:hover{color:var(--gold)}
+.discoveries{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+.discovery{position:relative;background:var(--ink);min-height:300px;padding:2rem;text-decoration:none;transition:background .18s}
+.discovery:hover{background:var(--ink-raised)}
+.discovery::after{content:"↗";position:absolute;right:1.6rem;top:1.6rem;color:var(--faint);font-family:var(--mono);transition:color .18s,transform .18s}
+.discovery:hover::after{color:var(--gold);transform:translate(3px,-3px)}
+.discovery .lab{font:500 .65rem var(--mono);letter-spacing:.15em;text-transform:uppercase;color:var(--blue)}
+.discovery h3{font:400 clamp(1.65rem,3vw,2.35rem)/1.04 var(--serif);letter-spacing:-.03em;margin:3.5rem 0 1rem;max-width:10ch}
+.discovery p{color:var(--muted);font-size:.94rem;margin:0;max-width:28ch}
+.explore-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(3rem,9vw,9rem);align-items:start}
+.explore-intro{position:sticky;top:7rem}
+.explore-intro h2{max-width:9ch}
+.route-list{border-top:1px solid var(--line-strong)}
+.route{display:grid;grid-template-columns:9rem 1fr auto;align-items:center;gap:1.2rem;padding:1.25rem 0;border-bottom:1px solid var(--line);text-decoration:none}
+.route .label{font:500 .68rem var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--gold)}
+.route .desc{color:var(--muted);font-size:.94rem}
+.route .arrow{color:var(--faint);transition:transform .17s,color .17s}
+.route:hover .arrow{color:var(--gold);transform:translateX(4px)}
+.closing{padding-block:clamp(5rem,11vw,10rem);text-align:center;border-top:1px solid var(--line);background:radial-gradient(70% 80% at 50% 100%,rgba(240,200,90,.09),transparent 62%)}
+.closing .emblem{font:300 clamp(2.8rem,6vw,5rem)/1 var(--serif);letter-spacing:.34em;color:var(--gold);margin:0 0 1.8rem}
+.closing h2{max-width:15ch;margin:0 auto;font:400 clamp(2.8rem,6vw,5.5rem)/.98 var(--serif);letter-spacing:-.045em}
+.closing p{max-width:38rem;margin:1.4rem auto 0;color:var(--muted)}
+.footer{padding-block:2.5rem 3.5rem;border-top:1px solid var(--line);color:var(--faint);font:.72rem/1.8 var(--mono)}
+.footer-main{display:flex;justify-content:space-between;gap:2rem;align-items:flex-start}
+.footer p{margin:0;max-width:38rem}
+.footer-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:.35rem 1rem;max-width:36rem}
+.footer a{text-decoration:none;color:var(--faint)}
+.footer a:hover{color:var(--bone)}
+.js .hero .reveal{opacity:0;transform:translateY(12px)}
+.js .hero .reveal.in{opacity:1;transform:none;transition:opacity .48s ease,transform .48s ease}
+@media(max-width:960px){
+  .hero{grid-template-columns:1fr;min-height:auto}.horizon-figure{min-height:310px;max-width:620px;width:100%;margin-inline:auto}.hero h1 strong{max-width:10ch}
+  .section-head,.explore-grid,.finity-tool{grid-template-columns:1fr}.section-head{gap:1rem}.explore-intro{position:static}.explore-intro h2{max-width:12ch}.tool-copy h3{max-width:14ch}
+  .power-bridge{grid-template-columns:1fr}.power-source,.power-aperture{min-height:260px}.power-source:first-child{border-right:0;border-bottom:1px solid var(--line)}.power-source:last-child{border-left:0;border-top:1px solid var(--line)}.power-aperture::before,.power-aperture::after{width:1px;height:22%;left:50%;right:auto}.power-aperture::before{top:0;background:linear-gradient(180deg,var(--blue),var(--gold))}.power-aperture::after{top:auto;bottom:0;background:linear-gradient(180deg,var(--gold),var(--mint))}
+  .trust-strip{grid-template-columns:1fr}.trust-links{white-space:normal}
+  .steps{grid-template-columns:repeat(2,1fr)}.step:nth-child(2){border-right:0}.step:nth-child(n+3){border-top:1px solid var(--line);padding-top:1.8rem;margin-top:1.8rem}
+}
+@media(max-width:720px){
+  body{font-size:17px}.topbar{align-items:flex-start;flex-direction:column;gap:.45rem;padding:.75rem 1rem}.nav{width:calc(100vw - 2rem);overflow-x:auto;gap:1rem;padding-bottom:.15rem;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}
+  .hero{padding-top:4rem}.hero h1 strong{font-size:clamp(3.5rem,17vw,5.7rem)}.hero::after{font-size:28vw;bottom:.1em}
+  .horizon-figure{min-height:270px}.horizon-figure figcaption{margin-top:2.8rem}.seat .mark{height:5.5rem}.seat.center .mark{font-size:4.8rem}
+  .triad,.discoveries{grid-template-columns:1fr}.mode{min-height:auto;border-right:0;border-bottom:1px solid var(--line);padding-block:1.6rem}.mode:last-child{border-bottom:0}
+  .steps{grid-template-columns:1fr}.step,.step:nth-child(2){border-right:0;border-top:1px solid var(--line);padding-top:1.5rem;margin-top:1.5rem;min-height:auto}.step:first-child{border-top:0;margin-top:0}
+  .rosetta-band{align-items:flex-start;flex-direction:column}
+  .discovery{min-height:250px}.route{grid-template-columns:1fr auto}.route .label{grid-column:1}.route .desc{grid-column:1}.route .arrow{grid-column:2;grid-row:1 / span 2}
+  .prompt{grid-template-columns:1fr;gap:.35rem}
+  .footer-main{flex-direction:column}.footer-nav{justify-content:flex-start}
+}
+@media(max-width:420px){.wrap{width:min(100% - 2rem,var(--maxw))}.cta-row{align-items:stretch;flex-direction:column}.btn{width:100%}.horizon-figure figcaption{font-size:.66rem}.closing .emblem{letter-spacing:.22em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .hero .reveal{opacity:1;transform:none}}
 </style>
-<!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#050505">
+<meta name="theme-color" content="#070A12">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to the idea</a>
 <header class="topbar">
-  <a class="brand" href="./">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Routes">
-    <a href="discoveries/">Discoveries</a><a href="fable/">Fable</a><a href="plainly/">Plainly</a>
-    <a href="record/">Record</a><a href="axioms/">Axioms</a>
-    <a href="practice/">Practice</a><a href="ecology/">Ecology</a><a href="book/">Book</a><a href="map/">Map</a><a href="lab/">Lab</a>
+  <a class="brand" href="./" aria-label="Emergentism home">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="#idea">Finity</a>
+    <a href="#power">Power</a>
+    <a href="#use">Practice</a>
+    <a href="rosetta/">Rosetta</a>
+    <a href="book/">Book</a>
+    <a class="nav-action" href="#finity-card">Frame one decision</a>
   </nav>
 </header>
 
-<main>
-  <!-- ============ HERO ============ -->
+<main id="main" tabindex="-1">
   <header class="hero wrap">
-    <p class="fileno reveal">Emergentism · eleven discoveries</p>
-    <p class="glyph-line reveal">⊙ = • × ○<span class="gloss">finite = origin × infinity</span></p>
-    <h1 class="reveal">Reality has a <span class="heavy">shape</span>.<br>We <span class="gold">drew</span> it.</h1>
-    <p class="dek reveal">Eleven discoveries about <b>freedom, balance, and value</b> — stated boldly, graded exactly, and kept on trial in public.</p>
-    <div class="cta-row reveal">
-      <a class="btn primary" href="map/">Explore the living map →</a>
-      <a class="btn ghost" href="practice/">Try the practice in an afternoon →</a>
-      <a class="btn ghost" href="record/">Check the trial record →</a>
+    <div class="hero-copy">
+      <p class="eyebrow reveal">The Infinite · Finity · Infinity</p>
+      <h1 class="reveal">
+        <span class="prelude">Zero made absence calculable.</span>
+        <strong><em>Finity</em> makes limits navigable.</strong>
+      </h1>
+      <p class="dek reveal">Emergentism is a practical worldview for finite beings in a world of endless possibility. It gives you one portable move: <strong>name a finite, observable, revisable boundary; meet it with the power you actually have; act; and learn from what happens.</strong></p>
+      <div class="cta-row reveal">
+        <a class="btn primary" href="#finity-card">Use the Finity Card <span aria-hidden="true">↓</span></a>
+        <a class="btn secondary" href="plainly/">Understand Finity <span aria-hidden="true">→</span></a>
+        <a class="text-link" href="book/">Read the living book <span aria-hidden="true">→</span></a>
+      </div>
     </div>
+    <figure class="horizon-figure reveal" aria-labelledby="horizon-caption">
+      <div class="horizon-line" aria-hidden="true"></div>
+      <div class="seats" aria-hidden="true">
+        <div class="seat"><span class="mark">•</span><span class="name">The Infinite</span></div>
+        <div class="seat center"><span class="mark">⊙</span><span class="name">Finity</span></div>
+        <div class="seat"><span class="mark">○</span><span class="name">Infinity</span></div>
+      </div>
+      <figcaption id="horizon-caption">Three seats on one horizon: inexhaustible ground, an approachable limit, and continuation without end.</figcaption>
+    </figure>
   </header>
 
-  <!-- ============ ONE CANON, THREE SCRIPTS ============ -->
-  <section id="scripts">
+  <section class="section" id="idea">
     <div class="wrap">
-      <p class="kicker reveal">One canon, three scripts</p>
-      <h2 class="reveal">The same content, told <b>three ways</b>.</h2>
-      <p class="lead reveal read">Different readers enter through different doors. The only rule: no script ever claims a tier the receipts don't back.</p>
-      <div class="trio reveal">
-        <div class="panelcard">
-          <p class="lab">The story</p>
-          <h3>Fable</h3>
-          <p>The whole idea as a five-minute story — the map that kept its own errors. No equations, and it says so.</p>
-          <a class="go" href="fable/">Read the fable →</a>
+      <div class="section-head">
+        <div>
+          <p class="kicker reveal">01 · The idea</p>
+          <h2 class="reveal">Three ideas.<br>One <em>compass.</em></h2>
         </div>
-        <div class="panelcard">
-          <p class="lab">The plain version</p>
-          <h3>Plainly</h3>
-          <p>The same idea in ordinary words — what is proven, what is inherited, what is a bet, with every claim graded.</p>
-          <a class="go" href="plainly/">Read it plainly →</a>
+        <p class="lead reveal">Emergentism uses three modes to keep possibility, progress, and arrival distinct. <strong>The middle is Finity: a limit that can guide an open-ended path while the whole remains open.</strong></p>
+      </div>
+      <div class="triad reveal">
+        <article class="mode">
+          <div class="mark" aria-hidden="true">•</div>
+          <h3>The Infinite</h3>
+          <p class="definition">What count cannot exhaust.</p>
+          <p>The ground before any list is complete: possibility exceeds every inventory we make of it.</p>
+        </article>
+        <article class="mode">
+          <div class="mark" aria-hidden="true">⊙</div>
+          <h3>Finity</h3>
+          <p class="definition">A finite limit a process can approach.</p>
+          <p>A declared boundary: close enough to guide action, concrete enough to assess, open enough to revise.</p>
+        </article>
+        <article class="mode">
+          <div class="mark" aria-hidden="true">○</div>
+          <h3>Infinity</h3>
+          <p class="definition">Count without end.</p>
+          <p>The horizon of continuation: every finite step can be followed by another.</p>
+        </article>
+      </div>
+      <p class="compass-line reveal">Infinity tells us that we can continue. <em>Finity lets us say where we are going.</em></p>
+    </div>
+  </section>
+
+  <section class="section power" id="power">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker reveal">02 · The power seam</p>
+          <h2 class="reveal">The possible meets<br>the <em>actual.</em></h2>
         </div>
-        <div class="panelcard">
-          <p class="lab">The receipts</p>
-          <h3>Record</h3>
-          <p>Every test the framework has faced and how it came out — dated, tiered, kept. The refutations are the credential.</p>
-          <a class="go" href="record/">Check the record →</a>
+        <p class="lead reveal">Possibility is not yet power in the world. Emergentism separates <strong>the futures a finite being can distinguish</strong> from <strong>the capability available to act now</strong>—then asks where they can meet.</p>
+      </div>
+      <div class="power-bridge reveal" aria-label="D5 possible power and D4 actual power converge through a finite actionable boundary">
+        <article class="power-source possible">
+          <div><span class="dimension">D5 · possible power</span><div class="symbol">Φ₅</div></div>
+          <div><h3>What could become real?</h3><p>The structured field of alternatives you can represent, compare, and coordinate.</p></div>
+        </article>
+        <article class="power-aperture">
+          <div class="aperture-mark" aria-hidden="true">⊙</div>
+          <span class="lab">The Finity aperture</span>
+          <strong>Choose the boundary both powers can touch.</strong>
+          <code>P_node = Φ̂₄V₄</code>
+          <small>One selected need-both model: the present evaluation of possibility coupled to actual means.</small>
+        </article>
+        <article class="power-source actual">
+          <div><span class="dimension">D4 · actual power</span><div class="symbol">V₄</div></div>
+          <div><h3>What can act now?</h3><p>The body, time, tools, access, energy, and capability actually available for the move.</p></div>
+        </article>
+      </div>
+      <div class="rosetta-band reveal">
+        <p><strong>The D5 Rosetta names how power moves:</strong> two taking transfers, two giving transfers, and three frames—creation, dissolution, and preservation.</p>
+        <a class="text-link" href="rosetta/">Explore four moves and three frames <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="use">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker reveal">03 · First value</p>
+          <h2 class="reveal">Frame one <em>decision.</em></h2>
+        </div>
+        <p class="lead reveal">A useful worldview changes the next move. Use Finity to turn one open-ended decision into a boundary you can approach, an action you can take, and a consequence you can learn from.</p>
+      </div>
+      <div class="steps reveal">
+        <article class="step">
+          <span class="n">01</span>
+          <h3>Name the actual</h3>
+          <p>Separate what is happening now from the story, hope, or fear surrounding it.</p>
+        </article>
+        <article class="step">
+          <span class="n">02</span>
+          <h3>Open possibility</h3>
+          <p>Represent the alternatives that remain genuinely reachable and the evidence that could change them.</p>
+        </article>
+        <article class="step">
+          <span class="n">03</span>
+          <h3>Choose a Finity</h3>
+          <p>Name a boundary finite enough to guide action and observable enough to assess.</p>
+        </article>
+        <article class="step">
+          <span class="n">04</span>
+          <h3>Act and receive</h3>
+          <p>Take the smallest real step, receive the consequence, and revise the map before continuing.</p>
+        </article>
+      </div>
+      <div class="finity-tool reveal" id="finity-card">
+        <div class="tool-copy">
+          <p class="kicker">The Finity Card</p>
+          <h3>Give one horizon a next move.</h3>
+          <p>Copy these five prompts into any note. Answer them for one decision that matters now. The card is the first useful unit of the worldview.</p>
+        </div>
+        <div>
+          <div class="card-prompts">
+            <div class="prompt"><span>Decision</span><p>What am I actually deciding?</p></div>
+            <div class="prompt"><span>Possibility</span><p>What remains genuinely open?</p></div>
+            <div class="prompt"><span>Finity</span><p>What finite, observable boundary is worth approaching?</p></div>
+            <div class="prompt"><span>Next move</span><p>What is the smallest real step I can take now?</p></div>
+            <div class="prompt"><span>Shared value</span><p>Whose capacity expands if this works?</p></div>
+          </div>
+          <div class="tool-actions">
+            <button class="btn primary" type="button" id="copy-finity-card">Copy the Finity Card</button>
+            <a class="text-link" href="practice/">Continue into the lived practice <span aria-hidden="true">→</span></a>
+            <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ DISCOVERY GALLERY ============ -->
-  <section id="discoveries">
+  <section class="section" id="discoveries">
     <div class="wrap">
-      <p class="kicker reveal">The discoveries</p>
-      <h2 class="reveal">Eleven claims, each wearing <b>its exact tier</b>.</h2>
-      <p class="lead reveal read">Bold where the geometry is settled, honest where the reading is a wager. Every card opens a page that ends at the trial record.</p>
-
-      <div class="gallery reveal">
-        <a class="card featured" href="discoveries/the-crossing/">
-          <span class="n">11 · the-crossing · <b>featured</b></span>
-          <h3>Three stations. One crossing.</h3>
-          <p>A torus lets its ring shrink: the horn (spacetime's emblem — its mouth honestly a cusp, not the light cone), the √2 spindle (two exact 45° cone points), the sphere covered twice, charts pre-installed. The geometry is computed; the passage — read as the image of emergence — is an emblem, priced, and it derives nothing.</p>
-          <span class="tchip"><b class="ta">[A]</b> the geometry — computed · <b class="ti">[I]</b> the passage — emblem, priced · <b class="tc">[C]</b> emergence at saturation — wagered</span>
+      <div class="section-head">
+        <div>
+          <p class="kicker reveal">04 · The wider worldview</p>
+          <h2 class="reveal">From one decision<br>to a <em>world.</em></h2>
+        </div>
+        <p class="lead reveal">Finity is the front door. Behind it is a connected account of possibility, actual power, emergence, transformation, cooperation, and value.</p>
+      </div>
+      <div class="discoveries reveal">
+        <a class="discovery" href="plainly/">
+          <span class="lab">Direction</span>
+          <h3>A limit can orient without closing.</h3>
+          <p>Finity gives an open process somewhere concrete to move.</p>
         </a>
-        <a class="card" href="discoveries/degrees-of-freedom/">
-          <span class="n">01 · degrees-of-freedom</span>
-          <h3>Reality is room to vary</h3>
-          <p>Plato, repaired after 2,400 years: not Forms in a heaven — axes of possibility, filled by emergence to their limits.</p>
-          <span class="tchip"><b class="ti">[I]</b> a lens, held while it earns its keep</span>
+        <a class="discovery" href="5/">
+          <span class="lab">Power</span>
+          <h3>The possible meets the actual.</h3>
+          <p>D5 possible power becomes actionable only through D4 models, means, and consequence.</p>
         </a>
-        <a class="card" href="discoveries/reality-gradient/">
-          <span class="n">02 · reality-gradient</span>
-          <h3>Existence comes in degrees</h3>
-          <p>Every note dies; pitch does not. The axis outlives everything placed on it — what is more foundational is more real.</p>
-          <span class="tchip"><b class="ti">[I]</b> a lens, held while it earns its keep</span>
-        </a>
-        <a class="card" href="discoveries/burrisphere/">
-          <span class="n">03 · burrisphere</span>
-          <h3>One point, two shadows</h3>
-          <p>Every being casts a seeing-shadow and a doing-shadow — and the geometry says the summit is the middle, not either pole.</p>
-          <span class="tchip"><b class="ts">[S]</b> geometry settled · <b class="tc">[C]</b> lives as latitudes — wagered</span>
-        </a>
-        <a class="card" href="discoveries/mass-shell/">
-          <span class="n">04 · mass-shell</span>
-          <h3>The mass shell admits the same product form</h3>
-          <p>For a massive timelike on-shell particle, normalized light-cone factors multiply to one. The physics is inherited; the seeing/doing map is interpretive.</p>
-          <span class="tchip"><b class="ta">[A]</b> bounded SR factorization · <b class="ti">[I]</b>/<b class="tc">[C]</b> the mapping — unvalidated</span>
-        </a>
-        <a class="card" href="discoveries/ladder/">
-          <span class="n">05 · ladder</span>
-          <h3>Five freedoms, one spiral</h3>
-          <p>Matter, bond, life, mind, choice — each freedom fills to its limit, and the limit becomes the floor the next one stands on.</p>
-          <span class="tchip"><b class="ti">[I]</b> a lens, held while it earns its keep</span>
-        </a>
-        <a class="card" href="discoveries/nonduality/">
-          <span class="n">06 · nonduality</span>
-          <h3>The top rhymes with the ground</h3>
-          <p>"All is one" and "the many are real" — both exactly true, in different registers. Similar, not same. A spiral, not a circle, written with a tilde.</p>
-          <span class="tchip"><b class="ti">[I]</b> the register reading · <b class="tc">[C]</b> summit ∼ ground — wagered</span>
-        </a>
-        <a class="card" href="discoveries/game/">
-          <span class="n">07 · game</span>
-          <h3>The only lawful move lifts both players</h3>
-          <p>One gate, both directions: you rise and the whole rises. The move that grows by draining the board is extraction — and at scale it eats its own board.</p>
-          <span class="tchip"><b class="ts">[S]</b> the gate's logic · <b class="tc">[C]</b> self-termination at scale — wagered</span>
-        </a>
-        <a class="card" href="discoveries/paradoxes/">
-          <span class="n">08 · paradoxes</span>
-          <h3>One key, twenty-six locks</h3>
-          <p>Zeno, the liar, the ship of Theseus: most famous knots are one sentence doing two jobs. Split the registers and the knot falls open.</p>
-          <span class="tchip"><b class="ti">[I]</b> each dissolution graded separately</span>
-        </a>
-        <a class="card" href="discoveries/universalizability/">
-          <span class="n">09 · universalizability</span>
-          <h3>The whole ethic is one asymmetric bit</h3>
-          <p>What if everyone did this? Cooperation survives its own universalization; extraction cannot. Kant's test, credited in full — our geometry lands on it.</p>
-          <span class="tchip"><b class="te">[E]</b> Kant's test, credited · <b class="ts">[S]</b> the asymmetry · <b class="tc">[C]</b> the vow</span>
-        </a>
-        <a class="card wide" href="discoveries/is-ought/">
-          <span class="n">10 · is-ought</span>
-          <h3>The gap is real. We crossed it with one signed bit.</h3>
-          <p>Hume was right: no pile of facts adds up to an ought, and we don't pretend otherwise. The mathematics shrinks the gap to one asymmetric bit — refuse the move that cannot be everyone's move — and we sign that bit in the open, as a vow, never as a theorem.</p>
-          <span class="tchip"><b class="ts">[S]</b> the asymmetry — structural · <b class="tc">[C]</b> the vow — taken, not proven</span>
+        <a class="discovery" href="rosetta/">
+          <span class="lab">Transformation</span>
+          <h3>Seven ways power can move.</h3>
+          <p>Four transfers and three frames create a compact language for change.</p>
         </a>
       </div>
-
-      <p class="strength reveal">Every discovery above has been held against adversarial audit — <a href="record/">see the trial record</a>. Where one broke, the break is published. Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.</p>
-      <div class="cta-row reveal" style="margin-top:1.2rem">
-        <a class="btn ghost" href="discoveries/">All eleven as one gallery →</a>
+      <div class="center-cta reveal"><a class="btn secondary" href="discoveries/">Explore all eleven discoveries <span aria-hidden="true">→</span></a></div>
+      <div class="trust-strip reveal">
+        <span class="lab">Trust comes later—and stays visible</span>
+        <p>Every stronger claim is tiered; failed claims remain dated; open questions remain open. The method earns trust by making correction inspectable.</p>
+        <span class="trust-links"><a href="record/">Trial record</a><a href="lab/">Open questions</a></span>
       </div>
     </div>
   </section>
 
-  <!-- ============ HOW TO READ ============ -->
-  <section id="tiers">
-    <div class="wrap">
-      <p class="kicker reveal">How to read this</p>
-      <h2 class="reveal">Claims thin, <b>verdicts heavy</b>.</h2>
-      <div class="body read reveal">
-        <p>Every claim on this site wears an <b>evidence tier</b>, and the tiers are exact: what is settled mathematics stays settled; what is inherited is credited; what is a wager is called a wager and never quietly promoted. When our own predictions failed under audit, we left the record standing instead of deleting it.</p>
+  <section class="section" id="explore">
+    <div class="wrap explore-grid">
+      <div class="explore-intro">
+        <p class="kicker reveal">05 · Choose your depth</p>
+        <h2 class="reveal">Use it. Learn it.<br>Test it. <em>Build.</em></h2>
+        <p class="lead reveal">The front door is one decision. Go deeper only as far as the value you want to create now.</p>
       </div>
-      <div class="tier-legend reveal">
-        <span class="chip a"><i></i>[A] established</span>
-        <span class="chip e"><i></i>[E] inherited, credited</span>
-        <span class="chip s"><i></i>[S] structural</span>
-        <span class="chip i"><i></i>[I] interpretive</span>
-        <span class="chip c"><i></i>[C] conjecture</span>
-      </div>
-      <p class="strength reveal">The full grading lives on <a href="axioms/">the axioms page</a>; the failures live on <a href="record/">the trial record</a>.</p>
-    </div>
-  </section>
-
-  <!-- ============ USE IT ============ -->
-  <section id="use">
-    <div class="wrap">
-      <p class="kicker reveal">Users, not believers</p>
-      <h2 class="reveal">Nothing here asks for your <b>belief</b>.</h2>
-      <p class="lead reveal read">The framework is a tool. Pick it up, use it on something real this week, and keep it exactly as long as it keeps paying for itself.</p>
-      <div class="trio reveal">
-        <div class="panelcard">
-          <p class="lab">An afternoon</p>
-          <h3>Practice</h3>
-          <p>One honest reading of your own balance — which shadow is longer, seeing or doing — and one small move toward the equator.</p>
-          <a class="go" href="practice/">Start the practice →</a>
-        </div>
-        <div class="panelcard">
-          <p class="lab">An open question</p>
-          <h3>Laboratory</h3>
-          <p>Choose one typed gap, strengthen its rival, freeze a discriminator, or sponsor bounded compute without purchasing the verdict.</p>
-          <a class="go" href="lab/">Choose a gap →</a>
-        </div>
-        <div class="panelcard">
-          <p class="lab">An hour</p>
-          <h3>Plainly</h3>
-          <p>The whole idea in ordinary words — what is proven, what is inherited, what is a bet — with no vocabulary to learn first.</p>
-          <a class="go" href="plainly/">Read it plainly →</a>
-        </div>
+      <div class="route-list reveal">
+        <a class="route" href="practice/"><span class="label">Apply</span><span class="desc">Use the Finity Card and the deeper practices on one real decision.</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="route" href="plainly/"><span class="label">Learn</span><span class="desc">Understand the worldview in ordinary language, then enter the living book.</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="route" href="lab/"><span class="label">Test</span><span class="desc">Choose one open claim, its rival, its discriminator, and its way to lose.</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="route" href="contribute/"><span class="label">Build</span><span class="desc">Bring evidence, expertise, local compute, or a contradiction report.</span><span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ============ GO DEEPER ============ -->
-  <section id="deeper">
+  <section class="closing">
     <div class="wrap">
-      <p class="kicker reveal">Go deeper</p>
-      <h2 class="reveal">The long road, if you <b>want it</b>.</h2>
-      <div class="deep reveal">
-        <a href="fable/">The fable</a>
-        <a href="0/">The geometry track, /0 → /6</a>
-        <a href="axioms/">The axioms</a>
-        <a href="record/">The trial record</a>
-        <a href="ecology/">Ecology, replicators &amp; human functions</a>
-        <a href="map/">The living map</a>
-        <a href="contribute/">Contribute to an open question</a>
-        <a href="build/">The existing build path</a>
-        <a href="book/">The book — 31 chapters, free</a>
-        <a href="read/">The full corpus — 294 documents</a>
+      <p class="emblem reveal" aria-hidden="true">• ⊙ ○</p>
+      <h2 class="reveal">Choose a limit. Take a real step. Leave more possibility behind.</h2>
+      <p class="reveal">That is Finity as a practice: direction held with humility, progress aimed at a destination, and value that enlarges the field for what comes next.</p>
+      <div class="cta-row reveal" style="justify-content:center">
+        <a class="btn primary" href="practice/">Frame one decision <span aria-hidden="true">→</span></a>
+        <a class="btn secondary" href="book/">Read the living book <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="foot wrap">
-  <div class="glyph">⊙ = • × ○</div>
-  <p>Home · eleven discoveries, tiered exactly — graded on <a href="axioms/">the axioms</a>, tested on <a href="record/">the trial record</a>.<br>
-  If you can see directly, <a href="exit/">put this down</a>.</p>
+<footer class="footer">
+  <div class="wrap footer-main">
+    <p>Emergentism · Finity for an infinite world.<br>Frame one decision. Learn from consequence. Leave more possibility behind.</p>
+    <nav class="footer-nav" aria-label="Further routes">
+      <a href="plainly/">Plainly</a>
+      <a href="rosetta/">Rosetta</a>
+      <a href="map/">Map</a>
+      <a href="axioms/">Axioms</a>
+      <a href="fable/">Fable</a>
+      <a href="ecology/">Ecology</a>
+      <a href="read/">Library</a>
+      <a href="build/">Build</a>
+      <a href="lab/">Research</a>
+      <a href="record/">Trial record</a>
+      <a href="contribute/">Contribute</a>
+      <a href="exit/">Exit</a>
+    </nav>
+  </div>
 </footer>
 
 <script>
-// progressive enhancement only — content is fully visible without JS
 (function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
-  var hero=document.querySelectorAll('.hero .reveal');
-  hero.forEach(function(e,i){e.style.transitionDelay=(i*0.06)+'s';e.classList.add('in');});
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
-  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
-  els.forEach(function(e){if(!e.closest('.hero'))io.observe(e);});
+  document.querySelectorAll('.hero .reveal').forEach(function(el,index){
+    el.style.transitionDelay=(index*.07)+'s';
+    el.classList.add('in');
+  });
+  var copyButton=document.getElementById('copy-finity-card');
+  var copyStatus=document.getElementById('copy-status');
+  var cardText=[
+    'THE FINITY CARD',
+    '',
+    'Decision — What am I actually deciding?',
+    'Possibility — What remains genuinely open?',
+    'Finity — What finite, observable boundary is worth approaching?',
+    'Next move — What is the smallest real step I can take now?',
+    'Shared value — Whose capacity expands if this works?'
+  ].join('\n');
+  function copied(){copyStatus.textContent='Copied. Choose one decision and begin.'}
+  function fallbackCopy(){
+    var field=document.createElement('textarea');
+    field.value=cardText;
+    field.setAttribute('readonly','');
+    field.style.position='fixed';
+    field.style.opacity='0';
+    document.body.appendChild(field);
+    field.select();
+    var ok=document.execCommand('copy');
+    field.remove();
+    if(ok){copied()}else{copyStatus.textContent='Select the five prompts above and copy them.'}
+  }
+  copyButton.addEventListener('click',function(){
+    if(navigator.clipboard&&window.isSecureContext){
+      navigator.clipboard.writeText(cardText).then(copied,fallbackCopy);
+    }else{fallbackCopy()}
+  });
 })();
 </script>
 <script defer src="/assets/js/atlas-drawer.js"></script>

@@ -59,10 +59,9 @@ Zeno has mapped an instantaneous D1/D4 position-slice and treated that slice as 
 
 Register guardrail: this document does not use uppercase `V` for “spatial
 capability” or uppercase `Φ` for “momentum.” In the current action register,
-`V` is D4 means-to-act and `Φ` is a present D4 assessment of the quality of a
-model whose represented alternative histories are D5 content. Zeno's Arrow is
-a lower-register problem about mistaking a position coordinate for a complete
-state description.
+`V₄` is D4 actual power and `Φ₅` is D5 possible power; only its D4 estimate
+`Φ̂₄` enters the node model. Zeno's Arrow is a lower-register problem about
+mistaking a position coordinate for a complete state description.
 
 The arrow is *not* motionless merely because a coordinate slice can be drawn as static. Its physical state at that slice is not exhausted by its geometric shape or occupied interval; it includes the dynamical quantities and continuity constraints that carry through the slice. The discrete D1 snapshot is an observational abstraction. The motion belongs to the state-and-law structure the snapshot suppresses.
 

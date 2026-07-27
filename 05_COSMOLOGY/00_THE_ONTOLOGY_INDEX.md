@@ -73,9 +73,10 @@ The [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md) owns the notation:
 - `φ,ν`: reciprocal-chart coordinates;
 - `P∞=φν=1`: an analytic chart identity;
 - `B=2/(φ+ν)`: a chart balance score;
-- `Φ`: a present D4 measurement of D5 option-field quality or foresight;
-- `V`: D4 usable means;
-- `P_node=ΦV`: the selected normalized conjunctive model, not a uniquely
+- `Φ₅` / public `Φ`: D5 possible power in the option field;
+- `Φ̂₄`: the present D4 evaluation of `Φ₅`;
+- `V₄` / public `V`: D4 actual power or usable means;
+- `P_node=Φ̂₄V₄` / public `ΦV`: the selected normalized conjunctive model, not a uniquely
   derived law of the world.
 
 The chart does not derive ontology, ethics, quantum mechanics, or empirical

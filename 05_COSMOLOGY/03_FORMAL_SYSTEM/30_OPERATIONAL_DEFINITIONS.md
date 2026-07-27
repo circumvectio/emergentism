@@ -25,11 +25,12 @@ world law, or promote any claim. The
 | Type | Symbols | Meaning |
 |---|---|---|
 | reciprocal chart | `φ,ν,θ,B,P∞` | analytic coordinates and functions on a selected chart |
-| finite node | `Φ,V,P_node` | D5 option-field quality/foresight, D4 usable means, and a selected conjunctive score |
-| estimates | `Φ̂,V̂` | outputs of independently specified instruments |
+| finite node | `Φ₅,V₄,P_node` | D5 possible power, D4 actual power, and a selected conjunctive score |
+| present evaluations | `Φ̂₄,V̂₄` | D4 outputs of independently specified instruments; `Φ̂₄=Eval₄(M,Φ₅)` |
 
 `φν=1` is true by definition on the chart. It is not an empirical hypothesis
-and cannot be “confirmed” by measuring `Φ̂,V̂`. Conversely, `Φ̂V̂≈1` is not a
+and cannot be “confirmed” by measuring `Φ̂₄,V̂₄`. Conversely,
+`Φ̂₄V̂₄≈1` is not a
 chart identity. If proposed in a normalized domain, it is an ordinary empirical
 hypothesis about two node variables and must compete with rivals.
 
@@ -37,11 +38,14 @@ The old surface mixed an uppercase foresight estimate with a lowercase chart
 coordinate, then selected reciprocal pairs before testing reciprocity. That made
 the result true by construction. The seam is closed here.
 
-## 2. Candidate `Φ̂` instruments `[D/C]`
+## 2. Candidate `Φ̂₄` instruments `[D/C]`
 
-`Φ` means the quality of an actually carried D5 option field: how well a system
-models, distinguishes, ranks, and updates action-relevant alternatives. It is
-not generic intelligence, eloquence, coherence, or consciousness.
+`Φ₅` names D5 possible power: the structured modal potential of an option
+field. It is not an independently causal substance. A present instrument is an
+actual D4 model token and reports `Φ̂₄`; candidate instruments test how well the
+system distinguishes, ranks, coordinates, and updates action-relevant
+alternatives. Neither symbol means generic intelligence, eloquence, coherence,
+or consciousness.
 
 ### A. Held-out future-model score
 
@@ -50,7 +54,7 @@ outcome `y`, and proper scoring rule `S`:
 
 ```text
 raw_Φ = S(p,y)
-Φ̂_A = normalize_holdout(raw_Φ) ∈ [0,1].
+Φ̂₄,A = normalize_holdout(raw_Φ) ∈ [0,1].
 ```
 
 The normalization, baseline forecaster, horizon, event partition, and missing
@@ -65,7 +69,7 @@ their weights. Estimate whether the system changes present selections in the
 direction predicted by its declared ranking:
 
 ```text
-Φ̂_B = held_out_discrimination(intervention → selection) ∈ [0,1].
+Φ̂₄,B = held_out_discrimination(intervention → selection) ∈ [0,1].
 ```
 
 This candidate is closest to the D4/D5 type contract, but ordinary planning,
@@ -77,20 +81,21 @@ After a bounded surprise, measure calibration recovery and model revision on
 held-out observations. A declared monotone map normalizes the result to
 `[0,1]`. Stability without accurate updating does not count as foresight.
 
-No candidate is canonical. Every use of `Φ̂` must name its candidate, construct
+No candidate is canonical. Every use of `Φ̂₄` must name its candidate, construct
 validity evidence, uncertainty interval, population, horizon, and failure mode.
 
-## 3. Candidate `V̂` instruments `[D/C]`
+## 3. Candidate `V̂₄` instruments `[D/C]`
 
-`V` means D4 usable means for a declared action set—not wealth, force, or raw
-capacity in the abstract.
+`V₄` means D4 actual power for a declared action set: embodied capability and
+usable means available now—not wealth, force, authority, or raw capacity in the
+abstract.
 
 ### A. Feasible-action fraction
 
 For a preregistered action set `A` and actual means state `x`:
 
 ```text
-V̂_A(x) = |{a∈A : Feasible(a,x)}| / |A|.
+V̂₄,A(x) = |{a∈A : Feasible(a,x)}| / |A|.
 ```
 
 The action enumeration and feasibility predicate must be fixed independently of
@@ -102,31 +107,31 @@ For standardized tasks, estimate the share successfully attempted within the
 declared physical resource and time envelope. Report cost and failure
 separately. Authorization `U` and safety admissibility are independent typed
 gates: an unauthorized act may still be physically feasible and therefore may
-count toward `V̂`, while remaining prohibited from commitment.
+count toward `V̂₄`, while remaining prohibited from commitment.
 
-Every use of `V̂` must name the action set, physical resource boundary, bearer
+Every use of `V̂₄` must name the action set, physical resource boundary, bearer
 costs, and uncertainty interval. Report authorization/consent and safety as
-separate variables; never build them into the `V̂` instrument.
+separate variables; never build them into the `V̂₄` instrument.
 
 ## 4. Derived node diagnostics
 
 The declared Emergentist product is
 
 ```text
-P̂_node = Φ̂V̂.
+P̂_node = Φ̂₄V̂₄.
 ```
 
 This is a model output, not proof that product is the correct aggregator. Test
 it on held-out outcomes against at least additive, minimum, harmonic, and a
 preregistered asymmetric/CES or Cobb–Douglas rival.
 
-For `(Φ̂,V̂)≠(0,0)`, a scale-free ratio-balance diagnostic may be declared:
+For `(Φ̂₄,V̂₄)≠(0,0)`, a scale-free ratio-balance diagnostic may be declared:
 
 ```text
-B̂_ratio = 2Φ̂V̂ / (Φ̂²+V̂²).
+B̂_ratio = 2Φ̂₄V̂₄ / (Φ̂₄²+V̂₄²).
 ```
 
-`B̂_ratio≤1`, with equality at `Φ̂=V̂`, is an analytic fact about this selected
+`B̂_ratio≤1`, with equality at `Φ̂₄=V̂₄`, is an analytic fact about this selected
 diagnostic. It is not the chart's `B=sinθ` unless an explicit, independently
 validated map to the chart is supplied. At `(0,0)` the ratio is undefined; a
 domain may separately assign a reporting convention, but not an analytic value.
@@ -148,7 +153,7 @@ empirical theorem and not sufficient for justice by itself.
 
 ## 6. Testing model-mediated future influence
 
-The operational D5 test is not a regression of `Φ̂−V̂` toward zero. It is an
+The operational D5 test is not a regression of `Φ̂₄−V̂₄` toward zero. It is an
 intervention:
 
 ```text

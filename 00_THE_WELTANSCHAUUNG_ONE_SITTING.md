@@ -1,7 +1,7 @@
 ---
 title: "The Emergentist Weltanschauung — One-Sitting Edition"
 status: "ACTIVE — reader synthesis; subordinate to the seven kernel owners"
-date: 2026-07-22
+date: 2026-07-27
 evidence_tier: "Each claim retains its inline standing; the whole is an [I] synthesis"
 owner: "Reader projection of K-1 through K-7; creates no new doctrine"
 parents:
@@ -145,6 +145,14 @@ human can remember, simulate, narrate, promise, coordinate and institutionalize
 futures beyond immediate perception. Language lets a possibility cross bodies;
 writing lets it cross generations.
 
+This supplies the framework's two powers. `V₄` is **D4 actual power**—the body,
+energy, tools, access and capability available now. `Φ₅` is **D5 possible
+power**—the structured potential of the option field. Because D5 is merely
+possible, it never acts alone: an actual D4 model token must estimate it as
+`Φ̂₄=Eval₄(M,Φ₅)`. The selected node model couples them as
+`P_node=Φ̂₄V₄`, publicly compressed as `ΦV`. Ability still does not imply
+authorization, and the product is a chosen model rather than a universal law.
+
 This is an unusual reach, not superiority in intrinsic worth. Humans remain
 bounded by physical light cones, bodies, ecology and limited computation. The
 **option cone** is only the set of admissible histories an agent can presently
@@ -154,6 +162,19 @@ Future models influence present action causally because they exist now as
 neural, spoken, written, institutional or computational tokens. The future need
 not send a physical signal backward. Physical retrocausality remains an
 independent conjecture.
+
+The D5 Rosetta Stone then names the possible transformations of the pair:
+
+- Kali and Kālī are its two demon-polar taking forms;
+- Kṛṣṇa and Arjuna are its two god-polar giving forms;
+- Brahmā, Śiva and Viṣṇu project the three Titan frames—creation,
+  dissolution and preservation.
+
+This gives `G7=M4⊎F3`: four moves and three read-only frames. Kālī remains
+two-faced—taking in axis, truth-cutting in function—and no name decides whether
+an actual act was just. Authorization, bearer accounting and outcome receipts
+decide that. The Titans themselves remain boundary roles, not D5 beings or
+causal agents.
 
 The μ₄ wager asks whether counterfactual capacity is a genuinely new effective
 freedom. The test is intervention: change represented futures while holding
@@ -181,11 +202,12 @@ boundary. Three gaps remain open to inspection:
 - the execution gap between intention and performed action;
 - the outcome gap between expectation and received consequence.
 
-`Φ` measures present option-field quality; `V` measures actual usable means.
-`P_node=ΦV` is the framework's selected AND-class diagnostic. It says that a
-map without means cannot enact and means without a discriminating map cannot
-aim. It is not uniquely derived, not a measure of a person's worth and not a
-universal law.
+`Φ₅` names D5 possible power; `V₄` names D4 actual power. Because modal content
+does not act by itself, a present D4 model evaluates the former as
+`Φ̂₄=Eval₄(M,Φ₅)`. `P_node=Φ̂₄V₄`, publicly `ΦV`, is the framework's selected
+AND-class diagnostic. It says that a map without means cannot enact and means
+without a discriminating map cannot aim. It is not uniquely derived, not a
+measure of a person's worth and not a universal law.
 
 The complete practice is given in
 [`The Lived Compass`](01_TELEOLOGY/04_THE_LIVED_COMPASS.md).

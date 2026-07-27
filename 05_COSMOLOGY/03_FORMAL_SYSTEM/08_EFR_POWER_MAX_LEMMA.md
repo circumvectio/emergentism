@@ -1,7 +1,7 @@
 ---
 title: "Power-Max — Justice-Constrained Objective"
-status: "ACTIVE FORMAL OWNER — dimension-first Kintsugi repair 2026-07-21"
-date: 2026-07-21
+status: "ACTIVE FORMAL OWNER — Φ₅/V₄ typing amended 2026-07-27"
+date: 2026-07-27
 evidence_tier: "[A/S] optimization facts under declared assumptions; [I] selected objective and Justice envelope; [C] empirical adequacy"
 supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
 ---
@@ -26,11 +26,12 @@ W_x(T) = ∫₀ᵀ P_x(t) dt.
 When the finite-node product is selected,
 
 ```text
-P_x(t) := P_node,x(t) = Φ_x(t)V_x(t),
+P_x(t) := P_node,x(t) = Φ̂₄,x(t)V₄,x(t),
 ```
 
-where `Φ` is a present D4 assessment concerning D5 option-field quality or
-foresight and `V` is D4 usable means. The product is one declared normalized
+where `Φ₅` is D5 possible power, `Φ̂₄` is its present D4 evaluation, and `V₄`
+is D4 actual power or usable means. The familiar `P_node=ΦV` is the public
+shorthand for this typed bridge. The product is one declared normalized
 conjunctive model, not a uniquely forced world law. A different validated
 potential model may be substituted if its type and evidence are explicit.
 

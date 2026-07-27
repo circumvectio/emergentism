@@ -81,9 +81,9 @@ Every civilisational stage in the table above can be read as a **position on the
 |---|---|---|---|
 | L1 | Entropic collapse | Nothing — L1 is F5-absence, an-ṛta, the anti-gradient | Post-collapse vacuums, failed states |
 | L2 | Local F5-alignment | Small-group coherence, direct reciprocity, Dunbar-scale syntropy | Tribal commons, early democracies, indigenous stewardship |
-| L3 | South-pole acceleration | V-scaling without Φ-balance — extraction masquerading as growth | Industrial capitalism, colonial empires, algorithmic engagement |
-| **L4** | **Equatorial balance** | **Φ = V = 1, η = 0, widest-boundary ΣΔP_node** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
-| L5 | Φ-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
+| L3 | South-pole acceleration | `V₄` scaling without adequate evaluated possible power — extraction masquerading as growth | Industrial capitalism, colonial empires, algorithmic engagement |
+| **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, widest-boundary ΣΔP_node** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
+| L5 | Possible-power-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | L6 | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
 | L7 | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
 
@@ -93,11 +93,22 @@ Every civilisational stage in the table above can be read as a **position on the
 
 ## The Phi-Max Paradox
 
-**Disambiguation:** The "phi-max" values above (~0.4, ~0.6, ~0.7, etc.) are [I] interpretive estimates of the maximum *empirical coherence* a civilisation typically achieves at each L-level. They are NOT the sphere coordinate φ = cot(θ/2), which is a geometric variable (at L4, φ = 1; at L5, φ = √3 ≈ 1.73). The phi-max describes historical capacity; the sphere coordinate describes structural position. A civilisation "at L4" may only reach phi-max ~0.6 because it has not yet fully realised the equatorial balance.
+**Disambiguation:** The legacy "phi-max" values above (~0.4, ~0.6, ~0.7,
+etc.) are `[I]` interpretive estimates of a present civilisation-level evaluation
+`Φ̂₄` of D5 possible power `Φ₅`. They are **not** the sphere coordinate
+`φ=cot(θ/2)`. The former is a fallible D4 model score; the latter is a geometric
+variable. The heading is retained for provenance, not as permission to merge
+the symbols.
 
-Note that L2 has a higher phi-max (~0.8) than L3 (~0.4) or L4 (~0.6). This is not an error. Small-scale tribal societies achieve high coherence precisely because they are small. The challenge of civilisational development is scaling coherence: maintaining phi as the population grows beyond Dunbar's number.
+Note that L2 is assigned a higher `Φ̂₄` estimate (~0.8) than L3 (~0.4) or L4
+(~0.6). This is a conjectural coding claim, not a measurement result. Its
+intended question is whether possible power can be preserved as coordination
+scales; it must not be redescribed as maintaining lowercase `φ`.
 
-L3 has LOW phi despite HIGH nu. This is the merchant's dilemma: viability (wealth, technology, production) increases, but coherence (shared meaning, trust, social fabric) decreases. The multiplicative equation (P_node = Φ × V) means that increasing nu while decreasing phi can actually decrease total potential.
+The proposed L3 pattern is low `Φ̂₄` despite high `V₄`: actual productive power
+may increase while evaluated possible power declines. Inside the selected model,
+`P_node=Φ̂₄V₄`, either change can dominate the product. This is not a deduction
+from the lowercase reciprocal chart.
 
 This is why the framework identifies L3 capture as the central civilisational crisis: a society stuck at L3 is wealthy but incoherent, technologically powerful but spiritually bankrupt, productive but meaningless.
 

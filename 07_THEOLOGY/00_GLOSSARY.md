@@ -40,10 +40,11 @@ unless it earns independent evidence.
 | **Burri Sphere** | Selected spherical translation lens using reciprocal chart coordinates `φ=cot(θ/2)` and `ν=tan(θ/2)`. |
 | **Reciprocal seam** | `φν=1` for `θ∈(0,π)`, an analytic chart identity `[A]`. It is neither an empirical conservation law nor an ethic. |
 | **Balance** | A separately defined score such as `B=sin θ`; never identical to the reciprocal seam. |
-| **Φ** | A finite agent's modeled worldline foresight: alternatives it can represent and rank. |
-| **V** | Usable D4 means: embodied capacity, tools, energy, access, and ability to perform. |
-| **Conjunctive family** | A normalized monotone family `C(Φ,V)` with `C(0,V)=C(Φ,0)=0`. |
-| **Node power** | Emergentism's selected normalized instance `P_node:=ΦV`; not uniquely derived and `[C]` as a universal empirical fit. |
+| **Φ₅ / Φ** | D5 possible power: the structured modal potential of an option field. It is not a causal force exerted by a future event. |
+| **Φ̂₄** | An actual D4 model token's normalized evaluation of `Φ₅`; only this estimate enters present arithmetic. |
+| **V₄ / V** | D4 actual power: embodied capacity, tools, energy, access, and ability available to perform now. Ability does not imply authorization. |
+| **Conjunctive family** | A normalized monotone family `C(Φ̂₄,V₄)` with `C(0,V₄)=C(Φ̂₄,0)=0`. |
+| **Node power** | Emergentism's selected normalized instance `P_node:=Φ̂₄V₄`, publicly compressed as `ΦV`; not uniquely derived and `[C]` as a universal empirical fit. |
 | **Physical light cone** | Spacetime-bounded causal cone; it does not widen beyond physical law or `c`. |
 | **Option cone** | The admissible histories an agent can model, rank, coordinate, and reach inside its physical constraints. |
 

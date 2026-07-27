@@ -380,9 +380,9 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         self.assertEqual(phi_quality * constrained_means, 0.0)
 
         text = read("formula")
-        self.assertIn("Φ+V≤1", text)
+        self.assertIn("Φ̂₄+V₄≤1", text)
         self.assertIn("Without this budget premise", text)
-        self.assertIn("perfect modeled foresight does **not** by itself", text)
+        self.assertRegex(text, r"perfect modeled foresight does \*\*not\*\* by\s+itself")
 
         balance = read("balance")
         self.assertIn("Two different mathematical objects", balance)
@@ -409,13 +409,13 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         suda = read("suda_protocol")
         upgrade = read("upgrade")
 
-        self.assertIn("| estimates | `Φ̂,V̂`", operational)
+        self.assertIn("| present evaluations | `Φ̂₄,V̂₄`", operational)
         self.assertNotIn("ν̂", operational)
         self.assertIn("`φν=1` is true by definition on the chart", operational)
-        self.assertIn("`Φ̂V̂≈1` is not a\nchart identity", operational)
+        self.assertIn("`Φ̂₄V̂₄≈1` is not a\nchart identity", operational)
         self.assertIn("Selecting reciprocal pairs and then reporting reciprocal symmetry kills the", operational)
         self.assertIn("Authorization `U` and safety admissibility are independent typed\ngates", operational)
-        self.assertIn("never build them into the `V̂` instrument", operational)
+        self.assertIn("never build them into the `V̂₄` instrument", operational)
 
         self.assertIn("Do **not** construct or match pairs by setting `V̂=1/Φ̂`", suda)
         self.assertIn("selection step manufactured the advertised result", suda)
@@ -662,15 +662,20 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         for fragment in (
             "`φ,ν` | lowercase reciprocal-chart coordinates",
             "`P∞=φν=1` | analytic chart identity",
-            "`Φ` | present D4 measurement of D5 option-field quality or foresight",
-            "`V` | D4 usable means",
-            "`P_node=ΦV` | selected normalized conjunctive model",
+            "`Φ₅` / public `Φ` | D5 possible power",
+            "`Φ̂₄=Eval₄(M,Φ₅)` | present D4 estimate of D5 possible power",
+            "`V₄` / public `V` | D4 actual power",
+            "`P_node=Φ̂₄V₄` / public `ΦV` | selected normalized coupling",
             "`M⋆A` | present model-mediated influence",
         ):
             self.assertIn(fragment, completion)
         scoped = "\n".join(read(name) for name in ("formula", "d1", "d45", "soul", "power", "values"))
         for pattern in (r"P_node\s*[:=]+\s*φ", r"P_node\s*[:=]+\s*Φ\s*ν", r"\bν\s*(?:is|:=|=)\s*(?:usable )?means"):
             self.assertIsNone(re.search(pattern, scoped), pattern)
+        d45 = read("d45")
+        self.assertIn("Φ₅,t := PossiblePower₅", d45)
+        self.assertIn("Φ̂₄,t := Eval₄", d45)
+        self.assertIn("not a physical force", d45)
 
     def test_purity_gate_executes(self):
         process = subprocess.run(
