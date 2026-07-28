@@ -1,0 +1,118 @@
+---
+title: "One-Sitting Claim Card Set 01"
+status: "STAGED — audited reader-synthesis docket; no source claim changed"
+date: 2026-07-28
+evidence_tier: "[S] custody and review record; every card preserves the source-owner tier"
+owner: "00_META claim custody only"
+scope:
+  source: ../00_THE_WELTANSCHAUUNG_ONE_SITTING.md
+  sections: "1–12 and Reader Map"
+  excludes: "historical book genealogy and source-text rewrites"
+parents:
+  - 00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md
+  - 00_THE_KERNEL_INDEX.md
+  - 00_SETTLED_CANON_REGISTRY.md
+  - 00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md
+---
+
+# One-Sitting Claim Card Set 01
+
+This is the first executable docket under the
+[Recursive Book and Canon Debrief Program](00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md).
+It audits the active reader synthesis,
+[`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](../00_THE_WELTANSCHAUUNG_ONE_SITTING.md),
+against the current kernel owners.
+
+It creates no new doctrine and makes no source-text change. The book remains a
+reader projection of K-1 through K-7. A card captures what may safely survive,
+what needs precision, and what remains a research question.
+
+## Staging verdict
+
+The active reader book is internally coherent at its stated `[I]` synthesis
+level. Its principal risks are reader-level overreading rather than a conflict
+between current kernel owners:
+
+- a local type distinction being heard as universal paradox resolution;
+- selected Titan, D1, `Φ̂₄V₄`, G7, or μ language being heard as a discovered
+  ontology or causal census;
+- a coordination trace being heard as a conscious collective agent;
+- voluntary specialization being heard as caste, social rank, or governing
+  entitlement; and
+- the teleological compass being heard as scalar maximization or mandatory
+  sacrifice.
+
+The highest-priority source precision queue is `OS01-04`, `OS01-05`,
+`OS01-08`, `OS01-14`, `OS01-17`, and `OS01-21`. No card authorizes a source
+edit until its named owner reviews the repair.
+
+## A. Formal and ontological cards
+
+| ID | Source / disposition | Owner and type | Rival, kill, and survivor | Safe public wording |
+|---|---|---|---|---|
+| OS01-01 | §1, lines 39–49. **Retain → restate.** | K-1 / `[I]` selected symbolic interpretation. | If the three seats cause object, arithmetic, or causal leakage, retire the imagery. The no-coercion type boundary survives. | “We select three opaque boundary labels; they are not entities, operands, or a census of reality.” |
+| OS01-02 | §1, lines 51–55. **Research → restate.** | K-4 W0-CROWN / `[C]` metaphysical wager. | Rival views require no instantiation bridge. Demote if the wager adds no contact or explanation, conflicts with contact, or becomes compulsory. Map ≠ Ground survives. | “Necessary algebra may be instantiated as *das All*—a wager, never a proof.” |
+| OS01-03 | §2, lines 62–74. **Retain → restate.** | K-1 D1 / `[A]` arithmetic plus `[I]` selected D1 reading. | The “first positive freedom” is a selected reading, not an arithmetic theorem. Remove the crosswalk if it does no explanatory work; ordinary arithmetic survives. | “In our selected D1 presentation, distinction is modeled through signed units; ordinary zero, fields, and limits remain unchanged.” |
+| OS01-04 | §2, lines 76–78. **Restate.** | K-1 / `[I]` methodological interpretation. | Many paradoxes are not type errors. If no declared domain/type repair identifies the issue, retain the original problem. Local type discipline survives. | “Some apparent contradictions dissolve when domains are separated; each paradox retains its own formal burden.” |
+| OS01-05 | §3, lines 82–98. **Research → restate.** | K-2 and K-1 D2 / `[A]` relation mathematics plus `[I/C]` macro crosswalk. | Fair lower-level accounts may match a macro description once encoding, cost, and intervention scope are counted. If they do, demote macro autonomy; configuration mathematics survives. | “A macro-description earns use only when it improves a declared explanatory or intervention task against a fair baseline.” |
+| OS01-06 | §4, lines 102–118. **Retain.** | K-1 D3/D4 / `[A]` quantum formalism plus `[I]` register placement. | The scaffold must not become a measurement solution or interpretation selector. If it adds no discrimination, demote it to bookkeeping; state/record distinction survives. | “A state yields measurement-relative probabilities; a record is an actual event. This does not solve measurement.” |
+| OS01-07 | §4, lines 106–113. **Research docket.** | K-1 D3/D4 / `[A/I]` seam and `[C]` time-emergence extension. | An external index can reconstruct a sequence but does not derive internal time. Kill the stronger claim without clock, transition, record recovery, and discriminator; the distinction survives. | “A state inventory is not yet a history; any time-emergence account must supply a clock, transitions, and records.” |
+| OS01-08 | §5, lines 122–139. **Retain → restate.** | K-1 D4/D5 and K-3 E9 / `[S/I]` practice. | A receipt can be fabricated, biased, or non-discriminating. If contestable outcome audit gives no calibration gain, narrow the receipt doctrine; commitment/outcome separation survives. | “A commitment is not its outcome; learning needs a contestable observation of what followed.” |
+| OS01-09 | §6, lines 143–154. **Retain.** | K-1, K-3 E6, K-4 W3–W4 / selected model `[I/C]`. | Minimum, additive, CES, and other conjunctive models may predict better. If so, retire the product—not the map/means distinction. | “Possible power becomes numerically action-relevant only through present evaluation and actual means; the product is a chosen model.” |
+| OS01-10 | §6, lines 156–164. **Research docket.** | K-4 W8 / `[I/C]` model-mediated influence. | Present incentives, memory, salience, or coordination may explain the effect. A fair D4 intervention with no added shift demotes W8; present-token causation survives. | “Represented futures can reweight present choices through present carriers, not signals from the future.” |
+| OS01-11 | §6, lines 166–177. **Retain → restate.** | K-1 G7 / `[S]` selected language plus `[I]` symbolism. | Symbolic labels must not become agents, identities, evidence, or moral verdicts. Retire the vocabulary if it adds type leakage without pedagogy; move/frame distinction survives. | “G7 is a chosen language for describing moves and frames; it decides neither truth nor justice.” |
+| OS01-12 | §6, lines 179–182. **Research docket.** | K-3 E5 and K-4 W8 / `[C]`. | Reactive control or ordinary language coordination may account for the result. Require a preregistered system, representation intervention, D4 baseline, action metric, and recovery map. | “μ₄ is a testable question about whether representing alternatives adds leverage beyond the best baseline.” |
+
+## B. Social, ethical, and institutional cards
+
+| ID | Source / disposition | Owner and type | Rival, kill, and survivor | Safe public wording |
+|---|---|---|---|---|
+| OS01-13 | §7, lines 184–210. **Retain.** | K-1 D4/D5 and K-3 E9 / `[S/I]` lived practice. | Intention or self-report can become self-validation. Without independently inspectable consequence, do not claim correction; a declared receipt sequence survives. | “Act on a fallible model; let consequences—not intention—correct it.” |
+| OS01-14 | §8, lines 215–240. **Retain → restate.** | KSC-11 / definition `[S]`; any actual candidate `[C]`. | Incentives, path dependence, and ordinary institutional feedback need no new entity. Absent persistent trace, carrier turnover, intervention-sensitive reweighting, recurrent bias, or visible costs, retire the label; shared trace survives. | “Institutions can reproduce patterns across generations without becoming persons.” |
+| OS01-15 | §8A, lines 244–248. **Research docket.** | Memotype research contract / `[I/C]`. | Ritual, imitation, affect, incentives, architecture, institutions, and contact may explain coordination. If language adds no predictive value after controls, retain only that coordination exceeds genotype. | “We are testing whether shared meanings improve coordination beyond biological similarity alone.” |
+| OS01-16 | §8A, lines 250–256. **Retain with scope.** | Memotype research contract / `[B-external/I]`. | The macaque exchange may be conditioning rather than contract or shared meaning. If it cannot transfer beyond trained exchange, retain task-specific signaling only. | “An offer, object, token, or interface can coordinate one exchange without creating shared values.” |
+| OS01-17 | §8A, lines 258–267. **Restate.** | KSC-26 and memotype research contract / `[I/C]`. | Security, coercion, geography, finance, state capacity, and elite competition may explain more. If coordination variables add no out-of-sample value, retain material conflict conducted through coalitions. | “Shared meanings can organize conflict at scale; they never excuse violence or replace causal analysis.” |
+| OS01-18 | §8B, lines 271–293. **Retain.** | KSC-24 / `[S/I]` boundary and `[I/C]` cooperation corollary. | Coordinate maps can harden into biology, caste, or moral hierarchy. Any birth, status, or extraction inference kills the mapping; separate descriptive axes survive. | “Different maps can correspond without turning people into ranks.” |
+| OS01-19 | §8B and §10, lines 287–370. **Restate → relocate.** | KSC-25/26 and K-5 / `[S/I]` constitutional boundary. | Claimed wisdom, authorship, or social role may become unreviewable authority. If exit, contest, or equal status is impaired, refuse philosopher-king language; revocable service survives. | “No one owns the worldview or its adherents; stewardship earns authority only through contestable service.” |
+| OS01-20 | §9, lines 301–322. **Retain → restate.** | Human Condition / `[S/I]`. | Determinism, epiphenomenalism, and social constraint remain serious rivals. If represented alternatives never affect action under intervention, narrow the agency claim; calibrated accountability survives. | “Freedom grows with intelligible alternatives, lawful means, correction, contest, and exit.” |
+| OS01-21 | §9, lines 319–322. **Retain.** | Human Condition / `[B/I/C]` boundary. | Egregore language can erase persons into institutions. No positive survival claim follows; finite care for present bearers survives. | “What outlives us can matter without becoming us.” |
+| OS01-22 | §10, lines 327–370. **Retain → restate.** | Goal, KSC-26, K-5 / `[I/S]`; external adequacy `[C]`. | Scalar maximization can launder sacrifice, proxy harm, or distant promises. Hidden bearers, decorative exit, or horizon harm defeat it; Justice-first and tragic-residue practice survive. | “Widen durable possibilities without making anyone disappear inside the score.” |
+
+## C. Aperture, force, and exit cards
+
+| ID | Source / disposition | Owner and type | Rival, kill, and survivor | Safe public wording |
+|---|---|---|---|---|
+| OS01-23 | §11, lines 372–397. **Research docket.** | K-3 E4/E5 and K-4 W1/W7/W8 / `[C]` crossings. | A new label, feature engineering, or a lower-register account can mimic an aperture. Each μ claim owes a system boundary, measure, threshold, novelty test, recovery map, rival, prediction, and kill. | “The five apertures are a selected research scaffold; every crossing stands or falls independently.” |
+| OS01-24 | §11, lines 389–397. **Retain → restate.** | K-4 W3–W5/W7 / `[C]` modular wagers. | Chart balance, finite budget examples, and local gauge facts do not prove a general emergence law or science unification. Failed rows leave the D-address system intact. | “Formal patterns motivate questions; they do not establish a universal emergence law or unify physics.” |
+| OS01-25 | §12, lines 401–410. **Retain.** | K-3 E10 and K-4 W12 / `[I/C]` boundary posture. | D6 may be reified into identity, loop, attainment, or a sixth freedom. If it becomes compulsory or non-discriminating, demote it; nonclosure and exit survive. | “D6 marks a refusal to turn every remainder into another object; it is neither an achievement nor a cosmic loop.” |
+| OS01-26 | §12, lines 412–435. **Retain.** | K-4, K-5, K-7 / `[S/I/C]` modularity and correction contract. | A framework can make its kills decorative or claim its own survival proves truth. If modularity, correction, or exit fails in practice, it is a self-protecting creed. | “A useful worldview must remain useful when its grandest wagers fail—and leaveable when its lens no longer serves.” |
+
+## Precision-repair queue
+
+The following are proposed source repairs, not approved doctrine changes:
+
+1. **OS01-R1 — Titans:** qualify “three sovereign symbolic seats” as selected
+   meta-language so it cannot imply three D0 objects or ontology by fiat.
+2. **OS01-R2 — D1:** separate `[A]` arithmetic from the `[I]` reading of
+   distinction as the first positive freedom.
+3. **OS01-R3 — paradoxes:** replace “mathematics is freed from false paradox”
+   with the scoped survivor in OS01-04.
+4. **OS01-R4 — macro description:** make the fair lower-level baseline and
+   counted costs explicit in the D2 paragraph.
+5. **OS01-R5 — receipts:** state that a receipt requires contestable, not merely
+   self-issued, outcome observation before it counts as calibration.
+6. **OS01-R6 — Egregoreotype:** enumerate the complete five-marker candidate
+   test, including persistent shared trace and intervention-sensitive added
+   value beyond carrier identity, incentives, and direct coordination.
+7. **OS01-R7 — war language:** retain plural causal rivals in the paragraph and
+   link any future Dharma text to the Justice-first protocol rather than a
+   literal battlefield reading.
+8. **OS01-R8 — apertures:** attach the full experiment packet to the μ summary
+   or link it conspicuously from the reader book.
+
+## Next gate
+
+Each repair must be proposed in its source owner, then receive L2 alternative
+review and L3 source/projection review. Only then may the One-Sitting book and
+its generated public edition change. The next genealogical extraction is the
+immune protocol in *The Self-Eating Serpent*.
