@@ -8,9 +8,9 @@ passes the 12_PUBLIC_SITE predeploy supply-chain gate. This .py is
 .vercelignored (build tooling, not shipped). Source authority stays with the
 three Emergentism documents named below; the result is only a public snapshot.
 
-Run:  python3 -B build_book.py
+Run:  python3 -B build_book.py [--check]
 """
-import os, re, sys
+import argparse, hashlib, json, os, re, sys
 import markdown
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -22,6 +22,8 @@ SOURCES = [
 ]
 OUT_DIR = os.path.join(HERE, "book")
 OUT = os.path.join(OUT_DIR, "index.html")
+BUILD_MANIFEST = os.path.join(OUT_DIR, "build-manifest.json")
+EXTENSIONS = ["extra", "toc", "sane_lists"]
 
 TIER_RE = re.compile(r'\[(A|B|S|I|D|C)((?:/[A-Z]+)*)\]')
 
@@ -34,7 +36,7 @@ def wrap_tiers(htmltext):
         return f'<span class="tier t-{first}">[{m.group(1)}{m.group(2)}]</span>'
     return TIER_RE.sub(repl, htmltext)
 
-def build():
+def render():
     missing = [source for source in SOURCES if not os.path.exists(source)]
     if missing:
         sys.exit(f"book source not found: {missing[0]}")
@@ -45,7 +47,7 @@ def build():
         bodies.append(text.strip())
     raw = "\n\n---\n\n".join(bodies)
 
-    md = markdown.Markdown(extensions=["extra", "toc", "sane_lists"])
+    md = markdown.Markdown(extensions=EXTENSIONS)
     body = md.convert(raw)
     # Repository Markdown sources are not deployed. Route their links to the
     # public source boundary instead of emitting dead filesystem-relative URLs.
@@ -104,10 +106,62 @@ def build():
     page = page.replace("%%NCH%%", str(n_ch))
     page = page.replace("%%WORDS%%", f"{words:,}")
 
+    return page, n_ch, words
+
+
+def sha_bytes(value):
+    return hashlib.sha256(value).hexdigest()
+
+
+def desired_manifest(page):
+    graph = os.path.join(ROOT, "00_META", "registers", "CLAIM_GRAPH.json")
+    contract = os.path.join(ROOT, "00_META", "claim_cards", "one_sitting.yaml")
+    return {
+        "schema": "emergentism/public-book-build/v1",
+        "sources": [
+            {
+                "path": os.path.relpath(source, ROOT).replace(os.sep, "/"),
+                "sha256": sha_bytes(open(source, "rb").read()),
+            }
+            for source in SOURCES
+        ],
+        "ordered_source_paths": [os.path.relpath(source, ROOT).replace(os.sep, "/") for source in SOURCES],
+        "output": {"path": "book/index.html", "sha256": sha_bytes(page.encode("utf-8"))},
+        "renderer": {"package": "Markdown", "version": markdown.__version__, "extensions": EXTENSIONS},
+        "claim_card_contract": {
+            "schema": "emergentism/claim-card-set/v1",
+            "path": os.path.relpath(contract, ROOT).replace(os.sep, "/"),
+            "sha256": sha_bytes(open(contract, "rb").read()),
+            "graph_path": os.path.relpath(graph, ROOT).replace(os.sep, "/"),
+            "graph_sha256": sha_bytes(open(graph, "rb").read()),
+        },
+        "authority": "deterministic projection receipt; source owners retain semantics",
+    }
+
+
+def build(check=False):
+    page, n_ch, words = render()
+    manifest = (json.dumps(desired_manifest(page), ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+    if check:
+        errors = []
+        if not os.path.exists(OUT) or open(OUT, "rb").read() != page.encode("utf-8"):
+            errors.append("book/index.html drift")
+        if not os.path.exists(BUILD_MANIFEST) or open(BUILD_MANIFEST, "rb").read() != manifest.encode("utf-8"):
+            errors.append("book/build-manifest.json drift")
+        if errors:
+            print("PUBLIC BOOK BUILD: FAIL")
+            for item in errors:
+                print(f"- {item}")
+            return 1
+        print(f"PUBLIC BOOK BUILD: PASS ({n_ch} chapters, {words:,} words)")
+        return 0
     os.makedirs(OUT_DIR, exist_ok=True)
     open(OUT, "w", encoding="utf-8").write(page)
+    open(BUILD_MANIFEST, "w", encoding="utf-8").write(manifest)
     print(f"wrote {OUT}")
+    print(f"wrote {BUILD_MANIFEST}")
     print(f"  chapters: {n_ch} (+overture)   words: {words:,}   bytes: {len(page):,}")
+    return 0
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -360,4 +414,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 """
 
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="verify deterministic output without writing")
+    args = parser.parse_args()
+    raise SystemExit(build(check=args.check))

@@ -22,6 +22,9 @@ depends_on:
   - ../00_CANONICAL_FORMULA_BLOCK.md
   - ../03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
   - ../03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md
+  - ../03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md
+  - ../03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml
+  - ../03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md
   - ../../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md
 ---
 
@@ -155,10 +158,15 @@ emergence.
 
 ## 5. The Finity calculus: what must be built before it is called an algebra
 
-The corpus does **not** yet contain a novel foundational algebra. It contains
-inherited mathematics, a type discipline, an interpretive name, and an
-auditable crossing schema. `[A/S/I]` The appropriate forward object is a
-**candidate many-sorted Finity calculus** `[C]` with at least:
+The corpus does **not** yet contain a novel foundational algebra. It now
+contains an F0
+[`many-sorted specification`](../03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md),
+[`row-specific paradox ledger`](../03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml),
+and
+[`countermodel suite`](../03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md),
+alongside inherited mathematics, an interpretive name and an auditable crossing
+schema. `[A/S/I]` A machine-checked implementation, prior-art adjudication and
+F1 novelty remain open. The candidate calculus requires at least:
 
 | Component | Required discipline | What would count as progress |
 |---|---|---|

@@ -1,0 +1,2211 @@
+{
+  "authority": "derived routing register; K-1 through K-7 remain semantic owners",
+  "cards": [
+    {
+      "card_id": "DHY01-01",
+      "chapters": [
+        "justice-first"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 56,
+        "line_start": 24,
+        "section": "normative starting point"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "work_id": "BK-DHARMA"
+    },
+    {
+      "card_id": "DHY01-02",
+      "chapters": [
+        "two-horizon"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "DHY01-01"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 149,
+        "line_start": 94,
+        "section": "two horizons and bearer vector"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "work_id": "BK-DHARMA"
+    },
+    {
+      "card_id": "DHY01-03",
+      "chapters": [
+        "nonviolent-resistance"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "DHY01-01"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 78,
+        "line_start": 57,
+        "section": "epistemic and civil resistance"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "work_id": "BK-DHARMA"
+    },
+    {
+      "card_id": "DHY01-04",
+      "chapters": [
+        "institutional-defence"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "DHY01-01",
+        "DHY01-03"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 190,
+        "line_start": 79,
+        "section": "institutional defence and action test"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "work_id": "BK-DHARMA"
+    },
+    {
+      "card_id": "DHY01-05",
+      "chapters": [
+        "repair-exit-and-residue"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "DHY01-02",
+        "DHY01-04"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "C",
+        "S"
+      ],
+      "locator": {
+        "line_end": 241,
+        "line_start": 191,
+        "section": "rivals, quarantines and residue"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "work_id": "BK-DHARMA"
+    },
+    {
+      "card_id": "EN01-01",
+      "chapters": [
+        "voluntary-entry"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C",
+        "S"
+      ],
+      "locator": {
+        "line_end": 39,
+        "line_start": 22,
+        "section": "voluntary entry"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "proposal",
+      "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "work_id": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "card_id": "EN01-02",
+      "chapters": [
+        "appeal"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "EN01-01"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 51,
+        "line_start": 40,
+        "section": "appeal and dissent"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "proposal",
+      "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "work_id": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "card_id": "EN01-03",
+      "chapters": [
+        "repair"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "EN01-02"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 68,
+        "line_start": 52,
+        "section": "repair and learning"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "proposal",
+      "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "work_id": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "card_id": "EN01-04",
+      "chapters": [
+        "dissolution"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "EN01-03"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 79,
+        "line_start": 69,
+        "section": "dissolution"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "proposal",
+      "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "work_id": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "card_id": "EN01-05",
+      "chapters": [
+        "institutional-failure-rivals"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "EN01-01",
+        "EN01-02",
+        "EN01-03",
+        "EN01-04"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 89,
+        "line_start": 80,
+        "section": "failure rivals"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "proposal",
+      "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "work_id": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "card_id": "OS01-01",
+      "chapters": [
+        "boundaries"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 51,
+        "line_start": 39,
+        "section": "1"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-02",
+      "chapters": [
+        "boundaries"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-01"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 59,
+        "line_start": 52,
+        "section": "1"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-03",
+      "chapters": [
+        "difference"
+      ],
+      "claim_type": "analytic",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "A",
+        "I"
+      ],
+      "locator": {
+        "line_end": 77,
+        "line_start": 62,
+        "section": "2"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-04",
+      "chapters": [
+        "difference"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-03"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 82,
+        "line_start": 78,
+        "section": "2"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-05",
+      "chapters": [
+        "relation"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 103,
+        "line_start": 84,
+        "section": "3"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-2"
+      ],
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-06",
+      "chapters": [
+        "probability"
+      ],
+      "claim_type": "analytic",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "A",
+        "I"
+      ],
+      "locator": {
+        "line_end": 124,
+        "line_start": 105,
+        "section": "4"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-07",
+      "chapters": [
+        "probability"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-06"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A1",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 124,
+        "line_start": 110,
+        "section": "4"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-08",
+      "chapters": [
+        "actuality"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 147,
+        "line_start": 125,
+        "section": "5"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-09",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A1",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 163,
+        "line_start": 149,
+        "section": "6"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-10",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-09"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 173,
+        "line_start": 164,
+        "section": "6"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-11",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 185,
+        "line_start": 174,
+        "section": "6"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-12",
+      "chapters": [
+        "possibility"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-11"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 191,
+        "line_start": 186,
+        "section": "6"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-13",
+      "chapters": [
+        "soul-loop"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-08"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 222,
+        "line_start": 192,
+        "section": "7"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-14",
+      "chapters": [
+        "social-loop"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 252,
+        "line_start": 223,
+        "section": "8"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-15",
+      "chapters": [
+        "social-loop"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-14"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 261,
+        "line_start": 253,
+        "section": "8A"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-16",
+      "chapters": [
+        "social-loop"
+      ],
+      "claim_type": "custodied_fact",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "B",
+        "I"
+      ],
+      "locator": {
+        "line_end": 269,
+        "line_start": 262,
+        "section": "8A"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-17",
+      "chapters": [
+        "social-loop"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-14",
+        "OS01-15"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 287,
+        "line_start": 270,
+        "section": "8A"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-18",
+      "chapters": [
+        "social-loop"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 317,
+        "line_start": 289,
+        "section": "8B"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-19",
+      "chapters": [
+        "good",
+        "social-loop"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-18"
+      ],
+      "disposition": "relocate",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 388,
+        "line_start": 289,
+        "section": "8B and 10"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-20",
+      "chapters": [
+        "human-condition"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A2",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 343,
+        "line_start": 318,
+        "section": "9"
+      },
+      "owner_ids": [
+        "K-2"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-21",
+      "chapters": [
+        "human-condition"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-20"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 343,
+        "line_start": 334,
+        "section": "9"
+      },
+      "owner_ids": [
+        "K-2"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-22",
+      "chapters": [
+        "good"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-09",
+        "OS01-13"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "line_end": 388,
+        "line_start": 344,
+        "section": "10"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-23",
+      "chapters": [
+        "five-apertures"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-12"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 432,
+        "line_start": 389,
+        "section": "11"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-24",
+      "chapters": [
+        "five-apertures"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "OS01-23"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A6"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 432,
+        "line_start": 414,
+        "section": "11"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "implemented",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-25",
+      "chapters": [
+        "exit"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "OS01-23"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 450,
+        "line_start": 433,
+        "section": "12"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "OS01-26",
+      "chapters": [
+        "exit"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-13",
+        "OS01-22",
+        "OS01-25"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 465,
+        "line_start": 451,
+        "section": "12"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "work_id": "BK-ONE-SITTING"
+    },
+    {
+      "card_id": "RIP01-01",
+      "chapters": [
+        "diagnosis-without-villain"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 2400,
+        "line_start": 359,
+        "section": "Part I"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-02",
+      "chapters": [
+        "formal-boundaries"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2",
+        "A4"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "line_end": 4992,
+        "line_start": 2421,
+        "section": "Part II"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-03",
+      "chapters": [
+        "translation-without-proof"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "RIP01-02"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3",
+        "A6"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 7565,
+        "line_start": 5015,
+        "section": "Part III"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-04",
+      "chapters": [
+        "collective-traces"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "RIP01-03"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 9121,
+        "line_start": 7596,
+        "section": "Part IV chapters 16-18"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-05",
+      "chapters": [
+        "institutional-firewall"
+      ],
+      "claim_type": "custodied_fact",
+      "dependency_ids": [
+        "RIP01-04"
+      ],
+      "disposition": "archive",
+      "docket_ids": [
+        "A0",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "B"
+      ],
+      "locator": {
+        "line_end": 10503,
+        "line_start": 9122,
+        "section": "Part IV chapters 19-20"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-06",
+      "chapters": [
+        "immune-protocol"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "RIP01-05"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 11924,
+        "line_start": 10524,
+        "section": "Part V chapters 21-24"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "RIP01-07",
+      "chapters": [
+        "seed-and-record"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "RIP01-06"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 12567,
+        "line_start": 11925,
+        "section": "Part V chapter 25 and notes"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "frozen",
+      "review_state": "l3_audited",
+      "source_lifecycle": "frozen",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "card_id": "SES01-01",
+      "chapters": [
+        "review"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A0",
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 112,
+        "line_start": 1,
+        "section": "Part I"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SES01-02",
+      "chapters": [
+        "application"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SES01-01"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 268,
+        "line_start": 113,
+        "section": "Part II"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SES01-03",
+      "chapters": [
+        "turn"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SES01-01"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 394,
+        "line_start": 269,
+        "section": "Part III"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SES01-04",
+      "chapters": [
+        "trap"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SES01-03"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 546,
+        "line_start": 395,
+        "section": "Part IV"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SES01-05",
+      "chapters": [
+        "dissolution"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SES01-03",
+        "SES01-04"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 677,
+        "line_start": 547,
+        "section": "Part V"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SES01-06",
+      "chapters": [
+        "seed"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SES01-05"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 849,
+        "line_start": 678,
+        "section": "Part VI"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "work_id": "BK-SELF-EATING"
+    },
+    {
+      "card_id": "SL01-01",
+      "chapters": [
+        "preface"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A0",
+        "A3"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 91,
+        "line_start": 1,
+        "section": "preface"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-02",
+      "chapters": [
+        "ontological"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SL01-01"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A2",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 366,
+        "line_start": 92,
+        "section": "Lens I"
+      },
+      "owner_ids": [
+        "K-2",
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-03",
+      "chapters": [
+        "epistemological"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SL01-01"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 699,
+        "line_start": 367,
+        "section": "Lens II"
+      },
+      "owner_ids": [
+        "K-3"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-04",
+      "chapters": [
+        "axiological"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SL01-01"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 1055,
+        "line_start": 700,
+        "section": "Lens III"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-05",
+      "chapters": [
+        "teleological"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SL01-04"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 1381,
+        "line_start": 1056,
+        "section": "Lens IV"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-06",
+      "chapters": [
+        "methodological"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SL01-03"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 1773,
+        "line_start": 1382,
+        "section": "Lens V"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-07",
+      "chapters": [
+        "comparative-sacred-action"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "SL01-03",
+        "SL01-04",
+        "SL01-06"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 2158,
+        "line_start": 1774,
+        "section": "Lens VI"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SL01-08",
+      "chapters": [
+        "synthesis"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "SL01-02",
+        "SL01-03",
+        "SL01-04",
+        "SL01-05",
+        "SL01-06",
+        "SL01-07"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A0",
+        "A3"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "line_end": 2405,
+        "line_start": 2159,
+        "section": "synthesis"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "work_id": "BK-SIX-LENSES"
+    },
+    {
+      "card_id": "SV01-01",
+      "chapters": [
+        "diagnosis-with-rivals"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 2215,
+        "line_start": 1,
+        "section": "chapters 1-4"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-02",
+      "chapters": [
+        "mathematics-quarantine"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "line_end": 4977,
+        "line_start": 2216,
+        "section": "chapters 5-5H"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-03",
+      "chapters": [
+        "historical-precedent"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SV01-01"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 5745,
+        "line_start": 4978,
+        "section": "chapters 6-7"
+      },
+      "owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-04",
+      "chapters": [
+        "nonviolent-repair"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SV01-01",
+        "SV01-03"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 6055,
+        "line_start": 5746,
+        "section": "chapter 8"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-05",
+      "chapters": [
+        "voluntary-practice"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SV01-04"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 6433,
+        "line_start": 6056,
+        "section": "chapter 9"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-06",
+      "chapters": [
+        "institution-as-proposal"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "SV01-04"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 7128,
+        "line_start": 6434,
+        "section": "chapters 10-12"
+      },
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "SV01-07",
+      "chapters": [
+        "dissolution-and-record"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "SV01-05",
+        "SV01-06"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 7540,
+        "line_start": 7129,
+        "section": "chapters 13-14"
+      },
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "work_id": "BK-SARPASYA"
+    },
+    {
+      "card_id": "TIT01-01",
+      "chapters": [
+        "standard-mathematics"
+      ],
+      "claim_type": "analytic",
+      "dependency_ids": [],
+      "disposition": "retain",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "A"
+      ],
+      "locator": {
+        "line_end": 328,
+        "line_start": 74,
+        "section": "1-8"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "card_id": "TIT01-02",
+      "chapters": [
+        "selected-symbolism"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "TIT01-01"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "line_end": 301,
+        "line_start": 33,
+        "section": "opening and typed Titans"
+      },
+      "owner_ids": [
+        "K-1"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "card_id": "TIT01-03",
+      "chapters": [
+        "finity-protocol"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "TIT01-01",
+        "TIT01-02"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "I",
+        "S"
+      ],
+      "locator": {
+        "line_end": 191,
+        "line_start": 95,
+        "section": "4-7"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "card_id": "TIT01-04",
+      "chapters": [
+        "paradox-ledger"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "TIT01-03"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A1",
+        "A3"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 210,
+        "line_start": 73,
+        "section": "evaluation and stop conditions"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "card_id": "TIT01-05",
+      "chapters": [
+        "recovery-and-failure"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "TIT01-03",
+        "TIT01-04"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "C",
+        "S"
+      ],
+      "locator": {
+        "line_end": 210,
+        "line_start": 133,
+        "section": "recovery and stop conditions"
+      },
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4"
+      ],
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "work_id": "BK-TITANS"
+    }
+  ],
+  "inputs": [
+    "00_META/claim_cards/dharma_yuddha.yaml",
+    "00_META/claim_cards/evolutionary_network.yaml",
+    "00_META/claim_cards/one_sitting.yaml",
+    "00_META/claim_cards/reciprocal_infinite_play.yaml",
+    "00_META/claim_cards/sarpasya_vijayam.yaml",
+    "00_META/claim_cards/self_eating_serpent.yaml",
+    "00_META/claim_cards/six_lenses.yaml",
+    "00_META/claim_cards/titans_formal.yaml",
+    "00_META/claim_cards/titans_narrative.yaml"
+  ],
+  "metrics": {
+    "cards": 69,
+    "conjecture_cards": 24,
+    "public_bounded_current": 18,
+    "works_with_cards": 8
+  },
+  "owners": [
+    {
+      "owner_id": "K-1",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "owner_id": "K-2",
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+    },
+    {
+      "owner_id": "K-3",
+      "path": "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
+    },
+    {
+      "owner_id": "K-4",
+      "path": "06_ONTOLOGY/04_THE_CONJECTURES.md"
+    },
+    {
+      "owner_id": "K-5",
+      "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md"
+    },
+    {
+      "owner_id": "K-6",
+      "path": "06_ONTOLOGY/06_THE_REVELATIONS.md"
+    },
+    {
+      "owner_id": "K-7",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
+    }
+  ],
+  "schema": "emergentism/claim-card-register/v1"
+}

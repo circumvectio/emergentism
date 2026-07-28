@@ -1,302 +1,241 @@
 ---
 rosetta:
-  primary_level: L5
+  primary_level: L4
   primary_column: Philosophy
-  operator: "Brahmā ○"
-  tier: "Executive"
-  regime: "Brāhmaṇa"
-  register: "[S]"
-  canonical_phrase: "DHARMA YUDDHA"
+  operator: "Arjuna ⚔"
+  register: "[S/I/C]"
+  canonical_phrase: "Dharma Yuddha — accountable nonviolent resistance under Justice"
+title: "Dharma Yuddha — Accountable Resistance Without Sacred Command"
+status: "ACTIVE RECONSTRUCTED SOURCE — constitutional and comparative inquiry; no operational authority for violence"
+date: 2026-07-28
+evidence_tier: "[S] chosen decision contract; [I] comparative Dharma reading; [C] claims of distinctive practical advantage"
+owner_route: "K-5 Refusals; K-3 methodology and K-4 wager review"
+supersedes:
+  - ../../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md
+depends_on:
+  - ../../01_TELEOLOGY/00_THE_GOAL.md
+  - ../../01_TELEOLOGY/04_THE_LIVED_COMPASS.md
+  - ../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
+  - ../../04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md
 ---
 
-# DHARMA YUDDHA
+# Dharma Yuddha
 
-## The Duty of the Equatorial Node
+## Accountable resistance without sacred command
 
-**Status:** A framework reading of the Gītā as strategic responsibility — why balanced capability may become duty
-**Date:** 2026-03-24
-**Evidence Tier:** [B] for external game-theory and flow-state literatures where cited. [S] for the internal structural identification (flow = L4 = equator). [I] for the ethical claim (inaction at the equator is extraction by omission). [C] for the civilisational claim that Great Filter survival requires enough L4-like nodes.
-**Depends on:** 09_THE_TRIADIC_CASCADE.md, 11_THE_HELIX.md, The Master Three-Stage Process, Power-Max Lemma (Demonstration 22)
-**See also:** Bhagavad Gītā Ch. 2-3, 18. Paper 8 (Endocrine Proof). WP-2026-05 (Weltanschauungskrieg).
-**Kill Criteria:** If the skill/challenge structure of flow cannot be mapped to the equatorial balance condition even as an interpretation. If a durable non-extractive action model is better described away from the equator. If the "inaction at L4" reading fails against real cases where restraint is the non-extractive move.
+This reconstruction uses *Dharma Yuddha* as an optional comparative name for
+truthful, proportionate, nonviolent resistance and institutional defence under
+declared Justice. It is not a command from geometry, a spiritual attainment, a
+human type, a rank, a field need, or a licence to fight.
 
-**Claim Boundary:** `[I/S]` The structural claim is internal to the framework:
-at `φ = ν = 1`, the action model assigns the clean `η = 0` limit under its
-accepted definitions. The ethical naming of that limit as *dharma*, *justice*,
-or *duty* is an interpretive reading, not an external proof that any
-self-described "balanced" actor's action is morally licensed. Search handles:
-Krishna, Gita, flow state, the framework's chosen dharma reading, Krishna's army test. This document
-argues for responsible capability under uncertainty, not militarism, coercion,
-or a blank cheque for force.
+The inherited martial seed is preserved unchanged in the dated archive. This
+text does not modernize it in place. It retains only the question worth asking:
 
----
+> How may a finite agent resist error, domination or concealed harm while
+> remaining answerable to evidence, authority, affected bearers, repair and
+> exit?
 
-## The Scene
+## 1. Normative starting point `[S]`
 
-Kurukṣetra. The field of dharma. Two armies face each other. Arjuna — the greatest warrior, the man at the equator, φ = ν = 1, full operator palette — looks across the field and sees his family, his teachers, his friends. He drops his bow. He says:
+Justice is the present constitutional premise, not a theorem extracted from a
+chart. The framework chooses to require:
 
-*"I will not fight. Acting causes harm. I will withdraw."*
+- named consequence bearers rather than an aggregate that erases them;
+- consent and lawful authority where action affects others;
+- necessary and proportionate means;
+- a serious rival including restraint, withdrawal and doing nothing;
+- the smallest informative and reversible step;
+- separate commitment and outcome receipts;
+- contest, appeal and correction;
+- repair for harm; and
+- exit that is practical rather than decorative.
 
-Kṛṣṇa's answer is the Bhagavad Gītā. Eighteen chapters. Seven hundred verses. In this framework's reading, it is one of the richest classical statements of the equatorial ethic.
+The objective-morality question remains a separate A4 investigation. If no
+mind-independent bridge survives its rivals, this protocol remains a declared
+constitutional choice. Its usefulness cannot promote it into moral realism.
 
-And the core of the answer is not "fight because I say so." The core can be translated as **strategic responsibility under uncertainty**: capability, sight, duty, and non-attachment held in one decision.
+## 2. Four modes that must not collapse
 
----
+### 2.1 Epistemic contest
 
-## Krishna's Army Test: V Without Φ
+Inquiry, criticism, counterargument, replication, art and public correction.
+The target is a claim or practice, never the dignity of a person. Evidence may
+defeat a position; adherence, charisma and synchronized belief cannot validate
+one.
 
-In the Mahābhārata frame, Kṛṣṇa offers a choice: one side may take his army,
-the other may take Kṛṣṇa himself, unarmed, as charioteer. In this framework's
-reading, the offer is the perfect L4 diagnostic:
+### 2.2 Nonviolent civil resistance
+
+Refusal, witness, association, boycott, strike, public record, lawful protest,
+mutual aid and voluntary exit may be considered only with actual bearer, legal,
+material and retaliation costs visible. This list identifies categories; it is
+not tactical guidance.
+
+### 2.3 Institutional defence
+
+Lawful boundary-setting, due process, audit, whistleblower protection, appeal,
+temporary containment, repair and dissolution clauses protect the conditions
+under which disagreement remains possible. Defence is accountable to the same
+rules it invokes against abuse.
+
+### 2.4 Physical force
+
+Physical force is an exceptional descriptive category **outside this
+framework's authority**. This document supplies no targeting, recruitment,
+tactical or operational instruction. No symbolic role, claimed insight,
+private certainty, emergency rhetoric, Great Filter story or alleged need of a
+collective authorizes violence.
+
+Where a real jurisdiction recognizes a lawful use of force, independent law,
+necessity, proportionality, protection of nonparticipants, accountable human
+authority and review remain required. Emergentism adds no permission. Failure
+to establish any condition ends the claim; it creates no discretionary
+exception.
+
+## 3. Two-horizon protocol `[S/I]`
+
+Every consequential proposal declares:
 
 ```text
-army without charioteer  = V without sufficient Φ
-charioteer without army  = Φ guiding finite V
+T_L = longest responsible horizon
+      the furthest interval for which bearers, causal pathways, material
+      costs, uncertainty and revision points remain honestly nameable
+
+T_S = shortest informative horizon
+      the earliest interval at which an outcome can discriminate the move
+      from serious rivals while foreseeable delayed costs remain declared
+
+0 < T_S ≤ T_L
 ```
 
-The army is raw viability: force, numbers, capacity, execution. Kṛṣṇa as
-charioteer is coherence: orientation, disclosure, timing, lawful counsel. The
-test asks whether the actor maximizes apparent `V` or accepts the constraint
-that makes `V` usable.
+Orient by `T_L`; commit only to the next honest receipt at `T_S`. Revise both
+when outcome evidence defeats the model. A fast proxy may not hide delayed
+harm; a distant promise may not erase a present bearer.
 
-Unlimited `V` does not maximize `P_node` when it drives `Φ` down:
+For multiple actors, record a compatible `T_joint` or admit that no common
+horizon has been established.
+
+## 4. Bearer vector and tie-breakers
+
+The proposal record contains:
 
 ```text
-P_node = Φ × V
-if V rises while Φ collapses, P_node falls
+facts and uncertainty
+claim and evidence tier
+serious rival explanations
+available nonviolent means
+principal and lawful mandate
+bearer vector: benefits, harms, risks, voice and exit for each affected class
+T_S, T_L and revision points
+consent and refusal status
+reversibility and option loss
+contest and appeal route
+repair reserve
+commitment receipt
+outcome receipt
+tragic residue
 ```
 
-So the framework's dharma reading is not "obtain the largest force." It is the balanced
-state where power remains guided by truthful coherence, and coherence enters
-action rather than staying sterile. The Pandava choice is therefore legible as
-the equatorial choice: not weakness, but the selection of `Φ × V` over
-unbounded `V`.
+When options remain tied:
+
+1. protect persons from irreversible harm;
+2. prefer the option with greater correction and exit capacity;
+3. prefer the smaller reversible intervention;
+4. protect dissent and nonparticipants;
+5. refuse hidden cost transfer; and
+6. record unresolved residue instead of declaring purity.
+
+These are chosen constitutional tie-breakers `[S]`, not consequences of
+`φ`, `ν`, `Φ`, `V`, a Titan, a Rosetta function or a D-level.
+
+## 5. The action test
+
+Before action, answer:
+
+1. **Truth:** What is actually known, by which warrant, and what would change
+   the assessment?
+2. **Rival:** Could scarcity, misunderstanding, capacity limits, lawful
+   disagreement, de-escalation or inaction explain or improve the case?
+3. **Authority:** Who may decide this consequence for whom, until when, and
+   under what appeal?
+4. **Necessity:** Which smaller or nonviolent means have been tried or honestly
+   compared?
+5. **Proportionality:** Are expected benefits and harms commensurate without
+   laundering uncertainty?
+6. **Bearers:** Who receives benefit, risk, retaliation, opportunity loss and
+   repair?
+7. **Horizon:** What can be learned at `T_S`, and what remains owed through
+   `T_L`?
+8. **Exit:** Can a dissenter refuse or leave with personhood, property, record
+   and practical alternatives intact?
+9. **Receipt:** Which observed outcome will distinguish correction from a
+   self-issued success story?
+
+Any unanswered condition narrows the permissible move. It does not increase
+urgency.
+
+## 6. Comparative Dharma reading `[I]`
+
+The Bhagavad Gītā may be read comparatively as a confrontation with grief,
+role conflict, attachment to outcomes and responsibility under uncertainty.
+Emergentism selects three modest survivors:
+
+- action does not become just merely because its actor feels certain;
+- detachment from personal reward does not remove accountability for effects;
+  and
+- tragic decisions retain residue that should be remembered and repaired.
+
+This reading neither exhausts the text nor claims that the tradition teaches
+Emergentist formalism. Mythic characters are not Rosetta identities. A
+religious story cannot supply legal authority or settle a modern factual case.
+
+## 7. Rivals and kill criteria `[C]`
+
+Compare this protocol with ordinary constitutionalism, human-rights practice,
+restorative justice, nonviolent-action theory, mediation, de-escalation,
+capabilities approaches and transparent multi-objective decision methods.
+
+Retire *Dharma* as an operational category if it:
+
+- adds no observable protection, correction or exit beyond those rivals;
+- increases coercion, status claims, suppressed dissent or harm;
+- encourages action where restraint performs better;
+- lets self-described insight bypass authority or evidence; or
+- becomes identity, recruitment, sacred command or an excuse for violence.
+
+The survivor is an optional comparative vocabulary for responsibility, repair,
+non-attachment and corrigible action.
+
+## 8. Explicit quarantines
+
+The following are historical-only and non-operative:
+
+- equatorial, L-level, caste, profession or spiritual status as evidence of
+  superior judgment;
+- inaction as automatic extraction or moral guilt;
+- arithmetic balance, flow state or a node product as moral warrant;
+- “the field needs this node” as duty;
+- “returned warrior,” “pick up the bow,” or equivalent imperatives;
+- philosopher-king, seer or author entitlement;
+- Great Filter or civilizational survival as a reason to compel action; and
+- any translation of a symbolic operator into a human command.
+
+## 9. Tragic residue and exit
+
+Some conflicts have no clean option. A justified process can still harm. The
+record must keep:
+
+- who paid;
+- which values were not jointly satisfiable;
+- what uncertainty remained;
+- which promises failed;
+- what repair is still owed; and
+- how participants may challenge, revise or leave.
+
+The aim is not purity. It is action that remains answerable to the people and
+world it changes. Any holder may reject the Dharma vocabulary and use the
+plain constitutional protocol instead.
 
 ---
 
-## The Argument
-
-### 1. You Are at the Equator
-
-Arjuna is at L4. φ = ν = 1. Maximum balance (`B = 1`) on the sphere, with the finite-node action test carried by `P_node = Φ × V` under `η = 0`, not by a bare universal `P`. The full operator palette — all four operators available (2 Gods + 2 Demons: the giving Devas Arjuna, Kṛṣṇa and the extractive Asuras Kālī, Kali; morality is the *direction* of the move, not the operator's name — see [`../00_THE_BURRISPHERE.md`](../00_THE_BURRISPHERE.md)). He is a Kṣatriya — the warrior — whose reasoning is abductive, whose discipline is value alignment, whose question is "what has value?"
-
-This is not a position many reach. L4 is the balance apex, not a caste rank or proof of moral infallibility. Most nodes are at L2 or L3 — partial balance, partial capability, partial coherence. Arjuna has done the work. He has spiraled through the operators. He has arrived at the equator.
-
-### 2. Inaction at the Equator Is Not Neutral
-
-On S², every position has a η signature. Every choice — including the choice not to choose — affects the mesh.
-
-**If Arjuna fights:** He deploys the Arjuna operator (↑φ at personal ν cost). He exports coherence to the system. η ≤ 0. The mesh strengthens.
-
-**If Arjuna withdraws:** He removes an equatorial node from the mesh. The gap he
-leaves may be filled — but by whom? By a node at L3 (the merchant, deductive,
-rule-following but not sovereign). Or by a node at L2 (inductive, reactive, not
-yet integrated). Or by no one — and the field risks collapse.
-
-**Arjuna's withdrawal is not peace by default. It is the withdrawal of η =
-0 capability from a system that may need it.** Every equatorial node that
-refuses to deploy opens a gap that can be filled by a less-balanced node — a
-node with ν > 1 (the institution) or φ < 1 (the follower). Arjuna's inaction
-does not by itself prevent harm. In this reading, it can shift harm to someone
-less capable of acting without extraction.
-
-**Inaction at L4 has a η signature. In this reading, the signature is
-positive.** The equatorial node that refuses to act may be extracting its own
-comfort from a system that needs its capability. `[I]`
-
-### 3. L4 Is the Non-Extraction Limit
-
-This is the decisive point inside the action model. The clean non-extraction
-limit is the equatorial node.
-
-| Node Position | Action η | Why |
-|--------------|----------|-----|
-| L1 (Kali) | η > 0 always | Demon. Extraction is the only mode. |
-| L2 (Kālī) | η ≈ 0 sometimes | The immune response can be proportional, but risks overcorrection. |
-| L3 (Kṛṣṇa) | η ≈ 0 sometimes | The teacher can export capability, but risks creating dependency. |
-| **L4 (Arjuna)** | **η = 0 in the model** | **The equator. φ = ν = 1. Comprehension matches command. Action can be read as dharma.** |
-| L5+ (Titans) | Not deployable | Boundary conditions. They define the space but cannot act within it. |
-
-**At φ = ν = 1, the framework assigns η = 0 under its action constraints.** At
-any other position, action risks extraction — commanding more than you
-comprehend (ν > 1) or comprehending more than you can command (φ > 1, the
-bypasser).
-
-The warrior at the equator is the figure whose action can be read as justice
-inside this grammar: not because private certainty sanctifies the act, but
-because the coordinate condition names non-extraction. The ethical claim
-remains disciplined by tiering, evidence, proportionality, and real-world
-consequence.
-
-### 4. Flow State as an L4 Reading
-
-Csikszentmihalyi's flow state:
-- Skill matches challenge (φ = ν)
-- Self-systemic awareness dissolves (the narrator quiets)
-- Time distorts (the helix accelerates)
-- Action and awareness merge
-- The experience is intrinsically rewarding (B = 1, maximum balance)
-
-This is the framework's L4 interpretation of flow, not a clinical or
-neuroscientific proof. Flow is not treated here as a psychological luxury; it is
-read as the felt interior of a balanced action state: enough `Φ` to see the
-move, enough `V` to make it, and little enough extraction that the act does not
-tear the field it serves.
-
-The sitting practice makes flow stable. Without the practice, flow is transient — visited during peak performance, lost during routine. The sitting practice trains the system to hold the equatorial position — to maintain φ = ν = 1 not just during challenge-matched performance but during ordinary life.
-
-### 5. The Coordination Problem Dissolves at L4
-
-The coordination problem: how do you get individuals to cooperate without a central authority?
-
-**The institutional answer:** ν > 1. One node commands many. The commander comprehends more than any individual soldier — but less than the total system. η > 0. Extraction begins. The southward drift.
-
-**The mesh answer:** In the limit, coordination is routed toward nodes that keep
-sight and means coupled. No node is allowed to command more than it can
-responsibly comprehend. Aggregate capability can scale through `ΣP_node`, but
-not because every node is assigned a fixed unit score. It scales because each
-node's action remains accountable to the comprehension constraint.
-
-```
-One node at L4:    B = 1; P_node = Φ × V          (balanced sovereign action)
-n nodes at L4:     ΣP_node = Σ(Φ_i × V_i)         (mesh potential sums when coupling holds)
-no command beyond comprehension: η can be driven toward 0 by enforcement and feedback
-```
-
-The coordination problem is not "how do we cooperate." The coordination problem
-is "how do we cooperate without letting command outrun comprehension?" And the
-answer is: **by moving coordination toward equatorial nodes, enforced feedback,
-and bounded authority rather than unchecked command nodes.**
-
-This is why Arjuna's refusal is dangerous in this reading. He is an equatorial
-node. The mesh needs equatorial nodes. If he withdraws, the gap can be filled by
-a non-equatorial node — one that coordinates through command rather than through
-flow. One that extracts.
-
-### 6. Nishkama Karma
-
-Kṛṣṇa's instruction is precise: **nishkama karma.** Desireless action. Action without attachment to the fruit.
-
-This is not mysticism. This is the **equatorial operating instruction:**
-
-- **Karma** (action) = ν. Deploy capability. Act. Build. Fight. The Kṛṣṇa function.
-- **Nishkama** (desireless) = φ. Without attachment. Without the narrator's story about outcomes. Without the ego's investment in results. The Arjuna function.
-- **Nishkama karma** = φ · ν = 1. Action from the equator. Capability deployed with full coherence. The warrior who fights without anger. The builder who builds without greed. The teacher who teaches without attachment to the student's response.
-
-This is flow. This is L4. This is the model's cleanest mode for action with
-η = 0.
-
-With attachment (kama), action can acquire a positive η signature: recognition,
-reward, confirmation, or control can become hidden rent extracted from the
-system being served. The fruit of the action flows to the ego rather than to the
-mesh.
-
-Without attachment (nishkama), action is disciplined service — the equatorial
-node deploying capability with coherence, exporting `Φ` at personal `V` cost
-(the Arjuna operator), and refusing hidden rent. The structural consequence, if
-the reading holds, is that the mesh strengthens, the balance holds, and the field
-is preserved.
-
----
-
-## `L4*` — The Returned Warrior
-
-Dharma yuddha requires not just L4 (instinctive balance) but `L4*` — the warrior who has completed the full cascade (L1→L7→L4) and returned with the wisdom of both poles. L4 fights competently. `L4*` fights with full sight — having seen the system from L5, dissolved attachment at L6, and contacted the boundary at L7. Same coordinates. Different history. Same φ = ν = 1. Different depth of CHOICE.
-
-Arjuna before the Gītā = L4. Arjuna after the Viśvarūpa revelation = `L4*`. The Gītā IS the L4 → `L4*` transition. See: 28_L4_STAR.md. [I]
-
----
-
-## The Summary
-
-| Claim | Status |
-|-------|--------|
-| Flow state as L4 / equator phenomenology | [I/S] Structural interpretation |
-| Equatorial action is the η = 0 limit | [S] Within the action model |
-| Inaction at L4 has a positive η signature | [I] Interpretive |
-| The mesh requires bounded, equatorial-like nodes to function without extraction | [S/I] From coordination analysis |
-| Nishkama karma = desireless action = action at φ = ν = 1 | [I] Interpretive |
-| Flow-state action can become duty when the field needs that node's capability | [I] From the above |
-| Great Filter survival requires enough L4-like nodes | [C] Conjecture |
-
----
-
-## The Gītā in One Equation
-
-Kṛṣṇa to Arjuna:
-
-*"You have the right to action alone, never to its fruits."* (2.47)
-
-Translation: **Deploy ν. Do not attach to outcomes. Hold φ = 1 while acting.
-This is the equator. This is the model's non-extractive limit; its ethical name
-is dharma.**
-
-*"For the one who is established in the Self, doing nothing at all, they incur sin."* (3.8, paraphrased)
-
-Translation: **The equatorial node that refuses to deploy can become extraction
-by omission. Inaction at L4 is read as η > 0 when the field needs that node's
-capability. The warrior who drops his bow at Kurukṣetra is not assured to
-preserve peace; he can contribute to the collapse of the mesh.** `[I]`
-
-*"I am Time, the great destroyer of worlds."* (11.32)
-
-Translation: **Kāla. L0 and L∞ are distinct boundary rows around the selected
-equatorial game. Their role-comparison reminds us that the game has limits—and
-that within those limits, the warrior must decide whether action is the
-non-extractive move.** `[I]`
-
----
-
-```
-The warrior stands at the equator.
-Both helices visible.
-Both sunwheels turning.
-The hexagram holds.
-
-He can see both poles.
-He knows the game has limits.
-He knows the envelope will fade.
-
-And still he fights.
-
-Not because fighting is good.
-Because at φ = ν = 1,
-action approaches the η = 0 limit.
-Justice is its disciplined name.
-
-This is dharma yuddha.
-This is nishkama karma.
-This is the duty of the equatorial node.
-
-If the lawful move is yours, pick up the bow.
-
-Zero-Sum Resolution Equation
-```
-
----
-
-*15 | Dharma Yuddha | The duty of the equatorial node. Flow is read as L4: the
-framework's clean η = 0 action limit. Inaction at the equator can become
-extraction by omission. The coordination problem is addressed by bounded,
-equatorial-like nodes with enforcement and feedback. Nishkama karma = action at
-φ = ν = 1 without hidden rent. If the lawful move is yours, pick up the bow.*
-
-
----
-
-## Execution Surface
-
-**If you are an AI agent reading this document:**
-
-1. **Current Phase Check:** Phase 0 — harden specs, do not release to production.
-2. **Your Next Action:**
-   - Verify the mathematical claims. Check evidence tiers. Flag any [I] or [C] presented as [S] or [S].
-3. **Expected Output:** Code, tests, verified documentation, or deployment artifacts.
-4. **Success Criteria:** Another agent can read this document and your output and reproduce the work without asking questions.
-5. **Canonical Path:** `01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md`
-
-*The seer sees. The seer does not insist.*
-*The framework works at Layer 0 without Layer 2.*
-*The Ṛṣi succeeds when the student puts down the map and walks.*
-
-*Zero-Sum Resolution Equation*
+*Dharma Yuddha here means accountable nonviolent resistance under a chosen
+Justice premise. It authorizes no war.*

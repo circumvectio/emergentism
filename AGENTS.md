@@ -85,6 +85,8 @@ never transfers proof, causal force, identity, or evidence tier.
 - `91_COMPATIBILITY/` redirects old paths; it must not fork doctrine.
 - `12_PUBLIC_SITE/` is a public projection and must remain weaker than or equal
   to its source owners.
+- `13_BOOKS/` is a projection-only critical-edition workshop. It is never K-8;
+  historical AIA editions remain read-only provenance.
 - `11_UPLINK/60_SESSION_PACKETS/` and dated receipts are historical evidence;
   reconcile them additively rather than rewriting them.
 

@@ -22,6 +22,9 @@ depends_on:
   - 07_THE_DISCOVERY_OF_FINITY.md
   - 42_THE_CASE_FOR_FINITY.md
   - ../03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
+  - ../03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md
+  - ../03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml
+  - ../03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md
   - ../../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md
 ---
 
@@ -60,6 +63,13 @@ read_R is a selected interpretation, not identity, coercion, or arithmetic.
 
 The canonical map remains `0_T↦Ground_T`, `1_T↦Unit_T`, and
 `∞_T↦Horizon_T`. `[S]` The new `R`-tokens are research vocabulary `[I/C]`.
+
+Formal adjudication now routes to the
+[`Finity Boundary Calculus`](../03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md),
+the row-specific
+[`Paradox Ledger`](../03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml), and the
+[`Recovery and Countermodel Suite`](../03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md).
+Those files complete an F0 specification packet, not a proof of novelty.
 
 ## 1. The lexical contract
 

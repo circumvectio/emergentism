@@ -20,6 +20,7 @@
 | Support | 08_FRAMEWORK_SUPPORT, 09_TOOLS | 2 |
 | Seed | 10_SEED, 11_UPLINK | 2 |
 | Public | 12_PUBLIC_SITE | 1 |
+| Books | 13_BOOKS | 1 |
 | Archive | 90_ARCHIVE, 91_COMPATIBILITY | 2 |
 
 ## Regenerable Tissue Removed
@@ -37,4 +38,5 @@
 ## Authority Rule
 
 `00_META/` and the seven doctrinal lanes remain authoritative unless a later
-dated control-plane receipt moves a specific artifact.
+dated control-plane receipt moves a specific artifact. `13_BOOKS/` is a
+projection-only workshop and creates no eighth owner.

@@ -84,10 +84,18 @@ No step depends on membership, belief, payment, or delegated truth authority.
 ```text
 python3 render_dimension_site.py
 python3 build_book.py
+python3 build_book.py --check
 python3 build_rag_index.py
+python3 refresh_reading_manifest.py
+python3 refresh_reading_manifest.py --check
 python3 apply_frozen_library_boundary.py
 python3 predeploy_check.py
 ```
+
+`refresh_reading_manifest.py` preserves the frozen June library document list
+byte-for-byte at the data level and refreshes only its lifecycle declaration
+and the current One-Sitting reader contract. It does not regenerate or promote
+the frozen library pages.
 
 The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and the
 root redirect. No external scripts, stylesheets, fonts, or media are required.

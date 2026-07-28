@@ -1,0 +1,2324 @@
+{
+  "authority": "derived graph; publication and graph membership provide no evidence",
+  "edges": [
+    {
+      "from": "DHY01-01",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "projected_from",
+      "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "depends_on",
+      "to": "DHY01-01"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "projected_from",
+      "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "depends_on",
+      "to": "DHY01-01"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "projected_from",
+      "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "depends_on",
+      "to": "DHY01-01"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "depends_on",
+      "to": "DHY01-03"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "projected_from",
+      "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "depends_on",
+      "to": "DHY01-02"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "depends_on",
+      "to": "DHY01-04"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "projected_from",
+      "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "EN01-02",
+      "kind": "depends_on",
+      "to": "EN01-01"
+    },
+    {
+      "from": "EN01-02",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "EN01-02",
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-02",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "EN01-02",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "depends_on",
+      "to": "EN01-02"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "depends_on",
+      "to": "EN01-03"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "depends_on",
+      "to": "EN01-01"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "depends_on",
+      "to": "EN01-02"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "depends_on",
+      "to": "EN01-03"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "depends_on",
+      "to": "EN01-04"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-01",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-01",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-01",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-02",
+      "kind": "depends_on",
+      "to": "OS01-01"
+    },
+    {
+      "from": "OS01-02",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-02",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-02",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-03",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-03",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-03",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-04",
+      "kind": "depends_on",
+      "to": "OS01-03"
+    },
+    {
+      "from": "OS01-04",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-04",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-04",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-06",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-06",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-06",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "depends_on",
+      "to": "OS01-06"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-10",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-10",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-10",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-10",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "OS01-11",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-11",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-11",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "depends_on",
+      "to": "OS01-11"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "depends_on",
+      "to": "OS01-08"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "OS01-14",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-14",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-14",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-15",
+      "kind": "depends_on",
+      "to": "OS01-14"
+    },
+    {
+      "from": "OS01-15",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-15",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-15",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-16",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-16",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-16",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-17",
+      "kind": "depends_on",
+      "to": "OS01-14"
+    },
+    {
+      "from": "OS01-17",
+      "kind": "depends_on",
+      "to": "OS01-15"
+    },
+    {
+      "from": "OS01-17",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-17",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-17",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-18",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-18",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-18",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-18",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-19",
+      "kind": "depends_on",
+      "to": "OS01-18"
+    },
+    {
+      "from": "OS01-19",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-19",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-19",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-19",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "OS01-20",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-20",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-20",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-20",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-21",
+      "kind": "depends_on",
+      "to": "OS01-20"
+    },
+    {
+      "from": "OS01-21",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "OS01-21",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-21",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "depends_on",
+      "to": "OS01-09"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "depends_on",
+      "to": "OS01-13"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "OS01-22",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "depends_on",
+      "to": "OS01-12"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-24",
+      "kind": "depends_on",
+      "to": "OS01-23"
+    },
+    {
+      "from": "OS01-24",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-24",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-24",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "depends_on",
+      "to": "OS01-23"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "depends_on",
+      "to": "OS01-13"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "depends_on",
+      "to": "OS01-22"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "depends_on",
+      "to": "OS01-25"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "depends_on",
+      "to": "RIP01-02"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "tested_by",
+      "to": "A6"
+    },
+    {
+      "from": "RIP01-04",
+      "kind": "depends_on",
+      "to": "RIP01-03"
+    },
+    {
+      "from": "RIP01-04",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "RIP01-04",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-04",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "depends_on",
+      "to": "RIP01-04"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "tested_by",
+      "to": "A0"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "depends_on",
+      "to": "RIP01-05"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "depends_on",
+      "to": "RIP01-06"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "tested_by",
+      "to": "A0"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "depends_on",
+      "to": "SES01-01"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "depends_on",
+      "to": "SES01-01"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "depends_on",
+      "to": "SES01-03"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "depends_on",
+      "to": "SES01-03"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "depends_on",
+      "to": "SES01-04"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "depends_on",
+      "to": "SES01-05"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "tested_by",
+      "to": "A0"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "depends_on",
+      "to": "SL01-01"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "owned_by",
+      "to": "K-2"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SL01-03",
+      "kind": "depends_on",
+      "to": "SL01-01"
+    },
+    {
+      "from": "SL01-03",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SL01-03",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-03",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SL01-04",
+      "kind": "depends_on",
+      "to": "SL01-01"
+    },
+    {
+      "from": "SL01-04",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SL01-04",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-04",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "SL01-04",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "depends_on",
+      "to": "SL01-04"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "depends_on",
+      "to": "SL01-03"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "depends_on",
+      "to": "SL01-03"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "depends_on",
+      "to": "SL01-04"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "depends_on",
+      "to": "SL01-06"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "tested_by",
+      "to": "A4"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-02"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-03"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-04"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-05"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-06"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "depends_on",
+      "to": "SL01-07"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "tested_by",
+      "to": "A0"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "depends_on",
+      "to": "SV01-01"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "depends_on",
+      "to": "SV01-01"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "depends_on",
+      "to": "SV01-03"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SV01-04",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SV01-05",
+      "kind": "depends_on",
+      "to": "SV01-04"
+    },
+    {
+      "from": "SV01-05",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SV01-05",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-05",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SV01-05",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "depends_on",
+      "to": "SV01-04"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "tested_by",
+      "to": "A7"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "depends_on",
+      "to": "SV01-05"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "depends_on",
+      "to": "SV01-06"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "owned_by",
+      "to": "K-5"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "owned_by",
+      "to": "K-7"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "tested_by",
+      "to": "A5"
+    },
+    {
+      "from": "TIT01-01",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-01",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-01",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "depends_on",
+      "to": "TIT01-01"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "tested_by",
+      "to": "A2"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "depends_on",
+      "to": "TIT01-01"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "depends_on",
+      "to": "TIT01-02"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "depends_on",
+      "to": "TIT01-03"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "tested_by",
+      "to": "A3"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "depends_on",
+      "to": "TIT01-03"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "depends_on",
+      "to": "TIT01-04"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "owned_by",
+      "to": "K-3"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "owned_by",
+      "to": "K-4"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "tested_by",
+      "to": "A1"
+    }
+  ],
+  "metrics": {
+    "edges": 372,
+    "nodes": 92
+  },
+  "nodes": [
+    {
+      "id": "A0",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A1",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A2",
+      "kind": "adequacy_docket",
+      "status": "typed"
+    },
+    {
+      "id": "A3",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A4",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A5",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A6",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "A7",
+      "kind": "adequacy_docket",
+      "status": "packet-complete"
+    },
+    {
+      "id": "BK-DHARMA",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-EVOLUTIONARY-NETWORK",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-ONE-SITTING",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-RECIPROCAL-INFINITE-PLAY",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-SARPASYA",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-SELF-EATING",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-SIX-LENSES",
+      "kind": "book_projection"
+    },
+    {
+      "id": "BK-TITANS",
+      "kind": "book_projection"
+    },
+    {
+      "id": "DHY01-01",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "DHY01-02",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "DHY01-03",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "DHY01-04",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "DHY01-05",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "EN01-01",
+      "kind": "claim",
+      "lifecycle": "proposal"
+    },
+    {
+      "id": "EN01-02",
+      "kind": "claim",
+      "lifecycle": "proposal"
+    },
+    {
+      "id": "EN01-03",
+      "kind": "claim",
+      "lifecycle": "proposal"
+    },
+    {
+      "id": "EN01-04",
+      "kind": "claim",
+      "lifecycle": "proposal"
+    },
+    {
+      "id": "EN01-05",
+      "kind": "claim",
+      "lifecycle": "proposal"
+    },
+    {
+      "id": "OS01-01",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-02",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-03",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-04",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-05",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-06",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-07",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-08",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-09",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-10",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-11",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-12",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-13",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-14",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-15",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-16",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-17",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-18",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-19",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-20",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-21",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-22",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-23",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-24",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-25",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "OS01-26",
+      "kind": "claim",
+      "lifecycle": "reader_synthesis"
+    },
+    {
+      "id": "RIP01-01",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-02",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-03",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-04",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-05",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-06",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "RIP01-07",
+      "kind": "claim",
+      "lifecycle": "frozen"
+    },
+    {
+      "id": "SES01-01",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SES01-02",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SES01-03",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SES01-04",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SES01-05",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SES01-06",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-01",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-02",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-03",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-04",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-05",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-06",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-07",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SL01-08",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-01",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-02",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-03",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-04",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-05",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-06",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "SV01-07",
+      "kind": "claim",
+      "lifecycle": "legacy"
+    },
+    {
+      "id": "TIT01-01",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "TIT01-02",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "TIT01-03",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "TIT01-04",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "TIT01-05",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "K-1",
+      "kind": "semantic_owner",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "K-2",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+    },
+    {
+      "id": "K-3",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
+    },
+    {
+      "id": "K-4",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/04_THE_CONJECTURES.md"
+    },
+    {
+      "id": "K-5",
+      "kind": "semantic_owner",
+      "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md"
+    },
+    {
+      "id": "K-6",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/06_THE_REVELATIONS.md"
+    },
+    {
+      "id": "K-7",
+      "kind": "semantic_owner",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
+    }
+  ],
+  "schema": "emergentism/claim-owner-dependency-graph/v1"
+}

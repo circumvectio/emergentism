@@ -1773,5 +1773,51 @@
       "href": "meta/00-what-is-actually-novel-here/",
       "source": "docs/handoff/meta-public/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md"
     }
-  ]
+  ],
+  "lifecycle": "frozen_generated_library",
+  "current_reader": {
+    "work_id": "BK-ONE-SITTING",
+    "title": "The Emergentist Weltanschauung — One-Sitting Edition",
+    "href": "book/",
+    "edition": "active-source-reader",
+    "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "source_revision": "sha256:8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58",
+    "lifecycle": "reader_synthesis",
+    "public_disposition": "bounded_current",
+    "claim_card_ids": [
+      "OS01-01",
+      "OS01-02",
+      "OS01-03",
+      "OS01-04",
+      "OS01-05",
+      "OS01-06",
+      "OS01-07",
+      "OS01-08",
+      "OS01-09",
+      "OS01-10",
+      "OS01-11",
+      "OS01-12",
+      "OS01-13",
+      "OS01-14",
+      "OS01-15",
+      "OS01-16",
+      "OS01-17",
+      "OS01-18",
+      "OS01-19",
+      "OS01-20",
+      "OS01-21",
+      "OS01-22",
+      "OS01-23",
+      "OS01-24",
+      "OS01-25",
+      "OS01-26"
+    ],
+    "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
+    "claim_card_register_sha256": "b031ee17849e2003f574c82aac44615fa88a3399bf2ff0bb7c83091420e77622",
+    "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
+    "claim_graph_sha256": "87671a95887d8cb8ca4dd357488922c2cbbef944a6aac9bca7c4ae6a3cc8a5eb",
+    "build_manifest": "book/build-manifest.json",
+    "output_sha256": "e868185e9a3932c1f9df27bf5183d7a6323b63d1a4c1cd97fc03a0caf200a4a7",
+    "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
+  }
 }

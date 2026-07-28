@@ -56,6 +56,24 @@ PROVENANCE_EXCEPTIONS = {
     Path("09_TOOLS/02_COMPILERS/test_dimension_first_canon.py"),
 }
 
+# These files are live deployment projections of the Rosetta work grammar, not
+# worldview premises or semantic owners. Keep the exception narrow and require
+# an explicit boundary contract below; do not turn this into a token allowlist.
+PROJECTION_EXCEPTION_PREFIXES = {
+    Path("08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS"),
+}
+
+# Four canonical cards must name their immutable external source paths. The
+# exception applies only to a structured source record that simultaneously
+# declares legacy/frozen lifecycle and historical-lineage role; it does not permit
+# the external name in claims, instructions, owners, or reader language.
+HISTORICAL_LINEAGE_CARD_PATHS = {
+    Path("00_META/claim_cards/self_eating_serpent.yaml"),
+    Path("00_META/claim_cards/reciprocal_infinite_play.yaml"),
+    Path("00_META/claim_cards/sarpasya_vijayam.yaml"),
+    Path("00_META/claim_cards/six_lenses.yaml"),
+}
+
 LEGACY_ALIAS_EXCEPTIONS = {
     Path("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"),
     Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D33_EGREGORES.md"),
@@ -160,6 +178,7 @@ def is_active_route(path: Path) -> bool:
     return (
         path.name in {"AGENTS.md", "CLAUDE.md"}
         and not any(part.startswith(".") for part in rel.parts)
+        and not any(rel.is_relative_to(prefix) for prefix in PROJECTION_EXCEPTION_PREFIXES)
         and not any(
         part in ROUTE_EXCLUDED_PARTS for part in rel.parts
         )
@@ -180,6 +199,8 @@ def is_active_corpus_file(path: Path) -> bool:
         return False
     if rel in PROVENANCE_EXCEPTIONS:
         return False
+    if any(rel.is_relative_to(prefix) for prefix in PROJECTION_EXCEPTION_PREFIXES):
+        return False
     return True
 
 
@@ -187,9 +208,19 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing scoped file: {path.relative_to(ROOT)}"]
+    rel = path.relative_to(ROOT)
     for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         match = FORBIDDEN.search(line)
-        if match:
+        historical_source_record = (
+            rel in HISTORICAL_LINEAGE_CARD_PATHS
+            and '"source"' in line
+            and '"path"' in line
+            and '"lifecycle"' in line
+            and any(f'"{lifecycle}"' in line for lifecycle in ("legacy", "frozen"))
+            and '"role"' in line
+            and '"historical_lineage"' in line
+        )
+        if match and not historical_source_record:
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"
             )
@@ -220,6 +251,22 @@ def main() -> int:
         seen.add(path)
         allow_alias = path.relative_to(ROOT) in LEGACY_ALIAS_EXCEPTIONS
         errors.extend(scan_file(path, allow_legacy_alias=allow_alias))
+
+    for prefix in PROJECTION_EXCEPTION_PREFIXES:
+        boundary = ROOT / prefix / "README.md"
+        if not boundary.is_file():
+            errors.append(f"missing projection boundary: {prefix}/README.md")
+            continue
+        boundary_text = boundary.read_text(encoding="utf-8")
+        for phrase in (
+            "runtime projection, not worldview doctrine",
+            "creates no semantic authority",
+            "source owners remain upstream",
+        ):
+            if phrase not in boundary_text:
+                errors.append(
+                    f"projection boundary {prefix}/README.md missing phrase: {phrase!r}"
+                )
 
     for rel in APPLICATION_TOMBSTONES:
         path = ROOT / rel

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 import subprocess
 import sys
@@ -48,6 +49,42 @@ REQUIRED_PUBLIC_CONTRACTS = {
 def main() -> int:
     errors: list[str] = []
     data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    if data.get("schemaVersion") != 2:
+        errors.append("public semantic parity schemaVersion must be 2")
+    contract = data.get("claimCardContract", {})
+    required_contract = ("ledger", "register", "graph", "source", "sourceRevision", "lifecycle", "publicDisposition")
+    for key in required_contract:
+        if not contract.get(key):
+            errors.append(f"claim-card contract missing {key}")
+    claim_ids: set[str] = set()
+    card_lookup: dict[str, dict] = {}
+    ledger_path = ROOT / contract.get("ledger", "__missing__")
+    if ledger_path.is_file():
+        ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        for card in ledger.get("cards", []):
+            card_id = card.get("card_id")
+            if card_id in card_lookup:
+                errors.append(f"duplicate claim-card ID in public ledger: {card_id}")
+            elif card_id:
+                card_lookup[card_id] = card
+                claim_ids.add(card_id)
+    else:
+        errors.append(f"missing claim-card ledger: {contract.get('ledger')}")
+    for key in ("register", "graph"):
+        path = ROOT / contract.get(key, "__missing__")
+        if not path.is_file():
+            errors.append(f"missing claim-card {key}: {contract.get(key)}")
+    source_path = ROOT / contract.get("source", "__missing__")
+    if source_path.is_file():
+        actual_revision = "sha256:" + hashlib.sha256(source_path.read_bytes()).hexdigest()
+        if contract.get("sourceRevision") != actual_revision:
+            errors.append("claim-card contract sourceRevision drift")
+    else:
+        errors.append(f"missing claim-card source: {contract.get('source')}")
+    if contract.get("lifecycle") != "reader_synthesis":
+        errors.append("public claim-card lifecycle must remain reader_synthesis")
+    if contract.get("publicDisposition") != "bounded_current":
+        errors.append("public claim-card disposition must remain bounded_current")
     if data.get("sequence") != EXPECTED_SEQUENCE:
         errors.append("dimension sequence is not the canonical D0/mu0...D6/r6 order")
     levels = data.get("levels", [])
@@ -59,6 +96,22 @@ def main() -> int:
     if levels[4].get("modality") != "actual" or levels[5].get("modality") != "possible":
         errors.append("D4 must be actual and D5 possible")
     for item in levels:
+        for key in ("claimCardIds", "sourceRevision", "lifecycle", "publicDisposition"):
+            if not item.get(key):
+                errors.append(f"{item.get('id', '?')} missing claim-card parity field {key}")
+        if item.get("sourceRevision") != contract.get("sourceRevision"):
+            errors.append(f"{item.get('id', '?')} claim-card sourceRevision drift")
+        if item.get("lifecycle") != contract.get("lifecycle"):
+            errors.append(f"{item.get('id', '?')} claim-card lifecycle drift")
+        if item.get("publicDisposition") != contract.get("publicDisposition"):
+            errors.append(f"{item.get('id', '?')} public disposition drift")
+        for card_id in item.get("claimCardIds", []):
+            if card_id not in claim_ids:
+                errors.append(f"{item.get('id', '?')} binds unknown claim-card {card_id}")
+                continue
+            state = card_lookup[card_id].get("public", {}).get("state")
+            if state not in {"bounded_current", "candidate"}:
+                errors.append(f"{item.get('id', '?')} binds non-current claim-card {card_id} ({state})")
         source = ROOT / item["source"]
         if not source.is_file():
             errors.append(f"missing source owner: {item['source']}")
@@ -112,6 +165,14 @@ def main() -> int:
     frozen = subprocess.run([sys.executable, str(SITE / "apply_frozen_library_boundary.py"), "--check"], cwd=SITE, text=True, capture_output=True)
     if frozen.returncode:
         errors.append(frozen.stdout.strip() or frozen.stderr.strip() or "frozen library boundary drift")
+    barred = subprocess.run(
+        [sys.executable, str(ROOT / "09_TOOLS/01_SCRIPTS/check_barred_claims.py"), "--scope", "public"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+    )
+    if barred.returncode:
+        errors.append(barred.stdout.strip() or barred.stderr.strip() or "public barred-claim gate failed")
     rag = json.loads((SITE / "book/rag_index.json").read_text(encoding="utf-8"))
     frozen_prefixes = tuple(f"{root}:" for root in data["frozenLibraryRoots"])
     for passage in rag.get("passages", []):

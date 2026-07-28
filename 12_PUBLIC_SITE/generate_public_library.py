@@ -362,6 +362,8 @@ from pathlib import Path
 
 import markdown
 
+from reading_manifest_contract import apply_contract, canonical_bytes
+
 
 SITE_ROOT = Path(__file__).resolve().parent
 REPO_ROOT = SITE_ROOT.parents[1]
@@ -852,10 +854,7 @@ def generate_manifest() -> None:
         },
         "documents": documents,
     }
-    (SITE_ROOT / "reading-manifest.json").write_text(
-        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    (SITE_ROOT / "reading-manifest.json").write_bytes(canonical_bytes(apply_contract(manifest)))
 
 
 def url_for_html(rel: Path) -> str:

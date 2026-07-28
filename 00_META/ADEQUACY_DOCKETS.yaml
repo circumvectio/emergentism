@@ -1,0 +1,85 @@
+{
+  "schema": "emergentism/adequacy-dockets/v1",
+  "routing_role": "research routing only; no semantic authority and no truth promotion",
+  "status_ladder": ["typed", "packet-complete", "evidence-open", "component-supported", "independently-replicated", "narrowed", "killed", "deferred", "frozen"],
+  "rules": [
+    "Statuses are maturity states, not truth labels.",
+    "Publication, adoption, product use, and agent agreement provide no evidence.",
+    "A component result cannot promote a whole-docket or whole-worldview claim.",
+    "Independent replication requires an external custodian and a reproducible receipt."
+  ],
+  "dockets": [
+    {
+      "docket_id": "A0",
+      "title": "Traceability",
+      "status": "packet-complete",
+      "owner_ids": ["K-1", "K-2", "K-3", "K-4", "K-5", "K-6", "K-7"],
+      "gate": "Every active claim has one current owner, type, tier, source, lifecycle, rival where relevant, and projection disposition.",
+      "kill_or_narrow": "Unowned or ambiguous claims are withheld, frozen, or narrowed until routed.",
+      "depends_on": []
+    },
+    {
+      "docket_id": "A1",
+      "title": "Formal foundations and paradoxes",
+      "status": "packet-complete",
+      "owner_ids": ["K-1", "K-3", "K-4"],
+      "gate": "Defined calculus, standard-mathematics translation, conservative recovery, smallest-extension comparison, countermodels, scoped paradox rows, and independent formal review.",
+      "kill_or_narrow": "If only known mathematics is re-expressed, retain a specification language and withdraw algebraic novelty.",
+      "depends_on": ["A0"]
+    },
+    {
+      "docket_id": "A2",
+      "title": "Ontology",
+      "status": "typed",
+      "owner_ids": ["K-2", "K-4"],
+      "gate": "Declared scope, actuality/dependence distinctions, strongest rivals, noncircular discriminators, and world contact for stronger claims.",
+      "kill_or_narrow": "Failure of discrimination leaves a constrained interpretation or vocabulary, not a complete account of reality.",
+      "depends_on": ["A0"]
+    },
+    {
+      "docket_id": "A3",
+      "title": "Epistemology and methodology",
+      "status": "packet-complete",
+      "owner_ids": ["K-3", "K-7"],
+      "gate": "Typed warrants, preregistration, serious rival, negative control, held-out prediction, null route, custody, and correction receipt.",
+      "kill_or_narrow": "A method that does not improve calibration or correction survives only as a chosen audit discipline.",
+      "depends_on": ["A0"]
+    },
+    {
+      "docket_id": "A4",
+      "title": "Normative bridge and axiology",
+      "status": "packet-complete",
+      "owner_ids": ["K-3", "K-5"],
+      "gate": "Justice remains a declared premise while moral realism is compared with naturalist, non-naturalist, constructivist, contractualist, consequentialist, virtue, theological, capabilities, and error-theory rivals.",
+      "kill_or_narrow": "No geometry-to-ethics bridge means Justice remains an explicit constitutional choice, not an objective theorem.",
+      "depends_on": ["A0", "A3"]
+    },
+    {
+      "docket_id": "A5",
+      "title": "Teleology and coordination",
+      "status": "packet-complete",
+      "owner_ids": ["K-4", "K-5"],
+      "gate": "Declared short learning and long responsibility horizons, bearer vector, tie-breakers, exit costs, tragic residue, comparator, and outcome receipts.",
+      "kill_or_narrow": "If the protocol does not outperform ordinary multi-objective governance, retain only its transparent horizon and bearer record.",
+      "depends_on": ["A0", "A3", "A4"]
+    },
+    {
+      "docket_id": "A6",
+      "title": "Science integration",
+      "status": "packet-complete",
+      "owner_ids": ["K-1", "K-4"],
+      "gate": "Native objects and equations, accepted-domain recovery, permutation challenge, held-out incremental prediction, and independent replication for every row.",
+      "kill_or_narrow": "Without common dynamics or replicated novel discrimination, the D-system remains a candidate translation grammar.",
+      "depends_on": ["A0", "A1", "A2", "A3"]
+    },
+    {
+      "docket_id": "A7",
+      "title": "Collective and civilizational conjectures",
+      "status": "packet-complete",
+      "owner_ids": ["K-4", "K-5"],
+      "gate": "Causally plural rival tests, trace intervention, bearer costs, consent, nonviolence, reversibility, appeal, repair, and exit.",
+      "kill_or_narrow": "Rank, coercion, collective-person reification, total-war explanation, or existential blackmail freezes the affected claim.",
+      "depends_on": ["A0", "A3", "A4", "A5"]
+    }
+  ]
+}

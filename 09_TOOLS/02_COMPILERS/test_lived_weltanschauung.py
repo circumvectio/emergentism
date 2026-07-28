@@ -81,7 +81,8 @@ class LivedWeltanschauungTests(unittest.TestCase):
 
     def test_worldview_keeps_core_type_boundaries(self) -> None:
         for required in (
-            "They are the **Titans**: not gods, particles, causal agents or arithmetic",
+            "selected framing vocabulary, not gods, particles",
+            "not three objects inside D0 or an ontology by fiat",
             "division by zero is undefined in a field",
             "The state predicts; an actual record occurs",
             "Commitment and outcome are therefore separate",

@@ -24,6 +24,12 @@ evidence_tier: "[B] local scaffold; [S] structural caste mapping; [C] unprovisio
 
 # The Seven as Managed Agents
 
+> **Pure-worldview boundary.** This folder is a **runtime projection, not worldview doctrine**.
+> It creates no semantic authority; **source owners remain upstream** in K-1
+> through K-7. Product names, hosted models, authorization
+> conventions, and deployment bindings below describe an application surface
+> and supply no evidence for Emergentism.
+
 The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine, L5-L7 Executive boundary on `P_node = Φ × V`)
 expressed as **Claude platform Managed Agents** — persisted, versioned agent configs
 that Anthropic runs in hosted, sandboxed containers.

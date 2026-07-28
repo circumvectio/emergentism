@@ -1,0 +1,43 @@
+{
+  "authority": "deterministic projection receipt; source owners retain semantics",
+  "claim_card_contract": {
+    "graph_path": "00_META/registers/CLAIM_GRAPH.json",
+    "graph_sha256": "87671a95887d8cb8ca4dd357488922c2cbbef944a6aac9bca7c4ae6a3cc8a5eb",
+    "path": "00_META/claim_cards/one_sitting.yaml",
+    "schema": "emergentism/claim-card-set/v1",
+    "sha256": "b52ccdcde8d3858e3af15f1d79c044bfa365e0e20892e3738efe9ed199733d70"
+  },
+  "ordered_source_paths": [
+    "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+    "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
+    "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+  ],
+  "output": {
+    "path": "book/index.html",
+    "sha256": "e868185e9a3932c1f9df27bf5183d7a6323b63d1a4c1cd97fc03a0caf200a4a7"
+  },
+  "renderer": {
+    "extensions": [
+      "extra",
+      "toc",
+      "sane_lists"
+    ],
+    "package": "Markdown",
+    "version": "3.10.2"
+  },
+  "schema": "emergentism/public-book-build/v1",
+  "sources": [
+    {
+      "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "sha256": "8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58"
+    },
+    {
+      "path": "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
+      "sha256": "bbd928077acced371bd6af0f06a35bc78afef342f42156b8361ea0cd5b5109fb"
+    },
+    {
+      "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "sha256": "fc9a97ae890c791dc09b13e8259aa88f5cd7d8d21fcaea0e185bc2cb7cacba45"
+    }
+  ]
+}

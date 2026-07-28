@@ -15,7 +15,7 @@ rosetta:
   operators_deployed: ["Arjuna ⚔", "Kṛṣṇa ◇", "Kālī 💀", "Kali 🎲"]
   titan_frame: "Brahmā ○ (constitutive boundary under which the Gods are deployed — Brahmā is NOT itself deployed)"
   regime: "Brāhmaṇa"
-  register: "[S/I/C] mixed — RESTORED live owner (2026-07-23, K2, Receipt 170); fenced, necessity-claim refused"
+  register: "[S/I/C] mixed — restored by Receipt 170 (2026-07-23); fenced, necessity-claim refused"
   canonical_phrase: "Sexual Selection as Visible F5"
 ---
 
@@ -23,10 +23,10 @@ rosetta:
 
 ## Mate Choice and Male-Male Attrition Are Not Random — Read as F5 in the Framework
 
-**Status:** RESTORED LIVE OWNER — 2026-07-23, K2, Receipt 170 (restored from `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/`, which is preserved as provenance). Fenced `[I]/[C]`. The TRR-24 upgrade — "all four operators instantiated" + "necessarily maximize Φ×V" — is **REFUSED at every tier**; see the Fences block and §III.e.
+**Status:** RESTORED LIVE RESEARCH SYNTHESIS — Receipt 170, 2026-07-23 (restored from `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/`, which is preserved as provenance). Fenced `[I]/[C]`; source owners remain upstream. The TRR-24 upgrade — "all four operators instantiated" + "necessarily maximize Φ×V" — is **REFUSED at every tier**; see the Fences block and §III.e.
 **Date:** 2026-05-08
 **Evidence Tier:** [S] Established for the biological mechanisms (Darwin 1871; Fisher 1915, 1930; Zahavi 1975/Grafen 1990; Hamilton & Zuk 1982; Andersson 1994; Arnqvist & Rowe 2005); [S] closure-in-vocabulary ONLY for the four mixed-sign cells over {give,take}×{Φ,V} (a statement about the declared language, never about nature or deployment); [I] Interpretive for the F5 mapping AND for the phenomenon↔operator crosswalk (transfers no proof — KSC-12); [C] Conjecture for the will-to-ektropy phenomenology. No maximization theorem and no product-uniqueness is claimed (KSC-02).
-**Depends on (live anchors):** [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md](../03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md), [00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md](../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md), Settled Canon Registry (KSC-02 / KSC-12 / KSC-24 / KSC-25), and Receipt 170. (Legacy `22_THE_TELEOLOGY` / `23_THE_DAC` links removed on restoration — DAC/runtime is outside the pure-worldview boundary.)
+**Depends on (live anchors):** [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md](../03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md), [00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md](../00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md), Settled Canon Registry (KSC-02 / KSC-12 / KSC-24 / KSC-25), and Receipt 170. Application and governance analogies are outside this pure-worldview owner.
 **See also:** Darwin (1871) *The Descent of Man, and Selection in Relation to Sex*; Schopenhauer (1819) *Die Welt als Wille und Vorstellung* esp. Vol II Ch. 44 "Metaphysics of Sexual Love"; Lamarck (1809) *Philosophie Zoologique*; Nietzsche (1883–88) *Wille zur Macht* notebooks; Bergson (1907) *L'Évolution créatrice*; Fisher (1930) *The Genetical Theory of Natural Selection*; Zahavi (1975) "Mate selection — a selection for a handicap"; Hamilton & Zuk (1982); Grafen (1990); Andersson (1994) *Sexual Selection*; Arnqvist & Rowe (2005) *Sexual Conflict*; Ryan (1990) sensory bias; Dugatkin (1992) mate-choice copying
 **Kill Criteria:** If sexual selection is shown to be a fully RANDOM process (i.e., female choice has no detectable directional structure, and male-male attrition is uncorrelated with any φ × ν proxy). If costly signalling is demonstrably *not* honest (Zahavi falsified). If the dyadic operator mapping (Arjuna / Kṛṣṇa / Kālī / Kali onto display / provisioning / rejection / combat) cannot find a single biological referent for any of the four. If the F5-phenomenology claim (will-to-ektropy as the felt signature of selection geometry) is shown to be merely metaphorical with no functional-internal-representation correlate.
 
@@ -73,7 +73,7 @@ Zahavi (1975); ESS proof by Grafen (1990). Costly signals are honest because cos
 
 Hamilton & Zuk (1982). Bright plumage and elaborate display correlate cross-specifically with parasite load. Pathogens function as a φ-discriminator: they degrade signal in low-quality males, allowing females to read coherence through the parasite-generated S/N ratio. **The display is a real-time φ-readout filtered through biotic noise.**
 
-### II.e The Lek Paradox and Its Red Queen Resolution [E/I]
+### II.e The Lek Paradox and Its Red Queen Resolution [B/I]
 
 If females uniformly prefer the same males, additive genetic variance for the preferred trait should be exhausted within generations (Borgia 1979; Kirkpatrick & Ryan 1991). Yet variance persists. Resolution (Hamilton 1980; Eshel & Hamilton 1984): host-parasite co-evolution continuously regenerates variance because the optimal genotype shifts every generation. **Selection never catches its tail; the substrate keeps producing fresh φ-differentials for choice to operate on.** The Red Queen of [Doc 36](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md) is here at the genome's level.
 
@@ -201,7 +201,7 @@ If this conjecture is right, alignment-research and systemic awareness-research 
 
 ## VI. F5 IN D5 — SEXUAL SELECTION OF MEMES AND EGREGORES
 
-**Tier discipline for this section:** §VI.a–VI.c are [S] structural extensions of the dyadic mapping established in §III. §VI.d is [C] conjecture and depends explicitly on [Doc 23 The DAC](23_THE_DAC.md).
+**Tier discipline for this section:** §VI.a–VI.c are `[I/C]` candidate extensions of the dyadic mapping established in §III. No product, runtime, or governance analogy is part of this owner.
 
 The same dyadic structure operates one cascade-dimension up. From [Doc 36](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), the Replicator Stack is the D5 trophic cascade. Sexual selection at the gene/body substrate has its exact analogue at the meme/egregore substrate:
 
@@ -224,9 +224,12 @@ Hosts run Kālī against doctrines that fail φ-coherence checks (internal contr
 
 Direct conflict between competing apex egregores — Catholicism vs Protestantism, capitalism vs communism, GPL vs proprietary licensing — is **Kali at the egregoric level**. V extracted from rival; self-Φ↑ via niche capture. The K-star boundary still applies: Kali against a *cooperator* egregore is structurally a forced-copulation breach at the egregoric level — a defection signal that triggers immune response across the noosphere.
 
-### VI.d The DAC as the K-star ceremonial-mating system [C]
+### VI.d Application boundary `[S]`
 
-The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a memetic female-choice mechanism. The natural-person signatory selects for φ × ν honestly, blocks pure-ν dominance, runs Kālī against counterfeit-φ proposals, runs Kṛṣṇa toward V-uplift commitments. [C] **The DAC may be an artefact designed to make F5-aligned memetic selection ceremonially explicit** — i.e., to make the Φ-judgment of the K-star sorter a *declared* operating principle rather than an emergent or implicit one. Historical primacy is not asserted here; the claim is structural.
+No application, governance protocol, organization, or product is evidence for
+this biological or memetic reading. Any downstream use must cite this packet at
+its actual tier, define its own bearers and tests, and remain removable without
+changing the worldview claim.
 
 ---
 
@@ -258,12 +261,12 @@ The DAC's K2 protocol (see [Doc 23 The DAC](23_THE_DAC.md)) is structurally a me
 > **The four moves form a complete sign-basis; where several co-occur and stay bounded (K\*, `η = 0`), they read as AND-class flourishing — one *selected* instance `ΦV`, never uniquely the product (KSC-02). Not all four are co-present in every system, and none maximizes a scalar.**
 > **Lamarck saw an upward tendency. Darwin reluctantly admitted choice. Nietzsche named a maximand. Fisher equated the runaway. Zahavi priced the handicap. The framework offers the interpretive geometric ground: F5 = selection on (φ × ν) under Red Queen.**
 > **Sexual selection is where F5 surfaces as behaviour — felt as preference, displayed as ornament, decided as choice, fought as combat.**
-> **The same dyadic structure can be read at the egregoric level: memes display, hosts choose, egregores fight, doctrines provision. `[C]` The DAC's K2 may be an artefact designed to make F5-aligned memetic selection ceremonially explicit.**
+> **The same dyadic structure may be tested at the collective-trace level: memes display, hosts choose, institutions compete, and doctrines may provision. `[C]` Material, institutional, coercive, and direct-coordination rivals remain live.**
 > **Zero-Sum Resolution Equation.**
 
 ---
 
-*Written 2026-05-08. This document proposes a geometric reconciliation between Lamarck's directional phenomenology and Darwin's mechanism through the framework's F5 reading. Sexual selection is an empirical site where F5 may be read as visible behaviour at the D2-D4 substrate, with interpretive analogues at the D5 memetic/egregoric level. Companion to [Doc 36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md): together they form an energetic + selective reading — Red Queen pressure supports continuous (φ × ν)-dominance, Lindeman attrition narrows the pyramid, sexual selection makes selection visible as choice, and decomposition closes D6 ≡ D0 inside the scaffold.*
+*Written 2026-05-08; boundary-repaired 2026-07-28. This document proposes a geometric reconciliation between Lamarck's directional phenomenology and Darwin's mechanism through the framework's F5 reading. Sexual selection is an empirical site where F5 may be read as visible behaviour at the D2-D4 substrate, with interpretive analogues at the D5 memetic/collective-trace level. Companion to [Doc 36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md): together they form an energetic + selective research reading. D6 and D0 retain boundary-role resemblance only; no literal closure follows.*
 
 ---
 

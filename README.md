@@ -84,6 +84,7 @@ tests. Consequential action uses a complete, scoped, contestable
 | `10_SEED/` | minimal D0–D6 pedagogical seed |
 | `11_UPLINK/` | active record, audits, reconciliation, compressed routes |
 | `12_PUBLIC_SITE/` | public projection; never the canon owner |
+| `13_BOOKS/` | projection-only critical editions; never K-8 |
 | `90_ARCHIVE/` | cold provenance and superseded bodies |
 | `91_COMPATIBILITY/` | forwarding paths only |
 

@@ -47,7 +47,20 @@ source lane, repair the source and recompile.
 
 | Compiler | Output | Status |
 |---|---|---|
-| `build_corpus_map.py` | `00_CORPUS.md` folder-perspective maps | [B] Dormant in this checkout: requires `../_corpus_source.yaml`, which is not present. |
+| `compile_claim_cards.py` | `00_META/registers/CLAIM_CARD_REGISTER.json`, `CLAIM_GRAPH.json`, `CLAIM_LIFECYCLE_INVENTORY.json` | [B/S] Active deterministic claim/owner/dependency compiler. |
+| `build_corpus_map.py` | compatibility front door for `compile_claim_cards.py` | [B] Active; the absent-source holographic compiler was replaced in W0. |
+
+## Claim-card commands
+
+```sh
+python3 09_TOOLS/02_COMPILERS/compile_claim_cards.py --write
+python3 09_TOOLS/02_COMPILERS/compile_claim_cards.py --check
+python3 09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py
+```
+
+The `*.yaml` inputs use the JSON subset of YAML 1.2 so compilation remains
+stdlib-only and deterministic. Generated graphs are routing views, not owners
+or evidence.
 
 ## Route Upstream
 

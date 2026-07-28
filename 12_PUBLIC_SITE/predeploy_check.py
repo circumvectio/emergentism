@@ -14,6 +14,10 @@ Checks:
 9. Generated library pages preserve the generator chrome contract
 10. Deployment publication boundary excludes source/control/runtime files
 11. Current public semantics match the dimension-first source contract
+12. Claim-card graph and lifecycle registers match their source contracts
+13. Claim cards, lifecycles, and barred-claim policy match source contracts
+14. The public book and its build manifest match deterministic source hashes
+15. The frozen-library manifest names the current reader deterministically
 
 Exit 0 if all checks pass, 1 if any fail.
 """
@@ -884,6 +888,55 @@ def check_semantic_parity():
     ok(process.stdout.strip())
     return True
 
+def check_claim_card_contract():
+    print("\n[13] Claim-card and lifecycle contract")
+    commands = (
+        [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/02_COMPILERS/compile_claim_cards.py"), "--check"],
+        [sys.executable, os.path.join(REPO_DIR, "09_TOOLS/01_SCRIPTS/check_barred_claims.py"), "--scope", "all"],
+    )
+    all_ok = True
+    for command in commands:
+        process = subprocess.run(command, cwd=REPO_DIR, text=True, capture_output=True, check=False)
+        if process.returncode:
+            all_ok = False
+            for line in (process.stdout + process.stderr).strip().splitlines():
+                error(line)
+        else:
+            ok(process.stdout.strip())
+    return all_ok
+
+def check_public_book_build():
+    print("\n[14] Deterministic public-book build")
+    process = subprocess.run(
+        [sys.executable, os.path.join(BASE_DIR, "build_book.py"), "--check"],
+        cwd=BASE_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    ok(process.stdout.strip())
+    return True
+
+def check_reading_manifest_contract():
+    print("\n[15] Reading-manifest lifecycle contract")
+    process = subprocess.run(
+        [sys.executable, os.path.join(BASE_DIR, "refresh_reading_manifest.py"), "--check"],
+        cwd=BASE_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    ok(process.stdout.strip())
+    return True
+
 def main():
     print("=" * 60)
     print("Pre-deploy supply-chain gate — 12_PUBLIC_SITE")
@@ -902,6 +955,9 @@ def main():
         check_historical_public_boundary(),
         check_publication_boundary(),
         check_semantic_parity(),
+        check_claim_card_contract(),
+        check_public_book_build(),
+        check_reading_manifest_contract(),
     ]
 
     print("\n" + "=" * 60)

@@ -1,0 +1,29 @@
+{
+  "schema": "emergentism/claim-card-schema/v1",
+  "serialization": "JSON subset of YAML 1.2 for deterministic stdlib parsing",
+  "required_card_fields": [
+    "card_id", "chapters", "locator", "plain_claim", "claim_type",
+    "evidence", "owner_ids", "dependencies", "docket_ids",
+    "type_boundaries", "strongest_rival", "discriminator",
+    "kill_criterion", "survivor_if_killed", "consequence",
+    "disposition", "public", "review"
+  ],
+  "enums": {
+    "evidence_tier": ["A", "B", "S", "I", "C", "D"],
+    "claim_type": ["analytic", "custodied_fact", "stipulation", "interpretation_vow", "conjecture", "staged"],
+    "source_lifecycle": ["active", "reader_synthesis", "legacy", "frozen", "archive", "compatibility", "proposal", "projection"],
+    "disposition": ["retain", "restate", "relocate", "research_docket", "freeze", "archive"],
+    "review_state": ["typed", "l1_flagged", "l2_reviewed", "l3_audited", "owner_approved", "implemented", "projection_audited", "closed"],
+    "public_state": ["not_applicable", "source_only", "candidate", "bounded_current", "noindex", "frozen"]
+  },
+  "owner_registry": {
+    "K-1": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+    "K-2": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+    "K-3": "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md",
+    "K-4": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+    "K-5": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
+    "K-6": "06_ONTOLOGY/06_THE_REVELATIONS.md",
+    "K-7": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
+  },
+  "authority_boundary": "Cards route and test claims. They never become an eighth semantic owner."
+}

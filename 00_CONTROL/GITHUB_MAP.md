@@ -23,6 +23,7 @@
 ├── 10_SEED/              ← Seed concepts
 ├── 11_UPLINK/            ← External connections
 ├── 12_PUBLIC_SITE/       ← Public web surface (book-pwa)
+├── 13_BOOKS/             ← Projection-only critical editions (never K-8)
 ├── 90_ARCHIVE/           ← Non-authoritative archive
 └── 91_COMPATIBILITY/     ← Compatibility layer
 ```
@@ -38,7 +39,8 @@ It is the public surface. All other directories are private doctrine.
 
 ## Publication Rule
 
-GitHub publication preserves the 00-12 doctrinal anatomy as the canonical root.
+GitHub publication preserves the 00-12 doctrinal anatomy plus the projection-only
+`13_BOOKS/` critical-edition workshop as the canonical root.
 Regenerable build tissue is excluded. Source, doctrine, receipts, archives,
 tests, lockfiles, package manifests, package configs, and tool configs are
 preserved.

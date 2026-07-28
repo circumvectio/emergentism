@@ -36,17 +36,19 @@ The strength marks are simple:
 
 ## 1. The Boundaries — before the world is divided
 
-Emergentism begins with three sovereign symbolic seats:
+Emergentism selects three opaque symbolic boundary labels—its Titan
+metaframes—not three objects inside D0 or an ontology by fiat:
 
 ```text
 •     ⊙     ○
 origin/absence   finite unit   horizon/unboundedness
 ```
 
-They are the **Titans**: not gods, particles, causal agents or arithmetic
-operands. Their familiar renderings as `0`, `1` and `∞` do not coerce them into
-ordinary numbers. They orient the telling: from no articulated distinction,
-through finite presence, toward what exceeds any finite inventory `[I]`.
+They are the **Titans**: selected framing vocabulary, not gods, particles,
+causal agents, arithmetic operands or a census of reality. Their familiar
+renderings as `0`, `1` and `∞` do not coerce them into ordinary numbers. They
+orient the telling: from no articulated distinction, through finite presence,
+toward what exceeds any finite inventory `[I]`.
 
 This beginning is deliberately austere. It does not explain why there is
 something rather than nothing. The Crown Wager says that logically coherent
@@ -59,9 +61,10 @@ object inside the frame. Many paradoxes begin when those types are mixed.
 
 ## 2. Difference — arithmetic begins after the frame
 
-The first positive freedom is distinction. Once one thing can be told from
-another, orientation becomes possible. Emergentism presents `+1` and `−1` as a
-signed pair and builds positive multiplicity from repeated finite units `[S/A]`.
+In the selected D1 presentation, distinction is read as the first positive
+freedom `[I]`. Once one thing can be told from another, orientation becomes
+possible. It is represented with an oriented signed unit pair, `+1_N` and
+`−1_N`; arithmetic in named finite structures is ordinary mathematics `[A]`.
 
 Ordinary mathematics remains ordinary mathematics:
 
@@ -73,9 +76,10 @@ Ordinary mathematics remains ordinary mathematics:
 - `ℤ\{0}` is not closed under addition because `1+(−1)=0`;
 - Cantor's diagonal argument and Russell's type boundary remain intact.
 
-The Titans stay sovereign because no arithmetic is performed on them. The
-mathematics is freed from false paradox not by changing its rules, but by
-refusing to use one symbol as several incompatible types.
+The Titans stay sovereign because no arithmetic is performed on them. This
+does not solve mathematics by renaming its problems. Some apparent
+contradictions dissolve when a declared domain or type is kept distinct; where
+no such error exists, the original problem remains.
 
 ## 3. Relation — form appears between things
 
@@ -93,9 +97,10 @@ This is the first durable Emergentist intuition:
 > Higher organization can be indispensable to explanation even when its
 > construction is formally reducible.
 
-Missing reduction is not proof of irreducibility. A macro-description earns
-work only when it improves compression, prediction or intervention against a
-fair lower-level baseline after its costs are counted.
+Missing reduction is not proof of irreducibility. A macro-description earns use
+only against a declared lower-level or alternative model with matched inputs,
+prediction horizon, intervention scope, encoding and measurement cost, and
+error metric; otherwise it remains a convenient redescription.
 
 ## 4. Probability — the quantum state is not the event
 
@@ -137,6 +142,9 @@ q_t compared with r_(t+1)  → learning or denial
 
 The selector cannot award itself the consequence it hoped for. This is the
 epistemic heart of humility and the practical heart of accountability.
+A receipt counts as correction only when its observation, provenance,
+comparison rule and contest path are declared; self-issued success reports
+remain commitments, not outcome evidence.
 
 ## 6. Possibility — the wider human horizon
 
@@ -218,14 +226,18 @@ No person models alone. Language, norms, money, law, ritual, science and myth
 are inherited coordination traces. People enact them; the traces shape what
 later people notice, desire and choose.
 
-A candidate **Egregoreotype** is a persistent shared trace that:
+A candidate **Egregoreotype** is a collective description supported only when
+all five markers are observed:
 
-1. survives turnover among its human or material carriers;
-2. measurably reweights later selection;
-3. produces a recurrent objective-like bias; and
-4. requires visible substrate and human costs.
+1. a persistent shared trace;
+2. survival through turnover among human or material carriers;
+3. trace intervention that reweights selection beyond carrier identity,
+   incentives, direct coordination and common environment;
+4. recurrent objective-like bias; and
+5. visible substrate and bearer costs.
 
-This definition does not presume collective consciousness. An institution can
+This is a candidate collective description, not consciousness, personhood,
+autonomous moral agency or proof of collective intention. An institution can
 act *as if* it pursues an objective because rules, incentives and records keep
 reproducing the bias.
 
@@ -261,10 +273,15 @@ reproductive opportunity. Coalitions often depend on represented `Φ₅` fields
 and their D4 coordination carriers: language, identity, ritual, legitimacy,
 command and present models of futures. Possible and actual power still appear
 at both scales: persons model possibilities, and groups require bodies and
-logistics. Material security, state capacity,
-geography, finance and coercion remain causal rivals. “Weltanschauungskrieg” is
-therefore a multilevel conjecture about competition among coordination patterns,
-not a universal explanation of war and never a licence for violence.
+logistics. Security dilemmas, state capacity, coercion, geography, elite
+competition, resource finance, organizational opportunity and local revenge
+remain causal rivals. If coordination-pattern measures add no reliable
+predictive value beyond them, retain only the weaker survivor: war is material
+conflict conducted through coalitions, and coalitions often use shared meanings
+to coordinate. “Weltanschauungskrieg” is therefore a multilevel conjecture
+about competition among coordination patterns, not a universal explanation of
+war and never a licence for violence. Any Dharma application is Justice-first,
+nonviolent, exit-preserving and never a battlefield directive.
 
 ### 8B. Ecology, replicators and human functions — do not collapse the axes
 
@@ -402,10 +419,13 @@ Three exact patterns motivate the wager without proving it:
   and vice versa;
 - a locally pure gauge has zero local curvature.
 
-Every real μ claim still owes a system boundary, saturation measure, threshold,
-new freedom, recovery map, rival, prediction and kill. A successful reduction
-reclassifies a crossing as weak emergence; it does not destroy the address
-system.
+Each μ is independently provisional: it requires a declared system boundary,
+saturation measure, threshold, new freedom, lower-register recovery, serious
+rival, preregistered prediction, discriminator and kill criterion. No joint
+score or force map promotes a row. A successful reduction reclassifies a
+crossing as weak emergence; it does not destroy the address system. The full
+experiment order and unpaid gates live in the
+[`Grand Puzzle Assembly Ledger`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md).
 
 The five force affinities remain the historical spark and an open modular wager.
 No current row unifies physics.

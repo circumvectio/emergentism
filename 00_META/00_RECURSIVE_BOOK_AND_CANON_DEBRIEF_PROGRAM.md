@@ -72,7 +72,7 @@ claim card before it is reused in a current book or public surface.
 ```text
 claim_id
 source_work + exact source location
-source_lifecycle: active | legacy | frozen | archive | projection
+source_lifecycle: active | reader_synthesis | legacy | frozen | archive | compatibility | proposal | projection
 plain claim
 claim_type: analytic | custodied fact | stipulation | interpretation/vow | conjecture | staged
 evidence_tier: [A] | [B] | [S] | [I] | [C] | [D]
@@ -183,7 +183,7 @@ martial imperatives.
 
 Mine *The Infinite Play* and *The Reciprocal* chapter by chapter. Route their
 useful anti-capture, public-language, and exit insights to owners. Re-audit
-all old `P_node`, D6/D0, geometry-to-ethics, K2/governance, and institutional
+all old `P_node`, D6/D0, geometry-to-ethics, private-governance, and institutional
 claims instead of modernizing them in place.
 
 ### Wave 6 — the three prior books

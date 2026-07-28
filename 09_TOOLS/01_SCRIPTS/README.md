@@ -53,3 +53,15 @@ General-purpose repository scripts.
 ## Status
 
 Active support folder. Scripts can compile, validate, and repair routing, but source owners remain upstream.
+
+## Corpus adequacy gates
+
+```sh
+python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope cards
+python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope public
+python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope all
+```
+
+`claim_policy.py` holds the narrow positive-assertion rules shared by the
+corpus and public release checks. Lifecycle controls historical language;
+denials and boundary statements are not treated as forbidden assertions.

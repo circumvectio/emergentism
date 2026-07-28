@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import importlib.util
+import hashlib
 import json
 import subprocess
 import sys
@@ -41,6 +42,23 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertEqual(transitions, ["mu0", "mu1", "mu2", "mu3", "mu4", "b6"])
         self.assertEqual(self.data["levels"][4]["modality"], "actual")
         self.assertEqual(self.data["levels"][5]["modality"], "possible")
+
+    def test_claim_card_projection_contract_is_current(self) -> None:
+        self.assertEqual(self.data["schemaVersion"], 2)
+        contract = self.data["claimCardContract"]
+        source = ROOT / contract["source"]
+        self.assertEqual(
+            contract["sourceRevision"],
+            "sha256:" + hashlib.sha256(source.read_bytes()).hexdigest(),
+        )
+        register = json.loads((ROOT / contract["register"]).read_text(encoding="utf-8"))
+        known = {card["card_id"] for card in register["cards"]}
+        for level in self.data["levels"]:
+            self.assertTrue(level["claimCardIds"])
+            self.assertTrue(set(level["claimCardIds"]) <= known)
+            self.assertEqual(level["sourceRevision"], contract["sourceRevision"])
+            self.assertEqual(level["lifecycle"], "reader_synthesis")
+            self.assertEqual(level["publicDisposition"], "bounded_current")
 
     def test_forbidden_claim_mutations_are_caught(self) -> None:
         mutations = {
@@ -95,6 +113,18 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             text=True,
         )
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+    def test_public_book_manifest_is_current(self) -> None:
+        result = subprocess.run(
+            [sys.executable, str(SITE / "build_book.py"), "--check"],
+            cwd=SITE,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        manifest = json.loads((SITE / "book/build-manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["schema"], "emergentism/public-book-build/v1")
+        self.assertEqual(len(manifest["sources"]), 3)
 
 
 if __name__ == "__main__":
