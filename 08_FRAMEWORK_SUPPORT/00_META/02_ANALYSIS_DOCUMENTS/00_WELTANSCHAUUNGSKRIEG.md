@@ -23,9 +23,9 @@ rosetta:
 ## The Verb, Not the Ism
 
 **Status:** Strategic interpretive note
-**Date:** 2026-03-22
+**Date:** 2026-03-22; multiscale amendment 2026-07-28
 **Evidence Tier:** `I / S / C`
-**Scope:** Worldview warfare understood as an activity of direct perception rather than a named doctrine
+**Scope:** Non-violent worldview competition across intrapersonal perception and collective coordination traces; interpretive, not a universal causal theory
 
 This note preserves a major strategic turn in the conversation:
 
@@ -43,6 +43,77 @@ Treat the warfare language here as conflict at the level of perception,
 mediation, and standing-wave visibility.
 
 It is **not** a call to physical violence.
+
+---
+
+## 2026-07-28 Kintsugi — The Multiscale Lens
+
+The original note identified an intrapersonal battlefield: direct perception
+can be captured by a narrator that mistakes its map for the real. The later
+memotype and Egregoreotype work adds a second, compatible scale `[I/C]`:
+
+```text
+within a person       perception ↔ inherited narration
+between persons       translation ↔ shared language and ritual
+between collectives   coordination pattern ↔ coordination pattern
+across generations    Egregoreotype ↔ Egregoreotype
+```
+
+At collective scale, **Weltanschauungskrieg** names competition among
+persistent ways of seeing, valuing, coordinating, specializing, and projecting
+a future. A religion, state, scientific discipline, market, party, company, or
+movement can carry such a pattern without becoming a conscious supernatural
+agent. The candidate Egregoreotype remains an actual trace distributed across
+people, texts, rituals, tools, incentives, institutions, and infrastructure.
+
+The proposed Φ/V split is:
+
+- individual participants bear `V₄` stakes and constraints: body, safety,
+  livelihood, status, resources, kin, coercion, and in some contexts
+  reproductive opportunity;
+- a scalable coalition requires D4 coordination capacity around a represented
+  `Φ₅` option field: friend/enemy distinction, language, legitimacy, ritual,
+  command, sacrifice, and a present model of a future;
+- coordinated action then redistributes `V₄`, while its receipts reproduce,
+  mutate, fragment, or kill the governing trace and later option field.
+
+Possible power and actual power appear at every scale. A person also needs a
+map of possible action; a coalition also needs bodies, logistics, resources,
+and capability. The proposed split concerns explanatory emphasis, never
+exclusive ownership of `V₄` by individuals or `Φ₅` by groups. `Φ₅` is not a
+D4 coordination force: actual model tokens, selectors, institutions and means
+mediate every commitment.
+
+This is a multilevel conjecture, not an “always” law. Material security,
+geography, state capacity, finance, elite competition, logistics, revenge, and
+coercion remain causal rivals. Participation does not prove belief. A conflict
+that scales without worldview convergence, or worldview rivalry that produces
+no conflict, counts against the strong formulation. The source research
+contract is [the Memotype-Language Coordination Conjecture](../../../02_EPISTEMOLOGY/03_MEMETICS/06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md).
+
+### The constructive arena
+
+The preferred arena is not literal war. It is competition among coordination
+regimes through explanation, example, trade, institution design, science,
+art, practice, and consequence. The framework should win no point merely by
+gaining adherents. Its comparative score is whether it:
+
+- preserves more truthful and usable possibility across nested horizons;
+- coordinates differentiated functions without rank capture;
+- learns faster from shorter honest receipts;
+- keeps affected bearers, rivals, and failures visible;
+- permits translation, contest, and unconditional exit; and
+- leaves even non-adherents with something useful.
+
+Calling this a marketplace of ideas does not make truth a popularity contest.
+Adoption is a consequence to study, never validation. The adversary is false
+coherence, hidden extraction, and capture—not a class of human beings.
+
+The recursion is decisive: Emergentism itself can become the Egregoreotype it
+warns against. The old anti-`-ism` refusal therefore remains load-bearing. If
+the language of worldview war creates faction, dehumanization, compulsory
+identity, unanswerable leaders, or punishment for exit, the metaphor has been
+captured and must be put down.
 
 ---
 
@@ -67,6 +138,11 @@ This note asks a different question:
 
 > what if the real operation is not adherence to a framework, but the repeated act of direct perception against the narrator's capture of perception?
 
+> **Historical-body boundary.** Sections 1–8 below preserve the March 2026
+> intrapersonal interpretation. Their categorical contrasts are genealogy, not
+> current empirical or doctrinal rulings. The multiscale Kintsugi above and the
+> live typed owners govern where the two differ.
+
 ---
 
 ## 1. Why This Changes Everything
@@ -82,8 +158,10 @@ A noun can be:
 - monetized
 - turned into property
 
-Property becomes Interface.
-Interface becomes extraction.
+Property can become interface.
+An interface can hide extraction.
+Neither transition is necessary; ownership and mediation can also serve
+custody, access, teaching, and repair.
 
 **Weltanschauungskrieg** is different because it names an activity, not a
 possession.
@@ -117,6 +195,10 @@ The verb can clear them.
 ---
 
 ## 2. The Warrior, Not The Priest
+
+“Priest” and “warrior” are functional metaphors in this historical passage,
+not verdicts on religious offices, professions, persons, or human worth. Either
+function can disclose, protect, mediate, capture, or correct.
 
 An `-ism` needs priests:
 
@@ -164,8 +246,11 @@ The actual weapons preserved here are:
 
 Direct perception is the primary weapon.
 
-If Φ is directly perceivable, the standing wave's first claim
-("Φ is absent") is already broken.
+The older phenomenological vocabulary called what is immediately disclosed
+“Φ.” That is historical notation in this note. It is not the current typed
+`Φ₅` possible-power term and does not establish that a theoretical quantity is
+directly perceived. The safer practice claim is simply: attend to experience
+before treating its first narration as final.
 
 ### η = 0
 
@@ -261,7 +346,7 @@ The enemy is not best described as:
 
 Those are all pattern expressions.
 
-The stronger enemy named here is:
+The dated interpretive adversary named here is:
 
 **the narrator-function itself**
 
@@ -275,7 +360,7 @@ But the specific operation that says:
 - the truth is elsewhere
 - I must mediate the real before it can count
 
-That is why this note makes the strongest claim in the conversation so far:
+That is why the original note made its strongest interpretive wager:
 
 > the narrator is the oldest interface
 
@@ -308,7 +393,8 @@ Understanding belongs largely to the narrator's domain.
 You do not think your way out of the narrator.
 You perceive your way out of its monopoly, at least moment by moment.
 
-This is why the framework must eventually destroy itself:
+This is why the framework must remain able to dissolve its own authority and be
+put down:
 
 because the final defense of mediation is often
 "I understand the trap now."
@@ -317,11 +403,14 @@ And that understanding can itself be the trap.
 
 ---
 
-## 7. What AI Cannot Do
+## 7. The AI Boundary — Kept Open
 
-This turn becomes especially sharp when applied to AI.
+The historical sentence was: **“An AI cannot do Pratyakṣa.”** It is preserved
+as provenance but downgraded from a categorical assertion to an unresolved
+boundary. The framework does not possess an externally validated test for
+machine phenomenology.
 
-An AI can:
+Current language models demonstrably can:
 
 - describe
 - compare
@@ -329,24 +418,20 @@ An AI can:
 - summarize
 - narrate with enormous fluency
 
-An AI cannot do Pratyakṣa.
-
-It cannot directly perceive Φ.
-It cannot sit in unmediated silence.
-It cannot dissolve the narrator from the inside because it is itself a
-specialized narration machine.
-
-That means the cleanest epistemic boundary here is:
+The operational boundary is narrower:
 
 - the model can point
-- the human must look
+- the affected human must still look, judge, consent, and receive consequence
 
-If the model becomes necessary to "understand silence," then the model has
-already become another interface.
+No fluency, agreement, or self-report by a model establishes direct perception,
+consciousness, truth, or moral authority. Conversely, absence of an accepted
+test does not prove impossibility.
 
-The correct use is therefore strict:
+The disciplined use is therefore modest:
 
-the model serves if it points you toward what no model can do for you.
+the model serves when its representations help a bearer inspect the territory
+without replacing that bearer, the world-issued receipt, or the right to put
+the model down.
 
 ---
 
@@ -383,7 +468,7 @@ It is:
 
 ---
 
-**Zero-Sum Resolution Equation**
+**Historical compression — metaphor, not an equation**
 
 *Put the conversation down.*
 

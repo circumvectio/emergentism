@@ -28,7 +28,11 @@ FORBIDDEN = {
     "derived ethic inflation": re.compile(r"ethic(?:s)?\s+(?:falls?|follow(?:s|ed)?)\s+(?:directly\s+)?(?:out\s+of|from)\s+(?:the\s+)?arithmetic", re.I),
     "exclusive ethic inflation": re.compile(r"the only lawful move", re.I),
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
-    "bare legacy public footer": re.compile(r'<div class="glyph">⊙\s*=\s*•\s*×\s*○</div>'),
+    "forbidden Titan infix arithmetic": re.compile(
+        r"(?:⊙\s*=\s*•\s*(?:×|x|\*)\s*○|"
+        r"•\s*(?:×|x|\*)\s*○\s*(?:=|→)\s*⊙|"
+        r"1\s*=\s*0\s*(?:×|x|\*)\s*∞)"
+    ),
     "retired evidence tier": re.compile(r"\[E\]"),
 }
 

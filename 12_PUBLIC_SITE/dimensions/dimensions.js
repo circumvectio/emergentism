@@ -790,7 +790,7 @@ function drawTitanCalculator(time = 0) {
     if (readout) readout.textContent =
       "D0 FRAME REGISTER · reciprocal calibration\n" +
       "left s = " + (-reciprocalS).toFixed(2) + " · right s = " + reciprocalS.toFixed(2) + " · centre s = 0\n" +
-      "mirror operation: s ↦ −s · product register: • × ○ → ⊙\n" +
+      "mirror operation: s ↦ −s · boundary frames: •  ⊙  ○\n" +
       "measured variable: displacement only; the frame remains fixed";
 
     // titles sit below the top HTML chip and above the bottom one — no overlap
@@ -805,7 +805,7 @@ function drawTitanCalculator(time = 0) {
     if (!compact) {
       ctx.textAlign = "right";
       ctx.fillStyle = ink;
-      ctx.fillText("⊙ = • × ○", right, height - pad - 48);
+      ctx.fillText("•  ⊙  ○", right, height - pad - 48);
       ctx.fillStyle = muted;
       ctx.fillText("frame/register doctrine, not field arithmetic", right, height - pad - 28);
     }

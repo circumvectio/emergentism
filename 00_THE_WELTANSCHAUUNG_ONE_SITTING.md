@@ -1,7 +1,7 @@
 ---
 title: "The Emergentist Weltanschauung — One-Sitting Edition"
 status: "ACTIVE — reader synthesis; subordinate to the seven kernel owners"
-date: 2026-07-27
+date: 2026-07-28
 evidence_tier: "Each claim retains its inline standing; the whole is an [I] synthesis"
 owner: "Reader projection of K-1 through K-7; creates no new doctrine"
 parents:
@@ -239,7 +239,34 @@ History can therefore be reread as interacting Soul Loops: persons change
 institutions; institutions change persons; both inherit traces from dead
 carriers and project futures into unborn ones.
 
-### 8A. Ecology, replicators and human functions — do not collapse the axes
+### 8A. Language, trade and worldview competition
+
+The current research conjecture treats language as a principal compression and
+synchronization protocol of a memotype, not necessarily its whole carrier.
+Shared language, norms, ritual and narrative can support **deep coordination**
+across many situations. They may also create false coherence: agreement and
+synchrony are not evidence that a map is true or good `[I/C]`.
+
+An extended phenotype can provide a thinner bridge. A controlled object,
+token, price, interface or ledger can make offer, refusal, exchange and exit
+legible between agents that share neither genes nor worldview. Trade is therefore
+a candidate **thin coordination** protocol and possible bootstrap for wider
+convention. It does not by itself establish consent, fairness, truth or a shared
+memotype. The observed macaque object-for-food exchanges are a bounded
+cross-species anchor, not human contracting or moral trade `[B-external/I]`.
+
+War is the adverse stress test. Persons bear actual `V₄` stakes and
+constraints—body, safety, resources, status, kin, coercion and sometimes
+reproductive opportunity. Coalitions often depend on represented `Φ₅` fields
+and their D4 coordination carriers: language, identity, ritual, legitimacy,
+command and present models of futures. Possible and actual power still appear
+at both scales: persons model possibilities, and groups require bodies and
+logistics. Material security, state capacity,
+geography, finance and coercion remain causal rivals. “Weltanschauungskrieg” is
+therefore a multilevel conjecture about competition among coordination patterns,
+not a universal explanation of war and never a licence for violence.
+
+### 8B. Ecology, replicators and human functions — do not collapse the axes
 
 Four coordinates can correspond without becoming one hierarchy:
 
@@ -257,11 +284,13 @@ a declared trophic model; every `η_domain` still owes bearers, payer,
 beneficiary, baseline, horizon, consent, reversibility, and regenerative
 capacity.
 
-`[I/C]` Power-Max selects a strategic corollary: seek cooperation with peers
-in the same trophic stratum or functional guild and among complementary
-Rosetta functions. This is not a mathematical theorem. Human functions are
-specialized but trainable, combinable, and changeable; differentiation grants
-no extraction right and no hereditary worth.
+`[I/C]` Justice-constrained teleology motivates a testable corollary: seek
+cooperation within and across functional guilds where complementarity,
+exchange and receipts preserve the affected bearers. This is not a mathematical
+theorem. The optional Varṇa
+names are voluntary functional postures, never assignments of persons. Human
+functions are specialized but trainable, combinable, mobile and changeable;
+differentiation grants no extraction right and no hereditary worth.
 
 Sexual selection is the bounded mating-domain exception. The Kundalini image
 is symbolic `[I]`; Tantra as redirection of sexual drive is a historical and
@@ -296,6 +325,20 @@ The fuller statement is
 [`The Human Condition`](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md).
 
 ## 10. The Good — chosen under an open sky
+
+The declared teleology is to widen **durable, bearer-complete potential** inside
+Justice, not to maximize raw options or power over others. It uses two clocks,
+with `0<T_S≤T_L`: `T_L`, the longest responsible horizon for which bearers,
+causal pathways, costs, uncertainty and revision points can still be named; and `T_S`, the shortest
+informative horizon that can return an honest discriminating receipt without
+hiding reasonably foreseeable delayed costs `[I/S]`.
+
+Orient by `T_L`; act and learn at `T_S`; revise the longer map after every material
+receipt. Specialized agents need compatible horizon contracts and interoperable
+handoffs, not one total worldview. Justice filters first; the remaining
+bearer-horizon vectors are compared without aggregate laundering; reversible
+and informative moves break unresolved ties. The real-world adequacy of this
+coordination rule remains `[C]`.
 
 No equation derives an ought. D5 can imagine cruelty as easily as care. The
 framework crosses the practical seam by openly choosing bearer-complete
@@ -413,6 +456,8 @@ For exact ownership and deeper checking:
 7. [`Revelations`](06_ONTOLOGY/06_THE_REVELATIONS.md)
 8. [`Record`](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)
 9. [`Grand Puzzle Assembly`](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md)
+10. [`The Goal`](01_TELEOLOGY/00_THE_GOAL.md)
+11. [`Memotype, trade and war research contract`](02_EPISTEMOLOGY/03_MEMETICS/06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md)
 
 The owners control. This book connects them and may never silently strengthen
 them.

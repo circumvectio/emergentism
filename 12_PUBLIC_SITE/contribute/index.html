@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contribute to the Living Map · Emergentism</title>
-  <meta name="description" content="Propose bounded compute sponsorship, run a research packet locally, contribute evidence, or report a contradiction. This static release accepts no payment or credentials.">
+  <title>Participate · Emergentism</title>
+  <meta name="description" content="Use Finity and share a receipt, attack a public claim, or contribute bounded evidence. GitHub carries the public submission; this static site accepts no payment, credentials, or private data.">
   <meta name="color-scheme" content="dark light">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101217'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23c99b32' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23c99b32'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="../assets/css/living-map.css">
+  <style>@media(max-width:720px){.site-nav a:nth-child(4){display:inline-flex}}</style>
   <link rel="manifest" href="../manifest.webmanifest">
   <script src="../assets/js/living-map.js" defer></script>
 </head>
@@ -16,40 +17,67 @@
   <header class="site-head">
     <a class="wordmark" href="../">Emergent<span>ism</span></a>
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="../map/">Map</a>
-      <a href="../discoveries/">Discoveries</a>
-      <a href="../lab/">Lab</a>
-      <a href="../practice/">Practice</a>
-      <a href="../record/">Record</a>
+      <a href="../practice/">Use Finity</a>
+      <a href="../plainly/">Ideas</a>
+      <a href="../record/">Research &amp; Record</a>
+      <a href="../about/">About</a>
+      <a href="../contribute/" aria-current="page">Participate</a>
       <a class="exit-link" href="../exit/">Exit</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero shell">
-      <p class="eyebrow">Bounded contribution · no epistemic purchase</p>
-      <h1>Strengthen the search.<br><strong>Not a preferred answer.</strong></h1>
-      <p class="dek">Choose one of <strong><span id="open-question-count">eleven</span> open questions</strong>. Propose bounded compute sponsorship, run a packet locally, strengthen a rival, or bring evidence. This static release records intent; it does not accept payment or launch model jobs.</p>
+      <p class="eyebrow">Participation [B] · useful disagreement welcome</p>
+      <h1>Use it. Test it.<br><strong>Make it answerable.</strong></h1>
+      <p class="dek">Start as a person, not a member: use Finity and share what happened, attack a public claim at its strongest point, or contribute bounded evidence. Each route opens a public GitHub form. This static site submits nothing itself.</p>
       <div class="actions">
-        <a class="button primary" href="#modes">Choose a contribution mode</a>
+        <a class="button primary" href="#modes">Choose a human contribution</a>
         <a class="button" href="../lab/">Inspect open questions</a>
       </div>
     </section>
 
     <div class="truth-strip" aria-label="Contribution boundaries">
-      <p><b>Sponsorship is proposed [I]</b>If enabled later, it cannot buy a verdict, suppress a null, or raise a tier.</p>
-      <p><b>Models propose</b>They cannot write canon, verify their own citations, or promote themselves.</p>
-      <p><b>Reviewers and world contact</b>Sources, tests, consequences and replication determine what survives.</p>
+      <p><b>No adherence required</b>Use one tool, report one consequence, or leave.</p>
+      <p><b>Disagreement is productive</b>A precise contradiction is more valuable than generic assent.</p>
+      <p><b>No epistemic purchase</b>Money, status, model count, and affiliation cannot raise a claim's tier.</p>
     </div>
 
     <section class="dark-section shell" id="modes" aria-labelledby="modes-title">
-      <p class="eyebrow">Three safe ways to help</p>
-      <h2 id="modes-title">Contribute capacity.<br><strong>Keep custody.</strong></h2>
-      <p class="lead" id="selected-question" aria-live="polite">This release records the contribution contract. It does not yet accept payments, credentials, private data, or live model jobs.</p>
+      <p class="eyebrow">Three human routes · public by default</p>
+      <h2 id="modes-title">Bring a receipt.<br><strong>Or bring a better objection.</strong></h2>
+      <p class="lead">These links open prefilled forms in the public repository. Do not include secrets, private data, medical information, or anything you cannot publish.</p>
+
+      <div class="principles">
+        <article class="principle">
+          <span class="mark">01 · USE</span>
+          <h3>Use Finity and share a receipt.</h3>
+          <p>Frame one real decision with the seven prompts. Report the boundary, next move, observed result, and what you revised. A null or failure is welcome.</p>
+          <div class="actions"><a class="button primary" href="https://github.com/circumvectio/emergentism/issues/new?template=finity-receipt.yml" target="_blank" rel="noopener noreferrer">Share a Finity receipt ↗</a></div>
+        </article>
+        <article class="principle">
+          <span class="mark">02 · ATTACK</span>
+          <h3>Attack a public claim.</h3>
+          <p>Quote the strongest version, identify the failure, offer the best rival, and name the evidence that would decide between them.</p>
+          <div class="actions"><a class="button" href="https://github.com/circumvectio/emergentism/issues/new?template=contradiction-report.yml" target="_blank" rel="noopener noreferrer">Report a contradiction ↗</a></div>
+        </article>
+        <article class="principle">
+          <span class="mark">03 · EVIDENCE</span>
+          <h3>Contribute bounded evidence.</h3>
+          <p>Bring one source, dataset, replication, native-domain correction, or discriminator. State its custody, limits, and what it cannot establish.</p>
+          <div class="actions"><a class="button" href="https://github.com/circumvectio/emergentism/issues/new?template=bounded-evidence.yml" target="_blank" rel="noopener noreferrer">Submit bounded evidence ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-section shell" id="research-contract" aria-labelledby="research-contract-title">
+      <p class="eyebrow">Optional technical route</p>
+      <h2 id="research-contract-title">Contribute research capacity.<br><strong>Keep custody.</strong></h2>
+      <p class="lead" id="selected-question" aria-live="polite">Choose one of <strong><span id="open-question-count">eleven</span> open questions</strong>. This release records a contribution contract; it does not accept payments, credentials, private data, or live model jobs.</p>
 
       <div class="warning" role="note">
         <h3>Never paste or send a personal API key.</h3>
-        <p>Credentials remain with their owner or in a restricted server-side project. The future compute broker will accept bounded credits and project grants—not reusable secrets in a browser form.</p>
+        <p>Credentials remain with their owner or in a restricted server-side project. Any future compute service would require bounded credits or project grants—not reusable secrets in a browser form. This release offers no such service.</p>
         <p class="provider-guidance">Provider guidance: <a href="https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety" target="_blank" rel="noopener noreferrer">OpenAI key safety ↗</a> · <a href="https://ai.google.dev/gemini-api/docs/api-key" target="_blank" rel="noopener noreferrer">Google Gemini key safety ↗</a></p>
       </div>
 
@@ -94,13 +122,13 @@ computeCost:
 independentReviewRoute:</pre>
       </div>
       <div class="actions">
-        <a class="button primary" href="https://github.com/circumvectio/emergentism/issues/new" target="_blank" rel="noopener noreferrer">Open a public proposal ↗</a>
+        <a class="button primary" href="https://github.com/circumvectio/emergentism/issues/new?template=bounded-evidence.yml" target="_blank" rel="noopener noreferrer">Open an evidence proposal ↗</a>
         <a class="button" href="../record/">Inspect prior receipts</a>
       </div>
     </section>
   </main>
 
   <noscript class="noscript">The contribution contract is readable without JavaScript; only question counts and copy controls require enhancement.</noscript>
-  <footer class="footer"><div class="shell footer-inner"><span>No payment, credential or live inference endpoint exists on this static release.</span><span><a href="../lab/">Laboratory</a> · <a href="../record/">Record</a> · <a href="../exit/">Exit</a></span></div></footer>
+  <footer class="footer"><div class="shell footer-inner"><span>No payment, credential or live inference endpoint exists on this static release.</span><span><a href="../practice/">Use Finity</a> · <a href="../record/">Research &amp; Record</a> · <a href="../about/">About</a> · <a href="../exit/">Exit</a></span></div></footer>
 </body>
 </html>

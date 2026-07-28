@@ -13,6 +13,22 @@ BOOK = ROOT / "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
 HUMAN = ROOT / "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md"
 COMPASS = ROOT / "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
 GOAL = ROOT / "01_TELEOLOGY/00_THE_GOAL.md"
+MEMOTYPE = (
+    ROOT
+    / "02_EPISTEMOLOGY"
+    / "03_MEMETICS"
+    / "06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md"
+)
+NICHE = ROOT / "07_THEOLOGY/02_TRUTH_ORDER_AND_NICHE_PARTITION.md"
+AXIOLOGY = ROOT / "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md"
+RECONCILIATION = ROOT / "07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md"
+WAR_LENS = (
+    ROOT
+    / "08_FRAMEWORK_SUPPORT"
+    / "00_META"
+    / "02_ANALYSIS_DOCUMENTS"
+    / "00_WELTANSCHAUUNGSKRIEG.md"
+)
 F5 = (
     ROOT
     / "05_COSMOLOGY/02_EMERGENTISM_CORE"
@@ -27,6 +43,11 @@ class LivedWeltanschauungTests(unittest.TestCase):
         cls.human = HUMAN.read_text(encoding="utf-8")
         cls.compass = COMPASS.read_text(encoding="utf-8")
         cls.goal = GOAL.read_text(encoding="utf-8")
+        cls.memotype = MEMOTYPE.read_text(encoding="utf-8")
+        cls.niche = NICHE.read_text(encoding="utf-8")
+        cls.axiology = AXIOLOGY.read_text(encoding="utf-8")
+        cls.reconciliation = RECONCILIATION.read_text(encoding="utf-8")
+        cls.war_lens = WAR_LENS.read_text(encoding="utf-8")
         cls.f5 = F5.read_text(encoding="utf-8")
         cls.book_flat = re.sub(r"\s+", " ", cls.book)
         cls.goal_flat = re.sub(r"\s+", " ", cls.goal)
@@ -130,6 +151,74 @@ class LivedWeltanschauungTests(unittest.TestCase):
             "exactly zero at coin-flip",
         ):
             self.assertNotIn(forbidden, self.goal)
+
+    def test_nested_horizons_define_an_ordered_but_non_total_objective(self) -> None:
+        for required in (
+            "maximize durable, bearer-complete",
+            "longest responsible horizon",
+            "shortest informative horizon",
+            "compatible horizon contracts",
+            "Without a potential measure",
+        ):
+            self.assertIn(required, self.goal_flat)
+        self.assertIn("remove dominated actions", self.goal_flat)
+        for required in (
+            "The two-clock check",
+            "joint / compatible horizon contract T_joint",
+            "do not manufacture one total score",
+        ):
+            self.assertIn(required, self.compass)
+        self.assertIn("Orient by `T_L`; act and learn at `T_S`", self.book)
+        self.assertIn("0<T_S≤T_L", self.goal)
+        self.assertIn("sustaining whole `H`", self.goal)
+        for required in (
+            "P_J={Justice-admissible actions not Pareto-dominated",
+            "a*∈Select_tau(P_J)",
+            "may be declared as a local tie-breaker only after this filter",
+            "do not manufacture\na maximum",
+        ):
+            self.assertIn(required, self.axiology)
+        self.assertIn("not a unique maximum derived", self.reconciliation)
+
+    def test_specialization_is_voluntary_mobile_and_killable(self) -> None:
+        for required in (
+            "voluntary and self-ascribed",
+            "combinable, trainable, and open to generalists",
+            "anti-cartel and bargaining-power checks",
+            "Ecological description supplies no social obligation",
+            "Kill criterion",
+        ):
+            self.assertIn(required, self.niche)
+        self.assertNotIn("opt-in where possible", self.niche)
+        self.assertIn("optional word *varṇa*", self.compass)
+
+    def test_trade_and_war_lens_preserves_causal_rivals_and_nonviolence(self) -> None:
+        for required in (
+            "extended phenotype.trade",
+            "shift in explanatory emphasis",
+            "not a type monopoly",
+            "`C^{coord}_{ij,4}`",
+            "`C^{coord}_{G,4}`",
+            "`Φ_{5,G}`",
+            "Material-security rival",
+            "all wars are cult wars",
+        ):
+            self.assertIn(required, self.memotype)
+        self.assertNotIn("`Φ_ij`", self.memotype)
+        self.assertNotIn("`Φ_G`", self.memotype)
+        parent_block = self.memotype.split("genealogy:", 1)[0]
+        self.assertNotIn("00_WELTANSCHAUUNGSKRIEG.md", parent_block)
+        for required in (
+            "Possible power and actual power appear at every scale",
+            "It is **not** a call to physical violence",
+            "Adoption is a consequence to study, never validation",
+            "Historical-body boundary",
+        ):
+            self.assertIn(required, self.war_lens)
+        registry = (ROOT / "00_META/00_SETTLED_CANON_REGISTRY.md").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("`KSC-26` | Nested-horizon teleology and coordination", registry)
 
     def test_f5_weak_and_strong_readings_are_separate(self) -> None:
         for required in (

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "status": "active-public-withholding-boundary",
+  "updated": "2026-07-28",
+  "authority": "This registry controls public delivery only. Git remains the byte-custody layer; source doctrine and evidence tiers remain upstream.",
+  "boundary": {
+    "artifactRoute": "historical-boundary/index.html",
+    "publicRoute": "/historical-boundary/",
+    "marker": "EMERGENTISM_HISTORICAL_BOUNDARY_V1",
+    "robots": "noindex, noarchive, nosnippet, nofollow",
+    "cacheControl": "no-store, max-age=0"
+  },
+  "artifacts": [
+    {
+      "artifact": "app.html",
+      "sha256": "7a239a30f5031542f8263b8db5d6e42def8e03e2fadccd01fa4bdcd58d478a27",
+      "bytes": 11187,
+      "publicRoutes": [
+        "/app",
+        "/app/",
+        "/app.html"
+      ],
+      "manifestDocument": null,
+      "reason": "Historical application-era interface; not a current Emergentism public surface."
+    },
+    {
+      "artifact": "complete-ontology/index.html",
+      "sha256": "8a18e0c39d43f49b4fdf602e24a27ec88822d6348c94fd4e7d2b9543663e2ced",
+      "bytes": 35658,
+      "publicRoutes": [
+        "/complete-ontology",
+        "/complete-ontology/",
+        "/complete-ontology/index.html"
+      ],
+      "manifestDocument": null,
+      "reason": "Historical total-ontology presentation; preserved as provenance, withheld from current public delivery."
+    },
+    {
+      "artifact": "five-plus-one/index.html",
+      "sha256": "31397490a4bf28a70110c904fd2dabf0b6347e5b498ed336001999190bdfcc05",
+      "bytes": 27049,
+      "publicRoutes": [
+        "/five-plus-one",
+        "/five-plus-one/",
+        "/five-plus-one/index.html"
+      ],
+      "manifestDocument": null,
+      "reason": "Historical governance-language projection; preserved as provenance, withheld from the pure Emergentism public surface."
+    },
+    {
+      "artifact": "burrisphere/index.html",
+      "sha256": "aa57aa71ed72aebcc24fdfd34f6d386a1f9e89ef318a7345569378017780cd57",
+      "bytes": 25665,
+      "publicRoutes": [
+        "/burrisphere",
+        "/burrisphere/",
+        "/burrisphere/index.html"
+      ],
+      "manifestDocument": null,
+      "reason": "Historical mixed-register synthesis; preserved as provenance, withheld pending a current source-purity review."
+    },
+    {
+      "artifact": "dasein/index.html",
+      "sha256": "485968aaa9e2d29344c35bc020056b3891626ab3381c412068cfa60fc7986946",
+      "bytes": 33575,
+      "publicRoutes": [
+        "/dasein",
+        "/dasein/",
+        "/dasein/index.html"
+      ],
+      "manifestDocument": null,
+      "reason": "Historical mixed-register ontology argument; preserved as provenance, withheld pending a current public-purity review."
+    },
+    {
+      "artifact": "canon/the-complete-ontology-of-reality/index.html",
+      "sha256": "972b3ef1cd7139af19c25b6de5e387ab9b49ac2b96d033c7e3fecf610ba9b779",
+      "bytes": 35699,
+      "publicRoutes": [
+        "/canon/the-complete-ontology-of-reality",
+        "/canon/the-complete-ontology-of-reality/",
+        "/canon/the-complete-ontology-of-reality/index.html"
+      ],
+      "manifestDocument": {
+        "section": "canon",
+        "href": "canon/the-complete-ontology-of-reality/"
+      },
+      "reason": "Frozen generated projection whose title and closure claims exceed the current evidence-open public boundary."
+    },
+    {
+      "artifact": "operators/mf-283-the-orthogonality-theorem-v2/index.html",
+      "sha256": "b143bb4b742e682f8a84f21c08298b91cdfc1e5f3bf8d184af981460d1811a0b",
+      "bytes": 39699,
+      "publicRoutes": [
+        "/operators/mf-283-the-orthogonality-theorem-v2",
+        "/operators/mf-283-the-orthogonality-theorem-v2/",
+        "/operators/mf-283-the-orthogonality-theorem-v2/index.html"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-283-the-orthogonality-theorem-v2/"
+      },
+      "reason": "Historical operator claim withheld pending a type-correct independent physics audit."
+    },
+    {
+      "artifact": "operators/mf-285-dreams-are-unanchored-d5/index.html",
+      "sha256": "922b4dad5bc0d83359bbcbf76b27a11bf1bd078718cb89c971279c0db5c5721e",
+      "bytes": 20289,
+      "publicRoutes": [
+        "/operators/mf-285-dreams-are-unanchored-d5",
+        "/operators/mf-285-dreams-are-unanchored-d5/",
+        "/operators/mf-285-dreams-are-unanchored-d5/index.html"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-285-dreams-are-unanchored-d5/"
+      },
+      "reason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance."
+    },
+    {
+      "artifact": "operators/mf-296-gravity-is-time/index.html",
+      "sha256": "c426021efa4addafdc07f113d3d998be64fe7d4327e72581874d3c41e5ce17d8",
+      "bytes": 22579,
+      "publicRoutes": [
+        "/operators/mf-296-gravity-is-time",
+        "/operators/mf-296-gravity-is-time/",
+        "/operators/mf-296-gravity-is-time/index.html"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-296-gravity-is-time/"
+      },
+      "reason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation."
+    },
+    {
+      "artifact": "operators/mf-298-dark-matter-is-mutual-information/index.html",
+      "sha256": "a625f4eaecd0535a347c241e3723a5d22957aa51b1840525fadfbc625d716173",
+      "bytes": 17791,
+      "publicRoutes": [
+        "/operators/mf-298-dark-matter-is-mutual-information",
+        "/operators/mf-298-dark-matter-is-mutual-information/",
+        "/operators/mf-298-dark-matter-is-mutual-information/index.html"
+      ],
+      "manifestDocument": {
+        "section": "operators",
+        "href": "operators/mf-298-dark-matter-is-mutual-information/"
+      },
+      "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
+    }
+  ]
+}

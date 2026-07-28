@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Finity makes limits navigable</title>
-  <desc id="desc">The Infinite, Finity, and Infinity arranged across a horizon for Emergentism.</desc>
+  <title id="title">The Finity Method — one accountable next move</title>
+  <desc id="desc">A seven-prompt decision method for turning an open-ended decision into one finite, observable, revisable next move.</desc>
   <defs>
     <radialGradient id="blueGlow" cx="82%" cy="4%" r="78%">
       <stop offset="0" stop-color="#79A8FF" stop-opacity=".20"/>
@@ -26,7 +26,7 @@
   <text x="600" y="570" fill="#F5F0E6" fill-opacity=".025" font-family="Arial, sans-serif" font-size="238" font-weight="800" letter-spacing="-15" text-anchor="middle">FINITY</text>
 
   <text x="74" y="72" fill="#F5F0E6" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="7">EMERGENTISM</text>
-  <text x="1126" y="72" fill="#F0C85A" font-family="monospace" font-size="15" letter-spacing="2" text-anchor="end">FINITE · ACCOUNTABLE · FORWARD</text>
+  <text x="1126" y="72" fill="#F0C85A" font-family="monospace" font-size="15" letter-spacing="2" text-anchor="end">THE FINITY METHOD</text>
 
   <line x1="78" y1="208" x2="1122" y2="208" stroke="url(#horizon)"/>
 
@@ -35,11 +35,11 @@
   <circle cx="600" cy="208" r="11" fill="#F0C85A"/>
   <circle cx="972" cy="208" r="38" fill="none" stroke="#79A8FF" stroke-width="4"/>
 
-  <text x="228" y="279" fill="#959CAB" font-family="monospace" font-size="13" letter-spacing="3" text-anchor="middle">THE INFINITE</text>
-  <text x="600" y="279" fill="#F0C85A" font-family="monospace" font-size="13" font-weight="700" letter-spacing="3" text-anchor="middle">FINITY</text>
-  <text x="972" y="279" fill="#79A8FF" font-family="monospace" font-size="13" letter-spacing="3" text-anchor="middle">INFINITY</text>
+  <text x="228" y="279" fill="#959CAB" font-family="monospace" font-size="12" letter-spacing="2" text-anchor="middle">WHAT IS TRUE NOW</text>
+  <text x="600" y="279" fill="#F0C85A" font-family="monospace" font-size="12" font-weight="700" letter-spacing="2" text-anchor="middle">FINITE BOUNDARY</text>
+  <text x="972" y="279" fill="#79A8FF" font-family="monospace" font-size="12" letter-spacing="2" text-anchor="middle">WHAT REMAINS OPEN</text>
 
-  <text x="74" y="386" fill="#F5F0E6" font-family="Georgia, serif" font-size="70" letter-spacing="-2">Finity makes</text>
-  <text x="74" y="458" fill="#F0C85A" font-family="Georgia, serif" font-size="70" font-style="italic" letter-spacing="-2">limits navigable.</text>
-  <text x="78" y="520" fill="#C0C1C5" font-family="Arial, sans-serif" font-size="21" font-weight="300">A practical worldview for turning endless possibility into accountable progress.</text>
+  <text x="74" y="386" fill="#F5F0E6" font-family="Georgia, serif" font-size="62" letter-spacing="-2">Turn an open-ended decision</text>
+  <text x="74" y="454" fill="#F0C85A" font-family="Georgia, serif" font-size="62" font-style="italic" letter-spacing="-2">into one accountable next move.</text>
+  <text x="78" y="520" fill="#C0C1C5" font-family="Arial, sans-serif" font-size="21" font-weight="300">Seven prompts · one boundary · one receipt · no belief required.</text>
 </svg>

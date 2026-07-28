@@ -8,8 +8,8 @@ rosetta:
   register: "[I] declared orientation; [S] typed practice; [C] external adequacy"
   canonical_phrase: "The Goal — orient finite agency toward durable mutual possibility"
 title: "The Goal"
-status: "ACTIVE — pure Emergentist teleology, repaired 2026-07-22"
-date: 2026-07-22
+status: "ACTIVE — pure Emergentist teleology, nested-horizon amendment 2026-07-28"
+date: 2026-07-28
 evidence_tier: "The goal is a chosen vow [I], not a theorem or law of nature"
 owner: 01_TELEOLOGY
 parents:
@@ -83,10 +83,64 @@ physically admissible options of all materially affected bearers. “Prefer” i
 deliberate. The framework cannot derive this orientation from geometry or
 compel an outsider to adopt it.
 
-The orientation is not simple maximization. More options are not automatically
-better when they depend on deception, ecological destruction, domination,
-addiction, unbearable cognitive load or the removal of another person's
-rights. Justice constrains the objective before optimization begins.
+The direction may be compressed as **maximize durable, bearer-complete
+potential**—but never as simple or unconstrained maximization. “Potential” here
+means physically admissible future capability and meaningful option space under
+a declared measure, not raw option count, fantasy, power over others, or a
+person's worth. More options are not automatically better when they depend on
+deception, ecological destruction, domination, addiction, unbearable cognitive
+load or the removal of another person's rights. Justice constrains the
+objective before optimization begins.
+
+The ordering rule must be declared rather than smuggled into the word
+“maximize”:
+
+1. Justice and physical admissibility screen the action field first;
+2. compare the remaining per-bearer, per-horizon potential vectors and remove
+   dominated actions;
+3. where several moves remain incomparable, declare a contestable tie-breaker
+   favoring reversibility, earlier discriminating information, and lower
+   irreversible exposure.
+
+Without a potential measure, bearer set, horizon set, uncertainty model, and
+tie-breaker, “maximize potential” is an orientation—not a well-defined
+optimization problem.
+
+## 4A. The two horizons — long direction, short correction
+
+Finite coordination needs two clocks `[I/S]`, with `0<T_S≤T_L`:
+
+- `T_L` is the **longest responsible horizon**: the furthest interval for which
+  affected bearers, causal pathways, material costs, uncertainty, and revision
+  points can still be named honestly;
+- `T_S` is the **shortest informative horizon**: the earliest interval in which
+  an outcome can discriminate the present action from serious rivals while
+  reasonably foreseeable delayed costs and residual uncertainty remain declared
+  against `T_L`.
+
+The rule is:
+
+> **Orient by `T_L`; commit and learn at `T_S`; revise `T_L` whenever receipts defeat
+> the model.**
+
+This is a receding-horizon discipline, not a licence to discount the future.
+`T_L` is not literally infinite: an infinite horizon can hide unknown bearers and
+make every distant promise immune to receipt. Nor is `T_S` “as fast as possible”:
+a quick metric is false feedback when the consequence matures later. The
+shortest loop must remain answerable to the longest materially relevant loop.
+
+No single scalar silently trades a person's destruction now for aggregate
+possibility later. At every declared horizon, the Justice envelope keeps each
+materially affected bearer visible. Among still-admissible actions, prefer the
+move that preserves long-horizon viability while producing the earliest honest
+information and the least irreversible commitment.
+
+This two-clock rule is the proposed coordination bridge. Specialized agents do
+not need one total worldview or an identical `T_L`; they need **compatible horizon contracts**,
+shared boundary conditions, and interoperable receipts. Their local
+`T_S` loops let them act, learn, and hand off without requiring one mind to model
+the whole. Its practical adequacy remains `[C]` until it outperforms simpler
+planning and coordination rules in receipted use.
 
 ## 5. Foresight and means
 
@@ -189,6 +243,10 @@ The Goal must change if:
 - option widening systematically increases domination or harm;
 - the Justice envelope hides material bearers;
 - Soul Loop practice produces bureaucracy without better decisions;
+- the shortest declared loop rewards proxy gains that damage the longest
+  responsible horizon;
+- long-horizon language repeatedly protects unfalsifiable promises from short
+  receipts;
 - exits become decorative;
 - failures disappear from the Record; or
 - the vocabulary becomes necessary for receiving ordinary human dignity.

@@ -463,6 +463,19 @@ WINGS = {
 
 GENERATED_DIRS = [SITE_ROOT / "read", SITE_ROOT / "papers", SITE_ROOT / "canon", SITE_ROOT / "foundations", SITE_ROOT / "trinity", SITE_ROOT / "formal", SITE_ROOT / "paradox", SITE_ROOT / "memetic", SITE_ROOT / "rosettad", SITE_ROOT / "operators", SITE_ROOT / "will", SITE_ROOT / "value", SITE_ROOT / "ground", SITE_ROOT / "sacred", SITE_ROOT / "method", SITE_ROOT / "meta"]
 EXCLUDED_PUBLIC_SOURCE_NAMES = {"README.md", "AGENTS.md", "CLAUDE.md"}
+WITHHELD_REGISTRY = SITE_ROOT / "withheld-routes.json"
+
+
+def load_withheld_registry() -> dict:
+    return json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
+
+
+WITHHELD = load_withheld_registry()
+WITHHELD_ARTIFACTS = {item["artifact"] for item in WITHHELD["artifacts"]}
+
+
+def is_withheld_output(output_file: Path) -> bool:
+    return output_file.relative_to(SITE_ROOT).as_posix() in WITHHELD_ARTIFACTS
 
 
 def is_public_document(source: Path) -> bool:
@@ -554,7 +567,11 @@ def rewrite_markdown_links(text: str, source: Path, output_file: Path) -> str:
         if raw_target.is_dir():
             raw_target = (raw_target / "README.md").resolve()
         if raw_target in SOURCE_TO_OUTPUT:
-            return f"{prefix}{rel_href(output_file, SOURCE_TO_OUTPUT[raw_target], anchor)}{suffix}"
+            target_dir = SOURCE_TO_OUTPUT[raw_target]
+            if is_withheld_output(target_dir / "index.html"):
+                boundary_dir = SITE_ROOT / WITHHELD["boundary"]["artifactRoute"]
+                return f"{prefix}{rel_href(output_file, boundary_dir.parent)}{suffix}"
+            return f"{prefix}{rel_href(output_file, target_dir, anchor)}{suffix}"
         if raw_target.exists():
             return f"{prefix}{unpublished_source_href(output_file, anchor)}{suffix}"
         fallback = rel_href(output_file, SITE_ROOT / "sources")
@@ -736,8 +753,23 @@ def write_page(output_dir: Path, source: Path, active: str, title_fallback: str,
 
 def clean_generated_dirs() -> None:
     for path in GENERATED_DIRS:
-        if path.exists():
+        if not path.exists():
+            continue
+        protected = [
+            SITE_ROOT / artifact
+            for artifact in WITHHELD_ARTIFACTS
+            if (SITE_ROOT / artifact).is_relative_to(path)
+        ]
+        if not protected:
             shutil.rmtree(path)
+            continue
+        for child in path.iterdir():
+            if any(target == child or target.is_relative_to(child) for target in protected):
+                continue
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
 
 
 def generate_library() -> None:
@@ -763,8 +795,11 @@ def generate_library() -> None:
         for source in sorted(src_dir.glob("*.md")):
             if not is_public_document(source):
                 continue
+            output_dir = SITE_ROOT / route / slug_for(source)
+            if is_withheld_output(output_dir / "index.html"):
+                continue
             write_page(
-                SITE_ROOT / route / slug_for(source),
+                output_dir,
                 source,
                 config["active"],
                 source.stem.replace("_", " ").title(),
@@ -782,6 +817,8 @@ def generate_manifest() -> None:
                 continue
             source_text = strip_frontmatter(source.read_text(encoding="utf-8"))
             route_dir = SOURCE_TO_OUTPUT[source.resolve()]
+            if is_withheld_output(route_dir / "index.html"):
+                continue
             documents.append(
                 {
                     "section": section,
@@ -838,6 +875,10 @@ def generate_support_files() -> None:
         rel = path.relative_to(SITE_ROOT)
         rel_parts = set(rel.parts)
         if {".vercel", "__pycache__", "node_modules", "partials", "vendor"} & rel_parts:
+            continue
+        if rel.as_posix() in WITHHELD_ARTIFACTS:
+            continue
+        if rel.as_posix() == WITHHELD["boundary"]["artifactRoute"]:
             continue
         html_files.append(rel)
     html_files = sorted(html_files)

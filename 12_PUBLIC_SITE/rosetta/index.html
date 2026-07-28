@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The D5 Rosetta Stone — Emergentism</title>
-<meta name="description" content="Possible power meets actual power: four moves and three Titan frames form Emergentism's D5 Rosetta Stone." />
+<title>The Rosetta — Seven Functions for Reading Change · Emergentism</title>
+<meta name="description" content="A functional grammar for constraining, removing, enabling, committing, creating, dissolving, and preserving—plus an optional symbolic research layer." />
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="The D5 Rosetta Stone — Emergentism" />
-<meta property="og:description" content="Φ is D5 possible power. V is D4 actual power. Four moves and three Titan frames map their transformations." />
+<meta property="og:title" content="The Rosetta — Seven Functions for Reading Change" />
+<meta property="og:description" content="Lead with the functions: constrain, remove, enable, commit, create, dissolve, preserve." />
 <meta property="og:url" content="https://www.emergentism.org/rosetta/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The D5 Rosetta Stone — Emergentism" />
-<meta name="twitter:description" content="Possible power, actual power, and the seven transformations between them." />
+<meta name="twitter:title" content="The Rosetta — Seven Functions for Reading Change" />
+<meta name="twitter:description" content="A functional grammar first; symbolic comparisons remain optional and evidence-tiered." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%23FFEB3B' stroke-width='1' opacity='.5'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
 <style>
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -52,6 +52,7 @@ a{color:inherit}
 .nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
 .nav a:hover{color:var(--void);background:var(--gold)}
 .nav a.here{color:var(--gold);border:1px solid var(--line)}
+.nav a.exit-link{color:var(--bone-faint);border:1px solid var(--line-soft)}
 
 header.hero{padding:clamp(3rem,8vw,5.6rem) 0 1rem}
 .fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
@@ -68,6 +69,15 @@ h1 .heavy{font-weight:900;letter-spacing:-.04em;color:var(--gold)}
 .stone-equation{font-family:var(--mono);font-size:clamp(.82rem,1.8vw,1.08rem);line-height:1.9;color:var(--gold);padding:1rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:1.2rem 0}
 .stone-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:1.2rem 0}
 .stone-grid article{background:var(--void-2);padding:1.1rem}.stone-grid h3{font-size:.78rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:0 0 .55rem}.stone-grid p{font-size:.92rem;color:var(--bone-dim);margin:0}
+.symbolic-layer{margin-top:1.2rem;border:1px solid var(--line);border-radius:10px;background:rgba(5,5,5,.34)}
+.symbolic-layer summary{cursor:pointer;padding:1rem 1.1rem;font-family:var(--mono);font-size:.76rem;color:var(--bone-dim);letter-spacing:.04em}
+.symbolic-layer[open] summary{color:var(--gold);border-bottom:1px solid var(--line-soft)}
+.symbolic-body{padding:1.1rem}.symbolic-body .stone-grid{margin:.2rem 0 1rem}
+.symbolic-fence{border-left:3px solid var(--crimson);padding:.8rem 1rem;margin:0;color:var(--bone-dim);font-size:.9rem}
+.comparative-appendix{border:1px solid var(--line);border-radius:12px;background:var(--void-2);overflow:hidden}
+.comparative-appendix>summary{cursor:pointer;padding:1.1rem 1.3rem;font-family:var(--mono);font-size:.78rem;color:var(--bone-dim);letter-spacing:.04em}
+.comparative-appendix[open]>summary{color:var(--gold);border-bottom:1px solid var(--line)}
+.comparative-body{padding:1.2rem}
 .worked-move{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:clamp(1.4rem,4vw,2.4rem)}
 .move-sequence{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:1.4rem 0}
 .move-sequence article{background:var(--void-2);padding:1rem}.move-sequence span{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}.move-sequence p{font-size:.9rem;color:var(--bone-dim);margin:0}
@@ -155,21 +165,23 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
 
 <header class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Public doctrine routes">
-    <a href="../0/">0</a><a href="../1/">1</a><a href="../2/">2</a><a href="../3/">3</a>
-    <a href="../4/">4</a><a href="../5/">5</a><a href="../6/">6</a>
-    <a href="../rosetta/" class="here" aria-current="page">R</a>
-    <a href="../soul-loop/">S</a><a href="../atlas/">A</a><a href="../read/">Read</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="../practice/">Use Finity</a>
+    <a class="here" href="../plainly/" aria-current="location">Ideas</a>
+    <a href="../record/">Research &amp; Record</a>
+    <a href="../about/">About</a>
+    <a href="../contribute/">Participate</a>
+    <a class="exit-link" href="../exit/">Exit</a>
   </nav>
 </header>
 
 <main class="wrap">
   <header class="hero">
-    <p class="fileno reveal in">D5 · the transformation grammar</p>
+    <p class="fileno reveal in">The Rosetta · a functional transformation grammar</p>
     <div class="herogrid">
       <div>
-        <h1 class="reveal in">Possible power.<br>Actual power.<br>The <span class="heavy">Rosetta</span>.</h1>
-        <p class="dek reveal in"><b>Φ is D5 possible power:</b> the structured field of futures that could be represented and pursued. <b>V is D4 actual power:</b> the embodied capability available now. The D5 Rosetta Stone names how these powers can be taken, given, created, dissolved, or preserved.</p>
+        <h1 class="reveal in">Seven functions.<br>One accountable<br><span class="heavy">grammar</span>.</h1>
+        <p class="dek reveal in"><b>Start with what a move does:</b> constrain, remove, enable, commit, create, dissolve, or preserve. In the internal model, Φ names D5 possible power and V names D4 actual power. The grammar helps classify a move; authorization, costs, and observed consequences still decide how it should be judged.</p>
         <p class="tierline reveal in"><span class="t t-s">[S]</span> selected internal grammar · <span class="t t-i">[I]</span> symbolic names · <span class="t t-c">[C]</span> universal fit</p>
         <div class="bridge reveal in" aria-label="Dimension spine bridge">
           <a href="../6/index.html">← from /6 convergence</a>
@@ -204,9 +216,9 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
 
   <section>
     <div class="stone-kernel reveal in">
-      <p class="kicker">The D5 Stone</p>
-      <h2><b>Four moves.</b> Three frames.</h2>
-      <p class="dek">D5 possibility has no ghostly hand. A present model must evaluate it, and actual power must carry any commitment into the world.</p>
+      <p class="kicker">The functional stone</p>
+      <h2><b>Read the function</b> before the symbol.</h2>
+      <p class="dek">Possible futures do not act by themselves. A present model must evaluate them, actual capability must carry any commitment, and the consequence must remain available to correct the classification.</p>
       <div class="stone-equation" aria-label="Typed D4 D5 power formula">
         V₄ = D4 actual power<br>
         Φ₅ = D5 possible power<br>
@@ -214,11 +226,28 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
         P_node = Φ̂₄V₄ &nbsp;·&nbsp; public shorthand: ΦV
       </div>
       <div class="stone-grid">
-        <article><h3>Demons · taking</h3><p><b>Kali 🎲</b> and <b>Kālī 💀</b> name the two taking forms. Kālī remains two-faced: demon-polar on the taking axis, God in truth-cutting function.</p></article>
-        <article><h3>Gods · giving</h3><p><b>Kṛṣṇa ◇</b> and <b>Arjuna ⚔</b> name the two giving forms: spend modeled possibility or actual capability to widen another's power.</p></article>
-        <article><h3>Titans · framing</h3><p><b>Brahmā ○</b>, <b>Śiva •</b>, and <b>Viṣṇu ⊙</b> project creation, dissolution, and preservation. They frame the game; they do not play it.</p></article>
+        <article><h3>L1 · constrain</h3><p>Mark the pressure, exclusion, or boundary that prevents false coherence from passing unnoticed.</p></article>
+        <article><h3>L2 · remove</h3><p>Cut a contradiction, overclaim, or failed component while leaving its evidence and provenance inspectable.</p></article>
+        <article><h3>L3 · enable</h3><p>Increase another actor's usable information, options, or capacity without pretending that possibility has already become action.</p></article>
+        <article><h3>L4 · commit</h3><p>Spend actual capability on one bounded, authorized move whose cost and result can be recorded.</p></article>
+        <article><h3>L5 · create</h3><p>Design a new structure or possibility space and expose its assumptions and boundary conditions.</p></article>
+        <article><h3>L6 · dissolve</h3><p>Retire a structure that no longer carries value, preserving what survives and how the decision was reached.</p></article>
+        <article><h3>L7 · preserve</h3><p>Carry a tested pattern, record, or witness forward without turning compression into new authority.</p></article>
       </div>
-      <p class="tbl-note"><b>G7 = M4 ⊎ F3.</b> The seven close this declared language, not nature. Names do not judge acts: authorization, affected bearers, cost, and outcome receipts do. Lowercase φ and ν remain chart coordinates; the Titans remain non-agent boundary roles.</p>
+      <p class="tbl-note"><b>Primary axis on this page:</b> constrain, remove, enable, commit, create, dissolve, preserve. These seven close a declared transformation language, not nature. Runtime dispatch roles such as Firewall, Auditor, Architect, and Witness are a separate application axis that reuses L1–L7; they are not synonyms for the transformation functions. Neither axis classifies human worth.</p>
+
+      <details class="symbolic-layer">
+        <summary>Optional symbolic layer — demons, gods, and titans [I/C]</summary>
+        <div class="symbolic-body">
+          <p class="symbolic-fence"><b>Research fence:</b> these names are mnemonic and comparative, not ranks of people or cultures, not a universal genealogy, and not evidence transferred from a tradition into the functional grammar. Independent review by relevant tradition-holders and subject-matter scholars remains owed. No label authorizes an act.</p>
+          <div class="stone-grid">
+            <article><h3>Demons · taking</h3><p><b>Kali 🎲</b> and <b>Kālī 💀</b> name two adversarial or subtractive faces in this internal symbolism. Kālī remains explicitly two-faced: demon-polar on the taking axis, truth-cutting in function.</p></article>
+            <article><h3>Gods · giving</h3><p><b>Kṛṣṇa ◇</b> and <b>Arjuna ⚔</b> name two enabling or committing faces: widen modeled possibility, or spend actual capability on a bounded move.</p></article>
+            <article><h3>Titans · framing</h3><p><b>Brahmā ○</b>, <b>Śiva •</b>, and <b>Viṣṇu ⊙</b> name creation, dissolution, and preservation as boundary frames rather than sovereign agents.</p></article>
+          </div>
+          <p class="tbl-note"><b>Symbolic shorthand:</b> G7 = M4 ⊎ F3. Lowercase φ and ν remain chart coordinates; the three framing roles remain non-agent roles in this declared model.</p>
+        </div>
+      </details>
     </div>
   </section>
 
@@ -233,7 +262,7 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
         <article><span>Finity</span><p>Reduce first-session abandonment by a declared amount in one bounded trial.</p></article>
         <article><span>Receipt</span><p>The observed result widens, revises, or kills the modeled possibility.</p></article>
       </div>
-      <p class="tbl-note"><b>Rosetta reading:</b> the intended move may be giving, taking, creating, dissolving, or preserving; authorization and the received consequence determine what actually happened.</p>
+      <p class="tbl-note"><b>Primary functional reading:</b> constrain, remove, enable, commit, create, dissolve, or preserve. An optional symbolic M4/F3 lens groups the first four as giving/taking transfers and the last three as boundary frames; authorization and received consequence still determine what actually happened.</p>
       <a class="stone-link" href="#translate">Try the translation instrument ↓</a>
     </div>
   </section>
@@ -263,7 +292,7 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
         <p class="pk">Kill criteria · fired 2026-07-13</p>
         <h3>The Rosetta must be allowed to weaken — and it has.</h3>
         <p>If the seven-row alignment is shown to be forced, or if new strong domains break the alignment rather than refine it, the Rosetta weakens or falls. A public canon has to preserve that failure mode.</p>
-        <p style="border-left:2px solid var(--gold-deep);padding-left:.9rem;color:var(--bone-dim)"><b style="color:var(--bone)">What the algebra <em>does</em> rescue (adjudication 2026-07-13).</b> The objection that the seven are algebraically forced was tested and <b style="color:var(--bone)">half-upheld</b>. The mirror-ladder <em>grammar</em> is a genuine algebraic object — the inversion <code>z↦1/z</code> forces a fixed centre and mirror pairs; the sign square forces four moves — and owes nothing to any tradition; "curated relatives" undersells it. But the algebra forces an <em>odd ladder</em> (3/5/7/9…) and <b>four</b> moves, <b>not seven</b>: "seven" is a <code>4 + 3</code> stitch of movers to boundary-frames, and by the corpus's own order-of-inference the operators were abduced <em>from</em> the rows — so they cannot be independent evidence <em>for</em> them. <b style="color:var(--bone)">The shape is real; the census of seven and the convergence-as-proof are not.</b></p>
+        <p style="border-left:2px solid var(--gold-deep);padding-left:.9rem;color:var(--bone-dim)"><b style="color:var(--bone)">What the algebra <em>does</em> rescue (adjudication 2026-07-13).</b> The objection that the seven are algebraically forced was tested and <b style="color:var(--bone)">half-upheld</b>. The mirror-ladder <em>grammar</em> is a genuine algebraic object inside the declared construction — the inversion <code>z↦1/z</code> forces a fixed centre and mirror pairs; the sign square forces four moves — and owes nothing to any tradition; "curated relatives" undersells it. But the algebra forces an <em>odd ladder</em> (3/5/7/9…) and <b>four</b> moves, <b>not seven</b>: "seven" is a <code>4 + 3</code> stitch of movers to boundary-frames, and by the corpus's own order-of-inference the operators were abduced <em>from</em> the rows — so they cannot be independent evidence <em>for</em> them. <b style="color:var(--bone)">The formal mirror shape exists within the declared algebra; the census of seven and convergence-as-proof do not follow.</b></p>
       </article>
       <article class="panel">
         <p class="pk">Named confound · new 2026-07-13</p>
@@ -318,29 +347,29 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
     </style>
     <p class="kicker reveal">The instrument, demonstrated</p>
     <h2 class="reveal">Pick the column <b>you already read.</b></h2>
-    <p class="dek reveal" style="max-width:64ch">A translation stone works because one script is already yours. Choose your native register; the seven latitudes render in it. Then choose another — same rows, different script. That crossing <em>is</em> the Rosetta doing its actual job.</p>
+    <p class="dek reveal" style="max-width:64ch">This instrument tests proposed analogies across seven numbered positions. The first tab restates the transformation functions in ordinary work language. The other tabs are interpretive comparisons, not identities, derivations, or transferred evidence.</p>
     <div class="xbtns reveal" role="group" aria-label="Choose your register">
       <button class="xbtn" data-x="work" aria-pressed="true">Work &amp; coordination</button>
-      <button class="xbtn" data-x="physics" aria-pressed="false">Physics</button>
+      <button class="xbtn" data-x="physics" aria-pressed="false">Physics analogy [I]</button>
       <button class="xbtn" data-x="math" aria-pressed="false">Mathematics</button>
       <button class="xbtn" data-x="psyche" aria-pressed="false">Psychology</button>
       <button class="xbtn" data-x="ethics" aria-pressed="false">Ethics</button>
       <button class="xbtn" data-x="practice" aria-pressed="false">Practice</button>
     </div>
     <div class="xrows reveal" id="xrows" aria-live="polite">
-      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L1</span><span class="xtext">names the raw pressure — what hurts, what is broken, what stays unresolved</span></div>
-      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L2</span><span class="xtext">checks the evidence before any claim is allowed to get stronger</span></div>
-      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L3</span><span class="xtext">audits the ledgers — verifies the claims, the receipts, the exchange</span></div>
+      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L1</span><span class="xtext">constrains — marks the pressure or boundary that must not be hidden</span></div>
+      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L2</span><span class="xtext">removes — cuts a contradiction or failed component while preserving its record</span></div>
+      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L3</span><span class="xtext">enables — widens another actor's usable information, options, or capability</span></div>
       <div class="xrow eq" style="--pair:#FFEB3B"><span class="xl">L4</span><span class="xtext">commits a bounded action within its declared authority</span></div>
-      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L5</span><span class="xtext">designs the system and makes its boundary conditions visible</span></div>
-      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L6</span><span class="xtext">cuts the overclaims — keeps repair from becoming new doctrine</span></div>
-      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L7</span><span class="xtext">preserves the compressed witness — translates settled truth outward</span></div>
+      <div class="xrow" style="--pair:#6fc79a"><span class="xl">L5</span><span class="xtext">creates — designs a new structure and makes its boundary conditions visible</span></div>
+      <div class="xrow" style="--pair:#5aa9e6"><span class="xl">L6</span><span class="xtext">dissolves — retires a structure that no longer carries value</span></div>
+      <div class="xrow" style="--pair:#b59ce0"><span class="xl">L7</span><span class="xtext">preserves — carries a tested pattern forward without making new authority</span></div>
     </div>
-    <p class="xnote reveal">register translations are <span class="t t-i">[I]</span> — the lens working, offered as lens · mirror pairs share a colour · L4 is the equator</p>
+    <p class="xnote reveal">cross-register rows are proposed analogies <span class="t t-i">[I]</span>, not identities · mirror pairs share a colour · L4 is the equator</p>
     <script>
     (function(){
       var X = {
-        work: ["surfaces the raw pressure — what hurts, what is broken, what stays unresolved","tests the evidence before any claim is allowed to get stronger","audits the exchange — verifies claims, costs, and receipts","commits a bounded action within its declared authority","designs the system and makes its boundary conditions visible","removes error without erasing the record","preserves the learning and translates it outward"],
+        work: ["constrains — marks the pressure or boundary that must not be hidden","removes — cuts a contradiction or failed component while preserving its record","enables — widens another actor's usable information, options, or capability","commits a bounded action within its declared authority","creates a new structure and makes its boundary conditions visible","dissolves a structure that no longer carries value","preserves a tested pattern without making new authority"],
         physics: ["near the pole — balance gone, the clock barely ticks","high latitude — motion without structure, little lived time","mid-latitude — the long approach toward balance","the equator — the rest frame: B = 1, the clock ticks fastest","mid-latitude, far side — structure beginning to outweigh motion","high latitude — nearly all form, almost no act","near the pole — the limit where seeing is all that remains"],
         math: ["φ → 0 — coherence vanishing: the survival boundary","φ ≪ 1 — action far outrunning sight","φ < 1 — the approach to unity from below","φ = ν = 1 — the fixed point of inversion; sin θ maximal","φ > 1 — structure exceeding act","φ ≫ 1 — form nearly frozen","φ → ∞ — the seeing limit"],
         psyche: ["survival — the boundary where fear lives","discipline — craft learned by repetition until it holds","exchange — negotiation, reciprocity, earned trust","agency at the edge — flow: the whole self present in the act","vision — seeing the design behind the acts","renunciation — discernment, and the courage to cut","witness — seeing clearly, without insisting"],
@@ -361,9 +390,14 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
 
   <!-- the table -->
   <section>
-    <p class="kicker reveal">The full stone</p>
-    <h2 class="reveal">The Master Rosetta — <b>the table itself</b></h2>
-    <div class="tblwrap reveal">
+    <p class="kicker reveal">Optional comparative research</p>
+    <h2 class="reveal">The functional grammar <b>does not need borrowed authority.</b></h2>
+    <p class="dek reveal" style="max-width:70ch">The table below preserves the project's cross-tradition search surface. It is folded because resemblance is a prompt for scholarship, not proof of common origin, universal rank, or metaphysical truth.</p>
+    <details class="comparative-appendix reveal">
+      <summary>Open the full comparative Rosetta [I/C]</summary>
+      <div class="comparative-body">
+        <p class="symbolic-fence"><b>Review boundary:</b> rows are provisional correspondences selected by this project. They do not collapse living traditions into one system, rank their practitioners, or transfer a tradition's authority to Emergentism. Independent review by relevant scholars and tradition-holders is still required; disagreement must remain visible.</p>
+        <div class="tblwrap">
       <table>
         <thead>
           <tr>
@@ -465,20 +499,22 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
           </tr>
         </tbody>
       </table>
-    </div>
-    <div class="legendrow reveal" aria-label="Mirror-pair legend">
+        </div>
+        <div class="legendrow" aria-label="Mirror-pair legend">
       <span class="sw"><span class="dot" style="background:var(--m1)"></span>L1 ↔ L7</span>
       <span class="sw"><span class="dot" style="background:var(--m2)"></span>L2 ↔ L6</span>
       <span class="sw"><span class="dot" style="background:var(--m3)"></span>L3 ↔ L5</span>
       <span class="sw"><span class="dot" style="background:var(--gold)"></span>L4 — the equator, fixed by the mirror</span>
-    </div>
-    <p class="tbl-note reveal">* Note: The functional roles (Firewall through Witness) are the primary vocabulary; the source tradition renders them as varṇa—defined by <b>operational capability and ecological niche partitioning</b>, never birth status, race, or inherited privilege. L4 is the action-boundary analogy in this table, not a sovereign person or automatic authority.</p>
+        </div>
+        <p class="tbl-note">* Firewall through Witness are runtime dispatch applications, a separate axis from the transformation functions led above. This project's varṇa analogy is an optional operational-role map, never birth status, race, inherited privilege, sovereign identity, or automatic authority. Reusing L1–L7 does not make the axes identical, and that distinction does not substitute for external cultural review.</p>
+      </div>
+    </details>
   </section>
 </main>
 
 <footer class="foot wrap">
   <div class="glyph">P_node = Φ̂₄V₄</div>
-  <p>Emergentism · The D5 Rosetta Stone<br>Possible power meets actual power: four moves, three frames.</p>
+  <p>Emergentism · The Rosetta<br>Read the function first: constrain, remove, enable, commit, create, dissolve, preserve.</p>
 </footer>
 
 <script>
@@ -496,7 +532,7 @@ tr.equator td.level .lat{color:rgba(255,235,59,.5)}
 <script defer src="/assets/js/atlas-drawer.js"></script>
 
 <footer class="k4-footer" style="margin-top:3rem;padding:1.1rem 1.2rem;border-top:1px solid rgba(233,230,223,.14);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.74rem;line-height:1.7;color:#8a8577;text-align:center">
-  <a href="../record/" style="color:#e8b84b;text-decoration:none">The record</a> — every claim that died, with its date.
+  <a href="../record/" style="color:#e8b84b;text-decoration:none">The record</a> — currently logged deaths and corrections, dated.
   &nbsp;·&nbsp;
   <a href="../exit/" style="color:#8a8577;text-decoration:none">The exit</a> — if you can see directly, put this down.
 </footer>

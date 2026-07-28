@@ -1,6 +1,6 @@
 {
  "generated": "build_atlas_index.py",
- "total": 270,
+ "total": 265,
  "tree": [
   {
    "key": "unfolding",
@@ -8,31 +8,31 @@
    "pages": [
     {
      "href": "/0/",
-     "title": "Titans of Numbers"
+     "title": "Boundary frames"
     },
     {
      "href": "/1/",
-     "title": "The Special One"
+     "title": "Distinction and arithmetic"
     },
     {
      "href": "/2/",
-     "title": "The Mu-Limit"
+     "title": "Configuration"
     },
     {
      "href": "/3/",
-     "title": "Sphere of Infinite Diameter"
+     "title": "Quantum state"
     },
     {
      "href": "/4/",
-     "title": "The Horn Torus"
+     "title": "Causal actuality"
     },
     {
      "href": "/5/",
-     "title": "The Burrisphere"
+     "title": "Possible power and the Rosetta Stone"
     },
     {
      "href": "/6/",
-     "title": "Endstate is the Same as the Start"
+     "title": "Exit and nonclosure"
     }
    ]
   },
@@ -58,7 +58,7 @@
     },
     {
      "href": "/rosetta/",
-     "title": "The Master Rosetta Stone"
+     "title": "The Rosetta — Seven Functions for Reading Change"
     }
    ]
   },
@@ -192,7 +192,7 @@
   },
   {
    "key": "canon",
-   "label": "Canon (9)",
+   "label": "Canon (8)",
    "pages": [
     {
      "href": "/canon/",
@@ -201,10 +201,6 @@
     {
      "href": "/canon/the-burrisphere/",
      "title": "The Burrisphere"
-    },
-    {
-     "href": "/canon/the-complete-ontology-of-reality/",
-     "title": "The Complete Ontology of Reality"
     },
     {
      "href": "/canon/the-five-plus-one-constitution/",
@@ -334,7 +330,7 @@
     },
     {
      "href": "/formal/28-efr-hygiene-boundary-theorem/",
-     "title": "The Hygiene Boundary Theorem"
+     "title": "The Hygiene Boundary Hypothesis"
     },
     {
      "href": "/formal/29-primitives-and-type-signatures/",
@@ -702,7 +698,7 @@
   },
   {
    "key": "operators",
-   "label": "Operators (30)",
+   "label": "Operators (26)",
    "pages": [
     {
      "href": "/operators/",
@@ -717,16 +713,8 @@
      "title": "MF-282: THE OPERATOR-STACK CORRESPONDENCE"
     },
     {
-     "href": "/operators/mf-283-the-orthogonality-theorem-v2/",
-     "title": "MF-283: THE ORTHOGONALITY THEOREM"
-    },
-    {
      "href": "/operators/mf-284-the-gods-are-f5/",
      "title": "MF-284: THE GODS ARE F₅"
-    },
-    {
-     "href": "/operators/mf-285-dreams-are-unanchored-d5/",
-     "title": "MF-285: DREAMS ARE UNANCHORED D5"
     },
     {
      "href": "/operators/mf-286-the-mu-limit-crossing/",
@@ -769,16 +757,8 @@
      "title": "MF-295: c BOUNDS THE MORAL CIRCLE"
     },
     {
-     "href": "/operators/mf-296-gravity-is-time/",
-     "title": "MF-296: GRAVITY IS TIME"
-    },
-    {
      "href": "/operators/mf-297-alpha-is-the-coupling/",
      "title": "MF-297: α AS COUPLING"
-    },
-    {
-     "href": "/operators/mf-298-dark-matter-is-mutual-information/",
-     "title": "MF-298: DARK MATTER AS MUTUAL INFORMATION"
     },
     {
      "href": "/operators/mf-299-hawking-radiation-is-a7/",
@@ -818,7 +798,7 @@
     },
     {
      "href": "/operators/mf-69-horned-torus-relativity/",
-     "title": "MF-69: The Horned Torus IS the Light Cone"
+     "title": "MF-69: The Horned Torus as a Model of the Light Cone [I] analogy"
     },
     {
      "href": "/operators/mf-70-kali-closes-sphere/",

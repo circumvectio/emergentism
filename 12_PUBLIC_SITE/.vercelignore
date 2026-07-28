@@ -6,6 +6,21 @@
 # Frozen app source pending AIA migration; not a public production surface.
 book-pwa/
 
+# K3 public-withholding registry: preserve these exact historical artifact
+# bytes in git custody, but never upload them into the public deployment.
+app.html
+complete-ontology/index.html
+five-plus-one/index.html
+burrisphere/index.html
+dasein/index.html
+canon/the-complete-ontology-of-reality/index.html
+operators/mf-283-the-orthogonality-theorem-v2/index.html
+operators/mf-285-dreams-are-unanchored-d5/index.html
+operators/mf-296-gravity-is-time/index.html
+operators/mf-298-dark-matter-is-mutual-information/index.html
+# The local custody/control registry is audited before build, not published.
+withheld-routes.json
+
 # Source/control bundles and local/generated tooling.
 docs/
 __pycache__/

@@ -1,7 +1,7 @@
 ---
 title: "The Lived Compass — Soul Loop Practice"
-status: "ACTIVE — derived practical synthesis; not therapy, law, medicine, or commandment"
-date: 2026-07-22
+status: "ACTIVE — derived practical synthesis; nested-horizon amendment 2026-07-28; not therapy, law, medicine, or commandment"
+date: 2026-07-28
 evidence_tier: "[S] decision and receipt protocol; [I] chosen Justice orientation; [C] claims of improved life outcomes until tested"
 owner: "Derived from the Goal, Refusals, Soul Loop, D4/D5 owner, and Record"
 parents:
@@ -33,12 +33,16 @@ Before a consequential action, ask:
    rival and evidence that would change it.
 3. **Possibility — Which futures can I presently represent?** Include doing
    nothing, delay, reversible trials and options proposed by affected people.
+   Name the longest horizon for which bearers and consequences can still be
+   traced honestly.
 4. **Means — What can actually be done?** Count time, body, skill, money,
    tools, authority, cooperation and physical constraints.
 5. **Justice — Who acts, benefits, pays and bears risk?** Include hidden,
    future, ecological and absent bearers where materially affected.
-6. **Commitment — What is the smallest responsible act?** Prefer reversible,
-   informative action when uncertainty is high.
+6. **Commitment — What is the smallest responsible act?** Prefer the shortest
+   reversible action that can return honest information while reasonably
+   foreseeable delayed costs and residual uncertainty remain visible across
+   the longest responsible horizon.
 7. **Receipt — What happened, and what must change?** Record both expected and
    actual consequences without letting intention manufacture the outcome.
 
@@ -89,6 +93,37 @@ Do not infer more than it says:
 Use the formula as a diagnostic question—*is the failure primarily in the map,
 the means, or their coupling?*—and compare it with simpler rivals when making
 predictions.
+
+## 3A. The two-clock check
+
+Every consequential plan declares two horizons:
+
+```text
+T_L = longest responsible horizon
+    the furthest interval for which bearers, causal pathways, costs,
+    uncertainties, and revision points can still be named
+
+T_S = shortest informative horizon
+    the earliest interval in which an outcome can distinguish the move
+    from serious rivals while foreseeable delayed costs and residual
+    uncertainty remain declared against T_L
+
+0 < T_S ≤ T_L
+```
+
+Orient the plan by `T_L`, commit only to the next honest receipt at `T_S`, then
+recompute. This couples long direction to short correction.
+
+Reject a quick metric when its consequence matures later. Reject a distant
+promise when no nearer observation is allowed to correct it. The shortest loop
+is not automatically the fastest available number, and the longest horizon is
+not literally infinite. Both remain bounded by evidence, affected bearers, and
+the cost of maintaining the model.
+
+When several horizons or bearers conflict, do not manufacture one total score.
+Keep the vector visible, remove dominated actions, preserve rights and minimum
+viability at every declared horizon, and prefer reversible moves that teach
+before they trap.
 
 ## 4. The Justice envelope
 
@@ -182,6 +217,26 @@ demon, oppressor or victim. Begin with receiptable moves and consequences.
 The framework does not guarantee reconciliation. Sometimes Justice requires a
 firm boundary against an uncorrected extractor.
 
+For conflict at group scale, separate at least three candidate mechanisms:
+
+- embodied `V₄` stakes such as bodily safety, status, resources, kin,
+  livelihood, coercion, and sometimes reproductive opportunity;
+- represented `Φ₅` fields plus D4 coordination carriers such as language,
+  identity, ritual, legitimacy, command, and present models of a future;
+- material and institutional conditions such as logistics, geography, state
+  capacity, finance, and punishment.
+
+Possible power and actual power appear at both scales: a person also models
+possibilities, while a coalition also needs actual bodies and means. The
+distinction concerns which variables explain a given transition, not an
+exclusive assignment of `V₄` to individuals or `Φ₅` to groups. Actual
+coordination capacity remains D4; `Φ₅` does not act without a present model,
+selector, and means.
+
+Do not infer shared belief from participation, or a universal cause from one
+conflict. “Weltanschauungskrieg” is a lens on competition among coordination
+patterns, not a licence for violence or a substitute for causal analysis.
+
 ## 9. Collective traces
 
 For a family, organization, institution or movement, inspect the trace field:
@@ -196,6 +251,46 @@ For a family, organization, institution or movement, inspect the trace field:
 
 Only the full intervention-sensitive pattern licenses the term
 **Egregoreotype**. Awe, popularity, branding or longevity alone does not.
+
+## 9A. Functional specialization and handoff
+
+Coordination does not require every participant to hold the whole model.
+Different people can specialize in boundary contact, exploration, audit,
+commitment, architecture, subtraction, or public synthesis while maintaining
+compatible longer-horizon contracts and interoperable receipts. Coordination
+does not require one total worldview or one identical horizon.
+
+The optional word *varṇa* names these functions only as voluntary, mobile
+niche postures `[I/C]`. It never names ancestry, essence, rank, pay grade,
+human worth, or a permanent assignment. A person may combine roles, change
+roles, refuse a role, or remain a generalist.
+
+The roles also need not share one memotype. Boundary objects—an offer, token,
+interface, price, ledger, specification, or accept/refuse signal—can provide
+thin interoperability across languages and worldviews. Such a handoff is not
+automatically consensual or fair; price bargaining and exit conditions remain
+inside the Justice check.
+
+Before using a specialized role, declare:
+
+```text
+function and question
+inputs and evidence boundary
+permitted decisions and forbidden powers
+output and handoff recipient
+local receipt horizon T_S
+joint / compatible horizon contract T_joint
+rotation, cross-training and exit
+failure, capture and dissolution triggers
+```
+
+The economic reading is division of labour and exchange. The ecological
+reading is differentiated contribution to a sustaining field, including
+redundancy, regeneration, and mutual dependence. Neither analogy proves that
+seven roles are optimal. Compare the Rosetta partition with a generalist team,
+ordinary professional roles, and alternative partitions. If it creates silos,
+status capture, rent extraction, brittle interfaces, or no measurable
+coordination gain, dissolve or replace it.
 
 ## 10. When to stop
 
@@ -219,6 +314,8 @@ Situation:
 Observed / inferred / unknown:
 Strongest rival model:
 Alternatives considered:
+Longest responsible horizon T_L:
+Shortest informative horizon T_S:
 Means and constraints:
 Bearers / payer / beneficiary:
 Authorization and contest path:

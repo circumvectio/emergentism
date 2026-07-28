@@ -23,8 +23,8 @@ rosetta:
 
 ## Society Beyond Nation, Corporation, Priesthood, and Birth-Caste
 
-**Status:** Canonical L7 boundary note
-**Date:** 2026-05-30
+**Status:** Canonical L7 boundary note; nested-horizon amendment 2026-07-28
+**Date:** 2026-05-30; amended 2026-07-28
 **Evidence Tier:** [S] where applying existing non-capture invariants to institutional narrative; [I] where proposing social-theological morphology; [C] for any claim that this will replace existing states or corporations in the external world
 **Depends on:** [Symbol Design and Public Translation](01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md), [Pedagogy of Becoming](00_THE_PEDAGOGY_OF_BECOMING.md), [Framework Glossary](00_GLOSSARY.md), [Ontology: Finity as Boundary](../06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md), [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md), [D4-D5 Canonical Reference](../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md)
 **Kill Criteria:** If the note is used to justify coercive theocracy, state religion, corporate capture, priestly gatekeeping, birth caste, race rank, class rank, human-worth hierarchy, or denial of Grace Exit, it has failed and must be corrected or removed.
@@ -76,7 +76,8 @@ A society ordered by truth is not ordered by uniform belief. It is ordered by
 shared refusal to let any institution own the disclosure channel.
 
 The first social unit is therefore not the nation or corporation. Those are
-D5 institutional containers. They may be useful, but they are not ultimate.
+D4 institutional carrier-patterns whose records and models may represent D5
+option content. They may be useful, but they are not ultimate.
 The first social unit is the finite witness-node inside a truth-bearing field:
 
 ```text
@@ -101,8 +102,9 @@ It does not mean:
 birth rank / race rank / class rank / human worth
 ```
 
-Functional castes are polyphenotypic social organs. They partition work by
-what kind of truth they are fitted to handle:
+Functional castes are polyphenotypic social organs. They partition work by the
+bounded function a participant is currently competent to perform, has
+voluntarily accepted, and is authorized to perform:
 
 | Function | Question | Safe reading |
 |---|---|---|
@@ -116,18 +118,78 @@ what kind of truth they are fitted to handle:
 
 These roles are:
 
-- opt-in where possible;
+- voluntary and self-ascribed rather than imposed as identity;
 - mobile across time as capacity and context change;
+- combinable, trainable, and open to generalists;
 - receipt-bound rather than identity-bound;
 - constrained by Grace Exit;
 - forbidden from becoming human-worth hierarchy.
 
 **Capture kill-test — a functional caste is *falsified and must be dissolved* (L6 subtraction + L4 refusal) if ANY of these holds:** (1) anyone claims the role is permanent or by birth; (2) exit is refused or penalized; (3) the role's receipt is not public/auditable; (4) the selection gate becomes identity-capture (role → human-worth rank). **Named pathway:** any witness may invoke the test; an unresolved trip suspends the role pending a contestable L4 review under the `AuthorizationEnvelope`. (Stating "this must not happen" is not enough — this names who judges and what happens.)
 
-The biological analogy is niche partitioning and speciation, not domination.
+The biological analogy is functional differentiation and niche partitioning,
+not domination. The older “speciation” label is retired and fenced below.
 Differentiated forms reduce destructive competition by taking different roles
 in a shared ecology. In social terms, a mature symbolic order lets roles
 differentiate without turning difference into rank.
+
+## Why Specialization May Solve Part of the Coordination Problem `[I/C]`
+
+A group cannot require every participant to perceive, model, test, decide,
+build, prune, and narrate the whole at once. Functional specialization can
+reduce that impossible bandwidth demand. Each role holds a bounded question,
+publishes a legible output, and hands the result to another role while all
+remain answerable to compatible boundary and horizon contracts.
+
+The proposal couples two horizons:
+
+```text
+T_role,r = longest responsible horizon role r can honestly maintain
+T_joint  = longest overlap on which affected roles state compatible constraints
+T_S      = shortest informative receipt interval for a specialized function
+0 < T_S ≤ T_joint ≤ min_r(T_role,r)
+```
+
+`T_joint` is a common coordination window, not permission to discard duties
+that extend beyond it. Longer-horizon obligations require named custody, an
+explicit handoff, or a recorded reason they cannot yet be represented.
+
+Compatible long direction without short receipts becomes ideology protected from
+consequence. Short optimization without a long direction becomes proxy gaming,
+fragmentation, and cost export. The coordination rule is therefore: specialize
+locally, receipt quickly, and keep every local gain answerable to the longest
+materially relevant horizon. It requires no single total worldview.
+
+This is both an economic and an ecological niche analogy:
+
+- **economic:** division of labour, comparative capability, exchange, and
+  explicit handoffs can reduce duplication and coordination cost;
+- **ecological:** differentiated functions can support resilience, cycling,
+  redundancy, regeneration, and mutual dependence inside a sustaining field.
+
+Neither analogy proves that the seven Rosetta functions are necessary,
+complete, or optimal. Healthy specialization requires enough overlap and
+cross-training to prevent brittle silos. A participant may hold several
+functions, rotate, remain generalist, or refuse the scheme entirely.
+
+Every role pilot must declare its function, inputs, permitted decisions,
+forbidden powers, outputs, handoff, local and jointly compatible horizons, receipts,
+rotation, exit, and dissolution trigger. Compare it against ordinary
+professional roles, alternative partitions, and no-role/generalist teams.
+
+Economic niches also require anti-cartel and bargaining-power checks. A role
+must not monopolize entry, prices, credentials, information, or the right to
+define another role's value. Apparent specialization that survives through
+unequal exit, captive demand, or hidden subsidy is capture, not a coordination
+gain. Ecological description supplies no social obligation; Justice remains an
+independent chosen constraint.
+
+**Kill criterion:** retire the coordination-benefit claim if the proposed
+partition does not improve quality, learning, handoff reliability, resilience,
+or coordination cost against fair rivals; if it produces status lock-in,
+rent-seeking, gatekeeping, extraction, or self-fulfilling identity classes; or
+if the same gains require none of the Rosetta-specific mapping. The
+anti-rank/exit boundary survives even if the benefit claim dies.
 
 ## Destroy: The False Social Containers
 
@@ -178,10 +240,10 @@ commons, councils, and archives. Each may develop its own symbols, rhythms,
 selection gates, and training lineages. None may claim final ownership of the
 person or the Ground.
 
-Speciation without Grace Exit is imprisonment.
-Speciation without A7 is dogma.
-Speciation without `η = 0` is extraction.
-Speciation without L6 is idolatry.
+Differentiation without Grace Exit is imprisonment.
+Differentiation without A7 is dogma.
+Differentiation without `η = 0` is extraction.
+Differentiation without L6 is idolatry.
 
 ## Canonical Compression
 

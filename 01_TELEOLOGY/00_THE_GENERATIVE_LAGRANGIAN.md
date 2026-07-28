@@ -1,8 +1,8 @@
 ---
 title: "The Generative Lagrangian — A Conditional Grammar of Becoming"
 type: emergentism-teleology-owner
-status: "ACTIVE — pure-Emergentism Kintsugi successor, 2026-07-20"
-date: 2026-07-20
+status: "ACTIVE — pure-Emergentism Kintsugi successor; nested-horizon amendment 2026-07-28"
+date: 2026-07-28
 evidence_tier: "[A] chart mathematics; [S] consequences inside declared models; [I] construction grammar; [C] world-level fit"
 depends_on:
   - ../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md
@@ -160,24 +160,64 @@ define an admissible field `\mathcal A_J` only from actions that satisfy:
 - physical admissibility, consent, custody, contest, and exit;
 - no predicted destruction of `i`, `H`, or an affected third bearer.
 
-When that field and objective meet the stated existence conditions, the model
-may select
-
-\[
-a^\star\in\operatorname*{arg\,max}_{a\in\mathcal A_J}
-\mathbb E_{M_t}[W_i(T)\mid a].
-\]
+Bearer-complete Justice does not produce a unique scalar selector. Selection
+therefore proceeds over the per-bearer, per-horizon vector in §5A. An older
+one-horizon shorthand maximized `E[W_i(T)|a]`; it may serve only as a declared
+local tie-breaker among still-admissible, Pareto-undominated actions, and only
+when it cannot override another bearer's rights or minimum viability.
 
 If the admissible set is empty, expectations are undefined, the objective is
-unbounded, or the maximum is not attained, exact selection does not follow.
-An explicit `ε`-optimal rule may be used only when its own conditions are
-declared. One-shot extraction is the standard counterexample to unconstrained
-Power-Max: local gain can rise by destroying the sustaining boundary.
+unbounded, or the selected rule has no solution, exact selection does not
+follow. An explicit `ε`-optimal rule may be used only when its own conditions
+are declared. One-shot extraction is the standard counterexample to
+unconstrained Power-Max: local gain can rise by destroying the sustaining
+boundary.
 
 Strict Syntropic Dyadism therefore requires the receipted durable potentials of
 both `i` and `H` to rise under Justice. Aggregate gain may not compensate for
 destroying either side or an undeclared third bearer. Voluntary sacrifice is a
 distinct costly class, never automatically strict syntropy.
+
+### 5A. Nested-horizon selection
+
+A single terminal `T` is insufficient when a quick local gain can conceal a
+slow systemic loss. Let `0<T_S≤T_L` and let the declared horizon set be
+
+\[
+\mathcal T=\{T_S=T_0<T_1<\cdots<T_n=T_L\},
+\]
+
+where `T_L` is the longest responsible horizon supported by named bearers,
+causal pathways, costs, uncertainty, and revision points, and `T_S` is the
+shortest interval that can return an outcome capable of discriminating the
+chosen move from serious rivals.
+
+For every materially affected bearer `b`, keep
+
+\[
+\mathbf W_b(\mathcal T)=\bigl(W_b(T_0),\ldots,W_b(T_n)\bigr)
+\]
+
+visible. The Justice-admissible field `\mathcal A_J(\mathcal T)` must pass at
+every declared horizon; gain at `T_L` cannot launder destruction at `T_S`, and a
+proxy gain at `T_S` cannot hide reasonably foreseeable loss at later declared
+horizons. Residual uncertainty remains explicit.
+
+Because the bearer-horizon vector is generally only partially ordered, no
+unique scalar maximum follows. The selected discipline is instead:
+
+1. reject actions outside `\mathcal A_J(\mathcal T)`;
+2. remove actions dominated across the declared bearer-horizon vectors;
+3. among the surviving moves, prefer earlier discriminating information,
+   reversibility, and lower irreversible exposure;
+4. act only to the next receipt at `T_S`, update the model, and recompute the
+   longer path toward `T_L`.
+
+This is receding-horizon coordination `[I/S]`. It is not infinite-horizon
+omniscience, exponential discounting by assumption, or permission to optimize a
+short metric detached from delayed consequences. Its claim to improve real
+coordination remains `[C]` and must be compared with fixed plans, simpler
+feedback policies, and domain-native control methods.
 
 ## 6. What *generative* means here
 
@@ -224,6 +264,10 @@ The strongest honest claims carried by this owner are vulnerable:
    mutual option preservation will outperform otherwise comparable extractive
    coupling over declared horizons. Repeated contrary outcomes under adequate
    measurement defeat that wager; they do not defeat the chart identities.
+6. **Nested-horizon coordination.** Short-loop receipts should improve
+   adaptation without degrading the longest responsible horizon. If proxy
+   gaming, delayed harm, or coordination overhead persist relative to simpler
+   planning rules, the two-clock policy loses for that domain.
 
 ## 8. What survives failure
 

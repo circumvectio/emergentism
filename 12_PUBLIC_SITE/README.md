@@ -7,29 +7,28 @@ evidence_tier: "[B] repository/build state; doctrine inherits source tiers"
 
 # Emergentism public site
 
-The site is an operable compass and public research surface for a stranger: the
-reality scaffold in order, open sockets visible in place, the method usable
-without assent, the claims priced, the deaths dated, and the exit visible.
+The site is a tool-first public research surface for a stranger: use one method
+before meeting the worldview, inspect the claims at their stated prices, follow
+the dated corrections, and keep an exit visible throughout.
 
 ## Primary journey
 
-The founder-facing sequence is deliberately narrower than the library:
+The five public hubs form the narrow journey; Exit is always adjacent:
 
-1. [`index.html`](index.html) — remember Finity, distinguish possible from
-   actual power, and frame one decision.
-2. [`practice/`](practice/) — use the Finity Card and continue into the deeper
-   practices without required assent.
-3. [`plainly/`](plainly/) and [`book/`](book/) — understand the worldview in
-   ordinary language, then enter the short living book.
-4. [`5/`](5/) and [`rosetta/`](rosetta/) — inspect D5 possible power, D4 actual
-   power, and the four-move/three-frame transformation grammar.
-5. [`discoveries/`](discoveries/) and [`map/`](map/) — explore the wider claims
-   and the dimension-first scaffold at their stated tiers.
-6. [`lab/`](lab/) and [`record/`](record/) — test open claims and inspect dated
-   corrections after the useful idea has been demonstrated.
-7. [`contribute/`](contribute/) — contribute bounded evidence, expertise,
-   contradiction reports, or locally custodied compute.
-8. [`exit/`](exit/) — put the map down.
+1. **Use Finity** — [`index.html`](index.html) demonstrates the method, and
+   [`practice/`](practice/) carries the canonical seven-prompt Card, a clearly
+   illustrative worked example, and optional deeper practices.
+2. **Ideas** — [`plainly/`](plainly/) introduces the worldview in ordinary
+   language. [`rosetta/`](rosetta/) leads with seven functional moves; symbolic
+   and cross-tradition correspondences remain an optional, tiered appendix.
+3. **Research & Record** — [`record/`](record/) is the trust hub. It routes to
+   [`discoveries/`](discoveries/), [`lab/`](lab/), [`map/`](map/), sources,
+   tests, and dated corrections only after the tool has been demonstrated.
+4. **About** — [`about/`](about/) names the author, category, boundaries, and
+   missing independent review without manufacturing institutional standing.
+5. **Participate** — [`contribute/`](contribute/) starts with three human acts:
+   share a Finity receipt, attack a claim, or contribute bounded evidence.
+6. **Exit** — [`exit/`](exit/) lets a visitor put the map down without penalty.
 
 The detailed spine remains available at [`dimensions/`](dimensions/) and
 [`0/`](0/) through [`6/`](6/). The older [`compass/`](compass/) remains a
@@ -45,14 +44,14 @@ The public front is organized as a value sequence, not a directory:
    D4 model and meets D4 actual power; possibility alone does not act.
 3. **First value — the Finity Card.** A visitor can turn one live decision into
    a bounded next move before accepting the wider worldview.
-4. **Expansion — the Rosetta.** Four moves and three frames translate how power
-   is taken, given, created, dissolved, and preserved across domains.
+4. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
+   enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
+   correspondences are optional research mnemonics, not ranks or proof.
 5. **Trust — consequence before adherence.** The laboratory, trial record,
    rivals, kill criteria, and exit remain available after the useful idea has
    been demonstrated.
-6. **Participation — Apply, Learn, Test, Build.** These four doors are the main
-   routes; the full corpus remains reachable without competing with the first
-   action.
+6. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
+   bounded contribution is enough; membership and assent are never required.
 
 The intended value loop is:
 
@@ -73,6 +72,10 @@ No step depends on membership, belief, payment, or delegated truth authority.
 - Frozen generated-library pages remain readable as historical projections,
   carry a non-authority banner, are `noindex`, and are excluded from current
   book retrieval.
+- A typed set of historical exceptions may be withheld from public routing or
+  redirected to an archival notice when its old copy would create an unsafe or
+  materially misleading first impression. Source custody remains in the
+  repository; withholding a route is neither deletion nor evidence promotion.
 - `book-pwa/` is a frozen historical source snapshot excluded from deployment;
   it is not part of the Emergentism release.
 
@@ -90,8 +93,9 @@ The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and the
 root redirect. No external scripts, stylesheets, fonts, or media are required.
 
 The contribution page is a static contract in this release. It accepts no
-payments, API credentials, private data, or live inference jobs. A future
-compute broker requires a separate server-side security and authorization gate.
+payments, API credentials, private data, or live inference jobs. Any future
+compute broker would require a separate server-side security and authorization
+gate; this release does not promise or expose one.
 
 ## Current release truth
 

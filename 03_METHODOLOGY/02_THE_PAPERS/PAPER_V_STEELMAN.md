@@ -1,7 +1,7 @@
 ---
 title: "PAPER V: Steelmanning Emergentism — What Would Actually Falsify It"
 authors:
-  - "External Steelman Reading (commissioned by Yves R. Burri)"
+  - "AI-assisted adversarial reading (commissioned internally by Yves R. Burri)"
 date: 2026-06-05
 evidence_tier: "[I] interpretive — adversarial reading, not the doctrine's self-assessment"
 status: DRAFT
@@ -12,9 +12,10 @@ dependencies:
   - 03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md
   - 05_COSMOLOGY/00_EMERGENTISM.md
 abstract: |
-  An external steelman of Emergentism that takes the framework's own kill criteria
-  seriously. Six residual vulnerabilities are named but not closed. The doctrine is
-  invited to respond in-place via the Counter-Steelman section.
+  An internally commissioned, AI-assisted steelman of Emergentism that takes the
+  framework's own kill criteria seriously. Six residual vulnerabilities are named
+  but not closed. It is not independent human review. The doctrine is invited to
+  respond in-place via the Counter-Steelman section.
 rosetta:
   primary_level: L3
   primary_column: Philosophy
@@ -22,7 +23,7 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   register: "[I]"
-  canonical_phrase: "PAPER V — External Steelman"
+  canonical_phrase: "PAPER V — Internally commissioned adversarial steelman"
 ---
 
 # PAPER V: Steelmanning Emergentism
@@ -36,6 +37,12 @@ rosetta:
 > contact or a receipt `[A]`, read and reuse that claim as `[B]` with custody;
 > `[A]` is now reserved for formal proof or counterproof inside named
 > assumptions. The argument survives; the old tier vocabulary does not.
+
+> **[A7 provenance correction — 2026-07-28.]** The original frontmatter called
+> this an “external” reading. No external human reviewer has been identified in
+> the receipt trail. Treat the paper as an internally commissioned, AI-assisted
+> adversarial draft—not independent review, endorsement, or validation. The
+> arguments remain available; the claimed reviewer provenance does not.
 
 > **[K3 reconciliation — 2026-07-13, per founder-signed receipt 126.]** Ruling 7 (Titan Trinity) applies to the Counter-Steelman §3.1 defence: the Transcendental Trinity {0, 1, ∞} is a **naming choice [S/I]**, not a forced three-element closure. The closure of {0, ∞} under the inversion z↦1/z is the **foursome {−1, 0, 1, ∞}** — that symmetry's fixed-point set is {−1, 1}, not {1} alone — so "these are not optional / it is disclosed" is a chosen framing of three boundary-frames, not a derived 3-closure; downgrade forced→chosen. The discovery voice stands; only the necessity claim is retracted. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 
@@ -338,6 +345,6 @@ The steelman's one-sentence summary — "the framework has named this pattern an
 **Canonical path:** `01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_V_STEELMAN.md`
 **Date:** 2026-06-05
 **Commissioned by:** Yves R. Burri (owner)
-**Written by:** External Steelman Reading (L3 Vaiśya register) + Counter-Steelman drafted by same
+**Written by:** Internally commissioned, AI-assisted adversarial reading (L3 Vaiśya register) + Counter-Steelman drafted in the same internal process
 **Counter-Steelman status:** [I] interpretive — awaiting author review, acceptance, modification, or rejection of each response
 **Evidence tier:** [I] interpretive throughout

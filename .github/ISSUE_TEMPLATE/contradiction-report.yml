@@ -1,0 +1,61 @@
+name: Report a contradiction
+description: Attack one public claim with its strongest rival, evidence, and correction route.
+title: "[Contradiction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Precision beats agreement. Quote the claim fairly, keep evidence and inference distinct, and do not include secrets or private data.
+  - type: input
+    id: route
+    attributes:
+      label: Public route or claim identifier
+      description: Link to the page, section, record entry, or proposition under attack.
+      placeholder: https://emergentism.org/...
+    validations:
+      required: true
+  - type: textarea
+    id: strongest
+    attributes:
+      label: Strongest fair statement of the claim
+      description: Quote briefly or paraphrase without weakening it.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Contradiction, overclaim, or failure
+      description: Identify the exact logical, empirical, ethical, cultural, or safety problem.
+    validations:
+      required: true
+  - type: textarea
+    id: rival
+    attributes:
+      label: Strongest rival or correction
+      description: State what explains the same facts better, or propose the smallest repair.
+    validations:
+      required: true
+  - type: textarea
+    id: discriminator
+    attributes:
+      label: Discriminating evidence
+      description: What source, observation, or test could decide between the live alternatives? Include citations when available.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Potential harm if left unchanged
+      options:
+        - Low — wording or clarity
+        - Medium — material misunderstanding
+        - High — safety, medical, legal, cultural, or public-trust risk
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public-use confirmation
+      options:
+        - label: I have removed secrets and private data, and I understand this report will be public.
+          required: true

@@ -1,7 +1,7 @@
 ---
 title: "Objective Morals and Ethics — The Syntropic Dyad"
-status: "ACTIVE VALUE-THEORY OWNER — dimension-first Kintsugi repair 2026-07-21"
-date: 2026-07-21
+status: "ACTIVE VALUE-THEORY OWNER — dimension-first Kintsugi repair; bearer-horizon amendment 2026-07-28"
+date: 2026-07-28
 evidence_tier: "[S] definitions inside the declared framework; [I] normative choice; [C] world-facing adequacy"
 supersedes_blob: "4154ebeb1637a11b3bca40f0cca0425b226f849c:04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md"
 ---
@@ -136,15 +136,26 @@ the Justice envelope.
 Power-Max searches only inside the Justice-admissible field:
 
 ```text
-A_J={a:J(a;i,H,B(a)) and Δ_TW_i(a)≥0 and Δ_TW_H(a)≥0}
-
-a*∈argmax_(a∈A_J) E_(M_t)[W_i(T)|a].
+A_J={a:J(a;i,H,B(a)) and every declared bearer-horizon minimum holds}
+T_set={T_S,...,T_L}, with 0<T_S≤T_L
+W_vector(a)=(E_M[W_b(T_k)|a]) for b in B(a), T_k in T_set
+P_J={Justice-admissible actions not Pareto-dominated on W_vector}
+a*∈Select_tau(P_J)
 ```
+
+`tau` is an explicit, contestable tie-breaker among survivors—for example,
+earlier discriminating information, reversibility, or lower irreversible
+exposure. It is not supplied by the word “maximize.” An `argmax W_i(T)` rule
+may be declared as a local tie-breaker only after this filter and only when it
+cannot override another bearer's rights, minimum viability, or later declared
+horizons.
 
 The objective cannot convert a forbidden action into a permissible one. The
 one-shot extraction counterexample shows why: coupling and self-interest alone
-do not force cooperation. The vow enters openly as a constraint and remains
-answerable to outcome receipts.
+do not force cooperation. Nor does a partial order guarantee a unique maximum.
+The vow and the tie-breaker enter openly and remain answerable to outcome
+receipts. If `A_J` is empty, use the tragic-action protocol; do not manufacture
+a maximum.
 
 ## 9. Tests and kill criteria
 

@@ -16,6 +16,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "atlas" / "site_index.json"
+WITHHELD_REGISTRY = ROOT / "withheld-routes.json"
+
+
+def load_withheld_artifacts() -> set[str]:
+    data = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
+    return {item["artifact"] for item in data["artifacts"]}
+
+
+WITHHELD_ARTIFACTS = load_withheld_artifacts()
+
+
+def is_withheld(path: Path) -> bool:
+    return path.relative_to(ROOT).as_posix() in WITHHELD_ARTIFACTS
 
 # (section key, label, list of page dirs) — overview surfaces, curated order.
 OVERVIEW = [
@@ -64,11 +77,11 @@ def collect(dirname: str):
     base = ROOT / dirname
     pages = []
     idx = base / "index.html"
-    if idx.exists():
+    if idx.exists() and not is_withheld(idx):
         pages.append({"href": f"/{dirname}/", "title": page_title(idx)})
     for sub in sorted(p for p in base.iterdir() if p.is_dir()):
         sidx = sub / "index.html"
-        if sidx.exists():
+        if sidx.exists() and not is_withheld(sidx):
             pages.append({"href": f"/{dirname}/{sub.name}/", "title": page_title(sidx)})
     return pages
 
@@ -79,7 +92,7 @@ def main() -> int:
         pages = []
         for d in dirs:
             idx = ROOT / d / "index.html"
-            if idx.exists():
+            if idx.exists() and not is_withheld(idx):
                 pages.append({"href": f"/{d}/", "title": page_title(idx)})
         if pages:
             tree.append({"key": key, "label": label, "pages": pages})

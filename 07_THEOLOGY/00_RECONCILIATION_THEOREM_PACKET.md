@@ -7,7 +7,7 @@ rosetta:
   regime: "Ṛṣi"
   register: "[A/S/I/C]"
   canonical_phrase: "Reconciliation packet — what is proved, selected, and wagered"
-status: "ACTIVE — pure Emergentist hostile-formalization surface"
+status: "ACTIVE — pure Emergentist hostile-formalization surface; bearer-horizon amendment 2026-07-28"
 ---
 
 # Reconciliation Theorem Packet
@@ -43,20 +43,25 @@ law, a Born rule, or the arithmetic claim `1=0×∞`.
 
 ## Result 2 — conjunctive zero boundary `[S]`
 
-Let `C:[0,1]^2→[0,1]` be normalized and monotone with
-`C(0,V)=C(Φ,0)=0`. Then either missing input annihilates the score. Product,
-minimum, harmonic-style, and Cobb–Douglas members can satisfy related need-both
-properties while ranking interior points differently.
+Let `Φ₅` be D5 possible power, let `Φ̂₄=Eval₄(M,Φ₅)` be its present D4
+evaluation, and let `V₄` be D4 actual power. Let `C:[0,1]^2→[0,1]` be
+normalized and monotone with `C(0,V₄)=C(Φ̂₄,0)=0`. Then either missing D4 input
+annihilates the score. Product, minimum, harmonic-style, and Cobb–Douglas
+members can satisfy related need-both properties while ranking interior points
+differently.
 
 Emergentism declares
 
 \[
-P_{node}:=C_{\times}(\Phi,V)=\Phi V
+P_{node}:=C_{\times}(\widehat\Phi_4,V_4)=\widehat\Phi_4V_4
 \]
 
-as its normalized working instance.
+as its normalized working instance. `ΦV` remains public shorthand only; it does
+not license multiplication of a D5 possibility by D4 means without the D4
+evaluation bridge.
 
-**Licensed:** `Φ` and `V` are jointly necessary by definition inside the model.
+**Licensed:** `Φ̂₄` and `V₄` are jointly necessary by definition inside the
+selected model.
 
 **Not licensed:** the product is uniquely forced or universally fits real
 agents.
@@ -92,7 +97,7 @@ manufacturing its own consequence.
 **Kill:** if intervention on represented future content cannot change present
 selection beyond confounds, the causal interpretation contracts to metaphor.
 
-## Result 4 — Justice-constrained Power-Max `[S/I]`
+## Result 4 — Justice-constrained bearer-horizon selection `[S/I]`
 
 For
 
@@ -100,26 +105,39 @@ For
 W_x(T)=\int_0^T P_x(t)\,dt
 \]
 
-and admissible set
+and a declared horizon set `\mathcal T=\{T_S,\ldots,T_L\}` with
+`0<T_S\le T_L`, let the Justice-admissible set be
 
 \[
-\mathcal A_J=\{a:J(a;i,H)\land\Delta_TW_i(a)\ge0
-\land\Delta_TW_H(a)\ge0\},
+\mathcal A_J(\mathcal T)=
+\{a:J(a;i,H,B(a),\mathcal T)\},
 \]
 
-the selected objective is
+where `J` includes the declared rights and minimum-viability conditions at
+every horizon. For every materially affected bearer `b`, keep the expected
+vector
 
 \[
-a^\star\in\arg\max_{a\in\mathcal A_J}
-\mathbb E_{M_t}[W_i(T)\mid a].
+\mathbf W(a)=
+\left(\mathbb E_{M_t}[W_b(T_k)\mid a]\right)_{
+b\in B(a),\,T_k\in\mathcal T}
 \]
 
-This is a transparent constrained objective. The mathematics does not choose
-`J`; the Justice envelope is the explicit normative vow `[I]`. Without it,
-one-shot extraction can benefit the extractor.
+visible. Remove actions Pareto-dominated across this bearer-horizon vector,
+then apply an explicit, contestable tie-breaker `\tau` favoring reversibility,
+earlier discriminating information, and lower irreversible exposure. The
+older `argmax E[W_i(T)|a]` can be one disclosed local tie-breaker only when it
+cannot override another bearer's rights, minimum viability, or later declared
+horizons.
 
-**Kill:** any text claiming unconditional Power-Max is moral, universal, or
-non-extractive by itself.
+This is a transparent selected discipline, not a unique maximum derived from
+the mathematics. The mathematics chooses neither `J` nor `\tau`; the Justice
+envelope and tie-breaker are explicit normative choices `[I]`. Without Justice,
+one-shot extraction can benefit the extractor. If the admissible set is empty,
+the tragic-action protocol applies rather than a fabricated optimum.
+
+**Kill:** any text claiming unconditional Power-Max is moral, universal,
+uniquely scalar, or non-extractive by itself.
 
 ## Result 5 — the scoped move partition `[S/I]`
 

@@ -1,7 +1,7 @@
 ---
 title: "The Human Condition — An Emergentist Synthesis"
-status: "ACTIVE — derived reader synthesis; creates no new semantic owner"
-date: 2026-07-22
+status: "ACTIVE — derived reader synthesis; coordination amendment 2026-07-28; creates no new semantic owner"
+date: 2026-07-28
 evidence_tier: "[B] lived and scientific contact where cited by owners; [S] typed synthesis; [I] existential reading; [C] explicitly open metaphysics"
 owner: "Derived from K-2, K-3, K-5, the D4/D5 owner, Soul Loop, and Record"
 parents:
@@ -211,6 +211,39 @@ states, disciplines and platforms must be tested case by case.
 The justice questions are concrete: Who maintains the trace? Who benefits?
 Who pays? Who may contest it? What becomes irreversible? Whose option cone
 contracts? Can a person leave without doctrinal or material punishment?
+
+### Language, trade and conflict as coordination depths `[I/C]`
+
+The current research programme tests language as a principal compression and
+synchronization protocol of the memotype, not necessarily its whole carrier.
+Shared words, norms, rituals, and stories may create broad mutual prediction
+across genetically unrelated people. Biological similarity does not guarantee
+mutual intelligibility, and cultural similarity does not guarantee truth,
+justice, or consent.
+
+Trade supplies a thinner bridge. An external object, offer, price, token, or
+accept/refuse interface can support task-specific coordination among agents who
+share neither genes nor a rich language. Repeated exchange may bootstrap a
+convention; it need not create a shared worldview.
+
+War is the adverse stress test. Individual participants bear actual `V₄` stakes
+and constraints—body, safety, resources, status, kin, coercion and, in some
+contexts, reproductive opportunity. Large coalitions often use represented
+`Φ₅` fields plus D4 coordination carriers—language, identity, ritual,
+legitimacy, command and teleology—to align action and sacrifice. Material
+security, logistics, state capacity,
+finance, geography and coercion remain independent rivals. This is a
+multilevel conjecture, not a claim that reproduction explains every war or
+that every war is a cult conflict.
+
+Possible and actual power remain present at both scales: individuals represent
+possibilities, and collectives require actual bodies and means. The split names
+a recurrent emphasis, not an exclusive allocation of `V₄` to persons and
+`Φ₅` to groups. D4 carrier-patterns and selectors mediate any action attributed
+to a represented future.
+
+See the typed research contract in
+[`The Memotype-Language Coordination Conjecture`](../02_EPISTEMOLOGY/03_MEMETICS/06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md).
 
 ## 10. The Good `[I]`
 

@@ -75,10 +75,10 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
         families = "".join(f"<li>{esc(family)}</li>" for family in stone["families"])
         stone_html = f"""
 <section class="stone" aria-labelledby="stone-title">
-  <p class="eyebrow">D5 · G7 · four moves + three frames</p>
-  <h2 id="stone-title">{esc(stone['title'])}</h2>
+  <p class="eyebrow">D5 · optional symbolic M4/F3 mapping</p>
+  <h2 id="stone-title">The symbolic D5 Rosetta reading</h2>
   <p class="stone-formula">{esc(stone['formula'])}</p>
-  <p>{esc(stone['summary'])}</p>
+  <p>The primary transformation axis is constrain, remove, enable, commit, create, dissolve, and preserve. G7 is a separate symbolic reading over possible and actual power: four symbols are transfer moves and three are read-only Titan-frame projections.</p>
   <ul>{families}</ul>
   <p class="stone-boundary">{esc(stone['boundary'])}</p>
   <a class="next" href="../rosetta/">Open the Rosetta →</a>

@@ -15,44 +15,6 @@
     "nextAction": "Keep /0-/6 verified; add source citations when individual chapters expand."
   },
   {
-    "id": "five-plus-one",
-    "title": "5+1 Constitution (K2-ruled 2026-05-30)",
-    "publicRoute": "/five-plus-one/",
-    "status": "public",
-    "evidenceTier": "[S]/[A]/[B]/[I]",
-    "canonicalSources": [
-      "01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
-      "01_EMERGENTISM/00_META/00_CONSTITUTIONAL_INVARIANTS_O1_STAGING_2026_05_30.md"
-    ],
-    "publicClaimBoundary": "Five refusals (eta=0, K2, K3, K4, A7) + Omega as the directional +1. Omega is NOT a sixth refusal; on a categorically different axis. The eta=0 fence reads from two centres (additive 0 = zero extraction, multiplicative 1 = preservation of reciprocal relation).",
-    "nextAction": "Add 5+1 doc to the public canon map; the framework's operational discipline is now unified at 01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md."
-  },
-  {
-    "id": "dasein-argument",
-    "title": "The Dasein Argument (L5 doctrine)",
-    "publicRoute": "/dasein/",
-    "status": "public",
-    "evidenceTier": "[A]/[S]/[I]/[C]",
-    "canonicalSources": [
-      "01_EMERGENTISM/05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md"
-    ],
-    "publicClaimBoundary": "Mathematics is [A] standard. The Dasein argument is [S] framework structure. The ontological reading is [I]. The dimensional-crossing generalisation is [C] conjectural.",
-    "nextAction": "Source of truth for the Dasein stabilisation; the 2026-06-06 stabilisation carries through to the public surfaces via the dated update banners."
-  },
-  {
-    "id": "complete-ontology",
-    "title": "The Complete Ontology of Reality (D0-D6 scaffold)",
-    "publicRoute": "/complete-ontology/",
-    "status": "public",
-    "evidenceTier": "[S]/[I]/[C]",
-    "canonicalSources": [
-      "01_EMERGENTISM/05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md",
-      "01_EMERGENTISM/05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md"
-    ],
-    "publicClaimBoundary": "Scaffold structure is [S] definitional. Titan generator readings are [I] interpretive. Force-dimension assignments are [C] conjectural analogies.",
-    "nextAction": "Canonical navigational index for the D0-D6 dimensional unfolding. Each dimension carries its log coordinate, sphere position, Titan generator, and ontological reading."
-  },
-  {
     "id": "logarithmic-realignment",
     "title": "The Logarithmic Realignment (formal system)",
     "publicRoute": "/log-realignment/",
@@ -158,20 +120,6 @@
     ],
     "publicClaimBoundary": "Public treatment must distinguish frame/register doctrine from ordinary field arithmetic.",
     "nextAction": "Candidate for next public source-note route after atlas verification."
-  },
-  {
-    "id": "burrisphere-game-space",
-    "title": "Burrisphere and Game Space",
-    "publicRoute": "/burrisphere/",
-    "status": "public",
-    "evidenceTier": "[S/I/C]",
-    "canonicalSources": [
-      "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md",
-      "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/PAPER_O_STRONG_WEAK_EMERGENCE_D5.md",
-      "01_EMERGENTISM/05_COSMOLOGY/00_THE_BURRISPHERE.md"
-    ],
-    "publicClaimBoundary": "Dual projection geometry is public; game-space expansion and physics analogies remain tiered.",
-    "nextAction": "Expand /5 only after source-note and animation requirements are reconciled."
   },
   {
     "id": "sitting-practice",

@@ -72,6 +72,7 @@ real memetic defense.
 | [`03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md`](03_MEMES_MIND_HARDWARE_CULTURE_SOFTWARE.md) | Mind as hardware, culture as software |
 | [`04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md`](04_ANTI_MEMETIC_DEFENSE_ARCHITECTURES.md) | Defensive architectures against harmful memes |
 | [`05_ANCIENT_EGREGORE_ARCHITECTURES.md`](05_ANCIENT_EGREGORE_ARCHITECTURES.md) | Historical egregore and collective-mind structures |
+| [`06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md`](06_MEMOTYPE_LANGUAGE_COORDINATION_CONJECTURE.md) | Open conjecture: language as a principal memotype protocol; trade and war as thin/deep coordination stress tests with genetic, material, ritual, institutional, and coercive rivals |
 | [Applied memetic-defense strategies — historical application](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/02_EPISTEMOLOGY/03_MEMETICS/06_APPLIED_MEMETIC_DEFENSE_STRATEGIES.md) | Archived application; not current worldview authority |
 
 ## Read First

@@ -1,7 +1,7 @@
 ---
 title: "Emergentism Internal Completion Register"
 status: "ACTIVE — living dimension-first completion register"
-date: 2026-07-22
+date: 2026-07-28
 evidence_tier: "[S] editorial/type contract; every mapped claim retains its owner-declared tier"
 type: internal-completion-register
 ---
@@ -91,7 +91,7 @@ These are derived syntheses, not additional semantic owners:
 | What can be chosen? | Human Condition §4 and Lived Compass | complete | stronger metaphysical free will remains open |
 | What is good? | K-5 Refusals + one-sitting §10 | complete | chosen orientation, not derived moral realism |
 | How should one act? | `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` | complete | outcome adequacy remains world-open |
-| How do collectives act? | Human Condition §9 + Egregoreotype wager | complete | candidate evidence remains open |
+| How do collectives act? | Human Condition §9 + Egregoreotype and memotype/trade/war conjectures | complete | trace, horizon, specialization, and coordination evidence remain open |
 | What do suffering and death mean? | Human Condition §§6–8 | complete | no afterlife or theodicy claim is made |
 | How may the worldview be left? | E10, K-5 and one-sitting §12 | complete | exit fails if practice makes it punitive or decorative |
 
@@ -148,6 +148,7 @@ outside active source authority. Consequential action is typed through the
 | μ₄ counterfactual capacity | open | intervention on represented futures with fair D4 baselines |
 | universal product fit | open | preregistered comparison against rival conjunctive aggregators |
 | foresight/means complementarity | open | measure the resource cost of improved option-field modeling and compare candidate budget surfaces; the product alone supplies no tradeoff |
+| nested-horizon coordination | open | preregister `T_L`, `T_S`, bearer vectors, rivals, and tie-breakers; compare receding receipts and voluntary role partitions against fixed plans, ordinary role systems, and generalist teams; reject on proxy harm, lock-in, or no out-of-sample gain |
 | five-crossing census | open | independent discriminators across the proposed interfaces |
 | Egregoreotype | open | carrier-turnover, trace-intervention, objective-like bias, and visible-cost evidence |
 | model-mediated future influence | open | present action changes under controlled changes to represented futures |
@@ -161,11 +162,13 @@ framework remains a compass whose strongest world-facing claims can lose.
 
 ## Assembly-packet status
 
-The eleven gates above now have packet-complete research contracts in the
-[`Grand Puzzle Assembly Ledger`](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md): each
-names its current contact, strongest rival, cheapest honest discriminator, kill,
-and survivor. **Packet-complete does not mean evidence-complete.** Every gate
-retains the `open` state above until its named world contact occurs.
+The eleven pre-existing gates above have packet-complete research contracts in
+the [`Grand Puzzle Assembly Ledger`](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md):
+each names its current contact, strongest rival, cheapest honest discriminator,
+kill, and survivor. The nested-horizon coordination gate added 2026-07-28 is
+not yet packet-complete; that missing packet remains an explicit gate.
+**Packet-complete does not mean evidence-complete.** Every gate retains the
+`open` state above until its named world contact occurs.
 
 The same ledger assembles D0 through D6 and the five apertures without becoming
 a competing owner. Its saturation/contrast seam is formally fenced by

@@ -1,0 +1,57 @@
+name: Contribute bounded evidence
+description: Add one source, dataset, replication, native-domain correction, or frozen discriminator.
+title: "[Evidence] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Evidence does not inherit a stronger tier by being submitted. State its custody, limits, and what it cannot establish. Do not include secrets, credentials, private data, or material you cannot lawfully share.
+  - type: input
+    id: target
+    attributes:
+      label: Target question or claim
+      description: Give the GP identifier, public route, proposition, or record entry.
+      placeholder: GP-03 or https://emergentism.org/...
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options:
+        - Source or citation
+        - Dataset or measurement
+        - Replication or null result
+        - Native-domain correction
+        - Rival model
+        - Discriminator or kill criterion
+    validations:
+      required: true
+  - type: textarea
+    id: native
+    attributes:
+      label: Native-domain account
+      description: State the contribution in its source discipline's own vocabulary before mapping it into Emergentism.
+    validations:
+      required: true
+  - type: textarea
+    id: custody
+    attributes:
+      label: Source, provenance, and custody
+      description: Include stable citations, authorship, date, license or access limits, method, and any conflicts of interest.
+    validations:
+      required: true
+  - type: textarea
+    id: consequence
+    attributes:
+      label: What it supports—and what it cannot establish
+      description: Name the narrow claim it can move, the strongest rival, and the limitations that remain.
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public-use confirmation
+      options:
+        - label: I have the right to share this material, removed secrets and private data, and understand the report will be public.
+          required: true

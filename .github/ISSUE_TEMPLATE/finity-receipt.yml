@@ -1,0 +1,44 @@
+name: Share a Finity receipt
+description: Report what happened after using the seven-prompt Finity Card on one decision.
+title: "[Finity receipt] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share only material you can make public. Do not include secrets, private data, medical information, or third-party identities without consent. A null or failed result is useful.
+  - type: textarea
+    id: card
+    attributes:
+      label: Your seven-prompt Card
+      description: Complete Decision, Actual, Possibility, Finity, Next move, Shared value, and Receipt. In Finity, name both the longest responsible horizon and the shortest informative boundary.
+      placeholder: |
+        DECISION:
+        ACTUAL:
+        POSSIBILITY:
+        FINITY:
+        NEXT MOVE:
+        SHARED VALUE:
+        RECEIPT:
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Observed outcome
+      description: What happened inside the declared boundary? Distinguish observation from interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: revision
+    attributes:
+      label: Continue, revise, or stop
+      description: What did the receipt change? What remains unresolved?
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public-use confirmation
+      options:
+        - label: I have removed secrets and private data, and I understand this report will be public.
+          required: true

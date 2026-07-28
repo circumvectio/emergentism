@@ -88,7 +88,7 @@ class LivingMapContractTests(unittest.TestCase):
         copy = (ROOT / "contribute" / "index.html").read_text(encoding="utf-8")
         for phrase in (
             "Never paste or send a personal API key.",
-            "does not yet accept payments, credentials, private data, or live model jobs",
+            "does not accept payments, credentials, private data, or live model jobs",
             "No payment, credential or live inference endpoint exists",
         ):
             self.assertIn(phrase, copy)

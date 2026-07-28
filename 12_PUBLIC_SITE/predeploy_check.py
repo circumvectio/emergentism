@@ -20,14 +20,27 @@ Exit 0 if all checks pass, 1 if any fail.
 
 import json
 import fnmatch
+import hashlib
 import os
 import re
 import subprocess
 import sys
+from urllib.parse import urlparse
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = os.path.dirname(BASE_DIR)
+WITHHELD_REGISTRY_PATH = os.path.join(BASE_DIR, "withheld-routes.json")
 ERRORS = []
 WARNINGS = []
+
+
+def load_withheld_registry():
+    with open(WITHHELD_REGISTRY_PATH, "r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def withheld_artifact_paths():
+    return {item["artifact"] for item in load_withheld_registry()["artifacts"]}
 
 def error(msg):
     ERRORS.append(msg)
@@ -42,6 +55,7 @@ def ok(msg):
 
 def get_public_html_files():
     files = []
+    withheld = withheld_artifact_paths()
     for root, dirs, filenames in os.walk(BASE_DIR):
         dirs[:] = [
             d for d in dirs if d not in {"node_modules", "vendor", ".git", ".vercel", ".next",
@@ -50,7 +64,7 @@ def get_public_html_files():
         for f in filenames:
             if f.endswith(".html"):
                 rel = os.path.relpath(os.path.join(root, f), BASE_DIR)
-                if not rel.startswith("partials/"):
+                if not rel.startswith("partials/") and rel.replace(os.sep, "/") not in withheld:
                     files.append(rel)
     return sorted(files)
 
@@ -217,6 +231,50 @@ def check_required_assets():
     else:
         error("dimensions/dimensions.js missing")
         all_ok = False
+
+    # Deployed binary/visual assets must be real worktree objects, never Git
+    # LFS pointer stubs. Keep this scan cheap and scoped to deployable assets.
+    asset_extensions = {
+        ".woff", ".woff2", ".ttf", ".otf",
+        ".png", ".jpg", ".jpeg", ".gif", ".webp", ".avif", ".svg", ".ico",
+    }
+    lfs_prefix = b"version https://git-lfs.github.com/spec/v1"
+    patterns = load_vercelignore_patterns() or []
+    checked_assets = 0
+    asset_failures = []
+    for root, dirs, filenames in os.walk(BASE_DIR):
+        dirs[:] = [
+            d for d in dirs
+            if d not in {".git", ".vercel", ".next", "node_modules", "90_ARCHIVE", "_archive"}
+        ]
+        for filename in filenames:
+            if os.path.splitext(filename)[1].lower() not in asset_extensions:
+                continue
+            path = os.path.join(root, filename)
+            rel = os.path.relpath(path, BASE_DIR).replace(os.sep, "/")
+            if is_vercel_ignored(rel, patterns):
+                continue
+            checked_assets += 1
+            try:
+                with open(path, "rb") as fh:
+                    sample = fh.read(256)
+            except OSError as exc:
+                asset_failures.append(f"{rel}: unreadable ({exc})")
+                continue
+            if not sample:
+                asset_failures.append(f"{rel}: empty deployed asset")
+            elif sample.startswith(lfs_prefix):
+                asset_failures.append(f"{rel}: Git LFS pointer, not asset bytes")
+
+    if not checked_assets:
+        error("no deployable font/icon/image assets found")
+        all_ok = False
+    elif asset_failures:
+        for finding in asset_failures:
+            error(finding)
+        all_ok = False
+    else:
+        ok(f"{checked_assets} deployable font/icon/image assets are real worktree objects")
     return all_ok
 
 def check_html_wellformedness():
@@ -252,7 +310,8 @@ def check_tier_markers():
         # Skip utility pages that don't need tier markers
         if html_file in {"index.html", "app.html", "cascade.html", "sphere.html",
                          "lightcone.html", "infinite.html", "about/index.html",
-                         "sources/index.html", "atlas/index.html"}:
+                         "sources/index.html", "atlas/index.html",
+                         "historical-boundary/index.html"}:
             continue
         body = read_file(html_file)
         # Check for at least one tier marker
@@ -354,6 +413,23 @@ def check_public_reading_bundle():
         "method": 12,
         "meta": 6,
     }
+    registry = load_withheld_registry()
+    withheld_manifest_hrefs = set()
+    for item in registry["artifacts"]:
+        manifest_doc = item.get("manifestDocument")
+        if manifest_doc is None:
+            continue
+        expected[manifest_doc["section"]] -= 1
+        withheld_manifest_hrefs.add(manifest_doc["href"])
+
+    published_hrefs = {doc.get("href") for doc in documents}
+    leaked_hrefs = sorted(withheld_manifest_hrefs & published_hrefs)
+    if leaked_hrefs:
+        for href in leaked_hrefs:
+            error(f"withheld artifact remains in reading-manifest.json: {href}")
+        all_ok = False
+    else:
+        ok("withheld artifacts are absent from reading-manifest.json")
     for section, expected_count in expected.items():
         actual = counts.get(section, 0)
         if actual == expected_count:
@@ -370,24 +446,19 @@ def check_public_reading_bundle():
         all_ok = False
 
     index_body = read_file("index.html")
-    # 2026-07-20 amendment (receipt 146; completion-plan step 5): the landing architecture is
-    # now discovery-led and /read/-mediated. The gate verifies the declared funnel + doorways.
-    # The 16-dir generated library grid is deliberately delinked from the landing per the
-    # compressed-map doctrine (sitemap policy: published, crawlable, never first-contact);
-    # its chrome is covered by check [9].
+    # 2026-07-28: the public front is method-led. These are the declared reader,
+    # evidence, participation, and exit hubs; deep or historical routes are not
+    # required on first contact. Generated-library chrome remains covered by [9].
     for href in [
-        "read/",
-        "discoveries/",
-        "fable/",
-        "plainly/",
-        "record/",
-        "axioms/",
-        "book/",
         "practice/",
-        "build/",
-        "map/",
+        "plainly/",
+        "discoveries/",
+        "record/",
         "lab/",
+        "read/",
+        "about/",
         "contribute/",
+        "exit/",
     ]:
         if f'href="{href}"' in index_body:
             ok(f"landing links {href}")
@@ -480,8 +551,273 @@ def is_vercel_ignored(rel_path, patterns):
             ignored = not negated
     return ignored
 
+
+def header_source_covers(source, route):
+    if source == route:
+        return True
+    if source.endswith("(.*)"):
+        return route.startswith(source[:-4])
+    return False
+
+
+def normalize_index_route(value):
+    if not isinstance(value, str):
+        return None
+    raw = value.strip()
+    if raw.startswith(("https://", "http://")):
+        raw = urlparse(raw).path
+    elif raw.startswith("/"):
+        pass
+    elif re.fullmatch(r"[A-Za-z0-9._~%+@/-]+", raw) and "/" in raw:
+        raw = "/" + raw
+    else:
+        return None
+    raw = raw.split("#", 1)[0].split("?", 1)[0]
+    return raw or "/"
+
+
+def routes_named_by_index_surface(rel_path):
+    path = os.path.join(BASE_DIR, rel_path)
+    body = read_file(rel_path)
+    routes = set()
+    if rel_path.endswith(".json"):
+        data = json.loads(body)
+
+        def visit(value):
+            if isinstance(value, dict):
+                for nested in value.values():
+                    visit(nested)
+            elif isinstance(value, list):
+                for nested in value:
+                    visit(nested)
+            else:
+                route = normalize_index_route(value)
+                if route:
+                    routes.add(route)
+
+        visit(data)
+        return routes
+
+    if rel_path.endswith(".xml"):
+        for location in re.findall(r"<loc>(.*?)</loc>", body, flags=re.IGNORECASE | re.DOTALL):
+            route = normalize_index_route(location)
+            if route:
+                routes.add(route)
+        return routes
+
+    base_href = extract_base_href(body)
+    for href in extract_hrefs(body):
+        if href.startswith(("https://", "http://")):
+            route = normalize_index_route(href)
+            if route:
+                routes.add(route)
+            continue
+        target, _ = resolve_link(rel_path, href, base_href)
+        if target is None:
+            continue
+        try:
+            rel = os.path.relpath(target, BASE_DIR).replace(os.sep, "/")
+        except ValueError:
+            continue
+        if rel == "index.html":
+            routes.add("/")
+        elif rel.endswith("/index.html"):
+            routes.add("/" + rel)
+            routes.add("/" + rel[:-10])
+        elif os.path.isdir(target) or href.split("#", 1)[0].endswith("/"):
+            routes.add("/" + rel.rstrip("/") + "/")
+        else:
+            routes.add("/" + rel)
+    return routes
+
+
+def check_historical_public_boundary():
+    print("\n[10] Historical public-withholding boundary")
+    all_ok = True
+    try:
+        registry = load_withheld_registry()
+    except Exception as exc:
+        error(f"withheld-routes.json is not valid JSON: {exc}")
+        return False
+
+    exact_artifacts = {
+        "app.html",
+        "complete-ontology/index.html",
+        "five-plus-one/index.html",
+        "burrisphere/index.html",
+        "dasein/index.html",
+        "canon/the-complete-ontology-of-reality/index.html",
+        "operators/mf-283-the-orthogonality-theorem-v2/index.html",
+        "operators/mf-285-dreams-are-unanchored-d5/index.html",
+        "operators/mf-296-gravity-is-time/index.html",
+        "operators/mf-298-dark-matter-is-mutual-information/index.html",
+    }
+    entries = registry.get("artifacts", [])
+    registered_artifacts = {item.get("artifact") for item in entries}
+    if registered_artifacts != exact_artifacts:
+        error(
+            "withheld-routes.json artifact set drift: "
+            f"expected {sorted(exact_artifacts)}, found {sorted(registered_artifacts)}"
+        )
+        all_ok = False
+    else:
+        ok("withholding registry names the exact ten historical artifacts")
+
+    boundary = registry.get("boundary", {})
+    boundary_artifact = boundary.get("artifactRoute", "")
+    boundary_public_route = boundary.get("publicRoute", "")
+    marker = boundary.get("marker", "")
+    boundary_path = os.path.join(BASE_DIR, boundary_artifact)
+    if not os.path.exists(boundary_path):
+        error(f"historical boundary page missing: {boundary_artifact}")
+        all_ok = False
+    else:
+        boundary_body = read_file(boundary_artifact)
+        required_boundary_markers = [
+            marker,
+            'name="robots" content="noindex, noarchive, nosnippet, nofollow"',
+            'http-equiv="Cache-Control" content="no-store, max-age=0"',
+            "preserved, not published",
+        ]
+        missing_markers = [value for value in required_boundary_markers if not value or value not in boundary_body]
+        if missing_markers:
+            error(f"historical boundary page missing marker(s): {missing_markers}")
+            all_ok = False
+        else:
+            ok("historical boundary page is explicit, noindex, and no-store")
+
+    patterns = load_vercelignore_patterns() or []
+    for item in entries:
+        artifact = item.get("artifact", "")
+        if not artifact or artifact.startswith("/") or ".." in artifact.split("/"):
+            error(f"unsafe artifact path in withholding registry: {artifact!r}")
+            all_ok = False
+            continue
+        path = os.path.join(BASE_DIR, artifact)
+        if not os.path.isfile(path):
+            error(f"withheld artifact missing from git worktree: {artifact}")
+            all_ok = False
+            continue
+        with open(path, "rb") as fh:
+            current_bytes = fh.read()
+        actual_hash = hashlib.sha256(current_bytes).hexdigest()
+        actual_size = len(current_bytes)
+        if actual_hash != item.get("sha256") or actual_size != item.get("bytes"):
+            error(
+                f"withheld artifact custody drift: {artifact} "
+                f"sha256={actual_hash} bytes={actual_size}"
+            )
+            all_ok = False
+
+        git_path = f"12_PUBLIC_SITE/{artifact}"
+        process = subprocess.run(
+            ["git", "-C", REPO_DIR, "show", f"HEAD:{git_path}"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        if process.returncode:
+            error(f"withheld artifact is not present at HEAD: {git_path}")
+            all_ok = False
+        else:
+            head_hash = hashlib.sha256(process.stdout).hexdigest()
+            if head_hash != actual_hash or len(process.stdout) != actual_size:
+                error(f"withheld artifact differs from HEAD custody: {artifact}")
+                all_ok = False
+
+        if artifact not in patterns or not is_vercel_ignored(artifact, patterns):
+            error(f".vercelignore lacks exact withheld artifact exclusion: {artifact}")
+            all_ok = False
+
+    if all_ok:
+        ok("all ten artifact bytes match registered SHA-256, HEAD, and exact deploy exclusions")
+
+    try:
+        with open(os.path.join(BASE_DIR, "vercel.json"), "r", encoding="utf-8") as fh:
+            vercel = json.load(fh)
+    except Exception as exc:
+        error(f"vercel.json is not valid JSON: {exc}")
+        return False
+
+    redirect_map = {
+        rule.get("source"): rule
+        for rule in vercel.get("redirects", [])
+    }
+    header_rules = vercel.get("headers", [])
+    required_robots = {"noindex", "noarchive", "nosnippet"}
+    all_public_routes = [boundary_public_route]
+    for item in entries:
+        all_public_routes.extend(item.get("publicRoutes", []))
+        for route in item.get("publicRoutes", []):
+            redirect = redirect_map.get(route, {})
+            if redirect.get("destination") != boundary_public_route or redirect.get("permanent") is not False:
+                error(f"withheld route lacks exact reversible boundary redirect: {route}")
+                all_ok = False
+
+    for route in all_public_routes:
+        route_headers = {}
+        for rule in header_rules:
+            if header_source_covers(rule.get("source", ""), route):
+                for header in rule.get("headers", []):
+                    route_headers[header.get("key", "").lower()] = header.get("value", "")
+        robots = {token.strip().lower() for token in route_headers.get("x-robots-tag", "").split(",")}
+        cache_control = route_headers.get("cache-control", "").lower()
+        cdn_cache_control = route_headers.get("cdn-cache-control", "").lower()
+        if not required_robots.issubset(robots):
+            error(f"withheld route lacks noindex/noarchive/nosnippet headers: {route}")
+            all_ok = False
+        if "no-store" not in cache_control or "no-store" not in cdn_cache_control:
+            error(f"withheld route lacks browser/CDN no-store headers: {route}")
+            all_ok = False
+
+    index_surfaces = [
+        "reading-manifest.json",
+        "atlas/index.html",
+        "atlas/site_index.json",
+        "atlas/source-ledger.json",
+        "sitemap.xml",
+        "book/rag_index.json",
+        "read/index.html",
+        "canon/index.html",
+        "operators/index.html",
+    ]
+    withheld_public_routes = {
+        route
+        for item in entries
+        for route in item.get("publicRoutes", [])
+    }
+    for surface in index_surfaces:
+        try:
+            named_routes = routes_named_by_index_surface(surface)
+        except Exception as exc:
+            error(f"cannot inspect index/search surface {surface}: {exc}")
+            all_ok = False
+            continue
+        leaked_routes = sorted(withheld_public_routes & named_routes)
+        for route in leaked_routes:
+            error(f"withheld route remains in current index/search surface: {surface} -> {route}")
+            all_ok = False
+
+    sitemap_body = read_file("sitemap.xml")
+    if boundary_public_route in sitemap_body:
+        error("noindex historical boundary must not be advertised in sitemap.xml")
+        all_ok = False
+
+    service_worker = read_file("sw.js")
+    if "WITHHELD_ROUTES" not in service_worker or "isWithheldRoute" not in service_worker:
+        error("service worker lacks the explicit withheld-route cache bypass")
+        all_ok = False
+    for route in sorted(set(all_public_routes)):
+        if route not in service_worker:
+            error(f"service worker withheld-route registry missing: {route}")
+            all_ok = False
+
+    if all_ok:
+        ok("reversible redirects, headers, indexes, search, sitemap, and service-worker boundary agree")
+    return all_ok
+
 def check_publication_boundary():
-    print("\n[10] Deployment publication boundary")
+    print("\n[11] Deployment publication boundary")
     patterns = load_vercelignore_patterns()
     if patterns is None:
         error(".vercelignore missing")
@@ -519,6 +855,7 @@ def check_publication_boundary():
         "predeploy_check.py",
         "predeploy_check.sh",
         "audit_live_domain_against_manifest.py",
+        "withheld-routes.json",
         "deploy.sh",
         "__pycache__/predeploy_check.cpython-311.pyc",
     ]
@@ -532,7 +869,7 @@ def check_publication_boundary():
     return True
 
 def check_semantic_parity():
-    print("\n[11] Dimension-first semantic parity")
+    print("\n[12] Dimension-first semantic parity")
     process = subprocess.run(
         [sys.executable, os.path.join(BASE_DIR, "check_public_semantic_parity.py")],
         cwd=BASE_DIR,
@@ -562,6 +899,7 @@ def main():
         check_operator_tier_hygiene(),
         check_public_reading_bundle(),
         check_generated_library_chrome(),
+        check_historical_public_boundary(),
         check_publication_boundary(),
         check_semantic_parity(),
     ]

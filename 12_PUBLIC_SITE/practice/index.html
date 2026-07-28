@@ -49,6 +49,7 @@ a{color:inherit}
 .nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
 .nav a:hover{color:var(--void);background:var(--gold)}
 .nav a.here{color:var(--gold);border:1px solid var(--line)}
+.nav a.exit-link{color:var(--bone-faint);border:1px solid var(--line-soft)}
 header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem}
 .fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
 .fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
@@ -110,14 +111,13 @@ footer.foot a{color:var(--bone-dim)}
 
 <div class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav class="nav" aria-label="Routes">
-    <a href="../discoveries/">Discoveries</a>
-    <a href="../fable/">Fable</a>
-    <a href="../plainly/">Plainly</a>
-    <a href="../record/">Record</a>
-    <a href="../axioms/">Axioms</a>
-    <a class="here" href="../practice/" aria-current="page">Practice</a>
-    <a href="../book/">Book</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="here" href="../practice/" aria-current="page">Use Finity</a>
+    <a href="../plainly/">Ideas</a>
+    <a href="../record/">Research &amp; Record</a>
+    <a href="../about/">About</a>
+    <a href="../contribute/">Participate</a>
+    <a class="exit-link" href="../exit/">Exit</a>
   </nav>
 </div>
 
@@ -137,7 +137,7 @@ footer.foot a{color:var(--bone-dim)}
     <p class="kicker">Start here · five minutes</p>
     <h2>The Finity Card — <b>frame one decision.</b></h2>
     <div class="body">
-      <p>Possible power is not yet action. Actual power is not yet direction. Use these prompts to bring one relevant possibility into contact with the means available now, then let the outcome correct you.</p>
+      <p>Possible power is not yet action. Actual power is not yet direction. Use these prompts to orient by the longest horizon you can responsibly model, act at the shortest interval that can honestly discriminate the move, and let the outcome correct you.</p>
     </div>
     <div class="artifact">
       <div class="bar"><span>finity-card.txt · one decision</span><button class="copybtn" type="button" data-copy-target="finity-card-template" aria-label="Copy the Finity Card to the clipboard">Copy</button></div>
@@ -146,10 +146,28 @@ footer.foot a{color:var(--bone-dim)}
 DECISION      What am I actually deciding?
 ACTUAL        What is true now, and what means are really available?
 POSSIBILITY   What remains genuinely open? What would change my map?
-FINITY        What finite, observable, revisable boundary is worth approaching?
+FINITY        What longest responsible horizon must this serve—and what shortest
+              observable, reversible boundary can teach without betraying it?
 NEXT MOVE     What is the smallest real step I can take now?
 SHARED VALUE  Whose capacity expands if this works? Who bears the cost?
 RECEIPT       What outcome will tell me to continue, revise, or stop?</pre>
+    </div>
+    <div class="worked" aria-label="Illustrative Finity Card example">
+      <p class="lab">Illustrative worked example — a decision aid, not evidence for the framework</p>
+      <pre>DECISION      Should our six-person team replace one weekly meeting
+              with a written-update pilot?
+ACTUAL        The meeting takes 45 minutes. An async tool is available.
+              Two teammates depend on spoken clarification.
+POSSIBILITY   We may return focus time without hiding blockers.
+FINITY        Long direction: improve coordination across one quarter.
+              Short receipt: run a 14-day, opt-in pilot. Continue only if
+              at least 80% of updates arrive and no blocker is missed.
+NEXT MOVE     Draft the update template and ask all six people to amend
+              the boundary before anyone commits.
+SHARED VALUE  The team may recover time; writers bear the new burden.
+              Spoken clarification and an immediate opt-out remain open.
+RECEIPT       Record delivery rate, missed blockers, time returned, and
+              each participant's verdict; continue, revise, or stop.</pre>
     </div>
     <div class="pocket">
       <p class="lab">The power pair</p>
@@ -175,7 +193,7 @@ RECEIPT       What outcome will tell me to continue, revise, or stop?</pre>
       <div>
         <h3>The personal trial record <span class="sub">№017 — the practice that is ours alone</span></h3>
         <p>Keep a ledger of your own claims — the ones you actually load weight onto. For each, write four things: <b>its tier</b> (how you know), <b>what would change your mind</b> (the kill criterion), <b>what would upgrade it</b>, and <b>what survives if it falls</b>. When one dies, hold the funeral: strike it through, date it, leave it legible. Sign the verdict.</p>
-        <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It works even if every metaphysical claim we make is wrong. That is deliberate.</p>
+        <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It is designed to remain a useful self-audit even if every metaphysical claim we make is wrong. Whether it helps in a particular life remains a local result, not a guarantee.</p>
         <div class="howto">
           <p class="lab">How — one page, forever</p>
           <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it. <a href="#artifact" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px">Copy the template below ↓</a></p>
@@ -212,7 +230,7 @@ newest entries on top. once a year, count the funerals.
 ------------------------------------------------------------
 No.002 · opened YYYY-MM-DD · status: OPEN
 CLAIM      (a claim you actually load weight on)
-TIER       how I know: proven / reasoned / lens / bet
+TIER       how I know: exact in construction / structural / lens / bet
 KILL       what result would change my mind
 UPGRADE    what evidence would raise the tier
 SURVIVES   what still stands for me if this falls
@@ -252,7 +270,7 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
     <h2>No belief <b>required.</b></h2>
     <div class="body">
       <p>The Finity Card turns a live decision into a testable move. The sitting teaches you to check maps against ground. The trial record teaches you to grade claims and bury the dead ones. The dyadic check teaches you to spot extraction before you commit it. <b>None of them asks you to believe the framework.</b></p>
-      <p>If the framework is right, the practices are its shortest path into a life. If the framework is wrong, the practices still leave you sharper than they found you. That asymmetry is the honest offer of this page — and it is the same offer the whole site makes, at every stage of the path: verify first, believe never, keep what works.</p>
+      <p>If the framework is right, the practices are one short path into a life. If the framework is wrong, they may still prove locally useful—but that is a result to test, not a benefit this page can guarantee. The offer is therefore: verify first, require no belief, keep only what survives use.</p>
     </div>
     <div class="cta-row">
       <a class="cta primary" href="#finity-card-practice">Frame another decision ↑</a>

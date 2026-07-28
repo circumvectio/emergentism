@@ -185,12 +185,6 @@
     },
     {
       "section": "canon",
-      "title": "The Complete Ontology of Reality",
-      "href": "canon/the-complete-ontology-of-reality/",
-      "source": "docs/handoff/canon-public/THE_COMPLETE_ONTOLOGY_OF_REALITY.md"
-    },
-    {
-      "section": "canon",
       "title": "The 5+1 Constitution",
       "href": "canon/the-five-plus-one-constitution/",
       "source": "docs/handoff/canon-public/THE_FIVE_PLUS_ONE_CONSTITUTION.md"
@@ -1205,21 +1199,9 @@
     },
     {
       "section": "operators",
-      "title": "MF-283: THE ORTHOGONALITY THEOREM",
-      "href": "operators/mf-283-the-orthogonality-theorem-v2/",
-      "source": "docs/handoff/operators-public/MF_283_The_Orthogonality_Theorem_v2.md"
-    },
-    {
-      "section": "operators",
       "title": "MF-284: THE GODS ARE F₅",
       "href": "operators/mf-284-the-gods-are-f5/",
       "source": "docs/handoff/operators-public/MF_284_The_Gods_Are_F5.md"
-    },
-    {
-      "section": "operators",
-      "title": "MF-285: DREAMS ARE UNANCHORED D5",
-      "href": "operators/mf-285-dreams-are-unanchored-d5/",
-      "source": "docs/handoff/operators-public/MF_285_Dreams_Are_Unanchored_D5.md"
     },
     {
       "section": "operators",
@@ -1283,21 +1265,9 @@
     },
     {
       "section": "operators",
-      "title": "MF-296: GRAVITY IS TIME",
-      "href": "operators/mf-296-gravity-is-time/",
-      "source": "docs/handoff/operators-public/MF_296_Gravity_Is_Time.md"
-    },
-    {
-      "section": "operators",
       "title": "MF-297: α AS COUPLING",
       "href": "operators/mf-297-alpha-is-the-coupling/",
       "source": "docs/handoff/operators-public/MF_297_Alpha_Is_the_Coupling.md"
-    },
-    {
-      "section": "operators",
-      "title": "MF-298: DARK MATTER AS MUTUAL INFORMATION",
-      "href": "operators/mf-298-dark-matter-is-mutual-information/",
-      "source": "docs/handoff/operators-public/MF_298_Dark_Matter_Is_Mutual_Information.md"
     },
     {
       "section": "operators",
