@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3261,
+  "entry_count": 3262,
   "entries": [
     {
       "path": ".gitattributes",
@@ -426,6 +426,23 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 2,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "00_HANDOFF/2026_07_28_corpus_reconstruction_release/00_RECEIPT.md",
+      "sha256": "2bf79e9ec822b320ff8fee9bf37ac584617fd09cc8ec94be8c247ca81792853a",
+      "bytes": 4573,
+      "owner_lane": "00_HANDOFF",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 7,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -24174,7 +24191,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 3,
+      "inbound_references": 4,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30447,7 +30464,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 11,
+      "inbound_references": 12,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30600,7 +30617,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 5,
+      "inbound_references": 6,
       "gate": null,
       "review_state": "unreviewed"
     },

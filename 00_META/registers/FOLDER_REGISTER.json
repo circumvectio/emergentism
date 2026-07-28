@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 777,
+  "entry_count": 778,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3260,
+      "tracked_file_count": 3261,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -64,7 +64,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 32,
+      "tracked_file_count": 33,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -156,6 +156,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 2,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "00_HANDOFF/2026_07_28_corpus_reconstruction_release",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
