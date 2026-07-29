@@ -66,6 +66,7 @@ explicitly "not truth labels." This register does not replace it.
 | `OPEN-EMPIRICAL` | well-posed empirical claim; discriminator and kill named; test unrun | preregistration, at `[C]` |
 | `COMPONENT-SUPPORTED` | neighbouring evidence exists for a *component*; the integrated claim does not inherit it | careful citation that names the gap |
 | `NARROWED` | the strong form failed; a named weaker form survives and is live under its own owner | citation of the weaker form only |
+| `OWNER-REOPENED` | a terminal row restored to **active investigation** by owner ruling, with its counterexample intact | work on the *question*; **never** citation of the refuted form as true |
 
 ### Terminal statuses
 
@@ -81,10 +82,20 @@ explicitly "not truth labels." This register does not replace it.
 ### The one-way rule `[S]`
 
 > A row at `FORMALLY-REFUTED`, `EMPIRICALLY-REFUTED`, or `CATEGORY-ERROR` may
-> **never** be reopened as stated. It may only be *superseded* by a new row
-> carrying a **different, explicitly weaker or retyped claim**, its own ID, its
-> own discriminator, and its own kill. The refuted row stays visible with its
-> counterexample attached.
+> **never** return to a live status *as the claim it was*. Its counterexample
+> stays attached, permanently and visibly.
+
+**Exactly three moves are lawful**, and no fourth exists:
+
+| Move | Requires | Restores |
+|---|---|---|
+| `NARROWED` | a **named weaker form**, live under its own owner | citation of the weaker form only |
+| a new `RQ` row | new ID · the weakening or retyping stated against the parent · the parent's counterexample carried · a discriminator · a kill · a survivor | a *different* question |
+| `OWNER-REOPENED` | **all four**: an owner **ruling receipt on disk** · the **counterexample intact** · the **`status_before_reopening`** recorded · a declared **`repair_path`** | **active investigation only** — never the truth of the refuted form |
+
+The four preconditions on `OWNER-REOPENED` are not ceremony. They are the entire
+defence against silent thawing, and the validator enforces every one of them.
+**A ruling can reopen a question; it cannot delete a counterexample.**
 
 This is not conservatism. It is the whole content of E9 and Refusal 5. Without
 it, "work in progress" becomes the mechanism by which a fired kill is quietly
@@ -170,8 +181,10 @@ refutes. A vow is kept or abandoned, never proved.
 > row as `status_before_reopening`. Every counterexample stands unchanged and
 > every row now carries a `repair_path`. Reopening restores active
 > investigation, never asserted truth — a ruling can reopen a question, it
-> cannot delete a counterexample. `OWNER-REOPENED` is the only lawful route from
-> terminal back to live, and it requires a ruling receipt on disk, an intact
+> cannot delete a counterexample. Of the three lawful moves in §2,
+> `OWNER-REOPENED` is the only one by which **a terminal row itself** returns to
+> a live status — `NARROWED` assigns a different status, and an `RQ` row is a new
+> row, not this one. It requires a ruling receipt on disk, an intact
 > counterexample, a recorded prior status, and a repair path; the validator
 > enforces all four.
 >
@@ -260,10 +273,50 @@ debt in the corpus and belongs on the same board as everything else.
 - It does not let a reopened question inherit its parent's old strength.
 - It does not treat the *absence* of a kill as support.
 
-**Kill criterion for this register:** if a row at `FORMALLY-REFUTED`,
-`EMPIRICALLY-REFUTED`, or `CATEGORY-ERROR` is ever edited into a live status
-without a new ID and a new discriminator, this surface has done the exact damage
-it was built to prevent, and it should be deleted rather than repaired.
+### Kill criterion for this register — **it fired, and is recorded, not reworded away**
+
+The original criterion read:
+
+> *if a row at `FORMALLY-REFUTED`, `EMPIRICALLY-REFUTED`, or `CATEGORY-ERROR` is
+> ever edited into a live status **without a new ID and a new discriminator**,
+> this surface has done the exact damage it was built to prevent, and it should
+> be deleted rather than repaired.*
+
+**It fired on 2026-07-29.** Receipt 174 moved all 22 grave rows to
+`OWNER-REOPENED` — a live status — with no new IDs and no new discriminators.
+Recorded here in the open, because a fired kill quietly logged as a pass is
+`DF-22`, and this register exists to forbid exactly that.
+
+**Why the surface is repaired rather than deleted.** The criterion tested for
+the wrong thing. It asked for a *new ID*; the damage it names is a
+**counterexample vanishing**. No counterexample vanished: all 22 rows retain
+theirs, plus their prior status and a declared repair path, under a ruling
+receipt on disk. The criterion was written before `OWNER-REOPENED` existed and
+could not see a lawful mechanism when one arrived. That is a defective test, not
+a defective act — so the test is replaced and the firing stays on the record.
+
+**Amended criterion `[S]`.** This surface has failed, and should be deleted
+rather than repaired, if any of the following is ever true:
+
+1. a terminal row appears in a live status **with its counterexample removed,
+   emptied, or softened**;
+2. an `OWNER-REOPENED` row lacks any of its four preconditions — ruling receipt
+   on disk, intact counterexample, recorded `status_before_reopening`, declared
+   `repair_path`;
+3. a reopened row is **cited as evidence that the refuted form is true**, rather
+   than as an open question;
+4. this criterion is ever narrowed, weakened, or deleted **without a dated
+   receipt recording that it fired**.
+
+**What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
+`check_claim_status.py` and were negative-tested on 2026-07-29 — emptying a
+counterexample fails the build, and so does a missing ruling receipt. **Clauses 3
+and 4 are not machine-checkable.** No validator can see a row being *cited* as
+evidence elsewhere in the corpus, and none can compel a future editor to record
+that this criterion fired before weakening it.
+
+Clause 4 is therefore the one that matters most and the one with the least
+protection. It rests on whoever edits this page next.
 
 **Machine check:** [`claim_status/CLAIM_STATUS.yaml`](claim_status/CLAIM_STATUS.yaml)
 carries these rows in the corpus JSON-subset form; run
