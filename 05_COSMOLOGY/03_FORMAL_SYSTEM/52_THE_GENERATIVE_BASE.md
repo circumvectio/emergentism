@@ -196,10 +196,44 @@ determinant `1` and **is** a word. It is the Calkin–Wilf second generator, alr
 used in `G2`'s cross-check. So the base has a native companion coordinate — it is
 simply not Suda's.
 
+**G10 · The determinant is not the only obstruction — sign is independent `[A]`.**
+`G9` is necessary, not sufficient, and the two invariants come apart in all four
+combinations. Verified:
+
+```text
+map              det   passes G9   stays in ℚ⁺   a word?
+S    x+1          +1      yes          yes         YES
+ι    1/x          −1      yes          yes         YES
+n    −x           −1      yes          NO          no  <- G9 does NOT catch it
+n∘ι  −1/x         +1      yes          NO          no  <- G9 does NOT catch it
+D    2x           +2      NO           yes         no  <- caught by det alone
+u    (x−1)/(x+1)  +2      NO           NO          no  <- over-determined
+```
+
+`n∘ι : x ↦ −1/x` (`42:374`) is the decisive witness: **determinant `+1`, passes
+`G9`, and is still not a word** — because `G1` commits every word's value to `ℚ⁺`
+and `n∘ι(1) = −1 ∉ ℚ⁺`. Both halves of that refutation are already committed text.
+
+> **THEREFORE `G9` DOES NOT CLOSE THE `§5.2` FORK.** The sign obstruction is
+> independent of the determinant obstruction, and the `−1` question is untouched
+> by anything proved here. **It remains an open owner ruling.**
+
+> **CORRECTION, 2026-07-29.** This session stated that "the hinge's determinant
+> *is* the fork — you don't get one without the other." That is false, and the
+> error mattered: it would have made `G9` appear to settle `§5.2` for free, which
+> is a selection presented as forced — the move `00_THE_FOUNDATION.md` §11 fires
+> on. `u` is **over-determined**: wrong determinant, *and* it leaves `ℚ⁺`, *and*
+> `u(1) = 0` kills it by `G3` with no matrix theory at all.
+
+*(Not claimed: that non-negative entries plus `det ±1` jointly CHARACTERISE the
+words. That is a stronger, unverified conjecture and is not asserted here.)*
+
+
 > **CORRECTION, 2026-07-29.** Before the experiment returned, this session
 > predicted the hinge would score `DERIVED` at zero premises because `u` maps `ℚ⁺`
 > into `ℚ ∩ (−1,1)` using no reals. **Staying inside `ℚ` is necessary and not
-> sufficient**; the determinant is the obstruction, and the prediction was refuted.
+> sufficient**; the determinant is **an** obstruction — and, per G10 below, **not the
+> one that keeps the base positive.** The prediction was refuted.
 
 
 **Consequence — two of the three Titan relations are enacted, not posited.**

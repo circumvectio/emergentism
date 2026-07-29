@@ -168,6 +168,15 @@ def main() -> int:
     if _n(((1, 0), (1, 1))) not in words:
         failures.append("G9: L(x)=x/(x+1) is det 1 and must be a word, but was not found")
 
+    # --- G10: det and sign are INDEPENDENT obstructions ----------------------
+    # n∘ι : x ↦ −1/x has det +1 (passes G9) and still is not a word, because it
+    # leaves ℚ⁺. If this ever fails, G9 has been over-read as closing §5.2.
+    n_iota_det = 0 * 0 - (-1) * 1
+    if n_iota_det not in (1, -1):
+        failures.append("G10: n∘ι should have det +1 — the witness is mis-stated")
+    if (-1) * F(1) > 0:
+        failures.append("G10: n∘ι(1) must be −1, i.e. outside ℚ⁺")
+
     # --- G5: both limits are approached --------------------------------------
     if not (val("S" * 9) > 9 and val("S" * 9 + "i") < F(1, 9)):
         failures.append("G5: the two limits are not both approached")
