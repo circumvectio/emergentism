@@ -119,6 +119,20 @@ form.
 
 ## 5 · The μ-criterion `[S]`
 
+> **⚠ UNDER OWNER REVIEW — HR-1, receipt 179 (2026-07-29).** This section is
+> flagged, not withdrawn. Two independent findings the same day: the
+> reclassification workflow found §4's `dim_ℝ` witness and §5.2's "genuinely
+> larger" witness **disagree over finite carriers**; and an owner observation
+> showed §4's three rows are all **outward** arrows (compactification,
+> complexification) while every `μ` is a **lift with a forgetful map** — a
+> different arrow. Checked: `dim_ℝ` kills 4 of 5 μ's, the fibre test kills 0 of 5.
+> **Neither discriminates.** In both actual failures (μ₂, μ₃) the load-bearing
+> step was **reducibility**, which the GP-MU packets already publish as their kill.
+> Receipt 179 recommends retiring type-D as the μ-criterion and restoring
+> reducibility, with §4 surviving intact as what it is — a correct taxonomy of
+> **boundary** phenomena. **Do not propagate this section into the ~112 boilerplate
+> copies until HR-1 is ruled.** The μ₂/μ₃ verdicts are unaffected either way.
+
 `E1` defines the ladder in terms of **freedoms** — "axes of allowed variation."
 `E5` defines a `μ` as an aperture "at which a **new effective freedom** becomes
 available." Read together with §4, that yields a criterion:
