@@ -8,8 +8,8 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — dimension-first release candidate recorded; external calibration and deployment open; historical receipts preserved by full filename"
-date: 2026-07-23
+status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); chronology current through 176; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+date: 2026-07-29
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
@@ -53,13 +53,38 @@ evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 
 ## 1 · The retelling rule
 
-Receipt 131 §9. When a proof-form dies, its load-bearing *uses* do not die with it — but the ledger, not "almost always," decides each case, and the named dead stay dead. **Derivation-death is not idea-death.** The record's job is to keep both facts visible at once: the proof is buried *and* the use is preserved, each at its own tier. The knife cut proof-status; it did not cut the organism.
+Receipt 131 §9. When a proof-form dies, its load-bearing *uses* do not die with it — but the ledger, not "almost always," decides each case, and the named dead stay dead **as the claims they were**. **Derivation-death is not idea-death.** The record's job is to keep both facts visible at once: the proof is buried *and* the use is preserved, each at its own tier. The knife cut proof-status; it did not cut the organism.
+
+**Amended 2026-07-29 (receipt 174).** All 22 rows below are now `OWNER-REOPENED` as **active questions**, with every counterexample intact. This does not soften "the named dead stay dead": ℤ₅ still refutes the stated `N=3` lemma, Presburger still refutes the Gödel lift, electroweak unification still collapses the D2/D3 split, *D. gigas* is still panmictic. **A ruling can reopen a question; it cannot delete a counterexample.** What changed is standing, not truth.
 
 ---
 
 ## 2 · The kill index with grave dates (22 dead forms)
 
-Full registry with per-row provenance: `00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`. Merged (not additive) from the audit worksheet, the Amrita halāhala list (P1–P12), and the two URGENT items. The named dead, each with its grave date (the dated receipt that recorded the kill):
+> **Status banner — receipt 174, 2026-07-29.** Every row in this table is now
+> `OWNER-REOPENED`: restored to **active investigation**, never to asserted truth.
+> **The table below is unchanged and must stay so** — no "Why dead" cell is
+> edited and no grave date is removed, because the counterexample is the thing
+> the reopening is required to preserve. Current status, prior status,
+> `repair_path` and the four preconditions live in the live register, not here.
+>
+> **Live status owner:** [`00_META/00_THE_CLAIM_STATUS_REGISTER.md`](../../00_META/00_THE_CLAIM_STATUS_REGISTER.md)
+> · machine form [`00_META/claim_status/CLAIM_STATUS.yaml`](../../00_META/claim_status/CLAIM_STATUS.yaml)
+> · validator `09_TOOLS/01_SCRIPTS/check_claim_status.py`.
+>
+> Two rows carry a standing caution. **Row 5** (`φ·ν=1` as a conserved discovery)
+> and **row 21** (CC-CORE-1) are reopened with **no successor** — both are the
+> seam-is-not-the-score error stated twice, and none may be invented for them.
+> **Row 9** (forced Titan-3) stays dead as *forcing*; the three Titan identities
+> were separately restored **by proof** on `Ĉ` (doc 45, `TR-01`), which is a
+> different claim and does not revive this row.
+
+Historical registry, preserved as provenance: `00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`
+is a **forwarding stub** to `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/`;
+it is not active authority and is cited here for lineage only. Merged (not
+additive) from the audit worksheet, the Amrita halāhala list (P1–P12), and the
+two URGENT items. The named dead, each with its grave date (the dated receipt
+that recorded the kill):
 
 | # | Dead form | Why dead | Grave (receipt · date) |
 |---|---|---|---|
@@ -137,6 +162,14 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 161 | `161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md` | Weltanschauung/ToE gaps made explicit; scaffold-first frontier-model assembly strategy recorded without promotion. |
 | 162 | `162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md` | Living Map, eleven-question Lab, static bounded-contribution contract, and rendered-browser verification completed; live compute and deployment withheld. |
 | 168 | `168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md` | Restored the trophic/replicator/Rosetta coordinate separation, typed η registers, Power-Max cooperation corollary, bounded mating exception, retiered Tantra chain, and corrected the classical Lotka–Volterra center; no deployment. |
+| 169 | `169_TITAN_COUNCIL_CASTE_MAP_TRIAL_2026_07_23.md` | Titan Council trial of the humans-as-ant-castes amendment; KSC-25 public-narrative row-assignment ruling. |
+| 170 | `170_TRR24_SEXUAL_SELECTION_CROSSWALK_RULING_2026_07_23.md` | TRR-24 sexual-selection crosswalk ruling; the mating-domain exception kept bounded. |
+| 171 | `171_WORKTREE_TIDY_2026_07_23.md` | Worktree tidy; repository hygiene only, no doctrine touched. |
+| 172 | `172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md` | Validation status installed as a **second axis** beside evidence tier; all 22 dead forms adjudicated into typed statuses with counterexamples cited. |
+| 173 | `173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md` | **First V-axis audit.** r126 measured Φ; nobody had measured V. 155 receipts, **zero outcome receipts returned from outside**; under the corpus's own AND-class law `P ≈ 0`. The binding constraint is contact. |
+| 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | **Owner ruling: all 22 dead forms → `OWNER-REOPENED`**, counterexamples intact, each with a `repair_path`. Separately, the three Titan identities restored **by proof** on `Ĉ`; `KSC-04` preserved. |
+| 175 | `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` | Sphere primacy ruled and executed; the number line shown to be the `ι`-invariant **meridian** of the sphere, so nothing was lost by it; arithmetic becomes chart-local; Suda adopted at tier. |
+| 176 | `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` | `R0` "no necessary being" adopted into K-5 as the foundational **refusal**, prior to the five and different in type; `KSC-28` recorded. Later restratified — the base is the three relations; the sphere is emergent. |
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -175,7 +208,7 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 
 ## 6 · The receipt-prefix collision census (full)
 
-Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, taken 2026-07-20. **Rule: never rename any receipt.** A bare № is ambiguous wherever this table lists more than one entry — cite the **full filename**, not the number. Dates are filename dates where present; otherwise the file's modification date on 2026-07-20 (`[B]` disk state). One-line scopes are filename-derived `[B]`.
+Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20 and not re-run since**. Receipts 169–176 are therefore **absent from the table below** — they are listed in §3 and are known to carry no prefix collision, but the census itself is stale as of 2026-07-29 and is marked so rather than silently extended. **Rule: never rename any receipt.** A bare № is ambiguous wherever this table lists more than one entry — cite the **full filename**, not the number. Dates are filename dates where present; otherwise the file's modification date on 2026-07-20 (`[B]` disk state). One-line scopes are filename-derived `[B]`.
 
 | Prefix | Filename | Date | One-line scope |
 |---|---|---|---|
