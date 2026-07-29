@@ -77,10 +77,15 @@ PRESUPPOSED — prior to any stated base. Not previously listed; the audit found
       operation with inverses. The relations below cannot be STATED without it.
       Doc 46 §4's regress proves something is always prior to any stated base.
 
-BASE — posited. Three relations, killable, nothing forced.
+BASE — posited. FOUR posits, killable, nothing forced.
   B1  ⊙ = • × ○        B2  • = ⊙ / ○        B3  ○ = ⊙ / •
-      Content: ⊙ is the IDENTITY and {•, ○} is an INVERSE PAIR.
-      One fact, three faces — (B2) gives •=○⁻¹, (B3) gives ○=•⁻¹, (B1) gives •○=⊙.
+  B4  ⊙ = e           ⊙ IS THE IDENTITY — posited [S], not derived.
+      Ruled 2026-07-29 (G-0, exit B-ii). B1–B3 alone do NOT entail that ⊙ is the
+      identity or that {•, ○} is an inverse pair: in any group B2 and B3 are
+      algebraic rearrangements of B1, so the three constrain nothing beyond
+      ⊙ = • × ○. The identity was previously harvested from the notation
+      "writing e = ⊙". It is now stated as the posit it is.
+      GIVEN B4, and only then: (B2) gives •=○⁻¹, (B3) gives ○=•⁻¹, (B1) gives •○=⊙.
 
 EMERGENT — each step a standard construction. None is forced; each solves a named problem.
   1  ℤ                free group on one generator, no torsion imposed
@@ -96,8 +101,8 @@ EMERGENT — each step a standard construction. None is forced; each solves a na
 
 ### What the relations actually say `[A]`
 
-> **⚠ FOUNDATIONAL DEFECT — flagged 2026-07-29, receipt 180 pending. This block is
-> under repair; do not cite it.** `B1`–`B3` **do not entail** the content stated
+> **⚠ DISCHARGED 2026-07-29 by the fourth posit `B4` (G-0, exit B-ii). Retained as
+> the record of what was wrong and why. The block below is now correct GIVEN `B4`.** `B1`–`B3` **do not entail** the content stated
 > above them. Counter-model, in this page's own witness structure `(ℤ,+)`:
 > `⊙=5`, `•=3`, `○=2` satisfies `B1` (5=3+2), `B2` (3=5−2) and `B3` (2=5−3) while
 > `⊙` is **not** the identity and `{•,○}` is **not** an inverse pair. `(7,4,3)`
