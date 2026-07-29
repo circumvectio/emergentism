@@ -52,7 +52,9 @@ R0_CORE = [
 # Stratum assignments. Drift here is the failure this validator exists to catch:
 # a selected item quietly presented as forced is the session's own named failure mode.
 # Amended 2026-07-29: the bottom stratum is the declared BASE, not FORCED.
-# F1 was shown to be a selection; a base may be selected. Nothing is forced.
+# G-0b exit Z: F1 is folded into PRESUPPOSED as a property of the P1 apparatus.
+# It is NOT a selection — exit Z does not ratify sentence-implies-selection.
+# A base may still be selected. Nothing is forced.
 PRESUPPOSED = ["P1"]
 BASE = ["B1", "B2", "B3"]
 EMERGENT = ["emergent"]

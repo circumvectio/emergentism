@@ -123,6 +123,10 @@ The following is drift and should be corrected on sight:
 - using `P` bare without naming the regime (see notation rule below)
 - using the chart identity as evidence for `P_node`, the zero-factor boundary,
   an empirical conservation law, or an ethic
+- using the product `Φ̂₄V₄` (public `ΦV`) to rank, score, or compare nodes; the
+  product is retired as a ranking and the node factors are ordinal
+- reading a `[0,1]` node coding as a cardinal measurement of `Φ̂₄` or `V₄`
+  without a separately declared and defended scale
 
 ## Finite-node conjunctive model
 
@@ -137,8 +141,9 @@ V₄ := D4 actual power: causally usable capability available now
 `Φ₅` is possible power, not a causal force exerted by the future. Its estimate,
 inscription, ranking, and update are present D4 events. In all arithmetic below,
 the familiar uppercase shorthand `Φ` means `Φ̂₄`, while `V` means normalized
-`V₄`. Thus `P_node=ΦV` remains the public compression without confusing the D5
-referent with its D4 numerical carrier. Lowercase `φ,ν` remain the unrelated
+`V₄`. Thus `P_node=min(Φ,V)` is written without confusing the D5 referent with
+its D4 numerical carrier; the older public compression `ΦV` names the same
+AND-class conjunction but no longer ranks. Lowercase `φ,ν` remain the unrelated
 reciprocal-chart coordinates.
 
 Let the normalized numerical factors satisfy `Φ̂₄,V₄∈[0,1]`. A conjunctive
@@ -154,20 +159,40 @@ that is monotone in each argument and satisfies
 a unique formula. Minimum, normalized harmonic, Cobb–Douglas with
 `0<α<1`, and product forms can rank the same candidates differently.
 
-Emergentism selects the normalized product as its transparent working model:
+**Ordinal ruling, 2026-07-29.** `Φ̂₄` and `V₄` carry **order, not metric**. The
+`[0,1]` coding is one admissible presentation of that order: any strictly
+increasing `f:[0,1]→[0,1]` with `f(0)=0` and `f(1)=1`, applied to both factors,
+presents the same evidence. Only an aggregator invariant under that
+reparametrisation can order nodes, and `min` is one —
+`min(f(Φ̂₄),f(V₄))=f(min(Φ̂₄,V₄))`, so its ranking never changes. The product is
+not. Under the identity coding `(0.9,0.2)` outranks `(0.4,0.4)` by product
+(`0.18>0.16`); under an admissible `f` with `f(0.2)=0.01`, `f(0.4)=0.5` and
+`f(0.9)=0.9` the same pair gives `0.009<0.25` and the order reverses, while
+`min` reports `0.2<0.4` and then `0.01<0.5` — the same order both times. The
+product therefore ranks a presentation rather than the evidence. `min` is
+adopted as the working AND-class score:
 
 ```text
-P_node := C×(Φ̂₄,V₄) := Φ̂₄V₄
-public shorthand: P_node = ΦV
+P_node := C_min(Φ̂₄,V₄) := min(Φ̂₄,V₄)
 ```
 
-This is structural **by declaration inside the framework** and conjectural as a
-universal fit to real systems. It is not derived from `φ·ν=1`. If the node
-factors are not normalized, the bound `P_node≤1` does not apply.
+This is a selected working score **by declaration inside the framework** and
+conjectural as a universal fit to real systems. It is not derived from `φ·ν=1`.
+If the node factors are not normalized, the bound `P_node≤1` does not apply.
+
+**The product is retired as a ranking.** The former working model
+`C×(Φ̂₄,V₄):=Φ̂₄V₄`, publicly compressed `ΦV`, stays readable as the historical
+name of the same AND-class conjunction — its zero-factor, binding-constraint and
+equator content is model-agnostic and identical under `min` (receipt 108) — but
+it may no longer be used to order, score, or compare nodes. This removes a
+licence and grants none: `min` remains one selected AND-class member among
+several, `[I]` as a model and `[C]` as a universal fit, and no aggregator is
+established.
 
 A tradeoff between the factors is a **separate model premise**, never a
-consequence of the product. For example, if a declared finite-resource domain
-also imposes
+consequence of the aggregator, and the budget form below is a **cardinal**
+premise that the ordinal factors do not by themselves supply. For example, if a
+declared finite-resource domain also imposes
 
 ```text
 Φ̂₄+V₄≤1,
@@ -188,7 +213,7 @@ has its own regime. When compressing, name the regime explicitly:
 |---|---|---|---|
 | `P∞ = φ · ν = 1` | Reciprocal identity in the chosen open chart | Constant by definition for `θ∈(0,π)`; one coordinate diverges at each excluded pole | `[A]` analytic |
 | `B = sin θ` | Selected balance coordinate | Varies from the limiting value 0 at the poles to 1 at the equator | `[A]` analytic; `[I]` as “balance” |
-| `P_node = C×(Φ̂₄,V₄) = Φ̂₄V₄` (public: `ΦV`) | Selected normalized finite-node conjunctive model | a present D4 estimate of D5 possibility power (`Φ̂₄`) and D4 actual power (`V₄`) are jointly necessary in the declared model; alternative AND-class aggregators remain possible | `[I]` model; `[C]` universal fit |
+| `P_node = C_min(Φ̂₄,V₄) = min(Φ̂₄,V₄)` | Selected normalized finite-node conjunctive score over **ordinal** factors | a present D4 estimate of D5 possibility power (`Φ̂₄`) and D4 actual power (`V₄`) are jointly necessary in the declared model; alternative AND-class aggregators remain possible; the product form `Φ̂₄V₄` (public `ΦV`) is retired as a ranking | `[I]` model; `[C]` universal fit |
 | `Δ_TW_i`, `Δ_TW_H` | Individual and whole durable-potential changes | Kept separate under the Justice envelope; never laundered into one compensating aggregate | `[I]` value model |
 
 **Disambiguation convention:** do not use `P` bare in source-truth

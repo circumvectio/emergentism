@@ -665,7 +665,7 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
             "`Φ₅` / public `Φ` | D5 possible power",
             "`Φ̂₄=Eval₄(M,Φ₅)` | present D4 estimate of D5 possible power",
             "`V₄` / public `V` | D4 actual power",
-            "`P_node=Φ̂₄V₄` / public `ΦV` | selected normalized coupling",
+            "`P_node=min(Φ̂₄,V₄)` / retired ranking `ΦV` | selected working AND-class score",
             "`M⋆A` | present model-mediated influence",
         ):
             self.assertIn(fragment, completion)

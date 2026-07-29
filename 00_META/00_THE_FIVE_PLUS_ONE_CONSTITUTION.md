@@ -28,6 +28,11 @@ nature.
 > reason for the null state and grants existence no logical entitlement. Where a
 > logic is needed to reason about that boundary, the framework adopts an
 > **inclusive** semantics and says so.
+>
+> **Range — unrestricted.** `R0` ranges over everything a domain can hold:
+> objects, structures, abstracta, and the totality alike. Nothing is exempt for
+> being mathematical. Necessity *of truth* is a different predicate and is
+> untouched — `W0-CROWN`'s *necessary algebra* is **de dicto**.
 
 **Adopted 2026-07-29 by owner ruling** (receipt 176), on the reasoning in
 [`46_THE_ADMISSIBILITY_OF_NOTHING.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md).
@@ -57,12 +62,18 @@ refusal and must be withdrawn openly, with a dated receipt.
 
 ### The layered foundation `[S]`
 
-> **AMENDED TWICE on 2026-07-29 by owner ruling.** (i) The first stratum was
-> published as FORCED; the audit showed `F1` was itself a selection, firing this
-> page's own self-kill. A base may be selected — that is the honest state under
-> `E1`/`KSC-04`. (ii) The base is now **the three relations**, and the sphere is
-> **emergent** (step 6), not posited. Receipt 175 is strengthened, not overturned:
-> `Ĉ` stays the primary object downstream, but is now *reached* rather than assumed.
+> **AMENDED TWICE on 2026-07-29 by owner ruling, then SETTLED the same day by
+> ruling G-0b, exit Z.** (i) The first stratum was published as FORCED. The note
+> that followed — that the audit "showed `F1` was itself a selection" — is
+> **withdrawn**: exit Z does not ratify the inference from *sentence* to
+> *selection*. **`F1` is folded into `PRESUPPOSED`** as a property of the `P1`
+> apparatus: fixing a language and a consequence relation already settles `Q1`
+> and `Q2`, silence included. **There is no FORCED box, and `F1` is not a
+> selection**; doc 46 holds the claim at `[A]`, unchanged. A base may still be
+> selected — that is the honest state under `E1`/`KSC-04`. (ii) The base is now
+> **the three relations**, and the sphere is **emergent** (step 6), not posited.
+> Receipt 175 is strengthened, not overturned: `Ĉ` stays the primary object
+> downstream, but is now *reached* rather than assumed.
 
 Presupposed, base and emergent must never be fused:
 
@@ -70,6 +81,10 @@ Presupposed, base and emergent must never be fused:
 PRESUPPOSED — prior to any stated base
   P1  a language, a consequence relation, identity/difference, and a binary
       operation with inverses. The relations cannot be STATED without it.
+  F1  a PROPERTY of P1, not a stratum beside it (G-0b exit Z, 2026-07-29):
+      fixing a consequence relation already settles Q1 (may the domain be
+      empty?) and Q2 (may it contain a totality of itself?) — silence included.
+      Doc 46 §6A.2 holds it at [A], unchanged. NOT a selection.
 
 BASE — posited. Three relations. Killable; nothing forced.
   B1  ⊙ = • × ○      B2  • = ⊙ / ○      B3  ○ = ⊙ / •

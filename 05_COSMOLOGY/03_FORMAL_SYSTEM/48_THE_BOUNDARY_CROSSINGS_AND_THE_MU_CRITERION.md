@@ -117,29 +117,53 @@ is purely type-D. **Totality, order and dimension are independent axes of
 boundary change**, and conflating them is the error behind more than one buried
 form.
 
+**What this typology is for, after HR-1 `[A]`.** It governs **boundary**
+crossings — the outward arrows that adjoin a point, dissolve an order, or add a
+dimension to a given space. It is **not** the test for `μ`-crossings: a `μ` is a
+lift with a forgetful map back down, a different arrow, and HR-1 (2026-07-29)
+retired type-D as the μ-criterion for exactly that reason. §4 is unchanged by
+that ruling and is not subordinate to it — it was correct about boundaries all
+along, and it remains the instrument for them.
+
 ## 5 · The μ-criterion `[S]`
 
-> **⚠ UNDER OWNER REVIEW — HR-1, receipt 179 (2026-07-29).** This section is
-> flagged, not withdrawn. Two independent findings the same day: the
-> reclassification workflow found §4's `dim_ℝ` witness and §5.2's "genuinely
-> larger" witness **disagree over finite carriers**; and an owner observation
-> showed §4's three rows are all **outward** arrows (compactification,
-> complexification) while every `μ` is a **lift with a forgetful map** — a
-> different arrow. Checked: `dim_ℝ` kills 4 of 5 μ's, the fibre test kills 0 of 5.
-> **Neither discriminates.** In both actual failures (μ₂, μ₃) the load-bearing
-> step was **reducibility**, which the GP-MU packets already publish as their kill.
-> Receipt 179 recommends retiring type-D as the μ-criterion and restoring
-> reducibility, with §4 surviving intact as what it is — a correct taxonomy of
-> **boundary** phenomena. **Do not propagate this section into the ~112 boilerplate
-> copies until HR-1 is ruled.** The μ₂/μ₃ verdicts are unaffected either way.
+> **RULING — HR-1, Option C. Owner, 2026-07-29 (receipt 179).** **Type-D is
+> retired as the μ-criterion; reducibility is restored.** Two findings the same
+> day forced it: the reclassification workflow found §4's `dim_ℝ` witness and
+> §5.2's "genuinely larger" witness **disagree over finite carriers**; and an
+> owner observation showed §4's three rows are all **outward** arrows
+> (compactification, complexification) while every `μ` is a **lift with a
+> forgetful map** — a different arrow. Checked: `dim_ℝ` kills 4 of 5 μ's, the
+> fibre test kills 0 of 5. **Neither discriminates.** In both actual failures
+> (μ₂, μ₃) the load-bearing step was **reducibility**, which the GP-MU packets
+> already publish as their standing kill.
+>
+> **No verdict changes.** μ₂ and μ₃ still fail, on the arguments that actually
+> carried them; μ₀ still owes its distinction discriminator; μ₁ and μ₄ still
+> stand. §4 survives intact as a correct taxonomy of **boundary** phenomena — see
+> its closing note — and simply stops being the test for lifts. The ~112
+> boilerplate epistemic-contract blocks are **not** amended: they name five typed
+> interfaces `μ₀…μ₄` and tier each emergence reading separately, both of which
+> this ruling leaves true. How many of those interfaces are candidate `μ`s is the
+> separate question this section answers.
 
 `E1` defines the ladder in terms of **freedoms** — "axes of allowed variation."
 `E5` defines a `μ` as an aperture "at which a **new effective freedom** becomes
-available." Read together with §4, that yields a criterion:
+available." A `μ` is a **lift** `D_n → D_{n+1}` carrying a forgetful map back
+down — which is why `KSC-05` demands a recovery test at all. The criterion is
+therefore stated on the lift, not on the boundary:
 
-> **Only type-D crossings are candidate `μ`-crossings.**
-> A crossing that repairs totality or dissolves an order, without gaining a
-> degree of freedom, is a genuine boundary crossing and **not** a `μ`.
+> **A crossing is a candidate `μ` iff the higher description is NOT formally
+> reducible to the frozen lower one.**
+> This is the GP-MU packets' own standing kill: where formal equivalence or
+> reduction accounts for the claimed novelty, the crossing is not a `μ`, however
+> much apparatus it appears to add.
+
+**Why §4's crossings are still not `μ`s.** §4 taxonomises **outward** arrows —
+one adjoins a boundary or a dimension to a given space. Those are not lifts and
+carry no forgetful map from a higher description, so they are not `μ`-candidates
+at all. The classifications in §5.1, §5A.3 and §5B therefore stand unchanged;
+only the reason is restated.
 
 Three consequences, all of which *confirm* existing canon rather than overturn
 it:
@@ -149,9 +173,11 @@ owner's fence — *"division by zero… neither defines nor proves `μ₀`"* —
 holding as a **theorem** rather than a caution. The fence was right; §4 says why.
 
 **5.2 `KSC-22` is vindicated and explained.** It rules that adjoining `∞_P` does
-not create D2 — correct, because `ℝ → ℝP¹` is type-T/O, not type-D. And it
-selects the *relational lift* as the D2 neighbour — correct, because the space of
-configurations over a carrier is a genuine dimension gain.
+not create D2 — correct, because `ℝ → ℝP¹` is a boundary crossing of type-T/O,
+not a lift. And it selects the *relational lift* as the D2 neighbour — correct;
+the space of configurations over a carrier is genuinely larger than the carrier.
+After HR-1 that size fact no longer decides `μ₁`: reducibility does, and the
+`GP-MU1` packet leaves it open.
 
 A precision that reconciles two earlier results: a **single** graph
 `Γ_f = {(x,f(x))}` is a curve homeomorphic to its domain and adds nothing —
@@ -160,9 +186,10 @@ relations** over the carrier is the D2 object, and it is genuinely larger. One
 graph is not a lift; the configuration space is.
 
 **5.3 The criterion is a live test.** Any future `μ` claim must now exhibit the
-gained freedom, not merely a repaired operation or a dissolved order. This is
-narrower than the `KSC-05` contract and does not replace it — a candidate must
-still supply boundary, saturation statistic, threshold, novelty test, recovery,
+failure of formal reduction to the frozen lower description — not merely a
+repaired operation, a dissolved order, or a larger carrier. This is narrower
+than the `KSC-05` contract and does not replace it — a candidate must still
+supply boundary, saturation statistic, threshold, novelty test, recovery,
 prediction and kill.
 
 ## 5A · Test case — "a straight line is a circle of infinite diameter" `[A]`
@@ -266,9 +293,10 @@ must not be read as licensing more than it earns:
   and maps. None is about the world.
 - **`μ₀` remains `[I/C]`** and still owes a reproducible distinction
   discriminator and a lower-description recovery test.
-- **Type-D is necessary, not sufficient.** A dimension gain makes a crossing a
-  *candidate* `μ`; it does not make it an emergence event. Formal reducibility
-  can still account for it — `GP-MU2`'s kill stands.
+- **Irreducibility is necessary, not sufficient.** A failure to reduce makes a
+  crossing a *candidate* `μ`; it does not make it an emergence event, and
+  `currently_unreduced` never proves irreducibility. A dimension gain is now
+  neither — HR-1 retired it — and `GP-MU2`'s kill stands.
 
 ## 7 · Claims and kills
 
@@ -280,7 +308,7 @@ must not be read as licensing more than it earns:
 | `f_N` is total on `ℂP¹` | `[A]` | exhibit a point of `ℂP¹` where it is undefined |
 | compactification gains no dimension | `[A]` | show `dim ℂP¹ ≠ dim ℂ` |
 | totality, order and dimension are independent axes | `[A]` | show one always accompanies another |
-| only type-D crossings are candidate `μ`s | `[S]` | show `E1`/`E5` define freedom without dimension |
+| a crossing is a candidate `μ` only if it is not formally reducible to the frozen lower description | `[S]` | exhibit a licensed `μ` whose higher description reduces formally to the lower one |
 | the division boundary is type-T, hence not `μ₀` | `[S]` | exhibit the freedom it gains |
 | a single graph adds nothing; the configuration space does | `[A]` | show `Γ_f` is not homeomorphic to its domain |
 | a sphere-circle through `N` projects to a straight line | `[A]` | exhibit one that projects to a bounded curve |

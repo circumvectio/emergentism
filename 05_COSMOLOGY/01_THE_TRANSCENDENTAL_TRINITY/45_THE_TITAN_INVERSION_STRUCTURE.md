@@ -282,7 +282,7 @@ finity on it would seat it on something that provably does not exist.
 
 ### 8.2 The repair, which keeps the intent `[A]`
 
-The **set / proper-class** distinction of NBG–MK does exactly the intended work:
+The **set / proper-class** distinction of NBG does exactly the intended work:
 
 | Seat | Rigorous object | Why it fits |
 |---|---|---|

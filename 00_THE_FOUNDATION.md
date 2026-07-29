@@ -11,7 +11,7 @@ title: "The Foundation"
 status: "ACTIVE — single statement of the foundation; a projection of K-1 and K-5, never an eighth kernel surface"
 date: 2026-07-29
 owner: "Projection only. K-5 owns R0; K-1 owns the grammar; docs 45–47 own the formal results."
-evidence_tier: "[A] the forced items and the theorems; [S] the selections and the architecture; [I] the readings"
+evidence_tier: "[A] the presupposed boundary question and the theorems; [S] the selections and the architecture; [I] the readings"
 parents:
   - 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
   - 00_META/00_SETTLED_CANON_REGISTRY.md
@@ -55,12 +55,18 @@ killed.
 
 ## 2 · The three strata `[S]`
 
-> **AMENDED 2026-07-29 by owner correction, after audit.** The first stratum was
-> published as **FORCED**. That was wrong, and the audit fired this page's own
-> §11 self-kill against it: `F1` — *"every framework must settle Q1 and Q2"* — is
-> a sentence, so a metalanguage is prior to it, so it is a **selection** sitting
-> in a box reserved for what admits none. It could not take `R0`'s escape either,
-> since a refusal asserts nothing and `F1` is essentially assertoric.
+> **AMENDED 2026-07-29 by owner correction, after audit; SETTLED the same day by
+> ruling G-0b, exit Z.** The first stratum was published as **FORCED**. That was
+> wrong — but not for the reason first printed here. The published reason, that
+> `F1` — *"every framework must settle Q1 and Q2"* — is a sentence and therefore a
+> **selection**, is **withdrawn together with the box it was meant to empty**:
+> exit Z does not ratify the inference from *sentence* to *selection*, and that
+> inference now appears in no formal document of this corpus. **Exit Z folds
+> `F1` into `PRESUPPOSED`.** It is a property of the `P1` apparatus, not a
+> stratum beside it: whatever can state a claim has already fixed a language and
+> a consequence relation, and fixing one settles both boundaries — silence
+> included. **There is no FORCED box, and `F1` is not a selection.** Doc 46 holds
+> the claim at `[A]`, unchanged.
 >
 > The owner's correction is not a patch. **The bottom stratum was never "what is
 > forced" — it is the declared BASE, and what stands on it is EMERGENT.** A base
@@ -76,6 +82,10 @@ PRESUPPOSED — prior to any stated base. Not previously listed; the audit found
   P1  a language, a consequence relation, identity and difference, and a binary
       operation with inverses. The relations below cannot be STATED without it.
       Doc 46 §4's regress proves something is always prior to any stated base.
+  F1  a PROPERTY of P1, not a stratum beside it. Ruled 2026-07-29 (G-0b, exit Z).
+      Fixing a language and a consequence relation already settles Q1 (may the
+      domain be empty?) and Q2 (may it contain a totality of itself?) — silence
+      included. Doc 46 §6A.2 holds it at [A], unchanged. NOT a selection.
 
 BASE — posited. FOUR posits, killable, nothing forced.
   B1  ⊙ = • × ○        B2  • = ⊙ / ○        B3  ○ = ⊙ / •
@@ -206,6 +216,11 @@ defect. It is the base staying world-empty, exactly as `§9` requires.
 > reason for the null state and grants existence no logical entitlement. Where a
 > logic is needed to reason about that boundary, the framework adopts an
 > **inclusive** semantics and says so.
+>
+> **Range — unrestricted.** `R0` ranges over everything a domain can hold:
+> objects, structures, abstracta, and the totality alike. Nothing is exempt for
+> being mathematical. Necessity *of truth* is a different predicate and is
+> untouched — `W0-CROWN`'s *necessary algebra* is **de dicto**.
 
 **Why a refusal and not an axiom `[A]`.** The contingency of existence cannot be
 carried by an axiom, and the proof is short:
@@ -402,7 +417,9 @@ A foundation is precisely where these leak. Carried verbatim:
   ethic, no conservation law, no node-power result follows from them.
 - **`R0′` is not plenitude.** NBG admits `V` while asserting nothing about what
   exists. `E4`'s plenitude stays `[C]` with its unpaid `REACHABLE` debt
-  (`RQ-09`); "everything coherent exists" stays retired.
+  (`RQ-09`); "everything coherent exists" stays retired. `R0′` commits to **NBG
+  alone**, and that declines MK rather than refuting it — no committed sentence
+  of this corpus excludes MK.
 - **Correlativity is not generation.** `•` does not produce `○`. Madhyamaka
   states the same fence more forcefully: `śūnyatā` is itself empty, and
   converting emptiness into a ground is the error the tradition names. Same rule
@@ -447,10 +464,10 @@ which is already the corpus's own `D0` typing.
 
 | Stratum | Claim | Kill |
 |---|---|---|
-| `F1` | the boundaries must be answered | exhibit a formal framework settling neither, even by convention |
+| `F1` in `P1` | the boundaries must be answered | exhibit a formal framework settling neither, even by convention |
 | `F2` | the unit is unique | exhibit a group with two identities |
 | `R0` | no necessary being | a sound argument for a necessary being |
-| `R0′` | the totality is admissible | a contradiction in NBG/MK class theory |
+| `R0′` | the totality is admissible | derive a contradiction **inside NBG itself** |
 | `S1` | sphere primacy | show the corpus needs a structure unavailable on `Ĉ` |
 | `T1` | the three identities | exhibit an admissible coupled path where the product is not `1` |
 | `T2` | `1` is the unique `ι`-fixed point on the positive ray | exhibit a second |

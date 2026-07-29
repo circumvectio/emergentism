@@ -191,7 +191,7 @@ any field. So `N = 0` — contradiction.
 ### 3A.3 "Forbidden" overstates it `[S]`
 
 A prohibition implies someone prohibiting. Nothing here is a decree, and
-presenting it as one would be exactly the error `F1` was demoted for — a
+presenting it as one would be exactly the type-fusion error `KSC-28` fences — a
 theorem dressed as a choice, or a choice dressed as a theorem.
 
 The accurate word is **foreclosed**: closed off by the structure's own axioms,

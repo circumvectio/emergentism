@@ -128,7 +128,7 @@ These axes must never be collapsed into one another:
 | `Φ₅` / public `Φ` | D5 possible power: the structured modal potential of the relevant option field |
 | `Φ̂₄=Eval₄(M,Φ₅)` | present D4 estimate of D5 possible power; the only `Φ` value that enters current arithmetic |
 | `V₄` / public `V` | D4 actual power: causally usable capability or means available now |
-| `P_node=Φ̂₄V₄` / public `ΦV` | selected normalized coupling of D5 possibility power to D4 enactment power, not a uniquely derived world law |
+| `P_node=min(Φ̂₄,V₄)` / retired ranking `ΦV` | selected working AND-class score over ordinal factors, not a uniquely derived world law; the product form `Φ̂₄V₄` is retired as a ranking (2026-07-29) |
 | `Φ̂₄+V₄≤1` | optional finite-resource constraint; only when declared does `Φ̂₄=1` force `V₄=0` |
 | `M⋆A` | present model-mediated influence on present selection, not physical retrocausality |
 

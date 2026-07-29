@@ -1,7 +1,7 @@
 ---
 title: "Receipt 179 — HR-1 decision packet: type-D was measuring the wrong arrow"
 date: 2026-07-29
-status: "DECISION PACKET — prepared for the owner. Nothing is ruled here."
+status: "DECISION PACKET — RECOMMENDATION ADOPTED. The owner ruled HR-1 as Option C on 2026-07-29; the packet itself still rules nothing."
 evidence_tier: "[A] the arrow analysis and the two test results; [S] the proposal; [I] the reading"
 owner: "Prepared for the K-1/K-4 owner. This receipt rules nothing."
 parents:
@@ -16,6 +16,13 @@ parents:
 μ work since the reclassification. This packet states what the options actually
 cost, and proposes one — because a third possibility has appeared that was not on
 the original list.
+
+> **OUTCOME — ADOPTED, 2026-07-29.** The owner ruled HR-1 as **Option C**: type-D
+> is retired as the μ-criterion and reducibility is restored; doc 48 §4 survives
+> intact as the taxonomy of boundary phenomena; no verdict changed. The ruling is
+> landed in `../../05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md`
+> §5 and recorded in `KSC-05`. This receipt is preserved as the packet it was —
+> the ruling is the owner's, not the packet's.
 
 ## §1 · What surfaced it `[I]`
 
@@ -94,7 +101,7 @@ which `KSC-28` forbids. **Cost: the criterion voids its own worked example.**
 survive. Keeps §5.2 but leaves §4's table stating something the document does not
 use. **Cost: the published table remains wrong.**
 
-**Option C — recommended. Retire type-D as the μ-criterion; restore reducibility.**
+**Option C — recommended; ADOPTED by the owner 2026-07-29. Retire type-D as the μ-criterion; restore reducibility.**
 
 ```text
 A crossing is a candidate μ iff the higher description is NOT formally
@@ -114,7 +121,7 @@ into ~112 files in a form that would not survive contact.
 
 ## §6 · What this receipt does not do
 
-- It rules nothing. HR-1 remains open and is the owner's.
+- It rules nothing. HR-1 was the owner's; the owner ruled it Option C the same day, and that ruling is landed in doc 48 §5 and `KSC-05`, not here.
 - It does not restore μ₂ or μ₃. Both failures survive the change of instrument.
 - It does not settle `R0`'s scope or NBG-vs-MK; those two remain open.
 - It does not touch any tier, counterexample or tombstone.

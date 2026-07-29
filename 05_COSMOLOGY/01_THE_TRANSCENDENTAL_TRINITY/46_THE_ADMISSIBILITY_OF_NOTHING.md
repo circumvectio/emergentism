@@ -365,8 +365,13 @@ Q2  may it contain a TOTALITY of itself?
 |---|---|---|---|
 | classical FOL + ZF | no | no | mainstream mathematics — **takes neither horn** |
 | inclusive logic + ZF | yes | no | free logic |
-| classical FOL + NBG/MK | no | yes | class theory; `V` as a proper class |
-| **inclusive + NBG/MK** | **yes** | **yes** | **Emergentism's corner** |
+| classical FOL + NBG | no | yes | class theory; `V` as a proper class |
+| **inclusive + NBG** | **yes** | **yes** | **Emergentism's corner** |
+
+**Which class theory `[S]`.** `R0′` commits to **NBG** — the weaker seat, since
+NBG is conservative over ZFC and MK is not. **MK is declined, not refuted:** no
+committed sentence of this corpus excludes it, so this is one more selection at
+a boundary, revisable by ruling and not by discovery.
 
 The top row is live, dominant, and coherent, and it refuses both Titans:
 classical FOL makes `∃x(x=x)` valid by convention, and ZF forbids the universal
@@ -404,7 +409,7 @@ the corpus must pick:
 
 | Reading | Home | Object |
 |---|---|---|
-| the totality that is **not** self-membered | NBG / MK | `V`; under Foundation `R={x:x∉x}=V` |
+| the totality that is **not** self-membered | NBG | `V`; under Foundation `R={x:x∉x}=V` |
 | genuine circularity, `x ∈ x` | **non-well-founded set theory** (Aczel's AFA) | e.g. `Ω = {Ω}` |
 
 Doc 45 §8.2 seated `○` on the **first** reading. "Even if self-referential"
@@ -533,8 +538,8 @@ forced.* It should be written as a **standard**, not a confession.
 | the poles are co-instituted; `ι` is total iff both are present | `[A]` | define a total inversion on a one-pole compactification |
 | correlativity, never generation: `•` does not produce `○` | `[S]` | any owner deriving content from `•` alone |
 | the `•`/`○` dilemma is **not** exhaustive — FOL+ZF takes neither horn | `[A]` | show classical FOL admits `D=∅` or ZF admits a universal set |
-| every framework must settle `Q1` and `Q2`; the boundaries are forced, the answers selected | `[A]` | exhibit a formal framework that settles neither, even by convention |
-| Emergentism's corner is `Q1=yes, Q2=yes` (inclusive + NBG/MK) | `[S]` declared | the corpus is shown to rely on a theorem unavailable in that corner |
+| every framework must settle `Q1` and `Q2`; the boundaries are forced, the answers selected — routed as `F1`, folded into `PRESUPPOSED` as a property of the `P1` apparatus by ruling G-0b exit Z (2026-07-29), which changes nothing asserted here and does **not** make it a selection | `[A]` | exhibit a formal framework that settles neither, even by convention |
+| Emergentism's corner is `Q1=yes, Q2=yes` (inclusive + NBG; MK declined, not refuted) | `[S]` declared | the corpus is shown to rely on a theorem unavailable in that corner |
 | admitting a totality-object ≠ asserting plenitude | `[S]` | any owner citing `Q2=yes` as support for `W0-CROWN` or `E4` |
 | `B ⟹ ◇A` via Lindenbaum + Henkin, `L`-relative, as admissibility | `[A]` | a consistent set with no maximal consistent extension |
 | `A ⟹ ◇B` holds in inclusive logic and fails in classical FOL | `[A]` | exhibit an empty-domain model in classical FOL |

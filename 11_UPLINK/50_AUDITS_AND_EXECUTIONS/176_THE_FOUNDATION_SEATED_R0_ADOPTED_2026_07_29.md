@@ -72,10 +72,19 @@ boundary.
 ## §3 · The foundation, typed `[S]`
 
 The single most important thing in this receipt is that **the strata are not
-fused**. Only the first is forced.
+fused**.
+
+> **AMENDED 2026-07-29 by ruling G-0b, exit Z.** This receipt published a
+> `FORCED` stratum and the sentence *"Only the first is forced."* Both are
+> withdrawn. There is no FORCED stratum: **`F1` is folded into `PRESUPPOSED`**
+> as a property of the `P1` apparatus — fixing a language and a consequence
+> relation already settles `Q1` and `Q2`, silence included. The ruling does
+> **not** hold that `F1` is a selection, and doc 46 holds the claim at `[A]`,
+> unchanged. The original heading is struck below, not erased.
 
 ```text
-FORCED — no selection available
+PRESUPPOSED — a property of the P1 apparatus, not a stratum beside it
+              [struck 2026-07-29 by G-0b exit Z: "FORCED — no selection available"]
   F1  every framework must settle Q1 (may the domain be empty?)
       and Q2 (may it contain a totality of itself?) — silence is an answer
   F2  [WITHDRAWN 2026-07-29 — FALSE. It read "a multiplicative structure has exactly

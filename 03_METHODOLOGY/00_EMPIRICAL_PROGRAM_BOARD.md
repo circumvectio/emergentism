@@ -42,7 +42,7 @@ Never translate `formal-only` or `local-result` as “confirmed.”
 |---|---|---|---|---|---|
 | **GP-01** | relation/configuration adds intervention-sensitive discrimination beyond an element inventory | formal D2 constructions; macro-constraint toy harness is local only | **ready-to-freeze** | choose one real system, freeze element-only and relation-aware rivals, intervention, outcome, and held-out split | `mu_1` local evidence only |
 | **GP-02** | a distinct counterfactual-capacity variable adds value beyond rich D4 planning/control | future-model experiments touch the weak component | **component-contact** | define D5 variable independently; compare with model-based, model-free, memory, and search baselines | `mu_4` local evidence only |
-| **GP-03** | normalized product out-predicts rival AND/additive aggregators in at least one frozen domain | non-uniqueness and ranking counterexamples are formal; [public preregistration request opened](https://github.com/circumvectio/emergentism/issues/3) | **ready-to-freeze** | accept a timestamped freeze of domain, independent `Phi/V` measures, rivals, exclusions, and held-out outcomes before data contact | W3/W4 only in the tested domain |
+| **GP-03** | ~~normalized product out-predicts rival AND/additive aggregators in at least one frozen domain~~ — **void as written**: the 2026-07-29 ordinal ruling retired the product as a ranking, so there is no product ranking left to test; no replacement socket is opened here | non-uniqueness and ranking counterexamples are formal; [public preregistration request opened](https://github.com/circumvectio/emergentism/issues/3) | **deferred** | **unfreezable as written.** The entry condition demanded independent `Phi/V` **measures**; under the ordinal ruling `Phi` and `V` carry order, not metric, so no such measure exists and the freeze cannot be accepted. Re-freezing needs either (a) a discriminator invariant under a common strictly increasing reparametrisation of both factors, or (b) a separately declared and defended cardinal scale for each factor. Neither exists today. This cost was accepted with the ruling and is recorded here rather than absorbed | nothing, until (a) or (b) lands; W3 is closed as a product-beats-min prosecution |
 | **GP-04** | foresight and usable means follow a measurable resource surface | physical information cost is a neighbor; no validated node budget | **ready-to-freeze** | compare no-tradeoff, additive, nonlinear, and state-dependent surfaces | W4 complementary-saturation sub-wager |
 | **GP-05** | exactly five candidate apertures capture independently discriminable freedoms | no crossing-specific empirical packet has fired | **formal-only** | run one seam at a time; no joint score before each row has novelty and recovery tests | one crossing at a time, then the census |
 | **GP-06** | the five-marker Egregoreotype composite predicts beyond carriers and incentives | trace-mediated coordination has external component contact | **component-contact** | carrier replacement plus trace removal/scrambling with costs recorded | W9 composite only |
@@ -74,7 +74,9 @@ board.
 
 The active order is inherited from the Known Unknowns Program:
 
-1. GP-03 aggregator comparison;
+1. GP-03 aggregator comparison — **blocked**: unfreezable as written under the
+   2026-07-29 ordinal ruling (see the GP-03 row); it keeps first place only as a
+   placeholder until a reparametrisation-invariant discriminator exists;
 2. GP-04 resource-surface measurement;
 3. GP-07 controlled future-content effect;
 4. GP-01 relation intervention;
