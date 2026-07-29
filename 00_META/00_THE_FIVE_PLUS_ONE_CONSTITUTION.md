@@ -57,29 +57,43 @@ refusal and must be withdrawn openly, with a dated receipt.
 
 ### The layered foundation `[S]`
 
-What is forced and what is chosen must never be fused. The foundation has three
-strata, and only the first is forced:
+> **AMENDED TWICE on 2026-07-29 by owner ruling.** (i) The first stratum was
+> published as FORCED; the audit showed `F1` was itself a selection, firing this
+> page's own self-kill. A base may be selected — that is the honest state under
+> `E1`/`KSC-04`. (ii) The base is now **the three relations**, and the sphere is
+> **emergent** (step 6), not posited. Receipt 175 is strengthened, not overturned:
+> `Ĉ` stays the primary object downstream, but is now *reached* rather than assumed.
+
+Presupposed, base and emergent must never be fused:
 
 ```text
-FORCED — no selection available
-  F1  every framework must settle Q1 (may the domain be empty?)
-      and Q2 (may it contain a totality of itself?) — silence is an answer
-  F2  in a multiplicative structure the unit is unique   (a group has one identity)
+PRESUPPOSED — prior to any stated base
+  P1  a language, a consequence relation, identity/difference, and a binary
+      operation with inverses. The relations cannot be STATED without it.
 
-SELECTED — declared, killable, and openly ours
-  R0  Q1 = yes    the null state is admissible        (inclusive semantics)
-  R0′ Q2 = yes    the totality is admissible          (NBG/MK class theory)
-  S1  sphere primacy                                   (receipt 175)
+BASE — posited. Three relations. Killable; nothing forced.
+  B1  ⊙ = • × ○      B2  • = ⊙ / ○      B3  ○ = ⊙ / •
+      Content: ⊙ is the IDENTITY and {•, ○} is an INVERSE PAIR. One fact, three faces.
 
-THEOREM — given the above
-  T1  ⊙ = • × ○, • = ⊙/○, ○ = ⊙/• on Ĉ               (doc 45)
-  T2  1 is the metric centre and the unique ι-fixed point on the positive ray
+EMERGENT — standard constructions, none forced, each solving a named problem
+  1 ℤ  (free on one generator; {+1,−1} IS KSC-21's oriented pair → D1)
+  2 ℚ   3 ℝ (completion)   4 (ℝ₊,×)≅(ℝ,+) via log — Suda's s
+  5 ℝ₊∪{0,∞}  the poles become points     6 Ĉ = ℂP¹  THE SPHERE
+  7 the corpus: D-registers · μ-contract · E1–E10 · Soul Loop · η=0 · Justice ·
+    Power-Max · Egregoreotype · G7 and the Rosetta
 ```
 
-`F1` is the deepest true statement in the arc: **the boundaries are forced, the
-answers are selected.** Emergentism's foundation is not that nothing is possible
-— it is that the question is unavoidable and that Emergentism answers *yes* at
-both boundaries, openly, and can be killed for it.
+The base-to-corpus relation is **mathematical inheritance**, already canon at
+`00_THE_WELTANSCHAUUNG.md` §7.1: higher organization must remain *compatible
+with* lower constraints while supplying content the lower level does not carry.
+The governing question is therefore **not** "does this follow?" but **"is this
+admissible, and does anything violate the base?"**
+
+**`EMERGENT` is the narrative sense `[I]`, never the technical one.** It is not a
+claim that the base opens a `μ` onto the corpus — every crossing the base
+performs is type-T, so the base is `μ`-free at its own boundary. Whether any
+individual step is a genuine `μ` remains a separate per-step question under
+`KSC-05`.
 
 ## The five plus one
 

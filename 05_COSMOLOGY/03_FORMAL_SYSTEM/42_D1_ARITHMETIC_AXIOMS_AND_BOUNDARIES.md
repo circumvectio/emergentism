@@ -242,6 +242,96 @@ The remaining Suda papers may inform later philosophical comparisons, but they
 provide no additional D1 arithmetic axiom. See the
 [source crosswalk](../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_DIMENSIONAL_CROSS_REFERENCE.md).
 
+## 6A. The D1 chart, and the two involutions `[A]`
+
+Owner ruling 2026-07-29: **D1 is visualised in the two-dimensional (plane) chart
+of the sphere, where `0` is the centre.** Declared here because `KSC-28` requires
+every arithmetic claim to name its chart.
+
+```text
+sphere chart (Titan realm)     equator at mid-latitude;  1 is the centre
+plane  chart (D1)              stereographic image;      0 is the centre
+                               ∞ is the point at infinity
+                               |z|=1 carries +1 and −1 antipodally
+```
+
+Same object, two charts, two centres. This is not a conflict but the content of
+chart-locality: **the multiplicative chart centres on `1`; the additive chart
+centres on `0`.** Suda's own formulation — measure by addition and zero is the
+origin, measure by reciprocity and one is.
+
+### 6A.1 Two involutions, and they are dual `[A]`
+
+D1 carries two involutions, not one, and their relationship is the structure:
+
+```text
+negation    n(x) = −x     fixes {0, ∞}      swaps {+1, −1}
+inversion   ι(x) = 1/x    fixes {+1, −1}    swaps {0, ∞}
+```
+
+> **Each fixes exactly what the other swaps.**
+
+They commute (verified 2026-07-29), each is an involution, so
+`{id, n, ι, n∘ι}` is the **Klein four-group** acting on the circle.
+
+### 6A.2 The foursome is a structure, not a list `[A]`
+
+`E3` names `{−1, 0, 1, ∞}` a "selected mixed numeric/projective four-point
+witness." Under §6A.1 it is more than selected — it is **the union of the two
+fixed sets**:
+
+```text
+fix(n)  = {0, ∞}      the Titan poles
+fix(ι)  = {+1, −1}    KSC-21's oriented pair — this is D1
+union   = {−1, 0, +1, ∞}
+```
+
+The third involution `n∘ι : x ↦ −1/x` fixes `x² = −1`, so it has **no fixed
+point on `ℝP¹`** and fixes `{+i, −i}` on `Ĉ`. All three together give six points
+— the vertices of an **octahedron** inscribed in the sphere, with the three
+involutions as the three half-turns about its axes.
+
+This says something the foursome as a bare list could not: `D1`'s oriented pair
+and the Titan poles are **the two fixed sets of one commuting pair of
+involutions**. Selection remains — which involutions to privilege is chosen —
+but the four points are no longer four separate choices.
+
+### 6A.3 Suda's insights, with their chart declared `[A]` results / `[I]` reading
+
+Adopted per receipt 175. **All of the following are multiplicative-chart results
+on the positive ray `ℝ₊`**, and none of them is a D1-chart result:
+
+| # | Result | Status |
+|---|---|---|
+| S-1 | division is double inversion: operator `÷→×` and operand `y→y⁻¹` | `[A]`; "division is already a hidden inversion" is `[I]` |
+| S-2 | `ι(x)=1/x` has unique fixed point `x=1` on `ℝ₊`; in `s=log x` it is the reflection `s↦−s` | `[A]` |
+| S-3 | `ρ(x)=\|log x\|` and `E(x)=(log x)²` are inversion-invariant, uniquely minimised at `x=1` | `[A]` |
+| S-4 | phase bit `φ(x)=sign(log x)`; even/odd split `F±(x)=½[F(x)±F(1/x)]` | `[A]` |
+| S-5 | hinge/egg coordinate `u=(x−1)/(x+1)`, with `u↦−u` under inversion; image is the **open** `(−1,1)` | `[A]` |
+| S-6 | continuous half-twist: with `u=sin θ`, a half period gives `u↦−u` | `[A]` |
+
+### 6A.4 The limitation this exposes — and it is load-bearing `[A]`
+
+**Suda's chart cannot see `−1`.** Every construction above requires `log x`,
+which is undefined at `0` and on the negatives. The reciprocal geometry lives on
+`ℝ₊`, centres on `1`, and its entire domain excludes the negative ray.
+
+But **`D1`'s content is the oriented pair `{+1, −1}`** (`KSC-21`). So:
+
+> Suda's results are exact and adopted, and they **do not reach D1's defining
+> pair**. Seeing both `ι`-fixed points requires `ℝP¹` or `Ĉ` — not `ℝ₊`.
+
+The Trinity canon already recorded the fact ("inversion does not uniquely close
+the poles with `+1`; it fixes `±1`"); §6A.4 records the *consequence*: the
+positive-ray theory is a proper sub-chart of D1, not a presentation of it. Any
+document citing `ρ`, `E`, `φ` or `u` at D1 without restricting to `ℝ₊` is
+over-reaching its chart.
+
+**Fences retained** (receipt 175, doc 42 §6): `0×∞=1` is never field arithmetic;
+`0/0` stays indeterminate; do not inherit `0* := lim 1/x`; Suda is credited for
+packaging and interpretation, never as proof-authority or originator; no physics,
+energy-ontology or genetic claims are imported.
+
 ## 7. μ₀ and the division boundary `[I/C]`
 
 `μ₀:D0↝D1` is the selected **origin aperture**: the move from the sole
