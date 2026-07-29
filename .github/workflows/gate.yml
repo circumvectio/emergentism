@@ -1,0 +1,40 @@
+# THE GATE — CI. This is the enforcement a pre-commit hook cannot provide,
+# because `git commit --no-verify` bypasses hooks and this repository's own
+# maintainers use it routinely. CI cannot be skipped from a laptop.
+#
+# Installed 2026-07-29 (r183). Until this date the corpus had five validators
+# and NOTHING RAN THEM — r177's HOLE 0, open since 2026-07-27.
+
+name: gate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run the gate
+        # The Lean toolchain is not installed on CI, so the Lean half of
+        # check_established.py cannot be re-verified here. That is acknowledged
+        # EXPLICITLY rather than silently passed — the checker prints a loud NOTE
+        # and the structural checks (project files, theorem count, no sorry) still run.
+        env:
+          EMERGENTISM_SKIP_LEAN: '1'
+        run: bash 09_TOOLS/01_SCRIPTS/gate.sh
+
+      - name: Report what CI did NOT verify
+        if: always()
+        run: |
+          echo "::notice title=Unverified on CI::The Lean proofs are NOT re-run here."
+          echo "A full 'lake build' requires fetching mathlib and is impractical in CI."
+          echo "Receipt 182 records the build output and axiom traces. The generative"
+          echo "base (G1-G10) IS recomputed by exhaustion on every run."
