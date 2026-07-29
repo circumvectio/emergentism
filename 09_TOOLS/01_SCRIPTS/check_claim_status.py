@@ -28,6 +28,7 @@ RECORD_LEDGER = Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md
 DF_ID = re.compile(r"^DF-\d{2}$")
 RQ_ID = re.compile(r"^RQ-\d{2}$")
 FV_ID = re.compile(r"^FV-\d{2}$")
+TR_ID = re.compile(r"^TR-\d{2}$")
 WAGER_ID = re.compile(r"^W\d+[a-e]?(-[A-Z]+)?$")
 DOCKET_ID = re.compile(r"^A[0-7]$")
 
@@ -42,6 +43,25 @@ REQUIRED_REOPEN_FIELDS = (
     "kill",
     "survivor",
 )
+
+
+# Pinned vocabularies. HOLE 5: previously these were read from the document under
+# validation, so moving a status between lists silently disabled every check
+# gated on it. A checker may not take its constitution from its subject.
+LIVE = {"FORMALLY-VALID","RECEIPTED","OPEN-FORMAL","OPEN-EMPIRICAL",
+        "COMPONENT-SUPPORTED","NARROWED","OWNER-REOPENED"}
+TERMINAL = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR",
+            "NOT-WELL-POSED","DECORATIVE","PROCESS-DEFECT"}
+ONE_WAY = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR"}
+# Statuses that, on a grave row, require the four reopening preconditions.
+GUARDED = {"OWNER-REOPENED","NARROWED"}
+KNOWN_SECTIONS = {"schema","routing_role","human_owner","serialization",
+                  "live_statuses","terminal_statuses","one_way_statuses","rules",
+                  "owner_reopening","validated","open","graves","reopened","restored"}
+# HOLE 3: a counterexample must carry content, not merely be non-blank.
+PLACEHOLDER = re.compile(r"^\s*(none|n/?a|tbd|todo|-+|\.+|x+|unknown|see above)\s*\.?\s*$", re.I)
+MIN_COUNTEREXAMPLE = 25
+EXPECTED_RULING = "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md"
 
 
 class ContractError(ValueError):
@@ -76,15 +96,23 @@ def check(root: Path = ROOT) -> list[str]:
         if not (root / rel).is_file():
             errors.append(f"missing cross-referenced owner: {rel.as_posix()}")
 
-    live = set(document.get("live_statuses") or [])
-    terminal = set(document.get("terminal_statuses") or [])
-    one_way = set(document.get("one_way_statuses") or [])
-    if not live or not terminal:
-        raise ContractError("status vocabularies must be declared")
-    if live & terminal:
-        errors.append(f"a status cannot be both live and terminal: {sorted(live & terminal)}")
-    if not one_way <= terminal:
-        errors.append("every one-way status must also be terminal")
+    live, terminal, one_way = LIVE, TERMINAL, ONE_WAY
+
+    # The document's own vocabularies must MATCH the pinned ones, not define them.
+    for name, pinned in (("live_statuses", LIVE), ("terminal_statuses", TERMINAL),
+                         ("one_way_statuses", ONE_WAY)):
+        declared = set(document.get(name) or [])
+        if declared != pinned:
+            errors.append(
+                f"{name} drifted from the pinned vocabulary: "
+                f"missing={sorted(pinned - declared)} extra={sorted(declared - pinned)}"
+            )
+
+    # HOLE 1: an unknown top-level section is unvalidated territory. A block of
+    # live refuted claims appended under a new key used to pass.
+    for key in document:
+        if key not in KNOWN_SECTIONS:
+            errors.append(f"unknown top-level section {key!r} — unvalidated territory, refused")
 
     # An owner reopening is a ruling, and a ruling needs a receipt on disk.
     if any(
@@ -96,8 +124,15 @@ def check(root: Path = ROOT) -> list[str]:
             errors.append("OWNER-REOPENED rows require an owner_reopening block")
         else:
             receipt = reopening.get("receipt")
-            if not isinstance(receipt, str) or not (root / receipt).is_file():
-                errors.append(f"owner_reopening: missing ruling receipt {receipt!r}")
+            rp = Path(receipt) if isinstance(receipt, str) else None
+            if rp is None or rp.is_absolute() or ".." in rp.parts:
+                errors.append(f"owner_reopening: receipt must be a repo-relative path, got {receipt!r}")
+            elif receipt != EXPECTED_RULING:
+                errors.append(f"owner_reopening: receipt must be the r174 ruling, got {receipt!r}")
+            else:
+                f = (root / rp).resolve()
+                if not f.is_file() or not f.is_relative_to(root) or f.stat().st_size < 500:
+                    errors.append(f"owner_reopening: ruling receipt missing, outside the repo, or empty: {receipt}")
             for field in ("ruling", "scope", "what_it_does_not_do"):
                 if not str(reopening.get(field, "")).strip():
                     errors.append(f"owner_reopening: {field} is required")
@@ -163,8 +198,14 @@ def check(root: Path = ROOT) -> list[str]:
             _text(row.get("counterexample"), f"{row_id}.counterexample")
         except ContractError as exc:
             errors.append(str(exc))
-        if status in one_way and not str(row.get("counterexample", "")).strip():
+        cx = str(row.get("counterexample", "")).strip()
+        if status in one_way and not cx:
             errors.append(f"{row_id}: a one-way status must cite the counterexample that killed it")
+        if cx and (PLACEHOLDER.fullmatch(cx) or len(cx) < MIN_COUNTEREXAMPLE):
+            errors.append(
+                f"{row_id}: counterexample is a placeholder or too thin to be one ({cx!r}) — "
+                "'intact' means content, not merely non-blank"
+            )
         # The one-way rule, mechanically. Once a counterexample is on the record a
         # row may never drift back into a live status. Exactly three lawful moves
         # exist: NARROWED with a named successor, a brand-new RQ row, or an
@@ -174,11 +215,17 @@ def check(root: Path = ROOT) -> list[str]:
             if status == "NARROWED":
                 if row.get("successor") is None:
                     errors.append(f"{row_id}: NARROWED requires the surviving weaker form to be named")
-            elif status == "OWNER-REOPENED":
-                if not str(row.get("status_before_reopening", "")).strip():
-                    errors.append(f"{row_id}: OWNER-REOPENED must record the status it was reopened from")
+            elif status in GUARDED:
+                prior = str(row.get("status_before_reopening", "")).strip()
+                if not prior:
+                    errors.append(f"{row_id}: {status} must record the status it was reopened from")
+                elif prior not in TERMINAL:
+                    errors.append(
+                        f"{row_id}: status_before_reopening is {prior!r}, which is not terminal — "
+                        "a live-to-live reopening is meaningless"
+                    )
                 if not str(row.get("repair_path", "")).strip():
-                    errors.append(f"{row_id}: OWNER-REOPENED must declare a repair_path")
+                    errors.append(f"{row_id}: {status} must declare a repair_path")
             else:
                 errors.append(
                     f"{row_id}: cites a counterexample but carries live status {status}; "
@@ -223,6 +270,28 @@ def check(root: Path = ROOT) -> list[str]:
         parent = row.get("parent")
         if isinstance(parent, str) and parent not in grave_ids and parent not in open_ids:
             errors.append(f"{row_id}: parent {parent} is neither a grave nor an open wager")
+
+    # --- restored --------------------------------------------------------
+    # HOLE 1b: `restored` was a KNOWN section whose rows were never validated, so a
+    # refuted form could be appended there as FORMALLY-VALID and pass. It is the
+    # DF-22 shape with a machine blessing, so it is checked like everything else.
+    for row in (document.get("restored") or []):
+        if not isinstance(row, dict):
+            errors.append("restored: every row must be an object")
+            continue
+        row_id = str(row.get("id", "")).strip()
+        if not TR_ID.fullmatch(row_id):
+            errors.append(f"restored: ids must look like TR-nn, got {row_id!r} — "
+                          "a grave id here would assert a refuted form as valid")
+            continue
+        claim_id(row_id, "restored")
+        if row.get("status") != "FORMALLY-VALID":
+            errors.append(f"{row_id}: a restored row must carry FORMALLY-VALID")
+        if row.get("tier") not in {"A", "S"}:
+            errors.append(f"{row_id}: restored by proof means tier A or S, not {row.get('tier')!r}")
+        for field in ("claim", "was", "why_the_falsifier_misses", "owner", "inherits"):
+            if not str(row.get(field, "")).strip():
+                errors.append(f"{row_id}: restored rows must state {field}")
 
     # --- successor resolution -------------------------------------------
     known = grave_ids | reopened_ids | open_ids

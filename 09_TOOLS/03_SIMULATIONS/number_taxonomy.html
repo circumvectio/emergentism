@@ -1,0 +1,209 @@
+<style>
+  :root{
+    --ground:#eef2f1;--plate:#f9fbfa;--sunk:#e4eae8;
+    --ink:#131c1b;--muted:#5d6d6a;--rule:#ccd6d3;--faint:#e8eeec;
+    --gen:#0b6f79;--pole:#9a6a0d;--unit:#7d6520;--break:#a33a3a;--lost:#6b4a86;
+    --shadow:0 1px 2px rgba(19,28,27,.06),0 8px 24px rgba(19,28,27,.05);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --ground:#0e1518;--plate:#141d20;--sunk:#0a1013;
+    --ink:#e4ebea;--muted:#8b9c99;--rule:#263336;--faint:#1a2528;
+    --gen:#3cbcc7;--pole:#d8a244;--unit:#e3c469;--break:#e07a7a;--lost:#b795d4;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 28px rgba(0,0,0,.35);}}
+  :root[data-theme="light"]{
+    --ground:#eef2f1;--plate:#f9fbfa;--sunk:#e4eae8;
+    --ink:#131c1b;--muted:#5d6d6a;--rule:#ccd6d3;--faint:#e8eeec;
+    --gen:#0b6f79;--pole:#9a6a0d;--unit:#7d6520;--break:#a33a3a;--lost:#6b4a86;
+    --shadow:0 1px 2px rgba(19,28,27,.06),0 8px 24px rgba(19,28,27,.05);}
+  :root[data-theme="dark"]{
+    --ground:#0e1518;--plate:#141d20;--sunk:#0a1013;
+    --ink:#e4ebea;--muted:#8b9c99;--rule:#263336;--faint:#1a2528;
+    --gen:#3cbcc7;--pole:#d8a244;--unit:#e3c469;--break:#e07a7a;--lost:#b795d4;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 28px rgba(0,0,0,.35);}
+
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;padding:clamp(1rem,3vw,2.25rem);background:var(--ground);color:var(--ink);
+    font:400 16px/1.6 Charter,"Bitstream Charter","Iowan Old Style",Georgia,serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:1.4rem}
+  .eyebrow{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(1.5rem,3.2vw,2.05rem);line-height:1.15;margin:.4rem 0 .5rem;text-wrap:balance;font-weight:600}
+  .lede{color:var(--muted);max-width:66ch;margin:0}.lede b{color:var(--ink);font-weight:600}
+  .plate{background:var(--plate);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow);padding:1.1rem 1.25rem 1.25rem}
+  h2{font-size:1.02rem;margin:0 0 .2rem;font-weight:600}
+  .sub{color:var(--muted);font-size:13px;margin:0 0 .9rem;max-width:70ch}
+  code,.m{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+  code{font-size:12.5px;background:var(--sunk);padding:.1em .35em;border-radius:3px}
+
+  /* ── generation ladder ── */
+  .lad{display:flex;flex-direction:column;gap:0}
+  .step{display:grid;grid-template-columns:118px 1fr 190px;gap:1rem;align-items:baseline;
+    padding:.62rem .7rem;border-left:3px solid var(--gen);background:var(--faint);
+    border-bottom:1px solid var(--rule)}
+  .step:first-of-type{border-radius:4px 4px 0 0}
+  .step .obj{font:600 16px/1.3 ui-monospace,Menlo,monospace;color:var(--ink)}
+  .step .how{font-size:13.5px}
+  .step .tag{font:600 10.5px/1.4 ui-sans-serif,system-ui,sans-serif;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gen);text-align:right}
+  .step.seed{border-left-color:var(--unit);background:color-mix(in srgb,var(--unit) 10%,var(--plate))}
+  .step.seed .tag{color:var(--unit)}
+  .step.brk{border-left-color:var(--break);background:color-mix(in srgb,var(--break) 8%,var(--plate))}
+  .step.brk .tag{color:var(--break)}
+  .step.lost{border-left-color:var(--lost);background:color-mix(in srgb,var(--lost) 8%,var(--plate))}
+  .step.lost .tag{color:var(--lost)}
+  @media (max-width:760px){.step{grid-template-columns:1fr;gap:.15rem}.step .tag{text-align:left}}
+
+  /* ── membership grid ── */
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  thead th{font:600 11px/1.35 ui-sans-serif,system-ui,sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--rule)}
+  td.o{font:600 15px/1.3 ui-monospace,Menlo,monospace;width:64px}
+  .pill{display:inline-block;font:600 10.5px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.05em;
+    padding:.28em .5em;border-radius:3px;border:1px solid currentColor;white-space:nowrap}
+  .is-mem{color:var(--gen)}.is-pole{color:var(--pole)}.is-abs{color:var(--muted);opacity:.75}
+  .is-id{color:var(--unit)}
+  .scroll{overflow-x:auto}
+
+  /* ── corrections ── */
+  .fix{display:grid;grid-template-columns:auto 1fr;gap:.55rem 1rem;align-items:baseline}
+  .fix .v{font:600 11px/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  .v.yes{color:var(--gen)}.v.no{color:var(--break)}.v.care{color:var(--pole)}
+  .fix p{margin:0;font-size:13.5px}
+  .fix p b{font-weight:600}
+  footer{color:var(--muted);font-size:13.5px;max-width:76ch}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Emergentism · D1 · number taxonomy</div>
+    <h1>The number sets, organised by what makes what</h1>
+    <p class="lede">The schoolbook chart nests boxes — <code>ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ</code> — and by nesting them
+      it hides three things: that <b>one step is not a generation at all</b>, that <b>0 and ∞ change status
+      depending on which structure you are in</b>, and that the whole spine has <b>exactly one generator</b>.
+      This chart shows those instead.</p>
+  </header>
+
+  <section class="plate">
+    <h2>The generation ladder</h2>
+    <p class="sub">Read downward. The colour of each rail says how that step was obtained — and one
+      of them is not obtained at all.</p>
+    <div class="lad">
+      <div class="step seed">
+        <div class="obj">1 &nbsp;·&nbsp; −1</div>
+        <div class="how">The generator and its inverse. Also the two <b>ι-fixed points</b> —
+          the only numbers unmoved by <code>x ↦ 1/x</code>.</div>
+        <div class="tag">seed</div>
+      </div>
+      <div class="step">
+        <div class="obj">ℕ⁺</div>
+        <div class="how">Finite multiplicities of the unit: <code>n = 1+1+⋯+1</code>.
+          <b>The free monoid on one generator</b> — every member derived, none primitive.</div>
+        <div class="tag">generated</div>
+      </div>
+      <div class="step">
+        <div class="obj">ℤ<sub>•</sub></div>
+        <div class="how">The signed spine <code>ℕ⁺ ⊎ (−ℕ⁺)</code>. <b>Not additively closed</b>:
+          <code>1 + (−1) = 0</code>, which is not in it.</div>
+        <div class="tag">generated</div>
+      </div>
+      <div class="step">
+        <div class="obj">ℤ</div>
+        <div class="how">Closure forces the pole back in: <code>ℤ = ℤ<sub>•</sub> ∪ {0}</code>.
+          You cannot have addition without re-admitting zero.</div>
+        <div class="tag">closed</div>
+      </div>
+      <div class="step">
+        <div class="obj">ℚ</div>
+        <div class="how">Ratios — localisation at the nonzero integers. Still countable;
+          still reachable from the seed by construction.</div>
+        <div class="tag">generated</div>
+      </div>
+      <div class="step brk">
+        <div class="obj">ℝ</div>
+        <div class="how"><b>The break.</b> Not generated by anything below it. Completion adds
+          <b>uncountably many</b> elements — <code>|ℝ|</code> exceeds <code>|ℚ|</code>. No amount of
+          adding ones, or dividing them, ever reaches <code>√2</code> or <code>π</code>.</div>
+        <div class="tag">completed</div>
+      </div>
+      <div class="step lost">
+        <div class="obj">ℝP¹</div>
+        <div class="how">Adjoin ∞ and the line closes into a circle. <b>Total order is lost</b>
+          — what remains is cyclic. Dimension unchanged.</div>
+        <div class="tag">order lost</div>
+      </div>
+      <div class="step lost" style="border-bottom:none;border-radius:0 0 4px 4px">
+        <div class="obj">ℂ &nbsp;·&nbsp; Ĉ</div>
+        <div class="how"><code>−1</code> becomes a sum of squares, so <b>no compatible order exists at
+          all</b> (Artin–Schreier). One-point compactification gives the sphere.</div>
+        <div class="tag">reality lost</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plate">
+    <h2>Where 0 and ∞ actually live</h2>
+    <p class="sub">The same four objects, read in three structures. Status changes with the chart —
+      which is exactly what chart-locality means, and what the nested-box picture cannot show.</p>
+    <div class="scroll"><table>
+      <thead><tr>
+        <th></th><th>additive &nbsp;(ℝ, +)</th><th>multiplicative &nbsp;(ℝ₊, ×)</th><th>projective &nbsp;ℝP¹</th>
+      </tr></thead>
+      <tbody>
+        <tr><td class="o">0</td>
+          <td><span class="pill is-id">the origin</span> full member</td>
+          <td><span class="pill is-pole">pole •</span> <b>not a member</b> — no inverse</td>
+          <td><span class="pill is-mem">a point</span> ι swaps it with ∞</td></tr>
+        <tr><td class="o">1</td>
+          <td><span class="pill is-mem">the generator</span></td>
+          <td><span class="pill is-id">the identity</span> ι-fixed</td>
+          <td><span class="pill is-mem">a point</span> ι-fixed</td></tr>
+        <tr><td class="o">−1</td>
+          <td><span class="pill is-mem">−generator</span></td>
+          <td><span class="pill is-abs">absent</span> not on the positive ray</td>
+          <td><span class="pill is-mem">a point</span> ι-fixed</td></tr>
+        <tr><td class="o">∞</td>
+          <td><span class="pill is-abs">absent</span> <b>not a real number</b></td>
+          <td><span class="pill is-pole">pole ○</span> not a member</td>
+          <td><span class="pill is-mem">a point</span> only after compactification</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="plate">
+    <h2>Three claims, checked</h2>
+    <p class="sub">Two are right once stated precisely. One is right as it stands. One collides with a
+      standing canon rule.</p>
+    <div class="fix">
+      <div class="v yes">Right</div>
+      <p><b>∞ is not a real number.</b> Exactly so. It is a projective point and exists only after an
+        explicitly declared compactification.</p>
+
+      <div class="v no">Not as stated</div>
+      <p><b>0 <em>is</em> a real number</b> — it is the additive identity and sits in ℝ. What is true is
+        sharper: <b>0 is not a member of the multiplicative structure.</b> It has no inverse, so it is a
+        <em>pole</em>, not an element. Say <em>which structure</em> and the claim becomes exact.</p>
+
+      <div class="v care">Nearly</div>
+      <p><b>1 is not the only natural number</b> — but it is the <b>only generator</b>, and that is the
+        stronger fact. <code>(ℕ⁺, +)</code> is free on one generator: 2, 3, 4 … are multiplicities, not
+        primitives. "The only generator" is exact; "the only natural number" is not.</p>
+
+      <div class="v no">Fires a rule</div>
+      <p><b>"Whole numbers"</b> as a category triggers KSC-21's own fail condition — it explicitly
+        refuses the term as a primitive rung, because <code>{0} ∪ ℕ⁺</code> adds no structure that ℕ⁺
+        and ℤ do not already carry. <b>Keep the construction, drop the word.</b></p>
+    </div>
+  </section>
+
+  <footer>
+    <strong>What the nested-box chart hides.</strong> Drawn as boxes inside boxes, every step looks like
+    the same kind of move. It is not. Three steps are constructions from the seed; one is a
+    <em>completion</em> that adds uncountably more than everything before it combined; two are
+    <em>losses</em> — first of order, then of orderability altogether. And 0 and ∞ are not simply
+    "in" or "out": they are the boundary of the multiplicative structure and interior points of the
+    projective one, simultaneously.
+    <br><br>
+    <span style="opacity:.75">Analytic only. This is a chart of constructions, not a claim about what
+    exists.</span>
+  </footer>
+</div>

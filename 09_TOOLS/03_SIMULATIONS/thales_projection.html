@@ -1,0 +1,311 @@
+<style>
+  /* ── tokens ───────────────────────────────────────────────────────────
+     ν and φ are reciprocal quantities that SWAP under inversion, so they take
+     complementary hues. ⊙ is where they meet — its own brass. The negative ray
+     is Suda-dark: his chart cannot reach it, and the page says so in colour. */
+  :root {
+    --ground:#eef2f1; --plate:#f9fbfa; --sunk:#e4eae8;
+    --ink:#131c1b; --muted:#5d6d6a; --rule:#ccd6d3; --faint:#e8eeec;
+    --nu:#0b6f79; --phi:#9a6a0d; --unit:#7d6520; --dead:#a33a3a; --dark:#6b4a86;
+    --shadow:0 1px 2px rgba(19,28,27,.06), 0 8px 24px rgba(19,28,27,.05);
+  }
+  @media (prefers-color-scheme: dark){ :root{
+    --ground:#0e1518; --plate:#141d20; --sunk:#0a1013;
+    --ink:#e4ebea; --muted:#8b9c99; --rule:#263336; --faint:#1a2528;
+    --nu:#3cbcc7; --phi:#d8a244; --unit:#e3c469; --dead:#e07a7a; --dark:#b795d4;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35); } }
+  :root[data-theme="light"]{
+    --ground:#eef2f1; --plate:#f9fbfa; --sunk:#e4eae8;
+    --ink:#131c1b; --muted:#5d6d6a; --rule:#ccd6d3; --faint:#e8eeec;
+    --nu:#0b6f79; --phi:#9a6a0d; --unit:#7d6520; --dead:#a33a3a; --dark:#6b4a86;
+    --shadow:0 1px 2px rgba(19,28,27,.06), 0 8px 24px rgba(19,28,27,.05); }
+  :root[data-theme="dark"]{
+    --ground:#0e1518; --plate:#141d20; --sunk:#0a1013;
+    --ink:#e4ebea; --muted:#8b9c99; --rule:#263336; --faint:#1a2528;
+    --nu:#3cbcc7; --phi:#d8a244; --unit:#e3c469; --dead:#e07a7a; --dark:#b795d4;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35); }
+
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;padding:clamp(1rem,3vw,2.25rem);background:var(--ground);color:var(--ink);
+    font:400 16px/1.6 Charter,"Bitstream Charter","Iowan Old Style",Georgia,serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:1.4rem}
+  .eyebrow{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(1.5rem,3.2vw,2.05rem);line-height:1.15;margin:.4rem 0 .5rem;text-wrap:balance;font-weight:600}
+  .lede{color:var(--muted);max-width:64ch;margin:0}.lede b{color:var(--ink);font-weight:600}
+
+  .stage{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(290px,1fr);gap:1.15rem;align-items:start}
+  @media (max-width:900px){.stage{grid-template-columns:1fr}}
+  .plate{background:var(--plate);border:1px solid var(--rule);border-radius:6px;box-shadow:var(--shadow)}
+  .cv{padding:.5rem}canvas{width:100%;display:block;border-radius:3px;touch-action:none}
+  .panel{padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.95rem}
+
+  dl{margin:0;display:flex;flex-direction:column;gap:.45rem}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:.9rem}
+  .row dt{color:var(--muted);font:500 12.5px/1.4 ui-sans-serif,system-ui,sans-serif;margin:0}
+  .row dd{margin:0;font:500 14.5px/1.4 ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:.45rem}
+  .k-nu{color:var(--nu)}.b-nu{background:var(--nu)}
+  .k-phi{color:var(--phi)}.b-phi{background:var(--phi)}
+  .k-unit{color:var(--unit)}.k-dark{color:var(--dark)}
+
+  .ident{background:var(--sunk);border:1px solid var(--rule);border-radius:4px;padding:.7rem .8rem;display:flex;flex-direction:column;gap:.25rem}
+  .ident .val{font:600 18px/1.2 ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+  .ident .cap{font:400 11.5px/1.45 ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
+  .state{font:500 12.5px/1.5 ui-sans-serif,system-ui,sans-serif;padding:.5rem .65rem;border-radius:4px;border:1px solid var(--rule)}
+  .state.unit{border-color:var(--unit);color:var(--unit);background:color-mix(in srgb,var(--unit) 9%,transparent)}
+  .state.dead{border-color:var(--dead);color:var(--dead);background:color-mix(in srgb,var(--dead) 9%,transparent)}
+
+  .ctl{display:flex;flex-direction:column;gap:.65rem}
+  .slab{font:600 11px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  input[type=range]{width:100%;accent-color:var(--nu);height:22px}
+  input[type=range]:focus-visible{outline:2px solid var(--nu);outline-offset:3px}
+  .btns{display:flex;gap:.4rem;flex-wrap:wrap}
+  button{font:500 12.5px/1 ui-sans-serif,system-ui,sans-serif;color:var(--ink);background:var(--plate);
+    border:1px solid var(--rule);border-radius:4px;padding:.45rem .65rem;cursor:pointer}
+  button:hover{border-color:var(--nu);color:var(--nu)}
+  button:focus-visible{outline:2px solid var(--nu);outline-offset:2px}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
+  @media (max-width:900px){.two{grid-template-columns:1fr}}
+  .box{padding:.95rem 1.1rem 1.1rem}
+  .box h2{font-size:.98rem;margin:.1rem 0 .35rem;font-weight:600}
+  .box p{margin:0 0 .6rem;color:var(--muted);font-size:13px;max-width:64ch}
+  .off{opacity:.4}
+  .warn{color:var(--dark);font:500 12px/1.45 ui-sans-serif,system-ui,sans-serif;
+    border-left:2px solid var(--dark);padding-left:.6rem;margin-top:.5rem}
+  footer{color:var(--muted);font-size:13.5px;max-width:76ch}
+  code{font:400 12.5px ui-monospace,Menlo,monospace;background:var(--sunk);padding:.1em .35em;border-radius:3px}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Emergentism · D1 · the projective line as a circle</div>
+    <h1>Two right angles cannot share a triangle</h1>
+    <p class="lede">A circle resting on the number line at <b>0</b>. Project from the top point <b>N</b>
+      through <b>P</b> onto the line. Thales fixes the angle at P at 90° <em>forever</em> — so the other two
+      are complementary, <b>φ·ν = 1</b> falls out, and the construction dies precisely where a second
+      right angle would be required.</p>
+  </header>
+
+  <div class="stage">
+    <div class="plate cv"><canvas id="c" aria-label="Stereographic projection construction"></canvas></div>
+    <div class="plate panel">
+      <dl>
+        <div class="row"><dt><span class="sw b-nu"></span>angle at N (A)</dt><dd class="k-nu" id="rA">45.000°</dd></div>
+        <div class="row"><dt><span class="sw b-phi"></span>angle at S (B)</dt><dd class="k-phi" id="rB">45.000°</dd></div>
+        <div class="row"><dt>angle at P — invariant</dt><dd id="rP">90.000°</dd></div>
+        <div class="row" style="border-top:1px solid var(--rule);padding-top:.45rem"><dt>sum</dt><dd id="rSum">180.000°</dd></div>
+      </dl>
+      <dl>
+        <div class="row"><dt class="k-nu">ν = tan A — the projection</dt><dd class="k-nu" id="rNu">1.000000</dd></div>
+        <div class="row"><dt class="k-phi">φ = 1/ν</dt><dd class="k-phi" id="rPhi">1.000000</dd></div>
+      </dl>
+      <div class="ident">
+        <div class="val"><span class="k-phi">φ</span>·<span class="k-nu">ν</span> = <span id="rProd">1.000000000000</span></div>
+        <div class="cap">Invariant at every angle, on both sides of zero. It is
+          <code>tan A · tan(90°−A) = 1</code> — nothing more.</div>
+      </div>
+      <div class="state unit" id="state">⊙ — ι-fixed. A = B, ν = φ = 1.</div>
+      <div class="ctl">
+        <label class="slab" for="ang">Angle at N — negative sweeps the left half-line</label>
+        <input id="ang" type="range" min="-89.6" max="89.6" step="0.01" value="45" aria-label="Angle at N in degrees">
+        <div class="btns">
+          <button id="play">▶ Sweep</button>
+          <button id="neg">Negate ν&nbsp;: x ↦ −x</button>
+          <button id="inv">Invert ι&nbsp;: x ↦ 1/x</button>
+          <button id="p1">+1</button><button id="m1">−1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="plate box">
+      <h2>Suda's chart — and exactly where it stops</h2>
+      <p>His instruments live on the <b>positive ray</b>. They are exact there, and they go dark the
+        moment the projection crosses zero.</p>
+      <dl id="suda">
+        <div class="row"><dt>s = log x — additive; × becomes +</dt><dd id="rS">0.000000</dd></div>
+        <div class="row"><dt>ρ = |log x| — distance from unity</dt><dd id="rRho">0.000000</dd></div>
+        <div class="row"><dt>E = (log x)² — minimal at x = 1</dt><dd id="rE">0.000000</dd></div>
+        <div class="row"><dt>phase = sign(log x)</dt><dd id="rPh">0</dd></div>
+      </dl>
+      <div class="warn" id="sudaWarn" hidden>
+        Undefined. <code>log x</code> does not exist for x ≤ 0, so ρ, E, phase and the hinge all vanish
+        here — <b>including at −1</b>, the second ι-fixed point. Suda's chart cannot see it.
+      </div>
+    </div>
+
+    <div class="plate box">
+      <h2>The hinge — which turns out to be our own angle</h2>
+      <p><code>u = (x−1)/(x+1)</code> equals <code>tan(A − 45°)</code>, verified exactly. Suda's hinge
+        <b>is the angle measured from the fixed point</b> instead of from the baseline. Same parameter,
+        shifted origin — which is why its image is the <em>open</em> interval.</p>
+      <canvas id="h" aria-label="Hinge coordinate strip"></canvas>
+    </div>
+  </div>
+
+  <footer>
+    <strong>Why the limit cannot be crossed from inside.</strong> As A → 90° the angle at S → 0° and the
+    ray from N runs parallel to the line: to have an intersection at all you would need the angle at N
+    to be a right angle <em>as well as</em> the one Thales already fixed at P — and a Euclidean triangle
+    admits only one. So the meeting point does not exist in the plane; it exists only after you
+    <em>declare</em> a bigger structure and adjoin ∞. That declaration is the whole crossing — and by the
+    μ-criterion it is a <b>totality repair</b>, not a gain of freedom: the circle and the line have the
+    same dimension before and after.
+    <br><br>
+    <span style="opacity:.75">Analytic only. This construction licenses no ontology, no ethic and no
+    conservation law — it is the reciprocal chart, and the chart is empty of world.</span>
+  </footer>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const D=Math.PI/180, c=document.getElementById("c"), ctx=c.getContext("2d");
+  const h=document.getElementById("h"), hctx=h.getContext("2d");
+  const S_=document.getElementById("ang"), el=i=>document.getElementById(i);
+  const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  let A=45, playing=false, raf=0, dir=1, last=0;
+  const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const fit=(cv,H)=>{const dpr=Math.min(devicePixelRatio||1,2);
+    const w=cv.parentElement.clientWidth-(cv===c?16:0);
+    cv.style.height=H+"px"; cv.width=Math.max(1,Math.round(w*dpr)); cv.height=Math.round(H*dpr);
+    cv.getContext("2d").setTransform(dpr,0,0,dpr,0,0); return {w,H};};
+  const sub=(p,q)=>({x:p.x-q.x,y:p.y-q.y});
+  const norm=v=>{const L=Math.hypot(v.x,v.y)||1;return{x:v.x/L,y:v.y/L};};
+  const fmt=v=>!isFinite(v)?"∞":Math.abs(v)>=1e5?v.toExponential(3):v.toFixed(Math.abs(v)<100?4:1);
+
+  function arc(g,at,v1,v2,r,col){const a1=Math.atan2(v1.y,v1.x),a2=Math.atan2(v2.y,v2.x);
+    let d=a2-a1; while(d>Math.PI)d-=2*Math.PI; while(d<-Math.PI)d+=2*Math.PI;
+    g.strokeStyle=col; g.lineWidth=1.75; g.beginPath(); g.arc(at.x,at.y,r,a1,a1+d,d<0); g.stroke();}
+  function dot(g,p,col,label,dx,dy,lc){g.fillStyle=col;g.beginPath();g.arc(p.x,p.y,4,0,7);g.fill();
+    g.fillStyle=lc;g.font="12px ui-sans-serif,system-ui,sans-serif";g.textAlign="center";g.fillText(label,p.x+dx,p.y+dy);}
+
+  function drawMain(){
+    const {w,H}=fit(c,Math.max(370,Math.min(520,innerWidth*0.4)));
+    ctx.clearRect(0,0,w,H);
+    const ink=css("--ink"),muted=css("--muted"),rule=css("--rule"),faint=css("--faint"),
+          NU=css("--nu"),PHI=css("--phi"),UNIT=css("--unit"),DARK=css("--dark"),PLATE=css("--plate");
+    const Dm=Math.min(H*0.5,w*0.24), baseY=H-52, ox=w*0.5, unit=Dm, R=Dm/2, cy=baseY-R;
+    const Sp={x:ox,y:baseY}, Np={x:ox,y:baseY-Dm};
+    const a=A*D, P={x:ox+R*Math.sin(2*a), y:cy+R*Math.cos(2*a)};
+    const xc=Math.tan(a), X={x:ox+xc*unit,y:baseY};
+
+    // negative half-line shaded — outside Suda's chart
+    ctx.fillStyle=faint; ctx.fillRect(0,baseY-1,ox,3);
+    ctx.strokeStyle=rule; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(0,baseY+.5); ctx.lineTo(w,baseY+.5); ctx.stroke();
+    ctx.font="11px ui-monospace,Menlo,monospace"; ctx.textAlign="center";
+    for(let k=-6;k<=6;k++){const px=ox+k*unit; if(px<4||px>w-4)continue;
+      ctx.strokeStyle=rule; ctx.beginPath(); ctx.moveTo(px+.5,baseY-4); ctx.lineTo(px+.5,baseY+4); ctx.stroke();
+      ctx.fillStyle=muted; ctx.fillText(String(k),px,baseY+18);}
+    ctx.fillStyle=DARK; ctx.font="10.5px ui-sans-serif,system-ui,sans-serif"; ctx.textAlign="left";
+    ctx.fillText("outside Suda's chart  (log x undefined)",8,baseY+34);
+
+    ctx.strokeStyle=rule; ctx.lineWidth=1.5; ctx.beginPath(); ctx.arc(ox,cy,R,0,7); ctx.stroke();
+    ctx.fillStyle=PLATE; ctx.globalAlpha=.55; ctx.beginPath();
+    ctx.moveTo(Np.x,Np.y); ctx.lineTo(P.x,P.y); ctx.lineTo(Sp.x,Sp.y); ctx.closePath(); ctx.fill(); ctx.globalAlpha=1;
+    ctx.strokeStyle=ink; ctx.lineWidth=1.25; ctx.setLineDash([3,3]);
+    ctx.beginPath(); ctx.moveTo(Np.x,Np.y); ctx.lineTo(Sp.x,Sp.y); ctx.stroke(); ctx.setLineDash([]);
+
+    const clamp=v=>Math.max(-4000,Math.min(4000,v));
+    ctx.strokeStyle=NU; ctx.lineWidth=2; ctx.beginPath();
+    ctx.moveTo(Np.x,Np.y); ctx.lineTo(clamp(X.x),X.y); ctx.stroke();
+    ctx.strokeStyle=PHI; ctx.lineWidth=2; ctx.beginPath();
+    ctx.moveTo(P.x,P.y); ctx.lineTo(Sp.x,Sp.y); ctx.stroke();
+
+    const uNP=norm(sub(Np,P)), uSP=norm(sub(Sp,P)), m=11;
+    ctx.strokeStyle=Math.abs(Math.abs(A)-89.6)<1.5?css("--dead"):muted; ctx.lineWidth=1.5;
+    ctx.beginPath();
+    ctx.moveTo(P.x+uNP.x*m,P.y+uNP.y*m);
+    ctx.lineTo(P.x+(uNP.x+uSP.x)*m,P.y+(uNP.y+uSP.y)*m);
+    ctx.lineTo(P.x+uSP.x*m,P.y+uSP.y*m); ctx.stroke();
+
+    arc(ctx,Np,sub(Sp,Np),sub(P,Np),30,NU);
+    if(Math.abs(xc)>1e-3) arc(ctx,Sp,sub(Np,Sp),sub({x:clamp(X.x),y:X.y},Sp),34,PHI);
+
+    // both ι-fixed points
+    [[1,"+1"],[-1,"−1"]].forEach(([v,lab])=>{const px=ox+v*unit; if(px<0||px>w)return;
+      ctx.strokeStyle=UNIT; ctx.lineWidth=2; ctx.beginPath();
+      ctx.moveTo(px+.5,baseY-8); ctx.lineTo(px+.5,baseY+8); ctx.stroke();
+      ctx.fillStyle=UNIT; ctx.font="600 11px ui-monospace,Menlo,monospace"; ctx.textAlign="center";
+      ctx.fillText(lab,px,baseY-13);});
+
+    dot(ctx,Sp,ink,"S = 0",0,22,muted); dot(ctx,Np,ink,"N = ∞",0,-12,muted); dot(ctx,P,NU,"P",13,-8,NU);
+    ctx.fillStyle=UNIT; ctx.font="600 13px ui-monospace,Menlo,monospace";
+    if(X.x>10&&X.x<w-10){ctx.beginPath();ctx.arc(X.x,X.y,5,0,7);ctx.fill();
+      ctx.textAlign="center";ctx.fillText(fmt(xc),X.x,baseY-24);}
+    else{ctx.textAlign=X.x<0?"left":"right";ctx.fillText((X.x<0?"← ":"")+"x = "+fmt(xc)+(X.x<0?"":" →"),X.x<0?8:w-8,baseY-24);}
+  }
+
+  function drawHinge(){
+    const {w}=fit(h,74);
+    hctx.clearRect(0,0,w,74);
+    const muted=css("--muted"),rule=css("--rule"),UNIT=css("--unit"),NU=css("--nu"),DEAD=css("--dead"),DARK=css("--dark");
+    const pad=30,y=36,L=w-pad*2, x=Math.tan(A*D), defined=x>0, u=(x-1)/(x+1);
+    hctx.strokeStyle=rule; hctx.lineWidth=1; hctx.beginPath(); hctx.moveTo(pad,y+.5); hctx.lineTo(w-pad,y+.5); hctx.stroke();
+    hctx.setLineDash([2,3]); hctx.strokeStyle=DEAD;
+    [pad,w-pad].forEach(px=>{hctx.beginPath();hctx.moveTo(px+.5,y-12);hctx.lineTo(px+.5,y+12);hctx.stroke();});
+    hctx.setLineDash([]);
+    hctx.font="10.5px ui-sans-serif,system-ui,sans-serif"; hctx.fillStyle=DEAD;
+    hctx.textAlign="left"; hctx.fillText("• u=−1 (x→0)",pad,y+26);
+    hctx.textAlign="right"; hctx.fillText("(x→∞) u=+1 ○",w-pad,y+26);
+    const cxp=pad+L/2; hctx.strokeStyle=UNIT; hctx.lineWidth=2;
+    hctx.beginPath(); hctx.moveTo(cxp+.5,y-9); hctx.lineTo(cxp+.5,y+9); hctx.stroke();
+    hctx.fillStyle=UNIT; hctx.textAlign="center"; hctx.fillText("⊙ u=0 (x=1)",cxp,y-16);
+    if(defined){const px=pad+(u+1)/2*L;
+      hctx.fillStyle=NU; hctx.beginPath(); hctx.arc(px,y,6,0,7); hctx.fill();
+      hctx.fillStyle=muted; hctx.font="11px ui-monospace,Menlo,monospace";
+      hctx.textAlign="center"; hctx.fillText("u = "+u.toFixed(4)+"  =  tan(A−45°)",px,y+26);}
+    else{hctx.fillStyle=DARK; hctx.textAlign="center"; hctx.font="11.5px ui-sans-serif,system-ui,sans-serif";
+      hctx.fillText("x ≤ 0 — the hinge is undefined here",w/2,y+26);}
+  }
+
+  function update(){
+    const a=A*D, B=90-Math.abs(A), nu=Math.tan(a), phi=1/nu;
+    el("rA").textContent=A.toFixed(3)+"°"; el("rB").textContent=B.toFixed(3)+"°";
+    el("rSum").textContent=(90+Math.abs(A)+B).toFixed(3)+"°";
+    el("rNu").textContent=fmt(nu); el("rPhi").textContent=fmt(phi);
+    el("rProd").textContent=(nu*phi).toFixed(12);
+
+    const defined=nu>0, s=defined?Math.log(nu):NaN;
+    ["rS","rRho","rE","rPh"].forEach(i=>el(i).parentElement.classList.toggle("off",!defined));
+    el("sudaWarn").hidden=defined;
+    el("rS").textContent=defined?s.toFixed(6):"—";
+    el("rRho").textContent=defined?Math.abs(s).toFixed(6):"—";
+    el("rE").textContent=defined?(s*s).toFixed(6):"—";
+    el("rPh").textContent=defined?(s>1e-9?"+1":s<-1e-9?"−1":"0"):"—";
+
+    const st=el("state"); st.className="state";
+    if(Math.abs(Math.abs(A)-45)<0.12){st.classList.add("unit");
+      st.textContent=A>0?"⊙ — ι-fixed at +1. A = B, ν = φ = 1.":"⊙ — ι-fixed at −1. Outside Suda's chart entirely.";}
+    else if(Math.abs(A)>87){st.classList.add("dead");
+      st.textContent="A second right angle would be required. A triangle admits one — the construction is ending.";}
+    else if(Math.abs(A)<2.5){st.classList.add("dead"); st.textContent="P is falling onto S. At A = 0 there is no triangle.";}
+    else st.textContent=(nu>0?"positive ray — Suda's chart is live.":"negative ray — Suda's chart is dark.");
+    drawMain(); drawHinge();
+  }
+
+  function loop(t){ if(!playing)return; if(!last)last=t;
+    const dt=Math.min(64,t-last); last=t; A+=dir*dt*0.014;
+    if(A>=89.6){A=89.6;dir=-1;} if(A<=-89.6){A=-89.6;dir=1;}
+    S_.value=A; update(); raf=requestAnimationFrame(loop);}
+  const stop=()=>{playing=false;cancelAnimationFrame(raf);el("play").textContent="▶ Sweep";};
+  const start=()=>{if(reduced)return;playing=true;last=0;el("play").textContent="❚❚ Pause";raf=requestAnimationFrame(loop);};
+  const set=v=>{A=Math.max(-89.6,Math.min(89.6,v));S_.value=A;stop();update();};
+
+  S_.addEventListener("input",e=>{A=parseFloat(e.target.value);stop();update();});
+  el("play").addEventListener("click",()=>playing?stop():start());
+  el("neg").addEventListener("click",()=>set(-A));                          // x ↦ −x
+  el("inv").addEventListener("click",()=>set(Math.sign(A)*90-A));           // x ↦ 1/x
+  el("p1").addEventListener("click",()=>set(45)); el("m1").addEventListener("click",()=>set(-45));
+  addEventListener("resize",update);
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change",update);
+  new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+  update();
+})();
+</script>

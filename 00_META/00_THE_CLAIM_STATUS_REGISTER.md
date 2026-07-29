@@ -103,7 +103,9 @@ logged as a pass — dead form **DF-22**, the exact move A7 exists to forbid.
 
 ### The reopening protocol `[S]`
 
-A grave reopens legitimately when, and only when, all five are supplied:
+A **new `RQ` row** — the second of the three lawful moves in §2 — requires all five
+of the following. (This is the protocol for *opening a new question*; it is not the
+route by which an existing terminal row changes status, which is `OWNER-REOPENED`.)
 
 1. a **new ID** (the old row is not edited);
 2. the **weakening or retyping** stated explicitly against the refuted form;
@@ -176,7 +178,9 @@ refutes. A vow is kept or abandoned, never proved.
 
 ## 5 · The graves, adjudicated — `DF-01…DF-22`
 
-> **Owner ruling, 2026-07-29 (receipt 174): all 22 rows are now `OWNER-REOPENED`.**
+> **Owner ruling, 2026-07-29 (receipt 174), corrected by receipt 177: 21 of the 22
+> rows are `OWNER-REOPENED`.** `DF-14` was already `NARROWED` — a live status — so
+> it was not reopened; r174's "all 22" was over-broad by exactly one row.
 > The status column below records what each was reopened *from*, preserved per
 > row as `status_before_reopening`. Every counterexample stands unchanged and
 > every row now carries a `repair_path`. Reopening restores active
@@ -309,8 +313,11 @@ rather than repaired, if any of the following is ever true:
    receipt recording that it fired**.
 
 **What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
-`check_claim_status.py` and were negative-tested on 2026-07-29 — emptying a
-counterexample fails the build, and so does a missing ruling receipt. **Clauses 3
+`check_claim_status.py`, hardened and re-tested on 2026-07-29 against seven
+adversarial mutations (receipt 177). **But nothing invokes it automatically** —
+there is no CI job, no hook, no runner. Earlier wording here and in receipts
+172/174/175/176 called it "fail-closed" and said mutations "fail the build";
+**there is no build**, and the checker is advisory until a gate exists. **Clauses 3
 and 4 are not machine-checkable.** No validator can see a row being *cited* as
 evidence elsewhere in the corpus, and none can compel a future editor to record
 that this criterion fired before weakening it.

@@ -27,7 +27,7 @@
   ],
   "rules": [
     "Evidence tier and validation status are orthogonal axes; neither implies the other.",
-    "A one-way row may never be reopened as stated; it may only be superseded by a new row with a new id, an explicitly weaker or retyped claim, a discriminator, and a kill.",
+    "A one-way row may never return to a live status AS THE CLAIM IT WAS. Exactly three moves are lawful: NARROWED with a named weaker form; a new RQ row with its own id, discriminator and kill; or OWNER-REOPENED under an owner ruling. The counterexample stays attached in every case.",
     "A one-way row must cite the counterexample that killed it.",
     "A reopened row must name its parent and state why the parent's counterexample does not reach it.",
     "Appearing in this register is not evidence for any claim.",
@@ -331,7 +331,7 @@
       "id": "DF-08",
       "status": "OWNER-REOPENED",
       "form": "literal D6 identical to D0",
-      "counterexample": "loop-as-equation fails",
+      "counterexample": "loop-as-equation fails: D6 and D0 are not identical, and no order, homeomorphism or physical recurrence relates them — only a boundary-role resemblance survives (r126 A3-5)",
       "successor": "W12",
       "successor_kind": "retyped_as_role_resemblance",
       "status_before_reopening": "FORMALLY-REFUTED",
@@ -389,13 +389,12 @@
     },
     {
       "id": "DF-14",
-      "status": "OWNER-REOPENED",
+      "status": "NARROWED",
       "form": "universal frame/operand exclusivity for ordinary numbers",
       "counterexample": "ordinary numeric identities are operands",
       "successor": "KSC-04",
       "successor_kind": "retyped_as_opaque_frame",
-      "status_before_reopening": "NARROWED",
-      "repair_path": "REPAIRED. See 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md: the Titans are not operands because they are points on the sphere, not elements of the line."
+      "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174, with its weaker form live under KSC-04. r174's blanket application was over-broad by exactly one row; corrected 2026-07-29."
     },
     {
       "id": "DF-15",
@@ -582,7 +581,7 @@
   "owner_reopening": {
     "ruling": "Owner instruction 2026-07-29: unretire everything.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
-    "scope": "all 22 dead forms restored to active investigation",
+    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174's 'all 22' was over-broad by one row.",
     "what_it_does_not_do": "A ruling cannot delete a counterexample. Each row keeps the result that killed it; reopening means the question is live again, not that the refuted form is true."
   },
   "restored": [

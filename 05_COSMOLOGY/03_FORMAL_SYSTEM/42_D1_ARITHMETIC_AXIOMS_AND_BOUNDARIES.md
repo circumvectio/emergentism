@@ -159,6 +159,91 @@ EvaluationStatus :=
 may adjoin one unsigned projective point; in the extended real line one may
 adjoin the ordered endpoints `−∞,+∞`. Those are different constructions.
 
+## 3A. Foreclosed, not forbidden — and not merely undefined `[A]`
+
+Owner ruling 2026-07-29. The word **"undefined"** understates what happens at the
+boundary, and the word **"forbidden"** overstates who did it. Neither is right,
+and the correct word matters because it is the difference between a convention
+and a theorem.
+
+### 3A.1 One correction first `[A]`
+
+**Multiplication by zero is not affected.** `0 × a = 0` is total, defined and
+unremarkable in every field — zero is *absorbing*, and nothing fails or departs.
+Only two things fail, and they fail differently:
+
+```text
+a / 0             a well-formed term with NO SUCH ELEMENT   (provable)
+any term with ∞   NOT WELL-FORMED at all — ∞ is not in the field
+```
+
+### 3A.2 "Undefined" understates it `[A]`
+
+Suppose `y = N/0` with `N ≠ 0`. Then `0·y = N`. But `0·y = 0` for every `y` in
+any field. So `N = 0` — contradiction.
+
+> It is not that the framework **declines** to assign a value.
+> **No such element exists, and the field proves it.**
+
+"Undefined" suggests an unfilled slot. There is no slot. This is why doc 48's
+`T-A` states it as non-existence rather than absence.
+
+### 3A.3 "Forbidden" overstates it `[S]`
+
+A prohibition implies someone prohibiting. Nothing here is a decree, and
+presenting it as one would be exactly the error `F1` was demoted for — a
+theorem dressed as a choice, or a choice dressed as a theorem.
+
+The accurate word is **foreclosed**: closed off by the structure's own axioms,
+with no agent involved. Emergentism forbids nothing here; the field forecloses it.
+
+### 3A.4 The strongest form — totality and fieldhood are exclusive `[A]`
+
+This is the owner's insight, and it is a genuine theorem-shaped trade:
+
+> **No structure has both total division and the field axioms.**
+> To give `a/0` a value you must surrender something: zero being absorbing,
+> distributivity, or the absence of a bottom element.
+
+The trade is not hypothetical. **Wheels** (Setzer, Carlström) make division
+total and pay for it explicitly with `0/0 = ⊥` and weakened axioms. And `Ĉ`
+achieves total inversion — `f_N(0)=∞`, `f_N(∞)=0` — precisely because **`Ĉ` is
+not a ring at all**, let alone a field (doc 45 §6).
+
+So the owner's "it leaves the field of arithmetic entirely" is **literally
+correct**, and sharper than a prohibition:
+
+```text
+keep the field          →  the operation has no value
+keep the operation      →  you are no longer in a field
+```
+
+The boundary is where that choice is forced. Performing the operation does not
+break arithmetic; it **costs** you the arithmetic you were performing it in.
+
+### 3A.5 How this reads in the construction `[I]`
+
+The Thales projection (§6A) shows the same fact geometrically. As the angle at
+`N` approaches a right angle the ray runs parallel to the line and the
+intersection **does not exist in the plane** — because a Euclidean triangle
+admits one right angle and Thales already fixed it at `P`. To obtain a meeting
+point you must declare `ℝP¹` and adjoin `∞`.
+
+By doc 48's criterion that declaration is a **type-T totality repair**: the map
+becomes total, and **no degree of freedom is gained** — the line and the circle
+have the same dimension. The boundary is crossed by changing structure, never by
+letting an inadmissible term quietly denote a number.
+
+**Fence.** None of this licenses Titan arithmetic. `ArithmeticSignature(TitanFrame)=∅`
+stands (`KSC-04`): Titan expressions are **inadmissible terms**, a third category
+again — not "no such element", but "not a term". Three failures, three names:
+
+| | Failure | Example |
+|---|---|---|
+| inadmissible term | not well-formed | `0_T × ∞_T` — Titan type |
+| no such element | well-formed, provably empty | `a/0` in a field |
+| indeterminate form | well-formed in a limit, path-dependent | `lim 0·∞` |
+
 ## 4. The sovereign Titan/projective boundary `[A/I]`
 
 The opaque type `TitanFrame={0_T,1_T,∞_T}` carries the roles
