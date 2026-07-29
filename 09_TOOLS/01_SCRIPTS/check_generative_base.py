@@ -106,7 +106,9 @@ def main() -> int:
     if any(1 / x == 0 for x in list(seen)[:10000]):
         failures.append("G3: iota mapped a reachable value to 0")
 
-    # --- G6/G7/G8: the two operations are not two of a kind ------------------
+    # --- G6/G7/G8a: the two operations are not two of a kind -----------------
+    # G8a only: rationals throughout, no reals. G8b (the log form) needs the
+    # completion and is therefore NOT checkable here — that is the point of it.
     def close(gens, depth):
         s, front = {F(1)}, {F(1)}
         for _ in range(depth):
@@ -126,9 +128,9 @@ def main() -> int:
     if min(only_s) != F(1):
         failures.append("G7: S alone fell below 1 — the descent must require iota")
     if not all(1 / (1 / x) == x for x in sample):
-        failures.append("G8: iota is not an involution on the reachable set")
+        failures.append("G8a: iota is not an involution on the reachable set")
     if [x for x in sample if 1 / x == x] != [F(1)]:
-        failures.append("G8: iota has a reachable fixed point other than 1")
+        failures.append("G8a: iota has a reachable fixed point other than 1")
 
     # --- G5: both limits are approached --------------------------------------
     if not (val("S" * 9) > 9 and val("S" * 9 + "i") < F(1, 9)):

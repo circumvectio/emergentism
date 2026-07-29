@@ -143,10 +143,32 @@ S^n ι    ->  ½, ⅓, ¼, …   ->  •      inversion turns that reach around
 > through the inversion.** The base never declares two horizons; it declares one
 > reach and one reflection, and the second horizon is what the reflection makes.
 
-**G8 · `ι` is reflection through `1`.**
-Under `s = log x`, `ι` becomes `s ↦ −s` (verified: `log ι(x) = −log x` across the
-reachable set). So finity is symmetric about its centre and **the symmetry is the
-operation that generates it.** `1` is the unique reachable value fixed by `ι`.
+**G8a · `ι` is an involution with a unique fixed point `[A]` — and this half lives
+on the base.** `ι(ι(x)) = x` for every reachable `x`, and `1` is the only reachable
+value with `ι(x) = x`. Verified over the reachable set **using rationals only — no
+real number enters the check.**
+
+**G8b · Under `s = log x`, `ι` is the reflection `s ↦ −s` — `[A] given ℝ`.**
+True, and it is what makes "1 is the centre" geometric rather than merely
+fixed-point. But it is **not a statement about the base's objects**, and the
+reason is sharp:
+
+> **`log q` is TRANSCENDENTAL for every `q ∈ ℚ⁺` with `q ≠ 1`.**
+> *Proof.* Suppose `log q = a` were algebraic. `a ≠ 0`, since `q ≠ 1`. By
+> Hermite–Lindemann `e^a` is then transcendental, so `q = e^a` is transcendental —
+> but `q ∈ ℚ` is algebraic. Contradiction. ∎
+
+So `log(reachable) = {0} ∪ transcendentals`. **The log coordinate sees exactly one
+point of finity — the centre — and sends every other reachable value clean outside
+`ℚ`.** `G8b` therefore carries **completion to `ℝ` as a premise**, and belongs in
+the premise ledger, not in the base.
+
+> **CORRECTION, 2026-07-29, self-caught.** `G8` was first published here as one
+> claim at `[A]`, stating the log form as though it held of the base's own objects.
+> It does not. The split above is the repair. The load-bearing half — finity is
+> symmetric about its centre, and **the symmetry is the operation that generates
+> it** — is `G8a` and survives untouched.
+
 
 **Consequence — two of the three Titan relations are enacted, not posited.**
 `• = ⊙/○` and `○ = ⊙/•` say the horizons are each other's `ι`-images. Here that
