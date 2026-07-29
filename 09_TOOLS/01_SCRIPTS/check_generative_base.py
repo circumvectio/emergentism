@@ -132,6 +132,42 @@ def main() -> int:
     if [x for x in sample if 1 / x == x] != [F(1)]:
         failures.append("G8a: iota has a reachable fixed point other than 1")
 
+    # --- G9: the determinant invariant, and the hinge is not a word ----------
+    def _n(m):
+        from math import gcd
+        e = [m[0][0], m[0][1], m[1][0], m[1][1]]
+        g = 0
+        for v in e:
+            g = gcd(g, abs(v))
+        if g:
+            e = [v // g for v in e]
+        for v in e:
+            if v != 0:
+                if v < 0:
+                    e = [-w for w in e]
+                break
+        return tuple(e)
+
+    def _mul(x, y):
+        return ((x[0][0] * y[0][0] + x[0][1] * y[1][0], x[0][0] * y[0][1] + x[0][1] * y[1][1]),
+                (x[1][0] * y[0][0] + x[1][1] * y[1][0], x[1][0] * y[0][1] + x[1][1] * y[1][1]))
+
+    MS, MI = ((1, 1), (0, 1)), ((0, 1), (1, 0))
+    words, front = {_n(((1, 0), (0, 1)))}, [((1, 0), (0, 1))]
+    for _ in range(16):
+        nxt = []
+        for m in front:
+            for g in (MS, MI):
+                pm = _mul(m, g)
+                if _n(pm) not in words:
+                    words.add(_n(pm))
+                    nxt.append(pm)
+        front = nxt
+    if _n(((1, -1), (1, 1))) in words:
+        failures.append("G9: the hinge u=(x-1)/(x+1) was found as a word — det 2 should forbid it")
+    if _n(((1, 0), (1, 1))) not in words:
+        failures.append("G9: L(x)=x/(x+1) is det 1 and must be a word, but was not found")
+
     # --- G5: both limits are approached --------------------------------------
     if not (val("S" * 9) > 9 and val("S" * 9 + "i") < F(1, 9)):
         failures.append("G5: the two limits are not both approached")

@@ -39,7 +39,7 @@ here as a symmetry discovered later — it is **constitutive**, one of the two
 things the base grants.
 
 **And the primitive is not a free choice `[A]`.** `ι(x) = x` has exactly one
-solution on the positive ray, and it is `1`. You do not choose `1` — you choose
+solution on `ℚ⁺`, and it is `1`. You do not choose `1` — you choose
 `ι`, and `1` arrives as the only thing it holds still. There is no second
 candidate and no convention to defend. *(Machine-checked as
 `unique_positive_fixed_point` in `09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
@@ -92,7 +92,7 @@ values — a perfect binary tree.
 **G3 · No word attains `•`.**
 There is no word `w` with `val(w) = 0`.
 
-*Proof.* `S` maps `ℝ₊ → ℝ₊` and `ι` maps `ℝ₊ → ℝ₊`; `1 ∈ ℝ₊`; so by induction
+*Proof.* `S` maps `ℚ⁺ → ℚ⁺` and `ι` maps `ℚ⁺ → ℚ⁺`; `1 ∈ ℚ⁺`; so by induction
 every reachable value is strictly positive. Separately and more sharply:
 `ι(x) = 0` has **no solution at all** — there is no `x` whose reciprocal is zero.
 Zero is not merely un-visited. **There is no step that lands on it.** ∎
@@ -168,6 +168,38 @@ the premise ledger, not in the base.
 > It does not. The split above is the repair. The load-bearing half — finity is
 > symmetric about its centre, and **the symmetry is the operation that generates
 > it** — is `G8a` and survives untouched.
+
+
+**G9 · The determinant invariant — what the base can and cannot generate `[A]`.**
+As Möbius maps the generators are matrices in `PGL(2,ℚ)`:
+
+```text
+S = [[1,1],[0,1]]   det +1        ι = [[0,1],[1,0]]   det −1
+```
+
+so **every word has determinant `±1`.** A scalar `λ` scales a determinant by `λ²`,
+so a primitive matrix `M` with `det M = d` is a word only if `dλ² = ±1` has a
+rational solution.
+
+**Consequence — Suda's hinge is not a word.** `u = (x−1)/(x+1)` is
+`[[1,−1],[1,1]]`, primitive, with `det u = 2`; and `2λ² = ±1` has no rational
+solution. *Verified by exhaustion:* of the `6763` distinct projective words of
+length ≤ 16, `u` is in **none**.
+
+> **`ρ`, `E` and `u` all fail to live on the base, but for two different reasons.**
+> `ρ` and `E` escape through **transcendence** (G8b). `u` escapes through an
+> **algebraic invariant** — it is the wrong determinant. The hinge is *imported*,
+> not generated, and `42:395` currently tiers it `[A]` without recording that.
+
+**What the base does own in its place:** `L(x) = x/(x+1) = [[1,0],[1,1]]` has
+determinant `1` and **is** a word. It is the Calkin–Wilf second generator, already
+used in `G2`'s cross-check. So the base has a native companion coordinate — it is
+simply not Suda's.
+
+> **CORRECTION, 2026-07-29.** Before the experiment returned, this session
+> predicted the hinge would score `DERIVED` at zero premises because `u` maps `ℚ⁺`
+> into `ℚ ∩ (−1,1)` using no reals. **Staying inside `ℚ` is necessary and not
+> sufficient**; the determinant is the obstruction, and the prediction was refuted.
 
 
 **Consequence — two of the three Titan relations are enacted, not posited.**
