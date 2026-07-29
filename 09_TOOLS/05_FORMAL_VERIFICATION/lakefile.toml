@@ -1,0 +1,15 @@
+name = "emergentism_check"
+defaultTargets = ["EmergentismCheck"]
+
+# r183: this project file was ABSENT. The corpus's copy of EmergentismCheck.lean
+# could not be built at all — `lake build` had no target — while
+# check_established.py reported PASS by counting the string "^theorem ".
+# A Lean file whose every theorem was replaced with a false one would have passed.
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "EmergentismCheck"
+srcDir = "."

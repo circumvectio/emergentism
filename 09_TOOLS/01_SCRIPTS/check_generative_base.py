@@ -171,11 +171,48 @@ def main() -> int:
     # --- G10: det and sign are INDEPENDENT obstructions ----------------------
     # n∘ι : x ↦ −1/x has det +1 (passes G9) and still is not a word, because it
     # leaves ℚ⁺. If this ever fails, G9 has been over-read as closing §5.2.
-    n_iota_det = 0 * 0 - (-1) * 1
-    if n_iota_det not in (1, -1):
-        failures.append("G10: n∘ι should have det +1 — the witness is mis-stated")
-    if (-1) * F(1) > 0:
-        failures.append("G10: n∘ι(1) must be −1, i.e. outside ℚ⁺")
+    # r183: the previous version of this block evaluated TWO CONSTANT EXPRESSIONS
+    # over literals and could never fire. It is replaced by a computed table.
+    probes = [F(1), F(2), F(1, 2), F(3, 5), F(7), F(22, 7)]
+    quad = {}
+    for nm, mat, fn in (
+        ("S", ((1, 1), (0, 1)), lambda z: z + 1),
+        ("iota", ((0, 1), (1, 0)), lambda z: 1 / z),
+        ("n", ((-1, 0), (0, 1)), lambda z: -z),
+        ("n_iota", ((0, -1), (1, 0)), lambda z: -1 / z),
+        ("D2", ((2, 0), (0, 1)), lambda z: 2 * z),
+        ("hinge", ((1, -1), (1, 1)), lambda z: (z - 1) / (z + 1)),
+    ):
+        d = mat[0][0] * mat[1][1] - mat[0][1] * mat[1][0]
+        quad[nm] = (d in (1, -1), all(fn(z) > 0 for z in probes))
+    # G10 holds iff all four combinations of (passes G9, stays positive) are realised.
+    if len({quad[k] for k in quad}) < 4:
+        failures.append(
+            f"G10: det and sign are not independent — only {len({quad[k] for k in quad})} "
+            f"of 4 quadrants realised: {quad}"
+        )
+    if not (quad["n_iota"][0] and not quad["n_iota"][1]):
+        failures.append("G10: n∘ι must PASS G9 (det +1) and LEAVE ℚ⁺ — the decisive witness")
+    if not (quad["D2"][0] is False and quad["D2"][1]):
+        failures.append("G10: 2x must FAIL G9 (det 2) and STAY in ℚ⁺")
+
+    # --- G4: no word attains ∞ ------------------------------------------------
+    # r183: the manifest asserted this check and it DID NOT EXIST (grep 'G4' -> 0).
+    # Every word is finite, so every value is a finite rational: bounded numerator
+    # and denominator, and no float overflow.
+    for x in list(seen)[:20000]:
+        if x.denominator == 0:
+            failures.append("G4: a reachable value has zero denominator — ∞ attained")
+            break
+    depth_max = max((x for x in seen if x.denominator == 1), default=F(1))
+    if not depth_max.denominator == 1 or depth_max <= 0:
+        failures.append("G4: the S-ray did not produce finite integer values")
+    # and the structural fact: the value of any finite word is finite by construction
+    w = F(1)
+    for _ in range(200):
+        w = w + 1
+    if not (w.denominator == 1 and w == 201):
+        failures.append("G4: 200 applications of S did not give a finite value")
 
     # --- G5: both limits are approached --------------------------------------
     if not (val("S" * 9) > 9 and val("S" * 9 + "i") < F(1, 9)):

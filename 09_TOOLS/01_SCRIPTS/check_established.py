@@ -12,6 +12,7 @@ Exits 0 if every entry still holds, 1 otherwise.
 from __future__ import annotations
 
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -38,6 +39,27 @@ def main() -> int:
     text = MANIFEST.read_text(encoding="utf-8")
 
     # --- A · the Lean file -------------------------------------------------
+    # r183: THIS BLOCK USED TO COUNT "^theorem " AND GREP FOR sorry, AND NOTHING
+    # ELSE. A Lean file whose every theorem statement was replaced with a FALSE
+    # one would have passed, provided the count stayed at 20. And the corpus's
+    # copy had no lakefile or toolchain, so it could not be built at all.
+    #
+    # The rule now: THE CHECKER MAY NOT REPORT PASS WHEN IT CANNOT VERIFY.
+    # If the toolchain is absent it says UNVERIFIED and exits non-zero.
+    lakefile = LEAN.parent / "lakefile.toml"
+    toolchain = LEAN.parent / "lean-toolchain"
+    if not lakefile.exists() or not toolchain.exists():
+        errors.append(
+            "the Lean project is not buildable — lakefile.toml or lean-toolchain is "
+            "missing, so no oracle can be run and no claim here is verified"
+        )
+    if shutil.which("lake") is None:
+        errors.append(
+            "UNVERIFIED: `lake` is not on PATH, so the Lean theorems could not be "
+            "re-checked. This checker does not pass what it cannot verify — install "
+            "the toolchain or run with EMERGENTISM_SKIP_LEAN=1 to acknowledge the gap"
+        )
+
     if not LEAN.exists():
         errors.append("the Lean file is missing")
     else:
@@ -86,6 +108,11 @@ def main() -> int:
     if "holds no doctrine" not in text or "owns nothing" not in text.lower():
         errors.append("the manifest must state that it holds no doctrine and owns nothing")
 
+    import os
+    if os.environ.get("EMERGENTISM_SKIP_LEAN") == "1":
+        errors = [e for e in errors if not e.startswith("UNVERIFIED:")]
+        print("ESTABLISHED: NOTE — Lean re-check SKIPPED by EMERGENTISM_SKIP_LEAN=1")
+
     if errors:
         print("ESTABLISHED: FAIL")
         for e in errors:
@@ -97,6 +124,15 @@ def main() -> int:
     print(
         f"ESTABLISHED: PASS ({n_lean} Lean theorems, no sorry; {n_g} exhaustively-checked "
         f"base claims; {len(MUST_STAY_UNESTABLISHED)} guarded exclusions intact)"
+    )
+    # r183 · THE SCOPE OF THIS PASS, PRINTED SO IT CANNOT BE OVER-READ.
+    # The Lean half is verified STRUCTURALLY here: project files present, toolchain
+    # available, theorem count matches, no sorry. THE PROOFS ARE NOT RE-RUN — a full
+    # `lake build` requires fetching mathlib (GB-scale) and cannot live in a validator.
+    # The proofs WERE run, once, and the receipt records the output.
+    print(
+        "  scope: Lean half verified STRUCTURALLY (files, toolchain, count, no sorry). "
+        "Proofs NOT re-run here — see receipt 182 for the build. The base half IS re-run."
     )
     return 0
 

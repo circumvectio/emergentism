@@ -43,7 +43,21 @@ one is its own kill.**
 python3 09_TOOLS/01_SCRIPTS/check_established.py
 ```
 
-Exits non-zero if any listed entry stops holding.
+Exits non-zero if any listed entry stops holding — **and exits non-zero when it
+cannot verify**, rather than passing silently.
+
+> **What that command does and does not do `[B]` — corrected 2026-07-29, r183.**
+> The **base half is genuinely re-run**: `G1`–`G10` are recomputed by exhaustion on
+> every invocation. The **Lean half is verified structurally only** — project files
+> present, toolchain on `PATH`, theorem count, no `sorry`. **The proofs are not
+> re-run**, because a full `lake build` must fetch mathlib and cannot live inside a
+> validator. They *were* run once; receipt 182 records the build output and the
+> axiom traces.
+>
+> Until 2026-07-29 this script did **less** than that and still reported PASS: it
+> counted `^theorem ` and grepped for `sorry`, over a directory with **no lakefile
+> and no toolchain**, so the corpus's Lean copy could not be built at all. A file
+> whose every theorem was replaced with a false one would have passed.
 
 ---
 
