@@ -96,6 +96,23 @@ EMERGENT — each step a standard construction. None is forced; each solves a na
 
 ### What the relations actually say `[A]`
 
+> **⚠ FOUNDATIONAL DEFECT — flagged 2026-07-29, receipt 180 pending. This block is
+> under repair; do not cite it.** `B1`–`B3` **do not entail** the content stated
+> above them. Counter-model, in this page's own witness structure `(ℤ,+)`:
+> `⊙=5`, `•=3`, `○=2` satisfies `B1` (5=3+2), `B2` (3=5−2) and `B3` (2=5−3) while
+> `⊙` is **not** the identity and `{•,○}` is **not** an inverse pair. `(7,4,3)`
+> and `(1,1,0)` work equally. The reason is structural, not a lucky pick: **in any
+> group `B2` and `B3` are algebraic rearrangements of `B1`**, so the three relations
+> constrain nothing beyond `⊙ = • × ○` — one equation, not three.
+> The identity enters at *"Writing `e=⊙`"* below: writing `⊙` as `e` **is** the
+> identity stipulation, introduced as an abbreviation and then used with the
+> group-theoretic force of `e`. The line-108 "Verified" sentence checks
+> **satisfiability only** — `(5,3,2)` verifies equally well — and is presented as
+> though it verified the identification.
+> **This fires §11's own self-kill:** a selection presented as forced. The repair
+> is to state `⊙ = e` as the fourth posit it is, tiered `[S]`, not to harvest it
+> from the notation.
+
 Read as **defining relations** rather than as results, `B1`–`B3` reduce to one
 statement. Writing `e=⊙`, `a=•`, `b=○`: `(B2)` says `a=b⁻¹`, `(B3)` says
 `b=a⁻¹`, `(B1)` says `ab=e`. **The same fact three times.**
