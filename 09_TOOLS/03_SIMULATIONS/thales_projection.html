@@ -282,7 +282,7 @@
 
     const st=el("state"); st.className="state";
     if(Math.abs(Math.abs(A)-45)<0.12){st.classList.add("unit");
-      st.textContent=A>0?"⊙ — ι-fixed at +1. A = B, ν = φ = 1.":"⊙ — ι-fixed at −1. Outside Suda's chart entirely.";}
+      st.textContent=A>0?"⊙ — ι-fixed at +1. A = B, ν = φ = 1.":"ι-fixed at −1 — on the equator, but NOT reachable: outside Suda's chart, and outside the generative base, which reaches only ℚ⁺.";}
     else if(Math.abs(A)>87){st.classList.add("dead");
       st.textContent="A second right angle would be required. A triangle admits one — the construction is ending.";}
     else if(Math.abs(A)<2.5){st.classList.add("dead"); st.textContent="P is falling onto S. At A = 0 there is no triangle.";}

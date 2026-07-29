@@ -38,7 +38,12 @@ proof.*
 - Logarithmic coordinate: `s = log x`
 - Reciprocal-invariant radius: `ρ(x) = |log x| = |s|`
 - Energy: `E(x) = ρ(x)² = (log x)²`
-- Twist index / phase bit: `φ(x) = sign(log x) ∈ {−1, +1}`
+- Twist index / phase bit: `φ(x) = sign(log x) ∈ {−1, 0, +1}`
+  *(codomain repaired 2026-07-29. It read `{−1, +1}`, which the banner above already
+  lists as a corrected overclaim and which Theorem 1.2 contradicts four lines later:
+  `φ` vanishes at `x = 1`, and `0 ∉ {−1, +1}`. The correction was announced and never
+  applied. `φ` is a three-valued sign, not a phase bit; the name "bit" is retained
+  only as legacy and should not be read as two-valued.)*
 
 **Theorem 1.1 (energy well).** `E : ℝ₊ → [0, ∞)` is strictly convex, I-invariant (`E(1/x) = E(x)`), and has a unique global minimum at `x = 1` where `E(1) = 0`. As `x → 0⁺` or `x → ∞`, `E(x) → +∞`.
 
