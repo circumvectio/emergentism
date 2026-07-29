@@ -106,6 +106,30 @@ def main() -> int:
     if any(1 / x == 0 for x in list(seen)[:10000]):
         failures.append("G3: iota mapped a reachable value to 0")
 
+    # --- G6/G7/G8: the two operations are not two of a kind ------------------
+    def close(gens, depth):
+        s, front = {F(1)}, {F(1)}
+        for _ in range(depth):
+            front = {g(x) for x in front for g in gens} - s
+            if not front:
+                break
+            s |= front
+        return s
+
+    only_iota = close([lambda x: 1 / x], 8)
+    only_s = close([lambda x: x + 1], 12)
+    sample = list(seen)[:20000]
+    if only_iota != {F(1)}:
+        failures.append(f"G6: iota alone is not sterile — reached {sorted(only_iota)[:5]}")
+    if any(x.denominator > 1 for x in only_s):
+        failures.append("G6: S alone produced a non-integer")
+    if min(only_s) != F(1):
+        failures.append("G7: S alone fell below 1 — the descent must require iota")
+    if not all(1 / (1 / x) == x for x in sample):
+        failures.append("G8: iota is not an involution on the reachable set")
+    if [x for x in sample if 1 / x == x] != [F(1)]:
+        failures.append("G8: iota has a reachable fixed point other than 1")
+
     # --- G5: both limits are approached --------------------------------------
     if not (val("S" * 9) > 9 and val("S" * 9 + "i") < F(1, 9)):
         failures.append("G5: the two limits are not both approached")

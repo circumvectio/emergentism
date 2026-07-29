@@ -2,7 +2,7 @@
 title: "The Generative Base — one object, two operations, and the two limits no word attains"
 status: "ACTIVE — candidate base. Stands beside 00_THE_FOUNDATION.md §2; supersedes nothing until the owner rules G-0."
 date: 2026-07-29
-evidence_tier: "[A] G1–G5, computationally verified and reproducible; [S] the naming of the three categories; [I] the Titan reading"
+evidence_tier: "[A] G1–G8, computationally verified and mutation-tested and reproducible; [S] the naming of the three categories; [I] the Titan reading"
 owner: "Candidate. Does not amend KSC-28, doc 45, or 00_THE_FOUNDATION.md. Owner ruling G-0 pending."
 parents:
   - ../../00_THE_FOUNDATION.md
@@ -37,6 +37,12 @@ OPERATIONS     S(x) = x + 1          the successor
 That is the whole posit. Two operations and one object. `ι` is **not** imported
 here as a symmetry discovered later — it is **constitutive**, one of the two
 things the base grants.
+
+**And the primitive is not a free choice `[A]`.** `ι(x) = x` has exactly one
+solution on the positive ray, and it is `1`. You do not choose `1` — you choose
+`ι`, and `1` arrives as the only thing it holds still. There is no second
+candidate and no convention to defend. *(Machine-checked as
+`unique_positive_fixed_point` in `09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
 
 A **word** is a finite string over `{S, ι}`. Its **value** is the result of
 applying its letters left to right to `1`. Write `val(w)`.
@@ -108,6 +114,50 @@ either limit contains reachable values.
 
 ---
 
+## 2A · What each operation contributes — the asymmetry `[A]`
+
+The two operations are not two of a kind. Verified by exhaustive closure.
+
+**G6 · `ι` alone is sterile; `S` alone is one-directional.**
+
+```text
+from 1, closing under  ι  alone   ->  {1}           NOTHING.  ι(1)=1, and ιι=id.
+from 1, closing under  S  alone   ->  ℕ⁺            one direction only, no fractions
+from 1, closing under  S and ι    ->  ℚ⁺            all of finity
+```
+
+Inversion generates **nothing at all** by itself. Succession generates a ray.
+Only together do they give finity.
+
+**G7 · `•` is a direction only because `ι` reflects `○`.**
+Closing under `S` alone, **no value ever falls below `1`** (verified: the minimum
+of the `S`-closure is `1`). The descent toward zero exists only as
+`S^n ι = 1/(n+1)` — the mirror image of the ascent.
+
+```text
+S^n      ->  2, 3, 4, …   ->  ○      succession reaches toward totality
+S^n ι    ->  ½, ⅓, ¼, …   ->  •      inversion turns that reach around
+```
+
+> **Absence is not a second posit standing beside totality. It is totality seen
+> through the inversion.** The base never declares two horizons; it declares one
+> reach and one reflection, and the second horizon is what the reflection makes.
+
+**G8 · `ι` is reflection through `1`.**
+Under `s = log x`, `ι` becomes `s ↦ −s` (verified: `log ι(x) = −log x` across the
+reachable set). So finity is symmetric about its centre and **the symmetry is the
+operation that generates it.** `1` is the unique reachable value fixed by `ι`.
+
+**Consequence — two of the three Titan relations are enacted, not posited.**
+`• = ⊙/○` and `○ = ⊙/•` say the horizons are each other's `ι`-images. Here that
+is not an assertion the base makes; it is **what it means for `ι` to be one of the
+two generators.** The base does not claim the relation. It performs it.
+
+*(Per §5.3 this is a statement about reachability classes only. It is **not**
+doc 45's chart identity `φ·ν = 1`, and `DF-15` forbids either supporting the other.)*
+
+---
+
 ## 3 · The three categories `[S]`
 
 The naming is the selected part. The structure above is not.
@@ -137,10 +187,19 @@ The base above names two things it cannot exhibit. Compactification is exactly t
 act of **giving those two a name as points**:
 
 ```text
-1  ℚ⁺              G1 — the reachable
-2  ℝ₊              completion. Adds uncountably many values NO WORD REACHES.
-3  ℝ₊ ∪ {0, ∞}     the two limits become points
-4  Ĉ = ℂP¹         complexify; ι becomes a Möbius map with the poles as its 2-cycle
+                                                              tier   why
+1  ℚ⁺              G1 — the reachable. COUNTABLE.             [A]    theorem
+   ↓ completion     adds LIMITS of words, not words           [S]    declared move
+2  ℝ₊              UNCOUNTABLE
+   ↓ compactify     the two horizons become points            [S]    declared move
+
+**Every arrow after the first is a declaration, not a derivation**, and each is
+priced in §5. That is the specific improvement over the previous chain: the old
+ladder claimed to *derive* the sphere while its bottom rung already presupposed
+it. This one claims only to *reach* it, and pays for each step out loud.
+3  ℝ₊ ∪ {•, ○}     ι becomes total:  ι(•) = ○,  ι(○) = •
+   ↓ complexify     the reflection s ↦ −s becomes a rotation   [S]    declared move
+4  Ĉ = ℂP¹         ι is a Möbius map; the poles are its 2-cycle
 ```
 
 **`Ĉ` is where the unattainable becomes nameable.** That is a reason to build it,
