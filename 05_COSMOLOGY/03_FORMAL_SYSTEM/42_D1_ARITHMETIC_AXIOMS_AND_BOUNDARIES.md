@@ -417,6 +417,69 @@ over-reaching its chart.
 packaging and interpretation, never as proof-authority or originator; no physics,
 energy-ontology or genetic claims are imported.
 
+### 6A.5 Finity is the family of triangles `[A]`
+
+Owner observation, 2026-07-29, and it supplies a definition the corpus lacked.
+
+The figure that sweeps is the **projection triangle `N–S–X`** — apex, origin, and
+the projected point — not `N–P–S`. Because `NS` is perpendicular to the line, the
+angle at `S` is a right angle *always*, and the legs are
+
+```text
+NS = 1          fixed — the diameter
+SX = tan A      sweeps (0, ∞)
+NX = sec A      the hypotenuse
+```
+
+So as `A` runs over `(0°, 90°)` the figure runs over **every right triangle with
+one leg fixed at 1 — each shape exactly once.** That is the owner's "exhausts the
+whole finity of triangle," and it is exact: the parametrisation is a bijection
+onto the family, exactly as a graph runs over every `x` of its equation.
+
+### The two degenerations, and they are the poles `[A]`
+
+```text
+A → 0°    X → S.   width → 0.   angle at X → 90°
+          TWO right angles (S and X); the figure collapses onto the segment NS.
+          A RECTANGLE OF ZERO WIDTH.
+
+A → 90°   X → ∞.   width → ∞.   angle at N → 90°
+          TWO right angles (S and N), so NX is PARALLEL to the baseline.
+          Two parallels on a common perpendicular: a HALF-STRIP.
+```
+
+**One refinement on the owner's word.** The second limit is not a *rectangle* in
+the plane — a rectangle needs four right angles and a closing side, and here the
+two parallels never meet. It is **three sides of a rectangle whose fourth side is
+at infinity**. On `Ĉ`, where the parallels *do* meet at `∞`, the word is exactly
+right; in the affine plane it is a half-strip. The distinction is the same
+chart-locality as everywhere else, and it is worth keeping because it is *why*
+the crossing needs a declared structure change.
+
+So both ends are **degenerate rectangles**, and `ι` exchanges them:
+
+```text
+zero width  ←—— ι ——→  infinite width
+   x = 0                  x = ∞
+     •                      ○
+```
+
+### The definition this yields `[S]`
+
+> **Finity is not a number. It is the family of non-degenerate shapes — and the
+> poles are exactly where shape stops existing.**
+
+`⊙` names the open interior of that family; `•` and `○` name its two collapses.
+This is the geometric statement of what doc 47 §3 proved algebraically: the
+interior is **prior**, and the poles are its boundary rather than its parents. A
+family of triangles has two ways to stop being a triangle, and those two ways are
+the two Titan seats.
+
+It also restates the `μ` result without the machinery: the crossing is not a new
+freedom appearing — it is a **shape ceasing**. Nothing is gained at the boundary;
+something is lost, and a declared restructure is what lets the lost thing still
+have a name.
+
 ## 7. μ₀ and the division boundary `[I/C]`
 
 `μ₀:D0↝D1` is the selected **origin aperture**: the move from the sole
