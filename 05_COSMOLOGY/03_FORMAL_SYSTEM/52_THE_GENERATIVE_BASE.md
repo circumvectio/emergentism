@@ -38,11 +38,29 @@ That is the whole posit. Two operations and one object. `ι` is **not** imported
 here as a symmetry discovered later — it is **constitutive**, one of the two
 things the base grants.
 
-**And the primitive is not a free choice `[A]`.** `ι(x) = x` has exactly one
-solution on `ℚ⁺`, and it is `1`. You do not choose `1` — you choose
-`ι`, and `1` arrives as the only thing it holds still. There is no second
-candidate and no convention to defend. *(Machine-checked as
-`unique_positive_fixed_point` in `09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
+**And the primitive's UNIQUENESS is not a free choice `[A]`.** `ι(x) = x` has
+exactly one solution on `ℚ⁺`, and it is `1`. There is no second candidate.
+*(Machine-checked as `unique_positive_fixed_point`,
+`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
+
+> **CORRECTED 2026-07-30, and it is the `F2` error a second time.** This passage
+> read: *"You do not choose `1` — you choose `ι`, and `1` arrives as the only thing
+> it holds still."* **That is circular.** `ι(x) = 1/x` cannot be written without
+> naming `1`; and `x⁻¹` means *the `y` with `xy = e`*, which names the identity
+> directly. **`ι` presupposes the unit it was said to force.**
+>
+> What survives is exactly the split that killed `F2`:
+>
+> ```text
+> EXISTENCE of the unit    presupposed. It is in P1 and in ι's own definition.
+> UNIQUENESS of the unit   THEOREM. ι could have had two positive fixed points
+>                          and does not.
+> ```
+>
+> `00_THE_FOUNDATION.md:47-49` already states only the surviving half — *"its
+> **uniqueness** is the one thing here that nobody chose."* The projection was
+> right and this document overclaimed. Under §11's self-kill (*a selection
+> presented as forced*), the weaker phrasing is the one the base can carry.
 
 A **word** is a finite string over `{S, ι}`. Its **value** is the result of
 applying its letters left to right to `1`. Write `val(w)`.

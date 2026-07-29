@@ -37,7 +37,8 @@ parents:
                     └─────────┬─────────┘
                               │
                               1   THE PRIMITIVE — and the only one.
-                              │   ι's unique fixed point. Not chosen: forced by ι.
+                              │   ι's unique fixed point — its UNIQUENESS is forced;
+                              │   its existence is presupposed (ι names 1 to be written).
                               ▼
                               •   ABSENCE         not a number.  no step lands on it (G3)
                                                   ι(x)=0 has NO SOLUTION
