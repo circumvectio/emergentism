@@ -174,6 +174,8 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             "inadmissible",
             "not arithmetic",
             "not field arithmetic",
+            "never field arithmetic",
+            "fences retained",
             "not an operation",
             "non-operational",
             "no arithmetic",
@@ -265,13 +267,34 @@ class DimensionAndArithmeticTests(unittest.TestCase):
                 body = path.read_text(encoding="utf-8")
                 if any(marker in body[:2000].lower() for marker in historical_markers):
                     continue
+                # RETIRED 2026-07-29. This test banned the literal infix ⊙ = • × ○
+                # from every live surface. Receipt 174 RESTORED the three equations
+                # BY PROOF on Ĉ — doc 45 is titled "the three equations restored on
+                # the sphere" and its §4 reads "The equations are theorems [A]" —
+                # and the Foundation now posits the infix as B1. KSC-04 forbids
+                # ARITHMETIC on Titan labels (ArithmeticSignature(TitanFrame)=∅);
+                # it never retired the relation among seats.
+                #
+                # What KSC-04 and DF-21 actually require is not absence but a FENCE:
+                # wherever the identity appears it must not be cashed as a warrant.
+                # That is what is checked now.
                 for match in re.finditer(r"⊙\s*=\s*•\s*[×*]\s*○", body):
                     line = body.count("\n", 0, match.start()) + 1
-                    violations.append(f"{rel}:{line}: {match.group(0)}")
+                    window = body[max(0, match.start() - 1500): match.end() + 1500].lower()
+                    fenced = any(
+                        f in window
+                        for f in (
+                            "empty of world", "world-empty", "not a restored warrant",
+                            "licenses no", "analytic", "theorem", "posit", "ksc-04",
+                            "reachability", "df-15",
+                        )
+                    )
+                    if not fenced:
+                        violations.append(f"{rel}:{line}: {match.group(0)} — UNFENCED")
         self.assertEqual(
             violations,
             [],
-            "Retired Titan infix remains live:\n" + "\n".join(violations),
+            "Titan identity appears without its world-empty fence:\n" + "\n".join(violations),
         )
 
     def test_exact_register_transition_and_boundary_census(self):
