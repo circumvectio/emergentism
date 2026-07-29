@@ -50,7 +50,7 @@ parents:
 
 | question | answer | THEOREM or CONVENTION | why |
 |---|---|---|---|
-| Is `1` a number? | **yes — the only primitive one** | **THEOREM** | `N2`: `{1}` lies in *every* generating set of `(ℕ⁺,+)`. `N1`: it is the unique additive irreducible. And it is `ι`'s only fixed point on the ray — not chosen, forced |
+| Is `1` a number? | **yes — the only primitive one** | **THEOREM** | `N2`: `{1}` lies in *every* generating set of `(ℕ⁺,+)`. `N1`: it is the unique additive irreducible. And it is `ι`'s only fixed point on the ray — its **uniqueness** forced, its existence presupposed |
 | Is `2` a number? | **it is an operation** | **THEOREM** | `G2`: `2` **is** the word `S`. Not "constructible from 1" — identical to a word |
 | Is `3/5` a number? | **an operation** | **THEOREM** | `G2`: `3/5` **is** `SιSιSι`, and no other reduced word gives it |
 | Is `0` a natural number? | **no** | **CONVENTION with a theorem inside** | `N3`: `(ℕ⁺,+)` is the free **semigroup**; `(ℕ,+)` is the free **monoid**, whose identity is `0`. Adjoining `0` **is** the passage semigroup→monoid. Which object the word `ℕ` names is `[S]`; the structural split is `[A]` |
@@ -80,8 +80,8 @@ Everything above holds on either horn. This does not:
     reached one chart up, by                  BUT: 1 + (−1) = 0 in two steps, so
     a declared move.                            · G3 FALLS — 0 becomes reachable
   G1, G3, G5, G7, G8a and the                   · G8a FAILS — ι is partial at 0
-    forced primitive all stand.                 · fix(ι) = {+1,−1}, so THE PRIMITIVE
-                                                  STOPS BEING FORCED
+    unit's UNIQUENESS all stand.                 · fix(ι) = {+1,−1}, so even the UNIQUENESS
+                                                  of the unit is lost
                                                 · compactification is pulled INTO
                                                   the base, reinstating the very
                                                   collision doc 52 exists to escape
