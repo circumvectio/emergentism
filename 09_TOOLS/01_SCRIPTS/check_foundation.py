@@ -2,7 +2,7 @@
 """Enforce foundation consistency across its four homes.
 
 The foundation is stated in four places by design: K-5 owns R0, the Settled Canon
-Registry routes it (KSC-28), docs 45-51 own the formal results, and
+Registry routes it (KSC-28), docs 45-47 own the formal results, and
 00_THE_FOUNDATION.md is a projection that states it whole. Projections drift.
 The claim register has a validator; the foundation did not.
 
@@ -162,6 +162,26 @@ def main() -> int:
             errors.append(f"{label}: the BASE stratum must not be described as forced")
         if "exactly one identity" in block:
             errors.append(f"{label}: the false 'exactly one identity' claim has returned")
+
+    # --- the refuted F2 must not survive in ANY home ------------------------
+    # r180: the strata guard above scans only K-5 and the projection, so the
+    # false "exactly one identity" sat unflagged in the registry while this
+    # validator reported PASS. A PROXIMITY window does not work here — the
+    # withdrawal note sits next to the very place a re-assertion would land,
+    # and shields it. So the rule is exact: the phrase may appear in the
+    # registry exactly once, and only inside the canonical quoted withdrawal.
+    QUOTED = 'it read "a multiplicative structure has exactly one identity"'
+    hits = registry.count("exactly one identity")
+    if QUOTED not in registry:
+        errors.append(
+            "00_SETTLED_CANON_REGISTRY.md: the F2 withdrawal record is missing or altered. "
+            "F2 is permanently refuted; its supersession must stay recorded verbatim"
+        )
+    if hits > 1:
+        errors.append(
+            f"00_SETTLED_CANON_REGISTRY.md: 'exactly one identity' appears {hits} times; "
+            "exactly one (the withdrawal quote) is permitted — a live re-assertion has returned"
+        )
 
     # --- KSC-28 routes the foundation --------------------------------------
     if "ksc-28" not in registry:

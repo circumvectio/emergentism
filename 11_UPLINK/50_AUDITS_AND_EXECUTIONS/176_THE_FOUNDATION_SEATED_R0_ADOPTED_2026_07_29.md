@@ -78,7 +78,10 @@ fused**. Only the first is forced.
 FORCED — no selection available
   F1  every framework must settle Q1 (may the domain be empty?)
       and Q2 (may it contain a totality of itself?) — silence is an answer
-  F2  a multiplicative structure has exactly one identity — the unit is unique
+  F2  [WITHDRAWN 2026-07-29 — FALSE. It read "a multiplicative structure has exactly
+      one identity". Twelve of the sixteen binary operations on a two-element set
+      admit no two-sided identity at all. Survivor: at_most_one_identity —
+      uniqueness is a theorem, existence is a gift of the selected object.]
 
 SELECTED — declared, killable, openly ours
   R0  Q1 = yes    null state admissible          (inclusive semantics)
@@ -123,7 +126,11 @@ python3 09_TOOLS/01_SCRIPTS/check_emergentism_purity.py  → PASS
 python3 09_TOOLS/02_COMPILERS/compile_claim_cards.py --check → PASS
 ```
 
-All `[A]` claims in `F2`, `T1`, `T2` were re-verified from scratch in the
+> **AMENDED 2026-07-29.** The sentence below certified `F2`, which is now withdrawn as
+> false. The re-verification was real but its scope is corrected: it covers `T1` and `T2`,
+> not `F2`. A double-check that passes a refuted claim is a defect in the check.
+
+All `[A]` claims in `T1`, `T2` were re-verified from scratch in the
 2026-07-29 double-check: involution, orbit identity, `φν=1` at every latitude
 including both polar limits, `ν=1 ⟺ θ=π/2`, hinge invariance with open rims,
 `ρ`/`E` inversion-invariance with unique minimum at `1`, group-identity
