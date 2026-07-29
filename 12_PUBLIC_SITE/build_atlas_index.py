@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Build atlas/site_index.json — the navigable tree of every public page.
+"""Build atlas/site_index.json — the navigable tree of current public pages.
 
-Scans the static site for index.html pages, extracts each page's title, and
-groups them into the weltanschauung tree (overview surfaces first, then the
-twelve deep-library sections). The JSON feeds assets/js/atlas-drawer.js (the
-gitbook-style tree + search drawer present on every page) and the /atlas/
-knowledge home. Regenerable: run after adding or retitling pages.
+The current-surface registry is authoritative for inclusion. Frozen library
+roots and withheld artifacts stay in byte custody but never enter this index.
+The JSON feeds assets/js/atlas-drawer.js and the /atlas/ knowledge home.
 
 Usage: python3 -B build_atlas_index.py
 """
@@ -17,42 +15,39 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "atlas" / "site_index.json"
 WITHHELD_REGISTRY = ROOT / "withheld-routes.json"
+PARITY_MANIFEST = ROOT / "public_semantic_parity.json"
 
 
-def load_withheld_artifacts() -> set[str]:
-    data = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
-    return {item["artifact"] for item in data["artifacts"]}
+def load_boundaries() -> tuple[set[str], set[str], set[str]]:
+    parity = json.loads(PARITY_MANIFEST.read_text(encoding="utf-8"))
+    withheld = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
+    current = {path for path in parity["currentSurfaces"] if path.endswith("index.html")}
+    frozen = set(parity["frozenLibraryRoots"])
+    artifacts = {item["artifact"] for item in withheld["artifacts"]}
+    return current, frozen, artifacts
 
 
-WITHHELD_ARTIFACTS = load_withheld_artifacts()
+CURRENT_PAGES, FROZEN_ROOTS, WITHHELD_ARTIFACTS = load_boundaries()
 
 
-def is_withheld(path: Path) -> bool:
-    return path.relative_to(ROOT).as_posix() in WITHHELD_ARTIFACTS
+def is_current(path: Path) -> bool:
+    relative = path.relative_to(ROOT).as_posix()
+    root_name = relative.split("/", 1)[0]
+    return (
+        relative in CURRENT_PAGES
+        and relative not in WITHHELD_ARTIFACTS
+        and root_name not in FROZEN_ROOTS
+    )
 
 # (section key, label, list of page dirs) — overview surfaces, curated order.
 OVERVIEW = [
+    ("start", "Start and practice", ["", "practice", "plainly", "record", "book", "about", "exit"]),
     ("unfolding", "The Unfolding · D0–D6", ["0", "1", "2", "3", "4", "5", "6"]),
-    ("doctrine", "Doctrine", ["synthesis", "axioms", "soul-loop", "game", "rosetta", "moat"]),
-    ("reading", "Reading", ["read", "book", "routes"]),
+    ("method", "Map and method", ["dimensions", "axioms", "check", "rosetta", "ecology", "journey", "fable", "compass"]),
+    ("participate", "Open research", ["map", "lab", "contribute"]),
 ]
 
-# Deep-library sections (generated pages, frozen): label per directory.
-LIBRARY = [
-    ("papers", "Papers"),
-    ("canon", "Canon"),
-    ("formal", "Formal System"),
-    ("paradox", "Paradox Dissolutions"),
-    ("memetic", "Memetics"),
-    ("rosettad", "Rosetta Domains"),
-    ("operators", "Operators"),
-    ("will", "Will / Teleology"),
-    ("value", "Value / Axiology"),
-    ("ground", "Ground / Ontology"),
-    ("sacred", "Sacred / Theology"),
-    ("method", "Method"),
-    ("meta", "Meta"),
-]
+COLLECTIONS = [("discoveries", "Discoveries")]
 
 TITLE_RE = re.compile(r"<title>([^<]+)</title>", re.IGNORECASE)
 H1_RE = re.compile(r"<h1[^>]*>(.*?)</h1>", re.IGNORECASE | re.DOTALL)
@@ -77,11 +72,11 @@ def collect(dirname: str):
     base = ROOT / dirname
     pages = []
     idx = base / "index.html"
-    if idx.exists() and not is_withheld(idx):
+    if idx.exists() and is_current(idx):
         pages.append({"href": f"/{dirname}/", "title": page_title(idx)})
-    for sub in sorted(p for p in base.iterdir() if p.is_dir()):
+    for sub in sorted((p for p in base.iterdir() if p.is_dir()), key=lambda path: path.name):
         sidx = sub / "index.html"
-        if sidx.exists() and not is_withheld(sidx):
+        if sidx.exists() and is_current(sidx):
             pages.append({"href": f"/{dirname}/{sub.name}/", "title": page_title(sidx)})
     return pages
 
@@ -91,18 +86,30 @@ def main() -> int:
     for key, label, dirs in OVERVIEW:
         pages = []
         for d in dirs:
-            idx = ROOT / d / "index.html"
-            if idx.exists() and not is_withheld(idx):
-                pages.append({"href": f"/{d}/", "title": page_title(idx)})
+            idx = ROOT / "index.html" if not d else ROOT / d / "index.html"
+            if idx.exists() and is_current(idx):
+                href = "/" if not d else f"/{d}/"
+                pages.append({"href": href, "title": page_title(idx)})
         if pages:
             tree.append({"key": key, "label": label, "pages": pages})
-    for dirname, label in LIBRARY:
+    for dirname, label in COLLECTIONS:
         pages = collect(dirname)
         if pages:
-            tree.append({"key": dirname, "label": f"{label} ({len(pages)})", "pages": pages})
+            tree.append({"key": dirname, "label": label, "pages": pages})
     total = sum(len(s["pages"]) for s in tree)
-    OUT.write_text(json.dumps({"generated": "build_atlas_index.py", "total": total,
-                               "tree": tree}, ensure_ascii=False, indent=1), encoding="utf-8")
+    payload = {
+        "schemaVersion": 2,
+        "status": "current-cleared-surfaces-only",
+        "generated": "build_atlas_index.py",
+        "source": "public_semantic_parity.json",
+        "exclusions": {
+            "frozenLibraryRoots": sorted(FROZEN_ROOTS),
+            "withheldRegistry": "withheld-routes.json",
+        },
+        "total": total,
+        "tree": tree,
+    }
+    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"site_index.json: {total} pages in {len(tree)} sections -> {OUT.relative_to(ROOT)}")
     return 0
 

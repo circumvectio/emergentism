@@ -170,7 +170,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The Book — Emergentism</title>
-<meta name="description" content="Emergentism, the whole book, free to read online: D5 possible power, D4 actual power, and the Rosetta grammar that connects model to action. Every claim wears its evidence tier; the book ends by dissolving itself." />
+<meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. Load-bearing claim coverage remains incomplete." />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 <style>
@@ -211,6 +211,8 @@ body{margin:0;background:var(--bg);color:var(--ink);
   font-feature-settings:"liga" 1,"onum" 1,"kern" 1;}
 ::selection{background:rgba(184,134,44,.26)}
 a{color:inherit}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--bg);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
+.skip:focus{transform:translateY(0)}
 
 /* progress bar */
 .progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
@@ -333,15 +335,20 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to book</a>
 <div class="progress" id="progress"></div>
 
 <header class="bookbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
-  <nav>
-    <button id="toc-toggle" aria-label="Contents">☰ Contents</button>
-    <a href="../">↑ Site</a>
-    <a href="../read/">Library</a>
-    <button id="theme-toggle" aria-label="Toggle reading theme" title="Toggle reading theme">◐</button>
+  <nav aria-label="Primary navigation">
+    <button id="toc-toggle" aria-label="Open contents" aria-controls="toc" aria-expanded="false">☰ Contents</button>
+    <a href="../practice/#frame">Practice</a>
+    <a href="../plainly/">Worldview</a>
+    <a href="../record/">Research</a>
+    <a href="../book/" aria-current="page">Library</a>
+    <a href="../contribute/">Participate</a>
+    <a href="../exit/">Exit</a>
+    <button id="theme-toggle" aria-label="Switch to dark reading theme" title="Switch reading theme">◐</button>
   </nav>
 </header>
 
@@ -350,7 +357,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
     <div class="toc-head">The Book · %%NCH%% chapters · %%WORDS%% words</div>
     %%TOC%%
   </aside>
-  <main class="reading">
+  <main class="reading" id="main" tabindex="-1">
     <div class="reading-inner">
       %%BODY%%
       <footer class="book-foot">
@@ -368,20 +375,25 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
   // theme: default light, honor stored choice
   try{var t=localStorage.getItem("emergentism-reading-theme");if(t)root.setAttribute("data-reading-theme",t);}catch(e){}
   var tt=document.getElementById("theme-toggle");
+  function setThemeLabel(){if(!tt)return;var target=root.getAttribute("data-reading-theme")==="dark"?"light":"dark";tt.setAttribute("aria-label","Switch to "+target+" reading theme");}
+  setThemeLabel();
   if(tt)tt.addEventListener("click",function(){
     var cur=root.getAttribute("data-reading-theme")==="dark"?"light":"dark";
     root.setAttribute("data-reading-theme",cur);
     try{localStorage.setItem("emergentism-reading-theme",cur);}catch(e){}
+    setThemeLabel();
   });
   // mobile TOC drawer
   var tg=document.getElementById("toc-toggle"), toc=document.getElementById("toc");
-  function closeToc(){root.classList.remove("toc-open");var s=document.querySelector(".toc-scrim");if(s)s.remove();}
+  function closeToc(restore){root.classList.remove("toc-open");if(tg)tg.setAttribute("aria-expanded","false");var s=document.querySelector(".toc-scrim");if(s)s.remove();if(restore&&tg)tg.focus();}
   if(tg)tg.addEventListener("click",function(){
-    if(root.classList.contains("toc-open")){closeToc();return;}
+    if(root.classList.contains("toc-open")){closeToc(false);return;}
     root.classList.add("toc-open");
-    var s=document.createElement("div");s.className="toc-scrim";s.addEventListener("click",closeToc);document.body.appendChild(s);
+    tg.setAttribute("aria-expanded","true");
+    var s=document.createElement("div");s.className="toc-scrim";s.addEventListener("click",function(){closeToc(false);});document.body.appendChild(s);
   });
-  toc&&toc.addEventListener("click",function(e){if(e.target.closest(".toc-link"))closeToc();});
+  toc&&toc.addEventListener("click",function(e){if(e.target.closest(".toc-link"))closeToc(false);});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&root.classList.contains("toc-open"))closeToc(true);});
   // progress bar
   var bar=document.getElementById("progress");
   function onScroll(){

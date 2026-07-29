@@ -2,7 +2,7 @@
   "authority": "deterministic projection receipt; source owners retain semantics",
   "claim_card_contract": {
     "graph_path": "00_META/registers/CLAIM_GRAPH.json",
-    "graph_sha256": "87671a95887d8cb8ca4dd357488922c2cbbef944a6aac9bca7c4ae6a3cc8a5eb",
+    "graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "schema": "emergentism/claim-card-set/v1",
     "sha256": "b52ccdcde8d3858e3af15f1d79c044bfa365e0e20892e3738efe9ed199733d70"
@@ -14,7 +14,7 @@
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "e868185e9a3932c1f9df27bf5183d7a6323b63d1a4c1cd97fc03a0caf200a4a7"
+    "sha256": "c56acf38533b2e9acab1238ab31f0a268a369079dbe05afe837c23eb686b7653"
   },
   "renderer": {
     "extensions": [
@@ -29,15 +29,15 @@
   "sources": [
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58"
+      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749"
     },
     {
       "path": "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
-      "sha256": "bbd928077acced371bd6af0f06a35bc78afef342f42156b8361ea0cd5b5109fb"
+      "sha256": "520ef39fd188be3577af1423abc82490c5da7dc2bc419726b89fb474bdb86e59"
     },
     {
       "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "sha256": "fc9a97ae890c791dc09b13e8259aa88f5cd7d8d21fcaea0e185bc2cb7cacba45"
+      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33"
     }
   ]
 }

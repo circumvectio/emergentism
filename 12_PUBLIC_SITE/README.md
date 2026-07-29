@@ -7,28 +7,33 @@ evidence_tier: "[B] repository/build state; doctrine inherits source tiers"
 
 # Emergentism public site
 
-The site is a tool-first public research surface for a stranger: use one method
-before meeting the worldview, inspect the claims at their stated prices, follow
-the dated corrections, and keep an exit visible throughout.
+The site is the public front door to Emergentism: a fallibilist worldview for
+finite beings, made usable through Finity. A stranger should understand the
+category, try one bounded practice, inspect claims at their stated prices,
+follow dated corrections, and keep an exit visible throughout.
 
 ## Primary journey
 
-The five public hubs form the narrow journey; Exit is always adjacent:
+Six stable doors organize the public journey; Exit is always adjacent:
 
-1. **Use Finity** — [`index.html`](index.html) demonstrates the method, and
-   [`practice/`](practice/) carries the canonical seven-prompt Card, a clearly
-   illustrative worked example, and optional deeper practices.
-2. **Ideas** — [`plainly/`](plainly/) introduces the worldview in ordinary
+1. **Practice** — [`practice/`](practice/) carries the source-owned Finity Card,
+   a local commitment/outcome receipt builder, a clearly illustrative worked
+   example, and optional deeper practices.
+2. **Worldview** — [`plainly/`](plainly/) introduces Emergentism in ordinary
    language. [`rosetta/`](rosetta/) leads with seven functional moves; symbolic
    and cross-tradition correspondences remain an optional, tiered appendix.
-3. **Research & Record** — [`record/`](record/) is the trust hub. It routes to
+3. **Research** — [`record/`](record/) is the trust hub. It routes to
    [`discoveries/`](discoveries/), [`lab/`](lab/), [`map/`](map/), sources,
-   tests, and dated corrections only after the tool has been demonstrated.
-4. **About** — [`about/`](about/) names the author, category, boundaries, and
-   missing independent review without manufacturing institutional standing.
+   tests, and dated corrections without turning open work into doctrine.
+4. **Library** — [`book/`](book/) is the current reader. [`read/`](read/) remains
+   the wider reading index and visibly distinguishes current from frozen work.
 5. **Participate** — [`contribute/`](contribute/) starts with three human acts:
    share a Finity receipt, attack a claim, or contribute bounded evidence.
 6. **Exit** — [`exit/`](exit/) lets a visitor put the map down without penalty.
+
+[`about/`](about/) is the accountability surface for authorship, category,
+boundaries, and missing independent review; it remains available from page
+footers without competing with the six primary doors.
 
 The detailed spine remains available at [`dimensions/`](dimensions/) and
 [`0/`](0/) through [`6/`](6/). The older [`compass/`](compass/) remains a
@@ -38,24 +43,28 @@ compressed reading, not the primary research interface.
 
 The public front is organized as a value sequence, not a directory:
 
-1. **Memetic unit — Finity.** One ownable word and one useful distinction: a
-   finite, observable boundary an open process can approach.
-2. **Mechanism — the power seam.** D5 possible power is evaluated by a present
-   D4 model and meets D4 actual power; possibility alone does not act.
-3. **First value — the Finity Card.** A visitor can turn one live decision into
-   a bounded next move before accepting the wider worldview.
-4. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
+1. **Identity — Emergentism.** A type-disciplined, revisable worldview that
+   keeps map and territory, possibility and actuality, choice and consequence
+   distinct.
+2. **Human problem — finite action.** Reality exceeds every map, yet finite
+   beings still have to choose and act.
+3. **First practice — Finity.** A visitor can use seven prompts to frame one
+   live decision, predeclare a review point, and record an observed outcome
+   without accepting the wider worldview. Comparative benefit remains `[C]`.
+4. **World contact — the receipt loop.** A map proposes, action meets reality,
+   consequence returns a receipt, and the map is revised.
+5. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
    enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
    correspondences are optional research mnemonics, not ranks or proof.
-5. **Trust — consequence before adherence.** The laboratory, trial record,
-   rivals, kill criteria, and exit remain available after the useful idea has
-   been demonstrated.
-6. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
+6. **Trust — consequence before adherence.** The laboratory, trial record,
+   rivals, kill criteria, and exit remain available beside the practical
+   offer. A worked example demonstrates format, not efficacy.
+7. **Participation — Use, Attack, Evidence.** A receipt, a contradiction, or one
    bounded contribution is enough; membership and assent are never required.
 
 The intended value loop is:
 
-`clear idea → useful decision → consequence receipt → better evidence → stronger map → wider use`
+`fallible map → possible futures → Finity → actual move → observed outcome → revised map`
 
 No step depends on membership, belief, payment, or delegated truth authority.
 
@@ -110,3 +119,12 @@ gate; this release does not promise or expose one.
 This repository can produce locally checked static bytes. Deployment, the
 branded domain, external red-team review, and empirical calibration are
 separate gates and must be reported separately.
+
+The Finity evaluation program is typed as three draft gates with contact
+deferred: fresh-reader comprehension, conflict-declared independent review, and
+a four-arm comparison against a strongest component-matched ordinary worksheet.
+Exact materials, review bundle, ethics determination, analysis assets, and
+freeze remain outstanding. No reader or participant has been contacted, no
+external review exists, no ethics determination or preregistration exists, and
+no data or result exists. The Laboratory may expose those absences; it may not
+turn the drafts themselves into evidence.

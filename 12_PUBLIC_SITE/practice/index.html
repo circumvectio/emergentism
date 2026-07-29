@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Practice — what a person actually does</title>
-<meta name="description" content="Turn one important decision into a finite boundary, a real next move, and an outcome you can learn from—then continue into three deeper Emergentist practices." />
+<meta name="description" content="Frame one decision with the source-owned Finity Card, build a private local receipt, and return later to record the observed outcome." />
 <meta name="color-scheme" content="dark" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="The Practice" />
-<meta property="og:description" content="Frame one decision with the Finity Card, then continue into the sitting, personal trial record, and dyadic check." />
+<meta property="og:description" content="Frame one decision with the Finity Card and build a private commitment-and-outcome receipt in your browser." />
 <meta property="og:url" content="https://emergentism.org/practice/" />
 <meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta name="twitter:title" content="The Practice" />
-<meta name="twitter:description" content="The Finity Card, the sitting, the personal trial record, and the dyadic check—usable without required belief." />
+<meta name="twitter:description" content="The Finity Card and a private local commitment-and-outcome receipt—usable without required belief." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23FFEB3B' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23FFEB3B'/%3E%3C/svg%3E" />
 <style>
 @font-face{font-family:'Roboto';font-style:normal;font-weight:100 900;font-display:swap;src:url('../assets/fonts/Roboto-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -38,6 +38,8 @@ body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
              radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
 ::selection{background:rgba(255,235,59,.26);color:#050505}
 a{color:inherit}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--void);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
+.skip:focus{transform:translateY(0)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
 .read{max-width:var(--read)}
 .mono{font-family:var(--mono)}
@@ -50,6 +52,14 @@ a{color:inherit}
 .nav a:hover{color:var(--void);background:var(--gold)}
 .nav a.here{color:var(--gold);border:1px solid var(--line)}
 .nav a.exit-link{color:var(--bone-faint);border:1px solid var(--line-soft)}
+.mobile-actions{display:none;align-items:center;gap:.55rem;font:500 .7rem var(--mono);text-transform:uppercase}
+.mobile-actions>a,.mobile-actions summary{color:var(--bone-dim);text-decoration:none;cursor:pointer;list-style:none;padding:.42rem .1rem}
+.mobile-actions summary::-webkit-details-marker{display:none}
+.mobile-actions details{position:relative}
+.mobile-actions .menu-panel{position:absolute;right:0;top:calc(100% + .8rem);min-width:12rem;padding:.65rem;background:var(--panel-2);border:1px solid var(--line);box-shadow:0 1rem 2.5rem rgba(0,0,0,.42)}
+.mobile-actions .menu-panel a{display:block;padding:.55rem;color:var(--bone-dim);text-decoration:none}
+.mobile-actions .nav-action{color:var(--void);background:var(--gold);padding:.46rem .62rem}
+.mobile-actions .nav-quiet{color:var(--bone-faint)}
 header.hero{padding:clamp(3rem,8vw,6rem) 0 1rem}
 .fileno{font-family:var(--mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 1.6rem;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
 .fileno::before{content:"";width:30px;height:1px;background:var(--gold-deep);display:inline-block}
@@ -99,45 +109,90 @@ p{margin:0 0 1.25rem}
 .cta:hover{border-color:var(--gold);color:var(--gold)}
 .cta.primary{background:var(--gold);color:var(--void);border-color:var(--gold);font-weight:700}
 .cta.primary:hover{background:var(--bone);border-color:var(--bone);color:var(--void)}
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+.rival-boundary{margin:1.2rem 0 0;padding:1rem 1.2rem;border:1px solid var(--line);border-left:3px solid var(--t-c);background:rgba(181,156,224,.035);color:var(--bone-dim);font-size:.9rem}
+.rival-boundary b{color:var(--bone);font-weight:500}
+.receipt-builder{margin:1.5rem 0 0;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,rgba(66,165,245,.045),rgba(255,235,59,.025) 52%,rgba(95,198,176,.035)),var(--panel);overflow:hidden}
+.builder-head{padding:1.25rem 1.35rem;border-bottom:1px solid var(--line)}
+.builder-head h3{margin:0 0 .45rem;font-size:1.35rem}
+.builder-head p{margin:0;color:var(--bone-dim);font-size:.9rem}
+.builder-head .local{display:inline-block;margin-top:.65rem;color:var(--t-s);font:600 .66rem var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.receipt-faces{display:grid;grid-template-columns:1fr 1fr}
+.receipt-face{padding:1.25rem 1.35rem}
+.receipt-face+.receipt-face{border-left:1px solid var(--line)}
+.receipt-face h4{margin:0 0 1rem;font:600 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+.field{display:grid;gap:.35rem;margin-bottom:.9rem}
+.field label{font:500 .68rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--bone-dim)}
+.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:4px;background:var(--void);color:var(--bone);font:400 .92rem/1.5 var(--sans);padding:.72rem .8rem}
+.field textarea{min-height:5.4rem;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold);outline:2px solid rgba(255,235,59,.18);outline-offset:1px}
+.builder-actions{display:flex;gap:.65rem;flex-wrap:wrap;padding:1rem 1.35rem;border-top:1px solid var(--line)}
+.builder-actions [role="status"]{align-self:center;color:var(--t-s);font:500 .68rem var(--mono)}
+.copybtn.primary{background:var(--gold);border-color:var(--gold);color:var(--void);font-weight:700}
+.copybtn:disabled{opacity:.42;cursor:not-allowed}
+.receipt-output{margin:0;border-top:1px solid var(--line);border-radius:0;background:var(--void)}
+.receipt-output .bar{border-bottom:1px solid var(--line)}
+.receipt-output pre{white-space:pre-wrap;overflow-wrap:anywhere}
+.further{border-top:1px solid var(--line-soft);padding:clamp(2.4rem,6vw,4.2rem) 0}
+.further>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center;font:500 .76rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+.further>summary::-webkit-details-marker{display:none}
+.further>summary::after{content:"Open +";color:var(--bone-faint);font-size:.66rem}
+.further[open]>summary::after{content:"Close −"}
+.further .further-intro{margin:1.2rem 0;color:var(--bone-dim);max-width:62ch}
 footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(--bone-faint);font-size:.92rem}
 footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
 footer.foot a{color:var(--bone-dim)}
-@media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}}
+@media (max-width:760px){.nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}.receipt-faces{grid-template-columns:1fr}.receipt-face+.receipt-face{border-left:0;border-top:1px solid var(--line)}}
+@media (max-width:640px){.practice{grid-template-columns:1fr;gap:.6rem}.mobile-actions{font-size:.62rem}.mobile-actions .nav-action{padding:.42rem .48rem}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-
-<div class="topbar">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Primary navigation">
-    <a class="here" href="../practice/" aria-current="page">Use Finity</a>
-    <a href="../plainly/">Ideas</a>
-    <a href="../record/">Research &amp; Record</a>
-    <a href="../about/">About</a>
+    <a class="here" href="../practice/#frame" aria-current="page">Practice</a>
+    <a href="../plainly/">Worldview</a>
+    <a href="../record/">Research</a>
+    <a href="../book/">Library</a>
     <a href="../contribute/">Participate</a>
     <a class="exit-link" href="../exit/">Exit</a>
   </nav>
-</div>
+  <nav class="mobile-actions" aria-label="Mobile navigation">
+    <a class="nav-action" href="#frame" aria-current="page">Practice</a>
+    <details>
+      <summary>Menu</summary>
+      <div class="menu-panel">
+        <a href="../plainly/">Worldview</a>
+        <a href="../record/">Research</a>
+        <a href="../book/">Library</a>
+        <a href="../contribute/">Participate</a>
+      </div>
+    </details>
+    <a class="nav-quiet" href="../exit/">Exit</a>
+  </nav>
+</header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
 
   <header class="hero read reveal in">
     <p class="fileno">The practice · possible power meets actual power</p>
     <h1>Turn one decision<br>into a <span class="gold">testable next move.</span></h1>
-    <p class="dek">Begin with the Finity Card: name what is actual, keep the relevant possibilities open, choose one finite boundary, and act. Then continue into three deeper practices—<b>valuable with zero required belief</b>.</p>
+    <p class="dek">Begin with the Finity Card: name what is actual, keep the relevant possibilities open, choose one bounded review point, and act. The worksheet is <b>offered for local testing with zero required belief</b>; its comparative benefit remains unproven.</p>
     <div class="tierline">
       <span class="tier t-i">[I] interpretive — the practices, not the metaphysics, are what this page asks of you</span>
       <span class="tier t-s">[S] the trial record they imitate is public and dated</span>
     </div>
   </header>
 
-  <section class="read reveal" id="finity-card-practice">
+  <section class="read reveal" id="frame">
     <p class="kicker">Start here · five minutes</p>
-    <h2>The Finity Card — <b>frame one decision.</b></h2>
+    <h2 id="finity-card-practice">The Finity Card — <b>frame one decision.</b></h2>
     <div class="body">
-      <p>Possible power is not yet action. Actual power is not yet direction. Use these prompts to orient by the longest horizon you can responsibly model, act at the shortest interval that can honestly discriminate the move, and let the outcome correct you.</p>
+      <p>Possible power is not yet action. Actual power is not yet direction. Use these prompts to orient by the longest horizon you can responsibly model, then choose the shortest observable review point that can distinguish the move. Keep it reversible where possible; when no harmless reversal exists, use the smallest lawful commitment and make the remaining harm explicit.</p>
     </div>
     <div class="artifact">
       <div class="bar"><span>finity-card.txt · one decision</span><button class="copybtn" type="button" data-copy-target="finity-card-template" aria-label="Copy the Finity Card to the clipboard">Copy</button></div>
@@ -147,11 +202,59 @@ DECISION      What am I actually deciding?
 ACTUAL        What is true now, and what means are really available?
 POSSIBILITY   What remains genuinely open? What would change my map?
 FINITY        What longest responsible horizon must this serve—and what shortest
-              observable, reversible boundary can teach without betraying it?
-NEXT MOVE     What is the smallest real step I can take now?
-SHARED VALUE  Whose capacity expands if this works? Who bears the cost?
-RECEIPT       What outcome will tell me to continue, revise, or stop?</pre>
+              observable review boundary, reversible where possible, can return
+              an honest result without betraying it?
+NEXT MOVE     What is the smallest authorized real step I can take now?
+SHARED VALUE  Whose capacity may expand if this works? Who bears cost or risk?
+RECEIPT       What outcome will tell me to continue, revise, or stop? What
+              residue remains?</pre>
     </div>
+    <div class="tierline" aria-label="Finity Card source and evidence boundary">
+      <span class="tier t-s">[S] selected Lived Compass worksheet — not authorization or proven decision improvement</span>
+      <span class="tier t-c">[C] comparative benefit over simpler decision practices remains open</span>
+    </div>
+    <p class="rival-boundary"><b>The strongest rival is a component-matched ordinary worksheet.</b> Decision journals, OODA or PDCA loops, premortems, checklists, pragmatism, and systems thinking already cover much of this ground. Finity earns its name only if the combined attention to two horizons, actual means, authorization, affected bearers, residue, and correction adds value after its extra overhead.</p>
+
+    <form class="receipt-builder" id="receipt-builder" autocomplete="off">
+      <div class="builder-head">
+        <h3>Make a private two-face receipt.</h3>
+        <p>Issue the commitment before acting. Return later to record what was observed, who paid, what surprised you, and whether to continue, revise, or stop.</p>
+        <span class="local">Local only · no account · no transmission · no recommendation</span>
+      </div>
+      <div class="receipt-faces">
+        <div class="receipt-face" aria-labelledby="commitment-face">
+          <h4 id="commitment-face">Face 1 · commitment</h4>
+          <div class="field"><label for="r-decision">Decision</label><textarea id="r-decision" placeholder="What am I actually deciding?"></textarea></div>
+          <div class="field"><label for="r-actual">Actual means and constraints</label><textarea id="r-actual" placeholder="What is true now? What time, tools, access, energy, and authority are really available?"></textarea></div>
+          <div class="field"><label for="r-possibility">Possibility and map change</label><textarea id="r-possibility" placeholder="What remains genuinely open? What would change my map?"></textarea></div>
+          <div class="field"><label for="r-long">Longest responsible horizon</label><input id="r-long" type="text" placeholder="The direction this move must continue to serve" /></div>
+          <div class="field"><label for="r-short">Shortest informative review point</label><input id="r-short" type="text" placeholder="Date, observation, and reversible boundary where possible" /></div>
+          <div class="field"><label for="r-move">Smallest authorized next move</label><textarea id="r-move" placeholder="One real step you are allowed to take now"></textarea></div>
+          <div class="field"><label for="r-bearers">Affected bearers, cost, risk, and exit</label><textarea id="r-bearers" placeholder="Who may gain? Who bears time, risk, loss, or lock-in? How can they refuse or leave?"></textarea></div>
+          <div class="field"><label for="r-signal">Predeclared signal</label><textarea id="r-signal" placeholder="What observed result will mean continue, revise, repair, or stop? What delayed residue must remain visible?"></textarea></div>
+        </div>
+        <div class="receipt-face" aria-labelledby="outcome-face">
+          <h4 id="outcome-face">Face 2 · observed outcome</h4>
+          <div class="field"><label for="r-outcome">What happened?</label><textarea id="r-outcome" placeholder="Record observations, including refusals and missing data. Leave blank until the review point."></textarea></div>
+          <div class="field"><label for="r-cost">Cost, surprise, and residue</label><textarea id="r-cost" placeholder="What did the move cost each bearer? What remained unresolved or appeared late?"></textarea></div>
+          <div class="field"><label for="r-verdict">Provisional verdict</label><select id="r-verdict"><option value="OPEN">Open — outcome not yet due</option><option value="CONTINUE">Continue</option><option value="REVISE">Revise</option><option value="REPAIR">Repair</option><option value="STOP">Stop</option></select></div>
+          <div class="field"><label for="r-revision">Map revision</label><textarea id="r-revision" placeholder="What changed in the model, boundary, or next move?"></textarea></div>
+          <p class="rival-boundary"><b>This receipt is not authorization.</b> High-stakes, irreversible, medical, legal, financial, or safety-critical decisions still require the relevant expertise, consent, and lawful process. Where every option harms, use the corpus's <a href="../book/#6-tragic-decisions">tragic protocol</a> and preserve the residue.</p>
+        </div>
+      </div>
+      <div class="builder-actions">
+        <button class="copybtn primary" type="submit">Build local receipt</button>
+        <button class="copybtn" id="copy-receipt" type="button" disabled>Copy receipt</button>
+        <button class="copybtn" id="download-receipt" type="button" disabled>Download .txt</button>
+        <button class="copybtn" type="reset">Clear fields</button>
+        <span id="receipt-status" role="status" aria-live="polite"></span>
+      </div>
+      <div class="artifact receipt-output" id="receipt-output" hidden>
+        <div class="bar"><span>finity-receipt.txt · generated in this browser</span></div>
+        <pre id="receipt-text"></pre>
+      </div>
+    </form>
+
     <div class="worked" aria-label="Illustrative Finity Card example">
       <p class="lab">Illustrative worked example — a decision aid, not evidence for the framework</p>
       <pre>DECISION      Should our six-person team replace one weekly meeting
@@ -167,7 +270,8 @@ NEXT MOVE     Draft the update template and ask all six people to amend
 SHARED VALUE  The team may recover time; writers bear the new burden.
               Spoken clarification and an immediate opt-out remain open.
 RECEIPT       Record delivery rate, missed blockers, time returned, and
-              each participant's verdict; continue, revise, or stop.</pre>
+              each participant's verdict; continue, revise, or stop.
+              Residue: record any burden or lost live clarification.</pre>
     </div>
     <div class="pocket">
       <p class="lab">The power pair</p>
@@ -175,28 +279,29 @@ RECEIPT       Record delivery rate, missed blockers, time returned, and
     </div>
   </section>
 
-  <section class="read reveal">
-    <p class="kicker">Three deeper practices</p>
+  <details class="read reveal further">
+    <summary>Optional further practices</summary>
+    <p class="further-intro">These three exercises are experiments, not initiations, evidence, or requirements. Use, alter, or refuse them independently of the Finity Card and the wider worldview.</p>
     <div class="practice">
       <div class="n">01</div>
       <div>
         <h3>The sitting <span class="sub">Pratyakṣa — the first-person anchor</span></h3>
-        <p>Every map on this site points at one place it cannot go: the crossing where a bounded view and an embodied hand meet. That crossing is not ahead of you. <b>It is the reader — it always was.</b> The sitting is the direct check: stop reading the map and look at where you're standing.</p>
+        <p>A written map cannot substitute for present experience. The sitting is one optional check: stop reading for ten minutes and notice what the description leaves out.</p>
         <div class="howto">
           <p class="lab">How — ten minutes</p>
-          <p>Sit. Eyes open or closed. Let one thing be seen — a sound, a breath, the room — and notice the one to whom it appears. Don't name it, don't improve it. When a thought offers to explain the framework to you, decline politely. The framework dissolves here on purpose.</p>
+          <p>Sit with eyes open or closed. Notice a sound, a breath, or the room before naming it. Then record what the description captured and what it missed. No metaphysical conclusion follows from the exercise.</p>
         </div>
       </div>
     </div>
     <div class="practice">
       <div class="n">02</div>
       <div>
-        <h3>The personal trial record <span class="sub">№017 — the practice that is ours alone</span></h3>
-        <p>Keep a ledger of your own claims — the ones you actually load weight onto. For each, write four things: <b>its tier</b> (how you know), <b>what would change your mind</b> (the kill criterion), <b>what would upgrade it</b>, and <b>what survives if it falls</b>. When one dies, hold the funeral: strike it through, date it, leave it legible. Sign the verdict.</p>
-        <p>This is A7 as a life discipline — the same discipline our public <a href="../record/">trial record</a> runs at worldview scale, installed in one person in an afternoon. It is designed to remain a useful self-audit even if every metaphysical claim we make is wrong. Whether it helps in a particular life remains a local result, not a guarantee.</p>
+        <h3>The personal trial record <span class="sub">A continuing correction ledger</span></h3>
+        <p>Keep a ledger of claims you actually load weight onto. For each, write four things: <b>its tier</b> (how you know), <b>what would change your mind</b> (the kill criterion), <b>what would upgrade it</b>, and <b>what survives if it falls</b>. When a claim fails, strike it through, date it, leave it legible, and sign the verdict.</p>
+        <p>This adapts the discipline used by the public <a href="../record/">trial record</a> to personal use. It is designed as a self-audit even if every metaphysical claim here is wrong. Whether it helps in a particular life remains a local result, not a guarantee.</p>
         <div class="howto">
-          <p class="lab">How — one page, forever</p>
-          <p>One document. Newest entries on top. Never delete — strike through. Once a year, count the funerals. A ledger that stops growing means the thing is dead and doesn't know it. <a href="#artifact" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px">Copy the template below ↓</a></p>
+          <p class="lab">How — one continuing document</p>
+          <p>Put newest entries on top. Preserve superseded entries with dates instead of silently rewriting the story. Review the ledger periodically; no ritual or permanent commitment is required. <a href="#artifact" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px">Copy the optional template below ↓</a></p>
         </div>
       </div>
     </div>
@@ -207,25 +312,23 @@ RECEIPT       Record delivery rate, missed blockers, time returned, and
         <p>Before an act that matters, ask one question with two ends: <b>does this move raise me—and raise what sustains me?</b> Emergentism chooses this as a Justice test; it is not derived from multiplication. A gain that hides another bearer's destruction does not pass merely because the aggregate rose.</p>
         <div class="howto">
           <p class="lab">How — one question, two ends</p>
-          <p>i = you, at the scale being tested. H = the whole that sustains you, at that scale. The move is clean only if both sides are preserved or raised — under η = 0: nothing taken without return.</p>
+          <p>i = you, at the scale being tested. H = the people and systems that sustain the move. If both sides cannot be preserved or raised, disclose the trade-off, obtain the required consent, minimize irreversible harm, and keep the residue visible.</p>
         </div>
       </div>
     </div>
-  </section>
-
   <section class="read reveal" id="artifact">
     <p class="kicker">Take it with you</p>
     <h2>The artifact — <b>copy it, start today.</b></h2>
     <div class="body">
-      <p>The whole second practice, as one copy-paste block. Paste it into any plain-text note — that document is now your trial record. <b>Sixty seconds to install; a lifetime to fill.</b></p>
+      <p>The second optional exercise as one copy-paste block. Paste it into any plain-text note and change its cadence to suit the decisions you actually revisit.</p>
     </div>
 
     <div class="artifact">
       <div class="bar"><span>personal-trial-record.txt · the template</span><button class="copybtn" type="button" data-copy-target="tpl" aria-label="Copy the trial-record template to the clipboard">Copy</button></div>
       <pre id="tpl">MY TRIAL RECORD
 started: YYYY-MM-DD
-rule: never delete — strike through, date, sign.
-newest entries on top. once a year, count the funerals.
+rule: preserve superseded entries — strike through, date, sign.
+newest entries on top. review at a declared interval.
 
 ------------------------------------------------------------
 No.002 · opened YYYY-MM-DD · status: OPEN
@@ -247,7 +350,7 @@ VERDICT    —
     </div>
 
     <div class="worked">
-      <p class="lab">A worked entry — one funeral, held properly</p>
+      <p class="lab">A worked entry — one correction kept visible</p>
       <pre>No.001 · opened 2026-02-03 · status: <span class="vd">STRUCK 2026-06-28</span>
 CLAIM      <s>My project is stalled only because I lack time.</s>
 TIER       bet
@@ -261,7 +364,7 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
 
     <div class="pocket">
       <p class="lab">The dyadic check — pocket card</p>
-      <p><b>Does this move raise me — and raise what sustains me?</b><br>Both directions, or don't.</p>
+      <p><b>Does this move raise me — and raise what sustains me?</b><br>If not, name the trade-off, authority, affected bearer, and residue before acting.</p>
     </div>
   </section>
 
@@ -269,16 +372,17 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
     <p class="kicker">Why these three</p>
     <h2>No belief <b>required.</b></h2>
     <div class="body">
-      <p>The Finity Card turns a live decision into a testable move. The sitting teaches you to check maps against ground. The trial record teaches you to grade claims and bury the dead ones. The dyadic check teaches you to spot extraction before you commit it. <b>None of them asks you to believe the framework.</b></p>
+      <p>The Finity Card prompts a live decision and review point. The sitting asks what a written map leaves out. The trial record keeps revisions visible. The dyadic check asks who benefits, who pays, and what sustains the move. <b>None of them asks you to believe the framework.</b></p>
       <p>If the framework is right, the practices are one short path into a life. If the framework is wrong, they may still prove locally useful—but that is a result to test, not a benefit this page can guarantee. The offer is therefore: verify first, require no belief, keep only what survives use.</p>
     </div>
     <div class="cta-row">
-      <a class="cta primary" href="#finity-card-practice">Frame another decision ↑</a>
+      <a class="cta primary" href="#frame">Frame another decision ↑</a>
       <a class="cta" href="../rosetta/">Explore the seven moves →</a>
       <a class="cta" href="../book/">Read the living book →</a>
       <a class="cta" href="../record/">Inspect the trial record →</a>
     </div>
   </section>
+  </details>
 
 </main>
 
@@ -313,6 +417,67 @@ VERDICT    refuted 2026-06-28 — took the clear week; made no
       if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, fallback); }
       else { fallback(); }
     });
+  });
+
+  // Local receipt builder: no storage, fetch, account, or transmission.
+  var builder=document.getElementById('receipt-builder');
+  var receiptOutput=document.getElementById('receipt-output');
+  var receiptText=document.getElementById('receipt-text');
+  var receiptStatus=document.getElementById('receipt-status');
+  var copyReceipt=document.getElementById('copy-receipt');
+  var downloadReceipt=document.getElementById('download-receipt');
+  function field(id){var el=document.getElementById(id);return el&&el.value.trim()?el.value.trim():'(not supplied)';}
+  function makeReceipt(){
+    var date=new Date().toISOString().slice(0,10);
+    return [
+      'FINITY COMMITMENT / OUTCOME RECEIPT',
+      'created: '+date,
+      'status: '+field('r-verdict'),
+      '',
+      'FACE 1 — COMMITMENT',
+      'DECISION\n'+field('r-decision'),
+      '\nACTUAL MEANS AND CONSTRAINTS\n'+field('r-actual'),
+      '\nPOSSIBILITY AND MAP CHANGE\n'+field('r-possibility'),
+      '\nLONGEST RESPONSIBLE HORIZON\n'+field('r-long'),
+      '\nSHORTEST INFORMATIVE REVIEW POINT\n'+field('r-short'),
+      '\nSMALLEST AUTHORIZED NEXT MOVE\n'+field('r-move'),
+      '\nAFFECTED BEARERS, COST, RISK, AND EXIT\n'+field('r-bearers'),
+      '\nPREDECLARED SIGNAL\n'+field('r-signal'),
+      '',
+      'FACE 2 — OBSERVED OUTCOME',
+      'WHAT HAPPENED\n'+field('r-outcome'),
+      '\nCOST, SURPRISE, AND RESIDUE\n'+field('r-cost'),
+      '\nPROVISIONAL VERDICT\n'+field('r-verdict'),
+      '\nMAP REVISION\n'+field('r-revision'),
+      '',
+      'Boundary: this receipt records a decision process. It is not authorization, evidence of efficacy, or professional advice.'
+    ].join('\n');
+  }
+  function enableReceipt(){copyReceipt.disabled=false;downloadReceipt.disabled=false;receiptOutput.hidden=false;}
+  if(builder){
+    builder.addEventListener('submit',function(event){
+      event.preventDefault();
+      receiptText.textContent=makeReceipt();
+      enableReceipt();
+      receiptStatus.textContent='Local receipt built. Review it before copying or downloading.';
+      receiptOutput.scrollIntoView({behavior:rm?'auto':'smooth',block:'nearest'});
+    });
+    builder.addEventListener('reset',function(){
+      window.setTimeout(function(){receiptText.textContent='';receiptOutput.hidden=true;copyReceipt.disabled=true;downloadReceipt.disabled=true;receiptStatus.textContent='Fields cleared locally.';},0);
+    });
+  }
+  if(copyReceipt)copyReceipt.addEventListener('click',function(){
+    var text=receiptText.textContent;
+    function done(){receiptStatus.textContent='Receipt copied locally.';}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){receiptStatus.textContent='Copy unavailable; select the receipt text instead.';});}
+    else{receiptStatus.textContent='Copy unavailable; select the receipt text instead.';}
+  });
+  if(downloadReceipt)downloadReceipt.addEventListener('click',function(){
+    var blob=new Blob([receiptText.textContent],{type:'text/plain;charset=utf-8'});
+    var url=URL.createObjectURL(blob);var link=document.createElement('a');
+    link.href=url;link.download='finity-receipt-'+new Date().toISOString().slice(0,10)+'.txt';
+    document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);
+    receiptStatus.textContent='Receipt downloaded from this browser.';
   });
 })();
 </script>

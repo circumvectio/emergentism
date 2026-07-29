@@ -1145,8 +1145,8 @@
     },
     {
       "path": "00_META/00_SETTLED_CANON_REGISTRY.md",
-      "sha256": "5e64637440a2f80efa1d3d5e12a7ab51709b9403a0961d609cf38a9602525e72",
-      "bytes": 26616,
+      "sha256": "cd85ddea6a41c9db76fb439182cf1bc2ef52e6f66de19998e17e48f00586b557",
+      "bytes": 28104,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1961,8 +1961,8 @@
     },
     {
       "path": "00_META/README.md",
-      "sha256": "bc5516c15ca67792e226737e9fa50dc1ae2dea6745ae4f74b2fdd2e1aaef4a18",
-      "bytes": 1648,
+      "sha256": "7d409731af2691410f643129ddabe79504c7b247b4c8dcec895cab9940198a8b",
+      "bytes": 1887,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -2675,8 +2675,8 @@
     },
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58",
-      "bytes": 22741,
+      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "bytes": 22887,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3287,8 +3287,8 @@
     },
     {
       "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "sha256": "fc9a97ae890c791dc09b13e8259aa88f5cd7d8d21fcaea0e185bc2cb7cacba45",
-      "bytes": 14009,
+      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+      "bytes": 15789,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3298,7 +3298,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 16,
+      "inbound_references": 17,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -6670,8 +6670,8 @@
     },
     {
       "path": "03_METHODOLOGY/03_PREREGISTRATIONS/README.md",
-      "sha256": "70f71a25dfa5f64a6b0363e44d98c10b940c644ca7f3e533df793b695503b86e",
-      "bytes": 3221,
+      "sha256": "580625b0b193121b3e6896be19d7876e4f8938d1260bbb2670111f99be77d15c",
+      "bytes": 3467,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9282,7 +9282,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 4,
+      "inbound_references": 5,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -9747,8 +9747,8 @@
     },
     {
       "path": "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
-      "sha256": "bbd928077acced371bd6af0f06a35bc78afef342f42156b8361ea0cd5b5109fb",
-      "bytes": 13848,
+      "sha256": "520ef39fd188be3577af1423abc82490c5da7dc2bc419726b89fb474bdb86e59",
+      "bytes": 13887,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -14218,8 +14218,8 @@
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py",
-      "sha256": "7ee54da042bf0c2a43cddf4e62aeabdf8ed66fc2a80b51bbd2ef09807c46480e",
-      "bytes": 13301,
+      "sha256": "a0f6c053b7219c1ddfd3c4fa1fcaf625b0b32252850c96224289dc732648d805",
+      "bytes": 15101,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -14626,7 +14626,7 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py",
-      "sha256": "178de45092659ff3c62d200d4a9f8ddc8a460dba0c6ca0a6b95fa257c08f433b",
+      "sha256": "ddf7eb19b6bfd69661e6b918fa765972530e366617a0c80b73bfc509bd5c3b7a",
       "bytes": 7440,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
@@ -23290,7 +23290,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23375,7 +23375,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23392,7 +23392,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23409,7 +23409,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23426,7 +23426,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23460,7 +23460,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23477,7 +23477,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23551,8 +23551,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/README.md",
-      "sha256": "104c9f3e6b9077417c8045819504a232eb317294b7d1e710ffed2c3323af3dcb",
-      "bytes": 5498,
+      "sha256": "342f973c3935587b4686b35a81f9478c05e24847ffaf7b97707c6b6db5d719b9",
+      "bytes": 6590,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -23602,8 +23602,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/_PLANS/2026_07_28_VMOSK_A_FINITY_PUBLIC_RELEASE.md",
-      "sha256": "c51c97574789abe5781fddc2f5ee6d7239c8f5fe461547f92e252cbe903a3a0c",
-      "bytes": 5819,
+      "sha256": "e65bf10423d81f9dc78f75bee85df772906a1839467b6b73dc711656b038753f",
+      "bytes": 6250,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -23721,8 +23721,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/about/index.html",
-      "sha256": "b875e3c4d7972fc77e4c63bf0298d92d0a2e53bd402290154aa2e979c32e2dde",
-      "bytes": 19204,
+      "sha256": "5f024b4184ab7de40797b820ad2fe8b0c2e9366236fbaa2b6751663740259926",
+      "bytes": 19509,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -23732,7 +23732,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -23783,7 +23783,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -24027,8 +24027,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/icons/apple-touch-icon.png",
-      "sha256": "82755af3e906bedc462fb37fe630bf418bc76a8705e994d0825aa1edf409593e",
-      "bytes": 12248,
+      "sha256": "7e349191ae5c35305d94c79e67ce92e8f32ff6f3d8bef8be8a429decb908d3e7",
+      "bytes": 12440,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24038,14 +24038,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 374,
+      "inbound_references": 372,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/assets/icons/icon-192.png",
-      "sha256": "3c76a6655d1cfe0b5a1bcdac3f88f1adce5bbf2106638fa2c6ec4c16fb982307",
-      "bytes": 12951,
+      "sha256": "b2655d94984476250c9c27d9a5bb370d923779e50e92205de4e48a2c00995056",
+      "bytes": 13202,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24061,8 +24061,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/icons/icon-512.png",
-      "sha256": "3b8e180963236f473b6690e471db3d3e72d31da2db708b7dc0edee5c983447ee",
-      "bytes": 29894,
+      "sha256": "beb97fdbe67d6ca0a648ea75aad308149e625d16ef3289a9b18a2734be9f4794",
+      "bytes": 30455,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24078,8 +24078,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/icons/maskable-512.png",
-      "sha256": "1cfbbba426e6f38888bdd7b040e2c08879260aff46e640cc013a6e6c7eefc3bc",
-      "bytes": 23699,
+      "sha256": "f3fe53afacac446812de06ba5286aadaa3639f8900ade08528ed124a8abede46",
+      "bytes": 24330,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24180,8 +24180,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/js/living-map.js",
-      "sha256": "7275840bfe16f4ec96ebb35b456b6d35d5c2dc9ecffc9823a2590e5d790ea278",
-      "bytes": 12236,
+      "sha256": "cebe159978881ff8cc7a8f2b24543d0db8300da9cb49aa96ae7efb92cd8f0294",
+      "bytes": 13401,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24208,7 +24208,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 376,
+      "inbound_references": 374,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -24248,8 +24248,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/og/og-card.png",
-      "sha256": "fe8e76148e17c19cc7fde2499e275c965df6f09323ba66748f21532ad7f17458",
-      "bytes": 166159,
+      "sha256": "0c48668195fc3cf74eedc84a2cb327109f7964b4468ff9e01c65f9b25134f571",
+      "bytes": 392094,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24265,8 +24265,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/assets/og/og-card.svg",
-      "sha256": "aa8e1f73d047b953c44d3c2f728c23740acb122446ccc9d8b7bd17a6f4f3c73c",
-      "bytes": 3165,
+      "sha256": "dbe5f229cf0c21547eff3b70434ad880f639312ba60851152af7885db469a9ac",
+      "bytes": 4649,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24293,14 +24293,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/atlas/site_index.json",
-      "sha256": "eddc7b4d76b015911dd1f196680a08836624e61d7d0e3f1879b28f3827ca6902",
-      "bytes": 32534,
+      "sha256": "7caf84d93a14337263bc5fea217b9f82a9421cab819c1b86a74e68d79b7d3372",
+      "bytes": 4085,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24333,8 +24333,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/audit_live_domain_against_manifest.py",
-      "sha256": "2ce3446e95323ff3e11b8499e5d26dc5d2ca981a3d6cc950905c114f8f5e62ad",
-      "bytes": 14328,
+      "sha256": "26e6dff483a2a97aa01f6ed8fd4f620a51dad57f82eab7b9101894bdbd614220",
+      "bytes": 17389,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -24412,7 +24412,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -24429,7 +24429,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26033,7 +26033,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/book/build-manifest.json",
-      "sha256": "4291622e0210d8708c9625c568368e21f71edd8c8085c0217ba0e0d48630c4ce",
+      "sha256": "4d1ff7e1a1a61ea28771b59c2a156879e185a9bd57eb60f5eb07046dfffcda6f",
       "bytes": 1402,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -26050,8 +26050,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/book/index.html",
-      "sha256": "e868185e9a3932c1f9df27bf5183d7a6323b63d1a4c1cd97fc03a0caf200a4a7",
-      "bytes": 70939,
+      "sha256": "c56acf38533b2e9acab1238ab31f0a268a369079dbe05afe837c23eb686b7653",
+      "bytes": 74228,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26061,14 +26061,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/book/rag_index.json",
-      "sha256": "133e9cdbd07d2d701aef362b479c4737f4b0ae1d44b7610c4695b203e4c1cab6",
-      "bytes": 79269,
+      "sha256": "fbff76e65e512c965d8aee8d3da7ffe2aaafb5848ecf606a0e7c043b538544ac",
+      "bytes": 81211,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26129,14 +26129,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/build_atlas_index.py",
-      "sha256": "ad981a4a6a330958ad045943adf325b3c203a8f089520136266d4c677c4c8da3",
-      "bytes": 3948,
+      "sha256": "4ae1c2a7676c67e163b83d072bdf954917c200885bb969f9b8f653a9c38f8dfe",
+      "bytes": 4397,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26152,8 +26152,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/build_book.py",
-      "sha256": "7494a3966a5a767864eac48bab36d0860185ac518291b559fded7959d77f31b1",
-      "bytes": 21191,
+      "sha256": "095cfdb40b5087e7f464aa859951ce4bb4ffb8aa38b1116ec6250e91e875b94a",
+      "bytes": 22263,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26169,8 +26169,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/build_pwa.py",
-      "sha256": "10f95ac6f56398d24acde0e63345a9c1c622c20493fa96801dda3e3c1c139c34",
-      "bytes": 8790,
+      "sha256": "b5eb073ea2f74d9bf10cd68c5de04e43c8e1b5f7a90bd0f5d5b2800d42a41fde",
+      "bytes": 12363,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26214,7 +26214,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26231,7 +26231,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26248,7 +26248,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26265,7 +26265,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26282,7 +26282,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26299,7 +26299,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26316,7 +26316,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26333,7 +26333,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26350,7 +26350,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26367,7 +26367,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26401,14 +26401,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/check_public_semantic_parity.py",
-      "sha256": "5cf62208e56587f1f955a867b0c9717510015ef0778fbed5b24a8df98d352b16",
-      "bytes": 10563,
+      "sha256": "4047681af954ee559157e43228c24bb944528c8395ffa7360dc61c44f942deb1",
+      "bytes": 16084,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26452,7 +26452,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26469,14 +26469,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/contribute/index.html",
-      "sha256": "9e48bea9161ff882c8037eb4065e01b6a69ed92851904b04e7d50d274a4c517b",
-      "bytes": 9505,
+      "sha256": "af80ba867e1f939f99539aa3b04685576f2e7765aa773492e13cf1d5238f5edc",
+      "bytes": 9507,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26486,7 +26486,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26503,7 +26503,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26520,7 +26520,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26588,7 +26588,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26605,7 +26605,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26622,7 +26622,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26639,14 +26639,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/discoveries/index.html",
-      "sha256": "cc841c3cd10fd8a399ce9a5bc515bda46b9ba2866fb64dd04ea0ab76255787a2",
-      "bytes": 17835,
+      "sha256": "8e74f654e2d2984f35f4e0e7e882fda4a3e8d57bfdff5a8c7774855cc85f714b",
+      "bytes": 17822,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26656,7 +26656,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26673,7 +26673,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26690,7 +26690,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26707,7 +26707,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26724,14 +26724,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/discoveries/paradoxes/index.html",
-      "sha256": "a0078ffed8b1336104af7c5d37c712a2c1cc85c6f97907e5f17aa18f00c1d4c7",
-      "bytes": 17715,
+      "sha256": "23a079034ab326833c09fe75558e773c12d445c90dd58e962a30241af0311697",
+      "bytes": 17702,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26741,7 +26741,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26758,7 +26758,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26775,7 +26775,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26792,7 +26792,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26843,7 +26843,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26860,7 +26860,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26877,7 +26877,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26934,8 +26934,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/exit/index.html",
-      "sha256": "6f2ac7e86459442818b0f8da285c7c83c32ccb0e020559bf05ccdf37c59d28e4",
-      "bytes": 2122,
+      "sha256": "339e8ef896e9d290aa2d27e00f9aeeb0c32c2ef2daf40a8267eb6af4191a4e6d",
+      "bytes": 2636,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -26945,7 +26945,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26962,7 +26962,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26979,7 +26979,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26996,7 +26996,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27013,7 +27013,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27030,7 +27030,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27047,7 +27047,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27064,7 +27064,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27081,7 +27081,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27098,7 +27098,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27115,7 +27115,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27132,7 +27132,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27149,7 +27149,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27166,7 +27166,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27183,7 +27183,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27200,7 +27200,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27217,7 +27217,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27234,7 +27234,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27251,7 +27251,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27268,7 +27268,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27285,7 +27285,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27302,7 +27302,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27319,7 +27319,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27336,7 +27336,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27353,7 +27353,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27370,7 +27370,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27387,7 +27387,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27404,7 +27404,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27421,7 +27421,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27438,7 +27438,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27455,7 +27455,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27472,7 +27472,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27489,7 +27489,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27506,7 +27506,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27523,7 +27523,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27540,7 +27540,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27557,7 +27557,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27574,7 +27574,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27591,7 +27591,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27608,7 +27608,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27625,7 +27625,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27642,7 +27642,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27659,7 +27659,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27676,7 +27676,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27693,7 +27693,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27710,7 +27710,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27727,7 +27727,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27744,7 +27744,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27761,7 +27761,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27778,7 +27778,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27795,7 +27795,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27812,7 +27812,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27829,7 +27829,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27846,7 +27846,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27863,7 +27863,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27880,7 +27880,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27914,7 +27914,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27931,7 +27931,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27948,7 +27948,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27965,7 +27965,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27982,7 +27982,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27999,7 +27999,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28016,7 +28016,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28033,7 +28033,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28050,7 +28050,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28067,7 +28067,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28084,7 +28084,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28135,7 +28135,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28152,7 +28152,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28169,14 +28169,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/index.html",
-      "sha256": "0450ef8bea4b09c5daa49568724ea45d064db6d63621f68c0baa54e32596aaf5",
-      "bytes": 41918,
+      "sha256": "1458a9d1c00c662a4df6f3439e829cef9f0b6abfbb1633c8d5f075f364a08741",
+      "bytes": 34463,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28186,7 +28186,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28220,14 +28220,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/lab/index.html",
-      "sha256": "00a0cd818594d2e6c7803c2f1f03b7a042ac43824f3f28c6c8299b63119a760c",
-      "bytes": 7549,
+      "sha256": "2e7d4b6dbf901c49f9812dd79ec51dbafccce06fa345603a75648ea49812ac62",
+      "bytes": 10038,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28237,7 +28237,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28260,8 +28260,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/living-map.json",
-      "sha256": "3e2f24706eb5a2248bbc4dc540d7af7b41d1556d857e9b01c97910de8fbf20cf",
-      "bytes": 9496,
+      "sha256": "1dbe66b15fee0db6bbce3f9d6bed2f6fb7c0ddd8a7a9ff7ae70980a7ea3d0743",
+      "bytes": 10895,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28288,14 +28288,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/manifest.webmanifest",
-      "sha256": "c1a6ea5fab4ac3c6ffec682cb95434607b49e082023f501ab7cf3a997e0a2099",
-      "bytes": 662,
+      "sha256": "ea59feb780bf1dc858721918855bfcb4d990db7de30031978694a857bea8989a",
+      "bytes": 670,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28305,7 +28305,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 379,
+      "inbound_references": 377,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28328,8 +28328,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/map/index.html",
-      "sha256": "c31f27c1c2233c90b3ecec029994299307677a8ee5b8c687b19ccd9fb9f5350a",
-      "bytes": 6517,
+      "sha256": "ee2837a60d48c1fa92114479b4b41aa15f7a9ca5f1315e189ea03dab3ac72606",
+      "bytes": 6537,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28339,7 +28339,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28390,7 +28390,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28407,7 +28407,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28424,7 +28424,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28441,7 +28441,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28458,7 +28458,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28475,7 +28475,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28492,7 +28492,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28509,7 +28509,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28526,7 +28526,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28543,7 +28543,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28560,7 +28560,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28577,7 +28577,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28594,7 +28594,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28611,7 +28611,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28628,7 +28628,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28645,7 +28645,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28662,7 +28662,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28679,7 +28679,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28696,7 +28696,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28713,7 +28713,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28730,7 +28730,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28747,7 +28747,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28764,7 +28764,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28781,7 +28781,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28798,7 +28798,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28815,7 +28815,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28832,7 +28832,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28849,14 +28849,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/offline/index.html",
-      "sha256": "68aa62f8f29cf6e6c1a5e0f4d5ab5e58183966492773892ea399ffd5ec105288",
-      "bytes": 2005,
+      "sha256": "6706764cea9a6b23b2d11fb7dd6e055b517f409bbb6da61a04ebb2f0a9e5b844",
+      "bytes": 1219,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28866,7 +28866,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28883,7 +28883,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28900,7 +28900,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28917,7 +28917,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28934,7 +28934,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28951,7 +28951,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28968,7 +28968,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28985,7 +28985,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29002,7 +29002,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29019,7 +29019,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29036,7 +29036,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29053,7 +29053,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29070,7 +29070,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29087,7 +29087,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29104,7 +29104,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29121,7 +29121,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29138,7 +29138,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29155,7 +29155,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29172,7 +29172,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29189,7 +29189,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29206,7 +29206,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29223,7 +29223,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29240,7 +29240,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29257,7 +29257,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29274,7 +29274,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29291,7 +29291,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29308,7 +29308,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29325,7 +29325,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29342,7 +29342,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29359,7 +29359,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29376,7 +29376,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29393,7 +29393,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29410,7 +29410,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29427,7 +29427,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29444,7 +29444,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29461,7 +29461,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29478,7 +29478,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29495,7 +29495,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29512,7 +29512,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29529,7 +29529,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29546,7 +29546,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29563,7 +29563,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29580,7 +29580,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29597,7 +29597,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29614,7 +29614,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29631,7 +29631,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29648,7 +29648,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29665,7 +29665,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29682,7 +29682,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29699,7 +29699,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29716,7 +29716,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29733,7 +29733,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29750,7 +29750,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29767,7 +29767,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29784,7 +29784,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29801,7 +29801,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29818,7 +29818,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29835,7 +29835,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29852,7 +29852,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29869,7 +29869,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29886,7 +29886,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29903,7 +29903,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29920,7 +29920,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29937,7 +29937,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29954,7 +29954,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29971,7 +29971,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29988,7 +29988,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30005,7 +30005,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30022,7 +30022,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30039,7 +30039,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30056,7 +30056,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30073,7 +30073,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30090,7 +30090,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30107,7 +30107,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30124,7 +30124,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30141,7 +30141,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30158,7 +30158,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30175,7 +30175,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30192,7 +30192,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30209,7 +30209,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30226,7 +30226,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30243,7 +30243,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30260,7 +30260,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30277,7 +30277,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30294,7 +30294,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30311,7 +30311,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30385,8 +30385,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/plainly/index.html",
-      "sha256": "f9828d8dd957ce7d7b4429dd3f83cca270e734e670cca9b8b7c388b2761b8887",
-      "bytes": 29820,
+      "sha256": "f39dd5fa70f51f0b6c9d902bba594b3c4b767736e5e0f85b53365b4374ac4831",
+      "bytes": 32454,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30396,14 +30396,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/practice/index.html",
-      "sha256": "6e8130613a6453bfca542076c0619f3e4de93ed1e3145592fe58bf120a1ba301",
-      "bytes": 22498,
+      "sha256": "ad284e62a0b7e558c26cef8bf5891fe6ee79eb5ad51f9b561563e59dbaae7297",
+      "bytes": 36091,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30413,14 +30413,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/predeploy_check.py",
-      "sha256": "f63a001fb60fda4c14ae2552da702c6c1bf6a3f4f9f67a3f6f82eb33ddb621e4",
-      "bytes": 35876,
+      "sha256": "ebbd421eca759093e22073105433ae4da6862cc98fbee8067a3a7a952f4c1bac",
+      "bytes": 36304,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30453,8 +30453,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/public_semantic_parity.json",
-      "sha256": "fa0e0eede39c0706ef1c6c97cba594f94ab798c1e073d7185c1ab26e62749b61",
-      "bytes": 17428,
+      "sha256": "fee838f116f3cab2f64ddec89c9ba1577bfba54c27928b545f85fa9370ca414e",
+      "bytes": 20120,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30481,7 +30481,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30498,7 +30498,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30515,7 +30515,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30532,7 +30532,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30549,7 +30549,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30566,7 +30566,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30583,7 +30583,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30600,13 +30600,13 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/reading-manifest.json",
-      "sha256": "c3d7047f11dc14262db20d1733f29bedaa597b2970f5205a6125f1c2fc6cb09a",
+      "sha256": "0782de1545b20b64807c84c64dd01845de5a5b5fa66b5893722a45863413845d",
       "bytes": 68400,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -30640,8 +30640,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/record/index.html",
-      "sha256": "0f9f1a90f73e1763b0d61d30ea99edfbe4b9f1dfca4a5d74fcc08aa5485e29f1",
-      "bytes": 70270,
+      "sha256": "170e67df8eff39c17122c3585a4cf23f3543da41642988450bbd630cd00360a9",
+      "bytes": 71915,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30651,7 +30651,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30702,7 +30702,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30736,14 +30736,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/rosetta/index.html",
-      "sha256": "149229bf0f8a42720029451c905ffff9f52c7a5cbe691ba93a842b49d116bbb9",
-      "bytes": 42017,
+      "sha256": "2fe1835a48d9dd5ed36d75f5b9ea2e79f55f8a5fd73f61d9fe770090b820d38a",
+      "bytes": 42115,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -30753,7 +30753,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30770,7 +30770,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30787,7 +30787,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30804,7 +30804,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30821,7 +30821,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30838,7 +30838,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30855,7 +30855,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30872,7 +30872,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30889,7 +30889,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30906,7 +30906,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30923,7 +30923,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30940,7 +30940,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30957,7 +30957,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30974,7 +30974,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30991,7 +30991,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31008,7 +31008,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31025,7 +31025,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31042,7 +31042,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31059,7 +31059,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31076,7 +31076,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31093,7 +31093,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31110,7 +31110,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31127,7 +31127,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31144,7 +31144,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31161,7 +31161,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31178,7 +31178,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31195,7 +31195,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31212,7 +31212,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31229,7 +31229,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31246,7 +31246,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31263,7 +31263,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31280,7 +31280,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31297,7 +31297,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31314,7 +31314,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31331,7 +31331,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31348,7 +31348,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31365,7 +31365,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31382,7 +31382,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31399,7 +31399,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31416,7 +31416,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31433,7 +31433,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31450,7 +31450,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31467,7 +31467,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31484,7 +31484,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31501,7 +31501,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31518,7 +31518,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31535,7 +31535,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31552,14 +31552,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/sitemap.xml",
-      "sha256": "c8c7fc6ce9e7ff3eb6f1bfbdb494054d562184e315935ca63cbc2c65cd6e9d03",
-      "bytes": 3494,
+      "sha256": "5c4114879b08458024cf511a9be6b5d0fbbb4a1e653692bc6bcf01f800aafa63",
+      "bytes": 3635,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -31586,7 +31586,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31603,7 +31603,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31637,7 +31637,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31654,14 +31654,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/sw.js",
-      "sha256": "3d830cc32b721585e76fc6e3733c73fb33b5e108897f960345e9c4b364c4ed4e",
-      "bytes": 3492,
+      "sha256": "745f8b26e90455b4a340dee0a3a6584aa0ca175d7395f1a96cd8496be22930a2",
+      "bytes": 3675,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -31688,7 +31688,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31705,7 +31705,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31722,7 +31722,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31762,8 +31762,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/test_living_map.py",
-      "sha256": "ca75272b4127d7ebd4826d9a4ef98588859f05ff699cd12931fa991e2a350ef3",
-      "bytes": 3829,
+      "sha256": "283b3f5f02c090a77da0cd749e6e07d0083592ffbe84fc29fc050f875486d040",
+      "bytes": 9629,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -31790,7 +31790,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31824,7 +31824,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31841,7 +31841,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31858,7 +31858,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31875,7 +31875,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31892,7 +31892,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31909,7 +31909,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31926,7 +31926,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31943,7 +31943,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31960,7 +31960,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31977,7 +31977,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31994,7 +31994,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32011,7 +32011,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32028,7 +32028,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32045,7 +32045,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32062,7 +32062,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32079,7 +32079,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32096,7 +32096,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32113,7 +32113,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32130,7 +32130,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32147,7 +32147,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32164,7 +32164,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32181,7 +32181,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32198,7 +32198,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32215,7 +32215,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32232,7 +32232,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32249,7 +32249,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32266,7 +32266,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32283,7 +32283,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32300,7 +32300,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32317,7 +32317,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32334,7 +32334,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32351,7 +32351,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32368,7 +32368,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32385,7 +32385,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32402,7 +32402,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32419,7 +32419,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32436,7 +32436,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32453,7 +32453,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32470,7 +32470,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32487,7 +32487,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32504,7 +32504,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32521,7 +32521,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32538,7 +32538,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32555,7 +32555,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32572,7 +32572,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32589,7 +32589,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32606,7 +32606,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32623,7 +32623,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32640,7 +32640,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32657,7 +32657,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32674,7 +32674,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32691,7 +32691,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32708,7 +32708,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32725,7 +32725,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32742,7 +32742,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32963,7 +32963,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32980,7 +32980,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32997,7 +32997,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33014,7 +33014,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33031,7 +33031,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33048,7 +33048,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33065,7 +33065,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33082,7 +33082,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33099,7 +33099,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33116,7 +33116,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33133,7 +33133,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33150,7 +33150,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33167,7 +33167,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33184,7 +33184,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33201,7 +33201,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33218,7 +33218,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33235,7 +33235,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33252,7 +33252,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33269,7 +33269,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33286,7 +33286,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33303,7 +33303,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33320,7 +33320,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33337,7 +33337,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33354,7 +33354,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33371,7 +33371,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33388,7 +33388,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33405,7 +33405,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33422,7 +33422,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33439,7 +33439,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33456,7 +33456,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33473,7 +33473,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33547,8 +33547,8 @@
     },
     {
       "path": "13_BOOKS/book-manifest.json",
-      "sha256": "b415f3c86d6f14d0c9df30803b3c41c491dccc39e9b8216d34a54f460cf15412",
-      "bytes": 6618,
+      "sha256": "496fa26db367f89566008d7e622f3ce248a141608bb2be0c3a60162553081ca3",
+      "bytes": 7205,
       "owner_lane": "13_BOOKS",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -35683,7 +35683,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 443,
+      "inbound_references": 441,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -51238,7 +51238,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 163,
+      "inbound_references": 166,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -55358,8 +55358,8 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "6f6e144443a8dd45112e736abc0cfc07a7f49fc9c7ff716280fdf216b3e42fe1",
-      "bytes": 4827,
+      "sha256": "1632dc5966270cb4e2572c7efef62286cec319efd68f016581f8d7eedc724c63",
+      "bytes": 4899,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -55426,8 +55426,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "274d367c242272df0899bcb86f67db603f1173a911875e48b6fe4d2207bca043",
-      "bytes": 6039,
+      "sha256": "e9d5723c436dd2f0b2394a74e8f55dc7e6566688432346f6e60bee38170403db",
+      "bytes": 6254,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",

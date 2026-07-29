@@ -1,38 +1,45 @@
 #!/usr/bin/env python3
-"""PWA layer builder for 12_PUBLIC_SITE (receipt 124).
+"""Deterministic PWA core builder for the current public projection.
 
-Idempotent. Generates:
-  - assets/icons/{icon-192,icon-512,maskable-512,apple-touch-icon}.png
-    (the compass emblem: signal-yellow circle + crosshair + bindu on near-black)
+By default, generates only the bounded files owned by this builder:
   - manifest.webmanifest
-  - sw.js (versioned precache of the spine + offline fallback + SWR runtime)
-  - assets/js/pwa.js (registration)
+  - sw.js (content-versioned current-surface precache + offline fallback)
   - offline/index.html
-Then injects one marked head block into every public page missing it:
-  manifest link, theme-color, apple-touch-icon, pwa.js.
-Safe to re-run; the <!-- pwa-chrome --> marker prevents duplicates.
+
+Icon generation, registration-script generation, and page-head injection are
+explicit opt-ins. This prevents a routine core rebuild from rewriting public
+pages owned elsewhere.
 """
-import os, re, json, datetime
+import argparse
+import hashlib
+import json
+import os
+import re
+import sys
+from pathlib import Path
 
 BASE = os.path.dirname(os.path.abspath(__file__))
+ROOT = Path(BASE)
+PARITY_MANIFEST = ROOT / "public_semantic_parity.json"
+WITHHELD_REGISTRY = ROOT / "withheld-routes.json"
 SKIP_DIRS = {"node_modules", "vendor", ".git", ".vercel", ".next",
              "90_ARCHIVE", "_archive", "_STAGING_COMPASS_RESTRUCTURE",
              "book-pwa", "partials", "__pycache__"}
 MARKER = "<!-- pwa-chrome -->"
-VOID = (5, 5, 5)          # #050505
-GOLD = (255, 235, 59)     # #FFEB3B
+VOID = (7, 10, 18)        # #070A12
+GOLD = (240, 200, 90)     # #F0C85A
 
 HEAD_BLOCK = (
     f"{MARKER}\n"
     '<link rel="manifest" href="/manifest.webmanifest">\n'
-    '<meta name="theme-color" content="#050505">\n'
+    '<meta name="theme-color" content="#070A12">\n'
     '<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">\n'
     '<script src="/assets/js/pwa.js" defer></script>\n'
 )
 
 
 def draw_emblem(size, pad_ratio=0.0):
-    """The compass emblem (matches the inline SVG favicon geometry)."""
+    """The current boundary emblem (matches the inline SVG favicon geometry)."""
     from PIL import Image, ImageDraw
     S = 1024
     img = Image.new("RGB", (S, S), VOID)
@@ -66,40 +73,97 @@ def build_icons():
 
 def build_manifest():
     manifest = {
-        "name": "Emergentism — A Compass, Not a Cathedral",
+        "name": "Emergentism — A Worldview for Finite Beings",
         "short_name": "Emergentism",
-        "description": "A navigational instrument assembled from constraints. Tier-honest claims, published poisons, visible exit.",
-        "id": "/compass/",
-        "start_url": "/compass/",
+        "description": "A corrigible worldview for finite beings, with Finity as a practice for one accountable next move.",
+        "id": "/",
+        "start_url": "/",
         "scope": "/",
         "display": "standalone",
-        "background_color": "#050505",
-        "theme_color": "#050505",
+        "background_color": "#070A12",
+        "theme_color": "#070A12",
         "icons": [
             {"src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
             {"src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
             {"src": "/assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
         ],
     }
-    with open(os.path.join(BASE, "manifest.webmanifest"), "w") as fh:
-        json.dump(manifest, fh, indent=1)
+    (ROOT / "manifest.webmanifest").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=1) + "\n",
+        encoding="utf-8",
+    )
     print("manifest.webmanifest written")
 
 
+def route_to_artifact(route: str) -> str:
+    if route == "/":
+        return "index.html"
+    clean = route.lstrip("/")
+    if route.endswith("/"):
+        return f"{clean}index.html"
+    return clean
+
+
+def safe_spine() -> list[str]:
+    parity = json.loads(PARITY_MANIFEST.read_text(encoding="utf-8"))
+    withheld = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
+    frozen = set(parity["frozenLibraryRoots"])
+    withheld_artifacts = {item["artifact"] for item in withheld["artifacts"]}
+    withheld_routes = {
+        route.rstrip("/") or "/"
+        for item in withheld["artifacts"]
+        for route in item["publicRoutes"]
+    }
+    spine = [
+        "/", "/practice/", "/plainly/", "/book/", "/record/",
+        "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
+        "/manifest.webmanifest", "/assets/css/living-map.css",
+        "/assets/js/living-map.js", "/living-map.json",
+        "/public_semantic_parity.json", "/atlas/site_index.json",
+        "/assets/fonts/Roboto-latin.woff2",
+        "/assets/fonts/RobotoMono-latin.woff2", "/assets/icons/icon-192.png",
+    ]
+    for route in spine:
+        artifact = route_to_artifact(route)
+        root_name = artifact.split("/", 1)[0]
+        normalized_route = route.rstrip("/") or "/"
+        if root_name in frozen or artifact in withheld_artifacts or normalized_route in withheld_routes:
+            raise ValueError(f"PWA spine includes frozen or withheld route: {route}")
+        if not (ROOT / artifact).is_file() and artifact not in {
+            "manifest.webmanifest", "offline/index.html",
+        }:
+            raise FileNotFoundError(f"PWA spine artifact is missing: {artifact}")
+    return spine
+
+
+def public_withheld_routes() -> list[str]:
+    registry = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
+    routes = {registry["boundary"]["publicRoute"]}
+    for item in registry["artifacts"]:
+        routes.update(item["publicRoutes"])
+    return sorted(routes)
+
+
+def content_version(spine: list[str]) -> str:
+    digest = hashlib.sha256()
+    for route in spine:
+        artifact = ROOT / route_to_artifact(route)
+        digest.update(route.encode("utf-8"))
+        if artifact.is_file():
+            digest.update(artifact.read_bytes())
+    return digest.hexdigest()[:12]
+
+
 def build_sw():
-    version = datetime.date.today().strftime("%Y%m%d") + "a"
+    spine = safe_spine()
+    withheld_routes = public_withheld_routes()
+    version = content_version(spine)
     sw = """// Emergentism PWA service worker — receipt 124. Precache the spine; SWR runtime; offline fallback.
 const CACHE = 'emergentism-__VERSION__';
-const SPINE = [
-  '/compass/', '/journey/', '/map/', '/lab/', '/contribute/', '/halahala/', '/test/', '/build/', '/exit/',
-  '/five-plus-one/', '/amrita/', '/offline/',
-  '/manifest.webmanifest',
-  '/assets/css/xai.css', '/amrita/amrita.css',
-  '/assets/css/living-map.css', '/assets/js/living-map.js',
-  '/living-map.json', '/public_semantic_parity.json',
-  '/assets/fonts/Roboto-latin.woff2', '/assets/fonts/RobotoMono-latin.woff2',
-  '/assets/icons/icon-192.png',
-];
+const SPINE = __SPINE__;
+const WITHHELD_ROUTES = new Set(__WITHHELD_ROUTES__);
+const isWithheldRoute = (pathname) => WITHHELD_ROUTES.has(pathname);
+const isStorable = (response) => !/\\bno-store\\b/i.test(response.headers.get('Cache-Control') || '');
 self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
     const c = await caches.open(CACHE);
@@ -115,13 +179,30 @@ self.addEventListener('activate', (e) => {
 });
 self.addEventListener('fetch', (e) => {
   const req = e.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== location.origin) return;
+  if (isWithheldRoute(url.pathname)) {
+    e.respondWith(fetch(req, { cache: 'no-store' }).catch(() => new Response(
+      'This historical route is withheld from public delivery.',
+      {
+        status: 503,
+        headers: {
+          'Cache-Control': 'no-store, max-age=0',
+          'Content-Type': 'text/plain; charset=utf-8',
+          'X-Robots-Tag': 'noindex, noarchive, nosnippet, nofollow',
+        },
+      },
+    )));
+    return;
+  }
   if (req.mode === 'navigate') {
     e.respondWith((async () => {
       try {
         const net = await fetch(req);
-        const c = await caches.open(CACHE);
-        c.put(req, net.clone());
+        if (isStorable(net)) {
+          const c = await caches.open(CACHE);
+          c.put(req, net.clone());
+        }
         return net;
       } catch {
         return (await caches.match(req)) || (await caches.match('/offline/')) || Response.error();
@@ -132,15 +213,16 @@ self.addEventListener('fetch', (e) => {
   e.respondWith((async () => {
     const cached = await caches.match(req);
     const refresh = fetch(req).then((net) => {
-      caches.open(CACHE).then((c) => c.put(req, net.clone()));
+      if (isStorable(net)) caches.open(CACHE).then((c) => c.put(req, net.clone()));
       return net.clone();
     }).catch(() => null);
     return cached || (await refresh) || Response.error();
   })());
 });
-""".replace("__VERSION__", version)
-    with open(os.path.join(BASE, "sw.js"), "w") as fh:
-        fh.write(sw)
+""".replace("__VERSION__", version).replace("__SPINE__", json.dumps(spine, indent=2)).replace(
+        "__WITHHELD_ROUTES__", json.dumps(withheld_routes, indent=2)
+    )
+    (ROOT / "sw.js").write_text(sw, encoding="utf-8")
     print(f"sw.js written (cache emergentism-{version})")
 
 
@@ -162,26 +244,26 @@ def build_register():
 def build_offline():
     d = os.path.join(BASE, "offline")
     os.makedirs(d, exist_ok=True)
-    with open(os.path.join(d, "index.html"), "w") as fh:
+    with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as fh:
         fh.write("""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Offline — Emergentism</title>
 <style>
-  body{margin:0;background:#050505;color:#F3F4F6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  body{margin:0;background:#070A12;color:#F5F0E6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
        min-height:100vh;display:grid;place-items:center;text-align:center;padding:24px}
-  .dot{width:14px;height:14px;border-radius:50%;background:#FFEB3B;margin:0 auto 18px}
+  .dot{width:14px;height:14px;border-radius:50%;background:#F0C85A;margin:0 auto 18px}
   h1{font-size:1.6rem;font-weight:600;margin:0 0 10px}
   p{color:#9CA3AF;max-width:44ch;line-height:1.6}
-  a{color:#FFEB3B;text-decoration:none}
+  a{color:#F0C85A;text-decoration:none}
 </style>
 </head>
 <body>
 <div>
   <div class="dot"></div>
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
-  <p>The one claim on this page, verifiable by direct observation — Pratyakṣa. The compass spine is cached and still works: <a href="/compass/">compass</a> · <a href="/journey/">journey</a> · <a href="/map/">map</a> · <a href="/halahala/">halāhala</a> · <a href="/test/">test</a> · <a href="/build/">build</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
+  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
 </div>
 </body>
 </html>
@@ -218,11 +300,29 @@ def inject_heads():
     print(f"head injection: {injected} injected, {skipped} already had it, {no_head} without </head>")
 
 
-if __name__ == "__main__":
-    build_icons()
+def parse_args(argv):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--icons", action="store_true", help="regenerate icon assets")
+    parser.add_argument("--register", action="store_true", help="regenerate the service-worker registration script")
+    parser.add_argument("--inject-heads", action="store_true", help="inject PWA head markup into public HTML pages")
+    parser.add_argument("--all", action="store_true", help="run all optional generators and injection")
+    return parser.parse_args(argv)
+
+
+def main(argv) -> int:
+    args = parse_args(argv)
+    if args.all or args.icons:
+        build_icons()
     build_manifest()
-    build_sw()
-    build_register()
     build_offline()
-    inject_heads()
+    build_sw()
+    if args.all or args.register:
+        build_register()
+    if args.all or args.inject_heads:
+        inject_heads()
     print("PWA layer complete.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main(sys.argv[1:]))

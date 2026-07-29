@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Compressed reader map. The generated library remains crawlable through
-     internal links but is not advertised as a first-contact surface. -->
+<!-- Current reader map. Frozen and withheld material remains in custody but is
+     excluded from this current discovery surface. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://emergentism.org/</loc><priority>1.0</priority></url>
-  <url><loc>https://emergentism.org/discoveries/</loc><priority>0.95</priority></url>
+
+  <!-- Primary journey: practice → worldview → research → current book → participation → exit. -->
+  <url><loc>https://emergentism.org/practice/</loc><priority>0.95</priority></url>
+  <url><loc>https://emergentism.org/plainly/</loc><priority>0.95</priority></url>
+  <url><loc>https://emergentism.org/record/</loc><priority>0.95</priority></url>
+  <url><loc>https://emergentism.org/book/</loc><priority>0.9</priority></url>
+  <url><loc>https://emergentism.org/contribute/</loc><priority>0.9</priority></url>
+  <url><loc>https://emergentism.org/exit/</loc><priority>0.85</priority></url>
+  <url><loc>https://emergentism.org/about/</loc><priority>0.8</priority></url>
+
+  <!-- Current research routes. -->
+  <url><loc>https://emergentism.org/discoveries/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/discoveries/burrisphere/</loc><priority>0.9</priority></url>
   <url><loc>https://emergentism.org/discoveries/degrees-of-freedom/</loc><priority>0.9</priority></url>
   <url><loc>https://emergentism.org/discoveries/game/</loc><priority>0.9</priority></url>
@@ -16,25 +27,19 @@
   <url><loc>https://emergentism.org/discoveries/the-crossing/</loc><priority>0.9</priority></url>
   <url><loc>https://emergentism.org/discoveries/universalizability/</loc><priority>0.9</priority></url>
 
-  <!-- Primary reader journey: story → plain language → evidence → axioms → book → practice → build. -->
+  <!-- Additional current reader routes. -->
   <url><loc>https://emergentism.org/fable/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/plainly/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/record/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/axioms/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/book/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/practice/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/build/</loc><priority>0.8</priority></url>
 
   <url><loc>https://emergentism.org/compass/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/journey/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/map/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/lab/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/contribute/</loc><priority>0.8</priority></url>
+  <url><loc>https://emergentism.org/rosetta/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/halahala/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/test/</loc><priority>0.7</priority></url>
-  <url><loc>https://emergentism.org/exit/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/amrita/</loc><priority>0.7</priority></url>
-  <url><loc>https://emergentism.org/read/</loc><priority>0.65</priority></url>
   <url><loc>https://emergentism.org/0/</loc><priority>0.6</priority></url>
   <url><loc>https://emergentism.org/1/</loc><priority>0.6</priority></url>
   <url><loc>https://emergentism.org/2/</loc><priority>0.6</priority></url>

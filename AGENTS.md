@@ -35,14 +35,15 @@ crossing or literal identity.
 
 ## Read first
 
-1. `00_THE_WELTANSCHAUUNG.md` — reader door and claim boundary.
-2. `00_THE_KERNEL_INDEX.md` — seven-surface custody map.
-3. `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` — analytic floor and declared
+1. `VMOSK_A.md` — non-semantic project control projection; never K-8.
+2. `00_THE_WELTANSCHAUUNG.md` — reader door and claim boundary.
+3. `00_THE_KERNEL_INDEX.md` — seven-surface custody map.
+4. `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` — analytic floor and declared
    finite-node model.
-4. `05_COSMOLOGY/00_THE_BURRI_RULES.md` — typed graphical grammar.
-5. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` — tier law.
-6. `00_META/00_SETTLED_CANON_REGISTRY.md` — supersession and anti-drift record.
-7. `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` — dated receipts.
+5. `05_COSMOLOGY/00_THE_BURRI_RULES.md` — typed graphical grammar.
+6. `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md` — tier law.
+7. `00_META/00_SETTLED_CANON_REGISTRY.md` — supersession and anti-drift record.
+8. `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` — dated receipts.
 
 ## Routing law
 

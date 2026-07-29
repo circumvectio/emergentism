@@ -15,10 +15,71 @@ evidence_tier: "Per refusal below; chosen normative and procedural constraints, 
 # The 5+1 Constitution — The Refusals
 
 A commandment is imposed from outside. A refusal binds the holder's own hand.
-Emergentism therefore chooses five constraints and one direction. The five say
-what the framework will not do; `Ω` says what it tries to make possible. The
+Emergentism therefore chooses one foundational refusal, five practice
+constraints, and one direction. `R0` says what the framework will not assume;
+the five say what it will not do; `Ω` says what it tries to make possible. The
 architecture is selected `[I/S]`, not forced by the reciprocal chart or by
 nature.
+
+## R0 — the foundational refusal `[S]`
+
+> **R0 · No necessary being.**
+> Emergentism refuses to treat existence as self-warranting. It demands no
+> reason for the null state and grants existence no logical entitlement. Where a
+> logic is needed to reason about that boundary, the framework adopts an
+> **inclusive** semantics and says so.
+
+**Adopted 2026-07-29 by owner ruling** (receipt 176), on the reasoning in
+[`46_THE_ADMISSIBILITY_OF_NOTHING.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md).
+
+`R0` is **prior to the five and different in type**. The five are *practice*
+constraints on how the framework acts. `R0` is an *ontological* constraint on
+what it may assume before it acts at all. It is not a sixth refusal and does not
+rename the architecture.
+
+**Why a refusal and not an axiom.** The owner's declaration — that the
+contingency of existence is the foundation — is correct in substance and cannot
+be carried by an axiom. Doc 46 §4 proves the regress: any such sentence has
+truth-conditions only relative to a language `L` and a consequence relation
+`⊨_L`, so `L` is prior to it, so it cannot ground `L`. Sharper still, its
+truth-value *changes with the choice of `L`* (§3), and a proposition decided by a
+prior selection cannot be the ground of that selection.
+
+The refusal form carries the whole intent and survives the regress, because it
+asserts nothing requiring a prior logic to be true. It binds the holder's hand
+instead. That is why the deepest layer of this framework is constitutional
+rather than axiomatic.
+
+**What `R0` preserves:** Dasein is contingent; nothing downstream may quietly
+re-derive necessity for it.
+**Kill:** a sound argument establishing a necessary being. `R0` then fails as a
+refusal and must be withdrawn openly, with a dated receipt.
+
+### The layered foundation `[S]`
+
+What is forced and what is chosen must never be fused. The foundation has three
+strata, and only the first is forced:
+
+```text
+FORCED — no selection available
+  F1  every framework must settle Q1 (may the domain be empty?)
+      and Q2 (may it contain a totality of itself?) — silence is an answer
+  F2  in a multiplicative structure the unit is unique   (a group has one identity)
+
+SELECTED — declared, killable, and openly ours
+  R0  Q1 = yes    the null state is admissible        (inclusive semantics)
+  R0′ Q2 = yes    the totality is admissible          (NBG/MK class theory)
+  S1  sphere primacy                                   (receipt 175)
+
+THEOREM — given the above
+  T1  ⊙ = • × ○, • = ⊙/○, ○ = ⊙/• on Ĉ               (doc 45)
+  T2  1 is the metric centre and the unique ι-fixed point on the positive ray
+```
+
+`F1` is the deepest true statement in the arc: **the boundaries are forced, the
+answers are selected.** Emergentism's foundation is not that nothing is possible
+— it is that the question is unavoidable and that Emergentism answers *yes* at
+both boundaries, openly, and can be killed for it.
 
 ## The five plus one
 

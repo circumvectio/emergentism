@@ -43,6 +43,7 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 ::selection{background:rgba(255,235,59,.26);color:#050505}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--void);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}.skip:focus{transform:translateY(0)}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
 .mono{font-family:var(--mono)}
 
@@ -55,6 +56,7 @@ a{color:inherit}
 .nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
 .nav a:hover{color:var(--void);background:var(--gold)}
 .nav a.here{color:var(--gold);border:1px solid var(--line)}
+.mobile-actions{display:none;align-items:center;gap:.55rem;font:500 .7rem var(--mono);text-transform:uppercase}.mobile-actions>a,.mobile-actions summary{color:var(--bone-dim);text-decoration:none;cursor:pointer;list-style:none;padding:.42rem .1rem}.mobile-actions summary::-webkit-details-marker{display:none}.mobile-actions details{position:relative}.mobile-actions .menu-panel{position:absolute;right:0;top:calc(100% + .8rem);min-width:12rem;padding:.65rem;background:var(--panel-2);border:1px solid var(--line);box-shadow:0 1rem 2.5rem rgba(0,0,0,.42)}.mobile-actions .menu-panel a{display:block;padding:.55rem;color:var(--bone-dim);text-decoration:none}.mobile-actions .nav-action{color:var(--void);background:var(--gold);padding:.46rem .62rem}.mobile-actions .nav-quiet{color:var(--bone-faint)}
 
 /* ---------- hero ---------- */
 header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
@@ -183,9 +185,11 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 .src .int{color:var(--bone-ghost)}
 
 /* motion */
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .75s cubic-bezier(.16,1,.3,1)}
 @media (max-width:720px){
+  .nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}
   .case,.reserved{grid-template-columns:64px 1fr}
   .rail{padding-right:.8rem}
   .rail .no{font-size:1.05rem}
@@ -195,7 +199,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 }
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important}
-  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .js .reveal{opacity:1!important;transform:none!important;transition:none!important}
   .caret{animation:none!important}
   .seismo .bar{transition:none!important}
 }
@@ -205,20 +209,23 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <aside data-historical-authority-boundary="2026-07-22" role="note" style="padding:.8rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);background:#17150a;color:#d8d2bd;font:600 .76rem/1.5 ui-monospace,monospace">[B] Historical receipt labels below are preserved as provenance. They create no current editorial, repository, AI, financial, contractual, or publication authority. Current work follows source ownership, evidence, consent, custody, consequence, contest, and applicable permissions.</aside>
 
 <header class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
-    <a href="../#finity-card">Use Finity</a><a href="../plainly/">Ideas</a>
-    <a href="../record/" class="here" aria-current="page">Research &amp; Record</a><a href="../about/">About</a>
+    <a href="../practice/#frame">Practice</a><a href="../plainly/">Worldview</a>
+    <a href="../record/" class="here" aria-current="page">Research</a><a href="../book/">Library</a>
     <a href="../contribute/">Participate</a><a href="../exit/" style="opacity:.62">Exit</a>
   </nav>
+  <nav class="mobile-actions" aria-label="Mobile navigation"><a class="nav-action" href="../practice/#frame">Practice</a><details><summary>Menu</summary><div class="menu-panel"><a href="../plainly/">Worldview</a><a href="../record/" aria-current="page">Research</a><a href="../book/">Library</a><a href="../contribute/">Participate</a></div></details><a class="nav-quiet" href="../exit/">Exit</a></nav>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
   <header class="hero">
     <p class="fileno reveal in">The Trial Record <span class="sep">/</span> <span class="est">opened 2026 · kept open by design</span></p>
     <h1 class="reveal in">A claim is <span class="thin-word">thin</span>.<br>A verdict is <span class="kill">heavy</span>.</h1>
@@ -257,7 +264,6 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
       <span class="r"><span class="n" id="c-tested" data-count="0">0</span><span class="lab">tested</span></span><span class="pipe">|</span>
       <span class="r bad"><span class="n" id="c-against" data-count="0">0</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
       <span class="r gold"><span class="n" id="c-fenced" data-count="0">0</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
-      <span class="r zero"><span class="n" data-count="0">0</span><span class="lab">deleted</span></span>
     </div>
 
     <section class="k3 reveal in" aria-labelledby="world-contact-title">
@@ -290,10 +296,10 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 
     <!-- reserved next slot -->
     <article id="027" class="case reserved reveal in" aria-label="Reserved slot">
-      <div class="rail"><div class="no"><a href="#027">№017</a></div></div>
+      <div class="rail"><div class="no"><a href="#027">№027</a></div></div>
       <div class="doc">
         <p class="claim">Reserved — for the claim that fails next<span class="caret" aria-hidden="true"></span></p>
-        <p class="sub">This slot is never empty for long. A framework that has stopped adding rows here has stopped being tested — and by its own A7, that is the failure state. Bookmark it.</p>
+        <p class="sub">This is a placeholder for the next logged outcome. Its presence is not evidence that testing will continue, that the record is complete, or that the next result will be against the framework.</p>
       </div>
     </article>
 
@@ -688,8 +694,8 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
   </div>
 
   <section class="k3">
-    <p class="r">K3 · the no-erasure law</p>
-    <p><b>Nothing on this page was deleted.</b> Struck means struck, not gone — a refuted claim is left legible, with its date, so the next reader watches the framework change its mind instead of reading a tidy story with the seams sanded off. A worldview that hides its corrections cannot be trusted with the ones it hasn't found yet. The record grows in both directions — and slot №017 is already open.</p>
+    <p class="r">K3 · archive-first record boundary</p>
+    <p><b>Current published rows remain legible when cut or refuted.</b> Each retained row keeps its date and verdict so a reader can inspect a visible correction rather than only the surviving story. This page does not establish that every historical change was captured or that no material was ever lost; gaps should be reported. Slot №027 is reserved for the next logged outcome.</p>
     <div class="cta-row">
       <a class="cta primary" href="../practice/">Try the practice in an afternoon →</a>
       <a class="cta" href="../plainly/">New here? Start plainly →</a>
@@ -702,7 +708,7 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 
 <footer class="foot wrap">
   <div class="glyph">Claim · Test · Consequence · Revision</div>
-  <p>The Trial Record · faithful to the receipts under 03_METHODOLOGY and the 2026-07 audits.<br>One canon, three scripts — <a href="../fable/">the fable</a> (story) · <a href="../plainly/">plainly</a> (plain words) · this record (receipts).<br>Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.<br>Every entry carries a date and a tier. Coherence is not truth — <a href="../axioms/">see the axioms</a>.<br>If you can see directly, <a href="../exit/">put this down</a>.</p>
+  <p>The Trial Record · projected from receipts under 03_METHODOLOGY and the 2026-07 audits; completeness remains contestable.<br>One canon, three scripts — <a href="../fable/">the fable</a> (story) · <a href="../plainly/">plainly</a> (plain words) · this record (receipts).<br>Audits run by AI agents under human direction; no external human reviewer yet — that absence is logged, not hidden.<br>Logged verdict rows carry dates and stated tiers. Coherence is not truth — <a href="../axioms/">see the axioms</a>.<br>If you can see directly, <a href="../exit/">put this down</a>.</p>
 </footer>
 
 <script>

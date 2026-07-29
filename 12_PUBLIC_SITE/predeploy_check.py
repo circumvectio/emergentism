@@ -450,16 +450,16 @@ def check_public_reading_bundle():
         all_ok = False
 
     index_body = read_file("index.html")
-    # 2026-07-28: the public front is method-led. These are the declared reader,
-    # evidence, participation, and exit hubs; deep or historical routes are not
-    # required on first contact. Generated-library chrome remains covered by [9].
+    # 2026-07-28: the public front is worldview-first with an immediate practice.
+    # These are the declared current reader, evidence, participation, and exit
+    # hubs; the frozen historical library is not a first-contact requirement.
     for href in [
         "practice/",
         "plainly/",
         "discoveries/",
         "record/",
         "lab/",
-        "read/",
+        "book/",
         "about/",
         "contribute/",
         "exit/",
@@ -468,6 +468,18 @@ def check_public_reading_bundle():
             ok(f"landing links {href}")
         else:
             error(f"landing missing link to {href}")
+            all_ok = False
+
+    practice_body = read_file("practice/index.html")
+    for marker in [
+        'id="receipt-builder"',
+        "Face 1 · commitment",
+        "Face 2 · observed outcome",
+        "no transmission",
+        "comparative benefit over simpler decision practices remains open",
+    ]:
+        if marker not in practice_body:
+            error(f"practice missing local-receipt boundary marker: {marker}")
             all_ok = False
 
     return all_ok

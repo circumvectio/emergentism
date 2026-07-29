@@ -43,6 +43,8 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
 ::selection{background:rgba(255,235,59,.26);color:#050505}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--void);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
+.skip:focus{transform:translateY(0)}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
 .read{max-width:var(--read)}
 .mono{font-family:var(--mono)}
@@ -55,6 +57,11 @@ a{color:inherit}
 .nav a{display:inline-grid;place-items:center;min-width:1.7rem;height:1.7rem;padding:0 .45rem;color:var(--bone-dim);border-radius:3px;text-decoration:none;transition:.15s}
 .nav a:hover{color:var(--void);background:var(--gold)}
 .nav a.here{color:var(--gold);border:1px solid var(--line)}
+.mobile-actions{display:none;align-items:center;gap:.55rem;font:500 .7rem var(--mono);text-transform:uppercase}
+.mobile-actions>a,.mobile-actions summary{color:var(--bone-dim);text-decoration:none;cursor:pointer;list-style:none;padding:.42rem .1rem}
+.mobile-actions summary::-webkit-details-marker{display:none}
+.mobile-actions details{position:relative}.mobile-actions .menu-panel{position:absolute;right:0;top:calc(100% + .8rem);min-width:12rem;padding:.65rem;background:var(--panel-2);border:1px solid var(--line);box-shadow:0 1rem 2.5rem rgba(0,0,0,.42)}
+.mobile-actions .menu-panel a{display:block;padding:.55rem;color:var(--bone-dim);text-decoration:none}.mobile-actions .nav-action{color:var(--void);background:var(--gold);padding:.46rem .62rem}.mobile-actions .nav-quiet{color:var(--bone-faint)}
 
 /* hero */
 header.hero{padding:clamp(3rem,8vw,6.5rem) 0 1rem}
@@ -71,6 +78,9 @@ h1 .gold{color:var(--gold);font-weight:900}
 .pitch .lab{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 .8rem}
 .pitch p{font-size:clamp(1.14rem,1.7vw,1.4rem);color:var(--bone);margin:0;font-weight:300;line-height:1.55}
 .pitch b{color:var(--gold);font-weight:500}
+.notation{margin-top:1rem;border-top:1px solid var(--line);padding-top:.75rem}
+.notation summary{cursor:pointer;color:var(--bone-faint);font:500 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.notation p{margin:.7rem 0 0!important;color:var(--bone-dim)!important;font-size:.9rem!important}
 
 /* generic section */
 section{padding:clamp(2.6rem,6vw,4.6rem) 0;border-top:1px solid var(--line-soft)}
@@ -156,50 +166,62 @@ p{margin:0 0 1.25rem}
 .foot .glyph{font-size:1.5rem;color:var(--gold);margin-bottom:.7rem}
 .foot a{color:var(--bone-faint);text-decoration:underline;text-underline-offset:3px}
 
-.reveal{opacity:0;transform:translateY(16px)}
-.reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;transition:none!important}}
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.16,1,.3,1)}
+@media(max-width:760px){.nav{display:none}.mobile-actions{display:flex}.topbar{gap:.6rem}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.js .reveal{opacity:1!important;transform:none!important;transition:none!important}}
 </style>
 <!-- pwa-chrome -->
 <link rel="manifest" href="/manifest.webmanifest">
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+
+<a class="skip" href="#main">Skip to content</a>
 
 <header class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
-    <a href="../#finity-card">Use Finity</a><a href="../plainly/" class="here" aria-current="page">Ideas</a>
-    <a href="../record/">Research &amp; Record</a><a href="../about/">About</a>
+    <a href="../practice/#frame">Practice</a><a href="../plainly/" class="here" aria-current="page">Worldview</a>
+    <a href="../record/">Research</a><a href="../book/">Library</a>
     <a href="../contribute/">Participate</a><a href="../exit/" style="opacity:.62">Exit</a>
+  </nav>
+  <nav class="mobile-actions" aria-label="Mobile navigation">
+    <a class="nav-action" href="../practice/#frame">Practice</a>
+    <details><summary>Menu</summary><div class="menu-panel"><a href="../plainly/" aria-current="page">Worldview</a><a href="../record/">Research</a><a href="../book/">Library</a><a href="../contribute/">Participate</a></div></details>
+    <a class="nav-quiet" href="../exit/">Exit</a>
   </nav>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
   <header class="hero">
     <p class="fileno reveal in">Emergentism, in plain words · no jargon required · <a href="../fable/" style="color:var(--gold-deep);text-decoration:underline;text-underline-offset:3px;text-transform:none;letter-spacing:normal">prefer it as a story? — the fable, five minutes</a></p>
-    <h1 class="reveal in">Every decision that matters<br>meets <span class="gold">two powers</span> at once.</h1>
+    <h1 class="reveal in">Many consequential decisions<br>meet <span class="gold">two powers</span> at once.</h1>
     <p class="dek reveal in">One is the power of the possible: the futures you can distinguish and compare. The other is actual power: what can act now. Emergentism asks where they can meet at a finite, observable, revisable boundary—then lets consequence correct the answer.</p>
 
     <div class="pitch reveal in">
       <p class="lab">If you remember one thing</p>
-      <p><b>Finity is a limit a process can approach.</b> It turns endless possibility into direction without pretending the world is closed. In the selected node model, a present evaluation of possible power meets actual power as <code>P_node = Φ̂₄V₄</code>. The model is useful only where it survives comparison with rivals and contact with outcomes.</p>
+      <p><b>Finity is a bounded review point approached in service of a longer responsibility.</b> It asks what is genuinely possible, what can act now, and where an observed consequence can correct the move. Whether this improves decisions over simpler methods remains open.</p>
+      <details class="notation"><summary>Optional notation</summary><p>In the selected node model, a present estimate of possible power meets actual power as <code>P_node = Φ̂₄V₄</code>. This is a chosen conjunctive model, not a universal law.</p></details>
     </div>
   </header>
 
   <!-- THE BUILD-UP -->
   <section>
     <p class="kicker reveal">Start from something you already know</p>
-    <h2 class="reveal read">Six small steps. Each one is <b>obvious</b> on its own.</h2>
+    <h2 class="reveal read">Six proposed distinctions. <b>Keep only what survives.</b></h2>
 
     <div class="step reveal">
       <div class="n">1</div>
       <div>
         <h3>Finite beings can imagine more than they can <b>enact</b>.</h3>
-        <p>You can represent several futures while living only one present history. Emergentism calls the structured field of relevant alternatives <b>D5 possible power</b>, written <code>Φ₅</code>.</p>
-        <p>Your body, time, tools, access, energy, and executable capability belong to <b>D4 actual power</b>, written <code>V₄</code>. A possibility does not act by itself, and capability alone does not tell you where to aim.</p>
+        <p>You can represent several futures while living only one present history. Call that structured field of relevant alternatives <b>possible power</b>.</p>
+        <p>Your body, time, tools, access, energy, and authority make up <b>actual power</b>. A possibility does not act by itself, and capability alone does not tell you where to aim.</p>
+        <details class="notation"><summary>Optional notation</summary><p>The dimensional scaffold labels possible power <code>D5 / Φ₅</code> and actual power <code>D4 / V₄</code>. Present D4 carriers represent D5 content; the future does not physically signal backward.</p></details>
       </div>
     </div>
 
@@ -207,8 +229,9 @@ p{margin:0 0 1.25rem}
       <div class="n">2</div>
       <div>
         <h3>Emergentism selects a <b>need-both model</b>.</h3>
-        <p>A present D4 model evaluates possible power as <code>Φ̂₄</code>. The framework then couples that evaluation to actual power with <code>P_node = Φ̂₄V₄</code>. This product makes either missing factor decisive.</p>
-        <p>The multiplication is a <b>chosen conjunctive model</b>, not the only possible aggregator and not a law derived from the geometry. Addition, minimum, harmonic, and asymmetric rivals remain part of the empirical test.</p>
+        <p>A plan needs both a live possibility and the means to enact it. The selected model treats either missing factor as decisive.</p>
+        <p>This is a <b>chosen need-both model</b>, not the only possible account. Additive, minimum, harmonic, asymmetric, and ordinary planning rivals remain part of the empirical test.</p>
+        <details class="notation"><summary>Optional notation</summary><p>A present model estimates possible power as <code>Φ̂₄</code> and couples it to actual power with <code>P_node = Φ̂₄V₄</code>. Multiplication is selected, not derived from geometry.</p></details>
       </div>
     </div>
 
@@ -244,7 +267,7 @@ p{margin:0 0 1.25rem}
       <div class="n">6</div>
       <div>
         <h3>Consequence keeps the map <b>answerable</b>.</h3>
-        <p>A finite agent represents alternatives, selects a boundary, commits an action, and receives a consequence it cannot manufacture. The result changes both the model and the modeler.</p>
+        <p>A finite agent represents alternatives, selects a boundary, commits an action, and records an observed consequence that may contradict the model. Observation remains mediated and fallible; it can still force revision.</p>
         <p>That loop—map, act, receive, revise—is the portable method. The worldview may be wrong; the consequence still gets a vote.</p>
       </div>
     </div>
@@ -258,7 +281,7 @@ p{margin:0 0 1.25rem}
       <p>Why should a stakeholder care about a grading system? Because it separates an auditable research programme from a self-protecting story. A framework that can't lose an argument to reality will tell you whatever keeps it alive. This one is built to record losses in plain sight, dated and preserved.</p>
       <div class="r6">
         <p class="l">An internal correction — 2026</p>
-        <p><b>This year the framework's single cleanest new idea was put to a real test, and it failed.</b> The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it doesn't — it stacks up in a straight line instead. So we retired the claim, wrote down exactly how it died, and <a href="../record/#008" style="color:var(--bone);text-decoration:underline;text-underline-offset:3px">left it standing where anyone can read it</a>. That is process evidence: it shows an internal correction was honored. It does not validate the wider framework, and external review is still needed.</p>
+        <p><b>This year a prominent internal claim was put to a declared test, and it failed.</b> The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it doesn't — it stacks up in a straight line instead. So we retired the claim, wrote down exactly how it died, and <a href="../record/#008" style="color:var(--bone);text-decoration:underline;text-underline-offset:3px">left it standing where anyone can read it</a>. That is process evidence: it shows an internal correction was honored. It does not establish novelty, validate the wider framework, or replace external review.</p>
       </div>
     </div>
   </section>
@@ -306,7 +329,7 @@ p{margin:0 0 1.25rem}
         <p class="colhead bet"><span class="d"></span>What we bet</p>
         <div class="item">
           <h4>The unit "1" is a <b>hidden frame</b>, not just a number.</h4>
-          <p>A long historical thread — from Euclid to the modern metric system — reads as humanity slowly discovering that "one" is a chosen vantage point, not a thing. Our strongest surviving idea.</p>
+          <p>A long historical thread — from Euclid to the modern metric system — can be read as humanity repeatedly choosing and revising frames for "one." This is a surviving interpretation within the programme, not an established discovery.</p>
           <p class="howlose"><b>How it loses:</b> if historians already tell this exact story, it's a nice retelling, not a discovery.</p>
           <span class="gloss"><span class="t t-i">[I]</span> an interpretation, with real history under it</span>
         </div>
@@ -352,7 +375,7 @@ p{margin:0 0 1.25rem}
       </div>
       <div class="not">
         <h4><span class="x">✕</span> Something to believe in.</h4>
-        <p>Its own rule: the day it has <b>followers instead of users</b>, it has failed. Use it, test it, put it down. It succeeds when you no longer need it.</p>
+        <p><b>Adherence does not validate it.</b> Use a distinction, test a practice, refuse the vocabulary, or put the whole map down.</p>
       </div>
     </div>
   </section>
@@ -362,7 +385,7 @@ p{margin:0 0 1.25rem}
     <div class="close reveal">
       <p>So here's the whole thing, once more, plainly: <b>name what is actually possible, meet it with the power available now, choose a finite boundary worth approaching, act, and let consequence revise the map.</b> Refuse to hide one bearer's destruction inside another's gain. Never let how good a story sounds outrun how much of it has earned.</p>
       <div class="cta-row">
-        <a class="cta primary" href="../practice/">Try the practice in an afternoon →</a>
+        <a class="cta primary" href="../practice/#frame">Frame one decision →</a>
         <a class="cta" href="../axioms/">Inspect the current claim ledger →</a>
         <a class="cta" href="../record/">The record of what we got wrong →</a>
         <a class="cta" href="../book/">Read the whole book →</a>

@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import hashlib
 import json
 import re
 import sys
@@ -28,6 +29,7 @@ from urllib.request import Request, urlopen
 SITE_ROOT = Path(__file__).resolve().parent
 DEFAULT_BASE_URL = "https://www.emergentism.org/"
 WITHHELD_REGISTRY_PATH = SITE_ROOT / "withheld-routes.json"
+PARITY_MANIFEST_PATH = SITE_ROOT / "public_semantic_parity.json"
 
 
 def load_withheld_registry() -> dict[str, Any]:
@@ -35,7 +37,13 @@ def load_withheld_registry() -> dict[str, Any]:
         return json.load(handle)
 
 
+def load_public_parity() -> dict[str, Any]:
+    with PARITY_MANIFEST_PATH.open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
 WITHHELD_REGISTRY = load_withheld_registry()
+PUBLIC_PARITY = load_public_parity()
 HISTORICAL_BOUNDARY_MARKER = WITHHELD_REGISTRY["boundary"]["marker"]
 HISTORICAL_BOUNDARY_PATH = WITHHELD_REGISTRY["boundary"]["publicRoute"]
 RISKY_WITHHELD_BODY_MARKERS = (
@@ -48,34 +56,36 @@ RISKY_WITHHELD_BODY_MARKERS = (
     "The Burrisphere — Magnum Opus",
     "The Argument: Emergence as Lens on Dasein",
 )
-CORE_PATHS = [
-    "",
-    "read/",
-    "robots.txt",
-    "sitemap.xml",
-    "reading-manifest.json",
-    "operators/",
-    "will/",
-    "value/",
-    "ground/",
-    "sacred/",
-    "papers/",
-    "canon/",
-    "foundations/",
-    "trinity/",
-    "formal/",
-    "paradox/",
-    "memetic/",
-    "rosettad/",
-    "0/",
-    "1/",
-    "2/",
-    "3/",
-    "4/",
-    "5/",
-    "6/",
-    "historical-boundary/",
-]
+FROZEN_ROOTS = set(PUBLIC_PARITY["frozenLibraryRoots"])
+
+
+def current_route_paths() -> list[str]:
+    routes: list[str] = []
+    for artifact in PUBLIC_PARITY["currentSurfaces"]:
+        if not artifact.endswith("index.html"):
+            continue
+        if artifact.split("/", 1)[0] in FROZEN_ROOTS:
+            continue
+        routes.append("" if artifact == "index.html" else artifact[:-10])
+    routes.extend(
+        [
+            "robots.txt", "sitemap.xml", "reading-manifest.json",
+            "public_semantic_parity.json", "living-map.json",
+            "atlas/site_index.json", "manifest.webmanifest",
+        ]
+    )
+    return list(dict.fromkeys(routes))
+
+
+CORE_PATHS = current_route_paths()
+HASH_SAMPLE_ARTIFACTS = {
+    "": "index.html",
+    "practice/": "practice/index.html",
+    "public_semantic_parity.json": "public_semantic_parity.json",
+    "living-map.json": "living-map.json",
+    "atlas/site_index.json": "atlas/site_index.json",
+    "manifest.webmanifest": "manifest.webmanifest",
+}
 
 
 @dataclass(frozen=True)
@@ -85,8 +95,11 @@ class ProbeResult:
     final_url: str
     title: str
     bytes_read: int
-    repo_finity_horizon: bool
+    body_sha256: str
+    repo_worldview_identity: bool
+    repo_finity_action: bool
     repo_finity_card: bool
+    repo_local_receipt: bool
     repo_generated_manifest: bool
     repo_historical_boundary: bool
     risky_withheld_body: bool
@@ -120,23 +133,17 @@ def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
     try:
         with urlopen(request, timeout=timeout) as response:
             body = response.read(220_000)
-            text = body.decode(
-                response.headers.get_content_charset() or "utf-8",
-                errors="replace",
-            )
             return build_result(
                 path,
                 response.status,
                 response.geturl(),
-                text,
-                len(body),
+                body,
                 response.headers,
             )
     except HTTPError as exc:
         try:
             body = exc.read(60_000)
-            text = body.decode("utf-8", errors="replace")
-            return build_result(path, exc.code, exc.geturl(), text, len(body), exc.headers)
+            return build_result(path, exc.code, exc.geturl(), body, exc.headers)
         except Exception as read_exc:  # pragma: no cover - network dependent
             return ProbeResult(
                 path=path,
@@ -144,8 +151,11 @@ def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
                 final_url=exc.geturl(),
                 title="",
                 bytes_read=0,
-                repo_finity_horizon=False,
+                body_sha256="",
+                repo_worldview_identity=False,
+                repo_finity_action=False,
                 repo_finity_card=False,
+                repo_local_receipt=False,
                 repo_generated_manifest=False,
                 repo_historical_boundary=False,
                 risky_withheld_body=False,
@@ -163,8 +173,11 @@ def probe(base_url: str, path: str, timeout: float) -> ProbeResult:
             final_url=url,
             title="",
             bytes_read=0,
-            repo_finity_horizon=False,
+            body_sha256="",
+            repo_worldview_identity=False,
+            repo_finity_action=False,
             repo_finity_card=False,
+            repo_local_receipt=False,
             repo_generated_manifest=False,
             repo_historical_boundary=False,
             risky_withheld_body=False,
@@ -181,18 +194,24 @@ def build_result(
     path: str,
     status: int,
     final_url: str,
-    text: str,
-    size: int,
+    body: bytes,
     headers: Any,
 ) -> ProbeResult:
+    text = body.decode(
+        headers.get_content_charset() or "utf-8",
+        errors="replace",
+    )
     return ProbeResult(
         path=path,
         status=status,
         final_url=final_url,
         title=title_from_html(text),
-        bytes_read=size,
-        repo_finity_horizon="Finity makes limits navigable." in text,
-        repo_finity_card="Use the Finity Card" in text,
+        bytes_read=len(body),
+        body_sha256=hashlib.sha256(body).hexdigest(),
+        repo_worldview_identity="A worldview for finite beings" in text,
+        repo_finity_action="Frame one decision" in text,
+        repo_finity_card="Finity Card" in text,
+        repo_local_receipt="private two-face receipt" in text,
         repo_generated_manifest=(
             "Generated by 12_PUBLIC_SITE" in text or "reading-manifest.json" in text
         ),
@@ -240,6 +259,23 @@ def run_audit(base_url: str, timeout: float, workers: int) -> dict[str, Any]:
     manifest_results = [result for result in results if result.path in manifest_set]
     core_results = [result for result in results if result.path in core_set]
     withheld_results = [result for result in results if result.path in withheld_set]
+    result_by_path = {result.path: result for result in results}
+    sampled_hashes = []
+    for path, artifact in HASH_SAMPLE_ARTIFACTS.items():
+        local_path = SITE_ROOT / artifact
+        result = result_by_path.get(path)
+        expected = hashlib.sha256(local_path.read_bytes()).hexdigest() if local_path.is_file() else ""
+        served = result.body_sha256 if result is not None else ""
+        sampled_hashes.append(
+            {
+                "path": path,
+                "artifact": artifact,
+                "status": result.status if result is not None else "NOT_PROBED",
+                "expected_sha256": expected,
+                "served_sha256": served,
+                "matches": bool(expected and served and expected == served),
+            }
+        )
     withheld_manifest_hrefs = {
         item["manifestDocument"]["href"]
         for item in WITHHELD_REGISTRY["artifacts"]
@@ -258,6 +294,7 @@ def run_audit(base_url: str, timeout: float, workers: int) -> dict[str, Any]:
         ),
         "core_results": [asdict(result) for result in core_results],
         "withheld_results": [asdict(result) for result in withheld_results],
+        "sampled_hashes": sampled_hashes,
         "withheld_manifest_leaks": sorted(withheld_manifest_hrefs & set(manifest_paths)),
         "sample_manifest_failures": [
             asdict(result) for result in manifest_results if result.status != 200
@@ -277,8 +314,10 @@ def print_summary(report: dict[str, Any]) -> None:
     for result in report["core_results"]:
         path = result["path"] or "/"
         marker_bits = []
-        if result["repo_finity_horizon"]:
-            marker_bits.append("repo:Finity")
+        if result["repo_worldview_identity"]:
+            marker_bits.append("repo:Worldview")
+        if result["repo_finity_action"]:
+            marker_bits.append("repo:Action")
         if result["repo_finity_card"]:
             marker_bits.append("repo:Card")
         if result["old_vmgsta_markers"]:
@@ -287,6 +326,12 @@ def print_summary(report: dict[str, Any]) -> None:
             marker_bits.append("google-sites")
         markers = ",".join(marker_bits) or "-"
         print(f"- {path}: {result['status']} final={result['final_url']} markers={markers}")
+    print()
+    print("Sampled served hashes:")
+    for sample in report["sampled_hashes"]:
+        path = sample["path"] or "/"
+        verdict = "MATCH" if sample["matches"] else "MISMATCH"
+        print(f"- {path}: {verdict} ({sample['status']})")
     print()
     print("Withheld routes:")
     for result in report["withheld_results"]:
@@ -355,6 +400,11 @@ def strict_failures(report: dict[str, Any]) -> list[str]:
         suffix = "" if len(bad_core) <= 12 else f", +{len(bad_core) - 12} more"
         failures.append(f"core/front-door routes are not all 200 ({sample}{suffix})")
 
+    bad_hashes = [sample for sample in report["sampled_hashes"] if not sample["matches"]]
+    if bad_hashes:
+        sample = ", ".join((item["path"] or "/") for item in bad_hashes)
+        failures.append(f"sampled served hashes differ from the local release ({sample})")
+
     root = next(
         (result for result in report["core_results"] if result["path"] == ""),
         None,
@@ -363,16 +413,23 @@ def strict_failures(report: dict[str, Any]) -> list[str]:
         failures.append("root route was not probed")
         return failures
 
-    if not root["repo_finity_horizon"]:
-        failures.append(
-            "root route is missing repository marker: Finity makes limits navigable."
-        )
-    if not root["repo_finity_card"]:
-        failures.append("root route is missing repository marker: Use the Finity Card")
+    if not root["repo_worldview_identity"]:
+        failures.append("root route is missing worldview marker: A worldview for finite beings")
+    if not root["repo_finity_action"]:
+        failures.append("root route is missing Finity action marker: Frame one decision")
     if root["old_vmgsta_markers"]:
         failures.append("root route still contains old VMGSTA link-hub markers")
     if root["google_sites_markers"]:
         failures.append("root route still contains Google Sites markers")
+
+    practice = next(
+        (result for result in report["core_results"] if result["path"] == "practice/"),
+        None,
+    )
+    if practice is None or not practice["repo_finity_card"]:
+        failures.append("practice route is missing source-practice marker: Finity Card")
+    if practice is None or not practice["repo_local_receipt"]:
+        failures.append("practice route is missing local commitment/outcome receipt marker")
 
     return failures
 

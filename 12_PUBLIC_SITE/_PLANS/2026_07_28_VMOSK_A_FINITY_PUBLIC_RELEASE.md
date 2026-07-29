@@ -1,12 +1,20 @@
 ---
 title: "VMOSK-A — Finity-first public release"
 date: 2026-07-28
-status: "EXECUTION PACKET — public projection only; creates no doctrine"
+status: "SUPERSEDED EXECUTION PACKET — preserved as public-release provenance"
 evidence_tier: "[B] repository and release gates; [I] positioning and information architecture"
 owner: "01_EMERGENTISM/12_PUBLIC_SITE"
+superseded_by: "2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md"
 ---
 
 # VMOSK-A — Finity-first public release
+
+> **Superseded for current front-door positioning.** This packet remains the
+> dated provenance for the Finity-first release. The current public hierarchy
+> is governed by
+> [`2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md`](2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md):
+> **Emergentism, made usable through Finity.** Its evidence and release fences
+> remain in force.
 
 This packet governs one bounded surface: `12_PUBLIC_SITE/`. It does not certify
 Emergentism, promote a conjecture, alter source doctrine, or convert internal AI

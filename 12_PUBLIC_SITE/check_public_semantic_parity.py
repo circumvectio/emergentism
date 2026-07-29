@@ -38,11 +38,16 @@ FORBIDDEN = {
 }
 
 REQUIRED_PUBLIC_CONTRACTS = {
-    "index.html": ("Use the Finity Card", "Φ₅", "V₄", "P_node = Φ̂₄V₄"),
+    "index.html": ("A worldview for finite beings", "Frame one decision"),
     "plainly/index.html": ("possible power", "actual power", "chosen conjunctive model"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
     "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
+}
+REQUIRED_SURFACE_CARDS = {
+    "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
+    "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
+    "lab/index.html": {"FIN01-01", "FIN01-02"},
 }
 
 
@@ -70,10 +75,22 @@ def main() -> int:
                 claim_ids.add(card_id)
     else:
         errors.append(f"missing claim-card ledger: {contract.get('ledger')}")
+    register_lookup: dict[str, dict] = {}
     for key in ("register", "graph"):
         path = ROOT / contract.get(key, "__missing__")
         if not path.is_file():
             errors.append(f"missing claim-card {key}: {contract.get(key)}")
+            continue
+        if key == "register":
+            register = json.loads(path.read_text(encoding="utf-8"))
+            for row in register.get("cards", []):
+                card_id = row.get("card_id")
+                if not card_id:
+                    errors.append("claim-card register contains a row without card_id")
+                elif card_id in register_lookup:
+                    errors.append(f"duplicate claim-card ID in derived register: {card_id}")
+                else:
+                    register_lookup[card_id] = row
     source_path = ROOT / contract.get("source", "__missing__")
     if source_path.is_file():
         actual_revision = "sha256:" + hashlib.sha256(source_path.read_bytes()).hexdigest()
@@ -131,6 +148,95 @@ def main() -> int:
         ):
             if needle not in rendered:
                 errors.append(f"{item['id']} missing {label}")
+
+    surface_claims = data.get("surfaceClaims", [])
+    surface_lookup: dict[str, dict] = {}
+    for binding in surface_claims:
+        surface = binding.get("surface")
+        if not surface:
+            errors.append("surface claim binding missing surface")
+            continue
+        if surface in surface_lookup:
+            errors.append(f"duplicate surface claim binding: {surface}")
+            continue
+        surface_lookup[surface] = binding
+        for key in (
+            "role", "claimCardIds", "claimSources", "publicDisposition",
+            "requiredMarkers",
+        ):
+            if not binding.get(key):
+                errors.append(f"{surface} surface claim binding missing {key}")
+        if surface not in data.get("currentSurfaces", []):
+            errors.append(f"surface claim binding is not a current surface: {surface}")
+        if binding.get("publicDisposition") != "bounded_current":
+            errors.append(f"{surface} surface disposition must remain bounded_current")
+        page = SITE / surface
+        rendered = page.read_text(encoding="utf-8", errors="replace") if page.is_file() else ""
+        for marker in binding.get("requiredMarkers", []):
+            if marker not in rendered:
+                errors.append(f"{surface} missing bound public marker {marker!r}")
+        if len(binding.get("claimCardIds", [])) != len(set(binding.get("claimCardIds", []))):
+            errors.append(f"{surface} repeats a claim-card ID")
+        source_bound_cards: set[str] = set()
+        source_paths: set[str] = set()
+        for source_binding in binding.get("claimSources", []):
+            for key in ("source", "sourceRevision", "lifecycle", "claimCardIds"):
+                if not source_binding.get(key):
+                    errors.append(f"{surface} claim source binding missing {key}")
+            source_rel = source_binding.get("source", "__missing__")
+            if source_rel in source_paths:
+                errors.append(f"{surface} repeats claim source {source_rel}")
+            source_paths.add(source_rel)
+            source = ROOT / source_rel
+            if source.is_file():
+                actual_revision = "sha256:" + hashlib.sha256(source.read_bytes()).hexdigest()
+                if source_binding.get("sourceRevision") != actual_revision:
+                    errors.append(f"{surface} claim sourceRevision drift: {source_rel}")
+            else:
+                errors.append(f"{surface} claim source is missing: {source_rel}")
+            for card_id in source_binding.get("claimCardIds", []):
+                if card_id in source_bound_cards:
+                    errors.append(f"{surface} binds {card_id} to more than one source")
+                source_bound_cards.add(card_id)
+                row = register_lookup.get(card_id)
+                if row is None:
+                    continue
+                if row.get("source_path") != source_rel:
+                    errors.append(
+                        f"{surface} source mismatch for {card_id}: "
+                        f"{source_rel} != {row.get('source_path')}"
+                    )
+                if row.get("source_lifecycle") != source_binding.get("lifecycle"):
+                    errors.append(f"{surface} lifecycle mismatch for {card_id}")
+        if source_bound_cards != set(binding.get("claimCardIds", [])):
+            errors.append(
+                f"{surface} claimSources do not cover the declared claim-card set"
+            )
+        for card_id in binding.get("claimCardIds", []):
+            row = register_lookup.get(card_id)
+            if row is None:
+                errors.append(f"{surface} binds unknown registered claim-card {card_id}")
+                continue
+            if row.get("public_state") not in {"bounded_current", "candidate"}:
+                errors.append(
+                    f"{surface} binds non-current registered claim-card {card_id} "
+                    f"({row.get('public_state')})"
+                )
+            source_path = ROOT / row.get("source_path", "__missing__")
+            if not source_path.is_file():
+                errors.append(f"{surface} claim-card source is missing for {card_id}")
+    for surface, expected_cards in REQUIRED_SURFACE_CARDS.items():
+        binding = surface_lookup.get(surface)
+        if binding is None:
+            errors.append(f"missing required surface claim binding: {surface}")
+            continue
+        actual_cards = set(binding.get("claimCardIds", []))
+        if actual_cards != expected_cards:
+            errors.append(
+                f"{surface} claim-card set drift: expected {sorted(expected_cards)}, "
+                f"got {sorted(actual_cards)}"
+            )
+
     for rel in data.get("currentSurfaces", []):
         path = SITE / rel
         if not path.is_file():

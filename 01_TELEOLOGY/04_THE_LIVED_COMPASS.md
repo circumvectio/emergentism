@@ -123,7 +123,37 @@ the cost of maintaining the model.
 When several horizons or bearers conflict, do not manufacture one total score.
 Keep the vector visible, remove dominated actions, preserve rights and minimum
 viability at every declared horizon, and prefer reversible moves that teach
-before they trap.
+before they trap. Where no harmless reversal exists, choose the smallest
+lawful commitment with an early review point and record the tragic residue.
+
+## 3B. The Finity Card — compressed decision practice
+
+**Finity Card** is the public name for this seven-prompt compression of §§1–3A.
+Here *boundary* means a predeclared observation-and-revision point at `T_S`,
+not a promise that every consequential move can be undone.
+The card neither defines the formal Finity research programme nor establishes a
+theorem, ontology, authorization, or general claim of improved outcomes.
+
+```text
+DECISION      What am I actually deciding?
+ACTUAL        What is true now, and what means are really available?
+POSSIBILITY   What remains genuinely open? What would change my map?
+FINITY        What longest responsible horizon must this serve, and what
+              shortest observable review boundary—reversible where possible—
+              can return an honest result without betraying it?
+NEXT MOVE     What is the smallest authorized real step I can take now?
+SHARED VALUE  Whose capacity may expand if this works? Who bears cost or risk?
+RECEIPT       What outcome will tell me to continue, revise, or stop? What
+              residue remains?
+```
+
+The selected practice `[S]` is to orient at `T_L`, predeclare one informative
+receipt at `T_S`, keep affected bearers visible, and let consequence revise the
+map. For material consequences, the full Justice envelope and domain-qualified
+judgment remain required. Whether this card improves decisions against a plain
+decision journal, OODA/PDCA loop, premortem, or simpler checklist remains `[C]`.
+If it adds no correction, bearer visibility, or practical value, retire the
+branding and keep only whichever simpler receipt practice performs better.
 
 ## 4. The Justice envelope
 

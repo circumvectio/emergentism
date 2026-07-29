@@ -36,6 +36,7 @@ body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
              radial-gradient(120% 80% at 6% 108%, rgba(66,165,245,.045), transparent 52%), var(--void)}
 ::selection{background:rgba(255,235,59,.26);color:#050505}
 a{color:inherit}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--void);font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%)}.skip:focus{transform:translateY(0)}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1rem,4vw,2.6rem)}
 .read{max-width:var(--read)}
@@ -104,19 +105,21 @@ details.notation pre{background:var(--void);border:1px solid var(--line-soft);bo
 </head>
 <body>
 
+<a class="skip" href="#main">Skip to content</a>
+
 <header class="topbar">
   <a class="brand" href="../">Emergent<b>ism</b></a>
   <nav class="nav" aria-label="Routes">
-    <a href="../#finity-card">Use Finity</a>
-    <a href="../plainly/">Ideas</a>
-    <a href="../record/">Research &amp; Record</a>
-    <a href="../about/" class="here" aria-current="page">About</a>
+    <a href="../practice/#frame">Practice</a>
+    <a href="../plainly/">Worldview</a>
+    <a href="../record/">Research</a>
+    <a href="../book/">Library</a>
     <a href="../contribute/">Participate</a>
     <a href="../exit/" style="opacity:.62">Exit</a>
   </nav>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
   <header class="hero read">
     <p class="fileno">About · in plain words</p>
     <h1>What this is, and <span class="gold">who answers for it</span>.</h1>
@@ -146,7 +149,7 @@ details.notation pre{background:var(--void);border:1px solid var(--line-soft);bo
   <section class="read body">
     <p class="kicker">The one lost trial</p>
     <h2>The flagship claim <b>failed</b> — and we kept the body.</h2>
-    <p>In June 2026 the framework's single cleanest novel result — a conservation law it had genuinely hoped was true — was put to a decisive test and <b>failed</b>. It was retired, dated, struck through, and left legible where anyone can read it.</p>
+    <p>In June 2026 a prominent internal candidate result — a conservation law the programme had genuinely hoped was true — was put to a decisive test and <b>failed</b>. It was retired, dated, struck through, and left legible where anyone can read it. No external novelty review is claimed.</p>
     <div class="lostbox">
       <p class="l">Trial №008 · R6 · refuted 2026-06-10</p>
       <p>The prediction was that a certain kind of "potential" would balance like the sphere; the experiment showed it stacks up in a straight line instead. Honoring that result is evidence that the internal correction procedure was used against interest; <b>it does not validate the larger framework</b>. <a href="../record/#008">Read the entry on the trial record →</a></p>
@@ -157,7 +160,7 @@ details.notation pre{background:var(--void);border:1px solid var(--line-soft);bo
     <p class="kicker">The three practices</p>
     <h2>Installable in an afternoon, <b>zero belief required</b>.</h2>
     <p>What a person can test here: <b>the sitting</b> (ten minutes of checking the map against the ground), <b>the personal trial record</b> (a one-page ledger of your own claims, with funerals), and <b>the dyadic check</b> (one question before any act that matters: does this raise me — and raise what sustains me?). They may remain useful even if every metaphysical claim here is wrong; that practical value must be judged from use, not promised in advance.</p>
-    <p><a href="../practice/">Try the practice in an afternoon →</a></p>
+    <p><a href="../practice/#frame">Frame one decision →</a></p>
   </section>
 
   <section class="read body">
@@ -207,7 +210,7 @@ Know how to act:   teleology -> Justice screen -> Pareto frontier -> explicit ti
     </details>
     <div class="cta-row">
       <a class="cta primary" href="../record/">Check the trial record →</a>
-      <a class="cta" href="../practice/">Try the practice →</a>
+      <a class="cta" href="../practice/#frame">Frame one decision →</a>
       <a class="cta" href="../plainly/">Read it plainly →</a>
       <a class="cta" href="../exit/">The exit →</a>
     </div>

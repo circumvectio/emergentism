@@ -6,6 +6,12 @@
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+  const QUESTION_FILTERS = {
+    "ready-to-freeze": (question) => question.executionState === "ready-to-freeze",
+    "component-contact": (question) => question.maturityState === "component-supported",
+    "row-by-row": (question) => question.executionState === "row-by-row-only",
+    "deferred": (question) => question.programState === "deferred"
+  };
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -119,7 +125,7 @@
     gaps.slice(0, 6).forEach((question) => {
       const card = element("a", "gap-card");
       card.href = `../lab/#${question.id}`;
-      card.append(element("span", "gid", `${question.id} · ${question.status}`));
+      card.append(element("span", "gid", `${question.id} · ${question.maturityState}`));
       card.append(element("h4", "", question.shortTitle));
       card.append(element("p", "", question.nextMilestone));
       wall.append(card);
@@ -156,29 +162,36 @@
     renderGapCards(selected.id, map.openQuestions);
   }
 
-  function statusColor(status) {
+  function maturityColor(maturityState) {
     return {
-      "ready-to-freeze": "#c99b32",
-      "component-contact": "#2c7a70",
-      "formal-only": "#244a8d",
-      "deferred": "#765b9c"
-    }[status] || "#8b8d91";
+      "typed": "#244a8d",
+      "packet-complete": "#c99b32",
+      "evidence-open": "#5f78a8",
+      "component-supported": "#2c7a70",
+      "independently-replicated": "#4f9f79",
+      "narrowed": "#8f7540",
+      "killed": "#944f53",
+      "deferred": "#765b9c",
+      "frozen": "#6b707a"
+    }[maturityState] || "#8b8d91";
   }
 
   function renderQuestionCard(question) {
     const card = element("article", "question-card");
     card.id = question.id;
-    card.dataset.status = question.status;
+    card.dataset.executionState = question.executionState;
+    card.dataset.maturityState = question.maturityState;
+    card.dataset.programState = question.programState;
     card.dataset.registers = question.registers.join(" ");
-    card.style.setProperty("--status-color", statusColor(question.status));
+    card.style.setProperty("--status-color", maturityColor(question.maturityState));
     const top = element("div", "question-top");
     top.append(element("span", "question-id", `${question.id} · priority ${question.priority}`));
-    top.append(element("span", "status", question.status.replaceAll("-", " ")));
+    top.append(element("span", "status", `${question.maturityState.replaceAll("-", " ")} · ${question.programState}`));
     card.append(top);
     card.append(element("h3", "", question.title));
     card.append(element("p", "question", question.question));
     const details = element("dl", "");
-    [["Next", question.nextMilestone], ["Moves", question.moves], ["Kill", question.kill], ["Register", question.registers.join(" · ")]].forEach(([term, value]) => {
+    [["Maturity", question.maturityState], ["Execution", question.executionState], ["Program", question.programState], ["Next", question.nextMilestone], ["Moves", question.moves], ["Kill", question.kill], ["Register", question.registers.join(" · ")]].forEach(([term, value]) => {
       details.append(element("dt", "", term));
       details.append(element("dd", "", value));
     });
@@ -215,10 +228,18 @@
     $$("[data-filter]").forEach((button) => {
       button.addEventListener("click", () => {
         const filter = button.dataset.filter;
+        const predicate = QUESTION_FILTERS[filter];
         $$("[data-filter]").forEach((item) => item.setAttribute("aria-pressed", String(item === button)));
-        $$(".question-card", grid).forEach((card) => { card.hidden = filter !== "all" && card.dataset.status !== filter; });
+        $$(".question-card", grid).forEach((card) => {
+          if (filter === "all") {
+            card.hidden = false;
+            return;
+          }
+          const question = questions.find((item) => item.id === card.id);
+          card.hidden = !question || !predicate || !predicate(question);
+        });
         const notice = $("#lab-scope");
-        if (notice) notice.textContent = filter === "all" ? "Showing all eleven packet-complete, evidence-open questions." : `Showing ${filter.replaceAll("-", " ")} questions.`;
+        if (notice) notice.textContent = filter === "all" ? "Showing all eleven questions; maturity, exact execution requirement, and programme state remain distinct." : `Showing ${button.textContent.trim().toLowerCase()} questions without changing their exact source states.`;
       });
     });
   }
