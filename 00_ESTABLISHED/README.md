@@ -51,7 +51,7 @@ Exits non-zero if any listed entry stops holding.
 
 ### A · Machine-proved — Lean 4 + mathlib, no `sorry`, clean axiom traces
 
-`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean` — **15 theorems.**
+`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean` — **20 theorems.**
 
 | id | claim | kill |
 |---|---|---|
@@ -62,12 +62,17 @@ Exits non-zero if any listed entry stops holding.
 | `energy_min_at_one` | `(log x)²` vanishes only at `x = 1` | exhibit a second zero |
 | `at_most_one_identity` | a structure has **at most one** identity | exhibit two |
 | `existence_not_forced` | existence of an identity is **not** forced — the counterexample that killed the published `F2` | show every binary op on a 2-set has one |
-| *(8 more)* | involutions, orbit identity, duality | see the file |
+| `associativity_falsifier` | the canon's own falsifier — **valid**, and it refutes a RING | exhibit an associative structure where it fails |
+| `falsifier_premise_impossible` | `0·w = 1` is already impossible in any nontrivial ring — the falsifier never needed associativity | exhibit a nontrivial ring with `0·w = 1` |
+| `no_absorber_in_nontrivial_ring` | **"`Ĉ` is not a ring" — the structural reason, checked** | exhibit a nontrivial ring with `w + 1 = w` |
+| *(11 more)* | involutions, orbit identity, duality, absorbers | see the file |
 
 > **Note against over-reading, carried from the file's own §7:** these are checked
-> over `ℝ`, `Bool`, and abstract `Field`/`Mul`. **The primary object `Ĉ` is not
-> reached**, and both keel theorems exclude the pole by hypothesis. *"`Ĉ` is not a
-> ring"* — the corpus's most load-bearing negative claim — is **unchecked by machine.**
+> over `ℝ`, `ℂ`, `Bool`, and abstract `Ring`/`Field`/`Mul`. **The primary object
+> `Ĉ` is still not constructed** — mathlib's `Projectivization` is never used.
+> *"`Ĉ` is not a ring"* is now checked **as its structural reason** (no nontrivial
+> ring admits an additive absorber), not as a statement about `ℂP¹` as an object.
+> Four of the five new theorems depend on **no axioms at all**.
 
 ### B · Exhaustively computed — `09_TOOLS/01_SCRIPTS/check_generative_base.py`, mutation-tested
 

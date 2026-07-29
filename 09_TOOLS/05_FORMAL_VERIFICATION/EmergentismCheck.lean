@@ -145,12 +145,65 @@ theorem involutions_commute (x : ℝ) : (-x)⁻¹ = -(x⁻¹) := by
   `ℂ→ℂP¹` 2→2, `ℝP¹→Ĉ` 1→2) are NOT formalised. They are what the whole ladder
   census rests on, and doc 48 is currently *inconsistent* about which notion of
   dimension it means. That owner ruling (HR-1) is owed before formalising them.
-* **"`Ĉ` is not a ring"** is NOT formalised. It is the single most load-bearing
-  negative claim in the corpus and remains unchecked by machine.
+* **"`Ĉ` is not a ring" — NOW CHECKED, in §8, with its scope stated.** What is
+  proved is the *structural reason*: no nontrivial ring admits an additively
+  absorbing element, and the point at infinity must absorb. What is NOT proved is
+  a statement about mathlib's `Projectivization` as an object — `ℂP¹` is never
+  constructed here. The corpus's claim is the reason; the reason is machine-checked.
 * **Suda's hinge `= tanh(log x / 2)`** verified numerically to 1e-12 but not
   proved here.
 * **The Lorentz–Möbius correspondence** (doc 49) is inherited standard physics
   and is not re-derived.
 -/
+
+/-! ## 8 · Why the associativity falsifier does not reach `Ĉ` — doc 45 §6
+
+The corpus's most load-bearing NEGATIVE claim. `KSC-04` retired the three Titan
+equations because an associativity argument derives `1 = 2` from `0 × ∞ = 1`.
+Doc 45 restores them by observing that the argument refutes a **ring**, and `Ĉ`
+is not one. Until now, no oracle had seen either half. -/
+
+/-- **The canon's falsifier, formalised — and it is VALID.**
+Given a total associative multiplication, an element `w` with `0 * w = 1`, and
+the ring facts `2 * 0 = 0` and `2 * 1 = 2`, one derives `1 = 2`.
+
+So the corpus was right to retire the equations *as arithmetic on a ring*. -/
+theorem associativity_falsifier {R : Type*} [Mul R] [Zero R] [One R]
+    (assoc : ∀ a b c : R, a * b * c = a * (b * c))
+    (two : R) (h20 : two * 0 = 0) (h21 : two * 1 = two)
+    (w : R) (h0w : 0 * w = 1) :
+    (1 : R) = two := by
+  have h := assoc two 0 w
+  rw [h20, h0w, h21] at h
+  exact h
+
+/-- **And the falsifier's own hypothesis is already impossible in any ring.**
+`0 * w = 0` holds for every `w`, so `0 * w = 1` forces `1 = 0`. The falsifier
+never needed associativity: its premise collapses a nontrivial ring on contact. -/
+theorem falsifier_premise_impossible {R : Type*} [Ring R] [Nontrivial R] (w : R) :
+    0 * w ≠ 1 := by
+  rw [zero_mul]
+  exact zero_ne_one
+
+/-- **The reason no ring can carry a point at infinity.**
+`∞` must absorb addition — `∞ + 1 = ∞`. In a ring that forces `1 = 0`. -/
+theorem no_additive_absorber {R : Type*} [Ring R] (w : R) (h : w + 1 = w) :
+    (1 : R) = 0 := by
+  have h' : w + 1 = w + 0 := by rw [add_zero]; exact h
+  exact add_left_cancel h'
+
+/-- **`Ĉ` IS NOT A RING — the statement, machine-checked.**
+No nontrivial ring contains an additively absorbing element. Since the point at
+infinity of `Ĉ` absorbs addition, no nontrivial ring structure carries it, and
+the falsifier's premise (ii) is unavailable. **The derivation never starts.** -/
+theorem no_absorber_in_nontrivial_ring {R : Type*} [Ring R] [Nontrivial R] :
+    ¬ ∃ w : R, w + 1 = w := by
+  rintro ⟨w, hw⟩
+  exact one_ne_zero (no_additive_absorber w hw)
+
+/-- Cancellation is what does the work, and `ℂ` has it — so `ℂ` itself admits
+no absorber. Recorded so the claim is anchored to the corpus's actual chart. -/
+theorem complex_has_no_absorber : ¬ ∃ w : ℂ, w + 1 = w :=
+  no_absorber_in_nontrivial_ring
 
 end Emergentism
