@@ -19,6 +19,28 @@ not a cosmic census: exactly seven applies to the kernel map, not to nature.
 Nothing here is a commandment. A refusal binds the holder; a revelation asks
 the reader to check its receipt; the Record keeps the losses visible.
 
+## The three reading tiers — where to look before the seven surfaces
+
+The seven surfaces below say **who owns what**. These three manifests say **how
+finished it is**. Both are needed: a reader who knows the owner but not the tier will
+quote a conjecture as a result.
+
+| tier | manifest | holds |
+|---|---|---|
+| **Established** | `00_ESTABLISHED/README.md` | only what a machine or an exhaustive computation verifies, with a command that re-checks every entry |
+| **Work in progress** | `00_WORK_IN_PROGRESS/README.md` | what is open, and what each item is waiting on — open owner rulings, the live claim queue, and what is specified but unrun |
+| **Archive** | `90_ARCHIVE/` | what is superseded, kept with provenance and a `superseded_by:` pointer; 24 subdirectories |
+
+**None of the three owns anything.** Each is an index that points at the owner, and
+each may be re-checked: `bash 09_TOOLS/01_SCRIPTS/gate.sh` validates the first two
+against the corpus they describe and fails if either has drifted.
+
+**Why the middle tier exists.** Without it, everything not yet established looked
+either finished or dead. An open question filed beside a settled one reads as settled;
+an open question filed nowhere reads as forgotten.
+
+---
+
 ## The seven surfaces
 
 | # | Surface | Canonical owner | Standing |
