@@ -49,3 +49,6 @@ out/
 # Local Codex Animation Shots
 .codex-animation-shots/
 
+# Machine-local agent settings (permissions, paths). launch.json IS tracked:
+# it lets any session start the site preview for visual verification.
+.claude/settings.local.json

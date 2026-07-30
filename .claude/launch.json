@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "emergentism-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8747", "--directory", "12_PUBLIC_SITE"],
+      "port": 8747
+    }
+  ]
+}
