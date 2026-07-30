@@ -210,9 +210,17 @@ them opens by denying that it dissolves anything.</li>
 
 <h2>Check it yourself</h2>
 
-<pre><code>python3 09_TOOLS/01_SCRIPTS/gate.sh          # every checker, exits non-zero on failure
-python3 09_TOOLS/01_SCRIPTS/check_generative_base.py
-python3 09_TOOLS/01_SCRIPTS/check_established.py</code></pre>
+<pre><code>git clone https://github.com/Menexus-GmbH/emergentism.git
+cd emergentism
+
+bash    09_TOOLS/01_SCRIPTS/gate.sh                  # every checker; exits non-zero on failure
+python3 09_TOOLS/01_SCRIPTS/check_generative_base.py # recomputes G1-G10 by exhaustion
+python3 09_TOOLS/01_SCRIPTS/check_established.py     # re-checks this page's claims</code></pre>
+
+<p><small><strong>Corrected 2026-07-30.</strong> This block previously ran <code>gate.sh</code>
+with <code>python3</code>. It is a bash script, so the first command on the only page that
+asks you to check anything <em>failed on its first line.</em> Found by an audit of this site,
+not by us running it. The repository URL was missing too.</small></p>
 
 <p>The base half is recomputed from scratch on every run. The Lean half is verified
 structurally here &mdash; the proofs were run once and the build output is on record, but a
