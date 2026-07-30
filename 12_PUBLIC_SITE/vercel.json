@@ -132,7 +132,6 @@
     { "source": "/paradox/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
     { "source": "/memetic/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
     { "source": "/rosettad/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/rosetta/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
     { "source": "/operators/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
     { "source": "/will/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
     { "source": "/value/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },

@@ -43,8 +43,12 @@
     ".bookbar #atlas-fab{position:static;right:auto;bottom:auto;z-index:auto;flex:0 0 auto;width:48px;height:48px;",
     "padding:0;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:0;line-height:1;opacity:1}",
     ".bookbar #atlas-fab::before{content:'☰';font-size:18px;line-height:1;color:inherit}",
-    "@media(max-width:680px){.bookbar #atlas-fab{display:none}body.dimension-page #atlas-fab{display:none}",
-    "body:not(.dimension-page) > #atlas-fab{display:none}",
+    // 2026-07-30: this block used to hide the FAB in all three placements at <=680px,
+    // which left every phone visitor with NO search across 368 pages. The three
+    // declarations after it exist to style a mobile FAB, so the hiding was clearly
+    // unintended. Only the .bookbar duplicate is suppressed now — that placement has
+    // its own bar which collapses on mobile — and the body-level FAB survives.
+    "@media(max-width:680px){.bookbar #atlas-fab{display:none}",
     "#atlas-fab{right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);",
     "width:48px;height:48px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;",
     "font-size:0;line-height:1}#atlas-fab::before{content:'☰';font-size:20px;line-height:1;color:inherit}}"
