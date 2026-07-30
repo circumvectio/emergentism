@@ -29,13 +29,56 @@ FORBIDDEN = {
     "derived ethic inflation": re.compile(r"ethic(?:s)?\s+(?:falls?|follow(?:s|ed)?)\s+(?:directly\s+)?(?:out\s+of|from)\s+(?:the\s+)?arithmetic", re.I),
     "exclusive ethic inflation": re.compile(r"the only lawful move", re.I),
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
+    # SPLIT 2026-07-30. These were one rule. They are not one claim.
+    #
+    # The SYMBOL form is a theorem inside a declared structure: on Ĉ = ℂP¹ with the
+    # coupled parametrization ν = tan(θ/2), φ = cot(θ/2), the product is 1 at every
+    # colatitude including both polar limits, because • and ○ are the two ends of a
+    # single ι-orbit and therefore NOT free factors (45_THE_TITAN_INVERSION_STRUCTURE
+    # §4–§5, [A]). Banned UNQUALIFIED, because unqualified it reads as the field
+    # claim. Permitted when the page carries the coupling AND denies the field
+    # reading — see TITAN_FENCE below.
     "forbidden Titan infix arithmetic": re.compile(
         r"(?:⊙\s*=\s*•\s*(?:×|x|\*)\s*○|"
-        r"•\s*(?:×|x|\*)\s*○\s*(?:=|→)\s*⊙|"
-        r"1\s*=\s*0\s*(?:×|x|\*)\s*∞)"
+        r"•\s*(?:×|x|\*)\s*○\s*(?:=|→)\s*⊙)"
     ),
+    # The FIELD form is the thing D0 denies outright: no field theorem says 0 times
+    # infinity equals 1. NEVER escapable, at any tier, with any fence.
+    "field arithmetic claim": re.compile(r"1\s*=\s*0\s*(?:×|x|\*)\s*∞"),
     "retired evidence tier": re.compile(r"\[E\]"),
 }
+
+# A current surface may state ⊙ = • × ○ only when BOTH halves of its fence appear in
+# the text IMMEDIATELY BEFORE it. One without the other is the misreading the rule
+# exists to stop: the coupling alone still lets a reader take it for field arithmetic,
+# and the denial alone leaves the identity unexplained.
+#
+# PROXIMITY, NOT PAGE-LEVEL, and deliberately so. 09_TOOLS/01_SCRIPTS/claim_policy.py
+# already governs this same identity for claim cards and books, and admits a barred
+# pattern only when a negation sits within the 180 characters BEFORE the match. A
+# page-level "the fence is somewhere on this page" escape would be looser than the
+# policy the rest of the corpus is held to, and would let a fenced paragraph license
+# an unfenced one 400 lines away. The window here is wider (600) because these are
+# HTML surfaces where markup inflates the distance, but the discipline is the same:
+# THE FENCE COMES FIRST.
+# These are HTML surfaces, so every symbol has two spellings — literal `φ` and the
+# entity `&phi;` — and the fence must recognise both. Matching only the literal form
+# rejected a correctly fenced paragraph purely for being written in entities.
+_PHI = r"(?:φ|&phi;)"
+_NU = r"(?:ν|&nu;)"
+_IOTA = r"(?:ι|&iota;|iota)"
+_THETA = r"(?:θ|&theta;)"
+_DOT = r"(?:·|&middot;|×|&times;|\*)"
+
+TITAN_FENCE_WINDOW = 900  # markup inflates the distance; prose alone would need ~300
+TITAN_FENCE = (
+    # (a) the constraint that makes the factors non-free
+    re.compile(rf"{_IOTA}\s*(?:-|&minus;|&ndash;)?\s*orbit|not\s+free|"
+               rf"{_PHI}\s*{_DOT}\s*{_NU}\s*=\s*1|tan\(\s*{_THETA}\s*/\s*2\s*\)", re.I),
+    # (b) the denial of the field reading
+    re.compile(r"no field theorem|not a field theorem|licenses no|no ontology|"
+               r"indeterminate only when|not a restored warrant|not field arithmetic", re.I),
+)
 
 REQUIRED_PUBLIC_CONTRACTS = {
     "index.html": ("A worldview for finite beings", "Frame one decision"),
@@ -247,6 +290,26 @@ def main() -> int:
             if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
             if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
+                continue
+            # The Titan identity is a theorem inside a declared structure, so an
+            # occurrence is admissible when its fence PRECEDES it. Without this the
+            # corpus could not state its own [A] result on any indexed page — it
+            # survived only where nothing is indexed.
+            if name == "forbidden Titan infix arithmetic":
+                unfenced = []
+                for m in pattern.finditer(text):
+                    prefix = text[max(0, m.start() - TITAN_FENCE_WINDOW):m.start()]
+                    if all(f.search(prefix) for f in TITAN_FENCE):
+                        continue
+                    missing = ("coupling (ι-orbit / φ·ν = 1)"
+                               if not TITAN_FENCE[0].search(prefix)
+                               else "field-reading denial (e.g. 'no field theorem')")
+                    unfenced.append((text.count("\n", 0, m.start()) + 1, missing))
+                for line, missing in unfenced:
+                    errors.append(
+                        f"{rel}:{line}: {name} — the {missing} must appear in the "
+                        f"{TITAN_FENCE_WINDOW} characters before it"
+                    )
                 continue
             scan_text = text
             if name == "quantum-gravity solution inflation":
