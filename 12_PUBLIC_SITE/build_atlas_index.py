@@ -41,7 +41,10 @@ def is_current(path: Path) -> bool:
 
 # (section key, label, list of page dirs) — overview surfaces, curated order.
 OVERVIEW = [
-    ("start", "Start and practice", ["", "practice", "plainly", "record", "book", "about", "exit"]),
+    # /established/ and /read/ were declared current surfaces but appeared in no section
+    # list, so the drawer could not find them by search. Found by searching for
+    # "established" on production and getting zero hits.
+    ("start", "Start and practice", ["", "practice", "plainly", "established", "record", "read", "book", "about", "exit"]),
     ("unfolding", "The Unfolding · D0–D6", ["0", "1", "2", "3", "4", "5", "6"]),
     ("method", "Map and method", ["dimensions", "axioms", "check", "rosetta", "ecology", "journey", "fable", "compass"]),
     ("participate", "Open research", ["map", "lab", "contribute"]),
@@ -109,6 +112,24 @@ def main() -> int:
         "total": total,
         "tree": tree,
     }
+    # --check exists because this artifact went stale unnoticed: /established/ and /read/
+    # were added to currentSurfaces and the index was never rebuilt, so the drawer's
+    # search returned zero hits for the site's own flagship page.
+    import sys as _sys
+    if "--check" in _sys.argv[1:]:
+        if not OUT.exists():
+            print("ATLAS INDEX: FAIL\n- atlas/site_index.json has not been built")
+            return 1
+        on_disk = json.loads(OUT.read_text(encoding="utf-8"))
+        for key in ("total", "tree", "status"):
+            if on_disk.get(key) != payload.get(key):
+                print(f"ATLAS INDEX: FAIL\n- '{key}' differs from what the manifest and "
+                      f"section lists now produce. Rebuild: python3 -B build_atlas_index.py")
+                return 1
+        print(f"ATLAS INDEX: PASS ({total} current pages in {len(tree)} sections; "
+              f"matches public_semantic_parity.json)")
+        return 0
+
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"site_index.json: {total} pages in {len(tree)} sections -> {OUT.relative_to(ROOT)}")
     return 0

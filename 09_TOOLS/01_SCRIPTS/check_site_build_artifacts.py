@@ -4,6 +4,9 @@
 Two artifacts in 12_PUBLIC_SITE are generated from manifests and would otherwise rot
 silently:
 
+  atlas/site_index.json      the current-surface search index. It DID go stale: two
+                             declared current surfaces were absent, so searching for
+                             the site's own flagship page returned nothing.
   atlas/library_index.json   the 292-document frozen-library search index, built from
                              reading-manifest.json. Stale = search misses documents.
   sw.js's CACHE constant     derived from the bytes of every current surface and cached
@@ -17,7 +20,7 @@ import subprocess, sys
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[2] / "12_PUBLIC_SITE"
-BUILDERS = ("build_library_index.py", "build_sw_version.py")
+BUILDERS = ("build_atlas_index.py", "build_library_index.py", "build_sw_version.py")
 
 
 def main() -> int:

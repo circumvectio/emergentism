@@ -23,7 +23,7 @@
   ],
   "withheldRegistry": "withheld-routes.json"
  },
- "total": 37,
+ "total": 39,
  "tree": [
   {
    "key": "start",
@@ -42,8 +42,16 @@
      "title": "Emergentism, plainly — the whole idea in ordinary words"
     },
     {
+     "href": "/established/",
+     "title": "What Is Established"
+    },
+    {
      "href": "/record/",
      "title": "The Trial Record"
+    },
+    {
+     "href": "/read/",
+     "title": "Read the Framework — The Complete Public Reading Path"
     },
     {
      "href": "/book/",
@@ -187,7 +195,7 @@
     },
     {
      "href": "/discoveries/paradoxes/",
-     "title": "One lens, twenty-six trials"
+     "title": "One lens, twenty-one trials"
     },
     {
      "href": "/discoveries/reality-gradient/",
