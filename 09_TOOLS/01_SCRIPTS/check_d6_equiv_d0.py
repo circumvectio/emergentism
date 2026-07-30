@@ -13,12 +13,12 @@ The default stance (Path B from receipt 189) is the corpus's stricter reading:
 - TILDE forms of D6 ~ D0 are PERMITTED, marked `[I]` for the boundary-role reading.
 
 A single constant at the top of the file — `CANONICAL_OWNER_FILE` — names the one
-file the K2 may ratify as the canonical statement of the relation (Path A in
+file the owner may ratify as the canonical statement of the relation (Path A in
 receipt 189). The literal form is then permitted ONLY in that file and only inside
 the canonical quoted statement. By default the file is empty, so the literal form
 is forbidden everywhere.
 
-K2 may also ratify the closure under a non-literal form (e.g., as a wrap, a
+The owner may also ratify the closure under a non-literal form (e.g., as a wrap, a
 boundary, or a `[S]`-marked compactification). The fence encodes the corpus's
 existing stance, not a new claim.
 
@@ -32,7 +32,6 @@ Mutation tests (run with --test-mutations):
   MUT-4  the canonical owner file is set but the canonical
          statement is missing                                    -> FAIL
 
-Co-Authored-By: Mavis <Mavis@skyzai.org>
 """
 
 from __future__ import annotations
@@ -43,7 +42,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# --- K2 disposition -----------------------------------------------------------
+# --- owner disposition -----------------------------------------------------------
 # The default is Path B (no literal anywhere). To ratify Path A — the closure as
 # canonical — set this to the file that holds the canonical statement, and ensure
 # that file's canonical quoted statement is present. Leave None to enforce the
@@ -140,7 +139,7 @@ def check_live_surfaces() -> list[str]:
                 continue
             errors.append(
                 f"{rel}:{lineno}: literal D6/D0 equivalence on a live surface. "
-                f"Use the tilde form (D6~D0) with [I], or get K2 ratification. "
+                f"Use the tilde form (D6~D0) with [I], or get an owner ruling. "
                 f"Line: {line.strip()[:120]!r}"
             )
     return errors
@@ -212,7 +211,7 @@ def main() -> int:
         print("D6/D0 FENCE: FAIL")
         print(
             f"Literal D6/D0 equivalence on {len(errors)} live surface(s). "
-            "Use D6~D0 [I], or K2-ratify a canonical statement and set "
+            "Use D6~D0 [I], or have the owner ratify a canonical statement and set "
             "CANONICAL_OWNER_FILE in this script."
         )
         for e in errors:

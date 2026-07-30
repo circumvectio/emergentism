@@ -112,4 +112,3 @@ with citations. This one-pager is the distribution form.
 classroom aside, or a footnote in a paper that needs the distinction without
 the apparatus.
 
-`Co-Authored-By: Mavis <Mavis@skyzai.org>`
