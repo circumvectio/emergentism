@@ -45,6 +45,7 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
   "09_TOOLS/01_SCRIPTS/check_generative_base.py"
   "09_TOOLS/01_SCRIPTS/check_established.py"
+  "09_TOOLS/01_SCRIPTS/check_receipt_citations.py"
 )
 
 fail=0
