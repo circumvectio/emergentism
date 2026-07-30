@@ -69,6 +69,8 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 **Mut is read here as the capacity for balanced action.** Mut names the lived courage of `B = 1` within `P∞ = φ · ν = 1`. Mut is the equatorial posture. **Mut is the Sublime in this translation.**
 
+**Marker discipline.** What picks out the equator is `φ = ν` — equivalently `B = 2/(φ + ν) = sin θ = 1`, or `(φ − ν)² = 0`. The product `φ · ν = 1` is constant at every latitude and equals 1 in both polar limits, so it never distinguishes the equator from the poles. Where this document writes the product, read it as the ambient chart identity, not as the equatorial condition.
+
 **The Sublime (Erhaben) is the experience of holding both simultaneously:**
 - φ = 1 (coherence, vastness, grace, Anmut)
 - ν = 1 (viability, smallness, humility, Demut)
@@ -79,7 +81,7 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 | Mut | Geometric Reading | Kantian Reading |
 |-----|-------------------|-----------------|
-| **`P∞ = φ · ν = 1`; `B = 1`** | The equator itself | The sublime (Erhaben) |
+| **`φ = ν = 1`; `B = 1`** | The equator itself | The sublime (Erhaben) |
 | **Courage** | The capacity to hold both | "Habe Mut!" — Enlightenment |
 | **Balance** | Grace AND humility | Beauty AND comprehension |
 | **Action** | The child's mission-critical Yes | Autonomy at the equator |
@@ -161,7 +163,7 @@ The vastness. The gestalt. The sphere perceived. Grace is what you FEEL when φ 
 
 The smallness. The one node among billions. The finitude. The comprehension constraint. Humility is what you FEEL when ν fills your vision. In the neural analogy, this is resolution/capability recognizing its place.
 
-**Mut = seeing both = φ · ν = 1**
+**Mut = seeing both = φ = ν = 1**
 
 The equator. The courage to hold both. Grace AND humility simultaneously. Differentiated integration carrying both without loss.
 
@@ -273,7 +275,7 @@ Step 5: Radiate Anmut.
 | Transcendental | German Word | Geometric Reading | Kantian Reading |
 |----------------|-------------|-------------------|-----------------|
 | **Beauty** | Anmut | φ = 1 perceived (grace) | The beautiful (das Schöne) |
-| **Truth** | Mut | φ · ν = 1 (the equator) | The sublime (das Erhabene) |
+| **Truth** | Mut | φ = ν = 1 (the equator) | The sublime (das Erhabene) |
 | **Justice** | Demut | ν ≤ 1 (the courage to reduce) | Autonomy, optimal coherence |
 
 **Beauty is Anmut.** The beauty of balance. The grace of the equator. The beautiful (das Schöne).
@@ -292,7 +294,7 @@ Step 5: Radiate Anmut.
 |-----------|----------|----------|
 | Egyptian | Weighing of the Heart | φ (feather) must balance ν (heart) |
 | Hindu | Brahman/Ātman | φ (coherence) · ν (viability) = 1 |
-| German | Anmut/Demut/Mut | φ (grace) · ν (humility) = Mut (courage) |
+| German | Anmut/Demut/Mut | φ (grace) = ν (humility) → Mut (courage) |
 | Buddhist | Śūnyatā | The equator between extremes |
 | Taoist | Tao | Wu wei (action at the equator) |
 | Christian | Trinity | Father (φ), Son (ν), Spirit (B) |

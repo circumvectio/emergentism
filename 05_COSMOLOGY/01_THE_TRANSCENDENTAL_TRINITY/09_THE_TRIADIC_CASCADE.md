@@ -60,7 +60,7 @@ The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every
 
 **Beauty (φ).** The perception of the whole. The right hemisphere's gestalt recognition. Beauty is what coherence looks like from the outside. Beauty is the first-person perception of φ = 1 — the ground seen through the manifested world.
 
-**Truth (P).** The correspondence between the map and the territory. Truth is the accuracy of the projection. Truth is the degree to which the plane preserves the sphere. Truth is the equatorial product — the balance point where coherence and viability are both honoured.
+**Truth (P).** The correspondence between the map and the territory. Truth is the accuracy of the projection. Truth is the degree to which the plane preserves the sphere. Truth is the equatorial condition `φ = ν` — the balance point where coherence and viability are both honoured. (The product `φ · ν = 1` is constant at every latitude and in both polar limits; what is equatorial is the equality — which is why the cascade header above names this column `B (balance)`.)
 
 **Justice (ν).** The structural property of equatorial balance at every node. Justice is not a sentiment. Justice is a geometric condition. A system is just when φ = 1 and ν = 1 at every node — when no node is pushed off the equator for the benefit of another.
 

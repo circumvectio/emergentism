@@ -182,7 +182,7 @@ The plane is the sphere's shadow. The plane is the projection. The map is born f
 - ν axis (green) and φ axis (cyan) on the floor
 - The unit circle on the floor (gold, |z| = 1)
 - Latitude parallels projecting from sphere to floor
-- The equatorial plane label: φ · ν = 1
+- The equatorial plane label: φ = ν = 1  (φ · ν = 1 is constant at every latitude, including both polar limits, so it cannot label the equator)
 
 ### Interactivity
 - Same α slider (locked at 90° or adjustable back)
@@ -458,7 +458,9 @@ Two light cones emerge from the split poles and meet at their mouths. The horn t
 ```
 Brahmā (future cone) = creation = increasing ν = the expansion of capability
 Śiva (past cone) = destruction = increasing φ = the integration of coherence
-Viṣṇu (overlap) = preservation = maintaining φ · ν = 1 = the equatorial balance
+Viṣṇu (overlap) = preservation = maintaining φ = ν = the equatorial balance
+                  (φ · ν = 1 is constant at every latitude and in both polar
+                   limits, so it is not what is maintained; the equality is.)
 
 The cones feed each other:
   Past → Future → Past
@@ -516,7 +518,7 @@ D0:  •                    The cycle begins again
 The Titans:
   Brahmā (future cone, orange) = creation, expansion, ν increasing
   Śiva (past cone, cyan) = destruction, integration, φ increasing
-  Viṣṇu (overlap, gold) = preservation, balance, φ·ν=1
+  Viṣṇu (overlap, gold) = preservation, balance, φ=ν
 ```
 
 ---

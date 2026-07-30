@@ -181,7 +181,7 @@ Minimum beauty: B → 0 (poles)
 
 The golden ratio φ ≈ 1.618 appears throughout nature and art.
 
-On the Burri Sphere, φ = 1 is the equator. But the **ratio** of φ/ν = 1 everywhere.
+On the Burri Sphere, φ = ν = 1 is the equator. But it is the **product** φ · ν that equals 1 everywhere; the *ratio* φ/ν = cot²(θ/2) equals 1 only at the equator.
 
 The golden-ratio echo is suggestive, not a formal proof of beauty. It appears
 when considering **successive approximations** to the equator:

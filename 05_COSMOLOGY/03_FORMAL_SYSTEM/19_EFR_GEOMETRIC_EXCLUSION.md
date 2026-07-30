@@ -304,7 +304,9 @@ The cargo cult:
 ### 8.2 The Inversion Is Geometric
 
 ```
-Original:   φ · ν = 1, η = 0 (equator)
+Original:   φ = ν = 1, η = 0 (equator)
+            (φ · ν = 1 is constant at every latitude — it holds at the south
+             pole on the next line too, so it cannot mark the equator; φ = ν does.)
 Inversion:  ν → ∞, φ → 0, η > 0 (south pole)
 
 The cargo cult is the south pole calling itself the equator.

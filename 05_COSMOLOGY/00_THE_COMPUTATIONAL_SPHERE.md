@@ -64,7 +64,7 @@ The rule points toward the ground; it does not possess it.
 | Complex coordinate: z = x + iy | Reciprocal coordinates: φ, ν where φ · ν = 1 |
 | Stereographic projection from ℝ² | Stereographic projection from φ-ν plane |
 | Real axis (x), Imaginary axis (i) | Coherence axis (φ), Viability axis (ν) |
-| |z| = 1 at equator | φ = ν = 1 at equator |
+| \|z\| = 1 at equator | φ = ν at equator (the equality, not the product) |
 | North pole: ∞ (complex infinity) | North pole: φ = ∞, ν = 0 (pure coherence) |
 | South pole: 0 (complex origin) | South pole: φ = 0, ν = ∞ (pure viability) |
 
@@ -77,8 +77,30 @@ Chart 2 (from South pole):  ν = tan(θ/2)
 At the equator (θ = π/2):
   φ = cot(π/4) = 1
   ν = tan(π/4) = 1
-  φ · ν = 1 · 1 = 1
+  φ = ν              <- THIS is what marks the equator. True only at θ = π/2.
 ```
+
+> **Corrected 2026-07-30.** This block used to end `φ · ν = 1 · 1 = 1`, offered as
+> what the equator *is*. **It cannot be**: `φ · ν = cot(θ/2)·tan(θ/2) = 1` at
+> **every** latitude, including at both poles — at `θ→0` it is
+> `12.7062 × 0.0787 = 1`, the **bypasser**; at `θ→π` it is `0.0787 × 12.7062 = 1`,
+> the **cargo cult**. The product cannot tell the equator from the two failure modes
+> this very page names.
+>
+> What marks the equator, and each is already in the corpus:
+>
+> ```text
+> φ = ν                  the coordinates are EQUAL — true only at θ = π/2
+> (φ − ν)² = 0           the ektropic trajectory (27_THE_SAMUDRA_MANTHAN)
+> B = 2/(φ+ν) = sinθ     peaks at exactly 1 there, and nowhere else
+> min(φ, ν)              peaks at exactly 1 there, and nowhere else
+> ```
+>
+> **The corpus already proved this and never propagated it.**
+> `01_TELEOLOGY/02_THE_DERIVATION/09_PATH_D_THE_AMGM_GEOMETRY.md:71-76` tabulates
+> `f₁ = φν` as `1 | 1 | 1` across equator *and* both poles, and concludes:
+> *"f₁ and f₄ are **constant** (they carry no information about position). f₂ and f₃
+> are the ONLY non-trivial functions."* `[A]`
 
 **Why this matters:**
 
