@@ -37,7 +37,11 @@ RECEIPT_DIRS = (
 
 # Items that are open as of 2026-07-30. Removing one from the manifest requires a
 # ruling to point at; this list is what makes "it went quiet" insufficient.
-MUST_STAY_LISTED = ["§5.1", "G-0", "GP-03", "04_AXIOLOGY", "06_ONTOLOGY"]
+# G-0 was removed from this list on 2026-07-30 because it was RULED on 2026-07-29 and
+# the manifest had been listing it as open — the guard was pinning a stale entry, which
+# is the mirror of the failure it exists to prevent. It stays referenced in the manifest
+# as CLOSED, and the checker below verifies that rather than its openness.
+MUST_STAY_LISTED = ["§5.1", "GP-03", "04_AXIOLOGY", "06_ONTOLOGY"]
 
 FENCES = [
     "holds no doctrine",

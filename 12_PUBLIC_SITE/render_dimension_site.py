@@ -52,10 +52,15 @@ def transition_card(item: dict) -> str:
             ("Kill criterion", "kill"),
         )
     )
-    kind = "candidate μ-crossing" if tr["id"].startswith("mu") else "non-μ boundary"
+    # The label used to be derived from the ID STRING — every mu* got the identical
+    # "candidate crossing", so no adjudication could ever reach the page. Two of the five
+    # are adjudicated FAILED in doc 48 and the spine said "candidate" for all of them.
+    # Now it comes from the data, and the source line travels with it.
+    kind = tr.get("verdict") or ("candidate μ-crossing" if tr["id"].startswith("mu") else "non-μ boundary")
     return f"""
 <section class="transition" id="{esc(tr['id'])}">
   <p class="eyebrow">{esc(pretty_id(tr['id']))} · {kind}</p>
+  {f'<p class="source">Verdict source: {esc(tr["verdictSource"])}</p>' if tr.get("verdictSource") else ""}
   <h2>{esc(tr['label'])}</h2>
   <dl>{rows}</dl>
   <p class="source">Source owner: <code>{esc(tr['source'])}</code></p>
@@ -151,13 +156,13 @@ def index_page(levels: list[dict], sequence: list[str]) -> str:
         rows.append(f"<a class='rung' href='../{n}/'><b>{esc(item['id'])}</b><span>{esc(item['title'])}</span><small>{esc(item['tier'])} · {esc(item['modality'])}</small></a>")
         if "transition" in item:
             tr = item["transition"]
-            rows.append(f"<div class='crossing'><b>{esc(pretty_id(tr['id']))}</b><span>{esc(tr['label'])}</span><small>{'candidate crossing' if tr['id'].startswith('mu') else 'non-μ boundary'}</small></div>")
+            rows.append(f"<div class='crossing'><b>{esc(pretty_id(tr['id']))}</b><span>{esc(tr['label'])}</span><small>{esc(tr.get('verdict') or ('candidate crossing' if tr['id'].startswith('mu') else 'non-μ boundary'))}</small></div>")
         else:
             ret = item["return"]
             rows.append(f"<div class='crossing'><b>{esc(ret['id'])}</b><span>{esc(ret['label'])}</span><small>interpretive edge only</small></div>")
     return f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The dimension-first spine · Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6, five candidate μ-crossings, one exit boundary, and one interpretive return." />
+<title>The dimension-first spine · Emergentism</title><meta name="description" content="The complete typed Emergentist scaffold: D0 through D6 with five typed μ-interfaces — two standing, one owing a discriminator, two adjudicated failed — one exit boundary, and one interpretive return." />
 <link rel="icon" href="data:," /><link rel="stylesheet" href="../assets/css/xai.css" /><style>
 main{{max-width:900px;margin:0 auto;padding:120px 22px 80px}} h1{{font-size:clamp(2.6rem,7vw,5.5rem);line-height:1;margin:.5rem 0 1rem}} .lede{{color:var(--text-muted);max-width:64ch;font-size:1.1rem}}
 .sequence{{font:700 .72rem/1.7 var(--font-mono);color:var(--gold);overflow-wrap:anywhere}} .spine{{margin:3rem 0;border-left:1px solid var(--gold);padding-left:1.2rem}}

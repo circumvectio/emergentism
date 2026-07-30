@@ -41,12 +41,21 @@ become a way of losing work and should be repaired.
 | id | question | blocks | source |
 |---|---|---|---|
 | `§5.1` | Are the irrationals *numbers*, or *limits of operations*? The theorem that they are **not finite words** is settled `[A]`; what to call them is not. | the vocabulary of every page that says "number" | `05_COSMOLOGY/03_FORMAL_SYSTEM/53_THE_NUMBER_CHART.md` |
-| `G-0` | Which base is canonical — the generative base, or the sphere at `00_THE_FOUNDATION.md` §2? Both are live; one must own the seat. | whether `52_THE_GENERATIVE_BASE.md` supersedes anything | `05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md` |
-| `G-0b` | The neutral-letter exit (`e, a, b`) for the same collision. | same | same |
+| ~~`G-0`~~ | **CLOSED — ruled 2026-07-29, exit B-ii.** `00_THE_FOUNDATION.md:93` adds a fourth posit `B4` (`⊙ = e`, the identity **posited, not derived** — it had been harvested from notation). Neither base is seated over the other. | — | `00_THE_FOUNDATION.md:88-98` |
+| ~~`G-0b`~~ | **CLOSED — ruled 2026-07-29, exit Z.** `00_THE_FOUNDATION.md:85`: `F1` is a property of `P1`, not a stratum beside it. | — | `00_THE_FOUNDATION.md:85` |
 | — | Disposition of the **91 ambiguous receipt numbers**: each needs a `superseded_by:` pointer or a distinct number. | trustworthy numeric citation anywhere in the corpus | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md` |
 | — | Disposition of the **40 site pages declared neither current nor frozen**. Declaring them current fails the parity contract on Titan infix; leaving them undeclared means they carry retired claims with no banner. | the site's publication boundary | `12_PUBLIC_SITE/public_semantic_parity.json` |
 
 ---
+
+> **This manifest listed two closed rulings as open, and the reason is worth keeping.**
+> `G-0` and `G-0b` were both ruled on **2026-07-29**. But
+> `52_THE_GENERATIVE_BASE.md` still carried *"Owner ruling G-0 pending"* in its
+> frontmatter a day later, and this file was built from that. **A ruling that lands and
+> does not propagate is indistinguishable from a ruling that never happened** — which is
+> the same defect this corpus recorded twice last week in other forms. Both files
+> corrected 2026-07-30. Found by a council that was asked to *rule* on G-0 and instead
+> reported that the question was stale.
 
 ## 2 · Open claims — carried at tier, awaiting evidence
 

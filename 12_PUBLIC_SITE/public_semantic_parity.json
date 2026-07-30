@@ -164,7 +164,9 @@
         "evidence": "[I/C] selected transition hypothesis",
         "prediction": "Any adequate D1 account must distinguish ordinary operands from frame roles without using forbidden Titan arithmetic.",
         "alternatives": "Arithmetic may be treated as primitive, constructed differently, or grounded without a D0 aperture.",
-        "kill": "A contradiction-free account that requires Titan tokens to be ordinary operands, or evidence that no origin distinction is needed, defeats this aperture reading."
+        "kill": "A contradiction-free account that requires Titan tokens to be ordinary operands, or evidence that no origin distinction is needed, defeats this aperture reading.",
+        "verdict": "candidate — discriminator owed",
+        "verdictSource": "48: \"μ₀ still owes its distinction discriminator\""
       }
     },
     {
@@ -195,7 +197,9 @@
         "evidence": "[S/I] formal example; not proof of universal emergence",
         "prediction": "A configuration representation should make some D1 limit behavior finite and inspectable without changing the underlying arithmetic result.",
         "alternatives": "The added representation may be a convenience, compression, or definitional extension rather than an ontic emergence.",
-        "kill": "If the proposed D2 representation adds no relational capability or fails to recover its D1 values, this crossing fails."
+        "kill": "If the proposed D2 representation adds no relational capability or fails to recover its D1 values, this crossing fails.",
+        "verdict": "candidate crossing (stands)",
+        "verdictSource": "48: \"μ₁ and μ₄ still stand\""
       }
     },
     {
@@ -225,7 +229,9 @@
         "evidence": "[A/S] formal lift; ontic-emergence reading [C]",
         "prediction": "The D3 representation must distinguish states that agree on one context but differ on another.",
         "alternatives": "The lift may be a reducible formal representation rather than a new degree of reality.",
-        "kill": "If classical configuration suffices for all relevant probability assignments, or the D3 formalism adds no discriminating predictions, the emergence reading fails."
+        "kill": "If classical configuration suffices for all relevant probability assignments, or the D3 formalism adds no discriminating predictions, the emergence reading fails.",
+        "verdict": "FAILED — reducibility",
+        "verdictSource": "48: \"μ₂ and μ₃ still fail, on the arguments that actually carried them\""
       }
     },
     {
@@ -256,7 +262,9 @@
         "evidence": "[A] probability/event distinction; [I/C] emergence interpretation",
         "prediction": "Intervening on preparation or measurement context changes the distribution of D4 outcomes as the D3 model specifies.",
         "alternatives": "Everettian, Copenhagen-family, hidden-variable, relational, and other interpretations disagree about actualization while sharing operational predictions.",
-        "kill": "Conflating a probability scalar with a sampled outcome, or failing the model's repeated-run statistics, defeats the proposed bridge."
+        "kill": "Conflating a probability scalar with a sampled outcome, or failing the model's repeated-run statistics, defeats the proposed bridge.",
+        "verdict": "FAILED — reducibility",
+        "verdictSource": "48: \"μ₂ and μ₃ still fail, on the arguments that actually carried them\""
       }
     },
     {
@@ -286,7 +294,9 @@
         "evidence": "[C] unassessed counterfactual-capacity hypothesis",
         "prediction": "Intervening on represented future content, while holding relevant means fixed, changes present action distributions.",
         "alternatives": "Behavior may be explained by reactive policy, cached control, or lower-level dynamics without a distinct counterfactual capacity.",
-        "kill": "If future-content interventions produce no discriminable action change beyond reactive controls, the distinct-capacity claim fails."
+        "kill": "If future-content interventions produce no discriminable action change beyond reactive controls, the distinct-capacity claim fails.",
+        "verdict": "candidate crossing (stands)",
+        "verdictSource": "48: \"μ₁ and μ₄ still stand\""
       }
     },
     {

@@ -1,9 +1,9 @@
 ---
 title: "The Generative Base — one object, two operations, and the two limits no word attains"
-status: "ACTIVE — candidate base. Stands beside 00_THE_FOUNDATION.md §2; supersedes nothing until the owner rules G-0."
+status: "ACTIVE — candidate base. Stands beside 00_THE_FOUNDATION.md §2. G-0 WAS RULED 2026-07-29 (exit B-ii, the fourth posit B4); this frontmatter said 'pending' for a day after the ruling and was corrected 2026-07-30. The ruling seats neither base over the other — see the note in §0."
 date: 2026-07-29
 evidence_tier: "[A] G1–G8, computationally verified and mutation-tested and reproducible; [S] the naming of the three categories; [I] the Titan reading"
-owner: "Candidate. Does not amend KSC-28, doc 45, or 00_THE_FOUNDATION.md. Owner ruling G-0 pending."
+owner: "Candidate. Does not amend KSC-28, doc 45, or 00_THE_FOUNDATION.md. G-0 ruled 2026-07-29 (exit B-ii). Routing, not primacy: arithmetic and reachability questions belong here; Titan-identity questions belong to 00_THE_FOUNDATION.md §2 and doc 45."
 parents:
   - ../../00_THE_FOUNDATION.md
   - 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
@@ -11,6 +11,14 @@ parents:
 ---
 
 # The Generative Base
+
+> **G-0 was ruled on 2026-07-29, and this file said "pending" for a day afterwards.**
+> The ruling is exit **B-ii**: `00_THE_FOUNDATION.md` §2 adds a **fourth posit**, `B4`
+> (`⊙ = e`, the identity **posited, not derived** — it had been harvested from notation).
+> It does **not** seat this base over that one or the reverse. Both are posited; each has
+> a stated deficit where the other is strong, and `DF-15` forbids citing either as support
+> for the other. **The stale frontmatter is itself the defect class this corpus documented
+> the same week: a ruling that lands and does not propagate.**
 
 > **One object. Two operations. Everything else is a word.**
 
