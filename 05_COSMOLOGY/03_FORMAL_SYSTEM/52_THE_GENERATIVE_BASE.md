@@ -22,7 +22,19 @@ Owner, 2026-07-29:
 
 This document is that sentence, made precise and checked. It needs no sphere to
 state, which is why it exists: the base in `00_THE_FOUNDATION.md` §2 cannot be
-read without `Ĉ` already present (the collision, r180 / G-0). **This one can.**
+read without `Ĉ` already present (the collision, `G-0`; recorded in
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md`
+and `185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md`). **This one can.**
+
+> **Citation repair, 2026-07-30.** This line previously read *"the collision,
+> r180 / G-0"*. **There is no receipt `r180`.** The number was announced in a
+> session summary and never written; the only `180_` file in the corpus is
+> `11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md`,
+> an unrelated April document. A dangling-citation check *passed* the bad
+> reference, because the number resolved — to the wrong file. That is the live
+> hazard: 40 receipt files in `50_AUDITS_AND_EXECUTIONS` share a number with
+> another document and declare no supersession, so a numeric citation can
+> resolve and still be false. Cite receipts by **path**, not by number.
 
 ---
 
