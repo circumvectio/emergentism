@@ -125,17 +125,20 @@ stated accurately, so each needs an owner ruling and not an edit:
 | 7 | the live constitution is `R0`: **no necessary being** | which constitution edition is public |
 | 12 | a Rosetta falsifier **fired and was logged as a pass** | an integrity retraction, owner-countersigned |
 | 13, 14 | no single score is permitted; the ontology profile has **explicit zeros** | the specific per-profile figures were not verifiable in the time available |
-| 16 | over-claiming is **endogenous** to fitting every domain; antibody = a word watchlist | whether to publish the demolition manual |
+| 16 | ~~over-claiming is endogenous; antibody = a word watchlist~~ | **REJECTED 2026-07-30.** No such watchlist exists. Every `watchlist` hit in the corpus is product material — a three-entity token watchlist in an unrelated venture document. The claim was not grounded. |
 | 19 | **ten senses of "exists"**; "everything coherent actually exists" is a retired inflation | a ruling on the retired form |
 | 22 | the metaethics is an **open docket** against nine rival families, error theory admissible | whether to reopen a page that currently reads settled |
-| 23, 24, 25 | Suda's chart is a proper sub-chart; the hinge **is** the relativistic velocity ratio; the three seats are forced on the ray, selected on the sphere | small, verifiable, simply not yet done |
+| 23, 24 | Suda's chart is a proper sub-chart; the hinge **is** the relativistic velocity ratio | **BOTH LANDED 2026-07-30.** 24 proved in two lines rather than "numerically verified": `u(x) = tanh((log x)/2)` exactly, so with `s/2` read as a rapidity it is a velocity ratio and the rims are unreachable for the reason `c` is. Algebra `[A]`, the reading `[S/I]`. 23 was already in the Lean file's own docstring. |
+| 25 | ~~the three seats are forced on the ray, selected on the sphere~~ | **REJECTED 2026-07-30.** The phrasing appears nowhere in the corpus outside the audit's own plan file, and the substance — unique positive fixed point, so uniqueness is bought by excluding the other half — is already published via 23 and the positive-only price. |
 | 27 | the adversarial audits' **own error rate** — five wrong file-level findings in two days | this session adds to that count, and the number should be recomputed before publishing |
 | 28 | Path D: the four-operator structure does not follow from the framework's own inequality | the audit itself recommended skipping — the pages are `noindex` and the finding is already logged |
 
-**Item 27 deserves the last word.** Of the 28 proposals, at least four were wrong on
+**Item 27 deserves the last word.** Of the 28 proposals, **at least six** were wrong on
 their specifics — a claimed nine pages misusing the product where the true count is
-zero, two "live indexed" pages that are `noindex`, an inflated call count, and a
-mis-cited authority. **A verdict about a file is not evidence about a file.** Every item
+zero; two "live indexed" pages that are `noindex`; a call count inflated from 168 to
+~200; a human mirror cited as authority over the machine source; **an antibody
+"watchlist" that does not exist**; and **a phrase attributed to the corpus that appears
+only in the audit's own output**. **A verdict about a file is not evidence about a file.** Every item
 above was checked before it was believed, and that is the only reason the list is
 trustworthy at all.
 
