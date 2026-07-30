@@ -50,6 +50,7 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_record_counters.py"
   "09_TOOLS/01_SCRIPTS/check_review_bundle.py"
   "09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py"
+  "09_TOOLS/01_SCRIPTS/build_receipt_disambiguation.py"
 )
 
 fail=0

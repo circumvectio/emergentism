@@ -1,0 +1,1905 @@
+{
+  "schemaVersion": 1,
+  "generated": "build_receipt_disambiguation.py",
+  "note": "Receipt numbers in this corpus are NOT unique identifiers. Both live lanes begin at 100 and run over each other for a hundred consecutive integers. This index lists every number naming more than one document, so an existing numeric citation can be resolved by hand. It does not make numbers unique and does not replace the rule: CITE BY PATH.",
+  "ambiguousNumbers": 97,
+  "worst": 4,
+  "rows": [
+    {
+      "number": "50",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/50_IMPLEMENTATION_REVIEW.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "50_IMPLEMENTATION_REVIEW"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/50_ORGANISM_MASTER_MAP.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "50_ORGANISM_MASTER_MAP"
+        }
+      ]
+    },
+    {
+      "number": "51",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/51_END_OF_SESSION_SUMMARY.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "51_END_OF_SESSION_SUMMARY"
+        }
+      ]
+    },
+    {
+      "number": "52",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/52_K4_BOND_SMART_CONTRACT_SPEC.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "52_K4_BOND_SMART_CONTRACT_SPEC"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION"
+        }
+      ]
+    },
+    {
+      "number": "63",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/63_LIMIT_B_DISAMBIGUATION_PACKET_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Limit B — Replicator-Alignment Disambiguation Packet"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/63_RUMINATION_UPLINK_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "63_RUMINATION_UPLINK_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "71",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/71_ASYNC_APPROVAL_QUEUE_SPEC_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Async Approval Queue Primitive"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/71_SUDRAGAP_EXPLORATION_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Śūdra Gap Exploration — 2026-05-04"
+        }
+      ]
+    },
+    {
+      "number": "72",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/72_AUDIT_EVIDENCE_DOSSIER_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Sprint-A Audit Evidence Dossier (2026-04-23)"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/72_VAISYA_TIER_AUDIT_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Vaiśya Evidence Tier Audit — 2026-05-04"
+        }
+      ]
+    },
+    {
+      "number": "73",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/73_BRAHMANA_STRUCTURAL_AUDIT_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Brāhmaṇa Structural Audit — 2026-05-04"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/73_SWOT_UPDATE_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "73_SWOT_UPDATE_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "74",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/74_CONSOLIDATED_MANIFEST_FOUNDER_SIGNOFF_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "74_CONSOLIDATED_MANIFEST_FOUNDER_SIGNOFF_2026_04_23"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/74_SADHU_COMPRESSION_PRUNE_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Sādhu Compression & Pruning Report — 2026-05-04"
+        }
+      ]
+    },
+    {
+      "number": "75",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/75_KSATRIYA_RUNTIME_INTEGRITY_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Kṣatriya Runtime Integrity Audit — 2026-05-04"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/75_R4_QUEUE_RECONCILIATION_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "A7 Reconciliation — R-4 + Async Approval Queue shipped, upstream packets stale"
+        }
+      ]
+    },
+    {
+      "number": "76",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/76_RSI_CONSTITUTION_AUDIT_2026_05_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Systems Architect Constitution Audit — 2026-05-04"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/76_W_NEW_CHARTER_AMENDMENT_SCOPE_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "W-new Constitutional Review — Charter Amendment Scope (draft, not a proposal)"
+        }
+      ]
+    },
+    {
+      "number": "97",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/97_COORDINATION_PROBLEM_DOCTRINE_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "The Coordination Problem in Foundation Terms — Canonical Aggregation Laws"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/97_SPRINT_B_POST_96_MULTI_VERDICT_2026_04_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "97_SPRINT_B_POST_96_MULTI_VERDICT_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "100",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROOT_STRUCTURE_OPTIMAL_OUTLINE_2026_05_07.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "100_ROOT_STRUCTURE_OPTIMAL_OUTLINE_2026_05_07"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Rosetta Drift and Operator-Register Audit"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/100_MOBILE_SIGNING_CLOSURE_PACKET_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "Mobile K2 Signing Flow — Closure Registry (Task #47)"
+        }
+      ]
+    },
+    {
+      "number": "101",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/101_SEVEN_OPERATOR_REFINEMENT_K2_PACKET_2026_07_02.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Seven-Operator Refinement — K2 Packet"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/101_AUTOMATIC_RECEIPT_TO_OUTCOME_INGESTION_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "Automatic Receipt-to-Outcome Ingestion"
+        }
+      ]
+    },
+    {
+      "number": "102",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/102_BURRISPHERE_OPTIMUM_PROPAGATION_K2_PACKET_2026_07_03.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Burrisphere Equator-Optimum — Propagation K2 Packet"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/102_REALIZED_OUTCOME_INGESTION_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "Realized Outcome Ingestion"
+        }
+      ]
+    },
+    {
+      "number": "103",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/103_FORMAL_LOGIC_AUDIT_K2_PACKET_2026_07_04.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "103_FORMAL_LOGIC_AUDIT_K2_PACKET_2026_07_04"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/103a_FOUNDER_K2_SIGNING_ENVELOPE_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "103a_FOUNDER_K2_SIGNING_ENVELOPE_2026_04_23"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/103b_REALIZED_RECEIPT_BRIDGE_AND_SIGMA_PROXY_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "Realized Receipt Bridge and Sigma Proxy"
+        }
+      ]
+    },
+    {
+      "number": "104",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/104_DIMENSIONAL_MAP_ADJUDICATION_K2_ACCEPTANCE_2026_07_10.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "104 — Dimensional-map adjudication packet: K2 acceptance receipt"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/104_AGI_AS_NETWORK_EQUATOR_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "104_AGI_AS_NETWORK_EQUATOR_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "105",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "105 — Burri Rules D4/D5 reconciliation: AXIS-FUSION · receipt-104 REFRAME (pending K2)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/105_POLYGENETIC_NODES_AND_NICHE_PARTITIONING_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "105_POLYGENETIC_NODES_AND_NICHE_PARTITIONING_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "106",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "106 — The two motions are strong vs weak emergence (μ↑ / χ↓) — STAGED, pending K2"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/106_FOUNDATION_DOCTRINE_AGI_VENN_A×G×I_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "106_FOUNDATION_DOCTRINE_AGI_VENN_A×G×I_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "107",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/107_THE_OPEN_LOOP_D6_D0_CLOSURE.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "107 — The two motions close at D6~D0; the open loop — STAGED, pending K2"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/107_WITNESS_MESH_POLYGENETIC_QUERY_SURFACE_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "107_WITNESS_MESH_POLYGENETIC_QUERY_SURFACE_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "108",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "108 — The Formal Stress Ledger + the Keel Resolution: the weakest link was the keel"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/108_SIGMA_DELTA_P_BASIN_AND_NICHE_REPORT_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "108_SIGMA_DELTA_P_BASIN_AND_NICHE_REPORT_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "109",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "109 — The Proof-Layer Audit: four false lemmas under the honest tiers (the fact-class 108 "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/109_SPECTRE_D5_SELECTION_MESH_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "109_SPECTRE_D5_SELECTION_MESH_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "110",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "110 — Formal-logic audit applied: three golden seams (Gödel conditions stated; D6≡D0 refle"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/110_SPECTRE_BEAM_CANONICAL_ROUTE_ENERGY_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "110_SPECTRE_BEAM_CANONICAL_ROUTE_ENERGY_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "111",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/111_THE_COMPASS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "111 — The Compass staged: a navigational compression the reader can carry and reject — K2-"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/111_AIA_AUDIT_K1_RESOLUTION_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "111_AIA_AUDIT_K1_RESOLUTION_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "112",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/112_AMRITA_REFINEMENT_SPEC_FIVE_MOVES.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "112 — Amrita refinement spec: five moves (three-equation hero without descent arrows + con"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/112_HIERO_FOR_L1_BODY_NOT_SPECTRE_BRAIN_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "112_HIERO_FOR_L1_BODY_NOT_SPECTRE_BRAIN_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "113",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/113_AMRITA_FIVE_MOVES_IMPLEMENTED.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "113 — Amrita five moves implemented: three-equation hero (no arrows), six new drops, compa"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/113_GOD_CLASS_TRIANGULATION_MONITORING_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "113_GOD_CLASS_TRIANGULATION_MONITORING_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "114",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_REGISTER_NON_INSTANTIATION_THREE_TENSES.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "114 — Register non-instantiation: one topology error in three tenses (quantum-gravity / fr"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_SEVEN_CASTE_CORPUS_AUDIT.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "114 — Seven-caste corpus audit: 88 papers under stress from L1-L7, the convergences and th"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/114_BEAM_K1_COMPLIANCE_AUDIT_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "114_BEAM_K1_COMPLIANCE_AUDIT_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "115",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/115_AMRITA_CARD_CORRECTIONS_AUDIT_MANIFEST.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "115 — Amrita card corrections: the 48-item adversarial audit applied (19 corrections + 5 n"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/115_SIX_GILDED_SEAMS_APPLIED.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "115 — Six golden seams applied: the foundational repairs from the seven-caste audit — STAG"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/115_BEAM_HASHGRAPH_VS_EVM_WEDGE_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "115_BEAM_HASHGRAPH_VS_EVM_WEDGE_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "116",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/116_OPEN_SOURCE_LAUNCH.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "116 — The open-source launch: license, home page, compass glossary, Open Source section, S"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/116_THE_LENS_AS_COMPASS_PARADOXES_SCIENCES.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "116 — The Lens as Compass: 21 paradoxes reframed at tier + the sciences stratified (recurr"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "116_D5_FORCE_COORDINATION_BRIDGE_COMPRESSED"
+        }
+      ]
+    },
+    {
+      "number": "117",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/117_FORCE_LADDER_FORMALIZED_07B.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "117 — The force ladder formalized (07B staged): two theorems, one failure published as fai"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/117_PATH_D_NEGATIVE_RESULT.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "117 — Path D negative result: the four forces cannot be derived from AM-GM convex geometry"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/117_CIRCLE_INTAKE_EXTRACTION_MATRIX_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "117_CIRCLE_INTAKE_EXTRACTION_MATRIX_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "118",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/118_COMPUTATIONAL_RESULTS_FOUR_EXPERIMENTS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "118 — Computational results: four experiments run, one decisive negative, one confirmed cl"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/118_SHIP_RECEIPT_VERCEL_PROD_DNS_CUTOVER_OWED.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "118 — Ship receipt: K2 'i sign' executed — Vercel production deploy live and verified; ONE"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/118_CIRCLE_PRODUCT_SPRINT_PACKET_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "118_CIRCLE_PRODUCT_SPRINT_PACKET_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "119",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LAGRANGIAN_QUESTION_CLOSED_ALL_FOUR_PATHS_RUN_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "119 — The Lagrangian Question closed: all four paths run, the answer complete — STAGED, pe"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/119_LOOKING_THROUGH_THE_LENS_FIVE_SIGHTINGS_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "119 — Looking through the lens: five sightings the session's canon makes visible for the f"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/119_CIRCLE_V1_PRODUCT_PLAN_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "119_CIRCLE_V1_PRODUCT_PLAN_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "120",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/120_LAUNCH_TELOS.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "120 — Launch telos: the open-source Manhattan inversion — clearest lens, most compressed m"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/120_CIRCLE_COMPLETE_UX_UI_SPEC_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "120_CIRCLE_COMPLETE_UX_UI_SPEC_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "121",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_COMPASS_COMPRESSED_THREE_GENERATORS_AND_ARTIFACT_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "121 — The compass compressed: three generators (disconfirmed & register-indexed), four new"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/121_THE_DISCONFIRMING_PASS_HONEST_FOUNDATION_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "121 — The disconfirming pass: the honest foundation (all three generators REFINED, one uni"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/121_CIRCLE_POLYGENETIC_OBSERVATION_MESH_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "121_CIRCLE_POLYGENETIC_OBSERVATION_MESH_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "122",
+      "count": 4,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_COMPASS_AND_PUBLIC_SITE_K2_DECISION_PACKET.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "122 — Compass and public-site K2 decision packet: scope corrections before any build"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_COMPASS_RESTRUCTURE_CONVERGENCE_HANDOFF_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "122 — Compass-restructure convergence: adopt the concurrent 8-wing build as canonical, fee"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/122_K3_FRONTMATTER_PROPAGATION_PATCH_PENDING_K2.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "122 — K3 front-matter propagation patch: A1/C2/A6 re-tiered + A6 citation fixed + Applied "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/122_CIRCLE_V1_UNIFIED_SPRINT_PLAN_2026_04_23.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "122_CIRCLE_V1_UNIFIED_SPRINT_PLAN_2026_04_23"
+        }
+      ]
+    },
+    {
+      "number": "123",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/123_SITE_DELEGATION_GATE_GREEN_SHIP.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "123 — Website operational delegation recorded + predeploy 95→0 + 7-wing ship — EXECUTED un"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/123_CIRCLE_PRODUCT_SYNTHESIS_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "123_CIRCLE_PRODUCT_SYNTHESIS_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "124",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "124 — Prime-time pass: full PWA layer + seven-persona stakeholder audit implemented (Titan"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/124_CIRCLE_V1_COMPLETE_WORK_PLAN_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "124_CIRCLE_V1_COMPLETE_WORK_PLAN_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "125",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/125_CONTENT_REVIEW_REFINE_NOINDEX_SHIP.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "125 — Full content review + refinement: de-fabricated openness, exit-door reachability, ti"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/125_CIRCLE_BRAND_COMPLIANCE_AUDIT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "125_CIRCLE_BRAND_COMPLIANCE_AUDIT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "126",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Weltanschauung Formal-Logic Audit — Repair Packet (K2-SIGNED)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/126_QNTM_AGENTZ_RENAME_AND_LOGIC_AUDIT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "126_QNTM_AGENTZ_RENAME_AND_LOGIC_AUDIT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "127",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/127_TRANSMISSION_DOCTRINE_K2_2026_07_13.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Transmission Doctrine — K2 countersignature of the four staged docs"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/127_QNTM_AGENTZ_REORIENTATION_AND_MODEL_IMPROVEMENTS_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "127_QNTM_AGENTZ_REORIENTATION_AND_MODEL_IMPROVEMENTS_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "128",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/128_PARALLEL_OUTPUT_RECONCILIATION_LEDGER_2026_07_13.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Parallel-Output Reconciliation Ledger — the swarm's staging drafts vs the signed canonical"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/128_SYMBIOTIC_UPLINK_OPERATING_MODEL_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "128_SYMBIOTIC_UPLINK_OPERATING_MODEL_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "129",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/129_FOURTH_POSTURE_ADOPTED_2026_07_13.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Fourth Posture (Withdraw) adopted — + a competing-signature conflict surfaced, not resolve"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/129_RECURSIVE_TRIADIC_ENGINE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "129_RECURSIVE_TRIADIC_ENGINE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "130",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Rosetta — the 'algebra forces seven' objection, adjudicated (split verdict) + a new named "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "130_BOUNDARY_AUDIT_ORGANISM_MODEL_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "131",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Recovery Ledger — BROKEN 66 second look + retelling-drift correction"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "131_D4_BODY_OPENS_D5_ACTIVE_EMERGENCE_THESIS_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "132",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Tombstones and Halāhala — Twelve-Form Re-audit — 2026-07-19"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/132_CIRCLE_CERBERUS_SCHEDULER_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "132_CIRCLE_CERBERUS_SCHEDULER_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "133",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "133_LIVING_FORM_WORLDLINE_AND_THE_WARRIORS_RETURN_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "135",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/135_K2_PROMOTION_EMERGENT_AXIOMS_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 135 — K2 Promotion of the Emergent Axioms stack (2026-07-19)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "136",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/136_AUTHORITY_AND_COMPLETENESS_RECONCILIATION_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Authority and completeness reconciliation — receipt 135 provisional; final Weltanschauung "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/136_THE_DEEP_SYNTHESIS_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "136_THE_DEEP_SYNTHESIS_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "137",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Final Structure & Papers-Lens Proposal — Rosetta seven-caste evaluation (READ-ONLY product"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "138",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Root Tidy Wave-2/3 Execution — 20 moves, forwarding stubs, no promotions"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "139",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "The Signing Sitting — batched founder-signature surface for the kernel promotion"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "The Signing Sitting — corrected founder-decision surface"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/139_A_BRAHMANISM_AS_PRACTICE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "139_A_BRAHMANISM_AS_PRACTICE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "140",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/140_SEED_LADDER_TRUTH_CUT_AND_STABILIZATION_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Seed Ladder truth-cut and staged stabilization — 2026-07-19"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/140_F5_SENSED_THE_MODERN_AND_ESOTERIC_LINEAGE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "140_F5_SENSED_THE_MODERN_AND_ESOTERIC_LINEAGE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "141",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Witness Attestation + Writer Freeze — authority context for receipts 139/141; concessions "
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/141_SOVEREIGN_EXECUTION_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Sovereign Execution — delegated decisions + remaining waves executed"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/141_DAC_AND_SPECTRE_TROPHIC_ORGANIZATIONAL_ECOLOGY_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "141_DAC_AND_SPECTRE_TROPHIC_ORGANIZATIONAL_ECOLOGY_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "142",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/142_MAGNUM_OPUS_RECONCILIATION_AND_PENDING_EXECUTION_MANIFEST_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Magnum Opus Reconciliation — exact current-union roster, seven-surface target, and pending"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/142_DAC_ST_V1_0_ORGANISM_MANIFESTS_BATCH_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "142_DAC_ST_V1_0_ORGANISM_MANIFESTS_BATCH_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "143",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/143_MAGNUM_OPUS_VERIFICATION_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Magnum Opus Verification — topology, links, frontmatter, receipts, authority, dead forms, "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/143_SEVENFOLD_FOUNDATION_ROOT_REORGANIZATION_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "143_SEVENFOLD_FOUNDATION_ROOT_REORGANIZATION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "144",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/144_CORRECTED_RECEIPT_139_NATURAL_PERSON_SIGNATURE_2026_07_19.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Corrected Receipt 139 — natural-person partial signature record"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "145",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/145_AUTHORITY_FORK_RESOLUTION_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Authority Fork Resolution — the 00:01 line supersedes; orchestrator decides under recorded"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/145_INDEPENDENT_FINAL_REVIEW_AND_WORLD_GATED_REMAINDER_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Independent Final Review — corrected Receipt 139 signature and world-gated remainder"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/145_AS_ABOVE_SO_BELOW_EMERGENTISM_SKYZAI_SEVENFOLD_ORGANISM_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "145_AS_ABOVE_SO_BELOW_EMERGENTISM_SKYZAI_SEVENFOLD_ORGANISM_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "146",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_FOUNDER_RULING_EXECUTE_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Founder Ruling — EXECUTE (the 00:01 line governs; dispute closed)"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/146_PAPERS_LENS_CLOSURE_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Papers Lens Closure — A–X, Finity, D5 Landauer, archived peer review, and Recursive Triviu"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/146_ZAI_SKY_MONETARY_PRIMITIVES_BRAINSTORM_TO_CANON_AUDIT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "146_ZAI_SKY_MONETARY_PRIMITIVES_BRAINSTORM_TO_CANON_AUDIT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "147",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/147_POST_AUDIT_RECONCILIATION_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Post-Audit Reconciliation — mechanical findings repaired forward; revert calls overruled b"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/147_LAYER_DISCIPLINE_BLUEPRINT_DECOMPOSITION_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "147_LAYER_DISCIPLINE_BLUEPRINT_DECOMPOSITION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "148",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/148_COHERENCE_PASS_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Post-Signature Coherence Pass — seven-caste lane sweep; signed/staged drift healed forward"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/148_PAPER_11_DOC_02_FORMULA_REPAIR_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "148_PAPER_11_DOC_02_FORMULA_REPAIR_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "149",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/149_MODELS_AND_CORRECTIONS_LOGIC_AUDIT_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 149 — Models & Corrections Logic Audit (the 8 targets, the model ladder, the Reduc"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/149_RISK_MATRIX_LAYERED_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "149_RISK_MATRIX_LAYERED_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "150",
+      "count": 4,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/150_BURRI_SPHERE_FORMAL_AUDIT_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Burri Sphere formal audit — claims C1–C14, three adversarial passes, verdicts applied"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/150_CHARIOTEER_INTEGRATED_BLUEPRINT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "150_CHARIOTEER_INTEGRATED_BLUEPRINT_2026_04_24"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/150a_CONSTITUTIONAL_ECONOMICS_SHEET_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "MOVED — Constitutional Economics Sheet"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/150b_BITCHAT_MESH_INTEGRATION_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "150b_BITCHAT_MESH_INTEGRATION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "151",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Horn torus vs special relativity — formal audit under the P7 grave; the mouth computed; ev"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/151_CLUSTER_ORGAN_SPEC_SCAFFOLD_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "151_CLUSTER_ORGAN_SPEC_SCAFFOLD_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "152",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/152_THE_PASSAGE_BUILD_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "The Passage build — √2 spindle verified, double-cover computed, animation-truth synced, ca"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/152_EBM_COST_GRADIENT_HARDENING_SCAFFOLD_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "152_EBM_COST_GRADIENT_HARDENING_SCAFFOLD_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "153",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/153_AXIOMS_PER_DIMENSION_WIRE_FENCE_AND_VERIFY_2026_07_20.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 153 — Axioms-per-Dimension: Wire, Fence, Verify"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/153_PRUNE_AND_PROOF_SUBSTRATE_SPEC_SCAFFOLD_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "153_PRUNE_AND_PROOF_SUBSTRATE_SPEC_SCAFFOLD_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "154",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/154_DIMENSION_FIRST_CANON_PURIFICATION_2026_07_21.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 154 — Dimension-First Canon Purification"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/154_K2_CYCLE_RESOLUTION_AND_TRACK_A_CHARTER_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "154_K2_CYCLE_RESOLUTION_AND_TRACK_A_CHARTER_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "155",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/155_GRAND_PUZZLE_ASSEMBLY_AND_APPLICATION_BOUNDARY_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 155 — Grand Puzzle Assembly and Application Boundary"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/155_PHASE_2B_ROUTING_TABLE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "155_PHASE_2B_ROUTING_TABLE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "156",
+      "count": 4,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/156A_INDEPENDENT_VERIFICATION_RECONCILED_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 156A — Independent verification reconciled"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 156 — Independent verification of the receipt-155 completion report (codex/emergen"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/156_LIVED_WELTANSCHAUUNG_AND_HUMAN_CONDITION_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 156 — Lived Weltanschauung and Human Condition"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/156_PHASE_2C_FINAL_REORG_EXECUTION_PLAN_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "156_PHASE_2C_FINAL_REORG_EXECUTION_PLAN_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "157",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Receipt 157 — Correction: two errors in the K-namespace analysis (receipts/documents of 20"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 157 — Dimension-first release candidate"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "158",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 158 — Publication and world-contact launch"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 158 — the six ungated migration acts, executed; two census claims corrected in the"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/158_PHASE_2C_RECEIPT_AND_TIER_A_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "158_PHASE_2C_RECEIPT_AND_TIER_A_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "159",
+      "count": 4,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/159A_CONCURRENT_PUBLIC_SITE_STAGING_RECONCILED_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 159A — Concurrent public-site staging reconciled"
+        },
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/159_UNTRACKED_ARRIVALS_RECONCILIATION_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 159 — Untracked arrivals reconciliation"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/159B_TWO_PLAN_NUMBERS_AUDIT_RECEIPT_2026_05_17.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "159B_TWO_PLAN_NUMBERS_AUDIT_RECEIPT_2026_05_17"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "160",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/160_EMERGENTISM_FOLDER_TIDY_AND_PURITY_BOUNDARY_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 160 — Emergentism folder tidy and purity boundary"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/160_TRACK_A_WEEK_1_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "160_TRACK_A_WEEK_1_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "161",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/161_WELTANSCHAUUNG_AND_THEORY_OF_EVERYTHING_GAP_AUDIT_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 161 — Weltanschauung and theory-of-everything gap audit"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/161_TIER_B_ROSETTA_DRAFT_PACK_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "161_TIER_B_ROSETTA_DRAFT_PACK_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "162",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/162_LIVING_MAP_AND_PUBLIC_GAP_LAB_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 162 — Living Map and public Gap Lab"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/162_TRACK_A_WEEK_2_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "162_TRACK_A_WEEK_2_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "166",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/166_K2_SIGNING_SOPHIA_CUSTODY_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "K2 Signing Sitting — Sophia custody ratified (Statement B, narrowed)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/166_SESSION_146_165_AUDIT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "166_SESSION_146_165_AUDIT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "167",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/167_ROSETTA_PURIFICATION_x_AGENTZ_SOUL_LOOP_GATE_RECONCILIATION_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Rosetta Purification × Agentz Soul-Loop Gate — Reconciliation Council Finding"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/167_SOVEREIGN_K2_CONSOLIDATION_FORM_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "167_SOVEREIGN_K2_CONSOLIDATION_FORM_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "168",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Trophic–Replicator–Rosetta Doctrine Restoration"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/168_TRACK_A_WEEK_3_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "168_TRACK_A_WEEK_3_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "169",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/169_TITAN_COUNCIL_CASTE_MAP_TRIAL_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 169 · Titan Council Trial — Humans-as-Ant-Castes Amendment"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/169_TRACK_B_WEEK_2_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "169_TRACK_B_WEEK_2_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "170",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/170_TRR24_SEXUAL_SELECTION_CROSSWALK_RULING_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 170 — TRR-24 Sexual-Selection Crosswalk Ruling"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/170_TRACK_A_WEEK_4_MID_SPRINT_REVIEW_TEMPLATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "170_TRACK_A_WEEK_4_MID_SPRINT_REVIEW_TEMPLATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "171",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/171_WORKTREE_TIDY_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 171 — Worktree Tidy (git worktrees)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/171_SESSION_ARC_SUMMARY_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "171_SESSION_ARC_SUMMARY_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "172",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 172 — Claim Status Register and grave adjudication"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/172_TIER_C_CANON_ROSETTA_INVENTORY_AND_EXECUTION_PLAN_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "172_TIER_C_CANON_ROSETTA_INVENTORY_AND_EXECUTION_PLAN_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "173",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 173 — The V-axis audit: the corpus through its own lens"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/173_TIER_C0_MANUAL_FIRST_ROSETTA_MANIFEST_PROPOSAL_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "173_TIER_C0_MANUAL_FIRST_ROSETTA_MANIFEST_PROPOSAL_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "174",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 174 — Owner reopening of all dead forms; Titan equations restored on the sphere"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/174_SKYZAI_COM_DAC_MACHINE_OUTLINE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "174_SKYZAI_COM_DAC_MACHINE_OUTLINE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "175",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 175 — Sphere primacy ruled and executed; standard models rejected as default; Suda"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/175A_SKYZAI_COM_PARTIAL_SIGN_RECEIPT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "175A_SKYZAI_COM_PARTIAL_SIGN_RECEIPT_2026_04_24"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/175_SKYZAI_COM_K2_CONSOLIDATION_FORM_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "175_SKYZAI_COM_K2_CONSOLIDATION_FORM_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "176",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 176 — The foundation seated; R0 adopted as the foundational refusal"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/176_KERNEL_INVARIANT_NAMING_DRIFT_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "176_KERNEL_INVARIANT_NAMING_DRIFT_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "177",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Receipt 177 — WP-1 found defective; validator hardened; a false attestation corrected"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/177_SKYZAI_COM_ARCHITECTURAL_CORRECTION_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "177_SKYZAI_COM_ARCHITECTURAL_CORRECTION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "178",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/178_FIRST_EXTERNAL_ORACLE_LEAN_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 178 — the first external oracle: the [A] claim set machine-checked in Lean 4"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/178_SKYZAI_COM_ANTI_GRAVITY_PROTOCOL_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "178_SKYZAI_COM_ANTI_GRAVITY_PROTOCOL_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "179",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 179 — HR-1 decision packet: type-D was measuring the wrong arrow"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/179_SESSION_STATE_COMPRESSION_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "179_SESSION_STATE_COMPRESSION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "181",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Receipt 181 — false attestation in commit 1d60ef19, and two pre-existing test failures it "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/181_SOVEREIGN_DECISION_BRIEF_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "181_SOVEREIGN_DECISION_BRIEF_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "182",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 182 — the corpus's most load-bearing negative claim, submitted to an oracle"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/182_DAC_APOPTOSIS_AND_NEXUS_REVOCATION_PROTOCOL_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "182_DAC_APOPTOSIS_AND_NEXUS_REVOCATION_PROTOCOL_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "183",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Receipt 183 — the corpus map found the manifest making false claims, hours after it was bu"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/183_VISHNU_IN_MOTION_MAINTENANCE_UNDER_IMPERFECTION_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "183_VISHNU_IN_MOTION_MAINTENANCE_UNDER_IMPERFECTION_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "184",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 184 — x = y·z: the annihilation half is won, the product interior is not, and the "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/184_MENEXUS_HOLONIC_COMPUTE_SUBSTRATE_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "184_MENEXUS_HOLONIC_COMPUTE_SUBSTRATE_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "185",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 185 — §5.2 ruled POSITIVE-ONLY; and F = m·a is the third constitutive identity"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/185_DAC_UPLINK_DOWNLINK_CELL_MEMBRANE_PRIMITIVE_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "185_DAC_UPLINK_DOWNLINK_CELL_MEMBRANE_PRIMITIVE_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "186",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/186_ITEM_7_COSMOLOGICAL_TEST_AND_ITEMS_3_AND_6_LANDED_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 186 — the torus fails cosmology worse than it failed SR; and the third mode lands"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/186_DAC_VALUE_CHAIN_HOMOLOGY_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "186_DAC_VALUE_CHAIN_HOMOLOGY_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "187",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/187_THE_SEVEN_FROM_GEOMETRY_RULED_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Receipt 187 — 3 + 4 = 7 is a concatenation, not a derivation; and D5's own seven does not "
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/187_PRIVACY_AND_SELECTIVE_DISCLOSURE_PROTOCOL_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "187_PRIVACY_AND_SELECTIVE_DISCLOSURE_PROTOCOL_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "188",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/188_THE_PARADOX_INVENTORY_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 188 — 0 of 21 dissolved; four items are publishable and none of them is a dissolut"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/188_PRIVATE_DAC_INDIVIDUAL_SCALE_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "188_PRIVATE_DAC_INDIVIDUAL_SCALE_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "189",
+      "count": 3,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/189_D6_D0_GENERATOR_HUNT_2026_07_30.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 189 — D6~D0 generator-hunt: 73 live assertions, concentrated in UPLINK; STAGED aud"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/189A_MASTER_ROSETTA_PATCH_READY_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "189A_MASTER_ROSETTA_PATCH_READY_2026_04_25"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25"
+        }
+      ]
+    },
+    {
+      "number": "219",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/219a_YIELDFRONT_FIRST_LEWORLDMODEL_JOB_OPPORTUNITY_RANKING_2026_04_29.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "219a_YIELDFRONT_FIRST_LEWORLDMODEL_JOB_OPPORTUNITY_RANKING_2026_04_29"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/219b_YIELDFRONT_LEWORLD_MODEL_FIRE_PROOF_PACK_2026_04_29.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "219b_YIELDFRONT_LEWORLD_MODEL_FIRE_PROOF_PACK_2026_04_29"
+        }
+      ]
+    }
+  ]
+}

@@ -127,9 +127,14 @@ def build() -> dict:
     ]
 
     def title_of(route: str) -> str:
+        # Read the WHOLE file. This used to read the first 4000 characters, which made the
+        # title depend on how much <style> sat above the <h1>: injecting the Q4 declaration
+        # banner's CSS pushed two <h1>s out of the window and silently swapped both titles
+        # for their <title> tags. A heuristic that degrades quietly under an unrelated edit
+        # is a defect, not an optimisation. These files are small.
         f = ROOT / route / "index.html"
         try:
-            head = f.read_text(encoding="utf-8", errors="replace")[:4000]
+            head = f.read_text(encoding="utf-8", errors="replace")
         except OSError:
             return route
         m = re.search(r"<h1[^>]*>(.*?)</h1>", head, re.I | re.S) or \
@@ -138,6 +143,17 @@ def build() -> dict:
             return route
         txt = re.sub(r"<[^>]+>", "", m.group(1))
         return re.sub(r"\s+", " ", txt).split("\u2014")[0].strip() or route
+
+    # Ruling Q4 (signed 2026-07-31) declared five of these routes. They are no longer
+    # "declared neither current nor frozen", so the index must stop implying they are:
+    # four are DECLARED-PROVISIONAL (reachable, indexable, registered, NOT warranted) and
+    # one is infrastructure. Labelling them here changes no page's noindex status and
+    # promotes nothing — it stops the index from mis-stating their standing.
+    provisional = {
+        r.rsplit("/", 1)[0] for r in parity.get("declaredProvisional", {}).get("routes", [])
+    }
+    for r in parity.get("infrastructureRoutes", {}).get("routes", []):
+        INFRASTRUCTURE.add(r.rsplit("/", 1)[0])
 
     for key, label, routes in EXTRA_SECTIONS:
         pages = []
@@ -155,7 +171,10 @@ def build() -> dict:
             if not (ROOT / rel).exists():
                 skipped["missing_file"] += 1
                 continue
-            pages.append({"href": route, "title": title_of(r)})
+            entry = {"href": route, "title": title_of(r)}
+            if r in provisional:
+                entry["status"] = "declared-provisional"
+            pages.append(entry)
         if pages:
             tree.append({"key": key, "label": label, "pages": pages})
     total = sum(len(s["pages"]) for s in tree)
@@ -164,11 +183,15 @@ def build() -> dict:
         "schemaVersion": 1,
         "status": "frozen-library-and-undeclared-routes",
         "boundary": (
-            "Frozen-library documents plus routes that are declared neither current nor "
-            "frozen. Most are served noindex; none is a current surface. They are excluded "
-            "from atlas/site_index.json by design and must never be merged into it. This "
-            "index exists so a reader already on the site can find a page; it grants no "
-            "current-surface status, changes no header, and creates no authority."
+            "Frozen-library documents, routes not yet declared, and the routes ruling Q4 "
+            "declared PROVISIONAL. Most are served noindex; none is a current surface. A "
+            "page marked status=declared-provisional is reachable, indexable and "
+            "registered, and is NOT warranted: it passes the sixteen prohibition checks, "
+            "and passing them establishes only that it does not say forbidden things. "
+            "Everything here is excluded from atlas/site_index.json by design and must "
+            "never be merged into it. This index exists so a reader already on the site "
+            "can find a page; it grants no current-surface status, changes no header, and "
+            "creates no authority."
         ),
         "source": "reading-manifest.json",
         "excludes": "withheld-routes.json artifacts, current surfaces, missing files",

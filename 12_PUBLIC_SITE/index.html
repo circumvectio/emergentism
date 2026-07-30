@@ -225,6 +225,22 @@ a{color:inherit}
   .footer-nav{justify-content:flex-start}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+/* Ruling Q7, signed 2026-07-31 — the record leads the front door.
+   Deliberately quieter than the h1 beneath it: this band is meant to be read, not to
+   shout. The zero carries the emphasis inside the band because it is the one number
+   the corpus cannot improve by working harder on itself. */
+.ledger-lede{margin:0 0 2.1rem;padding:.95rem 0 1.1rem;max-width:58ch;
+  border-top:1px solid rgba(240,200,90,.45);border-bottom:1px solid var(--line)}
+.ledger-line{margin:0 0 .55rem;font-family:var(--mono);font-size:.95rem;letter-spacing:.01em}
+.ledger-line a{color:var(--bone);text-decoration:none;border-bottom:1px solid transparent}
+.ledger-line a:hover,.ledger-line a:focus-visible{border-bottom-color:var(--gold)}
+.ledger-line b{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums}
+.ledger-note{margin:0 0 .6rem;font-size:.82rem;line-height:1.6;color:var(--faint)}
+.ledger-note a{color:var(--gold);text-underline-offset:.18em}
+.ledger-zero{margin:0;font-size:.86rem;line-height:1.6;color:var(--muted)}
+.ledger-zero b{color:var(--bone);font-weight:650}
+@media(max-width:640px){.ledger-lede{margin-bottom:1.5rem}.ledger-line{font-size:.88rem}}
 </style>
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -258,6 +274,29 @@ a{color:inherit}
 <main id="main" tabindex="-1">
   <header class="hero wrap">
     <div class="hero-copy">
+      <!-- Ruling Q7, signed 2026-07-31: lead with the record, not the theory. The copy is
+           governed by 03_METHODOLOGY/00_THE_LENS_NOT_LAW_RULE.md — no "unifies", no
+           "proves", no "verified", and no named percentage without a receipt you can open.
+           NOT settled by that ruling: whether this band should open with the zero or with
+           the tally. The signature declined to settle it by taste and named the evidence —
+           the fresh-reader comprehension preregistration, which has not been run. -->
+      <aside class="ledger-lede reveal" aria-label="The record, first">
+        <p class="ledger-line">
+          <a href="record/"><b>29</b> logged outcomes &middot; <b>18</b> went against the
+          framework &middot; <b>0</b> removed</a>
+        </p>
+        <p class="ledger-note">
+          The 18 are still on the site, in the same table as the rest. Our correction
+          machinery has a published error rate with a denominator, and it counts the
+          reviewer's own mistakes alongside the ones it caught &mdash;
+          <a href="halahala/">read the failures first</a>.
+        </p>
+        <p class="ledger-zero">
+          <b>And the number that matters most is zero.</b> No outcome has yet come back from
+          anyone outside this project. Everything below is a map that has not yet been
+          answered by the world.
+        </p>
+      </aside>
       <p class="eyebrow reveal">Emergentism · A worldview for finite beings</p>
       <h1 class="reveal">Reality exceeds every map. <span>We still have to act.</span></h1>
       <p class="dek reveal">Emergentism is a fallibilist worldview and practical compass. It offers a way to distinguish actuality from possibility, match possible futures to the means truly available, keep everyone affected visible, and let observed consequences revise the map.</p>

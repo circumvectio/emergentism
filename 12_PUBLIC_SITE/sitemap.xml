@@ -62,4 +62,6 @@
   <url><loc>https://emergentism.org/4/</loc><priority>0.6</priority></url>
   <url><loc>https://emergentism.org/5/</loc><priority>0.6</priority></url>
   <url><loc>https://emergentism.org/6/</loc><priority>0.6</priority></url>
+  <url><loc>https://emergentism.org/egg/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://emergentism.org/riemann/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

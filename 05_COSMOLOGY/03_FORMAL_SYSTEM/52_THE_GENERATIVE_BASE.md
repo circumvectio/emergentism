@@ -28,6 +28,14 @@ Owner, 2026-07-29:
 > other real numbers are operations that result in something related to these
 > Titans."*
 
+> **§5.1 RULED 2026-07-31 — this sentence may no longer be published bare.** It is
+> true *base-side* and false *field-side*, and the ruling requires both registers to
+> travel together. `0` **is** a real number; the theorem is `0 ∉ ℝ^×`. `√2` **is** a
+> number in `ℝ`, and **is not** a finite word over `{S, ι}` — that second clause is
+> the `[A]` one. Base-side phrasing is *a non-halting word whose nest **denotes** a
+> limit*. **The cost is accepted and it is the owner's own most quotable line: it
+> stops being a headline.** Receipt: `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md`.
+
 This document is that sentence, made precise and checked. It needs no sphere to
 state, which is why it exists: the base in `00_THE_FOUNDATION.md` §2 cannot be
 read without `Ĉ` already present (the collision, `G-0`; recorded in

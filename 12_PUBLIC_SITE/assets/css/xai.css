@@ -3789,3 +3789,18 @@ button.nav:hover {
    the former GitHub links 404'd and leaked a private lane). Rendered as honest muted
    text, never a decoy link. */
 .canon-src { color: var(--text-muted, #888); font-style: italic; }
+
+/* Ruling Q6, signed 2026-07-31: the library-indexing boundary is published as a stated
+   editorial policy on /atlas/. An unexplained noindex reads as concealment, so the block
+   carries the reason, the cost, and the evidence that would reverse it. */
+.policy{ max-width:74ch; margin:18px 0 26px; padding:1.1rem 1.3rem;
+  border:1px solid rgba(224,145,58,.34); border-left:3px solid rgba(224,145,58,.7);
+  border-radius:8px; background:rgba(224,145,58,.05); }
+.policy h3{ margin:0 0 .6rem; font-size:1rem; color:#e8b84b; letter-spacing:.01em; }
+.policy p{ margin:.55rem 0; line-height:1.68; font-size:.88rem; opacity:.94; }
+.policy b{ color:#e8b84b; font-weight:600; }
+.policy i{ opacity:.86; }
+.policy code{ font-size:.85em; }
+.policy .tier{ font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:.8em; color:#e0913a; }
+.policy .policy-prov{ margin-top:.9rem; padding-top:.8rem;
+  border-top:1px dashed rgba(224,145,58,.3); font-size:.84rem; }

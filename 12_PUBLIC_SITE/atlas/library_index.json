@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "frozen-library-and-undeclared-routes",
-  "boundary": "Frozen-library documents plus routes that are declared neither current nor frozen. Most are served noindex; none is a current surface. They are excluded from atlas/site_index.json by design and must never be merged into it. This index exists so a reader already on the site can find a page; it grants no current-surface status, changes no header, and creates no authority.",
+  "boundary": "Frozen-library documents, routes not yet declared, and the routes ruling Q4 declared PROVISIONAL. Most are served noindex; none is a current surface. A page marked status=declared-provisional is reachable, indexable and registered, and is NOT warranted: it passes the sixteen prohibition checks, and passing them establishes only that it does not say forbidden things. Everything here is excluded from atlas/site_index.json by design and must never be merged into it. This index exists so a reader already on the site can find a page; it grants no current-surface status, changes no header, and creates no authority.",
   "source": "reading-manifest.json",
   "excludes": "withheld-routes.json artifacts, current surfaces, missing files",
   "skipped": {
@@ -1371,15 +1371,17 @@
       "pages": [
         {
           "href": "/titans/",
-          "title": "The Floor"
+          "title": "0 and ∞ are not numbers. 1 is the only one."
         },
         {
           "href": "/riemann/",
-          "title": "The plane gains i, ∞, and curvature"
+          "title": "The plane gains i, ∞, and curvature",
+          "status": "declared-provisional"
         },
         {
           "href": "/suda/",
-          "title": "1 at the centre, not 0"
+          "title": "1 at the centre, not 0",
+          "status": "declared-provisional"
         },
         {
           "href": "/suda-notes/",
@@ -1387,15 +1389,16 @@
         },
         {
           "href": "/egg/",
-          "title": "The Egg of Infinity"
+          "title": "The Egg of Infinity",
+          "status": "declared-provisional"
         },
         {
           "href": "/saturation/",
-          "title": "The μ-limit at every level"
+          "title": "How one freedom opens the next"
         },
         {
           "href": "/synthesis/",
-          "title": "The Coherent Whole"
+          "title": "One equation,read all the way down."
         },
         {
           "href": "/soul-loop/",
@@ -1415,7 +1418,7 @@
         },
         {
           "href": "/rosetta-d-series/",
-          "title": "Rosetta D-Series"
+          "title": "The Rosetta D-Series"
         },
         {
           "href": "/halahala/",
@@ -1423,11 +1426,12 @@
         },
         {
           "href": "/amrita/",
-          "title": "The Amrita"
+          "title": "The Amrita",
+          "status": "declared-provisional"
         },
         {
           "href": "/game/",
-          "title": "The Game"
+          "title": "The same grammar,pointed at the world."
         },
         {
           "href": "/atlas/",

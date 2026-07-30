@@ -36,6 +36,8 @@
     "border-left:1px solid #2a2a2a;margin-left:12px;opacity:.85}",
     "#atlas-tree a:hover{color:" + GOLD + ";opacity:1}",
     "#atlas-tree a.atlas-here{color:" + GOLD + ";border-left-color:" + GOLD + ";opacity:1}",
+    "#atlas-tree .atlas-prov{display:inline-block;margin-left:6px;padding:1px 6px;border:1px solid rgba(224,145,58,.55);",
+    "border-radius:999px;font:600 9.5px/1.5 'Roboto Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#e0913a}",
     "#atlas-count{padding:4px 22px 10px;font:400 11px/1 'Roboto Mono',monospace;color:#8a8568}",
     "#atlas-tree .atlas-band{margin:14px 6px 4px;padding:7px 10px;border-top:1px solid rgba(255,235,59,.28);",
     "font:600 10.5px/1.45 'Roboto Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#8a8568}",
@@ -105,6 +107,17 @@
         a.href = p.href;
         a.textContent = p.title;
         if (p.href === here) a.className = "atlas-here";
+        // Ruling Q4: a declared-provisional page is reachable and indexable but NOT
+        // warranted. The band copy below says "most" are noindex precisely because
+        // these are not, so each one has to carry the qualifier itself.
+        if (p.status === "declared-provisional") {
+          var tag = document.createElement("span");
+          tag.className = "atlas-prov";
+          tag.textContent = "provisional";
+          tag.title = "Registered and readable; not warranted by the corpus.";
+          a.appendChild(document.createTextNode(" "));
+          a.appendChild(tag);
+        }
         det.appendChild(a);
         any = true;
         shown += 1;
@@ -124,8 +137,8 @@
     var shownLib = 0, libTotal = 0;
     if (lib && lib.tree) {
       libTotal = lib.total || 0;
-      band("Frozen library · " + libTotal + " documents",
-           "Preserved for provenance. Served noindex — findable here, not in search engines. Where they conflict with the current pages above, the current pages govern.");
+      band("Library · " + libTotal + " documents",
+           "Preserved for provenance. Most are served noindex — findable here, not in search engines; the few marked provisional are indexable but not warranted. Where any of them conflicts with the current pages above, the current pages govern.");
       shownLib = renderTree(lib.tree, q);
       if (shownLib === 0) {
         var bands = treeEl.querySelectorAll(".atlas-band");

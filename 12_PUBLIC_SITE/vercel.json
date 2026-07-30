@@ -7,37 +7,161 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/home/", "destination": "/", "permanent": true },
-    { "source": "/app", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/app/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/app.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/complete-ontology", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/complete-ontology/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/complete-ontology/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/five-plus-one", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/five-plus-one/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/five-plus-one/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/burrisphere", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/burrisphere/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/burrisphere/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/dasein", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/dasein/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/dasein/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/canon/the-complete-ontology-of-reality", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/canon/the-complete-ontology-of-reality/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/canon/the-complete-ontology-of-reality/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-283-the-orthogonality-theorem-v2", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-283-the-orthogonality-theorem-v2/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-283-the-orthogonality-theorem-v2/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-285-dreams-are-unanchored-d5", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-285-dreams-are-unanchored-d5/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-285-dreams-are-unanchored-d5/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-296-gravity-is-time", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-296-gravity-is-time/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-296-gravity-is-time/index.html", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-298-dark-matter-is-mutual-information", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-298-dark-matter-is-mutual-information/", "destination": "/historical-boundary/", "permanent": false },
-    { "source": "/operators/mf-298-dark-matter-is-mutual-information/index.html", "destination": "/historical-boundary/", "permanent": false }
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/app",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/app/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/app.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/complete-ontology/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/five-plus-one/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/burrisphere",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/burrisphere/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/burrisphere/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/dasein/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-complete-ontology-of-reality",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-complete-ontology-of-reality/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/canon/the-complete-ontology-of-reality/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-283-the-orthogonality-theorem-v2",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-283-the-orthogonality-theorem-v2/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-283-the-orthogonality-theorem-v2/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-285-dreams-are-unanchored-d5",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-285-dreams-are-unanchored-d5/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-285-dreams-are-unanchored-d5/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-296-gravity-is-time",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-296-gravity-is-time/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-296-gravity-is-time/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-298-dark-matter-is-mutual-information",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-298-dark-matter-is-mutual-information/",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    },
+    {
+      "source": "/operators/mf-298-dark-matter-is-mutual-information/index.html",
+      "destination": "/historical-boundary/",
+      "permanent": false
+    }
   ],
   "headers": [
     {
@@ -103,191 +227,629 @@
     {
       "source": "/historical-boundary/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/app(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/complete-ontology/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
-      ]
-    },
-    { "source": "/papers/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/canon/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/foundations/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/trinity/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/formal/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/paradox/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/memetic/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/rosettad/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/operators/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/will/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/value/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/ground/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/sacred/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/method/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/meta/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/axiology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/epistemology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/methodology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/cosmology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/ontology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/theology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/teleology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/dasein/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/geometric-ontology/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/burrisphere/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/suda-notes/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/game/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/atlas/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/soul-loop/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    { "source": "/sources/(.*)", "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }] },
-    {
-      "source": "/five-plus-one/(.*)",
-      "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
-      "source": "/burrisphere/(.*)",
+      "source": "/papers/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/canon/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/foundations/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/trinity/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/formal/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/paradox/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/memetic/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/rosettad/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/operators/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/will/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/value/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/ground/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/sacred/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/method/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/meta/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/axiology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/epistemology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/methodology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/cosmology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/ontology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/theology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/teleology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
       ]
     },
     {
       "source": "/dasein/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/geometric-ontology/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/burrisphere/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/suda-notes/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/game/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/atlas/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/soul-loop/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/sources/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/five-plus-one/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/burrisphere/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/dasein/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/canon/the-complete-ontology-of-reality/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-283-the-orthogonality-theorem-v2/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-285-dreams-are-unanchored-d5/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-296-gravity-is-time/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-298-dark-matter-is-mutual-information/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/complete-ontology",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/five-plus-one",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/burrisphere",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/dasein",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/canon/the-complete-ontology-of-reality",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-283-the-orthogonality-theorem-v2",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-285-dreams-are-unanchored-d5",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-296-gravity-is-time",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/operators/mf-298-dark-matter-is-mutual-information",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow" },
-        { "key": "Cache-Control", "value": "no-store, max-age=0" },
-        { "key": "CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive, nosnippet, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "CDN-Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/offline",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    },
+    {
+      "source": "/offline/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
       ]
     }
   ]

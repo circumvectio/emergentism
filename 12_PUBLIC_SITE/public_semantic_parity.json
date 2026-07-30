@@ -430,5 +430,22 @@
     "sacred",
     "method",
     "meta"
-  ]
+  ],
+  "declaredProvisional": {
+    "ruling": "193_FIVE_RULINGS_SIGNED_2026_07_31.md Q4",
+    "meaning": "Passes all 16 forbidden-pattern checks; reachable, indexable and registered — but NOT warranted. Passing is a PROHIBITION test, not a warrant. A page is current only with a surfaceClaims binding, a tier register on its face, and an inbound link from an already-declared surface.",
+    "routes": [
+      "amrita/index.html",
+      "egg/index.html",
+      "riemann/index.html",
+      "suda/index.html"
+    ]
+  },
+  "infrastructureRoutes": {
+    "ruling": "193_FIVE_RULINGS_SIGNED_2026_07_31.md Q4",
+    "meaning": "Carries no doctrine; must not acquire semantic standing by being frozen.",
+    "routes": [
+      "offline/index.html"
+    ]
+  }
 }

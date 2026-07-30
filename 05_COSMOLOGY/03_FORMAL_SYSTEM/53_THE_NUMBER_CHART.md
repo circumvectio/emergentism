@@ -1,6 +1,6 @@
 ---
 title: "The Number Chart — every membership decision, with theorem or convention marked"
-status: "ACTIVE — §5.2 RULED 2026-07-30, POSITIVE-ONLY. The fork is closed; the cost is recorded in §3."
+status: "ACTIVE — §5.2 RULED 2026-07-30 (POSITIVE-ONLY) and §5.1 RULED 2026-07-31 (register-indexed: √2 is a number in ℝ AND is not a finite word; both clauses travel together, bare 'not a number' is banned). Receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md"
 date: 2026-07-29
 evidence_tier: "[A] N1–N5, G1, Z1 and the memberships marked THEOREM; [S] every membership marked CONVENTION; [I] the Titan gloss"
 owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and to 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md on all D1 claims."
@@ -58,7 +58,7 @@ parents:
 | Is `0` reachable from the base? | **no** | **THEOREM** | `G3`: `ι(x)=0` has no solution and `S` preserves positivity. Not un-visited — *no step lands there* |
 | Is `∞` a real number? | **no** | **THEOREM, unqualified** | `∞ ∉ ℝ`. It enters only by declared compactification, and `ℝP¹` (one unsigned point) and `[−∞,+∞]` (two ordered endpoints) are **different constructions** |
 | Is `∞` reachable? | **no** | **THEOREM** | `G4`: every word is finite. Reaching `∞` needs a *completed* infinity of operations, which is not a word |
-| Is `√2` a number? | **it is a LIMIT of operations, not an operation** | **THEOREM (that it is not a word); `§5.1` OPEN (what to call it)** | `G1`: reachability is exactly `ℚ⁺`. Completion adds uncountably many values no word reaches |
+| Is `√2` a number? | **YES in `ℝ` — and NOT a finite word over `{S, ι}`. Both, always together.** | **`§5.1` RULED 2026-07-31 (Q1, 4–0).** `[A]` covers exactly one clause: *not a finite word*. The word "limit" is `[S]`, and the base-side phrasing is *a non-halting word whose nest **denotes** a limit* — never *is* a limit, never *is* a word. **Bare "not a number" is banned.** | `G1`: reachability is exactly `ℚ⁺`. Completion adds uncountably many values no word reaches |
 | Is `1` doing two jobs? | **yes, and one causes the other** | **THEOREM** | `N4`: `ℤ` is initial in **Ring** — `n ↦ n·1_R`. The additive-generative role **follows from** the multiplicative-identity role. Nothing else in any ring does that |
 
 ---
