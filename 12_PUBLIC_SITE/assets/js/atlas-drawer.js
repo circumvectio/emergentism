@@ -37,6 +37,9 @@
     "#atlas-tree a:hover{color:" + GOLD + ";opacity:1}",
     "#atlas-tree a.atlas-here{color:" + GOLD + ";border-left-color:" + GOLD + ";opacity:1}",
     "#atlas-count{padding:4px 22px 10px;font:400 11px/1 'Roboto Mono',monospace;color:#8a8568}",
+    "#atlas-tree .atlas-band{margin:14px 6px 4px;padding:7px 10px;border-top:1px solid rgba(255,235,59,.28);",
+    "font:600 10.5px/1.45 'Roboto Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#8a8568}",
+    "#atlas-tree .atlas-band em{display:block;text-transform:none;letter-spacing:0;font:400 11px/1.5 'Roboto',sans-serif;color:#6f6b57;margin-top:3px}",
     ".bookbar #atlas-fab{position:static;right:auto;bottom:auto;z-index:auto;flex:0 0 auto;width:48px;height:48px;",
     "padding:0;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:0;line-height:1;opacity:1}",
     ".bookbar #atlas-fab::before{content:'☰';font-size:18px;line-height:1;color:inherit}",
@@ -70,18 +73,23 @@
     '<div id="atlas-count"></div><nav id="atlas-tree"></nav>';
   document.body.appendChild(panel);
 
-  var data = null;
+  var data = null, lib = null;
   var treeEl = panel.querySelector("#atlas-tree");
   var countEl = panel.querySelector("#atlas-count");
   var qEl = panel.querySelector("#atlas-q");
   var here = location.pathname.replace(/index\.html$/, "");
 
-  function render(filter) {
-    if (!data) return;
-    var q = (filter || "").trim().toLowerCase();
+  function band(label, note) {
+    var d = document.createElement("div");
+    d.className = "atlas-band";
+    d.textContent = label;
+    if (note) { var e = document.createElement("em"); e.textContent = note; d.appendChild(e); }
+    treeEl.appendChild(d);
+  }
+
+  function renderTree(tree, q) {
     var shown = 0;
-    treeEl.textContent = "";
-    data.tree.forEach(function (sec) {
+    tree.forEach(function (sec) {
       var det = document.createElement("details");
       var sum = document.createElement("summary");
       sum.textContent = sec.label;
@@ -101,19 +109,46 @@
       det.open = !!q || sec.pages.some(function (p) { return p.href === here; });
       treeEl.appendChild(det);
     });
+    return shown;
+  }
+
+  function render(filter) {
+    if (!data) return;
+    var q = (filter || "").trim().toLowerCase();
+    treeEl.textContent = "";
+    var shownCur = renderTree(data.tree, q);
+    var shownLib = 0, libTotal = 0;
+    if (lib && lib.tree) {
+      libTotal = lib.total || 0;
+      band("Frozen library · " + libTotal + " documents",
+           "Preserved for provenance. Served noindex — findable here, not in search engines. Where they conflict with the current pages above, the current pages govern.");
+      shownLib = renderTree(lib.tree, q);
+      if (shownLib === 0) {
+        var bands = treeEl.querySelectorAll(".atlas-band");
+        if (bands.length) bands[bands.length - 1].remove();
+      }
+    }
     if (!treeEl.firstChild) {
       var fallback = document.createElement("a");
       fallback.href = "/atlas/";
       fallback.textContent = "no match — open the full atlas";
       treeEl.appendChild(fallback);
     }
-    countEl.textContent = q ? (shown + " / " + data.total + " pages") : (data.total + " pages · " + data.tree.length + " sections");
+    var total = (data.total || 0) + libTotal;
+    countEl.textContent = q
+      ? ((shownCur + shownLib) + " / " + total + " pages")
+      : (total + " pages · " + data.total + " current, " + libTotal + " library");
   }
 
   function load() {
     if (data) return;
+    // Optional: if the library index is absent or fails, the drawer degrades to
+    // current surfaces rather than showing nothing.
+    fetch("/atlas/library_index.json").then(function (r) { return r.json(); })
+      .then(function (j) { lib = j; if (data) render(qEl.value); })
+      .catch(function () { lib = null; });
     fetch("/atlas/site_index.json").then(function (r) { return r.json(); }).then(function (j) {
-      data = j; render("");
+      data = j; render(qEl.value);
     }).catch(function () {
       treeEl.textContent = "";
       var a = document.createElement("a");
