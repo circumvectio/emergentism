@@ -1,6 +1,6 @@
 ---
 title: "Line 4 refuted, the site's findings landed, and a citation defect that lets a false reference pass a checker"
-status: "ACTIVE — repairs applied 2026-07-30; the citation defect is OPEN and needs an owner ruling on 40 files"
+status: "ACTIVE — repairs applied 2026-07-30; the citation defect is now GATED; 91 ambiguous numbers await an owner ruling"
 date: 2026-07-30
 evidence_tier: "[A] the Line 4 result and the counts below, each recomputed or grepped; [S] the naming of the correct energy register; [I] nothing"
 owner: "Subordinate to 05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md and to the site's own gate."
@@ -61,14 +61,19 @@ passed it**, because `180_*` matched
 `11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md`
 — an unrelated April document. **The number resolved. To the wrong file.**
 
-Measured in `11_UPLINK/50_AUDITS_AND_EXECUTIONS`:
+Measured across **both** receipt folders (`50_AUDITS_AND_EXECUTIONS` and
+`60_SESSION_PACKETS`), which is the scope that matters — `r156` names one document
+in each, and the number cannot distinguish them:
 
 ```text
-172   receipt files
- 26   numbers naming more than one document (53 files)
- 13   of those declare supersession properly
- 40   declare NOTHING
+300   receipt files
+ 91   numbers naming more than one UNDECLARED document
 ```
+
+> **Correction to this receipt, same day.** It first said *26*. That counted only
+> inside `50_AUDITS_AND_EXECUTIONS`. Counting across both folders gives **91** —
+> this document understated its own finding more than threefold, and the
+> understatement was found by writing the checker rather than by re-reading the prose.
 
 `r139` is the model to copy: the 07-19 file is marked
 `DISPUTED PROVENANCE [B/D] — NOT CURRENT K2 AUTHORITY` with `superseded_by:` pointing
@@ -83,10 +88,17 @@ were never written.** Anyone reading `git log` for "r193" finds nothing, and `19
 resolves to an unrelated April packet.
 
 **Rule adopted:** **cite receipts by PATH, not by number.** Numeric citation is
-unsound in this corpus until the 40 bare collisions are dispositioned.
+unsound in this corpus until the 91 ambiguous numbers are dispositioned.
 
-**Owner ruling needed:** disposition the 40. Each needs either a `superseded_by:`
+**Owner ruling needed:** disposition the 91. Each needs either a `superseded_by:`
 pointer or a distinct number.
+
+**Enforced from 2026-07-30.** `09_TOOLS/01_SCRIPTS/check_receipt_citations.py`, wired
+into `gate.sh` and therefore into CI. It **fails on any dangling citation** and pins
+the 91 to a baseline that may neither grow nor silently shrink. It is mutation-tested
+(inject a dangling number; add a collision; drop below baseline — all three fail as
+they should). **It does not prove a citation points at the RIGHT file.** Only a path
+can do that, which is why the rule is the rule.
 
 ---
 
