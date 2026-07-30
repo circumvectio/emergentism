@@ -1,5 +1,5 @@
 // Emergentism PWA service worker — receipt 124. Precache the spine; SWR runtime; offline fallback.
-const CACHE = 'emergentism-b56e388947f2';
+const CACHE = 'emergentism-b9c22b724cd4';
 const SPINE = [
   "/",
   "/practice/",

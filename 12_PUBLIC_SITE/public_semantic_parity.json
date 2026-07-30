@@ -16,62 +16,125 @@
     {
       "surface": "index.html",
       "role": "worldview_identity_and_finity_action",
-      "claimCardIds": ["FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"],
+      "claimCardIds": [
+        "FIN01-01",
+        "OS01-13",
+        "OS01-20",
+        "OS01-22",
+        "OS01-26"
+      ],
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
           "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
           "lifecycle": "active",
-          "claimCardIds": ["FIN01-01"]
+          "claimCardIds": [
+            "FIN01-01"
+          ]
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
           "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
           "lifecycle": "reader_synthesis",
-          "claimCardIds": ["OS01-13", "OS01-20", "OS01-22", "OS01-26"]
+          "claimCardIds": [
+            "OS01-13",
+            "OS01-20",
+            "OS01-22",
+            "OS01-26"
+          ]
         }
       ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["A worldview for finite beings", "Frame one decision", "comparative benefit untested"]
+      "requiredMarkers": [
+        "A worldview for finite beings",
+        "Frame one decision",
+        "comparative benefit untested"
+      ]
     },
     {
       "surface": "practice/index.html",
       "role": "finity_practice_and_comparative_question",
-      "claimCardIds": ["FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"],
+      "claimCardIds": [
+        "FIN01-01",
+        "FIN01-02",
+        "OS01-08",
+        "OS01-13",
+        "OS01-22"
+      ],
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
           "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
           "lifecycle": "active",
-          "claimCardIds": ["FIN01-01", "FIN01-02"]
+          "claimCardIds": [
+            "FIN01-01",
+            "FIN01-02"
+          ]
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
           "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
           "lifecycle": "reader_synthesis",
-          "claimCardIds": ["OS01-08", "OS01-13", "OS01-22"]
+          "claimCardIds": [
+            "OS01-08",
+            "OS01-13",
+            "OS01-22"
+          ]
         }
       ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Finity Card", "private two-face receipt", "comparative benefit over simpler decision practices remains open"]
+      "requiredMarkers": [
+        "Finity Card",
+        "private two-face receipt",
+        "comparative benefit over simpler decision practices remains open"
+      ]
     },
     {
       "surface": "lab/index.html",
       "role": "finity_external_evaluation_gates",
-      "claimCardIds": ["FIN01-01", "FIN01-02"],
+      "claimCardIds": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
           "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
           "lifecycle": "active",
-          "claimCardIds": ["FIN01-01", "FIN01-02"]
+          "claimCardIds": [
+            "FIN01-01",
+            "FIN01-02"
+          ]
         }
       ],
       "publicDisposition": "bounded_current",
-      "requiredMarkers": ["Three gates before", "Three candidate protocols are typed as drafts", "FPE-READ-01 · TYPED DRAFT · NOT RUN", "FPE-REVIEW-01 · TYPED DRAFT · NO REVIEW EXISTS", "FPE-COMPARE-01 · TYPED DRAFT · NOT PREREGISTERED", "None of these gates validates an ontology."]
+      "requiredMarkers": [
+        "Three gates before",
+        "Three candidate protocols are typed as drafts",
+        "FPE-READ-01 · TYPED DRAFT · NOT RUN",
+        "FPE-REVIEW-01 · TYPED DRAFT · NO REVIEW EXISTS",
+        "FPE-COMPARE-01 · TYPED DRAFT · NOT PREREGISTERED",
+        "None of these gates validates an ontology."
+      ]
     }
   ],
-  "sequence": ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"],
+  "sequence": [
+    "D0",
+    "mu0",
+    "D1",
+    "mu1",
+    "D2",
+    "mu2",
+    "D3",
+    "mu3",
+    "D4",
+    "mu4",
+    "D5",
+    "b6",
+    "D6",
+    "r6",
+    "D0"
+  ],
   "levels": [
     {
       "id": "D0",
@@ -83,7 +146,10 @@
       "inherited": "Projective geometry and ordinary arithmetic are inherited mathematics [A]; the Titan reading is Emergentist interpretation [I].",
       "boundary": "No field theorem says 0 times infinity equals 1. The emblem is not an operation license, substance, agent, or forced generator of reality.",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
-      "claimCardIds": ["OS01-01", "OS01-02"],
+      "claimCardIds": [
+        "OS01-01",
+        "OS01-02"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -109,9 +175,12 @@
       "modality": "formal",
       "summary": "D1 owns distinction, arithmetic, inversion, limits, and type-correct boundary behavior. Division by zero remains undefined in a field; mapping to a projective pole changes the structure and must be named.",
       "inherited": "Field axioms, directional limits, inversion, logarithms, and projective extension are inherited mathematics [A].",
-      "boundary": "A limit toward infinity is not a field quotient by zero, and projective infinity is not an ordinary real number.",
+      "boundary": "A limit toward infinity is not a field quotient by zero, and projective infinity is not an ordinary real number. The energy well drawn here is E(x) = (log x) squared, which is machine-checked: it is zero only at x = 1 and strictly positive elsewhere, and it is unchanged under x to 1/x.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md",
-      "claimCardIds": ["OS01-03", "OS01-04"],
+      "claimCardIds": [
+        "OS01-03",
+        "OS01-04"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -139,7 +208,9 @@
       "inherited": "Function theory, topology, geometry, and coordinate charts are inherited mathematics [A].",
       "boundary": "A picture may reveal structure hidden on a line, but visualization alone proves neither a new ontology nor strong emergence.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md",
-      "claimCardIds": ["OS01-05"],
+      "claimCardIds": [
+        "OS01-05"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -167,7 +238,10 @@
       "inherited": "Density operators, POVMs, Born probabilities, Fourier duality, and uncertainty relations are inherited quantum theory [A].",
       "boundary": "No realized D4 event does not mean zero change, zero momentum, or a timeless state. This scaffold does not solve measurement, quantum gravity, or quantum interpretation.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md",
-      "claimCardIds": ["OS01-06", "OS01-07"],
+      "claimCardIds": [
+        "OS01-06",
+        "OS01-07"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -193,9 +267,11 @@
       "modality": "actual",
       "summary": "D4 is the register of what actually occurs: embodied means, attempted action, interaction, outcome, and record. Spacetime, bodies, physical light cones, and cognition are application lenses inside actuality rather than alternate definitions of the rung.",
       "inherited": "Physical dynamics and spacetime constraints remain those of the relevant sciences; Emergentism supplies no replacement law.",
-      "boundary": "A selector can issue a commitment receipt but cannot manufacture the world's outcome receipt. Physical light cones remain bounded by spacetime and c.",
+      "boundary": "A selector can issue a commitment receipt but cannot manufacture the world's outcome receipt. Physical light cones remain bounded by spacetime and c. THE HORN TORUS WAS TESTED AS COSMOLOGY AND FAILED: fitted against the data cosmology uses, it did worse than special relativity, with a best-fit expansion rate of exactly zero. It is kept here as a rapidity illustration and a light-cone diagram, which is what it is good for, and NOT as a cosmological model. The animation shows a real identity; it does not show a surviving theory.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
-      "claimCardIds": ["OS01-08"],
+      "claimCardIds": [
+        "OS01-08"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -221,9 +297,14 @@
       "modality": "possible",
       "summary": "Φ names D5 possible power: the structured potential of an option field. V names D4 actual power: embodied capability and usable means. A present model evaluates the first and couples it to the second; an unrealized future never acts by itself.",
       "inherited": "Decision theory, control, planning, counterfactual reasoning, and institutional coordination supply comparison classes.",
-      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. P_node = Φ̂₄ times V₄, publicly Φ times V, is a selected model—not a universal law or future-to-past force. Lowercase φ and ν remain chart coordinates.",
+      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. P_node = Φ̂₄ times V₄, publicly Φ times V, is a selected model—not a universal law or future-to-past force. Lowercase φ and ν remain chart coordinates. The product is the CONSTRAINT and marks nothing: phi times nu equals one at every latitude including both poles. What marks the equator is the SUM, phi plus nu, which is at least 2 with equality exactly when phi equals nu — the AM-GM inequality. An earlier reading used minus-log of the product as an energy; that quantity is identically zero and was withdrawn 2026-07-30.",
       "source": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
-      "claimCardIds": ["OS01-09", "OS01-10", "OS01-11", "OS01-12"],
+      "claimCardIds": [
+        "OS01-09",
+        "OS01-10",
+        "OS01-11",
+        "OS01-12"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -262,7 +343,10 @@
       "inherited": "Formal limits motivate humility but do not prove this scaffold complete.",
       "boundary": "There is no additional μ-crossing after μ4, and D6 is not identical to D0. The return edge r6 means boundary-role resemblance only, not recurrence, identity, topology, or self-similarity.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
-      "claimCardIds": ["OS01-25", "OS01-26"],
+      "claimCardIds": [
+        "OS01-25",
+        "OS01-26"
+      ],
       "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
@@ -320,5 +404,21 @@
     "assets/js/living-map.js",
     "living-map.json"
   ],
-  "frozenLibraryRoots": ["papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators", "will", "value", "ground", "sacred", "method", "meta"]
+  "frozenLibraryRoots": [
+    "papers",
+    "canon",
+    "foundations",
+    "trinity",
+    "formal",
+    "paradox",
+    "memetic",
+    "rosettad",
+    "operators",
+    "will",
+    "value",
+    "ground",
+    "sacred",
+    "method",
+    "meta"
+  ]
 }

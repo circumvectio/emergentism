@@ -80,11 +80,11 @@ const modeLabels = {
 };
 const modeInvariants = {
   titans: "s_left + s_right = 0",
-  logline: "x·1/x = 1",
+  logline: "x·1/x = 1 · E=(ln x)² min at 1",
   muLimit: "rank +1 at μ",
   bloch: "φ·ν = 1",
-  horn: "R/r = 1/γ",
-  burrisphere: "φ·ν = 1 · B=sinθ",
+  horn: "R/r = 1/γ · u=(x−1)/(x+1)=tanh(s/2)",
+  burrisphere: "φ·ν = 1 everywhere · φ+ν ≥ 2 marks it",
   constitution: "5 refusals + Ω",
   ccc: "r6: D6 ↝ D0",
   convergence: "r6: D6 ↝ D0"
@@ -116,8 +116,8 @@ const modeSignalLabels = {
   logline: { primary: "B", secondary: "|u|", error: "σ x·1/x" },
   muLimit: { primary: "μ", secondary: "λ", error: "σ projection" },
   bloch: { primary: "B", secondary: "ρ", error: "σ φν/ρ" },
-  horn: { primary: "dτ/dt", secondary: "β", error: "σ R/r" },
-  burrisphere: { primary: "B", secondary: "balance proximity", error: "σ φν/ray" },
+  horn: { primary: "dτ/dt", secondary: "β = tanh w", error: "σ R/r" },
+  burrisphere: { primary: "B", secondary: "φ+ν (min 2 at equator)", error: "σ φν/ray" },
   constitution: { primary: "scan", secondary: "centroid", error: "σ closure" },
   ccc: { primary: "aeon q", secondary: "rescale", error: "σ q-map" },
   convergence: { primary: "aeon q", secondary: "rescale", error: "σ q-map" }
@@ -2062,9 +2062,17 @@ function buildScene(mode, scene) {
           primary: balance,
           primaryLabel: "B",
           primaryText: balance.toFixed(3),
-          secondary: 1 / (1 + imbalance),
-          secondaryLabel: "1/(1+|lnφ|)",
-          secondaryText: (1 / (1 + imbalance)).toFixed(3),
+          // THE SUM, not the product. phi*nu = 1 at every latitude and marks nothing;
+          // phi+nu is >= 2 with equality exactly at phi = nu — that is AM-GM, and it is
+          // what actually locates the equator. The corrected energy register is the
+          // EXCESS over that minimum: E = phi + nu - 2 = 4 sinh^2(s/2), zero only here.
+          // An earlier reading used -log(phi*nu) as the energy; that is identically zero
+          // and was withdrawn 2026-07-30.
+          // Also true and worth seeing: phi+nu = 2/sin(theta), so 2/(phi+nu) is EXACTLY
+          // B. The primary and the sum are one measurement in two forms.
+          secondary: 1 / (1 + Math.max(0, phi + nu - 2)),
+          secondaryLabel: "φ+ν−2 (=0 at equator)",
+          secondaryText: (phi + nu).toFixed(3) + " → " + Math.max(0, phi + nu - 2).toFixed(3),
           error: clamp01((reciprocalResidual * 1e6) + rayResidual * 18),
           errorText: Math.max(reciprocalResidual, rayResidual).toExponential(1)
         }
