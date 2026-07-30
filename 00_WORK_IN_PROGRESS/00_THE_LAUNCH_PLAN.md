@@ -97,6 +97,51 @@ surfaces, and a small client-side filter over it.
 - **Exit condition:** typing three characters from any document title reaches that
   document, offline, with JavaScript as the only requirement.
 
+## Status board — 2026-07-30, end of session
+
+| sprint | state |
+|---|---|
+| **L1 search** | **DONE**, verified live. 368 pages reachable from the drawer. |
+| **L2 breadcrumbs + prev/next** | **DONE**, 292 pages, 0 dangling. |
+| **QA blockers (7)** | **ALL CLOSED**, verified live. |
+| **M models and animations** | **DONE** — see below. |
+| **L3 social cards** | open — 360 pages still without `og:image` |
+| **L4 library shell** | open — 152 files with inconsistent sidebar markup |
+| **L5 layout QA** | **BLOCKED** — needs a real viewport; this pane reports `clientWidth: 0` |
+| **L6 the launch act** | owner — two decisions, listed below |
+
+## SPRINT M · Models and animations · **DONE 2026-07-30**
+
+Surveyed all seven modes (2,403 lines) before changing anything, and the survey was the
+finding: **the animations were already right where the prose was wrong.** `E = (ln x)²` —
+the Lean-checked energy — has been drawn at `dimensions.js:1415` the whole time, while the
+pages published the degenerate `−log(φ·ν)` for months. The horn uses correct SR and its own
+comment refuses to overclaim. The burrisphere is exactly the two-projection model: ray from
+`∞` landing at `2r·cot(θ/2)`, ray from `0` at `2r·tan(θ/2)`, both through P.
+
+**What was missing:** `phi + nu` appeared **zero times in 2,403 lines**. The product was
+everywhere; the sum — which is what marks the equator — was nowhere. Now in the D5 readout
+as `E = φ+ν−2 = 4 sinh²(s/2)`, verified numerically to ten decimals, along with the fact
+that `φ+ν = 2/sin θ` so `2/(φ+ν)` is *exactly* `B`.
+
+**And the fence `/4/` never had:** the horn torus was tested as cosmology and failed —
+worse than special relativity, best-fit expansion rate exactly zero. A beautiful animation
+of a dead model with no mention that it died. Now stated on the page.
+
+**Remaining model work, in order** — none of it blocking:
+
+1. **`three.js` is 269KB, unminified, 62% of the six numbered surfaces.** The single
+   largest launch-performance item. Options: minify in place, lazy-load below the fold, or
+   drop to a 2D canvas for the modes that do not need 3D (`logline`, `muLimit`).
+2. **D2 `muLimit` and D3 `bloch` were not re-examined** against today's rulings. `bloch`
+   currently shows `φ·ν = 1`, which is the *sphere's* keel — check it is not being
+   borrowed onto the Bloch sphere, where it means something else.
+3. **D0 `titans` and D6 `ccc`** carry interpretive readings that should be tier-marked in
+   the readout the way D4 and D5 now are.
+4. **Reduced motion.** No mode checks `prefers-reduced-motion`; every one animates.
+
+---
+
 ## SPRINT L2 · Prev / next and breadcrumbs · *the spine already exists*
 
 `reading-manifest.json` is ordered and sectioned. Nothing needs authoring — only rendering.
