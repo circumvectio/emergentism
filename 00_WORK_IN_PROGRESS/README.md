@@ -115,23 +115,40 @@ produce a middle; the keel as a protractor fact; the honesty-constitution negati
 result; **the law applied to itself returning 0**; and the dependency-priority /
 actuality / salience separation on the spine.
 
-**Not landed, and why** — these change what the framework *claims*, not whether it is
-stated accurately, so each needs an owner ruling and not an edit:
+**Not landed, and why** — after a second verification pass on 2026-07-30, **21 of the 28
+landed and 6 were rejected as ungrounded or already public.** What remains:
 
-| # | item | what it needs |
+| # | item | state |
 |---|---|---|
-| 3, 3a | `μ₂` and `μ₃` adjudicated failed; `μ₀` still owes its discriminator; both candidate instruments fail to discriminate | a ruling on whether the site may still show five live crossings |
-| 4 | `D0`/`D6` as a **duality, not an identity** — inversion exchanges the poles, it does not quotient them | reconciliation with the `D6~D0` closure ruled Path B today |
-| 7 | the live constitution is `R0`: **no necessary being** | which constitution edition is public |
-| 12 | a Rosetta falsifier **fired and was logged as a pass** | an integrity retraction, owner-countersigned |
-| 13, 14 | no single score is permitted; the ontology profile has **explicit zeros** | the specific per-profile figures were not verifiable in the time available |
-| 16 | ~~over-claiming is endogenous; antibody = a word watchlist~~ | **REJECTED 2026-07-30.** No such watchlist exists. Every `watchlist` hit in the corpus is product material — a three-entity token watchlist in an unrelated venture document. The claim was not grounded. |
-| 19 | **ten senses of "exists"**; "everything coherent actually exists" is a retired inflation | a ruling on the retired form |
-| 22 | the metaethics is an **open docket** against nine rival families, error theory admissible | whether to reopen a page that currently reads settled |
-| 23, 24 | Suda's chart is a proper sub-chart; the hinge **is** the relativistic velocity ratio | **BOTH LANDED 2026-07-30.** 24 proved in two lines rather than "numerically verified": `u(x) = tanh((log x)/2)` exactly, so with `s/2` read as a rapidity it is a velocity ratio and the rims are unreachable for the reason `c` is. Algebra `[A]`, the reading `[S/I]`. 23 was already in the Lean file's own docstring. |
-| 25 | ~~the three seats are forced on the ray, selected on the sphere~~ | **REJECTED 2026-07-30.** The phrasing appears nowhere in the corpus outside the audit's own plan file, and the substance — unique positive fixed point, so uniqueness is bought by excluding the other half — is already published via 23 and the positive-only price. |
-| 27 | the adversarial audits' **own error rate** — five wrong file-level findings in two days | this session adds to that count, and the number should be recomputed before publishing |
-| 28 | Path D: the four-operator structure does not follow from the framework's own inequality | the audit itself recommended skipping — the pages are `noindex` and the finding is already logged |
+| 3 | `μ₂`/`μ₃` adjudicated failed; `μ₀` owes its discriminator | PARTLY-CONFIRMED. The *instrument* result landed (below). Whether `/dimensions/` may keep showing five crossings is an owner call — they are labelled "candidate crossing", which may already be adequate. |
+| 11 | five terminal counterexamples (`ℤ₅`, Tarski, one martyr, electroweak, the kernel identity) | all five subjects exist in the corpus; the individual adjudications were not read. The two-axis discipline and the 22 terminal rows landed instead. |
+| 14 | the ontology profile's specific figures | PARTLY-CONFIRMED — three numbers confirmed, but the framing "explicit zeros in the ontology profile" is **false**. The substance landed via the eight ceilings. |
+| 28 | Path D and the four-operator structure | the audit itself recommended skipping; the pages are `noindex` and the finding is already logged. |
+
+**Rejected outright**, so they are not re-proposed: item 4 (`D0`/`D6` duality — *already
+settled canon and already public in substance*, and it does **not** contradict the Path B
+ruling of 2026-07-30); item 25
+(a phrase appearing only in the audit's own output); and two more the verifiers found
+already public in stronger form than claimed.
+
+> **A rejection in this file was itself wrong, and the correction belongs here.** On
+> 2026-07-30 I recorded item 16 as rejected — *"no such watchlist exists; every
+> `watchlist` hit is product material."* **False.** It is at
+> `03_METHODOLOGY/00_THE_LENS_NOT_LAW_RULE.md:25`, a five-row trigger table at tier
+> `[S]`, opened 2026-06-10. My search listed candidate files and truncated the list
+> before reaching it. **That document predicts this exact failure** — *"audits of
+> over-claims are themselves prone to the over-claim error, in both directions"*, and it
+> gives the case of a grep that returned 0 as a false all-clear. So the audit error
+> count drops from six to five, and one of mine is added in its place.
+
+**Landed in the second pass:** 16 (the trigger watchlist and the single escape hatch); 3a (neither `μ`-instrument discriminates — one kills four
+of five, the other none of five); 7 (`R0 · no necessary being` as a **refusal, never an
+axiom**, with the correction that it does *not* rename the architecture); 12 (a Rosetta
+falsifier fired and was logged as a pass — **already caught by the corpus in July**, so
+published as a self-catch and not as a live failure, `/record/` №029); 13 (the eight
+profiles and their ceilings); 19 (ten typed senses of "exists" and the retired
+plenitude inflation); 22 (nine rival metaethical families); 23, 24 (the sub-chart and
+the hinge-as-velocity-ratio, proved rather than asserted); 27 (the audit error rate).
 
 **Item 27 deserves the last word.** Of the 28 proposals, **at least six** were wrong on
 their specifics — a claimed nine pages misusing the product where the true count is
