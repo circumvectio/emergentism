@@ -56,7 +56,7 @@ The Replicator column in [`01_EMERGENTISM/11_UPLINK/00_CORE/06_AGENTS.md`](../00
 | L4 | Kṣatriya | **Memotype** |
 | L5 | Brāhmaṇa | **Egregorotype** |
 | L6 | Sādhu | **Protocolotype** |
-| L7 | Systems Architect | **Genesis (D0=D6 closure)** |
+| L7 | Systems Architect | **Genesis (D6~D0 closure, [I])** |
 
 **Reading II** — proposed in [`01_EMERGENTISM/11_UPLINK/90_ARCHIVE/06b_AGENTS_ROWS_v2.md`](../90_ARCHIVE/06b_AGENTS_ROWS_v2.md) §2 Limit B:
 
@@ -68,7 +68,7 @@ The Replicator column in [`01_EMERGENTISM/11_UPLINK/00_CORE/06_AGENTS.md`](../00
 | L4 | Kṣatriya | **extended phenotype** |
 | L5 | Brāhmaṇa | **memotype** |
 | L6 | Sādhu | **egregorotype** |
-| L7 | Systems Architect | **genesis / closure (D0 ≡ D6, meta-replicator)** |
+| L7 | Systems Architect | **genesis / closure (D6~D0, meta-replicator, [I])** |
 
 Every level shifts by one. L1 gets a *new* replicator type (`immune-phenotype`); L6 loses `Protocolotype` (which had no canon source) and gains `egregorotype`.
 
@@ -161,7 +161,7 @@ Per [`53_DISAMBIGUATION_REVIEW_PACKET.md`](53_DISAMBIGUATION_REVIEW_PACKET.md) �
 | L4 | Memotype | extended phenotype |
 | L5 | Egregorotype | memotype |
 | L6 | Protocolotype | egregorotype |
-| L7 | Genesis (D0=D6 closure) | genesis (D0 ≡ D6 closure) |
+| L7 | Genesis (D6~D0 closure, [I]) | genesis (D6~D0 closure, [I]) |
 
 No other column changes. No caste renaming. No operator change. No pramāṇa change.
 
@@ -273,7 +273,7 @@ Cognitive flow replicates in the reverse of biological flow:
 | L4 | Kṣatriya | **Memotype** | The decision propagates as precedent. Every execution is memetic — the action becomes an idea other agents copy. |
 | L5 | Brāhmaṇa | **Egregorotype** | Architecture shapes the collective pattern. The priest's redesign is egregoric — it binds many agents into one standing wave. |
 | L6 | Sādhu | **Protocolotype** | The renunciant strips the egregoric pattern to its invariant protocol. What remains after compression is a protocol that replicates more cleanly than the full pattern did. Protocolotype = memotype-that-replicates-losslessly. |
-| L7 | Systems Architect | **Genesis (D0 ≡ D6 closure)** | The seer sees the closure. The protocol, fully compressed, becomes the seed — generation starts again. |
+| L7 | Systems Architect | **Genesis (D6~D0 closure, [I])** | The seer sees the closure. The protocol, fully compressed, becomes the seed — generation starts again. |
 
 **Reading I is not a drift from C4.** It is a parallel projection of the same structural hierarchy onto a different domain. C4 tells the replicator story in biology (bottom-up from gene to egregore over 4 Gyr). Reading I tells the replicator story in cognition (top-down from observation to protocol within one cognitive cycle). Both are `[S]` structural; neither is more "canonical" than the other because they are about different things.
 

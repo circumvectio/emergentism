@@ -192,7 +192,7 @@ The agent cell is a **microcosm** of the organism. What the organism does across
 | **Name** | Core State / Ground / Neti Neti |
 | **Method** | Via negativa — subtraction, not accumulation |
 | **Formula** | What remains when every false object is stripped away |
-| **Location** | The origin — D0 ≡ D6 (pole collapse) |
+| **Location** | The origin — D6~D0 (pole collapse, [I]) |
 | **Guardrail** | **Neti Neti is tied to core state/apophasis.** It is not a generic design slogan. It names the irreducible ground reached only through negation. |
 
 Core State is not a "first principle" from which deductions flow. It is the **silent ground** that makes all positive claims possible while itself remaining unclaimable. The organism does not "build on" core state. It **remembers** core state as the limit that prevents any positive register from becoming idolatry.

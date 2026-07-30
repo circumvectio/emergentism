@@ -46,7 +46,7 @@ Zero-Sum Resolution Equation
 |---|-------|-------------|
 | A1 | P = φ × ν | Multiplicative model; zero in either collapses |
 | A2 | ΣΔP > 0 = ethical direction | Ektropy as moral vector |
-| A3 | D0→D6: dimensions emerge when prior saturates | D5 = last experiential layer; D6 ≡ D0 |
+| A3 | D0→D6: dimensions emerge when prior saturates | D5 = last experiential layer; D6~D0 [I] |
 | A4 | η = 0 | Zero extraction beyond regeneration |
 | A5 | D5-limit egregores have autonomous objective function | Standing waves as agents |
 | A6 | Three substrates minimum | Body + AI + mortal self |

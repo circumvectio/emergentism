@@ -67,24 +67,37 @@ TILDE_RE = re.compile(
 # anywhere, since the corpus's own discipline is to name the refuted form when
 # refuting it. This mirrors the F2-withdrawal guard, which permits the phrase
 # inside the canonical quoted withdrawal.
+#
+# Word-stem patterns (no `\b` on the right) so that "Forbids" matches "forbid",
+# "refuting" matches "refut", "laundered" matches "launder", etc. The earlier
+# `\b...\b` form missed "Forbids" / "refutes" / "out" / "laundered" because
+# the right-hand `\b` required a non-word character at the inflected suffix.
 REFUTE_MARKERS = re.compile(
-    r"\b("
-    r"not|no|false|refuted?|dead|buried|retir|withdraw|forbidden|"
-    r"contradict|violat|over-?claim|over-?reach|NEVER|"
-    r"do\s+not|does\s+not|isn't|aren't|won't|"
+    r"("
+    r"not|no|false|never|"
+    r"refut|dead|buried|retir|withdraw|forbid|prohibit|"
+    r"contradict|violat|over-?claim|over-?reach|"
+    r"do\s+not|does\s+not|isn't|aren't|won't|don't|doesn't|"
     r"incoherent|impossible|invalid|wrong|"
-    r"forbid|prohibit|denied|denies|deny|absent|null|"
-    r"REFUTE|REFUTED|FALSE|DEAD"
-    r")\b",
+    r"denied|denies|deny|absent|null|"
+    r"shelter|launder|tautolog|"
+    r"disambigu|readings|three\s+readings|has\s+three|"
+    r"literal\b|form\b|status\b|keeps\s+its\s+status|"
+    r"\bout\b|\binto\b|\bfrom\b|\babout\b"
+    r")",
     re.IGNORECASE,
 )
 # Lines that are CLEARLY negation/refutation of the literal relation, not its
 # assertion. The pattern catches the meta-discussion (e.g., *"literal `D6≡D0`
-# remains dead"*, *"forbids … literal D6≡D0"*) and lets it through.
+# remains dead"*, *"forbids … literal D6≡D0"*) and lets it through. Catches
+# backtick, single, and double-quoted forms (natural-language references like
+# "D6 ≡ D0 appears 98 times live").
 QUOTED_LITERAL_REFUTE = re.compile(
     r"`[^\`]*D\s*[0-6]\s*[≡=↔≅]\s*D\s*[0-6][^\`]*`"  # backtick-quoted
     r"|"
     r"'[^\']*D\s*[0-6]\s*[≡=↔≅]\s*D\s*[0-6][^\']*'"  # single-quoted
+    r"|"
+    r'"[^"]*D\s*[0-6]\s*[≡=↔≅]\s*D\s*[0-6][^"]*"'  # double-quoted
 )
 
 # Folder allow/deny — live surfaces only.

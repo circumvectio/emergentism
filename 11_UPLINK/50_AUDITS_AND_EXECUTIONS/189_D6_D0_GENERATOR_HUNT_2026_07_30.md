@@ -1,5 +1,5 @@
 ---
-title: "Receipt 189 — D6 ≡ D0 generator-hunt: 73 live assertions, concentrated in UPLINK; STAGED audits the structural source"
+title: "Receipt 189 — D6~D0 generator-hunt: 73 live assertions, concentrated in UPLINK; STAGED audits the structural source"
 date: 2026-07-30
 status: "INVESTIGATION COMPLETE — generator identified; standing fence or K2 ratification required"
 evidence_tier: "[A] counts and cluster analysis; [B] generator hypothesis; [I] the framing"
@@ -15,9 +15,9 @@ parents:
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
 ---
 
-# Receipt 189 — D6 ≡ D0 generator-hunt
+# Receipt 189 — D6~D0 generator-hunt
 
-**The user's framing.** "D6 ≡ D0 appears 98 times live, and the lens audit asked for a
+**The user's framing.** "D6~D0 appears 98 times live, and the lens audit asked for a
 standing fence with the note 'so the fifth recurrence is the last.' It's been repaired
 four times and returned."
 
@@ -92,9 +92,9 @@ There is no single source file. The relation is **structurally required** by fou
 distinct framework concepts, and each is independently re-introducing it:
 
 1. **The simulation's visual cycle** (`SIMULATION_SPEC.md`, 9 asserts). The six
-   animations show dimensional emergence D0→D5, with **D6=D0 as the closure that returns
-   to the dot**. The cycle is the whole point of the visual; without D6=D0 there is no
-   ouroboros, only a line.
+   animations show dimensional emergence D0→D5, with **D6→D0 (closure, [S]) as the
+   return to the dot**. The cycle is the whole point of the visual; without the
+   closure there is no ouroboros, only a line.
 
 2. **The dimensional ladder's boundary** (`23_DIMENSIONAL_CLOSURE_PROOF.md`,
    `41_UNIFIED_DIMENSIONAL_DERIVATION.md`, `25_STEEL_THREAD.md`). A strict ladder
@@ -102,8 +102,8 @@ distinct framework concepts, and each is independently re-introducing it:
    the closing move; the proofs and the derivation use it as the boundary.
 
 3. **The papers' axiom** (`AX3_THE_SCAFFOLD.md`): *"Reality unfolds D0→D6; each level
-   emerges at its μ-limit (saturation); D6 ≡ D0 (closure)."* The peer-review program's
-   paper form is published with the relation as a stated axiom.
+   emerges at its μ-limit (saturation); D6→D0 (closure, [S])."* The peer-review
+   program's paper form is published with the relation as a stated axiom.
 
 4. **The audit stack** (107, 110, 63, 137, 126, 131, 73, 133, 116). Each audit
    re-raises the question because the previous resolution was **STAGED, not ADOPTED**.

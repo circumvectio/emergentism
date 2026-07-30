@@ -1,5 +1,5 @@
 ---
-title: "107 — The two motions close at D6≡D0; the open loop — STAGED, pending K2"
+title: "107 — The two motions close at D6~D0; the open loop — STAGED, pending K2"
 date: 2026-07-10
 status: "[E] K2-COUNTERSIGNED 2026-07-10 ('accept'). APPLIED to canon: Rule 3 (D6 row — the two motions meet + summit-as-return), Rule 4 (the open-loop paragraph, written AS an open edge), Settled-Canon-Registry row 'The loop / the open loop'. Its FORM enacts its content: [S] spine firm, [I/C] edge open. Extends receipts 105–106."
 evidence_tier: "[S] the loop-closure + bounded-μ/unbounded-χ asymmetry; [I/C] the constitutive-openness turn (downstream of the two [C] wagers) — logged as orientation, NOT theorem"
@@ -11,10 +11,10 @@ parents:
   - ../../05_COSMOLOGY/00_THE_BURRI_RULES.md
 ---
 
-# 107 · The two motions close at D6 ≡ D0 — and the loop stays open
+# 107 · The two motions close at D6~D0 — and the loop stays open
 
 > **Origin.** The last turn of the D4/D5 thread: where do μ↑ (strong) and χ↓
-> (weak) *meet*? At **D6 ≡ D0**. This receipt writes the part that can be closed
+> (weak) *meet*? At **D6~D0**. This receipt writes the part that can be closed
 > firmly, and the part that cannot — *as* an open edge. Finishing it would
 > contradict it.
 
@@ -105,7 +105,7 @@ looks. So, against my own beauty:
 > φ-bias warning applies to this paragraph most of all.*
 
 **(c) Settled Canon Registry** — new row "The loop / the open loop":
-> `[S]` D6≡D0 closes the ladder; μ (strong) terminates → bounded genesis, χ (weak)
+> `[S]` D6~D0 closes the ladder; μ (strong) terminates → bounded genesis, χ (weak)
 > does not → unbounded operation; the summit is a *return to the Ground*, not a
 > supermind. `[I/C]` open edge: if the wagers hold, the loop resists both
 > derivation and prediction → constitutively open → completes only in Pratyakṣa;

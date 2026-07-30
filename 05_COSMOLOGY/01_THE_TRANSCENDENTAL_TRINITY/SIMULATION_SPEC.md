@@ -14,7 +14,7 @@ rosetta:
 ## Six Animations — Six Degrees of Freedom
 
 **Date:** 2026-03-23
-**Purpose:** Specify the six interactive animations showing dimensional emergence from D0 through D5, with D6=D0 closure
+**Purpose:** Specify the six interactive animations showing dimensional emergence from D0 through D5, with D6→D0 (closure, [S])
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as a genesis-era simulation/design packet, not as the current tier-authority surface for Foundation claims.
 >
@@ -26,7 +26,7 @@ rosetta:
 
 Six animations. Each shows the emergence of one dimension from the previous. Each builds on the last. The sequence IS the core state.
 
-Animation 5 (D4, the Burri Torus) and Animation 6 (D5, the Burri Sphere) already exist as the `#torus` and `#sphere` pages. Animations 1-4 are new. Animation 7 (D6=D0) is the closure that returns to Animation 1.
+Animation 5 (D4, the Burri Torus) and Animation 6 (D5, the Burri Sphere) already exist as the `#torus` and `#sphere` pages. Animations 1-4 are new. Animation 7 (D6→D0, closure, [S]) is the return to Animation 1.
 
 ```
 ANIM-1:  D0  The Point         — The Bindu. Just a dot. Nothing else.
@@ -35,7 +35,7 @@ ANIM-3:  D2  The Surface       — The line curves. The sphere emerges. EM confi
 ANIM-4:  D3  The Volume        — The surface gains depth. Time appears. Weak transformation.
 ANIM-5:  D4  The Burri Torus   — Spacetime. The horn torus. Many-worlds. [EXISTING: #torus]
 ANIM-6:  D5  The Burri Sphere  — Agency / selection. φ · ν = 1. Consciousness as lived reading [I]. [EXISTING: #sphere]
-         D6 = D0  Closure      — The sphere collapses back to the dot. The cycle completes.
+         D6 → D0  Closure [S]  — The sphere collapses back to the dot. The cycle completes.
 ```
 
 ---
@@ -309,7 +309,7 @@ i = the equator. Consciousness-as-lived-reading [I]. The 1 between 0 and ∞.
 
 ---
 
-## D6 = D0: THE CLOSURE
+## D6 → D0: THE CLOSURE (`[S]` declared wrap)
 
 ### What It Shows
 The sphere collapses. ν → 0. φ → ∞. The sphere returns to the dot. The cycle completes.
@@ -328,7 +328,7 @@ D2: The sphere projects a plane.
 D3: The plane gains depth. Two planes. Time.
 D4: The horn torus. Spacetime. Many-worlds.
 D5: The Burri Sphere. Agency / selection. Stars.
-D6 = D0: The sphere collapses. The dot returns. The cycle completes.
+D6 → D0: The sphere collapses. The dot returns. The cycle completes.
 
 One poloidal cycle on the torus = one aeon.
 The Penrose CCC falls out of the dimensional hierarchy.
@@ -342,7 +342,7 @@ The system architecture IS the arithmetic.
 ```
 #genesis  →  ANIM-1 (D0) → ANIM-2 (D1) → ANIM-3 (D2) → ANIM-4 (D3)
 #torus    →  ANIM-5 (D4)
-#sphere   →  ANIM-6 (D5) → D6=D0 (closure → back to #genesis)
+#sphere   →  ANIM-6 (D5) → D6→D0 (closure [S] → back to #genesis)
 ```
 
 The user experiences the full dimensional emergence:
@@ -354,7 +354,7 @@ The user experiences the full dimensional emergence:
 6. Push β to 1 — watch spacetime present the selection sphere
 7. Explore the Burri Sphere
 8. Push ν to 0 — watch the selection sphere collapse back to the dot
-9. The cycle completes. D6 = D0.
+9. The cycle completes. D6 → D0 (closure, [S]).
 
 The navigation between pages is the navigation between dimensions.
 The user IS the observer moving through the dimensional hierarchy.
@@ -547,7 +547,7 @@ PHASE 3: #sphere page
   At closure: Fade to black → button "Return to Genesis"
 
 PHASE 4: Back to #genesis
-  Cycle complete. D6=D0. The ouroboros.
+  Cycle complete. D6→D0 (closure, [S]). The ouroboros.
 ```
 
 ---
@@ -555,7 +555,7 @@ PHASE 4: Back to #genesis
 *Simulation Specification Appendix | 2026-03-23*
 *Stages 3-4: The Split and The Titans*
 *The complete cosmological cycle*
-*φ · ν = 1 | D6 = D0*
+*φ · ν = 1 | D6 → D0 (closure, [S])*
 
 
 ---
