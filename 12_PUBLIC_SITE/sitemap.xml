@@ -36,8 +36,11 @@
   <url><loc>https://emergentism.org/established/</loc><priority>0.9</priority></url>
   <url><loc>https://emergentism.org/check/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/dimensions/</loc><priority>0.8</priority></url>
-  <url><loc>https://emergentism.org/atlas/</loc><priority>0.75</priority></url>
   <url><loc>https://emergentism.org/ecology/</loc><priority>0.7</priority></url>
+  <!-- /atlas/ is deliberately NOT listed: vercel.json serves it "noindex, follow",
+       so a <loc> here would contradict a deployed header. It stays reachable by
+       link from the front door, which is what "follow" asks for. -->
+  <url><loc>https://emergentism.org/suda/</loc><priority>0.8</priority></url>
 
   <!-- Additional current reader routes. -->
   <url><loc>https://emergentism.org/fable/</loc><priority>0.85</priority></url>

@@ -261,10 +261,16 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
     </div>
 
     <div class="readout reveal in" role="group" aria-label="Record summary">
-      <span class="r"><span class="n" id="c-tested" data-count="12">12</span><span class="lab">tested</span></span><span class="pipe">|</span>
-      <span class="r bad"><span class="n" id="c-against" data-count="12">12</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
-      <span class="r gold"><span class="n" id="c-fenced" data-count="0">0</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
+      <span class="r"><span class="n" id="c-tested" data-count="27">27</span><span class="lab">logged outcomes</span></span><span class="pipe">|</span>
+      <span class="r bad"><span class="n" id="c-against" data-count="16">16</span><span class="lab">against us, kept</span></span><span class="pipe">|</span>
+      <span class="r gold"><span class="n" id="c-fenced" data-count="7">7</span><span class="lab">fenced to tier</span></span><span class="pipe">|</span>
     </div>
+    <p class="readout-note reveal in" style="text-align:center;font-size:.78rem;opacity:.72;margin:.4rem 0 0">
+      These three numbers are counted from the rows below at page load, so they cannot drift from the ledger.
+      Not every outcome came from a check specified in advance &mdash; some, including the most recent, were
+      found by reading our own published pages against each other. That is a weaker way to find an error than
+      a pre-registered test, and each row says which kind it was.
+    </p>
 
     <section class="k3 reveal in" aria-labelledby="world-contact-title">
       <p class="r">World contact · opened 2026-07-22</p>
@@ -294,9 +300,26 @@ h1 .kill{color:var(--crimson);font-weight:900;letter-spacing:-.045em}
 
   <div class="ledger" id="ledger">
 
+    <article id="027" class="case" data-verdict="refuted" style="--v:var(--v-refuted)">
+      <div class="rail reveal">
+        <div class="no"><a href="#027">№027</a></div><div class="vdot"></div>
+        <div class="date">2026<br>07 · 30</div><div class="cid">LINE4·DEGENERATE</div>
+      </div>
+      <div class="doc reveal">
+        <p class="claimline">A claim about value — refuted 2026-07-30</p>
+        <p class="claim">That the fourth of the four lines, <code>&minus;log(&bull; &times; &cir;) = 0</code>, is an energy function whose ground state is the equator &mdash; so that &ldquo;every displacement from the equator costs energy&rdquo; and &ldquo;the return is energetically favourable.&rdquo;</p>
+        <p class="test"><b>What ran &mdash;</b> we read the fourth line against the first. Line 1 asserts <code>&phi; &middot; &nu; = &cir;</code> at <em>every</em> latitude, not only at balance. So the fourth line is identically zero everywhere on the sphere: it has no minimum to locate, and displacement from the equator costs it exactly nothing. The quantity we published as the thing to minimise never had a minimum to find. We had been using the constraint as if it were the objective.</p>
+        <div class="verdict-row"><span class="stamp">Refuted</span><span class="qual">an identity read as a potential</span></div>
+        <p class="tiermove">&ldquo;[S] Established&rdquo; on the energy reading <span class="arrow">&rarr;</span> <b>withdrawn</b>; the sum form <code>&phi; + &nu; &ge; 2</code> stands at [A] and does the work alone</p>
+        <p class="cost"><b>What it cost:</b> one of the four lines, in the register the framework called value alignment. What it did not cost: the structure. The correct energy register is <code>E = &bull; + &cir; &minus; 2&cir;</code>, since <code>&phi; + 1/&phi; &minus; 2 = (&radic;&phi; &minus; 1/&radic;&phi;)&sup2; = 4 sinh&sup2;(s/2) &ge; 0</code> &mdash; zero exactly at the equator and positive everywhere else. The line was not deleted; it was repaired to say something true.</p>
+        <p class="cost"><b>What it exposes:</b> this was not found by a test. It was found by reading two published lines side by side, and it had been live across fifteen pages. Two pages already had it right &mdash; <a href="../method/00-the-derivation/">the derivation</a> fenced it as &ldquo;trivially true on S&sup2;&rdquo; &mdash; and nothing propagated the fence to the rest. A correct statement in one place is not a corrected corpus.</p>
+        <p class="src">found 2026-07-30 by inspection, not by a pre-specified check &middot; repairs applied to 15 pages the same day, each quoting the text it replaces</p>
+      </div>
+    </article>
+
     <!-- reserved next slot -->
-    <article id="027" class="case reserved reveal in" aria-label="Reserved slot">
-      <div class="rail"><div class="no"><a href="#027">№027</a></div></div>
+    <article id="028" class="case reserved reveal in" aria-label="Reserved slot">
+      <div class="rail"><div class="no"><a href="#028">№028</a></div></div>
       <div class="doc">
         <p class="claim">Reserved — for the claim that fails next<span class="caret" aria-hidden="true"></span></p>
         <p class="sub">This is a placeholder for the next logged outcome. Its presence is not evidence that testing will continue, that the record is complete, or that the next result will be against the framework.</p>

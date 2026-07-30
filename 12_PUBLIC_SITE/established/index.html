@@ -90,7 +90,30 @@ fractions. Only together do they give the whole reachable set.</p>
 
 <p>And under succession alone, <strong>no value ever falls below 1.</strong> The descent toward
 zero exists only as the mirror of the ascent. <strong>Absence is not a second thing posited
-beside totality; it is totality seen through the inversion.</strong></p>
+beside totality; it is totality seen through the inversion.</strong> This was ruled
+<strong>positive-only</strong> on 2026-07-30 and it has a price, stated below.</p>
+
+<p>Write each operation as a 2&times;2 integer matrix &mdash; succession
+<code>[[1,1],[0,1]]</code>, inversion <code>[[0,1],[1,0]]</code> &mdash; and multiply along a word.
+<strong>Every word has determinant &plusmn;1.</strong> That is a hard test for membership, and it
+excludes things that look like they belong. Suda's hinge coordinate
+<code>u = (x&minus;1)/(x+1)</code> has determinant 2, so <strong>it is not a word over this
+base</strong> &mdash; not "hard to reach", not reachable at all.</p>
+
+<p>We expected the determinant to be the whole story. It is not. The map
+<code>x &#8614; &minus;1/x</code> has determinant +1, passes the test, and is still not a word,
+because it leaves the positive ray. <strong>Determinant and sign are independent
+obstructions: two different reasons a number can fail to be reachable, and neither
+implies the other.</strong> All four combinations are realised by actual maps, which is what
+makes the independence a result rather than an observation.</p>
+
+<p class="note"><b>What was actually computed.</b> Every word up to length 10 &mdash;
+<b>232 distinct values</b>. Of the words that are not in reduced form, 143 collide with another
+word; <b>of the reduced words, zero collide</b>, which is what makes the normal form unique.
+The Calkin&ndash;Wilf tree to depth 13: <b>8191 words, 8191 distinct values</b>, no repeats. A
+25&times;25 grid of fractions: <b>every cell reached, none unattained</b>. Rerun it with
+<code>check_generative_base.py</code>. The guards in that file are themselves mutation-tested,
+because two of them had been written in a form that could never fail.</p>
 
 <hr>
 
@@ -115,6 +138,15 @@ converges. Same operations, opposite direction &mdash; and the direction has to 
 On finite words the two readings agree exactly, with zero mismatches across all 8,191 words up
 to length twelve.</p>
 
+<p><strong>And there is a boundary the base cannot cross on its own.</strong> Write the two
+operations in logarithmic coordinates and inversion becomes a reflection, <code>s &#8614;
+&minus;s</code>. That form is exact &mdash; but it needs the real line to state, and the reason
+is a theorem nobody here proved: by <strong>Hermite&ndash;Lindemann</strong>, <code>log q</code>
+is transcendental for every rational <code>q &ne; 1</code>. So the logarithmic picture, which is
+the one that makes the symmetry obvious, <em>cannot be built from finite words at all</em>. The
+clearest way to see the structure is not reachable from inside it. We record that as a limit of
+the base, not as a defect in the picture.</p>
+
 <hr>
 
 <h2>Two corrections to how numbers are usually described <code>[A]</code> / <code>[S]</code></h2>
@@ -136,6 +168,17 @@ generator. Add zero and you have the <em>free monoid</em>, whose identity is zer
 homomorphism from the integers, <code>n &#8614; n&middot;1</code>. So <code>1</code>'s role as
 the thing everything is built out of <strong>follows from</strong> its role as the
 multiplicative identity. Nothing else in any ring does that.</p>
+
+<p><strong>And <code>1</code> sits exactly halfway between the two things it is not.</strong>
+On the ordinary line that is false &mdash; <code>1</code> is one step from zero and infinitely
+far from infinity. But the base's own symmetry is multiplicative, and in the coordinate that
+respects it, <code>s = log x</code>, inversion is the reflection <code>s &#8614; &minus;s</code>
+and <code>1</code> is the fixed point at <code>s = 0</code>. Zero and infinity go to
+<code>&minus;&infin;</code> and <code>+&infin;</code>: unreachable, and <em>equally</em>
+unreachable. Under the hinge coordinate <code>u = (x&minus;1)/(x+1)</code> the same statement
+becomes finite &mdash; both poles land at distance exactly <code>1</code> from the unit.
+<strong>The claim that <code>1</code> is the midpoint is true, and it is a claim about which
+coordinate the structure lives in, not about the number line.</strong></p>
 
 <hr>
 
@@ -231,6 +274,21 @@ structurally here &mdash; the proofs were run once and the build output is on re
 full re-proof needs the mathlib toolchain and cannot live inside a checker. <strong>That limit
 is stated rather than hidden, and the checker refuses to report success when it cannot
 verify.</strong></p>
+
+<p><strong>Why there is a gate at all.</strong> An audit of this corpus found five validators
+that <em>nothing invoked</em>. They passed because they never ran. A check nobody runs is not a
+check, so <code>gate.sh</code> runs all of them and exits non-zero on any failure &mdash; and
+because a pre-commit hook can be skipped with one flag, the gate that actually binds is the one
+in CI, which cannot be skipped from a laptop.</p>
+
+<p><strong>And the guards themselves were tested by breaking things on purpose.</strong>
+<code>check_generative_base.py</code> contains <strong>22 guards</strong> covering
+<code>G1</code>&ndash;<code>G10</code>. Each was checked by deliberately corrupting the thing it
+was supposed to catch and confirming it failed. <strong>Two of the twenty-two did not fail
+&mdash; they had been written in a form that could never fire at all</strong>, one of them
+comparing two constants. Both are repaired. <em>This pass is not automated: it was run by hand,
+once, on this file.</em> A guard that cannot fail is worse than no guard, because it reports
+success.</p>
 
 <p>Every claim above states how to prove it wrong. Find a finite word whose value is zero.
 Find two different reduced words with the same value. Find a field where zero has a
