@@ -98,6 +98,49 @@ owns. **This is a known blind spot, recorded rather than closed.**
 
 ---
 
+## 4A · The insight-transfer audit of 2026-07-30 — what landed, what did not
+
+A five-region audit proposed **28 transfers** from the docs to the public site. Fifteen
+landed. The rest are listed here rather than left in a temp file, because an audit
+finding with no home is a finding that will be re-discovered at full cost.
+
+**Landed** — each verified against its source before publishing, and four of them were
+*false statements on live pages* rather than gaps: the product retired as a ranking and
+its rider on the seven actions (`/record/` №028); `GP-03` void while the site still
+invited strangers to preregister it; the paradox count (26 → 21, nine of them stubs);
+self-criticism claimed as a credibility asset; "a line is a circle of infinite radius",
+which is false in the plane; `A1–A7` published as current when `E1–E10` is the live set;
+the price of the positive-only ruling; the three senses of "undefined"; two poles do not
+produce a middle; the keel as a protractor fact; the honesty-constitution negative
+result; **the law applied to itself returning 0**; and the dependency-priority /
+actuality / salience separation on the spine.
+
+**Not landed, and why** — these change what the framework *claims*, not whether it is
+stated accurately, so each needs an owner ruling and not an edit:
+
+| # | item | what it needs |
+|---|---|---|
+| 3, 3a | `μ₂` and `μ₃` adjudicated failed; `μ₀` still owes its discriminator; both candidate instruments fail to discriminate | a ruling on whether the site may still show five live crossings |
+| 4 | `D0`/`D6` as a **duality, not an identity** — inversion exchanges the poles, it does not quotient them | reconciliation with the `D6~D0` closure ruled Path B today |
+| 7 | the live constitution is `R0`: **no necessary being** | which constitution edition is public |
+| 12 | a Rosetta falsifier **fired and was logged as a pass** | an integrity retraction, owner-countersigned |
+| 13, 14 | no single score is permitted; the ontology profile has **explicit zeros** | the specific per-profile figures were not verifiable in the time available |
+| 16 | over-claiming is **endogenous** to fitting every domain; antibody = a word watchlist | whether to publish the demolition manual |
+| 19 | **ten senses of "exists"**; "everything coherent actually exists" is a retired inflation | a ruling on the retired form |
+| 22 | the metaethics is an **open docket** against nine rival families, error theory admissible | whether to reopen a page that currently reads settled |
+| 23, 24, 25 | Suda's chart is a proper sub-chart; the hinge **is** the relativistic velocity ratio; the three seats are forced on the ray, selected on the sphere | small, verifiable, simply not yet done |
+| 27 | the adversarial audits' **own error rate** — five wrong file-level findings in two days | this session adds to that count, and the number should be recomputed before publishing |
+| 28 | Path D: the four-operator structure does not follow from the framework's own inequality | the audit itself recommended skipping — the pages are `noindex` and the finding is already logged |
+
+**Item 27 deserves the last word.** Of the 28 proposals, at least four were wrong on
+their specifics — a claimed nine pages misusing the product where the true count is
+zero, two "live indexed" pages that are `noindex`, an inflated call count, and a
+mis-cited authority. **A verdict about a file is not evidence about a file.** Every item
+above was checked before it was believed, and that is the only reason the list is
+trustworthy at all.
+
+---
+
 ## 5 · What this folder must never become
 
 - **A promotion path.** Nothing graduates from here to `00_ESTABLISHED/` except by
