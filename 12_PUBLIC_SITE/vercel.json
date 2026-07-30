@@ -8,11 +8,6 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/home/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/app",
       "destination": "/historical-boundary/",
       "permanent": false

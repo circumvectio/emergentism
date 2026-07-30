@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 783,
+  "entry_count": 784,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3292,
+      "tracked_file_count": 3310,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -194,7 +194,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 83,
+      "tracked_file_count": 89,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -246,7 +246,7 @@
       "owns": "Files here are authoritative **routing inputs**, not semantic owners. They use",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 10,
+      "tracked_file_count": 13,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -285,7 +285,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1,
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -402,7 +402,7 @@
       "owns": "03_METHODOLOGY — Truth Tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 177,
+      "tracked_file_count": 182,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -519,7 +519,20 @@
       "owns": "**Corpus:** Emergentism",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 12,
+      "tracked_file_count": 17,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice",
+      "type": "lane",
+      "nearest_front_door": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
+      "front_door_requirement": "present",
+      "owns": "Finity Practice Evaluation Program",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 5,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -974,7 +987,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 138,
+      "tracked_file_count": 142,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1000,7 +1013,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 15,
+      "tracked_file_count": 19,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1455,7 +1468,7 @@
       "owns": "Emergentism public site",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 603,
+      "tracked_file_count": 604,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7435,7 +7448,7 @@
       "owns": "Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop",
       "must_not_own": null,
       "status": "staged",
-      "tracked_file_count": 15,
+      "tracked_file_count": 16,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
