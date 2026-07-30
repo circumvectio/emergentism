@@ -108,6 +108,48 @@ owns. **This is a known blind spot, recorded rather than closed.**
 
 ---
 
+## 3A · The council rounds, and what the councils corrected in me
+
+Two multi-seat councils sat on 2026-07-30. Both produced rulings; more usefully, **both ran
+the read-only kills their own rulings named, and four of those kills fired.**
+
+**What the first council corrected.** My docket asked it to rule `G-0` — *already ruled
+2026-07-29*. It also asked "generative base vs the sphere at `00_THE_FOUNDATION.md` §2";
+§2 no longer posits the sphere, it posits `B1`–`B4` and reaches `Ĉ` at emergent step 6.
+
+**What the second council corrected, in me specifically.**
+
+| I said | measured |
+|---|---|
+| "the authority chain resolves through ambiguous numbers" | **False.** `146_FOUNDER_RULING_EXECUTE` names **both** 145 files in its frontmatter and its body says "the two 145 receipts". It disambiguates itself. |
+| "40 undeclared routes" | **~30.** `withheld-routes.json` declares 10 of them; I counted a second declaration registry as absence. |
+| "86 ambiguous numbers" | The namespace has **three lanes** (167 + 127 + 10 numbered files), and **both live lanes begin at 100 and run over each other for a hundred consecutive integers.** |
+| "only `/riemann` is linked from a declared surface" | **False.** `dimensions/index.html` links `/egg/`, `/riemann/`, `/suda/`, `/titans/`, `/saturation/`. |
+
+**The kill that fired and cost something.** `/record/` — a declared current surface —
+carried **11 bare citations** to "receipt 149/150/151", and each of those numbers names two
+documents: a formal audit *and* an unrelated April session packet. Those three are the
+Burri-sphere and horn-torus audits the ledger's own rows rest on. **The public record ledger
+was citing its own evidence ambiguously**, on the one page whose subject is evidentiary
+discipline, one day after the corpus adopted "cite by path, not number". All 11 replaced
+with full filenames.
+
+**Ruled and executed:** μ-crossing verdicts on the spine (4–0) · `G-0`/`G-0b` closed ·
+the `/record/` citations.
+
+**Ruled, awaiting a signature:** Q1 (§5.1 register-indexing) · Q2 (restating `KSC-28`'s
+"sphere primacy" as chart selection) · Q4 (the ~30 undeclared, with four pages that pass the
+contract moving to **declared-provisional**, not current — passing is necessary, not
+sufficient, 3–0) · Q6 (library stays `noindex` + a published policy) · Q7 (launch copy).
+
+**What neither council could decide, and what would decide it:** Q7's ordering — lead with
+the zero or with the record. The majority conceded the dissent is not answerable by
+argument, and named the evidence: **run the fresh-reader comprehension preregistration on
+both orderings.** It is the cheapest of the three protocols and it is already written. There
+is no excuse for settling that one by taste.
+
+---
+
 ## 4A · The insight-transfer audit of 2026-07-30 — what landed, what did not
 
 A five-region audit proposed **28 transfers** from the docs to the public site. Fifteen

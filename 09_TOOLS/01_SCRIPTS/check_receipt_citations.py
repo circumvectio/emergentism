@@ -69,6 +69,15 @@ CITATION = re.compile(r"\br(\d{3})\b|\breceipt[ \t]+(\d{2,3})\b", re.I)
 # corpus's ordinary document-ordering prefix (00_THE_FOUNDATION.md and friends),
 # NOT a receipt id. An earlier draft of this script conflated the two and reported
 # "r00 -> 248 files", which is the document convention, not a collision.
+# TWO LIVE LANES. A council census found a third under 11_UPLINK/90_ARCHIVE (10 numbered
+# files), but SKIP_DIRS excludes 90_ARCHIVE deliberately — archived receipts are not
+# citable targets. Adding it to this tuple is a NO-OP and was reverted rather than left
+# in place claiming coverage it does not have.
+#
+# THE SHARPER FINDING, which this checker cannot fix: BOTH live lanes begin at 100 and
+# run over each other for a hundred consecutive integers. That is not scatter — it is two
+# independent numbering schemes sharing one namespace, and no citation convention can
+# repair it. Only a path can.
 RECEIPT_DIRS = (
     Path("11_UPLINK") / "50_AUDITS_AND_EXECUTIONS",
     Path("11_UPLINK") / "60_SESSION_PACKETS",
