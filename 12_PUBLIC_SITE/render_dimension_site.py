@@ -93,6 +93,14 @@ def page(item: dict, prev_id: str | None, next_id: str | None) -> str:
 <link rel="icon" href="data:," />
 <link rel="stylesheet" href="../assets/css/xai.css" />
 <link rel="stylesheet" href="../dimensions/dimensions.css" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Emergentism" />
+<meta property="og:title" content="/{number} — {esc(item['title'])} · Emergentism" />
+<meta property="og:description" content="{esc(item['summary'])}" />
+<meta property="og:url" content="https://emergentism.org/{number}/" />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
 <script type="importmap">
 {{"imports":{{"three":"../vendor/three-0.160.0/three.module.js","three/addons/":"../vendor/three-0.160.0/"}}}}
 </script>

@@ -24,7 +24,7 @@ from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[2] / "12_PUBLIC_SITE"
 BUILDERS = ("build_atlas_index.py", "build_library_index.py", "build_library_nav.py",
-            "build_sw_version.py")
+            "build_social_cards.py", "build_sw_version.py")
 
 
 def main() -> int:

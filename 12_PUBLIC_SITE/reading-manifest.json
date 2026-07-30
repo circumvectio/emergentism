@@ -1817,7 +1817,7 @@
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "c56acf38533b2e9acab1238ab31f0a268a369079dbe05afe837c23eb686b7653",
+    "output_sha256": "7d953f5305f3384caf0476cfddaa5f36d053dd9de67215daf7c269a1bf39df9c",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }

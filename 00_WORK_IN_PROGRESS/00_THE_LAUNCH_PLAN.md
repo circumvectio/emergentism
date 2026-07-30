@@ -138,7 +138,11 @@ of a dead model with no mention that it died. Now stated on the page.
    borrowed onto the Bloch sphere, where it means something else.
 3. **D0 `titans` and D6 `ccc`** carry interpretive readings that should be tier-marked in
    the readout the way D4 and D5 now are.
-4. **Reduced motion.** No mode checks `prefers-reduced-motion`; every one animates.
+4. ~~**Reduced motion.** No mode checks `prefers-reduced-motion`.~~ **FALSE — I wrote
+   this without checking.** `dimensions.js:13` detects it and **14 call sites** honour
+   it: static frame, no scheduled frames, readouts relabelled "sample static". Nothing
+   to do. Recorded rather than deleted, because a plan that quietly removes its own
+   wrong items is not a record.
 
 ---
 
