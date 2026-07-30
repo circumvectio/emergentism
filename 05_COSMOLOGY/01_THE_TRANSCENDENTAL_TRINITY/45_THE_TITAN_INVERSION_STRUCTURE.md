@@ -126,6 +126,18 @@ The Trinity canon retires the infix form by assuming (i) `0×∞=1`,
 That argument is valid, and its conclusion stands for what it addresses: **no
 ring or field extension admits those three premises together.**
 
+**It was over-engineered.** Receipt 182 (2026-07-29) machine-checked the sharper
+finding: premise (i) `0·w = 1` *alone* collapses any nontrivial ring, because
+`0·w = 0` holds in every ring, so `0·w = 1` forces `1 = 0`
+(`falsifier_premise_impossible`). The associativity machinery was a heavier
+instrument than the job required. And premise (ii) `a·∞ = ∞` is independently
+unavailable: `∞` would absorb addition (`∞ + 1 = ∞`), and `w + 1 = w` forces
+`1 = 0` in any nontrivial ring (`no_additive_absorber`,
+`no_absorber_in_nontrivial_ring`). Both refutations are sharper than the
+corpus's own argument; both are axiom-free. The "associativity falsifier" name
+is now historical — the falsifier was always about a ring, and the ring is dead
+on contact, no associativity required.
+
 It does not reach §2, because **`Ĉ` is not a ring.** The Riemann sphere is a
 complex manifold with a Möbius group action; global multiplication is simply not
 one of its operations. Premise (ii) is not a rule available on `Ĉ`, so the

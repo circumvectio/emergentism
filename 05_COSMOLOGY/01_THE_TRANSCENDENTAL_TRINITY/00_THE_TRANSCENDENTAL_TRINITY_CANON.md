@@ -219,6 +219,16 @@ A quick falsifier shows why. If ordinary multiplication were extended with
 Therefore the retired infix form cannot be cited as algebraic proof, as a definition of
 the reciprocal chart, or as evidence for the finite-node model.
 
+**Sharper than the falsifier, machine-checked 2026-07-29 (r182).** The
+associativity machinery is over-kill: premise (i) `0·w = 1` alone collapses any
+nontrivial ring, because `0·w = 0` holds in every ring, so `0·w = 1` forces
+`1 = 0`. The "associativity" name is now historical — the ring is dead on
+contact with the first premise, no associativity required. And premise (ii)
+`a·∞ = ∞` is independently unavailable: `∞` would absorb addition, and
+`w + 1 = w` forces `1 = 0` in any nontrivial ring (`no_additive_absorber`,
+`no_absorber_in_nontrivial_ring`). Four of the five new theorems depend on no
+axioms at all.
+
 ## 6. Two useful faces of number
 
 - The additive line is appropriate for order, signed magnitude, limits, and
