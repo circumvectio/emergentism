@@ -333,7 +333,23 @@ positive-only, no zero, no −1        G3 holds, KSC-21 unsupported
 signed, with −1                      KSC-21 holds, G3 falls
 ```
 
-**Owner ruling.** Nothing here chooses.
+> **RULED 2026-07-30 — POSITIVE-ONLY.** The base stays `⟨S, ι⟩` on `ℚ⁺`. `G1`–`G10`
+> stand exactly as written; `G3` holds and *"0 is not a number"* survives; the
+> unit's uniqueness stays forced.
+>
+> **The cost, accepted and recorded here rather than absorbed:** `KSC-21`'s oriented
+> pair `{+1, −1}` is **NOT supported by this base**. Nothing in `⟨S, ι⟩` reaches
+> `−1`, and no argument in this document should be read as reaching it. **D1 is
+> seated one chart up, by a declared move** — the same kind of declared move as
+> completion and compactification in §4, and priced the same way.
+>
+> This is not a claim that `−1` does not exist. It is a claim about what this base
+> generates. `ι` considered as a map on `ℝ` fixes exactly `±1`
+> (`inversion_fixed_iff`, machine-checked); the base's words reach only one of the
+> two. **That asymmetry is now a stated property of the base, not an open question.**
+>
+> **Kill:** exhibit a finite word over `{S, ι}` whose value is negative — or show
+> that D1 can be seated without any declared move beyond the base.
 
 **5.3 · This is a third reading of `{•, ⊙, ○}`.** Doc 45 reads the triple as the
 coupled-chart identity on `Ĉ`; doc 46 reads it set-theoretically (`∅`, sets,

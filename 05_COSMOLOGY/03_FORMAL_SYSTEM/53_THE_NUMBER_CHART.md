@@ -1,6 +1,6 @@
 ---
 title: "The Number Chart — every membership decision, with theorem or convention marked"
-status: "ACTIVE — drawn 2026-07-29 at owner instruction with §5.2 OPEN. The fork is marked, not resolved."
+status: "ACTIVE — §5.2 RULED 2026-07-30, POSITIVE-ONLY. The fork is closed; the cost is recorded in §3."
 date: 2026-07-29
 evidence_tier: "[A] N1–N5, G1, Z1 and the memberships marked THEOREM; [S] every membership marked CONVENTION; [I] the Titan gloss"
 owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and to 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md on all D1 claims."
@@ -12,8 +12,8 @@ parents:
 
 # The Number Chart
 
-> **Drawn with `§5.2` open.** The `−1` fork is a **marked branch point** below, not a
-> decision. Everything outside the marked branch holds on either horn.
+> **`§5.2` was ruled POSITIVE-ONLY on 2026-07-30.** The `−1` fork is closed, its cost
+> is recorded in §3, and every row below now holds unconditionally.
 
 ---
 
@@ -63,32 +63,33 @@ parents:
 
 ---
 
-## 3 · The marked branch — `§5.2`, OPEN
+## 3 · The `−1` question — RULED 2026-07-30, POSITIVE-ONLY
 
-Everything above holds on either horn. This does not:
+The branch this chart was drawn around is closed.
 
 ```text
                         ┌──────────── §5.2 ─────────────┐
-                        │      OPEN OWNER RULING        │
+                        │   RULED — POSITIVE-ONLY       │
                         └───────────────┬───────────────┘
-                  ┌─────────────────────┴─────────────────────┐
-        POSITIVE-ONLY                                     SIGNED
-  base stays ⟨S, ι⟩ on ℚ⁺                     add n(x) = −x as a third generator
-  ────────────────────────                    ────────────────────────────────
-  −1 is NOT in the chart.                     −1 enters. ℤ, ℚ, ℝ follow.
-  KSC-21's oriented pair is                   KSC-21's pair is supported.
-    reached one chart up, by                  BUT: 1 + (−1) = 0 in two steps, so
-    a declared move.                            · G3 FALLS — 0 becomes reachable
-  G1, G3, G5, G7, G8a and the                   · G8a FAILS — ι is partial at 0
-    unit's UNIQUENESS all stand.                 · fix(ι) = {+1,−1}, so even the UNIQUENESS
-                                                  of the unit is lost
-                                                · compactification is pulled INTO
-                                                  the base, reinstating the very
-                                                  collision doc 52 exists to escape
+                                        │
+        base stays ⟨S, ι⟩ on ℚ⁺.  −1 is NOT in the chart below ⊙.
+        G1–G10 stand. G3 holds. "0 is not a number" survives.
+        The unit's UNIQUENESS stays forced.
+
+        THE COST, ACCEPTED:
+        KSC-21's oriented pair {+1, −1} is NOT supported by the base.
+        D1 is seated ONE CHART UP, by a declared move — the same kind of
+        move as completion and compactification, and priced the same way.
 ```
 
-**Nothing in this document chooses.** The right-hand column is not an argument
-against signing — it is the price, stated so the ruling is made with it visible.
+**What this does not say.** It does not say `−1` fails to exist. `ι` as a map on
+`ℝ` fixes exactly `±1` (`inversion_fixed_iff`, machine-checked); **the base's words
+reach only one of the two.** That asymmetry is now a stated property, not an open
+question — and it is the honest reason `D1` needs a declared move rather than a
+derivation.
+
+**Kill:** exhibit a finite word over `{S, ι}` with a negative value; or seat `D1`
+with no declared move beyond the base.
 
 ---
 
