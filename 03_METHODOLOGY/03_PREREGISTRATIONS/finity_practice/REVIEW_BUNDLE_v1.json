@@ -1,0 +1,18 @@
+{
+  "bundleVersion": "v1",
+  "frozen": "2026-07-30",
+  "gate": "FPE-REVIEW-01",
+  "note": "A material amendment to any listed file requires a NEW bundle version and a NEW review. An older review cannot silently cover changed text.",
+  "files": {
+    "01_TELEOLOGY/04_THE_LIVED_COMPASS.md": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+    "00_META/claim_cards/finity_practice.yaml": "sha256:f769f7495cde1a79c542725c66a8f5047180ef7eee463e253e8c6145a0fc9eec",
+    "00_META/ADEQUACY_DOCKETS.yaml": "sha256:7132a1df115d71772804e81ca97bc58dfc9b146ddb8c47a64130075c9e99e6f1",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json": "sha256:0c8a1f9568ed00ffa6b5a5c6011c52702caa16135d8860038bccc3267574b07c",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md": "sha256:17f580f2bce05e6e712ec5ef7dee0a3763bf5483790057bfff90459d513d5a75",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md": "sha256:b11a9c8e99781bdf5b75c4caf88a79126f0928602294511b273a2e425224ee61",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md": "sha256:d4eff350211c81d34e4868889ddbea21d322567dba6420499b969e456db6521c",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md": "sha256:10fd04a23d64a4f10e07a1ee5f72ed128c7324938585b56efdc81eeec4192efa",
+    "00_META/00_IMMUNE_PROTOCOL.md": "sha256:e27abce6e7bbc68e0130ab702b8e333d9b4726c434168f8b3420fb0af6cf3cbb",
+    "09_TOOLS/01_SCRIPTS/claim_policy.py": "sha256:d6ebb14a9078f3db649bfcfde003ee363bc4498e3d9101e7768a164c78b3d243"
+  }
+}

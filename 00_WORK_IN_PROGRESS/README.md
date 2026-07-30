@@ -79,6 +79,7 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 | **Eleven empirical sockets** (`GP` questions) | packet-complete, **none run** | `03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` |
 | `GP-03` specifically | **struck void as written** — its entry condition required independent numeric factor measures, which the ordinal ruling abolished. No replacement specified. | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md` |
 | **Three preregistrations** — fresh-reader comprehension, independent review, controlled comparison | protocols written and public; **no session, no engaged reviewer, no registered comparison** | `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/` |
+| **The review packet** — the cheapest of the three gates, needing no ethics determination and no participants | **assembled, frozen and hash-verified 2026-07-30; NOT SENT.** Ten files, `sha256` recorded, invitation drafted. What remains is identifying one qualified outsider and asking them — an owner act, and the protocol rules out the substitute in one line: *"AI or project-agent review … does not satisfy this external gate."* | `.../REVIEW_BUNDLE_v1.md` |
 | **Returned outcomes from outside** | **306 numbered receipts · 7 mention an outcome coming back · 0 record one that did** | `12_PUBLIC_SITE/record/` |
 
 That last row is the honest summary of this whole folder. Everything above it is
