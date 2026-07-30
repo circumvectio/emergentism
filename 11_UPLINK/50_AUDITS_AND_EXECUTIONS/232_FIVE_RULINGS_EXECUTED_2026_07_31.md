@@ -52,7 +52,11 @@ The binding sequence was followed in that order and can be checked in the commit
    `/suda/` were already present. `/offline/` deliberately **not** added.
 3. **Registry.** `public_semantic_parity.json` gained `declaredProvisional` and
    `infrastructureRoutes`, each carrying its meaning, not just a list.
-4. `/historical-boundary/` untouched — it stays governed by `withheld-routes.json` alone,
+4. **The remainder, frozen.** Seven routes (`/titans/ /saturation/ /synthesis/
+   /log-realignment/ /finity-papers/ /rosetta-d-series/ /halahala/`) had **no robots header
+   at all** and were therefore silently indexable while undeclared. They now carry
+   `noindex, follow` per *"the remainder → frozen pending disposition."*
+5. `/historical-boundary/` untouched — it stays governed by `withheld-routes.json` alone,
    because double-governing one artifact under two registries lets them drift.
 
 ## Q6 · The library boundary, published as a policy
@@ -84,6 +88,30 @@ ordering is the majority's and is provisional on that protocol. This is recorded
 page's own source comment so the next reader does not mistake it for a settled choice.
 
 ---
+
+## One tension this execution created, for the owner
+
+**`/halahala/` is now both the front door's proof and unlisted in search.**
+
+Q7 put a link on the home page reading *"read the failures first"*, pointing at
+`/halahala/` — the page that publishes the audit error rate with its denominator, including
+the reviewer's own mistake. Q4 then froze that same page, so search engines are told not to
+list it.
+
+Both rulings are correctly applied. But they pull against each other, and the pull is not
+symmetric: Q6's safety argument is *"do not let search distribute claims we already know
+are wrong."* `/halahala/` is the page that **says** which claims are wrong. It is the one
+document in the frozen set whose indexing would strengthen, not weaken, the argument for
+freezing the rest.
+
+This was **not** put to the council — the Q4 disposition vote was 2–1 with formal
+dissenting, and `/halahala/` was discussed only as an example of *why* non-conformance is
+not itself a mark against a page. **A ruling for `/halahala/` specifically is open.** The
+options are: leave it frozen (consistent, but the disclosure is unfindable); declare it
+provisional like the other four (indexable, not warranted); or promote it to a current
+surface, which would require it to carry a `surfaceClaims` binding it does not have.
+
+Flagged, not decided. `[S]` is the owner's to give.
 
 ## Two defects the execution itself produced
 
