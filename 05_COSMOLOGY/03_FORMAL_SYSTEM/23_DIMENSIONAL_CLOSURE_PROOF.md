@@ -113,6 +113,18 @@ It does not say:
 - consciousness becomes a supermind;
 - the framework has completed reality.
 
+**What survives, and why the identity reading keeps returning.** `[I]` D0 and D6
+are both uninformative about *which*: D0 because nothing is yet distinguished,
+D6 because further articulation is suspended. They agree in **output** for
+**opposite reasons**, and that agreement is what is repeatedly misread as
+sameness of thing. The relation is a **duality**, not an identity —
+pre-articulate against post-articulate. The licensed picture is `ι`
+**exchanging the poles**, `0 ↦ ∞` and `∞ ↦ 0`: a single two-element orbit of
+two **distinct** points, under the same `ι` whose unique positive fixed point is
+the unit. An exchange is not a quotient, and §3's arithmetic still forbids the
+quotient. Per §5 this remains a depiction: it derives neither the register count
+nor the return.
+
 The edge is useful if it prevents reification and regenerates testable intake.
 That is a methodological outcome, not ontological proof.
 

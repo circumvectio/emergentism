@@ -389,11 +389,32 @@ on the positive ray `ℝ₊`**, and none of them is a D1-chart result:
 | # | Result | Status |
 |---|---|---|
 | S-1 | division is double inversion: operator `÷→×` and operand `y→y⁻¹` | `[A]`; "division is already a hidden inversion" is `[I]` |
-| S-2 | `ι(x)=1/x` has unique fixed point `x=1` on `ℝ₊`; in `s=log x` it is the reflection `s↦−s` | `[A]` |
-| S-3 | `ρ(x)=\|log x\|` and `E(x)=(log x)²` are inversion-invariant, uniquely minimised at `x=1` | `[A]` |
+| S-2a | `ι(x)=1/x` has a unique fixed point `x=1` on `ℝ₊` — and already on `ℚ⁺`, with no real number entering the check | `[A]`, **zero premises** (doc 52 `G8a`, machine-checked) |
+| S-2b | in `s=log x` that inversion is the reflection `s↦−s` | `[A]` **given `ℝ`** (doc 52 `G8b`) — `log q` is transcendental for every `q∈ℚ⁺` with `q≠1`, so this coordinate carries completion to `ℝ` as a premise |
+| S-3 | `ρ(x)=\|log x\|` and `E(x)=(log x)²` are inversion-invariant, uniquely minimised at `x=1` | `[A]` for the invariance and the minimum; **`[S]` for `E` being *the* invariant** — note below |
 | S-4 | phase bit `φ(x)=sign(log x)`; even/odd split `F±(x)=½[F(x)±F(1/x)]` | `[A]` |
-| S-5 | hinge/egg coordinate `u=(x−1)/(x+1)`, with `u↦−u` under inversion; image is the **open** `(−1,1)` | `[A]` |
+| S-5 | hinge/egg coordinate `u=(x−1)/(x+1)`, with `u↦−u` under inversion; image is the **open** `(−1,1)` | `[A]` as a formula; **`[S]` as a coordinate of this system — imported, not generated** — note below |
 | S-6 | continuous half-twist: with `u=sin θ`, a half period gives `u↦−u` | `[A]` |
+
+**Note on S-3 — `E` is a selection, not *the* invariant `[S]`.** The `[A]` content is
+that `ρ(x)=|log x|` is `ι`-invariant and uniquely minimised at `x=1`. `E=ρ²` adds no
+invariance of its own: **any** strictly increasing `f` with `f(0)=0` makes `f∘ρ`
+`ι`-invariant and uniquely minimised at `1`, so `E` is one member of an infinite
+family. What singles it out is smoothness at the minimum — `f∘ρ` is differentiable at
+`x=1` only when `f(t)` is a smooth function of `t²`, and `E=s²` is the leading such
+choice, fixed only up to a positive scalar. That is a **normalisation, not a
+derivation**, and the "energy" reading rides on the choice rather than on the
+invariance. (§6 already fences the *word*; this fences the *formula*.)
+
+**Note on S-5 — the hinge is imported, and doc 52 §G9 is where that was priced.** As a
+Möbius map `u=[[1,−1],[1,1]]` is primitive with `det u = 2`, and `2λ²=±1` has no
+rational solution, so **`u` is not a word over `⟨S,ι⟩`** — doc 52 verified by
+exhaustion that of the `6763` distinct projective words of length ≤ 16, `u` is in
+none. It is over-determined besides: `u` leaves `ℚ⁺`, and `u(1)=0` is killed by `G3`
+with no matrix theory at all. **What the base owns in its place** is
+`L(x)=x/(x+1)=ιSι`, matrix `[[1,0],[1,1]]`, determinant `1` — a genuine word, and the
+Calkin–Wilf second generator. The hinge stays a legitimate borrowed coordinate; it is
+not this system's own, and this row did not previously say so.
 
 ### 6A.4 The limitation this exposes — and it is load-bearing `[A]`
 
@@ -432,9 +453,19 @@ NX = sec A      the hypotenuse
 ```
 
 So as `A` runs over `(0°, 90°)` the figure runs over **every right triangle with
-one leg fixed at 1 — each shape exactly once.** That is the owner's "exhausts the
-whole finity of triangle," and it is exact: the parametrisation is a bijection
-onto the family, exactly as a graph runs over every `x` of its equation.
+one leg marked and fixed at 1 — each such marked triangle exactly once.** That is
+the owner's "exhausts the whole finity of triangle," and with the marking it is
+exact: `A ↦ tan A` is a bijection `(0°, 90°) → (0, ∞)`, exactly as a graph runs
+over every `x` of its equation.
+
+**But not "each shape exactly once" — as shapes the sweep is exactly 2-to-1 `[A]`.**
+If *shape* means similarity class, `A` and `90° − A` deliver the same one: scale the
+legs `{1, tan A}` by `cot A` and they become `{cot A, 1}` — the `90° − A` triangle
+with its two legs exchanged. So the identification is `tan A ↦ 1/tan A`; **the fold
+is `ι` itself**, and it has exactly one fixed point, `A = 45°`, where `SX = NS = 1`,
+the triangle is isoceles, and the projected point lands on `|z| = 1`. **`ι` folds the
+sweep at the equator.** The marking is what makes the count one-to-one; drop it and
+the family is halved.
 
 ### The two degenerations, and they are the poles `[A]`
 
@@ -475,10 +506,22 @@ interior is **prior**, and the poles are its boundary rather than its parents. A
 family of triangles has two ways to stop being a triangle, and those two ways are
 the two Titan seats.
 
-It also restates the `μ` result without the machinery: the crossing is not a new
-freedom appearing — it is a **shape ceasing**. Nothing is gained at the boundary;
-something is lost, and a declared restructure is what lets the lost thing still
-have a name.
+It also settles what kind of crossing this is — but **not** by the reason first
+written here. This section is what surfaced `HR-1` (receipt 179), so its own close
+pre-dated the ruling it caused: it read the boundary as *no new freedom appearing*,
+and that criterion — type-D — was retired on 2026-07-29. The live reason counts no
+freedoms at all: **adjoining `∞` is an outward arrow, and an outward arrow carries no
+forgetful map back down, so it is not a `μ`-candidate at all** (doc 48 §5). A `μ` is a
+lift; this is a boundary.
+
+**And dimension is constant across the whole triangle family `[A]`.** The sweep is one
+real parameter at every `A ∈ (0°, 90°)`; adjoining its two limits gives a
+one-dimensional closed interval; `line → ℝP¹` is `1 → 1`. Nothing gains a dimension
+anywhere here — which is why a dimension-gain instrument had nothing to report, and
+why it was the wrong instrument.
+
+What the geometry itself says survives untouched: at the boundary a **shape ceases**,
+and a declared restructure is what lets the lost thing still have a name.
 
 ## 7. μ₀ and the division boundary `[I/C]`
 

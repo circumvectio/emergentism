@@ -134,7 +134,9 @@ sin(π/2 + δ) = cos δ ≈ 1 − δ²/2
 V ≈ 2(1 − 1 + δ²/2)/(1 − δ²/2) ≈ δ²
 ```
 
-**Harmonic oscillator with ω² = 1.** The natural frequency of oscillation around the equator is ω = 1. [A]
+**Harmonic oscillator with ω² = 2, hence ω = √2 ≈ 1.414.** In the harmonic normal form V = ½mω²δ², the expansion V ≈ δ² gives ½ω² = 1, so ω² = 2. Equivalently, the Euler–Lagrange equation of L = ½δ̇² − V linearises to δ̈ + 2δ = 0. [A] under the stated normalisation ℏ = m = 1 on the unit-radius metric — the number is convention-dependent, and the convention must travel with it.
+
+> **Corrected 2026-07-30.** This line read "ω² = 1 … ω = 1", which set ω² equal to the coefficient of δ² instead of twice it: the dropped ½ of the harmonic normal form.
 
 Near the poles (θ → 0):
 
@@ -181,7 +183,7 @@ The Schrödinger equation on S² with potential V(θ) = 2/sin θ − 2:
 The bound state spectrum near the equator (harmonic approximation only):
 
 ```
-E_n^(local) ≈ ℏω(n + 1/2) = (n + 1/2)    [with ω = 1, ℏ = 1]
+E_n^(local) ≈ ℏω(n + 1/2) = √2 (n + 1/2)    [with ω = √2, ℏ = m = 1]
 ```
 
 This gives equally spaced energy levels in the **local near-equator approximation**.

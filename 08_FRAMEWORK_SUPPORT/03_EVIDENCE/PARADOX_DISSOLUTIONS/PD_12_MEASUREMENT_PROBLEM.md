@@ -38,9 +38,10 @@ text remains recoverable from Git blob
 A D3 state `ρ` and declared quantum instrument `{𝓘_k}` yield
 `p_k=Tr[𝓘_k(ρ)]`. An actual preparation, apparatus interaction, outcome token,
 and provenance-bearing record are D4. Emergentism names that state-to-record
-boundary `μ₃` `[I]`; standard quantum theory supplies the operational
-state/instrument/probability contract `[A/B]`. The label supplies no additional
-physical mechanism.
+boundary `μ₃`, an operational label formally reducible as a stochastic
+interface and therefore not a candidate `μ` `[I]`; standard quantum theory
+supplies the operational state/instrument/probability contract `[A/B]`. The
+label supplies no additional physical mechanism.
 
 The conditional update `ρ'_k=𝓘_k(ρ)/p_k` is operationally valid when `p_k>0`.
 Whether it is a fundamental collapse, observer-relative conditioning, or part

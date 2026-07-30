@@ -251,6 +251,7 @@ causal particles or mathematical consequences of the three tokens.
 | `0` and `1` are numbers and operands | `[A]` | ordinary arithmetic would have to be replaced by a specified alternative system |
 | `∞` is the projective point in `ℂP¹` | `[A]` | use of a different compactification must be stated, not hidden |
 | `{0,1,∞}` is a standard projective normalization | `[A]` | a claim of uniqueness or forced closure fails immediately |
+| on the compactified positive ray, `{0,1,∞}` is the unique fixed point of `x↦1/x` together with the two ends, hence forced **there** | `[A]` | exhibit a second positive solution of `1/x=x`, or export the ray forcing to `ℂP¹`, where `fix(ι)={+1,−1}` and the selection stands |
 | the framework calls the roles Titans / finity | `[I]` | the vocabulary stops improving compression or causes systematic category errors |
 | the operator-free seats `•  ⊙  ○` are the live emblem | `[I]` | inserting an operator or treating the display as a theorem invalidates the use |
 

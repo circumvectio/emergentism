@@ -52,6 +52,14 @@ Exactly seven symbols follow **by definition of this language**. The raw
 `{−,0,+}²` sign grid has nine cells; G7 groups the one-factor-held cells as
 degenerate limits of a transfer or frame. A different grouping is possible.
 
+Subtraction alone does not reach seven. Exactly four cells hold one factor
+(`+0`, `0+`, `−0`, `0−`), so `9 − 4 = 5` remain: the three frames and the two
+mixed-sign cells. Each mixed cell then carries **two bearer-orientations** —
+which bearer carries the raised factor and which carries the reduced one — so
+`(2 same-sign + 1 hold) + 2 mixed × 2 = 7`. The bearer doubling, not the sign
+grid, supplies the last two symbols; dropping the bearer label collapses `M4`
+back to two cells, and seven is not recoverable from `(ΔΦ₅,ΔV₄)` signs alone.
+
 The language fails if a usefully distinct two-factor move cannot be expressed
 without being forced into one of those degenerate classes.
 

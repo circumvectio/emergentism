@@ -285,6 +285,80 @@ the mathematics transfers no proof to the reading. **The reading is: reachabilit
 is finity, and the Titans are what unreachability looks like from inside.** That
 sentence has no counterpart in the literature and is the claim this document makes.
 
+### 3.1 · What to call the seats — **proto-number** `[S]`
+
+§3 names three categories. Two of them are single **seats**: `•` and `○`. The
+corpus says repeatedly what those seats are **not** — not numbers (`53` §1), not
+operands (`45:83-85`), not terms (`42:237-245`) — and never once what they **are**.
+A category defined only by negation gets refilled by the reader with the nearest
+positive: *very small* and *very large*. This supplies the noun instead.
+
+> **proto-number** *n.* A seat a number system must **name** in order to state its
+> own boundary, and can never take as an **operand**.
+> `ArithmeticSignature(proto-number) = ∅` (`KSC-04`; `29:66-69`). Neither a number
+> nor nothing — the third thing.
+
+Both halves of the test must hold:
+
+| | Test | Verified by |
+|---|---|---|
+| **nameable** | the system's own statements refer to it | `G3` — *`ι(x)=0` has no solution* is a sentence about `•`; `G4` — *every word is finite* is a sentence about `○` |
+| **non-operand** | no operation accepts it | `KSC-04`: no `add`, `sub`, `mul`, `div`, `pow`, `log` — and no implicit coercion |
+
+**Why not nothing.** `G5`: every neighbourhood of either seat contains reachable
+values — `val(S^n ι) → 0`, `val(S^n) → ∞`. Nothing has no neighbourhood crowded
+with somethings. The seat is approached from every side; only the arrival is missing.
+
+**Why not a number.** `G3`, `G4`: no word attains either, and the failure is not
+scarcity — `ι(x) = 0` has **no solution at all**. Not un-visited: unlandable.
+
+**This is doc 42's third category from the other side.** `42:237-245` classifies the
+**expression** — `0_T × ∞_T` is an *inadmissible term*, not "no such element" and
+not "indeterminate form", but *not a term*. `proto-number` classifies the **seat**.
+One fact, two faces: the seat is a proto-number exactly because every expression
+putting it in an operator slot is an inadmissible term. `DF-15` binds — that is one
+datum in two notations, not two witnesses.
+
+#### The two fences the prefix requires `[S]`
+
+**F-1 · "proto-" is not priority — not temporal, not constructional, not
+generative.** `00_THE_FOUNDATION.md:377-382` rules the other direction: two poles do
+not generate a middle, and the construction runs `ℝ₊ ──compactify──▶ adjoin {0,∞}` —
+**`⊙` is not the child of `•` and `○`; `•` and `○` are the boundary of `⊙`.**
+`KSC-28` lists *"the interior is said to be produced by the poles"* as a kill. On
+this base the seats are **posterior**: `G3` and `G4` name them as the base's two
+failures to arrive, so the base can name them only once it has a word to fail with.
+`G7` denies them even parity with each other — `•` is `○` reflected, not a second
+posit.
+
+> `proto-` marks **incompleteness of numberhood**, never precedence. A proto-number
+> is not a number-in-waiting: nothing promotes it, and it never becomes one. If the
+> prefix is ever read as priority, this section has been turned against `KSC-28` —
+> withdraw the term rather than defend it.
+
+**F-2 · The seats are proto-numbers; `⊙` read as *finity* is not.** The glyph carries
+three referents and only one of them is a seat:
+
+| `⊙` read as | Object | Operands? | proto-number? |
+|---|---|---|---|
+| `1_T` / `Unit_T` (`KSC-04`; `29:28`) | a `TitanFrame` term, one chart up from this base; `1_T ≠ 1_N` | none | **yes** |
+| FINITY `= ℚ⁺` (§3 above; `53` §1) | the reachable class | **every member is a lawful operand** | no |
+| the equator `\|z\| = 1` (`45:53`) | a circle of points of `Ĉ` | operands on the affine chart | no |
+
+`45:201-202` gives the internal resolution: *`⊙`'s dot is the unit `1`, and `⊙`'s
+circle is the boundary.* So the **circle** is where the seats sit — the rim
+`45:187-190` shows is not in the image of `ℝ₊` — while the **dot** is this base's
+primitive `1`, which is a number and the operand every word is applied to. *"`⊙`
+finity is a proto-number"* is therefore true of the seat and **false of finity**,
+which is nothing but numbers. `DF-15` again: three readings, one datum. **The
+definition pins to the type, never to the glyph.**
+
+**Kill.** Exhibit an operation of this base accepting `•`, `○` or `1_T` as an
+argument; or state `G3`/`G4` without referring to the seat they deny. Either kills
+the category. Separately and independently: if `proto-` is ever used to license the
+seats as prior to, productive of, or convertible into numbers, `F-1` has been
+dropped.
+
 ---
 
 ## 4 · What is emergent, and why `Ĉ` is now genuinely reached

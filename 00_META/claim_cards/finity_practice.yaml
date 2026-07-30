@@ -1,0 +1,83 @@
+{
+  "schema": "emergentism/claim-card-set/v1",
+  "work_id": "BK-FINITY-PRACTICE",
+  "source": {
+    "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+    "lifecycle": "active",
+    "role": "practical_source_owner"
+  },
+  "cards": [
+    {
+      "card_id": "FIN01-01",
+      "chapters": ["finity-card"],
+      "locator": {"section": "3B", "line_start": 129, "line_end": 148},
+      "plain_claim": "The Finity Card is a selected seven-prompt compression of the Lived Compass for framing a decision, not an authorization or a proven improvement in decision quality.",
+      "claim_type": "stipulation",
+      "evidence": [{"tier": "S", "scope": "chosen worksheet and source-owned practice definition"}],
+      "owner_ids": ["K-5"],
+      "dependencies": ["OS01-08", "OS01-13", "OS01-22"],
+      "docket_ids": ["A3", "A5"],
+      "type_boundaries": [
+        "practical Finity Card is not the formal F0 Finity protocol",
+        "worksheet is not theorem, ontology, authorization, or evidence of efficacy"
+      ],
+      "strongest_rival": "Use a plain decision journal or established decision checklist without the Finity name.",
+      "discriminator": "Compare calibration, correction, affected-bearer visibility, delayed-harm visibility, practical value, and completion overhead against a predeclared simpler rival.",
+      "kill_criterion": "Retire the branding or any prompt that adds no correction, bearer visibility, or practical value after burden and cost are counted.",
+      "survivor_if_killed": "The best-performing simpler receipt practice and the distinction between map, action, consequence, and correction.",
+      "consequence": {
+        "applicable": true,
+        "bearers": ["actor", "affected parties", "future or absent bearers where materially exposed"],
+        "consent": "The Card supplies no mandate; consent and the full Justice envelope are required for material action.",
+        "reversibility": "Prefer the smallest authorized reversible move; where reversal is impossible, use the smallest lawful commitment, an early review point, and a declared repair path.",
+        "exit": "Any holder may reject the Card, use a rival practice, or stop without penalty."
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "bounded_current",
+        "wording": "A seven-prompt Lived Compass worksheet; not authorization or proven decision improvement."
+      },
+      "review": {
+        "state": "l3_audited",
+        "scope": "source_type_owner_rival_kill_and_public_ceiling_only",
+        "receipts": ["00_META/00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md"]
+      }
+    },
+    {
+      "card_id": "FIN01-02",
+      "chapters": ["comparative-adequacy"],
+      "locator": {"section": "3B", "line_start": 150, "line_end": 156},
+      "plain_claim": "The Finity Card may improve decision correction and bearer visibility, but any incremental benefit must be established against fair simpler rivals.",
+      "claim_type": "conjecture",
+      "evidence": [{"tier": "C", "scope": "comparative decision-practice benefit"}],
+      "owner_ids": ["K-4"],
+      "dependencies": ["FIN01-01"],
+      "docket_ids": ["A3", "A5"],
+      "type_boundaries": [
+        "internal coherence is not comparative efficacy",
+        "a public worked example is illustrative rather than outcome evidence"
+      ],
+      "strongest_rival": "A decision journal, OODA or PDCA loop, premortem, implementation intention, or simpler checklist may perform as well with less burden.",
+      "discriminator": "In a predeclared decision domain, compare held-out calibration, correction rate, delayed-harm detection, affected-bearer recall, action follow-through, and time cost against the strongest fair rival.",
+      "kill_criterion": "Narrow or kill the benefit claim if Finity adds no incremental value after burden and cost, produces worse outcomes, or gains only from unequal instruction or measurement.",
+      "survivor_if_killed": "The seven prompts remain a voluntary selected worksheet only if users still find them useful; otherwise preserve the better rival and the world-receipt discipline.",
+      "consequence": {
+        "applicable": true,
+        "bearers": ["participants", "people affected by participants' decisions"],
+        "consent": "Any comparative study requires informed participation and a separate authorization envelope for consequential interventions.",
+        "reversibility": "Use low-stakes reversible domains first and publish nulls, harms, withdrawals, and repair.",
+        "exit": "Participants may withdraw; the result may retire the practice or its name."
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "candidate",
+        "wording": "Whether the Finity Card improves decisions over simpler methods remains an open comparative question."
+      },
+      "review": {
+        "state": "l3_audited",
+        "scope": "source_type_owner_rival_kill_and_public_ceiling_only",
+        "receipts": ["00_META/00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md"]
+      }
+    }
+  ]
+}

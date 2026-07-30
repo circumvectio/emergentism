@@ -14,6 +14,7 @@ This lane owns routing and claim custody, not new cosmology.
 - [Grand Puzzle Assembly Ledger](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — non-authoritative whole-map assembly and eleven world-contact sockets.
 - [Ontology Decision Matrix](00_ONTOLOGY_DECISION_MATRIX.md) — non-authoritative profile of internal coherence, paradox adjudication, science organization, and outstanding world-contact gates.
 - [Plain-Language Naming Law](00_PLAIN_LANGUAGE_NAMING_LAW.md) — prevents ambiguous aliases from silently carrying multiple rules.
+- [Finity Practice Evaluation Program](../03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md) — three execution-only gates for comprehension, independent review, and fair comparison; no semantic ownership or result is implied.
 
 Drafts, executed plans, prior editions, and superseded front doors belong under
 `90_ARCHIVE/` or remain as forwarding stubs. Historical adoption language is

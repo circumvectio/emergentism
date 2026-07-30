@@ -116,6 +116,22 @@ The AMRITA architecture uses E = −log(B) = −log(sin θ), which DOES vary. Th
 
 > **Proposed correction to C5:** E = −log(B) = −log(sin θ). Alignment energy is a function of balance, not of the manifold identity. At the equator, E = 0 (ground state). At the poles, E → ∞ (maximum misalignment).
 
+**Status — APPLIED 2026-07-30.** This correction has landed. The AXIOLOGY line
+of the four-line chart now reads `E(φ,ν) := log((φ+ν)/2)`, i.e. `E = −log B`,
+in `01_TELEOLOGY/02_THE_DERIVATION/README.md`,
+`01_TELEOLOGY/02_THE_DERIVATION/03_WHY_THE_CONSTRAINT_MATTERS.md`,
+`01_TELEOLOGY/01_F5_FORCE/02_THE_SERPENT_IS_F5.md`, and
+`05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/29_THE_COMPASS_AND_THE_SEXTANT.md`
+— a fourth carrier this audit did not list. Verified `[A]`: on `θ ∈ (0,π)`,
+`E(θ) = −log sin θ` has `dE/dθ = −cot θ`, zero only at `θ = π/2`, and
+`d²E/dθ² = csc²θ > 0` throughout, so `E` is strictly convex with a unique
+minimum `E = 0` at the equator and `E → +∞` at both poles. Equivalently
+`E = log((φ+ν)/2) = ½·log(1 + (φ−ν)²/4)`, so Line 2 (AM-GM) *is* the statement
+`E ≥ 0` and Line 3 `(φ−ν)² → 0` *is* the descent of `E` — the gradient the old
+form lacked. `09_PATH_D_THE_AMGM_GEOMETRY.md` §2 is left as written: it already
+records `f₄ = −log(φν)` as constant and therefore uninformative. `φν = 1`
+itself is untouched and remains true; only its use as the energy is repaired.
+
 ---
 
 ## L4: ABDUCTIVE — Best Explanation (Naturalistic Fallacy, Sphere)

@@ -92,7 +92,7 @@ Document 25 compressed the framework to four lines (see also Document 32, the ca
 φν = 1                 ONTOLOGY       Reciprocal chart constraint.
 φ + ν ≥ 2              TELEOLOGY      AM-GM lower bound.
 (φ − ν)² → 0           METHODOLOGY    Candidate correction objective.
-E(φ,ν) := −log(φν) = 0 AXIOLOGY       Constrained chart energy.
+E(φ,ν) := log((φ+ν)/2) AXIOLOGY       Balance energy −log B; min 0 at φ = ν.
 ```
 
 Here `φ,ν ∈ ℝ_{>0}` are typed numeric chart coordinates. The D0 Titan glyphs

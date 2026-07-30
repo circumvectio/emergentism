@@ -119,9 +119,12 @@ A group has exactly one identity element.
 ```
 
 The uniqueness is a theorem: if `e` and `e′` are both identities then
-`e = e·e′ = e′`. So in the multiplicative structure the unit is **unique and
-forced** — not chosen, not conventional. `1` is not *a* normalization among many;
-it is *the* identity, and there is no second candidate.
+`e = e·e′ = e′`. So in the multiplicative structure the unit is **unique** — not
+chosen, not conventional. `1` is not *a* normalization among many; it is *the*
+identity, and there is no second candidate. **Uniqueness is what is forced;
+existence is presupposed** — `KSC-28` withdrew `F2` as false (twelve of the sixteen
+binary operations on a two-element set have no two-sided identity), and `ι(x) = 1/x`
+cannot be written without naming `1`. `at_most_one_identity` is the surviving half.
 
 **A precision on "the centre between both poles."** `1` is not any *average* of
 `0` and `∞`:
@@ -225,7 +228,7 @@ The honest maximal form:
 | `1` is singled out on the equator by being an `ι`-fixed point, not by latitude | `[A]` | show another equatorial point fixed by `ι` on the positive ray |
 | two poles do **not** generate an interior | `[A]` | show the two-point discrete space has an interior |
 | the poles are the compactification of the interior; the interior is prior | `[S]` | construct `ℝ₊` from `{0,∞}` alone without further premises |
-| the unit is **unique and forced** (group identity) | `[A]` | exhibit a group with two identities |
+| the unit is **unique** (group identity); its *existence* is presupposed, not forced | `[A]` | exhibit a group with two identities |
 | `1` is the fixed point of `ι`, not an average of the poles | `[A]` | supply a determinate mean of `0` and `∞` |
 | `ℕ⁺ ⊊ ℝ₊`; unit-addition does not generate the interior | `[A]` | reach `√2` by adding ones |
 | sphere primacy — ruled and executed (r175) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ` |

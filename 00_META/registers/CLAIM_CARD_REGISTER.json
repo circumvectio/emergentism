@@ -323,6 +323,70 @@
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
+      "card_id": "FIN01-01",
+      "chapters": [
+        "finity-card"
+      ],
+      "claim_type": "stipulation",
+      "dependency_ids": [
+        "OS01-08",
+        "OS01-13",
+        "OS01-22"
+      ],
+      "disposition": "retain",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "S"
+      ],
+      "locator": {
+        "line_end": 148,
+        "line_start": 129,
+        "section": "3B"
+      },
+      "owner_ids": [
+        "K-5"
+      ],
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "work_id": "BK-FINITY-PRACTICE"
+    },
+    {
+      "card_id": "FIN01-02",
+      "chapters": [
+        "comparative-adequacy"
+      ],
+      "claim_type": "conjecture",
+      "dependency_ids": [
+        "FIN01-01"
+      ],
+      "disposition": "research_docket",
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "evidence_tiers": [
+        "C"
+      ],
+      "locator": {
+        "line_end": 156,
+        "line_start": 150,
+        "section": "3B"
+      },
+      "owner_ids": [
+        "K-4"
+      ],
+      "public_state": "candidate",
+      "review_state": "l3_audited",
+      "source_lifecycle": "active",
+      "source_path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "work_id": "BK-FINITY-PRACTICE"
+    },
+    {
       "card_id": "OS01-01",
       "chapters": [
         "boundaries"
@@ -2163,6 +2227,7 @@
   "inputs": [
     "00_META/claim_cards/dharma_yuddha.yaml",
     "00_META/claim_cards/evolutionary_network.yaml",
+    "00_META/claim_cards/finity_practice.yaml",
     "00_META/claim_cards/one_sitting.yaml",
     "00_META/claim_cards/reciprocal_infinite_play.yaml",
     "00_META/claim_cards/sarpasya_vijayam.yaml",
@@ -2172,10 +2237,10 @@
     "00_META/claim_cards/titans_narrative.yaml"
   ],
   "metrics": {
-    "cards": 69,
-    "conjecture_cards": 24,
-    "public_bounded_current": 18,
-    "works_with_cards": 8
+    "cards": 71,
+    "conjecture_cards": 25,
+    "public_bounded_current": 19,
+    "works_with_cards": 9
   },
   "owners": [
     {

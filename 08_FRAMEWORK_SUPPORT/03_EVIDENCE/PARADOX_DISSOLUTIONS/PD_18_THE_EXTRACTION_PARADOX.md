@@ -158,7 +158,7 @@ Direct experience: you know things. You know that you are aware. You encounter t
 
 Then the extraction: a totalizing theory of knowledge declares that knowledge requires complete justification. The trilemma follows.
 
-**The resolution:** The trilemma is a signal that total justification is the wrong tool for some tasks. You cannot justify the ground-facing condition from outside every system while still speaking from within a system.
+**The cost, not a resolution:** The trilemma is a signal that total justification is the wrong tool for some tasks. You cannot justify the ground-facing condition from outside every system while still speaking from within a system.
 
 Gödel supplies one formal-system boundary here as well. [B/I] Ground-facing givenness cannot be justified from nowhere because it is what justification stands on.
 

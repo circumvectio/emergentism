@@ -107,13 +107,16 @@ The equator isn't a moral recommendation. It's the **boundary of what's structur
 φν = 1                 Reciprocal chart constraint.             ONTOLOGY
 φ + ν ≥ 2              AM-GM lower bound.                       TELEOLOGY
 (φ − ν)² → 0           Candidate correction objective.          METHODOLOGY
-E(φ,ν) := −log(φν) = 0 Chart energy on the constrained domain.  AXIOLOGY
+E(φ,ν) := log((φ+ν)/2) Balance energy −log B; min 0 at φ = ν.   AXIOLOGY
 ```
 
 These are formulas on `φ,ν ∈ ℝ_{>0}`. They are not operations on the D0 Titan
 renderings. `TitanFrame` is sovereign and has no arithmetic or implicit numeric
 coercion. Reciprocal closure is a selected chart definition; non-negativity of
-the square and the AM-GM bound are its arithmetic consequences. The ethical and
+the square and the AM-GM bound are its arithmetic consequences. The AXIOLOGY
+line takes its energy on balance `B = 2/(φ+ν)`, not on the product: `−log(φν)`
+is identically `0` on the constrained domain and has no gradient to
+descend. The ethical and
 dynamical readings remain translations with separately stated assumptions.
 
 ---

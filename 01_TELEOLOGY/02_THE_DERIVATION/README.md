@@ -88,13 +88,18 @@ The rest of the framework is not automatically proved by these lines. Core State
 φν = 1                 Reciprocal chart constraint.             ONTOLOGY
 φ + ν ≥ 2              AM-GM lower bound.                       TELEOLOGY
 (φ − ν)² → 0           Candidate correction objective.          METHODOLOGY
-E(φ,ν) := −log(φν) = 0 Chart energy on the constrained domain.  AXIOLOGY
+E(φ,ν) := log((φ+ν)/2) Balance energy −log B; min 0 at φ = ν.   AXIOLOGY
 ```
 
 Here `φ,ν ∈ ℝ_{>0}` are numeric chart coordinates. Line 1 is their defining
 reciprocal identity. Line 2 is the AM-GM inequality. Line 3 becomes a trajectory
 only after a correction dynamics is supplied. Line 4 is a numeric chart-energy
-definition on the constrained domain. The numeric `1` in these expressions is
+definition on the constrained domain: since `φν = 1` holds identically,
+`−log(φν)` is `0` at every latitude and in both polar limits and so carries no
+gradient. The energy is therefore taken on balance `B = 2/(φ+ν) = sin θ`,
+giving `E = −log B = log((φ+ν)/2) = ½·log(1 + (φ−ν)²/4)`. Line 2 is then
+exactly the statement `E ≥ 0`, with equality only at
+`φ = ν`. The numeric `1` in these expressions is
 the real multiplicative unit; it is not the sovereign Titan unit-frame.
 
 The Titan renderings `•`, `⊙`, and `○` do not appear in these expressions.

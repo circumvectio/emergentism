@@ -77,7 +77,7 @@ The Torus is the only topology where a field line can coil back into itself *wit
 φν = 1                 The reciprocal chart is fixed.               ONTOLOGY
 φ + ν ≥ 2              The chart has a balance lower bound.         TELEOLOGY
 (φ − ν)² → 0           A supplied dynamics may reduce imbalance.    METHODOLOGY
-E(φ,ν) := −log(φν) = 0 The constrained chart energy is zero.         AXIOLOGY
+E(φ,ν) := log((φ+ν)/2) Balance energy −log B; zero only at φ = ν.    AXIOLOGY
 ```
 
 These are numeric formulas on `φ,ν ∈ ℝ_{>0}`. The serpent language is an
