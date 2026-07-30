@@ -137,10 +137,21 @@ with full filenames.
 **Ruled and executed:** μ-crossing verdicts on the spine (4–0) · `G-0`/`G-0b` closed ·
 the `/record/` citations.
 
-**Ruled, awaiting a signature:** Q1 (§5.1 register-indexing) · Q2 (restating `KSC-28`'s
-"sphere primacy" as chart selection) · Q4 (the ~30 undeclared, with four pages that pass the
-contract moving to **declared-provisional**, not current — passing is necessary, not
-sufficient, 3–0) · Q6 (library stays `noindex` + a published policy) · Q7 (launch copy).
+**SIGNED 2026-07-31 and EXECUTED, all five.** Q1 (§5.1 register-indexing) · Q2 (restating
+`KSC-28`'s "sphere primacy" as chart *selection*) · Q4 (the ~30 undeclared, with four pages
+that pass the contract moving to **declared-provisional**, not current — passing is
+necessary, not sufficient, 3–0) · Q6 (library stays `noindex` + a published policy) · Q7
+(launch copy). Authority: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md`.
+Execution + its two self-inflicted defects:
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/232_FIVE_RULINGS_EXECUTED_2026_07_31.md`. All live on
+`emergentism.org`, headers verified against the production domain.
+
+**One ruling this execution opened and did not close — `/halahala/`.** Q7 made the front
+page link to it (*"read the failures first"*); Q4 froze it to `noindex`. Both correctly
+applied, but it is the one frozen page whose indexing would *strengthen* Q6's argument
+rather than weaken it, because it is the page that publishes which claims are wrong. Not
+put to either council. Owner ruling needed: leave frozen · declare provisional · promote to
+current (which would require a `surfaceClaims` binding it does not have).
 
 **What neither council could decide, and what would decide it:** Q7's ordering — lead with
 the zero or with the record. The majority conceded the dissent is not answerable by
