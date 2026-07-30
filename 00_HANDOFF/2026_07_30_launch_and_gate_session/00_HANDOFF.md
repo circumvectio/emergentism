@@ -59,6 +59,40 @@ three routed from the kernel index, none owning anything, the middle one machine
 292-document library index; breadcrumbs and prev/next are generated across all 292 library
 pages from the manifest order.
 
+## 2A · The final sweep — tidy, and a six-lens QA of the live site
+
+**Tidy.** Every folder now carries its three agent-route files (four were missing).
+`00_HANDOFF` gained a README stating what these documents are: *receipts, not results*.
+The repo README gained the three-tier map and a legend for its own directory — of ~40 root
+markdown files, **26 are forwarding stubs** that exist so old links resolve, 3 are agent
+routes, and **7 have actual content**; the seven are named. `09_TOOLS/03_SIMULATIONS`
+(3.9G, 46,766 files) was untracked but not ignored, and now is. Repo clones at 111M.
+
+**The owner found a real hole by looking for the -ologies and the Titans.** Forty routes
+existed and were reachable from nowhere: not declared current, so absent from nav, search
+and sitemap — and not frozen-library *documents* either, so absent from that index too.
+Among them `/titans/`, all six top-level disciplines, and the **library section landing
+pages**: every document inside `/will/` was findable, `/will/` itself — titled Teleology —
+was not. Library index now 329 pages in 18 sections. **No page's `noindex` changed and
+nothing was promoted to a current surface.**
+
+**QA, six lenses over the live site.** Markup integrity came back genuinely clean: zero
+HTML5 parse errors on all 39 current surfaces, zero duplicate ids across 6,024, all 39
+titles and descriptions unique, zero broken fragment anchors, and **zero visitor-reachable
+broken links out of 15,648** — including all 1,460 breadcrumb and pager links generated
+that day. Three real defects, all fixed:
+
+1. **Phones had no search at all.** The drawer was `display:none` below 680px on every
+   current surface — 0×0, measured across 22 pages — on the feature shipped hours earlier.
+   Now verified live at 375×812: 48×48 button, panel opens, `titans` finds `/titans/`.
+2. **`/rosetta/` was in the sitemap and served `noindex`** — a Search Console hard error.
+   The header was a copy-paste of the adjacent frozen `/rosettad/` rule; `/rosetta/` is a
+   declared current surface with one file. Header removed.
+3. **`/read/` printed the same `<h1>` twice** at 68px. One removed.
+
+**Known and not fixed:** `three.js` is 269KB over the wire and **62% of the six numbered
+surfaces**, unminified, at the end of a three-hop chain. Real, separate, carries its own risk.
+
 ## 3 · The traps — read this before touching anything
 
 1. **Open the page. Do not read the HTML.** This was the difference three separate times:
