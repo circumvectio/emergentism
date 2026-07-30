@@ -122,6 +122,26 @@ obstructions: two different reasons a number can fail to be reachable, and neith
 implies the other.</strong> All four combinations are realised by actual maps, which is what
 makes the independence a result rather than an observation.</p>
 
+<p><strong>And that hinge coordinate is something a reader already believes in.</strong> Put
+<code>s = log x</code> and the algebra is two lines:</p>
+
+<pre><code>tanh(s/2)  =  (e^(s/2) − e^(−s/2)) / (e^(s/2) + e^(−s/2))
+           =  (e^s − 1) / (e^s + 1)          multiply top and bottom by e^(s/2)
+           =  (x − 1) / (x + 1)              with x = e^s          =  u(x)</code></pre>
+
+<p>So <code>u</code> is exactly <code>tanh</code> of half the logarithmic coordinate. In special
+relativity, <code>v/c = tanh(rapidity)</code>. <strong>Read <code>s/2</code> as a rapidity and
+the hinge coordinate <em>is</em> a velocity ratio</strong> &mdash; and the two rims
+<code>u = &plusmn;1</code> are then unreachable for precisely the reason the speed of light is:
+they would take infinite rapidity. For every positive <code>x</code>, <code>|u| &lt; 1</code>.</p>
+
+<p><small>The algebra above is <code>[A]</code> &mdash; an identity, checked at seven values to
+twelve decimal places and provable in two lines. <strong>Calling <code>s/2</code> a rapidity is
+<code>[S/I]</code>: a reading, not a result.</strong> Nothing here derives special relativity or
+claims to; the same function turns up in both places because both describe a bounded quantity
+built from an unbounded one, which is a fact about <code>tanh</code> and not about physics.
+<strong>Kill:</strong> exhibit a positive <code>x</code> with <code>u(x) &ne; tanh((log x)/2)</code>.</small></p>
+
 <p class="note"><b>What was actually computed.</b> Every word up to length 10 &mdash;
 <b>232 distinct values</b>. Of the words that are not in reduced form, 143 collide with another
 word; <b>of the reduced words, zero collide</b>, which is what makes the normal form unique.
