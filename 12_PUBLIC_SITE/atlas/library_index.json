@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "status": "frozen-library-only",
-  "boundary": "These routes are served noindex, follow. They are excluded from atlas/site_index.json by design and must never be merged into it. This index exists so a reader already on the site can find a document; it grants no current-surface status and creates no authority.",
+  "status": "frozen-library-and-undeclared-routes",
+  "boundary": "Frozen-library documents plus routes that are declared neither current nor frozen. Most are served noindex; none is a current surface. They are excluded from atlas/site_index.json by design and must never be merged into it. This index exists so a reader already on the site can find a page; it grants no current-surface status, changes no header, and creates no authority.",
   "source": "reading-manifest.json",
   "excludes": "withheld-routes.json artifacts, current surfaces, missing files",
   "skipped": {
-    "withheld": 0,
+    "withheld": 3,
     "already_current": 0,
     "missing_file": 0
   },
-  "total": 292,
+  "total": 329,
   "tree": [
     {
       "key": "trinity",
@@ -1266,6 +1266,172 @@
         {
           "href": "/sacred/02-truth-order-and-niche-partition/",
           "title": "TRUTH ORDER AND NICHE PARTITION"
+        }
+      ]
+    },
+    {
+      "key": "sections",
+      "label": "Library sections",
+      "pages": [
+        {
+          "href": "/papers/",
+          "title": "The Papers"
+        },
+        {
+          "href": "/foundations/",
+          "title": "The Seven -ologies"
+        },
+        {
+          "href": "/trinity/",
+          "title": "The Transcendental Trinity"
+        },
+        {
+          "href": "/formal/",
+          "title": "The Formal System"
+        },
+        {
+          "href": "/paradox/",
+          "title": "Paradox Dissolutions"
+        },
+        {
+          "href": "/memetic/",
+          "title": "Memetics"
+        },
+        {
+          "href": "/rosettad/",
+          "title": "Rosetta D-Series"
+        },
+        {
+          "href": "/will/",
+          "title": "Teleology"
+        },
+        {
+          "href": "/value/",
+          "title": "Axiology"
+        },
+        {
+          "href": "/ground/",
+          "title": "Ontology"
+        },
+        {
+          "href": "/sacred/",
+          "title": "Theology"
+        },
+        {
+          "href": "/method/",
+          "title": "Method"
+        },
+        {
+          "href": "/meta/",
+          "title": "Meta"
+        },
+        {
+          "href": "/sources/",
+          "title": "Sources"
+        }
+      ]
+    },
+    {
+      "key": "disciplines",
+      "label": "The disciplines",
+      "pages": [
+        {
+          "href": "/axiology/",
+          "title": "Axiology: The Equatorial Balance"
+        },
+        {
+          "href": "/ontology/",
+          "title": "Ontology: The Apophatic Core"
+        },
+        {
+          "href": "/theology/",
+          "title": "Theology: Conformal Return"
+        },
+        {
+          "href": "/cosmology/",
+          "title": "Cosmology: The Architecture of Creation"
+        },
+        {
+          "href": "/epistemology/",
+          "title": "Epistemology: The First Power"
+        },
+        {
+          "href": "/methodology/",
+          "title": "Methodology: The Second Power"
+        },
+        {
+          "href": "/teleology/",
+          "title": "Teleology: The Will to Potential"
+        }
+      ]
+    },
+    {
+      "key": "instruments",
+      "label": "Instruments and studies",
+      "pages": [
+        {
+          "href": "/titans/",
+          "title": "The Floor"
+        },
+        {
+          "href": "/riemann/",
+          "title": "The plane gains i, ∞, and curvature"
+        },
+        {
+          "href": "/suda/",
+          "title": "1 at the centre, not 0"
+        },
+        {
+          "href": "/suda-notes/",
+          "title": "Suda Source Notes"
+        },
+        {
+          "href": "/egg/",
+          "title": "The Egg of Infinity"
+        },
+        {
+          "href": "/saturation/",
+          "title": "The μ-limit at every level"
+        },
+        {
+          "href": "/synthesis/",
+          "title": "The Coherent Whole"
+        },
+        {
+          "href": "/soul-loop/",
+          "title": "The Soul Loop"
+        },
+        {
+          "href": "/log-realignment/",
+          "title": "The Logarithmic Realignment"
+        },
+        {
+          "href": "/geometric-ontology/",
+          "title": "The Geometric Ontology of Reality"
+        },
+        {
+          "href": "/finity-papers/",
+          "title": "The Finity Papers"
+        },
+        {
+          "href": "/rosetta-d-series/",
+          "title": "Rosetta D-Series"
+        },
+        {
+          "href": "/halahala/",
+          "title": "Halāhala"
+        },
+        {
+          "href": "/amrita/",
+          "title": "The Amrita"
+        },
+        {
+          "href": "/game/",
+          "title": "The Game"
+        },
+        {
+          "href": "/atlas/",
+          "title": "Emergentism Canon Atlas"
         }
       ]
     }

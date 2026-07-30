@@ -27,6 +27,7 @@ Usage: python3 -B build_library_index.py        (writes atlas/library_index.json
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -53,6 +54,36 @@ SECTION_LABELS = {
     "method": "Method",
     "meta": "Meta",
 }
+
+
+# Routes that EXIST, are real content, and were findable from nowhere: neither declared
+# current (so absent from the nav, the current index and the sitemap) nor a document inside
+# the frozen library (so absent from that index too). They fell through both nets. Reported
+# by the owner as "the website doesn't have dimensions and not have ologies and titans" —
+# dimensions was fine; these were not.
+#
+# Including them here changes NO page's noindex status and promotes nothing to a current
+# surface. It only makes them reachable from the drawer, which is what `follow` is for.
+EXTRA_SECTIONS = [
+    ("sections", "Library sections", [
+        "papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic",
+        "rosettad", "operators", "will", "value", "ground", "sacred", "method", "meta",
+        "sources",
+    ]),
+    ("disciplines", "The disciplines", [
+        "axiology", "ontology", "theology", "cosmology", "epistemology", "methodology",
+        "teleology",
+    ]),
+    ("instruments", "Instruments and studies", [
+        "titans", "riemann", "suda", "suda-notes", "egg", "saturation", "synthesis",
+        "soul-loop", "burrisphere", "log-realignment", "geometric-ontology",
+        "finity-papers", "rosetta-d-series", "halahala", "amrita", "game", "atlas",
+    ]),
+]
+
+# Deliberately NOT included: infrastructure (offline, test, build, home, r/0..r/6,
+# historical-boundary) and everything in withheld-routes.json.
+INFRASTRUCTURE = {"offline", "test", "build", "home", "historical-boundary", "404", "app"}
 
 
 def build() -> dict:
@@ -94,16 +125,50 @@ def build() -> dict:
         {"key": k, "label": SECTION_LABELS.get(k, k.replace("-", " ").title()), "pages": v}
         for k, v in sorted(sections.items(), key=lambda kv: (-len(kv[1]), kv[0]))
     ]
+
+    def title_of(route: str) -> str:
+        f = ROOT / route / "index.html"
+        try:
+            head = f.read_text(encoding="utf-8", errors="replace")[:4000]
+        except OSError:
+            return route
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", head, re.I | re.S) or \
+            re.search(r"<title>([^<]+)</title>", head, re.I)
+        if not m:
+            return route
+        txt = re.sub(r"<[^>]+>", "", m.group(1))
+        return re.sub(r"\s+", " ", txt).split("\u2014")[0].strip() or route
+
+    for key, label, routes in EXTRA_SECTIONS:
+        pages = []
+        for r in routes:
+            if r in INFRASTRUCTURE:
+                continue
+            rel = f"{r}/index.html"
+            route = f"/{r}/"
+            if rel in withheld_artifacts or route.rstrip("/") in withheld_raw:
+                skipped["withheld"] += 1
+                continue
+            if rel in current or route in current_routes:
+                skipped["already_current"] += 1
+                continue
+            if not (ROOT / rel).exists():
+                skipped["missing_file"] += 1
+                continue
+            pages.append({"href": route, "title": title_of(r)})
+        if pages:
+            tree.append({"key": key, "label": label, "pages": pages})
     total = sum(len(s["pages"]) for s in tree)
 
     return {
         "schemaVersion": 1,
-        "status": "frozen-library-only",
+        "status": "frozen-library-and-undeclared-routes",
         "boundary": (
-            "These routes are served noindex, follow. They are excluded from "
-            "atlas/site_index.json by design and must never be merged into it. This index "
-            "exists so a reader already on the site can find a document; it grants no "
-            "current-surface status and creates no authority."
+            "Frozen-library documents plus routes that are declared neither current nor "
+            "frozen. Most are served noindex; none is a current surface. They are excluded "
+            "from atlas/site_index.json by design and must never be merged into it. This "
+            "index exists so a reader already on the site can find a page; it grants no "
+            "current-surface status, changes no header, and creates no authority."
         ),
         "source": "reading-manifest.json",
         "excludes": "withheld-routes.json artifacts, current surfaces, missing files",

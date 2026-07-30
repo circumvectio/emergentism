@@ -21,6 +21,33 @@ remain externally uncalibrated until independent contact decides them.
 10. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) and [Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — chosen constraints and disclosures earned by audit.
 11. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — corrections, failures and receipts.
 
+## How finished is any of it — the three tiers
+
+The reading ladder above says **what to read**. These three say **how finished it is**, and
+a reader with one but not the other will quote a conjecture as a result.
+
+| tier | manifest | holds |
+|---|---|---|
+| **Established** | [`00_ESTABLISHED/`](00_ESTABLISHED/README.md) | only what a machine or an exhaustive computation verifies, with a command that re-checks every entry |
+| **Work in progress** | [`00_WORK_IN_PROGRESS/`](00_WORK_IN_PROGRESS/README.md) | what is open and what each item awaits — rulings, the live claim queue, and what is specified but unrun |
+| **Archive** | [`90_ARCHIVE/`](90_ARCHIVE/) | superseded work, kept with provenance and a `superseded_by:` pointer |
+
+None of the three owns anything; each points at the owner. Re-check the first two with
+`bash 09_TOOLS/01_SCRIPTS/gate.sh`.
+
+## About the files in this directory
+
+There are about forty markdown files at the repository root and **most of them are
+forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
+They exist so that older links keep resolving, and deleting them would break the thing they
+are for. As of 2026-07-30: **26 stubs, 3 agent routes, and 7 documents with actual content** —
+
+- [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
+- [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
+- [`ROSETTA.md`](ROSETTA.md) · [`AGENT_README.md`](AGENT_README.md)
+
+If a root file is not in that list, follow its pointer rather than reading it as source.
+
 ## The compressed compass
 
 ```text
