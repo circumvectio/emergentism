@@ -54,7 +54,8 @@ With colatitude `θ∈(0,π)`, `ν=tan(θ/2)`, `φ=cot(θ/2)`:
 `ν = 1` occurs **exactly** at `θ = π/2`. The equator is equidistant from both
 poles, and `1` lies on it. **Conceded without qualification.**
 
-Suda's metric gives the same verdict independently: `ρ(x)=|log x|` is the
+Suda's metric gives the same verdict in a second presentation of the same
+reciprocal structure—not independent evidence: `ρ(x)=|log x|` is the
 inversion-invariant distance from unity, `ρ(x)=ρ(1/x)`, and `E(x)=(log x)²` has
 its unique minimum at `x=1`. In the reciprocal geometry `1` **is** the centre.
 Verified 2026-07-29.
@@ -63,8 +64,9 @@ Verified 2026-07-29.
 singles `1` out among its points is not the latitude but that `ι(z)=1/z` fixes
 exactly `±1`, and on the positive ray only `+1`. So:
 
-> `1` is at the middle **by latitude**, and is *the* middle **by being the fixed
-> point of the map that swaps the poles.** The second is what makes it unique.
+> `1` is at the middle **by latitude**, and is the unique **positive-ray** fixed
+> point of the map that swaps the poles. On the full sphere, `−1` is the second
+> fixed point.
 
 ## 3 · Inverted — the interior does **not** emerge from the poles `[A]`
 
@@ -92,49 +94,54 @@ the interior*, which must already exist for `ι` to be defined at all.
 
 > **`⊙` is not the child of `•` and `○`. `•` and `○` are the boundary of `⊙`.**
 
-This is not a demotion of the claim. It is the reason `⊙ = • × ○` is a theorem
-rather than a creation story: the equation states a *relation among the three*,
-not a *production of one by two*.
+This is not a demotion of the intuition. The exact survivor is the inversion
+orbit plus the interior coordinate identity `φ(θ)ν(θ)=1`; neither is a creation
+story or an arithmetic relation among Titan seats.
 
 ## 4 · What a genuine "in between" looks like `[S]`
 
 The strongest available version of the owner's intuition, and it works:
 
-Between the empty theory `∅` and a maximal consistent theory `Δ` lies the
-**lattice of all consistent theories** ordered by inclusion. Lindenbaum's
-construction (doc 46 §6A.5) runs *through* that lattice. It is genuinely rich,
-genuinely intermediate, and genuinely "between" the two extremes.
+Fix a language and one maximal consistent theory `Δ`. Between the empty theory
+`∅` and that `Δ` lie its consistent subtheories, ordered by inclusion. They form
+a rich interval in the theory poset. Other consistent theories may be
+incompatible with `Δ`, so this interval is not the lattice of *all* consistent
+theories and there can be many maximal extensions.
 
-But note what it shows: that lattice exists **whether or not** either extreme is
+But note what it shows: that interval exists **whether or not** either extreme is
 adopted. The extremes are its **bounds**, not its **source**. Which is §3 again,
 in the modal register.
 
-## 5 · The unit — and here something *is* forced `[A]`
+## 5 · The unit — conditional uniqueness, not forced existence `[A/S]`
 
-"We must have a unit of account." This is the strongest part of the claim, and
-unusually for this program, it is **not** a selection.
+"We must have a unit of account" does not follow from the two boundary seats.
+What follows only after selecting a group or another unital operation is the
+conditional uniqueness theorem:
 
 ```text
 A group has exactly one identity element.
 ```
 
 The uniqueness is a theorem: if `e` and `e′` are both identities then
-`e = e·e′ = e′`. So in the multiplicative structure the unit is **unique and
-forced** — not chosen, not conventional. `1` is not *a* normalization among many;
-it is *the* identity, and there is no second candidate.
+`e = e·e′ = e′`. Existence of that carrier, operation, and identity remains
+selected. In the selected positive-real multiplicative group the identity is
+the ordinary number `1`; no theorem forces that model from the poles alone.
 
 **A precision on "the centre between both poles."** `1` is not any *average* of
 `0` and `∞`:
 
+Neither `(0+∞_P)/2` nor `√(0·∞_P)` is a field expression on `Ĉ`; the latter is
+undefined even in the usual nonnegative extended-real arithmetic, and limiting
+paths can produce different outcomes. The exact replacement is narrower:
+
 ```text
-arithmetic mean   (0+∞)/2   = ∞               useless
-geometric  mean   √(0·∞)    = INDETERMINATE
-fixed point of ι                = 1           the only determinate answer
+fix(ι on Ĉ)       = {−1,+1}
+fix(ι on ℝ₊)      = {+1}
 ```
 
-So the centre is not obtained by averaging the poles — it is the **fixed point
-of the map that exchanges them**. Doc 45 §2. The averaging reading would be
-indeterminate; the fixed-point reading is exact.
+So the selected positive centre is not obtained by averaging the poles. It is
+the unique fixed point after the positive-ray restriction; on the full sphere
+there are two.
 
 ## 6 · Two different finities are being fused `[A]`
 
@@ -212,9 +219,10 @@ Explanatory reach is abductive support for preference, never a uniqueness proof.
 
 The honest maximal form:
 
-> The sphere is the **selected primary** chart; `1` is its metric centre and the
-> unique fixed point of inversion; the line is retained as the chart that owns
-> order and completeness. Neither is dispensable.
+> The sphere is the **selected primary** chart; `1` lies at its middle latitude
+> and is the unique positive-ray fixed point of inversion; the affine real line
+> is retained as the chart that owns order and completeness. Neither is
+> dispensable.
 
 ## 8 · Claims and kills
 
@@ -225,16 +233,16 @@ The honest maximal form:
 | `1` is singled out on the equator by being an `ι`-fixed point, not by latitude | `[A]` | show another equatorial point fixed by `ι` on the positive ray |
 | two poles do **not** generate an interior | `[A]` | show the two-point discrete space has an interior |
 | the poles are the compactification of the interior; the interior is prior | `[S]` | construct `ℝ₊` from `{0,∞}` alone without further premises |
-| the unit is **unique and forced** (group identity) | `[A]` | exhibit a group with two identities |
-| `1` is the fixed point of `ι`, not an average of the poles | `[A]` | supply a determinate mean of `0` and `∞` |
+| a two-sided identity is unique if the selected operation has one | `[A/S]` | exhibit a structure with two two-sided identities |
+| `fix(ι|ℝ₊)={1}` while `fix(ι|Ĉ)={−1,+1}`; no endpoint average is used | `[A]` | arithmetic error in either fixed set |
 | `ℕ⁺ ⊊ ℝ₊`; unit-addition does not generate the interior | `[A]` | reach `√2` by adding ones |
 | sphere primacy — ruled and executed (r175) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ` |
 | `ℝ ∪ {∞}` is the `ι`-invariant meridian carrying both fixed points | `[A]` | exhibit a real `x` with `1/x` non-real |
 | arithmetic is chart-local under sphere primacy | `[A]` | define a global field structure on `Ĉ` |
 | "no other model acceptable" is declared policy, not theorem | `[S]` | overturn Möbius 3-transitivity |
 
-**What this document does not do.** It does not weaken `⊙ = • × ○` — doc 45 is
-untouched. It does not deny the sphere's primacy. It denies only that the
-interior is *produced* by the poles, and that the model is *uniquely* acceptable.
+**What this document does not do.** It does not restore retired Titan arithmetic.
+It does not deny the sphere's selected primacy. It denies that the interior is
+*produced* by the poles or that the model is *uniquely* forced.
 
 •   ⊙   ○ — *the middle is real, and it was there before the ends were named.*

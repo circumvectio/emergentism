@@ -409,7 +409,7 @@ Keep the tiers intact.
 - The Brain As the Burri Sphere — neuroscience-adjacent mapping: processing modes read as φ/ν
 - The Genesis Simulation — D0→S²→D0 animated
 - AUM on the Burri Sphere — Vedantic convergence: four states of systemic awareness
-- Core Concepts — single source of truth for finite-node `P_node = Φ × V` and manifold `P∞ = φ · ν = 1`
+- Core Concepts — current boundary for finite-node `N_node=(Φ̂₄,V₄)`, calibrated scalar candidates, and the separate chart identity `P∞=φν=1`
 
 *I As the Equator | 2026-03-23 | `i` is mathematically real and symbolically equatorial. Consciousness, corpus-callosum, and present-moment readings remain interpretive/conjectural.*
 

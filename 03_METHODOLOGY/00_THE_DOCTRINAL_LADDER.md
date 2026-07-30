@@ -50,8 +50,8 @@ The top rung is **Seed**.
 It is not "Core State" alone and not "System Architecture" alone.
 
 ```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+Typed reciprocal-chart block
+θ∈(0,π); φ=cot(θ/2); ν=tan(θ/2); φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
@@ -151,8 +151,9 @@ This ladder inherits the 2026-05-14 derivation audit:
   `F_H = −∂H/∂φ = 1/φ² − 1`.
 - "Consciousness = equator" is conjectural, not derived.
 - Penrose CCC is a loose analogue only, not a technical torus-to-sphere proof.
-- `P` must not be used bare where the regime matters: use `P∞`, `B`, or
-  `P_node`.
+- `P` must not be used bare where the regime matters: use `P∞`, `B`, or the
+  ordered profile `N_node`. A scalar such as `P×,κ` is named only after its
+  calibration contract `κ` is declared.
 
 ---
 

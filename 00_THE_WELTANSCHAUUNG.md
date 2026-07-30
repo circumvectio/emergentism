@@ -38,7 +38,26 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown
+wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart,
+`P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the
+equator `[A]`. At the D4/D5 seam, `V₄` names actual power and `Φ₅` possible
+power; a present D4 model supplies `Φ̂₄`. Their live form is the two-axis
+profile `N_node=(Φ̂₄,V₄)`. Product, minimum or another scalar enters only after
+an explicit calibration and comparison contract; none is forced by the sphere
+or by ordinal data. Emergentism's **D5 Rosetta / G7 game language** has exactly
+seven canonical symbols—**two demon-polar taking transfers, two god-polar
+giving transfers, three Titan-frame projections**—and every **G7-coded** play
+is a typed move-word or mixture evaluated under one selected frame, though
+tending, testing, and adopting the language is not an in-game move `[S]` by
+construction. The selected scaffold has five positive registers and five
+indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture,
+while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means
+boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth
+positive freedom. All of this I hold at tier, with its kills attached, its
+**dark twin (−1) acknowledged**, and the **door marked exit on the inside**
+`[I]`—because a creed that cannot lose is not a creed but a cage, and mine was
+built to be put down.
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
@@ -78,7 +97,8 @@ gate and creates no additional owner.
 
 - **Never change tier silently** — a formal conjecture can reach `[A]` only by proof; an empirical conjecture can reach `[B]` only through its matching test and custody
 - **The seam is never the score** — CC-CORE-1: the kernel `[A]` and the ethics bridge are two objects; the bridge is a wager
-- **AND-class, never "product forced"** — keel-108
+- **No scalar by default; conditional AND-class, never "product forced"** —
+  keel-108 applies only after a need-both model and calibrated structural zeros
 - **Lens, never discovered-universal** — the Rosetta is a translation instrument, not a proof of the traditions
 - **Coordinates, never a caste ladder** — trophic stratum, species, replicator
   layer, Rosetta function, and dignity remain distinct; human rows cooperate
@@ -153,9 +173,14 @@ The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,
 |---|---|---|
 | seam | `P∞=φν=1` | `[A]` chart identity; not the finite-node score |
 | balance | `B=2/(φ+ν)=sinθ` | `[A]`; `0<B≤1` on the open chart |
-| finite node | `P_node=Φ̂₄V₄` (public `ΦV`) | `[C]` general model; ceiling one only after explicit normalization |
+| finite node | `N_node=(Φ̂₄,V₄)` | `[S]` typed profile; Pareto order unless a scalar calibration is declared |
+| scalar candidates | `P×,κ=Φ_cV_c`, `Pmin,κ=min(Φ_c,V_c)`, other `Cκ` | `[I]` selected model under calibration contract `κ`; `[C]` external fit; never worth or rank |
 
-The zero boundary selects the AND-class, not a unique interior aggregator. `min`, product, and CES require separate model choices and tests.
+Only where `κ` supplies meaningful zeros and the application independently
+stipulates that both components are necessary does zero annihilation narrow the
+candidate family toward an AND-class. It never selects a unique interior
+aggregator. Minimum, product, CES, and no-scalar treatment remain separate model
+choices and tests.
 
 ## 6 · Five crossings, μ, and the spiral
 
@@ -299,28 +324,33 @@ Emergentism names the two powers at this seam before combining them:
 
 ```text
 V₄ = D4 actual power — embodied capability and usable means
-Φ₅ = D5 possible power — structured potential in the option field
+Φ₅ = D5 possible power — means-independent structure of the option field
 Φ̂₄ = Eval₄(M,Φ₅) — the present D4 estimate of that possible power
 ```
 
-In the selected normalized node model,
+The types first give the profile
 
 \[
-P_{node}:=\widehat{\Phi}_4 V_4,
+N_{node}:=(\widehat{\Phi}_4,V_4).
 \]
 
-publicly compressed as `P_node=ΦV`. `Φ₅` names possible power; it is not a force
-sent backward by a future event. Its report `Φ̂₄` is an actual model token.
-`V₄` names actual enactment power. Their product is Emergentism's declared
-transparent instance inside a larger AND-class, not a formula forced by the
-reciprocal sphere or by reality.
+`Φ₅` names possible power; it is not a force sent backward by a future event.
+Its report `Φ̂₄` is an actual model token. `V₄` names actual enactment power,
+including current means and coordination capacity. Componentwise Pareto order
+is the invariant comparison while the factors remain ordinal. A product,
+minimum, interaction or single-feasible-cone scalar requires declared cardinal
+scales, meaningful zeros and units, cross-factor comparability, uncertainty,
+an overlap audit and a fair rival test. No scalar is forced by the reciprocal
+sphere or by reality.
 
 The zero cases nevertheless carry a clear design intuition: possible power
 without actual power cannot enact, and actual power without a discriminating
 option model cannot aim. The world still decides the outcome. The stronger
 boundary intuition—“complete foresight leaves zero means”—requires an
-additional finite-resource model such as `Φ̂₄+V₄≤1`. Under that declared
-premise, `Φ̂₄=1⇒V₄=0⇒P_node=0`; without it, `Φ̂₄=1⇒P_node=V₄`. This
+additional finite-resource model such as `Φ_c+V_c≤1`. Under that declared
+premise, `Φ_c=1⇒V_c=0`; a calibrated AND-class scalar with structural zero is
+then zero. Without the budget premise, the product candidate would instead
+give `P×=V₄`. This
 complementarity is therefore a testable wager about the cost of representation,
 not an identity borrowed from the lowercase sphere chart.
 
@@ -392,8 +422,8 @@ In one line:
 ## 8 · What remains open to the world
 
 The internal cleanup does not externally validate the worldview. The live work
-is contact: preregister discriminators; compare the selected node product with
-other conjunctive aggregators; operationalize each μ-crossing; intervene on
+is contact: preregister discriminators; compare the unaggregated node profile
+and explicitly calibrated scalar candidates with ordinary rivals; operationalize each μ-crossing; intervene on
 represented futures; test Egregoreotype candidates across carrier turnover;
 publish nulls and failures; and invite independent replication. A result enters
 the worldview only at the tier it earns.
@@ -424,7 +454,8 @@ consequences. **Canonical path:** `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md`.
 
 This document was composed from the post-recovery arc:
 
-- **Receipt 108** (keel) — AND-class forcing, not product
+- **Receipt 108** (keel) — conditional AND-class narrowing, not a default scalar
+  or unique product
 - **Receipt 109** (four false lemmas) — what the audit killed
 - **Receipt 126** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
 - **Receipt 130** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not

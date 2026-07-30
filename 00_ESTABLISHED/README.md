@@ -1,16 +1,16 @@
 ---
-title: "00_ESTABLISHED — the manifest of what actually survives an outside check"
+title: "00_ESTABLISHED — verification-state ledger, with bounds and gaps explicit"
 status: "ACTIVE — a MANIFEST, not a relocation. Holds no source truth and owns nothing."
 date: 2026-07-29
-evidence_tier: "[B] this register is a reproducible index; each entry carries its own tier"
+evidence_tier: "[B] corpus and bounded-check facts; each mathematical claim retains its own tier"
 owner: "No owner. Every entry points at its owner. This folder may never be cited as authority."
 ---
 
 # 00_ESTABLISHED
 
 > **This folder holds no doctrine, no source truth, and no authority.**
-> It is an index of what passes an admission standard, with a command that
-> re-checks every entry. **Nothing was moved here. Nothing was archived.**
+> It is an index of verification state, with a command that checks the claims it
+> can actually execute. **Nothing was moved here. Nothing was archived.**
 
 ## Why it exists
 
@@ -18,18 +18,20 @@ The corpus separates claims by **evidence tier** (`[A]`…`[D]`) and, since r172
 **validation status** on a second axis. Neither answers the question a stranger
 actually asks: *what here survives a check by something that does not believe you?*
 
-Receipt 173 measured the gap — **155 receipts, zero outcome receipts from outside**.
-This folder is the honest answer to that question, and it is deliberately short.
+Receipt 173 measured the gap—**155 receipts, zero outcome receipts from outside**.
+This folder must not rename internal scripts as outside review. It is deliberately
+short and may legitimately contain no fully admitted new claim.
 
 ## The admission standard
 
-A claim is listed here only if **all four** hold:
+A claim may enter the fully verified section only if **all five** hold:
 
 ```text
-1  TIER          it is [A] — analytic or proved, not selected, interpreted, or conjectured
-2  CHECKED       a machine or an exhaustive computation verifies it, not a reader
-3  KILLED        it carries a stated kill a stranger could execute
-4  REPRODUCIBLE  a command in this repo re-runs the check and exits non-zero on failure
+1  TIER          it is [A] within an explicitly named structure
+2  EXECUTED      the verifier is actually invoked, not inferred from source text
+3  COMPLETE      the method covers the universal claim, not only a finite sample
+4  KILLED        it carries a stated counterexample or failure condition
+5  REPRODUCIBLE  a fresh command exits non-zero on proof, axiom, or result failure
 ```
 
 **A claim that is merely true is not admitted.** A claim that is merely agreed is not
@@ -43,56 +45,56 @@ one is its own kill.**
 python3 09_TOOLS/01_SCRIPTS/check_established.py
 ```
 
-Exits non-zero if any listed entry stops holding.
+Exits non-zero if the ledger overstates what its executable checks establish.
 
 ---
 
 ## The manifest
 
-### A · Machine-proved — Lean 4 + mathlib, no `sorry`, clean axiom traces
+### A · Fully admitted machine proofs
 
-`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean` — **15 theorems.**
+**None currently admitted from the 2026-07-29 addition.**
 
-| id | claim | kill |
-|---|---|---|
-| `no_quotient_by_zero` | for `a ≠ 0` there is no `y` with `0·y = a` | exhibit a field with `0·y = 1` |
-| `inversion_fixed_iff` | `ι` fixes exactly `±1` | exhibit a third fixed point |
-| `unique_positive_fixed_point` | on the positive ray, only `+1` | exhibit a second |
-| `keel_is_complementary_angles` | `φ·ν = 1` **is** the complementary-angle rule | exhibit a right triangle where it fails |
-| `energy_min_at_one` | `(log x)²` vanishes only at `x = 1` | exhibit a second zero |
-| `at_most_one_identity` | a structure has **at most one** identity | exhibit two |
-| `existence_not_forced` | existence of an identity is **not** forced — the counterexample that killed the published `F2` | show every binary op on a 2-set has one |
-| *(8 more)* | involutions, orbit identity, duality | see the file |
+`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean` contains **15 theorem
+declarations**, but `check_established.py` does not yet compile that file in a
+pinned Lean/mathlib project or inspect axiom traces. Source presence and absence
+of `sorry` are lint facts, not a proof receipt. The declarations are therefore
+**proof candidates**, not machine-established entries.
 
-> **Note against over-reading, carried from the file's own §7:** these are checked
-> over `ℝ`, `Bool`, and abstract `Field`/`Mul`. **The primary object `Ĉ` is not
-> reached**, and both keel theorems exclude the pole by hypothesis. *"`Ĉ` is not a
-> ring"* — the corpus's most load-bearing negative claim — is **unchecked by machine.**
+Even after compilation, their scope would remain `ℝ`, `Bool`, and abstract
+`Field`/`Mul`; they would not establish a global operation on `Ĉ`, Titan
+arithmetic, ontology, or any world claim.
 
-### B · Exhaustively computed — `09_TOOLS/01_SCRIPTS/check_generative_base.py`, mutation-tested
+### B · Analytic proof text with bounded computational regression
 
 The generative base, `05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md`.
 
 | id | claim | kill |
 |---|---|---|
 | `G1` | reachability from `1` under `{S, ι}` is exactly `ℚ⁺` | exhibit an unreachable positive rational |
-| `G2` | reduced words are unique normal forms — a bijection onto `ℚ⁺` | exhibit two reduced words with one value |
+| `G2` | **open general claim:** reduced words are unique normal forms | exhibit two reduced words with one value; or supply the missing complete proof |
 | `G3` | no word attains `0` | exhibit one |
 | `G4` | no word attains `∞` | exhibit one |
 | `G5` | both limits are approached | exhibit a neighbourhood with no reachable value |
 | `G6` | `ι` alone is sterile; `S` alone gives `ℕ⁺` | exhibit a fraction from `S` alone |
-| `G7` | `•` is a direction only because `ι` reflects `○` | exhibit a descent below `1` without `ι` |
+| `G7` | `S` alone never descends below `1`; inversion supplies the displayed descending sequence | exhibit a descent below `1` using `S` alone |
 | `G8a` | `ι` is an involution with unique fixed point `1` | exhibit a second reachable fixed point |
-| `G9` | every word has determinant `±1`; the hinge (`det 2`) is not a word | exhibit the hinge as a word |
+| `G9` | every generator word has determinant `±1`; the hinge (`det 2`) is not such a word | error in the determinant argument |
 | `G10` | determinant and sign are **independent** obstructions | collapse the four-quadrant table |
 
-### C · Admitted with their scope stated
+The command exhausts words only through length 10, a Calkin–Wilf tree through
+depth 12, a `25×25` rational grid, and determinant words through length 16. Those
+bounds are regression coverage. They do not prove G1 or G2 over infinite domains;
+G1 and the other universal rows stand, if at all, on their written analytic
+arguments. `G2` remains open until a complete proof or formalization lands.
+
+### C · Standard scoped facts indexed, not independently re-proved here
 
 | claim | scope | why it is not unconditional |
 |---|---|---|
 | `G8b` — `ι` is `s ↦ −s` under `s = log x` | `[A] given ℝ` | `log q` is **transcendental** for every rational `q ≠ 1`; the log coordinate leaves the base's own objects |
 | `Z1` — `0 ∉ ℝ^×` | `[A]` | the corpus's phrasing *"0 ∉ ℝ"* is **false**; `0 ∈ ℝ` |
-| `N1`–`N5` | `[A]` | `1` unique additive irreducible · `{1}` in every generating set · `ℕ⁺` free semigroup · `ℤ` initial in **Ring** · one primitive given inverses |
+| `N1`–`N4` | `[A]` inside named standard structures | `1` additive irreducible · `{1}` in every additive generating set of `ℕ⁺` · `ℕ⁺` free semigroup · `ℤ` initial in **Ring** |
 
 ---
 
@@ -117,8 +119,8 @@ belongs. **This folder exists so that the difference cannot be blurred by fluenc
 
 If any entry above is cited as support for a claim outside its stated scope; if a
 selection or a reading is admitted; or if the "what is NOT here" list is quietly
-shortened without a corresponding verification landing — **this manifest has become
-a promotion path, which is the thing it was built to prevent.** Delete it rather
-than defend it.
+shortened without a corresponding verification landing—or if bounded search is
+called proof—**this manifest has become a promotion path.** Withdraw and archive
+the overclaim rather than defend it.
 
 •   ⊙   ○ — *short, and that is the finding.*

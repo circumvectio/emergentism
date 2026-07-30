@@ -71,13 +71,18 @@ If a metaphor and a kill condition disagree, the kill condition wins.
 ## The Shape of the Territory
 
 > This framework draws on the Gita's structure -- the revelation of the field before the battle.
-> It does not claim high-priority inspiration. It claims that the mathematical structure (S^2, P_node = Φ × V)
-> has the same functional role as the Gita's teaching: showing the agent the shape of the
+> It does not claim privileged inspiration. It proposes that the selected sphere,
+> node-profile, and dimensional structures
+> have the same functional role as the Gita's teaching: showing the agent the shape of the
 > territory before asking them to act. The reader should evaluate the mathematics, not the metaphor.
 
 [I] The Bhagavad Gita presents a moment of paralysis -- Arjuna at Kurukshetra, unable to act because he cannot see the shape of the situation. Krishna's teaching is not a command to fight. It is a revelation of the field: the structure of dharma, the nature of action, the geometry of the situation Arjuna inhabits. Once the field is seen, action follows from seeing.
 
-The EFR claims an analogous structure: the equation P_node = Φ × V, the sphere S^2, and the dimensional scaffold D0-D6 are a map of the territory. The map does not tell the agent what to do. It shows the agent the shape of the space in which they act.
+The EFR proposes an analogous teaching structure: `N_node=(Φ̂₄,V₄)`, the
+selected sphere, and the D0–D6 scaffold are candidate maps. The profile has no
+default scalar; any product requires a calibration contract `κ`. These maps do
+not tell an agent what to do, and their elegance does not establish that the
+territory has their shape.
 
 **This is a structural analogy [I], not a claim of identity with any religious teaching.**
 
@@ -97,11 +102,11 @@ It should be read as:
 
 [I] The framework identifies three archetypal failure modes of agency:
 
-1. **Action without integration (high V, low Phi):** Building capability without coherence. The system grows powerful but fragmented. In the framework's language: V increases while Phi collapses, and P_node = Φ × V crashes via zero-factor catastrophe.
+1. **Action without integration (high `V₄`, low `Φ̂₄`):** Building capability without adequate modeling or coherence. This is a qualitative profile description, not a scalar diagnosis.
 
-2. **Integration without action (high Phi, low V):** Achieving coherence without capability. The system is harmonious but impotent. Phi is high but V is near zero, and P remains small.
+2. **Integration without action (high `Φ̂₄`, low `V₄`):** Modeling or coherence without enough capability to enact it. Again, the two-component profile is retained rather than collapsed to a score.
 
-3. **Confused action (unread coordinates):** Acting without seeing the field at all. This is neither high-V/low-Phi nor high-Phi/low-V in any stable sense. It is action at arbitrary coordinates on S^2, without awareness of one's position on the sphere.
+3. **Confused action (model failure):** Acting without an adequate account of the relevant field. This need not correspond to any literal coordinate on `S²`.
 
 The third path matters because the framework's own method is triadic. The Lens arc is designed to address this condition: not by commanding action, but by revealing the geometry.
 
@@ -113,7 +118,7 @@ The Lens arc proceeds as follows:
 
 | Document | What It Does |
 |----------|-------------|
-| **01 Rosetta Stone** | Shows that CP^1 appears across domains -- the structural identification |
+| **01 Rosetta Stone** | Tests whether selected `CP¹` correspondences preserve useful structure across domains without transferring proof |
 | **02-07 VRS Sheets** | Maps the framework's formal results onto specific domains |
 | **08 Antenna Tuning** | Explains the coupling mechanism between individual and collective |
 

@@ -75,7 +75,14 @@ Under this reading:
 This does not replace the earlier definitions.
 It sharpens them.
 
-Good increases finite-node `P_node` without trapping the being inside the channel that delivered the increase.
+Good is not the maximization of an uncalibrated scalar. In this selected
+reading, good mediation preserves or improves both the being's and the
+sustaining whole's declared `N_node=(Φ̂₄,V₄)` profiles under componentwise
+Pareto comparison, without trapping either bearer inside the channel that
+delivered the change. Pareto-incomparable cases stay open for a declared,
+contestable tie-breaker. A scalar candidate such as `P×,κ=Φ_cV_c` is available
+only under an explicit calibration contract `κ`; it cannot compensate one
+bearer's deterioration with another's gain.
 
 Evil increases local control by forcing the being to remain dependent on the channel.
 

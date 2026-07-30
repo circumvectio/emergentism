@@ -48,7 +48,8 @@ outcome feedback.
 The sphere may visualize imbalance and a declared balance score. It does not
 measure sovereignty, recognize the Ground, sum persons into a real collective
 capacity, derive Dharma, prove cooperation, or certify that a civilization has
-passed a Great Filter. `P_node=ΦV` remains a selected conjunctive model;
+passed a Great Filter. `N_node=(Φ̂₄,V₄)` remains a two-axis profile, and every
+scalar candidate requires an explicit calibration and rival test;
 Justice-constrained Power-Max remains a normative design objective `[I]` with a
 conjectural real-world fit `[C]`.
 

@@ -188,7 +188,7 @@ The symbol enters Layer 3. It is:
 
 | Symbol | Layer 3 Meaning | Layer 2 Source | Status |
 |---|---|---|---|
-| ⊙ | Finity (one through nothing × everything) | φ · ν = 1 on S² | Canonical |
+| ⊙ | Finity (selected middle/boundary emblem) | operator-free Titan display; `φ(θ)ν(θ)=1` only on the open reciprocal chart | Canonical |
 | φ | Coherence (the north pole) | Formal system | Technical use only |
 | ν | Viability (the south pole) | Formal system | Technical use only |
 | B | Balance (sin θ) | Equator geometry | Technical use only |

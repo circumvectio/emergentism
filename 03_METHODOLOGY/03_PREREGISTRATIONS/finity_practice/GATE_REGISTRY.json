@@ -1,0 +1,211 @@
+{
+  "schema": "emergentism/finity-practice-gate-registry/v2",
+  "program_id": "FPE-01",
+  "created": "2026-07-28",
+  "authority": "routing_only_no_semantic_authority",
+  "definition_source": {
+    "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+    "section": "3B",
+    "sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c"
+  },
+  "front_door": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
+    "sha256": "d104ba21f9f3c09f0afc31d5fa232a0f7c1a6d94ee383db9c75fbdce5cccfcfb",
+    "packet_status": "typed",
+    "contact_status": "deferred",
+    "authority": "routing_only_no_semantic_authority"
+  },
+  "semantic_owner_ids": {
+    "FIN01-01": [
+      "K-5"
+    ],
+    "FIN01-02": [
+      "K-4"
+    ]
+  },
+  "claim_card_path": "00_META/claim_cards/finity_practice.yaml",
+  "claim_card_ids": [
+    "FIN01-01",
+    "FIN01-02"
+  ],
+  "docket_ids": [
+    "A3",
+    "A5"
+  ],
+  "packet_status_vocabulary": [
+    "typed",
+    "packet-complete"
+  ],
+  "contact_status_vocabulary": [
+    "deferred",
+    "evidence-open",
+    "component-supported",
+    "independently-replicated",
+    "narrowed",
+    "killed",
+    "frozen"
+  ],
+  "program_boundary": "These packets test communication, independent criticism, and domain-bounded comparative utility. They create no theorem, ontology, ethic, authorization, or validation of Emergentism.",
+  "result_custody": {
+    "owner_id": "K-7",
+    "index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md",
+    "future_receipt_pattern": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/finity_practice/<gate-id>/<date>-<run-id>.json",
+    "rule": "Create a result path only for an actual run. Preserve nulls, harms, withdrawals, deviations, dissent, kills, and superseded packet hashes. Do not preserve personal data merely to satisfy archive discipline."
+  },
+  "external_custody_contract": {
+    "project_custodian_ids": ["K-1", "K-2", "K-3", "K-4", "K-5", "K-6", "K-7"],
+    "receipt_schema": "emergentism/finity-practice-external-receipt/v1",
+    "independence_rule": "An independent-replication custodian must be declared external to the project, disclose conflicts, differ from the data and original-result custodians, and not use a registered project-owner ID.",
+    "boundary": "The structured receipt binds the declaration and conflict record; it does not by itself prove the custodian's identity or independence."
+  },
+  "external_state": {
+    "participants_contacted": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "reviewers_engaged": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "ethics_determination_obtained": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "preregistration_frozen": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "data_collected": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "results_exist": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    },
+    "independent_replication_exists": {
+      "state": "absent",
+      "receipt": null,
+      "receipt_sha256": null,
+      "custodian_id": null
+    }
+  },
+  "gates": [
+    {
+      "gate_id": "FPE-READ-01",
+      "title": "Fresh-reader comprehension",
+      "packet": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md",
+      "packet_sha256": "b11a9c8e99781bdf5b75c4caf88a79126f0928602294511b273a2e425224ee61",
+      "packet_status": "typed",
+      "contact_status": "deferred",
+      "execution": {
+        "state": "blocked",
+        "prerequisites": {
+          "ethics_determination": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "consent_script": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "stimulus_manifest": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "interviewer_script": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "scoring_rubric": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "data_management_plan": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "adverse_event_route": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "named_custodian": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null}
+        },
+        "ready_when": "Every prerequisite is satisfied and the complete reader bundle is frozen under recorded hashes."
+      },
+      "claim_card_ids": [
+        "FIN01-01"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "depends_on": [],
+      "moves_if_passed": "The tested public artifact is comprehensible at the declared task, language, viewport, and cohort boundary.",
+      "does_not_move": "Does not move FIN01-02, formal Finity, ontology, truth, efficacy, endorsement, or independent replication.",
+      "kill_or_revise": "Revise the artifact when the frozen comprehension threshold fails or a serious authorization, belief, algebra, ontology, rank, or efficacy misreading appears."
+    },
+    {
+      "gate_id": "FPE-REVIEW-01",
+      "title": "Independent review",
+      "packet": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
+      "packet_sha256": "d4eff350211c81d34e4868889ddbea21d322567dba6420499b969e456db6521c",
+      "packet_status": "typed",
+      "contact_status": "deferred",
+      "execution": {
+        "state": "blocked",
+        "prerequisites": {
+          "bundle_manifest": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "conflict_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "reviewer_scope_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "compensation_terms": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "publication_permission": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "applicability_determination_recorded": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null}
+        },
+        "ready_when": "Every prerequisite is satisfied and one manifest binds the complete same-hash review bundle."
+      },
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "depends_on": [],
+      "moves_if_passed": "Named objections, prior art, confounds, harms, and protocol defects have received conflict-declared external scrutiny within each reviewer's competence.",
+      "does_not_move": "Does not move truth, ontology, efficacy, safety, endorsement, consensus, or replication.",
+      "kill_or_revise": "The review gate fails if conflicts or scope are hidden, authors edit a verdict, dissent is suppressed, or a material blocker is ignored."
+    },
+    {
+      "gate_id": "FPE-COMPARE-01",
+      "title": "Controlled Finity comparison",
+      "packet": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md",
+      "packet_sha256": "10fd04a23d64a4f10e07a1ee5f72ed128c7324938585b56efdc81eeec4192efa",
+      "packet_status": "typed",
+      "contact_status": "deferred",
+      "execution": {
+        "state": "blocked",
+        "prerequisites": {
+          "same_hash_review_resolved": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "ethics_determination": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "consent_script": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "materials_manifest": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "component_equivalence_manifest": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "sample_size_plan": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "allocation_code": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "analysis_code": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "data_management_plan": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "adverse_event_plan": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "preregistration_receipt": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null}
+        },
+        "ready_when": "Every prerequisite is satisfied and the reviewed materials and analysis bundle are frozen under the preregistration receipt."
+      },
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "depends_on": [
+        "FPE-REVIEW-01"
+      ],
+      "moves_if_passed": "Only the preregistered comparative claim in the sampled low-stakes domain and measured outcomes may move to a scoped result state.",
+      "does_not_move": "Does not move formal Finity, Emergentism as a whole, ontology, objective ethics, general decision efficacy, high-stakes use, or independent replication.",
+      "kill_or_revise": "Kill or narrow incremental-benefit language if the unbranded prompts do not beat the component-matched ordinary worksheet by the frozen meaningful margin after burden, harms, attrition, and unequal exposure are counted."
+    }
+  ]
+}

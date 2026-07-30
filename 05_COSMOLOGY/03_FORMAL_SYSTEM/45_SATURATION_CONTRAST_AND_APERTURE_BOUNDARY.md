@@ -16,7 +16,7 @@ parents:
 This note isolates four claims that had begun to look like one:
 
 1. an exact reciprocal-chart limit;
-2. an exact result inside a separately budgeted node model;
+2. an exact result inside a separately calibrated and budgeted node model;
 3. an exact local gauge-theory example;
 4. a conjecture that saturation of one capacity can extinguish the contrast or
    complementary capacity required for action.
@@ -45,40 +45,62 @@ nu  -> infinity  =>  phi -> 0 and B -> 0.
 These are analytic facts of the selected chart. They imply no resource budget,
 physical conservation law, ontology, ethic, force, or emergence event.
 
-## 2. Budgeted node boundary `[A/S]`
+## 2. Calibrated, budgeted node boundary `[A/S]`
 
-Let `Phi,V in [0,1]`, let `P_node=Phi*V`, and separately impose
+The current node invariant is the ordered profile
 
 ```text
-Phi + V <= 1.
+N_node = (Phi_hat_4, V_4).
+```
+
+When either axis is only ordinal, componentwise Pareto comparison is the
+baseline: no scalar product is licensed. For a particular application, let a
+declared calibration contract `kappa` supply cardinal transforms, common zeros,
+units, admissible rescalings, uncertainty, and a domain boundary. Define
+
+```text
+Phi_c = c_Phi,kappa(Phi_hat_4) in [0,1]
+V_c   = c_V,kappa(V_4)         in [0,1]
+P_x,kappa = Phi_c*V_c.
+```
+
+Now separately impose the calibrated resource constraint
+
+```text
+Phi_c + V_c <= 1.
 ```
 
 Then:
 
 ```text
-Phi = 1  =>  V = 0  =>  P_node = 0,
-V = 1    =>  Phi = 0 =>  P_node = 0,
-P_node <= 1/4,
-P_node = 1/4 iff Phi = V = 1/2 under Phi+V=1.
+Phi_c = 1  =>  V_c = 0    =>  P_x,kappa = 0,
+V_c = 1    =>  Phi_c = 0  =>  P_x,kappa = 0,
+P_x,kappa <= 1/4,
+P_x,kappa = 1/4 iff Phi_c = V_c = 1/2 under Phi_c+V_c=1.
 ```
 
 The proof of the maximum is AM-GM or completion of the square:
 
 ```text
-Phi*V <= ((Phi+V)/2)^2 <= 1/4.
+Phi_c*V_c <= ((Phi_c+V_c)/2)^2 <= 1/4.
 ```
 
 The interpretation is conditional: exhaustive allocation to represented
 foresight leaves no declared means, while exhaustive allocation to means leaves
 no declared foresight. The two poles are operationally sterile only inside the
-named budget model.
+named calibration-and-budget model. `P_x,kappa` is one candidate aggregator,
+not a default definition of power, potential, value, or human rank.
 
 ### Countermodel: the product supplies no tradeoff
 
-Remove `Phi+V<=1`. The admissible assignment `Phi=1,V=1` gives `P_node=1`.
-Therefore neither the product nor the reciprocal chart proves that foresight
-must consume means. A real application owes independent measures, an observed
-resource surface, and comparison with rival constraints.
+Remove `Phi_c+V_c<=1`. The admissible assignment `Phi_c=1,V_c=1` gives
+`P_x,kappa=1`. Or retain only ordinal axes: independent monotone rescalings can
+reverse rankings induced by the product while preserving every within-axis
+order. Therefore neither the product nor the reciprocal chart proves that
+foresight must consume means, and raw node profiles cannot be multiplied. A
+real application owes the full `kappa` contract, independent measures, an
+observed resource surface, and comparison with rival constraints and
+aggregators.
 
 ## 3. Local gauge contrast `[A/I]`
 
@@ -177,7 +199,7 @@ prediction, and kill. In particular:
 
 ```text
 reciprocal extremity -> loss of chart balance                    [A]
-budget extremity     -> loss of complementary node capacity     [A/S, conditional]
+calibrated budget    -> loss of complementary node capacity     [A/S, conditional]
 pure gauge           -> zero local field strength               [A, local]
 universal saturation -> aperture / force cancellation           [C, unearned]
 ```

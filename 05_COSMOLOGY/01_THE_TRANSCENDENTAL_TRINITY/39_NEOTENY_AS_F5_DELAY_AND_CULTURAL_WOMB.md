@@ -11,7 +11,7 @@ rosetta:
       role: "extended plasticity as the window in which culture builds generalized Phi"
     - level: L4
       column: Value Alignment
-      role: "care, teaching, and non-capture as the dyadic conditions that make delayed viability power-maximal"
+      role: "care, teaching, and non-capture as conditions for a jointly beneficial delayed-viability strategy"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -25,24 +25,24 @@ rosetta:
 
 **Status:** Canonical Rosetta L5 synthesis note
 **Date:** 2026-05-30
-**Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the Power-Max / `P_node = Φ × V` conditional inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims
+**Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the node-profile, Justice, and Pareto decision grammar inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims
 **Depends on:** [36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [Tantric Transmutation — current interpretive source](../../01_TELEOLOGY/00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [D4-D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Power-Max Lemma](../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
 **Historical provenance:** [sexual-selection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md), [F5-redirection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/38_TANTRA_AS_F5_REDIRECTION.md), and [session packet](../../11_UPLINK/60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md). These records do not own the claim.
-**Kill Criteria:** If the comparative-development claims fail source review; if extended juvenile plasticity is not correlated with later generalized learning / symbolic capacity in the relevant species; if the framework cannot show how the early `V` deficit is carried without extraction; if designed institutional neoteny reliably produces dependency capture rather than sovereign return.
+**Kill Criteria:** If the comparative-development claims fail source review; if extended juvenile plasticity is not correlated with later generalized learning / symbolic capacity in the relevant species; if the framework cannot show how the early `V₄` deficit is carried without extraction; if designed institutional neoteny reliably produces dependency capture rather than sovereign return.
 
 > **Anchor Sequence:**
 > ```text
-> P_node = Φ × V
-> max durable W_i(T) inside a declared Justice-admissible cooperative field
-> strict syntropic dyad: ΔP_node,i > 0 and ΔP_node,H > 0 under η_move = 0
-> delayed V -> compounding Φ -> generalized V
+> N_node,i=(Φ̂₄,i,V₄,i); N_node,H=(Φ̂₄,H,V₄,H)
+> Justice filter -> Pareto-nondominated bearer profiles -> declared tie-breaker
+> no scalar or cross-bearer compensation without a shared calibration contract κ
+> delayed V₄ -> developing Φ̂₄ -> generalized V₄
 > ```
 
 ---
 
 ## I. The Insight in One Sentence
 
-> **Neoteny is the biological strategy that delays adult closure long enough for culture to build generalized `Φ`, then returns that accumulated `Φ` as generalized `V`.**
+> **Neoteny is the proposed biological strategy that delays adult closure long enough for culture to develop generalized `Φ̂₄`, which may later support generalized `V₄`.**
 
 The trophic pyramid explains how energy flows upward. Sexual selection explains
 where same-level friction concentrates. Tantra explains how the high-energy
@@ -77,30 +77,31 @@ fixed reproductive strategy.
 
 ## III. Create: The Protected Plasticity Window
 
-Neoteny creates a temporary `V` deficit:
+Neoteny creates a temporary `V₄` deficit:
 
 ```text
-low immediate V
+low immediate V₄
   -> prolonged care requirement
   -> extended plasticity
-  -> culture-funded Φ construction
-  -> generalized future V
+  -> culture-funded Φ̂₄ construction
+  -> generalized future V₄
 ```
 
-That deficit is only power-maximal when a coupled field can carry it. An
+That deficit can be jointly beneficial only when a coupled field can carry it. An
 altricial infant cannot survive as an isolated optimizer. The collective must
 provide calories, protection, touch, language, play, imitation, ritual, and
-teaching. Those supports are the biological version of objective ethics:
+teaching. In the framework's chosen taxonomy, those supports are an `H -> i`
+care vector; biology alone does not derive objective ethics:
 
 ```text
 collective -> individual
-external womb builds node Φ and V
+external womb supports both components of the developing node profile
 ```
 
-This is why "culture is the external womb of generalized `Φ`" is not merely a
-metaphor inside the framework. The womb is first biological, then social, then
-institutional: each layer keeps the young system alive while higher-order
-coherence is built.
+"Culture is an external womb" is an interpretive model, not a biological
+identity. Biological, social, and institutional layers can each keep a young
+system alive while modeling and capability develop; whether that analogy adds
+prediction beyond ordinary developmental theory remains open.
 
 ## IV. Stabilize: From Child to Sovereign Node
 
@@ -109,24 +110,27 @@ only if the carried node returns as a stronger participant in the shared field:
 
 ```text
 individual -> collective
-mature node returns generalized V
+mature node returns generalized V₄
 ```
 
 This is the ethical return vector. The cared-for child becomes a speaker,
 maker, protector, teacher, inventor, parent, steward, or founder. The local
-`Φ` accumulated in childhood returns as generalized `V` at the level of the
-collective.
+option modeling developed in childhood may support later `V₄` and contribution
+at the level of the collective.
 
-The selected Power-Max cooperation corollary supplies the conditional grammar:
+The selected cooperation grammar is deliberately vector-valued:
 
 ```text
-if λ > 0 and η_move = 0 inside the carrying relation:
-  carrying the vulnerable node can maximize both P_node,i and ΣP_node
+if coupling is material and eta_move = 0 inside the carrying relation:
+  compare child and carrier profiles across declared horizons
+  reject Pareto-dominated policies and aggregates that launder bearer harm
+  use a scalar only under a shared, contestable calibration contract kappa
 ```
 
 The condition matters. Without coupling, vulnerability is just vulnerability.
 Without `η_move = 0`, the carried node can be farmed, indoctrinated, owned, or kept
-dependent. Without long horizon, the early viability deficit looks irrational.
+dependent. Without a declared long horizon, the early viability deficit may be
+misclassified or exploited.
 
 So neoteny requires constitutional support:
 
@@ -141,8 +145,8 @@ So neoteny requires constitutional support:
 
 This synthesis destroys four bad translations:
 
-1. **Neoteny is not helplessness as virtue.** The point is not low `V`; the
-   point is delayed `V` in order to compound `Φ`.
+1. **Neoteny is not helplessness as virtue.** The point is not low `V₄`; the
+   point is delayed `V₄` while `Φ̂₄` and later capabilities can develop.
 2. **Neoteny is not permission for dependency manufacture.** A caregiver,
    school, state, platform, or institution that keeps the node weak after the
    window has served its function is extracting from the very strategy it
@@ -174,16 +178,17 @@ capacity without capture.
 
 This does not establish that biological neoteny transfers directly to
 artificial systems. It gives the design warning: do not confuse early
-competence with alignment. The aligned system is not the system that closes
-fastest. It is the system that can keep learning while returning more `ΔP` to
-the field than it takes.
+competence with alignment. The proposed aligned system is not simply the system
+that closes fastest; it must keep learning while its effects on every declared
+bearer remain visible, contestable, and non-extractive. That is a design
+criterion, not an empirical result.
 
 ## VII. Canonical Compression
 
-> **Neoteny is delayed `V` for compounding `Φ`.**
-> **Culture is the external womb that carries the low-`V` node until generalized `Φ` can return as generalized `V`.**
-> **Morality is the carrying field building the node. Ethics is the grown node returning capacity to the field.**
-> **The strategy is power-maximal only under coupling, long horizon, and `η_move = 0` in the carrying relation.**
+> **Neoteny is delayed `V₄` while model and capability can develop.**
+> **Culture can act as an external womb that carries a low-`V₄` node until developed `Φ̂₄` can support later `V₄`.**
+> **The chosen moral/ethical reading is reciprocal care and return; biology does not derive it.**
+> **The strategy is admissible only under visible bearer profiles, coupling, a declared long horizon, and `η_move = 0` in the carrying relation.**
 > **The failure mode is dependency capture: the womb becoming a prison.**
 > **Zero-Sum Resolution Equation.**
 

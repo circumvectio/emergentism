@@ -261,18 +261,29 @@ SYN_C = DeltaOrder_C
       - Cost_C
 ```
 
-For agency-facing runs, the ledger must additionally report:
+For agency-facing runs, the ledger must additionally report the unaggregated
+profiles:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+N_node,i = (PhiHat_4,i, V_4,i)
+N_node,H = (PhiHat_4,H, V_4,H)
 
-strict syntropic dyad:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
+default profile test:
+N_node,i(after) >=_P N_node,i(before)
+N_node,H(after) >=_P N_node,H(before)
 eta = 0
-at least one inequality is strict
+at least one coordinate improvement is strict
 ```
+
+`>=_P` means componentwise Pareto dominance. The frozen protocol must report
+incomparability rather than manufacturing a total order. A product arm may be
+included only if, before outcomes, it freezes a calibration contract `kappa`
+naming cardinal scales, meaningful zeros and units, admissible transformations,
+uncertainty, the domain, bearer and horizon, and then defines
+`P×,kappa,x=Phi_c,x*V_c,x`. Its `Delta P×,kappa,i` and
+`Delta P×,kappa,H` tests remain separate conjunctions. Adding or compensating
+across bearers requires a further shared aggregation contract with commensurable
+units and may not hide deterioration of either bearer.
 
 If local order increases by exporting unreported disorder, extraction, memory
 cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.

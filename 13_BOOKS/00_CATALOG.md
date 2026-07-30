@@ -1,22 +1,33 @@
 ---
-title: "Emergentism Book Catalog and Reconstruction Queue"
-status: "ACTIVE ROUTE — not a release register"
-date: 2026-07-28
-evidence_tier: "[B] file custody; [S] selected editorial sequence"
+title: "Emergentism Proposed Three-Book Catalog and Reconstruction Queue"
+status: "STAGED EDITORIAL PROPOSAL — unconfirmed; not a release register"
+date: 2026-07-29
+evidence_tier: "[B] file custody; [S] proposed editorial sequence"
 ---
 
 # Book Catalog
 
-| Work | Wave | Current editorial state | Semantic route |
-|---|---:|---|---|
-| *The Emergentist Weltanschauung — One-Sitting* | W1 | active source repaired; deterministic public reader remains the only released dossier | K-1…K-7 |
-| *The Self-Eating Serpent* | W2 | chapter debrief and six-chapter critical edition staged; not public | K-5, K-7 |
-| *The Titans — The Infinite, Finity & Infinity* | W3 | five-chapter research edition staged; formal/world gates open | K-1, K-3, K-4 |
-| *Dharma Yuddha* | W4 | coercive legacy archived; nonviolent five-chapter critical edition staged | K-5 with K-3/K-4 review |
-| *The Evolutionary Network* | W5 | voluntary institutional-proposal edition staged; not a runtime | K-4, K-5 |
-| *The Reciprocal / Infinite Play* | W6 | chapter debrief and seven-chapter critical edition staged; not public | card-by-card |
-| *Sarpasya Vijayam* | W6 | chapter debrief and seven-chapter critical edition staged; not public | card-by-card |
-| *Six-Fold Revelation / Six Lenses* | W6 | chapter debrief and eight-chapter critical edition staged; not public | card-by-card |
+## Candidate reader architecture
+
+| Composition | Reader promise | Components | Current state |
+|---|---|---|---|
+| *Emergentism: A Worldview for Finite Beings* | Understand the worldview without first mastering its symbols | One-Sitting spine; Self-Eating immune protocol; selected collective-trace and dissolution survivors | active reader to rebuild in place; current public reader remains separately gated |
+| *The Titans: The Infinite, Finity & Infinity* | See exactly what is standard, selected, conjectured, narrowed, or killed | Titans spine; Foundation and formal modules; formal-boundary survivors | Research Edition 2 waits for Foundation card coverage |
+| *The Lived Compass: Justice, Action & Institutions* | Make consequential decisions without hiding uncertainty, authority, bearers, repair, or exit | Finity practice; Dharma casebook; Six Lenses method; institutional survivors | reader edition planned after source review |
+
+## Preservation and non-book routes
+
+| Route | Contents | Boundary |
+|---|---|---|
+| *The Serpent Cycle: A Critical Genealogy of Emergentism* | *Sarpasya Vijayam*, *Six Lenses*, *The Self-Eating Serpent*, and *Reciprocal / Infinite Play* | historical critical reader; lineage, not doctrine |
+| Evolutionary Network dossier | all `EN01-*` claims | voluntary institutional research proposal, not an active book or runtime |
+| Historical custody | `RIP01-05` | provenance only; no current authority |
+
+The earlier eight-title queue remains preserved through its work records and
+edition files. The candidate count remains open until an explicit editorial
+decision is recorded. For testing the proposal, every card presently has one
+primary composition, dossier, or custody route; other appearances are
+reference-only.
 
 “Critical edition” means historically explicit, source-routed, rival-aware and
 correction-visible. It does not mean canonized, verified, or publication-ready.

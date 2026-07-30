@@ -77,22 +77,38 @@ not moral labels.
 ## 3. Foresight and means
 
 `Φ₅` is D5 possible power: the structured potential of relevant alternatives.
-`Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate. `V₄` is D4 actual power: usable
-body, energy, tools and access. `P_node=Φ̂₄V₄`, publicly `ΦV`, is one declared
-AND-class model: a zero in either evaluated factor blocks effective enactment
-inside that model.
+`Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate on a declared ordered domain.
+`V₄` is D4 actual power—usable body, energy, tools and access—on its own ordered
+domain. Keep them visible as
+
+```text
+N_node := (Φ̂₄,V₄).
+```
+
+Compare two profiles componentwise first. A profile is better only when neither
+axis is worse and at least one is better; otherwise the pair remains
+incomparable until a contestable tie-breaker is declared. This Pareto baseline
+survives independent strictly increasing reparameterizations of the two axes.
+
+Any scalar requires a calibration contract naming cardinal scales, meaningful
+zeros and units, admissible transformations, uncertainty, cross-factor
+comparability, domain, rivals and a kill criterion. Under such a contract `κ`,
+`P×,κ=c_Φ(Φ̂₄)c_V(V₄)` is one product candidate: a declared structural zero in
+either calibrated factor blocks enactment inside that model. The historical
+`ΦV` mnemonic says only that both factors matter.
 
 Do not infer more than it says:
 
 - high `Φ̂₄` does not make an imagined future true;
 - high `V₄` does not make force wise or authorized;
-- the product is not a universal metric of persons;
-- `Φ̂₄=1` forces `V₄=0` only under a separately measured finite-resource budget;
+- no scalar candidate is a universal metric of persons;
+- `Φ_c=1` forces `V_c=0` only under a separately measured finite-resource
+  budget;
 - the world and other agents still determine the outcome.
 
-Use the formula as a diagnostic question—*is the failure primarily in the map,
-the means, or their coupling?*—and compare it with simpler rivals when making
-predictions.
+Use the profile as a diagnostic question—*is the failure primarily in the map,
+the means, or their coupling?* If prediction requires a scalar, preregister its
+calibration and compare it with simpler rivals.
 
 ## 3A. The two-clock check
 

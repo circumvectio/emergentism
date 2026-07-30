@@ -29,8 +29,8 @@
   {
     "id": "five-forces",
     "title": "The Five Forces of Emergence (geometric re-expression, [C]-tier proposal)",
-    "publicRoute": "/geometric-ontology/",
-    "status": "public",
+    "publicRoute": "/historical-boundary/",
+    "status": "withheld",
     "evidenceTier": "[C]/[I]",
     "canonicalSources": [
       "01_EMERGENTISM/05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md"
@@ -59,8 +59,8 @@
   {
     "id": "reciprocal-public-edition",
     "title": "Reciprocal Public Edition Ch. 6 (Finity: The Missing Number)",
-    "publicRoute": "/finity-papers/",
-    "status": "public",
+    "publicRoute": "/historical-boundary/",
+    "status": "withheld",
     "evidenceTier": "[S]/[A]/[I]/[C]",
     "canonicalSources": [
       "[internal lane — withheld]"
@@ -84,8 +84,8 @@
   {
     "id": "soul-loop",
     "title": "Soul Loop",
-    "publicRoute": "/soul-loop/",
-    "status": "public",
+    "publicRoute": "/historical-boundary/",
+    "status": "withheld",
     "evidenceTier": "[S/I]",
     "canonicalSources": [
       "01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md"
@@ -96,8 +96,8 @@
   {
     "id": "l1-l7-public-pages",
     "title": "Rosetta L1-L7 Public Pages",
-    "publicRoute": "/teleology/",
-    "status": "public",
+    "publicRoute": "/historical-boundary/",
+    "status": "withheld",
     "evidenceTier": "[S/I]",
     "canonicalSources": [
       "01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md",
@@ -109,8 +109,8 @@
   {
     "id": "finity-papers",
     "title": "Finity Papers",
-    "publicRoute": "/finity-papers/",
-    "status": "public",
+    "publicRoute": "/historical-boundary/",
+    "status": "withheld",
     "evidenceTier": "[S/I]",
     "canonicalSources": [
       "01_EMERGENTISM/03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/README.md",

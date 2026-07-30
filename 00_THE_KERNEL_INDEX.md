@@ -32,8 +32,10 @@ the reader to check its receipt; the Record keeps the losses visible.
 | K-7 | **Record** | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | living authority/correction ledger; `/record/` is its public projection |
 
 The foundation the seven surfaces stand on is stated whole in
-[`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) — `R0`, the forced/selected/theorem
-strata, and the Titan identities on `Ĉ`. It is a projection of K-1 and K-5, not an
+[`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) — `R0`, selected diagnostics and
+presentations, and the typed facts `ι(0)=∞`, `ι(∞)=0`, and `φ(θ)ν(θ)=1` only on
+the punctured reciprocal chart. No object-level foundation is presently forced.
+It is a projection of K-1 and K-5, not an
 eighth surface: K-5 owns `R0`, K-1 owns the grammar, and
 `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45–47` own the formal results.
 Routing is `KSC-28`.

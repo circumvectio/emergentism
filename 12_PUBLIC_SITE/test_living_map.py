@@ -126,6 +126,16 @@ class LivingMapContractTests(unittest.TestCase):
             "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
             "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
             "lab/index.html": {"FIN01-01", "FIN01-02"},
+            "compass/index.html": {"OS01-09"},
+            "5/index.html": {"OS01-09"},
+            "plainly/index.html": {"OS01-09"},
+            "discoveries/nonduality/index.html": {"OS01-09"},
+            "about/index.html": {"OS01-09"},
+            "read/index.html": {"OS01-09"},
+            "axioms/index.html": {"OS01-09"},
+            "journey/index.html": {"OS01-09"},
+            "rosetta/index.html": {"OS01-09"},
+            "book/index.html": {"OS01-09"},
         }
         bindings = {item["surface"]: item for item in self.parity["surfaceClaims"]}
         self.assertEqual(set(bindings), set(expected))
@@ -182,6 +192,10 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertIn("isStorable", sw)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(route.startswith(f"/{frozen}/") for route in precached_routes))
+        for artifact in self.parity["frozenLegacySurfaces"]:
+            path = Path(artifact)
+            route = "/" + (path.parent.as_posix() if path.name == "index.html" else path.with_suffix("").as_posix())
+            self.assertNotIn(route, {item.rstrip("/") or "/" for item in precached_routes})
         for item in withheld["artifacts"]:
             self.assertTrue(set(item["publicRoutes"]).isdisjoint(precached_routes))
 

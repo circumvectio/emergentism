@@ -125,7 +125,8 @@ Three exact pieces and one wager must remain separate:
 
 ```text
 T1 chart:     phi*nu=1; phi->infinity => nu->0 and B->0
-T2 budget:    Phi+V<=1 and Phi=1 => V=0 => P_node=0
+T2 budget:    Phi_c+V_c<=1 and Phi_c=1 => V_c=0; any declared
+              structural-zero AND candidate then returns 0
 T3 gauge:     A=d lambda locally => F=dA=0
 W  general:   saturation may erase complementary actionable contrast
 ```
@@ -148,8 +149,8 @@ the row explicitly says component contact exists.
 |---|---|---|---|---|---|
 | **GP-01** | `mu_1` configuration emergence — formal neighbors only | definitional expansion/feature engineering | same elements, intervened relations, held-out prediction | relation adds no discrimination | D2 remains a useful configuration address |
 | **GP-02** | `mu_4` counterfactual capacity — future-cue component contact exists | rich D4 planning/search without a distinct D5 variable | manipulate represented futures with means and present state controlled | no effect beyond fair D4 baseline | model-mediated anticipation remains ordinary causal cognition |
-| **GP-03** | universal product fit — analytic non-uniqueness established | minimum, additive, harmonic, CES/Cobb-Douglas | frozen-domain cross-validated ranking comparison | product never wins held-out | AND-class boundary and local product convenience survive |
-| **GP-04** | foresight/means complementarity — physical information costs are neighbors | no tradeoff or another resource surface | independently measure modeling cost and remaining usable means | no recurrent tradeoff or rival predicts as well | `P_node` still records joint necessity where declared |
+| **GP-03** | finite-node comparison rule — analytic non-uniqueness and ordinal scale-dependence established | unaggregated Pareto profile, minimum, additive, harmonic, CES/Cobb-Douglas and domain-native models | frozen-domain, calibration-declared, cross-validated ranking comparison | no scalar adds held-out discrimination or rankings reverse under admissible transforms | the typed two-axis profile and local calibrated conveniences survive |
+| **GP-04** | foresight/means complementarity — physical information costs are neighbors | no tradeoff or another resource surface | independently measure modeling cost and remaining usable means | no recurrent tradeoff or rival predicts as well | the two factors remain separately reportable where useful |
 | **GP-05** | five-crossing census — selected taxonomy only | another rung count or continuous multiscale description | preregister one independent discriminator per crossing | rows remain arbitrary or a new irreducible freedom escapes the scaffold | address system can remain non-exhaustive |
 | **GP-06** | Egregoreotype — stigmergic trace component contact exists | carrier identity, incentives, or direct coordination | carrier replacement plus trace removal/scrambling | five-marker conjunction never instantiates | trace-mediated coordination remains real component science |
 | **GP-07** | model-mediated future influence — experimental analogue exists | generic salience, demand, memory, or reward framing | content-specific future intervention with matched controls | effect vanishes under fair controls | present models can still guide ordinary present action |
@@ -173,8 +174,9 @@ The strongest whole that the current pieces license is:
 4. **Possible futures act only through actual models.** D5 content influences a
    present decision through a D4 token and actual computation, not backward
    physical signaling.
-5. **Action requires both a map and means in the selected node model.** Their
-   product is one testable AND-class instance; the tradeoff surface is separate.
+5. **Action may depend on both a map and means.** Keep them as a two-axis
+   profile unless a calibration contract earns a scalar; product is only one
+   testable candidate, and any tradeoff surface is a separate premise.
 6. **Higher organization constrains admissible trajectories.** It need not add a
    forbidden micro-event to change which allowed histories persist.
 7. **Collectives can acquire trace-mediated causal stability.** Calling one an

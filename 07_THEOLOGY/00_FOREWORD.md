@@ -52,19 +52,20 @@ reciprocity: when one chart coordinate grows, the other contracts.
 
 ## The finite game
 
-For finite agents, Emergentism selects the normalized conjunctive model
+For finite agents, Emergentism first keeps a two-axis profile
 
 \[
-P_{node}=\widehat{\Phi}_{4}V_{4},
+N_{node}=(\widehat{\Phi}_{4},V_{4}).
 \]
 
 Here `Φ₅` names D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
 evaluation, and `V₄` is D4 actual power—embodied capability and usable means.
-The public shorthand is `P_node=ΦV`. Both evaluated possibility and actual
-means are needed in this selected model; either at zero annihilates the product.
-The product is a declared member of a broader need-both family, not the uniquely
-forced measure of power or flourishing. Its universal empirical adequacy
-remains `[C]`.
+Componentwise Pareto comparison does not require a cross-axis scale. A product,
+minimum or other scalar is permitted only after an application declares a
+cardinal calibration, meaningful zeros and units, admissible transformations,
+uncertainty, rivals and a kill criterion. The historical shorthand `ΦV` says
+only that both factors may matter; it is not a ranking or measure of power,
+flourishing or worth. Every scalar's empirical adequacy remains `[C]`.
 
 The ethical question does not follow from the multiplication sign. It arrives
 through a chosen and inspectable Justice envelope: can the individual and the

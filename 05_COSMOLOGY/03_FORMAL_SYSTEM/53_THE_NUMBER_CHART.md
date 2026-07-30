@@ -2,7 +2,7 @@
 title: "The Number Chart — every membership decision, with theorem or convention marked"
 status: "ACTIVE — drawn 2026-07-29 at owner instruction with §5.2 OPEN. The fork is marked, not resolved."
 date: 2026-07-29
-evidence_tier: "[A] N1–N5, G1, Z1 and the memberships marked THEOREM; [S] every membership marked CONVENTION; [I] the Titan gloss"
+evidence_tier: "[A] N1–N4, G1, G3–G5, Z1 and scoped memberships; [B/C] bounded evidence/open injectivity for G2; [S] conventions; [I] Titan gloss"
 owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and to 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md on all D1 claims."
 parents:
   - 52_THE_GENERATIVE_BASE.md
@@ -20,27 +20,27 @@ parents:
 ## 1 · The chart
 
 ```text
-                              ○   TOTALITY        not a number.  no word attains it (G4)
+                              ○   TOTALITY EMBLEM for the unbounded direction (G4)
                               ▲                   ∞ ∉ ℝ — theorem, no qualification
                               │
                     ┌─────────┴─────────┐
-                    │   the completion  │   ℝ₊   adds LIMITS OF WORDS.
-                    │   [S] declared    │        Uncountably many. NO WORD REACHES THEM.
-                    └─────────┬─────────┘        √2, π, e live here — and only here.
+                    │ d×-completion [S] │   ℝ₊   adds positive-real limits of words.
+                    │ d×=|Δ log|        │        Uncountably many added values have no
+                    └─────────┬─────────┘        finite code; examples include √2, π, e.
                               │
-   ⊙  FINITY  =  ℚ⁺   ────────┤   the REACHABLE.  Every value a finite word on 1.  (G1)
-                              │   Countable. Each has ONE reduced word.            (G2)
+   ⊙  FINITY-REACH = ℚ⁺ ──────┤   the REACHABLE. Every value has a finite code.    (G1)
+                              │   Countable. Unique reduced code remains open.   (G2)
                               │
                     ┌─────────┴─────────┐
                     │        ℕ⁺         │   1, 2, 3, …   the S-closure alone      (G6)
                     │   free SEMIGROUP  │   "everything made of 1 adding up"
                     └─────────┬─────────┘
                               │
-                              1   THE PRIMITIVE — and the only one.
-                              │   ι's unique fixed point. Not chosen: forced by ι.
+                              1   THE SELECTED SEED — the only seed in this model.
+                              │   Given ℚ⁺ and ι, it is ι's unique fixed point.
                               ▼
-                              •   ABSENCE         not a number.  no step lands on it (G3)
-                                                  ι(x)=0 has NO SOLUTION
+                              •   ABSENCE EMBLEM for the zero-directed limit (G3)
+                                                  no finite word has value 0
 ```
 
 ---
@@ -49,16 +49,16 @@ parents:
 
 | question | answer | THEOREM or CONVENTION | why |
 |---|---|---|---|
-| Is `1` a number? | **yes — the only primitive one** | **THEOREM** | `N2`: `{1}` lies in *every* generating set of `(ℕ⁺,+)`. `N1`: it is the unique additive irreducible. And it is `ι`'s only fixed point on the ray — not chosen, forced |
-| Is `2` a number? | **it is an operation** | **THEOREM** | `G2`: `2` **is** the word `S`. Not "constructible from 1" — identical to a word |
-| Is `3/5` a number? | **an operation** | **THEOREM** | `G2`: `3/5` **is** `SιSιSι`, and no other reduced word gives it |
-| Is `0` a natural number? | **no** | **CONVENTION with a theorem inside** | `N3`: `(ℕ⁺,+)` is the free **semigroup**; `(ℕ,+)` is the free **monoid**, whose identity is `0`. Adjoining `0` **is** the passage semigroup→monoid. Which object the word `ℕ` names is `[S]`; the structural split is `[A]` |
+| Is `1` a number? | **yes; selected as this model's sole seed** | **SELECTION plus theorem** | Given standard `(ℕ⁺,+)`, `1` is its unique additive irreducible; given `(ℚ⁺,ι)`, it is the unique positive fixed point. Choosing this presentation and seed is prior `[S]` |
+| Is `2` a number? | **yes, with a word code** | **THEOREM** | `val(S)=2`. The value `2`, the function `S`, and the syntax token `"S"` have different types |
+| Is `3/5` a number? | **yes, with at least one word code** | **THEOREM for evaluation; G2 OPEN for uniqueness** | An exhibited finite word evaluates to `3/5`; the rational is not identical to its code |
+| Is `0` a natural number? | **convention-dependent; no in `ℕ⁺`, yes in the common `ℕ₀` convention** | **CONVENTION with a theorem inside** | `N3`: `(ℕ⁺,+)` is the free **semigroup**; adjoining `0` gives the free one-generator **monoid**. The structural split is `[A]`; which carrier the unqualified glyph `ℕ` names is conventional |
 | Is `0` a real number? | **YES** | **THEOREM — and the corpus's phrasing was wrong** | `Z1`: *"`0 ∉ ℝ`" is FALSE.* What is true is `0 ∉ ℝ^×` — `0` is the unique element of a field with no multiplicative inverse. **Say `ℝ^×`, never `ℝ`** |
-| Is `0` reachable from the base? | **no** | **THEOREM** | `G3`: `ι(x)=0` has no solution and `S` preserves positivity. Not un-visited — *no step lands there* |
+| Is `0` reachable from the base? | **no** | **THEOREM** | `G3`: `ι(x)=0` has no solution in `ℚ⁺` and `S` preserves positivity. Not un-visited — *no base step lands there* |
 | Is `∞` a real number? | **no** | **THEOREM, unqualified** | `∞ ∉ ℝ`. It enters only by declared compactification, and `ℝP¹` (one unsigned point) and `[−∞,+∞]` (two ordered endpoints) are **different constructions** |
 | Is `∞` reachable? | **no** | **THEOREM** | `G4`: every word is finite. Reaching `∞` needs a *completed* infinity of operations, which is not a word |
-| Is `√2` a number? | **it is a LIMIT of operations, not an operation** | **THEOREM (that it is not a word); `§5.1` OPEN (what to call it)** | `G1`: reachability is exactly `ℚ⁺`. Completion adds uncountably many values no word reaches |
-| Is `1` doing two jobs? | **yes, and one causes the other** | **THEOREM** | `N4`: `ℤ` is initial in **Ring** — `n ↦ n·1_R`. The additive-generative role **follows from** the multiplicative-identity role. Nothing else in any ring does that |
+| Is `√2` a number? | **yes, a standard real; it is not a finite word value** | **THEOREM** | `G1` makes finite-word reachability exactly `ℚ⁺`; a rational sequence can converge to `√2` in the declared completion. Syntax, operations and values remain different types |
+| Is `1` doing two jobs? | **yes, inside each unital ring's prime subring** | **THEOREM** | `N4`: `ℤ` is initial in the category of unital rings — the unique map is `n ↦ n·1_R`. Its image generates the prime subring, not necessarily the whole ring |
 
 ---
 
@@ -74,13 +74,15 @@ Everything above holds on either horn. This does not:
         POSITIVE-ONLY                                     SIGNED
   base stays ⟨S, ι⟩ on ℚ⁺                     add n(x) = −x as a third generator
   ────────────────────────                    ────────────────────────────────
-  −1 is NOT in the chart.                     −1 enters. ℤ, ℚ, ℝ follow.
+  −1 is NOT in the chart.                     −1 enters; finite words can reach ℤ and ℚ.
+                                                ℝ follows only after a separately
+                                                declared completion; no finite word reaches it.
   KSC-21's oriented pair is                   KSC-21's pair is supported.
     reached one chart up, by                  BUT: 1 + (−1) = 0 in two steps, so
     a declared move.                            · G3 FALLS — 0 becomes reachable
   G1, G3, G5, G7, G8a and the                   · G8a FAILS — ι is partial at 0
-    forced primitive all stand.                 · fix(ι) = {+1,−1}, so THE PRIMITIVE
-                                                  STOPS BEING FORCED
+    positive seed all stand.                    · fix(ι) = {+1,−1}, so the selected
+                                                  positive-seed rationale no longer applies
                                                 · compactification is pulled INTO
                                                   the base, reinstating the very
                                                   collision doc 52 exists to escape
@@ -106,9 +108,12 @@ standard        ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ ⊂ ℂ            sets, given, nest
 here            1  →  words  →  limits       one object, two operations, a boundary
 ```
 
-On that reading `0` and `∞` are not *small* and *large* numbers. They are the
-**two ways a word can fail to terminate**, and `⊙` is everything a word does reach.
-That reframe is `[S]` — it is a choice about what to explain, not a new theorem.
+On that reading `0` and `∞` are not *small* and *large* numbers. They are two
+specific unattained boundary directions witnessed by named sequences. Infinite
+words can also oscillate, diverge without a limit, or approach other limits, so
+the two seats are not an exhaustive classification of nontermination. `⊙` here
+renders `FinityReach_G0`, not every use of Finity in the corpus. That reframe is
+`[I/S]`—a choice about what to explain, not a new theorem.
 
 ---
 
@@ -116,19 +121,21 @@ That reframe is `[S]` — it is a choice about what to explain, not a new theore
 
 | claim | kill |
 |---|---|
-| `1` is the only primitive | exhibit a generating set of `(ℕ⁺,+)` not containing `1` |
+| `1` is the selected sole seed in this presentation | add another seed or select another presentation |
 | every reachable value is a word | exhibit `q ∈ ℚ⁺` reached by no finite word |
 | `0` is not reachable | exhibit a word with value `0` |
-| `∞` is not reachable | exhibit a word with unbounded value |
+| `∞` is not reachable | exhibit a finite word whose declared evaluator returns an explicitly adjoined infinity endpoint |
 | `0 ∈ ℝ`, `0 ∉ ℝ^×` | exhibit a field in which `0` has a multiplicative inverse |
 | the irrationals are not words | exhibit a finite word over `{S, ι}` with irrational value |
-| `N4`'s double role | exhibit a unital ring with a second ring homomorphism from `ℤ` |
-| the chart's ordering claim | show the word reading and the set reading disagree on any membership above |
+| `N4` initiality | exhibit a unital ring with no unique unit-preserving homomorphism from `ℤ` |
+| the chart's scoped ordering claim | show the finite-code reading misclassifies a stated membership above |
 
 **This document's own kill.** If any row marked CONVENTION is later cited as a
 theorem, or if the `§5.2` branch is silently collapsed to one horn, this chart has
 committed the corpus's characteristic error and should be repaired or withdrawn.
 
-**Reproduce:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` covers `G1`–`G10`.
+**Bounded regression:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` samples
+the stated claims; it does not prove universal G2 or independently establish the
+analytic arguments.
 
 •   ⊙   ○ — *one object, two moves, and a boundary that is not a number at either end.*

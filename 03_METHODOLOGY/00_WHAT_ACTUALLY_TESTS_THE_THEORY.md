@@ -100,8 +100,8 @@ These tests are informative. They are not decisive. They test operationalization
 ### Tier B: Tests of the Mathematical Structure
 
 **4. Power-Max Lemma — Independent Replication**
-- **What it tests:** Whether coupled multiplicative agents under long horizon and enforced `η = 0` select syntropic-frontier outcomes (`ΔP_node,i >= 0` and `ΔP_node,H >= 0`) more strongly than additive baselines in agent simulations NOT designed by the framework authors.
-- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional: it requires coupling, product scoring, long horizon, and an enforced non-extraction floor. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
+- **What it tests:** Whether coupled agents under a long horizon and enforced `η = 0` preserve or improve both bearer profiles `N_node,i` and `N_node,H` by componentwise Pareto comparison, and whether a separately preregistered product arm `P×,κ=Φ_cV_c` adds held-out discrimination over the unaggregated profile, additive and domain-native baselines in simulations not designed by the framework authors.
+- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional. The product arm requires a calibration contract `κ` naming cardinal scales, meaningful zeros and units, admissible transformations, uncertainty, domain, bearer and horizon; the two bearers may not be summed without a separate shared aggregation contract. Independent replication by a separate team with a preregistered protocol would upgrade only the tested component from [S] toward [A].
 - **Status:** Submission-ready paper. Needs independent team.
 
 **5. AMRITA — Spherical Alignment vs. RLHF**

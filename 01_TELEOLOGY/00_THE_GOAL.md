@@ -144,17 +144,37 @@ planning and coordination rules in receipted use.
 
 ## 5. Foresight and means
 
-For a declared task, Emergentism may model usable action capacity as
+For a declared task, the live finite-node object is the ordered profile
 
 ```text
-P_node = Φ̂₄V₄,              public shorthand: ΦV
+N_node(t) := (Φ̂₄(t),V₄(t)) ∈ O_Φ×O_V,
 ```
 
 where `Φ₅` is D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
-evaluation, and `V₄` is D4 actual power or usable means. This is one selected
-normalized AND-class model `[S/C]`, not a universal law and not a metric of
-human worth. Product, minimum, CES, additive and other aggregators must be
-compared where prediction matters.
+evaluation on a declared ordered domain, and `V₄` is D4 actual power or usable
+means on its own declared ordered domain. The default comparison is
+componentwise Pareto dominance:
+
+```text
+N_a ⪰_P N_b  iff  Φ̂₄,a ⪰ Φ̂₄,b and V₄,a ⪰ V₄,b.
+```
+
+This order survives independent strictly increasing reparameterizations of the
+two axes. If neither profile dominates, the profile alone supplies no total
+ranking.
+
+A scalar may be introduced only under an explicit calibration contract `κ`
+that declares cardinal scales, meaningful zeros and units, admissible
+transformations, uncertainty, cross-factor comparability, domain, rivals and a
+kill criterion. One named candidate is
+
+```text
+P×,κ := c_Φ(Φ̂₄)c_V(V₄).
+```
+
+The historical `ΦV` mnemonic says only that both factors matter. Product,
+minimum, harmonic, CES and any admissible additive model are rival candidates,
+not default consequences of the types and never metrics of human worth.
 
 The model supplies two practical warnings:
 
@@ -239,7 +259,9 @@ fair alternatives.
 
 The Goal must change if:
 
-- `P_node=ΦV` predicts worse than a rival model;
+- a calibrated scalar candidate predicts worse than a fair rival, or an
+  allegedly uncalibrated scalar ranking reverses under an admissible
+  reparameterization;
 - option widening systematically increases domination or harm;
 - the Justice envelope hides material bearers;
 - Soul Loop practice produces bureaucracy without better decisions;

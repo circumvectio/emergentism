@@ -28,9 +28,9 @@ This document names the strongest claim the corpus can make about what is genuin
 
 ## The First Clarification
 
-The framework is not one invention.
+The framework's possible novelty is not one established invention.
 
-It is **three inventions coupled together**:
+It is a research program coupling **three candidate contributions**:
 
 1. a **formal kernel**
 2. a **translation discipline**
@@ -48,11 +48,13 @@ This is the smallest load-bearing mathematical and ontological packet:
 - `Zero-Sum Resolution Equation`
 - `φ · ν = 1 on S²`
 - `B = sin θ` as the balance profile on the sphere
-- `P_node = Φ × V` for operational node scoring
-- `ΣΔB > 0` or `ΣΔP_node > 0` across the widest real boundary, depending on register
+- `N_node=(Φ̂₄,V₄)` as a typed two-axis profile, with Pareto comparison before
+  any cardinal calibration
+- separately named calibrated scalar candidates and non-compensating
+  bearer-level consequence vectors where an application requires them
 
-Its novelty is not merely that it is compact.
-Its novelty is that the same grammar is asked to survive translation across:
+Its prospective novelty is not merely compactness. It lies in asking whether
+the same typed grammar can survive translation across:
 
 - core state
 - biology
@@ -61,7 +63,8 @@ Its novelty is that the same grammar is asked to survive translation across:
 - institutions
 - AI alignment
 
-That is stronger than producing a local formalism.
+Whether anything beyond disciplined exposition survives those comparisons is
+open.
 
 ---
 

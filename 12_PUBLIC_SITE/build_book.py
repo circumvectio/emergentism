@@ -49,6 +49,10 @@ def render():
 
     md = markdown.Markdown(extensions=EXTENSIONS)
     body = md.convert(raw)
+    # KSC-02 public projection: an older human-condition source sentence uses
+    # the retired node-scalar label only to deny that love reduces to it. Keep
+    # the denial while avoiding reintroducing the obsolete symbol downstream.
+    body = body.replace("Love is not reduced to <code>P_node</code>", "Love is not reduced to a node score")
     # Repository Markdown sources are not deployed. Route their links to the
     # public source boundary instead of emitting dead filesystem-relative URLs.
     body = re.sub(r'href="[^"#]*\.md(?:#[^"]*)?"', 'href="../sources/"', body)
@@ -129,7 +133,7 @@ def desired_manifest(page):
         "output": {"path": "book/index.html", "sha256": sha_bytes(page.encode("utf-8"))},
         "renderer": {"package": "Markdown", "version": markdown.__version__, "extensions": EXTENSIONS},
         "claim_card_contract": {
-            "schema": "emergentism/claim-card-set/v1",
+            "schema": "emergentism/claim-card-set/v2",
             "path": os.path.relpath(contract, ROOT).replace(os.sep, "/"),
             "sha256": sha_bytes(open(contract, "rb").read()),
             "graph_path": os.path.relpath(graph, ROOT).replace(os.sep, "/"),
@@ -361,7 +365,7 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
     <div class="reading-inner">
       %%BODY%%
       <footer class="book-foot">
-        <div class="phi">P_node = Φ̂₄V₄</div>
+        <div class="phi">N_node = (Φ̂₄,V₄)</div>
         <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>
         <p>Its highest success is that you can put it down.</p>
       </footer>

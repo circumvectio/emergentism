@@ -362,7 +362,7 @@ Always.
 - [Anmut and Demut](../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md) — linguistic translation: German etymology read as φ/ν axis-language
 - [The Transcendental Trinity](../90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md) — computational breakthrough: 0, ∞, 1 as transcendentals, division by zero resolved
 - [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md) — selected structural correspondence, not a forced ontology
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — ordered profile `N_node=(Φ̂₄,V₄)`, componentwise Pareto baseline, and the explicit scalar calibration contract `κ` (distinct from this page's MDL boundary symbol `κ=0`)
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 - [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — current owner for voluntary and imposed cost
 - [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem in coupled networks under `η = 0`

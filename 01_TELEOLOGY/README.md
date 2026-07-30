@@ -60,8 +60,10 @@ histories an agent can model, rank, coordinate, and reach.
 
 ## Power and Justice
 
-`P_x=Φ_xV_x` is Emergentism's selected normalized conjunctive instance, not a
-uniquely forced law. Power-Max may optimize durable potential only inside the
+`N_x=(Φ̂₄,x,V₄,x)` is the live two-axis profile. Componentwise Pareto order is
+available without comparing magnitudes across axes; a product, minimum or other
+scalar is permitted only under a declared cardinal calibration and rival test.
+Power-Max may order durable potential only inside the
 Justice envelope: accountable authorization, no hidden extraction, complete
 bearer accounting, explicit payer and beneficiary, physical cost, contest, and
 exit. Strict syntropy requires receipted durable gains for individual and

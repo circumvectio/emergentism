@@ -62,11 +62,24 @@ exists. Ordinary numeric `0_N`,`1_N` and projective `∞_P` retain their separat
 mathematical operations and supply only neighboring imagery. The frame does
 not generate arithmetic, force `S²`, or prove that reality began at a point.
 
-For normalized finite-node factors `Φ,V∈[0,1]`, the framework declares a
-monotone zero-absorbing conjunctive family `C(Φ,V)` and selects
-`P_node:=ΦV` as a transparent working instance. Product, minimum, harmonic, and
-Cobb–Douglas aggregators are not interchangeable. The product is not derived
-from `φν=1`; its fit to a real domain remains `[C]`.
+For a finite node, the source types first provide the ordered profile
+
+```text
+N_node := (Φ̂₄,V₄),
+```
+
+where `Φ̂₄=Eval₄(M,Φ₅)` is the present D4 estimate of D5 possible
+power and `V₄` is D4 actual power. If the coordinates are only ordinal, the
+invariant comparison is componentwise Pareto dominance; an incomparable pair
+does not receive a total ranking.
+
+Only after a calibration contract `κ` declares cardinal scales, meaningful
+zeros and units, admissible transformations, uncertainty, cross-factor
+comparability and a domain may an application define calibrated images
+`Φ_c,V_c` and test a scalar candidate such as `P×,κ:=Φ_cV_c`. Product,
+minimum, harmonic and Cobb–Douglas aggregators are not interchangeable. No
+scalar is derived from `φν=1` or selected by normalization alone; the
+historical `ΦV` shorthand says only that both factors may matter.
 
 ## 3. Interpretive scaffold `[I/C]`
 

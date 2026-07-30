@@ -40,24 +40,35 @@ ontological proofs, or ethical imperatives.
 
 ## 2. Coupling model `[I/C]`
 
-Let `V₄` name D4 actual power, `Φ₅` D5 possible power, and
-`Φ̂₄=Eval₄(M,Φ₅)` its present D4 estimate. Let `C(Φ̂₄,V₄)` be a normalized,
-monotone conjunctive aggregator satisfying
+Let `V₄∈O_V` name D4 actual power, `Φ₅` D5 possible power, and
+`Φ̂₄=Eval₄(M,Φ₅)∈O_Φ` its present D4 estimate. The source-typed object is
 
 \[
-C(0,V_4)=C(\widehat\Phi_4,0)=0.
+N_{node}=(\widehat\Phi_4,V_4).
 \]
 
-Emergentism selects the normalized product instance
+Componentwise Pareto comparison is available while the two axes remain
+ordinal. A scalar is not. Only after a calibration contract `κ` supplies
+cardinal scales, meaningful zeros and units, admissible transformations,
+uncertainty and cross-factor comparability may an application define
+`Φ_c=c_Φ(Φ̂₄)`, `V_c=c_V(V₄)` and a normalized monotone conjunctive candidate
+`C_κ(Φ_c,V_c)` satisfying
 
 \[
-P_{node}:=C_\times(\widehat\Phi_4,V_4)=\widehat\Phi_4 V_4
+C_\kappa(0,V_c)=C_\kappa(\Phi_c,0)=0.
 \]
 
-for its canonical compression, publicly `P_node=ΦV`. The product expresses the chosen AND-class
-intuition that foresight/coherence and embodied means/viability are jointly
-necessary. It is not uniquely forced; minimum, harmonic, Cobb–Douglas, and
-other conjunctive aggregators can rank states differently.
+A named product candidate is
+
+\[
+P_{\times,\kappa}:=C_\times(\Phi_c,V_c)=\Phi_cV_c.
+\]
+
+The historical compression `ΦV` expresses only the AND-class intuition that
+foresight/coherence and embodied means/viability may both matter. It neither
+selects the product nor ranks nodes. Product, minimum, harmonic,
+Cobb–Douglas, unaggregated profiles and domain-native models can rank states
+differently and must be compared at `[C]`.
 
 “Goodness is the bond” remains an `[I]` metaphor for the declared commitment
 to durable mutual option-capacity. It is not a theorem about every real dyad.

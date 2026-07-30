@@ -298,16 +298,52 @@ Salience(x,agent) > Salience(y,agent)
 ## 3. Finite-node model types
 
 ```text
-Φ₅ : Node×Time → D5Power           # D5 possible power / structured option potential
-Φ̂₄ : Node×Time → [0,1]             # Eval₄(ModelToken,Φ₅), an actual D4 score
-V₄ : Node×Time → [0,1]             # D4 actual power / usable means score
-P_node : Node×Time → [0,1]
+O_Φ, O_V : OrderedDomain
+Φ₅ : Node×Time → D5Power            # D5 possible power / structured option potential
+Φ̂₄ : Node×Time → O_Φ                # Eval₄(ModelToken,Φ₅), an actual D4 estimate
+V₄ : Node×Time → O_V                # D4 actual power / usable means
+N_node : Node×Time → O_Φ×O_V
+N_node(x,t) := (Φ̂₄(x,t),V₄(x,t))
 ```
 
 Lowercase `φ,ν` are chart coordinates. Uppercase `Φ,V` publicly name the D5
 possible-power and D4 actual-power factors and are never inferred from the
 lowercase pair. Modality-sensitive arithmetic writes `Φ̂₄,V₄`; D5 `Φ₅` never
 acts or enters a present calculation without that D4 evaluation bridge.
+
+The source types supply only a product order:
+
+```text
+N_a ⪰_P N_b  iff  Φ̂₄,a ⪰_Φ Φ̂₄,b and V₄,a ⪰_V V₄,b
+```
+
+This Pareto relation is invariant under independent strictly increasing
+reparameterizations of `O_Φ` and `O_V`. It is generally partial: incomparable
+profiles do not acquire a total ranking from the types alone.
+
+### CalibrationContract
+
+```text
+CalibrationContract := {
+  id: String,
+  domainOfUse: String,
+  c_Φ: O_Φ → [0,1],
+  c_V: O_V → [0,1],
+  cardinalScaleWarrants: [EvidenceRef],
+  meaningfulZeros: {phi:String, v:String},
+  meaningfulUnits: {phi:String, v:String},
+  admissibleTransformations: {phi:String, v:String},
+  crossFactorComparability: String,
+  uncertaintyModel: String,
+  rivals: NonEmpty[String],
+  killCriterion: String
+}
+```
+
+No scalar over `N_node` is well typed until its calibration contract `κ` is
+declared. The maps produce calibrated values
+`Φ_c:=c_Φ(Φ̂₄)` and `V_c:=c_V(V₄)`; they do not turn persons into scores or make
+D5 content independently causal.
 
 ### ConjunctiveAggregator
 
@@ -320,16 +356,24 @@ ConjunctiveAggregator := {
   zeroAnnihilator: true,
   unitNormalized: true,       # C(1,1)=1
   formula: String,
-  selected: Boolean,
+  selectedUnderCalibration: String | null,
   tier: EvidenceTier,
   alternatives: [String],
   killCriterion: String
 }
 ```
 
-The selected normalized instance is
-`C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, so `P_node:=C×(Φ̂₄,V₄)`. Selection is `[I]`; universal fit is
-`[C]`.
+One historical candidate is
+
+```text
+P×,κ := C×(Φ_c,V_c) = Φ_cV_c.
+```
+
+It is `[I]` when selected inside a declared calibrated application and `[C]`
+as a fit to real systems. Product, minimum, harmonic, CES and other admissible
+aggregators are rival candidates; none is the framework default. The historical
+`ΦV` mnemonic records joint relevance only and supplies no ranking, cardinal
+scale or measure of worth.
 
 ## 4. Emergence record
 
@@ -660,7 +704,8 @@ product of model and agency, and it does not assert physical retrocausality.
 ## 6. Justice and Power-Max types
 
 ```text
-W_x(T) := ∫₀ᵀ P_x(t)dt
+S_κ : O_Φ×O_V → Number              # only under CalibrationContract κ
+W_κ,x(T) := ∫₀ᵀ S_κ(N_node(x,t))dt  # optional calibrated durable potential
 
 JusticeEnvelope := {
   individual: BearerId,
@@ -699,20 +744,23 @@ AuthorizedCost^R(q,r;p,b) :=
   and completeAffectedBearerCoverage(q,r)
   and noUnconsentedThirdPartyLoss(q,r,p)
 
-AsymmetricCostTransfer^R(q,r;p,b) :=
-  Delta^R_T W_b(q,r) > 0 and Delta^R_T W_p(q,r) < 0
+AsymmetricCostTransfer^R_κ(q,r;p,b) :=
+  Delta^R_T W_κ,b(q,r) > 0 and Delta^R_T W_κ,p(q,r) < 0
 
-Extraction^R(q,r;p,b) :=
-  AsymmetricCostTransfer^R(q,r;p,b)
+Extraction^R_κ(q,r;p,b) :=
+  AsymmetricCostTransfer^R_κ(q,r;p,b)
   and not AuthorizedCost^R(q,r;p,b)
 
-VoluntarySacrifice^R(q,r;p,b) :=
-  AsymmetricCostTransfer^R(q,r;p,b)
+VoluntarySacrifice^R_κ(q,r;p,b) :=
+  AsymmetricCostTransfer^R_κ(q,r;p,b)
   and AuthorizedCost^R(q,r;p,b)
 ```
 
 These predicates make voluntary sacrifice and extraction disjoint when payer
-loss and beneficiary gain have been receipted. It deliberately does **not**
+loss and beneficiary gain have been receipted under the same declared
+calibration `κ`. Without that contract, use separately receipted domain-native
+loss and gain predicates rather than silently scalarizing `N_node`. This
+deliberately does **not**
 imply the ordinary `J` predicate, whose nonnegative frontier would contradict a
 voluntary payer loss. It is a narrow, revocable authorization for a declared
 cost and never licenses hidden or imposed loss to another bearer.

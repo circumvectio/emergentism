@@ -57,12 +57,14 @@ refusal and must be withdrawn openly, with a dated receipt.
 
 ### The layered foundation `[S]`
 
-> **AMENDED TWICE on 2026-07-29 by owner ruling.** (i) The first stratum was
+> **AMENDED on 2026-07-29 and corrected after cross-owner audit.** (i) The first stratum was
 > published as FORCED; the audit showed `F1` was itself a selection, firing this
 > page's own self-kill. A base may be selected — that is the honest state under
-> `E1`/`KSC-04`. (ii) The base is now **the three relations**, and the sphere is
-> **emergent** (step 6), not posited. Receipt 175 is strengthened, not overturned:
-> `Ĉ` stays the primary object downstream, but is now *reached* rather than assumed.
+> `E1`/`KSC-04`. (ii) The three Titan infix expressions cannot be the base:
+> `ArithmeticSignature(TitanFrame)=∅`, and `Ĉ` has no global field multiplication.
+> Their exact survivors are the inversion orbit on `Ĉ` and a reciprocal-coordinate
+> identity on an affine chart. (iii) Two selected formal presentations are under
+> comparison below; neither is yet *the* uniquely warranted foundation.
 
 Presupposed, base and emergent must never be fused:
 
@@ -71,27 +73,31 @@ PRESUPPOSED — prior to any stated base
   P1  a language, a consequence relation, identity/difference, and a binary
       operation with inverses. The relations cannot be STATED without it.
 
-BASE — posited. Three relations. Killable; nothing forced.
-  B1  ⊙ = • × ○      B2  • = ⊙ / ○      B3  ○ = ⊙ / •
-      Content: ⊙ is the IDENTITY and {•, ○} is an INVERSE PAIR. One fact, three faces.
+SELECTED RELATIONAL PRESENTATION — abstract group notation, not Titan arithmetic
+  R1  e is a two-sided identity
+  R2  a⁻¹ is the inverse of a
+  R3  choose the free one-generator model only if infinite order is also selected
+      The free model is ℤ. Other groups satisfy R1–R2, so ℤ and D1 are not forced.
 
-EMERGENT — standard constructions, none forced, each solving a named problem
-  1 ℤ  (free on one generator; {+1,−1} IS KSC-21's oriented pair → D1)
-  2 ℚ   3 ℝ (completion)   4 (ℝ₊,×)≅(ℝ,+) via log — Suda's s
-  5 ℝ₊∪{0,∞}  the poles become points     6 Ĉ = ℂP¹  THE SPHERE
-  7 the corpus: D-registers · μ-contract · E1–E10 · Soul Loop · η=0 · Justice ·
-    Power-Max · Egregoreotype · G7 and the Rosetta
+SELECTED REACHABILITY PRESENTATION — a different model, not a derivation of R1–R3
+  G0  carrier ℚ⁺, seed 1, operations S(x)=x+1 and ι(x)=1/x
+      Its finite words reach positive rationals. They do not reach negatives,
+      irrationals, 0, ∞, the sphere, or the D-registers without further moves.
+
+DOWNSTREAM CONSTRUCTIONS — each is named and independently priced
+  ℤ → ℚ → ℝ;   ℝ₊ → ℝ₊∪{0,∞};   complexification/compactification → Ĉ=ℂP¹
+  These are standard constructions from selected inputs, not consequences of
+  Titan glyphs and not a derivation of the corpus.
 ```
 
-The base-to-corpus relation is **mathematical inheritance**, already canon at
+The model-to-corpus relation is **constraint compatibility**, already canon at
 `00_THE_WELTANSCHAUUNG.md` §7.1: higher organization must remain *compatible
 with* lower constraints while supplying content the lower level does not carry.
 The governing question is therefore **not** "does this follow?" but **"is this
 admissible, and does anything violate the base?"**
 
 **`EMERGENT` is the narrative sense `[I]`, never the technical one.** It is not a
-claim that the base opens a `μ` onto the corpus — every crossing the base
-performs is type-T, so the base is `μ`-free at its own boundary. Whether any
+claim that either presentation opens a `μ` onto the corpus. Whether any
 individual step is a genuine `μ` remains a separate per-step question under
 `KSC-05`.
 

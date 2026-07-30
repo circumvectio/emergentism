@@ -2,51 +2,58 @@
   "schema": "emergentism/finity-paradox-ledger/v1",
   "status": "packet-complete; adjudication remains row-specific",
   "evidence_boundary": "Standard mathematical results retain [A]. Finity diagnoses and philosophical readings remain [S/I] unless a separately reviewed result earns more.",
-  "classifications": ["formal_correction", "diagnostic", "reframe", "unresolved_question", "resolution"],
+  "classifications": ["formal_correction", "diagnostic", "reframe", "unresolved_question", "scoped_resolution"],
+  "native_review_states": ["pending", "complete"],
+  "scoped_resolution_requirements": {
+    "required_fields": ["scope", "formal_domain", "native_account", "recovered_result", "residual", "rivals", "kill", "native_review"],
+    "required_native_review_status": "complete",
+    "rule": "No row earns scoped_resolution without a named native-domain review receipt; support or geometry from another row cannot promote it."
+  },
+  "route_coverage_policy": "Every active legacy paradox route must map to a row and semantic owner; an unmapped route remains frozen, superseded, or historical.",
   "failure_classes": ["type_mismatch", "domain_violation", "partial_operation", "indeterminate_limit", "divergent_limit", "completion_confusion", "cardinality_confusion", "self_reference_or_set_formation", "incompleteness_or_undecidability", "semantic_or_ontological_overreach", "empirical_open_problem"],
   "rows": [
     {
-      "id": "ZENO-01", "question": "Zeno-style finite traversal", "formal_domain": "real analysis", "classification": "resolution", "failure_class": "completion_confusion", "evidence_tier": "A",
+      "id": "ZENO-01", "question": "Zeno-style finite traversal", "formal_domain": "real analysis", "classification": "formal_correction", "failure_class": "completion_confusion", "evidence_tier": "A", "native_review": {"status": "pending", "receipt": null},
       "native_account": "A convergent geometric series has a finite real sum under standard limit semantics.", "finity_diagnosis": "Name the sequence, topology, target and convergence proof.", "recovered_result": "Standard convergence is unchanged.",
       "residual": "A metaphysics of motion is not implied by the series result.", "rivals": ["ordinary epsilon-limit proof"], "kill": "Withdraw any stronger claim that adds no theorem beyond standard analysis."
     },
     {
-      "id": "REAL-01", "question": "Why 0.999... equals 1", "formal_domain": "real numbers and limits", "classification": "resolution", "failure_class": "completion_confusion", "evidence_tier": "A",
+      "id": "REAL-01", "question": "Why 0.999... equals 1", "formal_domain": "real numbers and limits", "classification": "formal_correction", "failure_class": "completion_confusion", "evidence_tier": "A", "native_review": {"status": "pending", "receipt": null},
       "native_account": "The decimal denotes a convergent sequence whose real limit is 1.", "finity_diagnosis": "Separate finite truncations from the completed real limit.", "recovered_result": "0.999... = 1 in the reals.",
       "residual": "No ontological conclusion follows.", "rivals": ["standard decimal expansion theorem"], "kill": "Do not call the restatement a novel Finity theorem."
     },
     {
-      "id": "FIELD-01", "question": "Division by zero", "formal_domain": "fields", "classification": "diagnostic", "failure_class": "partial_operation", "evidence_tier": "A/S",
+      "id": "FIELD-01", "question": "Division by zero", "formal_domain": "fields", "classification": "diagnostic", "failure_class": "partial_operation", "evidence_tier": "A/S", "native_review": {"status": "pending", "receipt": null},
       "native_account": "Field division is defined only for a nonzero denominator.", "finity_diagnosis": "The input lies outside the native operation's domain; an extension must be named separately.", "recovered_result": "a/0 remains undefined in a field.",
       "residual": "A projective or other extension may be useful for a declared task.", "rivals": ["partial algebra", "projective line", "extended structures"], "kill": "Any purported repair that silently changes field division is rejected."
     },
     {
-      "id": "LIMIT-01", "question": "The form 0/0 in a limit", "formal_domain": "calculus and analysis", "classification": "diagnostic", "failure_class": "indeterminate_limit", "evidence_tier": "A/S",
+      "id": "LIMIT-01", "question": "The form 0/0 in a limit", "formal_domain": "calculus and analysis", "classification": "diagnostic", "failure_class": "indeterminate_limit", "evidence_tier": "A/S", "native_review": {"status": "pending", "receipt": null},
       "native_account": "0/0 is an indeterminate form; the functions and limiting process determine the result or divergence.", "finity_diagnosis": "Do not conflate a field expression with a limit context.", "recovered_result": "Each limit is evaluated by native analysis.",
       "residual": "The particular limit remains to be computed.", "rivals": ["standard asymptotic analysis", "L'Hopital under its hypotheses"], "kill": "No single new value may be assigned to the form."
     },
     {
-      "id": "HILBERT-01", "question": "Hilbert's hotel", "formal_domain": "countably infinite sets", "classification": "reframe", "failure_class": "cardinality_confusion", "evidence_tier": "A/I",
+      "id": "HILBERT-01", "question": "Hilbert's hotel", "formal_domain": "countably infinite sets", "classification": "reframe", "failure_class": "cardinality_confusion", "evidence_tier": "A/I", "native_review": {"status": "pending", "receipt": null},
       "native_account": "A countably infinite set may be bijective with a proper subset.", "finity_diagnosis": "Separate finite-cardinality intuitions from countable bijection behavior.", "recovered_result": "Standard cardinal arithmetic is unchanged.",
       "residual": "No conclusion about physical hotels or ontology follows.", "rivals": ["ordinary set-theoretic explanation"], "kill": "Withdraw Finity language if it adds only metaphor."
     },
     {
-      "id": "CANTOR-01", "question": "Countability and uncountability", "formal_domain": "set theory", "classification": "formal_correction", "failure_class": "cardinality_confusion", "evidence_tier": "A",
+      "id": "CANTOR-01", "question": "Countability and uncountability", "formal_domain": "set theory", "classification": "formal_correction", "failure_class": "cardinality_confusion", "evidence_tier": "A", "native_review": {"status": "pending", "receipt": null},
       "native_account": "Diagonal arguments establish that specified sets are uncountable in the named theory.", "finity_diagnosis": "Narrative labels never replace cardinal definitions.", "recovered_result": "Cantor's result remains intact.",
       "residual": "Cardinality supplies no theorem about metaphysical Ground.", "rivals": ["standard set theory"], "kill": "Reject any uncountability claim based only on the narrative triad."
     },
     {
-      "id": "RUSSELL-01", "question": "Russell's paradox", "formal_domain": "set formation and type theory", "classification": "formal_correction", "failure_class": "self_reference_or_set_formation", "evidence_tier": "A",
+      "id": "RUSSELL-01", "question": "Russell's paradox", "formal_domain": "set formation and type theory", "classification": "formal_correction", "failure_class": "self_reference_or_set_formation", "evidence_tier": "A", "native_review": {"status": "pending", "receipt": null},
       "native_account": "Restricted comprehension, axiomatic set theory, or type discipline blocks the naive construction.", "finity_diagnosis": "Name the formation rule and exact type violation.", "recovered_result": "Native foundational repairs remain authoritative.",
       "residual": "Broader semantic self-reference questions remain separate.", "rivals": ["ZFC-style axioms", "simple and dependent type theories"], "kill": "Do not attribute the repair to Titan labels."
     },
     {
-      "id": "GODEL-01", "question": "Incompleteness", "formal_domain": "effective formal systems", "classification": "unresolved_question", "failure_class": "incompleteness_or_undecidability", "evidence_tier": "A/I",
+      "id": "GODEL-01", "question": "Incompleteness", "formal_domain": "effective formal systems", "classification": "unresolved_question", "failure_class": "incompleteness_or_undecidability", "evidence_tier": "A/I", "native_review": {"status": "pending", "receipt": null},
       "native_account": "The standard incompleteness theorems retain their hypotheses and conclusions.", "finity_diagnosis": "Boundary vocabulary does not complete a system from outside.", "recovered_result": "No incompleteness theorem is altered.",
       "residual": "Foundational and philosophical interpretation remains contested.", "rivals": ["standard proof theory", "plural foundations"], "kill": "Any claimed escape must state a formal system and survive expert proof review."
     },
     {
-      "id": "MEAS-01", "question": "Quantum measurement", "formal_domain": "physics and quantum foundations", "classification": "unresolved_question", "failure_class": "empirical_open_problem", "evidence_tier": "C",
+      "id": "MEAS-01", "question": "Quantum measurement", "formal_domain": "physics and quantum foundations", "classification": "unresolved_question", "failure_class": "empirical_open_problem", "evidence_tier": "C", "native_review": {"status": "pending", "receipt": null},
       "native_account": "Competing interpretations share or differ on specified operational content; no Finity theorem selects one here.", "finity_diagnosis": "State, probability, interaction and record are typed separately.", "recovered_result": "Native quantum formalism is preserved.",
       "residual": "Interpretation, measurement and quantum-gravity questions remain open.", "rivals": ["Everettian", "Copenhagen-family", "relational", "hidden-variable", "collapse approaches"], "kill": "If no novel discriminator exists, retain bookkeeping only."
     }

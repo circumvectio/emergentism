@@ -126,10 +126,12 @@ These axes must never be collapsed into one another:
 | `P∞=φν=1` | analytic chart identity |
 | `B=2/(φ+ν)` | chart balance score |
 | `Φ₅` / public `Φ` | D5 possible power: the structured modal potential of the relevant option field |
-| `Φ̂₄=Eval₄(M,Φ₅)` | present D4 estimate of D5 possible power; the only `Φ` value that enters current arithmetic |
-| `V₄` / public `V` | D4 actual power: causally usable capability or means available now |
-| `P_node=Φ̂₄V₄` / public `ΦV` | selected normalized coupling of D5 possibility power to D4 enactment power, not a uniquely derived world law |
-| `Φ̂₄+V₄≤1` | optional finite-resource constraint; only when declared does `Φ̂₄=1` force `V₄=0` |
+| `Φ̂₄=Eval₄(M,Φ₅)` | present D4 estimate of D5 possible power on a declared ordered domain; D5 `Φ₅` never enters present arithmetic directly |
+| `V₄` / public `V` | D4 actual power: causally usable capability or means available now, on its own declared ordered domain |
+| `N_node=(Φ̂₄,V₄)` | live ordered finite-node profile; componentwise Pareto dominance is the baseline invariant under independent strictly increasing reparameterizations |
+| `κ` | calibration contract declaring cardinal scales, meaningful zeros and units, admissible transformations, uncertainty, cross-factor comparability, domain, rivals and kill criterion for any scalar |
+| `P×,κ=Φ_cV_c` / historical `ΦV` | named calibrated product candidate; the historical mnemonic says only that both factors matter and supplies no default ranking or measure of worth |
+| `Φ_c+V_c≤1` | optional calibrated finite-resource constraint; only when declared does `Φ_c=1` force `V_c=0` |
 | `M⋆A` | present model-mediated influence on present selection, not physical retrocausality |
 
 ## Pure-authority boundary
@@ -146,7 +148,7 @@ outside active source authority. Consequential action is typed through the
 |---|---|---|
 | μ₁ configuration emergence | open | declared system, saturation statistic, intervention, prediction, and held-out discriminator |
 | μ₄ counterfactual capacity | open | intervention on represented futures with fair D4 baselines |
-| universal product fit | open | preregistered comparison against rival conjunctive aggregators |
+| finite-node scalar adequacy | open | defend a calibration contract, then preregister the named scalar against product, minimum, harmonic, CES and other fair rivals; reject any allegedly scale-free scalar whose ranking reverses under admissible independent reparameterization |
 | foresight/means complementarity | open | measure the resource cost of improved option-field modeling and compare candidate budget surfaces; the product alone supplies no tradeoff |
 | nested-horizon coordination | open | preregister `T_L`, `T_S`, bearer vectors, rivals, and tie-breakers; compare receding receipts and voluntary role partitions against fixed plans, ordinary role systems, and generalist teams; reject on proxy harm, lock-in, or no out-of-sample gain |
 | five-crossing census | open | independent discriminators across the proposed interfaces |

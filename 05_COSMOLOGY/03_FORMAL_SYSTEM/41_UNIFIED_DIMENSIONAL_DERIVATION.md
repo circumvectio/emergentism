@@ -29,8 +29,8 @@ visible seam so old links do not silently become authority.
 1. `{0,1,∞}` is a selected projective normalization, not a forced
    three-element closure.
 2. `φν=1`, `φ+ν≥2`, and `B≤1` are chart facts empty of empirical content.
-3. The AND-class does not uniquely derive `P_node=ΦV`; the product is the
-   selected normalized Emergentist instance.
+3. The source types yield the profile `N_node=(Φ̂₄,V₄)`, not a scalar. Product
+   and other AND-class candidates require an explicit cardinal calibration.
 4. Pairwise prerequisites do not force a total, seven-step decomposition of
    nature.
 5. Missing reduction laws do not prove strong emergence.
@@ -47,8 +47,8 @@ Receipt 126 therefore refuted **unification by derivation**.
 - `μ₀…μ₄` as candidate positive-freedom crossing records `[I/C]`;
 - `b₆:D5↝D6` as a non-μ exit-marker edge `[I]`;
 - `r₆:D6↝D0` as an apophatic return `[I]`;
-- `P_node=ΦV` as a declared normalized product model `[I]`, universal fit
-  `[C]`;
+- `N_node=(Φ̂₄,V₄)` as the retained profile `[S/I]`, with any calibrated scalar
+  candidate and its comparative fit separately `[I/C]`;
 - the Soul Loop as an operational grammar with separate commitment and outcome
   receipts `[I]`;
 - the Justice-constrained ethic as an avowed normative postulate `[I]`;

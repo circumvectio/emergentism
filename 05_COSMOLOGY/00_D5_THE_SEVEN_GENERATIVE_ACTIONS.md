@@ -19,12 +19,14 @@ a mapping of every possible action.
 V₄ = D4 actual power: embodied, causally usable capability available now
 Φ₅ = D5 possible power: structured modal potential in the option field
 Φ̂₄ = Eval₄(M,Φ₅): present D4 estimate of that possible power
-P_node = Φ̂₄V₄ = selected normalized conjunctive model
-public shorthand: P_node = ΦV
+N_node = (Φ̂₄,V₄): live two-axis profile
+P× = Φ_cV_c: optional product of separately declared calibrated images,
+             not the G7 generator
 ```
 
 Lowercase `φ,ν` remain reciprocal-chart coordinates. G7 never derives the
-uppercase factors or its ethics from `φν=1`.
+uppercase factors, a scalar aggregator, or its ethics from `φν=1`. The seven
+rows come from a selected grouping of signed changes, not from a product.
 
 The referent of `Φ` is D5; every estimate, inscription, ranking, and update of
 it is an actual D4 token. D5 possible power is modal reach, not a force sent
@@ -57,12 +59,12 @@ without being forced into one of those degenerate classes.
 
 ## 3. Four transfers
 
-| Family | Symbol | Signature | Neutral operational gloss |
+| Neutral family | Mythic alias | Signature | Neutral operational gloss |
 |---|---|---|---|
-| Demon-polar taking | Kali 🎲 | `+Φ₅,self, −V₄,other` | raise own possible power by reducing another's actual power |
-| Demon-polar taking / God-function truth-cut | Kālī 💀 | `+V₄,self, −Φ₅,other` | raise own actual power by cutting another's represented possibility structure |
-| God-polar giving | Kṛṣṇa ◇ | `−Φ₅,self, +V₄,other` | spend own modeling/attention to build another's actual power |
-| God-polar giving | Arjuna ⚔ | `−V₄,self, +Φ₅,other` | spend own actual power to improve another's possible power |
+| Taking-A | Kali 🎲 | `+Φ₅,self, −V₄,other` | raise own possible power while reducing another's actual power |
+| Taking-B | Kālī 💀 | `+V₄,self, −Φ₅,other` | raise own actual power while cutting another's represented possibility structure |
+| Giving-A | Kṛṣṇa ◇ | `−Φ₅,self, +V₄,other` | spend own modeling/attention to build another's actual power |
+| Giving-B | Arjuna ⚔ | `−V₄,self, +Φ₅,other` | spend own actual power to improve another's possible power |
 
 These signatures are descriptions, not verdicts. Cutting false information may
 be protective; cutting a person's truthful option model may be extractive.
@@ -83,18 +85,26 @@ operands, or causal particles. Frames do not authorize action. Tending,
 testing, adopting, or revising the game language is a metalinguistic act
 outside G7.
 
-## 5. Demon/god analogy
+## 5. Demon/god verdict layer `[I]`
 
-The Rosetta groups the four transfer shapes into two taking forms (the Demon
-face) and two giving forms (the God face). This tracks **ego- versus
-collective-potential direction**, never a permanent essence of a person:
+The Rosetta historically grouped taking signatures under a Demon face and giving
+signatures under a God face. The sign pattern alone cannot bear that verdict.
+Use a separate, defeasible predicate after the complete record:
 
-- demon-polar: one side's apparent gain is purchased by shrinking another
+```text
+JusticeVerdict(move, bearers, consent, authority, costs, outcome)
+  ∈ {protective, permissible, tragic, extractive, unresolved}
+```
+
+The optional mythic predicates then describe adjudicated moves, never persons:
+
+- demon-polar: the completed record supports a verdict that one side's apparent gain is purchased by shrinking another
   bearer without valid authorization or visible cost;
-- god-polar: a costly transfer widens durable mutual potential under Justice.
+- god-polar: the completed record supports a verdict that a costly transfer widens durable mutual potential under Justice.
 
-Kālī retains two faces: demon-polar on the taking axis and God in her
-truth-cutting function. More generally, names alone cannot decide the verdict.
+Kālī's truth-cutting alias illustrates why signature and verdict must be split:
+cutting falsehood may be protective, while suppressing a truthful option model
+may be extractive. Names alone cannot decide the verdict.
 The same nominal operator may be protective, mistaken, sacrificial, or
 extractive in different contexts. G7 may help describe the intended move;
 commitment and outcome receipts decide what actually happened.

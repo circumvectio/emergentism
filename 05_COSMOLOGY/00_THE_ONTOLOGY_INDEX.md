@@ -76,8 +76,11 @@ The [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md) owns the notation:
 - `Φ₅` / public `Φ`: D5 possible power in the option field;
 - `Φ̂₄`: the present D4 evaluation of `Φ₅`;
 - `V₄` / public `V`: D4 actual power or usable means;
-- `P_node=Φ̂₄V₄` / public `ΦV`: the selected normalized conjunctive model, not a uniquely
-  derived law of the world.
+- `N_node=(Φ̂₄,V₄)`: the live two-axis profile, compared by Pareto order while
+  the axes remain ordinal;
+- `P×=Φ_cV_c`, minimum, or another scalar: named application candidates only
+  after an explicit cardinal calibration and fair rival test. Historical `ΦV`
+  names joint necessity, not a ranking or law of the world.
 
 The chart does not derive ontology, ethics, quantum mechanics, or empirical
 conservation. The Titans are selected symbolic roles; ordinary `0` and `1`

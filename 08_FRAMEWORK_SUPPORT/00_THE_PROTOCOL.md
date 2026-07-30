@@ -138,22 +138,34 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 ---
 
-## PROTOCOL D: THIRD-PERSON VERIFICATION OF THE EXTRACTION THEOREM
+## PROTOCOL D: THIRD-PERSON TEST OF THE CONSTRAINED EXTRACTION MODEL
 
 ### Hypothesis
 
-If agents are genuinely coupled (`λ > 0`), scored by the finite-node product
-`P_node = Φ × V`, evaluated over a long enough horizon for network effects to
-return, and placed inside an enforceable `η = 0` arena, then durable
-optimization should select syntropic trajectories more strongly than additive
-baseline agents.
+If agents are genuinely coupled (`λ > 0`), a calibration contract `κ` freezes
+cardinal scales, meaningful zeros and units, admissible transformations,
+uncertainty, domain, bearer and horizon, one arm selects the finite-node product
+candidate `P×,κ=Φ_cV_c`, outcomes are evaluated over a long enough horizon for
+network effects to return, and the agents are placed inside an enforceable
+`η = 0` arena, then that product arm may select syntropic trajectories more
+strongly than component-matched additive, unaggregated-profile and
+domain-native baselines.
+
+The default arm retains `N_node,x=(Φ̂₄,x,V₄,x)` and compares each bearer's
+before/after profile componentwise by Pareto dominance. The product arm is a
+candidate comparison model, not the definition of the node or the frontier.
 
 This is not a claim that cooperation appears spontaneously from multiplication
 alone. The current Power-Max Lemma says the opposite: coupling creates
 interdependence, but one-shot extraction can still pay unless the private
 extraction channel is blocked. Protocol D therefore tests the constrained
 frontier: whether multiplicative agents under enforced non-extraction converge
-toward `ΔP_node,i >= 0` and `ΔP_node,H >= 0` more reliably than additive agents.
+toward `ΔP×,κ,i >= 0` and `ΔP×,κ,H >= 0` more reliably than the declared
+component-matched rivals.
+
+Those bearer conditions remain a conjunction. No sum or compensating aggregate
+across `i` and `H` is admissible without a separate shared aggregation contract
+with commensurable units, and no aggregate may hide either bearer's decline.
 
 ### Status
 
@@ -162,16 +174,17 @@ d = 6.66, p = 2.02 × 10⁻¹², Spearman ρ = 1.000).
 
 **Not yet confirmed by independent replication.** This is the honest position:
 framework-designed simulation testing framework metrics is structural support,
-not public proof. The older run also predates the current constrained-frontier
-wording, so it supports the direction of Protocol D but does not by itself
-settle the four-condition Power-Max claim.
+not public proof. The older run also predates the current calibration and
+constrained-frontier wording, so it does not by itself settle the current
+comparison claim.
 
 **Upgrade criterion:** An independent research team (no authorship overlap with
 EFR), using a pre-registered protocol not designed within EFR, confirms that
 coupled multiplicative agents under a long-horizon `η = 0` enforcement surface
-select syntropic-frontier outcomes over additive baselines with effect size
-d > 2.0 and p < 0.01, while also testing the failure modes: `λ = 0`, additive
-payoff, short horizon, hidden extraction, and negative coupling.
+select syntropic-frontier outcomes over the unaggregated profile, additive and
+domain-native baselines with effect size d > 2.0 and p < 0.01, while also
+testing the failure modes: `λ = 0`, alternative payoff, short horizon, hidden
+extraction, calibration instability and negative coupling.
 
 **Tier: [S] Structural internal support.** Awaiting independent replication.
 

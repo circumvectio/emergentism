@@ -57,9 +57,21 @@ the mathematics in which it appears.
 
 ## 2. The finite-node family
 
-Let `Φ₅` denote D5 possible power and let `Φ̂₄=Eval₄(M,Φ₅)∈[0,1]` be its
-present D4 estimate. Let `V₄∈[0,1]` denote D4 actual power or embodied means.
-A conjunctive aggregator belongs to the family
+Let `Φ₅` denote D5 possible power and `Φ̂₄=Eval₄(M,Φ₅)` its present D4
+estimate. Let `V₄` denote D4 actual power or embodied means. Without a cardinal
+calibration and defended comparison across axes, retain
+
+\[
+N_x=(\widehat\Phi_{4,x},V_{4,x})
+\]
+
+and use componentwise Pareto order, which survives independent monotone
+reparameterizations. A scalar is not defined by the types alone.
+
+Only after a calibration contract supplies meaningful zeros and units,
+normalization, admissible transformations, uncertainty and cross-factor
+comparability may an application define `Φ_c=c_Φ(Φ̂₄)∈[0,1]` and
+`V_c=c_V(V₄)∈[0,1]`, then choose a conjunctive aggregator from
 
 \[
 C:[0,1]^2\to[0,1]
@@ -68,26 +80,27 @@ C:[0,1]^2\to[0,1]
 when it is monotone and satisfies
 
 \[
-C(0,V_4)=C(\widehat\Phi_4,0)=0.
+C(0,V_c)=C(\Phi_c,0)=0.
 \]
 
 Minimum, product, harmonic, CES, and other functions may rank interior points
 differently. The zero-factor condition selects an **AND-class**; it does not
 select one member uniquely.
 
-Emergentism declares the normalized product as its default instance:
+Candidate calibrated instances include:
 
 \[
-P_x:=C_{\times}(\widehat\Phi_{4,x},V_{4,x})=\widehat\Phi_{4,x}V_{4,x}.
+P_{\times,x}:=\Phi_{c,x}V_{c,x},\qquad
+P_{\min,x}:=\min(\Phi_{c,x},V_{c,x}).
 \]
 
-The public compression remains `P_x=Φ_xV_x` after the evaluation bridge has
-been declared.
-
-That declaration is structural inside the model `[S]`. Its universal fit to
-real agents or domains is conjectural `[C]`. Every application must state the
-bearer, measures, normalization, horizon, costs, alternative aggregators, and
-observations that would reject the product instance.
+Neither is the framework's default. Product is not invariant under general
+ordinal reparameterization; minimum survives a common monotone transform but
+not independent transforms of two separate ordinal factors. The historical
+`ΦV` compression means joint necessity only and may not rank nodes or people.
+Every scalar application must state the bearer, measures, calibration,
+normalization, horizon, costs, alternative aggregators and observations that
+would reject the selected instance.
 
 ## 3. Future influence without physical retrocausality
 
@@ -143,14 +156,15 @@ An honest construction grammar keeps all three inspectable.
 
 ## 5. Justice-constrained Power-Max
 
-For a bearer `x`, let
+For a bearer `x`, let a **calibrated application** define
 
 \[
 W_x(T)=\int_0^T P_x(t)\,dt.
 \]
 
-Power-Max is not an unconditional law of agents and not a proof of the Good. It
-is a selected design objective subordinate to the Justice envelope. For an
+Absent such a scalar, keep the time-indexed `N_x` profile and its partial
+order. Power-Max is not an unconditional law of agents and not a proof of the
+Good. It is a selected ordering discipline subordinate to the Justice envelope. For an
 individual `i`, sustaining whole `H`, and the complete affected-bearer set,
 define an admissible field `\mathcal A_J` only from actions that satisfy:
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import hashlib
+import fnmatch
 import re
 import subprocess
 import sys
@@ -25,7 +26,16 @@ FORBIDDEN = {
     "zero-momentum D3 inflation": re.compile(r"D3 has no momentum", re.I),
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
     "legacy public Phi definition": re.compile(r"Φ\s+is\s+(?:a\s+)?present\s+(?:measurement|assessment)|present\s+measurement\s+of\s+D5", re.I),
-    "legacy untyped node product": re.compile(r"P\s*=\s*Φ\s*(?:×|x|\*)\s*V"),
+    "legacy untyped node scalar": re.compile(r"P(?:_|<sub>)?node(?:</sub>)?(?:\s*,?\s*i)?", re.I),
+    "raw uncalibrated Phi-V product": re.compile(r"(?:Φ|&Phi;)\s*(?:×|x|\*)\s*V\b", re.I),
+    "legacy aggregate objective": re.compile(r"(?:Σ|sum)\s*Δ\s*P(?:_|<sub>)?node", re.I),
+    "product-derived ethics": re.compile(
+        r"(?:(?:P(?:_|<sub>)?node(?:</sub>)?|(?:Φ|&Phi;)\s*(?:×|x|\*)\s*V).{0,1400}"
+        r"(?:objective|derived|structural)\s+(?:ethic|ethics|dharma)|"
+        r"(?:objective|derived|structural)\s+(?:ethic|ethics|dharma).{0,1400}"
+        r"(?:P(?:_|<sub>)?node(?:</sub>)?|(?:Φ|&Phi;)\s*(?:×|x|\*)\s*V))",
+        re.I | re.S,
+    ),
     "derived ethic inflation": re.compile(r"ethic(?:s)?\s+(?:falls?|follow(?:s|ed)?)\s+(?:directly\s+)?(?:out\s+of|from)\s+(?:the\s+)?arithmetic", re.I),
     "exclusive ethic inflation": re.compile(r"the only lawful move", re.I),
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
@@ -39,7 +49,7 @@ FORBIDDEN = {
 
 REQUIRED_PUBLIC_CONTRACTS = {
     "index.html": ("A worldview for finite beings", "Frame one decision"),
-    "plainly/index.html": ("possible power", "actual power", "chosen conjunctive model"),
+    "plainly/index.html": ("possible power", "actual power", "componentwise Pareto", "calibration contract"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
     "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
@@ -48,7 +58,47 @@ REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
+    "compass/index.html": {"OS01-09"},
+    "5/index.html": {"OS01-09"},
+    "plainly/index.html": {"OS01-09"},
+    "discoveries/nonduality/index.html": {"OS01-09"},
+    "about/index.html": {"OS01-09"},
+    "read/index.html": {"OS01-09"},
+    "axioms/index.html": {"OS01-09"},
+    "journey/index.html": {"OS01-09"},
+    "rosetta/index.html": {"OS01-09"},
+    "book/index.html": {"OS01-09"},
 }
+
+NEGATIVE_PRODUCT_RECORDS = {"axioms/index.html", "record/index.html"}
+
+
+def _sha256_revision(path: Path) -> str:
+    return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _vercelignore_patterns() -> list[str]:
+    return [
+        line.strip() for line in (SITE / ".vercelignore").read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    ]
+
+
+def _ignored(rel: str, patterns: list[str]) -> bool:
+    ignored = False
+    for pattern in patterns:
+        negated = pattern.startswith("!")
+        raw = pattern[1:] if negated else pattern
+        if raw.endswith("/"):
+            prefix = raw.rstrip("/")
+            matched = rel == prefix or rel.startswith(prefix + "/")
+        elif "/" not in raw:
+            matched = fnmatch.fnmatch(Path(rel).name, raw) or fnmatch.fnmatch(rel, raw)
+        else:
+            matched = fnmatch.fnmatch(rel, raw.lstrip("/"))
+        if matched:
+            ignored = not negated
+    return ignored
 
 
 def main() -> int:
@@ -93,7 +143,7 @@ def main() -> int:
                     register_lookup[card_id] = row
     source_path = ROOT / contract.get("source", "__missing__")
     if source_path.is_file():
-        actual_revision = "sha256:" + hashlib.sha256(source_path.read_bytes()).hexdigest()
+        actual_revision = _sha256_revision(source_path)
         if contract.get("sourceRevision") != actual_revision:
             errors.append("claim-card contract sourceRevision drift")
     else:
@@ -116,8 +166,6 @@ def main() -> int:
         for key in ("claimCardIds", "sourceRevision", "lifecycle", "publicDisposition"):
             if not item.get(key):
                 errors.append(f"{item.get('id', '?')} missing claim-card parity field {key}")
-        if item.get("sourceRevision") != contract.get("sourceRevision"):
-            errors.append(f"{item.get('id', '?')} claim-card sourceRevision drift")
         if item.get("lifecycle") != contract.get("lifecycle"):
             errors.append(f"{item.get('id', '?')} claim-card lifecycle drift")
         if item.get("publicDisposition") != contract.get("publicDisposition"):
@@ -130,14 +178,21 @@ def main() -> int:
             if state not in {"bounded_current", "candidate"}:
                 errors.append(f"{item.get('id', '?')} binds non-current claim-card {card_id} ({state})")
         source = ROOT / item["source"]
-        if not source.is_file():
+        if source.is_file():
+            if item.get("sourceRevision") != _sha256_revision(source):
+                errors.append(f"{item.get('id', '?')} sourceRevision drift: {item['source']}")
+        else:
             errors.append(f"missing source owner: {item['source']}")
         if "transition" in item:
             tr = item["transition"]
-            for key in ("source", "saturation", "capability", "recovery", "evidence", "prediction", "alternatives", "kill"):
+            for key in ("source", "sourceRevision", "saturation", "capability", "recovery", "evidence", "prediction", "alternatives", "kill"):
                 if not tr.get(key):
                     errors.append(f"{tr.get('id', '?')} missing {key}")
-            if not (ROOT / tr["source"]).is_file():
+            transition_source = ROOT / tr["source"]
+            if transition_source.is_file():
+                if tr.get("sourceRevision") != _sha256_revision(transition_source):
+                    errors.append(f"{tr.get('id', '?')} sourceRevision drift: {tr['source']}")
+            else:
                 errors.append(f"missing crossing owner: {tr['source']}")
         rendered = (SITE / item["id"][1:] / "index.html").read_text(encoding="utf-8", errors="replace")
         for needle, label in (
@@ -189,7 +244,7 @@ def main() -> int:
             source_paths.add(source_rel)
             source = ROOT / source_rel
             if source.is_file():
-                actual_revision = "sha256:" + hashlib.sha256(source.read_bytes()).hexdigest()
+                actual_revision = _sha256_revision(source)
                 if source_binding.get("sourceRevision") != actual_revision:
                     errors.append(f"{surface} claim sourceRevision drift: {source_rel}")
             else:
@@ -237,6 +292,58 @@ def main() -> int:
                 f"got {sorted(actual_cards)}"
             )
 
+    current = set(data.get("currentSurfaces", []))
+    infrastructure = set(data.get("currentInfrastructureSurfaces", []))
+    frozen_legacy = set(data.get("frozenLegacySurfaces", []))
+    frozen_roots = set(data.get("frozenLibraryRoots", []))
+    withheld_data = json.loads((SITE / "withheld-routes.json").read_text(encoding="utf-8"))
+    withheld = {row.get("artifact") for row in withheld_data.get("artifacts", [])}
+    for label, values in (
+        ("current surface", current),
+        ("current infrastructure surface", infrastructure),
+        ("frozen legacy surface", frozen_legacy),
+        ("withheld surface", withheld),
+    ):
+        if None in values or len(values) != len(list(values)):
+            errors.append(f"{label} registry contains an invalid entry")
+        for rel in values:
+            if not (SITE / rel).is_file():
+                errors.append(f"missing declared {label}: {rel}")
+    conflicting = (current | infrastructure) & (frozen_legacy | withheld)
+    for rel in sorted(conflicting):
+        errors.append(f"current surface also classified as frozen or withheld: {rel}")
+    patterns = _vercelignore_patterns()
+    for path in sorted(SITE.rglob("*.html")):
+        rel = path.relative_to(SITE).as_posix()
+        if rel in withheld:
+            category = "withheld"
+        elif _ignored(rel, patterns):
+            continue
+        elif rel in current:
+            category = "current"
+        elif rel in infrastructure:
+            category = "infrastructure"
+        elif rel in frozen_legacy or rel.split("/", 1)[0] in frozen_roots:
+            category = "frozen"
+        else:
+            errors.append(f"unclassified deployable HTML route: {rel}")
+            continue
+        if category == "frozen":
+            frozen_text = path.read_text(encoding="utf-8", errors="replace")
+            if 'name="robots" content="noindex, follow"' not in frozen_text:
+                errors.append(f"frozen route lacks explicit noindex marker: {rel}")
+            if 'data-frozen-library-boundary="2026-07-22"' not in frozen_text:
+                errors.append(f"frozen route lacks provenance boundary marker: {rel}")
+
+    profile_surfaces = {
+        rel for rel in current
+        if rel.endswith(".html") and (SITE / rel).is_file()
+        and "N_node" in (SITE / rel).read_text(encoding="utf-8", errors="replace")
+    }
+    missing_profile_bindings = sorted(profile_surfaces - set(REQUIRED_SURFACE_CARDS))
+    for rel in missing_profile_bindings:
+        errors.append(f"typed node-profile surface lacks an OS01-09 claim binding: {rel}")
+
     for rel in data.get("currentSurfaces", []):
         path = SITE / rel
         if not path.is_file():
@@ -247,6 +354,13 @@ def main() -> int:
             if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
             if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
+                continue
+            if name in {
+                "legacy untyped node scalar",
+                "raw uncalibrated Phi-V product",
+                "legacy aggregate objective",
+                "product-derived ethics",
+            } and rel in NEGATIVE_PRODUCT_RECORDS:
                 continue
             scan_text = text
             if name == "quantum-gravity solution inflation":
@@ -280,10 +394,19 @@ def main() -> int:
     if barred.returncode:
         errors.append(barred.stdout.strip() or barred.stderr.strip() or "public barred-claim gate failed")
     rag = json.loads((SITE / "book/rag_index.json").read_text(encoding="utf-8"))
-    frozen_prefixes = tuple(f"{root}:" for root in data["frozenLibraryRoots"])
+    excluded_routes = {
+        "/" + rel[:-10]
+        for rel in frozen_legacy | withheld
+        if rel.endswith("index.html")
+    }
     for passage in rag.get("passages", []):
-        if str(passage.get("id", "")).startswith(frozen_prefixes):
-            errors.append(f"frozen library passage remains in RAG: {passage['id']}")
+        passage_id = str(passage.get("id", ""))
+        href = str(passage.get("href", ""))
+        if passage_id.startswith(tuple(f"{root}:" for root in frozen_roots)) or any(
+            href == route or href.startswith(route + "/") or href.startswith(route + "#")
+            for route in excluded_routes
+        ):
+            errors.append(f"frozen or withheld passage remains in RAG: {passage_id}")
             break
     if errors:
         print("PUBLIC SEMANTIC PARITY: FAIL")

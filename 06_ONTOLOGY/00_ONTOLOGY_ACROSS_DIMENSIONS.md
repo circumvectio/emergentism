@@ -146,12 +146,13 @@ dimensional scaffold, ontology, emergence, Dasein, or ethics. The Titan frame
 `{0,1,∞}` is selected symbolism; ordinary 0 and 1 remain numbers, and infinity
 is a projective point in the named extended context.
 
-At the D4/D5 seam, `V₄` names D4 actual power, `Φ₅` names D5 possible power,
-and `Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate. The node model
-`P_node=Φ̂₄V₄`, publicly `ΦV`, is the selected normalized product member of a
-wider monotone conjunctive family. Its transfer to a real system is conjectural
-and must compete with minimum, harmonic, Cobb–Douglas, and other suitable
-models. D5 power is modal; it has no independent causal arrow.
+At the D4/D5 seam, `V₄∈O_V` names D4 actual power, `Φ₅` names D5 possible
+power, and `Φ̂₄=Eval₄(M,Φ₅)∈O_Φ` is its present D4 estimate. The live object is
+the two-axis profile `N_node=(Φ̂₄,V₄)`, with componentwise Pareto comparison
+while the axes remain ordinal. Product, minimum, harmonic, Cobb–Douglas and
+domain-native scalars require an explicit cardinal calibration and remain
+conjectural application models. Historical `ΦV` names joint necessity only.
+D5 power is modal; it has no independent causal arrow.
 
 ## 8. Value is not derived by the ladder
 

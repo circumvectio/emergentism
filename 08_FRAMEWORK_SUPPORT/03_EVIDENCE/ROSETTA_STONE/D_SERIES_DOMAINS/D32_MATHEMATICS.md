@@ -8,7 +8,7 @@ rosetta:
       role: "separate algebraic identities, operator sequence, and domain explanations"
     - level: L6
       column: Core State
-      role: "preserve P_node versus P-infinity distinction"
+      role: "preserve the node-profile, calibrated-product, and P-infinity distinctions"
     - level: L7
       column: Institutional Narrative
       role: "compress the equation grammar as whole-framework reference"
@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/S/I]"
-  canonical_phrase: "Mathematical Transformations of P_node = Φ × V"
+  canonical_phrase: "Mathematical Transformations of the calibrated product candidate"
 title: "Mathematical Transformations"
 status: "D-series domain mapping"
 evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; [S] for internal sequence; [I] for domain explanations."
@@ -24,26 +24,46 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 
 # ⊙ MATHEMATICAL TRANSFORMATIONS
 
-## All Forms of P_node = Φ × V
+## The Node Profile and a Calibrated Product Candidate
 
 **Source:** Emergentism Rosetta Stone v10.0 · MATHEMATICS sheet
 **Evidence Tier:** [A] for algebraic/calculus identities under stated assumptions. [S] for the seven-operation sequence and operator sign-space as framework-internal structure. [I] for the claim that an equation form is an agent's way of knowing or that the grammar explains a domain outside the formalism.
 
 ---
 
-| Form | Equation | Use Case | Rigor |
-|------|----------|----------|-------|
-| Standard Product | P_node = Φ × V | Default calculation | ✓ Axiomatic |
-| Solve for V | V = P_node / Φ | Resources needed for target P_node? | ✓ Algebraic |
-| Solve for Φ | Φ = P_node / V | Evaluated possible power needed for target P_node? | ✓ Algebraic |
-| Differential | dP_node = V dΦ + Φ dV | Dynamic analysis, optimisation | ✓ Calculus |
-| Partial (Φ) | ∂P_node/∂Φ = V | Marginal return on evaluated possible power | ✓ Calculus |
-| Partial (V) | ∂P_node/∂V = Φ | ROI on resource-adding | ✓ Calculus |
-| Logarithmic | log P_node = log Φ + log V | Growth rates, statistics | ✓ Log transform |
-| Alignment Energy | E_node = −log(P_node) | Negative-log transform over the finite-node product | ✓ Theoretical |
-| Zero-Catastrophe | Φ→0 ∨ V→0 ⇒ P_node→0 | Multiplicative collapse | ✓ Mathematical |
-| Balanced Growth | dΦ/Φ = dV/V ⇒ balanced dP_node/P_node | Proportional growth balances finite-node rates | ✓ Calculus |
-| Riemann Sphere | z = φ/ν on S² = Ĉ | Equator \|z\|=1 maximises B = L4 | ✓ Theoretical |
+The invariant node object is the ordered profile
+
+```text
+N_node = (Phi_hat_4, V_4).
+```
+
+When the axes are ordinal, compare profiles componentwise by Pareto dominance.
+A scalar requires a declared cardinal calibration contract `kappa`: zeros,
+units, admissible transforms, uncertainty, cross-factor comparability, domain,
+rivals, and a kill criterion. Only then may one define
+
+```text
+Phi_c = c_Phi,kappa(Phi_hat_4)
+V_c   = c_V,kappa(V_4)
+P_x,kappa = Phi_c*V_c.
+```
+
+The table below is therefore conditional product calculus, not a default power,
+value, performance, or human-rank calculation.
+
+| Form | Equation under `kappa` | Use Case | Rigor |
+|------|-------------------------|----------|-------|
+| Product candidate | `P_x,kappa = Phi_c*V_c` | One preregistered aggregator arm | ✓ Algebraic, conditional |
+| Solve for `V_c` | `V_c = P_x,kappa/Phi_c` | Candidate-resource calculation | ✓ Algebraic, `Phi_c != 0` |
+| Solve for `Phi_c` | `Phi_c = P_x,kappa/V_c` | Candidate-model calculation | ✓ Algebraic, `V_c != 0` |
+| Differential | `dP_x,kappa = V_c dPhi_c + Phi_c dV_c` | Local sensitivity | ✓ Calculus, fixed `kappa` |
+| Partial (`Phi_c`) | `partial P_x,kappa/partial Phi_c = V_c` | Candidate marginal | ✓ Calculus, fixed `kappa` |
+| Partial (`V_c`) | `partial P_x,kappa/partial V_c = Phi_c` | Candidate marginal | ✓ Calculus, fixed `kappa` |
+| Logarithmic | `log P_x,kappa = log Phi_c + log V_c` | Positive-factor decomposition | ✓ Log transform |
+| Negative log | `E_x,kappa = -log(P_x,kappa)` | Candidate loss transform | ✓ Algebraic, interpretive use open |
+| Zero factor | `Phi_c -> 0 or V_c -> 0 => P_x,kappa -> 0` | Multiplicative candidate behavior | ✓ Mathematical |
+| Balanced relative change | `dPhi_c/Phi_c = dV_c/V_c` | Relative-rate equality | ✓ Calculus; no optimality follows |
+| Riemann Sphere | `z = phi/nu` on `S2 = C-hat` | `\|z\|=1` maximizes chart balance `B` | ✓ Analytic in the selected chart |
 
 ---
 
@@ -51,8 +71,11 @@ evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; 
 
 Use regime-specific notation. `V₄` is D4 actual power; `Φ₅` is D5 possible
 power; `Φ̂₄=Eval₄(M,Φ₅)` is the present D4 estimate that can enter arithmetic.
-The typed product is `P_node:=Φ̂₄×V₄`; the familiar `Φ×V` remains its public
-shorthand. `P∞=φ·ν=1` is the `S²` manifold identity. Do not collapse them.
+The current typed object is the profile `N_node=(Φ̂₄,V₄)`. The product
+`P_x,kappa=Φ_cV_c` exists only after the calibration contract above; the legacy
+`P_node=Φ×V` phrase is not a public shorthand for an invariant scalar.
+`P∞=φ·ν=1` is the selected `S²` chart identity. Do not collapse these three
+objects.
 
 ### Soul Loop Recurrence and Power-Max Form
 
@@ -60,8 +83,11 @@ The Soul Loop gives the Rosetta mathematics a runtime form. Let `i` be the
 individual symbiont and `H` the holobiont / sustaining whole:
 
 ```text
-P_node,i = Φ̂₄,i × V₄,i
-P_node,H = Φ̂₄,H × V₄,H
+N_node,i = (Φ̂₄,i, V₄,i)
+N_node,H = (Φ̂₄,H, V₄,H)
+
+P_x,kappa,i = c_Phi,kappa(Φ̂₄,i) * c_V,kappa(V₄,i)  # optional candidate
+P_x,kappa,H = c_Phi,kappa(Φ̂₄,H) * c_V,kappa(V₄,H)  # optional candidate
 ```
 
 Agency-register dictionary:
@@ -79,57 +105,60 @@ V₄ = D4 actual power / means-to-act:
 
 This is the finite-node action register. It does not replace the sphere
 coordinates: lowercase `φ` and `ν` name the reciprocal chart on `S²`; uppercase
-`Φ` and `V` publicly name the D5/D4 power factors in `P_node=Φ×V`, while
-modality-sensitive mathematics writes `Φ̂₄,V₄`. The same zero-factor
-catastrophe applies. Means without foresight are not usable potential: a child
+`Φ̂₄,V₄` name the node-profile components. A zero-factor collapse belongs to
+the optional product candidate, not to the profile as such. Means without
+foresight are not usable potential in some action models: a child
 beside a jet cannot fly it. Foresight without access is not usable potential:
 an old pilot without the relevant bodily/tool means cannot enact the run. A
 hand, a shovel, and an industrial digger are all D4 means-to-act at different
 scales; `Φ₅` names the possible power of the relevant alternatives and `Φ̂₄`
 asks how well the actor's actual D4 model represents and ranks them.
-`[A]` for the product algebra, `[S]` for the internal bridge, `[I]` for the
-general agency reading.
+`[A]` for conditional product algebra, `[S]` for the profile distinction, and
+`[I]` for the general agency reading.
 
-For normalized positive factors, define a finite-node balance reading:
+For positive factors calibrated under one `kappa`, one may define a finite-node
+balance candidate:
 
 ```text
-r_i = Φ_i / V_i
+r_i = Phi_c,i / V_c,i
 B_i = 2 / (r_i + 1/r_i)
 ```
 
-and analogously for `H`. `B = 1` when the factors are balanced and falls toward
-0 as one factor dominates. This is a node-level analogue of the sphere balance
-reading; it is not the same claim as `P∞ = φ · ν = 1`.
+and analogously for `H`. `B = 1` when those calibrated factors are equal and
+falls toward 0 as one dominates. It is not invariant to arbitrary independent
+rescaling, so it is a candidate reading under `kappa`, not the same claim as
+`P∞ = φ · ν = 1`.
 
 A Soul Loop step is a constrained recurrence:
 
 ```text
-x_t = (Φ_i, V_i, Φ_H, V_H, C_t, G_t)
+x_t = (N_node,i, N_node,H, C_t, G_t, kappa_t)
 a_t ∈ A(x_t) where η(a_t) = 0
 x_{t+1} = Loop(x_t, a_t)
 ```
 
 `C_t` is the corpus/world-model state and `G_t` is the player's operator-weight
 vector. The admissible action set `A(x_t)` excludes extraction: an action that
-raises one side by degrading the other is not a lawful maximizer, even if it
-temporarily increases a local product.
+raises one bearer by degrading another violates the selected non-extraction
+rule even if it temporarily raises some calibrated scalar.
 
-The internal Power-Max lemma can be written as a policy claim under coupling
-assumptions:
+The internal coupling proposal begins with profile trajectories. Pareto
+improvement is the scalar-free baseline. If and only if a shared calibration
+contract is declared, a product arm may additionally be evaluated:
 
 ```text
-W_i(π) = Σ γ^t P_node,i(t)
-W_H(π) = Σ γ^t P_node,H(t)
+W_i,kappa(π) = Σ gamma^t P_x,kappa,i(t)
+W_H,kappa(π) = Σ gamma^t P_x,kappa,H(t)
 
-π* ∈ argmax W_i only if π* preserves or raises W_H under η = 0.
+π* in argmax W_i,kappa only if the declared constitutional rule also preserves
+or raises the bearer profile of H under eta = 0.
 ```
 
 Reason: when `i` is materially, epistemically, and morally coupled to `H`, a
-policy that degrades `H` shrinks the future feasible set of `i`. The maximum
-worldline potential of the symbiont is therefore achieved through the
-holobiont, not against it. This is `[S]` as internal decision geometry and
-`[I]` as a general model of life; it is not an empirical theorem without
-specified coupling channels, horizon, and measurements.
+policy that degrades `H` may shrink the future feasible set of `i`. The stronger
+claim that an individual optimum is always achieved through the whole is a
+conditional conjecture, not a theorem. It requires specified coupling channels,
+horizon, measurements, calibration, rivals, and a kill criterion.
 
 ### The Equations as L-Levels
 
@@ -137,33 +166,39 @@ Each mathematical form maps to an L-level in the Master Three-Stage Process:
 
 | L | Equation | Mathematical Operation | What It Sees |
 |---|----------|----------------------|-------------|
-| L1 | Φ→0 ⇒ P_node→0 | Boundary limit | The threat — expressed potential collapses |
-| L2 | dP_node = VdΦ + ΦdV | Total differential | The first dynamic — change visible |
-| L3 | ∂P_node/∂V = Φ; ∂P_node/∂Φ = V | Partial derivative | The optimisation — each margin priced by the other factor |
-| L4 | dΦ/Φ = dV/V | Proportional / log-derivative balance | THE BALANCE — equal relative movement at the equator |
-| L5 | log P_node = log Φ + log V | Logarithmic decomposition | The ordering — multiplication becomes addition |
-| L6 | E_node = −log(P_node) | Negative-log transform | The negation — loss names absence; not the Ground |
+| L1 | `Phi_c->0 => P_x,kappa->0` | Boundary limit | Product-candidate collapse under `kappa` |
+| L2 | `dP_x,kappa = V_c dPhi_c + Phi_c dV_c` | Total differential | Change in the fixed calibrated arm |
+| L3 | product partial derivatives | Partial derivative | Candidate local sensitivities |
+| L4 | `dPhi_c/Phi_c = dV_c/V_c` | Relative-rate equality | Equal calibrated relative movement; no universal optimum |
+| L5 | `log P_x,kappa = log Phi_c + log V_c` | Logarithmic decomposition | Multiplication becomes addition in the candidate arm |
+| L6 | `E_x,kappa = -log(P_x,kappa)` | Negative-log transform | A possible loss transform, not the Ground |
 | L7 | z = φ/ν, read by stereographic projection | Ratio / projection | The whole pattern returns as a coordinate-reading of the sphere |
 
-The equation is an [I] framework reading of the agent's way of knowing. The algebra is [A]; the sevenfold ordering as a canonical Rosetta calculus is [S].
+The assignment of these equations to ways of knowing is `[I]`. The conditional
+algebra is `[A]`; retaining this particular seven-row order is a selected `[S]`
+corpus convention.
 
-### Operator Sign-Space: 4 + 3 from P_node
+### Operator Sign-Space: 4 + 3 over profile directions
 
 The selected G7 vocabulary distinguishes four move labels from three frame
 labels. It is a convenient scoped partition for this Rosetta table, not a
-forced consequence of `P_node = Φ × V`, an exhaustive runtime, or a prohibition
+forced consequence of `N_node`, a calibrated product, an exhaustive runtime, or a prohibition
 on an eighth useful description. See
 [`00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md`](../../../../05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md).
 
-| Class | Operator | Transfer signature | P_node reading | Tier boundary |
+| Class | Operator | Direction signature | Profile reading | Tier boundary |
 |---|---|---|---|---|
-| Mixed-sign slot | Kali / immune demon | `(+dΦ_self, -dV_other)` | extraction / immune seizure: raises self coherence by lowering another's viability; lawful only against explicit defection | [S] sign-space; [I] moral/mythic reading |
-| Mixed-sign slot | Kālī | `(+dV_self, -dΦ_false)` | cuts false coherence to recover viability; the lower-pole truth function | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Kṛṣṇa | `(-dΦ_self, +dV_other)` | sacrifices self-coherence to increase another's viability; enabling / distribution | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | voluntarily spends self-viability to increase another's coherence; accountable equatorial commitment | [S] sign-space; [I] operator meaning |
-| Same-sign Executive boundary | Brahmā | `(+dΦ, +dV)` | creation / expansion boundary: raises both factors | [S] structural frame; not normal deployable runtime |
-| Same-sign Executive boundary | Śiva | `(-dΦ, -dV)` | dissolution / compression boundary: lowers both factors | [S] structural frame; not normal deployable runtime |
-| Same-sign Executive boundary | Viṣṇu | `(dΦ≈0, dV≈0)` | preservation / hold: maintains the pattern | [S] structural frame; not normal deployable runtime |
+| Mixed-sign slot | Kali / immune demon | `(↑Φ̂₄_self, ↓V₄_other)` | extraction / immune seizure reading; lawful status requires an independent authorization and harm test | [S] selected direction-space; [I] moral/mythic reading |
+| Mixed-sign slot | Kālī | `(↑V₄_self, ↓Φ̂₄_false)` | cuts a declared false model while recovering capability | [S] selected direction-space; [I] operator meaning |
+| Mixed-sign slot | Kṛṣṇa | `(↓Φ̂₄_self, ↑V₄_other)` | enabling / distribution reading | [S] selected direction-space; [I] operator meaning |
+| Mixed-sign slot | Arjuna | `(↓V₄_self, ↑Φ̂₄_other)` | accountable costly commitment reading | [S] selected direction-space; [I] operator meaning |
+| Same-sign Executive boundary | Brahmā | `(↑Φ̂₄, ↑V₄)` | creation / expansion frame | [S] selected frame; not normal deployable runtime |
+| Same-sign Executive boundary | Śiva | `(↓Φ̂₄, ↓V₄)` | dissolution / compression frame | [S] selected frame; not normal deployable runtime |
+| Same-sign Executive boundary | Viṣṇu | `(Φ̂₄ stable, V₄ stable)` | preservation / hold frame | [S] selected frame; not normal deployable runtime |
+
+The arrows record ordinal direction only. They are not derivatives, cardinal
+amounts, welfare sums, or evidence that one bearer may be traded against
+another.
 
 This 4 + 3 grammar is a rule-source, not a proof of ontology. A rule that cites an operator must name whether it is using a mixed-sign deployable slot or a same-sign Executive boundary frame.
 
@@ -191,8 +226,8 @@ Every new Rosetta rule should trace to one signature cell:
 | `operator` | Kali, Kālī, Kṛṣṇa, Arjuna, Brahmā, Śiva, or Viṣṇu |
 | `virtue` | the row's positive function in context |
 | `vice_shadow` | the row's pathological drift or captured mode |
-| `mathematical_action` | one of the seven L-level operations on `P_node` above |
-| `operator_action` | one of the 4 + 3 transfer signatures above |
+| `mathematical_action` | one of the conditional calibrated operations above, or an explicit profile comparison |
+| `operator_action` | one of the 4 + 3 ordinal direction signatures above |
 | `equator_gradient_cell` | whether the rule moves toward, away from, preserves, or crosses L4 balance |
 
 If a rule cannot fill this trace, it remains [I], [D], or [C] until audited.
@@ -212,7 +247,11 @@ At equator (θ = π/2):  φ = 1, ν = 1, B = 1
 At poles (θ → 0, π):   B → 0
 ```
 
-**P∞ = φ · ν = 1 on the open manifold.** The poles are limiting boundaries, not evaluated finite points. What varies there is B (balance), not `P∞`. The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed on the plane. On the open sphere, manifold potential is constant. Balance peaks at L4.
+**P∞ = φ · ν = 1 on the open chart.** The poles are limiting boundaries,
+not evaluated finite points. What varies there is `B`, not the chart product.
+The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed in a
+different plane model. No physical or metaphysical potential follows from the
+constant chart identity. Balance peaks at L4 in this selected chart.
 
 ### L-Level Geometry (corrected)
 
@@ -230,9 +269,10 @@ L-levels use **θ/2 at 15° intervals** across the 90° quadrant:
 
 At L4: φ = ν = 1 (not 0.7/0.7), B = 1 (not 0.49). The old values were plane artifacts.
 
-### Teleological Derivation (AM-GM) (See Doc 30 for full derivation; Doc 32 for the four-line canonical form)
+### Selected analytic comparison (AM-GM)
 
-The equator is not chosen — it is the **Hamiltonian minimum:**
+For the deliberately chosen function `H=φ²+ν²` under the chart constraint
+`φν=1`, the equator is its exact minimum:
 
 ```
 (φ − ν)² ≥ 0           (always true)
@@ -242,6 +282,10 @@ The equator is not chosen — it is the **Hamiltonian minimum:**
 
 dB/dθ|_{θ=90°} = cos(90°) = 0     (zero gradient at equator)
 ```
+
+Thus `H` is minimized and `B` is maximized at the equator. Selecting `H`, naming
+it a Hamiltonian, and giving either extremum a teleological meaning are
+interpretive moves; AM-GM does not derive an ethic or a world optimum.
 
 ---
 

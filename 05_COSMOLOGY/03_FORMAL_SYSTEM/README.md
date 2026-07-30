@@ -81,18 +81,24 @@ does not force a count of reality registers, transitions, or natural laws.
 
 Files `08_EFR_*` through `20_EFR_*` are EFR-specific technical surfaces. Plain numbered files from `21_*` onward are broader framework-formal surfaces, compatibility pointers, measurement specs, or theorem-upgrade infrastructure. The current pass preserves filenames in place; do not rename or archive files from this folder unless a structural reorganization phase is explicitly opened.
 
-## Canonical Order Note
+## Analytic Floor Note
 
 This directory is **downstream** of the framework's canonical order:
 
 ```text
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0,π)
+φ = cot(θ/2)
+ν = tan(θ/2)
+φ · ν = 1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
 
-The formal-system files codify and test that order. They do not replace the seed, the core state, or Empirical Observation as primary disclosure.
+These identities hold on the declared nonzero reciprocal chart. At the poles,
+inversion swaps `0` and `∞`; no endpoint product is defined. The older
+Zero-Sum infix is a retired emblem, not part of the analytic floor. The
+formal-system files codify and test this boundary; they do not turn it into an
+ontology or ethic.
 
 ## See Also
 
@@ -100,7 +106,7 @@ The formal-system files codify and test that order. They do not replace the seed
 - [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md) — the canonical compression block the axiom layer must inherit verbatim
 - [`00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`](../../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md) — disclosure-first bridge; doctrine is downstream of it
 - [`../01_THE_TRANSCENDENTAL_TRINITY/README.md`](../01_THE_TRANSCENDENTAL_TRINITY/README.md) — active Trinity narrative surface; archived Trinity files are provenance, not current authority
-- [`PD_10_IS_OUGHT.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md) — ethical implications derived from the formal system
+- [`PD_10_IS_OUGHT.md`](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_10_IS_OUGHT.md) — superseded historical projection; no is-to-ought derivation remains current
 
 
 ---
@@ -120,4 +126,4 @@ The formal-system files codify and test that order. They do not replace the seed
 *The framework works at Layer 0 without Layer 2.*
 *The Brāhmaṇa succeeds when the student puts down the map and walks.*
 
-*Zero-Sum Resolution Equation*
+*The chart identity stays inside its chart.*

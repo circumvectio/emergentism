@@ -23,7 +23,7 @@ rosetta:
 
 ## THE COMPLEX PLANE AS ν-φ CHART SPACE
 
-> **Important caveat:** Both φ and ν are real positive numbers. The constraint φ·ν = 1 defines a hyperbola in R^2_+, not a curve in C. The complex plane notation `z = ν + i·φ` is used for visual convenience and stereographic projection, not because `i` plays a role in the dynamics. Uppercase `Φ` and `V` are reserved for the later finite-node action score `P_node = Φ × V`.
+> **Important caveat:** Both φ and ν are real positive numbers. The constraint φ·ν = 1 defines a hyperbola in R^2_+, not a curve in C. The complex plane notation `z = ν + i·φ` is used for visual convenience and stereographic projection, not because `i` plays a role in the dynamics. Uppercase `Φ` and `V` are reserved for the separate finite-node profile `N_node=(Φ̂₄,V₄)`; a scalar needs its own calibration contract.
 
 ### 1.1 The Coordinate System
 

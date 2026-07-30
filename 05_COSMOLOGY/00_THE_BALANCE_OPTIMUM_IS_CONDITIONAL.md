@@ -8,7 +8,7 @@ rosetta:
   register: "[A/I/C]"
   canonical_phrase: "Balance optimality requires a declared constraint"
 title: "The Balance Optimum Is Conditional"
-status: "ACTIVE KINTSUGI SUCCESSOR — notation and transfer repaired 2026-07-21"
+status: "ACTIVE KINTSUGI SUCCESSOR — calibration boundary repaired 2026-07-30"
 evidence_tier: "[A] declared optimization results; [I] model reading; [C] fit to real systems"
 supersedes_blob: "4548607a4ea9a236a0a36e87119991f3fb38ff66"
 depends_on:
@@ -40,39 +40,46 @@ These are identities on the selected chart `[A]`. The product is constant by
 definition; it is not an empirical conservation law, a resource budget, or
 evidence for a real optimum.
 
-The finite-node model uses typed uppercase powers and a present evaluation:
+The finite-node source types use uppercase powers and a present evaluation:
 
 ```text
-Φ₅∈[0,1]                    D5 possible power
-Φ̂₄=Eval₄(M,Φ₅)∈[0,1]      present D4 evaluation
-V₄∈[0,1]                   D4 actual power
-P_node=Φ̂₄V₄,
+Φ₅                           D5 possible power
+Φ̂₄=Eval₄(M,Φ₅)∈O_Φ         present D4 evaluation on an ordered domain
+V₄∈O_V                      D4 actual power on an ordered domain
+N_node=(Φ̂₄,V₄)             live two-axis profile
 ```
 
-The public expression `ΦV` abbreviates this typed model; it does not multiply
-an unrealized possibility directly. The product is a selected conjunctive model
-`[I/C]`, not a consequence of the lowercase chart.
+Componentwise Pareto comparison survives independent monotone
+reparameterizations of the two axes. A product does not. Only after a
+calibration contract supplies cardinal scales, meaningful zeros and units,
+admissible transformations, uncertainty and cross-factor comparability may an
+application define `Φ_c=c_Φ(Φ̂₄)`, `V_c=c_V(V₄)` and the candidate
+`P×=Φ_cV_c`. The historical expression `ΦV` abbreviates joint necessity only;
+it neither multiplies an unrealized possibility directly nor supplies a
+ranking. The product candidate is `[I/C]`, not a consequence of the lowercase
+chart or a default scalar.
 
 ## 2. The fixed-sum theorem `[A]`
 
 If a separately declared domain imposes the binding budget
 
 ```text
-Φ̂₄+V₄=c,  c>0,
+Φ_c+V_c=c,  c>0,
 ```
 
 then AM–GM gives
 
 ```text
-P_node=Φ̂₄V₄≤c²/4,
+P×=Φ_cV_c≤c²/4,
 ```
 
-with equality exactly at `Φ̂₄=V₄=c/2`. Moving away from that point along the
+with equality exactly at `Φ_c=V_c=c/2`. Moving away from that point along the
 fixed-sum line lowers the product. The budget premise—not the product and not
 `φν=1`—does the constraining work.
 
-If the budget is normalized to `c=1`, then `Φ̂₄=1` entails `V₄=0` and
-`P_node=0`. Without the budget, `Φ̂₄=1` entails only `P_node=V₄`. Thus “a
+If the calibrated budget is normalized to `c=1`, then `Φ_c=1` entails `V_c=0`
+and the selected structural-zero product returns `P×=0`. Without the budget,
+`Φ_c=1` entails only `P×=V_c`. Thus “a
 maximal present evaluation leaves no means” is a conditional resource
 hypothesis, not a sphere identity and not a claim that D5 possible power itself
 consumes D4 resources.
@@ -87,7 +94,7 @@ The equatorial ratio is not universal:
 | excess can be stored at negligible cost | surplus may create a plateau rather than a downslope |
 | factors substitute | a corner or broad ridge may outperform balance |
 | task rewards specialization | imbalance may be optimal |
-| asymmetric Cobb–Douglas exponents `a,b>0` under `Φ̂₄+V₄=c` | optimum satisfies `Φ̂₄/V₄=a/b`, equal only when `a=b` |
+| asymmetric Cobb–Douglas exponents `a,b>0` under `Φ_c+V_c=c` | optimum satisfies `Φ_c/V_c=a/b`, equal only when `a=b` |
 
 Friction, maintenance, analysis paralysis, or unused-capacity costs may make
 excess harmful, but each mechanism needs a measurable native-domain variable.
@@ -97,7 +104,8 @@ Examples and analogies are not evidence that a given system pays the cost.
 
 Before applying the balance theorem to a real system, declare:
 
-1. how `Φ₅` is defined, how `Φ̂₄` evaluates it, and how `V₄` is measured and normalized;
+1. how `Φ₅` is defined, how `Φ̂₄` evaluates it, how `V₄` is measured, and the
+   cardinal calibration contract for `Φ_c,V_c`;
 2. the actual feasible set or budget surface;
 3. whether the factors are complements or substitutes;
 4. the price and storage cost of excess;
@@ -112,12 +120,12 @@ balanced even when the real system's optimum lies elsewhere.
 ## 5. Kill criteria
 
 - A fixed-sum, symmetric product model whose maximum is not `c²/4` at
-  `Φ̂₄=V₄=c/2` would kill the analytic claim.
+  `Φ_c=V_c=c/2` would kill the analytic claim.
 - Failure to measure the budget or factor costs kills the empirical transfer,
   not AM–GM.
 - A preregistered rival that predicts held-out outcomes better kills the
-  selected node model in that domain.
-- Any inference from `φν=1` to `Φ̂₄+V₄=c`, physical conservation, or ethics is a
+  calibrated product candidate in that domain.
+- Any inference from `φν=1` to `Φ_c+V_c=c`, physical conservation, or ethics is a
   type failure and must be withdrawn.
 
 **Current authority:** the [Canonical Formula

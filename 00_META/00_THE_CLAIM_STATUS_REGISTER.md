@@ -25,9 +25,9 @@ parents:
 
 > A tier says **how strong** a claim's warrant is. A status says **how it
 > currently stands**. The corpus had the first axis and not the second, so one
-> word — *dead* — was carrying eight different epistemic states at once. This
-> register separates them, and in doing so reopens every grave that can honestly
-> be reopened.
+> word — *dead* — was carrying several epistemic states at once. This register
+> separates them, preserves every grave, and routes any renewed inquiry through
+> a different question ID.
 
 This surface routes. It creates no doctrine, owns no claim, and promotes
 nothing. Where it disagrees with a semantic owner, the owner wins and this file
@@ -65,8 +65,7 @@ explicitly "not truth labels." This register does not replace it.
 | `OPEN-FORMAL` | well-posed formal question; neither proved nor refuted | work, at `[C]` |
 | `OPEN-EMPIRICAL` | well-posed empirical claim; discriminator and kill named; test unrun | preregistration, at `[C]` |
 | `COMPONENT-SUPPORTED` | neighbouring evidence exists for a *component*; the integrated claim does not inherit it | careful citation that names the gap |
-| `NARROWED` | the strong form failed; a named weaker form survives and is live under its own owner | citation of the weaker form only |
-| `OWNER-REOPENED` | a terminal row restored to **active investigation** by owner ruling, with its counterexample intact | work on the *question*; **never** citation of the refuted form as true |
+| `NARROWED` | the strong form failed; a named weaker form survives under its own ID or owner while the parent retains its terminal status | citation of the weaker form only |
 
 ### Terminal statuses
 
@@ -85,27 +84,25 @@ explicitly "not truth labels." This register does not replace it.
 > **never** return to a live status *as the claim it was*. Its counterexample
 > stays attached, permanently and visibly.
 
-**Exactly three moves are lawful**, and no fourth exists:
+**Exactly two successor moves are lawful**:
 
 | Move | Requires | Restores |
 |---|---|---|
-| `NARROWED` | a **named weaker form**, live under its own owner | citation of the weaker form only |
+| a named weaker successor | its own ID or owner, with the weakening explicit | citation of the weaker form only; the parent remains terminal |
 | a new `RQ` row | new ID · the weakening or retyping stated against the parent · the parent's counterexample carried · a discriminator · a kill · a survivor | a *different* question |
-| `OWNER-REOPENED` | **all four**: an owner **ruling receipt on disk** · the **counterexample intact** · the **`status_before_reopening`** recorded · a declared **`repair_path`** | **active investigation only** — never the truth of the refuted form |
 
-The four preconditions on `OWNER-REOPENED` are not ceremony. They are the entire
-defence against silent thawing, and the validator enforces every one of them.
-**A ruling can reopen a question; it cannot delete a counterexample.**
+An owner ruling may authorize work on a successor or new question. That is a
+workflow act, not a validation status, and it supplies no evidence. **A ruling
+can authorize inquiry; it cannot thaw a grave or delete a counterexample.**
 
 This is not conservatism. It is the whole content of E9 and Refusal 5. Without
 it, "work in progress" becomes the mechanism by which a fired kill is quietly
 logged as a pass — dead form **DF-22**, the exact move A7 exists to forbid.
 
-### The reopening protocol `[S]`
+### The investigation protocol `[S]`
 
-A **new `RQ` row** — the second of the three lawful moves in §2 — requires all five
-of the following. (This is the protocol for *opening a new question*; it is not the
-route by which an existing terminal row changes status, which is `OWNER-REOPENED`.)
+A **new `RQ` row** requires all five of the following. There is no route by which
+an existing grave changes to a live validation status.
 
 1. a **new ID** (the old row is not edited);
 2. the **weakening or retyping** stated explicitly against the refuted form;
@@ -113,7 +110,7 @@ route by which an existing terminal row changes status, which is `OWNER-REOPENED
 4. a **discriminator** — what observation or proof would distinguish it from its strongest rival;
 5. a **kill criterion** and the **survivor** if it fires.
 
-Anything less is not a reopening. It is the parent claim wearing a new coat.
+Anything less is not a new investigation. It is the parent claim wearing a new coat.
 
 ---
 
@@ -141,7 +138,7 @@ licenses an ontology, an ethic, a conservation law, or a node-power result.
 | `FV-15` | `G7=M4⊎F3` has exactly seven symbols | **by construction of the declared vocabulary** | `[S]` |
 | `FV-16` | under closure + `E−R≥ε>0` + strictly increasing `Q=f(S)`: `S(t₁)≤S(t₀)−ε(t₁−t₀)`, and substrate-supported extractor power falls | declared interval, all three premises | `[S]` |
 | `FV-17` | `support(K_X^C) ⊆ support(K_X)` — higher constraints reweight, never manufacture, admissible trajectories | declared constraint model | `[S]` |
-| `FV-18` | under budget `Φ̂₄+V₄≤1`: `Φ̂₄=1 ⟹ V₄=0 ⟹ P_node=0` | **only** with the budget premise declared | `[S]` |
+| `FV-18` | under a declared calibrated budget `Φ_c+V_c≤1`: `Φ_c=1 ⟹ V_c=0`; any selected AND candidate with structural zero then returns `0` | **only** with the calibration, budget and structural-zero premises declared | `[S]` |
 
 **`FV-12` is load-bearing and easy to misread.** It is a proof of
 *non-uniqueness*. It is the counterexample that killed `DF-04`, not support for
@@ -178,29 +175,23 @@ refutes. A vow is kept or abandoned, never proved.
 
 ## 5 · The graves, adjudicated — `DF-01…DF-22`
 
-> **Owner ruling, 2026-07-29 (receipt 174), corrected by receipt 177: 21 of the 22
-> rows are `OWNER-REOPENED`.** `DF-14` was already `NARROWED` — a live status — so
-> it was not reopened; r174's "all 22" was over-broad by exactly one row.
-> The status column below records what each was reopened *from*, preserved per
-> row as `status_before_reopening`. Every counterexample stands unchanged and
-> every row now carries a `repair_path`. Reopening restores active
-> investigation, never asserted truth — a ruling can reopen a question, it
-> cannot delete a counterexample. Of the three lawful moves in §2,
-> `OWNER-REOPENED` is the only one by which **a terminal row itself** returns to
-> a live status — `NARROWED` assigns a different status, and an `RQ` row is a new
-> row, not this one. It requires a ruling receipt on disk, an intact
-> counterexample, a recorded prior status, and a repair path; the validator
-> enforces all four.
+> **Correction to the 2026-07-29 owner-instruction interpretation.** Receipt 174
+> authorizes renewed inquiry; it does not change validation status and supplies
+> no evidence. All 22 `DF` rows retain the terminal adjudications that recorded
+> what failed. Distinct `RQ` rows carry renewed questions, discriminators and
+> kills. The checker now rejects every live status on a grave, even when an owner
+> receipt exists.
 >
-> Separately, the three **Titan equations** are restored by *proof* rather than
-> ruling — see `TR-01` and
+> Separately, `TR-01` records the typed survivors of the retired Titan equations.
+> It is `NARROWED`, not restored arithmetic: inversion swaps the two poles, the
+> equator is invariant as a set, and the reciprocal product identity holds only
+> on the nonzero interior chart. See
 > [`45_THE_TITAN_INVERSION_STRUCTURE.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md).
 
 Every dead form from [K-7 §2](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)
-is here with its status, what actually killed it, and where its live successor
-sits. **This is the resurrection**: fourteen of the twenty-two already have a
-live successor carrying the honest weaker claim, and eight get a newly opened
-question in §6.
+is here with its status, what actually killed it, and where a distinct successor
+or investigation sits. This is inquiry without resurrection: twelve rows route
+to an existing weaker owner claim and ten route to new grave-derived `RQ` rows.
 
 | ID | Dead form | Status | What killed it | Live successor |
 |---|---|---|---|---|
@@ -208,7 +199,7 @@ question in §6.
 | `DF-02` | ethic-as-theorem | `CATEGORY-ERROR` | is→ought bypass by redefinition | `E8` vow + `W6` conditional lemma |
 | `DF-03` | seven-as-forced / Rosetta-universal | `EMPIRICALLY-REFUTED` | planetary confound; one lineage (r130, r132) | `W10` inherited grammar |
 | `DF-04` | product-uniqueness as keel | `FORMALLY-REFUTED` | `FV-12` — min instantiates the same boundary | `W3` product interior |
-| `DF-05` | `φν=1` as conserved discovery | `CATEGORY-ERROR` | coordinate identity read as world law | **none — closed.** `FV-01` is the surviving use |
+| `DF-05` | `φν=1` as conserved discovery | `CATEGORY-ERROR` | coordinate identity read as world law | **RQ-10** — independently defined-variable question; `FV-01` remains the chart identity |
 | `DF-06` | balance hump as empirical law | `EMPIRICALLY-REFUTED` | Munnell trough; GFS retracted | `W5` + **RQ-01** (instrument) |
 | `DF-07` | the squid as `η=0` witness | `EMPIRICALLY-REFUTED` | *D. gigas* panmictic, semelparous, weak-targeting | **RQ-02** (new witness search) |
 | `DF-08` | literal `D6≡D0` | `FORMALLY-REFUTED` | loop-as-equation fails | `W12`, `D6≈roleD0` |
@@ -217,40 +208,37 @@ question in §6.
 | `DF-11` | `N=3`-forced | `FORMALLY-REFUTED` | explicit `ℤ₅` counterexample; the group lemma is false | **RQ-03** (any forcing hypotheses?) |
 | `DF-12` | Gödel universal lift | `FORMALLY-REFUTED` | Presburger and real-closed fields are complete and decidable | `E9` as apparatus, not law |
 | `DF-13` | three substrates minimum | `EMPIRICALLY-REFUTED` | one human martyr satisfies the framework's own falsifier | **RQ-04** (weak) |
-| `DF-14` | frame/operand exclusivity for ordinary numbers | `NARROWED` | ordinary identities are operands | `KSC-04` — opaque `TitanFrame` by explicit type |
+| `DF-14` | frame/operand exclusivity for ordinary numbers | `FORMALLY-REFUTED`; disposition `NARROWED` | ordinary identities are operands | `KSC-04` — opaque `TitanFrame` by explicit type |
 | `DF-15` | convergence-as-proof | `CATEGORY-ERROR` | fifteen renderings of one shape are one datum | **RQ-05** (lineage independence) |
 | `DF-16` | "extraction is irrational" as Nash | `FORMALLY-REFUTED` in general | private side-payments break it | `W6`; Model A remains valid **in Model A** |
 | `DF-17` | civilizational physics | `NOT-WELL-POSED` | `[C]` analogy asserted as physics | **RQ-06** |
 | `DF-18` | "dissolves Hard Problem / is-ought / death / free will" | `NOT-WELL-POSED` | unfalsifiable frame-trick; mechanism asserted | Human Condition §11 — re-posed as open |
 | `DF-19` | ektropy / F5 as teleological force | `FORMALLY-REFUTED` | `(φ−ν)²` supplies no trajectory | `W7e` + **RQ-07** (declare a dynamics) |
 | `DF-20` | numeric coincidences as derivations | `CATEGORY-ERROR` | overlay, not derivation; horn-torus killed by r151 | **RQ-08** |
-| `DF-21` | **CC-CORE-1** — kernel → ethics warrant | `FORMALLY-REFUTED` | the seam holds precisely *off* the catastrophe case | **none — closed.** `E8` is a choice |
+| `DF-21` | **CC-CORE-1** — kernel → ethics warrant | `FORMALLY-REFUTED` | the seam holds precisely *off* the catastrophe case | **RQ-11** — explicit normative-bridge question; `E8` remains a choice |
 | `DF-22` | Rosetta kill-criterion mislabel | `PROCESS-DEFECT` | a fired falsifier was logged as a pass | routed to `E9` enforcement, not to a wager |
 
 ### What the adjudication shows
 
 | Count | Status | Rows |
 |---|---|---|
-| **10** | `FORMALLY-REFUTED` — counterexample inside the claim's own system; one-way, hardest class | `DF-01, 04, 08, 09, 10, 11, 12, 16, 19, 21` |
+| **11** | `FORMALLY-REFUTED` — counterexample inside the claim's own system; one-way, hardest class | `DF-01, 04, 08, 09, 10, 11, 12, 14, 16, 19, 21` |
 | **4** | `EMPIRICALLY-REFUTED` — the *instance* is closed; a new instance may be sought | `DF-03, 06, 07, 13` |
 | **4** | `CATEGORY-ERROR` — no evidence repairs these; only retyping does | `DF-02, 05, 15, 20` |
 | **2** | `NOT-WELL-POSED` — neither validated nor refuted until re-posed | `DF-17, 18` |
-| **1** | `NARROWED` — weaker form already live | `DF-14` |
 | **1** | `PROCESS-DEFECT` — never a claim | `DF-22` |
 
-By successor: **12** already had a live successor under an existing owner, **8**
-get a newly opened question in §6, and **2** are closed with no successor.
-
-Only `DF-05` and `DF-21` are **closed**, and both for the same reason: they are
-the seam-is-not-the-score error stated twice. Everything else either already had
-a live successor or gets one below.
+By successor: **12** route to an existing weaker owner claim and **10** route to
+grave-derived investigations in §6. `RQ-09`, descended from open wager `W1`, is
+separate. Every parent grave remains terminal.
 
 ---
 
-## 6 · `RQ-01…RQ-09` — the newly opened questions
+## 6 · `RQ-01…RQ-11` — separate investigations
 
-These satisfy the §2 reopening protocol. Each is `[C]`, each is weaker or
-retyped relative to its dead parent, and each carries the parent's counterexample.
+These satisfy the §2 investigation protocol. Each is `[C]`, carries
+`investigation_state: OPEN`, and has its own discriminator, kill and survivor.
+None inherits a parent's former strength.
 
 | ID | Question | Parent | Why the parent's kill does not reach it | Discriminator | Kill |
 |---|---|---|---|---|---|
@@ -263,6 +251,8 @@ retyped relative to its dead parent, and each carries the parent's counterexampl
 | `RQ-07` | Under what **declared dynamics** does `(φ−ν)²→0`? | `DF-19` | the static theorem `(φ−ν)²≥0` is `[A]`; the parent's error was inferring a trajectory from it with no dynamics at all | state a dynamics, derive the trajectory, then test it | no dynamics makes the trajectory non-trivial → ektropy stays buried |
 | `RQ-08` | Does any numeric overlay **predict** something not already known? | `DF-20` | the parent claimed derivation; this asks only for novel prediction | one held-out quantitative prediction from the overlay | none → overlays are mnemonic at most |
 | `RQ-09` | Can `REACHABLE` be defined **non-circularly**? | `W1` (never a grave; the framework's own named `∅` debt) | this is the load-bearing open debt of `E4`, not a resurrection | a definition from declared initial conditions, allowed transformations, and finite/convergent resource bounds that excludes some target | no non-circular definition → the plenitude wager collapses to redescription and `E4` must say so |
+| `RQ-10` | Do independently defined variables support a **non-tautological reciprocal conservation** claim? | `DF-05` | the parent promoted a coordinate identity; independently defined measurements need not inherit that tautology | preregister both variables and beat coordinate/normalization nulls on held-out data | dependence on reciprocal definition or failed held-out discrimination → retain only `FV-01` |
+| `RQ-11` | Can an explicit **normative bridge** connect description or form to Justice without hidden normativity? | `DF-21` | the parent concealed the normative premise; a new argument must declare every such premise and face metaethical rivals | valid derivation from explicit premises plus strongest-rival comparison | undeclared normativity, equivocation or collapse to stipulation → retain `E8` as chosen vow |
 
 `RQ-09` is not a grave. It is included because it is the single largest unpaid
 debt in the corpus and belongs on the same board as everything else.
@@ -274,7 +264,7 @@ debt in the corpus and belongs on the same board as everything else.
 - It does not upgrade any claim. Appearing here is not evidence.
 - It does not create an eighth kernel surface. K-1…K-7 own the content.
 - It does not soften a counterexample into a "perspective."
-- It does not let a reopened question inherit its parent's old strength.
+- It does not let a successor investigation inherit its parent's old strength.
 - It does not treat the *absence* of a kill as support.
 
 ### Kill criterion for this register — **it fired, and is recorded, not reworded away**
@@ -286,48 +276,35 @@ The original criterion read:
 > this surface has done the exact damage it was built to prevent, and it should
 > be deleted rather than repaired.*
 
-**It fired on 2026-07-29.** Receipt 174 moved all 22 grave rows to
-`OWNER-REOPENED` — a live status — with no new IDs and no new discriminators.
-Recorded here in the open, because a fired kill quietly logged as a pass is
-`DF-22`, and this register exists to forbid exactly that.
-
-**Why the surface is repaired rather than deleted.** The criterion tested for
-the wrong thing. It asked for a *new ID*; the damage it names is a
-**counterexample vanishing**. No counterexample vanished: all 22 rows retain
-theirs, plus their prior status and a declared repair path, under a ruling
-receipt on disk. The criterion was written before `OWNER-REOPENED` existed and
-could not see a lawful mechanism when one arrived. That is a defective test, not
-a defective act — so the test is replaced and the firing stays on the record.
+**It fired on 2026-07-29.** Receipt 174 was encoded as moving grave rows to
+`OWNER-REOPENED`, a live status, without new question IDs. The counterexamples
+remained visible, but workflow authority had been confused with validation
+status. That is still the prohibited move. The present correction restores every
+parent's terminal status and places renewed work only in distinct `RQ` rows.
 
 **Amended criterion `[S]`.** This surface has failed, and should be deleted
 rather than repaired, if any of the following is ever true:
 
-1. a terminal row appears in a live status **with its counterexample removed,
-   emptied, or softened**;
-2. an `OWNER-REOPENED` row lacks any of its four preconditions — ruling receipt
-   on disk, intact counterexample, recorded `status_before_reopening`, declared
-   `repair_path`;
-3. a reopened row is **cited as evidence that the refuted form is true**, rather
-   than as an open question;
-4. this criterion is ever narrowed, weakened, or deleted **without a dated
+1. any grave appears in a live status, regardless of owner authorization;
+2. a grave's terminal status, counterexample or process defect is removed,
+   emptied, softened or silently relabelled;
+3. an investigation lacks a new ID, parent relation, discriminator, kill or
+   survivor, or is cited as evidence that the parent is true;
+4. a narrowed Titan survivor is promoted back into arithmetic or
+   `FORMALLY-VALID`; or
+5. this criterion is ever narrowed, weakened, or deleted **without a dated
    receipt recording that it fired**.
 
-**What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
-`check_claim_status.py`, hardened and re-tested on 2026-07-29 against seven
-adversarial mutations (receipt 177). **But nothing invokes it automatically** —
-there is no CI job, no hook, no runner. Earlier wording here and in receipts
-172/174/175/176 called it "fail-closed" and said mutations "fail the build";
-**there is no build**, and the checker is advisory until a gate exists. **Clauses 3
-and 4 are not machine-checkable.** No validator can see a row being *cited* as
-evidence elsewhere in the corpus, and none can compel a future editor to record
-that this criterion fired before weakening it.
-
-Clause 4 is therefore the one that matters most and the one with the least
-protection. It rests on whoever edits this page next.
+**What is actually enforced, stated honestly.** `check_claim_status.py` checks
+the terminal baseline, contiguous future graves, separate RQ state and fields,
+parent/successor reciprocity, authorization custody and the typed Titan survivor.
+Eleven mutation tests exercise those constraints. It cannot determine whether a
+future author cites an RQ as evidence or whether a prose paraphrase softens a
+counterexample; those remain review duties.
 
 **Machine check:** [`claim_status/CLAIM_STATUS.yaml`](claim_status/CLAIM_STATUS.yaml)
 carries these rows in the corpus JSON-subset form; run
 `python3 09_TOOLS/01_SCRIPTS/check_claim_status.py` to enforce the one-way rule,
-the reopening protocol, and cross-reference integrity against K-4 and K-7.
+the investigation protocol, and cross-reference integrity against K-4 and K-7.
 
 •   ⊙   ○ — *a grave with a door is still a grave; the door only opens outward, onto a different question.*

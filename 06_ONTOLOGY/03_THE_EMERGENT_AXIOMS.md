@@ -173,9 +173,17 @@ the wager ledger and supplies no axiom warrant.
 
 ---
 
-### E6 · The AND-Law `[S]` boundary · zero-absorption `[A]` inside declared models · product interior `[C]`
+### E6 · The conditional AND-boundary `[S]` · zero-absorption `[A]` inside declared models · product interior `[C]`
 
-For a declared model in which every listed factor is necessary, usable potential reaches its zero boundary when **any one** necessary factor reaches zero. Product and minimum instantiate that boundary exactly; other aggregators require their own parameter and limit checks. The operational survivor is the **AND-class**, **not the product specifically** (keel-108). Manifold identity does **not** warrant a world-level node catastrophe (CC-CORE-1).
+For a declared model in which every listed factor is necessary and its
+calibration contract supplies meaningful structural zeros, usable potential
+reaches its zero boundary when **any one** necessary factor reaches zero.
+Product and minimum instantiate that boundary exactly; other aggregators
+require their own parameter and limit checks. The operational survivor under
+those premises is an **AND-class**, **not the product specifically**
+(keel-108). Without them the profile and its componentwise Pareto order remain
+the baseline. Manifold identity does **not** warrant a world-level node
+catastrophe or select a scalar (CC-CORE-1).
 
 **Forbids:** “must be multiplicative”; kernel-as-ethics-floor.
 
@@ -183,7 +191,8 @@ For a declared model in which every listed factor is necessary, usable potential
 
 **Survivors:** E2 chart; weaker coupling heuristics.
 
-**Maps from:** A1 Zero-Factor / P_node — **recovered form**.
+**Maps from:** A1 Zero-Factor / historical `P_node` — **conditional boundary
+survivor only; no recovered default scalar**.
 
 ---
 

@@ -16,29 +16,41 @@ have been declared.
 
 ## 1. Durable potential
 
-For bearer `x` over horizon `T`, define a declared nonnegative potential score
-`P_x(t)` and its durable integral:
+For bearer `x` over horizon `T`, an application may define a declared
+nonnegative potential score `P_x(t)` and its durable integral only after naming
+its measurement and calibration contract:
 
 ```text
 W_x(T) = ∫₀ᵀ P_x(t) dt.
 ```
 
-When the finite-node product is selected,
+Before such calibration, retain the typed profile
 
 ```text
-P_x(t) := P_node,x(t) = Φ̂₄,x(t)V₄,x(t),
+N_x(t) := (Φ̂₄,x(t),V₄,x(t))
+```
+
+and compare it componentwise. If a calibrated application selects the
+finite-node product candidate,
+
+```text
+P_x(t) := P×,x(t) = Φ_c,x(t)V_c,x(t),
 ```
 
 where `Φ₅` is D5 possible power, `Φ̂₄` is its present D4 evaluation, and `V₄`
-is D4 actual power or usable means. The familiar `P_node=ΦV` is the public
-shorthand for this typed bridge. The product is one declared normalized
-conjunctive model, not a uniquely forced world law. A different validated
-potential model may be substituted if its type and evidence are explicit.
+is D4 actual power or usable means, while `Φ_c,V_c` are their declared
+calibrated images. Product, minimum and other conjunctive
+aggregators are candidate models, not default consequences of the types. The
+historical `ΦV` mnemonic says only that both factors matter; it supplies no
+ranking, cardinal scale or measure of worth. A scalar candidate may be used
+only if its meaningful zeros and units, cross-factor comparison, uncertainty,
+domain, rival and kill criterion are explicit.
 
 ## 2. Justice-admissible actions
 
 Let `i` be the acting individual, `H` the sustaining whole, and `B(a)` the
-complete materially affected bearer set for action `a`. Define:
+complete materially affected bearer set for action `a`. When calibrated scalar
+durable potentials `W_i,W_H` exist, define:
 
 ```text
 A_J = {a :
@@ -48,6 +60,10 @@ A_J = {a :
   and no bearer in B(a) is hidden or destroyed by aggregation
 }.
 ```
+
+Without calibrated scalars, replace both `ΔW≥0` clauses by componentwise
+non-deterioration of the declared profiles; incomparable cases survive for the
+explicit contestable tie-breaker rather than being silently scalarized.
 
 `J` requires at least:
 
@@ -61,13 +77,22 @@ A_J = {a :
 Justice defines the feasible field. Maximization does not create or justify
 that field.
 
-## 3. The selected objective
+## 3. The selected ordering discipline
+
+Justice-admissible actions are first compared over their visible per-bearer and
+per-horizon potential profiles. Remove Pareto-dominated actions. Because the
+survivors are generally only partially ordered, any further selector must be
+declared, contestable and unable to override another bearer's boundary.
+
+Only when a calibrated scalar `W_i` has been declared may the older shorthand
+serve as a local tie-breaker among those survivors:
 
 ```text
 a* ∈ argmax_(a∈A_J) E_(M_t)[W_i(T) | a].
 ```
 
-This is a conditional design rule. If `A_J` is empty, it licenses no action.
+This is a conditional tie-breaker, not the definition of Power-Max. If `A_J` is
+empty, it licenses no action.
 If the maximum is not attained, use a declared `ε`-optimal action only when a
 finite supremum exists and the Justice constraints still hold. Model
 uncertainty and distributional harms must remain visible.
@@ -79,16 +104,18 @@ their usefulness in the world is conjectural `[C]`.
 
 ## 4. What coupling proves—and does not prove
 
-For a toy coupled network,
+For a toy coupled network with calibrated factors, `j≠i`, and `Φ_i>0`,
 
 ```text
 V_eff(i)=(1-λ)V_i+λ<V>,  0<λ≤1
 P_eff(i)=Φ_i V_eff(i),
-∂P_eff(i)/∂V_j=λΦ_i/N > 0.
+∂P_eff(i)/∂V_j=λΦ_i/N > 0,
+∂²P_eff(i)/(∂Φ_i∂V_j)=λ/N > 0.
 ```
 
-The positive cross-partial proves monotone interdependence **inside that
-model**. It does not prove cooperation is optimal. In a one-shot zero-sum
+The first quantity is a positive cross-agent derivative; the second is the
+cross-partial. They prove monotone interdependence **inside that model**. They
+do not prove cooperation is optimal. In a one-shot zero-sum
 transfer `ΔV` from `j` to `i`, the mean `<V>` is unchanged and, for `λ<1`,
 
 ```text
@@ -143,7 +170,8 @@ coercion, concealed subsidy, or higher-row extraction from lower rows.
 
 ## 5. Syntropic Dyadism
 
-With all bearer and Justice conditions still explicit:
+In a calibrated application where the named scalar durable potentials exist,
+and with all bearer and Justice conditions still explicit:
 
 ```text
 Moral(a)

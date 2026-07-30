@@ -187,9 +187,14 @@ Their philosophical mapping is `[I]` unless independently tested.
 
 ## 5. Emergentism-native results that survive
 
-### R1. AND-class correction `[S]`
+### R1. Conditional AND-class correction `[S]`
 
-Zero-collapse and binding-constraint behavior select a need-both/AND-class boundary; they do not uniquely force multiplication. Product-specific interior claims remain `[C]`.
+If a domain model first declares all factors necessary and a calibration
+contract supplies meaningful structural zeros, zero-collapse narrows admissible
+scalar candidates to a need-both/AND-class boundary. It does not require a
+scalar, uniquely select multiplication, or transfer from the reciprocal chart.
+Product-specific interior claims remain `[C]`; without the stated premises the
+component profile remains primary.
 
 **Source:** receipt 108; receipt 126 `:26-29`.
 
@@ -236,7 +241,8 @@ Keep separate from the worldview kernel:
 
 - S² as the literal territory of reality — `[I]` wager;
 - Ground → Being → Teleological Force → Dasein → beings — theological/ontological interpretation, not theorem;
-- `P_node=Φ×V` — representative finite-node model, with AND-class boundary only;
+- `N_node=(Φ̂₄,V₄)` — typed finite-node profile; every scalar aggregator needs
+  a declared cardinal calibration and remains an application model;
 - equator = objective good — ethical/teleological reading, not mathematical consequence;
 - Rosetta/caste/god/Titan naming — interpretive and operational translation grammar;
 - councils, signers, foundations, products, organs, fees, ledgers, and launches — governance/application surfaces, not philosophical axioms;

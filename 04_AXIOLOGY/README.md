@@ -88,8 +88,9 @@ active doctrinal authority.
 
 - The moral and ethical formulae are `[S]` inside their declared definitions;
   they do not derive an ought from mathematics alone.
-- `P_node=ΦV` is the selected normalized Emergentist instance of a broader
-  conjunctive family, not the uniquely forced measure of value.
+- `N_node=(Φ̂₄,V₄)` keeps the factors separate. Any scalar conjunctive model
+  requires explicit calibration and remains a contestable application; neither
+  a profile nor a score is a measure of human value.
 - Sphere-chart identities are analytic facts only; they do not prove ethics.
 - The deity, warrior, and equator language is `[I]` translation.
 - Consequential action uses an `AuthorizationEnvelope`; ordinary reversible AI

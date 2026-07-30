@@ -8,7 +8,7 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); chronology current through 176; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+status: "ACTIVE — all 22 graves retain terminal status; separately numbered investigations remain open; chronology current through 176 with r174 superseded in status effect; external calibration and deployment open"
 date: 2026-07-29
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
@@ -55,29 +55,31 @@ evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 
 Receipt 131 §9. When a proof-form dies, its load-bearing *uses* do not die with it — but the ledger, not "almost always," decides each case, and the named dead stay dead **as the claims they were**. **Derivation-death is not idea-death.** The record's job is to keep both facts visible at once: the proof is buried *and* the use is preserved, each at its own tier. The knife cut proof-status; it did not cut the organism.
 
-**Amended 2026-07-29 (receipt 174).** All 22 rows below are now `OWNER-REOPENED` as **active questions**, with every counterexample intact. This does not soften "the named dead stay dead": ℤ₅ still refutes the stated `N=3` lemma, Presburger still refutes the Gödel lift, electroweak unification still collapses the D2/D3 split, *D. gigas* is still panmictic. **A ruling can reopen a question; it cannot delete a counterexample.** What changed is standing, not truth.
+**Corrected 2026-07-29 after receipt 174.** Authorization to investigate does
+not alter a terminal validation status. All 22 named forms remain in their
+graves with their counterexamples intact. New questions proceed only under
+separate `RQ-*` identifiers, discriminators and kills; a grave never thaws.
 
 ---
 
 ## 2 · The kill index with grave dates (22 dead forms)
 
-> **Status banner — receipt 174, 2026-07-29.** Every row in this table is now
-> `OWNER-REOPENED`: restored to **active investigation**, never to asserted truth.
-> **The table below is unchanged and must stay so** — no "Why dead" cell is
-> edited and no grave date is removed, because the counterexample is the thing
-> the reopening is required to preserve. Current status, prior status,
-> `repair_path` and the four preconditions live in the live register, not here.
+> **Status banner — terminal graves, 2026-07-29.** Every row retains its terminal
+> status. The table below is unchanged and must stay so: no "Why dead" cell is
+> edited and no grave date is removed. Separately authorized investigations live
+> under `RQ-*` IDs in the live register and supply no evidence for their parents.
 >
 > **Live status owner:** [`00_META/00_THE_CLAIM_STATUS_REGISTER.md`](../../00_META/00_THE_CLAIM_STATUS_REGISTER.md)
 > · machine form [`00_META/claim_status/CLAIM_STATUS.yaml`](../../00_META/claim_status/CLAIM_STATUS.yaml)
 > · validator `09_TOOLS/01_SCRIPTS/check_claim_status.py`.
 >
-> Two rows carry a standing caution. **Row 5** (`φ·ν=1` as a conserved discovery)
-> and **row 21** (CC-CORE-1) are reopened with **no successor** — both are the
-> seam-is-not-the-score error stated twice, and none may be invented for them.
-> **Row 9** (forced Titan-3) stays dead as *forcing*; the three Titan identities
-> were separately restored **by proof** on `Ĉ` (doc 45, `TR-01`), which is a
-> different claim and does not revive this row.
+> Two rows route to genuinely new questions. **Row 5** (`φ·ν=1` as a conserved
+> discovery) routes to `RQ-10`, which asks about independently defined variables.
+> **Row 21** (CC-CORE-1) routes to `RQ-11`, which asks whether an explicit
+> normative bridge can survive rival metaethics. **Row 9** (forced Titan-3)
+> remains dead. `TR-01` is only a `NARROWED` survivor: inversion swaps the poles,
+> preserves the equator as a set, and interior reciprocal coordinates multiply
+> to one; endpoint products and Titan infix arithmetic remain retired.
 
 Historical registry, preserved as provenance: `00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`
 is a **forwarding stub** to `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/`;
@@ -123,7 +125,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 
 | № | Receipt | What it fired / recorded |
 |---|---|---|
-| 108 | Formal stress ledger — keel resolution | AND-class forcing, **not** the product; the "one unwon wager" is operationally weightless. |
+| 108 | Formal stress ledger — keel resolution | Under declared need-both and structural-zero premises, AND-class narrowing, **not** a default scalar or unique product; the "one unwon wager" is operationally weightless. |
 | 109 | Proof-layer audit — four false lemmas | Killed `φ·ν=1`=Born, the triadic group lemma, the LV "attractor," "all paths helical." |
 | 126 | Weltanschauung formal audit (2026-07-13) | 7 settled / 66 broken / 34 synthetic-gap; A7 survived reflexively. |
 | 127 | Transmission doctrine | Users-not-believers; the confessing posture as strategy. |
@@ -167,7 +169,7 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 171 | `171_WORKTREE_TIDY_2026_07_23.md` | Worktree tidy; repository hygiene only, no doctrine touched. |
 | 172 | `172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md` | Validation status installed as a **second axis** beside evidence tier; all 22 dead forms adjudicated into typed statuses with counterexamples cited. |
 | 173 | `173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md` | **First V-axis audit.** r126 measured Φ; nobody had measured V. 155 receipts, **zero outcome receipts returned from outside**; under the corpus's own AND-class law `P ≈ 0`. The binding constraint is contact. |
-| 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | **Owner ruling: all 22 dead forms → `OWNER-REOPENED`**, counterexamples intact, each with a `repair_path`. Separately, the three Titan identities restored **by proof** on `Ĉ`; `KSC-04` preserved. |
+| 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | Historical owner instruction authorizing renewed inquiry. Its `OWNER-REOPENED` status effect and claim of three restored Titan equations are superseded by the terminal-grave protocol, `RQ-01…RQ-11`, and `TR-01`'s narrowed typed survivors; `KSC-04` remains binding. |
 | 175 | `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` | Sphere primacy ruled and executed; the number line shown to be the `ι`-invariant **meridian** of the sphere, so nothing was lost by it; arithmetic becomes chart-local; Suda adopted at tier. |
 | 176 | `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` | `R0` "no necessary being" adopted into K-5 as the foundational **refusal**, prior to the five and different in type; `KSC-28` recorded. Later restratified — the base is the three relations; the sphere is emergent. |
 

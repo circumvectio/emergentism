@@ -34,9 +34,15 @@ def current_reader_contract() -> dict[str, Any]:
     if not isinstance(work, dict):
         raise ValueError("book manifest has no BK-ONE-SITTING work")
 
-    source = (CORPUS_ROOT / "13_BOOKS" / work["historical_sources"][0]).resolve()
+    source_record = work["historical_sources"][0]
+    if not isinstance(source_record, dict):
+        raise ValueError("book manifest historical source must be a pinned source record")
+    source = (CORPUS_ROOT / "13_BOOKS" / source_record["path"]).resolve()
     source_rel = source.relative_to(CORPUS_ROOT).as_posix()
-    source_revision = f"sha256:{_sha256(source)}"
+    source_sha256 = _sha256(source)
+    if source_record.get("reviewed_source_sha256") != source_sha256:
+        raise ValueError("book manifest historical source revision is stale")
+    source_revision = f"sha256:{source_sha256}"
     parity_contract = parity.get("claimCardContract", {})
     if parity_contract.get("sourceRevision") != source_revision:
         raise ValueError("public semantic parity source revision is stale")
@@ -74,6 +80,17 @@ def current_reader_contract() -> dict[str, Any]:
 
 def apply_contract(manifest: dict[str, Any]) -> dict[str, Any]:
     result = dict(manifest)
+    withheld = _load(SITE_ROOT / "withheld-routes.json")
+    withheld_hrefs = {
+        row["manifestDocument"]["href"]
+        for row in withheld.get("artifacts", [])
+        if isinstance(row.get("manifestDocument"), dict)
+        and row["manifestDocument"].get("href")
+    }
+    result["documents"] = [
+        row for row in result.get("documents", [])
+        if row.get("href") not in withheld_hrefs
+    ]
     result["lifecycle"] = "frozen_generated_library"
     result["current_reader"] = current_reader_contract()
     return result

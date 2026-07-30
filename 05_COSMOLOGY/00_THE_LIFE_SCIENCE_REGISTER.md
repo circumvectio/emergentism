@@ -132,7 +132,7 @@ It does make the framework's evidence architecture more scientifically legible.
 | **beings** | Organisms, ecologies, lineages, institutions, technical systems. | [A/I] depending on the claim. |
 | **Pratyakṣa** | In scientific register: disciplined first-person disclosure or trained phenomenological report constrained by physiology, behavior, and method. | [I/A] bridge term; not standalone proof of frontier claims. |
 | **Equator** | The viable operating regime where integration and capability remain jointly sustainable. | [I] biological analogy, not a standard term. |
-| **Operational ektropy (`P_node = Φ × V`)** | Heuristic multiplicative proxy for integration x viability at the node level. | [S/I] framework model, not standard biology. |
+| **Finite-node profile (`N_node=(Φ̂₄,V₄)`)** | Keeps the two proposed factors separate; a product or other scalar is a calibrated heuristic candidate only. | `[I/C]` framework translation, not a standard biological variable or validated score. |
 | **Hidden Hand** | Older metaphor for viability-directed organization in biology. | Prefer teleonomy / self-maintaining regulation when writing for scientists. |
 | **Demiurge / Dyḗus Ph₂tḗr** | Mythic faces of the same field. Dyḗus Ph₂tḗr (Dyeus Phter / Dyaus Pita) is the bright-sky Father face; `h₂r̥tó-` / Ṛta is the ordering-law face. | Not biology. Use only after the scientific register is established. |
 

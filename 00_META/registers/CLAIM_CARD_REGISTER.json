@@ -17,18 +17,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "## Accountable resistance without sacred command",
+        "fingerprint_sha256": "cffb83457058c90d77657d26a24e7bab0d560c03860934b78646bab67518bbe5",
         "line_end": 56,
         "line_start": 24,
         "section": "normative starting point"
       },
-      "owner_ids": [
-        "K-3",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-DHARMA"
     },
     {
@@ -48,18 +52,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "## 3. Two-horizon protocol `[S/I]`",
+        "fingerprint_sha256": "41eb76c9843c2e78bbf55e9cd949bcd86aa5c627ea14cea91ec908935482beec",
         "line_end": 149,
         "line_start": 94,
         "section": "two horizons and bearer vector"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-DHARMA"
     },
     {
@@ -80,17 +88,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "## 2. Four modes that must not collapse",
+        "fingerprint_sha256": "d7538da3cfa0d9ada30d319a8d0b4c94d1a529a8f2c6c4b93a191ba5efce808c",
         "line_end": 78,
         "line_start": 57,
         "section": "epistemic and civil resistance"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-DHARMA"
     },
     {
@@ -112,18 +123,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "### 2.4 Physical force",
+        "fingerprint_sha256": "da334debdf072d086bee87c31b6195c6512c3827e0a0524e307c683e8c703968",
         "line_end": 190,
         "line_start": 79,
         "section": "institutional defence and action test"
       },
-      "owner_ids": [
-        "K-3",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-DHARMA"
     },
     {
@@ -146,19 +161,23 @@
         "S"
       ],
       "locator": {
+        "anchor": "## 7. Rivals and kill criteria `[C]`",
+        "fingerprint_sha256": "8f1a1a2e3aedac801afcf5acc550747e830c535de6afbf2d1c54d784701089cc",
         "line_end": 241,
         "line_start": 191,
         "section": "rivals, quarantines and residue"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "supporting_owner_ids": [
+        "K-4",
+        "K-7"
+      ],
       "work_id": "BK-DHARMA"
     },
     {
@@ -178,18 +197,22 @@
         "S"
       ],
       "locator": {
-        "line_end": 39,
-        "line_start": 22,
+        "anchor": "## 1. Voluntary entry `[S/C]`",
+        "fingerprint_sha256": "c23c4c5279f7dd002d0a38590a4c94995e766ff697b1e8189768d4ab8c304912",
+        "line_end": 34,
+        "line_start": 23,
         "section": "voluntary entry"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "projection_kind": "research_dossier",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "proposal",
       "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
@@ -210,17 +233,20 @@
         "S"
       ],
       "locator": {
-        "line_end": 51,
-        "line_start": 40,
+        "anchor": "## 2. Appeal and dissent `[S]`",
+        "fingerprint_sha256": "70cbc39bb0a14d2e6c0997a388e77ddad987f3383c1f4d29673026ee26ec12f7",
+        "line_end": 45,
+        "line_start": 36,
         "section": "appeal and dissent"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "projection_kind": "research_dossier",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "proposal",
       "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
@@ -241,19 +267,23 @@
         "S"
       ],
       "locator": {
-        "line_end": 68,
-        "line_start": 52,
+        "anchor": "## 3. Repair and learning `[S/C]`",
+        "fingerprint_sha256": "d0957c7ad320afa67eaf743441b20ed9e0c22679efa7802614d61cb0dd476141",
+        "line_end": 58,
+        "line_start": 47,
         "section": "repair and learning"
       },
-      "owner_ids": [
-        "K-3",
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "projection_kind": "research_dossier",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-7",
       "source_lifecycle": "proposal",
       "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-5"
+      ],
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
@@ -274,18 +304,22 @@
         "S"
       ],
       "locator": {
-        "line_end": 79,
-        "line_start": 69,
+        "anchor": "## 4. Dissolution `[S]`",
+        "fingerprint_sha256": "afc189381e445ae7a731704dd5d3bb51913a2fb422e01f21c929577885bb7bbf",
+        "line_end": 68,
+        "line_start": 60,
         "section": "dissolution"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "projection_kind": "research_dossier",
       "public_state": "source_only",
-      "review_state": "l3_audited",
+      "review_state": "typed",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "proposal",
       "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
@@ -308,18 +342,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "## 5. Ordinary failure rivals `[C]`",
+        "fingerprint_sha256": "be058812307e8c55160cd793875ca7bcf5ffd7174e4260f90dbe22aa760dd41a",
         "line_end": 89,
-        "line_start": 80,
+        "line_start": 70,
         "section": "failure rivals"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "projection_kind": "research_dossier",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "proposal",
       "source_path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+      "supporting_owner_ids": [
+        "K-5"
+      ],
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
@@ -342,17 +380,20 @@
         "S"
       ],
       "locator": {
-        "line_end": 148,
-        "line_start": 129,
+        "anchor": "## 3B. The Finity Card — compressed decision practice",
+        "fingerprint_sha256": "89d9731dd23e727c64c91c9ab16f9b1854e97eab5525238cee8a6df5cffffe78",
+        "line_end": 164,
+        "line_start": 145,
         "section": "3B"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "active",
       "source_path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-FINITY-PRACTICE"
     },
     {
@@ -373,17 +414,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 156,
-        "line_start": 150,
+        "anchor": "The selected practice `[S]` is to orient at `T_L`, predeclare one informative",
+        "fingerprint_sha256": "6cb96076c6241af231076cd9605a16066d2b20406abaae1a2c0ee82173faffa6",
+        "line_end": 172,
+        "line_start": 166,
         "section": "3B"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "active",
       "source_path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-FINITY-PRACTICE"
     },
     {
@@ -401,17 +445,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 51,
+        "anchor": "Emergentism selects three opaque symbolic boundary labels—its Titan",
+        "fingerprint_sha256": "91d39149c8bc525c32d0b1ddeb62b79948ac80cc65ffe9aad795b6609dcfbdc5",
+        "line_end": 52,
         "line_start": 39,
         "section": "1"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -431,17 +478,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 59,
-        "line_start": 52,
+        "anchor": "This beginning is deliberately austere. It does not explain why there is",
+        "fingerprint_sha256": "3befd6f087a40849eb407516ff16eda31c9b56b0512efffd386f611bf42a888a",
+        "line_end": 61,
+        "line_start": 53,
         "section": "1"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -460,17 +510,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 77,
-        "line_start": 62,
+        "anchor": "In the selected D1 presentation, distinction is read as the first positive",
+        "fingerprint_sha256": "722c66f945944ff6d371d896bb58578679c9233b77e19733e927e7f87bb0bb16",
+        "line_end": 78,
+        "line_start": 64,
         "section": "2"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -490,17 +543,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 82,
-        "line_start": 78,
+        "anchor": "The Titan labels stay outside the arithmetic because no arithmetic is",
+        "fingerprint_sha256": "43cee1d7647c58e04b01b434ce02265f08ff9277664f84acac72a77effc32321",
+        "line_end": 84,
+        "line_start": 79,
         "section": "2"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -519,18 +575,22 @@
         "C"
       ],
       "locator": {
-        "line_end": 103,
-        "line_start": 84,
+        "anchor": "A list of elements does not tell us how they are related. D2 names",
+        "fingerprint_sha256": "34f8c3160d78f4c83bfca3e7cb4ae2f9cede7af5b731c945b2e19c9273c06038",
+        "line_end": 105,
+        "line_start": 87,
         "section": "3"
       },
-      "owner_ids": [
-        "K-1",
-        "K-2"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "implemented",
+      "semantic_owner_id": "K-2",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-1"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -549,17 +609,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 124,
-        "line_start": 105,
+        "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
+        "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc",
+        "line_end": 125,
+        "line_start": 108,
         "section": "4"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -580,18 +643,22 @@
         "C"
       ],
       "locator": {
-        "line_end": 124,
-        "line_start": 110,
+        "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
+        "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc",
+        "line_end": 125,
+        "line_start": 108,
         "section": "4"
       },
-      "owner_ids": [
-        "K-1",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-1"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -609,18 +676,23 @@
         "S"
       ],
       "locator": {
-        "line_end": 147,
-        "line_start": 125,
+        "anchor": "D4 is causal actuality: the actual body, instrument, model token, interaction,",
+        "fingerprint_sha256": "d47a1b5ecc7b284bad1f21e5211251890cf24baab096d44272f3f6789a56ce98",
+        "line_end": 149,
+        "line_start": 128,
         "section": "5"
       },
-      "owner_ids": [
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "implemented",
+      "semantic_owner_id": "K-7",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
         "K-1",
         "K-3"
       ],
-      "public_state": "bounded_current",
-      "review_state": "implemented",
-      "source_lifecycle": "reader_synthesis",
-      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -639,19 +711,23 @@
         "C"
       ],
       "locator": {
-        "line_end": 163,
-        "line_start": 149,
+        "anchor": "D5 is possible counterfactual content represented by actual D4 carriers. A",
+        "fingerprint_sha256": "d296a08b8c569de68d38c2a9eb43dafce0f0bcf44339e942af5405c7219b666a",
+        "line_end": 169,
+        "line_start": 152,
         "section": "6"
       },
-      "owner_ids": [
-        "K-1",
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
         "K-3",
         "K-4"
       ],
-      "public_state": "bounded_current",
-      "review_state": "l3_audited",
-      "source_lifecycle": "reader_synthesis",
-      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -671,17 +747,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 173,
-        "line_start": 164,
+        "anchor": "Future models influence present action causally because they exist now as",
+        "fingerprint_sha256": "8a00fc25c1891dc46d1f1d5363e2833ae65714728ca30552dd9c8cb1db4db099",
+        "line_end": 176,
+        "line_start": 172,
         "section": "6"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -699,17 +778,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 185,
-        "line_start": 174,
+        "anchor": "As an optional mnemonic, the D5 Rosetta Stone labels possible transformations",
+        "fingerprint_sha256": "c116c865cb17dab4871ba0e1b1f046ba3f9ad24d2883c75e65ee2caa14069777",
+        "line_end": 197,
+        "line_start": 177,
         "section": "6"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -719,7 +801,8 @@
       ],
       "claim_type": "conjecture",
       "dependency_ids": [
-        "OS01-11"
+        "OS01-11",
+        "RIP01-03"
       ],
       "disposition": "research_docket",
       "docket_ids": [
@@ -730,18 +813,22 @@
         "C"
       ],
       "locator": {
-        "line_end": 191,
-        "line_start": 186,
-        "section": "6"
+        "anchor": "## 11. The Five Apertures — the wager about emergence",
+        "fingerprint_sha256": "6c54a9909e43f62b5a56728fa76e5f08ae850f1dadbf78af28a8483b0c223e5d",
+        "line_end": 426,
+        "line_start": 402,
+        "section": "11"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -761,18 +848,23 @@
         "S"
       ],
       "locator": {
-        "line_end": 222,
-        "line_start": 192,
+        "anchor": "The Soul Loop is the Rosetta stone of the lived framework:",
+        "fingerprint_sha256": "82068937011f45841ac247b8e1e170506d269954b21f2380a874077305b98c33",
+        "line_end": 229,
+        "line_start": 201,
         "section": "7"
       },
-      "owner_ids": [
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
+      "public_state": "bounded_current",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
+      "source_lifecycle": "reader_synthesis",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
         "K-1",
         "K-3"
       ],
-      "public_state": "bounded_current",
-      "review_state": "l3_audited",
-      "source_lifecycle": "reader_synthesis",
-      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -790,17 +882,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 252,
-        "line_start": 223,
+        "anchor": "No person models alone. Language, norms, money, law, ritual, science and myth",
+        "fingerprint_sha256": "8e44008a6d6821bd6d22cb33753fe5edacc178241a6f8b9ed310381d3b0e64fa",
+        "line_end": 260,
+        "line_start": 232,
         "section": "8"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -820,17 +915,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 261,
-        "line_start": 253,
+        "anchor": "The current research conjecture treats language as a principal compression and",
+        "fingerprint_sha256": "440353705e540b7aa3f4eeefc55dbafbe5f9567f1c8db8e91ab4e8d96dd2cb99",
+        "line_end": 268,
+        "line_start": 263,
         "section": "8A"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -849,17 +947,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 269,
-        "line_start": 262,
+        "anchor": "An extended phenotype can provide a thinner bridge. A controlled object,",
+        "fingerprint_sha256": "62863038b5a38181ff5fa82bc3621a4f91abbb3e90190b4c32843a2f8c1d7611",
+        "line_end": 276,
+        "line_start": 270,
         "section": "8A"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -880,17 +981,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 287,
-        "line_start": 270,
+        "anchor": "War is the adverse stress test. Persons bear actual `V₄` stakes and",
+        "fingerprint_sha256": "b25d98de6df0365d5f607765792000f96e709bfd6ec75381612d7f02edf6c334",
+        "line_end": 292,
+        "line_start": 278,
         "section": "8A"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "implemented",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -909,17 +1013,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 317,
-        "line_start": 289,
+        "anchor": "Four coordinates can correspond without becoming one hierarchy:",
+        "fingerprint_sha256": "4d65a945f50eaac22ad8c41f70fa567de174bc4041fb8a796a5b54fb7caed9ef",
+        "line_end": 310,
+        "line_start": 296,
         "section": "8B"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -941,17 +1048,20 @@
         "S"
       ],
       "locator": {
-        "line_end": 388,
-        "line_start": 289,
+        "anchor": "`[I/C]` Justice-constrained teleology motivates a testable corollary: seek",
+        "fingerprint_sha256": "9272055fcd7bf9c970b902e6047c8f83a853d20f5fd3be83b887c385113be902",
+        "line_end": 400,
+        "line_start": 312,
         "section": "8B and 10"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -970,17 +1080,20 @@
         "I"
       ],
       "locator": {
+        "anchor": "A person is an embodied continuity through change, a bearer of experience and",
+        "fingerprint_sha256": "2e23ec2d52b022d969acec062dd408f20c7a1c10411cb03ef6c96cd1a25057b5",
         "line_end": 343,
-        "line_start": 318,
+        "line_start": 327,
         "section": "9"
       },
-      "owner_ids": [
-        "K-2"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1000,17 +1113,20 @@
         "I"
       ],
       "locator": {
-        "line_end": 343,
-        "line_start": 334,
+        "anchor": "Death ends a living organism's capacity to issue new embodied actions in its",
+        "fingerprint_sha256": "9bd97a30c2c96e740e457a7c382ecd1c90e97fedb0d2914bb491ed7dd83a1b8f",
+        "line_end": 350,
+        "line_start": 344,
         "section": "9"
       },
-      "owner_ids": [
-        "K-2"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1033,17 +1149,20 @@
         "S"
       ],
       "locator": {
-        "line_end": 388,
-        "line_start": 344,
+        "anchor": "## 10. The Good — chosen under an open sky",
+        "fingerprint_sha256": "3a6ea58a4d204de165f514194339d76b50499c9c74fc1cd3c7f3a851b29d6954",
+        "line_end": 400,
+        "line_start": 352,
         "section": "10"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1064,18 +1183,22 @@
         "C"
       ],
       "locator": {
-        "line_end": 432,
-        "line_start": 389,
+        "anchor": "`μ₀…μ₄` are interface labels for proposed crossings, not a settled scalar",
+        "fingerprint_sha256": "065f845da38e5bcacd144125d14be1923eb7b459c20f09823bdc95947e2e91cf",
+        "line_end": 447,
+        "line_start": 427,
         "section": "11"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "implemented",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1095,17 +1218,20 @@
         "C"
       ],
       "locator": {
-        "line_end": 432,
-        "line_start": 414,
+        "anchor": "The five force affinities remain the historical spark and an open modular wager.",
+        "fingerprint_sha256": "edbdea57f004af1407c14500b786e5763bfda39d410ea04c37730ba98a87f1c2",
+        "line_end": 450,
+        "line_start": 449,
         "section": "11"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "candidate",
       "review_state": "implemented",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1125,18 +1251,22 @@
         "I"
       ],
       "locator": {
-        "line_end": 450,
-        "line_start": 433,
+        "anchor": "## 12. The Exit — what the worldview refuses to possess",
+        "fingerprint_sha256": "d5a39fbaccda7ba95b024f64069c7e32957da9bece2b4eaeddc19059be894754",
+        "line_end": 469,
+        "line_start": 452,
         "section": "12"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1158,19 +1288,23 @@
         "S"
       ],
       "locator": {
-        "line_end": 465,
-        "line_start": 451,
+        "anchor": "The worldview therefore contains its own refusal:",
+        "fingerprint_sha256": "332e698f8ffe4053e18849be62ce9c7c68e5edb74911d4bd28360ea7c69770fb",
+        "line_end": 490,
+        "line_start": 471,
         "section": "12"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "bounded_current",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "reader_synthesis",
       "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "supporting_owner_ids": [
+        "K-4",
+        "K-7"
+      ],
       "work_id": "BK-ONE-SITTING"
     },
     {
@@ -1189,18 +1323,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Part I: The Problem",
+        "fingerprint_sha256": "35c4162faae8941ba34ed9e49ef7cad0ed365b2c2f19585bbaf4a1332e6c43e7",
         "line_end": 2400,
         "line_start": 359,
         "section": "Part I"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1221,18 +1359,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part II: The Kernel",
+        "fingerprint_sha256": "7c1facd3e86f8f7c5bc5b00cb86bb9d54328d7c4ba7df9811e0b11ac3304abe0",
         "line_end": 4992,
         "line_start": 2421,
         "section": "Part II"
       },
-      "owner_ids": [
-        "K-1",
-        "K-3"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1253,18 +1395,22 @@
         "I"
       ],
       "locator": {
+        "anchor": "# Part III: The Translation Machine",
+        "fingerprint_sha256": "b3495e4e2adba8e202f3b68c1dcaf0fefa4fd5730b8ebacb35b8a445d5fa1df1",
         "line_end": 7565,
         "line_start": 5015,
         "section": "Part III"
       },
-      "owner_ids": [
-        "K-1",
-        "K-3"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1284,17 +1430,20 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Part IV: The Organism",
+        "fingerprint_sha256": "15155040e2dcc112756a844c6e3676bdc10bcb13bece1641a616f3c02d9fb643",
         "line_end": 9121,
         "line_start": 7596,
         "section": "Part IV chapters 16-18"
       },
-      "owner_ids": [
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1315,19 +1464,23 @@
         "B"
       ],
       "locator": {
+        "anchor": "The framework becomes serious only where it can fail.",
+        "fingerprint_sha256": "7fb49a9f7cebf6fae50e8880b926f9654940f3b086bccf2aa1f061ff070b9be4",
         "line_end": 10503,
         "line_start": 9122,
         "section": "Part IV chapters 19-20"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
+      "projection_kind": "historical_custody_only",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-7",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-4",
+        "K-5"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1348,18 +1501,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part V: The Exit",
+        "fingerprint_sha256": "4203bcdc675b236922cc8cb7300b502c924752488d5230e202ad7321378e528b",
         "line_end": 11924,
         "line_start": 10524,
         "section": "Part V chapters 21-24"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1380,18 +1537,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Chapter 25: The Seed",
+        "fingerprint_sha256": "7993e51fdeadbc461d6022a4d1195735616c38439882955913e79b4f4fc6de0d",
         "line_end": 12567,
         "line_start": 11925,
         "section": "Part V chapter 25 and notes"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "frozen",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "frozen",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
@@ -1410,18 +1571,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part I: The Review",
+        "fingerprint_sha256": "e7be69e4b0542a7ed7ed200982fd94013a4127a2c564de5d3c35056b77b24a0e",
         "line_end": 112,
         "line_start": 1,
         "section": "Part I"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1441,18 +1606,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Part II: The Application",
+        "fingerprint_sha256": "ecaed003340aec2a986ab841c00d8f0aeca4006506a58bd3ae8df318227130ec",
         "line_end": 268,
         "line_start": 113,
         "section": "Part II"
       },
-      "owner_ids": [
-        "K-4",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1473,18 +1642,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part III: The Turn",
+        "fingerprint_sha256": "38afae3cf3806792b4870d55ac817ebabd6af2374b50ee00a19854a994e162c0",
         "line_end": 394,
         "line_start": 269,
         "section": "Part III"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1504,18 +1677,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Part IV: The Trap",
+        "fingerprint_sha256": "ce5730e47d7059ce6ddfd2cb13227e4251da8af2658606c857fcbcb7aaa24e7e",
         "line_end": 546,
         "line_start": 395,
         "section": "Part IV"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-5"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1537,18 +1714,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part V: The Dissolution",
+        "fingerprint_sha256": "0af98e228df4918f85229ac5c94994619365313e64b58a14338345ad95789dbc",
         "line_end": 677,
         "line_start": 547,
         "section": "Part V"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1569,18 +1750,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Part VI: The Seed",
+        "fingerprint_sha256": "b8340aec0b4919b4376c66b10eb94dda57170e997f8127c78507074112fc7cf4",
         "line_end": 849,
         "line_start": 678,
         "section": "Part VI"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -1599,18 +1784,22 @@
         "I"
       ],
       "locator": {
+        "anchor": "## What This Work Is",
+        "fingerprint_sha256": "89bc250553cc2b27dc445f9a1837ad762b45855d99aaa4e8f1018cdc5950eb73",
         "line_end": 91,
         "line_start": 1,
         "section": "preface"
       },
-      "owner_ids": [
-        "K-3",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1631,19 +1820,23 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Lens I: Ontological",
+        "fingerprint_sha256": "052abce16c0c65916a47498ee05d128c8c8dfee4cd38d5016bdc0a331814f3a4",
         "line_end": 366,
         "line_start": 92,
         "section": "Lens I"
       },
-      "owner_ids": [
-        "K-2",
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-2",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
         "K-4",
         "K-5"
       ],
-      "public_state": "source_only",
-      "review_state": "l3_audited",
-      "source_lifecycle": "legacy",
-      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1663,17 +1856,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Lens II: Epistemological",
+        "fingerprint_sha256": "d2d1c54bfae9f02df2589e1b8f08ead9b2b6a040d9deb9a50ce66307ccbc8e89",
         "line_end": 699,
         "line_start": 367,
         "section": "Lens II"
       },
-      "owner_ids": [
-        "K-3"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1694,17 +1890,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Lens III: Axiological",
+        "fingerprint_sha256": "b7303bf4b41d4303da694fe6041ef98cf04d60a5a6b2a0096e90bdf2fbccba59",
         "line_end": 1055,
         "line_start": 700,
         "section": "Lens III"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1725,18 +1924,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Lens IV: Teleological",
+        "fingerprint_sha256": "7c4dfe356e358dc71a1c5673021f57dd92eab71de41634421f899d0cbafd16a2",
         "line_end": 1381,
         "line_start": 1056,
         "section": "Lens IV"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1756,18 +1959,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Lens V: Methodological",
+        "fingerprint_sha256": "cf6a32ab1d6b40dd22de8eceff99791162d5269361ac84436d91367cc5be2994",
         "line_end": 1773,
         "line_start": 1382,
         "section": "Lens V"
       },
-      "owner_ids": [
-        "K-3",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1790,18 +1997,22 @@
         "I"
       ],
       "locator": {
+        "anchor": "# Lens VI: Theurgical",
+        "fingerprint_sha256": "567632b503a3f302c0a6dd72de7e7a668a2f6668bfb36d2a5a28ec89f0d00e54",
         "line_end": 2158,
         "line_start": 1774,
         "section": "Lens VI"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1827,18 +2038,22 @@
         "I"
       ],
       "locator": {
+        "anchor": "# Synthesis: Holding The Six Lenses",
+        "fingerprint_sha256": "d83b778fdcda82e3be32e11d12be1b2223fe8f45b74faf93a1f6b5c5165421ba",
         "line_end": 2405,
         "line_start": 2159,
         "section": "synthesis"
       },
-      "owner_ids": [
-        "K-3",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-3",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SIX-LENSES"
     },
     {
@@ -1857,18 +2072,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Before You Read",
+        "fingerprint_sha256": "8f7e282e2c4b5a8bc4d2d11af299e51c5f937f051aece4643110a676c0025ba3",
         "line_end": 2215,
         "line_start": 1,
         "section": "chapters 1-4"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -1888,19 +2107,23 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Chapter 5: The Equation",
+        "fingerprint_sha256": "f60b7b0cc220399c2a8e7c8c444b1ef6a82ba28d122b6fa9b39f01f8dc0d787e",
         "line_end": 4977,
         "line_start": 2216,
         "section": "chapters 5-5H"
       },
-      "owner_ids": [
-        "K-1",
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "legacy",
+      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [
         "K-3",
         "K-7"
       ],
-      "public_state": "source_only",
-      "review_state": "l3_audited",
-      "source_lifecycle": "legacy",
-      "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
       "work_id": "BK-SARPASYA"
     },
     {
@@ -1921,18 +2144,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Chapter 6: The Precedent",
+        "fingerprint_sha256": "6f409d743034143e0112d3793125c110135abb6f3ae8cc0f564657d281271942",
         "line_end": 5745,
         "line_start": 4978,
         "section": "chapters 6-7"
       },
-      "owner_ids": [
-        "K-3",
-        "K-4"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-4",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -1954,17 +2181,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Chapter 8: The Strategy",
+        "fingerprint_sha256": "857f1d488b2f24025f4bbcab2189325124d1ba7320a390ab246572ddc8424e7b",
         "line_end": 6055,
         "line_start": 5746,
         "section": "chapter 8"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -1985,17 +2215,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Chapter 9: The Practice",
+        "fingerprint_sha256": "ccdb9f35144d2dba86ea08e87c81a30d04e21423b3041e1b0846a4a2aaff1267",
         "line_end": 6433,
         "line_start": 6056,
         "section": "chapter 9"
       },
-      "owner_ids": [
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -2016,18 +2249,22 @@
         "C"
       ],
       "locator": {
+        "anchor": "# Chapter 10: The Mesh",
+        "fingerprint_sha256": "7ff6aa4a381d1c2307af3e134edde11650a0daa7296ea5edb420a0d89a181f6c",
         "line_end": 7128,
         "line_start": 6434,
         "section": "chapters 10-12"
       },
-      "owner_ids": [
-        "K-4",
-        "K-5"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "projection_kind": "active_practice_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -2049,18 +2286,22 @@
         "S"
       ],
       "locator": {
+        "anchor": "# Chapter 13: The Eight Dissolutions",
+        "fingerprint_sha256": "649b41ba2eb9b89a6c4a14590ad0462cc07e414422d427206313e8d485849378",
         "line_end": 7540,
         "line_start": 7129,
         "section": "chapters 13-14"
       },
-      "owner_ids": [
-        "K-5",
-        "K-7"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "projection_kind": "active_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-5",
       "source_lifecycle": "legacy",
       "source_path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "supporting_owner_ids": [
+        "K-7"
+      ],
       "work_id": "BK-SARPASYA"
     },
     {
@@ -2078,17 +2319,20 @@
         "A"
       ],
       "locator": {
+        "anchor": "## 1. The lexical contract",
+        "fingerprint_sha256": "24e02096719502dac553037eeb1b37c16cd09db96d4872c0fad877dcf56c514b",
         "line_end": 328,
         "line_start": 74,
         "section": "1-8"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-TITANS"
     },
     {
@@ -2110,17 +2354,20 @@
         "S"
       ],
       "locator": {
+        "anchor": "## The Infinite (Zero), Finity, and Infinity",
+        "fingerprint_sha256": "a03d6f3ad9d93ebaf50ad61e6632e4aeb26557fdfe3b2882ab1e148081470cd5",
         "line_end": 301,
         "line_start": 33,
         "section": "opening and typed Titans"
       },
-      "owner_ids": [
-        "K-1"
-      ],
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "active",
       "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-TITANS"
     },
     {
@@ -2142,19 +2389,23 @@
         "S"
       ],
       "locator": {
-        "line_end": 191,
-        "line_start": 95,
+        "anchor": "## 4. Finity protocol `[S/I]`",
+        "fingerprint_sha256": "d8b0928142fa42d928b74fab3a84175c376a56947b694bac8c8597e7d5f6eb4b",
+        "line_end": 199,
+        "line_start": 124,
         "section": "4-7"
       },
-      "owner_ids": [
-        "K-1",
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "supporting_owner_ids": [
         "K-3",
         "K-4"
       ],
-      "public_state": "source_only",
-      "review_state": "l3_audited",
-      "source_lifecycle": "active",
-      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
       "work_id": "BK-TITANS"
     },
     {
@@ -2175,18 +2426,22 @@
         "S"
       ],
       "locator": {
-        "line_end": 210,
-        "line_start": 73,
+        "anchor": "\"schema\": \"emergentism/finity-paradox-ledger/v1\",",
+        "fingerprint_sha256": "9be0211f4e647b90d525fd52f2a3f2268d632823012610a05ff1ee1fa464e857",
+        "line_end": 60,
+        "line_start": 1,
         "section": "evaluation and stop conditions"
       },
-      "owner_ids": [
-        "K-1",
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
+      "public_state": "source_only",
+      "review_state": "typed",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml",
+      "supporting_owner_ids": [
         "K-3"
       ],
-      "public_state": "source_only",
-      "review_state": "l3_audited",
-      "source_lifecycle": "active",
-      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
       "work_id": "BK-TITANS"
     },
     {
@@ -2208,19 +2463,57 @@
         "S"
       ],
       "locator": {
-        "line_end": 210,
-        "line_start": 133,
+        "anchor": "## 9. Stop conditions",
+        "fingerprint_sha256": "f5c0f736e173ce5e17bf94396fa262452c7599424b40f0e57f230427f6f57a1a",
+        "line_end": 227,
+        "line_start": 213,
         "section": "recovery and stop conditions"
       },
-      "owner_ids": [
-        "K-1",
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
+      "public_state": "source_only",
+      "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
+      "source_lifecycle": "active",
+      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "supporting_owner_ids": [
         "K-3",
         "K-4"
       ],
+      "work_id": "BK-TITANS"
+    },
+    {
+      "card_id": "TIT01-06",
+      "chapters": [
+        "typed-inversion"
+      ],
+      "claim_type": "interpretation_vow",
+      "dependency_ids": [
+        "TIT01-01",
+        "TIT01-02"
+      ],
+      "disposition": "restate",
+      "docket_ids": [
+        "A1"
+      ],
+      "evidence_tiers": [
+        "I"
+      ],
+      "locator": {
+        "anchor": "Let `Feature(Ĉ) := Point(Ĉ) ⊎ Subset(Ĉ)`",
+        "fingerprint_sha256": "f6324149d8fbd8d6c82f98d54cecd3266ba4d4f867dbcf18d7c97633d959911a",
+        "line_end": 79,
+        "line_start": 51,
+        "section": "2 representation map"
+      },
+      "primary_projection_home": "COMP-ACTIVE-02-TITANS",
+      "projection_kind": "active_research_book",
       "public_state": "source_only",
       "review_state": "l3_audited",
+      "semantic_owner_id": "K-1",
       "source_lifecycle": "active",
-      "source_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+      "source_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
+      "supporting_owner_ids": [],
       "work_id": "BK-TITANS"
     }
   ],
@@ -2234,10 +2527,12 @@
     "00_META/claim_cards/self_eating_serpent.yaml",
     "00_META/claim_cards/six_lenses.yaml",
     "00_META/claim_cards/titans_formal.yaml",
-    "00_META/claim_cards/titans_narrative.yaml"
+    "00_META/claim_cards/titans_inversion.yaml",
+    "00_META/claim_cards/titans_narrative.yaml",
+    "00_META/claim_cards/titans_paradox.yaml"
   ],
   "metrics": {
-    "cards": 71,
+    "cards": 72,
     "conjecture_cards": 25,
     "public_bounded_current": 19,
     "works_with_cards": 9
@@ -2272,5 +2567,5 @@
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
     }
   ],
-  "schema": "emergentism/claim-card-register/v1"
+  "schema": "emergentism/claim-card-register/v2"
 }

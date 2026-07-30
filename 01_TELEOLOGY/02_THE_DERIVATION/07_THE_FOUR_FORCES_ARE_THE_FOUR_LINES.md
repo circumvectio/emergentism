@@ -137,15 +137,18 @@ The lowercase chart and uppercase node model must remain separate:
 
 ```text
 chart:  φν=1; φ→∞ => ν→0 and B→0
-node:   P_node=ΦV
+node:   N_node=(Φ̂₄,V₄), compared componentwise by Pareto dominance
 ```
 
 The chart says one-sided extremity preserves its stipulated reciprocal identity
 while balance vanishes. It does not say perfect foresight consumes all physical
-means. That node-level conclusion follows only under an additional finite-budget
-premise such as `Φ+V≤1`. Under that premise, allocating the entire normalized
-budget to `Φ` leaves `V=0`, so `P_node=0`: total representation without means is
-operationally equivalent to no enactable power.
+means. A product score is not licensed by ordinal node factors. That node-level
+conclusion follows only after a calibration contract `κ` supplies cardinal
+scales `Φ_c,V_c` and an additional finite-budget premise such as
+`Φ_c+V_c≤1`. Inside that named model, allocating the entire normalized budget
+to `Φ_c` leaves `V_c=0`, so the candidate `P×,κ=Φ_cV_c` is zero. This is a
+conditional model of non-enactable representation, not a theorem about all
+foresight, power, or value.
 
 This is a transparent candidate pattern:
 

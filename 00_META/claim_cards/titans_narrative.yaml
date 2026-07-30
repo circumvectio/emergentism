@@ -1,7 +1,123 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-TITANS","source":{"path":"05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md","lifecycle":"active","role":"research_seed"},
-  "cards":[
-    {"card_id":"TIT01-01","chapters":["standard-mathematics"],"locator":{"section":"1-8","line_start":74,"line_end":328},"plain_claim":"Standard mathematics governs countability, limits, partial operations and extensions without amendment by the narrative triad.","claim_type":"analytic","evidence":[{"tier":"A","scope":"named standard structures"}],"owner_ids":["K-1"],"dependencies":[],"docket_ids":["A1"],"type_boundaries":["mathematical result is distinct from narrative interpretation"],"strongest_rival":"Native mathematics needs no Finity vocabulary.","discriminator":"Every statement must translate to and recover its named native theory.","kill_criterion":"Withdraw any reformulation that changes a native result without an explicit extension.","survivor_if_killed":"The standard mathematical result.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"Finity vocabulary is optional."},"disposition":"retain","public":{"state":"source_only","wording":"Standard mathematics remains unchanged and primary."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"]}},
-    {"card_id":"TIT01-02","chapters":["selected-symbolism"],"locator":{"section":"opening and typed Titans","line_start":33,"line_end":301},"plain_claim":"The Infinite, Finity and Infinity are selected narrative modes over opaque Titan frames, not arithmetic objects or a census of reality.","claim_type":"interpretation_vow","evidence":[{"tier":"I","scope":"selected three-mode narrative"},{"tier":"S","scope":"TitanFrame type boundary"}],"owner_ids":["K-1"],"dependencies":["TIT01-01"],"docket_ids":["A1","A2"],"type_boundaries":["TitanFrame is not Number or ontology"],"strongest_rival":"Plain boundary terminology may be clearer and sufficient.","discriminator":"Compare comprehension and type leakage with the imagery removed.","kill_criterion":"Retire the symbolism if it produces arithmetic, causal or ontological overreading.","survivor_if_killed":"Pre-countability, unending traversal and finite convergence remain separate concepts.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"A reader may reject the symbolism."},"disposition":"restate","public":{"state":"source_only","wording":"Three selected narrative modes, not new numbers or entities."},"review":{"state":"l3_audited","receipts":["13_BOOKS/titans/RESEARCH_EDITION_1.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-TITANS",
+  "source": {
+    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+    "lifecycle": "active",
+    "role": "research_seed",
+    "reviewed_source_sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816"
+  },
+  "cards": [
+    {
+      "card_id": "TIT01-01",
+      "chapters": [
+        "standard-mathematics"
+      ],
+      "locator": {
+        "section": "1-8",
+        "line_start": 74,
+        "line_end": 328,
+        "anchor": "## 1. The lexical contract",
+        "fingerprint_sha256": "24e02096719502dac553037eeb1b37c16cd09db96d4872c0fad877dcf56c514b"
+      },
+      "plain_claim": "Standard mathematics governs countability, limits, partial operations and extensions without amendment by the narrative triad.",
+      "claim_type": "analytic",
+      "evidence": [
+        {
+          "tier": "A",
+          "scope": "named standard structures"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A1"
+      ],
+      "type_boundaries": [
+        "mathematical result is distinct from narrative interpretation"
+      ],
+      "strongest_rival": "Native mathematics needs no Finity vocabulary.",
+      "discriminator": "Every statement must translate to and recover its named native theory.",
+      "kill_criterion": "Withdraw any reformulation that changes a native result without an explicit extension.",
+      "survivor_if_killed": "The standard mathematical result.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "Finity vocabulary is optional."
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Standard mathematics remains unchanged and primary."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "TIT01-02",
+      "chapters": [
+        "selected-symbolism"
+      ],
+      "locator": {
+        "section": "opening and typed Titans",
+        "line_start": 33,
+        "line_end": 301,
+        "anchor": "## The Infinite (Zero), Finity, and Infinity",
+        "fingerprint_sha256": "a03d6f3ad9d93ebaf50ad61e6632e4aeb26557fdfe3b2882ab1e148081470cd5"
+      },
+      "plain_claim": "The Infinite, Finity and Infinity are selected narrative modes over opaque Titan frames, not arithmetic objects or a census of reality.",
+      "claim_type": "interpretation_vow",
+      "evidence": [
+        {
+          "tier": "I",
+          "scope": "selected three-mode narrative"
+        },
+        {
+          "tier": "S",
+          "scope": "TitanFrame type boundary"
+        }
+      ],
+      "dependencies": [
+        "TIT01-01"
+      ],
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "type_boundaries": [
+        "TitanFrame is not Number or ontology"
+      ],
+      "strongest_rival": "Plain boundary terminology may be clearer and sufficient.",
+      "discriminator": "Compare comprehension and type leakage with the imagery removed.",
+      "kill_criterion": "Retire the symbolism if it produces arithmetic, causal or ontological overreading.",
+      "survivor_if_killed": "Pre-countability, unending traversal and finite convergence remain separate concepts.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "A reader may reject the symbolism."
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "source_only",
+        "wording": "Three selected narrative modes, not new numbers or entities."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/titans/RESEARCH_EDITION_1.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": []
+    }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema": "emergentism/book-manifest/v1",
+  "schema": "emergentism/book-manifest/v2",
   "catalog_role": "projection_only_no_semantic_authority",
   "generated_from": [
     "../00_META/00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md",
@@ -10,115 +10,746 @@
       "work_id": "BK-ONE-SITTING",
       "title": "The Emergentist Weltanschauung — One-Sitting Edition",
       "edition": "active-source-reader",
-      "historical_sources": ["../00_THE_WELTANSCHAUUNG_ONE_SITTING.md"],
-      "chapter_order": ["boundaries", "difference", "relation", "probability", "actuality", "possibility", "soul-loop", "social-loop", "human-condition", "good", "five-apertures", "exit"],
-      "owner_ids": ["K-1", "K-2", "K-3", "K-4", "K-5", "K-6", "K-7"],
-      "claim_card_ids": ["OS01-01", "OS01-02", "OS01-03", "OS01-04", "OS01-05", "OS01-06", "OS01-07", "OS01-08", "OS01-09", "OS01-10", "OS01-11", "OS01-12", "OS01-13", "OS01-14", "OS01-15", "OS01-16", "OS01-17", "OS01-18", "OS01-19", "OS01-20", "OS01-21", "OS01-22", "OS01-23", "OS01-24", "OS01-25", "OS01-26"],
+      "historical_sources": [
+        {
+          "path": "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "lifecycle": "reader_synthesis",
+          "reviewed_source_sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad"
+        }
+      ],
+      "chapter_order": [
+        "boundaries",
+        "difference",
+        "relation",
+        "probability",
+        "actuality",
+        "possibility",
+        "soul-loop",
+        "social-loop",
+        "human-condition",
+        "good",
+        "five-apertures",
+        "exit"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-2",
+        "K-3",
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "OS01-01",
+        "OS01-02",
+        "OS01-03",
+        "OS01-04",
+        "OS01-05",
+        "OS01-06",
+        "OS01-07",
+        "OS01-08",
+        "OS01-09",
+        "OS01-10",
+        "OS01-11",
+        "OS01-12",
+        "OS01-13",
+        "OS01-14",
+        "OS01-15",
+        "OS01-16",
+        "OS01-17",
+        "OS01-18",
+        "OS01-19",
+        "OS01-20",
+        "OS01-21",
+        "OS01-22",
+        "OS01-23",
+        "OS01-24",
+        "OS01-25",
+        "OS01-26"
+      ],
       "release_state": "source_active_projection_review_open",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
-      "build_provenance": "12_PUBLIC_SITE/build_book.py"
+      "build_provenance": {
+        "type": "generator",
+        "path": "../12_PUBLIC_SITE/build_book.py",
+        "sha256": "fc4bdfeda792b7e1c278c50cd9bc17f6becf197280daab290aa3ccac3dd6a840"
+      }
     },
     {
       "work_id": "BK-FINITY-PRACTICE",
       "title": "The Finity Card — Lived Compass Practice",
       "edition": "active-source-practice-v1",
-      "historical_sources": ["../01_TELEOLOGY/04_THE_LIVED_COMPASS.md"],
-      "chapter_order": ["finity-card", "comparative-adequacy"],
-      "owner_ids": ["K-4", "K-5"],
-      "claim_card_ids": ["FIN01-01", "FIN01-02"],
+      "historical_sources": [
+        {
+          "path": "../01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+          "lifecycle": "active",
+          "reviewed_source_sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c"
+        }
+      ],
+      "chapter_order": [
+        "finity-card",
+        "comparative-adequacy"
+      ],
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
       "release_state": "source_active_public_projection",
       "public_route": "../12_PUBLIC_SITE/practice/index.html",
-      "build_provenance": "source-owned hand projection with public semantic parity"
+      "build_provenance": {
+        "type": "manual",
+        "description": "Source-owned hand projection.",
+        "verification": "Public semantic-parity and predeploy gates."
+      }
     },
     {
       "work_id": "BK-SELF-EATING",
       "title": "The Self-Eating Serpent",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md"],
-      "chapter_order": ["review", "application", "turn", "trap", "dissolution", "seed"],
-      "owner_ids": ["K-5", "K-7"],
-      "claim_card_ids": ["SES01-01", "SES01-02", "SES01-03", "SES01-04", "SES01-05", "SES01-06"],
+      "historical_sources": [
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+          "lifecycle": "legacy",
+          "reviewed_source_sha256": "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4"
+        }
+      ],
+      "chapter_order": [
+        "review",
+        "application",
+        "turn",
+        "trap",
+        "dissolution",
+        "seed"
+      ],
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "SES01-01",
+        "SES01-02",
+        "SES01-03",
+        "SES01-04",
+        "SES01-05",
+        "SES01-06"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
-      "build_provenance": "self_eating_serpent/CRITICAL_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "self_eating_serpent/CRITICAL_EDITION_1.md",
+        "sha256": "3eda2a0eae8bcb1b4dcafce49f569dcbacb3adda5e12f6f03342a60c102d40ec"
+      }
     },
     {
       "work_id": "BK-TITANS",
       "title": "The Titans — The Infinite, Finity & Infinity",
       "edition": "research-edition-1-staged",
-      "historical_sources": ["../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md"],
-      "chapter_order": ["standard-mathematics", "selected-symbolism", "finity-protocol", "paradox-ledger", "recovery-and-failure"],
-      "owner_ids": ["K-1", "K-3", "K-4"],
-      "claim_card_ids": ["TIT01-01", "TIT01-02", "TIT01-03", "TIT01-04", "TIT01-05"],
+      "historical_sources": [
+        {
+          "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+          "lifecycle": "active",
+          "reviewed_source_sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816"
+        }
+      ],
+      "chapter_order": [
+        "standard-mathematics",
+        "selected-symbolism",
+        "typed-inversion",
+        "finity-protocol",
+        "paradox-ledger",
+        "recovery-and-failure"
+      ],
+      "owner_ids": [
+        "K-1"
+      ],
+      "claim_card_ids": [
+        "TIT01-01",
+        "TIT01-02",
+        "TIT01-03",
+        "TIT01-04",
+        "TIT01-05",
+        "TIT01-06"
+      ],
       "release_state": "research_critical_edition_staged_not_public",
       "public_route": null,
-      "build_provenance": "titans/RESEARCH_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "titans/RESEARCH_EDITION_1.md",
+        "sha256": "419a4edc36826377634e0571aa30a091b4d5a8873ea7ec37d08f16e3b11192e9"
+      }
     },
     {
       "work_id": "BK-DHARMA",
       "title": "Dharma Yuddha",
       "edition": "critical-replacement-staged",
       "historical_sources": [
-        "../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
-        "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"
+        {
+          "path": "../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
+          "lifecycle": "archive",
+          "reviewed_source_sha256": "148d92dc4d64dc2c27a41a8d8ed394e725475d8ce4cceb56a46035dd28bf341f"
+        },
+        {
+          "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+          "lifecycle": "active",
+          "reviewed_source_sha256": "3ae5cd3bc48c12cd03dcc5ab18aa4ca17c93cbea57e209bfd659ce144e494b98"
+        }
       ],
-      "chapter_order": ["justice-first", "two-horizon", "nonviolent-resistance", "institutional-defence", "repair-exit-and-residue"],
-      "owner_ids": ["K-3", "K-4", "K-5"],
-      "claim_card_ids": ["DHY01-01", "DHY01-02", "DHY01-03", "DHY01-04", "DHY01-05"],
+      "chapter_order": [
+        "justice-first",
+        "two-horizon",
+        "nonviolent-resistance",
+        "institutional-defence",
+        "repair-exit-and-residue"
+      ],
+      "owner_ids": [
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "DHY01-01",
+        "DHY01-02",
+        "DHY01-03",
+        "DHY01-04",
+        "DHY01-05"
+      ],
       "release_state": "critical_edition_staged_not_public",
       "public_route": null,
-      "build_provenance": "dharma_yuddha/CRITICAL_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "dharma_yuddha/CRITICAL_EDITION_1.md",
+        "sha256": "a2bef7b93a8f3242670da72c2afe876f4a1f83efb7d4fc4f2c40ae5d9a88fd73"
+      }
     },
     {
       "work_id": "BK-EVOLUTIONARY-NETWORK",
       "title": "The Evolutionary Network",
       "edition": "institutional-proposal-staged",
-      "historical_sources": ["../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"],
-      "chapter_order": ["voluntary-entry", "appeal", "repair", "dissolution", "institutional-failure-rivals"],
-      "owner_ids": ["K-4", "K-5"],
-      "claim_card_ids": ["EN01-01", "EN01-02", "EN01-03", "EN01-04", "EN01-05"],
+      "historical_sources": [
+        {
+          "path": "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
+          "lifecycle": "proposal",
+          "reviewed_source_sha256": "df8887940ce76d68e1073ee18b197b3a64059fef73ad094128d6143a4a6105d6"
+        }
+      ],
+      "chapter_order": [
+        "voluntary-entry",
+        "appeal",
+        "repair",
+        "dissolution",
+        "institutional-failure-rivals"
+      ],
+      "owner_ids": [
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "EN01-01",
+        "EN01-02",
+        "EN01-03",
+        "EN01-04",
+        "EN01-05"
+      ],
       "release_state": "proposal_critical_edition_staged_not_public",
       "public_route": null,
-      "build_provenance": "evolutionary_network/RESEARCH_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "evolutionary_network/RESEARCH_EDITION_1.md",
+        "sha256": "64bf9dcbefe0ecd1203a118dd4ad1dc31feadda6b6f1a4b9d2791b6b279d56f8"
+      }
     },
     {
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
       "title": "The Reciprocal / Infinite Play",
       "edition": "genealogy-critical-edition-staged",
       "historical_sources": [
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md"
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
+          "lifecycle": "frozen",
+          "reviewed_source_sha256": "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9"
+        },
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+          "lifecycle": "frozen",
+          "reviewed_source_sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9"
+        }
       ],
-      "chapter_order": ["diagnosis-without-villain", "formal-boundaries", "translation-without-proof", "collective-traces", "institutional-firewall", "immune-protocol", "seed-and-record"],
-      "owner_ids": ["K-1", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["RIP01-01", "RIP01-02", "RIP01-03", "RIP01-04", "RIP01-05", "RIP01-06", "RIP01-07"],
+      "chapter_order": [
+        "diagnosis-without-villain",
+        "formal-boundaries",
+        "translation-without-proof",
+        "collective-traces",
+        "institutional-firewall",
+        "immune-protocol",
+        "seed-and-record"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "RIP01-01",
+        "RIP01-02",
+        "RIP01-03",
+        "RIP01-04",
+        "RIP01-05",
+        "RIP01-06",
+        "RIP01-07"
+      ],
       "release_state": "legacy_and_frozen_critical_edition_staged",
       "public_route": null,
-      "build_provenance": "reciprocal_infinite_play/CRITICAL_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
+        "sha256": "023fcfc7cf731b0f67efee535c93d26c375b4e7db3ebbe36c3f1e3bb7cf92030"
+      }
     },
     {
       "work_id": "BK-SARPASYA",
       "title": "Sarpasya Vijayam",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md"],
-      "chapter_order": ["diagnosis-with-rivals", "mathematics-quarantine", "historical-precedent", "nonviolent-repair", "voluntary-practice", "institution-as-proposal", "dissolution-and-record"],
-      "owner_ids": ["K-1", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["SV01-01", "SV01-02", "SV01-03", "SV01-04", "SV01-05", "SV01-06", "SV01-07"],
+      "historical_sources": [
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+          "lifecycle": "legacy",
+          "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436"
+        }
+      ],
+      "chapter_order": [
+        "diagnosis-with-rivals",
+        "mathematics-quarantine",
+        "historical-precedent",
+        "nonviolent-repair",
+        "voluntary-practice",
+        "institution-as-proposal",
+        "dissolution-and-record"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "SV01-01",
+        "SV01-02",
+        "SV01-03",
+        "SV01-04",
+        "SV01-05",
+        "SV01-06",
+        "SV01-07"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
-      "build_provenance": "sarpasya_vijayam/CRITICAL_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "sarpasya_vijayam/CRITICAL_EDITION_1.md",
+        "sha256": "01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c"
+      }
     },
     {
       "work_id": "BK-SIX-LENSES",
       "title": "Six-Fold Revelation / Six Lenses",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"],
-      "chapter_order": ["preface", "ontological", "epistemological", "axiological", "teleological", "methodological", "comparative-sacred-action", "synthesis"],
-      "owner_ids": ["K-2", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["SL01-01", "SL01-02", "SL01-03", "SL01-04", "SL01-05", "SL01-06", "SL01-07", "SL01-08"],
+      "historical_sources": [
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+          "lifecycle": "legacy",
+          "reviewed_source_sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2"
+        }
+      ],
+      "chapter_order": [
+        "preface",
+        "ontological",
+        "epistemological",
+        "axiological",
+        "teleological",
+        "methodological",
+        "comparative-sacred-action",
+        "synthesis"
+      ],
+      "owner_ids": [
+        "K-2",
+        "K-3",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "SL01-01",
+        "SL01-02",
+        "SL01-03",
+        "SL01-04",
+        "SL01-05",
+        "SL01-06",
+        "SL01-07",
+        "SL01-08"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
-      "build_provenance": "six_lenses/CRITICAL_EDITION_1.md"
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "six_lenses/CRITICAL_EDITION_1.md",
+        "sha256": "a1bce0289dfd286215b3bf17ef295d1b89082b71af2c3b5e0568870b6e92bef6"
+      }
     }
-  ]
+  ],
+  "editorial_architecture": {
+    "schema": "emergentism/book-composition/v2",
+    "status": "staged_proposal",
+    "confirmation": {
+      "state": "unconfirmed",
+      "receipt": null,
+      "receipt_sha256": null
+    },
+    "authority": "projection_only_no_semantic_authority",
+    "decision": "Proposed target: three active-book compositions plus one non-doctrinal historical reader; the Evolutionary Network remains a research dossier.",
+    "invariants": {
+      "preserve_works_array": true,
+      "preserve_work_ids": true,
+      "preserve_existing_paths": true,
+      "preserve_historical_sources": true,
+      "preserve_claim_card_ids": true,
+      "one_primary_projection_home_per_card": true,
+      "reference_only_does_not_duplicate_ownership": true,
+      "superseded_means_preserved_not_deleted": true
+    },
+    "compositions": [
+      {
+        "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+        "catalog_class": "active_book",
+        "title": "Emergentism: A Worldview for Finite Beings",
+        "anchor_work_id": "BK-ONE-SITTING",
+        "output": {
+          "state": "current_reader_rebuild_pending",
+          "source_path": "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "public_route": "../12_PUBLIC_SITE/book/index.html"
+        },
+        "components": [
+          {
+            "work_id": "BK-ONE-SITTING",
+            "role": "reader_spine",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-SELF-EATING",
+            "role": "named_immune_protocol",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+            "role": "collective_trace_and_immune_survivors",
+            "claim_card_ids": [
+              "RIP01-04",
+              "RIP01-06",
+              "RIP01-07"
+            ],
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-SARPASYA",
+            "role": "dissolution_and_record_survivor",
+            "claim_card_ids": [
+              "SV01-07"
+            ],
+            "projection_mode": "primary"
+          }
+        ]
+      },
+      {
+        "composition_id": "COMP-ACTIVE-02-TITANS",
+        "catalog_class": "active_research_book",
+        "title": "The Titans: The Infinite, Finity & Infinity",
+        "anchor_work_id": "BK-TITANS",
+        "output": {
+          "state": "planned_not_built",
+          "planned_path": "titans/RESEARCH_EDITION_2.md",
+          "public_route": null
+        },
+        "components": [
+          {
+            "work_id": "BK-TITANS",
+            "role": "formal_research_spine",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+            "role": "formal_boundary_and_translation_survivors",
+            "claim_card_ids": [
+              "RIP01-02",
+              "RIP01-03"
+            ],
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-SARPASYA",
+            "role": "historical_type_failure_survivor",
+            "claim_card_ids": [
+              "SV01-02"
+            ],
+            "projection_mode": "primary"
+          }
+        ],
+        "source_modules": [
+          {
+            "path": "../00_THE_FOUNDATION.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
+            "coverage_state": "carded",
+            "claim_card_ids": [
+              "TIT01-06"
+            ]
+          },
+          {
+            "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+            "coverage_state": "carded",
+            "claim_card_ids": [
+              "TIT01-03",
+              "TIT01-05"
+            ]
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml",
+            "coverage_state": "carded",
+            "claim_card_ids": [
+              "TIT01-04"
+            ]
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/50_BLOCK_UNIVERSE_PLURALITY_AND_THE_SURVIVAL_OF_CHOICE.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          },
+          {
+            "path": "../05_COSMOLOGY/03_FORMAL_SYSTEM/53_THE_NUMBER_CHART.md",
+            "coverage_state": "uncarded",
+            "claim_card_ids": []
+          }
+        ],
+        "reference_modules": [
+          {
+            "path": "../00_ESTABLISHED/README.md",
+            "role": "living_evidence_ledger",
+            "projection_mode": "reference_only"
+          }
+        ],
+        "coverage_gate": "Every source module requires cards before entering generated prose."
+      },
+      {
+        "composition_id": "COMP-ACTIVE-03-LIVED-COMPASS",
+        "catalog_class": "active_practice_book",
+        "title": "The Lived Compass: Justice, Action & Institutions",
+        "anchor_work_id": "BK-FINITY-PRACTICE",
+        "output": {
+          "state": "planned_not_built",
+          "planned_path": "lived_compass/READER_EDITION_1.md",
+          "existing_public_route": "../12_PUBLIC_SITE/practice/index.html"
+        },
+        "components": [
+          {
+            "work_id": "BK-FINITY-PRACTICE",
+            "role": "practice_spine",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-DHARMA",
+            "role": "accountable_resistance_casebook",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-SIX-LENSES",
+            "role": "six_question_method_appendix",
+            "claim_selection": "all",
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+            "role": "institutional_diagnosis_survivor",
+            "claim_card_ids": [
+              "RIP01-01"
+            ],
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-SARPASYA",
+            "role": "diagnosis_history_practice_and_institution_survivors",
+            "claim_card_ids": [
+              "SV01-01",
+              "SV01-03",
+              "SV01-04",
+              "SV01-05",
+              "SV01-06"
+            ],
+            "projection_mode": "primary"
+          },
+          {
+            "work_id": "BK-EVOLUTIONARY-NETWORK",
+            "role": "institutional_research_dossier",
+            "claim_selection": "all",
+            "projection_mode": "reference_only"
+          }
+        ]
+      },
+      {
+        "composition_id": "COMP-HISTORICAL-01-SERPENT-CYCLE",
+        "catalog_class": "historical_critical_reader",
+        "title": "The Serpent Cycle: A Critical Genealogy of Emergentism",
+        "output": {
+          "state": "planned_not_built",
+          "planned_path": "serpent_cycle/CRITICAL_READER_1.md",
+          "public_route": null
+        },
+        "components": [
+          {
+            "work_id": "BK-SARPASYA",
+            "role": "historical_book_i",
+            "claim_selection": "all",
+            "projection_mode": "reference_only"
+          },
+          {
+            "work_id": "BK-SIX-LENSES",
+            "role": "historical_book_ii",
+            "claim_selection": "all",
+            "projection_mode": "reference_only"
+          },
+          {
+            "work_id": "BK-SELF-EATING",
+            "role": "historical_book_iii",
+            "claim_selection": "all",
+            "projection_mode": "reference_only"
+          },
+          {
+            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+            "role": "later_synthesis_genealogy",
+            "claim_selection": "all",
+            "projection_mode": "reference_only"
+          }
+        ],
+        "authority_boundary": "Genealogy only; reference-only cards create no competing owner or second primary projection."
+      }
+    ],
+    "edition_dispositions": [
+      {
+        "work_id": "BK-ONE-SITTING",
+        "editorial_role": "active_book_spine",
+        "existing_edition_disposition": "retained_and_rebuilt_in_place"
+      },
+      {
+        "work_id": "BK-FINITY-PRACTICE",
+        "editorial_role": "active_practice_book_spine",
+        "existing_edition_disposition": "retained_source_and_public_practice_projection"
+      },
+      {
+        "work_id": "BK-TITANS",
+        "editorial_role": "active_research_book_spine",
+        "existing_edition_disposition": "preserve_until_research_edition_2_passes"
+      },
+      {
+        "work_id": "BK-SELF-EATING",
+        "editorial_role": "named_immune_protocol_module",
+        "existing_edition_disposition": "preserved_module_projection"
+      },
+      {
+        "work_id": "BK-DHARMA",
+        "editorial_role": "accountable_resistance_casebook_module",
+        "existing_edition_disposition": "preserved_module_projection"
+      },
+      {
+        "work_id": "BK-EVOLUTIONARY-NETWORK",
+        "editorial_role": "institutional_research_dossier",
+        "existing_edition_disposition": "preserved_dossier_projection"
+      },
+      {
+        "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+        "editorial_role": "historical_genealogy_source",
+        "existing_edition_disposition": "preserve_until_historical_reader_exists"
+      },
+      {
+        "work_id": "BK-SARPASYA",
+        "editorial_role": "historical_genealogy_source",
+        "existing_edition_disposition": "preserve_until_historical_reader_exists"
+      },
+      {
+        "work_id": "BK-SIX-LENSES",
+        "editorial_role": "method_appendix_and_historical_source",
+        "existing_edition_disposition": "preserved_module_projection"
+      }
+    ],
+    "nonbook_claim_routes": [
+      {
+        "route_id": "DOSSIER-EVOLUTIONARY-NETWORK",
+        "work_id": "BK-EVOLUTIONARY-NETWORK",
+        "claim_selection": "all",
+        "primary_home": "research_dossier"
+      },
+      {
+        "route_id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
+        "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+        "claim_card_ids": [
+          "RIP01-05"
+        ],
+        "primary_home": "historical_custody_only"
+      }
+    ],
+    "integrity": {
+      "existing_claim_card_count": 72,
+      "primary_cards_by_composition": {
+        "COMP-ACTIVE-01-WELTANSCHAUUNG": 36,
+        "COMP-ACTIVE-02-TITANS": 9,
+        "COMP-ACTIVE-03-LIVED-COMPASS": 21,
+        "COMP-HISTORICAL-01-SERPENT-CYCLE": 0
+      },
+      "primary_cards_by_nonbook_home": {
+        "historical_custody_only": 1,
+        "research_dossier": 5
+      },
+      "total_primary_or_custody_routes": 72
+    }
+  }
 }

@@ -140,10 +140,11 @@ nothing beyond a lower-level summary, the causal claim is removed.
 
 ## 7. Finite power and option cones `[I/C]`
 
-Emergentism selects `P_node=ΦV` as one normalized conjunctive model in which
-foresight and means are jointly necessary. It is not uniquely derived; minimum,
-harmonic, Cobb–Douglas, and other models can rank cases differently and must be
-tested where relevant.
+Emergentism keeps `N_node=(Φ̂₄,V₄)` as a two-axis profile of evaluated foresight
+and actual means. Componentwise Pareto comparison requires no cross-axis scale.
+Product, minimum, harmonic, Cobb–Douglas and other scalar models may be tested
+only after an explicit calibration contract; none is the framework's default.
+Historical `ΦV` names the joint-necessity intuition, not a ranking.
 
 The physical light cone remains bounded by spacetime and `c`. An option cone is
 the subset of physically admissible histories an agent can model, rank,

@@ -62,12 +62,12 @@ Keep three registers distinct:
 | Register | What may be said | Tier |
 |---|---|---|
 | Mathematical background | The Riemann sphere compactifies the complex plane by adding a point at infinity; `0`, finite values, and `∞` can be handled on one extended surface. | [A] when stated conventionally |
-| Framework structure | `Zero-Sum Resolution Equation` and `φ · ν = 1 on S²` read finity as reciprocal closure inside the model. | [S] inside the formalism |
+| Framework structure | The operator-free Titan display `•  ⊙  ○` and the typed chart identity `φ(θ)ν(θ)=1` for `θ∈(0,π)` read finity as reciprocal closure inside the selected model. | [S] inside the formalism |
 | Ontological reading | Presence is not brute fact but disclosed relation; the finite witness is where Being becomes sayable. | [I/S] |
 
-Do not present the framework's `0 × ∞ = 1` compression as ordinary field
-arithmetic. It is the model's symbolic / coordinate grammar for closure, not a
-license to flatten mathematical registers.
+`0 × ∞ = 1` is a retired historical compression, not live symbolic grammar and
+not ordinary field arithmetic. The current model keeps Titan seats operator-free
+and states the reciprocal identity only on its punctured coordinate chart.
 
 ## Create: Finite Presence Is Relation
 

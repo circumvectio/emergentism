@@ -1,0 +1,67 @@
+{
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-TITANS",
+  "source": {
+    "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml",
+    "lifecycle": "active",
+    "role": "research_ledger",
+    "reviewed_source_sha256": "07c2d9a114624ec4720a66602e8ddf7a47142f1996cec588c025778656d410f6"
+  },
+  "cards": [
+    {
+      "card_id": "TIT01-04",
+      "chapters": [
+        "paradox-ledger"
+      ],
+      "locator": {
+        "section": "evaluation and stop conditions",
+        "line_start": 1,
+        "line_end": 60,
+        "anchor": "\"schema\": \"emergentism/finity-paradox-ledger/v1\",",
+        "fingerprint_sha256": "9be0211f4e647b90d525fd52f2a3f2268d632823012610a05ff1ee1fa464e857"
+      },
+      "plain_claim": "Paradox claims must be adjudicated row by row as formal correction, diagnostic, reframe, unresolved question or scoped resolution.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "adjudication protocol"
+        }
+      ],
+      "dependencies": [
+        "TIT01-03"
+      ],
+      "docket_ids": [
+        "A1",
+        "A3"
+      ],
+      "type_boundaries": [
+        "one row cannot promote another"
+      ],
+      "strongest_rival": "Native specialist literature may already classify each case more precisely.",
+      "discriminator": "Compare every row with named standard accounts and residual questions.",
+      "kill_criterion": "Withdraw any resolution label lacking a scoped formal result and recovery.",
+      "survivor_if_killed": "A question ledger with open status.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "Unresolved questions remain open."
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Every paradox keeps its own formal burden and residual question."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    }
+  ]
+}

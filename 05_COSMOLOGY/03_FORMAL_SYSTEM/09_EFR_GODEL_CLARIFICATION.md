@@ -7,9 +7,24 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "GÖDEL CLARIFICATION"
+title: "Gödel clarification — historical superseded body"
+status: "SUPERSEDED — no current semantic authority"
+date: 2026-07-30
+evidence_tier: "[B] provenance only"
 ---
 
 # GÖDEL CLARIFICATION
+
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY.** This body is retained as
+> provenance because its later tombstones document genuine corrections, but its
+> surviving assertions of K-minimality, categorical completeness,
+> self-grounding, or a unique projective frame are not live doctrine. Gödel's
+> incompleteness theorems apply only to formal systems satisfying their stated
+> hypotheses; they neither validate Emergentism nor force its open-canon ethic.
+> The current position is the worldview's own refusal: internal coherence and
+> self-audit are necessary disciplines, not evidence that a model is complete or
+> true. Current authority: [settled canon registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)
+> and [claim-status register](../../00_META/00_THE_CLAIM_STATUS_REGISTER.md).
 
 ## The Framework's Relationship to Incompleteness
 

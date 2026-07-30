@@ -18,11 +18,24 @@ rosetta:
   register: "[I/C]"
   canonical_phrase: "Rosetta Stone — civilisational dynamics"
 title: "Rosetta Stone: Civilisational Dynamics"
-status: "ACTIVE — per-domain Rosetta application"
-evidence_tier: "[I] for civilisational stage-model mapping; [C] where noted for disputed modern/physics analogies."
+status: "SUPERSEDED — no current semantic authority"
+evidence_tier: "[B] provenance only"
+date: 2026-07-30
 ---
 
 # rosetta stone: CIVILISATIONAL DYNAMICS
+
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY.** This body is preserved as a
+> record of an exploratory typology. Its civilizational ladder, inherited human
+> functions, invented `phi-max` numbers, moralized historical examples, and
+> universal capture narrative were not produced by a preregistered coding
+> protocol and cannot classify peoples, cultures, institutions, or moral worth.
+> Current collective work is causally plural and evidence-open: it separately
+> tests institutions, incentives, coercion, language, ritual, material
+> conditions, signalling, and persistent traces. See the
+> [Master Rosetta](00_THE_MASTER_ROSETTA.md),
+> [Egregoreotype owner](../../../05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md),
+> and [conjecture register](../../../06_ONTOLOGY/04_THE_CONJECTURES.md).
 
 ## L-Levels Mapped to Civilisational Stages, Technology, Culture, and Environmental Relationship
 

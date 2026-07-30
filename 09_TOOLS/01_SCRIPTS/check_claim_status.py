@@ -35,7 +35,7 @@ DOCKET_ID = re.compile(r"^A[0-7]$")
 # Successor targets that live under another owner rather than in this register.
 EXTERNAL_OWNER_ID = re.compile(r"^(W\d+[a-e]?(-[A-Z]+)?|E\d+|GP-\d{2}|KSC-\d{2}|HC-\d{2})$")
 
-REQUIRED_REOPEN_FIELDS = (
+REQUIRED_INVESTIGATION_FIELDS = (
     "parent",
     "question",
     "parent_kill_does_not_reach",
@@ -49,19 +49,32 @@ REQUIRED_REOPEN_FIELDS = (
 # validation, so moving a status between lists silently disabled every check
 # gated on it. A checker may not take its constitution from its subject.
 LIVE = {"FORMALLY-VALID","RECEIPTED","OPEN-FORMAL","OPEN-EMPIRICAL",
-        "COMPONENT-SUPPORTED","NARROWED","OWNER-REOPENED"}
+        "COMPONENT-SUPPORTED","NARROWED"}
 TERMINAL = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR",
             "NOT-WELL-POSED","DECORATIVE","PROCESS-DEFECT"}
 ONE_WAY = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR"}
-# Statuses that, on a grave row, require the four reopening preconditions.
-GUARDED = {"OWNER-REOPENED","NARROWED"}
 KNOWN_SECTIONS = {"schema","routing_role","human_owner","serialization",
                   "live_statuses","terminal_statuses","one_way_statuses","rules",
-                  "owner_reopening","validated","open","graves","reopened","restored"}
+                  "investigation_authorization","validated","open","graves",
+                  "investigations","typed_survivors"}
 # HOLE 3: a counterexample must carry content, not merely be non-blank.
 PLACEHOLDER = re.compile(r"^\s*(none|n/?a|tbd|todo|-+|\.+|x+|unknown|see above)\s*\.?\s*$", re.I)
 MIN_COUNTEREXAMPLE = 25
-EXPECTED_RULING = "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md"
+EXPECTED_AUTHORIZATION = "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md"
+INVESTIGATION_STATES = {"OPEN", "DEFERRED", "CLOSED"}
+PINNED_GRAVE_STATUS = {
+    "DF-01": "FORMALLY-REFUTED", "DF-02": "CATEGORY-ERROR",
+    "DF-03": "EMPIRICALLY-REFUTED", "DF-04": "FORMALLY-REFUTED",
+    "DF-05": "CATEGORY-ERROR", "DF-06": "EMPIRICALLY-REFUTED",
+    "DF-07": "EMPIRICALLY-REFUTED", "DF-08": "FORMALLY-REFUTED",
+    "DF-09": "FORMALLY-REFUTED", "DF-10": "FORMALLY-REFUTED",
+    "DF-11": "FORMALLY-REFUTED", "DF-12": "FORMALLY-REFUTED",
+    "DF-13": "EMPIRICALLY-REFUTED", "DF-14": "FORMALLY-REFUTED",
+    "DF-15": "CATEGORY-ERROR", "DF-16": "FORMALLY-REFUTED",
+    "DF-17": "NOT-WELL-POSED", "DF-18": "NOT-WELL-POSED",
+    "DF-19": "FORMALLY-REFUTED", "DF-20": "CATEGORY-ERROR",
+    "DF-21": "FORMALLY-REFUTED", "DF-22": "PROCESS-DEFECT",
+}
 
 
 class ContractError(ValueError):
@@ -85,6 +98,7 @@ def _rows(document: dict[str, Any], key: str) -> list[dict[str, Any]]:
 
 
 def check(root: Path = ROOT) -> list[str]:
+    root = root.resolve()
     errors: list[str] = []
     path = root / STATUS_PATH
     try:
@@ -114,28 +128,28 @@ def check(root: Path = ROOT) -> list[str]:
         if key not in KNOWN_SECTIONS:
             errors.append(f"unknown top-level section {key!r} — unvalidated territory, refused")
 
-    # An owner reopening is a ruling, and a ruling needs a receipt on disk.
-    if any(
-        isinstance(row, dict) and row.get("status") == "OWNER-REOPENED"
-        for row in (document.get("graves") or [])
-    ):
-        reopening = document.get("owner_reopening")
-        if not isinstance(reopening, dict):
-            errors.append("OWNER-REOPENED rows require an owner_reopening block")
+    # Owner authority may open a distinct investigation. It cannot alter a
+    # grave's validation status and supplies no evidence for the new question.
+    authorization = document.get("investigation_authorization")
+    if not isinstance(authorization, dict):
+        errors.append("investigation_authorization block is required")
+    else:
+        receipt = authorization.get("receipt")
+        rp = Path(receipt) if isinstance(receipt, str) else None
+        if rp is None or rp.is_absolute() or ".." in rp.parts:
+            errors.append(f"investigation_authorization: receipt must be repo-relative, got {receipt!r}")
+        elif receipt != EXPECTED_AUTHORIZATION:
+            errors.append(f"investigation_authorization: unexpected receipt {receipt!r}")
         else:
-            receipt = reopening.get("receipt")
-            rp = Path(receipt) if isinstance(receipt, str) else None
-            if rp is None or rp.is_absolute() or ".." in rp.parts:
-                errors.append(f"owner_reopening: receipt must be a repo-relative path, got {receipt!r}")
-            elif receipt != EXPECTED_RULING:
-                errors.append(f"owner_reopening: receipt must be the r174 ruling, got {receipt!r}")
-            else:
-                f = (root / rp).resolve()
-                if not f.is_file() or not f.is_relative_to(root) or f.stat().st_size < 500:
-                    errors.append(f"owner_reopening: ruling receipt missing, outside the repo, or empty: {receipt}")
-            for field in ("ruling", "scope", "what_it_does_not_do"):
-                if not str(reopening.get(field, "")).strip():
-                    errors.append(f"owner_reopening: {field} is required")
+            f = (root / rp).resolve()
+            if not f.is_file() or not f.is_relative_to(root) or f.stat().st_size < 500:
+                errors.append(f"investigation_authorization: receipt missing, outside repo, or empty: {receipt}")
+        for field in ("instruction", "scope", "what_it_does_not_do"):
+            if not str(authorization.get(field, "")).strip():
+                errors.append(f"investigation_authorization: {field} is required")
+        authorized = authorization.get("authorized_question_ids")
+        if not isinstance(authorized, list) or any(not isinstance(x, str) for x in authorized):
+            errors.append("investigation_authorization: authorized_question_ids must be a string list")
 
     seen: dict[str, str] = {}
 
@@ -191,46 +205,27 @@ def check(root: Path = ROOT) -> list[str]:
         if not DF_ID.fullmatch(row_id):
             errors.append(f"{row_id}: grave ids must look like DF-nn")
         status = _text(row.get("status"), f"{row_id}.status")
-        if status not in live | terminal:
-            errors.append(f"{row_id}: unknown status {status}")
+        if status not in terminal:
+            errors.append(f"{row_id}: every grave must retain a terminal status, found {status}")
+        expected_status = PINNED_GRAVE_STATUS.get(row_id)
+        if expected_status is not None and status != expected_status:
+            errors.append(f"{row_id}: terminal status drifted; expected {expected_status}, found {status}")
         try:
             _text(row.get("form"), f"{row_id}.form")
             _text(row.get("counterexample"), f"{row_id}.counterexample")
         except ContractError as exc:
             errors.append(str(exc))
         cx = str(row.get("counterexample", "")).strip()
-        if status in one_way and not cx:
-            errors.append(f"{row_id}: a one-way status must cite the counterexample that killed it")
+        if not cx:
+            errors.append(f"{row_id}: a grave must cite the counterexample or process defect that killed it")
         if cx and (PLACEHOLDER.fullmatch(cx) or len(cx) < MIN_COUNTEREXAMPLE):
             errors.append(
                 f"{row_id}: counterexample is a placeholder or too thin to be one ({cx!r}) — "
                 "'intact' means content, not merely non-blank"
             )
-        # The one-way rule, mechanically. Once a counterexample is on the record a
-        # row may never drift back into a live status. Exactly three lawful moves
-        # exist: NARROWED with a named successor, a brand-new RQ row, or an
-        # explicit OWNER-REOPENED ruling that keeps the counterexample and
-        # declares how the claim could return.
-        if str(row.get("counterexample", "")).strip() and status in live:
-            if status == "NARROWED":
-                if row.get("successor") is None:
-                    errors.append(f"{row_id}: NARROWED requires the surviving weaker form to be named")
-            elif status in GUARDED:
-                prior = str(row.get("status_before_reopening", "")).strip()
-                if not prior:
-                    errors.append(f"{row_id}: {status} must record the status it was reopened from")
-                elif prior not in TERMINAL:
-                    errors.append(
-                        f"{row_id}: status_before_reopening is {prior!r}, which is not terminal — "
-                        "a live-to-live reopening is meaningless"
-                    )
-                if not str(row.get("repair_path", "")).strip():
-                    errors.append(f"{row_id}: {status} must declare a repair_path")
-            else:
-                errors.append(
-                    f"{row_id}: cites a counterexample but carries live status {status}; "
-                    "open a new reopened row instead of reviving the parent"
-                )
+        for forbidden in ("status_before_reopening", "repair_path", "investigation_state"):
+            if forbidden in row:
+                errors.append(f"{row_id}: {forbidden} belongs to history or a successor inquiry, not a grave")
         successor = row.get("successor")
         if successor is not None and not isinstance(successor, str):
             errors.append(f"{row_id}: successor must be a string id or null")
@@ -243,58 +238,71 @@ def check(root: Path = ROOT) -> list[str]:
         if successor is None and row.get("successor_kind") != "closed_no_successor":
             errors.append(f"{row_id}: a null successor must be marked closed_no_successor")
 
-    if len(grave_ids) != 22:
-        errors.append(f"expected the 22 recorded dead forms, found {len(grave_ids)}")
-    missing = [f"DF-{n:02d}" for n in range(1, 23) if f"DF-{n:02d}" not in grave_ids]
-    if missing:
-        errors.append(f"grave ids are not contiguous, missing: {', '.join(missing)}")
+    missing_baseline = sorted(set(PINNED_GRAVE_STATUS) - grave_ids)
+    if missing_baseline:
+        errors.append(f"baseline graves may not disappear: {', '.join(missing_baseline)}")
+    numbers = sorted(int(row_id.split("-")[1]) for row_id in grave_ids if DF_ID.fullmatch(row_id))
+    if numbers and numbers != list(range(1, max(numbers) + 1)):
+        errors.append("grave ids must remain contiguous from DF-01 through the newest grave")
 
-    # --- reopened --------------------------------------------------------
-    reopened_ids: set[str] = set()
-    for row in _rows(document, "reopened"):
+    # --- investigations --------------------------------------------------
+    investigation_ids: set[str] = set()
+    for row in _rows(document, "investigations"):
         row_id = _text(row.get("id"), "reopened.id")
-        claim_id(row_id, "reopened")
-        reopened_ids.add(row_id)
+        claim_id(row_id, "investigations")
+        investigation_ids.add(row_id)
         if not RQ_ID.fullmatch(row_id):
-            errors.append(f"{row_id}: reopened ids must look like RQ-nn")
-        for field in REQUIRED_REOPEN_FIELDS:
+            errors.append(f"{row_id}: investigation ids must look like RQ-nn")
+        state = row.get("investigation_state")
+        if state not in INVESTIGATION_STATES:
+            errors.append(f"{row_id}: invalid investigation_state {state!r}")
+        for field in REQUIRED_INVESTIGATION_FIELDS:
             try:
                 _text(row.get(field), f"{row_id}.{field}")
             except ContractError as exc:
                 errors.append(str(exc))
         if row.get("tier") != "C":
-            errors.append(f"{row_id}: a reopened question is a conjecture and must be tier C")
+            errors.append(f"{row_id}: an investigation is a conjecture and must be tier C")
         docket = row.get("docket")
         if not isinstance(docket, str) or not DOCKET_ID.fullmatch(docket):
-            errors.append(f"{row_id}: reopened rows need an adequacy docket A0-A7")
+            errors.append(f"{row_id}: investigations need an adequacy docket A0-A7")
         parent = row.get("parent")
         if isinstance(parent, str) and parent not in grave_ids and parent not in open_ids:
             errors.append(f"{row_id}: parent {parent} is neither a grave nor an open wager")
 
-    # --- restored --------------------------------------------------------
-    # HOLE 1b: `restored` was a KNOWN section whose rows were never validated, so a
-    # refuted form could be appended there as FORMALLY-VALID and pass. It is the
-    # DF-22 shape with a machine blessing, so it is checked like everything else.
-    for row in (document.get("restored") or []):
+    authorized_ids = set(authorization.get("authorized_question_ids", [])) if isinstance(authorization, dict) else set()
+    if authorized_ids != investigation_ids:
+        errors.append(
+            "investigation_authorization must name exactly the current RQ rows: "
+            f"missing={sorted(investigation_ids - authorized_ids)} extra={sorted(authorized_ids - investigation_ids)}"
+        )
+
+    # --- typed survivors -------------------------------------------------
+    # A retyped survivor may narrow a failed claim. It may not restore the
+    # arithmetic-looking Titan form or inherit FORMALLY-VALID by relabelling.
+    for row in (document.get("typed_survivors") or []):
         if not isinstance(row, dict):
-            errors.append("restored: every row must be an object")
+            errors.append("typed_survivors: every row must be an object")
             continue
         row_id = str(row.get("id", "")).strip()
         if not TR_ID.fullmatch(row_id):
-            errors.append(f"restored: ids must look like TR-nn, got {row_id!r} — "
+            errors.append(f"typed_survivors: ids must look like TR-nn, got {row_id!r} — "
                           "a grave id here would assert a refuted form as valid")
             continue
-        claim_id(row_id, "restored")
-        if row.get("status") != "FORMALLY-VALID":
-            errors.append(f"{row_id}: a restored row must carry FORMALLY-VALID")
-        if row.get("tier") not in {"A", "S"}:
-            errors.append(f"{row_id}: restored by proof means tier A or S, not {row.get('tier')!r}")
-        for field in ("claim", "was", "why_the_falsifier_misses", "owner", "inherits"):
+        claim_id(row_id, "typed_survivors")
+        if row.get("status") != "NARROWED":
+            errors.append(f"{row_id}: a typed survivor must carry NARROWED, never restored validity")
+        if row.get("tier") != "S":
+            errors.append(f"{row_id}: typed survivor must be selected tier S")
+        survivors = row.get("survivors")
+        if not isinstance(survivors, list) or len(survivors) != 3 or any(not str(x).strip() for x in survivors):
+            errors.append(f"{row_id}: exactly three typed survivor statements are required")
+        for field in ("original_claim", "disposition", "owner", "boundary"):
             if not str(row.get(field, "")).strip():
-                errors.append(f"{row_id}: restored rows must state {field}")
+                errors.append(f"{row_id}: typed survivor rows must state {field}")
 
     # --- successor resolution -------------------------------------------
-    known = grave_ids | reopened_ids | open_ids
+    known = grave_ids | investigation_ids | open_ids
     for grave, successor in sorted(grave_successors.items()):
         if successor is None:
             continue
@@ -304,9 +312,8 @@ def check(root: Path = ROOT) -> list[str]:
             continue
         errors.append(f"{grave}: successor {successor} resolves to no known id or external owner")
 
-    # Every reopened question must be claimed by the grave it descends from,
-    # so a resurrection can never float free of the record.
-    for row in document["reopened"]:
+    # Every grave-derived investigation must be claimed by its terminal parent.
+    for row in document["investigations"]:
         parent = row.get("parent")
         row_id = row.get("id")
         if parent in grave_ids and grave_successors.get(parent) != row_id:
@@ -331,7 +338,7 @@ def main() -> int:
     print(
         "CLAIM STATUS CONTRACT: PASS "
         f"({len(document['validated'])} validated, {len(document['open'])} open, "
-        f"{len(document['graves'])} graves, {len(document['reopened'])} reopened)"
+        f"{len(document['graves'])} graves, {len(document['investigations'])} investigations)"
     )
     return 0
 

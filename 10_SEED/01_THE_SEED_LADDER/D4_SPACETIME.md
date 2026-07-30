@@ -81,7 +81,7 @@ renderer sets `R/r:=1/γ`; special relativity does not. Near a true horn pinch,
 `ρ=z²/(2r)+O(z⁴)`, with an axial real tangent cone. It is not a Lorentzian light
 cone. The mouth is not a light cone, a surface trace is not a worldline, and
 the selected sphere morph is not the null limit.
-5. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, the normalized mass-shell identity in this declared parameterization, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`P_node = Φ×V`, a declared finite model: AND-class at its zero boundary `[S]`, product interior `[C]`). Physics licenses the seam and the score readings above; it licenses nothing about nodes, flourishing, or ethics (CC-CORE-1). No `[C]→[A]`.
+5. **The iron separation holds here as everywhere.** The **seam** (`P∞ = φν ≡ 1`, a normalized identity in this declared parameterization, never a score) is not the **score** (`B ≤ 1`, maximal at the equator) is not the **node** (`N_node=(Φ̂₄,V₄)`, an ordered profile with Pareto as its scalar-free baseline). Any scalar node model requires a declared calibration contract `κ`. Physics licenses the scoped relativistic identities above; it licenses nothing about node flourishing, human worth, or ethics (CC-CORE-1). No `[C]→[A]`.
 6. **Three registers, never fused.** Spatial dimension `d`, spacetime dimension
 `D=d+1`, and ladder ordinal `D_n` are different variables. Observational support
 for a `3+1` spacetime model is `[B]`; its mathematical consequences are `[A]`

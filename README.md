@@ -8,7 +8,7 @@ remain externally uncalibrated until independent contact decides them.
 
 ## Read in one sitting
 
-0. [The Foundation](00_THE_FOUNDATION.md) — what the whole thing stands on: `R0`, the forced/selected/theorem strata, and the three Titan identities on the Riemann sphere.
+0. [The Foundation](00_THE_FOUNDATION.md) — what the whole thing presently stands on: `R0`, selected diagnostics and non-substitutable presentations, plus typed inversion and reciprocal-chart facts. No object-level foundation is claimed to be forced.
 1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
 2. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice, including the Finity Card.
 3. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.
@@ -16,7 +16,7 @@ remain externally uncalibrated until independent contact decides them.
 5. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
 6. [VMOSK-A](VMOSK_A.md) — non-semantic work programme for maintaining, testing and publishing the worldview.
 7. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and eleven world-contact sockets.
-8. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model and type boundaries.
+8. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, the two-axis node profile, calibration rules and type boundaries.
 9. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) and [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the active axiom and wager ledgers.
 10. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) and [Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — chosen constraints and disclosures earned by audit.
 11. [The Record Ledger](11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md) — corrections, failures and receipts.
@@ -95,8 +95,9 @@ tests. Consequential action uses a complete, scoped, contestable
 
 - The operational Burri calculus and its semantic tests are internally
   coherent at their declared types.
-- The reciprocal chart is mathematics; the finite-node product is a selected
-  model; the ontology and cosmology remain tiered commitments.
+- The reciprocal chart is mathematics; the finite-node profile is typed, while
+  every scalar aggregator requires a declared calibration and remains a
+  testable model. The ontology and cosmology remain tiered commitments.
 - The historical `S²`/hyperbola force-derivation routes are Kintsugi
   tombstones, not live physics. The only current correspondence is the modular
   [W7-ORIGIN wager](01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md):

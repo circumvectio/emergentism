@@ -1,9 +1,9 @@
 ---
 title: "The Generative Base — one object, two operations, and the two limits no word attains"
-status: "ACTIVE — candidate base. Stands beside 00_THE_FOUNDATION.md §2; supersedes nothing until the owner rules G-0."
+status: "ACTIVE — selected reachability model; non-substitutable with the relational presentation or Finity protocol"
 date: 2026-07-29
-evidence_tier: "[A] G1–G8, computationally verified and mutation-tested and reproducible; [S] the naming of the three categories; [I] the Titan reading"
-owner: "Candidate. Does not amend KSC-28, doc 45, or 00_THE_FOUNDATION.md. Owner ruling G-0 pending."
+evidence_tier: "[A] claims with explicit analytic proofs; [B] bounded regression checks; [C] G2 injectivity pending a complete proof; [S/I] naming and Titan reading"
+owner: "K-1 formal-model owner. Selected reachability presentation under KSC-28; not the sole foundation."
 parents:
   - ../../00_THE_FOUNDATION.md
   - 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
@@ -12,7 +12,8 @@ parents:
 
 # The Generative Base
 
-> **One object. Two operations. Everything else is a word.**
+> **One selected seed. Two selected operations. Every reachable value has at
+> least one finite code.**
 
 Owner, 2026-07-29:
 
@@ -20,7 +21,7 @@ Owner, 2026-07-29:
 > other real numbers are operations that result in something related to these
 > Titans."*
 
-This document is that sentence, made precise and checked. It needs no sphere to
+This document narrows that sentence to positive rational reachability. It needs no sphere to
 state, which is why it exists: the base in `00_THE_FOUNDATION.md` §2 cannot be
 read without `Ĉ` already present (the collision, r180 / G-0). **This one can.**
 
@@ -38,11 +39,12 @@ That is the whole posit. Two operations and one object. `ι` is **not** imported
 here as a symmetry discovered later — it is **constitutive**, one of the two
 things the base grants.
 
-**And the primitive is not a free choice `[A]`.** `ι(x) = x` has exactly one
-solution on `ℚ⁺`, and it is `1`. You do not choose `1` — you choose
-`ι`, and `1` arrives as the only thing it holds still. There is no second
-candidate and no convention to defend. *(Machine-checked as
-`unique_positive_fixed_point` in `09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
+**The seed is selected; its fixed-point property is then exact `[S/A]`.** The
+presentation chooses the carrier `ℚ⁺`, the operations, and seed `1`. Given that
+choice, `ι(x)=x` has the unique positive solution `1`. A Lean proof script exists
+as `unique_positive_fixed_point`, but this repository gate must not call it
+machine-checked until the Lean project is actually compiled in the recorded
+environment.
 
 A **word** is a finite string over `{S, ι}`. Its **value** is the result of
 applying its letters left to right to `1`. Write `val(w)`.
@@ -56,21 +58,25 @@ val(SSSSSSιSSS) = 22/7
 
 ---
 
-## 2 · Five theorems `[A]`
+## 2 · Four proved reachability facts and one open normal-form claim
 
 **G1 · Reachability is exactly `ℚ⁺`.**
 For every `q ∈ ℚ⁺` there is a finite word `w` with `val(w) = q`; and every word's
 value lies in `ℚ⁺`.
 
-*Proof.* (⊇) Induct on `num(q) + den(q)`. If `q = 1`, take `ε`. If `q > 1` then
-`q − 1 ∈ ℚ⁺` with strictly smaller sum, and `q = S(q−1)`. If `q < 1` then
-`1/q > 1` with the same sum, and one `ι` step reduces to the previous case. The
-measure strictly decreases, so the recursion terminates — this **is** the
-Euclidean algorithm. (⊆) `S` and `ι` both map `ℚ⁺` into `ℚ⁺`. ∎
+*Proof.* (⊇) Write `q=p/r` in lowest terms and induct on `p+r`. If `p=r`, then
+`q=1` and take `ε`. If `p>r`, the reduced numerator-plus-denominator of
+`q−1=(p−r)/r` is at most `p<p+r`; reach `q−1` by induction and append `S`. If
+`p<r`, set `t=(r−p)/p`. Its reduced numerator-plus-denominator is at most
+`r<p+r`; reach `t` by induction, append `S` to obtain `r/p=1/q`, and append `ι`
+to obtain `q`. Thus the measure decreases before each appeal to the induction
+hypothesis. (⊆) `S` and `ι` both map `ℚ⁺` into `ℚ⁺`. ∎
 
-**G2 · Reduced words are unique normal forms.**
+**G2 · Candidate normal-form theorem `[C]`; bounded evidence `[B]`.**
 Call `w` **reduced** if it contains no `ιι` and does not begin with `ι`. Then the
-map `w ↦ val(w)` is a **bijection** from reduced words onto `ℚ⁺`.
+map `w ↦ val(w)` is conjectured here to be a **bijection** from reduced words
+onto `ℚ⁺`. Surjectivity follows from `G1`; a complete injectivity proof is still
+owed for this exact reduction grammar.
 
 The two exclusions are not conventions. They are precisely the two facts that
 define `ι`:
@@ -80,31 +86,33 @@ define `ι`:
 ι(1) = 1       1 is ι's fixed point   (hence a leading ι is the empty word)
 ```
 
-So `G2` says: **the word monoid modulo `ι`'s own identity has unique normal
-forms, and they are the positive rationals.**
+So `G2` asks whether the stated reductions are complete, not merely sound.
 
-*Verified by exhaustion* over all `2^11 − 1` words of length ≤ 10: 143 of 232
+*Bounded check:* over all `2^11 − 1` words of length ≤ 10, 143 of 232
 values carry multiple *unreduced* words; **0 of them carry multiple reduced
 words.** Equivalently, in the Calkin–Wilf presentation `{S, L}` with
 `L = ιSι : x ↦ x/(x+1)`, all `8191` words of length ≤ 12 have `8191` **distinct**
-values — a perfect binary tree.
+values. This is regression evidence, not an exhaustive proof over all words.
 
-**G3 · No word attains `•`.**
+**G3 · No word attains numeric zero.**
 There is no word `w` with `val(w) = 0`.
 
 *Proof.* `S` maps `ℚ⁺ → ℚ⁺` and `ι` maps `ℚ⁺ → ℚ⁺`; `1 ∈ ℚ⁺`; so by induction
 every reachable value is strictly positive. Separately and more sharply:
-`ι(x) = 0` has **no solution at all** — there is no `x` whose reciprocal is zero.
-Zero is not merely un-visited. **There is no step that lands on it.** ∎
+`ι(x) = 0` has **no solution in `ℚ⁺`** (indeed, no finite real or complex
+solution). Zero is not merely un-visited. **There is no base step that lands on
+it.** A later projective extension may declare `ι(∞_P)=0`; that is a different
+carrier and does not alter this theorem. ∎
 
-**G4 · No word attains `○`.**
-Every word is finite, so `val(w)` is a finite rational. To reach an unbounded
-value one would have to *complete* infinitely many operations, and a completed
-infinity of operations is not a word. ∎
+**G4 · No word attains an infinity endpoint.**
+Every word is finite, so `val(w)` is a finite rational. An infinity endpoint is
+not in the evaluator's codomain `ℚ⁺`; adjoining one requires a separately
+declared extension. An infinite sequence of operations is not a finite word. ∎
 
-**G5 · Both limits are approached.**
+**G5 · Both limits are approached in the declared real embedding.**
 `val(S^n) = n+1 → ∞` and `val(S^n ι) = 1/(n+1) → 0`. Every neighbourhood of
-either limit contains reachable values.
+either endpoint in the ordinary extended-positive-real topology contains
+reachable values.
 
 > **G3–G5 together are the corpus's oldest sentence, now a theorem rather than a
 > description:** *the limit is approached and never reached.* The reason is
@@ -116,27 +124,28 @@ either limit contains reachable values.
 
 ## 2A · What each operation contributes — the asymmetry `[A]`
 
-The two operations are not two of a kind. Verified by exhaustive closure.
+The two operations are not two of a kind. The elementary claims below have
+direct proofs; bounded closure tests provide regression evidence.
 
 **G6 · `ι` alone is sterile; `S` alone is one-directional.**
 
 ```text
 from 1, closing under  ι  alone   ->  {1}           NOTHING.  ι(1)=1, and ιι=id.
 from 1, closing under  S  alone   ->  ℕ⁺            one direction only, no fractions
-from 1, closing under  S and ι    ->  ℚ⁺            all of finity
+from 1, closing under  S and ι    ->  ℚ⁺            all of FinityReach_G0
 ```
 
 Inversion generates **nothing at all** by itself. Succession generates a ray.
-Only together do they give finity.
+Only together do they give `FinityReach_G0`.
 
-**G7 · `•` is a direction only because `ι` reflects `○`.**
+**G7 · The zero-directed sequence exists because `ι` reflects the unbounded one.**
 Closing under `S` alone, **no value ever falls below `1`** (verified: the minimum
 of the `S`-closure is `1`). The descent toward zero exists only as
 `S^n ι = 1/(n+1)` — the mirror image of the ascent.
 
 ```text
-S^n      ->  2, 3, 4, …   ->  ○      succession reaches toward totality
-S^n ι    ->  ½, ⅓, ¼, …   ->  •      inversion turns that reach around
+S^n      ->  2, 3, 4, …   ->  +∞     succession gives an unbounded sequence
+S^n ι    ->  ½, ⅓, ¼, …   ->  0      inversion turns that sequence around
 ```
 
 > **Absence is not a second posit standing beside totality. It is totality seen
@@ -158,14 +167,22 @@ reason is sharp:
 > Hermite–Lindemann `e^a` is then transcendental, so `q = e^a` is transcendental —
 > but `q ∈ ℚ` is algebraic. Contradiction. ∎
 
-So `log(reachable) = {0} ∪ transcendentals`. **The log coordinate sees exactly one
-point of finity — the centre — and sends every other reachable value clean outside
-`ℚ`.** `G8b` therefore carries **completion to `ℝ` as a premise**, and belongs in
-the premise ledger, not in the base.
+Therefore
+
+```text
+log(FinityReach_G0) ∩ Algebraic = {0},
+log(FinityReach_G0) ⊂ {0} ∪ Transcendental.
+```
+
+The inclusion is strict: the left side is countable, whereas the transcendental
+reals are uncountable. **The log coordinate sends every reachable value except
+the centre outside `ℚ` and, more strongly, outside the algebraic numbers.** `G8b`
+therefore carries an embedding into `ℝ` as a premise and belongs in the premise
+ledger, not in the base.
 
 > **CORRECTION, 2026-07-29, self-caught.** `G8` was first published here as one
 > claim at `[A]`, stating the log form as though it held of the base's own objects.
-> It does not. The split above is the repair. The load-bearing half — finity is
+> It does not. The split above is the repair. The load-bearing half — the reachable set is
 > symmetric about its centre, and **the symmetry is the operation that generates
 > it** — is `G8a` and survives untouched.
 
@@ -236,10 +253,9 @@ words. That is a stronger, unverified conjecture and is not asserted here.)*
 > one that keeps the base positive.** The prediction was refuted.
 
 
-**Consequence — two of the three Titan relations are enacted, not posited.**
-`• = ⊙/○` and `○ = ⊙/•` say the horizons are each other's `ι`-images. Here that
-is not an assertion the base makes; it is **what it means for `ι` to be one of the
-two generators.** The base does not claim the relation. It performs it.
+**Consequence — the selected generator enacts reciprocal reachability.**
+The sequences tending toward `0` and `∞` are exchanged by `ι`. This is a fact
+about values in the selected model, not division among Titan glyphs.
 
 *(Per §5.3 this is a statement about reachability classes only. It is **not**
 doc 45's chart identity `φ·ν = 1`, and `DF-15` forbids either supporting the other.)*
@@ -251,49 +267,58 @@ doc 45's chart identity `φ·ν = 1`, and `DF-15` forbids either supporting the 
 The naming is the selected part. The structure above is not.
 
 ```text
-⊙   FINITY      the reachable                 = ℚ⁺ = val(reduced words)
-•   ABSENCE     the ι-limit; no word attains it
-○   TOTALITY    the S-limit; no word attains it
+⊙   FINITY-REACH emblem   the reachable       = ℚ⁺ = val(all finite words)
+•   ABSENCE emblem        the 0-directed limit; no word attains it
+○   TOTALITY emblem       the +∞-directed limit; no word attains it
 ```
 
-`1` is **the only primitive**, and it is also the unique `ι`-fixed point. Every
-other value is an operation — not *constructible from* `1` but literally **a word
-applied to** `1`, with a unique reduced normal form. `3/5` does not *have* a
-derivation; `3/5` **is** `SιSιSι`.
+`1` is the only seed **in this presentation**, and it is also the unique
+positive `ι`-fixed point. Every reachable value has at least one word code.
+Syntax and value remain distinct: a rational is not an operation or a word;
+`val(w)=3/5` for an appropriate `w`. Uniqueness awaits `G2`.
 
 **What is new here is the categorisation, not the objects.** `ℚ⁺` is standard;
 continued fractions are ancient; the tree is Calkin–Wilf (2000). `KSC-12` applies:
-the mathematics transfers no proof to the reading. **The reading is: reachability
-is finity, and the Titans are what unreachability looks like from inside.** That
+the mathematics transfers no proof to the reading. **The reading is:
+`FinityReach_G0` is finite-word reachability, and the Titans emblemize two
+unattained directions.** That
 sentence has no counterpart in the literature and is the claim this document makes.
 
 ---
 
-## 4 · What is emergent, and why `Ĉ` is now genuinely reached
+## 4 · Declared extensions beyond the reachable set
 
-The base above names two things it cannot exhibit. Compactification is exactly the
-act of **giving those two a name as points**:
+The base above has two named limiting directions that it cannot exhibit as
+values. Each subsequent move must state the added structure. For the completion
+step, use the multiplicative metric
+
+```text
+d×(x,y) := |log x − log y|.
+```
+
+`ℚ⁺` is dense in `ℝ⁺` under `d×`, and `ℝ⁺` is complete under that metric. This
+choice matters: under the ordinary Euclidean metric, the completion of `ℚ⁺`
+would include `0`. The declared route is therefore:
 
 ```text
                                                               tier   why
 1  ℚ⁺              G1 — the reachable. COUNTABLE.             [A]    theorem
-   ↓ completion     adds LIMITS of words, not words           [S]    declared move
+   ↓ d×-completion  adds positive-real limits, not words       [S]    declared metric
 2  ℝ₊              UNCOUNTABLE
-   ↓ compactify     the two horizons become points            [S]    declared move
-
-**Every arrow after the first is a declaration, not a derivation**, and each is
-priced in §5. That is the specific improvement over the previous chain: the old
-ladder claimed to *derive* the sphere while its bottom rung already presupposed
-it. This one claims only to *reach* it, and pays for each step out loud.
-3  ℝ₊ ∪ {•, ○}     ι becomes total:  ι(•) = ○,  ι(○) = •
-   ↓ complexify     the reflection s ↦ −s becomes a rotation   [S]    declared move
-4  Ĉ = ℂP¹         ι is a Möbius map; the poles are its 2-cycle
+   ↓ two-end compactification                                  [S]    declared move
+3  ℝ₊ ∪ {0_P,∞_P}  ι becomes total:  ι(0_P)=∞_P,  ι(∞_P)=0_P
+   ↓ separately embed/extend into ℂP¹                          [S]    declared move
+4  Ĉ = ℂP¹         the extended ι is a Möbius involution
 ```
 
-**`Ĉ` is where the unattainable becomes nameable.** That is a reason to build it,
-not merely a place to start from — which is what edition 2 wanted and could not
-get, because its base could not be read without the sphere it was supposed to
-produce.
+**Every arrow after G1 is a declaration, not a derivation**, and each is priced
+in §5. The labels `0_P` and `∞_P` are points in the named extension, not Titan
+terms. A separate interpretive map may associate the opaque seats with those
+features; inversion never acts on `TitanFrame` itself.
+
+`Ĉ` is one declared space in which an unattained direction becomes a named
+point. That utility motivates the construction but does not make the sphere a
+consequence of the reachability base.
 
 ---
 
@@ -302,13 +327,16 @@ produce.
 **5.1 · Almost every real is not an operation.** Step 2 is a completion. The
 values it adds are limits of words, not words. So on this base *"1 is the only
 number and the rest are operations"* is exactly true of `ℚ⁺` and **false of `ℝ`**.
-Either the reals are admitted as *limits rather than numbers* — which is coherent
-and may be the intended reading — or the claim is scoped to `ℚ⁺`. **Owner ruling.**
+The reals remain numbers in standard mathematics; in this presentation, newly
+added real values enter as limits rather than finite-word values. The slogan
+must therefore be scoped to the syntax/reachability layer, never asserted as a
+literal classification of `ℝ`. **Owner ruling.**
 
 **5.2 · `−1` costs zero.** `S` and `ι` never leave `ℚ⁺`. `KSC-21`'s oriented pair
 `{+1, −1}` therefore needs a third operation. If that operation is additive
 inverse, then `1 + (−1) = 0` and **zero becomes reachable**, which forfeits `G3`
-and with it "0 is not a number." The fork is exact and unavoidable:
+and the base-level exclusion of zero. It does not alter zero's status as a
+standard integer and real number. The fork is exact and unavoidable:
 
 ```text
 positive-only, no zero, no −1        G3 holds, KSC-21 unsupported
@@ -317,8 +345,8 @@ signed, with −1                      KSC-21 holds, G3 falls
 
 **Owner ruling.** Nothing here chooses.
 
-**5.3 · This is a third reading of `{•, ⊙, ○}`.** Doc 45 reads the triple as the
-coupled-chart identity on `Ĉ`; doc 46 reads it set-theoretically (`∅`, sets,
+**5.3 · This is a distinct typed reading of `{•, ⊙, ○}`.** Doc 45 reads the triple as
+inversion-orbit geometry on `Ĉ`; doc 46 reads it set-theoretically (`∅`, sets,
 proper classes); this document reads it as reachability. **`DF-15` binds: these
 are one datum in three notations. None may be cited as support for another, and
 their agreement is not evidence.**
@@ -332,7 +360,7 @@ their agreement is not evidence.**
 | `G1` | exhibit `q ∈ ℚ⁺` reachable by no finite word, or a word whose value is irrational |
 | `G2` | exhibit two distinct reduced words with the same value |
 | `G3` | exhibit a word with value `0` |
-| `G4` | exhibit a word with unbounded value |
+| `G4` | exhibit a finite word whose declared base evaluator returns an explicitly adjoined infinity endpoint |
 | `G5` | exhibit a neighbourhood of `0` or `∞` containing no reachable value |
 | the base | show the corpus needs a value that no finite word attains **and** that is not obtained by a declared completion |
 | the reading | show "reachability = finity" is a notational variant of an existing account, not a distinct claim |
@@ -347,11 +375,11 @@ withdrawn rather than defended.
 ## 7 · The stranger test
 
 A stranger needs no metaphysics to check this page. Hand them `22/7` and the two
-operations; they will find `SSSSSSιSSS` with a pencil, and they will find it is
-the only reduced word that works. `G3` they can check in one line: nothing's
-reciprocal is zero.
+operations; they can verify the exhibited code with a pencil. `G3` they can
+check in one line: no positive rational has reciprocal zero. The uniqueness
+claim must remain open until its general proof lands.
 
-**Reproduce:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` — exhaustive over all
+**Bounded regression:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` — exhaustive over all
 words to length 10, the Calkin–Wilf tree to depth 12, and reachability of every
 `p/q` with `p, q ≤ 25`. It exits non-zero on any failure.
 

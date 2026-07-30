@@ -41,10 +41,10 @@ unless it earns independent evidence.
 | **Reciprocal seam** | `φν=1` for `θ∈(0,π)`, an analytic chart identity `[A]`. It is neither an empirical conservation law nor an ethic. |
 | **Balance** | A separately defined score such as `B=sin θ`; never identical to the reciprocal seam. |
 | **Φ₅ / Φ** | D5 possible power: the structured modal potential of an option field. It is not a causal force exerted by a future event. |
-| **Φ̂₄** | An actual D4 model token's normalized evaluation of `Φ₅`; only this estimate enters present arithmetic. |
+| **Φ̂₄** | An actual D4 model token's ordered evaluation of `Φ₅`; cardinal arithmetic requires a separate calibration. |
 | **V₄ / V** | D4 actual power: embodied capacity, tools, energy, access, and ability available to perform now. Ability does not imply authorization. |
-| **Conjunctive family** | A normalized monotone family `C(Φ̂₄,V₄)` with `C(0,V₄)=C(Φ̂₄,0)=0`. |
-| **Node power** | Emergentism's selected normalized instance `P_node:=Φ̂₄V₄`, publicly compressed as `ΦV`; not uniquely derived and `[C]` as a universal empirical fit. |
+| **Node profile** | `N_node=(Φ̂₄,V₄)`, retaining evaluated possible power and actual power as separate ordered axes; componentwise Pareto comparison is the scale-invariant baseline. |
+| **Calibrated conjunctive candidate** | A named `C(Φ_c,V_c)` permitted only after a calibration contract supplies cardinal scales, meaningful zeros and units, admissible transformations, uncertainty and cross-factor comparability. Product, minimum and other candidates remain `[I/C]`; none is the default. |
 | **Physical light cone** | Spacetime-bounded causal cone; it does not widen beyond physical law or `c`. |
 | **Option cone** | The admissible histories an agent can model, rank, coordinate, and reach inside its physical constraints. |
 

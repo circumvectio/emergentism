@@ -110,18 +110,20 @@ relation lift `X↦(X,R)` is the primary reduced D1→D2 neighbor. Cantor's
 no-surjection theorem and the inadmissibility of the unrestricted Russell class
 as a set mark a typed formal boundary; they do not prove a world-level `μ₁`.
 
-The **AND-class / Liebig law** says that a coupled system dies when any one
-necessary factor tends to zero. *Correct statement (do not revert):* node-death
-forces the **AND-class** (which contains both `×` and `min`), **not** the product
-specifically. Any doc reading "the multiplicative register is forced by
-node-death" states a `[C]` product-interior claim in `[A]` grammar—reword to
-"AND-class forced."
+An **AND-class / Liebig boundary** is available only after a domain model
+independently declares every listed factor necessary and a calibration contract
+gives each factor a meaningful structural zero. Under those premises, scalar
+candidates that vanish when any necessary factor vanishes form an AND-class;
+both `×` and `min` are examples, and neither is selected uniquely. Without those
+premises the two-axis profile and its componentwise Pareto order remain the
+baseline: node language, the reciprocal chart, and ordinal scores force no
+scalar at all.
 
 **The honest limit (seven-caste verdict).** Stripped bare, this ontology is **apophatic at the top** (Ground unknowable) and **pure arithmetic at the bottom** ("empty of world"). Everything actually *lived* — matter, life, mind — is `[S/C]` wager or the permanent `[I]` gap (the mind-account, "matter↔φ / experience↔ν / Hard Problem dissolved," is a conceded **dead form**). As it stands the standalone set is a **METHOD + a POSTURE + a VOW + a geometry** — a discipline of honest orientation — **not yet a world-picture that accounts for the contents of the world.** The plenitude wager (§2) becomes explanatory only if it yields non-circular reachability criteria and novel discriminators. Paying that debt—not asking geometry to generate contents by itself—is the difference between a worldview candidate and a redescription.
 
 ## 6 · The one-paragraph Weltanschauung
 
-*Reality is approached not as a museum of perfect Forms and not as a heaven of free-floating degrees of freedom, but as constrained possibility in process. Degrees of freedom type how a specified system may vary; robust forms arise across those freedoms through law, history, dynamics, boundary, feedback, and cost. A reciprocal sphere is one useful chart whose product is identically one by construction; it is not the territory or an ethics warrant. Need-both behavior supports an AND-class boundary, not a unique product interior. The plenitude clause remains a wager: model admission is not actuality, and reachability must be defined through allowed transformations and resource bounds without circularity. At the quantum scale, interaction, amplification, and decoherence can help explain stable macro-records, but no logical-consistency filter selects one outcome or derives Born weights; Everett is one interpretation, not a forced conclusion. The worldview therefore remains a correction-governed orientation with non-extraction chosen rather than derived and an exit marked on the inside.*
+*Reality is approached not as a museum of perfect Forms and not as a heaven of free-floating degrees of freedom, but as constrained possibility in process. Degrees of freedom type how a specified system may vary; robust forms arise across those freedoms through law, history, dynamics, boundary, feedback, and cost. A reciprocal sphere is one useful chart whose product is identically one by construction; it is not the territory or an ethics warrant. A declared need-both model with calibrated structural zeros supports an AND-class boundary, not a default scalar or unique product interior. The plenitude clause remains a wager: model admission is not actuality, and reachability must be defined through allowed transformations and resource bounds without circularity. At the quantum scale, interaction, amplification, and decoherence can help explain stable macro-records, but no logical-consistency filter selects one outcome or derives Born weights; Everett is one interpretation, not a forced conclusion. The worldview therefore remains a correction-governed orientation with non-extraction chosen rather than derived and an exit marked on the inside.*
 
 ## 7 · Authority boundary
 

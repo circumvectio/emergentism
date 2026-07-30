@@ -79,31 +79,43 @@ a D3 state, but the memory example neither requires nor measures it.
 Emergentism reserves uppercase `V` and `Φ` for two different kinds of power:
 
 ```text
-V₄,t := ActualPower₄(X_t)
+V₄,t := ActualPower₄(X_t) ∈ O_V
        D4 power: embodied, causally usable capability available now.
 
 Φ₅,t := PossiblePower₅(Ω_t)
        D5 power: the structured modal potential of the relevant option field.
 
-Φ̂₄,t := Eval₄(M_t,Φ₅,t) ∈ [0,1]
-       D4 estimate: an actual model token's normalized assessment of Φ₅,t.
+Φ̂₄,t := Eval₄(M_t,Φ₅,t) ∈ O_Φ
+       D4 estimate: an actual model token's ordered assessment of Φ₅,t.
 ```
 
-`V₄` is **enactment power**. `Φ₅` is **possibility power**: quality, coverage,
-discriminability, and coordinability of relevant merely possible alternatives.
+`V₄` is **enactment power**: current means, skills, permissions, and actual
+coordination capacity. `Φ₅` is **means-independent possibility structure**:
+quality, coverage, and discriminability of relevant merely possible
+alternatives before filtering them through this agent's current means.
 Here “power” is modal, not a physical force. A future that has not occurred
 does not push the present. Its possible power becomes action-relevant only
 through an actual `Φ̂₄` model token, an actual selector, and actual `V₄` means.
 
-The selected normalized node model is therefore typed as
+The source types first give the profile
 
 ```text
-P_node,t := C×(Φ̂₄,t,V₄,t) := Φ̂₄,t V₄,t.
+N_node,t := (Φ̂₄,t,V₄,t).
 ```
 
-The familiar public compression `P_node=ΦV` is permitted when this bridge has
-already been declared: `Φ` names the D5 semantic factor and, inside the numeric
-expression, abbreviates its D4 estimate `Φ̂₄`; `V` abbreviates `V₄`. Lowercase
+When the axes are only ordinal, compare profiles componentwise. A scalar
+product, minimum or other aggregator is admissible only after a **calibration
+and overlap audit** defines `Φ_c=c_Φ(Φ̂₄)` and `V_c=c_V(V₄)` on comparable
+normalized scales. No measured feature
+may contribute to both factors unless covariance and double-counting are modeled
+explicitly. If `Φ̂₄` already includes current means, permissions, or coordination
+capacity, the scalar is invalid. Component-matched rivals—especially
+`min(Φ_c,V_c)`, additive/interaction models, and a single feasible-cone score—must
+be compared before the product earns empirical use.
+
+The historical compression `ΦV` may remain a mnemonic for joint necessity but
+not a ranking. In any explicitly calibrated expression, `Φ` names the D5
+semantic factor and abbreviates its D4 estimate `Φ̂₄`; `V` abbreviates `V₄`. Lowercase
 `φ,ν` remain reciprocal-chart coordinates and are never aliases for these
 powers. `V₄` records ability, not permission; authorization and Justice remain
 separately typed.
@@ -247,12 +259,14 @@ A physical light cone is the spacetime set of events that can be causally
 connected under relativistic constraints. It remains bounded by spacetime and
 `c`.
 
-An **option cone** is a different type: the histories an agent can model, rank,
-coordinate, and plausibly reach within a horizon and cost budget.
+An **option cone** is a downstream feasible set: histories from the represented
+field that survive filtering by actual means, authorization, coordination,
+horizon, and cost. It must not be fed back into `Φ₅` as though it were a
+means-independent input.
 
 ```text
 OptionCone_t(A) =
-  ReachableHistories(models, means, coordination, cost, horizon)
+  FeasibleFilter(Ω_t; models, V₄ means, authorization, coordination, cost, horizon)
 ⊆ PhysicallyAdmissibleHistories(X_t)
 ```
 

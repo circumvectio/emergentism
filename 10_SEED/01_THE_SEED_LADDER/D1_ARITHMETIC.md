@@ -97,11 +97,11 @@ are the two faces of number, coupled by `log/exp` `[A]` — used, not discovered
 
 **AM-GM, the price of imbalance.** For the conserved pair, `φ + ν ≥ 2`, with
 equality **iff** `φ = ν = 1` `[A]` (inherited inequality; used, not discovered).
-This is the rung's one theorem with a direction in it: departure from the fixed
-point is never free. Downstream it becomes the equatorial maximum of the
-**score** `B = 2/(φ+ν) = sin θ ≤ 1` — a *conditional* optimum for real systems,
-never the seam, never the finite-node model `P_node = Φ×V` (which stays `[C]` in
-its interior; only its AND-class zero boundary is won).
+This is an exact inequality in the selected chart. Calling departure a cost or
+exporting the equatorial maximum of `B=2/(φ+ν)=sinθ≤1` to a real system adds a
+model and objective. It is never the seam and never the finite-node profile
+`N_node=(Φ̂₄,V₄)`. That profile has Pareto comparison as its scalar-free
+baseline; every product or other scalar requires a calibration contract `κ`.
 
 ---
 

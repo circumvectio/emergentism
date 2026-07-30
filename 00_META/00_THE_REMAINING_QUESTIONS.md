@@ -297,19 +297,31 @@ Know how to act:   teleology
 ```
 
 The loop turns these into a practice: disclose, test, serve, see, dissolve,
-preserve, and return. Its action criterion is not private certainty. It is the
-non-extractive dyad:
+preserve, and return. Its action criterion is not private certainty or one
+uncalibrated score. It is the Justice-constrained, non-extractive dyad:
 
 ```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
+N_node,i = (Φ̂₄,i,V₄,i)
+N_node,H = (Φ̂₄,H,V₄,H)
+N_node,i(after) ⪰_P N_node,i(before)
+N_node,H(after) ⪰_P N_node,H(before)
 η = 0
+at least one coordinate improvement is strict
 ```
+
+The default comparison is componentwise Pareto. Incomparable profiles remain
+open for an explicit, contestable tie-breaker. A scalar product candidate may
+be used only under a calibration contract `κ` naming cardinal scales, zeros,
+units, admissible transformations, uncertainty and domain. Individual and
+whole remain separate bearers; no compensation between them is permitted
+without a further shared aggregation contract, and no aggregate may erase a
+bearer's decline.
 
 So the stabilized answer to "knowledge of good and evil" is not omniscience.
 It is recursive discernment: keep correcting the map and the player until the
-next action raises the symbiont and holobiont together. If one rises by
-degrading the other, the action has left dharma and entered extraction.
+next action preserves or improves the symbiont and holobiont profiles together.
+If one rises by degrading the other, the action has left dharma and entered
+extraction.
 
 This is a navigational closure, not public proof that every moral question has
 been solved. The open work is whether this practice can reliably rebalance real

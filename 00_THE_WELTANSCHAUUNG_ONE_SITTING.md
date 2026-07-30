@@ -2,7 +2,7 @@
 title: "The Emergentist Weltanschauung — One-Sitting Edition"
 status: "ACTIVE — reader synthesis; subordinate to the seven kernel owners"
 date: 2026-07-28
-evidence_tier: "Each claim retains its inline standing; the whole is an [I] synthesis"
+evidence_tier: "[I] reader synthesis; exact standing routes through claim cards and source owners"
 owner: "Reader projection of K-1 through K-7; creates no new doctrine"
 parents:
   - 00_THE_WELTANSCHAUUNG.md
@@ -32,7 +32,8 @@ The strength marks are simple:
 - `[B]` observed, sourced or receipted contact;
 - `[S]` structural consequence inside a declared framework;
 - `[I]` interpretation or synthesis;
-- `[C]` conjecture that must be capable of losing.
+- `[C]` conjecture that must be capable of losing; and
+- `[D]` deliberately unresolved or awaiting a defined test.
 
 ## 1. The Boundaries — before the world is divided
 
@@ -158,9 +159,11 @@ This supplies the framework's two powers. `V₄` is **D4 actual power**—the bo
 energy, tools, access and capability available now. `Φ₅` is **D5 possible
 power**—the structured potential of the option field. Because D5 is merely
 possible, it never acts alone: an actual D4 model token must estimate it as
-`Φ̂₄=Eval₄(M,Φ₅)`. The selected node model couples them as
-`P_node=Φ̂₄V₄`, publicly compressed as `ΦV`. Ability still does not imply
-authorization, and the product is a chosen model rather than a universal law.
+`Φ̂₄=Eval₄(M,Φ₅)`. The live form is the profile
+`N_node=(Φ̂₄,V₄)`. Componentwise dominance needs no cross-axis scale; any
+product, minimum or other scalar needs an explicit calibration and rival test.
+Ability still does not imply authorization, and no profile or score measures
+human worth.
 
 This is an unusual reach, not superiority in intrinsic worth. Humans remain
 bounded by physical light cones, bodies, ecology and limited computation. The
@@ -173,19 +176,20 @@ not send a physical signal backward. Physical retrocausality remains an
 independent conjecture.
 
 As an optional mnemonic, the D5 Rosetta Stone labels possible transformations
-of the pair:
+of the pair. Its neutral move names come first:
 
-- Kali and Kālī are its two demon-polar taking forms;
-- Kṛṣṇa and Arjuna are its two god-polar giving forms;
+- Taking-A and Taking-B are two taking forms;
+- Giving-A and Giving-B are two giving forms;
 - Brahmā, Śiva and Viṣṇu project the three Titan frames—creation,
   dissolution and preservation.
 
-This gives `G7=M4⊎F3`: four moves and three read-only frames. Kālī remains
-two-faced—taking in axis, truth-cutting in function—and no name decides whether
-an actual act was just. Authorization, bearer accounting and outcome receipts
-decide that. Demon-polar and god-polar are functional labels inside this
-mnemonic, never human kinds, ranks or moral verdicts. The Titans themselves
-remain boundary roles, not D5 beings or causal agents.
+This gives `G7=M4⊎F3`: four moves and three read-only frames. Kali, Kālī,
+Kṛṣṇa and Arjuna are optional mythic aliases for the four moves; an alias is
+not an action verdict. Authorization, bearer accounting and outcome receipts
+come first. Only after adjudication may a completed move be described, again
+optionally, as demon-polar or god-polar. Those predicates never name human
+kinds, ranks, identities or essences. The Titans remain boundary roles, not D5
+beings or causal agents.
 
 The μ₄ wager asks whether counterfactual capacity is a genuinely new effective
 freedom. The test is intervention: change represented futures while holding
@@ -215,10 +219,11 @@ boundary. Three gaps remain open to inspection:
 
 `Φ₅` names D5 possible power; `V₄` names D4 actual power. Because modal content
 does not act by itself, a present D4 model evaluates the former as
-`Φ̂₄=Eval₄(M,Φ₅)`. `P_node=Φ̂₄V₄`, publicly `ΦV`, is the framework's selected
-AND-class diagnostic. It says that a map without means cannot enact and means
-without a discriminating map cannot aim. It is not uniquely derived, not a
-measure of a person's worth and not a universal law.
+`Φ̂₄=Eval₄(M,Φ₅)`. `N_node=(Φ̂₄,V₄)` keeps map and means visible as separate
+inputs. A calibrated application may test a conjunctive scalar, but no product
+or minimum is the framework's default. The design intuition remains: a map
+without means cannot enact and means without a discriminating map cannot aim.
+It is not a measure of a person's worth or a universal law.
 
 The complete practice is given in
 [`The Lived Compass`](01_TELEOLOGY/04_THE_LIVED_COMPASS.md).
@@ -364,7 +369,7 @@ No equation derives an ought. D5 can imagine cruelty as easily as care. The
 framework crosses the practical seam by openly choosing bearer-complete
 Justice.
 
-It understands the Good through three gates:
+It evaluates the broader `GoodTriad` through three gates:
 
 - **Truth:** claims proportioned to evidence and open to correction;
 - **Beauty:** intelligible, proportionate form that reveals without capture;
@@ -372,12 +377,15 @@ It understands the Good through three gates:
   visible; aggregate gain cannot launder a destroyed side.
 
 ```text
-Admissible_t(x)
-  := TruthPass_t(x) ∧ FormPass_t(x) ∧ JusticePass_t(x)
+JusticeAdmissible_t(a) := JusticePass_t(a)
+GoodTriad_t(x)         := TruthPass_t(x) ∧ FormPass_t(x) ∧ JusticePass_t(x)
 ```
 
-This is a dated practice rule `[I]`, not a natural quantity. Any gate can reopen
-when sources, form, bearers or consequences change.
+These are dated practice rules `[I]`, not natural quantities. `JusticeAdmissible`
+is the action filter. `GoodTriad` is the broader evaluative or publication label;
+beauty cannot authorize an injustice or veto an urgent just action merely
+because its form is incomplete. Any assessment can reopen when sources, form,
+bearers or consequences change.
 
 Morals name the part-to-whole direction; ethics name the whole-to-part
 direction. Strict syntropy requires durable gains on both sides under Justice.
@@ -385,9 +393,11 @@ Voluntary sacrifice remains a distinct costly class. When no harmless option
 exists, the honest act names the tragedy, minimizes irreversible concentrated
 harm, preserves contest and repair, and records the residue.
 
-Demon-polar action raises a local or short-term potential by exporting hidden
-cost. God-polar action widens durable mutual possibility. These classify moves,
-not permanent kinds of people.
+After evidence, authority and bearer-complete consequences have been assessed,
+the optional verdict language calls a move demon-polar when it raises local or
+short-term potential by exporting hidden cost, and god-polar when it widens
+durable mutual possibility. These are revisable predicates of completed move
+records, not signatures or permanent kinds of people.
 
 ## 11. The Five Apertures — the wager about emergence
 
@@ -410,10 +420,16 @@ D6 exit/nonclosure
  r₆ → boundary-role resemblance to D0
 ```
 
-`μ₀` is an origin aperture. `μ₁…μ₄` are candidate crossings. The stronger
-hypothesis says that saturation of an existing organization may erase a
-necessary contrast or complementary capacity and open a newly discriminable
-freedom `[C]`.
+Across domains this ladder is only a candidate translation grammar. Native
+objects, equations, mechanisms and evidence remain primary; correspondence
+alone transfers no proof, cause, ontology or value.
+
+`μ₀…μ₄` are interface labels for proposed crossings, not a settled scalar
+criterion and not evidence that any crossing exists. `μ₀` marks the selected
+origin interface; `μ₁…μ₄` mark candidate transitions. The stronger hypothesis
+says that saturation of an existing organization may erase a necessary contrast
+or complementary capacity and open a newly discriminable freedom `[C]`. That
+hypothesis remains open until each row supplies its own typed measure and test.
 
 Three exact patterns motivate the wager without proving it:
 
@@ -451,6 +467,15 @@ The worldview keeps these mysteries open:
 - the empirical reality of the proposed μ-crossings;
 - the force correspondence; and
 - whether the chosen Justice orientation survives broad human contact.
+
+The worldview therefore contains its own refusal:
+
+- a theorem is not an ontology;
+- a model is not the territory;
+- a symbol is not a causal agent;
+- an ethic is not derived merely because its geometry is elegant;
+- a worldview is not validated by adherents; and
+- any holder may put it down.
 
 The final test is modularity. If W0 fails, if every strong μ claim reduces, if
 the force map dies, if block-universe plurality has no discriminator and if the

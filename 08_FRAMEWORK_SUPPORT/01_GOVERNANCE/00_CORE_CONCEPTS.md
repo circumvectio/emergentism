@@ -35,7 +35,7 @@ Read owners before this compression:
 4. [Objective Morals and Ethics](../../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
 5. [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 
-## 2. Analytic chart and selected node model
+## 2. Analytic chart and ordered node profile
 
 For `theta in (0, pi)`, the declared reciprocal chart is
 
@@ -48,20 +48,29 @@ B = 2/(phi + nu) <= 1
 ```
 
 These are analytic chart facts `[A]`. They do not establish empirical
-conservation, ontology, ethics, the product node model, or a forced sphere.
+conservation, ontology, ethics, a scalar node score, or a forced sphere.
 Ordinary `0` and `1` remain numbers; infinity is a projective boundary point.
 Titan names are selected symbolic roles, not generators of reality.
 
-The framework declares a normalized conjunctive family `C(Phi,V)` with zero
-boundaries and selects
+The live finite-node object keeps the two ordered factors separate:
 
 ```text
-P_node := Phi * V
+N_node := (Phi_hat_4,V_4) = (Φ̂₄,V₄)
+N_a >=_P N_b iff Phi_hat_4(a) >= Phi_hat_4(b)
+                    and V_4(a) >= V_4(b)
 ```
 
-as one transparent instance. The product is structural by definition and
-conjectural as a universal empirical fit. Minimum, harmonic, Cobb-Douglas, and
-other conjunctive aggregators can rank cases differently. It is not derived from S².
+Componentwise Pareto dominance is the baseline while the factors remain
+ordinal. It is invariant under independent strictly increasing
+reparameterizations and deliberately leaves trade-off cases incomparable.
+Any scalar requires an explicit cardinal calibration contract `κ` naming the
+domain, meaningful zeros and units, admissible transformations, uncertainty,
+cross-factor comparability, rivals, and kill criterion. Only then may a model
+introduce calibrated factors `Φ_c,V_c` and a named candidate such as
+`P×,κ:=Φ_cV_c`. Product, minimum, harmonic, Cobb-Douglas, CES, and other
+aggregators can order cases differently; none is a default consequence of
+ordinal data or of S². Historical `ΦV` is only a mnemonic for joint necessity.
+No profile or calibrated scalar measures human worth, rank, or authority.
 
 ## 3. One modality
 

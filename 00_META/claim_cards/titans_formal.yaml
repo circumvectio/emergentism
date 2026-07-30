@@ -1,8 +1,136 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-TITANS","source":{"path":"05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md","lifecycle":"active","role":"research_seed"},
-  "cards":[
-    {"card_id":"TIT01-03","chapters":["finity-protocol"],"locator":{"section":"4-7","line_start":95,"line_end":191},"plain_claim":"Finity is currently a conservative boundary-and-extension protocol with explicit smallest-extension and recovery obligations.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"declared F0 protocol"},{"tier":"I","scope":"Finity interpretation"}],"owner_ids":["K-1","K-3","K-4"],"dependencies":["TIT01-01","TIT01-02"],"docket_ids":["A1"],"type_boundaries":["F0 specification is not F1 novelty"],"strongest_rival":"Existing partial algebra, projective geometry, topology and type theory may supply all useful work.","discriminator":"Require a smallest extension, conservative recovery and prior-art comparison.","kill_criterion":"If no novel delta survives, retain a specification layer only.","survivor_if_killed":"Typed boundary and extension custody.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"Native formalism remains available."},"disposition":"retain","public":{"state":"source_only","wording":"An F0 boundary protocol; mathematical novelty remains open."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md"]}},
-    {"card_id":"TIT01-04","chapters":["paradox-ledger"],"locator":{"section":"evaluation and stop conditions","line_start":73,"line_end":210},"plain_claim":"Paradox claims must be adjudicated row by row as formal correction, diagnostic, reframe, unresolved question or scoped resolution.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"adjudication protocol"}],"owner_ids":["K-1","K-3"],"dependencies":["TIT01-03"],"docket_ids":["A1","A3"],"type_boundaries":["one row cannot promote another"],"strongest_rival":"Native specialist literature may already classify each case more precisely.","discriminator":"Compare every row with named standard accounts and residual questions.","kill_criterion":"Withdraw any resolution label lacking a scoped formal result and recovery.","survivor_if_killed":"A question ledger with open status.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"Unresolved questions remain open."},"disposition":"retain","public":{"state":"source_only","wording":"Every paradox keeps its own formal burden and residual question."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml"]}},
-    {"card_id":"TIT01-05","chapters":["recovery-and-failure"],"locator":{"section":"recovery and stop conditions","line_start":133,"line_end":210},"plain_claim":"The Finity program must narrow when conservativity, smallest-extension, novelty or independent-review gates fail.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"formal research kill protocol"},{"tier":"C","scope":"future novelty"}],"owner_ids":["K-1","K-3","K-4"],"dependencies":["TIT01-03","TIT01-04"],"docket_ids":["A1"],"type_boundaries":["failure changes scope rather than being renamed success"],"strongest_rival":"The entire program may be lucid exposition of known theory.","discriminator":"Name a theorem, invariant, classification, no-go result or tool beyond prior art.","kill_criterion":"Without such a result, forbid new-algebra language.","survivor_if_killed":"A conservative diagnostic protocol and research narrative.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"The program may be narrowed or put down."},"disposition":"research_docket","public":{"state":"source_only","wording":"Failure may leave useful type hygiene; it does not become novelty."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-TITANS",
+  "source": {
+    "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
+    "lifecycle": "active",
+    "role": "research_seed",
+    "reviewed_source_sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c"
+  },
+  "cards": [
+    {
+      "card_id": "TIT01-03",
+      "chapters": [
+        "finity-protocol"
+      ],
+      "locator": {
+        "section": "4-7",
+        "line_start": 124,
+        "line_end": 199,
+        "anchor": "## 4. Finity protocol `[S/I]`",
+        "fingerprint_sha256": "d8b0928142fa42d928b74fab3a84175c376a56947b694bac8c8597e7d5f6eb4b"
+      },
+      "plain_claim": "Finity is currently a conservative boundary-and-extension protocol with explicit smallest-extension and recovery obligations.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "declared F0 protocol"
+        },
+        {
+          "tier": "I",
+          "scope": "Finity interpretation"
+        }
+      ],
+      "dependencies": [
+        "TIT01-01",
+        "TIT01-02"
+      ],
+      "docket_ids": [
+        "A1"
+      ],
+      "type_boundaries": [
+        "F0 specification is not F1 novelty"
+      ],
+      "strongest_rival": "Existing partial algebra, projective geometry, topology and type theory may supply all useful work.",
+      "discriminator": "Require a smallest extension, conservative recovery and prior-art comparison.",
+      "kill_criterion": "If no novel delta survives, retain a specification layer only.",
+      "survivor_if_killed": "Typed boundary and extension custody.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "Native formalism remains available."
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "An F0 boundary protocol; mathematical novelty remains open."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ]
+    },
+    {
+      "card_id": "TIT01-05",
+      "chapters": [
+        "recovery-and-failure"
+      ],
+      "locator": {
+        "section": "recovery and stop conditions",
+        "line_start": 213,
+        "line_end": 227,
+        "anchor": "## 9. Stop conditions",
+        "fingerprint_sha256": "f5c0f736e173ce5e17bf94396fa262452c7599424b40f0e57f230427f6f57a1a"
+      },
+      "plain_claim": "The Finity program must narrow when conservativity, smallest-extension, novelty or independent-review gates fail.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "formal research kill protocol"
+        },
+        {
+          "tier": "C",
+          "scope": "future novelty"
+        }
+      ],
+      "dependencies": [
+        "TIT01-03",
+        "TIT01-04"
+      ],
+      "docket_ids": [
+        "A1"
+      ],
+      "type_boundaries": [
+        "failure changes scope rather than being renamed success"
+      ],
+      "strongest_rival": "The entire program may be lucid exposition of known theory.",
+      "discriminator": "Name a theorem, invariant, classification, no-go result or tool beyond prior art.",
+      "kill_criterion": "Without such a result, forbid new-algebra language.",
+      "survivor_if_killed": "A conservative diagnostic protocol and research narrative.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "The program may be narrowed or put down."
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "Failure may leave useful type hygiene; it does not become novelty."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/03_FORMAL_SYSTEM/49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ]
+    }
   ]
 }

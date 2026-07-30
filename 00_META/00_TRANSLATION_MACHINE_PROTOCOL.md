@@ -26,7 +26,11 @@ Zero-Sum Resolution Equation
 B = sin θ
 ```
 
-Use `P_node = Φ × V` only for operational node scoring. Do not use `P` alone when the reader could confuse manifold identity, balance, and runtime scoring.
+Use `N_node=(Φ̂₄,V₄)` for the finite-node profile. A scalar such as
+`P×=Φ_cV_c` may appear only after the application declares its calibration,
+admissible transformations, comparison domain, rivals and kill criterion. Do
+not use `P` bare when a reader could confuse manifold identity, balance and a
+calibrated application score.
 
 ## 2. Translation Is Not Proof
 

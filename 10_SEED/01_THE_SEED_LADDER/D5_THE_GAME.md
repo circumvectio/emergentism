@@ -46,14 +46,21 @@ the game; the Justice vow independently restricts which moves are admissible.
 
 **The two powers.** `V₄` is D4 actual power—embodied, causally usable
 capability. `Φ₅` is D5 possible power—the structured modal potential of the
-option field. Because D5 is merely possible, the current calculation uses the
-actual estimate `Φ̂₄=Eval₄(M,Φ₅)`. The node score
-`P_node=Φ̂₄×V₄`, publicly compressed as `Φ×V`, is a declared two-factor model,
-not a theorem about every finite agent. Its zero boundary is AND-class `[S]`
-under the stated need-both premises; mapping a zero model factor to literal
-annihilation requires operational evidence. The product-specific interior
-remains `[C]`. Never cite the sphere seam `P∞=φν≡1` as warrant here. Seam ≠
-score ≠ node.
+option field. Because D5 is merely possible, the current comparison uses the
+actual estimate `Φ̂₄=Eval₄(M,Φ₅)`. The live finite-node object is the ordered
+profile `N_node=(Φ̂₄,V₄)`, not a scalar score. While the two factors remain
+ordinal, componentwise Pareto dominance is the baseline: a profile dominates
+another only when it is no lower on either factor and higher on at least one;
+incomparable profiles remain incomparable. Historical `ΦV` says only that both
+factors matter. Its zero-factor boundary is AND-class `[S]` under the stated
+need-both premises, but mapping a zero model factor to literal annihilation
+still requires operational evidence. Any scalar—including the product
+candidate `P×,κ=Φ_cV_c`—requires an explicit cardinal calibration contract `κ`
+naming domain, meaningful zeros and units, admissible transformations,
+uncertainty, cross-factor comparability, rivals, and a kill criterion. Its
+real-world fit remains `[C]`; it is not a default ranking or a measure of human
+worth or authority. Never cite the sphere seam `P∞=φν≡1` as warrant here. Seam
+≠ profile ≠ calibrated score ≠ node.
 
 **The alphabet (the D5 Rosetta Stone, selected).** `G7 = M4 ⊔ F3`:
 

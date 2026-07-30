@@ -8,6 +8,7 @@ packets, handoffs, and dated receipts are provenance rather than authority.
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -217,17 +218,27 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
     if not path.is_file():
         return [f"missing scoped file: {path.relative_to(ROOT)}"]
     rel = path.relative_to(ROOT)
-    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+    lines = path.read_text(encoding="utf-8").splitlines()
+    historical_source_path_lines: set[int] = set()
+    if rel in HISTORICAL_LINEAGE_CARD_PATHS:
+        try:
+            document = json.loads("\n".join(lines))
+            source = document.get("source", {})
+            if (
+                source.get("lifecycle") in {"legacy", "frozen"}
+                and source.get("role") == "historical_lineage"
+                and isinstance(source.get("path"), str)
+            ):
+                rendered_path = json.dumps(source["path"], ensure_ascii=False)
+                historical_source_path_lines = {
+                    number for number, value in enumerate(lines, 1)
+                    if '"path"' in value and rendered_path in value
+                }
+        except json.JSONDecodeError:
+            pass
+    for line_no, line in enumerate(lines, 1):
         match = FORBIDDEN.search(line)
-        historical_source_record = (
-            rel in HISTORICAL_LINEAGE_CARD_PATHS
-            and '"source"' in line
-            and '"path"' in line
-            and '"lifecycle"' in line
-            and any(f'"{lifecycle}"' in line for lifecycle in ("legacy", "frozen"))
-            and '"role"' in line
-            and '"historical_lineage"' in line
-        )
+        historical_source_record = line_no in historical_source_path_lines
         control_projection_name = (
             match
             and rel == CONTROL_PROJECTION_PATH

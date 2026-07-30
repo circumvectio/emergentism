@@ -46,7 +46,7 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 
 ### Clause 2 — The game on the sphere
 
-> *`P_node=Φ×V` in the finite-node register—read through the Burrisphere, never confused with the reciprocal seam.*
+> *`N_node=(Φ̂₄,V₄)` at the finite-node seam; any scalar requires calibration and is never confused with the reciprocal chart.*
 
 **Standing:**
 
@@ -54,9 +54,9 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 |-------|------|
 | Chart `φ·ν ≡ 1` by construction | `[A]` empty of world |
 | `B≤1` on the reciprocal chart | `[A]` |
-| `P_node≤1` | only after explicit normalization of `Φ,V` |
+| a scalar lies in `[0,1]` | only after an explicit cardinal calibration and range contract |
 | Balance max under budget (AM-GM) | `[A]` on-sphere |
-| Score as AND-class (min/product/CES…) | `[S]` boundary; product interior `[C]` |
+| Scalar candidate (min/product/CES…) | `[I]` selected after calibration; comparative fit `[C]` |
 | Kernel ≠ ethics warrant (CC-CORE-1) | `[S]` |
 
 Grammar and game married, never fused.
@@ -101,7 +101,7 @@ special person's metaphysical power.
 
 ### The creed, held as wager
 
-> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=Φ̂₄V₄`, publicly `ΦV`. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
+> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model retains `N_node=(Φ̂₄,V₄)` as a two-axis profile. Historical `ΦV` says only that both may matter; every scalar requires a declared calibration and may lose to a rival. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
 
 ---
 

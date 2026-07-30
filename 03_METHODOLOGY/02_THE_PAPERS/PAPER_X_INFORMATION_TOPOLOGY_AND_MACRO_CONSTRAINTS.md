@@ -364,18 +364,36 @@ This is not a new fundamental force. It is a ledger discipline for open systems.
 A system is syntropic when its constraint architecture increases local
 organization without hiding its exported entropy and control costs.
 
-For conscious agency, the dyadic version is stricter:
+For conscious agency, the dyadic version keeps the two factors and the two
+bearers visible:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+N_node,i = (PhiHat_4,i, V_4,i)
+N_node,H = (PhiHat_4,H, V_4,H)
 
-strict syntropy:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
+default profile test:
+N_node,i(after) >=_P N_node,i(before)
+N_node,H(after) >=_P N_node,H(before)
 eta = 0
-at least one inequality is strict
+at least one coordinate improvement is strict
 ```
+
+Here `>=_P` is componentwise Pareto dominance. Incomparable profiles remain
+incomparable unless the protocol declares a contestable tie-breaker. A product
+arm remains testable only after a calibration contract `kappa` freezes cardinal
+scales, meaningful zeros and units, admissible transformations, uncertainty,
+the domain and the bearer/horizon:
+
+```text
+P×,kappa,x = Phi_c,x * V_c,x
+Delta P×,kappa,i >= 0
+Delta P×,kappa,H >= 0
+```
+
+The two bearer conditions are a conjunction, not a sum. No score may be added,
+averaged or traded across `i` and `H` without a separate shared aggregation
+contract with commensurable units; even such a contract cannot conceal a
+bearer's deterioration.
 
 This is where the framework's chosen dharma reading enters: not as a commandment from
 outside physics, but as the action policy that preserves or raises the

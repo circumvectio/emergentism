@@ -7,9 +7,26 @@ rosetta:
   regime: "Caṇḍāla"
   register: "[I]"
   canonical_phrase: "What We Haven't Said Yet — The Unarticulated Core"
+title: "What We Haven't Said Yet — historical speculative body"
+status: "SUPERSEDED — no current semantic authority"
+date: 2026-07-30
+evidence_tier: "[B] provenance only"
 ---
 
 # What We Haven't Said Yet — The Unarticulated Core
+
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY.** This body is retained as
+> provenance for an earlier speculative/application phase. Corpus word counts
+> do not create thermodynamic variables; the reciprocal chart does not measure
+> a project, organization, agent, or person; operator names are not vector
+> fields; deployment is not a force; and the fabricated `0.42 -> 0.70 -> 0.90 ->
+> 1.0` trajectory is neither measurement nor prediction. The live node object is
+> `N_node=(Phi_hat_4,V_4)` with Pareto comparison as the scalar-free baseline;
+> any score requires a declared calibration contract and world contact. Truth
+> remains claim-level correspondence earned by evidence, not convergence or
+> internal coherence alone. Current owners: [settled canon](../../00_META/00_SETTLED_CANON_REGISTRY.md),
+> [claim-status register](../../00_META/00_THE_CLAIM_STATUS_REGISTER.md), and
+> [Lived Compass](../04_THE_LIVED_COMPASS.md).
 
 **Version:** v2026.04.04
 **Date:** 2026-04-04

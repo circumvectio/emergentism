@@ -7,181 +7,183 @@
     "tracked_markdown": 2239
   },
   "counts": {
-    "active": 7,
-    "frozen": 3,
-    "legacy": 6,
-    "projection": 2,
+    "active": 6,
+    "archive": 1,
+    "frozen": 2,
+    "legacy": 3,
     "proposal": 2,
     "reader_synthesis": 1
   },
-  "schema": "emergentism/claim-lifecycle-inventory/v1",
+  "schema": "emergentism/claim-lifecycle-inventory/v3",
   "sources": [
     {
       "external_readonly": false,
       "lifecycle": "active",
-      "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "line_count": 241,
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+      "roles": [
+        "historical_source",
+        "research_seed"
+      ],
       "sha256": "3ae5cd3bc48c12cd03dcc5ab18aa4ca17c93cbea57e209bfd659ce144e494b98",
       "work_id": "BK-DHARMA"
     },
     {
       "external_readonly": false,
-      "lifecycle": "active",
-      "path": "../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
+      "lifecycle": "archive",
+      "path": "90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
+      "roles": [
+        "historical_source"
+      ],
       "sha256": "148d92dc4d64dc2c27a41a8d8ed394e725475d8ce4cceb56a46035dd28bf341f",
-      "work_id": "BK-DHARMA"
-    },
-    {
-      "lifecycle": "active",
-      "line_count": 241,
-      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
-      "role": "research_seed",
-      "sha256": "3ae5cd3bc48c12cd03dcc5ab18aa4ca17c93cbea57e209bfd659ce144e494b98",
       "work_id": "BK-DHARMA"
     },
     {
       "external_readonly": true,
       "lifecycle": "proposal",
-      "path": "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
+      "path": "../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
+      "roles": [
+        "historical_source"
+      ],
       "sha256": "df8887940ce76d68e1073ee18b197b3a64059fef73ad094128d6143a4a6105d6",
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
+      "external_readonly": false,
       "lifecycle": "proposal",
       "line_count": 89,
       "path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
-      "role": "proposal",
+      "roles": [
+        "proposal"
+      ],
       "sha256": "bdf84bdd9169fc8e0cdeb3cf95d3668cd98b19bc1bdebd9e82db5534f984ed9f",
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
     {
       "external_readonly": false,
-      "lifecycle": "projection",
-      "path": "../01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
-      "work_id": "BK-FINITY-PRACTICE"
-    },
-    {
       "lifecycle": "active",
-      "line_count": 369,
+      "line_count": 385,
       "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "role": "practical_source_owner",
-      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+      "roles": [
+        "historical_source",
+        "practical_source_owner"
+      ],
+      "sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
       "work_id": "BK-FINITY-PRACTICE"
     },
     {
       "external_readonly": false,
-      "lifecycle": "projection",
-      "path": "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
-      "work_id": "BK-ONE-SITTING"
-    },
-    {
       "lifecycle": "reader_synthesis",
-      "line_count": 486,
+      "line_count": 511,
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "role": "reader_synthesis",
-      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "roles": [
+        "historical_source",
+        "reader_synthesis"
+      ],
+      "sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
       "work_id": "BK-ONE-SITTING"
     },
     {
       "external_readonly": true,
       "lifecycle": "frozen",
-      "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
+      "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
+      "roles": [
+        "historical_source"
+      ],
       "sha256": "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9",
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "external_readonly": true,
       "lifecycle": "frozen",
-      "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
-      "sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
-      "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
-    },
-    {
-      "lifecycle": "frozen",
       "line_count": 12567,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "external_readonly": true,
-      "lifecycle": "legacy",
-      "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
-      "sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
-      "work_id": "BK-SARPASYA"
-    },
-    {
       "lifecycle": "legacy",
       "line_count": 7540,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
       "work_id": "BK-SARPASYA"
     },
     {
       "external_readonly": true,
       "lifecycle": "legacy",
-      "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
-      "sha256": "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
-      "work_id": "BK-SELF-EATING"
-    },
-    {
-      "lifecycle": "legacy",
       "line_count": 849,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
       "work_id": "BK-SELF-EATING"
     },
     {
       "external_readonly": true,
       "lifecycle": "legacy",
-      "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
-      "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
-      "sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
-      "work_id": "BK-SIX-LENSES"
-    },
-    {
-      "lifecycle": "legacy",
       "line_count": 2405,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
       "work_id": "BK-SIX-LENSES"
     },
     {
       "external_readonly": false,
       "lifecycle": "active",
-      "path": "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
-      "sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816",
-      "work_id": "BK-TITANS"
-    },
-    {
-      "lifecycle": "active",
       "line_count": 438,
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
-      "role": "research_seed",
+      "roles": [
+        "historical_source",
+        "research_seed"
+      ],
       "sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816",
       "work_id": "BK-TITANS"
     },
     {
+      "external_readonly": false,
       "lifecycle": "active",
-      "line_count": 210,
+      "line_count": 404,
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
+      "roles": [
+        "formal_research_seed"
+      ],
+      "sha256": "2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "external_readonly": false,
+      "lifecycle": "active",
+      "line_count": 227,
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
-      "role": "research_seed",
-      "sha256": "359e995bdd89c9b2c6b7c5c6bfac52847c8f750fca80b905d92047eec3527978",
+      "roles": [
+        "research_seed"
+      ],
+      "sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "external_readonly": false,
+      "lifecycle": "active",
+      "line_count": 61,
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml",
+      "roles": [
+        "research_ledger"
+      ],
+      "sha256": "07c2d9a114624ec4720a66602e8ddf7a47142f1996cec588c025778656d410f6",
       "work_id": "BK-TITANS"
     }
   ]

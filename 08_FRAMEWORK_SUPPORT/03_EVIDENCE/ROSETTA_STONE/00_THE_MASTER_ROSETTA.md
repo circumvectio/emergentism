@@ -73,7 +73,10 @@ G7 translates the D4/D5 power seam; it does not define that seam:
 V₄ = D4 actual power
 Φ₅ = D5 possible power
 Φ̂₄ = present D4 evaluation of Φ₅
-P_node = Φ̂₄V₄                 public shorthand: ΦV
+N_node = (Φ̂₄,V₄)              live ordered profile
+N_a ⪰_P N_b                    componentwise Pareto baseline
+κ                              explicit cardinal calibration contract
+P×,κ = Φ_cV_c                  calibrated candidate; historical ΦV is no ranking
 
 M4 = two demon-polar taking forms + two god-polar giving forms
 F3 = three Titan-frame projections: create, dissolve, preserve
@@ -89,7 +92,13 @@ D5 agents, causal particles, or arithmetic operands.
 
 The lowercase chart pair `φ,ν` never substitutes for uppercase `Φ,V`.
 Possible power is modal; it becomes causally relevant only through an actual
-model token and actual means. Rosetta translates these relations but neither
+model token and actual means. The ordinal profile `N_node=(Φ̂₄,V₄)` permits
+componentwise Pareto comparison; it does not supply a total order. Any scalar,
+including `P×,κ=Φ_cV_c`, is a separately testable candidate only after an
+explicit cardinal calibration contract `κ` declares its domain, meaningful
+zeros and units, admissible transformations, uncertainty, cross-factor
+comparability, rivals, and kill criterion. Neither profile nor scalar measures
+human worth, rank, or authority. Rosetta translates these relations but neither
 defines them nor transfers warrant.
 
 Current owners:

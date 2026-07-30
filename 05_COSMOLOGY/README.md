@@ -29,8 +29,9 @@ visual synthesis; it is not a semantic owner.
 ## Hard boundaries
 
 - `φν=1` is an analytic chart identity, not empirical conservation or ethics.
-- `P_node=ΦV` is the selected normalized product instance inside a broader
-  conjunctive family, not the uniquely forced real-world law.
+- `N_node=(Φ̂₄,V₄)` is the typed finite-node profile. Product, minimum and other
+  scalar candidates require explicit cardinal calibration and fair comparison;
+  none is a default or a real-world law.
 - D4 is causal actuality; D5 is modeled possibility. Commitment enacts one D4
   action, and the environment returns a separate outcome receipt.
 - Anticipated futures influence the present through represented models and

@@ -76,7 +76,7 @@ not several independent confirmations.
 |---|---|
 | Reciprocal chart `φ=cot(θ/2)`, `ν=tan(θ/2)`, `φν=1`, `φ+ν≥2` | analytic `[A]` in the chosen chart; no empirical or moral inference |
 | Sovereign `TitanFrame={0_T,1_T,∞_T}` | selected opaque roles `[I/S]`; no Titan arithmetic/coercion; ordinary numeric `0`,`1` and projective `∞_P` retain their separate mathematical types |
-| `P_node=ΦV` | selection/interpretation of the normalized product `[I]`; formal consequences conditional on that declaration `[S]`; universal real-world fit `[C]`; rivals required |
+| `N_node=(Φ̂₄,V₄)` | ordered finite-node profile `[S]`; componentwise Pareto comparison is invariant under independent monotone reparameterization; any scalar such as `P×,κ=Φ_cV_c` requires a declared calibration contract `κ`, remains a rival-tested model `[I/C]`, and never measures human worth or authority |
 | D0–D6 | structural/interpretive scaffold `[I]`; not a necessary census of nature |
 | `μ₀…μ₄` | five selected crossings; `μ₂` is a reduced formal state lift `[A/I]`, `μ₃` an operational stochastic state-to-record interface `[A/I]`, while ontic saturation/actualization and the remaining crossings stay `[C]`; missing reduction means `currently_unreduced` |
 | `D6` return | selected boundary-role comparison `[I]`; formal self-similarity unestablished `[C]`; no sixth positive freedom |

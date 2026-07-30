@@ -26,20 +26,22 @@ not derived from `φν=1`, `B`, `P_node`, G7, or the D-ladder.
 - **Justice** is bearer-complete constraint on action: no person, whole, payer,
   beneficiary, or exposed third party disappears into an aggregate.
 
-The Good is the chosen conjunction:
+The broader evaluative label is the chosen conjunction:
 
 \[
-Good(a) := Truth(a)\land Beauty(a)\land Justice^R(a).
+GoodTriad(a) := Truth(a)\land Beauty(a)\land Justice^R(a).
 \]
 
 This formula is a definition inside the worldview, not a theorem that moral
 facts follow from geometry. If any factor is absent, Emergentism withholds the
 label “good”; it does not claim that the world mechanically punishes the act.
 
-Every applied verdict is time-indexed and defeasible:
+This is distinct from `JusticeAdmissible(a):=J^R(a)`, the action-feasibility
+filter. Form quality never authorizes injustice or blocks an otherwise required
+urgent act. Every applied triad verdict is time-indexed and defeasible:
 
 \[
-GoodAsOf(a,t,R_t) := Truth_t(a)\land Beauty_t(a)\land Justice^{R_t}_t(a).
+GoodTriadAsOf(a,t,R_t) := Truth_t(a)\land Beauty_t(a)\land Justice^{R_t}_t(a).
 \]
 
 “As of now” means only that the available sources, form review, and

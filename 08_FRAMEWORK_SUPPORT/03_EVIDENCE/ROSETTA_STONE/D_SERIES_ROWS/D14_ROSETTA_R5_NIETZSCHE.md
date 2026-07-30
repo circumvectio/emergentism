@@ -18,11 +18,23 @@ rosetta:
   register: "[I]"
   canonical_phrase: "Rosetta R5 — Nietzsche correspondence"
 title: "Rosetta R5: Nietzsche's Three Metamorphoses — Burri Sphere Correspondence"
-status: "ACTIVE — interpretive correspondence"
-evidence_tier: "[I] Interpretive — creative synthesis across traditions."
+status: "SUPERSEDED — no current semantic authority"
+evidence_tier: "[B] provenance only"
+date: 2026-07-30
 ---
 
 # ROSETTA R5: NIETZSCHE'S THREE METAMORPHOSES — BURRI SPHERE CORRESPONDENCE
+
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY.** This creative correspondence
+> is retained as provenance, not as a reading of Nietzsche established by his
+> text or as a civilizational law. It assigns uncalibrated scalar scores, sums
+> incomparable nodes, declares cooperation and the Great Filter solved, and
+> turns a selected chart into authority; none of those moves survives. Current
+> Rosetta work must preserve source meaning and evidence tier, use
+> `N_node=(Phi_hat_4,V_4)` with Pareto comparison as its scalar-free baseline,
+> and treat coordination claims as bounded, causally plural conjectures. See the
+> [Master Rosetta](../00_THE_MASTER_ROSETTA.md) and
+> [conjecture register](../../../../06_ONTOLOGY/04_THE_CONJECTURES.md).
 
 ## The Fourth Metamorphosis Revealed by Geometry
 

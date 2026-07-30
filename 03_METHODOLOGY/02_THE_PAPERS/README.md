@@ -29,7 +29,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 - `P∞ = φ · ν = 1` is a chart identity on the declared open domain, not a
   physical conservation law.
 - `B = sin θ` is the balance function.
-- `P_node = Φ × V` is empirical or organizational performance.
+- `N_node=(Φ̂₄,V₄)` is the live ordered profile. Any organizational or empirical scalar, including `P×,κ=Φ_cV_c`, requires a declared calibration contract `κ`, fair rivals, held-out outcomes, and a kill criterion.
 - Physics, neuroscience, biology, and institutional papers are translations unless their own tier table explicitly says otherwise.
 - Older paper tables may still show legacy `[S]`. Under the current ladder, split `[S]` into `[A]` for established mathematics / textbook science / third-party empirical facts, and `[B]` for repository, runtime, or experiment receipts.
 
@@ -82,7 +82,7 @@ This grouped program does not consume the reserved `Q`, `R`, or `S` letters in t
 ## Standalone Methodological Papers
 
 - [`THE_RECURSIVE_TRIVIUM.md`](THE_RECURSIVE_TRIVIUM.md) — **Canonical paper (v1.2).** The teleological loop that subsumes OODA and the classical Trivium; ships the §8 apophatic exit and the §9 varṇa/regime mapping.
-- [`THE_RECURSIVE_TRIVIUM_BRIEFING.md`](THE_RECURSIVE_TRIVIUM_BRIEFING.md) — Executive briefing on teleological cognition (OODA loop, classical Trivium, Peirce's inference triad).
+- [`THE_RECURSIVE_TRIVIUM_BRIEFING.md`](THE_RECURSIVE_TRIVIUM_BRIEFING.md) — Superseded application briefing retained for genealogy; do not route it as current doctrine.
 - [`THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md) — **Formal synthesis (v1.2).** Peirce state-machine, permutation-test argument, synthetic teleology, transcendental metrics, Burrisphere thermodynamics, apophatic computing; wired to the APU runtime (`apu_cycle.py`). Supersedes the Deep-Synthesis (v1.0) and Operationalization (v1.1) drafts.
 - [`THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md`](THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md) — **Competitive / neuro / cliodynamical synthesis (v1.3).** Telos-Shield HFT simulation, neurobiology of the three passes, HANDY η-axis cliodynamics, PKM anti-stagnation engine. Supersedes the Competitive-Survival (v1.0) draft.
 

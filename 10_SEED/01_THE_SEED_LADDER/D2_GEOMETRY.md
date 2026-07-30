@@ -90,7 +90,7 @@ the selected meridian crosses the **equator**, at `φ=ν=1`. The equator of the
 full sphere is a circle, not one point. The imbalance price
 `γ = (φ+ν)/2` rises toward either pole along the slice.
 
-**The iron separation** (keel-108, CC-CORE-1): the **seam is never the score is never the node.** `P∞ ≡ 1` is a constant (chart identity); `B ≤ 1` is a variable (max at the equator); `P_node = Φ×V` is a *finite-node model* whose product interior is `[C]` — only its AND-class boundary (lose either factor entirely, lose everything) is settled. The seam stays 1 even as `ν → 0`; it therefore never witnesses the zero-factor catastrophe, and citing it as the ethics warrant is the convicted laundering move. Three objects, three tiers, no silent bridge.
+**The iron separation** (keel-108, CC-CORE-1): the **seam is never the score is never the node.** `P∞ ≡ 1` is a constant chart identity; `B ≤ 1` is a variable selected chart score; `N_node=(Φ̂₄,V₄)` is an ordered finite-node profile whose scalar-free comparison is componentwise Pareto dominance. A product, minimum, harmonic, CES, or other scalar exists only under a declared calibration contract `κ`. The seam stays 1 even as `ν → 0`; it therefore witnesses neither node collapse nor an ethical warrant. Three objects, three tiers, no silent bridge.
 
 ---
 

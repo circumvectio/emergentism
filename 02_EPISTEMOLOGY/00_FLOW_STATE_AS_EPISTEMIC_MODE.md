@@ -30,7 +30,10 @@ rosetta:
 
 ## 1. The Mapping
 
-The Burri Sphere constraint **φ · ν = 1 on S²** is not merely a formal identity. It describes a *mode of knowing* — what Csikszentmihalyi calls **flow**, what McGilchrist calls **hemispheric synchrony**, and what contemplative traditions call **direct perception**.
+The open-chart constraint **`φ(θ) · ν(θ) = 1` for `θ∈(0,π)`** is a formal
+identity. This document then uses it as an interpretive analogy for a *mode of
+knowing* associated with flow and contemplative attention; the analogy supplies
+no evidence for the psychology or metaphysics.
 
 ### Core State / Objective Function discipline
 
@@ -43,7 +46,9 @@ follows is a *mapping* — structural, interpretive, phenomenological — betwee
 that chart constraint and lived experience.
 
 **Constraint vs. optimal state:**
-- **φ · ν = 1** is the *constraint* — every point on S² satisfies it. This is not a claim that everything is in flow.
+- **φ · ν = 1** is the *constraint* — every point in the declared punctured
+  reciprocal chart satisfies it. The poles are excluded. This is not a claim
+  that everything is in flow.
 - **φ = ν = 1** (the equator, B = sin θ = 1) is the *optimal* state — peak, not default. Most of the sphere is not the equator.
 - **The potential for flow is universal** (all points lie on the constrained surface). **The actualization of flow is rare** (requires reaching the equator).
 

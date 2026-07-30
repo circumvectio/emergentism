@@ -363,7 +363,7 @@ Zero-Sum Resolution Equation
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — ordered profile `N_node=(Φ̂₄,V₄)`, componentwise Pareto baseline, and the explicit scalar calibration contract `κ` (distinct from this page's `κ=0` boundary symbol)
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 
 *Anmut and Demut | 2026-03-23 | German gives the Burri Sphere a beautiful translation surface. It is a reading aid, not a proof.*

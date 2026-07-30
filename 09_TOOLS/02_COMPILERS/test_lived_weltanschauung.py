@@ -242,7 +242,8 @@ class LivedWeltanschauungTests(unittest.TestCase):
         )
         self.assertIn("`[A]` chart identity; `[C]` world interpretation", matrix)
         self.assertIn("The former F5/theurgy operational routing | **retired**", matrix)
-        self.assertIn("selected normalized finite-node action model", matrix)
+        self.assertIn("live ordered finite-node profile", matrix)
+        self.assertIn("requires an explicit calibration contract", matrix)
         self.assertIn("chosen two-direction Justice test", matrix)
         self.assertNotIn("Reality is `S²`; the geometry is the territory", matrix)
 

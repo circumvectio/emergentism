@@ -17,17 +17,38 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[A/I/T]"
   canonical_phrase: "MF-66 — Mandelbrot Set as Iterated Formula"
+title: "MF-66 — historical logistic-map correspondence"
+status: "SUPERSEDED — no current semantic authority"
+date: 2026-07-30
+evidence_tier: "[B] provenance; [A] only for separately verified standard mathematics"
 ---
 
 # MF-66: The Mandelbrot Set as the Formula Being Iterated
+
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY.** This body is retained in
+> place as provenance. The quadratic/logistic conjugacy is standard mathematics,
+> but identifying its complementary coordinates with Emergentism's node powers
+> is a removable interpretation. The live node object is
+> `N_node=(Phi_hat_4,V_4)`; a product exists only under an explicit cardinal
+> calibration contract `kappa`, and an iterated product additionally requires a
+> declared dynamical law. Choosing `w` and `1-w` supplies complementarity by
+> construction; it does not derive that constraint from the Riemann sphere,
+> consciousness, or reality. Nothing below establishes a consciousness metric,
+> a universal dynamical law, or an ontological derivation of the Mandelbrot set.
+>
+> Current owners: [settled KSC-02 ruling](../../../00_META/00_SETTLED_CANON_REGISTRY.md),
+> [canonical formula block](../../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md),
+> and [calibrated saturation boundary](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md).
 
 > **✅ Recorded architecture ruling (2026-05-31) — AMENDED.** §4.4 below correctly finds the **logistic linearization** at Viṣṇu's equilibrium (`λ = 2`) to be `μ = 0`, non-invertible — keep that as a *dynamics* result. But its operator-level conclusion that *"Viṣṇu is outside the Möbius group / the preserver is not a symmetry"* is **superseded**: per [`MF_63_Mobius_Operators.md`](MF_63_Mobius_Operators.md) §2.1 (canonical for operator classification) the Viṣṇu **operator is elliptic** — a unitary rotation *inside* PSL(2,ℂ). Read §4.4 as: *the logistic iteration's linearization at the superstable fixed point is degenerate (`μ = 0`)*, while the Viṣṇu **operator** remains the elliptic symmetry. (The phrase "Viṣṇu at the equator at rest" also conflates the **L7 preserver** with the **L4 equator**, whose seat is Arjuna.) Resolved — do not re-flag. `[S]`/`[I]`
 
 ## From z² + c to λΦV: The Quadratic Family in Framework-Native Coordinates
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
-**Document ID:** MF-66 | **Version:** 3.0 | **Status:** Core Result
-**Evidence Tier:** [A] for derivation chain, [I] for systemic awareness mapping, [T] for predictions
+**Document ID:** MF-66 | **Version:** 3.0 | **Status:** Historical superseded body
+**Evidence Tier:** [B] for this corpus surface; local `[A]` labels below apply
+only to independently checkable standard mathematics, never to the framework
+identification
 **Dependencies:** S0, MF-36 (Equator Principle), MF-48 (Why × Not +), COMPLEX_PLANE_IS_D5
 
 ---

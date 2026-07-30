@@ -7,7 +7,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+    "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -20,13 +20,13 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
           "lifecycle": "active",
           "claimCardIds": ["FIN01-01"]
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
           "lifecycle": "reader_synthesis",
           "claimCardIds": ["OS01-13", "OS01-20", "OS01-22", "OS01-26"]
         }
@@ -41,13 +41,13 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
           "lifecycle": "active",
           "claimCardIds": ["FIN01-01", "FIN01-02"]
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
           "lifecycle": "reader_synthesis",
           "claimCardIds": ["OS01-08", "OS01-13", "OS01-22"]
         }
@@ -62,13 +62,93 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
           "lifecycle": "active",
           "claimCardIds": ["FIN01-01", "FIN01-02"]
         }
       ],
       "publicDisposition": "bounded_current",
       "requiredMarkers": ["Three gates before", "Three candidate protocols are typed as drafts", "FPE-READ-01 · TYPED DRAFT · NOT RUN", "FPE-REVIEW-01 · TYPED DRAFT · NO REVIEW EXISTS", "FPE-COMPARE-01 · TYPED DRAFT · NOT PREREGISTERED", "None of these gates validates an ontology."]
+    },
+    {
+      "surface": "compass/index.html",
+      "role": "typed_node_profile_compass",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Live two-axis profile", "calibration contract"]
+    },
+    {
+      "surface": "5/index.html",
+      "role": "d5_profile_and_calibration_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["componentwise Pareto comparison", "calibration contract"]
+    },
+    {
+      "surface": "plainly/index.html",
+      "role": "plain_language_node_profile",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["componentwise Pareto dominance", "calibration contract"]
+    },
+    {
+      "surface": "discoveries/nonduality/index.html",
+      "role": "node_profile_nonidentity_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Neither a scalar nor a verdict about a bearer follows"]
+    },
+    {
+      "surface": "about/index.html",
+      "role": "typed_power_public_summary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["never measures human worth", "calibration contract"]
+    },
+    {
+      "surface": "read/index.html",
+      "role": "reader_profile_orientation",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["any scalar requires a declared calibration contract"]
+    },
+    {
+      "surface": "axioms/index.html",
+      "role": "kernel_ethics_scalarization_fence",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Justice remains a separate chosen premise"]
+    },
+    {
+      "surface": "journey/index.html",
+      "role": "journey_node_profile_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["remains an unwon", "calibration contract"]
+    },
+    {
+      "surface": "rosetta/index.html",
+      "role": "rosetta_typed_profile_boundary",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["compare componentwise before any calibrated scalar"]
+    },
+    {
+      "surface": "book/index.html",
+      "role": "current_reader_node_profile",
+      "claimCardIds": ["OS01-09"],
+      "claimSources": [{"source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md", "sourceRevision": "sha256:e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad", "lifecycle": "reader_synthesis", "claimCardIds": ["OS01-09"]}],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": ["Componentwise dominance needs no cross-axis scale", "calibration contract"]
     }
   ],
   "sequence": ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"],
@@ -84,7 +164,7 @@
       "boundary": "No field theorem says 0 times infinity equals 1. The emblem is not an operation license, substance, agent, or forced generator of reality.",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
       "claimCardIds": ["OS01-01", "OS01-02"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:5ad2a88ac7eb1b39eba2d5090d9591c51a29eb748a0888b542e0dd2ac7881058",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "titans",
@@ -92,6 +172,7 @@
         "id": "mu0",
         "label": "Origin aperture",
         "source": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+        "sourceRevision": "sha256:f059e6de77e706b4c144ef12b6ca3d45320485fdd6d0d21619d1babbb19324ba",
         "saturation": "None is claimed. mu0 names an origin aperture, not exhaustion of a prior positive freedom.",
         "capability": "Stable distinction and arithmetic become expressible.",
         "recovery": "D1 must preserve the boundary/operand distinction.",
@@ -112,7 +193,7 @@
       "boundary": "A limit toward infinity is not a field quotient by zero, and projective infinity is not an ordinary real number.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md",
       "claimCardIds": ["OS01-03", "OS01-04"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:664ccf7270c642e3ffa12319dd38fa4b0b793319aa5e97ada5c720aeb448d671",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "logline",
@@ -120,6 +201,7 @@
         "id": "mu1",
         "label": "Configuration aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
+        "sourceRevision": "sha256:442d5144c225d274a8732d4612566b672c72baca84bd15309e9c402fdb8eb0b5",
         "saturation": "One-dimensional values and limits cease to display relations among many inputs, outputs, and charts economically.",
         "capability": "Functions, graphs, relations, atlases, and geometry become explicit configurations.",
         "recovery": "Every D2 configuration must recover valid D1 values and operations on its declared domain.",
@@ -140,7 +222,7 @@
       "boundary": "A picture may reveal structure hidden on a line, but visualization alone proves neither a new ontology nor strong emergence.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md",
       "claimCardIds": ["OS01-05"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:02c6dc098a39a86dddeca70a3d6b3e7758984299a476a0285515d0317e12b901",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "muLimit",
@@ -148,6 +230,7 @@
         "id": "mu2",
         "label": "State-assignment aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md",
+        "sourceRevision": "sha256:7c5f9c3b13bd78db4e592564618e51eb1d9cca81d852399dca82097194acb298",
         "saturation": "Classical configuration alone does not encode the full probability assignments associated with incompatible quantum measurement contexts.",
         "capability": "Hilbert-space states, density operators, POVMs, and Born probability assignments become available.",
         "recovery": "Quantum states must reproduce the declared measurement probabilities and classical limits where those limits apply.",
@@ -168,7 +251,7 @@
       "boundary": "No realized D4 event does not mean zero change, zero momentum, or a timeless state. This scaffold does not solve measurement, quantum gravity, or quantum interpretation.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md",
       "claimCardIds": ["OS01-06", "OS01-07"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:7c5f9c3b13bd78db4e592564618e51eb1d9cca81d852399dca82097194acb298",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "bloch",
@@ -176,6 +259,7 @@
         "id": "mu3",
         "label": "Actual-record aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+        "sourceRevision": "sha256:bc22b6237957d17d5726b6424c13f9444e0a623ce54a2190d9a41103c7a46251",
         "saturation": "A probability assignment, even if exhaustively specified, is not itself a particular performed interaction and recorded outcome.",
         "capability": "An actual carrier, interaction, event, and receipted record enter the description.",
         "recovery": "Repeated D4 records must remain statistically answerable to the D3 probability model under the stated preparation and measurement conditions.",
@@ -196,7 +280,7 @@
       "boundary": "A selector can issue a commitment receipt but cannot manufacture the world's outcome receipt. Physical light cones remain bounded by spacetime and c.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
       "claimCardIds": ["OS01-08"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:bc22b6237957d17d5726b6424c13f9444e0a623ce54a2190d9a41103c7a46251",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "horn",
@@ -204,6 +288,7 @@
         "id": "mu4",
         "label": "Counterfactual-capacity aperture",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
+        "sourceRevision": "sha256:442d5144c225d274a8732d4612566b672c72baca84bd15309e9c402fdb8eb0b5",
         "saturation": "Actual histories alone do not supply an agent with explicit alternatives, rankings, and conditional plans.",
         "capability": "A finite agent models possible futures, ranks options, coordinates, and selects a reachable action.",
         "recovery": "Every D5 model token is an actual D4 inscription or process, and every enacted choice returns to D4 consequence.",
@@ -221,10 +306,10 @@
       "modality": "possible",
       "summary": "Φ names D5 possible power: the structured potential of an option field. V names D4 actual power: embodied capability and usable means. A present model evaluates the first and couples it to the second; an unrealized future never acts by itself.",
       "inherited": "Decision theory, control, planning, counterfactual reasoning, and institutional coordination supply comparison classes.",
-      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. P_node = Φ̂₄ times V₄, publicly Φ times V, is a selected model—not a universal law or future-to-past force. Lowercase φ and ν remain chart coordinates.",
+      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. N_node = (Φ̂₄,V₄) is the live profile and componentwise Pareto comparison is the invariant baseline. A scalar requires a declared calibration contract κ and rival test; no product or minimum is the framework default. Lowercase φ and ν remain chart coordinates.",
       "source": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
       "claimCardIds": ["OS01-09", "OS01-10", "OS01-11", "OS01-12"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:5bd584d2bcbd02d857a77dbf586b8830f3088d88b71eba4fb81e5b0f7acd23b6",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "burrisphere",
@@ -243,6 +328,7 @@
         "id": "b6",
         "label": "Exit boundary",
         "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
+        "sourceRevision": "sha256:365fcf449bf2196fd794b9534660ce161041fcab0d448f42c13f9c89e83fe5b0",
         "saturation": "The scaffold has reached its last selected positive register; no universal exhaustion of possibility is claimed.",
         "capability": "No new positive freedom. The map exposes its own boundary and the reader's option to leave it.",
         "recovery": "D6 must preserve all lower distinctions without pretending to complete them.",
@@ -263,7 +349,7 @@
       "boundary": "There is no additional μ-crossing after μ4, and D6 is not identical to D0. The return edge r6 means boundary-role resemblance only, not recurrence, identity, topology, or self-similarity.",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
       "claimCardIds": ["OS01-25", "OS01-26"],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:365fcf449bf2196fd794b9534660ce161041fcab0d448f42c13f9c89e83fe5b0",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "ccc",
@@ -318,6 +404,45 @@
     "assets/css/living-map.css",
     "assets/js/living-map.js",
     "living-map.json"
+  ],
+  "currentInfrastructureSurfaces": [
+    "404.html",
+    "historical-boundary/index.html",
+    "offline/index.html"
+  ],
+  "frozenLegacySurfaces": [
+    "amrita/index.html",
+    "atlas/index.html",
+    "build/index.html",
+    "cascade.html",
+    "compass/_archive/index_2026_07_12_pre_restructure.html",
+    "cosmology/index.html",
+    "egg/index.html",
+    "epistemology/index.html",
+    "halahala/index.html",
+    "lightcone.html",
+    "log-realignment/index.html",
+    "methodology/index.html",
+    "ontology/index.html",
+    "passage.html",
+    "r/0/index.html",
+    "r/1/index.html",
+    "r/2/index.html",
+    "r/3/index.html",
+    "r/4/index.html",
+    "r/5/index.html",
+    "r/6/index.html",
+    "riemann/index.html",
+    "rosetta-d-series/index.html",
+    "saturation/index.html",
+    "sources/index.html",
+    "sphere.html",
+    "suda-notes/index.html",
+    "suda/index.html",
+    "test/index.html",
+    "theology/index.html",
+    "titans.html",
+    "titans/index.html"
   ],
   "frozenLibraryRoots": ["papers", "canon", "foundations", "trinity", "formal", "paradox", "memetic", "rosettad", "operators", "will", "value", "ground", "sacred", "method", "meta"]
 }

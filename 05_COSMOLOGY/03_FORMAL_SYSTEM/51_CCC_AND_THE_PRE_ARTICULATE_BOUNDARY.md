@@ -56,7 +56,7 @@ aeons by a **conformal rescaling** of the metric.
 
 ## 3 · Three type errors, each already named in canon `[S]`
 
-**3.1 `D0` is metalanguage, not a physical state.**
+**3.1 `D0` is a selected boundary register, not a physical epoch.**
 
 ```text
 Carrier(D0) := {ground_0}          one opaque object-level role
@@ -64,10 +64,11 @@ TitanFrame : Type_Meta             vocabulary ABOUT the boundary
 NoCoercion(TitanFrame, Carrier(D0))
 ```
 
-`KSC-04` holds that the Titan seats are "not three object-level states inside
-D0," and the Trinity canon articulates the boundary *from the D1/D4 descriptive
-side*. Assigning `D0` to a cosmological epoch — "the pre-Big-Bang state **is**
-D0" — promotes a metalinguistic role to a physical state. This is the same
+`Carrier(D0)` is an object-level boundary role inside the selected D-scaffold;
+`TitanFrame` is the metalanguage used to discuss it. `KSC-04` holds that the
+Titan seats are not three object-level states inside D0. Assigning `D0` to a
+cosmological epoch—"the pre-Big-Bang state **is** D0"—promotes a structural
+register to a physical-state claim. This is the same
 promotion doc 50 rejected one register up, where treating parallel blocks as
 actual was a D5→D4 error. Here it is D0→D4.
 
@@ -94,13 +95,14 @@ is pre-articulate and D6 post-articulate.
 
 ## 4 · The one well-formed part `[C]`
 
-By doc 48 §5, a crossing is a candidate `μ` only if a **degree of freedom is
-gained**. "Dimensions of freedom emerge in the initial moments" is, uniquely
-among today's proposals, a **type-D** claim. It is the first thing in this arc
-that would qualify as a `μ` if it were true.
+Doc 48's former type-D μ criterion is withdrawn pending `HR-1`. "Dimensions of
+freedom emerge in the initial moments" is therefore a **type-D boundary
+conjecture**, not automatically a μ candidate. It would still owe a recovery
+map, a gained-effective-freedom witness, reducibility analysis, and a
+discriminator that separates positive from negative cases.
 
-That is worth saying plainly: the owner's instinct located the right *kind* of
-claim. It now owes what every `μ` owes under `KSC-05` — system boundary,
+That is worth saying plainly: the owner's instinct located a relevant *kind* of
+claim without settling its classification. It now owes what every `μ` owes under `KSC-05` — system boundary,
 saturation statistic, threshold, novelty test, lower-description recovery,
 preregistered prediction, and kill.
 
@@ -166,10 +168,10 @@ would only move the question behind a different curtain.
 |---|---|---|
 | CCC joins aeons by conformal rescaling, not dimensional emergence | `[B]` | a CCC formulation in which dimension changes at the crossover |
 | CCC is contested, not established; the CMB signal is disputed | `[B]` | an independently replicated confirmation |
-| `D0` is metalanguage; identifying it with an epoch is a type promotion | `[S]` | show `KSC-04`/`KSC-05` permit the identification |
+| `D0` is a selected boundary register; identifying it with an epoch is a type promotion | `[S]` | show `KSC-04`/`KSC-05` permit the identification |
 | `μ₀` has no prior register, so it is not a first moment | `[S]` | show the D1 owner grants `μ₀` a temporal before |
 | `r₆` forbids the recurrence reading | `[S]` | overturn `KSC-06` |
-| dimensional emergence *would* be type-D, hence a genuine `μ` candidate | `[C]` | show it gains no freedom |
+| dimensional emergence is type-D but does not thereby earn μ status | `[C/S]` | pass the full KSC-05 contract and a discriminating μ test |
 | the adjacent physics is reduction 4→2 with scale, not emergence 0→4 in time | `[B]` | a program deriving dimensions emerging from zero |
 | "solves paradoxes" is unpaid until each is named | `[S]` | name them and pass the §8 policy |
 

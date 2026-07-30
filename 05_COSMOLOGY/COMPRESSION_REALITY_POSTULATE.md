@@ -17,8 +17,8 @@ authority.
   evidence, and domain loss are held fixed.
 - Description length is relative to a declared language or machine and does not
   by itself establish what is more real.
-- `P_node = ΦV` is the selected normalized member of a wider conjunctive
-  family, not a uniquely derived generator of nature.
+- `N_node=(Φ̂₄,V₄)` is the live two-axis profile. Product and other scalar
+  candidates require explicit calibration and are not generators of nature.
 - `{0,1,∞}` are selected symbolic boundary roles; they are not forced
   pre-mathematical beings.
 - D0–D6 is a selected interpretive scaffold. `D6 ~ D0` denotes a proposed

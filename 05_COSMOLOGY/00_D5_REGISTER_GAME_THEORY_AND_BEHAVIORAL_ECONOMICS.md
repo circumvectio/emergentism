@@ -102,11 +102,18 @@ worldlines. **`V₄` is D4 actual power at the action boundary**: body, tools,
 energy, access, and execution capacity—hands, shovel, industrial digger,
 runway, machine. The option cone is D5 counterfactual content, **never** the
 `c`-bounded physical light cone. A present D4 model token carries the estimate
-`Φ̂₄=Eval₄(M,Φ₅)` used in `P_node=Φ̂₄V₄` (public shorthand `ΦV`). Enacted agency
+`Φ̂₄=Eval₄(M,Φ₅)`, giving the live ordered profile
+`N_node=(Φ̂₄,V₄)`. Componentwise Pareto dominance is the baseline while the
+factors remain ordinal; trade-off profiles remain incomparable. Enacted agency
 couples that D5-facing estimate to D4 power and authorization; neither factor
-alone produces an action. A child beside a jet and an old pilot without the
-needed bodily/tool access are opposite zero-factor failures. The grounding is
-the lookahead reading
+alone produces an action. Historical `ΦV` says only that both factors matter.
+A scalar candidate such as `P×,κ=Φ_cV_c` is admissible only after an explicit
+cardinal calibration contract `κ` declares domain, meaningful zeros and units,
+admissible transformations, uncertainty, cross-factor comparability, rivals,
+and a kill criterion. It is never a default ranking or a measure of human worth
+or authority. A child beside a jet and an old pilot without the needed
+bodily/tool access illustrate the declared need-both boundary; they do not
+calibrate the factors. The grounding is the lookahead reading
 
 > **[D] Scope (2026-07-03, staged for review):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -162,8 +169,8 @@ These stronger claims remain conjectures:
 - If reactive or lower-complexity models predict the specified planning or
   awareness-mediated tasks as well as the declared counterfactual model after
   fair complexity and intervention controls, the first claim is defeated.
-- If a durable institution is shown to persist while systematically violating `η = 0` with no wider-boundary `ΣΔB` or `ΣΔP_node` return, the third claim is falsified.
-- If game theory produces a strategic situation where equatorial balance (`B = sin θ`) or node flourishing (`P_node = Φ × V`) is not even conditionally favored, the second claim weakens to a special case.
+- If a durable institution is shown to persist while systematically violating `η = 0`, and neither its declared bearer profiles nor a calibrated aggregate under one shared `κ` show the return predicted by the option-field equation, the third claim is falsified.
+- If a proposed scalar ordering reverses under independently admissible reparameterizations, or claims a default ranking where the componentwise Pareto baseline leaves profiles incomparable, the second claim fails unless it is narrowed to a calibrated, domain-local model under an explicit `κ`.
 
 The framework may propose stronger unification.
 It may not present that as already settled science.
@@ -218,9 +225,11 @@ D4/D5 content distinction.
 | **selection** | D4 comparison, ranking, and selection events operating on D5 possible-action content; commitment, performance, and receipt are also D4 | established disciplines study D4 choices with counterfactual models; D5 types the represented possibilities, not the event that ranks them |
 | **η** | extraction rate, rent asymmetry, parasitic transfer, exploitative spread | [I/S] framework variable translated through economics and public-goods theory |
 | **Φ₅** | D5 possible power: option-field quality, coverage, discriminability, and coordinability; coherence, trust, legibility, and institutional fit are domain proxies | [I] modal factor, not a standard single variable and not an independent causal force |
-| **Φ̂₄** | present D4 model token's normalized evaluation of `Φ₅` | [S] carrier/content bridge; [I/C] operational measure and fit |
-| **V₄** | D4 actual power at the action boundary: body, tools, energy, access, execution capacity; lowercase `ν` is reserved for the reciprocal chart | [I] translated proxy; ability is not authorization |
-| **P_node = Φ̂₄ × V₄** (public `Φ × V`) | selected conjunctive model coupling evaluated D5 possibility power to D4 enactment power | [I] declared model / [C] real-world fit, not established economics |
+| **Φ̂₄** | present D4 model token's ordered evaluation of `Φ₅` | [S] carrier/content bridge; [I/C] operational measure and fit; cardinal only under `κ` |
+| **V₄** | D4 actual power at the action boundary: body, tools, energy, access, execution capacity; lowercase `ν` is reserved for the reciprocal chart | [I] translated proxy; cardinal only under `κ`; ability is not authorization |
+| **N_node=(Φ̂₄,V₄)** | live two-factor finite-node profile | [S] type contract; componentwise Pareto is the uncalibrated baseline and supplies no human worth, rank, or authority |
+| **κ** | cardinal calibration contract naming domain, meaningful zeros and units, admissible transformations, uncertainty, cross-factor comparability, rivals, and kill criterion | required before any scalar comparison; one domain's `κ` does not transfer silently to another |
+| **P×,κ=Φ_cV_c** (historical `ΦV`) | named product candidate over factors calibrated by `κ`; the historical mnemonic says only that both factors matter | [I] declared model / [C] real-world fit; not established economics and never a default ranking |
 | **moral** | whole gains, individual does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **ethical** | individual gains, whole does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **strict syntropy** | individual and whole both gain under Justice | `[I]` conjunction; aggregate gain cannot replace either term |
@@ -383,7 +392,7 @@ This sentence may be reused verbatim.
    alignment, separate actual D4 carriers and events from represented D5
    alternatives first.
 2. Start with established strategic science, not with metaphysical language.
-3. Use `η`, `Φ`, `V`, and `P` as framework-side integrative variables, not as if they were already standard economics notation.
+3. Use `η`, `Φ`, `V`, and `N_node` as framework-side integrative variables, not as if they were already standard economics notation; use `P×,κ` only with its explicit calibration contract.
 4. Treat prospective opacity as a computational observation, never as proof of
    strong emergence.
 5. Keep D4 and D6 distinct: all study and receipt occur in D4; D6 is an
