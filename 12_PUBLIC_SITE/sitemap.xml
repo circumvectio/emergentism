@@ -27,6 +27,18 @@
   <url><loc>https://emergentism.org/discoveries/the-crossing/</loc><priority>0.9</priority></url>
   <url><loc>https://emergentism.org/discoveries/universalizability/</loc><priority>0.9</priority></url>
 
+  <!-- Current surfaces that were declared current but never listed here.
+       Each is served without an X-Robots-Tag rule, so each is indexable; each is
+       reachable by static link from the front door or the reader map. /established/
+       is the front door's own third route and carries the machine-checked and
+       exhaustively-computed claims. -->
+  <url><loc>https://emergentism.org/read/</loc><priority>0.9</priority></url>
+  <url><loc>https://emergentism.org/established/</loc><priority>0.9</priority></url>
+  <url><loc>https://emergentism.org/check/</loc><priority>0.85</priority></url>
+  <url><loc>https://emergentism.org/dimensions/</loc><priority>0.8</priority></url>
+  <url><loc>https://emergentism.org/atlas/</loc><priority>0.75</priority></url>
+  <url><loc>https://emergentism.org/ecology/</loc><priority>0.7</priority></url>
+
   <!-- Additional current reader routes. -->
   <url><loc>https://emergentism.org/fable/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/axioms/</loc><priority>0.85</priority></url>
