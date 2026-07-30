@@ -76,7 +76,8 @@ Ordinary mathematics remains ordinary mathematics:
 - `ℤ\{0}` is not closed under addition because `1+(−1)=0`;
 - Cantor's diagonal argument and Russell's type boundary remain intact.
 
-The Titans stay sovereign because no arithmetic is performed on them. This
+The Titan labels stay outside the arithmetic because no arithmetic is
+performed on them. This
 does not solve mathematics by renaming its problems. Some apparent
 contradictions dissolve when a declared domain or type is kept distinct; where
 no such error exists, the original problem remains.
@@ -171,7 +172,8 @@ neural, spoken, written, institutional or computational tokens. The future need
 not send a physical signal backward. Physical retrocausality remains an
 independent conjecture.
 
-The D5 Rosetta Stone then names the possible transformations of the pair:
+As an optional mnemonic, the D5 Rosetta Stone labels possible transformations
+of the pair:
 
 - Kali and Kālī are its two demon-polar taking forms;
 - Kṛṣṇa and Arjuna are its two god-polar giving forms;
@@ -181,8 +183,9 @@ The D5 Rosetta Stone then names the possible transformations of the pair:
 This gives `G7=M4⊎F3`: four moves and three read-only frames. Kālī remains
 two-faced—taking in axis, truth-cutting in function—and no name decides whether
 an actual act was just. Authorization, bearer accounting and outcome receipts
-decide that. The Titans themselves remain boundary roles, not D5 beings or
-causal agents.
+decide that. Demon-polar and god-polar are functional labels inside this
+mnemonic, never human kinds, ranks or moral verdicts. The Titans themselves
+remain boundary roles, not D5 beings or causal agents.
 
 The μ₄ wager asks whether counterfactual capacity is a genuinely new effective
 freedom. The test is intervention: change represented futures while holding
@@ -199,7 +202,7 @@ territory
   → represented alternatives
   → selection under values and means
   → commitment
-  → world-issued consequence
+  → observed consequence
   → changed model and changed mapper
 ```
 

@@ -80,6 +80,14 @@ LEGACY_ALIAS_EXCEPTIONS = {
     Path("03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX5_THE_EGREGORE.md"),
 }
 
+# The root work-programme projection must be nameable without re-importing the
+# retired application authority that originally used the same framework label.
+# The exception is deliberately exact: only the projection file itself and
+# non-semantic references to that exact filename may carry the label. All other
+# forbidden tokens, including external governance names, remain scanned.
+CONTROL_PROJECTION_PATH = Path("VMOSK_A.md")
+CONTROL_PROJECTION_REFERENCE_PATHS = {Path("README.md"), Path("AGENTS.md")}
+
 # ASCII-alphanumeric boundaries are deliberate: Python's ``\b`` treats ``_``
 # as a word character, which previously let tokens such as ``02_SKYZAI`` and
 # ``PENDING_K2`` escape. Plural DAV/DAC forms are forbidden too.
@@ -220,7 +228,23 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             and '"role"' in line
             and '"historical_lineage"' in line
         )
-        if match and not historical_source_record:
+        control_projection_name = (
+            match
+            and rel == CONTROL_PROJECTION_PATH
+            and match.group(0).lower().startswith("vmosk")
+        )
+        control_projection_reference = (
+            match
+            and rel in CONTROL_PROJECTION_REFERENCE_PATHS
+            and match.group(0).lower().startswith("vmosk")
+            and "VMOSK_A.md" in line
+            and "non-semantic" in line.lower()
+        )
+        if match and not (
+            historical_source_record
+            or control_projection_name
+            or control_projection_reference
+        ):
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"
             )
@@ -240,6 +264,7 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
 def main() -> int:
     errors: list[str] = []
     scoped = [ROOT / p for p in FRONT_DOORS + OWNERS]
+    scoped.append(ROOT / CONTROL_PROJECTION_PATH)
     scoped.extend(p for p in ROOT.rglob("*") if p.is_file() and is_active_route(p))
     scoped.extend(p for p in ROOT.rglob("*") if p.is_file() and is_active_corpus_file(p))
 
@@ -266,6 +291,22 @@ def main() -> int:
             if phrase not in boundary_text:
                 errors.append(
                     f"projection boundary {prefix}/README.md missing phrase: {phrase!r}"
+                )
+
+    control_projection = ROOT / CONTROL_PROJECTION_PATH
+    if not control_projection.is_file():
+        errors.append(f"missing control projection: {CONTROL_PROJECTION_PATH}")
+    else:
+        control_text = control_projection.read_text(encoding="utf-8")
+        for phrase in (
+            'semantic_authority: "none"',
+            "creates no theorem, ontology, axiology",
+            "or eighth kernel owner",
+            "biological correspondences are optional `[I]` Rosetta annotations",
+        ):
+            if phrase not in control_text:
+                errors.append(
+                    f"control projection {CONTROL_PROJECTION_PATH} missing phrase: {phrase!r}"
                 )
 
     for rel in APPLICATION_TOMBSTONES:

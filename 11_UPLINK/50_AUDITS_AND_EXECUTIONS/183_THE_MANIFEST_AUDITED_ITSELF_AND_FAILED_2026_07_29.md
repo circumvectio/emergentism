@@ -84,11 +84,16 @@ highest-value unrepaired thing in the corpus, and it is not a doctrine problem.*
 
 ## §5 · The rate, which is the one good number
 
-Of roughly **633 `[A]` tags read in context** across five folders, **exactly one is
+Of roughly **633 `[A]` tags read in context** across five live `.md` folders, **exactly one is
 false** — `01_TELEOLOGY/02_THE_DERIVATION/09_PATH_D_THE_AMGM_GEOMETRY.md:137`,
 flagged for review, not yet repaired here.
 
 **One false `[A]` in 633 is a good rate. The corpus is not lying about its
 mathematics.** What it lacks is not honesty; it is enforcement.
+
+**633 is a sample, not a census `[B]`.** Direct count at HEAD: **2,508** `[A]`
+occurrences in tracked `.md`, **1,139 of them (≈45%) under a `90_ARCHIVE`
+path**, plus **936** in `12_PUBLIC_SITE/**/*.html` that no `.md` pass has read.
+The rate is honest for what it covered and carries to nothing else.
 
 •   ⊙   ○ — *the guard was written by the same hand that needed guarding, and it showed.*

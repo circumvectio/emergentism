@@ -27,6 +27,7 @@ result-shopping.
 | [`02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md`](02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md) | [S] protocol; [C] per domain | Pre-registration harness for macro-constraint causal-emergence tests. |
 | [`03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md`](03_PHYSICS_TO_BIOLOGY_MACRO_CONSTRAINT_RUN_SHEET.md) | [C] run sheet; [S] inherited protocol | First chemistry-to-biology domain-run template for macro-constraint causation. |
 | [`physics_to_biology_harness/`](physics_to_biology_harness/) | [B] toy-model receipt only; [C] for biology | Executable vesicle proof-of-method for the file 03 run sheet. |
+| [`finity_practice/`](finity_practice/) | [D] typed drafts; [C] outcomes; contact deferred | Separate fresh-reader, independent-review, and four-arm comparative-utility designs for `FIN01-01/02`; exact materials and freeze remain outstanding. |
 
 ## Discipline
 

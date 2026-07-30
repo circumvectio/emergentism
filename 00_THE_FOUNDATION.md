@@ -324,20 +324,34 @@ not a restored warrant.**
 
 ---
 
-## 6 · The unit — the one forced thing `[A]`
+## 6 · The unit — what is forced, and what is presupposed `[A]`
 
 ```text
 A group has exactly one identity:  if e and e′ are both identities, e = e·e′ = e′.
 ```
 
-So in the multiplicative structure the unit is **unique and forced** — not
-chosen, not conventional. `1` is not *a* normalization among many; it is *the*
-identity, and there is no second candidate.
+So in the multiplicative structure the unit is **unique** — not chosen, not
+conventional. `1` is not *a* normalization among many; it is *the* identity, and
+there is no second candidate.
 
-**`1` is the centre — verified twice, independently.** In canon's own chart,
-`ν = 1` occurs exactly at `θ = π/2`, the equator, the metric middle in latitude.
-In Suda's metric, `ρ(x)=|log x|` is inversion-invariant and `E(x)=(log x)²` has
-its unique minimum at `x=1`.
+**But uniqueness is not existence, and only uniqueness is forced.** The argument
+above is `at_most_one_identity`: *if* there is an identity there is exactly one; it
+does not produce one. `KSC-28` records `F2` **withdrawn as false** on this exact
+point — twelve of the sixteen binary operations on a two-element set admit no
+two-sided identity at all — and doc 52 §1 catches the same error a second time:
+`ι(x) = 1/x` cannot be written without naming `1`, so `ι` presupposes the unit it
+was said to force. §1 above already states only the surviving half. **Never write
+"`1` is forced" unqualified:** its *uniqueness* is a theorem, its *existence* is
+presupposed by the selected object.
+
+**`1` is the centre — and the two classic checks are ONE datum, not two.** In
+canon's own chart, `ν = 1` occurs exactly at `θ = π/2`, the equator, the metric
+middle in latitude. In Suda's metric, `ρ(x)=|log x|` is inversion-invariant and
+`E(x)=(log x)²` has its unique minimum at `x=1`. **These are not independent:**
+`ν = 1 ⟺ θ = π/2 ⟺ log ν = 0 ⟺ ρ = 0` is one fact in four notations, and `DF-15`
+forbids counting it twice. *(This passage read "verified twice, independently"
+until 2026-07-30.)* The three genuinely distinct midpoint witnesses are gathered
+in §6.1 below.
 
 **One precision.** The entire equator sits at that latitude. What singles out `1`
 is not latitude but that `ι` fixes exactly `±1`, and on the positive ray only
@@ -348,6 +362,93 @@ the poles.** That is the only determinate answer.
 **Two roles at once.** `1` is the additive **generator** of `ℕ⁺` and the
 multiplicative **origin** of `ℝ₊`. That double role is why it looks like the
 point from which everything comes.
+
+### 6.1 · The midpoint — three witnesses, ranked
+
+The corpus states these in three places and never gathers them. Gathered, they are
+not equal, and the strongest is the one that is never cited.
+
+**W1 — divergence at both ends. `[A] given ℝ`, and WEAK.** `ρ(x) = |log x| → +∞` as
+`x → 0⁺` and as `x → ∞`. By itself this is **not a midpoint argument**: `(−∞, +∞)`
+has no midpoint, and `|log x − c|` diverges at both ends for *every* real `c`.
+Alone, W1 shows only that `1` is interior.
+
+**W2 — the symmetry, not the size. `[A] given ℝ`, and this is what makes it a
+midpoint.** `ρ(x) = ρ(1/x)` for **every** `x ∈ ℝ₊`, exactly. `ι` fixes `1` and swaps
+the poles, so the two divergences are not merely both infinite — they are **one
+function reflected** (`s ↦ −s`, `s = log x`). The reflection does the work, not the
+distance.
+
+**W3 — the hinge, and it is FINITE. `[A]`, and STRONGEST.** With the hinge
+coordinate `u = (x−1)/(x+1)` (`42` S-5; doc 45 §7A):
+
+```text
+u(1) = 0                        the centre
+lub{u(x) : x ∈ ℚ⁺} = +1         glb{u(x) : x ∈ ℚ⁺} = −1
+|+1 − 0| = 1                    |0 − (−1)| = 1        EQUAL and FINITE
+```
+
+Both bounds stand at distance **exactly 1** from the centre. No infinite quantity is
+compared with another: **no `∞ = ∞` is needed, and none is asserted.** This is the
+strongest form of the midpoint claim the corpus can make. Three precisions, because
+this is where it would inflate:
+
+- **It is rational throughout.** `u(p/q) = (p−q)/(p+q) ∈ ℚ`, and `±1 ∈ ℚ`; the
+  bounds are themselves rational, so no completeness axiom is invoked to produce
+  them. W3 needs **neither completion nor compactification** — unlike W1 and W2,
+  which carry completion because `log q` is transcendental for every rational
+  `q ≠ 1` (doc 52 `G8b`).
+- **The ruler is imported.** `det u = 2`, and by doc 52 `G9` every word over
+  `⟨S, ι⟩` has determinant `±1`, so **the hinge is not a word of that base.** W3
+  measures with an instrument the candidate base does not build — a stated cost.
+  *(Doc 52 is a candidate base; cited here for the accounting, not as a premise of
+  this document.)*
+- **Bounds are bounds, not poles.** `±1` are **not attained** — the image of `ℝ₊`
+  is the open `(−1, +1)` (doc 45 §7A). Reading `lub u` as `○` and `glb u` as `•` is
+  the declared compactification, `[S]`, priced like completion. **The distances are
+  `[A]`; identifying the bounds with the Titans is `[S]`.**
+
+**Refused.** `1` is no *average* of the poles: the arithmetic mean is `∞`, the
+geometric mean is **INDETERMINATE** (§6 above; doc 47 §5). Any sentence of the form
+*"`1` is the geometric mean of `0` and `∞`"* or *"`log 1 = 0` sits midway between
+`−∞` and `+∞`"* is **false in canon** and must be repaired wherever it stands.
+*(Repaired on the public surface 2026-07-30:
+`12_PUBLIC_SITE/trinity/00-the-transcendental-trinity-canon/index.html`, which
+published both at `[A]`.)* What is determinate: `1` is the **fixed point of the map
+that exchanges the poles**, and by W3 the point both bounds stand one unit from.
+
+**Forcedness, at true strength.** The unit's **uniqueness** is forced
+(`at_most_one_identity`); its **existence is presupposed** — `ι` names `1` in order
+to be written (doc 52 §1; doc 53 §1). Three witnesses agreeing on *where* the centre
+is do not make its *existence* a theorem.
+
+### 6.2 · The paradox, dissolved by naming the chart — `KSC-28`
+
+> *"On the additive line `1` sits one step from `0` and infinitely far from `∞`. So
+> how is it the middle?"*
+
+It is not the middle there, and canon never said it was. The objection **omits the
+chart**, which `KSC-28` lists as a kill.
+
+```text
+chart                 centre    involution     1 is
+additive / plane (x)  0         n(x) = −x      one step from 0 — NOT central
+multiplicative  (x)   1         ι(x) = 1/x     THE centre — ι's only positive fixed point
+logarithmic     (s)   s = 0     s ↦ −s         the same centre, relabelled
+```
+
+Two centres, not one — chart-locality, already ruled at doc 42 §6A. The log chart is
+**not a third position**: it is the multiplicative chart written additively, which is
+why the paradox never arises there. By doc 42 §6A.1 the two involutions are dual —
+**each fixes exactly what the other swaps** — so the centres are not rivals but the
+two fixed sets of a Klein four-group. **Every midpoint claim must name its chart.**
+With no chart named, "1 is the midpoint" is not false — it is not yet a claim.
+
+**Kill (§6.1–6.2).** Exhibit `x ∈ ℝ₊` with `ρ(x) ≠ ρ(1/x)`; or a rational `r < 1`
+bounding `u` above on `ℚ⁺`; or a second positive fixed point of `ι`; or show `u`
+**is** a word over `⟨S, ι⟩` — that would *strengthen* W3, and the kill is stated so
+it can be lost either way; or exhibit one chart in which `1` is both central and the
+additive origin, which would restore a real paradox.
 
 ---
 
