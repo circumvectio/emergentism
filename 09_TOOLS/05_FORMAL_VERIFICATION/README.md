@@ -37,8 +37,14 @@ on mathlib's three standard axioms (`propext`, `Classical.choice`, `Quot.sound`)
 
 - **The dimension counts** underwriting the μ-criterion. Blocked on ruling HR-1:
   doc 48 is inconsistent about which notion of dimension it means.
-- **"`Ĉ` is not a ring"** — the single most load-bearing *negative* claim in the
-  corpus, still unchecked by machine.
+- **"`Ĉ` is not a ring" — NOW CHECKED (§8), and this line was stale for a day.** What
+  is proved is the *structural reason*: no nontrivial ring admits an additively
+  absorbing element, and the point at infinity must absorb. **What is NOT proved is a
+  statement about mathlib's `Projectivization` as an object — `ℂP¹` is never
+  constructed here.** The corpus's claim is the reason; the reason is machine-checked.
+  A site audit found this file still calling it unchecked while `/established/` called
+  it checked — the artifact and the shopfront disagreeing is worse than either being
+  wrong alone.
 - Suda's hinge `= tanh(log x / 2)` — verified numerically to 1e-12, not proved.
 - Lorentz–Möbius (doc 49) — inherited physics, not re-derived.
 - Every ontological, ethical and cosmological reading. None is formalisable and
