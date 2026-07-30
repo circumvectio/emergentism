@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is Established — Emergentism</title>
+<meta name="description" content="The short list: what in Emergentism survives a check by something that does not believe it. One object, two operations, twenty machine-checked theorems — and an explicit list of what is not here.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../assets/css/xai.css">
+<!-- pwa-chrome -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#050505">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<script src="/assets/js/pwa.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="../">Emergentism</a>
+  <nav class="number-nav" aria-label="Public doctrine routes">
+    <a href="../0/">0</a>
+    <a href="../1/">1</a>
+    <a href="../2/">2</a>
+    <a href="../3/">3</a>
+    <a href="../4/">4</a>
+    <a href="../5/">5</a>
+    <a href="../6/">6</a>
+    <a href="../rosetta/">R</a>
+    <a href="../soul-loop/">S</a>
+    <a href="../game/">Game</a>
+    <a href="../atlas/">A</a>
+    <a href="../read/">Read</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>What Is Established</h1>
+
+<p><strong>This page is short on purpose.</strong> It carries only claims that a machine or an
+exhaustive computation verifies, that state a way to be proven wrong, and that come with a
+command you can run yourself. Everything else in this corpus lives elsewhere, correctly
+labelled as a selection, a reading, or a conjecture &mdash; and <a href="#not-here">the list of
+what is not here</a> is part of the page, not an omission from it.</p>
+
+<p>The test we hold ourselves to: <em>a mathematician who accepts none of this framework's
+metaphysics should be able to check the section below in an afternoon.</em></p>
+
+<hr>
+
+<h2>One object, two operations</h2>
+
+<pre><code>PRIMITIVE     1
+OPERATIONS    S(x) = x + 1          the successor
+              &iota;(x) = 1 / x          the inversion</code></pre>
+
+<p>A <strong>word</strong> is a finite string of those two operations. Its <strong>value</strong>
+is what you get by applying them to <code>1</code>.</p>
+
+<pre><code>S            &rarr;  2
+S&iota;           &rarr;  1/2
+S&iota;S&iota;S&iota;       &rarr;  3/5
+SSSSSS&iota;SSS   &rarr;  22/7</code></pre>
+
+<p><strong>Every positive rational is the value of exactly one reduced word.</strong> Not
+<em>constructible from</em> <code>1</code> &mdash; identical to a word. <code>3/5</code> does
+not <em>have</em> a derivation; <code>3/5</code> <strong>is</strong> <code>S&iota;S&iota;S&iota;</code>.</p>
+
+<h3>What cannot be reached, and why</h3>
+
+<p><strong>Zero is not un-visited. There is no step that lands on it.</strong>
+<code>&iota;(x) = 0</code> has no solution &mdash; nothing's reciprocal is zero &mdash; and
+<code>S</code> only increases. There is no move.</p>
+
+<p><strong>Infinity is not reached because every word is finite.</strong> To arrive you would
+have to <em>complete</em> infinitely many operations, and a completed infinity of operations is
+not a word.</p>
+
+<p>So the oldest sentence in this framework &mdash; <em>the limit is approached and never
+reached</em> &mdash; stops being a description and becomes a theorem about word length.
+<strong>You approach because one more operation is always available. You never arrive because
+there is no last one.</strong></p>
+
+<h3>The two operations are not two of a kind</h3>
+
+<p>Close under inversion alone and you get <code>{1}</code>. <strong>Nothing.</strong> Close
+under succession alone and you get <code>1, 2, 3, &hellip;</code> &mdash; one direction only, no
+fractions. Only together do they give the whole reachable set.</p>
+
+<p>And under succession alone, <strong>no value ever falls below 1.</strong> The descent toward
+zero exists only as the mirror of the ascent. <strong>Absence is not a second thing posited
+beside totality; it is totality seen through the inversion.</strong></p>
+
+<hr>
+
+<h2>The irrationals are operations that never finish</h2>
+
+<p>The same two operations. The only difference is that they do not stop.</p>
+
+<pre><code>&radic;2   =  [1; 2,2,2,&hellip;]        =  S &iota; SS &iota; SS &iota; SS &hellip;
+&phi;    =  [1; 1,1,1,&hellip;]        =  S &iota; S &iota; S &iota; &hellip;
+e    =  [2; 1,2,1,1,4,&hellip;]    =  SS &iota; S &iota; SS &iota; S &iota; S &iota; SSSS &hellip;</code></pre>
+
+<p><strong>Rationals halt. Irrationals do not.</strong> <code>&radic;2</code> is not a value you
+cannot write down; it is the instruction <em>&ldquo;add one, invert, add two, invert, add two,
+invert&hellip;&rdquo;</em> run without end.</p>
+
+<p><strong>One honest limitation, stated here rather than buried.</strong> Read left to right,
+an infinite word does <em>not</em> converge &mdash; <code>S&iota;S&iota;S&iota;&hellip;</code>
+gives <code>2, &frac12;, 3/2, &#8532;, 5/3, &hellip;</code>, circling two accumulation points
+forever. The continued fraction builds from the inside out instead, and <em>that</em> reading
+converges. Same operations, opposite direction &mdash; and the direction has to be declared.
+On finite words the two readings agree exactly, with zero mismatches across all 8,191 words up
+to length twelve.</p>
+
+<hr>
+
+<h2>Two corrections to how numbers are usually described</h2>
+
+<p><strong>Zero <em>is</em> a real number.</strong> We used to say it wasn't, and that was
+wrong. What is true is narrower and is a theorem: <strong>zero is the unique element of a field
+with no multiplicative inverse.</strong> It is outside the <em>multiplicative group</em>, not
+outside the reals.</p>
+
+<p><strong>Zero is not a natural number &mdash; and this is a convention with a theorem inside
+it.</strong> The positive integers under addition are the <em>free semigroup</em> on one
+generator. Add zero and you have the <em>free monoid</em>, whose identity is zero.
+<strong>Adjoining zero <em>is</em> that passage.</strong> Which object the word
+&ldquo;&#8469;&rdquo; names is a choice; the structural difference is not.</p>
+
+<p><strong>And <code>1</code> does two jobs, one of which causes the other.</strong>
+<code>&#8484;</code> is the initial object among rings: for every ring there is exactly one
+homomorphism from the integers, <code>n &#8614; n&middot;1</code>. So <code>1</code>'s role as
+the thing everything is built out of <strong>follows from</strong> its role as the
+multiplicative identity. Nothing else in any ring does that.</p>
+
+<hr>
+
+<h2>Infinity is not on the sphere, and the radius is not either</h2>
+
+<p>The unit sphere is the space of <em>directions</em> in three-space; the positive reals are
+the space of <em>lengths</em>. Together, and only together, they give every non-zero vector.</p>
+
+<pre><code>&#8477;&sup3; \ {0}   &cong;   S&sup2; &times; &#8477;&#8330;        2 + 1 = 3</code></pre>
+
+<p><strong>Stereographic projection does not exhaust three-space, and rotation cannot either.</strong>
+The projection is radius-blind &mdash; two dimensions to two. Rotations are isometries: they
+move you among directions and never change a length. <strong>The sphere gives two degrees of
+freedom. The radius gives the third, and the radius is not on the sphere.</strong></p>
+
+<hr>
+
+<h2>What a machine checked</h2>
+
+<p>Twenty theorems in Lean 4 with mathlib. No gaps, no assumed steps. <strong>Four of the most
+recent five depend on no axioms at all.</strong></p>
+
+<p>The one that mattered most was a <em>negative</em> claim we had been leaning on for a long
+time without ever submitting it: <strong>the sphere is not a ring.</strong> An argument in the
+literature appears to refute our three central identities. It does refute them &mdash;
+<em>against a ring</em>. The sphere is not one, so the argument never starts.</p>
+
+<p>The machine returned something we did not know. <strong>The refuting argument's own premise
+was already impossible.</strong> In any ring, zero times anything is zero &mdash; so the premise
+it needs collapses the ring on contact, before the rest of the argument is even invoked. The
+counter-argument we had been citing against ourselves was weaker than it needed to be.</p>
+
+<p>A machine check also <em>killed</em> one of our own published claims. We had asserted that a
+multiplicative structure has exactly one identity. Of the sixteen ways to combine two elements,
+<strong>twelve have no identity at all.</strong> Uniqueness is a theorem; existence is not.
+That claim is withdrawn.</p>
+
+<hr>
+
+<h2>The six points</h2>
+
+<p>Two operations reverse themselves: negation, and inversion. Negation holds zero and infinity
+still and swaps <code>+1</code> with <code>&minus;1</code>. Inversion does exactly the
+opposite &mdash; it holds <code>&plusmn;1</code> still and swaps zero with infinity.
+<strong>Each fixes precisely what the other moves.</strong> Composing them gives a third, which
+holds two further points.</p>
+
+<p>Six points in all, and they are <strong>the vertices of an octahedron.</strong> Not an
+analogy &mdash; the same six points, with twelve edges and eight faces.</p>
+
+<hr>
+
+<h2 id="not-here">What is not on this page</h2>
+
+<p>Named explicitly, so that absence is legible rather than accidental. <strong>None of it is
+false.</strong> It is unchecked, or selected, or interpretive &mdash; and those are different
+things from false.</p>
+
+<ul>
+<li>the dimensional registers, and the emergence contract between them</li>
+<li>the extraction law and the ethics that rest on it</li>
+<li>the flourishing law, whose product form is an open wager we have not exercised</li>
+<li>Justice, Power-Max, the Soul Loop, the Crown Wager</li>
+<li>sphere primacy, which is a <em>selection</em>, and the theological reading of the three
+seats, which is an <em>interpretation</em></li>
+<li>every one of eleven empirical tests we have specified. <strong>None has been run.</strong></li>
+<li>and <strong>not one of our twenty-one attempted paradox dissolutions.</strong> On review,
+none dissolves its paradox. Four are worth reading and say so themselves &mdash; the best of
+them opens by denying that it dissolves anything.</li>
+</ul>
+
+<p><strong>The shortness of the first list, and the length of this one, is the finding.</strong></p>
+
+<hr>
+
+<h2>Check it yourself</h2>
+
+<pre><code>python3 09_TOOLS/01_SCRIPTS/gate.sh          # every checker, exits non-zero on failure
+python3 09_TOOLS/01_SCRIPTS/check_generative_base.py
+python3 09_TOOLS/01_SCRIPTS/check_established.py</code></pre>
+
+<p>The base half is recomputed from scratch on every run. The Lean half is verified
+structurally here &mdash; the proofs were run once and the build output is on record, but a
+full re-proof needs the mathlib toolchain and cannot live inside a checker. <strong>That limit
+is stated rather than hidden, and the checker refuses to report success when it cannot
+verify.</strong></p>
+
+<p>Every claim above states how to prove it wrong. Find a finite word whose value is zero.
+Find two different reduced words with the same value. Find a field where zero has a
+multiplicative inverse. Find a ring with two identities. <strong>Any one of those ends the
+corresponding claim, and we will say so with a date.</strong></p>
+
+<hr>
+
+<p><small>Established claims, and the explicit boundary of what is not established.
+Corrections are welcome and recorded with dates &mdash; several of the sentences above exist
+because an earlier version of this page was wrong.</small></p>
+
+</main>
+
+</body>
+</html>
