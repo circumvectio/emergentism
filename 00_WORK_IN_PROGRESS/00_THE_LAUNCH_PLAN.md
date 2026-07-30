@@ -45,7 +45,44 @@ index torn out.
 
 ---
 
-## SPRINT L1 · Search · *the biggest single win*
+## SPRINT L1 · Search · **DONE 2026-07-30, and the premise was wrong**
+
+> **Verified on production:** the drawer reports `331 pages · 39 current, 292 library`;
+> `established` reaches `/established/`; `four lines` reaches two library documents; a
+> miss falls back to the full atlas. Cache key `emergentism-f2f75878837a` — derived.
+
+**What I planned was wrong twice over.** Search already existed in the atlas drawer, and
+indexing all 391 pages would have broken a declared boundary — `build_atlas_index.py`
+states that frozen roots "never enter this index", status
+`current-cleared-surfaces-only`. 37 pages was **by design**.
+
+**The three real defects, all found by opening a page rather than reading one:**
+
+1. **Search was missing from 22 of 39 current surfaces** — `/established/`, `/record/`,
+   `/check/`, `/lab/`, `/about/`, `/exit/`, `/contribute/` and the whole D0–D6 spine. The
+   drawer was on 353 pages, but overwhelmingly the frozen library. Now 0 of 39.
+2. **The 292-document library had no search at all.** A *second* index,
+   `atlas/library_index.json`, never merged into the first, labelled in the UI with its
+   own boundary — `noindex` governs search engines, `follow` invites traversal.
+3. **Searching the site for its own flagship page returned nothing.** The generator walks a
+   hand-curated allowlist, not `currentSurfaces`; adding a page to the manifest was
+   necessary and not sufficient, and nothing said so.
+
+**And two guards that did not exist:** the service-worker cache name was a hardcoded
+literal, so returning visitors got the previous site; and no generator had a `--check`, so
+a stale artifact was undetectable. Both fixed, three generators now covered by
+`check_site_build_artifacts.py`, mutation-tested. **The first version of the cache fix had
+its own hole — it fingerprinted JS and CSS but not HTML** — found by testing it.
+
+<details><summary>original plan text, kept for provenance</summary>
+
+Build a static search index from the manifest and a client-side filter over it — which is
+roughly what happened, except the index already existed and the gap was elsewhere.
+</details>
+
+---
+
+## SPRINT L1 (original) · Search · *the biggest single win*
 
 Build a static search index from `reading-manifest.json`'s 292 documents plus the current
 surfaces, and a small client-side filter over it.
