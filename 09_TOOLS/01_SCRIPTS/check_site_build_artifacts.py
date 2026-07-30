@@ -9,6 +9,9 @@ silently:
                              the site's own flagship page returned nothing.
   atlas/library_index.json   the 292-document frozen-library search index, built from
                              reading-manifest.json. Stale = search misses documents.
+  292 library pages          breadcrumb + prev/next, injected between markers from the
+                             manifest order. Stale = a dangling `next`, which looks
+                             exactly like a correct one.
   sw.js's CACHE constant     derived from the bytes of every current surface and cached
                              asset. Stale = returning visitors get the previous site.
 
@@ -20,7 +23,8 @@ import subprocess, sys
 from pathlib import Path
 
 SITE = Path(__file__).resolve().parents[2] / "12_PUBLIC_SITE"
-BUILDERS = ("build_atlas_index.py", "build_library_index.py", "build_sw_version.py")
+BUILDERS = ("build_atlas_index.py", "build_library_index.py", "build_library_nav.py",
+            "build_sw_version.py")
 
 
 def main() -> int:
