@@ -66,3 +66,11 @@ build/
 # Archive directories — old versions preserved per K3, not deployed
 _archive/
 90_ARCHIVE/
+
+# A second, fully indexable front door. /index_legacy_2026_07_19/ returned 200 with a
+# homepage-class <title> and no robots rule — a competing homepage exactly when a launch
+# invites crawlers. /home/ already 308s to / but the file was still uploaded with 67
+# dangling links. Git custody is unaffected; both stay in the repo.
+index_legacy_2026_07_19.html
+index_legacy_2026_07_19/
+home/

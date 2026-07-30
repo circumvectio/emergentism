@@ -469,12 +469,15 @@ them opens by denying that it dissolves anything.</li>
 
 <h2>Check it yourself</h2>
 
-<pre><code>git clone https://github.com/Menexus-GmbH/emergentism.git
+<pre><code>git clone -b codex/emergentism-live-dirt-custody-20260730 \\
+      https://github.com/circumvectio/emergentism.git
 cd emergentism
 
 bash    09_TOOLS/01_SCRIPTS/gate.sh                  # every checker; exits non-zero on failure
 python3 09_TOOLS/01_SCRIPTS/check_generative_base.py # recomputes G1-G10 by exhaustion
 python3 09_TOOLS/01_SCRIPTS/check_established.py     # re-checks this page's claims</code></pre>
+
+<p><small><strong>Corrected again, 2026-07-30.</strong> The clone line named a repository that returns <b>404</b>, and the branch flag is not decoration: these scripts are <b>not on <code>main</code></b> yet. An audit ran the block as written and got a dead URL on line one, then an empty directory. The paragraph below already confessed one failure of this same block; this is the second, and it means the correction procedure this page sells did not catch its own broken link for a full day.</small></p>
 
 <p><small><strong>Corrected 2026-07-30.</strong> This block previously ran <code>gate.sh</code>
 with <code>python3</code>. It is a bash script, so the first command on the only page that
