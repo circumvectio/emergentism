@@ -99,7 +99,7 @@ actual model token
   ranks some of them
   couples a selection to available means
   attempts an action
-  records an observed outcome it does not fully control
+  receives a world-issued outcome
   updates model and selector
 ```
 
@@ -279,12 +279,12 @@ Emergentism does not currently know:
 These are not failures of honesty. They are locations where the territory has
 not licensed an answer.
 
-## 12. A voluntary reader statement, without inflation
+## 12. The human creed, without inflation
 
 > I am a finite, embodied bearer inside one actual history. I inherit a world I
 > did not choose and can represent futures that do not yet exist. My models are
 > fallible, my means limited, and my consequences shared. I therefore seek
-> clearer maps, lawful means, accountable commitments and observed outcome
+> clearer maps, lawful means, accountable commitments and world-issued
 > receipts. I refuse to make another bearer disappear inside my score. I keep
 > correction and exit open. I may use this worldview—and I may put it down.
 

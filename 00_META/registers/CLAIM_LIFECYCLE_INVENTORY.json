@@ -7,10 +7,10 @@
     "tracked_markdown": 2239
   },
   "counts": {
-    "active": 7,
+    "active": 6,
     "frozen": 3,
     "legacy": 6,
-    "projection": 2,
+    "projection": 1,
     "proposal": 2,
     "reader_synthesis": 1
   },
@@ -59,33 +59,17 @@
     {
       "external_readonly": false,
       "lifecycle": "projection",
-      "path": "../01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
-      "work_id": "BK-FINITY-PRACTICE"
-    },
-    {
-      "lifecycle": "active",
-      "line_count": 369,
-      "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "role": "practical_source_owner",
-      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
-      "work_id": "BK-FINITY-PRACTICE"
-    },
-    {
-      "external_readonly": false,
-      "lifecycle": "projection",
       "path": "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "resolved_path": "/Users/Yves/Documents/01_EMERGENTISM/00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sha256": "8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58",
       "work_id": "BK-ONE-SITTING"
     },
     {
       "lifecycle": "reader_synthesis",
-      "line_count": 486,
+      "line_count": 483,
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "role": "reader_synthesis",
-      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sha256": "8fdb16ca9123d30968b893d876f46c4476020162444f55a6ff63e3568aa19e58",
       "work_id": "BK-ONE-SITTING"
     },
     {

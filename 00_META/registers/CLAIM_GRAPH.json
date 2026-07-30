@@ -307,66 +307,6 @@
       "to": "A7"
     },
     {
-      "from": "FIN01-01",
-      "kind": "depends_on",
-      "to": "OS01-08"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "depends_on",
-      "to": "OS01-13"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "depends_on",
-      "to": "OS01-22"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "owned_by",
-      "to": "K-5"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "projected_from",
-      "to": "BK-FINITY-PRACTICE"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "tested_by",
-      "to": "A3"
-    },
-    {
-      "from": "FIN01-01",
-      "kind": "tested_by",
-      "to": "A5"
-    },
-    {
-      "from": "FIN01-02",
-      "kind": "depends_on",
-      "to": "FIN01-01"
-    },
-    {
-      "from": "FIN01-02",
-      "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "FIN01-02",
-      "kind": "projected_from",
-      "to": "BK-FINITY-PRACTICE"
-    },
-    {
-      "from": "FIN01-02",
-      "kind": "tested_by",
-      "to": "A3"
-    },
-    {
-      "from": "FIN01-02",
-      "kind": "tested_by",
-      "to": "A5"
-    },
-    {
       "from": "OS01-01",
       "kind": "owned_by",
       "to": "K-1"
@@ -1923,8 +1863,8 @@
     }
   ],
   "metrics": {
-    "edges": 384,
-    "nodes": 95
+    "edges": 372,
+    "nodes": 92
   },
   "nodes": [
     {
@@ -1973,10 +1913,6 @@
     },
     {
       "id": "BK-EVOLUTIONARY-NETWORK",
-      "kind": "book_projection"
-    },
-    {
-      "id": "BK-FINITY-PRACTICE",
       "kind": "book_projection"
     },
     {
@@ -2052,16 +1988,6 @@
       "id": "EN01-05",
       "kind": "claim",
       "lifecycle": "proposal"
-    },
-    {
-      "id": "FIN01-01",
-      "kind": "claim",
-      "lifecycle": "active"
-    },
-    {
-      "id": "FIN01-02",
-      "kind": "claim",
-      "lifecycle": "active"
     },
     {
       "id": "OS01-01",

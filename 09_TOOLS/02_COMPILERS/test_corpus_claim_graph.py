@@ -61,8 +61,8 @@ class ClaimGraphContractTests(unittest.TestCase):
 
     def test_repository_contract_compiles(self) -> None:
         register, graph, lifecycle = COMPILER.compile_contract(ROOT)
-        self.assertEqual(register["metrics"]["cards"], 71)
-        self.assertEqual(register["metrics"]["works_with_cards"], 9)
+        self.assertEqual(register["metrics"]["cards"], 69)
+        self.assertEqual(register["metrics"]["works_with_cards"], 8)
         self.assertEqual({row["owner_id"] for row in register["owners"]}, {f"K-{i}" for i in range(1, 8)})
         self.assertGreater(graph["metrics"]["edges"], 100)
         self.assertEqual(lifecycle["baseline"]["tracked_files"], 3205)

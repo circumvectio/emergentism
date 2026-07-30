@@ -19,18 +19,6 @@
       "build_provenance": "12_PUBLIC_SITE/build_book.py"
     },
     {
-      "work_id": "BK-FINITY-PRACTICE",
-      "title": "The Finity Card — Lived Compass Practice",
-      "edition": "active-source-practice-v1",
-      "historical_sources": ["../01_TELEOLOGY/04_THE_LIVED_COMPASS.md"],
-      "chapter_order": ["finity-card", "comparative-adequacy"],
-      "owner_ids": ["K-4", "K-5"],
-      "claim_card_ids": ["FIN01-01", "FIN01-02"],
-      "release_state": "source_active_public_projection",
-      "public_route": "../12_PUBLIC_SITE/practice/index.html",
-      "build_provenance": "source-owned hand projection with public semantic parity"
-    },
-    {
       "work_id": "BK-SELF-EATING",
       "title": "The Self-Eating Serpent",
       "edition": "critical-edition-1-staged",

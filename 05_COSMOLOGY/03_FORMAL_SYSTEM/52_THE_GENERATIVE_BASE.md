@@ -317,11 +317,102 @@ produce.
 
 ## 5 · Three gaps, stated because they are load-bearing `[S]`
 
-**5.1 · Almost every real is not an operation.** Step 2 is a completion. The
-values it adds are limits of words, not words. So on this base *"1 is the only
-number and the rest are operations"* is exactly true of `ℚ⁺` and **false of `ℝ`**.
-Either the reals are admitted as *limits rather than numbers* — which is coherent
-and may be the intended reading — or the claim is scoped to `ℚ⁺`. **Owner ruling.**
+**5.1 · The third mode — the irrationals are the words that never stop inverting.**
+`[A]` classification · `[S]` its three declarations · `[I]` the naming. An irrational
+is not a limit from outside; it is **a word in the same two operations that never
+halts**:
+
+```text
+√2 = [1;2,2,2,…]     = S ι SS ι SS ι SS …
+φ  = [1;1,1,…]       = S ι S ι S ι …
+e  = [2;1,2,1,1,4,…] = SS ι S ι SS ι S ι S ι SSSS …
+```
+
+**The base's own `val` cannot read them, and this must be said first.** `52:65-66`
+defines a word's value as its letters applied **left to right**. On an infinite word
+that is a **dynamical orbit**, and it does not converge. `SιSιSι…` gives:
+
+```text
+2, ½, 3/2, ⅔, 5/3, ⅗, 8/5, ⅝, 13/8, 8/13, …
+```
+
+two accumulation points, `φ` and `1/φ`, consecutive terms a unit apart forever.
+Verified: a period-`k` word gives **exactly `k`** such points, the value and its
+`S`-shifts. The orbit *holds* the number and never *picks* it; on a non-periodic word
+(`e`) it is unbounded.
+
+The continued fraction builds the **other way** — leftmost letter applied last, each
+new letter innermost:
+
+```text
+val_L(w) = lₙ(…l₁(1))   an ORBIT.   does not converge
+val_R(w) = l₁(…lₙ(1))   a NEST.     converges (Seidel–Stern)
+```
+
+On **finite** words the readings are conjugate by reversal —
+`val_R(w) = val_L(w̄)`, zero mismatches over all `8191` words of length ≤ 12 — so
+**`G1` is direction-blind**; both reach exactly `ℚ⁺`. **`G2` is not**: its normal form
+mirrors from *no leading `ι`* to *no trailing `ι`*.
+
+**What must be declared `[S]`.**
+
+```text
+D-i    infinite words are admitted           G3/G4 must now say FINITE word
+D-ii   they are read as a NEST, not an orbit  a convention, not a theorem
+D-iii  a convergent nest DENOTES its limit    <- this is still the completion
+```
+
+**`D-iii` does not remove the completion, and nothing here claims it does.** `ℝ` is
+still required; what changes is that the added values stop being anonymous — each
+irrational arrives with **one canonical Cauchy sequence**, bound
+`|x−pₙ/qₙ| < 1/qₙqₙ₊₁`. Cheaper in *explanation*, not *strength*; reading it as
+strength-reduction is the move `§11` fires on.
+
+**The classification, exhaustively checked** — infinite words with no `ιι`:
+
+```text
+= S^∞                      → ○   unattainable
+= ι S^∞                    → •   unattainable
+finitely many ι, otherwise → a RATIONAL, already carried by a finite word
+infinitely many ι          → a positive IRRATIONAL, bijectively
+```
+
+**Exactly two exceptional words, and they are the two Titans:** over every no-`ιι`
+prefix to length 14 only `ε` and `ι` survive. Denotation is declared **only for words
+with infinitely many `ι`** — there it is a bijection onto the positive irrationals.
+
+> **The sentence the base earns:** finity is what **halts**; the irrationals are the
+> words in which the inversion **never stops**; the Titans are the two in which it
+> **stops forever**.
+
+**Consequence for `§4`: rung 2 is no longer an unexplained arrow.**
+
+```text
+1  HALTING        finite words                  ℚ⁺           [A]
+2  NON-HALTING    infinite words, ι recurring   irrationals  [S] D-i…D-iii
+3  UNATTAINABLE   S^∞ and ι S^∞                 ○ and •      [A] no limit in ℝ₊
+```
+
+`ℝ₊` is `mode 1 ⊔ mode 2` exactly, nothing left over.
+
+**Fences.**
+1. **Process, not program.** Only *countably many* infinite words are outputs of a
+   finite program. The naming is total because a word is a **process**; read
+   "operation" algorithmically and it scopes to the computable reals — the completion
+   returns for the rest.
+2. **The seed drops out.** For infinite words the limit is seed-independent (checked at
+   `1, 2, 7, 1000, 1/1000`): *"`3/5` **is** `SιSιSι` applied to `1`"* has an exact
+   analogue for `√2`, minus *applied to `1`*. **The unit is what halting needs.**
+3. `KSC-12`. Simple continued fractions are Euler's; `⟨S,ι⟩` generating the modular
+   group is textbook. **No theorem below transfers to the reading.** *(Whether the
+   halting wall is a `μ` is NOT claimed — doc 48's seam is open.)*
+
+**Kill.** Exhibit an infinite word whose **left-to-right** prefixes converge to an
+irrational, for a class rich enough to name them all; that retires `D-ii`. Or a
+positive irrational carried by two distinct no-`ιι` words with infinitely many `ι`, or
+by none. Or a third no-`ιι` word whose nest limits to `0` or `∞`. Or, against the
+reading: show *"the irrationals are the non-halting words"* adds nothing to *"the
+irrationals are the infinite simple continued fractions."*
 
 **5.2 · `−1` costs zero.** `S` and `ι` never leave `ℚ⁺`. `KSC-21`'s oriented pair
 `{+1, −1}` therefore needs a third operation. If that operation is additive
