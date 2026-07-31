@@ -52,11 +52,34 @@ def current_reader_contract() -> dict[str, Any]:
     if build["claim_card_contract"].get("graph_sha256") != _sha256(graph_path):
         raise ValueError("public book build manifest has stale claim-graph provenance")
 
+    # 2026-07-31. BK-ONE-SITTING is still the claim-carded work whose provenance is pinned
+    # below, and that chain is unchanged. But it is no longer the WHOLE of what book/
+    # publishes: the route now carries the ported 25-chapter Reciprocal with the One-Sitting
+    # edition as an appendix. Leaving the old fields alone would have left this manifest
+    # describing the route as a single short work while the gate went green — a check
+    # passing a false description, which is the failure this corpus least tolerates.
+    # route_contains is derived from the build manifest, so it cannot drift from what
+    # actually shipped.
+    ordered = build.get("ordered_source_paths") or []
+    ported = [p for p in ordered if p.startswith("13_BOOKS/the_reciprocal/")]
+
     return {
         "work_id": work["work_id"],
         "title": work["title"],
         "href": "book/",
         "edition": work["edition"],
+        "route_contains": {
+            "note": (
+                "book/ publishes more than the claim-carded work named above. The claim-card "
+                "provenance in this block covers that work only; the ported chapters are "
+                "tiered [D] and are not claim-carded."
+            ),
+            "ported_book": "The Reciprocal, ported from the 2026-07-22 Public Edition",
+            "ported_chapter_files": len(ported),
+            "ported_source_dir": "13_BOOKS/the_reciprocal/",
+            "appendices": [p for p in ordered if not p.startswith("13_BOOKS/the_reciprocal/")],
+            "total_ordered_sources": len(ordered),
+        },
         "source": source_rel,
         "source_revision": source_revision,
         "lifecycle": parity_contract["lifecycle"],

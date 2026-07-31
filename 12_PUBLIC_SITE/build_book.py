@@ -15,7 +15,34 @@ import markdown
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
-SOURCES = [
+
+def _reciprocal_chapters():
+    """The 25 chapters of The Reciprocal, in order, from 13_BOOKS/the_reciprocal/.
+
+    2026-07-31. This route used to publish three documents. It now publishes the whole
+    book, because "a free online book" that is three chapters long is a pamphlet.
+
+    Provenance, stated because it matters: the chapters are a PORT of The Reciprocal,
+    Public Edition 2026-07-22, which was written before Emergentism was separated from
+    the product and venture systems it grew up inside. That edition violated this
+    corpus's own gates 249 times — 160 forbidden authority tokens, 20 uses of the
+    retired product form of the two-factor law, 49 bare extraction symbols. The ported
+    chapters keep the argument and the length; they are written in the pure register and
+    carry the rulings made since. The port is tiered [D] and has NOT been re-adjudicated
+    claim by claim.
+
+    Sorted by filename, which is why every chapter file is zero-padded.
+    """
+    d = os.path.join(ROOT, "13_BOOKS", "the_reciprocal")
+    if not os.path.isdir(d):
+        return []
+    return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.endswith(".md")]
+
+
+# The book, in reading order: the ported Reciprocal, then the three active-canon
+# documents as appendices. The appendices are current source owners in their own right —
+# where they and a ported chapter disagree, the appendix governs.
+SOURCES = _reciprocal_chapters() + [
     os.path.join(ROOT, "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"),
     os.path.join(ROOT, "06_ONTOLOGY", "08_THE_HUMAN_CONDITION.md"),
     os.path.join(ROOT, "01_TELEOLOGY", "04_THE_LIVED_COMPASS.md"),

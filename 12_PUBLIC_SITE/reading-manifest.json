@@ -1780,6 +1780,18 @@
     "title": "The Emergentist Weltanschauung — One-Sitting Edition",
     "href": "book/",
     "edition": "active-source-reader",
+    "route_contains": {
+      "note": "book/ publishes more than the claim-carded work named above. The claim-card provenance in this block covers that work only; the ported chapters are tiered [D] and are not claim-carded.",
+      "ported_book": "The Reciprocal, ported from the 2026-07-22 Public Edition",
+      "ported_chapter_files": 26,
+      "ported_source_dir": "13_BOOKS/the_reciprocal/",
+      "appendices": [
+        "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
+        "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+      ],
+      "total_ordered_sources": 29
+    },
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "source_revision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
     "lifecycle": "reader_synthesis",
@@ -1817,7 +1829,7 @@
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "7d953f5305f3384caf0476cfddaa5f36d053dd9de67215daf7c269a1bf39df9c",
+    "output_sha256": "a3d54d21e508b689d28ebc415a5c5bf0debc9520252194823c4b7bc0f8fa4a4b",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }

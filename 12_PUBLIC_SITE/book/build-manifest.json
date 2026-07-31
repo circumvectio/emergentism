@@ -8,13 +8,39 @@
     "sha256": "b52ccdcde8d3858e3af15f1d79c044bfa365e0e20892e3738efe9ed199733d70"
   },
   "ordered_source_paths": [
+    "13_BOOKS/the_reciprocal/00_front_matter.md",
+    "13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md",
+    "13_BOOKS/the_reciprocal/02_the-cargo-cult.md",
+    "13_BOOKS/the_reciprocal/03_the-capture-protocol.md",
+    "13_BOOKS/the_reciprocal/04_why-it-persists.md",
+    "13_BOOKS/the_reciprocal/05_the-graveyard-of-failed-strategies.md",
+    "13_BOOKS/the_reciprocal/06_finity-the-missing-number.md",
+    "13_BOOKS/the_reciprocal/07_the-secret-of-three.md",
+    "13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md",
+    "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
+    "13_BOOKS/the_reciprocal/10_the-extraction-boundary.md",
+    "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
+    "13_BOOKS/the_reciprocal/12_value-without-capture.md",
+    "13_BOOKS/the_reciprocal/13_the-six-lenses.md",
+    "13_BOOKS/the_reciprocal/14_the-paradox-engine.md",
+    "13_BOOKS/the_reciprocal/15_practice-as-method.md",
+    "13_BOOKS/the_reciprocal/16_living-ideas.md",
+    "13_BOOKS/the_reciprocal/17_egregores-and-the-noosphere.md",
+    "13_BOOKS/the_reciprocal/18_the-mesh-and-the-economy.md",
+    "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
+    "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
+    "13_BOOKS/the_reciprocal/21_every-framework-becomes-an-interface.md",
+    "13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md",
+    "13_BOOKS/the_reciprocal/23_what-does-not-hold.md",
+    "13_BOOKS/the_reciprocal/24_the-dissolution.md",
+    "13_BOOKS/the_reciprocal/25_the-seed.md",
     "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
     "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "7d953f5305f3384caf0476cfddaa5f36d053dd9de67215daf7c269a1bf39df9c"
+    "sha256": "a3d54d21e508b689d28ebc415a5c5bf0debc9520252194823c4b7bc0f8fa4a4b"
   },
   "renderer": {
     "extensions": [
@@ -27,6 +53,110 @@
   },
   "schema": "emergentism/public-book-build/v1",
   "sources": [
+    {
+      "path": "13_BOOKS/the_reciprocal/00_front_matter.md",
+      "sha256": "f7d0c3c5dbddb1020305de4a50786a612f53b2318841cc4153c7219867e8fe3a"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md",
+      "sha256": "6d99f95e86da8d59dc6cba3d481638aaf65f3b6841598e17a76fad04b26be7a2"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/02_the-cargo-cult.md",
+      "sha256": "26ec78d4511245167f09ae7cf4fe38c559400d3afd84fa0be057b5214ed282fa"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/03_the-capture-protocol.md",
+      "sha256": "6f6074d55ecd8db586662af70f8462c8c5ac77e0cb436f914bd2d0a6114a86b5"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/04_why-it-persists.md",
+      "sha256": "622c4bc99758c281b21a4b050aacd2a40ead08cced194a21c8a894ba8042a852"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/05_the-graveyard-of-failed-strategies.md",
+      "sha256": "bdad280f40759c0cab4d0c8424a52a013902f3e811a2d4fa27bd929269f40f50"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/06_finity-the-missing-number.md",
+      "sha256": "611448416fe75bdb57a4fc3e3dcf2af6477f0fe251432daca09264a05e12a8da"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/07_the-secret-of-three.md",
+      "sha256": "8b5d3fb274cd30869e7022f680dca0143eb06ba3048c5d9a9aa66af773c43811"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md",
+      "sha256": "e234d2750e1623c317515c7cff74bac4a7316e5ea85583ba1afa1215975ec3ef"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
+      "sha256": "24fb4a57e58f983b9d9504555b3ea040ebecc026418027ae478416d1043f5a3a"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/10_the-extraction-boundary.md",
+      "sha256": "a0b34cd8e6e0648e9bff69cd26002e5f8405217ef60a3c81809568a1aca4fed8"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
+      "sha256": "6b3b911e1c8b355ec58d2cca953d5dc89f46a45430eeee628c63289dbf640f02"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/12_value-without-capture.md",
+      "sha256": "c9a1056afd44ed00c9b49dedd4664641dc24e1c8c1c3d880fd36fbfd4fd3d76e"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/13_the-six-lenses.md",
+      "sha256": "04ce62bf2ef8276337cfa2e93c52b730c09a5c76cd9f9a87dec307bd977ea18e"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/14_the-paradox-engine.md",
+      "sha256": "ecdd3708d2d29b01482458f46b1753bfbf3a586b2ac0306eaf5a1a0e8d6e96af"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/15_practice-as-method.md",
+      "sha256": "d0635efbb1c4da4b6739fc99c6f3a20e3d92de8aad98b60f7ee0b931760fc082"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/16_living-ideas.md",
+      "sha256": "cd039576419ac6d512f88c3f30f4318330ce04ba4ee0329754b90d46ad99c0b2"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/17_egregores-and-the-noosphere.md",
+      "sha256": "ed2aad0daae7232bc5c4b6f5151f891ddeeea2500d209be4b4a97a66134a7ba9"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/18_the-mesh-and-the-economy.md",
+      "sha256": "135df42827c29d362bd9144565a13c539402207d493a5736369871dec026cadc"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
+      "sha256": "65c8c6890d781f9f59461b10fab1b89d3f28e8f19a8b2057ce83a37da5828324"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
+      "sha256": "30786c57e31a9be83a735b31da8b16db866208b74d4491a8a0f467eedd0c70dc"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/21_every-framework-becomes-an-interface.md",
+      "sha256": "7e6f2688bce4a73fbae63db81a3ad6a6c16f97e79275397c0ded004594a84851"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md",
+      "sha256": "b9ff6788f342ce0342f319967e3bcb8348d555381746c0375b2ce49770755683"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/23_what-does-not-hold.md",
+      "sha256": "6800df11d40e444b8210c988df8847e65fca70462789654da818240e87e6ca5b"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/24_the-dissolution.md",
+      "sha256": "47d0fdbc188fea193c9babf6c72a12262630902a995c161599b5fd297af8df14"
+    },
+    {
+      "path": "13_BOOKS/the_reciprocal/25_the-seed.md",
+      "sha256": "d72e1f93951cab7d2950f818ad2235cc99995fb25da8db1389f8f717f6a81d1b"
+    },
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749"

@@ -10,10 +10,60 @@
       "work_id": "BK-ONE-SITTING",
       "title": "The Emergentist Weltanschauung — One-Sitting Edition",
       "edition": "active-source-reader",
-      "historical_sources": ["../00_THE_WELTANSCHAUUNG_ONE_SITTING.md"],
-      "chapter_order": ["boundaries", "difference", "relation", "probability", "actuality", "possibility", "soul-loop", "social-loop", "human-condition", "good", "five-apertures", "exit"],
-      "owner_ids": ["K-1", "K-2", "K-3", "K-4", "K-5", "K-6", "K-7"],
-      "claim_card_ids": ["OS01-01", "OS01-02", "OS01-03", "OS01-04", "OS01-05", "OS01-06", "OS01-07", "OS01-08", "OS01-09", "OS01-10", "OS01-11", "OS01-12", "OS01-13", "OS01-14", "OS01-15", "OS01-16", "OS01-17", "OS01-18", "OS01-19", "OS01-20", "OS01-21", "OS01-22", "OS01-23", "OS01-24", "OS01-25", "OS01-26"],
+      "historical_sources": [
+        "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
+      ],
+      "chapter_order": [
+        "boundaries",
+        "difference",
+        "relation",
+        "probability",
+        "actuality",
+        "possibility",
+        "soul-loop",
+        "social-loop",
+        "human-condition",
+        "good",
+        "five-apertures",
+        "exit"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-2",
+        "K-3",
+        "K-4",
+        "K-5",
+        "K-6",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "OS01-01",
+        "OS01-02",
+        "OS01-03",
+        "OS01-04",
+        "OS01-05",
+        "OS01-06",
+        "OS01-07",
+        "OS01-08",
+        "OS01-09",
+        "OS01-10",
+        "OS01-11",
+        "OS01-12",
+        "OS01-13",
+        "OS01-14",
+        "OS01-15",
+        "OS01-16",
+        "OS01-17",
+        "OS01-18",
+        "OS01-19",
+        "OS01-20",
+        "OS01-21",
+        "OS01-22",
+        "OS01-23",
+        "OS01-24",
+        "OS01-25",
+        "OS01-26"
+      ],
       "release_state": "source_active_projection_review_open",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
       "build_provenance": "12_PUBLIC_SITE/build_book.py"
@@ -22,10 +72,21 @@
       "work_id": "BK-FINITY-PRACTICE",
       "title": "The Finity Card — Lived Compass Practice",
       "edition": "active-source-practice-v1",
-      "historical_sources": ["../01_TELEOLOGY/04_THE_LIVED_COMPASS.md"],
-      "chapter_order": ["finity-card", "comparative-adequacy"],
-      "owner_ids": ["K-4", "K-5"],
-      "claim_card_ids": ["FIN01-01", "FIN01-02"],
+      "historical_sources": [
+        "../01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+      ],
+      "chapter_order": [
+        "finity-card",
+        "comparative-adequacy"
+      ],
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
       "release_state": "source_active_public_projection",
       "public_route": "../12_PUBLIC_SITE/practice/index.html",
       "build_provenance": "source-owned hand projection with public semantic parity"
@@ -34,10 +95,29 @@
       "work_id": "BK-SELF-EATING",
       "title": "The Self-Eating Serpent",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md"],
-      "chapter_order": ["review", "application", "turn", "trap", "dissolution", "seed"],
-      "owner_ids": ["K-5", "K-7"],
-      "claim_card_ids": ["SES01-01", "SES01-02", "SES01-03", "SES01-04", "SES01-05", "SES01-06"],
+      "historical_sources": [
+        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md"
+      ],
+      "chapter_order": [
+        "review",
+        "application",
+        "turn",
+        "trap",
+        "dissolution",
+        "seed"
+      ],
+      "owner_ids": [
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "SES01-01",
+        "SES01-02",
+        "SES01-03",
+        "SES01-04",
+        "SES01-05",
+        "SES01-06"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
       "build_provenance": "self_eating_serpent/CRITICAL_EDITION_1.md"
@@ -46,10 +126,28 @@
       "work_id": "BK-TITANS",
       "title": "The Titans — The Infinite, Finity & Infinity",
       "edition": "research-edition-1-staged",
-      "historical_sources": ["../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md"],
-      "chapter_order": ["standard-mathematics", "selected-symbolism", "finity-protocol", "paradox-ledger", "recovery-and-failure"],
-      "owner_ids": ["K-1", "K-3", "K-4"],
-      "claim_card_ids": ["TIT01-01", "TIT01-02", "TIT01-03", "TIT01-04", "TIT01-05"],
+      "historical_sources": [
+        "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md"
+      ],
+      "chapter_order": [
+        "standard-mathematics",
+        "selected-symbolism",
+        "finity-protocol",
+        "paradox-ledger",
+        "recovery-and-failure"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4"
+      ],
+      "claim_card_ids": [
+        "TIT01-01",
+        "TIT01-02",
+        "TIT01-03",
+        "TIT01-04",
+        "TIT01-05"
+      ],
       "release_state": "research_critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": "titans/RESEARCH_EDITION_1.md"
@@ -62,9 +160,25 @@
         "../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
         "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"
       ],
-      "chapter_order": ["justice-first", "two-horizon", "nonviolent-resistance", "institutional-defence", "repair-exit-and-residue"],
-      "owner_ids": ["K-3", "K-4", "K-5"],
-      "claim_card_ids": ["DHY01-01", "DHY01-02", "DHY01-03", "DHY01-04", "DHY01-05"],
+      "chapter_order": [
+        "justice-first",
+        "two-horizon",
+        "nonviolent-resistance",
+        "institutional-defence",
+        "repair-exit-and-residue"
+      ],
+      "owner_ids": [
+        "K-3",
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "DHY01-01",
+        "DHY01-02",
+        "DHY01-03",
+        "DHY01-04",
+        "DHY01-05"
+      ],
       "release_state": "critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": "dharma_yuddha/CRITICAL_EDITION_1.md"
@@ -73,10 +187,27 @@
       "work_id": "BK-EVOLUTIONARY-NETWORK",
       "title": "The Evolutionary Network",
       "edition": "institutional-proposal-staged",
-      "historical_sources": ["../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"],
-      "chapter_order": ["voluntary-entry", "appeal", "repair", "dissolution", "institutional-failure-rivals"],
-      "owner_ids": ["K-4", "K-5"],
-      "claim_card_ids": ["EN01-01", "EN01-02", "EN01-03", "EN01-04", "EN01-05"],
+      "historical_sources": [
+        "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"
+      ],
+      "chapter_order": [
+        "voluntary-entry",
+        "appeal",
+        "repair",
+        "dissolution",
+        "institutional-failure-rivals"
+      ],
+      "owner_ids": [
+        "K-4",
+        "K-5"
+      ],
+      "claim_card_ids": [
+        "EN01-01",
+        "EN01-02",
+        "EN01-03",
+        "EN01-04",
+        "EN01-05"
+      ],
       "release_state": "proposal_critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": "evolutionary_network/RESEARCH_EDITION_1.md"
@@ -84,26 +215,74 @@
     {
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
       "title": "The Reciprocal / Infinite Play",
-      "edition": "genealogy-critical-edition-staged",
+      "edition": "ported-public-edition-2026-07-31",
       "historical_sources": [
         "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
         "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md"
       ],
-      "chapter_order": ["diagnosis-without-villain", "formal-boundaries", "translation-without-proof", "collective-traces", "institutional-firewall", "immune-protocol", "seed-and-record"],
-      "owner_ids": ["K-1", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["RIP01-01", "RIP01-02", "RIP01-03", "RIP01-04", "RIP01-05", "RIP01-06", "RIP01-07"],
-      "release_state": "legacy_and_frozen_critical_edition_staged",
-      "public_route": null,
-      "build_provenance": "reciprocal_infinite_play/CRITICAL_EDITION_1.md"
+      "chapter_order": [
+        "diagnosis-without-villain",
+        "formal-boundaries",
+        "translation-without-proof",
+        "collective-traces",
+        "institutional-firewall",
+        "immune-protocol",
+        "seed-and-record"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "RIP01-01",
+        "RIP01-02",
+        "RIP01-03",
+        "RIP01-04",
+        "RIP01-05",
+        "RIP01-06",
+        "RIP01-07"
+      ],
+      "release_state": "ported_public_reader_tier_D_not_re_adjudicated",
+      "public_route": "../12_PUBLIC_SITE/book/index.html",
+      "build_provenance": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
+      "ported_chapters_dir": "the_reciprocal/",
+      "port_note": "Ported 2026-07-31 from the 2026-07-22 Public Edition, which broke this corpus publication gates 249 times (160 forbidden authority tokens, 20 uses of the retired product form of the two-factor law, 49 bare extraction symbols, 8 unfenced Titan infixes). Argument and length preserved; register corrected; rulings since applied. Tier [D]: the port is not a re-adjudication. One inherited arithmetic error corrected in chapter 8 and stated in the text."
     },
     {
       "work_id": "BK-SARPASYA",
       "title": "Sarpasya Vijayam",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md"],
-      "chapter_order": ["diagnosis-with-rivals", "mathematics-quarantine", "historical-precedent", "nonviolent-repair", "voluntary-practice", "institution-as-proposal", "dissolution-and-record"],
-      "owner_ids": ["K-1", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["SV01-01", "SV01-02", "SV01-03", "SV01-04", "SV01-05", "SV01-06", "SV01-07"],
+      "historical_sources": [
+        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md"
+      ],
+      "chapter_order": [
+        "diagnosis-with-rivals",
+        "mathematics-quarantine",
+        "historical-precedent",
+        "nonviolent-repair",
+        "voluntary-practice",
+        "institution-as-proposal",
+        "dissolution-and-record"
+      ],
+      "owner_ids": [
+        "K-1",
+        "K-3",
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "SV01-01",
+        "SV01-02",
+        "SV01-03",
+        "SV01-04",
+        "SV01-05",
+        "SV01-06",
+        "SV01-07"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
       "build_provenance": "sarpasya_vijayam/CRITICAL_EDITION_1.md"
@@ -112,10 +291,36 @@
       "work_id": "BK-SIX-LENSES",
       "title": "Six-Fold Revelation / Six Lenses",
       "edition": "critical-edition-1-staged",
-      "historical_sources": ["../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"],
-      "chapter_order": ["preface", "ontological", "epistemological", "axiological", "teleological", "methodological", "comparative-sacred-action", "synthesis"],
-      "owner_ids": ["K-2", "K-3", "K-4", "K-5", "K-7"],
-      "claim_card_ids": ["SL01-01", "SL01-02", "SL01-03", "SL01-04", "SL01-05", "SL01-06", "SL01-07", "SL01-08"],
+      "historical_sources": [
+        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
+      ],
+      "chapter_order": [
+        "preface",
+        "ontological",
+        "epistemological",
+        "axiological",
+        "teleological",
+        "methodological",
+        "comparative-sacred-action",
+        "synthesis"
+      ],
+      "owner_ids": [
+        "K-2",
+        "K-3",
+        "K-4",
+        "K-5",
+        "K-7"
+      ],
+      "claim_card_ids": [
+        "SL01-01",
+        "SL01-02",
+        "SL01-03",
+        "SL01-04",
+        "SL01-05",
+        "SL01-06",
+        "SL01-07",
+        "SL01-08"
+      ],
       "release_state": "historical_readonly_critical_edition_staged",
       "public_route": null,
       "build_provenance": "six_lenses/CRITICAL_EDITION_1.md"
