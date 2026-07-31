@@ -17,8 +17,8 @@ status: "STAGED — K2 adjudication requested"
 owner: K2 (Yves R. Burri)
 created: 2026-07-20
 sources:
-  - 00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md (filed, 143 lines)
-  - 00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md (filed, 168 lines)
+  - 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md (filed, 143 lines)
+  - 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md (filed, 168 lines)
   - bg_7210baaf L2.4 claim-vs-evidence Reap+Seed+Door (text output, not yet filed)
   - bg_74a3fb0e L3.4 citations 12+90+91 (text output, not yet filed)
   - bg_6dd41834 L1.3 contradiction firewall 06_ONTOLOGY (text output, not yet filed)
@@ -108,8 +108,8 @@ The 8 background castes + verifier still in flight (per the rumination team) wil
 
 ## 6 · Reference path
 
-- L2 (full corpus): `00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
-- L6 (K3 archive): `00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
+- L2 (full corpus): `00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
+- L6 (K3 archive): `00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
 - L2.4 (Reap+Seed+Door instance): task output `bg_7210baaf` (per-cite tables, A/B/C/D sections) — not yet filed to `00_HANDOFF/`
 - L3.4 (citations 12+90+91): task output `bg_74a3fb0e` (12,811 hrefs walked, 0 hard-broken) — not yet filed
 - L1.3 (contradiction firewall 06_ONTOLOGY): task output `bg_6dd41834` (HIGH W0 collision, HIGH R4/R10a, HIGH S² drift) — not yet filed
@@ -179,8 +179,8 @@ The L7's 5 cold-reader failures on the public site (5+1 two-clicks-deep, /record
 ## 10 · Cumulative reference path (15 verdicts across 2 waves)
 
 **First wave (5 verdicts, 2026-07-20 evening):**
-- L2 corpus: `00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
-- L6 K3 archive: `00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
+- L2 corpus: `00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md` (143 lines)
+- L6 K3 archive: `00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_2026_07_20.md` (168 lines)
 - L2.4 Reap+Seed+Door: task output `bg_7210baaf` (not yet filed)
 - L3.4 citations 12+90+91: task output `bg_74a3fb0e` (not yet filed)
 - L1.3 06_ONTOLOGY firewall: task output `bg_6dd41834` (not yet filed)

@@ -109,6 +109,36 @@ the frozen library pages.
 The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and the
 root redirect. No external scripts, stylesheets, fonts, or media are required.
 
+## How to actually deploy
+
+Added 2026-07-31. Until then this document ended at `predeploy_check.py`, so a
+newcomer could produce release-candidate bytes and had no documented way to ship
+them.
+
+```bash
+cd 12_PUBLIC_SITE && vercel --prod --yes
+```
+
+- The project is already linked; `.vercel/project.json` holds the ids. **Never open,
+  print, or commit `.vercel/.env.production.local`** — it is gitignored and holds
+  deploy credentials.
+- The live domain is `https://emergentism.org`. A deploy that reports
+  `"target": "production"` and `READY` has shipped bytes; it has not verified them.
+
+**A green local gate does not prove what the host returns.** `vercel.json` headers
+are only observable against the deployed domain, and on 2026-07-31 seven routes were
+found silently indexable because nothing checked. After every deploy that touches
+`vercel.json` or any route's publication status, verify against the live domain:
+
+```bash
+curl -sI https://emergentism.org/titans/ | grep -i x-robots-tag
+```
+
+Expected: the four **declared-provisional** routes (`/amrita/ /egg/ /riemann/ /suda/`)
+return **no** `X-Robots-Tag` and are indexable; every frozen-library route and
+`/offline/` return `noindex, follow`. `09_TOOLS/01_SCRIPTS/check_q4_declarations.py`
+guards the page-side half of this and says plainly that it cannot check the host.
+
 The contribution page is a static contract in this release. It accepts no
 payments, API credentials, private data, or live inference jobs. Any future
 compute broker would require a separate server-side security and authorization

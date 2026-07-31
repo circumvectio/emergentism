@@ -1,6 +1,23 @@
 # 00_HANDOFF
 
-Session handoffs and release receipts, newest last.
+Session handoffs and release receipts, one dated directory each. **They do not sort into
+chronological order by name** — `2026_07_19_*` through `2026_07_31_*` sort lexically, and
+the newest is whichever directory carries the latest date, not the last line of `ls`.
+
+## Which branch is authoritative
+
+**`main`.** It was 90 commits stale until 2026-07-31, when it was fast-forwarded to the
+working branch; nothing in this repository said so, and a newcomer cloning the default
+branch got a tree three weeks behind the deployed site. If you are reading this and `main`
+again looks stale, check `codex/*` branches before assuming the work is lost — and see
+`git for-each-ref refs/rescue/` for recovered stashes that live on no branch at all.
+
+- `origin` (`github.com/circumvectio/emergentism`) is **PUBLIC**. Pushing a branch there
+  publishes it.
+- `menexus` (`github.com/Menexus-GmbH/emergentism`) is **PRIVATE** and is where WIP
+  branches are backed up. All 38 local branches were mirrored there on 2026-07-31.
+
+Session handoffs and release receipts.
 
 **These are receipts.** They record what was observed at a moment — a commit, a gate
 result, a deployed byte, a decision taken. They create **no doctrine, no formal result, no

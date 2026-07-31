@@ -58,7 +58,7 @@ task_id: bg_84e688df-fe25-4659-8760-26768a659263
 
 ## Bounded authority
 
-Box 9 of receipt 144 held throughout. No moves, no renames, no commits, no tier promotions, no deletions, no erasure. The audit wrote one file (`00_HANDOFF/L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md`) — a handoff document, not a register mutation. If the founder prefers the audit to live in `90_ARCHIVE/`, a one-line K3 move is the only post-audit action.
+Box 9 of receipt 144 held throughout. No moves, no renames, no commits, no tier promotions, no deletions, no erasure. The audit wrote one file (`00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md`) — a handoff document, not a register mutation. If the founder prefers the audit to live in `90_ARCHIVE/`, a one-line K3 move is the only post-audit action.
 
 ## The one sentence
 

@@ -8,7 +8,7 @@ owner: "01_EMERGENTISM (staged by L4 Kṣatriya Arjuna ⚔, Scope D; K2-disposed
 scope: "Mechanical/routing repairs + one tier-drift repair explicitly authorized by the canonical owner's Anti-Drift Rule. No doctrine change. No public-site deploy."
 authorization: "Principal: K2 (Yves R. Burri). Mandate: user request 2026-07-23 to act on the per-folder audit. Scope: the 13 files listed in §A + the founder-gated findings in §C (NOT acted on). Consent: staged only; no irreversible act. Custody: this receipt + working-tree diff. Expiry: none — remains staged until K2 signs or rejects. Contest path: revert any file with `git checkout -- <path>`. Actor: L4 agent. Consequence bearers: the corpus readers + the public site (no deploy here)."
 relates:
-  - 00_HANDOFF/K2_PACKET_AUDIT_TRIO_HANDOFF_2026_07_20.md (the audit wave that surfaced most of these)
+  - 00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/K2_PACKET_AUDIT_TRIO_HANDOFF_2026_07_20.md (the audit wave that surfaced most of these)
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md (the "undercounted fourfold" finding)
   - 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md (the Anti-Drift Rule owner)
 ---

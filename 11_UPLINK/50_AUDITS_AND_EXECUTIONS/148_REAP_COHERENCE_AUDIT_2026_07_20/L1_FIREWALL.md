@@ -52,7 +52,7 @@ Read in full: the Reap (81 lines); openings of the Door (`00_THE_WELTANSCHAUUNG.
 
 Corpus-wide grep for the Reap returns exactly two referencing surfaces outside the file itself:
 `00_META/registers/FILE_REGISTER.json:23502` (register already lists the path) and
-`00_HANDOFF/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md`. Missing where a reader would look:
+`00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md`. Missing where a reader would look:
 
 1. `10_SEED/README.md` — "Two distinct surfaces currently coexist" table lists only
    `00_THE_SEED.md` and the ladder front page; no `02_THE_REAP.md` row; the count "two" is stale.
