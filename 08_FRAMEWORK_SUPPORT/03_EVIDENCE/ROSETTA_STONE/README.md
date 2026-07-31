@@ -21,9 +21,11 @@ certificate nor evidence for the Emergentist ontology.
 ## Read first
 
 1. [Master Rosetta](00_THE_MASTER_ROSETTA.md) — the non-transfer laws and audit sequence.
-2. [Generative Table](D_SERIES_ROWS/00_GENERATIVE_TABLE.md) — one projection-only row example.
-3. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — a working evaluation form.
-4. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
+2. [Rosetta vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md) — namespaced projection packs, declared loss, recursive disambiguation, and the generic application-return contract.
+3. [Seven philosophical questions](00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md) — the `PHIL7@1` cross-cutting question pack.
+4. [Generative Table](D_SERIES_ROWS/00_GENERATIVE_TABLE.md) — the `GEN7@1` projection-only row example.
+5. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — the generalized pack and cell evaluation form.
+6. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
 
 ## Authority boundary
 
@@ -33,6 +35,10 @@ certificate nor evidence for the Emergentist ontology.
 - G7 is a selected D5 game vocabulary, not a universal stage count.
 - `L0` and `L∞` are distinct boundary rows. A mirror relation is not equality.
 - Seven -ologies are questions; they are not D-rungs.
+- Bare `Lx` is local shorthand only. Cross-pack references use
+  `projection_id@version:row_key`.
+- A downstream mirror may test and revise itself continuously, but it can only
+  submit a receipted theory-change proposal; it cannot mutate this owner.
 - A Seed page, website page, receipt, row, or visualization cannot override an
   owner document.
 
@@ -46,6 +52,7 @@ claim state. Its value is auditability, not precedence.
 Internal fit means a declared mapping is coherent. External support requires a
 preregistered out-of-sample discriminator, independent coding, explicit rivals,
 and visible non-fits. A mapping that can be rescued by arbitrary recoding fails.
+Repeated recursive review of the same material creates no independent evidence.
 
 The former front door and its stronger calibration claims are preserved at the
 [dated purity boundary](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/README_LEGACY_2026_07_21.md).

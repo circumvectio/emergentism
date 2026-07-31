@@ -20,20 +20,26 @@ evidence_tier: "[B/S] retained by source domains; [I] for every cross-domain row
 
 Its numerical annotations use the typed node convention: `V₄` is D4 actual
 power, `Φ₅` is D5 possible power, and `Φ̂₄` is the present D4 evaluation that
-can enter arithmetic. For compactness only, the table writes `Φ,V` for
+can enter the selected comparison. The factors are ordinal. After a declared
+common normalization, `P_node:=min(Φ̂₄,V₄)` is the working AND-class score. The
+product `Φ̂₄V₄` is retained only as a historical conjunction name and may not
+rank, score, or compare nodes. For compactness only, the table writes `Φ,V` for
 `Φ̂₄,V₄`. Lowercase `φ,ν` remain reciprocal-chart coordinates.
+
+This pack is `GEN7@1`. Its `L1…L7` keys name seats in this selected catalogue,
+not the same objects as identically numbered seats in `G7@1` or another pack.
 
 ## Selected rows
 
-| Row | G7 symbol | Historical-social analogy | Inference / question / regime analogy | Mathematical note | Standing |
+| Stable row ID | Projected G7 symbol | Historical-social analogy | Inference / question / regime analogy | Mathematical note | Standing |
 |---|---|---|---|---|---|
-| L1 | Kali 🎲 · Demon-polar taking | Caṇḍāla | dialectical / objective-function / tyranny | if bounded `V>0`, `Φ→0` sends selected `P_node=ΦV→0` | `[I]`; algebraic consequence conditional on the model |
-| L2 | Kālī 💀 · taking / God-function truth-cut | Śūdra | inductive / epistemology / democracy | `dP_node=V dΦ+Φ dV` | `[I]`; differential `[A]` inside the product model |
-| L3 | Kṛṣṇa ◇ · God-polar giving | Vaiśya | deductive / methodology / oligarchy | `∂P_node/∂V=Φ` | `[I]`; derivative `[A]` inside the product model |
-| L4 | Arjuna ⚔ · God-polar giving | Kṣatriya | abductive / axiology / timocracy | `Φ=V` is a selected normalized balance condition, not a universal optimum | `[I]` |
-| L5 | Brahmā ○ · Titan creation frame | Brāhmaṇa | systematic / ontology / aristocracy | `log P_node=log Φ+log V` for positive factors | `[I]`; identity `[A]` inside the product model |
-| L6 | Śiva • · Titan dissolution frame | Sādhu | apophatic / metaphysics / anarchy | `E_node=-log(P_node)` is a declared loss, not automatically entropy | `[I]` |
-| L7 | Viṣṇu ⊙ · Titan preservation frame | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the finite-node score | `[I]` |
+| `GEN7@1:L1` | Kali 🎲 · Demon-polar taking | Caṇḍāla | dialectical / objective-function / tyranny | if either normalized factor is at the least available rank, `min(Φ,V)` takes that limiting rank | `[I]`; order consequence conditional on the selected model |
+| `GEN7@1:L2` | Kālī 💀 · taking / God-function truth-cut | Śūdra | inductive / epistemology / democracy | the lower-ranked factor is the bottleneck; ties remain explicit | `[I]`; order consequence conditional on the selected model |
+| `GEN7@1:L3` | Kṛṣṇa ◇ · God-polar giving | Vaiśya | deductive / methodology / oligarchy | if `Φ≤Φ′` and `V≤V′`, then `min(Φ,V)≤min(Φ′,V′)` | `[I]`; monotonicity `[A]` inside the order model |
+| `GEN7@1:L4` | Arjuna ⚔ · God-polar giving | Kṣatriya | abductive / axiology / timocracy | if `Φ=V`, the minimum equals both; equality is selected balance, not a universal optimum | `[I]` |
+| `GEN7@1:L5` | Brahmā ○ · Titan creation frame | Brāhmaṇa | systematic / ontology / aristocracy | for common strictly increasing `f`, `min(f(Φ),f(V))=f(min(Φ,V))` | `[I]`; ordinal-invariance identity `[A]` |
+| `GEN7@1:L6` | Śiva • · Titan dissolution frame | Sādhu | apophatic / metaphysics / anarchy | `min(Φ,V)≤Φ` and `min(Φ,V)≤V`; a high factor cannot compensate for a low one | `[I]`; order consequence `[A]` |
+| `GEN7@1:L7` | Viṣṇu ⊙ · Titan preservation frame | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the ordinal node score | `[I]` |
 
 Varṇa and regime labels are attributed historical analogies, never classes of
 human worth or prescriptions. The -ologies are cross-cutting questions, not
@@ -42,10 +48,11 @@ evidence nor generate the adjacent cultural mappings.
 
 ## Boundary rows
 
-`L0` and `L∞` are distinct limiting rows. At the corresponding chart poles,
+`GEN7@1:L0` and `GEN7@1:L∞` are distinct limiting rows. At the corresponding chart poles,
 `φν` is undefined (`0·∞` or `∞·0`), though its limit along the open reciprocal
 chart is `1`. Connectedness of `S²` does not identify its poles. The selected
-row reflection pairs `L1↔L7`, `L2↔L6`, and `L3↔L5`; a source domain need not.
+row reflection pairs `GEN7@1:L1↔GEN7@1:L7`,
+`GEN7@1:L2↔GEN7@1:L6`, and `GEN7@1:L3↔GEN7@1:L5`; a source domain need not.
 
 ## Evaluation rule
 

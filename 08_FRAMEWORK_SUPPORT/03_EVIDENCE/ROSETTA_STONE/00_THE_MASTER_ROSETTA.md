@@ -42,6 +42,24 @@ Every projection must declare:
 If a round trip is claimed, `ρ_{B→A}(ρ_{A→B}(c))` must state what is preserved
 and what is lost. Visual resemblance is never enough.
 
+### Namespaces and projection packs
+
+The cross-pack reference grammar is `projection_id@version:row_key`. A bare
+`Lx` is only local shorthand after one pack has been declared; it is invalid in
+a cross-pack claim. Equal-looking seats in `G7@1`, `GEN7@1`, `PHIL7@1`, or any
+other pack are not identical objects.
+
+Each pack records its owner, native vocabulary and cardinality, source version
+and digest, normalization operations, proposed invariant, discarded
+information, dependencies, rival, discriminator, and kill criterion. A
+semantic change creates a new version and a supersession edge. It never
+silently changes an existing reference.
+
+Projection composition is not automatic. If `A→B` and `B→C` exist, `A→C` is a
+fresh audited projection with its own loss and dependency record. The complete
+contract and recursive-disambiguation rules live in [Rosetta
+vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md).
+
 ## 2. Non-transfer laws
 
 - A theorem in `A` does not become a theorem in `B`.
@@ -73,7 +91,8 @@ G7 translates the D4/D5 power seam; it does not define that seam:
 V₄ = D4 actual power
 Φ₅ = D5 possible power
 Φ̂₄ = present D4 evaluation of Φ₅
-P_node = Φ̂₄V₄                 public shorthand: ΦV
+P_node := min(Φ̂₄,V₄)          selected ordinal AND-class working score
+Φ̂₄V₄                          historical conjunction name only; not a ranking
 
 M4 = two demon-polar taking forms + two god-polar giving forms
 F3 = three Titan-frame projections: create, dissolve, preserve
@@ -117,7 +136,7 @@ not external truth.
 
 ## 5. Selected seven-row example
 
-The familiar chain
+The familiar `GEN7@1` chain
 
 ```text
 Varṇa → Pramāṇa → Reasoning → -ology → Regime → Equation
@@ -126,8 +145,10 @@ Varṇa → Pramāṇa → Reasoning → -ology → Regime → Equation
 is a selected reading order, not a causal law. Varṇa and regime are historical
 analogies, never identities or rankings of persons; the seven -ologies are
 cross-cutting philosophical questions, not D-rungs; equations do not evidence
-the rows they annotate. Each cell remains `[I]` unless independently supported
-inside its own domain.
+the rows they annotate. Its stable seats are `GEN7@1:L1` through
+`GEN7@1:L7`. They do not inherit the meanings of `G7@1:L1…L7` merely because a
+projection relates the two packs. Each cell remains `[I]` unless independently
+supported inside its own domain.
 
 ## 6. Pass, fail, and kill
 

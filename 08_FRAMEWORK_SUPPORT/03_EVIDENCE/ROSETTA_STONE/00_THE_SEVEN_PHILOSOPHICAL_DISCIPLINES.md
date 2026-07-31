@@ -41,15 +41,19 @@ source_custody:
 
 ## The selected index
 
-| Rosetta prompt | Familiar discipline name | Guiding question | One usable method among many |
+This projection pack is `PHIL7@1`. Its row keys are semantic words rather than
+bare numerals so that the questions cannot be silently confused with G7 moves,
+generative seats, dimensions, or runtime roles.
+
+| Stable prompt ID | Familiar discipline name | Guiding question | One usable method among many |
 |---|---|---|---|
-| L1 · purpose | Teleology | What end or purpose is being proposed? | dialectical comparison |
-| L2 · knowledge | Epistemology | What could justify this claim? | observation and induction |
-| L3 · inference | Methodology and logic | What follows, and by which rule? | deduction and audit |
-| L4 · value and commitment | Axiology | What matters, to whom, under which consequences? | abductive judgment plus accountable action |
-| L5 · world structure | Cosmology | What model of the world is assumed? | systematic synthesis |
-| L6 · being and limits | Ontology | What kinds of entities or relations are posited? | axiomatic analysis and apophatic restraint |
-| L7 · ultimate horizon | Theology or ultimate metaphysics | What is treated as ultimate, and with what warrant? | transcendental critique |
+| `PHIL7@1:purpose` | Teleology | What end or purpose is being proposed? | dialectical comparison |
+| `PHIL7@1:knowledge` | Epistemology | What could justify this claim? | observation and induction |
+| `PHIL7@1:inference` | Methodology and logic | What follows, and by which rule? | deduction and audit |
+| `PHIL7@1:value` | Axiology | What matters, to whom, under which consequences? | abductive judgment plus accountable action |
+| `PHIL7@1:world` | Cosmology | What model of the world is assumed? | systematic synthesis |
+| `PHIL7@1:being` | Ontology | What kinds of entities or relations are posited? | axiomatic analysis and apophatic restraint |
+| `PHIL7@1:horizon` | Theology or ultimate metaphysics | What is treated as ultimate, and with what warrant? | transcendental critique |
 
 These are framework-selected prompts. The established disciplines overlap,
 disagree internally, use several methods, and admit other taxonomies. Teleology
@@ -87,6 +91,22 @@ The arrows mean “ask next,” not “causes,” “entails,” or “ranks abo
 model of options and D4 means may inform a commitment, but this philosophical
 index neither derives that typed action model nor turns commitment into a
 quantum collapse.
+
+## Soul Loop interrogation
+
+The [Soul Loop](../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md)
+is a feedback graph, not a seven-stage realization of this index. All seven
+questions may be asked of every loop phase. Primary emphases can still be
+useful: knowledge is especially visible in model and receipt audits; inference
+in selection and revision rules; value in authorization and commitment;
+purpose in represented ends and policy; world structure in the environment;
+being in the loop's type boundaries; and horizon in its limits and
+nonclosure. These are many-to-many projections, never exclusive ownership.
+
+A proposed one-question/one-phase assignment is therefore a testable adapter,
+not an identity. It must name what it omits and be compared with the rival in
+which every phase is interrogated by the full `PHIL7@1` question set. The
+[vNext contract](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md) owns that audit form.
 
 ## Test, revision, and exit
 

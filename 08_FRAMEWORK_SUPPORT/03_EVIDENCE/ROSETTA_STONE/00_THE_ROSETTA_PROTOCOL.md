@@ -33,11 +33,16 @@ Per the registry row and receipt 126, the seven-row alignment is a **cross-domai
 
 What survives is precisely what the Memphis stone had: **parallel registers of one structure, entered from whichever column the reader already reads.** The audits' own convergent verdict on the whole framework — *"it does not unify the sciences by derivation; it translates between them"* — makes the Rosetta not a damaged exhibit but the framework's **central instrument**.
 
-## 2 · The Greek-column principle [S] structural
+## 2 · The Greek-column principle [I/C] transmission hypothesis
 
 A translation stone functions **iff at least one column is already readable by the target reader without faith or instruction.** That column — the Greek column — is the key that makes the sacred columns decipherable rather than decorative.
 
-For the framework's public transmission, the Greek column is **value**: working products, honest money-behavior, receipts, fees only where value was created, exits that actually open. It is the register every living person reads and verifies natively. Doctrine written parallel to a verifiable value-column gets deciphered by the curious, exactly as Champollion entered hieroglyphic through Greek. Doctrine shipped without a Greek column is three stacked mysteries.
+For one proposed public-transmission strategy, the Greek column is **verifiable
+value**: an observable use, honest terms, receipts, and exits that actually
+open. The claim that every reader understands this register, or that it unlocks
+doctrine better than other readable columns, is `[C]` until comparative tests
+support it. A useful application can make an unfamiliar symbolic register more
+approachable; it cannot evidence the worldview that inspired it.
 
 **Corollary (belief-optional transmission):** the framework spreads by *installation of its invariants into things that work*, not by conversion. Users, not believers — the Gödel criterion ("adherents = failure") is thereby honored *structurally*, not aspirationally.
 
@@ -62,6 +67,22 @@ The economy the Great-Filter wager concerns is agent-saturated; its scribes are 
 - **The registry as API:** the Settled Canon Registry's Do-NOT-flag / Still-flag-if discipline is already a machine-shaped contract; formalize it so audit agents consume it directly (this week's 37-agent audit did so by prose; the next should do so by schema).
 
 **Direction of trust:** the machine script *inherits* tier discipline — it may never assert more than the human canon's signed tier. An agent-readable claim carries the same `[A]/[S]/[I]/[C]` it carries in prose, or it is malformed.
+
+The machine-shaped theory contract is now specified by [Rosetta
+vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md). Its namespaces, native counts,
+losses, rivals, discriminators, and separate commitment/outcome receipts govern
+new machine projections. A downstream implementation may improve its local
+mirror continuously; it may only return a theory-change proposal, never mutate
+this source owner or upgrade a tier automatically.
+
+## 4.1 · Pure-worldview boundary
+
+The three-scripts rule is a selected translation heuristic, not a premise of
+Emergentism and not a universal requirement on every artifact. Products,
+companies, commercial outcomes, and runtimes are downstream test sites. They
+may falsify or motivate revision of this transmission hypothesis, but they do
+not define the ontology, supply authority to the corpus, or become evidence
+merely by operating.
 
 ## 5 · Kill criteria (this protocol's own)
 

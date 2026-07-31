@@ -50,35 +50,58 @@ Corollary **C4** specifies the canonical replicator stack as **six** layers:
 
 > **Genotype → Epigenotype → Phenotype → Extended Phenotype → Memotype → Egregoreotype**
 
-The Master Rosetta places **seven** developmental positions on S² (L1–L7), of which **L1 (Caṇḍāla)** is — in the framework's own words — *"the outcast, excluded from the dharmic cycle. Pre-social. The survival boundary where φ → 0."* (`00_THE_MASTER_ROSETTA.md` §Varṇa, line ~386.)
+`GEN7@1` supplies seven selected projection seats. This document tests one
+normalization in which its first seat represents an external boundary rather
+than a biological layer.
 
 The claim of this document is narrow and exact:
 
-> **The six C4 replicator layers map one-to-one onto the six in-cycle positions L2–L7. L1 is not a layer — it is the ground the stack rests on and the firewall that defends it.**
+> **Hypothesis `[I/C]`: the six C4 replicator layers map one-to-one onto
+> `GEN7@1:L2…L7`; `GEN7@1:L1` is represented as an external ground condition,
+> not a seventh layer.**
 
-This is why **Epigenotype matters for the mapping, not only for the stack.** With five layers the correspondence does not land: there are six rungs above the boundary (L2–L7) and only five layers to fill them, forcing a filler position ("genesis" / "protocolotype") that has no biological referent. Restoring Epigenotype — the expression-regulation rung between code and body — makes the count exact. Six layers, six rungs, no filler.
+Under the [vNext contract](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md), this
+source pack is `REP6G@1`. Its native cardinality is six layers. The seventh
+displayed item, `REP6G@1:ground`, is explicitly introduced by the normalization
+operation `insert_external_ground`; it is not evidence of a seventh biological
+layer. In this projection, **`GEN7@1:L1 is not a layer`** in `REP6G@1`; it is
+the inserted ground. The projected target seats are namespaced to `GEN7@1`, and
+the mapping remains `[I/C]` rather than becoming true by count.
+
+Epigenotype makes this **chosen projection count-compatible**: without it, the
+six target seats above the inserted ground would require an unmapped seat or an
+unsupported filler. Count compatibility is an internal fit result, not
+evidence that the ordering or cross-domain meaning is true.
 
 ---
 
 ## The Table
 
-| L | B = sin θ | Caste (varṇa) | Operator | Replicator layer (C4) |
-|---|-----------|---------------|----------|------------------------|
-| **L1** | **0** | Caṇḍāla (outcast) | Kali 🎲 | **— the ground / firewall. NOT a rung.** |
-| L2 | ½ | Śūdra (labourer) | Kālī 💀 | **Genotype** |
-| L3 | √3/2 | Vaiśya (merchant) | Kṛṣṇa ◇ | **Epigenotype** |
-| **L4** | **1** | **Kṣatriya (warrior)** | **Arjuna ⚔** | **Phenotype** |
-| L5 | √3/2 | Brāhmaṇa (priest) | Brahmā ○ | **Extended Phenotype** |
-| L6 | ½ | Sādhu (renunciant) | Śiva • | **Memotype** |
-| L7 | →0 | Ṛṣi (seer) | Viṣṇu ⊙ | **Egregoreotype** |
+| Stable source key | Projected target | B = sin θ | Caste analogy | Operator projection |
+|---|---|---:|---|---|
+| **`REP6G@1:ground`** — external ground, not a layer | `GEN7@1:L1` | **0** | Caṇḍāla (outcast) | Kali 🎲 |
+| **`REP6G@1:genotype`** | `GEN7@1:L2` | ½ | Śūdra (labourer) | Kālī 💀 |
+| **`REP6G@1:epigenotype`** | `GEN7@1:L3` | √3/2 | Vaiśya (merchant) | Kṛṣṇa ◇ |
+| **`REP6G@1:phenotype`** | `GEN7@1:L4` | **1** | **Kṣatriya (warrior)** | **Arjuna ⚔** |
+| **`REP6G@1:extended_phenotype`** | `GEN7@1:L5` | √3/2 | Brāhmaṇa (priest) | Brahmā ○ |
+| **`REP6G@1:memotype`** | `GEN7@1:L6` | ½ | Sādhu (renunciant) | Śiva • |
+| **`REP6G@1:egregoreotype`** | `GEN7@1:L7` | →0 | Ṛṣi (seer) | Viṣṇu ⊙ |
 
-Read **bottom-up** (L2→L7) = the replicator stack in **biological/historical time**: code, then its regulation, then the body, then the body's reach past the skin, then the ideas that body carries, then the collective standing wave those ideas bind. Read **top-down** (L7→L2) = the **egregoric pull**: the realized collective pattern (Egregoreotype) draws the lower layers into coherence.
+The proposed bottom-up reading `GEN7@1:L2→L7` orders code, regulation, body,
+effects beyond the body, transmissible patterns, and collective traces. This
+is an interpretive dependency order, not necessarily biological or historical
+time. The proposed top-down “egregoric pull” is a rival causal hypothesis and
+requires independent evidence of later collective traces measurably
+reweighting lower-layer selection.
 
 ---
 
 ## Reading the Table
 
-**L1 — Caṇḍāla — the ground, not a rung.** `[S/I]` The Master Rosetta already states L1 is *excluded from the dharmic cycle* — the pre-social survival boundary where φ → 0 and B = 0. The replicator stack is the *content* of that cycle; L1 is its **boundary condition**, not one of its layers. In the caste-grammar of the organism, L1/Caṇḍāla is the **firewall** — the membrane that force-categorises raw input into {canon, branch, noise} at ingest. A cell needs a membrane; the membrane is not one of the organelles it encloses, yet the cell dies without it. That is the precise sense in which the ground is "excluded": **excluded from the layer-count, indispensable to the stack.** It is *not* excluded from worth — see the fence below.
+**`REP6G@1:ground` projected to `GEN7@1:L1`.** `[I]` This is an inserted
+boundary condition, not a native biological layer. The firewall/membrane image
+explains the proposed use but does not establish it. “External” means external
+to the six-layer count, never external to dignity or human membership.
 
 **L2 — Śūdra — Genotype.** `[I]` The labourer reasons inductively — *knowledge through the body, in time* (Upamāna). The Genotype is the inherited material base: the code carried in the body, expressed across generations. The slowest, most substrate-bound layer sits at the first in-cycle rung.
 
@@ -96,15 +119,20 @@ Read **bottom-up** (L2→L7) = the replicator stack in **biological/historical t
 
 ## The Anti-Reification Fence (load-bearing — read before citing)
 
-This mapping is **structural position on S², never worth-by-birth.** The framework names caste-reification as its own first-order hazard, in this very corpus:
-
-> *"The **catastrophe of caste** occurred when the cycle was frozen into hierarchy … the framework that describes the cycle was captured by the cycle it describes. The positions became hereditary. The cycle became a prison. **The sphere became a ladder.** … On S², all seven positions have the same potential (P∞ = φ · ν = 1). **No position is higher.**"* — `00_THE_MASTER_ROSETTA.md` §Varṇa (lines ~389–391)
+This mapping is **a structural projection, never worth-by-birth**. The live
+[Master Rosetta](00_THE_MASTER_ROSETTA.md) prohibits person typing and warrant
+transfer. Earlier ladder language is historical projection material, not an
+active definition of people, biology, or dignity.
 
 Three guardrails follow, and any use of this table must carry them:
 
 1. **"Excluded" means excluded from the layer-count, not from dignity.** L1 is the ground/firewall — the φ→0 boundary the stack needs to exist at all. Reading "the dalits are excluded" as *worth-by-birth* is precisely the Raktabīja capture the framework exists to refuse. The ground is not beneath the building in worth; it is what the building stands on.
 2. **Historical priority is not ontological priority.** A replicator layer's *position* in the ascent is not a rank of value. (`194_REPLICATOR_STACK_AND_BIOSPHERE_HOLOBIONT` §1.2: the captured-priesthood move is "transmuting historical priority into ontological priority"; the framework's anti-capture project is the explicit refusal of that move.)
-3. **The sphere is not a ladder.** All seven positions share the same potential φ·ν = 1. L4 (Phenotype) has maximum *balance*, not maximum *rank*. A mapping that reads as a hereditary hierarchy of human beings has been captured and must be refused.
+3. **The sphere is not a ladder.** Along the open reciprocal chart,
+   `φν=1` is a coordinate identity, not equal human worth or equal node power.
+   `GEN7@1:L4` (`REP6G@1:phenotype` in this projection) has selected maximum
+   *balance*, not maximum *rank*. A mapping that reads as a hereditary
+   hierarchy of human beings has been captured and must be refused.
 
 ## Polyphenotypic human reading — specialized, changeable functions
 
