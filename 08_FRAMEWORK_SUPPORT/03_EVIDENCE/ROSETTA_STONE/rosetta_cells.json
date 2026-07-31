@@ -1,14 +1,16 @@
 {
-  "schema_ref": "RS.CORE@1:projection-cell-ledger-v2",
-  "ledger_revision": 2,
+  "schema_ref": "RS.CORE@1:pack-projection-cell-ledger-v3",
+  "ledger_revision": 3,
   "recorded_at": "2026-07-31",
   "_about": [
-    "Machine-readable seed ledger for Rosetta vNext. It implements the theoretical contract in 03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md and the audit fields in 10_CELL_AUDIT_SCHEMA_2026_04_25.md.",
-    "This is a seed, not the corpus. It retains the four original teleology and ontology collision examples while migrating them into directional, versioned projection claims.",
-    "PHIL7@1 places the purpose question first while GEN7@1 places a teleology analogy at L7. PHIL7@1 places being/ontology sixth while GEN7@1 places an ontology analogy at L5. Those are data about two packs, not a license for bare Lx claims.",
-    "A changed meaning creates a new pack version or cell revision. Failed and superseded revisions remain present; the checker rejects dangling, reciprocal, cyclic, or in-place status rewrites."
+    "Machine-readable seed ledger for Rosetta vNext. Active PackManifest v2 records are separate from directional ProjectionManifest v2 records.",
+    "A pack freezes native vocabulary and exact source custody only. A projection owns target choice, mapping normalization, invariant, loss, dependencies, rival, discriminator, kill criterion, round trip, and cells.",
+    "The four legacy teleology and ontology collision examples survive under two inverse-but-independent projections. Their incompatible local row numbers kill bare Lx identities, not either native pack.",
+    "Changed pack meaning creates a new pack version. Changed mapping meaning creates a new projection revision whose supersedes_ref retains the prior revision.",
+    "PackManifest v1 and ProjectionManifest v1 remain historical/read-only inputs; they cannot be registered as active seed records in this v3 ledger.",
+    "Evidence tier symbols identify distinct warrant kinds, not positions in a total order. Every changed fact_tier or mapping_tier needs its own receipt-backed, externally attested transition."
   ],
-  "tier_order": [
+  "evidence_tier_vocabulary": [
     "A",
     "B",
     "S",
@@ -16,16 +18,17 @@
     "C",
     "D"
   ],
+  "regime_records": [],
   "packs": [
     {
-      "projection_id": "PHIL7",
+      "schema_version": "rs.pack_manifest.v2",
+      "pack_id": "PHIL7",
       "version": 1,
-      "projection_ref": "PHIL7@1",
+      "pack_ref": "PHIL7@1",
       "description": "Seven selected philosophical questions used as a reversible navigation prototype.",
       "owner_ref": "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
       "source_path": "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
-      "source_domain": "selected philosophical-question index",
-      "target_domain": "declared independently by each directional cell",
+      "native_domain": "selected philosophical-question index",
       "native_terms": [
         "purpose",
         "knowledge",
@@ -35,77 +38,69 @@
         "being",
         "horizon"
       ],
+      "native_term_definitions": [
+        {
+          "term_key": "purpose",
+          "label": "Teleology",
+          "description": "What end or purpose is being proposed?"
+        },
+        {
+          "term_key": "knowledge",
+          "label": "Epistemology",
+          "description": "What could justify this claim?"
+        },
+        {
+          "term_key": "inference",
+          "label": "Methodology and logic",
+          "description": "What follows, and by which rule?"
+        },
+        {
+          "term_key": "value",
+          "label": "Axiology",
+          "description": "What matters, to whom, under which consequences?"
+        },
+        {
+          "term_key": "world",
+          "label": "Cosmology",
+          "description": "What model of the world is assumed?"
+        },
+        {
+          "term_key": "being",
+          "label": "Ontology",
+          "description": "What kinds of entities or relations are posited?"
+        },
+        {
+          "term_key": "horizon",
+          "label": "Theology or ultimate metaphysics",
+          "description": "What is treated as ultimate, and with what warrant?"
+        }
+      ],
       "native_cardinality": 7,
       "source_version": "PHIL7@1/2026-07-31",
       "digest_algorithm": "sha256",
-      "source_exact_digest": "4985ac7b70ecaa754d36010818eddbc6416d1a8df7a785052b9476112ec6af96",
-      "source_semantic_digest": "360c3f2ef5d082c050098cb7724d28c1aee0ef5d2786f25c1bc8e1cde30e00ea",
-      "semantic_normalization": [
-        "decode UTF-8",
-        "normalize line endings to LF",
-        "normalize Unicode to NFC",
-        "trim and collapse whitespace within each non-empty line",
-        "drop blank lines",
-        "append one terminal LF"
-      ],
-      "normalization_operations": [],
-      "proposed_invariant": "The identities and selected order of seven questions remain recognizable as a non-causal navigation interface.",
-      "discarded_information": [
-        "internal disputes within each discipline",
-        "alternative philosophical taxonomies",
-        "overlap among questions",
-        "workflow orders other than the selected reading order"
-      ],
-      "dependency_refs": [
-        {
-          "kind": "CONTRACT",
-          "ref": "RS.CORE@1"
-        },
-        {
-          "kind": "SOURCE",
-          "ref": "00_THE_MASTER_ROSETTA.md"
-        }
-      ],
-      "independence_status": "FRAMEWORK_DERIVED",
-      "strongest_rival": "A domain-native philosophical taxonomy with a different count or order is equally or more usable without Rosetta notation.",
-      "rival_maps": [
-        "PHIL5_rival_pending",
-        "PHIL_domain_native_pending",
-        "unordered_question_set"
-      ],
-      "discriminator": "In a blinded comparison, independent readers apply this index with fewer omissions or equivocations than named rival indexes without inferring causal order or hierarchy.",
-      "kill_criterion": "Retire or contract the pack if its seven selected prompts repeatedly force overlap, hierarchy, or worse decisions than a simpler rival index.",
-      "round_trip_test": {
-        "route": "PHIL7@1 -> independently declared target -> PHIL7@1",
-        "must_preserve": [
-          "question identity",
-          "declared direction of the map"
-        ],
-        "must_report_as_loss": [
-          "disciplinary nuance",
-          "non-selected questions",
-          "any order introduced only by the target"
-        ]
-      },
+      "source_exact_digest": "4d60069ed28e9434bd0f70636f7b66a39d5b87b788da8c9863cdb1308c32ee7c",
+      "native_expression_digest_algorithm": "sha256",
+      "native_expression_digest_canonicalization": "rs.native_term_definitions.v1",
+      "native_expression_digest": "b320a0487a4680f02ad9cf3cefba65376fe50f11a737c40436c618df64c654b2",
+      "semantic_digest_status": "PROVISIONAL",
+      "semantic_canonicalization_id": null,
+      "semantic_canonicalization_version": null,
+      "digest_normalization_operations": [],
       "lifecycle_status": "ACTIVE",
-      "supersedes": null,
-      "superseded_by": null,
-      "revision_event": {
-        "action": "REGISTERED",
+      "registration_event": {
         "recorded_at": "2026-07-31",
-        "reason": "Register the active question index under a versioned namespace.",
-        "evidence_receipt_refs": []
+        "reason": "Freeze the active philosophical-question vocabulary under a versioned native pack."
       }
     },
     {
-      "projection_id": "GEN7",
+      "schema_version": "rs.pack_manifest.v2",
+      "pack_id": "GEN7",
       "version": 1,
-      "projection_ref": "GEN7@1",
-      "description": "Seven interface seats in the selected generative cross-domain catalogue.",
+      "pack_ref": "GEN7@1",
+      "description": "Seven native interface seats in the selected generative catalogue; the source itself declares the construction as selected and interpretive.",
       "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
       "source_path": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
-      "source_domain": "selected generative row catalogue",
-      "target_domain": "declared independently by each directional cell",
+      "native_domain": "selected generative row catalogue",
       "native_terms": [
         "L1",
         "L2",
@@ -115,362 +110,563 @@
         "L6",
         "L7"
       ],
+      "native_term_definitions": [
+        {
+          "term_key": "L1",
+          "label": "Selected seat L1",
+          "description": "Projected annotations: G7@1:kali_take_phi and Kali 🎲; Caṇḍāla; dialectical, objective-function, and tyranny analogy."
+        },
+        {
+          "term_key": "L2",
+          "label": "Selected seat L2",
+          "description": "Projected annotations: G7@1:kali_take_v and Kālī 💀; Śūdra; inductive, epistemology, and democracy analogy."
+        },
+        {
+          "term_key": "L3",
+          "label": "Selected seat L3",
+          "description": "Projected annotations: G7@1:krishna_give_v and Kṛṣṇa ◇; Vaiśya; deductive, methodology, and oligarchy analogy."
+        },
+        {
+          "term_key": "L4",
+          "label": "Selected seat L4",
+          "description": "Projected annotations: G7@1:arjuna_give_phi and Arjuna ⚔; Kṣatriya; abductive, axiology, and timocracy analogy."
+        },
+        {
+          "term_key": "L5",
+          "label": "Selected seat L5",
+          "description": "Projected annotations: G7@1:brahma_create and Brahmā ○; Brāhmaṇa; systematic, ontology, and aristocracy analogy."
+        },
+        {
+          "term_key": "L6",
+          "label": "Selected seat L6",
+          "description": "Projected annotations: G7@1:shiva_dissolve and Śiva •; Sādhu; apophatic, metaphysics, and anarchy analogy."
+        },
+        {
+          "term_key": "L7",
+          "label": "Selected seat L7",
+          "description": "Projected annotations: G7@1:vishnu_preserve and Viṣṇu ⊙; Ṛṣi; transcendental, teleology, and theocracy analogy."
+        }
+      ],
       "native_cardinality": 7,
       "source_version": "GEN7@1/2026-07-31",
       "digest_algorithm": "sha256",
-      "source_exact_digest": "bdf0f231834259d9acc9fa58202ac6ab3c391aaff20f3a2b8d8ab4a24aeef7b7",
-      "source_semantic_digest": "f08d69795944c1c0b56c4c993c9a368099442fc4e8c5e7da474b884ce7d4e5c3",
-      "semantic_normalization": [
-        "decode UTF-8",
-        "normalize line endings to LF",
-        "normalize Unicode to NFC",
-        "trim and collapse whitespace within each non-empty line",
-        "drop blank lines",
-        "append one terminal LF"
-      ],
-      "normalization_operations": [
-        {
-          "operation": "CHOOSE_REPRESENTATIVE",
-          "detail": "Select seven interface seats from several traditions whose native cardinalities and category boundaries differ.",
-          "destroyed_information": "Domain-native counts, alternate members, and within-domain disagreements are not represented by the row key."
-        },
-        {
-          "operation": "TRANSLATE",
-          "detail": "Render source-domain terms as compact historical-social, inferential, philosophical, and mathematical analogies.",
-          "destroyed_information": "Native vocabulary, context, causal direction, and scale are compressed."
-        }
-      ],
-      "proposed_invariant": "A selected boundary-to-horizon reading order remains legible across explicitly interpretive columns without transferring proof between them.",
-      "discarded_information": [
-        "native source cardinalities",
-        "domain-specific causal structure",
-        "alternative row placements",
-        "person-level and institutional variation"
-      ],
-      "dependency_refs": [
-        {
-          "kind": "CONTRACT",
-          "ref": "RS.CORE@1"
-        },
-        {
-          "kind": "SOURCE",
-          "ref": "00_THE_MASTER_ROSETTA.md"
-        }
-      ],
-      "independence_status": "PARTIALLY_DEPENDENT",
-      "strongest_rival": "The apparent seven-row fit is produced by flexible selection and framework-derived labels rather than a shared cross-domain structure.",
-      "rival_maps": [
-        "GEN5_rival_pending",
-        "GEN_domain_native_pending",
-        "null_flexible_fit"
-      ],
-      "discriminator": "Independent coders using frozen source material and held-out cells prefer the preregistered GEN7 placements over cheaper rival maps without post-hoc relabeling.",
-      "kill_criterion": "Kill or contract the cross-domain pack when held-out material fits rivals equally well, native counts must be hidden, or post-hoc relabeling rescues every failure.",
-      "round_trip_test": {
-        "route": "GEN7@1 -> independently declared target -> GEN7@1",
-        "must_preserve": [
-          "source row key",
-          "declared analogy rather than identity"
-        ],
-        "must_report_as_loss": [
-          "native-domain distinctions",
-          "unselected categories",
-          "causal and normative information not carried by the analogy"
-        ]
-      },
+      "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+      "native_expression_digest_algorithm": "sha256",
+      "native_expression_digest_canonicalization": "rs.native_term_definitions.v1",
+      "native_expression_digest": "22f82e9515de75a55c01f74b877d90f059989ef4d21028f1e18aae83701a4cb7",
+      "semantic_digest_status": "PROVISIONAL",
+      "semantic_canonicalization_id": null,
+      "semantic_canonicalization_version": null,
+      "digest_normalization_operations": [],
       "lifecycle_status": "ACTIVE",
-      "supersedes": null,
-      "superseded_by": null,
-      "revision_event": {
-        "action": "REGISTERED",
+      "registration_event": {
         "recorded_at": "2026-07-31",
-        "reason": "Register the selected generative catalogue under a versioned namespace while declaring its normalization loss.",
-        "evidence_receipt_refs": []
+        "reason": "Freeze the active selected-row vocabulary under a versioned native pack."
+      }
+    },
+    {
+      "schema_version": "rs.pack_manifest.v2",
+      "pack_id": "SOUL",
+      "version": 1,
+      "pack_ref": "SOUL@1",
+      "description": "Eleven typed terms in the pure Soul Loop feedback grammar; this is a graph, not a seven-rung ladder.",
+      "owner_ref": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
+      "source_path": "../../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
+      "native_domain": "typed model-commitment-outcome-revision feedback grammar",
+      "native_terms": [
+        "state",
+        "possibilities",
+        "model",
+        "means",
+        "authorization",
+        "policy",
+        "selector",
+        "commitment_receipt",
+        "environment",
+        "outcome_receipt",
+        "revision"
+      ],
+      "native_term_definitions": [
+        {
+          "term_key": "state",
+          "label": "Available actual state",
+          "description": "X_t, the available actual state entering selection."
+        },
+        {
+          "term_key": "possibilities",
+          "label": "Represented alternatives",
+          "description": "Ω_t, merely possible counterfactual contents represented by actual model tokens."
+        },
+        {
+          "term_key": "model",
+          "label": "Fallible model",
+          "description": "M_t, the present actual modeled-future token and territory estimate."
+        },
+        {
+          "term_key": "means",
+          "label": "Usable actual means",
+          "description": "V_t, physically and operationally usable D4 means."
+        },
+        {
+          "term_key": "authorization",
+          "label": "Authorization assessment",
+          "description": "U_t, authorization and normative assessment kept separate from causal occurrence."
+        },
+        {
+          "term_key": "policy",
+          "label": "Selection policy",
+          "description": "G_t, the actual policy or weights used to choose."
+        },
+        {
+          "term_key": "selector",
+          "label": "Selection function",
+          "description": "χ_t, the function producing an action or null plus a commitment receipt."
+        },
+        {
+          "term_key": "commitment_receipt",
+          "label": "Commitment receipt",
+          "description": "q_t, recording option, actor, means, authorization, expected consequence, and attempt, refusal, or unavailability."
+        },
+        {
+          "term_key": "environment",
+          "label": "Environment transition",
+          "description": "K_t, other agents, physical constraints, noise, and conditions outside the selector."
+        },
+        {
+          "term_key": "outcome_receipt",
+          "label": "Outcome receipt",
+          "description": "r_(t+1), the environment-issued observation kept distinct from commitment."
+        },
+        {
+          "term_key": "revision",
+          "label": "Model-policy revision",
+          "description": "Loop update of M and G from commitment and outcome receipts, including a legitimate null update."
+        }
+      ],
+      "native_cardinality": 11,
+      "source_version": "SOUL@1/2026-07-21",
+      "digest_algorithm": "sha256",
+      "source_exact_digest": "0f39a1ff7660f5eb193ddea70c538230c2b23691a8ad9989819c34256048257c",
+      "native_expression_digest_algorithm": "sha256",
+      "native_expression_digest_canonicalization": "rs.native_term_definitions.v1",
+      "native_expression_digest": "b50f6060afb30433ccc8a97eff6d8a8a32090ac814f0b7429d1ca527904fdd4b",
+      "semantic_digest_status": "PROVISIONAL",
+      "semantic_canonicalization_id": null,
+      "semantic_canonicalization_version": null,
+      "digest_normalization_operations": [],
+      "lifecycle_status": "ACTIVE",
+      "registration_event": {
+        "recorded_at": "2026-07-31",
+        "reason": "Register the pure Soul Loop as its own eleven-term native feedback pack without forcing a seven-row projection."
       }
     }
   ],
-  "cells": [
+  "projections": [
     {
-      "legacy_cell_id": "PHIL7__L1__Teleology",
-      "cell_id": "PHIL7@1:purpose__to__GEN7@1:L7__r1",
-      "projection_ref": "PHIL7@1",
-      "revision": 1,
-      "supersedes": null,
-      "superseded_by": null,
-      "source_ref": "PHIL7@1:purpose",
-      "target_refs": [
-        "GEN7@1:L7"
+      "schema_version": "rs.projection_manifest.v2",
+      "projection_id": "PHIL7_TO_GEN7",
+      "projection_revision": 1,
+      "projection_ref": "PHIL7_TO_GEN7@1",
+      "parent_revision": null,
+      "supersedes_ref": null,
+      "source_pack_ref": "PHIL7@1",
+      "source_pack_binding": {
+        "binding_schema": "rs.pack_snapshot_binding.v1",
+        "pack_ref": "PHIL7@1",
+        "owner_ref": "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
+        "source_version": "PHIL7@1/2026-07-31",
+        "source_exact_digest": "4d60069ed28e9434bd0f70636f7b66a39d5b87b788da8c9863cdb1308c32ee7c",
+        "pack_manifest_digest_algorithm": "sha256",
+        "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
+        "pack_manifest_digest": "447e10068a81f6290857842d7c34920894409655ba3e42c54e0f059982ded3c3"
+      },
+      "target_pack_refs": [
+        "GEN7@1"
       ],
-      "relation_type": "ANALOGY",
-      "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
-      "domain_expression": "Teleology — what end or purpose is being proposed?",
-      "fit_status": "DISPUTED",
-      "fact_tier": "B",
-      "mapping_tier": "I",
-      "use_status": "UNUSED",
-      "outcome_status": "NOT_OBSERVED",
-      "source_basis": [
-        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
-        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
-      ],
-      "independence_status": "FRAMEWORK_DERIVED",
-      "fit_reason": "Both terms use teleological vocabulary, but PHIL7 asks a cross-cutting purpose question while GEN7 places an ultimate-horizon analogy in its final seat.",
-      "discarded_information": [
-        "classical final-cause distinctions",
-        "the difference between a cross-cutting question and a row analogy",
-        "all implications of the incompatible local row numbers"
-      ],
-      "dependency_status": "INHERITED",
-      "dependency_refs": [
+      "target_pack_bindings": [
         {
-          "kind": "PACK",
-          "ref": "PHIL7@1"
-        },
-        {
-          "kind": "PACK",
-          "ref": "GEN7@1"
+          "binding_schema": "rs.pack_snapshot_binding.v1",
+          "pack_ref": "GEN7@1",
+          "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
+          "source_version": "GEN7@1/2026-07-31",
+          "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+          "pack_manifest_digest_algorithm": "sha256",
+          "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
+          "pack_manifest_digest": "ab2501a4d851564a5f83ea3ab297a89b4cd34a5c01054bf4fdef45dd2c480ed8"
         }
       ],
-      "scale": "conceptual vocabulary",
-      "time_horizon": "frozen 2026-07-31 pack snapshots",
-      "strongest_rival": "The shared word is lexical coincidence or framework reuse and carries no stable mapping.",
-      "discriminator": "Independent coders distinguish the shared invariant from the omitted differences using frozen definitions and a preregistered coding guide.",
-      "known_biases": [
-        "retrospective fit",
-        "shared interpreter",
-        "lexical overlap"
+      "normalization_operations": [
+        {
+          "operation": "SELECT_TARGET_SEATS",
+          "detail": "Compare PHIL7 purpose with GEN7 L7 and PHIL7 being with GEN7 L5 without renaming either source term.",
+          "destroyed_information": "Five PHIL7 questions and five GEN7 seats remain unmapped in this seed projection."
+        },
+        {
+          "operation": "TRANSLATE",
+          "detail": "Test whether shared teleology and ontology vocabulary carries a non-lexical relation across the packs.",
+          "destroyed_information": "Disciplinary nuance, cross-cutting scope, local order, and causal structure are compressed."
+        }
       ],
-      "kill_criterion": "Killed as a bare-row identity already: PHIL7@1:purpose and GEN7@1:L7 carry maximally different local positions. Kill the namespaced analogy too if coders cannot identify an invariant beyond the shared word.",
-      "downgrade_path": "Retain the collision record, set fit_status to KILLED in this revision, and create a new revision only for a materially different relation.",
-      "commitment_receipt_refs": [],
-      "outcome_receipt_refs": [],
-      "operator": null,
-      "geometry": null,
-      "adjacent_check_prev": null,
-      "adjacent_check_next": null,
-      "mirror_check": null,
-      "center_check": null,
-      "audit_status": "DRAFT",
-      "verified_by": "check_rosetta_cells.py structural validation only",
-      "verified_at": "2026-07-31",
-      "status_transitions": [],
+      "proposed_invariant": "Purpose and being questions remain recognizable when used to interrogate the selected GEN7 horizon and architecture seats.",
+      "discarded_information": [
+        "local row-number identity",
+        "questions and seats omitted from the seed",
+        "internal disputes within philosophical disciplines",
+        "other PHIL7 questions that may interrogate the same GEN7 seats"
+      ],
+      "dependency_refs": [
+        {
+          "binding_schema": "rs.dependency_binding.v1",
+          "kind": "CONTRACT",
+          "ref": "RS.CORE@1",
+          "binding_status": "BOUND",
+          "owner_ref": "03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md",
+          "version": "RS.CORE@1/2026-07-31",
+          "digest_algorithm": "sha256",
+          "digest_canonicalization": "exact-bytes",
+          "digest": "52d95c3c62bda3064c615c6bca6fd7f0b4dd2d92cb690ba62eb4b891097abdcc",
+          "deferred_reason": null
+        }
+      ],
+      "independence_status": "FRAMEWORK_DERIVED",
+      "strongest_rival": "The shared words teleology and ontology are lexical reuse by one framework and carry no stable cross-pack relation.",
+      "rival_maps": [
+        "null_lexical_overlap",
+        "all_PHIL7_questions_apply_to_each_GEN7_seat"
+      ],
+      "discriminator": "Independent coders using frozen definitions recover the preregistered invariant on held-out examples while naming the losses and outperforming the null map.",
+      "kill_criterion": "Kill or contract the projection if coders cannot recover an invariant after shared labels are masked, or if rival prompts perform equally well.",
+      "round_trip_test": {
+        "route": "PHIL7@1 -> GEN7@1 -> PHIL7@1 through a separately audited inverse",
+        "must_preserve": [
+          "source question identity",
+          "direction of each projection"
+        ],
+        "must_report_as_loss": [
+          "disciplinary nuance",
+          "unmapped questions",
+          "order introduced by the target"
+        ]
+      },
+      "claim_digest_algorithm": "sha256",
+      "claim_digest_canonicalization": "rs.projection_claim_digest.v1",
+      "claim_semantic_digest": "2d11d7e520eaf83287d6096c0e991a87214323b6f2d9925018f38020b916ed87",
+      "resolution_status": "UNDERDETERMINED",
+      "resolution_dispositions": [],
+      "predecessor_comparisons": [],
+      "rejected_claim_digests": [],
+      "lifecycle_status": "DISPUTED",
       "revision_event": {
-        "action": "MIGRATED_FROM_LEGACY_SEED",
         "recorded_at": "2026-07-31",
-        "reason": "Preserve the teleology collision as a directional, namespaced v2 claim.",
+        "reason": "Migrate two legacy collision examples into one directional projection without asserting a valid inverse.",
         "evidence_receipt_refs": []
-      }
+      },
+      "cells": [
+        {
+          "legacy_cell_id": "PHIL7__L1__Teleology",
+          "cell_id": "PHIL7_TO_GEN7@1:purpose_to_L7",
+          "projection_ref": "PHIL7_TO_GEN7@1",
+          "source_ref": "PHIL7@1:purpose",
+          "target_refs": [
+            "GEN7@1:L7"
+          ],
+          "relation_type": "ANALOGY",
+          "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
+          "domain_expression": "Teleology — what end or purpose is being proposed?",
+          "fit_status": "DISPUTED",
+          "fact_tier": "B",
+          "mapping_tier": "I",
+          "authorization_status": "NOT_REQUESTED",
+          "use_status": "UNUSED",
+          "outcome_status": "NOT_OBSERVED",
+          "source_basis": [
+            "PHIL7@1",
+            "GEN7@1"
+          ],
+          "independence_status": "FRAMEWORK_DERIVED",
+          "fit_reason": "Both terms use teleological vocabulary, but PHIL7 asks a cross-cutting purpose question while GEN7 places an ultimate-horizon analogy in its final seat.",
+          "discarded_information": [
+            "classical final-cause distinctions",
+            "the difference between a cross-cutting question and a row analogy",
+            "all implications of the incompatible local row numbers"
+          ],
+          "dependency_status": "NONE",
+          "dependency_refs": [],
+          "scale": "conceptual vocabulary",
+          "time_horizon": "frozen 2026-07-31 pack snapshots",
+          "strongest_rival": "The shared word is lexical coincidence or framework reuse and carries no stable mapping.",
+          "discriminator": "Mask the shared word and test whether independent coders still recover the proposed relation.",
+          "known_biases": [
+            "retrospective fit",
+            "shared interpreter",
+            "lexical overlap"
+          ],
+          "kill_criterion": "The bare-row identity is already killed. Kill the namespaced analogy too if masking the shared word removes coder agreement.",
+          "downgrade_path": "Retain the failed projection revision and create a superseding revision only for a materially narrower relation.",
+          "authorization_envelope_ref": null,
+          "commitment_receipt_refs": [],
+          "commitment_provenance_records": [],
+          "outcome_receipt_refs": [],
+          "outcome_provenance_records": [],
+          "audit_status": "DRAFT",
+          "verified_by": "check_rosetta_cells.py structural validation only",
+          "verified_at": "2026-07-31",
+          "status_transitions": []
+        },
+        {
+          "legacy_cell_id": "PHIL7__L6__Ontology",
+          "cell_id": "PHIL7_TO_GEN7@1:being_to_L5",
+          "projection_ref": "PHIL7_TO_GEN7@1",
+          "source_ref": "PHIL7@1:being",
+          "target_refs": [
+            "GEN7@1:L5"
+          ],
+          "relation_type": "ANALOGY",
+          "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
+          "domain_expression": "Ontology — what kinds of entities or relations are posited?",
+          "fit_status": "DISPUTED",
+          "fact_tier": "B",
+          "mapping_tier": "I",
+          "authorization_status": "NOT_REQUESTED",
+          "use_status": "UNUSED",
+          "outcome_status": "NOT_OBSERVED",
+          "source_basis": [
+            "PHIL7@1",
+            "GEN7@1"
+          ],
+          "independence_status": "FRAMEWORK_DERIVED",
+          "fit_reason": "Both terms use ontology vocabulary, while PHIL7 treats it as an entity-and-relation audit and GEN7 uses it in an architecture seat.",
+          "discarded_information": [
+            "ontology-as-inventory versus ontology-as-being",
+            "the difference between a question and an architectural analogy",
+            "the incompatible local row numbers"
+          ],
+          "dependency_status": "NONE",
+          "dependency_refs": [],
+          "scale": "conceptual vocabulary",
+          "time_horizon": "frozen 2026-07-31 pack snapshots",
+          "strongest_rival": "The shared word masks two non-equivalent uses and supplies no cross-pack invariant.",
+          "discriminator": "Mask the shared word and test whether independent coders can recover a non-lexical invariant while naming the loss.",
+          "known_biases": [
+            "retrospective fit",
+            "lexical overlap",
+            "shared interpreter"
+          ],
+          "kill_criterion": "The bare ontology row identity is already killed. Kill the analogy if no invariant survives removal of the shared label.",
+          "downgrade_path": "Retain the failed projection revision and supersede only with a narrower entity-audit or architecture relation.",
+          "authorization_envelope_ref": null,
+          "commitment_receipt_refs": [],
+          "commitment_provenance_records": [],
+          "outcome_receipt_refs": [],
+          "outcome_provenance_records": [],
+          "audit_status": "DRAFT",
+          "verified_by": "check_rosetta_cells.py structural validation only",
+          "verified_at": "2026-07-31",
+          "status_transitions": []
+        }
+      ]
     },
     {
-      "legacy_cell_id": "GEN7__L7__Teleology",
-      "cell_id": "GEN7@1:L7__to__PHIL7@1:purpose__r1",
-      "projection_ref": "GEN7@1",
-      "revision": 1,
-      "supersedes": null,
-      "superseded_by": null,
-      "source_ref": "GEN7@1:L7",
-      "target_refs": [
-        "PHIL7@1:purpose"
+      "schema_version": "rs.projection_manifest.v2",
+      "projection_id": "GEN7_TO_PHIL7",
+      "projection_revision": 1,
+      "projection_ref": "GEN7_TO_PHIL7@1",
+      "parent_revision": null,
+      "supersedes_ref": null,
+      "source_pack_ref": "GEN7@1",
+      "source_pack_binding": {
+        "binding_schema": "rs.pack_snapshot_binding.v1",
+        "pack_ref": "GEN7@1",
+        "owner_ref": "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
+        "source_version": "GEN7@1/2026-07-31",
+        "source_exact_digest": "e1490dc246718da44b6ba5618866fbdc1372ff759be99a6f4e514858d3a6b83a",
+        "pack_manifest_digest_algorithm": "sha256",
+        "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
+        "pack_manifest_digest": "ab2501a4d851564a5f83ea3ab297a89b4cd34a5c01054bf4fdef45dd2c480ed8"
+      },
+      "target_pack_refs": [
+        "PHIL7@1"
       ],
-      "relation_type": "ANALOGY",
-      "column_class": "INTERPRETIVE_DOMAIN_TO_ANCHOR",
-      "domain_expression": "transcendental / teleology / theocracy",
-      "fit_status": "DISPUTED",
-      "fact_tier": "I",
-      "mapping_tier": "I",
-      "use_status": "UNUSED",
-      "outcome_status": "NOT_OBSERVED",
-      "source_basis": [
-        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
-        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
-      ],
-      "independence_status": "FRAMEWORK_DERIVED",
-      "fit_reason": "GEN7's final-seat horizon analogy may be interrogated by PHIL7's purpose question, but the inverse direction is a fresh claim rather than an automatic inverse.",
-      "discarded_information": [
-        "whether transcendental, teleological, and theocratic language share a single source-domain function",
-        "the cross-cutting character of PHIL7 questions"
-      ],
-      "dependency_status": "INHERITED",
-      "dependency_refs": [
+      "target_pack_bindings": [
         {
-          "kind": "PACK",
-          "ref": "GEN7@1"
-        },
-        {
-          "kind": "PACK",
-          "ref": "PHIL7@1"
+          "binding_schema": "rs.pack_snapshot_binding.v1",
+          "pack_ref": "PHIL7@1",
+          "owner_ref": "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
+          "source_version": "PHIL7@1/2026-07-31",
+          "source_exact_digest": "4d60069ed28e9434bd0f70636f7b66a39d5b87b788da8c9863cdb1308c32ee7c",
+          "pack_manifest_digest_algorithm": "sha256",
+          "pack_manifest_digest_canonicalization": "rs.pack_manifest_digest.v1",
+          "pack_manifest_digest": "447e10068a81f6290857842d7c34920894409655ba3e42c54e0f059982ded3c3"
         }
       ],
-      "scale": "conceptual vocabulary",
-      "time_horizon": "frozen 2026-07-31 pack snapshots",
-      "strongest_rival": "GEN7's teleology label is a decorative final-seat analogy with no reproducible relation to PHIL7's purpose question.",
-      "discriminator": "Held-out GEN7 examples are classified more reliably by the purpose prompt than by rival PHIL7 prompts under a frozen coding guide.",
-      "known_biases": [
-        "Indo-European bias",
-        "retrospective fit",
-        "shared interpreter"
-      ],
-      "kill_criterion": "The bare claim 'L7 is teleology' is already killed across packs. Kill this directional analogy if held-out examples do not discriminate purpose from rival prompts.",
-      "downgrade_path": "Retain the failed revision and supersede it only with a narrower, receipt-backed claim.",
-      "commitment_receipt_refs": [],
-      "outcome_receipt_refs": [],
-      "operator": null,
-      "geometry": null,
-      "adjacent_check_prev": null,
-      "adjacent_check_next": null,
-      "mirror_check": null,
-      "center_check": null,
-      "audit_status": "DRAFT",
-      "verified_by": "check_rosetta_cells.py structural validation only",
-      "verified_at": "2026-07-31",
-      "status_transitions": [],
-      "revision_event": {
-        "action": "MIGRATED_FROM_LEGACY_SEED",
-        "recorded_at": "2026-07-31",
-        "reason": "Preserve the reverse teleology comparison without treating direction as invertible.",
-        "evidence_receipt_refs": []
-      }
-    },
-    {
-      "legacy_cell_id": "PHIL7__L6__Ontology",
-      "cell_id": "PHIL7@1:being__to__GEN7@1:L5__r1",
-      "projection_ref": "PHIL7@1",
-      "revision": 1,
-      "supersedes": null,
-      "superseded_by": null,
-      "source_ref": "PHIL7@1:being",
-      "target_refs": [
-        "GEN7@1:L5"
-      ],
-      "relation_type": "ANALOGY",
-      "column_class": "ANCHOR_TO_INTERPRETIVE_DOMAIN",
-      "domain_expression": "Ontology — what kinds of entities or relations are posited?",
-      "fit_status": "DISPUTED",
-      "fact_tier": "B",
-      "mapping_tier": "I",
-      "use_status": "UNUSED",
-      "outcome_status": "NOT_OBSERVED",
-      "source_basis": [
-        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md",
-        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
-      ],
-      "independence_status": "FRAMEWORK_DERIVED",
-      "fit_reason": "Both terms use ontology vocabulary, while PHIL7 treats it as a cross-cutting entity-and-relation audit and GEN7 uses it in an architecture seat.",
-      "discarded_information": [
-        "ontology-as-inventory versus ontology-as-being",
-        "the difference between a question and an architectural analogy",
-        "the incompatible local row numbers"
-      ],
-      "dependency_status": "INHERITED",
-      "dependency_refs": [
+      "normalization_operations": [
         {
-          "kind": "PACK",
-          "ref": "PHIL7@1"
+          "operation": "SELECT_TARGET_QUESTIONS",
+          "detail": "Compare GEN7 L7 with PHIL7 purpose and GEN7 L5 with PHIL7 being without treating the reverse map as automatic.",
+          "destroyed_information": "Five GEN7 seats and five PHIL7 questions remain unmapped in this seed projection."
         },
         {
-          "kind": "PACK",
-          "ref": "GEN7@1"
+          "operation": "TRANSLATE",
+          "detail": "Use PHIL7 questions to interrogate two GEN7 analogy seats.",
+          "destroyed_information": "Other applicable questions, native GEN7 analogies, local order, and scale are compressed."
         }
       ],
-      "scale": "conceptual vocabulary",
-      "time_horizon": "frozen 2026-07-31 pack snapshots",
-      "strongest_rival": "The shared word masks two non-equivalent uses and supplies no cross-pack invariant.",
-      "discriminator": "Independent coders can state and recover a non-lexical invariant while also naming the lost distinctions.",
-      "known_biases": [
-        "retrospective fit",
-        "lexical overlap",
-        "shared interpreter"
-      ],
-      "kill_criterion": "The bare ontology row claim is already killed because PHIL7@1:being and GEN7@1:L5 occupy different local positions. Kill the analogy if no invariant survives removal of the shared label.",
-      "downgrade_path": "Retain the collision record and replace ontology identity with a narrower entity-audit or architecture relation in a new revision.",
-      "commitment_receipt_refs": [],
-      "outcome_receipt_refs": [],
-      "operator": null,
-      "geometry": null,
-      "adjacent_check_prev": null,
-      "adjacent_check_next": null,
-      "mirror_check": null,
-      "center_check": null,
-      "audit_status": "DRAFT",
-      "verified_by": "check_rosetta_cells.py structural validation only",
-      "verified_at": "2026-07-31",
-      "status_transitions": [],
-      "revision_event": {
-        "action": "MIGRATED_FROM_LEGACY_SEED",
-        "recorded_at": "2026-07-31",
-        "reason": "Preserve the ontology collision as a directional, namespaced v2 claim.",
-        "evidence_receipt_refs": []
-      }
-    },
-    {
-      "legacy_cell_id": "GEN7__L5__Ontology",
-      "cell_id": "GEN7@1:L5__to__PHIL7@1:being__r1",
-      "projection_ref": "GEN7@1",
-      "revision": 1,
-      "supersedes": null,
-      "superseded_by": null,
-      "source_ref": "GEN7@1:L5",
-      "target_refs": [
-        "PHIL7@1:being"
-      ],
-      "relation_type": "ANALOGY",
-      "column_class": "INTERPRETIVE_DOMAIN_TO_ANCHOR",
-      "domain_expression": "systematic / ontology / aristocracy",
-      "fit_status": "DISPUTED",
-      "fact_tier": "I",
-      "mapping_tier": "I",
-      "use_status": "UNUSED",
-      "outcome_status": "NOT_OBSERVED",
-      "source_basis": [
-        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
-        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
-      ],
-      "independence_status": "FRAMEWORK_DERIVED",
-      "fit_reason": "An architecture row can be interrogated for its entity and relation commitments, but that does not make systematic philosophy, ontology, and aristocracy synonyms.",
+      "proposed_invariant": "The purpose and being prompts expose reproducible questions about GEN7 horizon and architecture analogies without making pack terms identical.",
       "discarded_information": [
-        "differences among systematic philosophy, ontology, and political analogy",
-        "other PHIL7 questions that can interrogate the same row"
+        "local row-number identity",
+        "questions and seats omitted from the seed",
+        "other PHIL7 prompts applicable to each GEN7 seat",
+        "non-philosophical content of each GEN7 row"
       ],
-      "dependency_status": "INHERITED",
       "dependency_refs": [
         {
-          "kind": "PACK",
-          "ref": "GEN7@1"
-        },
-        {
-          "kind": "PACK",
-          "ref": "PHIL7@1"
+          "binding_schema": "rs.dependency_binding.v1",
+          "kind": "CONTRACT",
+          "ref": "RS.CORE@1",
+          "binding_status": "BOUND",
+          "owner_ref": "03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md",
+          "version": "RS.CORE@1/2026-07-31",
+          "digest_algorithm": "sha256",
+          "digest_canonicalization": "exact-bytes",
+          "digest": "52d95c3c62bda3064c615c6bca6fd7f0b4dd2d92cb690ba62eb4b891097abdcc",
+          "deferred_reason": null
         }
       ],
-      "scale": "conceptual vocabulary",
-      "time_horizon": "frozen 2026-07-31 pack snapshots",
-      "strongest_rival": "The PHIL7 being prompt is no more informative for GEN7's architecture row than several other prompts.",
-      "discriminator": "A held-out audit finds preregistered entity-boundary errors at GEN7@1:L5 that rival prompts fail to detect under matched effort.",
-      "known_biases": [
-        "Indo-European bias",
-        "retrospective fit",
-        "shared interpreter"
+      "independence_status": "FRAMEWORK_DERIVED",
+      "strongest_rival": "The selected PHIL7 prompts do not outperform other questions; the mapping is inherited from preselected row labels.",
+      "rival_maps": [
+        "null_preselected_label",
+        "all_PHIL7_questions_apply_to_each_GEN7_seat"
       ],
-      "kill_criterion": "Kill the directional analogy if the being prompt does not outperform rival prompts or if the result depends only on the preselected ontology label.",
-      "downgrade_path": "Retain the failed revision and supersede only with a narrower, discriminated relation.",
-      "commitment_receipt_refs": [],
-      "outcome_receipt_refs": [],
-      "operator": null,
-      "geometry": null,
-      "adjacent_check_prev": null,
-      "adjacent_check_next": null,
-      "mirror_check": null,
-      "center_check": null,
-      "audit_status": "DRAFT",
-      "verified_by": "check_rosetta_cells.py structural validation only",
-      "verified_at": "2026-07-31",
-      "status_transitions": [],
+      "discriminator": "Under matched effort and masked row labels, the selected prompts detect held-out omissions more reliably than rival PHIL7 prompts.",
+      "kill_criterion": "Kill or contract the projection if masked-label tests erase its advantage or if the many-to-many rival is equally clear at lower loss.",
+      "round_trip_test": {
+        "route": "GEN7@1 -> PHIL7@1 -> GEN7@1 through a separately audited inverse",
+        "must_preserve": [
+          "source seat identity",
+          "analogy rather than synonymy"
+        ],
+        "must_report_as_loss": [
+          "unmapped row content",
+          "unselected questions",
+          "causal and normative information not carried by the prompt"
+        ]
+      },
+      "claim_digest_algorithm": "sha256",
+      "claim_digest_canonicalization": "rs.projection_claim_digest.v1",
+      "claim_semantic_digest": "9dcd7ad37b609bf9a23a76d0bc37f161aa9ff53808b3efeb05e198ec506b2bc9",
+      "resolution_status": "UNDERDETERMINED",
+      "resolution_dispositions": [],
+      "predecessor_comparisons": [],
+      "rejected_claim_digests": [],
+      "lifecycle_status": "DISPUTED",
       "revision_event": {
-        "action": "MIGRATED_FROM_LEGACY_SEED",
         "recorded_at": "2026-07-31",
-        "reason": "Preserve the reverse ontology comparison without treating direction as invertible.",
+        "reason": "Register the inverse direction as its own disputable projection rather than infer it from PHIL7_TO_GEN7.",
         "evidence_receipt_refs": []
-      }
+      },
+      "cells": [
+        {
+          "legacy_cell_id": "GEN7__L7__Teleology",
+          "cell_id": "GEN7_TO_PHIL7@1:L7_to_purpose",
+          "projection_ref": "GEN7_TO_PHIL7@1",
+          "source_ref": "GEN7@1:L7",
+          "target_refs": [
+            "PHIL7@1:purpose"
+          ],
+          "relation_type": "ANALOGY",
+          "column_class": "INTERPRETIVE_DOMAIN_TO_ANCHOR",
+          "domain_expression": "transcendental / teleology / theocracy",
+          "fit_status": "DISPUTED",
+          "fact_tier": "I",
+          "mapping_tier": "I",
+          "authorization_status": "NOT_REQUESTED",
+          "use_status": "UNUSED",
+          "outcome_status": "NOT_OBSERVED",
+          "source_basis": [
+            "GEN7@1",
+            "PHIL7@1"
+          ],
+          "independence_status": "FRAMEWORK_DERIVED",
+          "fit_reason": "GEN7's final-seat analogy may be interrogated by PHIL7's purpose question, but this direction is a fresh claim rather than an automatic inverse.",
+          "discarded_information": [
+            "whether transcendental, teleological, and theocratic language share one source-domain function",
+            "the cross-cutting character of PHIL7 questions"
+          ],
+          "dependency_status": "NONE",
+          "dependency_refs": [],
+          "scale": "conceptual vocabulary",
+          "time_horizon": "frozen 2026-07-31 pack snapshots",
+          "strongest_rival": "The teleology label is decorative and no more useful than rival PHIL7 prompts.",
+          "discriminator": "With GEN7 labels masked, test whether the purpose prompt outperforms rival prompts on held-out examples.",
+          "known_biases": [
+            "Indo-European bias",
+            "retrospective fit",
+            "shared interpreter"
+          ],
+          "kill_criterion": "The bare claim is already killed across packs. Kill this direction if held-out examples do not discriminate purpose from rival prompts.",
+          "downgrade_path": "Retain the failed projection revision and supersede only with a narrower, receipt-backed claim.",
+          "authorization_envelope_ref": null,
+          "commitment_receipt_refs": [],
+          "commitment_provenance_records": [],
+          "outcome_receipt_refs": [],
+          "outcome_provenance_records": [],
+          "audit_status": "DRAFT",
+          "verified_by": "check_rosetta_cells.py structural validation only",
+          "verified_at": "2026-07-31",
+          "status_transitions": []
+        },
+        {
+          "legacy_cell_id": "GEN7__L5__Ontology",
+          "cell_id": "GEN7_TO_PHIL7@1:L5_to_being",
+          "projection_ref": "GEN7_TO_PHIL7@1",
+          "source_ref": "GEN7@1:L5",
+          "target_refs": [
+            "PHIL7@1:being"
+          ],
+          "relation_type": "ANALOGY",
+          "column_class": "INTERPRETIVE_DOMAIN_TO_ANCHOR",
+          "domain_expression": "systematic / ontology / aristocracy",
+          "fit_status": "DISPUTED",
+          "fact_tier": "I",
+          "mapping_tier": "I",
+          "authorization_status": "NOT_REQUESTED",
+          "use_status": "UNUSED",
+          "outcome_status": "NOT_OBSERVED",
+          "source_basis": [
+            "GEN7@1",
+            "PHIL7@1"
+          ],
+          "independence_status": "FRAMEWORK_DERIVED",
+          "fit_reason": "An architecture row can be interrogated for entity and relation commitments, but that does not make its analogies synonyms.",
+          "discarded_information": [
+            "differences among systematic philosophy, ontology, and political analogy",
+            "other PHIL7 questions that can interrogate the same row"
+          ],
+          "dependency_status": "NONE",
+          "dependency_refs": [],
+          "scale": "conceptual vocabulary",
+          "time_horizon": "frozen 2026-07-31 pack snapshots",
+          "strongest_rival": "The being prompt is no more informative for GEN7's architecture seat than other prompts.",
+          "discriminator": "With row labels masked, test whether the being prompt finds held-out entity-boundary errors that rival prompts miss.",
+          "known_biases": [
+            "Indo-European bias",
+            "retrospective fit",
+            "shared interpreter"
+          ],
+          "kill_criterion": "Kill this direction if the being prompt does not outperform rivals or if the result depends on the preselected ontology label.",
+          "downgrade_path": "Retain the failed projection revision and supersede only with a narrower, discriminated relation.",
+          "authorization_envelope_ref": null,
+          "commitment_receipt_refs": [],
+          "commitment_provenance_records": [],
+          "outcome_receipt_refs": [],
+          "outcome_provenance_records": [],
+          "audit_status": "DRAFT",
+          "verified_by": "check_rosetta_cells.py structural validation only",
+          "verified_at": "2026-07-31",
+          "status_transitions": []
+        }
+      ]
     }
   ]
 }

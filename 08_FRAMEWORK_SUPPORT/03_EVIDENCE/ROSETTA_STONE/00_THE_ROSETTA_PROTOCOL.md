@@ -35,7 +35,10 @@ What survives is precisely what the Memphis stone had: **parallel registers of o
 
 ## 2 · The Greek-column principle [I/C] transmission hypothesis
 
-A translation stone functions **iff at least one column is already readable by the target reader without faith or instruction.** That column — the Greek column — is the key that makes the sacred columns decipherable rather than decorative.
+**Hypothesis `[C]`:** a translation stone is more usable when at least one
+column is already readable by the target reader without faith or instruction.
+The “Greek column” is a proposed entry point, not a proved necessary or
+sufficient condition.
 
 For one proposed public-transmission strategy, the Greek column is **verifiable
 value**: an observable use, honest terms, receipts, and exits that actually
@@ -44,11 +47,14 @@ doctrine better than other readable columns, is `[C]` until comparative tests
 support it. A useful application can make an unfamiliar symbolic register more
 approachable; it cannot evidence the worldview that inspired it.
 
-**Corollary (belief-optional transmission):** the framework spreads by *installation of its invariants into things that work*, not by conversion. Users, not believers — the Gödel criterion ("adherents = failure") is thereby honored *structurally*, not aspirationally.
+**Belief-optional transmission hypothesis `[C]`:** readers may enter through a
+useful, verifiable surface without conversion. Whether that route improves
+understanding or trust is an empirical question.
 
 ## 3 · The three-scripts rule [D] — proposed shipping doctrine
 
-Every public artifact of the framework — page, product, institution, contract — SHALL carry the same truth in three parallel registers:
+Within a declared three-script pilot, each enrolled artifact carries the same
+claim in three parallel registers:
 
 | Script | Register | Carries | Example surface |
 |---|---|---|---|
@@ -56,7 +62,10 @@ Every public artifact of the framework — page, product, institution, contract 
 | **Demotic** | plain vernacular | what it is and refuses, honestly tiered | `/plainly/`; plain-terms pages |
 | **Greek** | commercial / verifiable | the receipt: fee table, exit clause, ledger entry, kill-criteria | η=0 receipts; K4 exit docs; `/record/` |
 
-**Conformance test:** an artifact readable in only one register is a broken stone. The Greek script must be verifiable with **zero** trust in the other two.
+**Pilot conformance test:** an enrolled artifact missing one declared register
+is incomplete for that pilot. The verifiable register must be checkable without
+trust in the symbolic or narrative register. Artifacts outside the pilot are
+not failures of Rosetta merely because they use one register.
 
 ## 4 · The fourth script — machine [D]
 
@@ -66,7 +75,9 @@ The economy the Great-Filter wager concerns is agent-saturated; its scribes are 
 - **Canonical schemas:** one consistent, versioned schema family for receipts, tiers, kill-criteria, and rulings, so any agent can parse the canon's epistemic state without reading prose.
 - **The registry as API:** the Settled Canon Registry's Do-NOT-flag / Still-flag-if discipline is already a machine-shaped contract; formalize it so audit agents consume it directly (this week's 37-agent audit did so by prose; the next should do so by schema).
 
-**Direction of trust:** the machine script *inherits* tier discipline — it may never assert more than the human canon's signed tier. An agent-readable claim carries the same `[A]/[S]/[I]/[C]` it carries in prose, or it is malformed.
+**Direction of trust:** the machine script *inherits* tier discipline — it may
+never assert more than the source owner's declared tier. An agent-readable
+claim carries the same `[A]/[S]/[I]/[C]` it carries in prose, or it is malformed.
 
 The machine-shaped theory contract is now specified by [Rosetta
 vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md). Its namespaces, native counts,
@@ -99,7 +110,8 @@ authority; repository routing lives only in the applicable AGENTS.md and CLAUDE.
 
 1. Cite this protocol only for translation discipline. It does not upgrade the evidence tier of any projected domain claim.
 2. Never present the Rosetta as evidence of a discovered universal; present it as a translation instrument, with the fired criterion visible.
-3. When shipping any public artifact, check the three-scripts conformance test; flag mono-script artifacts.
+3. For an artifact enrolled in a declared pilot, check the three-scripts
+   conformance test and report missing declared registers.
 4. Machine-register work inherits tiers; never emit a schema field asserting above the signed tier.
 5. **Canonical Path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_ROSETTA_PROTOCOL.md`
 

@@ -41,7 +41,7 @@ source_custody:
 
 ## The selected index
 
-This projection pack is `PHIL7@1`. Its row keys are semantic words rather than
+This native question pack is `PHIL7@1`. Its term keys are semantic words rather than
 bare numerals so that the questions cannot be silently confused with G7 moves,
 generative seats, dimensions, or runtime roles.
 
@@ -73,9 +73,10 @@ arrow in a presentation of this table may be read as that causal claim.
 4. **No proof transfer.** The existence of teleology, epistemology, or any other
    named discipline does not establish Rosetta geometry, D-registers, ethics,
    political regimes, or the Burri equations.
-5. **No privileged center.** L4 is a convenient action-facing prompt in this
-   arrangement. Its placement does not prove that value resolves purpose, that
-   an equator produces justice, or that one method coordinates all others.
+5. **No privileged center.** `PHIL7@1:value` is a convenient action-facing
+   prompt in this arrangement. Its placement does not prove that value resolves
+   purpose, that an equator produces justice, or that one method coordinates
+   all others.
 
 ## A non-causal workflow
 

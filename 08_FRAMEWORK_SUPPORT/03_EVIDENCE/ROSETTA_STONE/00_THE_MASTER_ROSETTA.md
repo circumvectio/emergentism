@@ -42,18 +42,20 @@ Every projection must declare:
 If a round trip is claimed, `ρ_{B→A}(ρ_{A→B}(c))` must state what is preserved
 and what is lost. Visual resemblance is never enough.
 
-### Namespaces and projection packs
+### Native packs and directional projections
 
-The cross-pack reference grammar is `projection_id@version:row_key`. A bare
+The native-term reference grammar is `pack_id@version:term_key`. A bare
 `Lx` is only local shorthand after one pack has been declared; it is invalid in
-a cross-pack claim. Equal-looking seats in `G7@1`, `GEN7@1`, `PHIL7@1`, or any
-other pack are not identical objects.
+a cross-pack claim. `G7@1:arjuna_give_phi`, `GEN7@1:L4`, and
+`PHIL7@1:value` are not identical objects merely because one projection relates
+them.
 
-Each pack records its owner, native vocabulary and cardinality, source version
-and digest, normalization operations, proposed invariant, discarded
-information, dependencies, rival, discriminator, and kill criterion. A
-semantic change creates a new version and a supersession edge. It never
-silently changes an existing reference.
+Each pack records its owner, native vocabulary and cardinality, source version,
+and exact digest. Each directional projection separately records normalization,
+proposed invariant, discarded information, dependencies, rival,
+discriminator, and kill criterion. A semantic change creates a new version or
+projection revision and a supersession edge. It never silently changes an
+existing reference.
 
 Projection composition is not automatic. If `A→B` and `B→C` exist, `A→C` is a
 fresh audited projection with its own loss and dependency record. The complete
@@ -99,6 +101,10 @@ F3 = three Titan-frame projections: create, dissolve, preserve
 G7 = M4 ⊎ F3
 ```
 
+The native `G7@1` term keys are `kali_take_phi`, `kali_take_v`,
+`krishna_give_v`, `arjuna_give_phi`, `brahma_create`, `shiva_dissolve`, and
+`vishnu_preserve`. L-numbered seats belong to `GEN7@1`, not G7.
+
 Kali and Kālī name the two taking shapes; Kṛṣṇa and Arjuna name the two giving
 shapes; Brahmā, Śiva, and Viṣṇu project the three Titan frames. Kālī retains her
 two-face rule: demon-polar on the taking axis and God in truth-cutting function.
@@ -111,9 +117,9 @@ Possible power is modal; it becomes causally relevant only through an actual
 model token and actual means. Rosetta translates these relations but neither
 defines them nor transfers warrant.
 
-Current owners:
+Current routes and source owners:
 
-- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md) — routes to owners; it does not create doctrine
 - [Dimension-first completion register](../../../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 - [D-register axioms](../../../06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md)
 - [G7 game vocabulary](../../../05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md)
@@ -146,9 +152,17 @@ is a selected reading order, not a causal law. Varṇa and regime are historical
 analogies, never identities or rankings of persons; the seven -ologies are
 cross-cutting philosophical questions, not D-rungs; equations do not evidence
 the rows they annotate. Its stable seats are `GEN7@1:L1` through
-`GEN7@1:L7`. They do not inherit the meanings of `G7@1:L1…L7` merely because a
-projection relates the two packs. Each cell remains `[I]` unless independently
-supported inside its own domain.
+`GEN7@1:L7`. They do not inherit the meanings of the seven semantic terms in
+`G7@1` merely because a projection relates the two packs. Each cell remains
+`[I]` unless independently supported inside its own domain.
+
+The ecology-facing reading is similarly directional. The rows may be modeled
+as mobile functional guilds through which a perturbation can cascade, but they
+are not seven biological trophic levels. An influence edge requires a typed
+interface or observed dependency; row order supplies none. Biological
+coevolution, organizational coadaptation, biological convergence, and
+intentional convergence toward a declared ideal remain different mechanisms.
+See the [Balance of Houses contract](04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md).
 
 ## 6. Pass, fail, and kill
 

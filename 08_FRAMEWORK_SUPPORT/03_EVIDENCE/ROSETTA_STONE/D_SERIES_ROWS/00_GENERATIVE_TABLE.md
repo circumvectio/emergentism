@@ -28,18 +28,21 @@ rank, score, or compare nodes. For compactness only, the table writes `Φ,V` for
 
 This pack is `GEN7@1`. Its `L1…L7` keys name seats in this selected catalogue,
 not the same objects as identically numbered seats in `G7@1` or another pack.
+The G7, historical-social, discipline, and mathematical columns are directional
+`[I]` projections into those seats; they are not part of the native identity of
+the pack.
 
 ## Selected rows
 
 | Stable row ID | Projected G7 symbol | Historical-social analogy | Inference / question / regime analogy | Mathematical note | Standing |
 |---|---|---|---|---|---|
-| `GEN7@1:L1` | Kali 🎲 · Demon-polar taking | Caṇḍāla | dialectical / objective-function / tyranny | if either normalized factor is at the least available rank, `min(Φ,V)` takes that limiting rank | `[I]`; order consequence conditional on the selected model |
-| `GEN7@1:L2` | Kālī 💀 · taking / God-function truth-cut | Śūdra | inductive / epistemology / democracy | the lower-ranked factor is the bottleneck; ties remain explicit | `[I]`; order consequence conditional on the selected model |
-| `GEN7@1:L3` | Kṛṣṇa ◇ · God-polar giving | Vaiśya | deductive / methodology / oligarchy | if `Φ≤Φ′` and `V≤V′`, then `min(Φ,V)≤min(Φ′,V′)` | `[I]`; monotonicity `[A]` inside the order model |
-| `GEN7@1:L4` | Arjuna ⚔ · God-polar giving | Kṣatriya | abductive / axiology / timocracy | if `Φ=V`, the minimum equals both; equality is selected balance, not a universal optimum | `[I]` |
-| `GEN7@1:L5` | Brahmā ○ · Titan creation frame | Brāhmaṇa | systematic / ontology / aristocracy | for common strictly increasing `f`, `min(f(Φ),f(V))=f(min(Φ,V))` | `[I]`; ordinal-invariance identity `[A]` |
-| `GEN7@1:L6` | Śiva • · Titan dissolution frame | Sādhu | apophatic / metaphysics / anarchy | `min(Φ,V)≤Φ` and `min(Φ,V)≤V`; a high factor cannot compensate for a low one | `[I]`; order consequence `[A]` |
-| `GEN7@1:L7` | Viṣṇu ⊙ · Titan preservation frame | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the ordinal node score | `[I]` |
+| `GEN7@1:L1` | `G7@1:kali_take_phi` · Kali 🎲 | Caṇḍāla | dialectical / objective-function / tyranny | if either normalized factor is at the least available rank, `min(Φ,V)` takes that limiting rank | `[I]`; order consequence conditional on the selected model |
+| `GEN7@1:L2` | `G7@1:kali_take_v` · Kālī 💀 | Śūdra | inductive / epistemology / democracy | the lower-ranked factor is the bottleneck; ties remain explicit | `[I]`; order consequence conditional on the selected model |
+| `GEN7@1:L3` | `G7@1:krishna_give_v` · Kṛṣṇa ◇ | Vaiśya | deductive / methodology / oligarchy | if `Φ≤Φ′` and `V≤V′`, then `min(Φ,V)≤min(Φ′,V′)` | `[I]`; monotonicity `[A]` inside the order model |
+| `GEN7@1:L4` | `G7@1:arjuna_give_phi` · Arjuna ⚔ | Kṣatriya | abductive / axiology / timocracy | if `Φ=V`, the minimum equals both; equality is selected balance, not a universal optimum | `[I]` |
+| `GEN7@1:L5` | `G7@1:brahma_create` · Brahmā ○ | Brāhmaṇa | systematic / ontology / aristocracy | for common strictly increasing `f`, `min(f(Φ),f(V))=f(min(Φ,V))` | `[I]`; ordinal-invariance identity `[A]` |
+| `GEN7@1:L6` | `G7@1:shiva_dissolve` · Śiva • | Sādhu | apophatic / metaphysics / anarchy | `min(Φ,V)≤Φ` and `min(Φ,V)≤V`; a high factor cannot compensate for a low one | `[I]`; order consequence `[A]` |
+| `GEN7@1:L7` | `G7@1:vishnu_preserve` · Viṣṇu ⊙ | Ṛṣi | transcendental / teleology / theocracy | `z=φ/ν` belongs to the reciprocal chart, not the ordinal node score | `[I]` |
 
 Varṇa and regime labels are attributed historical analogies, never classes of
 human worth or prescriptions. The -ologies are cross-cutting questions, not
@@ -48,7 +51,9 @@ evidence nor generate the adjacent cultural mappings.
 
 ## Boundary rows
 
-`GEN7@1:L0` and `GEN7@1:L∞` are distinct limiting rows. At the corresponding chart poles,
+`S2BOUNDARY@1:zero_pole` and `S2BOUNDARY@1:infinity_pole` are distinct
+nonmember boundary references. `GEN7@1` still has exactly seven terms; its L1
+and L7 seats approach rather than identify those boundaries. At the chart poles,
 `φν` is undefined (`0·∞` or `∞·0`), though its limit along the open reciprocal
 chart is `1`. Connectedness of `S²` does not identify its poles. The selected
 row reflection pairs `GEN7@1:L1↔GEN7@1:L7`,

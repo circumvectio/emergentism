@@ -62,6 +62,58 @@ Rosetta may preserve a pattern across `T`, `R`, `L`, and `X`; it transfers no
 identity, proof, causal force, or evidence tier. Every claim that crosses these
 coordinates must name the bridge it is making.
 
+## Rosetta rows as a trophic-cascade projection `[I/C]`
+
+The rows can nevertheless represent a **functional trophic cascade** when the
+word *represent* is kept directional and typed:
+
+> **Each Rosetta row is a mobile functional guild that transforms typed inputs
+> and changes the conditions under which other rows operate. Perturbing,
+> starving, capturing, removing, or overgrowing one guild may therefore cascade
+> through the whole dependency web. A row is not itself a biological trophic
+> level, and row order alone creates no causal edge.**
+
+The distinction is between **trophic level** and **trophic cascade**. The source
+web may have any evidenced cardinality. The Rosetta projection asks whether an
+intervention at one functional row predicts indirect effects at other rows or
+control surfaces. At least three distinct nodes or surfaces, a path of typed
+dependencies, a lag, an observed or predicted indirect response, and a
+counterfactual or rival are required before the word *cascade* is earned.
+
+The selected functional reading is cyclic rather than a ladder:
+
+```text
+L1 boundary disturbance / raw intake
+  -> L2 diversity sensing / immune discrimination
+  -> L3 exchange / audit / capability distribution
+  -> L4 selection / commitment / intervention
+  -> L5 niche construction / system architecture
+  -> L6 decomposition / pruning / recycling
+  -> L7 lineage memory / constitutional continuity
+  -> renewed boundary conditions and variation
+```
+
+Influence may also run bottom-up, top-down, laterally, or through feedback; the
+displayed traversal grants no superiority. The exact row functions, House
+usurpation patterns, biological warrants, and kill criteria are owned by the
+[Balance of Houses trophic-coevolution contract](../../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md).
+
+### Coadaptation, coevolution, and ideals
+
+- Persons learn and develop; they may express several rows and move among them.
+- Functional castes or guilds organizationally **coadapt** when retained changes
+  in one alter the learning environment of another and receive a retained
+  response.
+- *Biological coevolution* is reserved for reciprocal heritable population
+  change across generations, with variation, inheritance, differential
+  reproductive persistence, and selection evidence.
+- Biological convergent evolution describes independent lineages arriving at
+  similar functional solutions under comparable constraints. It does not
+  supply a predetermined ideal.
+- Convergence toward an Emergentist ideal is a separate `[I/C]` normative claim:
+  the target must be declared, contestable, revisable, costed, and compatible
+  with consent and exit. Biology neither authors nor authorizes it.
+
 ## Human polyphenotypic cooperation
 
 Social insects make the architectural insight vivid: one colony can express
@@ -158,7 +210,10 @@ candidate.
 **Warrant.** The ecological trophic sequence and insect caste polyphenism are
 external biological results. The `T/R/L/X` separation is a framework type
 discipline `[S]`. The Rosetta and human-polyphenism correspondences remain
-interpretive `[I/C]`.
+interpretive `[I/C]`. Trophic cascades, biological coevolution, and convergent
+evolution are externally studied processes `[B-external]`; projecting them into
+Rosetta functional guilds, organizational coadaptation, or a declared normative
+attractor remains `[I/C]`.
 
 **Strongest rivals.** Ordinary ecological energetics may explain `T` without
 any replicator or Rosetta bridge. Human specialization may be explained by
@@ -176,9 +231,10 @@ network/diffusion models, interventions, held-out predictions, and cost
 accounting. Retract the transfer claim if the proposed layers cannot be
 measured independently or if ordinary network/diffusion models predict as well.
 Ecological energetics and the D4/D5 type distinction survive that failure.
-Retract the human-caste correspondence if functional rows cannot be assigned
-reliably above ordinary task descriptions, if people cannot move among rows as
-the model predicts, or if arbitrary/team-history models perform as well.
+Retract the human-caste correspondence if consented, self-ascribed, bounded role
+expressions cannot be coded reliably above ordinary task descriptions, if people
+cannot move among functions as the model predicts, or if arbitrary/team-history
+models perform as well.
 
 ## Kintsugi seam
 
@@ -202,3 +258,6 @@ original remains recoverable at Git blob
 - [Maternal effects on ant polyphenism](https://pmc.ncbi.nlm.nih.gov/articles/PMC3704040/) — developmental regulation of caste differentiation.
 - [The evolution of division of labour](https://pmc.ncbi.nlm.nih.gov/articles/PMC11923618/) — specialization, interdependence, cooperation, and their preconditions.
 - [Inefficiencies in human division of labour](https://pmc.ncbi.nlm.nih.gov/articles/PMC11923609/) — efficiency is not a sufficient explanation; norms and power remain rivals.
+- [Paine's predator-removal experiment](https://doi.org/10.1086/282400) — an empirical anchor for indirect food-web effects.
+- [Ehrlich and Raven on butterflies and plants](https://doi.org/10.1111/j.1558-5646.1964.tb01674.x) — a classic coevolutionary study.
+- [Losos et al. on replicated island radiations](https://doi.org/10.1126/science.279.5359.2115) — independently originating similar ecomorphs under comparable environments.

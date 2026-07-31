@@ -21,22 +21,25 @@ certificate nor evidence for the Emergentist ontology.
 ## Read first
 
 1. [Master Rosetta](00_THE_MASTER_ROSETTA.md) — the non-transfer laws and audit sequence.
-2. [Rosetta vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md) — namespaced projection packs, declared loss, recursive disambiguation, and the generic application-return contract.
+2. [Rosetta vNext](03_ROSETTA_VNEXT_THEORETICAL_CONTRACT.md) — namespaced native packs, directional projection revisions, declared loss, recursive disambiguation, and the generic application-return contract.
 3. [Seven philosophical questions](00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md) — the `PHIL7@1` cross-cutting question pack.
 4. [Generative Table](D_SERIES_ROWS/00_GENERATIVE_TABLE.md) — the `GEN7@1` projection-only row example.
-5. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — the generalized pack and cell evaluation form.
-6. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
+5. [Balance of Houses](04_BALANCE_OF_HOUSES_TROPHIC_COEVOLUTION_CONTRACT.md) — the bounded trophic-cascade, mobile-guild, coadaptation, convergence, and normative-target projection.
+6. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — the generalized pack and cell evaluation form.
+7. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
 
 ## Authority boundary
 
 - The [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
-  and dimension-first owners define the worldview.
+  routes settled questions; the named dimension and source owners define their
+  claims. The registry creates no doctrine.
 - Source-domain evidence remains with its source. Rosetta transfers no proof.
 - G7 is a selected D5 game vocabulary, not a universal stage count.
-- `L0` and `L∞` are distinct boundary rows. A mirror relation is not equality.
+- `S2BOUNDARY@1:zero_pole` and `S2BOUNDARY@1:infinity_pole` are distinct chart
+  boundary markers. They are not `GEN7@1` seats; a mirror is not equality.
 - Seven -ologies are questions; they are not D-rungs.
 - Bare `Lx` is local shorthand only. Cross-pack references use
-  `projection_id@version:row_key`.
+  `pack_id@version:term_key`.
 - A downstream mirror may test and revise itself continuously, but it can only
   submit a receipted theory-change proposal; it cannot mutate this owner.
 - A Seed page, website page, receipt, row, or visualization cannot override an
