@@ -116,6 +116,45 @@
         "FPE-COMPARE-01 · TYPED DRAFT · NOT PREREGISTERED",
         "None of these gates validates an ontology."
       ]
+    },
+    {
+      "surface": "manifesto/index.html",
+      "role": "finity_act_and_external_receipt_ask",
+      "claimCardIds": [
+        "FIN01-01",
+        "FIN01-02",
+        "OS01-08",
+        "OS01-13",
+        "OS01-22"
+      ],
+      "claimSources": [
+        {
+          "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "lifecycle": "active",
+          "claimCardIds": [
+            "FIN01-01",
+            "FIN01-02"
+          ]
+        },
+        {
+          "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "lifecycle": "reader_synthesis",
+          "claimCardIds": [
+            "OS01-08",
+            "OS01-13",
+            "OS01-22"
+          ]
+        }
+      ],
+      "publicDisposition": "bounded_current",
+      "requiredMarkers": [
+        "Frame one decision",
+        "Finity is a seven-prompt synthesis, not a demonstrated decision science",
+        "No equation derives an ought",
+        "none of the twenty-nine came from anyone outside this project"
+      ]
     }
   ],
   "sequence": [
@@ -400,6 +439,7 @@
     "read/index.html",
     "axioms/index.html",
     "practice/index.html",
+    "manifesto/index.html",
     "record/index.html",
     "established/index.html",
     "exit/index.html",

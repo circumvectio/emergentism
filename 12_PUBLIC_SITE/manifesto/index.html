@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame One Decision — the Emergentism manifesto</title>
+<meta name="description" content="A Finity is one decision held between two clocks: the longest horizon you can honestly name the costs over, and the earliest result that could tell you you are wrong. Frame one. Send back what happened." />
+<meta name="color-scheme" content="dark" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://emergentism.org/manifesto/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Emergentism" />
+<meta property="og:title" content="Frame One Decision — the Emergentism manifesto" />
+<meta property="og:description" content="Twenty-nine logged outcomes. Eighteen went against us. None came from outside this project. That is the only number this document exists to change." />
+<meta property="og:url" content="https://emergentism.org/manifesto/" />
+<meta property="og:image" content="https://emergentism.org/assets/og/og-card.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23F0C85A' stroke-width='2'/%3E%3Cpath d='M16 3v26M3 16h26' stroke='%2379A8FF' stroke-width='1' opacity='.55'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23F0C85A'/%3E%3C/svg%3E" />
+<style>
+:root{
+  --ink:#070A12; --ink-raised:#0C1220; --panel:#111A2B;
+  --bone:#F5F0E6; --muted:#C0C1C5; --faint:#959CAB;
+  --gold:#F0C85A; --gold-hot:#FFE392; --blue:#79A8FF; --mint:#72D6C0;
+  --line:rgba(245,240,230,.14); --line-strong:rgba(245,240,230,.24);
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Baskerville,Georgia,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --maxw:1180px; --read:38rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--sans);
+  font-size:18px;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--gold);color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold-hot);outline-offset:4px;border-radius:2px}
+.skip{position:fixed;z-index:100;top:.6rem;left:.6rem;background:var(--gold);color:var(--ink);
+  font:700 .78rem var(--mono);padding:.7rem 1rem;text-decoration:none;transform:translateY(-180%);transition:transform .15s}
+.skip:focus{transform:translateY(0)}
+.wrap{width:min(100% - clamp(2rem,8vw,5rem),var(--maxw));margin-inline:auto}
+.read{max-width:var(--read)}
+
+.topbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;padding:.85rem max(1rem,calc((100vw - var(--maxw))/2));background:rgba(7,10,18,.82);
+  backdrop-filter:blur(16px);border-bottom:1px solid rgba(245,240,230,.08)}
+.brand{font-weight:800;font-size:1rem;letter-spacing:-.015em;text-decoration:none;white-space:nowrap}
+.brand b{color:var(--gold)}
+.nav{display:flex;align-items:center;gap:1.05rem;font:500 .7rem var(--mono);letter-spacing:.07em;text-transform:uppercase}
+.nav a{color:var(--muted);text-decoration:none;white-space:nowrap;padding:.42rem 0;
+  border-bottom:1px solid transparent;transition:color .16s,border-color .16s}
+.nav a:hover{color:var(--bone);border-color:var(--gold)}
+@media(max-width:760px){.nav a.opt{display:none}}
+
+/* ── rung 0 · the ask, stated before anything is claimed ── */
+.zero{padding:clamp(3.4rem,7vw,5.5rem) 0 0}
+.zero-rule{border-top:1px solid rgba(240,200,90,.45);padding-top:1rem;max-width:58ch}
+.zero-line{margin:0 0 .55rem;font-family:var(--mono);font-size:clamp(.9rem,2.1vw,1.02rem);letter-spacing:.02em}
+.zero-line b{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums}
+.zero-note{margin:0;font-size:.85rem;line-height:1.62;color:var(--faint);max-width:58ch}
+.zero-note a{color:var(--gold)}
+
+/* ── rung 1 · the sentence ── */
+.sentence{padding:clamp(2rem,5vw,3.4rem) 0 clamp(2.4rem,5vw,3.6rem)}
+.eyebrow{font:500 .68rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 1.1rem}
+.sentence h1{margin:0;max-width:19ch;font:500 clamp(2.5rem,5.6vw,4.6rem)/1.02 var(--serif);
+  letter-spacing:-.035em;text-wrap:balance}
+.sentence h1 em{color:var(--gold);font-style:italic}
+.thesis{max-width:44ch;margin:1.5rem 0 0;font:400 clamp(1.05rem,1.5vw,1.3rem)/1.55 var(--serif);color:var(--bone)}
+.thesis b{color:var(--gold);font-weight:600}
+.act-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.7rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:48px;
+  padding:.2rem 1.15rem;border:1px solid var(--line-strong);background:transparent;color:var(--bone);
+  font:600 .72rem var(--mono);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;
+  cursor:pointer;transition:transform .17s,border-color .17s,background .17s,color .17s}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#16120A}
+.btn.primary:hover{background:var(--gold-hot);transform:translateY(-2px)}
+.btn.secondary:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px)}
+
+/* ── the ladder nav ── */
+.ladder{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.1rem 0;margin:0}
+.ladder ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;
+  font:500 .72rem var(--mono);letter-spacing:.04em}
+.ladder a{color:var(--faint);text-decoration:none;border-bottom:1px solid transparent}
+.ladder a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.ladder .n{color:var(--gold);margin-right:.45rem}
+
+section.rung{padding:clamp(3rem,6vw,5rem) 0;border-bottom:1px solid var(--line)}
+.rung h2{margin:0 0 .3rem;font:500 clamp(1.7rem,3.4vw,2.6rem)/1.1 var(--serif);letter-spacing:-.02em}
+.rung .kick{font:500 .66rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 .8rem}
+.rung p{max-width:var(--read);margin:0 0 1.05rem;color:var(--muted);line-height:1.72}
+.rung p.lead{color:var(--bone);font-size:1.06rem}
+.rung strong{color:var(--bone);font-weight:600}
+.rung em{color:var(--gold);font-style:italic}
+.rung h3{margin:2rem 0 .6rem;font:600 1.02rem var(--sans);color:var(--bone);letter-spacing:-.01em}
+
+/* ── rung 2 · the image ── */
+figure.clocks{margin:1.4rem 0 0;padding:clamp(1.2rem,3vw,2rem);border:1px solid var(--line-strong);
+  background:linear-gradient(150deg,rgba(121,168,255,.07),transparent 46%),var(--ink-raised)}
+figure.clocks svg{width:100%;height:auto;display:block;max-width:760px;margin-inline:auto}
+figcaption{margin-top:1rem;font-size:.83rem;line-height:1.62;color:var(--faint);max-width:62ch}
+figcaption b{color:var(--bone);font-weight:600}
+
+/* ── the seven prompts ── */
+.prompts{list-style:none;margin:1.2rem 0 0;padding:0;max-width:var(--read);
+  border-top:1px solid var(--line)}
+.prompts li{display:grid;grid-template-columns:minmax(7.5rem,auto) 1fr;gap:1rem;
+  padding:.72rem 0;border-bottom:1px solid var(--line)}
+.prompts .k{font:600 .68rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);padding-top:.18rem}
+.prompts .v{color:var(--muted);font-size:.93rem;line-height:1.6}
+@media(max-width:560px){.prompts li{grid-template-columns:1fr;gap:.2rem}}
+
+/* ── the record strip ── */
+.record{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);margin:1.4rem 0 0;max-width:var(--read)}
+.record div{background:var(--ink);padding:1rem .9rem}
+.record .num{font:700 1.7rem var(--mono);color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}
+.record .lbl{font-size:.76rem;color:var(--faint);margin-top:.35rem;line-height:1.45}
+
+/* ── books ── */
+.books{list-style:none;margin:1.3rem 0 0;padding:0;display:grid;gap:1px;background:var(--line);
+  border:1px solid var(--line)}
+.books li{background:var(--ink);padding:1.05rem 1.15rem}
+.books .bt{display:flex;flex-wrap:wrap;gap:.55rem;align-items:baseline;margin-bottom:.3rem}
+.books .name{font:600 1rem var(--serif);color:var(--bone)}
+.books .tag{font:600 .62rem var(--mono);letter-spacing:.08em;text-transform:uppercase;
+  padding:.1rem .5rem;border-radius:999px;border:1px solid}
+.tag.read{color:var(--mint);border-color:rgba(114,214,192,.5)}
+.tag.staged{color:var(--faint);border-color:rgba(149,156,171,.45)}
+.books .what{font-size:.9rem;color:var(--muted);line-height:1.6;margin:0 0 .4rem}
+.books .take{font-size:.85rem;color:var(--faint);line-height:1.58;margin:0}
+.books .take b{color:var(--gold);font-weight:600;letter-spacing:.03em;font-family:var(--mono);font-size:.72rem}
+
+/* ── fences ── */
+.fence{max-width:var(--read);margin:1.5rem 0 0;padding:.95rem 1.15rem;border:1px solid rgba(224,145,58,.4);
+  border-left-width:3px;border-radius:6px;background:rgba(224,145,58,.05);font-size:.85rem;line-height:1.65;color:var(--muted)}
+.fence b{color:var(--gold-hot);font-weight:600}
+.fence p{margin:0 0 .6rem;color:inherit;font-size:inherit}
+.fence p:last-child{margin:0}
+
+/* ── the door ── */
+.door{padding:clamp(3rem,6vw,5rem) 0}
+.door h2{margin:0 0 .8rem;font:500 clamp(1.8rem,3.6vw,2.8rem)/1.1 var(--serif);letter-spacing:-.02em}
+.door p{max-width:var(--read);color:var(--muted);margin:0 0 1.05rem;line-height:1.72}
+.steps{list-style:none;counter-reset:s;margin:1.4rem 0 0;padding:0;max-width:var(--read)}
+.steps li{counter-increment:s;position:relative;padding-left:2.6rem;margin-bottom:1rem;color:var(--muted);line-height:1.65}
+.steps li::before{content:counter(s);position:absolute;left:0;top:.05rem;width:1.75rem;height:1.75rem;
+  display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;
+  font:700 .78rem var(--mono);color:var(--gold)}
+.steps b{color:var(--bone);font-weight:600}
+
+footer{border-top:1px solid var(--line);padding:2.2rem 0 3rem;color:var(--faint);font-size:.82rem;line-height:1.7}
+footer a{color:var(--muted)}
+footer .sig{font-family:var(--mono);letter-spacing:.35em;color:var(--gold);margin-top:1.2rem;font-size:.8rem}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="../">Emergent<b>ism</b></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="../practice/#frame">Practice</a>
+    <a href="../record/">Record</a>
+    <a class="opt" href="../plainly/">Worldview</a>
+    <a class="opt" href="../established/">Checked</a>
+    <a href="../exit/">Exit</a>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- RUNG 0 — the ask comes before the claim -->
+  <section class="zero wrap">
+    <div class="zero-rule">
+      <p class="zero-line"><b>29</b> logged outcomes &middot; <b>18</b> went against us &middot; <b>0</b> removed</p>
+      <p class="zero-note">
+        And <strong>none of the twenty-nine came from anyone outside this project</strong>. Every
+        result in our ledger was produced by the people who wrote the framework. That single
+        number is what this document exists to change &mdash;
+        <a href="../record/">read the ledger</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- RUNG 1 — one sentence -->
+  <section class="sentence wrap">
+    <p class="eyebrow">The manifesto &middot; one sentence</p>
+    <h1>Frame one decision. Send back <em>what actually happened.</em></h1>
+    <p class="thesis">
+      A <b>Finity</b> is one decision held between two clocks: the longest horizon over which
+      you can still honestly name who bears the costs, and the earliest result that could tell
+      you that you are wrong.
+    </p>
+    <div class="act-row">
+      <a class="btn primary" href="../practice/#frame">Frame one <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn secondary" href="https://github.com/circumvectio/emergentism/issues/new?template=finity-receipt.yml">Send back a result <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+  <nav class="ladder wrap" aria-label="Read at your depth">
+    <ol>
+      <li><a href="#image"><span class="n">01</span>One image</a></li>
+      <li><a href="#thousand"><span class="n">02</span>A thousand words</a></li>
+      <li><a href="#essay"><span class="n">03</span>One essay</a></li>
+      <li><a href="#books"><span class="n">04</span>The books</a></li>
+      <li><a href="#door"><span class="n">05</span>The ask</a></li>
+    </ol>
+  </nav>
+
+  <!-- RUNG 2 — one image -->
+  <section class="rung wrap" id="image">
+    <p class="kick">01 &middot; One image</p>
+    <h2>Two clocks, and a result that comes back</h2>
+    <p class="lead">
+      Most bad decisions are made on one clock. Either the far one &mdash; a vision with no
+      checkpoint that could ever embarrass it &mdash; or the near one, a sprint that hits its
+      number while the thing it was for quietly dies.
+    </p>
+
+    <figure class="clocks">
+      <svg viewBox="0 0 760 260" role="img"
+           aria-label="A long outer horizon labelled T-L containing a much shorter inner interval labelled T-S. A move is committed at the start of T-S; at its end a receipt returns and revises the plan.">
+        <defs>
+          <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#F0C85A"/>
+          </marker>
+          <marker id="arb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0 0 L10 5 L0 10 z" fill="#79A8FF"/>
+          </marker>
+        </defs>
+
+        <!-- T_L span -->
+        <line x1="60" y1="70" x2="700" y2="70" stroke="#959CAB" stroke-width="1.2"/>
+        <line x1="60" y1="58" x2="60" y2="82" stroke="#959CAB" stroke-width="1.2"/>
+        <line x1="700" y1="58" x2="700" y2="82" stroke="#959CAB" stroke-width="1.2"/>
+        <text x="380" y="48" text-anchor="middle" fill="#C0C1C5"
+              font-family="ui-monospace,monospace" font-size="13">T_L &mdash; longest horizon you can responsibly name costs over</text>
+
+        <!-- T_S span -->
+        <line x1="60" y1="140" x2="230" y2="140" stroke="#F0C85A" stroke-width="2"/>
+        <line x1="60" y1="126" x2="60" y2="154" stroke="#F0C85A" stroke-width="2"/>
+        <line x1="230" y1="126" x2="230" y2="154" stroke="#F0C85A" stroke-width="2"/>
+        <text x="145" y="118" text-anchor="middle" fill="#F0C85A"
+              font-family="ui-monospace,monospace" font-size="13">T_S &mdash; earliest informative result</text>
+
+        <!-- commit -->
+        <circle cx="60" cy="140" r="5" fill="#F0C85A"/>
+        <text x="60" y="176" text-anchor="middle" fill="#F5F0E6"
+              font-family="ui-monospace,monospace" font-size="12">commit the</text>
+        <text x="60" y="192" text-anchor="middle" fill="#F5F0E6"
+              font-family="ui-monospace,monospace" font-size="12">smallest step</text>
+
+        <!-- receipt -->
+        <circle cx="230" cy="140" r="5" fill="#F0C85A"/>
+        <text x="230" y="176" text-anchor="middle" fill="#F5F0E6"
+              font-family="ui-monospace,monospace" font-size="12">receipt</text>
+
+        <!-- return arrow -->
+        <path d="M230 205 C 200 240, 90 240, 62 208" fill="none" stroke="#79A8FF"
+              stroke-width="1.6" marker-end="url(#arb)"/>
+        <text x="146" y="252" text-anchor="middle" fill="#79A8FF"
+              font-family="ui-monospace,monospace" font-size="12">revise, then recompute both clocks</text>
+
+        <!-- onward -->
+        <line x1="240" y1="140" x2="690" y2="140" stroke="#959CAB" stroke-width="1"
+              stroke-dasharray="3 6" marker-end="url(#ar)"/>
+      </svg>
+      <figcaption>
+        <b>Orient by the far clock. Commit only to the near one.</b> The review boundary is a
+        predeclared point at which you look and revise &mdash; <b>not</b> a promise that the move
+        can be undone. Where no harmless reversal exists, the honest response is a smaller step,
+        not a bolder claim.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- RUNG 3 — a thousand words -->
+  <section class="rung wrap" id="thousand">
+    <p class="kick">02 &middot; A thousand words</p>
+    <h2>What this is, and what it refuses to be</h2>
+
+    <p class="lead">
+      Emergentism is a worldview for people who have to act without certainty, which is
+      everyone. It holds that reality exceeds every map, that you must move anyway, and that the
+      only thing which honestly corrects a map is a consequence you agreed in advance to look at.
+    </p>
+    <p>
+      That last clause is the whole of it. Anyone can say they are open to being wrong. The
+      question is whether they named, <em>before</em> acting, the specific observation that would
+      force them to change their mind &mdash; and then went and looked.
+    </p>
+
+    <h3>The unit is one decision</h3>
+    <p>
+      We do not ask you to adopt a philosophy. We ask you to run one worksheet on one real
+      decision you are actually facing. It has seven prompts and takes about twenty minutes:
+    </p>
+
+    <ol class="prompts">
+      <li><span class="k">Decision</span><span class="v">What am I actually deciding?</span></li>
+      <li><span class="k">Actual</span><span class="v">What is true now, and what means are really available?</span></li>
+      <li><span class="k">Possibility</span><span class="v">What remains genuinely open? What would change my map?</span></li>
+      <li><span class="k">Finity</span><span class="v">What longest responsible horizon must this serve, and what shortest observable review boundary &mdash; reversible where possible &mdash; can return an honest result without betraying it?</span></li>
+      <li><span class="k">Next move</span><span class="v">What is the smallest authorized real step I can take now?</span></li>
+      <li><span class="k">Shared value</span><span class="v">Whose capacity may expand if this works? Who bears cost or risk?</span></li>
+      <li><span class="k">Receipt</span><span class="v">What outcome will tell me to continue, revise, or stop? What residue remains?</span></li>
+    </ol>
+
+    <h3>Why the sixth prompt is not decoration</h3>
+    <p>
+      <strong>Shared value</strong> asks who bears the cost. It is there because a decision
+      procedure that optimises for the decider is not a decision procedure, it is a
+      rationalisation engine. Naming the bearers before you move is the cheapest available guard
+      against the most common failure in applied ethics: counting one side's gain and leaving the
+      other side's loss off the ledger entirely.
+    </p>
+
+    <h3>What we will not tell you</h3>
+    <p>
+      We will not tell you that this is derived from mathematics. Some of this project's formal
+      work is machine-checked, and none of it entails a single sentence about how you should
+      live. <strong>No equation derives an ought.</strong> The seven prompts are a
+      <em>selected</em> practice &mdash; a considered choice about how to decide well, offered as
+      a choice and defensible as one, not as a consequence of a theorem.
+    </p>
+    <p>
+      We will not tell you it is demonstrated. Finity is a seven-prompt synthesis, not a demonstrated decision science.
+      Nobody has yet shown it beats a good ordinary checklist. We
+      have written the comparison that would show it, and we have not run it.
+    </p>
+    <p>
+      And we will not tell you that agreeing with us is the point. The exit is on the inside of
+      this frame, not outside it: if the map stops helping, put it down. Adherence validates
+      nothing. A worldview that measures its own success by how many people hold it has stopped
+      being a worldview and become a constituency.
+    </p>
+
+    <h3>The record, and the hole in it</h3>
+    <p>
+      We keep a public ledger of every outcome we have logged, including the ones that went
+      against us, and we have never removed a row.
+    </p>
+
+    <div class="record" role="group" aria-label="The public record">
+      <div><p class="num">29</p><p class="lbl">outcomes logged</p></div>
+      <div><p class="num">18</p><p class="lbl">went against the framework</p></div>
+      <div><p class="num">0</p><p class="lbl">rows ever removed</p></div>
+      <div><p class="num">0</p><p class="lbl">came from outside this project</p></div>
+    </div>
+
+    <div class="fence">
+      <p><b>Read that last column carefully.</b> Eighteen self-scored failures look like candour,
+      and self-criticism is the cheapest sensor there is &mdash; a project can retract
+      enthusiastically forever and never once be told it is wrong by someone who does not work on
+      it. The verdicts in our ledger were assigned by the same party they are against.</p>
+      <p>Our correction machinery also has a published error rate, counted with a denominator and
+      including the reviewer's own mistake, not just the ones it caught. It is on the
+      <a href="../halahala/">failures page</a>, and you should read that before you read anything
+      else here.</p>
+    </div>
+
+    <h3>So what would actually count</h3>
+    <p>
+      One result, from one person who is not us, on one real decision. That is the whole ask. It
+      does not require agreement, credentials, or a good outcome &mdash; a Finity that went badly
+      is worth strictly more to us than one that went well, because it can move a claim and
+      praise cannot.
+    </p>
+  </section>
+
+  <!-- RUNG 4 — one essay -->
+  <section class="rung wrap" id="essay">
+    <p class="kick">03 &middot; One essay</p>
+    <h2>The case, and the case against</h2>
+
+    <p class="lead">
+      Institutions keep their labels long after they lose their functions. A school that has
+      stopped teaching is still called a school; the sign outside does not update. The interesting
+      question is not whether this happens &mdash; everyone agrees it happens &mdash; but whether
+      you can catch it from the inside, before the label falls off.
+    </p>
+    <p>
+      Our answer is that you cannot, not reliably, and that the standard remedies do not work
+      because they are all forms of the institution grading its own paper. Mission statements,
+      values, internal audit, even honest self-criticism: each is a signal the institution
+      generates about itself. None of them is a consequence arriving from outside. The only
+      instrument that has ever reliably corrected a body of belief is a result it did not control
+      and could not have written in advance.
+    </p>
+    <p>
+      That is why the practice is built the way it is. The two clocks exist to make a claim
+      <em>costly</em>. Naming the far horizon forces you to say who bears consequences you will
+      not personally be around for. Naming the near review forces you to commit, in advance and
+      in public, to a moment when you have to look. Neither is clever. Both are unusual, and the
+      combination is rare enough that most plans cannot survive being written this way.
+    </p>
+
+    <h3>The strongest objection, which we think is right</h3>
+    <p>
+      Here is the best argument against everything above, and we have not answered it.
+    </p>
+    <p>
+      This project has produced a great deal of internal coherence and almost no external
+      contact. It holds that flourishing is governed by a two-factor law where <strong>both
+      factors are jointly necessary</strong> &mdash; coherence and viability, and neither one
+      substitutes for the other. By its own measure, a project with high coherence and unmeasured
+      viability has not scored well. It has scored <em>nothing</em>, because a joint requirement
+      with one term unestablished yields no result at all.
+    </p>
+    <p>
+      Our own audit found this and said it plainly: nobody had ever measured the second factor.
+      Every additional document raises the term that is not binding. This manifesto is itself
+      subject to that criticism &mdash; it is another artefact produced from the inside, and if it
+      does not produce contact it is simply the most compressed version yet of the same mistake.
+    </p>
+    <p>
+      We are publishing it anyway, for one reason: it is the only document here whose entire
+      purpose is to ask for the thing that is missing. If it fails, it fails visibly and the
+      failure is loggable, which is more than can be said for another chapter.
+    </p>
+
+    <h3>What we would accept as a refutation</h3>
+    <p>
+      A worldview that cannot be killed is not a worldview, so here is the list. Any one of these
+      would do real damage, and we would log it:
+    </p>
+    <p>
+      &mdash; A person runs the seven prompts on a real decision and reports that a plain
+      pro-and-con list would have produced the same move in less time. If that happens repeatedly,
+      the practice must narrow its claim or drop it.<br>
+      &mdash; A fresh reader, given the worksheet, cannot reconstruct the two clocks from it.
+      Then the framing has failed as communication, whatever its merits as theory.<br>
+      &mdash; Someone shows that the review boundary is systematically gamed &mdash; that
+      predeclaring a checkpoint makes people choose easy checkpoints, and that the practice
+      therefore selects for trivial decisions.
+    </p>
+    <p>
+      Nobody has run any of these. That is not modesty; it is the actual state of the evidence,
+      and it is why the ask at the bottom of this page is small and specific rather than grand.
+    </p>
+  </section>
+
+  <!-- RUNG 5 — the books -->
+  <section class="rung wrap" id="books">
+    <p class="kick">04 &middot; The bottom rung</p>
+    <h2>The books beneath this</h2>
+    <p class="lead">
+      This manifesto compresses a larger body of work. Two of those works are finished and
+      readable. <strong>Seven are staged critical editions &mdash; outlines and source routing,
+      not finished books</strong> &mdash; and we would rather say so than let a catalogue imply a
+      library.
+    </p>
+
+    <ul class="books">
+      <li>
+        <div class="bt"><span class="name">The Emergentist Weltanschauung &mdash; One-Sitting Edition</span><span class="tag read">readable now</span></div>
+        <p class="what">How a finite person should hold a picture of the world: build models that can be proven wrong, act with the means you actually have, let results revise the map.</p>
+        <p class="take"><b>Take</b> Separate what you committed to from what actually happened, and never let the first count as evidence for the second.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">The Finity Card &mdash; Lived Compass Practice</span><span class="tag read">readable now</span></div>
+        <p class="what">The seven-prompt worksheet itself, with the two clocks defined and the review boundary specified narrowly enough to be usable.</p>
+        <p class="take"><b>Take</b> Declare two clocks and hold them apart: the longest horizon you can still name bearers over, and the earliest moment a result could distinguish your move from its rivals.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">The Self-Eating Serpent</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">A framework auditing itself &mdash; asking whether a system built to detect institutional capture can detect its own, and concluding it cannot from the inside.</p>
+        <p class="take"><b>Take</b> Self-criticism is a sensor, not a certificate.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">Sarpasya Vijayam</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">The original long book: institutions performing the rituals of education, medicine, governance and exchange while losing contact with their functions.</p>
+        <p class="take"><b>Take</b> Before calling anything capture, ask what changed &mdash; the observed function, who bears the costs, the capacity to correct, or the ability to leave.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">The Reciprocal / Infinite Play</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">The large single-volume synthesis: the diagnosis, the formal apparatus behind it, and a closing address to the reader.</p>
+        <p class="take"><b>Take</b> Name the three ways a reader neutralises a book &mdash; agreement, dismissal, and filing it away &mdash; and refuse all three.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">Six-Fold Revelation</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">Six disciplined questions for any situation: what exists, how you know, who bears the cost, where it points, how it proceeds, and what happens when people call it sacred.</p>
+        <p class="take"><b>Take</b> Treat each analytical lens as a restraint on your conclusions rather than a licence for them.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">Dharma Yuddha</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">A rewrite of an earlier text that had read the Gita as a duty to fight, replaced with a protocol for resisting harm without violence and while staying answerable.</p>
+        <p class="take"><b>Take</b> A framework can be made to give up its most dangerous claim without erasing the record that it made it.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">The Evolutionary Network</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">A design proposal for a voluntary organisation in which the ways out &mdash; appeal, repair, shutdown &mdash; are specified before anyone is allowed in.</p>
+        <p class="take"><b>Take</b> Write the dissolution clause before activation, not after failure.</p>
+      </li>
+      <li>
+        <div class="bt"><span class="name">The Titans</span><span class="tag staged">staged, not public</span></div>
+        <p class="what">Whether naming three kinds of boundary carefully is useful intellectual equipment &mdash; research-stage, with its formal and world gates still open.</p>
+        <p class="take"><b>Take</b> When you hit a boundary, write down the type, the domain, the obstruction and the smallest extension that resolves it before inventing new vocabulary.</p>
+      </li>
+    </ul>
+
+    <div class="fence">
+      <p><b>On the formal work.</b> There is a machine-checked layer underneath all of this, and
+      it is deliberately not summarised here. A proof establishes that a conclusion follows from
+      stated premises &mdash; it does not establish that the premises describe anything, and this
+      manifesto would be misusing it by association. If you want it, it is at
+      <a href="../established/">what is actually checked</a>, where each item states its own
+      limits.</p>
+    </div>
+  </section>
+
+  <!-- THE DOOR -->
+  <section class="door wrap" id="door">
+    <p class="kick">05 &middot; The ask</p>
+    <h2>One decision. One result. From you.</h2>
+    <p>
+      Not a subscription, not a community, not agreement. One worksheet on one decision you were
+      going to make anyway, and then &mdash; the part that actually matters &mdash; a note about
+      what happened when the review boundary arrived.
+    </p>
+
+    <ol class="steps">
+      <li><b>Frame it.</b> Open the <a href="../practice/#frame">practice page</a> and answer the
+        seven prompts on a decision you are genuinely facing. Twenty minutes. Paper is fine.</li>
+      <li><b>Name the near clock out loud.</b> Tell one other person the date you will look and
+        what result would make you change course. A checkpoint nobody knows about is not a
+        checkpoint.</li>
+      <li><b>Take the smallest real step</b>, not the boldest one.</li>
+      <li><b>When the date arrives, look</b> &mdash; whether or not you want to.</li>
+      <li><b>Send it back.</b>
+        <a href="https://github.com/circumvectio/emergentism/issues/new?template=finity-receipt.yml">File a Finity receipt</a>.
+        It is a public form and it takes a few minutes. Say what you decided, what you predicted,
+        and what actually happened. <b>Negative results are the ones we most need</b> and they
+        will be published unedited, including the ones that make the framework look bad.</li>
+    </ol>
+
+    <div class="fence">
+      <p><b>What we do with it, stated in advance.</b> It goes into the public ledger at
+      <a href="../record/">/record/</a>, with your verdict and not ours. We have never removed a
+      row and we are not going to start. If your result cuts against a claim, the claim gets
+      marked cut, and the page keeps your entry as the reason.</p>
+      <p><b>What we cannot promise.</b> There is no funded programme behind this and no
+      turnaround guarantee. Nobody has ever filed one, so you would be first, and you should
+      calibrate on that rather than on this page's confidence.</p>
+    </div>
+
+    <div class="act-row">
+      <a class="btn primary" href="../practice/#frame">Frame one decision <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn secondary" href="https://github.com/circumvectio/emergentism/issues/new?template=finity-receipt.yml">File a receipt <span aria-hidden="true">&rarr;</span></a>
+      <a class="btn secondary" href="../exit/">Or take the exit <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <p>
+      This page is a manifesto: it argues a position and asks you to act on it. It is not
+      evidence for anything it argues. Where it and a source document disagree, the source
+      governs &mdash; start at <a href="../plainly/">the worldview stated plainly</a>, check
+      claims at <a href="../established/">what is actually checked</a>, and read the failures at
+      <a href="../halahala/">the poison page</a>. The <a href="../exit/">exit</a> stays open and
+      costs nothing.
+    </p>
+    <p class="sig">&bull;&nbsp;&nbsp;&#8857;&nbsp;&nbsp;&#9675;</p>
+  </footer>
+</main>
+</body>
+</html>
