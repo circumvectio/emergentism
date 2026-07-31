@@ -150,6 +150,23 @@ class TopologyContractTests(unittest.TestCase):
             ):
                 self.assertTrue(crossing[field], (crossing["id"], field))
 
+    def test_mu5_uses_the_owner_positive_capacity_falsifier(self):
+        mu5 = next(node for node in self.topology["nodes"] if node["id"] == "mu-5")
+        self.assertEqual(
+            mu5["killCriterion"],
+            "D6 yields a reproducible positive capacity not already represented in D0-D5",
+        )
+        mutant = copy.deepcopy(self.topology)
+        next(node for node in mutant["nodes"] if node["id"] == "mu-5")[
+            "killCriterion"
+        ] = "reject an untyped seventh crossing"
+        self.assertTrue(
+            any(
+                "positive-D6-capacity" in error
+                for error in self.api.validate_topology(mutant, REPO_ROOT)
+            )
+        )
+
     def test_mu_evidence_status_invariant_is_fail_closed(self):
         for mutation, fragment in (
             (("evidenceStatus", "supplied"), "supplied evidence status requires evidence"),
@@ -241,6 +258,15 @@ class TopologyContractTests(unittest.TestCase):
         )
         self.assertIn("does not make", by_id["authorization"]["claimBoundary"])
         self.assertIn("unauthorized attempt remains an Action", by_id["chi"]["refusalPolicy"])
+        full_text = self.topology["fullTextEquivalent"]
+        for status in (
+            "authorized",
+            "unauthorized",
+            "nonconsequential",
+            "refused",
+            "unavailable",
+        ):
+            self.assertIn(status, full_text)
 
     def test_authorization_assessment_is_an_inhabited_tagged_union(self):
         schema = next(
@@ -462,6 +488,7 @@ class RenderingContractTests(unittest.TestCase):
             "D5 merely possible / represented",
             "PHYSICAL",
             "AUTHORIZATION",
+            "not_required (nonconseq.)",
             "q_t COMMITMENT",
             "r_t+1 OUTCOME",
             "receipt also revises G",

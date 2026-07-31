@@ -387,8 +387,8 @@ We have chosen truth.
 - [Canonical Claim Matrix](../../03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md) -- major claims, current tiers, public-safe phrasing, and downgrade paths
 - [Empirical Program Board](../../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md) -- active test surface and upgrade/downgrade milestones
 - [Strategic Implementation and the F5 Force Map](../../04_AXIOLOGY/01_THEURGY/00_THEURGY_AND_F5_FORCE_MAP.md) -- new conjectural D5 formation packet; signed attestation carrier claim, `alpha_5`, and theurgy fences
-- Formal System: Power-Max Lemma (01_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md; link removed to prevent cycle) -- the cooperation proof referenced in Part II
-- Formal System: Triadic Stability (01_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- uniqueness proof for the triadic structure
+- Formal System: Power-Max Lemma (01_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md; link removed to prevent cycle) -- conditional model-internal result inside Justice; the unconstrained extraction counterexample remains live
+- Formal System: Triadic Stability (01_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- retracted uniqueness proof; selected triadic correspondence survives
 - [GFS Human Validation Lane](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/03_GFS_STUDY/GFS_README.md) -- active human-validation lane for the GFS program
 - [GFS Multiplicative Test](../../../02_SKYZAI/01_NOOSPHERE/02_ORGANS/Skyzai/spec/empirical/01_GFS_TEST/README.md) -- executable test pipeline for the multiplicative hypothesis
 - [Jaynes Kill Condition](../../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_JAYNES_KILL_CONDITION.md) -- expanded treatment of Conjecture C9

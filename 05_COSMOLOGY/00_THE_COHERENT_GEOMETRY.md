@@ -302,15 +302,15 @@ These remain genuinely indeterminate. This is **the apophatic edge, the L6 Groun
 
 ---
 
-## 12. Triadic stability — why three, stated as a framework proof (`[S]`, not `[A]`)
+## 12. The selected triadic frame — correspondence, not uniqueness proof `[I]`
 
-**Rigorous statement.** The framework argues monism is sterile, dualism is unstable, triadism is stable, so `{0,1,∞}` is the unique stable configuration ([`03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md`](03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md)). The dimensional-closure result `S² ≅ ℂP¹` ([`03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md`](03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md)) is the standard one-point compactification, `[A]`.
+**Rigorous statement.** `S²≅ℂP¹` is the standard one-point compactification, `[A]`. The use of `{0,1,∞}` as Titan roles is a selected projective normalization `[I]`; it does not follow that every stable structure is triadic. The former uniqueness argument is retracted in [`03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md`](03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md).
 
-**Tier.** `[A]` for `S² ≅ ℂP¹`. **`[S]` for the triadic-stability "proof"** — it is a framework-internal derivation, valid inside its premises, **not** an `[A]` settlement and not a proof of the framework's own consistency.
+**Tier.** `[A]` for `S²≅ℂP¹`; `[I]` for choosing the triadic frame and projecting it across domains.
 
-**Proved vs asserted.** *Proved (`[A]`):* `S² ≅ ℂP¹`. *Asserted (`[S]`):* the uniqueness of three. Whether `{0,1,∞}` is *the* unique K-minimal frame is, per the Gödel clarification, an empirical `[I]` observation ("no counterexample found"), not a formal proof.
+**Proved vs asserted.** *Proved (`[A]`):* the declared compactification fact. *Selected (`[I]`):* the symbolic roles and cross-domain correspondence. No controlled search, theorem, or complexity measure currently establishes a unique `K`-minimal frame.
 
-**Kill criterion.** Exhibit a stable two-frame or four-frame configuration that does the same structural work, **or** show the triadic argument smuggles in its conclusion as a premise.
+**Kill criterion.** The local triadic correspondence falls when a two-part, four-part, continuous, or domain-native model explains or predicts the target better. Any citation that calls the triad forced or unique fails the current owner boundary.
 
 ---
 

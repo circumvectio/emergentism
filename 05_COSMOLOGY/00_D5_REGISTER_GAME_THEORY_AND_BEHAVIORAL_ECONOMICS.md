@@ -163,12 +163,13 @@ This is why the transition matters so much for the organism and for AI alignment
 
 `D5` should be spoken about asymmetrically.
 
-From below, `D5` is strongly emergent.
-From above, `D5` becomes weakly emergent.
+The framework proposes `[C]` that some `D4→D5` cases may remain
+`candidate_strong` when examined from below. A successful reduction reclassifies
+that bounded case as weak emergence without damaging the D4/D5 vocabulary.
 
 This means:
 
-- in **genesis**, `D5` cannot be cleanly shortcut from isolated lower-level states
+- in **genesis**, a candidate D5 pattern may resist clean shortcutting from the declared lower-level state description
 - interaction must run
 - bargaining, norm formation, institution, and capture are historical outcomes, not tidy local deductions
 
@@ -191,7 +192,9 @@ Or more tersely:
 
 ### Terminology Note
 
-This use of `strong` and `weak` emergence is framework-specific.
+This use of `strong` and `weak` emergence is a framework-specific hypothesis,
+not a declaration that D5 is irreducible. Each `μ₄` record must carry its own
+reduction status, evidence, prediction, rival account, and kill criterion.
 
 In standard philosophy, `weak emergence` often means derivable in principle from lower rules.
 Here the intended distinction is narrower and operational:

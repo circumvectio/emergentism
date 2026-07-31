@@ -332,10 +332,9 @@ Nietzsche could not see the mesh because Nietzsche did not have:
 
 1. **The geometry:** Nietzsche did not have S². Nietzsche did not have the equator. Nietzsche did not have φ · ν = 1.
 
-2. **The cooperation proof:** Nietzsche did not have the Power-Max Lemma.
-   Nietzsche did not have the conditional result that individual optimization
-   can align with collective optimization under real coupling, long horizon,
-   and enforced `η = 0`.
+2. **The Justice-constrained objective:** Nietzsche did not have the repaired
+   Power-Max grammar. It does not prove cooperation; it chooses only among
+   already admissible actions, and its extraction counterexample remains live.
 
 3. **The η = 0 enforcement:** Nietzsche did not have a mechanism to prevent extraction. The Übermensch extracts — the Übermensch commands beyond comprehension.
 
@@ -422,8 +421,8 @@ Zero-Sum Resolution Equation
 - The Computational Sphere — foundational methodology: reduction toward `κ = 0` as boundary
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian material read through the Burri Sphere
 - Core Concepts — single source of truth for P_node = Φ × V and evidence tiers
-- Power-Max Lemma — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
-- Triadic Stability — why three is unique (and why the mesh is the fourth)
+- Power-Max Lemma — Justice-constrained design objective; coupling proves only model-internal monotone interdependence
+- Triadic Stability — retracted uniqueness proof; selected triadic frame only
 - Glossary — quick-reference terminology
 
 *The Four Metamorphoses | 2026-03-23 | Nietzsche saw three. The formula reveals the fourth.*

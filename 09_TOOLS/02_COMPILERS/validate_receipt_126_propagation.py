@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -78,8 +79,8 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
     errors: list[str] = []
     if manifest.get("schemaVersion") != "1.0":
         errors.append("schemaVersion must be 1.0")
-    if manifest.get("status") != "closed_on_isolated_branch":
-        errors.append("status must remain closed_on_isolated_branch")
+    if manifest.get("status") != "closed_for_registered_contract":
+        errors.append("status must remain closed_for_registered_contract")
     if "does not authorize publication" not in str(manifest.get("authorityBoundary", "")):
         errors.append("authority boundary must deny publication authority")
 
@@ -175,6 +176,32 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
         if spec.mutation_id in boundary_validator.violations(text):
             errors.append(f"registered fallacy is live in owner: {spec.mutation_id}")
 
+    derived_seams = manifest.get("derivedSeams", [])
+    if not isinstance(derived_seams, list) or len(derived_seams) != 6:
+        errors.append("derivedSeams must contain the six registered review seams")
+        derived_seams = []
+    derived_ids: list[str] = []
+    for seam in derived_seams:
+        if not isinstance(seam, Mapping):
+            errors.append("derived seam record must be an object")
+            continue
+        seam_id = str(seam.get("id", ""))
+        derived_ids.append(seam_id)
+        relative = str(seam.get("path", ""))
+        path = ROOT / relative
+        if not path.is_file():
+            errors.append(f"derived seam path is absent: {relative}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        for marker in seam.get("requiredMarkers", []):
+            if str(marker) not in text:
+                errors.append(f"derived seam marker is absent: {seam_id}: {marker}")
+        for pattern in seam.get("forbiddenPatterns", []):
+            if re.search(str(pattern), text, flags=re.IGNORECASE | re.DOTALL):
+                errors.append(f"derived seam regression is live: {seam_id}: {pattern}")
+    if len(derived_ids) != len(set(derived_ids)):
+        errors.append("derived seam IDs must be unique")
+
     negative = manifest.get("negativeScan", {})
     if not isinstance(negative, Mapping):
         errors.append("negativeScan must be an object")
@@ -198,6 +225,7 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
         "status": "ok",
         "owners": len(owner_paths),
         "mutations": len(specs),
+        "derivedSeams": len(derived_seams),
         "propagationPaths": len(propagation_paths),
         "activeMutationHits": 0,
         "frozenScope": "clean",
@@ -226,6 +254,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             "PROP-126-OK "
             f"owners={result['owners']} "
             f"mutations={result['mutations']} "
+            f"derivedSeams={result['derivedSeams']} "
             f"propagationPaths={result['propagationPaths']} "
             "activeMutationHits=0 frozen=clean authority=staged-only"
         )

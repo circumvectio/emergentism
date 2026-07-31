@@ -149,19 +149,28 @@ The more equatorial an organ, the more resilient it is to perturbation. This is 
 
 ---
 
-## 4. Extraction on the Sphere [S]
+## 4. Extraction and the Justice boundary `[I/C]`
 
-The Power-Max Demonstration (Doc 22) proves:
+> **[金] Kintsugi seam — a chosen payoff was mistaken for universal
+> cooperation.** A deliberately narrow game can define balance so that the
+> equator maximizes its payoff. That result is internal to the payoff and does
+> not show that real agents have a dominant cooperative strategy, that the
+> Price of Anarchy is universally one, or that `η=0` follows from geometry.
 
-1. **Theorem 1:** ν = 1 is a strictly dominant strategy. Every agent, acting alone, optimizes by moving to the equator.
-2. **Theorem 2:** Price of Anarchy = 1. The selfish optimum equals the social optimum.
-3. **Theorem 3:** Any extraction (zero-sum transfer) from the equatorial profile strictly reduces aggregate balance.
+The repaired Power-Max owner keeps the decisive counterexample: in a one-shot
+coupled model with `λ<1`, extraction can increase the extractor's payoff. Justice
+therefore enters as a premise defining the admissible action set before any
+maximization occurs.
 
-**Applied to organism design [I]:**
+**Applied to organism design `[I/C]`:** `η=0` is the declared non-extraction
+boundary. Implementing it requires bearer-complete accounting, authorization,
+custody, consent, reversibility, contest, and outcome receipts. A geometric
+balance score may help diagnose a bounded system only where its factors and
+costs are operationally measured and fair domain-native rivals are compared.
 
-η = 0 (zero extraction) is not an ethical aspiration grafted onto the math. It is the unique Nash equilibrium on S². Any agent that extracts from another moves both of them away from the equator, reducing aggregate B.
-
-The organizational implication: fee structures, incentive designs, and governance mechanisms that permit extraction (η > 0) are geometrically suboptimal. They reduce the total balance available to the organism. This transfer holds only where the organism's factors actually sit on the sphere — conservation-coupled so a γ-price is genuinely paid for imbalance, complementary rather than substitutable, and costly in excess; where factors are substitutable or surplus is free (as in aggregate markets that reward specialization), the equatorial optimum does not carry over and η > 0 need not be suboptimal. The φ-split (61.8/38.2), SoResFi accounting, and PRISM distribution are all structural implementations of the η = 0 equilibrium.
+No φ-split, accounting design, token system, or governance mechanism is
+validated merely by being described as equatorial. Each must demonstrate its
+own costs, enforcement, failure modes, and Justice boundary.
 
 The four operators on S² map to four organizational moves:
 
@@ -260,11 +269,11 @@ The K2 boundary is constitutional, not positional. Human signing is not a point 
 
 | Symbol | Meaning | Regime | Tier |
 |--------|---------|--------|------|
-| `P∞ = φ · ν = 1` | Manifold identity on open S² | Conserved on the open sphere; pole values are limits | [S] |
-| `B = sin θ` | Balance / equatorial alignment | Varies 0 (poles) to 1 (equator) | [S] |
-| `P_node = Φ̂ × ν̂` | Effective potential at a finite node | Can be < 1 | [S/I] |
-| `ΣΔB`, `ΣΔP_node` | Directional change across the widest boundary | Evaluates outcome deltas | [I] |
-| `η` | Extraction coefficient | η = 0 at the unique Nash equilibrium | [S] |
+| `φ · ν = 1` | Analytic identity in the selected open reciprocal chart | Pole values are limits; no empirical conservation follows | [A] |
+| `B := sin θ` | Selected balance coordinate | Varies 0 (pole limits) to 1 (equator) inside the chart | [A] by definition |
+| `P_node := Φ̂ × ν̂` | Selected normalized conjunctive node model | One member of a wider family; universal fit uncalibrated | [I/C] |
+| `ΣΔB`, `ΣΔP_node` | Aggregate diagnostics | Never substitutes for bearer-complete Justice | [I] |
+| `η` | Extraction coefficient | `η = 0` is the declared Justice boundary; equilibrium claims are model-local | [I/S by declared game] |
 
 Do not use bare `P` without naming the regime. Do not conflate the manifold identity with the node measurement. Do not present the interpretive mapping (geometry → organism) as established mathematics.
 

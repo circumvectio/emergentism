@@ -15,7 +15,7 @@ import html
 import json
 from pathlib import Path
 import sys
-from typing import Any, Iterable, Mapping, Sequence
+from typing import Any, Mapping, Sequence
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -186,6 +186,12 @@ def validate_topology(
         }:
             errors.append(f"mu-{number} has invalid reductionStatus")
 
+    mu5 = next((node for node in nodes if node.get("id") == "mu-5"), {})
+    if mu5.get("killCriterion") != (
+        "D6 yields a reproducible positive capacity not already represented in D0-D5"
+    ):
+        errors.append("mu-5 kill criterion must match the positive-D6-capacity falsifier")
+
     closures = [edge for edge in edges if edge.get("edgeType") == "closure"]
     if len(closures) != 1:
         errors.append("topology needs exactly one closure edge")
@@ -245,6 +251,18 @@ def validate_topology(
         "authorization", {}
     ).get("status"):
         errors.append("physical availability and authorization statuses must be distinct")
+    full_text = str(topology.get("fullTextEquivalent", ""))
+    for status in (
+        "authorized",
+        "unauthorized",
+        "nonconsequential",
+        "refused",
+        "unavailable",
+    ):
+        if status not in full_text:
+            errors.append(
+                f"fullTextEquivalent must preserve the {status} commitment state"
+            )
 
     assessment = _schema(topology, "AuthorizationAssessment")
     variants = assessment.get("variants", {})
@@ -706,7 +724,7 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     gold = "#7b5f18"
 
     svg.open("g", id="physical-cone", **{"data-primitive": "boundary-envelope"})
-    svg.add("rect", x=70, y=300, width=1460, height=430, rx=34, fill="#fbf7eb", stroke=actual, **{"stroke-width": 2.4})
+    svg.add("rect", x=70, y=300, width=1460, height=450, rx=34, fill="#fbf7eb", stroke=actual, **{"stroke-width": 2.4})
     svg.text(95, 328, "J+ · c-BOUNDED PHYSICAL CAUSAL ENVELOPE", size=12, fill=actual, weight=800, letter_spacing=1)
     svg.text(1505, 328, "modeling changes reachable choices, not c", size=11, fill="#5b534c", anchor="end")
     svg.close("g")
@@ -733,12 +751,18 @@ def _render_proof(topology: Mapping[str, Any], digest: str) -> str:
     # Means and the independent physical / authorization assessments.
     _line(svg, 507, 655, 533, 655, color=actual, dash=_edge_dash(edges_by_id, "e-means-availability"), marker="arrow-actual", id="e-means-availability")
     _path(svg, "M 687 655 C 750 650, 790 624, 814 605", color=actual, dash=_edge_dash(edges_by_id, "e-availability-chi"), marker="arrow-actual", id="e-availability-chi")
-    _path(svg, "M 687 705 C 770 705, 800 650, 830 611", color=gold, dash=_edge_dash(edges_by_id, "e-authorization-chi"), marker="arrow-actual", id="e-authorization-chi")
+    _path(svg, "M 695 715 C 770 715, 800 650, 830 611", color=gold, dash=_edge_dash(edges_by_id, "e-authorization-chi"), marker="arrow-actual", id="e-authorization-chi")
     _path(svg, "M 730 432 C 750 490, 810 520, 842 556", color=actual, dash=_edge_dash(edges_by_id, "e-selector-chi"), marker="arrow-actual", id="e-selector-chi")
     _path(svg, "M 650 562 C 715 585, 765 588, 822 586", color=possible, dash=_edge_dash(edges_by_id, "e-option-a-chi"), marker="arrow-possible", id="e-option-a-chi")
     _state_node(svg, by_id["d4-means"], ["V_t embodied means", "actual resources"], width=154)
     _state_node(svg, by_id["physical-availability"], ["PHYSICAL", "available / unavailable"], width=154)
-    _state_node(svg, by_id["authorization"], ["AUTHORIZATION", "valid / invalid / absent"], width=154)
+    _state_node(
+        svg,
+        by_id["authorization"],
+        ["AUTHORIZATION", "valid / invalid / absent", "not_required (nonconseq.)"],
+        width=170,
+        height=62,
+    )
 
     # Commitment, two receipts, environment, and both feedback targets.
     _line(svg, 925, 585, 980, 585, color=actual, width=2.7, dash=_edge_dash(edges_by_id, "e-chi-commitment"), marker="arrow-actual", id="e-chi-commitment")

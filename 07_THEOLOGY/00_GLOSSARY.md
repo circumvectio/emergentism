@@ -179,7 +179,7 @@ rosetta:
 |------|---------|---------|
 | **[A]** | Established — externally verified by independent science, mathematics, or public fact | Shannon entropy formula, Boltzmann entropy, quantum mechanics |
 | **[B]** | Receipted — verified by repository, runtime, experiment, or dated artifact | passing tests, signed records, published audit receipts |
-| **[S]** | Structural — geometric consequence of the framework | Is-Ought bypass support, cooperation proof, R* = 1 |
+| **[S]** | Structural — consequence inside a declared framework model or type contract | typed receipt invariants, support-subset constraint, a bounded game result with its premises attached |
 | **[I]** | Interpretive — creative synthesis, not independently verified | Egregores, three substrates, L-level neural mapping |
 | **[D]** | Draft / design — proposed implementation path not yet receipted | planned protocol, unreleased spec, pending review |
 | **[C]** | Conjecture — testable but untested | Eq. 7 (Protocol R), C209 (EEG) |

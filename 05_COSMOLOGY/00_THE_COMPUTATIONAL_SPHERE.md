@@ -361,11 +361,11 @@ Always.
 - [The Bindu Was Always Here](../90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md) — the mission-critical point: mandala, third eye, Zero-Sum Resolution Equation
 - [Anmut and Demut](../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md) — linguistic translation: German etymology read as φ/ν axis-language
 - [The Transcendental Trinity](../90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md) — computational breakthrough: 0, ∞, 1 as transcendentals, division by zero resolved
-- [Triadic Stability](03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md) — why three is the unique stable number
+- [Triadic Stability](03_FORMAL_SYSTEM/11_EFR_TRIADIC_STABILITY.md) — retracted uniqueness proof; selected triadic frame only
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 - [Two Sacrifices](03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md) — Love and Hate as structural operations
-- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem in coupled networks under `η = 0`
+- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — Justice-constrained design objective; coupling alone proves no cooperation
 
 *The Computational Sphere | 2026-03-23 | κ = 0 names the ground-facing limit. From the empty limit, the scaffold reconstructs.*
 

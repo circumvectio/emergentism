@@ -39,6 +39,7 @@ class Receipt126PropagationValidatorTests(unittest.TestCase):
         result = self.validator.validate_manifest(self.manifest)
         self.assertEqual(result["owners"], 26)
         self.assertEqual(result["mutations"], 14)
+        self.assertEqual(result["derivedSeams"], 6)
         self.assertEqual(result["propagationPaths"], 345)
         self.assertEqual(result["activeMutationHits"], 0)
         self.assertEqual(result["frozenScope"], "clean")
@@ -59,6 +60,12 @@ class Receipt126PropagationValidatorTests(unittest.TestCase):
     def test_mutation_omission_fails_closed(self) -> None:
         mutated = copy.deepcopy(self.manifest)
         mutated["mutations"] = mutated["mutations"][:-1]
+        with self.assertRaises(self.validator.ManifestError):
+            self.validator.validate_manifest(mutated)
+
+    def test_derived_seam_omission_fails_closed(self) -> None:
+        mutated = copy.deepcopy(self.manifest)
+        mutated["derivedSeams"] = mutated["derivedSeams"][:-1]
         with self.assertRaises(self.validator.ManifestError):
             self.validator.validate_manifest(mutated)
 

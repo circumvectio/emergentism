@@ -414,8 +414,8 @@ Build systems that:
 | Document | Connection |
 |----------|------------|
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Truth as epistemic discipline |
-| [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Justice as cooperation |
-| [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Why three transcendentals (not 2, not 4) |
+| [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Justice-constrained decision objective; no derived cooperation |
+| [Triadic Stability](11_EFR_TRIADIC_STABILITY.md) | Retracted uniqueness proof; selected frame only |
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Truth as knowledge-invariance |
 | Five Domains | Justice in all domains |
 

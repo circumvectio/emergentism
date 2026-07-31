@@ -358,7 +358,7 @@ Zero-Sum Resolution Equation
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [Commandment vs. Geometry](../04_AXIOLOGY/00_COMMANDMENT_VS_GEOMETRY.md) — religion vs. Dharma, obedience vs. recognition
 - [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
-- [Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
+- [Power-Max Lemma](../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — Justice-constrained design objective; no derived cooperation
 - [Two Sacrifices](../05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md) — Love and Hate as structural operations
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 

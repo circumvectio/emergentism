@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg data-topology-sha256="f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
+<svg data-topology-sha256="f6134b0613420bb62db99854133beae9ca8378c73d7970238dfbc9f6e555126c" height="1000" role="img" viewBox="0 0 1600 1000" width="1600" xmlns="http://www.w3.org/2000/svg">
   <title>The Burri Rules - Ivory Proof Plate</title>
-  <metadata id="topology-sha256">sha256:f39561ac7037e1553335939397ca9891ea2245e653a70f2a64a8587414d0f8ce;view:proof</metadata>
+  <metadata id="topology-sha256">sha256:f6134b0613420bb62db99854133beae9ca8378c73d7970238dfbc9f6e555126c;view:proof</metadata>
   <defs>
     <marker id="arrow-actual" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#332d29"/></marker>
     <marker id="arrow-possible" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#526879"/></marker>
@@ -11,7 +11,7 @@
   <text fill="#332d29" font-family="sans-serif" font-size="28" font-weight="800" letter-spacing="2.2" text-anchor="start" x="60" y="52">THE BURRI RULES</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="start" x="60" y="79">Ivory proof plate · typed emergence, commitment, receipt, and composition</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end" x="1540" y="52">COMPASS / NOT COMMAND</text>
-  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 f39561ac7037e155…</text>
+  <text fill="#5b534c" font-family="sans-serif" font-size="10" font-weight="400" text-anchor="end" x="1540" y="76">topology sha256 f6134b0613420bb6…</text>
   <rect fill="#fbf7eb" height="160" rx="20" stroke="#b8a98e" stroke-width="1.5" width="1510" x="45" y="104"/>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1" text-anchor="start" x="65" y="128">BR-2 · SIX CANDIDATE CROSSINGS + ONE NON-mu CLOSURE</text>
   <g data-primitive="mu-crossing" id="d-register-spine">
@@ -97,7 +97,7 @@
   <text fill="#526879" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="790" y="239">r6 interpretive return · not identity · not mu6</text>
   </g>
   <g data-primitive="boundary-envelope" id="physical-cone">
-  <rect fill="#fbf7eb" height="430" rx="34" stroke="#332d29" stroke-width="2.4" width="1460" x="70" y="300"/>
+  <rect fill="#fbf7eb" height="450" rx="34" stroke="#332d29" stroke-width="2.4" width="1460" x="70" y="300"/>
   <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="800" letter-spacing="1" text-anchor="start" x="95" y="328">J+ · c-BOUNDED PHYSICAL CAUSAL ENVELOPE</text>
   <text fill="#5b534c" font-family="sans-serif" font-size="11" font-weight="400" text-anchor="end" x="1505" y="328">modeling changes reachable choices, not c</text>
   </g>
@@ -149,7 +149,7 @@
   </g>
   <line id="e-means-availability" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2" x1="507" x2="533" y1="655" y2="655"/>
   <path d="M 687 655 C 750 650, 790 624, 814 605" fill="none" id="e-availability-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  <path d="M 687 705 C 770 705, 800 650, 830 611" fill="none" id="e-authorization-chi" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path d="M 695 715 C 770 715, 800 650, 830 611" fill="none" id="e-authorization-chi" marker-end="url(#arrow-actual)" stroke="#7b5f18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <path d="M 730 432 C 750 490, 810 520, 842 556" fill="none" id="e-selector-chi" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <path d="M 650 562 C 715 585, 765 588, 822 586" fill="none" id="e-option-a-chi" marker-end="url(#arrow-possible)" stroke="#526879" stroke-dasharray="6 5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
   <g data-kind="state" data-modality="actual" id="d4-means">
@@ -167,10 +167,11 @@
   </text>
   </g>
   <g data-kind="state" data-modality="actual" id="authorization">
-  <rect fill="#fffdf6" height="54" rx="13" stroke="#332d29" stroke-width="2" width="154" x="533" y="678"/>
-  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="610" y="702">
+  <rect fill="#fffdf6" height="62" rx="13" stroke="#332d29" stroke-width="2" width="170" x="525" y="684"/>
+  <text fill="#332d29" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle" x="610" y="704">
     <tspan dy="0" x="610">AUTHORIZATION</tspan>
     <tspan dy="17" x="610">valid / invalid / absent</tspan>
+    <tspan dy="17" x="610">not_required (nonconseq.)</tspan>
   </text>
   </g>
   <line id="e-chi-commitment" marker-end="url(#arrow-actual)" stroke="#332d29" stroke-width="2.7" x1="925" x2="980" y1="585" y2="585"/>

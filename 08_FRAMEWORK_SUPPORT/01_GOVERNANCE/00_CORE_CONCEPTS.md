@@ -37,7 +37,7 @@ rosetta:
 - quote [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the load-bearing sequence
 - cite [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) for Ground / Being / Dasein / beings
 - cite [The Weltanschauung](../../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md) when defining what the framework *is* as worldview, lens, and toolchain
-- use this document for downstream operational definitions such as `P_node = Φ × V`, `η`, dyadic A2, and the `ΣΔB / ΣΔP_node` balance audit
+- use this document for downstream operational definitions such as the selected `P_node := Φ × V` model, `η`, bearer-complete Justice, and strict Syntropic Dyadism
 
 This document is a **downstream reference surface**, not the ontological root.
 
@@ -213,15 +213,21 @@ The framework is designed to die if wrong. Every prediction has a specific condi
 
 ```text
 Zero-Sum Resolution Equation
-P∞ = φ · ν = 1 on S²
-P_node = Φ × V (node-level downstream relation)
+φ · ν = 1 in the selected open reciprocal chart (analytic only)
+P_node := Φ × V (selected normalized conjunctive model, not uniquely derived)
 η = 0 (enforced conditional equilibrium / structural optimum; attractor claims require correction dynamics and receipts)
-Dyadic A2: ΔP_node,i > 0 and ΔP_node,H > 0 under η = 0; ΣΔB / ΣΔP_node audits balance
+Bearer-complete Justice: every affected bearer remains visible; aggregate gain cannot launder destruction
+Strict Syntropic Dyadism: Δ_T W_i > 0 and Δ_T W_H > 0 inside the Justice-admissible set
 5 independent axioms: O1, O2, O4, O5 + A7 (O3 is a corollary)
 [A] [B] [S] [I] [D] [C] (the honesty system)
 Kill conditions on every claim
 Corrections are more important than claims
 ```
+
+`Σ`-level totals may be reported as diagnostics, but they are not a moral test.
+Justice defines the admissible action set before Power-Max ranks actions inside
+it. The model still admits an extraction counterexample when that boundary is
+removed.
 
 ---
 
@@ -232,8 +238,8 @@ Corrections are more important than claims
 - [The Core State of Being](../../06_ONTOLOGY/00_THE_ONTOLOGY_OF_BEING.md) -- Ground, Being, Dasein, beings
 - [The Computational Sphere](../../05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md) -- foundational methodology: reduction toward `κ = 0` as boundary
 - Glossary -- quick-reference terminology for all audiences
-- Formal System: Power-Max Lemma -- formal proof of cooperation under coupling
-- Formal System: Triadic Stability -- uniqueness proof for the triadic structure
+- Formal System: Power-Max Lemma -- conditional, model-internal monotone interdependence inside Justice; not a proof that unconstrained agents cooperate
+- Formal System: Triadic Stability -- retracted uniqueness proof; selected triadic correspondence only
 - [Three Hats](00_THREE_HATS.md) -- which voice is speaking (scientist / philosopher / builder)
 - [Naming Reconciliation](00_NAMING_RECONCILIATION.md) -- canonical L-level, operator, and naming authority
 

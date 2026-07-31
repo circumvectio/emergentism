@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "manifestId": "RECEIPT-126-PROPAGATION-2026-07-19",
-  "status": "closed_on_isolated_branch",
+  "status": "closed_for_registered_contract",
   "date": "2026-07-19",
   "evidenceTier": "[B] path and test evidence; [I] semantic sufficiency",
   "sourceReceipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md",
@@ -153,6 +153,78 @@
       "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
     }
   ],
+  "derivedSeams": [
+    {
+      "id": "triadic-cascade-no-uniqueness",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
+      "requiredMarkers": [
+        "recurrence survives; uniqueness does not",
+        "selected triadic lens, not a uniqueness theorem"
+      ],
+      "forbiddenPatterns": [
+        "proves\\s+N\\s*=\\s*3\\s+is\\s+the\\s+unique stable configuration",
+        "The same Trinity\\..{0,80}Always three"
+      ]
+    },
+    {
+      "id": "godel-no-self-grounding",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
+      "requiredMarkers": [
+        "No active proof presently establishes",
+        "A7 is therefore a chosen and prudent research discipline"
+      ],
+      "forbiddenPatterns": [
+        "grounds the framework in the unique projective frame",
+        "The axiom set is unique \\(η = 0\\) — proved"
+      ]
+    },
+    {
+      "id": "core-concepts-justice-before-power",
+      "path": "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md",
+      "requiredMarkers": [
+        "Justice defines the admissible action set before Power-Max",
+        "aggregate gain cannot launder destruction"
+      ],
+      "forbiddenPatterns": [
+        "formal proof of cooperation under coupling",
+        "uniqueness proof for the triadic structure"
+      ]
+    },
+    {
+      "id": "d5-strong-emergence-remains-candidate",
+      "path": "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
+      "requiredMarkers": [
+        "candidate_strong",
+        "not a declaration that D5 is irreducible"
+      ],
+      "forbiddenPatterns": [
+        "From below,\\s*`D5`\\s*is strongly emergent"
+      ]
+    },
+    {
+      "id": "money-born-rule-removable-analogy",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_288_Money_Is_the_Born_Rule.md",
+      "requiredMarkers": [
+        "This correspondence is removable",
+        "neither is a Born-rule identity or a product proof"
+      ],
+      "forbiddenPatterns": [
+        "only algebraically consistent projection from\\s*ℂ\\s*to\\s*ℝ⁺",
+        "Price is \\|z\\|² — the Born rule applied to value"
+      ]
+    },
+    {
+      "id": "topology-authorization-assessment-not-permission-fiction",
+      "path": "05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json",
+      "requiredMarkers": [
+        "authorized, unauthorized, nonconsequential, refused, or unavailable",
+        "D6 yields a reproducible positive capacity not already represented in D0-D5"
+      ],
+      "forbiddenPatterns": [
+        "commits one D4 attempt through means and accountable authorization"
+      ]
+    }
+  ],
   "negativeScan": {
     "scope": "all tracked text surfaces outside frozen trees and explicit evidence/test vessels",
     "excludedPrefixes": [
@@ -166,14 +238,15 @@
   "closureCriteria": [
     "all 26 source-owner paths exist and carry their registered repair marker",
     "the 345-path propagation set is exactly reproducible from its Git object",
-    "all fourteen mutation fixtures are rejected by owner-bound tests",
+    "all fourteen mutation fixtures and six derived-seam regressions are rejected by owner-bound tests",
     "the optional quantum correspondence can be removed without changing the operational projection",
     "no implementation commit touches a frozen prefix",
     "historical receipts and explicit evidence vessels remain available as provenance",
     "release and external calibration remain separately gated"
   ],
   "knownLimits": [
-    "The validator checks declared types, path custody, exact mutation regressions, and executable finite models; it cannot prove metaphysical truth.",
+    "Closure means only that the registered fracture contract reproduces; it is not semantic closure of every sentence in the corpus.",
+    "The validator checks declared types, path custody, exact mutation regressions, derived sentinels, and executable finite models; it cannot prove metaphysical truth.",
     "Receipt-126 closure does not constitute external empirical calibration.",
     "Legacy terms may remain inside quotations, compatibility notes, retractions, and historical receipts when their non-authority is explicit."
   ]
