@@ -24,12 +24,12 @@
       "normalization_steps": "none \u2014 the source is itself a seven-question schema authored in-corpus",
       "independence_status": "framework-derived",
       "rival_maps": [
-        "PHIL5_rival_pending",
-        "PHIL_domain_native_pending"
+        "PHIL5"
       ],
       "source_refs": [
         "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
-      ]
+      ],
+      "rival_note": "PHIL5 is BUILT, not pending. It carves four PHIL7 rows from one traditional branch (metaphysics) and contains one branch \u2014 aesthetics \u2014 that PHIL7 cannot express."
     },
     {
       "projection_id": "GEN7",
@@ -37,12 +37,27 @@
       "native_cardinality": 7,
       "normalization_steps": "several source traditions have native cardinalities other than 7; see per-cell notes",
       "independence_status": "partially dependent",
-      "rival_maps": [
-        "GEN5_rival_pending",
-        "GEN_domain_native_pending"
-      ],
+      "rival_maps": [],
       "source_refs": [
         "D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
+      ],
+      "rival_debt": {
+        "since": "2026-07-31",
+        "reason": "No counter-rival built. GEN7 crosswalks operator/varna/method/discipline/regime \u2014 several source traditions have native cardinalities other than 7, so a domain-native rival at its own cardinality is the honest test. Until one exists, GEN7's seven-ness is untested."
+      }
+    },
+    {
+      "projection_id": "PHIL5",
+      "description": "COUNTER-RIVAL to PHIL7. The traditional five branches of philosophy: metaphysics, epistemology, logic, ethics, aesthetics. Attested for centuries, independent of this corpus, natively five.",
+      "native_cardinality": 5,
+      "normalization_steps": "none \u2014 used at its own cardinality, deliberately. Normalizing it to seven would destroy the comparison it exists to make.",
+      "independence_status": "independent",
+      "rival_maps": [
+        "PHIL7"
+      ],
+      "role": "counter-rival",
+      "source_refs": [
+        "external: standard philosophical curriculum"
       ]
     }
   ],
@@ -143,6 +158,126 @@
         "D_SERIES_ROWS/00_GENERATIVE_TABLE.md:34"
       ],
       "audit_status": "disputed"
+    },
+    {
+      "cell_id": "PHIL5__B1__Metaphysics",
+      "projection_id": "PHIL5",
+      "row": "B1",
+      "column": "traditional branch",
+      "column_class": "anchor",
+      "domain_expression": "Metaphysics \u2014 What exists, and what is its ultimate nature?",
+      "fact_tier": "B",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "independent",
+      "known_biases": [
+        "WEIRD bias"
+      ],
+      "fit_reason": "PHIL7 splits this ONE traditional branch across THREE rows \u2014 L5 Cosmology, L6 Ontology, L7 Theology \u2014 and additionally hoists teleology out of it into L1. Four PHIL7 rows are carved from one PHIL5 branch.",
+      "mirror_check": "not applicable \u2014 PHIL5 makes no mirror claim, and its silence on mirrors is itself informative",
+      "kill_criterion": "PHIL7 earns the split only if the four carved rows are shown to move independently. If cosmology, ontology, theology and teleology always co-vary in worked cases, PHIL5 explains the same material with one row instead of four and PHIL7's cardinality is decoration.",
+      "downgrade_path": "if PHIL7 demonstrates independent movement of its carved rows, demote PHIL5 to historical reference",
+      "discarded_information": "Sub-branch structure within each traditional branch.",
+      "source_refs": [
+        "external: standard philosophical curriculum"
+      ],
+      "audit_status": "draft"
+    },
+    {
+      "cell_id": "PHIL5__B2__Epistemology",
+      "projection_id": "PHIL5",
+      "row": "B2",
+      "column": "traditional branch",
+      "column_class": "anchor",
+      "domain_expression": "Epistemology \u2014 What can be known, and how is knowledge justified?",
+      "fact_tier": "B",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "independent",
+      "known_biases": [
+        "WEIRD bias"
+      ],
+      "fit_reason": "Maps cleanly to PHIL7 L2. The one row where both partitions agree without remainder.",
+      "mirror_check": "not applicable \u2014 PHIL5 makes no mirror claim, and its silence on mirrors is itself informative",
+      "kill_criterion": "No kill condition \u2014 this correspondence is as close to free as the comparison gets, which is why it carries no evidential weight for the seven.",
+      "downgrade_path": "if PHIL7 demonstrates independent movement of its carved rows, demote PHIL5 to historical reference",
+      "discarded_information": "Sub-branch structure within each traditional branch.",
+      "source_refs": [
+        "external: standard philosophical curriculum"
+      ],
+      "audit_status": "draft"
+    },
+    {
+      "cell_id": "PHIL5__B3__Logic",
+      "projection_id": "PHIL5",
+      "row": "B3",
+      "column": "traditional branch",
+      "column_class": "anchor",
+      "domain_expression": "Logic \u2014 What follows from what?",
+      "fact_tier": "B",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "independent",
+      "known_biases": [
+        "WEIRD bias"
+      ],
+      "fit_reason": "Maps to PHIL7 L3 Methodology, imperfectly: logic is narrower than methodology, which also carries test design and route selection.",
+      "mirror_check": "not applicable \u2014 PHIL5 makes no mirror claim, and its silence on mirrors is itself informative",
+      "kill_criterion": "If methodology's non-logical content (test design, alternatives, routing) turns out to be doing the real work, then PHIL7 L3 is not a refinement of logic but a different category wearing its name.",
+      "downgrade_path": "if PHIL7 demonstrates independent movement of its carved rows, demote PHIL5 to historical reference",
+      "discarded_information": "Sub-branch structure within each traditional branch.",
+      "source_refs": [
+        "external: standard philosophical curriculum"
+      ],
+      "audit_status": "draft"
+    },
+    {
+      "cell_id": "PHIL5__B4__Ethics",
+      "projection_id": "PHIL5",
+      "row": "B4",
+      "column": "traditional branch",
+      "column_class": "anchor",
+      "domain_expression": "Ethics \u2014 What ought to be done, and what is good?",
+      "fact_tier": "B",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "independent",
+      "known_biases": [
+        "WEIRD bias"
+      ],
+      "fit_reason": "Maps to PHIL7 L4 Axiology. Close, though axiology conventionally covers value theory broadly, of which ethics is one part.",
+      "mirror_check": "not applicable \u2014 PHIL5 makes no mirror claim, and its silence on mirrors is itself informative",
+      "kill_criterion": "If PHIL7 L4 is used in practice only for ethical authorization, the broader axiology label is inflation.",
+      "downgrade_path": "if PHIL7 demonstrates independent movement of its carved rows, demote PHIL5 to historical reference",
+      "discarded_information": "Sub-branch structure within each traditional branch.",
+      "source_refs": [
+        "external: standard philosophical curriculum"
+      ],
+      "audit_status": "draft"
+    },
+    {
+      "cell_id": "PHIL5__B5__Aesthetics",
+      "projection_id": "PHIL5",
+      "row": "B5",
+      "column": "traditional branch",
+      "column_class": "anchor",
+      "domain_expression": "Aesthetics \u2014 What is beautiful, and how is form judged?",
+      "fact_tier": "B",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "independent",
+      "known_biases": [
+        "WEIRD bias"
+      ],
+      "fit_reason": "NO PHIL7 ROW. The seven-question schema has no aesthetics row at all \u2014 this is a term the finer partition cannot express.",
+      "mirror_check": "not applicable \u2014 PHIL5 makes no mirror claim, and its silence on mirrors is itself informative",
+      "kill_criterion": "This is PHIL5's strongest card and it does not need a kill condition: a partition claiming to cover the philosophical field while omitting one of its five traditional branches owes an explanation. Either aesthetics is absorbed somewhere unstated, or PHIL7 is not a covering partition.",
+      "downgrade_path": "if PHIL7 demonstrates independent movement of its carved rows, demote PHIL5 to historical reference",
+      "discarded_information": "Sub-branch structure within each traditional branch.",
+      "source_refs": [
+        "external: standard philosophical curriculum"
+      ],
+      "audit_status": "draft"
     }
   ]
 }

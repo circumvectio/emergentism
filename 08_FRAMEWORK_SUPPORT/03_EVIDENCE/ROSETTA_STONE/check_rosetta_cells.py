@@ -18,8 +18,10 @@ This validates rosetta_cells.json against the rules the protocol already states:
   5. Every pack declares native_cardinality and normalization_steps BEFORE any
      mapping — a five-part native system must remain five until someone says, in
      writing, what they did to it.
-  6. Every pack names rival maps. A seven-row projection with no five- or six-row
-     rival has not been tested against the cheapest explanation of its own fit.
+  6. Every pack names rival maps, and those rivals must EXIST as declared packs.
+     A placeholder like "PHIL5_rival_pending" satisfies the letter and defeats the
+     purpose; a projection is only tested when something at a different cardinality
+     has actually been built to compete with it.
 
 Exit 1 on any violation. Run:  python3 check_rosetta_cells.py
 """
@@ -39,8 +41,10 @@ CELL_REQUIRED = [
 ]
 PACK_REQUIRED = [
     "projection_id", "native_cardinality", "normalization_steps",
-    "independence_status", "rival_maps",
+    "independence_status",
 ]
+# `rival_maps` is deliberately NOT in PACK_REQUIRED: an empty list is a legitimate
+# state when paired with a dated `rival_debt`. It has its own check below.
 VALID_INDEPENDENCE = {
     "independent", "partially dependent", "framework-derived", "unknown",
 }
@@ -51,6 +55,7 @@ def main() -> int:
     order = data["tier_order"]
     rank = {t: i for i, t in enumerate(order)}  # lower index = stronger
     problems: list[str] = []
+    warnings: list[str] = []
 
     packs = {p["projection_id"]: p for p in data["packs"]}
 
@@ -64,11 +69,31 @@ def main() -> int:
                 f"pack {pid}: independence_status "
                 f"{pack.get('independence_status')!r} not one of {sorted(VALID_INDEPENDENCE)}"
             )
-        if not pack.get("rival_maps"):
+        if not pack.get("rival_maps") and not pack.get("rival_debt"):
             problems.append(
-                f"pack {pid}: no rival_maps. A projection untested against a "
-                "cheaper-cardinality rival has not earned its shape."
+                f"pack {pid}: no rival_maps and no rival_debt. A projection "
+                "untested against a cheaper-cardinality rival has not earned its "
+                "shape — either build one, or record the debt with a date."
             )
+
+    # Second pass: rivals must be real. Needs every pack parsed first.
+    for pack in data["packs"]:
+        pid = pack.get("projection_id", "<unnamed>")
+        if pack.get("role") == "counter-rival":
+            continue  # a rival is not required to have rivals of its own
+        for rival in pack.get("rival_maps") or []:
+            if rival not in packs:
+                problems.append(
+                    f"pack {pid}: rival {rival!r} is not a declared pack. A named "
+                    "but unbuilt rival is a placeholder — it satisfies the rule "
+                    "and defeats it. Build the rival or drop the claim."
+                )
+            elif packs[rival].get("native_cardinality") == pack.get("native_cardinality"):
+                problems.append(
+                    f"pack {pid}: rival {rival!r} has the SAME native_cardinality "
+                    f"({pack.get('native_cardinality')}). A same-shape rival tests "
+                    "nothing about whether the shape was earned."
+                )
 
     for cell in data["cells"]:
         cid = cell.get("cell_id", "<unnamed>")
@@ -111,6 +136,22 @@ def main() -> int:
                 f"{cid}: cell_id must be prefixed with its projection_id, so it "
                 "cannot be quoted without its namespace."
             )
+
+    # Debt is not a pass. It is a failure held open on purpose, printed every run
+    # so it cannot quietly become the normal state.
+    for pack in data["packs"]:
+        if pack.get("rival_debt"):
+            debt = pack["rival_debt"]
+            warnings.append(
+                f"pack {pack['projection_id']}: UNTESTED since {debt.get('since')} "
+                f"— {debt.get('reason')}"
+            )
+
+    if warnings:
+        print(f"\nrosetta cell ledger: {len(warnings)} open debt(s)\n")
+        for w in warnings:
+            print(f"  ! {w}")
+        print()
 
     if problems:
         print(f"\nrosetta cell ledger: FAIL — {len(problems)} problem(s)\n")
