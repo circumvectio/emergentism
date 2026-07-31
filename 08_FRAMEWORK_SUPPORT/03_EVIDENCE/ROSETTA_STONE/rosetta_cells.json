@@ -1,0 +1,148 @@
+{
+  "_about": [
+    "Machine-readable cell ledger for the Rosetta. Fields follow 10_CELL_AUDIT_SCHEMA_2026_04_25.md,",
+    "plus `projection_id` \u2014 the namespace fix. Bare row references like 'L7 is teleology' are ambiguous",
+    "and, as of 2026-07-31, INVERTED between packs: PHIL7 places teleology at L1 and GEN7 at L7;",
+    "PHIL7 places ontology at L6 and GEN7 at L5. Both are recorded below as data.",
+    "",
+    "This file is validated by check_rosetta_cells.py. It is a SEED, not the corpus: it holds the",
+    "cells needed to make the checker meaningful. Cells are added as they are audited, not in bulk."
+  ],
+  "tier_order": [
+    "A",
+    "B",
+    "S",
+    "I",
+    "C",
+    "D"
+  ],
+  "packs": [
+    {
+      "projection_id": "PHIL7",
+      "description": "The seven active philosophical questions.",
+      "native_cardinality": 7,
+      "normalization_steps": "none \u2014 the source is itself a seven-question schema authored in-corpus",
+      "independence_status": "framework-derived",
+      "rival_maps": [
+        "PHIL5_rival_pending",
+        "PHIL_domain_native_pending"
+      ],
+      "source_refs": [
+        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md"
+      ]
+    },
+    {
+      "projection_id": "GEN7",
+      "description": "Selected symbolic crosswalk: operator, varna, method, discipline, regime.",
+      "native_cardinality": 7,
+      "normalization_steps": "several source traditions have native cardinalities other than 7; see per-cell notes",
+      "independence_status": "partially dependent",
+      "rival_maps": [
+        "GEN5_rival_pending",
+        "GEN_domain_native_pending"
+      ],
+      "source_refs": [
+        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md"
+      ]
+    }
+  ],
+  "cells": [
+    {
+      "cell_id": "PHIL7__L1__Teleology",
+      "projection_id": "PHIL7",
+      "row": "L1",
+      "column": "philosophical question",
+      "column_class": "anchor",
+      "domain_expression": "Teleology \u2014 what end or purpose is being proposed?",
+      "fact_tier": "S",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "framework-derived",
+      "known_biases": [
+        "retrospective fit"
+      ],
+      "fit_reason": "Purpose is placed first because it bounds what the later questions are allowed to be about.",
+      "mirror_check": "unknown \u2014 L1/L7 mirror is a hypothesis, not an established relation",
+      "kill_criterion": "A worked case where purpose is only settleable AFTER the world-model and value questions, making L1 placement incoherent.",
+      "downgrade_path": "demote to interpretive, or split purpose into framing-purpose and terminal-purpose",
+      "discarded_information": "Teleology's classical entanglement with final causation is dropped.",
+      "source_refs": [
+        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md:46"
+      ],
+      "audit_status": "draft"
+    },
+    {
+      "cell_id": "GEN7__L7__Teleology",
+      "projection_id": "GEN7",
+      "row": "L7",
+      "column": "discipline",
+      "column_class": "interpretive domain",
+      "domain_expression": "transcendental / teleology / theocracy",
+      "fact_tier": "I",
+      "mapping_tier": "I",
+      "cell_tier": "I",
+      "independence_status": "framework-derived",
+      "known_biases": [
+        "Indo-European bias",
+        "retrospective fit"
+      ],
+      "fit_reason": "Ultimate horizon is placed last as the constitutional limit on everything below it.",
+      "mirror_check": "unknown",
+      "kill_criterion": "DIRECT COLLISION WITH PHIL7__L1__Teleology, verified 2026-07-31. One term, two packs, maximally inverted rows. Killed as a BARE claim: 'L7 is teleology' is true only inside GEN7 and exactly backwards inside PHIL7. Survives only namespaced.",
+      "downgrade_path": "namespace-only. Never cite without the projection_id prefix.",
+      "discarded_information": "Whether the two packs mean the same thing by 'teleology' at all is unresolved.",
+      "source_refs": [
+        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md:36"
+      ],
+      "audit_status": "disputed"
+    },
+    {
+      "cell_id": "PHIL7__L6__Ontology",
+      "projection_id": "PHIL7",
+      "row": "L6",
+      "column": "philosophical question",
+      "column_class": "anchor",
+      "domain_expression": "Ontology \u2014 what kinds of entities or relations are posited?",
+      "fact_tier": "S",
+      "mapping_tier": "S",
+      "cell_tier": "S",
+      "independence_status": "framework-derived",
+      "known_biases": [
+        "retrospective fit"
+      ],
+      "fit_reason": "Entity and boundary commitments are audited late, after a world model exists to populate.",
+      "mirror_check": "unknown",
+      "kill_criterion": "COLLIDES WITH GEN7__L5__Ontology, verified 2026-07-31. Same term, adjacent-inverted rows.",
+      "downgrade_path": "namespace-only",
+      "discarded_information": "The distinction between ontology-as-inventory and ontology-as-being is flattened.",
+      "source_refs": [
+        "00_THE_SEVEN_PHILOSOPHICAL_DISCIPLINES.md:51"
+      ],
+      "audit_status": "disputed"
+    },
+    {
+      "cell_id": "GEN7__L5__Ontology",
+      "projection_id": "GEN7",
+      "row": "L5",
+      "column": "discipline",
+      "column_class": "interpretive domain",
+      "domain_expression": "systematic / ontology / aristocracy",
+      "fact_tier": "I",
+      "mapping_tier": "I",
+      "cell_tier": "I",
+      "independence_status": "framework-derived",
+      "known_biases": [
+        "Indo-European bias"
+      ],
+      "fit_reason": "Architecture and schema placed at L5 as the design layer.",
+      "mirror_check": "unknown",
+      "kill_criterion": "Collides with PHIL7__L6__Ontology. Bare 'L5 is ontology' is unsafe.",
+      "downgrade_path": "namespace-only",
+      "discarded_information": "Systematic philosophy and ontology are not synonyms; the cell treats them as one.",
+      "source_refs": [
+        "D_SERIES_ROWS/00_GENERATIVE_TABLE.md:34"
+      ],
+      "audit_status": "disputed"
+    }
+  ]
+}
