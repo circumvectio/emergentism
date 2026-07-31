@@ -50,6 +50,18 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_record_counters.py"
   "09_TOOLS/01_SCRIPTS/check_review_bundle.py"
   "09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py"
+  # Wired in 2026-07-31. All four existed on disk and were invoked by NOTHING, so the
+  # properties they test were unguarded. check_q4_declarations.py is new and exists because
+  # build_pwa.py silently reverted a signed ruling while this gate reported PASS.
+  # check_trophic_rosetta_doctrine.py was failing on a real defect the moment it was run:
+  # a bare ambiguous eta in the constitution, now written in its action register.
+  # DELIBERATELY NOT WIRED: check_links.py has no failure path at all — it always exits 0,
+  # so adding it would be a check that cannot fail. check_no_secrets_staged.py inspects the
+  # STAGED diff, which is a pre-commit concern, not a tree concern; it belongs in the hook.
+  "09_TOOLS/01_SCRIPTS/check_q4_declarations.py"
+  "09_TOOLS/01_SCRIPTS/check_barred_claims.py"
+  "09_TOOLS/01_SCRIPTS/check_d6_equiv_d0.py"
+  "09_TOOLS/01_SCRIPTS/check_trophic_rosetta_doctrine.py"
   "09_TOOLS/01_SCRIPTS/build_receipt_disambiguation.py"
 )
 

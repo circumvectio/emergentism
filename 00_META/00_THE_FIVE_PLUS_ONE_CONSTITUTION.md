@@ -94,7 +94,7 @@ EMERGENT — standard constructions, none forced, each solving a named problem
   1 ℤ  (free on one generator; {+1,−1} IS KSC-21's oriented pair → D1)
   2 ℚ   3 ℝ (completion)   4 (ℝ₊,×)≅(ℝ,+) via log — Suda's s
   5 ℝ₊∪{0,∞}  the poles become points     6 Ĉ = ℂP¹  THE SPHERE
-  7 the corpus: D-registers · μ-contract · E1–E10 · Soul Loop · η=0 · Justice ·
+  7 the corpus: D-registers · μ-contract · E1–E10 · Soul Loop · η_move=0 · Justice ·
     Power-Max · Egregoreotype · G7 and the Rosetta
 ```
 

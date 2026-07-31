@@ -242,6 +242,17 @@ def build_register():
 
 
 def build_offline():
+    # THIS GENERATOR OWNS offline/index.html — it overwrites the file wholesale.
+    #
+    # 2026-07-31: it therefore also owns ruling Q4's INFRASTRUCTURE declaration, which was
+    # hand-added to the OUTPUT and silently deleted the next time this script ran. The gate
+    # did not catch the loss: it tripped only on the derived sw.js hash and the social card,
+    # both of which a developer fixes by running the rebuild the error message suggests —
+    # after which the gate goes green with a signed ruling reverted.
+    #
+    # An owned file may only be edited HERE. check_q4_declarations.py now asserts this
+    # block survives, so the property is tested rather than merely present.
+    # Receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/232_FIVE_RULINGS_EXECUTED_2026_07_31.md
     d = os.path.join(BASE, "offline")
     os.makedirs(d, exist_ok=True)
     with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as fh:
@@ -250,6 +261,8 @@ def build_offline():
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Offline — Emergentism</title>
+<meta name="robots" content="noindex, follow" />
+<meta name="emergentism:status" content="infrastructure; carries no doctrine; ruling Q4 2026-07-31" />
 <style>
   body{margin:0;background:#070A12;color:#F5F0E6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
        min-height:100vh;display:grid;place-items:center;text-align:center;padding:24px}
@@ -257,10 +270,20 @@ def build_offline():
   h1{font-size:1.6rem;font-weight:600;margin:0 0 10px}
   p{color:#9CA3AF;max-width:44ch;line-height:1.6}
   a{color:#F0C85A;text-decoration:none}
+  .q4decl{width:min(74ch,calc(100% - 40px));margin:0 auto 22px;padding:.72rem .95rem;font-size:.76rem;
+    line-height:1.6;color:#c9c3b4;background:rgba(138,133,119,.07);border:1px solid rgba(138,133,119,.4);
+    border-left-width:3px;border-radius:6px;text-align:left;
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+  .q4decl b{color:#a9a394;letter-spacing:.04em}
 </style>
 </head>
 <body>
 <div>
+  <aside class="q4decl q4infra" role="note" aria-label="publication status">
+    <b>INFRASTRUCTURE</b> &mdash; a service&#8209;worker fallback. It carries no doctrine and
+    holds no claim, and it must not acquire standing by being frozen. Ruling Q4, signed
+    2026&#8209;07&#8209;31.
+  </aside>
   <div class="dot"></div>
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
   <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
@@ -268,7 +291,7 @@ def build_offline():
 </body>
 </html>
 """)
-    print("offline/index.html written")
+    print("offline/index.html written (with the Q4 INFRASTRUCTURE declaration)")
 
 
 def public_pages():
