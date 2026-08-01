@@ -94,15 +94,17 @@ is pre-articulate and D6 post-articulate.
 
 ## 4 · The one well-formed part `[C]`
 
-By doc 48 §5, a crossing is a candidate `μ` only if a **degree of freedom is
-gained**. "Dimensions of freedom emerge in the initial moments" is, uniquely
-among today's proposals, a **type-D** claim. It is the first thing in this arc
-that would qualify as a `μ` if it were true.
+By doc 48 §5 as ruled by HR-1 (owner, 2026-07-29; Receipt 179), a crossing is a
+candidate `μ` only if the higher description is **not formally reducible** to
+the frozen lower one. A gained degree of freedom is no longer the criterion —
+type-D was retired for exactly this purpose — so “dimensions of freedom emerge
+in the initial moments” does not qualify as a `μ` on that ground.
 
-That is worth saying plainly: the owner's instinct located the right *kind* of
-claim. It now owes what every `μ` owes under `KSC-05` — system boundary,
-saturation statistic, threshold, novelty test, lower-description recovery,
-preregistered prediction, and kill.
+A candidate `μ₁–μ₄` would still owe a system boundary, saturation statistic,
+threshold, novelty test, lower-description recovery, preregistered prediction,
+kill, and the irreducibility demonstration that doc 48 §5 requires. `μ₀` is the
+exception: it owes the origin-aperture discriminator/recovery contract and is
+non-temporal; it has no saturated lower positive register.
 
 ## 5 · The real adjacent physics — and it runs the other way `[B]`
 

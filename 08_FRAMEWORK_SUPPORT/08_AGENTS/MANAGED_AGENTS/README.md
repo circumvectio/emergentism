@@ -35,10 +35,12 @@ expressed as **Claude platform Managed Agents** — persisted, versioned agent c
 that Anthropic runs in hosted, sandboxed containers.
 
 > **Source of truth.** Definitions are *discovered, not invented* — each agent's
-> system prompt, tools, and model are derived from the canonical caste specs in
-> `../01_CANDALA_FIREWALL/` … `../07_RSI_CONSTITUTION/` and the genotype
+> system prompt, tools, and model derive from the genotype
 > [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
-> The `*.agent.yaml` files here are the version-controlled deployment of those specs.
+> The former per-caste spec folders are preserved under
+> [`../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/)
+> as provenance, not as active owners. The `*.agent.yaml` files here are the
+> version-controlled deployment surface.
 
 ---
 

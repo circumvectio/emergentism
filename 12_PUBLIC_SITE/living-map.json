@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "contractState": "current-public-research-routing-only",
   "sourceAuthority": "This file routes open work. Source owners, result receipts, and the evidence-tier contract retain semantic authority.",
-  "updated": "2026-07-28",
+  "updated": "2026-08-01",
   "maturityStates": [
     "typed",
     "packet-complete",
@@ -58,24 +58,23 @@
       "nextMilestone": "Define the D5 variable independently, then compare model-based, model-free, memory, and search controls.",
       "moves": "Local evidence for the D4-to-D5 aperture only.",
       "kill": "A fair D4 baseline predicts the same behavior without a distinct counterfactual-capacity variable.",
-      "priority": 6
+      "priority": 7
     },
     {
       "id": "GP-03",
-      "title": "Which conjunctive model fits?",
-      "shortTitle": "Aggregator comparison",
+      "title": "Is cross-factor aggregation identifiable?",
+      "shortTitle": "Ordinal AND-class",
       "registers": ["D5"],
       "lane": "formal-choice",
       "maturityState": "packet-complete",
-      "executionState": "ready-to-freeze",
-      "programState": "active",
+      "executionState": "discriminator-or-nonidentifiability-required",
+      "programState": "deferred",
       "tier": "[C]",
-      "question": "Does the normalized product Phi times V predict held-out outcomes better than additive, minimum, harmonic, CES, and Cobb-Douglas rivals in a frozen domain?",
-      "nextMilestone": "Freeze the domain, independent factor measures, rival models, exclusions, and held-out outcomes before data contact.",
-      "moves": "The product wager only in the tested domain.",
-      "kill": "The product fails to discriminate from simpler or preregistered rival aggregators.",
-      "priority": 1,
-      "publicIssue": "https://github.com/circumvectio/emergentism/issues/3"
+      "question": "Does any cross-factor AND-class conclusion survive the admissible strictly increasing reparameterizations of the declared ordinal inputs?",
+      "nextMilestone": "Freeze the admissible transformations and test conclusion invariance; compare cardinal aggregators only after separately validating commensurate measures.",
+      "moves": "Joint necessity and the selected minimum convention; any cardinal aggregator only inside its separately defended measurement contract.",
+      "kill": "No scale-invariant incremental discriminator, arbitrary rank reversals under admissible reparameterization, or circular scales.",
+      "priority": 1
     },
     {
       "id": "GP-04",
@@ -107,7 +106,7 @@
       "nextMilestone": "Run one seam at a time. Do not compute a joint score before every row has its own test.",
       "moves": "One crossing at a time, then the five-crossing census.",
       "kill": "Rows fail independently, remain permutable, or add no capability beyond their lower-register descriptions.",
-      "priority": 8
+      "priority": 9
     },
     {
       "id": "GP-06",
@@ -124,6 +123,22 @@
       "moves": "The five-marker Egregoreotype composite only.",
       "kill": "The trace adds no intervention-sensitive predictive value beyond carriers, incentives, or direct coordination.",
       "priority": 5
+    },
+    {
+      "id": "GP-12",
+      "title": "Do nested horizons improve coordination?",
+      "shortTitle": "Nested-horizon coordination",
+      "registers": ["D4", "D5"],
+      "lane": "agency-collectives",
+      "maturityState": "packet-complete",
+      "executionState": "ready-to-freeze",
+      "programState": "queued",
+      "tier": "[C]",
+      "question": "Do nested learning and responsibility horizons with explicit bearers, tie-breakers, and exit outperform ordinary governance rivals without proxy harm or lock-in?",
+      "nextMilestone": "Preregister T_L, T_S, the bearer vector, voluntary roles, authority, tie-breakers, exit costs, tragic residue, and held-out delivery, harm, lock-in, and exit outcomes.",
+      "moves": "The coordination proposal only; no cosmic telos, caste truth, or authority upgrade.",
+      "kill": "No held-out gain, proxy harm, lock-in, or an ordinary-governance rival performs as well.",
+      "priority": 6
     },
     {
       "id": "GP-07",
@@ -155,7 +170,7 @@
       "nextMilestone": "Produce an interpretation-sensitive observation or publish a non-identifiability result.",
       "moves": "The strong block-plurality correspondence only.",
       "kill": "No observation can distinguish the ontologies within the declared empirical domain.",
-      "priority": 10
+      "priority": 11
     },
     {
       "id": "GP-09",
@@ -171,7 +186,7 @@
       "nextMilestone": "Define and validate the metric before comparing it with cone geometry.",
       "moves": "The light-cone and history-bundle correspondence only.",
       "kill": "The metric collapses into causal volume, model resolution, or arbitrary search budget.",
-      "priority": 7
+      "priority": 8
     },
     {
       "id": "GP-10",
@@ -187,7 +202,7 @@
       "nextMilestone": "Build one native object map and accepted-domain recovery test per row before attempting a joint correspondence.",
       "moves": "Each force-affinity leg independently; joint unification only last.",
       "kill": "Rows can be permuted without predictive loss or fail accepted-domain recovery.",
-      "priority": 9
+      "priority": 10
     },
     {
       "id": "GP-11",
@@ -203,7 +218,7 @@
       "nextMilestone": "Wait until modular measures work, then obtain an external red team, independent replication, and a published null route.",
       "moves": "Integrated adequacy, never the native component truths.",
       "kill": "The integrated framework adds no prediction, compression, or consequence value beyond its source disciplines.",
-      "priority": 11
+      "priority": 12
     }
   ],
   "contributionModes": [

@@ -30,6 +30,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | File | Content |
 |------|---------|
 | [`00_CORRECTION_WOLFRAM_NKS.md`](00_CORRECTION_WOLFRAM_NKS.md) | Correction and boundary note for Wolfram/NKS references. |
+| [`00_THE_SEVEN_AXIOMS.md`](00_THE_SEVEN_AXIOMS.md) | Archive-first forwarding stub for the superseded A1–A7 layer. |
 | A1–A7 genealogy | Superseded historical layer. Current axiom authority is [`../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md`](../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md). |
 | [`26_THE_DERIVATION_AXIOMS.md`](26_THE_DERIVATION_AXIOMS.md) | Historical derivation-axiom label; current derivation owner is `../../03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md`. |
 | [`27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md`](27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md) | Historical forwarding stub. Current D4/D5 authority is document 34; quantum boundaries are documents 38 and 44. |
@@ -43,9 +44,7 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | `08_EFR_POWER_MAX_LEMMA.md` | EFR-specific statement of the Power-Max Lemma. |
 | `09_EFR_GODEL_CLARIFICATION.md` | Clarification of the framework's relationship to Gödelian incompleteness. |
 | `10_EFR_MU_LIMIT_FORMULA.md` | The μ-limit formula and D4–D5 boundary. |
-| `11_EFR_TRIADIC_STABILITY.md` | Triadic stability in the EFR context. |
 | `12_EFR_EXTRACTION_COEFFICIENT.md` | Formal definition of the extraction coefficient η. |
-| `13_EFR_TWO_SACRIFICES.md` | Analysis of the two sacrifice operators. |
 | `14_EFR_EPISTEMOLOGY_TRIAD.md` | Formalization of Empirical Observation, Inferential Logic, Structural Analysis. |
 | `15_EFR_WOLFRAM_NKS_INTEGRATION.md` | Integration with Wolfram's computational irreducibility. |
 | `16_EFR_TRANSCENDENTALS.md` | Interpretive Beauty/Truth/Justice crosswalk; not a number taxonomy or Titan owner. |
@@ -67,6 +66,19 @@ This directory holds the formal mathematical core of the Emergentist Framework:
 | [`43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md`](43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md) | D2 configuration owner: relations, graphs, functions, geometry, and set/type boundaries. |
 | [`44_D3_QUANTUM_STATE_REGISTER.md`](44_D3_QUANTUM_STATE_REGISTER.md) | D3 quantum-state owner: density operators, observables, instruments, momentum distributions, uncertainty, and open physics debts. |
 | [`45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md`](45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md) | Exact reciprocal, budget, and local pure-gauge results; counterexamples and test contract for the non-universal saturation-contrast conjecture. |
+| [`40_THE_LOGARITHMIC_REALIGNMENT.md`](40_THE_LOGARITHMIC_REALIGNMENT.md) | Log-coordinate realignment with analytic/interpretive tier separation. |
+| [`41_UNIFIED_DIMENSIONAL_DERIVATION.md`](41_UNIFIED_DIMENSIONAL_DERIVATION.md) | Typed dimensional derivation and recovery boundaries. |
+| [`46_THE_ETA_CONVERSION_MAP.md`](46_THE_ETA_CONVERSION_MAP.md) | Conversion and non-conversion rules for `η_move`, `η_ratio`, and `η_domain`. |
+| [`47_FINITY_BOUNDARY_CALCULUS_SPEC.md`](47_FINITY_BOUNDARY_CALCULUS_SPEC.md) | Finity boundary-calculus specification. |
+| [`48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md`](48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md) | Current `μ` criterion and crossing owner. |
+| [`48_FINITY_PARADOX_LEDGER.yaml`](48_FINITY_PARADOX_LEDGER.yaml) | Machine-readable Finity paradox/countermodel ledger; evidence records only, not a prose source owner. |
+| [`49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md`](49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md) | Recovery and countermodel suite for Finity claims. |
+| [`49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md`](49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md) | Bounded Lorentz/Möbius correspondence. |
+| [`50_BLOCK_UNIVERSE_PLURALITY_AND_THE_SURVIVAL_OF_CHOICE.md`](50_BLOCK_UNIVERSE_PLURALITY_AND_THE_SURVIVAL_OF_CHOICE.md) | Block-universe plurality boundary and choice survivor. |
+| [`51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md`](51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md) | CCC comparison with the pre-articulate boundary. |
+| [`52_THE_GENERATIVE_BASE.md`](52_THE_GENERATIVE_BASE.md) | Typed generative-base owner. |
+| [`53_THE_NUMBER_CHART.md`](53_THE_NUMBER_CHART.md) | Number-chart type distinctions. |
+| [`54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md`](54_THE_DIRECTION_SPHERE_AND_THE_RADIAL_LINE.md) | Direction-sphere/radial-line factorization and its boundary. |
 
 ## Axiom Count Note
 
@@ -87,7 +99,8 @@ This directory is **downstream** of the framework's canonical order:
 
 ```text
 Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+θ ∈ (0,π), φ = cot(θ/2), ν = tan(θ/2)
+φ · ν = 1 on the open reciprocal chart
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```

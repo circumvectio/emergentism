@@ -31,16 +31,25 @@ rosetta:
 
 Let there be N agents indexed by i ∈ {1, 2, ..., N}, with N ≥ 2.
 
-Each agent i has a state on the 2-sphere S², parameterized by a pair (φᵢ, νᵢ) ∈ (0, ∞) × (0, ∞) subject to the constraint that the state lies on S². We identify S² with the Riemann sphere ℂP¹ via stereographic projection, where:
-- The **north pole** corresponds to φ → ∞, ν → 0 (pure coherence, no viability),
-- The **south pole** corresponds to φ → 0, ν → ∞ (pure viability, no coherence),
+Each agent i has a selected radial balance state on one positive-radial
+meridian of S², represented by the reciprocal pair
+`(φᵢ,νᵢ)∈(0,∞)×(0,∞)` with `φᵢνᵢ=1`. This pair omits azimuth and is not a
+full two-axis parameterization of S². Under the corpus's selected orientation:
+- The **south pole** `•` corresponds to `φ→∞,ν→0` (pure coherence, no viability),
+- The **north pole** `○` corresponds to `φ→0,ν→∞` (pure viability, no coherence),
 - The **equator** corresponds to φ = ν = 1 (perfect balance).
 
-The colatitude θᵢ ∈ [0, π] of agent i on S² is related to the viability by:
+The selected south-origin polar parameter `θᵢ∈[0,π]` is related to viability
+by:
 
 $$\theta_i = 2 \arctan(\nu_i)$$
 
-so that νᵢ = 0 gives θᵢ = 0 (north pole), νᵢ = 1 gives θᵢ = π/2 (equator), and νᵢ → ∞ gives θᵢ → π (south pole). The coherence satisfies φᵢ = 1/νᵢ (the S² identity: φᵢ · νᵢ = 1).
+so that `νᵢ=0` gives `θᵢ=0` (south/`•`), `νᵢ=1` gives
+`θᵢ=π/2` (equator), and `νᵢ→∞` gives `θᵢ→π` (north/`○`). This is not
+standard geographic colatitude terminology. Reversing the geographic labels
+would be an equivalent orientation, but it is not the selected convention;
+the analytic identities do not depend on the labels. The coherence satisfies
+`φᵢ=1/νᵢ`.
 
 > **Note (v2.1).** This is the identity cot(θ/2) · tan(θ/2) = 1, which holds trivially. It is an identity, not an independent constraint on the state space.
 
@@ -55,11 +64,15 @@ This is the standard formula for sin(2 arctan(x)) = 2x/(1 + x²).
 **Properties of B:**
 - Bᵢ ∈ [0, 1] for all νᵢ ∈ (0, ∞).
 - Bᵢ = 1 if and only if νᵢ = 1 (equivalently θᵢ = π/2, the equator).
-- Bᵢ → 0 as νᵢ → 0 (north pole) or νᵢ → ∞ (south pole).
+- Bᵢ → 0 as νᵢ → 0 (selected south pole) or νᵢ → ∞ (selected north pole).
 
 **Concavity analysis.** The balance function admits two parameterizations with distinct concavity properties:
 
-*(i) θ-parameterization (globally strictly concave).* As a function of colatitude, B(θ) = sin(θ) on (0, π). Since B''(θ) = −sin(θ) < 0 for all θ ∈ (0, π), the function is **strictly concave** on (0, π). This is the preferred parameterization for Jensen's inequality arguments.
+*(i) θ-parameterization (globally strictly concave).* As a function of the
+selected south-origin polar parameter, `B(θ)=sin(θ)` on `(0,π)`. Since
+`B''(θ)=−sin(θ)<0` throughout that interval, the function is **strictly
+concave**. This is the preferred parameterization for Jensen's inequality
+arguments.
 
 *(ii) ν-parameterization (strictly pseudo-concave).* As a function of viability, B(ν) = 2ν/(1 + ν²) on (0, ∞). Computing:
 

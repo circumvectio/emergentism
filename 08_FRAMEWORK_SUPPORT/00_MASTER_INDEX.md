@@ -26,17 +26,15 @@ rosetta:
 **Status:** Routing alias
 **Canonical path:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_MASTER_INDEX.md`
 
-The authoritative framework master index is:
+The former governance master index, hardening home, and dated reports were
+moved to the pure-boundary archive:
 
-- `01_GOVERNANCE/00_MASTER_INDEX.md`
+- [`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/01_GOVERNANCE/`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/01_GOVERNANCE/)
 
-For the active hardening home, use:
+The active accountability-concepts surface is:
 
-- `01_GOVERNANCE/01_HARDENING/README.md`
-
-For dated internal reports, briefs, and audit summaries, use:
-
-- `01_GOVERNANCE/02_REPORTS/2026-04-17/README.md`
+- [`01_GOVERNANCE/README.md`](01_GOVERNANCE/README.md)
+- [`01_GOVERNANCE/00_CORE_CONCEPTS.md`](01_GOVERNANCE/00_CORE_CONCEPTS.md)
 
 For compressed re-entry into the hardening wave, use:
 

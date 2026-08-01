@@ -38,6 +38,11 @@ support experiments.
 This folder currently includes sphere-spectrum and flat-control simulations, R*
 historical material, and proof-of-concept mathematical models.
 
+It also holds `formal_reap/`, a self-contained Lean 4 proof kernel for
+`10_SEED/02_THE_REAP.md`, with its own `verify.py` and `PROOF_LEDGER.md`.
+`formal_reap/verify.py` is not invoked by `gate.sh`; any verification claim must
+name a fresh run explicitly.
+
 ## Authority Rule
 
 Simulation output can support an argument, but it does not automatically upgrade

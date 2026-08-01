@@ -5,7 +5,7 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Interpretive"
   regime: "Kṣatriya"
-  register: "[A/S/I/C]"
+  register: "[S/I/C]"
   canonical_phrase: "Extraction law — local gain, visible bearer, conditional substrate collapse"
 status: "ACTIVE — conditional Kintsugi owner; overclaiming predecessor archived 2026-07-20"
 ---

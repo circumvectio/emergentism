@@ -2,7 +2,7 @@
 rosetta:
   primary_level: L5
   primary_column: Philosophy
-  operator: "Arjuna ⚔"
+  operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S] the register definitions and non-conversion theorems; [I] the worked readings; [D] staged until countersigned"
@@ -15,7 +15,7 @@ depends_on:
   - 30_OPERATIONAL_DEFINITIONS.md
   - 00_KSTAR_DISAMBIGUATION.md
   - 12_EFR_EXTRACTION_COEFFICIENT.md
-  - ../../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
+  - ../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
 ---
 
 # THE η CONVERSION MAP

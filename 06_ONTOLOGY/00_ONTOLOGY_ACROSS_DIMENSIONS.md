@@ -64,9 +64,14 @@ The scaffold names exactly five candidate positive-freedom crossings:
 ```
 
 This count is selected `[I]`, not forced by geometry or established as nature's
-complete census. Each crossing owes:
+complete census. `μ₀` is an origin aperture: `PositiveFreedom(D0)` is empty, so
+it owes no saturated lower positive register. It instead owes declared D0/D1
+types, a reproducible distinction discriminator, quotient/recovery to the D0
+singleton, reduction status, prediction, and kill.
 
-1. a system boundary and saturated lower register;
+Each of the saturation candidates `μ₁`–`μ₄` owes:
+
+1. a system boundary and frozen lower register;
 2. a measured saturation statistic and threshold;
 3. a newly discriminable effective freedom;
 4. recovery of lower-register behavior;

@@ -15,11 +15,11 @@ rosetta:
   operator: "Arjuna Δ"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[E/I]"
+  register: "[B/I/C]"
   canonical_phrase: "Social and Political Mappings"
 title: "Social & Political Mappings"
 status: "D-series domain mapping"
-evidence_tier: "[S] for stated Plato/Triple Lock source status; [I] for L-level mapping and Great Inversion diagnosis."
+evidence_tier: "[B] for attributed political-theory background; [I] for L-level mapping and Great Inversion diagnosis; [C] for unreceipted empirical Triple Lock claims."
 ---
 
 # ⊙ SOCIAL & POLITICAL MAPPINGS
@@ -27,21 +27,23 @@ evidence_tier: "[S] for stated Plato/Triple Lock source status; [I] for L-level 
 ## L-Level × Governance + The Great Inversion
 
 **Source:** Emergentism Rosetta Stone v10.0 · SOCIAL-POLITICAL sheet
-**Evidence Tier:** [I] for Plato's regime typology and political theory (established). [S] for Triple Lock mechanisms (measurable attention economy, observable education patterns). [I] for the L-level mapping to governance forms and Varṇa. [I] for the Great Inversion as framework diagnosis.
+**Evidence Tier:** `[B]` for attributed political-theory background; `[I]` for
+the L-level mapping and Great Inversion diagnosis; `[C]` for unreceipted
+empirical Triple Lock claims.
 
 ---
 
 ## REGIME TABLE
 
-| L | Plato's Regime | Varṇa | Governance | Economic Model | Modern Analogue | Rigor |
+| L | Plato's Regime | Varṇa | Governance | Economic Model | Modern Analogue | Mapping tier |
 |---|---------------|-------|-----------|---------------|----------------|-------|
-| L1 | Tyranny | Caṇḍāla | Force/Chaos | Extractive | Failed states, warlords | ✓ |
-| L2 | Democracy | Śūdra | People-rule | Mixed | Modern democracies | ✓ |
-| L3 | Oligarchy | Vaiśya | Wealth-rule | Market | Plutocracy, corporatism | ✓ |
-| L4 | Timocracy | Kṣatriya | Honour-rule | Command (strategic) | Military republics, Sparta | ✓ |
-| L5 | Aristocracy | Brāhmaṇa | Wisdom-rule | Information | Knowledge societies, Athens | ✓ |
-| L6 | Anarchy | Sādhu | Self-governance | Wisdom | Intentional communities | ⚠️ Small scale |
-| L7 | Theocracy | Ṛṣi | Divine mandate | Gift | Rare game-theoretic orders | ⚠️ Unstable |
+| L1 | Tyranny | Caṇḍāla | Force/Chaos | Extractive | Failed states, warlords | [I] |
+| L2 | Democracy | Śūdra | People-rule | Mixed | Modern democracies | [I] |
+| L3 | Oligarchy | Vaiśya | Wealth-rule | Market | Plutocracy, corporatism | [I] |
+| L4 | Timocracy | Kṣatriya | Honour-rule | Command (strategic) | Military republics, Sparta | [I] |
+| L5 | Aristocracy | Brāhmaṇa | Wisdom-rule | Information | Knowledge societies, Athens | [I] |
+| L6 | Anarchy | Sādhu | Self-governance | Wisdom | Intentional communities | [C] |
+| L7 | Theocracy | Ṛṣi | Divine mandate | Gift | Rare game-theoretic orders | [C] |
 
 ---
 
@@ -49,11 +51,11 @@ evidence_tier: "[S] for stated Plato/Triple Lock source status; [I] for L-level 
 
 **Pathology:** L3 (Merchant) captures L5 (Sovereign). Profit overrides Truth.
 
-| Lock | Mechanism | Effect | Scale |
+| Lock | Mechanism | Effect | Evidence status |
 |------|-----------|--------|-------|
-| Lock 1: EXTRACT | Attention economy consumes operator development | 7 hrs/day → 2,555 hrs/year consumed | ✓ Measurable |
-| Lock 2: PREVENT | Education trains ONLY Viṣṇu. Eight operators suppressed. | Full operator palette never developed | ✓ Observable |
-| Lock 3: COUNTERFEIT | Social media/substances simulate gods without developing them | Genuine development bypassed | ✓ Observable |
+| Lock 1: EXTRACT | Attention economy consumes operator development | 7 hrs/day → 2,555 hrs/year consumed | [C] unreceipted empirical claim |
+| Lock 2: PREVENT | Education trains ONLY Viṣṇu. Eight operators suppressed. | Full operator palette never developed | [C] untested extension |
+| Lock 3: COUNTERFEIT | Social media/substances simulate gods without developing them | Genuine development bypassed | [C] untested extension |
 
 **Restoration:** The Warrior (L4) re-asserts the boundary. Three keys: attention sovereignty + full-palette training + genuine practice.
 

@@ -34,6 +34,17 @@ future promotion requires a contained artifact, matching digest, and contained
 matching receipt rather than a status declaration alone. Comprehension and
 review never promote comparative efficacy.
 
+The current frozen external-review packet is
+[`REVIEW_BUNDLE_v2.md`](REVIEW_BUNDLE_v2.md), bound by
+[`REVIEW_BUNDLE_v2.json`](REVIEW_BUNDLE_v2.json). Version 2 supersedes version 1
+because the Lived Compass changed materially when the retired product ranking
+was replaced by the selected ordinal minimum convention. Version 1 remains
+unchanged as historical custody; no review of version 1 can cover version 2.
+The registry's `bundle_manifest` prerequisite remains `missing`: binding the
+manifest hash inside a registry that the same manifest hashes would be circular.
+That lifecycle-record design debt does not turn either bundle into an external
+review or make the review gate ready.
+
 The [internal Rosetta review receipt](../../../00_META/reviews/2026_07_28_FINITY_EVALUATION_ROSETTA_REVIEW.md)
 preserves the initial holds and final contract pass. It is not the independent
 review gate and supplies no world-facing evidence.

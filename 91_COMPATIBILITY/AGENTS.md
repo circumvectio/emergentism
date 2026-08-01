@@ -57,7 +57,7 @@ sources:
 ## Recursive Deployment Control
 
 - Every source-visible folder and file in this compatibility lane is covered by
-  [`03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv).
+  [`03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv).
 - Compatibility paths redirect historical references; they must not fork or
   revive doctrine.
 - Real repairs belong in active owner lanes before compatibility stubs are

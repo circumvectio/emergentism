@@ -64,6 +64,11 @@ now written in its action register as `η_move=0`.
 always exited 0, so wiring it would have added a check that cannot fail.
 **Superseded 2026-08-01:** it was rewritten to actually resolve every local Markdown link,
 verified to fail on a broken one, and wired in; the gate now runs 17 checkers, not 15.
+
+> **Additive correction, 2026-08-01.** The sentence above records the gate at
+> this handoff's boundary. Two later regression suites bring the current
+> `CHECKS` array to **18** entries; inspect `09_TOOLS/01_SCRIPTS/gate.sh` for the
+> live list.
 `check_no_secrets_staged.py` inspects the staged diff, which a tree gate cannot see; it is
 wired into `.git/hooks/pre-commit` instead. **The hook is local and untracked, so it does
 not survive a fresh clone.** Anyone setting up a new checkout must re-add it.

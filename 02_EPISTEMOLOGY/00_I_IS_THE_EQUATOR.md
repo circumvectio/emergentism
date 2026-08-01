@@ -23,7 +23,7 @@ rosetta:
 **Status:** Foundational synthesis — conjectural reframing of the Hard Problem through the Burri Sphere
 **Date:** 2026-03-23
 **Evidence Tier:** [S/I/C] Structural for the complex-number facts, interpretive/conjectural for systemic awareness and neuroscience mappings
-**Depends on:** The Transcendental Trinity, The Brain Is the Burri Sphere, The Genesis Simulation
+**Depends on:** The Transcendental Trinity, The Brain Is Not the Burri Sphere comparison boundary, The Genesis Simulation
 **See also:** Core Concepts, AUM on the Burri Sphere
 
 ---
@@ -404,12 +404,12 @@ Keep the tiers intact.
 
 ## See Also
 
-- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — canonical source-owner for the sphere S², the equator L4 (`φ = ν = 1`), and the complex-plane visualization caveat (`φ`, `ν` are real-positive; the complex plane is projective convenience) that bounds the `i`-reading here.
+- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — compatibility projection; the [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) owns S², the selected L4 equatorial representative (`φ = ν = 1`), and the real-positive chart boundary that bounds the `i`-reading here.
 - The Transcendental Trinity — computational breakthrough: 0, ∞, 1 as transcendentals
-- The Brain As the Burri Sphere — neuroscience-adjacent mapping: processing modes read as φ/ν
+- [The Brain Is Not the Burri Sphere](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — withdrawn-isomorphism boundary; optional neural comparisons remain `[I/C]`
 - The Genesis Simulation — D0→S²→D0 animated
 - AUM on the Burri Sphere — Vedantic convergence: four states of systemic awareness
-- Core Concepts — single source of truth for finite-node `P_node = Φ × V` and manifold `P∞ = φ · ν = 1`
+- [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — source owner for finite-node `P_node := min(Φ̂₄,V₄)` and manifold `P∞ = φ · ν = 1`; the historical product is retired as a ranking
 
 *I As the Equator | 2026-03-23 | `i` is mathematically real and symbolically equatorial. Consciousness, corpus-callosum, and present-moment readings remain interpretive/conjectural.*
 

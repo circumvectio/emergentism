@@ -205,7 +205,7 @@ On the reciprocal chart, balance `φ = ν = 1` uniquely maximizes `B = sin θ` a
 
 ### E8 · The Vow `[I]` posit · Model-A support scoped `[S]`/`[A]`-in-game
 
-Non-extraction: do not raise yourself by draining what sustains you — judged with the sustaining boundary in view. **Chosen**, not derived from geometry (W3 / CC-CORE-1). Specified coupled models can show self-undermining extraction under their assumptions; geometry alone cannot close is→ought. Model A: η=0 dominant-strategy Nash under stated game assumptions only (126 A4-1). Not a universal Nash law (P6).
+Non-extraction: do not raise yourself by draining what sustains you — judged with the sustaining boundary in view. **Chosen**, not derived from geometry (W3 / CC-CORE-1). Specified coupled models can show self-undermining extraction under their assumptions; geometry alone cannot close is→ought. Model A: `η_move=0` is dominant-strategy Nash under stated game assumptions only (126 A4-1). Not a universal Nash law (P6).
 
 **Forbids:** deriving ought from is; scoping the vow only to convenient parties while claiming the full ethic.
 

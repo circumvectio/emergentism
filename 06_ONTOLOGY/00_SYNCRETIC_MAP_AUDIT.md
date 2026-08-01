@@ -7,6 +7,8 @@ rosetta:
   regime: "Sādhu"
   register: "[S]"
   canonical_phrase: "K3 Tombstone — Superseded Sync Map Audit"
+status: "K3 TOMBSTONE — superseded 2026-05-30; provenance only, do not cite as live state"
+evidence_tier: "[B] provenance only"
 ---
 
 # K3 Tombstone — Superseded Audit

@@ -8,7 +8,7 @@ rosetta:
   register: "[I] synthesis; every claim carries the tier its owner assigned"
   canonical_phrase: "The boundaries are forced; the answers are ours"
 title: "The Foundation"
-status: "ACTIVE — single statement of the foundation; a projection of K-1 and K-5, never an eighth kernel surface"
+status: "CONFLICTED HOLD — projection only; KSC-04 controls and the Titan-arithmetic sections must not be cited"
 date: 2026-07-29
 owner: "Projection only. K-5 owns R0; K-1 owns the grammar; docs 45–47 own the formal results."
 evidence_tier: "[A] the presupposed boundary question and the theorems; [S] the selections and the architecture; [I] the readings"
@@ -23,13 +23,30 @@ parents:
 
 # The Foundation
 
+> **CONFLICTED HOLD — independent review, 2026-08-01.** `KSC-04` and the
+> primitive-type owner make `TitanFrame={0_T,1_T,∞_T}` opaque with
+> `ArithmeticSignature(TitanFrame)=∅`. This projection nevertheless prints
+> `B1–B4` and §§5–6 as if Titan seats were operands, then identifies that syntax
+> with the numeric reciprocal-chart identity. Those passages are retained as
+> conflict evidence, not as active premises or proof. **Do not cite this page
+> for Titan arithmetic.** The current owners are the Settled Canon Registry,
+> Canonical Formula Block, Primitive and Type Signatures, and the K-1/K-5
+> surfaces named below.
+>
+> The §4 glossary repair distinguishes finity, equator, `z=1`, and the selected
+> seat, but it does not cure the type conflict. Full repair requires a separately
+> typed algebra witness (`e,a,b` in a named group) with no equality or coercion
+> to TitanFrame values. Until that rewrite lands and is independently checked,
+> this synthesis remains held.
+
 > **The boundaries are forced. The answers are selected. The consequences are
 > theorems.**
 
-This is the single statement of what Emergentism stands on. It creates no
-doctrine and owns nothing: K-5 owns `R0`, K-1 owns the grammar, and docs 45–47
-own the formal results. It exists because the foundation was scattered across
-six surfaces and a foundation you cannot read in one place is not a foundation.
+This was assembled as a single statement of what Emergentism stands on. It
+creates no doctrine and owns nothing: K-5 owns `R0`, K-1 owns the grammar, and
+the current typed owners named in the hold banner govern the formal results.
+Where this projection conflicts with them, they control. It remains a held
+projection, not an eighth kernel surface.
 
 Established 2026-07-29, receipts 174–176. Routing: `KSC-28`.
 
@@ -261,7 +278,13 @@ The primary object is the **Riemann sphere** `Ĉ = ℂP¹`, with inversion
 |---|---|---|
 | `•` | south pole, `z = 0` | absence / the uncountable; a **point**, not a limit |
 | `○` | north pole, `z = ∞` | the totality / true infinity; a **point** |
-| `⊙` | the equator `\|z\|=1`, centred on `1` | finity — the bounded middle |
+| `⊙` | the positive inversion-fixed point `z=1` on the equator | the selected finite-unit-facing `1_T` seat |
+
+These are four distinct objects: **finity** is the open finite region between
+the two projective boundaries; the **equator** is its distinguished
+mid-latitude; `z=1` is the positive inversion-fixed point on that equator; and
+`⊙` is the selected Titan seat anchored to that finite-unit-facing point. The
+seat is not the entire equator or the entire finite interior.
 
 **The limit crossed, not approached `[A]`.** In `ℝ`, `∞` is not an element — it
 is a divergence, approachable and never reached. Compactification is exactly the

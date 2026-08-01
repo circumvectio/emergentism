@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import json
 import hashlib
+import html as html_lib
 import re
 import subprocess
 import sys
+import unicodedata
+from collections import Counter
 from pathlib import Path
 
 
@@ -26,6 +29,23 @@ FORBIDDEN = {
     "application authority leakage": re.compile(r"(?<![A-Za-z0-9])(?:Skyzai|VMOSK(?:-A|_A)?|DAVs?|DACs?|PRISM|Agentz(?:-runtime)?|K2)(?![A-Za-z0-9])", re.I),
     "legacy public Phi definition": re.compile(r"Φ\s+is\s+(?:a\s+)?present\s+(?:measurement|assessment)|present\s+measurement\s+of\s+D5", re.I),
     "legacy untyped node product": re.compile(r"P\s*=\s*Φ\s*(?:×|x|\*)\s*V"),
+    # This pattern is applied to normalized visible text, not raw HTML. Tags,
+    # entities, combining hats, and Unicode subscripts may not hide a retired
+    # product assignment from the public gate.
+    "retired node product assignment": re.compile(
+        r"\bP[\s_]*node\s*(?::=|=)\s*"
+        r"Φ(?:\s*\u0302)?(?:[\s_]*4)?\s*"
+        r"(?:(?:×|x|\*|·)\s*)?V(?:[\s_]*4)?\b",
+        re.I,
+    ),
+    "stale current 25-chapter reader": re.compile(
+        r"25\s*(?:-|\s)\s*chapters?(?:\s*\+\s*3\s*appendices)?|25-chapter\s+book",
+        re.I,
+    ),
+    "withheld Reciprocal routed as current book": re.compile(
+        r"<a\b[^>]*href=[\"'][^\"']*book/[^\"']*[\"'][^>]*>\s*The\s+Reciprocal\s*</a>",
+        re.I | re.S,
+    ),
     "derived ethic inflation": re.compile(r"ethic(?:s)?\s+(?:falls?|follow(?:s|ed)?)\s+(?:directly\s+)?(?:out\s+of|from)\s+(?:the\s+)?arithmetic", re.I),
     "exclusive ethic inflation": re.compile(r"the only lawful move", re.I),
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
@@ -82,7 +102,7 @@ TITAN_FENCE = (
 
 REQUIRED_PUBLIC_CONTRACTS = {
     "index.html": ("A worldview for finite beings", "Frame one decision"),
-    "plainly/index.html": ("possible power", "actual power", "chosen conjunctive model"),
+    "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
     "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
@@ -92,10 +112,63 @@ REQUIRED_SURFACE_CARDS = {
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
 }
+CURRENT_AND_CLASS_MARKERS = {
+    "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
+    "about/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
+    "read/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
+    "journey/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
+    "rosetta/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
+}
+NODE_PRODUCT_REJECT_FIXTURES = (
+    "P_node = Φ̂₄V₄",
+    "P_node := Φ̂₄ × V₄",
+    "P<sub>node</sub> = &Phi;&#770;<sub>4</sub>V<sub>4</sub>",
+    "P<sub>node</sub> <span>=</span> &Phi;&#770;<sub>4</sub> &times; V<sub>4</sub>",
+    "P_node = <span>Φ̂₄</span> &#215; V₄",
+    "Pₙₒdₑ = Φ̂₄ × V₄",
+)
+NODE_PRODUCT_BOUNDED_FIXTURES = (
+    "P_node := min(Φ̂₄, V₄)",
+    "Historical Φ̂₄V₄ names conjunction only; product ranking is retired.",
+)
+CURRENT_BOOK_MARKERS = {
+    "manifesto/index.html": (
+        "The One-Sitting Reader",
+        "readable now &mdash; 12 chapters",
+        "withheld, not current",
+        "not the current <code>/book/</code> source",
+    ),
+    "read/index.html": (
+        "Seven frozen generated-library records",
+        "current twelve-chapter One-Sitting Reader",
+    ),
+}
+
+
+def normalize_visible_text(text: str) -> str:
+    """Return semantic text so routine HTML cannot bypass claim guards."""
+    unescaped = html_lib.unescape(text)
+    without_tags = re.sub(r"<[^>]*>", " ", unescaped)
+    normalized = unicodedata.normalize("NFKC", without_tags)
+    return re.sub(r"\s+", " ", normalized).strip()
+
+
+def has_retired_node_product(text: str) -> bool:
+    return bool(
+        FORBIDDEN["retired node product assignment"].search(
+            normalize_visible_text(text)
+        )
+    )
 
 
 def main() -> int:
     errors: list[str] = []
+    for fixture in NODE_PRODUCT_REJECT_FIXTURES:
+        if not has_retired_node_product(fixture):
+            errors.append(f"retired node product negative-control escaped: {fixture}")
+    for fixture in NODE_PRODUCT_BOUNDED_FIXTURES:
+        if has_retired_node_product(fixture):
+            errors.append(f"retired node product rule overmatched bounded wording: {fixture}")
     data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     if data.get("schemaVersion") != 2:
         errors.append("public semantic parity schemaVersion must be 2")
@@ -291,6 +364,10 @@ def main() -> int:
                 continue
             if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
+            if name == "retired node product assignment":
+                if has_retired_node_product(text):
+                    errors.append(f"{rel}: {name}")
+                continue
             # The Titan identity is a theorem inside a declared structure, so an
             # occurrence is admissible when its fence PRECEDES it. Without this the
             # corpus could not state its own [A] result on any indexed page — it
@@ -316,6 +393,37 @@ def main() -> int:
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
+    for rel, markers in CURRENT_AND_CLASS_MARKERS.items():
+        if rel not in data.get("currentSurfaces", []):
+            errors.append(f"AND-class parity target is not a declared current surface: {rel}")
+            continue
+        text = (SITE / rel).read_text(encoding="utf-8", errors="replace").casefold()
+        for marker in markers:
+            if marker.casefold() not in text:
+                errors.append(f"{rel}: missing selected AND-class marker {marker!r}")
+    for rel, markers in CURRENT_BOOK_MARKERS.items():
+        if rel not in data.get("currentSurfaces", []):
+            errors.append(f"current-reader parity target is not a declared current surface: {rel}")
+            continue
+        text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
+        for marker in markers:
+            if marker not in text:
+                errors.append(f"{rel}: missing current-reader marker {marker!r}")
+
+    living = json.loads((SITE / "living-map.json").read_text(encoding="utf-8"))
+    questions = living.get("openQuestions", [])
+    maturity = Counter(row.get("maturityState") for row in questions if isinstance(row, dict))
+    lab = (SITE / "lab/index.html").read_text(encoding="utf-8", errors="replace")
+    maturity_marker = (
+        f'data-maturity-summary="packet-complete:{maturity["packet-complete"]};'
+        f'component-supported:{maturity["component-supported"]};deferred:{maturity["deferred"]}"'
+    )
+    if len(questions) != 12:
+        errors.append(f"living-map must expose exactly 12 GP questions, got {len(questions)}")
+    if maturity_marker not in lab:
+        errors.append("lab maturity summary does not match living-map distribution")
+    if "packet-complete [B]" in lab:
+        errors.append("lab promotes all GP sockets to packet-complete [B]")
     for rel, alternatives in REQUIRED_PUBLIC_CONTRACTS.items():
         path = SITE / rel
         if not path.is_file():
@@ -343,10 +451,22 @@ def main() -> int:
     if barred.returncode:
         errors.append(barred.stdout.strip() or barred.stderr.strip() or "public barred-claim gate failed")
     rag = json.loads((SITE / "book/rag_index.json").read_text(encoding="utf-8"))
+    rag_contract = rag.get("book_contract", {})
+    if (
+        rag_contract.get("work_id") != "BK-ONE-SITTING"
+        or rag_contract.get("ordered_source_paths") != ["00_THE_WELTANSCHAUUNG_ONE_SITTING.md"]
+        or rag_contract.get("source_lifecycles") != ["reader_synthesis"]
+        or rag_contract.get("withheld_provenance_included") is not False
+    ):
+        errors.append("RAG current-book lifecycle contract drift")
     frozen_prefixes = tuple(f"{root}:" for root in data["frozenLibraryRoots"])
     for passage in rag.get("passages", []):
         if str(passage.get("id", "")).startswith(frozen_prefixes):
             errors.append(f"frozen library passage remains in RAG: {passage['id']}")
+            break
+        passage_text = f"{passage.get('title', '')} {passage.get('text', '')}"
+        if has_retired_node_product(passage_text):
+            errors.append(f"retired node product assignment remains in RAG: {passage.get('id')}")
             break
     if errors:
         print("PUBLIC SEMANTIC PARITY: FAIL")

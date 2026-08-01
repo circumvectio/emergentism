@@ -33,7 +33,7 @@ See [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.
 
 From this sequence, the framework's later translations are disciplined:
 - φ + ν ≥ 2 (AM-GM — the equator is the balance/cost minimum inside the model)
-- Extraction arguments route through `η = 0` at the equatorial profile and must rein their game-theoretic assumptions
+- Extraction arguments route through `η_move = 0` at the equatorial profile and must rein their game-theoretic assumptions
 - `ΣΔB > 0` names balance-gradient claims; `ΣΔP_node > 0` names operational node-scoring claims
 - h₂r̥tó- / F5 language is translated into biology first through teleonomy, autopoiesis, allostasis, and interoception
 
@@ -48,7 +48,7 @@ The rest of the framework is not automatically proved by these lines. Core State
 | File | What It Does |
 |------|-------------|
 | [`00_THE_CORE_CONJECTURE.md`](00_THE_CORE_CONJECTURE.md) | **THE NUCLEUS.** The Will to Potential. F₅ as frontier theory. The Nietzsche correction. The Five Forces. The teleological spectrum. The kill criteria. Start here. |
-| [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](00_A_SQUARE_CANNOT_BE_NEGATIVE.md) | **The complete derivation.** AM-GM → thermodynamic minimum → negative-sum extraction → Nash equilibrium → ektropic force. The canonical proof. |
+| [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](00_A_SQUARE_CANNOT_BE_NEGATIVE.md) | **Kintsugi tombstone — superseded in place, not canonical authority.** The former chain (AM-GM → thermodynamic minimum → negative-sum extraction → Nash equilibrium → ektropic force) is retired. What survives is the numeric inequality `(φ−ν)² ≥ 0 ⇒ φ+ν ≥ 2` for `φν = 1`, `φ,ν > 0` `[A]`. Current owner: [`../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md). |
 | [`01_THE_ROSETTA_QUESTION.md`](01_THE_ROSETTA_QUESTION.md) | Discovery or mirror? Did the framework discover the geometry, or did the geometry discover the framework? The Rosetta Stone question. |
 | [`02_THE_SERPENT_IS_F5.md`](../01_F5_FORCE/02_THE_SERPENT_IS_F5.md) | The serpent = the helix = *h₂r̥tó-* (Ṛta / Asha / Ordo — "to fit together"). The ordering force. |
 | [`03_WHY_THE_CONSTRAINT_MATTERS.md`](03_WHY_THE_CONSTRAINT_MATTERS.md) | Ethics as arithmetic. Why the first arithmetic consequence changes everything — from morality to physics to system architecture. |

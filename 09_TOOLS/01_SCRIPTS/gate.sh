@@ -68,6 +68,8 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_trophic_rosetta_doctrine.py"
   "09_TOOLS/01_SCRIPTS/check_links.py"
   "09_TOOLS/01_SCRIPTS/build_receipt_disambiguation.py"
+  "09_TOOLS/01_SCRIPTS/test_build_magnum_opus_register.py"
+  "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R2_HARNESS/test_run_benchmark_freeze.py"
 )
 
 fail=0
@@ -88,14 +90,58 @@ for c in "${CHECKS[@]}"; do
   fi
 done
 
-# The compiler suite is slower; run it unless explicitly skipped.
-if [[ "${EMERGENTISM_SKIP_SLOW:-}" != "1" && -f "$ROOT/09_TOOLS/02_COMPILERS/test_dimension_first_canon.py" ]]; then
-  out=$(python3 "$ROOT/09_TOOLS/02_COMPILERS/test_dimension_first_canon.py" 2>&1); rc=$?
+# Registers are derived custody surfaces. A stale register, or a builder that
+# cannot run, fails closed rather than letting the inventory silently drift.
+REGISTER_BUILDER="09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py"
+if [[ ! -f "$ROOT/$REGISTER_BUILDER" ]]; then
+  printf '  \033[31mMISSING\033[0m  %s\n' "$REGISTER_BUILDER"
+  missing=$((missing + 1)); fail=1
+else
+  out=$(python3 "$ROOT/$REGISTER_BUILDER" --check 2>&1); rc=$?
   if [[ $rc -eq 0 ]]; then
-    printf '  \033[32mPASS\033[0m     dimension-first canon suite (%s)\n' "$(echo "$out" | grep -o 'Ran [0-9]* tests' || echo 'ok')"
+    printf '  \033[32mPASS\033[0m     %s\n' "$(echo "$out" | head -1)"
   else
-    printf '  \033[31mFAIL\033[0m     dimension-first canon suite\n'
-    echo "$out" | tail -20 | sed 's/^/           /'
+    printf '  \033[31mFAIL\033[0m     %s --check\n' "$REGISTER_BUILDER"
+    echo "$out" | sed 's/^/           /'
+    fail=1
+  fi
+fi
+
+# The compiler suite is slower; run every registered test unless explicitly
+# skipped. Running one green file is not evidence that the other files passed.
+if [[ "${EMERGENTISM_SKIP_SLOW:-}" != "1" ]]; then
+  for t in "$ROOT"/09_TOOLS/02_COMPILERS/test_*.py; do
+    [[ -f "$t" ]] || continue
+    out=$(python3 -B "$t" 2>&1); rc=$?
+    if [[ $rc -eq 0 ]]; then
+      printf '  \033[32mPASS\033[0m     %s (%s)\n' \
+        "$(basename "$t")" "$(echo "$out" | grep -o 'Ran [0-9]* tests' || echo 'ok')"
+    else
+      printf '  \033[31mFAIL\033[0m     %s\n' "$(basename "$t")"
+      echo "$out" | tail -20 | sed 's/^/           /'
+      fail=1
+    fi
+  done
+fi
+
+# Lean is a distinct evidence gate, not part of EMERGENTISM_SKIP_SLOW. It may be
+# skipped only by an explicit, visible acknowledgement.
+LEAN_DIR="$ROOT/09_TOOLS/05_FORMAL_VERIFICATION"
+if [[ "${EMERGENTISM_SKIP_LEAN:-}" == "1" ]]; then
+  printf '  \033[33mSKIP\033[0m     Lean formal verification (EMERGENTISM_SKIP_LEAN=1)\n'
+elif [[ ! -d "$LEAN_DIR" ]]; then
+  printf '  \033[31mMISSING\033[0m  09_TOOLS/05_FORMAL_VERIFICATION\n'
+  missing=$((missing + 1)); fail=1
+elif ! command -v lake >/dev/null 2>&1; then
+  printf '  \033[31mMISSING\033[0m  lake (set EMERGENTISM_SKIP_LEAN=1 only for an explicit skip)\n'
+  missing=$((missing + 1)); fail=1
+else
+  out=$(cd "$LEAN_DIR" && lake build 2>&1); rc=$?
+  if [[ $rc -eq 0 ]]; then
+    printf '  \033[32mPASS\033[0m     Lean formal verification (lake build)\n'
+  else
+    printf '  \033[31mFAIL\033[0m     Lean formal verification (lake build)\n'
+    echo "$out" | tail -40 | sed 's/^/           /'
     fail=1
   fi
 fi

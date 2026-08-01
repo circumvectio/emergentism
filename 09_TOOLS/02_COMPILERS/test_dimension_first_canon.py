@@ -13,6 +13,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 from urllib.parse import unquote
 
@@ -731,6 +732,34 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         spec.loader.exec_module(module)
         for token in ("02_SKYZAI", "PENDING_K2", "DAVs", "DACs"):
             self.assertIsNotNone(module.FORBIDDEN.search(token), token)
+
+    def test_purity_scans_every_forbidden_token_on_an_allowed_projection_line(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_all_matches", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(
+            module.CONTROL_PROJECTION_PATHS,
+            (Path("VMOSK_A.md"), Path("VMOSK_A_v2_2026_07_31.md")),
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                projection = module.ROOT / "VMOSK_A.md"
+                projection.write_text(
+                    "VMOSK_A.md is a non-semantic projection; K2 may not become authority.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(projection)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'K2'", errors[0])
 
     def test_source_negative_mutations_remain_absent(self):
         scoped = "\n".join(read(name) for name in PATHS if name != "topology")

@@ -1,7 +1,7 @@
 ---
 rosetta:
   primary_column: "Neuroscience"
-  register: "[E/I/C]"
+  register: "[B/I/C]"
   canonical_phrase: "15 — Neuroscience Column Cell Audit"
 ---
 

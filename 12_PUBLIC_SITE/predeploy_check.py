@@ -842,6 +842,7 @@ def check_publication_boundary():
     required_patterns = {
         "book-pwa/",
         "90_ARCHIVE/",
+        "_STAGING_COMPASS_RESTRUCTURE/",
         "docs/",
         "__pycache__/",
         "*.py",
@@ -863,6 +864,7 @@ def check_publication_boundary():
         "book-pwa/dev.db",
         "book-pwa/README.md",
         "docs/superpowers/README.md",
+        "_STAGING_COMPASS_RESTRUCTURE/00_COMPASS_RESTRUCTURE_RECEIPT.md",
         "AGENTS.md",
         "CLAUDE.md",
         "README.md",
@@ -873,6 +875,8 @@ def check_publication_boundary():
         "audit_live_domain_against_manifest.py",
         "withheld-routes.json",
         "deploy.sh",
+        "deploy_vercel.sh",
+        "deploy_target_contract.py",
         "__pycache__/predeploy_check.cpython-311.pyc",
     ]
     leaked = [rel for rel in risky_paths if not is_vercel_ignored(rel, patterns)]
@@ -881,7 +885,87 @@ def check_publication_boundary():
             error(f"publication boundary would not ignore: {rel}")
         return False
 
-    ok(".vercelignore excludes source/control/runtime files")
+    vercel_entry = read_file("deploy_vercel.sh")
+    for marker in (
+        ".vercel/project.json",
+        "deploy_target_contract.py",
+        "--vercel-link",
+        "predeploy_check.py",
+        "check_site_build_artifacts.py",
+        "exec vercel --prod --yes",
+    ):
+        if marker not in vercel_entry:
+            error(f"Vercel entrypoint lacks fail-closed marker: {marker}")
+            return False
+    target_contract = read_file("deploy_target_contract.py")
+    for marker in (
+        "EMERGENTISM_VERCEL_PROJECT_ID_PIN",
+        "EMERGENTISM_VERCEL_ORG_ID_PIN",
+        "hmac.compare_digest",
+        "--self-test",
+    ):
+        if marker not in target_contract:
+            error(f"Vercel target contract lacks explicit-pin marker: {marker}")
+            return False
+
+    fallback = read_file("deploy.sh")
+    if "--delete-excluded" in fallback:
+        error("fallback deploy still uses global excluded-file deletion")
+        return False
+    for marker in (
+        ".emergentism-static-target-v1",
+        "emergentism.org-static-target-v1",
+        "emergentism-static-v1)/releases/",
+        "mkdir '${RELEASE_PATH}'",
+        'rsync "${RSYNC_ARGS[@]}" --',
+        "--self-test",
+        "No live symlink, domain, or DNS target was changed",
+    ):
+        if marker not in fallback:
+            error(f"fallback deploy lacks versioned-target guard: {marker}")
+            return False
+
+    book_ai = read_file("assets/js/book-ai.js")
+    for marker in (
+        "key-free book",
+        'fetch("/book/rag_index.json")',
+        "textContent",
+        "no external endpoint",
+    ):
+        if marker not in book_ai:
+            error(f"current book retrieval lacks key-free marker: {marker}")
+            return False
+    for forbidden in (
+        "localStorage",
+        "x-api-key",
+        "anthropic-dangerous-direct-browser-access",
+        "headers.authorization",
+        "fetch(c.url",
+        'type: "password"',
+        "Endpoint URL",
+        '"Bearer "',
+    ):
+        if forbidden in book_ai:
+            error(f"current book public asset still exposes browser credential flow: {forbidden}")
+            return False
+
+    for command, label in (
+        (["bash", os.path.join(BASE_DIR, "deploy.sh"), "--self-test"], "fallback target contract"),
+        (["bash", os.path.join(BASE_DIR, "deploy_vercel.sh"), "--self-test"], "Vercel target contract"),
+    ):
+        process = subprocess.run(
+            command,
+            cwd=BASE_DIR,
+            text=True,
+            capture_output=True,
+            check=False,
+            env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1"},
+        )
+        if process.returncode:
+            error((process.stdout + process.stderr).strip() or f"{label} self-test failed")
+            return False
+
+    ok(".vercelignore, key-free retrieval, and fail-closed deployment entrypoints agree")
     return True
 
 def check_semantic_parity():

@@ -6,48 +6,75 @@ frozen bundle and that the invitation record every file hash, because "a materia
 amendment requires a new version and a new review; an older review cannot silently cover
 changed text."
 
-That rule is unenforceable by hand. This recomputes every sha256 in
-REVIEW_BUNDLE_v1.json and fails if any file has moved, so a drifted bundle cannot be
-sent — or worse, cannot be reviewed and then quietly amended afterwards.
+That rule is unenforceable by hand. This locates the highest numbered complete
+``REVIEW_BUNDLE_vN`` pair, checks that every earlier version still has both its
+document and manifest, and recomputes every sha256 in the current manifest. A
+drifted current bundle therefore cannot be sent — or worse, reviewed and then
+quietly amended afterwards. Earlier manifests remain historical custody and are
+not compared with the current tree after a declared version bump.
 
 Exits 0 if the bundle is intact, 1 otherwise. Absent bundle = PASS with a note: this
 gate is optional until someone decides to run it.
 """
 from __future__ import annotations
-import hashlib, json, sys
+import hashlib, json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DIR = ROOT / "03_METHODOLOGY" / "03_PREREGISTRATIONS" / "finity_practice"
-MANIFEST = DIR / "REVIEW_BUNDLE_v1.json"
-DOC = DIR / "REVIEW_BUNDLE_v1.md"
+VERSIONED_BUNDLE = re.compile(r"^REVIEW_BUNDLE_v(?P<version>[1-9][0-9]*)\.(?P<kind>json|md)$")
+
+
+def bundle_inventory() -> tuple[dict[int, Path], dict[int, Path]]:
+    manifests: dict[int, Path] = {}
+    documents: dict[int, Path] = {}
+    for path in DIR.glob("REVIEW_BUNDLE_v*.*"):
+        match = VERSIONED_BUNDLE.fullmatch(path.name)
+        if not match:
+            continue
+        version = int(match.group("version"))
+        target = manifests if match.group("kind") == "json" else documents
+        target[version] = path
+    return manifests, documents
 
 
 def main() -> int:
-    if not MANIFEST.exists():
-        # A missing manifest used to print PASS and exit 0, which meant the check
-        # disappeared together with the evidence it exists to guard: delete the frozen
-        # manifest and the gate goes green. Discriminate instead. If the bundle DOCUMENT
-        # is present, a bundle was frozen and its manifest must be too — its absence is a
-        # custody failure, not an empty state.
-        if DOC.exists():
-            print("REVIEW BUNDLE: FAIL")
-            print(f"- {DOC.name} is present but {MANIFEST.name} is missing.")
-            print("  A bundle was frozen and its hash manifest is gone, so nothing can be")
-            print("  verified. This fails CLOSED on purpose: passing here would report")
-            print("  custody the check no longer has.")
-            return 1
+    manifests, documents = bundle_inventory()
+    versions = sorted(set(manifests) | set(documents))
+    if not versions:
         print("REVIEW BUNDLE: PASS (no bundle document and no manifest — nothing frozen)")
         print("  scope: this is the genuinely-empty state. It does NOT mean a bundle was")
         print("  checked; it means none exists.")
         return 0
+
+    errors: list[str] = []
+    if versions != list(range(1, versions[-1] + 1)):
+        errors.append(f"bundle version history is not contiguous: {versions}")
+    for version in versions:
+        if version not in manifests:
+            errors.append(f"REVIEW_BUNDLE_v{version}.md has no matching JSON manifest")
+        if version not in documents:
+            errors.append(f"REVIEW_BUNDLE_v{version}.json has no matching Markdown document")
+    if errors:
+        print("REVIEW BUNDLE: FAIL")
+        for error in errors:
+            print(f"- {error}")
+        return 1
+
+    latest = versions[-1]
+    manifest = manifests[latest]
+    document = documents[latest]
     try:
-        man = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        man = json.loads(manifest.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError) as exc:
         print(f"REVIEW BUNDLE: FAIL\n- manifest unreadable: {exc}")
         return 1
 
-    errors, files = [], man.get("files", {})
+    if man.get("bundleVersion") != f"v{latest}":
+        errors.append(
+            f"{manifest.name}: bundleVersion must be v{latest}, got {man.get('bundleVersion')!r}"
+        )
+    files = man.get("files", {})
     if not files:
         errors.append("the manifest lists no files")
     for rel, want in files.items():
@@ -59,24 +86,26 @@ def main() -> int:
         if got != want:
             errors.append(
                 f"{rel}: hash moved.\n    frozen {want}\n    now    {got}\n"
-                "    This is a material amendment. Bump the bundle to v2 and treat any "
+                f"    This is a material amendment. Bump the bundle to v{latest + 1} and treat any "
                 "existing review as not covering it."
             )
 
     # the packet must keep saying it is not a result
-    if DOC.exists():
-        doc = DOC.read_text(encoding="utf-8")
-        for needed in ("not sent", "review received", "does not work here"):
-            if needed not in doc:
-                errors.append(f"REVIEW_BUNDLE_v1.md no longer states '{needed}' — the "
-                              "status table or its fence has been weakened")
+    doc = document.read_text(encoding="utf-8")
+    normalized_doc = " ".join(doc.split())
+    for needed in ("not sent", "review received", "does not work here"):
+        if needed not in normalized_doc:
+            errors.append(
+                f"{document.name} no longer states '{needed}' — the status table or its "
+                "fence has been weakened"
+            )
 
     if errors:
         print("REVIEW BUNDLE: FAIL")
         for e in errors:
             print(f"- {e}")
         return 1
-    print(f"REVIEW BUNDLE: PASS ({len(files)} files, all hashes match bundle "
+    print(f"REVIEW BUNDLE: PASS ({len(files)} files, {len(versions)} versions in custody; all hashes match bundle "
           f"{man.get('bundleVersion','?')} frozen {man.get('frozen','?')})")
     print("  scope: proves the packet has not drifted. It does NOT mean a reviewer was "
           "found, contacted, or replied.")

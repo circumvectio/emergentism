@@ -11,17 +11,23 @@ rosetta:
 
 # 10_SEED — L7 Ṛṣi Compressed Seed
 
-> The compressed kernel. See `../11_UPLINK/00_CORE/00_INDEX.md` for the master route.
+> The compressed kernel. See the [Uplink front door](../11_UPLINK/README.md) for the current route.
 
 ## Reader routes
 
-Two distinct reader surfaces coexist beneath the active kernel; neither may
+Three distinct reader surfaces coexist beneath the active kernel; none may
 override its source owners:
 
 | Surface | Recorded register | How to read it |
 |---|---|---|
-| [`00_THE_SEED.md`](00_THE_SEED.md) | `[I]` legacy compression | Historical compressed surface; current owners win. |
-| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[D]` reader projection | Optional cold-reader surface; not an eighth kernel owner. |
+| [`00_THE_SEED.md`](00_THE_SEED.md) | `[S]` typed compression; `[I/C]` where marked | Active compressed route; current source owners win. |
+| [`01_THE_SEED_LADDER/00_THE_SEED.md`](01_THE_SEED_LADDER/00_THE_SEED.md) | `[I]` active reader projection | Active `[I/S]` cold-reader surface; not an eighth kernel owner. |
+| [`01_THE_SEED_POETRY.md`](01_THE_SEED_POETRY.md) | `[I]` poetic compression | Active derivative; poetry is never proof and source owners win. |
+
+[`02_THE_REAP.md`](02_THE_REAP.md) is a forwarding stub only. Its former mixed
+harvest text remains preserved in
+[`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/10_SEED/02_THE_REAP.md`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/10_SEED/02_THE_REAP.md)
+and carries no semantic authority here.
 
 Candidate order: [front page](01_THE_SEED_LADDER/00_THE_SEED.md) →
 [D0](01_THE_SEED_LADDER/D0_THE_FLOOR.md) →
@@ -47,7 +53,8 @@ are non-mu interpretive edges.
 - the reader ladder remains subordinate to K-1…K-7 and cannot replace a source
   owner without a dated adoption receipt
 
-Zero-Sum Resolution Equation
+[Zero-Sum Resolution Equation](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md#verbatim-analytic-block)
+— canonical chart block; the Seed does not restate or own it.
 
 ---
 

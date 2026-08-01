@@ -1780,20 +1780,34 @@
     "title": "The Emergentist Weltanschauung — One-Sitting Edition",
     "href": "book/",
     "edition": "active-source-reader",
-    "route_contains": {
-      "note": "book/ publishes more than the claim-carded work named above. The claim-card provenance in this block covers that work only; the ported chapters are tiered [D] and are not claim-carded.",
-      "ported_book": "The Reciprocal, ported from the 2026-07-22 Public Edition",
-      "ported_chapter_files": 26,
-      "ported_source_dir": "13_BOOKS/the_reciprocal/",
-      "appendices": [
-        "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-        "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
-        "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+    "publication_scope": {
+      "ordered_sources": [
+        "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
       ],
-      "total_ordered_sources": 29
+      "source_count": 1,
+      "claim_card_count": 26,
+      "covered_chapters": [
+        "actuality",
+        "boundaries",
+        "difference",
+        "exit",
+        "five-apertures",
+        "good",
+        "human-condition",
+        "possibility",
+        "probability",
+        "relation",
+        "social-loop",
+        "soul-loop"
+      ],
+      "withheld_provenance": {
+        "path": "13_BOOKS/the_reciprocal/",
+        "included_in_book": false,
+        "included_in_rag": false
+      }
     },
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "source_revision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+    "source_revision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
     "lifecycle": "reader_synthesis",
     "public_disposition": "bounded_current",
     "claim_card_ids": [
@@ -1825,11 +1839,11 @@
       "OS01-26"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "6b33ba25a9db358394fa77716061464ed40b324aa4052196f817e835357d2703",
+    "claim_card_register_sha256": "88e147a5343d9bf9a886a6a344a8898d99300d482b1ad509a271f59524ffc4c5",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "20e486a1c4a23c8d4159cce2abaafc9917a64151f2357df68a92253b4c1f7f49",
+    "output_sha256": "55b1b31700d2faf3bd00101cd83acbff10151940912854232364c77e1f06434d",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }

@@ -24,7 +24,9 @@ rosetta:
 
 ## 1. The Constraint Surface
 
-φν = 1 with φ, ν > 0 defines a curve in the (φ, ν) plane: a rectangular hyperbola in the first quadrant.
+`φν=1` with `φ,ν>0` defines one positive reciprocal curve. It may be
+drawn as a rectangular hyperbola in a `(φ,ν)` pair plot, but `φ` and `ν`
+are not independent state-space axes.
 
 Parametrize by θ ∈ (0, π):
 
@@ -36,8 +38,11 @@ Parametrize by θ ∈ (0, π):
 Check: φν = cot(θ/2)·tan(θ/2) = 1 ✓
 
 The equator is at θ = π/2: φ = ν = 1.
-The north pole is θ → 0: φ → ∞, ν → 0.
-The south pole is θ → π: φ → 0, ν → ∞.
+Under the selected south-origin orientation, the south pole `•` is
+`θ→0: φ→∞,ν→0`, and the north pole `○` is
+`θ→π: φ→0,ν→∞`. Reversing the geographic words would be an equivalent
+orientation, but it is not the selected corpus convention; none of the
+identities below depends on those labels.
 
 ---
 
@@ -104,7 +109,9 @@ This is an identity. It follows from φν = 1:
 
 Since φν = 1: **(φ − ν)² = (φ + ν)² − 4** ✓
 
-**This means f₃ is not independent of f₂.** Given the constraint φν = 1, knowing the sum determines the difference. There is really only ONE degree of freedom on S²: the colatitude θ.
+**This means f₃ is not independent of f₂.** Given the constraint φν = 1,
+knowing the sum determines the difference. On the selected meridian there is
+only one degree of freedom: the south-origin polar parameter `θ`.
 
 ---
 
@@ -155,8 +162,8 @@ The potential V(θ) = 2/sin θ − 2 has four qualitatively different regimes:
 | Regime | θ Range | V Behavior | Physical Character |
 |---|---|---|---|
 | **Near-equatorial** | θ ∈ (π/4, 3π/4) | V ≈ δ² (harmonic) | Oscillation. Small perturbations bounce back. Bound states. |
-| **Mid-latitude north** | θ ∈ (ε, π/4) | V ~ 1/θ (Coulomb-like) | Long-range attraction toward equator. Slow fall. |
-| **Mid-latitude south** | θ ∈ (3π/4, π−ε) | V ~ 1/(π−θ) (Coulomb-like) | Same, from the other side. Mirror of north. |
+| **Mid-latitude south** | θ ∈ (ε, π/4) | V ~ 1/θ (Coulomb-like) | Long-range attraction toward equator. Slow rise from the selected south boundary. |
+| **Mid-latitude north** | θ ∈ (3π/4, π−ε) | V ~ 1/(π−θ) (Coulomb-like) | Same, from the other side. Mirror of south. |
 | **Polar** | θ → 0 or π | V → ∞ (singular) | Confinement. The potential wall prevents reaching the pole. |
 
 **Four regimes. Not imposed. Emergent from V(θ) = 2/sin θ − 2.**

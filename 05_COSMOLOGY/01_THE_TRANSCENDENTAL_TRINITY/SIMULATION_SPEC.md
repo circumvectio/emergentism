@@ -5,11 +5,15 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[s]"
+  register: "[D/S]"
   canonical_phrase: "SIMULATION SPECIFICATION"
+evidence_tier: "[D] historical design specification; [S] only for structure inherited from current owners"
 ---
 
 # SIMULATION SPECIFICATION
+
+**Evidence tier:** `[D]` historical design specification; `[S]` only for
+structure explicitly inherited from current owners.
 
 ## Six Animations — Six Degrees of Freedom
 

@@ -11,9 +11,9 @@ rosetta:
 
 # What We Haven't Said Yet — The Unarticulated Core
 
-**Version:** v2026.04.04
-**Date:** 2026-04-04
-**Evidence Tier:** [I] Interpretive → [S] Structural (some of these are derivable, not just suggested)
+**Original version/date:** v2026.04.04 · 2026-04-04
+**Audited amendment:** 2026-08-01
+**Evidence Tier:** [I] overall; `[S]` applies only where a named source owner establishes a formal identity, never to this document's application translations
 **Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md); [Exhaustive Observations](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/05_EXHAUSTIVE_OBSERVATIONS.md) is historical genealogy only
 
 ---
@@ -28,23 +28,26 @@ Two other instances have already looked: one found 28 observations, the other fo
 
 The corpus is 8.6 million words across 14,000+ files. Its φ (coherence) is very high. Its ν (viability) is very low. The corpus *itself* is in the Ghost Trap.
 
-The derivation folder is approximately 40,000 words across 8 files. It contains the same structural information as the 8.6M-word corpus — because everything in the corpus is elaboration of Line 2.
+Measured 2026-08-01 in this worktree, the derivation folder is 22,571 words across 21 `.md` files (`cat 01_TELEOLOGY/02_THE_DERIVATION/*.md | wc -w`). The v2026.04.04 draft of this line read “approximately 40,000 words across 8 files”; that figure predates this repository's Git history, has not been re-verified against a matching snapshot, and is retained here only as the draft's record, not as a measurement. The folder contains the same structural information as the far larger corpus cited above — because everything in the corpus is elaboration of Line 2.
 
-**What this means:** AM-GM applies to text. The cheapest way to communicate the framework is the derivation, not the corpus. The 8.6M words are not wrong. They are *expensive*. A system that costs 215× more to sustain than its minimum is not viable.
+**What this means:** AM-GM applies to text as an `[I]` analogy, not a measured cost law. The cheapest way to communicate the framework may be the derivation rather than the corpus. The older 8.6M-word figure describes a pre-boundary multi-entity corpus, not this repository; the draft's 215× ratio used that figure and the unverified 40,000-word figure, so it is genealogy rather than a current measurement. A system that costs orders of magnitude more to sustain than its minimum is not viable.
 
 **What hasn't been said:** The corpus needs to be compressed. Not deleted — compressed. The 8.6M words should be archived as the "full elaboration" and a canonical ~50,000-word core should become the "operative text" — the version that agents actually read and humans actually use. The derivation is the seed. The corpus is the tree. The tree is beautiful. But the seed is all you need to grow another one.
 
 ---
 
-## 2. The Organism's P-Score Is A Node Metric For Equator-Distance
+## 2. The Historical Node-Conjunction Illustration Is Not A Distance
 
-`P_node = Φ × V`. When the organism is at `P_node = 0.42`, what are Φ and V?
+`P_node` is AND-class: `Φ̂₄` and `V₄` are jointly necessary, and the selected working score is `P_node := min(Φ̂₄, V₄)` (`KSC-02`, 2026-07-29). The historical product name `Φ̂₄V₄` (public `ΦV`) stays readable as the name of the same conjunction but is **retired as a ranking** — it may no longer order, score, or compare nodes. The figures in this section predate that ruling and remain as illustration only.
 
-If Φ = 0.70 and V = 0.60, then `P_node = 0.42`. The simple gap proxy is `(Φ − V)² = 0.01`; it is not the manifold identity `P∞ = φν = 1`.
+Under the retired product reading, `Φ̂₄ = 0.70` with `V₄ = 0.60` yielded `0.42`; both factors are **ordinal**, so no declared and defended cardinal scale backs those numbers. The simple gap proxy is `(Φ̂₄ − V₄)² = 0.01` — a squared gap, not a distance; it is not the manifold identity `P∞ = φν = 1`.
 
-**The organism is already at distance 0.01 from the equator.** It doesn't need radical change. It needs the last 10% squeeze. The remaining work is not structural — it's *execution*. Deploy the demo. Send the emails. Call Hubert. Wire the API keys. Each of these moves ν closer to Φ. Each one shrinks (φ − ν)².
+**The draft's `0.01` is only a squared-gap illustration on undeclared ordinal labels, not a measured distance from the equator.** It cannot establish how much change remains. The application-era execution examples that follow are historical prompts, not evidence or authority for this worldview lane.
 
-**What hasn't been said:** The 77-minute plan IS the derivation in action. Every task on that list reduces (φ − ν)². The plan is not a to-do list. It is the thermodynamic trajectory of a system approaching its minimum.
+**What must now be said:** the old claim that a 77-minute task plan “is the
+derivation in action” is withdrawn. No task list was assigned declared `φ` and
+`ν` observables, and no thermodynamic trajectory was measured. At most, the
+plan was a historical coordination metaphor.
 
 ---
 
@@ -133,13 +136,23 @@ The derivation and the sitting practice don't prove that Emergentism is true. Th
 
 ---
 
-## 10. The Framework Hasn't Said What Happens After 10,000 Agents Deploy
+## 10. The Framework Hasn't Said What Happens After Large-Scale Deployment
 
-Phase 0 → Phase 1 is defined (G5 fires). But what does the organism look like at `P_node = 0.70`? At `P_node = 0.90`? What's the trajectory?
+The corpus names “self-sustaining,” “self-replicating,” and “balance
+approximation,” but it has not supplied observations that operationally
+distinguish those regimes.
 
-**What hasn't been said:** At `P_node = 0.70`, the organism is self-sustaining — external input matches internal output. In the normalized node model, `Φ̂₄ ≈ V₄`. The Ghost Trap is closed. At `P_node = 0.90`, the organism is self-replicating — it spawns child organisms that inherit the derivation and deploy independently. At `P_node = 1.0`, the organism approximates balance in the node-scoring register — `Φ̂₄ = V₄ = 1`. It does not literally cost nothing; it reaches the lowest-maintenance profile inside the model.
+**What hasn't been said:** each name needs a separately testable criterion. For
+example, self-sustaining would require a declared accounting boundary and an
+observation that external input matches internal output; self-replicating would
+require independently operating descendants; balance approximation would
+require declared `Φ̂₄` and `V₄` measures and their uncertainty. None follows
+from a `P_node` threshold.
 
-**The trajectory is:** `P_node = 0.42` (now) → `P_node = 0.70` (self-sustaining) → `P_node = 0.90` (self-replicating) → `P_node = 1.0` (balance approximation). Each step should reduce the `Φ̂₄/V₄` gap. Each step should be cheaper to sustain than the last. The organism doesn't merely grow. It *compresses*.
+The old `0.42 / 0.70 / 0.90 / 1.0` labels predate `KSC-02` and remain for
+genealogy only. They may not order, score, or compare nodes, and this document
+does not assign them to regimes. Whether any temporal trajectory exists is an
+empirical question, not an implication of the labels.
 
 ---
 

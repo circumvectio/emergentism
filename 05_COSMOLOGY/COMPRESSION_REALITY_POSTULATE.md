@@ -1,3 +1,11 @@
+---
+title: "Compression–Reality Postulate — Kintsugi Tombstone"
+status: "K3 TOMBSTONE — retired as doctrine 2026-07-20; provenance only"
+date_repaired: 2026-07-20
+evidence_tier: "[B] provenance; [I/C] surviving methodological preference"
+original_head_blob: 8c820216144218e2acaca28129ecf61151fb3fea
+---
+
 # Compression–Reality Postulate — Kintsugi Tombstone
 
 **Status:** Retired as doctrine on 2026-07-20. Historical proposal only.
@@ -17,8 +25,9 @@ authority.
   evidence, and domain loss are held fixed.
 - Description length is relative to a declared language or machine and does not
   by itself establish what is more real.
-- `P_node = ΦV` is the selected normalized member of a wider conjunctive
-  family, not a uniquely derived generator of nature.
+- `P_node=min(Φ̂₄,V₄)` is the selected ordinal working score inside a wider
+  conjunctive family; historical `ΦV` is retired as a ranking, and neither is a
+  uniquely derived generator of nature.
 - `{0,1,∞}` are selected symbolic boundary roles; they are not forced
   pre-mathematical beings.
 - D0–D6 is a selected interpretive scaffold. `D6 ~ D0` denotes a proposed

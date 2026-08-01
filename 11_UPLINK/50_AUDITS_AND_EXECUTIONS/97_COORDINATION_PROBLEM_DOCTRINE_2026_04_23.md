@@ -3,7 +3,7 @@ packet: COORDINATION-PROBLEM-DOCTRINE
 title: The Coordination Problem in Foundation Terms — Canonical Aggregation Laws
 status: DOCTRINE MEMO — governing principle for all multi-model coordination
 authority: Derived from 00_EXECUTION_GUARDRAILS, 00_THE_WELTANSCHAUUNG, 00_THE_MASTER_ROSETTA, 06_AGENTS
-evidence_tier: [I] — interpretive framing over structural kernel
+evidence_tier: "[I] — interpretive framing over structural kernel"
 cross_reference:
   - 01_EMERGENTISM/00_EXECUTION_GUARDRAILS.md (Three-Stage Process/K2/η=0/Grace Exit)
   - 01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md (worldview-lens)

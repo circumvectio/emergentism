@@ -19,7 +19,7 @@ rosetta:
 
 **Status:** Canonical strategic note
 **Date:** 2026-04-15
-**Evidence Tier:** Meta-interpretive
+**Evidence Tier:** `[I]` Meta-interpretive; `[C]` for the cross-domain recurrence claim
 **Depends on:** [00_D6_AS_APOPHATIC_CLOSURE.md](../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md), [00_D_LEVEL_STUDIES.md](../00_META/00_D_LEVEL_STUDIES.md)
 
 ---

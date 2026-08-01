@@ -34,7 +34,7 @@ supersedes_blob: "0c1b1252e82ea5cb7f8b7c741a7820a626cfdf17"
 
 ## Abstract
 
-We formalize the claim that the number system carries two complementary charts: an **additive** chart centred on `0` (the additive identity, with order and translation) and a **multiplicative** chart centred on `1`, the unique positive fixed point of the reciprocal `I(x) = 1/x` with `I'(1) = −1`. On the Riemann sphere `S²` with half-angle coordinates `φ = cot(θ/2)`, `ν = tan(θ/2)` (so `φ · ν = 1`), we show that under the identification `x = ν` the reciprocal `x ↦ 1/x` is **exactly** the colatitude reflection `θ ↦ π − θ` across the equatorial plane (longitude fixed) — which swaps the two poles and fixes the equatorial circle `θ = π/2`, where `φ = ν = 1`. Adopting the reciprocal-invariant energy `E(x) = (log x)²` (Suda, 2025), we prove the exact bridge to the sphere's balance functional `B = sin θ` (here `[I]` *balance* is the interpretive reading of the coordinate `sin θ`),
+We formalize the claim that the number system carries two complementary charts: an **additive** chart centred on `0` (the additive identity, with order and translation) and a **multiplicative** chart centred on `1`, the unique positive fixed point of the reciprocal `I(x) = 1/x` with `I'(1) = −1`. On the Riemann sphere `S²` with half-angle coordinates `φ = cot(θ/2)`, `ν = tan(θ/2)` (so `φ · ν = 1`), we show that under the identification `x = ν` the reciprocal `x ↦ 1/x` is **exactly** the south-origin polar reflection `θ ↦ π − θ` across the equatorial plane (longitude fixed) — which swaps the two poles and fixes the equatorial circle `θ = π/2`, where `φ = ν = 1`. Adopting the reciprocal-invariant energy `E(x) = (log x)²` (Suda, 2025), we prove the exact bridge to the sphere's balance functional `B = sin θ` (here `[I]` *balance* is the interpretive reading of the coordinate `sin θ`),
 
 > `B = sin θ = 2x/(1 + x²) = sech(log x) = sech √E`   (per hemisphere, `s = log x` of fixed sign),
 
@@ -113,14 +113,18 @@ so `I` becomes the **half-twist** `u ↦ −u` about `u = 0`. This is the *same*
 
 ## 6. The bridge to `S²`: the unit is the equator `[A]`
 
-This is the paper's centre. On `S²` with colatitude `θ ∈ (0, π)` and longitude `λ` the framework sets `φ = cot(θ/2)`, `ν = tan(θ/2)`, so `φ · ν = 1` identically (a coordinate definition; tiered `[S]`/definition). The bare trigonometric identities below are `[A]`. Take the identification
+This is the paper's centre. On `S²` with selected south-origin polar
+parameter `θ∈(0,π)` and longitude `λ`, the framework sets
+`φ=cot(θ/2)`, `ν=tan(θ/2)`, so `φ·ν=1` identically (a coordinate
+definition; tiered `[S]`/definition). The bare trigonometric identities below
+are `[A]`. Take the identification
 
 > `x = ν = tan(θ/2)`  ⟹  `φ = 1/x = cot(θ/2)`  (forced, since `φ · ν = 1`).
 
 Then each clause of the multiplicative chart becomes a clause about the sphere:
 
-- **Inversion = the `φ ↔ ν` swap = reflection across the equatorial plane.** Since `ν(π − θ) = tan(π/2 − θ/2) = cot(θ/2) = 1/ν(θ)`, the map `x ↦ 1/x` *is* the colatitude map `θ ↦ π − θ` (longitude `λ` fixed): it swaps `φ ↔ ν` and exchanges the two poles (`θ = 0 ↔ θ = π`). **Caution on "antipodal."** This map is the *reflection across the equatorial plane*, not the antipodal map of `S²`: the true antipodal map is `(θ, λ) ↦ (π − θ, λ + π)`. They agree only up to the longitudinal half-turn `λ ↦ λ + π`. Because the present claim is `[A]`, we name the map exactly: it is the **equatorial reflection** `θ ↦ π − θ`.
-- **The unit = the equator.** `x = ν = 1 ⟺ θ = π/2 ⟺ φ = ν = 1`. On the one-parameter colatitude reduction `θ ∈ (0, π)` (equivalently the reduced reciprocal dynamics on `ℝ₊`, parametrized by `ν` alone) the equator `θ = π/2` is the **unique** fixed point of `θ ↦ π − θ`. On the *full* sphere the fixed-point set of the equatorial reflection is the **entire equatorial circle** `θ = π/2` (all longitudes); the single-point statement holds only after the colatitude reduction, and we state it only there.
+- **Inversion = the `φ ↔ ν` swap = reflection across the equatorial plane.** Since `ν(π − θ) = tan(π/2 − θ/2) = cot(θ/2) = 1/ν(θ)`, the map `x ↦ 1/x` *is* the south-origin polar map `θ ↦ π − θ` (longitude `λ` fixed): it swaps `φ ↔ ν` and exchanges the two poles (`θ = 0 ↔ θ = π`). **Caution on "antipodal."** This map is the *reflection across the equatorial plane*, not the antipodal map of `S²`: the true antipodal map is `(θ, λ) ↦ (π − θ, λ + π)`. They agree only up to the longitudinal half-turn `λ ↦ λ + π`. Because the present claim is `[A]`, we name the map exactly: it is the **equatorial reflection** `θ ↦ π − θ`.
+- **The unit = the equator.** `x = ν = 1 ⟺ θ = π/2 ⟺ φ = ν = 1`. On the one-parameter south-origin polar reduction `θ ∈ (0, π)` (equivalently the reduced reciprocal dynamics on `ℝ₊`, parametrized by `ν` alone) the equator `θ = π/2` is the **unique** fixed point of `θ ↦ π − θ`. On the *full* sphere the fixed-point set of the equatorial reflection is the **entire equatorial circle** `θ = π/2` (all longitudes); the single-point statement holds only after the polar reduction, and we state it only there.
 - **The poles = the poles.** `x → 0` and `x → ∞` are the two poles of `S²` (`θ = 0`: `ν = 0, φ = ∞`; `θ = π`: `ν = ∞, φ = 0`) — exactly the points where `φ` or `ν` is undefined.
 
 Now the balance functional. With `B = sin θ` and the half-angle identity `sin θ = 2 tan(θ/2)/(1 + tan²(θ/2)) = 2x/(1 + x²)`, write `x = eˢ` (so `s = log x`):
@@ -133,9 +137,16 @@ Since `E = s² = (log x)²`, we obtain the exact identity
 
 The hemisphere restriction is essential and recurs wherever `B = sech √E` appears: `B` is *even* in `s` (it depends only on `cosh s`), whereas the substitution `s = +√E` takes the positive root, so over the full sphere the bridge `B = sech √E` is two-to-one — the two hemispheres `s > 0` (`x > 1`) and `s < 0` (`x < 1`) carry the same `B` and the same `E`. The signed datum that distinguishes them is exactly Suda's twist index `τ = sign(s)` of §4. Within one hemisphere the bridge is a bijection.
 
-**Theorem (the bridge).** Under `x = ν = tan(θ/2)`: (i) Suda's reciprocal `I` is the equatorial reflection `θ ↦ π − θ` (longitude fixed; *not* the antipodal map); (ii) on the colatitude reduction its unique fixed point `x = 1` is the equator `φ = ν = 1`, and on the full sphere its fixed locus is the equatorial circle; (iii) Suda's energy and the framework's balance satisfy `B = sech √E` per hemisphere, so `E = 0 ⟺ B = 1` at the equator, `E → +∞ ⟺ B → 0` at either pole, and near the equator `1 − B = ½E + O(E²)` (next term `−5E²/24`), i.e. `E ≈ 2(1 − B)` — Suda's energy is, to leading order, *twice the balance deficit*. `[A]`
+**Theorem (the bridge).** Under `x = ν = tan(θ/2)`: (i) Suda's reciprocal `I` is the equatorial reflection `θ ↦ π − θ` (longitude fixed; *not* the antipodal map); (ii) on the south-origin polar reduction its unique fixed point `x = 1` is the equator `φ = ν = 1`, and on the full sphere its fixed locus is the equatorial circle; (iii) Suda's energy and the framework's balance satisfy `B = sech √E` per hemisphere, so `E = 0 ⟺ B = 1` at the equator, `E → +∞ ⟺ B → 0` at either pole, and near the equator `1 − B = ½E + O(E²)` (next term `−5E²/24`), i.e. `E ≈ 2(1 − B)` — Suda's energy is, to leading order, *twice the balance deficit*. `[A]`
 
-*Proof.* (i)–(ii) are the displayed half-angle identities; the fixed-locus distinction (single point on the reduction vs. circle on `S²`) is immediate from the definition of the colatitude map. (iii): the chain above gives `B = sech s`; substituting `s² = E` with `s` of fixed sign gives `B = sech √E` per hemisphere; the Taylor expansion `sech s = 1 − s²/2 + 5s⁴/24 − O(s⁶)` gives `1 − B = ½s² − 5s⁴/24 + O(s⁶) = ½E − 5E²/24 + O(E³)`, whence `1 − B = ½E + O(E²)`. ∎
+*Proof.* (i)–(ii) are the displayed half-angle identities; the fixed-locus
+distinction (single point on the reduction versus circle on `S²`) is
+immediate from the definition of the polar reflection. (iii): the chain above
+gives `B = sech s`; substituting `s² = E` with `s` of fixed sign gives
+`B = sech √E` per hemisphere; the Taylor expansion
+`sech s = 1 − s²/2 + 5s⁴/24 − O(s⁶)` gives
+`1 − B = ½s² − 5s⁴/24 + O(s⁶) = ½E − 5E²/24 + O(E³)`, whence
+`1 − B = ½E + O(E²)`. ∎
 
 **Numerical check.** The script below verifies `φ·ν = 1` and `B = sech(log ν)` to the precision printed, and exhibits `B(90°) = 1`, `E(90°) = 0`. (Reproduced by the referee; we include it so the check does not rely on a reader's re-derivation.)
 
@@ -229,13 +240,27 @@ The unit is not "just another number." On the multiplicative face it is the fixe
 
 *Main panel — the sphere (drumhead view).*
 - Draw `S²` as a lightly shaded sphere, viewed slightly above the equator so the equatorial circle reads as a horizontal ellipse across the middle (a taut "drumhead").
-- **North pole** (top, `θ = 0`): label `0` — annotate `ν = 0, φ = ∞`. **South pole** (bottom, `θ = π`): label `∞` — annotate `ν = ∞, φ = 0`.
+- **Selected south boundary** (top, `θ=0`, `•`): label `0` — annotate
+  `ν=0,φ=∞`. **Selected north boundary** (bottom, `θ=π`, `○`): label
+  `∞` — annotate `ν=∞,φ=0`. Here `θ` is the corpus's south-origin polar
+  parameter, not standard geographic colatitude. Flipping the geographic words
+  would be analytically equivalent, but it is not the selected convention.
 - **Equatorial circle** (`θ = π/2`): draw it as a bold ring and label it `1` (finity). Annotate `φ = ν = 1`. Mark it as the **fixed locus** of the reflection — a thin caption: "fixed circle of `θ ↦ π − θ` (all longitudes)."
-- Place a representative meridian (fixed longitude `λ`) as a bold arc from north pole to south pole. On it mark a sample point `P` at colatitude `θ` (northern hemisphere, `x = ν < 1`) and its image `P′` at colatitude `π − θ` on the **same meridian** (southern hemisphere, `x > 1`). Connect `P ↔ P′` with a curved double-headed arrow labelled `I : x ↦ 1/x = θ ↦ π−θ`. Crucially, `P` and `P′` share the same longitude — the arrow stays in one meridian plane and reflects across the equator. **Do not** send `P` to the geometric antipode.
+- Place a representative meridian (fixed longitude `λ`) as a bold arc from
+  the selected south boundary to the selected north boundary. Mark a sample
+  point `P` at south-origin angle `θ` (southward side, `x=ν<1`) and its
+  image `P′` at `π−θ` on the **same meridian** (northward side, `x>1`).
+  Connect `P↔P′` with a curved double-headed arrow labelled
+  `I:x↦1/x=θ↦π−θ`. `P` and `P′` share the same longitude: the arrow stays
+  in one meridian plane and reflects across the equator. **Do not** send `P`
+  to the geometric antipode.
 - Inset caption near that arrow (small, boxed): "Equatorial reflection — longitude fixed. NOT the antipodal map `(θ,λ)↦(π−θ, λ+π)`." Optionally show the true antipode `P″` as a faint hollow dot a half-turn around in longitude, with a light "×" through the `P→P″` connection to mark it as the map we are *not* using.
 
 *Coordinate ribbon (left margin, vertical).*
-- A vertical bracket spanning pole-to-pole labelled with the additive coordinate `s = log x`, running from `−∞` (north pole, `x→0`) through `0` (equator, `x=1`) to `+∞` (south pole, `x→∞`). This shows the log chart of §3 in register with the sphere: the equator is `s = 0`.
+- A vertical bracket spanning boundary-to-boundary labelled with the additive
+  coordinate `s=log x`, running from `−∞` (selected south, `x→0`) through
+  `0` (equator, `x=1`) to `+∞` (selected north, `x→∞`). This shows the
+  log chart of §3 in register with the sphere: the equator is `s=0`.
 
 *Lower-left inset — the projective egg (Suda's egg of infinity).*
 - The Cayley image: a horizontal capsule/egg shape; left rim labelled `−1` (`0⁺`), centre dot labelled `0` (`x = 1`), right rim labelled `+1` (`∞`). A small curved arrow `u ↦ −u` showing the half-twist about the centre. Caption: "bounded chart `u = tanh(s/2)`; same involution."

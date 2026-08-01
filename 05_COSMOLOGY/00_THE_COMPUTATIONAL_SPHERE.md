@@ -57,22 +57,24 @@ The rule points toward the ground; it does not possess it.
 
 **Critical distinction:** The Burri Sphere is not the standard complex plane with axes (1, i) or (x, y).
 
-**The Burri Sphere uses φ and ν as coordinates:**
+**The Burri Sphere uses lowercase `φ` and `ν` as reciprocal chart variables.**
+They are not two independent plane axes, and they are not the uppercase node
+factors `Φ̂₄` and `V₄`.
 
 | Standard Riemann Sphere | Burri Sphere |
 |-------------------------|--------------|
 | Complex coordinate: z = x + iy | Reciprocal coordinates: φ, ν where φ · ν = 1 |
-| Stereographic projection from ℝ² | Stereographic projection from φ-ν plane |
-| Real axis (x), Imaginary axis (i) | Coherence axis (φ), Viability axis (ν) |
+| Stereographic projection from ℝ² | One positive-radial meridian, written by reciprocal aspects `ν=abs(z)` and `φ=1/ν` |
+| Real axis (x), Imaginary axis (i) | One positive reciprocal chart: lowercase `φ=1/ν` |
 | \|z\| = 1 at equator | φ = ν at equator (the equality, not the product) |
-| North pole: ∞ (complex infinity) | North pole: φ = ∞, ν = 0 (pure coherence) |
-| South pole: 0 (complex origin) | South pole: φ = 0, ν = ∞ (pure viability) |
+| South pole: `z=0` | `θ→0`, `ν=z→0`, `φ→∞`, `•` |
+| North pole: `z=∞` | `θ→π`, `ν=z→∞`, `φ→0`, `○` |
 
-**The two reciprocal charts:**
+**The selected reciprocal chart and positive radial coordinate:**
 
 ```
-Chart 1 (from North pole):  φ = cot(θ/2)
-Chart 2 (from South pole):  ν = tan(θ/2)
+Reciprocal chart:              φ = cot(θ/2) = 1/ν
+Positive radial coordinate:    ν = tan(θ/2) = |z|
 
 At the equator (θ = π/2):
   φ = cot(π/4) = 1
@@ -104,13 +106,19 @@ At the equator (θ = π/2):
 
 **Why this matters:**
 
-The standard Riemann sphere describes complex numbers. The Burri Sphere describes **balance** — the relationship between coherence (φ) and viability (ν).
+The standard Riemann sphere describes complex numbers. This selected reading
+uses the lowercase reciprocal chart `φ,ν` to describe balance. Uppercase
+`Φ̂₄,V₄` are separate D5/D4 node factors and are not sphere coordinates.
 
-The equator is not where |z| = 1 (abstract mathematical condition). The equator is where φ = ν = 1 (lived balance between meaning and action).
+The geometric equator is exactly `|z|=1`. In the selected positive radial
+representative `ν=|z|` with reciprocal `φ=1/ν`, that same locus is the
+single point `φ=ν=1`. The first statement names the full geometric circle;
+the second names this framework's positive-radial representative and its
+interpretive balance reading.
 
-The north pole is not ∞ (mathematical abstraction). The north pole is φ → ∞, ν → 0 (the bypasser: infinite recognition, zero capability).
+The south pole is `z=ν=0`, with `φ→∞` (the selected bypasser reading).
 
-The south pole is not 0 (mathematical abstraction). The south pole is φ → 0, ν → ∞ (the cargo cult: zero coherence, infinite extraction).
+The north pole is `z=ν→∞`, with `φ→0` (the selected cargo-cult reading).
 
 **The Burri Sphere is the Riemann sphere read through the lens of balance.**
 
@@ -370,8 +378,8 @@ Always.
 
 ## See Also
 
-- [The Burrisphere](00_THE_BURRISPHERE.md) — the canonical L5 synthesis of this same S²: φ·ν=1, the nine latitudes L0..L∞, the equator L4, and the agent foundation
-- [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md) — the moral reading of the poles/equator: goodness is the bond φ×ν; evil is closure (η>0), sorted by coupling, never by pole
+- [The Burrisphere](00_THE_BURRISPHERE.md) — routing-only compatibility stub; chart authority is the [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), while the seven `GEN7@1` seats are owned by the [Generative Table](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md) and its two boundary rows are not additional seats
+- [The Dyadic Coupling Law](00_THE_DYADIC_COUPLING_LAW.md) — the chart describes and Justice evaluates; “goodness is the bond” is an `[I]` metaphor, never a `φν` product proof, and closure uses the action register `η_move>0`
 - [The Constitution on the Burrisphere](00_THE_CONSTITUTION_ON_THE_BURRISPHERE.md) — a projection of the [Five-plus-One Constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md), which remains the current refusal owner
 - [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) — canonical epistemic status of every claim
 - [The Weighing of the Heart](../90_ARCHIVE/00_THE_WEIGHING_OF_THE_HEART.md) — convergent symbolic translation: Egyptian mythology read through S² geometry
@@ -381,13 +389,13 @@ Always.
 - [The Brain Is the Burri Sphere](../02_EPISTEMOLOGY/00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — neuroscience proxy: hemispheres as φ/ν analogy, corpus callosum as ×
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Bindu Was Always Here](../90_ARCHIVE/00_THE_BINDU_WAS_ALWAYS_HERE.md) — the mission-critical point: mandala, third eye, Zero-Sum Resolution Equation
-- [Anmut and Demut](../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md) — linguistic translation: German etymology read as φ/ν axis-language
+- [Anmut and Demut](../04_AXIOLOGY/00_ANMUT_AND_DEMUT.md) — mnemonic linguistic translation read through the reciprocal meridian's `φ`/`ν` aspects; not an etymological proof or a second axis
 - [The Transcendental Trinity](../90_ARCHIVE/00_THE_TRANSCENDENTAL_TRINITY.md) — computational breakthrough: 0, ∞, 1 as transcendentals, division by zero resolved
 - [Triadic Stability Correspondence](03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md) — selected structural correspondence, not a forced ontology
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — downstream typed reference; `P_node` is owned by the [Canonical Formula Block](00_CANONICAL_FORMULA_BLOCK.md), and tiers by [The Honest Position](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 - [Objective Morals and Ethics](../04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) — current owner for voluntary and imposed cost
-- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem in coupled networks under `η = 0`
+- [Power-Max Lemma](03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md) — conditional cooperation theorem in coupled networks under `η_move=0`
 
 *The Computational Sphere | 2026-03-23 | κ = 0 names the ground-facing limit. From the empty limit, the scaffold reconstructs.*
 

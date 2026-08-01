@@ -12,7 +12,7 @@ rosetta:
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[I/A]"
+  register: "[I/B]"
   canonical_phrase: "Pratyakṣa is primary disclosure"
 ---
 
@@ -22,7 +22,10 @@ rosetta:
 
 **Status:** Canonical epistemic bridge for first-person evidence
 **Date:** 2026-04-14
-**Evidence Tier:** [I/A] Interpretive inside the core state; partially supported by established neurophenomenology, interoceptive systemic awareness research, and contemplative science literatures
+**Evidence Tier:** [I/B] Interpretive inside the core state; informed by
+empirical neurophenomenology, interoceptive systemic-awareness research, and
+contemplative-science literatures without promoting that support to analytic
+proof
 **Depends on:** [The Honest Position](01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [Degrees-of-Freedom Ontology](../06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md)
 **See also:** [What Actually Tests the Theory](../03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md), [I Is the Equator](00_I_IS_THE_EQUATOR.md), [The Sitting Practice](../90_ARCHIVE/00_THE_SITTING_PRACTICE.md)
 
@@ -30,7 +33,7 @@ rosetta:
 
 ## The Thesis
 
-Within Emergentism, **Empirical Observation is primary disclosure**.
+Within Emergentism, **Pratyakṣa is primary disclosure**.
 
 It names the direct encounter in which:
 
@@ -62,7 +65,7 @@ doctrine -> disclosure
 
 ## What This Means Epistemically
 
-Empirical Observation does **not** mean that every private feeling becomes truth.
+Pratyakṣa does **not** mean that every private feeling becomes truth.
 
 It means something narrower and more disciplined:
 
@@ -74,7 +77,7 @@ It means something narrower and more disciplined:
 
 So the canonical rule is:
 
-> **Empirical Observation is primary for disclosure. Doctrine is its after-image. Empirical claims still require empirical discipline.**
+> **Pratyakṣa is primary for disclosure. Doctrine is its after-image. Empirical claims still require empirical discipline.**
 
 This protects two things at once:
 
@@ -85,7 +88,7 @@ This protects two things at once:
 
 ## The Three Registers
 
-| Register | What happens there | What Empirical Observation means |
+| Register | What happens there | What Pratyakṣa means |
 |----------|--------------------|----------------------|
 | **Ontological** | Dasein directly encounters disclosed finitude | Primary disclosure |
 | **Doctrinal** | The disclosure is compressed into terms, formulas, practices, and maps | After-image / transmission surface |
@@ -109,7 +112,7 @@ It should instead say:
 
 ## The Life-Science Bridge
 
-Life science does not usually use the word `Empirical Observation`, but it does already contain nearby methods.
+Life science does not usually use the word `Pratyakṣa`, but it does already contain nearby methods.
 
 The closest scientific bridges are:
 
@@ -129,13 +132,13 @@ It is:
 
 That is enough to justify a cleaner sentence in the canon:
 
-> **Empirical Observation is not anti-scientific. It is the first-person pole of evidence, to be disciplined rather than dismissed.**
+> **Pratyakṣa is not anti-scientific. It is the first-person pole of evidence, to be disciplined rather than dismissed.**
 
 ---
 
 ## Dasein and Disclosure
 
-Empirical Observation belongs most directly to `Dasein`.
+Pratyakṣa belongs most directly to `Dasein`.
 
 Ground is prior.
 Being is reciprocal closure.
@@ -143,12 +146,12 @@ Teleological Force is an optional `[I]` name for perceived or modeled
 viability-direction; native mechanisms must be stated first, and no literal
 force follows from disclosure.
 Dasein is where disclosure occurs.
-Empirical Observation is the name for that disclosure when it becomes explicit.
+Pratyakṣa is the name for that disclosure when it becomes explicit.
 
 That is why the framework should not say:
 
 - "systemic awareness is the Ground"
-- "Empirical Observation proves every doctrine"
+- "Pratyakṣa proves every doctrine"
 - "direct perception replaces empirical work"
 
 It should say:
@@ -170,7 +173,7 @@ The framework survives by remembering:
 - the teacher is not the thing taught
 - the framework succeeds when it becomes unnecessary
 
-That is why Empirical Observation is not merely an optional practice note.
+That is why Pratyakṣa is not merely an optional practice note.
 
 It is the anti-idolatry guardrail of the whole corpus.
 
@@ -180,7 +183,7 @@ It is the anti-idolatry guardrail of the whole corpus.
 
 When this idea needs to be stated briefly, the default wording is:
 
-> **Empirical Observation is primary disclosure. Doctrine is the after-image. In scientific register, this corresponds most closely to disciplined first-person data constrained by physiology, behavior, and method.**
+> **Pratyakṣa is primary disclosure. Doctrine is the after-image. In scientific register, this corresponds most closely to disciplined first-person data constrained by physiology, behavior, and method.**
 
 This sentence may be reused verbatim.
 
@@ -192,7 +195,7 @@ This sentence may be reused verbatim.
 
 1. Do not treat first-person disclosure as a shortcut around evidence tiers.
 2. Do not treat doctrine as prior to disclosure.
-3. When the audience is scientific, translate `Empirical Observation` first into neurophenomenology, interoception, contemplative science, or computational phenomenology.
+3. When the audience is scientific, translate `Pratyakṣa` first into neurophenomenology, interoception, contemplative science, or computational phenomenology.
 4. When the audience is philosophical, keep the order explicit: disclosure first, doctrine second.
 
 *The clearest map is the one that remembers it is downstream of seeing.*

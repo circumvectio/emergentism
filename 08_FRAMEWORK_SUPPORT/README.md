@@ -12,6 +12,12 @@ the kernel, ontology, formal system, axiology, and methodology owners.
 ## Active map
 
 - [`00_START_HERE.md`](00_START_HERE.md) — short reader route and boundary.
+- [`00_THE_KNIFE.md`](00_THE_KNIFE.md) — internal self-objection document;
+  [`00_THE_KNIFE.public.md`](00_THE_KNIFE.public.md) is its public derivative.
+- [`00_THE_PROTOCOL.md`](00_THE_PROTOCOL.md) — sitting practice as an
+  experimental specification, downstream of the derivation and knife.
+- [`00_KNOWN_UNKNOWNS.md`](00_KNOWN_UNKNOWNS.md) — open and reframed questions.
+- [`00_MASTER_INDEX.md`](00_MASTER_INDEX.md) — routing alias, not an owner.
 - [`00_META/`](00_META/) — posture and synthesis notes.
 - [`01_GOVERNANCE/`](01_GOVERNANCE/) — domain-general corrigibility concepts;
   “governance” here means accountable constraint, not a product constitution.

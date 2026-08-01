@@ -154,7 +154,7 @@ correction discipline; receipt 126’s A7 result.
 
 ### C5. Non-extraction as chosen orientation `[I]`
 
-Finite beings choose to pursue reciprocal flourishing without obtaining local gain by degrading a real sustaining boundary. `η=0` is a constitutional vow/operational definition with scoped Model-A support; it is not an ought derived from geometry and not a universal Nash theorem.
+Finite beings choose to pursue reciprocal flourishing without obtaining local gain by degrading a real sustaining boundary. `η_move=0` is a constitutional vow/operational definition with scoped Model-A support; it is not an ought derived from geometry and not a universal Nash theorem.
 
 **Support:** [The Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its
 non-extraction and voluntary-orientation clauses; receipt 126 `:28-33`.

@@ -239,7 +239,7 @@
           card.hidden = !question || !predicate || !predicate(question);
         });
         const notice = $("#lab-scope");
-        if (notice) notice.textContent = filter === "all" ? "Showing all eleven questions; maturity, exact execution requirement, and programme state remain distinct." : `Showing ${button.textContent.trim().toLowerCase()} questions without changing their exact source states.`;
+        if (notice) notice.textContent = filter === "all" ? "Showing all twelve questions; maturity, exact execution requirement, and programme state remain distinct." : `Showing ${button.textContent.trim().toLowerCase()} questions without changing their exact source states.`;
       });
     });
   }

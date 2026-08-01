@@ -34,7 +34,7 @@ archive_predecessor: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/VMOSK_A.md
 ---
 
 > [!IMPORTANT]
-> **SUPERSEDED — countersigned by Yves R. Burri, natural person, 2026-07-31** by [`VMOSK_A_v2_2026_07_31.md`](VMOSK_A_v2_2026_07_31.md) — the K2-signed v2 (holobiont edition). This file is retained per K3 (archive-first, never deleted); read the v2 for current canon.
+> **SUPERSEDED — countersigned by Yves R. Burri, natural person, 2026-07-31** by [`VMOSK_A_v2_2026_07_31.md`](VMOSK_A_v2_2026_07_31.md) — the v2 (holobiont edition). This file is retained per K3 (archive-first, never deleted); read the v2 for current canon.
 
 # VMOSK-A — Emergentism
 

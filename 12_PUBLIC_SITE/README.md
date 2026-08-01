@@ -91,23 +91,61 @@ No step depends on membership, belief, payment, or delegated truth authority.
 ## Build and verification
 
 ```text
-python3 render_dimension_site.py
-python3 build_book.py
-python3 build_book.py --check
-python3 build_rag_index.py
-python3 refresh_reading_manifest.py
-python3 refresh_reading_manifest.py --check
-python3 apply_frozen_library_boundary.py
-python3 predeploy_check.py
+python3 -B render_dimension_site.py
+python3 -B build_book.py
+python3 -B build_book.py --check
+python3 -B build_rag_index.py
+python3 -B build_rag_index.py --check
+python3 -B refresh_reading_manifest.py
+python3 -B refresh_reading_manifest.py --check
+python3 -B apply_frozen_library_boundary.py
+python3 -B build_atlas_index.py
+python3 -B build_library_index.py
+python3 -B build_library_nav.py
+python3 -B build_pwa.py
+python3 -B build_social_cards.py
+python3 -B build_sw_version.py
+python3 -B predeploy_check.py
+python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py
 ```
+
+`build_sw_version.py` must run last among generators. `build_pwa.py` writes the
+offline page and service-worker cache constant, so it precedes
+`build_social_cards.py`; the social-card builder can then cover that newly
+written offline page. The final service-worker builder fingerprints every
+declared current page and runtime artifact, including `living-map.json` and the
+current RAG index. Any generator run after it makes the generated-artifact
+gate fail. `predeploy_check.py` and the artifact checker are checks, not
+generators, and therefore follow it.
+
+`build_book.py` publishes exactly one current source: the claim-card-covered
+One-Sitting reader. It validates the book catalog, source lifecycle, all 26
+registered claim cards in implemented or L3-audited state, full 12-chapter
+coverage, derived register, and claim graph before writing. The tier-`[D]`
+Reciprocal port remains staged provenance under
+`13_BOOKS/the_reciprocal/`; it is excluded from `/book/` and current RAG.
+
+The current reader's search and “expand” controls are key-free local retrieval.
+`assets/js/book-ai.js` accepts no reusable credential, stores no API key, and
+contacts no model endpoint. Live generation remains unavailable until a
+separate server-side authorization, privacy, and cost boundary exists.
+`build_rag_index.py --check` also runs temporary negative controls proving that
+a missing current source or source-hash drift fails before index generation;
+`build_rag_index.py --self-test` runs those controls alone.
 
 `refresh_reading_manifest.py` preserves the frozen June library document list
 byte-for-byte at the data level and refreshes only its lifecycle declaration
 and the current One-Sitting reader contract. It does not regenerate or promote
 the frozen library pages.
 
-The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and the
-root redirect. No external scripts, stylesheets, fonts, or media are required.
+The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and 31
+route redirects. `/` is not redirected: it is served by `index.html`. No
+external scripts, stylesheets, fonts, or media are required.
+
+The governing execution packet is
+[`_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md`](_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md).
+Its dated filename is retained as provenance; its active title and boundary are
+pure Emergentism and give no external project grammar authority over this lane.
 
 ## How to actually deploy
 
@@ -116,14 +154,35 @@ newcomer could produce release-candidate bytes and had no documented way to ship
 them.
 
 ```bash
-cd 12_PUBLIC_SITE && vercel --prod --yes
+cd 12_PUBLIC_SITE && ./deploy_vercel.sh
 ```
 
-- The project is already linked; `.vercel/project.json` holds the ids. **Never open,
-  print, or commit `.vercel/.env.production.local`** — it is gitignored and holds
-  deploy credentials.
+- The wrapper fails closed unless `.vercel/project.json` exists **and** its two
+  identities exactly match independently supplied
+  `EMERGENTISM_VERCEL_PROJECT_ID_PIN` and
+  `EMERGENTISM_VERCEL_ORG_ID_PIN` values. No IDs are committed or inferred.
+  Before a production invocation, verify the intended project and organization
+  through an independently reviewed account surface, export those two values
+  in the invoking shell, and run `./deploy_vercel.sh`. Missing pins, a stale
+  link, or a link to another project fails before the Vercel CLI is invoked.
+  `./deploy_vercel.sh --self-test` exercises this boundary without network.
+- **Never open, print, or commit `.vercel/.env.production.local`** — it is
+  gitignored and may hold deploy credentials.
 - The live domain is `https://emergentism.org`. A deploy that reports
   `"target": "production"` and `READY` has shipped bytes; it has not verified them.
+
+For a non-Vercel host, `deploy.sh` is a fallback **versioned-release staging**
+path, not an arbitrary-webroot rsync. It accepts only a fresh target shaped as
+`user@host:/.../emergentism-static-v1/releases/YYYYMMDDTHHMMSSZ-GITSHA`,
+requires the parent root to contain the exact marker
+`.emergentism-static-target-v1` with value
+`emergentism.org-static-target-v1`, then atomically reserves a new release
+directory with remote `mkdir` before rsync. An interrupted transfer leaves a
+non-live single-use partial directory; use a new release ID rather than
+overwriting it. Option-looking hosts, traversal, and live-root targets are
+rejected before network. `./deploy.sh --self-test` exercises those fixtures.
+It never uses `--delete-excluded` and does not change a live symlink, domain, or
+DNS target; cutover and live verification remain separate receipted actions.
 
 **A green local gate does not prove what the host returns.** `vercel.json` headers
 are only observable against the deployed domain, and on 2026-07-31 seven routes were
@@ -131,13 +190,19 @@ found silently indexable because nothing checked. After every deploy that touche
 `vercel.json` or any route's publication status, verify against the live domain:
 
 ```bash
-curl -sI https://emergentism.org/titans/ | grep -i x-robots-tag
+curl -sI https://emergentism.org/amrita/ | grep -i x-robots-tag
 ```
 
 Expected: the four **declared-provisional** routes (`/amrita/ /egg/ /riemann/ /suda/`)
 return **no** `X-Robots-Tag` and are indexable; every frozen-library route and
-`/offline/` return `noindex, follow`. `09_TOOLS/01_SCRIPTS/check_q4_declarations.py`
-guards the page-side half of this and says plainly that it cannot check the host.
+`/offline/` and `/titans/` return `noindex, follow`.
+`09_TOOLS/01_SCRIPTS/check_q4_declarations.py` guards the page-side half of this
+and says plainly that it cannot check the host. Complete the post-cutover sweep
+against every declared route with:
+
+```bash
+python3 audit_live_domain_against_manifest.py --strict
+```
 
 The contribution page is a static contract in this release. It accepts no
 payments, API credentials, private data, or live inference jobs. Any future

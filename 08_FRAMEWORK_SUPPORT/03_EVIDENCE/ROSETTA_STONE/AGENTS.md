@@ -27,6 +27,10 @@ evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 ## Epistemic contract
 
 - Preserve `[A]/[B]/[S]/[I]/[D]/[C]`; never promote a claim silently.
+- `[A]` is analytic/formal; `[B]` is built, observed, measured, receipted, or
+  externally sourced evidence; `[S]` is a selected/structural consequence only
+  inside explicit corpus premises. Never use `[S]` as a synonym for
+  “established external scholarship.”
 - Distinguish analytic identity, selected model, interpretation, conjecture, receipt, test, and world outcome.
 - Repair source truth before mirrors. Keep counterexamples, alternatives, predictions, and kill criteria visible.
 - Archive or tombstone superseded work; do not erase provenance or make an archive a competing owner.

@@ -71,19 +71,20 @@ The unit is not fundamental. The unit is **relational.** It is what happens when
 On the Burri Sphere:
 
 ```
-φ = cot(θ/2)  → ∞ at north pole (θ=0), 0 at south pole (θ=π)
-ν = tan(θ/2)  → 0 at north pole, ∞ at south pole
+ν = tan(θ/2) = |z|  → 0 at south pole (θ=0), ∞ at north pole (θ=π)
+φ = cot(θ/2) = 1/ν  → ∞ at south pole, 0 at north pole
+(`φ` is the reciprocal chart coordinate, not the complex/radial coordinate `z`.)
 
 At equator (θ = π/2):
   φ = cot(π/4) = 1
   ν = tan(π/4) = 1
   φ × ν = 1
 
-At north pole (θ → 0):
+At south pole (θ → 0, z=ν=0):
   φ → ∞, ν → 0
   φ × ν = 1 (in the limit)
 
-At south pole (θ → π):
+At north pole (θ → π, z=ν→∞):
   φ → 0, ν → ∞
   φ × ν = 1 (in the limit)
 ```

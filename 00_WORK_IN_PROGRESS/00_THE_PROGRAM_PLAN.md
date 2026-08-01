@@ -39,7 +39,7 @@ progress.
 
 | finite, closable from inside | count |
 |---|---|
-| open owner rulings | 8 |
+| residual owner decisions | 6 — receipt disposition (1), `/dimensions/` crossings (1), audit items 3/11/14/28 (4) |
 | ambiguous receipt numbers | 91 |
 | site routes declared neither current nor frozen | 40 |
 | claim rows at status `open` | 17 |
@@ -62,10 +62,12 @@ has the longest completion time, because a reviewer takes weeks and none of that
 ours. Every internal sprint has latency we control. So the correct order is *not* easiest
 first; it is **longest-pole first, even when the longest pole is a five-minute act.**
 
-The second rule: **rulings before sweeps.** Two of the eight open rulings change
-vocabulary corpus-wide (`§5.1` decides whether the irrationals are called numbers or
-limits; `G-0` decides which base is canonical). Running a text sweep before those land
-means running it twice.
+The second rule was **rulings before sweeps** — and both vocabulary rulings it named
+have since landed. `G-0`/`G-0b` were ruled 2026-07-29
+(`00_THE_FOUNDATION.md:85,88-98`) and `§5.1` was signed 2026-07-31
+(`11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` §Q1).
+No remaining open ruling changes vocabulary corpus-wide, so the later sweeps are no
+longer gated on this sprint. This paragraph remains as evidence of the drift it corrects.
 
 ---
 
@@ -84,9 +86,10 @@ is written. What remains is naming one qualified outsider and asking.
 
 ---
 
-## SPRINT 2 · The eight rulings · *owner sitting, one session*
+## SPRINT 2 · The residual rulings · *owner sitting, one session*
 
-Everything downstream is vocabulary-dependent on two of these, so this gates sprints 4–6.
+The two rulings that made this a vocabulary gate have landed. What remains here is
+residue, and the later internal sprints may start without it.
 
 | ruling | the decision | blocks |
 |---|---|---|
@@ -97,7 +100,7 @@ Everything downstream is vocabulary-dependent on two of these, so this gates spr
 | `/dimensions/` crossings | may it keep showing five candidates when two are adjudicated failed? | one page |
 | audit items 3, 11, 14, 28 | four residual calls, all listed in `README.md §4A` | closes the audit |
 
-- **Exit condition:** eight receipts, or eight lines in one receipt, each with a date.
+- **Exit condition:** one receipt per remaining row, each with a date.
 - **Discipline:** a ruling that says *"stay as is, and here is why"* closes the item. Only
   silence leaves it open.
 
@@ -191,8 +194,9 @@ What happens after is a different activity and should be called one:
 - **It does not promise the framework is true**, and closing every sprint would not
   bear on that. `00_ESTABLISHED` stays short.
 - **It does not promise the internal work matters.** On the framework's own conjunctive
-  law, a conjunctive law returns nothing when either factor is absent, and contact is the absent one, so sprints 2–7 could all close and
-  the score would not move. **Only Sprint 1 can move it, which is why it is Sprint 1.**
+  law, both factors must be non-zero and the deficient one binds, so with contact at
+  zero sprints 2–7 could all close and the score would not move. **Only Sprint 1 can
+  move it, which is why it is Sprint 1.**
 - **It sets no dates.** Sizes are honest ("one session"); dates would be invented.
 - **It is not ratified.** Nothing here is a commitment until an owner says so.
 

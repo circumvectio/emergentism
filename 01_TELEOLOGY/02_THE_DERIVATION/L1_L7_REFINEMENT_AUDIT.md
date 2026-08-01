@@ -18,7 +18,7 @@ rosetta:
 **Status:** Active
 **Depends on:** 00_THE_HONEST_POSITION.md, 01_FORMAL_SYSTEM/ (all), 02_THE_DERIVATION/ (all), 00_GLOSSARY.md
 
-**Numbering note:** where this audit refers to O1-O5, it is stress-testing the older public substrate-selection wager. The active formal-system canon is A1-A7.
+**Numbering note:** where this audit refers to O1–O5, it is stress-testing the older public substrate-selection wager. Active axiom authority is E1–E10. O1–O5 and A1–A7 are provenance only and may not override it.
 
 ---
 

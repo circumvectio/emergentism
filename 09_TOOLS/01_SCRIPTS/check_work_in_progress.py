@@ -41,7 +41,12 @@ RECEIPT_DIRS = (
 # the manifest had been listing it as open — the guard was pinning a stale entry, which
 # is the mirror of the failure it exists to prevent. It stays referenced in the manifest
 # as CLOSED, and the checker below verifies that rather than its openness.
-MUST_STAY_LISTED = ["§5.1", "GP-03", "04_AXIOLOGY", "06_ONTOLOGY"]
+MUST_STAY_LISTED = ["GP-03", "04_AXIOLOGY", "06_ONTOLOGY", "FOUNDATION-KSC-04"]
+LANDED_CLOSURES = {
+    "§5.1": "193_FIVE_RULINGS_SIGNED_2026_07_31.md",
+    "G-0": "00_THE_FOUNDATION.md:88-98",
+    "G-0b": "00_THE_FOUNDATION.md:85",
+}
 
 FENCES = [
     "holds no doctrine",
@@ -134,6 +139,15 @@ def main() -> int:
                 "manifest's own kill has fired."
             )
 
+    for item, receipt in LANDED_CLOSURES.items():
+        closure_row = re.search(
+            rf"^\|[^\n]*{re.escape(item)}[^\n]*CLOSED[^\n]*$", text, re.M | re.I
+        )
+        if not closure_row or receipt not in closure_row.group(0):
+            errors.append(
+                f"landed closure '{item}' is not retained with its source '{receipt}'"
+            )
+
     # --- E · the fences must survive ---------------------------------------
     for f in FENCES:
         if f not in text:
@@ -148,6 +162,7 @@ def main() -> int:
     print(
         f"WORK IN PROGRESS: PASS ({n_receipts} receipt files counted; claim-register "
         f"counts agree; {len(MUST_STAY_LISTED)} open items still listed; "
+        f"{len(LANDED_CLOSURES)} landed closures retained; "
         f"{len(FENCES)} fences intact)"
     )
     print(

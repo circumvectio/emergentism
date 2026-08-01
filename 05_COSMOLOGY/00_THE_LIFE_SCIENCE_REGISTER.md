@@ -9,7 +9,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/S/I/C] mixed"
+  register: "[A/B/S/I/C] mixed"
   canonical_phrase: "Life-Science Register"
 ---
 
@@ -19,7 +19,7 @@ rosetta:
 
 **Status:** Canonical translation layer for biology-facing claims
 **Date:** 2026-04-14
-**Evidence Tier:** [E/S/I/C] Mixed -- translation discipline across tiers
+**Evidence Tier:** [A/B/S/I/C] Mixed — analytic mathematics, custodied external evidence, selected structure, interpretation, and conjecture remain separated claim by claim
 
 > **Anchor Sequence:**
 > ```text
@@ -130,9 +130,9 @@ It does make the framework's evidence architecture more scientifically legible.
 | **Teleological Force** | The proposed unifying name for teleonomy + autopoiesis + homeostatic/allostatic + interoceptive viability-direction. | [I] interpretive synthesis over [S] biological phenomena. |
 | **Dasein** | The embodied, finite, self-modeling organism or agent for whom viability and disclosure matter. | [I] philosophical translation using biological agency. |
 | **beings** | Organisms, ecologies, lineages, institutions, technical systems. | [A/I] depending on the claim. |
-| **Pratyakṣa** | In scientific register: disciplined first-person disclosure or trained phenomenological report constrained by physiology, behavior, and method. | [I/A] bridge term; not standalone proof of frontier claims. |
+| **Pratyakṣa** | In scientific register: disciplined first-person disclosure or trained phenomenological report constrained by physiology, behavior, and method. | [I/B] bridge term; empirical support does not become analytic proof or standalone proof of frontier claims. |
 | **Equator** | The viable operating regime where integration and capability remain jointly sustainable. | [I] biological analogy, not a standard term. |
-| **Operational ektropy (`P_node = Φ × V`)** | Heuristic multiplicative proxy for integration x viability at the node level. | [S/I] framework model, not standard biology. |
+| **Operational node conjunction (`P_node = min(Φ̂₄,V₄)`)** | Selected AND-class bottleneck score for estimated integration/coherence and viability; the historical product is retired as a ranking. | [S/I] framework model, not standard biology. |
 | **Hidden Hand** | Older metaphor for viability-directed organization in biology. | Prefer teleonomy / self-maintaining regulation when writing for scientists. |
 | **Demiurge / Dyḗus Ph₂tḗr** | Mythic faces of the same field. Dyḗus Ph₂tḗr (Dyeus Phter / Dyaus Pita) is the bright-sky Father face; `h₂r̥tó-` / Ṛta is the ordering-law face. | Not biology. Use only after the scientific register is established. |
 

@@ -15,11 +15,11 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/I]"
+  register: "[A/I]"
   canonical_phrase: "Rosetta R13 — hexagrammatic demonstration"
 title: "Three-Stage Process R13: The Hexagrammatic Demonstration"
 status: "ACTIVE — geometry and cross-traditional identification"
-evidence_tier: "[S] for six-interval geometry; [I] for cross-traditional identification."
+evidence_tier: "[A] for six-interval geometry; [I] for cross-traditional identification."
 ---
 
 # Three-Stage Process R13: THE HEXAGRAMMATIC DEMONSTRATION
@@ -28,7 +28,7 @@ evidence_tier: "[S] for six-interval geometry; [I] for cross-traditional identif
 
 ## Six Intervals on S² Generate the Universal Symbol
 
-**Evidence Tier:** [I] for the geometry (six 15° intervals, exact sine values). [I] for the cross-traditional identification.
+**Evidence Tier:** `[A]` for the declared six-interval geometry and exact sine values; `[I]` for cross-traditional identification.
 
 ---
 

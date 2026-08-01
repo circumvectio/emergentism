@@ -38,7 +38,7 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=min(Φ̂₄,V₄)`, the selected AND-class working score over ordinal factors, only under its stated normalization and contact premises; the product form `Φ̂₄V₄`—publicly `ΦV`—is retired as a ranking and survives only as the historical name of the same conjunction. Neither form is a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
@@ -153,9 +153,13 @@ The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,
 |---|---|---|
 | seam | `P∞=φν=1` | `[A]` chart identity; not the finite-node score |
 | balance | `B=2/(φ+ν)=sinθ` | `[A]`; `0<B≤1` on the open chart |
-| finite node | `P_node=Φ̂₄V₄` (public `ΦV`) | `[C]` general model; ceiling one only after explicit normalization |
+| finite node | `P_node=min(Φ̂₄,V₄)` | `[I]` selected ordinal working score; `[C]` universal fit. Product `Φ̂₄V₄` / public `ΦV` is retired as a ranking |
 
-The zero boundary selects the AND-class, not a unique interior aggregator. `min`, product, and CES require separate model choices and tests.
+The zero boundary selects the AND-class, not a unique interior aggregator.
+`min` is the current working score because its ranking survives common strictly
+increasing reparameterizations of the ordinal factors. Product and CES forms
+remain historical or alternative models requiring separate tests; the product
+may not rank, score, or compare nodes.
 
 ## 6 · Five crossings, μ, and the spiral
 
@@ -306,14 +310,15 @@ V₄ = D4 actual power — embodied capability and usable means
 In the selected normalized node model,
 
 \[
-P_{node}:=\widehat{\Phi}_4 V_4,
+P_{node}:=\min(\widehat{\Phi}_4,V_4),
 \]
 
-publicly compressed as `P_node=ΦV`. `Φ₅` names possible power; it is not a force
-sent backward by a future event. Its report `Φ̂₄` is an actual model token.
-`V₄` names actual enactment power. Their product is Emergentism's declared
-transparent instance inside a larger AND-class, not a formula forced by the
-reciprocal sphere or by reality.
+as the selected working score over ordinal factors. `Φ₅` names possible power;
+it is not a force sent backward by a future event. Its report `Φ̂₄` is an actual
+model token. `V₄` names actual enactment power. The product form `Φ̂₄V₄`,
+publicly compressed as `ΦV`, is retired as a ranking and remains only the
+historical name of the same AND-class conjunction. Neither aggregator is forced
+by the reciprocal sphere or by reality.
 
 The zero cases nevertheless carry a clear design intuition: possible power
 without actual power cannot enact, and actual power without a discriminating

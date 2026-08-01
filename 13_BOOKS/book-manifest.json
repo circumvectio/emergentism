@@ -13,6 +13,14 @@
       "historical_sources": [
         "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
       ],
+      "publication_sources": [
+        {
+          "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+          "lifecycle": "reader_synthesis",
+          "claim_card_set": "00_META/claim_cards/one_sitting.yaml",
+          "public_eligible": true
+        }
+      ],
       "chapter_order": [
         "boundaries",
         "difference",
@@ -64,9 +72,9 @@
         "OS01-25",
         "OS01-26"
       ],
-      "release_state": "source_active_projection_review_open",
+      "release_state": "source_active_current_public_reader",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
-      "build_provenance": "12_PUBLIC_SITE/build_book.py"
+      "build_provenance": "12_PUBLIC_SITE/build_book.py; exactly one claim-card-covered source; lifecycle and graph coverage fail closed"
     },
     {
       "work_id": "BK-FINITY-PRACTICE",
@@ -127,7 +135,8 @@
       "title": "The Titans — The Infinite, Finity & Infinity",
       "edition": "research-edition-1-staged",
       "historical_sources": [
-        "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md"
+        "../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
+        "../05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"
       ],
       "chapter_order": [
         "standard-mathematics",
@@ -188,6 +197,7 @@
       "title": "The Evolutionary Network",
       "edition": "institutional-proposal-staged",
       "historical_sources": [
+        "../03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
         "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"
       ],
       "chapter_order": [
@@ -215,7 +225,7 @@
     {
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
       "title": "The Reciprocal / Infinite Play",
-      "edition": "ported-public-edition-2026-07-31",
+      "edition": "ported-provenance-2026-07-31-withheld-2026-08-01",
       "historical_sources": [
         "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
         "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md"
@@ -245,11 +255,14 @@
         "RIP01-06",
         "RIP01-07"
       ],
-      "release_state": "ported_public_reader_tier_D_not_re_adjudicated",
-      "public_route": "../12_PUBLIC_SITE/book/index.html",
-      "build_provenance": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
+      "release_state": "withheld_staged_provenance_not_current_not_rag",
+      "public_route": null,
+      "build_provenance": "source files preserved at 13_BOOKS/the_reciprocal/; excluded from 12_PUBLIC_SITE/book and current RAG pending claim-by-claim re-adjudication",
+      "staged_critical_edition": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
       "ported_chapters_dir": "the_reciprocal/",
-      "port_note": "Ported 2026-07-31 from the 2026-07-22 Public Edition, which broke this corpus publication gates 249 times (160 forbidden authority tokens, 20 uses of the retired product form of the two-factor law, 49 bare extraction symbols, 8 unfenced Titan infixes). Argument and length preserved; register corrected; rulings since applied. Tier [D]: the port is not a re-adjudication. One inherited arithmetic error corrected in chapter 8 and stated in the text."
+      "publication_eligible": false,
+      "withheld_reason": "The 25-chapter tier-[D] port was register-corrected but never re-adjudicated claim by claim. A current route may not inherit public standing from prose cleanup.",
+      "port_note": "Ported 2026-07-31 from the 2026-07-22 Public Edition, which broke this corpus publication gates 249 times (160 forbidden authority tokens, 49 bare extraction symbols, 20 uses of the retired product form of the two-factor law, 8 unfenced Titan infixes, 8 watchlist words, and 4 retired [E] tier markers). Argument and length preserved; register corrected; rulings since applied. Tier [D]: the port is not a re-adjudication. One inherited arithmetic error corrected in chapter 8 and stated in the text. Withheld from the current reader and RAG on 2026-08-01; source custody remains unchanged."
     },
     {
       "work_id": "BK-SARPASYA",

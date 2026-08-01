@@ -8,14 +8,14 @@ remain externally uncalibrated until independent contact decides them.
 
 ## Read in one sitting
 
-0. [The Foundation](00_THE_FOUNDATION.md) — what the whole thing stands on: `R0`, the presupposed/base/emergent strata, and the three Titan identities on the Riemann sphere.
+0. [The Foundation](00_THE_FOUNDATION.md) — a **conflicted, held projection**: its `R0`/strata synthesis remains readable, but its Titan arithmetic must not be cited; K-1, K-5, `KSC-04`, the Formula Block, and Primitive/Type Signatures control.
 1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
 2. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice, including the Finity Card.
 3. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.
 4. [The Human Condition](06_ONTOLOGY/08_THE_HUMAN_CONDITION.md) — self, consciousness, agency, suffering, meaning and death.
 5. [The Kernel Index](00_THE_KERNEL_INDEX.md) — seven owner surfaces.
-6. [VMOSK-A](VMOSK_A.md) — non-semantic work programme for maintaining, testing and publishing the worldview.
-7. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and eleven world-contact sockets.
+6. [VMOSK-A v2](VMOSK_A_v2_2026_07_31.md) — non-semantic work programme for maintaining, testing and publishing the worldview; supersedes `VMOSK_A.md` (2026-07-31), which is retained per archive-first.
+7. [The Grand Puzzle Assembly Ledger](00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — the ladder, exact pieces, wagers and twelve world-contact sockets.
 8. [The Formula Block](05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — chart facts, selected node model and type boundaries.
 9. [E1–E10](06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md) and [W0–W12](06_ONTOLOGY/04_THE_CONJECTURES.md) — the active axiom and wager ledgers.
 10. [The Refusals](00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) and [Revelations](06_ONTOLOGY/06_THE_REVELATIONS.md) — chosen constraints and disclosures earned by audit.
@@ -105,7 +105,10 @@ tests. Consequential action uses a complete, scoped, contestable
 
 | Path | Role |
 |---|---|
-| `VMOSK_A.md` | non-semantic control projection; never a doctrine owner |
+| `VMOSK_A_v2_2026_07_31.md` | non-semantic control projection, current; supersedes `VMOSK_A.md`; never a doctrine owner |
+| `VMOSK_A.md` | non-semantic control projection v1.0, superseded 2026-07-31; retained per archive-first |
+| `00_CONTROL/` | receipts, boundaries, and verification; never a doctrine owner |
+| `00_HANDOFF/` | dated session handoffs and release receipts; never a doctrine owner |
 | `00_META/` | canon registry, Compass, Refusals, corpus maps |
 | `01_TELEOLOGY/` | goals, option-cone and future-oriented hypotheses |
 | `02_EPISTEMOLOGY/` | evidence tiers, disclosure, limits of instruments |

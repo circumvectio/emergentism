@@ -7,6 +7,8 @@ rosetta:
   regime: "Sādhu"
   register: "[I]"
   canonical_phrase: "05_SYNTHESIS — Framework synthesis (near-hollow; book moved, K3)"
+status: "K3 TOMBSTONE — dissolved 2026-05-31; provenance and routing only"
+evidence_tier: "[B] provenance and on-disk route custody only"
 ---
 
 # 05_SYNTHESIS — Framework Synthesis (dissolved; tombstone only)

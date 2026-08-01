@@ -41,17 +41,11 @@ Workspace package root for shared libraries used by tools and organism-facing sc
 
 ## Current Packages
 
-| Package | Status |
-|---|---|
-| `emergentism-core/` | [B] Package metadata exists (`pyproject.toml`, version `0.1.0`) with source under `src/emergentism_core/`; API/test/release status must be verified in the nested package pass. |
+None. This folder currently holds no package. `emergentism-core/` was moved out
+of the pure-Emergentism boundary on 2026-07-20 and is preserved under
+[`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/06_PACKAGES/emergentism-core/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/06_PACKAGES/emergentism-core/).
 
 ## Status
 
-Active support folder.
-
-## Rosetta Queue Note
-
-The package root is only the folder-level authority surface. The nested
-`emergentism-core/`, `src/`, `src/emergentism_core/`, and
-`src/emergentism_core/polygenic/` route cards remain queued as separate
-subfolder/package-boundary passes.
+Empty package root, retained as the declared destination for a future shared
+library.

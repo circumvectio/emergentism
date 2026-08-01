@@ -2,6 +2,7 @@
 title: "Sarpasya Vijayam — Critical Edition 1"
 status: "STAGED PRIVATE EDITION — seven chapters, 100% claim-card coverage"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [SV01-01, SV01-02, SV01-03, SV01-04, SV01-05, SV01-06, SV01-07]
 ---
 

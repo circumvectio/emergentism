@@ -53,18 +53,19 @@ differently.
 Emergentism declares
 
 \[
-P_{node}:=C_{\times}(\widehat\Phi_4,V_4)=\widehat\Phi_4V_4
+P_{node}:=C_{\min}(\widehat\Phi_4,V_4)=\min(\widehat\Phi_4,V_4)
 \]
 
-as its normalized working instance. `ΦV` remains public shorthand only; it does
-not license multiplication of a D5 possibility by D4 means without the D4
+as its selected working score over ordinal factors. The product form
+`\widehat\Phi_4V_4`, publicly compressed as `ΦV`, is retired as a ranking and
+does not license multiplication of a D5 possibility by D4 means without the D4
 evaluation bridge.
 
 **Licensed:** `Φ̂₄` and `V₄` are jointly necessary by definition inside the
 selected model.
 
-**Not licensed:** the product is uniquely forced or universally fits real
-agents.
+**Not licensed:** the minimum is uniquely forced or universally fits real
+agents; the retired product may not order, score, or compare nodes.
 
 **Kill:** a universal claim dies if a rival admissible aggregator predicts the
 data better or reverses a load-bearing ranking.

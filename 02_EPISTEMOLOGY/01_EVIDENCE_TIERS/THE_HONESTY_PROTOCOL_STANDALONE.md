@@ -2,10 +2,10 @@
 rosetta:
   primary_level: L2
   primary_column: Method
-  register: "[S]/[A]"
+  register: "[S]/[B]"
   canonical_phrase: "The Honesty Protocol — a portable method for claiming under uncertainty"
-status: "SUBMISSION FORM v2 — 2026-05-31. Paper IV of the Finity Papers (the exportable honesty machine). Referee pass incorporated: 'six fields' miscount corrected to four; '[A] Asserted' renamed '[A] Attested' (the highest tier no longer named after bare assertion); the governing thesis sentence tiered [S/I]; the file-drawer claim's [A]/[S] compound tier held stable across §5 and §7; Rosenthal paginated; the strip-test domain-term leak ('spec-to-proof transit') removed; a non-empty self-applied negative-results register added to §7."
-evidence_tier: "[S] as a method; [A] for the third-party empirical regularities it cites"
+status: "SUBMISSION FORM v3 — 2026-08-01. Canonical corpus A/B meanings restored; the earlier export-dialect lettering is retired."
+evidence_tier: "[S] as a method; [B] for the custodied third-party empirical regularities it cites"
 depends_on: None for USE (stand-alone; no parent framework required). See Provenance note — derivative in ORIGIN.
 exportable: true
 strip_test: "Contains zero terms specific to any one theory. If a domain term appears, it is a defect."
@@ -42,16 +42,16 @@ Every load-bearing claim carries exactly one tier. The tier answers a single que
 
 | Tier | Name | What it means | Standard that earns it | Plain-language gloss |
 |------|------|---------------|------------------------|----------------------|
-| **[A]** | **Attested / measured** | Established fact independent of your work | Third-party measurement, accepted theorem, textbook result, replicated finding you did not produce | "Anyone competent can check this; it does not depend on me." |
-| **[B]** | **Built / verified** | Directly verified in *your* system or data | A run you executed, a dataset you receipted, a code path you traced, a document on file | "I checked it myself, and the receipt exists." |
+| **[A]** | **Analytic / machine-checked** | Formal result in a named system | Reproducible derivation, proof, type check, or machine check with declared premises | "The formal consequence can be checked independently in the named system." |
+| **[B]** | **Observed / receipted** | Custodied observation, measurement, attribution, build, run, or outcome | Source bytes, method, scope, date, and receipt are available for replay or inspection | "The contact happened as scoped, and the custody trail exists." |
 | **[S]** | **Structural** | Follows necessarily *if* you accept stated premises | Valid derivation, logical consequence, model output conditional on assumptions | "Given my assumptions, this must hold — but the assumptions are a choice." |
 | **[I]** | **Interpretive** | A bridge from formal result to real-world meaning | Coherence, convergence, analogy; not independently verified | "This is what I think it *means*. It is suggestive, not shown." |
 | **[D]** | **Draft / demonstration** | A provisional construction not yet validated | Mock-up, prototype, staged construction, illustrative run | "This shows the shape of the thing; it is not yet load-bearing." |
 | **[C]** | **Conjecture** | Speculative, testable, untested | A stated hypothesis with a test you have not yet run | "This might be brilliant or wrong. It earns its place by being testable, not by being true." |
 
-**The cardinal rule: you may never silently upgrade a tier.** A `[C]` may become `[S]` or `[A]` only by meeting its pre-stated upgrade path (Section 3), and the upgrade is *recorded as an event*, with a date and a reason. Downgrades follow the same discipline. Prose may be vivid; it may not move a tier. *When the prose and the tier disagree, the tier governs and the prose is read as invitation.*
+**The cardinal rule: you may never silently upgrade a tier.** A `[C]` may become `[S]`, `[A]`, or `[B]` only by meeting its pre-stated upgrade path (Section 3), and the change is *recorded as an event*, with a date and a reason. `[A]` and `[B]` are evidence types, not higher and lower versions of one another. Downgrades follow the same discipline. Prose may be vivid; it may not move a tier. *When the prose and the tier disagree, the tier governs and the prose is read as invitation.*
 
-**Why six tiers and not two.** "Proven vs. unproven" collapses the three distinctions that actually matter in practice: (1) *yours vs. the world's* evidence (`[B]` vs `[A]`), (2) *conditional vs. unconditional* truth (`[S]` vs `[A]`/`[B]`), and (3) *meaning vs. mechanism* (`[I]` vs `[S]`). `[S]` *Most overclaiming, on this protocol's own wager, lives precisely in those seams — presenting a conditional result as unconditional, or an interpretation as a measurement. That seam-claim is the ladder's organizing bet, not a measured frequency.*
+**Why six tiers and not two.** "Proven vs. unproven" collapses the three distinctions that actually matter in practice: (1) *formal consequence vs. observed contact* (`[A]` vs `[B]`), (2) *conditional framework structure vs. external contact* (`[S]` vs `[A]`/`[B]`), and (3) *meaning vs. mechanism* (`[I]` vs `[S]`). `[S]` *Most overclaiming, on this protocol's own wager, lives precisely in those seams — presenting a conditional result as external contact, or an interpretation as a measurement. That seam-claim is the ladder's organizing bet, not a measured frequency.*
 
 `[S]` *The ladder is a structural device. Its six divisions are defensible and useful, not uniquely necessary; a four-tier or eight-tier variant could serve. Adopt the granularity your domain needs — but never fewer than the three seams above.*
 
@@ -67,9 +67,9 @@ Confidence drifts fastest when modes of speech are mixed. The protocol forces th
 | **The interpreter** | Honest speculation | Says what a formal result *means* about the world | Coherence + convergence |
 | **The builder** | Conditional commitment | Designs or decides contingent on results not yet in | Empirical validation |
 
-**The transit rule:** a prover-mode claim cannot support a builder-mode decision *without passing through interpreter mode* — and interpreter mode must be labeled as such. "The model proves X, therefore we should do Y" is the single most common laundering of a `[C]`/`[I]` claim into an `[A]` decision. Make the bridge visible or it is doing dishonest work.
+**The transit rule:** a prover-mode claim cannot support a builder-mode decision *without passing through interpreter mode* — and interpreter mode must be labeled as such. "The model proves X, therefore we should do Y" launders a formal or conjectural claim into a consequence without observed `[B]` contact. Make the bridge visible or it is doing dishonest work.
 
-`[I]` *The three-register split loosely parallels the ladder — the prover speaks in `[S]` necessity, the interpreter in `[I]` coherence, the builder in `[B]`/`[A]` once its results arrive — but the correspondence is an analogy, not an exact structural mapping (the builder's standard is empirical, so it does not sit at `[C]`/`[D]`). It is a discipline, not a discovery, and the parallel is offered as a memory aid, not a theorem.*
+`[I]` *The three-register split loosely parallels the ladder — the prover speaks in `[A]`/`[S]` formal or conditional consequence, the interpreter in `[I]` coherence, and the builder earns `[B]` only when a scoped result is receipted — but the correspondence is an analogy, not an exact structural mapping. It is a discipline, not a discovery, and the parallel is offered as a memory aid, not a theorem.*
 
 ---
 
@@ -124,7 +124,7 @@ A negative result is **not an embarrassment to bury; it is a load-bearing asset.
 
 **The non-negotiable commitment:** if stronger evidence shows a favored claim is wrong, you publish the failure. This is the line. A claimant who hides negative results is no longer approaching truth.
 
-`[A]/[S]` *The file-drawer / publication-bias problem is an established, third-party, documented bias in the empirical record (Rosenthal, "The file drawer problem and tolerance for null results," Psychological Bulletin 86(3), 1979, pp. 638–641)* `[A]`; *that a standing negative-results register corrects it for an individual body of work is a structural inference, not a measured result* `[S]`. **These two halves keep their separate tiers wherever this claim reappears (cf. §7); the `[A]` half never absorbs the `[S]` half.**
+`[B]/[S]` *The file-drawer / publication-bias problem is a custodied third-party empirical finding (Rosenthal, "The file drawer problem and tolerance for null results," Psychological Bulletin 86(3), 1979, pp. 638–641)* `[B]`; *that a standing negative-results register corrects it for an individual body of work is a structural inference, not a measured result* `[S]`. **These two halves keep their separate tiers wherever this claim reappears (cf. §7); the `[B]` half never absorbs the `[S]` half.**
 
 ---
 
@@ -137,7 +137,7 @@ Some acts cannot be undone: publishing, shipping, deploying, deleting, committin
 Rules of the gate:
 
 - **Reversible acts** (drafts, internal notes, hypotheses) may run on any tier, including `[C]`. Speculate freely where the cost of being wrong is cheap.
-- **Irreversible acts** require the supporting claims to be at `[B]` or `[A]` — *verified*, not merely *interpreted* or *conjectured* — unless the irreversibility itself is explicitly consented to as a bet, in writing, by an accountable person.
+- **Irreversible acts** require evidence types matched to the consequence: `[B]` contact and receipts where world facts matter, `[A]` where a formal dependency matters, and neither as a substitute for accountable authorization or consent.
 - **When an irreversible act rests on a lower tier, it must be staged, marked, and signed off by an accountable human** — never auto-approved on the strength of a model output or a conditional result.
 
 The gate is asymmetric on purpose: it is cheap to be wrong in a draft and expensive to be wrong in public, so the burden of evidence rises with the cost of the mistake. The gate does not forbid bold action on thin evidence; it forbids *unmarked* bold action on thin evidence.
@@ -153,14 +153,14 @@ A method of honesty must survive its own ladder, or it is a slogan. Here are the
 **The protocol's central claims and their tiers**
 
 - `[S]` *The six-tier ladder, three registers, four fields, kill-criterion mandate, negative-results register, and irreversibility gate together constitute a coherent discipline for calibrating confidence to evidence.* — Structural: it follows if you accept that uncorrectable claims cannot be honest. The premise is a choice.
-- `[A]/[S]` *The file-drawer / publication-bias problem is real and documented* `[A]` *(Rosenthal 1979, pp. 638–641 — the one genuinely third-party empirical fact the protocol leans on); that a standing negative-results register corrects it for an individual body of work* `[S]` *is the structural inference fenced in §5.* (The compound tier is carried verbatim from §5; the `[A]` half is not allowed to swallow the `[S]` half here.)
+- `[B]/[S]` *The file-drawer / publication-bias problem is real and documented* `[B]` *(Rosenthal 1979, pp. 638–641 — the custodied third-party empirical finding the protocol leans on); that a standing negative-results register corrects it for an individual body of work* `[S]` *is the structural inference fenced in §5.* (The compound tier is carried verbatim from §5; the `[B]` half is not allowed to swallow the `[S]` half here.)
 - `[C]` *Adopting this protocol measurably reduces overclaiming and improves calibration in a real body of work over time.* — **This is a conjecture, not a demonstrated result.** The protocol has not been run as a controlled trial against a matched body of work that did not use it. It earns its place by being testable, not by being proven.
 
 **The protocol's own kill criterion** (pre-registered, active)
 
 - **Trigger:** A body of work adopts the protocol in full — tiers, four fields, kill criteria, and a published negative-results register — and over a sustained period (say, two years or one major revision cycle) shows *no* improvement in calibration versus a comparable body of work that did not adopt it; OR the protocol is shown to systematically *suppress* true claims (chilling correct boldness) at a rate that outweighs the overclaiming it catches.
 - **What dies:** the `[C]` efficacy claim above, and the `[S]` claim that this *particular* arrangement of devices is the right one.
-- **What survives:** the `[A]` fact (the file-drawer problem is still real), and the weaker `[S]` claim that *some* explicit tiering discipline is better than none — the kill criterion above tests *this* design, not the existence of any tiering at all.
+- **What survives:** the `[B]` finding (the file-drawer problem remains documented), and the weaker `[S]` claim that *some* explicit tiering discipline is better than none — the kill criterion above tests *this* design, not the existence of any tiering at all.
 - **Status:** not-yet-tested. No such controlled comparison has been run. Marking it tested would itself be a tier-drift violation.
 
 **The deferred kill criterion** (honestly labeled as deferred, not a near-term integrity test)
@@ -171,8 +171,8 @@ A method of honesty must survive its own ladder, or it is a slogan. Here are the
 
 §5 demands a *standing, published* register of what was tried and failed. A protocol document that shipped only its polished claims would be in violation of its own §5. So, kept here with the same status as the positive claims:
 
-- **What was tried:** an earlier draft of this document described the method as one that *"solves"* the file-drawer problem and tier drift. **Why it seemed promising:** the machinery genuinely does target both. **Why it failed:** "solves" is an `[A]`-shaped word for an `[S]`/`[C]` result — the method makes one failure mode visible and expensive, it does not eliminate dishonesty, and §0 now says so explicitly. **Verdict:** downgraded "solves" → "targets / makes visible," 2026-05-31, with the over-claim recorded rather than quietly deleted.
-- **What was tried:** naming the top rung *"[A] Asserted / measured."* **Why it seemed promising:** alliteration with the gloss. **Why it failed:** "asserted" is the lowest-warrant speech act and inverts the very ladder it heads — naming the strongest tier after bare assertion licenses exactly the laundering the protocol forbids. **Verdict:** renamed *"[A] Attested / measured,"* 2026-05-31.
+- **What was tried:** an earlier draft of this document described the method as one that *"solves"* the file-drawer problem and tier drift. **Why it seemed promising:** the machinery genuinely does target both. **Why it failed:** "solves" is an evidence-complete word for an `[S]`/`[C]` result — the method makes one failure mode visible and expensive, it does not eliminate dishonesty, and §0 now says so explicitly. **Verdict:** downgraded "solves" → "targets / makes visible," 2026-05-31, with the over-claim recorded rather than quietly deleted.
+- **What was tried:** the pre-canonical export dialect named its observation tier *"[A] Asserted / measured,"* then *"[A] Attested / measured."* **Why it failed:** the letter conflicted with the corpus's analytic `[A]` and observation `[B]` contract. **Verdict:** relettered to canonical `[B] Observed / receipted`, 2026-08-01; historical wording remains recorded here, not active in the ladder.
 - **What was tried:** stating the cost as *"six fields per claim."* **Why it failed:** the protocol mandates **four** fields (§3); the count drifted between the abstract and §3 — precisely the silent-bookkeeping-drift the method exists to catch, caught in the method's own front matter. **Verdict:** corrected to "four fields," 2026-05-31.
 
 The register is not an embarrassment to bury; it is the only thing that lets a reader calibrate the surviving claims above. Its non-emptiness is itself the evidence that §5 was applied to this page and not merely printed on it.

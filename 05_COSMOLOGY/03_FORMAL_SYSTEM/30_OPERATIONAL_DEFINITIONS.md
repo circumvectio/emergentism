@@ -176,7 +176,10 @@ not explain.
   separately `[I/C]`.
 - Formal bounds are `[A/S]` only inside named assumptions.
 - Construct invalidity kills the instrument.
-- Product losing to a fair rival kills product fit in that domain.
+- Under a separately defended cardinal scale contract, product losing to a
+  fair rival kills product fit in that domain. Without that contract, arbitrary
+  rank reversal under admissible reparameterization kills the comparison
+  before outcome contact.
 - Selecting reciprocal pairs and then reporting reciprocal symmetry kills the
   study as circular.
 - No evidence type silently upgrades another.

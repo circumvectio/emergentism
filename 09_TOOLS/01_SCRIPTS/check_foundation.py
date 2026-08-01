@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Enforce foundation consistency across its four homes.
+"""Enforce foundation consistency across fourteen checked surfaces.
 
-The foundation is stated in four places by design: K-5 owns R0, the Settled Canon
-Registry routes it (KSC-28), docs 45-47 own the formal results, and
-00_THE_FOUNDATION.md is a projection that states it whole. Projections drift.
-The claim register has a validator; the foundation did not.
+The contract spans four core routing/control surfaces, seven formal documents,
+and three dated ruling receipts. K-5 owns R0, the Settled Canon Registry routes
+it (KSC-28), and 00_THE_FOUNDATION.md is a projection that states it whole.
+Projections drift. The claim register has a validator; the foundation did not.
 
-This checks the invariants that must hold across all four, so that repair work
-cannot silently desynchronise them.
+This checks the invariants that must hold across all fourteen surfaces, so that
+repair work cannot silently desynchronise them.
 
     python3 09_TOOLS/01_SCRIPTS/check_foundation.py
 """
@@ -209,7 +209,7 @@ def main() -> int:
 
     print(
         f"FOUNDATION CONTRACT: PASS "
-        f"({len(required)} homes, {len(FENCES)} fences, "
+        f"({len(required)} surfaces, {len(FENCES)} fences, "
         f"{len(PRESUPPOSED)+len(BASE)} strata symbols)"
     )
     return 0

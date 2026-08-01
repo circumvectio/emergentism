@@ -7,8 +7,8 @@ owner: "Formal System, subordinate to the canonical formula block and mu owner"
 parents:
   - ../00_CANONICAL_FORMULA_BLOCK.md
   - 10_EFR_MU_LIMIT_FORMULA.md
-  - ../../../06_ONTOLOGY/04_THE_CONJECTURES.md
-  - ../../../01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md
+  - ../../06_ONTOLOGY/04_THE_CONJECTURES.md
+  - ../../01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md
 ---
 
 # Saturation, Contrast, and Aperture

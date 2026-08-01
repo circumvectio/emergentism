@@ -37,8 +37,8 @@ authorization, or prove better decisions.
 
 | Card | Source | Tier | Disposition | Public ceiling |
 |---|---|---|---|---|
-| `FIN01-01` | Lived Compass §3B, lines 129–148 | `[S]` chosen practice | retain | A seven-prompt worksheet; not authorization or proven improvement. |
-| `FIN01-02` | Lived Compass §3B, lines 150–156 | `[C]` comparative benefit | research docket | Benefit over fair simpler rivals remains open. |
+| `FIN01-01` | Lived Compass §3B, lines 131–150 | `[S]` chosen practice | retain | A seven-prompt worksheet; not authorization or proven improvement. |
+| `FIN01-02` | Lived Compass §3B, lines 152–158 | `[C]` comparative benefit | research docket | Benefit over fair simpler rivals remains open. |
 
 ## Test obligation
 

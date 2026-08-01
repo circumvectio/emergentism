@@ -203,7 +203,7 @@ The ethic "move toward $B = 1$" becomes, in log coordinates, "minimise your log-
 
 ### 6.4 The Extraction Boundary
 
-The extraction coefficient $\eta$ measures whether the system is moving toward or away from the equator. In log coordinates, $\eta$ is the sign of $ds/dt$. The Nash equilibrium of iterated cooperation ($\eta = 0$) corresponds to the equatorial condition — neither extracting nor being extracted. `[S/E]`
+The selected action register `η_move` records whether a move crosses the non-extraction fence. In the declared iterated-cooperation model, `η_move=0` is represented at the equatorial profile; this is a bounded model reading, not an unconditional Nash theorem. `[S]`
 
 ---
 
@@ -233,12 +233,15 @@ The framework is falsifiable at multiple levels:
 |---|---|---|
 | $1$ is the unique positive fixed point of $x \mapsto 1/x$ | Mathematical proof of another fixed point | `[A]` — cannot be falsified (elementary) |
 | $B = \sin\theta$ is maximised at the equator | Show additive balance outperforms multiplicative | `[S]` |
-| $\eta = 0$ is Nash equilibrium in iterated games | Experimental disconfirmation of tit-for-tat | `[S/E]` |
+| `η_move=0` is the selected non-extraction condition in the declared iterated game | The declared payoff or enforcement model fails, or a fair rival explains the result better | `[S]` |
 | $E = (\log x)^2$ and $B = \operatorname{sech}(s)$ are exact inverses | Mathematical — already proved | `[A]` |
 | The dimensional scaffold $D0 \to D6$ maps to reality | Force-dimension correspondence has no predictive power | `[C]` |
 | The ethic $\Sigma\Delta B > 0$ predicts sustainability | Systems moving toward balance systematically collapse | `[I]` |
 
 The framework includes its own destruction manual: any encoding without falsification, evidence tiers, and self-correction will degrade via institutional capture. `[S]`
+
+The legacy `[E]` marker is retired; external-literature grounding is cited in
+§7 and is not itself a tier.
 
 ---
 

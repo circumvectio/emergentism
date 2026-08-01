@@ -146,7 +146,7 @@ outside active source authority. Consequential action is typed through the
 |---|---|---|
 | μ₁ configuration emergence | open | declared system, saturation statistic, intervention, prediction, and held-out discriminator |
 | μ₄ counterfactual capacity | open | intervention on represented futures with fair D4 baselines |
-| universal product fit | open | preregistered comparison against rival conjunctive aggregators |
+| ordinal AND-class aggregation | open | declare admissible scale transformations; require invariant conclusions, or separately validate commensurate cardinal measures before comparing a product with rival conjunctive aggregators |
 | foresight/means complementarity | open | measure the resource cost of improved option-field modeling and compare candidate budget surfaces; the product alone supplies no tradeoff |
 | nested-horizon coordination | open | preregister `T_L`, `T_S`, bearer vectors, rivals, and tie-breakers; compare receding receipts and voluntary role partitions against fixed plans, ordinary role systems, and generalist teams; reject on proxy harm, lock-in, or no out-of-sample gain |
 | five-crossing census | open | independent discriminators across the proposed interfaces |
@@ -162,11 +162,11 @@ framework remains a compass whose strongest world-facing claims can lose.
 
 ## Assembly-packet status
 
-The eleven pre-existing gates above have packet-complete research contracts in
+The twelve gates above have packet-complete research contracts in
 the [`Grand Puzzle Assembly Ledger`](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md):
 each names its current contact, strongest rival, cheapest honest discriminator,
-kill, and survivor. The nested-horizon coordination gate added 2026-07-28 is
-not yet packet-complete; that missing packet remains an explicit gate.
+kill, and survivor. The nested-horizon coordination packet was installed as
+`GP-12` on 2026-08-01; it remains evidence-open with every other gate.
 **Packet-complete does not mean evidence-complete.** Every gate retains the
 `open` state above until its named world contact occurs.
 

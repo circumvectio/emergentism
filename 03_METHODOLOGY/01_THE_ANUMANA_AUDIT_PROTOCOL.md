@@ -55,7 +55,7 @@ contract between L2 admission and L3 ranking.
 |-------|--------|----------|-------------|
 | **Claim statement** | L2 | Yes | The assertion in unambiguous language |
 | **Source provenance** | Gate 1 | Yes | Traceable origin: document, observation, Rosetta column, empirical datum |
-| **Cross-domain echo** | Gate 2 | Yes | ≥1 confirming column at the same L-level, selected by L3 (not L2) |
+| **Cross-domain echo or exception declaration** | Gate 2 | Yes | ≥1 confirming column at the same L-level, selected by L3 (not L2), or an explicit intrinsically single-domain `[A]/[B]` exception with domain and scope boundary |
 | **Bias disclosure** | Gate 3 | Yes | At least one identified reason the claim might be wrong |
 | **Evidence tier** | Gate 4 | Yes | Labeled [A/B/S/I/D/C] with explicit justification |
 | **Boundary** | Gate 5 | Yes | Explicit scope: what the claim covers and what it does not |
@@ -71,21 +71,22 @@ handoff.
 
 ## §2. The Ranking Dimensions `[I]`
 
-L3 ranks every admitted claim along five dimensions. Each dimension is scored
-independently. The five scores compose the claim's **audit rank**.
+L3 audits every admitted claim along five dimensions. Evidence-type fit is a
+non-compensable gate; the other four dimensions are scored independently and
+compose the claim's **audit rank**.
 
-### Dimension 1: Evidence Tier Strength `[S]`
+### Dimension 1: Evidence-Type Fit `[S]`
 
 The tier label assigned by L2, now evaluated at L3 for structural soundness.
 
-| Tier | Strength Score | Meaning |
-|------|:--------------:|---------|
-| **[A]** Attested / measured | 4 | Established mathematics, textbook physics, third-party empirical data, or direct measurement independent of the framework |
-| **[B]** Built / Verified | 4 | Verified code paths, repository surveys, direct receipts, or functioning-system evidence |
-| **[S]** Structural | 3 | Derived from accepted axioms through valid inference |
-| **[I]** Interpretive | 2 | Synthesis, analogy, ontological bridge, procedural recommendation, or counsel |
-| **[D]** Draft / Demonstration | 1 | Local mock loop, unvalidated draft structure, or demonstration artifact |
-| **[C]** Conjectural | 1 | Plausible but untested; hypothesis or speculation |
+| Tier | Meaning |
+|------|---------|
+| **[A]** Analytic / machine-checked | Formal result whose derivation or check is independently reproducible in the named system |
+| **[B]** Observed / receipted | Custodied measurement, attribution, repository observation, run, build, or outcome receipt |
+| **[S]** Structural | Derived from accepted axioms through valid inference |
+| **[I]** Interpretive | Synthesis, analogy, ontological bridge, procedural recommendation, or counsel |
+| **[D]** Draft / demonstration | Local mock loop, unvalidated draft structure, or demonstration artifact |
+| **[C]** Conjectural | Plausible but untested; hypothesis or speculation |
 
 **L3 check:** Does the tier label match the claim's actual epistemic weight?
 If L2 labeled a claim [S] but it rests on an unproven assumption, L3 must
@@ -113,9 +114,10 @@ column cherry-picking (per the selection-bias control in
 `02_WHEN_PATTERN_BECOMES_CANDIDATE_CLAIM.md` §4).
 
 **Single-column exception:** A claim with no cross-domain echo is not rejected.
-It is scored 0 on this dimension and must compensate with strength on the other
-four. A single-column [A]/[B]-tier claim with a sharp falsification criterion may
-still rank high enough for L4 elevation.
+It is scored 0 on this dimension. It may still elevate only when it is
+intrinsically single-domain, honestly tiered `[A]` or `[B]`, and its domain and
+scope boundary are explicit in the handoff. This is a named minimum exception,
+not score compensation. All other claims require a score of at least 1 here.
 
 ### Dimension 3: Falsification Status `[S]`
 
@@ -169,10 +171,11 @@ the contradiction fully legible before escalation.
 
 ## §3. The Audit Rank Calculation `[I]`
 
-Each dimension is scored 0–3. The composite audit rank is:
+Dimensions 2–5 are scored 0–3 after Dimension 1 passes evidence-type fit. The
+composite audit rank is:
 
 ```
-R = Σ(dimensions 1–5)    Range: 0–15
+R = Σ(dimensions 2–5)    Range: 0–12
 ```
 
 The rank is not a truth score. It is an **audit confidence** score: how
@@ -180,28 +183,29 @@ confident can L3 be that this claim has been properly examined?
 
 | Rank Range | Classification | Action |
 |:----------:|----------------|--------|
-| **12–15** | **Audit-Ready** | May be elevated to L4 for execution consideration |
-| **8–11** | **Under-Specified** | Return to L2 for strengthening on the lowest-scoring dimensions |
-| **4–7** | **Weak** | Return to L2 with specific guidance on which dimensions need the most work |
-| **0–3** | **Rejected** | Return to L2; the claim did not survive L3 audit. Archive the audit record |
+| **9–12** | **Audit-Ready** | May be elevated to L4 for execution consideration |
+| **6–8** | **Under-Specified** | Return to L2 for strengthening on the lowest-scoring dimensions |
+| **3–5** | **Weak** | Return to L2 with specific guidance on which dimensions need the most work |
+| **0–2** | **Rejected** | Return to L2; the claim did not survive L3 audit. Archive the audit record |
 
-**The rank threshold for L4 elevation is 12.** This is not arbitrary: it
-requires the claim to score at least "moderate" on cross-domain confirmation,
-"testable" on falsification status, and at least "defined" on boundary clarity
-— even if evidence tier and structural fit are at maximum. No single dimension
-can compensate for a zero on another.
+**The rank threshold for L4 elevation is 9, with evidence-type fit required.**
+It normally requires at least a weak cross-domain echo, "testable" falsification
+status, and at least "defined" boundary clarity — even if structural fit is at
+maximum. No scored dimension can compensate for a zero on another. The only
+minimum exception is a cross-domain score of 0 for an explicitly bounded,
+intrinsically single-domain `[A]/[B]` claim under the rule above.
 
 **Minimum per dimension for L4 elevation:**
 
 | Dimension | Minimum Score for Elevation |
 |-----------|:--------------------------:|
-| Evidence tier | 1 (conjectural is admissible if all others are strong) |
-| Cross-domain confirmation | 1 (single-column echo must at least be claimed) |
+| Evidence-type fit | PASS (any honest tier is admissible) |
+| Cross-domain confirmation | 1 normally; 0 only for an intrinsically single-domain `[A]/[B]` claim with explicit domain and scope boundary |
 | Falsification status | 2 (must be testable, not just stated) |
 | Boundary clarity | 2 (must be defined, not just stated) |
 | Structural fit | 1 (contradictory claims go to L4 as escalation, not elevation) |
 
-A claim that meets the per-dimension minima but does not reach 12 total is
+A claim that meets the per-dimension minima but does not reach 9 total is
 under-specified. It needs more work, not more weight.
 
 ---
@@ -213,7 +217,7 @@ After ranking, L3 assigns one of three dispositions to every claim.
 ### Disposition 1: Elevate to L4
 
 **Conditions:**
-- Audit rank ≥ 12
+- Audit rank ≥ 9
 - All per-dimension minima met
 - The claim has a concrete action implication (even if the action is "defer")
 
@@ -233,7 +237,7 @@ the books say the warrior should do.
 ### Disposition 2: Return to L2
 
 **Conditions:**
-- Audit rank < 12, or
+- Audit rank < 9, or
 - Any per-dimension minimum not met, or
 - Handoff packet incomplete
 
@@ -248,14 +252,14 @@ of what the market requires.
 
 **Return limit:** A claim may be returned to L2 a maximum of three times. On
 the fourth return, it is archived with the full audit trail. Four rounds of
-L3 audit without reaching rank 12 indicates the claim is not ready or the
+L3 audit without reaching rank 9 indicates the claim is not ready or the
 pattern is not structural. The archive preserves the work; it does not destroy
 it.
 
 ### Disposition 3: Archive
 
 **Conditions:**
-- Rank 0–3 (rejected), or
+- Rank 0–2 (rejected), or
 - Fourth return to L2, or
 - L3 determines the claim is a tautology or belief (not a falsifiable claim)
 
@@ -423,6 +427,8 @@ AUDITOR: [who/what is performing the audit]
 [ ] Claim statement present and unambiguous
 [ ] Source provenance traceable
 [ ] Cross-domain echo identified (columns: ___)
+    OR explicit intrinsically single-domain [A]/[B] exception
+       (domain: ___ / scope boundary: ___)
 [ ] Bias disclosure present
 [ ] Evidence tier labeled with justification
 [ ] Boundary defined (covers: ___ / excludes: ___)
@@ -433,13 +439,15 @@ If any field missing → RETURN TO L2 (handoff incomplete)
 
 ── RANKING ──
 
-Dimension 1 — Evidence Tier Strength:
+Dimension 1 — Evidence-Type Fit:
     L2 label: [___]   L3 assessment: [___]
     Downgrade? Y/N    Reason if Y: ___
-    Score: ___/3
+    Fit: PASS/RETURN
 
 Dimension 2 — Cross-Domain Confirmation:
     Echo columns: ___   L3-verified? Y/N
+    If none, intrinsic single-domain [A]/[B]? Y/N
+    Declared domain: ___   Scope boundary: ___
     Score: ___/3
 
 Dimension 3 — Falsification Status:
@@ -459,24 +467,26 @@ Dimension 5 — Structural Fit:
     Enrichment: Y/N
     Score: ___/3
 
-COMPOSITE RANK: ___/15
+COMPOSITE RANK (Dimensions 2–5): ___/12
 
 ── PER-DIMENSION MINIMA FOR ELEVATION ──
 
-[ ] Evidence tier ≥ 1
+[ ] Evidence-type fit PASS
 [ ] Cross-domain confirmation ≥ 1
+    OR: [ ] intrinsically single-domain [A]/[B] exception
+        Domain: ___   Explicit scope boundary: ___
 [ ] Falsification status ≥ 2
 [ ] Boundary clarity ≥ 2
 [ ] Structural fit ≥ 1
 
 ── DISPOSITION ──
 
-[ ] ELEVATE to L4 (rank ≥ 12, all minima met)
-[ ] RETURN to L2 (rank < 12 or minima not met)
+[ ] ELEVATE to L4 (rank ≥ 9, all minima met)
+[ ] RETURN to L2 (rank < 9 or minima not met)
     Return reason: ___
     L3 guidance to L2: ___
     Return count: ___/3
-[ ] ARCHIVE (rank 0–3, or 4th return, or tautology/belief)
+[ ] ARCHIVE (rank 0–2, or 4th return, or tautology/belief)
     Archive reason: ___
 
 ── FALSIFIER REGISTER ──
@@ -511,7 +521,7 @@ The claim needs more work. The pattern is promising but the audit reveals
 gaps. L3 specifies what is missing. L2 explores further.
 
 This is the healthy path. Most claims return to L2 at least once before
-reaching rank 12. Return is not failure — it is iteration.
+reaching rank 9. Return is not failure — it is iteration.
 
 ### Elevate to L4 (claim is audit-ready)
 
@@ -548,7 +558,7 @@ list is the merchant's account:
 
 ```
 CLAIM: [statement]
-AUDIT RANK: ___/15
+AUDIT RANK (Dimensions 2–5): ___/12
 EVIDENCE TIER: [___]
 
 L3 RECOMMENDATION:
@@ -578,11 +588,11 @@ what remains unclear. The moral dimension belongs to L4 (Value Alignment) and L7
 
 | Pathology | Symptom | Cure |
 |-----------|---------|------|
-| **Greed** | Every admitted claim scores 12+; no claim is ever returned | Apply the per-dimension minima rigidly. If any dimension is 0, the claim cannot elevate regardless of total rank |
-| **Manipulation** | Scores track the auditor's preference, not the evidence | The five dimensions are scored against explicit criteria, not feelings. A second auditor (human or agent) should be able to reproduce the score within ±1 point |
+| **Greed** | Every admitted claim scores 9+; no claim is ever returned | Apply the evidence-fit gate and per-dimension minima rigidly. A scored zero blocks elevation except the documented cross-domain-zero exception for an intrinsically single-domain `[A]/[B]` claim |
+| **Manipulation** | Scores track the auditor's preference, not the evidence | The evidence-type fit and four scored dimensions use explicit criteria, not feelings. A second auditor (human or agent) should be able to reproduce each score within ±1 point |
 | **Paralysis** | Ranking never terminates; every dimension is interrogated infinitely | The audit checklist is finite. Complete it, assign the disposition, move on. Iteration happens through L2 return cycles, not through infinite L3 deliberation |
 | **Bureaucracy** | The audit protocol becomes the purpose rather than the servant | If the audit takes longer than the exploration, L3 has become the bottleneck. Return to L2 and note the procedural failure |
-| **Tier rigidity** | [I] claims are dismissed because they are not [A] or [B] | [I] is a legitimate tier. A well-audited [I] claim with rank 12 is audit-ready. L4 decides what to do with it. L3 ranks honestly; it does not gatekeep by tier alone |
+| **Tier rigidity** | [I] claims are dismissed because they are not [A] or [B] | [I] is a legitimate tier. A well-audited [I] claim with rank 9 or more is audit-ready. L4 decides what to do with it. L3 ranks honestly; it does not gatekeep by tier alone |
 
 ---
 

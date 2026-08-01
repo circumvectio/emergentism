@@ -328,8 +328,9 @@ ConjunctiveAggregator := {
 ```
 
 The selected normalized instance is
-`C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, so `P_node:=C×(Φ̂₄,V₄)`. Selection is `[I]`; universal fit is
-`[C]`.
+`C_min(Φ̂₄,V₄)=min(Φ̂₄,V₄)`, so `P_node:=C_min(Φ̂₄,V₄)`. The product
+`C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, is retired as a ranking. Selection is
+`[I]`; universal fit is `[C]`.
 
 ## 4. Emergence record
 

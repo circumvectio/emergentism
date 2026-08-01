@@ -32,6 +32,19 @@ successors or port with a dated migration receipt.
 
 ## Contents
 
+### `scripts_legacy_convenience_copy_2026_05_04/run_backbone_tests.py`
+
+**Source location (retired from active use on 2026-08-01):**
+`09_TOOLS/01_SCRIPTS/run_backbone_tests.py`
+
+**What:** a legacy runner aimed at `02_ORGANISM/00_BACKBONE`, a path that is
+absent from this repository. It skipped every named test, reported `0 passed,
+0 failed, 0 total`, printed `ALL TESTS PASSED`, and exited zero.
+
+**Reason retained here:** the archived copy was already byte-identical to the
+active duplicate. The misleading active copy was removed; this copy preserves
+the provenance and must not be used as a current gate.
+
 ### `bridge_scripts_2026_04_17/`
 
 **Source location (archived from)**: `05_TOOLS/90_ARCHIVE/bridge_scripts/`

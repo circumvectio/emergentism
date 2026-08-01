@@ -11,7 +11,7 @@ rosetta:
 
 **Status:** Meta-routing inventory; source-owner documents control doctrine and public claims
 **Date:** 2026-04-15
-**Evidence Tier:** Meta-interpretive
+**Evidence Tier:** [I] Meta-interpretive claims; [S] only for the routing inventory itself
 **Depends on:** [00_CANONICAL_FORMULA_BLOCK.md](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md), [00_THE_WELTANSCHAUUNG.md](../05_COSMOLOGY/00_THE_WELTANSCHAUUNG.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](../05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [Open Canon Covenant](00_THE_OPEN_CANON_COVENANT.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](00_KNOWN_UNKNOWNS_PROGRAM.md)
 
 ---

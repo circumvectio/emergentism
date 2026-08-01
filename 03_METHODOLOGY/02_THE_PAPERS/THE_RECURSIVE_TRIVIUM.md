@@ -33,7 +33,7 @@ evidence_tier: "[B] the three things it integrates (Boyd's OODA; the classical T
 
 *Emergentism / the Burrisphere programme (Yves R. Burri). Ideas set out 2024; this statement 2026.*
 
-> **Tiering.** Every claim carries an evidence tier — `[A]` elementary · `[B]` published · `[S]` framework-structure · `[I]` interpretive · `[C]` conjecture — and is never silently upgraded. **The strong word in the title — *subsumes* — is `[S]`, and it is cashed out precisely below: the loop contains OODA and the Trivium as projections; it does *not* beat OODA at OODA's own game (raw tempo).** The four-column correspondence is a `[S/I]` organizing scheme, never a proof that these are *the* necessary columns. The loop is a lens on cognition, not the Ground of it.
+> **Tiering.** Every claim carries an evidence tier — `[A]` analytic or machine-checked · `[B]` custodied observation, attribution, build, run, or receipt · `[S]` framework-structure · `[I]` interpretive · `[D]` draft/demonstration · `[C]` conjecture — and is never silently upgraded. Publication alone does not earn `[B]`, and elementary status alone does not exhaust `[A]`. **The strong word in the title — *subsumes* — is `[S]`, and it is cashed out precisely below: the loop contains OODA and the Trivium as projections; it does *not* beat OODA at OODA's own game (raw tempo).** The four-column correspondence is a `[S/I]` organizing scheme, never a proof that these are *the* necessary columns. The loop is a lens on cognition, not the Ground of it.
 
 ---
 

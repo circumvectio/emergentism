@@ -23,38 +23,15 @@ evidence_tier: "[S] for route discipline and catalogue structure; inherited tier
 type: rosetta-front-door
 ---
 
----
-rosetta:
-  primary_level: L2
-  primary_column: D-Series Row Evidence Front Door
-  secondary:
-    - level: L3
-      column: Row Evidence Audit
-      role: "separate row evidence from interpretive Rosetta mappings"
-    - level: L5
-      column: Generative-Table Topology
-      role: "route the generative table, complete row index, and individual row papers"
-    - level: L6
-      column: Analogy Boundary
-      role: "cap row analogies at their evidence tier"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[A/S/I/C]"
-  canonical_phrase: "D_SERIES_ROWS — Front Door"
-title: "D_SERIES_ROWS"
-evidence_tier: "[A] for cited source scales; [S] for catalogue structure; [I] for the Rosetta mapping; [C] for causal-generation claims."
-type: evidence-front-door
-status: ACTIVE
----
-
 # D_SERIES_ROWS
 
 > Row papers of the Rosetta — each row is one cross-domain mapping of the Burri Sphere onto an independently developed tradition or scale.
 
 **Status:** Active
 **Register:** `[A]` for cited source scales · `[S]` for catalogue structure · `[I]` for the Rosetta mapping · `[C]` for causal-generation claims
-**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card; `CLAUDE.md` does not exist here — agents read `AGENTS.md`.
+**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card;
+[`CLAUDE.md`](CLAUDE.md) is the Claude-tools compatibility shim, not a second
+authority.
 
 ## What This Folder Is
 

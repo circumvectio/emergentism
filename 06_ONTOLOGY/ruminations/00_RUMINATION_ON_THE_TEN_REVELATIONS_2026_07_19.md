@@ -77,7 +77,7 @@ Discovered by failure, in real time: when the mortal-signer membrane is saturate
 
 ## 10 · Cutting the commerce healed the philosophy
 
-Venture accounting that narrows η=0 to "toward cooperators" quietly leaves substrate and victim uncovered. Separation did not diminish the Weltanschauung — it *restored* it. The purest formulation of the ethics only became visible when the business was stripped away.
+Venture accounting that narrows `η_move=0` to "toward cooperators" quietly leaves substrate and victim uncovered. Separation did not diminish the Weltanschauung — it *restored* it. The purest formulation of the ethics only became visible when the business was stripped away.
 
 ---
 

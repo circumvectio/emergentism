@@ -11,8 +11,10 @@ rosetta:
 
 # 04_AXIology — Justice Constrains Commitment
 
-This lane owns pure Emergentist value theory. It does not inherit authority or
-warrant from any institution, product, or external governance framework.
+This lane owns pure Emergentist value theory together with the cross-level
+bridge-law discipline governing how any claim — including a value claim — may
+travel between D-levels. It does not inherit authority or warrant from any
+institution, product, or external governance framework.
 
 ## Core contract
 
@@ -88,8 +90,9 @@ active doctrinal authority.
 
 - The moral and ethical formulae are `[S]` inside their declared definitions;
   they do not derive an ought from mathematics alone.
-- `P_node=ΦV` is the selected normalized Emergentist instance of a broader
-  conjunctive family, not the uniquely forced measure of value.
+- `P_node=min(Φ̂₄,V₄)` is the selected working score over ordinal factors. The
+  historical product form `Φ̂₄V₄` / public `ΦV` remains an AND-class name but
+  may not rank, score, or compare nodes.
 - Sphere-chart identities are analytic facts only; they do not prove ethics.
 - The deity, warrior, and equator language is `[I]` translation.
 - Consequential action uses an `AuthorizationEnvelope`; ordinary reversible AI

@@ -37,11 +37,20 @@ B := 2/(φ + ν) = sin θ ≤ 1
 
 ## Meaning
 
-- The first three lines define the open colatitude/radial coordinate of a
+- The first three lines define one open positive-radial meridian of a
   stereographic chart and its reciprocal. They do not include the azimuth and
   therefore are not, by themselves, a full chart of `S²`.
 - `φ·ν=1`, `φ+ν≥2`, and `B≤1` then follow analytically.
 - Equality in the last two statements occurs at `φ=ν=1` (`θ=π/2`).
+
+**Selected orientation convention.** Here `θ` is measured from the selected
+south boundary `•`; it is a south-origin polar parameter, not the standard
+geographic colatitude label. Along the selected positive-radial meridian,
+`z=ν=tan(θ/2)`: `θ→0,ν→0,φ→∞` is south/`•`, while
+`θ→π,ν→∞,φ→0` is north/`○`. Reversing the geographic words would give an
+analytically equivalent orientation, but it is not this corpus's selected
+convention. The reciprocal identity, AM-GM bound, balance formula, and equator
+do not depend on those geographic labels.
 
 These are **chart facts only**. They do not establish an empirical conservation
 law, an ontology, an ethic, a teleology, a universal objective, or the finite

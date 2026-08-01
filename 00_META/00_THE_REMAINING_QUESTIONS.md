@@ -345,7 +345,7 @@ not another paragraph but contact, mechanism, and consequence:
 7. **Does practice help real participants without becoming capture technology?**
 8. **Can correction and exit survive success, scale, and institutional sedimentation?**
 
-The complete eleven-socket contract is the
+The complete twelve-socket contract is the
 [Grand Puzzle Assembly Ledger](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md).
 
 Those are no longer confusions of categories.

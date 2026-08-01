@@ -1,7 +1,7 @@
 ---
 rosetta:
   primary_column: "Music"
-  register: "[E/S/I]"
+  register: "[B/S/I]"
   canonical_phrase: "14 — Music Column Cell Audit"
 ---
 

@@ -11,7 +11,7 @@ rosetta:
       role: "keep root-level compatibility aliases from becoming authority"
     - level: L4
       column: Execution Handoff
-      role: "route current decisions to owner lanes and K2-gated actions"
+      role: "route current decisions to their named owner lanes"
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
@@ -46,10 +46,10 @@ It is where the corpus records:
 
 | File | Function |
 |------|----------|
-| ~~`50_IMPLEMENTATION_REVIEW.md`~~ | **Archived 2026-04-22** to `/08_ARCHIVE/uplink_legacy/2026-04-22/audits_50-52/` — superseded by `61_`. Root compat stub updated. |
-| ~~`51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md`~~ | **Archived 2026-04-22** — same reason. |
-| ~~`51_END_OF_SESSION_SUMMARY.md`~~ | **Archived 2026-04-22** — same reason (also resolved `51_` numbering collision). |
-| ~~`52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md`~~ | **Archived 2026-04-22** — same reason. |
+| `50_IMPLEMENTATION_REVIEW.md` | **Compatibility stub retained in this lane.** It claims original custody at `90_ARCHIVE/01_LANE_LEGACY/uplink/2026-04-22/audits_50-52/50_IMPLEMENTATION_REVIEW.md`, but neither that archive directory nor the original resolves in this repository as of 2026-08-01. The `MAGNUM_OPUS_BACKUP_2026-06-18.zip` cold backup was also checked: it contains this same stub, not the claimed original or archive directory. Current route: `61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md`. |
+| `51_EFFECTIVENESS_EFFICIENCY_AND_LOGIC_AUDIT.md` | **Compatibility stub retained in this lane.** It cites the same unlocated archive directory. The repository and named 2026-06-18 cold backup contain only the retained stub, not an archived original. Current route: `61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md`. |
+| `51_END_OF_SESSION_SUMMARY.md` | **Compatibility stub retained in this lane.** It cites the same unlocated archive directory. The repository and named 2026-06-18 cold backup contain only the retained stub, not an archived original. Current route: `61_UPLINK_AND_WIKI_ROUTING_AUDIT_2026_04_19.md`. |
+| `52_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` | **No compatibility stub or archived original located.** The previously claimed 2026-04-22 archive custody resolves in neither this repository nor the named 2026-06-18 cold backup; absence is recorded, not repaired by invention. |
 | `52a_CONTINUOUS_RECURSIVE_DISAMBIGUATION.md` | active version after resolving collision with `52_K4_BOND_SMART_CONTRACT_SPEC.md` |
 | `53_DISAMBIGUATION_REVIEW_PACKET.md` | operational packet for running disambiguation on a touched surface |
 | `54_FRAMEWORK_SELF_APPLICATION_PROTOCOL.md` | lawful way to turn the framework inward on the corpus |
@@ -89,6 +89,6 @@ The two series are intentionally co-located (per memory `feedback_emergentism_nu
 
 ## Do Not Use This Lane For
 
-- inventing new doctrine that belongs upstream in `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/` or `SKYZAI_ORG/`
+- inventing new doctrine that belongs upstream in `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/`
 - treating root compatibility aliases as competing authority surfaces
 - editing summaries first when the owner surface is what actually needs repair

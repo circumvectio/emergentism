@@ -6,7 +6,6 @@ evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); 
 owner: "Emergentism methodology"
 parents:
   - ./00_SETTLED_CANON_REGISTRY.md
-  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/127_EMERGENTIST_COMPASS_KINTSUGI_REPAIR_2026_07_18.md
 ---
 
 # The Kintsugi Protocol

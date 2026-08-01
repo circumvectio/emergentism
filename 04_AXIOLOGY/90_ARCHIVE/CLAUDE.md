@@ -38,11 +38,12 @@ This folder is **archived**. It preserves historical content under K3 discipline
 
 ## Cross-cutting laws
 
-- **K2:** every irreversible act requires natural-person signature.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; leave with everything.
-- **A7:** self-correction with evidence tier on every claim.
+This compatibility shim states none. Read the active owners:
+[`../00_THE_EXTRACTION_LAW.md`](../00_THE_EXTRACTION_LAW.md) for the
+`η_ratio` / `η_move` registers and
+[`../02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`](../02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md)
+for the Justice envelope and authorization contract. Historical bytes below
+remain provenance, not current instruction.
 
 `Zero-Sum Resolution Equation`
 

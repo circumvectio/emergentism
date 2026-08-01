@@ -607,7 +607,7 @@ class FinityPracticeGateTests(unittest.TestCase):
         lines = source.read_text(encoding="utf-8").splitlines()
         expected = {
             "FIN01-01": {
-                "locator": {"section": "3B", "line_start": 129, "line_end": 148},
+                "locator": {"section": "3B", "line_start": 131, "line_end": 150},
                 "markers": (
                     "## 3B. The Finity Card",
                     "**Finity Card**",
@@ -617,7 +617,7 @@ class FinityPracticeGateTests(unittest.TestCase):
                 ),
             },
             "FIN01-02": {
-                "locator": {"section": "3B", "line_start": 150, "line_end": 156},
+                "locator": {"section": "3B", "line_start": 152, "line_end": 158},
                 "markers": (
                     "selected practice `[S]`",
                     "remains `[C]`",

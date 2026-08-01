@@ -2,7 +2,7 @@
 title: "The Empirical Program Board"
 status: "ACTIVE — dimension-first world-contact queue"
 date: 2026-04-14
-updated: 2026-07-22
+updated: 2026-08-01
 evidence_tier: "[B] recorded contacts/results; [S] routing; claims retain owner-declared tiers"
 owner: "03_METHODOLOGY empirical routing; board is not a result"
 parents:
@@ -42,10 +42,11 @@ Never translate `formal-only` or `local-result` as “confirmed.”
 |---|---|---|---|---|---|
 | **GP-01** | relation/configuration adds intervention-sensitive discrimination beyond an element inventory | formal D2 constructions; macro-constraint toy harness is local only | **ready-to-freeze** | choose one real system, freeze element-only and relation-aware rivals, intervention, outcome, and held-out split | `mu_1` local evidence only |
 | **GP-02** | a distinct counterfactual-capacity variable adds value beyond rich D4 planning/control | future-model experiments touch the weak component | **component-contact** | define D5 variable independently; compare with model-based, model-free, memory, and search baselines | `mu_4` local evidence only |
-| **GP-03** | ~~normalized product out-predicts rival AND/additive aggregators in at least one frozen domain~~ — **void as written**: the 2026-07-29 ordinal ruling retired the product as a ranking, so there is no product ranking left to test; no replacement socket is opened here | non-uniqueness and ranking counterexamples are formal; [public preregistration request opened](https://github.com/circumvectio/emergentism/issues/3) | **deferred** | **unfreezable as written.** The entry condition demanded independent `Phi/V` **measures**; under the ordinal ruling `Phi` and `V` carry order, not metric, so no such measure exists and the freeze cannot be accepted. Re-freezing needs either (a) a discriminator invariant under a common strictly increasing reparametrisation of both factors, or (b) a separately declared and defended cardinal scale for each factor. Neither exists today. This cost was accepted with the ruling and is recorded here rather than absorbed | nothing, until (a) or (b) lands; W3 is closed as a product-beats-min prosecution |
+| **GP-03** | determine whether any cross-factor AND-class conclusion is identifiable from the declared ordinal inputs; the product ranking remains retired | no cross-factor scalar rank; the selected minimum convention; other conjunctive rules; a product only under separately defended cardinal scales | **deferred** | freeze admissible transformations and test conclusion invariance; if a lawful scale contract cannot be supplied, publish non-identifiability. The earlier [public preregistration request](https://github.com/circumvectio/emergentism/issues/3) predates the ordinal ruling and is not executable as written | joint necessity and the selected minimum convention; any cardinal aggregator remains local to its defended measurement contract |
 | **GP-04** | foresight and usable means follow a measurable resource surface | physical information cost is a neighbor; no validated node budget | **ready-to-freeze** | compare no-tradeoff, additive, nonlinear, and state-dependent surfaces | W4 complementary-saturation sub-wager |
 | **GP-05** | exactly five candidate apertures capture independently discriminable freedoms | no crossing-specific empirical packet has fired | **formal-only** | run one seam at a time; no joint score before each row has novelty and recovery tests | one crossing at a time, then the census |
 | **GP-06** | the five-marker Egregoreotype composite predicts beyond carriers and incentives | trace-mediated coordination has external component contact | **component-contact** | carrier replacement plus trace removal/scrambling with costs recorded | W9 composite only |
+| **GP-12** | nested learning and responsibility horizons with explicit bearers, tie-breakers, and exit outperform ordinary governance rivals without proxy harm or lock-in | packet design only; no observed outcome evidence | **ready-to-freeze** | preregister `T_L`, `T_S`, bearer vector, voluntary roles, authority, tie-breakers, exit costs, tragic residue, and held-out delivery/harm/lock-in/exit outcomes | the coordination proposal only; no cosmic telos, caste truth, or authority upgrade |
 | **GP-07** | represented future content changes present selection beyond salience/framing controls | episodic-future cues changed delay discounting in published work | **component-contact** | preregister content-specific manipulation and matched salience, demand, reward, memory, and expectancy controls | W8 weak causal content |
 | **GP-08** | ontic plurality of complete histories has an observation distinct from epistemic support | no local discriminator | **deferred** | produce an interpretation-sensitive observation or publish non-identifiability | strong block-plurality correspondence only |
 | **GP-09** | history-bundle growth varies independently of Minkowski causal volume and model resolution | no independent metric | **deferred** | define and validate history entropy before comparing it with cone geometry | light-cone/history-bundle correspondence only |
@@ -74,19 +75,19 @@ board.
 
 The active order is inherited from the Known Unknowns Program:
 
-1. GP-03 aggregator comparison — **blocked**: unfreezable as written under the
-   2026-07-29 ordinal ruling (see the GP-03 row); it keeps first place only as a
-   placeholder until a reparametrisation-invariant discriminator exists;
+1. GP-03 scale-contract and aggregation invariance — **blocked** until a
+   reparameterization-invariant discriminator or defended cardinal measures exist;
 2. GP-04 resource-surface measurement;
 3. GP-07 controlled future-content effect;
 4. GP-01 relation intervention;
 5. GP-06 Egregoreotype trace intervention;
-6. GP-02 distinct counterfactual capacity;
-7. GP-09 independent history-bundle metric;
-8. GP-05 crossing census;
-9. GP-10 force rows;
-10. GP-08 plurality discriminator or non-identifiability;
-11. GP-11 integrated-worldview test.
+6. GP-12 nested-horizon coordination;
+7. GP-02 distinct counterfactual capacity;
+8. GP-09 independent history-bundle metric;
+9. GP-05 crossing census;
+10. GP-10 force rows;
+11. GP-08 plurality discriminator or non-identifiability;
+12. GP-11 integrated-worldview test.
 
 Priority is methodological, not metaphysical: run the cheapest test that can
 genuinely change a claim before the grandest test that cannot.

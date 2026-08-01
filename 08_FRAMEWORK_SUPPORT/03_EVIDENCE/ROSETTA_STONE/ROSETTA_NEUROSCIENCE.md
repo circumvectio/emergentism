@@ -15,11 +15,11 @@ rosetta:
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[E/I/C]"
+  register: "[B/I/C]"
   canonical_phrase: "Rosetta Stone — neuroscience and cognition"
 title: "Rosetta Stone: Neuroscience & Cognition"
 status: "ACTIVE — per-domain Rosetta application"
-evidence_tier: "[S] for L1-L4 neuroscience anchors; [I] for L5-L6 meditation-derived mapping; [C] for L7 Global Workspace/non-dual mapping."
+evidence_tier: "[B] for attributed neuroscience background; [I] for the L1-L6 mapping; [C] for L7 Global Workspace/non-dual mapping. No local measurement receipt is claimed."
 ---
 
 # rosetta stone: NEUROSCIENCE & COGNITION

@@ -500,7 +500,9 @@ zero width  ←—— ι ——→  infinite width
 > **Finity is not a number. It is the family of non-degenerate shapes — and the
 > poles are exactly where shape stops existing.**
 
-`⊙` names the open interior of that family; `•` and `○` name its two collapses.
+Finity names the open interior of that family; `⊙` names the selected
+finite-unit-facing `1_T` seat at the distinguished middle. `•` and `○` name the
+two collapses.
 This is the geometric statement of what doc 47 §3 proved algebraically: the
 interior is **prior**, and the poles are its boundary rather than its parents. A
 family of triangles has two ways to stop being a triangle, and those two ways are

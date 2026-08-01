@@ -200,6 +200,24 @@ The L7's 5 cold-reader failures on the public site (5+1 two-clicks-deep, /record
 
 **Filing the 13 unfiled verdicts to `00_HANDOFF/` is in the next Box-9 batch** (additive, no move, no rename, no archive, no tier promotion).
 
+**Filed 2026-07-31 (audit correction — additive: no move, no rename, no archive, no tier promotion, no sign box checked).** All 13 verdicts described above as “not yet filed” are filed in this directory, added in commit `711522b6`. The `bg_*` task IDs cited earlier in this dated packet are superseded by the paths below; each filed verdict carries its originating `task_id:` in its own front matter. Every verdict keeps `status: "FILED — counsel only"` at its original tier. The line above remains as the historical state; this note records the later filing rather than rewriting it.
+
+| Verdict | Task ID | Filed in this directory |
+|---|---|---|
+| L2.4 Reap+Seed+Door | `bg_7210baaf` | `L2.4_CLAIM_VS_EVIDENCE_REAP_SEED_DOOR_2026_07_20.md` |
+| L3.4 citations 12+90+91 | `bg_74a3fb0e` | `L3.4_CITATIONS_12_90_91_2026_07_20.md` |
+| L1.3 06_ONTOLOGY firewall | `bg_6dd41834` | `L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md` |
+| L3.2 citations 00_META + 11_UPLINK | `bg_7d38db3a` | `L3.2_CITATIONS_00_META_11_UPLINK_2026_07_20.md` |
+| L5 architect review | `bg_1d4199ca` | `L5_BRAHMANA_ARCHITECT_REVIEW_2026_07_20.md` |
+| L2.2 E1–10 + W0–12 | `bg_85ea29cf` | `L2.2_CLAIM_VS_EVIDENCE_E1-10_W0-12_2026_07_20.md` |
+| L1 corpus firewall | `bg_a3264c01` | `L1_CORPUS_CONTRADICTION_FIREWALL_2026_07_20.md` |
+| L2.3 5+1 + 22 dead | `bg_fea2b9e2` | `L2.3_CLAIM_VS_EVIDENCE_5+1_22_DEAD_2026_07_20.md` |
+| L1.2 shadow scan (7 insights) | `bg_a1236f17` | `L1.2_SHADOW_SCAN_7_INSIGHTS_2026_07_20.md` |
+| L6 K3 archive (second instance) | `bg_84e688df` | `L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md` |
+| L7 constitutional witness | `bg_17999bb2` | `L7_RSI_CONSTITUTIONAL_WITNESS_2026_07_20.md` |
+| L1.4 11+12 firewall | `bg_10eb303c` | `L1.4_CONTRADICTION_FIREWALL_11_12_2026_07_20.md` |
+| L1.2 00_META firewall | `bg_6ffb1e40` | `L1.2_CONTRADICTION_FIREWALL_00_META_2026_07_20.md` |
+
 ## 11 · K2 sign line (extended)
 
 ☐ I sign **Box A** — receipt-145 authority ruling, choose (i) / (ii) / (iii). Tier: `[D]` STAGED → `[A]` K2-SIGNED YYYY-MM-DD. The de-collision of 146A vs 146B is part of this ruling.

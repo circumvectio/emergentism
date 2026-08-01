@@ -5,11 +5,15 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[s]"
+  register: "[S/I]"
   canonical_phrase: "CORRECTION: Wolfram NKS Integration"
+evidence_tier: "[S] correction inside the declared corpus grammar; [I] κ=0 ground-facing reading"
 ---
 
 # CORRECTION: Wolfram NKS Integration
+
+**Evidence tier:** `[S]` for the correction inside the declared corpus grammar;
+`[I]` for the κ=0 ground-facing reading.
 
 ## From Computational Irreducibility to Maximum Reducibility (κ = 0)
 

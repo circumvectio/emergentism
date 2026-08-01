@@ -2,7 +2,7 @@
 title: "The Known Unknowns Program"
 status: "ACTIVE — dimension-first research constitution"
 date: 2026-04-15
-updated: 2026-07-22
+updated: 2026-08-01
 evidence_tier: "[S] research-routing contract; each claim and result retains its own tier"
 owner: "00_META routing only"
 parents:
@@ -34,7 +34,7 @@ claims, or turn a complete question packet into evidence.
 | **deferred** | a prerequisite definition, instrument, dataset, or native-theory bridge is absent | build the prerequisite or leave the claim alone |
 | **frozen** | deliberately parked because its test is presently impossible, unsafe, or dominated by a cheaper question | do not reopen without a new enabling condition and dated reason |
 
-The D0–D6 owner contracts are internally complete. The eleven `GP` sockets are
+The D0–D6 owner contracts are internally complete. The twelve `GP` sockets are
 packet-complete and evidence-open. No contradiction exists between those two
 sentences.
 
@@ -48,7 +48,7 @@ models, and which survive contact?
 | Socket | Work now | Deliverable |
 |---|---|---|
 | `GP-01` `mu_1` | choose a declared system with identical element inventories and intervenable relation structure | held-out comparison of element-only and relation-aware models |
-| `GP-03` product fit | freeze domain, outcome, normalization, and rival aggregators before fitting | cross-validated ranking and calibration report including nulls |
+| `GP-03` ordinal AND-class aggregation | declare the admissible scale transformations and test conclusion invariance; compare cardinal aggregators only after separately validating commensurate measures | invariance or non-identifiability report first; held-out comparison only under a lawful scale contract |
 | `GP-04` foresight/means complementarity | measure option-model quality, actual resource cost, and remaining usable means independently | candidate budget-surface comparison; no chart-to-node inference |
 
 **Stop rule:** if the measurement choices already encode the desired result,
@@ -99,6 +99,7 @@ value without smuggling in consciousness or ethics?
 | Socket | Work now | Deliverable |
 |---|---|---|
 | `GP-06` Egregoreotype | identify a trace-bearing system where carriers can turn over and the trace can be removed or scrambled | five-marker pass/fail report with payer and substrate costs visible |
+| `GP-12` nested-horizon coordination | preregister long and short horizons, bearer vector, voluntary role assignments, tie-breakers, exit costs, and tragic residue | held-out comparison with fixed plans, ordinary role systems, generalist teams, and standard multi-objective governance |
 | `GP-11` integrated adequacy | compare the complete grammar with serious plural-domain rivals on one novel frozen prediction | external red-team report, replicated discriminator, and published null route |
 
 The Justice envelope governs how studies treat participants and consequence
@@ -166,19 +167,22 @@ theory of everything.
 
 Work proceeds in this order unless a new enabling condition changes the cost:
 
-1. **GP-03 aggregator comparison** — formal and existing-data friendly.
+1. **GP-03 scale-contract and aggregation invariance** — resolve
+   identifiability before any outcome comparison.
 2. **GP-04 resource-surface measurement design** — clarifies the user's
    foresight/means saturation insight without assuming it.
 3. **GP-07 controlled future-content effect** — component contact already exists;
    the next task is mechanism separation.
 4. **GP-01 relation intervention** — tests the cleanest candidate aperture.
 5. **GP-06 Egregoreotype trace intervention** — composite but operational.
-6. **GP-02 distinct counterfactual capacity** — only after fair D4 baselines.
-7. **GP-09 history-bundle metric** — only after independent definition.
-8. **GP-05 crossing census** — row-by-row, never as one score.
-9. **GP-10 force map** — native theory before numerology.
-10. **GP-08 ontology-sensitive plurality test** — defer if non-identifiable.
-11. **GP-11 integrated worldview test** — last, because it inherits every earlier
+6. **GP-12 nested-horizon coordination** — freeze bearers, tie-breakers, exit,
+   and ordinary-governance rivals before comparison.
+7. **GP-02 distinct counterfactual capacity** — only after fair D4 baselines.
+8. **GP-09 history-bundle metric** — only after independent definition.
+9. **GP-05 crossing census** — row-by-row, never as one score.
+10. **GP-10 force map** — native theory before numerology.
+11. **GP-08 ontology-sensitive plurality test** — defer if non-identifiable.
+12. **GP-11 integrated worldview test** — last, because it inherits every earlier
     measurement error.
 
 ## 4. Deferred and frozen boundaries

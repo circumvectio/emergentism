@@ -8,8 +8,8 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); chronology current through 176; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
-date: 2026-07-29
+status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 234, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+date: 2026-08-01
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
 parents:
@@ -119,7 +119,10 @@ that recorded the kill):
 
 ## 3 · The living ledger (the receipt trail)
 
-The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery arc that assembled the current kernel:
+The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery
+arc that assembled the current kernel. From receipt 177 onward, every located
+receipt is cited by full filename; missing prefixes are recorded as absences,
+never back-filled:
 
 | № | Receipt | What it fired / recorded |
 |---|---|---|
@@ -170,6 +173,31 @@ The raw trial record: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`. The post-recovery a
 | 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | **Owner ruling: all 22 dead forms → `OWNER-REOPENED`**, counterexamples intact, each with a `repair_path`. Separately, the three Titan identities restored **by proof** on `Ĉ`; `KSC-04` preserved. |
 | 175 | `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` | Sphere primacy ruled and executed; the number line shown to be the `ι`-invariant **meridian** of the sphere, so nothing was lost by it; arithmetic becomes chart-local; Suda adopted at tier. |
 | 176 | `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` | `R0` "no necessary being" adopted into K-5 as the foundational **refusal**, prior to the five and different in type; `KSC-28` recorded. Later restratified — the base is the three relations; the sphere is emergent. |
+| 177 | `177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md` | Correction receipt: WP-1's validator defects and a false attestation were recorded; the validator was hardened without erasing the failure. |
+| 178 | `178_FIRST_EXTERNAL_ORACLE_LEAN_2026_07_29.md` | Outcome receipt for the first Lean 4 oracle run over the declared analytic claim set; build result and axiom trace remain bounded to the checked statements. |
+| 179 | `179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md` | HR-1 decision packet; its Option C recommendation was later adopted, retiring type-D as the μ-criterion while preserving the boundary taxonomy. |
+| 180 | **No receipt file located (checked 2026-08-01).** | Explicit prefix gap. No title, content, outcome, or custody is inferred, and the number is not back-filled. |
+| 181 | `181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md` | Correction receipt preserving a false suite-pass attestation and the two pre-existing failures it exposed. |
+| 182 | `182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md` | Lean 4 + mathlib outcome for the load-bearing negative claim that `Ĉ` is not a ring; the receipt states the exact theorem and axiom bounds. |
+| 183 | `183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md` | Correction receipt recording four defects in the newly built manifest/checker surfaces and their executed repairs. |
+| 184 | `184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md` | Proposed ruling: the zero-factor annihilation half survives, while the product interior and derivation of the seven rows remain unwon. |
+| 185 | `185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md` | Owner-confirmed positive-only ruling for §5.2; `F = m·a` recorded as the third constitutive identity at its declared tier. |
+| 186 | `186_ITEM_7_COSMOLOGICAL_TEST_AND_ITEMS_3_AND_6_LANDED_2026_07_30.md` | Outcome receipt: the horn-torus cosmological test failed; the named item 3 and item 6 dispositions were landed separately. |
+| 187 | `187_THE_SEVEN_FROM_GEOMETRY_RULED_2026_07_30.md` | Proposed ruling: `3 + 4 = 7` is a concatenation, not a derivation, and D5's own seven-cell claim does not close as stated. |
+| 188 | `188_THE_PARADOX_INVENTORY_2026_07_30.md` | Publication assessment: 0 of 21 items counted as dissolved; four were assessed as publishable, none as a dissolution. |
+| 189 | `189_D6_D0_GENERATOR_HUNT_2026_07_30.md` | Generator hunt counted 73 live D6~D0 assertions and identified a structural source; the receipt left the standing-fence disposition open. |
+| 190 | `190_R188_WAS_WRONG_ABOUT_PD_25_2026_07_30.md` | Same-session correction: receipt 188's judgment about PD_25 was wrong and was recorded before action. |
+| 191 | `191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md` | Line 4's energy register was shown degenerate; a citation-checker defect was gated, with 91 ambiguous receipt numbers still awaiting owner disposition. |
+| 192 | **No receipt file located (checked 2026-08-01).** | Explicit prefix gap. No title, content, outcome, or custody is inferred, and the number is not back-filled. |
+| 193 | `193_FIVE_RULINGS_SIGNED_2026_07_31.md` | Five corpus selections recorded with the owner's countersignature; the receipt keeps each ruling at `[S]` and distinguishes cited analytic and runtime evidence. |
+| 232 | `232_FIVE_RULINGS_EXECUTED_2026_07_31.md` | Execution record for receipt 193's five selections; it preserves the two defects surfaced by the execution and does not promote their tiers. |
+| 233 | `233_LIBRARY_GFS_RESIDUE_ANSWERS_Q6_DISSENT_2026_07_31.md` | Partial Q6 library audit: 50 frozen pages were measured as citing the retracted GFS study without a fence; the receipt reports the measurement, not a new ruling. |
+| 234 | `234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md` | All 229 actionable findings receive durable dispositions; the all-false lane Boolean is calibrated, remaining debt stays explicit, and local completion remains gated from world contact. |
+
+Prefixes 194–231 are present in the frozen
+[`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
+recorded here as missing receipts. This lane-specific ledger does not infer from
+that fact which allocation rule governs a future receipt.
 
 **Historical authority correction (2026-07-20).** Receipts 139–146 remain
 preserved as an accurate record of how that execution dispute was described.
@@ -208,7 +236,16 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 
 ## 6 · The receipt-prefix collision census (full)
 
-Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20 and not re-run since**. Receipts 169–176 are therefore **absent from the table below** — they are listed in §3 and are known to carry no prefix collision, but the census itself is stale as of 2026-07-29 and is marked so rather than silently extended. **Rule: never rename any receipt.** A bare № is ambiguous wherever this table lists more than one entry — cite the **full filename**, not the number. Dates are filename dates where present; otherwise the file's modification date on 2026-07-20 (`[B]` disk state). One-line scopes are filename-derived `[B]`.
+Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20
+and not re-run since**. Existing receipts 169–179, 181–191, 193, and 232–234 are
+therefore **absent from the table below**; prefixes 180 and 192 have no receipt
+file located as of 2026-08-01. Section 3 records both the located filenames and
+the two explicit gaps, but this collision census remains stale rather than
+silently extended. **Rule: never rename any receipt.** A bare № is ambiguous
+wherever this table lists more than one entry — cite the **full filename**, not
+the number. Dates are filename dates where present; otherwise the file's
+modification date on 2026-07-20 (`[B]` disk state). One-line scopes are
+filename-derived `[B]`.
 
 | Prefix | Filename | Date | One-line scope |
 |---|---|---|---|

@@ -88,7 +88,7 @@ as a social or hereditary order. Applications may borrow Emergentist concepts;
 they cannot warrant the worldview. The scoped sign grammar and Rosetta work
 roles survive only at their declared structural/interpretive tiers.
 
-**One cut heals a wound.** A venture-scoped `η=0` cannot narrow the pure vow to convenient cooperators while leaving substrate, victim, or outcaste outside consideration. The pure ethic must identify actual impact-bearers and sustaining boundaries. But an aggregate `ΣΔP` is not restored as the moral primitive: aggregation can still license sacrifice, so dyadic/boundary gates and explicit impact accounting remain necessary.
+**One cut heals a wound.** A venture-scoped `η_move=0` cannot narrow the pure vow to convenient cooperators while leaving substrate, victim, or outcaste outside consideration. The pure ethic must identify actual impact-bearers and sustaining boundaries. But an aggregate `ΣΔP` is not restored as the moral primitive: aggregation can still license sacrifice, so dyadic/boundary gates and explicit impact accounting remain necessary.
 
 ## 5 · What survives, and the honest limit
 
@@ -99,7 +99,7 @@ metalanguage; they are not three D0 objects and admit no arithmetic.
 **Load-bearers that stand alone `[A]`/`[S]`:** the reciprocal chart `φ·ν=1`
 (a coordinate identity, *not* a conserved law); balance/energy `B=sinθ`,
 `H=φ+ν≥2` minimized at the equator; **finity** `1` as the self-dual positive
-point (six senses, `[A]`); the selected mixed numeric/projective witness
+point (the unique fixed point of inversion on `ℝ_{>0}`, `[A]`); the selected mixed numeric/projective witness
 `{−1,0,1,∞}` (not a cardinal set, not ordinary orbit closure, and not the
 sovereign Titan meta-frame); and the four Möbius classes.
 

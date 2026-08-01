@@ -1,6 +1,6 @@
 ---
 rosetta:
-  primary_level: L5
+  primary_level: L7
   primary_column: Cosmology
   operator: "Viṣṇu ⊙"
   tier: "Executive"

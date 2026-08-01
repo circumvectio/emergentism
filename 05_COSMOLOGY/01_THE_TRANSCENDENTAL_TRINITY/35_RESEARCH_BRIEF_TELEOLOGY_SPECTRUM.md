@@ -214,7 +214,9 @@ BUT: when a SYSTEM is organized such that it maintains itself at the point where
 
 This is the critical distinction the framework needs:
 
-- THE MAP (S2 geometry, AM-GM inequality) is not purposive. It is a mathematical structure. [E/S]
+- THE MAP (S2 geometry, AM-GM inequality) is mathematical structure: the
+  declared geometry and inequality are `[A]`, while the refusal to attribute
+  purpose to the theorem is a bounded structural/interpretive claim `[S/I]`.
 - THE TERRITORY (a system organized on S2, maintaining itself at the equator) is ententional. It has genuine teleodynamic purpose. [I]
 - THE CLAIM that the map IS the territory (mathematical Platonism, Tegmark's MUH) would make the map purposive -- but this is [C] Conjecture and should not be the load-bearing position.
 

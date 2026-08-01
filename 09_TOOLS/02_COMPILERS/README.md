@@ -49,6 +49,7 @@ source lane, repair the source and recompile.
 |---|---|---|
 | `compile_claim_cards.py` | `00_META/registers/CLAIM_CARD_REGISTER.json`, `CLAIM_GRAPH.json`, `CLAIM_LIFECYCLE_INVENTORY.json` | [B/S] Active deterministic claim/owner/dependency compiler. |
 | `build_corpus_map.py` | compatibility front door for `compile_claim_cards.py` | [B] Active; the absent-source holographic compiler was replaced in W0. |
+| `render_burri_rules.py` | deterministic Burri plate renders from `05_COSMOLOGY/00_THE_BURRI_RULES.md` | [B/S] Active; covered by `test_render_burri_rules.py`. |
 
 ## Claim-card commands
 
@@ -65,5 +66,5 @@ or evidence.
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`
-- UPLINK compile entry point: `../01_SCRIPTS/compile_uplink.py`
-- full routing layer: `../../11_UPLINK/00_CORE/00_INDEX.md`
+- current corpus gate: `../01_SCRIPTS/gate.sh`
+- Uplink route map: `../../11_UPLINK/README.md`

@@ -28,10 +28,20 @@ It tests whether ultimatum-game acceptance behavior is explained by material pay
 - `VERDICT.md` - human verdict.
 - `RUN_RECEIPT.md` - receipt for the exact run.
 
+## Proposal lineage
+
+This landed run answers the bounded proposal surfaces rather than leaving them
+as apparently unexecuted plans:
+
+- [`../../20_SCOPE/26_BEHAVIOR_IS_MULTIPLICATIVE_NOT_ADDITIVE_BRIEF.md`](../../20_SCOPE/26_BEHAVIOR_IS_MULTIPLICATIVE_NOT_ADDITIVE_BRIEF.md)
+- [`../../20_SCOPE/27_ULTIMATUM_GAME_STUDY_DESIGN.md`](../../20_SCOPE/27_ULTIMATUM_GAME_STUDY_DESIGN.md)
+- [`../../20_SCOPE/28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md`](../../20_SCOPE/28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md)
+- [`../../20_SCOPE/29_ULTIMATUM_PREREGISTRATION_SKELETON.md`](../../20_SCOPE/29_ULTIMATUM_PREREGISTRATION_SKELETON.md)
+
 ## Run
 
 ```bash
-cd /Users/Yves/Documents/01_EMERGENTISM/11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test
+cd 11_UPLINK/25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test
 python3 run_analysis.py
 ```
 

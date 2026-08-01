@@ -65,7 +65,7 @@ provenance: "Workflow wf_223bec21 (churn of 12 lanes, 72 nectar + 48 halāhala) 
 
 Each of these rises with the nectar and *looks* like it. Śiva holds them here.
 
-- **P1 · `φ·ν = 1` as a "conserved discovery."** It is `cot(θ/2)·tan(θ/2) ≡ 1` — a **coordinate tautology** of `ν := 1/φ`, zero empirical content. The framework's *own* docs say re-deriving it is "re-naming the same tautology." It appeared as poison in **every single lane.** Write it `[S]`/definition — never as a conserved invariant, a discovery, a maximum, or "the equation the framework follows from."
+- **P1 · `φ·ν = 1` as a "conserved discovery."** It is `cot(θ/2)·tan(θ/2) ≡ 1` — a **coordinate tautology** of `ν := 1/φ`, zero empirical content. The framework's *own* docs say re-deriving it is "re-naming the same tautology." It appeared as poison in **every single lane.** Its tier is `[A]` inside the defined reciprocal chart; the poison is the *reading*, never the tier. Do not write it as a conserved invariant, a discovery, a maximum, or "the equation the framework follows from."
 - **P2 · The symmetric balance *hump* as an empirical law.** `output = φ×ν`, maximized *at* `φ=ν`, the whole `L4`-apex superstructure — **broken on real data** (Munnell a balance *trough*; GFS **retracted** — tested the wrong claim). Only **conjunction** (need-both) survives, and only untested at single-agent scale. The multiplicative-vs-additive core is an **unwon wager**, not a result.
 - **P3 · The squid.** *D. gigas* "gated kin-discriminating cannibalism" as the `η=0` witness — **cut as false-to-fact** by the framework's own audit: the animal is panmictic, semelparous, targets the weak not kin. It is the extraction law's own *counterexample*, not its witness. Any live use is poison.
 - **P4 · "Exactly seven, by necessity."** The `7` is the pre-existing caste ladder *reverse-fit* onto sign-space; honest enumeration gives `4` (pure signs) or `8–9` (with `≈`). "No fifth God / no eighth operator" is not an impossibility theorem — demote to conjecture. The **four-forces↔four-lines** map self-contradicts (`φ·ν=1` assigned to *both* EM and Strong) and predicts nothing measured.
@@ -96,4 +96,4 @@ Each of these rises with the nectar and *looks* like it. Śiva holds them here.
 
 The eternal is the structure. The good is the vow. The rest is churning.
 
-**Canonical Path:** `01_EMERGENTISM/00_THE_AMRITA.md` — the distilled essence; read the tiers, not the poetry.
+**Canonical Path:** `01_EMERGENTISM/07_THEOLOGY/00_THE_AMRITA.md` — the distilled essence; read the tiers, not the poetry. `01_EMERGENTISM/00_THE_AMRITA.md` is a forwarding stub retained for inbound-link stability, not the canonical home.

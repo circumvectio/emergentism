@@ -17,6 +17,34 @@ COMPILER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(COMPILER)
 
 
+def missing_federated_sources() -> list[str]:
+    """Return declared claim-card sources unavailable beside this checkout.
+
+    The repository contract includes frozen lineage in sibling pillar repos.
+    Unit fixtures remain self-contained; only the two full-repository
+    integration checks require the complete Documents federation.
+    """
+    missing: list[str] = []
+    for path in sorted((ROOT / COMPILER.CARD_DIR).glob("*.yaml")):
+        document = json.loads(path.read_text(encoding="utf-8"))
+        source = document.get("source", {})
+        source_rel = source.get("path")
+        if isinstance(source_rel, str) and not COMPILER._resolve_declared_path(
+            ROOT,
+            ROOT,
+            Path(source_rel),
+        ).is_file():
+            missing.append(source_rel)
+    return missing
+
+
+FEDERATED_SOURCE_GAPS = missing_federated_sources()
+REPOSITORY_CONTRACT_SKIP = (
+    "complete Documents federation not present; missing declared source(s): "
+    + ", ".join(FEDERATED_SOURCE_GAPS)
+)
+
+
 class ClaimGraphContractTests(unittest.TestCase):
     def make_fixture(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
         temp = tempfile.TemporaryDirectory()
@@ -59,6 +87,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         fn(data)
         path.write_text(json.dumps(data), encoding="utf-8")
 
+    @unittest.skipIf(FEDERATED_SOURCE_GAPS, REPOSITORY_CONTRACT_SKIP)
     def test_repository_contract_compiles(self) -> None:
         register, graph, lifecycle = COMPILER.compile_contract(ROOT)
         self.assertEqual(register["metrics"]["cards"], 71)
@@ -67,6 +96,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         self.assertGreater(graph["metrics"]["edges"], 100)
         self.assertEqual(lifecycle["baseline"]["tracked_files"], 3205)
 
+    @unittest.skipIf(FEDERATED_SOURCE_GAPS, REPOSITORY_CONTRACT_SKIP)
     def test_deterministic_generation(self) -> None:
         first = COMPILER.compile_contract(ROOT)
         second = COMPILER.compile_contract(ROOT)
@@ -146,6 +176,30 @@ class ClaimGraphContractTests(unittest.TestCase):
         legacy = [row for row in lifecycle["sources"] if row["work_id"] == "BK-LEGACY-FIXTURE"]
         self.assertEqual(len(legacy), 1)
         self.assertEqual(legacy[0]["lifecycle"], "legacy")
+
+    def test_lifecycle_inventory_contains_no_absolute_paths(self) -> None:
+        temp, root = self.make_fixture(); self.addCleanup(temp.cleanup)
+        _, _, lifecycle = COMPILER.compile_contract(root)
+        self.assertTrue(lifecycle["sources"])
+        for source in lifecycle["sources"]:
+            self.assertNotIn("resolved_path", source)
+            self.assertFalse(Path(source["path"]).is_absolute())
+
+    def test_parent_relative_source_resolves_from_nested_worktree(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        federation = Path(temp.name) / "Documents"
+        worktree = federation / ".codex-worktrees/emergentism"
+        source = federation / "02_SIBLING/source.md"
+        worktree.mkdir(parents=True)
+        source.parent.mkdir(parents=True)
+        source.write_text("federated source", encoding="utf-8")
+
+        resolved = COMPILER._resolve_declared_path(
+            worktree,
+            worktree,
+            Path("../02_SIBLING/source.md"),
+        )
+        self.assertEqual(resolved, source.resolve())
 
 
 if __name__ == "__main__":

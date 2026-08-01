@@ -27,9 +27,11 @@ evidence_tier: "[I] for lane routing; [B] only for dated audit/index repair rece
 Uplink index-work lane for firewall audits, prune candidates, and index repair
 packets.
 
-This folder supports `../00_CORE/00_INDEX.md`; it does not replace the core
-Uplink route map. Promote only settled route law back to `../00_CORE/`, and
-archive dated audit byproducts when they are no longer active.
+This folder supports the lane route maps at [`../README.md`](../README.md) and
+[`../00_THE_UPLINK.md`](../00_THE_UPLINK.md); it does not replace them. Promote
+only settled route law back to [`../README.md`](../README.md), and archive dated
+audit byproducts when they are no longer active. `../00_CORE/` was archived
+2026-07-20 and is now a forwarding stub — never write to it.
 
 **Rosetta boundary:** [I] This front door describes the index-work lane. It does not [B] prove current index correctness, execute prune candidates, or replace the core Uplink route map without dated repair receipts.
 

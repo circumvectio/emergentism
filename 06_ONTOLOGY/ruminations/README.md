@@ -20,13 +20,15 @@ accompany the 2026-07 audit-and-kernel wave without claiming doctrinal force.
 
 **Owner lane:** `01_EMERGENTISM/` (doctrine), `06_ONTOLOGY/` surface.
 
-## Contents inventory [S] (verified on disk 2026-07-19)
+## Contents inventory [S] (verified on disk 2026-08-01)
 
 | File | What it holds |
 |---|---|
 | `00_RUMINATION_ON_DOF_2026_07_19.md` | Rumination IV — Forms as degrees of freedom: Plato's structural insight kept, the substantial heaven cut away; the four kernels read as parametric structure. |
 | `00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md` | Rumination on the Ten Revelations (`06_ONTOLOGY/06_THE_REVELATIONS.md`). |
 | `00_E1_E10_RUMINATION_L7_RSI_2026_07_19.md` | L7 Ṛṣi rumination across E1–E10. |
+| `00_RUMINATION_ON_AUM_AND_THE_SPHERE_2026_07_20.md` | Compatibility stub; routes the historical application note to archive custody and current owners. |
+| `00_RUMINATION_ON_THE_TORUS_SPHERE_PASSAGE_2026_07_20.md` | Compatibility stub; routes the historical application note to archive custody and current owners. |
 
 ## Evidence posture
 
@@ -48,4 +50,4 @@ by this file** [S].
 
 ---
 
-*Readings beside doctrine, marked as readings. The witness does not override the source. η = 0.*
+*Readings beside doctrine, marked as readings. The witness does not override the source. `η_move=0`.*

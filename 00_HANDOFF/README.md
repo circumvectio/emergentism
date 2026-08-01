@@ -1,8 +1,11 @@
 # 00_HANDOFF
 
-Session handoffs and release receipts, one dated directory each. **They do not sort into
-chronological order by name** — `2026_07_19_*` through `2026_07_31_*` sort lexically, and
-the newest is whichever directory carries the latest date, not the last line of `ls`.
+Session handoffs and release receipts, one dated directory each. The `YYYY_MM_DD` prefix is
+zero-padded, so lexical order is date order — `ls` lists them oldest first
+(`2026_07_19_broken_66_second_look`) to newest (`2026_07_31_tidy_and_handoff`). Directories
+sharing a date carry no order within that day. The newest packet is the last *dated
+directory* `ls` prints, not the last line — `AGENTS.md`, `CLAUDE.md` and `README.md` sort
+after it.
 
 ## Which branch is authoritative
 

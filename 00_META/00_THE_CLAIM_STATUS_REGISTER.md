@@ -198,9 +198,11 @@ refutes. A vow is kept or abandoned, never proved.
 
 Every dead form from [K-7 §2](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)
 is here with its status, what actually killed it, and where its live successor
-sits. **This is the resurrection**: fourteen of the twenty-two already have a
-live successor carrying the honest weaker claim, and eight get a newly opened
-question in §6.
+sits. **This is the resurrection**: twenty of the twenty-two are resurrected —
+twelve by a live successor alone, carrying the honest weaker claim, and eight by
+a newly opened question in §6 — while two are closed with neither. `DF-06` and
+`DF-19` carry both a wager successor and an `RQ`, so fourteen rows name a live
+successor in all; the disjoint partition is the count table below.
 
 | ID | Dead form | Status | What killed it | Live successor |
 |---|---|---|---|---|

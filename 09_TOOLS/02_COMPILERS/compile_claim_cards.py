@@ -54,6 +54,33 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _resolve_declared_path(root: Path, base: Path, declared: Path) -> Path:
+    """Resolve a corpus path without assuming the checkout is the owner root.
+
+    Most declarations are repository-relative and resolve directly. A small
+    number intentionally begin with ``..`` because they point to read-only
+    source custody in a sibling pillar. Git worktrees live one directory deeper
+    than the owner checkout, so their direct expansion is not portable. When a
+    declared parent-relative path is absent, search the checkout ancestors for
+    the same declared tail. The declared string remains the contract and only
+    the existing source bytes enter generated output.
+    """
+    direct = (base / declared).resolve()
+    if direct.is_file():
+        return direct
+
+    parts = list(declared.parts)
+    while parts and parts[0] == "..":
+        parts.pop(0)
+    if parts and len(parts) < len(declared.parts):
+        tail = Path(*parts)
+        for ancestor in root.parents:
+            candidate = (ancestor / tail).resolve()
+            if candidate.is_file():
+                return candidate
+    return direct
+
+
 def _require_string(value: Any, label: str) -> str:
     if not isinstance(value, str) or not value.strip():
         raise ContractError(f"{label}: expected non-empty string")
@@ -178,7 +205,7 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
         if not isinstance(source, dict):
             raise ContractError(f"{path}: source must be an object")
         source_rel = Path(_require_string(source.get("path"), f"{path}:source.path"))
-        source_path = root / source_rel
+        source_path = _resolve_declared_path(root, root, source_rel)
         if not source_path.is_file():
             raise ContractError(f"{path}: missing source {source_rel}")
         lifecycle = _require_string(source.get("lifecycle"), f"{path}:source.lifecycle")
@@ -325,13 +352,16 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
         lifecycle = _inferred_manifest_lifecycle(work)
         for source_rel_value in _require_list(work.get("historical_sources"), f"{work_id}.historical_sources"):
             source_rel = Path(_require_string(source_rel_value, f"{work_id}.historical_source"))
-            source_path = (root / BOOK_MANIFEST_PATH.parent / source_rel).resolve()
+            source_path = _resolve_declared_path(
+                root,
+                root / BOOK_MANIFEST_PATH.parent,
+                source_rel,
+            )
             if not source_path.is_file():
                 raise ContractError(f"{work_id}: missing historical source {source_rel_value}")
             manifest_sources.append({
                 "work_id": work_id,
                 "path": source_rel_value,
-                "resolved_path": source_path.as_posix(),
                 "lifecycle": lifecycle,
                 "sha256": _sha256(source_path),
                 "external_readonly": not source_path.is_relative_to(root),

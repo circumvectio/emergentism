@@ -7,7 +7,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+    "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -26,7 +26,7 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b",
           "lifecycle": "active",
           "claimCardIds": [
             "FIN01-01"
@@ -34,7 +34,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13",
@@ -64,7 +64,7 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b",
           "lifecycle": "active",
           "claimCardIds": [
             "FIN01-01",
@@ -73,7 +73,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -99,7 +99,7 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b",
           "lifecycle": "active",
           "claimCardIds": [
             "FIN01-01",
@@ -130,7 +130,7 @@
       "claimSources": [
         {
           "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-          "sourceRevision": "sha256:dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33",
+          "sourceRevision": "sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b",
           "lifecycle": "active",
           "claimCardIds": [
             "FIN01-01",
@@ -139,7 +139,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -189,7 +189,7 @@
         "OS01-01",
         "OS01-02"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "titans",
@@ -222,7 +222,7 @@
         "OS01-03",
         "OS01-04"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "logline",
@@ -254,7 +254,7 @@
       "claimCardIds": [
         "OS01-05"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "muLimit",
@@ -287,7 +287,7 @@
         "OS01-06",
         "OS01-07"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "bloch",
@@ -319,7 +319,7 @@
       "claimCardIds": [
         "OS01-08"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "horn",
@@ -346,7 +346,7 @@
       "modality": "possible",
       "summary": "Φ names D5 possible power: the structured potential of an option field. V names D4 actual power: embodied capability and usable means. A present model evaluates the first and couples it to the second; an unrealized future never acts by itself.",
       "inherited": "Decision theory, control, planning, counterfactual reasoning, and institutional coordination supply comparison classes.",
-      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. P_node = Φ̂₄ times V₄, publicly Φ times V, is a selected model—not a universal law or future-to-past force. Lowercase φ and ν remain chart coordinates. The product is the CONSTRAINT and marks nothing: phi times nu equals one at every latitude including both poles. What marks the equator is the SUM, phi plus nu, which is at least 2 with equality exactly when phi equals nu — the AM-GM inequality. An earlier reading used minus-log of the product as an energy; that quantity is identically zero and was withdrawn 2026-07-30.",
+      "boundary": "Typed form: V₄ is D4 actual power; Φ₅ is D5 possible power; Φ̂₄ is its present D4 estimate. After a declared common ordinal normalization, P_node := min(Φ̂₄, V₄) is the selected AND-class working convention: it preserves bottleneck order but supplies no metric, so subtraction, differentiation, ratios, and interpersonal cardinal comparison are not licensed. Historical Φ̂₄V₄ and ΦV now name conjunction only; product ranking is retired unless a separate cardinal scale is defended. Lowercase φ and ν remain chart coordinates. Their chart product is the CONSTRAINT and marks nothing: phi times nu equals one at every latitude including both poles. What marks the equator is the SUM, phi plus nu, which is at least 2 with equality exactly when phi equals nu — the AM-GM inequality. An earlier reading used minus-log of the chart product as an energy; that quantity is identically zero and was withdrawn 2026-07-30.",
       "source": "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
       "claimCardIds": [
         "OS01-09",
@@ -354,7 +354,7 @@
         "OS01-11",
         "OS01-12"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "burrisphere",
@@ -396,7 +396,7 @@
         "OS01-25",
         "OS01-26"
       ],
-      "sourceRevision": "sha256:0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749",
+      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "ccc",

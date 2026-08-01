@@ -28,6 +28,7 @@ def load(name: str, path: Path):
 parity = load("public_semantic_parity", SITE / "check_public_semantic_parity.py")
 frozen = load("frozen_library_boundary", SITE / "apply_frozen_library_boundary.py")
 renderer = load("dimension_renderer", SITE / "render_dimension_site.py")
+rag_builder = load("book_rag_builder", SITE / "build_rag_index.py")
 
 
 class PublicReleaseSemanticsTests(unittest.TestCase):
@@ -123,8 +124,55 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         manifest = json.loads((SITE / "book/build-manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(manifest["schema"], "emergentism/public-book-build/v1")
-        self.assertEqual(len(manifest["sources"]), 29)
+        self.assertEqual(manifest["schema"], "emergentism/public-book-build/v2")
+        self.assertEqual(manifest["work_id"], "BK-ONE-SITTING")
+
+        # v2 is deliberately narrower than the retired 29-source projection:
+        # one current reader source, with exact byte custody, and no inherited
+        # Reciprocal chapters silently entering either output or retrieval.
+        self.assertEqual(len(manifest["sources"]), 1)
+        source = manifest["sources"][0]
+        self.assertEqual(source["path"], "00_THE_WELTANSCHAUUNG_ONE_SITTING.md")
+        self.assertEqual(source["lifecycle"], "reader_synthesis")
+        self.assertIs(source["public_eligible"], True)
+        self.assertEqual(manifest["ordered_source_paths"], [source["path"]])
+        self.assertEqual(
+            source["sha256"],
+            hashlib.sha256((ROOT / source["path"]).read_bytes()).hexdigest(),
+        )
+
+        catalog = manifest["catalog_contract"]
+        self.assertEqual(catalog["schema"], "emergentism/book-manifest/v1")
+        self.assertEqual(catalog["path"], "13_BOOKS/book-manifest.json")
+        self.assertEqual(catalog["release_state"], "source_active_current_public_reader")
+        self.assertEqual(catalog["public_route"], "../12_PUBLIC_SITE/book/index.html")
+        self.assertEqual(
+            catalog["sha256"],
+            hashlib.sha256((ROOT / catalog["path"]).read_bytes()).hexdigest(),
+        )
+
+        output = manifest["output"]
+        self.assertEqual(output["path"], "book/index.html")
+        self.assertEqual(
+            output["sha256"],
+            hashlib.sha256((SITE / output["path"]).read_bytes()).hexdigest(),
+        )
+        coverage = manifest["claim_card_contract"]["coverage"]
+        self.assertEqual(coverage["claim_card_count"], 26)
+        self.assertEqual(len(coverage["rendered_source_chapter_order"]), 12)
+        self.assertEqual(coverage["public_states"], ["bounded_current", "candidate"])
+        self.assertEqual(coverage["review_states"], ["implemented", "l3_audited"])
+
+        withheld = manifest["withheld_provenance"]
+        self.assertEqual(withheld["path"], "13_BOOKS/the_reciprocal/")
+        self.assertEqual(withheld["lifecycle"], "withheld_staged_provenance")
+        self.assertIs(withheld["included_in_output"], False)
+        self.assertIs(withheld["included_in_rag"], False)
+
+    def test_rag_source_integrity_negative_controls(self) -> None:
+        # The generator's permanent controls must reject both loss of the
+        # declared source and byte drift against its v2 SHA-256 receipt.
+        rag_builder.source_negative_controls()
 
 
 if __name__ == "__main__":

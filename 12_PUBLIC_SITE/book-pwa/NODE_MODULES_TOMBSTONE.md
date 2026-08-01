@@ -7,7 +7,7 @@ tombstone:
   authority: explicit founder override of the previously-held authorization
   status: ATTEMPTED-2026-07-19, BLOCKED-BY-ICLOUD (deletion incomplete; directory still on disk)
   completion_pending: yes — requires non-iCloud context (founder's terminal, Finder drag-to-trash, or explicit bypass)
-  attempted: yes (4 paths attempted, all failed: mavis-trash timeout, osascript needs-download, mv to local, mv to /tmp)
+  attempted: "yes (4 paths attempted, all failed: mavis-trash timeout, osascript needs-download, mv to local, mv to /tmp)"
   recoverable: N/A (no deletion performed; directory intact)
   files_intended: 45,062
   bytes_intended: 862M (877M actual on disk per du -sh 2026-07-20)
@@ -16,6 +16,7 @@ tombstone:
   package_json_path: package.json (preserved)
   regen_path: `pnpm install` (or npm ci) at this directory restores the exact node_modules state from the preserved lockfile
   audit_note: "Frontmatter corrected 2026-07-21 per L1.4 audit F-01 — prior frontmatter claimed DESTROYED, but body admits the 4 deletion paths failed and the 877M directory is intact. A7 self-correction: record now matches reality."
+  syntax_correction: "2026-08-01 — quoted attempted scalar so the custody record parses; no act or outcome changed."
 ---
 
 # book-pwa/node_modules — DESTRUCTIVE ACT TOMBSTONE

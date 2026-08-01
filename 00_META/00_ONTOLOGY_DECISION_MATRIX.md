@@ -149,7 +149,7 @@ discipline that supersedes them; it marks actuality and record across them.
 | **H1** | Type-preserving organization | **2/4** | Stable internal address map; native scientific warrant is meant to remain intact. |
 | **H2** | Native-science recovery | **1/4** | Some rows have external neighbours and recovery obligations, but no force/freedom leg is calibrated and no Standard-Model-grade bridge exists. |
 | **H3** | Cross-disciplinary compression | **2/4** | The map usefully aligns level-specific concepts, macro-constraint questions, teleonomy, and model-mediated future effects without claiming transferred proof. |
-| **H4** | Novel held-out discriminator | **1/4** | GP-01 through GP-11 provide routes; the integrated-adequacy test is deferred and no whole-system discriminator has fired. |
+| **H4** | Novel held-out discriminator | **1/4** | GP-01 through GP-12 provide routes; the integrated-adequacy test is deferred and no whole-system discriminator has fired. |
 | **H5** | Independent replication | **0/4** | Framework-designed simulations and local artifacts do not establish independent replication. |
 | **H6** | Scientific unification | **0/4 / not yet admissible** | No shared dynamics, constants, recovered native theory, non-permutation result, novel replicated discriminator, or integrated theory result exists. |
 

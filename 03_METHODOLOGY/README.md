@@ -45,7 +45,7 @@ supply premises, authorization, or doctrine here.
 | [`00_EMPIRICAL_PROGRAM_BOARD.md`](00_EMPIRICAL_PROGRAM_BOARD.md) | Live prediction and test queue |
 | [`00_SCIENCE_STACK_STATUS.md`](00_SCIENCE_STACK_STATUS.md) | Closed, open, and deferred scientific claims |
 | [`00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md`](00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md) | External contact matrix and integrated-synthesis boundary |
-| [`../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) | Whole-map assembly and eleven packet-complete, evidence-open research sockets; routing only |
+| [`../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md`](../00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) | Whole-map assembly and twelve packet-complete, evidence-open research sockets; routing only |
 | [`01_THE_DERIVATION/00_THE_DERIVATION.md`](01_THE_DERIVATION/00_THE_DERIVATION.md) | Derivation spine |
 | [`01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md`](01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md) | Burri Rules sources, seams, tiers, counterexamples, and kills |
 | [`../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Evidence-tier authority |
@@ -65,8 +65,9 @@ Application-specific blueprints and dated operations were moved intact to the
   its declared `[S/I]` tiers.
 - Several components have independent analogues in established research.
 - The integrated Weltanschauung has not yet earned external validation.
-- The exact D0–D6 ladder, five-crossing census, universal product fit, and
-  universal strong emergence remain killable `[C]` commitments.
+- The exact D0–D6 ladder, five-crossing census, lawful cross-factor
+  aggregation, and universal strong emergence remain killable `[C]`
+  commitments. The product is not an active ordinal ranking.
 - Quantum interpretation is optional correspondence, never a load-bearing
   dimensional or causal proof.
 

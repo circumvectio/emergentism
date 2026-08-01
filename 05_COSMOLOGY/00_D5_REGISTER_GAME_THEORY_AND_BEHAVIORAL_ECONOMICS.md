@@ -12,7 +12,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/S/I/C] mixed"
+  register: "[S/I/C] mixed"
   canonical_phrase: "D5 register"
 ---
 
@@ -23,7 +23,7 @@ rosetta:
 **Status:** Canonical D5 public register
 **Date:** 2026-04-14
 **Amended:** 2026-07-27 — `Φ₅` possible power / `V₄` actual power
-**Evidence Tier:** [E/S/I/C] Mixed -- established disciplines first, Emergentist synthesis second
+**Evidence Tier:** `[S/I/C]` mixed — declared framework structure, interpretation, and conjecture remain separate; named source custody is required before any claim earns `[B]`
 
 > **Anchor Sequence:**
 > ```text

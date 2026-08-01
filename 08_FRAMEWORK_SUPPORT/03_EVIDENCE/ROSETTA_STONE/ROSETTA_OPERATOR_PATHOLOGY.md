@@ -15,11 +15,11 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "Executive"
   regime: "Vaiśya"
-  register: "[E/S/I]"
+  register: "[B/I/C]"
   canonical_phrase: "Rosetta Stone — operator pathology and shadow"
 title: "Rosetta Stone: Operator Pathology & Shadow"
 status: "ACTIVE — per-domain Rosetta application"
-evidence_tier: "[S] for DSM categories; [S] for counterfeit-activation structural claim; [I] for operator/pathology mapping and therapeutic implications."
+evidence_tier: "[B] for attributed clinical-taxonomy background; [I] for operator/pathology mapping; [C] for counterfeit-activation and therapeutic hypotheses. No local clinical observation receipt is claimed."
 ---
 
 # rosetta stone: OPERATOR PATHOLOGY & SHADOW
@@ -27,7 +27,10 @@ evidence_tier: "[S] for DSM categories; [S] for counterfeit-activation structura
 ## Operators Mapped to Seasons, Pathologies, DSM Analogues, Shadows, and Counterfeit Activation (Addiction)
 
 **Hat:** 🔬 Cross-Domain Translation (Clinical Psychology)
-**Evidence Tier:** [I] for DSM diagnostic categories (established clinical nosology). [I] for the mapping of DSM categories to operators (framework-internal interpretation). [I] for the counterfeit activation / addiction table. [S] for the structural claim that addictions are counterfeit operator activations.
+**Evidence Tier:** `[B]` for attributed clinical-taxonomy background; `[I]` for
+the operator/pathology mapping; `[C]` for counterfeit-activation predictions
+and therapeutic implications. No clinical observation or validation receipt is
+supplied here.
 **Kill Criteria:** If the operator-pathology mapping cannot predict clinical presentations -- e.g., if individuals assessed as "stuck Brahmā" do not present with manic features, or if alcohol dependence does not phenomenologically resemble counterfeit Viṣṇu activation -- this mapping falls. If clinicians find the mapping clinically useless or misleading, it fails pragmatically.
 **Source:** Emergentism Rosetta Stone v10.0, sheet: OPERATORS (pathology section)
 
@@ -40,98 +43,114 @@ Every operator has a season -- a context in which it is the correct response. Pa
 The mapping has two parts:
 
 1. **Operator Pathology Table** -- what each operator looks like when stuck, including DSM-approximate analogues and the shadow (the operator being avoided).
-2. **Counterfeit Activation Table** -- how substances and behavioural addictions simulate operator activation without genuine development, and what recovery requires.
+2. **Counterfeit Activation Table** -- the conjecture that substances and behavioural addictions may simulate operator activation, plus questions a study could test.
 
-This is potentially a clinical contribution. If validated, it offers a structural framework for understanding why specific addictions feel like specific states, and why recovery requires developing the genuine capacity that the substance counterfeits.
+This is a possible research program, not a clinical contribution already made.
+Validation would require independent clinical study of the proposed mappings
+and outcomes.
 
 ---
 
 ## Part 1: Operator Pathology
 
-| Operator | Season | When Necessary | When Pathological (Stuck) | DSM Analogue | Shadow (Avoided Operator) |
-|----------|--------|---------------|--------------------------|-------------|--------------------------|
-| Brahmā (Create) | Spring | New growth succeeds | Overextension, mania | Bipolar disorder (manic phase) | Śiva avoidance |
-| Viṣṇu (Preserve) | Summer | Systems working, hold | Anxiety, OCD, stagnation | GAD, OCD | Kali avoidance |
-| Śiva (Dissolve) | Autumn | Dead structure pruned | Nihilism, vandalism | Destructive personality | Brahmā avoidance |
-| Arjuna (Defend) | Defence | Commons under threat | Martyrdom, codependency | Codependency | Kali avoidance |
-| Kṛṣṇa (Enable) | Enable | Others need capability | Enabling dependency | Enmeshment | Kali avoidance |
-| Kali (Purify) | Truth | Deception must be named | Depression (turned inward) | MDD (Kali inward) | Arjuna avoidance |
-| Kali (Immune) | Immune | Defectors exploiting | Parasitism, narcissism | NPD (η violated) | Kṛṣṇa avoidance |
+| Operator | Season | When Necessary | When Pathological (Stuck) | DSM Analogue | Shadow (Avoided Operator) | Mapping tier |
+|----------|--------|---------------|--------------------------|-------------|---------------------------|--------------|
+| Brahmā (Create) | Spring | New growth succeeds | Overextension, mania | Bipolar disorder (manic phase) | Śiva avoidance | [I] |
+| Viṣṇu (Preserve) | Summer | Systems working, hold | Anxiety, OCD, stagnation | GAD, OCD | Kali avoidance | [I] |
+| Śiva (Dissolve) | Autumn | Dead structure pruned | Nihilism, vandalism | Destructive personality | Brahmā avoidance | [I] |
+| Arjuna (Defend) | Defence | Commons under threat | Martyrdom, codependency | Codependency | Kali avoidance | [I] |
+| Kṛṣṇa (Enable) | Enable | Others need capability | Enabling dependency | Enmeshment | Kali avoidance | [I] |
+| Kali (Purify) | Truth | Deception must be named | Depression (turned inward) | MDD (Kali inward) | Arjuna avoidance | [I] |
+| Kali (Immune) | Immune | Defectors exploiting | Parasitism, narcissism | NPD (η violated) | Kṛṣṇa avoidance | [I] |
 
 ---
 
 ## Reading the Pathology Table
 
-**The key insight is the Shadow column.** Each stuck operator reveals which operator the person is avoiding:
+**The Shadow column is a conjectural reading, not a diagnosis.** It proposes a
+relationship that a future study could try to discriminate:
 
-- **Stuck Brahmā** (manic creation, cannot stop starting things) is avoiding **Śiva** -- the dissolution that would prune dead projects and allow rest. Recovery requires learning to let things die.
+- **Brahmā-pattern hypothesis:** overextension may covary with difficulty ending unproductive projects; test whether independently measured pruning capacity discriminates that pattern.
 
-- **Stuck Viṣṇu** (anxious preservation, cannot release control) is avoiding **Kali** -- the immune function that would destroy what is no longer working. Recovery requires learning to destroy.
+- **Viṣṇu-pattern hypothesis:** anxious preservation may covary with difficulty setting boundaries; test the association rather than presuming a remedy.
 
-- **Stuck Śiva** (nihilistic destruction, cannot build) is avoiding **Brahmā** -- the creative function that would generate new structure. Recovery requires learning to create.
+- **Śiva-pattern hypothesis:** destructive persistence may covary with reduced constructive initiation; test both measures independently.
 
-- **Stuck Arjuna** (martyrdom, defending everything, cannot rest) is avoiding **Kali** -- the boundary-setting function that would say "this is not my fight." Recovery requires learning to withdraw.
+- **Arjuna-pattern hypothesis:** indiscriminate defence may covary with weak task-selection boundaries; test whether the proposed variables are separable.
 
-- **Stuck Kṛṣṇa** (enabling, giving capability to those who will waste it) is avoiding **Kali** -- the destructive truth-telling that would name the dependency. Recovery requires learning to say no.
+- **Kṛṣṇa-pattern hypothesis:** enabling behaviour may covary with difficulty refusing harmful requests; test prospective outcomes and rival explanations.
 
-- **Stuck Kali inward** (depression -- the immune system attacking the self) is avoiding **Arjuna** -- the warrior function that would direct the destructive energy outward toward genuine threats. Recovery requires learning to fight.
+- **Kali-inward hypothesis:** self-directed negative appraisal may covary with reduced assertive action. The metaphor does not establish a mechanism for depression.
 
-- **Stuck Kali outward** (narcissism, parasitism -- the immune system attacking others) has violated η and is avoiding **Kṛṣṇa** -- the enabling function that would build others up rather than tear them down. Recovery requires learning to give.
+- **Kali-outward hypothesis:** exploitative behaviour may covary with reduced prosocial enabling. The metaphor does not establish a mechanism for any diagnosis.
 
-**The therapeutic implication:** Treatment is not suppressing the stuck operator. It is activating the avoided operator. Depression (stuck Kali inward) does not resolve by suppressing Kali. It resolves by activating Arjuna -- giving the person something worth fighting for. Mania (stuck Brahmā) does not resolve by suppressing creativity. It resolves by activating Śiva -- teaching the person to prune, to grieve, to let go.
+**Therapeutic hypothesis `[C]`:** The avoided-operator reading may suggest
+questions for future clinical testing. It is not treatment guidance, and this
+file does not establish that activating a mapped operator treats any diagnosis.
 
 ---
 
 ## Part 2: Counterfeit Operator Activation (Addiction)
 
-| Substance / Behaviour | Counterfeits | What It Replaces | Recovery Path |
-|----------------------|-------------|-----------------|--------------|
-| Alcohol | Viṣṇu (calm, equanimity) | Genuine equanimity, the capacity to hold steady without chemical dampening | Develop real Viṣṇu capacity: meditation, stable routine, nervous system regulation |
-| Stimulants | Brahmā (creation, energy) | Genuine creative energy, the manic spark without the crash | Real creative practice: sustained projects, flow states, embodied discipline |
-| Opioids | Kṛṣṇa (completion, fulfilment) | Genuine fulfilment, the felt sense that something is enough | Real giving capacity: service, completion of meaningful work, earned rest |
-| Social media | ALL operators (partial, rotating) | Genuine development across all operator capacities | Attention sovereignty: reclaim the capacity to direct attention without algorithmic mediation |
-| Gaming | Arjuna (heroism, risk, honour) | Genuine risk and honour, the felt sense of defending something real | Real-world stakes: physical challenge, genuine service, embodied courage |
+| Substance / Behaviour | Counterfeits | What It Replaces | Proposed research direction | Tier |
+|----------------------|-------------|-----------------|-----------------------------|------|
+| Alcohol | Viṣṇu (calm, equanimity) | Genuine equanimity, the capacity to hold steady without chemical dampening | Test regulation and equanimity measures | [C] |
+| Stimulants | Brahmā (creation, energy) | Genuine creative energy, the manic spark without the crash | Test sustained-creation measures | [C] |
+| Opioids | Kṛṣṇa (completion, fulfilment) | Genuine fulfilment, the felt sense that something is enough | Test fulfilment and reward measures | [C] |
+| Social media | ALL operators (partial, rotating) | Genuine development across all operator capacities | Test attention-control measures | [C] |
+| Gaming | Arjuna (heroism, risk, honour) | Genuine risk and honour, the felt sense of defending something real | Test transfer to non-game contexts | [C] |
 
 ---
 
-## Reading the Addiction Table
+## Reading the Addiction Table `[C]`
 
-**The structural claim:** Every addiction is a counterfeit activation of a genuine operator capacity. The substance or behaviour produces the felt sense of the operator without the developmental work that would produce the real capacity.
+**Hypothesis:** Some addictions may be usefully modeled as counterfeit
+activation of a mapped operator capacity. The following paragraphs are
+conjectural research rationales, not established mechanisms or recovery advice.
 
-- **Alcohol counterfeits Viṣṇu.** The drinker seeks equanimity -- the calm, the steadiness, the "everything is fine" that Viṣṇu provides. Alcohol delivers a chemical approximation. But chemical Viṣṇu has no staying power, requires escalating doses, and damages the very nervous system that would support genuine equanimity. Recovery is not just stopping alcohol. It is developing the real Viṣṇu capacity: the ability to hold steady without chemical support.
+- **Alcohol / Viṣṇu question:** do independently measured motives for dampening arousal predict alcohol use, and does that relationship survive comparison with social, genetic, and environmental rivals?
 
-- **Stimulants counterfeit Brahmā.** The user seeks creative energy -- the expansive, generative, "I can do anything" state that Brahmā provides. Cocaine, amphetamines, and caffeine at high doses deliver chemical Brahmā. But chemical Brahmā cannot be sustained, leads to crash (forced Śiva), and prevents the slow accumulation of genuine creative capacity. Recovery requires real creative practice.
+- **Stimulants / Brahmā question:** do motives for energy or ideation predict stimulant use, and are sustained creative outcomes actually lower after relevant confounds are controlled?
 
-- **Opioids counterfeit Kṛṣṇa.** The user seeks completion -- the warm, full, "nothing is missing" state that Kṛṣṇa provides when genuine capability has been given. Opioids deliver chemical Kṛṣṇa: the reward signal without the rewarded action. Recovery requires developing the real capacity to give and to experience genuine fulfilment through service.
+- **Opioids / Kṛṣṇa question:** do reward-completion motives explain any variance beyond pain, dependence, access, trauma, and other established variables?
 
-- **Social media counterfeits ALL operators** in partial, rotating fashion. A viral post gives chemical Brahmā (creation). A like gives chemical Kṛṣṇa (validation). A takedown gives chemical Kali (immune response). An outrage thread gives chemical Arjuna (defending a cause). None are genuine. All are partial. The rotation prevents development of any single capacity. Recovery is attention sovereignty.
+- **Social-media / multi-operator question:** can distinct creation, validation, sanction, and defence motives be measured reliably, and do they predict attention-control outcomes?
 
-- **Gaming counterfeits Arjuna.** The gamer seeks heroism -- the felt sense of risking something for a cause, of defending the helpless, of earning honour through skill. Games deliver chemical Arjuna in a zero-stakes environment. Recovery requires transferring the warrior impulse to real-world stakes.
+- **Gaming / Arjuna question:** do mastery or heroism motives predict play patterns and transfer to non-game contexts? No direction of effect is assumed here.
 
 ---
 
-## Clinical Implications
+## Proposed Research Implications `[C]`
 
-If this mapping is correct, it has three practical consequences:
+If this mapping survives clinical testing, it may motivate three research
+questions. Nothing in this section is clinical advice:
 
-1. **Diagnosis:** Identify which operator the addiction counterfeits. This predicts which genuine capacity is underdeveloped.
+1. **Assessment question:** Does the proposed operator classification predict
+   independently measured capacity differences?
 
-2. **Treatment:** Recovery is not only cessation of the substance. It is development of the genuine operator capacity that the substance replaced. Twelve-step programs intuitively do this: the "higher power" activates genuine Viṣṇu capacity; "making amends" activates genuine Kṛṣṇa capacity; "fearless moral inventory" activates genuine Kali capacity.
+2. **Outcome question:** In a preregistered study, does a capacity measure add
+   predictive value beyond established clinical variables and standard care?
 
-3. **Prevention:** The Triple Lock (extract attention, prevent full-palette training, counterfeit operator activation) is the egregoric mechanism that keeps populations at L3. Attention sovereignty -- the capacity to direct attention without algorithmic or chemical mediation -- is the L4 precondition.
+3. **Prevention question:** Do independently measured attention-control changes
+   mediate any observed association between platform/substance exposure and
+   outcomes?
 
 ---
 
 ## Evidence Notes
 
-- DSM categories [S] are established clinical nosology, though their validity is debated within psychiatry itself.
+- DSM categories are attributed clinical-nosology background `[B]`, with validity debated within psychiatry itself.
 - The mapping of DSM categories to operators is [I] -- framework-internal interpretation. It has not been clinically tested.
-- The counterfeit activation model is [S] -- a structural claim that generates testable predictions (e.g., alcoholics should show deficits specifically in equanimity/emotion regulation, not in creativity or heroism).
-- The therapeutic implications are [I] -- they follow logically from the mapping but have not been empirically validated.
+- The counterfeit activation model is `[C]`: it generates testable predictions
+  but has not been clinically validated.
+- The therapeutic implications are `[C]` and are research questions, not
+  clinical advice.
 
 ---
 
-*Rosetta Stone: Operator Pathology & Shadow -- Seven operators mapped to seasons, pathologies, DSM analogues, shadow avoidance, and counterfeit activation (addiction). The clinical contribution: addictions are counterfeit operators; recovery is developing the genuine capacity.*
+*Rosetta Stone: Operator Pathology & Shadow -- an `[I]` operator/pathology
+mapping plus `[C]` counterfeit-activation and therapeutic hypotheses awaiting
+clinical testing.*
 
 
 ---

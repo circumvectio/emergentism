@@ -107,15 +107,18 @@ compression `[I]`, not independent confirmation of the scaffold.
   special relativity. The horn-torus morph is a removable display, and its
   mouth-as-light-cone/worldline reading is refuted by the local geometry.
 - The five-crossing census, saturation-only μ law, full Egregoreotype
-  conjunction, and universal product fit remain unwon `[C]` claims.
+  conjunction, and lawful cross-factor aggregation remain unwon `[C]` claims;
+  the product is retired as an ordinal ranking.
 - The quantum-dimensional identification is a closed grave. Removing
   interpretation and Bloch–Burri insets leaves both the D3 state calculus and
   independent agent calculus unchanged.
 
 ## Discriminators required for validation
 
-1. Compare product, minimum, harmonic, and CES/Cobb–Douglas aggregators on
-   held-out behavioral or institutional data with the ranking rule frozen first.
+1. Freeze the admissible input transformations and test whether any
+   cross-factor conclusion is invariant. Compare product, minimum, harmonic,
+   and CES/Cobb–Douglas forms on held-out data only after independently
+   validating the commensurate cardinal scales those comparisons require.
 2. Define saturation independently of the proposed μ-crossing, then predict a
    novel freedom before observing it.
 3. Intervene separately on future model, embodied means, commitment, and world

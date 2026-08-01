@@ -19,14 +19,19 @@ evidence_tier: "[B] file custody; [S] selected editorial sequence"
 
 | Work | Wave | Current editorial state | Semantic route |
 |---|---:|---|---|
-| *The Emergentist Weltanschauung — One-Sitting* | W1 | active source repaired; deterministic public reader remains the only released dossier | K-1…K-7 |
+| *The Emergentist Weltanschauung — One-Sitting* | W1 | **current `/book/` reader**; exactly one `reader_synthesis` source with 26 internally implemented or L3-audited claim cards covering all 12 declared chapters; build fails closed on lifecycle or coverage drift | K-1…K-7 |
+| *The Finity Card — Lived Compass Practice* | — | active source practice; public projection at `/practice/` | K-4, K-5 |
 | *The Self-Eating Serpent* | W2 | chapter debrief and six-chapter critical edition staged; not public | K-5, K-7 |
 | *The Titans — The Infinite, Finity & Infinity* | W3 | five-chapter research edition staged; formal/world gates open | K-1, K-3, K-4 |
 | *Dharma Yuddha* | W4 | coercive legacy archived; nonviolent five-chapter critical edition staged | K-5 with K-3/K-4 review |
 | *The Evolutionary Network* | W5 | voluntary institutional-proposal edition staged; not a runtime | K-4, K-5 |
-| *The Reciprocal* | W6 | **PORTED AND PUBLIC 2026-07-31** — 25 chapters at `/book/`, from `the_reciprocal/`. Tier `[D]`: register corrected, argument preserved, **not** re-adjudicated claim by claim | card-by-card |
+| *The Reciprocal / Infinite Play* | W6 | **WITHHELD FROM CURRENT READER AND RAG 2026-08-01** — the 25-chapter tier-`[D]` port remains in `the_reciprocal/` as staged provenance but was never re-adjudicated claim by claim. A separate seven-chapter critical edition and debrief remain staged and non-public at `reciprocal_infinite_play/` | card-by-card |
 | *Sarpasya Vijayam* | W6 | chapter debrief and seven-chapter critical edition staged; not public | card-by-card |
 | *Six-Fold Revelation / Six Lenses* | W6 | chapter debrief and eight-chapter critical edition staged; not public | card-by-card |
 
 “Critical edition” means historically explicit, source-routed, rival-aware and
 correction-visible. It does not mean canonized, verified, or publication-ready.
+
+Withholding is a publication disposition, not deletion. The Reciprocal source
+files, port note, and staged critical edition remain in custody; none currently
+supplies `/book/` bytes or RAG passages.

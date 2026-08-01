@@ -18,7 +18,7 @@ supersedes: nothing — supplements the existing pillar README
 
 **Status:** ACTIVE
 **Role:** support lane for repository utilities, deterministic renderers, research simulations, and validation scripts that serve the worldview.
-**Owns:** `01_SCRIPTS/`, `02_COMPILERS/`, `03_SIMULATIONS/`, `04_DATA_PIPELINES/`, `06_PACKAGES/`, `07_AGENT_OPS/`, `08_AUDIT_ARTIFACTS/`, `90_ARCHIVE/` (local K3), `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`.
+**Owns:** `01_SCRIPTS/`, `02_COMPILERS/`, `03_SIMULATIONS/`, `04_DATA_PIPELINES/`, `05_FORMAL_VERIFICATION/`, `06_PACKAGES/`, `07_AGENT_OPS/`, `08_AUDIT_ARTIFACTS/`, `90_ARCHIVE/` (local K3), `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`.
 **Must not own:** source doctrine, claim authority, the public site, or any document whose owner is a numbered pillar (01–08, 10).
 
 ## Read first

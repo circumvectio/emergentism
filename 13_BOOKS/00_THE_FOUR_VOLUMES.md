@@ -125,6 +125,14 @@ No work has been moved; this records where each would go.
 - **The Self-Eating Serpent.** Placing a whole book in the Addendum risks making the
   Addendum the largest volume, which would be its own kind of imbalance.
 
+**Not the Sarpasya Trilogy numbering.** `the_reciprocal/25_the-seed.md:493-495`
+uses a different, inherited scheme in which Volume I is *Sarpasya Vijayam*,
+Volume II is *The Six Lenses* and Volume III is *The Self-Eating Serpent*. That
+is the ported book's own provenance and is not edited here. Where the two
+collide — *The Self-Eating Serpent* is Volume III there and the Addendum here —
+this document governs the consolidation and the ported chapter governs only its
+own history.
+
 ## What this structure must not become
 
 The cascade document carries its own warning, and it applies directly: the perennial grammar

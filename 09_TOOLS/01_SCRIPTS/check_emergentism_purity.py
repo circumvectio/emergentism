@@ -132,7 +132,10 @@ LEGACY_ALIAS_EXCEPTIONS = {
 # The exception is deliberately exact: only the projection file itself and
 # non-semantic references to that exact filename may carry the label. All other
 # forbidden tokens, including external governance names, remain scanned.
-CONTROL_PROJECTION_PATH = Path("VMOSK_A.md")
+CONTROL_PROJECTION_PATHS = (
+    Path("VMOSK_A.md"),
+    Path("VMOSK_A_v2_2026_07_31.md"),
+)
 CONTROL_PROJECTION_REFERENCE_PATHS = {Path("README.md"), Path("AGENTS.md")}
 
 # ASCII-alphanumeric boundaries are deliberate: Python's ``\b`` treats ``_``
@@ -296,7 +299,6 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             external_mapping_audit = True
 
     for line_no, line in enumerate(text.splitlines(), 1):
-        match = FORBIDDEN.search(line)
         historical_source_record = (
             rel in HISTORICAL_LINEAGE_CARD_PATHS
             and '"source"' in line
@@ -306,31 +308,30 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             and '"role"' in line
             and '"historical_lineage"' in line
         )
-        control_projection_name = (
-            match
-            and rel == CONTROL_PROJECTION_PATH
-            and match.group(0).lower().startswith("vmosk")
-        )
-        control_projection_reference = (
-            match
-            and rel in CONTROL_PROJECTION_REFERENCE_PATHS
-            and match.group(0).lower().startswith("vmosk")
-            and "VMOSK_A.md" in line
-            and "non-semantic" in line.lower()
-        )
-        if match and not (
-            historical_source_record
-            or control_projection_name
-            or control_projection_reference
-            or external_mapping_audit
-            or (
-                rel in EXTERNAL_SOURCE_PATH_FILES
-                and _is_external_source_path(line)
+        for match in FORBIDDEN.finditer(line):
+            control_projection_name = (
+                rel in CONTROL_PROJECTION_PATHS
+                and match.group(0).lower().startswith("vmosk")
             )
-        ):
-            errors.append(
-                f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"
+            control_projection_reference = (
+                rel in CONTROL_PROJECTION_REFERENCE_PATHS
+                and match.group(0).lower().startswith("vmosk")
+                and "VMOSK_A.md" in line
+                and "non-semantic" in line.lower()
             )
+            if not (
+                historical_source_record
+                or control_projection_name
+                or control_projection_reference
+                or external_mapping_audit
+                or (
+                    rel in EXTERNAL_SOURCE_PATH_FILES
+                    and _is_external_source_path(line)
+                )
+            ):
+                errors.append(
+                    f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"
+                )
         application_match = FORBIDDEN_APPLICATION_CLAIMS.search(line)
         if application_match:
             errors.append(
@@ -347,7 +348,7 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
 def main() -> int:
     errors: list[str] = []
     scoped = [ROOT / p for p in FRONT_DOORS + OWNERS]
-    scoped.append(ROOT / CONTROL_PROJECTION_PATH)
+    scoped.extend(ROOT / p for p in CONTROL_PROJECTION_PATHS)
     scoped.extend(p for p in ROOT.rglob("*") if p.is_file() and is_active_route(p))
     scoped.extend(p for p in ROOT.rglob("*") if p.is_file() and is_active_corpus_file(p))
 
@@ -376,10 +377,11 @@ def main() -> int:
                     f"projection boundary {prefix}/README.md missing phrase: {phrase!r}"
                 )
 
-    control_projection = ROOT / CONTROL_PROJECTION_PATH
-    if not control_projection.is_file():
-        errors.append(f"missing control projection: {CONTROL_PROJECTION_PATH}")
-    else:
+    for rel in CONTROL_PROJECTION_PATHS:
+        control_projection = ROOT / rel
+        if not control_projection.is_file():
+            errors.append(f"missing control projection: {rel}")
+            continue
         control_text = control_projection.read_text(encoding="utf-8")
         for phrase in (
             'semantic_authority: "none"',
@@ -389,7 +391,7 @@ def main() -> int:
         ):
             if phrase not in control_text:
                 errors.append(
-                    f"control projection {CONTROL_PROJECTION_PATH} missing phrase: {phrase!r}"
+                    f"control projection {rel} missing phrase: {phrase!r}"
                 )
 
     for rel in APPLICATION_TOMBSTONES:

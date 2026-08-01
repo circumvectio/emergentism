@@ -19,7 +19,7 @@ rosetta:
 
 **Status:** Canonical meta-synthesis
 **Date:** 2026-04-15
-**Evidence Tier:** Meta-interpretive
+**Evidence Tier:** `[I]` Meta-interpretive
 **Depends on:** [00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md](../04_AXIOLOGY/02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md), [Five-plus-One Constitution](../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md), [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md)
 
 ---
@@ -91,7 +91,7 @@ That is why:
 
 - doctrine is after-image
 - `Pratyakṣa` is primary
-- Arjuna (L4) preserves local sovereignty by requiring human mortal sacrifice
+- Arjuna (L4) preserves local sovereignty by requiring that any irreversible commitment be signed by natural persons who bear its cost — no institution and no AI can stand in for them
 - Śiva (L6) keeps the door real through Grace Exit and closes the existential cycle by refusing final capture through naming
 
 In this light, anti-idolatry (the Kālī L2 truth-cut) is simply the highest form of non-capture.
@@ -102,10 +102,10 @@ In this light, anti-idolatry (the Kālī L2 truth-cut) is simply the highest for
 
 Many apparently separate parts of the framework now line up under the 7 Generative Actions:
 
-- Kali (L1) marks the extraction boundary: $\eta = 0$ toward cooperators; immune response only at defection
+- Kali (L1) marks the extraction boundary: `η_move = 0`; immune response only at defection
 - Kālī (L2) cuts false meaning to prevent epistemic capture
 - Kṛṣṇa (L3) exports capability to prevent developmental capture
-- Arjuna (L4) requires mortal wager to prevent decisional capture
+- Arjuna (L4) requires that natural persons stake irreversible personal cost, preventing decisional capture
 - Brahmā (L5) creates forms without letting the form become the source
 - Śiva (L6) enables Grace Exit to prevent institutional capture, and closes the metaphysical cycle
 - Viṣṇu (L7) preserves reciprocal closure so mediation remains service, not enclosure
