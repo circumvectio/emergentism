@@ -55,13 +55,18 @@ CHECKS=(
   # build_pwa.py silently reverted a signed ruling while this gate reported PASS.
   # check_trophic_rosetta_doctrine.py was failing on a real defect the moment it was run:
   # a bare ambiguous eta in the constitution, now written in its action register.
-  # DELIBERATELY NOT WIRED: check_links.py has no failure path at all — it always exits 0,
-  # so adding it would be a check that cannot fail. check_no_secrets_staged.py inspects the
-  # STAGED diff, which is a pre-commit concern, not a tree concern; it belongs in the hook.
+  # check_links.py WAS deliberately unwired because it could not fail: it walked a
+  # directory that does not exist in this repo, swallowed every exception, and printed
+  # "Link check complete." on the way to exit 0. Rewritten 2026-08-01 to actually resolve
+  # every local Markdown link, and wired in now that it has a failure path (verified by
+  # breaking a link and watching it fail). DELIBERATELY STILL NOT WIRED:
+  # check_no_secrets_staged.py inspects the STAGED diff, which a tree gate cannot see; it
+  # belongs in .git/hooks/pre-commit, where it is.
   "09_TOOLS/01_SCRIPTS/check_q4_declarations.py"
   "09_TOOLS/01_SCRIPTS/check_barred_claims.py"
   "09_TOOLS/01_SCRIPTS/check_d6_equiv_d0.py"
   "09_TOOLS/01_SCRIPTS/check_trophic_rosetta_doctrine.py"
+  "09_TOOLS/01_SCRIPTS/check_links.py"
   "09_TOOLS/01_SCRIPTS/build_receipt_disambiguation.py"
 )
 

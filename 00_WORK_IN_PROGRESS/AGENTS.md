@@ -16,8 +16,8 @@ A manifest of what is open and what each item awaits. Holds no doctrine and owns
 - [Local README](README.md)
 - [Emergentism root route](../AGENTS.md)
 - [Kernel Index](../00_THE_KERNEL_INDEX.md)
-- [Settled Canon Registry](00_SETTLED_CANON_REGISTRY.md)
-- [Internal completion register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
+- [Settled Canon Registry](../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Internal completion register](../00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)
 
 ## Pure-worldview boundary
 
