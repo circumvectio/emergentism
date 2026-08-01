@@ -1,6 +1,6 @@
 ---
 title: "Review bundle v2 — current frozen packet for FPE-REVIEW-01"
-status: "READY TO SEND — not sent. No reviewer has been contacted."
+status: "HASH-VERIFIED INTERNAL PACKET — CONTACT BLOCKED; not sent; no reviewer contacted"
 date: 2026-08-01
 evidence_tier: "[B] hashes, version lineage, and file list; [S] invitation framing; no external result"
 owner: "Subordinate to 02_INDEPENDENT_REVIEW.md; this version replaces v1 for future review without rewriting v1 custody."
@@ -12,9 +12,9 @@ parents:
 
 # Review bundle v2
 
-> **Nothing here is a result.** This is the current same-hash packet for
-> `FPE-REVIEW-01`. It is ready to send but has **not been sent**. No reviewer has
-> been identified, contacted, or engaged.
+> **Nothing here is a result.** This is the current hash-verified packet for
+> `FPE-REVIEW-01`. It is **not contact-ready** and has **not been sent**. No
+> reviewer has been identified, contacted, or engaged.
 
 ## Why version 2 exists
 
@@ -68,8 +68,9 @@ here** and who declares competence and conflicts.
 
 | State | Evidence |
 |---|---|
-| bundle v2 assembled and frozen | **yes**, ten files hashed on 2026-08-01 |
+| bundle v2 hash set assembled and frozen | **yes**, ten files hashed on 2026-08-01 |
 | verifier wired into the corpus gate | **yes** |
+| non-circular lifecycle binding and all contact prerequisites complete | **no** — registry execution remains blocked |
 | reviewer identified | **no** |
 | reviewer contacted | **no** |
 | review received | **no** |

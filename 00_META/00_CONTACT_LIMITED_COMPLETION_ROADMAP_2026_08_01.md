@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 6 verified; Sprint 7 external review remains owner/contact-gated"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 6 verified; Sprint 7 pre-contact readiness is blocked"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -125,14 +125,20 @@ contact remains `OPEN / 0 accepted records / 2 requirements`, and the dated
 result is
 `11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`.
 
-### Sprint 7 — external review clock
+### Sprint 7 — pre-contact readiness, then external review clock
 
-The frozen review bundle can be sent only after the owner names a qualified
-recipient and chooses to contact them. An AI or project-agent review remains
+The v2 packet's ten-file hash set is intact, but `FPE-REVIEW-01` is not
+contact-ready. Its registry still blocks execution on six prerequisites: an
+acyclic `bundle_manifest` binding, conflict form, reviewer-scope form,
+compensation terms, publication permission, and an applicability
+determination. Those records must be satisfied without pretending the present
+manifest/registry cycle has closed. Only then may the owner name a qualified
+recipient and choose to contact them. An AI or project-agent review remains
 internal search signal and cannot satisfy this gate.
 
-**Exit:** an invitation to a named independent reviewer is actually sent and a
-dated receipt records only that event. A reply is not fabricated or implied.
+**Exit:** all registry prerequisites carry real custody, an invitation to a
+named independent reviewer is actually sent, and a dated receipt records only
+that event. A reply is not fabricated or implied.
 
 ### Sprint 8 — world-test cycles
 

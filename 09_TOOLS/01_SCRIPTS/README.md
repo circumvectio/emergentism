@@ -90,6 +90,10 @@ Current repository validators and narrowly scoped support scripts.
   and active Managed Agents projection may not restore the retired product as
   a selected/ranked/scored/maximized node objective. Explicit history,
   negative results, and separately cardinal candidates remain readable.
+- `check_review_bundle.py` verifies the latest versioned review hash set and
+  rejects a human-facing `READY TO SEND` label while the machine registry keeps
+  `FPE-REVIEW-01` blocked. A pass proves local packet custody, never reviewer
+  identity, contact, reply, or independent evidence.
 - `check_no_secrets_staged.py` — deliberately not a tree gate: it inspects the
   staged diff and therefore belongs in the pre-commit hook.
 

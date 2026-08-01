@@ -22,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DIR = ROOT / "03_METHODOLOGY" / "03_PREREGISTRATIONS" / "finity_practice"
+REGISTRY = DIR / "GATE_REGISTRY.json"
 VERSIONED_BUNDLE = re.compile(r"^REVIEW_BUNDLE_v(?P<version>[1-9][0-9]*)\.(?P<kind>json|md)$")
 
 
@@ -36,6 +37,46 @@ def bundle_inventory() -> tuple[dict[int, Path], dict[int, Path]]:
         target = manifests if match.group("kind") == "json" else documents
         target[version] = path
     return manifests, documents
+
+
+def review_execution_state(registry: Path = REGISTRY) -> str:
+    """Return the one declared FPE-REVIEW-01 execution state."""
+
+    data = json.loads(registry.read_text(encoding="utf-8"))
+    matches = [
+        gate
+        for gate in data.get("gates", [])
+        if isinstance(gate, dict) and gate.get("gate_id") == "FPE-REVIEW-01"
+    ]
+    if len(matches) != 1:
+        raise ValueError(f"expected one FPE-REVIEW-01 gate, found {len(matches)}")
+    execution = matches[0].get("execution")
+    state = execution.get("state") if isinstance(execution, dict) else None
+    if not isinstance(state, str) or not state.strip():
+        raise ValueError("FPE-REVIEW-01 execution state is missing")
+    return state
+
+
+def document_status_errors(document_text: str, execution_state: str) -> list[str]:
+    """Keep the human packet status consistent with the machine gate state."""
+
+    normalized = " ".join(document_text.split())
+    lowered = normalized.lower()
+    errors: list[str] = []
+    for needed in ("not sent", "review received", "does not work here"):
+        if needed not in lowered:
+            errors.append(f"packet no longer states {needed!r}")
+    if execution_state == "blocked":
+        if "contact blocked" not in lowered:
+            errors.append("blocked review gate is not labeled CONTACT BLOCKED")
+        positive_readiness = (
+            r"(?<!not\s)\bready[- ]to[- ]send\b",
+            r"(?<!not\s)\bcontact[- ]ready\b",
+            r"\b(?:may|can)\s+now\s+be\s+sent\b",
+        )
+        if any(re.search(pattern, lowered) for pattern in positive_readiness):
+            errors.append("blocked review gate still asserts contact readiness")
+    return errors
 
 
 def main() -> int:
@@ -90,15 +131,17 @@ def main() -> int:
                 "existing review as not covering it."
             )
 
-    # the packet must keep saying it is not a result
+    try:
+        execution_state = review_execution_state()
+    except (json.JSONDecodeError, OSError, ValueError) as exc:
+        errors.append(f"review gate registry unreadable or ambiguous: {exc}")
+        execution_state = "unknown"
+
+    # The packet must keep saying it is not a result, and its human-facing
+    # readiness label may not outrun the machine registry.
     doc = document.read_text(encoding="utf-8")
-    normalized_doc = " ".join(doc.split())
-    for needed in ("not sent", "review received", "does not work here"):
-        if needed not in normalized_doc:
-            errors.append(
-                f"{document.name} no longer states '{needed}' — the status table or its "
-                "fence has been weakened"
-            )
+    for error in document_status_errors(doc, execution_state):
+        errors.append(f"{document.name}: {error}")
 
     if errors:
         print("REVIEW BUNDLE: FAIL")
@@ -106,7 +149,7 @@ def main() -> int:
             print(f"- {e}")
         return 1
     print(f"REVIEW BUNDLE: PASS ({len(files)} files, {len(versions)} versions in custody; all hashes match bundle "
-          f"{man.get('bundleVersion','?')} frozen {man.get('frozen','?')})")
+          f"{man.get('bundleVersion','?')} frozen {man.get('frozen','?')}; execution={execution_state})")
     print("  scope: proves the packet has not drifted. It does NOT mean a reviewer was "
           "found, contacted, or replied.")
     print("  known limit: the status-table check matches PHRASES, not truth. Someone "

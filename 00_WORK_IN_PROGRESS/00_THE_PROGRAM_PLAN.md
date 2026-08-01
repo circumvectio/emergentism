@@ -1,15 +1,20 @@
 ---
 title: "The Program Plan — seven sprints to a closed internal program, and why that is not 'finished'"
-status: "PROPOSED — not ratified. Sprint 1 is an owner sitting; nothing downstream is safe to start before it."
+status: "SUPERSEDED AS CURRENT SEQUENCING — retained as the 2026-07-30 proposal; use the contact-limited roadmap"
 date: 2026-07-30
 evidence_tier: "[B] every count below is measured and reproducible; [S] the sequencing and the definition of done; [I] nothing"
 owner: "No owner until ratified. This plan creates no authority and may not be cited as a commitment."
 parents:
   - README.md
   - ../00_META/00_W8_ADEQUACY_DECISION_MATRIX.md
+  - ../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md
 ---
 
 # The Program Plan
+
+> **Current routing, 2026-08-01:** this dated proposal is provenance, not the
+> execution queue. Sprint 1's invitation-first premise is superseded by the
+> contact-limited roadmap and the blocked `FPE-REVIEW-01` registry.
 
 > **Read the definition of done before the sprints, or the sprints will read as a promise
 > they are not making.**
@@ -49,7 +54,7 @@ progress.
 | contact-gated — **cannot** be closed from inside | count |
 |---|---|
 | preregistrations written / run | 3 / 0 |
-| review packet frozen / sent | 1 / 0 |
+| review packet hash set / readiness prerequisites satisfied / sent | 1 / 0 / 0 |
 | empirical sockets specified / run | 11 / 0 |
 | returned outcomes from outside | **0** |
 
@@ -71,18 +76,20 @@ longer gated on this sprint. This paragraph remains as evidence of the drift it 
 
 ---
 
-## SPRINT 1 · Send the invitation · *owner, 20 minutes, starts the longest clock*
+## HISTORICAL SPRINT 1 · Invitation-first sequence superseded — do not execute
 
-**Do this first and alone.** The packet is frozen and hash-verified at
-`03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.md`. The invitation
-is written. What remains is naming one qualified outsider and asking.
+The v1 invitation premise is obsolete. The current v2 ten-file hash set is
+verified, but the registry remains blocked on an acyclic manifest binding,
+conflict and reviewer-scope forms, compensation terms, publication permission,
+and an applicability determination. The live sequence is owned by
+`../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md`.
 
-- **Exit condition:** an invitation sent to a named person, recorded as a receipt.
-- **Not the exit condition:** a reply. That is theirs.
-- **Why first:** it is the only item on this board that can change the project's score,
-  and it is the only one whose clock we do not control.
-- **Cannot be delegated to this session.** The protocol: *"AI or project-agent review is
-  useful internal search but does not satisfy this external gate."*
+- **Current pre-contact exit:** all six registry prerequisites carry real custody.
+- **Later contact event:** an invitation is sent to a named qualified person and
+  only that event is receipted; a reply remains theirs.
+- **Cannot be delegated to an internal review.** The protocol: *"AI or
+  project-agent review is useful internal search but does not satisfy this
+  external gate."*
 
 ---
 
