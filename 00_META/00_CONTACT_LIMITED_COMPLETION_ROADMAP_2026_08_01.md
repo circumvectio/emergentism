@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 5 verified; Sprint 6 open-claim disposition is next"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 6 verified; Sprint 7 external review remains owner/contact-gated"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -54,9 +54,9 @@ Finite residue still visible after that work:
 |---|---|---|
 | ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE.** All 97 physically reused prefixes remain unsafe as bare citations; active source owners, lane indexes, and citation-scannable current/provisional public dependencies now carry exact target custody. Historical/report-only bodies remain unchanged. | preserve `ACTIVE_RECEIPT_CITATION_REGISTRY.json`, its dated digest receipt, and the full-filename rule; never rename history merely to make a counter zero |
 | ~~`PUBLIC-LIFECYCLE`~~ | **CLOSED 2026-08-01.** All 398 public HTML artifacts are classified: 40 current, four provisional, 341 frozen, eleven withheld, two infrastructure, and zero unclassified. One clean-route alias collision and eight precedence overlaps remain explicit rather than hidden. | preserve the zero-unclassified ratchet, matcher parity, sitemap/header ordering, and dated receipt custody |
-| `CLAIM-DISPOSITION` | the machine owner carries 17 W rows and 9 reopened research-question rows; the former 17-row count was W-only, not the complete investigation universe | each row resolved, narrowed, or explicitly typed contact-gated with owner, discriminator, and kill |
+| ~~`CLAIM-DISPOSITION`~~ | **CLOSED INTERNALLY 2026-08-01.** All 26 W/RQ rows and all 22 grave parent forms carry typed dispositions. Fifteen rows directly own contact gates, W3 and three RQs merge into existing contracts, seven rows narrow or terminate internally, twenty grave parents route only to successors, and two close without one. | preserve the 48-row lifecycle digest, zero-ambiguity ratchet, exact contract ownership, and the rule that internal results never move world contact |
 | `OWNER-HELD-RESIDUE` | topology and frozen-public-document gates remain held; other old plan rows require a fresh audit | one dated rule per genuine residue; stale rows close with evidence rather than silence |
-| `WORLD-CONTACT` | twelve research sockets are packet-complete and evidence-open; the independent-review gate remains unsatisfied | returned observation, review, or replication filed verbatim with outcome custody |
+| `WORLD-CONTACT` | twelve research sockets are explicit but uneven: five deferred, one formal-only, three component-contact, and three ready-to-freeze; none supplies an accepted world outcome, and the independent-review gate remains unsatisfied | returned observation, review, or replication filed verbatim with outcome custody |
 
 ## Recursive execution sequence
 
@@ -102,7 +102,7 @@ the production predeploy suite invokes the zero-unclassified ratchet. The dated
 result is
 `11_UPLINK/50_AUDITS_AND_EXECUTIONS/238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md`.
 
-### Sprint 6 — open-claim disposition
+### Sprint 6 — open-claim disposition — VERIFIED 2026-08-01
 
 Review all 26 machine-owner investigation rows: the 17-row W scope and the nine
 reopened research questions. Formal questions receive a proof, countermodel,
@@ -113,6 +113,17 @@ not misreported as a live investigation.
 
 **Exit:** zero ambiguous open rows; every remaining open claim is typed to a
 named external discriminator.
+
+**Outcome:** met across the expanded source scope. The initial 26-row plan
+omitted 22 grave parents whose transition statuses still appeared live; the
+implemented ratchet therefore binds all 48 lifecycle rows. The 26 W/RQ rows
+contain fifteen direct contact owners, four merged contact routes, four scoped
+internal narrowings, and three terminal dispositions. Twenty grave parents route
+only to successors, two close without successors, and none remains a duplicate
+active investigation. Eighteen unique external contracts remain open, world
+contact remains `OPEN / 0 accepted records / 2 requirements`, and the dated
+result is
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`.
 
 ### Sprint 7 — external review clock
 

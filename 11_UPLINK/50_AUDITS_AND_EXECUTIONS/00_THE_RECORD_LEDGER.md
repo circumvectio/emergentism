@@ -8,7 +8,7 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 238, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+status: "ACTIVE — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s 21 reopened transitions adjudicated by `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; 21 grave parent forms terminal, DF-14 narrowed, zero separate active parent investigations; 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 239, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; world contact and deployment open; historical receipts preserved by full filename"
 date: 2026-08-01
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
@@ -55,17 +55,27 @@ evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 
 `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md` §9. When a proof-form dies, its load-bearing *uses* do not die with it — but the ledger, not "almost always," decides each case, and the named dead stay dead **as the claims they were**. **Derivation-death is not idea-death.** The record's job is to keep both facts visible at once: the proof is buried *and* the use is preserved, each at its own tier. The knife cut proof-status; it did not cut the organism.
 
-**Amended 2026-07-29 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`).** All 22 rows below are now `OWNER-REOPENED` as **active questions**, with every counterexample intact. This does not soften "the named dead stay dead": ℤ₅ still refutes the stated `N=3` lemma, Presburger still refutes the Gödel lift, electroweak unification still collapses the D2/D3 split, *D. gigas* is still panmictic. **A ruling can reopen a question; it cannot delete a counterexample.** What changed is standing, not truth.
+**Reopening and adjudication.** The 2026-07-29 ruling
+`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` reopened 21 parent
+forms for investigation; its "all 22" phrase was over-broad because `DF-14`
+was already `NARROWED`. Receipt
+`239_OPEN_CLAIM_DISPOSITION_2026_08_01.md` completes the transition: twenty of
+the twenty-one reopened rows again carry their recorded terminal classes; `DF-13` is corrected
+from the prior empirical label to `NOT-WELL-POSED`, `DF-14` remains narrowed,
+and executable work routes only through explicit successors. Every
+counterexample remains intact. **A ruling can reopen a question; it cannot
+delete a counterexample or turn a parent into a second confirmation.**
 
 ---
 
 ## 2 · The kill index with grave dates (22 dead forms)
 
-> **Status banner — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`, 2026-07-29.** Every row in this table is now
-> `OWNER-REOPENED`: restored to **active investigation**, never to asserted truth.
-> **The table below is unchanged and must stay so** — no "Why dead" cell is
-> edited and no grave date is removed, because the counterexample is the thing
-> the reopening is required to preserve. Current status, prior status,
+> **Current status — `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`.** Twenty-one
+> parent forms are terminal and `DF-14` is narrowed; zero parent forms remain a
+> separate active investigation. **The table below preserves the kill record and
+> every grave date.** Row 13's “Why dead” wording is explicitly scope-corrected
+> by `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` so the martyr example is not overclaimed; that correction does
+> not revive the signed universal. Current status, prior status,
 > `repair_path` and the four preconditions live in the live register, not here.
 >
 > **Live status owner:** [`00_META/00_THE_CLAIM_STATUS_REGISTER.md`](../../00_META/00_THE_CLAIM_STATUS_REGISTER.md)
@@ -73,7 +83,7 @@ evidence_tier: "[B] catalog of dated events; [S] route discipline; [I] assembly"
 > · validator `09_TOOLS/01_SCRIPTS/check_claim_status.py`.
 >
 > Two rows carry a standing caution. **Row 5** (`φ·ν=1` as a conserved discovery)
-> and **row 21** (CC-CORE-1) are reopened with **no successor** — both are the
+> and **row 21** (CC-CORE-1) are closed with **no successor** — both are the
 > seam-is-not-the-score error stated twice, and none may be invented for them.
 > **Row 9** (forced Titan-3) stays dead as *forcing*; the three Titan identities
 > were separately restored **by proof** on `Ĉ` (doc 45, `TR-01`), which is a
@@ -97,10 +107,10 @@ that recorded the kill):
 | 7 | The squid as `η=0` witness | False-to-fact (*D. gigas* panmictic, semelparous, weak-targeting) — a counterexample, not a witness. | P3 · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` · 2026-07-13 |
 | 8 | Literal `D6 ≡ D0` | Loop-as-equation fails; apophatic return (`∼`) survives. | `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (A3-5) · 2026-07-13; P7; later similarity ruling adopted · 2026-07-19 |
 | 9 | Forced Titan-3 | Inversion fixes `±1` and swaps `{0,∞}`; their union is a selected invariant frame, not ordinary closure. | C21 · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` · 2026-07-13 |
-| 10 | Force bijection (forces ↔ lines) | Electroweak unification collapses D2/D3 above ~246 GeV. | `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (A3-6) · 2026-07-13; P4 |
+| 10 | Force bijection (forces ↔ lines) | `117_FORCE_LADDER_FORMALIZED_07B.md` and `117_PATH_D_NEGATIVE_RESULT.md` do not recover four force-specific slots; electroweak unification is supporting context, not the no-go alone. | `117_FORCE_LADDER_FORMALIZED_07B.md`; `117_PATH_D_NEGATIVE_RESULT.md`; scope reconciled by `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` |
 | 11 | N=3-forced | ℤ₅ counterexample; the group lemma fails; N=3 selected, not derived. | C11, P11 · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` · 2026-07-13 |
 | 12 | Gödel universal lift | Tarski counterexamples (Presburger, real-closed fields complete/decidable). | `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (A3-4) · 2026-07-13 |
-| 13 | Three substrates minimum | A single human martyr is one organism satisfying the framework's own falsifier. | `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (A6-1) · 2026-07-13 |
+| 13 | Three substrates minimum | The signed universal retraction stands. A martyr defeats a minimum of three organisms or independently embodied agents, but does not alone prove a substrate-cardinality result (`132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`). | `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (A6-1) · 2026-07-13; scope corrected 2026-07-19 |
 | 14 | Universal frame/operand exclusivity for ordinary numbers | Ordinary identities are operands; no standard numeric system yields the old field equation. This death does not apply to the later opaque `TitanFrame`, whose non-operand status is true by explicit type definition. | worksheet 2B row 8 · 2026-07-19; KSC-04 sovereignty split · 2026-07-21 |
 | 15 | Convergence-as-proof | Fifteen renderings of one shape are one datum, not fifteen confirmations. | P5, P12 · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` · 2026-07-13; sharpened `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` · 2026-07-19 |
 | 16 | "Extraction is irrational" as a Nash result | True only in Model A; private side-payments break it. | P6 · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` · 2026-07-13 |
@@ -170,7 +180,7 @@ never back-filled:
 | 171 | `171_WORKTREE_TIDY_2026_07_23.md` | Worktree tidy; repository hygiene only, no doctrine touched. |
 | 172 | `172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md` | Validation status installed as a **second axis** beside evidence tier; all 22 dead forms adjudicated into typed statuses with counterexamples cited. |
 | 173 | `173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md` | **First V-axis audit.** `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` measured Φ; nobody had measured V. 155 receipts, **zero outcome receipts returned from outside**; under the corpus's own AND-class law `P ≈ 0`. The binding constraint is contact. |
-| 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | **Owner ruling: all 22 dead forms → `OWNER-REOPENED`**, counterexamples intact, each with a `repair_path`. Separately, the three Titan identities restored **by proof** on `Ĉ`; `KSC-04` preserved. |
+| 174 | `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` | Owner reopening transition with counterexamples intact; its "all 22" statement was corrected because DF-14 was already narrowed. Current dispositions are owned by receipt 239. |
 | 175 | `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` | Sphere primacy ruled and executed; the number line shown to be the `ι`-invariant **meridian** of the sphere, so nothing was lost by it; arithmetic becomes chart-local; Suda adopted at tier. |
 | 176 | `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` | `R0` "no necessary being" adopted into K-5 as the foundational **refusal**, prior to the five and different in type; `KSC-28` recorded. Later restratified — the base is the three relations; the sphere is emergent. |
 | 177 | `177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md` | Correction receipt: WP-1's validator defects and a false attestation were recorded; the validator was hardened without erasing the failure. |
@@ -197,6 +207,7 @@ never back-filled:
 | 236 | `236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md` | Exact receipt, public-lifecycle, claim, owner-held, and world-contact remainder is recomputed by a state-digest-bound ratchet; local `PASS-WITH-DEBT` makes no external-validation claim. |
 | 237 | `237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md` | Active receipt/packet target identity is bound by an exact occurrence registry and adversarial mutation gate; all reused prefixes remain unsafe bare, report-only history remains unchanged, and no publication or world-contact claim is made. |
 | 238 | `238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md` | All 398 public HTML artifacts receive one effective lifecycle class; the nested-archive matcher drift is closed locally, provisional scans and the deploy precheck fail closed, and no page is promoted or deployed. |
+| 239 | `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md` | All 26 W/RQ rows and all 22 grave parent forms receive explicit dispositions; eighteen unique external contracts remain outcome-open, zero rows remain ambiguous, and no world-contact, publication, or deployment claim is made. |
 
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
@@ -241,7 +252,7 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 ## 6 · The receipt-prefix collision census (full)
 
 Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20
-and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 238 (with exact files recorded in §3) are
+and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 239 (with exact files recorded in §3) are
 therefore **absent from the table below**; prefixes 180 and 192 have no receipt
 file located as of 2026-08-01. Section 3 records both the located filenames and
 the two explicit gaps, but this collision census remains stale rather than

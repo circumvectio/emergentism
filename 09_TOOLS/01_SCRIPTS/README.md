@@ -46,6 +46,10 @@ Current repository validators and narrowly scoped support scripts.
   `bash 09_TOOLS/01_SCRIPTS/gate.sh`.
 - `check_foundation.py`, `check_claim_status.py`, and
   `check_emergentism_purity.py` — broad owner, tier, and boundary checks.
+  The claim-status checker additionally binds the exact 48-row lifecycle and
+  full contract document, validates the named external-owner registry and
+  restored-result inventory, and rejects terminal/fake blockers or dependency
+  cycles.
 - `check_coherence_profile.py` validates the tool-owned four-axis declaration
   in `coherence_profile.json`. Its overall state is explicitly internal;
   world contact remains a separate typed axis and cannot be supplied by a
@@ -53,8 +57,10 @@ Current repository validators and narrowly scoped support scripts.
 - `check_contact_limited.py` recomputes the receipted completion counters from
   their machine owners. It guards the receipt-collision universe, exclusive
   public lifecycle (including zero-unclassified closure, cross-implementation
-  ignore parity, aliases, and raw-overlap debts), W and RQ
-  claim scope, exact owner-held debts, and the fail-closed `OPEN` world axis.
+  ignore parity, aliases, and raw-overlap debts), the complete 48-row claim
+  lifecycle (26 W/RQ rows plus 22 grave-parent rows), exact contact contracts,
+  zero ambiguous dispositions, exact owner-held debts, and the fail-closed
+  `OPEN` world axis.
   A pass is an internal inventory result, never evidence that those debts have
   closed or that world contact occurred. Its state digest is bound to a dated
   snapshot receipt; an already-committed receipt must match both the worktree

@@ -74,14 +74,21 @@ gate is inadmissible as world-contact evidence. Any declared world-contact
 record must also resolve to repository-relative custody; a label without a
 file cannot move that axis.
 
-`test_contact_limited.py` supplies mutation controls for the exact bounded
-completion inventory. It removes artifacts, W3/RQ/debt rows, preserves counts
-while substituting debt IDs, fabricates internal world evidence, changes the
-nested archive-ignore rule, and mutates alias/overlap lifecycles; each move
-must fail rather than silently rewrite the baseline. Temporary Git histories
-also prove that a new receipt may land once, an unchanged receipt survives a
-later commit, a same-path rewrite fails, and shallow parent history fails
-closed.
+`test_claim_status.py` supplies 23 mutation controls for the 48-row claim
+lifecycle: exact schema and policy identity, duplicate-key rejection, typed
+contact and merged-contact contracts, internal resolutions, grave-parent
+dispositions, exact external-owner and restored-result inventories, path
+custody, dependency acyclicity, row cardinality, the canonical lifecycle
+digest, and the full claim-status contract digest.
+
+`test_contact_limited.py` supplies 70 mutation controls for the exact bounded
+completion inventory. It removes artifacts and lifecycle rows, swaps contact
+contracts and grave-parent dispositions, preserves counts while substituting
+debt IDs, fabricates internal world evidence, changes the nested archive-ignore
+rule, and mutates alias/overlap lifecycles; each move must fail rather than
+silently rewrite the baseline. Temporary Git histories also prove that a new
+receipt may land once, an unchanged receipt survives a later commit, a
+same-path rewrite fails, and shallow parent history fails closed.
 
 `test_active_receipt_citations.py` supplies 24 mutation controls for typed and
 exact target substitution, same-line binding, packet/receipt lane separation,

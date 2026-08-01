@@ -103,8 +103,13 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
         )
-        self.assertEqual(report["claim_disposition"]["w_rows"], 17)
-        self.assertEqual(report["claim_disposition"]["reopened_rows"], 9)
+        self.assertEqual(report["claim_disposition"]["lifecycle_rows"], 48)
+        self.assertEqual(report["claim_disposition"]["current_rows"], 26)
+        self.assertEqual(report["claim_disposition"]["direct_contact"], 15)
+        self.assertEqual(report["claim_disposition"]["merged_contact"], 4)
+        self.assertEqual(report["claim_disposition"]["internal"], 7)
+        self.assertEqual(report["claim_disposition"]["external_contracts"], 18)
+        self.assertEqual(report["claim_disposition"]["ambiguous"], 0)
         self.assertEqual(report["owner_held"], 2)
         self.assertEqual(report["world_contact"]["state"], "OPEN")
 
@@ -141,7 +146,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
     def test_double_claim_classification_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["claim_disposition"]["w_scope"]["internal_disposition"].append("W2")
+        state["claim_disposition"]["current_scope"]["internal_terminal"].append("W1")
         self.assert_invalid(state)
 
     def test_stale_count_fails(self) -> None:
@@ -376,20 +381,19 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                     Path(directory), Path("236_RECEIPT_2026_08_01.md")
                 )
 
-    def test_w3_mapping_deletion_fails(self) -> None:
+    def test_w3_merged_mapping_deletion_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["claim_disposition"]["w_scope"]["internal_disposition"].remove("W3")
+        state["claim_disposition"]["current_scope"]["merged_contact"].remove("W3")
         self.assert_invalid(state)
 
     def test_reopened_question_deletion_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["claim_disposition"]["reopened_scope"]["ids"].remove("RQ-09")
-        state["claim_disposition"]["reopened_scope"]["rows"] -= 1
+        state["claim_disposition"]["current_scope"]["internal_narrowed"].remove("RQ-09")
         self.assert_invalid(state)
 
     def test_count_preserving_per_id_status_swap_fails(self) -> None:
         claims = copy.deepcopy(self.computed["compute_claim_disposition"])
-        statuses = claims["w_scope"]["statuses"]
+        statuses = claims["current_scope"]["statuses"]
         statuses["W0-CROWN"], statuses["W2"] = statuses["W2"], statuses["W0-CROWN"]
         self.assert_invalid(self.state, compute_claim_disposition=claims)
 
@@ -932,7 +936,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
     def test_missing_nested_evidence_path_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["claim_disposition"]["w3_guard"]["evidence"][1] = "missing.md"
+        state["owner_held"]["debts"][0]["evidence"][1] = "missing.md"
         self.assert_invalid(state)
 
     def test_malformed_state_is_contract_failure_not_traceback(self) -> None:

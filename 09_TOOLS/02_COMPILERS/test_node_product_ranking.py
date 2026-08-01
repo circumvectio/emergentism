@@ -38,6 +38,7 @@ class NodeProductRankingTests(unittest.TestCase):
             "Maximize φ × ν across candidates.",
             "P = Phi * V is the default objective.",
             "P_node=ΦV is selected but not uniquely derived.",
+            "Compare the selected node product with other aggregators.",
         )
         for text in barred:
             with self.subTest(text=text):
@@ -61,6 +62,7 @@ class NodeProductRankingTests(unittest.TestCase):
             "The current score is min(Φ̂₄,V₄); the old product ΦV is retired.",
             "The analytic identity φν=1 ranks nothing and is not a node score.",
             "The preregistered experimental product candidate is P = Phi * V.",
+            "The historical selected node product is retired as a ranking.",
         )
         for text in allowed:
             with self.subTest(text=text):

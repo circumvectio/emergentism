@@ -38,7 +38,7 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=min(Φ̂₄,V₄)`, the selected AND-class working score over ordinal factors, only under its stated normalization and contact premises; the product form `Φ̂₄V₄`—publicly `ΦV`—is retired as a ranking and survives only as the historical name of the same conjunction. Neither form is a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=min(Φ̂₄,V₄)`, the selected AND-class working score over ordinal factors, only under its stated normalization and contact premises; the product form `Φ̂₄V₄`—publicly `ΦV`—is retired as the selected ranking, survives in history, and remains testable only as an explicit candidate under separately defended cardinal scales. Neither form is a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
@@ -57,7 +57,7 @@ certificate or a “most good” superlative the world has not tested.
 | Grammar (sovereign three-seat emblem `•  ⊙  ○`; seam `P∞=φν=1`; normalized balance/score bounds) | root `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`; D0 Titan and D1 arithmetic subowners named by K-1 | per-register: chart arithmetic `[A]`; non-operational emblem `[I]`; node aggregation `[C/S]`; glyph doc 41 is compatibility commentary |
 | Keystone (DoF/form, plenitude, measurement boundary) | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | active assembly; claims retain `[S/I/C]` |
 | Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | active successor at per-axiom tiers; A1–A7 is superseded genealogy |
-| Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
+| Wager forms W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager-form ledger; 15 W rows contact-routed, 2 terminal; entry tiers and current status remain separate |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `[S]` model language / `[I]` names |
 | The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + `105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
@@ -397,8 +397,9 @@ In one line:
 ## 8 · What remains open to the world
 
 The internal cleanup does not externally validate the worldview. The live work
-is contact: preregister discriminators; compare the selected node product with
-other conjunctive aggregators; operationalize each μ-crossing; intervene on
+is contact: preregister discriminators; compare the selected node-minimum
+convention with other conjunctive aggregators, testing a product only under
+separately defended cardinal scales; operationalize each μ-crossing; intervene on
 represented futures; test Egregoreotype candidates across carrier turnover;
 publish nulls and failures; and invite independent replication. A result enters
 the worldview only at the tier it earns.
@@ -438,12 +439,12 @@ This document was composed from the post-recovery arc:
 - **`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`** (full Rosetta council) — 7 raw reports, DoF ≠ forms correction, six commitments
 - **`11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/`** (purification audit) — 7 caste verdicts, contamination inventory
 
-**The wager ledger:**
+**The wager forms and current dispositions:**
 
-- W0 — Crown Wager: necessary algebra may be instantiated as das All `[C]`
-- W1 — operational reachability `[C]`
+- W0 — Crown Wager: necessary algebra may be instantiated as das All; `NOT-WELL-POSED`, optional creed only
+- W1 — operational reachability; `COMPONENT-SUPPORTED`, domain contact still open
 - W2 — quantum record emergence `[I/C]`
-- W3 — multiplicative interior somewhere `[C]`
+- W3 — product-versus-rivals wager; `OPEN-EMPIRICAL`, merged into scale-gated W4A
 - W4 — two-factor evaluated productivity `[C]`
 - W5 — conditional equator transfer `[C]`
 - W6 — non-extraction load-bearing at scale `[I/C]`
@@ -453,18 +454,18 @@ This document was composed from the post-recovery arc:
 - W8 — model-mediated future causation `[I/C]`
 - W9 — Egregoreotype criterion `[I/C]`
 - W10 — mirror grammar travels within scoped lineages `[I/C]`
-- W11 — the `−1` dark twin does functional work `[C]`
+- W11 — the `−1` dark-twin functional-work claim is `DECORATIVE`; ordinary mathematics and optional symbolism survive
 - W12 — apophatic closure lives in practice `[I/C]`
 
-**The kill criteria carried:**
+**The original kill criteria, retained with their dispositions:**
 
 - A claim that does no work is decoration, and we bury it with a date
-- W0 is abandoned if it supplies no explanatory/contact gain, conflicts with established contact, or becomes compulsory disclosure
+- W0's claim form is terminally `NOT-WELL-POSED`; the optional creed and Map ≠ Ground survive
 - The existential product-interior wager dies if a preregistered search across
   its declared candidate domains finds no domain where product discriminates
   from serious rival aggregators on held-out data; one domain counterexample
   kills only that domain claim
-- −1 dies if it names no real phenomenon, grounds no operator, predicts nothing
+- W11's extra functional claim met its decorative exit; `−1` mathematics did not die with it
 - literal `D6≡D0` remains dead; `D6~D0` means only the `[I]` boundary-role relation in §6
 - The seven exhausts the dance, not the dance floor
 - Authorization, authorship, evidence, and truth remain distinct types

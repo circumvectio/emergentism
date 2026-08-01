@@ -41,6 +41,8 @@ PRODUCT_FORM = re.compile(
     re.IGNORECASE,
 )
 
+SELECTED_NODE_PRODUCT = re.compile(r"\bselected\s+node[- ]product\b", re.IGNORECASE)
+
 # Lowercase reciprocal coordinates may satisfy phi*nu = 1 analytically. Only
 # an explicit multiplication sign is scanned, and only in ordering/objective
 # context, so the identity itself remains outside the node-score prohibition.
@@ -225,8 +227,9 @@ def violations_in_text(text: str, rel: Path = Path("fixture.md")) -> list[tuple[
     violations: list[tuple[int, str]] = []
     for index, line in enumerate(lines):
         upper_match = PRODUCT_FORM.search(line)
+        selected_node_product = SELECTED_NODE_PRODUCT.search(line)
         lower_match = LOWER_PRODUCT_FORM.search(line)
-        if not upper_match and not lower_match:
+        if not upper_match and not lower_match and not selected_node_product:
             continue
 
         # The lowercase reciprocal identity is analytic rather than a node
@@ -234,7 +237,7 @@ def violations_in_text(text: str, rel: Path = Path("fixture.md")) -> list[tuple[
         # surrounding prose discusses selection or fitness.
         if lower_match and re.match(r"\s*=\s*1(?:\b|-)", line[lower_match.end() :]):
             lower_match = None
-            if not upper_match:
+            if not upper_match and not selected_node_product:
                 continue
 
         context = _clause_context(lines, index)

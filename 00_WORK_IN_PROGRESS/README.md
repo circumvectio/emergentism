@@ -45,6 +45,7 @@ become a way of losing work and should be repaired.
 | ~~`G-0b`~~ | **CLOSED — retained through the 2026-08-01 typed repair.** `F1` remains a property of presupposed `P1`, not a stratum beside it; the correction does not restore the ill-typed fourth posit. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE — exact custody landed 2026-08-01.** All **97 physically reused receipt prefixes** remain unsafe as bare numeric citations; the older 91 is only a legacy heuristic. The active registry binds typed locators and exact target tokens across its fixed owner set and citation-scannable current/provisional public dependencies. Historical/report-only bodies were measured but not renamed or rewritten. | — | `00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json`; `09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md` |
 | ~~`PUBLIC-LIFECYCLE`~~ | **CLOSED — exhaustive machine-owned public-HTML classification landed 2026-08-01.** Q4's four provisional routes remain provisional; `404.html` joins `/offline/` as doctrine-free infrastructure; the other thirteen former gaps are frozen pending disposition. The 398-public-HTML-artifact universe now contains **zero unclassified artifacts**, the two local ignore matchers are parity-checked, and the deploy precheck runs the lifecycle ratchet. Non-HTML runtime/support files remain outside this lifecycle universe. No page was promoted or deployed. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md`; `00_META/CONTACT_LIMITED_STATE.json` |
+| ~~`CLAIM-DISPOSITION`~~ | **CLOSED INTERNALLY — full 48-row lifecycle adjudicated 2026-08-01.** The 26 W/RQ rows split into fifteen direct contact owners, four merged contact routes, four internal narrowings, and three terminal dispositions. All 22 grave parents are also explicit: twenty route only to successors, two close without one, and none remains a separate active investigation. Eighteen unique external contracts remain outcome-open; zero world records were added. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; `00_META/claim_status/CLAIM_STATUS.yaml`; `00_META/CONTACT_LIMITED_STATE.json` |
 | ~~`FOUNDATION-KSC-04`~~ | **CLOSED — typed repair landed 2026-08-01.** Foundation, K-5, and the active downstream chain now keep `TitanFrame` disjoint from the separate algebra, numeric, and projective carriers. A repository-wide negative gate rejects arithmetic or cross-type identification over Titan terms. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`KSC-02-ACTIVE-PROJECTION-DRIFT`~~ | **CLOSED — active-scope sweep landed 2026-08-01.** The selected node aggregator is `P_node := min(Φ̂₄,V₄)`; the old product survives only as labelled history or a separately conditioned cardinal candidate, never as the selected ranking. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`BODY-SURVEY-04-06`~~ | **CLOSED — body-level survey landed 2026-08-01.** `04_AXIOLOGY/` and `06_ONTOLOGY/` were read claim-by-claim in the complete actionable-finding adjudication; local checks and independent review then replayed the repaired scope. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md` |
@@ -60,17 +61,19 @@ become a way of losing work and should be repaired.
 > corrected 2026-07-30. Found by a council that was asked to *rule* on G-0 and instead
 > reported that the question was stale.
 
-## 2 · Open claims — carried at tier, awaiting evidence
+## 2 · Current claim lifecycle — live, narrowed, and terminal rows
 
 Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 
 ```text
-18   validated    passed their own validator
-17   open         W rows: 16 live-status + 1 terminal NOT-WELL-POSED
-22   graves       terminal forms; a one-way row may never return as the claim it was
- 9   reopened RQ  live investigations under a named owner ruling, counterexamples attached
+21   validated    scoped formal results inside their declared systems
+17   open         legacy machine bucket: 15 live W-rows + 2 terminal W-rows
+ 9   reopened     legacy machine bucket: 8 live RQ-rows + 1 terminal RQ-row
+22   graves       21 terminal + 1 narrowed; 0 separate active parent investigations
+26   W/RQ rows    23 live + 3 terminal; 15 direct contact + 4 merged contact + 7 internal
 
-25   live investigations = 16 live-status W rows + 9 reopened research questions
+18   unique external contracts, all outcome-open
+ 0   ambiguous lifecycle rows
 ```
 
 > **A correction this manifest made to itself on the day it was written.** The first
@@ -90,11 +93,11 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 
 | what | state | source |
 |---|---|---|
-| **Eleven empirical sockets** (`GP` questions) | packet-complete, **none run** | `03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` |
-| `GP-03` specifically | **struck void as written** — its entry condition required independent numeric factor measures, which the ordinal ruling abolished. No replacement specified. | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md` |
+| **Twelve empirical sockets** (`GP` questions, including GP-12) | packet-complete or explicitly deferred as recorded, **none supplies an accepted world outcome here** | `03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` |
+| `GP-03` specifically | **The original public preregistration is void as written.** The current board row is its explicit successor: it tests whether an AND-class conclusion is invariant under admissible ordinal transformations and remains deferred until a defended scale contract exists. W4A is blocked on that current prerequisite, not on the void protocol. | `00_META/00_SETTLED_CANON_REGISTRY.md` (`KSC-02`); `03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` (`GP-03`) |
 | **Three preregistrations** — fresh-reader comprehension, independent review, controlled comparison | protocols written and public; **no session, no engaged reviewer, no registered comparison** | `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/` |
 | **The review packet** — the cheapest of the three gates, needing no ethics determination and no participants | **assembled, frozen and hash-verified 2026-07-30; NOT SENT.** Ten files, `sha256` recorded, invitation drafted. What remains is identifying one qualified outsider and asking them — an owner act, and the protocol rules out the substitute in one line: *"AI or project-agent review … does not satisfy this external gate."* | `.../REVIEW_BUNDLE_v1.md` |
-| **Returned outcomes from outside** | **314 receipt files under the filename convention · 308 citable receipt targets · 0 accepted external-evidence records** | `00_META/CONTACT_LIMITED_STATE.json` · `12_PUBLIC_SITE/record/` |
+| **Returned outcomes from outside** | **315 receipt files under the filename convention · 309 citable receipt targets · 0 accepted external-evidence records** | `00_META/CONTACT_LIMITED_STATE.json` · `12_PUBLIC_SITE/record/` |
 
 That last row is the honest summary of this whole folder. Everything above it is
 internal work. **A framework can be internally immaculate and still be about nothing.**

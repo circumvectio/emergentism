@@ -142,6 +142,9 @@ licenses an ontology, an ethic, a conservation law, or a node-power result.
 | `FV-16` | under closure + `E−R≥ε>0` + strictly increasing `Q=f(S)`: `S(t₁)≤S(t₀)−ε(t₁−t₀)`, and substrate-supported extractor power falls | declared interval, all three premises | `[S]` |
 | `FV-17` | `support(K_X^C) ⊆ support(K_X)` — higher constraints reweight, never manufacture, admissible trajectories | declared constraint model | `[S]` |
 | `FV-18` | under budget `Φ̂₄+V₄≤1`: `Φ̂₄=1 ⟹ V₄=0 ⟹ P_node=0` | **only** with the budget premise declared | `[S]` |
+| `FV-19` | a unique Möbius transformation maps any ordered triple of pairwise distinct source points pointwise to any ordered triple of pairwise distinct target points; two correspondences leave a non-trivial one-parameter stabilizer | projective normalization on `ℂP¹` only | `[A]` |
+| `FV-20` | for the selected metric-gradient model, `sinh(2s(t))=sinh(2s₀)e^{-4t}` and `s→0` | selected reciprocal-chart potential, induced metric, and clock; no physical F5 inference | `[S]` |
+| `FV-21` | finite words from `1` under successor and reciprocal reach exactly `ℚ⁺`; `√2` is not finitely reachable and `0,∞` are approached boundaries | declared positive-real carrier and finite-word system | `[A]` |
 
 **`FV-12` is load-bearing and easy to misread.** It is a proof of
 *non-uniqueness*. It is the counterexample that killed `DF-04`, not support for
@@ -149,17 +152,19 @@ the product.
 
 ---
 
-## 4 · `OPEN` — unvalidated and live
+## 4 · W-scope — wager rows and current status
 
-The wager ledger [`W0–W12`](../06_ONTOLOGY/04_THE_CONJECTURES.md) is the owner.
-Status here; tiers and kills there.
+The machine schema retains the historical bucket name `open`; it is a W-row
+namespace, not an assertion that every row is live. The wager-form ledger
+[`W0–W12`](../06_ONTOLOGY/04_THE_CONJECTURES.md) is the semantic owner. Status
+is shown here; entry tiers and kills remain there.
 
 | ID | Wager (compressed) | Status | Docket |
 |---|---|---|---|
-| `W0-CROWN` | necessary algebra may be instantiated as *das All* | `OPEN-FORMAL` (metaphysical; may never resolve) | A2 |
-| `W1` | `REACHABLE` definable existence-independently | `NOT-WELL-POSED` → see **§6, RQ-09** | A1 |
+| `W0-CROWN` | necessary algebra may be instantiated as *das All* | `NOT-WELL-POSED`; optional creed survives | A2 |
+| `W1` | `REACHABLE` definable existence-independently | `COMPONENT-SUPPORTED`; `FV-21` pays the model-relative component, domain contact remains open | A1 |
 | `W2` | quantum record / history-space emergence | `COMPONENT-SUPPORTED` (decoherence is real; the integrated reading is not) | A6 |
-| `W3` | product beats AND-class rivals in ≥1 preregistered domain | `OPEN-EMPIRICAL` | A6 |
+| `W3` | product beats AND-class rivals in ≥1 preregistered domain | `OPEN-EMPIRICAL`; merged into W4A and blocked on GP-03 scale custody | A6 |
 | `W4` | candidate two-factor `Φ×V` out-predicts one general factor under separately defended cardinal proxies | `OPEN-EMPIRICAL` | A6 |
 | `W5` | the equator transfers to premise-satisfying real systems | `OPEN-EMPIRICAL` — see **RQ-01** | A6 |
 | `W6` | the vow is load-bearing in a frozen domain set | `OPEN-EMPIRICAL` | A4 |
@@ -167,7 +172,7 @@ Status here; tiers and kills there.
 | `W8` | model-mediated future influence | `COMPONENT-SUPPORTED` (future-cue analogues exist) | A5 |
 | `W9` | the Egregoreotype five-marker criterion | `COMPONENT-SUPPORTED` (stigmergic trace evidence) | A7 |
 | `W10` | the mirror grammar travels within scoped lineages | `OPEN-EMPIRICAL` | A7 |
-| `W11` | the `−1` dark twin does functional work | `OPEN-FORMAL` — at risk of `DECORATIVE` | A1 |
+| `W11` | the `−1` dark twin does functional work | `DECORATIVE`; ordinary mathematics and optional symbolism survive | A1 |
 | `W12` | the apophatic boundary relation lives in practice | `OPEN-EMPIRICAL` (practice discrimination) | A5 |
 
 The axioms `E1–E10` are not on this table: `E1–E7` are ontology and structure at
@@ -178,54 +183,51 @@ refutes. A vow is kept or abandoned, never proved.
 
 ## 5 · The graves, adjudicated — `DF-01…DF-22`
 
-> **Owner ruling, 2026-07-29 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), corrected by `177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`: 21 of the 22
-> rows are `OWNER-REOPENED`.** `DF-14` was already `NARROWED` — a live status — so
-> it was not reopened; `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s "all 22" was over-broad by exactly one row.
-> The status column below records what each was reopened *from*, preserved per
-> row as `status_before_reopening`. Every counterexample stands unchanged and
-> every row now carries a `repair_path`. Reopening restores active
-> investigation, never asserted truth — a ruling can reopen a question, it
-> cannot delete a counterexample. Of the three lawful moves in §2,
-> `OWNER-REOPENED` is the only one by which **a terminal row itself** returns to
-> a live status — `NARROWED` assigns a different status, and an `RQ` row is a new
-> row, not this one. It requires a ruling receipt on disk, an intact
-> counterexample, a recorded prior status, and a repair path; the validator
-> enforces all four.
+> **Reopening history and current state.** The 2026-07-29 owner ruling
+> (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), corrected by
+> `177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`, reopened 21 of the 22
+> parent forms for investigation; `DF-14` was already `NARROWED`. Receipt
+> `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md` completes that transition: twenty
+> rows again show their recorded terminal class, `DF-13` is corrected
+> from the prior empirical label to `NOT-WELL-POSED`, `DF-14` remains narrowed,
+> twenty parent rows route only to explicit successor owners, and two close
+> without a successor. Every counterexample, `status_before_reopening`, and
+> repair history remains intact. No grave parent is counted as a second active
+> investigation beside its successor.
 >
 > Separately, the typed **numeric/projective reciprocal facts** are retained by
 > proof rather than ruling; no Titan equation is restored — see `TR-01` and
 > [`45_THE_TITAN_INVERSION_STRUCTURE.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md).
 
 Every dead form from [K-7 §2](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)
-is here with its status, what actually killed it, and where its live successor
-sits. **This is the resurrection**: twenty of the twenty-two are resurrected —
-twelve by a live successor alone, carrying the honest weaker claim, and eight by
-a newly opened question in §6 — while two are closed with neither. `DF-06` and
-`DF-19` carry both a wager successor and an `RQ`, so fourteen rows name a live
-successor in all; the disjoint partition is the count table below.
+is here with its current status, what killed it, and where any executable
+successor sits. The reopening was a transition, not a permanent second claim:
+twenty parent rows now merge into a named successor owner, while `DF-05` and
+`DF-21` close without one. The disjoint status partition remains the count table
+below; successor work never changes the parent result.
 
-| ID | Dead form | Status | What killed it | Live successor |
+| ID | Dead form | Status | What killed it | Successor owner / current route |
 |---|---|---|---|---|
 | `DF-01` | unification by derivation | `FORMALLY-REFUTED` | four structural breaks (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` §5) | `NARROWED` → candidate translation grammar, GP-11 |
 | `DF-02` | ethic-as-theorem | `CATEGORY-ERROR` | is→ought bypass by redefinition | `E8` vow + `W6` conditional lemma |
 | `DF-03` | seven-as-forced / Rosetta-universal | `EMPIRICALLY-REFUTED` | planetary confound; one lineage (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`) | `W10` inherited grammar |
-| `DF-04` | product-uniqueness as keel | `FORMALLY-REFUTED` | `FV-12` — min instantiates the same boundary | `W3` product interior |
+| `DF-04` | product-uniqueness as keel | `FORMALLY-REFUTED` | `FV-12` — min instantiates the same boundary | `W3` remains empirical only through W4A; neither restores uniqueness |
 | `DF-05` | `φν=1` as conserved discovery | `CATEGORY-ERROR` | coordinate identity read as world law | **none — closed.** `FV-01` is the surviving use |
 | `DF-06` | balance hump as empirical law | `EMPIRICALLY-REFUTED` | Munnell trough; GFS retracted | `W5` + **RQ-01** (instrument) |
 | `DF-07` | the squid as `η=0` witness | `EMPIRICALLY-REFUTED` | *D. gigas* panmictic, semelparous, weak-targeting | **RQ-02** (new witness search) |
 | `DF-08` | literal `D6≡D0` | `FORMALLY-REFUTED` | loop-as-equation fails | `W12`, `D6≈roleD0` |
-| `DF-09` | forced Titan-3 | `FORMALLY-REFUTED` | `FV-07` — inversion fixes two points | `W11` dark twin |
-| `DF-10` | force bijection | `FORMALLY-REFUTED` | electroweak unification collapses D2/D3 above ~246 GeV | `W7a–W7e`, modular |
-| `DF-11` | `N=3`-forced | `FORMALLY-REFUTED` | explicit `ℤ₅` counterexample; the group lemma is false | **RQ-03** (any forcing hypotheses?) |
+| `DF-09` | forced Titan-3 | `FORMALLY-REFUTED` | `FV-07` — inversion fixes two points | `W11` adjudicated `DECORATIVE` |
+| `DF-10` | force bijection | `FORMALLY-REFUTED` | `117_FORCE_LADDER_FORMALIZED_07B.md` and `117_PATH_D_NEGATIVE_RESULT.md` do not recover four force-specific slots; electroweak unification is supporting context | `W7a–W7e`, modular |
+| `DF-11` | `N=3`-forced | `FORMALLY-REFUTED` | explicit `ℤ₅` counterexample; the group lemma is false | **RQ-03** narrowed to `FV-19` projective normalization only |
 | `DF-12` | Gödel universal lift | `FORMALLY-REFUTED` | Presburger and real-closed fields are complete and decidable | `E9` as apparatus, not law |
-| `DF-13` | three substrates minimum | `EMPIRICALLY-REFUTED` | one human martyr satisfies the framework's own falsifier | **RQ-04** (weak) |
+| `DF-13` | three substrates minimum | `NOT-WELL-POSED` | signed universal retraction stands, but “substrate,” unit, horizon, and outcome were untyped; the martyr does not independently prove substrate cardinality | **RQ-04** adjudicated `NOT-WELL-POSED` |
 | `DF-14` | frame/operand exclusivity for ordinary numbers | `NARROWED` | ordinary identities are operands | `KSC-04` — opaque `TitanFrame` by explicit type |
 | `DF-15` | convergence-as-proof | `CATEGORY-ERROR` | fifteen renderings of one shape are one datum | **RQ-05** (lineage independence) |
 | `DF-16` | "extraction is irrational" as Nash | `FORMALLY-REFUTED` in general | private side-payments break it | `W6`; Model A remains valid **in Model A** |
 | `DF-17` | civilizational physics | `NOT-WELL-POSED` | `[C]` analogy asserted as physics | **RQ-06** |
 | `DF-18` | "dissolves Hard Problem / is-ought / death / free will" | `NOT-WELL-POSED` | unfalsifiable frame-trick; mechanism asserted | Human Condition §11 — re-posed as open |
-| `DF-19` | ektropy / F5 as teleological force | `FORMALLY-REFUTED` | `(φ−ν)²` supplies no trajectory | `W7e` + **RQ-07** (declare a dynamics) |
-| `DF-20` | numeric coincidences as derivations | `CATEGORY-ERROR` | overlay, not derivation; horn-torus killed by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md` | **RQ-08** |
+| `DF-19` | ektropy / F5 as teleological force | `FORMALLY-REFUTED` | `(φ−ν)²` alone supplies no trajectory | `RQ-07` narrowed to selected `FV-20`; `W7e` owns physical contact |
+| `DF-20` | numeric coincidences as derivations | `CATEGORY-ERROR` | overlay, not derivation; horn-torus killed by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md` | `RQ-08` narrowed to named W7 candidates |
 | `DF-21` | **CC-CORE-1** — kernel → ethics warrant | `FORMALLY-REFUTED` | the seam holds precisely *off* the catastrophe case | **none — closed.** `E8` is a choice |
 | `DF-22` | Rosetta kill-criterion mislabel | `PROCESS-DEFECT` | a fired falsifier was logged as a pass | routed to `E9` enforcement, not to a wager |
 
@@ -234,40 +236,40 @@ successor in all; the disjoint partition is the count table below.
 | Count | Status | Rows |
 |---|---|---|
 | **10** | `FORMALLY-REFUTED` — counterexample inside the claim's own system; one-way, hardest class | `DF-01, 04, 08, 09, 10, 11, 12, 16, 19, 21` |
-| **4** | `EMPIRICALLY-REFUTED` — the *instance* is closed; a new instance may be sought | `DF-03, 06, 07, 13` |
+| **3** | `EMPIRICALLY-REFUTED` — the *instance* is closed; a new instance may be sought | `DF-03, 06, 07` |
 | **4** | `CATEGORY-ERROR` — no evidence repairs these; only retyping does | `DF-02, 05, 15, 20` |
-| **2** | `NOT-WELL-POSED` — neither validated nor refuted until re-posed | `DF-17, 18` |
+| **3** | `NOT-WELL-POSED` — neither validated nor refuted until re-posed | `DF-13, 17, 18` |
 | **1** | `NARROWED` — weaker form already live | `DF-14` |
 | **1** | `PROCESS-DEFECT` — never a claim | `DF-22` |
 
-By successor: **12** already had a live successor under an existing owner, **8**
-get a newly opened question in §6, and **2** are closed with no successor.
-
-Only `DF-05` and `DF-21` are **closed**, and both for the same reason: they are
-the seam-is-not-the-score error stated twice. Everything else either already had
-a live successor or gets one below.
+By disposition: **20** parent rows route to an explicit successor owner and
+**2** (`DF-05`, `DF-21`) are internally terminal with no successor. A routed
+parent is not an additional confirmation or investigation; its counterexample
+and terminal status remain the current parent-form result.
 
 ---
 
-## 6 · `RQ-01…RQ-09` — the newly opened questions
+## 6 · `RQ-01…RQ-09` — reopened questions, now dispositioned
 
-These satisfy the §2 reopening protocol. Each is `[C]`, each is weaker or
-retyped relative to its dead parent, and each carries the parent's counterexample.
+These satisfy the §2 reopening protocol. Each question remains `[C]`, each is
+weaker or retyped relative to its parent, and each carries the parent's
+counterexample. Status and route record the 2026-08-01 adjudication; an internal
+narrowing does not become world evidence.
 
-| ID | Question | Parent | Why the parent's kill does not reach it | Discriminator | Kill |
-|---|---|---|---|---|---|
-| `RQ-01` | Is there an **instrument** that can test the equator-transfer claim at all? | `DF-06` | Revelation 3: a survey of standing respondents cannot test a zero-factor knockout — the dead do not answer questionnaires. The hump died partly of instrument, not only of fact | a design with survivorship-free sampling on premise-satisfying systems | no admissible instrument exists → `W5` stays untestable and must say so |
-| `RQ-02` | Does **any** real system instantiate `η_move≈0` as a witness? | `DF-07` | the squid was refuted as *that* witness; the class was never searched | preregistered search across candidate mutualisms with bearer accounting | no candidate survives bearer-complete audit → the vow keeps zero empirical witnesses and remains purely chosen |
-| `RQ-03` | Is there **any** hypothesis set under which `N=3` is forced? | `DF-11` | `ℤ₅` refutes the *stated* lemma; it says nothing about other hypotheses | exhibit hypotheses + proof, or a general no-go | no forcing result and no no-go after honest search → `N=3` is selected, permanently |
-| `RQ-04` | Is there a non-trivial substrate-plurality claim surviving the martyr counterexample? | `DF-13` | "minimum three" is refuted; "plurality raises durability" was never the claim tested | matched comparison of single- vs multi-substrate persistence | no durability difference → drop the substrate line entirely |
-| `RQ-05` | Can **lineage independence** be established for any convergence datum? | `DF-15` | the error was counting one datum as fifteen; genuinely independent lineages would be evidence | historical/philological demonstration of causal separation before counting | no separable lineage → convergence supplies zero evidential weight, permanently |
-| `RQ-06` | Does the civilizational analogy yield a **discriminator**? | `DF-17` | the parent asserted physics; this asks only for a testable analogy | one held-out prediction the analogy makes and rival social science does not | no discriminator after honest attempt → retire the analogy as decoration |
-| `RQ-07` | Under what **declared dynamics** does `(φ−ν)²→0`? | `DF-19` | the static theorem `(φ−ν)²≥0` is `[A]`; the parent's error was inferring a trajectory from it with no dynamics at all | state a dynamics, derive the trajectory, then test it | no dynamics makes the trajectory non-trivial → ektropy stays buried |
-| `RQ-08` | Does any numeric overlay **predict** something not already known? | `DF-20` | the parent claimed derivation; this asks only for novel prediction | one held-out quantitative prediction from the overlay | none → overlays are mnemonic at most |
-| `RQ-09` | Can `REACHABLE` be defined **non-circularly**? | `W1` (never a grave; the framework's own named `∅` debt) | this is the load-bearing open debt of `E4`, not a resurrection | a definition from declared initial conditions, allowed transformations, and finite/convergent resource bounds that excludes some target | no non-circular definition → the plenitude wager collapses to redescription and `E4` must say so |
+| ID | Question | Parent | Why the parent's kill does not reach it | Discriminator / result | Kill | Current status / route |
+|---|---|---|---|---|---|---|
+| `RQ-01` | Is there an **instrument** that can test the equator-transfer claim at all? | `DF-06` | a standing-respondent survey cannot test a zero-factor knockout | survivorship-free sampling on premise-satisfying systems | no admissible instrument → W5 stays untestable | `OPEN-EMPIRICAL`; merged into `W5A-SURVIVORSHIP-FREE-EQUATOR-TRANSFER-01` |
+| `RQ-02` | Does **any** real system instantiate `η_move≈0` as a witness? | `DF-07` | the squid was refuted as that witness; the class was not exhausted | preregistered candidate search with bearer accounting | no candidate survives → the vow keeps zero witnesses | `OPEN-EMPIRICAL`; merged into `W6A-NONEXTRACTION-DURABILITY-TRUST-01` |
+| `RQ-03` | Is there **any** hypothesis set under which `N=3` is forced? | `DF-11` | `ℤ₅` kills the universal group lemma, not every scoped problem | `FV-19`: ordered triples of pairwise distinct source and target points determine one Möbius map; two correspondences do not | counterexample to sharp three-transitivity/two-point non-uniqueness | `NARROWED`; projective normalization only, no Titan or ontology export |
+| `RQ-04` | Is there a non-trivial substrate-plurality claim surviving the martyr counterexample? | `DF-13` | the martyr defeats three organisms/embodied agents, not substrate cardinality by itself | no test until substrate, unit, horizon, and outcome receive a new ID | current wording cannot supply those types without changing the claim | `NOT-WELL-POSED`; terminal, three-function/three-rail survivor retained |
+| `RQ-05` | Can **lineage independence** be established for any convergence datum? | `DF-15` | the error was counting one lineage as many | causal separation before blind coding and counting | no separable lineage → zero convergence weight | `OPEN-EMPIRICAL`; merged into `W10-INDEPENDENT-POLARITY-LINEAGE-01` |
+| `RQ-06` | Does the civilizational analogy yield a **discriminator**? | `DF-17` | the parent asserted physics; this asks only for comparative typology | one held-out increment beyond frozen rival typologies | no increment → retire as decoration | `OPEN-EMPIRICAL`; `RQ06-CIVILISATIONAL-DISCRIMINATOR-01` |
+| `RQ-07` | Under what **declared dynamics** does `(φ−ν)²→0`? | `DF-19` | the static theorem alone supplied no trajectory | `FV-20`: the selected metric-gradient flow converges | counterexample to the declared ODE/solution | `NARROWED`; selected chart model only, W7e owns physical contact |
+| `RQ-08` | Does any numeric overlay **predict** something not already known? | `DF-20` | novel prediction is distinct from claimed derivation | unnamed “any overlay” is unbounded; named W7 legs carry native-recovery and held-out kills | no typed named candidate → mnemonic only | `NARROWED`; routed to the named, independently killable W7 candidates |
+| `RQ-09` | Can `REACHABLE` be defined **non-circularly**? | `W1` | this is E4's named debt, not a resurrection | `FV-21`: finite model-relative reachability derives a nontrivial exclusion | counterexample to the typed definition or finite-word theorem | `NARROWED`; W1 owns the domain-specific world bridge |
 
-`RQ-09` is not a grave. It is included because it is the single largest unpaid
-debt in the corpus and belongs on the same board as everything else.
+`RQ-09` is not a grave. Its definition-level debt is paid by `FV-21`; the larger
+domain-specific actuality and discrimination debt remains with W1.
 
 ---
 
@@ -288,16 +290,20 @@ The original criterion read:
 > this surface has done the exact damage it was built to prevent, and it should
 > be deleted rather than repaired.*
 
-**It fired on 2026-07-29.** `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` moved all 22 grave rows to
-`OWNER-REOPENED` — a live status — with no new IDs and no new discriminators.
-Recorded here in the open, because a fired kill quietly logged as a pass is
-`DF-22`, and this register exists to forbid exactly that.
+**It fired on 2026-07-29.**
+`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` purported to move all
+22 grave rows to `OWNER-REOPENED` — a live status — with no new IDs and no new
+discriminators. The enforced inventory later corrected that scope: 21 rows
+made the transition, while `DF-14` was already `NARROWED`. Recorded here in the
+open, because a fired kill quietly logged as a pass is `DF-22`, and this
+register exists to forbid exactly that.
 
 **Why the surface is repaired rather than deleted.** The criterion tested for
 the wrong thing. It asked for a *new ID*; the damage it names is a
 **counterexample vanishing**. No counterexample vanished: all 22 rows retain
-theirs, plus their prior status and a declared repair path, under a ruling
-receipt on disk. The criterion was written before `OWNER-REOPENED` existed and
+theirs and a declared repair path, while the 21 rows that actually reopened
+also retain their prior status, under a ruling receipt on disk. The criterion
+was written before `OWNER-REOPENED` existed and
 could not see a lawful mechanism when one arrived. That is a defective test, not
 a defective act — so the test is replaced and the firing stays on the record.
 
@@ -315,15 +321,16 @@ rather than repaired, if any of the following is ever true:
    receipt recording that it fired**.
 
 **What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
-`check_claim_status.py`, hardened and re-tested on 2026-07-29 against seven
-adversarial mutations (`177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`). **But nothing invokes it automatically** —
-there is no CI job, no hook, no runner. Earlier wording here and in
+`check_claim_status.py`. The 2026-08-01 v2 contract adds explicit disposition,
+owner, contract, resolution, merge, and 48-row lifecycle custody, including
+duplicate-key rejection and mutation controls. `gate.sh` invokes the checker,
+and `.github/workflows/gate.yml` invokes that gate in CI. Earlier wording here and in
 `172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md`,
 `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`,
 `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`, and
 `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` called it "fail-closed" and said mutations "fail the build";
-**there is no build**, and the checker is advisory until a gate exists. **Clauses 3
-and 4 are not machine-checkable.** No validator can see a row being *cited* as
+**there is no build**; that statement is historical and no longer current.
+**Clauses 3 and 4 are not fully machine-checkable.** No validator can see every row being *cited* as
 evidence elsewhere in the corpus, and none can compel a future editor to record
 that this criterion fired before weakening it.
 

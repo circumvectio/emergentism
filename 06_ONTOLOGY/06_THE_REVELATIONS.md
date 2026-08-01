@@ -61,13 +61,13 @@ ordinary orbit closure. The D1 signed construction co-opens the pair as
 `SignedMagnitude={+,-}×ℕ⁺` and maps it into `ℤ_•=ℤ\{0}`. Because
 `1+(-1)=0`, that punctured carrier is not additively closed; standard `ℤ`, `ℚ`,
 and `ℝ` retain zero. The positive reciprocal chart selects `+1` as its centre,
-but it does not erase `−1`. Whether any physical, psychological, or
-institutional system carries a corresponding “shadow” is W11 `[C]`, not a
-consequence of symmetry. The sovereign Titan seats remain a separate opaque
-meta-frame and admit no arithmetic. **Receipt:** algebra (`[A]`
-fixed-point/orbit/closure facts) + W11 (`[C]` functional-work wager). **Dies
-if:** `−1` names no real phenomenon, grounds no operator, predicts nothing —
-then it is a footnote.
+but it does not erase `−1`. The 2026-08-01 honest search found no independent
+physical, psychological, or institutional operator, observation, or prediction
+beyond ordinary algebra and symbolism, so W11's extra functional-work wager is
+`DECORATIVE`. The sovereign Titan seats remain a separate opaque meta-frame and
+admit no arithmetic. **Survivor:** the `[A]` fixed-point/orbit/closure facts,
+signed magnitude, complex rotation, and an optional shadow metaphor. A future
+functional claim requires a new ID, typed variable, and incremental prediction.
 
 ## 8 · Plato was partly right, and the repair has debts `[I/C]`
 Not Forms — *constraint-structured degrees of freedom*; not perfection selecting
@@ -77,9 +77,10 @@ further inference failed: incompressibility does not imply physical
 unreachability. Finite incompressible objects may be printed explicitly or
 generated stochastically; description length, probability, constructibility,
 and physical reachability are distinct. **Receipt:** `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md` and W1's Kintsugi
-repair. **Dies if:** `REACHABLE` cannot be defined non-circularly from declared
-initial conditions, allowed transformations, and finite or convergent resource,
-time, and error bounds. *Still W1, not an earned theorem — never above `[C]`.*
+repair. `FV-21` now supplies one non-circular, model-relative finite-reachability
+witness. **The remaining W1 kill:** no real-domain target is excluded beyond
+stipulation, or the bridge yields no held-out consequence. *The theorem is
+component support; plenitude and physical emergence remain unvalidated.*
 
 ## 9 · A gate that always opens is not a gate `[B/I]`
 Discovered by failure: the corpus misapplied a private financial/legal signature

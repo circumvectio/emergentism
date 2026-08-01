@@ -125,8 +125,8 @@ the D-registers · the μ-contract (HR-1 open; μ₂ and μ₃ FAILED)
 the retired product Φ̂₄V₄ as a node ranking
 Justice · Power-Max · Egregoreotype · the Soul Loop · the Crown Wager
 sphere primacy S1 (a SELECTION) · the Titan reading of {•, ⊙, ○} (an [I] gloss)
-every one of the 11 GP empirical sockets — 0 run
-every one of the 11 OPEN-EMPIRICAL wager rows — 0 tested
+all 12 GP empirical sockets — packet-complete or explicitly deferred; 0 accepted world outcomes
+all 19 contact-routed W/RQ rows — 15 W rows + 4 RQ rows; 0 accepted world outcomes
 ```
 
 **None of that is thereby false.** It is unchecked, or selected, or interpretive, and

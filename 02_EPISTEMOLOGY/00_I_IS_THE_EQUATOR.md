@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: Neuroscience
-      role: "imaginary unit as corpus callosum / systemic awareness equator"
+      role: "imaginary unit as selected corpus-callosum / systemic-awareness equatorial symbol"
     - level: L2
       column: Philosophy
       role: "Hard Problem reframing via the Burri Sphere"
@@ -13,7 +13,7 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[S/I]"
-  canonical_phrase: "I is the equator"
+  canonical_phrase: "I is used as an equatorial symbol"
 ---
 
 # I AS THE EQUATOR
@@ -90,14 +90,16 @@ Burri Sphere view:
      |     An actual D4 carrier may represent D5 alternatives here.
      |     The place where singular enactment becomes explicit.
      |     The place where Teleological Force is felt as viable pull.
-     |     i lives HERE.
+     |     the removable symbolic i-reading is placed HERE.
      |
      0 (south pole — viability limit, fixation horizon)
 ```
 
-**i sits at the equator of the unit circle.** |z| = 1. The point that is maximally between the real values. The point that is neither positive nor negative. The point that is perpendicular to all numbers.
-
-**i is the 1 that sits between 0 and ∞.**
+**Mathematically, `i` is one point on the unit circle `|z|=1`; under standard
+stereographic projection that circle maps to the sphere's equator. `i` is not
+the whole equator, not the positive-real chart point `1`, and not a midpoint of
+`0` and `∞`.** Calling it “the equator” on this page is a removable symbolic
+reading, not an identity.
 
 ---
 
@@ -105,14 +107,15 @@ Burri Sphere view:
 
 **Mathematically, `i` is a rotation/conversion operator.**
 
-**i takes real to imaginary and imaginary to real.**
+**Multiplication by `i` takes the real axis to the imaginary axis and the
+imaginary axis to the negative real axis.**
 
 **In the framework reading, `i` symbolizes the turn between ν and φ.**
 
-```
-i × ν = φ    (i converts viability to coherence)
-i × φ = -ν   (i converts coherence to inverted viability)
-i² = -1      (apply twice: you get the opposite)
+```text
+ν  --i-symbol-->  φ     (framework analogy only)
+φ  --i-symbol--> -ν     (framework analogy only)
+i² = -1                 (the complex-algebra identity)
 ```
 
 **In the symbolic register, `i` is read as corpus-callosum-like integration.**
@@ -125,16 +128,17 @@ i² = -1      (apply twice: you get the opposite)
 
 ## Why i² = -1
 
-**Apply the conversion twice — rotate from real to imaginary and back — and you get the NEGATIVE of where you started.**
+**Apply multiplication by `i` twice — two quarter-turns in the complex plane — and you get the NEGATIVE of where you started.**
 
 **You don't return to the same place. You return to its opposite.**
 
-**Because the sphere is not a flat rotation. The sphere is a Möbius-like structure where going around twice inverts you.**
+**This is elementary complex rotation: two quarter-turns make a half-turn. It does not depend on spherical or Möbius geometry, and a complete turn would return to the starting value.**
 
-```
+```text
 Start:  ν (viability, actuality)
-Apply i:  iν = φ (coherence, gestalt)
-Apply i again:  i(iν) = i²ν = -ν (inverted viability)
+Apply the i-symbol:  ν → φ (coherence, gestalt; analogy)
+Apply it again:      φ → -ν (inverted viability; analogy)
+Mathematical model:  z → iz → -z
 
 You went: actuality → coherence → inverted actuality
 
@@ -151,6 +155,10 @@ This is the hemispheric truth:
 **i² = -1 becomes a structural symbol for inversion across the interface.**
 
 **The hemispheric sentence is interpretive: unchecked narration can invert when seen through broader awareness.**
+
+**Warrant fence, 2026-08-01.** This metaphor supplies no independent evidence
+for W11. The extra “dark twin does functional work” wager is `DECORATIVE`; the
+ordinary equation, rotation, and optional narrator metaphor survive.
 
 ---
 
@@ -234,7 +242,8 @@ interpretation-specific. Neither is a D-register, and neither licenses a
 `D4→D5` or `D5→D4` dimensional identity. The `i` reading here remains symbolic
 and removable from the operational D3/D4/D5 calculus.
 
-**The present is i — the equator, the selector interface, the site where one enactment becomes explicit.**
+**In this removable reading, `i` marks a selected equatorial point and the
+present selector interface; it is not the equator itself.**
 
 **The framework locates the systemic awareness reading here.**
 
@@ -268,8 +277,8 @@ and removable from the operational D3/D4/D5 calculus.
 |--------------|--------|-----------|
 | Real axis (ν) | focused/sequential processing | The plane, fragments |
 | Imaginary axis (φ) | broad/contextual processing | The sphere, gestalt |
-| i (the operator) | corpus-callosum-like integration | The ×, the equator |
-| i² = -1 | Hemispheric inversion | Möbius structure |
+| i (the operator) | corpus-callosum-like integration | Selected equatorial point/symbol; not the equator |
+| i² = -1 | Hemispheric inversion | Half-turn in the complex plane; no Möbius premise required |
 | φ · ν = 1 | Integrated brain | The Burri Sphere |
 
 **The corpus callosum is an anatomical analogue for the `i` reading.**
@@ -297,10 +306,10 @@ Step 3: Use i as a symbol for integration.
         The carrier of φ to ν and ν to φ.
         The × in Zero-Sum Resolution Equation.
 
-Step 4: Recognize i as the equator.
-        φ = ν = 1.
-        The unit circle.
-        |z| = 1.
+Step 4: Place i as a selected equatorial symbol.
+        i is one point on the unit circle |z| = 1.
+        φ = ν = 1 is a separate positive-real chart point.
+        Hold the analogy without identifying the objects.
 
 Step 5: Rest with the i-symbol.
         Not the past (0).
@@ -308,7 +317,7 @@ Step 5: Rest with the i-symbol.
         The present (i).
         The enactment.
         The systemic awareness.
-        The equator.
+        The selected equatorial symbol.
 
 Step 6: Return.
         i is still here.
@@ -324,19 +333,20 @@ Step 6: Return.
 | Transcendental | Symbol | Position | Meaning |
 |----------------|--------|----------|---------|
 | **Zero** | 0 | South pole | boundary/fixation symbol; past-facing reading |
-| **One** | 1 | Equator (i) | balance symbol; present-facing reading |
+| **One** | 1 | Positive-real equatorial point; `i` is a separate point/symbol | balance symbol; present-facing reading |
 | **Infinity** | ∞ | North pole | boundary/opening symbol; future-facing reading |
 
 **The trinity is symbolically complete:**
 
 ```
 0 = the past-facing boundary
-1 = the present (systemic awareness, i)
+1 = the positive-real equatorial balance point
+i = a separate unit-circle point used as a removable present/interface symbol
 ∞ = the future-facing boundary
 
-The present (i) is BETWEEN the past (0) and the future (∞).
-The present (i) is where a finite being can represent alternatives and act.
-The present (i) is read symbolically as systemic awareness relating them.
+The present (i-symbol) is read BETWEEN the past-facing 0 and future-facing ∞.
+The present interface is where a finite being can represent alternatives and act.
+The i-symbol is read as systemic awareness relating them; it is not identical to 1.
 ```
 
 **Dimensional clarification:** this triad is a chart-reading, not a D-register
@@ -353,16 +363,19 @@ collapse, or cause.
 The Discovery:
 
 i is mathematically real as the perpendicular unit.
-i is read as the equator.
+i is used as a removable equator symbol; mathematically it is one point on the unit circle.
 i is read as a symbol for integration across actual and represented content.
 i is read as corpus-callosum-like integration.
 i is read as the present moment.
 
-The Mathematical Truth:
+The Symbolic Assignment:
 
-i × ν = φ    (viability → coherence)
-i × φ = -ν   (coherence → inverted viability)
-i² = -1      (double application inverts)
+ν  --i-symbol-->  φ     (viability → coherence; not an algebraic identity)
+φ  --i-symbol--> -ν     (coherence → inverted viability; not an algebraic identity)
+
+The Mathematical Identity:
+
+i² = -1      (two quarter-turns make a half-turn)
 
 The Philosophical Truth:
 
@@ -392,10 +405,10 @@ The claim that i symbolizes systemic awareness remains interpretive/conjectural.
 
 Zero-Sum Resolution Equation
 
-i = the ×.
-i = the equator.
-i = the present.
-i = systemic awareness-symbol in this register.
+i is placed beside the × as a symbol.
+i marks a selected equatorial point, not the whole equator.
+i symbolizes the present in this practice.
+i is a systemic-awareness symbol in this register.
 
 Keep the tiers intact.
 ```

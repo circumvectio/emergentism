@@ -94,23 +94,19 @@ def _load_predeploy_policy():
 
 _PREDEPLOY_POLICY = _load_predeploy_policy()
 
-EXPECTED_CONTACT = (
-    "W2",
-    "W4",
-    "W5",
-    "W6",
-    "W7a",
-    "W7b",
-    "W7c",
-    "W7d",
-    "W7e",
-    "W8",
-    "W9",
-    "W10",
-    "W12",
-)
-EXPECTED_INTERNAL = ("W0-CROWN", "W1", "W3", "W11")
-EXPECTED_RQ = tuple(f"RQ-{number:02d}" for number in range(1, 10))
+
+def _load_claim_status_policy():
+    path = ROOT / "09_TOOLS/01_SCRIPTS/check_claim_status.py"
+    spec = importlib.util.spec_from_file_location("claim_status_policy_owner", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load claim-status policy owner: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+_CLAIM_STATUS_POLICY = _load_claim_status_policy()
+
 EXPECTED_DEBTS = {
     "OWNER_GATE_HELD_PUBLIC_DOCS",
     "OWNER_GATE_OPEN_TOPOLOGY",
@@ -118,9 +114,6 @@ EXPECTED_DEBTS = {
 EXPECTED_WORLD_REQUIREMENTS = (
     "Independent observations with discriminating outcomes",
     "Independent replication or external review filed as outcome custody",
-)
-W3_RECEIPT = Path(
-    "11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md"
 )
 PUBLIC_DOC_EVIDENCE = {
     "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
@@ -164,12 +157,17 @@ EXPECTED_RAW_OVERLAPS = [
     },
 ]
 EXPECTED_WORLD_REQUIRED_FIELDS = (
+    "claim_id",
+    "contract_id",
+    "frozen_protocol_hash",
+    "scope",
     "independent_party_identity",
     "independence_basis",
     "discriminating_protocol",
     "outcome",
     "verbatim_custody",
     "provenance",
+    "null_harm_deviation_custody",
 )
 EXPECTED_WORLD_INADMISSIBLE = (
     "commits",
@@ -1308,65 +1306,75 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
 
 
 def compute_claim_disposition(root: Path) -> dict[str, Any]:
-    source = load_json(root / CLAIM_SOURCE)
-    rows = require_list(source.get("open"), "claim-status open rows", [])
-    if any(not isinstance(row, dict) for row in rows):
-        raise ContractError("claim-status open rows must be objects")
-    ids = [str(row.get("id")) for row in rows]
-    if len(set(ids)) != len(ids) or "None" in ids:
-        raise ContractError("claim-status open rows have duplicate or missing ids")
-    statuses = {str(row["id"]): str(row.get("status")) for row in rows}
+    try:
+        claim_errors = _CLAIM_STATUS_POLICY.check(root)
+        source = _CLAIM_STATUS_POLICY.load_document(root / CLAIM_SOURCE)
+    except _CLAIM_STATUS_POLICY.ContractError as exc:
+        raise ContractError(str(exc)) from exc
+    if claim_errors:
+        raise ContractError([f"claim-status contract: {error}" for error in claim_errors])
 
-    reopened = require_list(source.get("reopened"), "claim-status reopened rows", [])
-    if any(not isinstance(row, dict) for row in reopened):
-        raise ContractError("claim-status reopened rows must be objects")
-    reopened_ids = [str(row.get("id")) for row in reopened]
-    if len(set(reopened_ids)) != len(reopened_ids) or "None" in reopened_ids:
-        raise ContractError("claim-status reopened rows have duplicate or missing ids")
-    required_rq_fields = {"parent", "question", "discriminator", "kill", "survivor"}
-    all_source_ids = {
-        str(row.get("id"))
-        for value in source.values()
-        if isinstance(value, list)
-        for row in value
-        if isinstance(row, dict) and row.get("id") is not None
-    }
-    for row in reopened:
-        missing = required_rq_fields - set(row)
-        if missing:
-            raise ContractError(
-                f"{row.get('id')} lost reopened-question fields: {', '.join(sorted(missing))}"
-            )
-        if row.get("parent") not in all_source_ids:
-            raise ContractError(
-                f"{row.get('id')} names absent source parent {row.get('parent')!r}"
-            )
+    current_rows = [*source["open"], *source["reopened"]]
+    grave_rows = list(source["graves"])
+    live_statuses = set(source["live_statuses"])
+    terminal_statuses = set(source["terminal_statuses"])
 
-    df04 = None
-    for value in source.values():
-        if not isinstance(value, list):
-            continue
-        for row in value:
-            if isinstance(row, dict) and row.get("id") == "DF-04":
-                df04 = row
-                break
-    if df04 is None:
-        raise ContractError("claim-status source lost the DF-04 owner-reopening row")
-    live_statuses = set(require_list(source.get("live_statuses"), "live_statuses", []))
-    live_w_rows = sum(status in live_statuses for status in statuses.values())
+    def ids_for(rows: list[dict[str, Any]], *kinds: str) -> list[str]:
+        return [
+            str(row["id"])
+            for row in rows
+            if row["disposition"]["kind"] in set(kinds)
+        ]
+
+    statuses = {str(row["id"]): str(row["status"]) for row in current_rows}
+    grave_statuses = {str(row["id"]): str(row["status"]) for row in grave_rows}
+    direct = ids_for(current_rows, "CONTACT-GATED")
+    merged = ids_for(current_rows, "MERGED-TO-CONTACT")
+    narrowed = ids_for(current_rows, "INTERNAL-NARROWED")
+    internal_terminal = ids_for(current_rows, "INTERNAL-TERMINAL")
+    grave_merged = ids_for(grave_rows, "MERGED-TO-OWNER")
+    grave_terminal = ids_for(grave_rows, "INTERNAL-TERMINAL")
+    contract_ids = sorted(
+        contract["contract_id"]
+        for row in current_rows
+        if row["disposition"]["kind"] == "CONTACT-GATED"
+        for contract in row["disposition"]["contracts"]
+    )
+    classified_current = set(direct) | set(merged) | set(narrowed) | set(internal_terminal)
+    classified_graves = set(grave_merged) | set(grave_terminal)
+    ambiguous = sorted(
+        ({str(row["id"]) for row in current_rows} - classified_current)
+        | ({str(row["id"]) for row in grave_rows} - classified_graves)
+    )
     return {
-        "w_scope": {
-            "rows": len(rows),
-            "live_status_rows": live_w_rows,
-            "terminal_status_rows": len(rows) - live_w_rows,
+        "lifecycle_rows_total": len(current_rows) + len(grave_rows),
+        "lifecycle_rows_sha256": _CLAIM_STATUS_POLICY.canonical_lifecycle_sha256(source),
+        "claim_status_contract_sha256": _CLAIM_STATUS_POLICY.canonical_contract_sha256(source),
+        "unique_external_contracts": len(contract_ids),
+        "external_contract_ids": contract_ids,
+        "ambiguous_rows": ambiguous,
+        "current_scope": {
+            "rows": len(current_rows),
+            "live_status_rows": sum(status in live_statuses for status in statuses.values()),
+            "terminal_status_rows": sum(status in terminal_statuses for status in statuses.values()),
             "status_counts": dict(Counter(statuses.values())),
-            "ids": ids,
             "statuses": statuses,
+            "direct_contact": direct,
+            "merged_contact": merged,
+            "contact_routed": direct + merged,
+            "internal_narrowed": narrowed,
+            "internal_terminal": internal_terminal,
         },
-        "reopened_scope": {"rows": len(reopened), "ids": reopened_ids},
-        "owner_rows_total": len(rows) + len(reopened),
-        "live_investigation_rows": live_w_rows + len(reopened),
-        "df04": df04,
+        "grave_scope": {
+            "rows": len(grave_rows),
+            "terminal_status_rows": sum(status in terminal_statuses for status in grave_statuses.values()),
+            "narrowed_status_rows": sum(status == "NARROWED" for status in grave_statuses.values()),
+            "status_counts": dict(Counter(grave_statuses.values())),
+            "statuses": grave_statuses,
+            "merged_to_owner": grave_merged,
+            "internal_terminal": grave_terminal,
+            "active_parent_investigations": 0,
+        },
     }
 
 
@@ -1728,11 +1736,14 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         {
             "receipt_ref",
             "source",
-            "owner_rows_total",
-            "live_investigation_rows",
-            "w_scope",
-            "reopened_scope",
-            "w3_guard",
+            "lifecycle_rows_total",
+            "lifecycle_rows_sha256",
+            "claim_status_contract_sha256",
+            "unique_external_contracts",
+            "external_contract_ids",
+            "ambiguous_rows",
+            "current_scope",
+            "grave_scope",
         },
         "claim_disposition",
         errors,
@@ -1926,122 +1937,107 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
             )
 
     claims = computed.get("claim_disposition")
-    w_state = require_mapping(claim_state.get("w_scope"), "claim_disposition.w_scope", errors)
+    current_state = require_mapping(
+        claim_state.get("current_scope"), "claim_disposition.current_scope", errors
+    )
+    grave_state = require_mapping(
+        claim_state.get("grave_scope"), "claim_disposition.grave_scope", errors
+    )
     exact_keys(
-        w_state,
+        current_state,
         {
-            "rows",
-            "live_status_rows",
-            "terminal_status_rows",
-            "status_counts",
-            "id_status",
-            "contact_gated",
-            "internal_disposition",
+            "rows", "live_status_rows", "terminal_status_rows", "status_counts",
+            "id_status", "direct_contact", "merged_contact", "contact_routed",
+            "internal_narrowed", "internal_terminal",
         },
-        "claim_disposition.w_scope",
+        "claim_disposition.current_scope",
         errors,
-    )
-    reopened_state = require_mapping(
-        claim_state.get("reopened_scope"), "claim_disposition.reopened_scope", errors
     )
     exact_keys(
-        reopened_state,
-        {"rows", "disposition", "ids", "required_source_fields"},
-        "claim_disposition.reopened_scope",
+        grave_state,
+        {
+            "rows", "terminal_status_rows", "narrowed_status_rows", "status_counts",
+            "id_status", "merged_to_owner", "internal_terminal",
+            "active_parent_investigations",
+        },
+        "claim_disposition.grave_scope",
         errors,
     )
-    contact = require_list(w_state.get("contact_gated"), "w_scope.contact_gated", errors)
-    internal = require_list(
-        w_state.get("internal_disposition"), "w_scope.internal_disposition", errors
-    )
-    if tuple(contact) != EXPECTED_CONTACT:
-        errors.append("contact_gated mapping changed without a new ratchet contract")
-    if tuple(internal) != EXPECTED_INTERNAL:
-        errors.append("internal_disposition mapping changed without a new ratchet contract")
-    if len(set(contact)) != len(contact) or len(set(internal)) != len(internal):
-        errors.append("claim lifecycle lists contain duplicate ids")
-    overlap = set(contact) & set(internal)
-    if overlap:
-        errors.append("claims have two lifecycle classes: " + ", ".join(sorted(overlap)))
-    rq_ids = require_list(reopened_state.get("ids"), "reopened_scope.ids", errors)
-    if tuple(rq_ids) != EXPECTED_RQ:
-        errors.append("reopened RQ inventory changed without a new ratchet contract")
-    if reopened_state.get("disposition") != "UNADJUDICATED_REOPENED_RESEARCH_QUESTIONS":
-        errors.append("reopened RQ rows must remain explicitly unadjudicated")
-    if tuple(
-        require_list(
-            reopened_state.get("required_source_fields"),
-            "reopened_scope.required_source_fields",
-            errors,
+    claim_lists = {
+        key: require_list(current_state.get(key), f"current_scope.{key}", errors)
+        for key in (
+            "direct_contact", "merged_contact", "contact_routed",
+            "internal_narrowed", "internal_terminal",
         )
-    ) != ("parent", "question", "discriminator", "kill", "survivor"):
-        errors.append("reopened RQ source-field contract drifted")
-    if claims is not None:
-        computed_w = claims["w_scope"]
-        for key in ("rows", "live_status_rows", "terminal_status_rows", "status_counts"):
-            if w_state.get(key) != computed_w[key]:
-                errors.append(
-                    f"stale W-scope {key}: stored={w_state.get(key)}, actual={computed_w[key]}"
-                )
-        if w_state.get("id_status") != computed_w["statuses"]:
-            errors.append(
-                f"per-ID W status map drifted: stored={w_state.get('id_status')}, "
-                f"actual={computed_w['statuses']}"
-            )
-        if set(contact) | set(internal) != set(computed_w["ids"]):
-            errors.append("W disposition does not cover every and only W-scope id")
-        computed_rq = claims["reopened_scope"]
-        if reopened_state.get("rows") != computed_rq["rows"] or rq_ids != computed_rq["ids"]:
-            errors.append(
-                f"reopened RQ inventory drifted: stored={rq_ids}, actual={computed_rq['ids']}"
-            )
-        if claim_state.get("owner_rows_total") != claims["owner_rows_total"]:
-            errors.append(
-                f"stale claim owner-row total: stored={claim_state.get('owner_rows_total')}, "
-                f"actual={claims['owner_rows_total']}"
-            )
-        if claim_state.get("live_investigation_rows") != claims["live_investigation_rows"]:
-            errors.append(
-                "stale live-investigation count: "
-                f"stored={claim_state.get('live_investigation_rows')}, "
-                f"actual={claims['live_investigation_rows']}"
-            )
-        if computed_w["statuses"].get("W3") != "OPEN-EMPIRICAL":
-            errors.append("W3 machine-owner row must not be silently resolved")
-        df04 = claims["df04"]
-        repair_path = str(df04.get("repair_path", ""))
-        if df04.get("successor") != "W3" or "cannot be prosecuted" not in repair_path:
-            errors.append("DF-04 no longer carries the W3 source-reconciliation conflict")
+    }
+    grave_lists = {
+        key: require_list(grave_state.get(key), f"grave_scope.{key}", errors)
+        for key in ("merged_to_owner", "internal_terminal")
+    }
+    for label, values in {**claim_lists, **{f"grave_{k}": v for k, v in grave_lists.items()}}.items():
+        if len(values) != len(set(values)):
+            errors.append(f"{label} contains duplicate ids")
+    current_classes = (
+        set(claim_lists["direct_contact"])
+        | set(claim_lists["merged_contact"])
+        | set(claim_lists["internal_narrowed"])
+        | set(claim_lists["internal_terminal"])
+    )
+    classified_current_count = sum(
+        len(claim_lists[key])
+        for key in ("direct_contact", "merged_contact", "internal_narrowed", "internal_terminal")
+    )
+    if len(current_classes) != 26 or classified_current_count != 26:
+        errors.append("current claim disposition must cover exactly 26 distinct W/RQ rows")
+    if claim_lists["contact_routed"] != claim_lists["direct_contact"] + claim_lists["merged_contact"]:
+        errors.append("contact_routed must be the ordered direct+merged projection")
+    if set(grave_lists["merged_to_owner"]) & set(grave_lists["internal_terminal"]):
+        errors.append("grave parent has two disposition classes")
+    if len(set(grave_lists["merged_to_owner"]) | set(grave_lists["internal_terminal"])) != 22:
+        errors.append("grave disposition must cover exactly 22 distinct parent rows")
+    if grave_state.get("active_parent_investigations") != 0:
+        errors.append("grave parent forms must not remain separate active investigations")
+    ambiguous = require_list(claim_state.get("ambiguous_rows"), "claim_disposition.ambiguous_rows", errors)
+    if ambiguous:
+        errors.append("claim disposition requires zero ambiguous rows")
 
-    w3 = require_mapping(claim_state.get("w3_guard"), "w3_guard", errors)
-    exact_keys(
-        w3,
-        {
-            "id",
-            "state",
-            "requires_source_reconciliation",
-            "receipt_ref",
-            "evidence",
-            "does_not_claim",
-        },
-        "w3_guard",
-        errors,
-    )
-    if w3.get("id") != "W3" or w3.get("state") != "INTERNAL_DISPOSITION_PENDING_SOURCE_RECONCILIATION":
-        errors.append("w3_guard lost its pending internal-disposition state")
-    if w3.get("requires_source_reconciliation") is not True:
-        errors.append("w3_guard must require source reconciliation")
-    if w3.get("receipt_ref") != str(W3_RECEIPT):
-        errors.append(
-            "w3_guard must retain the Receipt 184 (`184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md`) ruling path"
+    if claims is not None:
+        scalar_keys = (
+            "lifecycle_rows_total", "lifecycle_rows_sha256", "claim_status_contract_sha256",
+            "unique_external_contracts",
+            "external_contract_ids", "ambiguous_rows",
         )
-    receipt_ref(root, w3.get("receipt_ref"), "w3_guard.receipt_ref", errors)
-    w3_evidence = require_list(w3.get("evidence"), "w3_guard.evidence", errors)
-    for index, evidence in enumerate(w3_evidence):
-        repo_file(root, evidence, f"w3_guard.evidence[{index}]", errors)
-    does_not_claim = str(w3.get("does_not_claim", ""))
-    if "does not close" not in does_not_claim or "OPEN-EMPIRICAL" not in does_not_claim:
-        errors.append("w3_guard must state that routing neither closes W3 nor changes its status")
+        for key in scalar_keys:
+            if claim_state.get(key) != claims[key]:
+                errors.append(
+                    f"stale claim disposition {key}: stored={claim_state.get(key)}, actual={claims[key]}"
+                )
+        stored_current_projection = {
+            "rows": current_state.get("rows"),
+            "live_status_rows": current_state.get("live_status_rows"),
+            "terminal_status_rows": current_state.get("terminal_status_rows"),
+            "status_counts": current_state.get("status_counts"),
+            "statuses": current_state.get("id_status"),
+            "direct_contact": current_state.get("direct_contact"),
+            "merged_contact": current_state.get("merged_contact"),
+            "contact_routed": current_state.get("contact_routed"),
+            "internal_narrowed": current_state.get("internal_narrowed"),
+            "internal_terminal": current_state.get("internal_terminal"),
+        }
+        if stored_current_projection != claims["current_scope"]:
+            errors.append("current W/RQ disposition projection drifted from CLAIM_STATUS")
+        stored_grave_projection = {
+            "rows": grave_state.get("rows"),
+            "terminal_status_rows": grave_state.get("terminal_status_rows"),
+            "narrowed_status_rows": grave_state.get("narrowed_status_rows"),
+            "status_counts": grave_state.get("status_counts"),
+            "statuses": grave_state.get("id_status"),
+            "merged_to_owner": grave_state.get("merged_to_owner"),
+            "internal_terminal": grave_state.get("internal_terminal"),
+            "active_parent_investigations": grave_state.get("active_parent_investigations"),
+        }
+        if stored_grave_projection != claims["grave_scope"]:
+            errors.append("grave-parent disposition projection drifted from CLAIM_STATUS")
 
     profile_debts = computed.get("owner_held")
     debt_rows = require_list(owner_state.get("debts"), "owner_held.debts", errors)
@@ -2125,12 +2121,16 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         "receipt_namespace": receipts,
         "public_lifecycle": public,
         "claim_disposition": {
-            "w_rows": claims["w_scope"]["rows"],
-            "contact_gated": len(contact),
-            "internal_disposition": len(internal),
-            "reopened_rows": claims["reopened_scope"]["rows"],
-            "owner_rows_total": claims["owner_rows_total"],
-            "live_investigation_rows": claims["live_investigation_rows"],
+            "lifecycle_rows": claims["lifecycle_rows_total"],
+            "current_rows": claims["current_scope"]["rows"],
+            "direct_contact": len(claims["current_scope"]["direct_contact"]),
+            "merged_contact": len(claims["current_scope"]["merged_contact"]),
+            "internal": len(claims["current_scope"]["internal_narrowed"])
+            + len(claims["current_scope"]["internal_terminal"]),
+            "grave_rows": claims["grave_scope"]["rows"],
+            "active_parent_investigations": claims["grave_scope"]["active_parent_investigations"],
+            "external_contracts": claims["unique_external_contracts"],
+            "ambiguous": len(claims["ambiguous_rows"]),
         },
         "owner_held": len(debt_rows),
         "world_contact": world,
@@ -2167,9 +2167,11 @@ def main() -> int:
         f"alias-collisions={len(report['public_lifecycle']['alias_collisions'])}; "
         f"raw-overlaps={sum(len(row['artifacts']) for row in report['public_lifecycle']['raw_overlaps'])}; "
         f"matcher-drift={len(report['public_lifecycle']['matcher_conformance']['mismatches'])}; "
-        f"claims=W{claims['w_rows']} [{claims['contact_gated']} contact/"
-        f"{claims['internal_disposition']} internal] + RQ{claims['reopened_rows']} unadjudicated "
-        f"[{claims['owner_rows_total']} owner rows/{claims['live_investigation_rows']} live]; "
+        f"claims={claims['lifecycle_rows']} lifecycle "
+        f"[{claims['current_rows']} W/RQ: {claims['direct_contact']} direct-contact/"
+        f"{claims['merged_contact']} merged-contact/{claims['internal']} internal; "
+        f"{claims['grave_rows']} grave parents/{claims['active_parent_investigations']} active; "
+        f"{claims['external_contracts']} contracts/{claims['ambiguous']} ambiguous]; "
         f"owner-held={report['owner_held']}; "
         f"world={world['state']}/{world['accepted_evidence_records']}/"
         f"{len(world['open_requirements'])})"

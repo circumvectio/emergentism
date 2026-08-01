@@ -267,9 +267,11 @@ u    (x−1)/(x+1)  +2      NO           NO          no  <- over-determined
 `G9`, and is still not a word** — because `G1` commits every word's value to `ℚ⁺`
 and `n∘ι(1) = −1 ∉ ℚ⁺`. Both halves of that refutation are already committed text.
 
-> **THEREFORE `G9` DOES NOT CLOSE THE `§5.2` FORK.** The sign obstruction is
-> independent of the determinant obstruction, and the `−1` question is untouched
-> by anything proved here. **It remains an open owner ruling.**
+> **THEREFORE `G9` ALONE DID NOT CLOSE THE `§5.2` FORK.** The sign obstruction
+> is independent of the determinant obstruction. Section 5.2 later records the
+> 2026-07-30 positive-only ruling: this base does not generate `−1`. The separate
+> W11 claim that `−1` has additional functional work is now `DECORATIVE`; its
+> ordinary algebra and optional symbolism survive.
 
 > **CORRECTION, 2026-07-29.** This session stated that "the hinge's determinant
 > *is* the fork — you don't get one without the other." That is false, and the

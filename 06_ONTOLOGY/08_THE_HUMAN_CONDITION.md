@@ -261,7 +261,7 @@ verdict is dated. Truth without Justice can become weaponry; Beauty without
 Truth can become enchantment; Justice without contact can become blind
 certainty. This is a chosen constitutional orientation, not a natural constant.
 
-## 11. The mysteries that remain open
+## 11 · HC-11 — The mysteries that remain open
 
 Emergentism does not currently know:
 

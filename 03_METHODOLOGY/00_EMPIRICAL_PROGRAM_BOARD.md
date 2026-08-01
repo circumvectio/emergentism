@@ -53,6 +53,44 @@ Never translate `formal-only` or `local-result` as “confirmed.”
 | **GP-10** | force/freedom rows are mechanistic and non-permutable | native theories bound every row; no leg calibrated | **deferred** | one native object map and accepted-domain recovery test per row, then permutation challenge | W7a–W7e independently |
 | **GP-11** | integrated grammar adds novel prediction and consequence value beyond plural native sciences | internal coherence and neighbor map only | **deferred** | one novel frozen discriminator, external red team, independent replication, and null route | integrated adequacy, not component truths |
 
+## 2A. Sprint 6 contact-contract index
+
+The machine owner is
+[`CLAIM_STATUS.yaml`](../00_META/claim_status/CLAIM_STATUS.yaml). The rows below
+index its eighteen unique external contracts; their full discriminators, kills,
+survivors, blockers, and source custody live there. A contract is a route to a
+possible outcome, not evidence that an outcome exists.
+
+| Contract | Claim/component | Maturity / immediate route |
+|---|---|---|
+| `W1-DOMAIN-REACHABILITY-01` | W1 domain-specific reachability bridge | component-supported; freeze a real-domain model and derive a held-out exclusion |
+| `W2-QUANTUM-RECORD-ORDER-01` | W2 integrated record ordering | component-supported; beat matched native decoherence/history rivals |
+| `W4A-EVALUATED-PRODUCTIVITY-01` | W4 evaluated productivity | blocked on GP-03's defended commensurate cardinal scales |
+| `W4B-RESOURCE-SURFACE-01` | W4 cost/means surface | design required under GP-04 / `SC-CANDIDATE` |
+| `W5A-SURVIVORSHIP-FREE-EQUATOR-TRANSFER-01` | W5 premise-satisfying transfer | design required; sample failures and disappearances as well as survivors |
+| `W5B-AGGREGATOR-REGISTER-MAP-01` | W5 domain-to-aggregator map | design required; compare rival laws out of sample |
+| `W6A-NONEXTRACTION-DURABILITY-TRUST-01` | W6 durability and warranted trust | design required; observational/natural experiments preferred |
+| `W6B-EXTRACTION-TRAJECTORY-01` | W6 substrate/power trajectory | component-supported by conditional `FV-16`; world trajectory still absent |
+| `W7A-QCD-ROLE-AFFINITY-01` | W7a strong/QCD leg | design required; native recovery, permutation challenge, held-out quantity |
+| `W7B-EM-ROLE-AFFINITY-01` | W7b electromagnetic leg | design required; native recovery, permutation challenge, held-out effect |
+| `W7C-WEAK-ROLE-AFFINITY-01` | W7c weak leg | design required; chirality/flavor specificity and held-out observable |
+| `W7D-GRAVITY-ROLE-AFFINITY-01` | W7d gravity leg | design required; GR/EFT recovery without circular spacetime import |
+| `W7E-F5-ROLE-AFFINITY-01` | W7e teleonomic/F5 leg | blocked on W8's fair-baseline result; `FV-20` is selected mathematics only |
+| `W8-FUTURE-CONTENT-CHAIN-01` | W8 integrated D5 effect | component-supported; first isolate content, then beat rich D4 baselines |
+| `W9-EGREGOREOTYPE-COMPOSITE-01` | W9 five-marker composite | component-supported; manipulate trace, carrier, incentive, command, and environment separately |
+| `W10-INDEPENDENT-POLARITY-LINEAGE-01` | W10 lineage-independent recurrence | design required; establish causal separation before blind coding or counting |
+| `W12-APOPHATIC-EXIT-PRACTICE-01` | W12 leaveable apophatic practice | design required; belief-neutral, ethical comparison against a strongest control |
+| `RQ06-CIVILISATIONAL-DISCRIMINATOR-01` | RQ-06 comparative typology | design required; one held-out increment beyond frozen social-science rivals |
+
+`RQ-01`, `RQ-02`, and `RQ-05` merge into W5A, W6A, and W10 respectively.
+They are prerequisites or scope cuts, not independent confirmations. Every
+returned outcome routes to the Record Ledger and must carry all eleven world
+fields: `claim_id`, `contract_id`, `frozen_protocol_hash`, `scope`,
+`independent_party_identity`, `independence_basis`,
+`discriminating_protocol`, `outcome`, `verbatim_custody`, `provenance`, and
+`null_harm_deviation_custody`. A receipt binds what was filed; it does not prove
+independence.
+
 ## 3. Legacy program disposition
 
 The older program names remain discoverable, but none competes with the socket

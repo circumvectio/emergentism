@@ -81,8 +81,10 @@ declared C21 **fixed-point-inclusive display convention**, their union
 `{−1,0,1,∞}` is a selected mixed numeric/projective witness `[A]`; it is not a
 cardinal set, the orbit closure, the D1 carrier, or the Titan meta-frame. The
 positive reciprocal chart selects `+1` as its centre while the signed
-construction co-opens `±1`. Whether `−1` does real functional work beyond this
-formal role is wager **W11 `[C]`**, not an algebraic law.
+construction co-opens `±1`. The former W11 claim that `−1` does additional
+functional work is now `DECORATIVE`; the formal role and optional symbolism
+survive, but no current physical, psychological, or institutional wager is
+licensed by the algebra.
 
 **Identity.** `1` is the multiplicative identity and a perfectly ordinary operand
 (`1/1 = 1` by the identity law of the field). Its distinguished status here is
