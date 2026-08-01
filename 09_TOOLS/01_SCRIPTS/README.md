@@ -141,12 +141,19 @@ gates. They were not called by `gate.sh` and conferred no claim authority:
   duplicate was removed after exact archived-byte verification.
 - `mver_validator.py` and `test_mver_validator.py` — corporate data-room hash
   validator and synthetic tests; both were moved byte-identically.
+- `neuter_broken_archive_links.py` — a legacy archive mutator whose only
+  hard-coded roots are absent in this corpus; its exact bytes were retired to
+  K3 rather than left as an active false-success-capable helper.
 
 The completed 2026-08-01 custody record, source paths, and SHA-256 identities
 are at
 [`../90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md`](../90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md).
 No utility was executed and no runtime, network, data-room, publication, or
 deployment effect occurred.
+
+The dated custody record, former source path, and SHA-256 for the archive-link
+neutralizer are at
+[`../90_ARCHIVE/neuter_broken_archive_links_2026_08_02/README.md`](../90_ARCHIVE/neuter_broken_archive_links_2026_08_02/README.md).
 
 ## Status
 

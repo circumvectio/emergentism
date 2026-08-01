@@ -8,7 +8,7 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s 21 reopened transitions adjudicated by `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; 21 grave parent forms terminal, DF-14 narrowed, zero separate active parent investigations; 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 240, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; world contact and deployment open; historical receipts preserved by full filename"
+status: "ACTIVE — `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s 21 reopened transitions adjudicated by `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`; 21 grave parent forms terminal, DF-14 narrowed, zero separate active parent investigations; 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 241, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; world contact and deployment open; historical receipts preserved by full filename"
 date: 2026-08-02
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
@@ -209,6 +209,7 @@ never back-filled:
 | 238 | `238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md` | All 398 public HTML artifacts receive one effective lifecycle class; the nested-archive matcher drift is closed locally, provisional scans and the deploy precheck fail closed, and no page is promoted or deployed. |
 | 239 | `239_OPEN_CLAIM_DISPOSITION_2026_08_01.md` | All 26 W/RQ rows and all 22 grave parent forms receive explicit dispositions; eighteen unique external contracts remain outcome-open, zero rows remain ambiguous, and no world-contact, publication, or deployment claim is made. |
 | 240 | `240_ADJUDICATION_CUSTODY_ACTIVE_CITATION_REBASELINE_2026_08_02.md` | The active adjudication-custody replay enters the exact citation registry; the one-file receipt-namespace increase is snapshot-bound while all semantic, owner, and world-contact debts remain unchanged. |
+| 241 | `241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md` | The inactive archive-link mutator is preserved under K3 with an exact byte identity; no utility was run and no claim, owner, publication, deployment, or world-contact state changed. |
 
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
@@ -253,7 +254,7 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 ## 6 · The receipt-prefix collision census (full)
 
 Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20
-and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 239 (with exact files recorded in §3) are
+and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 241 (with exact files recorded in §3) are
 therefore **absent from the table below**; prefixes 180 and 192 have no receipt
 file located as of 2026-08-01. Section 3 records both the located filenames and
 the two explicit gaps, but this collision census remains stale rather than

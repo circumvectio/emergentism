@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 794,
+  "entry_count": 795,
   "entries": [
     {
       "path": ".",
@@ -1078,7 +1078,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 37,
+      "tracked_file_count": 36,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1208,7 +1208,7 @@
       "owns": "90_ARCHIVE — L6 Tools Legacy Archive",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 48,
+      "tracked_file_count": 49,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1222,6 +1222,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 16,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/90_ARCHIVE/neuter_broken_archive_links_2026_08_02",
+      "type": "tool",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

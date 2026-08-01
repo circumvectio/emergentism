@@ -83,7 +83,7 @@ OWNER_HELD_SOURCE_ROWS = {
                 "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/240_ADJUDICATION_CUSTODY_ACTIVE_CITATION_REBASELINE_2026_08_02.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
         },
         "question": (
             "Which byte-identical numbered-doctrine-spine copy is current planning "
@@ -118,7 +118,7 @@ OWNER_HELD_SOURCE_ROWS = {
                 "08_FRAMEWORK_SUPPORT/00_META/README.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/240_ADJUDICATION_CUSTODY_ACTIVE_CITATION_REBASELINE_2026_08_02.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
         },
         "question": (
             "Is `08_FRAMEWORK_SUPPORT/00_META/` a path-specific non-governance "
