@@ -26,7 +26,7 @@ Zero-Sum Resolution Equation
 B = sin θ
 ```
 
-Use `P_node = Φ × V` only for operational node scoring. Do not use `P` alone when the reader could confuse manifold identity, balance, and runtime scoring.
+Use `P_node = min(Φ̂₄,V₄)` — the selected working AND-class score — for operational node scoring. The product form `Φ̂₄V₄`, publicly compressed `ΦV`, is **retired as a ranking** (`KSC-02`, ordinal ruling 2026-07-29): it stays readable as the historical name of the same conjunction, but it may no longer order, score, or compare nodes. Do not use `P` alone when the reader could confuse manifold identity, balance, and runtime scoring.
 
 ## 2. Translation Is Not Proof
 

@@ -11,7 +11,7 @@ evidence_tier: "[S] editorial topology; substantive claims retain owner tiers"
 book genealogy one visible home without creating a semantic owner. The current
 owners remain K-1 through K-7; books explain, compare, question, and route.
 
-The historical Skyzai/AIA editions stay unchanged at their original paths.
+The historical editions stay unchanged at their original external paths, outside this corpus.
 They are lineage, not current doctrine. New editions are reconstructed here
 from claim cards, explicit rivals, correction records, and source-owner review.
 

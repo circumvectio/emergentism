@@ -8,7 +8,7 @@ remain externally uncalibrated until independent contact decides them.
 
 ## Read in one sitting
 
-0. [The Foundation](00_THE_FOUNDATION.md) — what the whole thing stands on: `R0`, the forced/selected/theorem strata, and the three Titan identities on the Riemann sphere.
+0. [The Foundation](00_THE_FOUNDATION.md) — what the whole thing stands on: `R0`, the presupposed/base/emergent strata, and the three Titan identities on the Riemann sphere.
 1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
 2. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice, including the Finity Card.
 3. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.

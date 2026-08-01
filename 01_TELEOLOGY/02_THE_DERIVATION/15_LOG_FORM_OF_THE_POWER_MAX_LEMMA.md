@@ -28,13 +28,13 @@ rosetta:
 The previous log-form note established something real:
 
 ```text
-H(thη) = 2/sin(θ) = 2 cosh(u)
+H(θ) = 2/sin(θ) = 2 cosh(u)
 ```
 
 with:
 
 ```text
-φ = cot(thη/2)
+φ = cot(θ/2)
 ν = tan(θ/2) = 1/φ
 u = log(φ)
 ```
@@ -111,13 +111,13 @@ That is the precise point this note corrects.
 The first control is the actual sphere-sector problem from Path D:
 
 ```text
--(1/sin(θ)) d/dtheta (sin(θ) psi'(θ)) + V(θ) psi(thη) = E psi(θ)
+-(1/sin(θ)) d/dtheta (sin(θ) psi'(θ)) + V(θ) psi(θ) = E psi(θ)
 ```
 
 with:
 
 ```text
-V(thη) = 2/sin(θ) - 2
+V(θ) = 2/sin(θ) - 2
 ```
 
 Using a historical exploratory axisymmetric control (originally run from a temporary script), the sphere-sector comparison at `N = 8000` is:

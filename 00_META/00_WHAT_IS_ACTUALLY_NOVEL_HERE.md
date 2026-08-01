@@ -48,7 +48,7 @@ This is the smallest load-bearing mathematical and ontological packet:
 - `Zero-Sum Resolution Equation`
 - `φ · ν = 1 on S²`
 - `B = sin θ` as the balance profile on the sphere
-- `P_node = Φ × V` for operational node scoring
+- `P_node := min(Φ̂₄, V₄)` as the **selected** AND-class node score — one member of a conjunctive family, not a uniquely derived one; the product form `Φ̂₄V₄` (public `ΦV`) is **retired as a ranking** (`KSC-02`, 2026-07-29)
 - `ΣΔB > 0` or `ΣΔP_node > 0` across the widest real boundary, depending on register
 
 Its novelty is not merely that it is compact.

@@ -176,7 +176,7 @@ and [Empirical Program Board](../03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md).
 | **G1 — formal ontology** | One typed formal specification, explicit inference rules, a model or relative-consistency argument, and regression checks for all bridge prohibitions. | Open. |
 | **G2 — contents of the world** | Non-circular reachability and content-specific mechanisms for matter, life, and mind, each with a serious rival and discriminator. | Open. |
 | **G3 — paradox register** | One current paradox ledger whose each row identifies formulation, source owner, rival, diagnostic/reframe/resolution status, kill, and survivor. | Open; historical suite drift must not be counted as closure. |
-| **G4 — action model** | Frozen tests comparing `P_node = ΦV` with minimum, harmonic, additive, CES, and other fair rivals on held-out outcomes. | Ready-to-freeze in named packets; not yet validated. |
+| **G4 — action model** | Frozen tests comparing the selected working score `P_node = min(Φ̂₄,V₄)` with the product form `Φ̂₄V₄` (public `ΦV`, retired as a ranking by `KSC-02`), harmonic, additive, CES, and other fair rivals on held-out outcomes. | Ready-to-freeze in named packets; not yet validated. |
 | **G5 — crossings and collectives** | Independent definitions, interventions, negative controls, and recovery tests for `μ` claims and Egregoreotype components. | Evidence-open. |
 | **G6 — science unification** | Complete the row-by-row promotion sequence above, then run GP-11 with an external red team and independent replication. | Deferred. |
 | **G7 — lived anti-capture** | Long-horizon evidence that the correction and exit apparatus survives institutional success without coercion or extraction. | Deferred. |

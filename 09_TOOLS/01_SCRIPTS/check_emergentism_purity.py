@@ -29,7 +29,15 @@ CORPUS_EXCLUDED_PARTS = ROUTE_EXCLUDED_PARTS | {
 }
 
 ACTIVE_TOP_LEVELS = {
+    # 2026-08-01: 00_ESTABLISHED, 00_WORK_IN_PROGRESS and 13_BOOKS were ACTIVE lanes sitting
+    # outside this checker's scope. 00_ESTABLISHED is the corpus's short list of what
+    # survives an outside check — arguably the document that most needs the gate — and it
+    # was carrying both a literal product form and a bare eta, invisible to every checker.
+    # 00_HANDOFF stays excluded: it is dated provenance, like the receipt lanes.
     "00_CONTROL",
+    "00_ESTABLISHED",
+    "00_WORK_IN_PROGRESS",
+    "13_BOOKS",
     "00_META",
     "01_TELEOLOGY",
     "02_EPISTEMOLOGY",
@@ -105,6 +113,13 @@ EXTERNAL_MAPPING_BOUNDARY_PHRASES = (
     "creates no semantic authority",
     "source owners remain upstream",
 )
+
+# Structured records whose source-path values necessarily name an external tree.
+EXTERNAL_SOURCE_PATH_FILES = {
+    Path("13_BOOKS/book-manifest.json"),
+    Path("13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1.md"),
+    Path("13_BOOKS/self_eating_serpent/DEBRIEF.md"),
+}
 
 LEGACY_ALIAS_EXCEPTIONS = {
     Path("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"),
@@ -255,6 +270,19 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
     # Checked ONCE per file, before any line is scanned, so a file that has quietly lost
     # its declaration fails immediately rather than scanning clean on an exemption it no
     # longer earns.
+    # A relative PATH to an immutable external source is not an authority claim. The
+    # checker already grants this to four claim cards; the book records need the same, and
+    # for the same reason: you cannot cite a historical edition without naming where it is.
+    # Deliberately narrow — the token is permitted only on a line that is a source-path
+    # declaration, never in prose, instructions, owners or reader language.
+    def _is_external_source_path(line: str) -> bool:
+        stripped = line.strip().strip(",")
+        keyed = any(
+            stripped.startswith(k)
+            for k in ('"', "historical_source:", "source:", "historical_sources:", "-")
+        )
+        return keyed and "../" in stripped and stripped.count(" ") <= 2
+
     external_mapping_audit = False
     if rel in EXTERNAL_MAPPING_AUDIT_PATHS:
         missing = [p for p in EXTERNAL_MAPPING_BOUNDARY_PHRASES if p not in text]
@@ -295,6 +323,10 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             or control_projection_name
             or control_projection_reference
             or external_mapping_audit
+            or (
+                rel in EXTERNAL_SOURCE_PATH_FILES
+                and _is_external_source_path(line)
+            )
         ):
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"

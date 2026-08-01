@@ -60,8 +60,10 @@ template**. Verified it fails when the block is stripped.
 real defect — a bare ambiguous `η=0` in `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`,
 now written in its action register as `η_move=0`.
 
-**Deliberately still not wired, and why.** `check_links.py` has **no failure path** — it
-always exits 0, so wiring it would add a check that cannot fail.
+**Deliberately still not wired, and why.** `check_links.py` had **no failure path** — it
+always exited 0, so wiring it would have added a check that cannot fail.
+**Superseded 2026-08-01:** it was rewritten to actually resolve every local Markdown link,
+verified to fail on a broken one, and wired in; the gate now runs 17 checkers, not 15.
 `check_no_secrets_staged.py` inspects the staged diff, which a tree gate cannot see; it is
 wired into `.git/hooks/pre-commit` instead. **The hook is local and untracked, so it does
 not survive a fresh clone.** Anyone setting up a new checkout must re-add it.

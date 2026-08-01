@@ -90,10 +90,10 @@ Everything downstream is vocabulary-dependent on two of these, so this gates spr
 
 | ruling | the decision | blocks |
 |---|---|---|
-| `§5.1` | are the irrationals *numbers* or *limits of operations*? The theorem that they are not finite words is settled; only the word is open | every page that says "number" |
-| `G-0` / `G-0b` | which base is canonical — the generative base, or the sphere | whether doc 52 supersedes anything |
+| ~~`§5.1`~~ **RULED** | `√2` **is** a number in `ℝ` **and** is not a finite word over `{S, ι}`; both clauses must travel together and bare *"not a number"* is banned. Signed 2026-07-31 — `11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` §Q1 | every page that says "number" |
+| ~~`G-0` / `G-0b`~~ **RULED 2026-07-29** | Neither base is seated over the other; routing decides which applies. Exit B-ii, the fourth posit `B4`. Primary: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md`; consequence signed in `193_*` §Q2 | nothing — it no longer blocks |
 | receipt disposition rule | renumber, or add `superseded_by:`? | sprint 4 |
-| undeclared-route rule | declare current, declare frozen, or withhold? | sprint 5 |
+| ~~undeclared-route rule~~ **RULED** | Four routes DECLARED-PROVISIONAL, `/offline/` infrastructure, seven frozen, `/historical-boundary/` unchanged. Signed 2026-07-31 (`193_*` §Q4), executed (`232_*`) | nothing — executed and deployed |
 | `/dimensions/` crossings | may it keep showing five candidates when two are adjudicated failed? | one page |
 | audit items 3, 11, 14, 28 | four residual calls, all listed in `README.md §4A` | closes the audit |
 
@@ -191,7 +191,7 @@ What happens after is a different activity and should be called one:
 - **It does not promise the framework is true**, and closing every sprint would not
   bear on that. `00_ESTABLISHED` stays short.
 - **It does not promise the internal work matters.** On the framework's own conjunctive
-  law, coherence multiplied by zero contact is zero, so sprints 2–7 could all close and
+  law, a conjunctive law returns nothing when either factor is absent, and contact is the absent one, so sprints 2–7 could all close and
   the score would not move. **Only Sprint 1 can move it, which is why it is Sprint 1.**
 - **It sets no dates.** Sizes are honest ("one session"); dates would be invented.
 - **It is not ratified.** Nothing here is a commitment until an owner says so.

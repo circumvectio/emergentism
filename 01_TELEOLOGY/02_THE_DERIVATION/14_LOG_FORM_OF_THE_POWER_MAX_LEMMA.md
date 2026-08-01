@@ -60,13 +60,13 @@ So the safe summary is:
 Path D already gives the Hamiltonian:
 
 ```text
-H(thη) = φ + ν = 2 / sin(θ)
+H(θ) = φ + ν = 2 / sin(θ)
 ```
 
 with the established stereographic coordinates:
 
 ```text
-φ = cot(thη/2)
+φ = cot(θ/2)
 ν  = tan(θ/2) = 1/φ
 ```
 
@@ -89,14 +89,14 @@ and therefore:
 2 cosh(u)
 = e^u + e^(-u)
 = φ + ν
-= cot(θ/2) + tan(thη/2)
+= cot(θ/2) + tan(θ/2)
 = 2 / sin(θ)
 ```
 
 So the two Hamiltonians are exactly the same object in different charts:
 
 ```text
-H(thη) = 2 / sin(θ) = 2 cosh(u) = H(u)
+H(θ) = 2 / sin(θ) = 2 cosh(u) = H(u)
 ```
 
 This is the first strong result. The log form is not a competing theory. It is the same theory written in coordinates where the symmetry is manifest.
@@ -231,13 +231,13 @@ That computation is historically important because it established that the AM-GM
 On 2026-04-16, the same 1D problem was rerun in a cleaner weighted Sturm-Liouville form:
 
 ```text
--(1/2) d/dtheta (sin(θ) dpsi/dtheta) + V(θ) sin(thη) psi = E sin(θ) psi
+-(1/2) d/dtheta (sin(θ) dpsi/dtheta) + V(θ) sin(θ) psi = E sin(θ) psi
 ```
 
 with:
 
 ```text
-V(thη) = 2/sin(θ) - 2
+V(θ) = 2/sin(θ) - 2
 ```
 
 The first twenty eigenvalues from that rerun are:
@@ -301,7 +301,7 @@ So the honest result is:
 
 Even with D still open, three strong things survive:
 
-1. `H(thη) = 2/sin(θ)` and `H(u) = 2 cosh(u)` are exactly the same potential identity in different coordinates; full operator separation is handled in `16_OPERATOR_CONSISTENCY_AUDIT.md`.
+1. `H(θ) = 2/sin(θ)` and `H(u) = 2 cosh(u)` are exactly the same potential identity in different coordinates; full operator separation is handled in `16_OPERATOR_CONSISTENCY_AUDIT.md`.
 2. The ordinary chart points `0`, `1`, and projective infinity are legible on
    the Riemann sphere without identifying them with Titan frames.
 3. The exponential map rigorously relates additive and multiplicative

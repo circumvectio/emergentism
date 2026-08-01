@@ -11,7 +11,7 @@ rosetta:
 
 # The Spectrum Results
 
-## Current Numerical Read of `V(thη) = 2/sin(θ) - 2` on `S²`
+## Current Numerical Read of `V(θ) = 2/sin(θ) - 2` on `S²`
 
 **Evidence Tier:** `[B]` for the numerical rerun receipt. `[S]` for any coordinate identity used to interpret it. `[I]` for any physics mapping beyond the numbers themselves.
 **Current Date:** 2026-04-16
@@ -42,13 +42,13 @@ It does **not** claim that the full operator reduces cleanly to a simple harmoni
 The Path D potential is:
 
 ```text
-V(thη) = 2/sin(θ) - 2
+V(θ) = 2/sin(θ) - 2
 ```
 
 The cleaner rerun solves the weighted self-adjoint problem:
 
 ```text
--(1/2) d/dtheta (sin(θ) dpsi/dtheta) + V(θ) sin(thη) psi = E sin(θ) psi
+-(1/2) d/dtheta (sin(θ) dpsi/dtheta) + V(θ) sin(θ) psi = E sin(θ) psi
 ```
 
 This is the same `θ`-sector Hamiltonian as the original Path D setup, but posed in a form that respects the spherical measure and behaves much better numerically.
@@ -193,13 +193,13 @@ It sharpens it.
 The exact coordinate identity still holds:
 
 ```text
-H(thη) = 2/sin(θ) = φ + ν = 2 cosh(u)
+H(θ) = 2/sin(θ) = φ + ν = 2 cosh(u)
 ```
 
 with:
 
 ```text
-φ = cot(thη/2)
+φ = cot(θ/2)
 ν = tan(θ/2) = 1/φ
 u = log(φ)
 ```
@@ -217,7 +217,7 @@ What remains open is which operator realization is the right canonical spectral 
 
 ### What this document now supports
 
-1. `V(thη) = 2/sin(θ) - 2` defines a non-trivial spectral problem on the framework's own manifold. `[B]`
+1. `V(θ) = 2/sin(θ) - 2` defines a non-trivial spectral problem on the framework's own manifold. `[B]`
 2. The `θ`-sector can be posed in a stable self-adjoint weighted form. `[B]`
 3. The resulting spectrum is discrete, structured, and numerically stable in its low states. `[B]`
 4. The exact coordinate relation `2/sin(θ) = 2 cosh(u)` remains intact. [S]
