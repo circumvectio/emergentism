@@ -40,7 +40,7 @@
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "a3d54d21e508b689d28ebc415a5c5bf0debc9520252194823c4b7bc0f8fa4a4b"
+    "sha256": "c9e2d7efc9efa52aa8b57a29f79878222e0f8bffc24cc87567280c12c27470d4"
   },
   "renderer": {
     "extensions": [
@@ -79,7 +79,7 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/06_finity-the-missing-number.md",
-      "sha256": "611448416fe75bdb57a4fc3e3dcf2af6477f0fe251432daca09264a05e12a8da"
+      "sha256": "b1b9c0a1b84df5109531acf578be8334c2de094e4da3ab7150fbe6cd11302fc1"
     },
     {
       "path": "13_BOOKS/the_reciprocal/07_the-secret-of-three.md",
@@ -87,11 +87,11 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md",
-      "sha256": "e234d2750e1623c317515c7cff74bac4a7316e5ea85583ba1afa1215975ec3ef"
+      "sha256": "9748bda0311a7917a13d35ce485be26d4948eeff7e6b8998a4fe14270c67cb60"
     },
     {
       "path": "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
-      "sha256": "24fb4a57e58f983b9d9504555b3ea040ebecc026418027ae478416d1043f5a3a"
+      "sha256": "3b74ebb74940e47ed78560bbdf61f64bfacd9ab9310d927c91ff3bc92bd5bea1"
     },
     {
       "path": "13_BOOKS/the_reciprocal/10_the-extraction-boundary.md",
@@ -99,7 +99,7 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
-      "sha256": "6b3b911e1c8b355ec58d2cca953d5dc89f46a45430eeee628c63289dbf640f02"
+      "sha256": "815a704dfef568cdac98180a336b5d48d0c6f031c3913a5cfdcb807badb0492c"
     },
     {
       "path": "13_BOOKS/the_reciprocal/12_value-without-capture.md",
@@ -155,7 +155,7 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/25_the-seed.md",
-      "sha256": "d72e1f93951cab7d2950f818ad2235cc99995fb25da8db1389f8f717f6a81d1b"
+      "sha256": "5784e7dbc31af4d631166f293141d9858d5bfa5ae32189c226a29ef2e67e338a"
     },
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",

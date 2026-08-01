@@ -84,7 +84,7 @@ Beauty is the felt signal that a pattern may be worth attention. It is not autom
 
 Truth is contact with what resists us. It is not possession of final reality. A true statement survives the tests appropriate to its claim. It accepts falsifiers. It permits independent inspection. It does not need the audience to be loyal before it can be checked.
 
-Justice is widened accounting. It asks whether the increase in balance and flourishing is shared across the relevant boundary, or whether one node is rising by pushing cost onto another. In this book's public notation, justice asks for the widest honest boundary: a directional burden of proof on `ΣΔB` and `ΣΔP` across every party who bears impact, including those who never agreed to be parties and the substrate that cannot speak — under `η_move = 0`, K4, Grace Exit, receipts, and a signing threshold of at least two natural persons. That burden is about direction and about who must answer. It is not a cardinal score, and it does not license anyone to rank one life against another.
+Justice is widened accounting. It asks whether the increase in balance and flourishing is shared across the relevant boundary, or whether one node is rising by pushing cost onto another. In this book's public notation, justice asks for the widest honest boundary: a directional burden of proof on `ΣΔB` and `ΣΔP_node` across every party who bears impact, including those who never agreed to be parties and the substrate that cannot speak — under `η_move = 0`, K4, Grace Exit, receipts, and a signing threshold of at least two natural persons. That burden is about direction and about who must answer. It is not a cardinal score, and it does not license anyone to rank one life against another.
 
 These three words are not trophies.
 

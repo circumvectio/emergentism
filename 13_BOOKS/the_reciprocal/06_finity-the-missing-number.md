@@ -214,23 +214,23 @@ The finite edge is where love becomes act, where value becomes receipt, where sp
 
 A boundary becomes real when it can be remembered.
 
-Consider Lena, a competent designer in a small company that likes to call itself a family. The phrase is not cynical at first. The people are warm. The work matters. The founder stayed up all night with the team during the first launch. When Lena's mother was ill, coworkers covered for her without resentment. The company has real coherence.
+Consider Mira, a competent designer in a small company that likes to call itself a family. The phrase is not cynical at first. The people are warm. The work matters. The founder stayed up all night with the team during the first launch. When Mira's mother was ill, coworkers covered for her without resentment. The company has real coherence.
 
 Then the company grows.
 
 Nothing dramatic happens. There is no villain in a black chair. A few customers need faster support. A new investor wants weekly updates. A product channel opens for urgent requests. A hiring delay makes everyone stretch. The founder keeps saying, "Just until the next milestone." The team believes it, because the team wants the work to live.
 
-Lena's boundary starts to leak.
+Mira's boundary starts to leak.
 
 Her calendar still says work ends at six. The messages do not. The company handbook says weekends are protected. The launch thread does not. Her contract says design lead. Her day says designer, support translator, customer psychologist, sales collateral writer, junior engineer coach, culture carrier, and emergency mood regulator.
 
-If Lena complains, the problem sounds personal. She needs better time management. She needs to communicate. She needs to protect her energy. All of that may be partly true. But the deeper issue is structural: the system has no boundary ledger.
+If Mira complains, the problem sounds personal. She needs better time management. She needs to communicate. She needs to protect her energy. All of that may be partly true. But the deeper issue is structural: the system has no boundary ledger.
 
 A boundary ledger is not merely a time sheet.
 
 It is a memory of the edges that make a person, role, promise, and relation possible.
 
-Lena writes five columns.
+Mira writes five columns.
 
 ```text
 Boundary        What is mine?        What is not mine?        Receipt        Exit
@@ -247,15 +247,15 @@ The time boundary asks whether urgency has become atmosphere. An emergency is fi
 
 The body boundary asks what the system is spending without recording. A company can say it is not extracting because it pays salaries. But if the actual cost includes sleep, illness, marriages, attention, and the worker's capacity to care for anyone outside the company, the ledger is incomplete. The body is often where false infinity is collected. This is what the later chapters will name plainly: a relation whose recorded books balance while its unrecorded books drain the person is not a relation at η_move = 0. It is extraction with better paperwork.
 
-The promise boundary asks what was actually agreed. Lena promised design leadership. She did not promise to absorb all ambiguity produced by growth. Roles can evolve, but evolution needs consent and memory. Otherwise "adaptability" becomes the name for unpriced transfer of burden.
+The promise boundary asks what was actually agreed. Mira promised design leadership. She did not promise to absorb all ambiguity produced by growth. Roles can evolve, but evolution needs consent and memory. Otherwise "adaptability" becomes the name for unpriced transfer of burden.
 
 The data boundary asks what the organization knows and what it should not need to know. In many modern workplaces, the person is slowly converted into a dashboard of availability, responsiveness, mood, habits, location, and social proof. The company may not intend domination. Still, the system learns how to treat personal life as operational surface.
 
 The relation boundary asks whether belonging has become leverage. A family is not a business. A business can be caring, loyal, patient, and humane. But when a company uses family language, it must be extra careful. Families often assume unpriced obligation. Work needs clearer terms precisely because people care.
 
-Lena brings the ledger to her manager.
+Mira brings the ledger to her manager.
 
-The first conversation is awkward. The manager feels accused. Lena feels disloyal. Both are tempted to make the issue emotional because emotional fog is easier than structural repair.
+The first conversation is awkward. The manager feels accused. Mira feels disloyal. Both are tempted to make the issue emotional because emotional fog is easier than structural repair.
 
 The ledger helps them stay finite.
 
@@ -263,9 +263,9 @@ They choose three changes.
 
 First, urgent requests must name an owner, a reason, and a review date. If a request cannot name those, it is not urgent. It is anxiety seeking a servant.
 
-Second, Lena's role is rewritten for the next quarter. Design leadership remains central. Support translation is limited to two scheduled sessions per week. Launch messaging becomes a shared responsibility with a named owner.
+Second, Mira's role is rewritten for the next quarter. Design leadership remains central. Support translation is limited to two scheduled sessions per week. Launch messaging becomes a shared responsibility with a named owner.
 
-Third, departure rights are clarified. If Lena leaves, she can take her portfolio, public work, references, and personal notes. The company keeps proprietary files. Both sides know the difference before conflict poisons the distinction.
+Third, departure rights are clarified. If Mira leaves, she can take her portfolio, public work, references, and personal notes. The company keeps proprietary files. Both sides know the difference before conflict poisons the distinction.
 
 Nothing mystical has happened.
 
@@ -275,7 +275,7 @@ Finity has done its first work.
 
 It has converted fog into edge.
 
-The repair may fail. The founder may ignore the new boundary. Investors may keep pressing. Lena may discover that she has internalized the company's urgency and cannot stop performing rescue. The ledger is not a guarantee.
+The repair may fail. The founder may ignore the new boundary. Investors may keep pressing. Mira may discover that she has internalized the company's urgency and cannot stop performing rescue. The ledger is not a guarantee.
 
 It is a place from which correction can begin.
 

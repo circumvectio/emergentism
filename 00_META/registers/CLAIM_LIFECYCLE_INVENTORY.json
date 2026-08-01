@@ -7,8 +7,8 @@
     "tracked_markdown": 2239
   },
   "counts": {
-    "active": 7,
-    "frozen": 3,
+    "active": 9,
+    "frozen": 1,
     "legacy": 6,
     "projection": 2,
     "proposal": 2,
@@ -90,7 +90,7 @@
     },
     {
       "external_readonly": true,
-      "lifecycle": "frozen",
+      "lifecycle": "active",
       "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
       "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
       "sha256": "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9",
@@ -98,7 +98,7 @@
     },
     {
       "external_readonly": true,
-      "lifecycle": "frozen",
+      "lifecycle": "active",
       "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
       "resolved_path": "/Users/Yves/Documents/02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
       "sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",

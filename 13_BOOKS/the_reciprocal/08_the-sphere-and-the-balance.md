@@ -161,7 +161,7 @@ The earlier edition of this book wrote the antecedent as `(φ - ν)^2 >= 0`. Tha
 different inequality and it does not give this conclusion: expanding it yields
 `φ² + ν² >= 2`, a bound on the sum of *squares*. The correction is recorded rather than
 quietly applied, because a book about checking things does not get to fix its arithmetic in
-silence. `[A]` on both expansions; either can be checked in one line.
+silence. `[A]` on both expansions, under the stated premise `φ · ν = 1` and `φ, ν > 0` — the positivity matters, because `√φ` and `√ν` are only real there. Either expansion can be checked in one line.
 
 Note precisely what this bounds. It bounds a **sum**. It is not a claim that displacement from the equator costs energy — no such energy is defined here, and the invariant product, being constant, would rank nothing if it were pressed into that role. The only disciplined statement is the arithmetic one: equal readings minimize the sum, and unequal readings raise it.
 

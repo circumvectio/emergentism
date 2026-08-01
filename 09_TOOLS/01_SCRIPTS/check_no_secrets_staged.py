@@ -126,8 +126,15 @@ EXEMPTION_MARKERS = [
 ]
 
 
-def _get_staged_diff() -> str:
-    """Return the unified diff of staged changes."""
+def _get_staged_diff() -> str | None:
+    """Return the unified diff of staged changes, or None if it could not be read.
+
+    None and "" are DIFFERENT ANSWERS and were previously conflated. "" means git ran and
+    reported nothing staged. None means the scan never happened. A secret scanner that
+    cannot read the diff has cleared nothing, so it must not report success — it failed
+    open, printing a green check and letting the commit through, which is the wrong
+    direction for this particular check to fail in.
+    """
     result = subprocess.run(
         ["git", "diff", "--cached", "--no-color"],
         capture_output=True,
@@ -135,8 +142,8 @@ def _get_staged_diff() -> str:
         check=False,
     )
     if result.returncode != 0 and "not a git repository" not in result.stderr.lower():
-        print(f"⚠️  git diff --cached failed: {result.stderr.strip()}", file=sys.stderr)
-        return ""
+        print(f"git diff --cached failed: {result.stderr.strip()}", file=sys.stderr)
+        return None
     return result.stdout
 
 
@@ -181,8 +188,14 @@ def scan(diff_text: str) -> list[dict]:
 
 def main(argv: list[str] | None = None) -> int:
     diff = _get_staged_diff()
+    if diff is None:
+        print("SECRET SCAN: FAIL")
+        print("- could not read the staged diff, so nothing was scanned. This check fails")
+        print("  CLOSED on purpose: an unread diff has cleared nothing, and reporting")
+        print("  success here would be the scanner's most dangerous possible bug.")
+        return 1
     if not diff.strip():
-        print("✅ No staged changes to scan.")
+        print("SECRET SCAN: PASS (git reported no staged changes; nothing to scan)")
         return 0
 
     findings = scan(diff)

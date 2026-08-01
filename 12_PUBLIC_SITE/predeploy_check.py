@@ -972,8 +972,20 @@ def main():
         check_reading_manifest_contract(),
     ]
 
+    # `results` was built and never read: the exit decision used only the global ERRORS
+    # list, so any check that returned False WITHOUT appending to ERRORS was silently
+    # ignored and the deploy went green. Fold the returned verdicts into the same
+    # condition. Only an explicit False counts, so a check that returns None (no explicit
+    # return) is not treated as a failure it never claimed.
+    failed = [i for i, r in enumerate(results) if r is False]
+
     print("\n" + "=" * 60)
-    if ERRORS:
+    if ERRORS or failed:
+        if failed and not ERRORS:
+            print(
+                f"FAIL: {len(failed)} check(s) returned False without recording an error "
+                f"(indices {failed}). A check that fails silently is a deploy hole."
+            )
         print(f"FAIL: {len(ERRORS)} error(s), {len(WARNINGS)} warning(s)")
         sys.exit(1)
     elif WARNINGS:

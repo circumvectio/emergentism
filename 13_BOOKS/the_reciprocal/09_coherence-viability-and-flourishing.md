@@ -283,7 +283,7 @@ The baseline reads:
 | Before adoption | 0.58 | 0.52 | viability | Teachers know students, but support is inconsistent and slow |
 | Vendor proposal | 0.66 | 0.74 | coherence, and partly borrowed | The story looks better, but most claims are still projected |
 | Six-month review | 0.55 | 0.70 | coherence, and falling | More practice exists, but teacher burden and family opacity lower coherence |
-| Redesign review | 0.69 | 0.72 | neither side starved | Support remains useful and becomes more accountable |
+| Redesign review | 0.69 | 0.72 | coherence, but neither side starved | Support remains useful and becomes more accountable |
 
 The table is uncomfortable.
 

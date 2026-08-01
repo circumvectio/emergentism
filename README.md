@@ -40,11 +40,16 @@ None of the three owns anything; each points at the owner. Re-check the first tw
 There are about forty markdown files at the repository root and **most of them are
 forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
 They exist so that older links keep resolving, and deleting them would break the thing they
-are for. As of 2026-07-30: **26 stubs, 3 agent routes, and 7 documents with actual content** —
+are for. As of 2026-08-01 there are **37** markdown files at the root: **26 forwarding stubs, 3 agent
+routes, and 8 documents with actual content.** The eight —
 
 - [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
-- [`ROSETTA.md`](ROSETTA.md) · [`AGENT_README.md`](AGENT_README.md)
+- [`ROSETTA.md`](ROSETTA.md) · this `README.md`
+- the work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md`, cited as a non-semantic filename reference only, since neither owns doctrine
+
+(`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
+version of this list counted it as content and still arrived at six, while claiming seven.)
 
 If a root file is not in that list, follow its pointer rather than reading it as source.
 
