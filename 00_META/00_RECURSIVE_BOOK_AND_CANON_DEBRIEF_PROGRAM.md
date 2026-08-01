@@ -277,6 +277,21 @@ The current W1 state is **PENDING**: the replay corrects four unambiguous card
 locators and makes the public Grand Puzzle route explicit, while `OS01-R7`
 remains held for K-4/K-5 source-owner reconciliation.
 
+The active R7 control is:
+
+```text
+R7_HELD := OS01-17 remains a K-4-only `[C]` causal conjecture and stops before
+the source's mixed K-4/K-5 closing line; the current review records its clause
+boundary, active supports, and public-reader parity.
+
+R7_CLOSED := an owner-scoped reconciliation represents the K-4 conflict claim
+and K-5 Dharma constraint separately with text-anchored support and renewed
+L2/L3 review.
+```
+
+This is a hold-state metric, not a schema-v2 authorization, source rewrite, or
+closure claim.
+
 The stopping rule is equally important: no amount of internally coherent prose
 may be used to claim a complete ontology, a solved paradox class, a verified
 new algebra, a unified science, or the truth of the worldview. Those are world

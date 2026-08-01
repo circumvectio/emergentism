@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import unittest
 from pathlib import Path
@@ -10,6 +11,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 BOOK = ROOT / "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
+CLAIM_CARDS = ROOT / "00_META/claim_cards/one_sitting.yaml"
+PUBLIC_BOOK = ROOT / "12_PUBLIC_SITE/book/index.html"
 HUMAN = ROOT / "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md"
 COMPASS = ROOT / "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
 GOAL = ROOT / "01_TELEOLOGY/00_THE_GOAL.md"
@@ -40,6 +43,8 @@ class LivedWeltanschauungTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.book = BOOK.read_text(encoding="utf-8")
+        cls.cards = json.loads(CLAIM_CARDS.read_text(encoding="utf-8"))
+        cls.public_book = PUBLIC_BOOK.read_text(encoding="utf-8")
         cls.human = HUMAN.read_text(encoding="utf-8")
         cls.compass = COMPASS.read_text(encoding="utf-8")
         cls.goal = GOAL.read_text(encoding="utf-8")
@@ -220,6 +225,30 @@ class LivedWeltanschauungTests(unittest.TestCase):
             encoding="utf-8"
         )
         self.assertIn("`KSC-26` | Nested-horizon teleology and coordination", registry)
+
+    def test_r7_owner_boundary_remains_held_until_owner_reconciliation(self) -> None:
+        card = next(card for card in self.cards["cards"] if card["card_id"] == "OS01-17")
+        self.assertEqual(
+            card["locator"],
+            {"section": "8A", "line_start": 270, "line_end": 287},
+        )
+        self.assertEqual(card["plain_claim"], "Worldview coordination is one candidate variable in a causally plural account of conflict.")
+        self.assertEqual(card["claim_type"], "conjecture")
+        self.assertEqual(
+            card["evidence"],
+            [{"tier": "C", "scope": "multilevel conflict coordination"}],
+        )
+        self.assertEqual(card["owner_ids"], ["K-4"])
+        self.assertEqual(card["dependencies"], ["OS01-14", "OS01-15"])
+
+        lines = self.book.splitlines()
+        covered = "\n".join(lines[card["locator"]["line_start"] - 1 : card["locator"]["line_end"]])
+        mixed_closing_line = lines[card["locator"]["line_end"]]
+        self.assertIn("Weltanschauungskrieg", covered)
+        self.assertNotIn("Any Dharma application", covered)
+        self.assertIn("never a licence for violence", mixed_closing_line)
+        self.assertIn("Any Dharma application is Justice-first", mixed_closing_line)
+        self.assertIn("nonviolent, exit-preserving and never a battlefield directive", self.public_book)
 
     def test_f5_weak_and_strong_readings_are_separate(self) -> None:
         for required in (

@@ -72,7 +72,7 @@ edit until its named owner reviews the repair.
 | OS01-14 | §8, lines 215–240. **Retain → restate.** | KSC-11 / definition `[S]`; any actual candidate `[C]`. | Incentives, path dependence, and ordinary institutional feedback need no new entity. Absent persistent trace, carrier turnover, intervention-sensitive reweighting, recurrent bias, or visible costs, retire the label; shared trace survives. | “Institutions can reproduce patterns across generations without becoming persons.” |
 | OS01-15 | §8A, lines 244–248. **Research docket.** | Memotype research contract / `[I/C]`. | Ritual, imitation, affect, incentives, architecture, institutions, and contact may explain coordination. If language adds no predictive value after controls, retain only that coordination exceeds genotype. | “We are testing whether shared meanings improve coordination beyond biological similarity alone.” |
 | OS01-16 | §8A, lines 250–256. **Retain with scope.** | Memotype research contract / `[B-external/I]`. | The macaque exchange may be conditioning rather than contract or shared meaning. If it cannot transfer beyond trained exchange, retain task-specific signaling only. | “An offer, object, token, or interface can coordinate one exchange without creating shared values.” |
-| OS01-17 | §8A, lines 258–267. **Restate.** | KSC-26 and memotype research contract / `[I/C]`. | Security, coercion, geography, finance, state capacity, and elite competition may explain more. If coordination variables add no out-of-sample value, retain material conflict conducted through coalitions. | “Shared meanings can organize conflict at scale; they never excuse violence or replace causal analysis.” |
+| OS01-17 | §8A, lines 275–287; the mixed closing clause continues at 288. **Restate.** | KSC-26 and memotype research contract / `[I/C]`. | Security, coercion, geography, finance, state capacity, and elite competition may explain more. If coordination variables add no out-of-sample value, retain material conflict conducted through coalitions. | “Shared meanings can organize conflict at scale; they never excuse violence or replace causal analysis.” |
 | OS01-18 | §8B, lines 271–293. **Retain.** | KSC-24 / `[S/I]` boundary and `[I/C]` cooperation corollary. | Coordinate maps can harden into biology, caste, or moral hierarchy. Any birth, status, or extraction inference kills the mapping; separate descriptive axes survive. | “Different maps can correspond without turning people into ranks.” |
 | OS01-19 | §8B and §10, lines 287–370. **Restate → relocate.** | KSC-25/26 and K-5 / `[S/I]` constitutional boundary. | Claimed wisdom, authorship, or social role may become unreviewable authority. If exit, contest, or equal status is impaired, refuse philosopher-king language; revocable service survives. | “No one owns the worldview or its adherents; stewardship earns authority only through contestable service.” |
 | OS01-20 | §9, lines 301–322. **Retain → restate.** | Human Condition / `[S/I]`. | Determinism, epiphenomenalism, and social constraint remain serious rivals. If represented alternatives never affect action under intervention, narrow the agency claim; calibrated accountability survives. | “Freedom grows with intelligible alternatives, lawful means, correction, contest, and exit.” |
@@ -130,12 +130,14 @@ deployment authority. The functional review record is
 | R4 macro baseline | source 101–104; `OS01-05` 84–104 | Locator extended by one source line; error metric is present. |
 | R5 receipts | source 144–148; `OS01-08` 125–148 | Locator extended by one source line; self-issued success remains only a commitment. |
 | R6 Egregoreotype | source 234–247; `OS01-14` 223–252 | Present and fully locatable, including the five markers and personhood boundary. |
-| R7 war / Dharma | source 275–289; `OS01-17` 270–287, K-4 | **Held.** The Justice-first, nonviolent, exit-preserving Dharma boundary is at 288–289 and invokes the active K-5 route. No K-5 owner is inferred here. |
+| R7 war / Dharma | source 275–289; `OS01-17` 270–287, K-4 `[C]` | **Held.** The source sentence crosses 287–288: the K-4 “never a licence” boundary and the `Any Dharma application` clause share line 288. The Justice-first, nonviolent, exit-preserving Dharma boundary invokes the active K-5 route. No K-5 owner or dependency is inferred for this whole-card K-4 conjecture. |
 | R8 apertures | source 427–433; `OS01-23` 389–433 | Locator extended. The named ledger now reaches the Lab's visibly weaker twelve-GP public research-queue boundary, not a claimed equivalent of the internal ledger; public maturity labels remain distinct from the ledger's packet fields. |
 
 ## Remaining gate
 
 `OS01-R7` needs K-4/K-5 source-owner reconciliation before W1 can say that no
 precision repair remains open. This hold does not authorize a literal Dharma
-link, alter an owner ID, or change source text. The next genealogical extraction
-remains the immune protocol in *The Self-Eating Serpent*.
+link, alter an owner ID, add a dependency, or change source text. Under the
+current whole-card schema, it also does not authorize extending the K-4 locator
+into the mixed closing line. The next genealogical extraction remains the immune
+protocol in *The Self-Eating Serpent*.
