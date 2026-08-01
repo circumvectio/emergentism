@@ -66,6 +66,10 @@ Current repository validators and narrowly scoped support scripts.
   closed or that world contact occurred. Its state digest is bound to a dated
   snapshot receipt; an already-committed receipt must match both the worktree
   and its first-parent bytes, so a rebaseline requires a new receipt path.
+- `check_work_in_progress.py` keeps the WIP manifest a mirror: its three open
+  owner/contact rows must match the contact-limited state/profile, the blocked
+  review registry, and their named unset decision routes. It can report drift;
+  it cannot choose an owner, authorize contact, or alter source-owned state.
 - `check_active_receipt_citations.py` ratchets target identity across a fixed
   set of active source owners and the citation-scannable current/provisional
   public text-dependency closure. It binds typed locators and exact

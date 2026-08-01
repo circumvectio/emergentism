@@ -55,6 +55,15 @@ become a way of losing work and should be repaired.
 
 ---
 
+**Machine-owner mirror.** The three open owner/contact rows above are a
+non-authoritative mirror of `CONTACT_LIMITED_STATE.json`,
+`coherence_profile.json`, and the blocked `FPE-REVIEW-01` registry row. The
+WIP checker fails if a protected source-owned debt/gate contract changes, a
+named docket route is renamed, or the visible held-open boundary disappears. This table does not
+select an owner, authorize contact, or change any source-owned state.
+
+---
+
 > **This manifest listed two closed rulings as open, and the reason is worth keeping.**
 > `G-0` and `G-0b` were both ruled on **2026-07-29**. But
 > `52_THE_GENERATIVE_BASE.md` still carried *"Owner ruling G-0 pending"* in its

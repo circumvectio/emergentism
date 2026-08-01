@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3437,
+      "tracked_file_count": 3438,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 168,
+      "tracked_file_count": 169,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1091,7 +1091,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 25,
+      "tracked_file_count": 26,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

@@ -105,6 +105,11 @@ exclusions, the Managed Agents projection, and the live active-corpus scan.
 projection: the live registry/document pair, a blocked packet falsely labeled
 ready to send, and missing no-contact/no-review boundary phrases.
 
+`test_work_in_progress.py` supplies mutation controls for the three
+source-bound WIP owner/contact rows: exact held debt, profile, review, docket,
+and rendered-Markdown contracts must survive without turning this manifest
+into owner selection or contact authority.
+
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`
