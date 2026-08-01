@@ -51,6 +51,7 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_receipt_citations.py"
   "09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py"
   "09_TOOLS/01_SCRIPTS/check_work_in_progress.py"
+  "09_TOOLS/01_SCRIPTS/check_adjudication_custody.py"
   "09_TOOLS/01_SCRIPTS/check_record_counters.py"
   "09_TOOLS/01_SCRIPTS/check_review_bundle.py"
   "09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py"

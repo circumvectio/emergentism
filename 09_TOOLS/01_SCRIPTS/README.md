@@ -70,6 +70,13 @@ Current repository validators and narrowly scoped support scripts.
   owner/contact rows must match the contact-limited state/profile, the blocked
   review registry, and their named unset decision routes. It can report drift;
   it cannot choose an owner, authorize contact, or alter source-owned state.
+- `check_adjudication_custody.py` replays the immutable, corpus-resident
+  custody contract for all 229 actionable audit findings. It byte-locks the
+  three dated JSONL ledgers and Receipt 234, validates their declared
+  partitions and additive review controls, and reads neither the external raw
+  reconstruction nor current source evidence paths. A pass is a durable
+  custody replay only: it does not re-adjudicate a finding, establish a repair,
+  authorize a decision, or establish world contact.
 - `check_active_receipt_citations.py` ratchets target identity across a fixed
   set of active source owners and the citation-scannable current/provisional
   public text-dependency closure. It binds typed locators and exact

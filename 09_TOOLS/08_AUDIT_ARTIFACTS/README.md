@@ -48,6 +48,11 @@ pure-Emergentism boundary on 2026-07-20 and are preserved under
 [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/08_AUDIT_ARTIFACTS/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/08_AUDIT_ARTIFACTS/).
 The two JSONL ledgers above are bounded run evidence, not doctrine or authority;
 their rows must not be rewritten to make a later audit look cleaner.
+`../01_SCRIPTS/check_adjudication_custody.py` is the read-only replay for
+their fixed SHA-256 identities, Receipt 234 parent/hash declarations, and
+additive review controls. It is deliberately corpus-only: the retained hashes
+for external reconstruction/journal/session inputs are declarations, not paths
+the checker may open.
 
 ## What It Must Not Own
 

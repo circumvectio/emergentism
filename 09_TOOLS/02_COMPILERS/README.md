@@ -110,6 +110,14 @@ source-bound WIP owner/contact rows: exact held debt, profile, review, docket,
 and rendered-Markdown contracts must survive without turning this manifest
 into owner selection or contact authority.
 
+`test_adjudication_custody.py` supplies mutation controls for the four
+byte-locked 2026-08-01 custody artifacts: strict JSONL structure, cardinality,
+ordinal and duplicate joins, supplement corrections/closures/gate/docket, the
+derived 151/8/4/6 reviewed partition, and Receipt 234's parents and declared
+hashes. Its baseline temporary corpus contains only those four artifacts; it
+does not replay external journals, inspect current source evidence, or infer
+semantic repairs.
+
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`
