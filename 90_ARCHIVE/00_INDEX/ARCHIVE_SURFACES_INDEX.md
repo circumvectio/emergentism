@@ -21,6 +21,7 @@ path before it can be treated as a completed K3 stone.
 | `2026_07_13_gfs_retraction/` | GFS retraction custody | Retraction evidence; never active proof |
 | `2026_07_18_charter_tidy/` | Empty/unresolved shell | Not a receipt until populated and explained |
 | `2026_07_19_open_canon_v01_consolidation/` | Empty/unresolved shell | Not a receipt until populated and explained |
+| `2026_08_01_unverified_closed_reading_loop_sign_receipt/` | Exact indexed-blob custody plus adjudication | Inferential provenance only; not signed, ratified, verified, or canon |
 | `50_AUDITS/` | Archived audit material | Dated findings, not current source truth |
 | `old_front_doors/` | Superseded reader routes | Requires per-file stones and live successors |
 | `retired_public_site/` | Preserved public outputs | Local custody does not prove deployment |
