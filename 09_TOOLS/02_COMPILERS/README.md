@@ -101,9 +101,11 @@ precache lists, and imported worker scripts.
 KSC-02 regression gate, including adjacent-denial bypasses, exact scope
 exclusions, the Managed Agents projection, and the live active-corpus scan.
 
-`test_review_bundle.py` supplies three controls for the external-review status
-projection: the live registry/document pair, a blocked packet falsely labeled
-ready to send, and missing no-contact/no-review boundary phrases.
+`test_review_bundle.py` supplies mutation and entrypoint controls for the
+external-review status projection: the live registry/document pair, a blocked
+packet falsely labeled ready to send, missing no-contact/no-review boundary
+phrases, and a discovered paired v5 packet that must fail rather than inherit
+the v4 technical contract.
 
 `test_work_in_progress.py` supplies mutation controls for the three
 source-bound WIP owner/contact rows: exact held debt, profile, review, docket,

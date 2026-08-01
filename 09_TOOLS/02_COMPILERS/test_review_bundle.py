@@ -121,6 +121,42 @@ class ReviewBundleStatusTests(unittest.TestCase):
             any("bundle v5 is unsupported" in error for error in errors), errors
         )
 
+    def test_paired_unregistered_successor_fails_through_main(self) -> None:
+        """A discovered v5 packet must not bypass the live entrypoint guard."""
+
+        with tempfile.TemporaryDirectory() as temporary:
+            corpus = Path(temporary) / "corpus"
+            bundle = corpus / "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice"
+            bundle.mkdir(parents=True)
+            proof = corpus / "proof.txt"
+            proof.write_text("synthetic packet proof\n", encoding="utf-8")
+            proof_relative = "proof.txt"
+            document = "not sent; review received: no; does not work here; CONTACT BLOCKED.\n"
+            for version in range(1, 6):
+                manifest = {
+                    "bundleVersion": f"v{version}",
+                    "supersedes": None if version == 1 else f"REVIEW_BUNDLE_v{version - 1}.json",
+                    "files": {proof_relative: "sha256:" + CHECKER.sha256(proof)},
+                }
+                (bundle / f"REVIEW_BUNDLE_v{version}.json").write_text(
+                    json.dumps(manifest), encoding="utf-8"
+                )
+                (bundle / f"REVIEW_BUNDLE_v{version}.md").write_text(
+                    document, encoding="utf-8"
+                )
+
+            registry, gate = CHECKER.review_gate_data()
+            output = io.StringIO()
+            with (
+                mock.patch.object(CHECKER, "ROOT", corpus),
+                mock.patch.object(CHECKER, "DIR", bundle),
+                mock.patch.object(CHECKER, "review_gate_data", return_value=(registry, gate)),
+                mock.patch.object(CHECKER, "review_execution_state", return_value="blocked"),
+                redirect_stdout(output),
+            ):
+                self.assertEqual(CHECKER.main(), 1)
+            self.assertIn("bundle v5 is unsupported", output.getvalue())
+
     def test_empty_inventory_requires_an_explicitly_unbound_registry(self) -> None:
         registry, gate = CHECKER.review_gate_data()
         output = io.StringIO()
