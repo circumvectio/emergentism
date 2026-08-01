@@ -29,14 +29,14 @@
       "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "The crosswalk is optional."}, "disposition": "restate", "public": {"state": "bounded_current", "wording": "A selected D1 reading accompanies, but does not alter, ordinary arithmetic."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
     },
     {
-      "card_id": "OS01-04", "chapters": ["difference"], "locator": {"section": "2", "line_start": 78, "line_end": 82},
+      "card_id": "OS01-04", "chapters": ["difference"], "locator": {"section": "2", "line_start": 78, "line_end": 83},
       "plain_claim": "Some apparent contradictions dissolve under explicit domain or type repair; every other problem retains its burden.", "claim_type": "interpretation_vow", "evidence": [{"tier": "I", "scope": "methodological diagnosis"}],
       "owner_ids": ["K-1"], "dependencies": ["OS01-03"], "docket_ids": ["A1"], "type_boundaries": ["diagnosis is not universal resolution"],
       "strongest_rival": "The target problem may involve no type error.", "discriminator": "Name the exact type or domain mismatch and recover the native result.", "kill_criterion": "If no mismatch is identified, withdraw the diagnosis.", "survivor_if_killed": "Local type discipline.",
       "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "Problems remain open by default."}, "disposition": "restate", "public": {"state": "bounded_current", "wording": "Some apparent contradictions are type errors; others remain open."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
     },
     {
-      "card_id": "OS01-05", "chapters": ["relation"], "locator": {"section": "3", "line_start": 84, "line_end": 103},
+      "card_id": "OS01-05", "chapters": ["relation"], "locator": {"section": "3", "line_start": 84, "line_end": 104},
       "plain_claim": "A macro-description earns use only against a fair declared lower-level or alternative baseline.", "claim_type": "conjecture", "evidence": [{"tier": "C", "scope": "macro explanatory utility"}],
       "owner_ids": ["K-1", "K-2"], "dependencies": [], "docket_ids": ["A2", "A6"], "type_boundaries": ["usefulness is not ontic irreducibility"],
       "strongest_rival": "A lower-level model may match the task once all costs are counted.", "discriminator": "Match inputs, horizon, intervention scope, encoding, measurement cost, and error.", "kill_criterion": "Demote autonomy if the fair baseline matches or wins.", "survivor_if_killed": "Configuration mathematics and convenient redescription.",
@@ -57,7 +57,7 @@
       "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "No physical theory is replaced."}, "disposition": "research_docket", "public": {"state": "candidate", "wording": "Any time-emergence claim still owes clocks, transitions, and records."}, "review": {"state": "l3_audited", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
     },
     {
-      "card_id": "OS01-08", "chapters": ["actuality"], "locator": {"section": "5", "line_start": 125, "line_end": 147},
+      "card_id": "OS01-08", "chapters": ["actuality"], "locator": {"section": "5", "line_start": 125, "line_end": 148},
       "plain_claim": "Commitment and outcome require separate, contestable receipts.", "claim_type": "stipulation", "evidence": [{"tier": "S", "scope": "chosen correction protocol"}],
       "owner_ids": ["K-1", "K-3"], "dependencies": [], "docket_ids": ["A3"], "type_boundaries": ["self-report is not outcome evidence"],
       "strongest_rival": "Ordinary audit protocols may calibrate equally well.", "discriminator": "Compare provenance, outcome calibration, contestability, and correction rates.", "kill_criterion": "Narrow if the receipt protocol adds no calibration or is routinely gamed.", "survivor_if_killed": "Commitments do not award their own consequences.",
@@ -162,7 +162,7 @@
       "consequence": {"applicable": true, "bearers": ["all affected parties"], "consent": "declare and contest", "reversibility": "prefer reversible action", "exit": "No aggregate erases a bearer."}, "disposition": "restate", "public": {"state": "bounded_current", "wording": "Justice is chosen and declared; no equation derives an ought."}, "review": {"state": "l3_audited", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
     },
     {
-      "card_id": "OS01-23", "chapters": ["five-apertures"], "locator": {"section": "11", "line_start": 389, "line_end": 432},
+      "card_id": "OS01-23", "chapters": ["five-apertures"], "locator": {"section": "11", "line_start": 389, "line_end": 433},
       "plain_claim": "Each mu crossing is an independently provisional emergence conjecture with its own evidence burden.", "claim_type": "conjecture", "evidence": [{"tier": "C", "scope": "crossing-specific emergence"}],
       "owner_ids": ["K-3", "K-4"], "dependencies": ["OS01-12"], "docket_ids": ["A2", "A6"], "type_boundaries": ["mu is an interface record, not a causal or numeric operator"],
       "strongest_rival": "Ordinary reduction, redescriptions, threshold artifacts, or native-domain mechanisms may suffice.", "discriminator": "Declare boundary, saturation, threshold, new freedom, recovery, rival, prediction, discriminator, and kill.", "kill_criterion": "Reclassify or kill each row separately when a rival wins or evidence fails.", "survivor_if_killed": "A removable address for the question.",

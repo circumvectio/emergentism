@@ -31,6 +31,12 @@ BUILD_MANIFEST = os.path.join(OUT_DIR, "build-manifest.json")
 EXTENSIONS = ["extra", "toc", "sane_lists"]
 
 TIER_RE = re.compile(r'\[(A|B|S|I|D|C)((?:/[A-Z]+)*)\]')
+SOURCE_LINK_RE = re.compile(r'href="(?P<target>[^"#]*\.md(?:#[^"]*)?)"')
+PUBLIC_SOURCE_LINK_ROUTES = {
+    # The internal ledger is broader than its twelve-question public projection.
+    # The Lab makes that weaker boundary visible rather than implying equality.
+    "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md": "../lab/#questions",
+}
 
 def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s).strip()
@@ -40,6 +46,13 @@ def wrap_tiers(htmltext):
         first = m.group(1).lower()
         return f'<span class="tier t-{first}">[{m.group(1)}{m.group(2)}]</span>'
     return TIER_RE.sub(repl, htmltext)
+
+
+def route_source_link(match):
+    """Route a non-deployed source link to its declared public boundary."""
+    source_path = os.path.normpath(match.group("target").split("#", 1)[0])
+    source_path = source_path.replace(os.sep, "/")
+    return f'href="{PUBLIC_SOURCE_LINK_ROUTES.get(source_path, "../sources/")}"'
 
 
 def load_object(path, label):
@@ -262,9 +275,10 @@ def render(contract):
 
     md = markdown.Markdown(extensions=EXTENSIONS)
     body = md.convert(raw)
-    # Repository Markdown sources are not deployed. Route their links to the
-    # public source boundary instead of emitting dead filesystem-relative URLs.
-    body = re.sub(r'href="[^"#]*\.md(?:#[^"]*)?"', 'href="../sources/"', body)
+    # Repository Markdown sources are not deployed. Most route to the generic
+    # source boundary; explicitly declared weaker public projections may route
+    # to their own visible boundary instead of emitting a dead relative URL.
+    body = SOURCE_LINK_RE.sub(route_source_link, body)
     body = wrap_tiers(body)
     source_chapter_order = validate_rendered_chapters(body, contract)
 

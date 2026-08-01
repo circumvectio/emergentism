@@ -114,7 +114,8 @@
         "FPE-READ-01 · TYPED DRAFT · NOT RUN",
         "FPE-REVIEW-01 · TYPED DRAFT · NO REVIEW EXISTS",
         "FPE-COMPARE-01 · TYPED DRAFT · NOT PREREGISTERED",
-        "None of these gates validates an ontology."
+        "None of these gates validates an ontology.",
+        "Public Grand Puzzle boundary."
       ]
     },
     {

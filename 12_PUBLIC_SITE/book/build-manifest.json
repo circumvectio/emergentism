@@ -79,16 +79,16 @@
     "graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "register_sha256": "88e147a5343d9bf9a886a6a344a8898d99300d482b1ad509a271f59524ffc4c5",
+    "register_sha256": "7baea1beba1e010009c8eaacaed33c11ed0e1d791d0fcf9e0fd0cec2867caf39",
     "schema": "emergentism/claim-card-set/v1",
-    "sha256": "275f1bf2be0e67f4a2c7dddfe09f32c31436259d41b81ded2edc7d9ad281ddcc"
+    "sha256": "943c7ab6af092fb8792f21a6d94c354a9519f93efc9d39a1a539c3e785a465e0"
   },
   "ordered_source_paths": [
     "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "55b1b31700d2faf3bd00101cd83acbff10151940912854232364c77e1f06434d"
+    "sha256": "e139ebdc6f95e15ed54cdb3da9b8ed5e9cf404e1e1878bd5f843f94b5f0e8f3b"
   },
   "renderer": {
     "extensions": [

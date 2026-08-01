@@ -62,6 +62,11 @@ WIP checker fails if a protected source-owned debt/gate contract changes, a
 named docket route is renamed, or the visible held-open boundary disappears. This table does not
 select an owner, authorize contact, or change any source-owned state.
 
+**Editorial-scope companion.** The [Recursive Book and Canon Debrief Program](../00_META/00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md)
+remains an active, separately typed editorial route. Its W1 reader-synthesis
+metric is **PENDING** and does not silently revise this machine-owner mirror,
+its counters, or the world-contact state.
+
 ---
 
 > **This manifest listed two closed rulings as open, and the reason is worth keeping.**

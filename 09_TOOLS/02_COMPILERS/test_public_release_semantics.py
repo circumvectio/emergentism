@@ -179,6 +179,19 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertIs(withheld["included_in_output"], False)
         self.assertIs(withheld["included_in_rag"], False)
 
+    def test_public_book_routes_grand_puzzle_to_its_explicit_boundary(self) -> None:
+        book = (SITE / "book/index.html").read_text(encoding="utf-8")
+        self.assertEqual(book.count('href="../lab/#questions"'), 2)
+        self.assertIn(
+            '<a href="../lab/#questions"><code>Grand Puzzle Assembly Ledger</code></a>',
+            book,
+        )
+        self.assertIn(
+            '<a href="../lab/#questions"><code>Grand Puzzle Assembly</code></a>',
+            book,
+        )
+        self.assertIn('<a href="../sources/"><code>The Lived Compass</code></a>', book)
+
     def test_rag_source_integrity_negative_controls(self) -> None:
         # The generator's permanent controls must reject both loss of the
         # declared source and byte drift against its v2 SHA-256 receipt.

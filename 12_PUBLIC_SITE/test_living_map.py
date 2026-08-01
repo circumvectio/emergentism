@@ -84,6 +84,20 @@ class LivingMapContractTests(unittest.TestCase):
                 EXPECTED_STATES[question["id"]],
             )
 
+    def test_grand_puzzle_route_is_explicitly_a_weaker_public_projection(self):
+        ledger = (ROOT.parent / "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md").read_text(encoding="utf-8")
+        ledger_ids = set(re.findall(r"^\| \*\*(GP-\d{2})\*\* \|", ledger, re.MULTILINE))
+        public_ids = {question["id"] for question in self.contract["openQuestions"]}
+        self.assertEqual(ledger_ids, public_ids)
+        self.assertEqual(len(ledger_ids), 12)
+
+        lab = (ROOT / "lab/index.html").read_text(encoding="utf-8")
+        self.assertIn('id="grand-puzzle-public-boundary"', lab)
+        self.assertIn("public twelve-GP research-queue projection", lab)
+        self.assertIn("does not expose or replace the ledger's assembled spine", lab)
+        self.assertIn("do not state that the ledger's question, rival, discriminator, kill, and survivor packet fields are absent", lab)
+        self.assertIn("Source owners, result receipts, and the evidence-tier contract retain semantic authority.", self.contract["sourceAuthority"])
+
     def test_contract_cannot_become_secret_or_payment_intake(self):
         forbidden_keys = {
             "apiKey", "api_key", "secret", "token", "paymentMethod",

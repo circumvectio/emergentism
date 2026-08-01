@@ -1,8 +1,9 @@
 ---
 title: "One-Sitting Claim Card Set 01"
-status: "STAGED — audited reader-synthesis docket; no source claim changed"
+status: "RECONCILIATION PENDING — R1–R6/R8 replayed; OS01-R7 K-4/K-5 owner route held"
 date: 2026-07-28
-evidence_tier: "[S] custody and review record; every card preserves the source-owner tier"
+updated: 2026-08-02
+evidence_tier: "[S] custody/review record; [B] functional audit; no source-owner ruling"
 owner: "00_META claim custody only"
 scope:
   source: ../00_THE_WELTANSCHAUUNG_ONE_SITTING.md
@@ -87,9 +88,10 @@ edit until its named owner reviews the repair.
 | OS01-25 | §12, lines 401–410. **Retain.** | K-3 E10 and K-4 W12 / `[I/C]` boundary posture. | D6 may be reified into identity, loop, attainment, or a sixth freedom. If it becomes compulsory or non-discriminating, demote it; nonclosure and exit survive. | “D6 marks a refusal to turn every remainder into another object; it is neither an achievement nor a cosmic loop.” |
 | OS01-26 | §12, lines 412–435. **Retain.** | K-4, K-5, K-7 / `[S/I/C]` modularity and correction contract. | A framework can make its kills decorative or claim its own survival proves truth. If modularity, correction, or exit fails in practice, it is a self-protecting creed. | “A useful worldview must remain useful when its grandest wagers fail—and leaveable when its lens no longer serves.” |
 
-## Precision-repair queue
+## Precision-repair queue — 2026-07-28 proposal record
 
-The following are proposed source repairs, not approved doctrine changes:
+The following preserves the original proposed source repairs. It is not a
+current authorization to rewrite doctrine:
 
 1. **OS01-R1 — Titans:** qualify “three sovereign symbolic seats” as selected
    meta-language so it cannot imply three D0 objects or ontology by fiat.
@@ -110,9 +112,30 @@ The following are proposed source repairs, not approved doctrine changes:
 8. **OS01-R8 — apertures:** attach the full experiment packet to the μ summary
    or link it conspicuously from the reader book.
 
-## Next gate
+## 2026-08-02 reconciliation disposition
 
-Each repair must be proposed in its source owner, then receive L2 alternative
-review and L3 source/projection review. Only then may the One-Sitting book and
-its generated public edition change. The next genealogical extraction is the
-immune protocol in *The Self-Eating Serpent*.
+The current reader was re-read under functional L2 alternative review and L3
+source/projection audit. The reviewed source revision is
+`sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101`.
+This reconciles existing source text, card locators, and the public projection;
+it creates no doctrine, source-owner ruling, external evidence, publication, or
+deployment authority. The functional review record is
+[`2026_08_02_OS01_PRECISION_RECONCILIATION.md`](reviews/2026_08_02_OS01_PRECISION_RECONCILIATION.md).
+
+| Repair | Current source / card coverage | Reconciliation disposition |
+|---|---|---|
+| R1 Titans | source 39–51; `OS01-01` 39–51 | Present and fully locatable. |
+| R2 D1 | source 64–77; `OS01-03` 62–77 | Present and fully locatable. |
+| R3 paradoxes | source 79–83; `OS01-04` 78–83 | Locator extended by one source line; scoped survivor is present. |
+| R4 macro baseline | source 101–104; `OS01-05` 84–104 | Locator extended by one source line; error metric is present. |
+| R5 receipts | source 144–148; `OS01-08` 125–148 | Locator extended by one source line; self-issued success remains only a commitment. |
+| R6 Egregoreotype | source 234–247; `OS01-14` 223–252 | Present and fully locatable, including the five markers and personhood boundary. |
+| R7 war / Dharma | source 275–289; `OS01-17` 270–287, K-4 | **Held.** The Justice-first, nonviolent, exit-preserving Dharma boundary is at 288–289 and invokes the active K-5 route. No K-5 owner is inferred here. |
+| R8 apertures | source 427–433; `OS01-23` 389–433 | Locator extended. The named ledger now reaches the Lab's visibly weaker twelve-GP public research-queue boundary, not a claimed equivalent of the internal ledger; public maturity labels remain distinct from the ledger's packet fields. |
+
+## Remaining gate
+
+`OS01-R7` needs K-4/K-5 source-owner reconciliation before W1 can say that no
+precision repair remains open. This hold does not authorize a literal Dharma
+link, alter an owner ID, or change source text. The next genealogical extraction
+remains the immune protocol in *The Self-Eating Serpent*.

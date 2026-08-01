@@ -20,8 +20,9 @@ Emergentism cannot honestly become *finished*, infallible, or proven. Its finite
 internal program can reach a narrower terminal state:
 
 ```text
-CONTACT_LIMITED := every finite internal item is either closed or explicitly
-                   held by a named owner rule;
+CONTACT_LIMITED := every finite internal item in its declared claim/custody
+                   state universe is either closed or explicitly held by a
+                   named owner rule;
                    every local gate reproduces;
                    every remaining claim names the external observation,
                    review, or replication that could move it.
@@ -29,6 +30,15 @@ CONTACT_LIMITED := every finite internal item is either closed or explicitly
 
 This state says the repository is no longer using more internal writing as a
 substitute for contact. It says nothing about whether the worldview is true.
+
+### Scope companion — Recursive Book and Canon Debrief
+
+The active [Recursive Book and Canon Debrief Program](00_RECURSIVE_BOOK_AND_CANON_DEBRIEF_PROGRAM.md)
+is a separately typed editorial route. Its W1 reader-synthesis metric is
+currently **PENDING** and is not silently counted by this contact-limited state
+model. A W1 reconciliation can improve reader custody and public projection;
+it cannot change these counters, establish world contact, or turn a local gate
+into publication, deployment, or independent-review authority.
 
 ## Typed state model
 
