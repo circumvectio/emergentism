@@ -15,6 +15,17 @@ depends:
   - "D_SERIES_ROWS/00_GENERATIVE_TABLE.md (GEN7, the target pack)"
 ---
 
+
+> **External-mapping boundary.** This document names product, venture and runtime systems
+> outside Emergentism. It names them as **data under audit**, never as premises.
+>
+> - Every such name here is a runtime projection, not worldview doctrine.
+> - Quoting one creates no semantic authority inside this corpus.
+> - The source owners remain upstream and are unaffected by anything concluded here.
+>
+> Where this document and an external system disagree, neither governs the other. Removing
+> this block removes the file's exemption in `09_TOOLS/01_SCRIPTS/check_emergentism_purity.py`
+> and the gate fails closed.
 # Cell — `SOUL4 → GEN7`
 
 The first cell recorded under the vNext schema. It is filed **because it fails an important

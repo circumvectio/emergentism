@@ -17,6 +17,17 @@ depends:
   - "30_ROSETTA_VNEXT_REFINEMENT_2026_07_31 §8.1–§8.2 (the agent's correction on Skyzai's slot and the missing return leg)"
 ---
 
+
+> **External-mapping boundary.** This document names product, venture and runtime systems
+> outside Emergentism. It names them as **data under audit**, never as premises.
+>
+> - Every such name here is a runtime projection, not worldview doctrine.
+> - Quoting one creates no semantic authority inside this corpus.
+> - The source owners remain upstream and are unaffected by anything concluded here.
+>
+> Where this document and an external system disagree, neither governs the other. Removing
+> this block removes the file's exemption in `09_TOOLS/01_SCRIPTS/check_emergentism_purity.py`
+> and the gate fails closed.
 # SOUL4@0 — the Soul-Loop Mission Engine as a Rosetta pack
 
 > The Soul-Loop Mission Engine is a **downstream application** of the Soul Loop

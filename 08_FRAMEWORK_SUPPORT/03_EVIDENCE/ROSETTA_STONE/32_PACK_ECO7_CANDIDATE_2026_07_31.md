@@ -15,6 +15,17 @@ depends:
   - "00_META/00_SETTLED_CANON_REGISTRY.md (KSC-25, the anti-reification fence)"
 ---
 
+
+> **External-mapping boundary.** This document names product, venture and runtime systems
+> outside Emergentism. It names them as **data under audit**, never as premises.
+>
+> - Every such name here is a runtime projection, not worldview doctrine.
+> - Quoting one creates no semantic authority inside this corpus.
+> - The source owners remain upstream and are unaffected by anything concluded here.
+>
+> Where this document and an external system disagree, neither governs the other. Removing
+> this block removes the file's exemption in `09_TOOLS/01_SCRIPTS/check_emergentism_purity.py`
+> and the gate fails closed.
 # `ECO7` — candidate pack
 
 > [!WARNING]

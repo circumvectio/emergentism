@@ -74,6 +74,38 @@ HISTORICAL_LINEAGE_CARD_PATHS = {
     Path("00_META/claim_cards/six_lenses.yaml"),
 }
 
+# EXTERNAL-MAPPING AUDITS. Added 2026-08-01.
+#
+# Some corpus documents exist precisely to AUDIT a claimed correspondence between this
+# framework and an external product or venture system. To do that they must quote the
+# external system's own words — and quoting a claim in order to refute it is the opposite
+# of importing it as authority. 31_CELL_SOUL4_TO_GEN7 is the clear case: it quotes an
+# external mapping and concludes "They are not independent", killing a convergence claim.
+# Genericising those names would destroy the audit, because you cannot show that two
+# mappings are a definitional readback of each other without naming both.
+#
+# THE EXEMPTION IS EARNED, NOT GRANTED. A listed file must itself carry the same boundary
+# declaration this checker already demands of projection directories. If the declaration is
+# missing the file FAILS — louder than before, because a silent exemption is worse than a
+# violation. This is deliberately per-file rather than per-directory: a directory-wide pass
+# would let a genuinely authority-importing document hide beside a legitimate audit.
+EXTERNAL_MAPPING_AUDIT_PATHS = {
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/30_ROSETTA_VNEXT_REFINEMENT_2026_07_31.md"),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/31_CELL_SOUL4_TO_GEN7_2026_07_31.md"),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/32_PACK_SOUL4_v0.md"),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/32_PACK_ECO7_CANDIDATE_2026_07_31.md"),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/33_LIVE_DRIFT_RECONCILIATION_v0.md"),
+    Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/34_COUNTER_ROSETTA_LIBRARY_v0.md"),
+}
+
+# The exact phrases a listed file must carry to keep its exemption. Same three the
+# projection-directory boundary already requires, so there is one rule, not two.
+EXTERNAL_MAPPING_BOUNDARY_PHRASES = (
+    "runtime projection, not worldview doctrine",
+    "creates no semantic authority",
+    "source owners remain upstream",
+)
+
 LEGACY_ALIAS_EXCEPTIONS = {
     Path("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"),
     Path("08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D33_EGREGORES.md"),
@@ -217,7 +249,25 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
     if not path.is_file():
         return [f"missing scoped file: {path.relative_to(ROOT)}"]
     rel = path.relative_to(ROOT)
-    for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+    text = path.read_text(encoding="utf-8")
+
+    # An external-mapping audit keeps its exemption only while it carries the boundary.
+    # Checked ONCE per file, before any line is scanned, so a file that has quietly lost
+    # its declaration fails immediately rather than scanning clean on an exemption it no
+    # longer earns.
+    external_mapping_audit = False
+    if rel in EXTERNAL_MAPPING_AUDIT_PATHS:
+        missing = [p for p in EXTERNAL_MAPPING_BOUNDARY_PHRASES if p not in text]
+        if missing:
+            errors.append(
+                f"{rel}: listed as an external-mapping audit but its boundary declaration is "
+                f"incomplete — missing {missing!r}. Either restore the declaration verbatim or "
+                f"remove the file from EXTERNAL_MAPPING_AUDIT_PATHS and strip the external names."
+            )
+        else:
+            external_mapping_audit = True
+
+    for line_no, line in enumerate(text.splitlines(), 1):
         match = FORBIDDEN.search(line)
         historical_source_record = (
             rel in HISTORICAL_LINEAGE_CARD_PATHS
@@ -244,6 +294,7 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
             historical_source_record
             or control_projection_name
             or control_projection_reference
+            or external_mapping_audit
         ):
             errors.append(
                 f"{path.relative_to(ROOT)}:{line_no}: forbidden authority token {match.group(0)!r}"

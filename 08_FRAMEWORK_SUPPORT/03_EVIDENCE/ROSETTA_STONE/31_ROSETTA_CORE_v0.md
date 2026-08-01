@@ -178,4 +178,4 @@ criterion for any outward expansion is: *does the new pack add a translation
 that was previously UNMAPPED or KILLED, and does it carry its own kill
 criterion?*
 
-`Co-Authored-By: Mavis <Mavis@skyzai.org>`
+`Co-Authored-By: <the agent that drafted the cell>`

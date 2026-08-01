@@ -16,6 +16,17 @@ depends:
   - "10_CELL_AUDIT_SCHEMA_2026_04_25.md (the cell schema)"
 ---
 
+
+> **External-mapping boundary.** This document names product, venture and runtime systems
+> outside Emergentism. It names them as **data under audit**, never as premises.
+>
+> - Every such name here is a runtime projection, not worldview doctrine.
+> - Quoting one creates no semantic authority inside this corpus.
+> - The source owners remain upstream and are unaffected by anything concluded here.
+>
+> Where this document and an external system disagree, neither governs the other. Removing
+> this block removes the file's exemption in `09_TOOLS/01_SCRIPTS/check_emergentism_purity.py`
+> and the gate fails closed.
 # Counter-Rosetta Library v0 — the strongest rivals of the seven-row projection
 
 > A translation system that has not been compared to its strongest rivals
