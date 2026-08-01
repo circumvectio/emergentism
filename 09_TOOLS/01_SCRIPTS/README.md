@@ -58,6 +58,26 @@ Current repository validators and narrowly scoped support scripts.
   closed or that world contact occurred. Its state digest is bound to a dated
   snapshot receipt; an already-committed receipt must match both the worktree
   and its first-parent bytes, so a rebaseline requires a new receipt path.
+- `check_active_receipt_citations.py` ratchets target identity across a fixed
+  set of active source owners and the citation-scannable current/provisional
+  public text-dependency closure. It binds typed locators and exact
+  receipt/packet filename tokens,
+  treats all 97 physically reused prefixes as unsafe bare, and rejects new
+  unregistered active owners. Generated FILE/FOLDER inventories, compiler
+  fixtures, and vendored public libraries are explicit non-citation classes;
+  current lane indexes, modules, manifests, workers, and service-worker
+  precache dependencies remain in scope. Default mode is read-only. An
+  adjudicated rebaseline is explicit:
+
+  ```sh
+  python3 09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py --write
+  python3 09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py
+  ```
+
+  The generated `00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json` binds its
+  dated custody through the registry's own `custody.receipt_ref`. A pass proves
+  local target identity in the declared active scope, not receipt truth,
+  evidence strength, historical renumbering, publication, or deployment.
 - `claim_policy.py` — shared positive-assertion rules.
 - `check_node_product_ranking.py` — KSC-02 regression gate: the active corpus
   and active Managed Agents projection may not restore the retired product as

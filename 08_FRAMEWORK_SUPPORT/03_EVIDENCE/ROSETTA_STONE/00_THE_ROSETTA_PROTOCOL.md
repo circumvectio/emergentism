@@ -7,11 +7,11 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[S/I] active translation protocol · cites settled rulings"
   canonical_phrase: "The Rosetta Protocol — Be the Stone, Not the Decree"
-status: "ACTIVE [S/I] — adopted by Yves R. Burri and recorded in receipt 127; bounded by the Settled Canon Registry."
+status: "ACTIVE [S/I] — adopted by Yves R. Burri and recorded in `127_TRANSMISSION_DOCTRINE_K2_2026_07_13.md`; bounded by the Settled Canon Registry."
 date: 2026-07-13
 depends:
   - "00_THE_MASTER_ROSETTA.md (the table this doc re-purposes)"
-  - "00_META/00_SETTLED_CANON_REGISTRY.md (the Rosetta lens/kill-fired row, receipt 126)"
+  - "00_META/00_SETTLED_CANON_REGISTRY.md (the Rosetta lens/kill-fired row, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`)"
   - "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md"
 ---
 
@@ -29,7 +29,7 @@ The historical Rosetta Stone records the Memphis Decree of 196 BC — a proclama
 
 ## 1 · What the audit settled about our Rosetta (signed — do not re-litigate)
 
-Per the registry row and receipt 126, the seven-row alignment is a **cross-domain lens, honest as such — not a discovered universal.** Its stated kill criterion **fired** (Mesoamerican, Buddhist, Daoist, and Tahitian systems do not fit; the count "7" is a conceded design choice; the narrowing to polarity-encoding traditions *is* the falsification). This protocol builds only on the surviving translation function.
+Per the registry row and `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, the seven-row alignment is a **cross-domain lens, honest as such — not a discovered universal.** Its stated kill criterion **fired** (Mesoamerican, Buddhist, Daoist, and Tahitian systems do not fit; the count "7" is a conceded design choice; the narrowing to polarity-encoding traditions *is* the falsification). This protocol builds only on the surviving translation function.
 
 What survives is precisely what the Memphis stone had: **parallel registers of one structure, entered from whichever column the reader already reads.** The audits' own convergent verdict on the whole framework — *"it does not unify the sciences by derivation; it translates between them"* — makes the Rosetta not a damaged exhibit but the framework's **central instrument**.
 

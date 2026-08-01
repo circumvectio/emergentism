@@ -218,7 +218,7 @@ A quick falsifier shows why. If ordinary multiplication were extended with
 Therefore the retired infix form cannot be cited as algebraic proof, as a definition of
 the reciprocal chart, or as evidence for the finite-node model.
 
-**Sharper than the falsifier, machine-checked 2026-07-29 (r182).** The
+**Sharper than the falsifier, machine-checked 2026-07-29 (`182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md`).** The
 associativity machinery is over-kill: premise (i) `0·w = 1` alone collapses any
 nontrivial ring, because `0·w = 0` holds in every ring, so `0·w = 1` forces
 `1 = 0`. The "associativity" name is now historical — the ring is dead on

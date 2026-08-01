@@ -192,7 +192,7 @@ If the node factors are not normalized, the bound `P_node≤1` does not apply.
 **The product is retired as a ranking.** The former working model
 `C×(Φ̂₄,V₄):=Φ̂₄V₄`, publicly compressed `ΦV`, stays readable as the historical
 name of the same AND-class conjunction — its zero-factor, binding-constraint and
-equator content is model-agnostic and identical under `min` (receipt 108) — but
+equator content is model-agnostic and identical under `min` (`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`) — but
 it may no longer be used to order, score, or compare nodes. This removes a
 licence and grants none: `min` remains one selected AND-class member among
 several, `[I]` as a model and `[C]` as a universal fit, and no aggregator is

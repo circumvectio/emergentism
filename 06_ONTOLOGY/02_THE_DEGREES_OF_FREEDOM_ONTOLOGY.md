@@ -78,7 +78,7 @@ The historical proposal compared the plenitude filter with quantum alternatives.
 
 **3.4 Two hard fences.**
 - **FORBIDDEN:** "Emergentism solves the measurement problem." It does not. It offers an interpretation-neutral record-emergence reframe; Everett remains one optional interpretation, not a forced conclusion.
-- **DEAD FORM — do not revive:** "`φ·ν=1` predicts / is the Born rule." This was a **false lemma, already audited and retracted** (proof-layer audit, receipt 109; the μ-limit formula conflated a pointwise coordinate identity with a normalization integral; conjugate ≠ inverse). No probability measure follows from §2; Born weights remain independent of the filter.
+- **DEAD FORM — do not revive:** "`φ·ν=1` predicts / is the Born rule." This was a **false lemma, already audited and retracted** (proof-layer audit, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`; the μ-limit formula conflated a pointwise coordinate identity with a normalization integral; conjugate ≠ inverse). No probability measure follows from §2; Born weights remain independent of the filter.
 
 ## 4 · The pure/application cut line
 

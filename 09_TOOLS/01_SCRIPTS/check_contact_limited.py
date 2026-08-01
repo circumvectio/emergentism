@@ -1845,7 +1845,9 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
     if w3.get("requires_source_reconciliation") is not True:
         errors.append("w3_guard must require source reconciliation")
     if w3.get("receipt_ref") != str(W3_RECEIPT):
-        errors.append("w3_guard must retain the Receipt 184 ruling path")
+        errors.append(
+            "w3_guard must retain the Receipt 184 (`184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md`) ruling path"
+        )
     receipt_ref(root, w3.get("receipt_ref"), "w3_guard.receipt_ref", errors)
     w3_evidence = require_list(w3.get("evidence"), "w3_guard.evidence", errors)
     for index, evidence in enumerate(w3_evidence):

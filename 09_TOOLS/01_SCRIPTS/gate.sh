@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # gate.sh — THE GATE. Runs every corpus checker and fails loudly.
 #
-# WHY THIS EXISTS. r177 recorded HOLE 0: "nothing invokes them, there is no gate."
+# WHY THIS EXISTS. r177 (`177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`)
+# recorded HOLE 0: "nothing invokes them, there is no gate."
 # The corpus had five validators and NOTHING RAN THEM. On 2026-07-29 the corpus map
 # confirmed it mechanically — no CI, and a pre-commit hook that was 61 lines of
 # .DS_Store cleanup running no checker. A tier could drift between commits and no
@@ -30,7 +31,7 @@ if [[ "${1:-}" == "--install-hook" ]]; then
   if [[ -f "$HOOK" ]] && ! grep -q "gate.sh" "$HOOK"; then
     cp "$HOOK" "$HOOK.pre-gate.bak"
     # chain: keep the existing cleanup hook, append the gate
-    printf '\n# --- appended 2026-07-29: the gate (r183) ---\nbash "%s" || exit 1\n' \
+    printf '\n# --- appended 2026-07-29: the gate (r183, `183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`) ---\nbash "%s" || exit 1\n' \
       "$ROOT/09_TOOLS/01_SCRIPTS/gate.sh" >> "$HOOK"
     echo "gate chained onto the existing pre-commit hook (backup: $HOOK.pre-gate.bak)"
   else
@@ -48,6 +49,7 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_generative_base.py"
   "09_TOOLS/01_SCRIPTS/check_established.py"
   "09_TOOLS/01_SCRIPTS/check_receipt_citations.py"
+  "09_TOOLS/01_SCRIPTS/check_active_receipt_citations.py"
   "09_TOOLS/01_SCRIPTS/check_work_in_progress.py"
   "09_TOOLS/01_SCRIPTS/check_record_counters.py"
   "09_TOOLS/01_SCRIPTS/check_review_bundle.py"

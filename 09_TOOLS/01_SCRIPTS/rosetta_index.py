@@ -287,7 +287,7 @@ def render_json(entries: list[RosettaEntry], missing: list[str]) -> str:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--tier-a", action="store_true", help="scan packet-159 Tier A targets")
+    parser.add_argument("--tier-a", action="store_true", help="scan 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md Tier A targets")
     parser.add_argument(
         "--paths",
         nargs="*",

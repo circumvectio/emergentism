@@ -94,7 +94,7 @@ is pre-articulate and D6 post-articulate.
 
 ## 4 · The one well-formed part `[C]`
 
-By doc 48 §5 as ruled by HR-1 (owner, 2026-07-29; Receipt 179), a crossing is a
+By doc 48 §5 as ruled by HR-1 (owner, 2026-07-29; `179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md`), a crossing is a
 candidate `μ` only if the higher description is **not formally reducible** to
 the frozen lower one. A gained degree of freedom is no longer the criterion —
 type-D was retired for exactly this purpose — so “dimensions of freedom emerge

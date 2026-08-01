@@ -21,7 +21,7 @@ rosetta:
 
 # PD_07: THE FERMI PARADOX (THE BIFURCATION FILTER)
 
-> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 6) ·
+> **[金] SEAM** · broke: 2026-07-12 · `114_SEVEN_CASTE_CORPUS_AUDIT.md` (seven-caste audit, Seam 6) ·
 > crack: L3 Vaiśya (audit) found this file has **no falsifier section** — the
 > only PD in the suite missing one. Both silence and detection are compatible
 > with the claim, making it near-unfalsifiable: the closest thing to a CTMU move
@@ -33,14 +33,14 @@ rosetta:
 > not a paradox dissolution. If it stays in the suite, it must gain a falsifier
 > section; otherwise it should be reclassified out of the dissolution series
 > entirely.
-> · credit: L3 Vaiśya (audit, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+> · credit: L3 Vaiśya (audit, `114_SEVEN_CASTE_CORPUS_AUDIT.md`) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
 >
 > **Status: "DISSOLUTION" RETIRED.** This document is a `[C]` conjectural SETI
 > hypothesis (the bifurcation filter), not a paradox dissolution. It is retained
 > for provenance (K3).
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`
-**Evidence Tier:** ~~`[I]`~~ `[C]` (Conjectural SETI hypothesis — reclassified per receipt 114 Seam 6)
+**Evidence Tier:** ~~`[I]`~~ `[C]` (Conjectural SETI hypothesis — reclassified per `114_SEVEN_CASTE_CORPUS_AUDIT.md` Seam 6)
 **Canonical Number:** PD_07 (see [PD_00_INDEX](PD_00_INDEX.md) for the definitive numbering table)
 
 > **Evidence Tier: [I] Interpretive.** The reframe presented here is a coherent reading within the EFR framework. It is not established independently of the framework's axioms. See [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).

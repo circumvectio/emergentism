@@ -34,7 +34,7 @@ nature.
 > being mathematical. Necessity *of truth* is a different predicate and is
 > untouched — `W0-CROWN`'s *necessary algebra* is **de dicto**.
 
-**Adopted 2026-07-29 by owner ruling** (receipt 176), on the reasoning in
+**Adopted 2026-07-29 by owner ruling** (`176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md`), on the reasoning in
 [`46_THE_ADMISSIBILITY_OF_NOTHING.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md).
 
 `R0` is **prior to the five and different in type**. The five are *practice*
@@ -66,7 +66,7 @@ refusal and must be withdrawn openly, with a dated receipt.
 > false FORCED stratum but wrote its replacement relations with opaque Titan
 > glyphs as operands. `KSC-04` makes that syntax inadmissible. The active base
 > below therefore uses a separately named algebra witness. The historical
-> ruling and its error remain in receipts 174–176 and parent commit `b7e0d00d`;
+> ruling and its error remain in `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`, `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`, and `176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` and parent commit `b7e0d00d`;
 > they do not control the current type signature.
 
 Presupposed, base and emergent must never be fused:

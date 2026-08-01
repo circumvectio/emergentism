@@ -15,7 +15,7 @@ parents:
 # The Boundary Crossings and the μ-criterion
 
 > **Terminology hazard, first.** The phrase *"μ-limit"* carries a killed lemma:
-> receipt 109 retracted a μ-limit formula that "conflated a pointwise coordinate
+> `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md` retracted a μ-limit formula that "conflated a pointwise coordinate
 > identity with a normalization integral." This document says **boundary
 > crossing** and reserves `μ` for what §5 licenses. Cite `10_EFR_MU_LIMIT_FORMULA.md`
 > only for its own scoped content.
@@ -127,7 +127,7 @@ along, and it remains the instrument for them.
 
 ## 5 · The μ-criterion `[S]`
 
-> **RULING — HR-1, Option C. Owner, 2026-07-29 (receipt 179).** **Type-D is
+> **RULING — HR-1, Option C. Owner, 2026-07-29 (`179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md`).** **Type-D is
 > retired as the μ-criterion; reducibility is restored.** Two findings the same
 > day forced it: the reclassification workflow found §4's `dim_ℝ` witness and
 > §5.2's "genuinely larger" witness **disagree over finite carriers**; and an
@@ -215,7 +215,7 @@ So on `ℂP¹` there is no distinction to draw:
 `κ = 1/R → 0`. A sector of huge radius is *locally* indistinguishable from a
 segment. The owner's phrasing captures this exactly.
 
-**And it subsumes a result already in canon.** Receipt 175 established that
+**And it subsumes a result already in canon.** `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` established that
 `ℝ ∪ {∞}` is a great circle on `Ĉ`. That is the circline theorem's special
 case — the meridian is simply the line-through-`∞` that is additionally
 `ι`-invariant. The geometry and the algebra were describing the same object.

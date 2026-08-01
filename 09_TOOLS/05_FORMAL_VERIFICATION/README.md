@@ -3,7 +3,8 @@
 `EmergentismCheck.lean` submits the corpus's analytic claims to **Lean 4 +
 mathlib** — an oracle outside the corpus that can return *no*.
 
-Receipt 173 established that the corpus had **never** done this: 155 receipts,
+Receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) established
+that the corpus had **never** done this: 155 receipts,
 zero outcome receipts from any party outside itself. This is the first.
 
 ## Result, 2026-07-29
@@ -61,7 +62,8 @@ cd emergentism_check && lake build
 ## The honest limit
 
 A proof assistant is **checkability** contact, not **empirical** contact. It
-cannot raise `V` in the sense receipt 173 means. What it does is narrower and
+cannot raise `V` in the sense receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`)
+means. What it does is narrower and
 still worth having: it converts these statements from *asserted by the corpus*
 to *verified by an oracle the corpus does not control*.
 

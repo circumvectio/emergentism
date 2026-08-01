@@ -18,7 +18,7 @@ rosetta:
 
 ## 0. Axiomatic Guard
 
-This is the **last major geographic gap** in the Rosetta's cross-cultural sweep. The OQ-CC-3 commitment (packet 189 §6) required explicit examination of East Asian, Sub-Saharan African, Indigenous American, and Polynesian traditions before "universal" could be claimed.
+This is the **last major geographic gap** in the Rosetta's cross-cultural sweep. The OQ-CC-3 commitment (`189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25.md` §6) required explicit examination of East Asian, Sub-Saharan African, Indigenous American, and Polynesian traditions before "universal" could be claimed.
 
 **Status of that commitment after this document:**
 - East Asian: Swept in [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) (Daoist, Buddhist, Confucian)

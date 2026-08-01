@@ -35,7 +35,7 @@ Suda's work… we see it not as a better but as the only acceptable model."*
 
 Four separable claims. Two are **granted**, one is **inverted**, and the
 uniqueness claim was initially **refused**, then **ruled by the owner and
-executed** — see §7 as amended by receipt 175.
+executed** — see §7 as amended by `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`.
 
 ## 2 · Granted — `1` is genuinely the middle `[A]`
 
@@ -174,7 +174,7 @@ distinction, and it survives intact.
 
 ## 7 · Ruled — sphere selection adopted; the objection discharged `[S]`
 
-> **AMENDED 2026-07-29 and restated 2026-07-31 (receipts 175 and 193).** The
+> **AMENDED 2026-07-29 and restated 2026-07-31 (`175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` and `193_FIVE_RULINGS_SIGNED_2026_07_31.md`).** The
 > owner selected the sphere after the objection below was recorded; the later
 > ruling explicitly replaces *primacy* with **selection**. This section is
 > retained as the reasoning that was weighed, and it changed in the ruling's
@@ -242,7 +242,7 @@ The honest maximal form:
 | the unit is **unique** (group identity); its *existence* is presupposed, not forced | `[A]` | exhibit a group with two identities |
 | `1_N` is the positive fixed point of `ι_P`, not an average of differently typed endpoints | `[A]` | construct a declared common carrier and mean satisfying the claimed role without coercion |
 | `ℕ⁺ ⊊ ℝ₊`; unit-addition does not generate the interior | `[A]` | reach `√2` by adding ones |
-| sphere selection — ruled and executed (receipts 175 and 193) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ`, or another chart is selected instead |
+| sphere selection — ruled and executed (`175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md` and `193_FIVE_RULINGS_SIGNED_2026_07_31.md`) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ`, or another chart is selected instead |
 | `ℝ ∪ {∞_P}` is the `ι_P`-invariant meridian carrying both fixed points | `[A]` | exhibit a real `x` with `1/x` non-real |
 | arithmetic is chart-local in the selected sphere construction | `[A]` | define a global field structure on `Ĉ` |
 | "no other model acceptable" is declared policy, not theorem | `[S]` | overturn Möbius 3-transitivity |

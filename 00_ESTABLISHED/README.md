@@ -14,11 +14,11 @@ owner: "No owner. Every entry points at its owner. This folder may never be cite
 
 ## Why it exists
 
-The corpus separates claims by **evidence tier** (`[A]`…`[D]`) and, since r172, by
+The corpus separates claims by **evidence tier** (`[A]`…`[D]`) and, since `172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md`, by
 **validation status** on a second axis. Neither answers the question a stranger
 actually asks: *what here survives a check by something that does not believe you?*
 
-Receipt 173 measured the gap — **155 receipts, zero outcome receipts from outside**.
+`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md` measured the gap — **155 receipts, zero outcome receipts from outside**.
 This folder is the honest answer to that question, and it is deliberately short.
 
 ## The admission standard
@@ -46,12 +46,12 @@ python3 09_TOOLS/01_SCRIPTS/check_established.py
 Exits non-zero if any listed entry stops holding — **and exits non-zero when it
 cannot verify**, rather than passing silently.
 
-> **What that command does and does not do `[B]` — corrected 2026-07-29, r183.**
+> **What that command does and does not do `[B]` — corrected 2026-07-29, `183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`.**
 > The **base half is genuinely re-run**: `G1`–`G10` are recomputed by exhaustion on
 > every invocation. The **Lean half is verified structurally only** — project files
 > present, toolchain on `PATH`, theorem count, no `sorry`. **The proofs are not
 > re-run**, because a full `lake build` must fetch mathlib and cannot live inside a
-> validator. They *were* run once; receipt 182 records the build output and the
+> validator. They *were* run once; `182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md` records the build output and the
 > axiom traces.
 >
 > Until 2026-07-29 this script did **less** than that and still reported PASS: it

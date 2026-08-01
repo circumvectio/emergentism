@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 """D6 ≡ D0 standing fence — fails the build if the literal relation re-asserts.
 
-Receipt 189 (2026-07-30) identified the recurrence. 73 literal asserts live across
+Receipt 189 (`189_D6_D0_GENERATOR_HUNT_2026_07_30.md`; 2026-07-30) identified the recurrence. 73 literal asserts live across
 the corpus, 71 of them in 11_UPLINK/, and the relation is structurally required by
 four framework concepts (the simulation cycle, the dimensional ladder's boundary,
 the paper scaffold, the audit stack). Repairs at the occurrence level do not reach
 the generator. This fence addresses the recurrence at the live-surface level.
 
-The default stance (Path B from receipt 189) is the corpus's stricter reading:
+The default stance (Path B from receipt 189, `189_D6_D0_GENERATOR_HUNT_2026_07_30.md`)
+is the corpus's stricter reading:
 - LITERAL forms of D6 ≡ D0 (any of `≡ = ↔ ≅`, with or without spaces, in either
   direction) are FORBIDDEN on every live surface.
 - TILDE forms of D6 ~ D0 are PERMITTED, marked `[I]` for the boundary-role reading.
 
 A single constant at the top of the file — `CANONICAL_OWNER_FILE` — names the one
 file the owner may ratify as the canonical statement of the relation (Path A in
-receipt 189). The literal form is then permitted ONLY in that file and only inside
+receipt 189 (`189_D6_D0_GENERATOR_HUNT_2026_07_30.md`). The literal form is then
+permitted ONLY in that file and only inside
 the canonical quoted statement. By default the file is empty, so the literal form
 is forbidden everywhere.
 

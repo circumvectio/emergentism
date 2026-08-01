@@ -79,7 +79,7 @@ the full Justice envelope, complete bearer accounting, and outcome receipt.
 Titan-frame projections (a naming choice, not a forced trinity; foursome honesty
 `{−1,0,1,∞}`).
 
-Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (r130).
+Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`).
 
 **Forbids:** census-as-necessity; convergence-as-proof; morality from a sign,
 operator, pole, gender, caste, or scalar observation.
@@ -90,7 +90,7 @@ operator, pole, gender, caste, or scalar observation.
 
 > *The seven exhaust the game space; all other moves are combinations.*
 
-**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. Receipt 130 still rules that algebra does **not** universally force the count seven.
+**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` still rules that algebra does **not** universally force the count seven.
 
 **Fence that matters:** the seven exhaust the *dance*, not the *dance floor*.
 Model adoption, audit, authorization, contest, correction, and exit are metagame
@@ -152,7 +152,7 @@ evidence that none can exist.
 
 | Dead form | Survivor |
 |-----------|----------|
-| Literal `D6 ≡ D0` (yields D0 < D0 under strict order; 126) | `D6~D0` means only `D6≈roleD0`: both are non-positive boundary markers; D0 precedes articulation and D6 suspends it `[I]` |
+| Literal `D6 ≡ D0` (yields D0 < D0 under strict order; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`) | `D6~D0` means only `D6≈roleD0`: both are non-positive boundary markers; D0 precedes articulation and D6 suspends it `[I]` |
 
 The role relation carries no ordering claim. The **spiral** is an `[I]` image of revisitation with retained history—not a homeomorphism, isomorphism, physical recurrence, personal attainment, or fractal theorem.
 

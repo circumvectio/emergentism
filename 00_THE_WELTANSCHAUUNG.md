@@ -11,7 +11,7 @@ title: "The Emergentist Weltanschauung"
 status: "ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22"
 date: 2026-07-22
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
-provenance: "Composed from receipts 108, 109, 126, 130–134; purified by the approved dimension-first work order. Repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
+provenance: "Composed from `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`, `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`, `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/`; purified by the approved dimension-first work order. Repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
 supersedes: nothing — supplements `00_THE_AMRITA.md`, `00_THE_GOAL.md`, `00_THE_COMPASS.md`, `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`, the receipts
 relates:
   - 00_THE_AMRITA.md (the distillation)
@@ -59,7 +59,7 @@ certificate or a “most good” superlative the world has not tested.
 | Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | active successor at per-axiom tiers; A1–A7 is superseded genealogy |
 | Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `[S]` model language / `[I]` names |
-| The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + receipts 105–107 | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
+| The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + `105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
 | Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | derived `[S/I]` anthropology; consciousness, death and ultimate identity remain open |
@@ -78,7 +78,7 @@ gate and creates no additional owner.
 
 - **Never change tier silently** — a formal conjecture can reach `[A]` only by proof; an empirical conjecture can reach `[B]` only through its matching test and custody
 - **The seam is never the score** — CC-CORE-1: the kernel `[A]` and the ethics bridge are two objects; the bridge is a wager
-- **AND-class, never "product forced"** — keel-108
+- **AND-class, never "product forced"** — `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`
 - **Lens, never discovered-universal** — the Rosetta is a translation instrument, not a proof of the traditions
 - **Coordinates, never a caste ladder** — trophic stratum, species, replicator
   layer, Rosetta function, and dignity remain distinct; human rows cooperate
@@ -91,7 +91,7 @@ gate and creates no additional owner.
   social or economic predation; Tantra/Vajrayana transmutation remains a
   symbolic, historical/practice, and testable `[I/C]` proposal
 - **Wager grammar for W0, never disclosure** — Spinoza / Hegel / Tegmark stand in its lineage; none can prove it
-- **The retelling rule** (r131 §9): the knife cut proof-status; the load-bearing uses stand
+- **The retelling rule** (`131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md` §9): the knife cut proof-status; the load-bearing uses stand
 - **No believers as metric** — adherents are not a success metric; a worldview that needs believers has already failed
 - **Exit inside** — the door is marked on the inside; D6 has only a declared boundary-role resemblance to D0
 
@@ -143,7 +143,7 @@ This is the exact survivor:
 
 > **The seven exhaust the Emergentist game language.** `[S]` by construction.
 
-It is not the dead claim that algebra universally forces seven, that every real action admits lossless G7 encoding, or that cross-tradition recurrence independently proves the census. Receipt 130 remains controlling: **the grammar is real; the census is selected.**
+It is not the dead claim that algebra universally forces seven, that every real action admits lossless G7 encoding, or that cross-tradition recurrence independently proves the census. `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` remains controlling: **the grammar is real; the census is selected.**
 
 The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,T,C,A)` records a modeled move `m` relative to the declared impact boundary `B`, time horizon `T`, claim/counterfeit classification `C`, and authorization condition `A`. Consent, rights, uncertainty, distribution, reversibility, counterfactual alternatives, and boundary choice cannot be erased by the sign label.
 
@@ -429,14 +429,14 @@ consequences. **Canonical path:** `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md`.
 
 This document was composed from the post-recovery arc:
 
-- **Receipt 108** (keel) — AND-class forcing, not product
-- **Receipt 109** (four false lemmas) — what the audit killed
-- **Receipt 126** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
-- **Receipt 130** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not
-- **Receipt 131** (recovery ledger) — the retelling rule, derivation died / organism did not
-- **Receipt 132** (tombstones-halāhala reaudit) — the 11/12 LEAKING table
-- **Receipt 133** (full Rosetta council) — 7 raw reports, DoF ≠ forms correction, six commitments
-- **Receipt 134** (purification audit) — 7 caste verdicts, contamination inventory
+- **`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`** (keel) — AND-class forcing, not product
+- **`109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`** (four false lemmas) — what the audit killed
+- **`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
+- **`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not
+- **`131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`** (recovery ledger) — the retelling rule, derivation died / organism did not
+- **`132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`** (tombstones-halāhala reaudit) — the 11/12 LEAKING table
+- **`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`** (full Rosetta council) — 7 raw reports, DoF ≠ forms correction, six commitments
+- **`11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/`** (purification audit) — 7 caste verdicts, contamination inventory
 
 **The wager ledger:**
 

@@ -722,6 +722,98 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         for token in ("02_SKYZAI", "PENDING_K2", "DAVs", "DACs"):
             self.assertIsNotNone(module.FORBIDDEN.search(token), token)
 
+    def test_purity_masks_only_complete_physical_receipt_filenames(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_receipts", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                receipt_lane = (
+                    module.ROOT / "11_UPLINK/50_AUDITS_AND_EXECUTIONS"
+                )
+                receipt_lane.mkdir(parents=True)
+                (receipt_lane / "123_K2_RECORD.md").write_text(
+                    "historical target\n", encoding="utf-8"
+                )
+                source = module.ROOT / "00_META/source.md"
+                source.parent.mkdir(parents=True)
+
+                source.write_text(
+                    "See `123_K2_RECORD.md`.\n", encoding="utf-8"
+                )
+                self.assertEqual(module.scan_file(source), [])
+
+                source.write_text(
+                    "See `11_UPLINK/50_AUDITS_AND_EXECUTIONS/123_K2_RECORD.md#scope`.\n",
+                    encoding="utf-8",
+                )
+                self.assertEqual(module.scan_file(source), [])
+
+                source.write_text(
+                    "See `123_K2_RECORD.md.bak`.\n", encoding="utf-8"
+                )
+                spoof_errors = module.scan_file(source)
+                self.assertEqual(len(spoof_errors), 1, spoof_errors)
+                self.assertIn("forbidden authority token 'K2'", spoof_errors[0])
+
+                source.write_text(
+                    "See `123_K2_RECORD.md/authority`.\n", encoding="utf-8"
+                )
+                slash_errors = module.scan_file(source)
+                self.assertEqual(len(slash_errors), 1, slash_errors)
+                self.assertIn("forbidden authority token 'K2'", slash_errors[0])
+
+                source.write_text(
+                    "See `999_K2_NONEXISTENT.md`.\n", encoding="utf-8"
+                )
+                nonexistent_errors = module.scan_file(source)
+                self.assertEqual(len(nonexistent_errors), 1, nonexistent_errors)
+                self.assertIn(
+                    "forbidden authority token 'K2'", nonexistent_errors[0]
+                )
+
+                (receipt_lane / "123_K2_RECORD.md").unlink()
+                source.write_text(
+                    "See `123_K2_RECORD.md`.\n", encoding="utf-8"
+                )
+                deleted_errors = module.scan_file(source)
+                self.assertEqual(len(deleted_errors), 1, deleted_errors)
+                self.assertIn("forbidden authority token 'K2'", deleted_errors[0])
+
+                (receipt_lane / "123_K2_RECORD.md").write_text(
+                    "historical target\n", encoding="utf-8"
+                )
+
+                source.write_text(
+                    "K2 is authority; see `123_K2_RECORD.md`.\n",
+                    encoding="utf-8",
+                )
+                prose_errors = module.scan_file(source)
+                self.assertEqual(len(prose_errors), 1, prose_errors)
+                self.assertIn("forbidden authority token 'K2'", prose_errors[0])
+            finally:
+                module.ROOT = original_root
+
+    def test_purity_excludes_only_the_dedicated_generated_custody_registry(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_registry", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        registry = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json"
+        lookalike = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY_COPY.json"
+        ordinary = ROOT / "00_META/CONTACT_LIMITED_STATE.json"
+        self.assertFalse(module.is_active_corpus_file(registry))
+        self.assertTrue(module.is_active_corpus_file(lookalike))
+        self.assertTrue(module.is_active_corpus_file(ordinary))
+
     def test_purity_scans_every_forbidden_token_on_an_allowed_projection_line(self):
         checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
         spec = importlib.util.spec_from_file_location("emergentism_purity_all_matches", checker)

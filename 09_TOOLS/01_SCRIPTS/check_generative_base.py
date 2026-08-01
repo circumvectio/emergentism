@@ -171,7 +171,8 @@ def main() -> int:
     # --- G10: det and sign are INDEPENDENT obstructions ----------------------
     # n∘ι : x ↦ −1/x has det +1 (passes G9) and still is not a word, because it
     # leaves ℚ⁺. If this ever fails, G9 has been over-read as closing §5.2.
-    # r183: the previous version of this block evaluated TWO CONSTANT EXPRESSIONS
+    # r183 (`183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`): the
+    # previous version of this block evaluated TWO CONSTANT EXPRESSIONS
     # over literals and could never fire. It is replaced by a computed table.
     probes = [F(1), F(2), F(1, 2), F(3, 5), F(7), F(22, 7)]
     quad = {}
@@ -197,7 +198,8 @@ def main() -> int:
         failures.append("G10: 2x must FAIL G9 (det 2) and STAY in ℚ⁺")
 
     # --- G4: no word attains ∞ ------------------------------------------------
-    # r183: the manifest asserted this check and it DID NOT EXIST (grep 'G4' -> 0).
+    # r183 (`183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`): the
+    # manifest asserted this check and it DID NOT EXIST (grep 'G4' -> 0).
     # Every word is finite, so every value is a finite rational: bounded numerator
     # and denominator, and no float overflow.
     for x in list(seen)[:20000]:

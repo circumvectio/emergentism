@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 3 verified; Sprint 4 citation custody is next"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 4 verified; Sprint 5 public lifecycle is next"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -52,7 +52,7 @@ Finite residue still visible after that work:
 
 | ID | Current measured boundary | Required closure |
 |---|---|---|
-| `CITATION-COLLISIONS` | 97 receipt prefixes are physically reused across the full generated index and therefore all 97 are unsafe as bare citations; the older count of 91 is only a broad status-word heuristic, not target resolution | explicit collision registry and full-filename citation rule; never rename history merely to make a counter zero |
+| ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE.** All 97 physically reused prefixes remain unsafe as bare citations; active source owners, lane indexes, and citation-scannable current/provisional public dependencies now carry exact target custody. Historical/report-only bodies remain unchanged. | preserve `ACTIVE_RECEIPT_CITATION_REGISTRY.json`, its dated digest receipt, and the full-filename rule; never rename history merely to make a counter zero |
 | `PUBLIC-LIFECYCLE` | 398 artifacts are in the measured delivery universe: 384 classified and 14 unclassified; one clean-route alias collision and eight precedence overlaps remain explicit | every route classified current, provisional, frozen, withheld, or infrastructure by its owning generator/manifest |
 | `CLAIM-DISPOSITION` | the machine owner carries 17 W rows and 9 reopened research-question rows; the former 17-row count was W-only, not the complete investigation universe | each row resolved, narrowed, or explicitly typed contact-gated with owner, discriminator, and kill |
 | `OWNER-HELD-RESIDUE` | topology and frozen-public-document gates remain held; other old plan rows require a fresh audit | one dated rule per genuine residue; stale rows close with evidence rather than silence |
@@ -70,7 +70,7 @@ fall or be reclassified under a dated rule; they may not disappear silently.
 **Exit:** the full gate prints the exact scalar remainder and validates the
 state-bound identities, memberships, and exceptions every run.
 
-### Sprint 4 — citation collision custody
+### Sprint 4 — citation collision custody — VERIFIED 2026-08-01
 
 Generate an explicit registry of every reused receipt prefix and require
 ambiguous citations to use full filenames. Historical receipt filenames remain
@@ -78,6 +78,12 @@ unchanged. A collision may be intentional; ambiguity without a registry is not.
 
 **Exit:** every reused prefix has complete custody and no active bare citation
 can resolve to more than one file.
+
+**Outcome:** met for the declared active/current scope. The permanent checker
+binds both typed locators and exact filename/path tokens, discovers new active
+owners fail-closed, and keeps generated topology inventories, fixtures, vendor
+code, and report-only history as explicit scope classes. The dated result is
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md`.
 
 ### Sprint 5 — public lifecycle closure
 

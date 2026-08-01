@@ -1,6 +1,7 @@
 /-
   Machine-check of the Emergentism `[A]` claim set — docs 45–51.
-  Receipt 173 found the corpus had never submitted a claim to an oracle outside
+  Receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) found the
+  corpus had never submitted a claim to an oracle outside
   itself. This file is that submission. Lean 4 + mathlib.
 
   There is no `sorry` in this file. Anything not proved is listed in §7 as

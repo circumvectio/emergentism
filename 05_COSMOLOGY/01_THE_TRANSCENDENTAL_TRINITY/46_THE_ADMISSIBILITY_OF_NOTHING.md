@@ -195,7 +195,7 @@ Why this is stronger than the axiom form:
 - it is killable: if a sound argument establishes a necessary being, `R0` fails
   as a refusal and must be withdrawn openly.
 
-**ADOPTED 2026-07-29 by owner ruling (receipt 176).** `R0` was proposed here as
+**ADOPTED 2026-07-29 by owner ruling (`176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md`).** `R0` was proposed here as
 a candidate sixth refusal or a scholium to Refusal 5; the owner ruling seated it
 as neither. It is now the **foundational refusal in K-5**, *prior* to the five
 and different in type: the five are practice constraints on how the framework

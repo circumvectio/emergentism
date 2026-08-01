@@ -261,7 +261,7 @@
       "id": "DF-01",
       "status": "OWNER-REOPENED",
       "form": "unification by derivation",
-      "counterexample": "four structural breaks recorded in receipt 126 section 5",
+      "counterexample": "four structural breaks recorded in `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` section 5",
       "successor": "GP-11",
       "successor_kind": "narrowed_to_translation_grammar",
       "status_before_reopening": "FORMALLY-REFUTED",
@@ -331,7 +331,7 @@
       "id": "DF-08",
       "status": "OWNER-REOPENED",
       "form": "literal D6 identical to D0",
-      "counterexample": "loop-as-equation fails: D6 and D0 are not identical, and no order, homeomorphism or physical recurrence relates them — only a boundary-role resemblance survives (r126 A3-5)",
+      "counterexample": "loop-as-equation fails: D6 and D0 are not identical, and no order, homeomorphism or physical recurrence relates them — only a boundary-role resemblance survives (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` A3-5)",
       "successor": "W12",
       "successor_kind": "retyped_as_role_resemblance",
       "status_before_reopening": "FORMALLY-REFUTED",
@@ -394,7 +394,7 @@
       "counterexample": "ordinary numeric identities are operands",
       "successor": "KSC-04",
       "successor_kind": "retyped_as_opaque_frame",
-      "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174, with its weaker form live under KSC-04. r174's blanket application was over-broad by exactly one row; corrected 2026-07-29."
+      "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), with its weaker form live under KSC-04. r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s blanket application was over-broad by exactly one row; corrected 2026-07-29."
     },
     {
       "id": "DF-15",
@@ -450,7 +450,7 @@
       "id": "DF-20",
       "status": "OWNER-REOPENED",
       "form": "numeric coincidences as derivations",
-      "counterexample": "overlay is not derivation; the horn-torus and light-cone identification was killed by receipt 151",
+      "counterexample": "overlay is not derivation; the horn-torus and light-cone identification was killed by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md`",
       "successor": "RQ-08",
       "successor_kind": "prediction_bar",
       "status_before_reopening": "CATEGORY-ERROR",
@@ -581,7 +581,7 @@
   "owner_reopening": {
     "ruling": "Owner instruction 2026-07-29: unretire everything.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
-    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174's 'all 22' was over-broad by one row.",
+    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
     "what_it_does_not_do": "A ruling cannot delete a counterexample. Each row keeps the result that killed it; reopening means the question is live again, not that the refuted form is true."
   },
   "restored": [

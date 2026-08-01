@@ -33,7 +33,7 @@ parents:
 >
 > **Compression.** Freedoms, not Forms (E1); held in reciprocal balance (E2) around a real center (E3); filled by what is reachable under typed existence, up to the limits (E4); climbing by two motions (E5); dying at any zero (E6); living best at the middle when conditions hold (E7); refusing extraction by vow (E8); correcting in public (E9); ending with the door open (E10).
 >
-> **Council fence (receipt 133).** Degrees of freedom are not replacement substances for Platonic Forms. Stable forms are invariants, attractors, order parameters, or robust patterns **across** constrained DoF. Logical coherence does not imply actuality.
+> **Council fence (`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`).** Degrees of freedom are not replacement substances for Platonic Forms. Stable forms are invariants, attractors, order parameters, or robust patterns **across** constrained DoF. Logical coherence does not imply actuality.
 
 ---
 
@@ -65,7 +65,7 @@ Stable “forms” (patterns that hold) are what organize **across** those freed
 
 **Survivors if E1 falls:** E2–E3 as pure math; E8–E10 as practice without ontology story.
 
-**Maps from:** none directly in A1–A7 (new Plato repair). Companion: `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` (refine: that draft’s “Forms *are* DoF” line is **over-strong** per 133 — use this E1 wording).
+**Maps from:** none directly in A1–A7 (new Plato repair). Companion: `02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` (refine: that draft’s “Forms *are* DoF” line is **over-strong** per `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md` — use this E1 wording).
 
 ---
 
@@ -124,7 +124,7 @@ ADMITTED_M(S) ⟺ CONSISTENT_M(S)
                  ∧ BOUNDED_M(S)
 ```
 
-Configurations passing it exist **in that space as admitted possibilities**. Fewer are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. Each arrow needs independent warrant (receipt 133 typed-existence cascade). No density, typicality, probability, or world-occupancy ordering follows without a separately specified measure and dynamics; no strict subset relation to Tegmark's Mathematical Universe Hypothesis is asserted.
+Configurations passing it exist **in that space as admitted possibilities**. Fewer are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. Each arrow needs independent warrant (`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md` typed-existence cascade). No density, typicality, probability, or world-occupancy ordering follows without a separately specified measure and dynamics; no strict subset relation to Tegmark's Mathematical Universe Hypothesis is asserted.
 
 **Named debt:** “reachable-by-emergence” must be defined without circular reference to what already exists; constructor-theoretic discharge remains open; Born-rule / measurement translations stay debts, not solutions.
 
@@ -175,7 +175,7 @@ the wager ledger and supplies no axiom warrant.
 
 ### E6 · The AND-Law `[S]` boundary · zero-absorption `[A]` inside declared models · product interior `[C]`
 
-For a declared model in which every listed factor is necessary, usable potential reaches its zero boundary when **any one** necessary factor reaches zero. Product and minimum instantiate that boundary exactly; other aggregators require their own parameter and limit checks. The operational survivor is the **AND-class**, **not the product specifically** (keel-108). Manifold identity does **not** warrant a world-level node catastrophe (CC-CORE-1).
+For a declared model in which every listed factor is necessary, usable potential reaches its zero boundary when **any one** necessary factor reaches zero. Product and minimum instantiate that boundary exactly; other aggregators require their own parameter and limit checks. The operational survivor is the **AND-class**, **not the product specifically** (`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`). Manifold identity does **not** warrant a world-level node catastrophe (CC-CORE-1).
 
 **Forbids:** “must be multiplicative”; kernel-as-ethics-floor.
 
@@ -205,7 +205,7 @@ On the reciprocal chart, balance `φ = ν = 1` uniquely maximizes `B = sin θ` a
 
 ### E8 · The Vow `[I]` posit · Model-A support scoped `[S]`/`[A]`-in-game
 
-Non-extraction: do not raise yourself by draining what sustains you — judged with the sustaining boundary in view. **Chosen**, not derived from geometry (W3 / CC-CORE-1). Specified coupled models can show self-undermining extraction under their assumptions; geometry alone cannot close is→ought. Model A: `η_move=0` is dominant-strategy Nash under stated game assumptions only (126 A4-1). Not a universal Nash law (P6).
+Non-extraction: do not raise yourself by draining what sustains you — judged with the sustaining boundary in view. **Chosen**, not derived from geometry (W3 / CC-CORE-1). Specified coupled models can show self-undermining extraction under their assumptions; geometry alone cannot close is→ought. Model A: `η_move=0` is dominant-strategy Nash under stated game assumptions only (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` A4-1). Not a universal Nash law (P6).
 
 **Forbids:** deriving ought from is; scoping the vow only to convenient parties while claiming the full ethic.
 
@@ -233,7 +233,7 @@ Every load-bearing claim carries tier, upgrade path, kill criterion, and survivo
 
 ### E10 · The Exit `[I/S]`
 
-The map ends with *put the map down*. A holder may withdraw. The door is marked exit **on the inside**. A worldview that needs believers has already failed. Apophatic return is practice, not literal D6≡D0 identity (126). Posture IV (withdraw) is structuralized here.
+The map ends with *put the map down*. A holder may withdraw. The door is marked exit **on the inside**. A worldview that needs believers has already failed. Apophatic return is practice, not literal D6≡D0 identity (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`). Posture IV (withdraw) is structuralized here.
 
 **Forbids:** adherents as success metric; no-exit forms; map=Ground.
 
@@ -254,7 +254,7 @@ The map ends with *put the map down*. A holder may withdraw. The door is marked 
 | **A3** Scaffold | **E5 + E1** (partial) | Two motions + DoF stratum; strict force bijection / unification result **out**; modular W7 role-affinity wager remains outside the axioms; literal D6≡D0 **out**; apophatic return under E10 |
 | **A4** Boundary / η | **E8** (η) + four-move grammar under E1/E6 play | η vow; operators not re-axiomatized as census |
 | **A5** Egregore | *not in E-set* | Remains operational/conjectural in A5; not required for pure weltanschauung kernel |
-| **A6** Architecture / substrates | *not in E-set* | Three-substrates universal retracted (126); three-functions may live in ops docs only |
+| **A6** Architecture / substrates | *not in E-set* | Three-substrates universal retracted (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`); three-functions may live in ops docs only |
 | **A7** Correction | **E9** | Retained as core |
 | — | **E3** Finity/foursome | Made explicit (was Trinity ambient) |
 | — | **E4** Plenitude filter | New `[C]` keystone with typed existence |

@@ -383,7 +383,7 @@ operation or proof transfer from them.
 
 ### 6A.3 Suda's insights, with their chart declared `[A]` results / `[I]` reading
 
-Adopted per receipt 175. **All of the following are multiplicative-chart results
+Adopted per `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`. **All of the following are multiplicative-chart results
 on the positive ray `ℝ₊`**, and none of them is a D1-chart result:
 
 | # | Result | Status |
@@ -433,7 +433,7 @@ positive-ray theory is a proper sub-chart of D1, not a presentation of it. Any
 document citing `ρ`, `E`, `φ` or `u` at D1 without restricting to `ℝ₊` is
 over-reaching its chart.
 
-**Fences retained** (receipt 175, doc 42 §6): `0×∞=1` is never field arithmetic;
+**Fences retained** (`175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`, doc 42 §6): `0×∞=1` is never field arithmetic;
 `0/0` stays indeterminate; do not inherit `0* := lim 1/x`; Suda is credited for
 packaging and interpretation, never as proof-authority or originator; no physics,
 energy-ontology or genetic claims are imported.
@@ -510,7 +510,7 @@ family of triangles has two ways to stop being a triangle. Those geometric
 degenerations remain projective boundary cases, not Titan terms.
 
 It also settles what kind of crossing this is — but **not** by the reason first
-written here. This section is what surfaced `HR-1` (receipt 179), so its own close
+written here. This section is what surfaced `HR-1` (`179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md`), so its own close
 pre-dated the ruling it caused: it read the boundary as *no new freedom appearing*,
 and that criterion — type-D — was retired on 2026-07-29. The live reason counts no
 freedoms at all: **adjoining `∞` is an outward arrow, and an outward arrow carries no

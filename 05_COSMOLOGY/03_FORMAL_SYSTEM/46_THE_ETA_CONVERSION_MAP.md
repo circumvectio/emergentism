@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "46 — The η Conversion Map (three registers, one letter)"
 title: "The η Conversion Map — what converts between the three extraction registers, and what provably does not"
 date: 2026-07-22
-status: "[D] STAGED — closes the notation gap rated highest-priority repair 2026-05-04; recorded by Receipt 158"
+status: "[D] STAGED — closes the notation gap rated highest-priority repair 2026-05-04; recorded by `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md`"
 depends_on:
   - 40_THE_LOGARITHMIC_REALIGNMENT.md
   - 30_OPERATIONAL_DEFINITIONS.md
@@ -186,5 +186,5 @@ may wear, does not touch retired ambiguous aliases, and does not upgrade any stu
 is a translation table with refusals — the conversions in §2 are the only ones
 licensed, and §3 is the part to cite when someone equates the zeros.
 
-*Staged 2026-07-22 and recorded by Receipt 158. Every quoted source
+*Staged 2026-07-22 and recorded by `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md`. Every quoted source
 opened and verified this date.*

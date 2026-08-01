@@ -5,13 +5,13 @@
   "roadmap": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
   "baseline_rule": "Every baseline or lifecycle-classification change requires a new repo-relative dated receipt_ref; changing a count never changes the underlying truth.",
   "receipt_namespace": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md",
     "source_index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json",
     "source_checker": "09_TOOLS/01_SCRIPTS/check_receipt_citations.py",
     "target_universe": "Live-lane Markdown filenames with a 2-3 digit receipt prefix, excluding the 00_* index/readme convention.",
-    "target_files": 306,
-    "prefixed_markdown_including_00_convention": 312,
-    "unique_prefixes": 184,
+    "target_files": 307,
+    "prefixed_markdown_including_00_convention": 313,
+    "unique_prefixes": 185,
     "reused_prefixes": 97,
     "legacy_heuristic_dangerous_prefixes": 91,
     "bare_unsafe_reused_prefixes": 97,
@@ -19,14 +19,14 @@
     "identity_hash_contract": {
       "path_set_canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
       "duplicate_group_canonicalization": "SHA-256 over canonical UTF-8 JSON mapping each reused prefix to its lexicographically sorted repo-relative paths, with object keys sorted and separators ',' and ':'.",
-      "citable_targets_sha256": "669dc9d065c6cc8f918f20148a8ab8e994f920896b30d71103a231d89fdd28d5",
-      "prefixed_including_00_sha256": "eeefb23afa802ec0bac1edc4dfbd52b852c1462f4fa111f2a1992237fd602dd3",
+      "citable_targets_sha256": "2e114efc18a90c144cf543c4bfe48c516062f0a9090f8ed2511ba3a571867857",
+      "prefixed_including_00_sha256": "c4ec6f25d1cb3a4028103ec10179f729575ca8d784a94abfef4e4d718516735e",
       "duplicate_groups_sha256": "71db9e323bc9e890a71a3253d3ac1f61144ee560ffd1d1770e0e9b09be0d69e9"
     },
     "dangling_citations": 0
   },
   "public_lifecycle": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md",
     "universe_definition": "One artifact per deployable HTML file after .vercelignore, plus the withheld artifact registry; classification is exclusive and frozen means a matching noindex response-header rule.",
     "sources": [
       "12_PUBLIC_SITE/public_semantic_parity.json",
@@ -162,7 +162,7 @@
     ]
   },
   "claim_disposition": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md",
     "source": "00_META/claim_status/CLAIM_STATUS.yaml",
     "owner_rows_total": 26,
     "live_investigation_rows": 25,
@@ -253,7 +253,7 @@
     }
   },
   "owner_held": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "debts": [
       {
@@ -266,7 +266,7 @@
           "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md"
       },
       {
         "id": "OWNER_GATE_OPEN_TOPOLOGY",
@@ -278,12 +278,12 @@
           "08_FRAMEWORK_SUPPORT/00_META/README.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md"
       }
     ]
   },
   "world_contact": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "state": "OPEN",
     "accepted_evidence_records": 0,

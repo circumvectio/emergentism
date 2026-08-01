@@ -158,7 +158,7 @@ def build_sw():
     spine = safe_spine()
     withheld_routes = public_withheld_routes()
     version = content_version(spine)
-    sw = """// Emergentism PWA service worker — receipt 124. Precache the spine; SWR runtime; offline fallback.
+    sw = """// Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
 const CACHE = 'emergentism-__VERSION__';
 const SPINE = __SPINE__;
 const WITHHELD_ROUTES = new Set(__WITHHELD_ROUTES__);
@@ -231,7 +231,7 @@ def build_register():
     os.makedirs(js_dir, exist_ok=True)
     with open(os.path.join(js_dir, "pwa.js"), "w") as fh:
         fh.write(
-            "// PWA registration — receipt 124\n"
+            "// PWA registration — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md\n"
             "if ('serviceWorker' in navigator) {\n"
             "  window.addEventListener('load', function () {\n"
             "    navigator.serviceWorker.register('/sw.js').catch(function () {});\n"

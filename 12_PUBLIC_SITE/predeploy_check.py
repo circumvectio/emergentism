@@ -184,7 +184,9 @@ def check_orphans():
         os.path.normpath(os.path.join(BASE_DIR, "offline", "index.html")),
         # Custom 404: served by Vercel on miss, unlinked by design
         os.path.normpath(os.path.join(BASE_DIR, "404.html")),
-        # 2026-07-20 (receipt 146): legacy homepage snapshot, intentionally unlinked (K3)
+        # 2026-07-20 (receipt 146, `146_FOUNDER_RULING_EXECUTE_2026_07_20.md`):
+        # legacy homepage snapshot,
+        # intentionally unlinked (K3)
         os.path.normpath(os.path.join(BASE_DIR, "index_legacy_2026_07_19.html")),
         # /home/ is a retained legacy body behind the permanent /home/ -> / redirect.
         os.path.normpath(os.path.join(BASE_DIR, "home", "index.html")),

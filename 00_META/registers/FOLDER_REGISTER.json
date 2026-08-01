@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3418,
+      "tracked_file_count": 3422,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -259,7 +259,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 88,
+      "tracked_file_count": 89,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 164,
+      "tracked_file_count": 166,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 35,
+      "tracked_file_count": 36,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1091,7 +1091,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 22,
+      "tracked_file_count": 23,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1299,7 +1299,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 418,
+      "tracked_file_count": 419,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1429,7 +1429,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 198,
+      "tracked_file_count": 199,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

@@ -82,7 +82,7 @@ here. Seam ≠ score ≠ node.
   dissolution and preservation, read but never played. The sovereign Titans are
   not D5 agents or arithmetic operands.
 
-Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (receipt 130 — the grave "seven-as-forced" stays shut).
+Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` — the grave "seven-as-forced" stays shut).
 
 **Direction and valence.** `η_move` names relational-action extraction valence:
 value taken from a

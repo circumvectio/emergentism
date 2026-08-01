@@ -54,6 +54,19 @@ ACTIVE_TOP_LEVELS = {
 
 TEXT_SUFFIXES = {".md", ".py", ".r", ".json", ".yaml", ".yml", ".toml"}
 
+RECEIPT_CITATION_LANES = (
+    Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS"),
+    Path("11_UPLINK/60_SESSION_PACKETS"),
+)
+
+# Derived custody surfaces repeat source semantic units and exact historical
+# filenames by design. Their dedicated checker and digest receipt own that
+# copied content; scanning the copy as fresh doctrine would both double count
+# and misread identity strings as authority assertions.
+DERIVED_CUSTODY_SURFACES = {
+    Path("00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json"),
+}
+
 # Exact historical/forwarding surfaces permitted by the purity contract. They
 # remain readable for provenance but cannot own current semantics.
 PROVENANCE_EXCEPTIONS = {
@@ -255,6 +268,8 @@ def is_active_corpus_file(path: Path) -> bool:
         return False
     if rel.parts[:2] == ("00_META", "registers"):
         return False
+    if rel in DERIVED_CUSTODY_SURFACES:
+        return False
     if rel in PROVENANCE_EXCEPTIONS:
         return False
     if any(rel.is_relative_to(prefix) for prefix in PROJECTION_EXCEPTION_PREFIXES):
@@ -262,12 +277,64 @@ def is_active_corpus_file(path: Path) -> bool:
     return True
 
 
-def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
+def physical_receipt_target_names(root: Path) -> tuple[str, ...]:
+    names: set[str] = set()
+    for lane in RECEIPT_CITATION_LANES:
+        base = root / lane
+        if not base.is_dir():
+            continue
+        for target in base.rglob("*.md"):
+            match = re.match(r"^(\d{2,3})[_A-Za-z]", target.name)
+            if match and match.group(1) != "00":
+                names.add(target.name)
+    return tuple(sorted(names, key=lambda value: (-len(value), value)))
+
+
+def _complete_filename_token(text: str, start: int, end: int) -> bool:
+    before = text[start - 1] if start else ""
+    after = text[end] if end < len(text) else ""
+    before_continues = before.isalnum() or before in "_.-"
+    after_continues = after.isalnum() or after in "_-/"
+    if after == ".":
+        following = text[end + 1] if end + 1 < len(text) else ""
+        after_continues = following.isalnum() or following in "_.-"
+    return not before_continues and not after_continues
+
+
+def forbidden_match_is_exact_receipt_target(
+    line: str,
+    match: re.Match[str],
+    target_names: tuple[str, ...],
+) -> bool:
+    for name in target_names:
+        start = 0
+        while True:
+            position = line.find(name, start)
+            if position < 0:
+                break
+            end = position + len(name)
+            start = end
+            if (
+                position <= match.start() < match.end() <= end
+                and _complete_filename_token(line, position, end)
+            ):
+                return True
+    return False
+
+
+def scan_file(
+    path: Path,
+    *,
+    allow_legacy_alias: bool = False,
+    receipt_target_names: tuple[str, ...] | None = None,
+) -> list[str]:
     errors: list[str] = []
     if not path.is_file():
         return [f"missing scoped file: {path.relative_to(ROOT)}"]
     rel = path.relative_to(ROOT)
     text = path.read_text(encoding="utf-8")
+    if receipt_target_names is None:
+        receipt_target_names = physical_receipt_target_names(ROOT)
 
     # An external-mapping audit keeps its exemption only while it carries the boundary.
     # Checked ONCE per file, before any line is scanned, so a file that has quietly lost
@@ -324,6 +391,9 @@ def scan_file(path: Path, *, allow_legacy_alias: bool = False) -> list[str]:
                 or control_projection_name
                 or control_projection_reference
                 or external_mapping_audit
+                or forbidden_match_is_exact_receipt_target(
+                    line, match, receipt_target_names
+                )
                 or (
                     rel in EXTERNAL_SOURCE_PATH_FILES
                     and _is_external_source_path(line)
@@ -353,13 +423,20 @@ def main() -> int:
     scoped.extend(p for p in ROOT.rglob("*") if p.is_file() and is_active_corpus_file(p))
 
     seen: set[Path] = set()
+    receipt_target_names = physical_receipt_target_names(ROOT)
     for path in scoped:
         path = path.resolve()
         if path in seen:
             continue
         seen.add(path)
         allow_alias = path.relative_to(ROOT) in LEGACY_ALIAS_EXCEPTIONS
-        errors.extend(scan_file(path, allow_legacy_alias=allow_alias))
+        errors.extend(
+            scan_file(
+                path,
+                allow_legacy_alias=allow_alias,
+                receipt_target_names=receipt_target_names,
+            )
+        )
 
     for prefix in PROJECTION_EXCEPTION_PREFIXES:
         boundary = ROOT / prefix / "README.md"

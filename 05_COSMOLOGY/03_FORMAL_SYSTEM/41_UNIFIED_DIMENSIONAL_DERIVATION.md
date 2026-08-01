@@ -8,7 +8,7 @@ rosetta:
   register: "[B/I]"
   canonical_phrase: "Kintsugi tombstone — unified derivation retracted"
 title: "Unified Dimensional Derivation — Kintsugi Tombstone"
-status: "RETRACTED IN PLACE — receipt 126; tombstone repaired 2026-07-17."
+status: "RETRACTED IN PLACE — `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`; tombstone repaired 2026-07-17."
 evidence_tier: "[B] for the recorded formal audit; [I] for the surviving translation grammar."
 original_git_blob: "a4c6c877a852ad42149c0653fed634bbbdeb34c6"
 superseded_by:
@@ -38,7 +38,7 @@ visible seam so old links do not silently become authority.
 7. The four-force bijection fails under electroweak unification.
 8. Formal identities do not entail the Justice postulate or any ethic.
 
-Receipt 126 therefore refuted **unification by derivation**.
+`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` therefore refuted **unification by derivation**.
 
 ## What survives
 

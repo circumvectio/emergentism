@@ -2,8 +2,8 @@
 # because `git commit --no-verify` bypasses hooks and this repository's own
 # maintainers use it routinely. CI cannot be skipped from a laptop.
 #
-# Installed 2026-07-29 (r183). Until this date the corpus had five validators
-# and NOTHING RAN THEM — r177's HOLE 0, open since 2026-07-27.
+# Installed 2026-07-29 (r183, `183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`).
+# Until this date the corpus had five validators and NOTHING RAN THEM — r177 (`177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`)'s HOLE 0, open since 2026-07-27.
 
 name: gate
 
@@ -40,5 +40,5 @@ jobs:
         run: |
           echo "::notice title=Unverified on CI::The Lean proofs are NOT re-run here."
           echo "A full 'lake build' requires fetching mathlib and is impractical in CI."
-          echo "Receipt 182 records the build output and axiom traces. The generative"
+          echo "Receipt 182 (182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md) records the build output and axiom traces. The generative"
           echo "base (G1-G10) IS recomputed by exhaustion on every run."

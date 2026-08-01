@@ -1,7 +1,7 @@
 ---
 title: "11_UPLINK/00_CORE/ — forwarding stub"
 date: 2026-07-22
-status: "Archive-first forwarding stub — this address was archived 2026-07-20; content lives in the archive. Created by Receipt 158 after dead canonical paths were cited as live."
+status: "Archive-first forwarding stub — this address was archived 2026-07-20; content lives in the archive. Created by `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md` after dead canonical paths were cited as live."
 evidence_tier: "[B] path provenance only"
 ---
 

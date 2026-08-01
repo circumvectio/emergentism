@@ -16,7 +16,7 @@ parents:
 
 > **Fence before content.** Everything in §2 is **standard, inherited physics and
 > mathematics**, not an Emergentist result. `DF-10` (force bijection) and `DF-20`
-> (numeric coincidence as derivation) are buried, and receipt 151 killed the
+> (numeric coincidence as derivation) are buried, and `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md` killed the
 > horn-torus/light-cone identification. This document **inherits and types** a
 > known correspondence. It derives no physics and replaces no native theory.
 
@@ -131,7 +131,7 @@ doc 48, now with a physical instance.
    and forces, each leg independently killable. This document makes no aperture
    claim and adds no leg. It must not be cited as evidence for any `W7` leg.
 4. **`DF-20` applies.** A structural match is not a derivation. The horn-torus
-   identification died for exactly this, by receipt 151.
+   identification died for exactly this, by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md`.
 5. **One datum.** The reciprocal chart and relativity agreeing on `tanh` is
    **one** structural fact seen twice, not two confirmations — `DF-15`.
 6. **No empirical claim.** The corpus predicts nothing about relativity, and

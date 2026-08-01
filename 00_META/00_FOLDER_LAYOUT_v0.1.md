@@ -7,7 +7,7 @@ rosetta:
   regime: "Kṣatriya"
   register: "[S]"
 canonical_target: ../90_ARCHIVE/old_front_doors/00_FOLDER_LAYOUT_v0.1.md
-status: "FORWARDING STUB — 2026-07-20 (receipt 139 Wave 2). K3: tombstoned, not erased; citations to this path resolve here."
+status: "FORWARDING STUB — 2026-07-20 (`139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md` Wave 2). K3: tombstoned, not erased; citations to this path resolve here."
 owner: 01_EMERGENTISM
 date: 2026-07-20
 ---

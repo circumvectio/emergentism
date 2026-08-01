@@ -8,7 +8,7 @@ rosetta:
   register: "[I] active reader projection — one-page compression of the D2 rung: functions, geometry, configuration"
 title: "D2 — Functions and Geometry: configured relations"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
-sources: "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md · 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md · 00_THE_AMRITA.md §I.A · receipt 108 (keel) · receipt 126 (CC-CORE-1)"
+sources: "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md · 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md · 00_THE_AMRITA.md §I.A · `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` (keel) · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (CC-CORE-1)"
 ---
 
 # D2 · FUNCTIONS AND GEOMETRY — configured relations
@@ -90,7 +90,7 @@ the selected meridian crosses the **equator**, at `φ=ν=1`. The equator of the
 full sphere is a circle, not one point. The imbalance price
 `γ = (φ+ν)/2` rises toward either pole along the slice.
 
-**The iron separation** (keel-108, CC-CORE-1): the **seam is never the score is never the node.** `P∞ ≡ 1` is a constant (chart identity); `B ≤ 1` is a variable (max at the equator); `P_node=min(Φ̂₄,V₄)` is the selected ordinal *finite-node model*, with universal fit `[C]`. The historical product `Φ̂₄V₄` is retired as a node ranking and may return only as an explicit candidate under separately defended cardinal scales. The seam stays 1 even as `ν → 0`; it therefore never witnesses the zero-factor catastrophe, and citing it as the ethics warrant is the convicted laundering move. Three objects, three tiers, no silent bridge.
+**The iron separation** (`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`, CC-CORE-1): the **seam is never the score is never the node.** `P∞ ≡ 1` is a constant (chart identity); `B ≤ 1` is a variable (max at the equator); `P_node=min(Φ̂₄,V₄)` is the selected ordinal *finite-node model*, with universal fit `[C]`. The historical product `Φ̂₄V₄` is retired as a node ranking and may return only as an explicit candidate under separately defended cardinal scales. The seam stays 1 even as `ν → 0`; it therefore never witnesses the zero-factor catastrophe, and citing it as the ethics warrant is the convicted laundering move. Three objects, three tiers, no silent bridge.
 
 ---
 

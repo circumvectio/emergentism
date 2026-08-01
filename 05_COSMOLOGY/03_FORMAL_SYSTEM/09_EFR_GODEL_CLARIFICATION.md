@@ -46,13 +46,13 @@ rosetta:
 
 2. **Self-grounding.** The triadic frame {0, 1, ∞} has K*_sel = 0 (zero selection complexity — there is only one frame up to isomorphism; see Correspondence 21). This grounds the framework in the unique projective frame. The K-minimality of Zero-Sum Resolution Equation grounds the axiom set in the unique self-contained description.
 
-> 🪦 TOMBSTONE — T8 + T9 (N=3-forced, Gödel universal lift). The "only one frame up to isomorphism" / "the unique self-contained description" wording is RETIRED at `[S]` and downgraded to `[I]` (empirical observation). On `ℂ*`, inversion has **two** fixed points (±1), so `{0,1,∞}` is a *selected* projective frame, not a forced closure of `{0,∞}` (per C21 / 109). And the universal Gödel lift dies — Presburger arithmetic and the theory of real-closed fields are complete/decidable counterexamples (per 110 / 126 §2B.3). The "We agree with Gödel" move survives only as a conditioned analogy, not as the theorem firing on this framework. Per Amrita §II P11, receipts 109, 110, 126, 132 §2.8-9. Bannered 2026-07-19.
+> 🪦 TOMBSTONE — T8 + T9 (N=3-forced, Gödel universal lift). The "only one frame up to isomorphism" / "the unique self-contained description" wording is RETIRED at `[S]` and downgraded to `[I]` (empirical observation). On `ℂ*`, inversion has **two** fixed points (±1), so `{0,1,∞}` is a *selected* projective frame, not a forced closure of `{0,∞}` (per C21 / `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`). And the universal Gödel lift dies — Presburger arithmetic and the theory of real-closed fields are complete/decidable counterexamples (per `110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md` / `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` §2B.3). The "We agree with Gödel" move survives only as a conditioned analogy, not as the theorem firing on this framework. Per Amrita §II P11, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`, `110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md`, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` §2.8-9. Bannered 2026-07-19.
 
-**Note (v2.0):** "Categorical completeness" was previously stated as "proved via η = 0" — an overclaim. The historical question asked whether the axiom set was the only K-minimal description of the then-selected product `P_node=Φ×V`; that uniqueness claim remained `[I]`, never `[S]`. **KSC-02 fence:** the product itself is now retired as a node ranking; the selected score is `P_node=min(Φ̂₄,V₄)`. No aggregator choice grounds K-minimality. **132-reconciliation 2026-07-19:** the prior "unique self-contained description" wording above is RETIRED; the empirical-observation tier is the active reading.
+**Note (v2.0):** "Categorical completeness" was previously stated as "proved via η = 0" — an overclaim. The historical question asked whether the axiom set was the only K-minimal description of the then-selected product `P_node=Φ×V`; that uniqueness claim remained `[I]`, never `[S]`. **KSC-02 fence:** the product itself is now retired as a node ranking; the selected score is `P_node=min(Φ̂₄,V₄)`. No aggregator choice grounds K-minimality. **`132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` reconciliation (2026-07-19):** the prior "unique self-contained description" wording above is RETIRED; the empirical-observation tier is the active reading.
 
 3. **Gödel-aware.** The framework explicitly acknowledges its own Gödel-incompleteness. It cannot prove its own consistency from within. This is a feature, not a bug — it's what makes the framework honest.
 
-> **[金] SEAM** · broke: 2026-07-12 · receipt 110 (formal-logic audit) · crack: the
+> **[金] SEAM** · broke: 2026-07-12 · `110_FORMAL_LOGIC_AUDIT_APPLY_THREE_GOLDEN_SEAMS.md` (formal-logic audit) · crack: the
 > doc invoked Gödel II ("we agree with Gödel") without stating the conditions under
 > which Gödel II *applies to this framework* — consistent + recursively axiomatizable
 > + encodes enough arithmetic. "We agree" is not "the theorem fires on us." · gold:
@@ -78,7 +78,7 @@ that aspires to self-description. The consequence for the rest of the corpus:
   framework. It is a discipline we choose — and, given that any future formalization
   of Emergentism would likely meet Gödel's conditions, a prudent one. State it as
   *chosen-and-prudent*, not *theorem-forced*.
-- Receipt 107's "the map cannot close itself" survives, but via the Tarski analogy
+- `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md`'s "the map cannot close itself" survives, but via the Tarski analogy
   (no system contains its own truth predicate), not via Gödel II. It is
   *orientation grounded in a theorem-grade analogy*, not a theorem.
 - The Open Canon Covenant §4.3 ("no description of reality closes (Gödel)") should

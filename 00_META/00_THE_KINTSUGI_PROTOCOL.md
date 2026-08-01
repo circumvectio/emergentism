@@ -1,7 +1,7 @@
 ---
 title: "The Kintsugi Protocol — antifragile repair: every break is gilded, every attack must leave the corpus stronger"
 date: 2026-07-10
-status: "ACTIVE [S/I] — adopted repair discipline. Receipt 146 confirms execution; adoption does not upgrade content tiers."
+status: "ACTIVE [S/I] — adopted repair discipline. `146_FOUNDER_RULING_EXECUTE_2026_07_20.md` confirms execution; adoption does not upgrade content tiers."
 evidence_tier: "[S] as protocol norm (a repair discipline, like the BTJ gates); [I] the Kintsugi reading; the antifragility criterion §6 is a design property the protocol must itself pass"
 owner: "Emergentism methodology"
 parents:
@@ -122,7 +122,7 @@ becomes ceremony — seams without gold — retire it by its own test.
 
 ## 8. First application
 
-Receipt **108** (the Formal Stress Ledger, staging on C4's retrial) is issued in
+`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` (the Formal Stress Ledger, staging on C4's retrial) is issued in
 crack/gold/seam form, and the trial's canon-edit package lands as golden seams.
 **The founding seam is the co-author's own conviction** — the C5 paraphrase
 drift, gilded first, credited to the trial that caught it. The protocol's first

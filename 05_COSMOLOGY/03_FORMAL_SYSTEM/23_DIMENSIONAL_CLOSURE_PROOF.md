@@ -91,7 +91,7 @@ Each breaks:
 - identifying endpoints is an added quotient operation, not a derived fact;
 - under `D_k↔2πk/7`, `D6=12π/7`, not `2π`.
 
-Receipt 126 therefore retracted literal identity. The repair keeps the insight
+`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` therefore retracted literal identity. The repair keeps the insight
 that a completed positive model should release its claim to totality, while
 removing the false mathematics.
 

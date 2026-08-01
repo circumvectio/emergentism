@@ -38,7 +38,7 @@ parents:
 >
 > **Everything coherent does not therefore exist actually.** Logical coherence admits a description; satisfiability admits a model; law and boundary conditions admit a physical possibility; dynamics admit reachability; realization gives actuality; robustness and macro-level autonomy license an emergence claim; embodiment and means give lived availability.
 
-This is a Weltanschauung candidate, not a derivation from one equation. The formal kernel is thin and empty of world; the world-facing ontology remains a wager under test. Receipt 126 controls that separation.
+This is a Weltanschauung candidate, not a derivation from one equation. The formal kernel is thin and empty of world; the world-facing ontology remains a wager under test. `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` controls that separation.
 
 ---
 
@@ -137,7 +137,7 @@ Concrete systems possess typed capacities for variation under relations, constra
 
 No inference may move from logical coherence to mathematical existence, physical possibility, actuality, emergence, or lived availability without the missing bridge evidence.
 
-**Support:** the evidence-tier separation and synthetic-gap ruling in `00_THE_HONEST_POSITION.md` and receipt 126.
+**Support:** the evidence-tier separation and synthetic-gap ruling in `00_THE_HONEST_POSITION.md` and `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`.
 
 ### C3. Costed emergence `[S/C]`
 
@@ -150,14 +150,14 @@ A higher-level description earns emergent standing only when it supplies tested 
 Every load-bearing claim carries a tier, upgrade path, kill/downgrade criterion, and survivors. Negative results remain public. No mathematical proof silently upgrades a world claim.
 
 **Support:** [The Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its
-correction discipline; receipt 126’s A7 result.
+correction discipline; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`’s A7 result.
 
 ### C5. Non-extraction as chosen orientation `[I]`
 
 Finite beings choose to pursue reciprocal flourishing without obtaining local gain by degrading a real sustaining boundary. `η_move=0` is a constitutional vow/operational definition with scoped Model-A support; it is not an ought derived from geometry and not a universal Nash theorem.
 
 **Support:** [The Amrita](../07_THEOLOGY/00_THE_AMRITA.md), especially its
-non-extraction and voluntary-orientation clauses; receipt 126 `:28-33`.
+non-extraction and voluntary-orientation clauses; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` `:28-33`.
 
 ### C6. Exit `[I/S]`
 
@@ -191,7 +191,7 @@ Their philosophical mapping is `[I]` unless independently tested.
 
 Zero-collapse and binding-constraint behavior select a need-both/AND-class boundary; they do not uniquely force multiplication. Product-specific interior claims remain `[C]`.
 
-**Source:** receipt 108; receipt 126 `:26-29`.
+**Source:** `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` `:26-29`.
 
 ### R2. Conditional balance transfer `[S]` conditional
 
@@ -203,7 +203,7 @@ The equator is an `[A]` extremum inside the reciprocal chart. A real finite syst
 
 The inversion/fixed-centre/mirror-pair and sign-square grammar is a real scoped structural lens. Seven is not forced; cross-tradition convergence is not independent proof; shared historical sources can reduce apparent recurrence to one datum.
 
-**Source:** receipts 126 and 130.
+**Source:** `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` and `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`.
 
 ### R4. Register-overreach diagnosis `[I]`, audit-supported
 
@@ -213,13 +213,13 @@ Repeated failures share one pattern: identity substituted for similarity, necess
 
 The physical DoF register does not support the four-forces↔four-dimensions bijection; bare S² does not derive SU(3); AM-GM convex geometry does not derive Standard Model gauge structure. These are genuine negative results and delimit the framework.
 
-**Source:** receipt 117 and `117_PATH_D_NEGATIVE_RESULT.md`.
+**Source:** `117_FORCE_LADDER_FORMALIZED_07B.md` and `117_PATH_D_NEGATIVE_RESULT.md`.
 
 ### R6. Internal correction can fire `[B]` corpus result
 
 The audit apparatus did tombstone favored claims rather than laundering them. This is evidence about the corpus’s method, not evidence that its metaphysics is true.
 
-**Source:** receipts 108–132, especially 126, 130, and 132.
+**Source:** the collective `11_UPLINK/50_AUDITS_AND_EXECUTIONS/` arc bounded by `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` and `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md` (all same-prefix variants included), especially `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, and `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`.
 
 ### R7. Typed-existence cascade `[S]` method / `[I]` taxonomy
 
@@ -249,7 +249,7 @@ Keep separate from the worldview kernel:
 
 ## 7. Dead strong forms
 
-The following remain dead under receipts 126, 130, and 132:
+The following remain dead under `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, and `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`:
 
 - unification by derivation;
 - ethic-as-theorem;

@@ -128,7 +128,10 @@ def check(root: Path = ROOT) -> list[str]:
             if rp is None or rp.is_absolute() or ".." in rp.parts:
                 errors.append(f"owner_reopening: receipt must be a repo-relative path, got {receipt!r}")
             elif receipt != EXPECTED_RULING:
-                errors.append(f"owner_reopening: receipt must be the r174 ruling, got {receipt!r}")
+                errors.append(
+                    "owner_reopening: receipt must be the r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`) "
+                    f"ruling, got {receipt!r}"
+                )
             else:
                 f = (root / rp).resolve()
                 if not f.is_file() or not f.is_relative_to(root) or f.stat().st_size < 500:

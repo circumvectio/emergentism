@@ -83,6 +83,13 @@ also prove that a new receipt may land once, an unchanged receipt survives a
 later commit, a same-path rewrite fails, and shallow parent history fails
 closed.
 
+`test_active_receipt_citations.py` supplies 23 mutation controls for typed and
+exact target substitution, same-line binding, packet/receipt lane separation,
+new-owner discovery, filename-extension spoofs, duplicate/malformed JSON,
+context-hashed diagnostics, immutable digest custody, and the delivered public
+dependency closure through CSS, modules, manifests, workers, service workers,
+precache lists, and imported worker scripts.
+
 `test_node_product_ranking.py` supplies positive and negative controls for the
 KSC-02 regression gate, including adjacent-denial bypasses, exact scope
 exclusions, the Managed Agents projection, and the live active-corpus scan.

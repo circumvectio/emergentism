@@ -14,7 +14,7 @@ Three operating modes:
   1. ``heuristic``    — deterministic file-path + title heuristics only.
                         Offline, no LLM. Suitable when L-folder containment
                         + keyword match is sufficient (Tier A / B).
-  2. ``prompt``       — emits the per-file LLM prompt per packet 157 §7 to
+  2. ``prompt``       — emits the per-file LLM prompt per 157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §7 to
                         stdout, ready for paste into an external LLM.
   3. ``manifest``     — writes a JSON manifest the existing apply-manifest
                         command can consume directly.
@@ -23,16 +23,16 @@ Key discipline
 --------------
 This tool PROPOSES ONLY. It never writes frontmatter into target files.
 That lane belongs to ``rosetta_annotate.py apply-manifest --write``, which
-acts on a human-reviewed manifest — matching packet 157 §10:
+acts on a human-reviewed manifest — matching 157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §10:
 
     "Does NOT execute annotation (charioteer lane restriction; warrior runs
     the passes)"
 
 References
 ----------
-- packet 157: Rosetta Annotation Strategy (spec)
-- packet 158: Phase 2c Receipt and Tier A Gate (scope discipline)
-- packet 159: Tier A Rosetta Draft Pack (example output format)
+- 157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md: Rosetta Annotation Strategy (spec)
+- 158_PHASE_2C_RECEIPT_AND_TIER_A_GATE_2026_04_24.md: Phase 2c Receipt and Tier A Gate (scope discipline)
+- 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md: Tier A Rosetta Draft Pack (example output format)
 - 01_EMERGENTISM/09_TOOLS/01_SCRIPTS/rosetta_annotate.py: warrior apply + audit companion
 - 01_EMERGENTISM/11_UPLINK/06_AGENTS.md: operator / tier / regime per L-level
 """
@@ -48,7 +48,7 @@ from pathlib import Path
 
 
 # ---
-# L-folder → level/operator/tier/regime defaults (packet 159 §1 + 06_AGENTS)
+# L-folder → level/operator/tier/regime defaults (159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md §1 + 06_AGENTS)
 # ---
 L_FOLDER_DEFAULTS: dict[str, dict[str, str]] = {
     "01_TELEOLOGY":    {"level": "L1", "operator": "Kali 🎲",  "tier": "Demon", "regime": "Caṇḍāla"},
@@ -255,7 +255,7 @@ def propose_block(path: Path) -> dict:
     }
 
     if detect_meta(path):
-        # META: primary_level intentionally omitted per packet 158 §6
+        # META: primary_level intentionally omitted per 158_PHASE_2C_RECEIPT_AND_TIER_A_GATE_2026_04_24.md §6
         block["primary_column"] = "Meta" if column == "Meta" else column
         return block
 
@@ -294,12 +294,12 @@ def format_yaml_block(block: dict) -> str:
 
 
 # ---
-# LLM prompt template (packet 157 §7)
+# LLM prompt template (157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §7)
 # ---
 LLM_PROMPT_TEMPLATE = """\
 Read this document. Based on its content, propose a Rosetta annotation in YAML
-frontmatter format per packet 157 §2 spec. Output only the `rosetta:` YAML
-block. Use canonical column names from packet 157 §3. Identify primary L-level
+frontmatter format per 157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §2 spec. Output only the `rosetta:` YAML
+block. Use canonical column names from 157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §3. Identify primary L-level
 (L1-L7), primary column, optional secondary cross-refs, evidence tier
 [E/S/I/C], and (if clear) operator + tier + regime + canonical phrase. If
 uncertain about any field, omit it rather than guess.
@@ -447,13 +447,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_h = sub.add_parser("heuristic", help="print per-file YAML proposals (offline heuristics)")
     p_h.add_argument("targets", nargs="*", help="files or 'glob:<pattern>'")
-    p_h.add_argument("--tier-a", action="store_true", help="use packet-159 Tier A targets")
+    p_h.add_argument("--tier-a", action="store_true", help="use 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md Tier A targets")
     p_h.add_argument("--include-compat", action="store_true", help="include compatibility stubs")
     p_h.set_defaults(func=command_heuristic)
 
-    p_p = sub.add_parser("prompt", help="emit per-file LLM prompts (packet 157 §7)")
+    p_p = sub.add_parser("prompt", help="emit per-file LLM prompts (157_ROSETTA_ANNOTATION_STRATEGY_2026_04_24.md §7)")
     p_p.add_argument("targets", nargs="*", help="files or 'glob:<pattern>'")
-    p_p.add_argument("--tier-a", action="store_true", help="use packet-159 Tier A targets")
+    p_p.add_argument("--tier-a", action="store_true", help="use 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md Tier A targets")
     p_p.add_argument("--include-compat", action="store_true", help="include compatibility stubs")
     p_p.set_defaults(func=command_prompt)
 
@@ -464,7 +464,7 @@ def build_parser() -> argparse.ArgumentParser:
     p_m.add_argument("targets", nargs="*", help="files or 'glob:<pattern>'")
     p_m.add_argument("--out", help="output file (stdout if omitted)")
     p_m.add_argument("--format", choices=["json", "jsonl"], default="json")
-    p_m.add_argument("--tier-a", action="store_true", help="use packet-159 Tier A targets")
+    p_m.add_argument("--tier-a", action="store_true", help="use 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md Tier A targets")
     p_m.add_argument("--include-compat", action="store_true", help="include compatibility stubs")
     p_m.set_defaults(func=command_manifest)
 

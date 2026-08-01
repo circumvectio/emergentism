@@ -3,7 +3,7 @@
 
 This tool is intentionally narrow:
 
-- list the Tier A Foundation files from packet 159
+- list the Tier A Foundation files from 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md
 - audit whether files already carry a ``rosetta:`` frontmatter block
   and, for Foundation L-folder files, whether the primary level matches
   the owning folder
@@ -306,7 +306,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     audit_cmd = subparsers.add_parser("audit", help="audit rosetta frontmatter presence")
     audit_cmd.add_argument("paths", nargs="*", help="markdown files to audit")
-    audit_cmd.add_argument("--tier-a", action="store_true", help="audit packet-159 Tier A targets")
+    audit_cmd.add_argument("--tier-a", action="store_true", help="audit 159_TIER_A_ROSETTA_DRAFT_PACK_2026_04_24.md Tier A targets")
     audit_cmd.set_defaults(func=command_audit)
 
     apply_cmd = subparsers.add_parser(

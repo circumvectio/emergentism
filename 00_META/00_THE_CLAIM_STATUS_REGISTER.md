@@ -178,9 +178,9 @@ refutes. A vow is kept or abandoned, never proved.
 
 ## 5 · The graves, adjudicated — `DF-01…DF-22`
 
-> **Owner ruling, 2026-07-29 (receipt 174), corrected by receipt 177: 21 of the 22
+> **Owner ruling, 2026-07-29 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), corrected by `177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`: 21 of the 22
 > rows are `OWNER-REOPENED`.** `DF-14` was already `NARROWED` — a live status — so
-> it was not reopened; r174's "all 22" was over-broad by exactly one row.
+> it was not reopened; `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`'s "all 22" was over-broad by exactly one row.
 > The status column below records what each was reopened *from*, preserved per
 > row as `status_before_reopening`. Every counterexample stands unchanged and
 > every row now carries a `repair_path`. Reopening restores active
@@ -206,9 +206,9 @@ successor in all; the disjoint partition is the count table below.
 
 | ID | Dead form | Status | What killed it | Live successor |
 |---|---|---|---|---|
-| `DF-01` | unification by derivation | `FORMALLY-REFUTED` | four structural breaks (r126 §5) | `NARROWED` → candidate translation grammar, GP-11 |
+| `DF-01` | unification by derivation | `FORMALLY-REFUTED` | four structural breaks (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` §5) | `NARROWED` → candidate translation grammar, GP-11 |
 | `DF-02` | ethic-as-theorem | `CATEGORY-ERROR` | is→ought bypass by redefinition | `E8` vow + `W6` conditional lemma |
-| `DF-03` | seven-as-forced / Rosetta-universal | `EMPIRICALLY-REFUTED` | planetary confound; one lineage (r130, r132) | `W10` inherited grammar |
+| `DF-03` | seven-as-forced / Rosetta-universal | `EMPIRICALLY-REFUTED` | planetary confound; one lineage (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`) | `W10` inherited grammar |
 | `DF-04` | product-uniqueness as keel | `FORMALLY-REFUTED` | `FV-12` — min instantiates the same boundary | `W3` product interior |
 | `DF-05` | `φν=1` as conserved discovery | `CATEGORY-ERROR` | coordinate identity read as world law | **none — closed.** `FV-01` is the surviving use |
 | `DF-06` | balance hump as empirical law | `EMPIRICALLY-REFUTED` | Munnell trough; GFS retracted | `W5` + **RQ-01** (instrument) |
@@ -225,7 +225,7 @@ successor in all; the disjoint partition is the count table below.
 | `DF-17` | civilizational physics | `NOT-WELL-POSED` | `[C]` analogy asserted as physics | **RQ-06** |
 | `DF-18` | "dissolves Hard Problem / is-ought / death / free will" | `NOT-WELL-POSED` | unfalsifiable frame-trick; mechanism asserted | Human Condition §11 — re-posed as open |
 | `DF-19` | ektropy / F5 as teleological force | `FORMALLY-REFUTED` | `(φ−ν)²` supplies no trajectory | `W7e` + **RQ-07** (declare a dynamics) |
-| `DF-20` | numeric coincidences as derivations | `CATEGORY-ERROR` | overlay, not derivation; horn-torus killed by r151 | **RQ-08** |
+| `DF-20` | numeric coincidences as derivations | `CATEGORY-ERROR` | overlay, not derivation; horn-torus killed by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md` | **RQ-08** |
 | `DF-21` | **CC-CORE-1** — kernel → ethics warrant | `FORMALLY-REFUTED` | the seam holds precisely *off* the catastrophe case | **none — closed.** `E8` is a choice |
 | `DF-22` | Rosetta kill-criterion mislabel | `PROCESS-DEFECT` | a fired falsifier was logged as a pass | routed to `E9` enforcement, not to a wager |
 
@@ -288,7 +288,7 @@ The original criterion read:
 > this surface has done the exact damage it was built to prevent, and it should
 > be deleted rather than repaired.*
 
-**It fired on 2026-07-29.** Receipt 174 moved all 22 grave rows to
+**It fired on 2026-07-29.** `174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md` moved all 22 grave rows to
 `OWNER-REOPENED` — a live status — with no new IDs and no new discriminators.
 Recorded here in the open, because a fired kill quietly logged as a pass is
 `DF-22`, and this register exists to forbid exactly that.
@@ -316,9 +316,12 @@ rather than repaired, if any of the following is ever true:
 
 **What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
 `check_claim_status.py`, hardened and re-tested on 2026-07-29 against seven
-adversarial mutations (receipt 177). **But nothing invokes it automatically** —
-there is no CI job, no hook, no runner. Earlier wording here and in receipts
-172/174/175/176 called it "fail-closed" and said mutations "fail the build";
+adversarial mutations (`177_WP1_DEFECTIVE_VALIDATOR_HARDENED_2026_07_29.md`). **But nothing invokes it automatically** —
+there is no CI job, no hook, no runner. Earlier wording here and in
+`172_CLAIM_STATUS_REGISTER_AND_GRAVE_ADJUDICATION_2026_07_29.md`,
+`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`,
+`175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`, and
+`176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md` called it "fail-closed" and said mutations "fail the build";
 **there is no build**, and the checker is advisory until a gate exists. **Clauses 3
 and 4 are not machine-checkable.** No validator can see a row being *cited* as
 evidence elsewhere in the corpus, and none can compel a future editor to record
