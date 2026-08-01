@@ -43,9 +43,14 @@ TITAN_CANON = Path(
 )
 FORMAL_ORACLE = Path("09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean")
 PUBLIC_PARITY_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
+RECORD_LEDGER = Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md")
 ACTIVE_EXTRA_TYPE_SURFACES = (
     FORMAL_ORACLE,
     Path("12_PUBLIC_SITE/generate_public_library.py"),
+    # The active K-7 owner lives inside the otherwise historical receipt lane.
+    # Keep it in scope explicitly so the archive exclusion cannot hide live
+    # Titan syntax at the record front door.
+    RECORD_LEDGER,
 )
 
 FORMAL_DOCS = [
@@ -203,6 +208,11 @@ def main() -> int:
             errors.append(f"missing foundation home: {rel.as_posix()}")
             continue
         bodies[rel] = path.read_text(encoding="utf-8")
+    for rel in ACTIVE_EXTRA_TYPE_SURFACES:
+        if not (ROOT / rel).is_file():
+            errors.append(
+                f"missing required active Foundation type surface: {rel.as_posix()}"
+            )
     if errors:
         print("FOUNDATION CONTRACT: FAIL")
         print("\n".join(f"- {e}" for e in errors))

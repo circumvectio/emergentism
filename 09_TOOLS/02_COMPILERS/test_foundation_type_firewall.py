@@ -21,6 +21,19 @@ MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 
 
+def copy_checker_fixture(temp_root: Path) -> None:
+    """Copy every surface the checker requires into an isolated corpus."""
+
+    surfaces = dict.fromkeys(
+        (*MODULE.REQUIRED_SURFACES, *MODULE.ACTIVE_EXTRA_TYPE_SURFACES)
+    )
+    for rel in surfaces:
+        source = ROOT / rel
+        target = temp_root / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, target)
+
+
 def forbidden(text: str) -> bool:
     return bool(MODULE.titan_arithmetic_matches(text))
 
@@ -111,11 +124,7 @@ class FoundationTypeFirewallTests(unittest.TestCase):
     def test_full_checker_catches_mutated_owner_surface(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             temp_root = Path(tmp)
-            for rel in MODULE.REQUIRED_SURFACES:
-                source = ROOT / rel
-                target = temp_root / rel
-                target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(source, target)
+            copy_checker_fixture(temp_root)
 
             with mock.patch.object(MODULE, "ROOT", temp_root):
                 with contextlib.redirect_stdout(io.StringIO()):
@@ -131,11 +140,7 @@ class FoundationTypeFirewallTests(unittest.TestCase):
     def test_full_checker_catches_wrapped_owner_and_current_html(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             temp_root = Path(tmp)
-            for rel in MODULE.REQUIRED_SURFACES:
-                source = ROOT / rel
-                target = temp_root / rel
-                target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(source, target)
+            copy_checker_fixture(temp_root)
 
             public_manifest = temp_root / MODULE.PUBLIC_PARITY_MANIFEST
             public_manifest.parent.mkdir(parents=True, exist_ok=True)
@@ -153,6 +158,45 @@ class FoundationTypeFirewallTests(unittest.TestCase):
             with mock.patch.object(MODULE, "ROOT", temp_root):
                 with contextlib.redirect_stdout(io.StringIO()):
                     self.assertEqual(MODULE.main(), 1)
+
+    def test_record_ledger_is_scanned_and_forbidden_arithmetic_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            temp_root = Path(tmp)
+            copy_checker_fixture(temp_root)
+
+            with mock.patch.object(MODULE, "ROOT", temp_root):
+                self.assertIn(
+                    MODULE.RECORD_LEDGER,
+                    MODULE.active_foundation_scan_paths(temp_root),
+                )
+                with contextlib.redirect_stdout(io.StringIO()):
+                    self.assertEqual(MODULE.main(), 0)
+
+                ledger = temp_root / MODULE.RECORD_LEDGER
+                ledger.write_text(
+                    ledger.read_text(encoding="utf-8") + "\n• + ○\n",
+                    encoding="utf-8",
+                )
+                output = io.StringIO()
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+                self.assertIn(MODULE.RECORD_LEDGER.as_posix(), output.getvalue())
+
+    def test_missing_required_active_extra_surface_fails_closed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            temp_root = Path(tmp)
+            copy_checker_fixture(temp_root)
+            (temp_root / MODULE.RECORD_LEDGER).unlink()
+
+            output = io.StringIO()
+            with mock.patch.object(MODULE, "ROOT", temp_root):
+                with contextlib.redirect_stdout(output):
+                    self.assertEqual(MODULE.main(), 1)
+            self.assertIn(
+                f"missing required active Foundation type surface: "
+                f"{MODULE.RECORD_LEDGER.as_posix()}",
+                output.getvalue(),
+            )
 
     def test_public_generator_uses_the_shared_firewall(self) -> None:
         generator_path = ROOT / "12_PUBLIC_SITE/generate_public_library.py"

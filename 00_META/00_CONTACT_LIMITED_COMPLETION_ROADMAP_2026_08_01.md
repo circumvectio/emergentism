@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 2 verified; Sprint 3 completion ratchet next"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 3 verified; Sprint 4 citation custody is next"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -52,9 +52,9 @@ Finite residue still visible after that work:
 
 | ID | Current measured boundary | Required closure |
 |---|---|---|
-| `CITATION-COLLISIONS` | 97 receipt prefixes are reused across the full generated index; 91 remain citation-dangerous after declared disambiguations | explicit collision registry and full-filename citation rule; never rename history merely to make a counter zero |
-| `PUBLIC-LIFECYCLE` | current count must be recomputed; the older prose estimate of 28 undeclared routes is not authority | every route classified current, provisional, frozen, withheld, or infrastructure by its owning generator/manifest |
-| `CLAIM-DISPOSITION` | 17 machine-source rows remain open | each row resolved, narrowed, or explicitly typed contact-gated with owner, discriminator, and kill |
+| `CITATION-COLLISIONS` | 97 receipt prefixes are physically reused across the full generated index and therefore all 97 are unsafe as bare citations; the older count of 91 is only a broad status-word heuristic, not target resolution | explicit collision registry and full-filename citation rule; never rename history merely to make a counter zero |
+| `PUBLIC-LIFECYCLE` | 398 artifacts are in the measured delivery universe: 384 classified and 14 unclassified; one clean-route alias collision and eight precedence overlaps remain explicit | every route classified current, provisional, frozen, withheld, or infrastructure by its owning generator/manifest |
+| `CLAIM-DISPOSITION` | the machine owner carries 17 W rows and 9 reopened research-question rows; the former 17-row count was W-only, not the complete investigation universe | each row resolved, narrowed, or explicitly typed contact-gated with owner, discriminator, and kill |
 | `OWNER-HELD-RESIDUE` | topology and frozen-public-document gates remain held; other old plan rows require a fresh audit | one dated rule per genuine residue; stale rows close with evidence rather than silence |
 | `WORLD-CONTACT` | twelve research sockets are packet-complete and evidence-open; the independent-review gate remains unsatisfied | returned observation, review, or replication filed verbatim with outcome custody |
 
@@ -67,7 +67,8 @@ not the prose plan. It must report citation collisions, route lifecycle, open
 claim disposition, owner-held residue, and external-contact state. Counts may
 fall or be reclassified under a dated rule; they may not disappear silently.
 
-**Exit:** the full gate prints the exact finite internal remainder every run.
+**Exit:** the full gate prints the exact scalar remainder and validates the
+state-bound identities, memberships, and exceptions every run.
 
 ### Sprint 4 — citation collision custody
 
@@ -88,10 +89,12 @@ frozen. No deployment is part of this sprint.
 
 ### Sprint 6 — open-claim disposition
 
-Review all 17 machine-source open rows. Formal questions receive a proof,
-countermodel, narrowing, or terminal verdict. Empirical questions receive an
-explicit contact-gated contract; they do not become internally "closed" by
-renaming missing evidence.
+Review all 26 machine-owner investigation rows: the 17-row W scope and the nine
+reopened research questions. Formal questions receive a proof, countermodel,
+narrowing, or terminal verdict. Empirical questions receive an explicit
+contact-gated contract; they do not become internally "closed" by renaming
+missing evidence. A terminal W row remains counted in its source section but is
+not misreported as a live investigation.
 
 **Exit:** zero ambiguous open rows; every remaining open claim is typed to a
 named external discriminator.

@@ -91,6 +91,58 @@ NEGATED = re.compile(
     r"was never|no receipt|MISSING|non-existent|nonexistent",
     re.I,
 )
+CLAUSE_BREAK = re.compile(
+    r"(?:[.!?;][\"')\]]*\s+|\n\s*\n|,\s+(?=(?:but|however|whereas|while)\b))",
+    re.I,
+)
+LIST_JOINER = re.compile(r"^[\s,]*(?:(?:and|or)[\s,]*)?$", re.I)
+
+
+def citation_is_negated(text: str, citation: re.Match[str]) -> bool:
+    """Apply a negation only to the citation or coordinated list it governs."""
+    lo, hi = 0, len(text)
+    for boundary in CLAUSE_BREAK.finditer(text):
+        if boundary.end() <= citation.start():
+            lo = boundary.end()
+        elif boundary.start() >= citation.end():
+            hi = boundary.start()
+            break
+    clause = text[lo:hi]
+    citations = list(CITATION.finditer(clause))
+    negations = list(NEGATED.finditer(clause))
+    target_start = citation.start() - lo
+    target_index = next(
+        (
+            index
+            for index, match in enumerate(citations)
+            if match.start() == target_start
+        ),
+        None,
+    )
+    if target_index is None:
+        return False
+
+    for negation in negations:
+        def distance(match: re.Match[str]) -> int:
+            if match.end() <= negation.start():
+                return negation.start() - match.end()
+            if negation.end() <= match.start():
+                return match.start() - negation.end()
+            return 0
+
+        anchor = min(range(len(citations)), key=lambda index: (distance(citations[index]), index))
+        first = last = anchor
+        while first > 0 and LIST_JOINER.fullmatch(
+            clause[citations[first - 1].end() : citations[first].start()]
+        ):
+            first -= 1
+        while last + 1 < len(citations) and LIST_JOINER.fullmatch(
+            clause[citations[last].end() : citations[last + 1].start()]
+        ):
+            last += 1
+        if first <= target_index <= last:
+            return True
+    return False
 
 
 def receipt_files() -> dict[str, list[Path]]:
@@ -136,22 +188,12 @@ def main() -> int:
             text = p.read_text(encoding="utf-8", errors="ignore")
         except OSError:
             continue
-        lines = text.splitlines()
         for m in CITATION.finditer(text):
             num = m.group(1) or m.group(2)
             if num in by_num:
                 continue
             line = text[: m.start()].count("\n") + 1
-            # The whole markdown paragraph, so a negation anywhere in the sentence counts.
-            # A +/-1 line window was too narrow: r191's own paragraph puts the citation two
-            # lines above "The receipts were never written."
-            lo = hi = line - 1
-            while lo > 0 and lines[lo - 1].strip():
-                lo -= 1
-            while hi + 1 < len(lines) and lines[hi + 1].strip():
-                hi += 1
-            ctx = " ".join(lines[lo: hi + 1])
-            if NEGATED.search(ctx):
+            if citation_is_negated(text, m):
                 continue
             rel = p.relative_to(ROOT)
             dangling.append(f"{rel}:{line} cites r{num}, which matches no receipt file")

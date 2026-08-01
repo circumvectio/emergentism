@@ -17,6 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The contact-limited receipt ratchet compares HEAD with its first
+          # parent. Depth 1 would make immutable receipt custody unverifiable.
+          fetch-depth: 2
 
       - uses: actions/setup-python@v5
         with:

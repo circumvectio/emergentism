@@ -74,6 +74,15 @@ gate is inadmissible as world-contact evidence. Any declared world-contact
 record must also resolve to repository-relative custody; a label without a
 file cannot move that axis.
 
+`test_contact_limited.py` supplies mutation controls for the exact bounded
+completion inventory. It removes artifacts, W3/RQ/debt rows, preserves counts
+while substituting debt IDs, fabricates internal world evidence, changes the
+nested archive-ignore rule, and mutates alias/overlap lifecycles; each move
+must fail rather than silently rewrite the baseline. Temporary Git histories
+also prove that a new receipt may land once, an unchanged receipt survives a
+later commit, a same-path rewrite fails, and shallow parent history fails
+closed.
+
 `test_node_product_ranking.py` supplies positive and negative controls for the
 KSC-02 regression gate, including adjacent-denial bypasses, exact scope
 exclusions, the Managed Agents projection, and the live active-corpus scan.

@@ -8,7 +8,7 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 235, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (r174); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 236, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
 date: 2026-08-01
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
@@ -194,6 +194,7 @@ never back-filled:
 | 233 | `233_LIBRARY_GFS_RESIDUE_ANSWERS_Q6_DISSENT_2026_07_31.md` | Partial Q6 library audit: 50 frozen pages were measured as citing the retracted GFS study without a fence; the receipt reports the measurement, not a new ruling. |
 | 234 | `234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md` | All 229 actionable findings receive durable dispositions; the all-false lane Boolean is calibrated, remaining debt stays explicit, and local completion remains gated from world contact. |
 | 235 | `235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` | K3 residue, `KSC-02` projection drift, the Foundation type conflict, source-resolution ambiguity, and the coherence Boolean are converted into typed repairs, negative gates, and a recursive contact-limited roadmap. |
+| 236 | `236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md` | Exact receipt, public-lifecycle, claim, owner-held, and world-contact remainder is recomputed by a state-digest-bound ratchet; local `PASS-WITH-DEBT` makes no external-validation claim. |
 
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
@@ -238,7 +239,7 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 ## 6 · The receipt-prefix collision census (full)
 
 Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20
-and not re-run since**. Existing receipts 169–179, 181–191, 193, and 232–235 are
+and not re-run since**. Existing receipts 169–179, 181–191, 193, and 232–236 are
 therefore **absent from the table below**; prefixes 180 and 192 have no receipt
 file located as of 2026-08-01. Section 3 records both the located filenames and
 the two explicit gaps, but this collision census remains stale rather than
@@ -347,4 +348,4 @@ entry comes from contact. **Canonical path:**
 Source draft: `01_EMERGENTISM/90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md`
 (staged 2026-07-19; absorbed here and preserved).
 
-⊙ = • × ○ — *every grave dated, every kill legible, and one line left blank for the world to write.*
+•  ⊙  ○ — *every grave dated, every kill legible, and one line left blank for the world to write.*

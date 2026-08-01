@@ -43,6 +43,7 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_foundation.py"
   "09_TOOLS/01_SCRIPTS/check_claim_status.py"
   "09_TOOLS/01_SCRIPTS/check_coherence_profile.py"
+  "09_TOOLS/01_SCRIPTS/check_contact_limited.py"
   "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
   "09_TOOLS/01_SCRIPTS/check_generative_base.py"
   "09_TOOLS/01_SCRIPTS/check_established.py"

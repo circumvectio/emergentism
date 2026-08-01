@@ -43,8 +43,8 @@ become a way of losing work and should be repaired.
 | ~~`§5.1`~~ | **CLOSED — signed 2026-07-31 (Q1), register-indexed.** `√2` is a number in `ℝ`; it is not a finite word over `{S, ι}`; neither clause may be published without the other in the same proximity window. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` §Q1; executed in receipt 232 |
 | ~~`G-0`~~ | **CLOSED — superseding type repair landed 2026-08-01.** The 2026-07-29 exit had harvested a Titan rendering as an algebra identity and was therefore ill-typed under `KSC-04`. The repaired Foundation uses only `B1–B3` inside a separate `AlgebraWitness`; it defines no Titan coercion and preserves the rejected syntax only through dated custody. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`G-0b`~~ | **CLOSED — retained through the 2026-08-01 typed repair.** `F1` remains a property of presupposed `P1`, not a stratum beside it; the correction does not restore the ill-typed fourth posit. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
-| — | Disposition of the **91 citation-dangerous ambiguous receipt numbers**, within **97 reused prefixes** indexed across the full namespace: every reused prefix needs complete custody, and active citations must use a full filename or another unambiguous locator. Historical files are not renamed merely to make either counter fall. | trustworthy numeric citation anywhere in the corpus | `09_TOOLS/01_SCRIPTS/check_receipt_citations.py`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md` |
-| **PARTLY RULED** | Disposition of the site pages declared neither current nor frozen. **Ruled by Q4, signed and executed 2026-07-31** (receipts 193, 232): four routes are DECLARED-PROVISIONAL, `/offline/` is infrastructure, `/historical-boundary/` is unchanged, and seven that had no robots header at all were frozen. **28 remain undeclared** — the count moves as routes are added, so recount rather than trusting this number. |
+| — | Disposition of all **97 physically reused receipt prefixes**, each unsafe as a bare numeric citation. The older count of 91 is retained only as a legacy broad-status-word heuristic; it does not resolve six additional prefixes. Every reused prefix needs complete custody, and active citations must use a full filename or another unambiguous locator. Historical files are not renamed merely to make a counter fall. | trustworthy numeric citation anywhere in the corpus | `00_META/CONTACT_LIMITED_STATE.json`; `09_TOOLS/01_SCRIPTS/check_receipt_citations.py`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json` |
+| **PARTLY RULED** | Disposition of the site pages declared neither current nor frozen. **Ruled by Q4, signed and executed 2026-07-31** (receipts 193, 232): four routes are DECLARED-PROVISIONAL, `/offline/` is infrastructure, `/historical-boundary/` is unchanged, and seven that had no robots header at all were frozen. The current ratchet measures **14 unclassified artifacts** in a 398-artifact universe; their exact identities are state-bound. | public lifecycle closure | `00_META/CONTACT_LIMITED_STATE.json`; `12_PUBLIC_SITE/public_semantic_parity.json` |
 | ~~`FOUNDATION-KSC-04`~~ | **CLOSED — typed repair landed 2026-08-01.** Foundation, K-5, and the active downstream chain now keep `TitanFrame` disjoint from the separate algebra, numeric, and projective carriers. A repository-wide negative gate rejects arithmetic or cross-type identification over Titan terms. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`KSC-02-ACTIVE-PROJECTION-DRIFT`~~ | **CLOSED — active-scope sweep landed 2026-08-01.** The selected node aggregator is `P_node := min(Φ̂₄,V₄)`; the old product survives only as labelled history or a separately conditioned cardinal candidate, never as the selected ranking. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
 | ~~`BODY-SURVEY-04-06`~~ | **CLOSED — body-level survey landed 2026-08-01.** `04_AXIOLOGY/` and `06_ONTOLOGY/` were read claim-by-claim in the complete actionable-finding adjudication; local checks and independent review then replayed the repaired scope. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md` |
@@ -65,10 +65,12 @@ become a way of losing work and should be repaired.
 Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 
 ```text
-18   validated   passed their own validator
-17   open        awaiting evidence or a ruling   <- the live queue
-22   graves      terminal; a one-way row may never return as the claim it was
- 9   reopened    under a named owner ruling, with the counterexample still attached
+18   validated    passed their own validator
+17   open         W rows: 16 live-status + 1 terminal NOT-WELL-POSED
+22   graves       terminal forms; a one-way row may never return as the claim it was
+ 9   reopened RQ  live investigations under a named owner ruling, counterexamples attached
+
+25   live investigations = 16 live-status W rows + 9 reopened research questions
 ```
 
 > **A correction this manifest made to itself on the day it was written.** The first
@@ -92,7 +94,7 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 | `GP-03` specifically | **struck void as written** — its entry condition required independent numeric factor measures, which the ordinal ruling abolished. No replacement specified. | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md` |
 | **Three preregistrations** — fresh-reader comprehension, independent review, controlled comparison | protocols written and public; **no session, no engaged reviewer, no registered comparison** | `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/` |
 | **The review packet** — the cheapest of the three gates, needing no ethics determination and no participants | **assembled, frozen and hash-verified 2026-07-30; NOT SENT.** Ten files, `sha256` recorded, invitation drafted. What remains is identifying one qualified outsider and asking them — an owner act, and the protocol rules out the substitute in one line: *"AI or project-agent review … does not satisfy this external gate."* | `.../REVIEW_BUNDLE_v1.md` |
-| **Returned outcomes from outside** | **311 numbered receipts · 7 mention an outcome coming back · 0 record one that did** | `12_PUBLIC_SITE/record/` |
+| **Returned outcomes from outside** | **312 receipt files under the filename convention · 306 citable receipt targets · 0 accepted external-evidence records** | `00_META/CONTACT_LIMITED_STATE.json` · `12_PUBLIC_SITE/record/` |
 
 That last row is the honest summary of this whole folder. Everything above it is
 internal work. **A framework can be internally immaculate and still be about nothing.**
