@@ -78,11 +78,13 @@ longer gated on this sprint. This paragraph remains as evidence of the drift it 
 
 ## HISTORICAL SPRINT 1 · Invitation-first sequence superseded — do not execute
 
-The v1 invitation premise is obsolete. The current v3 twelve-file hash set has
-an internally verified acyclic manifest binding, but the registry remains
+The v1 invitation premise is obsolete. The current v4 hash set has an
+internally verified acyclic manifest binding and provenance firewall, but the registry remains
 blocked on the complete review materials bundle, conflict and reviewer-scope
 forms, compensation terms, publication permission, and an applicability
-determination. The live sequence is owned by
+determination. Version 4 accepts no local owner or external evidence for those
+rows; a later route requires a reviewed successor schema and independent
+verification boundary. The live sequence is owned by
 `../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md`.
 
 - **Current pre-contact exit:** the six remaining material/human/owner registry

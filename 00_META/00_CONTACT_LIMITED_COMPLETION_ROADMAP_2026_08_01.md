@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody verified; Sprint 7B–D and external review remain blocked"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody and Sprint 7B provenance firewall verified; Sprint 7C–D and external review remain blocked"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -144,7 +144,7 @@ determination remain missing. No reviewer was identified, contacted, or
 engaged. Source: the Finity
 `REVIEW_BUNDLE_BINDING_CONTRACT_v1.md` and v3 manifest/receipt.
 
-### Sprint 7B — prerequisite-provenance firewall
+### Sprint 7B — prerequisite-provenance firewall — VERIFIED 2026-08-02
 
 Before drafting or accepting templates, type which prerequisites need a purely
 technical artifact, a named owner attestation, an external declaration, or an
@@ -152,9 +152,19 @@ applicable ethics determination. The registry must fail closed if a blank
 template, internal receipt, or project-agent assertion tries to satisfy a
 human/owner/external prerequisite.
 
-**Exit:** the lifecycle schema and mutation tests distinguish source kind from
-file existence; no remaining human prerequisite is marked complete by a
-template alone.
+**Outcome:** version 4 hash-locks retained v1–v3 packet artifacts and freezes
+one provenance assignment per review prerequisite plus `D-OWNER-03` as
+`unset`. The checker accepts only the technical manifest binding; it rejects
+every local file/hash/receipt/JSON promotion of a non-bundle prerequisite and
+every present external-state record. The v4 inventory is exact, ancestor
+symlinks are rejected, provenance booleans are typed strictly, and retained
+artifact bytes are checked against their frozen per-artifact Git content commits
+when those objects are locally available. No owner decision, reviewer, contact,
+or external record was added.
+
+**Exit:** the lifecycle schema and mutation tests reject local source kind and
+file existence as substitutes for human or external evidence; no remaining
+review prerequisite is marked complete by any local template or JSON record.
 
 ### Sprint 7C — owner decision propagation
 
@@ -169,13 +179,15 @@ source paths and tests. If unselected, the two routing debts remain visible as
 
 ### Sprint 7D — pre-contact completion, then external review clock
 
-Only after a complete, scoped owner envelope may the exact review materials,
-real conflict/scope, compensation, publication-permission, and applicability
-records be gathered. Then the owner may name a qualified recipient and choose
-whether to contact them. An AI or project-agent review remains internal search
-signal and cannot satisfy this gate.
+Only after a complete, scoped owner envelope **and** a reviewed successor
+schema with an independent verification boundary may the exact review
+materials, real conflict/scope, compensation, publication-permission, and
+applicability records be gathered. Then the owner may name a qualified recipient
+and choose whether to contact them. An AI or project-agent review remains
+internal search signal and cannot satisfy this gate.
 
-**Local exit:** all registry prerequisites carry real custody. **External step
+**Local exit:** a successor registry, not the custody-only v4 registry, binds
+the reviewed verification boundary and every prerequisite. **External step
 (owner-only):** if a separately authorized invitation to a named independent
 reviewer is actually sent, a dated receipt records only that event. A reply is
 not fabricated or implied.

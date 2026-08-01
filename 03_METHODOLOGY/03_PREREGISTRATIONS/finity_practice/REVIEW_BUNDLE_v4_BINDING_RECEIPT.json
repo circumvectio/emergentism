@@ -1,0 +1,28 @@
+{
+  "schema": "emergentism/finity-review-bundle-binding-receipt/v1",
+  "kind": "internal-acyclic-manifest-binding",
+  "date": "2026-08-02",
+  "scope": "Internal custody record for the v4 acyclic review-bundle graph and prerequisite-provenance firewall. It binds the manifest, static registry snapshot, and binding contract without recording or accepting an owner selection, reviewer, contact, permission, ethics determination, payment, external state, or outcome.",
+  "manifest": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.json",
+    "sha256": "78481da7504abd56c94dc6c0fd8971787421db68e843ec7098dc850ab7142a86"
+  },
+  "snapshot": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v4.json",
+    "sha256": "b1de07b4e1653eeeda8aeea3b6b54974048db8786a9b4ad2b933d39343dddc5b"
+  },
+  "binding_contract": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+    "sha256": "42df07b59f095d4a981387acb2eb656a0318bb421afd4154dee8654b3408a497"
+  },
+  "live_registry": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+    "excluded_from_manifest": true
+  },
+  "does_not_establish": [
+    "a selected owner, principal, actor, mandate, permission, or compensation term",
+    "a qualified reviewer identity, competence, independence, conflict declaration, or engagement",
+    "an ethics or applicability determination",
+    "a review, endorsement, validation, result, replication, or world-contact outcome"
+  ]
+}

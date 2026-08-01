@@ -2,7 +2,7 @@
 title: "FPE-REVIEW-01 — Independent Review Packet"
 type: external-review-packet
 gate_id: FPE-REVIEW-01
-version: 1.1.0-draft
+version: 1.3.0-draft
 date: 2026-08-02
 status: "TYPED DRAFT · CONTACT DEFERRED · NO REVIEWER ENGAGED · NO REVIEW EXISTS"
 evidence_tier: "[D] review design; external findings remain absent"
@@ -83,6 +83,24 @@ rejects a raw registry, manifest self-reference, or binding-receipt inclusion in
 the bundle. This repair proves only that the packet's custody graph is acyclic.
 It does not fill the missing complete review materials, forms, terms,
 permission, applicability determination, reviewer, contact, or review.
+
+### Prerequisite-provenance firewall
+
+Version 4 freezes a second, narrower contract: every review prerequisite has a
+declared evidence kind, and the owner authority for `D-OWNER-03` is frozen as
+`unset`. The checker therefore rejects a generic local file, a blank template,
+an internal agent assertion, or a merely hash-matching receipt as a substitute
+for a materials bundle, owner attestation, external declaration, or
+applicability determination.
+
+This is not an owner selection. It records no principal, reviewer, contact,
+permission, compensation, ethics determination, or outcome. Version 4 accepts
+no local owner or external evidence at all: a later selection changes the
+frozen authority context and requires a new packet version, reviewed successor
+schema, and independent verification boundary before any corresponding evidence
+can be considered. A local JSON file can bind bytes; it cannot authenticate a
+person, prove consent or independence, establish ethics approval, or authorize
+contact.
 
 ## Reviewer questions
 

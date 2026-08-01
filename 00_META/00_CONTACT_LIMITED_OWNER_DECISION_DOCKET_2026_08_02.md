@@ -9,6 +9,7 @@ parents:
   - 00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md
   - ../00_WORK_IN_PROGRESS/README.md
   - ../03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md
+  - ../03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md
 ---
 
 # Contact-limited owner decision docket
@@ -20,13 +21,13 @@ semantic owner, a review packet, an authorization envelope, a contact list, or
 a permission to send anything. A row remains open until its named principal
 records a dated selection and the named source owners propagate it.
 
-The completed v3 bundle-binding repair is listed for context, but it made only
-a technical custody change. It did not select a reviewer, compensation,
-permission, ethics route, or external action.
+The completed v3/v4 bundle-binding repairs are listed for context, but they
+made only technical custody changes. They did not select a reviewer,
+compensation, permission, ethics route, or external action.
 
 | ID | Decision | Current state | Blocks |
 |---|---|---|---|
-| `D-TECH-01` | Review-bundle self-hash graph | **implemented internally** — v3 static snapshot; gate remains blocked | no human prerequisite is cleared |
+| `D-TECH-01` | Review-bundle self-hash graph and provenance firewall | **implemented internally** — v3/v4 static snapshots; gate remains blocked | no human prerequisite is cleared |
 | `D-OWNER-01` | Canonical owner for the byte-identical public planning duplicate | **UNSET** | current/custody routing of two public-site planning copies |
 | `D-OWNER-02` | Whether the active framework-support `00_META` path is a narrow exception or must migrate | **UNSET** | topology rule reconciliation |
 | `D-OWNER-03` | Principal and bounded terms for any future independent-review contact | **UNSET** | the six nontechnical/material review prerequisites and any later invitation |
@@ -36,11 +37,13 @@ permission, ethics route, or external action.
 - **Question:** Can the registry bind a frozen review manifest without the
   manifest hashing the mutable registry that contains the back-reference?
 - **Selection:** static allow-list projection → immutable v3 snapshot → v3
-  manifest; manifest plus local receipt → live registry.
+  manifest; v4 adds a frozen prerequisite-provenance contract with
+  `D-OWNER-03` explicitly `unset`; each manifest plus local receipt → live
+  registry.
 - **Source owner:** `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/`.
 - **Evidence:** `REVIEW_BUNDLE_BINDING_CONTRACT_v1.md`,
-  `REVIEW_REGISTRY_SNAPSHOT_v3.json`, `REVIEW_BUNDLE_v3.json`, and
-  `REVIEW_BUNDLE_v3_BINDING_RECEIPT.json`.
+  `REVIEW_BUNDLE_BINDING_CONTRACT_v2.md`, `REVIEW_REGISTRY_SNAPSHOT_v3.json`,
+  `REVIEW_REGISTRY_SNAPSHOT_v4.json`, and their matching manifests/receipts.
 - **Verification:** `python3 09_TOOLS/01_SCRIPTS/check_review_bundle.py` and
   the two named compiler suites in the binding contract.
 - **Does not establish:** forms, owner attestation, reviewer identity or
@@ -150,14 +153,16 @@ permission, ethics route, or external action.
 
 ## Next sprint sequence
 
-1. **Sprint 7B — prerequisite-provenance firewall:** distinguish a technical
-   artifact, owner attestation, and external declaration so a blank template
-   cannot satisfy a human or external prerequisite.
+1. **Sprint 7B — prerequisite-provenance firewall — VERIFIED 2026-08-02:**
+   distinguish technical, owner, external, and applicability evidence; v4
+   accepts only its internal manifest binding and cannot treat local text or
+   JSON as human or external completion.
 2. **Sprint 7C — owner decision propagation:** execute only a selected
    `D-OWNER-01` or `D-OWNER-02` ruling, with K3 custody and path-limited tests.
-3. **Sprint 7D — pre-contact completion:** after `D-OWNER-03`, collect the
-   complete material bundle and five real human/owner records, and let the
-   registry remain fail-closed until they are bound.
+3. **Sprint 7D — pre-contact completion:** after `D-OWNER-03`, define a
+   reviewed successor schema and independent verification boundary before
+   collecting the complete material bundle and five real human/owner records.
+   The v4 registry remains fail-closed and custody-only until then.
 4. **Sprint 8 — world-test cycles:** occurs only after lawful, methodologically
    ready external work; neither this docket nor internal tests can start it.
 
