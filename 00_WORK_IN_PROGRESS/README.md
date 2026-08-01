@@ -178,7 +178,7 @@ produce a middle; the keel as a protractor fact; the honesty-constitution negati
 result; **the law applied to itself returning 0**; and the dependency-priority /
 actuality / salience separation on the spine.
 
-**Not landed, and why** — after a second verification pass on 2026-07-30, **21 of the 28
+**Not landed, and why** — after a second verification pass on 2026-07-30, **20 of the 28
 landed and 6 were rejected as ungrounded or already public.** What remains:
 
 | # | item | state |

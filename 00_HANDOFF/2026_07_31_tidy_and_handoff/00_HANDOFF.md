@@ -124,7 +124,7 @@ and `git add -A` will sweep its in-flight work into your commit.
 
 ## 7 · The number that has not moved
 
-**308 numbered receipts. 7 mention an outcome coming back. 0 record one that did.**
+**309 numbered receipts. 7 mention an outcome coming back. 0 record one that did.**
 
 Nothing in this session changed it, and nothing in this session could have. Every gate
 added here measures the corpus against itself. The binding constraint remains contact with

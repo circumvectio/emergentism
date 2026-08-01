@@ -160,8 +160,9 @@ def main(argv: list[str]) -> int:
     )
     print(
         "  scope: local Markdown links only. NOT http(s) URLs (no network by design), NOT "
-        "90_ARCHIVE / 91_COMPATIBILITY (provenance may point at moved things), NOT "
-        "12_PUBLIC_SITE (predeploy_check.py owns HTML routes)."
+        "90_ARCHIVE / 91_COMPATIBILITY / 11_UPLINK / 00_HANDOFF (provenance — a dated "
+        "receipt records where a file WAS), NOT 12_PUBLIC_SITE (predeploy_check.py owns "
+        "HTML routes)."
     )
     return 0
 

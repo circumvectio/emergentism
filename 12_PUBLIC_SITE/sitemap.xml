@@ -52,7 +52,11 @@
   <url><loc>https://emergentism.org/map/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/lab/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/rosetta/</loc><priority>0.7</priority></url>
-  <url><loc>https://emergentism.org/halahala/</loc><priority>0.7</priority></url>
+  <!-- /halahala/ is deliberately NOT listed. vercel.json serves it 'noindex, follow'
+       (ruling Q4, receipt 232), and a sitemap <loc> for a noindex route asks a crawler
+       to index what the header forbids. The same contradiction was found and removed
+       for /atlas/ on 2026-07-30; this one survived that sweep. Never add a <loc> for a
+       route that carries a noindex header. -->
   <url><loc>https://emergentism.org/test/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/amrita/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/0/</loc><priority>0.6</priority></url>

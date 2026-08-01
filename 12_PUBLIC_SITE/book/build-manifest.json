@@ -40,7 +40,7 @@
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "c9e2d7efc9efa52aa8b57a29f79878222e0f8bffc24cc87567280c12c27470d4"
+    "sha256": "20e486a1c4a23c8d4159cce2abaafc9917a64151f2357df68a92253b4c1f7f49"
   },
   "renderer": {
     "extensions": [
@@ -55,7 +55,7 @@
   "sources": [
     {
       "path": "13_BOOKS/the_reciprocal/00_front_matter.md",
-      "sha256": "f7d0c3c5dbddb1020305de4a50786a612f53b2318841cc4153c7219867e8fe3a"
+      "sha256": "0be36a286ef2aed5ffc1c2fe51f1666797c0bb8fdca303f2fc3e7c7a461f69cf"
     },
     {
       "path": "13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md",
@@ -131,7 +131,7 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
-      "sha256": "65c8c6890d781f9f59461b10fab1b89d3f28e8f19a8b2057ce83a37da5828324"
+      "sha256": "2a800888c5ab5db37009a858e5d13fc998c015824728e6bb5217940a73a7f7df"
     },
     {
       "path": "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
@@ -155,7 +155,7 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/25_the-seed.md",
-      "sha256": "5784e7dbc31af4d631166f293141d9858d5bfa5ae32189c226a29ef2e67e338a"
+      "sha256": "824be6cd202dd2f871144aff422639744631074f102fe52541f460aa89a996e7"
     },
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",

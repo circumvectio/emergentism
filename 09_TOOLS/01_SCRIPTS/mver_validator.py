@@ -7,7 +7,7 @@ computes hashes of files in a physical directory, and cross-checks them.
 
 Exit codes:
   0 = Valid (no missing files, no hash mismatches)
-  1 = Invalid (missing files, mismatched hashes, or unindexed files found)
+  1 = Invalid (missing files or mismatched hashes); unindexed files are warnings only
 """
 
 from __future__ import annotations

@@ -15,7 +15,7 @@ silently:
   sw.js's CACHE constant     derived from the bytes of every current surface and cached
                              asset. Stale = returning visitors get the previous site.
 
-Both generators expose --check. gate.sh calls checkers with no arguments, so this wrapper
+All five generators expose --check. gate.sh calls checkers with no arguments, so this wrapper
 exists to pass it. Exits 0 only if both agree with the tree.
 """
 from __future__ import annotations

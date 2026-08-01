@@ -64,7 +64,7 @@ And one law stated in words rather than symbols, for a reason given below:
 > returns nothing at all when either factor is absent.
 
 The earlier edition of this book wrote that law as a product and used it to rank things.
-Both moves have since been withdrawn by this corpus. The product form is retired as a
+Both moves have since been withdrawn. The product form is retired as a
 ranking, and the ranking use is the specific error: two factors that are jointly necessary
 tell you *whether* something can flourish, not *how much* it flourishes relative to
 something else. What survives is the conjunction, and the conjunction is enough. It is the

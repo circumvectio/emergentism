@@ -53,6 +53,12 @@ out/
 # it lets any session start the site preview for visual verification.
 .claude/settings.local.json
 
-# Simulation output — 3.9G, 46k files, never tracked. Ignored so it stays out of
+# Simulation output — 3.9G, ~46k files on disk. This rule keeps NEW output out of
+# `git status`. It does NOT untrack the 31 files here that are ALREADY in the index
+# (the docs, the analysis scripts, and the whole formal_reap/ Lean project including
+# PROOF_LEDGER.md) — .gitignore has no effect on tracked paths. The old comment said
+# "never tracked", which was false and would mislead anyone adding a new proof module:
+# a new file under this path is invisible to `git status` and easy to lose. Ignored so
+# it stays out of
 # `git status` noise and cannot be swept in by an accidental `git add`.
 09_TOOLS/03_SIMULATIONS/

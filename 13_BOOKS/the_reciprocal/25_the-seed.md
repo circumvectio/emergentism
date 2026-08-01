@@ -2,7 +2,7 @@
 title: "Chapter 25: The Seed"
 status: "[D] ported edition — argument preserved, register corrected, not re-adjudicated"
 date: 2026-07-31
-source: "The Reciprocal, Public Edition 2026-07-22, chapter 25"
+source: "The Reciprocal, Public Edition 2026-07-22, chapter 25 + Notes On Evidence And Sources + Glossary"
 evidence_tier: "[D] the port itself; the chapter's own claims keep whatever tier they carried"
 ---
 
@@ -603,7 +603,7 @@ This glossary is a reader aid, not a second doctrine. Ordinary language should r
 
 **Model-internal claim:** A claim that is true within the terms of the model but has not yet been translated into public evidence.
 
-**Node flourishing:** Empirical or organizational flourishing, read from measured coherence and measured viability in a real node. It is a two-factor AND-class law: coherence and viability are jointly necessary, and neither substitutes for the other. A conjunctive law returns nothing when either factor is zero. It is not a product, not a score, and it ranks nothing.
+**Node flourishing (`P_node`):** Empirical or organizational flourishing, read from measured coherence and measured viability in a real node. It is a two-factor AND-class law: coherence and viability are jointly necessary, and neither substitutes for the other. A conjunctive law returns nothing when either factor is zero. It is not a product, not a score, and it ranks nothing.
 
 **Noosphere:** Shared cognitive atmosphere: media, institutions, incentives, archives, platforms, language, and collective memory. It is not treated as mystical warrant.
 

@@ -259,7 +259,7 @@ A mature envelope should include:
 - the source signal and its evidence tier;
 - the route taken through IS, COULD, SHOULD, and SHOULD NOT;
 - the recommendation and dissent;
-- the value ledger: `ΣΔB` and `ΣΔP` across the widest honest boundary visible;
+- the value ledger: `ΣΔB` and `ΣΔP_node` across the widest honest boundary visible;
 - the anti-capture checks: `η_move = 0`, the two-person signing rule, K4, receipts, Grace Exit;
 - the missing evidence;
 - the rollback path;

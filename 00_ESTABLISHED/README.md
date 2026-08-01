@@ -79,7 +79,7 @@ cannot verify**, rather than passing silently.
 | `associativity_falsifier` | the canon's own falsifier — **valid**, and it refutes a RING | exhibit an associative structure where it fails |
 | `falsifier_premise_impossible` | `0·w = 1` is already impossible in any nontrivial ring — the falsifier never needed associativity | exhibit a nontrivial ring with `0·w = 1` |
 | `no_absorber_in_nontrivial_ring` | **"`Ĉ` is not a ring" — the structural reason, checked** | exhibit a nontrivial ring with `w + 1 = w` |
-| *(11 more)* | involutions, orbit identity, duality, absorbers | see the file |
+| *(10 more)* | involutions, orbit identity, duality, absorbers | see the file |
 
 > **Note against over-reading, carried from the file's own §7:** these are checked
 > over `ℝ`, `ℂ`, `Bool`, and abstract `Ring`/`Field`/`Mul`. **The primary object
@@ -125,7 +125,7 @@ the D-registers · the μ-contract (HR-1 open; μ₂ and μ₃ FAILED)
 Justice · Power-Max · Egregoreotype · the Soul Loop · the Crown Wager
 sphere primacy S1 (a SELECTION) · the Titan reading of {•, ⊙, ○} (an [I] gloss)
 every one of the 11 GP empirical sockets — 0 run
-every one of the 8 OPEN-EMPIRICAL wager rows — 0 tested
+every one of the 11 OPEN-EMPIRICAL wager rows — 0 tested
 ```
 
 **None of that is thereby false.** It is unchecked, or selected, or interpretive, and

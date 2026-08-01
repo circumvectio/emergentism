@@ -92,6 +92,13 @@ def main() -> int:
         for bucket in ("validated", "open", "graves", "reopened"):
             rows = data.get(bucket)
             if not isinstance(rows, list):
+                # Was a silent `continue`: a bucket that went missing or changed shape
+                # made its count unverifiable AND unmentioned, so the checker passed
+                # while checking one fewer thing than its message claims.
+                errors.append(
+                    f"CLAIM_STATUS.yaml bucket '{bucket}' is missing or is not a list "
+                    f"(got {type(rows).__name__}); its count could not be checked"
+                )
                 continue
             actual = len(rows)
             m = re.search(rf"^\s*(\d+)\s+{bucket}\b", text, re.M)

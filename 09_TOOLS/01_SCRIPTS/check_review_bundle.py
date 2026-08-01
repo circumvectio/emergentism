@@ -25,7 +25,21 @@ DOC = DIR / "REVIEW_BUNDLE_v1.md"
 
 def main() -> int:
     if not MANIFEST.exists():
-        print("REVIEW BUNDLE: PASS (no bundle frozen — nothing to verify)")
+        # A missing manifest used to print PASS and exit 0, which meant the check
+        # disappeared together with the evidence it exists to guard: delete the frozen
+        # manifest and the gate goes green. Discriminate instead. If the bundle DOCUMENT
+        # is present, a bundle was frozen and its manifest must be too — its absence is a
+        # custody failure, not an empty state.
+        if DOC.exists():
+            print("REVIEW BUNDLE: FAIL")
+            print(f"- {DOC.name} is present but {MANIFEST.name} is missing.")
+            print("  A bundle was frozen and its hash manifest is gone, so nothing can be")
+            print("  verified. This fails CLOSED on purpose: passing here would report")
+            print("  custody the check no longer has.")
+            return 1
+        print("REVIEW BUNDLE: PASS (no bundle document and no manifest — nothing frozen)")
+        print("  scope: this is the genuinely-empty state. It does NOT mean a bundle was")
+        print("  checked; it means none exists.")
         return 0
     try:
         man = json.loads(MANIFEST.read_text(encoding="utf-8"))

@@ -124,7 +124,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         manifest = json.loads((SITE / "book/build-manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(manifest["schema"], "emergentism/public-book-build/v1")
-        self.assertEqual(len(manifest["sources"]), 3)
+        self.assertEqual(len(manifest["sources"]), 29)
 
 
 if __name__ == "__main__":
