@@ -83,7 +83,7 @@ also prove that a new receipt may land once, an unchanged receipt survives a
 later commit, a same-path rewrite fails, and shallow parent history fails
 closed.
 
-`test_active_receipt_citations.py` supplies 23 mutation controls for typed and
+`test_active_receipt_citations.py` supplies 24 mutation controls for typed and
 exact target substitution, same-line binding, packet/receipt lane separation,
 new-owner discovery, filename-extension spoofs, duplicate/malformed JSON,
 context-hashed diagnostics, immutable digest custody, and the delivered public

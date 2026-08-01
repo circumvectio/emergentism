@@ -39,7 +39,7 @@ RECEIPT_INDEX = Path(
 )
 RECEIPT_REF = Path(
     "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
-    "237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md"
+    "238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md"
 )
 PUBLIC_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
 REGISTRY_DIGEST = re.compile(
@@ -1150,14 +1150,65 @@ def build_registry(root: Path) -> dict[str, Any]:
     }
 
 
-def _git_bytes(root: Path, revision: str, path: Path) -> bytes | None:
-    result = subprocess.run(
-        ["git", "-C", str(root), "show", f"{revision}:{path}"],
+def _git_path_bytes(root: Path, revision: str, path: Path) -> bytes | None:
+    """Read one path from a required commit, distinguishing absence from failure."""
+    verify = subprocess.run(
+        ["git", "-C", str(root), "rev-parse", "--verify", "--quiet", f"{revision}^{{commit}}"],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         check=False,
     )
-    return result.stdout if result.returncode == 0 else None
+    if verify.returncode != 0:
+        raise ContractError([f"required git revision unavailable: {revision}"])
+    tree = subprocess.run(
+        ["git", "-C", str(root), "ls-tree", "-z", revision, "--", path.as_posix()],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if tree.returncode != 0:
+        raise ContractError(
+            [f"cannot inspect {path} at required git revision {revision}"]
+        )
+    if not tree.stdout:
+        return None
+    result = subprocess.run(
+        ["git", "-C", str(root), "show", f"{revision}:{path.as_posix()}"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise ContractError([f"cannot read {path} at required git revision {revision}"])
+    return result.stdout
+
+
+def _first_parent_revision(root: Path) -> str | None:
+    """Return HEAD's first parent; fail when shallow history hides it."""
+    shallow = subprocess.run(
+        ["git", "-C", str(root), "rev-parse", "--is-shallow-repository"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        check=False,
+    )
+    if shallow.returncode != 0:
+        raise ContractError(["cannot determine whether git history is shallow"])
+    row = subprocess.run(
+        ["git", "-C", str(root), "rev-list", "--parents", "-n", "1", "HEAD"],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        check=False,
+    )
+    if row.returncode != 0 or not row.stdout.strip():
+        raise ContractError(["cannot inspect HEAD first-parent history"])
+    parts = row.stdout.split()
+    if len(parts) == 1:
+        if shallow.stdout.strip().lower() == "true":
+            raise ContractError(["first-parent history unavailable in shallow repository"])
+        return None
+    return parts[1]
 
 
 def custody_errors(root: Path, registry: dict[str, Any]) -> list[str]:
@@ -1173,12 +1224,26 @@ def custody_errors(root: Path, registry: dict[str, Any]) -> list[str]:
         errors.append(
             f"{RECEIPT_REF} must contain exactly one registry digest marker {digest}"
         )
-    head = _git_bytes(root, "HEAD", RECEIPT_REF)
+    try:
+        head = _git_path_bytes(root, "HEAD", RECEIPT_REF)
+    except ContractError as exc:
+        errors.extend(exc.errors)
+        return errors
     if head is not None and head != receipt_bytes:
         errors.append(f"{RECEIPT_REF} differs from committed HEAD bytes")
-    parent = _git_bytes(root, "HEAD^", RECEIPT_REF)
-    if head is not None and parent is not None and head != parent:
-        errors.append(f"{RECEIPT_REF} differs from immutable first-parent bytes")
+    if head is not None:
+        try:
+            parent_revision = _first_parent_revision(root)
+            parent = (
+                _git_path_bytes(root, parent_revision, RECEIPT_REF)
+                if parent_revision is not None
+                else None
+            )
+        except ContractError as exc:
+            errors.extend(exc.errors)
+        else:
+            if parent is not None and head != parent:
+                errors.append(f"{RECEIPT_REF} differs from immutable first-parent bytes")
     return errors
 
 
@@ -1219,7 +1284,7 @@ def main(argv: list[str] | None = None) -> int:
                 f"occurrences across {expected['occurrences']['source_count']} sources"
             )
             print(
-                "  custody pending until receipt 237 contains: "
+                f"  custody pending until {RECEIPT_REF.name} contains: "
                 f"active_receipt_citation_registry_canonical_sha256: {canonical_sha256(expected)}"
             )
             return 0

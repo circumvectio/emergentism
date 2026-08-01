@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail closed when current public pages drift from the pure dimension-first owners."""
+"""Fail closed when current or provisional public pages drift from their owners."""
 
 from __future__ import annotations
 
@@ -141,6 +141,24 @@ def has_titan_infix(text: str) -> bool:
     )
 
 
+def parity_audit_surfaces(data: dict) -> list[str]:
+    """Return every current/provisional surface subject to prohibition scans."""
+    current = data.get("currentSurfaces")
+    provisional_block = data.get("declaredProvisional")
+    if not isinstance(current, list) or not all(
+        isinstance(item, str) for item in current
+    ):
+        raise ValueError("currentSurfaces must be a list of paths")
+    if not isinstance(provisional_block, dict) or not isinstance(
+        provisional_block.get("routes"), list
+    ) or not all(isinstance(item, str) for item in provisional_block["routes"]):
+        raise ValueError("declaredProvisional.routes must be a list of paths")
+    combined = current + provisional_block["routes"]
+    if len(combined) != len(set(combined)):
+        raise ValueError("current and provisional public surfaces must be disjoint")
+    return combined
+
+
 def main() -> int:
     errors: list[str] = []
     for fixture in NODE_PRODUCT_REJECT_FIXTURES:
@@ -156,6 +174,11 @@ def main() -> int:
         if has_titan_infix(fixture):
             errors.append(f"Titan infix rule overmatched operator-free wording: {fixture}")
     data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    try:
+        audited_surfaces = parity_audit_surfaces(data)
+    except ValueError as exc:
+        errors.append(str(exc))
+        audited_surfaces = []
     if data.get("schemaVersion") != 2:
         errors.append("public semantic parity schemaVersion must be 2")
     contract = data.get("claimCardContract", {})
@@ -339,10 +362,10 @@ def main() -> int:
                 f"got {sorted(actual_cards)}"
             )
 
-    for rel in data.get("currentSurfaces", []):
+    for rel in audited_surfaces:
         path = SITE / rel
         if not path.is_file():
-            errors.append(f"missing current public surface: {rel}")
+            errors.append(f"missing current/provisional public surface: {rel}")
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         for name, pattern in FORBIDDEN.items():

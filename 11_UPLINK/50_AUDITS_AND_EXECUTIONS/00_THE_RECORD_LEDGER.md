@@ -8,7 +8,7 @@ rosetta:
   register: "[B] dated events with per-row provenance; [S] record-routing boundary; [I] synthesis"
   canonical_phrase: "K-7 The Record — every kill fired, every grave dated, the next entry written by contact"
 title: "K-7 · The Record Ledger"
-status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 236, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
+status: "ACTIVE — all 22 dead forms OWNER-REOPENED as active questions with counterexamples intact (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`); 50_AUDITS_AND_EXECUTIONS chronology indexed through receipt 238, with missing prefixes 180 and 192 explicit; §6 collision census stale as of 2026-07-20 and marked so; external calibration and deployment open; historical receipts preserved by full filename"
 date: 2026-08-01
 owner: 01_EMERGENTISM
 supersedes: "the 2026-07-19 staged draft, preserved at 90_ARCHIVE/staging_drafts_2026_07_20/00_K7_RECORD.md"
@@ -196,6 +196,7 @@ never back-filled:
 | 235 | `235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` | K3 residue, `KSC-02` projection drift, the Foundation type conflict, source-resolution ambiguity, and the coherence Boolean are converted into typed repairs, negative gates, and a recursive contact-limited roadmap. |
 | 236 | `236_CONTACT_LIMITED_COMPLETION_RATCHET_2026_08_01.md` | Exact receipt, public-lifecycle, claim, owner-held, and world-contact remainder is recomputed by a state-digest-bound ratchet; local `PASS-WITH-DEBT` makes no external-validation claim. |
 | 237 | `237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md` | Active receipt/packet target identity is bound by an exact occurrence registry and adversarial mutation gate; all reused prefixes remain unsafe bare, report-only history remains unchanged, and no publication or world-contact claim is made. |
+| 238 | `238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md` | All 398 public HTML artifacts receive one effective lifecycle class; the nested-archive matcher drift is closed locally, provisional scans and the deploy precheck fail closed, and no page is promoted or deployed. |
 
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
@@ -240,7 +241,7 @@ The record is not closed. The distillation ends with seven surfaces, one door, a
 ## 6 · The receipt-prefix collision census (full)
 
 Directory census of `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, **taken 2026-07-20
-and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 237 (with exact files recorded in §3) are
+and not re-run since**. Existing receipt-prefix groups 169 through 179, 181 through 191, 193, and 232 through 238 (with exact files recorded in §3) are
 therefore **absent from the table below**; prefixes 180 and 192 have no receipt
 file located as of 2026-08-01. Section 3 records both the located filenames and
 the two explicit gaps, but this collision census remains stale rather than

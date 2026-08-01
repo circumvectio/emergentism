@@ -12,18 +12,18 @@ Checks:
 7. Operators route uses current evidence tier markers
 8. Public reading bundle is wired
 9. Generated library pages preserve the generator chrome contract
-10. Deployment publication boundary excludes source/control/runtime files
-11. Current public semantics match the dimension-first source contract
-12. Claim-card graph and lifecycle registers match their source contracts
+10. Historical-withholding bytes, redirects, and search boundary agree
+11. Deployment publication boundary excludes source/control/runtime files
+12. Current/provisional public semantics match their source contract
 13. Claim cards, lifecycles, and barred-claim policy match source contracts
 14. The public book and its build manifest match deterministic source hashes
 15. The frozen-library manifest names the current reader deterministically
+16. The contact-limited public lifecycle has zero unclassified artifacts
 
 Exit 0 if all checks pass, 1 if any fail.
 """
 
 import json
-import fnmatch
 import hashlib
 import os
 import re
@@ -553,21 +553,88 @@ def vercelignore_matches(rel_path, pattern):
     pattern = pattern.replace(os.sep, "/")
     if pattern.startswith("!"):
         return False
-    if pattern.endswith("/"):
-        prefix = pattern.rstrip("/")
-        return rel_path == prefix or rel_path.startswith(prefix + "/")
-    if "/" not in pattern:
-        return fnmatch.fnmatch(os.path.basename(rel_path), pattern) or fnmatch.fnmatch(rel_path, pattern)
-    return fnmatch.fnmatch(rel_path, pattern.lstrip("/"))
+    anchored = pattern.startswith("/")
+    if "[" in pattern or "]" in pattern:
+        raise ValueError(
+            f"unsupported character-class pattern in .vercelignore: {pattern!r}"
+        )
+    directory_only = pattern.endswith("/")
+    if anchored:
+        pattern = pattern[1:]
+    if directory_only:
+        pattern = pattern[:-1]
+    if not pattern:
+        raise ValueError("empty .vercelignore pattern is unsupported")
+
+    regex = []
+    index = 0
+    while index < len(pattern):
+        char = pattern[index]
+        if char == "*":
+            if index + 1 < len(pattern) and pattern[index + 1] == "*":
+                while index + 1 < len(pattern) and pattern[index + 1] == "*":
+                    index += 1
+                if index + 1 < len(pattern) and pattern[index + 1] == "/":
+                    regex.append(r"(?:[^/]+/)*")
+                    index += 1
+                else:
+                    regex.append(r".*")
+            else:
+                regex.append(r"[^/]*")
+        elif char == "?":
+            regex.append(r"[^/]")
+        else:
+            regex.append(re.escape(char))
+        index += 1
+    expression = "".join(regex)
+    candidate = rel_path.strip("/")
+    parts = candidate.split("/") if candidate else []
+    directory_parts = parts if rel_path.endswith("/") else parts[:-1]
+    if directory_only:
+        if not anchored and "/" not in pattern:
+            return any(
+                re.fullmatch(expression, part, flags=re.IGNORECASE) is not None
+                for part in directory_parts
+            )
+        directory_prefixes = (
+            "/".join(directory_parts[:index])
+            for index in range(1, len(directory_parts) + 1)
+        )
+        return any(
+            re.fullmatch(expression, prefix, flags=re.IGNORECASE) is not None
+            for prefix in directory_prefixes
+        )
+    if "/" not in pattern and not anchored:
+        return re.fullmatch(
+            expression, parts[-1] if parts else "", flags=re.IGNORECASE
+        ) is not None
+    return re.fullmatch(expression, candidate, flags=re.IGNORECASE) is not None
 
 def is_vercel_ignored(rel_path, patterns):
-    ignored = False
-    for pattern in patterns:
-        negated = pattern.startswith("!")
-        raw = pattern[1:] if negated else pattern
-        if vercelignore_matches(rel_path, raw):
-            ignored = not negated
-    return ignored
+    rel_path = rel_path.replace(os.sep, "/").strip("/")
+    cache = {}
+
+    def is_kept(candidate, *, directory=False):
+        cache_key = (candidate, directory)
+        if cache_key in cache:
+            return cache[cache_key]
+        parts = candidate.split("/") if candidate else []
+        if len(parts) > 1:
+            parent = "/".join(parts[:-1])
+            if not is_kept(parent, directory=True):
+                cache[cache_key] = False
+                return False
+        ignored = False
+        match_path = candidate + "/" if directory else candidate
+        for pattern in patterns:
+            negated = pattern.startswith("!")
+            raw = pattern[1:] if negated else pattern
+            if vercelignore_matches(match_path, raw):
+                ignored = not negated
+        cache[cache_key] = not ignored
+        return not ignored
+
+    return not is_kept(rel_path)
 
 
 def header_source_covers(source, route):
@@ -844,6 +911,7 @@ def check_publication_boundary():
     required_patterns = {
         "book-pwa/",
         "90_ARCHIVE/",
+        "_archive/",
         "_STAGING_COMPASS_RESTRUCTURE/",
         "docs/",
         "__pycache__/",
@@ -880,11 +948,25 @@ def check_publication_boundary():
         "deploy_vercel.sh",
         "deploy_target_contract.py",
         "__pycache__/predeploy_check.cpython-311.pyc",
+        "compass/_archive/index_2026_07_12_pre_restructure.html",
+        "a/b/_archive/c.html",
     ]
     leaked = [rel for rel in risky_paths if not is_vercel_ignored(rel, patterns)]
     if leaked:
         for rel in leaked:
             error(f"publication boundary would not ignore: {rel}")
+        return False
+
+    safe_paths = [
+        "_archiveish/index.html",
+        "compass/_archiveish/index.html",
+        "compass/archive/index.html",
+        "_archive.html",
+    ]
+    overmatched = [rel for rel in safe_paths if is_vercel_ignored(rel, patterns)]
+    if overmatched:
+        for rel in overmatched:
+            error(f"publication boundary overmatches safe path: {rel}")
         return False
 
     vercel_entry = read_file("deploy_vercel.sh")
@@ -1035,6 +1117,27 @@ def check_reading_manifest_contract():
     ok(process.stdout.strip())
     return True
 
+
+def check_contact_limited_lifecycle():
+    print("\n[16] Contact-limited public lifecycle closure")
+    checker = os.path.join(
+        REPO_DIR, "09_TOOLS", "01_SCRIPTS", "check_contact_limited.py"
+    )
+    process = subprocess.run(
+        [sys.executable, "-B", checker],
+        cwd=REPO_DIR,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if process.returncode:
+        for line in (process.stdout + process.stderr).strip().splitlines():
+            error(line)
+        return False
+    summary = process.stdout.strip().splitlines()
+    ok(summary[0] if summary else "contact-limited lifecycle ratchet passed")
+    return True
+
 def main():
     print("=" * 60)
     print("Pre-deploy supply-chain gate — 12_PUBLIC_SITE")
@@ -1056,6 +1159,7 @@ def main():
         check_claim_card_contract(),
         check_public_book_build(),
         check_reading_manifest_contract(),
+        check_contact_limited_lifecycle(),
     ]
 
     # `results` was built and never read: the exit decision used only the global ERRORS

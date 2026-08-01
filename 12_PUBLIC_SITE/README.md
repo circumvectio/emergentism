@@ -140,7 +140,11 @@ the frozen library pages.
 
 The deploy boundary is `.vercelignore`; `vercel.json` supplies headers and 31
 route redirects. `/` is not redirected: it is served by `index.html`. No
-external scripts, stylesheets, fonts, or media are required.
+external scripts, stylesheets, fonts, or media are required. The predeploy
+suite also invokes the repository's contact-limited lifecycle ratchet: every
+deployable HTML artifact must have one effective class, both local ignore
+matchers must agree, and `sitemap.xml` must equal the current-plus-provisional
+route set exactly.
 
 The governing execution packet is
 [`_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md`](_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md).
@@ -195,7 +199,9 @@ curl -sI https://emergentism.org/amrita/ | grep -i x-robots-tag
 
 Expected: the four **declared-provisional** routes (`/amrita/ /egg/ /riemann/ /suda/`)
 return **no** `X-Robots-Tag` and are indexable; every frozen-library route and
-`/offline/` and `/titans/` return `noindex, follow`.
+the Q4 remainder routes, including `/build/`, `/test/`, `/r/0/` through
+`/r/6/`, and the four root instruments, return `noindex, follow`.
+`/offline/` also returns `noindex, follow` as infrastructure.
 `09_TOOLS/01_SCRIPTS/check_q4_declarations.py` guards the page-side half of this
 and says plainly that it cannot check the host. Complete the post-cutover sweep
 against every declared route with:

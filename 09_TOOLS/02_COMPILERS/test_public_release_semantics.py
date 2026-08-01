@@ -76,6 +76,16 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
             with self.subTest(name=name):
                 self.assertRegex(text, parity.FORBIDDEN[name])
 
+    def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
+        audited = set(parity.parity_audit_surfaces(self.data))
+        provisional = set(self.data["declaredProvisional"]["routes"])
+        self.assertTrue(provisional)
+        self.assertTrue(provisional <= audited)
+        self.assertTrue(set(self.data["currentSurfaces"]) <= audited)
+        self.assertTrue(
+            set(self.data["infrastructureRoutes"]["routes"]).isdisjoint(audited)
+        )
+
     def test_d3_preserves_momentum_and_open_physics(self) -> None:
         d3 = self.data["levels"][3]
         joined = " ".join(str(value) for value in d3.values())

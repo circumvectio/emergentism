@@ -485,6 +485,7 @@
     "ruling": "193_FIVE_RULINGS_SIGNED_2026_07_31.md Q4",
     "meaning": "Carries no doctrine; must not acquire semantic standing by being frozen.",
     "routes": [
+      "404.html",
       "offline/index.html"
     ]
   }

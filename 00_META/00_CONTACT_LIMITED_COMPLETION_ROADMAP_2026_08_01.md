@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 4 verified; Sprint 5 public lifecycle is next"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 5 verified; Sprint 6 open-claim disposition is next"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -53,7 +53,7 @@ Finite residue still visible after that work:
 | ID | Current measured boundary | Required closure |
 |---|---|---|
 | ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE.** All 97 physically reused prefixes remain unsafe as bare citations; active source owners, lane indexes, and citation-scannable current/provisional public dependencies now carry exact target custody. Historical/report-only bodies remain unchanged. | preserve `ACTIVE_RECEIPT_CITATION_REGISTRY.json`, its dated digest receipt, and the full-filename rule; never rename history merely to make a counter zero |
-| `PUBLIC-LIFECYCLE` | 398 artifacts are in the measured delivery universe: 384 classified and 14 unclassified; one clean-route alias collision and eight precedence overlaps remain explicit | every route classified current, provisional, frozen, withheld, or infrastructure by its owning generator/manifest |
+| ~~`PUBLIC-LIFECYCLE`~~ | **CLOSED 2026-08-01.** All 398 public HTML artifacts are classified: 40 current, four provisional, 341 frozen, eleven withheld, two infrastructure, and zero unclassified. One clean-route alias collision and eight precedence overlaps remain explicit rather than hidden. | preserve the zero-unclassified ratchet, matcher parity, sitemap/header ordering, and dated receipt custody |
 | `CLAIM-DISPOSITION` | the machine owner carries 17 W rows and 9 reopened research-question rows; the former 17-row count was W-only, not the complete investigation universe | each row resolved, narrowed, or explicitly typed contact-gated with owner, discriminator, and kill |
 | `OWNER-HELD-RESIDUE` | topology and frozen-public-document gates remain held; other old plan rows require a fresh audit | one dated rule per genuine residue; stale rows close with evidence rather than silence |
 | `WORLD-CONTACT` | twelve research sockets are packet-complete and evidence-open; the independent-review gate remains unsatisfied | returned observation, review, or replication filed verbatim with outcome custody |
@@ -85,13 +85,22 @@ owners fail-closed, and keeps generated topology inventories, fixtures, vendor
 code, and report-only history as explicit scope classes. The dated result is
 `11_UPLINK/50_AUDITS_AND_EXECUTIONS/237_ACTIVE_CITATION_CUSTODY_RATCHET_2026_08_01.md`.
 
-### Sprint 5 — public lifecycle closure
+### Sprint 5 — public lifecycle closure — VERIFIED 2026-08-01
 
-Recount routes from the owning source and generator. Classify every route under
-one lifecycle state, regenerate dependent artifacts, and keep frozen pages
-frozen. No deployment is part of this sprint.
+Recount public HTML artifacts from the owning source and generator. Classify
+every public HTML artifact under one lifecycle state, regenerate dependent
+artifacts, and keep frozen pages frozen. Non-HTML runtime and support files are
+outside this sprint's lifecycle universe. No deployment is part of this sprint.
 
-**Exit:** zero unclassified routes and local public gates green.
+**Exit:** zero unclassified public HTML artifacts and local public gates green.
+
+**Outcome:** met without promotion or deployment. `404.html` is typed as
+infrastructure; the other thirteen former gaps are frozen under the signed Q4
+remainder rule. Declared provisional pages now enter both prohibition scans,
+the two `.vercelignore` matchers are compared over the present site tree, and
+the production predeploy suite invokes the zero-unclassified ratchet. The dated
+result is
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/238_PUBLIC_LIFECYCLE_CLOSURE_2026_08_01.md`.
 
 ### Sprint 6 — open-claim disposition
 

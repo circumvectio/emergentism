@@ -6,6 +6,7 @@ from __future__ import annotations
 import copy
 import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -67,6 +68,25 @@ class ActiveReceiptCitationTests(unittest.TestCase):
             ],
         }
         self.index_path.write_text(json.dumps(data), encoding="utf-8")
+
+    def init_git_repo(self) -> None:
+        subprocess.run(["git", "init", "-q"], cwd=self.root, check=True)
+        subprocess.run(
+            ["git", "config", "user.email", "active-citation-test@example.invalid"],
+            cwd=self.root,
+            check=True,
+        )
+        subprocess.run(
+            ["git", "config", "user.name", "Active Citation Test"],
+            cwd=self.root,
+            check=True,
+        )
+
+    def commit_all(self, message: str) -> None:
+        subprocess.run(["git", "add", "."], cwd=self.root, check=True)
+        subprocess.run(
+            ["git", "commit", "-q", "-m", message], cwd=self.root, check=True
+        )
 
     @contextmanager
     def contract(self, **extra):
@@ -424,6 +444,8 @@ class ActiveReceiptCitationTests(unittest.TestCase):
                 f"{CHECKER.canonical_sha256(registry)}\n",
                 encoding="utf-8",
             )
+            self.init_git_repo()
+            self.commit_all("initial registry receipt")
             CHECKER.validate_registry(self.root, registry, require_custody=True)
             receipt.write_text(
                 "active_receipt_citation_registry_canonical_sha256: " + "0" * 64 + "\n",
@@ -431,6 +453,42 @@ class ActiveReceiptCitationTests(unittest.TestCase):
             )
             with self.assertRaisesRegex(CHECKER.ContractError, "digest marker"):
                 CHECKER.validate_registry(self.root, registry, require_custody=True)
+
+    def test_receipt_custody_fails_when_shallow_history_hides_parent(self) -> None:
+        with self.contract():
+            self.init_git_repo()
+            self.commit_all("base")
+            receipt = self.root / CHECKER.RECEIPT_REF
+            receipt.write_text("custody pending\n", encoding="utf-8")
+            registry = CHECKER.build_registry(self.root)
+            receipt.write_text(
+                "active_receipt_citation_registry_canonical_sha256: "
+                f"{CHECKER.canonical_sha256(registry)}\n",
+                encoding="utf-8",
+            )
+            self.commit_all("registry receipt")
+            clone = self.root.parent / f"{self.root.name}-shallow"
+            subprocess.run(
+                [
+                    "git",
+                    "clone",
+                    "-q",
+                    "--depth",
+                    "1",
+                    self.root.resolve().as_uri(),
+                    str(clone),
+                ],
+                check=True,
+            )
+            try:
+                errors = CHECKER.custody_errors(clone, registry)
+                self.assertTrue(
+                    any("first-parent history unavailable" in error for error in errors)
+                )
+            finally:
+                import shutil
+
+                shutil.rmtree(clone)
 
 
 if __name__ == "__main__":

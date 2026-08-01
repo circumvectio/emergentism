@@ -41,7 +41,8 @@ class BarredClaimPolicyTests(unittest.TestCase):
             with self.subTest(sample=sample):
                 self.assertEqual(POLICY.violations(sample), [])
 
-    def test_actual_current_surfaces_pass(self) -> None:
+    def test_actual_current_and_provisional_surfaces_pass(self) -> None:
+        import json
         import sys
         scripts = str(ROOT / "09_TOOLS/01_SCRIPTS")
         sys.path.insert(0, scripts)
@@ -51,6 +52,11 @@ class BarredClaimPolicyTests(unittest.TestCase):
             assert spec and spec.loader
             checker = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(checker)
+            manifest = json.loads(checker.PUBLIC_MANIFEST.read_text(encoding="utf-8"))
+            scanned = {path.relative_to(ROOT / "12_PUBLIC_SITE").as_posix() for path in checker._public_paths()}
+            self.assertTrue(
+                set(manifest["declaredProvisional"]["routes"]) <= scanned
+            )
             self.assertEqual(checker.check("all"), [])
         finally:
             sys.path.remove(scripts)

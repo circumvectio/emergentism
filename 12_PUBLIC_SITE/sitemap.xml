@@ -45,7 +45,6 @@
   <!-- Additional current reader routes. -->
   <url><loc>https://emergentism.org/fable/</loc><priority>0.85</priority></url>
   <url><loc>https://emergentism.org/axioms/</loc><priority>0.85</priority></url>
-  <url><loc>https://emergentism.org/build/</loc><priority>0.8</priority></url>
 
   <url><loc>https://emergentism.org/compass/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/journey/</loc><priority>0.7</priority></url>
@@ -57,7 +56,6 @@
        to index what the header forbids. The same contradiction was found and removed
        for /atlas/ on 2026-07-30; this one survived that sweep. Never add a <loc> for a
        route that carries a noindex header. -->
-  <url><loc>https://emergentism.org/test/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/amrita/</loc><priority>0.7</priority></url>
   <url><loc>https://emergentism.org/0/</loc><priority>0.6</priority></url>
   <url><loc>https://emergentism.org/1/</loc><priority>0.6</priority></url>

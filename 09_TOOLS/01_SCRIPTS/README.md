@@ -52,7 +52,8 @@ Current repository validators and narrowly scoped support scripts.
   local gate result.
 - `check_contact_limited.py` recomputes the receipted completion counters from
   their machine owners. It guards the receipt-collision universe, exclusive
-  public lifecycle (including ignore, alias, and raw-overlap debts), W and RQ
+  public lifecycle (including zero-unclassified closure, cross-implementation
+  ignore parity, aliases, and raw-overlap debts), W and RQ
   claim scope, exact owner-held debts, and the fail-closed `OPEN` world axis.
   A pass is an internal inventory result, never evidence that those debts have
   closed or that world contact occurred. Its state digest is bound to a dated

@@ -20,6 +20,13 @@ SPEC = importlib.util.spec_from_file_location("check_contact_limited", CHECKER_P
 assert SPEC and SPEC.loader
 CHECKER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECKER)
+PREDEPLOY_PATH = ROOT / "12_PUBLIC_SITE/predeploy_check.py"
+PREDEPLOY_SPEC = importlib.util.spec_from_file_location(
+    "predeploy_check_for_contact_tests", PREDEPLOY_PATH
+)
+assert PREDEPLOY_SPEC and PREDEPLOY_SPEC.loader
+PREDEPLOY = importlib.util.module_from_spec(PREDEPLOY_SPEC)
+PREDEPLOY_SPEC.loader.exec_module(PREDEPLOY)
 
 
 class ContactLimitedRatchetTests(unittest.TestCase):
@@ -92,15 +99,45 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         )
         self.assertEqual(report["receipt_namespace"]["bare_unsafe_reused_prefixes"], 97)
         self.assertEqual(report["public_lifecycle"]["counts"]["total"], 398)
+        self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
+        self.assertEqual(
+            report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
+        )
         self.assertEqual(report["claim_disposition"]["w_rows"], 17)
         self.assertEqual(report["claim_disposition"]["reopened_rows"], 9)
         self.assertEqual(report["owner_held"], 2)
         self.assertEqual(report["world_contact"]["state"], "OPEN")
 
     def test_public_artifact_disappearance_fails(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["counts"]["total"] -= 1
+        public["counts"]["current"] -= 1
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_reopening_matcher_conformance_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["public_lifecycle"]["unclassified"].pop()
+        state["public_lifecycle"]["deploy_ignore_contract"][
+            "matcher_conformance"
+        ]["state"] = "OPEN_INTERNAL_DRIFT"
         self.assert_invalid(state)
+
+    def test_nonzero_unclassified_rebaseline_still_fails_closure(self) -> None:
+        state = copy.deepcopy(self.state)
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["counts"]["unclassified"] = 1
+        public["unclassified"] = ["synthetic-unclassified.html"]
+        state["public_lifecycle"]["counts"]["unclassified"] = 1
+        state["public_lifecycle"]["unclassified"] = [
+            "synthetic-unclassified.html"
+        ]
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "requires zero unclassified" in error
+                for error in raised.exception.errors
+            )
+        )
 
     def test_double_claim_classification_fails(self) -> None:
         state = copy.deepcopy(self.state)
@@ -439,15 +476,147 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             with self.assertRaises(CHECKER.ContractError):
                 CHECKER.compute_public_lifecycle(ROOT)
 
+    def test_nested_archive_directory_semantics_match_public_predeploy(self) -> None:
+        paths = (
+            "_archive/index.html",
+            "compass/_archive/index_2026_07_12_pre_restructure.html",
+            "a/b/_archive/c.html",
+            "A/B/_ARCHIVE/C.HTML",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertTrue(CHECKER._vercelignore_matches(path, "_archive/"))
+                self.assertTrue(PREDEPLOY.vercelignore_matches(path, "_archive/"))
+
+    def test_archive_directory_rule_does_not_overmatch(self) -> None:
+        paths = (
+            "_archiveish/index.html",
+            "compass/_archiveish/index.html",
+            "compass/archive/index.html",
+            "_archive.html",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertFalse(CHECKER._vercelignore_matches(path, "_archive/"))
+                self.assertFalse(PREDEPLOY.vercelignore_matches(path, "_archive/"))
+
+    def test_anchored_directory_rule_stays_at_the_site_root(self) -> None:
+        pattern = "/_archive/"
+        for matcher in (
+            CHECKER._vercelignore_matches,
+            PREDEPLOY.vercelignore_matches,
+        ):
+            with self.subTest(matcher=matcher.__module__):
+                self.assertTrue(matcher("_archive/index.html", pattern))
+                self.assertFalse(matcher("nested/_archive/index.html", pattern))
+
+    def test_directory_globs_use_the_same_component_grammar(self) -> None:
+        cases = (
+            ("foo*/", "foobar/index.html", True),
+            ("foo*/", "nested/foobar/index.html", True),
+            ("foo?/", "fooa/index.html", True),
+            ("foo?/", "foo/index.html", False),
+            ("root/foo*/", "root/foobar/index.html", True),
+            ("root/foo*/", "nested/root/foobar/index.html", False),
+        )
+        for pattern, path, expected in cases:
+            with self.subTest(pattern=pattern, path=path):
+                self.assertEqual(
+                    CHECKER._vercelignore_matches(path, pattern), expected
+                )
+                self.assertEqual(PREDEPLOY.vercelignore_matches(path, pattern), expected)
+
+    def test_directory_character_classes_fail_closed(self) -> None:
+        with self.assertRaises(CHECKER.ContractError):
+            CHECKER._vercelignore_matches("fooa/index.html", "foo[ab]/")
+        with self.assertRaises(ValueError):
+            PREDEPLOY.vercelignore_matches("fooa/index.html", "foo[ab]/")
+
+    def test_ignored_parent_cannot_be_reincluded_by_child_only(self) -> None:
+        patterns = ["_archive/", "!compass/_archive/index.html"]
+        path = "compass/_archive/index.html"
+        self.assertTrue(CHECKER._is_vercel_ignored(path, patterns))
+        self.assertTrue(PREDEPLOY.is_vercel_ignored(path, patterns))
+
+    def test_reincluded_parent_allows_reincluded_child(self) -> None:
+        patterns = [
+            "_archive/",
+            "!compass/_archive/",
+            "!compass/_archive/index.html",
+        ]
+        path = "compass/_archive/index.html"
+        self.assertFalse(CHECKER._is_vercel_ignored(path, patterns))
+        self.assertFalse(PREDEPLOY.is_vercel_ignored(path, patterns))
+
     def test_conflict_copy_pattern_matches_root_and_nested_files(self) -> None:
         pattern = "**/* 2.*"
         self.assertTrue(CHECKER._vercelignore_matches("page 2.html", pattern))
         self.assertTrue(CHECKER._vercelignore_matches("nested/page 2.html", pattern))
         self.assertFalse(CHECKER._vercelignore_matches("page.html", pattern))
+        self.assertTrue(PREDEPLOY.vercelignore_matches("page 2.html", pattern))
+        self.assertTrue(PREDEPLOY.vercelignore_matches("nested/page 2.html", pattern))
+        self.assertFalse(PREDEPLOY.vercelignore_matches("page.html", pattern))
 
     def test_gitignore_negation_reincludes_public_build_wing(self) -> None:
         patterns = ["build/", "!build/", "!build/**"]
         self.assertFalse(CHECKER._is_vercel_ignored("build/index.html", patterns))
+        self.assertFalse(PREDEPLOY.is_vercel_ignored("build/index.html", patterns))
+
+    def test_publication_matchers_agree_on_every_present_site_file(self) -> None:
+        patterns = CHECKER._load_vercelignore(ROOT / CHECKER.VERCEL_IGNORE)
+        predeploy_patterns = PREDEPLOY.load_vercelignore_patterns()
+        self.assertEqual(patterns, predeploy_patterns)
+        site = ROOT / CHECKER.PUBLIC_DIR
+        paths = sorted(
+            path.relative_to(site).as_posix()
+            for path in site.rglob("*")
+            if path.is_file()
+        )
+        mismatches = [
+            path
+            for path in paths
+            if CHECKER._is_vercel_ignored(path, patterns)
+            != PREDEPLOY.is_vercel_ignored(path, predeploy_patterns)
+        ]
+        self.assertEqual(mismatches, [])
+
+    def test_publication_matcher_drift_fails_lifecycle_computation(self) -> None:
+        original = CHECKER._PREDEPLOY_POLICY.is_vercel_ignored
+
+        def drifted(path, patterns):
+            if path == "compass/_archive/index_2026_07_12_pre_restructure.html":
+                return False
+            return original(path, patterns)
+
+        with mock.patch.object(
+            CHECKER._PREDEPLOY_POLICY,
+            "is_vercel_ignored",
+            side_effect=drifted,
+        ):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
+        contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
+        self.assertEqual(contract["classes"], ["current", "provisional"])
+        self.assertEqual(contract["routes"], 44)
+
+    def test_sitemap_extra_frozen_route_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            sitemap = root / CHECKER.SITEMAP
+            sitemap.parent.mkdir(parents=True)
+            sitemap.write_text(
+                """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://emergentism.org/</loc></url>
+  <url><loc>https://emergentism.org/build/</loc></url>
+</urlset>
+""",
+                encoding="utf-8",
+            )
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER._exact_sitemap_contract(root, {"/"})
 
     def test_withheld_artifact_requires_real_hash_bound_regular_file(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

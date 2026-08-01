@@ -16,10 +16,12 @@ import json
 import re
 import subprocess
 import sys
+import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -35,6 +37,8 @@ PUBLIC_PARITY = PUBLIC_DIR / "public_semantic_parity.json"
 WITHHELD_REGISTRY = PUBLIC_DIR / "withheld-routes.json"
 VERCEL_CONFIG = PUBLIC_DIR / "vercel.json"
 VERCEL_IGNORE = PUBLIC_DIR / ".vercelignore"
+PREDEPLOY_CHECKER = PUBLIC_DIR / "predeploy_check.py"
+SITEMAP = PUBLIC_DIR / "sitemap.xml"
 
 RECEIPT_LANES = (
     Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS"),
@@ -76,6 +80,19 @@ def _load_receipt_citation_policy():
 _RECEIPT_CITATION_POLICY = _load_receipt_citation_policy()
 CITATION = _RECEIPT_CITATION_POLICY.CITATION
 citation_is_negated = _RECEIPT_CITATION_POLICY.citation_is_negated
+
+
+def _load_predeploy_policy():
+    path = ROOT / PREDEPLOY_CHECKER
+    spec = importlib.util.spec_from_file_location("public_predeploy_policy_owner", path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load public predeploy policy owner: {path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+_PREDEPLOY_POLICY = _load_predeploy_policy()
 
 EXPECTED_CONTACT = (
     "W2",
@@ -654,20 +671,18 @@ def _load_vercelignore(path: Path) -> list[str]:
 def _vercelignore_matches(rel_path: str, pattern: str) -> bool:
     rel_path = rel_path.replace("\\", "/")
     pattern = pattern.replace("\\", "/")
-    if pattern.endswith("/"):
-        prefix = pattern.strip("/")
-        if "/" in prefix:
-            return rel_path == prefix or rel_path.startswith(prefix + "/")
-        # Gitignore's unanchored `name/` form matches that directory component
-        # at every depth.  The public predeploy helper currently misses this
-        # for compass/_archive; this ratchet intentionally exposes that drift.
-        return prefix in Path(rel_path).parts[:-1]
     anchored = pattern.startswith("/")
-    pattern = pattern.lstrip("/")
     if "[" in pattern or "]" in pattern:
         raise ContractError(
             f"unsupported character-class pattern in .vercelignore: {pattern!r}"
         )
+    directory_only = pattern.endswith("/")
+    if anchored:
+        pattern = pattern[1:]
+    if directory_only:
+        pattern = pattern[:-1]
+    if not pattern:
+        raise ContractError("empty .vercelignore pattern is unsupported")
 
     regex: list[str] = []
     index = 0
@@ -691,19 +706,55 @@ def _vercelignore_matches(rel_path: str, pattern: str) -> bool:
             regex.append(re.escape(char))
         index += 1
     expression = "".join(regex)
+    candidate = rel_path.strip("/")
+    parts = candidate.split("/") if candidate else []
+    directory_parts = parts if rel_path.endswith("/") else parts[:-1]
+    if directory_only:
+        if not anchored and "/" not in pattern:
+            return any(
+                re.fullmatch(expression, part, flags=re.IGNORECASE) is not None
+                for part in directory_parts
+            )
+        directory_prefixes = (
+            "/".join(directory_parts[:index])
+            for index in range(1, len(directory_parts) + 1)
+        )
+        return any(
+            re.fullmatch(expression, prefix, flags=re.IGNORECASE) is not None
+            for prefix in directory_prefixes
+        )
     if "/" not in pattern and not anchored:
-        return re.fullmatch(expression, Path(rel_path).name) is not None
-    return re.fullmatch(expression, rel_path) is not None
+        return re.fullmatch(
+            expression, parts[-1] if parts else "", flags=re.IGNORECASE
+        ) is not None
+    return re.fullmatch(expression, candidate, flags=re.IGNORECASE) is not None
 
 
 def _is_vercel_ignored(rel_path: str, patterns: list[str]) -> bool:
-    ignored = False
-    for pattern in patterns:
-        negated = pattern.startswith("!")
-        raw = pattern[1:] if negated else pattern
-        if _vercelignore_matches(rel_path, raw):
-            ignored = not negated
-    return ignored
+    rel_path = rel_path.replace("\\", "/").strip("/")
+    cache: dict[tuple[str, bool], bool] = {}
+
+    def is_kept(candidate: str, *, directory: bool = False) -> bool:
+        cache_key = (candidate, directory)
+        if cache_key in cache:
+            return cache[cache_key]
+        parts = candidate.split("/") if candidate else []
+        if len(parts) > 1:
+            parent = "/".join(parts[:-1])
+            if not is_kept(parent, directory=True):
+                cache[cache_key] = False
+                return False
+        ignored = False
+        match_path = candidate + "/" if directory else candidate
+        for pattern in patterns:
+            negated = pattern.startswith("!")
+            raw = pattern[1:] if negated else pattern
+            if _vercelignore_matches(match_path, raw):
+                ignored = not negated
+        cache[cache_key] = not ignored
+        return not ignored
+
+    return not is_kept(rel_path)
 
 
 def _clean_route(artifact: str) -> str:
@@ -716,6 +767,58 @@ def _clean_route(artifact: str) -> str:
         stem = artifact[: -len(".html")]
         return "/" + stem.strip("/") + "/"
     raise ContractError(f"public lifecycle artifact is not HTML: {artifact}")
+
+
+def _exact_sitemap_contract(root: Path, expected_routes: set[str]) -> dict[str, Any]:
+    path = root / SITEMAP
+    if not path.is_file():
+        raise ContractError(f"missing public sitemap owner: {SITEMAP}")
+    try:
+        tree = ET.parse(path)
+    except (ET.ParseError, OSError) as exc:
+        raise ContractError(f"cannot parse {SITEMAP}: {exc}") from exc
+    locations = [
+        element.text.strip()
+        for element in tree.getroot().iter()
+        if element.tag.rsplit("}", 1)[-1] == "loc"
+        and isinstance(element.text, str)
+        and element.text.strip()
+    ]
+    routes: list[str] = []
+    for location in locations:
+        parsed = urlparse(location)
+        if (
+            parsed.scheme != "https"
+            or parsed.netloc != "emergentism.org"
+            or parsed.query
+            or parsed.fragment
+        ):
+            raise ContractError(f"sitemap location escapes the canonical origin: {location}")
+        route = parsed.path or "/"
+        if route != "/" and not route.endswith("/"):
+            raise ContractError(f"sitemap route is not a clean trailing-slash route: {route}")
+        routes.append(route)
+    if len(routes) != len(set(routes)):
+        raise ContractError("public sitemap contains duplicate canonical routes")
+    actual = set(routes)
+    missing = sorted(expected_routes - actual)
+    extra = sorted(actual - expected_routes)
+    if missing or extra:
+        detail = []
+        if missing:
+            detail.append("missing=" + ",".join(missing))
+        if extra:
+            detail.append("extra=" + ",".join(extra))
+        raise ContractError(
+            "public sitemap differs from current+provisional HTML routes: "
+            + "; ".join(detail)
+        )
+    return {
+        "artifact": str(SITEMAP),
+        "classes": ["current", "provisional"],
+        "routes": len(actual),
+        "routes_sha256": path_set_sha256(actual),
+    }
 
 
 def _header_source_covers(source: str, route: str) -> bool:
@@ -867,6 +970,28 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
             "gitignore-style _archive/ semantics no longer exclude the nested compass artifact"
         )
 
+    predeploy_patterns = _PREDEPLOY_POLICY.load_vercelignore_patterns()
+    if predeploy_patterns != patterns:
+        raise ContractError(
+            "public predeploy and contact-limited checkers loaded different .vercelignore patterns"
+        )
+    matcher_paths = {
+        path.relative_to(site).as_posix()
+        for path in site.rglob("*")
+        if path.is_file()
+    }
+    matcher_mismatches = sorted(
+        rel
+        for rel in matcher_paths
+        if _is_vercel_ignored(rel, patterns)
+        != _PREDEPLOY_POLICY.is_vercel_ignored(rel, predeploy_patterns)
+    )
+    if matcher_mismatches:
+        raise ContractError(
+            "public deployment matcher drifted from the contact-limited matcher: "
+            + ", ".join(matcher_mismatches[:10])
+        )
+
     current = {
         item
         for item in require_list(parity.get("currentSurfaces"), "currentSurfaces", [])
@@ -914,6 +1039,11 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
                 )
     if overlap_errors:
         raise ContractError(overlap_errors)
+
+    sitemap_contract = _exact_sitemap_contract(
+        root,
+        {_clean_route(artifact) for artifact in current | provisional},
+    )
 
     universe = deployable | withheld_artifacts
     for name, declared in explicit.items():
@@ -1163,6 +1293,14 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
         "alias_collisions": alias_collisions,
         "raw_overlaps": raw_overlaps,
         "withheld_alias_contract": withheld_alias_counts,
+        "sitemap_contract": sitemap_contract,
+        "matcher_conformance": {
+            "checked_paths": len(matcher_paths),
+            "ignored_paths": sum(
+                _is_vercel_ignored(rel, patterns) for rel in matcher_paths
+            ),
+            "mismatches": matcher_mismatches,
+        },
         "membership_hashes": membership_hashes,
         "counts": counts,
         "unclassified": sorted(categories["unclassified"]),
@@ -1374,9 +1512,10 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         str(WITHHELD_REGISTRY),
         str(VERCEL_CONFIG),
         str(VERCEL_IGNORE),
+        str(SITEMAP),
     }
     if set(item for item in public_sources if isinstance(item, str)) != expected_public_sources:
-        errors.append("public_lifecycle.sources must name all four machine owners exactly")
+        errors.append("public_lifecycle.sources must name all five machine owners exactly")
     for index, source in enumerate(public_sources):
         repo_file(root, source, f"public_lifecycle.sources[{index}]", errors)
 
@@ -1416,30 +1555,46 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
             "ignored_html",
             "deployable_html",
             "withheld_artifacts_added_back",
-            "known_matcher_drift",
+            "matcher_conformance",
         },
         "deploy_ignore_contract",
         errors,
     )
     if "at any depth" not in str(ignore_state.get("semantics", "")):
         errors.append("deploy-ignore semantics must pin unanchored directory matching at any depth")
-    matcher_drift = require_mapping(
-        ignore_state.get("known_matcher_drift"), "known_matcher_drift", errors
+    matcher_conformance = require_mapping(
+        ignore_state.get("matcher_conformance"), "matcher_conformance", errors
     )
     exact_keys(
-        matcher_drift,
-        {"state", "pattern", "excluded_artifact", "evidence"},
-        "known_matcher_drift",
+        matcher_conformance,
+        {"state", "pattern", "excluded_artifact", "implementations", "evidence"},
+        "matcher_conformance",
         errors,
     )
-    if matcher_drift.get("state") != "OPEN_INTERNAL_DRIFT" or matcher_drift.get("pattern") != "_archive/":
-        errors.append("known matcher drift must remain open on the _archive/ rule")
-    if matcher_drift.get("excluded_artifact") != "compass/_archive/index_2026_07_12_pre_restructure.html":
-        errors.append("known matcher drift lost the nested compass archive artifact")
-    for index, evidence in enumerate(
-        require_list(matcher_drift.get("evidence"), "known_matcher_drift.evidence", errors)
+    if (
+        matcher_conformance.get("state") != "CLOSED_LOCAL_PARITY"
+        or matcher_conformance.get("pattern") != "_archive/"
     ):
-        repo_file(root, evidence, f"known_matcher_drift.evidence[{index}]", errors)
+        errors.append("deployment matcher conformance must remain closed on the _archive/ rule")
+    if matcher_conformance.get("excluded_artifact") != "compass/_archive/index_2026_07_12_pre_restructure.html":
+        errors.append("matcher conformance lost the nested compass archive artifact")
+    expected_matcher_implementations = {
+        str(PREDEPLOY_CHECKER),
+        "09_TOOLS/01_SCRIPTS/check_contact_limited.py",
+    }
+    implementations = require_list(
+        matcher_conformance.get("implementations"),
+        "matcher_conformance.implementations",
+        errors,
+    )
+    if set(item for item in implementations if isinstance(item, str)) != expected_matcher_implementations:
+        errors.append("matcher conformance must name both local implementations exactly")
+    for index, implementation in enumerate(implementations):
+        repo_file(root, implementation, f"matcher_conformance.implementations[{index}]", errors)
+    for index, evidence in enumerate(
+        require_list(matcher_conformance.get("evidence"), "matcher_conformance.evidence", errors)
+    ):
+        repo_file(root, evidence, f"matcher_conformance.evidence[{index}]", errors)
 
     delivery_state = require_mapping(
         public_state.get("delivery_contract"), "delivery_contract", errors
@@ -1451,6 +1606,7 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
             "trailingSlash",
             "precedence",
             "withheld_alias_contract",
+            "sitemap_contract",
             "alias_collisions",
             "allowed_raw_overlaps",
         },
@@ -1464,6 +1620,24 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
     withheld_alias_state = require_mapping(
         delivery_state.get("withheld_alias_contract"), "withheld_alias_contract", errors
     )
+
+    sitemap_state = require_mapping(
+        delivery_state.get("sitemap_contract"), "sitemap_contract", errors
+    )
+    exact_keys(
+        sitemap_state,
+        {"artifact", "classes", "routes", "routes_sha256", "evidence"},
+        "sitemap_contract",
+        errors,
+    )
+    if sitemap_state.get("artifact") != str(SITEMAP):
+        errors.append("sitemap contract points away from the public sitemap owner")
+    if sitemap_state.get("classes") != ["current", "provisional"]:
+        errors.append("sitemap contract must contain only current and provisional classes")
+    for index, evidence in enumerate(
+        require_list(sitemap_state.get("evidence"), "sitemap_contract.evidence", errors)
+    ):
+        repo_file(root, evidence, f"sitemap_contract.evidence[{index}]", errors)
     exact_keys(
         withheld_alias_state,
         {
@@ -1718,6 +1892,14 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
                 f"withheld public-alias contract drifted: stored={withheld_alias_contract}, "
                 f"actual={public['withheld_alias_contract']}"
             )
+        stored_sitemap_contract = {
+            key: sitemap_state.get(key) for key in public["sitemap_contract"]
+        }
+        if stored_sitemap_contract != public["sitemap_contract"]:
+            errors.append(
+                f"public sitemap contract drifted: stored={stored_sitemap_contract}, "
+                f"actual={public['sitemap_contract']}"
+            )
         stored_membership_hashes = {
             "universe_sha256": membership_state.get("universe_sha256"),
             "category_sha256": category_hash_state,
@@ -1736,6 +1918,11 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
             errors.append(
                 "public unclassified list drifted: "
                 f"stored={public_state.get('unclassified')}, actual={public['unclassified']}"
+            )
+        if public["counts"]["unclassified"] != 0 or public["unclassified"]:
+            errors.append(
+                "public lifecycle closure requires zero unclassified artifacts; "
+                f"found {public['counts']['unclassified']}"
             )
 
     claims = computed.get("claim_disposition")
@@ -1979,7 +2166,7 @@ def main() -> int:
         f"{public['withheld']}/{public['infrastructure']}/{public['unclassified']}]; "
         f"alias-collisions={len(report['public_lifecycle']['alias_collisions'])}; "
         f"raw-overlaps={sum(len(row['artifacts']) for row in report['public_lifecycle']['raw_overlaps'])}; "
-        "matcher-drift=1; "
+        f"matcher-drift={len(report['public_lifecycle']['matcher_conformance']['mismatches'])}; "
         f"claims=W{claims['w_rows']} [{claims['contact_gated']} contact/"
         f"{claims['internal_disposition']} internal] + RQ{claims['reopened_rows']} unadjudicated "
         f"[{claims['owner_rows_total']} owner rows/{claims['live_investigation_rows']} live]; "
