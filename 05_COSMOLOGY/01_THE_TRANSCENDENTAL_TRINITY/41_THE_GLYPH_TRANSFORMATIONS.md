@@ -83,8 +83,10 @@ motion `B=sech(w)=1/γ=dτ/dt` `[A]`. This is a conditional change of
 coordinates using established special relativity, not evidence that the bare
 chart is physical spacetime. What it does *not* do—per CC-CORE-1 (receipt 126,
 registry row)—is license the node-level zero-factor catastrophe: on the open
-chart the product stays `1` and cannot vanish. The knockout (`Φ×V=0`) is a
-**node** claim; the manifold identity was never its warrant.
+chart the product stays `1` and cannot vanish. The node knockout is instead the
+zero boundary of the selected conjunction, `min(Φ̂₄,V₄)=0`; the historical
+product has the same zero boundary but is retired as a ranking. The manifold
+identity was never either claim's warrant.
 
 ## 5 · The dark twin — the honest asterisk
 

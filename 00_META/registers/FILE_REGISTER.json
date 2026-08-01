@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3405,
+  "entry_count": 3414,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -329,8 +329,8 @@
     },
     {
       "path": "00_ESTABLISHED/README.md",
-      "sha256": "a3be69c72ba10590d4dfc50026c82bfc2f7a904b2cb7eeaef503b33790ee67c7",
-      "bytes": 7792,
+      "sha256": "f9832664ea94066181aebd9022f00f0c7ca0bac912ee3fd205039f0a853e1170",
+      "bytes": 7846,
       "owner_lane": "00_ESTABLISHED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1093,6 +1093,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
+      "sha256": "7395ecb41226d3039498a2b7155c7f1700a4b6d5d45b3ef8b9aaa862e8c55190",
+      "bytes": 6440,
+      "owner_lane": "00_META",
+      "artifact_class": "doctrine",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 3,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "00_META/00_D_LEVEL_STUDIES.md",
       "sha256": "6d487e2bf0f18225a23214072b4141378831f396cd8993020158a1e8fd7e2e91",
       "bytes": 13890,
@@ -1122,7 +1139,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 178,
+      "inbound_references": 179,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -1332,8 +1349,8 @@
     },
     {
       "path": "00_META/00_SETTLED_CANON_REGISTRY.md",
-      "sha256": "e519c6141d63205c16c2f90693df677e1ac3822343fc94db5fea17e91538263b",
-      "bytes": 34731,
+      "sha256": "c8470051f5049443d07463e46cb72b688a53ebb5e60f6b6368b89d811e9bbce8",
+      "bytes": 35278,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1343,7 +1360,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 285,
+      "inbound_references": 284,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -1366,8 +1383,8 @@
     },
     {
       "path": "00_META/00_THE_CLAIM_STATUS_REGISTER.md",
-      "sha256": "62bff73badcaa2b6250a8ae10d4935ff3008d9646b6af7ac8c682157a86b3fdc",
-      "bytes": 23637,
+      "sha256": "4b856a442b5fd4339a4b42db5a86ecb557b69a1445f2d59034695dc8d444c5e0",
+      "bytes": 23739,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1383,8 +1400,8 @@
     },
     {
       "path": "00_META/00_THE_COMPASS.md",
-      "sha256": "79bb787c0c845c8c3f0463d3e45781daed721c4a32d90f1c486fe8a20b5d278e",
-      "bytes": 10337,
+      "sha256": "e1456529cfe470e5ff5cc4d619cd6a39e14b7bcc45deb4512d82e6282786813b",
+      "bytes": 10503,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1468,8 +1485,8 @@
     },
     {
       "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md",
-      "sha256": "4bdd1305a6ad90b0372458c91ccbc25c92eceee754e9baa18f3684a44ed5c06d",
-      "bytes": 10882,
+      "sha256": "201c451e3f763e0c1167a1f19eaf45ca11d098bd832f28d23b460fd053a35ee4",
+      "bytes": 10584,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1570,8 +1587,8 @@
     },
     {
       "path": "00_META/00_THE_REMAINING_QUESTIONS.md",
-      "sha256": "558982b19225c17d1350881f3369bc6f5ea1f42fa8a4e2f1b76d1fe4bb1fcb44",
-      "bytes": 16972,
+      "sha256": "09dc258045d6998b62af6bbb97a2ca0472164e5e8116045c53258e237a9590df",
+      "bytes": 17210,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -1655,8 +1672,8 @@
     },
     {
       "path": "00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md",
-      "sha256": "d8594a7052dddf0dec3e7025907cd7e4f004de6c62f1d818047ab0bb4005fa2b",
-      "bytes": 7294,
+      "sha256": "04fa9ebec19c23cee32a8f136869e80468a02b6cdcf3be87a3731d2266b38d7a",
+      "bytes": 7350,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -2165,8 +2182,8 @@
     },
     {
       "path": "00_META/README.md",
-      "sha256": "cd7783bb6244455a456be19f3a41110306e9991e6ed6dbffce8a3cbb6d42b24d",
-      "bytes": 2093,
+      "sha256": "47d9c6d12c195dd4a827f2bd13627497954ed0804a522fb3d3d6b7c3b5782539",
+      "bytes": 2289,
       "owner_lane": "00_META",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -2386,8 +2403,8 @@
     },
     {
       "path": "00_META/claim_status/CLAIM_STATUS.yaml",
-      "sha256": "fc329c34778fe4f8568c37b279e59343fcea576a991b11e30956ce1612623a68",
-      "bytes": 24299,
+      "sha256": "4aefdabf529bf06dcc020cccfb28b7b105fbc630d51262f94a929894e8fbaa1a",
+      "bytes": 24505,
       "owner_lane": "00_META",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -2437,7 +2454,7 @@
     },
     {
       "path": "00_META/registers/CLAIM_LIFECYCLE_INVENTORY.json",
-      "sha256": "f32eed2e73495056d8e1cc070b172a97d6e6840e4d7af3795301d8e09ea21678",
+      "sha256": "1141e80af498e0f81e30069b46e5a260baddf6c0c6fb5f56cb23d424bfd2bf9b",
       "bytes": 7678,
       "owner_lane": "00_META",
       "artifact_class": "config",
@@ -2743,8 +2760,8 @@
     },
     {
       "path": "00_THE_FOUNDATION.md",
-      "sha256": "8edebaa9288ee5ffa59a65854f00daa69210b64b2937a84d96de4e529642cd38",
-      "bytes": 32615,
+      "sha256": "b4f2d97ad74af901779dffc28fc378bd65eaed29530710bdf464ece603ab1970",
+      "bytes": 12623,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -2754,7 +2771,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 31,
+      "inbound_references": 19,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -2777,8 +2794,8 @@
     },
     {
       "path": "00_THE_KERNEL_INDEX.md",
-      "sha256": "c66bc09045969aa7e4e3b7f6d82cd5d027f259df7642e36f43fdc9fc324ad0f7",
-      "bytes": 7663,
+      "sha256": "3c0c3e68e5bf988ded59759dd05018085eebdb5d4529ea01f80a8e2576a23492",
+      "bytes": 7646,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -2856,7 +2873,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 174,
+      "inbound_references": 172,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -2981,8 +2998,8 @@
     },
     {
       "path": "00_WORK_IN_PROGRESS/README.md",
-      "sha256": "c0b1ec29efb765004dd7b0c71052a23b60138901474d5d6d1d5758c525f366b8",
-      "bytes": 16702,
+      "sha256": "9708452733f7906ac7dfcd3f05a6eac55adbae8b957ae1c755eb630ee33032ac",
+      "bytes": 18438,
       "owner_lane": "00_WORK_IN_PROGRESS",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3049,8 +3066,8 @@
     },
     {
       "path": "01_TELEOLOGY/00_THE_GENERATIVE_LAGRANGIAN.md",
-      "sha256": "3df230926ed1cb4fdb3205ede28023547090b1ab588488f9fb22a0d224cc647f",
-      "bytes": 11080,
+      "sha256": "31e87c7e80732197ec20ecb22dc7fffe8c348f6e2965350147b51816608133b2",
+      "bytes": 11535,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3066,8 +3083,8 @@
     },
     {
       "path": "01_TELEOLOGY/00_THE_GOAL.md",
-      "sha256": "e2caf7dd31777aadf49fc5a30570f0163f868ecebc62495b502786cc7c6e0517",
-      "bytes": 10943,
+      "sha256": "86ca466466b26671f71792fe80904aaa294c35c4ab99fb095aa13f90961c54b9",
+      "bytes": 11148,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3202,8 +3219,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
-      "sha256": "eba677ea2da219666883ca08f67e796b8163564402852153890b6a6a27ae117b",
-      "bytes": 7239,
+      "sha256": "2aef25823b9963caf9b4e5889639db9aaedfa51283d068f61ae7176d44a6b412",
+      "bytes": 7742,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3287,8 +3304,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md",
-      "sha256": "9168579c5203d8db8b5a785bd1163c4ba4e6086d7726cc82a84e53aad7e58e3a",
-      "bytes": 11598,
+      "sha256": "c8b3265d23bb39a5e055c23cbd85331b6bf8f8978a652e059d04f348dae978b3",
+      "bytes": 11782,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3440,8 +3457,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md",
-      "sha256": "3eec18fe4b74ef8e57b58ecebe52be27eeed820699b77ffc4c6e03df2328842b",
-      "bytes": 9458,
+      "sha256": "aea61b7a87c5d03c1962eb49e70d49130fb15cac94acbbf4c1d2d4267b631db0",
+      "bytes": 9899,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3457,8 +3474,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/16_OPERATOR_CONSISTENCY_AUDIT.md",
-      "sha256": "d3c4706254d324f74f3564983781c9aef8dd21cae70cf4bc000e458cba6f0558",
-      "bytes": 7942,
+      "sha256": "10ee62cb9f2409e0d3fc0fca2156d0afba3289eda4c9c4fb9d9dbb4da75a6377",
+      "bytes": 7960,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3508,8 +3525,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md",
-      "sha256": "1be8d9f65f1fb93c2220dc9a49f44a12e5921c06c5c2bca01abb70e40d353ed4",
-      "bytes": 27768,
+      "sha256": "494ffa972117e59ce2856c91d22c855ed60090429b3ba5af7622c97ed9e34a74",
+      "bytes": 27976,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3525,8 +3542,8 @@
     },
     {
       "path": "01_TELEOLOGY/02_THE_DERIVATION/README.md",
-      "sha256": "820dac5f005280924b57f541a15b4c75fa2d43db49d806b93d91a2d3a4b6a249",
-      "bytes": 11559,
+      "sha256": "7fa9a1ced9e1e4d714b4242ebed8612b13fa9cc9fd2400df407671dae42a8549",
+      "bytes": 11623,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3763,8 +3780,8 @@
     },
     {
       "path": "01_TELEOLOGY/README.md",
-      "sha256": "d76241d175d053d3c2c3349d3a2c6d057f440580a7f68f59ec994e407f0f2486",
-      "bytes": 4340,
+      "sha256": "3e9b9187386f9d57d5cb101da1990ae4d136c474367d10d91f31918ca835746d",
+      "bytes": 4521,
       "owner_lane": "01_TELEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -3882,8 +3899,8 @@
     },
     {
       "path": "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
-      "sha256": "5e433b3906c182370e79bf34b680b35d556e820825f8728e7ac62605ee863970",
-      "bytes": 8692,
+      "sha256": "30d637af2d110046d22f1da9421b9a3f2ddb6ccfc7691f41b48c8ab37f2bbe32",
+      "bytes": 8766,
       "owner_lane": "02_EPISTEMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4222,8 +4239,8 @@
     },
     {
       "path": "03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md",
-      "sha256": "9c32061fcb6ced0997ddc745b6b56529d649d1cc0bf1f5bd11d26c850aa72bbe",
-      "bytes": 22256,
+      "sha256": "f7f6d2c12459dc033de506853ae1db103f71f4bc7242d8c0e6ec64e5d8371f3d",
+      "bytes": 22277,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4307,8 +4324,8 @@
     },
     {
       "path": "03_METHODOLOGY/00_EXTERNAL_COMPONENT_CALIBRATION_2026_07_20.md",
-      "sha256": "60cd5be2e960ead85fd85ca0d4e30eac72abb58706c25c9f3b275d6ba70a4235",
-      "bytes": 20515,
+      "sha256": "bb4821e3726dc4386400f2281322d6f9cba8ab3fe7faaa59f5cb621edd41ca85",
+      "bytes": 20653,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4324,8 +4341,8 @@
     },
     {
       "path": "03_METHODOLOGY/00_SCIENCE_STACK_STATUS.md",
-      "sha256": "29614ae62127031385b1dc52deeff333a8cc6369c8411cda03096a7c626ee649",
-      "bytes": 9753,
+      "sha256": "f2a7a572ee5b773edd2e151a0d610928510d8aed06a01b520c420952113d97a0",
+      "bytes": 9856,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4426,8 +4443,8 @@
     },
     {
       "path": "03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md",
-      "sha256": "52033e49ec1c6258bb4bd3fc70bd21bd3cccd41305ef1ad58972a491d39728b4",
-      "bytes": 17224,
+      "sha256": "e6c428a51a8faa5961efd981f767a3d196ebc1ac609ea9d0eb392cdb15a703e7",
+      "bytes": 17467,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4494,8 +4511,8 @@
     },
     {
       "path": "03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md",
-      "sha256": "ed63e43ecddb16e2c3b8019778e6e4e1bb80946f28fdfcdd23d4ee490ef3b587",
-      "bytes": 7607,
+      "sha256": "982d5e63fbd2b8a27cea712562a648c7b46abf3b4b8ad50d42c2bb1da7e0a3ac",
+      "bytes": 7831,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4511,8 +4528,8 @@
     },
     {
       "path": "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md",
-      "sha256": "4a891ad4862b36218f37320ca78d76e53b4f15a84956edabc2007400d8e602b4",
-      "bytes": 18574,
+      "sha256": "c3535ea0ebe8a50793b0c6532e92e5afb324291c4478c0bb9d20a08d3bc0d13b",
+      "bytes": 18708,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4613,8 +4630,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_1_THE_D5_LANDAUER_BARRIER.md",
-      "sha256": "1da9e726de294d8c11c3f36b30ae4c899d3bd2015626b300ba2ab16a366be957",
-      "bytes": 4483,
+      "sha256": "019833a0d72ac522d674fe30c8209d6bf5f7f2e5d14256b6a7f5fb1e8a35d931",
+      "bytes": 4511,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4681,8 +4698,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/D5_LANDAUER_BARRIER_PROGRAM/PAPER_5_ENTROPY_EXPORT_AND_OBJECTIVE_ETHICS.md",
-      "sha256": "b61aebfe6e98cfec69e7a21cd14f32902190cc57926a0bdafd883bd62e3fafb4",
-      "bytes": 2238,
+      "sha256": "3ed8cc5745e81631167021e8e0bd3786a34ca30218f63bca9ee342d6e290a098",
+      "bytes": 2556,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4766,8 +4783,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md",
-      "sha256": "fe59b8954dd066d1214bdae81c4e11674942c27ab6345c146bab7c6771111e70",
-      "bytes": 18149,
+      "sha256": "495fefc7980033f0ad24082f16b0218c0d0f8b604ac399ef24d13b5c9e852674",
+      "bytes": 18309,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4817,8 +4834,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_III_A_PRODUCT_CONSTRAINT_AS_A_STRUCTURAL_ETHIC.md",
-      "sha256": "162cee2be86600af8011758593a071c21469626dec25d82b033059a1e06a4c99",
-      "bytes": 2725,
+      "sha256": "0125ebd43a4abac9f76415d09b58283b09669fa29099fd900cd91f205f91e6e0",
+      "bytes": 2988,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4834,8 +4851,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_II_DIVISION_BY_ZERO_AS_CATEGORY_CORRECTION.md",
-      "sha256": "edc195a0525506cf05e54a2303618f721c472268d3875c36dcd9f83c6c2063c6",
-      "bytes": 2858,
+      "sha256": "4eaa9afaa4b4357366a3f8a7c5c15f353bd375e8d939a1ad719505850c7fd7d1",
+      "bytes": 2963,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4851,8 +4868,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_II_ONE_PAGER.md",
-      "sha256": "b681a22cb106bd7f9bd979f2ff7f4e69897a2642d3a21df8e7be6ebc89aa2f29",
-      "bytes": 4445,
+      "sha256": "f73e97931ca5c785075044ca2c0d4431eadfa0324105ad1aae068a03dc02cc82",
+      "bytes": 4512,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -4885,8 +4902,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/PAPER_VII_FINITY_SUBMISSION.md",
-      "sha256": "34f0b961e22682dfed3461bafb0288e5e505e0bcd537b0860b7fdc5fadf1f93c",
-      "bytes": 16058,
+      "sha256": "0a278b0e3d4e02a77cc2b002e7e163565f2712367767c11d45f2a3f49d422bcc",
+      "bytes": 15616,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -4919,8 +4936,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/README.md",
-      "sha256": "236823004f352e5b4941e16625176d0e8667ee48f6e97cd08e0de84859a9c105",
-      "bytes": 4762,
+      "sha256": "748eda048ae7e98129dfaebd999e1e67206912cfbc1d600ad811060af1f100f4",
+      "bytes": 4874,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4936,8 +4953,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_CONVERGENCE_ANALYSIS.md",
-      "sha256": "02ba0362eb6cd1c906ffec02e2ca2289be7843d7365b2ca26cfe321758b4143a",
-      "bytes": 23837,
+      "sha256": "ebfac46b79527c46793eb967d3e6ae019767f98dd6bbf9146bc59838431bfbe2",
+      "bytes": 24046,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -4970,8 +4987,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/SUDA_FORMAL_STRUCTURES_COMPENDIUM.md",
-      "sha256": "ad87ff570f6a5f0e9133aff2db34a13c57d67fe2fcd8f3724257d7773ec45abf",
-      "bytes": 13463,
+      "sha256": "d252463e6bbd5e5e86111efd9aa7d2fc13fedd49ac489c74611a263d5ed12e5e",
+      "bytes": 13460,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5004,8 +5021,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/THE_EGG_AND_THE_SPHERE.md",
-      "sha256": "9d80e31946dd568372aa7212c53a0f86f0ded1668768da1b965752de5825dd2d",
-      "bytes": 4967,
+      "sha256": "17ca56d153eb95ccd6df93aab88ed541a2f792c8beb10c754898a44fc7337cf9",
+      "bytes": 5108,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -5276,8 +5293,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_B_BLOCH_BURRI_IDENTITY.md",
-      "sha256": "1824cc078b0475f653a9740e5a94c103b272fc977564c76761309073c1f06863",
-      "bytes": 7070,
+      "sha256": "d6706bdd4f6a3e88d4b71fd7e0b71d435ff543a9dc339bf0f3ef87343c55f6d6",
+      "bytes": 7101,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5361,8 +5378,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_G_BIOLOGICAL_PREDICTIONS.md",
-      "sha256": "daff3a58073910402d5a22be6802fbc701093674772a9ca2dbee5416051442f9",
-      "bytes": 3362,
+      "sha256": "f8787e7ecf1c4c290434fb38d821fb8e9db387abd83358f15d950c38f4a910f7",
+      "bytes": 3516,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5395,8 +5412,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md",
-      "sha256": "33d713cade340054c79eb07570e8cd8e26c97db4495a462b7483a588ad5b2fec",
-      "bytes": 6565,
+      "sha256": "baaca79f5204b3d673cc497fe76cd1257b4342141d5e89809f8fcdc84aa90ace",
+      "bytes": 6657,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5446,8 +5463,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_K_AMRITA_AT_ZERO_COST.md",
-      "sha256": "94be19c7017d2c1a5592a5678b4ce7817dd32f3afe5e6beebbe3b4ea82a33aa6",
-      "bytes": 5355,
+      "sha256": "39c91519e8fc49e3df4c58decc2c41b3b835a1a6fd129e159da60cd2f605a0fc",
+      "bytes": 5580,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5463,8 +5480,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_L_PHI_METER_CORRELATION.md",
-      "sha256": "3b97bee7b9885793112ca0daa0e3515a9972b4b40cbb9057bdfda2fbcc9cb987",
-      "bytes": 5724,
+      "sha256": "ceda23745f10cc64b78f275a9b9f736d634dfdeeeac5bfe0d4b39157897026af",
+      "bytes": 6164,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5497,8 +5514,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_N_PRODUCTIVE_TRANSCENDENTAL_WAGERS.md",
-      "sha256": "4f219c4a1f71d8858f4a7217712e5c3eef4c0b6675765014dd3fcea2744a9f03",
-      "bytes": 5338,
+      "sha256": "7162a7d3073c7889bdfa9df78283968f0ab0f83e3c635098dd1d27711bfde5d2",
+      "bytes": 5374,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5565,8 +5582,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_U_THE_PRACTICE_BRIDGE.md",
-      "sha256": "b2fff6ca7f441f074eeacce29a92243a0069c1f5e020dc6dcb58b5ef9d56aae1",
-      "bytes": 5554,
+      "sha256": "417c4ac8da607e7eb2e420f4275d00c6ef3deb0bf65152c31972c051b57c2b82",
+      "bytes": 5719,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5599,8 +5616,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md",
-      "sha256": "c84f8040ec70058e3cde7447059c9d0866e535b8518227f83215765986d37c4b",
-      "bytes": 17218,
+      "sha256": "4ab51e4bd35532eaff68f058c717906570f73b07571d5a585864b73bde0028ad",
+      "bytes": 17505,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5616,8 +5633,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_AXIOMS_AND_STATUS.md",
-      "sha256": "96f84d196b9428ed31bfae8af13edd5f6101a431374d1c85d709bf94c255f7b7",
-      "bytes": 10398,
+      "sha256": "9218c71307d87e9f85b02761dce4b5aa6cce581e54c3493d40d4fb39140dec29",
+      "bytes": 10480,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5650,8 +5667,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FINDINGS_AND_CONJECTURES.md",
-      "sha256": "cf61091507be9f942b8f55574f2e221762f6bd5a0303d99e8fc42fddf611c6b7",
-      "bytes": 24343,
+      "sha256": "c5c32474acac1678fa225c3ca2aae523f7ac546e1794a4cde31d7e28c696c7d6",
+      "bytes": 24584,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5667,8 +5684,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_FRONTIER_KNOWN_KNOWNS_AND_UNKNOWNS.md",
-      "sha256": "7ac7dd7338faad706d9bde6efd7779e2abfb726464bb7670b913b8a7b5e736ae",
-      "bytes": 10349,
+      "sha256": "99039c5a733cf75d5a4f4e0218533925d9e873037467da3730ccc7b291c7e91b",
+      "bytes": 10566,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5684,8 +5701,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_NEXT_EXPERIMENTS_SPECS.md",
-      "sha256": "81f75b666755c946945828c47b72293ddf99df4236d77d4d730462096f18d389",
-      "bytes": 11567,
+      "sha256": "e84983c69036c17e849af57848a51e3e84b866eaf76cea2f6039bf4d544dad5c",
+      "bytes": 11810,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5701,8 +5718,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/00_PROGRAM.md",
-      "sha256": "739690b7ecd3e09b75c22e3b489d462f61a8999ff0d22bb8b944718da893a840",
-      "bytes": 16082,
+      "sha256": "f84ffb4160080abc0eba282741d404113a88d59022f7f3312a3eb6ae2a9356ad",
+      "bytes": 16411,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -5956,8 +5973,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/E2_SUPPORT_REFLEXIVE_EMPOWERMENT_SIM_V3.py",
-      "sha256": "f26153085e922186aba223a63691623c2f1f57fa43c26e3911a36c41a3e2e143",
-      "bytes": 16214,
+      "sha256": "1385684d75dfd81fceca4acc69a15bc6665f1ee63001bec0249ba6191aae648d",
+      "bytes": 16358,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "other",
       "authority_status": "unrated",
@@ -6483,8 +6500,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R4_PAPER_DRAFT.md",
-      "sha256": "b3bfcb68b0e0fb8d6b25c9195e7572742989201beb0bacb7eceb0663322b5c8c",
-      "bytes": 8184,
+      "sha256": "c3f5ed45f856b73ebab37e0b9b1b0d92976e147483286c4c47b68b0ece722611",
+      "bytes": 8469,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6500,8 +6517,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R4_TWO_FACTOR_BLIND_STUDY_PREREG.md",
-      "sha256": "8b1e3b2c38c8e0b200a20fae402e62a11c9e2e0b319f56dbe178be60ec0ec486",
-      "bytes": 4010,
+      "sha256": "12c744cceda44454b158c74927cfa3025cae5bba4afdbde0bd6e2a33f263bf21",
+      "bytes": 4342,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6551,8 +6568,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R6_CANDIDATE_PROTO_DIMENSIONS_NOTE.md",
-      "sha256": "ec4731b71e71a84284c60ea53cdf6714c15f60b506a8536dc7ca58ae58968943",
-      "bytes": 22104,
+      "sha256": "dfb300ea3f78512ee27de5656be5a8e17d548fb6175dbbda76866cb4c9113f33",
+      "bytes": 22528,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6568,8 +6585,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/R6_CONJUGATE_RESULTS.md",
-      "sha256": "ae5194fb994227d169962477aae82eeb099910d6364025707a21d3a1287cad9c",
-      "bytes": 9267,
+      "sha256": "f53c4c6f04de31b2e4dd7b4f6a34f925ad8c0d98d65162226cf37ec4a4f40b6a",
+      "bytes": 9667,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6772,8 +6789,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/README.md",
-      "sha256": "919e82f8cd29e11b178da44e9199c492e6f3cddab93952359aedf1f8be94a498",
-      "bytes": 4638,
+      "sha256": "7524ea72b8219e252c25cfc12432c2749c88af5bb6511f9dd19d30f58ebffd3c",
+      "bytes": 4902,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6823,8 +6840,8 @@
     },
     {
       "path": "03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_BRIEFING.md",
-      "sha256": "a0e5ac0e6e1c94c1c852f26b77bbf7a01ae1be0b53cd2c91d99811e93d29a51a",
-      "bytes": 11034,
+      "sha256": "6597d5443864abf1c221ca0ee859eed95b8df3172a5c4536600b3f914a6294ce",
+      "bytes": 11113,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -6908,8 +6925,8 @@
     },
     {
       "path": "03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md",
-      "sha256": "5e660ee71f805eebe20d4007ce23f1397150a2eac20dd04e010252ad2ea255c1",
-      "bytes": 13731,
+      "sha256": "ff0206d8dc5e646987d3e4deb140781530eb4e7a827093c9e14ad4ab99c080f4",
+      "bytes": 14018,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7401,8 +7418,8 @@
     },
     {
       "path": "03_METHODOLOGY/README.md",
-      "sha256": "9622788e486735bff818fdd8f73facedf9b819152a699d19938dde1a2377fd1f",
-      "bytes": 5663,
+      "sha256": "afcf550604647805af1a8c60e4229d5893c613489cb74bb8a5f95fa99d93160c",
+      "bytes": 5751,
       "owner_lane": "03_METHODOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7792,8 +7809,8 @@
     },
     {
       "path": "04_AXIOLOGY/README.md",
-      "sha256": "d2fb9be87b68b1b1ef56f4eef097704bb553bc90844bff875fa0c9929191df0b",
-      "bytes": 4149,
+      "sha256": "6884f145432fe36b4832edadb7f533dc8ab39d523d1bdaa5e195fb71016f49a0",
+      "bytes": 4370,
       "owner_lane": "04_AXIOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7860,8 +7877,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
-      "sha256": "8c1bfdf2554fb0f5b5c48b14bb61fea1c3d9d4d60c6041740ff577b5da8398d0",
-      "bytes": 13898,
+      "sha256": "d738439a9d15d71542e67e9663de45b7450edebabb6a906a5ace1d0c4da72b81",
+      "bytes": 14111,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7871,14 +7888,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 254,
+      "inbound_references": 255,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
-      "sha256": "0878cf09d6b84e50aae0b93818f9b2a65b9ceff6838d05e074428b5b4ff3cc75",
-      "bytes": 18745,
+      "sha256": "b354113924f00c5d0c461c774de1435b5f35f5e232c62b4cfe824be7baadead8",
+      "bytes": 18992,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7979,8 +7996,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md",
-      "sha256": "e3fecb102e92b386e79bff6e647160da971eddde8fec923fcf431c1d5f43f0a4",
-      "bytes": 9352,
+      "sha256": "591fdbeeec88ee2d4a345decfb8b9fdb4e0c2e3dcdeee8c81f182b913f9a7923",
+      "bytes": 9466,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -7996,8 +8013,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
-      "sha256": "bd2df6b7cede8f3ec91eaf60297c677bb401ad77c7a085a26456c7ec95be7163",
-      "bytes": 4892,
+      "sha256": "56f41c4714edb25a44290d343e031d612e9a36057dee549ac520486b0cad0d70",
+      "bytes": 5355,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8030,8 +8047,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_BURRI_RULES.md",
-      "sha256": "f059e6de77e706b4c144ef12b6ca3d45320485fdd6d0d21619d1babbb19324ba",
-      "bytes": 26579,
+      "sha256": "79edf16981c543543a014a634051f308771b244964f31e9fa58481bcce0a61bc",
+      "bytes": 26724,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8047,8 +8064,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_COHERENT_GEOMETRY.md",
-      "sha256": "b925eac1317eea7a0a3d53bf73d60c37db220fae74f2191cb1ec690ca719c069",
-      "bytes": 3822,
+      "sha256": "d8a3044b3c02f295ad7794668164b66a8050ca65d481a53ebc07409bdb529b10",
+      "bytes": 3885,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8132,8 +8149,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md",
-      "sha256": "41dd49141ceb15c8cd1357bf648f89b8e55e6a4c345be39bd5c30c513bdedec4",
-      "bytes": 3322,
+      "sha256": "69d1698573953ab58c29d98f66d38f2bae213c86280295abf0d9ce59c3338934",
+      "bytes": 3418,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8166,8 +8183,8 @@
     },
     {
       "path": "05_COSMOLOGY/00_THE_ONTOLOGY_INDEX.md",
-      "sha256": "c278e4db8de70bb9bedc043605f226fa0bd8cc599e8802757a9ed80d30cdaaef",
-      "bytes": 5397,
+      "sha256": "c52b38e4422ab5ea19f21f36927f1a9d6fda88633a11ece7af1a4047a486d4c1",
+      "bytes": 5488,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8228,7 +8245,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 174,
+      "inbound_references": 172,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -8285,8 +8302,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
-      "sha256": "694ee4f57e45933512c14e1e55bfc880f4d9eb0248e620310669b79dd8ce6c93",
-      "bytes": 13109,
+      "sha256": "77f8f85aebe3baeac993c30ed75c3ff263f69446852ca63e651ecff76db5a48c",
+      "bytes": 13127,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8296,7 +8313,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 96,
+      "inbound_references": 98,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -8319,8 +8336,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/02_THE_TRINITY.md",
-      "sha256": "1cb6878ffce12ab1be95cf42b52cef01a7dd9ce9945c6b097c0236821e81d22b",
-      "bytes": 6930,
+      "sha256": "26efa534da36b89245ecd93de088e897e62dcdcb8d4f01e9609acb8d40f00704",
+      "bytes": 7216,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8438,8 +8455,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
-      "sha256": "1f33f122693a790dbd6d0daa7b4af132078f5c486fb622dfa0f46c0145e81ab3",
-      "bytes": 20376,
+      "sha256": "1f47c257e2add2da9a822bb4caaea5afe46ff18f002b16dc53d70d8087bebb2e",
+      "bytes": 20239,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8744,8 +8761,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/32_THE_FOUR_LINES.md",
-      "sha256": "800214fbcf0e0793f4d85ed6b17b57296896b9bd6ca69d5abdc58b355cad008e",
-      "bytes": 2697,
+      "sha256": "45d916e584d1e05f24b09f2931219e80b42c2994588e415d85e5f82422de05e0",
+      "bytes": 2767,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8778,8 +8795,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/34_RESEARCH_BRIEF_THE_FORK.md",
-      "sha256": "495821121a29ee93a34b8525f7abea41b1ed4adfc57e3092141fc3743843addf",
-      "bytes": 22288,
+      "sha256": "b650e03e35aa41d3e1a075af9888f860a33a62b8b398767d0c3204bf99bc6088",
+      "bytes": 22424,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8812,8 +8829,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md",
-      "sha256": "3529b80e445be383b2a7004b035645053e86cab53860121a940c3490d387d9bb",
-      "bytes": 14081,
+      "sha256": "9088c7dd6683b80529024469ba02d2f430994e7599a7c2e916700766d9d7259f",
+      "bytes": 14185,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8829,8 +8846,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md",
-      "sha256": "b820f8033e1744d595afe066dc7288bd12461cbf819a4a4103635fc0b2a8202d",
-      "bytes": 29937,
+      "sha256": "f36629bea18720b47721acc50ecf8637b431ff86c40bcfe849fd1c8577b24515",
+      "bytes": 30515,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8846,8 +8863,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md",
-      "sha256": "b2f6a195f9fa71bfa2ab667f063300704d272e091833a7de8e6b2145b97144b3",
-      "bytes": 9973,
+      "sha256": "719c09f15f81e996ca2eb9d776411c794c6664de9bd7d878a72af27c41749e81",
+      "bytes": 10337,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8880,8 +8897,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md",
-      "sha256": "d8ec29470ca7112851237a9d1ee797111ecdcc8d36ad936a0b82daa4c0dc5b63",
-      "bytes": 6070,
+      "sha256": "c44c2f375950374fb1cee965054e73f8f43d50a4e11ac8ee7cd6b2226d4d4db3",
+      "bytes": 6213,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8897,8 +8914,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/42_THE_CASE_FOR_FINITY.md",
-      "sha256": "3db836266c051a36986d41f2c0d3d90974c7247ab12924099229efad15cd9b40",
-      "bytes": 15926,
+      "sha256": "8269c804cb509c10ea941f49df0342bf7805dd0c63f0ed5b44f093c4915f06d4",
+      "bytes": 16025,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8914,8 +8931,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
-      "sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816",
-      "bytes": 22580,
+      "sha256": "dd7ca99c4aa33bb8d687c56f7dc0511c8612d8c10fa7ad869875cf89fb7db974",
+      "bytes": 22639,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8948,8 +8965,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
-      "sha256": "853735531bf2054f868c5ab36f74711f19d040283e1cbbbf9bf6ed564336a72b",
-      "bytes": 15927,
+      "sha256": "4b37c7fc77dc7a79fa97acf55588eefc70dc7a1e2b01bc3061a6fec2164efe77",
+      "bytes": 8573,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8959,14 +8976,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 16,
+      "inbound_references": 15,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md",
-      "sha256": "34cfe3c6be2ee8e38bb3997a1135e9c1a230b28cd6f8f3771196cf1a7fbe0263",
-      "bytes": 27167,
+      "sha256": "9558ccdc8706cda0c9d8a22c898747aa65dfd9a7438bb54ca1f82460bc5b8c47",
+      "bytes": 27750,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8982,8 +8999,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md",
-      "sha256": "fb3acb5b8ce33366b3bbf845275d15b702c434eb748509fcb82b32e1b53537ed",
-      "bytes": 12670,
+      "sha256": "93f480c9ab6cdb18949b48ca92ebec9b0db066bb34601780ba982f407e4d9fdf",
+      "bytes": 13516,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9050,8 +9067,8 @@
     },
     {
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/SIMULATION_SPEC.md",
-      "sha256": "f9a0423eda142ad7065edbda8fa80bcd77e88d93194c9db466f9be94dc47fc96",
-      "bytes": 22274,
+      "sha256": "746503ebe849f84090523736951d0ee34cb838e76c0e504eed0d88628af19364",
+      "bytes": 22940,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9135,8 +9152,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_CORRECTION_WOLFRAM_NKS.md",
-      "sha256": "9015c0c1039c756785263c6b1093cdb8c8fdea78acbd2fed9f901f4d13e2cc3d",
-      "bytes": 4995,
+      "sha256": "d231f7496155a64859d4cad7133db54d55be7bf1cbbf38df51300f0af0bcc5dc",
+      "bytes": 5149,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9186,8 +9203,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
-      "sha256": "445654c0c25382d34bbd924e502c952010f36cd7f940a265f9df96005971887c",
-      "bytes": 8492,
+      "sha256": "52b8a4e84dcdcc8512b724e3a518280b9cf8bc5580d9cdeaddcae9b1cae80b08",
+      "bytes": 8681,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9203,8 +9220,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
-      "sha256": "3e8361938e633a6afbfb22f67c46211a2fc1638847894c3991fb09832929fab7",
-      "bytes": 11019,
+      "sha256": "bd1b7e450d9313bc3b1f83b3ef14e01c0966b21fec0dbfac08f278785f57c905",
+      "bytes": 11034,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9271,8 +9288,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/15_EFR_WOLFRAM_NKS_INTEGRATION.md",
-      "sha256": "1d257dd2eab48a7b64d3116aba20c5dc3182c1a5ee47abbbcb78d1ebff89bf2b",
-      "bytes": 25371,
+      "sha256": "33b276a9af948b211ad1480c61a07c49ca582ba8b85456bd15e13d6dedb780c8",
+      "bytes": 22070,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9356,8 +9373,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/20_EFR_OPERATORS_ON_COMPLEX_PLANE.md",
-      "sha256": "38413318429082c89139c2366e6007e436d1c9d4d694508482ec6faa0359cf7b",
-      "bytes": 14543,
+      "sha256": "2693a02233dca808c901316a6d436bc2b21584c3cb70167bbfcdbdac3963eb70",
+      "bytes": 14636,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9390,8 +9407,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/22_POWER_MAX_DEMONSTRATION.md",
-      "sha256": "5e4c2af61fb5c80a3a80c2e42c95e9b26af7657bf6dd54c347e34de78d536307",
-      "bytes": 18025,
+      "sha256": "3e31e75060a3455517abb762875b59cfd2e199eff3c754b06c93214c6ab0017b",
+      "bytes": 18027,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9509,8 +9526,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md",
-      "sha256": "d3dad98e361afe2b22c0ca992e2b594606d3131c094ae7806bcd0d95052b70d0",
-      "bytes": 27730,
+      "sha256": "db19e6f77b078a812af327fafde1aff3a81968ac84f699a1c08a22ddd2412817",
+      "bytes": 27912,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9520,14 +9537,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 60,
+      "inbound_references": 66,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/30_OPERATIONAL_DEFINITIONS.md",
-      "sha256": "e049761068b48fec55bcc2b64deb761b0cba5cb5f2a5f727671ad0bc999601a7",
-      "bytes": 7569,
+      "sha256": "a9979af0cb4b8f1a289091c88a890224ae4871fea5c8475cc1e50b3818d42492",
+      "bytes": 7630,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9543,8 +9560,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md",
-      "sha256": "5545e52fce87626f4f0fa5b2298f3cbe2e0f67b6f165cd055c503cb977eaada7",
-      "bytes": 3517,
+      "sha256": "b3cd3779370ed7850082ec835bb3ede925a418558cec0ea9d39e5f40a6b4e950",
+      "bytes": 3607,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9662,8 +9679,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md",
-      "sha256": "8d7ddb7e5969c6565de7f155d6c6911d448b9671d553176ef18a7c2646b89f35",
-      "bytes": 10918,
+      "sha256": "6b17928ebf2310de9dc51bf42d8de2873438e167fe78ba5a4c799e33c640a6a1",
+      "bytes": 10933,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9679,8 +9696,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md",
-      "sha256": "f1248585035ecf95f19c1643c73e68b83a427a2a979449e714f075187abe5bce",
-      "bytes": 3421,
+      "sha256": "292d2116e24b17a1a262c3553703814d5f2ef080feb71d4e9be5abdcd74992c5",
+      "bytes": 3563,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9696,8 +9713,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md",
-      "sha256": "5489553df6a03d6c8a549adf537cdb22a04fb633e1657c802d74a94d2ccef3e1",
-      "bytes": 25103,
+      "sha256": "7ab73795232880257ed14f767275153fd30c94a06f8766173d7c3208aa288d53",
+      "bytes": 25415,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9747,8 +9764,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
-      "sha256": "d22dc72c95c38bf72946659ba79b8712f99c4e5060c5a78d2f4da4085bc59910",
-      "bytes": 6046,
+      "sha256": "d4f1e280e7f7a73ec2fcf5b865977bdd47e9f8c94523a718507820f49298d441",
+      "bytes": 6306,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9815,8 +9832,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md",
-      "sha256": "46fe4e007467dfc6b3829b59c8ec2e3f2b9831bc5a1e24e1c19e56bbc7abbbe4",
-      "bytes": 16454,
+      "sha256": "edd3e2cc598b059eb0c3a103d9488636db0029530afa378f7b4857661220ff6a",
+      "bytes": 16526,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9849,8 +9866,8 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md",
-      "sha256": "41921b7b5c13d8c67a49efa4f0893423013f333618e4e6ad58f832910cbe951f",
-      "bytes": 8604,
+      "sha256": "7d8a7061e0d6a716b07e6d0ee587a25a36da6c37116d18ac6638c2136f66ced7",
+      "bytes": 8622,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -9900,11 +9917,11 @@
     },
     {
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md",
-      "sha256": "53513b2cba8d8381e74f04745f1e5663d5dc6de3e4b9ff2d37bce45d19789f90",
-      "bytes": 29917,
+      "sha256": "d0d5af8a2252de6c7f6e309d23ff1b3eff349a99762fcbb32e453f548e6fad56",
+      "bytes": 27578,
       "owner_lane": "05_COSMOLOGY",
       "artifact_class": "doctrine",
-      "authority_status": "staged",
+      "authority_status": "unrated",
       "evidence_tier": "[A]",
       "k_relation": null,
       "public_projection": null,
@@ -10138,8 +10155,8 @@
     },
     {
       "path": "06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md",
-      "sha256": "386926f5213ecbcc85b09bc6ac74dd7b597021c1e95d999aa58cc808fe317d22",
-      "bytes": 7660,
+      "sha256": "aae61515844046c097f3d79046b71dbabb8fbe20cc16fec53099353efc6b870f",
+      "bytes": 7841,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10155,8 +10172,8 @@
     },
     {
       "path": "06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md",
-      "sha256": "741ed1ca27645050f0440d6aff2b9a53a4bee6da8b0f140a459cb24a6837f882",
-      "bytes": 8830,
+      "sha256": "b63b590177f42f0b8b9822c5249d0bb30883c8406f0f0d9e4cd3b6ddb3db7b8c",
+      "bytes": 8926,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10223,8 +10240,8 @@
     },
     {
       "path": "06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md",
-      "sha256": "040d861effd2f1dc99507973e2074cf231a7e227cd1c9e81e68b9cecdb41b4f3",
-      "bytes": 16429,
+      "sha256": "6b99fcc9c679af2fdbcffe5a9c2929649c33e48bfe91837a12cef51ebb2d9ab2",
+      "bytes": 16517,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10291,8 +10308,8 @@
     },
     {
       "path": "06_ONTOLOGY/04_THE_CONJECTURES.md",
-      "sha256": "a83aa9049b514906b09a05d2cb2cbe805bbbc0514f97e37010c7f55f3b3aa09c",
-      "bytes": 11387,
+      "sha256": "ea8c65a4b17d70158d0cf3c7c1d3fbcd4e76de2480cf77c90a5854099554bad9",
+      "bytes": 11640,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10308,8 +10325,8 @@
     },
     {
       "path": "06_ONTOLOGY/05_THE_CREED_AND_SPIRAL.md",
-      "sha256": "da31c6be2fcef5b1f8f1a848c8d9834fc126dfcebcf4606ff8f72a3be53b8c15",
-      "bytes": 10794,
+      "sha256": "ac844f10f51f8100c761a4a2d209e01fa5fb1c06f568b13e71cee7c0dc6da530",
+      "bytes": 11202,
       "owner_lane": "06_ONTOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10597,8 +10614,8 @@
     },
     {
       "path": "07_THEOLOGY/00_RECONCILIATION_THEOREM_PACKET.md",
-      "sha256": "223c6a5c158224a1c67af5fac1aace0a82a3985ef0f3ebae1a4eb6316ab2b2aa",
-      "bytes": 6943,
+      "sha256": "fd778e98f7bd0aa294d44011a692651690c538a7a24e834b88da3acd04b5f2f3",
+      "bytes": 7154,
       "owner_lane": "07_THEOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10801,8 +10818,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md",
-      "sha256": "989def79b0e981848dd87130c5d230196290cb5e6b4c9d8b8b32611361342683",
-      "bytes": 3053,
+      "sha256": "abdf4d50579da5395f8645a3bc39efe858b875cf1a99cd78126561b7a6124b35",
+      "bytes": 3135,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10903,8 +10920,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/00_APPLIED_INSIGHTS_FROM_INSIDE.md",
-      "sha256": "6c89b94f1691f9559bf6b5d793b3ce58ded6ff19d71a0ecbc3d2d97d234d5664",
-      "bytes": 13985,
+      "sha256": "1939d58a905c770ac3291d6cc109354825887fd3688a9a07c2172d2b888a3453",
+      "bytes": 14047,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -10954,8 +10971,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/00_SELF_REVIEW.md",
-      "sha256": "16fcb3a55db997e2d66c46a02dd51d7aba626fd46c08b760f5cfb71613db5d49",
-      "bytes": 6353,
+      "sha256": "b99fd2a6dbc733079462d0a1ea364a6acc2e8efb045691232027c4d7a03a5ebd",
+      "bytes": 6530,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11039,8 +11056,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/ANALYSIS_OF_THE_BUILT_FRAMEWORK.md",
-      "sha256": "9ce540c56c4dd1716e625be4a33ed4a838da46f0fe3df0cfcf9b19769711c14a",
-      "bytes": 5995,
+      "sha256": "dadfa5846ff6c4c24efedaeb8799f8a6a36e4dc0962e5678c7217486f534e210",
+      "bytes": 6104,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11175,8 +11192,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_META/FOREWORD.md",
-      "sha256": "de11d12ad3e2da1dab50d6afe9898ff1ca90a55b38add48740f69254249fc35e",
-      "bytes": 7792,
+      "sha256": "68233e4b3d87c32ec415868a3cffd3805541ac725787f1828cd7e369740dc177",
+      "bytes": 7954,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11260,8 +11277,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md",
-      "sha256": "53af6bbe848030883c31958017d11d04ef879c711a898f20f6cb10fa5028c8d0",
-      "bytes": 24045,
+      "sha256": "a42dd63957033d641d0e674786eb0fea51f911c413b07f21361749671900e4a7",
+      "bytes": 24191,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11294,8 +11311,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/00_THE_PROTOCOL.md",
-      "sha256": "baeb584ce85afff313b6276b04078caca933a580bdb497d40be70eb633e7d72c",
-      "bytes": 12866,
+      "sha256": "db7c6f45629736f4e68939ff49e178ebee51947e9666338217621c45223f8afb",
+      "bytes": 12908,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11379,8 +11396,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/00_ARCHETYPE_OPERATOR_PROTOCOL.md",
-      "sha256": "344ad73a535f636587d0141899d2f4bb57eb38287557c7b32d4922c147774b3a",
-      "bytes": 5769,
+      "sha256": "e149d14fc06678af55b3caffa126faddb063ebbf4a3f154ac11406713705e187",
+      "bytes": 5846,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11617,8 +11634,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_281_The_Replicator_Decomposition.md",
-      "sha256": "a6bab2d73a89716b6b03c6bd04d79c196aeed41acad985e88494e74e331df3bf",
-      "bytes": 5599,
+      "sha256": "e80ebb1c984a72252a17766c480d25864f2feb5cec1d1c1a97b8607f5b4c0b02",
+      "bytes": 5745,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -11855,8 +11872,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_298_Dark_Matter_Is_Mutual_Information.md",
-      "sha256": "2f52ef86b34562855f8dd913f0a63b9aa58cd68a38298fc893d6e5f07766b128",
-      "bytes": 13260,
+      "sha256": "3666c0c9562a7b8939a024438cb12812c9f0b7d0d835fac0172ca104b756fd23",
+      "bytes": 13270,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12042,8 +12059,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_66_Mandelbrot_Consciousness.md",
-      "sha256": "3d2e47ed780009a49b01d84edf7184f91263d547ab074752391382b6795a6ca1",
-      "bytes": 30547,
+      "sha256": "830d4c36b6f69e2f18c7c34e1a47c64e1e9120ddfa66076b84e2472e34728d97",
+      "bytes": 31052,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12178,8 +12195,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/04_VRS_SHEETS/VRS_SHEET_08_ANTENNA_TUNING.md",
-      "sha256": "50a42cc632276a9b533f37d6e115695cbcebc921ca384d46299d866d4efabd31",
-      "bytes": 9575,
+      "sha256": "c8866853bd432740ab8a1bd9383edc2bc82cd067b9f06f862f8b5a06896ce6ce",
+      "bytes": 9851,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12535,8 +12552,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_06_THE_SHIP_OF_THESEUS.md",
-      "sha256": "fb1878a61e8789aa1dee3845287931cf323ea98f7d71961a78c6707c3b379aec",
-      "bytes": 7780,
+      "sha256": "624de35566855ace34942c94197d6c0d5c7ed865cb365d99240647c3906486dc",
+      "bytes": 7846,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12552,8 +12569,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_07_FERMI_PARADOX.md",
-      "sha256": "744a44981e8711ff0f61255d593f9d4c061034fe5d658615dd5b760c5847db46",
-      "bytes": 6764,
+      "sha256": "1cde707f9e88ed21a6102d589002c7547acd9c30d8d96d5405c30d734932195b",
+      "bytes": 7012,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12620,8 +12637,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_11_FREE_WILL_VS_DETERMINISM.md",
-      "sha256": "865f5121eb5fb1f97273367e0367cb5101c183a649ba3f90231c5bb58738dce8",
-      "bytes": 7619,
+      "sha256": "d10d2bfed5e3115ceeab9067196f62b86ab6668329a67f2571f91e449e78b2de",
+      "bytes": 7719,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12654,8 +12671,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_13_HARD_PROBLEM.md",
-      "sha256": "13495b43aec3df56f34a9f916f2936b0f9e43254cd958e7176c2c4b210d451c3",
-      "bytes": 20239,
+      "sha256": "a812aef2508ed11d30eff42d12dab7de38e5a9134a01f4e7f24c9228592f24f7",
+      "bytes": 20313,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12705,8 +12722,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_16_MEANING_OF_LIFE.md",
-      "sha256": "1316e23935b13079e98f0fc532f71230c0c32f857a4e61babb1c11369c8fac7a",
-      "bytes": 8282,
+      "sha256": "330f9a5400c72cdbbcc5fb60419b09b2e95ef00b5cb93f4a8ebdc95f7f928834",
+      "bytes": 8386,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -12858,8 +12875,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/README.md",
-      "sha256": "90e51605534f8ba2cf7cd5346a8328acff0c420ede243f0b78d8cd89d6a10c87",
-      "bytes": 6337,
+      "sha256": "a0b9279b6669209bc4e0fea7f1f0f8a9cdcff9d5ec0b7a37443df5f9ff620fc8",
+      "bytes": 6369,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -13045,8 +13062,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md",
-      "sha256": "d6c415d330a4d804d003cb21deabe06c4df7f552ae38e08aed686d05cf0afbe1",
-      "bytes": 31630,
+      "sha256": "1dfe5fba5f476396407d25a97254e5e79543e2e4152a7533e2ab8248abc64e66",
+      "bytes": 31803,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -13555,8 +13572,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_AGENTS/D35_L2_SUDRA_KALI_ANALYSIS.md",
-      "sha256": "a621a3e8cec4e6f25f70f7f938a0194a98afff3a7331b65cd3d8a8158f56a18f",
-      "bytes": 27997,
+      "sha256": "5cef572fe689102e4cd14c4cde6477a17ff3dd343ca6ff3c28ea17cdbd440b13",
+      "bytes": 27501,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -13759,8 +13776,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md",
-      "sha256": "3205101a7e1764ac7a694683117399ee9ed57ba72361a2303ef1058833241cff",
-      "bytes": 12762,
+      "sha256": "5d55f1b16917f56207fcb93f3a724a94b002472513e4db5a3428a5d69d933cc6",
+      "bytes": 13757,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -13912,8 +13929,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D14_ROSETTA_R5_NIETZSCHE.md",
-      "sha256": "933be07f537098f9c52e87beb69bdb48764f5e6a5cb14f06c1c8812f7a364f39",
-      "bytes": 15194,
+      "sha256": "bd355d9f9adaab4e08ff3b81906550889fa8a662ea419fdf8f68c8f5bd28c763",
+      "bytes": 15333,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -14201,8 +14218,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md",
-      "sha256": "0b5444a2a5896ff61734bc5d0494fbfc4ea1393b73aa93f72385993c88f14db2",
-      "bytes": 11528,
+      "sha256": "6ea4563280353dd9bcd0ca61d294f0d2d4eac0e4d57ce903c0db42fd746424d9",
+      "bytes": 11659,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -14592,8 +14609,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/README.md",
-      "sha256": "38b992151483a1d97e2cbb437c38b8a74cf916c73015525531e36c77e7407b6b",
-      "bytes": 11090,
+      "sha256": "4dde5c2142fb5552cb944f7e6475d4a6a4b24eb145322c6b91e7f6c034d237ad",
+      "bytes": 11375,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -14609,8 +14626,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/01_candala_firewall.agent.yaml",
-      "sha256": "e41ae9eafa1df8d4ff910cee176f11292708180b8ead1f291fef43dffad559e7",
-      "bytes": 5354,
+      "sha256": "d77102f223a970e385eea7553451e9846bbc42d78fbe94110a14b95ad12e6e58",
+      "bytes": 5454,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14626,8 +14643,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/02_sudra_explorer.agent.yaml",
-      "sha256": "970aa5c160377790e65d99ed326f315ffb603cc806945fdc74eefb5cf088670b",
-      "bytes": 4892,
+      "sha256": "22dbccdc13b920bcf9445863ffe3afa19f15804fa702f40c31050e3561c30a38",
+      "bytes": 5112,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14643,8 +14660,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/03_vaisya_auditor.agent.yaml",
-      "sha256": "65b5a808314b38bfbbd8cd7f4d8e86177c34680d3122565662a87e05ab713c3a",
-      "bytes": 5240,
+      "sha256": "3a354f134afcaa241794feb74723dbbf3a44e7425961470618cc8e5e6ba71017",
+      "bytes": 5340,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14660,8 +14677,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/04_ksatriya_executor.agent.yaml",
-      "sha256": "257c0c6200f397ef9942a98ee9329dda75c906ce056baa51655978ce0f552b30",
-      "bytes": 6131,
+      "sha256": "6dc6b79fa3aa574b0818d8979421ae6393f7ef1792ebcf4517f538d6a2be9d81",
+      "bytes": 6410,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14677,8 +14694,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/05_brahmana_architect.agent.yaml",
-      "sha256": "c011d9a8783cfd19b0f4ce03b25455d92fcaf3240a6aec43464761a6ddcd93a0",
-      "bytes": 5728,
+      "sha256": "1f29f35357f4922036a4867da8e7ba68e88e6f9bc3b7daa80bbc024f99fe286a",
+      "bytes": 5749,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14694,8 +14711,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/06_sadhu_compressor.agent.yaml",
-      "sha256": "b3e5c3acb88f6070b1d071dd5520c6244afbcacc726813a214bf9b65ae972eac",
-      "bytes": 5572,
+      "sha256": "2c99323d3022a828166d32fcdf73ad9ba1313b969ad798acef68feef2bc7c37a",
+      "bytes": 5593,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14711,8 +14728,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/agents/07_rsi_constitution.agent.yaml",
-      "sha256": "e29b9c809a4ad39a3a0dd542a46481f2e5e0d68633557b3e88572a37db144b69",
-      "bytes": 5668,
+      "sha256": "261794db83562566f02f00188cfabf19510acd837b1381d0f1d3d37417ae4eb4",
+      "bytes": 5689,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -14728,8 +14745,8 @@
     },
     {
       "path": "08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/emergentism.environment.yaml",
-      "sha256": "b9395538a919b806ea24bf89536c0ff9480d32ef729a57c7a0a7b60b55b0a582",
-      "bytes": 666,
+      "sha256": "21518ee43b2c69a0f044d51079238a8871cad69012f600efb921ee67cdb5d3e9",
+      "bytes": 690,
       "owner_lane": "08_FRAMEWORK_SUPPORT",
       "artifact_class": "config",
       "authority_status": "unrated",
@@ -15000,8 +15017,8 @@
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/README.md",
-      "sha256": "cb1406491a6ab52ad59635d526a839479aae329613d89f7358bb8fe8f5c523a8",
-      "bytes": 3957,
+      "sha256": "3a1a7e7b4d0ad19d76e2910d6af4e7b96342aa1aea2c36ce9473dd5b33039d13",
+      "bytes": 5137,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15084,6 +15101,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/01_SCRIPTS/check_coherence_profile.py",
+      "sha256": "8e667047b1c0d99de6be65b9327aa981a8c426f28982542f8462dc8b123b61da",
+      "bytes": 10827,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/01_SCRIPTS/check_d6_equiv_d0.py",
       "sha256": "eabb09eb289008912ea30ca6d01af770ea8046d0c3c2546a776f33419324f1e6",
       "bytes": 10479,
@@ -15113,14 +15147,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 12,
+      "inbound_references": 13,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/check_established.py",
-      "sha256": "5871ae4cdde49f163795352842915e0f253308c2801e04bb444e2b76390ef109",
-      "bytes": 6463,
+      "sha256": "b5d4458d931fc8415a174bf5364a0b9c8d59e0f28b01733aa40dce7589ffc634",
+      "bytes": 6479,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15136,8 +15170,8 @@
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/check_foundation.py",
-      "sha256": "1dba4e9149af6f62944f36723d22cad6cd10f661353140c7d2a7cb973e693a34",
-      "bytes": 9763,
+      "sha256": "85d4df45f4fc3bf223cfe63d663b7af186f324ae188bc261f4a39fbc7aa06089",
+      "bytes": 13605,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15147,7 +15181,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 2,
+      "inbound_references": 3,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15203,6 +15237,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/01_SCRIPTS/check_node_product_ranking.py",
+      "sha256": "c6250a99104d5a488881a2b6ee435496e1cfc1dacb86bb36039508978252f3fd",
+      "bytes": 10976,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 3,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/01_SCRIPTS/check_q4_declarations.py",
       "sha256": "018e2fa7282fea1158674835a18915a240ba9a870b4bf7b6bca8cb672634f24e",
       "bytes": 4869,
@@ -15232,7 +15283,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15306,8 +15357,8 @@
     },
     {
       "path": "09_TOOLS/01_SCRIPTS/check_work_in_progress.py",
-      "sha256": "dabb5fda9fa108cc7c12a166da77ab6c3db8dfa03810329fec19380955692435",
-      "bytes": 7401,
+      "sha256": "7279d08016a9dc76319876d4beefef54a30652f14c89a394dd2f6eead94a90fd",
+      "bytes": 8073,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15339,9 +15390,43 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
+      "sha256": "f0c33610bd5909c4d4bcdcd8578ac991bb51595cef1889dbdc3da76c08c549d5",
+      "bytes": 1459,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 4,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/01_SCRIPTS/foundation_type_firewall.py",
+      "sha256": "efcffea12ce17da358c1c0b4419dc0c1e8cb36f5b4a969be1153ea788b8cd4a8",
+      "bytes": 7984,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 0,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/01_SCRIPTS/gate.sh",
-      "sha256": "50e0a3682aa528a8e6a34907efdf6c9c7f7ca2860ff3be29d0ab1614a6ad9293",
-      "bytes": 7148,
+      "sha256": "71b7acac4e44895e315c3869bb488a75c93808aca379de6de312116eadb7c0d0",
+      "bytes": 7253,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15369,23 +15454,6 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 2,
-      "gate": null,
-      "review_state": "unreviewed"
-    },
-    {
-      "path": "09_TOOLS/01_SCRIPTS/mver_validator.py",
-      "sha256": "3e7ec85815b45fc2295096e0f8b4ee84fd021abaa5ef734b1a6400fc2868c833",
-      "bytes": 5616,
-      "owner_lane": "09_TOOLS",
-      "artifact_class": "tool",
-      "authority_status": "unrated",
-      "evidence_tier": null,
-      "k_relation": null,
-      "public_projection": null,
-      "disposition": "keep",
-      "destination": null,
-      "absorber": null,
-      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15475,40 +15543,6 @@
       "review_state": "unreviewed"
     },
     {
-      "path": "09_TOOLS/01_SCRIPTS/test_mver_validator.py",
-      "sha256": "4da394ff84a3fe8101ae029003c85e8caa61fb853f09092c1a8f756879f6790c",
-      "bytes": 4740,
-      "owner_lane": "09_TOOLS",
-      "artifact_class": "tool",
-      "authority_status": "unrated",
-      "evidence_tier": null,
-      "k_relation": null,
-      "public_projection": null,
-      "disposition": "keep",
-      "destination": null,
-      "absorber": null,
-      "inbound_references": 1,
-      "gate": null,
-      "review_state": "unreviewed"
-    },
-    {
-      "path": "09_TOOLS/01_SCRIPTS/verify_z_ai.py",
-      "sha256": "58ab9b6fce8b247a831aa82b26c865644b0e9b25aae8c51842fbbfb76d8e7c3a",
-      "bytes": 3434,
-      "owner_lane": "09_TOOLS",
-      "artifact_class": "tool",
-      "authority_status": "unrated",
-      "evidence_tier": null,
-      "k_relation": null,
-      "public_projection": null,
-      "disposition": "keep",
-      "destination": null,
-      "absorber": null,
-      "inbound_references": 1,
-      "gate": null,
-      "review_state": "unreviewed"
-    },
-    {
       "path": "09_TOOLS/01_SCRIPTS/visualize_lx.py",
       "sha256": "784550dded7aa59ab5290be6eb36b7e8323a2fb9fb15b6cb68857791ef53b703",
       "bytes": 5697,
@@ -15561,8 +15595,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/README.md",
-      "sha256": "36c09c96050a8fb79ade5098d2989553a7d549c79eee4086108608d8f16de53d",
-      "bytes": 2524,
+      "sha256": "3c990904e3fb66647fd891a2021ac3180efbe934bef1b52c0d8591a4e207f24c",
+      "bytes": 3367,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15595,8 +15629,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/compile_claim_cards.py",
-      "sha256": "faa3605ab89f85637334b4168ac02112e6d7bcf7bc5dc5706cf56669b6a8525a",
-      "bytes": 25315,
+      "sha256": "18fa2b6fc482879b55f8681912439a9b57658e096bef676c63b7c2641890e629",
+      "bytes": 26338,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15662,9 +15696,9 @@
       "review_state": "unreviewed"
     },
     {
-      "path": "09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py",
-      "sha256": "dcdbefafa8e3ec072267f5d4069ab24cc1b9e94cb3de1a86137230c1e6eef89a",
-      "bytes": 9684,
+      "path": "09_TOOLS/02_COMPILERS/test_coherence_profile.py",
+      "sha256": "c0cd6417491bff48bb08a4d3953de8f473749f038bc614864fa1f68fec6796db",
+      "bytes": 7741,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15679,9 +15713,26 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py",
+      "sha256": "6ae1646fd0091f4ff39c6c195b239258d1193ecfbeb50cc9a4770fa12b025410",
+      "bytes": 11875,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 2,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/02_COMPILERS/test_dimension_first_canon.py",
-      "sha256": "79d882109c2a154b45eacbe387cbcd837ec5d381ebfc46f02f533f39ca2eef50",
-      "bytes": 43544,
+      "sha256": "db7d5b6e332ab560c1b32de7deeaf2f3f346ee3d987ae66e490f96d5443157e3",
+      "bytes": 42739,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15730,9 +15781,26 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/02_COMPILERS/test_foundation_type_firewall.py",
+      "sha256": "1b76fc5c58834c0ce9c004a5281cfea92f0a7431e6549ec19792baa6833af7ee",
+      "bytes": 6717,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 0,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/02_COMPILERS/test_grand_puzzle_assembly.py",
-      "sha256": "482a7616f2cc921bde4f8b10ad85f33f21fa0fa99c471d24b4c76cf79bfb37d4",
-      "bytes": 7219,
+      "sha256": "1fdffd21b25303fdfba459554b00799d5c4f4abf829cc3b8e60371b5ecced6b3",
+      "bytes": 7251,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -15760,6 +15828,23 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 0,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/02_COMPILERS/test_node_product_ranking.py",
+      "sha256": "4cc3dae44b837eac308ad2e9730237035ef175a05448fdadc15631695278dc3d",
+      "bytes": 4085,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -16054,8 +16139,8 @@
     },
     {
       "path": "09_TOOLS/03_SIMULATIONS/formal_reap/PROOF_LEDGER.md",
-      "sha256": "75236cb6e040ef556db9c4cad946ea24de3b61c0d828b885ed21f2043b6540bc",
-      "bytes": 17975,
+      "sha256": "fdff1170bf31b9aba1b41e019682d354e65d23e5d97b93072506aaa447f15a9c",
+      "bytes": 18181,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -16071,8 +16156,8 @@
     },
     {
       "path": "09_TOOLS/03_SIMULATIONS/formal_reap/README.md",
-      "sha256": "8a9a52f287caa37c2e2cab1220ee1cb4c13b43f1588f324ab3c9e134e5431ced",
-      "bytes": 3651,
+      "sha256": "c7f9868d57ad374adacdf137bea5cb659ef8d0a8f31458f3aefa7cf2f0d952fd",
+      "bytes": 3846,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -16411,8 +16496,8 @@
     },
     {
       "path": "09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean",
-      "sha256": "87d57b13005291d9e45da7e017fdeb0946df45cde8688b81e7c811c4195efbc3",
-      "bytes": 9286,
+      "sha256": "0c3b49d9b7b8dbb57b977c007a34b9f2d23d4e339325dff5b66084c58616f0ff",
+      "bytes": 9438,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -16428,8 +16513,8 @@
     },
     {
       "path": "09_TOOLS/05_FORMAL_VERIFICATION/README.md",
-      "sha256": "ae53b0628521e5a49f00ce212dd1cf9e7afa5e55e375573ac96ed7935fb52552",
-      "bytes": 3583,
+      "sha256": "cbb091496537e5142b7fc791d5a54bde2ccf5f67e476e5e1cf2dc76fbd10be55",
+      "bytes": 3664,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -17090,6 +17175,57 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md",
+      "sha256": "667a05c6ea0b74dbd3249fcc9c1c2ff8209baa44c58d8650e046a15652ea0cb9",
+      "bytes": 1316,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 999,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/mver_validator.py",
+      "sha256": "3e7ec85815b45fc2295096e0f8b4ee84fd021abaa5ef734b1a6400fc2868c833",
+      "bytes": 5616,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 4,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/test_mver_validator.py",
+      "sha256": "4da394ff84a3fe8101ae029003c85e8caa61fb853f09092c1a8f756879f6790c",
+      "bytes": 4740,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 4,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/90_ARCHIVE/scripts_legacy_convenience_copy_2026_05_04/AGENTS.md",
       "sha256": "1bf032ed82f6d8d6c191ea7d8a85bf9b9edb0adf7dd90ddabfe6d351eb25cc77",
       "bytes": 2485,
@@ -17289,7 +17425,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 5,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -17584,8 +17720,8 @@
     },
     {
       "path": "10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md",
-      "sha256": "bc5349c0876fe2765b998bb28c857e8600f7598911741c1b1a88df5affc542c2",
-      "bytes": 13666,
+      "sha256": "8cf48aacc588ee38b3c80018cf80d50cad16bddbf348e4e07a2435a6fc0470bc",
+      "bytes": 13801,
       "owner_lane": "10_SEED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -17618,8 +17754,8 @@
     },
     {
       "path": "10_SEED/01_THE_SEED_LADDER/D1_ARITHMETIC.md",
-      "sha256": "e2a3bae32be3bd57e079d47f983a2ea98a8f25170f125e965d5b6a723e860001",
-      "bytes": 10936,
+      "sha256": "d3794931400e7df8647226936cb4d5d41896409badf0705644f203e989dd9417",
+      "bytes": 11092,
       "owner_lane": "10_SEED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -17635,8 +17771,8 @@
     },
     {
       "path": "10_SEED/01_THE_SEED_LADDER/D2_GEOMETRY.md",
-      "sha256": "eee06b80fc42e9adbb9f8d521c7ded1964d8fc2311f0d1baa70ad4a43b86eac8",
-      "bytes": 7509,
+      "sha256": "0e03123917dc86fb41398236663050fd76fd88efd0fe9dfbd565223ea3b87683",
+      "bytes": 7596,
       "owner_lane": "10_SEED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -17686,8 +17822,8 @@
     },
     {
       "path": "10_SEED/01_THE_SEED_LADDER/D4_SPACETIME.md",
-      "sha256": "1d146e71951a6cf3cce6d7343cdce4785f153f7ec739a4639a71d2f11b799763",
-      "bytes": 7752,
+      "sha256": "9a1734cca43e2ec50854eff5d37aa2253fa116695170fa3df5338266d596a6bd",
+      "bytes": 7873,
       "owner_lane": "10_SEED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -17703,8 +17839,8 @@
     },
     {
       "path": "10_SEED/01_THE_SEED_LADDER/D5_THE_GAME.md",
-      "sha256": "fe132b7b2af8719efda2dbaf18bfeebdf2ec42394c2b0ed6f2fb067097df2483",
-      "bytes": 9904,
+      "sha256": "a27d76be8c60678d2c7952fb63ad1713c97972a0592dd2701f39e667b70bf52f",
+      "bytes": 9994,
       "owner_lane": "10_SEED",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -18479,14 +18615,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md",
-      "sha256": "524559fe5187ce0bde59099d9a86ef1b922914b3f1b13899f72c75d59bf59c4a",
-      "bytes": 38067,
+      "sha256": "d2b927fa4049317faf1aeceb0df1de26632e868ea3f92a71159e1f3faa366c61",
+      "bytes": 38366,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",
@@ -20502,7 +20638,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 3,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -20706,7 +20842,24 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 4,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md",
+      "sha256": "623b237dead290986721ff3eed2aa8705a2c6a1afde0e7e6eff4d3c0f17f1905",
+      "bytes": 9103,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 5,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -24956,7 +25109,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25041,7 +25194,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25058,7 +25211,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25075,7 +25228,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25092,7 +25245,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25126,7 +25279,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25143,7 +25296,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25415,7 +25568,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25466,7 +25619,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -25976,7 +26129,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26112,7 +26265,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -26129,7 +26282,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27761,7 +27914,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27829,7 +27982,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27982,7 +28135,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -27999,7 +28152,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28016,7 +28169,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28033,7 +28186,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28050,7 +28203,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28067,7 +28220,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28084,7 +28237,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28101,7 +28254,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28118,7 +28271,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28135,7 +28288,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28169,14 +28322,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/check_public_semantic_parity.py",
-      "sha256": "9660fcf48387fc787ac9093ebd1fd689511dc8a40ecb102d6853e5dc77b9ad31",
-      "bytes": 25747,
+      "sha256": "8de96c760290a023f34618c92603f2488e6f0954a6c9f54be3ba757dd9fa4cd5",
+      "bytes": 23286,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28220,7 +28373,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28237,7 +28390,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28254,7 +28407,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28271,7 +28424,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28288,7 +28441,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28390,7 +28543,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28407,7 +28560,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28424,7 +28577,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28441,7 +28594,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28458,7 +28611,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28475,7 +28628,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28492,7 +28645,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28509,7 +28662,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28526,7 +28679,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28543,7 +28696,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28560,7 +28713,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28577,7 +28730,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28594,7 +28747,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28645,7 +28798,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28662,7 +28815,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28679,14 +28832,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/established/index.html",
-      "sha256": "788e77d7891d92ce9cca0cebed0855b6ac286dd02d81276655b095beb72674a1",
-      "bytes": 33861,
+      "sha256": "e964b4194e0e90b879df0f44a00292f59d55812f7dda2419587b5b0ce86c5e70",
+      "bytes": 33433,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28696,7 +28849,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28764,7 +28917,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28781,7 +28934,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28798,7 +28951,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28815,7 +28968,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28832,7 +28985,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28849,7 +29002,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28866,7 +29019,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28883,7 +29036,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28900,7 +29053,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28917,7 +29070,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28934,7 +29087,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28951,7 +29104,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28968,7 +29121,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -28985,7 +29138,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29002,7 +29155,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29019,7 +29172,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29036,7 +29189,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29053,7 +29206,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29070,7 +29223,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29087,7 +29240,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29104,7 +29257,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29121,7 +29274,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29138,7 +29291,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29155,7 +29308,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29172,7 +29325,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29189,7 +29342,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29206,7 +29359,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29223,7 +29376,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29240,7 +29393,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29257,7 +29410,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29274,7 +29427,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29291,7 +29444,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29308,7 +29461,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29325,7 +29478,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29342,7 +29495,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29359,7 +29512,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29376,7 +29529,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29393,7 +29546,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29410,7 +29563,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29427,7 +29580,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29444,7 +29597,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29461,7 +29614,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29478,7 +29631,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29495,7 +29648,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29512,7 +29665,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29529,7 +29682,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29546,7 +29699,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29563,7 +29716,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29580,7 +29733,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29597,7 +29750,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29614,7 +29767,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29631,7 +29784,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29648,7 +29801,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29665,7 +29818,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29682,7 +29835,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29699,14 +29852,14 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/generate_public_library.py",
-      "sha256": "b2e9be26f44bffdaf89595804a2900d6398fdc2818f35270a4c598c0c827aff2",
-      "bytes": 44328,
+      "sha256": "74ad936557bcb4351f71fbc889aef89f80e2f295bcb52c0ac13c25f9cb71dc3e",
+      "bytes": 45463,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -29733,7 +29886,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29750,7 +29903,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29767,7 +29920,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29784,7 +29937,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29801,7 +29954,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29818,7 +29971,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29835,7 +29988,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29852,7 +30005,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29869,7 +30022,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29886,7 +30039,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29903,7 +30056,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29954,7 +30107,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29971,7 +30124,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -29988,7 +30141,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30005,7 +30158,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30039,7 +30192,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30056,7 +30209,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30107,7 +30260,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30141,7 +30294,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30175,7 +30328,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30226,7 +30379,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30243,7 +30396,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30260,7 +30413,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30277,7 +30430,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30294,7 +30447,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30311,7 +30464,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30328,7 +30481,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30345,7 +30498,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30362,7 +30515,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30379,7 +30532,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30396,7 +30549,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30413,7 +30566,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30430,7 +30583,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30447,7 +30600,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30464,7 +30617,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30481,7 +30634,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30498,7 +30651,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30515,7 +30668,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30532,7 +30685,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30549,7 +30702,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30566,7 +30719,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30583,7 +30736,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30600,7 +30753,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30617,7 +30770,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30634,7 +30787,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30651,7 +30804,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30668,7 +30821,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30685,7 +30838,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30702,7 +30855,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30719,7 +30872,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30736,7 +30889,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30753,7 +30906,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30770,7 +30923,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30787,7 +30940,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30804,7 +30957,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30821,7 +30974,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30838,7 +30991,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30855,7 +31008,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30872,7 +31025,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30889,7 +31042,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30906,7 +31059,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30923,7 +31076,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30940,7 +31093,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30957,7 +31110,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30974,7 +31127,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -30991,7 +31144,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31008,7 +31161,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31025,7 +31178,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31042,7 +31195,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31059,7 +31212,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31076,7 +31229,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31093,7 +31246,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31110,7 +31263,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31127,7 +31280,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31144,7 +31297,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31161,7 +31314,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31178,7 +31331,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31195,7 +31348,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31212,7 +31365,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31229,7 +31382,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31246,7 +31399,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31263,7 +31416,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31280,7 +31433,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31297,7 +31450,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31314,7 +31467,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31331,7 +31484,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31348,7 +31501,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31365,7 +31518,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31382,7 +31535,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31399,7 +31552,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31416,7 +31569,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31433,7 +31586,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31450,7 +31603,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31467,7 +31620,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31484,7 +31637,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31501,7 +31654,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31518,7 +31671,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31535,7 +31688,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31552,7 +31705,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31569,7 +31722,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31586,7 +31739,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31603,7 +31756,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31620,7 +31773,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31637,7 +31790,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31654,7 +31807,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31671,7 +31824,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31688,7 +31841,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31705,7 +31858,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31722,7 +31875,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31739,7 +31892,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31756,7 +31909,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31773,7 +31926,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31790,7 +31943,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31807,7 +31960,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31824,7 +31977,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31841,7 +31994,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31858,7 +32011,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31875,7 +32028,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31892,7 +32045,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31909,7 +32062,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31926,7 +32079,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31943,7 +32096,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31960,7 +32113,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31977,7 +32130,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -31994,7 +32147,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32011,7 +32164,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32028,7 +32181,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32045,7 +32198,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32062,7 +32215,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32079,7 +32232,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32096,7 +32249,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32113,7 +32266,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32130,7 +32283,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32147,7 +32300,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32232,7 +32385,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32249,7 +32402,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32317,7 +32470,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32334,7 +32487,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32351,7 +32504,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32368,7 +32521,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32385,7 +32538,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32402,7 +32555,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32419,7 +32572,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32436,7 +32589,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32476,8 +32629,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/record/index.html",
-      "sha256": "9766e8e0eea4c007a9167e70aa77e9304b2a6bcd3a3dc49b9edec54d80c8f9e6",
-      "bytes": 86179,
+      "sha256": "d57127a100d9856fd481f039b70ebe00fb791b73a6d587c208e8da3c147d5776",
+      "bytes": 86205,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -32487,7 +32640,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32538,7 +32691,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32572,7 +32725,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32589,7 +32742,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32606,7 +32759,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32623,7 +32776,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32640,7 +32793,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32657,7 +32810,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32674,7 +32827,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32691,7 +32844,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32708,7 +32861,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32725,7 +32878,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32742,7 +32895,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32759,7 +32912,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32776,7 +32929,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32793,7 +32946,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32810,7 +32963,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32827,7 +32980,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32844,7 +32997,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32861,7 +33014,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32878,7 +33031,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32895,7 +33048,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32912,7 +33065,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32929,7 +33082,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32946,7 +33099,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32963,7 +33116,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32980,7 +33133,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -32997,7 +33150,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33014,7 +33167,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33031,7 +33184,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33048,7 +33201,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33065,7 +33218,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33082,7 +33235,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33099,7 +33252,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33116,7 +33269,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33133,7 +33286,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33150,7 +33303,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33167,7 +33320,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33184,7 +33337,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33201,7 +33354,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33218,7 +33371,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33235,7 +33388,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33252,7 +33405,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33269,7 +33422,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33286,7 +33439,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33303,7 +33456,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33320,7 +33473,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33337,7 +33490,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33354,7 +33507,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33371,7 +33524,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33388,7 +33541,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33422,7 +33575,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33439,7 +33592,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33473,7 +33626,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33490,13 +33643,13 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
     {
       "path": "12_PUBLIC_SITE/sw.js",
-      "sha256": "7118aa98e0bc32b17b3b40a5bc9dcfc672827ac8e0634c71e2f5c715733d4178",
+      "sha256": "627fb8050f365339fa73b7dba7c1fc346e3a889531557899868ae71fe57442db",
       "bytes": 3675,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -33524,7 +33677,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33541,7 +33694,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33558,7 +33711,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33626,7 +33779,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33660,7 +33813,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33677,7 +33830,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33694,7 +33847,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33711,7 +33864,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33728,7 +33881,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33745,7 +33898,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33762,7 +33915,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33779,7 +33932,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33796,7 +33949,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33813,7 +33966,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33830,7 +33983,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33847,7 +34000,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33864,7 +34017,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33881,7 +34034,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33898,7 +34051,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33915,7 +34068,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33932,7 +34085,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33949,7 +34102,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33966,7 +34119,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -33983,7 +34136,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34000,7 +34153,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34017,7 +34170,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34034,7 +34187,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34051,7 +34204,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34068,7 +34221,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34085,7 +34238,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34102,7 +34255,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34119,7 +34272,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34136,7 +34289,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34153,7 +34306,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34170,7 +34323,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34187,7 +34340,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34204,7 +34357,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34221,7 +34374,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34238,7 +34391,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34255,7 +34408,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34272,7 +34425,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34289,7 +34442,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34306,7 +34459,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34323,7 +34476,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34340,7 +34493,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34357,7 +34510,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34374,7 +34527,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34391,7 +34544,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34408,7 +34561,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34425,7 +34578,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34442,7 +34595,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34459,7 +34612,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34476,7 +34629,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34493,7 +34646,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34510,7 +34663,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34527,7 +34680,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34544,7 +34697,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34561,7 +34714,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34578,7 +34731,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34799,7 +34952,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34816,7 +34969,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34833,7 +34986,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34850,7 +35003,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34867,7 +35020,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34884,7 +35037,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34901,7 +35054,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34918,7 +35071,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34935,7 +35088,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34952,7 +35105,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34969,7 +35122,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -34986,7 +35139,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35003,7 +35156,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35020,7 +35173,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35037,7 +35190,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35054,7 +35207,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35071,7 +35224,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35088,7 +35241,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35105,7 +35258,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35122,7 +35275,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35139,7 +35292,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35156,7 +35309,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35173,7 +35326,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35190,7 +35343,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35207,7 +35360,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35224,7 +35377,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35241,7 +35394,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35258,7 +35411,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35275,7 +35428,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35292,7 +35445,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35309,7 +35462,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -35757,8 +35910,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
-      "sha256": "3b74ebb74940e47ed78560bbdf61f64bfacd9ab9310d927c91ff3bc92bd5bea1",
-      "bytes": 31525,
+      "sha256": "b2ccc499062fad32b39fdb4fec8583ded70082552dde166d3264438bbd23aea7",
+      "bytes": 31810,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35791,8 +35944,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
-      "sha256": "815a704dfef568cdac98180a336b5d48d0c6f031c3913a5cfdcb807badb0492c",
-      "bytes": 25325,
+      "sha256": "7f892f6817240e6c33b0a4355968f70bc3764efe3331826bea709308442c1f1c",
+      "bytes": 25373,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35808,8 +35961,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/12_value-without-capture.md",
-      "sha256": "c9a1056afd44ed00c9b49dedd4664641dc24e1c8c1c3d880fd36fbfd4fd3d76e",
-      "bytes": 24937,
+      "sha256": "f1bcc2b9c38f00cfb43dd55472694a2c1c145f09e4a7b6fe6f4126cec05a2aba",
+      "bytes": 25142,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35825,8 +35978,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/13_the-six-lenses.md",
-      "sha256": "04ce62bf2ef8276337cfa2e93c52b730c09a5c76cd9f9a87dec307bd977ea18e",
-      "bytes": 30886,
+      "sha256": "f456629375316dc1a8f8917c0645707f47afe0b9a5e5c55ee2ac554936b86089",
+      "bytes": 31049,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35842,8 +35995,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/14_the-paradox-engine.md",
-      "sha256": "ecdd3708d2d29b01482458f46b1753bfbf3a586b2ac0306eaf5a1a0e8d6e96af",
-      "bytes": 21386,
+      "sha256": "80a3a9447edf64c3b7718691668ba1d806ac7c7eb74ed3663e54f9348ed6424d",
+      "bytes": 21422,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35859,8 +36012,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/15_practice-as-method.md",
-      "sha256": "d0635efbb1c4da4b6739fc99c6f3a20e3d92de8aad98b60f7ee0b931760fc082",
-      "bytes": 23768,
+      "sha256": "4bc9582ea3260a7f4671d2dd21838c312f24232ab14030dee3452f04b18605a1",
+      "bytes": 23788,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35876,8 +36029,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/16_living-ideas.md",
-      "sha256": "cd039576419ac6d512f88c3f30f4318330ce04ba4ee0329754b90d46ad99c0b2",
-      "bytes": 21479,
+      "sha256": "b6fb6b615bf4de372dc8fe48401a96580fbbe935529992bc4d125ac79f811678",
+      "bytes": 21541,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35927,8 +36080,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
-      "sha256": "2a800888c5ab5db37009a858e5d13fc998c015824728e6bb5217940a73a7f7df",
-      "bytes": 29464,
+      "sha256": "2d7c32005172606e7e67aa34eeb24cb0242b8223c8bda56e4afd6ca960400d7c",
+      "bytes": 29609,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35944,8 +36097,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
-      "sha256": "30786c57e31a9be83a735b31da8b16db866208b74d4491a8a0f467eedd0c70dc",
-      "bytes": 38454,
+      "sha256": "f8127612ac054305e6c898a0caa3837e85aefe59ad29f97f1a5eedb55c659a89",
+      "bytes": 38601,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -35978,8 +36131,8 @@
     },
     {
       "path": "13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md",
-      "sha256": "b9ff6788f342ce0342f319967e3bcb8348d555381746c0375b2ce49770755683",
-      "bytes": 12682,
+      "sha256": "fbcfa5d2e5375eab1e8066bef0efd5bb48c08475fe1cfc860d7ae399a6fafcf2",
+      "bytes": 12722,
       "owner_lane": "13_BOOKS",
       "artifact_class": "doctrine",
       "authority_status": "staged",
@@ -37995,7 +38148,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 454,
+      "inbound_references": 453,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -54553,7 +54706,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 254,
+      "inbound_references": 255,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -55964,7 +56117,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 174,
+      "inbound_references": 172,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -56474,7 +56627,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 60,
+      "inbound_references": 66,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -57823,8 +57976,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "f254a7c6c50c826f9d258443c18d8f6cb13af1be2174400ee4bb0bd895a2ce82",
-      "bytes": 8987,
+      "sha256": "45f924cdb24e60ead42ea6c6d587e3bde495500b48ddf32b5fc93bb0e2604eb3",
+      "bytes": 9009,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",

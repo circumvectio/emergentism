@@ -103,8 +103,9 @@ EvaluationStatus   : value | undefined | indeterminate_form | diverges | extende
 
 `TitanFrame ↛ Number`. The frame glyphs do not acquire addition,
 multiplication, division, or exponentiation merely because they resemble
-familiar mathematical marks. `[S]` In particular, neither `0_T×∞_T` nor
-`0_N×∞_P` is a field product, and no displayed emblem repairs `0/0` or division
+familiar mathematical marks. `[S]` In particular, an attempted product of two
+Titan seats is ill-typed, as is a field product that silently mixes a numeric
+zero with a projective horizon. No displayed emblem repairs `0/0` or division
 by zero.
 
 This is the first positive Finity claim `[I]`:
@@ -190,7 +191,7 @@ an ambition. These gates convert the ambition into a public research standard:
 
 | Gate | Evidence required | Claim permitted if passed | Honest result if it fails |
 |---|---|---|---|
-| **F0 — Type integrity** | Complete syntax/semantics, negative tests for `0_T×∞_T`, `a/0`, implicit extensions, and register leakage. | A well-specified internal boundary calculus. | A metaphor or pedagogical vocabulary, not a calculus. |
+| **F0 — Type integrity** | Complete syntax/semantics, negative tests for attempted Titan-seat multiplication, `a/0`, implicit extensions, and register leakage. | A well-specified internal boundary calculus. | A metaphor or pedagogical vocabulary, not a calculus. |
 | **F1 — Mathematical contribution** | Independent formal review plus a theorem, invariant, classification, or no-go result beyond prior art. | A new mathematical contribution of the stated scope. | A lucid synthesis or exposition. |
 | **F2 — Computational or practical utility** | A reproducible tool or method that beats a named baseline on a frozen task. | A useful formal instrument. | A teaching/research index only. |
 | **F3 — Scientific contact** | A declared `μ` test packet, fair lower-register rivals, preregistration, and independent replication of a novel discriminator. | Evidence for that one scoped crossing. | No empirical support for an ontic traversal claim. |

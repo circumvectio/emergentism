@@ -35,12 +35,14 @@ nothing. **The expression names an element that the structure does not contain.*
 
 ### 1.2 INADMISSIBLE TERM `[A]`
 
-`0 × ∞` in a context where `∞` is not an element of the structure.
+The attempted product of zero and infinity in a context where infinity is not
+an element of the structure.
 
-If the domain is `ℝ` and `∞` is not an element of `ℝ`, the expression is not
-well-formed at all. The grammar never produced it. The same applies to `0_T × ∞_T`
-when `0_T` and `∞_T` are *seats* (boundary roles), not numbers. **The expression
-fails the type check before evaluation.**
+If the domain is `ℝ` and infinity is not an element of `ℝ`, the expression is
+not well-formed at all. The grammar never produced it. The same applies to an
+attempted multiplication of two Titan *seats* (boundary roles): TitanFrame has
+no multiplication operation. **The expression fails the type check before
+evaluation.**
 
 *Kill.* Exhibit a context in which the same term is both a well-formed product
 *and* a well-defined value with the usual arithmetic properties.
@@ -111,4 +113,3 @@ with citations. This one-pager is the distribution form.
 *Suggested use.* As a 5-minute pre-read for a non-specialist collaborator, a
 classroom aside, or a footnote in a paper that needs the distinction without
 the apparatus.
-

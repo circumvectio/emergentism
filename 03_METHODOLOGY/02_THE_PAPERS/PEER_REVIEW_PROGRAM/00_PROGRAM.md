@@ -12,6 +12,11 @@ rosetta:
 **Depends on:** [00_WHAT_IS_ACTUALLY_NOVEL_HERE.md](../../../00_META/00_WHAT_IS_ACTUALLY_NOVEL_HERE.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](../../../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md), [PAPER_N_PRODUCTIVE_TRANSCENDENTAL_WAGERS.md](../PAPER_N_PRODUCTIVE_TRANSCENDENTAL_WAGERS.md), [PAPER_VII_FINITY_SUBMISSION.md](../FINITY_PAPERS/PAPER_VII_FINITY_SUBMISSION.md)
 **Evidence tier:** [S/I] program doctrine; each candidate paper carries its own tier.
 
+> **KSC-02 custody fence (2026-07-29).** This program preserves its original
+> product hypothesis as a falsifiable, separately cardinal candidate. The
+> current ordinal node ranking is `P_node=min(Φ̂₄,V₄)`; no `ΦV` notation
+> below overrides that owner.
+
 ---
 
 ## 1. The governing fact
@@ -44,8 +49,15 @@ The corpus's η = 0 / charioteer doctrine makes a testable prediction: a constit
 **#3 — Transfer asymmetry under descent dynamics.** [A] model-internal, executed.
 The corpus's first run experiment (2026-06-10, this folder). Static engine confirmed and identified as Pigou–Dalton; naive dynamic reading refuted; triage amendment and currency axiom owed to Paper W; extraction robustly worst; the Arjuna-without-Kṛṣṇa gap identified, with the v2 (regeneration) experiment registered. The intellectual yield per token of this experiment exceeded everything written about Paper W since its creation — which is the program's whole argument in one line. → **R3** (results: [R3_TRANSFER_ASYMMETRY_RESULTS.md](R3_TRANSFER_ASYMMETRY_RESULTS.md)).
 
-**#4 — The two-factor multiplicative structure of productivity.** [I], the keystone wager.
-`P_node = Φ × V` is the finite-node/contact-register joint everything else hangs from. It is testable without a lab: blind raters, vignette battery, factor recovery, and the decisive comparison — does the **product** of recovered factors predict an independent criterion better than their sum or either alone? A pre-registered null kills cleanly (third factor of comparable variance, or additive ≥ multiplicative). The corpus should want this test precisely because losing it would be informative. → **R4**.
+**#4 — The two-factor multiplicative structure of productivity.** [I], the original keystone wager.
+The program's original `P_node = Φ × V` notation now names the separately
+cardinal candidate `C×`, not the current node ranking. It remains testable
+without a lab: blind raters, vignette battery, factor recovery, and the decisive
+comparison — does the **product** of recovered factors predict an independent
+criterion better than their sum or either alone? A pre-registered null kills
+cleanly (third factor of comparable variance, or additive ≥ multiplicative).
+The corpus should want this candidate test precisely because losing it would be
+informative. → **R4**.
 
 **#5 — The unit as frame (finity, in journal language).** [A] history; [I] thesis.
 Euclid's monad is defined as the measure, not a number (Elements VII, Def. 1–2); Stevin's *L'Arithmétique* (1585) is the moment 1 was promoted to ordinary numberhood; dimensional analysis (Buckingham 1914) and the 2019 SI redefinition are where modern science rediscovered the unit's frame-character operationally. Thesis: the unit is a boundary object of the same kind zero's history exhibits, hidden in plain sight by positional notation. This is the externally defensible core of Paper VII, stripped of ontology. Solid scholarship, modest ceiling, low risk. → **R5**.

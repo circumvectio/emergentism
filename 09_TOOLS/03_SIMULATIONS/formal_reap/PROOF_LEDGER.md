@@ -80,10 +80,10 @@ This ledger answers one question for every major claim in **The Reap**: what exa
 
 | ID | Claim | Verdict | Certificate / scope |
 |---|---|---|---|
-| R5.1 | `P = ΦV`. | **DEFINITIONAL MODEL LAW** | `effectivePower` defines the product. No theorem derives multiplication uniquely from the zero boundary. |
-| R5.2 | `P=0` iff `Φ=0` or `V=0`. | **MACHINE-PROVED IN THE PRODUCT MODEL** | `effective_power_zero_iff`. |
-| R5.3 | Positive `Φ` and `V` imply positive modeled `P`. | **MACHINE-PROVED IN THE PRODUCT MODEL** | `effective_power_positive`. |
-| R5.3a | The selected product has a ceiling of one. | **MACHINE-PROVED, CONDITIONAL ON NORMALIZATION** | `effective_power_unit_interval`: if both `Φ,V ∈ [0,1]`, then `ΦV ∈ [0,1]`. The unit ceiling does not follow without those bounds. |
+| R5.1 | Historical candidate `C× = ΦV`. | **DEFINITIONAL CANDIDATE-MODEL LAW** | `effectivePower` defines the product. No theorem derives multiplication uniquely from the zero boundary or makes it the current ordinal ranking, which is `P_node=min(Φ̂₄,V₄)`. |
+| R5.2 | `C×=0` iff `Φ=0` or `V=0`. | **MACHINE-PROVED IN THE PRODUCT-CANDIDATE MODEL** | `effective_power_zero_iff`. |
+| R5.3 | Positive `Φ` and `V` imply positive modeled `C×`. | **MACHINE-PROVED IN THE PRODUCT-CANDIDATE MODEL** | `effective_power_positive`. |
+| R5.3a | The product candidate has a ceiling of one. | **MACHINE-PROVED, CONDITIONAL ON NORMALIZATION** | `effective_power_unit_interval`: if both `Φ,V ∈ [0,1]`, then `ΦV ∈ [0,1]`. The unit ceiling does not follow without those bounds, and this theorem does not license product ranking over ordinal inputs. |
 | R5.4 | A changed forecast changes the resulting world. | **MACHINE-PROVED, CONDITIONAL** | `forecast_changes_outcome` requires that forecasts change action and action effects are injective at the state. |
 | R5.5 | Every forecast is reflexive. | **REFUTED** | `not_every_forecast_is_reflexive`: a constant policy ignores distinct forecasts, producing the same action and outcome. |
 | R5.6 | Soros-style reflexivity is identical to all of D5. | **INTERPRETIVE, NOT PROVED** | The formal theorem captures one reflexive mechanism. Identity with the complete rung requires a definition of D5 and an adequacy proof. Historical priority among Keynes, Merton, and Soros is an external source claim, not a Lean certificate. |

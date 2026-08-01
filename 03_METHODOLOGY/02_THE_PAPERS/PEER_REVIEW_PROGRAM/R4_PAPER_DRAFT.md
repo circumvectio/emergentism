@@ -4,6 +4,11 @@
 
 *Registered-report-style draft v1 — 2026-06-10. Methods complete including the rating instrument (Appendix A) and sample vignettes (Appendix B); Results templated pending panel budget (~USD 500–1500) and the registered run. This is the program's highest-stakes study: it is the one designed to be able to lose. All citations to be verified.*
 
+> **KSC-02 custody fence (2026-07-29).** This draft preserves an unrun product
+> hypothesis as candidate `C×` under factor scores whose cardinal adequacy must
+> be defended before registration. It does not define `P_node`; the selected
+> ordinal node ranking is `min(Φ̂₄,V₄)`.
+
 ---
 
 ## Abstract

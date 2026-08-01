@@ -74,7 +74,10 @@ What kind of claim is this, and what kind of evidence can it bear?
 
 The third lens asks who gains and who pays.
 
-Value is not the same as local advantage. It is widest-honest-boundary improvement in `ΣΔB` and `ΣΔP_node`, under `η_move = 0`, K4, Grace Exit, receipts, and a signature carried by at least two natural persons.
+Value is not the same as local advantage. It is widest-honest-boundary
+improvement in declared balance evidence and bearer-wise `P_node` order, under
+`η_move = 0`, K4, Grace Exit, receipts, and a signature carried by at least two
+natural persons.
 
 This lens asks:
 
@@ -147,7 +150,11 @@ It means ratification-signed participation.
 
 That keeps it distinct from the teleological lens. Direction names the pressure a sequence appears to create. Signature names the mortal act that can still be signed, refused, repaired, and exited. Do not use direction to smuggle away signature.
 
-A person perceives, refuses, consents, repairs, builds, apologizes, leaves, or serves in a way that increases `ΣΔB` and `ΣΔP_node` without capture. The action is sacred not because a special vocabulary blesses it, but because it joins perception to embodiment under conditions of freedom.
+A person perceives, refuses, consents, repairs, builds, apologizes, leaves, or
+serves in a way that improves declared balance evidence and preserves or raises
+each affected bearer's `P_node` order without capture. The action is sacred not
+because a special vocabulary blesses it, but because it joins perception to
+embodiment under conditions of freedom.
 
 The signature lens asks:
 
@@ -227,7 +234,7 @@ The warrant lens asks what is known. Are vacancy, rent, transit, emissions, scho
 
 A grandmother's fear of losing her church and a planner's model of regional housing supply are not the same kind of evidence, but neither should be treated as decorative.
 
-The value lens asks who gains and who pays. Future residents may gain access. Current tenants may lose community. Landowners may gain wealth. Workers may gain jobs. The city may gain tax revenue. The public may gain lower car dependence. The value claim cannot count future units while erasing present displacement. It must ask for widest-honest-boundary `ΣΔB` and `ΣΔP_node`.
+The value lens asks who gains and who pays. Future residents may gain access. Current tenants may lose community. Landowners may gain wealth. Workers may gain jobs. The city may gain tax revenue. The public may gain lower car dependence. The value claim cannot count future units while erasing present displacement. It must ask for widest-honest-boundary balance evidence and bearer-wise `P_node` order.
 
 The direction lens asks what future the plan makes easier. Does it create a city where more people can live near work, school, transit, and public life? Or does it make a city where each neighborhood is periodically harvested for value and renamed progress? Direction is not the slogan. It is the path dependence created by the deal.
 
@@ -323,7 +330,8 @@ But the cost may not disappear. It may move.
 
 A student managing diabetes may need device access. A student translating for a parent after school may need coordination. A student with a dangerous home situation may need a safety channel. A student whose family cannot afford separate tools may rely on the phone for everything. A student excluded socially may experience the ban as relief during school and panic at dismissal.
 
-The value lens asks for widest-honest-boundary `ΣΔB` and `ΣΔP_node`, not adult convenience alone.
+The value lens asks for widest-honest-boundary balance evidence and bearer-wise
+`P_node` order, not adult convenience alone.
 
 What increases learning without increasing hidden vulnerability?
 
@@ -454,7 +462,8 @@ What would a healthier `B = sin θ` look like here?
 
 What would the two-factor law require as a receipt rather than a wish? It is an AND-class law: coherence and viability are jointly necessary, and neither substitutes for the other. A conjunctive law returns nothing when either factor is zero. It does not rank the room's options, and it cannot be used to score one plan against another.
 
-What would count as widest-honest-boundary `ΣΔB` and `ΣΔP_node`?
+What would count as widest-honest-boundary balance evidence and bearer-wise
+`P_node` order?
 
 The notation should not intimidate the room. Translate it into plain language if needed:
 

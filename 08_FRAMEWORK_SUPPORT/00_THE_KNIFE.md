@@ -201,7 +201,7 @@ The framework's own methodology says: reduce to κ = 0. The shortest description
 
 The framework does not ask you to believe the territory is S². It asks you to test it. The derivation chain (THE_DERIVATION) shows what follows from the axioms. The empirical program (Tyson/KO boundary, Protocol R, AMRITA, Φ-meter) tests whether reality agrees.
 
-If the multiplicative structure (P_node = Φ × V) describes human flourishing better than the additive structure — this is a fact about the territory, not the map. If perception obeys a spherical complementarity bound — this is a fact about the territory. If spherical alignment produces better AI — this is a fact about the territory.
+The current ordinal ranking is `P_node=min(Φ̂₄,V₄)`. If, under a separately defended cardinal scale contract, the retired product candidate `C×=Φ̂₄V₄` predicts human-flourishing outcomes better than additive and other fair rivals, that would be a fact about the tested territory rather than the map. If perception obeys a spherical complementarity bound — this is a fact about the territory. If spherical alignment produces better AI — this is a fact about the territory.
 
 The framework's claim is not "S² is a useful model." The claim is: "IF these tests succeed, THEN the territory has this structure, and S² is not a model but a description." The tests distinguish between "useful map" and "territory."
 

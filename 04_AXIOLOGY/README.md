@@ -46,11 +46,15 @@ may never be demanded by a collective as proof of ethics.
 
 ## Power-Max boundary
 
-For an agent `x`, let:
+For an agent `x`, let `q_x(t)` be a separately declared and defended cardinal
+durable-potential measure:
 
 \[
-W_x(T)=\int_0^T P_x(t)\,dt.
+W_x(T)=\int_0^T q_x(t)\,dt.
 \]
+
+The selected ordinal `P_node` is compared before/after and bearer by bearer; it
+is neither integrated nor silently substituted for `q_x`.
 
 Power-Max is a constrained search, not an unconditional law of nature:
 

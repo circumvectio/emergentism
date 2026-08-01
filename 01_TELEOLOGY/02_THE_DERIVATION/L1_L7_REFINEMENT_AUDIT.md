@@ -20,6 +20,12 @@ rosetta:
 
 **Numbering note:** where this audit refers to O1–O5, it is stress-testing the older public substrate-selection wager. Active axiom authority is E1–E10. O1–O5 and A1–A7 are provenance only and may not override it.
 
+> **KSC-02 custody fence (2026-07-29).** Quoted and proposed product-scoring
+> language below records this audit's 2026-04 reasoning. It is not the current
+> node owner. The selected ordinal definition is `P_node=min(Φ̂₄,V₄)`;
+> `Φ̂₄V₄` is retired as a node ranking and may return only as a separately
+> cardinal candidate.
+
 ---
 
 ## L1: DIALECTICAL — Kill Criterion (Force-Mapping Downgrade)
@@ -257,15 +263,27 @@ The framework uses "one infinity" as if the mathematical fact of ℂP¹'s compac
 > - **Physical infinity:** Whether physical spacetime is finite or infinite is an open physics question. The framework does not address it directly.
 > These three domains should not be conflated under "one infinity."
 
-### Finding: The Transcendental Trinity {0, 1, ∞} is prior to S² — but the framework uses S² to DERIVE it
+### Finding: The former numeric identification of the Transcendental Trinity is type-invalid
 
-The framework says: "Before the axioms. Before the sphere. Three values. • = 0, ⊙ = 1, ○ = ∞. Zero-Sum Resolution Equation."
+The framework once described the three Titan roles by assigning them the
+numeric/projective values zero, one, and infinity.  That assignment crossed
+types: the Titan frame is an opaque three-role syntax, whereas numbers and
+projective points live in separately declared structures.
 
-Then it uses Correspondence 21 to show {0, 1, ∞} is the unique minimal projective frame on ℂP¹. But ℂP¹ *presupposes* the complex numbers, which *presuppose* 0, 1, and ∞. The "derivation" of the Trinity from S² is circular: S² is defined using 0, 1, and ∞, and then Correspondence 21 "discovers" that {0, 1, ∞} is the minimal frame on S².
+Correspondence 21 can still show that the separately typed projective points
+`{0_P, 1_P, infinity_P}` form a distinguished frame on `CP1`.  But `CP1`
+presupposes the underlying number system; this construction does not derive the
+opaque Titan roles, and no property transfers from the projective frame to them.
 
-This is not a logical error — it is a *bootstrapping* structure. The Trinity generates the sphere; the sphere generates the Trinity. The framework acknowledges circularity (A7.1 coherentism). But the claim that the Trinity is "prior to the sphere" is imprecise. They are co-arising.
+An analogy between the projective frame and the selected Titan emblem may be
+used as interpretation, provided it is labelled as such.  It is not a
+bootstrapping proof, an identity, or a coercion.
 
-> **Proposed correction:** "The Transcendental Trinity and S² are co-arising. Neither is prior. The Trinity {0, 1, ∞} is the minimal seed that generates S² (via one-point compactification). S² is the minimal surface whose geometry expresses the Trinity (via stereographic projection). You cannot have one without the other. Zero-Sum Resolution Equation is not derived FROM the sphere or BEFORE the sphere — it IS the sphere, read at the most compressed resolution."
+> **Adopted type correction:** The operator-free Titan emblem `• ⊙ ○` is a
+> selected interpretive frame.  The projective frame
+> `{0_P, 1_P, infinity_P}` is a mathematical construction on `CP1`.  Neither
+> frame derives the other, and the corpus defines no map or equality between
+> them.  Any resemblance is an explicitly fallible analogy.
 
 ### Finding: The Good Transcendentals (Beauty, Truth, Justice) are mapped but not derived
 

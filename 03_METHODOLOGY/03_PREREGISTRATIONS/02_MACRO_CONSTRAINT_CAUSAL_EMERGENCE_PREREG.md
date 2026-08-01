@@ -264,8 +264,8 @@ SYN_C = DeltaOrder_C
 For agency-facing runs, the ledger must additionally report:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+P_node,i = min(Phi_hat_4_i, V_4_i)
+P_node,H = min(Phi_hat_4_H, V_4_H)
 
 strict syntropic dyad:
 Delta P_node,i >= 0
@@ -273,6 +273,11 @@ Delta P_node,H >= 0
 eta = 0
 at least one inequality is strict
 ```
+
+These are ordinal comparisons under `KSC-02`; the ledger does not add or
+multiply their values. The historical product is retired as a node ranking and
+may enter a frozen run only as a separately named candidate after the factor
+scales are defended as cardinal.
 
 If local order increases by exporting unreported disorder, extraction, memory
 cost, labor cost, control cost, or entropy elsewhere, the syntropy claim fails.

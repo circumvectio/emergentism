@@ -63,7 +63,7 @@ f_N : ℂP¹ → ℂP¹ ,   f_N(z)=N/z ,   f_N(0)=∞ ,   f_N(∞)=0
 ```
 
 is a **total** meromorphic map. **The defect of T-C is repaired exactly by the
-register change.** This is a concrete payoff of sphere primacy (`S1`): the line
+register change.** This is a concrete payoff of the selected sphere compactification (`S1`): the line
 has a hole at the boundary; the sphere does not.
 
 **T-E · But no degree of freedom is gained.**
@@ -195,7 +195,7 @@ prediction and kill.
 ## 5A · Test case — "a straight line is a circle of infinite diameter" `[A]`
 
 Owner, 2026-07-29, offered as a proof of the μ-limit. It is a **real theorem**,
-it is strong support for sphere primacy, and the §5 criterion classifies it
+it is strong support for selecting the sphere compactification, and the §5 criterion classifies it
 immediately — which is exactly what a criterion is for.
 
 ### 5A.1 What is true, and it is more than the claim says
@@ -250,7 +250,7 @@ the μ-claim would have been.
 
 **What it does prove:** that line and circle are one kind on the sphere, that the
 plane's distinction between them is an artefact of the missing point, and that
-sphere primacy is doing genuine mathematical work rather than being a preference.
+the selected sphere compactification is doing genuine mathematical work rather than being a bare preference.
 
 **What it does not prove:** any emergence, any new freedom, or `μ₀`. Local
 indistinguishability under `κ → 0` is an approximation statement; global

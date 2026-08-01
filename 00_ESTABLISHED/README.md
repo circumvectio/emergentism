@@ -121,7 +121,8 @@ Everything else. Named explicitly so absence is legible rather than accidental:
 
 ```text
 the D-registers · the μ-contract (HR-1 open; μ₂ and μ₃ FAILED)
-η = 0 and the extraction law   · P = Φ × V (AND-class; product interior a [C] wager)
+η = 0 and the extraction law   · P_node := min(Φ̂₄,V₄) (selected; universal fit [C])
+the retired product Φ̂₄V₄ as a node ranking
 Justice · Power-Max · Egregoreotype · the Soul Loop · the Crown Wager
 sphere primacy S1 (a SELECTION) · the Titan reading of {•, ⊙, ○} (an [I] gloss)
 every one of the 11 GP empirical sockets — 0 run

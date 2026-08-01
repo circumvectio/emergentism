@@ -84,7 +84,8 @@ class GrandPuzzleAssemblyTests(unittest.TestCase):
         required = (
             "phi*nu = 1",
             "Phi + V <= 1",
-            "P_node <= 1/4",
+            "P_node <= 1/2",
+            "C_product <= 1/4",
             "Phi=1,V=1",
             "F = d(d lambda) = 0",
             "A nonzero constant field strength remains nonzero",

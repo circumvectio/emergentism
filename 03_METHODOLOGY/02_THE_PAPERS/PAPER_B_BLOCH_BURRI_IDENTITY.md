@@ -104,8 +104,9 @@ The comparison is bounded by four facts:
 
 This assignment neither adjudicates interpretations nor explains definite
 outcomes. The standard quantum formalism supports the D3 calculation, not the
-ordinal assignment, Soul Loop, selected product model, model-mediated future
-influence, or a universal dimensional ontology.
+ordinal assignment, Soul Loop, selected finite-node model, retired product
+candidate, model-mediated future influence, or a universal dimensional
+ontology.
 
 The further comparison between the Bloch and Burri `S²` carriers remains
 removable `[C]`.

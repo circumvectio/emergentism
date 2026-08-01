@@ -4,6 +4,12 @@
 **Status:** Outline v1, 2026-06-10. This is the owed blind-human study. Requires panel budget before execution.
 **Internal source:** the keystone finite-node wager (`P_node = Φ × V`). This study is the corpus's highest-stakes external test: it is the one designed to be able to *lose*.
 
+> **KSC-02 custody fence (2026-07-29).** The line above preserves the study's
+> original hypothesis notation; in this preregistration the product is the
+> candidate `C×`, requiring separately defended cardinal factor scores. The
+> current ordinal node ranking is `P_node=min(Φ̂₄,V₄)`, and this study does
+> not override it.
+
 ---
 
 ## 1. The claim, externalized

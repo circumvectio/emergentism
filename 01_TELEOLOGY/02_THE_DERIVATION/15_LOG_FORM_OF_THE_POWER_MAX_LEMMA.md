@@ -61,13 +61,16 @@ Three structural claims remain intact:
    2/sin(θ) = 2 cosh(u)
    ```
 
-2. The constraint surface is still legible as the Riemann sphere with the triad:
+2. The constraint surface is still legible in a typed projective chart:
 
    ```text
-   • = 0
-   ⊙ = 1
-   ○ = infinity
+   0_P = projective ground endpoint
+   1_N = numeric chart normalizer
+   infinity_P = projective horizon endpoint
    ```
+
+   These chart values are not Titan terms.  The separate Titan frame is the
+   operator-free emblem `• ⊙ ○`; no equality or coercion connects the two types.
 
 3. The exponential bridge still gives the cleanest rigorous passage between additive and multiplicative registers:
 
@@ -257,29 +260,23 @@ But that compression now needs a more careful rider:
 
 ---
 
-## 10. What This Means for `0^infinity = 1`
+## 10. What This Means for the Former Titan Exponent
 
-The transcendental-triad proposal also survives, but in the same guarded way.
+The exponential bridge survives; the former Titan-exponent reading does not.
 
-The note `12_*` proposed:
-
-```text
-• = 0
-⊙ = 1
-○ = infinity
-```
-
-and treated:
+The note `12_*` used a cross-type numeric assignment for the Titan glyphs and
+then treated the resulting exponent as an identity.  That syntax is retired:
+Titan terms are opaque roles, not numbers or projective points, and no Titan
+arithmetic is defined.
 
 ```text
-0^infinity = 1
+TitanFrame: • ⊙ ○        (operator-free emblem)
+Numeric chart: phi * nu = 1
 ```
 
-as a candidate identity in the framework's extended register, interpreted through the exponential bridge rather than through school arithmetic.
-
-Nothing in the numerical correction kills that.
-
-What the numerical correction says is narrower:
+What remains mathematically usable is the typed exponential/logarithmic bridge
+on its declared numeric domain.  It neither proves nor even forms a Titan
+equation.  The numerical correction additionally says:
 
 > even if the transcendental reading is right, the operational Hamiltonian still lives on the sphere and keeps the sphere's geometry.
 

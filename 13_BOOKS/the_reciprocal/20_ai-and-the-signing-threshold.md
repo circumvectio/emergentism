@@ -92,7 +92,8 @@ It can turn rough intention into language, code, plans, checklists, and receipts
 
 Simulator.
 
-It can explore possible outcomes, stress test policies, model externalities, and reveal places where local gain may lower wider `ΣΔP_node`.
+It can explore possible outcomes, stress test policies, model externalities, and
+reveal places where local gain may lower another bearer's `P_node` order.
 
 These roles are powerful. None of them is sovereignty.
 
@@ -157,7 +158,8 @@ During deployment:
 
 After deployment:
 
-- did `ΣΔB` and `ΣΔP_node` hold up across the declared boundary, including for those who bore the cost?
+- did declared balance evidence and every affected bearer's `P_node` order hold
+  up across the declared boundary, including for those who bore the cost?
 - did the signing threshold remain real?
 - did users become more capable or more dependent?
 - did the system preserve Grace Exit?
@@ -643,7 +645,12 @@ During deployment, the company watches for drift.
 
 Who is being screened out? Which proxies dominate? Do humans override the tool? Are overrides tracked? Are applicants with career breaks, disability accommodations, foreign institutions, unusual portfolios, or non-linear histories being misread? Does the system reduce recruiter overload by moving harm into applicant invisibility?
 
-After deployment, the company asks whether `ΣΔB` and `ΣΔP_node` held up across the widest honest boundary: applicants, hiring teams, future colleagues, customers, and the organization over time. The burden runs the other way from the usual one. It is not enough that no harm was measured; the question is whether anyone bearing a cost could show a harm that was never answered.
+After deployment, the company asks whether declared balance evidence and every
+affected bearer's `P_node` order held up across the widest honest boundary:
+applicants, hiring teams, future colleagues, customers, and the organization
+over time. The burden runs the other way from the usual one. It is not enough
+that no harm was measured; the question is whether anyone bearing a cost could
+show a harm that was never answered.
 
 Speed alone is not enough.
 
@@ -703,7 +710,11 @@ The threshold is real only when the persons signing can understand enough, refus
 
 The book's AI alignment sentence is simple:
 
-AI is aligned when its use increases human and institutional capacity to perceive, deliberate, refuse, sign, repair, and leave, while `ΣΔB` and `ΣΔP_node` hold across the widest honest boundary under the reciprocal non-extraction fence `η_move = 0`, receipts, and Grace Exit.
+AI is aligned when its use increases human and institutional capacity to
+perceive, deliberate, refuse, sign, repair, and leave, while declared balance
+evidence and every affected bearer's `P_node` order hold across the widest
+honest boundary under the reciprocal non-extraction fence `η_move = 0`,
+receipts, and Grace Exit.
 
 The notation does not create the obligation. It records where the obligation is checked. No equation derives an ought.
 

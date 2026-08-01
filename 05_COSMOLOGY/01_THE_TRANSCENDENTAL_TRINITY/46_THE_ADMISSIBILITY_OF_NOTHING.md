@@ -254,8 +254,8 @@ nothing. That is the canvas insight in its exact form — and note what it says:
 
 The two look identical from the inside and run in opposite logical directions.
 One is the *absence of an exclusion*; the other would be the *presence of a
-production*. Only the first is licensed. `•` is maximally **permissive**, never
-generative — the Trinity canon already forbids the Titans being "a generator of
+production*. Only the first is licensed. The selected ground role is maximally
+**permissive**, never generative — the Trinity canon already forbids the Titans being "a generator of
 the D-ladder," and `D6` already forbids converting a remainder into a positive
 object.
 
@@ -269,43 +269,52 @@ So the reciprocity the owner wants is not free in either direction. Painting
 needs extendability; emptiness needs **no necessary being** — which is exactly
 `R0` from §5. The canvas symmetry is not a discovery; it is **what `R0` buys.**
 
-### 5A.4 The resolution — correlativity, not paradox `[A]`
+### 5A.4 The typed projective result — correlativity, not paradox `[A]`
 
-*"Neither zero nor infinity can exist independently; one gives rise to the
-other."* This is right, and doc 45 already proves it. It is not a paradox once
-typed; it is a **correlativity**.
+The sentence "neither endpoint can occur independently in the reciprocal
+compactification" is exact only after its structure is named. It is a theorem
+about projective endpoints, not about TitanFrame.
 
-In the inversion structure, `{•, ○}` is the **2-cycle** of `ι`:
-
-```text
-ι(•) = ○        ι(○) = •        ι∘ι = id
-```
-
-A 2-cycle cannot have one member. Drop `○` and `ι(•)` has nowhere to land — `•`
-ceases to be a pole of anything and the structure collapses to a partial map.
-Concretely: on `[0,∞)` the map `ι(x)=1/x` is **partial**, because `ι(0)` would
-require `∞`. On `[0,∞]` it is **total**.
+In the projective inversion structure, `{0_P, infinity_P}` is the **2-cycle**
+of `iota_P`:
 
 ```text
-ι is total on the compactification  ⟺  BOTH poles are present
+iota_P(0_P) = infinity_P
+iota_P(infinity_P) = 0_P
+iota_P composed with iota_P = identity
 ```
 
-That is the theorem behind the owner's sentence. The poles are **co-instituted**:
-neither is prior, neither is generative, and neither is available alone. Doc 46
+A 2-cycle cannot have one member. Drop the projective horizon and the image of
+the projective ground has nowhere to land; the structure collapses to a partial
+map. Concretely, on the nonnegative reals the reciprocal map is **partial** at
+numeric zero. On the named projective completion it is **total**.
+
+```text
+iota_P is total on the compactification  iff  BOTH endpoints are present
+```
+
+That is the mathematical theorem behind the owner's sentence. The projective
+poles are **co-instituted**: neither is prior or generative inside this
+structure. Doc 46
 §2 already reached this from Hegel — two wholly indeterminate seats can be
 distinguished only by their *relation*, never by their content — and doc 45
 supplies the relation.
 
-**Internal precedent, one register down.** `KSC-21` states that D1 opens with
+The selected ground and horizon Titan roles may be read as an analogy to those
+projective endpoints. They are not the same structure: TitanFrame has no
+`iota_P`, and the corpus declares no identity, coercion, or theorem transfer.
+
+**Internal neighbor, one register down.** `KSC-21` states that D1 opens with
 the *oriented pair* `SignedUnit_N = {+1_N, −1_N}` — co-opened, not one then the
-other. The Titan poles are that same structure at the boundary. The corpus's own
-D1 rule was already the answer.
+other. This is a second separately typed pair, not a Titan pair. The structural
+resemblance is interpretive only.
 
 ### 5A.5 The fence `[S]`
 
-**Correlativity is not generation.** "One gives rise to the other" is licensed
-only as *co-definition*, never as production, causation, or temporal priority.
-`•` does not make `○`; they are two faces of one involution.
+**Correlativity is not generation.** For the projective endpoints, "one gives
+rise to the other" is licensed only as *co-definition* under the declared
+involution, never as production, causation, or temporal priority. The Titan
+roles themselves have no involution or generative operation.
 
 The owner's own tradition supplies the sharpest guardrail here. In Madhyamaka,
 `śūnyatā` is itself empty — `śūnyatā-śūnyatā` — and Nāgārjuna's explicit warning
@@ -510,7 +519,7 @@ floor and its metaphysics lies in that gap.
 ### 6A.6 The pattern, now unmistakable `[I]`
 
 This is the **seventh** instance in one session of a single structure: something
-*selected* arriving dressed as something *found*. The Titan equation, the
+*selected* arriving dressed as something *found*. The former Titan-equation reading, the
 arithmetic criterion, the chart centre, the graph-emergence claim, the choice of
 logic, the foundational dilemma, and the corner-relative reciprocity of §6A.5.
 
@@ -530,20 +539,20 @@ forced.* It should be written as a **standard**, not a confession.
 | the admissibility of nothing is logic-relative, hence selected | `[A]` | show one logic is forced independently of any selection |
 | `(N)` cannot be the axiom of all axioms (§4 regress) | `[A]` | exhibit a sentence whose truth-conditions need no prior consequence relation |
 | Plato's repair of non-being is difference, i.e. D1 | `[I]` | textual reading of the *Sophist* that avoids `τὸ ἕτερον` |
-| `•`/`○` are distinguished by relation, not intrinsic content | `[S]` | supply an intrinsic differentia for two wholly indeterminate seats |
+| the ground and horizon Titan roles are distinguished narratively, not by an internal arithmetic | `[S]` | exhibit a declared TitanFrame operation that supplies an intrinsic differentia |
 | `•` sits as the Good sits — beyond being, not a being | `[I]` | none; lens only, transfers no proof |
 | Dasein is contingent | `[I]` | a sound argument for a necessary being — which also kills `R0` |
 | `◇(nothing)` does **not** entail that all things are possible | `[A]` | the two-world counterexample in §5A.1 fails |
 | `Compat(∅) ⊇ Compat(w)` — the empty state excludes least | `[A]` | exhibit a state admitting an addition the empty state forbids |
-| the poles are co-instituted; `ι` is total iff both are present | `[A]` | define a total inversion on a one-pole compactification |
-| correlativity, never generation: `•` does not produce `○` | `[S]` | any owner deriving content from `•` alone |
-| the `•`/`○` dilemma is **not** exhaustive — FOL+ZF takes neither horn | `[A]` | show classical FOL admits `D=∅` or ZF admits a universal set |
+| the projective endpoints are co-instituted; `iota_P` is total iff both are present | `[A]` | define a total inversion on a one-endpoint compactification |
+| analogy, never generation: the ground Titan role does not produce the horizon Titan role | `[S]` | any owner deriving content from the ground role alone |
+| the ground-or-horizon dilemma is **not** exhaustive — FOL+ZF takes neither horn | `[A]` | show classical FOL admits `D=∅` or ZF admits a universal set |
 | every framework must settle `Q1` and `Q2`; the boundaries are forced, the answers selected — routed as `F1`, folded into `PRESUPPOSED` as a property of the `P1` apparatus by ruling G-0b exit Z (2026-07-29), which changes nothing asserted here and does **not** make it a selection | `[A]` | exhibit a formal framework that settles neither, even by convention |
 | Emergentism's corner is `Q1=yes, Q2=yes` (inclusive + NBG; MK declined, not refuted) | `[S]` declared | the corpus is shown to rely on a theorem unavailable in that corner |
 | admitting a totality-object ≠ asserting plenitude | `[S]` | any owner citing `Q2=yes` as support for `W0-CROWN` or `E4` |
 | `B ⟹ ◇A` via Lindenbaum + Henkin, `L`-relative, as admissibility | `[A]` | a consistent set with no maximal consistent extension |
 | `A ⟹ ◇B` holds in inclusive logic and fails in classical FOL | `[A]` | exhibit an empty-domain model in classical FOL |
-| `•` is nearly free; `○` costs choice — the seats are not equally cheap | `[A]` | derive a maximal consistent extension without choice in general |
+| the null logical seat is nearly free; the plenitude seat costs choice — the seats are not equally cheap | `[A]` | derive a maximal consistent extension without choice in general |
 | the whole reciprocity establishes admissibility, never existence | `[S]` | any owner reading Lindenbaum/Henkin as a plenitude result |
 
 **What this document does not do.** It does not answer why anything is
@@ -551,4 +560,5 @@ instantiated; that remains permanently open and is not touched. It does not
 prove nothing is possible — it shows the question is decided by a declared
 choice of logic. It does not derive `•` from the Good. It adds no ontology.
 
-•   ⊙   ○ — *the null state is admissible because we chose a logic that admits it; saying so is the difference between a ground and a wish.*
+• ⊙ ○ — *selected operator-free emblem; the null state is admissible because we
+chose a logic that admits it, not because Titan arithmetic proved it.*

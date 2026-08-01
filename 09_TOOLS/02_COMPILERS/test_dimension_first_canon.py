@@ -221,7 +221,7 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             "Operational Titan arithmetic escaped the empty signature:\n" + "\n".join(violations),
         )
 
-    def test_retired_titan_infix_is_absent_from_live_nonhistorical_surfaces(self):
+    def test_retired_titan_infix_is_locally_denied_on_active_surfaces(self):
         roots = [
             ROOT / name
             for name in (
@@ -239,14 +239,16 @@ class DimensionAndArithmeticTests(unittest.TestCase):
                 "10_SEED",
             )
         ]
-        historical_markers = (
-            'status: "superseded',
-            'status: "withdrawn',
-            "historical compatibility",
-            "historical research",
-            "historical filename retained",
-            "archive_boundary:",
-            "genesis document (pre-hardening",
+        denial_markers = (
+            "forbidden",
+            "ill-typed",
+            "invalid",
+            "inadmissible",
+            "retired",
+            "superseded",
+            "withdrawn",
+            "not a titan equation",
+            "no titan arithmetic",
         )
         violations: list[str] = []
         for root in roots:
@@ -266,36 +268,23 @@ class DimensionAndArithmeticTests(unittest.TestCase):
                 if any(part.startswith(".") for part in rel.parts):
                     continue
                 body = path.read_text(encoding="utf-8")
-                if any(marker in body[:2000].lower() for marker in historical_markers):
-                    continue
-                # RETIRED 2026-07-29. This test banned the literal infix ⊙ = • × ○
-                # from every live surface. Receipt 174 RESTORED the three equations
-                # BY PROOF on Ĉ — doc 45 is titled "the three equations restored on
-                # the sphere" and its §4 reads "The equations are theorems [A]" —
-                # and the Foundation now posits the infix as B1. KSC-04 forbids
-                # ARITHMETIC on Titan labels (ArithmeticSignature(TitanFrame)=∅);
-                # it never retired the relation among seats.
-                #
-                # What KSC-04 and DF-21 actually require is not absence but a FENCE:
-                # wherever the identity appears it must not be cashed as a warrant.
-                # That is what is checked now.
+                # Active history is not exempt. A literal retired infix may remain
+                # only when its own local three-line window explicitly denies it.
+                # Generic words such as "theorem", "analytic", "posit", or a
+                # receipt number cannot turn ill-typed syntax into a lawful claim.
+                lines = body.splitlines()
                 for match in re.finditer(r"⊙\s*=\s*•\s*[×*]\s*○", body):
                     line = body.count("\n", 0, match.start()) + 1
-                    window = body[max(0, match.start() - 1500): match.end() + 1500].lower()
-                    fenced = any(
-                        f in window
-                        for f in (
-                            "empty of world", "world-empty", "not a restored warrant",
-                            "licenses no", "analytic", "theorem", "posit", "ksc-04",
-                            "reachability", "df-15",
-                        )
-                    )
-                    if not fenced:
-                        violations.append(f"{rel}:{line}: {match.group(0)} — UNFENCED")
+                    start = max(0, line - 2)
+                    stop = min(len(lines), line + 1)
+                    window = "\n".join(lines[start:stop]).lower()
+                    denied = any(marker in window for marker in denial_markers)
+                    if not denied:
+                        violations.append(f"{rel}:{line}: {match.group(0)} — NOT LOCALLY DENIED")
         self.assertEqual(
             violations,
             [],
-            "Titan identity appears without its world-empty fence:\n" + "\n".join(violations),
+            "Retired Titan infix appears without a local denial:\n" + "\n".join(violations),
         )
 
     def test_exact_register_transition_and_boundary_census(self):

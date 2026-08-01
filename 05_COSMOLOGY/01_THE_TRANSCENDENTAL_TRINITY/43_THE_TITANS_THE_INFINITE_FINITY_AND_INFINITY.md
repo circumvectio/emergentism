@@ -290,9 +290,9 @@ Ground_T   Unit_T     Horizon_T
 
 | Titan role `[S/I]` | Mode named here `[I]` | Mathematical neighbor `[A]` | What is forbidden |
 |---|---|---|---|
-| `• / 0_T / Ground_T` | **`TheInfinite_R`:** pre-countability; inexhaustibility is the selected reading | numeric `0_N`; uncountability as a separate analogy | “zero is an uncountable number”; treating the Ground as a set |
-| `⊙ / 1_T / Unit_T` | **`Finity_R`:** accountability to an approachable finite boundary | convergence to ordinary `L`; selected positive unit `1_N` | “every limit is one”; treating a Titan as an operand |
-| `○ / ∞_T / Horizon_T` | **`Infinity_R`:** count without end | `ℕ`; an unbounded sequence; `∞_P` in a named extension | “infinity is the largest field number”; silent coercion among extensions |
+| ground glyph; ground token; `Ground_T` role | **`TheInfinite_R`:** pre-countability; inexhaustibility is the selected reading | numeric `0_N`; uncountability as a separate analogy | “zero is an uncountable number”; treating the Ground as a set |
+| unit glyph; unit token; `Unit_T` role | **`Finity_R`:** accountability to an approachable finite boundary | convergence to ordinary `L`; selected positive unit `1_N` | “every limit is one”; treating a Titan as an operand |
+| horizon glyph; horizon token; `Horizon_T` role | **`Infinity_R`:** count without end | `ℕ`; an unbounded sequence; `∞_P` in a named extension | “infinity is the largest field number”; silent coercion among extensions |
 
 The display is an operator-free emblem. The Titans do not multiply, divide, or
 cause one another. The Śiva, Viṣṇu, and Brahmā names are selected symbolic

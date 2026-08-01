@@ -63,12 +63,13 @@ contexts, horizon, and tolerance.
 capability. `Φ₅` is D5 possible power—the structured modal potential of the
 option field. Because D5 is merely possible, the current calculation uses the
 actual estimate `Φ̂₄=Eval₄(M,Φ₅)`. The node score
-`P_node=Φ̂₄×V₄`, publicly compressed as `Φ×V`, is a declared two-factor model,
-not a theorem about every finite agent. Its zero boundary is AND-class `[S]`
-under the stated need-both premises; mapping a zero model factor to literal
-annihilation requires operational evidence. The product-specific interior
-remains `[C]`. Never cite the sphere seam `P∞=φν≡1` as warrant here. Seam ≠
-score ≠ node.
+`P_node:=min(Φ̂₄,V₄)` is the selected two-factor AND-class score over
+ordinal factors, not a theorem about every finite agent. Its zero boundary is
+AND-class `[S]` under the stated need-both premises; mapping a zero model factor
+to literal annihilation requires operational evidence, while universal fit
+remains `[C]`. The historical product `Φ̂₄V₄`, publicly compressed as
+`Φ×V`, is retired as a ranking. Never cite the sphere seam `P∞=φν≡1` as warrant
+here. Seam ≠ score ≠ node.
 
 **The alphabet (the D5 Rosetta Stone, selected).** `G7 = M4 ⊔ F3`:
 

@@ -28,7 +28,7 @@ Owner, 2026-07-29:
 > one that is moving away from the other at the limit of speed `c`."*
 
 The intuition points at something real, deep, and already established. Stated
-properly it is the strongest non-aesthetic argument for sphere primacy the
+properly it is the strongest non-aesthetic argument for the corpus's sphere selection the
 program has — and it is still not a derivation.
 
 ## 2 · What is actually true `[A]` — inherited
@@ -141,7 +141,7 @@ doc 48, now with a physical instance.
 
 The defensible statement, in one line:
 
-> **Emergentism's selected primary object is the Riemann sphere; the restricted
+> **Emergentism's selected projective object is the Riemann sphere; the restricted
 > Lorentz group is exactly that sphere's Möbius group; and the framework's
 > boundary coordinate `tanh` is the same function as the relativistic velocity
 > ratio.** All inherited, all checkable, none of it derived here.

@@ -169,7 +169,7 @@ The distinction between "structural gradient" and "will" is a false dichotomy ge
 
 **Position Gamma** is the recommended default for the framework because:
 
-1. It is the most honest: the framework IS dual-aspect in its structure (`φ`/`ν` are complementary charts of `P∞ = φ·ν = 1`; finite action is tracked separately as `P_node = Φ×V`)
+1. It was the brief's most honest option: the framework is dual-aspect in its structure (`φ`/`ν` are complementary charts of `P∞ = φ·ν = 1`). Its then-current finite-action product `P_node=Φ×V` is retained here as dated provenance; KSC-02 now selects `P_node=min(Φ̂₄,V₄)` and retires the product as a ranking.
 2. It avoids the false binary that both Alpha and Beta impose
 3. It aligns with the most promising current philosophy of mind (Russellian monism, Pauli-Jung DAM)
 4. It preserves the teleological derivation without requiring the strong volitional claim

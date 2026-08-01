@@ -137,8 +137,12 @@ The lowercase chart and uppercase node model must remain separate:
 
 ```text
 chart:  φν=1; φ→∞ => ν→0 and B→0
-node:   P_node=ΦV
+node:   P_node=min(Φ̂₄,V₄)
 ```
+
+The historical product `Φ̂₄V₄` / public `ΦV` is retired as a node
+ranking; it may appear only as an explicit candidate under separately defended
+cardinal scales.
 
 The chart says one-sided extremity preserves its stipulated reciprocal identity
 while balance vanishes. It does not say perfect foresight consumes all physical

@@ -46,8 +46,8 @@ B := 2/(φ + ν) = sin θ ≤ 1
 **Selected orientation convention.** Here `θ` is measured from the selected
 south boundary `•`; it is a south-origin polar parameter, not the standard
 geographic colatitude label. Along the selected positive-radial meridian,
-`z=ν=tan(θ/2)`: `θ→0,ν→0,φ→∞` is south/`•`, while
-`θ→π,ν→∞,φ→0` is north/`○`. Reversing the geographic words would give an
+`z=ν=tan(θ/2)`: `θ→0,ν→0,φ→∞` is south (`•`), while
+`θ→π,ν→∞,φ→0` is north (`○`). Reversing the geographic words would give an
 analytically equivalent orientation, but it is not this corpus's selected
 convention. The reciprocal identity, AM-GM bound, balance formula, and equator
 do not depend on those geographic labels.
@@ -228,8 +228,11 @@ has its own regime. When compressing, name the regime explicitly:
 **Disambiguation convention:** do not use `P` bare in source-truth
 documents unless the regime is named in the same sentence. Write the
 manifold identity as `P∞` or `φ · ν = 1`; write the operational node
-measure as `P_node`. Aggregates such as `ΣΔB` or `ΣΔP_node` may be used
-descriptively only; they never compensate ethically for destroying one bearer.
+measure as `P_node`. Because `P_node` is ordinal, do not sum, integrate,
+differentiate, or average its coding. Use bearer-wise before/after order
+predicates and keep every affected bearer visible. Any scalar aggregate or
+horizon integral requires a separately declared and defended cardinal measure
+`q_x`; it never compensates ethically for destroying one bearer.
 Likewise, do not write either finite-node factor as lowercase chart notation:
 `ν` is the sphere coordinate, while uppercase `V` is D4 actual power; `φ` is the
 other chart coordinate, while uppercase `Φ` names D5 possible power and `Φ̂₄`

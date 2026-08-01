@@ -39,7 +39,7 @@ this schema are deliberately revised together.
 | `∞_P` (usually printed `∞`) | projective point | point at infinity in `ℂP¹`; not a largest number |
 | `•,⊙,○` | Titan emblems | alternate renderings of `0_T,1_T,∞_T`; `[I]`, not arithmetic |
 | `S²≅ℂP¹` | compact real 2-manifold / complex 1-manifold | selected projective chart surface |
-| `θ` | `(0,π)` in the reciprocal chart | colatitude; endpoints are excluded limits |
+| `θ` | `(0,π)` in the reciprocal chart | selected south-origin polar parameter; endpoints are excluded limits |
 | `φ` | `(0,π)→ℝ₊`, `cot(θ/2)` | reciprocal chart coordinate |
 | `ν` | `(0,π)→ℝ₊`, `tan(θ/2)` | reciprocal chart coordinate |
 | `B` | `(0,π)→(0,1]`, `sinθ` | chart balance coordinate; “balance” is `[I]` |
@@ -661,7 +661,10 @@ product of model and agency, and it does not assert physical retrocausality.
 ## 6. Justice and Power-Max types
 
 ```text
-W_x(T) := ∫₀ᵀ P_x(t)dt
+q_x : Time → CardinalDurablePotential  # separately declared and defended
+W_x(T) := ∫₀ᵀ q_x(t)dt
+
+P_node,x : OrdinalNodeScore            # compare bearer-wise; never integrate
 
 JusticeEnvelope := {
   individual: BearerId,

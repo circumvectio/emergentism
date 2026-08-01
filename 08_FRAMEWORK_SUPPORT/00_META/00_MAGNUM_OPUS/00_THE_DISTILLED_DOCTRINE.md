@@ -46,8 +46,9 @@ through a future physical event sending information backward.
 
 ## Value
 
-`P_node:=ΦV` is the selected normalized conjunctive model, not a uniquely
-derived law. Power-Max operates only inside bearer-complete Justice. Morals name
+`P_node:=min(Φ̂₄,V₄)` is the selected normalized AND-class score over
+ordinal factors. The historical product `Φ̂₄V₄` / public `ΦV` is retired as
+a ranking. Power-Max operates only inside bearer-complete Justice. Morals name
 `i→H`; ethics name `H→i`; strict Syntropic Dyadism requires both durable
 potentials to rise. Voluntary sacrifice is a separate costly class and cannot
 be demanded as proof of goodness.

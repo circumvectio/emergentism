@@ -100,11 +100,15 @@ selection beyond confounds, the causal interpretation contracts to metaphor.
 
 ## Result 4 — Justice-constrained bearer-horizon selection `[S/I]`
 
-For
+For a separately declared and defended cardinal durable-potential measure
+`q_x(t)`, define
 
 \[
-W_x(T)=\int_0^T P_x(t)\,dt
+W_x(T)=\int_0^T q_x(t)\,dt.
 \]
+
+The selected ordinal `P_node` remains a bearer-wise before/after ordering and
+is not integrated or substituted for `q_x`.
 
 and a declared horizon set `\mathcal T=\{T_S,\ldots,T_L\}` with
 `0<T_S\le T_L`, let the Justice-admissible set be

@@ -155,7 +155,8 @@ alone. The current Power-Max Lemma says the opposite: coupling creates
 interdependence, but one-shot extraction can still pay unless the private
 extraction channel is blocked. Protocol D therefore tests the constrained
 frontier: whether conjunctive agents under enforced non-extraction converge
-toward `ΔP_node,i >= 0` and `ΔP_node,H >= 0` more reliably than additive agents.
+toward `P_node,i(after) ⪰ P_node,i(before)` and
+`P_node,H(after) ⪰ P_node,H(before)` more reliably than additive agents.
 
 ### Status
 

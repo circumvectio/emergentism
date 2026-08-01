@@ -6,8 +6,8 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[A] the structural results; [S] the construction order; [I] the finity reading"
-title: "The Emergence of Finity — does ⊙ follow from • and ○?"
-status: "ACTIVE — treats the interior-from-poles claim; concedes the mid-latitude result; §7 amended by receipt 175 (sphere primacy ruled)"
+title: "The Emergence of Finity — does an interior follow from boundary points?"
+status: "ACTIVE TYPE-CORRECTED — interior-from-boundaries claim tested; TitanFrame kept disjoint from numeric/projective neighbors"
 date: 2026-07-29
 evidence_tier: "[A] §2, §3, §5, §6; [S] §4, §7"
 parents:
@@ -43,18 +43,20 @@ An earlier note in this program said the centre of the projection is `0`, not
 `1`. That was about the **projected plane** and it under-granted the owner's
 point. On the **sphere** the owner is right, in canon's own coordinates.
 
-With colatitude `θ∈(0,π)`, `ν=tan(θ/2)`, `φ=cot(θ/2)`:
+With the selected south-origin polar parameter `θ∈(0,π)`,
+`ν=tan(θ/2)`, `φ=cot(θ/2)`:
 
 ```text
-θ → 0      ν → 0        south pole  •
-θ = π/2    ν = φ = 1    EQUATOR — the metric middle in latitude
-θ → π      ν → ∞        north pole  ○
+θ → 0      ν → 0_N      approaches projective south boundary 0_P
+θ = π/2    ν = φ = 1_N  EQUATOR — the metric middle in latitude
+θ → π      ν → ∞        approaches projective north boundary ∞_P
 ```
 
 `ν = 1` occurs **exactly** at `θ = π/2`. The equator is equidistant from both
 poles, and `1` lies on it. **Conceded without qualification.**
 
-Suda's metric gives the same verdict independently: `ρ(x)=|log x|` is the
+The logarithmic coordinate gives the same reciprocal geometry in another
+presentation, not independent evidence: `ρ(x)=|log x|` is the
 inversion-invariant distance from unity, `ρ(x)=ρ(1/x)`, and `E(x)=(log x)²` has
 its unique minimum at `x=1`. In the reciprocal geometry `1` **is** the centre.
 Verified 2026-07-29.
@@ -70,7 +72,7 @@ exactly `±1`, and on the positive ray only `+1`. So:
 
 The load-bearing word is "naturally," and it does unlicensed work.
 
-**Counterexample.** Take the two-point **discrete** space `{•, ○}`. Both
+**Counterexample.** Take the two-point **discrete** space `{p₀, p∞}`. Both
 extremes are present. The interior is **empty**. Two poles with nothing between
 them is a perfectly coherent structure. Therefore accepting both extremes does
 not, by itself, produce anything between them.
@@ -82,7 +84,7 @@ supplied by `•` and `○`.
 **And the construction runs the other way.** Doc 45 built the poles like this:
 
 ```text
-ℝ₊  (interior, already present)   ──compactify──▶   adjoin {0, ∞}
+ℝ₊  (interior, already present)   ──compactify──▶   adjoin {0_P, ∞_P}
 ```
 
 The poles are the **compactification of the interior**. The interior is prior;
@@ -90,11 +92,13 @@ the poles are derived from it. Doc 46 §5A.4 established the same thing from the
 other side: `ι` is total only if both poles are present — and `ι` is a map *on
 the interior*, which must already exist for `ι` to be defined at all.
 
-> **`⊙` is not the child of `•` and `○`. `•` and `○` are the boundary of `⊙`.**
+> **The interior is not the child of its two compactified boundary points. The
+> boundary points are adjoined to an interior that is already present.**
 
-This is not a demotion of the claim. It is the reason `⊙ = • × ○` is a theorem
-rather than a creation story: the equation states a *relation among the three*,
-not a *production of one by two*.
+This is a type correction, not a demotion. Doc 45 now separates the numeric
+reciprocal identity, the projective swapped-pair map, and the operator-free
+Titan roles. There is no well-typed Titan equation from which an interior could
+be produced.
 
 ## 4 · What a genuine "in between" looks like `[S]`
 
@@ -127,12 +131,12 @@ binary operations on a two-element set have no two-sided identity), and `ι(x) =
 cannot be written without naming `1`. `at_most_one_identity` is the surviving half.
 
 **A precision on "the centre between both poles."** `1` is not any *average* of
-`0` and `∞`:
+`0_N` and the projective endpoint `∞_P`:
 
 ```text
-arithmetic mean   (0+∞)/2   = ∞               useless
-geometric  mean   √(0·∞)    = INDETERMINATE
-fixed point of ι                = 1           the only determinate answer
+arithmetic mean of 0_N and ∞_P   NOT WELL-TYPED
+geometric mean of 0_N and ∞_P    NOT WELL-TYPED
+positive fixed point of ι_P      = 1_N
 ```
 
 So the centre is not obtained by averaging the poles — it is the **fixed point
@@ -151,7 +155,8 @@ together here, and the corpus must say which one `⊙` names.
 
 Adding ones never reaches `1/2`, `√2`, or `π`. So `ℕ⁺` is a vanishingly thin
 subset of the interior between the poles. **Unit-addition does not generate the
-space between `•` and `○`** — it generates a discrete ladder inside it.
+continuum between the projective boundaries** — it generates a discrete ladder
+inside it.
 
 Doc 45 §7A already carried this fence: `1` is the additive **generator** of
 `ℕ⁺` and the multiplicative **origin** of `ℝ₊`. Two roles, two charts. The
@@ -160,44 +165,50 @@ the additive role ("many ones added") as if they built the same object. They do
 not.
 
 **On "approaching but never crossing."** For the sequence of partial sums
-`1, 2, 3, …`: every term is finite, no term is `∞`, and the sequence tends to
-`∞` in the order topology of the extended reals. That reading is **correct**.
+`1, 2, 3, …`: every term is finite, no term is `+∞_E`, and the sequence tends
+to `+∞_E` in the order topology of the extended reals. That reading is
+**correct**.
 The care needed is only that `ℕ⁺` is an *infinite set of finite numbers* — the
 set is unbounded, every member is bounded. Aristotle's potential/actual
 distinction, and it survives intact.
 
-## 7 · Ruled — sphere primacy adopted; the objection discharged `[S]`
+## 7 · Ruled — sphere selection adopted; the objection discharged `[S]`
 
-> **AMENDED 2026-07-29 (receipt 175).** The owner reaffirmed after the objection
-> below was recorded. Sphere primacy is **ruled and executed**. This section is
+> **AMENDED 2026-07-29 and restated 2026-07-31 (receipts 175 and 193).** The
+> owner selected the sphere after the objection below was recorded; the later
+> ruling explicitly replaces *primacy* with **selection**. This section is
 > retained as the reasoning that was weighed, and it changed in the ruling's
 > favour: the decisive worry — that the corpus *needs* the line — turned out to
 > be answered by the sphere itself.
 >
-> **The meridian result `[A]`.** `ℝ ∪ {∞}` is a great circle on `Ĉ`: a meridian
-> through both poles, mapped to itself by `ι`, carrying **both** fixed points
-> `±1`. So the number line is not a rival chart to be rejected — it is the
-> `ι`-invariant meridian *of the sphere*. Order, signed magnitude, and
-> completeness are recovered as **sphere-internal structure**. `KSC-21`'s
-> oriented pair `{+1_N, −1_N}` are exactly its two fixed points. Reason 2 below
-> is thereby withdrawn.
+> **The meridian result `[A/S]`.** `ℝ ∪ {∞_P}` embeds as a great circle on `Ĉ`,
+> mapped to itself by `ι_P` and carrying both fixed points `±1_N`. The circle
+> itself has cyclic topology, not an intrinsic total order. Removing the
+> selected projective endpoint, choosing the affine chart, and fixing an
+> orientation recover the ordinary real line; that selected chart carries
+> order, signed magnitude, and order-completeness. Those structures are
+> represented within the sphere construction, not forced by an unmarked circle.
+> `KSC-21`'s oriented pair `{+1_N, −1_N}` are exactly the two numeric fixed
+> points. Reason 2 below is thereby narrowed rather than erased.
 >
 > **The cost, accepted `[A]`.** `Ĉ` is not a field; the field operations live on
-> the affine chart `ℂ = Ĉ \ {∞}`. Arithmetic is therefore **chart-local**, which
+> the affine chart `ℂ = Ĉ \ {∞_P}`. Arithmetic is therefore **chart-local**, which
 > makes doc 45 §3 structural rather than stipulated. Agents must name the chart.
 >
-> **The type, recorded `[S]`.** *Sphere is primary* is a declared and
-> well-supported selection. *No other model is acceptable* remains **declared
+> **The type, recorded `[S]`.** *The sphere is selected* is a declared and
+> well-supported choice. *No other model is acceptable* remains **declared
 > policy**, not a theorem: Möbius 3-transitivity is unaffected by any ruling, and
-> `KSC-04` continues to hold that `{0,1,∞}` is canonical by convention. The
+> `KSC-04` continues to hold that the projective normalization
+> `{0_P,1_P,∞_P}` is conventional. The
 > framework may refuse other models; it may not record that refusal as proof that
 > none exists. Recorded once, per the Open Canon Covenant, and not re-argued.
 
 The reasoning weighed before the ruling, retained for provenance:
 
-1. **The corpus already ruled against it.** `KSC-04`: `{0,1,∞}` is "canonical by
-   convention and usefulness, **not necessity**," because the Möbius group is
-   3-transitive — any three distinct points can be sent to `(0,1,∞)`. The sphere
+1. **The corpus already ruled against it.** `KSC-04`: the projective
+   normalization `{0_P,1_P,∞_P}` is conventional and useful, **not necessary**,
+   because the Möbius group is 3-transitive — any three distinct points can be
+   sent to that coordinate frame. The sphere
    admits infinitely many equally valid coordinatizations.
 2. **The corpus needs the line.** Trinity canon §6: "Neither geometry is the one
    complete ontology of number." The additive line owns order, signed magnitude,
@@ -215,8 +226,8 @@ Explanatory reach is abductive support for preference, never a uniqueness proof.
 
 The honest maximal form:
 
-> The sphere is the **selected primary** chart; `1` is its metric centre and the
-> unique fixed point of inversion; the line is retained as the chart that owns
+> The sphere is the **selected** projective chart; `1_N` is the positive chart's
+> metric centre and unique positive fixed point of inversion; the line is retained as the chart that owns
 > order and completeness. Neither is dispensable.
 
 ## 8 · Claims and kills
@@ -227,17 +238,18 @@ The honest maximal form:
 | `ρ(x)=\|log x\|` is inversion-invariant with unique minimum at `1` | `[A]` | exhibit a second minimum |
 | `1` is singled out on the equator by being an `ι`-fixed point, not by latitude | `[A]` | show another equatorial point fixed by `ι` on the positive ray |
 | two poles do **not** generate an interior | `[A]` | show the two-point discrete space has an interior |
-| the poles are the compactification of the interior; the interior is prior | `[S]` | construct `ℝ₊` from `{0,∞}` alone without further premises |
+| the projective endpoints are adjoined to the interior; the interior is prior in this construction | `[S]` | construct `ℝ₊` from `{0_P,∞_P}` alone without further premises |
 | the unit is **unique** (group identity); its *existence* is presupposed, not forced | `[A]` | exhibit a group with two identities |
-| `1` is the fixed point of `ι`, not an average of the poles | `[A]` | supply a determinate mean of `0` and `∞` |
+| `1_N` is the positive fixed point of `ι_P`, not an average of differently typed endpoints | `[A]` | construct a declared common carrier and mean satisfying the claimed role without coercion |
 | `ℕ⁺ ⊊ ℝ₊`; unit-addition does not generate the interior | `[A]` | reach `√2` by adding ones |
-| sphere primacy — ruled and executed (r175) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ` |
-| `ℝ ∪ {∞}` is the `ι`-invariant meridian carrying both fixed points | `[A]` | exhibit a real `x` with `1/x` non-real |
-| arithmetic is chart-local under sphere primacy | `[A]` | define a global field structure on `Ĉ` |
+| sphere selection — ruled and executed (receipts 175 and 193) | `[S]` declared | the corpus is shown to need a structure unavailable on `Ĉ`, or another chart is selected instead |
+| `ℝ ∪ {∞_P}` is the `ι_P`-invariant meridian carrying both fixed points | `[A]` | exhibit a real `x` with `1/x` non-real |
+| arithmetic is chart-local in the selected sphere construction | `[A]` | define a global field structure on `Ĉ` |
 | "no other model acceptable" is declared policy, not theorem | `[S]` | overturn Möbius 3-transitivity |
 
-**What this document does not do.** It does not weaken `⊙ = • × ○` — doc 45 is
-untouched. It does not deny the sphere's primacy. It denies only that the
-interior is *produced* by the poles, and that the model is *uniquely* acceptable.
+**What this document does not do.** It defines no Titan arithmetic and does not
+identify a Titan term with a number or projective point. It does not deny the
+sphere's selected priority. It denies that an interior is *produced* by two
+boundary points and that the selected model is *uniquely* forced.
 
 •   ⊙   ○ — *the middle is real, and it was there before the ends were named.*

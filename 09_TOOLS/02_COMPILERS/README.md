@@ -63,6 +63,21 @@ The `*.yaml` inputs use the JSON subset of YAML 1.2 so compilation remains
 stdlib-only and deterministic. Generated graphs are routing views, not owners
 or evidence.
 
+Parent-relative declared sources resolve only when exactly one distinct file
+exists across the checkout ancestors; shadow owners and unresolved paths fail
+closed. `test_corpus_claim_graph.py` covers direct, portable-worktree,
+ambiguous, unresolved, and full-repository contracts.
+
+`test_coherence_profile.py` covers the adjacent script validator's four-axis
+contract, including all internal overall states and the rule that an internal
+gate is inadmissible as world-contact evidence. Any declared world-contact
+record must also resolve to repository-relative custody; a label without a
+file cannot move that axis.
+
+`test_node_product_ranking.py` supplies positive and negative controls for the
+KSC-02 regression gate, including adjacent-denial bypasses, exact scope
+exclusions, the Managed Agents projection, and the live active-corpus scan.
+
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`

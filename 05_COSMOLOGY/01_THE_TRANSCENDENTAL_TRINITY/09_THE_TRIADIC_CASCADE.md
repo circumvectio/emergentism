@@ -15,20 +15,20 @@ rosetta:
 
 ## The Trinity Repeating Across Every Level of Knowledge
 
-**Status:** Foundational — the {0, 1, ∞} structure operating at every scale of inquiry
+**Status:** Active interpretive projection — a selected three-column comparison, not a foundational owner
 **Date:** 2026-03-24
-**Evidence Tier:** [S] Structural. The three-fold mapping is a consequence of the Transcendental Trinity applied to the classical divisions of knowledge. [I] The temporal attributions, the Varna/Polity mappings, and the cycling claim are interpretive.
+**Evidence Tier:** [S] for the declared three-column schema. The mapping is selected, not a consequence forced by the Titan frame. [I] The temporal attributions, the Varna/Polity mappings, and the cycling claim are interpretive.
 **Depends on:** 02_THE_TRINITY.md, 07_THE_DISCOVERY_OF_FINITY.md, 08_CO_EMERGENCE.md
 **See also:** The Weltanschauung (00_EMERGENTISM.md Parts II, III, V), Triadic Stability (MF-511), The Rosetta Stone
 
-**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation — it maps the Burri Sphere across domains (physics, information theory, economics, mythology, neuroscience). The Triadic Cascade is the *vertical* translation — it maps the Trinity across levels of knowledge (transcendentals, disciplines, trivium, inference, time, society, polity). Together they form a grid in which every cell is the same geometry seen from a different angle.
+**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation across domains. The Triadic Cascade is a selected *vertical* three-column comparison across levels of knowledge. Together they form an interpretive grid; a shared column label transfers no geometry, proof, or evidence between cells.
 **Kill Criteria:** If the three-fold mapping is shown to be forced rather than natural — if a fourth column is required at any level — the cascade breaks. If a level demonstrably maps better to a different axis assignment, the specific mapping falls.
 
 ---
 
 ## The Cascade
 
-The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every level of knowledge — the same three-fold structure, repeating, each level a finer grain of the one above.
+The projection assigns a selected three-fold vocabulary at each listed level of knowledge. It does not claim that TitanFrame literally recurs there or that one level is a finer mathematical grain of another.
 
 ```
         φ (coherence)           B (balance)              ν (viability)

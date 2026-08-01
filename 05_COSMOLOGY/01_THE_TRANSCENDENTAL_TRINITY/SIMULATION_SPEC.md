@@ -23,6 +23,11 @@ structure explicitly inherited from current owners.
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as a genesis-era simulation/design packet, not as the current tier-authority surface for Foundation claims.
 >
 > **Use rule:** Read it for design archaeology and concept continuity. For present-tense canonical citation, evidence-tier disputes, or compressed summaries, route through [`00_THE_GENESIS_SIMULATION.md`](00_THE_GENESIS_SIMULATION.md), [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md), [`../00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), and [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md).
+>
+> **Type correction:** The storyboard keeps Titan glyphs only as operator-free
+> visual motifs. TitanFrame is opaque and is not equal or coerced to numbers,
+> projective points, geometric poles, or group elements. Former mixed-type
+> equations in this packet are retired and have been retyped below.
 
 ---
 
@@ -49,7 +54,9 @@ ANIM-6:  D5  The Burri Sphere  — Agency / selection. φ · ν = 1. Consciousne
 ### What It Shows
 Pure void. Black. Absolute nothing. Sunyata. `κ = 0` as boundary symbol.
 
-Then: a single gold dot appears. The Bindu. ⊙. The first distinction. The bit. 0 or 1. Not yet both. Not yet a qubit. Just a point.
+Then: a single gold dot appears. The Bindu. The unit-role glyph `⊙` may be used
+as a visual motif only; it is neither a number nor a proof of emergence. The
+first distinction. A storyboard bit. Not yet a qubit. Just a point.
 
 ### Geometry
 - Background: pure black (#000000). No stars. No fog. No ambient light. The void.
@@ -100,16 +107,17 @@ At α = 90°: |z| = ∞. The north pole. 1/0 maps to ∞ in the projective regis
 
 The sphere and the problem of `1/0` are CO-EMERGENT. The sphere does not solve a pre-existing field-arithmetic problem. The sphere and the projective boundary are born together the instant α > 0.
 
-### The Transcendental Trinity
+### Typed Frames Used by the Storyboard
 
 ```
-• = 0 = south pole = nothing = the dot before emergence
-⊙ = 1 = equator = the product = what is BETWEEN 0 and ∞
-○ = ∞ = north pole = everything = the horizon
-
-Zero-Sum Resolution Equation
-1 = 0 × ∞   (resolved by the sphere: φ · ν = 1)
+Projective storyboard: 0_P (south), 1_P (selected chart point), infinity_P (north)
+Numeric open chart: phi * nu = 1
+TitanFrame emblem: • ⊙ ○
 ```
+
+The three lines are separate types. The sphere visualizes the projective chart;
+the reciprocal equation is numeric; the emblem carries no operation. The
+former mixed-type product is retired and the equator is not a product of poles.
 
 ### The Imaginary Axis
 
@@ -458,13 +466,13 @@ Two light cones emerge from the split poles and meet at their mouths. The horn t
   - Exterior = void (nothing, Sunyata)
   - Surface = light cone (causal structure)
 
-### The Key Insight: The Titans as Geometry
+### Legacy Visual Analogy: Named Roles and Geometry
 ```
-Brahmā (future cone) = creation = increasing ν = the expansion of capability
-Śiva (past cone) = destruction = increasing φ = the integration of coherence
-Viṣṇu (overlap) = preservation = maintaining φ = ν = the equatorial balance
-                  (φ · ν = 1 is constant at every latitude and in both polar
-                   limits, so it is not what is maintained; the equality is.)
+future cone: creation motif; increasing nu; expansion of capability
+past cone: destruction motif; increasing phi; integration of coherence
+overlap: preservation motif; selected equatorial balance where phi = nu
+         (phi * nu = 1 is constant in the declared open chart, so it is not
+          itself what the overlap maintains.)
 
 The cones feed each other:
   Past → Future → Past
@@ -502,6 +510,9 @@ Turīya = the equator = witness / lived reading [I] = where the cone mouths meet
 
 ## THE COMPLETE CYCLE VISUAL SUMMARY
 
+The glyphs in this storyboard are stage icons in an operator-free sequence.
+They are not numeric values, projective points, or operands.
+
 ```
 D0:  •                    The Bindu (gold dot on black)
       ↓
@@ -519,10 +530,10 @@ D6:  •                    The Reset (collapse to dot)
       ↓
 D0:  •                    The cycle begins again
 
-The Titans:
-  Brahmā (future cone, orange) = creation, expansion, ν increasing
-  Śiva (past cone, cyan) = destruction, integration, φ increasing
-  Viṣṇu (overlap, gold) = preservation, balance, φ=ν
+Selected visual associations (not identities or proof transfers):
+  Brahmā motif: future cone, creation, expansion, nu increasing
+  Śiva motif: past cone, destruction, integration, phi increasing
+  Viṣṇu motif: overlap, preservation, balance at phi = nu
 ```
 
 ---

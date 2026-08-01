@@ -62,41 +62,43 @@ refusal and must be withdrawn openly, with a dated receipt.
 
 ### The layered foundation `[S]`
 
-> **AMENDED TWICE on 2026-07-29 by owner ruling, then SETTLED the same day by
-> ruling G-0b, exit Z.** (i) The first stratum was published as FORCED. The note
-> that followed — that the audit "showed `F1` was itself a selection" — is
-> **withdrawn**: exit Z does not ratify the inference from *sentence* to
-> *selection*. **`F1` is folded into `PRESUPPOSED`** as a property of the `P1`
-> apparatus: fixing a language and a consequence relation already settles `Q1`
-> and `Q2`, silence included. **There is no FORCED box, and `F1` is not a
-> selection**; doc 46 holds the claim at `[A]`, unchanged. A base may still be
-> selected — that is the honest state under `E1`/`KSC-04`. (ii) The base is now
-> **the three relations**, and the sphere is **emergent** (step 6), not posited.
-> Receipt 175 is strengthened, not overturned: `Ĉ` stays the primary object
-> downstream, but is now *reached* rather than assumed.
+> **TYPE-CORRECTED 2026-08-01.** The 2026-07-29 ruling correctly removed the
+> false FORCED stratum but wrote its replacement relations with opaque Titan
+> glyphs as operands. `KSC-04` makes that syntax inadmissible. The active base
+> below therefore uses a separately named algebra witness. The historical
+> ruling and its error remain in receipts 174–176 and parent commit `b7e0d00d`;
+> they do not control the current type signature.
 
 Presupposed, base and emergent must never be fused:
 
 ```text
-PRESUPPOSED — prior to any stated base
-  P1  a language, a consequence relation, identity/difference, and a binary
-      operation with inverses. The relations cannot be STATED without it.
-  F1  a PROPERTY of P1, not a stratum beside it (G-0b exit Z, 2026-07-29):
-      fixing a consequence relation already settles Q1 (may the domain be
-      empty?) and Q2 (may it contain a totality of itself?) — silence included.
-      Doc 46 §6A.2 holds it at [A], unchanged. NOT a selection.
+PRESUPPOSED — prior to any stated base.
+  P1  a language, a consequence relation, identity and difference, and enough
+      typed grammar to declare a carrier and its operations.
 
-BASE — posited. Three relations. Killable; nothing forced.
-  B1  ⊙ = • × ○      B2  • = ⊙ / ○      B3  ○ = ⊙ / •
-      Content: ⊙ is the IDENTITY and {•, ○} is an INVERSE PAIR. One fact, three faces.
+BASE — posited. Three typed clauses, killable, nothing forced.
+  AlgebraWitness := (G, ·, e, a, b)
+  Carrier(AlgebraWitness) := G
+  B1  (G, ·, e) is a group.
+  B2  a is a selected element of G.
+  B3  b is defined inside G by b := a⁻¹.
+  NoCoercion(TitanFrame, Carrier(AlgebraWitness))
+  ArithmeticSignature(TitanFrame)=∅
 
-EMERGENT — standard constructions, none forced, each solving a named problem
-  1 ℤ  (free on one generator; {+1,−1} IS KSC-21's oriented pair → D1)
-  2 ℚ   3 ℝ (completion)   4 (ℝ₊,×)≅(ℝ,+) via log — Suda's s
-  5 ℝ₊∪{0,∞}  the poles become points     6 Ĉ = ℂP¹  THE SPHERE
-  7 the corpus: D-registers · μ-contract · E1–E10 · Soul Loop · η_move=0 · Justice ·
-    Power-Max · Egregoreotype · G7 and the Rosetta
+EMERGENT — selected constructions, none forced; narrative, not a μ-crossing.
+  1 ℤ  choose the free one-generator group; separately select its standard ring
+  2 ℚ  field of fractions of that domain
+  3 ℝ  completion under the usual absolute-value metric
+  4 (ℝ₊,×)≅(ℝ,+) via exp/log
+  5 [0,∞]  compactified positive ray     6 Ĉ = ℂP¹  selected sphere
+  7 the corpus: higher doctrine, separately tiered and never derived wholesale
 ```
+
+Inside the named witness, `a·b=e`, `b·a=e`, and `b=a⁻¹` are conditional group
+facts `[A|B1–B3]`. They are not Titan equations. Choosing the free witness gives
+an infinite cyclic model; finite cyclic groups and other witnesses remain
+lawful. The reciprocal identity `φν=1` is a separate chart fact and transfers no
+equality, operation, or evidence tier to the Titan metaframe.
 
 The base-to-corpus relation is **mathematical inheritance**, already canon at
 `00_THE_WELTANSCHAUUNG.md` §7.1: higher organization must remain *compatible

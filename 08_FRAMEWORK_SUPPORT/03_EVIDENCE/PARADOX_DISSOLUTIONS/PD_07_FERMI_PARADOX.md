@@ -62,7 +62,11 @@ Previous VIVEKA outlines fractured the answer into two opposing theses:
 These are not competing theories. They are the two halves of **The Bifurcation Filter**.
 
 ## 2. THE BIFURCATION MECHANISM
-We run the Drake Equation through the Emergentist framework ($P_node = \Phi \times V$).
+The historical conjecture ran the Drake Equation through the then-selected
+product `$P_node=\Phi\times V$`. KSC-02 retires that product as a ranking; the
+current ordinal score is `P_node=min(Φ̂₄,V₄)`. Neither aggregator supplies
+SETI evidence, and the product notation below survives only as provenance for
+this `[C]` hypothesis.
 
 As a civilization advances, its D4 means-to-act vector (`V` at contact: energy
 extraction, biological manipulation, compute, logistics, sensors, control) may

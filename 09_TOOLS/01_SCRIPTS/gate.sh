@@ -42,6 +42,7 @@ fi
 CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_foundation.py"
   "09_TOOLS/01_SCRIPTS/check_claim_status.py"
+  "09_TOOLS/01_SCRIPTS/check_coherence_profile.py"
   "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
   "09_TOOLS/01_SCRIPTS/check_generative_base.py"
   "09_TOOLS/01_SCRIPTS/check_established.py"
@@ -64,6 +65,7 @@ CHECKS=(
   # belongs in .git/hooks/pre-commit, where it is.
   "09_TOOLS/01_SCRIPTS/check_q4_declarations.py"
   "09_TOOLS/01_SCRIPTS/check_barred_claims.py"
+  "09_TOOLS/01_SCRIPTS/check_node_product_ranking.py"
   "09_TOOLS/01_SCRIPTS/check_d6_equiv_d0.py"
   "09_TOOLS/01_SCRIPTS/check_trophic_rosetta_doctrine.py"
   "09_TOOLS/01_SCRIPTS/check_links.py"

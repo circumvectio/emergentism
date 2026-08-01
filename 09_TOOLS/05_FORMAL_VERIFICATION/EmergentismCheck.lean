@@ -156,18 +156,20 @@ theorem involutions_commute (x : ℝ) : (-x)⁻¹ = -(x⁻¹) := by
   and is not re-derived.
 -/
 
-/-! ## 8 · Why the associativity falsifier does not reach `Ĉ` — doc 45 §6
+/-! ## 8 · The associativity falsifier and the projective type boundary
 
-The corpus's most load-bearing NEGATIVE claim. `KSC-04` retired the three Titan
-equations because an associativity argument derives `1 = 2` from `0 × ∞ = 1`.
-Doc 45 restores them by observing that the argument refutes a **ring**, and `Ĉ`
-is not one. Until now, no oracle had seen either half. -/
+`KSC-04` retired the attempted Titan equations. The argument below shows that
+the proposed pole product collapses any nontrivial ring. Observing that `Ĉ` is
+not a ring does not restore that product: global multiplication is unavailable
+there, and TitanFrame is a separate opaque type. The lawful survivors are only
+the separately typed numeric reciprocal and projective inversion facts. -/
 
 /-- **The canon's falsifier, formalised — and it is VALID.**
 Given a total associative multiplication, an element `w` with `0 * w = 1`, and
 the ring facts `2 * 0 = 0` and `2 * 1 = 2`, one derives `1 = 2`.
 
-So the corpus was right to retire the equations *as arithmetic on a ring*. -/
+So the corpus was right to retire the attempted equation as ring arithmetic;
+the type firewall also forbids recasting it as Titan arithmetic. -/
 theorem associativity_falsifier {R : Type*} [Mul R] [Zero R] [One R]
     (assoc : ∀ a b c : R, a * b * c = a * (b * c))
     (two : R) (h20 : two * 0 = 0) (h21 : two * 1 = two)

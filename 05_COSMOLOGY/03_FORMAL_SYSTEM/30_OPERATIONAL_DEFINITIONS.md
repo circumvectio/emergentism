@@ -115,15 +115,16 @@ separate variables; never build them into the `V̂₄` instrument.
 
 ## 4. Derived node diagnostics
 
-The declared Emergentist product is
+The selected Emergentist ordinal diagnostic is
 
 ```text
-P̂_node = Φ̂₄V̂₄.
+P̂_node = min(Φ̂₄,V̂₄).
 ```
 
-This is a model output, not proof that product is the correct aggregator. Test
-it on held-out outcomes against at least additive, minimum, harmonic, and a
-preregistered asymmetric/CES or Cobb–Douglas rival.
+The historical product `Ĉ×=Φ̂₄V̂₄` is retired as a ranking. It may
+remain a preregistered candidate only after a separately defended cardinal
+scale contract, alongside additive, harmonic, asymmetric/CES, Cobb–Douglas,
+and other fair rivals.
 
 For `(Φ̂₄,V̂₄)≠(0,0)`, a scale-free ratio-balance diagnostic may be declared:
 

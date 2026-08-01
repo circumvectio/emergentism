@@ -132,15 +132,18 @@ Do not ask for a universal receipt. Ask what would make this particular claim an
 There are two directional questions:
 
 ```text
-ΣΔB
-ΣΔP_node
+declared balance evidence across the boundary
+for each bearer b: P_node,b(after) ⪰ P_node,b(before)
 ```
 
 `ΣΔB` asks whether balance improved across the relevant boundary. Did the system become less one-sided? Did coherence and viability move into better relation? Did the neglected side recover?
 
-`ΣΔP_node` asks whether empirical flourishing improved across real nodes. Did people, groups, or institutions become clearer and more capable? Did the change increase their ability to continue, repair, learn, and leave?
+The bearer-wise `P_node` order asks whether empirical flourishing improved for
+each real node without adding ordinal codings together. Did people, groups, or
+institutions become clearer and more capable? Did the change increase their
+ability to continue, repair, learn, and leave?
 
-The sigma matters because the question is not only local.
+The bearer index matters because the question is not only local.
 
 An action can raise my standing while lowering yours. It can raise the company's apparent viability while lowering worker viability. It can raise user convenience while lowering public trust. It can raise institutional coherence while destroying the coherence of families beneath it.
 
@@ -309,8 +312,8 @@ The widened receipt says the same thing about distribution. Students with stable
 So the review group adds a boundary note:
 
 ```text
-ΣΔP_node: positive only if teacher workload, family comprehension,
-and data portability are repaired by next review.
+P_node order: no claimed improvement unless teacher workload, family
+comprehension, and data portability are repaired by next review.
 ```
 
 This is not mathematical indecision. It is moral accounting.
@@ -333,11 +336,14 @@ This is how a measure avoids becoming one more idol.
 
 The ratings help the room see relation. The proxies keep the ratings tied to life. The falsifiers prevent celebration from outrunning evidence. The horizon prevents a short-term gain from pretending to be final flourishing. The boundary note prevents the aggregate from erasing the person who paid the cost.
 
-This is also how `ΣΔB` and `ΣΔP_node` become usable public language.
+This is also how declared balance evidence and bearer-wise `P_node` order become
+usable public language.
 
 `ΣΔB` asks whether balance improved across the relevant changes. Did the system become less one-sided? Did coherence and viability return toward relation?
 
-`ΣΔP_node` asks whether measured flourishing improved across the declared node. Did the people and institutions actually become clearer and more capable?
+Bearer-wise `P_node(after) ⪰ P_node(before)` asks whether measured flourishing
+improved for each declared node. Did the people and institutions actually
+become clearer and more capable?
 
 Neither question should be answered by a single triumphant number.
 
@@ -545,7 +551,8 @@ Do not use a node's measured standing as if it were the whole truth of a being.
 
 Do not collapse coherence and viability into one number, and do not let one of them pay for the other.
 
-Do not use `ΣΔB` or `ΣΔP_node` without naming the boundary.
+Do not use balance evidence or bearer-wise `P_node` comparisons without naming
+the boundary and every affected bearer.
 
 Do not use numbers where only story exists.
 

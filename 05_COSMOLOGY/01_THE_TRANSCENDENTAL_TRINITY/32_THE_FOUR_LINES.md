@@ -45,7 +45,8 @@ These lines do not establish:
 - an objective function, gradient flow, stability, or evolutionary force;
 - a method for reaching truth;
 - Justice, moral valence, or the value of a person;
-- `P_node:=Phi*V`, which is a separately selected normalized model;
+- `P_node:=min(Phi_hat_4,V_4)`, which is a separately selected ordinal
+  AND-class model; the historical product is retired as a ranking;
 - a forced Titan frame, sevenfold language, D-ladder, or transcendental triad.
 
 The arrow in `(phi-nu)^2 -> 0` was the crucial illicit addition: an inequality

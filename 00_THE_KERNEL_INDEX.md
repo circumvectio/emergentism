@@ -53,14 +53,14 @@ an open question filed nowhere reads as forgotten.
 | K-6 | **Revelations** | `06_ONTOLOGY/06_THE_REVELATIONS.md` | twelve receipted disclosures at their stated tiers; no second copy here |
 | K-7 | **Record** | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | living authority/correction ledger; `/record/` is its public projection |
 
-The attempted whole-foundation projection is retained at
-[`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md), but it is on **CONFLICTED HOLD**:
-its `PRESUPPOSED / BASE / EMERGENT` synthesis still prints arithmetic over the
-opaque TitanFrame, contrary to `KSC-04`. Do not cite its Titan equations. K-5
-owns `R0`; K-1, the Settled Canon Registry, Canonical Formula Block, and
-Primitive and Type Signatures control the grammar and type boundary. The held
-projection remains discoverable for repair and is not an eighth surface.
-Routing is `KSC-28`.
+The whole-foundation projection is retained at
+[`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) as an **active subordinate typed
+projection**. Its `PRESUPPOSED / BASE / EMERGENT` synthesis now places `B1–B3`
+inside a separate `AlgebraWitness`; it defines no arithmetic or coercion over
+the opaque `TitanFrame`. K-5 owns `R0`; K-1, the Settled Canon Registry,
+Canonical Formula Block, and Primitive and Type Signatures control the grammar
+and type boundary. The projection is not an eighth surface. Routing remains
+`KSC-28`.
 
 The active technical front door is
 [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md). The continuous reader

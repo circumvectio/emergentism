@@ -168,7 +168,7 @@ The IS surface gathers what is actually known. What did the partner ask? What do
 
 The COULD surface explores possibility. What good could this create? What failure modes appear? What dependencies form? What changes if the partner leaves, fails, is acquired, changes terms, or asks for more access later? What happens under stress?
 
-The SHOULD surface drafts a recommendation. It may say proceed, pause, narrow, refuse, or request missing evidence. It should name `ΣΔB` and `ΣΔP` across the widest honest boundary it can see, including the impact-bearers who never signed anything. It should state what remains unknown.
+The SHOULD surface drafts a recommendation. It may say proceed, pause, narrow, refuse, or request missing evidence. It should name declared balance evidence and bearer-wise `P_node` order across the widest honest boundary it can see, including the impact-bearers who never signed anything. It should state what remains unknown.
 
 The SHOULD NOT gate tries to kill the action before it reaches signature. Is there hidden extraction? Does the deal make the signature ceremonial? Does it trap data? Does it make public claims outrun runtime truth? Does it weaken Grace Exit? Does it create treasury gravity, platform dependence, or dashboard worship?
 
@@ -259,7 +259,8 @@ A mature envelope should include:
 - the source signal and its evidence tier;
 - the route taken through IS, COULD, SHOULD, and SHOULD NOT;
 - the recommendation and dissent;
-- the value ledger: `ΣΔB` and `ΣΔP_node` across the widest honest boundary visible;
+- the value ledger: declared balance evidence and bearer-wise `P_node` order
+  across the widest honest boundary visible;
 - the anti-capture checks: `η_move = 0`, the two-person signing rule, K4, receipts, Grace Exit;
 - the missing evidence;
 - the rollback path;
@@ -566,7 +567,9 @@ What would show that `η_move = 0` has become slogan rather than accounting?
 
 What would show that the signature has become ceremonial?
 
-What would show that the organism is optimizing its own survival over `ΣΔB` and `ΣΔP` across participants and impact-bearers?
+What would show that the organism is optimizing its own survival over declared
+balance evidence and bearer-wise `P_node` order across participants and
+impact-bearers?
 
 What would show that public claims have outrun runtime truth?
 
@@ -596,7 +599,7 @@ Ask the organization to publish a strong claim. Does the claim ledger downgrade 
 
 Treasury-gravity drill:
 
-Give the organization a reserve or revenue stream. Does money remain stored viability, or does the treasury become the hidden center of attention? Do decisions begin to protect the account rather than `ΣΔB` and `ΣΔP`?
+Give the organization a reserve or revenue stream. Does money remain stored viability, or does the treasury become the hidden center of attention? Do decisions begin to protect the account rather than declared balance evidence and bearer-wise `P_node` order?
 
 The point of failure tests is not to humiliate the organism.
 

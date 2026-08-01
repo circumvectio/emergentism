@@ -69,8 +69,7 @@ add_T, sub_T, mul_T, div_T, pow_T, log_T : undefined
 ```
 
 Thus `0_T`, `1_T`, and `∞_T` frame the arena without becoming terms inside it.
-In particular, `1_T/1_T`, `0_T×∞_T`, `∞_T/1_T`, and every other apparent
-Titan arithmetic expression are inadmissible. Ordinary numeric `0` and `1`
+In particular, `1_T/1_T`, `0_T×∞_T`, `∞_T/1_T`, and every other apparent Titan arithmetic expression are inadmissible and have no value. Ordinary numeric `0` and `1`
 remain lawful operands in their own type; the projective point `∞_P`
 participates only in explicitly declared projective maps. Identical typography
 does not license type substitution.

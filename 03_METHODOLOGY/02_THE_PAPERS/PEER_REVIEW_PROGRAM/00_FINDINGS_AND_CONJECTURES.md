@@ -16,6 +16,11 @@ rosetta:
 > object. Legacy “D5-as-process/soul” phrases below are historical labels, not
 > current ontology.
 
+> **KSC-02 custody fence (2026-07-29).** Product/exponent models below are
+> dated findings or explicit experimental candidates under separately defended
+> cardinal scales. The selected ordinal node ranking is
+> `P_node=min(Φ̂₄,V₄)`.
+
 ---
 
 ## 1. Achievements (what was built and done)

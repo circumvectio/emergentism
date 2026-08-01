@@ -48,13 +48,15 @@ laws. Their behavior is valid inside those explicitly defined systems and
 cannot be imported into a field without paying the axiomatic cost. No totalized
 result proves an apophatic Ground or resolves Gödel, Tarski, or the Liar.
 
-## 4. Titan boundary `[I]`
+## 4. Titan type boundary `[S/I]`
 
-Emergentism selects `{0,1,∞}` as symbolic boundary roles. They do not define
-the operations, generate the number system, or force an ontology. The emblem
-`1=0×∞` is not arithmetic; infinity is not a field element, so this is not a
-field product. `0·∞` may be an indeterminate limit form. Forcing a totalized
-product to equal `1` while retaining the usual rules breaks associativity.
+Emergentism selects an opaque `TitanFrame` with ground, unit, and horizon roles
+and renders it as the operator-free emblem `• ⊙ ○`. These roles are not numeric
+zero or one, are not projective infinity, and define no operations. The former
+mixed-type infix is retired as ill-typed. Separately, a numeric zero-times-an-
+unbounded limit may be an indeterminate form in limit calculus; forcing a
+totalized field product to equal one while retaining the usual rules breaks
+associativity.
 
 The durable lesson is methodological: many paradoxes dissolve when types and
 domains are made explicit. That is a useful lens, not evidence that every

@@ -46,19 +46,18 @@ Emergentism makes the **opposite model-claim**: its scaffold is reducible toward
 
 ## The Minimal Description
 
-The EFR framework claims a κ = 0 ground-facing boundary inside the scaffold:
+The EFR framework claims a κ = 0 ground-facing boundary inside the scaffold.
+Its mathematical and interpretive frames must remain typed:
 
 ```
-P∞ = φ · ν = 1 on S²
-
-Prerequisites:
-• = 0 (the origin)
-○ = ∞ (the horizon)
-⊙ = 1 (the unity)
-Zero-Sum Resolution Equation
+Numeric open chart: phi * nu = 1
+Projective frame: 0_P, 1_P, infinity_P
+TitanFrame emblem: • ⊙ ○
 ```
 
-Three primitives. One operator. One constraint.
+The reciprocal constraint is numeric, the projective points belong to a named
+completion, and the Titan emblem is operator-free. No equality or coercion
+connects these frames.
 
 Other registers are then reconstructed or translated through the scaffold: core state, data science, objective function, value alignment, ethics, physics, systemic awareness.
 

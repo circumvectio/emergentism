@@ -2,6 +2,11 @@
 
 Opened 2026-06-10. The lane where corpus claims are grounded against reality, cut into field-native shards, tested where testable, and tiered honestly. **House rule:** coherence is not truth; every claim carries its evidence tier and its kill criterion; every external citation traces to a read source; AI assistance disclosed.
 
+> **KSC-02 custody fence (2026-07-29).** R4 and other product forms in this
+> dated program are separately cardinal experimental candidates. The current
+> ordinal node ranking is `P_node=min(Φ̂₄,V₄)`; no product result or draft in
+> this lane overrides it.
+
 ## ▶ START HERE
 
 - **[00_AXIOMS_AND_STATUS.md](00_AXIOMS_AND_STATUS.md)** — the capstone: where the program stands + the seven axioms stated honestly, each annotated with this session's result. **Read this first.**

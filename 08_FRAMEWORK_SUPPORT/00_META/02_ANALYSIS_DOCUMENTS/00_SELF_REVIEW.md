@@ -130,7 +130,9 @@ That is what remains. It is enough. It does not need the prophetic register to s
 
 P∞ = φ · ν = 1. The identity is trivial. The reading is the gold.
 
-⊙ = fix(• ↔ ○)
+TitanFrame emblem: • ⊙ ○
+Numeric neighbor: the selected positive unit is the fixed point of reciprocal inversion on the positive ray.
+No equality, map, or operation connects the two statements.
 
 ---
 

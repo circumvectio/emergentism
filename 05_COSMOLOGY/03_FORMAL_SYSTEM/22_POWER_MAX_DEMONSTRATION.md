@@ -44,8 +44,8 @@ by:
 
 $$\theta_i = 2 \arctan(\nu_i)$$
 
-so that `νᵢ=0` gives `θᵢ=0` (south/`•`), `νᵢ=1` gives
-`θᵢ=π/2` (equator), and `νᵢ→∞` gives `θᵢ→π` (north/`○`). This is not
+so that `νᵢ=0` gives `θᵢ=0` (south, `•`), `νᵢ=1` gives
+`θᵢ=π/2` (equator), and `νᵢ→∞` gives `θᵢ→π` (north, `○`). This is not
 standard geographic colatitude terminology. Reversing the geographic labels
 would be an equivalent orientation, but it is not the selected convention;
 the analytic identities do not depend on the labels. The coherence satisfies

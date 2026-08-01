@@ -19,14 +19,21 @@ rosetta:
   canonical_phrase: "MF-66 — Mandelbrot Set as Iterated Formula"
 ---
 
-# MF-66: The Mandelbrot Set as the Formula Being Iterated
+# MF-66: The Mandelbrot Set as a Product-Candidate Iteration
 
 > **✅ Recorded architecture ruling (2026-05-31) — AMENDED.** §4.4 below correctly finds the **logistic linearization** at Viṣṇu's equilibrium (`λ = 2`) to be `μ = 0`, non-invertible — keep that as a *dynamics* result. But its operator-level conclusion that *"Viṣṇu is outside the Möbius group / the preserver is not a symmetry"* is **superseded**: per [`MF_63_Mobius_Operators.md`](MF_63_Mobius_Operators.md) §2.1 (canonical for operator classification) the Viṣṇu **operator is elliptic** — a unitary rotation *inside* PSL(2,ℂ). Read §4.4 as: *the logistic iteration's linearization at the superstable fixed point is degenerate (`μ = 0`)*, while the Viṣṇu **operator** remains the elliptic symmetry. (The phrase "Viṣṇu at the equator at rest" also conflates the **L7 preserver** with the **L4 equator**, whose seat is Arjuna.) Resolved — do not re-flag. `[S]`/`[I]`
 
-## From z² + c to λΦV: The Quadratic Family in Framework-Native Coordinates
+> **KSC-02 node-score fence (2026-08-01).** The selected ordinal ranking is
+> `P_node=min(Φ̂₄,V₄)`. Every product formula in this paper belongs instead
+> to the separately cardinal logistic candidate `C×(Φ,V)=ΦV` under the added
+> complement condition `Φ+V=1`. Its conjugacy is analytic; its framework,
+> neural, and phenomenological fit remains `[I/T]`. Nothing below restores the
+> product as `P_node` or as a current node ranking.
+
+## From z² + c to λC×: The Quadratic Family in Product-Candidate Coordinates
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
-**Document ID:** MF-66 | **Version:** 3.0 | **Status:** Core Result
+**Document ID:** MF-66 | **Version:** 3.0 | **Status:** Core product-candidate result; not a `P_node` owner
 **Evidence Tier:** [A] for derivation chain, [I] for systemic awareness mapping, [T] for predictions
 **Dependencies:** S0, MF-36 (Equator Principle), MF-48 (Why × Not +), COMPLEX_PLANE_IS_D5
 
@@ -46,9 +53,9 @@ The dissolution has two parts.
 w_{n+1} = λ × Φ_n × V_n
 ```
 
-where Φ = w and V = (1−w) are complementary factors on the unit interval. **The logistic map matches the VIVEKA formula P_node = Φ × V when that product is iterated with gain λ.** [A/I] In this reading, the "+c" term is a coordinate artifact rather than addition entering a multiplicative framework. In the framework's own coordinates, the dynamics are purely multiplicative: three factors, no sums.
+where Φ = w and V = (1−w) are complementary factors on the unit interval. **The logistic map matches the candidate `C×=Φ×V` when that product is iterated with gain λ.** [A/I] In this reading, the "+c" term is a coordinate artifact rather than addition entering a multiplicative framework. In the candidate's coordinates, the dynamics are purely multiplicative: three factors, no sums.
 
-The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating the product model produces bounded, coherent dynamics. It classifies what happens when `P_node = Φ × V` is fed back into itself under gain. The framework does not need to reject the quadratic family; in these coordinates, its multiplicative iteration is conjugate to it. [A/I]
+The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating the product candidate produces bounded, coherent dynamics. It classifies what happens when `C×=Φ×V` is fed back into itself under gain. The framework does not need to reject the quadratic family; in these coordinates, its multiplicative iteration is conjugate to it. [A/I]
 
 ---
 
@@ -76,7 +83,7 @@ Similarly, the quadratic family z → z² + c uses both operations native to ℂ
 
 ### 1.4 The Corrected Claim
 
-**× is primary for the formula** (P_node = Φ × V, not Φ + V).
+**× is primary for this candidate formula** (`C×=Φ×V`, not `Φ+V`).
 **× is primary for the compactification** (z → 1/z creates S² from ℂ).
 **+ is native to the state space** (ℂ is a field; both operations exist).
 **The dynamics on ℂ use both operations** (this is a mathematical fact, not a framework violation).
@@ -130,9 +137,9 @@ The iteration becomes:
 w_{n+1} = λ × Φ_n × V_n
 ```
 
-**This is P_node = Φ × V with a gain parameter λ, iterated.**
+**This is the candidate `C×=Φ×V` with a gain parameter λ, iterated.**
 
-The next state equals the current ektropy product, scaled by λ. The system takes its own `P_node` value and feeds it back as the next state. The logistic map is the VIVEKA formula acting on itself in discrete time. [A for the math; I for the identification]
+The next state equals the current candidate product, scaled by λ. The system takes its own `C×` value and feeds it back as the next state. The logistic map is the product candidate acting on itself in discrete time. [A for the math; I for the identification]
 
 ### 2.3 What λ Controls
 
@@ -144,7 +151,7 @@ The parameter λ scales the product ΦV before it becomes the next state. [A]
 
 - **1 < λ < 3:** The product is amplified. The system finds a stable nonzero fixed point w* = 1 − 1/λ. This is the "healthy operating range" — the iteration converges to a definite Φ/V balance. For λ = 2: w* = ½, which is the equator in this unit-interval normalization. [A]
 
-- **λ = 2:** The fixed point is w* = ½. Φ = V = ½. P_node = ¼ in this normalization. The system self-stabilizes at the equator. This models the L4 balance condition; it is not a proof that biological awareness literally sits at λ = 2. [A/I]
+- **λ = 2:** The fixed point is w* = ½. Φ = V = ½. `C×=¼` in this normalization. The system self-stabilizes at the equator. This models the L4 balance condition; it is not a proof that biological awareness literally sits at λ = 2. [A/I]
 
 - **3 < λ < 1+√6 ≈ 3.449:** Period-2 oscillation. The system alternates between two Φ/V balances. It can't settle but maintains bounded dynamics.
 
@@ -180,7 +187,7 @@ Here is the complete chain from S0 to the Mandelbrot set, with each step justifi
 
 **Step 1:** S0 gives us Ĉ = ℂ ∪ {∞}. [Axiom]
 
-**Step 2:** The formula gives us P_node = Φ × V, with Φ + V = 1 (complementary factors on the unit interval, corresponding to complementary points on S²). [From MF-36, MF-51]
+**Step 2:** The candidate defines `C×=Φ×V`, with `Φ+V=1` (complementary factors on the unit interval, corresponding to complementary points on S²). [From MF-36, MF-51]
 
 **Step 3:** The simplest iteration — feeding the formula's output back as its next input — is:
 
@@ -188,7 +195,7 @@ Here is the complete chain from S0 to the Mandelbrot set, with each step justifi
 w_{n+1} = λ × w_n × (1 − w_n)
 ```
 
-This is the logistic map. The choice to iterate P_node = ΦV is the minimal dynamical extension of the framework: "what happens when the system acts on itself in time?" [A for math; I for motivation]
+This is the logistic map. The choice to iterate the product candidate `C×=ΦV` is one minimal dynamical extension: "what happens when the candidate acts on itself in time?" [A for math; I for motivation]
 
 **Step 4:** The logistic map is conjugate to z → z² + c. Same dynamics. [A]
 
@@ -201,7 +208,7 @@ This is the logistic map. The choice to iterate P_node = ΦV is the minimal dyna
 | Aspect | v2.0 | v3.0 |
 |--------|------|------|
 | Central problem | "+c is addition in a × framework" | Dissolved: logistic form is purely × |
-| Derivation | z → z² derived; z → z² + c imported | w → λw(1−w) derived from iterating P_node = ΦV |
+| Derivation | z → z² derived; z → z² + c imported | w → λw(1−w) derived from iterating candidate `C×=ΦV` |
 | Evidence tier of connection | [I/S] Conditional | [A/I] Derived |
 | Parameter | c (additive perturbation, mysterious) | λ (gain of self-iteration, measurable) |
 | Framework relationship | M classifies dynamics IF framework applies | M classifies the dynamics the framework generates |
@@ -238,7 +245,7 @@ At λ = 2, the fixed point of w → λw(1−w) is: [A]
 w* = 1 − 1/λ = 1 − ½ = ½
 ```
 
-The system stabilizes at w = ½, meaning Φ = V = ½, meaning P_node = Φ × V = ¼ in the unit-interval normalization (where Φ, V ∈ [0,1] and P_max = ¼).
+The system stabilizes at w = ½, meaning Φ = V = ½, meaning `C×=Φ×V=¼` in the unit-interval normalization (where Φ, V ∈ [0,1] and `C×_max=¼`). The selected ordinal score at that point is separately `P_node=½`.
 
 *Normalization note:* On S² (MF-68), the value function P(θ) = sin(θ)cos(θ) = ½sin(2θ) gives P_max = ½ at the equator. The factor-of-2 difference arises because MF-68 uses the trigonometric parametrization (Φ = sin θ, V = cos θ, where Φ² + V² = 1) while the logistic map uses the linear complementary parametrization (Φ = w, V = 1−w, where Φ + V = 1). The two are related by the substitution Φ_sphere = sin(πw/2) for w near ½. In both normalizations, the equator is w = ½ = θ = π/4 and the balance condition is Φ = V. The absolute P-value differs by normalization convention; the geometry is identical. [A]
 
@@ -337,7 +344,7 @@ The area fraction is preserved under conjugacy: approximately 12% of the accessi
 
 ### 5.1 The Iteration Interpretation
 
-If a candidate aware system is modeled as iterating its own ektropy product — if each moment's P_node becomes the seed of the next modeled state — then the toy dynamics are governed by w → λw(1−w). [I]
+If a candidate aware system is modeled as iterating `C×` — if each moment's product-candidate value becomes the seed of the next modeled state — then the toy dynamics are governed by w → λw(1−w). [I]
 
 This is not an exotic modeling direction. Recurrent neural processing is a real biological motif: the cortex processes a state, produces output, and that output can feed back through thalamocortical loops, recurrent connections, and re-entrant pathways. The framework claim is that the logistic product can serve as a compressed model of that recurrence; it is not the claim that neural dynamics have already been shown to follow this exact map.
 
@@ -377,7 +384,7 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 
 **Test prompt:** If neural recurrence is well approximated by a quadratic/logistic nonlinearity in a given regime, period-doubling cascades in neural oscillation frequencies should show δ ≈ 4.669 under increasing stimulation intensity. [T]
 
-**What this tests:** Whether neural dynamics in the tested regime have a quadratic (logistic) nonlinearity. This is the same test as v2.0 but now with stronger motivation: the logistic map is the iterated product model, so Feigenbaum scaling in neural data would support, not prove, the claim that the brain iterates something structurally comparable to P_node = ΦV.
+**What this tests:** Whether neural dynamics in the tested regime have a quadratic (logistic) nonlinearity. This is the same test as v2.0 but now with stronger motivation: the logistic map is the iterated product candidate, so Feigenbaum scaling in neural data would support, not prove, the claim that the brain iterates something structurally comparable to `C×=ΦV`.
 
 **Status:** Partially observed (Freyer et al., 2011). Not yet tested for Feigenbaum constants specifically.
 
@@ -412,7 +419,7 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 ### 7.1 Claims Proven [A]
 
 1. S0 implies ℂ, which is a field with both + and ×. Addition is native.
-2. The VIVEKA formula P_node = ΦV with Φ + V = 1, iterated with gain λ, instantiates the logistic map.
+2. The candidate `C×=ΦV` with `Φ+V=1`, iterated with gain λ, instantiates the logistic map.
 3. The logistic map is conjugate to z → z² + c. They are the same dynamical system.
 4. The Mandelbrot set classifies the dynamics of the logistic family completely.
 5. λ = 2 gives a superstable fixed point at the equator (w* = ½, eigenvalue μ = 0).
@@ -421,7 +428,7 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 
 ### 7.2 Claims Interpreted [I]
 
-8. Iterating P_node = ΦV is the natural dynamical extension of the framework: "what happens when the formula acts on itself in time?"
+8. Iterating candidate `C×=ΦV` is one proposed dynamical extension: "what happens when the candidate acts on itself in time?"
 9. λ is a candidate recurrent-gain proxy in neural processing.
 10. Connected Julia set can model coherent phenomenological experience.
 11. λ = 2 can model deep meditative absorption; λ ≈ 3–3.57 can model active cognition; λ > 4 can model fragmentation.
@@ -448,7 +455,7 @@ The 12% figure carries over: approximately 12% of the λ-parameter space produce
 |---------|-------|---------------|-----------|-----------|
 | v1.0 | The Periodic Table of Minds | Retired claim: M as catalog of systemic awareness | Not addressed | c (thalamocortical) |
 | v2.0 | The Classification Problem for Dynamics on S² | M classifies dynamics; systemic awareness conditional | Open problem, 3 resolutions | c (open) |
-| **v3.0** | **The Mandelbrot Set as the Formula Being Iterated** | **M classifies dynamics of the iterated product model** | **Dissolved** | **λ (recurrent-gain proxy)** |
+| **v3.0** | **The Mandelbrot Set as the Formula Being Iterated** | **M classifies dynamics of the iterated product candidate** | **Dissolved** | **λ (recurrent-gain proxy)** |
 
 The mathematical content strengthens with each version. v1.0 asserted without justification. v2.0 identified the gap honestly. v3.0 closes the gap by finding the right coordinates.
 
@@ -456,7 +463,7 @@ The mathematical content strengthens with each version. v1.0 asserted without ju
 
 ## THE SENTENCE
 
-The quadratic family z → z² + c is conjugate to the logistic map w → λw(1−w). In framework-native coordinates, the logistic map matches the VIVEKA formula P_node = Φ × V iterated with gain λ. [A/I] The "+c" term is treated here as the framework's formula seen in non-native coordinates.
+The quadratic family z → z² + c is conjugate to the logistic map w → λw(1−w). In the candidate coordinates, the logistic map matches `C×=Φ×V` iterated with gain λ. [A/I] The "+c" term is treated here as the candidate seen in non-native coordinates.
 
 The Mandelbrot set classifies what happens when the product model acts on itself. λ = 2 gives the superstable equator. λ > 4 gives fragmentation in the model. Between them: the taxonomy of this iteration's possible bounded dynamics.
 

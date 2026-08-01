@@ -160,7 +160,7 @@ Status here; tiers and kills there.
 | `W1` | `REACHABLE` definable existence-independently | `NOT-WELL-POSED` → see **§6, RQ-09** | A1 |
 | `W2` | quantum record / history-space emergence | `COMPONENT-SUPPORTED` (decoherence is real; the integrated reading is not) | A6 |
 | `W3` | product beats AND-class rivals in ≥1 preregistered domain | `OPEN-EMPIRICAL` | A6 |
-| `W4` | two-factor `Φ×V` out-predicts one general factor | `OPEN-EMPIRICAL` | A6 |
+| `W4` | candidate two-factor `Φ×V` out-predicts one general factor under separately defended cardinal proxies | `OPEN-EMPIRICAL` | A6 |
 | `W5` | the equator transfers to premise-satisfying real systems | `OPEN-EMPIRICAL` — see **RQ-01** | A6 |
 | `W6` | the vow is load-bearing in a frozen domain set | `OPEN-EMPIRICAL` | A4 |
 | `W7a–W7e` | five modular force role-affinities | `OPEN-EMPIRICAL`, five legs, independently killable | A6 |
@@ -192,8 +192,8 @@ refutes. A vow is kept or abandoned, never proved.
 > counterexample, a recorded prior status, and a repair path; the validator
 > enforces all four.
 >
-> Separately, the three **Titan equations** are restored by *proof* rather than
-> ruling — see `TR-01` and
+> Separately, the typed **numeric/projective reciprocal facts** are retained by
+> proof rather than ruling; no Titan equation is restored — see `TR-01` and
 > [`45_THE_TITAN_INVERSION_STRUCTURE.md`](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md).
 
 Every dead form from [K-7 §2](../11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md)

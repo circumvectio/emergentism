@@ -100,8 +100,10 @@ equality **iff** `φ = ν = 1` `[A]` (inherited inequality; used, not discovered
 This is the rung's one theorem with a direction in it: departure from the fixed
 point is never free. Downstream it becomes the equatorial maximum of the
 **score** `B = 2/(φ+ν) = sin θ ≤ 1` — a *conditional* optimum for real systems,
-never the seam, never the finite-node model `P_node = Φ×V` (which stays `[C]` in
-its interior; only its AND-class zero boundary is won).
+never the seam, never the selected finite-node model
+`P_node=min(Φ̂₄,V₄)` (whose universal fit stays `[C]`; only its selected
+ordinal conjunction is `[S]`). The historical product `Φ̂₄V₄` is retired as a
+node ranking and may return only as an explicit separately cardinal candidate.
 
 ---
 

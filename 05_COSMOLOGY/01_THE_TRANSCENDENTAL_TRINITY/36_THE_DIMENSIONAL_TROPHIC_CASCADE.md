@@ -191,8 +191,9 @@ candidate.
 
 ## What the analogy cannot prove
 
-- The selected product score does not dominate additive, minimum, CES, or
-  domain-specific rivals without data.
+- The selected ordinal score is `P_node=min(Φ̂₄,V₄)`. The retired product
+  candidate does not dominate additive, harmonic, CES, or domain-specific
+  rivals without separately defended cardinal scales and data.
 - Product compounding does not explain the rarity of apex predators.
 - The same diagram does not establish the same equations across ecology,
   genetics, culture, and institutions.

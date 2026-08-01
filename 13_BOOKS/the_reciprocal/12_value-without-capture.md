@@ -36,7 +36,8 @@ This chapter asks how value can remain value without becoming capture.
 
 Here, value is not local advantage.
 
-Value is widest-honest-boundary increase in `ΣΔB` and `ΣΔP_node`, under anti-capture constraints:
+Value is widest-honest-boundary improvement in declared balance evidence and
+bearer-wise `P_node` order, under anti-capture constraints:
 
 - `η_move = 0`: fees are tied to value created, not dependence preserved;
 - the signing threshold of at least two natural persons: an accountable human body signs, and can refuse;
@@ -145,7 +146,8 @@ The repair is not to refuse all gifts. The repair is to preserve the school's ow
 
 The value question is not "Did the donor help?"
 
-The value question is "Did the help increase `ΣΔB` and `ΣΔP_node` without buying hidden authority?"
+The value question is "Did the help improve declared balance evidence and each
+affected bearer's `P_node` order without buying hidden authority?"
 
 ## The Cheap Delivery
 
@@ -232,7 +234,8 @@ It gives a sequence:
 1. name the goods in conflict;
 2. name who bears the cost of each option;
 3. preserve the right to sign and to refuse wherever possible;
-4. choose the option that increases `ΣΔB` and `ΣΔP_node` across the widest honest boundary;
+4. choose the option that improves declared balance evidence and preserves or
+   raises every affected bearer's `P_node` order across the widest honest boundary;
 5. publish the uncertainty;
 6. schedule a receipt review;
 7. repair when the receipt contradicts the story.
@@ -279,7 +282,9 @@ It also cannot preserve a civic mission by excluding everyone whose life reveals
 
 The value question becomes:
 
-What arrangement increases `ΣΔB` and `ΣΔP_node` across the widest honest boundary while refusing to hide cost in the least protected body?
+What arrangement improves declared balance evidence and preserves or raises
+each affected bearer's `P_node` order across the widest honest boundary while
+refusing to hide cost in the least protected body?
 
 The answer will not be a slogan.
 

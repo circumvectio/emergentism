@@ -60,12 +60,15 @@ histories an agent can model, rank, coordinate, and reach.
 
 ## Power and Justice
 
-`P_x=Φ_xV_x` is Emergentism's selected normalized conjunctive instance, not a
-uniquely forced law. Power-Max may optimize durable potential only inside the
-Justice envelope: accountable authorization, no hidden extraction, complete
-bearer accounting, explicit payer and beneficiary, physical cost, contest, and
-exit. Strict syntropy requires receipted durable gains for individual and
-sustaining whole; voluntary sacrifice is a separate costly class.
+`P_x=min(Φ̂₄(x),V₄(x))` is Emergentism's selected ordinal conjunctive
+instance, not a uniquely forced law. The historical product `Φ̂₄V₄` / public
+`ΦV` is retired as a node ranking and may return only as an explicit candidate
+under separately defended cardinal scales. Power-Max may compare durable
+potential only inside the Justice envelope: accountable authorization, no
+hidden extraction, complete bearer accounting, explicit payer and beneficiary,
+physical cost, contest, and exit. Strict syntropy requires receipted durable
+gains for individual and sustaining whole; voluntary sacrifice is a separate
+costly class.
 
 ## Boundary
 

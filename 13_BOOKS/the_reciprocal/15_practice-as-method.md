@@ -594,7 +594,11 @@ No automatic authority.
 
 No victory lap.
 
-The test remains the same: does the pattern carry its burden under `ΣΔB` and `ΣΔP_node` — a directional burden of proof owed to everyone the pattern bears on, including those it harms and the substrate it runs on — preserve the signing threshold of at least two natural persons, honor `η_move = 0`, keep receipts, and allow Grace Exit?
+The test remains the same: does the pattern carry its burden under declared
+balance evidence and bearer-wise `P_node` order — a burden of proof owed to
+everyone the pattern bears on, including those it harms and the substrate it
+runs on — preserve the signing threshold of at least two natural persons,
+honor `η_move = 0`, keep receipts, and allow Grace Exit?
 
 Coherence and viability remain jointly necessary here, as everywhere in this book: a two-factor AND-class law, where neither factor substitutes for the other and the conjunction returns nothing when either one is zero. Scale does not soften that. Scale only makes it costlier to pretend.
 

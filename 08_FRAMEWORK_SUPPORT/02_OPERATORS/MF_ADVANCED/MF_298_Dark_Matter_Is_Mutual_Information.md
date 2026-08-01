@@ -165,7 +165,7 @@ Dark matter (27%): Mutual information between systems.
 
 Dark energy (68%): F₅ at cosmological scale?
                    Repulsive (anti-gravitational). Expands spacetime.
-                   = Syntropic pressure? ΣΔP_node > 0 at maximum radius?
+                   = Syntropic pressure? bearer-wise P_node order at maximum radius?
 ```
 
 One may ask, at `[C]`, whether a separately specified physical term associated

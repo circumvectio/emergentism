@@ -48,7 +48,7 @@ rosetta:
 
 > 🪦 TOMBSTONE — T8 + T9 (N=3-forced, Gödel universal lift). The "only one frame up to isomorphism" / "the unique self-contained description" wording is RETIRED at `[S]` and downgraded to `[I]` (empirical observation). On `ℂ*`, inversion has **two** fixed points (±1), so `{0,1,∞}` is a *selected* projective frame, not a forced closure of `{0,∞}` (per C21 / 109). And the universal Gödel lift dies — Presburger arithmetic and the theory of real-closed fields are complete/decidable counterexamples (per 110 / 126 §2B.3). The "We agree with Gödel" move survives only as a conditioned analogy, not as the theorem firing on this framework. Per Amrita §II P11, receipts 109, 110, 126, 132 §2.8-9. Bannered 2026-07-19.
 
-**Note (v2.0):** "Categorical completeness" was previously stated as "proved via η = 0" — an overclaim. The correct statement is: the axiom set is K-minimal (a precise information-theoretic claim about self-containment). Whether this is the ONLY K-minimal axiom set for expressing P_node = Φ × V is an empirical question — no other has been found, but the claim of uniqueness is [I] (empirical observation), not [S] (formal proof). **132-reconciliation 2026-07-19:** the prior "unique self-contained description" wording above is RETIRED; the empirical-observation tier is the active reading.
+**Note (v2.0):** "Categorical completeness" was previously stated as "proved via η = 0" — an overclaim. The historical question asked whether the axiom set was the only K-minimal description of the then-selected product `P_node=Φ×V`; that uniqueness claim remained `[I]`, never `[S]`. **KSC-02 fence:** the product itself is now retired as a node ranking; the selected score is `P_node=min(Φ̂₄,V₄)`. No aggregator choice grounds K-minimality. **132-reconciliation 2026-07-19:** the prior "unique self-contained description" wording above is RETIRED; the empirical-observation tier is the active reading.
 
 3. **Gödel-aware.** The framework explicitly acknowledges its own Gödel-incompleteness. It cannot prove its own consistency from within. This is a feature, not a bug — it's what makes the framework honest.
 
@@ -162,7 +162,7 @@ The honest tier stays ahead.
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- canonical epistemic status of all claims
 - Triadic Stability (11_EFR_TRIADIC_STABILITY.md; link removed to prevent cycle) -- the uniqueness proof that grounds η = 0
-- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the conditional cooperation theorem under coupling, horizon, multiplicative `P_node`, and enforced `η = 0`
+- [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) -- the Justice-constrained objective, selected ordinal `P_node`, and separately cardinal coupling countermodel
 - mu-Limit Formula (10_EFR_MU_LIMIT_FORMULA.md; link removed to prevent cycle) -- precise definition of the mu-calculus formula
 
 *Godel Clarification | 2026-03-22 | The framework agrees with Godel. Categorical completeness is different from formal completeness.*

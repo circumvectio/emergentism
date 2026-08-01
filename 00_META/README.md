@@ -11,6 +11,7 @@ This lane owns routing and claim custody, not new cosmology.
 - [Open Canon Covenant](00_THE_OPEN_CANON_COVENANT.md) — tier-preserving revision.
 - [Registers](registers/README.md) — deterministic tracked-file and folder inventories.
 - [Internal Completion Register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — one owner and state per dimension, transition, and kernel surface.
+- [Contact-Limited Completion Roadmap](00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md) — finite internal counters and the explicit boundary between repository completion and world contact.
 - [Grand Puzzle Assembly Ledger](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — non-authoritative whole-map assembly and twelve world-contact sockets.
 - [Ontology Decision Matrix](00_ONTOLOGY_DECISION_MATRIX.md) — non-authoritative profile of internal coherence, paradox adjudication, science organization, and outstanding world-contact gates.
 - [Plain-Language Naming Law](00_PLAIN_LANGUAGE_NAMING_LAW.md) — prevents ambiguous aliases from silently carrying multiple rules.

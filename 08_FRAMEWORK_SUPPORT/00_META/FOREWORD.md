@@ -71,13 +71,13 @@ If a metaphor and a kill condition disagree, the kill condition wins.
 ## The Shape of the Territory
 
 > This framework draws on the Gita's structure -- the revelation of the field before the battle.
-> It does not claim high-priority inspiration. It claims that the mathematical structure (S^2, P_node = Φ × V)
+> It does not claim high-priority inspiration. It claims that the mathematical structure (S^2, P_node = min(Φ̂₄,V₄))
 > has the same functional role as the Gita's teaching: showing the agent the shape of the
 > territory before asking them to act. The reader should evaluate the mathematics, not the metaphor.
 
 [I] The Bhagavad Gita presents a moment of paralysis -- Arjuna at Kurukshetra, unable to act because he cannot see the shape of the situation. Krishna's teaching is not a command to fight. It is a revelation of the field: the structure of dharma, the nature of action, the geometry of the situation Arjuna inhabits. Once the field is seen, action follows from seeing.
 
-The EFR claims an analogous structure: the equation P_node = Φ × V, the sphere S^2, and the dimensional scaffold D0-D6 are a map of the territory. The map does not tell the agent what to do. It shows the agent the shape of the space in which they act.
+The EFR claims an analogous structure: the selected ordinal score `P_node=min(Φ̂₄,V₄)`, the sphere S^2, and the dimensional scaffold D0-D6 are a map of the territory. The historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking. The map does not tell the agent what to do. It shows the agent the shape of the space in which they act.
 
 **This is a structural analogy [I], not a claim of identity with any religious teaching.**
 
@@ -97,7 +97,7 @@ It should be read as:
 
 [I] The framework identifies three archetypal failure modes of agency:
 
-1. **Action without integration (high V, low Phi):** Building capability without coherence. The system grows powerful but fragmented. In the framework's language: V increases while Phi collapses, and P_node = Φ × V crashes via zero-factor catastrophe.
+1. **Action without integration (high V, low Phi):** Building capability without coherence. The system grows powerful but fragmented. In the framework's language: V increases while Phi collapses, and `P_node=min(Φ̂₄,V₄)` follows the limiting factor to zero.
 
 2. **Integration without action (high Phi, low V):** Achieving coherence without capability. The system is harmonious but impotent. Phi is high but V is near zero, and P remains small.
 
@@ -146,7 +146,7 @@ The framework stands or falls on its mathematics, its empirical predictions, and
 ## References
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- complete epistemic map
-- Core Concepts -- P_node = Φ × V, η, the dimensional scaffold
+- Core Concepts -- `P_node=min(Φ̂₄,V₄)`, the retired product fence, η, and the dimensional scaffold
 - Rosetta Stone -- the structural identifications
 - [Glossary](../../07_THEOLOGY/00_GLOSSARY.md) -- definitions of all terms
 

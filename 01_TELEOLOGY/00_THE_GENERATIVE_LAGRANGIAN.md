@@ -75,19 +75,21 @@ Minimum, product, harmonic, CES, and other functions may rank interior points
 differently. The zero-factor condition selects an **AND-class**; it does not
 select one member uniquely.
 
-Emergentism declares the normalized product as its default instance:
+Emergentism selects the order-preserving minimum over its ordinal factors:
 
 \[
-P_x:=C_{\times}(\widehat\Phi_{4,x},V_{4,x})=\widehat\Phi_{4,x}V_{4,x}.
+P_x:=\min(\widehat\Phi_{4,x},V_{4,x}).
 \]
 
-The public compression remains `P_x=Φ_xV_x` after the evaluation bridge has
-been declared.
+The public compression is `P_x=min(Φ̂₄(x),V₄(x))` after the evaluation
+bridge has been declared. The historical product `Φ̂₄V₄` / public `ΦV` is
+retired as a node ranking. It may be tested only as an explicitly named
+candidate after separately defending cardinal scales for both factors.
 
 That declaration is structural inside the model `[S]`. Its universal fit to
 real agents or domains is conjectural `[C]`. Every application must state the
 bearer, measures, normalization, horizon, costs, alternative aggregators, and
-observations that would reject the product instance.
+observations that would reject the selected minimum instance.
 
 ## 3. Future influence without physical retrocausality
 
@@ -143,11 +145,14 @@ An honest construction grammar keeps all three inspectable.
 
 ## 5. Justice-constrained Power-Max
 
-For a bearer `x`, let
+For a bearer `x`, a temporal summary such as
 
 \[
-W_x(T)=\int_0^T P_x(t)\,dt.
+W_x(T)=\int_0^T q_x(t)\,dt.
 \]
+
+requires an application-specific cardinal representation `q_x=Q_x(P_x)` and
+integration rule; it does not follow from the ordinal `P_x` ordering alone.
 
 Power-Max is not an unconditional law of agents and not a proof of the Good. It
 is a selected design objective subordinate to the Justice envelope. For an
@@ -251,9 +256,10 @@ The strongest honest claims carried by this owner are vulnerable:
    interventions that drive either toward zero should sharply reduce the chosen
    outcome. Reproducible substitution without such collapse rejects the local
    AND-class model.
-2. **Product instance.** Product, minimum, harmonic, CES, and other declared
+2. **Aggregator comparison.** The selected minimum and any properly typed
    rivals must be compared out of sample. A rival that predicts and intervenes
-   better displaces `ΦV` for that domain.
+   better displaces the selected instance for that domain. The retired product
+   may enter only as a separately cardinal candidate.
 3. **Model-mediated future influence.** Controlled changes to represented
    futures should sometimes reweight present selection. Persistent null effects
    reject the specified coupling.

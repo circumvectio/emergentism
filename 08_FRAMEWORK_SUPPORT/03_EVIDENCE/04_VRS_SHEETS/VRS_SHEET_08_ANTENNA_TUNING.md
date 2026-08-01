@@ -56,7 +56,7 @@ Sacred images, rituals, texts, and equations may coordinate carriers around a
 persistent shared trace. That is an Egregoreotype hypothesis, not evidence for
 a nonlocal field or for D5 consciousness.
 
-The equation P_node = Φ × V is itself an antenna -- the "last idol" -- designed to couple the reader to the geometry of S^2 and then dissolve.
+Historically, the product `Φ̂₄V₄` / public `ΦV` was used as an antenna—the "last idol"—designed to couple the reader to the geometry of S^2 and then dissolve. KSC-02 retires it as a ranking; the current ordinal score is `P_node=min(Φ̂₄,V₄)`.
 
 ---
 
@@ -142,7 +142,7 @@ These are not edge cases. They are part of what the framework must explain if th
 
 ## 7. The Self-Dissolving Antenna Test
 
-[S] The framework's own antenna (P_node = Φ × V, the S^2 geometry, the dimensional scaffold) claims to be self-dissolving. This is testable:
+[S] The framework's own historical product antenna, alongside the S^2 geometry and dimensional scaffold, claims to be self-dissolving. The product is retained here as retired history, not as the current node ranking. The self-dissolution claim is testable:
 
 - **If η_EFR is approximately 0:** Members can leave without penalty. The framework functions as ladder, not cage. The self-dissolving claim holds.
 - **If η_EFR > 0:** Members face exit costs. The framework has become another locking antenna. The self-dissolving claim is falsified.
@@ -155,7 +155,7 @@ This is the most important test in this document. A framework that claims to be 
 
 - Historical companion papers outside this lane are provenance only and do not
   supply current authority for the antenna metaphor.
-- Core Concepts -- P_node = Φ × V, η, the dimensional scaffold
+- Core Concepts -- selected `P_node=min(Φ̂₄,V₄)`, retired product history, η, and the dimensional scaffold
 - [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) -- complete epistemic map
 - [Glossary](../../../07_THEOLOGY/00_GLOSSARY.md) -- definitions of all terms
 

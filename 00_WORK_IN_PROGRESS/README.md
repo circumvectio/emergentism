@@ -41,11 +41,13 @@ become a way of losing work and should be repaired.
 | id | question | blocks | source |
 |---|---|---|---|
 | ~~`§5.1`~~ | **CLOSED — signed 2026-07-31 (Q1), register-indexed.** `√2` is a number in `ℝ`; it is not a finite word over `{S, ι}`; neither clause may be published without the other in the same proximity window. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` §Q1; executed in receipt 232 |
-| ~~`G-0`~~ | **CLOSED — ruled 2026-07-29, exit B-ii.** `00_THE_FOUNDATION.md:93` adds a fourth posit `B4` (`⊙ = e`, the identity **posited, not derived** — it had been harvested from notation). Neither base is seated over the other. | — | `00_THE_FOUNDATION.md:88-98` |
-| ~~`G-0b`~~ | **CLOSED — ruled 2026-07-29, exit Z.** `00_THE_FOUNDATION.md:85`: `F1` is a property of `P1`, not a stratum beside it. | — | `00_THE_FOUNDATION.md:85` |
-| — | Disposition of the **91 ambiguous receipt numbers**: each needs a `superseded_by:` pointer or a distinct number. | trustworthy numeric citation anywhere in the corpus | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md` |
+| ~~`G-0`~~ | **CLOSED — superseding type repair landed 2026-08-01.** The 2026-07-29 exit had harvested a Titan rendering as an algebra identity and was therefore ill-typed under `KSC-04`. The repaired Foundation uses only `B1–B3` inside a separate `AlgebraWitness`; it defines no Titan coercion and preserves the rejected syntax only through dated custody. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
+| ~~`G-0b`~~ | **CLOSED — retained through the 2026-08-01 typed repair.** `F1` remains a property of presupposed `P1`, not a stratum beside it; the correction does not restore the ill-typed fourth posit. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
+| — | Disposition of the **91 citation-dangerous ambiguous receipt numbers**, within **97 reused prefixes** indexed across the full namespace: every reused prefix needs complete custody, and active citations must use a full filename or another unambiguous locator. Historical files are not renamed merely to make either counter fall. | trustworthy numeric citation anywhere in the corpus | `09_TOOLS/01_SCRIPTS/check_receipt_citations.py`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json`; `11_UPLINK/50_AUDITS_AND_EXECUTIONS/191_LINE_4_REFUTED_AND_THE_CITATION_DEFECT_2026_07_30.md` |
 | **PARTLY RULED** | Disposition of the site pages declared neither current nor frozen. **Ruled by Q4, signed and executed 2026-07-31** (receipts 193, 232): four routes are DECLARED-PROVISIONAL, `/offline/` is infrastructure, `/historical-boundary/` is unchanged, and seven that had no robots header at all were frozen. **28 remain undeclared** — the count moves as routes are added, so recount rather than trusting this number. |
-| `FOUNDATION-KSC-04` | **CONFLICTED HOLD.** `00_THE_FOUNDATION.md` prints arithmetic over opaque TitanFrame values despite `ArithmeticSignature(TitanFrame)=∅`. Rewrite with a separate typed algebra witness and no Titan coercion; until then the projection's Titan equations are not citable. | whole-foundation synthesis; K-1/K-5 owners remain usable | `00_META/00_SETTLED_CANON_REGISTRY.md` (`KSC-04`); `05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md` |
+| ~~`FOUNDATION-KSC-04`~~ | **CLOSED — typed repair landed 2026-08-01.** Foundation, K-5, and the active downstream chain now keep `TitanFrame` disjoint from the separate algebra, numeric, and projective carriers. A repository-wide negative gate rejects arithmetic or cross-type identification over Titan terms. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
+| ~~`KSC-02-ACTIVE-PROJECTION-DRIFT`~~ | **CLOSED — active-scope sweep landed 2026-08-01.** The selected node aggregator is `P_node := min(Φ̂₄,V₄)`; the old product survives only as labelled history or a separately conditioned cardinal candidate, never as the selected ranking. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md` |
+| ~~`BODY-SURVEY-04-06`~~ | **CLOSED — body-level survey landed 2026-08-01.** `04_AXIOLOGY/` and `06_ONTOLOGY/` were read claim-by-claim in the complete actionable-finding adjudication; local checks and independent review then replayed the repaired scope. | — | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md` |
 
 ---
 
@@ -90,22 +92,21 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 | `GP-03` specifically | **struck void as written** — its entry condition required independent numeric factor measures, which the ordinal ruling abolished. No replacement specified. | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/184_THE_PRODUCT_CONJECTURE_RULED_2026_07_30.md` |
 | **Three preregistrations** — fresh-reader comprehension, independent review, controlled comparison | protocols written and public; **no session, no engaged reviewer, no registered comparison** | `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/` |
 | **The review packet** — the cheapest of the three gates, needing no ethics determination and no participants | **assembled, frozen and hash-verified 2026-07-30; NOT SENT.** Ten files, `sha256` recorded, invitation drafted. What remains is identifying one qualified outsider and asking them — an owner act, and the protocol rules out the substitute in one line: *"AI or project-agent review … does not satisfy this external gate."* | `.../REVIEW_BUNDLE_v1.md` |
-| **Returned outcomes from outside** | **310 numbered receipts · 7 mention an outcome coming back · 0 record one that did** | `12_PUBLIC_SITE/record/` |
+| **Returned outcomes from outside** | **311 numbered receipts · 7 mention an outcome coming back · 0 record one that did** | `12_PUBLIC_SITE/record/` |
 
 That last row is the honest summary of this whole folder. Everything above it is
 internal work. **A framework can be internally immaculate and still be about nothing.**
 
 ---
 
-## 4 · Never surveyed at body level
+## 4 · Body-level survey — landed, not generalized
 
-Audited by tag count only, never read claim-by-claim:
-
-- `04_AXIOLOGY/` — 10 `[A]` sites
-- `06_ONTOLOGY/` — 31 `[A]` sites
-
-An untagged wrong claim in either is currently invisible to every checker the corpus
-owns. **This is a known blind spot, recorded rather than closed.**
+The complete actionable-finding adjudication read `04_AXIOLOGY/` and
+`06_ONTOLOGY/` at body level and closed the former tag-count-only blind spot in
+Receipt 234. This is a dated survey result, not a permanent guarantee: future
+edits can introduce new defects, and the ordinary gates still see only the
+contracts they encode. The landed closure remains listed above so it cannot
+disappear merely because the old warning stopped being current.
 
 ---
 
@@ -116,7 +117,9 @@ the read-only kills their own rulings named, and four of those kills fired.**
 
 **What the first council corrected.** My docket asked it to rule `G-0` — *already ruled
 2026-07-29*. It also asked "generative base vs the sphere at `00_THE_FOUNDATION.md` §2";
-§2 no longer posits the sphere, it posits `B1`–`B4` and reaches `Ĉ` at emergent step 6.
+§2 no longer posits the sphere. The superseding typed repair now places `B1`–`B3`
+inside a separate `AlgebraWitness`; numeric and projective constructions are
+separate selected layers and never coerce the Titan vocabulary.
 
 **What the second council corrected, in me specifically.**
 

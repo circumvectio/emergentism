@@ -34,6 +34,7 @@ RECEIPT_DIRS = (
     ROOT / "11_UPLINK" / "50_AUDITS_AND_EXECUTIONS",
     ROOT / "11_UPLINK" / "60_SESSION_PACKETS",
 )
+CLOSURE_RECEIPT_DIR = ROOT / "11_UPLINK" / "50_AUDITS_AND_EXECUTIONS"
 
 # Items that are open as of 2026-07-30. Removing one from the manifest requires a
 # ruling to point at; this list is what makes "it went quiet" insufficient.
@@ -41,11 +42,14 @@ RECEIPT_DIRS = (
 # the manifest had been listing it as open — the guard was pinning a stale entry, which
 # is the mirror of the failure it exists to prevent. It stays referenced in the manifest
 # as CLOSED, and the checker below verifies that rather than its openness.
-MUST_STAY_LISTED = ["GP-03", "04_AXIOLOGY", "06_ONTOLOGY", "FOUNDATION-KSC-04"]
+MUST_STAY_LISTED = ["GP-03"]
 LANDED_CLOSURES = {
     "§5.1": "193_FIVE_RULINGS_SIGNED_2026_07_31.md",
-    "G-0": "00_THE_FOUNDATION.md:88-98",
-    "G-0b": "00_THE_FOUNDATION.md:85",
+    "G-0": "235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md",
+    "G-0b": "235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md",
+    "FOUNDATION-KSC-04": "235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md",
+    "KSC-02-ACTIVE-PROJECTION-DRIFT": "235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md",
+    "BODY-SURVEY-04-06": "234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md",
 }
 
 FENCES = [
@@ -140,6 +144,10 @@ def main() -> int:
             )
 
     for item, receipt in LANDED_CLOSURES.items():
+        if not (CLOSURE_RECEIPT_DIR / receipt).is_file():
+            errors.append(
+                f"landed closure '{item}' points at missing source '{receipt}'"
+            )
         closure_row = re.search(
             rf"^\|[^\n]*{re.escape(item)}[^\n]*CLOSED[^\n]*$", text, re.M | re.I
         )
@@ -159,9 +167,10 @@ def main() -> int:
             print(f"- {e}")
         return 1
 
+    open_label = "open item" if len(MUST_STAY_LISTED) == 1 else "open items"
     print(
         f"WORK IN PROGRESS: PASS ({n_receipts} receipt files counted; claim-register "
-        f"counts agree; {len(MUST_STAY_LISTED)} open items still listed; "
+        f"counts agree; {len(MUST_STAY_LISTED)} {open_label} still listed; "
         f"{len(LANDED_CLOSURES)} landed closures retained; "
         f"{len(FENCES)} fences intact)"
     )

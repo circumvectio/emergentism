@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 793,
+  "entry_count": 794,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3405,
+      "tracked_file_count": 3414,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -259,7 +259,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 86,
+      "tracked_file_count": 87,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1065,7 +1065,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 155,
+      "tracked_file_count": 162,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1078,7 +1078,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 33,
+      "tracked_file_count": 34,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1091,7 +1091,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 18,
+      "tracked_file_count": 21,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1208,7 +1208,7 @@
       "owns": "90_ARCHIVE — L6 Tools Legacy Archive",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 45,
+      "tracked_file_count": 48,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1222,6 +1222,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 16,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01",
+      "type": "tool",
+      "nearest_front_door": "09_TOOLS/90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md",
+      "front_door_requirement": "present",
+      "owns": "Runtime and data-room strays — K3 custody",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1286,7 +1299,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 416,
+      "tracked_file_count": 417,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1416,7 +1429,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 196,
+      "tracked_file_count": 197,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"

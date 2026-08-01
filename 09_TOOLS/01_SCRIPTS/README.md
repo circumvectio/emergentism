@@ -46,7 +46,15 @@ Current repository validators and narrowly scoped support scripts.
   `bash 09_TOOLS/01_SCRIPTS/gate.sh`.
 - `check_foundation.py`, `check_claim_status.py`, and
   `check_emergentism_purity.py` — broad owner, tier, and boundary checks.
+- `check_coherence_profile.py` validates the tool-owned four-axis declaration
+  in `coherence_profile.json`. Its overall state is explicitly internal;
+  world contact remains a separate typed axis and cannot be supplied by a
+  local gate result.
 - `claim_policy.py` — shared positive-assertion rules.
+- `check_node_product_ranking.py` — KSC-02 regression gate: the active corpus
+  and active Managed Agents projection may not restore the retired product as
+  a selected/ranked/scored/maximized node objective. Explicit history,
+  negative results, and separately cardinal candidates remain readable.
 - `check_no_secrets_staged.py` — deliberately not a tree gate: it inspects the
   staged diff and therefore belongs in the pre-commit hook.
 
@@ -72,20 +80,21 @@ is not suppressed by `EMERGENTISM_SKIP_SLOW=1`; only
 `EMERGENTISM_SKIP_LEAN=1` produces an explicit `SKIP`. If the formal lane or
 `lake` is missing without that acknowledgement, the gate fails.
 
-## External/corporate scripts awaiting K3 custody
+## External/corporate scripts in K3 custody
 
-The following tracked files are not Emergentism evidence or worldview gates.
-They are not called by `gate.sh`, confer no claim authority, and remain in place
-until archive custody is ruled:
+The following former active files were not Emergentism evidence or worldview
+gates. They were not called by `gate.sh` and conferred no claim authority:
 
-- `verify_z_ai.py` — an external model-endpoint connectivity probe that reads
-  local environment configuration.
-- `mver_validator.py` and `test_mver_validator.py` — a corporate data-room hash
-  validator and its synthetic test suite.
+- `verify_z_ai.py` — external model-endpoint connectivity probe; its active
+  duplicate was removed after exact archived-byte verification.
+- `mver_validator.py` and `test_mver_validator.py` — corporate data-room hash
+  validator and synthetic tests; both were moved byte-identically.
 
-The proposed K3 destination is
-`../90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/`. This records a
-disposition proposal, not a completed move.
+The completed 2026-08-01 custody record, source paths, and SHA-256 identities
+are at
+[`../90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md`](../90_ARCHIVE/runtime_and_dataroom_strays_2026_08_01/README.md).
+No utility was executed and no runtime, network, data-room, publication, or
+deployment effect occurred.
 
 ## Status
 
@@ -97,8 +106,16 @@ Active support folder. Scripts can compile, validate, and repair routing, but so
 python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope cards
 python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope public
 python3 09_TOOLS/01_SCRIPTS/check_barred_claims.py --scope all
+python3 09_TOOLS/01_SCRIPTS/check_node_product_ranking.py
 ```
 
 `claim_policy.py` holds the narrow positive-assertion rules shared by the
 corpus and public release checks. Lifecycle controls historical language;
 denials and boundary statements are not treated as forbidden assertions.
+
+`check_node_product_ranking.py` imports the exact active-corpus boundary from
+`check_emergentism_purity.py` and additionally scans the active
+`08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/` deployment projection.
+Archives, compatibility, handoffs, public-site output, audit/session packets,
+and generated registers remain excluded. Its only file exclusion is its own
+negative-control fixture.

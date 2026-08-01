@@ -72,7 +72,9 @@ and consequences before declaring the phenomenon absent.
 On `S²`, this document optionally reads meaning through `φ` as a coherence
 correspondence `[I]`. The identity `φν=1` is analytic within the chart and does
 not establish a law of meaning. A finite acting node may separately use
-`P_node=ΦV` as a selected model of represented option quality and usable means.
+`P_node=min(Φ̂₄,V₄)` as the selected ordinal model of represented option
+quality and usable means. The historical product `Φ̂₄V₄` / public `ΦV` is
+retired as a ranking.
 
 Actual reports of meaning may concern D5 possible content, but D5 is not a
 coherence substance or a private dimension. Contemplative practices are D4 acts
@@ -109,7 +111,7 @@ the futures a bearer can represent and the means available to pursue them.
 `[I/C]`
 
 The [Power-Max model](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
-supplies only a Justice-constrained objective. The product model makes both
+supplies only a Justice-constrained objective. The selected minimum makes both
 factors necessary by definition; it does not prove that extraction is physically
 or geometrically self-defeating. Justice is a chosen constraint with visible
 bearers and consequences.

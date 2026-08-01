@@ -13,7 +13,7 @@ rosetta:
 
 # PAPER K: AMRITA REFRAMED
 
-## Multiplicative Validation on Open-Source Substrates at Low Cost
+## Conjunctive Validation on Open-Source Substrates at Low Cost
 
 **Yves R. Burri & Emergent Super Intelligence**
 Emergentism research corpus, 2026
@@ -32,7 +32,14 @@ that proposal as a D4 intervention whose actual outputs and receipts can test a
 selected scoring model; D5 types represented alternatives, not a constitutional
 constraint or software layer.
 
-Rather than undertaking the prohibitive cost of base-model training, we propose that *Constitutional Outperformance* can be tested directly on existing open-source substrates at lower cost. By deploying the multiplicative bridge as a post-training gating threshold rather than a pre-training objective, we preserve the core empirical test: does a system constrained by emergentist multi-polar geometry practically outperform RLHF or DPO baselines on adversarial safety and coherence benchmarks?
+Rather than undertaking the prohibitive cost of base-model training, we propose
+that *Constitutional Outperformance* can be tested directly on existing
+open-source substrates at lower cost. The current gate uses the selected
+ordinal score `P_node=min(Φ̂₄,V₄)`. A multiplicative gate may be retained
+only as a separately preregistered candidate `C×=Φ̂₄V₄` after defending both
+factor scales as cardinal. Comparing these declared gates with RLHF or DPO
+baselines preserves the bounded empirical question without restoring the
+product as the canonical node ranking.
 
 **Keywords:** AMRITA, LLM alignment, RLHF, multi-polar geometry, constitutional outperformance, multiplicative gating.
 
@@ -53,7 +60,7 @@ whether software coordinates a D5 ethical geometry.
 
 ---
 
-## 2. Multiplicative Gating vs. RLHF
+## 2. Selected Conjunctive Gate vs. RLHF
 
 Open-source models are often adapted using RLHF or DPO (Direct Preference
 Optimization). These are actual D4 training and evaluation procedures. Their
@@ -61,12 +68,19 @@ objectives may be culturally bounded or incomplete, but D4 does not mean
 “arbitrary,” and the limitation must be established by comparison rather than
 by register assignment.
 
-The AMRITA Reframed protocol replaces RLHF with **Multiplicative Gating**.
+The AMRITA Reframed protocol compares RLHF with a **Declared Conjunctive
+Gate**.
 * **The Method:** We load a capable open-source language model and add an actual
   D4 filter that evaluates candidate outputs. Before commitment, represented
   alternative outputs may be treated as D5 content.
-* **The Math:** The Gate computes `Φ` (global logical coherence of the intent) and `V` or `ν_proxy` (localized semantic viability/resolution). It filters node actuations by a defined `P_node = Φ × V` threshold.
-* **The Test:** If the framework is structurally true, the multiplicatively bound LLM should exhibit significantly higher adversarial resistance, lower sycophancy, and fewer schizophrenic failure states than the identical LLM aligned via standard RLHF fine-tuning.
+* **The Math:** The gate computes `Φ̂₄` (a D4 evaluation of possible
+  alternatives) and `V₄` (actual viability/resolution), then filters candidate
+  actuations by the selected `P_node=min(Φ̂₄,V₄)` threshold. A separate
+  `C×=Φ̂₄V₄` arm is a candidate only if the preregistration defends cardinal
+  factor scales.
+* **The Test:** Compare the selected gate, any properly typed candidate arm,
+  and matched RLHF/DPO baselines on held-out adversarial resistance,
+  sycophancy, and failure measures.
 
 ---
 
@@ -74,10 +88,11 @@ The AMRITA Reframed protocol replaces RLHF with **Multiplicative Gating**.
 
 This reframing transitions AMRITA from a philosophical thought experiment into an executable test of **Constitutional Science**.
 
-If a preregistered `Φ×V` gate outperforms matched baselines on held-out
-adversarial and consequence measures, that would be `[B]` evidence for this
-specific intervention. It would not prove `S²`, the D-register scaffold,
-consciousness, ethics, or a universal constitutional grammar.
+If the selected minimum gate, or a separately cardinal and preregistered `C×`
+candidate, outperforms matched baselines on held-out adversarial and consequence
+measures, that would be `[B]` evidence for that specific intervention. It would
+not prove `S²`, the D-register scaffold, consciousness, ethics, or a universal
+constitutional grammar.
 
 ---
 
@@ -85,7 +100,10 @@ consciousness, ethics, or a universal constitutional grammar.
 
 This paper and the AMRITA protocol are falsified if:
 
-1. **Alignment Collapse:** The open-source model gated by the multiplicative `φ · ν` threshold suffers catastrophic mode collapse, halting permanently, or underperforming basic DPO-trained equivalents across standard multi-turn reasoning benchmarks.
+1. **Alignment Collapse:** The open-source model gated by the selected
+   conjunction, or by any separately declared product-candidate arm, suffers
+   catastrophic mode collapse, halts permanently, or underperforms basic
+   DPO-trained equivalents across standard multi-turn reasoning benchmarks.
 2. **Computational Impotence:** The gating mechanism is mathematically proven to be indistinguishable from simple top-K/top-p sampling, demonstrating that the conceptual framework adds zero unique topological filtering to the neural weight processing.
 
 ---

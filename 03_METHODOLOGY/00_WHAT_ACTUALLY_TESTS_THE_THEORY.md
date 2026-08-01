@@ -70,7 +70,7 @@ biology upgrades only by a frozen domain run.
 | Instrument | Why It's Not Decisive | What It Tests Instead |
 |-----------|----------------------|----------------------|
 | **GFS (historical survey)** | Retired after mixed results and validity failures; it is not a live instrument. | What one failed/mixed operationalization taught about proxy risk |
-| **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether coupled, long-horizon, multiplicative agents under enforced `η = 0` select syntropic-frontier outcomes more strongly than additive baselines (internally supportive, but [S] not independent [A]) |
+| **Protocol D (AI simulation)** | Framework-designed simulation testing framework metrics. Circular. | Whether the historical product-scored candidate under enforced `η = 0` selected syntropic-frontier outcomes more strongly than additive baselines (internally informative about that candidate, but not evidence for the current ordinal ranking and not independent [A]) |
 | **Agent V x Phi** | Same circularity problem. | Whether framework-defined agent performance correlates with framework-defined balance |
 
 These tests are informative. They are not decisive. They test operationalizations, not the geometry.
@@ -99,10 +99,19 @@ These tests are informative. They are not decisive. They test operationalization
 
 ### Tier B: Tests of the Mathematical Structure
 
-**4. Power-Max Lemma — Independent Replication**
-- **What it tests:** Whether coupled multiplicative agents under long horizon and enforced `η = 0` select syntropic-frontier outcomes (`ΔP_node,i >= 0` and `ΔP_node,H >= 0`) more strongly than additive baselines in agent simulations NOT designed by the framework authors.
-- **Why it matters:** Protocol D is internally supportive within framework-designed simulations, but the current Power-Max claim is conditional: it requires coupling, product scoring, long horizon, and an enforced non-extraction floor. Independent replication by a separate team with a pre-registered protocol would upgrade from [S] to [A].
-- **Status:** Submission-ready paper. Needs independent team.
+**4. Finite-Node Aggregator — Independent Replication**
+- **What it tests:** Whether coupled agents scored by the selected
+  `P_node=min(Φ̂₄,V₄)` ordering under long horizon and enforced `η = 0`
+  select syntropic-frontier outcomes (`P_node,i(after) ⪰ P_node,i(before)` and
+  `P_node,H(after) ⪰ P_node,H(before)`) more strongly than fair rivals in simulations not
+  designed by the framework authors. A product arm may be included only after
+  separately defending cardinal scales and naming it `C×`, not `P_node`.
+- **Why it matters:** Historical Protocol D runs are internally informative
+  about their product-scored candidate, but they do not validate the current
+  ordinal ranking. Independent replication by a separate team with a
+  preregistered comparison would upgrade one bounded model claim from [S]
+  toward [A].
+- **Status:** Protocol revision needed before independent execution.
 
 **5. AMRITA — Spherical Alignment vs. RLHF**
 - **What it tests:** Whether aligning AI systems using S² geometry outperforms standard alignment techniques.

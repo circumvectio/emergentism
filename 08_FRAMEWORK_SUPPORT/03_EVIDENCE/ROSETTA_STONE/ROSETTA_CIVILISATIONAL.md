@@ -82,7 +82,7 @@ Every civilisational stage in the table above can be read as a **position on the
 | L1 | Entropic collapse | Nothing — L1 is F5-absence, an-ṛta, the anti-gradient | Post-collapse vacuums, failed states |
 | L2 | Local F5-alignment | Small-group coherence, direct reciprocity, Dunbar-scale syntropy | Tribal commons, early democracies, indigenous stewardship |
 | L3 | South-pole acceleration | `V₄` scaling without adequate evaluated possible power — extraction masquerading as growth | Industrial capitalism, colonial empires, algorithmic engagement |
-| **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, widest-boundary ΣΔP_node** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
+| **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, bearer-complete gains under a declared comparison; no sum of ordinal scores** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
 | L5 | Possible-power-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | L6 | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
 | L7 | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
@@ -106,9 +106,10 @@ intended question is whether possible power can be preserved as coordination
 scales; it must not be redescribed as maintaining lowercase `φ`.
 
 The proposed L3 pattern is low `Φ̂₄` despite high `V₄`: actual productive power
-may increase while evaluated possible power declines. Inside the selected model,
-`P_node=Φ̂₄V₄`, either change can dominate the product. This is not a deduction
-from the lowercase reciprocal chart.
+may increase while evaluated possible power declines. Inside the selected
+ordinal model, `P_node=min(Φ̂₄,V₄)` is limited by the lower factor. The
+historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking. This is
+not a deduction from the lowercase reciprocal chart.
 
 This is why the framework identifies L3 capture as the central civilisational crisis: a society stuck at L3 is wealthy but incoherent, technologically powerful but spiritually bankrupt, productive but meaningless.
 

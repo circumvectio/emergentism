@@ -589,12 +589,12 @@
       "id": "TR-01",
       "status": "FORMALLY-VALID",
       "tier": "A",
-      "claim": "The three Titan equations are exact on the Riemann sphere: inversion swaps the poles and preserves the equator, and the coupled polar product equals the equatorial value at every latitude.",
-      "was": "Retired by KSC-04 as an arithmetic-looking glyph reading, with an associativity falsifier in the Trinity canon.",
-      "why_the_falsifier_misses": "The falsifier refutes a ring or field extension. The Riemann sphere is not a ring; global multiplication is not one of its operations, so premise (ii) a-times-infinity is unavailable.",
-      "ksc_04_status": "preserved — ArithmeticSignature(TitanFrame) is still empty; the sphere explains why rather than overriding it",
+      "claim": "In their declared structures, projective inversion exchanges the two projective endpoints, the selected positive numeric midpoint is self-reciprocal, and the open reciprocal chart satisfies phi times nu equals one. These are numeric/projective facts, not Titan equations or identities.",
+      "was": "Earlier labelled as three restored Titan equations after KSC-04 had retired the arithmetic-looking glyph reading.",
+      "why_the_falsifier_misses": "The repaired claim forms no ring extension or Titan operation. The associativity counterexample still kills any attempted pole product; the surviving facts use only the separately typed projective reciprocal map and numeric chart.",
+      "ksc_04_status": "enforced — ArithmeticSignature(TitanFrame) is empty and no map or coercion transfers these mathematical facts to TitanFrame",
       "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
-      "inherits": "the keel fence: analytic and empty of world; DF-21 applies verbatim"
+      "inherits": "the type firewall and keel fence: analytic, world-empty, and without Titan proof transfer; DF-21 applies verbatim"
     }
   ]
 }

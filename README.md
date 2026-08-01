@@ -8,7 +8,7 @@ remain externally uncalibrated until independent contact decides them.
 
 ## Read in one sitting
 
-0. [The Foundation](00_THE_FOUNDATION.md) — a **conflicted, held projection**: its `R0`/strata synthesis remains readable, but its Titan arithmetic must not be cited; K-1, K-5, `KSC-04`, the Formula Block, and Primitive/Type Signatures control.
+0. [The Foundation](00_THE_FOUNDATION.md) — an **active subordinate typed projection**: `R0` and `B1–B3` are assembled without coercing the opaque Titan vocabulary; K-1, K-5, `KSC-04`, the Formula Block, and Primitive/Type Signatures remain the controlling owners.
 1. [The One-Sitting Weltanschauung](00_THE_WELTANSCHAUUNG_ONE_SITTING.md) — the continuous lived worldview.
 2. [The Lived Compass](01_TELEOLOGY/04_THE_LIVED_COMPASS.md) — ordinary, tragic, sacrificial and conflict practice, including the Finity Card.
 3. [The Technical Door](00_THE_WELTANSCHAUUNG.md) — priced creed and claim boundaries.

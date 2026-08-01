@@ -105,7 +105,7 @@ Evidence types are nonordinal and do not transfer through Rosetta projection.
 | ID | Crack | Repair | Tier boundary | Kill/negative test |
 |---|---|---|---|---|
 | `KIN-01` | `φν=1` inflated into conservation, ontology, or ethic | scope to `θ∈(0,π)` open chart; poles are limits | identity `[A]`; readings `[I/C]` | no world inference may cite identity alone |
-| `KIN-02` | `P_node=ΦV` called uniquely derived | normalized monotone conjunctive family with `C(0,V)=C(Φ,0)=0`, `C(1,1)=1`; product selected | choice `[I]`; fit `[C]` | ranking reversal across product/minimum/harmonic/Cobb–Douglas |
+| `KIN-02` | `P_node=ΦV` called uniquely derived or current | normalized monotone conjunctive family with `C(0,V)=C(Φ,0)=0`, `C(1,1)=1`; `P_node=min(Φ̂₄,V₄)` selected over ordinal factors; product retired as a ranking and retained only as a separately cardinal candidate | choice `[I]`; fit `[C]` | ranking reversal across product/minimum/harmonic/Cobb–Douglas |
 | `KIN-03` | D4/D5 inverted or carrier/content conflated | D4 actual model/rank/selection tokens may represent D5 merely-possible content | scaffold `[I]` | inversion scan plus actual-carrier/possible-content type test |
 | `KIN-04` | missing reduction treated as strong emergence or hypothesis prose treated as evidence | reduction status enum; each crossing has `saturationEvidence=[]` and `evidenceStatus=not_yet_supplied` until cited evidence exists | crossing `[C]` | successful reduction reclassifies; evidence/status invariant mutation |
 | `KIN-05` | literal `D6≡D0` and extra crossing | one non-`μ` `r₆:D6↝D0`; no positive freedom | closure `[I]` | reject any seventh crossing or identity proof |

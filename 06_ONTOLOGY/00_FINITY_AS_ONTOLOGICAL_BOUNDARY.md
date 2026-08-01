@@ -62,12 +62,12 @@ Keep three registers distinct:
 | Register | What may be said | Tier |
 |---|---|---|
 | Mathematical background | The Riemann sphere compactifies the complex plane by adding a point at infinity; `0`, finite values, and `∞` can be handled on one extended surface. | [A] when stated conventionally |
-| Framework structure | `Zero-Sum Resolution Equation` and `φ · ν = 1 on S²` read finity as reciprocal closure inside the model. | [S] inside the formalism |
+| Framework structure | The numeric reciprocal chart satisfies `φ · ν = 1`; the separately typed Titan frame uses the operator-free emblem `• ⊙ ○`. | [A] for the chart; [S/I] for the selected emblem |
 | Ontological reading | Presence is not brute fact but disclosed relation; the finite witness is where Being becomes sayable. | [I/S] |
 
-Do not present the framework's `0 × ∞ = 1` compression as ordinary field
-arithmetic. It is the model's symbolic / coordinate grammar for closure, not a
-license to flatten mathematical registers.
+The former mixed-type pole-product compression is retired, not merely moved to
+a symbolic register. Numeric, projective, and Titan terms remain separate, and
+no closure grammar licenses a cross-type equality or operation.
 
 ## Create: Finite Presence Is Relation
 
@@ -92,8 +92,9 @@ This is why the L6 core state names Dasein as the finite witness-agent:
 Ground -> Being -> Teleological Force -> Dasein -> beings
 ```
 
-Dasein is not Being itself. Dasein is the finite `⊙` in whom Being is
-encountered, questioned, and enacted.
+Dasein is not Being itself. The unit-role glyph may be used as an interpretive
+motif for a finite witness, but no person is a Titan term. Dasein is the finite
+site in whom Being is encountered, questioned, and enacted.
 
 ## Stabilize: The Dimensions of Finity
 

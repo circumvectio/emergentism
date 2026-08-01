@@ -236,7 +236,9 @@ Keep separate from the worldview kernel:
 
 - S² as the literal territory of reality — `[I]` wager;
 - Ground → Being → Teleological Force → Dasein → beings — theological/ontological interpretation, not theorem;
-- `P_node=Φ×V` — representative finite-node model, with AND-class boundary only;
+- `P_node=min(Φ̂₄,V₄)` — selected finite-node AND-class score over ordinal
+  factors; the historical product `Φ̂₄V₄` / public `ΦV` is retired as a
+  ranking;
 - equator = objective good — ethical/teleological reading, not mathematical consequence;
 - Rosetta/caste/god/Titan naming — interpretive and operational translation grammar;
 - councils, signers, foundations, products, organs, fees, ledgers, and launches — governance/application surfaces, not philosophical axioms;

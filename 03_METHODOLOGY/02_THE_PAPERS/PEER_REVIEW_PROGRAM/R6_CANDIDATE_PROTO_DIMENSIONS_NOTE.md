@@ -9,6 +9,13 @@ rosetta:
 
 **Status:** Candidate note, 2026-06-10. Scopes a possible sixth peer-review shard and records what is bankable now vs. what stays internal/HOLD. Derived from the founder's "math based on dimensions" notes. **Not for external submission as written** — it mixes tiers deliberately so the load-bearing joints are visible. Citations verified 2026-06-10 ([CITATIONS_VERIFIED.md](CITATIONS_VERIFIED.md)).
 
+> **KSC-02 supersession fence, 2026-08-01.** Every product formula below is a
+> dated experimental candidate, not the current node ranking. The selected
+> ordinal score is `P_node := min(Φ̂₄,V₄)`. Any conserved-product empowerment
+> frontier would require separately defended cardinal scales, normalization,
+> and empirical discrimination; nothing in this note restores `Φ̂₄V₄` or `ΦV`
+> as the working score.
+
 ---
 
 ## 1. The one new move (bankable, partly already in R1)

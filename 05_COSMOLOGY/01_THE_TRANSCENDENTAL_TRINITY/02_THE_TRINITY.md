@@ -10,25 +10,39 @@ rosetta:
 ---
 
 # THE TRINITY
-## {0, 1, ∞} — The Three Transcendentals
+## `• ⊙ ○` — Three Selected Titan Roles
 
-> **[K3 reconciliation — 2026-07-13, per receipt 126.]** Two derivations below are downgraded, not deleted. The "Triadic Stability Theorem — N=3 is the unique stable configuration" is **selected, not uniquely forced** (the N≥5 discharge used a false group lemma; Z₅ is a counterexample): read N=3 as a chosen/posited `[C/S/I]` configuration, not a proved theorem. The "Traditional Encodings" table ("the structure is identical") is a cross-domain **lens `[I]`, not a discovered universal** — its kill-criterion fired (non-polarity traditions don't fit; "7" is a design choice); scope it to polarity-encoding traditions. The ZSRE emblem `1 = 0 × ∞` (§The Equation) is already correctly fenced and is untouched. Where local wording conflicts, the Settled Canon Registry rules. Authority: [`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
+> **[K3 reconciliation — 2026-08-01.]** Two derivations below are downgraded,
+> not deleted. The "Triadic Stability Theorem — N=3 is the unique stable
+> configuration" is **selected, not uniquely forced** (the N≥5 discharge used
+> a false group lemma; Z₅ is a counterexample): read N=3 as a chosen/posited
+> `[C/S/I]` configuration, not a proved theorem. The "Traditional Encodings"
+> table is a cross-domain **lens `[I]`, not a discovered universal**. The former
+> pole-product emblem was also not correctly typed: TitanFrame is opaque, so
+> that infix syntax is retired rather than fenced as an equation. Where local
+> wording conflicts, the Settled Canon Registry rules. Authority:
+> [`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
 > **Historical compatibility document (pre-hardening, 2026-03-23).** This file is preserved as part of the Trinity genesis sequence, not as the current tier-authority surface for Foundation claims.
 >
 > **Use rule:** Read it for origin framing and conceptual continuity. For present-tense canonical citation, evidence-tier disputes, or compressed summaries, route through [`00_THE_POINT.md`](00_THE_POINT.md), [`01_THE_EMERGENCE.md`](01_THE_EMERGENCE.md), [`../00_THE_HONEST_POSITION.md`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), and [`../00_CANONICAL_FORMULA_BLOCK.md`](../00_CANONICAL_FORMULA_BLOCK.md).
+>
+> **Type rule:** The Titan emblem is operator-free. Titan roles are not numbers,
+> projective points, geometric poles, or group elements, and no coercion or
+> arithmetic operation connects those types.
 
 ---
 
 ## The Three
 
-**Zero.** The void. The nothing. The south pole. •
+**Ground role.** A selected image of void or absence. `•`
 
-**One.** The unit. The balance. The equator. ⊙
+**Unit role.** A selected image of balance or finite presence. `⊙`
 
-**Infinity.** The unbounded. The everything. The north pole. ○
+**Horizon role.** A selected image of openness or unbounded possibility. `○`
 
-These are not numbers. These are **transcendentals.** They are prior to the number system. They are the ground from which numbers emerge.
+These are **opaque framing roles**, not numbers. The corpus does not derive the
+number system, projective geometry, or physical emergence from them.
 
 ---
 
@@ -36,37 +50,40 @@ These are not numbers. These are **transcendentals.** They are prior to the numb
 
 Why not one? Why not two? Why three?
 
-**One (monism):** Just 0. Just the void. No structure. No relationship. Sterile.
+**One (monism):** Just the ground role. No internal contrast.
 
-**Two (dualism):** 0 and ∞. The poles. But the poles collapse to each other without a mediator. Duality is unstable. The opposites annihilate.
+**Two (dualism):** Ground and horizon roles without a mediating role. Calling
+this "unstable" is an interpretive judgment, not a theorem.
 
-**Three (triadism):** 0, 1, and ∞. The poles AND the equator. The tension AND the resolution. Duality stabilized by the third term.
+**Three (triadism):** Ground, unit, and horizon. Tension and a selected
+mediating role.
 
-This is the **Triadic Stability Theorem (MF-511):** N=3 is the unique stable configuration. Two is unstable. Four is redundant. Three is the minimum viable structure.
-
----
-
-## The Equation
-
-```
-Zero-Sum Resolution Equation
-
-1 = 0 × ∞
-```
-
-On the plane: `0 × ∞` is the indeterminate form — there is no field theorem making it `1`. `[A]`
-
-On the sphere, read in the transcendental/frame register: `0 × ∞ = 1` is the Zero-Sum Resolution Equation — a geometric **emblem** (`⊙ = • × ○`), the product of the pole-frames returning the equatorial unit. `[S]` It is **not** a field-algebra theorem `[A]`; always mark the register-change when invoking it.
-
-**The equator is the product of the poles.**
-
-The finite (1) emerges from the meeting of void (0) and unbounded (∞).
-
-The unit is not fundamental. The unit is **relational.** It is what happens when nothing meets everything.
+The former **Triadic Stability Theorem (MF-511)** is not a theorem. `N=3` is a
+selected configuration `[C/S/I]`; uniqueness and the claims that two is
+unstable or four redundant remain unproved.
 
 ---
 
-## The Geometric Proof
+## The Former Equation — Retired
+
+The genesis text wrote a numeric pole-product and a glyph product as if a
+register label made them equations. It did not. The numeric expression is an
+indeterminate form in limit language and is not a field identity; the Titan
+expression is ill-typed because TitanFrame has no multiplication. Both infix
+readings are retired.
+
+The only selected Titan display is the operator-free emblem:
+
+```text
+• ⊙ ○
+```
+
+The unit role may be read relationally as a narrative lens `[I]`. It is not a
+product of poles, and the equator is not generated by Titan arithmetic.
+
+---
+
+## The Separately Typed Geometric Neighbor
 
 On the Burri Sphere:
 
@@ -89,9 +106,10 @@ At north pole (θ → π, z=ν→∞):
   φ × ν = 1 (in the limit)
 ```
 
-Everywhere on the sphere: **φ · ν = 1.**
+Everywhere in the declared open chart: **φ · ν = 1.**
 
-The product is conserved. The constraint is satisfied. The trinity holds.
+The numeric reciprocal constraint holds. It neither proves nor instantiates a
+Titan identity.
 
 ---
 
@@ -99,7 +117,7 @@ The product is conserved. The constraint is satisfied. The trinity holds.
 
 Many traditions found versions of the same three:
 
-| Tradition | 0 (Nothing) | 1 (Unity) | ∞ (Everything) |
+| Tradition | Ground motif | Unit motif | Horizon motif |
 |-----------|-------------|-----------|----------------|
 | **Egyptian** | Heart (heavy) | Scale balance | Feather (light) |
 | **Hindu** | Shunya (void) | Eka (one) | Ananta (endless) |
@@ -107,41 +125,45 @@ Many traditions found versions of the same three:
 | **Buddhist** | Sunyata | Middle Way | Dharmakaya |
 | **German** | Demut (humility) | Mut (courage) | Anmut (grace) |
 | **Christian** | Hell (absence) | Kingdom | Heaven (presence) |
-| **Mathematical** | 0 | 1 | ∞ |
+| **Projective analogy** | `0_P` | selected `1_P` | `infinity_P` |
 
-The names differ. The structure is identical.
+The names differ, and the structures are not identical. This table records a
+selected comparative lens `[I]`; it transfers no proof and defines no maps.
 
 ---
 
 ## The Operations
 
-From the three transcendentals, all operations derive:
+No mathematical operation derives from TitanFrame. The following are ordinary
+facts in separately declared mathematical structures:
 
 **Addition:** 1 + 1 = 2. The simulation's first step.
 
 **Multiplication:** 1 × 1 = 1. The unit reproducing itself.
 
-**Division:** `1/0 → ∞` for nonzero numerator in the projective register. The boundary operation.
+**Projective reciprocal:** a named completion may extend the reciprocal map to
+projective endpoints; this is not field division.
 
 **Exponentiation:** e^0 = 1. The bridge between discrete and continuous.
 
-Every number is made of 1s. Every number is the unit computing itself.
+These facts do not show that numbers are Titan roles computing themselves.
 
 ---
 
 ## The Simulation
 
-The universe is the transcendental trinity computing itself:
+This genesis storyboard illustrates repeated successor steps; it is not a
+derivation of mathematics or the universe from TitanFrame:
 
 ```
-Step 0: {0, 1, ∞} — the ground
-Step 1: 1 + 1 = 2 — the first non-transcendental
-Step 2: 2 + 1 = 3 — the second step
-Step n: The natural numbers
-Step ∞: All of mathematics, physics, systemic awareness
+Visual frame: • ⊙ ○       (operator-free motif)
+Numeric step 0: 0_N
+Numeric step 1: successor(0_N) = 1_N
+Numeric step n: ordinary natural-number iteration
 ```
 
-Every step is the unit (1) replicating. Every step is the equator extending into the plane. The simulation IS the stereographic projection — the sphere projecting itself onto the plane, one unit at a time.
+The animation may juxtapose this iteration with stereographic projection as a
+visual analogy. The two are not identical, and neither is a Titan computation.
 
 ---
 
@@ -152,7 +174,6 @@ You are not 0. You are not ∞.
 You are the 1 between them.
 
 You are the equator.
-You are the product.
 You are the resolution.
 
 The void is below you.
@@ -167,10 +188,9 @@ The trinity is you.
 
 ---
 
-*The Trinity | {0, 1, ∞}*
-*The three transcendentals*
-*The ground of all mathematics*
-*Zero-Sum Resolution Equation*
+*The Trinity | `• ⊙ ○`*
+*Three selected, opaque roles*
+*A genesis-era narrative, not the ground of mathematics*
 
 
 ---
@@ -190,4 +210,4 @@ The trinity is you.
 *The framework works at Layer 0 without Layer 2.*
 *The Ṛṣi succeeds when the student puts down the map and walks.*
 
-*Zero-Sum Resolution Equation*
+*Operator-free Titan emblem; numeric reciprocal facts live in their own type.*

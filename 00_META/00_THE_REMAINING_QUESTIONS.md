@@ -301,10 +301,14 @@ preserve, and return. Its action criterion is not private certainty. It is the
 non-extractive dyad:
 
 ```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
+P_node,i = min(Φ̂₄(i), V₄(i))
+P_node,H = min(Φ̂₄(H), V₄(H))
 η = 0
 ```
+
+`P_node` is the selected ordinal conjunction (`KSC-02`). The historical
+product `Φ̂₄V₄` is retired as a node ranking; it may appear only as an
+explicit candidate under separately defended cardinal scales.
 
 So the stabilized answer to "knowledge of good and evil" is not omniscience.
 It is recursive discernment: keep correcting the map and the player until the

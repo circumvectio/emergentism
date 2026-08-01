@@ -83,8 +83,9 @@ world evidence.
 
 - `φν = 1` is the reciprocal-chart identity, not an empirical conservation law.
 - `B = 2/(φ+ν) = sinθ ≤ 1` is the selected chart balance score, not the seam.
-- `P_node := C×(Φ,V) = ΦV` is the declared normalized product instance inside a
-  broader conjunctive family, not the uniquely forced aggregator.
+- `P_node := min(Φ̂₄,V₄)` is the selected working score over ordinal factors
+  inside a broader conjunctive family, not the uniquely forced aggregator. The
+  historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking.
 - `F = M × A` is public compression; the typed relation is `M ⋆ A`, with the
   environment returning outcomes separately from commitment.
 - D4 is causal actuality, including actual modeling, ranking, and selection;

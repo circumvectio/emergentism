@@ -60,10 +60,10 @@ ethic. The formula is not defined for a photon by dividing through `m=0`.
 A finite action may be modeled with a normalized monotone conjunctive family
 `C(Φ̂₄,V₄)` satisfying `C(0,V₄)=C(Φ̂₄,0)=0`. Here `V₄` is D4 actual
 power, `Φ₅` is D5 possible power, and `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
-estimate. Emergentism declares `C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, as one
-normalized instance. Minimum, harmonic, CES,
-Cobb–Douglas, and other members can rank interior cases differently; data must
-decide where the product fits.
+estimate. Emergentism selects `P_node=min(Φ̂₄,V₄)` over ordinal factors.
+The historical product `C×(Φ̂₄,V₄)=Φ̂₄V₄`, publicly `ΦV`, is retired
+as a ranking. Product, harmonic, CES, Cobb–Douglas, and other interior candidates
+may be compared only under separately defended cardinal scales.
 
 ## 5 · Modality `[S]`
 
@@ -91,8 +91,8 @@ Torus, helix, quantum, theological, and civilizational projections are optional.
 Removing them leaves this contract intact. The pre-repair synthesis is
 recoverable at Git blob `c118ef6957ea827a15ad01cfe16df5bc20540e10`.
 
-**Kill criteria:** a chart identity is cited as world evidence; product is called
-unique without comparison; D4/D5 is inverted; a correspondence transfers proof;
+**Kill criteria:** a chart identity is cited as world evidence; the retired
+product is used as a ranking; D4/D5 is inverted; a correspondence transfers proof;
 or the lens fails to compress and predict better than a rival.
 
 Read with [the Formula Block](00_CANONICAL_FORMULA_BLOCK.md),

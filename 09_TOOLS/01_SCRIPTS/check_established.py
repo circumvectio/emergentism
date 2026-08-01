@@ -25,7 +25,7 @@ BASE_CHECK = ROOT / "09_TOOLS" / "01_SCRIPTS" / "check_generative_base.py"
 # Entries the manifest must keep listing as NOT established. Shortening this list
 # without a verification landing is the manifest's own kill.
 MUST_STAY_UNESTABLISHED = [
-    "the μ-contract", "η = 0", "P = Φ × V", "Justice", "Power-Max",
+    "the μ-contract", "η = 0", "P_node := min(Φ̂₄,V₄)", "Justice", "Power-Max",
     "the Soul Loop", "the Crown Wager", "sphere primacy",
 ]
 

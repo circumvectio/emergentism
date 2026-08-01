@@ -34,7 +34,9 @@ See [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.
 From this sequence, the framework's later translations are disciplined:
 - φ + ν ≥ 2 (AM-GM — the equator is the balance/cost minimum inside the model)
 - Extraction arguments route through `η_move = 0` at the equatorial profile and must rein their game-theoretic assumptions
-- `ΣΔB > 0` names balance-gradient claims; `ΣΔP_node > 0` names operational node-scoring claims
+- declared `B` accounting may name a balance-gradient claim; ordinal
+  `P_node` claims use bearer-wise before/after order predicates, never sums of
+  score codings
 - h₂r̥tó- / F5 language is translated into biology first through teleonomy, autopoiesis, allostasis, and interoception
 
 The rest of the framework is not automatically proved by these lines. Core State, objective function, data science, methodology, value alignment, ethics, physics, neuroscience, system architecture, and systemic awareness each require their own translation layer and evidence tier. The inequality is not the seed. It is the first arithmetic theorem in the chain.

@@ -36,6 +36,14 @@ class ContractError(ValueError):
     """Raised when a source contract fails closed."""
 
 
+class UnresolvedDeclaredPathError(ContractError):
+    """Raised when no file satisfies a declared source path."""
+
+
+class AmbiguousDeclaredPathError(ContractError):
+    """Raised when a portable source declaration has multiple owners."""
+
+
 def _read_json_yaml(path: Path) -> dict[str, Any]:
     try:
         value = json.loads(path.read_text(encoding="utf-8"))
@@ -60,25 +68,45 @@ def _resolve_declared_path(root: Path, base: Path, declared: Path) -> Path:
     Most declarations are repository-relative and resolve directly. A small
     number intentionally begin with ``..`` because they point to read-only
     source custody in a sibling pillar. Git worktrees live one directory deeper
-    than the owner checkout, so their direct expansion is not portable. When a
-    declared parent-relative path is absent, search the checkout ancestors for
-    the same declared tail. The declared string remains the contract and only
-    the existing source bytes enter generated output.
+    than the owner checkout, so their direct expansion is not portable. For a
+    parent-relative declaration, collect every existing expansion of the same
+    declared tail across checkout ancestors. Exactly one distinct file must
+    resolve: shadow copies fail closed instead of letting checkout depth choose
+    an owner. The declared string remains the contract and only the uniquely
+    resolved source bytes enter generated output.
     """
+    root = root.resolve()
+    base = base.resolve()
     direct = (base / declared).resolve()
-    if direct.is_file():
-        return direct
-
     parts = list(declared.parts)
     while parts and parts[0] == "..":
         parts.pop(0)
-    if parts and len(parts) < len(declared.parts):
+    parent_relative = bool(parts) and len(parts) < len(declared.parts)
+
+    candidates: dict[str, Path] = {}
+
+    def remember(candidate: Path) -> None:
+        resolved = candidate.resolve()
+        if resolved.is_file():
+            candidates[resolved.as_posix()] = resolved
+
+    remember(direct)
+    if parent_relative:
         tail = Path(*parts)
         for ancestor in root.parents:
-            candidate = (ancestor / tail).resolve()
-            if candidate.is_file():
-                return candidate
-    return direct
+            remember(ancestor / tail)
+
+    if len(candidates) == 1:
+        return next(iter(candidates.values()))
+    if len(candidates) > 1:
+        matches = ", ".join(sorted(candidates))
+        raise AmbiguousDeclaredPathError(
+            f"ambiguous declared path {declared.as_posix()!r}: "
+            f"multiple owner candidates resolve: {matches}"
+        )
+    raise UnresolvedDeclaredPathError(
+        f"unresolved declared path {declared.as_posix()!r} from {base.as_posix()}"
+    )
 
 
 def _require_string(value: Any, label: str) -> str:

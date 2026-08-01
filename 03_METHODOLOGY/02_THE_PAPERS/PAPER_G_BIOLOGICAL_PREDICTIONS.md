@@ -43,9 +43,11 @@ A candidate result must preregister all of the following:
 6. a recovery or ablation showing what the proposed higher-level variable adds.
 
 The chart identity `φν=1` is analytic under the chosen coordinates. It does not
-predict biological conservation. Likewise, the normalized product
-`P=ΦV` is Emergentism's selected conjunctive model, not a universal biological
-law. A biological study may test explicitly declared proxies and alternative
+predict biological conservation. Likewise, the selected ordinal conjunction
+`P_node=min(Φ̂₄,V₄)` is not a universal biological law. The historical
+product `Φ̂₄V₄` / public `ΦV` is retired as a ranking and may be tested only
+as an explicit candidate under separately defended cardinal scales. A
+biological study may test explicitly declared proxies and alternative
 aggregators, but it must not rename a coordinate identity as data.
 
 ## Live research program `[C]`

@@ -46,7 +46,7 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 
 ### Clause 2 — The game on the sphere
 
-> *`P_node=Φ×V` in the finite-node register—read through the Burrisphere, never confused with the reciprocal seam.*
+> *`P_node=min(Φ̂₄,V₄)` in the finite-node register—read through the Burrisphere, never confused with the reciprocal seam.*
 
 **Standing:**
 
@@ -54,14 +54,16 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 |-------|------|
 | Chart `φ·ν ≡ 1` by construction | `[A]` empty of world |
 | `B≤1` on the reciprocal chart | `[A]` |
-| `P_node≤1` | only after explicit normalization of `Φ,V` |
+| `P_node≤1` | only after explicit normalization of `Φ̂₄,V₄` |
 | Balance max under budget (AM-GM) | `[A]` on-sphere |
-| Score as AND-class (min/product/CES…) | `[S]` boundary; product interior `[C]` |
+| Selected `min` score inside the AND-class | `[I]` selection; `[S]` boundary; universal fit `[C]` |
+| Historical product `Φ̂₄V₄` / public `ΦV` | retired as a ranking; product-specific interior remains a historical `[C]` candidate only under separately defended cardinal scales, not the selected score |
 | Kernel ≠ ethics warrant (CC-CORE-1) | `[S]` |
 
 Grammar and game married, never fused.
 
-**Forbids:** product-uniqueness as proved keel; manifold as ethics floor.
+**Forbids:** product-uniqueness as proved keel; use of the retired product to
+rank nodes; manifold as ethics floor.
 
 ---
 
@@ -101,7 +103,7 @@ special person's metaphysical power.
 
 ### The creed, held as wager
 
-> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=Φ̂₄V₄`, publicly `ΦV`. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
+> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=min(Φ̂₄,V₄)`, the selected AND-class score over ordinal factors; the historical product `Φ̂₄V₄`, publicly `ΦV`, is retired as a ranking. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
 
 ---
 

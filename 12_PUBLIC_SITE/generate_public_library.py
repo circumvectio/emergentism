@@ -362,12 +362,20 @@ from pathlib import Path
 
 import markdown
 
+SITE_ROOT = Path(__file__).resolve().parent
+if str(SITE_ROOT) not in sys.path:
+    sys.path.insert(0, str(SITE_ROOT))
+
 from reading_manifest_contract import apply_contract, canonical_bytes
 
-
-SITE_ROOT = Path(__file__).resolve().parent
 REPO_ROOT = SITE_ROOT.parents[1]
 HANDOFF = REPO_ROOT / "docs" / "handoff"
+
+FIREWALL_DIR = SITE_ROOT.parent / "09_TOOLS" / "01_SCRIPTS"
+if str(FIREWALL_DIR) not in sys.path:
+    sys.path.insert(0, str(FIREWALL_DIR))
+
+from foundation_type_firewall import line_number_for_offset, titan_arithmetic_matches
 SITE_BASE_URL = "https://www.emergentism.org/"
 
 WINGS = {
@@ -661,7 +669,7 @@ def topbar(active: str, depth: int) -> str:
 def public_footer(depth: int) -> str:
     return """
   <footer class="site-footer">
-    <div class="phi">⊙ = • × ○</div>
+    <div class="phi">• &nbsp; ⊙ &nbsp; ○</div>
     <p>Public doctrine surface · evidence tiers preserved</p>
   </footer>
 """
@@ -730,7 +738,20 @@ def page_html(
 """
 
 
-def write_page(output_dir: Path, source: Path, active: str, title_fallback: str, description: str, depth: int) -> None:
+def assert_titan_type_safe(rendered_html: str, output_file: Path) -> None:
+    """Refuse any generated page whose visible text violates TitanFrame types."""
+
+    violations = titan_arithmetic_matches(rendered_html)
+    if violations:
+        _, offset = violations[0]
+        line_number = line_number_for_offset(rendered_html, offset)
+        raise ValueError(
+            f"TitanFrame type firewall rejected generated output "
+            f"{output_file.relative_to(SITE_ROOT)}:{line_number}"
+        )
+
+
+def render_page(output_dir: Path, source: Path, active: str, title_fallback: str, description: str, depth: int) -> tuple[Path, str]:
     source_text = strip_frontmatter(source.read_text(encoding="utf-8"))
     if uses_operator_tier_policy(source):
         source_text = normalize_legacy_operator_tiers(source_text)
@@ -739,18 +760,16 @@ def write_page(output_dir: Path, source: Path, active: str, title_fallback: str,
     markdown_text = rewrite_markdown_links(source_text, source, output_file)
     body = render_markdown(markdown_text)
     source_label = source.relative_to(REPO_ROOT).as_posix()
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_file.write_text(
-        page_html(
-            title=title,
-            description=description,
-            body=body,
-            active=active,
-            depth=depth,
-            source_label=source_label,
-        ),
-        encoding="utf-8",
+    rendered = page_html(
+        title=title,
+        description=description,
+        body=body,
+        active=active,
+        depth=depth,
+        source_label=source_label,
     )
+    assert_titan_type_safe(rendered, output_file)
+    return output_file, rendered
 
 
 def clean_generated_dirs() -> None:
@@ -775,39 +794,45 @@ def clean_generated_dirs() -> None:
 
 
 def generate_library() -> None:
-    clean_generated_dirs()
-    write_page(
+    # Render and type-check every output before deleting or overwriting a byte.
+    # A single bad source therefore leaves the frozen library intact.
+    pages = [render_page(
         SITE_ROOT / "read",
         HANDOFF / "00_READ_THE_FRAMEWORK.md",
         "read",
         "Read the Framework",
         "The complete public reading path through the rendered Emergentism corpus.",
         depth=1,
-    )
+    )]
     for route, config in WINGS.items():
         src_dir = config["source_dir"]
-        write_page(
+        pages.append(render_page(
             SITE_ROOT / route,
             src_dir / "README.md",
             config["active"],
             config["title"],
             config["description"],
             depth=1,
-        )
+        ))
         for source in sorted(src_dir.glob("*.md")):
             if not is_public_document(source):
                 continue
             output_dir = SITE_ROOT / route / slug_for(source)
             if is_withheld_output(output_dir / "index.html"):
                 continue
-            write_page(
+            pages.append(render_page(
                 output_dir,
                 source,
                 config["active"],
                 source.stem.replace("_", " ").title(),
                 config["description"],
                 depth=2,
-            )
+            ))
+
+    clean_generated_dirs()
+    for output_file, rendered in pages:
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        output_file.write_text(rendered, encoding="utf-8")
 
 
 def generate_manifest() -> None:
