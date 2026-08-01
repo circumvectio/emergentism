@@ -111,6 +111,16 @@ class ReviewBundleStatusTests(unittest.TestCase):
             any("bundle v4 must bind" in error for error in errors), errors
         )
 
+    def test_unregistered_successor_version_fails_closed(self) -> None:
+        registry, gate = CHECKER.review_gate_data()
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        errors = CHECKER.acyclic_binding_errors(
+            MANIFEST_PATH, manifest, registry, gate, 5
+        )
+        self.assertTrue(
+            any("bundle v5 is unsupported" in error for error in errors), errors
+        )
+
     def test_v4_hash_locks_every_retained_historical_artifact(self) -> None:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         files = copy.deepcopy(manifest["files"])

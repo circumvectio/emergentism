@@ -688,6 +688,11 @@ def acyclic_binding_errors(
 ) -> list[str]:
     """Check the v3+ static-projection graph and current fail-closed state."""
 
+    if version not in BINDING_CONTRACTS_BY_VERSION:
+        return [
+            f"bundle v{version} is unsupported: register a successor binding contract "
+            "and independently reviewed verification boundary before checking it"
+        ]
     errors: list[str] = []
     files = manifest.get("files")
     if not isinstance(files, dict):

@@ -1,6 +1,6 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody and Sprint 7B provenance firewall verified; Sprint 7C–D and external review remain blocked"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody, Sprint 7B provenance firewall, and Sprint 7C preselection freeze verified; owner decisions, Sprint 7D, and external review remain blocked"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
@@ -173,9 +173,19 @@ topology conflict have explicit options in the contact-limited owner docket.
 Only a dated owner selection may choose a canonical path, a K3 custody route, a
 path-specific exception, or a migration. No unselected option implies a move.
 
+**Preselection ratchet:** while both decisions remain unset, the two public
+copies must remain byte-identical, regular, and excluded by both exact parent
+rules in the current local/predeploy deployment configuration; this does not
+establish a live or historical deployment fact. The only active non-root
+`00_META` is the named unresolved framework-support lane, and a symlink or
+additional active lane fails the local check. An unregistered v5-or-later
+review bundle also fails closed until a successor contract and independently
+reviewed verification boundary are registered.
+
 **Exit:** if selected, exactly one owner ruling is propagated through its named
 source paths and tests. If unselected, the two routing debts remain visible as
-`PASS-WITH-DEBT` rather than being normalized away.
+`PASS-WITH-DEBT` rather than being normalized away, with the preselection
+ratchet still protecting their known custody boundaries.
 
 ### Sprint 7D — pre-contact completion, then external review clock
 

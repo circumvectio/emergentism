@@ -13,6 +13,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import os
 import re
 import subprocess
 import sys
@@ -119,9 +120,27 @@ PUBLIC_DOC_EVIDENCE = {
     "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
     "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md",
 }
+PUBLIC_DOC_EXACT_IGNORE_PATTERNS = {
+    (
+        "12_PUBLIC_SITE/docs/superpowers/specs/"
+        "2026-06-05-numbered-doctrine-spine-design.md"
+    ): "docs/",
+    (
+        "12_PUBLIC_SITE/_PLANS/specs/"
+        "2026-06-05-numbered-doctrine-spine-design.md"
+    ): "_PLANS/",
+}
 TOPOLOGY_EVIDENCE = {
     "00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md",
     "08_FRAMEWORK_SUPPORT/00_META/README.md",
+}
+HELD_ACTIVE_NONROOT_META_PATHS = {"08_FRAMEWORK_SUPPORT/00_META"}
+NON_ACTIVE_META_SEGMENTS = {
+    ".git",
+    "90_ARCHIVE",
+    "91_COMPATIBILITY",
+    "__pycache__",
+    "node_modules",
 }
 EXPECTED_PRECEDENCE = (
     "withheld",
@@ -244,6 +263,155 @@ def repo_file(root: Path, value: Any, label: str, errors: list[str]) -> Path | N
         errors.append(f"{label} does not exist as a file: {value}")
         return None
     return target
+
+
+def _has_symlink_component(root: Path, relative: str) -> bool:
+    """Reject an otherwise in-root path that passes through a symlink."""
+
+    candidate = root
+    for component in Path(relative).parts:
+        candidate /= component
+        if candidate.is_symlink():
+            return True
+    return False
+
+
+def _git_index_has_exact_regular_bytes(
+    root: Path, relative: str, expected_bytes: bytes
+) -> bool:
+    """Require one stage-0 regular-file blob with the retained worktree bytes."""
+
+    try:
+        index = subprocess.run(
+            ["git", "ls-files", "--stage", "-z", "--", relative],
+            cwd=root,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+    except OSError:
+        return False
+    if index.returncode != 0:
+        return False
+    records = [record for record in index.stdout.split(b"\0") if record]
+    if len(records) != 1:
+        return False
+    metadata, separator, indexed_path = records[0].partition(b"\t")
+    fields = metadata.split()
+    if (
+        not separator
+        or indexed_path != relative.encode("utf-8")
+        or len(fields) != 3
+        or fields[0] != b"100644"
+        or fields[2] != b"0"
+    ):
+        return False
+    try:
+        blob = subprocess.run(
+            ["git", "cat-file", "blob", f":{relative}"],
+            cwd=root,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+    except OSError:
+        return False
+    return blob.returncode == 0 and blob.stdout == expected_bytes
+
+
+def public_doc_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
+    """Keep the unresolved duplicate in non-deployable, byte-identical custody."""
+
+    if not PUBLIC_DOC_EVIDENCE <= evidence:
+        return ["public-doc owner debt lost one of its duplicate evidence paths"]
+    errors: list[str] = []
+    left, right = sorted(PUBLIC_DOC_EVIDENCE)
+    left_path, right_path = root / left, root / right
+    if _has_symlink_component(root, left) or _has_symlink_component(root, right):
+        errors.append("public-doc owner debt evidence must not traverse a symlink")
+        return errors
+    if not left_path.is_file() or not right_path.is_file():
+        errors.append("public-doc owner debt evidence must remain regular files")
+        return errors
+    for path, target in ((left, left_path), (right, right_path)):
+        if not _git_index_has_exact_regular_bytes(root, path, target.read_bytes()):
+            errors.append(
+                "public-doc owner debt evidence lacks exact regular-file Git index "
+                f"custody: {path}"
+            )
+    if left_path.read_bytes() != right_path.read_bytes():
+        errors.append("public-doc debt evidence is no longer byte-identical")
+    patterns = _load_vercelignore(root / VERCEL_IGNORE)
+    for path in (left, right):
+        try:
+            site_relative = Path(path).relative_to(PUBLIC_DIR).as_posix()
+        except ValueError:
+            errors.append(f"public-doc owner debt path escapes public-site lane: {path}")
+            continue
+        required_pattern = PUBLIC_DOC_EXACT_IGNORE_PATTERNS[path]
+        if required_pattern not in patterns:
+            errors.append(
+                "public-doc owner debt lacks its exact deployment exclusion: "
+                f"{required_pattern}"
+            )
+        elif not _is_vercel_ignored(site_relative, [required_pattern]):
+            errors.append(
+                "contact-limited matcher no longer honors public-doc deployment exclusion: "
+                f"{required_pattern}"
+            )
+        elif not _PREDEPLOY_POLICY.is_vercel_ignored(
+            site_relative, [required_pattern]
+        ):
+            errors.append(
+                "predeploy matcher no longer honors public-doc deployment exclusion: "
+                f"{required_pattern}"
+            )
+        if not _is_vercel_ignored(site_relative, patterns):
+            errors.append(f"public-doc owner debt path is no longer ignored: {path}")
+        if not _PREDEPLOY_POLICY.is_vercel_ignored(site_relative, patterns):
+            errors.append(
+                f"public-doc owner debt path is no longer ignored by predeploy policy: {path}"
+            )
+    return errors
+
+
+def active_nonroot_meta_paths(root: Path) -> set[str]:
+    """Discover active per-pillar 00_META directories without normalizing them."""
+
+    active: set[str] = set()
+    for directory, dirnames, _ in os.walk(root, followlinks=False):
+        dirnames[:] = [
+            name for name in dirnames if name not in NON_ACTIVE_META_SEGMENTS
+        ]
+        if "00_META" not in dirnames:
+            continue
+        candidate = Path(directory) / "00_META"
+        relative = candidate.relative_to(root)
+        if relative != Path("00_META"):
+            active.add(relative.as_posix())
+    return active
+
+
+def unresolved_topology_errors(root: Path) -> list[str]:
+    """Freeze the known conflict while D-OWNER-02 remains unselected."""
+
+    actual = active_nonroot_meta_paths(root)
+    missing = sorted(HELD_ACTIVE_NONROOT_META_PATHS - actual)
+    unexpected = sorted(actual - HELD_ACTIVE_NONROOT_META_PATHS)
+    symlinked = sorted(path for path in actual if (root / path).is_symlink())
+    if not missing and not unexpected and not symlinked:
+        return []
+    detail: list[str] = []
+    if missing:
+        detail.append("missing=" + ", ".join(missing))
+    if unexpected:
+        detail.append("unexpected=" + ", ".join(unexpected))
+    if symlinked:
+        detail.append("symlink=" + ", ".join(symlinked))
+    return [
+        "unresolved non-root 00_META topology inventory drifted: "
+        + "; ".join(detail)
+    ]
 
 
 def receipt_ref(root: Path, value: Any, label: str, errors: list[str]) -> None:
@@ -2090,14 +2258,11 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
             )
         evidence_set = {item for item in evidence if isinstance(item, str)}
         if debt.get("id") == "OWNER_GATE_HELD_PUBLIC_DOCS":
-            if not PUBLIC_DOC_EVIDENCE <= evidence_set:
-                errors.append("public-doc owner debt lost one of its duplicate evidence paths")
-            else:
-                left, right = sorted(PUBLIC_DOC_EVIDENCE)
-                if (root / left).read_bytes() != (root / right).read_bytes():
-                    errors.append("public-doc debt evidence is no longer byte-identical")
-        if debt.get("id") == "OWNER_GATE_OPEN_TOPOLOGY" and not TOPOLOGY_EVIDENCE <= evidence_set:
-            errors.append("topology owner debt lost one of its conflicting evidence paths")
+            errors.extend(public_doc_owner_debt_errors(root, evidence_set))
+        if debt.get("id") == "OWNER_GATE_OPEN_TOPOLOGY":
+            if not TOPOLOGY_EVIDENCE <= evidence_set:
+                errors.append("topology owner debt lost one of its conflicting evidence paths")
+            errors.extend(unresolved_topology_errors(root))
 
     world = computed.get("world_contact")
     expected_world = {

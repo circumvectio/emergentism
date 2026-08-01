@@ -408,6 +408,165 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         substituted = {"PASS-WITH-DEBT", "OWNER_GATE_OPEN_TOPOLOGY"}
         self.assert_invalid(state, compute_owner_debts=substituted)
 
+    def test_public_doc_debt_preserves_identical_non_deployable_copies(self) -> None:
+        self.assertEqual(
+            CHECKER.public_doc_owner_debt_errors(ROOT, CHECKER.PUBLIC_DOC_EVIDENCE),
+            [],
+        )
+        _left, right = sorted(CHECKER.PUBLIC_DOC_EVIDENCE)
+        original_read_bytes = Path.read_bytes
+
+        def divergent_read_bytes(path):
+            if path == ROOT / right:
+                return b"synthetic divergence"
+            return original_read_bytes(path)
+
+        with mock.patch.object(
+            Path, "read_bytes", autospec=True, side_effect=divergent_read_bytes
+        ):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+        self.assertTrue(
+            any("no longer byte-identical" in error for error in errors), errors
+        )
+
+        with mock.patch.object(CHECKER, "_is_vercel_ignored", return_value=False):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+        self.assertTrue(
+            any("path is no longer ignored" in error for error in errors), errors
+        )
+
+        with mock.patch.object(
+            CHECKER._PREDEPLOY_POLICY, "is_vercel_ignored", return_value=False
+        ):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+        self.assertTrue(
+            any("predeploy matcher" in error for error in errors), errors
+        )
+
+    def test_public_doc_debt_requires_each_parent_exclusion(self) -> None:
+        patterns = CHECKER._load_vercelignore(ROOT / CHECKER.VERCEL_IGNORE)
+        for (
+            path,
+            required_pattern,
+        ) in CHECKER.PUBLIC_DOC_EXACT_IGNORE_PATTERNS.items():
+            site_relative = Path(path).relative_to(CHECKER.PUBLIC_DIR).as_posix()
+            self.assertIn(required_pattern, patterns)
+            self.assertTrue(
+                CHECKER._is_vercel_ignored(site_relative, [required_pattern])
+            )
+            self.assertTrue(
+                PREDEPLOY.is_vercel_ignored(site_relative, [required_pattern])
+            )
+
+    def test_public_doc_debt_rejects_ancestor_symlink_or_lost_index_custody(self) -> None:
+        left, right = sorted(CHECKER.PUBLIC_DOC_EVIDENCE)
+        docs_path = next(
+            path for path in CHECKER.PUBLIC_DOC_EVIDENCE if "/docs/" in path
+        )
+        plans_path = next(
+            path for path in CHECKER.PUBLIC_DOC_EVIDENCE if "/_PLANS/" in path
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            target = corpus / "retained-docs/superpowers/specs"
+            target.mkdir(parents=True)
+            (target / Path(docs_path).name).write_bytes(b"same custody bytes\n")
+            plans = corpus / Path(plans_path)
+            plans.parent.mkdir(parents=True)
+            plans.write_bytes(b"same custody bytes\n")
+            docs = corpus / "12_PUBLIC_SITE/docs"
+            docs.parent.mkdir(parents=True, exist_ok=True)
+            docs.symlink_to(target.parents[1], target_is_directory=True)
+            ignore = corpus / CHECKER.VERCEL_IGNORE
+            ignore.parent.mkdir(parents=True, exist_ok=True)
+            ignore.write_text("docs/\n_PLANS/\n", encoding="utf-8")
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+        self.assertTrue(
+            any("must not traverse a symlink" in error for error in errors), errors
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            for path in (left, right):
+                target = corpus / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(b"same custody bytes\n")
+            ignore = corpus / CHECKER.VERCEL_IGNORE
+            ignore.write_text("docs/\n_PLANS/\n", encoding="utf-8")
+            self.init_git_repo(corpus)
+            self.commit_all(corpus, "add public-document custody")
+            self.assertEqual(
+                CHECKER.public_doc_owner_debt_errors(
+                    corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+                ),
+                [],
+            )
+            for path in (left, right):
+                (corpus / path).write_bytes(b"new but still identical custody bytes\n")
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+            self.assertTrue(
+                any(
+                    "lacks exact regular-file Git index custody" in error
+                    for error in errors
+                ),
+                errors,
+            )
+            for path in (left, right):
+                (corpus / path).write_bytes(b"same custody bytes\n")
+            subprocess.run(
+                ["git", "-C", str(corpus), "rm", "--cached", "-q", left],
+                check=True,
+            )
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+            )
+        self.assertTrue(
+            any("lacks exact regular-file Git index custody" in error for error in errors),
+            errors,
+        )
+
+    def test_unresolved_topology_inventory_rejects_expansion_or_disappearance(self) -> None:
+        self.assertEqual(CHECKER.unresolved_topology_errors(ROOT), [])
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            (corpus / "08_FRAMEWORK_SUPPORT/00_META").mkdir(parents=True)
+            (corpus / "07_EXTRA/00_META").mkdir(parents=True)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("unexpected=07_EXTRA/00_META" in error for error in errors),
+                errors,
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            errors = CHECKER.unresolved_topology_errors(Path(directory))
+        self.assertTrue(
+            any("missing=08_FRAMEWORK_SUPPORT/00_META" in error for error in errors),
+            errors,
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            target = corpus / "target"
+            target.mkdir()
+            held = corpus / "08_FRAMEWORK_SUPPORT/00_META"
+            held.parent.mkdir(parents=True)
+            held.symlink_to(target, target_is_directory=True)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+        self.assertTrue(
+            any("symlink=08_FRAMEWORK_SUPPORT/00_META" in error for error in errors),
+            errors,
+        )
+
     def test_fabricated_world_evidence_fails_even_if_state_matches(self) -> None:
         state = copy.deepcopy(self.state)
         state["world_contact"]["state"] = "ESTABLISHED"
