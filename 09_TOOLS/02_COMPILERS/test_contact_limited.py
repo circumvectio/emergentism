@@ -410,8 +410,17 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
     def test_public_doc_debt_preserves_identical_non_deployable_copies(self) -> None:
         self.assertEqual(
-            CHECKER.public_doc_owner_debt_errors(ROOT, CHECKER.PUBLIC_DOC_EVIDENCE),
+            CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            ),
             [],
+        )
+        errors = CHECKER.public_doc_owner_debt_errors(
+            ROOT,
+            CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE | {"00_META/unrelated.md"},
+        )
+        self.assertTrue(
+            any("must exactly match" in error for error in errors), errors
         )
         _left, right = sorted(CHECKER.PUBLIC_DOC_EVIDENCE)
         original_read_bytes = Path.read_bytes
@@ -425,7 +434,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             Path, "read_bytes", autospec=True, side_effect=divergent_read_bytes
         ):
             errors = CHECKER.public_doc_owner_debt_errors(
-                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
         self.assertTrue(
             any("no longer byte-identical" in error for error in errors), errors
@@ -433,7 +442,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
         with mock.patch.object(CHECKER, "_is_vercel_ignored", return_value=False):
             errors = CHECKER.public_doc_owner_debt_errors(
-                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
         self.assertTrue(
             any("path is no longer ignored" in error for error in errors), errors
@@ -443,7 +452,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             CHECKER._PREDEPLOY_POLICY, "is_vercel_ignored", return_value=False
         ):
             errors = CHECKER.public_doc_owner_debt_errors(
-                ROOT, CHECKER.PUBLIC_DOC_EVIDENCE
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
         self.assertTrue(
             any("predeploy matcher" in error for error in errors), errors
@@ -487,7 +496,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             ignore.parent.mkdir(parents=True, exist_ok=True)
             ignore.write_text("docs/\n_PLANS/\n", encoding="utf-8")
             errors = CHECKER.public_doc_owner_debt_errors(
-                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
         self.assertTrue(
             any("must not traverse a symlink" in error for error in errors), errors
@@ -505,14 +514,14 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             self.commit_all(corpus, "add public-document custody")
             self.assertEqual(
                 CHECKER.public_doc_owner_debt_errors(
-                    corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+                    corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
                 ),
                 [],
             )
             for path in (left, right):
                 (corpus / path).write_bytes(b"new but still identical custody bytes\n")
             errors = CHECKER.public_doc_owner_debt_errors(
-                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
             self.assertTrue(
                 any(
@@ -528,7 +537,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                 check=True,
             )
             errors = CHECKER.public_doc_owner_debt_errors(
-                corpus, CHECKER.PUBLIC_DOC_EVIDENCE
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
             )
         self.assertTrue(
             any("lacks exact regular-file Git index custody" in error for error in errors),
@@ -566,6 +575,94 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             any("symlink=08_FRAMEWORK_SUPPORT/00_META" in error for error in errors),
             errors,
         )
+
+    def test_unresolved_topology_requires_exact_evidence_and_route_boundary(self) -> None:
+        self.assertEqual(
+            CHECKER.topology_owner_debt_errors(
+                ROOT, CHECKER.TOPOLOGY_OWNER_DEBT_EVIDENCE
+            ),
+            [],
+        )
+        errors = CHECKER.topology_owner_debt_errors(
+            ROOT,
+            CHECKER.TOPOLOGY_OWNER_DEBT_EVIDENCE | {"00_META/unrelated.md"},
+        )
+        self.assertTrue(
+            any("must exactly match" in error for error in errors), errors
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            route_card = corpus / CHECKER.HELD_TOPOLOGY_ROUTE_CARD
+            route_card.parent.mkdir(parents=True)
+            route_card_text = (
+                "## What It Owns\n\nSupport content only.\n\n"
+                "## What It Must Not Own\n\n"
+                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['What It Must Not Own']}\n\n"
+                "## Current Boundary\n\n"
+                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['Current Boundary']}\n"
+            )
+            route_card.write_text(route_card_text, encoding="utf-8")
+            self.assertEqual(CHECKER.unresolved_topology_errors(corpus), [])
+            route_card.write_text(
+                route_card_text.replace(
+                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["Current Boundary"],
+                    "No upstream route is declared here.",
+                ),
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("boundary sentinel" in error for error in errors), errors
+            )
+
+            route_card.write_text(
+                route_card_text.replace(
+                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
+                    "No governance route is declared here.",
+                )
+                + "\n\n## Historical Notes\n\n"
+                + CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("boundary sentinel from: What It Must Not Own" in error for error in errors),
+                errors,
+            )
+
+            route_card.write_text(
+                route_card_text.replace(
+                    "Support content only.",
+                    "Support content only. Active governance law is owned here.",
+                ),
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("asserts active governance ownership" in error for error in errors),
+                errors,
+            )
+
+            route_card.write_text(
+                route_card_text
+                + "\n\n## What It Owns\n\nThis folder owns active governance law.\n",
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("duplicate active ownership/boundary headings: What It Owns" in error for error in errors),
+                errors,
+            )
+
+            outside = corpus / "outside.md"
+            outside.write_text("route card", encoding="utf-8")
+            route_card.unlink()
+            route_card.symlink_to(outside)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("regular, non-symlink" in error for error in errors), errors
+            )
 
     def test_fabricated_world_evidence_fails_even_if_state_matches(self) -> None:
         state = copy.deepcopy(self.state)

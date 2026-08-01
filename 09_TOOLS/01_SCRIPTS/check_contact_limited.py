@@ -134,7 +134,32 @@ TOPOLOGY_EVIDENCE = {
     "00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md",
     "08_FRAMEWORK_SUPPORT/00_META/README.md",
 }
+COHERENCE_PROFILE_EVIDENCE = COHERENCE_SOURCE.as_posix()
+PUBLIC_DOC_OWNER_DEBT_EVIDENCE = PUBLIC_DOC_EVIDENCE | {COHERENCE_PROFILE_EVIDENCE}
+TOPOLOGY_OWNER_DEBT_EVIDENCE = TOPOLOGY_EVIDENCE | {COHERENCE_PROFILE_EVIDENCE}
 HELD_ACTIVE_NONROOT_META_PATHS = {"08_FRAMEWORK_SUPPORT/00_META"}
+HELD_TOPOLOGY_ROUTE_CARD = Path("08_FRAMEWORK_SUPPORT/00_META/README.md")
+HELD_TOPOLOGY_ROUTE_CARD_SENTINELS = {
+    "What It Must Not Own": "- Active governance law. Route that to `../01_GOVERNANCE/`.",
+    "Current Boundary": (
+        "The active route surface is this README plus `AGENTS.md`, with upstream\n"
+        "authority in [`../AGENTS.md`](../AGENTS.md) and the root\n"
+        "[`00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md)."
+    ),
+}
+HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS = (
+    "What It Owns",
+    "What It Must Not Own",
+    "Current Boundary",
+)
+HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION = re.compile(
+    r"\bactive\s+governance\s+law\s+(?:is|remains)\s+owned\s+here\b"
+    r"|\bactive\s+governance\s+law\s+belongs\s+to\s+this\s+"
+    r"(?:folder|lane|route\s+card)\b"
+    r"|\b(?:this|the)\s+(?:folder|lane|route\s+card)\s+owns\s+"
+    r"active\s+governance\s+law\b",
+    re.I,
+)
 NON_ACTIVE_META_SEGMENTS = {
     ".git",
     "90_ARCHIVE",
@@ -322,8 +347,11 @@ def _git_index_has_exact_regular_bytes(
 def public_doc_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
     """Keep the unresolved duplicate in non-deployable, byte-identical custody."""
 
-    if not PUBLIC_DOC_EVIDENCE <= evidence:
-        return ["public-doc owner debt lost one of its duplicate evidence paths"]
+    if evidence != PUBLIC_DOC_OWNER_DEBT_EVIDENCE:
+        return [
+            "public-doc owner debt evidence must exactly match the two retained "
+            "documents and shared coherence profile"
+        ]
     errors: list[str] = []
     left, right = sorted(PUBLIC_DOC_EVIDENCE)
     left_path, right_path = root / left, root / right
@@ -392,6 +420,14 @@ def active_nonroot_meta_paths(root: Path) -> set[str]:
     return active
 
 
+def _markdown_h2_sections(text: str, heading: str) -> list[str]:
+    """Return every exact level-two section so duplicate active headings cannot hide."""
+
+    return re.findall(
+        rf"(?ms)^## {re.escape(heading)}[ \t]*\n(.*?)(?=^## |\Z)", text
+    )
+
+
 def unresolved_topology_errors(root: Path) -> list[str]:
     """Freeze the known conflict while D-OWNER-02 remains unselected."""
 
@@ -399,8 +435,7 @@ def unresolved_topology_errors(root: Path) -> list[str]:
     missing = sorted(HELD_ACTIVE_NONROOT_META_PATHS - actual)
     unexpected = sorted(actual - HELD_ACTIVE_NONROOT_META_PATHS)
     symlinked = sorted(path for path in actual if (root / path).is_symlink())
-    if not missing and not unexpected and not symlinked:
-        return []
+    errors: list[str] = []
     detail: list[str] = []
     if missing:
         detail.append("missing=" + ", ".join(missing))
@@ -408,10 +443,83 @@ def unresolved_topology_errors(root: Path) -> list[str]:
         detail.append("unexpected=" + ", ".join(unexpected))
     if symlinked:
         detail.append("symlink=" + ", ".join(symlinked))
-    return [
-        "unresolved non-root 00_META topology inventory drifted: "
-        + "; ".join(detail)
-    ]
+    if detail:
+        errors.append(
+            "unresolved non-root 00_META topology inventory drifted: "
+            + "; ".join(detail)
+        )
+    if HELD_ACTIVE_NONROOT_META_PATHS <= actual:
+        route_card_relative = HELD_TOPOLOGY_ROUTE_CARD.as_posix()
+        route_card = root / HELD_TOPOLOGY_ROUTE_CARD
+        if _has_symlink_component(root, route_card_relative) or not route_card.is_file():
+            errors.append(
+                "held 00_META route card must remain a regular, non-symlink README"
+            )
+        else:
+            try:
+                route_card_text = route_card.read_text(encoding="utf-8")
+            except OSError as exc:
+                errors.append(
+                    "held 00_META route card is unreadable: "
+                    f"{exc.__class__.__name__}"
+                )
+            else:
+                section_matches = {
+                    heading: _markdown_h2_sections(route_card_text, heading)
+                    for heading in HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS
+                }
+                missing_sections = [
+                    heading for heading, sections in section_matches.items() if not sections
+                ]
+                duplicate_sections = [
+                    heading for heading, sections in section_matches.items() if len(sections) > 1
+                ]
+                if missing_sections:
+                    errors.append(
+                        "held 00_META route card lost an active ownership/boundary section"
+                    )
+                if duplicate_sections:
+                    errors.append(
+                        "held 00_META route card has duplicate active ownership/boundary "
+                        "headings: " + ", ".join(duplicate_sections)
+                    )
+                if not missing_sections and not duplicate_sections:
+                    active_sections = {
+                        heading: sections[0] for heading, sections in section_matches.items()
+                    }
+                    missing_sentinels = [
+                        heading
+                        for heading, sentinel in HELD_TOPOLOGY_ROUTE_CARD_SENTINELS.items()
+                        if sentinel not in active_sections[heading]
+                    ]
+                    if missing_sentinels:
+                        errors.append(
+                            "held 00_META route card lost its non-governance/upstream-route "
+                            "boundary sentinel from: " + ", ".join(missing_sentinels)
+                        )
+                    if HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION.search(
+                        "\n".join(
+                            section
+                            for section in active_sections.values()
+                        )
+                    ):
+                        errors.append(
+                            "held 00_META route card asserts active governance ownership"
+                        )
+    return errors
+
+
+def topology_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
+    """Keep the unresolved topology evidence exact while its owner remains unset."""
+
+    errors: list[str] = []
+    if evidence != TOPOLOGY_OWNER_DEBT_EVIDENCE:
+        errors.append(
+            "topology owner debt evidence must exactly match the two topology "
+            "sources and shared coherence profile"
+        )
+    errors.extend(unresolved_topology_errors(root))
+    return errors
 
 
 def receipt_ref(root: Path, value: Any, label: str, errors: list[str]) -> None:
@@ -2257,12 +2365,12 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
                 errors,
             )
         evidence_set = {item for item in evidence if isinstance(item, str)}
+        if len(evidence) != len(evidence_set):
+            errors.append(f"owner_held.debts[{index}].evidence contains duplicate paths")
         if debt.get("id") == "OWNER_GATE_HELD_PUBLIC_DOCS":
             errors.extend(public_doc_owner_debt_errors(root, evidence_set))
         if debt.get("id") == "OWNER_GATE_OPEN_TOPOLOGY":
-            if not TOPOLOGY_EVIDENCE <= evidence_set:
-                errors.append("topology owner debt lost one of its conflicting evidence paths")
-            errors.extend(unresolved_topology_errors(root))
+            errors.extend(topology_owner_debt_errors(root, evidence_set))
 
     world = computed.get("world_contact")
     expected_world = {

@@ -59,8 +59,9 @@ Current repository validators and narrowly scoped support scripts.
   public lifecycle (including zero-unclassified closure, cross-implementation
   ignore parity, aliases, and raw-overlap debts), the complete 48-row claim
   lifecycle (26 W/RQ rows plus 22 grave-parent rows), exact contact contracts,
-  zero ambiguous dispositions, exact owner-held debts, and the fail-closed
-  `OPEN` world axis.
+  zero ambiguous dispositions, exact owner-held debt evidence (including the
+  shared coherence profile), the held topology route-card boundary, and the
+  fail-closed `OPEN` world axis.
   A pass is an internal inventory result, never evidence that those debts have
   closed or that world contact occurred. Its state digest is bound to a dated
   snapshot receipt; an already-committed receipt must match both the worktree
@@ -92,8 +93,9 @@ Current repository validators and narrowly scoped support scripts.
   negative results, and separately cardinal candidates remain readable.
 - `check_review_bundle.py` verifies the latest versioned review hash set and
   rejects a human-facing `READY TO SEND` label while the machine registry keeps
-  `FPE-REVIEW-01` blocked. A pass proves local packet custody, never reviewer
-  identity, contact, reply, or independent evidence.
+  `FPE-REVIEW-01` blocked. An empty packet directory also fails whenever that
+  registry still declares a bundle binding. A pass proves local packet custody,
+  never reviewer identity, contact, reply, or independent evidence.
 - `check_no_secrets_staged.py` — deliberately not a tree gate: it inspects the
   staged diff and therefore belongs in the pre-commit hook.
 

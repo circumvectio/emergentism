@@ -121,6 +121,86 @@ class ReviewBundleStatusTests(unittest.TestCase):
             any("bundle v5 is unsupported" in error for error in errors), errors
         )
 
+    def test_empty_inventory_requires_an_explicitly_unbound_registry(self) -> None:
+        registry, gate = CHECKER.review_gate_data()
+        output = io.StringIO()
+        with (
+            mock.patch.object(CHECKER, "bundle_inventory", return_value=({}, {})),
+            mock.patch.object(CHECKER, "review_gate_data", return_value=(registry, gate)),
+            redirect_stdout(output),
+        ):
+            self.assertEqual(CHECKER.main(), 1)
+        self.assertIn("still declares a bundle_manifest binding", output.getvalue())
+
+        unbound_registry = copy.deepcopy(registry)
+        unbound_gate = next(
+            item
+            for item in unbound_registry["gates"]
+            if item.get("gate_id") == "FPE-REVIEW-01"
+        )
+        unbound_gate["execution"]["prerequisites"]["bundle_manifest"] = {
+            "state": "missing",
+            "artifact": None,
+            "sha256": None,
+            "receipt": None,
+            "receipt_sha256": None,
+        }
+        output = io.StringIO()
+        with (
+            mock.patch.object(CHECKER, "bundle_inventory", return_value=({}, {})),
+            mock.patch.object(
+                CHECKER,
+                "review_gate_data",
+                return_value=(unbound_registry, unbound_gate),
+            ),
+            redirect_stdout(output),
+        ):
+            self.assertEqual(CHECKER.main(), 0)
+        self.assertIn("registry unbound", output.getvalue())
+
+        mutations = (
+            (
+                "execution state",
+                lambda item: item["execution"].update(state="ready"),
+                "keep review execution blocked",
+            ),
+            (
+                "contact status",
+                lambda item: item.update(contact_status="ready"),
+                "keep review contact deferred",
+            ),
+            (
+                "owner authority",
+                lambda item: item["execution"]["provenance_contract"][
+                    "owner_authority"
+                ].update(state_at_freeze="selected", selection={"locally_authored": True}),
+                "v4 accepts only unset owner authority",
+            ),
+        )
+        for label, mutate, expected in mutations:
+            with self.subTest(label=label):
+                mutated_registry = copy.deepcopy(unbound_registry)
+                mutated_gate = next(
+                    item
+                    for item in mutated_registry["gates"]
+                    if item.get("gate_id") == "FPE-REVIEW-01"
+                )
+                mutate(mutated_gate)
+                output = io.StringIO()
+                with (
+                    mock.patch.object(
+                        CHECKER, "bundle_inventory", return_value=({}, {})
+                    ),
+                    mock.patch.object(
+                        CHECKER,
+                        "review_gate_data",
+                        return_value=(mutated_registry, mutated_gate),
+                    ),
+                    redirect_stdout(output),
+                ):
+                    self.assertEqual(CHECKER.main(), 1)
+                self.assertIn(expected, output.getvalue())
+
     def test_v4_hash_locks_every_retained_historical_artifact(self) -> None:
         manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         files = copy.deepcopy(manifest["files"])

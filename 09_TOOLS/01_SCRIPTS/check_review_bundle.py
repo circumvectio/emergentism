@@ -77,6 +77,13 @@ REQUIRED_PROVENANCE_ASSIGNMENT_KEYS = {
     "requires_owner_authority",
     "requires_external_state",
 }
+REVIEW_PREREQUISITE_RECORD_KEYS = {
+    "state",
+    "artifact",
+    "sha256",
+    "receipt",
+    "receipt_sha256",
+}
 OWNER_AUTHORITY_STATES = {"unset"}
 REVIEW_PROVENANCE_ASSIGNMENTS = {
     "bundle_manifest": {
@@ -283,6 +290,51 @@ def review_execution_state(registry: Path = REGISTRY) -> str:
     if not isinstance(state, str) or not state.strip():
         raise ValueError("FPE-REVIEW-01 execution state is missing")
     return state
+
+
+def empty_bundle_inventory_errors() -> list[str]:
+    """Permit an empty packet directory only when the registry is explicitly unbound.
+
+    A missing local packet must not turn a registry-declared manifest binding into
+    a successful no-op.  The historical unbound state is deliberately narrow:
+    the bundle prerequisite is ``missing`` and carries no artifact or receipt.
+    """
+
+    try:
+        registry, gate = review_gate_data()
+    except (json.JSONDecodeError, OSError, ValueError, KeyError, TypeError) as exc:
+        return [
+            "cannot establish that an empty review-bundle inventory is unbound: "
+            f"FPE-REVIEW-01 registry is unreadable ({exc})"
+        ]
+    execution = gate.get("execution")
+    prerequisites = execution.get("prerequisites") if isinstance(execution, dict) else None
+    if not isinstance(prerequisites, dict):
+        return [
+            "cannot establish that an empty review-bundle inventory is unbound: "
+            "FPE-REVIEW-01 prerequisites are unreadable"
+        ]
+    record = prerequisites.get("bundle_manifest")
+    if not isinstance(record, dict) or set(record) != REVIEW_PREREQUISITE_RECORD_KEYS:
+        return [
+            "cannot establish that an empty review-bundle inventory is unbound: "
+            "bundle_manifest record is incomplete or ambiguous"
+        ]
+    if record.get("state") != "missing" or any(
+        record.get(field) is not None
+        for field in ("artifact", "sha256", "receipt", "receipt_sha256")
+    ):
+        return [
+            "review-bundle inventory is empty but FPE-REVIEW-01 still declares "
+            "a bundle_manifest binding"
+        ]
+    provenance_errors = review_provenance_errors(registry, gate)
+    if provenance_errors:
+        return [
+            "cannot establish that an empty review-bundle inventory remains "
+            "pre-authority: " + "; ".join(provenance_errors)
+        ]
+    return []
 
 
 def review_registry_projection(
@@ -871,9 +923,15 @@ def main() -> int:
     manifests, documents = bundle_inventory()
     versions = sorted(set(manifests) | set(documents))
     if not versions:
-        print("REVIEW BUNDLE: PASS (no bundle document and no manifest — nothing frozen)")
+        errors = empty_bundle_inventory_errors()
+        if errors:
+            print("REVIEW BUNDLE: FAIL")
+            for error in errors:
+                print(f"- {error}")
+            return 1
+        print("REVIEW BUNDLE: PASS (no bundle document and no manifest — registry unbound)")
         print("  scope: this is the genuinely-empty state. It does NOT mean a bundle was")
-        print("  checked; it means none exists.")
+        print("  checked; it means none exists and FPE-REVIEW-01 declares no binding.")
         return 0
 
     errors: list[str] = []
