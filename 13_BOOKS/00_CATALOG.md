@@ -7,6 +7,16 @@ evidence_tier: "[B] file custody; [S] selected editorial sequence"
 
 # Book Catalog
 
+> **Consolidation target, named 2026-08-01.** All works consolidate into **three volumes and
+> an addendum** — `In Time` · `Above Time` · `Against Time` · `Addendum`. The axis is
+> canonical (`09_THE_TRIADIC_CASCADE.md`: in time → above time → against time → in time, a
+> cycle and not a ladder), and the Addendum sits at **the equator**, `B = 1`, which
+> `16_EFR_TRANSCENDENTALS.md:133` names the model's truth-limit — the position that favours
+> neither coherence nor viability, and therefore the only one with standing to falsify the
+> other three. Architecture and the draft per-work assignment:
+> [`00_THE_FOUR_VOLUMES.md`](00_THE_FOUR_VOLUMES.md). **The assignments are `[D]` and await
+> an owner ruling; nothing has been moved.**
+
 | Work | Wave | Current editorial state | Semantic route |
 |---|---:|---|---|
 | *The Emergentist Weltanschauung — One-Sitting* | W1 | active source repaired; deterministic public reader remains the only released dossier | K-1…K-7 |
