@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3441,
+  "entry_count": 3443,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -2142,7 +2142,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 8,
+      "inbound_references": 9,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -2210,7 +2210,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 13,
+      "inbound_references": 14,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15300,7 +15300,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 6,
+      "inbound_references": 7,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15385,7 +15385,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 9,
+      "inbound_references": 10,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -15640,7 +15640,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 1,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -17515,6 +17515,23 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "09_TOOLS/90_ARCHIVE/neuter_broken_archive_links_2026_08_02/README.md",
+      "sha256": "03dd12eeb84970a0b930507382a040f3c99322485194fba2233f5d6f5804b1b1",
+      "bytes": 1301,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 999,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "09_TOOLS/90_ARCHIVE/neuter_broken_archive_links_2026_08_02/neuter_broken_archive_links.py",
       "sha256": "9bca72d649e9a8460099c73aedee7bdedd0fc587938fb7517e3fadfc1c46ffb5",
       "bytes": 3786,
@@ -17527,7 +17544,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 3,
+      "inbound_references": 7,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -21309,6 +21326,23 @@
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/240_ADJUDICATION_CUSTODY_ACTIVE_CITATION_REBASELINE_2026_08_02.md",
       "sha256": "ec157bc5552dfa6cc0d5ddbee73c79a2bf3c46d838be63b534895a80f73b06b7",
       "bytes": 3196,
+      "owner_lane": "11_UPLINK",
+      "artifact_class": "receipt",
+      "authority_status": "unrated",
+      "evidence_tier": "[B]",
+      "k_relation": "K-7",
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 1,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+      "sha256": "35afadd33ec4e21b69ed494719bcc442ecc21d06f028e19d792f0d31325305b0",
+      "bytes": 3409,
       "owner_lane": "11_UPLINK",
       "artifact_class": "receipt",
       "authority_status": "unrated",
