@@ -35,15 +35,24 @@ matching receipt rather than a status declaration alone. Comprehension and
 review never promote comparative efficacy.
 
 The current frozen external-review packet is
-[`REVIEW_BUNDLE_v2.md`](REVIEW_BUNDLE_v2.md), bound by
-[`REVIEW_BUNDLE_v2.json`](REVIEW_BUNDLE_v2.json). Version 2 supersedes version 1
+[`REVIEW_BUNDLE_v3.md`](REVIEW_BUNDLE_v3.md), bound by
+[`REVIEW_BUNDLE_v3.json`](REVIEW_BUNDLE_v3.json). Version 2 superseded version 1
 because the Lived Compass changed materially when the retired product ranking
-was replaced by the selected ordinal minimum convention. Version 1 remains
-unchanged as historical custody; no review of version 1 can cover version 2.
-The registry's `bundle_manifest` prerequisite remains `missing`: binding the
-manifest hash inside a registry that the same manifest hashes would be circular.
-That lifecycle-record design debt does not turn either bundle into an external
-review or make the review gate ready.
+was replaced by the selected ordinal minimum convention. Version 3 repairs a
+separate custody defect: v2 hashed the mutable `GATE_REGISTRY.json`, while that
+registry needed to bind the manifest in its own `bundle_manifest` prerequisite.
+The resulting self-hash cycle made the prerequisite impossible to satisfy.
+
+Version 3 carries the deterministic
+[`REVIEW_REGISTRY_SNAPSHOT_v3.json`](REVIEW_REGISTRY_SNAPSHOT_v3.json) and its
+[`REVIEW_BUNDLE_BINDING_CONTRACT_v1.md`](REVIEW_BUNDLE_BINDING_CONTRACT_v1.md)
+instead of the mutable registry. The live registry can now bind v3 plus its
+local binding receipt without changing a file that v3 hashes. Versions 1 and 2
+remain unchanged historical custody; no review of either older version can
+cover version 3. This makes only the mechanical `bundle_manifest` prerequisite
+satisfied. The other six review prerequisites remain missing, so the gate is
+still `typed`, `deferred`, and `blocked`; no review is ready, sent, received, or
+implied.
 
 The [internal Rosetta review receipt](../../../00_META/reviews/2026_07_28_FINITY_EVALUATION_ROSETTA_REVIEW.md)
 preserves the initial holds and final contract pass. It is not the independent
@@ -64,7 +73,8 @@ publishing identifiable responses may itself change the ethics boundary.
 
 ## Freeze and amendment law
 
-1. External review receives the exact source, card, registry, and packet hashes.
+1. External review receives the exact source, card, versioned static
+   review-registry snapshot, binding-contract, and packet hashes.
 2. Material changes produce a new version and hash; they never rewrite a frozen
    packet after contact.
 3. Participant contact begins only after the applicable ethics determination,

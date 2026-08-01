@@ -2,8 +2,8 @@
 title: "FPE-REVIEW-01 — Independent Review Packet"
 type: external-review-packet
 gate_id: FPE-REVIEW-01
-version: 1.0.0-draft
-date: 2026-07-28
+version: 1.1.0-draft
+date: 2026-08-02
 status: "TYPED DRAFT · CONTACT DEFERRED · NO REVIEWER ENGAGED · NO REVIEW EXISTS"
 evidence_tier: "[D] review design; external findings remain absent"
 semantic_authority: none
@@ -50,7 +50,8 @@ Give every reviewer the same frozen bundle:
 1. `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` §3B;
 2. `00_META/claim_cards/finity_practice.yaml` (`FIN01-01`, `FIN01-02`);
 3. `00_META/ADEQUACY_DOCKETS.yaml` (A3 and A5);
-4. `GATE_REGISTRY.json` and all three packet files in this folder;
+4. the immutable `REVIEW_REGISTRY_SNAPSHOT_vN.json`, the binding contract, and
+   all three packet files in this folder;
 5. the exact four arm texts, consent draft, rubric, analysis plan, safety plan,
    data dictionary, retention schedule, and intended preregistration target;
 6. the public claims and barred-inference list; and
@@ -59,6 +60,29 @@ Give every reviewer the same frozen bundle:
 
 The invitation records every file hash. A material amendment requires a new
 version and a new review; an older review cannot silently cover changed text.
+
+The complete set named in item 5 is an explicit, currently missing
+`complete_review_materials_bundle` prerequisite in the live registry. It cannot
+be inferred from the technical bundle binding: each listed material must exist,
+be hash-bound together, and carry the required custody before that prerequisite
+can be satisfied.
+
+### Acyclic lifecycle binding
+
+The live `GATE_REGISTRY.json` records mutable execution evidence. It cannot be
+inside the frozen file set if it must also point to the frozen manifest: that
+would require the manifest to hash an artifact whose content includes the
+manifest's own hash. Each `REVIEW_BUNDLE_vN` therefore carries a versioned,
+immutable review-registry snapshot instead. The snapshot is a deterministic
+allow-list projection of the static review contract; it excludes external
+state, prerequisite evidence, execution state, and the manifest back-reference.
+
+The current registry binds the manifest and a local binding receipt *after* the
+manifest freezes. The binding contract specifies the graph and the checker
+rejects a raw registry, manifest self-reference, or binding-receipt inclusion in
+the bundle. This repair proves only that the packet's custody graph is acyclic.
+It does not fill the missing complete review materials, forms, terms,
+permission, applicability determination, reviewer, contact, or review.
 
 ## Reviewer questions
 

@@ -1,0 +1,92 @@
+{
+  "schema": "emergentism/finity-review-registry-snapshot/v1",
+  "frozen": "2026-08-02",
+  "purpose": "Immutable allow-list projection of the FPE-REVIEW-01 static contract for the v3 frozen bundle. It excludes runtime execution evidence and the manifest back-reference.",
+  "binding_contract": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md",
+  "projection": {
+    "registry_schema": "emergentism/finity-practice-gate-registry/v2",
+    "program": {
+      "program_id": "FPE-01",
+      "authority": "routing_only_no_semantic_authority",
+      "definition_source": {
+        "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+        "section": "3B",
+        "sha256": "468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b"
+      },
+      "semantic_owner_ids": {
+        "FIN01-01": [
+          "K-5"
+        ],
+        "FIN01-02": [
+          "K-4"
+        ]
+      },
+      "claim_card_path": "00_META/claim_cards/finity_practice.yaml",
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "packet_status_vocabulary": [
+        "typed",
+        "packet-complete"
+      ],
+      "contact_status_vocabulary": [
+        "deferred",
+        "evidence-open",
+        "component-supported",
+        "independently-replicated",
+        "narrowed",
+        "killed",
+        "frozen"
+      ],
+      "program_boundary": "These packets test communication, independent criticism, and domain-bounded comparative utility. They create no theorem, ontology, ethic, authorization, or validation of Emergentism.",
+      "external_custody_contract": {
+        "project_custodian_ids": [
+          "K-1",
+          "K-2",
+          "K-3",
+          "K-4",
+          "K-5",
+          "K-6",
+          "K-7"
+        ],
+        "receipt_schema": "emergentism/finity-practice-external-receipt/v1",
+        "independence_rule": "An independent-replication custodian must be declared external to the project, disclose conflicts, differ from the data and original-result custodians, and not use a registered project-owner ID.",
+        "boundary": "The structured receipt binds the declaration and conflict record; it does not by itself prove the custodian's identity or independence."
+      }
+    },
+    "review_gate": {
+      "gate_id": "FPE-REVIEW-01",
+      "title": "Independent review",
+      "packet": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
+      "packet_sha256": "1d8cea4ffd7b6e1899994e50647ddb021f5c335421be10742f9313098ac162ea",
+      "claim_card_ids": [
+        "FIN01-01",
+        "FIN01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "depends_on": [],
+      "moves_if_passed": "Named objections, prior art, confounds, harms, and protocol defects have received conflict-declared external scrutiny within each reviewer's competence.",
+      "does_not_move": "Does not move truth, ontology, efficacy, safety, endorsement, consensus, or replication.",
+      "kill_or_revise": "The review gate fails if conflicts or scope are hidden, authors edit a verdict, dissent is suppressed, or a material blocker is ignored.",
+      "prerequisite_names": [
+        "applicability_determination_recorded",
+        "bundle_manifest",
+        "compensation_terms",
+        "complete_review_materials_bundle",
+        "conflict_form",
+        "publication_permission",
+        "reviewer_scope_form"
+      ],
+      "ready_when": "Every prerequisite, including the complete review materials bundle, is satisfied and one manifest binds the complete same-hash review bundle."
+    }
+  },
+  "projection_sha256": "eaa9c62812506e357437ed1bf325fbe331b4f14a45d3cfe0e9be98caa352d96f"
+}

@@ -12,7 +12,7 @@ parents:
 
 # The Program Plan
 
-> **Current routing, 2026-08-01:** this dated proposal is provenance, not the
+> **Current routing, 2026-08-02:** this dated proposal is provenance, not the
 > execution queue. Sprint 1's invitation-first premise is superseded by the
 > contact-limited roadmap and the blocked `FPE-REVIEW-01` registry.
 
@@ -54,7 +54,7 @@ progress.
 | contact-gated — **cannot** be closed from inside | count |
 |---|---|
 | preregistrations written / run | 3 / 0 |
-| review packet hash set / readiness prerequisites satisfied / sent | 1 / 0 / 0 |
+| review packet hash set / technical binding satisfied / remaining human prerequisites satisfied / sent | 1 / 1 / 0 / 0 |
 | empirical sockets specified / run | 11 / 0 |
 | returned outcomes from outside | **0** |
 
@@ -78,13 +78,16 @@ longer gated on this sprint. This paragraph remains as evidence of the drift it 
 
 ## HISTORICAL SPRINT 1 · Invitation-first sequence superseded — do not execute
 
-The v1 invitation premise is obsolete. The current v2 ten-file hash set is
-verified, but the registry remains blocked on an acyclic manifest binding,
-conflict and reviewer-scope forms, compensation terms, publication permission,
-and an applicability determination. The live sequence is owned by
+The v1 invitation premise is obsolete. The current v3 twelve-file hash set has
+an internally verified acyclic manifest binding, but the registry remains
+blocked on the complete review materials bundle, conflict and reviewer-scope
+forms, compensation terms, publication permission, and an applicability
+determination. The live sequence is owned by
 `../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md`.
 
-- **Current pre-contact exit:** all six registry prerequisites carry real custody.
+- **Current pre-contact exit:** the six remaining material/human/owner registry
+  prerequisites carry real custody; the technical manifest binding is already
+  separately bound and does not make contact ready.
 - **Later contact event:** an invitation is sent to a named qualified person and
   only that event is receipted; a reply remains theirs.
 - **Cannot be delegated to an internal review.** The protocol: *"AI or

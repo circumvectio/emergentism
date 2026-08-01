@@ -1,12 +1,13 @@
 ---
 title: "Emergentism Contact-Limited Completion Roadmap"
-status: "ACTIVE EXECUTION ROADMAP — Sprint 6 verified; Sprint 7 pre-contact readiness is blocked"
+status: "ACTIVE EXECUTION ROADMAP — Sprint 7A acyclic custody verified; Sprint 7B–D and external review remain blocked"
 date: 2026-08-01
 evidence_tier: "[B] measured backlog and gate state; [S] sequencing and completion vocabulary; no world-contact claim"
 owner: "01_EMERGENTISM editorial program; each row routes to its named source owner"
 parents:
   - 00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md
   - ../00_WORK_IN_PROGRESS/README.md
+  - 00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md
   - ../09_TOOLS/01_SCRIPTS/coherence_profile.json
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/234_FULL_CORPUS_ADJUDICATION_AND_COHERENCE_CALIBRATION_2026_08_01.md
 ---
@@ -125,20 +126,59 @@ contact remains `OPEN / 0 accepted records / 2 requirements`, and the dated
 result is
 `11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md`.
 
-### Sprint 7 — pre-contact readiness, then external review clock
+### Sprint 7A — acyclic review-bundle custody — VERIFIED 2026-08-02
 
-The v2 packet's ten-file hash set is intact, but `FPE-REVIEW-01` is not
-contact-ready. Its registry still blocks execution on six prerequisites: an
-acyclic `bundle_manifest` binding, conflict form, reviewer-scope form,
-compensation terms, publication permission, and an applicability
-determination. Those records must be satisfied without pretending the present
-manifest/registry cycle has closed. Only then may the owner name a qualified
-recipient and choose to contact them. An AI or project-agent review remains
-internal search signal and cannot satisfy this gate.
+The v2 packet correctly froze its source material but hashed the mutable
+`GATE_REGISTRY.json`. That registry also had to bind the manifest in
+`bundle_manifest`, producing an impossible self-hash cycle. Version 3 replaces
+the raw registry inside the frozen set with a deterministic static review-gate
+snapshot. The live registry now binds v3 plus a local binding receipt outside
+the frozen set; mutation tests reject raw-registry, self-manifest, and receipt
+inclusion.
 
-**Exit:** all registry prerequisites carry real custody, an invitation to a
-named independent reviewer is actually sent, and a dated receipt records only
-that event. A reply is not fabricated or implied.
+**Outcome:** the technical `bundle_manifest` prerequisite is now satisfied with
+artifact and receipt custody. `FPE-REVIEW-01` remains `typed`, `deferred`, and
+`blocked`; the complete review materials bundle, conflict form, reviewer-scope
+form, compensation terms, publication permission, and applicability
+determination remain missing. No reviewer was identified, contacted, or
+engaged. Source: the Finity
+`REVIEW_BUNDLE_BINDING_CONTRACT_v1.md` and v3 manifest/receipt.
+
+### Sprint 7B — prerequisite-provenance firewall
+
+Before drafting or accepting templates, type which prerequisites need a purely
+technical artifact, a named owner attestation, an external declaration, or an
+applicable ethics determination. The registry must fail closed if a blank
+template, internal receipt, or project-agent assertion tries to satisfy a
+human/owner/external prerequisite.
+
+**Exit:** the lifecycle schema and mutation tests distinguish source kind from
+file existence; no remaining human prerequisite is marked complete by a
+template alone.
+
+### Sprint 7C — owner decision propagation
+
+The byte-identical public planning duplicate and the `08_FRAMEWORK_SUPPORT/00_META`
+topology conflict have explicit options in the contact-limited owner docket.
+Only a dated owner selection may choose a canonical path, a K3 custody route, a
+path-specific exception, or a migration. No unselected option implies a move.
+
+**Exit:** if selected, exactly one owner ruling is propagated through its named
+source paths and tests. If unselected, the two routing debts remain visible as
+`PASS-WITH-DEBT` rather than being normalized away.
+
+### Sprint 7D — pre-contact completion, then external review clock
+
+Only after a complete, scoped owner envelope may the exact review materials,
+real conflict/scope, compensation, publication-permission, and applicability
+records be gathered. Then the owner may name a qualified recipient and choose
+whether to contact them. An AI or project-agent review remains internal search
+signal and cannot satisfy this gate.
+
+**Local exit:** all registry prerequisites carry real custody. **External step
+(owner-only):** if a separately authorized invitation to a named independent
+reviewer is actually sent, a dated receipt records only that event. A reply is
+not fabricated or implied.
 
 ### Sprint 8 — world-test cycles
 

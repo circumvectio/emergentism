@@ -12,6 +12,7 @@ This lane owns routing and claim custody, not new cosmology.
 - [Registers](registers/README.md) — deterministic tracked-file and folder inventories.
 - [Internal Completion Register](00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md) — one owner and state per dimension, transition, and kernel surface.
 - [Contact-Limited Completion Roadmap](00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md) — finite internal counters and the explicit boundary between repository completion and world contact.
+- [Contact-Limited Owner Decision Docket](00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md) — unratified routing choices for the two topology debts and any future external-review authority; it makes no selection or contact claim.
 - [Contact-Limited Machine State](CONTACT_LIMITED_STATE.json) — deterministic counter baseline; it records open internal residue and confers no semantic, publication, or world-contact authority.
 - [Active Receipt Citation Registry](ACTIVE_RECEIPT_CITATION_REGISTRY.json) — exact target-token custody for declared active owners and current/provisional delivered dependencies; it does not ratify any receipt or rewrite history.
 - [Grand Puzzle Assembly Ledger](00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md) — non-authoritative whole-map assembly and twelve world-contact sockets.

@@ -1,0 +1,34 @@
+{
+  "bundleVersion": "v3",
+  "frozen": "2026-08-02",
+  "gate": "FPE-REVIEW-01",
+  "supersedes": "REVIEW_BUNDLE_v2.json",
+  "amendment": "Version 3 replaces the mutable GATE_REGISTRY.json in the frozen file set with a deterministic static review-registry snapshot, so the live registry can bind this manifest without a self-hash cycle.",
+  "note": "A material amendment to any listed file requires a NEW bundle version and a NEW review. This internal binding repair does not complete the review materials, human, ethics, compensation, permission, or external-review prerequisites.",
+  "registry_binding": {
+    "mode": "static-review-registry-projection-v1",
+    "snapshot": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v3.json",
+    "binding_contract": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md",
+    "live_registry": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+    "binding_receipt": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json",
+    "excludes": [
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json",
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json"
+    ]
+  },
+  "files": {
+    "01_TELEOLOGY/04_THE_LIVED_COMPASS.md": "sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b",
+    "00_META/claim_cards/finity_practice.yaml": "sha256:9e93b13c7f88c4b9bd394fb82054ff217ccb9577f3065ffe676be1c7afae458c",
+    "00_META/ADEQUACY_DOCKETS.yaml": "sha256:7132a1df115d71772804e81ca97bc58dfc9b146ddb8c47a64130075c9e99e6f1",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v3.json": "sha256:a051b82c8d0d26a4a87472d2a5416b36046c7c393fad14d6e1326cdab5211e74",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md": "sha256:26f331d07a15eb9fe624c226b6c7688549f224c3718420b2e147a2f1691d3c5b",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.md": "sha256:ce66480aa0d22e9b71f9f7cbf9b8fb54ff5b6538a7e73775ac60af0d201c27e2",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md": "sha256:afb8696e575b7d09cb24a71fff192b11f2f8ee939afc4b6223929db525ea46a5",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md": "sha256:b11a9c8e99781bdf5b75c4caf88a79126f0928602294511b273a2e425224ee61",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md": "sha256:1d8cea4ffd7b6e1899994e50647ddb021f5c335421be10742f9313098ac162ea",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md": "sha256:10fd04a23d64a4f10e07a1ee5f72ed128c7324938585b56efdc81eeec4192efa",
+    "00_META/00_IMMUNE_PROTOCOL.md": "sha256:e27abce6e7bbc68e0130ab702b8e333d9b4726c434168f8b3420fb0af6cf3cbb",
+    "09_TOOLS/01_SCRIPTS/claim_policy.py": "sha256:d6ebb14a9078f3db649bfcfde003ee363bc4498e3d9101e7768a164c78b3d243"
+  }
+}

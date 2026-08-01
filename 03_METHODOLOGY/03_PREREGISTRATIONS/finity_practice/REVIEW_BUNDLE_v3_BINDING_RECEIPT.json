@@ -1,0 +1,28 @@
+{
+  "schema": "emergentism/finity-review-bundle-binding-receipt/v1",
+  "kind": "internal-acyclic-manifest-binding",
+  "date": "2026-08-02",
+  "scope": "Internal custody record for the v3 review-bundle graph. It binds the manifest, static registry snapshot, and binding contract without recording a reviewer, contact, decision, payment, permission, ethics determination, or external outcome.",
+  "manifest": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json",
+    "sha256": "31e79197496597707ccf8fc75d9a03664bd85ec9038ae1f003098caca66d638a"
+  },
+  "snapshot": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v3.json",
+    "sha256": "a051b82c8d0d26a4a87472d2a5416b36046c7c393fad14d6e1326cdab5211e74"
+  },
+  "binding_contract": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md",
+    "sha256": "26f331d07a15eb9fe624c226b6c7688549f224c3718420b2e147a2f1691d3c5b"
+  },
+  "live_registry": {
+    "path": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+    "excluded_from_manifest": true
+  },
+  "does_not_establish": [
+    "a qualified reviewer identity, competence, independence, or conflict declaration",
+    "reviewer contact, engagement, consent, compensation, or publication permission",
+    "an ethics or applicability determination",
+    "a review, endorsement, validation, result, replication, or world-contact outcome"
+  ]
+}

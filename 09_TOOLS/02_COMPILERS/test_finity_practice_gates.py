@@ -103,6 +103,7 @@ EXPECTED_PREREQUISITES = {
     },
     "FPE-REVIEW-01": {
         "bundle_manifest",
+        "complete_review_materials_bundle",
         "conflict_form",
         "reviewer_scope_form",
         "compensation_terms",
@@ -439,15 +440,32 @@ class FinityPracticeGateTests(unittest.TestCase):
             execution = gate["execution"]
             prerequisites = execution["prerequisites"]
             self.assertEqual(set(prerequisites), EXPECTED_PREREQUISITES[gate["gate_id"]])
-            for record in prerequisites.values():
+            for name, record in prerequisites.items():
                 self.assertEqual(set(record), PREREQUISITE_RECORD_KEYS)
-                self.assertEqual(record["state"], "missing")
-                self.assertTrue(
-                    all(
-                        record[key] is None
-                        for key in PREREQUISITE_RECORD_KEYS - {"state"}
+                if gate["gate_id"] == "FPE-REVIEW-01" and name == "bundle_manifest":
+                    self.assertEqual(record["state"], "satisfied")
+                    self.assertEqual(
+                        record["artifact"],
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json",
                     )
-                )
+                    self.assertEqual(
+                        record["receipt"],
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json",
+                    )
+                    self.assertTrue(
+                        all(
+                            isinstance(record[key], str) and len(record[key]) == 64
+                            for key in ("sha256", "receipt_sha256")
+                        )
+                    )
+                else:
+                    self.assertEqual(record["state"], "missing")
+                    self.assertTrue(
+                        all(
+                            record[key] is None
+                            for key in PREREQUISITE_RECORD_KEYS - {"state"}
+                        )
+                    )
             self.assertEqual(execution["state"], "blocked")
             self.assertTrue(execution["ready_when"].strip())
         validate_lifecycle_evidence(self.registry, ROOT)
@@ -515,6 +533,20 @@ class FinityPracticeGateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_root = Path(temp_dir)
 
+            def temporary_registry() -> dict:
+                """External-receipt fixtures use a filesystem containing only fixtures."""
+
+                registry = cloned()
+                record = registry["gates"][1]["execution"]["prerequisites"]["bundle_manifest"]
+                record.update(
+                    state="missing",
+                    artifact=None,
+                    sha256=None,
+                    receipt=None,
+                    receipt_sha256=None,
+                )
+                return registry
+
             def bind_external(
                 registry: dict,
                 event: str,
@@ -543,7 +575,7 @@ class FinityPracticeGateTests(unittest.TestCase):
                     custodian_id=custodian,
                 )
 
-            same_custodian = cloned()
+            same_custodian = temporary_registry()
             for event in (
                 "data_collected",
                 "results_exist",
@@ -558,14 +590,14 @@ class FinityPracticeGateTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "matches original custody"):
                 validate_lifecycle_evidence(same_custodian, temp_root)
 
-            internal_replication = cloned()
+            internal_replication = temporary_registry()
             bind_external(internal_replication, "data_collected", "CUSTODIAN-DATA", external=False)
             bind_external(internal_replication, "results_exist", "CUSTODIAN-RESULT", external=False)
             bind_external(internal_replication, "independent_replication_exists", "K-7", external=True)
             with self.assertRaisesRegex(ValueError, "internal project custody"):
                 validate_lifecycle_evidence(internal_replication, temp_root)
 
-            missing_conflict_declaration = cloned()
+            missing_conflict_declaration = temporary_registry()
             bind_external(missing_conflict_declaration, "data_collected", "CUSTODIAN-DATA", external=False)
             bind_external(missing_conflict_declaration, "results_exist", "CUSTODIAN-RESULT", external=False)
             bind_external(

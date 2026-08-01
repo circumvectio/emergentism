@@ -133,20 +133,21 @@
       "gate_id": "FPE-REVIEW-01",
       "title": "Independent review",
       "packet": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
-      "packet_sha256": "d4eff350211c81d34e4868889ddbea21d322567dba6420499b969e456db6521c",
+      "packet_sha256": "1d8cea4ffd7b6e1899994e50647ddb021f5c335421be10742f9313098ac162ea",
       "packet_status": "typed",
       "contact_status": "deferred",
       "execution": {
         "state": "blocked",
         "prerequisites": {
-          "bundle_manifest": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
+          "bundle_manifest": {"state": "satisfied", "artifact": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json", "sha256": "31e79197496597707ccf8fc75d9a03664bd85ec9038ae1f003098caca66d638a", "receipt": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json", "receipt_sha256": "da56b7661efa94976df25af6d65e76481d0df41856b3eb920181ed5bebc3f33b"},
+          "complete_review_materials_bundle": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "conflict_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "reviewer_scope_form": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "compensation_terms": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "publication_permission": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null},
           "applicability_determination_recorded": {"state": "missing", "artifact": null, "sha256": null, "receipt": null, "receipt_sha256": null}
         },
-        "ready_when": "Every prerequisite is satisfied and one manifest binds the complete same-hash review bundle."
+        "ready_when": "Every prerequisite, including the complete review materials bundle, is satisfied and one manifest binds the complete same-hash review bundle."
       },
       "claim_card_ids": [
         "FIN01-01",
