@@ -21,6 +21,9 @@ This directory contains the pure Emergentist value owners:
 - [Rights, Duties, and Due Process](01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) —
   law-facing translation with consent, custody, contest, remedy, and exit;
 - [Transcendentals](01_TRANSCENDENTALS.md) — compact mapping surface.
+- [Objective Ethics Bridge Docket](02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md) — A4
+  research comparison docket; Justice remains a declared constitutional choice
+  while moral realism is evidence-open.
 
 The formal discipline is conjunctive: both the individual and the sustaining
 whole must remain non-decreasing, and strict syntropy requires both to rise.

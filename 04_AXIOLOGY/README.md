@@ -79,6 +79,8 @@ unconditional maximization claim is therefore false.
 | [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | Formal value owner: Justice, morals, ethics, syntropy, sacrifice |
 | [Rights, Duties, and Due Process](02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) | Law-facing translation of the dyad |
 | [The Good, the Evil, and the Transcendentals](02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) | Interpretive value language |
+| [Transcendentals](02_VALUE_THEORY/01_TRANSCENDENTALS.md) | Bounded Beauty, Truth, and Justice lens; no chart-coordinate warrant |
+| [Objective Ethics Bridge Docket](02_VALUE_THEORY/02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md) | A4 research docket; Justice remains chosen while moral realism is evidence-open |
 | [Bridge Laws](00_BRIDGE_LAWS_BETWEEN_LEVELS.md) | Cross-level creation, stabilization, and destruction tests |
 | [Extraction Law](00_THE_EXTRACTION_LAW.md) | Conditional extraction dynamics and counterexamples |
 | [Commandment vs Geometry](00_COMMANDMENT_VS_GEOMETRY.md) | Chosen vow versus analytic consequence |

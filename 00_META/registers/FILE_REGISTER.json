@@ -2,7 +2,7 @@
   "schema": "magnum-opus/file-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files + working-tree bytes (deterministic; no timestamps)",
-  "entry_count": 3444,
+  "entry_count": 3445,
   "entries": [
     {
       "path": ".claude/launch.json",
@@ -7871,7 +7871,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 17,
+      "inbound_references": 18,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -7888,7 +7888,7 @@
       "disposition": "keep",
       "destination": null,
       "absorber": null,
-      "inbound_references": 0,
+      "inbound_references": 2,
       "gate": null,
       "review_state": "unreviewed"
     },
@@ -7928,8 +7928,8 @@
     },
     {
       "path": "04_AXIOLOGY/02_VALUE_THEORY/README.md",
-      "sha256": "c99b837f98094f8cad7cade9bc54cb92b73af22ad2556a79f9227be68b50b51c",
-      "bytes": 1242,
+      "sha256": "0eb9a19126aa93970327a65bb117d199be82fd96644e18dcb4640200a9aea2e5",
+      "bytes": 1441,
       "owner_lane": "04_AXIOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -8047,8 +8047,8 @@
     },
     {
       "path": "04_AXIOLOGY/README.md",
-      "sha256": "6884f145432fe36b4832edadb7f533dc8ab39d523d1bdaa5e195fb71016f49a0",
-      "bytes": 4370,
+      "sha256": "9cb190d8c63cbfd28f1daf0eb1ccbbcaddf00471447a3b9da82ddcc478c5d8d0",
+      "bytes": 4675,
       "owner_lane": "04_AXIOLOGY",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -15981,6 +15981,23 @@
       "destination": null,
       "absorber": null,
       "inbound_references": 1,
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "09_TOOLS/02_COMPILERS/test_axiology_owner_indexes.py",
+      "sha256": "bef1b35386a58d25c18a5484564a8f2679adb3f77b1eb54ad3177d2c1c4c87e0",
+      "bytes": 2743,
+      "owner_lane": "09_TOOLS",
+      "artifact_class": "tool",
+      "authority_status": "unrated",
+      "evidence_tier": null,
+      "k_relation": null,
+      "public_projection": null,
+      "disposition": "keep",
+      "destination": null,
+      "absorber": null,
+      "inbound_references": 0,
       "gate": null,
       "review_state": "unreviewed"
     },
