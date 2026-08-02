@@ -595,6 +595,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             corpus = Path(directory)
             route_card = corpus / CHECKER.HELD_TOPOLOGY_ROUTE_CARD
             route_card.parent.mkdir(parents=True)
+            agent_route_card = corpus / CHECKER.HELD_TOPOLOGY_AGENT_ROUTE_CARD
             route_card_text = (
                 "## What It Owns\n\nSupport content only.\n\n"
                 "## What It Must Not Own\n\n"
@@ -602,7 +603,9 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                 "## Current Boundary\n\n"
                 f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['Current Boundary']}\n"
             )
+            agent_route_card_text = "# Agent route\n\nSupport routing only.\n"
             route_card.write_text(route_card_text, encoding="utf-8")
+            agent_route_card.write_text(agent_route_card_text, encoding="utf-8")
             self.assertEqual(CHECKER.unresolved_topology_errors(corpus), [])
             route_card.write_text(
                 route_card_text.replace(
@@ -655,8 +658,33 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                 errors,
             )
 
+            route_card.write_text(route_card_text, encoding="utf-8")
+            agent_route_card.write_text(
+                "# Agent route\n\nThis folder owns active governance law.\n",
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("active route surface asserts active governance ownership" in error for error in errors),
+                errors,
+            )
+
+            agent_route_card.unlink()
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
+                errors,
+            )
+
             outside = corpus / "outside.md"
             outside.write_text("route card", encoding="utf-8")
+            agent_route_card.symlink_to(outside)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
+                errors,
+            )
+
             route_card.unlink()
             route_card.symlink_to(outside)
             errors = CHECKER.unresolved_topology_errors(corpus)

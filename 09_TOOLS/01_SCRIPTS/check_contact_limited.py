@@ -139,6 +139,11 @@ PUBLIC_DOC_OWNER_DEBT_EVIDENCE = PUBLIC_DOC_EVIDENCE | {COHERENCE_PROFILE_EVIDEN
 TOPOLOGY_OWNER_DEBT_EVIDENCE = TOPOLOGY_EVIDENCE | {COHERENCE_PROFILE_EVIDENCE}
 HELD_ACTIVE_NONROOT_META_PATHS = {"08_FRAMEWORK_SUPPORT/00_META"}
 HELD_TOPOLOGY_ROUTE_CARD = Path("08_FRAMEWORK_SUPPORT/00_META/README.md")
+HELD_TOPOLOGY_AGENT_ROUTE_CARD = Path("08_FRAMEWORK_SUPPORT/00_META/AGENTS.md")
+HELD_TOPOLOGY_ACTIVE_ROUTE_SURFACES = (
+    HELD_TOPOLOGY_ROUTE_CARD,
+    HELD_TOPOLOGY_AGENT_ROUTE_CARD,
+)
 HELD_TOPOLOGY_ROUTE_CARD_SENTINELS = {
     "What It Must Not Own": "- Active governance law. Route that to `../01_GOVERNANCE/`.",
     "Current Boundary": (
@@ -449,63 +454,69 @@ def unresolved_topology_errors(root: Path) -> list[str]:
             + "; ".join(detail)
         )
     if HELD_ACTIVE_NONROOT_META_PATHS <= actual:
-        route_card_relative = HELD_TOPOLOGY_ROUTE_CARD.as_posix()
-        route_card = root / HELD_TOPOLOGY_ROUTE_CARD
-        if _has_symlink_component(root, route_card_relative) or not route_card.is_file():
-            errors.append(
-                "held 00_META route card must remain a regular, non-symlink README"
-            )
-        else:
+        route_surface_texts: dict[Path, str] = {}
+        for route_surface in HELD_TOPOLOGY_ACTIVE_ROUTE_SURFACES:
+            route_surface_relative = route_surface.as_posix()
+            target = root / route_surface
+            if _has_symlink_component(root, route_surface_relative) or not target.is_file():
+                errors.append(
+                    "held 00_META active route surface must remain a regular, "
+                    f"non-symlink file: {route_surface_relative}"
+                )
+                continue
             try:
-                route_card_text = route_card.read_text(encoding="utf-8")
+                route_surface_texts[route_surface] = target.read_text(encoding="utf-8")
             except OSError as exc:
                 errors.append(
-                    "held 00_META route card is unreadable: "
-                    f"{exc.__class__.__name__}"
+                    "held 00_META active route surface is unreadable: "
+                    f"{route_surface_relative}: {exc.__class__.__name__}"
                 )
-            else:
-                section_matches = {
-                    heading: _markdown_h2_sections(route_card_text, heading)
-                    for heading in HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS
+        route_card_text = route_surface_texts.get(HELD_TOPOLOGY_ROUTE_CARD)
+        active_boundary_texts: list[str] = []
+        if route_card_text is not None:
+            section_matches = {
+                heading: _markdown_h2_sections(route_card_text, heading)
+                for heading in HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS
+            }
+            missing_sections = [
+                heading for heading, sections in section_matches.items() if not sections
+            ]
+            duplicate_sections = [
+                heading for heading, sections in section_matches.items() if len(sections) > 1
+            ]
+            if missing_sections:
+                errors.append(
+                    "held 00_META route card lost an active ownership/boundary section"
+                )
+            if duplicate_sections:
+                errors.append(
+                    "held 00_META route card has duplicate active ownership/boundary "
+                    "headings: " + ", ".join(duplicate_sections)
+                )
+            if not missing_sections and not duplicate_sections:
+                active_sections = {
+                    heading: sections[0] for heading, sections in section_matches.items()
                 }
-                missing_sections = [
-                    heading for heading, sections in section_matches.items() if not sections
+                missing_sentinels = [
+                    heading
+                    for heading, sentinel in HELD_TOPOLOGY_ROUTE_CARD_SENTINELS.items()
+                    if sentinel not in active_sections[heading]
                 ]
-                duplicate_sections = [
-                    heading for heading, sections in section_matches.items() if len(sections) > 1
-                ]
-                if missing_sections:
+                if missing_sentinels:
                     errors.append(
-                        "held 00_META route card lost an active ownership/boundary section"
+                        "held 00_META route card lost its non-governance/upstream-route "
+                        "boundary sentinel from: " + ", ".join(missing_sentinels)
                     )
-                if duplicate_sections:
-                    errors.append(
-                        "held 00_META route card has duplicate active ownership/boundary "
-                        "headings: " + ", ".join(duplicate_sections)
-                    )
-                if not missing_sections and not duplicate_sections:
-                    active_sections = {
-                        heading: sections[0] for heading, sections in section_matches.items()
-                    }
-                    missing_sentinels = [
-                        heading
-                        for heading, sentinel in HELD_TOPOLOGY_ROUTE_CARD_SENTINELS.items()
-                        if sentinel not in active_sections[heading]
-                    ]
-                    if missing_sentinels:
-                        errors.append(
-                            "held 00_META route card lost its non-governance/upstream-route "
-                            "boundary sentinel from: " + ", ".join(missing_sentinels)
-                        )
-                    if HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION.search(
-                        "\n".join(
-                            section
-                            for section in active_sections.values()
-                        )
-                    ):
-                        errors.append(
-                            "held 00_META route card asserts active governance ownership"
-                        )
+                active_boundary_texts.extend(active_sections.values())
+        agent_route_text = route_surface_texts.get(HELD_TOPOLOGY_AGENT_ROUTE_CARD)
+        if agent_route_text is not None:
+            active_boundary_texts.append(agent_route_text)
+        if HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION.search(
+            "\n".join(active_boundary_texts)
+        ):
+            errors.append(
+                "held 00_META active route surface asserts active governance ownership"
+            )
     return errors
 
 
