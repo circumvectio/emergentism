@@ -104,6 +104,11 @@ TITAN_OPERATOR_FREE_FIXTURES = (
     "TitanFrame := 0_T | 1_T | ∞_T",
 )
 CURRENT_BOOK_MARKERS = {
+    "book/index.html": (
+        "Only a declared common strictly increasing reparameterization applied to both factors is assumed here:",
+        "independently reparameterized factor scales do not license an invariant cross-factor scalar ranking",
+        "GP-03 remains open.",
+    ),
     "manifesto/index.html": (
         "The One-Sitting Reader",
         "readable now &mdash; 12 chapters",

@@ -160,8 +160,8 @@ power**—the structured potential of the option field. Because D5 is merely
 possible, it never acts alone: an actual D4 model token must estimate it as
 `Φ̂₄=Eval₄(M,Φ₅)`. Both factors carry order, not metric. The selected node
 convention is `P_node:=min(Φ̂₄,V₄)`. The historical shorthand `ΦV` remains
-readable but is retired as a ranking; a product requires separately defended
-cardinal scales. Ability still does not imply authorization.
+readable but is retired as a ranking. Only a declared common strictly increasing reparameterization applied to both factors is assumed here: independently reparameterized factor scales do not license an invariant cross-factor scalar ranking, so GP-03 remains open. A product requires separately defended cardinal scales.
+Ability still does not imply authorization.
 
 This is an unusual reach, not superiority in intrinsic worth. Humans remain
 bounded by physical light cones, bodies, ecology and limited computation. The

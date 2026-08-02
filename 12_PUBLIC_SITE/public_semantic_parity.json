@@ -7,7 +7,7 @@
     "register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "graph": "00_META/registers/CLAIM_GRAPH.json",
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+    "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
     "lifecycle": "reader_synthesis",
     "publicDisposition": "bounded_current",
     "boundary": "Claim-card bindings route public language; they provide no evidence and create no semantic owner."
@@ -34,7 +34,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+          "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-13",
@@ -73,7 +73,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+          "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -140,7 +140,7 @@
         },
         {
           "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+          "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
           "lifecycle": "reader_synthesis",
           "claimCardIds": [
             "OS01-08",
@@ -190,7 +190,7 @@
         "OS01-01",
         "OS01-02"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "titans",
@@ -223,7 +223,7 @@
         "OS01-03",
         "OS01-04"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "logline",
@@ -255,7 +255,7 @@
       "claimCardIds": [
         "OS01-05"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "muLimit",
@@ -288,7 +288,7 @@
         "OS01-06",
         "OS01-07"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "bloch",
@@ -320,7 +320,7 @@
       "claimCardIds": [
         "OS01-08"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "horn",
@@ -355,7 +355,7 @@
         "OS01-11",
         "OS01-12"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "burrisphere",
@@ -397,7 +397,7 @@
         "OS01-25",
         "OS01-26"
       ],
-      "sourceRevision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+      "sourceRevision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
       "lifecycle": "reader_synthesis",
       "publicDisposition": "bounded_current",
       "illustrationMode": "ccc",

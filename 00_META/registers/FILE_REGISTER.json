@@ -2505,7 +2505,7 @@
     },
     {
       "path": "00_META/registers/CLAIM_LIFECYCLE_INVENTORY.json",
-      "sha256": "1141e80af498e0f81e30069b46e5a260baddf6c0c6fb5f56cb23d424bfd2bf9b",
+      "sha256": "69477b4de0d6790a644b1d1b5100f0afeb6920840254ef58f15d8578b4ba5f03",
       "bytes": 7678,
       "owner_lane": "00_META",
       "artifact_class": "config",
@@ -2947,8 +2947,8 @@
     },
     {
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
-      "bytes": 23093,
+      "sha256": "a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
+      "bytes": 23320,
       "owner_lane": "root",
       "artifact_class": "doctrine",
       "authority_status": "unrated",
@@ -16173,8 +16173,8 @@
     },
     {
       "path": "09_TOOLS/02_COMPILERS/test_lived_weltanschauung.py",
-      "sha256": "b293deeb181086065de20780b9724b3ded5a3a96686aa0c283faf1aa5a9df43d",
-      "bytes": 13400,
+      "sha256": "97465ab624772c56baa812c4c56cdd632ee56d8c43b8a984040a42df76c76e32",
+      "bytes": 14272,
       "owner_lane": "09_TOOLS",
       "artifact_class": "tool",
       "authority_status": "unrated",
@@ -28413,7 +28413,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/book/build-manifest.json",
-      "sha256": "b032e76df359e307c7052789e72df529ef53ca4de82fb85071acbed76514b02f",
+      "sha256": "7c45dab666e72529f737ad89069667752d0ddde18f26335daa36b0517f22066b",
       "bytes": 3190,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -28430,8 +28430,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/book/index.html",
-      "sha256": "e139ebdc6f95e15ed54cdb3da9b8ed5e9cf404e1e1878bd5f843f94b5f0e8f3b",
-      "bytes": 50264,
+      "sha256": "feb45465e0e172d3d09845127ac184f8ec63f403339cf38b61caebf3f3eb52d3",
+      "bytes": 50491,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -28447,7 +28447,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/book/rag_index.json",
-      "sha256": "d4b0fef6c1b65b4dbcf5e9708f75b4fe86801f5c8fd00874d3a2c3484b2b5fb9",
+      "sha256": "1799103bc3119b27147e19ff557fbf9bf38b60aabdb43573776707fe8ff1d109",
       "bytes": 62543,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -28855,8 +28855,8 @@
     },
     {
       "path": "12_PUBLIC_SITE/check_public_semantic_parity.py",
-      "sha256": "2ef0c8754c0497e48ef7cc5a82854f9b5c3c72063d9a82f792fabed7dbd2f9f4",
-      "bytes": 24316,
+      "sha256": "2cfb4b269226efb40edb9ae896639d08e34d6357e4eb1e7bb4f9a4ecfb84e1ec",
+      "bytes": 24604,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
       "authority_status": "unrated",
@@ -32969,7 +32969,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/public_semantic_parity.json",
-      "sha256": "27fa221ab5e78e8fc9ea8c7f5c154efa26b5d2177e8c5dc174db4a554e2c363d",
+      "sha256": "986667f480923e7698710687845b7b8853cd52dea68fda31936a6460cad3de4c",
       "bytes": 24842,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -33122,7 +33122,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/reading-manifest.json",
-      "sha256": "7952cc56ea0dded07153c31b3600e3c5b4fa8f1257d3be30b20ec776d6a782ec",
+      "sha256": "ba0696a6241551e5a7e7c8a58f4c7a451ab3d153918153698933e4c51b884934",
       "bytes": 69052,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",
@@ -34176,7 +34176,7 @@
     },
     {
       "path": "12_PUBLIC_SITE/sw.js",
-      "sha256": "e95a4f54af39f0324d8929498a5742417c85528ec05d730de6a6b4f2c192d683",
+      "sha256": "e47d22643057a78d4783ee79add79a4be7f42be5c2b53aec204556f459f959ed",
       "bytes": 3708,
       "owner_lane": "12_PUBLIC_SITE",
       "artifact_class": "site",

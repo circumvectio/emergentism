@@ -104,6 +104,21 @@ class LivedWeltanschauungTests(unittest.TestCase):
         ):
             self.assertNotIn(forbidden, self.book)
 
+    def test_node_score_keeps_the_cross_factor_scale_boundary(self) -> None:
+        marker = (
+            "Only a declared common strictly increasing reparameterization applied "
+            "to both factors is assumed here: "
+            "independently reparameterized factor scales do not license an "
+            "invariant cross-factor scalar ranking, so GP-03 remains open."
+        )
+        self.assertIn(marker, self.book_flat)
+        self.assertIn(marker, re.sub(r"\s+", " ", self.public_book))
+        card = next(card for card in self.cards["cards"] if card["card_id"] == "OS01-09")
+        self.assertEqual(card["locator"], {"section": "6", "line_start": 149, "line_end": 163})
+        lines = self.book.splitlines()
+        covered = "\n".join(lines[card["locator"]["line_start"] - 1 : card["locator"]["line_end"]])
+        self.assertIn(marker, covered)
+
     def test_human_condition_answers_without_solving_mysteries(self) -> None:
         for heading in (
             "What a person is",

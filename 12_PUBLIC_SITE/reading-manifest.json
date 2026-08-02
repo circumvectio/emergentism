@@ -1807,7 +1807,7 @@
       }
     },
     "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "source_revision": "sha256:c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101",
+    "source_revision": "sha256:a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad",
     "lifecycle": "reader_synthesis",
     "public_disposition": "bounded_current",
     "claim_card_ids": [
@@ -1843,7 +1843,7 @@
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
     "claim_graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "build_manifest": "book/build-manifest.json",
-    "output_sha256": "e139ebdc6f95e15ed54cdb3da9b8ed5e9cf404e1e1878bd5f843f94b5f0e8f3b",
+    "output_sha256": "feb45465e0e172d3d09845127ac184f8ec63f403339cf38b61caebf3f3eb52d3",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."
   }
 }

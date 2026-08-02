@@ -88,7 +88,7 @@
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "e139ebdc6f95e15ed54cdb3da9b8ed5e9cf404e1e1878bd5f843f94b5f0e8f3b"
+    "sha256": "feb45465e0e172d3d09845127ac184f8ec63f403339cf38b61caebf3f3eb52d3"
   },
   "renderer": {
     "extensions": [
@@ -106,7 +106,7 @@
       "lifecycle": "reader_synthesis",
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "public_eligible": true,
-      "sha256": "c6f3cc94a045c5e271bb022b4a42b49c085afe0b4761259c2c7d9e0a5a541101"
+      "sha256": "a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad"
     }
   ],
   "withheld_provenance": {
