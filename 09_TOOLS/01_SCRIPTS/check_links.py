@@ -17,6 +17,7 @@ WHAT IT CHECKS
   · every Markdown inline link `[text](target)` in the active corpus
   · relative targets resolved against the linking file's own directory
   · absolute-looking `/path` targets resolved from the repository root
+  · every local target remains inside the repository after resolution
   · an `#anchor` on a local Markdown target must exist as a heading or id in that file
 
 WHAT IT DOES NOT CHECK
@@ -109,6 +110,14 @@ def resolve(src: Path, target: str) -> Path | None:
     return (src.parent / clean).resolve()
 
 
+def is_inside_root(path: Path) -> bool:
+    try:
+        path.relative_to(ROOT.resolve())
+    except ValueError:
+        return False
+    return True
+
+
 def collect() -> tuple[list[str], int]:
     broken: list[str] = []
     checked = 0
@@ -126,6 +135,9 @@ def collect() -> tuple[list[str], int]:
                 continue
             checked += 1
             line = text[: m.start()].count("\n") + 1
+            if not is_inside_root(dest):
+                broken.append(f"{rel_src}:{line}: target escapes corpus -> {target}")
+                continue
             if not dest.exists():
                 broken.append(f"{rel_src}:{line}: missing target -> {target}")
                 continue

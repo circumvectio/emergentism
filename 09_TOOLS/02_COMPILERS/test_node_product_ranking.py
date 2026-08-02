@@ -68,12 +68,11 @@ class NodeProductRankingTests(unittest.TestCase):
             with self.subTest(text=text):
                 self.assert_allowed(text)
 
-    def test_scope_matches_active_corpus_contract(self) -> None:
+    def test_scope_includes_declared_current_and_provisional_public_routes_only(self) -> None:
         active = ROOT / "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
         excluded = (
             ROOT / "05_COSMOLOGY/90_ARCHIVE/example.md",
             ROOT / "91_COMPATIBILITY/example.md",
-            ROOT / "12_PUBLIC_SITE/example.md",
             ROOT / "00_HANDOFF/example.md",
             ROOT / "11_UPLINK/50_AUDITS_AND_EXECUTIONS/example.md",
             ROOT / "11_UPLINK/60_SESSION_PACKETS/example.md",
@@ -87,6 +86,13 @@ class NodeProductRankingTests(unittest.TestCase):
         for path in excluded:
             with self.subTest(path=path):
                 self.assertFalse(module.is_node_ranking_scoped(path))
+
+        declared = set(module.declared_public_paths())
+        self.assertIn(ROOT / "12_PUBLIC_SITE/book/index.html", declared)
+        self.assertIn(ROOT / "12_PUBLIC_SITE/amrita/index.html", declared)
+        self.assertIn(ROOT / "12_PUBLIC_SITE/living-map.json", declared)
+        self.assertNotIn(ROOT / "12_PUBLIC_SITE/canon/the-burrisphere/index.html", declared)
+        self.assertNotIn(ROOT / "12_PUBLIC_SITE/finity-papers/index.html", declared)
 
     def test_fixture_is_the_only_file_exclusion(self) -> None:
         self.assertEqual(

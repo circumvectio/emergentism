@@ -19,6 +19,11 @@ from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[2]
+LINK_CHECKER_PATH = ROOT / "09_TOOLS/01_SCRIPTS/check_links.py"
+link_spec = importlib.util.spec_from_file_location("check_links", LINK_CHECKER_PATH)
+assert link_spec and link_spec.loader
+link_checker = importlib.util.module_from_spec(link_spec)
+link_spec.loader.exec_module(link_checker)
 
 PATHS = {
     "completion": ROOT / "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
@@ -640,6 +645,26 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
                 if not resolved.exists():
                     broken.append(f"{path.relative_to(ROOT)} -> {target}")
         self.assertEqual(broken, [], "Broken active Markdown links:\n" + "\n".join(broken))
+
+    def test_markdown_link_guard_rejects_existing_target_outside_corpus(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixture_root = Path(tmp)
+            corpus = fixture_root / "corpus"
+            corpus.mkdir()
+            outside = fixture_root / "outside.md"
+            outside.write_text("outside", encoding="utf-8")
+            (corpus / "entry.md").write_text("[escape](../outside.md)", encoding="utf-8")
+
+            original_root = link_checker.ROOT
+            try:
+                link_checker.ROOT = corpus
+                broken, checked = link_checker.collect()
+            finally:
+                link_checker.ROOT = original_root
+
+        self.assertEqual(checked, 1)
+        self.assertEqual(len(broken), 1)
+        self.assertIn("target escapes corpus", broken[0])
 
     def test_legacy_crosswalks_cannot_restore_superseded_types(self):
         formal_index = read("formal_index")

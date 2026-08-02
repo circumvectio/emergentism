@@ -84,8 +84,12 @@ class ActiveReceiptCitationTests(unittest.TestCase):
 
     def commit_all(self, message: str) -> None:
         subprocess.run(["git", "add", "."], cwd=self.root, check=True)
+        # This disposable fixture needs Git history, not the workstation's
+        # corpus pre-commit hook (which would recursively run the outer gate).
         subprocess.run(
-            ["git", "commit", "-q", "-m", message], cwd=self.root, check=True
+            ["git", "commit", "--no-verify", "-q", "-m", message],
+            cwd=self.root,
+            check=True,
         )
 
     @contextmanager

@@ -55,6 +55,10 @@ CHECKS=(
   "09_TOOLS/01_SCRIPTS/check_record_counters.py"
   "09_TOOLS/01_SCRIPTS/check_review_bundle.py"
   "09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py"
+  # The artifact wrapper proves its generators agree, but it does not run the
+  # release boundary itself. Keep predeploy in the corpus gate so an otherwise
+  # green local gate cannot omit the current/provisional public semantics.
+  "12_PUBLIC_SITE/predeploy_check.py"
   # Wired in 2026-07-31. All four existed on disk and were invoked by NOTHING, so the
   # properties they test were unguarded. check_q4_declarations.py is new and exists because
   # build_pwa.py silently reverted a signed ruling while this gate reported PASS.

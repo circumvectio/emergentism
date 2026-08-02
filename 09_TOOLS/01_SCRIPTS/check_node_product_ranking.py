@@ -5,12 +5,16 @@ KSC-02 selects ``min`` over the ordinal node factors. Product forms remain
 readable only as explicit history, a rejected result, or a candidate under a
 separately defended cardinal-scale contract. This checker deliberately shares
 the active-corpus boundary with ``check_emergentism_purity.py``; archives,
-handoffs, generated registers, the public projection, session packets, and
-managed-agent projections are therefore outside this gate.
+handoffs, generated registers, historical public projection, session packets,
+and managed-agent projections are therefore outside this gate. The declared
+current and provisional public routes are an explicit exception: they are live
+claim surfaces and must receive the same regression fence without pulling
+frozen pages into the scan.
 """
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -22,6 +26,11 @@ from check_emergentism_purity import ROOT, TEXT_SUFFIXES, is_active_corpus_file
 # strings used as negative controls for this checker.
 FIXTURE_EXCLUSION = Path("09_TOOLS/02_COMPILERS/test_node_product_ranking.py")
 MANAGED_PROJECTION_PREFIX = Path("08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS")
+PUBLIC_PROJECTION_DIR = Path("12_PUBLIC_SITE")
+PUBLIC_PARITY_MANIFEST = PUBLIC_PROJECTION_DIR / "public_semantic_parity.json"
+# TEXT_SUFFIXES already includes .json; spell it out here because living-map.json is a
+# declared current public surface and must remain visibly inside this projection fence.
+PUBLIC_TEXT_SUFFIXES = TEXT_SUFFIXES | {".css", ".html", ".js", ".json"}
 
 # Uppercase node-product spellings. Implicit multiplication is accepted only
 # for the established compact forms (PhiV and hatted/subscripted factors); a
@@ -284,12 +293,58 @@ def active_paths(root: Path = ROOT) -> list[Path]:
     return sorted(paths)
 
 
+def declared_public_paths(root: Path = ROOT) -> list[Path]:
+    """Return only public routes explicitly declared current or provisional.
+
+    The manifest's frozen roots, withheld artifacts, infrastructure routes, and every
+    arbitrary path below ``12_PUBLIC_SITE`` stay outside this semantic scan. This is a
+    narrow projection extension, not a reclassification of historical public bytes.
+    """
+
+    site = (root / PUBLIC_PROJECTION_DIR).resolve()
+    manifest_path = root / PUBLIC_PARITY_MANIFEST
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    current = manifest.get("currentSurfaces")
+    provisional = manifest.get("declaredProvisional", {}).get("routes")
+    if not isinstance(current, list) or not isinstance(provisional, list):
+        raise ValueError("public lifecycle manifest must provide current and provisional path lists")
+
+    paths: list[Path] = []
+    for rel in current + provisional:
+        if not isinstance(rel, str) or not rel or Path(rel).is_absolute():
+            raise ValueError(f"invalid declared public route: {rel!r}")
+        path = (site / rel).resolve()
+        try:
+            path.relative_to(site)
+        except ValueError as exc:
+            raise ValueError(f"declared public route escapes 12_PUBLIC_SITE: {rel!r}") from exc
+        if path.suffix.lower() in PUBLIC_TEXT_SUFFIXES:
+            paths.append(path)
+    return sorted(set(paths))
+
+
+def scanned_paths(root: Path = ROOT) -> list[Path]:
+    """Union active corpus paths with declared current/provisional public routes."""
+
+    return sorted(set(active_paths(root)) | set(declared_public_paths(root)))
+
+
 def check_active_corpus(root: Path = ROOT) -> tuple[list[str], int]:
     errors: list[str] = []
-    paths = active_paths(root)
+    try:
+        paths = scanned_paths(root)
+    except (OSError, ValueError) as exc:
+        return [f"public projection scope is unreadable: {exc}"], 0
     for path in paths:
         rel = path.relative_to(root)
-        text = path.read_text(encoding="utf-8")
+        if not path.is_file():
+            errors.append(f"{rel}: declared current/provisional public route is missing")
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError as exc:
+            errors.append(f"{rel}: unreadable declared current/provisional public route: {exc}")
+            continue
         for line_no, line in violations_in_text(text, rel):
             errors.append(
                 f"{rel}:{line_no}: retired node-product used as a current ordering: {line}"

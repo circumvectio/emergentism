@@ -66,8 +66,11 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
     def commit_all(self, repo: Path, message: str) -> None:
         subprocess.run(["git", "-C", str(repo), "add", "-A"], check=True)
+        # This disposable fixture needs Git history, not the workstation's
+        # corpus pre-commit hook (which would recursively run the outer gate).
         subprocess.run(
-            ["git", "-C", str(repo), "commit", "-qm", message], check=True
+            ["git", "-C", str(repo), "commit", "--no-verify", "-qm", message],
+            check=True,
         )
 
     def create_receipt_lanes(self, repo: Path) -> None:
