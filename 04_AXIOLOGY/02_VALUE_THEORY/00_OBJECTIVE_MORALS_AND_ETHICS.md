@@ -93,7 +93,7 @@ choose the least visible victim.
 
 ## 5. The Good
 
-Emergentism chooses the Good as the simultaneous holding of:
+Emergentism chooses `GoodTriad` as the simultaneous holding of:
 
 ```text
 True      = claims remain at evidence tier and answer to receipts
@@ -101,10 +101,23 @@ Beautiful = form coheres while showing its seams
 Just      = every affected bearer remains visible, contestable, and leaveable
 ```
 
-This is AND-class coupling: a zero in any factor defeats the verdict. No unique
+This is AND-class coupling: a zero in any factor withholds the `GoodTriad` label. No unique
 numeric product is implied. Truth without Justice can optimize harm; Beauty
 without Truth can seduce; Justice without truthful contact can misallocate
 care. The triad is a normative compass, not a theorem of nature.
+
+Do not confuse it with action feasibility:
+
+```text
+JusticeAdmissible(a) := J(a;i,H,B(a))
+GoodTriad(x)         := TruthPass(x) ∧ FormPass(x) ∧ JusticePass(x)
+```
+
+`JusticeAdmissible` is the constitutional filter used by Power-Max and tragic
+action. `GoodTriad` is a broader evaluative/publication label. An urgent just act
+is not forbidden merely because its expression is inelegant, and honest
+uncertainty is not falsehood. Beauty and rhetoric never veto due process or
+inflate evidence.
 
 ## 6. Voluntary sacrifice
 
@@ -118,8 +131,8 @@ Coerced or hidden sacrifice is extraction.
 
 ## 7. Demon and god vocabulary
 
-The demon/god analogy describes the **direction of a move**, not a permanent
-kind of person:
+The demon/god analogy is an optional **verdict on a completed move record**, not
+its raw sign signature and never a permanent kind of person:
 
 - demon-polar: local gain purchased by contracting another bearer's durable
   potential or option cone;

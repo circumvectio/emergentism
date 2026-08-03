@@ -364,17 +364,18 @@ This is not a new fundamental force. It is a ledger discipline for open systems.
 A system is syntropic when its constraint architecture increases local
 organization without hiding its exported entropy and control costs.
 
-For conscious agency, the dyadic version is stricter:
+For conscious agency, the dyadic version keeps the two factors and the two
+bearers visible:
 
 ```text
 P_node,i = min(Phi_hat_4_i, V_4_i)
 P_node,H = min(Phi_hat_4_H, V_4_H)
 
-strict syntropy:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
+default profile test:
+N_node,i(after) >=_P N_node,i(before)
+N_node,H(after) >=_P N_node,H(before)
 eta = 0
-at least one inequality is strict
+at least one coordinate improvement is strict
 ```
 
 These are ordinal comparisons under `KSC-02`, not quantities licensed for

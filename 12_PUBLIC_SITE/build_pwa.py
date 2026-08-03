@@ -108,6 +108,11 @@ def safe_spine() -> list[str]:
     parity = json.loads(PARITY_MANIFEST.read_text(encoding="utf-8"))
     withheld = json.loads(WITHHELD_REGISTRY.read_text(encoding="utf-8"))
     frozen = set(parity["frozenLibraryRoots"])
+    frozen_legacy_artifacts = set(parity.get("frozenLegacySurfaces", []))
+    frozen_legacy_routes = {
+        "/" + (str(Path(artifact).parent) if Path(artifact).name == "index.html" else str(Path(artifact).with_suffix("")))
+        for artifact in frozen_legacy_artifacts
+    }
     withheld_artifacts = {item["artifact"] for item in withheld["artifacts"]}
     withheld_routes = {
         route.rstrip("/") or "/"
@@ -127,7 +132,13 @@ def safe_spine() -> list[str]:
         artifact = route_to_artifact(route)
         root_name = artifact.split("/", 1)[0]
         normalized_route = route.rstrip("/") or "/"
-        if root_name in frozen or artifact in withheld_artifacts or normalized_route in withheld_routes:
+        if (
+            root_name in frozen
+            or artifact in frozen_legacy_artifacts
+            or normalized_route in frozen_legacy_routes
+            or artifact in withheld_artifacts
+            or normalized_route in withheld_routes
+        ):
             raise ValueError(f"PWA spine includes frozen or withheld route: {route}")
         if not (ROOT / artifact).is_file() and artifact not in {
             "manifest.webmanifest", "offline/index.html",
@@ -146,6 +157,11 @@ def public_withheld_routes() -> list[str]:
 
 def content_version(spine: list[str]) -> str:
     digest = hashlib.sha256()
+    # Withholding changes must rotate the cache even when every spine byte is
+    # unchanged, so activation can delete caches that may contain newly
+    # withheld historical routes.
+    digest.update(b"withheld-routes.json\0")
+    digest.update(WITHHELD_REGISTRY.read_bytes())
     for route in spine:
         artifact = ROOT / route_to_artifact(route)
         digest.update(route.encode("utf-8"))

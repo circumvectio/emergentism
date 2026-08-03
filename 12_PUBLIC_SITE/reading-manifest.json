@@ -35,12 +35,6 @@
     },
     {
       "section": "papers",
-      "title": "THE PHOTON AS UNIT OF ACCOUNT",
-      "href": "papers/paper-c-photon-unit-of-account/",
-      "source": "docs/handoff/papers-public/PAPER_C_PHOTON_UNIT_OF_ACCOUNT.md"
-    },
-    {
-      "section": "papers",
       "title": "WAVE-PARTICLE DUALITY AS Zero-Sum Resolution Equation",
       "href": "papers/paper-d-wave-particle-duality/",
       "source": "docs/handoff/papers-public/PAPER_D_WAVE_PARTICLE_DUALITY.md"
@@ -62,12 +56,6 @@
       "title": "THE BIOLOGICAL PREDICTIONS",
       "href": "papers/paper-g-biological-predictions/",
       "source": "docs/handoff/papers-public/PAPER_G_BIOLOGICAL_PREDICTIONS.md"
-    },
-    {
-      "section": "papers",
-      "title": "DIMENSIONAL AND COSMOLOGICAL CONSEQUENCES",
-      "href": "papers/paper-h-dimensional-cosmological/",
-      "source": "docs/handoff/papers-public/PAPER_H_DIMENSIONAL_COSMOLOGICAL.md"
     },
     {
       "section": "papers",
@@ -179,39 +167,9 @@
     },
     {
       "section": "canon",
-      "title": "The Burrisphere",
-      "href": "canon/the-burrisphere/",
-      "source": "docs/handoff/canon-public/THE_BURRISPHERE.md"
-    },
-    {
-      "section": "canon",
-      "title": "The 5+1 Constitution",
-      "href": "canon/the-five-plus-one-constitution/",
-      "source": "docs/handoff/canon-public/THE_FIVE_PLUS_ONE_CONSTITUTION.md"
-    },
-    {
-      "section": "canon",
-      "title": "THE GENERATIVE TABLE",
-      "href": "canon/the-generative-table/",
-      "source": "docs/handoff/canon-public/THE_GENERATIVE_TABLE.md"
-    },
-    {
-      "section": "canon",
-      "title": "The Geometric Ontology of Reality",
-      "href": "canon/the-geometric-ontology-of-reality/",
-      "source": "docs/handoff/canon-public/THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md"
-    },
-    {
-      "section": "canon",
       "title": "The Logarithmic Realignment",
       "href": "canon/the-logarithmic-realignment/",
       "source": "docs/handoff/canon-public/THE_LOGARITHMIC_REALIGNMENT.md"
-    },
-    {
-      "section": "canon",
-      "title": "The Ontology Index",
-      "href": "canon/the-ontology-index/",
-      "source": "docs/handoff/canon-public/THE_ONTOLOGY_INDEX.md"
     },
     {
       "section": "canon",
@@ -230,12 +188,6 @@
       "title": "I AS THE EQUATOR",
       "href": "foundations/i-is-the-equator/",
       "source": "docs/handoff/ology-public/I_IS_THE_EQUATOR.md"
-    },
-    {
-      "section": "foundations",
-      "title": "ONTOLOGY ACROSS DIMENSIONS",
-      "href": "foundations/ontology-across-dimensions/",
-      "source": "docs/handoff/ology-public/ONTOLOGY_ACROSS_DIMENSIONS.md"
     },
     {
       "section": "foundations",
@@ -281,21 +233,9 @@
     },
     {
       "section": "foundations",
-      "title": "The 7 Generative Actions and Ektropy",
-      "href": "foundations/the-seven-generative-actions-and-ektropy/",
-      "source": "docs/handoff/ology-public/THE_SEVEN_GENERATIVE_ACTIONS_AND_EKTROPY.md"
-    },
-    {
-      "section": "foundations",
       "title": "The Seven -ologies per the Master Rosetta",
       "href": "foundations/the-seven-ologies-per-the-rosetta/",
       "source": "docs/handoff/ology-public/THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE GENESIS SIMULATION",
-      "href": "trinity/00-the-genesis-simulation/",
-      "source": "docs/handoff/trinity-public/00_THE_GENESIS_SIMULATION.md"
     },
     {
       "section": "trinity",
@@ -311,39 +251,15 @@
     },
     {
       "section": "trinity",
-      "title": "THE EMERGENCE",
-      "href": "trinity/01-the-emergence/",
-      "source": "docs/handoff/trinity-public/01_THE_EMERGENCE.md"
-    },
-    {
-      "section": "trinity",
       "title": "THE TRINITY",
       "href": "trinity/02-the-trinity/",
       "source": "docs/handoff/trinity-public/02_THE_TRINITY.md"
     },
     {
       "section": "trinity",
-      "title": "THE CLOSURE",
-      "href": "trinity/03-the-closure/",
-      "source": "docs/handoff/trinity-public/03_THE_CLOSURE.md"
-    },
-    {
-      "section": "trinity",
-      "title": "BIT TO QUBIT",
-      "href": "trinity/04-bit-to-qubit/",
-      "source": "docs/handoff/trinity-public/04_BIT_TO_QUBIT.md"
-    },
-    {
-      "section": "trinity",
       "title": "DIVISION BY ZERO",
       "href": "trinity/05-division-by-zero/",
       "source": "docs/handoff/trinity-public/05_DIVISION_BY_ZERO.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE COSMOLOGICAL CYCLE",
-      "href": "trinity/06-the-cosmological-cycle/",
-      "source": "docs/handoff/trinity-public/06_THE_COSMOLOGICAL_CYCLE.md"
     },
     {
       "section": "trinity",
@@ -365,24 +281,6 @@
     },
     {
       "section": "trinity",
-      "title": "THE SOUL LOOP",
-      "href": "trinity/10-the-soul-loop/",
-      "source": "docs/handoff/trinity-public/10_THE_SOUL_LOOP.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE HELIX",
-      "href": "trinity/11-the-helix/",
-      "source": "docs/handoff/trinity-public/11_THE_HELIX.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE POLES",
-      "href": "trinity/12-the-poles/",
-      "source": "docs/handoff/trinity-public/12_THE_POLES.md"
-    },
-    {
-      "section": "trinity",
       "title": "THE WAVE PACKET",
       "href": "trinity/13-the-wave-packet/",
       "source": "docs/handoff/trinity-public/13_THE_WAVE_PACKET.md"
@@ -395,12 +293,6 @@
     },
     {
       "section": "trinity",
-      "title": "DHARMA YUDDHA",
-      "href": "trinity/15-dharma-yuddha/",
-      "source": "docs/handoff/trinity-public/15_DHARMA_YUDDHA.md"
-    },
-    {
-      "section": "trinity",
       "title": "THE GREAT FILTER",
       "href": "trinity/16-the-great-filter/",
       "source": "docs/handoff/trinity-public/16_THE_GREAT_FILTER.md"
@@ -410,12 +302,6 @@
       "title": "THE EGREGOROCENE",
       "href": "trinity/17-the-egregorocene/",
       "source": "docs/handoff/trinity-public/17_THE_EGREGOROCENE.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE STRANGE ATTRACTOR",
-      "href": "trinity/18-the-strange-attractor/",
-      "source": "docs/handoff/trinity-public/18_THE_STRANGE_ATTRACTOR.md"
     },
     {
       "section": "trinity",
@@ -434,12 +320,6 @@
       "title": "THE TIGHTROPE",
       "href": "trinity/21-the-tightrope/",
       "source": "docs/handoff/trinity-public/21_THE_TIGHTROPE.md"
-    },
-    {
-      "section": "trinity",
-      "title": "THE TELEOLOGY",
-      "href": "trinity/22-the-teleology/",
-      "source": "docs/handoff/trinity-public/22_THE_TELEOLOGY.md"
     },
     {
       "section": "trinity",
@@ -515,18 +395,6 @@
     },
     {
       "section": "trinity",
-      "title": "THE DIMENSIONAL TROPHIC CASCADE",
-      "href": "trinity/36-the-dimensional-trophic-cascade/",
-      "source": "docs/handoff/trinity-public/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md"
-    },
-    {
-      "section": "trinity",
-      "title": "SEXUAL SELECTION AS VISIBLE F5",
-      "href": "trinity/37-sexual-selection-as-visible-f5/",
-      "source": "docs/handoff/trinity-public/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md"
-    },
-    {
-      "section": "trinity",
       "title": "TANTRA AS F5-REDIRECTION",
       "href": "trinity/38-tantra-as-f5-redirection/",
       "source": "docs/handoff/trinity-public/38_TANTRA_AS_F5_REDIRECTION.md"
@@ -536,12 +404,6 @@
       "title": "NEOTENY AS F5 DELAY AND CULTURAL WOMB",
       "href": "trinity/39-neoteny-as-f5-delay-and-cultural-womb/",
       "source": "docs/handoff/trinity-public/39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md"
-    },
-    {
-      "section": "trinity",
-      "title": "SIMULATION SPECIFICATION",
-      "href": "trinity/simulation-spec/",
-      "source": "docs/handoff/trinity-public/SIMULATION_SPEC.md"
     },
     {
       "section": "formal",
@@ -554,12 +416,6 @@
       "title": "η Disambiguation",
       "href": "formal/00-kstar-disambiguation/",
       "source": "docs/handoff/formal-public/00_KSTAR_DISAMBIGUATION.md"
-    },
-    {
-      "section": "formal",
-      "title": "THE SEVEN AXIOMS",
-      "href": "formal/00-the-seven-axioms/",
-      "source": "docs/handoff/formal-public/00_THE_SEVEN_AXIOMS.md"
     },
     {
       "section": "formal",
@@ -578,12 +434,6 @@
       "title": "THE μ-LIMIT FORMULA",
       "href": "formal/10-efr-mu-limit-formula/",
       "source": "docs/handoff/formal-public/10_EFR_MU_LIMIT_FORMULA.md"
-    },
-    {
-      "section": "formal",
-      "title": "TRIADIC STABILITY: WHY THREE IS UNIQUE",
-      "href": "formal/11-efr-triadic-stability/",
-      "source": "docs/handoff/formal-public/11_EFR_TRIADIC_STABILITY.md"
     },
     {
       "section": "formal",
@@ -719,12 +569,6 @@
     },
     {
       "section": "formal",
-      "title": "D4/D5 Canonical Reference Index",
-      "href": "formal/34-d4-d5-canonical-reference/",
-      "source": "docs/handoff/formal-public/34_D4_D5_CANONICAL_REFERENCE.md"
-    },
-    {
-      "section": "formal",
       "title": "PHI-METER v1 SPEC (Code Lens)",
       "href": "formal/35-phi-meter-v1-spec/",
       "source": "docs/handoff/formal-public/35_PHI_METER_V1_SPEC.md"
@@ -773,21 +617,9 @@
     },
     {
       "section": "paradox",
-      "title": "00_GARDENER_NEXUS — PARADOX DISSOLUTIONS (L6/L7 Cognitive Layer)",
-      "href": "paradox/00-gardener-nexus/",
-      "source": "docs/handoff/paradox-public/00_GARDENER_NEXUS.md"
-    },
-    {
-      "section": "paradox",
       "title": "PARADOX SUITE AUDIT",
       "href": "paradox/00-paradox-suite-audit/",
       "source": "docs/handoff/paradox-public/00_PARADOX_SUITE_AUDIT.md"
-    },
-    {
-      "section": "paradox",
-      "title": "00: THE EXTRACTION PATTERN",
-      "href": "paradox/00-the-extraction-pattern/",
-      "source": "docs/handoff/paradox-public/00_THE_EXTRACTION_PATTERN.md"
     },
     {
       "section": "paradox",
@@ -875,12 +707,6 @@
     },
     {
       "section": "paradox",
-      "title": "PD-18: The Extraction Paradox",
-      "href": "paradox/pd-18-the-extraction-paradox/",
-      "source": "docs/handoff/paradox-public/PD_18_THE_EXTRACTION_PARADOX.md"
-    },
-    {
-      "section": "paradox",
       "title": "PD-19: The Hard Problem of Consciousness",
       "href": "paradox/pd-19-the-hard-problem-of-consciousness/",
       "source": "docs/handoff/paradox-public/PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md"
@@ -893,21 +719,9 @@
     },
     {
       "section": "paradox",
-      "title": "PD_21: THE PROBLEM OF DEATH",
-      "href": "paradox/pd-21-problem-of-death/",
-      "source": "docs/handoff/paradox-public/PD_21_PROBLEM_OF_DEATH.md"
-    },
-    {
-      "section": "paradox",
       "title": "PD_22: SCIENTIFIC IMPLICATIONS",
       "href": "paradox/pd-22-scientific-implications/",
       "source": "docs/handoff/paradox-public/PD_22_SCIENTIFIC_IMPLICATIONS.md"
-    },
-    {
-      "section": "paradox",
-      "title": "00: THE COMPLETION OF THE CATEGORICAL SCAFFOLD",
-      "href": "paradox/pd-23-the-completion/",
-      "source": "docs/handoff/paradox-public/PD_23_THE_COMPLETION.md"
     },
     {
       "section": "paradox",
@@ -959,12 +773,6 @@
     },
     {
       "section": "rosettad",
-      "title": "THE WHOLE — seen from `03_EVIDENCE/ROSETTA_STONE/`",
-      "href": "rosettad/00-corpus/",
-      "source": "docs/handoff/rosetta-d-public/00_CORPUS.md"
-    },
-    {
-      "section": "rosettad",
       "title": "Rosetta Stone: Selection Auditing and Exclusions",
       "href": "rosettad/00-selection-methodology/",
       "source": "docs/handoff/rosetta-d-public/00_SELECTION_METHODOLOGY.md"
@@ -974,12 +782,6 @@
       "title": "Suda Reciprocal-Symmetry Convergence",
       "href": "rosettad/00-suda-convergent-reciprocal-symmetry/",
       "source": "docs/handoff/rosetta-d-public/00_SUDA_CONVERGENT_RECIPROCAL_SYMMETRY.md"
-    },
-    {
-      "section": "rosettad",
-      "title": "Value Extraction from Suda's Corpus — Deep Synthesis",
-      "href": "rosettad/00-suda-value-extraction-deep-synthesis/",
-      "source": "docs/handoff/rosetta-d-public/00_SUDA_VALUE_EXTRACTION_DEEP_SYNTHESIS.md"
     },
     {
       "section": "rosettad",
@@ -1301,12 +1103,6 @@
     },
     {
       "section": "operators",
-      "title": "MF-65: The Curvature Unification",
-      "href": "operators/mf-65-curvature-transition/",
-      "source": "docs/handoff/operators-public/MF_65_Curvature_Transition.md"
-    },
-    {
-      "section": "operators",
       "title": "MF-66: The Mandelbrot Set IS the Formula Being Iterated",
       "href": "operators/mf-66-mandelbrot-consciousness/",
       "source": "docs/handoff/operators-public/MF_66_Mandelbrot_Consciousness.md"
@@ -1373,12 +1169,6 @@
     },
     {
       "section": "will",
-      "title": "The Generative Lagrangian",
-      "href": "will/00-the-generative-lagrangian/",
-      "source": "docs/handoff/teleology-public/00_THE_GENERATIVE_LAGRANGIAN.md"
-    },
-    {
-      "section": "will",
       "title": "THE HIDDEN CENTER OF THE FRAMEWORK",
       "href": "will/00-the-hidden-center-of-the-framework/",
       "source": "docs/handoff/teleology-public/00_THE_HIDDEN_CENTER_OF_THE_FRAMEWORK.md"
@@ -1391,21 +1181,9 @@
     },
     {
       "section": "will",
-      "title": "The 7 Generative Actions and Ektropy",
-      "href": "will/01-f5-force-map-and-ektropy/",
-      "source": "docs/handoff/teleology-public/01_F5_FORCE_MAP_AND_EKTROPY.md"
-    },
-    {
-      "section": "will",
       "title": "The Three-Stage Process Question — Discovery or Mirror?",
       "href": "will/01-the-rosetta-question/",
       "source": "docs/handoff/teleology-public/01_THE_ROSETTA_QUESTION.md"
-    },
-    {
-      "section": "will",
-      "title": "The Serpent Is F₅ — The Helix, The Ordering Force, *h₂r̥tó-*",
-      "href": "will/02-the-serpent-is-f5/",
-      "source": "docs/handoff/teleology-public/02_THE_SERPENT_IS_F5.md"
     },
     {
       "section": "will",
@@ -1418,18 +1196,6 @@
       "title": "Why The Constraint Matters — Ethics as Arithmetic",
       "href": "will/03-why-the-constraint-matters/",
       "source": "docs/handoff/teleology-public/03_WHY_THE_CONSTRAINT_MATTERS.md"
-    },
-    {
-      "section": "will",
-      "title": "What The Corpus Reveals — 8 Key Patterns",
-      "href": "will/04-what-the-corpus-reveals/",
-      "source": "docs/handoff/teleology-public/04_WHAT_THE_CORPUS_REVEALS.md"
-    },
-    {
-      "section": "will",
-      "title": "Exhaustive Observations — 28 Observations from 8.6M Words",
-      "href": "will/05-exhaustive-observations/",
-      "source": "docs/handoff/teleology-public/05_EXHAUSTIVE_OBSERVATIONS.md"
     },
     {
       "section": "will",
@@ -1541,27 +1307,9 @@
     },
     {
       "section": "value",
-      "title": "OBJECTIVE MORALS AND ETHICS",
-      "href": "value/00-objective-morals-and-ethics/",
-      "source": "docs/handoff/axiology-public/00_OBJECTIVE_MORALS_AND_ETHICS.md"
-    },
-    {
-      "section": "value",
       "title": "THEURGY AND THE F5 FORCE MAP",
       "href": "value/00-theurgy-and-f5-force-map/",
       "source": "docs/handoff/axiology-public/00_THEURGY_AND_F5_FORCE_MAP.md"
-    },
-    {
-      "section": "value",
-      "title": "THE GOOD, THE EVIL, AND THE TRANSCENDENTALS",
-      "href": "value/00-the-good-the-evil-and-the-transcendentals/",
-      "source": "docs/handoff/axiology-public/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md"
-    },
-    {
-      "section": "value",
-      "title": "BEAUTY, TRUTH, AND JUSTICE AS TELEOLOGICAL LIMITS",
-      "href": "value/01-transcendentals/",
-      "source": "01_EMERGENTISM/04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md"
     },
     {
       "section": "value",
@@ -1577,39 +1325,15 @@
     },
     {
       "section": "ground",
-      "title": "D5/D6 CORPUS STABILIZATION",
-      "href": "ground/00-d5-d6-corpus-stabilization/",
-      "source": "docs/handoff/ontology-public/00_D5_D6_CORPUS_STABILIZATION.md"
-    },
-    {
-      "section": "ground",
-      "title": "D6 AS APOPHATIC CLOSURE",
-      "href": "ground/00-d6-as-apophatic-closure/",
-      "source": "docs/handoff/ontology-public/00_D6_AS_APOPHATIC_CLOSURE.md"
-    },
-    {
-      "section": "ground",
       "title": "FINITY AS ONTOLOGICAL BOUNDARY",
       "href": "ground/00-finity-as-ontological-boundary/",
       "source": "docs/handoff/ontology-public/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md"
     },
     {
       "section": "ground",
-      "title": "ONTOLOGY ACROSS DIMENSIONS",
-      "href": "ground/00-ontology-across-dimensions/",
-      "source": "docs/handoff/ontology-public/00_ONTOLOGY_ACROSS_DIMENSIONS.md"
-    },
-    {
-      "section": "ground",
       "title": "K3 Tombstone — Superseded Audit",
       "href": "ground/00-syncretic-map-audit/",
       "source": "docs/handoff/ontology-public/00_SYNCRETIC_MAP_AUDIT.md"
-    },
-    {
-      "section": "ground",
-      "title": "THE ONTOLOGY OF BEING",
-      "href": "ground/00-the-ontology-of-being/",
-      "source": "docs/handoff/ontology-public/00_THE_ONTOLOGY_OF_BEING.md"
     },
     {
       "section": "ground",
@@ -1634,12 +1358,6 @@
       "title": "FOREWORD",
       "href": "sacred/00-foreword/",
       "source": "docs/handoff/theology-public/00_FOREWORD.md"
-    },
-    {
-      "section": "sacred",
-      "title": "FRAMEWORK GLOSSARY",
-      "href": "sacred/00-glossary/",
-      "source": "docs/handoff/theology-public/00_GLOSSARY.md"
     },
     {
       "section": "sacred",
@@ -1745,12 +1463,6 @@
     },
     {
       "section": "meta",
-      "title": "THE WHOLE — historical generated topology memory",
-      "href": "meta/00-corpus/",
-      "source": "docs/handoff/meta-public/00_CORPUS.md"
-    },
-    {
-      "section": "meta",
       "title": "D-LEVEL STUDIES",
       "href": "meta/00-d-level-studies/",
       "source": "docs/handoff/meta-public/00_D_LEVEL_STUDIES.md"
@@ -1841,7 +1553,7 @@
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
     "claim_card_register_sha256": "7baea1beba1e010009c8eaacaed33c11ed0e1d791d0fcf9e0fd0cec2867caf39",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
-    "claim_graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
+    "claim_graph_sha256": "17b9a90e591eebfe18e772d63c9cb59bb6f9b3b0c1cb954d6efd12fb64aeaecb",
     "build_manifest": "book/build-manifest.json",
     "output_sha256": "feb45465e0e172d3d09845127ac184f8ec63f403339cf38b61caebf3f3eb52d3",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."

@@ -112,11 +112,13 @@ must use `[A/B/S/I/D/C]` explicitly.
 
 If you cannot state the claim's tier, its upgrade path, and what survives if it fails, you are not ready to publish it.
 
-`P∞ = φ · ν = 1` on `S²`. The matrix is not the authority. It is the guardrail.
+On the open reciprocal chart, `φ(θ)ν(θ)=1` for `θ∈(0,π)`. The matrix is not the
+authority. It is the guardrail.
 
 ## Boundary Clarification
 
-- **Canonical operational seed:** `Zero-Sum Resolution Equation`
+- **Canonical operational seed:** the typed open-chart block
+  `θ∈(0,π); φ=cot(θ/2); ν=tan(θ/2); φν=1`
 - **Retired form:** any exponentiation, multiplication, division, addition, or subtraction printed between Titan glyphs
 - **Valid mathematical neighbor:** the standard numeric exponential map `exp:(ℂ,+)→(ℂ\{0},×)`
 

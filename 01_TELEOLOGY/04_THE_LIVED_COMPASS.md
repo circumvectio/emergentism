@@ -92,9 +92,9 @@ Do not infer more than it says:
 - `Φ̂₄=1` forces `V₄=0` only under a separately measured finite-resource budget;
 - the world and other agents still determine the outcome.
 
-Use the formula as a diagnostic question—*is the failure primarily in the map,
-the means, or their coupling?*—and compare it with simpler rivals when making
-predictions.
+Use the profile as a diagnostic question—*is the failure primarily in the map,
+the means, or their coupling?* If prediction requires a scalar, preregister its
+calibration and compare it with simpler rivals.
 
 ## 3A. The two-clock check
 

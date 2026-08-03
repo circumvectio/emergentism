@@ -297,13 +297,14 @@ Know how to act:   teleology
 ```
 
 The loop turns these into a practice: disclose, test, serve, see, dissolve,
-preserve, and return. Its action criterion is not private certainty. It is the
-non-extractive dyad:
+preserve, and return. Its action criterion is not private certainty or one
+uncalibrated score. It is the Justice-constrained, non-extractive dyad:
 
 ```text
 P_node,i = min(Φ̂₄(i), V₄(i))
 P_node,H = min(Φ̂₄(H), V₄(H))
 η = 0
+at least one coordinate improvement is strict
 ```
 
 `P_node` is the selected ordinal conjunction (`KSC-02`). The historical
@@ -312,8 +313,9 @@ explicit candidate under separately defended cardinal scales.
 
 So the stabilized answer to "knowledge of good and evil" is not omniscience.
 It is recursive discernment: keep correcting the map and the player until the
-next action raises the symbiont and holobiont together. If one rises by
-degrading the other, the action has left dharma and entered extraction.
+next action preserves or improves the symbiont and holobiont profiles together.
+If one rises by degrading the other, the action has left dharma and entered
+extraction.
 
 This is a navigational closure, not public proof that every moral question has
 been solved. The open work is whether this practice can reliably rebalance real

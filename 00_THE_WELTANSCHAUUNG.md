@@ -330,11 +330,11 @@ Emergentism names the two powers at this seam before combining them:
 
 ```text
 V₄ = D4 actual power — embodied capability and usable means
-Φ₅ = D5 possible power — structured potential in the option field
+Φ₅ = D5 possible power — means-independent structure of the option field
 Φ̂₄ = Eval₄(M,Φ₅) — the present D4 estimate of that possible power
 ```
 
-In the selected normalized node model,
+The types first give the profile
 
 \[
 P_{node}:=\min(\widehat{\Phi}_4,V_4),
@@ -351,8 +351,10 @@ The zero cases nevertheless carry a clear design intuition: possible power
 without actual power cannot enact, and actual power without a discriminating
 option model cannot aim. The world still decides the outcome. The stronger
 boundary intuition—“complete foresight leaves zero means”—requires an
-additional finite-resource model such as `Φ̂₄+V₄≤1`. Under that declared
-premise, `Φ̂₄=1⇒V₄=0⇒P_node=0`; without it, `Φ̂₄=1⇒P_node=V₄`. This
+additional finite-resource model such as `Φ_c+V_c≤1`. Under that declared
+premise, `Φ_c=1⇒V_c=0`; a calibrated AND-class scalar with structural zero is
+then zero. Without the budget premise, the product candidate would instead
+give `P×=V₄`. This
 complementarity is therefore a testable wager about the cost of representation,
 not an identity borrowed from the lowercase sphere chart.
 

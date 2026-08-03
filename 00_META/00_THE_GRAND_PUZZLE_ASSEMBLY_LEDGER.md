@@ -134,7 +134,8 @@ Three exact pieces and one wager must remain separate:
 
 ```text
 T1 chart:     phi*nu=1; phi->infinity => nu->0 and B->0
-T2 budget:    Phi+V<=1 and Phi=1 => V=0 => P_node=0
+T2 budget:    Phi_c+V_c<=1 and Phi_c=1 => V_c=0; any declared
+              structural-zero AND candidate then returns 0
 T3 gauge:     A=d lambda locally => F=dA=0
 W  general:   saturation may erase complementary actionable contrast
 ```

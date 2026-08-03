@@ -142,9 +142,9 @@ The following is drift and should be corrected on sight:
 The node model couples powers at the D4/D5 seam:
 
 ```text
-V₄ := D4 actual power: causally usable capability available now
+V₄ ∈ O_V := D4 actual power on a declared ordered domain
 Φ₅ := D5 possible power: structured modal potential in the option field
-Φ̂₄ := Eval₄(M,Φ₅) ∈ [0,1]: present D4 estimate of that possible power
+Φ̂₄ := Eval₄(M,Φ₅) ∈ O_Φ: present D4 estimate on a declared ordered domain
 ```
 
 `Φ₅` is possible power, not a causal force exerted by the future. Its estimate,
@@ -155,15 +155,41 @@ its D4 numerical carrier; the older public compression `ΦV` names the same
 AND-class conjunction but no longer ranks. Lowercase `φ,ν` remain the unrelated
 reciprocal-chart coordinates.
 
-Let the normalized numerical factors satisfy `Φ̂₄,V₄∈[0,1]`. A conjunctive
-aggregator is a declared model
+The source types alone supply an ordered profile
+
+```text
+N_node := (Φ̂₄,V₄).
+```
+
+If both coordinates are merely ordinal, the invariant comparison is
+componentwise Pareto dominance:
+
+```text
+N_a ⪰_P N_b  iff  Φ̂₄,a ⪰ Φ̂₄,b  and  V₄,a ⪰ V₄,b,
+```
+
+with at least one strict inequality for strict dominance. This survives
+independent strictly increasing reparameterizations of the two factors. A
+scalar expression such as a product or minimum does not: it compares magnitudes
+across axes and therefore requires more structure than ordinal order.
+
+Only after a **calibration contract** declares cardinal scales, meaningful
+zeros and units, admissible transformations, uncertainty, domain and
+cross-factor comparability may an application define calibration maps
+
+```text
+c_Φ : O_Φ → [0,1]       Φ_c := c_Φ(Φ̂₄)
+c_V : O_V → [0,1]       V_c := c_V(V₄)
+```
+
+and a conjunctive aggregator
 
 ```text
 C : [0,1]² → [0,1]
 ```
 
 that is monotone in each argument and satisfies
-`C(0,V₄)=C(Φ̂₄,0)=0` and `C(1,1)=1`. These conditions define a normalized
+`C(0,V_c)=C(Φ_c,0)=0` and `C(1,1)=1`. These conditions define a normalized
 **AND-class**; they do not select
 a unique formula. Minimum, normalized harmonic, Cobb–Douglas with
 `0<α<1`, and product forms can rank the same candidates differently.
@@ -204,14 +230,16 @@ premise that the ordinal factors do not by themselves supply. For example, if a
 declared finite-resource domain also imposes
 
 ```text
-Φ̂₄+V₄≤1,
+Φ_c+V_c≤1,
 ```
 
-then `Φ̂₄=1` entails `V₄=0` and hence `P_node=0`. In that model, exhaustive
+then `Φ_c=1` entails `V_c=0`. In any calibrated AND-class model with declared
+structural zeros, the scalar candidate is then zero. In that model, exhaustive
 representation leaves no means for enactment. Without this budget premise,
-`Φ̂₄=1` instead gives `P_node=V₄`; perfect modeled foresight does **not** by
-itself consume usable means. Testing whether evaluated possible power and
-actual power trade off, and which budget surface fits, is empirical `[C]` work.
+perfect modeled foresight does **not** by itself consume usable means; under the
+product candidate specifically, `P×=V_c`. Testing whether evaluated possible
+power and actual power trade off, which budget surface fits, and whether any
+scalar aggregator is useful is empirical `[C]` work.
 
 ## Notation rule for `P`
 

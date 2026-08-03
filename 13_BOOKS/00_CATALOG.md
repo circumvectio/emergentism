@@ -1,8 +1,8 @@
 ---
-title: "Emergentism Book Catalog and Reconstruction Queue"
-status: "ACTIVE ROUTE — not a release register"
-date: 2026-07-28
-evidence_tier: "[B] file custody; [S] selected editorial sequence"
+title: "Emergentism Proposed Three-Book Catalog and Reconstruction Queue"
+status: "STAGED EDITORIAL PROPOSAL — unconfirmed; not a release register"
+date: 2026-07-29
+evidence_tier: "[B] file custody; [S] proposed editorial sequence"
 ---
 
 # Book Catalog

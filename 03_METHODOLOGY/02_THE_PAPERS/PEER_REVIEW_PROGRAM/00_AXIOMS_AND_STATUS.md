@@ -31,8 +31,8 @@ rosetta:
 ### Layer 0 — The kernel (the seed; the framework's deepest primitive)
 
 ```
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²            ← reciprocal closure (the resolved identity)
+Typed reciprocal-chart block
+φ(θ) · ν(θ) = 1, θ∈(0,π)  ← reciprocal identity on its open domain
 (φ − ν)² ≥ 0               ← a square (always true)
 φ + ν ≥ 2                  ← AM–GM
 ```

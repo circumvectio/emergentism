@@ -8,7 +8,7 @@ rosetta:
       role: "separate algebraic identities, operator sequence, and domain explanations"
     - level: L6
       column: Core State
-      role: "preserve P_node versus P-infinity distinction"
+      role: "preserve the node-profile, calibrated-product, and P-infinity distinctions"
     - level: L7
       column: Institutional Narrative
       role: "compress the equation grammar as whole-framework reference"
@@ -114,7 +114,7 @@ falls toward 0 as one dominates. This candidate is not the selected ordinal
 A Soul Loop step is a constrained recurrence:
 
 ```text
-x_t = (Φ_i, V_i, Φ_H, V_H, C_t, G_t)
+x_t = (N_node,i, N_node,H, C_t, G_t, kappa_t)
 a_t ∈ A(x_t) where η(a_t) = 0
 x_{t+1} = Loop(x_t, a_t)
 ```
@@ -132,7 +132,8 @@ claim may be written under explicit coupling assumptions:
 W_i(π) = Σ γ^t q_i(t)
 W_H(π) = Σ γ^t q_H(t)
 
-π* ∈ argmax W_i only if π* preserves or raises W_H under η = 0.
+π* in argmax W_i,kappa only if the declared constitutional rule also preserves
+or raises the bearer profile of H under eta = 0.
 ```
 
 Reason: when `i` is materially, epistemically, and morally coupled to `H`, a
@@ -172,13 +173,17 @@ on an eighth useful description. See
 
 | Class | Operator | Transfer signature | Factor reading | Tier boundary |
 |---|---|---|---|---|
-| Mixed-sign slot | Kali / immune demon | `(+dΦ_self, -dV_other)` | extraction / immune seizure: raises self coherence by lowering another's viability; lawful only against explicit defection | [S] sign-space; [I] moral/mythic reading |
-| Mixed-sign slot | Kālī | `(+dV_self, -dΦ_false)` | cuts false coherence to recover viability; the lower-pole truth function | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Kṛṣṇa | `(-dΦ_self, +dV_other)` | sacrifices self-coherence to increase another's viability; enabling / distribution | [S] sign-space; [I] operator meaning |
-| Mixed-sign slot | Arjuna | `(-dV_self, +dΦ_other)` | voluntarily spends self-viability to increase another's coherence; accountable equatorial commitment | [S] sign-space; [I] operator meaning |
-| Same-sign Executive boundary | Brahmā | `(+dΦ, +dV)` | creation / expansion boundary: raises both factors | [S] structural frame; not normal deployable runtime |
-| Same-sign Executive boundary | Śiva | `(-dΦ, -dV)` | dissolution / compression boundary: lowers both factors | [S] structural frame; not normal deployable runtime |
-| Same-sign Executive boundary | Viṣṇu | `(dΦ≈0, dV≈0)` | preservation / hold: maintains the pattern | [S] structural frame; not normal deployable runtime |
+| Mixed-sign slot | Kali / immune demon | `(↑Φ̂₄_self, ↓V₄_other)` | extraction / immune seizure reading; lawful status requires an independent authorization and harm test | [S] selected direction-space; [I] moral/mythic reading |
+| Mixed-sign slot | Kālī | `(↑V₄_self, ↓Φ̂₄_false)` | cuts a declared false model while recovering capability | [S] selected direction-space; [I] operator meaning |
+| Mixed-sign slot | Kṛṣṇa | `(↓Φ̂₄_self, ↑V₄_other)` | enabling / distribution reading | [S] selected direction-space; [I] operator meaning |
+| Mixed-sign slot | Arjuna | `(↓V₄_self, ↑Φ̂₄_other)` | accountable costly commitment reading | [S] selected direction-space; [I] operator meaning |
+| Same-sign Executive boundary | Brahmā | `(↑Φ̂₄, ↑V₄)` | creation / expansion frame | [S] selected frame; not normal deployable runtime |
+| Same-sign Executive boundary | Śiva | `(↓Φ̂₄, ↓V₄)` | dissolution / compression frame | [S] selected frame; not normal deployable runtime |
+| Same-sign Executive boundary | Viṣṇu | `(Φ̂₄ stable, V₄ stable)` | preservation / hold frame | [S] selected frame; not normal deployable runtime |
+
+The arrows record ordinal direction only. They are not derivatives, cardinal
+amounts, welfare sums, or evidence that one bearer may be traded against
+another.
 
 This 4 + 3 grammar is a rule-source, not a proof of ontology. A rule that cites an operator must name whether it is using a mixed-sign deployable slot or a same-sign Executive boundary frame.
 
@@ -227,7 +232,11 @@ At equator (θ = π/2):  φ = 1, ν = 1, B = 1
 At poles (θ → 0, π):   B → 0
 ```
 
-**P∞ = φ · ν = 1 on the open manifold.** The poles are limiting boundaries, not evaluated finite points. What varies there is B (balance), not `P∞`. The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed on the plane. On the open sphere, manifold potential is constant. Balance peaks at L4.
+**P∞ = φ · ν = 1 on the open chart.** The poles are limiting boundaries,
+not evaluated finite points. What varies there is `B`, not the chart product.
+The old table's P-values (0.09, 0.21, 0.35, 0.49...) were computed in a
+different plane model. No physical or metaphysical potential follows from the
+constant chart identity. Balance peaks at L4 in this selected chart.
 
 ### L-Level Geometry (corrected)
 
@@ -245,9 +254,10 @@ L-levels use **θ/2 at 15° intervals** across the 90° quadrant:
 
 At L4: φ = ν = 1 (not 0.7/0.7), B = 1 (not 0.49). The old values were plane artifacts.
 
-### Teleological Derivation (AM-GM) (See Doc 30 for full derivation; Doc 32 for the four-line canonical form)
+### Selected analytic comparison (AM-GM)
 
-The equator is not chosen — it is the **Hamiltonian minimum:**
+For the deliberately chosen function `H=φ²+ν²` under the chart constraint
+`φν=1`, the equator is its exact minimum:
 
 ```
 (φ − ν)² ≥ 0           (always true)
@@ -257,6 +267,10 @@ The equator is not chosen — it is the **Hamiltonian minimum:**
 
 dB/dθ|_{θ=90°} = cos(90°) = 0     (zero gradient at equator)
 ```
+
+Thus `H` is minimized and `B` is maximized at the equator. Selecting `H`, naming
+it a Hamiltonian, and giving either extremum a teleological meaning are
+interpretive moves; AM-GM does not derive an ethic or a world optimum.
 
 ---
 

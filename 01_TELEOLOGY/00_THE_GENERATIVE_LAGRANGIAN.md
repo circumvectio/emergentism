@@ -57,9 +57,21 @@ the mathematics in which it appears.
 
 ## 2. The finite-node family
 
-Let `Φ₅` denote D5 possible power and let `Φ̂₄=Eval₄(M,Φ₅)∈[0,1]` be its
-present D4 estimate. Let `V₄∈[0,1]` denote D4 actual power or embodied means.
-A conjunctive aggregator belongs to the family
+Let `Φ₅` denote D5 possible power and `Φ̂₄=Eval₄(M,Φ₅)` its present D4
+estimate. Let `V₄` denote D4 actual power or embodied means. Without a cardinal
+calibration and defended comparison across axes, retain
+
+\[
+N_x=(\widehat\Phi_{4,x},V_{4,x})
+\]
+
+and use componentwise Pareto order, which survives independent monotone
+reparameterizations. A scalar is not defined by the types alone.
+
+Only after a calibration contract supplies meaningful zeros and units,
+normalization, admissible transformations, uncertainty and cross-factor
+comparability may an application define `Φ_c=c_Φ(Φ̂₄)∈[0,1]` and
+`V_c=c_V(V₄)∈[0,1]`, then choose a conjunctive aggregator from
 
 \[
 C:[0,1]^2\to[0,1]
@@ -68,7 +80,7 @@ C:[0,1]^2\to[0,1]
 when it is monotone and satisfies
 
 \[
-C(0,V_4)=C(\widehat\Phi_4,0)=0.
+C(0,V_c)=C(\Phi_c,0)=0.
 \]
 
 Minimum, product, harmonic, CES, and other functions may rank interior points

@@ -60,9 +60,20 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         for level in self.data["levels"]:
             self.assertTrue(level["claimCardIds"])
             self.assertTrue(set(level["claimCardIds"]) <= known)
-            self.assertEqual(level["sourceRevision"], contract["sourceRevision"])
+            level_source = ROOT / level["source"]
+            self.assertEqual(
+                level["sourceRevision"],
+                "sha256:" + hashlib.sha256(level_source.read_bytes()).hexdigest(),
+            )
             self.assertEqual(level["lifecycle"], "reader_synthesis")
             self.assertEqual(level["publicDisposition"], "bounded_current")
+            transition = level.get("transition")
+            if transition:
+                transition_source = ROOT / transition["source"]
+                self.assertEqual(
+                    transition["sourceRevision"],
+                    "sha256:" + hashlib.sha256(transition_source.read_bytes()).hexdigest(),
+                )
 
     def test_forbidden_claim_mutations_are_caught(self) -> None:
         mutations = {
@@ -78,6 +89,14 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         for name, text in mutations.items():
             with self.subTest(name=name):
                 self.assertRegex(text, parity.FORBIDDEN[name])
+        for text in ("P_node", "P_node,i", "P<sub>node</sub>"):
+            self.assertRegex(text, parity.FORBIDDEN["legacy untyped node scalar"])
+        self.assertRegex("Φ × V", parity.FORBIDDEN["raw uncalibrated Phi-V product"])
+        self.assertRegex("Σ Δ P_node", parity.FORBIDDEN["legacy aggregate objective"])
+        self.assertRegex(
+            "P_node = Φ × V therefore objective ethics follows",
+            parity.FORBIDDEN["product-derived ethics"],
+        )
 
     def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
         audited = set(parity.parity_audit_surfaces(self.data))

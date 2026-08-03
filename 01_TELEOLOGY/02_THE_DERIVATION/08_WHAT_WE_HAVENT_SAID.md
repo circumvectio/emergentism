@@ -7,6 +7,10 @@ rosetta:
   regime: "Caṇḍāla"
   register: "[I]"
   canonical_phrase: "What We Haven't Said Yet — The Unarticulated Core"
+title: "What We Haven't Said Yet — historical speculative body"
+status: "SUPERSEDED — no current semantic authority"
+date: 2026-07-30
+evidence_tier: "[B] provenance only"
 ---
 
 # What We Haven't Said Yet — The Unarticulated Core

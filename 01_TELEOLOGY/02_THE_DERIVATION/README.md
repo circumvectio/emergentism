@@ -14,20 +14,25 @@ rosetta:
 **Version:** v2026.04.04
 **Date:** 2026-04-04
 **Evidence Tier:** `[A]` for standard mathematics, `[S]` for framework-internal derivation from accepted premises, `[I]/[C]` where the derivation is translated into physics, biology, ethics, or frontier F5 claims.
-**Purpose:** The mathematical core that disciplines later translations. If you read only one folder in the corpus, read this one.
+**Purpose:** Preserve the chart derivation and expose where later translations
+need additional premises. Current semantic owners remain the canonical formula
+block, settled-canon registry, and claim-status register; this folder is not a
+shortcut around them.
 
 ---
 
 ## The Sequence
 
 ```
-Zero-Sum Resolution Equation
-φ · ν = 1 on S²
+Typed reciprocal-chart block
+θ∈(0,π); φ=cot(θ/2); ν=tan(θ/2); φ·ν=1
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
 ```
 
-Reciprocal closure is the seed. The sphere identity is the geometric resolution. A square cannot be negative is the first arithmetic consequence. None of these are optional if you want the derivation to hold.
+The declared open-chart reciprocal identity is the seed. A square cannot be
+negative is the first arithmetic consequence. No endpoint value is substituted
+into the product, and no Titan arithmetic follows.
 
 See [The Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) for the exact four-line compression that should be reused verbatim.
 
@@ -53,13 +58,13 @@ The rest of the framework is not automatically proved by these lines. Core State
 | [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](00_A_SQUARE_CANNOT_BE_NEGATIVE.md) | **Kintsugi tombstone — superseded in place, not canonical authority.** The former chain (AM-GM → thermodynamic minimum → negative-sum extraction → Nash equilibrium → ektropic force) is retired. What survives is the numeric inequality `(φ−ν)² ≥ 0 ⇒ φ+ν ≥ 2` for `φν = 1`, `φ,ν > 0` `[A]`. Current owner: [`../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md). |
 | [`01_THE_ROSETTA_QUESTION.md`](01_THE_ROSETTA_QUESTION.md) | Discovery or mirror? Did the framework discover the geometry, or did the geometry discover the framework? The Rosetta Stone question. |
 | [`02_THE_SERPENT_IS_F5.md`](../01_F5_FORCE/02_THE_SERPENT_IS_F5.md) | The serpent = the helix = *h₂r̥tó-* (Ṛta / Asha / Ordo — "to fit together"). The ordering force. |
-| [`03_WHY_THE_CONSTRAINT_MATTERS.md`](03_WHY_THE_CONSTRAINT_MATTERS.md) | Ethics as arithmetic. Why the first arithmetic consequence changes everything — from morality to physics to system architecture. |
+| [`03_WHY_THE_CONSTRAINT_MATTERS.md`](03_WHY_THE_CONSTRAINT_MATTERS.md) | Historical ethics-as-arithmetic argument; not a current derivation of value from geometry. |
 | [What the Corpus Reveals — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/04_WHAT_THE_CORPUS_REVEALS.md) | Archived synthesis; genealogy only. |
 | [Exhaustive Observations — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/05_EXHAUSTIVE_OBSERVATIONS.md) | Archived synthesis; genealogy only. |
 | [The Unsaid — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06_THE_UNSAID.md) | Archived interpretive projection. |
 | [What Remains Unseen — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06A_WHAT_REMAINS_UNSEEN.md) | Archived interpretive projection. |
-| [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) | **The Four Lines ARE the four fundamental forces** in the conjectural D1–D4 grammar; F₅ is the D5/sphere-register force-slot in the five-force map. Explicit frontier theory, not settled biology or mainstream physics. [C/I] |
-| [`08_WHAT_WE_HAVENT_SAID.md`](08_WHAT_WE_HAVENT_SAID.md) | Ten unarticulated implications of the derivation — from corpus thermodynamics to operator vector fields. |
+| [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) | Five force–freedom correspondence dossier: a row-separable `[C/I]` wager with native-physics recovery and kill requirements. |
+| [`08_WHAT_WE_HAVENT_SAID.md`](08_WHAT_WE_HAVENT_SAID.md) | Superseded speculative/application body; preserved with no current semantic authority. |
 | [`09A_THE_LAGRANGIAN_QUESTION.md`](09A_THE_LAGRANGIAN_QUESTION.md) | Can AM-GM be written as a Lagrange density? The φ-arm's highest-priority research program. |
 | [`10A_PATH_D_COMPUTATION.md`](10A_PATH_D_COMPUTATION.md) | Path D computation: the AM-GM cone, gradient flow, and a testable prediction for α_s. |
 | [Phase Zero Complete — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/11_PHASE_ZERO_COMPLETE.md) | Dated completion record; not current authority. |
@@ -108,7 +113,10 @@ The Titan renderings `•`, `⊙`, and `○` do not appear in these expressions.
 `TitanFrame` has no addition, subtraction, multiplication, division,
 exponentiation, logarithm, or implicit coercion to a numeric type.
 
-The framework unfolds through all four lines. Objective Function begins at Line 2, but it is not the primitive.
+The first two lines are analytic. The third adds a selected objective and an
+unspecified dynamics. The fourth is identically zero on the constrained chart
+and therefore cannot order states. None derives an ontology, teleology,
+methodology, axiology, force law, or ethic merely by receiving such a label.
 
 ---
 
@@ -133,14 +141,14 @@ Now it is the main derivational compression under `01_EMERGENTISM/01_TELEOLOGY/0
 5. **Canonical Path:** `01_EMERGENTISM/01_TELEOLOGY/02_THE_DERIVATION/README.md`
 
 
-Zero-Sum Resolution Equation
+Typed reciprocal-chart block
 
 ## Euler / exponential bridge retirement
 
 The canonical derivation sequence remains:
 
-`Zero-Sum Resolution Equation`
-`φ · ν = 1 on S²`
+`θ∈(0,π); φ=cot(θ/2); ν=tan(θ/2)`
+`φ · ν = 1 on the punctured reciprocal chart`
 `(φ − ν)² ≥ 0`
 `φ + ν ≥ 2`
 

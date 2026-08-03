@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "active-public-withholding-boundary",
-  "updated": "2026-07-28",
+  "updated": "2026-07-30",
   "authority": "This registry controls public delivery only. Git remains the byte-custody layer; source doctrine and evidence tiers remain upstream.",
   "boundary": {
     "artifactRoute": "historical-boundary/index.html",
@@ -20,32 +20,21 @@
         "/app/",
         "/app.html"
       ],
-      "manifestDocument": null,
       "reason": "Historical application-era interface; not a current Emergentism public surface."
     },
     {
-      "artifact": "complete-ontology/index.html",
-      "sha256": "8a18e0c39d43f49b4fdf602e24a27ec88822d6348c94fd4e7d2b9543663e2ced",
-      "bytes": 35658,
+      "artifact": "axiology/index.html",
+      "sha256": "912236b8bf678fd09b5322aa7f7711738d25efcfc67e5830dd99f744fe716062",
+      "bytes": 5304,
       "publicRoutes": [
-        "/complete-ontology",
-        "/complete-ontology/",
-        "/complete-ontology/index.html"
+        "/axiology",
+        "/axiology/",
+        "/axiology/index.html"
       ],
-      "manifestDocument": null,
-      "reason": "Historical total-ontology presentation; preserved as provenance, withheld from current public delivery."
-    },
-    {
-      "artifact": "five-plus-one/index.html",
-      "sha256": "31397490a4bf28a70110c904fd2dabf0b6347e5b498ed336001999190bdfcc05",
-      "bytes": 27049,
-      "publicRoutes": [
-        "/five-plus-one",
-        "/five-plus-one/",
-        "/five-plus-one/index.html"
-      ],
-      "manifestDocument": null,
-      "reason": "Historical governance-language projection; preserved as provenance, withheld from the pure Emergentism public surface."
+      "reason": "Historical axiology route selects an uncalibrated node product inside its ethical procedure.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
     },
     {
       "artifact": "burrisphere/index.html",
@@ -56,20 +45,25 @@
         "/burrisphere/",
         "/burrisphere/index.html"
       ],
-      "manifestDocument": null,
       "reason": "Historical mixed-register synthesis; preserved as provenance, withheld pending a current source-purity review."
     },
     {
-      "artifact": "dasein/index.html",
-      "sha256": "485968aaa9e2d29344c35bc020056b3891626ab3381c412068cfa60fc7986946",
-      "bytes": 33575,
+      "artifact": "canon/the-burrisphere/index.html",
+      "sha256": "8bf9b05b1303d907ae27ec4c36dea522920fbadb4216295f34016ac6c06b8a5c",
+      "bytes": 35085,
       "publicRoutes": [
-        "/dasein",
-        "/dasein/",
-        "/dasein/index.html"
+        "/canon/the-burrisphere",
+        "/canon/the-burrisphere/",
+        "/canon/the-burrisphere/index.html"
       ],
-      "manifestDocument": null,
-      "reason": "Historical mixed-register ontology argument; preserved as provenance, withheld pending a current public-purity review."
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "canon",
+        "href": "canon/the-burrisphere/"
+      }
     },
     {
       "artifact": "canon/the-complete-ontology-of-reality/index.html",
@@ -80,11 +74,364 @@
         "/canon/the-complete-ontology-of-reality/",
         "/canon/the-complete-ontology-of-reality/index.html"
       ],
+      "reason": "Frozen generated projection whose title and closure claims exceed the current evidence-open public boundary."
+    },
+    {
+      "artifact": "canon/the-five-plus-one-constitution/index.html",
+      "sha256": "8db3f503a6dc4cf508c74e738e59ead5d83139454c265fb64fbff4e4c9365fe7",
+      "bytes": 26520,
+      "publicRoutes": [
+        "/canon/the-five-plus-one-constitution",
+        "/canon/the-five-plus-one-constitution/",
+        "/canon/the-five-plus-one-constitution/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
       "manifestDocument": {
         "section": "canon",
-        "href": "canon/the-complete-ontology-of-reality/"
-      },
-      "reason": "Frozen generated projection whose title and closure claims exceed the current evidence-open public boundary."
+        "href": "canon/the-five-plus-one-constitution/"
+      }
+    },
+    {
+      "artifact": "canon/the-generative-table/index.html",
+      "sha256": "fda9f7dee042040417227eb6368c53a4a69e8e9bdb60a1023b7f7a2bc61ea508",
+      "bytes": 20746,
+      "publicRoutes": [
+        "/canon/the-generative-table",
+        "/canon/the-generative-table/",
+        "/canon/the-generative-table/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "canon",
+        "href": "canon/the-generative-table/"
+      }
+    },
+    {
+      "artifact": "canon/the-geometric-ontology-of-reality/index.html",
+      "sha256": "21a969b8351092d587e830bda25e10c9b6e3224929fd73396a50273a3b619daa",
+      "bytes": 30216,
+      "publicRoutes": [
+        "/canon/the-geometric-ontology-of-reality",
+        "/canon/the-geometric-ontology-of-reality/",
+        "/canon/the-geometric-ontology-of-reality/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "canon",
+        "href": "canon/the-geometric-ontology-of-reality/"
+      }
+    },
+    {
+      "artifact": "canon/the-ontology-index/index.html",
+      "sha256": "fdd06bb9f3c004c59e5ccd809f414fa4adc80138e4be44e918fe25e971d60b05",
+      "bytes": 19131,
+      "publicRoutes": [
+        "/canon/the-ontology-index",
+        "/canon/the-ontology-index/",
+        "/canon/the-ontology-index/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "canon",
+        "href": "canon/the-ontology-index/"
+      }
+    },
+    {
+      "artifact": "complete-ontology/index.html",
+      "sha256": "8a18e0c39d43f49b4fdf602e24a27ec88822d6348c94fd4e7d2b9543663e2ced",
+      "bytes": 35658,
+      "publicRoutes": [
+        "/complete-ontology",
+        "/complete-ontology/",
+        "/complete-ontology/index.html"
+      ],
+      "reason": "Historical total-ontology presentation; preserved as provenance, withheld from current public delivery."
+    },
+    {
+      "artifact": "dasein/index.html",
+      "sha256": "485968aaa9e2d29344c35bc020056b3891626ab3381c412068cfa60fc7986946",
+      "bytes": 33575,
+      "publicRoutes": [
+        "/dasein",
+        "/dasein/",
+        "/dasein/index.html"
+      ],
+      "reason": "Historical mixed-register ontology argument; preserved as provenance, withheld pending a current public-purity review."
+    },
+    {
+      "artifact": "finity-papers/index.html",
+      "sha256": "4331c7319046d67f5775c58accd024a1cc78908b0eba7579f6d1f3b01d2ce9f9",
+      "bytes": 15278,
+      "publicRoutes": [
+        "/finity-papers",
+        "/finity-papers/",
+        "/finity-papers/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical Finity overview presents an uncalibrated product constraint as a structural ethic.",
+      "policyRuleIds": [
+        "explicit-legacy-route",
+        "retired-product-derived-ethics"
+      ]
+    },
+    {
+      "artifact": "five-plus-one/index.html",
+      "sha256": "31397490a4bf28a70110c904fd2dabf0b6347e5b498ed336001999190bdfcc05",
+      "bytes": 27049,
+      "publicRoutes": [
+        "/five-plus-one",
+        "/five-plus-one/",
+        "/five-plus-one/index.html"
+      ],
+      "reason": "Historical governance-language projection; preserved as provenance, withheld from the pure Emergentism public surface."
+    },
+    {
+      "artifact": "formal/00-the-seven-axioms/index.html",
+      "sha256": "3c77cfb802b9eabb15be7fe80b22ff84c9c7339a2dff075695b44956e1c5190b",
+      "bytes": 22765,
+      "publicRoutes": [
+        "/formal/00-the-seven-axioms",
+        "/formal/00-the-seven-axioms/",
+        "/formal/00-the-seven-axioms/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/00-the-seven-axioms/"
+      }
+    },
+    {
+      "artifact": "formal/11-efr-triadic-stability/index.html",
+      "sha256": "cfab186e98947b9f39f6b93c09dac5d96e2d4d383b9679845f127be9f605678d",
+      "bytes": 15247,
+      "publicRoutes": [
+        "/formal/11-efr-triadic-stability",
+        "/formal/11-efr-triadic-stability/",
+        "/formal/11-efr-triadic-stability/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/11-efr-triadic-stability/"
+      }
+    },
+    {
+      "artifact": "formal/34-d4-d5-canonical-reference/index.html",
+      "sha256": "aa783521dc48c5cbd7b10689f19ffff549c598c7e78ead6e38f8f27654a8665e",
+      "bytes": 39285,
+      "publicRoutes": [
+        "/formal/34-d4-d5-canonical-reference",
+        "/formal/34-d4-d5-canonical-reference/",
+        "/formal/34-d4-d5-canonical-reference/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "formal",
+        "href": "formal/34-d4-d5-canonical-reference/"
+      }
+    },
+    {
+      "artifact": "foundations/ontology-across-dimensions/index.html",
+      "sha256": "fffdd5f1bbf64bd744f3b236b5847559dac97919dcb17d756dfbcbb359069f28",
+      "bytes": 32768,
+      "publicRoutes": [
+        "/foundations/ontology-across-dimensions",
+        "/foundations/ontology-across-dimensions/",
+        "/foundations/ontology-across-dimensions/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "foundations",
+        "href": "foundations/ontology-across-dimensions/"
+      }
+    },
+    {
+      "artifact": "foundations/the-seven-generative-actions-and-ektropy/index.html",
+      "sha256": "82a04fd4fcfb055e99a1a2c4e83713161a677e2bb069760510f61dd417754178",
+      "bytes": 29839,
+      "publicRoutes": [
+        "/foundations/the-seven-generative-actions-and-ektropy",
+        "/foundations/the-seven-generative-actions-and-ektropy/",
+        "/foundations/the-seven-generative-actions-and-ektropy/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "foundations",
+        "href": "foundations/the-seven-generative-actions-and-ektropy/"
+      }
+    },
+    {
+      "artifact": "game/index.html",
+      "sha256": "eb232a42a970e3ca5cc88bac375398e49fb9024a923e407e99e565518efb8088",
+      "bytes": 28703,
+      "publicRoutes": [
+        "/game",
+        "/game/",
+        "/game/index.html"
+      ],
+      "reason": "Historical Game route scores lawful action through the retired uncalibrated node product.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
+    },
+    {
+      "artifact": "geometric-ontology/index.html",
+      "sha256": "8f1614b354603130d7eb63a35ca20342420629e8fd3e32739e1c3fee38abe7e1",
+      "bytes": 27827,
+      "publicRoutes": [
+        "/geometric-ontology",
+        "/geometric-ontology/",
+        "/geometric-ontology/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity; Historical geometric-ontology route asserts literal D6/D0 identity and product-scored ethics.",
+      "policyRuleIds": [
+        "explicit-legacy-route",
+        "retired-literal-d6-identity"
+      ]
+    },
+    {
+      "artifact": "ground/00-d5-d6-corpus-stabilization/index.html",
+      "sha256": "467e75fa38b683ae485a1f25503fd1ba3d1e0b3a74222413747361782be59581",
+      "bytes": 11393,
+      "publicRoutes": [
+        "/ground/00-d5-d6-corpus-stabilization",
+        "/ground/00-d5-d6-corpus-stabilization/",
+        "/ground/00-d5-d6-corpus-stabilization/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/00-d5-d6-corpus-stabilization/"
+      }
+    },
+    {
+      "artifact": "ground/00-d6-as-apophatic-closure/index.html",
+      "sha256": "9810532f5b0b42f36d239be98703c31e46cff7b62e5b5fcbb4a01386db3187d8",
+      "bytes": 15129,
+      "publicRoutes": [
+        "/ground/00-d6-as-apophatic-closure",
+        "/ground/00-d6-as-apophatic-closure/",
+        "/ground/00-d6-as-apophatic-closure/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/00-d6-as-apophatic-closure/"
+      }
+    },
+    {
+      "artifact": "ground/00-ontology-across-dimensions/index.html",
+      "sha256": "22ebc251e8339688ed4cc108f0fb51040d3c3f0f1354e94205d1c462705a83cc",
+      "bytes": 33587,
+      "publicRoutes": [
+        "/ground/00-ontology-across-dimensions",
+        "/ground/00-ontology-across-dimensions/",
+        "/ground/00-ontology-across-dimensions/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/00-ontology-across-dimensions/"
+      }
+    },
+    {
+      "artifact": "ground/00-the-ontology-of-being/index.html",
+      "sha256": "fe1c0b904f57d86f5a43ce7cf3f7e8bf0c388574113eeff1cb25fc1d05213c03",
+      "bytes": 21745,
+      "publicRoutes": [
+        "/ground/00-the-ontology-of-being",
+        "/ground/00-the-ontology-of-being/",
+        "/ground/00-the-ontology-of-being/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "ground",
+        "href": "ground/00-the-ontology-of-being/"
+      }
+    },
+    {
+      "artifact": "home/index.html",
+      "sha256": "375a9c7c0580068ac369376cb6e77d4fb4a83815877ca63108ce66ea2f675e3d",
+      "bytes": 43675,
+      "publicRoutes": [
+        "/home",
+        "/home/",
+        "/home/index.html"
+      ],
+      "reason": "Superseded alternate homepage carries the retired product-scored game rule.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
+    },
+    {
+      "artifact": "index_legacy_2026_07_19.html",
+      "sha256": "5467e7caba8241ed86ff1d098e08e4e678e60167582067e4edfc44ac9ebcf354",
+      "bytes": 43131,
+      "publicRoutes": [
+        "/index_legacy_2026_07_19",
+        "/index_legacy_2026_07_19/",
+        "/index_legacy_2026_07_19.html"
+      ],
+      "reason": "Superseded root homepage carries the retired product-scored game rule.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
+    },
+    {
+      "artifact": "meta/00-corpus/index.html",
+      "sha256": "e546c6f04dcb90756474772b116860fb88ce006c90ff7be628db07f9af89303f",
+      "bytes": 15392,
+      "publicRoutes": [
+        "/meta/00-corpus",
+        "/meta/00-corpus/",
+        "/meta/00-corpus/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "meta",
+        "href": "meta/00-corpus/"
+      }
     },
     {
       "artifact": "operators/mf-283-the-orthogonality-theorem-v2/index.html",
@@ -95,10 +442,6 @@
         "/operators/mf-283-the-orthogonality-theorem-v2/",
         "/operators/mf-283-the-orthogonality-theorem-v2/index.html"
       ],
-      "manifestDocument": {
-        "section": "operators",
-        "href": "operators/mf-283-the-orthogonality-theorem-v2/"
-      },
       "reason": "Historical operator claim withheld pending a type-correct independent physics audit."
     },
     {
@@ -110,10 +453,6 @@
         "/operators/mf-285-dreams-are-unanchored-d5/",
         "/operators/mf-285-dreams-are-unanchored-d5/index.html"
       ],
-      "manifestDocument": {
-        "section": "operators",
-        "href": "operators/mf-285-dreams-are-unanchored-d5/"
-      },
       "reason": "Historical dream-state claim withheld from public delivery; it is not clinical or neuroscientific guidance."
     },
     {
@@ -125,10 +464,6 @@
         "/operators/mf-296-gravity-is-time/",
         "/operators/mf-296-gravity-is-time/index.html"
       ],
-      "manifestDocument": {
-        "section": "operators",
-        "href": "operators/mf-296-gravity-is-time/"
-      },
       "reason": "Historical gravity claim withheld pending a dimensionally and physically valid independent derivation."
     },
     {
@@ -140,11 +475,626 @@
         "/operators/mf-298-dark-matter-is-mutual-information/",
         "/operators/mf-298-dark-matter-is-mutual-information/index.html"
       ],
+      "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
+    },
+    {
+      "artifact": "operators/mf-65-curvature-transition/index.html",
+      "sha256": "ea6926d8a51d2b968f50e0fdc1b775bcbe584c681674804a6296c64bd1a01735",
+      "bytes": 19591,
+      "publicRoutes": [
+        "/operators/mf-65-curvature-transition",
+        "/operators/mf-65-curvature-transition/",
+        "/operators/mf-65-curvature-transition/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
       "manifestDocument": {
         "section": "operators",
-        "href": "operators/mf-298-dark-matter-is-mutual-information/"
-      },
-      "reason": "Historical dark-matter claim withheld pending an independent discriminator against established physical models."
+        "href": "operators/mf-65-curvature-transition/"
+      }
+    },
+    {
+      "artifact": "papers/paper-c-photon-unit-of-account/index.html",
+      "sha256": "9b4863d61766f8a87408f74e923956c37bf02ccc9846936beb727a92b1769a4e",
+      "bytes": 22829,
+      "publicRoutes": [
+        "/papers/paper-c-photon-unit-of-account",
+        "/papers/paper-c-photon-unit-of-account/",
+        "/papers/paper-c-photon-unit-of-account/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-c-photon-unit-of-account/"
+      }
+    },
+    {
+      "artifact": "papers/paper-h-dimensional-cosmological/index.html",
+      "sha256": "2a22b4fd2fa2b72f78a0c5f08430bde6377e8f4dd9c60560f98f45713957f431",
+      "bytes": 24490,
+      "publicRoutes": [
+        "/papers/paper-h-dimensional-cosmological",
+        "/papers/paper-h-dimensional-cosmological/",
+        "/papers/paper-h-dimensional-cosmological/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "papers",
+        "href": "papers/paper-h-dimensional-cosmological/"
+      }
+    },
+    {
+      "artifact": "paradox/00-gardener-nexus/index.html",
+      "sha256": "8346d3b75e60d1e77be98e50ce61bc622b1aa51362dc0cfaeb973bddf319b91c",
+      "bytes": 31297,
+      "publicRoutes": [
+        "/paradox/00-gardener-nexus",
+        "/paradox/00-gardener-nexus/",
+        "/paradox/00-gardener-nexus/index.html"
+      ],
+      "reason": "Historical universal-extraction synthesis; withheld while the active source is narrowed to a bounded causal pattern."
+    },
+    {
+      "artifact": "paradox/00-the-extraction-pattern/index.html",
+      "sha256": "1d68d5e9704b9703c3f086a009fc500f004c2d8f0587f43213738095af4d5b71",
+      "bytes": 23841,
+      "publicRoutes": [
+        "/paradox/00-the-extraction-pattern",
+        "/paradox/00-the-extraction-pattern/",
+        "/paradox/00-the-extraction-pattern/index.html"
+      ],
+      "reason": "Stale generated projection of the extraction pattern; withheld until a bounded evidence-open public edition is rebuilt from its current source."
+    },
+    {
+      "artifact": "paradox/pd-18-the-extraction-paradox/index.html",
+      "sha256": "6f4570a30d43a7ed17b02787d25bb2495ce915ba1063922cc720d3d9158db9d0",
+      "bytes": 18083,
+      "publicRoutes": [
+        "/paradox/pd-18-the-extraction-paradox",
+        "/paradox/pd-18-the-extraction-paradox/",
+        "/paradox/pd-18-the-extraction-paradox/index.html"
+      ],
+      "reason": "Frozen superseded paradox chapter with no current semantic authority."
+    },
+    {
+      "artifact": "paradox/pd-21-problem-of-death/index.html",
+      "sha256": "1b7ce456eb6ed724ab913908a04572684e25068b7cba030764d2fe52b38c3ae0",
+      "bytes": 12453,
+      "publicRoutes": [
+        "/paradox/pd-21-problem-of-death",
+        "/paradox/pd-21-problem-of-death/",
+        "/paradox/pd-21-problem-of-death/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "paradox",
+        "href": "paradox/pd-21-problem-of-death/"
+      }
+    },
+    {
+      "artifact": "paradox/pd-23-the-completion/index.html",
+      "sha256": "5c2d3209c1d33ebb48d8c2f655d7c8f197e014fd25a544afb00e5b7e3d9b2f2b",
+      "bytes": 11567,
+      "publicRoutes": [
+        "/paradox/pd-23-the-completion",
+        "/paradox/pd-23-the-completion/",
+        "/paradox/pd-23-the-completion/index.html"
+      ],
+      "reason": "Historical completion claim; withheld because the current programme remains evidence-open and non-total."
+    },
+    {
+      "artifact": "rosettad/00-corpus/index.html",
+      "sha256": "5d25069350b4725c8e399b2e61f515d822b71aa9330cd50de14c6c15a841ef2a",
+      "bytes": 12594,
+      "publicRoutes": [
+        "/rosettad/00-corpus",
+        "/rosettad/00-corpus/",
+        "/rosettad/00-corpus/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/00-corpus/"
+      }
+    },
+    {
+      "artifact": "rosettad/00-suda-value-extraction-deep-synthesis/index.html",
+      "sha256": "328175b1f1abe1429b3d369d12044a5cf38f5b108230179f6403ff5a1d790698",
+      "bytes": 25484,
+      "publicRoutes": [
+        "/rosettad/00-suda-value-extraction-deep-synthesis",
+        "/rosettad/00-suda-value-extraction-deep-synthesis/",
+        "/rosettad/00-suda-value-extraction-deep-synthesis/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "rosettad",
+        "href": "rosettad/00-suda-value-extraction-deep-synthesis/"
+      }
+    },
+    {
+      "artifact": "sacred/00-glossary/index.html",
+      "sha256": "b9f86ab1ac010db3d3370621dbee3d12b091be2c80a2135b638197b31222c022",
+      "bytes": 52232,
+      "publicRoutes": [
+        "/sacred/00-glossary",
+        "/sacred/00-glossary/",
+        "/sacred/00-glossary/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "sacred",
+        "href": "sacred/00-glossary/"
+      }
+    },
+    {
+      "artifact": "soul-loop/index.html",
+      "sha256": "91f9787c361fb011a8cecbd1824d1b8afefc887939f778ad0c97bf5fce77cdc9",
+      "bytes": 34407,
+      "publicRoutes": [
+        "/soul-loop",
+        "/soul-loop/",
+        "/soul-loop/index.html"
+      ],
+      "reason": "Historical Soul Loop route turns the retired node product into an objective-dharma test.",
+      "policyRuleIds": [
+        "explicit-legacy-route"
+      ]
+    },
+    {
+      "artifact": "synthesis/index.html",
+      "sha256": "1756d3d2a0c067ab044bf717ca952db58c4faf3bb538cb173b83c2149830bc8c",
+      "bytes": 23230,
+      "publicRoutes": [
+        "/synthesis",
+        "/synthesis/",
+        "/synthesis/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical synthesis derives an objective ethic from an uncalibrated product.",
+      "policyRuleIds": [
+        "explicit-legacy-route",
+        "retired-product-derived-ethics"
+      ]
+    },
+    {
+      "artifact": "teleology/index.html",
+      "sha256": "2e9d3a89e171c8230bd5dc6cf31af29e02106493b64bb3b3faf89a99514fa960",
+      "bytes": 5070,
+      "publicRoutes": [
+        "/teleology",
+        "/teleology/",
+        "/teleology/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product; Historical teleology route couples an uncalibrated product to an objective-dharma rule.",
+      "policyRuleIds": [
+        "explicit-legacy-route",
+        "retired-product-derived-ethics"
+      ]
+    },
+    {
+      "artifact": "trinity/00-the-genesis-simulation/index.html",
+      "sha256": "3013cd2c01c0dda6dccca5fcccdf8610a674bc15a327d1d54ac6bccc118152bc",
+      "bytes": 18085,
+      "publicRoutes": [
+        "/trinity/00-the-genesis-simulation",
+        "/trinity/00-the-genesis-simulation/",
+        "/trinity/00-the-genesis-simulation/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/00-the-genesis-simulation/"
+      }
+    },
+    {
+      "artifact": "trinity/01-the-emergence/index.html",
+      "sha256": "e977d8eae7465301415bc282135022a360b94858311e274950eed9fbde43fd32",
+      "bytes": 11236,
+      "publicRoutes": [
+        "/trinity/01-the-emergence",
+        "/trinity/01-the-emergence/",
+        "/trinity/01-the-emergence/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/01-the-emergence/"
+      }
+    },
+    {
+      "artifact": "trinity/03-the-closure/index.html",
+      "sha256": "58a079022319a29af52bd1bd848b4c6242163a5542c4c138001f024348990c0b",
+      "bytes": 16701,
+      "publicRoutes": [
+        "/trinity/03-the-closure",
+        "/trinity/03-the-closure/",
+        "/trinity/03-the-closure/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/03-the-closure/"
+      }
+    },
+    {
+      "artifact": "trinity/04-bit-to-qubit/index.html",
+      "sha256": "9a94376344ae802283006901777e538d1745d46decec4fb10e62f7db874abe31",
+      "bytes": 15223,
+      "publicRoutes": [
+        "/trinity/04-bit-to-qubit",
+        "/trinity/04-bit-to-qubit/",
+        "/trinity/04-bit-to-qubit/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/04-bit-to-qubit/"
+      }
+    },
+    {
+      "artifact": "trinity/06-the-cosmological-cycle/index.html",
+      "sha256": "a83ba88cb3d7bd82017dce661462bd598119c19e6b2d2161d76e10e4ac1c43d3",
+      "bytes": 19111,
+      "publicRoutes": [
+        "/trinity/06-the-cosmological-cycle",
+        "/trinity/06-the-cosmological-cycle/",
+        "/trinity/06-the-cosmological-cycle/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/06-the-cosmological-cycle/"
+      }
+    },
+    {
+      "artifact": "trinity/10-the-soul-loop/index.html",
+      "sha256": "e0aa096ecf6379b058a3097257e6aaf18ba8083adeeb62ddfdfcbd2583fc0541",
+      "bytes": 34950,
+      "publicRoutes": [
+        "/trinity/10-the-soul-loop",
+        "/trinity/10-the-soul-loop/",
+        "/trinity/10-the-soul-loop/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/10-the-soul-loop/"
+      }
+    },
+    {
+      "artifact": "trinity/11-the-helix/index.html",
+      "sha256": "10d747ffcb59a37bdf1a5a8cd951701161ef40782dd47d3118500945429f55ba",
+      "bytes": 16832,
+      "publicRoutes": [
+        "/trinity/11-the-helix",
+        "/trinity/11-the-helix/",
+        "/trinity/11-the-helix/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/11-the-helix/"
+      }
+    },
+    {
+      "artifact": "trinity/12-the-poles/index.html",
+      "sha256": "326bbd8cede66f3b74f85edb95d6b0a76db26056f590bcc676e03fd8a384b1d4",
+      "bytes": 19973,
+      "publicRoutes": [
+        "/trinity/12-the-poles",
+        "/trinity/12-the-poles/",
+        "/trinity/12-the-poles/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/12-the-poles/"
+      }
+    },
+    {
+      "artifact": "trinity/15-dharma-yuddha/index.html",
+      "sha256": "8efd469b20109a13b1a4d70dc4eb12441e2e82fd6f529bcfc4c9956cf43a2ed6",
+      "bytes": 20807,
+      "publicRoutes": [
+        "/trinity/15-dharma-yuddha",
+        "/trinity/15-dharma-yuddha/",
+        "/trinity/15-dharma-yuddha/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/15-dharma-yuddha/"
+      }
+    },
+    {
+      "artifact": "trinity/18-the-strange-attractor/index.html",
+      "sha256": "1f75fe2f3394605e5bb8f09e565d2ae062041590fe26a0e19e74aec8657185b6",
+      "bytes": 24387,
+      "publicRoutes": [
+        "/trinity/18-the-strange-attractor",
+        "/trinity/18-the-strange-attractor/",
+        "/trinity/18-the-strange-attractor/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/18-the-strange-attractor/"
+      }
+    },
+    {
+      "artifact": "trinity/22-the-teleology/index.html",
+      "sha256": "751c38049d42c9d32ce1c46c0c48324b9a28839c5ca20d46d3be1a49da3c488d",
+      "bytes": 39726,
+      "publicRoutes": [
+        "/trinity/22-the-teleology",
+        "/trinity/22-the-teleology/",
+        "/trinity/22-the-teleology/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/22-the-teleology/"
+      }
+    },
+    {
+      "artifact": "trinity/36-the-dimensional-trophic-cascade/index.html",
+      "sha256": "44df3953b9ce12049d66c77860ba20ef4e3879f94a457fc45c6675f669c01cfd",
+      "bytes": 35001,
+      "publicRoutes": [
+        "/trinity/36-the-dimensional-trophic-cascade",
+        "/trinity/36-the-dimensional-trophic-cascade/",
+        "/trinity/36-the-dimensional-trophic-cascade/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/36-the-dimensional-trophic-cascade/"
+      }
+    },
+    {
+      "artifact": "trinity/37-sexual-selection-as-visible-f5/index.html",
+      "sha256": "d3d97a2970401cbef5d0617a391ae2864bec537aa2f666c96ada9900599ab7d1",
+      "bytes": 34253,
+      "publicRoutes": [
+        "/trinity/37-sexual-selection-as-visible-f5",
+        "/trinity/37-sexual-selection-as-visible-f5/",
+        "/trinity/37-sexual-selection-as-visible-f5/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/37-sexual-selection-as-visible-f5/"
+      }
+    },
+    {
+      "artifact": "trinity/simulation-spec/index.html",
+      "sha256": "12315a1ea35f1a1bea05614d5efe1ddc8dddca7e8a4bcce8857162f414977eea",
+      "bytes": 28602,
+      "publicRoutes": [
+        "/trinity/simulation-spec",
+        "/trinity/simulation-spec/",
+        "/trinity/simulation-spec/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "trinity",
+        "href": "trinity/simulation-spec/"
+      }
+    },
+    {
+      "artifact": "value/00-objective-morals-and-ethics/index.html",
+      "sha256": "8826bfb1be03d42879ca9453139074abc2405a81a69807271843148c80a49d54",
+      "bytes": 25102,
+      "publicRoutes": [
+        "/value/00-objective-morals-and-ethics",
+        "/value/00-objective-morals-and-ethics/",
+        "/value/00-objective-morals-and-ethics/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-objective-morals-and-ethics/"
+      }
+    },
+    {
+      "artifact": "value/00-the-good-the-evil-and-the-transcendentals/index.html",
+      "sha256": "ab741160031519e343c7a09bea37aa3da8deb927c8aacbdbf30d90a1e01e353b",
+      "bytes": 24055,
+      "publicRoutes": [
+        "/value/00-the-good-the-evil-and-the-transcendentals",
+        "/value/00-the-good-the-evil-and-the-transcendentals/",
+        "/value/00-the-good-the-evil-and-the-transcendentals/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/00-the-good-the-evil-and-the-transcendentals/"
+      }
+    },
+    {
+      "artifact": "value/01-transcendentals/index.html",
+      "sha256": "f11450ce6ed9875d1d8fc21b640ab149db8e8c9c03e0c29f2cd0ff73cb496e76",
+      "bytes": 9965,
+      "publicRoutes": [
+        "/value/01-transcendentals",
+        "/value/01-transcendentals/",
+        "/value/01-transcendentals/index.html"
+      ],
+      "reason": "derives or scores ethics through an uncalibrated Phi/V product.",
+      "policyRuleIds": [
+        "retired-product-derived-ethics"
+      ],
+      "manifestDocument": {
+        "section": "value",
+        "href": "value/01-transcendentals/"
+      }
+    },
+    {
+      "artifact": "will/00-the-generative-lagrangian/index.html",
+      "sha256": "7d64462aded2b2aec439b69ec0f920ba844354dbd6dba54a815e3e741db90ea3",
+      "bytes": 30858,
+      "publicRoutes": [
+        "/will/00-the-generative-lagrangian",
+        "/will/00-the-generative-lagrangian/",
+        "/will/00-the-generative-lagrangian/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/00-the-generative-lagrangian/"
+      }
+    },
+    {
+      "artifact": "will/01-f5-force-map-and-ektropy/index.html",
+      "sha256": "f23976a46959562e40d2e9aef774cec20a7b1f33cef65cc2c6df8b3489245e8f",
+      "bytes": 31463,
+      "publicRoutes": [
+        "/will/01-f5-force-map-and-ektropy",
+        "/will/01-f5-force-map-and-ektropy/",
+        "/will/01-f5-force-map-and-ektropy/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/01-f5-force-map-and-ektropy/"
+      }
+    },
+    {
+      "artifact": "will/02-the-serpent-is-f5/index.html",
+      "sha256": "58dc8c3c4a5b852a17aa0ba93f22d4b2457559556367ca110869bbcadb8fa3dd",
+      "bytes": 14285,
+      "publicRoutes": [
+        "/will/02-the-serpent-is-f5",
+        "/will/02-the-serpent-is-f5/",
+        "/will/02-the-serpent-is-f5/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/02-the-serpent-is-f5/"
+      }
+    },
+    {
+      "artifact": "will/04-what-the-corpus-reveals/index.html",
+      "sha256": "ad013bd952a62390d286a99617766f32f187c1661c363d2b921316dc682cc638",
+      "bytes": 8830,
+      "publicRoutes": [
+        "/will/04-what-the-corpus-reveals",
+        "/will/04-what-the-corpus-reveals/",
+        "/will/04-what-the-corpus-reveals/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/04-what-the-corpus-reveals/"
+      }
+    },
+    {
+      "artifact": "will/05-exhaustive-observations/index.html",
+      "sha256": "094e999f8fda28273d497da9ba592e15f4b5bc15cdefa74271b2a7c7357c035d",
+      "bytes": 11741,
+      "publicRoutes": [
+        "/will/05-exhaustive-observations",
+        "/will/05-exhaustive-observations/",
+        "/will/05-exhaustive-observations/index.html"
+      ],
+      "reason": "asserts the retired literal D6/D0 identity.",
+      "policyRuleIds": [
+        "retired-literal-d6-identity"
+      ],
+      "manifestDocument": {
+        "section": "will",
+        "href": "will/05-exhaustive-observations/"
+      }
     }
-  ]
+  ],
+  "policy": {
+    "mode": "exact-artifact fail-closed",
+    "rules": [
+      "retired-literal-d6-identity",
+      "retired-product-derived-ethics",
+      "explicit-legacy-route"
+    ],
+    "boundary": "Affirmative literal D6/D0 identity and uncalibrated product-derived ethics are excluded from public delivery; negative correction records may remain only in their declared historical boundary."
+  }
 }

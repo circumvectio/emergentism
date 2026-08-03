@@ -14,7 +14,7 @@
     "proposal": 3,
     "reader_synthesis": 1
   },
-  "schema": "emergentism/claim-lifecycle-inventory/v1",
+  "schema": "emergentism/claim-lifecycle-inventory/v3",
   "sources": [
     {
       "external_readonly": false,
@@ -28,14 +28,6 @@
       "lifecycle": "active",
       "path": "../90_ARCHIVE/2026_07_28_corpus_reconstruction_w4/15_DHARMA_YUDDHA_LEGACY.md",
       "sha256": "148d92dc4d64dc2c27a41a8d8ed394e725475d8ce4cceb56a46035dd28bf341f",
-      "work_id": "BK-DHARMA"
-    },
-    {
-      "lifecycle": "active",
-      "line_count": 241,
-      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
-      "role": "research_seed",
-      "sha256": "3ae5cd3bc48c12cd03dcc5ab18aa4ca17c93cbea57e209bfd659ce144e494b98",
       "work_id": "BK-DHARMA"
     },
     {
@@ -56,7 +48,9 @@
       "lifecycle": "proposal",
       "line_count": 89,
       "path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
-      "role": "proposal",
+      "roles": [
+        "proposal"
+      ],
       "sha256": "bdf84bdd9169fc8e0cdeb3cf95d3668cd98b19bc1bdebd9e82db5534f984ed9f",
       "work_id": "BK-EVOLUTIONARY-NETWORK"
     },
@@ -108,7 +102,10 @@
       "lifecycle": "frozen",
       "line_count": 12567,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
@@ -123,7 +120,10 @@
       "lifecycle": "legacy",
       "line_count": 7540,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
       "work_id": "BK-SARPASYA"
     },
@@ -138,7 +138,10 @@
       "lifecycle": "legacy",
       "line_count": 849,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
       "work_id": "BK-SELF-EATING"
     },
@@ -153,7 +156,10 @@
       "lifecycle": "legacy",
       "line_count": 2405,
       "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
-      "role": "historical_lineage",
+      "roles": [
+        "historical_lineage",
+        "historical_source"
+      ],
       "sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
       "work_id": "BK-SIX-LENSES"
     },
@@ -180,11 +186,36 @@
       "work_id": "BK-TITANS"
     },
     {
+      "external_readonly": false,
       "lifecycle": "active",
-      "line_count": 210,
+      "line_count": 404,
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
+      "roles": [
+        "formal_research_seed"
+      ],
+      "sha256": "2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "external_readonly": false,
+      "lifecycle": "active",
+      "line_count": 227,
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
-      "role": "research_seed",
-      "sha256": "359e995bdd89c9b2c6b7c5c6bfac52847c8f750fca80b905d92047eec3527978",
+      "roles": [
+        "research_seed"
+      ],
+      "sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c",
+      "work_id": "BK-TITANS"
+    },
+    {
+      "external_readonly": false,
+      "lifecycle": "active",
+      "line_count": 61,
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml",
+      "roles": [
+        "research_ledger"
+      ],
+      "sha256": "07c2d9a114624ec4720a66602e8ddf7a47142f1996cec588c025778656d410f6",
       "work_id": "BK-TITANS"
     }
   ]

@@ -137,6 +137,17 @@ def current_reader_contract() -> dict[str, Any]:
 
 def apply_contract(manifest: dict[str, Any]) -> dict[str, Any]:
     result = dict(manifest)
+    withheld = _load(SITE_ROOT / "withheld-routes.json")
+    withheld_hrefs = {
+        row["manifestDocument"]["href"]
+        for row in withheld.get("artifacts", [])
+        if isinstance(row.get("manifestDocument"), dict)
+        and row["manifestDocument"].get("href")
+    }
+    result["documents"] = [
+        row for row in result.get("documents", [])
+        if row.get("href") not in withheld_hrefs
+    ]
     result["lifecycle"] = "frozen_generated_library"
     result["current_reader"] = current_reader_contract()
     return result

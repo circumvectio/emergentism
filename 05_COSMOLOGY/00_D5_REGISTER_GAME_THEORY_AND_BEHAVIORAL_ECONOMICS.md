@@ -386,7 +386,7 @@ This sentence may be reused verbatim.
    alignment, separate actual D4 carriers and events from represented D5
    alternatives first.
 2. Start with established strategic science, not with metaphysical language.
-3. Use `η`, `Φ`, `V`, and `P` as framework-side integrative variables, not as if they were already standard economics notation.
+3. Use `η`, `Φ`, `V`, and `N_node` as framework-side integrative variables, not as if they were already standard economics notation; use `P×,κ` only with its explicit calibration contract.
 4. Treat prospective opacity as a computational observation, never as proof of
    strong emergence.
 5. Keep D4 and D6 distinct: all study and receipt occur in D4; D6 is an

@@ -70,7 +70,8 @@ additional premise does `Φ̂₄=1⇒V₄=0⇒C×=0`; the selected ordinal
 score `P_node=min(Φ̂₄,V₄)` also vanishes at that boundary. This sub-wager
 dies if foresight costs do not measurably
 reduce usable means, if a different constraint predicts better, or if the
-result is asserted without naming the budget and measurement protocol. It must
+result is asserted without naming the calibration, budget, aggregator and
+measurement protocol. It must
 never be inferred from the lowercase analytic identity `φν=1`. Exact results,
 countermodels, and the reusable `SC-CANDIDATE` packet are fenced in
 [`45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md`](../05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md).

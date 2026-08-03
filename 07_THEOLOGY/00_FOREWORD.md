@@ -52,7 +52,7 @@ reciprocity: when one chart coordinate grows, the other contracts.
 
 ## The finite game
 
-For finite agents, Emergentism selects the normalized conjunctive model
+For finite agents, Emergentism first keeps a two-axis profile
 
 \[
 P_{node}=\min(\widehat{\Phi}_{4},V_{4}),

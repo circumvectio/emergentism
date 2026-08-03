@@ -29,7 +29,8 @@ language, platforms, institutions, rituals, markets, and egregores. These
 structures can raise the symbiont and holobiont together, or they can capture
 the symbiont as fuel for a pattern that no longer serves life.
 
-So the lane's practical test is the same syntropic dyad used in value theory:
+So the lane's practical test is the same unaggregated syntropic dyad used in
+value theory:
 
 ```text
 P_node,i = min(Φ_i, V_i)
@@ -103,5 +104,5 @@ Active source-owner subfolder. Downstream public claims should route through thi
 
 1. **Do not upgrade tiers silently.** Keep conjectural claims conjectural and structural claims structural.
 2. **Verify references.** Ensure all internal links are valid and updated.
-3. **Apply the Soul Loop before amplifying a memetic claim.** Ask whether the pattern raises both `P_node,i` and `P_node,H` under `η=0`; if not, route it as capture, not dharma.
+3. **Apply the Soul Loop before amplifying a memetic claim.** Ask whether the pattern preserves or improves both `N_node,i` and `N_node,H` componentwise under `η=0`; if either profile deteriorates, route it as capture, not dharma, and if the profiles are incomparable, report that instead of silently scalarizing them.
 4. **Canonical Path:** `01_EMERGENTISM/02_EPISTEMOLOGY/03_MEMETICS/README.md`

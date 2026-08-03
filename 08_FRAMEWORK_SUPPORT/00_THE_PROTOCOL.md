@@ -138,7 +138,7 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 ---
 
-## PROTOCOL D: THIRD-PERSON VERIFICATION OF THE EXTRACTION THEOREM
+## PROTOCOL D: THIRD-PERSON TEST OF THE CONSTRAINED EXTRACTION MODEL
 
 ### Hypothesis
 
@@ -165,16 +165,17 @@ d = 6.66, p = 2.02 × 10⁻¹², Spearman ρ = 1.000).
 
 **Not yet confirmed by independent replication.** This is the honest position:
 framework-designed simulation testing framework metrics is structural support,
-not public proof. The older run also predates the current constrained-frontier
-wording, so it supports the direction of Protocol D but does not by itself
-settle the four-condition Power-Max claim.
+not public proof. The older run also predates the current calibration and
+constrained-frontier wording, so it does not by itself settle the current
+comparison claim.
 
 **Upgrade criterion:** An independent research team (no authorship overlap with
 EFR), using a pre-registered protocol not designed within EFR, confirms that
 coupled multiplicative agents under a long-horizon `η = 0` enforcement surface
-select syntropic-frontier outcomes over additive baselines with effect size
-d > 2.0 and p < 0.01, while also testing the failure modes: `λ = 0`, additive
-payoff, short horizon, hidden extraction, and negative coupling.
+select syntropic-frontier outcomes over the unaggregated profile, additive and
+domain-native baselines with effect size d > 2.0 and p < 0.01, while also
+testing the failure modes: `λ = 0`, alternative payoff, short horizon, hidden
+extraction, calibration instability and negative coupling.
 
 **Tier: [S] Structural internal support.** Awaiting independent replication.
 

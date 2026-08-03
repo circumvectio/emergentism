@@ -19,6 +19,23 @@ yet earned F1 mathematical novelty. If every useful result translates into
 known partial algebra, projective geometry, topology, analysis or type theory,
 the survivor is a useful specification layer—not a new foundational algebra.
 
+### 0.1 Typed Finity vocabulary `[S]`
+
+The corpus uses one word for four related but non-identical objects. They are
+now typed and may not be substituted without an explicit map:
+
+| Name | Type | Meaning |
+|---|---|---|
+| `FinityProtocol` | specification protocol | the boundary/extension discipline defined here |
+| `FinityReach_G0` | subset of `ℚ⁺` | values reached by finite words in the selected `(1,S,ι)` model |
+| `FinityContinuum` | `ℝ₊` in a named chart | the open positive-real interior before compactification |
+| `FinityTriangle(A)` | geometric model | the non-degenerate right-triangle family for `A∈(0,π/2)` |
+| `FinityEmblem` | interpretation/glyph | the selected `⊙` rendering of bounded interiority |
+
+None is *the* ontology of finite things. `FinityReach_G0 ⊊ FinityContinuum` under
+the ordinary inclusion, the triangle family is parametrized by the continuum,
+and the emblem has no arithmetic signature.
+
 ## 1. Sorts
 
 ```text

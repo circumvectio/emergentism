@@ -41,7 +41,7 @@ unless it earns independent evidence.
 | **Reciprocal seam** | `φν=1` for `θ∈(0,π)`, an analytic chart identity `[A]`. It is neither an empirical conservation law nor an ethic. |
 | **Balance** | A separately defined score such as `B=sin θ`; never identical to the reciprocal seam. |
 | **Φ₅ / Φ** | D5 possible power: the structured modal potential of an option field. It is not a causal force exerted by a future event. |
-| **Φ̂₄** | An actual D4 model token's normalized evaluation of `Φ₅`; only this estimate enters present arithmetic. |
+| **Φ̂₄** | An actual D4 model token's ordered evaluation of `Φ₅`; cardinal arithmetic requires a separate calibration. |
 | **V₄ / V** | D4 actual power: embodied capacity, tools, energy, access, and ability available to perform now. Ability does not imply authorization. |
 | **Conjunctive family** | A normalized monotone family `C(Φ̂₄,V₄)` with `C(0,V₄)=C(Φ̂₄,0)=0`. |
 | **Node power** | Emergentism's selected working score `P_node:=min(Φ̂₄,V₄)` over ordinal factors; `[I]` as a model and `[C]` as a universal empirical fit. The product form `Φ̂₄V₄`, publicly compressed as `ΦV`, is retired as a ranking and remains readable only as the historical name of the same AND-class conjunction. |

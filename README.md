@@ -130,8 +130,9 @@ tests. Consequential action uses a complete, scoped, contestable
 
 - The operational Burri calculus and its semantic tests are internally
   coherent at their declared types.
-- The reciprocal chart is mathematics; the finite-node product is a selected
-  model; the ontology and cosmology remain tiered commitments.
+- The reciprocal chart is mathematics; the finite-node profile is typed, while
+  every scalar aggregator requires a declared calibration and remains a
+  testable model. The ontology and cosmology remain tiered commitments.
 - The historical `S²`/hyperbola force-derivation routes are Kintsugi
   tombstones, not live physics. The only current correspondence is the modular
   [W7-ORIGIN wager](01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md):

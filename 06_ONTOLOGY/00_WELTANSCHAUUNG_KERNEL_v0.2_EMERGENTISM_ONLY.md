@@ -224,9 +224,14 @@ Their philosophical mapping is `[I]` unless independently tested.
 
 ## 5. Emergentism-native results that survive
 
-### R1. AND-class correction `[S]`
+### R1. Conditional AND-class correction `[S]`
 
-Zero-collapse and binding-constraint behavior select a need-both/AND-class boundary; they do not uniquely force multiplication. Product-specific interior claims remain `[C]`.
+If a domain model first declares all factors necessary and a calibration
+contract supplies meaningful structural zeros, zero-collapse narrows admissible
+scalar candidates to a need-both/AND-class boundary. It does not require a
+scalar, uniquely select multiplication, or transfer from the reciprocal chart.
+Product-specific interior claims remain `[C]`; without the stated premises the
+component profile remains primary.
 
 **Source:** `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` `:26-29`.
 

@@ -74,6 +74,16 @@ REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
+    "compass/index.html": {"OS01-09"},
+    "5/index.html": {"OS01-09"},
+    "plainly/index.html": {"OS01-09"},
+    "discoveries/nonduality/index.html": {"OS01-09"},
+    "about/index.html": {"OS01-09"},
+    "read/index.html": {"OS01-09"},
+    "axioms/index.html": {"OS01-09"},
+    "journey/index.html": {"OS01-09"},
+    "rosetta/index.html": {"OS01-09"},
+    "book/index.html": {"OS01-09"},
 }
 CURRENT_AND_CLASS_MARKERS = {
     "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
@@ -163,6 +173,36 @@ def parity_audit_surfaces(data: dict) -> list[str]:
         raise ValueError("current and provisional public surfaces must be disjoint")
     return combined
 
+NEGATIVE_PRODUCT_RECORDS = {"axioms/index.html", "record/index.html"}
+
+
+def _sha256_revision(path: Path) -> str:
+    return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _vercelignore_patterns() -> list[str]:
+    return [
+        line.strip() for line in (SITE / ".vercelignore").read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    ]
+
+
+def _ignored(rel: str, patterns: list[str]) -> bool:
+    ignored = False
+    for pattern in patterns:
+        negated = pattern.startswith("!")
+        raw = pattern[1:] if negated else pattern
+        if raw.endswith("/"):
+            prefix = raw.rstrip("/")
+            matched = rel == prefix or rel.startswith(prefix + "/")
+        elif "/" not in raw:
+            matched = fnmatch.fnmatch(Path(rel).name, raw) or fnmatch.fnmatch(rel, raw)
+        else:
+            matched = fnmatch.fnmatch(rel, raw.lstrip("/"))
+        if matched:
+            ignored = not negated
+    return ignored
+
 
 def main() -> int:
     errors: list[str] = []
@@ -223,7 +263,7 @@ def main() -> int:
                     register_lookup[card_id] = row
     source_path = ROOT / contract.get("source", "__missing__")
     if source_path.is_file():
-        actual_revision = "sha256:" + hashlib.sha256(source_path.read_bytes()).hexdigest()
+        actual_revision = _sha256_revision(source_path)
         if contract.get("sourceRevision") != actual_revision:
             errors.append("claim-card contract sourceRevision drift")
     else:
@@ -246,8 +286,6 @@ def main() -> int:
         for key in ("claimCardIds", "sourceRevision", "lifecycle", "publicDisposition"):
             if not item.get(key):
                 errors.append(f"{item.get('id', '?')} missing claim-card parity field {key}")
-        if item.get("sourceRevision") != contract.get("sourceRevision"):
-            errors.append(f"{item.get('id', '?')} claim-card sourceRevision drift")
         if item.get("lifecycle") != contract.get("lifecycle"):
             errors.append(f"{item.get('id', '?')} claim-card lifecycle drift")
         if item.get("publicDisposition") != contract.get("publicDisposition"):
@@ -260,14 +298,21 @@ def main() -> int:
             if state not in {"bounded_current", "candidate"}:
                 errors.append(f"{item.get('id', '?')} binds non-current claim-card {card_id} ({state})")
         source = ROOT / item["source"]
-        if not source.is_file():
+        if source.is_file():
+            if item.get("sourceRevision") != _sha256_revision(source):
+                errors.append(f"{item.get('id', '?')} sourceRevision drift: {item['source']}")
+        else:
             errors.append(f"missing source owner: {item['source']}")
         if "transition" in item:
             tr = item["transition"]
-            for key in ("source", "saturation", "capability", "recovery", "evidence", "prediction", "alternatives", "kill"):
+            for key in ("source", "sourceRevision", "saturation", "capability", "recovery", "evidence", "prediction", "alternatives", "kill"):
                 if not tr.get(key):
                     errors.append(f"{tr.get('id', '?')} missing {key}")
-            if not (ROOT / tr["source"]).is_file():
+            transition_source = ROOT / tr["source"]
+            if transition_source.is_file():
+                if tr.get("sourceRevision") != _sha256_revision(transition_source):
+                    errors.append(f"{tr.get('id', '?')} sourceRevision drift: {tr['source']}")
+            else:
                 errors.append(f"missing crossing owner: {tr['source']}")
         rendered = (SITE / item["id"][1:] / "index.html").read_text(encoding="utf-8", errors="replace")
         for needle, label in (
@@ -319,7 +364,7 @@ def main() -> int:
             source_paths.add(source_rel)
             source = ROOT / source_rel
             if source.is_file():
-                actual_revision = "sha256:" + hashlib.sha256(source.read_bytes()).hexdigest()
+                actual_revision = _sha256_revision(source)
                 if source_binding.get("sourceRevision") != actual_revision:
                     errors.append(f"{surface} claim sourceRevision drift: {source_rel}")
             else:
@@ -459,8 +504,13 @@ def main() -> int:
         errors.append("RAG current-book lifecycle contract drift")
     frozen_prefixes = tuple(f"{root}:" for root in data["frozenLibraryRoots"])
     for passage in rag.get("passages", []):
-        if str(passage.get("id", "")).startswith(frozen_prefixes):
-            errors.append(f"frozen library passage remains in RAG: {passage['id']}")
+        passage_id = str(passage.get("id", ""))
+        href = str(passage.get("href", ""))
+        if passage_id.startswith(tuple(f"{root}:" for root in frozen_roots)) or any(
+            href == route or href.startswith(route + "/") or href.startswith(route + "#")
+            for route in excluded_routes
+        ):
+            errors.append(f"frozen or withheld passage remains in RAG: {passage_id}")
             break
         passage_text = f"{passage.get('title', '')} {passage.get('text', '')}"
         if has_retired_node_product(passage_text):

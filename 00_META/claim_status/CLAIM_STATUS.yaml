@@ -9,8 +9,7 @@
     "OPEN-FORMAL",
     "OPEN-EMPIRICAL",
     "COMPONENT-SUPPORTED",
-    "NARROWED",
-    "OWNER-REOPENED"
+    "NARROWED"
   ],
   "terminal_statuses": [
     "FORMALLY-REFUTED",
@@ -26,12 +25,11 @@
     "CATEGORY-ERROR"
   ],
   "rules": [
-    "Evidence tier and validation status are orthogonal axes; neither implies the other.",
-    "A one-way row may never return to a live status AS THE CLAIM IT WAS. Exactly three moves are lawful: NARROWED with a named weaker form; a new RQ row with its own id, discriminator and kill; or OWNER-REOPENED under an owner ruling. The counterexample stays attached in every case.",
-    "A one-way row must cite the counterexample that killed it.",
-    "A reopened row must name its parent and state why the parent's counterexample does not reach it.",
-    "Appearing in this register is not evidence for any claim.",
-    "OWNER-REOPENED is the only lawful path from a terminal status back to live. It requires an owner ruling receipt, an intact counterexample, and a declared repair_path. It restores active investigation, never asserted truth."
+    "Evidence tier, validation status, and investigation state are orthogonal axes; none implies another.",
+    "A grave retains its terminal validation status permanently. A weaker successor or new RQ may be investigated under its own ID; the parent never thaws.",
+    "Every grave cites the counterexample or process defect that killed it.",
+    "An RQ names its parent, states why the parent kill does not reach the new question, and carries its own discriminator, kill, and survivor.",
+    "Appearing in this register, or receiving owner authorization for investigation, supplies no evidence for any claim."
   ],
   "disposition_policy": {
     "kinds": [
@@ -952,7 +950,7 @@
     },
     {
       "id": "DF-14",
-      "status": "NARROWED",
+      "status": "FORMALLY-REFUTED",
       "form": "universal frame/operand exclusivity for ordinary numbers",
       "counterexample": "ordinary numeric identities are operands",
       "successor": "KSC-04",
@@ -1093,7 +1091,7 @@
       }
     }
   ],
-  "reopened": [
+  "investigations": [
     {
       "id": "RQ-01",
       "parent": "DF-06",
@@ -1359,15 +1357,15 @@
       }
     }
   ],
-  "owner_reopening": {
-    "ruling": "Owner instruction 2026-07-29: unretire everything.",
+  "investigation_authorization": {
+    "instruction": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
     "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
     "what_it_does_not_do": "A ruling cannot delete a counterexample or its later scope correction. Reopening means the question is live again, not that the prior form is true or that an over-broad falsifier becomes evidence.",
     "current_state": "ADJUDICATED — 20 transition statuses returned to their recorded terminal classes; DF-13 is corrected from the prior empirical label to NOT-WELL-POSED; DF-14 remains NARROWED; executable work is owned only by explicit successor rows.",
     "adjudication_receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md"
   },
-  "restored": [
+  "typed_survivors": [
     {
       "id": "TR-01",
       "status": "FORMALLY-VALID",

@@ -1,10 +1,305 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-DHARMA","source":{"path":"05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md","lifecycle":"active","role":"research_seed"},
-  "cards":[
-    {"card_id":"DHY01-01","chapters":["justice-first"],"locator":{"section":"normative starting point","line_start":24,"line_end":56},"plain_claim":"Justice is the declared constitutional premise; no geometry, role or symbolic frame derives duty.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen constitutional premise"}],"owner_ids":["K-3","K-5"],"dependencies":[],"docket_ids":["A4","A5"],"type_boundaries":["chosen premise is not objective moral theorem"],"strongest_rival":"Naturalist, non-naturalist, constructivist, contractualist, consequentialist, virtue, theological, capabilities and error-theory accounts.","discriminator":"Compare premises, bearer protection, correction, guidance and residue.","kill_criterion":"If no objective bridge survives, retain Justice as chosen only.","survivor_if_killed":"An explicit and contestable constitutional orientation.","consequence":{"applicable":true,"bearers":["all affected parties"],"consent":"declare and contest","reversibility":"prefer reversible acts","exit":"no aggregate erases a bearer"},"disposition":"retain","public":{"state":"source_only","wording":"Justice is declared; no equation derives an ought."},"review":{"state":"l3_audited","receipts":["13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md"]}},
-    {"card_id":"DHY01-02","chapters":["two-horizon"],"locator":{"section":"two horizons and bearer vector","line_start":94,"line_end":149},"plain_claim":"Consequential proposals must declare a shortest informative and longest responsible horizon with bearers and revision points.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen two-horizon protocol"}],"owner_ids":["K-4","K-5"],"dependencies":["DHY01-01"],"docket_ids":["A5"],"type_boundaries":["fast proxy and distant promise cannot hide bearer costs"],"strongest_rival":"Ordinary staged decision and multi-horizon planning may perform equally well.","discriminator":"Compare calibration, delayed-harm visibility and correction against those rivals.","kill_criterion":"Narrow if the notation adds no protection or disguises uncertainty.","survivor_if_killed":"Declare learning and responsibility horizons in plain language.","consequence":{"applicable":true,"bearers":["current and future affected parties"],"consent":"declare","reversibility":"next honest reversible receipt","exit":"revision points and withdrawal remain explicit"},"disposition":"retain","public":{"state":"source_only","wording":"Learn soon enough to correct; remain responsible long enough to count delayed harm."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"]}},
-    {"card_id":"DHY01-03","chapters":["nonviolent-resistance"],"locator":{"section":"epistemic and civil resistance","line_start":57,"line_end":78},"plain_claim":"Epistemic contest and nonviolent civil resistance are the default modes of worldview and institutional conflict.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen nonviolent constitutional boundary"}],"owner_ids":["K-5"],"dependencies":["DHY01-01"],"docket_ids":["A5","A7"],"type_boundaries":["criticism targets claims and practices, never human dignity"],"strongest_rival":"De-escalation, mediation, law, withdrawal or doing nothing may be less harmful.","discriminator":"Compare harm, dissent protection, correction and reversibility.","kill_criterion":"Retire any Dharma category that increases coercion or identity conflict.","survivor_if_killed":"Nonviolent inquiry, refusal, association and exit.","consequence":{"applicable":true,"bearers":["participants","nonparticipants"],"consent":"participation is voluntary where lawful","reversibility":"prefer reversible means","exit":"no loyalty or enemy classification"},"disposition":"restate","public":{"state":"source_only","wording":"Worldview competition proceeds through nonviolent explanation, practice and correction."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"]}},
-    {"card_id":"DHY01-04","chapters":["institutional-defence"],"locator":{"section":"institutional defence and action test","line_start":79,"line_end":190},"plain_claim":"Institutional defence is lawful boundary, due process, audit, appeal, repair and dissolution; Emergentism supplies no permission for physical force.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"constitutional authority boundary"}],"owner_ids":["K-3","K-5"],"dependencies":["DHY01-01","DHY01-03"],"docket_ids":["A5","A7"],"type_boundaries":["symbol, insight, emergency and collective goal are not authorization"],"strongest_rival":"Existing law, human-rights and institutional safeguards remain primary.","discriminator":"Audit due process, appeal, proportionality, nonparticipant protection and repair.","kill_criterion":"Freeze any language used to bypass lawful authority or authorize violence.","survivor_if_killed":"Ordinary lawful and nonviolent institutional protection.","consequence":{"applicable":true,"bearers":["affected parties","nonparticipants"],"consent":"lawful authority and rights required","reversibility":"temporary and reviewable boundaries","exit":"appeal and dissolution remain available"},"disposition":"retain","public":{"state":"source_only","wording":"Defence means lawful, appealable and repairable institutions; no symbolic permission for force."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"]}},
-    {"card_id":"DHY01-05","chapters":["repair-exit-and-residue"],"locator":{"section":"rivals, quarantines and residue","line_start":191,"line_end":241},"plain_claim":"Every hard decision preserves rival comparison, repair, practical exit and tragic residue.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen correction and exit contract"},{"tier":"C","scope":"distinctive practical advantage"}],"owner_ids":["K-4","K-5","K-7"],"dependencies":["DHY01-02","DHY01-04"],"docket_ids":["A4","A5"],"type_boundaries":["procedural care does not prove moral purity"],"strongest_rival":"Restorative justice, capabilities and ordinary constitutional records may protect better.","discriminator":"Compare repair completion, hidden costs, dissent and real exit.","kill_criterion":"Retire Dharma language if it adds status, compulsion, suppressed dissent or harm.","survivor_if_killed":"A bearer-complete record of repair, exit and unresolved residue.","consequence":{"applicable":true,"bearers":["all affected parties"],"consent":"declare","reversibility":"record unfinished repair","exit":"the vocabulary is optional and practical exit required"},"disposition":"retain","public":{"state":"source_only","wording":"A justified process can still harm; keep who paid and what repair remains."},"review":{"state":"l3_audited","receipts":["13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-DHARMA",
+  "source": {
+    "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md",
+    "lifecycle": "active",
+    "role": "research_seed",
+    "reviewed_source_sha256": "3ae5cd3bc48c12cd03dcc5ab18aa4ca17c93cbea57e209bfd659ce144e494b98"
+  },
+  "cards": [
+    {
+      "card_id": "DHY01-01",
+      "chapters": [
+        "justice-first"
+      ],
+      "locator": {
+        "section": "normative starting point",
+        "line_start": 24,
+        "line_end": 56,
+        "anchor": "## Accountable resistance without sacred command",
+        "fingerprint_sha256": "cffb83457058c90d77657d26a24e7bab0d560c03860934b78646bab67518bbe5"
+      },
+      "plain_claim": "Justice is the declared constitutional premise; no geometry, role or symbolic frame derives duty.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen constitutional premise"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "type_boundaries": [
+        "chosen premise is not objective moral theorem"
+      ],
+      "strongest_rival": "Naturalist, non-naturalist, constructivist, contractualist, consequentialist, virtue, theological, capabilities and error-theory accounts.",
+      "discriminator": "Compare premises, bearer protection, correction, guidance and residue.",
+      "kill_criterion": "If no objective bridge survives, retain Justice as chosen only.",
+      "survivor_if_killed": "An explicit and contestable constitutional orientation.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "all affected parties"
+        ],
+        "consent": "declare and contest",
+        "reversibility": "prefer reversible acts",
+        "exit": "no aggregate erases a bearer"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Justice is declared; no equation derives an ought."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "DHY01-02",
+      "chapters": [
+        "two-horizon"
+      ],
+      "locator": {
+        "section": "two horizons and bearer vector",
+        "line_start": 94,
+        "line_end": 149,
+        "anchor": "## 3. Two-horizon protocol `[S/I]`",
+        "fingerprint_sha256": "41eb76c9843c2e78bbf55e9cd949bcd86aa5c627ea14cea91ec908935482beec"
+      },
+      "plain_claim": "Consequential proposals must declare a shortest informative and longest responsible horizon with bearers and revision points.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen two-horizon protocol"
+        }
+      ],
+      "dependencies": [
+        "DHY01-01"
+      ],
+      "docket_ids": [
+        "A5"
+      ],
+      "type_boundaries": [
+        "fast proxy and distant promise cannot hide bearer costs"
+      ],
+      "strongest_rival": "Ordinary staged decision and multi-horizon planning may perform equally well.",
+      "discriminator": "Compare calibration, delayed-harm visibility and correction against those rivals.",
+      "kill_criterion": "Narrow if the notation adds no protection or disguises uncertainty.",
+      "survivor_if_killed": "Declare learning and responsibility horizons in plain language.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "current and future affected parties"
+        ],
+        "consent": "declare",
+        "reversibility": "next honest reversible receipt",
+        "exit": "revision points and withdrawal remain explicit"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Learn soon enough to correct; remain responsible long enough to count delayed harm."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-4"
+      ]
+    },
+    {
+      "card_id": "DHY01-03",
+      "chapters": [
+        "nonviolent-resistance"
+      ],
+      "locator": {
+        "section": "epistemic and civil resistance",
+        "line_start": 57,
+        "line_end": 78,
+        "anchor": "## 2. Four modes that must not collapse",
+        "fingerprint_sha256": "d7538da3cfa0d9ada30d319a8d0b4c94d1a529a8f2c6c4b93a191ba5efce808c"
+      },
+      "plain_claim": "Epistemic contest and nonviolent civil resistance are the default modes of worldview and institutional conflict.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen nonviolent constitutional boundary"
+        }
+      ],
+      "dependencies": [
+        "DHY01-01"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "criticism targets claims and practices, never human dignity"
+      ],
+      "strongest_rival": "De-escalation, mediation, law, withdrawal or doing nothing may be less harmful.",
+      "discriminator": "Compare harm, dissent protection, correction and reversibility.",
+      "kill_criterion": "Retire any Dharma category that increases coercion or identity conflict.",
+      "survivor_if_killed": "Nonviolent inquiry, refusal, association and exit.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "nonparticipants"
+        ],
+        "consent": "participation is voluntary where lawful",
+        "reversibility": "prefer reversible means",
+        "exit": "no loyalty or enemy classification"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "source_only",
+        "wording": "Worldview competition proceeds through nonviolent explanation, practice and correction."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "DHY01-04",
+      "chapters": [
+        "institutional-defence"
+      ],
+      "locator": {
+        "section": "institutional defence and action test",
+        "line_start": 79,
+        "line_end": 190,
+        "anchor": "### 2.4 Physical force",
+        "fingerprint_sha256": "da334debdf072d086bee87c31b6195c6512c3827e0a0524e307c683e8c703968"
+      },
+      "plain_claim": "Institutional defence is lawful boundary, due process, audit, appeal, repair and dissolution; Emergentism supplies no permission for physical force.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "constitutional authority boundary"
+        }
+      ],
+      "dependencies": [
+        "DHY01-01",
+        "DHY01-03"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "symbol, insight, emergency and collective goal are not authorization"
+      ],
+      "strongest_rival": "Existing law, human-rights and institutional safeguards remain primary.",
+      "discriminator": "Audit due process, appeal, proportionality, nonparticipant protection and repair.",
+      "kill_criterion": "Freeze any language used to bypass lawful authority or authorize violence.",
+      "survivor_if_killed": "Ordinary lawful and nonviolent institutional protection.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "affected parties",
+          "nonparticipants"
+        ],
+        "consent": "lawful authority and rights required",
+        "reversibility": "temporary and reviewable boundaries",
+        "exit": "appeal and dissolution remain available"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Defence means lawful, appealable and repairable institutions; no symbolic permission for force."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "DHY01-05",
+      "chapters": [
+        "repair-exit-and-residue"
+      ],
+      "locator": {
+        "section": "rivals, quarantines and residue",
+        "line_start": 191,
+        "line_end": 241,
+        "anchor": "## 7. Rivals and kill criteria `[C]`",
+        "fingerprint_sha256": "8f1a1a2e3aedac801afcf5acc550747e830c535de6afbf2d1c54d784701089cc"
+      },
+      "plain_claim": "Every hard decision preserves rival comparison, repair, practical exit and tragic residue.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen correction and exit contract"
+        },
+        {
+          "tier": "C",
+          "scope": "distinctive practical advantage"
+        }
+      ],
+      "dependencies": [
+        "DHY01-02",
+        "DHY01-04"
+      ],
+      "docket_ids": [
+        "A4",
+        "A5"
+      ],
+      "type_boundaries": [
+        "procedural care does not prove moral purity"
+      ],
+      "strongest_rival": "Restorative justice, capabilities and ordinary constitutional records may protect better.",
+      "discriminator": "Compare repair completion, hidden costs, dissent and real exit.",
+      "kill_criterion": "Retire Dharma language if it adds status, compulsion, suppressed dissent or harm.",
+      "survivor_if_killed": "A bearer-complete record of repair, exit and unresolved residue.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "all affected parties"
+        ],
+        "consent": "declare",
+        "reversibility": "record unfinished repair",
+        "exit": "the vocabulary is optional and practical exit required"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "A justified process can still harm; keep who paid and what repair remains."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/dharma_yuddha/CRITICAL_EDITION_1.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-4",
+        "K-7"
+      ]
+    }
   ]
 }

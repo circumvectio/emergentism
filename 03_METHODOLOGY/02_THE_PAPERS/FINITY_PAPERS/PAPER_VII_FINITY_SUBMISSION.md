@@ -11,6 +11,14 @@ depends_on:
 
 # Finity: Why One Is the Center of the Number Line and What That Means for Ontology
 
+> **Non-current draft.** This manuscript is preserved as genealogy, not as a
+> source of present claims. It uses retired Titan infix arithmetic, treats a
+> chart identity as an ontological generator, promotes dimensional language into
+> a μ criterion, derives an ethic from geometry, and counts Suda correspondence
+> as corroboration. Current work must instead route through `KSC-04`, `KSC-05`,
+> Justice, the typed Finity protocol, and row-specific paradox adjudication. Its
+> public projection is withheld until a new claim-carded edition is built.
+
 **Yves R. Burri**
 
 **Type-quarantined draft — not for submission — 2026-08-01**

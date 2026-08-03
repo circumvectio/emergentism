@@ -198,6 +198,10 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertIn("isStorable", sw)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(route.startswith(f"/{frozen}/") for route in precached_routes))
+        for artifact in self.parity["frozenLegacySurfaces"]:
+            path = Path(artifact)
+            route = "/" + (path.parent.as_posix() if path.name == "index.html" else path.with_suffix("").as_posix())
+            self.assertNotIn(route, {item.rstrip("/") or "/" for item in precached_routes})
         for item in withheld["artifacts"]:
             self.assertTrue(set(item["publicRoutes"]).isdisjoint(precached_routes))
 

@@ -7,13 +7,25 @@ rosetta:
   regime: "Brāhmaṇa"
   register: "[I]"
   canonical_phrase: "THE THREE TRANSCENDENTALS ON THE BURRI SPHERE"
+status: "SUPERSEDED HISTORICAL INTERPRETIVE SURFACE — NO CURRENT SEMANTIC AUTHORITY"
 ---
 
 # THE THREE TRANSCENDENTALS ON THE BURRI SPHERE
 
 ## Beauty, Truth, and Justice as Geometric Limits
 
-**Status:** Active Development
+> **SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY (2026-07-30).** This
+> interpretive development is retained in place for provenance and link
+> stability. It must not be cited for current value theory, node scoring,
+> Justice, or Power-Max. Current value claims route to
+> `04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md` and
+> `04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md`; current
+> finite-node typing routes to `../00_CANONICAL_FORMULA_BLOCK.md`; current
+> action ordering routes to `08_EFR_POWER_MAX_LEMMA.md`. Raw `P_node` and
+> `ΣP_node` formulations below are superseded historical claims, not premises or
+> recommendations.
+
+**Status:** SUPERSEDED historical interpretive surface; no current semantic authority
 **Hat:** Philosopher
 **Evidence Tier:** [I] Interpretive — creative synthesis within the framework
 **Date:** 2026-03-23
@@ -29,13 +41,13 @@ interpretive.
 
 ## 0. READING RULE
 
-Read every formula below as a **model shorthand** unless the local sentence
-explicitly marks it `[A]` or `[S]`. The current value-theory bridge is
+Read every formula below as **historical model shorthand**, never as a current
+owner or recommendation, even where the old local sentence marks it `[A]` or
+`[S]`. The current value-theory bridge is
 `04_AXIOLOGY/02_VALUE_THEORY/01_TRANSCENDENTALS.md`: objective teleology is the
 asymptotic approach toward Beauty, Truth, and Justice, not possession of them.
-This file supplies the formal analogy. Invariance, balance, and non-extraction
-are the coordinate handles; naming them Truth, Beauty, and Justice remains
-`[I]`.
+That owner and current Axiology decide what survives. This file supplies only
+the provenance of the older analogy.
 
 ---
 

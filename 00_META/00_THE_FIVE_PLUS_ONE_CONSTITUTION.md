@@ -108,8 +108,7 @@ The governing question is therefore **not** "does this follow?" but **"is this
 admissible, and does anything violate the base?"**
 
 **`EMERGENT` is the narrative sense `[I]`, never the technical one.** It is not a
-claim that the base opens a `μ` onto the corpus — every crossing the base
-performs is type-T, so the base is `μ`-free at its own boundary. Whether any
+claim that either presentation opens a `μ` onto the corpus. Whether any
 individual step is a genuine `μ` remains a separate per-step question under
 `KSC-05`.
 

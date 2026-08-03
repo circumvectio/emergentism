@@ -1,12 +1,427 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-SARPASYA","source":{"path":"../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md","lifecycle":"legacy","role":"historical_lineage"},
-  "cards":[
-    {"card_id":"SV01-01","chapters":["diagnosis-with-rivals"],"locator":{"section":"chapters 1-4","line_start":1,"line_end":2215},"plain_claim":"Institutional capture is a testable change in function, cost, correction or exit, not a universal hidden-intent story.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"institutional diagnosis"}],"owner_ids":["K-3","K-4"],"dependencies":[],"docket_ids":["A3","A7"],"type_boundaries":["narrative diagnosis is not observed mechanism"],"strongest_rival":"Adaptation, scarcity, specialization, capacity, preference and measurement error.","discriminator":"Declare function, baseline, beneficiaries, bearers, intervention and before-after evidence.","kill_criterion":"Retire capture language when fair ordinary rivals explain as well.","survivor_if_killed":"Ask who benefits, pays, corrects and exits.","consequence":{"applicable":true,"bearers":["institution members","affected outsiders"],"consent":"participation is not assent","reversibility":"diagnosis is contestable","exit":"no enemy or pathology label"},"disposition":"research_docket","public":{"state":"source_only","wording":"Test observed function and exit against ordinary institutional rivals."},"review":{"state":"l3_audited","receipts":["13_BOOKS/sarpasya_vijayam/DEBRIEF.md"]}},
-    {"card_id":"SV01-02","chapters":["mathematics-quarantine"],"locator":{"section":"chapters 5-5H","line_start":2216,"line_end":4977},"plain_claim":"The historical mathematical and symbolic apparatus must be separated into native results, selected interpretation and archived type failures.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"current type and custody boundary"},{"tier":"I","scope":"selected symbolism"}],"owner_ids":["K-1","K-3","K-7"],"dependencies":[],"docket_ids":["A1","A2"],"type_boundaries":["chart, Titan, D-level, person and ethic are distinct"],"strongest_rival":"Native mathematics and plain language may make the historical apparatus unnecessary.","discriminator":"Require native recovery and measure type leakage.","kill_criterion":"Archive any mapping that creates causal μ, D6/D0 identity, human rank or ethics from geometry.","survivor_if_killed":"Native mathematics plus an explicit historical record.","consequence":{"applicable":true,"bearers":["people classified by the old model"],"consent":"no classification authority","reversibility":"historical claims remain withdrawn","exit":"symbols are optional"},"disposition":"restate","public":{"state":"source_only","wording":"Preserve native mathematics; archive type, rank and proof-transfer failures."},"review":{"state":"l3_audited","receipts":["13_BOOKS/sarpasya_vijayam/DEBRIEF.md"]}},
-    {"card_id":"SV01-03","chapters":["historical-precedent"],"locator":{"section":"chapters 6-7","line_start":4978,"line_end":5745},"plain_claim":"Historical precedents nominate bounded causal comparisons and counterexamples rather than present prophecies.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"historical mechanism comparison"}],"owner_ids":["K-3","K-4"],"dependencies":["SV01-01"],"docket_ids":["A3","A7"],"type_boundaries":["analogy is not prediction"],"strongest_rival":"Cases may differ in institutions, ecology, technology, selection and measurement.","discriminator":"Predeclare sources, comparable variables, differences and held-out implication.","kill_criterion":"Withdraw the mapping when differences or multicausal rivals absorb it.","survivor_if_killed":"Historical cases remain sources of questions and counterexamples.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"no present group is diagnosed by analogy"},"disposition":"research_docket","public":{"state":"source_only","wording":"History nominates mechanisms; it does not prophesy the present."},"review":{"state":"l3_audited","receipts":["13_BOOKS/sarpasya_vijayam/DEBRIEF.md"]}},
-    {"card_id":"SV01-04","chapters":["nonviolent-repair"],"locator":{"section":"chapter 8","line_start":5746,"line_end":6055},"plain_claim":"Current strategy contracts to voluntary inquiry, connection, refusal, record and small-scale repair.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"nonviolent constitutional boundary"}],"owner_ids":["K-5"],"dependencies":["SV01-01","SV01-03"],"docket_ids":["A5","A7"],"type_boundaries":["repair is not recruitment, counter-war or sovereignty"],"strongest_rival":"Mediation, law, ordinary organizing, withdrawal or inaction may work better.","discriminator":"Compare harm, consent, correction, reversibility and exit.","kill_criterion":"Remove any language that creates enemies, compulsion or martial instruction.","survivor_if_killed":"Nonviolent, bearer-aware local repair.","consequence":{"applicable":true,"bearers":["participants","affected parties"],"consent":"voluntary","reversibility":"smallest reversible act","exit":"no loyalty or retaliation"},"disposition":"restate","public":{"state":"source_only","wording":"Voluntary nonviolent repair with visible bearers and exit."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"]}},
-    {"card_id":"SV01-05","chapters":["voluntary-practice"],"locator":{"section":"chapter 9","line_start":6056,"line_end":6433},"plain_claim":"Reflection and connection practices are optional and make no health, dose or privileged-perception promise.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"practice safety boundary"}],"owner_ids":["K-5"],"dependencies":["SV01-04"],"docket_ids":["A3","A5"],"type_boundaries":["practice is not efficacy or epistemic rank"],"strongest_rival":"Simpler reflection, therapy, community and secular practice may serve better.","discriminator":"Compare accessibility, adverse effects, correction and exit.","kill_criterion":"Remove any element that implies universal dose, health effect or privileged access.","survivor_if_killed":"Optional reflection with no loyalty test.","consequence":{"applicable":true,"bearers":["practitioners"],"consent":"voluntary","reversibility":"stop at any time","exit":"no adherence cost"},"disposition":"restate","public":{"state":"source_only","wording":"Optional reflection without dose, health or privileged-access claims."},"review":{"state":"l3_audited","receipts":["13_BOOKS/sarpasya_vijayam/DEBRIEF.md"]}},
-    {"card_id":"SV01-06","chapters":["institution-as-proposal"],"locator":{"section":"chapters 10-12","line_start":6434,"line_end":7128},"plain_claim":"Any mesh or economy is only a voluntary institutional proposal with consent, custody, costs, dissent, repair and dissolution.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"institutional design"}],"owner_ids":["K-4","K-5"],"dependencies":["SV01-04"],"docket_ids":["A5","A7"],"type_boundaries":["network metaphor is not authority or economic theorem"],"strongest_rival":"Ordinary firms, cooperatives, commons and federations may perform better.","discriminator":"Compare delivery, hidden costs, correction, dissent and practical exit.","kill_criterion":"Use the simpler institution when it protects bearers as well or better.","survivor_if_killed":"A voluntary institutional checklist.","consequence":{"applicable":true,"bearers":["participants","customers","affected outsiders"],"consent":"required","reversibility":"sunset and repair","exit":"property, data and claims remain portable"},"disposition":"research_docket","public":{"state":"source_only","wording":"A mesh is a contestable institutional proposal, never an organism authority."},"review":{"state":"l3_audited","receipts":["03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md"]}},
-    {"card_id":"SV01-07","chapters":["dissolution-and-record"],"locator":{"section":"chapters 13-14","line_start":7129,"line_end":7540},"plain_claim":"Stopping, renaming, forking or leaving never erases outcomes, harms, ownership or repair.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"archive and exit contract"}],"owner_ids":["K-5","K-7"],"dependencies":["SV01-05","SV01-06"],"docket_ids":["A3","A5"],"type_boundaries":["dissolution is not a safety proof"],"strongest_rival":"Ordinary sunset, audit and liability rules may protect better.","discriminator":"Audit whether records, claims, property and repair survive closure.","kill_criterion":"Reject dissolution rhetoric that hides failure or unfinished obligation.","survivor_if_killed":"Visible record, repair and practical exit.","consequence":{"applicable":true,"bearers":["affected parties","record custodians"],"consent":"departure cannot waive another's claim","reversibility":"archive preserved","exit":"leave with claims intact"},"disposition":"retain","public":{"state":"source_only","wording":"Dissolution never erases consequence or repair."},"review":{"state":"l3_audited","receipts":["00_META/00_IMMUNE_PROTOCOL.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-SARPASYA",
+  "source": {
+    "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+    "lifecycle": "legacy",
+    "role": "historical_lineage",
+    "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436"
+  },
+  "cards": [
+    {
+      "card_id": "SV01-01",
+      "chapters": [
+        "diagnosis-with-rivals"
+      ],
+      "locator": {
+        "section": "chapters 1-4",
+        "line_start": 1,
+        "line_end": 2215,
+        "anchor": "# Before You Read",
+        "fingerprint_sha256": "8f7e282e2c4b5a8bc4d2d11af299e51c5f937f051aece4643110a676c0025ba3"
+      },
+      "plain_claim": "Institutional capture is a testable change in function, cost, correction or exit, not a universal hidden-intent story.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "institutional diagnosis"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "type_boundaries": [
+        "narrative diagnosis is not observed mechanism"
+      ],
+      "strongest_rival": "Adaptation, scarcity, specialization, capacity, preference and measurement error.",
+      "discriminator": "Declare function, baseline, beneficiaries, bearers, intervention and before-after evidence.",
+      "kill_criterion": "Retire capture language when fair ordinary rivals explain as well.",
+      "survivor_if_killed": "Ask who benefits, pays, corrects and exits.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "institution members",
+          "affected outsiders"
+        ],
+        "consent": "participation is not assent",
+        "reversibility": "diagnosis is contestable",
+        "exit": "no enemy or pathology label"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "Test observed function and exit against ordinary institutional rivals."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/sarpasya_vijayam/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "SV01-02",
+      "chapters": [
+        "mathematics-quarantine"
+      ],
+      "locator": {
+        "section": "chapters 5-5H",
+        "line_start": 2216,
+        "line_end": 4977,
+        "anchor": "# Chapter 5: The Equation",
+        "fingerprint_sha256": "f60b7b0cc220399c2a8e7c8c444b1ef6a82ba28d122b6fa9b39f01f8dc0d787e"
+      },
+      "plain_claim": "The historical mathematical and symbolic apparatus must be separated into native results, selected interpretation and archived type failures.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "current type and custody boundary"
+        },
+        {
+          "tier": "I",
+          "scope": "selected symbolism"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A1",
+        "A2"
+      ],
+      "type_boundaries": [
+        "chart, Titan, D-level, person and ethic are distinct"
+      ],
+      "strongest_rival": "Native mathematics and plain language may make the historical apparatus unnecessary.",
+      "discriminator": "Require native recovery and measure type leakage.",
+      "kill_criterion": "Archive any mapping that creates causal μ, D6/D0 identity, human rank or ethics from geometry.",
+      "survivor_if_killed": "Native mathematics plus an explicit historical record.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "people classified by the old model"
+        ],
+        "consent": "no classification authority",
+        "reversibility": "historical claims remain withdrawn",
+        "exit": "symbols are optional"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "source_only",
+        "wording": "Preserve native mathematics; archive type, rank and proof-transfer failures."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/sarpasya_vijayam/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-7"
+      ]
+    },
+    {
+      "card_id": "SV01-03",
+      "chapters": [
+        "historical-precedent"
+      ],
+      "locator": {
+        "section": "chapters 6-7",
+        "line_start": 4978,
+        "line_end": 5745,
+        "anchor": "# Chapter 6: The Precedent",
+        "fingerprint_sha256": "6f409d743034143e0112d3793125c110135abb6f3ae8cc0f564657d281271942"
+      },
+      "plain_claim": "Historical precedents nominate bounded causal comparisons and counterexamples rather than present prophecies.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "historical mechanism comparison"
+        }
+      ],
+      "dependencies": [
+        "SV01-01"
+      ],
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "type_boundaries": [
+        "analogy is not prediction"
+      ],
+      "strongest_rival": "Cases may differ in institutions, ecology, technology, selection and measurement.",
+      "discriminator": "Predeclare sources, comparable variables, differences and held-out implication.",
+      "kill_criterion": "Withdraw the mapping when differences or multicausal rivals absorb it.",
+      "survivor_if_killed": "Historical cases remain sources of questions and counterexamples.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "no present group is diagnosed by analogy"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "History nominates mechanisms; it does not prophesy the present."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/sarpasya_vijayam/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "SV01-04",
+      "chapters": [
+        "nonviolent-repair"
+      ],
+      "locator": {
+        "section": "chapter 8",
+        "line_start": 5746,
+        "line_end": 6055,
+        "anchor": "# Chapter 8: The Strategy",
+        "fingerprint_sha256": "857f1d488b2f24025f4bbcab2189325124d1ba7320a390ab246572ddc8424e7b"
+      },
+      "plain_claim": "Current strategy contracts to voluntary inquiry, connection, refusal, record and small-scale repair.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "nonviolent constitutional boundary"
+        }
+      ],
+      "dependencies": [
+        "SV01-01",
+        "SV01-03"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "repair is not recruitment, counter-war or sovereignty"
+      ],
+      "strongest_rival": "Mediation, law, ordinary organizing, withdrawal or inaction may work better.",
+      "discriminator": "Compare harm, consent, correction, reversibility and exit.",
+      "kill_criterion": "Remove any language that creates enemies, compulsion or martial instruction.",
+      "survivor_if_killed": "Nonviolent, bearer-aware local repair.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "affected parties"
+        ],
+        "consent": "voluntary",
+        "reversibility": "smallest reversible act",
+        "exit": "no loyalty or retaliation"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "source_only",
+        "wording": "Voluntary nonviolent repair with visible bearers and exit."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/15_DHARMA_YUDDHA.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "SV01-05",
+      "chapters": [
+        "voluntary-practice"
+      ],
+      "locator": {
+        "section": "chapter 9",
+        "line_start": 6056,
+        "line_end": 6433,
+        "anchor": "# Chapter 9: The Practice",
+        "fingerprint_sha256": "ccdb9f35144d2dba86ea08e87c81a30d04e21423b3041e1b0846a4a2aaff1267"
+      },
+      "plain_claim": "Reflection and connection practices are optional and make no health, dose or privileged-perception promise.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "practice safety boundary"
+        }
+      ],
+      "dependencies": [
+        "SV01-04"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "type_boundaries": [
+        "practice is not efficacy or epistemic rank"
+      ],
+      "strongest_rival": "Simpler reflection, therapy, community and secular practice may serve better.",
+      "discriminator": "Compare accessibility, adverse effects, correction and exit.",
+      "kill_criterion": "Remove any element that implies universal dose, health effect or privileged access.",
+      "survivor_if_killed": "Optional reflection with no loyalty test.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "practitioners"
+        ],
+        "consent": "voluntary",
+        "reversibility": "stop at any time",
+        "exit": "no adherence cost"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "source_only",
+        "wording": "Optional reflection without dose, health or privileged-access claims."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/sarpasya_vijayam/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "SV01-06",
+      "chapters": [
+        "institution-as-proposal"
+      ],
+      "locator": {
+        "section": "chapters 10-12",
+        "line_start": 6434,
+        "line_end": 7128,
+        "anchor": "# Chapter 10: The Mesh",
+        "fingerprint_sha256": "7ff6aa4a381d1c2307af3e134edde11650a0daa7296ea5edb420a0d89a181f6c"
+      },
+      "plain_claim": "Any mesh or economy is only a voluntary institutional proposal with consent, custody, costs, dissent, repair and dissolution.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "institutional design"
+        }
+      ],
+      "dependencies": [
+        "SV01-04"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "network metaphor is not authority or economic theorem"
+      ],
+      "strongest_rival": "Ordinary firms, cooperatives, commons and federations may perform better.",
+      "discriminator": "Compare delivery, hidden costs, correction, dissent and practical exit.",
+      "kill_criterion": "Use the simpler institution when it protects bearers as well or better.",
+      "survivor_if_killed": "A voluntary institutional checklist.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "customers",
+          "affected outsiders"
+        ],
+        "consent": "required",
+        "reversibility": "sunset and repair",
+        "exit": "property, data and claims remain portable"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "A mesh is a contestable institutional proposal, never an organism authority."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-4"
+      ]
+    },
+    {
+      "card_id": "SV01-07",
+      "chapters": [
+        "dissolution-and-record"
+      ],
+      "locator": {
+        "section": "chapters 13-14",
+        "line_start": 7129,
+        "line_end": 7540,
+        "anchor": "# Chapter 13: The Eight Dissolutions",
+        "fingerprint_sha256": "649b41ba2eb9b89a6c4a14590ad0462cc07e414422d427206313e8d485849378"
+      },
+      "plain_claim": "Stopping, renaming, forking or leaving never erases outcomes, harms, ownership or repair.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "archive and exit contract"
+        }
+      ],
+      "dependencies": [
+        "SV01-05",
+        "SV01-06"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "type_boundaries": [
+        "dissolution is not a safety proof"
+      ],
+      "strongest_rival": "Ordinary sunset, audit and liability rules may protect better.",
+      "discriminator": "Audit whether records, claims, property and repair survive closure.",
+      "kill_criterion": "Reject dissolution rhetoric that hides failure or unfinished obligation.",
+      "survivor_if_killed": "Visible record, repair and practical exit.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "affected parties",
+          "record custodians"
+        ],
+        "consent": "departure cannot waive another's claim",
+        "reversibility": "archive preserved",
+        "exit": "leave with claims intact"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Dissolution never erases consequence or repair."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "00_META/00_IMMUNE_PROTOCOL.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-7"
+      ]
+    }
   ]
 }

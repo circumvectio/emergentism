@@ -28,6 +28,8 @@ link_spec.loader.exec_module(link_checker)
 PATHS = {
     "completion": ROOT / "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
     "settled": ROOT / "00_META/00_SETTLED_CANON_REGISTRY.md",
+    "claim_matrix": ROOT / "03_METHODOLOGY/00_CANONICAL_CLAIM_MATRIX.md",
+    "ladder": ROOT / "03_METHODOLOGY/00_THE_DOCTRINAL_LADDER.md",
     "formula": ROOT / "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
     "balance": ROOT / "05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md",
     "burri": ROOT / "05_COSMOLOGY/00_THE_BURRI_RULES.md",
@@ -40,6 +42,8 @@ PATHS = {
     "d45": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
     "soul": ROOT / "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
     "power": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+    "goal": ROOT / "01_TELEOLOGY/00_THE_GOAL.md",
+    "compass": ROOT / "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
     "values": ROOT / "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
     "egregore": ROOT / "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
     "g7": ROOT / "05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md",
@@ -61,6 +65,53 @@ PATHS = {
     "operational": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/30_OPERATIONAL_DEFINITIONS.md",
     "upgrade": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/32_THEOREM_UPGRADE_PROTOCOL.md",
     "suda_protocol": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/39_SUDA_CROSS_VALIDATION_PROTOCOLS.md",
+    "method_derivation": ROOT / "03_METHODOLOGY/01_THE_DERIVATION/00_THE_DERIVATION.md",
+    "macro_paper": ROOT / "03_METHODOLOGY/02_THE_PAPERS/PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md",
+    "macro_prereg": ROOT / "03_METHODOLOGY/03_PREREGISTRATIONS/02_MACRO_CONSTRAINT_CAUSAL_EMERGENCE_PREREG.md",
+    "actual_tests": ROOT / "03_METHODOLOGY/00_WHAT_ACTUALLY_TESTS_THE_THEORY.md",
+    "protocol": ROOT / "08_FRAMEWORK_SUPPORT/00_THE_PROTOCOL.md",
+    "remaining": ROOT / "00_META/00_THE_REMAINING_QUESTIONS.md",
+    "hidden_center": ROOT / "01_TELEOLOGY/00_THE_HIDDEN_CENTER_OF_THE_FRAMEWORK.md",
+    "memetics_index": ROOT / "02_EPISTEMOLOGY/03_MEMETICS/README.md",
+    "old_transcendentals": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/16_EFR_TRANSCENDENTALS.md",
+}
+
+KSC02_PROJECTION_PATHS = {
+    "seed_front": ROOT / "10_SEED/01_THE_SEED_LADDER/00_THE_SEED.md",
+    "seed_d5": ROOT / "10_SEED/01_THE_SEED_LADDER/D5_THE_GAME.md",
+    "rosetta_master": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md",
+    "d5_register": ROOT / "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
+    "core_concepts": ROOT / "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md",
+    "anmut": ROOT / "04_AXIOLOGY/00_ANMUT_AND_DEMUT.md",
+    "computational": ROOT / "05_COSMOLOGY/00_THE_COMPUTATIONAL_SPHERE.md",
+}
+
+KSC02_LATE_MIGRATION_PATHS = {
+    "d32_math": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_DOMAINS/D32_MATHEMATICS.md",
+    "four_forces": ROOT / "01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md",
+    "neoteny": ROOT / "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/39_NEOTENY_AS_F5_DELAY_AND_CULTURAL_WOMB.md",
+    "saturation": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md",
+    "honest_position": ROOT / "02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md",
+    "seed_d1": ROOT / "10_SEED/01_THE_SEED_LADDER/D1_ARITHMETIC.md",
+    "seed_d2": ROOT / "10_SEED/01_THE_SEED_LADDER/D2_GEOMETRY.md",
+    "seed_d4": ROOT / "10_SEED/01_THE_SEED_LADDER/D4_SPACETIME.md",
+    "generative_table": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
+    "papers_index": ROOT / "03_METHODOLOGY/02_THE_PAPERS/README.md",
+    "knife": ROOT / "08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md",
+    "lens_foreword": ROOT / "08_FRAMEWORK_SUPPORT/00_META/FOREWORD.md",
+    "amrita": ROOT / "07_THEOLOGY/00_THE_AMRITA.md",
+    "old_godel": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
+    "old_mandelbrot": ROOT / "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_66_Mandelbrot_Consciousness.md",
+    "old_nietzsche": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/D14_ROSETTA_R5_NIETZSCHE.md",
+    "old_civilisation": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md",
+    "old_application": ROOT / "01_TELEOLOGY/02_THE_DERIVATION/08_WHAT_WE_HAVENT_SAID.md",
+}
+
+KSC02_ONTOLOGY_PATHS = {
+    "dof_owner": ROOT / "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+    "axiom_owner": ROOT / "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md",
+    "kernel": ROOT / "06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md",
+    "weltanschauung": ROOT / "00_THE_WELTANSCHAUUNG.md",
 }
 
 
@@ -372,7 +423,7 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             self.assertLessEqual(balance, 1.0 + 1e-14)
         text = read("formula")
         self.assertIn("These are **chart facts only**", text)
-        self.assertIn("It is not derived from `φ·ν=1`", text)
+        self.assertRegex(text.lower(), r"neither is derived from\s+`φ·ν=1`")
 
     def test_conjunctive_aggregators_are_not_interchangeable(self):
         a, b = (0.9, 0.2), (0.4, 0.4)
@@ -387,18 +438,176 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             self.assertGreaterEqual(aggregator((0.8, 0.9)), aggregator((0.7, 0.9)))
         self.assertIn("do not select\na unique formula", read("formula"))
 
+    def test_raw_product_ranking_reverses_under_independent_monotone_rescaling(self):
+        a, b = (0.9, 0.2), (0.5, 0.5)
+        product = lambda x: x[0] * x[1]
+        rescale_phi = lambda x: x**10
+        rescale_v = lambda x: x
+        transform = lambda x: (rescale_phi(x[0]), rescale_v(x[1]))
+
+        # The profiles are incomparable; a raw ordinal product invents a total
+        # order that an independently admissible change of scale can reverse.
+        self.assertLess(product(a), product(b))
+        self.assertGreater(product(transform(a)), product(transform(b)))
+        self.assertFalse(a[0] >= b[0] and a[1] >= b[1])
+        self.assertFalse(b[0] >= a[0] and b[1] >= a[1])
+
+        owners = "\n".join(
+            read(name)
+            for name in ("completion", "claim_matrix", "ladder", "types", "goal", "compass")
+        )
+        self.assertIn("calibration contract", owners.lower())
+        self.assertNotRegex(owners, r"P_node\s*=\s*Φ")
+
+    def test_pareto_order_survives_independent_monotone_rescaling(self):
+        pareto_geq = lambda x, y: x[0] >= y[0] and x[1] >= y[1]
+        rescale_phi = lambda x: x**3
+        rescale_v = lambda x: math.sqrt(x)
+        transform = lambda x: (rescale_phi(x[0]), rescale_v(x[1]))
+
+        profiles = (
+            ((0.8, 0.7), (0.6, 0.4)),  # strict dominance
+            ((0.9, 0.2), (0.5, 0.5)),  # incomparability
+            ((0.3, 0.3), (0.3, 0.3)),  # equality
+        )
+        for a, b in profiles:
+            self.assertEqual(pareto_geq(a, b), pareto_geq(transform(a), transform(b)))
+            self.assertEqual(pareto_geq(b, a), pareto_geq(transform(b), transform(a)))
+
+        owners = "\n".join(read(name) for name in ("formula", "types", "goal", "compass"))
+        self.assertIn("independent strictly increasing reparameterizations", owners)
+        self.assertIn("componentwise Pareto", owners)
+
+    def test_p0_downstream_surfaces_use_profiles_before_scalar_candidates(self):
+        active_names = (
+            "method_derivation",
+            "macro_paper",
+            "macro_prereg",
+            "actual_tests",
+            "protocol",
+            "remaining",
+            "hidden_center",
+            "memetics_index",
+        )
+        active = {name: read(name) for name in active_names}
+
+        for name, body in active.items():
+            self.assertIn("N_node", body, name)
+            self.assertNotRegex(body, r"\bP_node(?:,[iH])?\s*[:=]", name)
+            self.assertNotRegex(body, r"(?:Δ|Delta\s+)P_node", name)
+            self.assertNotIn("ΣP_node", body, name)
+
+        for name in ("macro_paper", "macro_prereg", "actual_tests", "protocol"):
+            body = active[name]
+            self.assertIn("P×", body, name)
+            self.assertIn("calibration contract", body.lower(), name)
+
+        for name in ("remaining", "hidden_center", "memetics_index"):
+            self.assertIn("Pareto", active[name], name)
+
+        for name in ("macro_paper", "macro_prereg", "actual_tests", "protocol", "remaining", "memetics_index"):
+            self.assertRegex(active[name], r"shared\s+aggregation\s+contract", name)
+
+        historical = read("old_transcendentals")
+        self.assertIn("SUPERSEDED", historical)
+        self.assertIn("no current semantic authority", historical.lower())
+        self.assertIn("must not be cited", historical)
+
+    def test_ksc02_reader_projections_preserve_the_profile_boundary(self):
+        projection_names = (
+            "seed_front",
+            "seed_d5",
+            "rosetta_master",
+            "d5_register",
+            "core_concepts",
+        )
+        for name in projection_names:
+            body = KSC02_PROJECTION_PATHS[name].read_text(encoding="utf-8")
+            self.assertIn("N_node", body, name)
+            self.assertIn("Pareto", body, name)
+            self.assertIn("calibration contract", body.lower(), name)
+            self.assertNotRegex(body, r"\bP_node(?:,[iH])?\s*[:=]", name)
+            self.assertNotIn("ΣΔP_node", body, name)
+
+        joined = "\n".join(
+            KSC02_PROJECTION_PATHS[name].read_text(encoding="utf-8")
+            for name in projection_names
+        )
+        self.assertIn("human worth", joined)
+        self.assertIn("P×,κ=Φ_cV_c", joined)
+
+        for name in ("anmut", "computational"):
+            body = KSC02_PROJECTION_PATHS[name].read_text(encoding="utf-8")
+            self.assertIn("N_node=(Φ̂₄,V₄)", body, name)
+            self.assertIn("Pareto", body, name)
+            self.assertIn("calibration contract", body.lower(), name)
+            self.assertNotIn("P_node = Φ × V", body, name)
+
+    def test_ksc02_late_migration_and_legacy_quarantine(self):
+        for name in ("d32_math", "four_forces", "neoteny", "saturation"):
+            body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
+            self.assertIn("N_node", body, name)
+            self.assertRegex(body.lower(), r"calibration\s+contract", name)
+            self.assertNotIn("Default calculation", body, name)
+            self.assertNotRegex(body, r"Σ(?:Δ)?P_node", name)
+
+        d32 = KSC02_LATE_MIGRATION_PATHS["d32_math"].read_text(encoding="utf-8")
+        self.assertIn("P_x,kappa", d32)
+        self.assertIn("not a default power", d32)
+
+        for name in (
+            "honest_position",
+            "seed_d1",
+            "seed_d2",
+            "seed_d4",
+            "generative_table",
+            "papers_index",
+            "knife",
+            "lens_foreword",
+            "amrita",
+        ):
+            body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
+            self.assertIn("N_node", body, name)
+            self.assertRegex(body.lower(), r"calibration\s+contract", name)
+
+        for name in (
+            "old_godel",
+            "old_mandelbrot",
+            "old_nietzsche",
+            "old_civilisation",
+            "old_application",
+        ):
+            body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
+            self.assertIn("SUPERSEDED — no current semantic authority", body, name)
+            self.assertIn("NO CURRENT SEMANTIC AUTHORITY", body, name)
+
+    def test_ksc02_ontology_owners_do_not_force_an_and_scalar(self):
+        for name, path in KSC02_ONTOLOGY_PATHS.items():
+            body = path.read_text(encoding="utf-8")
+            lower = body.lower()
+            self.assertRegex(lower, r"calibrat(?:ed|ion)\s+(?:contract|structural)", name)
+            self.assertNotRegex(lower, r"and-class\s+forced|and-class\s+forcing", name)
+        self.assertIn(
+            "force no\nscalar at all",
+            KSC02_ONTOLOGY_PATHS["dof_owner"].read_text(encoding="utf-8"),
+        )
+        self.assertIn(
+            "does not require a\nscalar",
+            KSC02_ONTOLOGY_PATHS["kernel"].read_text(encoding="utf-8"),
+        )
+
     def test_perfect_foresight_zero_means_requires_a_budget_premise(self):
-        phi_quality = 1.0
+        calibrated_phi = 1.0
         unconstrained_means = 0.6
-        self.assertEqual(phi_quality * unconstrained_means, unconstrained_means)
+        self.assertEqual(calibrated_phi * unconstrained_means, unconstrained_means)
 
         budget = 1.0
-        constrained_means = budget - phi_quality
+        constrained_means = budget - calibrated_phi
         self.assertEqual(constrained_means, 0.0)
-        self.assertEqual(phi_quality * constrained_means, 0.0)
+        self.assertEqual(calibrated_phi * constrained_means, 0.0)
 
         text = read("formula")
-        self.assertIn("Φ̂₄+V₄≤1", text)
+        self.assertIn("Φ_c+V_c≤1", text)
         self.assertIn("Without this budget premise", text)
         self.assertRegex(text, r"perfect modeled foresight does \*\*not\*\* by\s+itself")
 
@@ -427,10 +636,11 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         suda = read("suda_protocol")
         upgrade = read("upgrade")
 
-        self.assertIn("| present evaluations | `Φ̂₄,V̂₄`", operational)
+        self.assertIn("| finite node | `Φ₅,Φ̂₄,V₄,N_node`", operational)
+        self.assertIn("| calibrated application | `Φ_c,V_c,C_κ(Φ_c,V_c)`", operational)
         self.assertNotIn("ν̂", operational)
         self.assertIn("`φν=1` is true by definition on the chart", operational)
-        self.assertIn("`Φ̂₄V̂₄≈1` is not a\nchart identity", operational)
+        self.assertIn("`C_κ(Φ_c,V_c)≈1` is not a chart identity", operational)
         self.assertIn("Selecting reciprocal pairs and then reporting reciprocal symmetry kills the", operational)
         self.assertIn("Authorization `U` and safety admissibility are independent typed\ngates", operational)
         self.assertIn("never build them into the `V̂₄` instrument", operational)

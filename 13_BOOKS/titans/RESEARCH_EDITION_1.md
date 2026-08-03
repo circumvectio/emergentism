@@ -1,6 +1,6 @@
 ---
 title: "The Titans — The Infinite, Finity & Infinity"
-status: "STAGED RESEARCH EDITION — five chapters, 100% claim-card coverage; not a completed algebra"
+status: "STAGED RESEARCH EDITION — six chapters, 100% claim-card coverage; not a completed algebra"
 date: 2026-07-28
 evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [TIT01-01, TIT01-02, TIT01-03, TIT01-04, TIT01-05]
@@ -30,21 +30,33 @@ Finity and Infinity—are selected readings of ground-facing pre-countability,
 accountability to a finite limit, and countably unending traversal. They are
 not a census of reality.
 
-## 3. Finity protocol `[S/I/C]`
+## 3. Typed inversion `[A/I]`
+
+On the Riemann sphere, the named inversion swaps `0` with the projective point
+at infinity and preserves the unit circle setwise. Those are exact projective
+facts carried by the standard-mathematics claim. This chapter retains only the
+bounded interpretation: a selected map `r_T` relates opaque Titan seats to the
+swapped point pair and preserved circle, while its explicitly induced map
+`ι_*` acts on tagged geometric features. Neither inversion nor arithmetic acts
+on `TitanFrame` itself. The source module's compactification, Cayley-coordinate,
+and class-theory sections remain outside this staged edition until separately
+carded.
+
+## 4. Finity protocol `[S/I/C]`
 
 At a boundary, declare the type, base domain, obstruction, smallest extension,
 recovery map, rival, novelty test and kill criterion. This F0 specification may
 be useful as type hygiene. It becomes a mathematical contribution only if a
 result survives prior-art comparison and independent formal review.
 
-## 4. Paradox adjudication `[A/S/I/C]`
+## 5. Paradox adjudication `[A/S/I/C]`
 
 Each puzzle receives its own ledger row. Some rows are settled by standard
 mathematics; some are type or domain diagnostics; some are philosophical
 reframes; some remain open. No success in one row promotes another. Quantum
 measurement, ontology and incompleteness are not solved by Titan vocabulary.
 
-## 5. Recovery and failure `[S/C]`
+## 6. Recovery and failure `[S/C]`
 
 The standard fragment must be conservative. Titan arithmetic and silent
 extensions must fail. A projective map cannot masquerade as field division. A

@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
-"""Verify G1-G5 of 05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md.
+"""Run bounded regressions for the selected generative-base model.
 
 The base posits one object and two operations:
 
     PRIMITIVE   1
     OPERATIONS  S(x) = x + 1        iota(x) = 1/x
 
-Everything the base claims is decidable by exhaustion over finite words, so this
-script is the whole stranger test: it needs no metaphysics, only fractions.
+Finite samples cannot prove universal reachability or injectivity. This script
+checks declared finite bounds with exact rational arithmetic so mutations and
+counterexamples inside those bounds fail loudly.
 
-Exits 0 if every claim holds, 1 otherwise. Prints which claim failed.
+Exits 0 if the bounded regressions pass, 1 otherwise.
 
 WHY THIS EXISTS. The first statement of G2 in conversation was FALSE — it said
 each value has exactly one word, ignoring that iota-iota is the identity, so
-every word has infinitely many longer twins. The repair (reduced words) is exact
-rather than a patch, and this script is what proves it rather than asserting it.
+every word has infinitely many longer twins. The reduced-word repair is tested
+here over finite bounds; a complete injectivity proof remains a separate duty.
 """
 
 from __future__ import annotations
@@ -105,6 +106,12 @@ def main() -> int:
     # the sharper form: iota(x)=0 has no solution, S(x)=0 has none in the positives
     if any(1 / x == 0 for x in list(seen)[:10000]):
         failures.append("G3: iota mapped a reachable value to 0")
+
+    # --- G4 finite-word representation invariant ----------------------------
+    # Fraction has no infinity value. The universal claim rests on induction
+    # over finite words; this assertion only guards the enumerated sample.
+    if any(not isinstance(v, F) for v in by_value):
+        failures.append("G4: an enumerated finite word escaped exact rational values")
 
     # --- G6/G7/G8a: the two operations are not two of a kind -----------------
     # G8a only: rationals throughout, no reals. G8b (the log form) needs the
@@ -227,7 +234,7 @@ def main() -> int:
         return 1
 
     print(
-        f"GENERATIVE BASE: PASS "
+        f"GENERATIVE BASE BOUNDED REGRESSION: PASS "
         f"({len(by_value)} values from all words to length {WORD_LEN}; "
         f"{unreduced_multi} unreduced collisions, 0 reduced; "
         f"CW tree {n_words} words / {len(cw)} distinct; "

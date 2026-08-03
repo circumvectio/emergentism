@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-"""Re-check every entry in 00_ESTABLISHED/README.md.
+"""Fail closed when the verification-state ledger overstates its checks.
 
-The manifest lists only claims that a machine or an exhaustive computation
-verifies. This script re-runs those checks and additionally guards the manifest
-against the failure mode it was built to prevent: quietly becoming a promotion
-path by growing its admitted list or shrinking its "what is NOT here" list.
-
-Exits 0 if every entry still holds, 1 otherwise.
+This script performs source lint and bounded computational regression. It does
+not compile the standalone Lean candidate file and does not prove universal
+claims by finite enumeration. The ledger must say exactly that.
 """
 
 from __future__ import annotations
@@ -66,11 +63,11 @@ def main() -> int:
     else:
         lean = LEAN.read_text(encoding="utf-8")
         n = len(re.findall(r"^theorem ", lean, re.M))
-        claimed = re.search(r"\*\*(\d+) theorems\.\*\*", text)
+        claimed = re.search(r"\*\*(\d+) theorem\s+declarations\*\*", text)
         if not claimed:
-            errors.append("the manifest does not state a Lean theorem count")
+            errors.append("the ledger does not state a Lean declaration count")
         elif int(claimed.group(1)) != n:
-            errors.append(f"manifest claims {claimed.group(1)} Lean theorems; the file has {n}")
+            errors.append(f"ledger claims {claimed.group(1)} Lean declarations; the file has {n}")
         # a real sorry, not the comment asserting there is none
         for m in re.finditer(r"\bsorry\b|\badmit\b", lean):
             line = lean[: m.start()].count("\n") + 1
@@ -78,7 +75,10 @@ def main() -> int:
             if not ctx.lstrip().startswith(("--", "/-", "*")) and "no `sorry`" not in ctx:
                 errors.append(f"EmergentismCheck.lean:{line} contains a real sorry/admit")
 
-    # --- B · the generative base, re-run ------------------------------------
+    if "does not yet compile that file" not in text:
+        errors.append("the ledger must disclose that this gate does not compile the Lean candidate")
+
+    # --- B · bounded generative-base regression ----------------------------
     if not BASE_CHECK.exists():
         errors.append("check_generative_base.py is missing")
     else:
@@ -86,7 +86,7 @@ def main() -> int:
         if r.returncode != 0:
             errors.append(f"check_generative_base.py FAILED: {(r.stdout or r.stderr).strip()[:200]}")
 
-    # --- every listed G-claim must exist in the base document ---------------
+    # --- every indexed G-claim must exist in the base document --------------
     base_doc = ROOT / "05_COSMOLOGY" / "03_FORMAL_SYSTEM" / "52_THE_GENERATIVE_BASE.md"
     if base_doc.exists():
         doc = base_doc.read_text(encoding="utf-8")
@@ -96,7 +96,13 @@ def main() -> int:
     else:
         errors.append("52_THE_GENERATIVE_BASE.md is missing")
 
-    # --- THE MANIFEST'S OWN KILL — the unestablished list may not shrink ----
+    if "G2` | **open general claim" not in text:
+        errors.append("G2 must remain explicitly open pending a complete injectivity proof")
+    for phrase in FORBIDDEN_INFLATIONS:
+        if phrase in text:
+            errors.append(f"verification inflation remains in ledger: {phrase!r}")
+
+    # --- the ledger's own kill — exclusions may not shrink -----------------
     for item in MUST_STAY_UNESTABLISHED:
         if item not in text:
             errors.append(
@@ -123,8 +129,9 @@ def main() -> int:
     n_lean = len(re.findall(r"^theorem ", LEAN.read_text(encoding="utf-8"), re.M))
     n_g = len(set(re.findall(r"^\| `(G\d+[ab]?)` \|", text, re.M)))
     print(
-        f"ESTABLISHED: PASS ({n_lean} Lean theorems, no sorry; {n_g} exhaustively-checked "
-        f"base claims; {len(MUST_STAY_UNESTABLISHED)} guarded exclusions intact)"
+        f"ESTABLISHED LEDGER: PASS ({n_lean} Lean declarations linted, not compiled; "
+        f"bounded base regression passed; {n_g} G-rows indexed; "
+        f"{len(MUST_STAY_UNESTABLISHED)} guarded exclusions intact)"
     )
     # r183 (`183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`) · THE
     # SCOPE OF THIS PASS, PRINTED SO IT CANNOT BE OVER-READ.

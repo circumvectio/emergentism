@@ -25,9 +25,9 @@ parents:
 
 > A tier says **how strong** a claim's warrant is. A status says **how it
 > currently stands**. The corpus had the first axis and not the second, so one
-> word — *dead* — was carrying eight different epistemic states at once. This
-> register separates them, and in doing so reopens every grave that can honestly
-> be reopened.
+> word — *dead* — was carrying several epistemic states at once. This register
+> separates them, preserves every grave, and routes any renewed inquiry through
+> a different question ID.
 
 This surface routes. It creates no doctrine, owns no claim, and promotes
 nothing. Where it disagrees with a semantic owner, the owner wins and this file
@@ -65,8 +65,7 @@ explicitly "not truth labels." This register does not replace it.
 | `OPEN-FORMAL` | well-posed formal question; neither proved nor refuted | work, at `[C]` |
 | `OPEN-EMPIRICAL` | well-posed empirical claim; discriminator and kill named; test unrun | preregistration, at `[C]` |
 | `COMPONENT-SUPPORTED` | neighbouring evidence exists for a *component*; the integrated claim does not inherit it | careful citation that names the gap |
-| `NARROWED` | the strong form failed; a named weaker form survives and is live under its own owner | citation of the weaker form only |
-| `OWNER-REOPENED` | a terminal row restored to **active investigation** by owner ruling, with its counterexample intact | work on the *question*; **never** citation of the refuted form as true |
+| `NARROWED` | the strong form failed; a named weaker form survives under its own ID or owner while the parent retains its terminal status | citation of the weaker form only |
 
 ### Terminal statuses
 
@@ -85,27 +84,25 @@ explicitly "not truth labels." This register does not replace it.
 > **never** return to a live status *as the claim it was*. Its counterexample
 > stays attached, permanently and visibly.
 
-**Exactly three moves are lawful**, and no fourth exists:
+**Exactly two successor moves are lawful**:
 
 | Move | Requires | Restores |
 |---|---|---|
-| `NARROWED` | a **named weaker form**, live under its own owner | citation of the weaker form only |
+| a named weaker successor | its own ID or owner, with the weakening explicit | citation of the weaker form only; the parent remains terminal |
 | a new `RQ` row | new ID · the weakening or retyping stated against the parent · the parent's counterexample carried · a discriminator · a kill · a survivor | a *different* question |
-| `OWNER-REOPENED` | **all four**: an owner **ruling receipt on disk** · the **counterexample intact** · the **`status_before_reopening`** recorded · a declared **`repair_path`** | **active investigation only** — never the truth of the refuted form |
 
-The four preconditions on `OWNER-REOPENED` are not ceremony. They are the entire
-defence against silent thawing, and the validator enforces every one of them.
-**A ruling can reopen a question; it cannot delete a counterexample.**
+An owner ruling may authorize work on a successor or new question. That is a
+workflow act, not a validation status, and it supplies no evidence. **A ruling
+can authorize inquiry; it cannot thaw a grave or delete a counterexample.**
 
 This is not conservatism. It is the whole content of E9 and Refusal 5. Without
 it, "work in progress" becomes the mechanism by which a fired kill is quietly
 logged as a pass — dead form **DF-22**, the exact move A7 exists to forbid.
 
-### The reopening protocol `[S]`
+### The investigation protocol `[S]`
 
-A **new `RQ` row** — the second of the three lawful moves in §2 — requires all five
-of the following. (This is the protocol for *opening a new question*; it is not the
-route by which an existing terminal row changes status, which is `OWNER-REOPENED`.)
+A **new `RQ` row** requires all five of the following. There is no route by which
+an existing grave changes to a live validation status.
 
 1. a **new ID** (the old row is not edited);
 2. the **weakening or retyping** stated explicitly against the refuted form;
@@ -113,7 +110,7 @@ route by which an existing terminal row changes status, which is `OWNER-REOPENED
 4. a **discriminator** — what observation or proof would distinguish it from its strongest rival;
 5. a **kill criterion** and the **survivor** if it fires.
 
-Anything less is not a reopening. It is the parent claim wearing a new coat.
+Anything less is not a new investigation. It is the parent claim wearing a new coat.
 
 ---
 
@@ -278,7 +275,7 @@ domain-specific actuality and discrimination debt remains with W1.
 - It does not upgrade any claim. Appearing here is not evidence.
 - It does not create an eighth kernel surface. K-1…K-7 own the content.
 - It does not soften a counterexample into a "perspective."
-- It does not let a reopened question inherit its parent's old strength.
+- It does not let a successor investigation inherit its parent's old strength.
 - It does not treat the *absence* of a kill as support.
 
 ### Kill criterion for this register — **it fired, and is recorded, not reworded away**
@@ -310,14 +307,14 @@ a defective act — so the test is replaced and the firing stays on the record.
 **Amended criterion `[S]`.** This surface has failed, and should be deleted
 rather than repaired, if any of the following is ever true:
 
-1. a terminal row appears in a live status **with its counterexample removed,
-   emptied, or softened**;
-2. an `OWNER-REOPENED` row lacks any of its four preconditions — ruling receipt
-   on disk, intact counterexample, recorded `status_before_reopening`, declared
-   `repair_path`;
-3. a reopened row is **cited as evidence that the refuted form is true**, rather
-   than as an open question;
-4. this criterion is ever narrowed, weakened, or deleted **without a dated
+1. any grave appears in a live status, regardless of owner authorization;
+2. a grave's terminal status, counterexample or process defect is removed,
+   emptied, softened or silently relabelled;
+3. an investigation lacks a new ID, parent relation, discriminator, kill or
+   survivor, or is cited as evidence that the parent is true;
+4. a narrowed Titan survivor is promoted back into arithmetic or
+   `FORMALLY-VALID`; or
+5. this criterion is ever narrowed, weakened, or deleted **without a dated
    receipt recording that it fired**.
 
 **What is actually enforced, stated honestly.** Clauses 1 and 2 are checked by
@@ -340,6 +337,6 @@ protection. It rests on whoever edits this page next.
 **Machine check:** [`claim_status/CLAIM_STATUS.yaml`](claim_status/CLAIM_STATUS.yaml)
 carries these rows in the corpus JSON-subset form; run
 `python3 09_TOOLS/01_SCRIPTS/check_claim_status.py` to enforce the one-way rule,
-the reopening protocol, and cross-reference integrity against K-4 and K-7.
+the investigation protocol, and cross-reference integrity against K-4 and K-7.
 
 •   ⊙   ○ — *a grave with a door is still a grave; the door only opens outward, onto a different question.*

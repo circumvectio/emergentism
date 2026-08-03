@@ -40,12 +40,11 @@ ontological proofs, or ethical imperatives.
 
 ## 2. Coupling model `[I/C]`
 
-Let `V₄` name D4 actual power, `Φ₅` D5 possible power, and
-`Φ̂₄=Eval₄(M,Φ₅)` its present D4 estimate. Let `C(Φ̂₄,V₄)` be a normalized,
-monotone conjunctive aggregator satisfying
+Let `V₄∈O_V` name D4 actual power, `Φ₅` D5 possible power, and
+`Φ̂₄=Eval₄(M,Φ₅)∈O_Φ` its present D4 estimate. The source-typed object is
 
 \[
-C(0,V_4)=C(\widehat\Phi_4,0)=0.
+N_{node}=(\widehat\Phi_4,V_4).
 \]
 
 Emergentism selects the normalized minimum instance

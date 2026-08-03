@@ -261,17 +261,18 @@ SYN_C = DeltaOrder_C
       - Cost_C
 ```
 
-For agency-facing runs, the ledger must additionally report:
+For agency-facing runs, the ledger must additionally report the unaggregated
+profiles:
 
 ```text
 P_node,i = min(Phi_hat_4_i, V_4_i)
 P_node,H = min(Phi_hat_4_H, V_4_H)
 
-strict syntropic dyad:
-Delta P_node,i >= 0
-Delta P_node,H >= 0
+default profile test:
+N_node,i(after) >=_P N_node,i(before)
+N_node,H(after) >=_P N_node,H(before)
 eta = 0
-at least one inequality is strict
+at least one coordinate improvement is strict
 ```
 
 These are ordinal comparisons under `KSC-02`; the ledger does not add or

@@ -150,7 +150,7 @@ EvaluationStatus :=
 | `a/b`, `b≠0` | field `F` | `value` |
 | `a/0` | field `F` | `undefined` |
 | `0/0` | field `F` | `undefined` |
-| `0/0` inside a limit | limit syntax | `indeterminate_form` |
+| `f(x)/g(x)` with `f(x),g(x)→0` | declared limit problem | `indeterminate_form` |
 | `lim_(x→0+) 1/x` | extended real line | `extended_value: +∞` |
 | `lim_(x→0−) 1/x` | extended real line | `extended_value: −∞` |
 | `lim_(x→0) 1/x` | ordinary two-sided real limit | `diverges` / does not exist |
@@ -197,25 +197,31 @@ theorem dressed as a choice, or a choice dressed as a theorem.
 The accurate word is **foreclosed**: closed off by the structure's own axioms,
 with no agent involved. Emergentism forbids nothing here; the field forecloses it.
 
-### 3A.4 The strongest form — totality and fieldhood are exclusive `[A]`
+### 3A.4 The strongest valid form — total quotient laws fail at zero `[A]`
 
 This is the owner's insight, and it is a genuine theorem-shaped trade:
 
-> **No structure has both total division and the field axioms.**
-> To give `a/0` a value you must surrender something: zero being absorbing,
-> distributivity, or the absence of a bottom element.
+> **No nontrivial field admits a total quotient operation satisfying
+> `(a/b)·b=a` for every denominator `b`.**
 
-The trade is not hypothetical. **Wheels** (Setzer, Carlström) make division
-total and pay for it explicitly with `0/0 = ⊥` and weakened axioms. And `Ĉ`
-achieves total inversion — `f_N(0)=∞`, `f_N(∞)=0` — precisely because **`Ĉ` is
-not a ring at all**, let alone a field (doc 45 §6).
+For `b=0` and `a≠0`, that law requires `(a/0)·0=a`, while the field axioms give
+`y·0=0` for every `y`. One may expand the underlying field with an arbitrary
+total binary symbol `/`—for example by stipulating `a/0=0`—without changing the
+field axioms. But the stipulated zero-denominator branch is not field division:
+it cannot satisfy the quotient law it is supposed to express.
 
-So the owner's "it leaves the field of arithmetic entirely" is **literally
-correct**, and sharper than a prohibition:
+The trade is not hypothetical. **Wheels** (Setzer, Carlström) make a
+division-like operation total by changing the surrounding algebraic laws. And
+`Ĉ` achieves total reciprocal inversion—`f_N(0)=∞`, `f_N(∞)=0`—precisely because
+**`Ĉ` is not a ring at all**, let alone a field (doc 45 §6).
+
+So a zero-denominator value that is required to retain the ordinary quotient law
+leaves the category of fields. The precise trade is:
 
 ```text
-keep the field          →  the operation has no value
-keep the operation      →  you are no longer in a field
+keep field division and its quotient law  →  the zero-denominator input has no value
+totalize a division-like operation        →  its zero branch is not field division,
+                                            or the surrounding algebra changes
 ```
 
 The boundary is where that choice is forced. Performing the operation does not
@@ -285,6 +291,8 @@ f_N(z)=N/z for z∈ℂ\\{0};  f_N(0)=∞;  f_N(∞)=0.
 ```
 
 That total map is a construction on `ℂP¹`, not a repaired field quotient.
+Here `∞` is the projective point `∞_P` named by the carrier, not a field
+element.
 
 ## 5. Reciprocal-chart facts `[A]`
 
@@ -438,16 +446,17 @@ over-reaching its chart.
 packaging and interpretation, never as proof-authority or originator; no physics,
 energy-ontology or genetic claims are imported.
 
-### 6A.5 Finity is the family of triangles `[A]`
+### 6A.5 A Finity triangle model `[A/I]`
 
-Owner observation, 2026-07-29, and it supplies a definition the corpus lacked.
+Owner observation, 2026-07-29. It supplies an exact geometric model, not a
+replacement definition for `FinityProtocol`, `FinityReach_G0`, or the continuum.
 
 The figure that sweeps is the **projection triangle `N–S–X`** — apex, origin, and
 the projected point — not `N–P–S`. Because `NS` is perpendicular to the line, the
 angle at `S` is a right angle *always*, and the legs are
 
 ```text
-NS = 1          fixed — the diameter
+NS = 1          fixed leg
 SX = tan A      sweeps (0, ∞)
 NX = sec A      the hypotenuse
 ```
@@ -467,38 +476,38 @@ the triangle is isoceles, and the projected point lands on `|z| = 1`. **`ι` fol
 sweep at the equator.** The marking is what makes the count one-to-one; drop it and
 the family is halved.
 
-### The two degenerations, and they are the poles `[A]`
+### The two limiting degenerations `[A/I]`
 
 ```text
-A → 0°    X → S.   width → 0.   angle at X → 90°
-          TWO right angles (S and X); the figure collapses onto the segment NS.
-          A RECTANGLE OF ZERO WIDTH.
+A → 0°    X → S.   width → 0.   the angle at X tends to 90°.
+          The triangle collapses onto the segment NS; the endpoint itself has
+          no triangle angle at the coincident vertex.
 
 A → 90°   X → ∞.   width → ∞.   angle at N → 90°
-          TWO right angles (S and N), so NX is PARALLEL to the baseline.
-          Two parallels on a common perpendicular: a HALF-STRIP.
+          For every finite A there is still one right triangle. At the endpoint
+          there is no finite Euclidean triangle; its two rays have a parallel
+          limiting configuration.
 ```
 
-**One refinement on the owner's word.** The second limit is not a *rectangle* in
-the plane — a rectangle needs four right angles and a closing side, and here the
-two parallels never meet. It is **three sides of a rectangle whose fourth side is
-at infinity**. On `Ĉ`, where the parallels *do* meet at `∞`, the word is exactly
-right; in the affine plane it is a half-strip. The distinction is the same
-chart-locality as everywhere else, and it is worth keeping because it is *why*
-the crossing needs a declared structure change.
+Neither endpoint is a Euclidean rectangle. A real projective completion may
+represent parallel affine lines as incident at an ideal point, but projective
+completion does not preserve Euclidean right angles. Moreover `Ĉ=ℂP¹` is the
+Riemann sphere, not the real projective plane in which affine-line incidence is
+completed. “Zero-width rectangle” and “fourth side at infinity” may be retained
+only as `[I]` images, never as geometric theorems.
 
-So both ends are **degenerate rectangles**, and `ι` exchanges them:
+The reciprocal width coordinate exchanges the two limiting regimes:
 
 ```text
 zero width  ←—— ι ——→  infinite width
-   x = 0                  x = ∞
-     •                      ○
+  x = 0_P                x = ∞_P
 ```
 
-### The definition this yields `[S]`
+Here `0_P` and `∞_P` name endpoint coordinates in the declared extension. A
+separate interpretive map may associate those endpoints with `•` and `○`;
+`ι` does not act on Titan seats.
 
-> **Finity is not a number. It is the family of non-degenerate shapes — and the
-> poles are exactly where shape stops existing.**
+### The interpretation this yields `[I]`
 
 Finity names the open interior of that family. The selected unit Titan role may
 be used as an interpretive motif for the distinguished middle, and the selected

@@ -23,7 +23,7 @@ rosetta:
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`
 **Audience:** Framework maintainers, editors, and theory reviewers
-**Mode:** Local audit of the active paradox slice
+**Mode:** Local audit of current, frozen, superseded, and historical paradox routes
 **Status:** Active integrity bridge
 
 ---
@@ -44,7 +44,8 @@ The current slice can now state the central problems more cleanly:
 
 1. **Numbering drift:** structurally repaired by the canonical index, though older references still exist in the wider corpus.
 2. **Fermi split:** locally reconciled as a bifurcation filter, though still interpretive.
-3. **Duplication without differentiation:** partly repaired for mind-body and is-ought by explicit legacy-vs-indexed notes.
+3. **Duplication without differentiation:** partly repaired for mind-body; the
+   is-ought file is now a superseded forwarding stub and no longer a solution.
 4. **Claims outrunning proof:** still active. The largest remaining debts are the Power-Max derivation, ~~ABM support for `R* ≈ 1.5`~~ (R* ≈ 1.5 **falsified** 2026-04-09; actual η_c ≈ 0.58 — qualitative threshold claim [S] survives, numerical value withdrawn), and fuller formal support for some paradox dissolutions, including the new hard-problem reframing.
 5. **Incomplete work inside the canon:** now made explicit for PD_17 rather than hidden.
 6. **Triadic method not consistently followed in presentation:** improved in the Lens foreword, but still a style risk across the wider corpus. [I]
@@ -53,11 +54,11 @@ The current slice can now state the central problems more cleanly:
 
 ## What Is Actually Present Here
 
-The live paradox slice currently includes:
+The local paradox slice currently includes mixed lifecycle states:
 
 - [PD_00_INDEX.md](PD_00_INDEX.md)
 - [00_THE_EXTRACTION_PATTERN.md](00_THE_EXTRACTION_PATTERN.md)
-- [PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) (PD_23)
+- [PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) (PD_23; superseded provenance stub)
 - [PD_01_MIND_BODY_LEGACY.md](PD_14_MIND_BODY.md) (archived — superseded by PD_14)
 - [PD_02_FREE_WILL_LEGACY.md](PD_14_MIND_BODY.md) (archived — superseded by PD_11)
 - [PD_04_ZENO.md](PD_04_ZENO.md)
@@ -74,6 +75,7 @@ The live paradox slice currently includes:
 - [PD_15_PROBLEM_OF_EVIL.md](PD_15_PROBLEM_OF_EVIL.md)
 - [PD_16_MEANING_OF_LIFE.md](PD_16_MEANING_OF_LIFE.md)
 - PD_17 archived draft — historical external provenance, not a current source route
+- [PD_18_THE_EXTRACTION_PARADOX.md](PD_18_THE_EXTRACTION_PARADOX.md) (frozen, superseded interpretive draft; no current semantic authority)
 - [PD_20_PHILOSOPHICAL_IMPLICATIONS.md](PD_20_PHILOSOPHICAL_IMPLICATIONS.md)
 - [PD_21_PROBLEM_OF_DEATH.md](PD_21_PROBLEM_OF_DEATH.md)
 - [PD_22_SCIENTIFIC_IMPLICATIONS.md](PD_22_SCIENTIFIC_IMPLICATIONS.md)
@@ -111,9 +113,10 @@ is already handled locally as a two-path or staged account:
 
 The remaining issue is tone and physical plausibility, not bare contradiction.
 
-### 3. The completion claim already names the Godel boundary
+### 3. The former completion claim is superseded
 
-[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) now distinguishes categorical from formal completeness. That directly answers one of the most obvious objections to any "completion" language.
+[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) is a forwarding stub with no
+current semantic authority. The present corpus makes no completion claim.
 
 ### 4. The literature layer already carries verdicts
 
@@ -130,25 +133,32 @@ So the literature bridge is ahead of some earlier critiques.
 
 ## Still Open In The Local Slice
 
-### 1. Power-Max remains compressed
+### 1. Is-ought remains open; Power-Max is separate
 
-[PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) still states the Power-Max Lemma in abbreviated form. It does not yet provide:
+[PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) no longer states a current derivation.
+Justice is the chosen constitutional premise; objective moral realism is handled
+by a separate bridge docket. Any Power-Max result retains its own conditional
+game-design assumptions and supplies no is-to-ought theorem.
 
-- the full derivation
-- the exact assumptions
-- ~~the simulation appendix behind `R* ≈ 1.5`~~ **RESOLVED (2026-04-09):** Simulation executed. R* ≈ 1.5 falsified; actual η_c ≈ 0.58. See `04_THE_SIMULATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md`.
+### 2. Lifecycle and adjudication are not yet fully enforced
 
-The numerical threshold claim has been falsified. The qualitative claim (that a cooperation threshold exists) should be treated as [S] structural.
+The local source status is now explicit, but generated projections and wider
+indexes must be checked separately. A frozen or superseded label is not by
+itself proof that an old public projection has stopped being served.
 
-### 2. Completion language still needs proof debt attached
-
-[PD_23_THE_COMPLETION.md](PD_23_THE_COMPLETION.md) now handles the Godel boundary well, but the wider “categorical completion” posture still depends on unclosed proof surfaces elsewhere in the corpus.
+| Route | Current finding | Required disposition |
+|---|---|---|
+| `PD_18` | Its former universal dissolution is terminal under `DF-18`; most named cases have no row-specific adjudication | Keep frozen; route any bounded survivor through a new or existing row |
+| `PD_23` | Source is a superseded provenance stub | Never present it as a current completion claim |
+| extraction synthesis | Active as an interpretive comparison; row mapping remains incomplete | Permit only `some`/`may` language and visible residuals |
+| numbered index | Owns numbering, not substance | Do not use `exists` or inventory completion as a validation status |
 
 ### 3. Tone still outruns tier in places
 
 The paradox documents are better than earlier corpus generations, but some language still overstates what `[I]` or `[S]` can currently carry.
 
-The right correction is not to remove the ambitious claim.
+The right correction is to preserve the ambitious question while retiring a
+form that has met its kill criterion.
 
 It is to keep saying:
 
@@ -179,10 +189,11 @@ Those judgments should be preserved as review guidance, but not represented as a
 
 ## Next High-Value Moves
 
-1. Add full proof and ABM support for the Power-Max Lemma.
-2. Attach remaining proof debt explicitly whenever completion language is used.
-3. Keep moderating strong paradox claims so tone matches tier.
-4. Bring more of the canonical paradox files into the active workspace before attempting a full corpus-level paradox rewrite.
+1. Route every live paradox claim into the row-specific ledger.
+2. Keep standard accounts, residual questions, rivals and kills visible.
+3. Keep completion and universal-dissolution language out of active authority.
+4. Require a named native-domain review receipt before any row earns
+   `scoped_resolution`.
 
 ---
 

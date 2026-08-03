@@ -99,9 +99,9 @@ It should be read as:
 
 1. **Action without integration (high V, low Phi):** Building capability without coherence. The system grows powerful but fragmented. In the framework's language: V increases while Phi collapses, and `P_node=min(Φ̂₄,V₄)` follows the limiting factor to zero.
 
-2. **Integration without action (high Phi, low V):** Achieving coherence without capability. The system is harmonious but impotent. Phi is high but V is near zero, and P remains small.
+2. **Integration without action (high `Φ̂₄`, low `V₄`):** Modeling or coherence without enough capability to enact it. Again, the two-component profile is retained rather than collapsed to a score.
 
-3. **Confused action (unread coordinates):** Acting without seeing the field at all. This is neither high-V/low-Phi nor high-Phi/low-V in any stable sense. It is action at arbitrary coordinates on S^2, without awareness of one's position on the sphere.
+3. **Confused action (model failure):** Acting without an adequate account of the relevant field. This need not correspond to any literal coordinate on `S²`.
 
 The third path matters because the framework's own method is triadic. The Lens arc is designed to address this condition: not by commanding action, but by revealing the geometry.
 
@@ -113,7 +113,7 @@ The Lens arc proceeds as follows:
 
 | Document | What It Does |
 |----------|-------------|
-| **01 Rosetta Stone** | Shows that CP^1 appears across domains -- the structural identification |
+| **01 Rosetta Stone** | Tests whether selected `CP¹` correspondences preserve useful structure across domains without transferring proof |
 | **02-07 VRS Sheets** | Maps the framework's formal results onto specific domains |
 | **08 Antenna Tuning** | Explains the coupling mechanism between individual and collective |
 

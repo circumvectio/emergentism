@@ -259,7 +259,7 @@
       ]
     },
     {
-      "source": "/complete-ontology/(.*)",
+      "source": "/axiology(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -474,7 +474,7 @@
       ]
     },
     {
-      "source": "/dasein/(.*)",
+      "source": "/canon/the-burrisphere(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -597,7 +597,7 @@
       ]
     },
     {
-      "source": "/canon/the-complete-ontology-of-reality/(.*)",
+      "source": "/canon/the-complete-ontology-of-reality(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -614,7 +614,7 @@
       ]
     },
     {
-      "source": "/operators/mf-283-the-orthogonality-theorem-v2/(.*)",
+      "source": "/canon/the-five-plus-one-constitution(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -631,7 +631,7 @@
       ]
     },
     {
-      "source": "/operators/mf-285-dreams-are-unanchored-d5/(.*)",
+      "source": "/canon/the-generative-table(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -648,7 +648,7 @@
       ]
     },
     {
-      "source": "/operators/mf-296-gravity-is-time/(.*)",
+      "source": "/canon/the-geometric-ontology-of-reality(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -665,7 +665,7 @@
       ]
     },
     {
-      "source": "/operators/mf-298-dark-matter-is-mutual-information/(.*)",
+      "source": "/canon/the-ontology-index(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -682,7 +682,7 @@
       ]
     },
     {
-      "source": "/complete-ontology",
+      "source": "/complete-ontology(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -699,7 +699,7 @@
       ]
     },
     {
-      "source": "/five-plus-one",
+      "source": "/dasein(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -716,7 +716,7 @@
       ]
     },
     {
-      "source": "/burrisphere",
+      "source": "/finity-papers(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -733,7 +733,7 @@
       ]
     },
     {
-      "source": "/dasein",
+      "source": "/five-plus-one(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -750,7 +750,7 @@
       ]
     },
     {
-      "source": "/canon/the-complete-ontology-of-reality",
+      "source": "/formal/00-the-seven-axioms(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -767,7 +767,7 @@
       ]
     },
     {
-      "source": "/operators/mf-283-the-orthogonality-theorem-v2",
+      "source": "/formal/11-efr-triadic-stability(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -784,7 +784,7 @@
       ]
     },
     {
-      "source": "/operators/mf-285-dreams-are-unanchored-d5",
+      "source": "/formal/34-d4-d5-canonical-reference(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -801,7 +801,7 @@
       ]
     },
     {
-      "source": "/operators/mf-296-gravity-is-time",
+      "source": "/foundations/ontology-across-dimensions(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
@@ -818,7 +818,7 @@
       ]
     },
     {
-      "source": "/operators/mf-298-dark-matter-is-mutual-information",
+      "source": "/foundations/the-seven-generative-actions-and-ektropy(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",

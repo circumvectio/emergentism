@@ -25,14 +25,14 @@ world law, or promote any claim. The
 | Type | Symbols | Meaning |
 |---|---|---|
 | reciprocal chart | `φ,ν,θ,B,P∞` | analytic coordinates and functions on a selected chart |
-| finite node | `Φ₅,V₄,P_node` | D5 possible power, D4 actual power, and a selected conjunctive score |
-| present evaluations | `Φ̂₄,V̂₄` | D4 outputs of independently specified instruments; `Φ̂₄=Eval₄(M,Φ₅)` |
+| finite node | `Φ₅,Φ̂₄,V₄,N_node` | D5 possible power, its D4 ordered evaluation, D4 actual power, and the retained two-axis profile |
+| calibrated application | `Φ_c,V_c,C_κ(Φ_c,V_c)` | cardinal images and a named scalar candidate under an explicit calibration contract `κ` |
 
 `φν=1` is true by definition on the chart. It is not an empirical hypothesis
 and cannot be “confirmed” by measuring `Φ̂₄,V̂₄`. Conversely,
-`Φ̂₄V̂₄≈1` is not a
-chart identity. If proposed in a normalized domain, it is an ordinary empirical
-hypothesis about two node variables and must compete with rivals.
+`C_κ(Φ_c,V_c)≈1` is not a chart identity. If proposed in a calibrated domain,
+it is an ordinary empirical hypothesis about two node variables and must
+compete with the unaggregated profile and fair scalar rivals.
 
 The old surface mixed an uppercase foresight estimate with a lowercase chart
 coordinate, then selected reciprocal pairs before testing reciprocity. That made

@@ -1,12 +1,427 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-RECIPROCAL-INFINITE-PLAY","source":{"path":"../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md","lifecycle":"frozen","role":"historical_lineage"},
-  "cards":[
-    {"card_id":"RIP01-01","chapters":["diagnosis-without-villain"],"locator":{"section":"Part I","line_start":359,"line_end":2400},"plain_claim":"Institutional diagnosis must compare observed function, cost, correction and exit with ordinary rivals.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"capture diagnosis"}],"owner_ids":["K-3","K-4"],"dependencies":[],"docket_ids":["A3","A7"],"type_boundaries":["capture story is not hidden-intent fact"],"strongest_rival":"Adaptation, scarcity, specialization, capacity, preference and measurement error.","discriminator":"Freeze functions, baselines, bearers and intervention before diagnosis.","kill_criterion":"Retire capture language if fair rivals explain as well.","survivor_if_killed":"Ask who benefits, pays, corrects and leaves.","consequence":{"applicable":true,"bearers":["participants","affected outsiders"],"consent":"participation is not assent","reversibility":"diagnosis contestable","exit":"no enemy label"},"disposition":"research_docket","public":{"state":"frozen","wording":"Historical extraction; current use requires a new rival-aware test."},"review":{"state":"l3_audited","receipts":["13_BOOKS/reciprocal_infinite_play/DEBRIEF.md"]}},
-    {"card_id":"RIP01-02","chapters":["formal-boundaries"],"locator":{"section":"Part II","line_start":2421,"line_end":4992},"plain_claim":"The reciprocal chart, Finity and symbolic triads require native recovery and transfer no ontology, ethics, human rank or social law.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"current type boundary"},{"tier":"I","scope":"selected historical interpretation"}],"owner_ids":["K-1","K-3"],"dependencies":[],"docket_ids":["A1","A2","A4"],"type_boundaries":["mathematics, interpretation, person and norm are distinct"],"strongest_rival":"Native mathematics plus plain language may supply all useful work.","discriminator":"Require conservative recovery and test type leakage.","kill_criterion":"Archive any formula used as ontology, value, rank or command.","survivor_if_killed":"Native mathematics and a visible historical record.","consequence":{"applicable":true,"bearers":["people classified by formulas"],"consent":"no classification authority","reversibility":"historical formula claims remain frozen","exit":"symbolism optional"},"disposition":"restate","public":{"state":"frozen","wording":"Historical formal material remains frozen pending typed reconstruction."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"]}},
-    {"card_id":"RIP01-03","chapters":["translation-without-proof"],"locator":{"section":"Part III","line_start":5015,"line_end":7565},"plain_claim":"Cross-domain lenses may compare questions only while native objects, mechanisms, equations and evidence remain primary.","claim_type":"interpretation_vow","evidence":[{"tier":"I","scope":"translation discipline"}],"owner_ids":["K-1","K-3"],"dependencies":["RIP01-02"],"docket_ids":["A3","A6"],"type_boundaries":["correspondence transfers no proof"],"strongest_rival":"Native sciences and a no-placement analysis may be clearer.","discriminator":"Use native recovery, permutation, held-out prediction and no-placement rival.","kill_criterion":"Retain translation only if no common dynamics or novel discrimination appears.","survivor_if_killed":"A removable comparison vocabulary.","consequence":{"applicable":false,"bearers":[],"consent":"not_applicable","reversibility":"fully_reversible","exit":"Native vocabularies remain primary."},"disposition":"restate","public":{"state":"frozen","wording":"Historical translation material transfers no proof."},"review":{"state":"l3_audited","receipts":["00_META/ADEQUACY_DOCKETS.yaml"]}},
-    {"card_id":"RIP01-04","chapters":["collective-traces"],"locator":{"section":"Part IV chapters 16-18","line_start":7596,"line_end":9121},"plain_claim":"Living ideas and Egregoreotypes are carrier-and-trace hypotheses, never presumed collective persons or moral agents.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"collective trace explanation"}],"owner_ids":["K-4"],"dependencies":["RIP01-03"],"docket_ids":["A7"],"type_boundaries":["persistent pattern is not consciousness or intention"],"strongest_rival":"Command, incentives, environment, carrier identity, memory and observer narrative.","discriminator":"Require all five Egregoreotype markers and trace intervention beyond rivals.","kill_criterion":"Reject candidate status when any marker fails or rivals absorb the effect.","survivor_if_killed":"A shared trace description.","consequence":{"applicable":true,"bearers":["carriers","affected outsiders"],"consent":"participation is not assent","reversibility":"classification revisable","exit":"collective label overrides no rights"},"disposition":"research_docket","public":{"state":"frozen","wording":"Historical collective-language material is not current personhood doctrine."},"review":{"state":"l3_audited","receipts":["05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"]}},
-    {"card_id":"RIP01-05","chapters":["institutional-firewall"],"locator":{"section":"Part IV chapters 19-20","line_start":9122,"line_end":10503},"plain_claim":"Historical governance and AI applications are provenance only and create no current authority or evidence.","claim_type":"custodied_fact","evidence":[{"tier":"B","scope":"historical source custody"}],"owner_ids":["K-4","K-5","K-7"],"dependencies":["RIP01-04"],"docket_ids":["A0","A7"],"type_boundaries":["application is not worldview premise or validation"],"strongest_rival":"Current institutional design must be justified independently.","discriminator":"Require a new proposal, mandate, evidence, bearers, appeal, repair and exit.","kill_criterion":"No historical application sentence may become current authority by modernization.","survivor_if_killed":"A provenance link and authority firewall.","consequence":{"applicable":true,"bearers":["people subject to institutions or AI"],"consent":"new authorization required","reversibility":"historical application remains frozen","exit":"no inherited mandate"},"disposition":"archive","public":{"state":"frozen","wording":"Historical application only; no current authority."},"review":{"state":"l3_audited","receipts":["13_BOOKS/AGENTS.md"]}},
-    {"card_id":"RIP01-06","chapters":["immune-protocol"],"locator":{"section":"Part V chapters 21-24","line_start":10524,"line_end":11924},"plain_claim":"Founder, loyalty, interface and self-dissolution risks require outside criticism, observed correction and practical exit.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"immune-protocol reconstruction"}],"owner_ids":["K-5","K-7"],"dependencies":["RIP01-05"],"docket_ids":["A3","A7"],"type_boundaries":["self-audit is not self-validation"],"strongest_rival":"Ordinary external audit, due process and sunset rules may protect better.","discriminator":"Compare adverse-case discovery, correction, repair and exit.","kill_criterion":"Reject any immune claim based on naming or dissolving the risk.","survivor_if_killed":"Outside review, visible failure, repair and exit.","consequence":{"applicable":true,"bearers":["participants","critics","affected parties"],"consent":"criticism requires no loyalty","reversibility":"framework may be forked or left","exit":"records and repair survive"},"disposition":"restate","public":{"state":"frozen","wording":"Historical immune language does not certify safety."},"review":{"state":"l3_audited","receipts":["00_META/00_IMMUNE_PROTOCOL.md"]}},
-    {"card_id":"RIP01-07","chapters":["seed-and-record"],"locator":{"section":"Part V chapter 25 and notes","line_start":11925,"line_end":12567},"plain_claim":"The surviving seed is a smallest voluntary practice with visible failed claims, bearers, repair and exit.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"critical-edition survivor"}],"owner_ids":["K-5","K-7"],"dependencies":["RIP01-06"],"docket_ids":["A3","A5"],"type_boundaries":["seed is not adherence, efficacy or ontology"],"strongest_rival":"Simpler audit and reflection practices may be sufficient.","discriminator":"Compare correction, adverse effects, accessibility and exit.","kill_criterion":"Remove any element that becomes loyalty, health promise or authority.","survivor_if_killed":"Claim, rival, reversible act, outcome, repair and exit.","consequence":{"applicable":true,"bearers":["practitioners","affected parties"],"consent":"voluntary","reversibility":"stop or fork","exit":"no loyalty cost; records remain"},"disposition":"restate","public":{"state":"frozen","wording":"Historical seed remains frozen; a current practice must begin from new cards."},"review":{"state":"l3_audited","receipts":["13_BOOKS/reciprocal_infinite_play/DEBRIEF.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+  "source": {
+    "path": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+    "lifecycle": "frozen",
+    "role": "historical_lineage",
+    "reviewed_source_sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9"
+  },
+  "cards": [
+    {
+      "card_id": "RIP01-01",
+      "chapters": [
+        "diagnosis-without-villain"
+      ],
+      "locator": {
+        "section": "Part I",
+        "line_start": 359,
+        "line_end": 2400,
+        "anchor": "# Part I: The Problem",
+        "fingerprint_sha256": "35c4162faae8941ba34ed9e49ef7cad0ed365b2c2f19585bbaf4a1332e6c43e7"
+      },
+      "plain_claim": "Institutional diagnosis must compare observed function, cost, correction and exit with ordinary rivals.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "capture diagnosis"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "type_boundaries": [
+        "capture story is not hidden-intent fact"
+      ],
+      "strongest_rival": "Adaptation, scarcity, specialization, capacity, preference and measurement error.",
+      "discriminator": "Freeze functions, baselines, bearers and intervention before diagnosis.",
+      "kill_criterion": "Retire capture language if fair rivals explain as well.",
+      "survivor_if_killed": "Ask who benefits, pays, corrects and leaves.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "affected outsiders"
+        ],
+        "consent": "participation is not assent",
+        "reversibility": "diagnosis contestable",
+        "exit": "no enemy label"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical extraction; current use requires a new rival-aware test."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/reciprocal_infinite_play/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "RIP01-02",
+      "chapters": [
+        "formal-boundaries"
+      ],
+      "locator": {
+        "section": "Part II",
+        "line_start": 2421,
+        "line_end": 4992,
+        "anchor": "# Part II: The Kernel",
+        "fingerprint_sha256": "7c1facd3e86f8f7c5bc5b00cb86bb9d54328d7c4ba7df9811e0b11ac3304abe0"
+      },
+      "plain_claim": "The reciprocal chart, Finity and symbolic triads require native recovery and transfer no ontology, ethics, human rank or social law.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "current type boundary"
+        },
+        {
+          "tier": "I",
+          "scope": "selected historical interpretation"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A1",
+        "A2",
+        "A4"
+      ],
+      "type_boundaries": [
+        "mathematics, interpretation, person and norm are distinct"
+      ],
+      "strongest_rival": "Native mathematics plus plain language may supply all useful work.",
+      "discriminator": "Require conservative recovery and test type leakage.",
+      "kill_criterion": "Archive any formula used as ontology, value, rank or command.",
+      "survivor_if_killed": "Native mathematics and a visible historical record.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "people classified by formulas"
+        ],
+        "consent": "no classification authority",
+        "reversibility": "historical formula claims remain frozen",
+        "exit": "symbolism optional"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical formal material remains frozen pending typed reconstruction."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "RIP01-03",
+      "chapters": [
+        "translation-without-proof"
+      ],
+      "locator": {
+        "section": "Part III",
+        "line_start": 5015,
+        "line_end": 7565,
+        "anchor": "# Part III: The Translation Machine",
+        "fingerprint_sha256": "b3495e4e2adba8e202f3b68c1dcaf0fefa4fd5730b8ebacb35b8a445d5fa1df1"
+      },
+      "plain_claim": "Cross-domain lenses may compare questions only while native objects, mechanisms, equations and evidence remain primary.",
+      "claim_type": "interpretation_vow",
+      "evidence": [
+        {
+          "tier": "I",
+          "scope": "translation discipline"
+        }
+      ],
+      "dependencies": [
+        "RIP01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A6"
+      ],
+      "type_boundaries": [
+        "correspondence transfers no proof"
+      ],
+      "strongest_rival": "Native sciences and a no-placement analysis may be clearer.",
+      "discriminator": "Use native recovery, permutation, held-out prediction and no-placement rival.",
+      "kill_criterion": "Narrow or retire the translation claim if it yields no common dynamics or novel discrimination beyond native accounts.",
+      "survivor_if_killed": "A removable comparison vocabulary.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "Native vocabularies remain primary."
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical translation material transfers no proof."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "00_META/ADEQUACY_DOCKETS.yaml"
+        ]
+      },
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3"
+      ]
+    },
+    {
+      "card_id": "RIP01-04",
+      "chapters": [
+        "collective-traces"
+      ],
+      "locator": {
+        "section": "Part IV chapters 16-18",
+        "line_start": 7596,
+        "line_end": 9121,
+        "anchor": "# Part IV: The Organism",
+        "fingerprint_sha256": "15155040e2dcc112756a844c6e3676bdc10bcb13bece1641a616f3c02d9fb643"
+      },
+      "plain_claim": "Living ideas and Egregoreotypes are carrier-and-trace hypotheses, never presumed collective persons or moral agents.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "collective trace explanation"
+        }
+      ],
+      "dependencies": [
+        "RIP01-03"
+      ],
+      "docket_ids": [
+        "A7"
+      ],
+      "type_boundaries": [
+        "persistent pattern is not consciousness or intention"
+      ],
+      "strongest_rival": "Command, incentives, environment, carrier identity, memory and observer narrative.",
+      "discriminator": "Require all five Egregoreotype markers and trace intervention beyond rivals.",
+      "kill_criterion": "Reject candidate status when any marker fails or rivals absorb the effect.",
+      "survivor_if_killed": "A shared trace description.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "carriers",
+          "affected outsiders"
+        ],
+        "consent": "participation is not assent",
+        "reversibility": "classification revisable",
+        "exit": "collective label overrides no rights"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical collective-language material is not current personhood doctrine."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"
+        ]
+      },
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "RIP01-05",
+      "chapters": [
+        "institutional-firewall"
+      ],
+      "locator": {
+        "section": "Part IV chapters 19-20",
+        "line_start": 9122,
+        "line_end": 10503,
+        "anchor": "The framework becomes serious only where it can fail.",
+        "fingerprint_sha256": "7fb49a9f7cebf6fae50e8880b926f9654940f3b086bccf2aa1f061ff070b9be4"
+      },
+      "plain_claim": "Historical governance and AI applications are provenance only and create no current authority or evidence.",
+      "claim_type": "custodied_fact",
+      "evidence": [
+        {
+          "tier": "B",
+          "scope": "historical source custody"
+        }
+      ],
+      "dependencies": [
+        "RIP01-04"
+      ],
+      "docket_ids": [
+        "A0",
+        "A7"
+      ],
+      "type_boundaries": [
+        "application is not worldview premise or validation"
+      ],
+      "strongest_rival": "Current institutional design must be justified independently.",
+      "discriminator": "Require a new proposal, mandate, evidence, bearers, appeal, repair and exit.",
+      "kill_criterion": "No historical application sentence may become current authority by modernization.",
+      "survivor_if_killed": "A provenance link and authority firewall.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "people subject to institutions or AI"
+        ],
+        "consent": "new authorization required",
+        "reversibility": "historical application remains frozen",
+        "exit": "no inherited mandate"
+      },
+      "disposition": "archive",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical application only; no current authority."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/AGENTS.md"
+        ]
+      },
+      "semantic_owner_id": "K-7",
+      "supporting_owner_ids": [
+        "K-4",
+        "K-5"
+      ]
+    },
+    {
+      "card_id": "RIP01-06",
+      "chapters": [
+        "immune-protocol"
+      ],
+      "locator": {
+        "section": "Part V chapters 21-24",
+        "line_start": 10524,
+        "line_end": 11924,
+        "anchor": "# Part V: The Exit",
+        "fingerprint_sha256": "4203bcdc675b236922cc8cb7300b502c924752488d5230e202ad7321378e528b"
+      },
+      "plain_claim": "Founder, loyalty, interface and self-dissolution risks require outside criticism, observed correction and practical exit.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "immune-protocol reconstruction"
+        }
+      ],
+      "dependencies": [
+        "RIP01-05"
+      ],
+      "docket_ids": [
+        "A3",
+        "A7"
+      ],
+      "type_boundaries": [
+        "self-audit is not self-validation"
+      ],
+      "strongest_rival": "Ordinary external audit, due process and sunset rules may protect better.",
+      "discriminator": "Compare adverse-case discovery, correction, repair and exit.",
+      "kill_criterion": "Reject any immune claim based on naming or dissolving the risk.",
+      "survivor_if_killed": "Outside review, visible failure, repair and exit.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "critics",
+          "affected parties"
+        ],
+        "consent": "criticism requires no loyalty",
+        "reversibility": "framework may be forked or left",
+        "exit": "records and repair survive"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical immune language does not certify safety."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "00_META/00_IMMUNE_PROTOCOL.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-7"
+      ]
+    },
+    {
+      "card_id": "RIP01-07",
+      "chapters": [
+        "seed-and-record"
+      ],
+      "locator": {
+        "section": "Part V chapter 25 and notes",
+        "line_start": 11925,
+        "line_end": 12567,
+        "anchor": "# Chapter 25: The Seed",
+        "fingerprint_sha256": "7993e51fdeadbc461d6022a4d1195735616c38439882955913e79b4f4fc6de0d"
+      },
+      "plain_claim": "The surviving seed is a smallest voluntary practice with visible failed claims, bearers, repair and exit.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "critical-edition survivor"
+        }
+      ],
+      "dependencies": [
+        "RIP01-06"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "type_boundaries": [
+        "seed is not adherence, efficacy or ontology"
+      ],
+      "strongest_rival": "Simpler audit and reflection practices may be sufficient.",
+      "discriminator": "Compare correction, adverse effects, accessibility and exit.",
+      "kill_criterion": "Remove any element that becomes loyalty, health promise or authority.",
+      "survivor_if_killed": "Claim, rival, reversible act, outcome, repair and exit.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "practitioners",
+          "affected parties"
+        ],
+        "consent": "voluntary",
+        "reversibility": "stop or fork",
+        "exit": "no loyalty cost; records remain"
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "frozen",
+        "wording": "Historical seed remains frozen; a current practice must begin from new cards."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/reciprocal_infinite_play/DEBRIEF.md"
+        ]
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-7"
+      ]
+    }
   ]
 }

@@ -1,10 +1,309 @@
 {
-  "schema":"emergentism/claim-card-set/v1","work_id":"BK-EVOLUTIONARY-NETWORK","source":{"path":"03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md","lifecycle":"proposal","role":"proposal"},
-  "cards":[
-    {"card_id":"EN01-01","chapters":["voluntary-entry"],"locator":{"section":"voluntary entry","line_start":22,"line_end":39},"plain_claim":"Any network entry must be voluntary, bounded, revocable and independent of worldview or human-rank classification.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"proposal boundary"},{"tier":"C","scope":"feasibility"}],"owner_ids":["K-4","K-5"],"dependencies":[],"docket_ids":["A5","A7"],"type_boundaries":["work lens is not identity or rank"],"strongest_rival":"Ordinary teams, cooperatives and federations may coordinate better.","discriminator":"Compare delivery, cost, consent, custody and exit.","kill_criterion":"Reject entry rules that require adherence, status or decorative exit.","survivor_if_killed":"A plain bounded participation contract.","consequence":{"applicable":true,"bearers":["participants","affected nonparticipants"],"consent":"required","reversibility":"revocable mandate","exit":"return lawful data, work and property"},"disposition":"research_docket","public":{"state":"source_only","wording":"Voluntary bounded entry with no worldview or rank requirement."},"review":{"state":"l3_audited","receipts":["03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md"]}},
-    {"card_id":"EN01-02","chapters":["appeal"],"locator":{"section":"appeal and dissent","line_start":40,"line_end":51},"plain_claim":"Consequential proposals require visible appeal, conflicts and independent review.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"proposal and authorization boundary"}],"owner_ids":["K-5"],"dependencies":["EN01-01"],"docket_ids":["A5","A7"],"type_boundaries":["participation is not assent"],"strongest_rival":"Ordinary due process may protect better.","discriminator":"Audit appeal use, reversals, retaliation and reviewer independence.","kill_criterion":"Freeze consequences when appeal is decorative or self-reviewed.","survivor_if_killed":"Ordinary independent due process.","consequence":{"applicable":true,"bearers":["affected parties","dissenters"],"consent":"contestable","reversibility":"suspend contested consequence where safe","exit":"outside-language appeal remains valid"},"disposition":"retain","public":{"state":"source_only","wording":"Appeal and dissent remain independent of the framework's vocabulary."},"review":{"state":"l3_audited","receipts":["03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md"]}},
-    {"card_id":"EN01-03","chapters":["repair"],"locator":{"section":"repair and learning","line_start":52,"line_end":68},"plain_claim":"Learning requires separate outcome receipts, bearer challenge, correction and funded repair.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen institutional learning protocol"}],"owner_ids":["K-3","K-5","K-7"],"dependencies":["EN01-02"],"docket_ids":["A3","A5"],"type_boundaries":["self-issued success is not outcome evidence"],"strongest_rival":"Standard incident, audit and restitution processes may work better.","discriminator":"Compare error discovery, correction latency and repair completion.","kill_criterion":"Reject a cycle that records without repairing or hides adverse outcomes.","survivor_if_killed":"Commitment, outcome, correction and repair remain separate.","consequence":{"applicable":true,"bearers":["affected parties"],"consent":"challenge protected","reversibility":"repair plan required","exit":"unfinished claims survive departure"},"disposition":"retain","public":{"state":"source_only","wording":"A receipt counts only when outcomes, challenge and repair are visible."},"review":{"state":"l3_audited","receipts":["00_META/00_IMMUNE_PROTOCOL.md"]}},
-    {"card_id":"EN01-04","chapters":["dissolution"],"locator":{"section":"dissolution","line_start":69,"line_end":79},"plain_claim":"A unit must declare sunset, export, property return, record custody and unfinished obligations before activation.","claim_type":"stipulation","evidence":[{"tier":"S","scope":"chosen dissolution contract"}],"owner_ids":["K-5","K-7"],"dependencies":["EN01-03"],"docket_ids":["A5","A7"],"type_boundaries":["dissolution does not erase liability"],"strongest_rival":"Ordinary corporate, cooperative or project closure rules may suffice.","discriminator":"Test actual return of people, data, property and unresolved claims.","kill_criterion":"Do not activate a unit that cannot close safely.","survivor_if_killed":"A predeclared sunset and custody checklist.","consequence":{"applicable":true,"bearers":["participants","creditors","affected parties"],"consent":"closure terms declared at entry","reversibility":"export and return required","exit":"practical exit with claims intact"},"disposition":"retain","public":{"state":"source_only","wording":"Safe closure is designed before activation and never erases repair."},"review":{"state":"l3_audited","receipts":["03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md"]}},
-    {"card_id":"EN01-05","chapters":["institutional-failure-rivals"],"locator":{"section":"failure rivals","line_start":80,"line_end":89},"plain_claim":"Egregore and capture stories must compete with ordinary institutional-failure explanations.","claim_type":"conjecture","evidence":[{"tier":"C","scope":"distinctive institutional diagnosis"}],"owner_ids":["K-4","K-5"],"dependencies":["EN01-01","EN01-02","EN01-03","EN01-04"],"docket_ids":["A7"],"type_boundaries":["organism metaphor is not causal proof"],"strongest_rival":"Management failure, scarcity, incentives, information, preferences, law, security, measurement and concentration.","discriminator":"Require held-out explanatory or predictive gain beyond those rivals.","kill_criterion":"Use the simpler institution or diagnosis when it performs as well or better.","survivor_if_killed":"A voluntary institutional-design checklist.","consequence":{"applicable":true,"bearers":["participants","affected parties"],"consent":"no diagnosis overrides rights","reversibility":"models are replaceable","exit":"no enemy or pathology label"},"disposition":"research_docket","public":{"state":"source_only","wording":"Compare ordinary institutional failures before invoking a collective-pattern theory."},"review":{"state":"l3_audited","receipts":["13_BOOKS/evolutionary_network/RESEARCH_EDITION_1.md"]}}
+  "schema": "emergentism/claim-card-set/v2",
+  "work_id": "BK-EVOLUTIONARY-NETWORK",
+  "source": {
+    "path": "03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
+    "lifecycle": "proposal",
+    "role": "proposal",
+    "reviewed_source_sha256": "bdf84bdd9169fc8e0cdeb3cf95d3668cd98b19bc1bdebd9e82db5534f984ed9f"
+  },
+  "cards": [
+    {
+      "card_id": "EN01-01",
+      "chapters": [
+        "voluntary-entry"
+      ],
+      "locator": {
+        "section": "voluntary entry",
+        "line_start": 23,
+        "line_end": 34,
+        "anchor": "## 1. Voluntary entry `[S/C]`",
+        "fingerprint_sha256": "c23c4c5279f7dd002d0a38590a4c94995e766ff697b1e8189768d4ab8c304912"
+      },
+      "plain_claim": "Any network entry must be voluntary, bounded, revocable and independent of worldview or human-rank classification.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "proposal boundary"
+        },
+        {
+          "tier": "C",
+          "scope": "feasibility"
+        }
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "work lens is not identity or rank"
+      ],
+      "strongest_rival": "Ordinary teams, cooperatives and federations may coordinate better.",
+      "discriminator": "Compare delivery, cost, consent, custody and exit.",
+      "kill_criterion": "Reject entry rules that require adherence, status or decorative exit.",
+      "survivor_if_killed": "A plain bounded participation contract.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "affected nonparticipants"
+        ],
+        "consent": "required",
+        "reversibility": "revocable mandate",
+        "exit": "return lawful data, work and property"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "Voluntary bounded entry with no worldview or rank requirement."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-4"
+      ]
+    },
+    {
+      "card_id": "EN01-02",
+      "chapters": [
+        "appeal"
+      ],
+      "locator": {
+        "section": "appeal and dissent",
+        "line_start": 36,
+        "line_end": 45,
+        "anchor": "## 2. Appeal and dissent `[S]`",
+        "fingerprint_sha256": "70cbc39bb0a14d2e6c0997a388e77ddad987f3383c1f4d29673026ee26ec12f7"
+      },
+      "plain_claim": "Consequential proposals require visible appeal, conflicts and independent review.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "proposal and authorization boundary"
+        }
+      ],
+      "dependencies": [
+        "EN01-01"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "participation is not assent"
+      ],
+      "strongest_rival": "Ordinary due process may protect better.",
+      "discriminator": "Audit appeal use, reversals, retaliation and reviewer independence.",
+      "kill_criterion": "Freeze consequences when appeal is decorative or self-reviewed.",
+      "survivor_if_killed": "Ordinary independent due process.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "affected parties",
+          "dissenters"
+        ],
+        "consent": "contestable",
+        "reversibility": "suspend contested consequence where safe",
+        "exit": "outside-language appeal remains valid"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Appeal and dissent remain independent of the framework's vocabulary."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": []
+    },
+    {
+      "card_id": "EN01-03",
+      "chapters": [
+        "repair"
+      ],
+      "locator": {
+        "section": "repair and learning",
+        "line_start": 47,
+        "line_end": 58,
+        "anchor": "## 3. Repair and learning `[S/C]`",
+        "fingerprint_sha256": "d0957c7ad320afa67eaf743441b20ed9e0c22679efa7802614d61cb0dd476141"
+      },
+      "plain_claim": "Learning requires separate outcome receipts, bearer challenge, correction and funded repair.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen institutional learning protocol"
+        }
+      ],
+      "dependencies": [
+        "EN01-02"
+      ],
+      "docket_ids": [
+        "A3",
+        "A5"
+      ],
+      "type_boundaries": [
+        "self-issued success is not outcome evidence"
+      ],
+      "strongest_rival": "Standard incident, audit and restitution processes may work better.",
+      "discriminator": "Compare error discovery, correction latency and repair completion.",
+      "kill_criterion": "Reject a cycle that records without repairing or hides adverse outcomes.",
+      "survivor_if_killed": "Commitment, outcome, correction and repair remain separate.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "affected parties"
+        ],
+        "consent": "challenge protected",
+        "reversibility": "repair plan required",
+        "exit": "unfinished claims survive departure"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "A receipt counts only when outcomes, challenge and repair are visible."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "00_META/00_IMMUNE_PROTOCOL.md"
+        ]
+      },
+      "semantic_owner_id": "K-7",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-5"
+      ]
+    },
+    {
+      "card_id": "EN01-04",
+      "chapters": [
+        "dissolution"
+      ],
+      "locator": {
+        "section": "dissolution",
+        "line_start": 60,
+        "line_end": 68,
+        "anchor": "## 4. Dissolution `[S]`",
+        "fingerprint_sha256": "afc189381e445ae7a731704dd5d3bb51913a2fb422e01f21c929577885bb7bbf"
+      },
+      "plain_claim": "A unit must declare sunset, export, property return, record custody and unfinished obligations before activation.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen dissolution contract"
+        }
+      ],
+      "dependencies": [
+        "EN01-03"
+      ],
+      "docket_ids": [
+        "A5",
+        "A7"
+      ],
+      "type_boundaries": [
+        "dissolution does not erase liability"
+      ],
+      "strongest_rival": "Ordinary corporate, cooperative or project closure rules may suffice.",
+      "discriminator": "Test actual return of people, data, property and unresolved claims.",
+      "kill_criterion": "Do not activate a unit that cannot close safely.",
+      "survivor_if_killed": "A predeclared sunset and custody checklist.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "creditors",
+          "affected parties"
+        ],
+        "consent": "closure terms declared at entry",
+        "reversibility": "export and return required",
+        "exit": "practical exit with claims intact"
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "source_only",
+        "wording": "Safe closure is designed before activation and never erases repair."
+      },
+      "review": {
+        "state": "typed",
+        "receipts": []
+      },
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [
+        "K-7"
+      ]
+    },
+    {
+      "card_id": "EN01-05",
+      "chapters": [
+        "institutional-failure-rivals"
+      ],
+      "locator": {
+        "section": "failure rivals",
+        "line_start": 70,
+        "line_end": 89,
+        "anchor": "## 5. Ordinary failure rivals `[C]`",
+        "fingerprint_sha256": "be058812307e8c55160cd793875ca7bcf5ffd7174e4260f90dbe22aa760dd41a"
+      },
+      "plain_claim": "Egregore and capture stories must compete with ordinary institutional-failure explanations.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "distinctive institutional diagnosis"
+        }
+      ],
+      "dependencies": [
+        "EN01-01",
+        "EN01-02",
+        "EN01-03",
+        "EN01-04"
+      ],
+      "docket_ids": [
+        "A7"
+      ],
+      "type_boundaries": [
+        "organism metaphor is not causal proof"
+      ],
+      "strongest_rival": "Management failure, scarcity, incentives, information, preferences, law, security, measurement and concentration.",
+      "discriminator": "Require held-out explanatory or predictive gain beyond those rivals.",
+      "kill_criterion": "Use the simpler institution or diagnosis when it performs as well or better.",
+      "survivor_if_killed": "A voluntary institutional-design checklist.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "participants",
+          "affected parties"
+        ],
+        "consent": "no diagnosis overrides rights",
+        "reversibility": "models are replaceable",
+        "exit": "no enemy or pathology label"
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "source_only",
+        "wording": "Compare ordinary institutional failures before invoking a collective-pattern theory."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "13_BOOKS/evolutionary_network/RESEARCH_EDITION_1.md"
+        ]
+      },
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": [
+        "K-5"
+      ]
+    }
   ]
 }

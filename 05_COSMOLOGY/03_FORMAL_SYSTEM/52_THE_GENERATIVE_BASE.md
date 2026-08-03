@@ -120,21 +120,25 @@ val(SSSSSSιSSS) = 22/7
 
 ---
 
-## 2 · Five theorems `[A]`
+## 2 · Four proved reachability facts and one open normal-form claim
 
 **G1 · Reachability is exactly `ℚ⁺`.**
 For every `q ∈ ℚ⁺` there is a finite word `w` with `val(w) = q`; and every word's
 value lies in `ℚ⁺`.
 
-*Proof.* (⊇) Induct on `num(q) + den(q)`. If `q = 1`, take `ε`. If `q > 1` then
-`q − 1 ∈ ℚ⁺` with strictly smaller sum, and `q = S(q−1)`. If `q < 1` then
-`1/q > 1` with the same sum, and one `ι` step reduces to the previous case. The
-measure strictly decreases, so the recursion terminates — this **is** the
-Euclidean algorithm. (⊆) `S` and `ι` both map `ℚ⁺` into `ℚ⁺`. ∎
+*Proof.* (⊇) Write `q=p/r` in lowest terms and induct on `p+r`. If `p=r`, then
+`q=1` and take `ε`. If `p>r`, the reduced numerator-plus-denominator of
+`q−1=(p−r)/r` is at most `p<p+r`; reach `q−1` by induction and append `S`. If
+`p<r`, set `t=(r−p)/p`. Its reduced numerator-plus-denominator is at most
+`r<p+r`; reach `t` by induction, append `S` to obtain `r/p=1/q`, and append `ι`
+to obtain `q`. Thus the measure decreases before each appeal to the induction
+hypothesis. (⊆) `S` and `ι` both map `ℚ⁺` into `ℚ⁺`. ∎
 
-**G2 · Reduced words are unique normal forms.**
+**G2 · Candidate normal-form theorem `[C]`; bounded evidence `[B]`.**
 Call `w` **reduced** if it contains no `ιι` and does not begin with `ι`. Then the
-map `w ↦ val(w)` is a **bijection** from reduced words onto `ℚ⁺`.
+map `w ↦ val(w)` is conjectured here to be a **bijection** from reduced words
+onto `ℚ⁺`. Surjectivity follows from `G1`; a complete injectivity proof is still
+owed for this exact reduction grammar.
 
 The two exclusions are not conventions. They are precisely the two facts that
 define `ι`:
@@ -144,31 +148,33 @@ define `ι`:
 ι(1) = 1       1 is ι's fixed point   (hence a leading ι is the empty word)
 ```
 
-So `G2` says: **the word monoid modulo `ι`'s own identity has unique normal
-forms, and they are the positive rationals.**
+So `G2` asks whether the stated reductions are complete, not merely sound.
 
-*Verified by exhaustion* over all `2^11 − 1` words of length ≤ 10: 143 of 232
+*Bounded check:* over all `2^11 − 1` words of length ≤ 10, 143 of 232
 values carry multiple *unreduced* words; **0 of them carry multiple reduced
 words.** Equivalently, in the Calkin–Wilf presentation `{S, L}` with
 `L = ιSι : x ↦ x/(x+1)`, all `8191` words of length ≤ 12 have `8191` **distinct**
-values — a perfect binary tree.
+values. This is regression evidence, not an exhaustive proof over all words.
 
 **G3 · No finite word attains numeric zero.**
 There is no word `w` with `val(w) = 0`.
 
 *Proof.* `S` maps `ℚ⁺ → ℚ⁺` and `ι` maps `ℚ⁺ → ℚ⁺`; `1 ∈ ℚ⁺`; so by induction
 every reachable value is strictly positive. Separately and more sharply:
-`ι(x) = 0` has **no solution at all** — there is no `x` whose reciprocal is zero.
-Zero is not merely un-visited. **There is no step that lands on it.** ∎
+`ι(x) = 0` has **no solution in `ℚ⁺`** (indeed, no finite real or complex
+solution). Zero is not merely un-visited. **There is no base step that lands on
+it.** A later projective extension may declare `ι(∞_P)=0`; that is a different
+carrier and does not alter this theorem. ∎
 
 **G4 · No finite word attains an unbounded value.**
 Every word is finite, so `val(w)` is a finite rational. To reach an unbounded
 value one would have to *complete* infinitely many operations, and a completed
 infinity of operations is not a word. ∎
 
-**G5 · Both limits are approached.**
+**G5 · Both limits are approached in the declared real embedding.**
 `val(S^n) = n+1 → ∞` and `val(S^n ι) = 1/(n+1) → 0`. Every neighbourhood of
-either limit contains reachable values.
+either endpoint in the ordinary extended-positive-real topology contains
+reachable values.
 
 > **G3–G5 together establish a typed reachability theorem rather than a Titan
 > description:** *the limit is approached and never reached.* The reason is
@@ -180,7 +186,8 @@ either limit contains reachable values.
 
 ## 2A · What each operation contributes — the asymmetry `[A]`
 
-The two operations are not two of a kind. Verified by exhaustive closure.
+The two operations are not two of a kind. The elementary claims below have
+direct proofs; bounded closure tests provide regression evidence.
 
 **G6 · `ι` alone is sterile; `S` alone is one-directional.**
 
@@ -417,15 +424,24 @@ dropped.
 
 ---
 
-## 4 · What is emergent, and why `Ĉ` is now genuinely reached
+## 4 · Declared extensions beyond the reachable set
 
-The base above names two things it cannot exhibit. Compactification is exactly the
-act of **giving those two a name as points**:
+The base above has two named limiting directions that it cannot exhibit as
+values. Each subsequent move must state the added structure. For the completion
+step, use the multiplicative metric
+
+```text
+d×(x,y) := |log x − log y|.
+```
+
+`ℚ⁺` is dense in `ℝ⁺` under `d×`, and `ℝ⁺` is complete under that metric. This
+choice matters: under the ordinary Euclidean metric, the completion of `ℚ⁺`
+would include `0`. The declared route is therefore:
 
 ```text
                                                               tier   why
 1  ℚ⁺              G1 — the reachable. COUNTABLE.             [A]    theorem
-   ↓ completion     adds LIMITS of words, not words           [S]    declared move
+   ↓ d×-completion  adds positive-real limits, not words       [S]    declared metric
 2  ℝ₊              UNCOUNTABLE
    ↓ compactify     the two boundary limits become points     [S]    declared move
 
@@ -596,7 +612,7 @@ Titan frame. No agreement, identity, coercion, or proof transfer is asserted.
 | `G1` | exhibit `q ∈ ℚ⁺` reachable by no finite word, or a word whose value is irrational |
 | `G2` | exhibit two distinct reduced words with the same value |
 | `G3` | exhibit a word with value `0` |
-| `G4` | exhibit a word with unbounded value |
+| `G4` | exhibit a finite word whose declared base evaluator returns an explicitly adjoined infinity endpoint |
 | `G5` | exhibit a neighbourhood of `0` or `∞` containing no reachable value |
 | the base | show the corpus needs a value that no finite word attains **and** that is not obtained by a declared completion |
 | the reading | show "reachability = Finity_G" is a notational variant of an existing account, not a distinct claim |
@@ -611,11 +627,11 @@ defended.
 ## 7 · The stranger test
 
 A stranger needs no metaphysics to check this page. Hand them `22/7` and the two
-operations; they will find `SSSSSSιSSS` with a pencil, and they will find it is
-the only reduced word that works. `G3` they can check in one line: nothing's
-reciprocal is zero.
+operations; they can verify the exhibited code with a pencil. `G3` they can
+check in one line: no positive rational has reciprocal zero. The uniqueness
+claim must remain open until its general proof lands.
 
-**Reproduce:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` — exhaustive over all
+**Bounded regression:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` — exhaustive over all
 words to length 10, the Calkin–Wilf tree to depth 12, and reachability of every
 `p/q` with `p, q ≤ 25`. It exits non-zero on any failure.
 

@@ -233,13 +233,13 @@ retain their own sources, warrants, rivals, and kill criteria.
   observation, replication, publication, or consequence receipt.
 
 ```text
-•  nearly FREE   consistent iff the logic is consistent at all
-○  EXPENSIVE    needs Lindenbaum (choice) + Henkin construction
+empty theory                 a syntactic starting point
+maximal consistent theory    maximal relative to one language
+model of that theory         not a universal domain and not an obtaining world
 ```
 
-And all of it establishes **admissibility, never existence**. Lindenbaum hands
-you a set of sentences; Henkin hands you a model of them. Neither hands you a
-world.
+The surviving theorem is a language-relative extension/model-existence result.
+The stronger reciprocity remains an interpretation without a proof.
 
 - **`T1` is world-empty.** The Titan identities are analytic. No ontology, no
   ethic, no conservation law, no node-power result follows from them.

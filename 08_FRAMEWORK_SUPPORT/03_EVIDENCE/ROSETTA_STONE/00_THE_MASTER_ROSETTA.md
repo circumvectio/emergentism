@@ -114,7 +114,13 @@ D5 agents, causal particles, or arithmetic operands.
 
 The lowercase chart pair `φ,ν` never substitutes for uppercase `Φ,V`.
 Possible power is modal; it becomes causally relevant only through an actual
-model token and actual means. Rosetta translates these relations but neither
+model token and actual means. The ordinal profile `N_node=(Φ̂₄,V₄)` permits
+componentwise Pareto comparison; it does not supply a total order. Any scalar,
+including `P×,κ=Φ_cV_c`, is a separately testable candidate only after an
+explicit cardinal calibration contract `κ` declares its domain, meaningful
+zeros and units, admissible transformations, uncertainty, cross-factor
+comparability, rivals, and kill criterion. Neither profile nor scalar measures
+human worth, rank, or authority. Rosetta translates these relations but neither
 defines them nor transfers warrant.
 
 Current routes and source owners:

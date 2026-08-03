@@ -65,8 +65,9 @@ Verified 2026-07-29.
 singles `1` out among its points is not the latitude but that `ι(z)=1/z` fixes
 exactly `±1`, and on the positive ray only `+1`. So:
 
-> `1` is at the middle **by latitude**, and is *the* middle **by being the fixed
-> point of the map that swaps the poles.** The second is what makes it unique.
+> `1` is at the middle **by latitude**, and is the unique **positive-ray** fixed
+> point of the map that swaps the poles. On the full sphere, `−1` is the second
+> fixed point.
 
 ## 3 · Inverted — the interior does **not** emerge from the poles `[A]`
 
@@ -104,19 +105,21 @@ be produced.
 
 The strongest available version of the owner's intuition, and it works:
 
-Between the empty theory `∅` and a maximal consistent theory `Δ` lies the
-**lattice of all consistent theories** ordered by inclusion. Lindenbaum's
-construction (doc 46 §6A.5) runs *through* that lattice. It is genuinely rich,
-genuinely intermediate, and genuinely "between" the two extremes.
+Fix a language and one maximal consistent theory `Δ`. Between the empty theory
+`∅` and that `Δ` lie its consistent subtheories, ordered by inclusion. They form
+a rich interval in the theory poset. Other consistent theories may be
+incompatible with `Δ`, so this interval is not the lattice of *all* consistent
+theories and there can be many maximal extensions.
 
-But note what it shows: that lattice exists **whether or not** either extreme is
+But note what it shows: that interval exists **whether or not** either extreme is
 adopted. The extremes are its **bounds**, not its **source**. Which is §3 again,
 in the modal register.
 
-## 5 · The unit — and here something *is* forced `[A]`
+## 5 · The unit — conditional uniqueness, not forced existence `[A/S]`
 
-"We must have a unit of account." This is the strongest part of the claim, and
-unusually for this program, it is **not** a selection.
+"We must have a unit of account" does not follow from the two boundary seats.
+What follows only after selecting a group or another unital operation is the
+conditional uniqueness theorem:
 
 ```text
 A group has exactly one identity element.
@@ -133,15 +136,19 @@ cannot be written without naming `1`. `at_most_one_identity` is the surviving ha
 **A precision on "the centre between both poles."** `1` is not any *average* of
 `0_N` and the projective endpoint `∞_P`:
 
+Neither `(0+∞_P)/2` nor `√(0·∞_P)` is a field expression on `Ĉ`; the latter is
+undefined even in the usual nonnegative extended-real arithmetic, and limiting
+paths can produce different outcomes. The exact replacement is narrower:
+
 ```text
 arithmetic mean of 0_N and ∞_P   NOT WELL-TYPED
 geometric mean of 0_N and ∞_P    NOT WELL-TYPED
 positive fixed point of ι_P      = 1_N
 ```
 
-So the centre is not obtained by averaging the poles — it is the **fixed point
-of the map that exchanges them**. Doc 45 §2. The averaging reading would be
-indeterminate; the fixed-point reading is exact.
+So the selected positive centre is not obtained by averaging the poles. It is
+the unique fixed point after the positive-ray restriction; on the full sphere
+there are two.
 
 ## 6 · Two different finities are being fused `[A]`
 

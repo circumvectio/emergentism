@@ -11,7 +11,9 @@ from pathlib import Path
 
 SITE = Path(__file__).resolve().parent
 MANIFEST = json.loads((SITE / "public_semantic_parity.json").read_text(encoding="utf-8"))
+WITHHELD = json.loads((SITE / "withheld-routes.json").read_text(encoding="utf-8"))
 MARKER = "data-frozen-library-boundary=\"2026-07-22\""
+ROBOTS = '<meta name="robots" content="noindex, follow">'
 BANNER = (
     '<aside data-frozen-library-boundary="2026-07-22" role="note" '
     'style="padding:.75rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);'
@@ -23,18 +25,29 @@ BANNER = (
 
 
 def paths() -> list[Path]:
-    out: list[Path] = []
+    out: set[Path] = set()
+    withheld = {row["artifact"] for row in WITHHELD["artifacts"]}
     for root in MANIFEST["frozenLibraryRoots"]:
         base = SITE / root
         if base.is_dir():
-            out.extend(sorted(base.rglob("*.html")))
-    return out
+            out.update(base.rglob("*.html"))
+    out.update(SITE / rel for rel in MANIFEST.get("frozenLegacySurfaces", []))
+    return sorted(
+        path for path in out
+        if path.is_file() and path.relative_to(SITE).as_posix() not in withheld
+    )
 
 
 def desired(text: str) -> str:
-    if MARKER in text:
-        return text
-    return re.sub(r"(<body\b[^>]*>)", r"\1\n" + BANNER, text, count=1, flags=re.IGNORECASE)
+    target = text
+    robots = re.compile(r'<meta\b[^>]*\bname=["\']robots["\'][^>]*>', re.IGNORECASE)
+    if robots.search(target):
+        target = robots.sub(ROBOTS, target, count=1)
+    else:
+        target = re.sub(r"(<head\b[^>]*>)", r"\1\n" + ROBOTS, target, count=1, flags=re.IGNORECASE)
+    if MARKER not in target:
+        target = re.sub(r"(<body\b[^>]*>)", r"\1\n" + BANNER, target, count=1, flags=re.IGNORECASE)
+    return target
 
 
 def main() -> int:

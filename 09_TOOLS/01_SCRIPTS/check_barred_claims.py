@@ -23,8 +23,8 @@ def _card_and_book_paths() -> list[Path]:
     for work in manifest["works"]:
         if work["release_state"] != "source_active_projection_review_open":
             continue
-        for source in work["historical_sources"]:
-            paths.append((BOOK_MANIFEST.parent / source).resolve())
+        for source_record in work["historical_sources"]:
+            paths.append((BOOK_MANIFEST.parent / source_record["path"]).resolve())
     paths.extend(sorted((ROOT / "13_BOOKS").rglob("*.md")))
     return sorted(set(paths))
 

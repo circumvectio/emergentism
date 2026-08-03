@@ -1,5 +1,5 @@
 ---
-title: "The Lorentz–Möbius Correspondence — the sphere's automorphism group is the Lorentz group"
+title: "The Lorentz–Möbius Correspondence — celestial conformal symmetry and the restricted Lorentz group"
 status: "ACTIVE — inherited standard physics, typed; NOT an Emergentist derivation of relativity"
 date: 2026-07-29
 evidence_tier: "[A] the inherited group theory and the tanh identity; [S] the structural reading; [C] any explanatory claim beyond inheritance"
@@ -57,10 +57,12 @@ analogy. Under a boost the sphere's outline **stays a circle**, because the
 Lorentz group acts by circle-preserving maps on `ℂP¹`.
 
 **2.4 What this gives the foundation `[S]`.** `S1` selected `Ĉ` as the primary
-object. It turns out that object's automorphism group is the Lorentz group.
+object. Its orientation-preserving conformal automorphism group is isomorphic to
+the proper orthochronous Lorentz group.
 
-> The sphere is not merely a convenient chart. Its symmetry group is the symmetry
-> group of flat spacetime.
+> The celestial sphere carries the homogeneous Lorentz action on null
+> directions. It does **not** carry the full Poincaré group of Minkowski
+> spacetime; translations are absent.
 
 That is the strongest **non-aesthetic** argument for `S1` produced so far. It is
 still a *selection* — `KSC-04`'s 3-transitivity ruling is untouched — but it is a
@@ -80,7 +82,7 @@ The correspondence is structural and exact:
 
 | Reciprocal chart | Special relativity |
 |---|---|
-| `s = log x` — additive, unbounded | rapidity `φ` — **additive under boost composition**, unbounded |
+| `s = log x` — additive, unbounded | one-dimensional rapidity `φ` — **additive under collinear boost composition**, unbounded |
 | `u = tanh(s/2)` onto the **open** `(−1,1)` | `β = tanh φ` onto the **open** `(−1,1)` |
 | rims `u = ±1` ⟺ `x ∈ {0,∞}` | `β = ±1` ⟺ `v = ±c` |
 | rims **not in the image** | `v = c` **not attained** |
@@ -90,32 +92,35 @@ The correspondence is structural and exact:
 bounded coordinate never reaches its rims; and the rim is crossed only by
 changing structure, never by travelling further.
 
-**Why velocities do not add.** Because `β` is a `tanh` coordinate and `φ` is the
-additive one — velocity composition is addition *in rapidity*. This is precisely
-Suda's point that multiplication becomes addition under `log`, in a different
-register.
+**Why collinear velocities do not add linearly.** Because `β` is a `tanh`
+coordinate and `φ` is additive for boosts along one fixed spatial axis—collinear
+velocity composition becomes addition in rapidity. Non-collinear boosts do not
+obey this scalar rule: their composition generally includes a Thomas–Wigner
+rotation. The log analogy is therefore one-dimensional and scoped.
 
-**`v = c` is the physical instance of the unattained rim.** The Lorentz group is
-non-compact; `c` is its boundary at infinity. In Möbius terms a boost acts as
-`z ↦ kz` with `k = e^{φ}`; as `φ → ∞` the map degenerates — `ad − bc → 0` — and
-it leaves the group. **The limit is not a Lorentz transformation.** Approached,
-never crossed, and for the same reason as everywhere else in this program.
+**For massive inertial frames, `|v|=c` is an unattained rim.** Light itself moves
+at `c`; the statement concerns boosts between timelike inertial frames. A boost
+acts on a suitable celestial coordinate as `z↦kz`, `k=e^φ`. Every finite `φ`
+gives an invertible Möbius transformation. As `φ→∞`, no finite group element is
+reached; any apparent singular determinant depends on a chosen matrix
+normalization and must not be treated as an invariant.
 
 *(Numerical note: `tanh(30)` prints as `1.0` in double precision. That is float
 rounding. `tanh φ < 1` for every finite `φ`.)*
 
-## 4 · Classification under the μ-criterion `[S]`
+## 4 · Boundary classification without a settled μ criterion `[S]`
 
-Doc 48 §5 asks of any candidate crossing: **is a degree of freedom gained?**
+Doc 48 retains dimension gain as one diagnostic but has withdrawn it as a
+complete μ criterion.
 
 - The celestial sphere is 2-dimensional before and after a boost.
 - Möbius maps are automorphisms — they change *coordinates on* the object, not
   the object's dimension.
 - `v → c` is a non-compact limit within a fixed group action.
 
-**No freedom is gained. This is not a `μ`.** It is a symmetry correspondence and a
-boundary-at-infinity story — the same type-T/boundary shape as §5A and §5B of
-doc 48, now with a physical instance.
+**No new freedom is demonstrated, so this supplies no evidence for a `μ`.** It
+is a symmetry correspondence and a boundary-at-infinity story. The stronger
+universal classification remains open with `HR-1`.
 
 ## 5 · The fences `[S]`
 
@@ -159,9 +164,9 @@ makes this one of the few `V`-shaped surfaces in the corpus.
 | `PSL(2,ℂ) ≅ SO⁺(3,1)`; boosts act as Möbius maps | `[A]` inherited | same |
 | boosts preserve circles; a moving sphere's outline stays circular | `[A]` inherited | a photographed moving sphere with non-circular outline |
 | `(x−1)/(x+1) = tanh((ln x)/2)` | `[A]` verified | arithmetic counterexample |
-| `β = tanh φ`, rapidity additive, `β` onto the open `(−1,1)` | `[A]` inherited | exhibit a finite `φ` with `tanh φ = 1` |
-| `v = c` is an unattained boundary; the limit leaves the group | `[A]` | exhibit a Lorentz transformation with `v = c` |
-| this is a symmetry correspondence, not a `μ` | `[S]` | exhibit the freedom gained |
+| `β = tanh φ`, collinear rapidities add, and `β` maps finite rapidity onto the open `(−1,1)` | `[A]` inherited | violate the scoped one-dimensional relation |
+| `|v| = c` is unattained by a massive-frame boost; the infinite-rapidity limit is no group element | `[A]` | exhibit a finite-rapidity massive-frame boost with `|v|=c` |
+| this symmetry correspondence supplies no μ evidence | `[S]` | pass the full KSC-05 contract with a new effective freedom |
 | nothing here derives relativity or supports `W7` | `[S]` | any owner citing it as a derivation or as a `W7` leg |
 
 •   ⊙   ○ — *the sphere we chose already had the Lorentz group; we did not put it there, and finding it is not the same as earning it.*

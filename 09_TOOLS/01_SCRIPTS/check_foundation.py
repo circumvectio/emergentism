@@ -61,6 +61,8 @@ FORMAL_DOCS = [
     Path("05_COSMOLOGY/03_FORMAL_SYSTEM/49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md"),
     Path("05_COSMOLOGY/03_FORMAL_SYSTEM/50_BLOCK_UNIVERSE_PLURALITY_AND_THE_SURVIVAL_OF_CHOICE.md"),
     Path("05_COSMOLOGY/03_FORMAL_SYSTEM/51_CCC_AND_THE_PRE_ARTICULATE_BOUNDARY.md"),
+    Path("05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md"),
+    Path("05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md"),
 ]
 
 RULING_RECEIPTS = [
@@ -98,29 +100,29 @@ R0_CORE = [
 # It is NOT a selection — exit Z does not ratify sentence-implies-selection.
 # A base may still be selected. Nothing is forced.
 PRESUPPOSED = ["P1"]
-BASE = ["B1", "B2", "B3"]
-EMERGENT = ["emergent"]
+RELATIONAL = ["R1", "R2", "R3"]
+REACHABILITY = ["G0", "ℚ⁺", "S(x)=x+1", "ι(x)=1/x"]
 
 # Fences that must never fall out of the foundation, with the homes that must carry them.
 FENCES = [
-    ("T1 is analytic and world-empty",
+    ("typed formal facts are world-empty",
      [r"empty of world"],
-     [PROJECTION, FORMAL_DOCS[0], RULING_RECEIPTS[2]]),
+     [PROJECTION, FORMAL_DOCS[0]]),
     ("admissibility is not existence / not plenitude",
      [r"never plenitude|admissibility, never existence|not plenitude"],
-     [PROJECTION, RULING_RECEIPTS[2]]),
+     [PROJECTION, FORMAL_DOCS[1]]),
     ("uniqueness is declared policy, not theorem",
      [r"declared policy.{0,40}not (a )?theorem|policy, not theorem|remains \[s\] declared, not \[a\]|declared, not \[a\]"],
-     [PROJECTION, FORMAL_DOCS[2], RULING_RECEIPTS[1]]),
+     [PROJECTION, FORMAL_DOCS[2]]),
     ("R0 is a refusal, never an axiom",
      [r"refusal, never an axiom|not an axiom"],
      [PROJECTION, K5, REGISTRY]),
     ("the line is the iota-invariant meridian, not a rejected rival",
      [r"meridian"],
-     [PROJECTION, RULING_RECEIPTS[1]]),
+     [PROJECTION, FORMAL_DOCS[0]]),
     ("arithmetic is chart-local",
      [r"chart-local"],
-     [PROJECTION, REGISTRY, RULING_RECEIPTS[1]]),
+     [PROJECTION, REGISTRY, FORMAL_DOCS[0]]),
 ]
 
 TYPED_WITNESS_REQUIRED = [
@@ -232,56 +234,34 @@ def main() -> int:
     if "prior to the five" not in k5:
         errors.append("K-5 must state that R0 is prior to the five refusals")
 
-    # --- the three strata agree between K-5 and the projection -------------
+    # --- the two selected presentations agree between K-5 and projection ---
     for label, body in (("K-5", k5), ("00_THE_FOUNDATION.md", proj)):
-        block = strata_block(body)
+        block = presentations_block(body)
         if not block:
-            errors.append(f"{label}: the BASE/INHERITED/EMERGENT strata block is missing")
+            errors.append(f"{label}: the two-presentation block is missing")
             continue
-        emg_at = block.find("emergent")
-        if emg_at == -1:
-            errors.append(f"{label}: strata block must run BASE then EMERGENT")
-            continue
-        base_seg, emg_seg = block[:emg_at], block[emg_at:]
-
-        for sym in BASE:
-            if sym.lower() not in base_seg:
-                errors.append(f"{label}: {sym} is not listed under BASE")
+        for sym in RELATIONAL:
+            if norm(sym) not in block:
+                errors.append(f"{label}: {sym} is not listed under the relational presentation")
+        for sym in REACHABILITY:
+            if norm(sym) not in block:
+                errors.append(f"{label}: {sym} is not listed under the reachability presentation")
         for sym in PRESUPPOSED:
             if sym.lower() not in body:
                 errors.append(f"{label}: {sym} (the presupposed stratum) is not listed")
-        # the sphere must now be EMERGENT, never BASE
-        if "sphere" in base_seg or "ℂp¹" in base_seg:
-            errors.append(f"{label}: the sphere appears in BASE — it is emergent (step 6)")
-        if "ℤ" not in emg_seg and "z " not in emg_seg:
-            errors.append(f"{label}: the emergent chain must begin at ℤ")
-
-        # The failure this validator now exists for: the word FORCED returning to
-        # the bottom stratum, or the false "exactly one identity" coming back.
-        if "forced" in base_seg and not any(s in base_seg for s in ("nothing here is forced", "none is forced", "nothing forced")):
-            errors.append(f"{label}: the BASE stratum must not be described as forced")
+        if "not a derivation" not in block and "not equivalent" not in block:
+            errors.append(f"{label}: the two presentations must be explicitly non-substitutable")
         if "exactly one identity" in block:
             errors.append(f"{label}: the false 'exactly one identity' claim has returned")
 
-    # --- the refuted F2 must not survive in ANY home ------------------------
-    # r180: the strata guard above scans only K-5 and the projection, so the
-    # false "exactly one identity" sat unflagged in the registry while this
-    # validator reported PASS. A PROXIMITY window does not work here — the
-    # withdrawal note sits next to the very place a re-assertion would land,
-    # and shields it. So the rule is exact: the phrase may appear in the
-    # registry exactly once, and only inside the canonical quoted withdrawal.
-    QUOTED = 'it read "a multiplicative structure has exactly one identity"'
-    hits = registry.count("exactly one identity")
-    if QUOTED not in registry:
-        errors.append(
-            "00_SETTLED_CANON_REGISTRY.md: the F2 withdrawal record is missing or altered. "
-            "F2 is permanently refuted; its supersession must stay recorded verbatim"
-        )
-    if hits > 1:
-        errors.append(
-            f"00_SETTLED_CANON_REGISTRY.md: 'exactly one identity' appears {hits} times; "
-            "exactly one (the withdrawal quote) is permitted — a live re-assertion has returned"
-        )
+    # --- conditional identity theorem and non-operand frame stay explicit ---
+    if "if present, is unique" not in registry and "if present, is unique" not in proj:
+        errors.append("the corrected conditional identity-uniqueness theorem is missing")
+    current_semantic = [PROJECTION, K5, REGISTRY, FORMAL_DOCS[0], FORMAL_DOCS[2], FORMAL_DOCS[-1]]
+    for rel in current_semantic:
+        for lineno, line in enumerate(bodies[rel].splitlines(), 1):
+            if RETIRED_TITAN_INFIX.search(line):
+                errors.append(f"{rel.as_posix()}:{lineno}: retired Titan infix returned to a current owner")
 
     # --- KSC-28 routes the foundation --------------------------------------
     if "ksc-28" not in registry:

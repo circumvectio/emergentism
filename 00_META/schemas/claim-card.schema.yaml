@@ -1,9 +1,11 @@
 {
-  "schema": "emergentism/claim-card-schema/v1",
+  "schema": "emergentism/claim-card-schema/v2",
   "serialization": "JSON subset of YAML 1.2 for deterministic stdlib parsing",
+  "required_source_fields": ["path", "lifecycle", "role", "reviewed_source_sha256"],
+  "required_locator_fields": ["section", "line_start", "line_end", "anchor", "fingerprint_sha256"],
   "required_card_fields": [
     "card_id", "chapters", "locator", "plain_claim", "claim_type",
-    "evidence", "owner_ids", "dependencies", "docket_ids",
+    "evidence", "semantic_owner_id", "supporting_owner_ids", "dependencies", "docket_ids",
     "type_boundaries", "strongest_rival", "discriminator",
     "kill_criterion", "survivor_if_killed", "consequence",
     "disposition", "public", "review"
@@ -32,5 +34,5 @@
     "KER-6": "06_ONTOLOGY/06_THE_REVELATIONS.md",
     "KER-7": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
   },
-  "authority_boundary": "Cards route and test claims. They never become an eighth semantic owner."
+  "authority_boundary": "Each active claim has exactly one current semantic owner. Supporting owners supply context but receive no ownership edge. Cards route and test claims; they never become an eighth semantic owner."
 }

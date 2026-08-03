@@ -31,7 +31,10 @@ rosetta:
 > conjecture. The chart identity is not evidence for the world mapping. See
 > [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md).
 
-> **Companion note:** This dissolution connects directly to the D0-D6 dimensional hierarchy and the Burri Sphere identification. See also [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md) for a parallel case where multiplicative constraint dissolves an apparent dichotomy.
+> **Companion note:** This selected reframe may be compared with the D scaffold,
+> but the correspondence transfers no proof. [PD_10_IS_OUGHT.md](PD_10_IS_OUGHT.md)
+> is a superseded forwarding stub; multiplicative geometry does not dissolve the
+> is-to-ought gap.
 
 ---
 
@@ -69,7 +72,8 @@ cause the One to become the Many. In the action calculus, actual D4 model tokens
 may represent D5 possible content, and commitment uses actual D4 means to enact
 an actual D4 action. That enactment is not a `μ`-crossing and not quantum collapse.
 
-Parmenides and Heraclitus were each describing one hemisphere of the same sphere.
+Within this selected picture, Parmenides and Heraclitus may be read as stressing
+opposed regions. That is interpretation, not a historical or metaphysical result.
 
 ## 4. THE FRAMEWORK CONNECTION
 
@@ -81,7 +85,9 @@ Parmenides and Heraclitus were each describing one hemisphere of the same sphere
 - **Justice mapping:** extraction and mutual option-cone effects are evaluated
   through declared D4 outcomes and the Justice envelope. They cannot break the
   analytic identity of a chosen chart.
-- **PD_10 connection:** The Is-Ought dissolution uses the same multiplicative structure. The false dichotomy between Is and Ought parallels the false dichotomy between One and Many.
+- **PD_10 boundary:** no is-to-ought dissolution is inherited from this
+  multiplicative picture. Justice remains a declared premise, and objective
+  moral realism remains a separate bridge investigation.
 
 ## 5. WHAT WOULD FALSIFY THIS
 

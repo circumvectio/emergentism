@@ -257,7 +257,8 @@ If any test fails and cannot be repaired, retire the instrument for that scope.
   strongly emergent.
 - It does not establish a physical fifth force or physical retrocausality.
 - It does not turn Everett or Copenhagen-family interpretations into dimensions.
-- It does not derive morality from `φν=1`, `P_node=ΦV`, or natural selection.
+- It does not derive morality from `φν=1`, any calibrated node aggregator, or
+  natural selection.
 - It does not confer personhood on a collective trace.
 - It does not certify itself from internal consistency.
 

@@ -1,0 +1,466 @@
+{
+  "schema": "emergentism/manifesto-projection/v1",
+  "projection_id": "MANIFESTO-0",
+  "title": "The Emergentist Manifesto — Preamble and Quickstart",
+  "subtitle": "Part 0 of a staged full reader for finite beings: possibility, consequence, correction, and exit.",
+  "status": "staged_editorial_draft_not_public",
+  "parent_composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+  "full_book_contract": "FULL_BOOK_1_CONTRACT.json",
+  "authority": "projection_only_no_semantic_authority",
+  "semantic_owner_rule": "This manifesto compresses existing claim cards. K-1 through K-7 remain the only semantic owners.",
+  "public_disposition": "not_a_public_route",
+  "external_structural_reference": {
+    "title": "The Network State — Quickstart",
+    "url": "https://thenetworkstate.com/",
+    "used_for": "A reader-compression ladder: one sentence, one image, one short argument, one essay, then an auditable record.",
+    "explicitly_excluded": [
+      "state-building",
+      "territory",
+      "sovereignty",
+      "citizenship or membership",
+      "founder entitlement",
+      "alignment tests",
+      "cryptoeconomy or census",
+      "growth as validation"
+    ]
+  },
+  "compression_ladder": [
+    "one_sentence",
+    "one_image",
+    "short_argument",
+    "one_essay",
+    "research_record"
+  ],
+  "body_claim_card_ids": [
+    "OS01-01",
+    "OS01-03",
+    "OS01-04",
+    "OS01-06",
+    "OS01-08",
+    "OS01-09",
+    "OS01-13",
+    "OS01-14",
+    "OS01-17",
+    "OS01-18",
+    "OS01-19",
+    "OS01-20",
+    "OS01-21",
+    "OS01-22",
+    "OS01-25",
+    "OS01-26",
+    "FIN01-01"
+  ],
+  "source_revisions": [
+    {
+      "work_id": "BK-ONE-SITTING",
+      "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+      "reviewed_source_sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad"
+    },
+    {
+      "work_id": "BK-FINITY-PRACTICE",
+      "source_path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+      "reviewed_source_sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c"
+    }
+  ],
+  "paragraphs": [
+    {
+      "id": "scope",
+      "line_range": [15, 22],
+      "anchor": "This is the Preamble and Quickstart of a staged full reader, not a new source of doctrine.",
+      "kind": "editorial_scope",
+      "claim_card_ids": [],
+      "source_revision_work_ids": [],
+      "lifecycle": "staged_editorial",
+      "public_disposition": "not_a_public_claim"
+    },
+    {
+      "id": "scope_source_map",
+      "line_range": [24, 31],
+      "anchor": "The source map is [`manifesto-contract.json`]",
+      "kind": "editorial_control",
+      "claim_card_ids": [],
+      "source_revision_work_ids": [],
+      "lifecycle": "staged_editorial",
+      "public_disposition": "not_a_public_claim"
+    },
+    {
+      "id": "tier_legend",
+      "line_range": [33, 41],
+      "anchor": "Each source card carries its own warrant:",
+      "kind": "editorial_metadata",
+      "claim_card_ids": [],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "staged_editorial",
+      "public_disposition": "not_a_public_claim"
+    },
+    {
+      "id": "one_sentence",
+      "line_range": [43, 50],
+      "anchor": "Emergentism is a fallibilist worldview and practice for finite beings:",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-13", "OS01-20", "OS01-25", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "one_image_diagram",
+      "line_range": [52, 66],
+      "anchor": "flowchart LR",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-08", "OS01-09", "OS01-13", "OS01-26", "FIN01-01"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "one_image_caption",
+      "line_range": [68, 75],
+      "anchor": "The image is a reader aid, not a causal theory",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-08", "OS01-09", "OS01-13", "OS01-26", "FIN01-01"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_condition",
+      "line_range": [77, 83],
+      "anchor": "We are finite beings. We do not begin with a completed view of the world",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-13", "OS01-20", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_distinction",
+      "line_range": [85, 92],
+      "anchor": "Its first discipline is distinction. A symbol is not the thing symbolized.",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-01", "OS01-03", "OS01-04", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_receipt",
+      "line_range": [94, 99],
+      "anchor": "The same discipline matters when we act. A plan, a commitment",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-08", "OS01-13"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_finity",
+      "line_range": [101, 107],
+      "anchor": "Finity is the smallest practice offered here.",
+      "kind": "current_body",
+      "claim_card_ids": ["FIN01-01", "OS01-13", "OS01-26"],
+      "source_revision_work_ids": ["BK-FINITY-PRACTICE", "BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_justice",
+      "line_range": [109, 114],
+      "anchor": "Emergentism also makes a constitutional choice. Justice is not derived from",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-19", "OS01-22", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_collective",
+      "line_range": [116, 120],
+      "anchor": "At collective scale, the same restraint applies.",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-14", "OS01-17", "OS01-18", "OS01-19"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_corpus_boundary",
+      "line_range": [122, 126],
+      "anchor": "The corpus also contains formal research and historical critical editions.",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-13", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "short_argument_invitation",
+      "line_range": [128, 132],
+      "anchor": "So this manifesto offers no conversion.",
+      "kind": "current_body",
+      "claim_card_ids": ["FIN01-01", "OS01-13", "OS01-26"],
+      "source_revision_work_ids": ["BK-FINITY-PRACTICE", "BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "body_card_index",
+      "line_range": [134, 143],
+      "anchor": "Current-body source cards:",
+      "kind": "editorial_card_index",
+      "claim_card_ids": ["OS01-01", "OS01-03", "OS01-04", "OS01-06", "OS01-08", "OS01-09", "OS01-13", "OS01-14", "OS01-17", "OS01-18", "OS01-19", "OS01-20", "OS01-21", "OS01-22", "OS01-25", "OS01-26", "FIN01-01"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE"],
+      "lifecycle": "staged_editorial",
+      "public_disposition": "not_a_public_claim"
+    },
+    {
+      "id": "article_map",
+      "line_range": [145, 154],
+      "anchor": "We choose no map that cannot be corrected by the world",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-13", "OS01-20", "OS01-21", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "article_frames",
+      "line_range": [156, 164],
+      "anchor": "We can select a vocabulary without turning it into furniture of the universe.",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-01", "OS01-03", "OS01-04"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "article_receipts",
+      "line_range": [166, 174],
+      "anchor": "A state description, a commitment, an attempted act",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-06", "OS01-08", "OS01-09", "OS01-13"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "article_finity",
+      "line_range": [176, 185],
+      "anchor": "Finity is an optional seven-prompt compression for one live decision.",
+      "kind": "current_body",
+      "claim_card_ids": ["FIN01-01", "OS01-13", "OS01-26"],
+      "source_revision_work_ids": ["BK-FINITY-PRACTICE", "BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "article_justice",
+      "line_range": [187, 195],
+      "anchor": "Justice is our declared constitutional premise",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-19", "OS01-20", "OS01-22", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "article_collective",
+      "line_range": [197, 205],
+      "anchor": "Where collective description is needed",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-14", "OS01-17", "OS01-18", "OS01-19"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "research_intro",
+      "line_range": [207, 212],
+      "anchor": "The following pages locate source-only, staged, frozen, and research material",
+      "kind": "research_catalog",
+      "claim_card_ids": [],
+      "source_revision_work_ids": [],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "research_formal",
+      "line_range": [214, 218],
+      "anchor": "The formal programme is not the manifesto’s credential.",
+      "kind": "research_catalog",
+      "claim_card_ids": ["OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-TITANS"],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "research_formal_boundary",
+      "line_range": [220, 224],
+      "anchor": "Research boundary: `TIT01-01`",
+      "kind": "research_catalog",
+      "claim_card_ids": ["TIT01-01", "TIT01-02", "TIT01-03", "TIT01-04", "TIT01-05", "TIT01-06"],
+      "source_revision_work_ids": ["BK-TITANS"],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "research_immune",
+      "line_range": [226, 230],
+      "anchor": "This draft treats no internal audit as a safety certificate.",
+      "kind": "research_catalog",
+      "claim_card_ids": ["OS01-13", "OS01-25", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-SELF-EATING", "BK-SARPASYA", "BK-RECIPROCAL-INFINITE-PLAY"],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "research_immune_boundary",
+      "line_range": [232, 236],
+      "anchor": "Research and genealogy boundary: `SES01-*`",
+      "kind": "research_catalog",
+      "claim_card_ids": ["SES01-01", "SES01-02", "SES01-03", "SES01-04", "SES01-05", "SES01-06", "SV01-01", "SV01-02", "SV01-03", "SV01-04", "SV01-05", "SV01-06", "SV01-07", "RIP01-01", "RIP01-02", "RIP01-03", "RIP01-04", "RIP01-05", "RIP01-06", "RIP01-07"],
+      "source_revision_work_ids": ["BK-SELF-EATING", "BK-SARPASYA", "BK-RECIPROCAL-INFINITE-PLAY"],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "research_corpus_map",
+      "line_range": [238, 245],
+      "anchor": "The books do not become one authority by appearing under one title.",
+      "kind": "research_catalog",
+      "claim_card_ids": [],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE", "BK-TITANS", "BK-SELF-EATING", "BK-DHARMA", "BK-SIX-LENSES", "BK-SARPASYA", "BK-RECIPROCAL-INFINITE-PLAY", "BK-EVOLUTIONARY-NETWORK"],
+      "lifecycle": "research_record",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "close",
+      "line_range": [247, 255],
+      "anchor": "Read one sentence, follow one source card",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-13", "OS01-25", "OS01-26", "FIN01-01"],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "book_table",
+      "line_range": [257, 270],
+      "anchor": "| Work | Reader job | Release state | Public route |",
+      "kind": "book_manifest_catalog",
+      "claim_card_ids": [],
+      "source_revision_work_ids": ["BK-ONE-SITTING", "BK-FINITY-PRACTICE", "BK-TITANS", "BK-SELF-EATING", "BK-DHARMA", "BK-SIX-LENSES", "BK-SARPASYA", "BK-RECIPROCAL-INFINITE-PLAY", "BK-EVOLUTIONARY-NETWORK"],
+      "lifecycle": "catalog_metadata",
+      "public_disposition": "not_a_body_claim"
+    },
+    {
+      "id": "refusals",
+      "line_range": [272, 280],
+      "anchor": "1. A theorem is not an ontology.",
+      "kind": "current_body",
+      "claim_card_ids": ["OS01-22", "OS01-26"],
+      "source_revision_work_ids": ["BK-ONE-SITTING"],
+      "lifecycle": "current_body",
+      "public_disposition": "bounded_current"
+    },
+    {
+      "id": "release_gates",
+      "line_range": [282, 289],
+      "anchor": "This document is intentionally private and staged.",
+      "kind": "release_gate",
+      "claim_card_ids": [],
+      "source_revision_work_ids": [],
+      "lifecycle": "staged_editorial",
+      "public_disposition": "not_a_public_claim"
+    }
+  ],
+  "sections": [
+    {
+      "id": "map_can_lose",
+      "title": "A Map That Can Lose",
+      "claim_card_ids": ["OS01-13", "OS01-20", "OS01-21", "OS01-26"]
+    },
+    {
+      "id": "frames_not_things",
+      "title": "Frames Are Not Things",
+      "claim_card_ids": ["OS01-01", "OS01-03", "OS01-04"]
+    },
+    {
+      "id": "records_means_receipts",
+      "title": "Records, Means, and Receipts",
+      "claim_card_ids": ["OS01-06", "OS01-08", "OS01-09", "OS01-13"]
+    },
+    {
+      "id": "finity",
+      "title": "Finity: A Bounded First Practice",
+      "claim_card_ids": ["FIN01-01", "OS01-13"]
+    },
+    {
+      "id": "justice_roles_exit",
+      "title": "Justice, Roles, and Exit",
+      "claim_card_ids": ["OS01-19", "OS01-20", "OS01-22"]
+    },
+    {
+      "id": "collective_questions",
+      "title": "Collective Descriptions Without Collective Persons",
+      "claim_card_ids": ["OS01-14", "OS01-17", "OS01-18", "OS01-19"]
+    },
+    {
+      "id": "research_frontier",
+      "title": "The Research Frontier",
+      "claim_card_ids": ["OS01-25", "OS01-26"]
+    },
+    {
+      "id": "immune_protocol_boundary",
+      "title": "The Immune-Protocol Record",
+      "claim_card_ids": ["OS01-13", "OS01-25", "OS01-26"]
+    },
+    {
+      "id": "corpus_map",
+      "title": "A Corpus With One Argument, Not One Authority",
+      "claim_card_ids": ["OS01-13", "OS01-19", "OS01-26"]
+    },
+    {
+      "id": "exit",
+      "title": "Exit, Correction, and the Open Invitation",
+      "claim_card_ids": ["OS01-13", "OS01-25", "OS01-26"]
+    }
+  ],
+  "book_roles": [
+    {"work_id": "BK-ONE-SITTING", "role": "current_reader_spine", "manifest_mode": "body_source"},
+    {"work_id": "BK-FINITY-PRACTICE", "role": "optional_bounded_first_practice", "manifest_mode": "body_source"},
+    {"work_id": "BK-TITANS", "role": "formal_research_annex", "manifest_mode": "clearly_marked_research_only"},
+    {"work_id": "BK-SELF-EATING", "role": "critical_immune_protocol_and_genealogy", "manifest_mode": "clearly_marked_source_only"},
+    {"work_id": "BK-DHARMA", "role": "justice_and_nonviolent_institutional_casebook", "manifest_mode": "clearly_marked_source_only"},
+    {"work_id": "BK-SIX-LENSES", "role": "comparative_method_appendix", "manifest_mode": "clearly_marked_source_only"},
+    {"work_id": "BK-SARPASYA", "role": "critical_genealogy_and_dissolution_record", "manifest_mode": "clearly_marked_source_only"},
+    {"work_id": "BK-RECIPROCAL-INFINITE-PLAY", "role": "frozen_genealogy_with_custody_only_material", "manifest_mode": "frozen_provenance_only"},
+    {"work_id": "BK-EVOLUTIONARY-NETWORK", "role": "separate_voluntary_institutional_research_dossier", "manifest_mode": "not_a_manifesto_promise"}
+  ],
+  "book_records": [
+    {"work_id": "BK-ONE-SITTING", "title": "The Emergentist Weltanschauung — One-Sitting Edition", "release_state": "source_active_projection_review_open", "public_route": "../12_PUBLIC_SITE/book/index.html"},
+    {"work_id": "BK-FINITY-PRACTICE", "title": "The Finity Card — Lived Compass Practice", "release_state": "source_active_public_projection", "public_route": "../12_PUBLIC_SITE/practice/index.html"},
+    {"work_id": "BK-TITANS", "title": "The Titans — The Infinite, Finity & Infinity", "release_state": "research_critical_edition_staged_not_public", "public_route": null},
+    {"work_id": "BK-SELF-EATING", "title": "The Self-Eating Serpent", "release_state": "historical_readonly_critical_edition_staged", "public_route": null},
+    {"work_id": "BK-DHARMA", "title": "Dharma Yuddha", "release_state": "critical_edition_staged_not_public", "public_route": null},
+    {"work_id": "BK-SIX-LENSES", "title": "Six-Fold Revelation / Six Lenses", "release_state": "historical_readonly_critical_edition_staged", "public_route": null},
+    {"work_id": "BK-SARPASYA", "title": "Sarpasya Vijayam", "release_state": "historical_readonly_critical_edition_staged", "public_route": null},
+    {"work_id": "BK-RECIPROCAL-INFINITE-PLAY", "title": "The Reciprocal / Infinite Play", "release_state": "legacy_and_frozen_critical_edition_staged", "public_route": null},
+    {"work_id": "BK-EVOLUTIONARY-NETWORK", "title": "The Evolutionary Network", "release_state": "proposal_critical_edition_staged_not_public", "public_route": null}
+  ],
+  "non_negotiable_refusals": [
+    "A theorem is not an ontology.",
+    "A model is not the territory.",
+    "A symbol is not a causal agent.",
+    "Justice is not derived merely because a geometry is elegant.",
+    "A worldview is not validated by adherents, popularity, publication, or AI agreement.",
+    "Any holder may put it down."
+  ],
+  "release_gates": [
+    "Every substantive paragraph maps to existing current source cards and revisions.",
+    "The public body uses only cards whose public state is bounded_current; candidates, source-only, frozen, archive, and withheld material remain visibly non-affirmative until separately cleared.",
+    "Fresh readers can distinguish established results, selected practices, interpretations, conjectures, and open questions.",
+    "A hostile review verifies no total ontology, universal paradox resolution, science-unification, human-rank, coercive, or derived-ethics claim enters the public body.",
+    "Claim-card compilation, source-negative checks, public semantic parity, predeploy, deterministic generation, and immutable-artifact audit pass before release."
+  ]
+}

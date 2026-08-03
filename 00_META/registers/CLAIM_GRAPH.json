@@ -1,11 +1,36 @@
 {
   "authority": "derived graph; publication and graph membership provide no evidence",
-  "edges": [
+  "composition_summaries": [
     {
-      "from": "DHY01-01",
-      "kind": "owned_by",
-      "to": "K-3"
+      "catalog_class": "active_book",
+      "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "output_state": "private_full_book_completed_not_public",
+      "primary_card_count": 33,
+      "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
+    {
+      "catalog_class": "active_research_book",
+      "composition_id": "COMP-ACTIVE-02-TITANS",
+      "output_state": "planned_not_built",
+      "primary_card_count": 7,
+      "title": "The Titans: The Infinite, Finity & Infinity"
+    },
+    {
+      "catalog_class": "active_practice_book",
+      "composition_id": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "output_state": "planned_not_built",
+      "primary_card_count": 20,
+      "title": "The Lived Compass: Justice, Action & Institutions"
+    },
+    {
+      "catalog_class": "historical_critical_reader",
+      "composition_id": "COMP-HISTORICAL-01-SERPENT-CYCLE",
+      "output_state": "planned_not_built",
+      "primary_card_count": 0,
+      "title": "The Serpent Cycle: A Critical Genealogy of Emergentism"
+    }
+  ],
+  "edges": [
     {
       "from": "DHY01-01",
       "kind": "owned_by",
@@ -15,6 +40,16 @@
       "from": "DHY01-01",
       "kind": "projected_from",
       "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "DHY01-01",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "DHY01-01",
@@ -34,17 +69,22 @@
     {
       "from": "DHY01-02",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "DHY01-02",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "DHY01-02",
       "kind": "projected_from",
       "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "DHY01-02",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "DHY01-02",
@@ -65,6 +105,11 @@
       "from": "DHY01-03",
       "kind": "projected_from",
       "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-03",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
     },
     {
       "from": "DHY01-03",
@@ -89,17 +134,22 @@
     {
       "from": "DHY01-04",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "DHY01-04",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "DHY01-04",
       "kind": "projected_from",
       "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "DHY01-04",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "DHY01-04",
@@ -124,22 +174,27 @@
     {
       "from": "DHY01-05",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "DHY01-05",
-      "kind": "owned_by",
       "to": "K-5"
-    },
-    {
-      "from": "DHY01-05",
-      "kind": "owned_by",
-      "to": "K-7"
     },
     {
       "from": "DHY01-05",
       "kind": "projected_from",
       "to": "BK-DHARMA"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "DHY01-05",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "DHY01-05",
@@ -154,17 +209,22 @@
     {
       "from": "EN01-01",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "EN01-01",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "EN01-01",
       "kind": "projected_from",
       "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "projected_to",
+      "to": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-01",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "EN01-01",
@@ -193,6 +253,11 @@
     },
     {
       "from": "EN01-02",
+      "kind": "projected_to",
+      "to": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-02",
       "kind": "tested_by",
       "to": "A5"
     },
@@ -209,22 +274,27 @@
     {
       "from": "EN01-03",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "EN01-03",
-      "kind": "owned_by",
-      "to": "K-5"
-    },
-    {
-      "from": "EN01-03",
-      "kind": "owned_by",
       "to": "K-7"
     },
     {
       "from": "EN01-03",
       "kind": "projected_from",
       "to": "BK-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "projected_to",
+      "to": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "EN01-03",
+      "kind": "supported_by",
+      "to": "K-5"
     },
     {
       "from": "EN01-03",
@@ -248,13 +318,18 @@
     },
     {
       "from": "EN01-04",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
     },
     {
       "from": "EN01-04",
-      "kind": "projected_from",
-      "to": "BK-EVOLUTIONARY-NETWORK"
+      "kind": "projected_to",
+      "to": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-04",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "EN01-04",
@@ -293,13 +368,18 @@
     },
     {
       "from": "EN01-05",
-      "kind": "owned_by",
-      "to": "K-5"
+      "kind": "projected_from",
+      "to": "BK-EVOLUTIONARY-NETWORK"
     },
     {
       "from": "EN01-05",
-      "kind": "projected_from",
-      "to": "BK-EVOLUTIONARY-NETWORK"
+      "kind": "projected_to",
+      "to": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
+      "from": "EN01-05",
+      "kind": "supported_by",
+      "to": "K-5"
     },
     {
       "from": "EN01-05",
@@ -330,6 +410,11 @@
       "from": "FIN01-01",
       "kind": "projected_from",
       "to": "BK-FINITY-PRACTICE"
+    },
+    {
+      "from": "FIN01-01",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
     },
     {
       "from": "FIN01-01",
@@ -358,6 +443,11 @@
     },
     {
       "from": "FIN01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "FIN01-02",
       "kind": "tested_by",
       "to": "A3"
     },
@@ -375,6 +465,11 @@
       "from": "OS01-01",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-01",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-01",
@@ -398,6 +493,11 @@
     },
     {
       "from": "OS01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-02",
       "kind": "tested_by",
       "to": "A2"
     },
@@ -410,6 +510,11 @@
       "from": "OS01-03",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-03",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-03",
@@ -433,13 +538,13 @@
     },
     {
       "from": "OS01-04",
-      "kind": "tested_by",
-      "to": "A1"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
-      "from": "OS01-05",
-      "kind": "owned_by",
-      "to": "K-1"
+      "from": "OS01-04",
+      "kind": "tested_by",
+      "to": "A1"
     },
     {
       "from": "OS01-05",
@@ -450,6 +555,16 @@
       "from": "OS01-05",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-05",
+      "kind": "supported_by",
+      "to": "K-1"
     },
     {
       "from": "OS01-05",
@@ -473,6 +588,11 @@
     },
     {
       "from": "OS01-06",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-06",
       "kind": "tested_by",
       "to": "A1"
     },
@@ -484,17 +604,22 @@
     {
       "from": "OS01-07",
       "kind": "owned_by",
-      "to": "K-1"
-    },
-    {
-      "from": "OS01-07",
-      "kind": "owned_by",
       "to": "K-4"
     },
     {
       "from": "OS01-07",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-07",
+      "kind": "supported_by",
+      "to": "K-1"
     },
     {
       "from": "OS01-07",
@@ -509,17 +634,27 @@
     {
       "from": "OS01-08",
       "kind": "owned_by",
-      "to": "K-1"
-    },
-    {
-      "from": "OS01-08",
-      "kind": "owned_by",
-      "to": "K-3"
+      "to": "K-7"
     },
     {
       "from": "OS01-08",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "supported_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-08",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "OS01-08",
@@ -533,18 +668,23 @@
     },
     {
       "from": "OS01-09",
-      "kind": "owned_by",
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-09",
+      "kind": "supported_by",
       "to": "K-3"
     },
     {
       "from": "OS01-09",
-      "kind": "owned_by",
+      "kind": "supported_by",
       "to": "K-4"
-    },
-    {
-      "from": "OS01-09",
-      "kind": "projected_from",
-      "to": "BK-ONE-SITTING"
     },
     {
       "from": "OS01-09",
@@ -573,6 +713,11 @@
     },
     {
       "from": "OS01-10",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-10",
       "kind": "tested_by",
       "to": "A3"
     },
@@ -588,6 +733,11 @@
     },
     {
       "from": "OS01-11",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-11",
       "kind": "tested_by",
       "to": "A1"
     },
@@ -598,8 +748,8 @@
     },
     {
       "from": "OS01-12",
-      "kind": "owned_by",
-      "to": "K-3"
+      "kind": "depends_on",
+      "to": "RIP01-03"
     },
     {
       "from": "OS01-12",
@@ -610,6 +760,16 @@
       "from": "OS01-12",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-12",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "OS01-12",
@@ -629,17 +789,27 @@
     {
       "from": "OS01-13",
       "kind": "owned_by",
-      "to": "K-1"
-    },
-    {
-      "from": "OS01-13",
-      "kind": "owned_by",
-      "to": "K-3"
+      "to": "K-5"
     },
     {
       "from": "OS01-13",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "supported_by",
+      "to": "K-1"
+    },
+    {
+      "from": "OS01-13",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "OS01-13",
@@ -655,6 +825,11 @@
       "from": "OS01-14",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-14",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-14",
@@ -678,6 +853,11 @@
     },
     {
       "from": "OS01-15",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-15",
       "kind": "tested_by",
       "to": "A7"
     },
@@ -690,6 +870,11 @@
       "from": "OS01-16",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-16",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-16",
@@ -718,6 +903,11 @@
     },
     {
       "from": "OS01-17",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-17",
       "kind": "tested_by",
       "to": "A7"
     },
@@ -730,6 +920,11 @@
       "from": "OS01-18",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-18",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-18",
@@ -758,6 +953,11 @@
     },
     {
       "from": "OS01-19",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-19",
       "kind": "tested_by",
       "to": "A5"
     },
@@ -775,6 +975,11 @@
       "from": "OS01-20",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-20",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
       "from": "OS01-20",
@@ -803,6 +1008,11 @@
     },
     {
       "from": "OS01-21",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-21",
       "kind": "tested_by",
       "to": "A2"
     },
@@ -828,6 +1038,11 @@
     },
     {
       "from": "OS01-22",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-22",
       "kind": "tested_by",
       "to": "A4"
     },
@@ -844,17 +1059,22 @@
     {
       "from": "OS01-23",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "OS01-23",
-      "kind": "owned_by",
       "to": "K-4"
     },
     {
       "from": "OS01-23",
       "kind": "projected_from",
       "to": "BK-ONE-SITTING"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-23",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "OS01-23",
@@ -883,6 +1103,11 @@
     },
     {
       "from": "OS01-24",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-24",
       "kind": "tested_by",
       "to": "A6"
     },
@@ -898,13 +1123,18 @@
     },
     {
       "from": "OS01-25",
-      "kind": "owned_by",
-      "to": "K-4"
+      "kind": "projected_from",
+      "to": "BK-ONE-SITTING"
     },
     {
       "from": "OS01-25",
-      "kind": "projected_from",
-      "to": "BK-ONE-SITTING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "OS01-25",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "OS01-25",
@@ -929,17 +1159,7 @@
     {
       "from": "OS01-26",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "OS01-26",
-      "kind": "owned_by",
       "to": "K-5"
-    },
-    {
-      "from": "OS01-26",
-      "kind": "owned_by",
-      "to": "K-7"
     },
     {
       "from": "OS01-26",
@@ -948,13 +1168,23 @@
     },
     {
       "from": "OS01-26",
-      "kind": "tested_by",
-      "to": "A3"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
     },
     {
-      "from": "RIP01-01",
-      "kind": "owned_by",
-      "to": "K-3"
+      "from": "OS01-26",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "supported_by",
+      "to": "K-7"
+    },
+    {
+      "from": "OS01-26",
+      "kind": "tested_by",
+      "to": "A3"
     },
     {
       "from": "RIP01-01",
@@ -965,6 +1195,16 @@
       "from": "RIP01-01",
       "kind": "projected_from",
       "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-01",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "RIP01-01",
@@ -983,13 +1223,18 @@
     },
     {
       "from": "RIP01-02",
-      "kind": "owned_by",
-      "to": "K-3"
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "from": "RIP01-02",
-      "kind": "projected_from",
-      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-02",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "RIP01-02",
@@ -1018,13 +1263,18 @@
     },
     {
       "from": "RIP01-03",
-      "kind": "owned_by",
-      "to": "K-3"
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "from": "RIP01-03",
-      "kind": "projected_from",
-      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-03",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "RIP01-03",
@@ -1053,6 +1303,11 @@
     },
     {
       "from": "RIP01-04",
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-04",
       "kind": "tested_by",
       "to": "A7"
     },
@@ -1064,22 +1319,27 @@
     {
       "from": "RIP01-05",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "RIP01-05",
-      "kind": "owned_by",
-      "to": "K-5"
-    },
-    {
-      "from": "RIP01-05",
-      "kind": "owned_by",
       "to": "K-7"
     },
     {
       "from": "RIP01-05",
       "kind": "projected_from",
       "to": "BK-RECIPROCAL-INFINITE-PLAY"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "RIP01-05",
+      "kind": "supported_by",
+      "to": "K-5"
     },
     {
       "from": "RIP01-05",
@@ -1103,13 +1363,18 @@
     },
     {
       "from": "RIP01-06",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "from": "RIP01-06",
-      "kind": "projected_from",
-      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-06",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "RIP01-06",
@@ -1133,13 +1398,18 @@
     },
     {
       "from": "RIP01-07",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "from": "RIP01-07",
-      "kind": "projected_from",
-      "to": "BK-RECIPROCAL-INFINITE-PLAY"
+      "kind": "projected_to",
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "from": "RIP01-07",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "RIP01-07",
@@ -1158,13 +1428,18 @@
     },
     {
       "from": "SES01-01",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-01",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-01",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SES01-01",
@@ -1188,13 +1463,18 @@
     },
     {
       "from": "SES01-02",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-02",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-02",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SES01-02",
@@ -1213,13 +1493,18 @@
     },
     {
       "from": "SES01-03",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-03",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-03",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SES01-03",
@@ -1243,13 +1528,18 @@
     },
     {
       "from": "SES01-04",
-      "kind": "owned_by",
-      "to": "K-5"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-04",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-04",
+      "kind": "supported_by",
+      "to": "K-5"
     },
     {
       "from": "SES01-04",
@@ -1273,13 +1563,18 @@
     },
     {
       "from": "SES01-05",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-05",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-05",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SES01-05",
@@ -1303,13 +1598,18 @@
     },
     {
       "from": "SES01-06",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SELF-EATING"
     },
     {
       "from": "SES01-06",
-      "kind": "projected_from",
-      "to": "BK-SELF-EATING"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SES01-06",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SES01-06",
@@ -1328,13 +1628,18 @@
     },
     {
       "from": "SL01-01",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
     },
     {
       "from": "SL01-01",
-      "kind": "projected_from",
-      "to": "BK-SIX-LENSES"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-01",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SL01-01",
@@ -1358,18 +1663,23 @@
     },
     {
       "from": "SL01-02",
-      "kind": "owned_by",
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-02",
+      "kind": "supported_by",
       "to": "K-4"
     },
     {
       "from": "SL01-02",
-      "kind": "owned_by",
+      "kind": "supported_by",
       "to": "K-5"
-    },
-    {
-      "from": "SL01-02",
-      "kind": "projected_from",
-      "to": "BK-SIX-LENSES"
     },
     {
       "from": "SL01-02",
@@ -1398,6 +1708,11 @@
     },
     {
       "from": "SL01-03",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-03",
       "kind": "tested_by",
       "to": "A3"
     },
@@ -1418,6 +1733,11 @@
     },
     {
       "from": "SL01-04",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-04",
       "kind": "tested_by",
       "to": "A4"
     },
@@ -1434,17 +1754,22 @@
     {
       "from": "SL01-05",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "SL01-05",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "SL01-05",
       "kind": "projected_from",
       "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-05",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "SL01-05",
@@ -1464,17 +1789,22 @@
     {
       "from": "SL01-06",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "SL01-06",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "SL01-06",
       "kind": "projected_from",
       "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-06",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "SL01-06",
@@ -1499,17 +1829,22 @@
     {
       "from": "SL01-07",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "SL01-07",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "SL01-07",
       "kind": "projected_from",
       "to": "BK-SIX-LENSES"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-07",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "SL01-07",
@@ -1558,13 +1893,18 @@
     },
     {
       "from": "SL01-08",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SIX-LENSES"
     },
     {
       "from": "SL01-08",
-      "kind": "projected_from",
-      "to": "BK-SIX-LENSES"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SL01-08",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SL01-08",
@@ -1579,17 +1919,22 @@
     {
       "from": "SV01-01",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "SV01-01",
-      "kind": "owned_by",
       "to": "K-4"
     },
     {
       "from": "SV01-01",
       "kind": "projected_from",
       "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SV01-01",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "SV01-01",
@@ -1608,18 +1953,23 @@
     },
     {
       "from": "SV01-02",
-      "kind": "owned_by",
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "SV01-02",
+      "kind": "supported_by",
       "to": "K-3"
     },
     {
       "from": "SV01-02",
-      "kind": "owned_by",
+      "kind": "supported_by",
       "to": "K-7"
-    },
-    {
-      "from": "SV01-02",
-      "kind": "projected_from",
-      "to": "BK-SARPASYA"
     },
     {
       "from": "SV01-02",
@@ -1639,17 +1989,22 @@
     {
       "from": "SV01-03",
       "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "SV01-03",
-      "kind": "owned_by",
       "to": "K-4"
     },
     {
       "from": "SV01-03",
       "kind": "projected_from",
       "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SV01-03",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "SV01-03",
@@ -1683,6 +2038,11 @@
     },
     {
       "from": "SV01-04",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SV01-04",
       "kind": "tested_by",
       "to": "A5"
     },
@@ -1708,6 +2068,11 @@
     },
     {
       "from": "SV01-05",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SV01-05",
       "kind": "tested_by",
       "to": "A3"
     },
@@ -1724,17 +2089,22 @@
     {
       "from": "SV01-06",
       "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "SV01-06",
-      "kind": "owned_by",
       "to": "K-5"
     },
     {
       "from": "SV01-06",
       "kind": "projected_from",
       "to": "BK-SARPASYA"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+    },
+    {
+      "from": "SV01-06",
+      "kind": "supported_by",
+      "to": "K-4"
     },
     {
       "from": "SV01-06",
@@ -1763,13 +2133,18 @@
     },
     {
       "from": "SV01-07",
-      "kind": "owned_by",
-      "to": "K-7"
+      "kind": "projected_from",
+      "to": "BK-SARPASYA"
     },
     {
       "from": "SV01-07",
-      "kind": "projected_from",
-      "to": "BK-SARPASYA"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+    },
+    {
+      "from": "SV01-07",
+      "kind": "supported_by",
+      "to": "K-7"
     },
     {
       "from": "SV01-07",
@@ -1793,6 +2168,11 @@
     },
     {
       "from": "TIT01-01",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "TIT01-01",
       "kind": "tested_by",
       "to": "A1"
     },
@@ -1810,6 +2190,11 @@
       "from": "TIT01-02",
       "kind": "projected_from",
       "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-02",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
     },
     {
       "from": "TIT01-02",
@@ -1838,18 +2223,23 @@
     },
     {
       "from": "TIT01-03",
-      "kind": "owned_by",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "TIT01-03",
+      "kind": "supported_by",
       "to": "K-3"
     },
     {
       "from": "TIT01-03",
-      "kind": "owned_by",
+      "kind": "supported_by",
       "to": "K-4"
-    },
-    {
-      "from": "TIT01-03",
-      "kind": "projected_from",
-      "to": "BK-TITANS"
     },
     {
       "from": "TIT01-03",
@@ -1868,13 +2258,18 @@
     },
     {
       "from": "TIT01-04",
-      "kind": "owned_by",
-      "to": "K-3"
+      "kind": "projected_from",
+      "to": "BK-TITANS"
     },
     {
       "from": "TIT01-04",
-      "kind": "projected_from",
-      "to": "BK-TITANS"
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "TIT01-04",
+      "kind": "supported_by",
+      "to": "K-3"
     },
     {
       "from": "TIT01-04",
@@ -1903,28 +2298,63 @@
     },
     {
       "from": "TIT01-05",
-      "kind": "owned_by",
-      "to": "K-3"
-    },
-    {
-      "from": "TIT01-05",
-      "kind": "owned_by",
-      "to": "K-4"
-    },
-    {
-      "from": "TIT01-05",
       "kind": "projected_from",
       "to": "BK-TITANS"
     },
     {
       "from": "TIT01-05",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "supported_by",
+      "to": "K-3"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "supported_by",
+      "to": "K-4"
+    },
+    {
+      "from": "TIT01-05",
+      "kind": "tested_by",
+      "to": "A1"
+    },
+    {
+      "from": "TIT01-06",
+      "kind": "depends_on",
+      "to": "TIT01-01"
+    },
+    {
+      "from": "TIT01-06",
+      "kind": "depends_on",
+      "to": "TIT01-02"
+    },
+    {
+      "from": "TIT01-06",
+      "kind": "owned_by",
+      "to": "K-1"
+    },
+    {
+      "from": "TIT01-06",
+      "kind": "projected_from",
+      "to": "BK-TITANS"
+    },
+    {
+      "from": "TIT01-06",
+      "kind": "projected_to",
+      "to": "COMP-ACTIVE-02-TITANS"
+    },
+    {
+      "from": "TIT01-06",
       "kind": "tested_by",
       "to": "A1"
     }
   ],
   "metrics": {
-    "edges": 384,
-    "nodes": 95
+    "edges": 464,
+    "nodes": 102
   },
   "nodes": [
     {
@@ -1966,6 +2396,42 @@
       "id": "A7",
       "kind": "adequacy_docket",
       "status": "packet-complete"
+    },
+    {
+      "catalog_class": "active_book",
+      "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
+      "kind": "book_composition",
+      "output_state": "private_full_book_completed_not_public",
+      "primary_card_count": 33,
+      "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
+    },
+    {
+      "catalog_class": "active_research_book",
+      "composition_id": "COMP-ACTIVE-02-TITANS",
+      "id": "COMP-ACTIVE-02-TITANS",
+      "kind": "book_composition",
+      "output_state": "planned_not_built",
+      "primary_card_count": 7,
+      "title": "The Titans: The Infinite, Finity & Infinity"
+    },
+    {
+      "catalog_class": "active_practice_book",
+      "composition_id": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "id": "COMP-ACTIVE-03-LIVED-COMPASS",
+      "kind": "book_composition",
+      "output_state": "planned_not_built",
+      "primary_card_count": 20,
+      "title": "The Lived Compass: Justice, Action & Institutions"
+    },
+    {
+      "catalog_class": "historical_critical_reader",
+      "composition_id": "COMP-HISTORICAL-01-SERPENT-CYCLE",
+      "id": "COMP-HISTORICAL-01-SERPENT-CYCLE",
+      "kind": "book_composition",
+      "output_state": "planned_not_built",
+      "primary_card_count": 0,
+      "title": "The Serpent Cycle: A Critical Genealogy of Emergentism"
     },
     {
       "id": "BK-DHARMA",
@@ -2359,6 +2825,25 @@
       "lifecycle": "active"
     },
     {
+      "id": "TIT01-06",
+      "kind": "claim",
+      "lifecycle": "active"
+    },
+    {
+      "id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
+      "kind": "nonbook_claim_route",
+      "primary_card_count": 7,
+      "projection_kind": "historical_custody_only",
+      "route_id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
+    },
+    {
+      "id": "DOSSIER-EVOLUTIONARY-NETWORK",
+      "kind": "nonbook_claim_route",
+      "primary_card_count": 5,
+      "projection_kind": "research_dossier",
+      "route_id": "DOSSIER-EVOLUTIONARY-NETWORK"
+    },
+    {
       "id": "K-1",
       "kind": "semantic_owner",
       "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
@@ -2394,5 +2879,5 @@
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
     }
   ],
-  "schema": "emergentism/claim-owner-dependency-graph/v1"
+  "schema": "emergentism/claim-owner-dependency-graph/v2"
 }

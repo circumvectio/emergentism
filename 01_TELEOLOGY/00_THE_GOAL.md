@@ -144,7 +144,7 @@ planning and coordination rules in receipted use.
 
 ## 5. Foresight and means
 
-For a declared task, Emergentism may model usable action capacity as
+For a declared task, the live finite-node object is the ordered profile
 
 ```text
 P_node := min(Φ̂₄,V₄)

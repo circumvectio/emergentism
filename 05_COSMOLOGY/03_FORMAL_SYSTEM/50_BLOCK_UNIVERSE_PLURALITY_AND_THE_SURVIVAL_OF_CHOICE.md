@@ -2,7 +2,7 @@
 title: "Block-Universe Plurality and the Survival of Choice — why the D4/D5 typing is the firewall"
 status: "ACTIVE — subordinate treatment; 34_D4_D5_CANONICAL_REFERENCE.md owns all D4/D5 typing"
 date: 2026-07-29
-evidence_tier: "[A] the invalidity of the fatalist inference; [S] the typing firewall; [C] any plurality premise"
+evidence_tier: "[A] the logical distinction between determinateness and causal independence; [S/I] typed compatibility readings; [C] plurality and agency claims"
 owner: "Subordinate to 34_D4_D5_CANONICAL_REFERENCE.md. This document creates no D-register doctrine."
 parents:
   - 34_D4_D5_CANONICAL_REFERENCE.md
@@ -63,28 +63,27 @@ The equivocation is exact:
 ```
 
 Only the first follows from the block. The second is a separate and false claim.
-In a block universe **your deliberation and selection are part of the block** —
-they are among the events that make it the shape it is. Counterfactual
-dependence survives untouched: had you chosen otherwise, the block would be
-otherwise. Determinateness is not causal bypass.
+In a compatibilist block-universe reading, deliberation and selection are events
+inside the block rather than events bypassed by it. Counterfactual dependence
+can then be modeled by comparing nearby possible histories. This compatibility
+is not forced by eternalism; counterfactual semantics and the agency theory are
+additional commitments. Determinateness alone does not entail causal bypass.
 
 ## 4 · Granting plurality anyway, choice still survives `[S]`
 
-Suppose every branch is realised. Three independent reasons the conclusion still
-does not follow:
+Suppose every branch is realised. Three live response strategies show that the
+conclusion still does not follow *without further premises*; none is neutral
+between interpretations:
 
-1. **Self-location.** Even with all branches actual, *which branch the bearer
-   inhabits* is what the choice settles. The decision-relevant question was never
-   "does the multiverse change" but "which history do I occupy." Everettian
-   decision theory exists precisely because this remains well-posed.
-2. **Weights are not uniform.** "Every outcome occurs" is not "all outcomes
-   equally." Where a measure exists, action changes the measure. `W2` explicitly
-   does **not** derive Born weights — so the corpus may not even assume the
-   uniformity the argument needs.
-3. **The bearer is singular.** The Human Condition holds that *"a trace is not
-   automatically the bearer."* A counterpart in another branch is not the bearer
-   who receives this history's consequences. Justice, receipts and repair all
-   attach to the bearer, not to the ensemble.
+1. **Self-locating decision theory.** Some Everettian accounts retain uncertainty
+   or caring measures over successors. They do not say a choice selects one
+   uniquely actual branch, and rival accounts dispute the interpretation.
+2. **Weights.** "Every outcome occurs" does not imply equal decision weight.
+   Whether and how action changes a branch measure is theory-dependent; `W2`
+   explicitly derives no Born rule.
+3. **Bearer continuity.** The corpus may attach receipts to a locally continuous
+   bearer, but personal identity across branches is contested. This is a chosen
+   normative bookkeeping rule, not a theorem about Everettian ontology.
 
 ## 5 · The D4/D5 typing is the firewall `[S]`
 
@@ -118,9 +117,9 @@ metaphysical positions about determinism"* and *"less than ultimate
 self-creation."* Its operational claim is deliberately narrower: freedom is
 present where *"interventions on represented futures change present choices."*
 
-That claim is **untouched by the block universe and untouched by plurality.**
-Neither changes whether such interventions shift action. The Soul Loop also runs
-identically in a fully determinate block: the agent still does not know its own
+That claim is **compatible with some block-universe and plurality models.**
+Neither determinateness nor plurality alone decides whether such interventions
+shift action. The Soul Loop can also be represented in a determinate block: the agent still does not know its own
 future, must still model, select, commit, and receive `r_(t+1)`. Epistemic
 position, not metaphysical openness, is what the loop requires.
 
@@ -128,9 +127,10 @@ position, not metaphysical openness, is what the loop requires.
 
 The honest payoff, and it inverts the worry.
 
-The agency account is **metaphysically robust and empirically vulnerable**. No
-result about block universes or branch plurality can reach it. What can reach it
-is `GP-02` / `μ₄`:
+The agency account is designed to be **compatible with multiple metaphysical
+models and empirically vulnerable**. A sufficiently strong metaphysical argument
+could still expose an inconsistency; none is assumed away. Its clearest current
+empirical exposure is `GP-02` / `μ₄`:
 
 > Intervene on represented futures while holding means and present state fixed.
 > If action distributions do **not** shift beyond the strongest fair D4 baseline,
@@ -147,11 +147,11 @@ null result.
 |---|---|---|
 | block-universe plurality is not a corpus commitment (`GP-08`) | `[B]` | show canon asserting physical co-existence |
 | `P2 → P3` is invalid; determinate ≠ independent | `[A]` | derive causal irrelevance from determinateness alone |
-| counterfactual dependence survives in a block | `[S]` | show the block removes counterfactual dependence |
-| self-location, weights and bearer-singularity each block the plurality argument | `[S]` | defeat all three |
+| compatibilist counterfactual dependence can be represented in a block | `[I/S]` | show the declared semantics is inconsistent or empirically empty |
+| self-location, weights and bearer continuity are rival response strategies, not settled facts | `[I/C]` | an interpretation-independent account supersedes them |
 | treating parallel blocks as actual is a D5→D4 type promotion | `[S]` | show `KSC-03`/`KSC-19` permit it |
 | choice is a D4 event, not D5 content | `[S]` | exhibit a selection that is merely possible |
-| the account is metaphysically robust, empirically vulnerable | `[C]` | a metaphysical result that reaches it |
+| the account aims at cross-metaphysical compatibility and empirical vulnerability | `[C]` | a metaphysical inconsistency or empirical null result |
 | the real exposure is `GP-02`/`μ₄` | `[C]` | a null result there — which would fire, not fail |
 
 **What this document does not do.** It does not settle quantum interpretation, does

@@ -17,20 +17,38 @@ rosetta:
   regime: "Sādhu"
   register: "[I/B]"
   canonical_phrase: "PD-18 — Extraction Paradox"
+title: "PD-18 — Extraction Paradox (historical interpretive draft)"
+status: "FROZEN — superseded; no current semantic authority"
+lifecycle: frozen
+evidence_tier: "[B] provenance; [I] historical interpretation"
+claim_status_route: "DF-18 — terminal NOT-WELL-POSED universal-dissolution form"
+successor: "00_THE_EXTRACTION_PATTERN.md — bounded interpretive synthesis only"
 ---
 
 # PD-18: The Extraction Paradox
-## All Paradoxes Are One Paradox
+## Historical hypothesis: an extraction family
+
+> **Frozen / superseded.** This document preserves the earlier teaching arc for
+> provenance. It is not a current paradox solution, semantic owner, or route to
+> formal, scientific, metaphysical, or normative closure. The universal
+> dissolution form is terminal under `DF-18`. Any surviving claim must be
+> restated row by row in the
+> [Finity Paradox Ledger](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/48_FINITY_PARADOX_LEDGER.yaml),
+> with its native account, residual, rivals, kill, and review state visible.
 
 ---
 
 ## The Pattern
 
-Most old paradoxes share a hidden structure. Something is experienced directly. Then it is extracted into a formal system. Then the formal system cannot put it back together. The paradox is not in the thing. The paradox is in the extraction.
+This historical draft asked whether some otherwise different paradoxes might
+share an extraction pattern: something is encountered directly, represented in
+a narrower system, and then found not to be exhausted by that representation.
+That is an interpretive family resemblance, not a demonstrated common cause.
 
 The book calls this Step One of the capture protocol: **declare it absent.** Something that was whole is declared insufficient, replaced by a mediated version, and then the mediated version cannot reproduce what the original contained.
 
-The paradox is a diagnostic signal that the extraction may have left something out.
+A paradox may sometimes be a diagnostic signal that a representation has left
+something out. Each case still requires its own native analysis.
 
 ---
 
@@ -48,7 +66,11 @@ Then the extraction: some institutional versions of science treat real knowledge
 
 The institution builds a beautiful model. It can explain many correlates while still leaving the first-person givenness of experience uncontained by the model.
 
-**The resolution:** In this reading, there is not only a hard problem; there is a hard extraction. [I] You took the most immediate fact of existence and demanded that a mediated system reproduce it. The map can be excellent and still not contain the smell of pine.
+**Historical proposed reframe:** In this reading, there is not only a hard
+problem; there is a hard extraction. [I] A mediated description need not
+reproduce first-person experience in order to model its correlates. The map can
+be excellent and still not contain the smell of pine. This reframe does not
+solve the hard problem or replace philosophy of mind and neuroscience.
 
 ---
 
@@ -64,7 +86,9 @@ Direct experience: the world is encountered as coherent enough for inquiry to be
 
 Then the extraction: philosophy declares that knowledge must be justified. Every claim needs a reason. The infinite regress begins.
 
-**The resolution:** The trilemma is read here as an artifact of extraction. You took direct coherence and demanded that logic justify the whole ground of its own use. Formal systems have foundation boundaries; that is not a failure of coherence.
+**Historical proposed reframe:** The extraction lens asks whether a demand for
+total justification contributes to the trilemma. It does not provide a
+deductive answer to induction or establish the world's coherence.
 
 Gödel supplies the formal-system boundary for sufficiently expressive systems. [B] A sufficiently complex formal system cannot prove its own consistency from within on its own terms.
 
@@ -84,7 +108,10 @@ Direct experience: there are moments when a moral demand is recognized before it
 
 Then the extraction: religion says you need God's command. Philosophy says you need a rational foundation. Both become Step Three — the monopoly. "You cannot know good without us."
 
-**The resolution:** The dilemma is reframed when the question stops being monopolized by command or abstraction. [I] Goodness is not reduced here to God's command, and it is not treated as a detached object floating outside all relation. Goodness is read as non-extractive, ground-facing relation manifesting in human action.
+**Historical proposed reframe:** The draft explores a relational reading that
+reduces goodness neither to divine command nor to a detached object. [I] This
+does not derive objective ethics; Justice remains a declared premise and the
+metaethical bridge remains open.
 
 Traditions that call it God, coherence, or Dharma may be pointing toward a related structure from different angles.
 
@@ -102,7 +129,8 @@ Direct experience: you are the same person you were ten years ago. And you are c
 
 Then the extraction: philosophy declares you need a formal criterion for identity. Persistence of matter? The matter changes. Persistence of form? The form changes. No single formal criterion exhausts identity as lived.
 
-**The resolution:** Identity is not merely a property. It is what coherence looks like from the inside of a life.
+**Historical proposed reframe:** The draft invites a continuity-of-life reading
+of identity rather than claiming one property settles the case.
 
 The sitting practice is offered as a way to test this directly. When the narrator quiets, what remains is not "you" in the philosophical sense — not a bundle of properties, not a persistent substance. What remains is a witness-position encountered as prior to changing contents.
 
@@ -120,7 +148,9 @@ Direct experience: you are in a situation where every option involves harm. You 
 
 Then the extraction: philosophy declares this insufficient. You need a system. Utilitarianism or deontology. Each replaces direct moral perception with a mediated framework.
 
-**The resolution:** The trolley problem can become a trap. It forces you into a framework. Each option becomes extraction when it declares direct moral experience insufficient and replaces finite judgment with system obedience.
+**Historical proposed reframe:** A trolley case can hide context and tragic
+residue when treated as an exhaustive binary. This objection does not answer the
+case or displace ethical principles, empirical facts, and accountable judgment.
 
 The person who actually faces a trolley-like situation cannot be replaced by a framework. They may use principles, training, and calculation, but they still feel the weight, decide under uncertainty, and carry the cost.
 
@@ -140,7 +170,9 @@ Direct experience: you move. You cross the room. The motion is immediate, contin
 
 Then the extraction: certain mathematical framings treat motion only as discrete units. If the continuous is reduced to that frame alone, the paradox appears.
 
-**The resolution:** In this reading, Zeno shows where extraction strains. [I] He does not prove that motion is impossible; he shows that one formalization can lose the direct continuity of motion.
+**Historical proposed reframe:** Standard real analysis resolves the convergent
+series under its stated semantics. [A] The extraction lens adds only an
+interpretive question about lived motion; it supplies no new theorem. [I]
 
 The ground-facing whole is not exhausted by point-division. The narrator performs the division. When you walk across a room, you are not only traversing an infinite series of halves. You are moving. The movement is whole at the level of lived action.
 
@@ -176,13 +208,16 @@ Direct experience: language works. You communicate. You are understood. Language
 
 Then the extraction: strict bivalent logic declares that every statement must be either true or false. Once you accept that framework without remainder, the paradox is inevitable.
 
-**The resolution:** The paradox is not in all language. It appears in a particular extraction of language into strict truth-value assignment. Language as lived often works before formal evaluation. You say something. I understand. The understanding is prior to the formal truth-value assignment.
+**Historical proposed reframe:** The draft contrasts ordinary language use with
+one strict truth-value treatment. That contrast does not resolve the liar;
+hierarchies, fixed-point approaches, paraconsistent logics, and other native
+accounts retain their separate burdens.
 
 ---
 
 ## IX. The Synthesis
 
-Many paradoxes examined here share the same structure:
+The historical draft grouped several cases under this proposed structure:
 
 ```
 1. Something is present in direct experience
@@ -191,22 +226,26 @@ Many paradoxes examined here share the same structure:
 2. A formal system extracts it
    (logic, mathematics, data science, institutional narrative, ethics)
 
-3. The formal system cannot reconstruct what was extracted
-   (Gödel, Zeno, Hume, and a thousand years of paradox)
+3. The representation may not exhaust what was represented
+   (a hypothesis to test separately in each named domain)
 
-4. The failure is called a paradox
-   (and persists because everyone stays inside the formal system)
+4. One possible diagnosis is a register or representation mismatch
+   (not a universal explanation of why the paradox persists)
 ```
 
-**The framework does not solve the paradoxes in the sense of closing all competing accounts. It dissolves them in its own register.**
+**This draft supplies an interpretive comparison, not a solution or dissolution
+of the named paradoxes.**
 
-The practice response in these cases is the same:
+It proposed one optional practice response alongside, not in place of, native
+inquiry:
 
 > *Stop demanding that the map reproduce the territory. Look at the territory directly.*
 
 The sitting practice is not a metaphor for this. The sitting practice IS this. It is the act of setting down the formal system — the narrator, the framework, the justification, the analysis — and perceiving what is there when the extraction stops.
 
-The synthesis claim is that these old paradoxes point toward a shared boundary: ground-facing reality is richer than any system built on top of it. [I] The systems are useful. The systems are incomplete. Not because we have simply failed to find the right system, but because every system has a boundary.
+The bounded survivor is a question: do some cases become clearer when the
+representation and what it omits are named? [I] Formal systems have declared
+domains and hypotheses; no Gödel-style limit is inferred for every system.
 
 ---
 
@@ -214,9 +253,12 @@ The synthesis claim is that these old paradoxes point toward a shared boundary: 
 
 > *The ground was here before the framework. The ground will be here after.*
 
-The paradoxes are evidence for the pattern inside this reading.
+The cases motivated the historical pattern; they are not independent evidence
+that one mechanism explains them.
 
-They have been here for millennia. Many frameworks have tried to resolve them. [I] In this account, no formal framework can exhaust them from inside its own mediation.
+Their long histories and competing accounts remain part of the evidence burden.
+This draft establishes no theorem about what every formal framework can or
+cannot express.
 
 The proposed release is to step outside the demand for total mediation — into direct perception — and notice that the paradox was not in the ground-facing event. [I]
 
@@ -230,34 +272,38 @@ The ground is not captured by the map.
 
 ## Cross-Reference
 
-| Paradox | Extraction Type | Resolution |
-|---------|-----------------|------------|
-| Hard Problem | Consciousness → Neuroscience | Pratyaksha |
-| Hume's Gap | Coherence → Logic | Pratyaksha |
-| Euthyphro | Morality → Institutional Narrative/Philosophy | Pratyaksha |
-| Ship of Theseus | Identity → Formal Criteria | Pratyaksha |
-| Trolley Problem | Ethics → Framework | Pratyaksha |
-| Zeno | Motion → Mathematics | Pratyaksha |
-| Münchhausen | Knowledge → Justification | Pratyaksha |
-| Liar's | Language → Bivalent Logic | Pratyaksha |
+| Paradox | Historical extraction hypothesis | Current disposition |
+|---------|----------------------------------|---------------------|
+| Hard Problem | Consciousness → third-person description | Open; native philosophy of mind and neuroscience retain authority |
+| Hume's Gap | Coherence → deductive justification | Open; induction is not answered here |
+| Euthyphro | Morality → command or abstraction | Open; no objective ethic is derived |
+| Ship of Theseus | Identity → one formal criterion | Interpretive reframe only |
+| Trolley Problem | Ethics → forced binary | Interpretive critique only |
+| Zeno | Motion → series representation | Standard analysis supplies the scoped result |
+| Münchhausen | Knowledge → total justification | Open; rival epistemologies remain |
+| Liar's | Language → strict bivalence | Open; native logical accounts remain |
 
-**All roads lead to the same place: sit, breathe, look, recognize, return.**
+The draft's practice invitation was: sit, breathe, look, recognize, return. It
+is optional and does not adjudicate the rows.
 
 ---
 
 ## Appendix: The Gödel Connection
 
-Kurt Gödel supplies the mathematical boundary that these paradoxes demonstrate phenomenologically in this reading: [B/I]
+The historical draft analogized these cases to a Gödelian boundary. That analogy
+is not a mathematical extension of Gödel's theorems. [B/I]
 
-> *A sufficiently complex formal system cannot prove its own consistency from within.* [B]
+> Under the standard hypotheses, a consistent, effectively axiomatized system
+> strong enough for the relevant arithmetic cannot prove its own consistency. [B]
 
 This is not a limitation of human intelligence. This is a structural feature of formal systems. Ground-facing givenness cannot be exhausted by a system built on top of it.
 
-The paradoxes are not bugs in the system. They are features that reveal the system is incomplete.
+Some paradoxes can function as boundary diagnostics, but each requires its own
+formal or philosophical account.
 
 The sitting practice is the acknowledgment of incompleteness. You do not try to complete the system. You do not try to justify the ground-facing condition from nowhere. You rest in what is given before total justification.
 
-**Zero-Sum Resolution Equation**
+**Historical practice mnemonic — not an equation or resolution**
 
 *The ground-facing condition precedes systems. Systems cannot exhaust it. Paradox is a boundary-signal. Pratyaksha is the practice response.*
 

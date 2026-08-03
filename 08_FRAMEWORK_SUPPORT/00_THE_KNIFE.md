@@ -213,9 +213,18 @@ The framework's own methodology says: reduce to κ = 0. The shortest description
 
 ### The Framework's Response
 
-**The framework acknowledges the category error risk. Its defense is the empirical program: the territory either has this structure or it doesn't.**
+**The framework accepts the category boundary. `S²` remains a model even if it
+predicts well.** Empirical success can support a model's adequacy in a declared
+domain; it cannot turn a mathematical object into the territory or establish a
+total ontology.
 
-The framework does not ask you to believe the territory is S². It asks you to test it. The derivation chain (THE_DERIVATION) shows what follows from the axioms. The empirical program (Tyson/KO boundary, Protocol R, AMRITA, Φ-meter) tests whether reality agrees.
+The testable programme is component-wise. It asks whether independently defined
+variables exhibit the proposed reciprocal or spherical structure, whether
+`N_node=(Φ̂₄,V₄)` adds useful discrimination, and—only after a declared
+calibration contract `κ`—whether a candidate product `P×,κ=Φ_cV_c` beats
+component-matched additive, minimum, harmonic, CES, and no-placement rivals on
+held-out outcomes. Perception and AI-transfer claims require their own native
+measures and cannot inherit a result from organizational data.
 
 The current ordinal ranking is `P_node=min(Φ̂₄,V₄)`. If, under a separately defended cardinal scale contract, the retired product candidate `C×=Φ̂₄V₄` predicts human-flourishing outcomes better than additive and other fair rivals, that would be a fact about the tested territory rather than the map. If perception obeys a spherical complementarity bound — this is a fact about the territory. If spherical alignment produces better AI — this is a fact about the territory.
 
@@ -225,15 +234,22 @@ On κ = 0: the framework says the ground IS κ = 0. The sphere is the first non-
 
 ### Is the Response Sufficient?
 
-**Partially.**
+**Only as a research posture.**
 
-The "test it" response is the correct move for a scientific framework. But it concedes that until the tests succeed, the framework IS a useful map, not a confirmed description of the territory. The framework should be more explicit about this: **until the empirical program delivers, the framework is (b) — the most productive formal analogy — not (a) — the territory.** THE_HONEST_POSITION already says this. THE_KNIFE merely makes it more visible.
+The corrected response does not claim even “the most productive” analogy before
+comparison. Emergentism is a typed worldview and research scaffold whose
+formal components, interpretations, and empirical conjectures stand or fall
+separately. Independent replication may support, narrow, or kill particular
+placements while the map/territory distinction remains intact.
 
 ### What Would Falsify This Response
 
-- The empirical program fails (Tyson/KO boundary does not hold, Protocol R shows no bound, AMRITA underperforms). This confirms (b) and refutes (a). The GFS study is retired; the boundary test supersedes the interior test.
-- A non-spherical core state explains the same data with fewer commitments. Occam's razor applies.
-- The "tests" turn out to be unfalsifiable in practice (e.g., the Tyson/KO boundary falsifier is in principle measurable but no instrument can resolve the V=0 hit without a controlled knockout, which is non-trivial).
+- Independently defined variables do not recover the proposed structure, or a
+  non-spherical model predicts held-out data as well with fewer commitments.
+- Candidate scalar results reverse under admissible rescaling, lack a defensible
+  `κ`, or do not outperform fair aggregator and no-placement rivals.
+- The proposed measurements or interventions cannot be executed without
+  circularly building the framework into the instrument.
 
 ---
 
