@@ -202,10 +202,12 @@ This is chosen practice, not a perennial law discovered in the chart.
 
 ## 8. Dasein as an optional translation `[I]`
 
-*Dasein* names the finite, situated bearer for whom a world is disclosed and
-action matters. It can illuminate the human condition, but Emergentism neither
-claims to exhaust Heidegger nor requires the term. “Person,” “finite agent” and
-“bearer” remain adequate where clearer.
+Capital **Dasein** names all that can coherently and consistently exist across
+possible worlds, registers, and models. A **situated dasein** names the finite actual
+bearer for whom part of that whole is disclosed and action matters. This is a
+deliberate Emergentist widening of the familiar human-centered term; it does
+not claim to exhaust Heidegger. “Person,” “finite agent,” “bearer,” and
+“coherent-consistent whole” remain adequate where clearer.
 
 The D0→D6 scaffold is a reconstruction order of descriptions, not a proof of
 how a person or cosmos historically came to be.

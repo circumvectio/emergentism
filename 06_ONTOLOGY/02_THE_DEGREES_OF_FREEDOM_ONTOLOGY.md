@@ -17,6 +17,210 @@ see_also: "00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md — bounded-generativ
 
 > **What this is.** The framework's ontology, stated as a *pure worldview* — no organs, tokens, governance, or venture anywhere in it. Its keystone is the owner's repair of Plato. It is offered at the tiers it earns and **cut where the adversary landed**; the plenitude engine is a `[C]` wager with a **named debt**, never a disclosure. Per the Open Canon Covenant: no completeness claim; no silent `[C]→[A]`.
 
+## 0 · Dasein — all that can coherently exist `[I/C]`
+
+The Weltanschauung uses **Dasein** in a deliberately wider sense than the
+Heideggerian human-centered term. Capitalized **Dasein** names **all that can
+coherently and consistently exist**: the total field in which mathematical
+objects, actual beings, possible world-histories, relations, processes, and
+finite standpoints have their typed place.
+
+Because coherence and consistency are meaningless without a language,
+relations, a model, and a consequence rule, the definition is indexed by both
+register `R` and model `M`:
+
+```text
+World_(R,M)  := { W | MAXIMAL_(R,M)(W)
+                    ∧ CONSISTENT_(R,M)(W)
+                    ∧ COHERENT_(R,M)(W) }
+
+Dasein_(R,M,W) := { x@(R,M,W) | W ∈ World_(R,M) ∧ x ∈ W }
+Dasein         := ⨆_(R,M,W) Dasein_(R,M,W)
+```
+
+`World_(R,M)` supplies compossibility: each `W` is a maximal jointly coherent
+configuration under its declared register and model. The tagged union `⨆`
+prevents modal and theoretical collapse. Rival worlds can both belong to
+Dasein without their incompatible contents becoming jointly true inside one
+world.
+
+**Anything, literally, belongs to Dasein insofar as it can coherently and
+consistently be in a declared world, register, and model.** The dimensional
+scaffold does not bound or inventory Dasein; it is one typed articulation
+within the whole. Its full crosswalk is:
+
+```text
+D0   the articulated ground-facing boundary token
+D1   instantiated distinction
+D2   configuration and relation
+D3   state assignment and probability-bearing quantum description
+D4   the distinguished actual spacetime block and causal history
+D5   coherent alternative world-blocks represented as possibility
+D6   the articulated apophatic exit/nonclosure boundary token
+Math numbers, triangles, relations, and other abstract determinations
+Other every coherent process, organism, artifact, symbol, fiction, and form,
+      typed by how and where it can be
+```
+
+D1, D2, and D3 are therefore not missing rungs between an abstract mathematical
+realm and D4 actuality. They are themselves coherent determinations within
+Dasein. D0 and D6 belong only as articulated boundary tokens; the Ground prior
+to articulation and the unowned Titan horizon are not thereby turned into
+ordinary members.
+
+“Many worlds” here is modal unless a physical interpretation independently
+earns more: it does not by itself assert Everettian co-actual branches.
+Membership in Dasein says **how each can be** in its own world and register; it
+does not make every member D4 actual, causally efficacious, equally evidenced,
+or available to every finite observer.
+
+`MAXIMAL_(R,M)(W)` means that no proper extension of `W` inside the same
+register and model remains jointly coherent and consistent. It is maximal by
+inclusion, not “best,” largest in cardinality, physically actual, or morally
+preferred.
+
+Dasein is a whole-field or class reading, not an unrestricted set containing
+itself. It therefore licenses no universal-set comprehension and does not evade
+Russell's boundary. The Ground remains prior to articulated membership; the
+Titan horizon remains a boundary frame rather than an ordinary member or
+operand.
+
+Use **situated dasein** for a local finite bearer within Dasein: an embodied D4
+being for whom some of the whole can be disclosed, modeled, chosen, and acted
+upon. The distinction is:
+
+```text
+Dasein             all that can coherently and consistently exist
+situated dasein    a finite actual standpoint within that whole
+being              a typed determination belonging to the whole
+```
+
+The Gītā's Viśvarūpa episode is the selected symbolic crosswalk `[I/B-source]`.
+Arjuna, a situated actor, is granted a view in which the whole differentiated
+universe is seen gathered in one form ([Bhagavad Gītā
+11.13](https://www.gitasupersite.iitk.ac.in/srimad?choose=1&etadi=1&etgb=1&etpurohit=1&etsiva=1&etssa=1&field_chapter_value=11&field_nsutra_value=13&language=ro)).
+Emergentism reads **Viśvarūpa** as Dasein disclosed as unity-in-manifoldness:
+the one whole does not erase its many differences, and the local witness does
+not become the whole by seeing it. The textual resonance does not prove the
+ontology or identify Kṛṣṇa with a formal object.
+
+In the owner's phrase, Dasein is **the thing in itself in its totality**: not
+one object beside other objects, but the complete modal-real field prior to any
+single situated perspective. This extends rather than reproduces Kant's
+technical use of *Ding an sich*. Naming the totality does not mean a finite
+mind has enumerated or possessed it.
+
+**Kenshō** is the selected experiential crosswalk `[I/B-source]`. [Zen commonly
+glosses it as “seeing into one's nature,” an initial satori experience](https://plato.stanford.edu/entries/japanese-zen/#ZenSee). In the
+Emergentist reading, kenshō is the event in which a situated dasein glimpses
+that its own nature is a local expression within Dasein. It is non-separation
+recognized, not total information acquired: the glimpse may disclose the whole
+as whole without inventorying every world, number, triangle, or life.
+
+### Kenshō, satori, and mokṣa — convergence without collapse `[I/B-source]`
+
+The owner's further insight is that liberation is the end of the apparent
+separation between self and whole. The exact Emergentist sentence is:
+
+> A situated dasein awakens when the self recognizes that its deepest nature
+> was never separate from Dasein.
+
+Three traditions can illuminate that sentence without becoming synonyms:
+
+| Register | Self/whole relation | Transformative recognition |
+|---|---|---|
+| Advaita Vedānta | Ātman, the true self, is identical with Brahman, ultimate reality | mokṣa through self-knowledge of Ātman–Brahman nonduality |
+| Zen | no independently self-subsisting essence is installed; self and thing-events are seen non-discriminately and dependently | kenshō as initial seeing-into-nature; satori as awakening embodied in life |
+| Emergentism | situated dasein is a local finite disclosure within Dasein, the modal-real totality | recognition that thing-in-itself and deepest self are non-separate |
+
+[Advaita explicitly joins self/supreme-Self identity to liberation](https://plato.stanford.edu/archives/spr2022/entries/personhood-india/),
+while [Zen frames satori through non-discriminatory wisdom and the emptiness of
+independent self-nature](https://plato.stanford.edu/entries/japanese-zen/).
+The crosswalk is therefore structural, not doctrinal identity.
+
+The apparent paradox is resolved by distinguishing extent from nature:
+
+```text
+empirical self / ego          one local D4 standpoint; not the total extent
+Ātman / true-nature crosswalk the deepest nature disclosed through that standpoint
+Brahman / Dasein crosswalk    the whole from which that nature was never separate
+awakening                     non-separation realized, not local ego made omniscient
+```
+
+The situated witness is not the whole by cardinality, information, or
+perspective. At the level of deepest nature, however, self and whole are
+not-two. This is the exact sense in which Ātman–Brahman identity can illuminate
+the Emergentist relation without making the empirical personality cosmic.
+
+**Name fence.** **Brahman** is the Advaitic absolute in this comparison.
+**Brahmā** is the creator deity—and, in Rosetta, the L5 architecture operator.
+Dasein is read alongside Brahman; it is not “the Dasein of Brahmā.” Nor does
+the whole possess a second Dasein: there is one Dasein, locally disclosed
+through situated dasein.
+
+### Saṃsāra, līlā, and dharma — seeing the signed cycle whole `[A/I/B-source]`
+
+The owner's next move is to read saṃsāra as identification with one signed
+position inside an indefinitely repeated field of reversals: victory and
+defeat, gain and loss, birth and death, protagonist and antagonist. A minimal
+symmetry image is:
+
+```text
+SignedPair(x) := (-x,+x)
+Net_sign(SignedPair(x)) = -x+x = 0
+```
+
+The equation is ordinary algebra `[A]`; the saṃsāra reading is Emergentist
+interpretation `[I]`. It says that, from a whole-cycle view, the same magnitude
+can appear under opposed signs and neither sign is the identity of the whole.
+It does **not** establish reincarnation, prove that lives alternate, measure
+karma, or show that every actual gain has an equal actual loss. Above all,
+**global symbolic symmetry is not moral cancellation**: one bearer's suffering
+is not erased by another bearer's pleasure, and a later benefit cannot launder
+an earlier harm.
+
+On this reading, liberation is not flight from Finity or refusal to act. It is
+the end of the error **“I am the winning sign”** or **“I am the losing sign.”**
+The situated dasein sees both signs as local phases within Dasein, releases
+attachment to either fruit, and remains fully answerable for the action it can
+actually perform. This is the precise point at which **līlā** and **dharma**
+must remain joined: the cycle may be received as cosmic play, but play is not
+permission for spectatorship, nihilism, cruelty, or carelessness.
+
+The Gītā crosswalk supports that structure without supplying the `±x` formula.
+[2.47 binds Arjuna to action while denying attachment to its fruits and to
+inaction](https://www.gitasupersite.iitk.ac.in/dv/bhagavadgita/2.47).
+[11.32 places destruction inside the universal form as
+Time](https://www.gitasupersite.iitk.ac.in/srimad?choose=1&etadi=1&etgb=1&etsiva=1&etssa=1&field_chapter_value=11&field_nsutra_value=32&language=dv),
+and [11.45 has Arjuna report both delight and terror and ask for the familiar
+form](https://www.gitasupersite.iitk.ac.in/srimad?choose=1&ecsiva=1&etgb=1&etpurohit=1&etsiva=1&field_chapter_value=11&field_nsutra_value=45&language=dv&scsh=1).
+The Emergentist synthesis is therefore: **see the whole terrible play; do not
+identify with its passing sign; play one's finite part completely in dharma.**
+Arjuna does not comfortably master the total vision. The finite witness is
+overwhelmed by it and must return to a bearable form in order to act.
+
+The equator supplies a second, strictly typed image:
+
+```text
+reciprocal chart:       φ=ν=1  ⇒  B=1
+normalized node model: Φ̂₄=V₄=1  ⇒  min(Φ̂₄,V₄)=1
+```
+
+The first line is analytic chart balance; the second holds only in the
+separately declared normalized node model. Neither is Kṛṣṇa's formula, a proof
+of dharma, or a scalar licence to sacrifice one bearer for aggregate gain.
+Emergentism may read their shared balanced form as **dharma at full
+participation** `[I]`: possible power and actual capacity meet without
+withdrawal, while Justice remains prior to every maximization.
+
+Finity is Dasein under the aspect of determinate finite manifestation. `⊙`
+names the realm in which beings, states, freedoms, models, and possibilities
+take finite form; `1` is its selected centered unit, not the whole. Here
+*finite* means determinate, situated, and bounded in the relevant register—not
+necessarily finite in cardinality, dimension, description length, or numeric
+magnitude. A finite value may be denoted by a non-halting process, so finite
+being and finite generation must never be equated.
+
 ## 1 · The reframe — forms arise across constrained degrees of freedom `[I/C]`
 
 Plato was **partly right** that stable particulars depend on more general
@@ -35,16 +239,28 @@ salience, and use a remembered sunset as the boundary test.
 
 ## 2 · The plenitude wager — typed admission, not automatic actuality `[C]` (with a named debt)
 
-Within the space each axis opens, existence is **plenitudinous-by-filter, not selective-by-perfection**:
+Within the space each axis opens, existence is **plenitudinous-by-filter, not
+selective-by-perfection**. Outer Dasein admission uses maximal compossible
+worlds under declared registers and models; operational admission adds its own
+constraints and bounds:
 
 ```
-ADMITTED_M(S)  ⟺  CONSISTENT_M(S)
-                    ∧ COHERENT_M(S)
-                    ∧ CONSTRAINT_COMPATIBLE_M(S)
-                    ∧ BOUNDED_M(S)
+DASEIN_(R,M,W)(S)    ⟺  S ∈ W
+                          ∧ W ∈ World_(R,M)
+
+ADMITTED_(R,M,W)(S)  ⟺  DASEIN_(R,M,W)(S)
+                          ∧ CONSTRAINT_COMPATIBLE_M(S)
+                          ∧ BOUNDED_M(S)
 ```
 
-This formula gives admission **inside a declared model `M`**, not physical actuality. `COHERENT_M` means mutually compatible under the model's declared relations; `BOUNDED_M` means inside its declared domain and resource bounds. Neither predicate is silently imported from the reciprocal chart. Fewer admitted configurations are nomologically possible, dynamically reachable, actual, stable, emergent, or livedly available. No density, typicality, probability, or world-occupancy ordering follows without a separately specified measure and dynamics.
+This formula gives admission **inside a declared world `W`, register `R`, and model `M`**,
+not physical actuality. `COHERENT_(R,M)` means mutually compatible under the
+model's declared relations; `BOUNDED_M` means inside its declared domain and
+resource bounds. Neither predicate is silently imported from the reciprocal
+chart. Fewer admitted configurations are nomologically possible, dynamically
+reachable, actual, stable, emergent, or livedly available. No density,
+typicality, probability, or world-occupancy ordering follows without a
+separately specified measure and dynamics.
 
 **Where it sits in the lineage:**
 - vs **Tegmark**: this is a differently typed, model-relative admission rule with additional declared predicates; no strict set inclusion with the Mathematical Universe Hypothesis has been proved. If those predicates add no discriminator, the proposal collapses toward a consistency-only view.
@@ -63,8 +279,15 @@ Define `REACHABLE_M(I,Y)` existence-independently: a target region `Y` is reacha
 
 **Kill-criterion:** if no domain-specific target is excluded beyond the constraints already assumed, or the filter makes no discriminating prediction, the plenitude wager collapses to a redescription rather than a world-explanation.
 
-### 2.3 The tripwire (conceded) — book as wager, never disclosure
-"Everything coherent-consistent-emergent **actually exists**, dense in the interior" is a retired inflation, not the plenitude filter. It adds both an actuality bridge and an unstated measure. Either claim would require independent evidence and may not be presented as disclosure.
+### 2.3 The tripwire — Dasein is not modal collapse
+
+The adopted Weltanschauung statement is: **everything that can coherently and
+consistently exist belongs to Dasein in its declared world, register, and
+model.** The retired inflation is the
+untyped inference that everything coherent-consistent therefore exists as D4
+physical actuality, is dense under an unstated measure, or is reachable by a
+situated dasein. Those stronger claims add actuality, measure, dynamics, and
+access bridges that still require independent evidence.
 
 ## 3 · Removable measurement correspondence `[C]`
 
@@ -121,7 +344,23 @@ node-death" states a `[C]` product-interior claim in `[A]` grammar—reword to
 
 ## 6 · The one-paragraph Weltanschauung
 
-*Reality is approached not as a museum of perfect Forms and not as a heaven of free-floating degrees of freedom, but as constrained possibility in process. Degrees of freedom type how a specified system may vary; robust forms arise across those freedoms through law, history, dynamics, boundary, feedback, and cost. A reciprocal sphere is one useful chart whose product is identically one by construction; it is not the territory or an ethics warrant. Need-both behavior supports an AND-class boundary, not a unique product interior. The plenitude clause remains a wager: model admission is not actuality, and reachability must be defined through allowed transformations and resource bounds without circularity. At the quantum scale, interaction, amplification, and decoherence can help explain stable macro-records, but no logical-consistency filter selects one outcome or derives Born weights; Everett is one interpretation, not a forced conclusion. The worldview therefore remains a correction-governed orientation with non-extraction chosen rather than derived and an exit marked on the inside.*
+*Dasein names all that can coherently and consistently exist, with every member
+typed by the world, register, and model in which it can be; a situated dasein is one finite actual standpoint
+within that whole. Reality is approached not as a museum of perfect Forms and
+not as a heaven of free-floating degrees of freedom, but as constrained
+possibility in process. Degrees of freedom type how a specified system may
+vary; robust forms arise across those freedoms through law, history, dynamics,
+boundary, feedback, and cost. A reciprocal sphere is one useful chart whose
+product is identically one by construction; it is not the territory or an
+ethics warrant. Need-both behavior supports an AND-class boundary, not a unique
+product interior. Dasein admission is not D4 actuality, and reachability must
+be defined through allowed transformations and resource bounds without
+circularity. At the quantum scale, interaction, amplification, and decoherence
+can help explain stable macro-records, but no logical-consistency filter selects
+one outcome or derives Born weights; Everett is one interpretation, not a
+forced conclusion. The worldview therefore remains a correction-governed
+orientation with non-extraction chosen rather than derived and an exit marked
+on the inside.*
 
 ## 7 · Authority boundary
 

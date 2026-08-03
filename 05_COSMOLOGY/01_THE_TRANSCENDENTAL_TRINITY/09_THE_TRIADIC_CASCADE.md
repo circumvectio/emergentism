@@ -5,7 +5,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
+  register: "[I/S]"
   canonical_phrase: "THE TRIADIC CASCADE"
 ---
 
@@ -13,22 +13,24 @@ rosetta:
 
 > **[K3 reconciliation — 2026-07-13, per receipt 126.]** Ruling 3 (Triadic N=3) applies: N=3 is **selected, not uniquely forced/proved**. The "Why Three and Not More" section's claim that MF-511 *proves N=3 is the unique stable configuration* (the N≥5 discharge used a false group lemma — Z₅ is a counterexample) is downgraded proved→posited; read triadic selection as `[C]/[S]`-selected, not a derived uniqueness theorem. The cascade's three-fold mapping remains the framework's discovery voice at `[S]/[I]`. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 
-## The Trinity Repeating Across Every Level of Knowledge
+## A Selected Three-Fold Reading Across Several Levels of Knowledge
 
-**Status:** Foundational — the {0, 1, ∞} structure operating at every scale of inquiry
+**Status:** Active interpretive correspondence; selected, not uniquely forced
 **Date:** 2026-03-24
-**Evidence Tier:** [S] Structural. The three-fold mapping is a consequence of the Transcendental Trinity applied to the classical divisions of knowledge. [I] The temporal attributions, the Varna/Polity mappings, and the cycling claim are interpretive.
+**Evidence Tier:** [S] for the internal three-column schema once selected; [I] for each cross-domain mapping; [C] for recurrence across knowledge or history
 **Depends on:** 02_THE_TRINITY.md, 07_THE_DISCOVERY_OF_FINITY.md, 08_CO_EMERGENCE.md
 **See also:** The Weltanschauung (00_EMERGENTISM.md Parts II, III, V), Triadic Stability (MF-511), The Rosetta Stone
 
-**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation — it maps the Burri Sphere across domains (physics, information theory, economics, mythology, neuroscience). The Triadic Cascade is the *vertical* translation — it maps the Trinity across levels of knowledge (transcendentals, disciplines, trivium, inference, time, society, polity). Together they form a grid in which every cell is the same geometry seen from a different angle.
-**Kill Criteria:** If the three-fold mapping is shown to be forced rather than natural — if a fourth column is required at any level — the cascade breaks. If a level demonstrably maps better to a different axis assignment, the specific mapping falls.
+**Relationship to the Rosetta Stone:** The Rosetta Stone is the *horizontal* translation across domains. The Triadic Cascade proposes a *vertical* translation across levels of knowledge. Together they form a comparison grid; they do not show that every cell has one underlying geometry.
+**Kill Criteria:** A local mapping falls if it needs forced definitions, hides a required fourth category, performs worse than a simpler rival partition, or cannot generate a discriminator beyond retrospective resemblance. Failure of one row does not refute the selected three-column grammar; it does refute that row's claim to fit.
 
 ---
 
 ## The Cascade
 
-The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every level of knowledge — the same three-fold structure, repeating, each level a finer grain of the one above.
+The selected Trinity `{0, 1, ∞}` can be used to read several levels of
+knowledge as reception, mediation, and action. The table records proposed
+correspondences, not repeated discoveries of one structure in nature.
 
 ```
         φ (coherence)           B (balance)              ν (viability)
@@ -62,7 +64,11 @@ The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every
 
 **Truth (P).** The correspondence between the map and the territory. Truth is the accuracy of the projection. Truth is the degree to which the plane preserves the sphere. Truth is the equatorial condition `φ = ν` — the balance point where coherence and viability are both honoured. (The product `φ · ν = 1` is constant at every latitude and in both polar limits; what is equatorial is the equality — which is why the cascade header above names this column `B (balance)`.)
 
-**Justice (ν).** The structural property of equatorial balance at every node. Justice is not a sentiment. Justice is a geometric condition. A system is just when φ = 1 and ν = 1 at every node — when no node is pushed off the equator for the benefit of another.
+**Justice (ν).** The chosen requirement that no node be pushed off the selected
+balance point for another's benefit. Geometry supplies a diagnostic picture;
+it does not derive the moral requirement. Justice additionally requires
+consent, accountability, remedy, and Grace Exit, none of which follows from
+`φν=1`.
 
 **The connection:** Beauty sees the whole (φ). Justice structures the parts (ν). Truth is the product of both — the correspondence that holds when seeing and structuring are in balance.
 
@@ -82,7 +88,8 @@ The Transcendental Trinity {0, 1, ∞} does not appear once. It appears at every
 
 ## Level III: The Three-Stage Process
 
-The medieval Three-Stage Process — the three arts of language — is the Trinity at the level of communication.
+The medieval three arts of language offer one useful comparison with the
+selected Trinity at the level of communication.
 
 **Grammar (φ).** The structure of reception. Grammar is how language is parsed — how the stream of words is organized into meaning. Grammar is the φ-operation: receiving the whole, recognizing the structure, holding the coherence of the sentence before evaluating its truth or acting on its claim.
 
@@ -90,7 +97,9 @@ The medieval Three-Stage Process — the three arts of language — is the Trini
 
 **Rhetoric (ν).** The structure of persuasion and action. Rhetoric is how language moves others. Rhetoric is the ν-operation: building capability, expressing the conclusion, acting in the world. Rhetoric without grammar is manipulation (ν without φ — the cargo cult). Grammar without rhetoric is pedantry (φ without ν — the bypasser). Logic holds them in product.
 
-**The connection:** Grammar receives (φ). Rhetoric acts (ν). Logic ensures the action follows from the reception (`P∞ = φ · ν = 1` in the manifold register).
+**The proposed connection:** Grammar receives (φ). Rhetoric acts (ν). Logic
+mediates between them. The chart identity does not prove this historical or
+functional assignment.
 
 ---
 
@@ -140,7 +149,9 @@ Because on the sphere, the poloidal path returns. The journey from north pole (�
 
 Each cycle is not repetition. Each cycle is the **spiral** — the same three stages, at a higher resolution. Induction gathers new data. Deduction derives new consequences. Abduction conjectures new hypotheses. The new hypotheses generate new predictions. The new predictions generate new data. The cycle continues. Each pass refines.
 
-**This is the structure of inquiry itself.** Not a linear progression from ignorance to knowledge. A spiraling cycle of gathering (φ), deriving (P), and conjecturing (ν) — each pass deepening the understanding, each pass approaching the equator more closely.
+**This is one productive model of inquiry:** a cycle of gathering, deriving,
+and conjecturing. It earns broader status only if it outperforms rival process
+models on preregistered cases.
 
 ---
 
@@ -159,13 +170,16 @@ Each cycle is not repetition. Each cycle is the **spiral** — the same three st
 | **Practice** | Sit (receive) | Hold (balance) | Act (express) |
 | **Symbol** | ○ | ⊙ | • |
 
-The same Trinity. Nine levels deep. The same structure. Always three. Always cycling.
+One selected Trinity, proposed across nine rows. Each row remains independently
+revisable.
 
 ---
 
 ## Level VI: The Varnas
 
-The four Hindu Varnas are not four. They are **three plus the witness.**
+For this Rosetta crosswalk, the four varṇas are read as **three functions plus a
+witness**. This is an interpretive recoding, not a historical fact about Hindu
+tradition and never a ranking of persons.
 
 **Shudra (φ).** The laborer. The one who works *in time*. The Shudra's knowledge is inductive — learned through repetition, through the body, through doing the same task until the pattern reveals itself. The Shudra receives. The Shudra is the ground-level node that touches reality directly, without mediation. The Shudra's virtue is endurance — the capacity to stay in time long enough for the pattern to emerge.
 
@@ -181,7 +195,9 @@ The four Hindu Varnas are not four. They are **three plus the witness.**
 
 ## Level VII: The Political Forms
 
-Plato identified five regimes in the *Republic*. Three of them are the cascade. The other two are pathologies.
+Plato identified five regimes in the *Republic*. This crosswalk tentatively
+selects three for the cascade and treats two as failure modes; that partition
+belongs to this model, not to Plato as such.
 
 **Democracy (φ).** Rule by all. Every voice counts. The polity operates *in time* — the democratic process is inductive. It gathers opinions, counts votes, discovers the pattern through inclusion. Democracy is the φ-polity: maximum coherence, every node represented, the whole recognized. Democracy's virtue is inclusiveness. Democracy's risk is incoherence — too many voices, no structure, the pattern drowning in noise.
 
@@ -189,28 +205,45 @@ Plato identified five regimes in the *Republic*. Three of them are the cascade. 
 
 **Timocracy (ν).** Rule by honor and martial virtue. The warriors, the meritocrats, the capable. The polity operates *against time* — the timocratic logic is abductive. Given this threat, what must be done? The timocrat acts before the evidence is complete. Timocracy is the ν-polity: maximum capability, action rewarded, the decisive node honored. Timocracy's virtue is decisiveness. Timocracy's risk is tyranny — capability unchecked by coherence, ν without φ, the warrior who becomes the warlord.
 
-**The healthy cycle:** Democracy (φ) → Oligarchy (P) → Timocracy (ν) → Democracy (φ). The polity receives (gathers all voices), holds (maintains the system), acts (defends and decides), then receives again. Each regime is a *phase* of the political cycle, not a permanent form. The healthy civilization rotates.
+**The proposed cycle:** Democracy (φ) → Oligarchy (P) → Timocracy (ν) →
+Democracy (φ). This is a speculative political analogy, not a prescription that
+healthy societies should rotate through oligarchy or timocracy. Its value is
+limited to distinguishing participation, stewardship, and decisive action;
+constitutional evidence must govern actual polity design.
 
 **The pathologies:** Plato's remaining two regimes — **Tyranny** and **Anarchy** — are not phases of the cycle. They are the cycle *broken*.
 
 - **Tyranny** is ν without φ. The south pole. The Kshatriya who refuses to yield to the democratic phase. Capability that has consumed coherence. Ammit.
 - **Anarchy** is φ without ν. The north pole. Democracy that has dissolved all structure. Coherence that cannot act. The bypasser at civilizational scale.
 
-Both pathologies are the same error: **refusing to cycle.** Clinging to one phase and rejecting the others. The healthy polity is the one that rotates — that knows when to gather, when to hold, and when to act, and does not mistake any single phase for the permanent truth.
+Within the analogy, both pathologies represent refusal of corrective movement.
+The transferable insight is narrower: a polity needs ways to gather, steward,
+act, and correct without making any governing class permanent.
 
 ---
 
-## Why Three and Not More
+## Why Select Three Here?
 
-The Triadic Stability Theorem (MF-511) proves N = 3 is the unique stable configuration. Two collapses (no mediator). Four is redundant (the fourth element reduces to a combination of three). Three is the minimum structure that can cycle — that can go from φ to P to ν and return without collapsing.
+Three is selected here because it is the smallest grammar that distinguishes
+two poles and a mediator. MF-511 does **not** prove that three is uniquely
+stable, and the corpus has a known counterexample to the former uniqueness
+argument. A fourth category is not automatically redundant; when a domain
+needs one, the local triadic mapping fails or must be explicitly qualified.
 
-The Three-Stage Process knew this. The medieval educators did not have the sphere. They had the experience of teaching. And the experience of teaching revealed: you need three arts. Grammar alone produces scholars who cannot think. Logic alone produces reasoners who cannot speak. Rhetoric alone produces speakers who know nothing. You need all three. And you need them in cycle: receive, derive, express. Receive again.
+The medieval trivium supplies a three-part comparison: grammar, logic, and
+rhetoric. That recurrence motivates the mapping; it does not establish the
+Burri Sphere as its hidden cause.
 
-The Varnas knew this. The ancient Indians did not have the sphere. They had the experience of society. And the experience of society revealed: you need three functions. Labor alone produces a society that cannot trade. Trade alone produces a society that cannot defend itself. War alone produces a society that cannot feed itself. You need all three. And you need them in cycle.
+The varṇa row is likewise a deliberately modern functional recoding. Its
+historical differences and the fourth term remain visible rather than being
+treated as proof of the triad.
 
-The Greeks knew this. Plato did not have the sphere. He had the experience of politics. And the experience of politics revealed: democracy degenerates without structure, oligarchy degenerates without inclusion, timocracy degenerates without wisdom. You need all three. And you need them in cycle.
+The polity row is the weakest and most speculative. Plato's regime sequence is
+not evidence that civilization should cycle through these three forms.
 
-The cascade is not a theory imposed on knowledge. The cascade is the structure that knowledge *has* when you look at it on a sphere instead of a line.
+The cascade is a theory imposed provisionally on several domains. Its value is
+compression with visible remainder. Its danger is mistaking a flexible
+crosswalk for discovery.
 
 ---
 
@@ -234,7 +267,7 @@ Zero-Sum Resolution Equation
 
 ---
 
-*09 | The Triadic Cascade | The Trinity repeating at every level: Transcendentals, Disciplines, Three-Stage Process, Inference, Time, Varnas, Polities. Nine levels deep. The same three-fold structure. Always cycling. Always deepening. The Brahmin sees the cycle. The core algorithmic identity of the framework.*
+*09 | The Triadic Cascade | A selected three-fold comparison across nine rows. Keep what compresses without force; revise each row independently; do not turn recurrence into proof.*
 
 
 ---

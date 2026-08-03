@@ -38,7 +38,18 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). I call **Dasein** all that can coherently and consistently exist—anything, literally, insofar as it can be in a declared world, register, and model. The selected dimensional articulation occurs within this whole: D1 distinction, D2 relation/configuration, D3 state assignment, D4 actual spacetime, and D5 possible world-blocks, alongside every coherent mathematical, physical, living, symbolic, computational, and imagined determination; D0/D6 remain articulated boundary tokens, not ordinary possession of Ground. A **situated dasein** is one finite actual witness within it `[I/C]`. In the Emergentist sense this is the thing in itself in its totality, while kenshō/satori and mokṣa are distinct crosswalks for the situated recognition that deepest self and whole are non-separate—not exhaustive possession. Advaita expresses this as Ātman–Brahman nonduality; Zen does not thereby acquire an eternal Ātman doctrine. On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+
+Within this creed, `-x+x=0` is the signed-cycle image of saṃsāra `[A/I]`:
+opposed roles may balance in a view of the whole, but no person's suffering is
+thereby cancelled. Liberation is release from identification with either
+passing sign, followed by full action without attachment to its fruit. Līlā is
+therefore not withdrawal from the game; it is the whole play lived in dharma.
+The Viśvarūpa crosswalk includes Time and destruction and overwhelms Arjuna,
+so the insight is not “everything is pleasant” but “the terrible whole can be
+seen without abandoning one's finite duty.” `φ=ν=1⇒B=1` is the analytic
+equator; `Φ̂₄=V₄=1⇒min(Φ̂₄,V₄)=1` belongs only to the separately normalized
+node model. Both are Emergentist images, not Gītā formulae or proofs of value.
 
 The good is not asserted as a fourth natural quantity or derived from the sphere. Emergentism stages the **True**, the **Beautiful**, and the **Just** as three distinct publication gates `[I]`: `TruthPass` requires tiered, sourced, correction-open claims; `JusticePass` applies the chosen non-extraction vow to declared impact-bearers; `FormPass` requires intelligible, proportionate, non-manipulative expression. `Admissible(x) := TruthPass(x) ∧ JusticePass(x) ∧ FormPass(x)` is a stipulated practice rule—not a measurement model, an audit-proof aesthetic, or proof of the Good.
 
@@ -56,6 +67,8 @@ certificate or a “most good” superlative the world has not tested.
 |---|---|---|
 | Grammar (sovereign three-seat emblem `•  ⊙  ○`; seam `P∞=φν=1`; normalized balance/score bounds) | root `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`; D0 Titan and D1 arithmetic subowners named by K-1 | per-register: chart arithmetic `[A]`; non-operational emblem `[I]`; node aggregation `[C/S]`; glyph doc 41 is compatibility commentary |
 | Keystone (DoF/form, plenitude, measurement boundary) | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | active assembly; claims retain `[S/I/C]` |
+| Dasein/Finity relation (whole, situated witness, and finite manifestation) | ontology keystone §0 + `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md` | selected `[I/C]` architecture; no modal collapse |
+| Saṃsāra/līlā/dharma crosswalk (signed cycle, non-attachment, full participation) | ontology keystone §0 | arithmetic symmetry `[A]`; liberation reading `[I/B-source]`; no karmic ledger or moral cancellation |
 | Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | active successor at per-axiom tiers; A1–A7 is superseded genealogy |
 | Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `[S]` model language / `[I]` names |
@@ -190,7 +203,8 @@ the harvest without restoring any proof-form already killed by the record.
 
 Emergentism **selects** the sovereign opaque frame
 `TitanFrame={0_T,1_T,∞_T}` as its symbolic foundation: origin/absence, finite
-unit, and horizon. The terms are rendered with the familiar `0`,`1`,`∞`
+realm, and horizon. The centred `1_T` seat marks the unit reference within that
+realm, not the entirety of Finity. The terms are rendered with the familiar `0`,`1`,`∞`
 labels, but rendering is not coercion. No addition, subtraction,
 multiplication, or division is defined on TitanFrame—not even apparent
 division or multiplication by `1_T`. Ordinary numeric `0` and `1` remain
@@ -210,6 +224,19 @@ Standard `ℤ=ℤ_•∪{0_N}`, and the ambient fields `ℚ,ℝ` retain zero; on
 `ℚ^×,ℝ^×` name their nonzero multiplicative sectors. “Whole numbers” adds
 no primitive category. This presentation neither calls `1_N` the unique first
 set nor identifies it with sovereign Titan `1_T`.
+
+Alongside those standard sets, the **generative presentation** begins from the
+single primitive unit `1_N`. Positive wholes are finite additive compositions
+of it; finite words over successor `S(x)=x+1` and inversion `ι(x)=1/x` evaluate
+to exactly `ℚ⁺`; non-halting nested processes with recurring inversion denote
+positive irrational values after declared real completion. The value, finite
+word, non-halting process, operator, and boundary remain distinct types.
+Numeric zero remains in standard additive structures, negative numbers require
+an explicit signed extension of the positive base, and `i∈ℂ` is a complex
+value whose multiplication map `z↦iz` performs a quarter-turn—not an
+irrational process. This local reachability class is `Finity_G`; broad
+`Finity_F` is Dasein under the aspect of determinate finite manifestation, and
+`Finity_L` names finite-limit accountability.
 
 At the far boundary, adjoining `∞_P` yields the one-dimensional projective line
 `ℝP¹`; infinity alone does not create D2. The selected configurational opening

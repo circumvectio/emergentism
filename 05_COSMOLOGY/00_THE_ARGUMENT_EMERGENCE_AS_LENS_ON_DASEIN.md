@@ -26,10 +26,12 @@ supersedes_blob: "6a25816579f6b40bdb517dd491017e1b60e52bb7"
 
 ## 1. Thesis, priced
 
-Emergence is a useful lens on *Dasein* when it asks how a finite, situated being
-can arise within constraints, model alternatives, act, receive consequences,
-and revise both map and mapper. It is not a proof that every level of nature is
-irreducible or that one diagram exhausts reality.
+Emergence is a useful lens on **Dasein**, all that can coherently and
+consistently exist, when it
+asks how determinate beings and finite standpoints arise within constraints,
+model alternatives, act, receive consequences, and revise both map and mapper.
+It is not a proof that every level of nature is irreducible or that one diagram
+exhausts reality.
 
 The worldview's wager is **constraint-structured freedom**: a specified system
 may vary along typed degrees of freedom under laws, symmetries, history,
@@ -83,23 +85,82 @@ non-μ `r₆:D6↝D0` an interpretive return. End and beginning may resemble one
 another as selected boundary roles; they are not identical and no physical
 recurrence follows.
 
-## 4. Dasein and the one-modality threshold `[I]`
+## 4. Dasein, situated dasein, and the one-modality threshold `[I]`
+
+This argument adopts the ontology owner's deliberately widened use:
+
+```text
+World_(R,M)    := maximal coherent-consistent worlds under (R,M)
+Dasein_(R,M,W) := { x@(R,M,W) | W ∈ World_(R,M) ∧ x ∈ W }
+Dasein         := ⨆_(R,M,W) Dasein_(R,M,W)
+```
+
+Capitalized **Dasein** is all that can coherently and consistently exist, with
+membership tagged by world, register, and model so rival coherent worlds are
+not fused into one joint history. A **situated dasein** is a finite actual bearer within it,
+capable of partial disclosure and consequential action. This repairs the
+earlier ambiguity in which the local bearer and the whole were both called
+*Dasein*.
 
 D4 is actual. It contains body, tools, energy, access, memory, actual model
 tokens, performed reasoning/ranking/selection events, attempted action,
 factual record, and receipts.
 
-D5 is merely possible content. It contains the counterfactual alternatives,
-future referents, and candidate worldlines those actual tokens represent.
+D5 is merely possible content. It contains the many coherent alternative
+world-blocks, future referents, and candidate worldlines those actual tokens
+represent.
 
 ```text
 ModelToken:D4(actual) ── represents ──▶ Alternative:D5(possible)
 SelectionEvent:D4     ── selects ─────▶ Alternative:D5(possible)
 ```
 
-In this reading, Dasein is the finite actual bearer for whom alternatives can
-be disclosed and consequential action attempted. Dasein is neither Being
-itself nor a view from outside the world.
+The distinction blocks modal collapse. D4 is the distinguished actual spacetime
+block; D5 carries the plurality of coherent possible blocks. Numbers,
+triangles, and relations belong through their mathematical/configurational
+registers. All are in Dasein, but in different ways. Membership in the whole
+does not make a D5 alternative actual, reachable, or causally efficacious by
+itself, and “many worlds” does not force Everettian co-actuality.
+
+The Gītā's Viśvarūpa episode is the symbolic crosswalk `[I/B-source]`: [the
+situated Arjuna is shown the differentiated universe gathered in one form](https://www.gitasupersite.iitk.ac.in/srimad?choose=1&etadi=1&etgb=1&etpurohit=1&etsiva=1&etssa=1&field_chapter_value=11&field_nsutra_value=13&language=ro). The
+Emergentist reading is **Dasein disclosed as unity-in-manifoldness**. It neither
+makes Kṛṣṇa a formal object nor claims that a local witness becomes the whole.
+
+In this sense Dasein is the thing in itself in its totality: the complete
+modal-real field prior to any one perspective. Kenshō is the experiential
+counterpart `[I/B-source]`—the situated [“seeing into one's nature”](https://plato.stanford.edu/entries/japanese-zen/#ZenSee) in which the
+local witness glimpses its non-separation from Dasein. The glimpse discloses
+the whole as whole; it does not enumerate the whole.
+
+Mokṣa and satori are parallel only at a declared structural level. Advaita
+reads mokṣa through realization of Ātman–Brahman nonduality; Zen reads satori
+through non-discriminatory wisdom without installing an independent eternal
+self. Emergentism reads both beside the recognition that situated dasein and
+Dasein are not-two at the level of deepest nature. **Brahman**, not Brahmā, is
+the absolute in the Advaitic leg; the traditions retain their own metaphysical
+commitments.
+
+The same distinction supports a signed-cycle reading of saṃsāra `[I]`.
+`(-x)+(+x)=0` is an analytic symmetry image: victory/defeat and gain/loss can
+exchange signs within the whole without either sign exhausting Dasein.
+Liberation is release from identification with the local sign, not erasure of
+consequence or withdrawal from action. The Gītā's warrant is structural:
+action without attachment to fruit (2.47), the terrible inclusion of Time and
+destruction in the universal form (11.32), and Arjuna's inability to sustain
+that form comfortably (11.45). The arithmetic is Emergentism's; it is not a
+Gītā doctrine of karmic cancellation. Līlā remains bounded by dharma, and no
+whole-cycle symmetry cancels bearer-level harm.
+
+At the chart equator `φ=ν=1⇒B=1` `[A]`. Under a separately declared normalized
+node model, `Φ̂₄=V₄=1⇒min(Φ̂₄,V₄)=1` `[S/C]`. Their shared balanced shape may
+serve as an Emergentist image of fully engaged dharmic action `[I]`; it is not
+a proof of value, a textual attribution to Kṛṣṇa, or permission to maximize
+through injustice.
+
+Finity is Dasein under the aspect of determinate finite manifestation. A
+situated dasein is therefore finite but is not the measure of Finity; the whole
+also includes every other typed finite determination, actual or represented.
 
 ## 5. The Soul Loop and future influence `[S/I]`
 

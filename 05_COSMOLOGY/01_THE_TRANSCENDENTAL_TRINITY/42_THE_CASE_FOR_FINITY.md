@@ -51,7 +51,7 @@ The programme therefore makes four deliberately different claims:
 |---|---|---|---|
 | Mathematical kernel | The declared reciprocal chart has `φν=1`, with the selected positive midpoint `φ=ν=1`; ordinary fields and projective extensions retain their distinct rules. | `[A]` | That the chart generates number, repairs field division, or instantiates reality. |
 | Corpus structure | The project has a typed separation of `Number`, `ProjectivePoint`, `TitanFrame`, evaluation statuses, and candidate `μ` records. | `[S]` | That a corpus contract is an independently verified calculus or natural law. |
-| Finity reading | Emergentism names a selected finite/self-dual midpoint and reads finite presence as relational. | `[I]` | That this name is mathematically forced, uniquely original, or universally true. |
+| Finity reading | Emergentism names the finite realm between the boundary roles and reads finite presence as relational; `1` is its selected self-dual centre, not the whole realm. | `[I]` | That this name is mathematically forced, uniquely original, or universally true. |
 | Forward wager | A disciplined Finity calculus could yield new theorems, useful tools, empirical discriminators, or durable literacy about boundaries. | `[C]` | That any of those results already exists, or that uptake would validate ontology. |
 
 The live owners remain the [Finity recognition](07_THE_DISCOVERY_OF_FINITY.md),

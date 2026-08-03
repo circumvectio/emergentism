@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/I/C] bounded naming"
-  canonical_phrase: "Finity — the selected name for a self-dual midpoint"
+  canonical_phrase: "Finity — the selected finite realm and its centred unit"
 title: "Finity — recognition, not arithmetic discovery"
 status: "ACTIVE KINTSUGI SUCCESSOR — 2026-07-20"
 evidence_tier: "[A] inherited projective mathematics; [I] name and emblem; [C] ontology"
@@ -24,10 +24,11 @@ parents:
 > determinate, and that this answered why there is something rather than
 > nothing. Those are not consequences of projective geometry.
 >
-> **Repair.** *Finity* is Emergentism's name `[I]` for the selected finite unit
-> or self-dual midpoint read between lower and upper boundary roles. The
-> mathematics used is inherited; the emblem and ontological reading are ours
-> to test, not discoveries that mathematics compels.
+> **Repair.** *Finity* is Emergentism's name `[I]` for the finite realm between
+> lower and upper boundary roles. Its centred unit is the self-dual midpoint
+> `1`; Finity is not reducible to that one point. The mathematics used is
+> inherited; the emblem and ontological reading are ours to test, not
+> discoveries that mathematics compels.
 
 ## What is established `[A]`
 
@@ -47,18 +48,65 @@ division by zero, or establish an ontology.
 
 ## What Emergentism adds `[I]`
 
-Emergentism calls the midpoint role **finity** and writes the glyph
+Emergentism writes **finity** with the glyph
 
 ```text
 •   ⊙   ○
 ```
 
-to picture finite presence as relation between a lower boundary and a horizon.
-The spacing belongs to the emblem's frame grammar; the live display contains
-no infix operator. The older `×` is historical notation, not multiplication of
-ordinary operands; infinity is not a field element, so no field product is
-formed. In limit calculus, `0·∞` may be an indeterminate form. The glyph can
-therefore orient a reading without rewriting arithmetic.
+to picture the finite realm between a lower boundary and a horizon. The unit
+`1` is its centred, self-dual reciprocal reference point; it is not the whole
+of Finity. Every finite object, state, degree of freedom, or modelled
+possibility belongs to this realm as a finite determination: an actual monkey
+and an imagined elephant differ in register and evidence, not in their
+finitude. The spacing belongs to the emblem's frame grammar; the live display
+contains no infix operator. The older `×` is historical notation, not
+multiplication of ordinary operands; infinity is not a field element, so no
+field product is formed. In limit calculus, `0·∞` may be an indeterminate
+form. The glyph can therefore orient a reading without rewriting arithmetic.
+
+### Canonical distinction
+
+`⊙` names **Finity**: the whole realm of finite determinations, across every
+declared register. It includes an actual being, a measured state, a degree of
+freedom, a proof token, and a modelled counterfactual insofar as each is
+presented as a determinate finite content. It does not erase the distinction
+between D4 actuality and D5 possibility, or license a modelled content as an
+actual being.
+
+The equator is Finity's **balance locus**, not the whole of Finity. In the
+selected positive reciprocal slice, `1` is the unique self-dual unit under
+`x ↦ 1/x`; it is Finity's centred reference point, not a replacement for the
+realm. On the full complex sphere, that uniqueness claim is not made: the
+geometric picture must retain its declared coordinate scope.
+
+### Finity and Dasein
+
+Capitalized **Dasein** names all that can coherently and consistently exist,
+typed by possible world, register, and model. **Finity** names that whole under the aspect of
+determinate finite manifestation. The relation is therefore not an equation
+between two ordinary sets but a change of aspect:
+
+```text
+Dasein    all that can coherently and consistently exist
+Finity_F  Dasein insofar as its contents take determinate finite form
+1         the selected centred numerical unit within Finity_F
+```
+
+The subscript `F` means **field/realm** and prevents a collision with two
+narrower uses elsewhere in the corpus:
+
+```text
+Finity_G  finite-word generative reachability = ℚ⁺
+Finity_L  finite-limit accountability in research and action
+```
+
+`Finity_G` is a formal subregister of the number architecture; it is not the
+whole of `Finity_F`. Irrational real values remain finite determinations even
+when the selected base denotes them only through non-halting processes. An
+actual monkey and an imagined elephant both belong to `Finity_F`, but the first
+is D4 actual and the second D5 represented possibility. Finity preserves that
+difference rather than flattening it.
 
 ## What remains a wager `[C]`
 

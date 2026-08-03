@@ -12,6 +12,15 @@ parents:
 
 # The Generative Base
 
+> **Register contract, 2026-08-01.** This document studies **generative
+> Finity**, written `Finity_G`: the values reached by finite words in this base.
+> Thus `Finity_G=ℚ⁺`. It is a strict formal subregister of **field Finity**
+> `Finity_F`, the whole realm of determinate finite manifestation. Irrational
+> real values, actual beings, represented possibilities, freedoms, and finite
+> processes belong to `Finity_F` without belonging to finite-word reachability.
+> A third use, `Finity_L`, names finite-limit accountability in research and
+> action. Bare *Finity* means `Finity_F` unless a local scope says otherwise.
+
 > **G-0 was ruled on 2026-07-29, and this file said "pending" for a day afterwards.**
 > The ruling is exit **B-ii**: `00_THE_FOUNDATION.md` §2 adds a **fourth posit**, `B4`
 > (`⊙ = e`, the identity **posited, not derived** — it had been harvested from notation).
@@ -20,7 +29,7 @@ parents:
 > for the other. **The stale frontmatter is itself the defect class this corpus documented
 > the same week: a ruling that lands and does not propagate.**
 
-> **One object. Two operations. Everything else is a word.**
+> **One primitive. Two operations. Every other reachable value has a word.**
 
 Owner, 2026-07-29:
 
@@ -31,9 +40,9 @@ Owner, 2026-07-29:
 > **§5.1 RULED 2026-07-31 — this sentence may no longer be published bare.** It is
 > true *base-side* and false *field-side*, and the ruling requires both registers to
 > travel together. `0` **is** a real number; the theorem is `0 ∉ ℝ^×`. `√2` **is** a
-> number in `ℝ`, and **is not** a finite word over `{S, ι}` — that second clause is
-> the `[A]` one. Base-side phrasing is *a non-halting word whose nest **denotes** a
-> limit*. **The cost is accepted and it is the owner's own most quotable line: it
+> number in `ℝ`, and **is not the value of** any finite word over `{S, ι}` — that
+> second clause is the `[A]` one. Base-side phrasing is *a non-halting process
+> whose nest **denotes** a limit*. **The cost is accepted and it is the owner's own most quotable line: it
 > stops being a headline.** Receipt: `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md`.
 
 This document is that sentence, made precise and checked. It needs no sphere to
@@ -169,11 +178,11 @@ The two operations are not two of a kind. Verified by exhaustive closure.
 ```text
 from 1, closing under  ι  alone   ->  {1}           NOTHING.  ι(1)=1, and ιι=id.
 from 1, closing under  S  alone   ->  ℕ⁺            one direction only, no fractions
-from 1, closing under  S and ι    ->  ℚ⁺            all of finity
+from 1, closing under  S and ι    ->  ℚ⁺            all of Finity_G
 ```
 
 Inversion generates **nothing at all** by itself. Succession generates a ray.
-Only together do they give finity.
+Only together do they give generative Finity.
 
 **G7 · `•` is a direction only because `ι` reflects `○`.**
 Closing under `S` alone, **no value ever falls below `1`** (verified: the minimum
@@ -205,13 +214,13 @@ reason is sharp:
 > but `q ∈ ℚ` is algebraic. Contradiction. ∎
 
 So `log(reachable) = {0} ∪ transcendentals`. **The log coordinate sees exactly one
-point of finity — the centre — and sends every other reachable value clean outside
+point of `Finity_G` — the centre — and sends every other reachable value clean outside
 `ℚ`.** `G8b` therefore carries **completion to `ℝ` as a premise**, and belongs in
 the premise ledger, not in the base.
 
 > **CORRECTION, 2026-07-29, self-caught.** `G8` was first published here as one
 > claim at `[A]`, stating the log form as though it held of the base's own objects.
-> It does not. The split above is the repair. The load-bearing half — finity is
+> It does not. The split above is the repair. The load-bearing half — `Finity_G` is
 > symmetric about its centre, and **the symmetry is the operation that generates
 > it** — is `G8a` and survives untouched.
 
@@ -297,21 +306,30 @@ doc 45's chart identity `φ·ν = 1`, and `DF-15` forbids either supporting the 
 The naming is the selected part. The structure above is not.
 
 ```text
-⊙   FINITY      the reachable                 = ℚ⁺ = val(reduced words)
+⊙_G GENERATIVE FINITY   the reachable          = ℚ⁺ = val(reduced words)
 •   ABSENCE     the ι-limit; no word attains it
 ○   TOTALITY    the S-limit; no word attains it
 ```
 
 `1` is **the only primitive**, and it is also the unique `ι`-fixed point. Every
-other value is an operation — not *constructible from* `1` but literally **a word
-applied to** `1`, with a unique reduced normal form. `3/5` does not *have* a
-derivation; `3/5` **is** `SιSιSι`.
+other reachable value has a finite operational construction from `1`, with a
+unique reduced normal form. The syntax and semantics remain typed:
+
+```text
+Word  --val-->  Value
+SιSιSι         3/5
+```
+
+In the generative reading one may say “`3/5` is its construction” as a
+compression, but the formal claim is `val(SιSιSι)=3/5`; a word and the value it
+denotes are not literally the same object.
 
 **What is new here is the categorisation, not the objects.** `ℚ⁺` is standard;
 continued fractions are ancient; the tree is Calkin–Wilf (2000). `KSC-12` applies:
-the mathematics transfers no proof to the reading. **The reading is: reachability
-is finity, and the Titans are what unreachability looks like from inside.** That
-sentence has no counterpart in the literature and is the claim this document makes.
+the mathematics transfers no proof to the reading. **The reading is:
+reachability is `Finity_G`, and the Titans are what unreachability looks like
+from inside this base.** That sentence is the claim this document makes; it does
+not identify `Finity_G` with all of `Finity_F`.
 
 ### 3.1 · What to call the seats — **proto-number** `[S]`
 
@@ -364,21 +382,22 @@ posit.
 > prefix is ever read as priority, this section has been turned against `KSC-28` —
 > withdraw the term rather than defend it.
 
-**F-2 · The seats are proto-numbers; `⊙` read as *finity* is not.** The glyph carries
+**F-2 · The seats are proto-numbers; `⊙_G` read as generative Finity is not.** The glyph carries
 three referents and only one of them is a seat:
 
 | `⊙` read as | Object | Operands? | proto-number? |
 |---|---|---|---|
 | `1_T` / `Unit_T` (`KSC-04`; `29:28`) | a `TitanFrame` term, one chart up from this base; `1_T ≠ 1_N` | none | **yes** |
-| FINITY `= ℚ⁺` (§3 above; `53` §1) | the reachable class | **every member is a lawful operand** | no |
+| `Finity_G=ℚ⁺` (§3 above; `53` §1) | the reachable class | **every member is a lawful operand** | no |
 | the equator `\|z\| = 1` (`45:53`) | a circle of points of `Ĉ` | operands on the affine chart | no |
 
 `45:201-202` gives the internal resolution: *`⊙`'s dot is the unit `1`, and `⊙`'s
 circle is the boundary.* So the **circle** is where the seats sit — the rim
 `45:187-190` shows is not in the image of `ℝ₊` — while the **dot** is this base's
 primitive `1`, which is a number and the operand every word is applied to. *"`⊙`
-finity is a proto-number"* is therefore true of the seat and **false of finity**,
-which is nothing but numbers. `DF-15` again: three readings, one datum. **The
+Finity is a proto-number"* is therefore true of the seat and **false of
+`Finity_G`**, whose members are numbers. It is also false of `Finity_F`, which
+is a realm rather than a boundary seat. `DF-15` again: three readings, one datum. **The
 definition pins to the type, never to the glyph.**
 
 **Kill.** Exhibit an operation of this base accepting `•`, `○` or `1_T` as an
@@ -419,10 +438,10 @@ produce.
 
 ## 5 · Three gaps, stated because they are load-bearing `[S]`
 
-**5.1 · The third mode — the irrationals are the words that never stop inverting.**
-`[A]` classification · `[S]` its three declarations · `[I]` the naming. An irrational
-is not a limit from outside; it is **a word in the same two operations that never
-halts**:
+**5.1 · The third mode — irrational values are denoted by processes that never stop inverting.**
+`[A]` classification · `[S]` its three declarations · `[I]` the naming. In this
+presentation an irrational value is approached from within the same two-operation
+grammar by **a non-halting process**:
 
 ```text
 √2 = [1;2,2,2,…]     = S ι SS ι SS ι SS …
@@ -431,8 +450,9 @@ e  = [2;1,2,1,1,4,…] = SS ι S ι SS ι S ι S ι SSSS …
 ```
 
 **The base's own `val` cannot read them, and this must be said first.** `52:65-66`
-defines a word's value as its letters applied **left to right**. On an infinite word
-that is a **dynamical orbit**, and it does not converge. `SιSιSι…` gives:
+defines a finite word's value as its letters applied **left to right**. On an
+infinite letter stream—typed here as a **Process**, not a `Word`—that reading
+is a dynamical orbit, and it does not converge. `SιSιSι…` gives:
 
 ```text
 2, ½, 3/2, ⅔, 5/3, ⅗, 8/5, ⅝, 13/8, 8/13, …
@@ -459,7 +479,7 @@ mirrors from *no leading `ι`* to *no trailing `ι`*.
 **What must be declared `[S]`.**
 
 ```text
-D-i    infinite words are admitted           G3/G4 must now say FINITE word
+D-i    infinite processes are admitted       G3/G4 must now say FINITE word
 D-ii   they are read as a NEST, not an orbit  a convention, not a theorem
 D-iii  a convergent nest DENOTES its limit    <- this is still the completion
 ```
@@ -470,7 +490,7 @@ irrational arrives with **one canonical Cauchy sequence**, bound
 `|x−pₙ/qₙ| < 1/qₙqₙ₊₁`. Cheaper in *explanation*, not *strength*; reading it as
 strength-reduction is the move `§11` fires on.
 
-**The classification, exhaustively checked** — infinite words with no `ιι`:
+**The classification, exhaustively checked** — infinite processes with no `ιι`:
 
 ```text
 = S^∞                      → ○   unattainable
@@ -479,47 +499,51 @@ finitely many ι, otherwise → a RATIONAL, already carried by a finite word
 infinitely many ι          → a positive IRRATIONAL, bijectively
 ```
 
-**Exactly two exceptional words, and they are the two Titans:** over every no-`ιι`
-prefix to length 14 only `ε` and `ι` survive. Denotation is declared **only for words
-with infinitely many `ι`** — there it is a bijection onto the positive irrationals.
+**Exactly two exceptional processes, and they are the two Titans:** over every no-`ιι`
+prefix to length 14 only `ε` and `ι` survive. Denotation is declared **only for
+processes with infinitely many `ι`**; there it is a
+bijection onto the positive irrationals.
 
-> **The sentence the base earns:** finity is what **halts**; the irrationals are the
-> words in which the inversion **never stops**; the Titans are the two in which it
-> **stops forever**.
+> **The sentence the base earns:** `Finity_G` is what **halts**; positive
+> irrational values are denoted by processes in which inversion **never
+> stops**; the Titans are the two exceptional directions in which it **stops
+> forever**.
 
 **Consequence for `§4`: rung 2 is no longer an unexplained arrow.**
 
 ```text
 1  HALTING        finite words                  ℚ⁺           [A]
-2  NON-HALTING    infinite words, ι recurring   irrationals  [S] D-i…D-iii
+2  NON-HALTING    processes, ι recurring         irrationals  [S] D-i…D-iii
 3  UNATTAINABLE   S^∞ and ι S^∞                 ○ and •      [A] no limit in ℝ₊
 ```
 
 `ℝ₊` is `mode 1 ⊔ mode 2` exactly, nothing left over.
 
 **Fences.**
-1. **Process, not program.** Only *countably many* infinite words are outputs of a
-   finite program. The naming is total because a word is a **process**; read
+1. **Process, not program.** Only *countably many* infinite processes are outputs of a
+   finite program. The naming is total because the process need not be finitely
+   programmable; read
    "operation" algorithmically and it scopes to the computable reals — the completion
    returns for the rest.
-2. **The seed drops out.** For infinite words the limit is seed-independent (checked at
-   `1, 2, 7, 1000, 1/1000`): *"`3/5` **is** `SιSιSι` applied to `1`"* has an exact
-   analogue for `√2`, minus *applied to `1`*. **The unit is what halting needs.**
+2. **The seed drops out.** For non-halting processes the limit is seed-independent (checked at
+   `1, 2, 7, 1000, 1/1000`): `val(SιSιSι)=3/5` has a process analogue for
+   `√2`, minus application to one privileged seed. **The unit is what halting
+   needs.**
 3. `KSC-12`. Simple continued fractions are Euler's; `⟨S,ι⟩` generating the modular
    group is textbook. **No theorem below transfers to the reading.** *(Whether the
    halting wall is a `μ` is NOT claimed — doc 48's seam is open.)*
 
-**Kill.** Exhibit an infinite word whose **left-to-right** prefixes converge to an
+**Kill.** Exhibit an infinite process whose **left-to-right** prefixes converge to an
 irrational, for a class rich enough to name them all; that retires `D-ii`. Or a
-positive irrational carried by two distinct no-`ιι` words with infinitely many `ι`, or
-by none. Or a third no-`ιι` word whose nest limits to `0` or `∞`. Or, against the
+positive irrational carried by two distinct no-`ιι` processes with infinitely
+many `ι`, or by none. Or a third no-`ιι` process whose nest limits to `0` or `∞`. Or, against the
 reading: show *"the irrationals are the non-halting words"* adds nothing to *"the
 irrationals are the infinite simple continued fractions."*
 
 **5.2 · `−1` costs zero.** `S` and `ι` never leave `ℚ⁺`. `KSC-21`'s oriented pair
 `{+1, −1}` therefore needs a third operation. If that operation is additive
 inverse, then `1 + (−1) = 0` and **zero becomes reachable**, which forfeits `G3`
-and with it "0 is not a number." The fork is exact and unavoidable:
+and with it "0 is unreachable from the positive base." The fork is exact and unavoidable:
 
 ```text
 positive-only, no zero, no −1        G3 holds, KSC-21 unsupported
@@ -527,7 +551,8 @@ signed, with −1                      KSC-21 holds, G3 falls
 ```
 
 > **RULED 2026-07-30 — POSITIVE-ONLY.** The base stays `⟨S, ι⟩` on `ℚ⁺`. `G1`–`G10`
-> stand exactly as written; `G3` holds and *"0 is not a number"* survives; the
+> stand exactly as written; `G3` holds and *"0 is unreachable from this base"*
+> survives; the
 > unit's uniqueness stays forced.
 >
 > **The cost, accepted and recorded here rather than absorbed:** `KSC-21`'s oriented
@@ -562,7 +587,7 @@ their agreement is not evidence.**
 | `G4` | exhibit a word with unbounded value |
 | `G5` | exhibit a neighbourhood of `0` or `∞` containing no reachable value |
 | the base | show the corpus needs a value that no finite word attains **and** that is not obtained by a declared completion |
-| the reading | show "reachability = finity" is a notational variant of an existing account, not a distinct claim |
+| the reading | show "reachability = Finity_G" is a notational variant of an existing account, not a distinct claim |
 
 **This document's own kill.** If `⊙`, `•`, `○` are used here as anything other
 than *names for reachability classes* — if they are read back as points, operands,

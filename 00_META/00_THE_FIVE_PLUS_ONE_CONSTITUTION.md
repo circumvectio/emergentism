@@ -55,8 +55,9 @@ asserts nothing requiring a prior logic to be true. It binds the holder's hand
 instead. That is why the deepest layer of this framework is constitutional
 rather than axiomatic.
 
-**What `R0` preserves:** Dasein is contingent; nothing downstream may quietly
-re-derive necessity for it.
+**What `R0` preserves:** situated dasein and D4 actual manifestation are
+contingent; membership in broad Dasein may not quietly re-derive necessary
+physical instantiation.
 **Kill:** a sound argument establishing a necessary being. `R0` then fails as a
 refusal and must be withdrawn openly, with a dated receipt.
 

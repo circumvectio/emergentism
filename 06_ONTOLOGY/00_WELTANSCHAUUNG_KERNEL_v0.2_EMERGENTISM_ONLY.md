@@ -95,6 +95,37 @@ This proposal is compatible with S²/CP¹ as one model. It does not depend on S�
 
 The verb **exists** must carry a register.
 
+Capital **Dasein** is the Weltanschauung's name `[I/C]` for all that can
+coherently and consistently exist. Its admission is indexed by compossible
+world, register, and model:
+
+```text
+World_(R,M)    := maximal coherent-consistent worlds under (R,M)
+Dasein_(R,M,W) := { x@(R,M,W) | W ∈ World_(R,M) ∧ x ∈ W }
+Dasein         := ⨆_(R,M,W) Dasein_(R,M,W)
+```
+
+The tagged union means each content can be according to its declared mode
+without becoming jointly true with rival-world contents or physically actual
+by mere membership. Dasein is not exhausted by D4, D5, or mathematical beings:
+the full selected articulation occurs within it—D1 distinction, D2
+relation/configuration, D3 state assignment, D4 actual spacetime, and D5
+coherent possibility—together with every other coherent typed determination.
+D0 and D6 remain articulated boundary tokens rather than possession of Ground.
+A **situated dasein** is one finite D4 bearer within that whole. “Thing in itself
+in its totality” names this whole; kenshō/satori and mokṣa are distinct
+crosswalks for situated recognition of non-separation, not an exhaustive
+inventory. Advaita's leg is Ātman–Brahman identity; Zen's leg empties
+independent self-nature and must not be assigned an eternal Ātman. Brahman is
+the absolute; Brahmā remains the creator deity/Rosetta architecture symbol.
+Saṃsāra admits a signed-cycle crosswalk `[I]`: `-x+x=0` images opposed local
+roles within the whole, while liberation releases identification with either
+sign and returns the situated bearer to full non-attached action. The equality
+does not measure karma, prove rebirth, or cancel any bearer's harm. Līlā is
+therefore bounded by dharma. `φ=ν=1⇒B=1` is chart balance `[A]`; the distinct
+normalized-node statement `Φ̂₄=V₄=1⇒min(Φ̂₄,V₄)=1` is model-conditional and
+neither formula is attributed to the Gītā.
+
 | Register | Minimum warrant | What it does not imply |
 |---|---|---|
 | Thinkable | Grammatically/intentionally describable | consistency |
@@ -110,7 +141,11 @@ The verb **exists** must carry a register.
 
 Accordingly:
 
-> **Everything admitted by a specified possibility space exists in that space only as an admitted possibility.** Fewer possibilities are physically lawful, fewer reachable, fewer actual, fewer stable, fewer emergent, and fewer available to a finite life.
+> **Everything that can coherently and consistently exist belongs to Dasein in
+> its declared world, register, and model.** Everything admitted by a specified possibility space
+> exists in that space only as an admitted possibility. Fewer possibilities
+> are physically lawful, fewer reachable, fewer actual, fewer stable, fewer
+> emergent, and fewer available to a finite life.
 
 Unrestricted modal realism is not an Emergentist discovery and is not adopted here.
 
@@ -135,7 +170,9 @@ Concrete systems possess typed capacities for variation under relations, constra
 
 ### C2. Typed existence `[S]`
 
-No inference may move from logical coherence to mathematical existence, physical possibility, actuality, emergence, or lived availability without the missing bridge evidence.
+No inference may move from Dasein-membership in one register to mathematical
+existence, physical possibility, actuality, emergence, or lived availability
+in another without the missing bridge evidence.
 
 **Support:** the evidence-tier separation and synthetic-gap ruling in `00_THE_HONEST_POSITION.md` and receipt 126.
 
@@ -235,12 +272,16 @@ world has exactly these registers.
 Keep separate from the worldview kernel:
 
 - S² as the literal territory of reality — `[I]` wager;
-- Ground → Being → Teleological Force → Dasein → beings — theological/ontological interpretation, not theorem;
+- Dasein as all that can coherently and consistently exist and Finity as its determinate-finite
+  aspect — selected ontology `[I/C]`, not theorem; the older chain Ground →
+  Being → Teleological Force → situated dasein → disclosed beings remains an
+  optional theological interpretation;
 - `P_node=Φ×V` — representative finite-node model, with AND-class boundary only;
 - equator = objective good — ethical/teleological reading, not mathematical consequence;
 - Rosetta/caste/god/Titan naming — interpretive and operational translation grammar;
 - councils, signers, foundations, products, organs, fees, ledgers, and launches — governance/application surfaces, not philosophical axioms;
-- any claim that all coherent possibilities are actual;
+- any claim that all coherent possibilities are D4 actual merely because they
+  belong to Dasein in a possibility register;
 - any claim that strong emergence has been established universally.
 
 ---

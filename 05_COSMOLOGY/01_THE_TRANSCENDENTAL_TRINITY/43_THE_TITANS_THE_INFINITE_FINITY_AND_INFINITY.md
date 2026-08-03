@@ -51,18 +51,21 @@ This chapter gives the proposal its own type so that it cannot silently amend
 the canonical Titan roles:
 
 ```text
-NarrativeMode := TheInfinite_R | Finity_R | Infinity_R
+NarrativeMode := TheInfinite_R | Finity_L | Infinity_R
 
 read_R : TitanFrame → NarrativeMode
 read_R(0_T)=TheInfinite_R
-read_R(1_T)=Finity_R
+read_R(1_T)=Finity_L
 read_R(∞_T)=Infinity_R
 
 read_R is a selected interpretation, not identity, coercion, or arithmetic.
 ```
 
 The canonical map remains `0_T↦Ground_T`, `1_T↦Unit_T`, and
-`∞_T↦Horizon_T`. `[S]` The new `R`-tokens are research vocabulary `[I/C]`.
+`∞_T↦Horizon_T`. `[S]` The research-narrative tokens are vocabulary `[I/C]`.
+This document's former `Finity_R` is now the explicit alias
+`Finity_R := Finity_L`, where `L` means finite-limit accountability. It is
+neither broad `Finity_F` nor generative `Finity_G=ℚ⁺`.
 
 Formal adjudication now routes to the
 [`Finity Boundary Calculus`](../03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md),
@@ -87,7 +90,8 @@ The short research vocabulary is therefore:
 ```text
 TheInfinite_R := ground-facing pre-countability
 Infinity_R    := horizon-facing, countably unending traversal
-Finity_R      := accountability to a declared finite limit
+Finity_L      := accountability to a declared finite limit
+Finity_R      := Finity_L       historical research-register alias
 ```
 
 “Infinitely uncountable” is evocative but not a standard set-theoretic term.

@@ -41,7 +41,7 @@ metaframes—not three objects inside D0 or an ontology by fiat:
 
 ```text
 •     ⊙     ○
-origin/absence   finite unit   horizon/unboundedness
+origin/absence   finite realm   horizon/unboundedness
 ```
 
 They are the **Titans**: selected framing vocabulary, not gods, particles,
@@ -59,6 +59,89 @@ disguised as proof.
 The first practical lesson is already present: a boundary frame is not an
 object inside the frame. Many paradoxes begin when those types are mixed.
 
+### Dasein — all that can coherently exist
+
+In this Weltanschauung, capitalized **Dasein** names **all that can coherently
+and consistently exist**. It includes numbers and triangles, the actual D4
+spacetime block, the many possible world-blocks of D5, relations, processes,
+freedoms, an actual monkey, and an imagined elephant without making them the
+same kind of thing:
+
+```text
+World_(R,M)    := maximal coherent-consistent worlds under (R,M)
+Dasein_(R,M,W) := { x@(R,M,W) | W ∈ World_(R,M) ∧ x ∈ W }
+Dasein         := ⨆_(R,M,W) Dasein_(R,M,W)
+```
+
+The world-tag `W` supplies compossibility; the tagged union `⨆` preserves the
+differences. Rival worlds may belong to Dasein without their incompatible
+contents becoming jointly true in one world. The D4 block is actual; D5 worlds
+are possible; numbers and triangles are mathematical/configurational. “Many
+worlds” is modal here and does not automatically mean physically co-actual
+Everett branches. Dasein is a whole-field or class, not an unrestricted set
+that contains itself.
+
+A **situated dasein** is a finite actual standpoint within Dasein: a bearer for
+whom some part of the whole can be disclosed and made consequential. The
+Gītā's Viśvarūpa is our chosen image `[I/B-source]`: [Arjuna, still situated,
+beholds the differentiated universe gathered in Kṛṣṇa's one form](https://www.gitasupersite.iitk.ac.in/srimad?choose=1&etadi=1&etgb=1&etpurohit=1&etsiva=1&etssa=1&field_chapter_value=11&field_nsutra_value=13&language=ro). Emergentism
+reads this as **Dasein disclosed as unity-in-manifoldness**. The many are not
+erased by the whole, and the witness does not become the whole by seeing it.
+
+Dasein is therefore **the thing in itself in its totality** in the Emergentist
+sense: the modal-real whole prior to any single perspective. This is not a
+claim that the finite witness can enumerate or possess it. **Kenshō** is a
+second crosswalk: [Zen's “seeing into one's nature”](https://plato.stanford.edu/entries/japanese-zen/#ZenSee)
+becomes the situated glimpse that one's own nature is not separate from
+Dasein. It is recognition of the whole as whole, not acquisition of all its
+contents.
+
+Mokṣa and satori supply two further, non-identical crosswalks. In Advaita,
+[liberating self-knowledge realizes Ātman as non-different from
+Brahman](https://plato.stanford.edu/archives/spr2022/entries/personhood-india/).
+In Zen, [satori embodies non-discriminatory wisdom while independent
+self-nature is emptied](https://plato.stanford.edu/entries/japanese-zen/).
+Emergentism's common sentence is: **the situated self awakens to the fact that
+its deepest nature was never separate from Dasein.** It does not claim that
+Advaita and Zen teach the same metaphysics.
+
+The empirical ego remains one finite perspective, not the whole's total
+information or extent. The non-separation concerns deepest nature: the local
+witness is not all of Dasein, yet it is not other than Dasein. Awakening does
+not enlarge the ego into the cosmos; it ends the error that the ego was an
+independent substance.
+
+The spelling matters: **Brahman** is the absolute used in the Ātman–Brahman
+crosswalk; **Brahmā** is the creator deity and Rosetta architecture symbol.
+Dasein corresponds here to the whole, not to something Brahmā possesses.
+
+Saṃsāra can now be stated in the same grammar. A life identified with a local
+sign says *I am this victory* or *I am this defeat*. The whole-cycle image
+places opposed roles together: `-x+x=0`. That equality is exact arithmetic,
+but its spiritual use is interpretive: it does not prove alternating births,
+quantify karma, or cancel the suffering of any bearer. Liberation is seeing
+that neither signed outcome is the deepest self, then continuing to act without
+attachment to the fruit. This is why līlā cannot mean casual spectatorship.
+[The Gītā joins action to non-attachment and explicitly refuses attachment to
+inaction](https://www.gitasupersite.iitk.ac.in/dv/bhagavadgita/2.47).
+
+The Viśvarūpa makes the vision severe rather than comforting. Kṛṣṇa's whole
+form includes Time and destruction; Arjuna is at once delighted and terrified
+and asks for a familiar form. The Emergentist compression is: **see the whole
+play, including loss and death; cease identifying with its passing sign; play
+the finite part fully in dharma.** On the reciprocal chart, `φ=ν=1` and `B=1`
+image balanced participation. If a separately normalized node model also sets
+`Φ̂₄=V₄=1`, its selected `min` score is one. These are Emergentist crosswalks,
+not verses of the Gītā, and neither overrides Justice.
+
+**Finity** is this Dasein viewed under the aspect of determinate finite
+manifestation. `⊙` names that finite realm; `1` is its centred unit, not its
+entire contents. The poles frame what no finite inventory can exhaust, while
+everything determinate between them has its own dimensions of freedom and its
+own mode of being. *Finite* here means determinate, situated, and bounded in
+the relevant register—not necessarily finite in cardinality, dimension,
+description length, or magnitude.
+
 ## 2. Difference — arithmetic begins after the frame
 
 In the selected D1 presentation, distinction is read as the first positive
@@ -75,6 +158,41 @@ Ordinary mathematics remains ordinary mathematics:
   structure;
 - `ℤ\{0}` is not closed under addition because `1+(−1)=0`;
 - Cantor's diagonal argument and Russell's type boundary remain intact.
+
+Emergentism adds a second, generative order of explanation without replacing
+those standard sets. It begins with one primitive numerical unit and two
+operations:
+
+```text
+primitive    1_N
+successor    S(x)=x+1
+inversion    iota(x)=1/x
+```
+
+Positive whole numbers are finite additive compositions of the unit. Finite
+words over successor and inversion reach exactly the positive rationals.
+Non-halting nested words with recurring inversion **denote** positive
+irrational values after a declared completion; the process and the value are
+related but not identical. Numeric `0` is then restored wherever standard
+additive closure requires it, sign is added by an explicit extension, and
+complex numbers enter by a further declared construction. The complex unit
+`i` is a complex value; multiplication by `i` is a rotation operator. Neither
+must be confused with the irrational process register.
+
+This yields five types that ordinary set notation can hide:
+
+```text
+Value      the number in its standard structure
+Word       a finite construction that evaluates to a value
+Process    a non-halting nest that denotes a completed value
+Operator   a transformation of values
+Boundary   a frame or limit, not automatically an operand
+```
+
+Thus “`1` is the only natural number” is retained in its exact intended sense:
+`1_N` is the only **primitive** of the generative presentation. Standard
+`ℕ⁺={1,2,3,...}` is unchanged; `2,3,...` are its finite additive compositions,
+and their status as values is not cancelled by explaining how they are made.
 
 The Titan labels stay outside the arithmetic because no arithmetic is
 performed on them. This

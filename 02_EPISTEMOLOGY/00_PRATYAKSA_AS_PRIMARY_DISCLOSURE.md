@@ -135,14 +135,16 @@ That is enough to justify a cleaner sentence in the canon:
 
 ## Dasein and Disclosure
 
-Empirical Observation belongs most directly to `Dasein`.
+Empirical Observation belongs most directly to a **situated dasein** within
+capital Dasein.
 
 Ground is prior.
 Being is reciprocal closure.
 Teleological Force is an optional `[I]` name for perceived or modeled
 viability-direction; native mechanisms must be stated first, and no literal
 force follows from disclosure.
-Dasein is where disclosure occurs.
+Situated dasein is where local disclosure occurs; Dasein is the
+coherent-consistent whole disclosed only in part.
 Empirical Observation is the name for that disclosure when it becomes explicit.
 
 That is why the framework should not say:

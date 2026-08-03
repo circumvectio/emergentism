@@ -261,7 +261,7 @@ The primary object is the **Riemann sphere** `Ĉ = ℂP¹`, with inversion
 |---|---|---|
 | `•` | south pole, `z = 0` | absence / the uncountable; a **point**, not a limit |
 | `○` | north pole, `z = ∞` | the totality / true infinity; a **point** |
-| `⊙` | the equator `\|z\|=1`, centred on `1` | finity — the bounded middle |
+| `⊙` | the finite realm between the poles; its equatorial balance locus is `\|z\|=1`, and the selected positive slice meets it at `1` | finity — all finite determinations; `1` is its centred unit |
 
 **The limit crossed, not approached `[A]`.** In `ℝ`, `∞` is not an element — it
 is a divergence, approachable and never reached. Compactification is exactly the
@@ -550,7 +550,9 @@ distinction — which is `D1`, and what `μ₀` opens. **Hegel**: pure `Sein`, h
 no determination, is indistinguishable from `Nichts`; their truth is `Werden` —
 and the cost he pays is ours, since two wholly indeterminate seats can be
 distinguished only by their *relation*, which §5 supplies. **Heidegger**
-contributes the part that survives everything: **Dasein is contingent.**
+contributes the part that survives everything: **situated dasein and every D4
+actual manifestation are contingent; broad Dasein-membership supplies no
+warrant of necessary physical instantiation.**
 
 The Sanātana Dharma reading — `•` the uncountable, `⊙` finity, `○` the
 self-referential totality — is vocabulary at `[I]`. Its rigorous seating is the

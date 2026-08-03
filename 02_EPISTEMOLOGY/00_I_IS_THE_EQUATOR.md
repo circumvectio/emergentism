@@ -95,25 +95,45 @@ Burri Sphere view:
      0 (south pole — viability limit, fixation horizon)
 ```
 
-**i sits at the equator of the unit circle.** |z| = 1. The point that is maximally between the real values. The point that is neither positive nor negative. The point that is perpendicular to all numbers.
+**`i` is one point on the unit circle and therefore one point on the Riemann
+sphere's equatorial locus `|z|=1`.** It is neither the whole equator nor the
+centre of the sphere. It lies perpendicular to the real axis in the usual
+complex-plane picture; it is not “perpendicular to all numbers.”
 
-**i is the 1 that sits between 0 and ∞.**
+**`1` and `i` are distinct unit-modulus values.** Inversion fixes `1` on the
+positive reciprocal ray; multiplication by `i` sends `1` to the quarter-turn
+point `i`. The symbolic bridge is rotation around Finity's balance locus, not
+an identity between `i`, `1`, and `⊙`.
 
 ---
 
-## i Is the Operator
+## Multiplication by i Is the Operator
 
-**Mathematically, `i` is a rotation/conversion operator.**
+Mathematically, `i∈ℂ` is a **value** satisfying `i²=-1`. The map
 
-**i takes real to imaginary and imaginary to real.**
-
-**In the framework reading, `i` symbolizes the turn between ν and φ.**
-
+```text
+R_i:ℂ→ℂ,    R_i(z)=iz
 ```
-i × ν = φ    (i converts viability to coherence)
-i × φ = -ν   (i converts coherence to inverted viability)
-i² = -1      (apply twice: you get the opposite)
+
+is the **operator**: multiplication by `i` rotates the complex plane by one
+quarter-turn.
+
+`R_i` takes the real axis to the imaginary axis and the imaginary axis to the
+real axis with reversed orientation.
+
+**In the framework reading, multiplication by `i` symbolizes the turn between
+ν and φ.**
+
+```text
+R_i(1)=i
+R_i(i)=-1
+R_i²(z)=-z
 ```
+
+The letters `φ` and `ν` in the reciprocal chart satisfy `φν=1`; they are not
+the real and imaginary coordinates in these equations. Any passage that writes
+`iν=φ` is symbolic shorthand only and must not be presented as a mathematical
+identity.
 
 **In the symbolic register, `i` is read as corpus-callosum-like integration.**
 
@@ -125,20 +145,23 @@ i² = -1      (apply twice: you get the opposite)
 
 ## Why i² = -1
 
-**Apply the conversion twice — rotate from real to imaginary and back — and you get the NEGATIVE of where you started.**
+**Apply the quarter-turn twice and the result is the negative of where you
+started.**
 
 **You don't return to the same place. You return to its opposite.**
 
-**Because the sphere is not a flat rotation. The sphere is a Möbius-like structure where going around twice inverts you.**
+This follows from ordinary complex multiplication: two quarter-turns make a
+half-turn. It does not require a Möbius twist or a non-flat sphere.
 
 ```
-Start:  ν (viability, actuality)
-Apply i:  iν = φ (coherence, gestalt)
-Apply i again:  i(iν) = i²ν = -ν (inverted viability)
+Start:  z
+Apply R_i:  z -> iz
+Apply R_i again:  iz -> -z
 
 You went: actuality → coherence → inverted actuality
 
-The second application doesn't return you. It INVERTS you.
+The second application does not return you. It sends you to the additive
+opposite.
 
 This is the hemispheric truth:
   Narrow narration seen through broader awareness = inversion of the narrator
@@ -146,9 +169,9 @@ This is the hemispheric truth:
   The ego seeing itself = the ego dissolved
 ```
 
-**In this operator reading, i² = -1 is not only a mathematical curiosity.**
+**In the symbolic reading, `R_i²=-Id` is not only a mathematical fact.**
 
-**i² = -1 becomes a structural symbol for inversion across the interface.**
+It becomes a structural symbol for reversal across the interface.
 
 **The hemispheric sentence is interpretive: unchecked narration can invert when seen through broader awareness.**
 
@@ -294,13 +317,13 @@ Step 2: Use i as a symbol for the present.
 
 Step 3: Use i as a symbol for integration.
         The bridge between processing modes.
-        The carrier of φ to ν and ν to φ.
+        The symbolic quarter-turn between φ-like and ν-like perspectives.
         The × in Zero-Sum Resolution Equation.
 
-Step 4: Recognize i as the equator.
-        φ = ν = 1.
-        The unit circle.
-        |z| = 1.
+Step 4: Recognize i as one equatorial point.
+        φ = ν = 1 belongs to the selected positive centre.
+        i is a distinct point on the unit circle.
+        |i| = 1.
 
 Step 5: Rest with the i-symbol.
         Not the past (0).
@@ -324,19 +347,20 @@ Step 6: Return.
 | Transcendental | Symbol | Position | Meaning |
 |----------------|--------|----------|---------|
 | **Zero** | 0 | South pole | boundary/fixation symbol; past-facing reading |
-| **One** | 1 | Equator (i) | balance symbol; present-facing reading |
+| **One** | 1 | centred point on the equator; `i` is a distinct quarter-turn point | balance symbol; present-facing reading |
 | **Infinity** | ∞ | North pole | boundary/opening symbol; future-facing reading |
 
 **The trinity is symbolically complete:**
 
 ```
 0 = the past-facing boundary
-1 = the present (systemic awareness, i)
+1 = the centred present-facing reference
+i = a quarter-turn integration symbol on the equator
 ∞ = the future-facing boundary
 
-The present (i) is BETWEEN the past (0) and the future (∞).
-The present (i) is where a finite being can represent alternatives and act.
-The present (i) is read symbolically as systemic awareness relating them.
+The present-facing finite locus is BETWEEN the boundary roles 0 and ∞.
+A situated dasein represents alternatives and acts from this finite locus.
+The quarter-turn by i is read symbolically as integration across perspectives.
 ```
 
 **Dimensional clarification:** this triad is a chart-reading, not a D-register
@@ -352,17 +376,17 @@ collapse, or cause.
 ```
 The Discovery:
 
-i is mathematically real as the perpendicular unit.
-i is read as the equator.
+i is a legitimate complex value: the imaginary unit.
+i is read as one equatorial point and as a symbol for the equatorial interface.
 i is read as a symbol for integration across actual and represented content.
 i is read as corpus-callosum-like integration.
 i is read as the present moment.
 
 The Mathematical Truth:
 
-i × ν = φ    (viability → coherence)
-i × φ = -ν   (coherence → inverted viability)
-i² = -1      (double application inverts)
+R_i(z)=iz       (multiplication by i is the quarter-turn operator)
+R_i(1)=i
+R_i²(z)=-z      (double application gives the additive opposite)
 
 The Philosophical Truth:
 

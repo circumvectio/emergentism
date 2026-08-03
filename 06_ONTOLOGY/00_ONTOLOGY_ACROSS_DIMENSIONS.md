@@ -82,10 +82,12 @@ Absence of a reducing law yields `currently_unreduced`, not irreducibility.
 Affirmative evidence is required for `candidate_strong`. A successful reduction
 changes classification without erasing a useful macro-description.
 
-## 4. Dasein at the D4/D5 threshold `[I]`
+## 4. Situated dasein at the D4/D5 threshold `[I]`
 
-In this lens, Dasein is a finite situated bearer of disclosure and action. It
-does not stand outside the world and is not identical with Being or Ground.
+Capital **Dasein** is all that can coherently and consistently exist, typed by
+possible world, register, and model. In this local lens, **situated dasein** is a finite D4 bearer of
+disclosure and action within that whole. It does not stand outside the world
+and is not identical with Being or Ground.
 
 - D4 names its actual body, access, memory, model tokens, reasoning events,
   commitments, actions, and receipts.

@@ -86,6 +86,7 @@ These are derived syntheses, not additional semantic owners:
 | Human question | Reader surface | State | Open boundary |
 |---|---|---|---|
 | What is reality? | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` §§1–6 | complete | W0, strong μ and ontology remain open |
+| What is Dasein? | K-2 ontology owner §0 + one-sitting §§1–2 | complete | capital Dasein is all that can coherently and consistently exist, indexed by compossible world/register/model; it is not exhausted by an inventory of examples, and the selected D1 distinction, D2 relation/configuration, D3 state assignment, D4 actuality, and D5 possibility registers all articulate contents within it; D0/D6 are boundary tokens rather than possession of Ground; situated dasein is a D4 bearer; Viśvarūpa, kenshō/satori, and mokṣa are interpretive disclosure/liberation crosswalks `[I/B-source]`, with Advaita Ātman–Brahman identity kept distinct from Zen no-independent-self grammar; the saṃsāra/līlā/dharma reading treats `-x+x=0` as symbolic whole-cycle symmetry, never proof of rebirth, karmic arithmetic, or cancellation of bearer-level harm |
 | What is a person? | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | complete | phenomenal consciousness and hard identity cases remain open |
 | What can be known? | the Door, evidence tiers and Soul Loop | complete | external calibration remains open |
 | What can be chosen? | Human Condition §4 and Lived Compass | complete | stronger metaphysical free will remains open |

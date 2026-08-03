@@ -51,6 +51,7 @@ no special signature beyond the user's scope and tool permissions.
 | [Symbol Design and Public Translation](01_SYMBOL_DESIGN_AND_PUBLIC_TRANSLATION.md) | Anti-capture symbol protocol |
 | [Truth Order and Niche Partition](02_TRUTH_ORDER_AND_NICHE_PARTITION.md) | Functional role without worth hierarchy |
 | [The Well Between Two Droughts](03_THE_WELL_BETWEEN_TWO_DROUGHTS.md) | Fable of thin grammar, test, and chosen vow |
+| [The Perennial Loop](04_THE_PERENNIAL_LOOP.md) | Derivative Dasein–Finity–liberation synthesis with counterexample discipline |
 
 ## Claim boundaries
 

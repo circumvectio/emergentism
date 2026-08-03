@@ -42,7 +42,10 @@ You mapped the traditions that fit and called it "convergent discovery." You did
 
 ### The Framework's Response
 
-**The framework does not claim all traditions converge. It claims the ones that identified the equator converge, and the ones that identified the poles are the predicted boundary conditions.**
+**The framework does not claim all traditions converge. It proposes that some
+traditions can be compared through center, pole, fall, return, capture, and
+non-capture. Resistant traditions remain counterexamples unless their coding
+was specified before inspection and yields discriminating predictions.**
 
 That is a thin perennial claim, not a thick one. It says the framework can
 locate recurring structures — center, pole, fall, return, capture,
@@ -51,21 +54,33 @@ that tradition certifies the formal kernel.
 
 Specifically:
 
-- **Cārvāka** (pure materialism, rejects ātman) is the framework's predicted L1 position: pure ν (viability, matter, capability), zero φ (coherence, meaning, ātman). The framework does not exclude Cārvāka — it *predicts* Cārvāka as the south pole of the sphere. Cārvāka is not a counterexample. It is a coordinate.
+- **Cārvāka** can be coded as a materialist stress case near the model's ν
+  pole. Calling that coding a *prediction* would require a preregistered rule
+  and an outcome not already contained in the description.
 
-- **Set worship** (chaos, disorder) is the framework's predicted south-pole anthropomorphization. The framework says the south pole exists (B → 0, pure extraction). A tradition that deifies chaos is a tradition that named the south pole and chose to worship it. Again, not a counterexample — a predicted position.
+- **Set traditions** can stress-test whether the south-pole metaphor explains
+  anything beyond the analyst's choice of labels. Their internal meanings must
+  not be reduced to "worship of disorder" merely to secure a fit.
 
-- **Legism** (strict legal control, rejection of virtue) is the framework's predicted response to coordination failure at scale. When the mesh cannot form (J below critical), the alternative is external enforcement (η > 0 enforced by law). The framework predicts that Legism emerges when φ-access is lost and ν must be coordinated by coercion. It is not wrong — it is the southward drift institutionalized.
+- **Fajia** can test the hypothesis that coercive coordination rises when
+  trust-based coordination fails. That becomes evidence only if the variables,
+  rival explanations, and historical cases are specified independently.
 
-- **Gnostic dualism** (two opposed principles) is the flat-plane reading of the sphere. On the plane, the two poles appear as two opposed substances. On the sphere, they are coordinate singularities of one manifold. Gnosticism is what the sphere looks like when projected onto a flat core state — exactly the Mercator Artifact the framework diagnoses.
+- **Gnostic dualisms** resist a one-manifold reading unless independent textual
+  evidence warrants that translation. Recasting two opposed principles as one
+  sphere is a framework interpretation, not a correction of the tradition.
 
-**The excluded traditions are not excluded. They are located.** The framework predicts where they sit on the sphere and why they look the way they do from that position.
+These traditions are therefore **proposed locations and live resistance
+cases**. Location after inspection is not prediction.
 
 ### Is the Response Sufficient?
 
 **Partially.**
 
-The structural response is sound — the framework can locate "misfitting" traditions at the poles. But the response risks being unfalsifiable: any tradition can be placed somewhere on the sphere, so no tradition can refute the framework. This is the "astrology problem" — if everything fits, nothing tests.
+The structural response is useful as exploratory coding but insufficient as
+evidence. If any tradition can be placed somewhere after inspection, no
+tradition can refute the framework. This is the "astrology problem" — if
+everything fits, nothing tests.
 
 The sufficient response requires **documentary evidence of due diligence**: an explicit appendix listing traditions examined, traditions mapped, and traditions that resist mapping. If the resisting traditions can all be placed at the poles with specific, testable predictions about their properties, the selection objection weakens. If they cannot, the objection stands.
 
@@ -73,10 +88,11 @@ The sufficient response requires **documentary evidence of due diligence**: an e
 
 ### What Would Falsify This Response
 
-A tradition that:
-1. Claims direct equatorial access (not pole-identified)
-2. Has a coherent internal logic
-3. Cannot be mapped onto the sphere at any position without forcing
+A preregistered comparison in which:
+
+1. independent coders cannot reliably apply the proposed categories;
+2. held-out traditions require post-hoc remapping or erased remainder; or
+3. a simpler rival classification predicts the same observations as well or better.
 
 If such a tradition exists and the framework cannot account for it, the convergence claim weakens from "all traditions point at the same thing" to "some traditions point at the same thing" — which is less parsimonious but not fatal.
 

@@ -23,7 +23,8 @@ the survivor is a useful specification layer—not a new foundational algebra.
 
 ```text
 TitanFrame       ::= zero_T | one_T | unbounded_T
-NarrativeMode    ::= TheInfinite_R | Finity_R | Infinity_R
+NarrativeMode    ::= TheInfinite_R | Finity_L | Infinity_R
+Finity_R         ::= Finity_L   // historical research-register alias
 Glyph
 EvalStatus       ::= value | undefined | indeterminate_form
                    | diverges | extended_value

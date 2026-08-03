@@ -22,8 +22,9 @@ parasitism, or immune-response dynamics.
 
 ## Dasein, Memes, and the Holobiont
 
-Memetics is where the Dasein game becomes socially dangerous. The finite reader
-does not choose from a clean menu of private thoughts; Dasein is embedded in
+Memetics is where disclosure within Dasein becomes socially dangerous. The
+finite reader—a situated dasein—does not choose from a clean menu of private
+thoughts; that situated bearer is embedded in
 language, platforms, institutions, rituals, markets, and egregores. These
 structures can raise the symbiont and holobiont together, or they can capture
 the symbiont as fuel for a pattern that no longer serves life.
@@ -54,8 +55,9 @@ real memetic defense.
 - Evolutionary dynamics of memes across mind and culture.
 - Anti-capture hygiene, defense-architecture models, and ancient egregore readings.
 - Applied memetic defense strategies, bounded as proposals unless implementation receipts exist.
-- The collective side of the Dasein game: how information structures raise or
-  capture the individual symbiont and collective holobiont.
+- The collective side of situated disclosure within Dasein: how information
+  structures raise or capture the individual symbiont and collective
+  holobiont.
 
 ## What It Must Not Own
 

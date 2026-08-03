@@ -96,7 +96,9 @@ content.
 **Heidegger — the correct location of the insight.** The question of why there
 is anything at all rather than nothing, and the priority of `Nicht-sein` to
 `Dasein`, is not a proof that nothing is possible. It is the observation that
-**Dasein is contingent** — that being-there carries no warrant for itself. That
+**Situated dasein and D4 actuality are contingent** — being-there carries no
+warrant for its own necessary physical instantiation. Broad Dasein names the
+coherent-consistent whole but supplies no such warrant. That
 observation survives everything below, and it is the part of the owner's claim
 that stands unharmed.
 
@@ -190,7 +192,8 @@ Why this is stronger than the axiom form:
 - it is honest about the selection in §3 rather than hiding it;
 - it binds the holder rather than the world, which is what the 5+1 Constitution
   is for — a refusal binds one's own hand;
-- it preserves the whole of the Heideggerian content: **Dasein is contingent**,
+- it preserves the whole of the Heideggerian content: **situated dasein is
+  contingent**, while broad Dasein-membership supplies no D4 necessity,
   and nothing in the framework may quietly re-derive necessity for it;
 - it is killable: if a sound argument establishes a necessary being, `R0` fails
   as a refusal and must be withdrawn openly.
@@ -532,7 +535,7 @@ forced.* It should be written as a **standard**, not a confession.
 | Plato's repair of non-being is difference, i.e. D1 | `[I]` | textual reading of the *Sophist* that avoids `τὸ ἕτερον` |
 | `•`/`○` are distinguished by relation, not intrinsic content | `[S]` | supply an intrinsic differentia for two wholly indeterminate seats |
 | `•` sits as the Good sits — beyond being, not a being | `[I]` | none; lens only, transfers no proof |
-| Dasein is contingent | `[I]` | a sound argument for a necessary being — which also kills `R0` |
+| situated dasein and D4 actual manifestation are contingent | `[I]` | a sound argument for a necessary being or necessarily physically instantiated bearer — which also kills `R0` |
 | `◇(nothing)` does **not** entail that all things are possible | `[A]` | the two-world counterexample in §5A.1 fails |
 | `Compat(∅) ⊇ Compat(w)` — the empty state excludes least | `[A]` | exhibit a state admitting an addition the empty state forbids |
 | the poles are co-instituted; `ι` is total iff both are present | `[A]` | define a total inversion on a one-pole compactification |

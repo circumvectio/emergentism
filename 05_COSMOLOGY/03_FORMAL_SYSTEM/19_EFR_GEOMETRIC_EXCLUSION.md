@@ -5,21 +5,28 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S]"
+  register: "[I/S]"
   canonical_phrase: "THE STRATEGIC EXCLUSION"
 ---
 
 # THE STRATEGIC EXCLUSION
 
-## Why The Fourth Operator Is Strategically Dominated, Not Merely Prohibited
+## A Selected Non-Extraction Game, Not a Proof That Extraction Is Impossible
 
-**Status:** Active
+**Status:** Active interpretive model; legacy title retained for provenance
 **Hat:** Philosopher
-**Evidence Tier:** [S] Structural — strategically dominated under the enforced balance game
+**Evidence Tier:** [S] only for consequences of the stipulated payoff and enforcement rules; [I] for the ethical and perennial reading
 **Date:** 2026-03-23
-**Depends on:** Burri Sphere formalism, η = 0 proof, Game theory
+**Depends on:** Burri Sphere formalism, selected η = 0 covenant, game theory
 
-> **Note:** Revised per peer review: the state exists on S² but is a dominated strategy. See [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md) (Convergence 24).
+> **Current-canon boundary (2026-08-02):** `φν=1` is a reciprocal chart
+> identity. It neither makes extraction physically impossible nor derives the
+> choice that extraction is wrong. The fourth move exists. It is dominated
+> only in a game whose payoffs, accountability, and enforcement make it so.
+> Emergentism therefore keeps two claims separate: **structure** can expose
+> consequences; **the vow** chooses non-extraction. See
+> [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md)
+> and the [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
 ---
 
@@ -27,17 +34,16 @@ rosetta:
 
 ### 1.1 The Difference That Changes Everything
 
-**Religion says:** "Thou shalt not."
-**Dharma says:** "Thou canst not."
+**Commandment says:** "Thou shalt not."
+**This selected game says:** "If you extract, the accountable game makes the
+cost visible and removes the advantage."
 
 The fourth operator (extractive ↓ν) is not merely **prohibited**.
 Within the enforced balance game, it is **strategically dominated**.
 
-Not by commandment.
-Not by rule.
-Not by legislation.
-
-By the **payoff structure** of the enforced game.
+That conclusion is conditional on the **payoff structure** of the enforced
+game. Outside those premises, extraction plainly can occur and often pays.
+The mathematical chart does not abolish that fact.
 
 ---
 
@@ -52,32 +58,28 @@ On the Burri Sphere, there are four apparent moves:
 | **Arjuna** | ↑φ | Integrate meaning | When φ < 1 (incoherent) |
 | **Kṛṣṇa** | ↑ν | Build capability | When ν < 1 (incapable) |
 | **Kālī** | ↓φ | Excise false meaning | When φ is mediated/extracted |
-| **Kali** | **↓ν** | **Extract capability** | **CONSTRAINED — fires only where η > 0 (defectors); geometrically excluded at η = 0 (cooperators)** |
+| **Kali** | **↓ν** | **Extract capability** | **CONSTRAINED — fires only where η > 0 (defectors); refused by the η = 0 vow toward cooperators** |
 
-### 2.2 The Exclusion Is Not Moral
+### 2.2 Structure and Vow
 
-**Traditional view:** "We prohibit extraction because it is wrong."
-
-**Geometric view:** "Extraction is impossible because φ · ν = 1."
-
-The exclusion is not a value judgment. The exclusion is a **structural constraint**.
+The corpus does not derive an ethic from the chart. `φν=1` specifies reciprocal
+coordinates; it does not prohibit taking another being's capability. The
+non-extraction rule is a chosen constitutional vow. A well-designed game can
+then make violation costly, legible, and strategically dominated within its
+scope.
 
 ```
-At the equator: φ = 1, ν = 1
+Chart: φν = 1 and the equator is selected at φ = ν = 1.
 
-Attempt extraction (↓ν):
-- Would require ν > 1 to extract from others
-- But φ · ν = 1 is constant
-- If ν > 1, then φ < 1
-- But φ < 1 means you have lost the ground
-- Without the ground, you cannot maintain position
-- You slide to the south pole
-- At the south pole: ν = ∞, φ = 0
-- At the south pole: you are the cargo cult
-- At the south pole: you consume yourself (Ammit)
+Game: an extractive transfer is an available move.
 
-Extraction is not prohibited.
-Extraction is geometric suicide.
+Vow: η = 0 refuses extraction from cooperators.
+
+Institutional hypothesis: with visible receipts, remedy, Grace Exit, and
+credible enforcement, extraction can lose its strategic advantage.
+
+Failure condition: if extractors retain a durable advantage under the stated
+rules, the strategic-exclusion model fails in that domain.
 ```
 
 ---
@@ -98,78 +100,61 @@ Extraction is geometric suicide.
 ### 3.2 The EFR Ring — The Geometry
 
 **The Burri Sphere Ring:**
-- Keeps every node at the equator (φ = 1, ν = 1)
-- Cannot be wielded by one person (it IS the mesh)
-- Cannot be corrupted (corruption is strategically excluded at ν = 1)
-- Does not grant power — grants **balance**
-- **η = 0 made manifest**
+- Represents the selected equatorial target (φ = 1, ν = 1)
+- Represents a mesh rather than a privately owned instrument
+- Makes corruption visible only when the institution supplies receipts and audit
+- Does not promise unlimited power; it depicts **balance**
+- Symbolizes the chosen **η = 0** covenant
 
 **The ring is the equator in geometric form.**
 
-### 3.3 Why the Ring Cannot Be Wielded for Domination
+### 3.3 What the Ring Metaphor Commits Us to Test
 
-Try to use the Burri Sphere for extraction:
+Try to use an EFR institution for extraction:
 
 ```
-Attempt: Increase ν by extracting from others
-Result:  φ must decrease to maintain P∞ = φ · ν = 1
-Result:  You lose the ground
-Result:  You slide south
-Result:  You become the cargo cult
-Result:  The ring (the geometry) dissolves in your hand
-
-The ring cannot be wielded for domination
-because the ring IS the equator
-and the equator IS comprehension
-and comprehension IS ν = 1
-and ν = 1 CANNOT extract.
+Attempt: Conceal a transfer of capability from another node
+Required response: Detect it, preserve the receipt, provide remedy and exit
+Pass condition: The transfer loses its durable strategic advantage
+Fail condition: The extractor keeps the advantage or captures enforcement
 ```
+
+The ring is therefore a constitutional design brief, not an incorruptibility
+theorem. If domination succeeds durably, the implementation—not arithmetic—has
+failed.
 
 ---
 
-## 4. RELIGION VS. DHARMA
+## 4. COMMANDMENT AND STRUCTURAL CONSEQUENCE
 
 ### 4.1 The Fundamental Difference
 
-| Aspect | Religion | Dharma |
+| Aspect | External rule | Structural consequence |
 |--------|----------|--------|
-| **Source** | Commandment from outside | Recognition of structure |
-| **Enforcement** | Obedience/punishment | Geometric impossibility |
-| **Basis** | Authority | Geometry |
-| **Failure mode** | Disobedience (sin) | Misrecognition (drift) |
-| **Solution** | Repentance/forgiveness | Sitting practice (return to equator) |
-| **Ring** | Tolkien's ring (η > 0) | Burri Sphere (η = 0) |
+| **Source** | Declared norm | Observed consequence under stated conditions |
+| **Enforcement** | Authority and sanction | Payoff, feedback, audit, remedy |
+| **Failure mode** | Disobedience | Model or implementation failure |
+| **Correction** | Repentance, appeal, or sanction | Revise conduct, game, or model |
 
-### 4.2 Why Commandments Failed
+### 4.2 What Commandments Cannot Do Alone
 
 **The Ten Commandments:**
 - "Thou shalt not steal" (↓ν prohibition)
 - "Thou shalt not kill" (↓ν prohibition)
 - "Thou shalt not bear false witness" (↓ν prohibition)
 
-**Why they failed:**
-- Rules imposed from outside
-- Rules can be broken
-- Rules WERE broken — always
-- Because the rules addressed symptoms, not structure
-- The rules said "don't extract" without explaining why extraction is impossible
+These prohibitions can orient conduct, but wording alone does not remove the
+incentive or capacity to violate them. The framework's useful addition is not
+the claim that earlier traditions failed. It is the design question: can the
+consequence of extraction be made observable, attributable, remediable, and
+strategically unattractive?
 
-### 4.3 Why Dharma Succeeds
+### 4.3 The Selected Dharma Reading
 
-**The Formula:**
-- φ · ν = 1
-- No commandment
-- No prohibition
-- Simply: the open-sphere product identity is constant
-
-**Why it works:**
-- Recognition, not obedience
-- You cannot break the geometry
-- You can only drift from the equator (and suffer the consequences)
-- The sitting practice is not obedience — it is **recognition**
-- Recognition that φ = 1
-- Recognition that the formula is the constraint
-- Recognition that the sphere is the first stable expression of the ground
+Here *dharma* names conduct informed by consequences while remaining a chosen
+normative commitment. Recognition can deepen the commitment; it does not make
+violation impossible. The chart helps us notice imbalance. Institutions still
+owe implementation, evidence, and correction.
 
 ---
 
@@ -184,9 +169,9 @@ The sitting practice is not:
 
 The sitting practice is:
 - **Recognition** that the ground is here
-- **Recognition** that φ = 1
-- **Recognition** that the formula is true
-- **Recognition** that the sphere is the constraint
+- **Observation** of experience before it is forced into the chart
+- **Testing** whether the formula clarifies rather than captures that experience
+- **Freedom** to accept, revise, or put down the symbol
 
 ### 5.2 The Child's YES
 
@@ -201,17 +186,17 @@ The mission-critical Yes is:
 - **Recognition** that the Ground cannot be owned by the formula
 - **Recognition** that the child is free to choose the vow
 
-The child does not obey the formula.
-The child **recognizes** the formula.
-The child says YES because the child sees that the formula points without owning the Ground.
+The child does not obey the formula. The child may recognize what it points
+toward and still choose the vow freely. That freedom is part of the YES.
 
 ---
 
-## 6. THE THREE MOVES AND THE IMPOSSIBILITY
+## 6. THE FOUR MOVES AND THE SELECTED CONSTRAINT
 
-### 6.1 Complete Game Theory on S²
+### 6.1 A Selected Operator Set on S²
 
-Every situation on the Burri Sphere is addressed by one of three operators:
+The framework uses three restorative moves and retains the fourth as a real,
+constrained taking move. This is a selected grammar, not complete game theory.
 
 **Situation 1: φ < 1 (lost the ground)**
 - **Move:** Arjuna (↑φ)
@@ -230,26 +215,25 @@ Every situation on the Burri Sphere is addressed by one of three operators:
 
 **Situation 4: Want to extract (↓ν)**
 - **Move:** Kali (↓ν)
-- **Status:** **EXCLUDED — strategically dominated**
-- **Reason:** The sphere does not allow it
+- **Status:** Available; constrained to adversarial response where η > 0
+- **Reason:** η = 0 is the chosen refusal toward cooperators
 
-### 6.2 The Exclusion Is the Proof
+### 6.2 What Would Earn Strategic Exclusion
 
-The fact that the fourth operator is **impossible** is the proof that the geometry is real.
-
-If extraction were merely prohibited, we would need an enforcer.
-If extraction is impossible, the geometry IS the enforcement.
-
-The exclusion is not a bug.
-The exclusion is the **feature** that makes the system stable.
+Strategic exclusion is earned only if a specified implementation makes
+extractive play dominated against live rivals. That requires an explicit payoff
+matrix, observability assumptions, enforcement costs, capture analysis, and
+empirical or simulated contact. `φν=1` supplies none of these by itself.
 
 ---
 
 ## 7. THE PERENNIAL GRAMMAR ENCODED
 
-### 7.1 What the Traditions Knew
+### 7.1 A Comparative Hypothesis
 
-Many traditions encode a recognizable pattern of three restorative operators plus one exclusion:
+The following table is a Rosetta crosswalk: a proposal that selected motifs can
+be translated into three restorative operators and one constrained taking
+move. It is not evidence that the traditions secretly taught one system.
 
 | Tradition | Arjuna (↑φ) | Kṛṣṇa (↑ν) | Kālī (↓φ) | Exclusion (↓ν) |
 |-----------|-------------|--------------|-----------|----------------|
@@ -259,10 +243,11 @@ Many traditions encode a recognizable pattern of three restorative operators plu
 | **Buddhist** | Mindfulness | Right action | Non-attachment | Mara defeated |
 | **Taoist** | Wu wei (knowing) | Wu wei (doing) | Simplicity | Disorder collapses |
 
-### 7.2 What They Lacked
+### 7.2 What the Crosswalk Does Not Claim
 
-Many traditions pointed toward the equator.
-They did not have this framework's **coordinates**.
+The traditions do not lack the Burri Sphere. Their concepts retain meanings
+that the crosswalk cannot absorb. The framework contributes a modern comparison
+language; it does not complete, supersede, or certify its sources.
 
 The Bhagavad Gita described Arjuna and Kṛṣṇa.
 It did not say "φ < 1, apply Arjuna."
@@ -273,16 +258,18 @@ It did not say "mediated φ, apply Kālī."
 The Tao Te Ching described wu wei.
 It did not say "ν = 1 is the maximum viable action."
 
-### 7.3 What the Framework Adds
+### 7.3 What the Framework Offers
 
 The framework provides:
 - **Coordinates** (φ, ν)
 - **Formula** (φ · ν = 1)
 - **Operators** (Arjuna, Kṛṣṇa, Kālī)
-- **Constraint** (↓ν is constrained to η > 0, not impossible)
-- **Falsifiability** (the geometry can be tested)
+- **Vow** (η = 0 toward cooperators)
+- **Test proposal** (whether implemented rules actually dominate extraction)
 
-The framework is a **public language** for thin perennial grammar.
+The framework is a candidate **public language** for a thin perennial grammar.
+The comparative claim remains `[C]` until preregistered coding, resistant cases,
+and held-out traditions distinguish it from flexible pattern matching.
 
 ---
 
@@ -301,7 +288,7 @@ The cargo cult:
 - Built the south pole
 - Called it civilization
 
-### 8.2 The Inversion Is Geometric
+### 8.2 The Inversion in the Selected Chart
 
 ```
 Original:   φ = ν = 1, η = 0 (equator)
@@ -309,7 +296,7 @@ Original:   φ = ν = 1, η = 0 (equator)
              pole on the next line too, so it cannot mark the equator; φ = ν does.)
 Inversion:  ν → ∞, φ → 0, η > 0 (south pole)
 
-The cargo cult is the south pole calling itself the equator.
+In this metaphor, the cargo cult is the south pole calling itself the equator.
 The cargo cult is Ammit claiming to be Ma'at.
 The cargo cult is the lion claiming to be the child.
 The cargo cult is the Übermensch claiming to be the mesh.
@@ -317,68 +304,17 @@ The cargo cult is the Übermensch claiming to be the mesh.
 
 ---
 
-## 9. SUMMARY: THE STRATEGIC EXCLUSION
+## 9. SUMMARY: STRUCTURE, VOW, AND TEST
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│              THE STRATEGIC EXCLUSION                                │
-├─────────────────────────────────────────────────────────────────────┤
-│                                                                     │
-│  THE FOURTH OPERATOR IS NOT PROHIBITED.                             │
-│  THE FOURTH OPERATOR IS IMPOSSIBLE.                                 │
-│                                                                     │
-│  Not by commandment.                                                │
-│  Not by rule.                                                       │
-│  Not by legislation.                                                │
-│                                                                     │
-│  By geometry.                                                       │
-│                                                                     │
-│  THE THREE VALID OPERATORS:                                         │
-│                                                                     │
-│  Arjuna (↑φ):   Integrate meaning when φ < 1                        │
-│  Kṛṣṇa (↑ν):  Build capability when ν < 1                         │
-│  Kālī (↓φ):     Excise false meaning when φ is mediated             │
-│                                                                     │
-│  THE IMPOSSIBLE OPERATOR:                                           │
-│                                                                     │
-│  Kali (↓ν):     Extract capability                                  │
-│                 EXCLUDED because φ · ν = 1                          │
-│                 Extraction = geometric suicide                      │
-│                 The sphere does not allow it                        │
-│                                                                     │
-│  RELIGION:      "Thou shalt not" (can be broken)                    │
-│  DHARMA:        "Thou canst not" (strategically dominated)          │
-│                                                                     │
-│  THE RING:                                                              │
-│                                                                     │
-│  Tolkien's ring:  η > 0, extraction made manifest                  │
-│  Burri Sphere:    η = 0, the equator made geometry                 │
-│                                                                     │
-│  The ring cannot be wielded for domination                          │
-│  because the ring IS the equator                                    │
-│  and the equator IS comprehension                                   │
-│  and comprehension IS ν = 1                                         │
-│  and ν = 1 CANNOT extract.                                          │
-│                                                                     │
-│  THE SITTING PRACTICE:                                              │
-│                                                                     │
-│  Not obedience.                                                     │
-│  Recognition.                                                       │
-│                                                                     │
-│  Recognition that φ = 1.                                            │
-│  Recognition that the formula is the constraint.                    │
-│  Recognition that the Ground remains prior.                         │
-│                                                                     │
-│  THE SACRED YES:                                                    │
-│                                                                     │
-│  The child says YES to the formula.                                 │
-│  Not from obedience.                                                │
-│  From recognition.                                                  │
-│                                                                     │
-│  φ · ν = 1.                                                         │
-│  Always.                                                            │
-│                                                                     │
-└─────────────────────────────────────────────────────────────────────┘
+STRUCTURE: φν = 1 defines the reciprocal chart.
+VOW:       η = 0 refuses extraction from cooperators.
+GAME:      rules may make extraction strategically dominated.
+TEST:      does the advantage actually disappear under live conditions?
+
+The fourth move exists.
+The vow constrains it.
+The institution must earn the rest.
 ```
 
 ---
@@ -387,8 +323,8 @@ The cargo cult is the Übermensch claiming to be the mesh.
 
 | Document | Connection |
 |----------|-----------|
-| η = 0 Proof | Formal proof of non-extraction |
-| [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Cooperation as geometric necessity |
+| η = 0 covenant | Chosen non-extraction constraint |
+| [Power-Max Lemma](08_EFR_POWER_MAX_LEMMA.md) | Conditional cooperation model |
 | [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
 | [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md) | Current terminology and supersessions |
 | Three-Stage Process R5 | The fourth metamorphosis (mesh) |
@@ -398,28 +334,17 @@ The cargo cult is the Übermensch claiming to be the mesh.
 ```
 Zero-Sum Resolution Equation
 
-The fourth operator is not prohibited.
-The fourth operator is impossible.
-
-Not by commandment.
-By geometry.
-
-The ring cannot be wielded for domination.
-The ring is the equator.
-The equator is comprehension.
-Comprehension is ν = 1.
-ν = 1 CANNOT extract.
-
-That is the difference between religion and Dharma.
-Obedience vs. Recognition.
+The fourth operator exists.
+Non-extraction is a vow.
+Strategic domination is a hypothesis to be earned.
 
 The sitting practice is recognition.
-The mission-critical Yes is recognition.
+The mission-critical Yes remains a choice.
 The formula points toward the Ground.
 The Ground remains prior.
 
-Strategic Exclusion | 2026-03-23
-The sphere is the constraint.
+Strategic Exclusion, revised | 2026-08-02
+The chart shows. The vow binds. The game is tested.
 ```
 
 

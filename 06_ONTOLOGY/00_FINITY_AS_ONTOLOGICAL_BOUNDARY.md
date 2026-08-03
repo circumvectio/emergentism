@@ -86,14 +86,17 @@ Finity says that presence is not merely a third item beside zero and infinity.
 It is the relational site where absence and totality can become sayable without
 either one being possessed.
 
-This is why the L6 core state names Dasein as the finite witness-agent:
+This is why the inherited L6 chain should now be read as the emergence of a
+**situated dasein**, not as a definition of capital Dasein:
 
 ```text
-Ground -> Being -> Teleological Force -> Dasein -> beings
+Ground -> Being -> Teleological Force -> situated dasein -> disclosed beings
 ```
 
-Dasein is not Being itself. Dasein is the finite `⊙` in whom Being is
-encountered, questioned, and enacted.
+Capital **Dasein** names all that can coherently and consistently exist across
+possible worlds, registers, and models. A **situated dasein** is a finite D4 witness within that
+whole, in whom Being is encountered, questioned, and enacted. The local witness
+does not exhaust either Dasein or Finity.
 
 ## Stabilize: The Dimensions of Finity
 
@@ -170,7 +173,8 @@ Zero names absence.
 Infinity names totality.
 Finity names disclosed relation.
 Being is closure.
-Dasein is finite disclosure.
+Dasein is all that can coherently and consistently exist.
+Situated dasein is finite disclosure.
 The Ground remains prior.
 ```
 
