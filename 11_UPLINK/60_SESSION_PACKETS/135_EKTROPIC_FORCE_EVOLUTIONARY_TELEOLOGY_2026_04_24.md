@@ -293,6 +293,19 @@ container for its own coherence.
 [I/C] for the biological-to-framework mapping; [C] for cross-layer extension;
 the Bergmann's rule observation itself is established biology.
 
+> **Mechanism/tendency register note (L3 audit 2026-08-03,
+> `08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md` Finding 1).** The
+> ektropic image above is Bergmann's *mechanism* — surface-area-to-volume =
+> retention geometry, the syntropic refusal. It is **not** Bergmann's
+> *tendency-as-rank* (colder→larger read as "bigger = higher/better"), which is
+> killed as a scala-naturae hazard in
+> `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/33_PACK_ECO7_EXTENSIONS_BIO_RULES_2026_08_03.md`
+> §6 (the directional-tendency class biology displaced). The two readings of
+> Bergmann address different claims: mechanism-as-image survives; tendency-as-rank
+> stays killed. Apply the image to the *substrate's* retention geometry (the
+> archived doctrine holding coherence against dissolution), never to rank the
+> runtime organism.
+
 ---
 
 ## 7. Test Surface

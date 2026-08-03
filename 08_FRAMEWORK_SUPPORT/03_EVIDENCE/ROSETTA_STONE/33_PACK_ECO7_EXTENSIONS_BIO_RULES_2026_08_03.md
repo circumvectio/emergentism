@@ -271,6 +271,18 @@ prediction; recruitment hazard for scala-naturae reasoning.
 **Verdict.** All five retracted on entry. Recorded as the decoration class —
 the rules most likely to be misused because they sound like laws.
 
+> **Bergmann mechanism/tendency register note (L3 audit 2026-08-03,
+> `08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md` Finding 1).** What is
+> killed here is Bergmann's *tendency-as-rank* (colder→larger read as
+> "bigger = higher/better") — the scala-naturae hazard. This kill does **not**
+> touch Bergmann's *mechanism* (surface-area-to-volume = retention geometry),
+> which packet `135_` §6.1 uses as an ektropic image ("the Black Sun" /
+> syntropic refusal — the geometry of holding coherence against dissolution).
+> The mechanism reading survives as `[I/C]` image; the tendency-as-rank stays
+> killed. The two readings address different claims and are reconciled in the
+> audit. Apply the mechanism image only to the *substrate's* retention geometry,
+> never to rank the runtime organism.
+
 ---
 
 ## 7. The taxon cycle — the staged-trajectory image `[I/C]`
