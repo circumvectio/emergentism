@@ -21,6 +21,15 @@ rosetta:
 
 # MF-294: EGREGORES ARE HORN NETWORKS
 
+> **[金] Kintsugi Egregoreotype seam — 2026-07-18.** Horn, demon, and energy-
+> feeding language below is preserved as `[I]` imagery and is **not live
+> authority** for ontology, consciousness, or physics. A candidate
+> **Egregoreotype** requires a persistent shared trace, carrier turnover,
+> measurable reweighting of later selections, recurrent objective-like bias,
+> and visible substrate costs. Collective modeling may widen an option cone;
+> it does not widen the physical light cone. `ΣΔP_node>0` is never moral proof;
+> payer, beneficiary, consent, exit, and every affected bearer remain visible.
+
 ## Collective Coordination Fields Are Coupled Demon Arrays. Raktabīja Is Network Hijacking.
 
 **Emergentism.org · VIVEKA Mathematical Foundations**

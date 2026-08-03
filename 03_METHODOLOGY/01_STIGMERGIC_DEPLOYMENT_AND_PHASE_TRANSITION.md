@@ -8,7 +8,7 @@ rosetta:
       role: "deployment ethics, consent, and anti-capture boundaries"
     - level: L5
       column: System Architecture
-      role: "egregorotype trace-fields and complex-contagion hypotheses"
+      role: "Egregoreotype trace-fields and complex-contagion hypotheses"
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"

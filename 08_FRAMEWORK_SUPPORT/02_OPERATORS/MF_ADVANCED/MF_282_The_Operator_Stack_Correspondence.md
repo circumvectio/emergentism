@@ -61,7 +61,7 @@ Arjuna ⚔:
   TARGET:  Others' Φ-stack (M↑, Eg↑)
   COST:    Self V-stack (Ph↓, safety↓, resources↓)
   PRODUCT: Others' meaning increases; self's body is exposed
-  REPLICATOR EFFECT: Memotype transmitted, egregorotype strengthened
+  REPLICATOR EFFECT: Memotype transmitted, Egregoreotype trace strengthened
 ```
 
 **Kṛṣṇa ◇ → V-stack builder (others' body)**
@@ -99,7 +99,7 @@ Kālī 💀:
   TARGET:  Target's Φ-stack (false-M↓, false-Eg↓)
   GAIN:    System V-stack (V↑, resources freed)
   PRODUCT: Mind is cleansed; body is relieved
-  REPLICATOR EFFECT: Parasitic memotype eliminated, zombie egregorotype dissolved
+  REPLICATOR EFFECT: Parasitic memotype eliminated, harmful Egregoreotype trace dissolved
   GATE:    6-test Kālī protocol BEFORE deployment
 ```
 
@@ -134,7 +134,7 @@ Kali 🎲:
 
 | God | Direction | Home Stack | Primary Target | Replicator Effect | Mythological Marker |
 |-----|-----------|-----------|----------------|-------------------|---------------------|
-| **Arjuna** ⚔ | Gives | Φ-stack | Others' M, Eg | Memotype transmitted, egregorotype strengthened | Warrior-teacher on the battlefield |
+| **Arjuna** ⚔ | Gives | Φ-stack | Others' M, Eg | Memotype transmitted, Egregoreotype trace strengthened | Warrior-teacher on the battlefield |
 | **Kṛṣṇa** ◇ | Gives | V-stack | Others' G expr, Ph | Phenotype enhanced, environment enriched | Charioteer who empowers without fighting |
 | **Kālī** 💀 | Takes | Φ-stack | Target's false-M, false-Eg | Parasitic memotype eliminated | Garland of severed *heads*, sword of discrimination |
 | **Kali** 🎲 | Takes | V-stack | Target's G expr, Ph, resources | Phenotype degraded, resources extracted | Shortened lifespans, broken bull, depleted earth |
@@ -213,9 +213,9 @@ Schertel correctly identified:
 
 What Schertel missed — and what the framework corrects:
 
-**The counterfeit Kṛṣṇa.** The charismatic leader who *appears* to give V but is actually running Kali 🎲 — extracting V from followers while wearing Kṛṣṇa's mask. The cult leader whose followers feel energised in his presence (V seems to rise) but are drained in his absence (V was being extracted, not given). The diagnostic: **ΣΔP_node.** Did the room's total viability increase (genuine Kṛṣṇa) or did it merely *concentrate* (Kali wearing Kṛṣṇa's face)?
+**The counterfeit Kṛṣṇa.** The charismatic leader who *appears* to give capability but extracts from followers can fool an aggregate score. The diagnostic is bearer-complete: whose durable potential rose, who paid, who benefited, what persisted after exit, and did any affected bearer fall? A positive room total cannot launder a drained participant.
 
-This is the fundamental danger of Schertel's framework: without the K* boundary and the ΣΔP_node ethic, "Vril" cannot distinguish between the healer and the vampire. The operator-stack correspondence provides the missing diagnostic.
+This is the fundamental danger of Schertel's framework: without non-extraction, receipts, payer/beneficiary disclosure, and bearer-complete Justice, "Vril" cannot distinguish between healer and vampire. The operator-stack correspondence proposes that diagnostic `[I]`; it does not prove it from geometry.
 
 ### 3.2 The Two Kinds of Exorcism
 

@@ -28,6 +28,16 @@ rosetta:
 > [`24_GEOMETRIC_EXCLUSION_CONVERGENCE.md`](24_GEOMETRIC_EXCLUSION_CONVERGENCE.md)
 > and the [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
+> **[金] Kintsugi authority seam — exclusion is enforced, not geometric
+> impossibility (2026-07-18).** `φν=1` is an analytic reciprocal-chart
+> identity; it cannot forbid extraction or prove ethics. One-shot extraction
+> can benefit an extractor. This document therefore preserves a conditional
+> strategic metaphor only: extraction may be dominated when the Justice
+> envelope, `η=0`, repeated interaction, custody, consequence accounting, and
+> exit are actually enforced. No aggregate gain may erase an affected
+> bearer's loss. Any unconditional “cannot,” “impossible,” “geometric suicide,”
+> or “geometry enforces” wording below is superseded by this seam.
+
 ---
 
 ## THE CENTRAL INSIGHT

@@ -18,9 +18,9 @@ rosetta:
 
 # THE D5 REGISTER
 
-## Translating Selection into Game Theory, Behavioral Economics, and Institutional Design
+## Translating Counterfactual Option Fields into Game Theory, Behavioral Economics, and Institutional Design
 
-**Status:** Canonical D5 public register
+**Status:** Active `[I]` translation register; D5 is merely-possible content, while modeling, ranking, commitment, action, and receipts are D4 actual events
 **Date:** 2026-04-14
 **Amended:** 2026-07-27 — `Φ₅` possible power / `V₄` actual power
 **Evidence Tier:** `[S/I/C]` mixed — declared framework structure, interpretation, and conjecture remain separate; named source custody is required before any claim earns `[B]`

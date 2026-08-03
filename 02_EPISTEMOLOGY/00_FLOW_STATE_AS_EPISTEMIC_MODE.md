@@ -29,6 +29,14 @@ hemispheric, and phenomenological mapping
 
 ---
 
+> **[金] Kintsugi authority seam — phenomenological correspondence only
+> (2026-07-18).** The reciprocal-chart identity `φν=1` does not describe or
+> cause a psychological state. The challenge/skill, hemispheric, contemplative,
+> and equator/flow correspondences below are an `[I]` comparison and become
+> empirical only through separately specified, falsifiable `[C]` measures.
+> “Off-sphere” is not a diagnosis, universal flow potential is not implied by
+> the chart, and no ethical or ontological conclusion follows from it.
+
 ## 1. The Mapping
 
 The reciprocal-chart constraint **φ · ν = 1** is an analytic identity on one

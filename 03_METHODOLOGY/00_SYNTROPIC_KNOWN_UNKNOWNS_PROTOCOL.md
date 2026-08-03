@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: System Architecture
-      role: "Replicator Stack, trophic cascade, and egregorotype research agenda"
+      role: "Replicator Stack, trophic cascade, and Egregoreotype research agenda"
     - level: L5
       column: Evolutionary biology
       role: "biometric and epigenetic measurement boundary"
@@ -61,7 +61,7 @@ Stress physiology can be measured through established biometric and biochemical 
 The Replicator Stack predicts that persistent top-down trace-fields can route through:
 
 ```text
-egregorotype
+Egregoreotype
   -> memotype selection
   -> extended phenotype
   -> phenotype stress / behaviour
@@ -526,7 +526,7 @@ The assignments are one research program because each protects a different layer
 |---|---|---|
 | Epigenetic Quantification | phenotype / epigenotype | no proof that syntropy changes bodies |
 | Epistemological Immunology | memotype / memory | the Egregore becomes poisonable |
-| Stigmergic Deployment | egregorotype / trace-field | the cure cannot survive the environment |
+| Stigmergic Deployment | Egregoreotype / trace-field | the cure cannot survive the environment |
 
 The program is not trying to win an argument.
 

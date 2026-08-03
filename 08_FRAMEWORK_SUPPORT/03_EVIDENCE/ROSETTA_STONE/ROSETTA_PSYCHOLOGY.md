@@ -24,6 +24,13 @@ evidence_tier: "[B] for attributed developmental-theory background; [I] for stru
 
 # rosetta stone: PSYCHOLOGY & DEVELOPMENT
 
+> **[金] Kintsugi Rosetta seam — 2026-07-18.** This is an `[I]` translation
+> lens with source-specific `[B]` anchors and published non-fits, not evidence
+> that psychology discovered seven positions on `S²`. The number of rows is a
+> design choice; Piaget/Kohlberg are not independent; L5–L7 are framework
+> extensions. Legacy convergence and “same structure” language below is **not
+> live authority** where it implies necessity, independence, or proof transfer.
+
 ## L-Levels Mapped to Developmental Psychology
 
 **Hat:** 🔬 Cross-Domain Translation (Psychology)

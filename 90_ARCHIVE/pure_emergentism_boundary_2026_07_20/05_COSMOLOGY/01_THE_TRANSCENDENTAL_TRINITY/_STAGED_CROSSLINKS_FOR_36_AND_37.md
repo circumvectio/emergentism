@@ -130,7 +130,8 @@ forming the energetic + selective + somatic-engineering picture of F5:
   D5 replicator stack as ecological isomorph of D4 food web.
   Energy flows from genes to egregores the same way it flows
   from tomatoes to eagles. Lindeman attrition geometry, decomposer
-  requirement, D6 ≡ D0 closure. Strong/weak emergence asymmetry.
+  requirement, non-μ r₆ return image. Per-crossing reduction status;
+  no universal strong/weak emergence asymmetry.
   Red Queen theorem: predator must dominate on BOTH phi AND nu
   (multiplicatively, not additively). Reframes eta=0 as Red Queen
   survival requirement, not moral preference. Independent Reviewer / L6 as

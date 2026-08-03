@@ -141,7 +141,8 @@ This is more than data science. It is a training path for how agents, institutio
 
 ## 9. Saturation and Return
 
-`D6 ≡ D0` suggests a broader cross-domain pattern:
+The non-`μ` interpretive return `r₆:D6↝D0` suggests a broader cross-domain
+pattern without identifying the endpoints:
 
 - saturation
 - exhaustion

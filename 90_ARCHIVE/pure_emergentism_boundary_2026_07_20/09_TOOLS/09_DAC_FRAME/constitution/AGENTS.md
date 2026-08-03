@@ -7,7 +7,7 @@ rosetta:
       column: Evidence-Ladder Audit
       role: "separate route-card instructions from dated proof artifacts and runtime receipts"
     - level: L4
-      column: K2/Irreversibility Gate
+      column: Private-DAV K2/Irreversibility Gate
       role: "route irreversible actions through envelope staging and consent"
     - level: L6
       column: Owner-Lane Boundary
@@ -19,7 +19,7 @@ rosetta:
   canonical_phrase: "constitution — Agent Routing"
 title: "constitution — Agent Routing"
 status: "ROUTE CARD — constitutional owner lane"
-evidence_tier: "[I] for routing discipline; [B] only for dated proof artifacts, K2 envelopes, and runtime receipts."
+evidence_tier: "[I] for routing discipline; [B] only for dated proof artifacts, private-DAV K2 envelopes, and runtime receipts."
 ---
 
 # constitution — Agent Routing
@@ -31,7 +31,7 @@ evidence_tier: "[I] for routing discipline; [B] only for dated proof artifacts, 
 
 **Rosetta boundary:** [I] This route card governs how agents enter the
 constitution lane. It does not certify runtime deployment, public claims, or
-nested draft authority without dated proof artifacts, K2 envelopes, or owner-lane
+nested draft authority without dated proof artifacts, private-DAV K2 envelopes, or owner-lane
 receipts.
 
 ## Read First
@@ -50,6 +50,6 @@ receipts.
 
 - [I] Do not upgrade runtime claims without dated proof artifacts.
 - [I] Do not treat draft specs as public-facing claims.
-- [I] All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

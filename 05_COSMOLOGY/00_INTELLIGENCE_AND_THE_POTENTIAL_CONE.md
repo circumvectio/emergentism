@@ -5,10 +5,10 @@ rosetta:
   secondary:
     - level: L4
       column: Game theory
-      role: "intelligence as the reachable option-cone; macro-potential as the telos"
+      role: "intelligence and the reachable option cone"
     - level: L3
       column: Epistemology
-      role: "tier the physical-cone vs option-cone split; cite the [B] cognate honestly"
+      role: "physical-cone versus option-cone boundary"
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
@@ -18,7 +18,7 @@ status: "ACTIVE — 2026-06-01; D4/D5 carrier-content boundary repaired 2026-07-
 evidence_tier: "[B] cited causal-entropic-force and empowerment formalisms; [I] option-cone crosswalk; [C] stronger geometry or universal-intelligence claims. The physical light cone is constrained by c [A] and is not enlarged by intelligence."
 ---
 
-# Intelligence and the Potential Cone
+# Intelligence and the Option Cone
 
 > **The one sentence.** *Intelligence does not enlarge the physical light cone;
 > it may let an actual D4 agent represent, distinguish, and reach more admissible
@@ -27,9 +27,9 @@ evidence_tier: "[B] cited causal-entropic-force and empowerment formalisms; [I] 
 
 ---
 
-## 1. The two cones (the distinction that makes the insight honest) `[A]` / `[I]`
+## 1. Two different objects
 
-On a Minkowski diagram a worldline carries a **future light cone**: the set of events it can causally reach. That cone is fixed by the speed of light `c`. **No amount of intelligence enlarges it.** `[A]` To claim otherwise — "more intelligence, a bigger light cone" read as relativistic reach — is a category error, and the framework does not make it.
+### Physical causal cone `[A]`
 
 What intelligence may enlarge is a different, model-relative object:
 
@@ -47,12 +47,19 @@ bound. More capable modeling may enlarge it, but intelligence alone need not:
 missing energy, access, coordination, or authorization can leave an option
 unreachable.
 
-## 2. The published cognate — so this is not poetry `[B]`
+### Agent option cone `[I]`
 
-The intuition has a real scientific formalisation, and it should be cited rather than asserted:
+For agent `x` at time `t`, define
 
-- **Causal Entropic Forces** — Wissner-Gross & Freer, *Phys. Rev. Lett.* **110**, 168702 (2013). Intelligence modelled as a force that **maximises the diversity of accessible future paths** — a drive to keep options open. `[B]`
-- **Empowerment** — Klyubin, Polani & Nehaniv (2005): the channel capacity between an agent's *actions* and its *future perceptions* — formally, *how many distinguishable futures the agent can cause.* `[B]`
+\[
+\operatorname{OptionCone}_x(t)
+=\{h\in\mathcal H_{\mathrm{phys}}(X_t):
+\operatorname{Model}_x(h)
+\land\operatorname{Distinguish}_x(h)
+\land\operatorname{Rank}_x(h)
+\land\operatorname{Coordinate}_x(h)
+\land\operatorname{Reachable}_x(h;V_t)\}.
+\]
 
 Both formalize related accessible-future quantities under their own assumptions.
 The framework's contribution is an `[I]` type crosswalk: the represented future
@@ -60,7 +67,10 @@ set is D5 content, while the controller, channel, computation, intervention,
 and measured capacity remain D4. The crosswalk is not an identity or a new
 theorem.
 
-## 3. "More light, a larger cone" — read correctly `[I]`
+\[
+\operatorname{OptionCone}_x(t)
+\subseteq\mathcal H_{\mathrm{phys}}(X_t).
+\]
 
 The evocative phrase may therefore be used only as an `[I]` compression: better
 models and capabilities can illuminate more alternatives and sometimes enlarge
@@ -97,6 +107,6 @@ discrimination beyond ordinary counterfactual and control language.
 
 ---
 
-*Canonical Path:* `01_EMERGENTISM/05_COSMOLOGY/00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md`
+## 2. Relation to D4 and D5
 
 •   ⊙   ○

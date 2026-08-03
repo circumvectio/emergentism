@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "1.0",
+  "manifestId": "RECEIPT-126-PROPAGATION-2026-07-19",
+  "status": "closed_for_registered_contract",
+  "date": "2026-07-19",
+  "evidenceTier": "[B] path and test evidence; [I] semantic sufficiency",
+  "sourceReceipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md",
+  "releaseDoctrine": "04_AXIOLOGY/00_THE_RELEASE_DOCTRINE.md",
+  "baseCommit": "136590f0d62d7ee942d106157c13a7c04a0187d1",
+  "authorityBoundary": "This manifest verifies a staged branch repair. It does not authorize publication, deployment, filing, tier promotion, or public governance.",
+  "frozenPrefixes": [
+    "11_UPLINK/60_SESSION_PACKETS/",
+    "12_PUBLIC_SITE/",
+    "90_ARCHIVE/",
+    "91_COMPATIBILITY/"
+  ],
+  "implementationCommits": [
+    {
+      "commit": "6955f792a3bbf6a78c96b6c8f32f295b1d12893d",
+      "purpose": "stage the bounded Release Doctrine"
+    },
+    {
+      "commit": "1ab8353f340536fdb9e32657cd343971e122ff5e",
+      "purpose": "render bounded Kintsugi review and closure artifacts"
+    },
+    {
+      "commit": "a2f2555b3cf3cdf6f7ce5d6f2277ba0f9aca9a2b",
+      "purpose": "lock the fourteen-case Compass mutation matrix"
+    },
+    {
+      "commit": "e43f3e1bf51c073b3a9d46995352cfafda7831e6",
+      "purpose": "record the machine-only A0B handoff"
+    },
+    {
+      "commit": "cf7e43b05cd44cb4c6244b1bfe1d1827ed31e26c",
+      "purpose": "repair the source-authority owners"
+    },
+    {
+      "commit": "be378fb2debc8c5e2c4279c778bafab4c954a8b0",
+      "purpose": "propagate repaired owner truth through active derived surfaces"
+    },
+    {
+      "commit": "e97b2f31a977a0bf92052f0a39448345a289f842",
+      "purpose": "render the typed Burri Compass artifacts"
+    },
+    {
+      "commit": "6e2a84d031b020ff385584fd20ab1a0f6e284616",
+      "purpose": "close independent logic-review seams"
+    },
+    {
+      "commit": "df186615815f34eb03f7e874d2ec8016a41a99eb",
+      "purpose": "enforce bearer custody and actual/possible modality"
+    },
+    {
+      "commit": "8a3b3d228638b5047cad2492932151a6d5328984",
+      "purpose": "finalize Burri plate geometry without changing doctrine"
+    }
+  ],
+  "ownerRepair": {
+    "commit": "cf7e43b05cd44cb4c6244b1bfe1d1827ed31e26c",
+    "pathCount": 26,
+    "sortedPathSetSha256": "c4e7224f119918e6f861acf5a07ca0fcc4794af8bf36aa21ee2f6663338d7b34",
+    "paths": [
+      "00_META/00_SETTLED_CANON_REGISTRY.md",
+      "00_THE_COMPASS.md",
+      "00_THE_GOAL.md",
+      "01_TELEOLOGY/02_THE_DERIVATION/00_THE_CORE_CONJECTURE.md",
+      "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md",
+      "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX5_THE_EGREGORE.md",
+      "04_AXIOLOGY/00_THE_EXTRACTION_LAW.md",
+      "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
+      "04_AXIOLOGY/02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md",
+      "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md",
+      "05_COSMOLOGY/00_INTELLIGENCE_AND_THE_POTENTIAL_CONE.md",
+      "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
+      "05_COSMOLOGY/00_THE_BURRI_RULES.md",
+      "05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER.md",
+      "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+      "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/10_THE_SOUL_LOOP.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/27_DIMENSIONAL_ARCHITECTURE_CLARIFICATION.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md",
+      "05_COSMOLOGY/03_FORMAL_SYSTEM/41_UNIFIED_DIMENSIONAL_DERIVATION.md"
+    ]
+  },
+  "derivedPropagation": {
+    "commit": "be378fb2debc8c5e2c4279c778bafab4c954a8b0",
+    "pathCount": 345,
+    "sortedPathSetSha256": "5b55e284353ce5dbeea9e0015800c2560345dd2dde05fe09e3dc322401479083",
+    "enumeration": "sorted unique non-empty paths emitted by git show --pretty=format: --name-only <commit>"
+  },
+  "mutations": [
+    {
+      "id": "empirical-chart-inflation",
+      "owner": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "product-uniqueness",
+      "owner": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "forced-sevenfold-necessity",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md"
+    },
+    {
+      "id": "missing-law-irreducibility",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md"
+    },
+    {
+      "id": "d4-d5-inversion",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
+    },
+    {
+      "id": "scalar-sampling",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md"
+    },
+    {
+      "id": "quantum-dimension-stacking",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md"
+    },
+    {
+      "id": "forced-titans",
+      "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
+    },
+    {
+      "id": "legacy-spelling",
+      "owner": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"
+    },
+    {
+      "id": "worldview-k2",
+      "owner": "00_META/00_SETTLED_CANON_REGISTRY.md"
+    },
+    {
+      "id": "physical-cone-expansion",
+      "owner": "00_THE_COMPASS.md"
+    },
+    {
+      "id": "physical-retrocausal-inflation",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md"
+    },
+    {
+      "id": "aggregate-ethical-laundering",
+      "owner": "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md"
+    },
+    {
+      "id": "unconditional-power-max",
+      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
+    }
+  ],
+  "derivedSeams": [
+    {
+      "id": "triadic-cascade-no-uniqueness",
+      "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
+      "requiredMarkers": [
+        "recurrence survives; uniqueness does not",
+        "selected triadic lens, not a uniqueness theorem"
+      ],
+      "forbiddenPatterns": [
+        "proves\\s+N\\s*=\\s*3\\s+is\\s+the\\s+unique stable configuration",
+        "The same Trinity\\..{0,80}Always three"
+      ]
+    },
+    {
+      "id": "godel-no-self-grounding",
+      "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
+      "requiredMarkers": [
+        "No active proof presently establishes",
+        "A7 is therefore a chosen and prudent research discipline"
+      ],
+      "forbiddenPatterns": [
+        "grounds the framework in the unique projective frame",
+        "The axiom set is unique \\(η = 0\\) — proved"
+      ]
+    },
+    {
+      "id": "core-concepts-justice-before-power",
+      "path": "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md",
+      "requiredMarkers": [
+        "Justice defines the admissible action set before Power-Max",
+        "aggregate gain cannot launder destruction"
+      ],
+      "forbiddenPatterns": [
+        "formal proof of cooperation under coupling",
+        "uniqueness proof for the triadic structure"
+      ]
+    },
+    {
+      "id": "d5-strong-emergence-remains-candidate",
+      "path": "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
+      "requiredMarkers": [
+        "candidate_strong",
+        "not a declaration that D5 is irreducible"
+      ],
+      "forbiddenPatterns": [
+        "From below,\\s*`D5`\\s*is strongly emergent"
+      ]
+    },
+    {
+      "id": "money-born-rule-removable-analogy",
+      "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_288_Money_Is_the_Born_Rule.md",
+      "requiredMarkers": [
+        "This correspondence is removable",
+        "neither is a Born-rule identity or a product proof"
+      ],
+      "forbiddenPatterns": [
+        "only algebraically consistent projection from\\s*ℂ\\s*to\\s*ℝ⁺",
+        "Price is \\|z\\|² — the Born rule applied to value"
+      ]
+    },
+    {
+      "id": "topology-authorization-assessment-not-permission-fiction",
+      "path": "05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json",
+      "requiredMarkers": [
+        "authorized, unauthorized, nonconsequential, refused, or unavailable",
+        "D6 yields a reproducible positive capacity not already represented in D0-D5"
+      ],
+      "forbiddenPatterns": [
+        "commits one D4 attempt through means and accountable authorization"
+      ]
+    }
+  ],
+  "negativeScan": {
+    "scope": "all tracked text surfaces outside frozen trees and explicit evidence/test vessels",
+    "excludedPrefixes": [
+      "03_METHODOLOGY/01_THE_DERIVATION/01_BURRI_RULES_DERIVATION_LEDGER.md",
+      "09_TOOLS/02_COMPILERS/kintsugi_kernel/",
+      "09_TOOLS/02_COMPILERS/test_",
+      "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
+    ],
+    "meaning": "No exact registered fallacy mutation may appear on an active surface. This lexical gate is regression evidence, not a general semantic theorem prover."
+  },
+  "closureCriteria": [
+    "all 26 source-owner paths exist and carry their registered repair marker",
+    "the 345-path propagation set is exactly reproducible from its Git object",
+    "all fourteen mutation fixtures and six derived-seam regressions are rejected by owner-bound tests",
+    "the optional quantum correspondence can be removed without changing the operational projection",
+    "no implementation commit touches a frozen prefix",
+    "historical receipts and explicit evidence vessels remain available as provenance",
+    "release and external calibration remain separately gated"
+  ],
+  "knownLimits": [
+    "Closure means only that the registered fracture contract reproduces; it is not semantic closure of every sentence in the corpus.",
+    "The validator checks declared types, path custody, exact mutation regressions, derived sentinels, and executable finite models; it cannot prove metaphysical truth.",
+    "Receipt-126 closure does not constitute external empirical calibration.",
+    "Legacy terms may remain inside quotations, compatibility notes, retractions, and historical receipts when their non-authority is explicit."
+  ]
+}

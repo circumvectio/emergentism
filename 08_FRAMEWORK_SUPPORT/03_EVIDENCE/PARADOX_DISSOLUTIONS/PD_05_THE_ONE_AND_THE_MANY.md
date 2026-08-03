@@ -15,14 +15,14 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[S/I]"
+  register: "[I]"
   canonical_phrase: "PD-05 — One/Many Complementarity"
 ---
 
 # PD_05: THE ONE AND THE MANY
 
 **Directory:** `02_PARADOX_DISSOLUTIONS/`  
-**Evidence Tier:** `[S/I]` (Structural/Interpretive)
+**Evidence Tier:** `[I]` (optional philosophical crosswalk; analytic subclaims remain `[A]` in their own domain)
 **Canonical Number:** PD_05 (see [PD_00_INDEX](PD_00_INDEX.md))
 
 > **Evidence Tier: [A/I/C].** `φ·ν=1` is an analytic identity inside the
@@ -89,7 +89,7 @@ opposed regions. That is interpretation, not a historical or metaphysical result
   multiplicative picture. Justice remains a declared premise, and objective
   moral realism remains a separate bridge investigation.
 
-## 5. WHAT WOULD FALSIFY THIS
+## 5. KILL AND NARROWING CRITERIA
 
 - **World-fit failure:** operational measures chosen for unity and plurality do
   not exhibit the predicted reciprocal relation out of sample.

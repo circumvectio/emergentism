@@ -23,7 +23,7 @@
     },
     {
       "id": "burri_constraint",
-      "name": "φ · ν = 1 on S² — The Burri Constraint",
+      "name": "Open reciprocal-chart identity — bounded Burri correspondence",
       "foundation": [
         "01_EMERGENTISM/00_CANONICAL_FORMULA_BLOCK.md",
         "01_EMERGENTISM/01_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md"
@@ -37,7 +37,7 @@
       "pwa": [
         "02_SKYZAI/09_PWAs/skyzai_org/wiki/13-the-axioms.md"
       ],
-      "agent_routing": "Formula Block + Papers for math. Organ empirical program for implementation. PWA for public claims."
+      "agent_routing": "For theta in (0,pi), phi=cot(theta/2) and nu=tan(theta/2), so phi*nu=1 analytically; poles are excluded limits and no ontology, ethic, empirical conservation law, or P_node follows. Formula Block + Papers for math; P_node:=Phi*V is a separately selected conjunctive product model. Organ empirical program for implementation. PWA for public claims without tier upgrade."
     },
     {
       "id": "trivium",
@@ -134,7 +134,7 @@
         "01_EMERGENTISM/09_TOOLS/sprint_lineage_gates.py",
         "01_EMERGENTISM/09_TOOLS/sprint_politik_gates.py"
       ],
-      "agent_routing": "V=genotype, M=epigenotype, O=phenotype, S=extended phenotype, K=memotype, A=agents, DAC=egregorotype."
+      "agent_routing": "V=genotype, M=epigenotype, O=phenotype, S=extended phenotype, K=memotype, A=agents, DAC=Egregoreotype candidate."
     },
     {
       "id": "proof_loop",

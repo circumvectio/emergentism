@@ -73,7 +73,10 @@ Development requires CRISIS. Levels II-IV are *worse* (more conflicted, more anx
 
 **2. Spiral Dynamics / Graves (8 levels, open-ended) — STRONG CHALLENGE**
 
-Two structural features the framework lacks: (a) **open-endedness** — new levels continue to emerge, contradicting D6=D0 closure; (b) **individual/collective alternation** — each level swings between self-expressive and group-sacrifice orientations. Reconcilable via fractal nesting (closure at one scale, open at the next), but this adds structure the framework doesn't currently have.
+Two structural features challenge the selected scaffold: (a) **open-endedness**
+— new levels continue to emerge beyond its D6 closure horizon; (b)
+**individual/collective alternation**. The current `r₆:D6↝D0` edge is an
+interpretive return, not a literal identity that defeats the challenge.
 
 **3. Buddhist Pratityasamutpada (12 links, cyclic) — MODERATE CHALLENGE**
 

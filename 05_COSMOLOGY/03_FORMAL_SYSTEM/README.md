@@ -95,7 +95,7 @@ Files `08_EFR_*` through `20_EFR_*` are EFR-specific technical surfaces. Plain n
 
 ## Analytic Floor Note
 
-This directory is **downstream** of the framework's canonical order:
+This directory is **downstream** of the framework's current formula owner:
 
 ```text
 Zero-Sum Resolution Equation
@@ -103,6 +103,7 @@ Zero-Sum Resolution Equation
 φ · ν = 1 on the open reciprocal chart
 (φ − ν)² ≥ 0
 φ + ν ≥ 2
+B := 2/(φ + ν) = sin θ ≤ 1
 ```
 
 These identities hold on the declared nonzero reciprocal chart. At the poles,

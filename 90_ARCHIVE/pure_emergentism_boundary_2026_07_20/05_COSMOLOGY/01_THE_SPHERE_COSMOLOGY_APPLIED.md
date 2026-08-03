@@ -115,7 +115,7 @@ An organ can have a unit node score and low B: Φ̂ = 2.0, ν̂ = 0.5 gives P_no
 
 The framework cares about both. P_node measures *how much*. B measures *how well-aligned*. The organism should maximize both: large P_node at the equator.
 
-> **[D] Scope (2026-07-03, staged for K2):** "should be at the equator" is a real-system prescription, not the bare AM-GM identity — it governs a live organism only insofar as its coherence and viability are conservation-coupled, jointly necessary, and costly-in-excess *symmetrically* (γ-priced on both sides); absent that transfer, the balance-optimum tilts, flattens into a plateau, or yields to specialization, and "large P_node at the equator" is a modeling ideal the node need not inherit. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "should be at the equator" is a real-system prescription, not the bare AM-GM identity — it governs a live organism only insofar as its coherence and viability are conservation-coupled, jointly necessary, and costly-in-excess *symmetrically* (γ-priced on both sides); absent that transfer, the balance-optimum tilts, flattens into a plateau, or yields to specialization, and "large P_node at the equator" is a modeling ideal the node need not inherit. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### 3.2 The Diagnostic Protocol [I]
@@ -144,24 +144,33 @@ This is the geometric basis for the maturity ladder in the phi-meter spec:
 
 The more equatorial an organ, the more resilient it is to perturbation. This is not a design choice — it is geometry.
 
-> **[D] Scope (2026-07-03, staged for K2):** the resilience-at-equator reading binds a real organ only where it sits on the sphere — its Φ̂ and ν̂ conservation-coupled (a γ-price is genuinely paid for imbalance), complementary rather than substitutable, and *symmetrically* costly in excess; where a factor is substitutable or its surplus is a free store, the equator is geometry without normative force and an off-equator specialization can be the more robust configuration. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the resilience-at-equator reading binds a real organ only where it sits on the sphere — its Φ̂ and ν̂ conservation-coupled (a γ-price is genuinely paid for imbalance), complementary rather than substitutable, and *symmetrically* costly in excess; where a factor is substitutable or its surplus is a free store, the equator is geometry without normative force and an off-equator specialization can be the more robust configuration. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ---
 
-## 4. Extraction on the Sphere [S]
+## 4. Extraction and the Justice boundary `[I/C]`
 
-The Power-Max Demonstration (Doc 22) proves:
+> **[金] Kintsugi seam — a chosen payoff was mistaken for universal
+> cooperation.** A deliberately narrow game can define balance so that the
+> equator maximizes its payoff. That result is internal to the payoff and does
+> not show that real agents have a dominant cooperative strategy, that the
+> Price of Anarchy is universally one, or that `η=0` follows from geometry.
 
-1. **Theorem 1:** ν = 1 is a strictly dominant strategy. Every agent, acting alone, optimizes by moving to the equator.
-2. **Theorem 2:** Price of Anarchy = 1. The selfish optimum equals the social optimum.
-3. **Theorem 3:** Any extraction (zero-sum transfer) from the equatorial profile strictly reduces aggregate balance.
+The repaired Power-Max owner keeps the decisive counterexample: in a one-shot
+coupled model with `λ<1`, extraction can increase the extractor's payoff. Justice
+therefore enters as a premise defining the admissible action set before any
+maximization occurs.
 
-**Applied to organism design [I]:**
+**Applied to organism design `[I/C]`:** `η=0` is the declared non-extraction
+boundary. Implementing it requires bearer-complete accounting, authorization,
+custody, consent, reversibility, contest, and outcome receipts. A geometric
+balance score may help diagnose a bounded system only where its factors and
+costs are operationally measured and fair domain-native rivals are compared.
 
-η = 0 (zero extraction) is not an ethical aspiration grafted onto the math. It is the unique Nash equilibrium on S². Any agent that extracts from another moves both of them away from the equator, reducing aggregate B.
-
-The organizational implication: fee structures, incentive designs, and governance mechanisms that permit extraction (η > 0) are geometrically suboptimal. They reduce the total balance available to the organism. This transfer holds only where the organism's factors actually sit on the sphere — conservation-coupled so a γ-price is genuinely paid for imbalance, complementary rather than substitutable, and costly in excess; where factors are substitutable or surplus is free (as in aggregate markets that reward specialization), the equatorial optimum does not carry over and η > 0 need not be suboptimal. The φ-split (61.8/38.2), SoResFi accounting, and PRISM distribution are all structural implementations of the η = 0 equilibrium.
+No φ-split, accounting design, token system, or governance mechanism is
+validated merely by being described as equatorial. Each must demonstrate its
+own costs, enforcement, failure modes, and Justice boundary.
 
 The four operators on S² map to four organizational moves:
 
@@ -228,7 +237,7 @@ For any organ at any time, the sphere asks one question:
 
 This is ΣΔB in a single sentence. If the organ's |Φ̂ − ν̂| is shrinking, the organ is healing. If it is growing, the organ is drifting toward a pole and needs correction.
 
-> **[D] Scope (2026-07-03, staged for K2):** "toward equator = healing" applies to a real organ only when it truly rides S² — factors conservation-coupled, complementary, and costly in surplus *symmetrically* (γ-priced); where excess is a free store or the factors substitute, closing |Φ̂ − ν̂| is not per se healing and a tilted or specialized position may be the healthier one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** "toward equator = healing" applies to a real organ only when it truly rides S² — factors conservation-coupled, complementary, and costly in surplus *symmetrically* (γ-priced); where excess is a free store or the factors substitute, closing |Φ̂ − ν̂| is not per se healing and a tilted or specialized position may be the healthier one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 ### 6.2 Per-Organ Health Reading (Code Lens, 2026-04-23)
@@ -260,11 +269,11 @@ The K2 boundary is constitutional, not positional. Human signing is not a point 
 
 | Symbol | Meaning | Regime | Tier |
 |--------|---------|--------|------|
-| `P∞ = φ · ν = 1` | Manifold identity on open S² | Conserved on the open sphere; pole values are limits | [S] |
-| `B = sin θ` | Balance / equatorial alignment | Varies 0 (poles) to 1 (equator) | [S] |
-| `P_node = Φ̂ × ν̂` | Effective potential at a finite node | Can be < 1 | [S/I] |
-| `ΣΔB`, `ΣΔP_node` | Directional change across the widest boundary | Evaluates outcome deltas | [I] |
-| `η` | Extraction coefficient | η = 0 at the unique Nash equilibrium | [S] |
+| `φ · ν = 1` | Analytic identity in the selected open reciprocal chart | Pole values are limits; no empirical conservation follows | [A] |
+| `B := sin θ` | Selected balance coordinate | Varies 0 (pole limits) to 1 (equator) inside the chart | [A] by definition |
+| `P_node := Φ̂ × ν̂` | Selected normalized conjunctive node model | One member of a wider family; universal fit uncalibrated | [I/C] |
+| `ΣΔB`, `ΣΔP_node` | Aggregate diagnostics | Never substitutes for bearer-complete Justice | [I] |
+| `η` | Extraction coefficient | `η = 0` is the declared Justice boundary; equilibrium claims are model-local | [I/S by declared game] |
 
 Do not use bare `P` without naming the regime. Do not conflate the manifold identity with the node measurement. Do not present the interpretive mapping (geometry → organism) as established mathematics.
 

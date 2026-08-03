@@ -39,6 +39,16 @@ chart. The structural claims are internal to `P∞ = φ · ν = 1`, `B = sin θ`
 the selected action fence `η_move=0`; the naming of those structures as transcendentals remains
 interpretive.
 
+> **[金] Kintsugi authority seam — values are declared commitments, not chart
+> theorems (2026-07-18).** The reciprocal identity and balance coordinates do
+> not derive Truth, Beauty, Justice, objective teleology, or ethics. This file
+> offers an `[I]` Rosetta projection governed by the active value-theory owner.
+> Justice keeps every affected individual and the whole separately visible;
+> no invariant, equilibrium, operator sign, or aggregate gain can license
+> extraction or compensate for destroying one side. D4 is actual
+> action/receipt and D5 possible content; “survival across D4–D5” is a model
+> comparison, not a truth criterion or physical transformation.
+
 ## 0. READING RULE
 
 Read every formula below as **historical model shorthand**, never as a current
@@ -279,12 +289,12 @@ from its named bearer. It is not a latitude or an equilibrium condition.
 
 ### 4.5 Justice and the Is-Ought Gap
 
-The Is-Ought gap is not externally solved by geometry. It is internally recast
-by Justice under the framework's operational definition:
+The Is-Ought gap is not solved by geometry. The framework instead declares
+Justice as a normative constraint and keeps the bridge visible:
 
 ```
-Is: extraction destabilizes modeled coupling under the framework's assumptions
-Ought: You ought to act justly (ethical command)
+Is: a declared model predicts consequences under stated assumptions
+Ought: the framework posits bearer-complete Justice as its normative constraint
 
 The conditional value rule is:
 If a move extracts (`η_move>0`), it violates the selected action fence
@@ -376,9 +386,9 @@ For any action, ask:
 ### 7.2 The Design Principle
 
 Build systems that:
-1. Conserve ektropy (Truth)
-2. Seek balance (Beauty)
-3. Resist extraction (Justice)
+1. Preserve corrigible evidence and honest receipts (Truth)
+2. Seek fitting, legible coordination without compulsory symmetry (Beauty)
+3. Enforce bearer-complete non-extraction and contestability (Justice)
 
 **Example: The Mesh**
 - Truth: Information flows without distortion (`P∞` invariant preserved)

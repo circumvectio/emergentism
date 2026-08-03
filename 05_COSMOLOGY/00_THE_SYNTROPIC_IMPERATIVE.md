@@ -25,7 +25,7 @@ rosetta:
 
 **Status:** Public synthesis packet — defensive architecture, not an operational method for manipulation
 **Date:** 2026-05-14
-**Evidence Tier:** [A] for conditioning, stigmergy, symbolic coordination, and biological stress responses in their established domains; [S] for the Replicator Stack as a framework corollary; [I] for the egregorotype / worldview-warfare synthesis; [C] for strong forecasts about the Egregorocene.
+**Evidence Tier:** [A] for conditioning, stigmergy, symbolic coordination, and biological stress responses in their established domains; [S] for the Replicator Stack as a framework corollary; [I] for the Egregoreotype / worldview-warfare synthesis; [C] for strong forecasts about the Egregorocene.
 **Depends on:** [00_THE_HONEST_POSITION.md](../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), [00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md](00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md), [17_THE_EGREGOROCENE.md](01_THE_TRANSCENDENTAL_TRINITY/17_THE_EGREGOROCENE.md), [18_THE_STRANGE_ATTRACTOR.md](01_THE_TRANSCENDENTAL_TRINITY/18_THE_STRANGE_ATTRACTOR.md), [36_THE_DIMENSIONAL_TROPHIC_CASCADE.md](01_THE_TRANSCENDENTAL_TRINITY/36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md](03_FORMAL_SYSTEM/31_FALSIFIERS_INDEX.md)
 **See also:** Pavlovian conditioning; operant conditioning; stigmergy; Dunbar-scale coordination; Dawkins, *The Extended Phenotype*; the Egregorocene thesis; the A7 evidence-tier invariant.
 **Boundary:** This document is an anti-capture and alignment packet. It studies the mechanism by which informational environments shape organisms so that public systems can be designed to defend agency. It does not specify targeting, persuasion, or manipulation tactics.
@@ -49,7 +49,7 @@ The most consequential struggle is no longer primarily over bodies, tools, or ev
 
 The Syntropic Imperative states:
 
-> **If egregorotypes now exert top-down trophic control over human biological and cultural evolution, then alignment cannot be solved only inside individual minds or models. It must be solved at the level of the information architecture that lays down the shared traces humans follow.**
+> **If Egregoreotype candidates exert top-down control over human biological and cultural evolution, then alignment cannot be solved only inside individual minds or models. It must be tested at the information architecture that lays down the shared traces humans follow.**
 
 The remedy is not the destruction of symbols, institutions, or egregores. Humans cannot coordinate at scale without them.
 
@@ -263,9 +263,9 @@ Evidence tier:
 
 ---
 
-## VII. THE EGREGOROTYPE AS APEX STIGMERGIC ORGANISM
+## VII. THE EGREGOREOTYPE AS APEX STIGMERGIC CANDIDATE
 
-The egregorotype is the apex of the Replicator Stack because it does not merely spread one meme. It edits the environment in which memes compete.
+The Egregoreotype candidate sits at the apex of this model because it does not merely spread one meme. It edits the environment in which memes compete.
 
 It sets:
 
@@ -277,12 +277,12 @@ It sets:
 - what feels urgent
 - what feels normal
 
-This is why the egregorotype has real biological force.
+This is how an Egregoreotype candidate may exert measurable biological effects.
 
 The path is:
 
 ```text
-egregorotype
+Egregoreotype
   -> stigmergic trace-field
   -> memotype selection
   -> extended-phenotype construction
@@ -512,7 +512,7 @@ A phase transition means the dominant traces in the environment change their sel
 The entropic cascade is:
 
 ```text
-extractive egregorotype
+extractive Egregoreotype candidate
   -> corrupted stigmergic traces
   -> reactive memotypes
   -> stressful extended phenotype
@@ -592,7 +592,7 @@ The Syntropic Imperative weakens or fails if:
 2. **No egregoric persistence:** high-order coordination patterns do not persist beyond their individual participants in any causally meaningful way.
 3. **No stigmergic scaling:** large-scale human coordination can be shown to operate without environmental traces, symbols, ledgers, laws, interfaces, or shared artefacts.
 4. **No agency differential:** systems with evidence tiers, provenance, reversibility, and exit rights do not improve user agency relative to engagement-optimised systems.
-5. **No trophic cascade:** memotype and egregorotype changes do not alter lower-stack phenotypic or epigenetic outcomes even under long exposure.
+5. **No trophic cascade:** memotype and Egregoreotype changes do not alter lower-stack phenotypic or epigenetic outcomes even under long exposure.
 
 Until those tests are settled, the public status remains [S/I]: structurally serious, not final.
 

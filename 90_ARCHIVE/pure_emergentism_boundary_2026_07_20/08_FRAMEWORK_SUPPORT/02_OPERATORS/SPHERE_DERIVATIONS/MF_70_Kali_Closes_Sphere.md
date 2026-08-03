@@ -21,7 +21,18 @@ rosetta:
 
 # MF-70: Kālī Closes the Sphere
 
-## The Topological Necessity of Retaliatory Capacity
+## A Topological Metaphor for Retaliatory Capacity
+
+> **[金] Kintsugi authority seam — topology does not authorize retaliation
+> (2026-07-18).** Removing a chosen region changes a chosen state-space model;
+> that fact neither makes retaliation necessary nor makes an action lawful.
+> Retaining Q3 as a representable state is distinct from authorizing an agent
+> to enter it. Tit-for-Tat is a conditional repeated-game strategy, not a
+> universal evolutionary dominant strategy or topological theorem. Any
+> defensive act must pass the bearer-complete Justice and AuthorizationEnvelope
+> tests, naming payer, beneficiary, evidence, reversibility, and contest path.
+> The “lose the sphere/everything” and geometric-necessity claims below are
+> superseded and preserved only as `[I]` metaphor.
 
 **VIVEKA Mathematical Foundations Series — Sphere Derivations**
 **Document ID:** MF-70 | **Version:** 1.0 | **Status:** Core Result
@@ -36,7 +47,11 @@ The VIVEKA value alignment divides the state space of S² into four quadrants ba
 
 This paper shows that the exclusion of Q3 creates a topological problem: removing a quadrant from S² punctures the sphere, reducing it to a disk (genus 0 with boundary, contractible but not compact) or equivalently making it homeomorphic to ℝ² — an open plane without the compactification that makes the framework work.
 
-The resolution: Q3 is not universally excluded. It is excluded **against cooperators** (K* = 0 when the other agent is in Q1/Q2/Q4). Against defectors — agents already in Q3 — retaliatory Q3 action is not only permitted but **topologically necessary**. Without it, the sphere cannot close. The compactification that creates S² from ℂ requires the full quadrant structure. Remove Q3 absolutely and you lose the sphere. Lose the sphere and you lose everything: equator, levels, operators, balance, ½.
+The repaired distinction is representational: Q3 remains in the modeled state
+space, while entry into it is separately governed. Compactification requires
+the point-set representation, not retaliatory behavior. A defensive response
+may be considered only under declared game evidence and accountable Justice;
+the topology itself grants no permission.
 
 Kālī is the immune system of the sphere. She does not create, preserve, transform, or refactor. She closes the topology by ensuring that parasitic punctures are sealed. Rapoport's Tit-for-Tat is the behavioral description of this topological function: Nice (no unprovoked Q3), Retaliatory (Q3 against Q3), Forgiving (return to Q1 when provocation ceases), Transparent (the rule is public).
 
@@ -142,11 +157,18 @@ Kālī IS the immune system of the cooperation topology. She is not a fifth stra
 
 **Step 2:** S² with the equatorial Φ-V coordinate system has four quadrants covering S². Each quadrant is an open set. Together with their boundaries, they cover S² completely. [A]
 
-**Step 3:** The involution z → 1/z maps Q1 to Q3 and Q2 to Q4 (and vice versa). This involution is the map that identifies the two poles, creating the compactification. Without Q3, the image of Q1 under the fundamental involution does not exist. [A]
+**Step 3:** Under the selected quadrant convention, the involution `z→1/z`
+maps Q1 to Q3 and Q2 to Q4 (and vice versa). It exchanges `0` and `∞`; it does
+not identify them or create the compactification. Removing Q3 makes the chosen
+subspace non-closed under this map. [A for the map; I for the quadrant labels]
 
-**Step 4:** If the image of Q1 under z → 1/z is removed, the involution is not defined on Q1. The pole identification D0 = D6 fails. The compactification that creates S² from ℂ is incomplete. [A]
+**Step 4:** If Q3 is removed, the restricted state space no longer carries that
+involution as an endomorphism. This says nothing about D0/D6 identity; the
+framework's D6 return is the separate interpretive edge `r₆:D6↝D0`. [A/I]
 
-**Step 5:** Therefore, Q3 must exist on S² for S0 to hold. ∎ [A]
+**Step 5:** Therefore Q3 must remain representable if this selected four-region
+model is to remain closed under its chosen involution. No behavioral permission
+follows. ∎ [S/I]
 
 ### 4.2 The Restriction on Q3 Entry
 
@@ -194,15 +216,15 @@ This paper clarifies the duality: **the Möbius class is the mechanism; the topo
 
 But her *activation condition* is unlike the other operators. The mixed-sign moves can be deployed strategically within an intact sphere; Brahmā, Viṣṇu, and Śiva name boundary phases read from those moves, not actions to deploy. Kālī activates only when the sphere's topology is threatened — when a Q3 incursion punctures the cooperation surface. She is parabolic in dynamics and meta-operational in purpose: the only operator whose deployment criterion is topological rather than strategic. [I]
 
-### 5.3 The Kālī Paradox Resolved
+### 5.3 The Apparent Kālī Paradox — Justice Before Aggregation
 
-The original paradox: Kālī is (−Φ, −V), which means P decreases. How can a P-decreasing operator be good?
+The apparent paradox is that Kālī is represented as (−Φ, −V), so measured potential decreases. A negative result for an affected bearer cannot, however, be made good merely by a positive global sum. [I]
 
-Resolution: Kālī decreases **local** P (the defector's P, and temporarily the retaliator's P) to maintain **global** ΣΔP_node. The total ektropy of the system is higher with Kālī than without, because without Kālī the sphere itself is lost. [I]
+A Kālī-labelled defensive proposal is admissible only when bearer-complete Justice holds prospectively and retrospectively: the affected-bearer set includes the target, defender, bystanders, and ecological substrates; authorization is accountable; losses are neither hidden nor unconsented; scope is proportionate; reversibility, contest, and exit are preserved where possible; and every bearer's durable potential remains non-negative. An aggregate such as `ΣΔP_node` may describe a system total, but it cannot compensate for a negative bearer result. [I]
 
-This is precisely the immune system logic: inflammation is locally destructive (tissue damage, fever, energy cost) but globally constructive (pathogen elimination, system survival). The local ΔP is negative. The global ΣΔP_node is positive. [I]
+The immune-system analogy is therefore descriptive, not justificatory. Collateral tissue damage remains harm that must be minimized and receipted; system survival does not erase it. A competent, informed, voluntary sacrifice is classified separately as an authorized cost and is never relabelled strict syntropy. [I]
 
-Kālī's ΔP signature is (−,−) at the micro level and (+) at the macro level. She is the unique operator whose micro-ethics (negative) and macro-ethics (positive) differ in sign. This is why she is feared and misunderstood — from inside the interaction, she looks destructive. From outside, she is maintaining the topology that makes all other operators possible. [I]
+Strict syntropy applies only when bearer-complete Justice holds and both focal durable potentials rise. There is no exception in which negative "micro-ethics" becomes positive "macro-ethics" through a wider accounting radius. [I]
 
 ---
 

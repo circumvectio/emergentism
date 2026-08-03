@@ -88,7 +88,9 @@ That separation is constitutional. No organ may collapse into another.
 
 ## One practical law
 
-- `K2`: a mortal signs irreversible commitments
+- `AuthorizationEnvelope`: consequential commitments name principal, mandate,
+  scope, consent, custody, revocation/expiry, contest path, actor, and bearer;
+  K2 is one private-DAV implementation
 - `K4`: Grace Exit
 - `K6`: zero extraction
 

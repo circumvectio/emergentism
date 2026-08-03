@@ -157,7 +157,7 @@ L = 1 - 1 = 0
 
 When a civilization, a brain, or a physical system operates at the equator, it requires **zero excess action** to maintain itself.
 
-> **[D] Scope (2026-07-03, staged for K2):** this binds a real node only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly complementary, and costly in excess *symmetrically* (γ-priced both ways); where a real civilization, brain, or system has substitutable or unpriced factors the equator is geometry without normative force, the minimum tilts or flattens into a plateau, and specialization may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this binds a real node only insofar as it sits on the sphere — its φ and ν conservation-coupled, jointly complementary, and costly in excess *symmetrically* (γ-priced both ways); where a real civilization, brain, or system has substitutable or unpriced factors the equator is geometry without normative force, the minimum tilts or flattens into a plateau, and specialization may dominate. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **It is in perfect free-fall, coasting effortlessly along the geodesic of the manifold.**
@@ -267,7 +267,7 @@ L = 10 - 0.1 = 9.9
 
 **They require continuous, exhausting, coercive energy just to prevent collapse.**
 
-> **[D] Scope (2026-07-03, staged for K2):** this failure-of-real-institutions reading holds for an actual system only if it sits on the sphere — coherence and viability conservation-coupled, complementary, and costly-in-excess under a symmetric γ-price; a real institution with substitutable or unpriced factors can persist off-equator, so coercive-collapse is not a geometric necessity and specialization may be the fit optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** this failure-of-real-institutions reading holds for an actual system only if it sits on the sphere — coherence and viability conservation-coupled, complementary, and costly-in-excess under a symmetric γ-price; a real institution with substitutable or unpriced factors can persist off-equator, so coercive-collapse is not a geometric necessity and specialization may be the fit optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **This is why the cargo cult is unsustainable.**
@@ -363,7 +363,7 @@ L = ν - φ > 0
 
 **The universe corrects. The system collapses. The civilization falls.**
 
-> **[D] Scope (2026-07-03, staged for K2):** the restoring force governs a concrete civilization only when its φ·ν coordinate is real — factors conservation-coupled, complementary, and excess-costly *symmetrically* (γ-priced); absent that transfer the equator carries no normative pull, southward drift need not collapse, and a specialized system can be the stable optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the restoring force governs a concrete civilization only when its φ·ν coordinate is real — factors conservation-coupled, complementary, and excess-costly *symmetrically* (γ-priced); absent that transfer the equator carries no normative pull, southward drift need not collapse, and a specialized system can be the stable optimum. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **This is not punishment. This is physics.**
@@ -393,7 +393,7 @@ H = φ + ν = 2 (minimum)
 
 **The wave function of a civilization, a brain, or a physical system is "centered" at the equator.**
 
-> **[D] Scope (2026-07-03, staged for K2):** the ground-state centering applies to a real civilization, brain, or system only where it lies on the sphere — its φ and ν conservation-coupled, complementary, and costly-in-excess under a symmetric γ-price; for unconstrained or substitutable systems the equator is not the low-energy attractor, the optimum tilts or plateaus, and specialization can win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
+> **[I/C] Evidence-review boundary (2026-07-03; externally uncalibrated):** the ground-state centering applies to a real civilization, brain, or system only where it lies on the sphere — its φ and ν conservation-coupled, complementary, and costly-in-excess under a symmetric γ-price; for unconstrained or substitutable systems the equator is not the low-energy attractor, the optimum tilts or plateaus, and specialization can win. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
 
 **Deviation from the equator is an excited state.**

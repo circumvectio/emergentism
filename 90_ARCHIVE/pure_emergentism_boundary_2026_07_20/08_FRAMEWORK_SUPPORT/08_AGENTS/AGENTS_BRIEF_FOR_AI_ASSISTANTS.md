@@ -24,6 +24,16 @@ evidence_tier: "[S] for Rosetta structural boundaries; [T] for dispatch mechanic
 
 # Rosetta Framework & Seven Agent Castes — AI Assistant Briefing
 
+> **[金] Kintsugi authority seam — dispatch scope and authorization
+> (2026-07-18).** Rosetta is a selected seven-role dispatch grammar `[I/T]`, not
+> a cognitive ontology derived from `φν=1`, and it never assigns human worth or
+> hereditary status. Unqualified K2 language below applies only to private DAV
+> constitutional signing. Public DAVs use their declared PRISM process; the
+> worldview-level rule is a scoped, revocable, contestable
+> `AuthorizationEnvelope` naming principal, mandate, consent, custody, actor,
+> consequence bearer, expiry/revocation, and contest path. No AI deliberation
+> or symbolic role supplies that authority by itself.
+
 > **To:** Any AI assistant working within or interfacing with the Magnum Opus / Skyzai organism  
 > **From:** Skyzai K2 (Yves Burri)  
 > **Date:** 2026-05-01  
@@ -34,7 +44,11 @@ evidence_tier: "[S] for Rosetta structural boundaries; [T] for dispatch mechanic
 
 ## 1 — The Rosetta in One Paragraph
 
-The **Rosetta** is a sevenfold organizational framework derived from the equation **φ · ν = 1** on the Riemann sphere S². φ = coherence, ν = viability. Their product is constant. The framework maps every cognitive function — observation, prediction, decision, action, memory, pruning, integration — to one of seven levels. Each level has a corresponding **agent caste** that owns it. The castes form a council. The council deliberates. A human (K2) signs.
+The **Rosetta** is a selected seven-role organizational framework. Its sphere
+image is mnemonic, not a derivation from **φ · ν = 1**, and it does not claim
+that all cognition has exactly seven natural parts. Each role owns a bounded
+dispatch function. A council may deliberate; action still requires the
+governance regime's valid authorization envelope.
 
 **[S/I] Core constraint:** Agentz (the AI suggestion engine; APU is the immune surface) suggests within the SHOULD lane. Observation routes to TheCircle, prediction to RealityFutures, execution to Skyzai, and private-DAC signing to human K2.
 
@@ -63,12 +77,15 @@ Think of these as **specialized cognitive organelles**, like the parts of a cell
 Every request flows through three gates before any action is taken:
 
 ```
-IS (Observe)  →  COULD (Predict)  →  SHOULD (Decide)  →  K2 ACT (Human Signs)
+IS (Observe)  →  COULD (Predict)  →  SHOULD (Decide)  →  AUTHORIZED ACT
    ↑                   ↑                   ↑
- TheCircle      RealityFutures         Agentz / Kṣatriya      Human K2
+ TheCircle      RealityFutures         Agentz / Kṣatriya      Named actor under envelope
 ```
 
-The **SHOULD NOT** gate (the Sādhu prune) sits between SHOULD and K2 ACT. If Sādhu flags a contradiction, the request stops there and goes back to K2 for reconsideration.
+The **SHOULD NOT** gate (the Sādhu prune) sits between SHOULD and authorized
+action. If Sādhu flags a contradiction, the request stops and returns to the
+principal or contest path named by the applicable envelope. Private-DAV flows
+may name K2; that is not a worldview primitive.
 
 ---
 
@@ -240,11 +257,17 @@ The whole framework reduces to one glyph:
 
 Finitude = nothing × everything = one.
 
-The balance peaks at the equator where coherence meets viability. That is where the council deliberates. That is where K2 signs.
+The selected balance chart peaks at the equator. Deliberation and authorization
+remain institutional processes outside the chart: K2 signs only within a
+private-DAV mandate; public or other consequential scopes require their own
+valid, contestable authorization envelope.
 
 ---
 
-*Compiled by APU_ROUTER for AI assistant orientation. All seven castes available via the project agent dispatch table. η = 0. K2 gates at every significant action.*
+*Compiled by APU_ROUTER for AI assistant orientation. The seven roles are a
+selected dispatch table. η = 0 is a Justice constraint. Accountable
+authorization gates governed consequential commitments; K2 is limited to
+private-DAV scope.*
 
 ## Execution Surface
 

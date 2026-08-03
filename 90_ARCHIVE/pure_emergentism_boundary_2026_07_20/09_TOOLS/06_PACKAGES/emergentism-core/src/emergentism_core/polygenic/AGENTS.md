@@ -48,6 +48,6 @@ evidence_tier: "[B] for source-file existence and fresh syntax/test receipts; [I
   independently replicated, or promoted by the owning framework lane.
 - Keep MCP/server claims separate from source-file existence unless a fresh run
   receipt is captured.
-- All irreversible actions require K2 envelope staging.
+- Consequential actions require a complete, scoped, contestable authorization assessment; K2 is private-DAV-only.
 
 ⊙ = • × ○

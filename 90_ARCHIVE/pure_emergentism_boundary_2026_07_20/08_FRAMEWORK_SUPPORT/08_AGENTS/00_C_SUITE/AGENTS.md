@@ -8,7 +8,7 @@ rosetta:
       role: "route C-Suite specs, protocols, and integration papers"
     - level: L4
       column: Governance
-      role: "preserve K2 envelope staging for irreversible C-role actions"
+      role: "preserve accountable authorization for consequential C-role actions; K2 is private-DAV-only"
     - level: L6
       column: Core State
       role: "cap runtime and public-facing claims at evidence tier"

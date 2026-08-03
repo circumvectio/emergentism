@@ -1,9 +1,9 @@
 ---
 title: "PD_22A — QM/GR dimensional ordering: an open tension in canon, and a candidate axis-fusion reconciliation"
 date: 2026-07-12
-status: "[E] K2-COUNTERSIGNED 2026-07-18 ('Accept'). The three-level reconciliation is canonical: D3 = Quantum State (00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY), D4 = collapse, D5 = Many-Worlds (doc 27). PD_22's flat 'QM = D5' was the bug; the §1 tension is dissolved. Still [C/I] on the physical mappings; still owes external physics review before any promotion. The 'two quantums' of §3 is superseded by §7's cleaner three-level. Open Canon Covenant §4.4 honored."
+status: "SUPERSEDED [D] — historically countersigned 2026-07-18 at [C/I], then rendered non-operative by the Kintsugi type repair; signature retained as provenance, not truth or current doctrine"
 evidence_tier: "[I] the tension (verified at file:line in both docs); [C] the candidate reconciliation and every physical mapping; inherits PD_22's falsifiers"
-owner: "K2 + AI co-owner (+ external physics review before any promotion)"
+owner: "historical authors; current authority is the quantum-foundations boundary"
 parents:
   - PD_22_SCIENTIFIC_IMPLICATIONS.md
   - ../../../05_COSMOLOGY/00_THE_BURRI_RULES.md
@@ -11,6 +11,16 @@ parents:
 ---
 
 # PD_22A · Where does quantum sit relative to gravity?
+
+> **[金] Kintsugi supersession — 2026-07-17.** Everything below is preserved as
+> a dated contradiction record, not active doctrine. The register-indexed
+> D4/D5 flip, `D4 = collapse`, `D5 = Many-Worlds`, and `μ = measurement` claims
+> are superseded. Active canon fixes D4 as causal actuality and D5 as
+> counterfactual possibility in every context; `μ₀…μ₅` are candidate emergence
+> crossings, not quantum measurements; Everett and Copenhagen-family readings
+> remain a removable `[C]` correspondence. K2 has no worldview-semantic role.
+> See [`38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
+> and [`34_D4_D5_CANONICAL_REFERENCE.md`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md).
 
 > This note does not resolve quantum gravity, and it corrects any reading that
 > says the framework does. PD_22 already reframes the QM/GR *incompatibility* as a
