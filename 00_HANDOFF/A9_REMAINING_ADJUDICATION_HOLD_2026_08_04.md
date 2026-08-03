@@ -39,6 +39,10 @@ Triage A9 gates the merge on an **L5 architect review of the full 23-commit seri
 
 Triage §6.2 (16 high-stakes 2-way files, dirty + rem-adj): the widening side holds the doctrine wording (newest layer, live authority); the rem-adj side carries small targeted fixes directionally aligned with different micro-wording. Resolution shape: widening wording stands; rem-adj's validator/test hardening (the bulk of the 502 files is non-conflicting) lands on top. The 11 conflict files are the adjudication surface; the other ~491 are mechanical.
 
+## Discharge (2026-08-04)
+
+**DISCHARGED by the L5 pass** — merge `dfd3df99`: all 11 conflict files resolved per the §6.2 strategy (widening wording stands; rem-adj hardening lands on top; no widening doctrine reversed, no hardening dropped). The branch lineage is preserved in the merge.
+
 ## Custody
 
 Branch kept intact at its worktree (`emergentism-remaining-adjudication-20260801`); tip `830c18f2`. Nothing lost; the hold is a sequencing decision, not a rejection. The L5 pass owns the merge or the cherry-pick decomposition.
