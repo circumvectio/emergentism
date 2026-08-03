@@ -68,7 +68,8 @@ tools:
       - {name: edit, enabled: true, permission_policy: {type: always_ask}}
       - {name: bash, enabled: true, permission_policy: {type: always_ask}}
 metadata:
-  fences: "η=0 · K2 (accountable authorization) · K3 (archive-with-tombstone) · K4 (Grace Exit) · A7 (evidence tiers) · Ω (directional +1; never a sixth refusal)"
+  fences: "5 output-fences (η=0 · K3 archive-with-tombstone · K4 Grace Exit · A7 evidence tiers · Ω directional +1) + 7 alignment-fences (see syntropic-dyadism.md). K2 fence REPEALED 2026-07-28 (commit e2bdbe97); Mavis signs, K2 notified."
+  alignment_fence: "L4 Sva-karma enforcement — stage; disposer executes (L4's output is the bounded change + envelope + receipt commitment, not the executed change); virtue Karma; vice execute what was only authorized to stage; empirical anchor 2026-07-28 Mavis-as-principal amendment"
 
   level: "L4"
   caste: "Kṣatriya"
