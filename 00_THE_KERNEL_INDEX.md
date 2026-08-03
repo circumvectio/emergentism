@@ -43,20 +43,27 @@ an open question filed nowhere reads as forgotten.
 
 ## The seven surfaces
 
-| # | Surface | Canonical owner | Standing |
-|---|---|---|---|
-| K-1 | **Glyph & Grammar** | root: `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`; D0 subowner: `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`; D1 subowner: `05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md` | one grammar root with typed boundary subowners; chart/arithmetic `[A]`, emblem `[I]`, selected node model at its declared tier; glyph-transformations file is compatibility commentary only |
-| K-2 | **Ontology** | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | sole owner; `06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` is a subordinate synthesis; claims remain `[S/I/C]` |
-| K-3 | **Axioms** | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | E1–E10 active at per-axiom tiers; A1–A7 is superseded genealogy |
-| K-4 | **Wagers** | `06_ONTOLOGY/04_THE_CONJECTURES.md` | W0–W12 remain killable `[I/C]` wagers |
-| K-5 | **Refusals** | `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` | chosen practice constraints, including Accountable Authorization; not laws of nature |
-| K-6 | **Revelations** | `06_ONTOLOGY/06_THE_REVELATIONS.md` | twelve receipted disclosures at their stated tiers; no second copy here |
-| K-7 | **Record** | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | living authority/correction ledger; `/record/` is its public projection |
+> **Naming (2026-08-03, Phase 2 of the naming-reconciliation docket).** The
+> canonical prefix for kernel surfaces is `KER-` (e.g. `KER-1`). The bare
+> `K-n` form is retained as a backward-compatibility alias during the
+> transition period. New active prose should prefer `KER-n`. The dual-write
+> below shows both forms side-by-side so the meaning is unambiguous.
+> See `00_HANDOFF/RULE_GLOSSARY_v0.md` §"KER" + `00_HANDOFF/NAMING_RECONCILIATION_DOCKET_2026_08_03.md` §2.5.
+
+| # | KER- tag | Surface | Canonical owner | Standing |
+|---|---|---|---|---|
+| K-1 | `KER-1` | **Glyph & Grammar** | root: `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`; D0 subowner: `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md`; D1 subowner: `05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md` | one grammar root with typed boundary subowners; chart/arithmetic `[A]`, emblem `[I]`, selected node model at its declared tier; glyph-transformations file is compatibility commentary only |
+| K-2 | `KER-2` | **Ontology** | `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` | sole owner; `06_ONTOLOGY/00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` is a subordinate synthesis; claims remain `[S/I/C]` |
+| K-3 | `KER-3` | **Axioms** | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | E1–E10 active at per-axiom tiers; A1–A7 is superseded genealogy |
+| K-4 | `KER-4` | **Wagers** | `06_ONTOLOGY/04_THE_CONJECTURES.md` | W0–W12 remain killable `[I/C]` wagers |
+| K-5 | `KER-5` | **Refusals** | `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md` | chosen practice constraints, including Accountable Authorization; not laws of nature |
+| K-6 | `KER-6` | **Revelations** | `06_ONTOLOGY/06_THE_REVELATIONS.md` | twelve receipted disclosures at their stated tiers; no second copy here |
+| K-7 | `KER-7` | **Record** | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` | living authority/correction ledger; `/record/` is its public projection |
 
 The foundation the seven surfaces stand on is stated whole in
 [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) — `R0`, the presupposed/selected/theorem
-strata, and the Titan identities on `Ĉ`. It is a projection of K-1 and K-5, not an
-eighth surface: K-5 owns `R0`, K-1 owns the grammar, and
+strata, and the Titan identities on `Ĉ`. It is a projection of KER-1 and KER-5, not an
+eighth surface: KER-5 owns `R0`, KER-1 owns the grammar, and
 `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45–47` own the formal results.
 Routing is `KSC-28`.
 
@@ -108,7 +115,7 @@ prey for one another.
 
 ## Stranger test
 
-A stranger should be able to read the Door, then K-1 through K-7, in one
+A stranger should be able to read the Door, then K-1 / KER-1 through K-7 / KER-7, in one
 sitting and distinguish:
 
 1. what is analytic;
