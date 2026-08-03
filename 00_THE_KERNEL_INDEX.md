@@ -93,6 +93,23 @@ L1 is ground/firewall; L2–L7 map interpretively to the six replicator layers.
 Human rows are cooperating, changeable functions of equal worth, never trophic
 prey for one another.
 
+### Dasein widening — re-anchor (2026-08-04)
+
+The 2026-08-01/02 Dasein widening (committed 2026-08-04, `499030c0`, per the
+2026-08-04 triage) places material on nine surfaces. It creates **no eighth
+surface**; the routing to owners is:
+
+| Doctrine | Owner surface | Co-references (projections, not owners) |
+|---|---|---|
+| Capital Dasein — "all that can coherently exist" — the `(World_(R,M), Dasein_(R,M,W), Dasein)` triplet; situated dasein as the contingent finite disclosure | **KER-2**: `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` §0 | `00_WELTANSCHAUUNG_KERNEL_v0.2` (formal block), `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` (reader journey), `00_THE_WELTANSCHAUUNG.md` (keystone rows), `00_THE_FOUNDATION.md` (contingency note), `05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md` (Viśvarūpa crosswalk), `06_ONTOLOGY/00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md` (L6 chain), `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` (D4/D5 threshold), `01_TELEOLOGY/00_THE_GOAL.md` §8, `02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md`, `02_EPISTEMOLOGY/03_MEMETICS/README.md`, `05_COSMOLOGY/00_THE_LIFE_SCIENCE_REGISTER.md`, `46_THE_ADMISSIBILITY_OF_NOTHING.md` |
+| `Finity_F` / `Finity_G` / `Finity_L` sub-registers | `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md` (canonical distinction) + `05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md` (strict subregister contract, 2026-08-01; supersedes the 2026-07-29 B-ii mixed-type ruling) | `47_FINITY_BOUNDARY_CALCULUS_SPEC.md` (`Finity_L` alias), `42_THE_CASE_FOR_FINITY.md`, `43_THE_TITANS...`, `53_THE_NUMBER_CHART.md` |
+| η=0 as **chosen vow**, not geometric theorem (`[I/S]`) | **KER-5** domain: `05_COSMOLOGY/03_FORMAL_SYSTEM/19_EFR_GEOMETRIC_EXCLUSION.md` | `09_THE_TRIADIC_CASCADE.md` (MF-511 acknowledged), `08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md` (locations are proposals, not predictions) |
+| `1` ≠ `i`; `iν=φ` demoted to symbolic shorthand | **KER-1** grammar: `02_EPISTEMOLOGY/00_I_IS_THE_EQUATOR.md` | — |
+| The Perennial Loop | `07_THEOLOGY/04_THE_PERENNIAL_LOOP.md` (L7 derivative, PASS per triage §5) | `07_THEOLOGY/README.md` row |
+
+The widening's own claim tiers stand as committed (`[I/C]` for the crosswalks,
+`[I/S]` for the retreats); assembly in this index upgrades no claim.
+
 ## Distillation law
 
 - The kernel receives; it does not invent.
