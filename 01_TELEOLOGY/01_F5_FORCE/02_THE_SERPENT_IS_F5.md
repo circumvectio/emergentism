@@ -14,7 +14,7 @@ rosetta:
 **Version:** v2026.04.04 + F5-lane-sweep 2026-06-05
 **Date:** 2026-04-04 (swept 2026-06-05)
 **Evidence Tier:** [I] Interpretive (philological + structural convergence)
-**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — *that file is a Kintsugi tombstone: its own status reads "SUPERSEDED IN PLACE — not canonical authority" (2026-07-21). It names [`00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) as its owner.*
 
 > **⚠ Tier Discipline Notice — read before proceeding.**
 > This entire document operates at **[I] interpretive** tier. The philological-symbolic apparatus (Ṛta, Asha, Ordo, serpent-as-helix, h₂r̥tó-) is a symbolic convergence, not empirical proof of a literal ordering force. The strong-form reading — F₅ as a literal fifth fundamental interaction or retrocausal influence — is rated **[C] conjecture** and is explicitly named as a **temptation** that the language of this lane makes available but the evidence does not support. A former MEGA-plate crosswalk is preserved as [historical application material](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/01_F5_FORCE/03_F5_AS_GRADIENT_SELECTION_WITH_STAGING.md); it is not current empirical evidence for F₅.
@@ -115,9 +115,9 @@ Zero-Sum Resolution Equation
 
 ## See Also
 
-- [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — the derivation from which the serpent reading follows
+- [`00_A_SQUARE_CANNOT_BE_NEGATIVE.md`](../02_THE_DERIVATION/00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — *Kintsugi tombstone, "SUPERSEDED IN PLACE — not canonical authority" (2026-07-21). Not a live derivation: it retains only the reciprocal-chart inequality and states that no force law, teleology, or ethic follows from it, so the serpent reading does not follow from it either. Named owner: [`00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).*
 - [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](../02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) — the serpent / F₅ conjecture at the physics edge
-- [`09A_THE_LAGRANGIAN_QUESTION.md`](../02_THE_DERIVATION/09A_THE_LAGRANGIAN_QUESTION.md) — the research program: can the AM-GM inequality be written as a Lagrange density?
+- [`09A_THE_LAGRANGIAN_QUESTION.md`](../02_THE_DERIVATION/09A_THE_LAGRANGIAN_QUESTION.md) — *Kintsugi tombstone, status "HISTORICAL — not current force canon" (repaired 2026-07-22). The Lagrange-density question is withdrawn, not open; only the reciprocal-chart calculation is retained there. It names [W7-ORIGIN in `04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md#w7-modularity-and-origin-custody) as the current force-correspondence owner.*
 - [`135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md`](../../11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md) — Darwin/Lamarck/Schrödinger reconciliation
 - [`137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md`](../../11_UPLINK/60_SESSION_PACKETS/137_F5_EKTROPY_THE_FIFTH_FORCE_STRONG_FORM_DRAFT_2026_04_24.md) — strong-form draft with falsification criteria
 - [`138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md`](../../11_UPLINK/60_SESSION_PACKETS/138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md) — Indo-European lineage (note: this packet corrects the Dyḗus-only framing with the Ṛta / *h₂r̥tó-* ordering-law face)

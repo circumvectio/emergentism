@@ -20,7 +20,7 @@ rosetta:
 **Status:** Canonical strategic note
 **Date:** 2026-04-15
 **Evidence Tier:** `[I]` Meta-interpretive
-**Depends on:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md), [00_D6_AS_APOPHATIC_CLOSURE.md](../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md)
+**Depends on:** [00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md](../02_EPISTEMOLOGY/00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md), [Open Canon Covenant](../00_META/00_THE_OPEN_CANON_COVENANT.md), [00_D6_AS_APOPHATIC_CLOSURE.md](../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md) — *forwarding stub; its own status reads "SUPERSEDED" and the page states it has no current semantic authority. It names [Dimensional Closure](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) as current source truth*
 
 ---
 

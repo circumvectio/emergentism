@@ -19,7 +19,7 @@ The canonical Rosetta Stone lives in [`08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_
 - **Deep read** — [`…/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md): the complete cross-domain translation engine — "if you read one document, read that one."
 
 This matches the canonical-location declaration in
-[`08_FRAMEWORK_SUPPORT/00_META/01_ROSETTA_STONE_POINTER.md`](08_FRAMEWORK_SUPPORT/00_META/01_ROSETTA_STONE_POINTER.md)
+[`08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/01_ROSETTA_STONE_POINTER.md`](08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/01_ROSETTA_STONE_POINTER.md)
 and the folder's own self-map in
 [`…/ROSETTA_STONE/00_CORPUS.md`](08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_CORPUS.md).
 All Rosetta references in the corpus should resolve through this folder. This shim only prevents

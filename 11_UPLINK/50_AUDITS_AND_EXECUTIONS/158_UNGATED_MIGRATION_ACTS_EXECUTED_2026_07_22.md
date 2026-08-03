@@ -8,6 +8,15 @@ parents:
   - 157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md
 ---
 
+> **⚠ PREFIX COLLISION — disclosed 2026-07-22.** The bare number "158" is
+> **ambiguous**: this receipt and `158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md`
+> both carry it, written the same day by different writers. Cite this one by its
+> full filename, never as "receipt 158". The collision was created by this
+> receipt's author, who checked the highest number in the lane but not for a
+> concurrent writer holding the same slot. Registration in the K-7 collision
+> census is founder-gated.
+
+
 # RECEIPT 158 — THE UNGATED MIGRATION ACTS
 
 Executed in one pass, 2026-07-22, under receipt 157's standing rule: nothing

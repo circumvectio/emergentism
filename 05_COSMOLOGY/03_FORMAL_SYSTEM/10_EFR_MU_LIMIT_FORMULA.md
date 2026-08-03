@@ -293,7 +293,7 @@ A live owner fails this contract if it:
 
 - [D4/D5 Canonical Reference](34_D4_D5_CANONICAL_REFERENCE.md)
 - [Primitives and Type Signatures](29_PRIMITIVES_AND_TYPE_SIGNATURES.md)
-- [Dimensional Closure](23_DIMENSIONAL_CLOSURE_PROOF.md)
+- [Dimensional Closure](23_DIMENSIONAL_CLOSURE_PROOF.md) — *despite the filename, the closure proof is superseded (status: "KINTSUGI-SUPERSEDED PROOF", repaired 2026-07-17); the file now states an interpretive scaffold, not a theorem*
 - [Quantum Boundary](38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md)
 
 *A gap in today’s reduction is a question. It becomes a new freedom only when

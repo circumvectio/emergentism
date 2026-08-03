@@ -46,6 +46,14 @@ Use the seven roles as a work vocabulary, never as identities or ranks of worth:
 - L6 compresses, archives, and removes false necessity.
 - L7 witnesses and translates without overriding source truth.
 
+## Numbering conventions (intentional — do not normalize)
+
+- `00_*` is a **semantic flag** for primitive-level / foundational content, not an ordinal. Multiple `00_*` files at the same depth is by design (see memory `emergentism-numbering-conventions-intentional`).
+- Date-format drift across the corpus is intentional provenance encoding: `YYYY_MM_DD` = native canon; `YYYY-MM-DD` = external import (Google Docs etc.); `YYYYMMDD` = pipeline artifact.
+- Lower-case suffixes (`103a`) mark machine-readable sidecars; upper-case suffixes (`175A`) mark variant content files.
+
+> **Restored 2026-07-22.** This block was present in `CLAUDE.md` through commit `8fb02d03` (2026-07-20) and was dropped when `fbf78536` rewrote the file. A corpus-wide naming audit the same week measured 43% of filenames as "non-conforming" against a single pattern — which is exactly the error this rule exists to prevent: `PAPER_X_*`, `L<n>_*_DATE` caste reports, and descriptive control-lane names are **distinct intentional families**, not drift. Do not normalize them.
+
 ## Lane discipline
 
 - Stay inside this lane unless the scoped task requires a named owner elsewhere.

@@ -7,6 +7,8 @@ rosetta:
   regime: "Kṣatriya"
   register: "[D] forwarding-stub"
 type: forwarding-stub
+canonical_target: 06_ONTOLOGY/06_THE_REVELATIONS.md
+historical_target: 90_ARCHIVE/staging_drafts_2026_07_20/00_K6_REVELATIONS.md
 title: "00_K6_REVELATIONS.md — tombstoned 2026-07-20"
 status: FORWARDING STUB
 ---

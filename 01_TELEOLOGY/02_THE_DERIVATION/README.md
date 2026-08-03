@@ -72,7 +72,7 @@ The rest of the framework is not automatically proved by these lines. Core State
 | [`15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md`](15_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md) | Follow-on correction note: the log chart sharpens the potential, but does not flatten the sphere Hamiltonian into a 1D `cosh` oscillator. |
 | [`09_PATH_D_THE_AMGM_GEOMETRY.md`](09_PATH_D_THE_AMGM_GEOMETRY.md) | The AM-GM geometry on the sphere: coordinate identities, harmonic approximation, and force-mapping sketch. |
 | [`12_THE_SPECTRUM_RESULTS.md`](12_THE_SPECTRUM_RESULTS.md) | Numerical spectrum of the weighted θ-chart. What was confirmed, what was falsified, and what remains open. |
-| [`13_PATHS_ABC_ANALYSIS.md`](13_PATHS_ABC_ANALYSIS.md) | Three routes from S² to the Standard Model: spectral (Path C), Kaluza-Klein (Path A/B), and Liouville/string (Path B+). |
+| [`13_PATHS_ABC_ANALYSIS.md`](13_PATHS_ABC_ANALYSIS.md) | *(Kintsugi tombstone, 2026-07-22 — its own status reads "HISTORICAL — not current force canon".)* The claim that these routes run from S² to the Standard Model is withdrawn there; the standard geometric and spectral facts remain, the force identifications do not. The owner it names is [W7-ORIGIN in `04_THE_CONJECTURES.md`](../../06_ONTOLOGY/04_THE_CONJECTURES.md#W7-modularity-and-origin-custody). |
 | [`16_OPERATOR_CONSISTENCY_AUDIT.md`](16_OPERATOR_CONSISTENCY_AUDIT.md) | Authoritative operator-routing note separating the weighted sphere baseline, exact `u`-chart representation, flat 1D control, and intended Liouville-normal-form target. |
 
 ### Audit and Track Files

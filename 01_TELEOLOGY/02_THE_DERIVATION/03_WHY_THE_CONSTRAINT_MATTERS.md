@@ -14,7 +14,7 @@ rosetta:
 **Version:** v2026.04.04
 **Date:** 2026-04-04
 **Evidence Tier:** [S] Structural (derived from [A] mathematical substrate)
-**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — *Kintsugi tombstone: "SUPERSEDED IN PLACE — not canonical authority" (2026-07-21). Only the numeric inequality survives there; the tombstone names [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) as its current owner, and states that the inequality establishes no Hamiltonian, ethic, force law, or telos.*
 
 ---
 

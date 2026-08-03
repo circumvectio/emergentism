@@ -19,7 +19,7 @@ rosetta:
 
 **Program Home:** [`The D5 Landauer Barrier Program`](README.md)
 
-**Depends On:** [`Paper 1`](PAPER_1_THE_D5_LANDAUER_BARRIER.md), [`Paper 2`](PAPER_2_WORLDLINE_FORESIGHT_IS_PHYSICAL.md), [`Paper 3`](PAPER_3_THE_REFLEXIVE_DEMON.md), [`D5/D6 Corpus Stabilization`](../../../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md), [`D6 as Apophatic Closure`](../../../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md)
+**Depends On:** [`Paper 1`](PAPER_1_THE_D5_LANDAUER_BARRIER.md), [`Paper 2`](PAPER_2_WORLDLINE_FORESIGHT_IS_PHYSICAL.md), [`Paper 3`](PAPER_3_THE_REFLEXIVE_DEMON.md), [`D5/D6 Corpus Stabilization`](../../../06_ONTOLOGY/00_D5_D6_CORPUS_STABILIZATION.md), [`D6 as Apophatic Closure`](../../../06_ONTOLOGY/00_D6_AS_APOPHATIC_CLOSURE.md) — *those last two are forwarding stubs, status "SUPERSEDED — no current semantic authority"; each names [`Dimensional Closure`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md) as the current D6 source truth.*
 
 ## Thesis
 

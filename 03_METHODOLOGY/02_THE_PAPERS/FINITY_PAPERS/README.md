@@ -12,7 +12,7 @@ rosetta:
   register: "[A/S/I]"
   canonical_phrase: "The Finity Papers — index"
 title: "The Finity Papers"
-status: "ACTIVE — 2026-05-31. A five-paper programme on the geometry of {0,1,∞}. Every claim tier-marked; each paper carries its own kill criterion. Papers I–IV passed an adversarial referee pass (2026-05-31) and are at SUBMISSION FORM v2; each carries an illustrator-ready figure spec. Paper V's prediction was run as a tier-[I] pilot and PRELIMINARILY FALSIFIED — the kill criterion fired and is reported as such (see the RESULTS companion)."
+status: "ACTIVE — 2026-05-31. A five-paper programme on the geometry of {0,1,∞}. Every claim tier-marked; each paper carries its own kill criterion. Papers I–IV passed an adversarial referee pass (2026-05-31). Corrected 2026-07-22: only Paper IV is still at SUBMISSION FORM v2 — Paper I is now an ACTIVE RESEARCH NOTE and Papers II and III were rewritten after the referee pass as ACTIVE KINTSUGI SUCCESSORS superseding their pre-repair blobs, so they are no longer the referee-passed submission drafts; and only 1 of the 4 (Paper I) carries an illustrator-ready figure spec, counted by grepping the four paper files case-insensitively for figure/illustrator, which matches Paper I only. Paper V's prediction was run as a tier-[I] pilot and PRELIMINARILY FALSIFIED — the kill criterion fired and is reported as such (see the RESULTS companion)."
 ---
 
 **Corpus:** Emergentism

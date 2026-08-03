@@ -120,6 +120,17 @@ hashes. Its baseline temporary corpus contains only those four artifacts; it
 does not replay external journals, inspect current source evidence, or infer
 semantic repairs.
 
+**Corrected 2026-07-22.** This table previously held only the dormant
+`build_corpus_map.py` row, so it read as though the lane had no working
+compiler — while omitting the deterministic Burri plate renderer that the parent
+lane README names as this folder's headline active surface. Counted by listing
+`*.py` here: 7 files, of which 5 are `test_*.py`, leaving 2 compilers; both are
+now in the table. The dormancy claim for `build_corpus_map.py` was rechecked and
+holds (line 19 sets `SOURCE` to `_corpus_source.yaml` under `09_TOOLS/`, which is
+absent). Runnability receipt for the renderer, 2026-07-22:
+`python3 09_TOOLS/02_COMPILERS/render_burri_rules.py --check` exited 0 with
+`BURRI-OK topology valid; generated SVG bytes are current`.
+
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`

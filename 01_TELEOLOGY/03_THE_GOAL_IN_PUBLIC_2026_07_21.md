@@ -48,9 +48,16 @@ Source library, cold archive, and deployed payload must never be added together
 or treated as equivalent.
 
 The Vercel release is publicly reachable at
-<https://emergentism-org.vercel.app/>. The custom name is not cut over:
+<https://emergentism-org.vercel.app/>. ~~The custom name is not cut over:
 `emergentism.org` resolves to `198.185.159.144` and reaches the legacy
-`www.emergentism.org` surface. Route count, build pass, deployment, Vercel
+`www.emergentism.org` surface.~~
+
+> **CORRECTED 2026-07-22 — THE CUT-OVER HAS HAPPENED.** `emergentism.org` now
+> resolves to `216.198.79.1` and serves this site: apex `HTTP 200`, `/record/`
+> `200`, and `/check/` and `/saturation/` — both authored 2026-07-22 — return
+> `200`. The sentence above was true when written and was overtaken the same
+> day. **This is the single largest state change in the document: the site is
+> no longer a local artifact, it is published.** Route count, build pass, deployment, Vercel
 alias, custom-domain DNS, reader understanding, and world validation are
 therefore separate facts.
 
@@ -189,14 +196,25 @@ belief while hiding scope; if readers cannot separate the warrant discipline
 from the doctrine; if non-extractive access is abandoned; or if no sustainable,
 non-extractive custody line can be named.
 
-## Current custom-domain hold
+## Custom-domain hold — superseded 2026-07-22
 
-No DNS mutation was authorized in this release. The custom-domain cutover is
+No DNS mutation was authorized in this release. The custom-domain cutover was
 therefore explicitly held pending confirmation of the desired origin,
 preservation/redirect treatment for the legacy surface, domain custody, and a
-rollback plan. Review this hold no later than **2026-08-21**. Until cutover, the
+rollback plan. ~~Review this hold no later than **2026-08-21**. Until cutover, the
 Vercel alias is the truthful public address and `emergentism.org` must not be
-described as serving this build.
+described as serving this build.~~
+
+> **CORRECTED 2026-07-22 — THIS HOLD IS SUPERSEDED, NOT CURRENT.** The cut-over
+> happened on 2026-07-22, as recorded earlier in this document:
+> `emergentism.org` resolves to `216.198.79.1` and serves this build. The Vercel
+> alias is therefore no longer the only truthful public address, and the
+> prohibition on describing `emergentism.org` as serving this build no longer
+> applies. The `2026-08-21` review date belonged to the hold and lapses with it.
+> What the cut-over did **not** settle, and what remains open: preservation and
+> redirect treatment for the legacy `www.emergentism.org` surface, domain
+> custody, and a rollback plan. Domain resolution, legacy-surface disposition,
+> custody, and rollback are separate claims.
 
 ## Current next acts
 

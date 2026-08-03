@@ -9,6 +9,15 @@ parents:
   - 156_INDEPENDENT_VERIFICATION_OF_RECEIPT_155_2026_07_22.md
 ---
 
+> **⚠ PREFIX COLLISION — disclosed 2026-07-22.** The bare number "157" is
+> **ambiguous**: this receipt and `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md`
+> both carry it, written the same day by different writers. Cite this one by its
+> full filename, never as "receipt 157". The collision was created by this
+> receipt's author, who checked the highest number in the lane but not for a
+> concurrent writer holding the same slot. Registration in the K-7 collision
+> census is founder-gated.
+
+
 # RECEIPT 157 — CORRECTION
 
 Two claims made in the K-namespace work of 2026-07-22 are **withdrawn**. Both

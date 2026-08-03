@@ -367,7 +367,7 @@ But deduction is **secondary**. The primary method is the sitting practice — t
 | [κ = 0 (Irreducible Ground)](15_EFR_WOLFRAM_NKS_INTEGRATION.md) | The ground-facing limit is empty. K_sc = 0. |
 | [Data Science Triad](14_EFR_EPISTEMOLOGY_TRIAD.md) | Induction/Deduction/Abduction as reduction tools |
 | [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md) | Epistemic status of the K = 0 claim |
-| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature |
+| [Triadic Stability Correspondence](21_TRIADIC_STABILITY_CORRESPONDENCE.md) | Selected correspondence; no forced count of nature. *Kintsugi tombstone, repaired 2026-07-20 — the target opens by stating there is no "Triadic Stability Theorem"; the uniqueness proof was withdrawn.* |
 
 ---
 

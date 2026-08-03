@@ -57,7 +57,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 | [`PAPER_E`](PAPER_E_UNCERTAINTY_PRINCIPLE.md) | Uncertainty, Quantum State, and Record | [A/B]/[I]/[C] | D3/D4 owners |
 | [`PAPER_F`](PAPER_F_K_MINIMAL.md) | K-Minimality — Retraction and Research Boundary | [A]/[I]/[C] | no minimality theorem |
 | [`PAPER_G`](PAPER_G_BIOLOGICAL_PREDICTIONS.md) | Biological Predictions — Kintsugi Successor | [C] | preregistered future contact only |
-| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional and Cosmological Conjectures — Kintsugi Successor | [D]/[C] | removable questions |
+| [`PAPER_H`](PAPER_H_DIMENSIONAL_COSMOLOGICAL.md) | Dimensional and Cosmological Conjectures — Kintsugi Successor *(own status: "SUPERSEDED; RESEARCH QUESTIONS ONLY"; it names no successor document)* | [D]/[C] | removable questions |
 
 ## The Meta-Layer (I–U)
 

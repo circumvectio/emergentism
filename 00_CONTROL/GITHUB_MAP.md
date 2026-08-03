@@ -1,9 +1,21 @@
+---
+title: "Emergentism GitHub and publication map"
+status: "ACTIVE — current facts explicitly scoped"
+date: 2026-07-23
+evidence_tier: "[B] local Git, GitHub API, DNS, and HTTP checks; no full-payload deploy congruence claim"
+as_of_commit: "1cce7cb8a0e4fa1c475615be28abb899e8fb793d"
+---
+
 # Emergentism GitHub Map
 
 **Target repo:** `circumvectio/emergentism`
-**Source root:** `/Users/yves/Documents/01_EMERGENTISM`
+**Source root:** `/Users/Yves/Documents/01_EMERGENTISM`
 **Canonicalized:** 2026-06-08
-**Visibility:** private
+**Visibility:** **PUBLIC** — reverified 2026-07-23 (`gh repo view` returned
+`isPrivate:false, visibility:PUBLIC`). This file previously read *private*.
+> **Everything in this repository is world-readable**: doctrine, receipts, archives,
+> drafts, and every tombstone committed to the public remote. Ignored or uncommitted
+> local tissue is not published by Git merely because it exists in this checkout.
 
 ## Repository Structure
 
@@ -33,12 +45,29 @@
 
 ## Embedded Repositories
 
-None. Emergentism root is a clean doctrinal body.
+The **tracked publication source** contains no embedded repository. The live
+checkout may contain ignored local repositories used by tooling—notably a Claude
+worktree and Lean package checkouts under `.lake/`. They are not part of the
+tracked Emergentism source or GitHub publication payload.
 
 ## Public Site Boundary
 
-`12_PUBLIC_SITE/book-pwa/` is a Next.js PWA for the Emergentism book.
-It is the public surface. All other directories are private doctrine.
+The deployed source boundary is the static root of `12_PUBLIC_SITE/`, governed by
+`12_PUBLIC_SITE/vercel.json` and `12_PUBLIC_SITE/.vercelignore`.
+`12_PUBLIC_SITE/book-pwa/` is a frozen historical application snapshot and is
+explicitly excluded from deployment.
+
+As verified 2026-07-23, `https://emergentism.org/` returned HTTP 200 from Vercel.
+Its homepage bytes had SHA-256
+`bba8500b056855f69aa077c2539917141ffeaecedfccc937d8d9831c2797719c`,
+matching `12_PUBLIC_SITE/index.html` at commit `caa276cb`. The homepage at the
+then-current source commit `1cce7cb8` had a different hash. This proves a live
+homepage and identifies its source version; it does **not** prove full-payload
+congruence or deployment of current HEAD.
+
+All committed directories are world-readable through GitHub, but only the
+allowable `12_PUBLIC_SITE/` payload is served by the branded site. “Not deployed”
+is not “not published.”
 
 ## Publication Rule
 

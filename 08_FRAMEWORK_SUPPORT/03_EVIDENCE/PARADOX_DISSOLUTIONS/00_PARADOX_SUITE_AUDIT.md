@@ -91,6 +91,14 @@ Related bridge material also exists in:
 
 ## Already Resolved Locally
 
+> **Superseded 2026-07-21 — disclosed 2026-07-22.** PD_10, PD_23 and seven other
+> numbers (PD_08, PD_09, PD_14, PD_15, PD_20, PD_21, PD_24) became fifteen-line
+> forwarding stubs carrying `status: "SUPERSEDED — no current semantic authority"`.
+> Assessments in this section and in **Still Open** that describe the *content* of
+> those documents describe bodies now held only in `90_ARCHIVE`, not text at the
+> in-lane path. This file's own header still reads "Active integrity bridge"; treat
+> its per-document verdicts as dated to before 2026-07-21.
+
 ### 1. Numbering authority now exists
 
 The workspace already has a single canonical numbering file:
@@ -202,7 +210,7 @@ Those judgments should be preserved as review guidance, but not represented as a
 
 ---
 
-> **What is proven vs interpreted in this document:** See the [Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md) — 8 links of established mathematics, 3 links of interpretation. The boundary between proof and conjecture is explicitly marked.
+> **What is proven vs interpreted in this document:** the governing reference is [The Honest Position](../../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md), which carries the current tier for each claim. The former boundary marker, [the Steel Thread](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md), was **retracted on 2026-07-21** and is now a Kintsugi tombstone — it is preserved as provenance and is not current authority. Its own crack was silently changing claim types, so it cannot certify this document's proof/interpretation boundary.
 
 ---
 

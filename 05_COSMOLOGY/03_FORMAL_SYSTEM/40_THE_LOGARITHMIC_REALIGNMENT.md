@@ -113,7 +113,7 @@ All three fix the same point (`x=1, s=0, u=0`). All three exchange the same pole
 
 | Verbatim block | Log form (`s = log ν`) | Name in log chart |
 |---|---|---|
-| `φ · ν = 1 on S²` | `s_φ + s_ν = 0` | **Zero sum** (literal) |
+| `φ · ν = 1` for `θ∈(0,π)` | `s_φ + s_ν = 0` | **Zero sum** (literal) |
 | `(φ − ν)² ≥ 0` | `(eˢ − e⁻ˢ)² ≥ 0` | Squared deviation |
 | `φ + ν ≥ 2` | `eˢ + e⁻ˢ ≥ 2`, i.e. `2 cosh(s) ≥ 2` | **cosh bound** (=2 iff s=0) |
 

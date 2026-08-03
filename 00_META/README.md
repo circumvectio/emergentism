@@ -26,3 +26,6 @@ evidence of a past decision, not an epistemic upgrade and not an AI-work gate.
 
 When two active files claim the same doctrine, identify the current owner,
 archive or tombstone the shadow, repair inbound links, and record the seam.
+
+The visible root intentionally contains the reader doors and forwarding stubs
+needed by older citations. A stub routes; it does not become a second owner.

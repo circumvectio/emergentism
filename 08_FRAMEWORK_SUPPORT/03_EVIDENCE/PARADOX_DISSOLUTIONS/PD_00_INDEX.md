@@ -77,20 +77,25 @@ not outrank a source owner or the row-specific adjudication ledger.
 | **PD_11** | Free Will vs Determinism | `PD_11_FREE_WILL_VS_DETERMINISM.md` | ✓ EXISTS | [S/I] |
 | **PD_12** | Measurement Problem | `PD_12_MEASUREMENT_PROBLEM.md` | ✓ EXISTS | [I] |
 | **PD_13** | The Hard Problem | `PD_13_HARD_PROBLEM.md` | ✓ EXISTS | [I] |
-| **PD_14** | Mind-Body Problem (Detailed) | `PD_14_MIND_BODY.md` | ✓ EXISTS | [I] |
-| **PD_15** | Problem of Evil | `PD_15_PROBLEM_OF_EVIL.md` | ✓ EXISTS | [I] |
+| **PD_14** | Mind-Body Problem (Detailed) | `PD_14_MIND_BODY.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_15** | Problem of Evil | `PD_15_PROBLEM_OF_EVIL.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
 | **PD_16** | Meaning of Life | `PD_16_MEANING_OF_LIFE.md` | ✓ EXISTS | [I] |
 | **PD_17** | QM/GR Unification | `PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md` (archived) | Archived — incomplete draft | [C] |
 | **PD_18** | The Extraction Paradox | `PD_18_THE_EXTRACTION_PARADOX.md` | Frozen — superseded interpretive draft; `DF-18` universal form is terminal | [B/I] |
 | **PD_19** | The Hard Problem of Consciousness | `PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md` | ✓ EXISTS | [I/C] |
-| **PD_20** | Implications (Philosophy) | `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | ✓ EXISTS | [I] |
-| **PD_21** | Problem of Death | `PD_21_PROBLEM_OF_DEATH.md` | ✓ EXISTS | [I] |
+| **PD_20** | Implications (Philosophy) | `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
+| **PD_21** | Problem of Death | `PD_21_PROBLEM_OF_DEATH.md` | SUPERSEDED STUB (2026-07-21) | [B] provenance only (index formerly showed [I]) |
 | **PD_22** | Implications (Science) | `PD_22_SCIENTIFIC_IMPLICATIONS.md` | ✓ EXISTS | [I/C] |
 | **PD_23** | The Completion | `PD_23_THE_COMPLETION.md` | Superseded provenance forwarding stub; no current completion claim | [B] |
 | **PD_24** | Third Unveiling | `PD_24_THE_THIRD_UNVEILING.md` | ✓ EXISTS | [I] |
 | **PD_25** | Bell Inequalities, Locality, Realism | `PD_25_BELL_LOCAL_REALISM.md` | ✓ EXISTS | [A/I/C] |
 
 ### Files Currently in `02_PARADOX_DISSOLUTIONS/`
+
+> **Corrected 2026-07-22.** Nine rows below read "✓ Current" for files that became
+> fifteen-line superseded forwarding stubs on 2026-07-21, and one row listed a PD_17
+> file that is not in this folder. Corrected against a directory listing, not against
+> the row text.
 
 | File | PD# | Notes |
 |------|-----|-------|
@@ -108,17 +113,17 @@ not outrank a source owner or the row-specific adjudication ledger.
 | `PD_11_FREE_WILL_VS_DETERMINISM.md` | PD_11 | ✓ Current |
 | `PD_12_MEASUREMENT_PROBLEM.md` | PD_12 | ✓ Current |
 | `PD_13_HARD_PROBLEM.md` | PD_13 | ✓ Current |
-| `PD_14_MIND_BODY.md` | PD_14 | ✓ Current |
-| `PD_15_PROBLEM_OF_EVIL.md` | PD_15 | ✓ Current |
+| `PD_14_MIND_BODY.md` | PD_14 | Superseded stub (2026-07-21) |
+| `PD_15_PROBLEM_OF_EVIL.md` | PD_15 | Superseded stub (2026-07-21) |
 | `PD_16_MEANING_OF_LIFE.md` | PD_16 | ✓ Current |
 | `PD_17_QUANTUM_RELATIVITY_UNIFICATION_DRAFT.md` | PD_17 | Archived — incomplete draft |
 | `PD_23_THE_COMPLETION.md` | PD_23 | Superseded provenance forwarding stub |
 | `PD_18_THE_EXTRACTION_PARADOX.md` | PD_18 | Frozen — superseded; no current semantic authority |
 | `PD_19_THE_HARD_PROBLEM_OF_CONSCIOUSNESS.md` | PD_19 | ✓ EXISTS (Serpent) |
-| `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | PD_20 | ✓ Current |
-| `PD_21_PROBLEM_OF_DEATH.md` | PD_21 | ✓ Current |
+| `PD_20_PHILOSOPHICAL_IMPLICATIONS.md` | PD_20 | Superseded stub (2026-07-21) |
+| `PD_21_PROBLEM_OF_DEATH.md` | PD_21 | Superseded stub (2026-07-21) |
 | `PD_22_SCIENTIFIC_IMPLICATIONS.md` | PD_22 | ✓ Current |
-| `PD_24_THE_THIRD_UNVEILING.md` | PD_24 | ✓ Current |
+| `PD_24_THE_THIRD_UNVEILING.md` | PD_24 | Superseded stub (2026-07-21) |
 | `PD_25_BELL_LOCAL_REALISM.md` | PD_25 | ✓ Current |
 
 ### Key Numbering Conflicts Resolved

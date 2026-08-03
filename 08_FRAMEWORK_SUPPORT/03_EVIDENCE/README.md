@@ -37,6 +37,15 @@ The geometry this evidence layer calibrates is canonized in cosmology — read t
 - [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the chart describes and Justice evaluates; “goodness is the bond” is `[I]`, never a `φν` product, and the action boundary is `η_move`.
 - [Five-plus-One Constitution](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — current refusal owner; application-specific constitutional enumerations are historical only.
 
+> **Corrected 2026-07-22.** The Burrisphere line above read "the Master Rosetta's nine-row
+> table is the evidence source for that closure." Two errors: there is no nine-row table in
+> [`ROSETTA_STONE/00_THE_MASTER_ROSETTA.md`](ROSETTA_STONE/00_THE_MASTER_ROSETTA.md) — the
+> current file contains no table at all (`grep -c "|"` returns 0), the catalogue having been
+> archived on 2026-07-21 — and naming a Rosetta table as an *evidence source* for a cosmological
+> closure is the warrant-transfer the Master Rosetta forbids ("A theorem in `A` does not become
+> a theorem in `B`"; "A Rosetta result cannot promote `[I]` or `[C]` to `[S]` or `[A]`"). This
+> lane's front door is the last place that licence should sit.
+
 ## Read First
 
 - Read first: [`ROSETTA_STONE/README.md`](ROSETTA_STONE/README.md)

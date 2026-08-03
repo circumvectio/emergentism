@@ -103,6 +103,21 @@ tests. Consequential action uses a complete, scoped, contestable
 
 ## Repository map
 
+> **Reading the root directory.** Nineteen `.md` files sit at this root, and
+> **eight are live**: `README.md`, `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`,
+> `ROSETTA.md` (a routing shim), `00_THE_KERNEL_INDEX.md`,
+> `00_THE_WELTANSCHAUUNG.md`, and `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`.
+> The other **eleven are forwarding stubs** — each holds a path, not a claim,
+> and each is cited by live doctrine (58 citations across the eleven), so they
+> stay where they are. A stub's `canonical_target` always names a **live**
+> owner, never an archive; preserved bytes are named by `historical_target`.
+>
+> Nineteen further stubs with **zero live-doctrine demand** were relocated on
+> 2026-07-22 to
+> [`91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/`](91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/INDEX.md)
+> — nothing deleted, lookup index included.
+
+
 | Path | Role |
 |---|---|
 | `VMOSK_A_v2_2026_07_31.md` | non-semantic control projection, current; supersedes `VMOSK_A.md`; never a doctrine owner |
@@ -124,7 +139,7 @@ tests. Consequential action uses a complete, scoped, contestable
 | `12_PUBLIC_SITE/` | public projection; never the canon owner |
 | `13_BOOKS/` | projection-only critical editions; never K-8 |
 | `90_ARCHIVE/` | cold provenance and superseded bodies |
-| `91_COMPATIBILITY/` | forwarding paths only |
+| `91_COMPATIBILITY/` | forwarding paths only — *never doctrine* |
 
 ## Current standing
 

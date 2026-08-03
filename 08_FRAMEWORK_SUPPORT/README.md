@@ -23,6 +23,8 @@ the kernel, ontology, formal system, axiology, and methodology owners.
   “governance” here means accountable constraint, not a product constitution.
 - [`02_OPERATORS/`](02_OPERATORS/) — operator and correspondence studies.
 - [`03_EVIDENCE/`](03_EVIDENCE/) — Rosetta, comparative evidence, and paradox work.
+- [`91_COMPATIBILITY/`](91_COMPATIBILITY/) — route map for retired support paths;
+  never a doctrine owner.
 - [`05_SYNTHESIS/`](05_SYNTHESIS/) — compressed readings downstream of owners.
 - [`08_AGENTS/`](08_AGENTS/) — optional cognitive-role grammar; selected roles,
   never human castes, identities, or work authority.

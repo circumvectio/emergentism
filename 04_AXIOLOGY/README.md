@@ -9,7 +9,7 @@ rosetta:
   canonical_phrase: "04_AXIOLOGY — Justice constrains commitment"
 ---
 
-# 04_AXIology — Justice Constrains Commitment
+# 04_AXIOLOGY — Justice Constrains Commitment
 
 This lane owns pure Emergentist value theory together with the cross-level
 bridge-law discipline governing how any claim — including a value claim — may

@@ -40,7 +40,7 @@ maintenance across AI-facing repo surfaces.
 
 ## Current Focus
 
-The scripts in this folder currently support:
+This folder holds one script. It supports:
 
 - depth-aware `AGENTS.md` scaffold generation
 

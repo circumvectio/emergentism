@@ -39,7 +39,8 @@ Use these types consistently.
 
 ## 3. Local README Contract
 
-Every sub-subfolder with files should have a `README.md` or `00_INDEX.md` that states:
+Every active documentary sub-subfolder with files should have a `README.md` or
+`00_INDEX.md` that states:
 
 1. what the folder is,
 2. what it owns,
@@ -48,6 +49,12 @@ Every sub-subfolder with files should have a `README.md` or `00_INDEX.md` that s
 5. whether it is active, archived, generated, or compatibility-only.
 
 Short is better than ornate. A folder front door is a routing instrument, not an essay.
+
+Code packages, generated dependency/build trees, and raw data leaves follow
+their native package or dataset conventions. Deep cold-archive descendants may
+inherit the nearest archive README when they are one custody batch and have no
+independent active meaning. This exception must never be used to hide an active
+owner or an unmarked compatibility route.
 
 ## 4. Source Ownership
 
@@ -140,6 +147,151 @@ The short version:
 - keep anti-capture as structure, not ornament.
 
 `Zero-Sum Resolution Equation`
+
+## 9A. Canonical Root Shape
+
+The active root has four classes and no fifth:
+
+```text
+01_EMERGENTISM/
+├── reader doors                 README, Weltanschauung, Kernel Index, Rosetta
+├── control surfaces             00_CONTROL, 00_HANDOFF, 00_META
+├── semantic and support lanes   01_TELEOLOGY … 12_PUBLIC_SITE
+└── custody surfaces             90_ARCHIVE, 91_COMPATIBILITY
+```
+
+Root forwarding stubs are permitted only when they resolve an older citation to
+an existing active or historical target. A forwarding stub cannot contain new
+doctrine. The repository map in `README.md` is the human front door; this
+standard is the architectural owner; `09_TOOLS/01_SCRIPTS/check_tree_contract.py`
+is the executable guard. Generated registers describe the tree but do not own it.
+
+### 9A.1 · The root live-set is CLOSED at eight `[D]` — staged 2026-07-22
+
+The root holds exactly **eight live documents**. This is not a description; it
+is a closed set, and it is already enforced — `check_tree_contract.py`
+`ROOT_BODY_ALLOWLIST` contains these eight names and no others:
+
+| file | job |
+|---|---|
+| `README.md` | what this is, for a human |
+| `AGENTS.md` · `AGENT_README.md` · `CLAUDE.md` | routing, for machines |
+| `ROSETTA.md` | shim to the Rosetta Stone lane |
+| `00_THE_KERNEL_INDEX.md` | the map — seven owner surfaces |
+| `00_THE_WELTANSCHAUUNG.md` | the technical door — the priced creed |
+| `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` | the reader's door — one sitting |
+
+**A ninth live root file is a contract amendment, not a file drop.** Adding one
+means editing this section and the allowlist together, with a receipt. The
+guard already refuses the file; this sentence says why.
+
+### 9A.2 · The stub law `[D]`
+
+Everything else at root — **11 files, verified 2026-07-22** — is a forwarding
+stub carrying real demand. A stub only works at the path it forwards *from*, so
+a stub **with live citers** may not be moved, renamed, or deleted.
+
+> **Correction, same day.** An earlier draft of this section said *30 stubs,
+> 2–33 citations each, append-only, none may be moved.* That count was wrong:
+> it never asked **who** was citing. Five tidy passes had generated their own
+> audit trail, and those audits name every stub they created — so the machinery
+> was citing its own output and the count read it as demand. Re-measured
+> against live doctrine only: **11 stubs carry all 58 live citations; 19 had
+> zero.** The 19 were relocated to `91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/`
+> with a dated stone and a lookup index. Root: 38 → 19 files.
+
+**The demand test is now the rule:** before claiming a stub is load-bearing,
+count only citers that are live doctrine — excluding archives, dated handoff
+packets, other stubs, and any audit or tidy-plan document. A stub cited only by
+the pass that created it is not load-bearing; it is an echo.
+
+Four binding rules. `09_TOOLS/01_SCRIPTS/check_forwarding_stubs.py` **detects**
+violations of them; it does not enforce them.
+
+> **Gate status, dated 2026-07-22 (second reading, same day).** The checker now
+> exits `0` — *0 violations across 80 stubs* corpus-wide. It read `1` earlier
+> the same day, and **most of that redness was the checker's fault, not the
+> corpus's**: rule 1 demanded a `canonical_target:` frontmatter field, so it
+> flagged 76 well-formed stubs whose successors are ordinary markdown links —
+> which is what a reader actually clicks. Satisfying it would have meant adding
+> metadata nobody reads to 76 files. Rule 1 now asks the real question: *does
+> this stub route the reader anywhere that resolves?* Eight genuine defects
+> remained under the corrected rule and were repaired one at a time.
+>
+> Two false-green traps were caught during that pass and are recorded because
+> they will recur:
+>
+> - An earlier draft of this section said the rules were *"enforced by"* the
+>   checker, which read as a passing gate over a failing one — **the same
+>   pattern this standard exists to name, committed inside the standard.**
+> - Repairing the broken stub at `11_UPLINK/20_SCOPE/25_EXPERIMENT_SCOPE.md`
+>   replaced the words the census matches on, and the gate went green while
+>   that file silently dropped **out of the census**. A count that improves
+>   because something stopped being looked at is not an improvement. Always
+>   read the denominator: 80 stubs, not 79.
+>
+> A companion gate, `09_TOOLS/01_SCRIPTS/check_dead_citations.py`, is also
+> green — *0 findings across 733 live documents* — and catches the related
+> defect: a live document citing a target whose own status declares it dead.
+
+1. A stub routes the reader onward — a target field that resolves, or at least
+   one body link that resolves.
+2. **`canonical_target` means a LIVE owner.** It may never name a path under
+   `90_ARCHIVE/`, and never another stub. If nothing live absorbs the document,
+   omit the field.
+3. `historical_target` means preserved bytes and *may* be archival.
+4. **No chains.** A stub points at its terminus, not at another stub.
+
+*Why rules 2 and 4 exist:* on 2026-07-22 fourteen root stubs declared a
+`canonical_target` that resolved to a grave or to another tombstone. Every one
+existed, so an existence-only check reported zero broken — while readers
+following a link labelled "canonical home" landed on a headstone. **Existence
+is not status.**
+
+### 9A.3 · The placement rule `[D]` — one line, no judgement call
+
+> **A new document goes to the one owner that would have to be corrected if the
+> document turned out to be false.**
+>
+> If nothing would have to be corrected, it is not doctrine. Route it to
+> `00_CONTROL` (receipt for a completed act), `00_HANDOFF` (dated in-flight
+> packet), `90_ARCHIVE` (superseded body), or `91_COMPATIBILITY` (path only) —
+> **and never to the root.**
+
+### 9A.4 · Lane names are glossed, never renamed `[D]`
+
+There are **seventeen lanes**. The `-ology` names are hard-coded in
+`check_tree_contract.py` (three separate lists), the `README.md` repository
+map, seventeen route-card triplets, and the Kernel Index. **Renaming buys
+cosmetics and costs a mass-breakage event.** The Plain-Language Naming Law is
+satisfied by a function gloss, not a directory rename:
+
+| lane | in plain words |
+|---|---|
+| `00_CONTROL` | receipts and boundaries for completed acts |
+| `00_HANDOFF` | dated in-flight working packets |
+| `00_META` | the governance spine — routing and claim custody |
+| `01_TELEOLOGY` | what is it for |
+| `02_EPISTEMOLOGY` | how do we know |
+| `03_METHODOLOGY` | how do we work |
+| `04_AXIOLOGY` | what is worth |
+| `05_COSMOLOGY` | what is the world |
+| `06_ONTOLOGY` | what is there |
+| `07_THEOLOGY` | what is ultimate |
+| `08_FRAMEWORK_SUPPORT` | evidence, compilers, analysis |
+| `09_TOOLS` | validators and renderers |
+| `10_SEED` | the minimal teachable core |
+| `11_UPLINK` | the record — audits and receipts |
+| `12_PUBLIC_SITE` | projection; never an owner |
+| `90_ARCHIVE` | cold provenance |
+| `91_COMPATIBILITY` | paths only, never doctrine |
+
+*Count correction:* an earlier pass in this session twice said "16 lanes."
+`ls -1d */` returns **17**. Recorded so the miscount is not inherited.
+
+Within `08_FRAMEWORK_SUPPORT/`, compilers and historical analysis live under
+`04_COMPILERS_AND_ANALYSIS/`. No semantic or support lane may create its own
+`00_META/`; old references are explained through a `91_COMPATIBILITY/` map.
 
 ---
 

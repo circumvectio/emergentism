@@ -14,7 +14,7 @@ rosetta:
 **Version:** v2026.04.04
 **Date:** 2026-04-04
 **Evidence Tier:** [I] Interpretive
-**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md)
+**Depends on:** [00_A_SQUARE_CANNOT_BE_NEGATIVE.md](00_A_SQUARE_CANNOT_BE_NEGATIVE.md) — superseded in place 2026-07-21 and now a tombstone, not canonical authority. The derivation chain this note questions no longer stands; per the tombstone only the numeric inequality survives, and the owner it names is [`05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md).
 
 ---
 

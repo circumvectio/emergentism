@@ -29,6 +29,18 @@ sources:
 
 # K2 Packet — Audit-Trio Handoff (2026-07-20)
 
+> **Docket corrected 2026-07-22 — every packet was already filed.** This
+> document said *"not yet filed"* twenty-one times, about thirteen distinct
+> caste packets, and named each only by its background task id. All thirteen
+> ids were checked against the working directory: **every one resolves to a
+> sibling file in `00_HANDOFF/` that carries that same task id in its own
+> text.** They were filed and the docket was never updated. Each of the
+> twenty-one lines now names the file instead of the task id, so a reader can
+> open the packet rather than hunt for a task that no longer exists. Nothing
+> was added, removed, or re-adjudicated — only the filing status was corrected
+> to match the directory. The `STAGED — K2 adjudication requested` status is
+> untouched: filing a packet is not signing it.
+
 ## 0 · TL;DR
 
 Five castes of the audit-trio (L1 contradiction, L2 evidence × 2, L3 citation × 2) returned verdicts on the post-coherence(148) corpus. **No kernel piece failed. No operational-kill evidence changed. No tier promotion happened.** The verdicts are improvements-to-the-record, not corrections-to-the-doctrine. The load-bearing finding is a single K2-bound knot — **the receipt-145 authority fork** (two files share `receipt: 145`; 5+ documents banner it as ACTIVE while its own first line reads DISPUTED). Resolving it resolves 7 broken parent citations, 3 ACTIVE-banner-on-disputed-foundation cases, and 2 receipt-number collisions in one move. **7 additional additive fixes fit Box 9 bounded authority** (no moves, no renames, no archive, no tier promotion) and can land in the same sitting under Mavis execution.
@@ -187,16 +199,16 @@ The L7's 5 cold-reader failures on the public site (5+1 two-clicks-deep, /record
 - L3.2 citations 00_META+11_UPLINK: task output `bg_7d38db3a` (not yet filed)
 
 **Second wave (10 verdicts, 2026-07-20 late / 2026-07-21 morning):**
-- L5 architect review: task output `bg_1d4199ca` (not yet filed)
-- L2.2 E1-10 + W0-12: task output `bg_85ea29cf` (not yet filed)
-- L1 corpus firewall: task output `bg_a3264c01` (not yet filed)
-- L2.3 5+1 + 22 dead: task output `bg_fea2b9e2` (not yet filed)
-- L1.2 shadow scan (7 insights): task output `bg_a1236f17` (not yet filed)
+- L5 architect review: task output `bg_1d4199ca` (filed: `L5_BRAHMANA_ARCHITECT_REVIEW_2026_07_20.md`)
+- L2.2 E1-10 + W0-12: task output `bg_85ea29cf` (filed: `L2.2_CLAIM_VS_EVIDENCE_E1-10_W0-12_2026_07_20.md`)
+- L1 corpus firewall: task output `bg_a3264c01` (filed: `L1_CORPUS_CONTRADICTION_FIREWALL_2026_07_20.md`)
+- L2.3 5+1 + 22 dead: task output `bg_fea2b9e2` (filed: `L2.3_CLAIM_VS_EVIDENCE_5+1_22_DEAD_2026_07_20.md`)
+- L1.2 shadow scan (7 insights): task output `bg_a1236f17` (filed: `L1.2_SHADOW_SCAN_7_INSIGHTS_2026_07_20.md`)
 - L3 tier-compliance: filed at `00_META/L3_AUDIT_REPORT_2026_07_20_CITATION_TIER_PASS.md` (248 lines, [B])
-- L6 K3 archive (second instance): task output `bg_84e688df` (not yet filed)
-- L7 constitutional witness: task output `bg_17999bb2` (not yet filed)
-- L1.4 11+12 firewall: task output `bg_10eb303c` (not yet filed)
-- L1.2 00_META firewall: task output `bg_6ffb1e40` (not yet filed)
+- L6 K3 archive (second instance): task output `bg_84e688df` (filed: `L6_SADHU_K3_ARCHIVE_AUDIT_v2_2026_07_20.md`)
+- L7 constitutional witness: task output `bg_17999bb2` (filed: `L7_RSI_CONSTITUTIONAL_WITNESS_2026_07_20.md`)
+- L1.4 11+12 firewall: task output `bg_10eb303c` (filed: `L1.4_CONTRADICTION_FIREWALL_11_12_2026_07_20.md`)
+- L1.2 00_META firewall: task output `bg_6ffb1e40` (filed: `L1.2_CONTRADICTION_FIREWALL_00_META_2026_07_20.md`)
 
 **Filing the 13 unfiled verdicts to `00_HANDOFF/` is in the next Box-9 batch** (additive, no move, no rename, no archive, no tier promotion).
 

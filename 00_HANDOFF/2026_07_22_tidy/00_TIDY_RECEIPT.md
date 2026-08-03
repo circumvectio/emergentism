@@ -169,7 +169,20 @@ doctrine, deployment, or remote state was deleted or changed.
 | **11_UPLINK** | **`00_THE_UPLINK.md`** | **✓ (NEW)** |
 | **12_PUBLIC_SITE** | **`00_THE_PUBLIC_SITE.md`** | **✓ (NEW)** |
 
-All 12 pillars now carry the standard's required `00_THE_*.md` Door with explicit `active` / `candidate` status.
+**Corrected 2026-07-22.** All 12 pillars now carry a `00_THE_*.md` Door. **Eight of the twelve carry the standard's explicit `active`/`candidate` status; four do not.** The ✓ marks in the table above record Door *presence*, not compliance with standard §10.5 item 5 (`00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md:306`: "Each Door must carry an explicit `"active"` or `"candidate"` status so the next reader can route without re-deriving the seating").
+
+The four that do not:
+
+| Pillar | Door | Status line as written | Why it fails §10.5 |
+|---|---|---|---|
+| 01_TELEOLOGY | `00_THE_FRAMEWORK_ON_ITS_OWN_TELEOLOGY_SPECTRUM.md` | `**Status:** Canonical self-diagnostic` | no `status:` key; neither active nor candidate |
+| 06_ONTOLOGY | `00_THE_RING_THAT_IS_THE_GROUND.md` | `status: "ARCHIVED — devotional-symbolic synthesis; no current authority"` | a tombstone; a pillar's Door disclaiming current authority is neither active nor candidate |
+| 07_THEOLOGY | `00_THE_AMRITA.md` | `status: "DISTILLATION — 2026-07-03; recovery-integrated 2026-07-19. …"` | a provenance label, not a seating status |
+| 08_FRAMEWORK_SUPPORT | `00_THE_DERIVATION.md` | `**Status:** compatibility stub. Canonical source-owner moved in Phase 2.` | no `status:` key; the pillar's designated Door is a stub, not a seated entry |
+
+These four are owed a seating decision. This receipt does not make one, and does not change any tier.
+
+*How counted (2026-07-22):* for each of the 12 Door paths named in the table above, ran `grep -m2 -inE '^status:|^\*\*Status:\*\*|door_status'` on the file, then read the frontmatter block where no `status:` key was returned. Compliant (explicit active/candidate): 02, 03 ("Active public reading path"), 04, 05, 09, 10, 11, 12 = **8**. Non-compliant: 01, 06, 07, 08 = **4**. The original sentence here read: "All 12 pillars now carry the standard's required `00_THE_*.md` Door with explicit `active` / `candidate` status." That sentence was false in the flattering direction — this receipt created 3 Doors and then certified all 12.
 
 ---
 

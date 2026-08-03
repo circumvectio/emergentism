@@ -12,7 +12,7 @@ rosetta:
 
 **Date:** 2026-04-24
 **Lane:** `(FOUNDATION, doc, framework.uplink)`
-**Canonical source:** [`../01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md`](../../00_SEVENFOLD_FOUNDATION_ROOT.md)
+**Canonical source (as of this packet's 2026-04-24 date):** [`../01_EMERGENTISM/00_SEVENFOLD_FOUNDATION_ROOT.md`](../../00_SEVENFOLD_FOUNDATION_ROOT.md) — *forwarding stub since 2026-07-20; the former front door was tombstoned into `90_ARCHIVE/old_front_doors/`, and the stub names [`00_THE_WELTANSCHAUUNG.md`](../../00_THE_WELTANSCHAUUNG.md) as the active door and [`00_THE_KERNEL_INDEX.md`](../../00_THE_KERNEL_INDEX.md) as the index.*
 **Bridge source:** [`../01_EMERGENTISM/00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md`](../../00_META/00_D_SCAFFOLD_L_LADDER_BRIDGE.md)
 **Bridge packet:** [`144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24.md`](144_D_SCAFFOLD_L_LADDER_BRIDGE_2026_04_24.md)
 **Boundary-governing sources:** `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/00_START_HERE.md`, `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md`, packets `129`, `135`, `139`, `140`, and `141`
