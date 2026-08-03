@@ -110,8 +110,13 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
     required_fields = set(schema.get("required_card_fields", []))
     if not required_fields:
         raise ContractError(f"{SCHEMA_PATH}: required_card_fields is empty")
-    if set(owner_registry) != {f"K-{i}" for i in range(1, 8)}:
-        raise ContractError(f"{SCHEMA_PATH}: owner registry must contain exactly K-1 through K-7")
+    expected_owners = {f"K-{i}" for i in range(1, 8)} | {f"KER-{i}" for i in range(1, 8)}
+    if set(owner_registry) != expected_owners:
+        raise ContractError(
+            f"{SCHEMA_PATH}: owner registry must contain exactly K-1 through K-7 "
+            f"and KER-1 through KER-7 (Phase 2 of the naming-reconciliation docket; "
+            f"see 00_THE_KERNEL_INDEX.md for the dual-write convention)"
+        )
     kernel_index = (root / "00_THE_KERNEL_INDEX.md").read_text(encoding="utf-8")
     for owner_id, rel in sorted(owner_registry.items()):
         owner_path = root / rel
