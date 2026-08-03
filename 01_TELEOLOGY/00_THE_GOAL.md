@@ -147,14 +147,16 @@ planning and coordination rules in receipted use.
 For a declared task, Emergentism may model usable action capacity as
 
 ```text
-P_node = Φ̂₄V₄,              public shorthand: ΦV
+P_node := min(Φ̂₄,V₄)
 ```
 
 where `Φ₅` is D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` is its present D4
-evaluation, and `V₄` is D4 actual power or usable means. This is one selected
-normalized AND-class model `[S/C]`, not a universal law and not a metric of
-human worth. Product, minimum, CES, additive and other aggregators must be
-compared where prediction matters.
+evaluation, and `V₄` is D4 actual power or usable means. `min` is the selected
+normalized AND-class score over ordinal factors `[I]`, with conditional formal
+consequences `[S]` and universal fit still `[C]`; it is neither a universal law
+nor a metric of human worth. The historical product `Φ̂₄V₄`, publicly `ΦV`,
+is retired as a ranking. Alternative aggregators require their own declared and
+defended measurement assumptions before prediction comparisons.
 
 The model supplies two practical warnings:
 
@@ -241,7 +243,7 @@ fair alternatives.
 
 The Goal must change if:
 
-- `P_node=ΦV` predicts worse than a rival model;
+- the selected `P_node:=min(Φ̂₄,V₄)` model predicts worse than a fair rival;
 - option widening systematically increases domination or harm;
 - the Justice envelope hides material bearers;
 - Soul Loop practice produces bureaucracy without better decisions;

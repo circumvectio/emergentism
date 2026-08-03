@@ -20,7 +20,7 @@ class AdequacyProgramTests(unittest.TestCase):
         self.assertEqual(self.adequacy["status_ladder"], self.science["maturity_states"])
 
     def test_cheapest_honest_science_order_is_exact(self) -> None:
-        expected = ["GP-03", "GP-04", "GP-07", "GP-01", "GP-06", "GP-02", "GP-09", "GP-05", "GP-10", "GP-08", "GP-11"]
+        expected = ["GP-03", "GP-04", "GP-07", "GP-01", "GP-06", "GP-12", "GP-02", "GP-09", "GP-05", "GP-10", "GP-08", "GP-11"]
         self.assertEqual(self.science["execution_order"], expected)
         self.assertEqual([row["id"] for row in self.science["rows"]], expected)
 

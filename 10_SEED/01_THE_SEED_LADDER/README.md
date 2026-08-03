@@ -21,7 +21,7 @@ rungs D0–D6 from the Floor to the Return — an active reader projection of th
 **Owner lane:** `01_EMERGENTISM/` (doctrine), `10_SEED/` surface (L7 Ṛṣi territory —
 compressed narrative; the witness never overrides source).
 
-## Contents inventory [S] (verified on disk 2026-07-19)
+## Contents inventory [S] (verified on disk 2026-08-01)
 
 | Rung | File |
 |---|---|
@@ -54,4 +54,4 @@ by this file** [S].
 
 ---
 
-*A ladder active for reading, subordinate to its sources, and never a commandment. η = 0.*
+*A ladder active for reading, subordinate to its sources, and never a commandment. `η_move = 0`.*

@@ -261,6 +261,37 @@ This program is complete only when:
 - public pages are weaker than or equal to their source owners; and
 - the final record names what remains open, deferred, frozen, and killed.
 
+### 8A. W1 reader-synthesis terminal metric
+
+```text
+W1_TERMINAL := all 26 One-Sitting claim cards map the 12 reader sections;
+each R1–R8 repair has a current-source locator plus an explicit L2/L3
+owner-and-tier disposition; the generated public reader passes projection
+parity and its named Grand Puzzle route reaches the declared ledger or an
+explicit public boundary; no W1 precision repair remains open.
+```
+
+`W1_TERMINAL` does not complete this Recursive Book and Canon Debrief Program,
+advance Waves 2–8, establish deployment, independent review, or world contact.
+The current W1 state is **PENDING**: the replay corrects four unambiguous card
+locators and makes the public Grand Puzzle route explicit, while `OS01-R7`
+remains held for K-4/K-5 source-owner reconciliation.
+
+The active R7 control is:
+
+```text
+R7_HELD := OS01-17 remains a K-4-only `[C]` causal conjecture and stops before
+the source's mixed K-4/K-5 closing line; the current review records its clause
+boundary, active supports, and public-reader parity.
+
+R7_CLOSED := an owner-scoped reconciliation represents the K-4 conflict claim
+and K-5 Dharma constraint separately with text-anchored support and renewed
+L2/L3 review.
+```
+
+This is a hold-state metric, not a schema-v2 authorization, source rewrite, or
+closure claim.
+
 The stopping rule is equally important: no amount of internally coherent prose
 may be used to claim a complete ontology, a solved paradox class, a verified
 new algebra, a unified science, or the truth of the worldview. Those are world

@@ -3,7 +3,8 @@
 `EmergentismCheck.lean` submits the corpus's analytic claims to **Lean 4 +
 mathlib** — an oracle outside the corpus that can return *no*.
 
-Receipt 173 established that the corpus had **never** done this: 155 receipts,
+Receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`) established
+that the corpus had **never** done this: 155 receipts,
 zero outcome receipts from any party outside itself. This is the first.
 
 ## Result, 2026-07-29
@@ -24,7 +25,7 @@ on mathlib's three standard axioms (`propext`, `Classical.choice`, `Quot.sound`)
 | `mathlib_assigns_junk` | mathlib *defines* `a/0 = 0` — recorded, because the junk value is a convention, not a solution |
 | `inversion_fixed_iff` | **FV-07** — `ι` fixes exactly `±1` |
 | `unique_positive_fixed_point` | **FV-06** — only `+1` on the positive ray; why Suda's chart cannot see `−1` |
-| `orbit_product` | doc 45 §5 — the coupled product is `1` for every nonzero `x` |
+| `orbit_product` | numeric reciprocal fact in `ℝ` — `x*x⁻¹=1` for nonzero `x`; not a Titan equation |
 | `keel_is_complementary_angles` | **the keel** — `φ·ν=1` *is* `tan A · tan(π/2−A) = 1` |
 | `projection_at_45` | **T2** — the construction sends 45° to exactly `1` |
 | `energy_min_at_one` | **S-3** — `E=(log x)²` vanishes only at unity |
@@ -61,10 +62,12 @@ cd emergentism_check && lake build
 ## The honest limit
 
 A proof assistant is **checkability** contact, not **empirical** contact. It
-cannot raise `V` in the sense receipt 173 means. What it does is narrower and
+cannot raise `V` in the sense receipt 173 (`173_THE_V_AXIS_AUDIT_INTERNAL_LENS_2026_07_29.md`)
+means. What it does is narrower and
 still worth having: it converts these statements from *asserted by the corpus*
 to *verified by an oracle the corpus does not control*.
 
-And note what did **not** happen: **no corpus claim was refuted.** Every claim
-submitted, compiled. That is a real result and a limited one — the claims that
-could not be submitted are precisely the ones the ladder census rests on.
+Every theorem statement actually submitted here compiled. That is a real and
+limited result; it does not validate the prose that selected the statements or
+restore any rejected cross-type Titan claim. The claims that could not be
+submitted are precisely the ones the ladder census rests on.

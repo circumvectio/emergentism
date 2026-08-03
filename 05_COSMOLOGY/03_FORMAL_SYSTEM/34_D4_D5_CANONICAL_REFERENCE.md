@@ -98,12 +98,14 @@ through an actual `Φ̂₄` model token, an actual selector, and actual `V₄` m
 The selected normalized node model is therefore typed as
 
 ```text
-P_node,t := C×(Φ̂₄,t,V₄,t) := Φ̂₄,t V₄,t.
+P_node,t := C_min(Φ̂₄,t,V₄,t) := min(Φ̂₄,t,V₄,t).
 ```
 
-The familiar public compression `P_node=ΦV` is permitted when this bridge has
-already been declared: `Φ` names the D5 semantic factor and, inside the numeric
-expression, abbreviates its D4 estimate `Φ̂₄`; `V` abbreviates `V₄`. Lowercase
+The historical public compression `P_node=ΦV` names the same AND-class
+conjunction but is retired as a ranking under the 2026-07-29 ordinal ruling; it
+may be read but not used to order, score, or compare nodes. As a historical
+name, `Φ` names the D5 semantic factor and abbreviates its D4 estimate `Φ̂₄`,
+while `V` abbreviates `V₄`. Lowercase
 `φ,ν` remain reciprocal-chart coordinates and are never aliases for these
 powers. `V₄` records ability, not permission; authorization and Justice remain
 separately typed.

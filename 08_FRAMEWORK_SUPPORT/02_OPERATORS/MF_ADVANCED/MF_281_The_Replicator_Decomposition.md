@@ -44,18 +44,20 @@ Genotype → Epigenotype → Phenotype → Extended Phenotype
 This is a chosen six-layer analysis, not a necessary sequence in every system.
 The layers may overlap, interact bidirectionally, or fail to instantiate.
 
-### Selected node aggregator `[I/C]`
+### Selected node aggregator and retired candidate `[I/C]`
 
 For normalized nonnegative factors, Emergentism declares:
 
 ```text
-P_node := C×(Φ,V) = ΦV
+P_node := min(Φ̂₄,V₄)
 ```
 
 inside a broader monotone conjunctive family satisfying
-`C(0,V)=C(Φ,0)=0`. Product, minimum, harmonic mean, and Cobb–Douglas forms are
-not interchangeable and can rank cases differently. The reciprocal-chart
-identity `φν=1` does not force the node product.
+`C(0,V)=C(Φ,0)=0`. The historical product
+`C×(Φ̂₄,V₄)=Φ̂₄V₄`, public `ΦV`, is retired as a ranking and may
+remain only as a separately cardinal candidate. Product, minimum, harmonic mean,
+and Cobb–Douglas forms are not interchangeable. The reciprocal-chart identity
+`φν=1` does not force any node aggregator.
 
 The stack does not derive the aggregator, and the aggregator does not prove the
 stack.

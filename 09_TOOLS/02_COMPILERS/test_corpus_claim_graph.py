@@ -17,6 +17,33 @@ COMPILER = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(COMPILER)
 
 
+def missing_federated_sources() -> list[str]:
+    """Return declared claim-card sources unavailable beside this checkout.
+
+    The repository contract includes frozen lineage in sibling pillar repos.
+    Unit fixtures remain self-contained; only the two full-repository
+    integration checks require the complete Documents federation.
+    """
+    missing: list[str] = []
+    for path in sorted((ROOT / COMPILER.CARD_DIR).glob("*.yaml")):
+        document = json.loads(path.read_text(encoding="utf-8"))
+        source = document.get("source", {})
+        source_rel = source.get("path")
+        if isinstance(source_rel, str):
+            try:
+                COMPILER._resolve_declared_path(ROOT, ROOT, Path(source_rel))
+            except COMPILER.UnresolvedDeclaredPathError:
+                missing.append(source_rel)
+    return missing
+
+
+FEDERATED_SOURCE_GAPS = missing_federated_sources()
+REPOSITORY_CONTRACT_SKIP = (
+    "complete Documents federation not present; missing declared source(s): "
+    + ", ".join(FEDERATED_SOURCE_GAPS)
+)
+
+
 class ClaimGraphContractTests(unittest.TestCase):
     def make_fixture(self) -> tuple[tempfile.TemporaryDirectory[str], Path]:
         temp = tempfile.TemporaryDirectory()
@@ -59,6 +86,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         fn(data)
         path.write_text(json.dumps(data), encoding="utf-8")
 
+    @unittest.skipIf(FEDERATED_SOURCE_GAPS, REPOSITORY_CONTRACT_SKIP)
     def test_repository_contract_compiles(self) -> None:
         register, graph, lifecycle = COMPILER.compile_contract(ROOT)
         self.assertEqual(register["metrics"]["cards"], 71)
@@ -67,6 +95,7 @@ class ClaimGraphContractTests(unittest.TestCase):
         self.assertGreater(graph["metrics"]["edges"], 100)
         self.assertEqual(lifecycle["baseline"]["tracked_files"], 3205)
 
+    @unittest.skipIf(FEDERATED_SOURCE_GAPS, REPOSITORY_CONTRACT_SKIP)
     def test_deterministic_generation(self) -> None:
         first = COMPILER.compile_contract(ROOT)
         second = COMPILER.compile_contract(ROOT)
@@ -146,6 +175,85 @@ class ClaimGraphContractTests(unittest.TestCase):
         legacy = [row for row in lifecycle["sources"] if row["work_id"] == "BK-LEGACY-FIXTURE"]
         self.assertEqual(len(legacy), 1)
         self.assertEqual(legacy[0]["lifecycle"], "legacy")
+
+    def test_lifecycle_inventory_contains_no_absolute_paths(self) -> None:
+        temp, root = self.make_fixture(); self.addCleanup(temp.cleanup)
+        _, _, lifecycle = COMPILER.compile_contract(root)
+        self.assertTrue(lifecycle["sources"])
+        for source in lifecycle["sources"]:
+            self.assertNotIn("resolved_path", source)
+            self.assertFalse(Path(source["path"]).is_absolute())
+
+    def test_parent_relative_source_resolves_unique_nearest_ancestor(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        federation = Path(temp.name) / "Documents"
+        worktree = federation / ".codex-worktrees/emergentism"
+        source = federation / "02_SIBLING/source.md"
+        worktree.mkdir(parents=True)
+        source.parent.mkdir(parents=True)
+        source.write_text("federated source", encoding="utf-8")
+
+        resolved = COMPILER._resolve_declared_path(
+            worktree,
+            worktree,
+            Path("../02_SIBLING/source.md"),
+        )
+        self.assertEqual(resolved, source.resolve())
+
+    def test_direct_repository_source_resolves_uniquely(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        root = Path(temp.name) / "corpus"
+        source = root / "owned/source.md"
+        source.parent.mkdir(parents=True)
+        source.write_text("owned source", encoding="utf-8")
+
+        resolved = COMPILER._resolve_declared_path(
+            root,
+            root,
+            Path("owned/source.md"),
+        )
+        self.assertEqual(resolved, source.resolve())
+
+    def test_parent_relative_source_rejects_ambiguous_ancestors(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        temp_root = Path(temp.name)
+        federation = temp_root / "Documents"
+        worktree = federation / ".codex-worktrees/emergentism"
+        nearest = federation / "02_SIBLING/source.md"
+        farther = temp_root / "02_SIBLING/source.md"
+        worktree.mkdir(parents=True)
+        nearest.parent.mkdir(parents=True)
+        farther.parent.mkdir(parents=True)
+        nearest.write_text("nearest candidate", encoding="utf-8")
+        farther.write_text("farther candidate", encoding="utf-8")
+
+        with self.assertRaisesRegex(
+            COMPILER.AmbiguousDeclaredPathError,
+            "multiple owner candidates resolve",
+        ) as raised:
+            COMPILER._resolve_declared_path(
+                worktree,
+                worktree,
+                Path("../02_SIBLING/source.md"),
+            )
+        message = str(raised.exception)
+        self.assertIn(nearest.resolve().as_posix(), message)
+        self.assertIn(farther.resolve().as_posix(), message)
+
+    def test_unresolved_declared_path_fails_explicitly(self) -> None:
+        temp = tempfile.TemporaryDirectory(); self.addCleanup(temp.cleanup)
+        root = Path(temp.name) / "corpus"
+        root.mkdir()
+
+        with self.assertRaisesRegex(
+            COMPILER.UnresolvedDeclaredPathError,
+            "unresolved declared path",
+        ):
+            COMPILER._resolve_declared_path(
+                root,
+                root,
+                Path("missing/source.md"),
+            )
 
 
 if __name__ == "__main__":

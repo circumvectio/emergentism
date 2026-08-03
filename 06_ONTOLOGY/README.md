@@ -14,6 +14,22 @@ commitments stop. The Ground remains prior to every map, including this one.
 7. [The Human Condition](08_THE_HUMAN_CONDITION.md) — derived lived anthropology; no new owner
 8. [Pure kernel synthesis](00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md)
 
+## Companions and staged work
+
+- [Ontology Across Dimensions](00_ONTOLOGY_ACROSS_DIMENSIONS.md) — active
+  interpretive synthesis, subordinate to the owners it names.
+- [Apophatic Ground and Field Structure](01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md)
+  — active interpretive companion.
+- [Finity as Ontological Boundary](00_FINITY_AS_ONTOLOGICAL_BOUNDARY.md) — L6
+  boundary note.
+- [Bounded Generative Emergentism](00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md)
+  — `[D]` staged companion; read the degree-of-freedom owner first.
+- [`ruminations/`](ruminations/README.md) — `[I]` readings beside doctrine, not
+  authority instruments.
+
+The other top-level surfaces include dated forwarding stubs and K3 tombstones;
+their own status blocks govern them.
+
 ## Canonical type split
 
 - D4 is causal actuality: embodied means, performed action, commitment record,

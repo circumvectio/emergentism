@@ -1,5 +1,5 @@
 {
-  "schema": "emergentism/claim-status/v1",
+  "schema": "emergentism/claim-status/v2",
   "routing_role": "validation-status routing only; no semantic authority, no tier promotion",
   "human_owner": "00_META/00_THE_CLAIM_STATUS_REGISTER.md",
   "serialization": "JSON subset of YAML 1.2 for deterministic stdlib parsing",
@@ -33,6 +33,56 @@
     "Appearing in this register is not evidence for any claim.",
     "OWNER-REOPENED is the only lawful path from a terminal status back to live. It requires an owner ruling receipt, an intact counterexample, and a declared repair_path. It restores active investigation, never asserted truth."
   ],
+  "disposition_policy": {
+    "kinds": [
+      "CONTACT-GATED",
+      "MERGED-TO-CONTACT",
+      "MERGED-TO-OWNER",
+      "INTERNAL-NARROWED",
+      "INTERNAL-TERMINAL"
+    ],
+    "world_evidence_contract": {
+      "id": "WORLD-OUTCOME-V1",
+      "outcome_owner": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md",
+      "required_fields": [
+        "claim_id",
+        "contract_id",
+        "frozen_protocol_hash",
+        "scope",
+        "independent_party_identity",
+        "independence_basis",
+        "discriminating_protocol",
+        "outcome",
+        "verbatim_custody",
+        "provenance",
+        "null_harm_deviation_custody"
+      ],
+      "inadmissible_inputs": [
+        "commits",
+        "gates",
+        "AI review",
+        "invitations",
+        "preregistrations",
+        "internal receipts",
+        "URLs without filed outcome custody",
+        "staged protocols"
+      ]
+    },
+    "internal_evidence_contract": {
+      "id": "INTERNAL-VERDICT-V1",
+      "required_fields": [
+        "result_id",
+        "result_status",
+        "result_tier",
+        "scope",
+        "source_refs",
+        "survivor",
+        "reopen_when",
+        "evidence_contract"
+      ],
+      "boundary": "An internal proof, countermodel, source reconciliation, or scope ruling may settle only the typed internal question; it supplies no observation, replication, or world-contact evidence."
+    }
+  },
   "validated": [
     {
       "id": "FV-01",
@@ -160,232 +210,745 @@
       "tier": "S",
       "system": "declared finite-resource budget only",
       "result": "with the budget premise, full evaluated foresight leaves zero means and the node score is zero; without it, no such consequence"
+    },
+    {
+      "id": "FV-19",
+      "status": "FORMALLY-VALID",
+      "tier": "A",
+      "system": "Möbius transformations of the complex projective line",
+      "result": "for any two ordered triples of pairwise distinct points of the complex projective line, a unique Möbius transformation maps the first triple pointwise to the second; two corresponding distinct source/target points leave a non-trivial one-parameter stabilizer (scaling after normalization); this forces three normalization constraints only in that named projective problem"
+    },
+    {
+      "id": "FV-20",
+      "status": "FORMALLY-VALID",
+      "tier": "S",
+      "system": "selected reciprocal-chart potential V=4sinh^2(s) with the Euclidean-induced metric",
+      "result": "the declared metric-gradient flow ds/dt=-2tanh(2s) has sinh(2s(t))=sinh(2s(0))e^(-4t) and converges to s=0; no physical F5 dynamics follows"
+    },
+    {
+      "id": "FV-21",
+      "status": "FORMALLY-VALID",
+      "tier": "A",
+      "system": "finite words from 1 under S(x)=x+1 and iota(x)=1/x on the positive reals",
+      "result": "finite reachability is exactly the positive rationals, so sqrt(2) is in the state space but not finitely reachable; zero and infinity are approached boundaries, not finite attainments"
     }
   ],
   "open": [
     {
       "id": "W0-CROWN",
-      "status": "OPEN-FORMAL",
+      "status": "NOT-WELL-POSED",
       "docket": "A2",
-      "note": "metaphysical; may never resolve"
+      "note": "optional creedal posture retained; no typed instantiation relation or modal/contact discriminator exists",
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "resolution": {
+          "result_id": "IV-W0-CROWN-01",
+          "result_status": "NOT-WELL-POSED",
+          "result_tier": "S",
+          "scope": "The extra claim that necessary algebra is instantiated as das All lacks a declared algebra, totality domain, typed instantiation relation, modal semantics, and rival-discriminating consequence. This is not a verdict that the creed is false.",
+          "source_refs": [
+            "06_ONTOLOGY/04_THE_CONJECTURES.md",
+            "07_THEOLOGY/00_FOREWORD.md"
+          ],
+          "survivor": "The optional creed and Map-not-Ground fence remain available at their declared interpretive tier.",
+          "reopen_when": "Declare the algebra, domain, instantiation relation, modal semantics, and one consequence unavailable to a no-instantiation rival.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "W1",
-      "status": "NOT-WELL-POSED",
+      "status": "COMPONENT-SUPPORTED",
       "docket": "A1",
       "reopened_as": "RQ-09",
-      "note": "the framework's own named debt on REACHABLE"
+      "note": "model-relative finite reachability is defined and witnessed; physical/domain discrimination remains open",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W1-DOMAIN-REACHABILITY-01",
+            "component_id": "domain_specific_bridge",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+              "05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md"
+            ],
+            "maturity": "component-supported",
+            "blocked_by": [],
+            "discriminator": "Freeze a real-domain state space, initial set, transformations, costs, bounds, and target before outcomes; derive at least one non-stipulated exclusion and a held-out consequence beyond relabelling what occurred.",
+            "kill": "No target is excluded except by stipulation, or the typed bridge predicts nothing unavailable to occurrence-as-reachability redescription.",
+            "survivor": "FV-21 and the model-relative admission-versus-reachability distinction survive without supporting plenitude or physical emergence.",
+            "component_support_refs": [
+              "05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W2",
       "status": "COMPONENT-SUPPORTED",
       "docket": "A6",
-      "note": "decoherence is real; the integrated reading does not inherit it"
+      "note": "decoherence is real; the integrated reading does not inherit it",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W2-QUANTUM-RECORD-ORDER-01",
+            "component_id": "integrated_record_order",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "component-supported",
+            "blocked_by": [],
+            "discriminator": "Freeze state, dynamics, clock, instrument, context, horizon, and held-out record-order statistic; require an increment beyond the strongest matched native decoherence, histories, and timeless rivals.",
+            "kill": "The result is decoherence redescription, imports an interpretation, or adds no held-out record-order discrimination.",
+            "survivor": "Native quantum record science and D3/D4 bookkeeping survive; no definite-outcome, Born-rule, or ontic-plurality conclusion follows.",
+            "component_support_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W3",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "MERGED-TO-CONTACT",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "target_ids": ["W4"],
+        "contract_ids": ["W4A-EVALUATED-PRODUCTIVITY-01"],
+        "reason": "The current W3 form already states an empirical product-versus-rivals test. W4A owns the same scale prerequisite, rivals, and held-out comparison, so W3 remains live through that contract and cannot be counted as an independent confirmation."
+      }
     },
     {
       "id": "W4",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W4A-EVALUATED-PRODUCTIVITY-01",
+            "component_id": "evaluated_productivity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "blocked",
+            "blocked_by": [
+              "GP-03"
+            ],
+            "discriminator": "Validate independent commensurate cardinal scales, then compare the product with one-factor, additive, minimum, harmonic, and preregistered CES rivals on held-out evaluated work.",
+            "kill": "The scale contract fails or a rival predicts as well on the frozen held-out outcomes.",
+            "survivor": "Ordinal joint necessity and the selected minimum convention remain local scoring choices.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          },
+          {
+            "contract_id": "W4B-RESOURCE-SURFACE-01",
+            "component_id": "resource_surface",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md",
+              "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Independently measure modeling cost and remaining usable means, then compare no-tradeoff, additive, nonlinear, state-dependent, and gradient-only resource surfaces.",
+            "kill": "No recurrent tradeoff appears or a rival surface predicts as well under the frozen measurement contract.",
+            "survivor": "FV-18 survives only inside its declared finite-resource budget.",
+            "component_support_refs": [
+              "05_COSMOLOGY/03_FORMAL_SYSTEM/45_SATURATION_CONTRAST_AND_APERTURE_BOUNDARY.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W5",
       "status": "OPEN-EMPIRICAL",
       "docket": "A6",
-      "see_also": "RQ-01"
+      "see_also": "RQ-01",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W5A-SURVIVORSHIP-FREE-EQUATOR-TRANSFER-01",
+            "component_id": "equator_transfer",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Freeze a finite set of premise-satisfying systems and sample failures and disappearances as well as survivors; compare balance advantage against matched rivals.",
+            "kill": "No balance advantage remains under survivorship-free sampling.",
+            "survivor": "The four premises remain a scope statement, not an empirical law.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          },
+          {
+            "contract_id": "W5B-AGGREGATOR-REGISTER-MAP-01",
+            "component_id": "register_map",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Fit rival aggregation laws within independently typed domains and test whether declared domain properties predict the winning law out of sample.",
+            "kill": "No reproducible domain-to-aggregator map survives held-out comparison.",
+            "survivor": "Domain-local aggregation remains possible without a universal register map.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W6",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A4"
+      "docket": "A4",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W6A-NONEXTRACTION-DURABILITY-TRUST-01",
+            "component_id": "durability_and_trust",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Freeze domains, matched alternatives, full bearer accounting, and long-horizon durability and warranted-trust outcomes; prefer observational or natural experiments.",
+            "kill": "The matched durability or warranted-trust increment fails across the preregistered set.",
+            "survivor": "E8 remains a chosen vow rather than an empirical theorem.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          },
+          {
+            "contract_id": "W6B-EXTRACTION-TRAJECTORY-01",
+            "component_id": "extraction_trajectory",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "component-supported",
+            "blocked_by": [],
+            "discriminator": "Measure substrate stock, extraction, renewal, and substrate-dependent power in trajectories satisfying the declared closure and monotonicity premises.",
+            "kill": "Premise-satisfying trajectories do not reduce the declared substrate and its dependent power component.",
+            "survivor": "FV-16 remains a conditional theorem inside its declared model.",
+            "component_support_refs": [
+              "00_META/claim_status/CLAIM_STATUS.yaml"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W7a",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W7A-QCD-ROLE-AFFINITY-01",
+            "component_id": "qcd_role_affinity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Freeze a non-arbitrary D1-to-QCD map, recover an accepted QCD result, beat every row permutation, and predict a held-out QCD-specific quantity.",
+            "kill": "The map is only opposites-bind language, permutes freely, or fails native-theory recovery.",
+            "survivor": "QCD, D1, and founder provenance survive without the role-affinity claim.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W7b",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W7B-EM-ROLE-AFFINITY-01",
+            "component_id": "electromagnetic_role_affinity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Recover U(1) or Maxwell structure and a held-out electromagnetic-specific effect not inserted by hand, then beat every row permutation.",
+            "kill": "Generic graph or geometry language fits every force, or the native observables are not recovered.",
+            "survivor": "Electromagnetism and D2 configuration survive without the mapping.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W7c",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W7C-WEAK-ROLE-AFFINITY-01",
+            "component_id": "weak_role_affinity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Select chirality and flavor-changing weak structure rather than quantum transition generally, recover accepted electroweak theory, and predict a held-out weak observable.",
+            "kill": "Strong or electromagnetic rows fit equally well, or no weak-specific increment exists.",
+            "survivor": "Native weak theory and D3 survive without the mapping.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W7d",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A6"
+      "docket": "A6",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W7D-GRAVITY-ROLE-AFFINITY-01",
+            "component_id": "gravity_role_affinity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Recover general relativity and valid low-energy EFT without importing spacetime circularly, add a held-out boundary prediction, and beat row permutations.",
+            "kill": "Native recovery fails, valid EFT is excluded, or the construction presupposes what it claims to map.",
+            "survivor": "GR, low-energy EFT, and D4 actuality survive without the mapping.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W7e",
       "status": "OPEN-EMPIRICAL",
       "docket": "A6",
-      "see_also": "RQ-07"
+      "see_also": "RQ-07",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W7E-F5-ROLE-AFFINITY-01",
+            "component_id": "f5_role_affinity",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md",
+              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md"
+            ],
+            "maturity": "blocked",
+            "blocked_by": [
+              "W8"
+            ],
+            "discriminator": "After a nontrivial native dynamics is fixed, show a D5-specific intervention effect beyond control, learning, evolution, and teleonomy, and beat every force-row permutation.",
+            "kill": "No independent dynamics, no incremental effect, free permutation, or retrocausality is required.",
+            "survivor": "FV-20 and ordinary model-mediated anticipation survive without a fifth force.",
+            "component_support_refs": [
+              "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W8",
       "status": "COMPONENT-SUPPORTED",
-      "docket": "A5"
+      "docket": "A5",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W8-FUTURE-CONTENT-CHAIN-01",
+            "component_id": "integrated_d5_effect",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "component-supported",
+            "blocked_by": [],
+            "discriminator": "First separate represented future content from salience, demand, reward, memory, and expectancy; then require an independent D5 measure to beat rich D4 planning, search, model-based, and model-free baselines.",
+            "kill": "A fair-baseline null, unbounded all-timelines language, or dependence on physical coexistence of alternatives.",
+            "survivor": "Ordinary causal anticipation through present model tokens remains.",
+            "component_support_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W9",
       "status": "COMPONENT-SUPPORTED",
-      "docket": "A7"
+      "docket": "A7",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W9-EGREGOREOTYPE-COMPOSITE-01",
+            "component_id": "five_marker_composite",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "maturity": "component-supported",
+            "blocked_by": [],
+            "discriminator": "Separately manipulate persistent trace, carrier turnover, incentives, command, and environment; require all five markers including recurrent bias and visible substrate costs.",
+            "kill": "Any marker fails or carrier identity, incentives, direct coordination, or environment absorbs the effect.",
+            "survivor": "Native trace-mediated coordination survives without consciousness, personhood, or composite attribution.",
+            "component_support_refs": [
+              "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+            ],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W10",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A7"
+      "docket": "A7",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W10-INDEPENDENT-POLARITY-LINEAGE-01",
+            "component_id": "independent_lineage_recurrence",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/NAMING_DOCTRINE.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Establish causal lineage separation before counting; freeze inclusion and centre-plus-mirror coding, use blind coders and negative controls, then test a held-out lineage against transmission and selection-bias rivals.",
+            "kill": "Independence cannot be shown or recurrence does not beat the frozen null.",
+            "survivor": "Inherited grammar within known lineages remains descriptive provenance.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "W11",
-      "status": "OPEN-FORMAL",
+      "status": "DECORATIVE",
       "docket": "A1",
-      "note": "at risk of DECORATIVE if honest search finds no work"
+      "note": "the extra worldview claim does no work beyond ordinary algebra and mnemonic symbolism",
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "resolution": {
+          "result_id": "IV-W11-01",
+          "result_status": "DECORATIVE",
+          "result_tier": "B",
+          "scope": "No independent physical, psychological, or institutional operator, observation, or prediction was found beyond the existing inversion fixed point, signed arithmetic, and narrator metaphor.",
+          "source_refs": [
+            "06_ONTOLOGY/06_THE_REVELATIONS.md",
+            "02_EPISTEMOLOGY/00_I_IS_THE_EQUATOR.md",
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md"
+          ],
+          "survivor": "FV-07, signed magnitude, complex rotation, and optional dark-twin symbolism remain; the extra functional-work wager does not.",
+          "reopen_when": "Preregister a typed variable and incremental prediction or intervention beyond ordinary algebra and mnemonic symbolism under a new claim ID.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "W12",
       "status": "OPEN-EMPIRICAL",
-      "docket": "A5"
+      "docket": "A5",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "contracts": [
+          {
+            "contract_id": "W12-APOPHATIC-EXIT-PRACTICE-01",
+            "component_id": "leaveable_apophatic_practice",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Compare the D6 stop-and-return instruction with a strongest belief-neutral fallibilist or defusion control on false closure, revisability, leaveability, burden, distress, and optional first-person reports.",
+            "kill": "No incremental discrimination, harmful pressure, compulsory mediation, or non-revisability.",
+            "survivor": "E10 nonclosure and exit discipline survive; the D6 symbol may retire.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     }
   ],
   "graves": [
     {
       "id": "DF-01",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "unification by derivation",
-      "counterexample": "four structural breaks recorded in receipt 126 section 5",
+      "counterexample": "four structural breaks recorded in `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` section 5",
       "successor": "GP-11",
       "successor_kind": "narrowed_to_translation_grammar",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "Rebuild as translation grammar with one novel cross-domain discriminator (GP-11); derivation form stays refuted."
+      "repair_path": "Rebuild as translation grammar with one novel cross-domain discriminator (GP-11); derivation form stays refuted.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["GP-11"],
+        "boundary": "The refuted derivation form remains dead; GP-11 alone owns the narrower translation-grammar work."
+      }
     },
     {
       "id": "DF-02",
-      "status": "OWNER-REOPENED",
+      "status": "CATEGORY-ERROR",
       "form": "ethic-as-theorem",
       "counterexample": "is-to-ought bypass by redefinition",
       "successor": "E8",
       "successor_kind": "retyped_as_vow",
       "status_before_reopening": "CATEGORY-ERROR",
-      "repair_path": "Retype: keep E8 as vow; prosecute W6 as the conditional lemma. No is-to-ought bridge is admissible."
+      "repair_path": "Retype: keep E8 as vow; prosecute W6 as the conditional lemma. No is-to-ought bridge is admissible.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["E8", "W6"],
+        "boundary": "The category error stays dead; E8 owns the vow and W6 owns the conditional empirical work."
+      }
     },
     {
       "id": "DF-03",
-      "status": "OWNER-REOPENED",
+      "status": "EMPIRICALLY-REFUTED",
       "form": "seven-as-forced and Rosetta-as-universal",
       "counterexample": "planetary confound; the cleanest witness carries the seven visible planets",
       "successor": "W10",
       "successor_kind": "scope_reduced_to_lineage",
       "status_before_reopening": "EMPIRICALLY-REFUTED",
-      "repair_path": "Prosecute W10 on a polarity-encoding system outside the known lineage."
+      "repair_path": "Prosecute W10 on a polarity-encoding system outside the known lineage.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W10"],
+        "boundary": "The universal claim stays refuted; W10 alone owns the scoped lineage test."
+      }
     },
     {
       "id": "DF-04",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "product-uniqueness as keel",
       "counterexample": "FV-12: minimum instantiates the same zero boundary",
       "successor": "W3",
       "successor_kind": "interior_wager",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "Closed by the 2026-07-29 ordinal ruling: the product is retired as a ranking, so W3 (product beats min/additive/CES on held-out data) cannot be prosecuted. Reopening requires a declared and defended cardinal scale for Phi and V, or a discriminator invariant under a common strictly increasing reparametrisation of both factors."
+      "repair_path": "The product-uniqueness proof remains dead. The current empirical W3 form is live only by merging into W4A, whose GP-03 prerequisite requires defended cardinal scales or a discriminator invariant under admissible reparameterization.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W3"],
+        "boundary": "The non-uniqueness counterexample remains; current W3 is an empirical successor merged into W4A and cannot restore product uniqueness or count as a separate confirmation."
+      }
     },
     {
       "id": "DF-05",
-      "status": "OWNER-REOPENED",
+      "status": "CATEGORY-ERROR",
       "form": "phi*nu=1 as a conserved discovery",
       "counterexample": "a coordinate identity read as a world law",
       "successor": null,
       "successor_kind": "closed_no_successor",
       "status_before_reopening": "CATEGORY-ERROR",
-      "repair_path": "Open: identify a structure in which the identity is not merely a coordinate tautology. None currently known."
+      "repair_path": "No successor was defined. The coordinate-identity-as-world-law form remains a category error; any non-tautological structure requires a new ID and typed system.",
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "resolution": {
+          "result_id": "IV-DF-05-01",
+          "result_status": "CATEGORY-ERROR",
+          "result_tier": "S",
+          "scope": "No successor, typed structure, or discriminator was supplied after reopening; the original analytic-to-world transfer remains the same category error.",
+          "source_refs": ["00_META/00_THE_CLAIM_STATUS_REGISTER.md"],
+          "survivor": "FV-01 remains a chart identity only.",
+          "reopen_when": "Create a new claim ID with a declared non-coordinate structure and a discriminator unavailable to the chart tautology.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "DF-06",
-      "status": "OWNER-REOPENED",
+      "status": "EMPIRICALLY-REFUTED",
       "form": "the symmetric balance hump as empirical law",
       "counterexample": "Munnell trough; the GFS study was retracted by its owner",
       "successor": "RQ-01",
       "successor_kind": "instrument_question",
       "status_before_reopening": "EMPIRICALLY-REFUTED",
-      "repair_path": "RQ-01: build a survivorship-free instrument before re-running the transfer claim."
+      "repair_path": "RQ-01: build a survivorship-free instrument before re-running the transfer claim.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-01"],
+        "boundary": "The retracted hump stays dead; RQ-01 and W5 own the survivorship-free successor."
+      }
     },
     {
       "id": "DF-07",
-      "status": "OWNER-REOPENED",
+      "status": "EMPIRICALLY-REFUTED",
       "form": "the squid as an eta=0 witness",
       "counterexample": "D. gigas is panmictic, semelparous, and weak-targeting",
       "successor": "RQ-02",
       "successor_kind": "new_instance_search",
       "status_before_reopening": "EMPIRICALLY-REFUTED",
-      "repair_path": "RQ-02: search the candidate class; the squid stays refuted as that witness."
+      "repair_path": "RQ-02: search the candidate class; the squid stays refuted as that witness.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-02"],
+        "boundary": "The squid stays refuted; RQ-02 and W6 own any new bearer-complete witness search."
+      }
     },
     {
       "id": "DF-08",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "literal D6 identical to D0",
-      "counterexample": "loop-as-equation fails: D6 and D0 are not identical, and no order, homeomorphism or physical recurrence relates them — only a boundary-role resemblance survives (r126 A3-5)",
+      "counterexample": "loop-as-equation fails: D6 and D0 are not identical, and no order, homeomorphism or physical recurrence relates them — only a boundary-role resemblance survives (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` A3-5)",
       "successor": "W12",
       "successor_kind": "retyped_as_role_resemblance",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "W12: prosecute the practice discrimination of the boundary-role relation."
+      "repair_path": "W12: prosecute the practice discrimination of the boundary-role relation.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W12"],
+        "boundary": "Literal D6 identity remains refuted; W12 owns only the practice-level role resemblance."
+      }
     },
     {
       "id": "DF-09",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "forced Titan-3",
       "counterexample": "FV-07: inversion fixes two points, not one",
       "successor": "W11",
       "successor_kind": "dark_twin_wager",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "W11: find functional work for the dark twin, or accept DECORATIVE."
+      "repair_path": "W11: find functional work for the dark twin, or accept DECORATIVE.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W11"],
+        "boundary": "Forced Titan-3 remains refuted; W11 has now fired its DECORATIVE terminal criterion."
+      }
     },
     {
       "id": "DF-10",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "force bijection",
-      "counterexample": "electroweak unification collapses the D2/D3 split above roughly 246 GeV",
+      "counterexample": "117_FORCE_LADDER_FORMALIZED_07B.md and 117_PATH_D_NEGATIVE_RESULT.md show that photon and gluon share the free-field threshold, gravity has a separate graviton threshold, the massive weak vector supplies no fourth force-specific threshold, and Path D yields 0, 1, or 2 rays rather than Standard Model gauge structure; electroweak unification is supporting context, not the no-go by itself",
       "successor": "W7a",
       "successor_kind": "modularized_into_five_legs",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "Prosecute W7a-e per leg with native-theory recovery and a permutation test."
+      "repair_path": "Prosecute W7a-e per leg with native-theory recovery and a permutation test.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W7a", "W7b", "W7c", "W7d", "W7e"],
+        "boundary": "The force bijection remains refuted; each W7 leg owns a separate role-affinity contract."
+      }
     },
     {
       "id": "DF-11",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "N=3 forced",
       "counterexample": "explicit Z5 counterexample; the group lemma is false",
       "successor": "RQ-03",
       "successor_kind": "open_formal_question",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "RQ-03: seek hypotheses forcing N=3, or a general no-go. The Z5 counterexample stands against the stated lemma."
+      "repair_path": "RQ-03: seek hypotheses forcing N=3, or a general no-go. The Z5 counterexample stands against the stated lemma.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-03"],
+        "boundary": "The universal group lemma remains refuted; RQ-03 is narrowed only to FV-19's projective normalization problem."
+      }
     },
     {
       "id": "DF-12",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "Godel universal lift",
       "counterexample": "Presburger arithmetic and real-closed fields are complete and decidable",
       "successor": "E9",
       "successor_kind": "retyped_as_apparatus",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "Open: no formal successor admissible; E9 survives as apparatus. Reopened as a question about the apparatus, not the lift."
+      "repair_path": "Open: no formal successor admissible; E9 survives as apparatus. Reopened as a question about the apparatus, not the lift.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["E9"],
+        "boundary": "The universal Gödel lift remains refuted; E9 owns only the correction apparatus."
+      }
     },
     {
       "id": "DF-13",
-      "status": "OWNER-REOPENED",
+      "status": "NOT-WELL-POSED",
       "form": "three substrates minimum",
-      "counterexample": "a single human martyr is one organism satisfying the framework's own falsifier",
+      "counterexample": "the signed universal minimum remains retracted; the martyr defeats a minimum of three organisms or independently embodied agents but is not by itself a proof about substrate cardinality, as corrected in 132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md",
       "successor": "RQ-04",
       "successor_kind": "weak_reopening",
       "status_before_reopening": "EMPIRICALLY-REFUTED",
-      "repair_path": "RQ-04: run the durability comparison the minimum-count claim never ran."
+      "repair_path": "RQ-04 is terminal NOT-WELL-POSED because substrate, unit, horizon, and outcome were never typed; any durability successor requires a new ID.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-04"],
+        "boundary": "The signed universal retraction stands; RQ-04 records why the martyr shorthand does not independently prove substrate cardinality."
+      }
     },
     {
       "id": "DF-14",
@@ -394,87 +957,140 @@
       "counterexample": "ordinary numeric identities are operands",
       "successor": "KSC-04",
       "successor_kind": "retyped_as_opaque_frame",
-      "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174, with its weaker form live under KSC-04. r174's blanket application was over-broad by exactly one row; corrected 2026-07-29."
+      "repair_path": "No reopening needed or applied: this row was already NARROWED (a live status) before r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`), with its weaker form live under KSC-04. r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s blanket application was over-broad by exactly one row; corrected 2026-07-29.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["KSC-04"],
+        "boundary": "Ordinary frame-operand exclusivity remains narrowed; KSC-04 alone owns the opaque TitanFrame survivor."
+      }
     },
     {
       "id": "DF-15",
-      "status": "OWNER-REOPENED",
+      "status": "CATEGORY-ERROR",
       "form": "convergence-as-proof",
       "counterexample": "fifteen renderings of one shape are one datum, not fifteen confirmations",
       "successor": "RQ-05",
       "successor_kind": "independence_bar",
       "status_before_reopening": "CATEGORY-ERROR",
-      "repair_path": "RQ-05: establish lineage independence before any convergence datum is counted."
+      "repair_path": "RQ-05: establish lineage independence before any convergence datum is counted.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-05"],
+        "boundary": "Convergence-as-proof remains a category error; RQ-05 and W10 own causal-independence custody."
+      }
     },
     {
       "id": "DF-16",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "extraction is irrational as a general Nash result",
       "counterexample": "private side-payments break it outside Model A",
       "successor": "W6",
       "successor_kind": "conditional_survivor",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "W6 carries the conditional form; the general Nash claim stays refuted."
+      "repair_path": "W6 carries the conditional form; the general Nash claim stays refuted.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["W6"],
+        "boundary": "The general Nash claim remains refuted; W6 owns only the conditional, bearer-accounted form."
+      }
     },
     {
       "id": "DF-17",
-      "status": "OWNER-REOPENED",
+      "status": "NOT-WELL-POSED",
       "form": "civilizational physics",
       "counterexample": "a conjecture-tier analogy asserted as physics; no discriminator was ever stated",
       "successor": "RQ-06",
       "successor_kind": "requires_discriminator",
       "status_before_reopening": "NOT-WELL-POSED",
-      "repair_path": "RQ-06: supply one discriminator the analogy makes and rival social science does not."
+      "repair_path": "RQ-06: supply one discriminator the analogy makes and rival social science does not.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-06"],
+        "boundary": "Civilizational physics remains not well posed; RQ-06 owns only a comparative typology test."
+      }
     },
     {
       "id": "DF-18",
-      "status": "OWNER-REOPENED",
+      "status": "NOT-WELL-POSED",
       "form": "dissolves the Hard Problem, is-ought, death, and free will",
       "counterexample": "unfalsifiable frame-trick; mechanism asserted rather than shown",
       "successor": "HC-11",
       "successor_kind": "reposed_as_open_mysteries",
       "status_before_reopening": "NOT-WELL-POSED",
-      "repair_path": "Re-pose each of the four separately as an open question; Human Condition 11 holds them."
+      "repair_path": "Re-pose each of the four separately as an open question; Human Condition 11 holds them.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["HC-11"],
+        "boundary": "The dissolution claim remains not well posed; HC-11 owns four separate open mysteries without a mechanism claim."
+      }
     },
     {
       "id": "DF-19",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "ektropy and F5 as the teleological force",
       "counterexample": "(phi-nu)^2 supplies no trajectory; a static inequality is not a dynamics",
       "successor": "RQ-07",
       "successor_kind": "requires_declared_dynamics",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "RQ-07: declare a dynamics, derive the trajectory, then test. The static inequality alone yields nothing."
+      "repair_path": "RQ-07: declare a dynamics, derive the trajectory, then test. The static inequality alone yields nothing.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-07"],
+        "boundary": "The static-to-dynamics inference remains refuted; RQ-07 is narrowed to FV-20 and W7e owns any physical bridge."
+      }
     },
     {
       "id": "DF-20",
-      "status": "OWNER-REOPENED",
+      "status": "CATEGORY-ERROR",
       "form": "numeric coincidences as derivations",
-      "counterexample": "overlay is not derivation; the horn-torus and light-cone identification was killed by receipt 151",
+      "counterexample": "overlay is not derivation; the horn-torus and light-cone identification was killed by `151_HORN_TORUS_SR_FORMAL_AUDIT_2026_07_20.md`",
       "successor": "RQ-08",
       "successor_kind": "prediction_bar",
       "status_before_reopening": "CATEGORY-ERROR",
-      "repair_path": "RQ-08: require one held-out quantitative prediction from any overlay."
+      "repair_path": "RQ-08: require one held-out quantitative prediction from any overlay.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["RQ-08"],
+        "boundary": "Coincidence-as-derivation remains a category error; RQ-08 narrows future work to named, typed candidates."
+      }
     },
     {
       "id": "DF-21",
-      "status": "OWNER-REOPENED",
+      "status": "FORMALLY-REFUTED",
       "form": "CC-CORE-1, the kernel-to-ethics warrant",
       "counterexample": "the seam holds precisely off the catastrophe case, so it was never evidence for the multiplicative floor",
       "successor": null,
       "successor_kind": "closed_no_successor",
       "status_before_reopening": "FORMALLY-REFUTED",
-      "repair_path": "Open: the seam-to-score bridge stays refuted. Reopened only as the question of whether any bridge exists."
+      "repair_path": "No successor was defined. The seam-to-score bridge remains formally refuted; whether some different bridge exists is not a claim until it receives a new ID and typed premises.",
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "resolution": {
+          "result_id": "IV-DF-21-01",
+          "result_status": "FORMALLY-REFUTED",
+          "result_tier": "S",
+          "scope": "The recorded counterexample still kills CC-CORE-1, and the reopened existential question names neither a candidate bridge nor premises nor a discriminator.",
+          "source_refs": ["00_META/00_THE_CLAIM_STATUS_REGISTER.md"],
+          "survivor": "E8 remains a chosen vow; no seam-to-score warrant survives.",
+          "reopen_when": "Create a new claim ID with a typed bridge, premises, discriminator, and counterexample-sensitive kill.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "DF-22",
-      "status": "OWNER-REOPENED",
+      "status": "PROCESS-DEFECT",
       "form": "Rosetta kill-criterion mislabel",
       "counterexample": "a fired falsifier was logged as a pass",
       "successor": "E9",
       "successor_kind": "routed_to_enforcement",
       "status_before_reopening": "PROCESS-DEFECT",
-      "repair_path": "Not a claim. Reopened as an E9 enforcement obligation: audit whether any fired kill is still logged as a pass."
+      "repair_path": "Not a claim. Reopened as an E9 enforcement obligation: audit whether any fired kill is still logged as a pass.",
+      "disposition": {
+        "kind": "MERGED-TO-OWNER",
+        "target_ids": ["E9"],
+        "boundary": "The process defect remains recorded; E9 owns enforcement and no truth-status upgrade follows."
+      }
     }
   ],
   "reopened": [
@@ -482,119 +1098,286 @@
       "id": "RQ-01",
       "parent": "DF-06",
       "tier": "C",
+      "status": "OPEN-EMPIRICAL",
       "docket": "A6",
       "question": "Is there an instrument that can test the equator-transfer claim at all?",
       "parent_kill_does_not_reach": "Revelation 3 records that a survey of standing respondents cannot test a zero-factor knockout boundary; the hump died partly of instrument, not only of fact.",
       "discriminator": "a design with survivorship-free sampling over premise-satisfying systems",
       "kill": "no admissible instrument exists, in which case W5 is untestable and must say so",
-      "survivor": "the four premises remain a clear scope statement"
+      "survivor": "the four premises remain a clear scope statement",
+      "disposition": {
+        "kind": "MERGED-TO-CONTACT",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "target_ids": [
+          "W5"
+        ],
+        "contract_ids": [
+          "W5A-SURVIVORSHIP-FREE-EQUATOR-TRANSFER-01"
+        ],
+        "reason": "This is W5's survivorship-free instrument prerequisite, not an independent confirmation path."
+      }
     },
     {
       "id": "RQ-02",
       "parent": "DF-07",
       "tier": "C",
+      "status": "OPEN-EMPIRICAL",
       "docket": "A4",
       "question": "Does any real system instantiate a relational eta near zero as a witness?",
       "parent_kill_does_not_reach": "the squid was refuted as that particular witness; the candidate class was never searched.",
       "discriminator": "preregistered search across candidate mutualisms with full bearer accounting",
       "kill": "no candidate survives a bearer-complete audit",
-      "survivor": "the vow stands as an openly chosen constraint with zero empirical witnesses"
+      "survivor": "the vow stands as an openly chosen constraint with zero empirical witnesses",
+      "disposition": {
+        "kind": "MERGED-TO-CONTACT",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "target_ids": [
+          "W6"
+        ],
+        "contract_ids": [
+          "W6A-NONEXTRACTION-DURABILITY-TRUST-01"
+        ],
+        "reason": "A bearer-complete near-zero-extraction witness is a construct prerequisite for W6, not a second evidential result."
+      }
     },
     {
       "id": "RQ-03",
       "parent": "DF-11",
       "tier": "C",
+      "status": "NARROWED",
       "docket": "A1",
       "question": "Is there any hypothesis set under which N=3 is forced?",
       "parent_kill_does_not_reach": "the Z5 counterexample refutes the stated lemma and says nothing about other hypotheses.",
       "discriminator": "exhibit hypotheses plus a proof, or prove a general no-go",
       "kill": "neither a forcing result nor a no-go after honest search",
-      "survivor": "N=3 remains a selected structure, permanently"
+      "survivor": "N=3 remains selected outside the named projective normalization problem",
+      "disposition": {
+        "kind": "INTERNAL-NARROWED",
+        "claim_owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md",
+        "target_ids": [
+          "KSC-04"
+        ],
+        "resolution": {
+          "result_id": "FV-19",
+          "result_status": "NARROWED",
+          "result_tier": "A",
+          "scope": "For two ordered triples of pairwise distinct points on the complex projective line, three pointwise correspondences are necessary and sufficient to determine the unique Möbius map; two such correspondences leave a one-parameter stabilizer. This does not force three Titans, substances, operators, forces, or a universal group cardinality.",
+          "source_refs": [
+            "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md",
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/21_TRIADIC_STABILITY_CORRESPONDENCE.md",
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md"
+          ],
+          "survivor": "The Z5 counterexample still kills the universal group lemma; outside this exact normalization problem, N=3 remains selected.",
+          "reopen_when": "A counterexample defeats sharp three-transitivity or two-point non-uniqueness in the declared projective system.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "RQ-04",
       "parent": "DF-13",
       "tier": "C",
+      "status": "NOT-WELL-POSED",
       "docket": "A7",
       "question": "Is there a non-trivial substrate-plurality claim that survives the martyr counterexample?",
-      "parent_kill_does_not_reach": "the refuted claim was a minimum count; a durability comparison was never run.",
-      "discriminator": "matched comparison of single-substrate and multi-substrate persistence",
-      "kill": "no durability difference",
-      "survivor": "nothing; drop the substrate line entirely"
+      "parent_kill_does_not_reach": "the martyr defeats a minimum of three organisms or independently embodied agents, but does not by itself prove a substrate-cardinality result; the signed universal retraction remains intact.",
+      "discriminator": "first define substrate, comparison unit, persistence horizon, and outcome under a new claim ID; only then can a matched comparison be admissible",
+      "kill": "the required types cannot be declared without changing the claim, so this row has no executable discriminator",
+      "survivor": "the universal minimum stays retracted; the three-function and three-rail design pattern remains interpretive",
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "claim_owner": "00_META/00_THE_CLAIM_STATUS_REGISTER.md",
+        "resolution": {
+          "result_id": "IV-RQ-04-01",
+          "result_status": "NOT-WELL-POSED",
+          "result_tier": "B",
+          "scope": "The active row leaves substrate, unit, persistence horizon, and outcome undefined, and its martyr shorthand overstates the source. No empirical contact gate is admissible for this wording.",
+          "source_refs": [
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md"
+          ],
+          "survivor": "The signed universal retraction and three-function or three-rail design survivor remain; neither proves substrate cardinality.",
+          "reopen_when": "Create a new ID with typed substrate, comparison unit, persistence horizon, outcome, and an independently reviewable protocol.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "RQ-05",
       "parent": "DF-15",
       "tier": "C",
+      "status": "OPEN-EMPIRICAL",
       "docket": "A3",
       "question": "Can lineage independence be established for any convergence datum?",
       "parent_kill_does_not_reach": "the error was counting one datum as many; genuinely independent lineages would be evidence.",
       "discriminator": "historical and philological demonstration of causal separation before any counting",
       "kill": "no separable lineage can be shown",
-      "survivor": "convergence carries zero evidential weight, permanently"
+      "survivor": "convergence carries zero evidential weight until causal separation is established",
+      "disposition": {
+        "kind": "MERGED-TO-CONTACT",
+        "claim_owner": "06_ONTOLOGY/04_THE_CONJECTURES.md",
+        "target_ids": [
+          "W10"
+        ],
+        "contract_ids": [
+          "W10-INDEPENDENT-POLARITY-LINEAGE-01"
+        ],
+        "reason": "Lineage independence is W10's entry condition; counting it separately would double-count one result."
+      }
     },
     {
       "id": "RQ-06",
       "parent": "DF-17",
       "tier": "C",
+      "status": "OPEN-EMPIRICAL",
       "docket": "A7",
       "question": "Does the civilizational analogy yield a discriminator?",
       "parent_kill_does_not_reach": "the parent asserted physics; this asks only for a testable analogy.",
       "discriminator": "one held-out prediction the analogy makes that rival social science does not",
       "kill": "no discriminator after an honest attempt",
-      "survivor": "nothing; retire the analogy as decoration"
+      "survivor": "nothing; retire the analogy as decoration",
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md",
+        "contracts": [
+          {
+            "contract_id": "RQ06-CIVILISATIONAL-DISCRIMINATOR-01",
+            "component_id": "civilisational_typology_increment",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/ROSETTA_CIVILISATIONAL.md"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Freeze historical coding and rival typologies, then require one held-out prediction or classification increment from the named Rosetta features that rival social science does not supply.",
+            "kill": "No held-out increment survives blind coding, provenance review, and rival comparison.",
+            "survivor": "The analogy may remain a labelled mnemonic only.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
+      }
     },
     {
       "id": "RQ-07",
       "parent": "DF-19",
       "tier": "C",
+      "status": "NARROWED",
       "docket": "A1",
       "question": "Under what declared dynamics does the squared deviation tend to zero?",
       "parent_kill_does_not_reach": "the static inequality is analytic; the parent's error was inferring a trajectory with no dynamics stated at all.",
       "discriminator": "state a dynamics, derive the trajectory, then test it",
       "kill": "no dynamics makes the trajectory non-trivial",
-      "survivor": "the static inequality FV-02 alone"
+      "survivor": "the selected chart flow and static inequality survive; physical F5 content remains untested",
+      "disposition": {
+        "kind": "INTERNAL-NARROWED",
+        "claim_owner": "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md",
+        "target_ids": [
+          "W7e"
+        ],
+        "resolution": {
+          "result_id": "FV-20",
+          "result_status": "NARROWED",
+          "result_tier": "S",
+          "scope": "The selected Euclidean-metric gradient model has a closed-form trajectory converging to s=0. The potential, metric, and time parameter are choices; no natural dynamics, teleology, or fifth force follows.",
+          "source_refs": [
+            "01_TELEOLOGY/02_THE_DERIVATION/10A_PATH_D_COMPUTATION.md"
+          ],
+          "survivor": "A selected chart flow survives; W7e owns the still-open empirical and native-dynamics bridge.",
+          "reopen_when": "A counterexample defeats the stated ODE solution in the declared model; empirical F5 work proceeds only through W7e's separate contract.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "RQ-08",
       "parent": "DF-20",
       "tier": "C",
+      "status": "NARROWED",
       "docket": "A6",
       "question": "Does any numeric overlay predict something not already known?",
       "parent_kill_does_not_reach": "the parent claimed derivation; this asks only for novel prediction.",
       "discriminator": "one held-out quantitative prediction from the overlay",
       "kill": "no such prediction",
-      "survivor": "overlays are mnemonic at most"
+      "survivor": "unnamed overlays are mnemonic at most; named W7 candidates retain their own kills",
+      "disposition": {
+        "kind": "INTERNAL-NARROWED",
+        "claim_owner": "01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md",
+        "target_ids": [
+          "W7a",
+          "W7b",
+          "W7c",
+          "W7d",
+          "W7e"
+        ],
+        "resolution": {
+          "result_id": "IV-RQ-08-01",
+          "result_status": "NARROWED",
+          "result_tier": "S",
+          "scope": "Any numeric overlay is an unbounded class and cannot own one test. The remaining admissible candidates are the named W7 legs, each requiring native-theory recovery, non-permutability, and held-out novelty.",
+          "source_refs": [
+            "01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md",
+            "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md"
+          ],
+          "survivor": "Mnemonic overlays remain labelled as such; the named W7 contracts remain independently killable.",
+          "reopen_when": "A future overlay receives a new ID, typed operands, a frozen mapping, and a held-out quantitative prediction.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     },
     {
       "id": "RQ-09",
       "parent": "W1",
       "tier": "C",
+      "status": "NARROWED",
       "docket": "A1",
       "question": "Can REACHABLE be defined non-circularly?",
       "parent_kill_does_not_reach": "this is not a resurrection; it is the corpus's own named debt on E4, listed here so it sits on the same board.",
       "discriminator": "a definition from declared initial conditions, allowed transformations, and finite or convergent resource bounds that excludes some target",
       "kill": "no non-circular definition is found",
-      "survivor": "the plenitude wager collapses to redescription and E4 must say so"
+      "survivor": "model-relative reachability is coherent; plenitude and physical emergence remain unsupported",
+      "disposition": {
+        "kind": "INTERNAL-NARROWED",
+        "claim_owner": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+        "target_ids": [
+          "W1"
+        ],
+        "resolution": {
+          "result_id": "FV-21",
+          "result_status": "NARROWED",
+          "result_tier": "A",
+          "scope": "Finite model-relative reachability can be defined without using existence in its transformation predicate, and the declared S/iota model derives a nontrivial exclusion. Finite attainment remains distinct from limit approach and from world actuality.",
+          "source_refs": [
+            "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+            "06_ONTOLOGY/00_BOUNDED_GENERATIVE_EMERGENTISM_2026_07_19.md",
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/52_THE_GENERATIVE_BASE.md"
+          ],
+          "survivor": "The admission-versus-reachability distinction and FV-21 survive; W1 owns the unpaid domain-specific and physical discriminator.",
+          "reopen_when": "A counterexample shows the model-relative definition is circular or the finite-word exclusion is stipulated rather than derived.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
+      }
     }
   ],
   "owner_reopening": {
     "ruling": "Owner instruction 2026-07-29: unretire everything.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
-    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174's 'all 22' was over-broad by one row.",
-    "what_it_does_not_do": "A ruling cannot delete a counterexample. Each row keeps the result that killed it; reopening means the question is live again, not that the refuted form is true."
+    "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
+    "what_it_does_not_do": "A ruling cannot delete a counterexample or its later scope correction. Reopening means the question is live again, not that the prior form is true or that an over-broad falsifier becomes evidence.",
+    "current_state": "ADJUDICATED — 20 transition statuses returned to their recorded terminal classes; DF-13 is corrected from the prior empirical label to NOT-WELL-POSED; DF-14 remains NARROWED; executable work is owned only by explicit successor rows.",
+    "adjudication_receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md"
   },
   "restored": [
     {
       "id": "TR-01",
       "status": "FORMALLY-VALID",
       "tier": "A",
-      "claim": "The three Titan equations are exact on the Riemann sphere: inversion swaps the poles and preserves the equator, and the coupled polar product equals the equatorial value at every latitude.",
-      "was": "Retired by KSC-04 as an arithmetic-looking glyph reading, with an associativity falsifier in the Trinity canon.",
-      "why_the_falsifier_misses": "The falsifier refutes a ring or field extension. The Riemann sphere is not a ring; global multiplication is not one of its operations, so premise (ii) a-times-infinity is unavailable.",
-      "ksc_04_status": "preserved — ArithmeticSignature(TitanFrame) is still empty; the sphere explains why rather than overriding it",
+      "claim": "In their declared structures, projective inversion exchanges the two projective endpoints, the selected positive numeric midpoint is self-reciprocal, and the open reciprocal chart satisfies phi times nu equals one. These are numeric/projective facts, not Titan equations or identities.",
+      "was": "Earlier labelled as three restored Titan equations after KSC-04 had retired the arithmetic-looking glyph reading.",
+      "why_the_falsifier_misses": "The repaired claim forms no ring extension or Titan operation. The associativity counterexample still kills any attempted pole product; the surviving facts use only the separately typed projective reciprocal map and numeric chart.",
+      "ksc_04_status": "enforced — ArithmeticSignature(TitanFrame) is empty and no map or coercion transfers these mathematical facts to TitanFrame",
       "owner": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
-      "inherits": "the keel fence: analytic and empty of world; DF-21 applies verbatim"
+      "inherits": "the type firewall and keel fence: analytic, world-empty, and without Titan proof transfer; DF-21 applies verbatim"
     }
   ]
 }

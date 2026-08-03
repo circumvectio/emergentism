@@ -2,6 +2,7 @@
 title: "The Evolutionary Network — Research Edition 1"
 status: "STAGED PRIVATE PROPOSAL — five chapters, 100% claim-card coverage; no runtime or enforcement authority"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [EN01-01, EN01-02, EN01-03, EN01-04, EN01-05]
 ---
 

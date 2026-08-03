@@ -1,0 +1,47 @@
+{
+  "schema": "emergentism/coherence-profile/v1",
+  "profile_id": "receipt-235-internal-completion-hardening-2026-08-01",
+  "scope": "Internal completion-hardening boundary recorded by receipt 235",
+  "authority_refs": [
+    "00_WORK_IN_PROGRESS/README.md",
+    "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md"
+  ],
+  "axes": {
+    "semantic": {
+      "state": "PASS",
+      "basis_refs": [
+        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md"
+      ],
+      "debt_ids": []
+    },
+    "routing": {
+      "state": "PASS_WITH_DEBT",
+      "basis_refs": [
+        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md"
+      ],
+      "debt_ids": [
+        "OWNER_GATE_HELD_PUBLIC_DOCS",
+        "OWNER_GATE_OPEN_TOPOLOGY"
+      ]
+    },
+    "operational": {
+      "state": "PASS",
+      "basis_refs": [
+        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md"
+      ],
+      "debt_ids": []
+    },
+    "world_contact": {
+      "state": "OPEN",
+      "evidence": [],
+      "open_requirements": [
+        "Independent observations with discriminating outcomes",
+        "Independent replication or external review filed as outcome custody"
+      ]
+    }
+  },
+  "overall": {
+    "scope": "internal",
+    "state": "PASS_WITH_DEBT"
+  }
+}

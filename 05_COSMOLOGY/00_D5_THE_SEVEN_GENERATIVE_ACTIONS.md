@@ -19,9 +19,13 @@ a mapping of every possible action.
 V₄ = D4 actual power: embodied, causally usable capability available now
 Φ₅ = D5 possible power: structured modal potential in the option field
 Φ̂₄ = Eval₄(M,Φ₅): present D4 estimate of that possible power
-P_node = Φ̂₄V₄ = selected normalized conjunctive model
-public shorthand: P_node = ΦV
+P_node := min(Φ̂₄,V₄) = selected ordinal AND-class working score
+Φ̂₄V₄ / ΦV = historical conjunction name only; not a ranking or score
 ```
+
+`Φ̂₄` and `V₄` carry order, not an assumed metric. The `min` comparison
+requires a declared common ordinal normalization; it licenses no subtraction,
+differentiation, ratio, or interpersonal cardinal comparison.
 
 Lowercase `φ,ν` remain reciprocal-chart coordinates. G7 never derives the
 uppercase factors or its ethics from `φν=1`.
@@ -138,7 +142,8 @@ G7 does not claim:
 - that seven is forced by algebra or found across all traditions;
 - that an intended transfer equals its outcome;
 - that a frame is a deployable agent;
-- that the product is the unique conjunctive aggregator;
+- that `min` is uniquely derived, universally adequate, or a metric score;
+- that the retired product may rank or compare nodes;
 - that mythic names determine human worth or moral caste.
 
 Rosetta may translate G7 into another domain only if it preserves these types

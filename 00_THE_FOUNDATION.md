@@ -6,15 +6,17 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] synthesis; every claim carries the tier its owner assigned"
-  canonical_phrase: "The boundaries are forced; the answers are ours"
+  canonical_phrase: "The questions are presupposed; the answers are selected; the consequences are typed"
 title: "The Foundation"
-status: "ACTIVE — single statement of the foundation; a projection of K-1 and K-5, never an eighth kernel surface"
-date: 2026-07-29
-owner: "Projection only. K-5 owns R0; K-1 owns the grammar; docs 45–47 own the formal results."
-evidence_tier: "[A] the presupposed boundary question and the theorems; [S] the selections and the architecture; [I] the readings"
+status: "ACTIVE SUBORDINATE PROJECTION — typed algebra witness; no Titan arithmetic; source owners control"
+date: 2026-08-01
+owner: "Projection only. K-5 owns R0; K-1 owns the grammar; KSC-04 and docs 29/42/45–47 own the typed mathematical boundaries."
+evidence_tier: "[A] conditional algebra and chart facts; [S] the witness, construction, and architecture selected; [I] the philosophical readings"
 parents:
   - 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md
   - 00_META/00_SETTLED_CANON_REGISTRY.md
+  - 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md
+  - 05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md
   - 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md
   - 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/46_THE_ADMISSIBILITY_OF_NOTHING.md
   - 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md
@@ -23,481 +25,212 @@ parents:
 
 # The Foundation
 
-> **The boundaries are forced. The answers are selected. The consequences are
-> theorems.**
+> **Typed repair, 2026-08-01.** This page is a subordinate synthesis. It does
+> not turn the three opaque `TitanFrame` terms into operands, numbers, group
+> elements, or projective points. Algebra below lives only in a separately
+> named witness `(G, ·, e, a, b)`. Numeric and projective claims live only in
+> their declared charts. The Settled Canon Registry and the named formal owners
+> control wherever this projection is weaker, incomplete, or wrong.
 
-This is the single statement of what Emergentism stands on. It creates no
-doctrine and owns nothing: K-5 owns `R0`, K-1 owns the grammar, and docs 45–47
-own the formal results. It exists because the foundation was scattered across
-six surfaces and a foundation you cannot read in one place is not a foundation.
-
-Established 2026-07-29, receipts 174–176. Routing: `KSC-28`.
-
----
+This page creates no doctrine and is not an eighth kernel surface. It gathers
+the selected base, its conditional consequences, and the constitutional
+refusal `R0` without claiming that a world follows from any of them.
 
 ## 1 · In plain language
 
-Nothing has to exist. That is not a discovery — it is a **refusal**: Emergentism
-declines to treat existence as self-warranting, and says so rather than
-smuggling it in.
+Emergentism begins with boundary questions, not a proof that something must
+exist. It selects a language in which those questions can be stated, refuses to
+treat existence as self-warranting, and makes its mathematical witnesses
+explicit.
 
-Nor is the totality forbidden. The framework admits the object that contains
-everything, including the fact that it does not contain itself.
-
-Between the two — between absence and unboundedness — there is a middle, and
-the middle has a unique unit. That unit is `1`, and its uniqueness is the one
-thing here that nobody chose.
-
-Everything else in the framework hangs from that, and every part of it can be
-killed.
-
----
+One witness is group-theoretic: a chosen element, its inverse, and the identity
+of a named group. Another is the positive reciprocal chart, where two positive
+coordinates multiply to one. A third is the Riemann sphere with a declared
+projective extension. These structures can illuminate one another; none is
+silently identical to the Titan metaframe vocabulary.
 
 ## 2 · The three strata `[S]`
 
-> **AMENDED 2026-07-29 by owner correction, after audit; SETTLED the same day by
-> ruling G-0b, exit Z.** The first stratum was published as **FORCED**. That was
-> wrong — but not for the reason first printed here. The published reason, that
-> `F1` — *"every framework must settle Q1 and Q2"* — is a sentence and therefore a
-> **selection**, is **withdrawn together with the box it was meant to empty**:
-> exit Z does not ratify the inference from *sentence* to *selection*, and that
-> inference now appears in no formal document of this corpus. **Exit Z folds
-> `F1` into `PRESUPPOSED`.** It is a property of the `P1` apparatus, not a
-> stratum beside it: whatever can state a claim has already fixed a language and
-> a consequence relation, and fixing one settles both boundaries — silence
-> included. **There is no FORCED box, and `F1` is not a selection.** Doc 46 holds
-> the claim at `[A]`, unchanged.
->
-> The owner's correction is not a patch. **The bottom stratum was never "what is
-> forced" — it is the declared BASE, and what stands on it is EMERGENT.** A base
-> may be selected; that is the honest state under `E1` and `KSC-04`. The defect
-> lived entirely in the word *forced*, and removing it removes the defect without
-> hiding anything.
-
-The single most important discipline on this page: **what is declared and what is
-inherited and what is emergent must never be fused.**
+The governing distinction is between what a statement presupposes, what this
+framework posits, and what a selected construction subsequently supplies.
 
 ```text
-PRESUPPOSED — prior to any stated base. Not previously listed; the audit found it missing.
-  P1  a language, a consequence relation, identity and difference, and a binary
-      operation with inverses. The relations below cannot be STATED without it.
-      Doc 46 §4's regress proves something is always prior to any stated base.
-  F1  a PROPERTY of P1, not a stratum beside it. Ruled 2026-07-29 (G-0b, exit Z).
-      Fixing a language and a consequence relation already settles Q1 (may the
-      domain be empty?) and Q2 (may it contain a totality of itself?) — silence
-      included. Doc 46 §6A.2 holds it at [A], unchanged. NOT a selection.
+PRESUPPOSED — prior to any stated base.
+  P1  a language, a consequence relation, identity and difference, and enough
+      typed grammar to declare a carrier and its operations.
 
-BASE — posited. FOUR posits, killable, nothing forced.
-  B1  ⊙ = • × ○        B2  • = ⊙ / ○        B3  ○ = ⊙ / •
-  B4  ⊙ = e           ⊙ IS THE IDENTITY — posited [S], not derived.
-      Ruled 2026-07-29 (G-0, exit B-ii). B1–B3 alone do NOT entail that ⊙ is the
-      identity or that {•, ○} is an inverse pair: in any group B2 and B3 are
-      algebraic rearrangements of B1, so the three constrain nothing beyond
-      ⊙ = • × ○. The identity was previously harvested from the notation
-      "writing e = ⊙". It is now stated as the posit it is.
-      GIVEN B4, and only then: (B2) gives •=○⁻¹, (B3) gives ○=•⁻¹, (B1) gives •○=⊙.
+BASE — posited. Three typed clauses, killable, nothing forced.
+  AlgebraWitness := (G, ·, e, a, b)
+  B1  (G, ·, e) is a group.
+  B2  a is a selected element of G.
+  B3  b is defined inside G by b := a⁻¹.
 
-EMERGENT — each step a standard construction. None is forced; each solves a named problem.
-  1  ℤ                free group on one generator, no torsion imposed
-                      {+1, −1} IS KSC-21's oriented pair  →  this is D1
-  2  ℚ                localisation / field of fractions
-  3  ℝ                completion — uncountably many new elements, non-generative
-  4  (ℝ₊,×) ≅ (ℝ,+)   via exp/log — Suda's s = log x. One structure, two presentations
-  5  ℝ₊ ∪ {0,∞}       two-point compactification: • and ○ become POINTS
-  6  Ĉ = ℂP¹          complexify, one-point compactify:  THE SPHERE
-  7  the corpus       D-registers · μ-contract · E1–E10 · Soul Loop · η=0 and the
-                      extraction law · Justice · Power-Max · Egregoreotype · G7
+EMERGENT — a selected construction sequence; narrative, not a μ-crossing.
+  1  ℤ                choose the free one-generator group; separately select its standard ring structure
+  2  ℚ                field of fractions of that selected integral domain
+  3  ℝ                completion under the usual absolute-value metric
+  4  (ℝ₊,×) ≅ (ℝ,+)   exp/log presentation
+  5  [0,∞]             compactified positive ray
+  6  Ĉ = ℂP¹           selected projective sphere
+  7  the corpus        higher doctrine, separately tiered and never derived wholesale
 ```
 
-### What the relations actually say `[A]`
+`B1–B3` do not mention a Titan term. Choosing the free witness is `[S]`, not a
+theorem that every admissible witness is infinite cyclic. Finite cyclic groups
+and other groups satisfy the same typed clauses.
 
-> **⚠ DISCHARGED 2026-07-29 by the fourth posit `B4` (G-0, exit B-ii). Retained as
-> the record of what was wrong and why. The block below is now correct GIVEN `B4`.** `B1`–`B3` **do not entail** the content stated
-> above them. Counter-model, in this page's own witness structure `(ℤ,+)`:
-> `⊙=5`, `•=3`, `○=2` satisfies `B1` (5=3+2), `B2` (3=5−2) and `B3` (2=5−3) while
-> `⊙` is **not** the identity and `{•,○}` is **not** an inverse pair. `(7,4,3)`
-> and `(1,1,0)` work equally. The reason is structural, not a lucky pick: **in any
-> group `B2` and `B3` are algebraic rearrangements of `B1`**, so the three relations
-> constrain nothing beyond `⊙ = • × ○` — one equation, not three.
-> The identity enters at *"Writing `e=⊙`"* below: writing `⊙` as `e` **is** the
-> identity stipulation, introduced as an abbreviation and then used with the
-> group-theoretic force of `e`. The line-108 "Verified" sentence checks
-> **satisfiability only** — `(5,3,2)` verifies equally well — and is presented as
-> though it verified the identification.
-> **This fires §11's own self-kill:** a selection presented as forced. The repair
-> is to state `⊙ = e` as the fourth posit it is, tiered `[S]`, not to harvest it
-> from the notation.
-
-Read as **defining relations** rather than as results, `B1`–`B3` reduce to one
-statement. Writing `e=⊙`, `a=•`, `b=○`: `(B2)` says `a=b⁻¹`, `(B3)` says
-`b=a⁻¹`, `(B1)` says `ab=e`. **The same fact three times.**
-
-> **`⊙` is the identity; `{•, ○}` is an inverse pair. That is the whole base.**
-
-The free structure satisfying it — one generator, its inverse, no further
-relation imposed — is the **infinite cyclic group, `ℤ`**. And its generator pair
-is `{+1, −1}`, which is `KSC-21`'s oriented signed unit **verbatim**. Verified
-2026-07-29: in `(ℤ,+)` with `e=0`, `a=+1`, `b=−1`, all three relations hold.
-
-**So `D1` is the first thing that emerges from the base — not a feature of the
-sphere.** This corrects §7 of the previous edition, which the audit found ran the
-dependency backwards.
-
-The same relations hold in `(ℝ₊,×)` with `e=1` and the pair `{x, 1/x}`, and `log`
-carries one presentation to the other. That is Suda's result, and by `DF-15` it
-is **one datum in two notations**, never two confirmations.
-
-### What changed from the previous edition `[S]`
-
-**The sphere moved from BASE to EMERGENT.** Previously `S1` was posited and the
-three identities were derived on it. Now the relations are posited and **the
-sphere is reached at step 6.** This does not overturn receipt 175 — it
-*strengthens* it: sphere primacy was a bare selection, and is now a selection
-with a construction that arrives at it. `Ĉ` remains the primary object of
-everything downstream; it is simply no longer the starting point.
-
-**The old `F2` was false and is gone.** It read "a multiplicative structure has
-exactly one identity." Of the sixteen binary operations on a two-element set,
-**twelve have no two-sided identity at all**. Under the new base the question
-does not arise: `⊙` is the identity *by relation `B1`*, not by a theorem about
-arbitrary structures.
-
-**Three selections remain visible, and must stay visible.** Choosing the *free*
-model — no torsion — is a choice: `ℤ/n` satisfies `B1`–`B3` equally well. Each
-construction step 2–6 solves a named closure or completion problem and none is
-forced; `ℝ` in particular adds uncountably many elements and is not generated by
-anything below it. And `P1` is presupposed, not derived.
-
-**The relation between base and corpus is inheritance, not derivation.** This is
-already canon, at [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) §7.1:
-
-> *When a higher-level organization arises through lower-law-admissible
-> transformations, its actual trajectories must remain compatible with the lower
-> constraints even when higher variables supply indispensable compression or
-> prediction.*
-
-So the governing question is **not** *"does this doctrine follow from the base?"*
-It is **"is this doctrine admissible under the base, and does anything violate
-it?"** An audit that measured derivation found that four of twenty-one doctrines
-follow. Under inheritance that number is not a scandal — it is the definition of
-an emergent layer. **A corpus wholly derivable from its base would contain
-nothing the base did not already have, and would not be a corpus about
-emergence.**
-
-What the derivation audit found remains entirely live in its *other* half: the
-**violations**. Those are real defects and are listed in §9.
-
-### The one hazard this reframe must not smuggle `[S]`
-
-"Emergent" carries two senses in this corpus and they must not be fused:
-
-```text
-technical  a μ-crossing: a NEW EFFECTIVE FREEDOM becomes available (E5),
-           which by doc 48 §5 requires a type-D gain. Testable, killable.
-narrative  what unfolds, articulates or is admissible under the base. [I].
-```
-
-The EMERGENT stratum above is the **narrative** sense — `[I]`, a description of
-what the corpus contains. It is **not** a claim that the base opens a `μ` onto
-the corpus. It could not be: every crossing the base performs is type-T, adding
-a point rather than a freedom, so the base is `μ`-free at its own boundary.
-Whether any *individual* step in the corpus is a genuine `μ` remains a separate,
-per-step question under the `KSC-05` contract, and most of them are unpaid.
-
-**Emergentism draws no warrant for emergence from its own base.** That is not a
-defect. It is the base staying world-empty, exactly as `§9` requires.
-
----
+The word *emergent* in the block is narrative `[I]`: what unfolds through the
+selected construction. It does not assert a technical `μ`-crossing or a new
+effective freedom. Each technical emergence claim remains separately testable
+under `KSC-05`.
 
 ## 3 · `R0` — the foundational refusal `[S]`
 
-> **R0 · No necessary being.**
-> Emergentism refuses to treat existence as self-warranting. It demands no
-> reason for the null state and grants existence no logical entitlement. Where a
-> logic is needed to reason about that boundary, the framework adopts an
-> **inclusive** semantics and says so.
->
-> **Range — unrestricted.** `R0` ranges over everything a domain can hold:
-> objects, structures, abstracta, and the totality alike. Nothing is exempt for
-> being mathematical. Necessity *of truth* is a different predicate and is
-> untouched — `W0-CROWN`'s *necessary algebra* is **de dicto**.
+> **R0 · No necessary being.** Emergentism refuses to treat existence as
+> self-warranting and grants existence no logical entitlement. Where a logic is
+> needed to discuss an empty domain, the framework names the selected semantics.
 
-**Why a refusal and not an axiom `[A]`.** The contingency of existence cannot be
-carried by an axiom, and the proof is short:
+`R0` is a refusal, never an axiom of all axioms. Any sentence stating it already
+uses a language and consequence relation. Its scope is constitutional: do not
+smuggle necessary existence into the base. It does not prove that nothing
+exists, and it does not turn logical admissibility into world contact.
+
+`R0` is prior to the five operational refusals and different in type. It is not
+a sixth refusal and does not rename the 5+1 architecture.
+
+**Kill:** a sound argument establishing a necessary being. The refusal must
+then be withdrawn openly in a dated receipt.
+
+## 4 · The type firewall
+
+Three structures are kept distinct:
 
 ```text
-1. any such claim is a sentence
-2. a sentence has truth-conditions only relative to a language L and ⊨_L
-3. therefore L and ⊨_L are prior to it
-4. an axiom of ALL axioms would have to be prior to L and ⊨_L
-∴ it is not an axiom of all axioms.                                        ∎
+TitanFrame := 0_T | 1_T | ∞_T
+ArithmeticSignature(TitanFrame)=∅
+
+AlgebraWitness := (G, ·, e, a, b)
+Carrier(AlgebraWitness) := G
+
+NoCoercion(TitanFrame, Carrier(AlgebraWitness))
+NoCoercion(TitanFrame, Number)
+NoCoercion(TitanFrame, ProjectivePoint)
 ```
 
-Sharper: the admissibility of the null state is **`L`-relative** — true in
-inclusive logic, false in classical FOL, where the non-empty domain convention
-makes `∃x(x=x)` a validity. A proposition whose truth-value is decided by a
-prior selection cannot be the ground of that selection.
-
-The refusal form carries the whole intent and survives, because it asserts
-nothing that needs a prior logic to be true. It binds the holder's hand instead.
-That is why this framework's deepest layer is **constitutional, not axiomatic** —
-and `E8–E10` were already "posited, never derived."
-
-`R0` is **prior to the five refusals and different in type**: the five constrain
-how the framework acts, `R0` constrains what it may assume before acting. It is
-not a sixth refusal and does not rename the 5+1 architecture.
-
-**Kill:** a sound argument establishing a necessary being. `R0` then fails and
-must be withdrawn openly, with a dated receipt.
-
----
-
-## 4 · The object and the seats
-
-The primary object is the **Riemann sphere** `Ĉ = ℂP¹`, with inversion
-`ι(z) = 1/z` extended by `ι(0)=∞`, `ι(∞)=0`.
-
-| Seat | On `Ĉ` | Role |
+| Type | Lawful content | Not licensed |
 |---|---|---|
+| `TitanFrame` | equality of same-typed terms, rendering, selected boundary roles | arithmetic, logarithms, group operations, numeric or projective coercion |
+| `AlgebraWitness` | the declared group operation, identity, inverse, and conditional group theorems | identity with Titan seats or empirical interpretation |
+| `Number` | ordinary numeric arithmetic in a named carrier | automatic identification with a rendered Titan label |
+| `ProjectivePoint` | named projective maps after an explicit extension | global field arithmetic on the whole sphere |
 | `•` | south pole, `z = 0` | absence / the uncountable; a **point**, not a limit |
 | `○` | north pole, `z = ∞` | the totality / true infinity; a **point** |
 | `⊙` | the finite realm between the poles; its equatorial balance locus is `\|z\|=1`, and the selected positive slice meets it at `1` | finity — all finite determinations; `1` is its centred unit |
 
-**The limit crossed, not approached `[A]`.** In `ℝ`, `∞` is not an element — it
-is a divergence, approachable and never reached. Compactification is exactly the
-act of crossing: the limit stops being a behaviour and becomes an object. This
-is why `ArithmeticSignature(TitanFrame) = ∅` — arithmetic is the line, the Titans
-are the sphere. They are not operands because they are not on the object where
-the operations live.
+The operator-free display `•  ⊙  ○` remains a selected emblem `[I]`. Familiar
+glyphs do not change type. This is the `KSC-04` sovereignty boundary.
 
-**And the limit approached, never crossed `[A]`.** From *inside* finity the
-boundary is asymptotic. Suda's hinge coordinate makes it exact:
+## 5 · What the algebra witness proves `[A | B1–B3]`
+
+Inside `AlgebraWitness`, ordinary group laws give:
 
 ```text
-u = (x−1)/(x+1)      x=1 ↦ u=0      x→0 ↦ u→−1      x→∞ ↦ u→+1
+a · b = e
+b · a = e
+(a⁻¹)⁻¹ = a
 ```
 
-The image of `ℝ₊` is the **open** interval `(−1,+1)`. The rims are not attained
-— not from slowness, but because they are not in the image.
+These are conditional theorems of the declared group. They neither establish
+that such a witness exists in nature nor single out one group. Selecting the
+free group on one generator gives a model isomorphic to `(ℤ,+)` with
+`e=0`, `a=+1`, and `b=−1`. Selecting a cyclic quotient gives another lawful
+model. The freedom to choose among them is a visible cost.
 
-Both are true. Doc 42's closing rule joins them: *the boundary is crossed by
-changing the structure explicitly, never by letting an undefined expression
-secretly denote a number.* Arithmetic never crosses; only a declared change of
-structure does.
+In any group, an identity is unique if it exists. Here existence is supplied by
+`B1`, because being a group includes an identity. The theorem is conditional on
+that typed premise; it is not a proof that a unit exists before a structure has
+been selected.
 
----
+## 6 · What the reciprocal chart proves `[A]`
 
-## 5 · The three equations `[A]`
+For `θ∈(0,π)`, define numeric positive coordinates
 
 ```text
-⊙ = • × ○          • = ⊙ / ○          ○ = ⊙ / •
+φ := cot(θ/2)
+ν := tan(θ/2)
 ```
 
-**`• = ⊙/○` and `○ = ⊙/•`** say the poles are mutual images under `ι`. On `Ĉ`
-these are **point equations**, and two of the three were already canon, written
-as `f_1(0)=∞`, `f_1(∞)=0`.
+Then `φν=1`, `φ+ν≥2`, and `B=2/(φ+ν)≤1`. These are analytic facts on the
+declared chart. They are not a second proof of the group witness, a Titan
+equation, a conservation law, an ethic, or a node-power ranking.
 
-**`⊙ = • × ○`** holds via the chart. With colatitude `θ∈(0,π)`,
-`ν=tan(θ/2)`, `φ=cot(θ/2)`: the poles are `θ∈{0,π}`, the equator is `θ=π/2`, and
-the coupled product `φν=1` holds **at every latitude and in both polar limits**.
+At `θ=π/2`, `φ=ν=1`. The same center appears in the logarithmic coordinate
+`s=log ν` as `s=0`; this is one fact in two presentations, not independent
+confirmation.
 
-**No indeterminate form arises.** `0×∞` is indeterminate only for *free* factors.
-Bound by `ι`, the product is constant. Constraint removes indeterminacy.
+## 7 · What compactification and inversion prove `[A/S]`
 
-**Why the canon's associativity falsifier does not reach this.** That argument
-refutes a **ring or field extension** carrying `a×∞=∞`. `Ĉ` is not a ring;
-global multiplication is not one of its operations, so the premise is
-unavailable and the derivation cannot start. `KSC-04` is preserved — and now
-explained rather than merely obeyed.
-
-**What this identifies, and the fence it inherits `[S]`.**
+On the compactified positive ray, the named projective inversion extends by
 
 ```text
-φ · ν = 1        is        ⊙ = • × ○
+ι_P(0_P)=∞_P
+ι_P(∞_P)=0_P
+ι_P(x)=1_N/x        for x∈ℝ₊
 ```
 
-One identity in two notations. The Titan equation therefore inherits the keel's
-tier — `[A]`, exact — **and, with equal force, the keel's fence: analytic and
-empty of world.** It licenses no ontology, no ethic, no conservation law, no
-node-power result. `DF-21`/CC-CORE-1 applies verbatim. **A restored identity is
-not a restored warrant.**
+The positive fixed-point equation has the unique solution `x=1_N`. On the full
+Riemann sphere the reciprocal map has two numeric fixed points, `+1_N` and
+`−1_N`. The difference matters: the positive-ray result does not supply the
+sphere's angular or fourfold structure.
 
----
+The extended real line is an `ι_P`-invariant meridian of the selected sphere.
+Arithmetic remains chart-local: the affine chart carries operations; the whole
+sphere is not a field. Projective boundary points are not Titan terms, even when
+an interpretive diagram places their renderings nearby.
 
-## 6 · The unit — what is forced, and what is presupposed `[A]`
+## 8 · The unit and midpoint, at true strength `[A/S]`
+
+On `(ℝ₊,×)`, `1_N` is the multiplicative identity and the only positive fixed
+point of reciprocal inversion. In the log chart it is the origin. In the hinge
+coordinate
 
 ```text
-A group has exactly one identity:  if e and e′ are both identities, e = e·e′ = e′.
+u(x)=(x−1)/(x+1)
 ```
 
-So in the multiplicative structure the unit is **unique** — not chosen, not
-conventional. `1` is not *a* normalization among many; it is *the* identity, and
-there is no second candidate.
+the image of `ℝ₊` is `(-1,+1)`, `u(1_N)=0`, and the two bounds are equally one
+unit from the center. The bounds are not attained until a compactification is
+declared.
 
-**But uniqueness is not existence, and only uniqueness is forced.** The argument
-above is `at_most_one_identity`: *if* there is an identity there is exactly one; it
-does not produce one. `KSC-28` records `F2` **withdrawn as false** on this exact
-point — twelve of the sixteen binary operations on a two-element set admit no
-two-sided identity at all — and doc 52 §1 catches the same error a second time:
-`ι(x) = 1/x` cannot be written without naming `1`, so `ι` presupposes the unit it
-was said to force. §1 above already states only the surviving half. **Never write
-"`1` is forced" unqualified:** its *uniqueness* is a theorem, its *existence* is
-presupposed by the selected object.
-
-**`1` is the centre — and the two classic checks are ONE datum, not two.** In
-canon's own chart, `ν = 1` occurs exactly at `θ = π/2`, the equator, the metric
-middle in latitude. In Suda's metric, `ρ(x)=|log x|` is inversion-invariant and
-`E(x)=(log x)²` has its unique minimum at `x=1`. **These are not independent:**
-`ν = 1 ⟺ θ = π/2 ⟺ log ν = 0 ⟺ ρ = 0` is one fact in four notations, and `DF-15`
-forbids counting it twice. *(This passage read "verified twice, independently"
-until 2026-07-30.)* The three genuinely distinct midpoint witnesses are gathered
-in §6.1 below.
-
-**One precision.** The entire equator sits at that latitude. What singles out `1`
-is not latitude but that `ι` fixes exactly `±1`, and on the positive ray only
-`+1`. And `1` is not any *average* of the poles — the arithmetic mean is `∞`, the
-geometric mean is indeterminate. **`1` is the fixed point of the map that swaps
-the poles.** That is the only determinate answer.
-
-**Two roles at once.** `1` is the additive **generator** of `ℕ⁺` and the
-multiplicative **origin** of `ℝ₊`. That double role is why it looks like the
-point from which everything comes.
-
-### 6.1 · The midpoint — three witnesses, ranked
-
-The corpus states these in three places and never gathers them. Gathered, they are
-not equal, and the strongest is the one that is never cited.
-
-**W1 — divergence at both ends. `[A] given ℝ`, and WEAK.** `ρ(x) = |log x| → +∞` as
-`x → 0⁺` and as `x → ∞`. By itself this is **not a midpoint argument**: `(−∞, +∞)`
-has no midpoint, and `|log x − c|` diverges at both ends for *every* real `c`.
-Alone, W1 shows only that `1` is interior.
-
-**W2 — the symmetry, not the size. `[A] given ℝ`, and this is what makes it a
-midpoint.** `ρ(x) = ρ(1/x)` for **every** `x ∈ ℝ₊`, exactly. `ι` fixes `1` and swaps
-the poles, so the two divergences are not merely both infinite — they are **one
-function reflected** (`s ↦ −s`, `s = log x`). The reflection does the work, not the
-distance.
-
-**W3 — the hinge, and it is FINITE. `[A]`, and STRONGEST.** With the hinge
-coordinate `u = (x−1)/(x+1)` (`42` S-5; doc 45 §7A):
-
-```text
-u(1) = 0                        the centre
-lub{u(x) : x ∈ ℚ⁺} = +1         glb{u(x) : x ∈ ℚ⁺} = −1
-|+1 − 0| = 1                    |0 − (−1)| = 1        EQUAL and FINITE
-```
-
-Both bounds stand at distance **exactly 1** from the centre. No infinite quantity is
-compared with another: **no `∞ = ∞` is needed, and none is asserted.** This is the
-strongest form of the midpoint claim the corpus can make. Three precisions, because
-this is where it would inflate:
-
-- **It is rational throughout.** `u(p/q) = (p−q)/(p+q) ∈ ℚ`, and `±1 ∈ ℚ`; the
-  bounds are themselves rational, so no completeness axiom is invoked to produce
-  them. W3 needs **neither completion nor compactification** — unlike W1 and W2,
-  which carry completion because `log q` is transcendental for every rational
-  `q ≠ 1` (doc 52 `G8b`).
-- **The ruler is imported.** `det u = 2`, and by doc 52 `G9` every word over
-  `⟨S, ι⟩` has determinant `±1`, so **the hinge is not a word of that base.** W3
-  measures with an instrument the candidate base does not build — a stated cost.
-  *(Doc 52 is a candidate base; cited here for the accounting, not as a premise of
-  this document.)*
-- **Bounds are bounds, not poles.** `±1` are **not attained** — the image of `ℝ₊`
-  is the open `(−1, +1)` (doc 45 §7A). Reading `lub u` as `○` and `glb u` as `•` is
-  the declared compactification, `[S]`, priced like completion. **The distances are
-  `[A]`; identifying the bounds with the Titans is `[S]`.**
-
-**Refused.** `1` is no *average* of the poles: the arithmetic mean is `∞`, the
-geometric mean is **INDETERMINATE** (§6 above; doc 47 §5). Any sentence of the form
-*"`1` is the geometric mean of `0` and `∞`"* or *"`log 1 = 0` sits midway between
-`−∞` and `+∞`"* is **false in canon** and must be repaired wherever it stands.
-*(Repaired on the public surface 2026-07-30:
-`12_PUBLIC_SITE/trinity/00-the-transcendental-trinity-canon/index.html`, which
-published both at `[A]`.)* What is determinate: `1` is the **fixed point of the map
-that exchanges the poles**, and by W3 the point both bounds stand one unit from.
-
-**Forcedness, at true strength.** The unit's **uniqueness** is forced
-(`at_most_one_identity`); its **existence is presupposed** — `ι` names `1` in order
-to be written (doc 52 §1; doc 53 §1). Three witnesses agreeing on *where* the centre
-is do not make its *existence* a theorem.
-
-### 6.2 · The paradox, dissolved by naming the chart — `KSC-28`
-
-> *"On the additive line `1` sits one step from `0` and infinitely far from `∞`. So
-> how is it the middle?"*
-
-It is not the middle there, and canon never said it was. The objection **omits the
-chart**, which `KSC-28` lists as a kill.
-
-```text
-chart                 centre    involution     1 is
-additive / plane (x)  0         n(x) = −x      one step from 0 — NOT central
-multiplicative  (x)   1         ι(x) = 1/x     THE centre — ι's only positive fixed point
-logarithmic     (s)   s = 0     s ↦ −s         the same centre, relabelled
-```
-
-Two centres, not one — chart-locality, already ruled at doc 42 §6A. The log chart is
-**not a third position**: it is the multiplicative chart written additively, which is
-why the paradox never arises there. By doc 42 §6A.1 the two involutions are dual —
-**each fixes exactly what the other swaps** — so the centres are not rivals but the
-two fixed sets of a Klein four-group. **Every midpoint claim must name its chart.**
-With no chart named, "1 is the midpoint" is not false — it is not yet a claim.
-
-**Kill (§6.1–6.2).** Exhibit `x ∈ ℝ₊` with `ρ(x) ≠ ρ(1/x)`; or a rational `r < 1`
-bounding `u` above on `ℚ⁺`; or a second positive fixed point of `ι`; or show `u`
-**is** a word over `⟨S, ι⟩` — that would *strengthen* W3, and the kill is stated so
-it can be lost either way; or exhibit one chart in which `1` is both central and the
-additive origin, which would restore a real paradox.
-
----
-
-## 7 · Where the number line went `[A]`
-
-Sphere primacy costs nothing, because the line was never outside:
-
-```text
-ℝ ∪ {∞}  is a great circle on Ĉ — a meridian through both poles
-ι maps it to itself                (x real ⟹ 1/x real)
-ι(+1)=+1,  ι(−1)=−1                both fixed points lie ON it
-```
-
-**The number line is the `ι`-invariant meridian of the sphere.** Order, signed
-magnitude and completeness are recovered as **sphere-internal structure**, and
-`KSC-21`'s oriented pair `{+1_N, −1_N}` are exactly that meridian's two fixed
-points. D1's opening is a feature of the sphere.
-
-**The cost, accepted.** `Ĉ` is not a field; the operations live on the affine
-chart `ℂ = Ĉ \ {∞}`. **Arithmetic is chart-local.** Every arithmetic claim must
+This does not make `1_N` an arithmetic or geometric average of projective
+boundary points. It names the chart's fixed point. Every midpoint claim must
 name its chart.
 
----
+## 9 · What the construction does and does not do `[S/I]`
 
-## 8 · Four results that keep the foundation honest `[A]`
+The sequence from a free cyclic witness through fractions, completion,
+positive exponential presentation, compactification, and complex projective
+extension is a selected route. Each arrow has a standard mathematical reading;
+the choice to assemble these arrows into this Foundation is architectural.
 
-**8.1 The interior is prior to the poles.** Two poles do not generate a middle —
-the two-point *discrete* space is the counterexample. And the construction runs
-the other way: `ℝ₊ ──compactify──▶ adjoin {0,∞}`. **`⊙` is not the child of `•`
-and `○`; `•` and `○` are the boundary of `⊙`.** This is why `⊙ = • × ○` is a
-theorem and not a creation story — it states a relation among three, not a
-production of one by two.
+The relation from this route to the wider corpus is inheritance, not wholesale
+derivation. Higher claims must remain compatible with lower typed constraints,
+but D-registers, `μ`, Justice, Power-Max, Rosetta, theology, and empirical claims
+retain their own sources, warrants, rivals, and kill criteria.
 
-**8.2 The poles are correlative, not generative.** `{•,○}` is the 2-cycle of
-`ι`, and a 2-cycle cannot have one member: on `[0,∞)` inversion is *partial*
-because `ι(0)` needs `∞`; on `[0,∞]` it is total. **`ι` is total iff both poles
-are present.** They are co-instituted — neither prior, neither productive.
-"One gives rise to the other" is licensed only as *co-definition*.
+## 10 · What the Foundation does not license
 
-**8.3 Emptiness does not entail plenitude.** `◇(nothing)` does **not** give
-"everything is possible" — counterexample: the two-world space `{∅, {a}}`, where
-`b` is possible at no world. What *is* true is `Compat(∅) ⊇ Compat(w)`: every
-content excludes, and the empty state excludes nothing. **The empty canvas does
-not give potential; it withholds constraint.**
-
-**8.4 The reciprocity, and its asymmetry.** From the null extreme the full
-extreme follows: the empty theory is consistent, **Lindenbaum** extends it to a
-maximal consistent set, **Henkin** gives that a model. But the two seats are not
-equally cheap:
+- The reciprocal chart is analytic and **empty of world**. No ontology, ethic,
+  conservation law, node ranking, or empirical result follows from it.
+- Logical consistency or model construction establishes **admissibility, never
+  existence**. Empty-domain semantics is not plenitude.
+- Titan labels are not mathematical operands. A rendered resemblance transfers
+  neither equality, operation, theorem, nor evidence tier.
+- The selected sphere and emblem are **declared policy, not theorem**. Other
+  models are not refuted merely because this framework declines to use them.
+- Two notations for one structure are one datum, not two confirmations.
+- Internal coherence is not world contact. Gates and proofs return no external
+  observation, replication, publication, or consequence receipt.
 
 ```text
 •  nearly FREE   consistent iff the logic is consistent at all
@@ -507,12 +240,6 @@ equally cheap:
 And all of it establishes **admissibility, never existence**. Lindenbaum hands
 you a set of sentences; Henkin hands you a model of them. Neither hands you a
 world.
-
----
-
-## 9 · What the foundation does **not** license `[S]`
-
-A foundation is precisely where these leak. Carried verbatim:
 
 - **`T1` is world-empty.** The Titan identities are analytic. No ontology, no
   ethic, no conservation law, no node-power result follows from them.
@@ -533,14 +260,29 @@ A foundation is precisely where these leak. Carried verbatim:
   3-transitivity is unaffected by any ruling; `KSC-04` still holds that
   `{0,1,∞}` is canonical by convention. The framework may refuse other models.
   It may not record that refusal as proof that none exists.
-- **Nothing here is world contact.** Seating a foundation raises coherence and
-  returns no receipt from the world.
 
----
+## 11 · Claims and kills
 
-## 10 · The lineage `[I]`
+| Claim | Tier | Kill or discriminator |
+|---|---|---|
+| `R0` refuses necessary being | `[S]` | a sound argument for a necessary being |
+| `B1–B3` define the typed witness | `[S]` | a clause is shown ill-typed or inconsistent |
+| inverse and identity equations follow in the witness | `[A]` | a valid group counterexample |
+| the free witness is isomorphic to `ℤ` | `[A/S]` | the declared free construction fails, or a different witness is silently substituted |
+| reciprocal-chart identities hold | `[A]` | a value in the declared domain violates one |
+| `1_N` is the unique positive reciprocal fixed point | `[A]` | a second positive solution |
+| the line is the invariant meridian | `[A/S]` | a real point maps outside it, or the selected embedding is changed |
+| the assembly is useful Foundation architecture | `[I]` | it ceases to compress without producing recurring type errors |
 
-Offered as a lens; by `KSC-12` it transfers no proof.
+The Foundation fails if a selection is presented as forced, if a conditional
+theorem is read as existence, if a Titan term enters an arithmetic expression,
+or if an internal proof is sold as world contact.
+
+## 12 · Lineage and custody `[I/B]`
+
+Philosophical names remain comparison lenses, never proof transfer: the
+vocabularies below illuminate the boundary questions; they do not establish
+the typed mathematics. Offered as a lens; by `KSC-12` it transfers no proof.
 
 **Parmenides** is the strongest objection and comes first: what-is-not can be
 neither known nor spoken. **Plato**, in the *Sophist*, commits the parricide —
@@ -561,41 +303,15 @@ that `○` is a proper class rather than a set. `•` sits as Plato's Good sits:
 `ἐπέκεινα τῆς οὐσίας`, beyond being, the condition of beings and not a being —
 which is already the corpus's own `D0` typing.
 
----
+This version supersedes the conflicted projection preserved at parent commit
+`b7e0d00d` and adjudicated in Receipt 234. That version used Titan glyphs inside
+three infix relations, added a fourth identity posit, and later identified the
+glyph syntax with the numeric reciprocal product. Those expressions are
+historical conflict evidence, not premises. The commit and receipt retain exact
+custody without repeating the invalid expressions as live syntax here.
 
-## 11 · The kills
+**Owners.** `R0` → K-5. Grammar and analytic floor → K-1 and the Canonical
+Formula Block. Titan sovereignty → `KSC-04`, the Titan canon, and Primitive and
+Type Signatures. Formal neighbors → docs 42 and 45–47. Routing → `KSC-28`.
 
-| Stratum | Claim | Kill |
-|---|---|---|
-| `F1` in `P1` | the boundaries must be answered | exhibit a formal framework settling neither, even by convention |
-| `F2` | the unit is unique | exhibit a group with two identities |
-| `R0` | no necessary being | a sound argument for a necessary being |
-| `R0′` | the totality is admissible | derive a contradiction **inside NBG itself** |
-| `S1` | sphere primacy | show the corpus needs a structure unavailable on `Ĉ` |
-| `T1` | the three identities | exhibit an admissible coupled path where the product is not `1` |
-| `T2` | `1` is the unique `ι`-fixed point on the positive ray | exhibit a second |
-| §7 | the line is the `ι`-invariant meridian | exhibit a real `x` with `1/x` non-real |
-| §8.1 | the interior is prior | construct `ℝ₊` from `{0,∞}` alone |
-| §8.4 | admissibility ≠ existence | derive a world from a maximal consistent set |
-
-**The foundation's own kill.** If any stratum is cited above its type — a
-selection presented as forced, or a theorem read as a warrant — the foundation
-has failed at the layer where failure is hardest to see, and this page should be
-repaired or deleted rather than defended.
-
----
-
-## 12 · The stranger test
-
-A mathematician who accepts none of this framework's metaphysics should be able
-to check §5, §6, §7 and §8 in an afternoon — no Titans, no D-registers, no
-Crown Wager required. Roughly twenty `[A]` claims, each with a stated kill.
-
-That is the point. A foundation that can only be checked by people who already
-believe it is not a foundation; it is a membership test.
-
-**Owners.** `R0` → K-5. Grammar and chart → K-1. Formal results → docs 45–47.
-Routing → `KSC-28`. Rulings → receipts 174–176. This page states them together
-and may never silently strengthen any of them.
-
-•   ⊙   ○ — *two poles the inversion swaps, one circle it cannot move, and a door still marked on the inside.*
+•   ⊙   ○ — *three operator-free boundary roles; one typed door still marked on the inside.*

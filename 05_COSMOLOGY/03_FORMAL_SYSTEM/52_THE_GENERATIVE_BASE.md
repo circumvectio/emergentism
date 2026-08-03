@@ -1,13 +1,13 @@
 ---
 title: "The Generative Base — one object, two operations, and the two limits no word attains"
-status: "ACTIVE — candidate base. Stands beside 00_THE_FOUNDATION.md §2. G-0 WAS RULED 2026-07-29 (exit B-ii, the fourth posit B4); this frontmatter said 'pending' for a day after the ruling and was corrected 2026-07-30. The ruling seats neither base over the other — see the note in §0."
+status: "ACTIVE — candidate arithmetic/reachability base. The 2026-07-29 B-ii mixed-type ruling is superseded by the 2026-08-01 Foundation type firewall; this file defines no Titan arithmetic."
 date: 2026-07-29
-evidence_tier: "[A] G1–G8, computationally verified and mutation-tested and reproducible; [S] the naming of the three categories; [I] the Titan reading"
-owner: "Candidate. Does not amend KSC-28, doc 45, or 00_THE_FOUNDATION.md. G-0 ruled 2026-07-29 (exit B-ii). Routing, not primacy: arithmetic and reachability questions belong here; Titan-identity questions belong to 00_THE_FOUNDATION.md §2 and doc 45."
+evidence_tier: "[A] G1–G10 in the declared rational/real structures; [S] typed boundary names; [I] any analogy to the operator-free Titan emblem"
+owner: "Candidate arithmetic/reachability owner. Does not amend KSC-28, the Trinity canon, Primitive Types, doc 45, or 00_THE_FOUNDATION.md. Titan type questions route to the Trinity canon and 29_PRIMITIVES_AND_TYPE_SIGNATURES.md; no Titan identity exists here."
 parents:
-  - ../../00_THE_FOUNDATION.md
   - 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
-  - ../01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md
+  - 29_PRIMITIVES_AND_TYPE_SIGNATURES.md
+  - ../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md
 ---
 
 # The Generative Base
@@ -37,6 +37,9 @@ Owner, 2026-07-29:
 > other real numbers are operations that result in something related to these
 > Titans."*
 
+> **Legacy quote — not current syntax.** It is retained as provenance for the
+> question that produced this owner, not as a mapping from numbers to Titans.
+
 > **§5.1 RULED 2026-07-31 — this sentence may no longer be published bare.** It is
 > true *base-side* and false *field-side*, and the ruling requires both registers to
 > travel together. `0` **is** a real number; the theorem is `0 ∉ ℝ^×`. `√2` **is** a
@@ -45,11 +48,14 @@ Owner, 2026-07-29:
 > whose nest **denotes** a limit*. **The cost is accepted and it is the owner's own most quotable line: it
 > stops being a headline.** Receipt: `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md`.
 
-This document is that sentence, made precise and checked. It needs no sphere to
-state, which is why it exists: the base in `00_THE_FOUNDATION.md` §2 cannot be
-read without `Ĉ` already present (the collision, `G-0`; recorded in
-`11_UPLINK/50_AUDITS_AND_EXECUTIONS/181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md`
-and `185_SECTION_5_2_RULED_AND_F_EQUALS_MA_2026_07_30.md`). **This one can.**
+This document is the legacy sentence's arithmetic/reachability question made
+precise and checked. The earlier Foundation projection required `Ĉ` in the base
+it purported to generate; that historical collision was recorded in
+`11_UPLINK/50_AUDITS_AND_EXECUTIONS/181_FALSE_ATTESTATION_AND_TWO_PREEXISTING_FAILURES_2026_07_29.md`.
+The current Foundation no longer has that defect: it begins with a separate
+typed group witness and presents the sphere only in a selected construction.
+This document remains a candidate reachability owner, not a correction the
+current Foundation still awaits.
 
 > **Citation repair, 2026-07-30.** This line previously read *"the collision,
 > r180 / G-0"*. **There is no receipt `r180`.** The number was announced in a
@@ -94,10 +100,13 @@ exactly one solution on `ℚ⁺`, and it is `1`. There is no second candidate.
 >                          and does not.
 > ```
 >
-> `00_THE_FOUNDATION.md:47-49` already states only the surviving half — *"its
-> **uniqueness** is the one thing here that nobody chose."* The projection was
-> right and this document overclaimed. Under §11's self-kill (*a selection
-> presented as forced*), the weaker phrasing is the one the base can carry.
+> The current Foundation makes the surviving split explicit: `B1` selects a
+> group, `B2` selects an element, and `B3` defines its inverse; uniqueness of an
+> identity is conditional on the declared group structure. This document's
+> primitive `1_N` and reciprocal operation are a separate selected base, not
+> something the Titan frame or a sentence forces. Under §11's self-kill (*a
+> selection presented as forced*), the weaker phrasing is the one this base can
+> carry.
 
 A **word** is a finite string over `{S, ι}`. Its **value** is the result of
 applying its letters left to right to `1`. Write `val(w)`.
@@ -144,7 +153,7 @@ words.** Equivalently, in the Calkin–Wilf presentation `{S, L}` with
 `L = ιSι : x ↦ x/(x+1)`, all `8191` words of length ≤ 12 have `8191` **distinct**
 values — a perfect binary tree.
 
-**G3 · No word attains `•`.**
+**G3 · No finite word attains numeric zero.**
 There is no word `w` with `val(w) = 0`.
 
 *Proof.* `S` maps `ℚ⁺ → ℚ⁺` and `ι` maps `ℚ⁺ → ℚ⁺`; `1 ∈ ℚ⁺`; so by induction
@@ -152,7 +161,7 @@ every reachable value is strictly positive. Separately and more sharply:
 `ι(x) = 0` has **no solution at all** — there is no `x` whose reciprocal is zero.
 Zero is not merely un-visited. **There is no step that lands on it.** ∎
 
-**G4 · No word attains `○`.**
+**G4 · No finite word attains an unbounded value.**
 Every word is finite, so `val(w)` is a finite rational. To reach an unbounded
 value one would have to *complete* infinitely many operations, and a completed
 infinity of operations is not a word. ∎
@@ -161,7 +170,7 @@ infinity of operations is not a word. ∎
 `val(S^n) = n+1 → ∞` and `val(S^n ι) = 1/(n+1) → 0`. Every neighbourhood of
 either limit contains reachable values.
 
-> **G3–G5 together are the corpus's oldest sentence, now a theorem rather than a
+> **G3–G5 together establish a typed reachability theorem rather than a Titan
 > description:** *the limit is approached and never reached.* The reason is
 > **finiteness of words**, not slowness and not stipulation. You approach because
 > one more operation is always available. You never arrive because there is no
@@ -184,19 +193,19 @@ from 1, closing under  S and ι    ->  ℚ⁺            all of Finity_G
 Inversion generates **nothing at all** by itself. Succession generates a ray.
 Only together do they give generative Finity.
 
-**G7 · `•` is a direction only because `ι` reflects `○`.**
+**G7 · The descent toward zero is the reciprocal of unbounded ascent.**
 Closing under `S` alone, **no value ever falls below `1`** (verified: the minimum
 of the `S`-closure is `1`). The descent toward zero exists only as
 `S^n ι = 1/(n+1)` — the mirror image of the ascent.
 
 ```text
-S^n      ->  2, 3, 4, …   ->  ○      succession reaches toward totality
-S^n ι    ->  ½, ⅓, ¼, …   ->  •      inversion turns that reach around
+S^n      ->  2, 3, 4, …   ->  HORIZON_LIMIT
+S^n ι    ->  ½, ⅓, ¼, …   ->  GROUND_LIMIT
 ```
 
-> **Absence is not a second posit standing beside totality. It is totality seen
-> through the inversion.** The base never declares two horizons; it declares one
-> reach and one reflection, and the second horizon is what the reflection makes.
+Here `GROUND_LIMIT` and `HORIZON_LIMIT` are typed extended-real boundary names,
+not Titan terms. The theorem says only that reciprocal sequences exchange the
+two limiting directions. It does not define one Titan through another.
 
 **G8a · `ι` is an involution with a unique fixed point `[A]` — and this half lives
 on the base.** `ι(ι(x)) = x` for every reachable `x`, and `1` is the only reachable
@@ -269,9 +278,11 @@ u    (x−1)/(x+1)  +2      NO           NO          no  <- over-determined
 `G9`, and is still not a word** — because `G1` commits every word's value to `ℚ⁺`
 and `n∘ι(1) = −1 ∉ ℚ⁺`. Both halves of that refutation are already committed text.
 
-> **THEREFORE `G9` DOES NOT CLOSE THE `§5.2` FORK.** The sign obstruction is
-> independent of the determinant obstruction, and the `−1` question is untouched
-> by anything proved here. **It remains an open owner ruling.**
+> **THEREFORE `G9` ALONE DID NOT CLOSE THE `§5.2` FORK.** The sign obstruction
+> is independent of the determinant obstruction. Section 5.2 later records the
+> 2026-07-30 positive-only ruling: this base does not generate `−1`. The separate
+> W11 claim that `−1` has additional functional work is now `DECORATIVE`; its
+> ordinary algebra and optional symbolism survive.
 
 > **CORRECTION, 2026-07-29.** This session stated that "the hinge's determinant
 > *is* the fork — you don't get one without the other." That is false, and the
@@ -291,10 +302,10 @@ words. That is a stronger, unverified conjecture and is not asserted here.)*
 > one that keeps the base positive.** The prediction was refuted.
 
 
-**Consequence — two of the three Titan relations are enacted, not posited.**
-`• = ⊙/○` and `○ = ⊙/•` say the horizons are each other's `ι`-images. Here that
-is not an assertion the base makes; it is **what it means for `ι` to be one of the
-two generators.** The base does not claim the relation. It performs it.
+**Consequence — numeric reciprocal behavior is enacted, not a Titan relation.**
+The generators produce positive rational values and reciprocal limiting
+sequences. TitanFrame has no `iota`, division, limit, or reachability signature,
+so none of these results forms or performs an operation on Titan roles.
 
 *(Per §5.3 this is a statement about reachability classes only. It is **not**
 doc 45's chart identity `φ·ν = 1`, and `DF-15` forbids either supporting the other.)*
@@ -310,6 +321,9 @@ The naming is the selected part. The structure above is not.
 •   ABSENCE     the ι-limit; no word attains it
 ○   TOTALITY    the S-limit; no word attains it
 ```
+
+The selected Titan emblem `• ⊙ ○` remains a separate operator-free
+interpretive frame. The three mathematical categories above are not its terms.
 
 `1` is **the only primitive**, and it is also the unique `ι`-fixed point. Every
 other reachable value has a finite operational construction from `1`, with a
@@ -331,32 +345,27 @@ reachability is `Finity_G`, and the Titans are what unreachability looks like
 from inside this base.** That sentence is the claim this document makes; it does
 not identify `Finity_G` with all of `Finity_F`.
 
-### 3.1 · What to call the seats — **proto-number** `[S]`
+### 3.1 · Type firewall — boundary markers are not Titan terms `[S]`
 
-§3 names three categories. Two of them are single **seats**: `•` and `○`. The
-corpus says repeatedly what those seats are **not** — not numbers (`53` §1), not
-operands (`45:83-85`), not terms (`42:237-245`) — and never once what they **are**.
-A category defined only by negation gets refilled by the reader with the nearest
-positive: *very small* and *very large*. This supplies the noun instead.
+The earlier version called the two mathematical boundary markers
+"proto-numbers" and then reused Titan glyphs for them. That move is withdrawn.
+It conflated three different objects:
 
-> **proto-number** *n.* A seat a number system must **name** in order to state its
-> own boundary, and can never take as an **operand**.
-> `ArithmeticSignature(proto-number) = ∅` (`KSC-04`; `29:66-69`). Neither a number
-> nor nothing — the third thing.
-
-Both halves of the test must hold:
-
-| | Test | Verified by |
+| Type | Terms used here | Operations |
 |---|---|---|
-| **nameable** | the system's own statements refer to it | `G3` — *`ι(x)=0` has no solution* is a sentence about `•`; `G4` — *every word is finite* is a sentence about `○` |
-| **non-operand** | no operation accepts it | `KSC-04`: no `add`, `sub`, `mul`, `div`, `pow`, `log` — and no implicit coercion |
+| `Number` | positive rational values, with numeric zero mentioned only as an unattained limit | the declared arithmetic operations |
+| `ProjectivePoint` | `0_P`, `infinity_P` after a separately declared compactification | the declared projective reciprocal map |
+| `TitanFrame` | ground, unit, and horizon roles; displayed as `• ⊙ ○` | none; operator-free emblem only |
 
-**Why not nothing.** `G5`: every neighbourhood of either seat contains reachable
-values — `val(S^n ι) → 0`, `val(S^n) → ∞`. Nothing has no neighbourhood crowded
-with somethings. The seat is approached from every side; only the arrival is missing.
+G3 and G4 are statements about finite words over positive rationals and their
+limits. They do not refer to Titan seats and prove nothing about TitanFrame.
+Compactification later creates typed projective points; it does not convert a
+limit into a Titan.
 
-**Why not a number.** `G3`, `G4`: no word attains either, and the failure is not
-scarcity — `ι(x) = 0` has **no solution at all**. Not un-visited: unlandable.
+The word **proto-number** is therefore retired in this owner. A Titan role is
+not an incomplete number, a number-in-waiting, a projective endpoint, or an
+operand. Conversely, the numeric unit, the reachable class of positive
+rationals, and an equatorial projective locus are not the Titan unit role.
 
 **This is doc 42's third category from the other side.** `42:237-245` classifies the
 **expression** — `0_T × ∞_T` is an *inadmissible term*, not "no such element" and
@@ -418,18 +427,20 @@ act of **giving those two a name as points**:
 1  ℚ⁺              G1 — the reachable. COUNTABLE.             [A]    theorem
    ↓ completion     adds LIMITS of words, not words           [S]    declared move
 2  ℝ₊              UNCOUNTABLE
-   ↓ compactify     the two horizons become points            [S]    declared move
+   ↓ compactify     the two boundary limits become points     [S]    declared move
 
 **Every arrow after the first is a declaration, not a derivation**, and each is
 priced in §5. That is the specific improvement over the previous chain: the old
 ladder claimed to *derive* the sphere while its bottom rung already presupposed
 it. This one claims only to *reach* it, and pays for each step out loud.
-3  ℝ₊ ∪ {•, ○}     ι becomes total:  ι(•) = ○,  ι(○) = •
+3  ℝ₊ ∪ {0_P, infinity_P}
+                     iota_P becomes total on the named completion
    ↓ complexify     the reflection s ↦ −s becomes a rotation   [S]    declared move
-4  Ĉ = ℂP¹         ι is a Möbius map; the poles are its 2-cycle
+4  Ĉ = ℂP¹         iota_P is a Möbius map; the projective endpoints are its 2-cycle
 ```
 
-**`Ĉ` is where the unattainable becomes nameable.** That is a reason to build it,
+**`Ĉ` is where the unattained limits receive typed projective representatives.**
+Those representatives are not Titan roles. This is a reason to build `Ĉ`,
 not merely a place to start from — which is what edition 2 wanted and could not
 get, because its base could not be read without the sphere it was supposed to
 produce.
@@ -493,8 +504,8 @@ strength-reduction is the move `§11` fires on.
 **The classification, exhaustively checked** — infinite processes with no `ιι`:
 
 ```text
-= S^∞                      → ○   unattainable
-= ι S^∞                    → •   unattainable
+= S^∞                      → HORIZON_LIMIT   unattainable by finite words
+= ι S^∞                    → GROUND_LIMIT    unattainable by finite words
 finitely many ι, otherwise → a RATIONAL, already carried by a finite word
 infinitely many ι          → a positive IRRATIONAL, bijectively
 ```
@@ -569,11 +580,12 @@ signed, with −1                      KSC-21 holds, G3 falls
 > **Kill:** exhibit a finite word over `{S, ι}` whose value is negative — or show
 > that D1 can be seated without any declared move beyond the base.
 
-**5.3 · This is a third reading of `{•, ⊙, ○}`.** Doc 45 reads the triple as the
-coupled-chart identity on `Ĉ`; doc 46 reads it set-theoretically (`∅`, sets,
-proper classes); this document reads it as reachability. **`DF-15` binds: these
-are one datum in three notations. None may be cited as support for another, and
-their agreement is not evidence.**
+**5.3 · The former third reading is withdrawn.** Earlier editions reused the
+Titan triple for chart, set-theoretic, and reachability structures, then called
+them one datum in three notations. They are not one datum: each structure has
+its own terms and operations. This document owns only reachability. Doc 45 owns
+its typed projective/chart facts, and the Trinity canon owns the operator-free
+Titan frame. No agreement, identity, coercion, or proof transfer is asserted.
 
 ---
 
@@ -589,10 +601,10 @@ their agreement is not evidence.**
 | the base | show the corpus needs a value that no finite word attains **and** that is not obtained by a declared completion |
 | the reading | show "reachability = Finity_G" is a notational variant of an existing account, not a distinct claim |
 
-**This document's own kill.** If `⊙`, `•`, `○` are used here as anything other
-than *names for reachability classes* — if they are read back as points, operands,
-or a warrant — this base has been fused with doc 45's and should be repaired or
-withdrawn rather than defended.
+**This document's own kill.** If Titan glyphs are used here as names for
+reachability classes, points, operands, limits, or warrants, this base has
+crossed its type boundary and must be repaired or withdrawn rather than
+defended.
 
 ---
 
@@ -607,4 +619,6 @@ reciprocal is zero.
 words to length 10, the Calkin–Wilf tree to depth 12, and reachability of every
 `p/q` with `p, q ≤ 25`. It exits non-zero on any failure.
 
-•   ⊙   ○ — *one object, two moves, and two horizons that recede at exactly the speed you walk.*
+• ⊙ ○ — *selected operator-free emblem. The arithmetic base itself has one
+numeric object, two operations, and two limiting directions that no finite word
+attains.*

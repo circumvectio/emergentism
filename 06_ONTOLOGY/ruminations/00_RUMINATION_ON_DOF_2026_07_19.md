@@ -34,7 +34,7 @@ Read it wrongly, and you get the Republic's caste system, the Parmenides' regres
 
 ## II. The Four Kernels as Degrees of Freedom
 
-The audit of 2026-07-13 cut away the cathedral. What it left standing, sharpened by receipt 131 and the Dead Forms Catalog, is four kernel pieces. Read them as the *degrees of freedom* the framework is built on — not as Forms in Plato's sense, but as the parametric structure that lets the rest exist:
+The audit of 2026-07-13 cut away the cathedral. What it left standing, sharpened by `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md` and the Dead Forms Catalog, is four kernel pieces. Read them as the *degrees of freedom* the framework is built on — not as Forms in Plato's sense, but as the parametric structure that lets the rest exist:
 
 - **Conjugacy** — the reciprocal-chart ring `φ·ν = 1` and its AND-class family. Not a discovery; a coordinate choice that nonetheless forces annihilation at the boundary, the binding constraint, the equator under budget. A DoF because *one coordinate* is free, the other is reciprocally bound. The DoF itself is the binding.
 - **Equator** — `φ + ν ≥ 2` with equality at `φ = ν = 1`; `B = sin θ = 2/(φ+ν)`. The unchosen arithmetic that forces a maximum and a mirror. Not a moral decree; a DoF whose lowest-cost value happens to lie at the centre.

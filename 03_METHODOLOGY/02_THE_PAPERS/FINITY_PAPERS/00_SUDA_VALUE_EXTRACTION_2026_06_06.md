@@ -397,28 +397,28 @@ Claim to avoid: Suda as discoverer of our doctrine.
 
 ## Revised Theory Skeleton
 
-### D0 - Titans of Numbers
+### D0 - Typed Boundary Frames
 
-The first page should establish the boundary frames:
+The first page should establish two distinct frames:
 
 ```text
-•  zero      folded/no-manifest potential
-⊙  finity    bounded one-ness
-○  infinity  unbounded/open possibility
+TitanFrame:       • ⊙ ○              (operator-free selected emblem)
+ProjectiveFrame:  0_P, 1_P, infinity_P
 ```
 
-The glyph transformations are taught as frame grammar:
+The projective endpoints and numeric normalizer may be used only inside their
+declared mathematical structures.  The Titan roles carry interpretive names,
+not numeric values.
 
 ```text
-⊙ / ○ = •
-• × ○ = ⊙
-⊙ / • = ○
+ground endpoint; normalized chart point; horizon endpoint
 ```
 
 Required fence:
 
 ```text
-These are not field equations. They are register transformations among boundary glyphs.
+The projective frame is not the Titan frame. No arithmetic, equality, map, or
+coercion between these types is defined.
 ```
 
 ### D1 - Finity, the Special One

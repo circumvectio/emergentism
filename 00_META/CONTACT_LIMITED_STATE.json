@@ -1,0 +1,423 @@
+{
+  "schema": "emergentism/contact-limited-state/v1",
+  "status": "OPEN_INTERNAL",
+  "routing_role": "Deterministic completion-counter baseline only; no semantic, publication, deployment, or world-contact authority.",
+  "roadmap": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
+  "baseline_rule": "Every baseline or lifecycle-classification change requires a new repo-relative dated receipt_ref; changing a count never changes the underlying truth.",
+  "receipt_namespace": {
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+    "source_index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json",
+    "source_checker": "09_TOOLS/01_SCRIPTS/check_receipt_citations.py",
+    "target_universe": "Live-lane Markdown filenames with a 2-3 digit receipt prefix, excluding the 00_* index/readme convention.",
+    "target_files": 311,
+    "prefixed_markdown_including_00_convention": 317,
+    "unique_prefixes": 189,
+    "reused_prefixes": 97,
+    "legacy_heuristic_dangerous_prefixes": 91,
+    "bare_unsafe_reused_prefixes": 97,
+    "bare_numeric_boundary": "All 97 reused prefixes remain unsafe as bare citations. The legacy 91 count only filters on broad supersession/status tokens and proves no target, direction, reciprocity, or cross-lane disambiguation.",
+    "identity_hash_contract": {
+      "path_set_canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
+      "duplicate_group_canonicalization": "SHA-256 over canonical UTF-8 JSON mapping each reused prefix to its lexicographically sorted repo-relative paths, with object keys sorted and separators ',' and ':'.",
+      "citable_targets_sha256": "ffed43e610b0b249595f3dbf894aa22e1ef1d05e5a83db203f0ec4717d4c8b82",
+      "prefixed_including_00_sha256": "4d5213ff05846ce9b11596a3eac96bfcf90e61f6d2c80fa7270f169f811d0915",
+      "duplicate_groups_sha256": "71db9e323bc9e890a71a3253d3ac1f61144ee560ffd1d1770e0e9b09be0d69e9"
+    },
+    "dangling_citations": 0
+  },
+  "public_lifecycle": {
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+    "universe_definition": "One artifact per deployable HTML file after .vercelignore, plus the withheld artifact registry; classification is exclusive and frozen means a matching noindex response-header rule.",
+    "sources": [
+      "12_PUBLIC_SITE/public_semantic_parity.json",
+      "12_PUBLIC_SITE/withheld-routes.json",
+      "12_PUBLIC_SITE/vercel.json",
+      "12_PUBLIC_SITE/.vercelignore",
+      "12_PUBLIC_SITE/sitemap.xml"
+    ],
+    "deploy_ignore_contract": {
+      "semantics": "Gitignore-style unanchored directory patterns ending in slash match that directory component at any depth.",
+      "present_html": 404,
+      "ignored_html": 16,
+      "deployable_html": 388,
+      "withheld_artifacts_added_back": 10,
+      "matcher_conformance": {
+        "state": "CLOSED_LOCAL_PARITY",
+        "pattern": "_archive/",
+        "excluded_artifact": "compass/_archive/index_2026_07_12_pre_restructure.html",
+        "implementations": [
+          "09_TOOLS/01_SCRIPTS/check_contact_limited.py",
+          "12_PUBLIC_SITE/predeploy_check.py"
+        ],
+        "evidence": [
+          "12_PUBLIC_SITE/.vercelignore",
+          "12_PUBLIC_SITE/compass/_archive/index_2026_07_12_pre_restructure.html",
+          "09_TOOLS/02_COMPILERS/test_contact_limited.py"
+        ]
+      }
+    },
+    "delivery_contract": {
+      "cleanUrls": true,
+      "trailingSlash": true,
+      "precedence": [
+        "withheld",
+        "current",
+        "provisional",
+        "infrastructure",
+        "frozen",
+        "unclassified"
+      ],
+      "withheld_alias_contract": {
+        "artifacts": 10,
+        "raw_aliases": 30,
+        "canonical_aliases": 10,
+        "redirect_target": "/historical-boundary/",
+        "required_response": "noindex,nofollow",
+        "evidence": [
+          "12_PUBLIC_SITE/withheld-routes.json",
+          "12_PUBLIC_SITE/vercel.json"
+        ]
+      },
+      "sitemap_contract": {
+        "artifact": "12_PUBLIC_SITE/sitemap.xml",
+        "classes": [
+          "current",
+          "provisional"
+        ],
+        "routes": 44,
+        "routes_sha256": "f1acfe1e556c9349f23e813a264cf7f8ee6b27d22d9ce26316bfb1365eebecd1",
+        "evidence": [
+          "12_PUBLIC_SITE/public_semantic_parity.json",
+          "12_PUBLIC_SITE/sitemap.xml",
+          "09_TOOLS/02_COMPILERS/test_contact_limited.py"
+        ]
+      },
+      "alias_collisions": [
+        {
+          "route": "/titans/",
+          "artifacts": [
+            "titans.html",
+            "titans/index.html"
+          ],
+          "shared_raw_lifecycle": "frozen",
+          "evidence": [
+            "12_PUBLIC_SITE/titans.html",
+            "12_PUBLIC_SITE/titans/index.html",
+            "12_PUBLIC_SITE/vercel.json"
+          ]
+        }
+      ],
+      "allowed_raw_overlaps": [
+        {
+          "classes": [
+            "frozen",
+            "withheld"
+          ],
+          "artifacts": [
+            "burrisphere/index.html",
+            "canon/the-complete-ontology-of-reality/index.html",
+            "dasein/index.html",
+            "operators/mf-283-the-orthogonality-theorem-v2/index.html",
+            "operators/mf-285-dreams-are-unanchored-d5/index.html",
+            "operators/mf-296-gravity-is-time/index.html",
+            "operators/mf-298-dark-matter-is-mutual-information/index.html"
+          ],
+          "evidence": [
+            "12_PUBLIC_SITE/withheld-routes.json",
+            "12_PUBLIC_SITE/vercel.json"
+          ]
+        },
+        {
+          "classes": [
+            "frozen",
+            "infrastructure"
+          ],
+          "artifacts": [
+            "offline/index.html"
+          ],
+          "evidence": [
+            "12_PUBLIC_SITE/public_semantic_parity.json",
+            "12_PUBLIC_SITE/vercel.json"
+          ]
+        }
+      ]
+    },
+    "membership_hash_contract": {
+      "canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
+      "universe_sha256": "d6a9074c0787068257f5aafe084392fcef76922700adc06a6255f005d6b9df46",
+      "category_sha256": {
+        "current_sha256": "87f09c75c61aacaa182fd6f976d5c14723d4c7b8fd26f9062095b63b37ce4ef0",
+        "provisional_sha256": "d549e227d8ed8139a7d699eb4f802f8e152e6e1027ec0fff97241b5a47492bcb",
+        "frozen_sha256": "1efdc5b91a2324dabae4b7ab2af5e373e0ddf44a4d5bfcece47a4209638dda0f",
+        "withheld_sha256": "8e1a8bb1ee005b65a6cbcc2d38838fcf9ca4ebcc24f97a0cf5d284c200ba4fcf",
+        "infrastructure_sha256": "fed7a7ebeffdb903282f11320e9ebf2291efa582ec0a5cdafcf16d6bfd52bfc9",
+        "unclassified_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "counts": {
+      "total": 398,
+      "current": 40,
+      "provisional": 4,
+      "frozen": 341,
+      "withheld": 11,
+      "infrastructure": 2,
+      "unclassified": 0
+    },
+    "unclassified": []
+  },
+  "claim_disposition": {
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+    "source": "00_META/claim_status/CLAIM_STATUS.yaml",
+    "lifecycle_rows_total": 48,
+    "lifecycle_rows_sha256": "4f01474e67957703b81c6e99ed8a82a0905e2b584be48a4c6d2390f9d8c7eb0e",
+    "claim_status_contract_sha256": "017cbc2a76d93c7d30340a57cfa56f12520ea0581917e711ceafb2a31b5d237d",
+    "unique_external_contracts": 18,
+    "external_contract_ids": [
+      "RQ06-CIVILISATIONAL-DISCRIMINATOR-01",
+      "W1-DOMAIN-REACHABILITY-01",
+      "W10-INDEPENDENT-POLARITY-LINEAGE-01",
+      "W12-APOPHATIC-EXIT-PRACTICE-01",
+      "W2-QUANTUM-RECORD-ORDER-01",
+      "W4A-EVALUATED-PRODUCTIVITY-01",
+      "W4B-RESOURCE-SURFACE-01",
+      "W5A-SURVIVORSHIP-FREE-EQUATOR-TRANSFER-01",
+      "W5B-AGGREGATOR-REGISTER-MAP-01",
+      "W6A-NONEXTRACTION-DURABILITY-TRUST-01",
+      "W6B-EXTRACTION-TRAJECTORY-01",
+      "W7A-QCD-ROLE-AFFINITY-01",
+      "W7B-EM-ROLE-AFFINITY-01",
+      "W7C-WEAK-ROLE-AFFINITY-01",
+      "W7D-GRAVITY-ROLE-AFFINITY-01",
+      "W7E-F5-ROLE-AFFINITY-01",
+      "W8-FUTURE-CONTENT-CHAIN-01",
+      "W9-EGREGOREOTYPE-COMPOSITE-01"
+    ],
+    "ambiguous_rows": [],
+    "current_scope": {
+      "rows": 26,
+      "live_status_rows": 23,
+      "terminal_status_rows": 3,
+      "status_counts": {
+        "NOT-WELL-POSED": 2,
+        "COMPONENT-SUPPORTED": 4,
+        "OPEN-EMPIRICAL": 15,
+        "DECORATIVE": 1,
+        "NARROWED": 4
+      },
+      "id_status": {
+        "W0-CROWN": "NOT-WELL-POSED",
+        "W1": "COMPONENT-SUPPORTED",
+        "W2": "COMPONENT-SUPPORTED",
+        "W3": "OPEN-EMPIRICAL",
+        "W4": "OPEN-EMPIRICAL",
+        "W5": "OPEN-EMPIRICAL",
+        "W6": "OPEN-EMPIRICAL",
+        "W7a": "OPEN-EMPIRICAL",
+        "W7b": "OPEN-EMPIRICAL",
+        "W7c": "OPEN-EMPIRICAL",
+        "W7d": "OPEN-EMPIRICAL",
+        "W7e": "OPEN-EMPIRICAL",
+        "W8": "COMPONENT-SUPPORTED",
+        "W9": "COMPONENT-SUPPORTED",
+        "W10": "OPEN-EMPIRICAL",
+        "W11": "DECORATIVE",
+        "W12": "OPEN-EMPIRICAL",
+        "RQ-01": "OPEN-EMPIRICAL",
+        "RQ-02": "OPEN-EMPIRICAL",
+        "RQ-03": "NARROWED",
+        "RQ-04": "NOT-WELL-POSED",
+        "RQ-05": "OPEN-EMPIRICAL",
+        "RQ-06": "OPEN-EMPIRICAL",
+        "RQ-07": "NARROWED",
+        "RQ-08": "NARROWED",
+        "RQ-09": "NARROWED"
+      },
+      "direct_contact": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7a",
+        "W7b",
+        "W7c",
+        "W7d",
+        "W7e",
+        "W8",
+        "W9",
+        "W10",
+        "W12",
+        "RQ-06"
+      ],
+      "merged_contact": [
+        "W3",
+        "RQ-01",
+        "RQ-02",
+        "RQ-05"
+      ],
+      "contact_routed": [
+        "W1",
+        "W2",
+        "W4",
+        "W5",
+        "W6",
+        "W7a",
+        "W7b",
+        "W7c",
+        "W7d",
+        "W7e",
+        "W8",
+        "W9",
+        "W10",
+        "W12",
+        "RQ-06",
+        "W3",
+        "RQ-01",
+        "RQ-02",
+        "RQ-05"
+      ],
+      "internal_narrowed": [
+        "RQ-03",
+        "RQ-07",
+        "RQ-08",
+        "RQ-09"
+      ],
+      "internal_terminal": [
+        "W0-CROWN",
+        "W11",
+        "RQ-04"
+      ]
+    },
+    "grave_scope": {
+      "rows": 22,
+      "terminal_status_rows": 21,
+      "narrowed_status_rows": 1,
+      "status_counts": {
+        "FORMALLY-REFUTED": 10,
+        "CATEGORY-ERROR": 4,
+        "EMPIRICALLY-REFUTED": 3,
+        "NARROWED": 1,
+        "NOT-WELL-POSED": 3,
+        "PROCESS-DEFECT": 1
+      },
+      "id_status": {
+        "DF-01": "FORMALLY-REFUTED",
+        "DF-02": "CATEGORY-ERROR",
+        "DF-03": "EMPIRICALLY-REFUTED",
+        "DF-04": "FORMALLY-REFUTED",
+        "DF-05": "CATEGORY-ERROR",
+        "DF-06": "EMPIRICALLY-REFUTED",
+        "DF-07": "EMPIRICALLY-REFUTED",
+        "DF-08": "FORMALLY-REFUTED",
+        "DF-09": "FORMALLY-REFUTED",
+        "DF-10": "FORMALLY-REFUTED",
+        "DF-11": "FORMALLY-REFUTED",
+        "DF-12": "FORMALLY-REFUTED",
+        "DF-13": "NOT-WELL-POSED",
+        "DF-14": "NARROWED",
+        "DF-15": "CATEGORY-ERROR",
+        "DF-16": "FORMALLY-REFUTED",
+        "DF-17": "NOT-WELL-POSED",
+        "DF-18": "NOT-WELL-POSED",
+        "DF-19": "FORMALLY-REFUTED",
+        "DF-20": "CATEGORY-ERROR",
+        "DF-21": "FORMALLY-REFUTED",
+        "DF-22": "PROCESS-DEFECT"
+      },
+      "merged_to_owner": [
+        "DF-01",
+        "DF-02",
+        "DF-03",
+        "DF-04",
+        "DF-06",
+        "DF-07",
+        "DF-08",
+        "DF-09",
+        "DF-10",
+        "DF-11",
+        "DF-12",
+        "DF-13",
+        "DF-14",
+        "DF-15",
+        "DF-16",
+        "DF-17",
+        "DF-18",
+        "DF-19",
+        "DF-20",
+        "DF-22"
+      ],
+      "internal_terminal": [
+        "DF-05",
+        "DF-21"
+      ],
+      "active_parent_investigations": 0
+    }
+  },
+  "owner_held": {
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+    "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
+    "debts": [
+      {
+        "id": "OWNER_GATE_HELD_PUBLIC_DOCS",
+        "owner": "01_EMERGENTISM editorial program",
+        "question": "Which numbered-doctrine-spine specification is the current public-document owner, and what custody should the byte-identical duplicate retain?",
+        "close_when": "A dated owner ruling names the current artifact and either routes or explicitly retains the duplicate, with both resulting paths checked.",
+        "evidence": [
+          "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
+          "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md",
+          "09_TOOLS/01_SCRIPTS/coherence_profile.json"
+        ],
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md"
+      },
+      {
+        "id": "OWNER_GATE_OPEN_TOPOLOGY",
+        "owner": "01_EMERGENTISM editorial program",
+        "question": "Does the active framework-support 00_META lane remain a governed exception to the root prohibition on per-pillar 00_META directories, or must one owner rule change?",
+        "close_when": "A dated owner ruling reconciles the two topology statements and the losing statement is repaired without moving content by implication.",
+        "evidence": [
+          "00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md",
+          "08_FRAMEWORK_SUPPORT/00_META/README.md",
+          "09_TOOLS/01_SCRIPTS/coherence_profile.json"
+        ],
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md"
+      }
+    ]
+  },
+  "world_contact": {
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+    "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
+    "state": "OPEN",
+    "accepted_evidence_records": 0,
+    "open_requirements": [
+      "Independent observations with discriminating outcomes",
+      "Independent replication or external review filed as outcome custody"
+    ],
+    "boundary": "Internal checks, commits, receipts, and model agreement are not observations, replication, or external review.",
+    "transition_gate": {
+      "state": "FAIL_CLOSED_NO_EXTERNAL_EVIDENCE_VALIDATOR",
+      "required_fields": [
+        "claim_id",
+        "contract_id",
+        "frozen_protocol_hash",
+        "scope",
+        "independent_party_identity",
+        "independence_basis",
+        "discriminating_protocol",
+        "outcome",
+        "verbatim_custody",
+        "provenance",
+        "null_harm_deviation_custody"
+      ],
+      "inadmissible_inputs": [
+        "commits",
+        "gates",
+        "AI review",
+        "invitations",
+        "preregistrations",
+        "internal receipts",
+        "URLs without filed outcome custody",
+        "staged protocols"
+      ]
+    }
+  }
+}

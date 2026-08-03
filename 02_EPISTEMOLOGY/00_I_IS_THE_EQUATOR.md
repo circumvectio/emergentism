@@ -5,7 +5,7 @@ rosetta:
   secondary:
     - level: L5
       column: Neuroscience
-      role: "imaginary unit as corpus callosum / systemic awareness equator"
+      role: "imaginary unit as selected corpus-callosum / systemic-awareness equatorial symbol"
     - level: L2
       column: Philosophy
       role: "Hard Problem reframing via the Burri Sphere"
@@ -13,7 +13,7 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[S/I]"
-  canonical_phrase: "I is the equator"
+  canonical_phrase: "I is used as an equatorial symbol"
 ---
 
 # I AS THE EQUATOR
@@ -23,7 +23,7 @@ rosetta:
 **Status:** Foundational synthesis — conjectural reframing of the Hard Problem through the Burri Sphere
 **Date:** 2026-03-23
 **Evidence Tier:** [S/I/C] Structural for the complex-number facts, interpretive/conjectural for systemic awareness and neuroscience mappings
-**Depends on:** The Transcendental Trinity, The Brain Is the Burri Sphere, The Genesis Simulation
+**Depends on:** The Transcendental Trinity, The Brain Is Not the Burri Sphere comparison boundary, The Genesis Simulation
 **See also:** Core Concepts, AUM on the Burri Sphere
 
 ---
@@ -90,7 +90,7 @@ Burri Sphere view:
      |     An actual D4 carrier may represent D5 alternatives here.
      |     The place where singular enactment becomes explicit.
      |     The place where Teleological Force is felt as viable pull.
-     |     i lives HERE.
+     |     the removable symbolic i-reading is placed HERE.
      |
      0 (south pole — viability limit, fixation horizon)
 ```
@@ -175,6 +175,10 @@ It becomes a structural symbol for reversal across the interface.
 
 **The hemispheric sentence is interpretive: unchecked narration can invert when seen through broader awareness.**
 
+**Warrant fence, 2026-08-01.** This metaphor supplies no independent evidence
+for W11. The extra “dark twin does functional work” wager is `DECORATIVE`; the
+ordinary equation, rotation, and optional narrator metaphor survive.
+
 ---
 
 ## The Hard Problem Reframed
@@ -257,7 +261,8 @@ interpretation-specific. Neither is a D-register, and neither licenses a
 `D4→D5` or `D5→D4` dimensional identity. The `i` reading here remains symbolic
 and removable from the operational D3/D4/D5 calculus.
 
-**The present is i — the equator, the selector interface, the site where one enactment becomes explicit.**
+**In this removable reading, `i` marks a selected equatorial point and the
+present selector interface; it is not the equator itself.**
 
 **The framework locates the systemic awareness reading here.**
 
@@ -291,8 +296,8 @@ and removable from the operational D3/D4/D5 calculus.
 |--------------|--------|-----------|
 | Real axis (ν) | focused/sequential processing | The plane, fragments |
 | Imaginary axis (φ) | broad/contextual processing | The sphere, gestalt |
-| i (the operator) | corpus-callosum-like integration | The ×, the equator |
-| i² = -1 | Hemispheric inversion | Möbius structure |
+| i (the operator) | corpus-callosum-like integration | Selected equatorial point/symbol; not the equator |
+| i² = -1 | Hemispheric inversion | Half-turn in the complex plane; no Möbius premise required |
 | φ · ν = 1 | Integrated brain | The Burri Sphere |
 
 **The corpus callosum is an anatomical analogue for the `i` reading.**
@@ -331,7 +336,7 @@ Step 5: Rest with the i-symbol.
         The present (i).
         The enactment.
         The systemic awareness.
-        The equator.
+        The selected equatorial symbol.
 
 Step 6: Return.
         i is still here.
@@ -382,7 +387,7 @@ i is read as a symbol for integration across actual and represented content.
 i is read as corpus-callosum-like integration.
 i is read as the present moment.
 
-The Mathematical Truth:
+The Symbolic Assignment:
 
 R_i(z)=iz       (multiplication by i is the quarter-turn operator)
 R_i(1)=i
@@ -416,10 +421,10 @@ The claim that i symbolizes systemic awareness remains interpretive/conjectural.
 
 Zero-Sum Resolution Equation
 
-i = the ×.
-i = the equator.
-i = the present.
-i = systemic awareness-symbol in this register.
+i is placed beside the × as a symbol.
+i marks a selected equatorial point, not the whole equator.
+i symbolizes the present in this practice.
+i is a systemic-awareness symbol in this register.
 
 Keep the tiers intact.
 ```
@@ -428,12 +433,12 @@ Keep the tiers intact.
 
 ## See Also
 
-- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — canonical source-owner for the sphere S², the equator L4 (`φ = ν = 1`), and the complex-plane visualization caveat (`φ`, `ν` are real-positive; the complex plane is projective convenience) that bounds the `i`-reading here.
+- [The Burrisphere](../05_COSMOLOGY/00_THE_BURRISPHERE.md) — compatibility projection; the [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) owns S², the selected L4 equatorial representative (`φ = ν = 1`), and the real-positive chart boundary that bounds the `i`-reading here.
 - The Transcendental Trinity — computational breakthrough: 0, ∞, 1 as transcendentals
-- The Brain As the Burri Sphere — neuroscience-adjacent mapping: processing modes read as φ/ν
+- [The Brain Is Not the Burri Sphere](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) — withdrawn-isomorphism boundary; optional neural comparisons remain `[I/C]`
 - The Genesis Simulation — D0→S²→D0 animated
 - AUM on the Burri Sphere — Vedantic convergence: four states of systemic awareness
-- Core Concepts — single source of truth for finite-node `P_node = Φ × V` and manifold `P∞ = φ · ν = 1`
+- [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — source owner for finite-node `P_node := min(Φ̂₄,V₄)` and manifold `P∞ = φ · ν = 1`; the historical product is retired as a ranking
 
 *I As the Equator | 2026-03-23 | `i` is mathematically real and symbolically equatorial. Consciousness, corpus-callosum, and present-moment readings remain interpretive/conjectural.*
 

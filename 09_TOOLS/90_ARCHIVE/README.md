@@ -32,6 +32,32 @@ successors or port with a dated migration receipt.
 
 ## Contents
 
+### `neuter_broken_archive_links_2026_08_02/`
+
+**Source location (retired from active use on 2026-08-02):**
+`09_TOOLS/01_SCRIPTS/neuter_broken_archive_links.py`
+
+**What:** an archive-link mutator that only targeted the absent legacy roots
+`08_ARCHIVE` and `EMERGENTISM_ORG/11_UPLINK/90_ARCHIVE`. In the current
+corpus it would inspect no files, print a completion banner, and exit zero.
+
+**Reason retained here:** the byte-identical source is preserved with its
+sha256 and a dated custody note. It is not a current validator or repair tool;
+any future successor requires a separately scoped, dry-run-safe review.
+
+### `scripts_legacy_convenience_copy_2026_05_04/run_backbone_tests.py`
+
+**Source location (retired from active use on 2026-08-01):**
+`09_TOOLS/01_SCRIPTS/run_backbone_tests.py`
+
+**What:** a legacy runner aimed at `02_ORGANISM/00_BACKBONE`, a path that is
+absent from this repository. It skipped every named test, reported `0 passed,
+0 failed, 0 total`, printed `ALL TESTS PASSED`, and exited zero.
+
+**Reason retained here:** the archived copy was already byte-identical to the
+active duplicate. The misleading active copy was removed; this copy preserves
+the provenance and must not be used as a current gate.
+
 ### `bridge_scripts_2026_04_17/`
 
 **Source location (archived from)**: `05_TOOLS/90_ARCHIVE/bridge_scripts/`

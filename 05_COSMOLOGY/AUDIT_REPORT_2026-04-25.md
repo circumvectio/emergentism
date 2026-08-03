@@ -5,8 +5,10 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[Discipline]"
+  register: "[B]"
   canonical_phrase: "05_COSMOLOGY — Logic, Coherence, and Consistency Audit Report"
+status: "K3 TOMBSTONE — superseded 2026-05-31; provenance only, do not cite as live state"
+evidence_tier: "[B] provenance only"
 ---
 
 > **[K3 TOMBSTONE — superseded 2026-05-31]** Pre-restructuring audit snapshot, retained for provenance. **Do NOT cite as live state**; the live tree was repaired in the 2026-05 restructure. Kept in place under K3 (archive-first, not deleted).

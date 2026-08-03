@@ -64,9 +64,14 @@ The scaffold names exactly five candidate positive-freedom crossings:
 ```
 
 This count is selected `[I]`, not forced by geometry or established as nature's
-complete census. Each crossing owes:
+complete census. `μ₀` is an origin aperture: `PositiveFreedom(D0)` is empty, so
+it owes no saturated lower positive register. It instead owes declared D0/D1
+types, a reproducible distinction discriminator, quotient/recovery to the D0
+singleton, reduction status, prediction, and kill.
 
-1. a system boundary and saturated lower register;
+Each of the saturation candidates `μ₁`–`μ₄` owes:
+
+1. a system boundary and frozen lower register;
 2. a measured saturation statistic and threshold;
 3. a newly discriminable effective freedom;
 4. recovery of lower-register behavior;
@@ -150,10 +155,12 @@ is a projective point in the named extended context.
 
 At the D4/D5 seam, `V₄` names D4 actual power, `Φ₅` names D5 possible power,
 and `Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate. The node model
-`P_node=Φ̂₄V₄`, publicly `ΦV`, is the selected normalized product member of a
-wider monotone conjunctive family. Its transfer to a real system is conjectural
-and must compete with minimum, harmonic, Cobb–Douglas, and other suitable
-models. D5 power is modal; it has no independent causal arrow.
+`P_node:=min(Φ̂₄,V₄)` is the selected normalized AND-class score over
+ordinal factors inside a wider monotone conjunctive family. Its transfer to a
+real system is conjectural and must remain revisable against suitable rivals.
+The historical product `Φ̂₄V₄`, publicly `ΦV`, is retired as a ranking;
+it cannot order or compare nodes. D5 power is modal; it has no independent
+causal arrow.
 
 ## 8. Value is not derived by the ladder
 

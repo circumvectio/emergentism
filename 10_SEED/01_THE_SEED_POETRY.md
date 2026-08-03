@@ -9,7 +9,7 @@ date: 2026-07-20
 
 The ground permits a distinction.
 Distinctions compose.
-Configurations change and sometimes persist.
+A configured state prices the answers a declared measurement may give.
 Persistent actuality grows bodies, means, acts, and records.
 From actuality, finite minds imagine more than one next world.
 

@@ -11,7 +11,7 @@ rosetta:
 **Lane:** Rosetta companion — kill-criterion engagement
 **Status:** Research note — comparative philosophy. Honest reporting; no forced fits.
 **Anchored to:** [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis (Indo-European/Mediterranean 5-column convergence), [`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) (Sufi/Sefirot/Confucian), [historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) (genealogy only)
-**OQ-CC-3 commitment:** packet 189 §6 — "explicit future packet to sweep East Asian / Sub-Saharan African / Indigenous American / Polynesian initiatory systems before 'universal' can be claimed"
+**OQ-CC-3 commitment:** `189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25.md` §6 — "explicit future packet to sweep East Asian / Sub-Saharan African / Indigenous American / Polynesian initiatory systems before 'universal' can be claimed"
 **Evidence tier:** [I] throughout. Every mapping below is structural analogy, not derivation. **Kill criterion in force:** if a tradition does not have a 7-stage structure, this document REPORTS that, it does not invent one.
 
 ---
@@ -244,7 +244,7 @@ To deepen this sweep:
 - [`00_THE_MASTER_ROSETTA.md`](00_THE_MASTER_ROSETTA.md) §V-bis (Indo-European/Mediterranean convergence)
 - [`00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md`](00_THREE_NON_WESTERN_TRADITIONS_AND_THE_L_LEVELS.md) (Sufi, Sefirot, Confucian)
 - [Historical deep-rumination note](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/04_DEEP_RUMINATION_2026_04_25.md) (genealogy only)
-- Packet 189 §6 — OQ-CC-3 future-sweep commitment
+- `189_CROSS_CULTURAL_CORROBORATION_OF_L1_L7_ARCHETYPE_2026_04_25.md` §6 — OQ-CC-3 future-sweep commitment
 - Daśabhūmika Sūtra (Mahāyāna canonical source on 10 bhūmis)
 - *Daxue* 大學 (Confucian 8-step source)
 - Marcel Griaule, *Conversations with Ogotemmêli* (Dogon, 1948); Walter van Beek, "Dogon Restudied" (1991, critical reassessment)

@@ -2,6 +2,9 @@
 """
 E2 v3 -- depth-vs-depth mutual modeling. The remaining live route for R10b.
 
+KSC-02: every product expression in this experiment is a preregistered
+candidate or tested rival. It does not select the current node ranking.
+
 THE OPEN FORK (from E2_REFLEXIVE_RESULTS.md sec.6, pre-registered there):
 V1/V2 played me against a FIXED opponent population, and against fixed others
 planning depth Phi SATURATES. So E2 supported R10a (the multiplicative

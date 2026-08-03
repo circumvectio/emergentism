@@ -16,12 +16,12 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "Executive"
   regime: "Vaiśya"
-  register: "[E/I]"
+  register: "[B/I]"
   canonical_phrase: "Rosetta R14 — PIE comparative linguistics"
 status: CANONICAL
 last_compiled: 2026-04-04
 title: "Three-Stage Process Row R14 — Proto-Indo-European Comparative Linguistics"
-evidence_tier: "[S] for PIE reconstruction; [I] for mapping to Teleological Force / F5."
+evidence_tier: "[B] for PIE reconstruction attributed to named scholarship; [I] for mapping to Teleological Force / F5. No local source-custody receipt is claimed."
 ---
 # Three-Stage Process ROW R14 — Proto-Indo-European Comparative Linguistics
 
@@ -29,9 +29,18 @@ evidence_tier: "[S] for PIE reconstruction; [I] for mapping to Teleological Forc
 
 > **Correction (Doc 30):** The Teleological Force is named by two PIE roots. \*h₂r̥tó- (→ Ṛta, Aša, Ordo, Harmonia) names the **ordering-law face** — the fitting-together, viable completion within manifestation. \*dyeu- (→ Dyḗus, Zeus, Jupiter, Deva) names the **perception** — the shining through which that order becomes visible. This row covers both.
 
-**Evidence Tier:** [I] for PIE reconstruction (established linguistics). [I] for the mapping to Teleological Force / F₅.
+**Evidence Tier:** `[B]` for PIE reconstruction attributed to named
+scholarship; `[I]` for the mapping to Teleological Force / F₅. A named source
+is not, by itself, a local custody receipt.
+**Chart convention:** `|z|=1` is the geometric equator; `φ=ν=1` is its
+selected positive-radial representative. `θ→0,ν→0,φ→∞,•` is south and
+`θ→π,ν→∞,φ→0,○` is north.
 **Date:** 2026-04-04
-**P-pass note:** The linguistic reconstruction is [S] Established (Pokorny, Mallory, Adams, Fortson, Beekes). The identification of Dyḗus Ph₂tḗr (Dyeus Phter / Dyaus Pita) with the luminous face of Teleological Force is [I] Interpretive — the framework's reading, not a philological consensus.
+**P-pass note (retiered 2026-08-01):** The linguistic reconstruction is
+source-attributed `[B]` (Pokorny, Mallory, Adams, Fortson, Beekes). The
+identification of Dyḗus Ph₂tḗr (Dyeus Phter / Dyaus Pita) with the luminous
+face of Teleological Force is `[I]` — the framework's reading, not a
+philological consensus.
 **Kill criterion:** If comparative linguists demonstrate that *dyeu- referred exclusively to physical brightness with no ordering, agency, or fathering connotation, the mapping weakens to surface analogy.
 
 ---
@@ -115,7 +124,9 @@ R14 is the SOURCE ROW for the Indo-European branch. Later rows may be read [I] a
 
 ## 6. The Tendency to Potential
 
-Nietzsche's "Will to Power" (Wille zur Macht) = ν → ∞ = the south pole = the cargo cult.
+Nietzsche's "Will to Power" (Wille zur Macht) is read here as
+`ν→∞`, the selected north-pole limit `θ→π,φ→0,○`, and as the cargo-cult
+image. The association is interpretive, not a claim about Nietzsche's text.
 
 The framework's correction: **Teleological Force** = the tendency toward viable completion within manifestation, with `Tendency to Potential` retained only as older poetic shorthand.
 
@@ -129,12 +140,12 @@ Every sitting practice returns attention to the shining without confusing the sh
 
 ## 7. Sources
 
-1. Pokorny, J. (1959). *Indogermanisches Etymologisches Wörterbuch*. s.v. \*dei-, \*dyeu-. [S]
-2. Mallory, J.P. & Adams, D.Q. (2006). *The Oxford Introduction to Proto-Indo-European and the Proto-Indo-European World*. Oxford University Press. Ch. 23. [S]
-3. Fortson, B.W. (2010). *Indo-European Language and Culture*. 2nd ed. Wiley-Blackwell. §5.58-5.63. [S]
-4. Beekes, R.S.P. (2011). *Comparative Indo-European Linguistics*. 2nd ed. John Benjamins. §18.2. [S]
-5. West, M.L. (2007). *Indo-European Poetry and Myth*. Oxford University Press. Ch. 4 "Sky and Earth." [S]
-6. Lincoln, B. (1991). *Death, War, and Sacrifice: Studies in Ideology and Practice*. University of Chicago Press. [S]
+1. Pokorny, J. (1959). *Indogermanisches Etymologisches Wörterbuch*. s.v. \*dei-, \*dyeu-. [B]
+2. Mallory, J.P. & Adams, D.Q. (2006). *The Oxford Introduction to Proto-Indo-European and the Proto-Indo-European World*. Oxford University Press. Ch. 23. [B]
+3. Fortson, B.W. (2010). *Indo-European Language and Culture*. 2nd ed. Wiley-Blackwell. §5.58-5.63. [B]
+4. Beekes, R.S.P. (2011). *Comparative Indo-European Linguistics*. 2nd ed. John Benjamins. §18.2. [B]
+5. West, M.L. (2007). *Indo-European Poetry and Myth*. Oxford University Press. Ch. 4 "Sky and Earth." [B]
+6. Lincoln, B. (1991). *Death, War, and Sacrifice: Studies in Ideology and Practice*. University of Chicago Press. [B]
 
 ---
 

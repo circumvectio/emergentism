@@ -1,7 +1,7 @@
 ---
-title: "VMOSK-A — Emergentism worldview front door"
+title: "Front-door packet — Emergentism worldview"
 date: 2026-07-28
-status: "SECOND-ROUND EXECUTION PACKET — public projection only; creates no doctrine"
+status: "ACTIVE EXECUTION PACKET — public projection only; dated filename retained as provenance; creates no doctrine"
 evidence_tier: "[B] repository and release gates; [I] positioning, information architecture, and reader hypotheses"
 owner: "01_EMERGENTISM/12_PUBLIC_SITE"
 supersedes: "2026_07_28_VMOSK_A_FINITY_PUBLIC_RELEASE.md"
@@ -12,7 +12,11 @@ source_owners:
   - "00_META/ADEQUACY_DOCKETS.yaml"
 ---
 
-# VMOSK-A — Emergentism worldview front door
+# Front-door packet — Emergentism worldview
+
+> **Provenance boundary.** The dated filename preserves the packet's former
+> external-grammar label. No external project grammar governs Emergentism; this
+> packet is only an execution contract for the downstream public projection.
 
 This packet governs the hierarchy, language, and release tests of
 `12_PUBLIC_SITE/`. It cannot create doctrine, increase a claim's evidence tier,

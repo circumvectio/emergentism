@@ -5,7 +5,7 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "God"
   regime: "Vaiśya"
-  register: "[A]"
+  register: "[S]"
   canonical_phrase: "The Lens-Not-Law Rule"
 ---
 

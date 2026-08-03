@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check current claim cards, active book sources, and public projections."""
+"""Check claim cards, active book sources, and current/provisional projections."""
 
 from __future__ import annotations
 
@@ -31,7 +31,11 @@ def _card_and_book_paths() -> list[Path]:
 
 def _public_paths() -> list[Path]:
     manifest = json.loads(PUBLIC_MANIFEST.read_text(encoding="utf-8"))
-    return [ROOT / "12_PUBLIC_SITE" / rel for rel in manifest.get("currentSurfaces", [])]
+    current = manifest.get("currentSurfaces", [])
+    provisional = manifest.get("declaredProvisional", {}).get("routes", [])
+    if not isinstance(current, list) or not isinstance(provisional, list):
+        raise ValueError("public lifecycle manifests must contain path lists")
+    return [ROOT / "12_PUBLIC_SITE" / rel for rel in current + provisional]
 
 
 def check(scope: str) -> list[str]:

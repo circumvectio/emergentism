@@ -16,6 +16,15 @@ owner: "01_EMERGENTISM — historical experiment packet"
 
 The best held-out model was `payoff_plus_fairness`, not `payoff_only` and not `multiplicative_proxy`.
 
+## Proposal Lineage
+
+This executed verdict closes the empirical-test status of the proposal chain:
+
+- [26 — behavior is multiplicative, not additive](../../20_SCOPE/26_BEHAVIOR_IS_MULTIPLICATIVE_NOT_ADDITIVE_BRIEF.md)
+- [27 — ultimatum-game study design](../../20_SCOPE/27_ULTIMATUM_GAME_STUDY_DESIGN.md)
+- [28 — dataset selection and variable map](../../20_SCOPE/28_ULTIMATUM_DATASET_SELECTION_AND_VARIABLE_MAP.md)
+- [29 — ultimatum preregistration skeleton](../../20_SCOPE/29_ULTIMATUM_PREREGISTRATION_SKELETON.md)
+
 ## Metrics
 
 Repeated 5-fold stratified cross-validation, 50 repeats, seed `20260702`, `n = 93` annotated games:

@@ -126,7 +126,7 @@ It is **not yet** the canonical operator of record because `U_LNF(x)` and the fu
 | Equator at `φ = ν = 1` | Invariant | The chart map sends `u = 0` to the same equatorial point. |
 | Pole structure (`φ → 0` / `∞`, `ν → ∞` / `0`) | Invariant | The poles remain the asymptotic limits under the map. |
 | `φ + ν = 2/sin(θ) = 2 cosh(u)` | Invariant | Exact coordinate identity. |
-| Formula hierarchy (`Zero-Sum Resolution Equation` canonical, `⊙ = •^○` non-canonical) | Invariant | Changing charts does not change constitutional priority. |
+| Formula hierarchy (`Zero-Sum Resolution Equation` canonical; former Titan-exponent syntax retired) | Invariant | Changing charts cannot create arithmetic on the opaque Titan frame. |
 | "Discrete, structured spectrum exists for the sphere problem" | Invariant | Both the weighted sphere formulation and its chart representation define the same curved-space spectral object. |
 
 ---

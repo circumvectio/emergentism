@@ -10,7 +10,10 @@
 ```
 01_EMERGENTISM/
 ├── 00_CONTROL/           ← This directory (control plane)
+├── 00_ESTABLISHED/       ← Manifest of what survives an outside check
+├── 00_HANDOFF/           ← Dated session handoffs and release receipts
 ├── 00_META/              ← Meta-doctrine and canonical outlines
+├── 00_WORK_IN_PROGRESS/  ← Manifest of what is open, and what it awaits
 ├── 01_TELEOLOGY/         ← Purpose and directedness
 ├── 02_EPISTEMOLOGY/      ← Knowledge frameworks
 ├── 03_METHODOLOGY/       ← Method and practice

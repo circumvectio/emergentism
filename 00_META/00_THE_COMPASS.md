@@ -163,13 +163,16 @@ A model that cannot be changed by contrary receipts is a creed, not a compass.
 
 ## The Justice bearing
 
-For a declared durable-potential measure
+For a separately declared and defended cardinal durable-potential measure
+`q_x(t)`
 
 \[
-W_x(T)=\int_0^T P_x(t)dt,
+W_x(T)=\int_0^T q_x(t)dt,
 \]
 
 use modeled deltas prospectively and receipted deltas retrospectively.
+The selected ordinal `P_node` is compared before/after and bearer by bearer; it
+is not integrated or substituted for `q_x`.
 
 ```text
 moral:    i → H; H actually rises and i is not destroyed under Justice

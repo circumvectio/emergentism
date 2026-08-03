@@ -15,29 +15,39 @@ rosetta:
   operator: "Kṛṣṇa ◇"
   tier: "Executive"
   regime: "Vaiśya"
-  register: "[E/I]"
+  register: "[B/I]"
   canonical_phrase: "Rosetta R10 — Greek philology"
 title: "Rosetta R10: The Greek Philological Proof"
 status: "ACTIVE — philological convergence note"
-evidence_tier: "[S] for Greek vocabulary; [I] for Burri Sphere mapping."
+evidence_tier: "[B] for Greek vocabulary attributed to named lexica; [I] for Burri Sphere mapping. No local source-custody receipt is claimed."
 ---
 
 # ROSETTA R10: The Greek Philological Proof
 ## The Complete Burri Sphere in Ancient Vocabulary
 
-**Evidence Tier:** [I] for the Greek vocabulary (attested in standard lexica) | [I] Interpretive for the Burri Sphere mapping
+**Evidence Tier:** `[B]` for Greek vocabulary attributed to named lexica |
+`[I]` for the Burri Sphere mapping. Naming a lexicon is not a local
+source-custody receipt.
 
-> **P-pass note (2026-03-24).** Previously carried no evidence tier tag. The Greek terms are established philological fact [S]; the structural identification with Burri coordinates is interpretive [I]. The title "Proof" is rhetorical, not formal.
+**Chart convention:** `|z|=1` is the geometric equator; `φ=ν=1` is its
+selected positive-radial representative. `θ→0,ν→0,φ→∞,•` is south and
+`θ→π,ν→∞,φ→0,○` is north.
+
+> **P-pass note (2026-03-24; retiered 2026-08-01).** The Greek terms
+> attributed to named lexica are `[B]`; identification with Burri coordinates
+> is `[I]`. “Proof” is rhetorical.
 
 ---
 
 ## The Discovery
 
-Ancient Greek contains the entire Burri Sphere framework encoded in its philosophical vocabulary. Not metaphorically. **Structurally.** The Greeks felt the geometry and named every coordinate.
+Ancient Greek supplies vocabulary that this row maps interpretively onto the
+Burri Sphere. It does not establish that Greek speakers encoded or named the
+framework's coordinates.
 
 ---
 
-## THE φ-AXIS (Coherence / Vertical)
+## THE φ-ASPECT (Reciprocal Coherence Reading)
 
 | Greek Term | Meaning | Burri Mapping |
 |------------|---------|---------------|
@@ -60,7 +70,7 @@ The Greeks named truth as a **reduction operation.**
 
 ---
 
-## THE ν-AXIS (Viability / Horizontal)
+## THE ν-ASPECT (Positive-Radial Viability Reading)
 
 | Greek Term | Meaning | Burri Mapping |
 |------------|---------|---------------|
@@ -75,7 +85,7 @@ The Greeks named truth as a **reduction operation.**
 | Greek Term | Meaning | Burri Mapping |
 |------------|---------|---------------|
 | **Arete** (ἀρετή) | Excellence, virtue | The equatorial condition itself |
-| **Eudaimonia** (εὐδαιμονία) | Flourishing | P∞ = φ · ν = 1 **lived** |
+| **Eudaimonia** (εὐδαιμονία) | Flourishing | `[I]` read at `B=1`, `φ=ν=1` |
 | **Sophrosyne** (σωφροσύνη) | Temperance, sound-mindedness | **B = 1** — maximum balance |
 | **Kalos kagathos** (καλὸς κἀγαθός) | Beautiful AND good | Anmut (φ) **AND** Demut (ν) = Erhaben |
 | **Phronesis** (φρόνησις) | Practical wisdom | Equatorial action, choosing rightly |
@@ -85,7 +95,9 @@ The Greeks named truth as a **reduction operation.**
 
 Sophrosyne is **B = 1** — the maximum balance condition.
 
-Not moderation in the modern sense. Not "a little of this, a little of that." Sophrosyne is the **optimization of the product.** The Greek virtue is geometric, not arithmetic.
+Not moderation in the modern sense. In this `[I]` reading Sophrosyne maps to
+maximum `B` at the equator. It does not optimize `φν`, which is identically
+1 at every latitude of the open reciprocal chart.
 
 ### Kalos Kagathos: The Sublime
 
@@ -95,7 +107,7 @@ This is **Erhaben.** The equator as lived integration of coherence (beauty) and 
 
 ---
 
-## THE SOUTH POLE (ν > 1)
+## THE NORTHWARD SIDE (ν > 1)
 
 | Greek Term | Meaning | Burri Mapping |
 |------------|---------|---------------|
@@ -112,9 +124,13 @@ This is **Erhaben.** The equator as lived integration of coherence (beauty) and 
 
 ### Nemesis is Not Revenge
 
-Nemesis is not moral retribution. Nemesis is **structural correction.**
+Nemesis is not moral retribution. Nemesis is interpreted here as correction
+toward balance.
 
-When ν > 1 (Hubris), Nemesis restores P∞ = φ · ν = 1. Nemesis **is** Ammit. Nemesis **is** the south pole consuming itself. Nemesis is the sphere's conservation law in action.
+When `ν>1` (Hubris), the selected chart moves northward toward
+`θ→π,ν→∞,φ→0,○`. Nemesis is read as a turn back toward the equator, not as
+restoration of `P∞=φν=1`: that reciprocal identity already holds at every
+latitude.
 
 The Greeks understood Nemesis as **necessary, not cruel.** As **geometric, not vindictive.**
 
@@ -161,35 +177,37 @@ Kairos is the **Bindu** — the present as equator experienced.
 | German | Etymology | Anmut | Demut | Mut Er-haben |
 | **Greek** | **Philosophy** | **Logos/Aletheia** | **Thumos/Techne** | **Arete/Sophrosyne** |
 
-**Four independent encodings.** Four millennia apart. Same geometry.
-
-The probability of coincidence: **statistically negligible.**
+**Four interpretive renderings.** They span different periods and traditions,
+but this table supplies no sampling frame, base rates, or independence test.
+It therefore makes no probability-of-coincidence claim. “Same geometry” means
+the framework can render all four through its selected chart, not that four
+independent observations statistically confirm the chart.
 
 ---
 
 ## THE COMPLETE GREEK MAPPING
 
 ```
-φ-AXIS (Coherence)
+φ-ASPECT (reciprocal coherence reading)
   Logos      = proportion, the Word = φ itself
   Aletheia   = un-forgetting = φ = 1 recognized
   Episteme   = knowledge grounded = φ stable
   Nous       = high-priority mind = Turīya (witness)
 
-ν-AXIS (Viability)
+ν-ASPECT (positive-radial viability reading)
   Thumos     = spirit, drive = ν as life force
   Techne     = craft, skill = ν applied
   Dynamis    = power, potential = ν as capacity
 
 EQUATOR (φ = ν = 1)
   Arete      = excellence = the equatorial condition
-  Eudaimonia = flourishing = φ·ν = 1 lived
+  Eudaimonia = flourishing = [I] B=1 at φ=ν=1
   Sophrosyne = temperance = B = 1 (max balance)
-  Kalos kag. = beautiful AND good = both axes held
+  Kalos kag. = beautiful AND good = both reciprocal aspects held
   Phronesis  = practical wisdom = equatorial action
   Ataraxia   = undisturbedness = Δφ=0, Δν=0 = joy
 
-SOUTH POLE (ν > 1)
+NORTHWARD SIDE (ν > 1)
   Hubris     = excess = ν > 1 (cargo cult)
   Pleonexia  = greed = ν → ∞
 
@@ -211,18 +229,18 @@ TIME
 ## THE GREEKS HAD IT ALL
 
 They had:
-- Both axes named separately (φ and ν)
+- Vocabulary mapped to both reciprocal aspects (`φ=1/ν` and `ν=|z|`)
 - The equator as virtue (Arete, Sophrosyne)
-- The south pole as error (Hubris)
+- The northward side as the selected error image (Hubris)
 - The correction as geometry (Nemesis)
 - The practice as reduction (Metanoia, Aletheia)
 - Time as torus (Chronos, Kairos, Aion)
 
 They just didn't have the equation.
 
-**P∞ = φ · ν = 1** would have been recognizable to them instantly. The constraint was implicit in every term they used. They felt it. They lived it. They named every coordinate.
-
-The equation completes what they started.
+The framework can organize these terms with `P∞=φ·ν=1`. That organization is
+an `[I]` translation proposed here, not evidence that the equation was implicit
+in Greek vocabulary or that the equation completes Greek philology.
 
 ---
 

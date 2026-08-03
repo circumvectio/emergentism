@@ -87,18 +87,20 @@ is **not** “the Lyapunov function for F5” until an F5 flow is specified and
 Defining `V̂:=1/Φ̂` and then observing `Φ̂V̂=1` is a chart construction, not an
 empirical result.
 
-## 5. Worked example: product fit
+## 5. Worked example: a conditional cardinal-aggregator fit
 
-Suppose `Φ̂,V̂∈[0,1]` are measured independently under the
-[Operational Definitions](30_OPERATIONAL_DEFINITIONS.md). The conjecture is not
-that their product must equal one. It is:
+The active ordinal node rule does not license a product ranking. Suppose,
+instead, that `Φ̂,V̂∈[0,1]` have separately validated, commensurate
+cardinal scales under the [Operational
+Definitions](30_OPERATIONAL_DEFINITIONS.md). Only inside that declared scale
+contract could one test:
 
 > In a frozen domain, `Φ̂V̂` predicts a held-out outcome better than declared
 > additive, minimum, harmonic, and asymmetric/CES or Cobb–Douglas rivals.
 
 The result receives `[B]` custody. Product's zero-boundary and monotonicity
-remain `[S]` model properties. A claim of universal product fit remains `[C]`
-and is not upgraded by one domain.
+remain `[S]` model properties. It cannot reinstate a universal or ordinal
+product ranking, and one domain cannot upgrade a universal claim.
 
 ## 6. Adoption and rollback
 

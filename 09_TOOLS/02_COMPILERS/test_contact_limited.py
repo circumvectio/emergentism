@@ -1,0 +1,1252 @@
+#!/usr/bin/env python3
+"""Mutation controls for the contact-limited completion ratchet."""
+
+from __future__ import annotations
+
+import contextlib
+import copy
+import importlib.util
+import io
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+from unittest import mock
+
+
+ROOT = Path(__file__).resolve().parents[2]
+CHECKER_PATH = ROOT / "09_TOOLS/01_SCRIPTS/check_contact_limited.py"
+SPEC = importlib.util.spec_from_file_location("check_contact_limited", CHECKER_PATH)
+assert SPEC and SPEC.loader
+CHECKER = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(CHECKER)
+PREDEPLOY_PATH = ROOT / "12_PUBLIC_SITE/predeploy_check.py"
+PREDEPLOY_SPEC = importlib.util.spec_from_file_location(
+    "predeploy_check_for_contact_tests", PREDEPLOY_PATH
+)
+assert PREDEPLOY_SPEC and PREDEPLOY_SPEC.loader
+PREDEPLOY = importlib.util.module_from_spec(PREDEPLOY_SPEC)
+PREDEPLOY_SPEC.loader.exec_module(PREDEPLOY)
+
+
+class ContactLimitedRatchetTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.state = CHECKER.load_json(ROOT / CHECKER.STATE_PATH)
+        cls.computed = {
+            "compute_receipt_namespace": CHECKER.compute_receipt_namespace(ROOT),
+            "compute_public_lifecycle": CHECKER.compute_public_lifecycle(ROOT),
+            "compute_claim_disposition": CHECKER.compute_claim_disposition(ROOT),
+            "compute_owner_debts": CHECKER.compute_owner_debts(ROOT),
+            "compute_world_contact": CHECKER.compute_world_contact(ROOT),
+        }
+
+    def validate_fast(self, state, **overrides):
+        values = {name: copy.deepcopy(value) for name, value in self.computed.items()}
+        values.update(overrides)
+        with contextlib.ExitStack() as stack:
+            for name, value in values.items():
+                stack.enter_context(mock.patch.object(CHECKER, name, return_value=value))
+            return CHECKER.validate_state(state, ROOT)
+
+    def assert_invalid(self, state, **overrides) -> None:
+        with self.assertRaises(CHECKER.ContractError):
+            self.validate_fast(state, **overrides)
+
+    def init_git_repo(self, repo: Path) -> None:
+        subprocess.run(["git", "init", "-q", str(repo)], check=True)
+        subprocess.run(
+            ["git", "-C", str(repo), "config", "user.email", "ratchet@example.invalid"],
+            check=True,
+        )
+        subprocess.run(
+            ["git", "-C", str(repo), "config", "user.name", "Ratchet Test"],
+            check=True,
+        )
+
+    def commit_all(self, repo: Path, message: str) -> None:
+        subprocess.run(["git", "-C", str(repo), "add", "-A"], check=True)
+        # This disposable fixture needs Git history, not the workstation's
+        # corpus pre-commit hook (which would recursively run the outer gate).
+        subprocess.run(
+            ["git", "-C", str(repo), "commit", "--no-verify", "-qm", message],
+            check=True,
+        )
+
+    def create_receipt_lanes(self, repo: Path) -> None:
+        for relative_lane in CHECKER.RECEIPT_LANES:
+            (repo / relative_lane).mkdir(parents=True, exist_ok=True)
+
+    def receipt_bytes_for_state(self, state) -> bytes:
+        digest = CHECKER.canonical_state_digest(state)
+        return (
+            f"contact_limited_state_canonical_sha256: {digest}\n"
+        ).encode("utf-8")
+
+    def compute_public_with_vercel(self, vercel):
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.VERCEL_CONFIG:
+                return vercel
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            return CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_live_contract_passes_with_exact_scope(self) -> None:
+        report = CHECKER.check(ROOT)
+        self.assertEqual(
+            report["receipt_namespace"]["target_files"],
+            self.state["receipt_namespace"]["target_files"],
+        )
+        self.assertEqual(report["receipt_namespace"]["bare_unsafe_reused_prefixes"], 97)
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 398)
+        self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
+        self.assertEqual(
+            report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
+        )
+        self.assertEqual(report["claim_disposition"]["lifecycle_rows"], 48)
+        self.assertEqual(report["claim_disposition"]["current_rows"], 26)
+        self.assertEqual(report["claim_disposition"]["direct_contact"], 15)
+        self.assertEqual(report["claim_disposition"]["merged_contact"], 4)
+        self.assertEqual(report["claim_disposition"]["internal"], 7)
+        self.assertEqual(report["claim_disposition"]["external_contracts"], 18)
+        self.assertEqual(report["claim_disposition"]["ambiguous"], 0)
+        self.assertEqual(report["owner_held"], 2)
+        self.assertEqual(report["world_contact"]["state"], "OPEN")
+
+    def test_public_artifact_disappearance_fails(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["counts"]["total"] -= 1
+        public["counts"]["current"] -= 1
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_reopening_matcher_conformance_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["public_lifecycle"]["deploy_ignore_contract"][
+            "matcher_conformance"
+        ]["state"] = "OPEN_INTERNAL_DRIFT"
+        self.assert_invalid(state)
+
+    def test_nonzero_unclassified_rebaseline_still_fails_closure(self) -> None:
+        state = copy.deepcopy(self.state)
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["counts"]["unclassified"] = 1
+        public["unclassified"] = ["synthetic-unclassified.html"]
+        state["public_lifecycle"]["counts"]["unclassified"] = 1
+        state["public_lifecycle"]["unclassified"] = [
+            "synthetic-unclassified.html"
+        ]
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "requires zero unclassified" in error
+                for error in raised.exception.errors
+            )
+        )
+
+    def test_double_claim_classification_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["claim_disposition"]["current_scope"]["internal_terminal"].append("W1")
+        self.assert_invalid(state)
+
+    def test_stale_count_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["public_lifecycle"]["counts"]["total"] += 1
+        self.assert_invalid(state)
+
+    def test_old_section_receipt_cannot_authorize_new_snapshot(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["public_lifecycle"]["receipt_ref"] = (
+            "11_UPLINK/50_AUDITS_AND_EXECUTIONS/235_INTERNAL_COMPLETION_HARDENING_AND_RECURSIVE_ROADMAP_2026_08_01.md"
+        )
+        self.assert_invalid(state)
+
+    def test_synthetic_artifact_rebaseline_needs_new_receipt_digest(self) -> None:
+        state = copy.deepcopy(self.state)
+        public_state = state["public_lifecycle"]
+        public_state["counts"]["total"] += 1
+        public_state["counts"]["unclassified"] += 1
+        public_state["unclassified"].append("synthetic-contact-ratchet.html")
+        public_state["deploy_ignore_contract"]["present_html"] += 1
+        public_state["deploy_ignore_contract"]["deployable_html"] += 1
+
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["counts"]["total"] += 1
+        public["counts"]["unclassified"] += 1
+        public["unclassified"].append("synthetic-contact-ratchet.html")
+        public["ignore_counts"]["present_html"] += 1
+        public["ignore_counts"]["deployable_html"] += 1
+        self.assert_invalid(state, compute_public_lifecycle=public)
+
+    def test_unchanged_committed_snapshot_receipt_passes_binding(self) -> None:
+        receipt_ref = self.state["receipt_namespace"]["receipt_ref"]
+        receipt_bytes = (ROOT / receipt_ref).read_bytes()
+        self.assertEqual(
+            CHECKER.snapshot_binding_errors(self.state, receipt_bytes, receipt_bytes), []
+        )
+
+    def test_same_committed_receipt_digest_rewrite_fails(self) -> None:
+        original = (
+            ROOT / self.state["receipt_namespace"]["receipt_ref"]
+        ).read_bytes()
+        mutated = copy.deepcopy(self.state)
+        mutated["public_lifecycle"]["counts"]["total"] += 1
+        new_digest = CHECKER.canonical_state_digest(mutated)
+        rewritten = CHECKER.STATE_DIGEST_LINE.sub(
+            f"contact_limited_state_canonical_sha256: {new_digest}",
+            original.decode("utf-8"),
+        ).encode("utf-8")
+        errors = CHECKER.snapshot_binding_errors(mutated, rewritten, original)
+        self.assertFalse(any("digest mismatch" in error for error in errors))
+        self.assertTrue(any("committed HEAD bytes" in error for error in errors))
+
+    def test_new_uncommitted_receipt_can_bind_next_snapshot(self) -> None:
+        original = (
+            ROOT / self.state["receipt_namespace"]["receipt_ref"]
+        ).read_bytes()
+        mutated = copy.deepcopy(self.state)
+        mutated["public_lifecycle"]["counts"]["total"] += 1
+        new_digest = CHECKER.canonical_state_digest(mutated)
+        new_receipt = CHECKER.STATE_DIGEST_LINE.sub(
+            f"contact_limited_state_canonical_sha256: {new_digest}",
+            original.decode("utf-8"),
+        ).encode("utf-8")
+        self.assertEqual(
+            CHECKER.snapshot_binding_errors(mutated, new_receipt, None), []
+        )
+
+    def test_git_custody_distinguishes_committed_and_new_receipt_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            receipt = repo / "236_RECEIPT_2026_08_01.md"
+            receipt.write_bytes(b"committed baseline\n")
+            self.commit_all(repo, "baseline")
+            self.assertEqual(
+                CHECKER.committed_receipt_bytes(repo, Path(receipt.name)),
+                b"committed baseline\n",
+            )
+            receipt.write_bytes(b"rewritten working copy\n")
+            self.assertEqual(
+                CHECKER.committed_receipt_bytes(repo, Path(receipt.name)),
+                b"committed baseline\n",
+            )
+            self.assertIsNone(
+                CHECKER.committed_receipt_bytes(
+                    repo, Path("237_NEXT_BASELINE_2026_08_02.md")
+                )
+            )
+
+    def test_initial_new_receipt_commit_passes_parent_lock(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            state = {"snapshot": 1}
+            rel = Path("236_RECEIPT_2026_08_01.md")
+            working = self.receipt_bytes_for_state(state)
+            (repo / rel).write_bytes(working)
+            self.commit_all(repo, "initial receipt")
+            head, parent = CHECKER.receipt_history_bytes(repo, rel)
+            self.assertEqual(head, working)
+            self.assertIsNone(parent)
+            self.assertEqual(
+                CHECKER.snapshot_binding_errors(state, working, head, parent), []
+            )
+
+    def test_later_unchanged_receipt_commit_passes_parent_lock(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            state = {"snapshot": 1}
+            rel = Path("236_RECEIPT_2026_08_01.md")
+            working = self.receipt_bytes_for_state(state)
+            (repo / rel).write_bytes(working)
+            self.commit_all(repo, "initial receipt")
+            (repo / "base.txt").write_text("unrelated\n", encoding="utf-8")
+            self.commit_all(repo, "unrelated")
+            head, parent = CHECKER.receipt_history_bytes(repo, rel)
+            self.assertEqual(head, parent)
+            self.assertEqual(
+                CHECKER.snapshot_binding_errors(state, working, head, parent), []
+            )
+
+    def test_later_same_path_receipt_rewrite_commit_fails_parent_lock(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            rel = Path("236_RECEIPT_2026_08_01.md")
+            old_state = {"snapshot": 1}
+            (repo / rel).write_bytes(self.receipt_bytes_for_state(old_state))
+            self.commit_all(repo, "initial receipt")
+            new_state = {"snapshot": 2}
+            working = self.receipt_bytes_for_state(new_state)
+            (repo / rel).write_bytes(working)
+            self.commit_all(repo, "forbidden rewrite")
+            head, parent = CHECKER.receipt_history_bytes(repo, rel)
+            errors = CHECKER.snapshot_binding_errors(
+                new_state, working, head, parent
+            )
+            self.assertTrue(any("first parent" in error for error in errors))
+
+    def test_unavailable_first_parent_history_fails_cleanly(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "source"
+            clone = Path(directory) / "shallow"
+            source.mkdir()
+            self.init_git_repo(source)
+            (source / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(source, "base")
+            rel = Path("236_RECEIPT_2026_08_01.md")
+            (source / rel).write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(source, "receipt")
+            subprocess.run(
+                [
+                    "git",
+                    "clone",
+                    "-q",
+                    "--depth",
+                    "1",
+                    source.resolve().as_uri(),
+                    str(clone),
+                ],
+                check=True,
+            )
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "first-parent history unavailable"
+            ):
+                CHECKER.receipt_history_bytes(clone, rel)
+
+    def test_new_marker_rebaseline_preserves_old_marker_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            self.create_receipt_lanes(repo)
+            lane = repo / CHECKER.RECEIPT_LANES[0]
+            old = lane / "236_BASELINE_2026_08_01.md"
+            old.write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(repo, "old baseline")
+            new = lane / "237_BASELINE_2026_08_02.md"
+            new.write_bytes(self.receipt_bytes_for_state({"snapshot": 2}))
+            self.commit_all(repo, "new baseline")
+            self.assertEqual(CHECKER.marker_receipt_custody_errors(repo), [])
+
+    def test_new_marker_rebaseline_cannot_rewrite_old_marker_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            self.create_receipt_lanes(repo)
+            lane = repo / CHECKER.RECEIPT_LANES[0]
+            old = lane / "236_BASELINE_2026_08_01.md"
+            old.write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(repo, "old baseline")
+            old.write_bytes(self.receipt_bytes_for_state({"snapshot": "rewritten"}))
+            new = lane / "237_BASELINE_2026_08_02.md"
+            new.write_bytes(self.receipt_bytes_for_state({"snapshot": 2}))
+            self.commit_all(repo, "malicious rebaseline")
+            errors = CHECKER.marker_receipt_custody_errors(repo)
+            self.assertTrue(any("first-parent bytes" in error for error in errors))
+
+    def test_new_marker_rebaseline_cannot_delete_old_marker_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            (repo / "base.txt").write_text("base\n", encoding="utf-8")
+            self.commit_all(repo, "base")
+            self.create_receipt_lanes(repo)
+            lane = repo / CHECKER.RECEIPT_LANES[0]
+            old = lane / "236_BASELINE_2026_08_01.md"
+            old.write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(repo, "old baseline")
+            old.unlink()
+            new = lane / "237_BASELINE_2026_08_02.md"
+            new.write_bytes(self.receipt_bytes_for_state({"snapshot": 2}))
+            self.commit_all(repo, "malicious deletion")
+            errors = CHECKER.marker_receipt_custody_errors(repo)
+            self.assertTrue(any("deleted from HEAD" in error for error in errors))
+
+    def test_git_history_unavailable_fails_closed(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.committed_receipt_bytes(
+                    Path(directory), Path("236_RECEIPT_2026_08_01.md")
+                )
+
+    def test_w3_merged_mapping_deletion_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["claim_disposition"]["current_scope"]["merged_contact"].remove("W3")
+        self.assert_invalid(state)
+
+    def test_reopened_question_deletion_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["claim_disposition"]["current_scope"]["internal_narrowed"].remove("RQ-09")
+        self.assert_invalid(state)
+
+    def test_count_preserving_per_id_status_swap_fails(self) -> None:
+        claims = copy.deepcopy(self.computed["compute_claim_disposition"])
+        statuses = claims["current_scope"]["statuses"]
+        statuses["W0-CROWN"], statuses["W2"] = statuses["W2"], statuses["W0-CROWN"]
+        self.assert_invalid(self.state, compute_claim_disposition=claims)
+
+    def test_owner_debt_deletion_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["owner_held"]["debts"].pop()
+        self.assert_invalid(state)
+
+    def test_count_preserving_owner_debt_substitution_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["owner_held"]["debts"][0]["id"] = "PASS-WITH-DEBT"
+        substituted = {"PASS-WITH-DEBT", "OWNER_GATE_OPEN_TOPOLOGY"}
+        self.assert_invalid(state, compute_owner_debts=substituted)
+
+    def test_public_doc_debt_preserves_identical_non_deployable_copies(self) -> None:
+        self.assertEqual(
+            CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            ),
+            [],
+        )
+        errors = CHECKER.public_doc_owner_debt_errors(
+            ROOT,
+            CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE | {"00_META/unrelated.md"},
+        )
+        self.assertTrue(
+            any("must exactly match" in error for error in errors), errors
+        )
+        _left, right = sorted(CHECKER.PUBLIC_DOC_EVIDENCE)
+        original_read_bytes = Path.read_bytes
+
+        def divergent_read_bytes(path):
+            if path == ROOT / right:
+                return b"synthetic divergence"
+            return original_read_bytes(path)
+
+        with mock.patch.object(
+            Path, "read_bytes", autospec=True, side_effect=divergent_read_bytes
+        ):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+        self.assertTrue(
+            any("no longer byte-identical" in error for error in errors), errors
+        )
+
+        with mock.patch.object(CHECKER, "_is_vercel_ignored", return_value=False):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+        self.assertTrue(
+            any("path is no longer ignored" in error for error in errors), errors
+        )
+
+        with mock.patch.object(
+            CHECKER._PREDEPLOY_POLICY, "is_vercel_ignored", return_value=False
+        ):
+            errors = CHECKER.public_doc_owner_debt_errors(
+                ROOT, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+        self.assertTrue(
+            any("predeploy matcher" in error for error in errors), errors
+        )
+
+    def test_public_doc_debt_requires_each_parent_exclusion(self) -> None:
+        patterns = CHECKER._load_vercelignore(ROOT / CHECKER.VERCEL_IGNORE)
+        for (
+            path,
+            required_pattern,
+        ) in CHECKER.PUBLIC_DOC_EXACT_IGNORE_PATTERNS.items():
+            site_relative = Path(path).relative_to(CHECKER.PUBLIC_DIR).as_posix()
+            self.assertIn(required_pattern, patterns)
+            self.assertTrue(
+                CHECKER._is_vercel_ignored(site_relative, [required_pattern])
+            )
+            self.assertTrue(
+                PREDEPLOY.is_vercel_ignored(site_relative, [required_pattern])
+            )
+
+    def test_public_doc_debt_rejects_ancestor_symlink_or_lost_index_custody(self) -> None:
+        left, right = sorted(CHECKER.PUBLIC_DOC_EVIDENCE)
+        docs_path = next(
+            path for path in CHECKER.PUBLIC_DOC_EVIDENCE if "/docs/" in path
+        )
+        plans_path = next(
+            path for path in CHECKER.PUBLIC_DOC_EVIDENCE if "/_PLANS/" in path
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            target = corpus / "retained-docs/superpowers/specs"
+            target.mkdir(parents=True)
+            (target / Path(docs_path).name).write_bytes(b"same custody bytes\n")
+            plans = corpus / Path(plans_path)
+            plans.parent.mkdir(parents=True)
+            plans.write_bytes(b"same custody bytes\n")
+            docs = corpus / "12_PUBLIC_SITE/docs"
+            docs.parent.mkdir(parents=True, exist_ok=True)
+            docs.symlink_to(target.parents[1], target_is_directory=True)
+            ignore = corpus / CHECKER.VERCEL_IGNORE
+            ignore.parent.mkdir(parents=True, exist_ok=True)
+            ignore.write_text("docs/\n_PLANS/\n", encoding="utf-8")
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+        self.assertTrue(
+            any("must not traverse a symlink" in error for error in errors), errors
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            for path in (left, right):
+                target = corpus / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(b"same custody bytes\n")
+            ignore = corpus / CHECKER.VERCEL_IGNORE
+            ignore.write_text("docs/\n_PLANS/\n", encoding="utf-8")
+            self.init_git_repo(corpus)
+            self.commit_all(corpus, "add public-document custody")
+            self.assertEqual(
+                CHECKER.public_doc_owner_debt_errors(
+                    corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+                ),
+                [],
+            )
+            for path in (left, right):
+                (corpus / path).write_bytes(b"new but still identical custody bytes\n")
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+            self.assertTrue(
+                any(
+                    "lacks exact regular-file Git index custody" in error
+                    for error in errors
+                ),
+                errors,
+            )
+            for path in (left, right):
+                (corpus / path).write_bytes(b"same custody bytes\n")
+            subprocess.run(
+                ["git", "-C", str(corpus), "rm", "--cached", "-q", left],
+                check=True,
+            )
+            errors = CHECKER.public_doc_owner_debt_errors(
+                corpus, CHECKER.PUBLIC_DOC_OWNER_DEBT_EVIDENCE
+            )
+        self.assertTrue(
+            any("lacks exact regular-file Git index custody" in error for error in errors),
+            errors,
+        )
+
+    def test_unresolved_topology_inventory_rejects_expansion_or_disappearance(self) -> None:
+        self.assertEqual(CHECKER.unresolved_topology_errors(ROOT), [])
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            (corpus / "08_FRAMEWORK_SUPPORT/00_META").mkdir(parents=True)
+            (corpus / "07_EXTRA/00_META").mkdir(parents=True)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("unexpected=07_EXTRA/00_META" in error for error in errors),
+                errors,
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            errors = CHECKER.unresolved_topology_errors(Path(directory))
+        self.assertTrue(
+            any("missing=08_FRAMEWORK_SUPPORT/00_META" in error for error in errors),
+            errors,
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            target = corpus / "target"
+            target.mkdir()
+            held = corpus / "08_FRAMEWORK_SUPPORT/00_META"
+            held.parent.mkdir(parents=True)
+            held.symlink_to(target, target_is_directory=True)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+        self.assertTrue(
+            any("symlink=08_FRAMEWORK_SUPPORT/00_META" in error for error in errors),
+            errors,
+        )
+
+    def test_unresolved_topology_requires_exact_evidence_and_route_boundary(self) -> None:
+        self.assertEqual(
+            CHECKER.topology_owner_debt_errors(
+                ROOT, CHECKER.TOPOLOGY_OWNER_DEBT_EVIDENCE
+            ),
+            [],
+        )
+        errors = CHECKER.topology_owner_debt_errors(
+            ROOT,
+            CHECKER.TOPOLOGY_OWNER_DEBT_EVIDENCE | {"00_META/unrelated.md"},
+        )
+        self.assertTrue(
+            any("must exactly match" in error for error in errors), errors
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            route_card = corpus / CHECKER.HELD_TOPOLOGY_ROUTE_CARD
+            route_card.parent.mkdir(parents=True)
+            agent_route_card = corpus / CHECKER.HELD_TOPOLOGY_AGENT_ROUTE_CARD
+            route_card_text = (
+                "## What It Owns\n\nSupport content only.\n\n"
+                "## What It Must Not Own\n\n"
+                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['What It Must Not Own']}\n\n"
+                "## Current Boundary\n\n"
+                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['Current Boundary']}\n"
+            )
+            agent_route_card_text = "# Agent route\n\nSupport routing only.\n"
+            route_card.write_text(route_card_text, encoding="utf-8")
+            agent_route_card.write_text(agent_route_card_text, encoding="utf-8")
+            self.assertEqual(CHECKER.unresolved_topology_errors(corpus), [])
+            route_card.write_text(
+                route_card_text.replace(
+                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["Current Boundary"],
+                    "No upstream route is declared here.",
+                ),
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("boundary sentinel" in error for error in errors), errors
+            )
+
+            route_card.write_text(
+                route_card_text.replace(
+                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
+                    "No governance route is declared here.",
+                )
+                + "\n\n## Historical Notes\n\n"
+                + CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("boundary sentinel from: What It Must Not Own" in error for error in errors),
+                errors,
+            )
+
+            route_card.write_text(
+                route_card_text.replace(
+                    "Support content only.",
+                    "Support content only. Active governance law is owned here.",
+                ),
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("asserts active governance ownership" in error for error in errors),
+                errors,
+            )
+
+            route_card.write_text(
+                route_card_text
+                + "\n\n## What It Owns\n\nThis folder owns active governance law.\n",
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("duplicate active ownership/boundary headings: What It Owns" in error for error in errors),
+                errors,
+            )
+
+            route_card.write_text(route_card_text, encoding="utf-8")
+            agent_route_card.write_text(
+                "# Agent route\n\nThis folder owns active governance law.\n",
+                encoding="utf-8",
+            )
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("active route surface asserts active governance ownership" in error for error in errors),
+                errors,
+            )
+
+            agent_route_card.unlink()
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
+                errors,
+            )
+
+            outside = corpus / "outside.md"
+            outside.write_text("route card", encoding="utf-8")
+            agent_route_card.symlink_to(outside)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
+                errors,
+            )
+
+            route_card.unlink()
+            route_card.symlink_to(outside)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("regular, non-symlink" in error for error in errors), errors
+            )
+
+    def test_fabricated_world_evidence_fails_even_if_state_matches(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["world_contact"]["state"] = "ESTABLISHED"
+        state["world_contact"]["accepted_evidence_records"] = 2
+        state["world_contact"]["open_requirements"] = []
+        fabricated = {
+            "state": "ESTABLISHED",
+            "accepted_evidence_records": 2,
+            "open_requirements": [],
+        }
+        self.assert_invalid(state, compute_world_contact=fabricated)
+
+    def test_world_transition_gate_cannot_admit_internal_receipts(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["world_contact"]["transition_gate"]["inadmissible_inputs"].remove(
+            "internal receipts"
+        )
+        self.assert_invalid(state)
+
+    def test_legacy_91_cannot_be_presented_as_safe(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["receipt_namespace"]["bare_numeric_boundary"] = (
+            "The 91 legacy heuristic prefixes are safe."
+        )
+        self.assert_invalid(state)
+
+    def test_mixed_negated_and_positive_missing_citations_are_separate(self) -> None:
+        text = "Receipt 999 does not exist. Receipt 998 establishes the result."
+        citations = list(CHECKER.CITATION.finditer(text))
+        self.assertTrue(CHECKER.citation_is_negated(text, citations[0]))
+        self.assertFalse(CHECKER.citation_is_negated(text, citations[1]))
+
+    def test_coordinated_missing_citation_list_shares_negation(self) -> None:
+        text = "r999 and r998 were never written."
+        citations = list(CHECKER.CITATION.finditer(text))
+        self.assertTrue(all(CHECKER.citation_is_negated(text, item) for item in citations))
+
+    def test_receipt_target_disappearance_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        receipts = copy.deepcopy(self.computed["compute_receipt_namespace"])
+        receipts["target_files"] -= 1
+        self.assert_invalid(state, compute_receipt_namespace=receipts)
+
+    def test_count_preserving_unique_receipt_target_swap_fails(self) -> None:
+        receipts = copy.deepcopy(self.computed["compute_receipt_namespace"])
+        receipts["identity_hashes"]["citable_targets_sha256"] = CHECKER.path_set_sha256(
+            {"11_UPLINK/50_AUDITS_AND_EXECUTIONS/999_SYNTHETIC_2026_08_01.md"}
+        )
+        receipts["identity_hashes"]["prefixed_including_00_sha256"] = (
+            CHECKER.path_set_sha256(
+                {"11_UPLINK/50_AUDITS_AND_EXECUTIONS/999_SYNTHETIC_2026_08_01.md"}
+            )
+        )
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(self.state, compute_receipt_namespace=receipts)
+        self.assertTrue(
+            any("identity hashes drifted" in error for error in raised.exception.errors)
+        )
+
+    def test_path_set_hash_is_unambiguous_for_newline_paths(self) -> None:
+        self.assertNotEqual(
+            CHECKER.path_set_sha256({"a\nb", "c"}),
+            CHECKER.path_set_sha256({"a", "b\nc"}),
+        )
+
+    def test_nested_archive_ignore_rule_is_load_bearing(self) -> None:
+        patterns = CHECKER._load_vercelignore(ROOT / CHECKER.VERCEL_IGNORE)
+        patterns.remove("_archive/")
+        with mock.patch.object(CHECKER, "_load_vercelignore", return_value=patterns):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_nested_archive_directory_semantics_match_public_predeploy(self) -> None:
+        paths = (
+            "_archive/index.html",
+            "compass/_archive/index_2026_07_12_pre_restructure.html",
+            "a/b/_archive/c.html",
+            "A/B/_ARCHIVE/C.HTML",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertTrue(CHECKER._vercelignore_matches(path, "_archive/"))
+                self.assertTrue(PREDEPLOY.vercelignore_matches(path, "_archive/"))
+
+    def test_archive_directory_rule_does_not_overmatch(self) -> None:
+        paths = (
+            "_archiveish/index.html",
+            "compass/_archiveish/index.html",
+            "compass/archive/index.html",
+            "_archive.html",
+        )
+        for path in paths:
+            with self.subTest(path=path):
+                self.assertFalse(CHECKER._vercelignore_matches(path, "_archive/"))
+                self.assertFalse(PREDEPLOY.vercelignore_matches(path, "_archive/"))
+
+    def test_anchored_directory_rule_stays_at_the_site_root(self) -> None:
+        pattern = "/_archive/"
+        for matcher in (
+            CHECKER._vercelignore_matches,
+            PREDEPLOY.vercelignore_matches,
+        ):
+            with self.subTest(matcher=matcher.__module__):
+                self.assertTrue(matcher("_archive/index.html", pattern))
+                self.assertFalse(matcher("nested/_archive/index.html", pattern))
+
+    def test_directory_globs_use_the_same_component_grammar(self) -> None:
+        cases = (
+            ("foo*/", "foobar/index.html", True),
+            ("foo*/", "nested/foobar/index.html", True),
+            ("foo?/", "fooa/index.html", True),
+            ("foo?/", "foo/index.html", False),
+            ("root/foo*/", "root/foobar/index.html", True),
+            ("root/foo*/", "nested/root/foobar/index.html", False),
+        )
+        for pattern, path, expected in cases:
+            with self.subTest(pattern=pattern, path=path):
+                self.assertEqual(
+                    CHECKER._vercelignore_matches(path, pattern), expected
+                )
+                self.assertEqual(PREDEPLOY.vercelignore_matches(path, pattern), expected)
+
+    def test_directory_character_classes_fail_closed(self) -> None:
+        with self.assertRaises(CHECKER.ContractError):
+            CHECKER._vercelignore_matches("fooa/index.html", "foo[ab]/")
+        with self.assertRaises(ValueError):
+            PREDEPLOY.vercelignore_matches("fooa/index.html", "foo[ab]/")
+
+    def test_ignored_parent_cannot_be_reincluded_by_child_only(self) -> None:
+        patterns = ["_archive/", "!compass/_archive/index.html"]
+        path = "compass/_archive/index.html"
+        self.assertTrue(CHECKER._is_vercel_ignored(path, patterns))
+        self.assertTrue(PREDEPLOY.is_vercel_ignored(path, patterns))
+
+    def test_reincluded_parent_allows_reincluded_child(self) -> None:
+        patterns = [
+            "_archive/",
+            "!compass/_archive/",
+            "!compass/_archive/index.html",
+        ]
+        path = "compass/_archive/index.html"
+        self.assertFalse(CHECKER._is_vercel_ignored(path, patterns))
+        self.assertFalse(PREDEPLOY.is_vercel_ignored(path, patterns))
+
+    def test_conflict_copy_pattern_matches_root_and_nested_files(self) -> None:
+        pattern = "**/* 2.*"
+        self.assertTrue(CHECKER._vercelignore_matches("page 2.html", pattern))
+        self.assertTrue(CHECKER._vercelignore_matches("nested/page 2.html", pattern))
+        self.assertFalse(CHECKER._vercelignore_matches("page.html", pattern))
+        self.assertTrue(PREDEPLOY.vercelignore_matches("page 2.html", pattern))
+        self.assertTrue(PREDEPLOY.vercelignore_matches("nested/page 2.html", pattern))
+        self.assertFalse(PREDEPLOY.vercelignore_matches("page.html", pattern))
+
+    def test_gitignore_negation_reincludes_public_build_wing(self) -> None:
+        patterns = ["build/", "!build/", "!build/**"]
+        self.assertFalse(CHECKER._is_vercel_ignored("build/index.html", patterns))
+        self.assertFalse(PREDEPLOY.is_vercel_ignored("build/index.html", patterns))
+
+    def test_publication_matchers_agree_on_every_present_site_file(self) -> None:
+        patterns = CHECKER._load_vercelignore(ROOT / CHECKER.VERCEL_IGNORE)
+        predeploy_patterns = PREDEPLOY.load_vercelignore_patterns()
+        self.assertEqual(patterns, predeploy_patterns)
+        site = ROOT / CHECKER.PUBLIC_DIR
+        paths = sorted(
+            path.relative_to(site).as_posix()
+            for path in site.rglob("*")
+            if path.is_file()
+        )
+        mismatches = [
+            path
+            for path in paths
+            if CHECKER._is_vercel_ignored(path, patterns)
+            != PREDEPLOY.is_vercel_ignored(path, predeploy_patterns)
+        ]
+        self.assertEqual(mismatches, [])
+
+    def test_publication_matcher_drift_fails_lifecycle_computation(self) -> None:
+        original = CHECKER._PREDEPLOY_POLICY.is_vercel_ignored
+
+        def drifted(path, patterns):
+            if path == "compass/_archive/index_2026_07_12_pre_restructure.html":
+                return False
+            return original(path, patterns)
+
+        with mock.patch.object(
+            CHECKER._PREDEPLOY_POLICY,
+            "is_vercel_ignored",
+            side_effect=drifted,
+        ):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
+        contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
+        self.assertEqual(contract["classes"], ["current", "provisional"])
+        self.assertEqual(contract["routes"], 44)
+
+    def test_sitemap_extra_frozen_route_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            sitemap = root / CHECKER.SITEMAP
+            sitemap.parent.mkdir(parents=True)
+            sitemap.write_text(
+                """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://emergentism.org/</loc></url>
+  <url><loc>https://emergentism.org/build/</loc></url>
+</urlset>
+""",
+                encoding="utf-8",
+            )
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER._exact_sitemap_contract(root, {"/"})
+
+    def test_withheld_artifact_requires_real_hash_bound_regular_file(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory)
+            body = b"<html>held</html>\n"
+            (site / "held.html").write_bytes(body)
+            rows = [
+                {
+                    "artifact": "held.html",
+                    "bytes": len(body),
+                    "sha256": CHECKER.hashlib.sha256(body).hexdigest(),
+                }
+            ]
+            self.assertEqual(
+                CHECKER._validated_withheld_artifacts(site, rows), {"held.html"}
+            )
+
+    def test_count_preserving_withheld_deletion_substitution_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            site = Path(directory)
+            replacement = b"<html>replacement</html>\n"
+            (site / "ignored-replacement.html").write_bytes(replacement)
+            rows = [
+                {
+                    "artifact": "deleted-held.html",
+                    "bytes": len(replacement),
+                    "sha256": CHECKER.hashlib.sha256(replacement).hexdigest(),
+                }
+            ]
+            with self.assertRaisesRegex(CHECKER.ContractError, "missing or not a regular file"):
+                CHECKER._validated_withheld_artifacts(site, rows)
+
+    def test_withheld_artifact_path_escape_fails(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(CHECKER.ContractError, "unsafe or not HTML"):
+                CHECKER._validated_withheld_artifacts(
+                    Path(directory),
+                    [{"artifact": "../escape.html", "bytes": 0, "sha256": "0" * 64}],
+                )
+
+    def test_alias_collision_deletion_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["public_lifecycle"]["delivery_contract"]["alias_collisions"] = []
+        self.assert_invalid(state)
+
+    def test_alias_lifecycle_disagreement_fails(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["alias_collisions"][0]["shared_raw_lifecycle"] = "current"
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_withheld_public_alias_cannot_name_two_artifacts(self) -> None:
+        registry = CHECKER.load_json(ROOT / CHECKER.WITHHELD_REGISTRY)
+        registry = copy.deepcopy(registry)
+        registry["artifacts"][0]["publicRoutes"].append("/dasein/")
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.WITHHELD_REGISTRY:
+                return registry
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_count_preserving_withheld_alias_duplication_fails(self) -> None:
+        registry = CHECKER.load_json(ROOT / CHECKER.WITHHELD_REGISTRY)
+        registry = copy.deepcopy(registry)
+        routes = registry["artifacts"][0]["publicRoutes"]
+        routes[routes.index("/app/")] = "/app"
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.WITHHELD_REGISTRY:
+                return registry
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_count_preserving_current_provisional_membership_swap_fails(self) -> None:
+        parity = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.PUBLIC_PARITY))
+        current = parity["currentSurfaces"]
+        provisional = parity["declaredProvisional"]["routes"]
+        current[current.index("about/index.html")] = "amrita/index.html"
+        provisional[provisional.index("amrita/index.html")] = "about/index.html"
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.PUBLIC_PARITY:
+                return parity
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            public = CHECKER.compute_public_lifecycle(ROOT)
+        self.assertEqual(
+            public["counts"], self.computed["compute_public_lifecycle"]["counts"]
+        )
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(self.state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any("membership hashes drifted" in error for error in raised.exception.errors)
+        )
+
+    def test_count_preserving_frozen_current_membership_hash_swap_fails(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        hashes = public["membership_hashes"]["category_sha256"]
+        hashes["current_sha256"], hashes["frozen_sha256"] = (
+            hashes["frozen_sha256"],
+            hashes["current_sha256"],
+        )
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(self.state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any("membership hashes drifted" in error for error in raised.exception.errors)
+        )
+
+    def test_new_current_noindex_overlap_fails(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["raw_overlaps"].append(
+            {"classes": ["current", "frozen"], "artifacts": ["index.html"]}
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_exact_current_route_bare_noindex_becomes_forbidden_overlap(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/about/",
+                "headers": [{"key": "X-Robots-Tag", "value": "noindex"}],
+            }
+        )
+        public = self.compute_public_with_vercel(vercel)
+        self.assertTrue(
+            any(
+                row["classes"] == ["current", "frozen"]
+                and "about/index.html" in row["artifacts"]
+                for row in public["raw_overlaps"]
+            )
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_nested_provisional_route_bare_noindex_becomes_forbidden_overlap(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/amrita/(.*)",
+                "headers": [{"key": "X-Robots-Tag", "value": "noindex"}],
+            }
+        )
+        public = self.compute_public_with_vercel(vercel)
+        self.assertTrue(
+            any(
+                row["classes"] == ["frozen", "provisional"]
+                and "amrita/index.html" in row["artifacts"]
+                for row in public["raw_overlaps"]
+            )
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_broad_bare_noindex_fails_public_lifecycle_baseline(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/(.*)",
+                "headers": [{"key": "X-Robots-Tag", "value": "noindex"}],
+            }
+        )
+        public = self.compute_public_with_vercel(vercel)
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_robots_none_expands_to_withholding(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/about/",
+                "headers": [{"key": "X-Robots-Tag", "value": "none"}],
+            }
+        )
+        public = self.compute_public_with_vercel(vercel)
+        self.assertTrue(
+            any(
+                row["classes"] == ["current", "withheld"]
+                and "about/index.html" in row["artifacts"]
+                for row in public["raw_overlaps"]
+            )
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_duplicate_robots_headers_cannot_erase_noindex(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/about/",
+                "headers": [
+                    {"key": "X-Robots-Tag", "value": "noindex"},
+                    {"key": "X-Robots-Tag", "value": "index"},
+                ],
+            }
+        )
+        public = self.compute_public_with_vercel(vercel)
+        self.assertTrue(
+            any(
+                row["classes"] == ["current", "frozen"]
+                and "about/index.html" in row["artifacts"]
+                for row in public["raw_overlaps"]
+            )
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_robots_meta_parser_tolerates_attribute_order_case_and_quotes(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "surface.html"
+            path.write_text(
+                "<html><head><META content='NoIndex, follow' NAME=\"RoBoTs\"></head></html>",
+                encoding="utf-8",
+            )
+            self.assertEqual(
+                CHECKER._meta_robots_directives(path), {"noindex", "follow"}
+            )
+
+    def test_current_and_provisional_cannot_self_declare_search_hiding(self) -> None:
+        original = CHECKER._meta_robots_directives
+        cases = (
+            ("about/index.html", "current", {"noindex"}),
+            ("amrita/index.html", "provisional", {"none"}),
+        )
+        for artifact, asserted_class, injected in cases:
+            with self.subTest(artifact=artifact):
+                target = ROOT / CHECKER.PUBLIC_DIR / artifact
+
+                def mutated(path, *, target=target, injected=injected):
+                    return injected if path == target else original(path)
+
+                with mock.patch.object(
+                    CHECKER, "_meta_robots_directives", side_effect=mutated
+                ):
+                    with self.assertRaisesRegex(
+                        CHECKER.ContractError,
+                        rf"{asserted_class} artifact {artifact} self-declares",
+                    ):
+                        CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_current_route_nofollow_header_becomes_forbidden_overlap(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/about/",
+                "headers": [
+                    {"key": "X-Robots-Tag", "value": "noindex, nofollow"}
+                ],
+            }
+        )
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.VERCEL_CONFIG:
+                return vercel
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            public = CHECKER.compute_public_lifecycle(ROOT)
+        self.assertTrue(
+            any(
+                row["classes"] == ["current", "withheld"]
+                and "about/index.html" in row["artifacts"]
+                for row in public["raw_overlaps"]
+            )
+        )
+        self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_broad_nofollow_header_fails_public_lifecycle(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["headers"].append(
+            {
+                "source": "/(.*)",
+                "headers": [
+                    {"key": "X-Robots-Tag", "value": "noindex, nofollow"}
+                ],
+            }
+        )
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.VERCEL_CONFIG:
+                return vercel
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaises(CHECKER.ContractError):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_current_route_redirect_fails_public_lifecycle(self) -> None:
+        vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
+        vercel["redirects"].append(
+            {
+                "source": "/about/",
+                "destination": "/historical-boundary/",
+                "permanent": False,
+            }
+        )
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.VERCEL_CONFIG:
+                return vercel
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaisesRegex(CHECKER.ContractError, "effective redirect"):
+                CHECKER.compute_public_lifecycle(ROOT)
+
+    def test_missing_nested_evidence_path_fails(self) -> None:
+        state = copy.deepcopy(self.state)
+        state["owner_held"]["debts"][0]["evidence"][1] = "missing.md"
+        self.assert_invalid(state)
+
+    def test_malformed_state_is_contract_failure_not_traceback(self) -> None:
+        self.assert_invalid({"schema": "emergentism/contact-limited-state/v1"})
+        output = io.StringIO()
+        with mock.patch.object(
+            CHECKER, "check", side_effect=CHECKER.ContractError("malformed state")
+        ), contextlib.redirect_stdout(output):
+            self.assertEqual(CHECKER.main(), 1)
+        self.assertIn("CONTACT-LIMITED RATCHET: FAIL", output.getvalue())
+
+    def test_duplicate_key_state_json_fails_closed(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "CONTACT_LIMITED_STATE.json"
+            path.write_text(
+                '{"schema":"first","schema":"hidden replacement"}\n',
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "duplicate JSON object key 'schema'"
+            ):
+                CHECKER.load_json(path)
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -3,7 +3,7 @@ title: "The Direction Sphere and the Radial Line — 2 + 1 = 3, and the radius i
 status: "ACTIVE — item 6. Standard vector geometry, inherited under KSC-12; the reading is the corpus's."
 date: 2026-07-30
 evidence_tier: "[A] §1, inherited standard geometry; [S] the reading; [I] any Titan gloss"
-owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and 48_THE_BOUNDARY_CROSSINGS.md on all dimension claims."
+owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and 48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md on all dimension claims."
 parents:
   - 52_THE_GENERATIVE_BASE.md
   - 49_THE_LORENTZ_MOEBIUS_CORRESPONDENCE.md

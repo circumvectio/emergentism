@@ -111,6 +111,12 @@ SECRET_PATTERNS: list[tuple[str, re.Pattern, str]] = [
     ),
 ]
 
+GENERIC_PATTERN_NAME = "Generic high-entropy token"
+SHA256_TOKEN = re.compile(r"[0-9a-fA-F]{64}")
+HASH_CONTEXT = re.compile(
+    r"(?i)(?:sha-?256|checksum|digest|source[_-]?revision|sourcerevision)"
+)
+
 # Exemptions: lines containing these substrings are ignored even if they match a pattern.
 # Use for test fixtures, documentation, or encrypted blobs that are intentionally staged.
 EXEMPTION_MARKERS = [
@@ -151,6 +157,28 @@ def _line_is_exempt(line: str) -> bool:
     return any(marker in line for marker in EXEMPTION_MARKERS)
 
 
+def _generic_token_is_known_nonsecret(token: str, line: str, current_file: str) -> bool:
+    """Recognize custody hashes and human identifiers without weakening key rules.
+
+    Provider-specific and wallet patterns run before this fallback and are never
+    exempted here. A bare 64-hex token remains suspicious: it is exempt only
+    when the line or filename explicitly declares hash custody. Long generated
+    test/receipt identifiers are exempt only when they contain at least four
+    alphabetic underscore/hyphen-delimited words.
+    """
+
+    if SHA256_TOKEN.fullmatch(token) and (
+        HASH_CONTEXT.search(line) or HASH_CONTEXT.search(current_file)
+    ):
+        return True
+
+    segments = [segment for segment in re.split(r"[_-]+", token) if segment]
+    alphabetic_words = [
+        segment for segment in segments if len(segment) >= 2 and segment.isalpha()
+    ]
+    return len(alphabetic_words) >= 4
+
+
 def scan(diff_text: str) -> list[dict]:
     """Scan diff text for secret patterns. Return list of findings."""
     findings: list[dict] = []
@@ -174,7 +202,16 @@ def scan(diff_text: str) -> list[dict]:
             continue
 
         for name, pattern, description in SECRET_PATTERNS:
-            if pattern.search(content):
+            matches = list(pattern.finditer(content))
+            if name == GENERIC_PATTERN_NAME:
+                matches = [
+                    match
+                    for match in matches
+                    if not _generic_token_is_known_nonsecret(
+                        match.group(0), content, current_file
+                    )
+                ]
+            if matches:
                 findings.append({
                     "file": current_file,
                     "line": line,

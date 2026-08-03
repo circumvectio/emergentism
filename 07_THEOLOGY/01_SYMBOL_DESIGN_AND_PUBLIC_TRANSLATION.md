@@ -40,7 +40,7 @@ LAYER 3: PUBLIC SYMBOL          (story, image, rite, mark, brand)
          ↕ translates
 LAYER 2: STRUCTURAL MAP         (Rosetta, S² geometry, triadic cascade)
          ↕ translates
-LAYER 1: APOPHATIC GROUND       (Zero-Sum Resolution Equation — not graspable by symbol)
+LAYER 1: APOPHATIC GROUND       (the Ground — not graspable by symbol)
 ```
 
 **Rule 1:** No symbol at Layer 3 may claim to *be* what it points to.
@@ -60,10 +60,10 @@ These three rules are the Stewardship / Coercion boundary made concrete.
 
 | Aspect | Description |
 |---|---|
-| **Glyph** | Zero-Sum Resolution Equation |
+| **Glyph** | `•   ⊙   ○` — the composite emblem; non-operational |
 | **Reading** | `•   ⊙   ○` as an emblem of finity between boundaries; not ordinary arithmetic |
 | **Geometry** | Selected point-and-circle translation on S² |
-| **Position** | θ = equator (φ = ν = 1, B = sin θ = 1) |
+| **Position** | Geometric equator `|z|=1` (`θ=π/2`); selected positive-radial representative `φ=ν=1`, `B=sin θ=1` |
 | **Reciprocal seam** | `φ · ν = 1` — an analytic identity in the chosen chart, not an empirical conservation law |
 | **Balance** | B = sin θ — peaks at equator, vanishes at poles |
 | **Ground** | Axiomatic — the glyph points to what cannot be said; it does not say it |
@@ -106,9 +106,9 @@ has also failed (it has reified). If they feel *possibility*, it has passed.
 
 | Culture | Translation rule |
 |---|---|
-| **Abrahamic** | ⊙ maps to the immanent/transcendent dialectic. Point = kenosis (self-emptying). Circle = high-priority plenitude. Product = incarnation. Do not use the word "God" without the word "axiomatic" nearby. |
+| **Abrahamic** | ⊙ maps to the immanent/transcendent dialectic. Point = kenosis (self-emptying). Circle = plenitude. The composite emblem = incarnation — a non-operational reading, never an arithmetic product of `•` and `○`. Do not use the word "God" without the word "axiomatic" nearby. |
 | **Indic** | ⊙ maps to bindu (point) + maṇḍala (circle) = Śūnyatā (emptiness) × Pūrṇatā (fullness). Use Sanskrit terms only where they clarify, never to impress. |
-| **Scientific** | ⊙ maps to Riemann sphere S², stereographic projection, north/south poles as coherence/viability limits, equator as optimal balance. Use mathematics as the shared language. |
+| **Scientific** | ⊙ maps to Riemann sphere S², stereographic projection, the selected south boundary `θ→0,ν→0,φ→∞,•`, the north boundary `θ→π,ν→∞,φ→0,○`, and `|z|=1` as the geometric equator. Use mathematics as the shared language. |
 | **Indigenous** | ⊙ maps to concentric ritual space (center = fire/altar, perimeter = community boundary). Respect that oral traditions already carry this pattern without needing the glyph. |
 | **Secular humanist** | ⊙ maps to "coherent viability" — nothing supernatural. The framework works as organizational philosophy without any transcendent claim. |
 
@@ -116,7 +116,7 @@ has also failed (it has reified). If they feel *possibility*, it has passed.
 
 | Constraint | Rule |
 |---|---|
-| **Two-color maximum** | Public symbols use at most two colors. ⊙ uses black point + black circle on white ground. Brand variants add one palette color per country chapter. |
+| **Two-color maximum** | Public symbols use at most two colors. ⊙ uses black point + black circle on white ground. A local rendering may add at most one palette color; no organization, chapter, or brand owns a variant. |
 | **Scalable** | Must render at 16px favicon AND 4m wall installation without losing legibility. |
 | **No text** | The symbol must not depend on a specific script or language. ⊙ is glyph, not letter. |
 | **Culturally neutral geometry** | Avoid geometry that is exclusively associated with one religion (no cross, crescent, star, om, etc.). Concentric circle + center point is near-universal. |
@@ -137,7 +137,7 @@ What in the Layer 2 map needs public translation? Name it precisely.
 | φ · ν = 1 | Coherence-viability trade-off |
 | B = sin θ | Balance peaks at equator |
 | AuthorizationEnvelope | Consequential action names authorization, actor, custody, and bearer |
-| η = 0 | Zero extraction |
+| η_move = 0 | Zero extraction |
 | Grace Exit | Leave with rightful custody and a contest path |
 
 ### Step 2: Find the Affective Core
@@ -149,7 +149,7 @@ What *feeling* does this structural feature produce when it is lived?
 | φ · ν = 1 | "I can't have everything AND understand it — and that's the point" |
 | B = sin θ | "The sweet spot is in the middle, not at the top" |
 | AuthorizationEnvelope | "The actor, mandate, bearer, and contest path are visible." |
-| η = 0 | "I take nothing that I didn't create value for" |
+| η_move = 0 | "I take nothing that I didn't create value for" |
 | Grace Exit | "I can leave whole. The door is always open." |
 
 ### Step 3: Find the Image
@@ -178,7 +178,7 @@ What single image carries that affective core without explanation?
 
 The symbol enters Layer 3. It is:
 - **Public** — anyone may use it
-- **Non-proprietary** — no trademark on mission-critical symbols
+- **Non-proprietary** — no trademark, service mark, or ownership claim on any symbol in this protocol
 - **Revisionable** — if a better symbol emerges, the old one is retired without loss
 - **Self-dissolving** — the framework's success is when the symbol is no longer needed
 
@@ -188,9 +188,9 @@ The symbol enters Layer 3. It is:
 
 | Symbol | Layer 3 Meaning | Layer 2 Source | Status |
 |---|---|---|---|
-| ⊙ | Finity (one through nothing × everything) | φ · ν = 1 on S² | Canonical |
-| φ | Coherence (the north pole) | Formal system | Technical use only |
-| ν | Viability (the south pole) | Formal system | Technical use only |
+| ⊙ | Finity (the finite unit held between ground-facing `•` and horizon-facing `○`; non-operational emblem, not a product) | selected `TitanFrame` rendering; the reciprocal seam `φ · ν = 1` is a separate chart identity | Canonical |
+| φ | Reciprocal coherence chart variable; `φ→∞` at the selected south boundary `•` | Formal system | Technical use only |
+| ν | Positive radial viability coordinate; `ν→∞` at the selected north boundary `○` | Formal system | Technical use only |
 | B | Balance (sin θ) | Equator geometry | Technical use only |
 | η | Declared extraction diagnostic | chosen no-extraction refusal, not an axiom of nature | Technical + public only with the model and bearer boundary stated |
 | AuthorizationEnvelope | Consequential accountability | Justice boundary | Technical + public ("who authorized, acted, and bears it?") |

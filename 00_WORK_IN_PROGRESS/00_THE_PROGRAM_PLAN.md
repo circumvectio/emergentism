@@ -1,15 +1,20 @@
 ---
 title: "The Program Plan — seven sprints to a closed internal program, and why that is not 'finished'"
-status: "PROPOSED — not ratified. Sprint 1 is an owner sitting; nothing downstream is safe to start before it."
+status: "SUPERSEDED AS CURRENT SEQUENCING — retained as the 2026-07-30 proposal; use the contact-limited roadmap"
 date: 2026-07-30
 evidence_tier: "[B] every count below is measured and reproducible; [S] the sequencing and the definition of done; [I] nothing"
 owner: "No owner until ratified. This plan creates no authority and may not be cited as a commitment."
 parents:
   - README.md
   - ../00_META/00_W8_ADEQUACY_DECISION_MATRIX.md
+  - ../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md
 ---
 
 # The Program Plan
+
+> **Current routing, 2026-08-02:** this dated proposal is provenance, not the
+> execution queue. Sprint 1's invitation-first premise is superseded by the
+> contact-limited roadmap and the blocked `FPE-REVIEW-01` registry.
 
 > **Read the definition of done before the sprints, or the sprints will read as a promise
 > they are not making.**
@@ -39,7 +44,7 @@ progress.
 
 | finite, closable from inside | count |
 |---|---|
-| open owner rulings | 8 |
+| residual owner decisions | 6 — receipt disposition (1), `/dimensions/` crossings (1), audit items 3/11/14/28 (4) |
 | ambiguous receipt numbers | 91 |
 | site routes declared neither current nor frozen | 40 |
 | claim rows at status `open` | 17 |
@@ -49,7 +54,7 @@ progress.
 | contact-gated — **cannot** be closed from inside | count |
 |---|---|
 | preregistrations written / run | 3 / 0 |
-| review packet frozen / sent | 1 / 0 |
+| review packet hash set / technical binding satisfied / remaining human prerequisites satisfied / sent | 1 / 1 / 0 / 0 |
 | empirical sockets specified / run | 11 / 0 |
 | returned outcomes from outside | **0** |
 
@@ -62,31 +67,41 @@ has the longest completion time, because a reviewer takes weeks and none of that
 ours. Every internal sprint has latency we control. So the correct order is *not* easiest
 first; it is **longest-pole first, even when the longest pole is a five-minute act.**
 
-The second rule: **rulings before sweeps.** Two of the eight open rulings change
-vocabulary corpus-wide (`§5.1` decides whether the irrationals are called numbers or
-limits; `G-0` decides which base is canonical). Running a text sweep before those land
-means running it twice.
+The second rule was **rulings before sweeps** — and both vocabulary rulings it named
+have since landed. `G-0`/`G-0b` were ruled 2026-07-29
+(`00_THE_FOUNDATION.md:85,88-98`) and `§5.1` was signed 2026-07-31
+(`11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` §Q1).
+No remaining open ruling changes vocabulary corpus-wide, so the later sweeps are no
+longer gated on this sprint. This paragraph remains as evidence of the drift it corrects.
 
 ---
 
-## SPRINT 1 · Send the invitation · *owner, 20 minutes, starts the longest clock*
+## HISTORICAL SPRINT 1 · Invitation-first sequence superseded — do not execute
 
-**Do this first and alone.** The packet is frozen and hash-verified at
-`03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.md`. The invitation
-is written. What remains is naming one qualified outsider and asking.
+The v1 invitation premise is obsolete. The current v4 hash set has an
+internally verified acyclic manifest binding and provenance firewall, but the registry remains
+blocked on the complete review materials bundle, conflict and reviewer-scope
+forms, compensation terms, publication permission, and an applicability
+determination. Version 4 accepts no local owner or external evidence for those
+rows; a later route requires a reviewed successor schema and independent
+verification boundary. The live sequence is owned by
+`../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md`.
 
-- **Exit condition:** an invitation sent to a named person, recorded as a receipt.
-- **Not the exit condition:** a reply. That is theirs.
-- **Why first:** it is the only item on this board that can change the project's score,
-  and it is the only one whose clock we do not control.
-- **Cannot be delegated to this session.** The protocol: *"AI or project-agent review is
-  useful internal search but does not satisfy this external gate."*
+- **Current pre-contact exit:** the six remaining material/human/owner registry
+  prerequisites carry real custody; the technical manifest binding is already
+  separately bound and does not make contact ready.
+- **Later contact event:** an invitation is sent to a named qualified person and
+  only that event is receipted; a reply remains theirs.
+- **Cannot be delegated to an internal review.** The protocol: *"AI or
+  project-agent review is useful internal search but does not satisfy this
+  external gate."*
 
 ---
 
-## SPRINT 2 · The eight rulings · *owner sitting, one session*
+## SPRINT 2 · The residual rulings · *owner sitting, one session*
 
-Everything downstream is vocabulary-dependent on two of these, so this gates sprints 4–6.
+The two rulings that made this a vocabulary gate have landed. What remains here is
+residue, and the later internal sprints may start without it.
 
 | ruling | the decision | blocks |
 |---|---|---|
@@ -97,7 +112,7 @@ Everything downstream is vocabulary-dependent on two of these, so this gates spr
 | `/dimensions/` crossings | may it keep showing five candidates when two are adjudicated failed? | one page |
 | audit items 3, 11, 14, 28 | four residual calls, all listed in `README.md §4A` | closes the audit |
 
-- **Exit condition:** eight receipts, or eight lines in one receipt, each with a date.
+- **Exit condition:** one receipt per remaining row, each with a date.
 - **Discipline:** a ruling that says *"stay as is, and here is why"* closes the item. Only
   silence leaves it open.
 
@@ -191,8 +206,9 @@ What happens after is a different activity and should be called one:
 - **It does not promise the framework is true**, and closing every sprint would not
   bear on that. `00_ESTABLISHED` stays short.
 - **It does not promise the internal work matters.** On the framework's own conjunctive
-  law, a conjunctive law returns nothing when either factor is absent, and contact is the absent one, so sprints 2–7 could all close and
-  the score would not move. **Only Sprint 1 can move it, which is why it is Sprint 1.**
+  law, both factors must be non-zero and the deficient one binds, so with contact at
+  zero sprints 2–7 could all close and the score would not move. **Only Sprint 1 can
+  move it, which is why it is Sprint 1.**
 - **It sets no dates.** Sizes are honest ("one session"); dates would be invented.
 - **It is not ratified.** Nothing here is a commitment until an owner says so.
 

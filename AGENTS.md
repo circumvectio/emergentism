@@ -35,7 +35,7 @@ crossing or literal identity.
 
 ## Read first
 
-1. `VMOSK_A.md` — non-semantic project control projection; never K-8.
+1. `VMOSK_A_v2_2026_07_31.md` — non-semantic project control projection; never K-8; supersedes `VMOSK_A.md` (2026-07-31), retained per archive-first.
 2. `00_THE_WELTANSCHAUUNG.md` — reader door and claim boundary.
 3. `00_THE_KERNEL_INDEX.md` — seven-surface custody map.
 4. `05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md` — analytic floor and declared

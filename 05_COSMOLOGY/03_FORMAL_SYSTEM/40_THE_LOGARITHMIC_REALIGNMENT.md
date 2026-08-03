@@ -23,7 +23,7 @@ depends_on:
   - 29_PRIMITIVES_AND_TYPE_SIGNATURES.md
   - 30_OPERATIONAL_DEFINITIONS.md
   - ../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md
-  - ../../../01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md
+  - ../../01_TELEOLOGY/02_THE_DERIVATION/14_LOG_FORM_OF_THE_POWER_MAX_LEMMA.md
 ---
 
 # The Logarithmic Realignment
@@ -192,7 +192,11 @@ In log coordinates, the equator (`φ = ν = 1, B = 1`) is `s = 0` — the origin
 
 ### 4.4 The Two Poles Are Symmetric
 
-On the additive line, 0 is the center and ∞ is unreachable. On the log line, 0 (`s = −∞`) and ∞ (`s = +∞`) are symmetric — equidistant from the center in opposite directions. This is the structural reason why the Titan emblem works: the two poles are not "zero and infinity" in an asymmetric sense; they are `−∞` and `+∞` on a line centered at finity.
+On the additive line, numeric zero is the center and an unbounded value is not a
+finite point. On the log line, the limits `s→−∞` and `s→+∞` are symmetric
+directions about `s=0`. This is a numeric/log-coordinate fact only. It may
+motivate a visual analogy with the operator-free Titan emblem, but it neither
+identifies the two frames nor defines an operation on Titan roles.
 
 ### 4.5 The Old Model Is the Zero-Curvature Limit
 

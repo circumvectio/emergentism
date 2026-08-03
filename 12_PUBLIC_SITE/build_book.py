@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Render the pure Emergentism reader stack into book/index.html.
+"""Render the claim-card-covered current reader into book/index.html.
 
 A Network-State-style free online book: sticky chapter table-of-contents, scroll
 progress, deep-linkable sections, inline evidence-tier chips, light/dark reading
 themes. Output is fully self-contained (no external resource references) so it
 passes the 12_PUBLIC_SITE predeploy supply-chain gate. This .py is
 .vercelignored (build tooling, not shipped). Source authority stays with the
-three Emergentism documents named below; the result is only a public snapshot.
+declared current owner in 13_BOOKS/book-manifest.json; the result is only a
+public snapshot.
 
 Run:  python3 -B build_book.py [--check]
 """
@@ -15,44 +16,27 @@ import markdown
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
-
-def _reciprocal_chapters():
-    """The 25 chapters of The Reciprocal, in order, from 13_BOOKS/the_reciprocal/.
-
-    2026-07-31. This route used to publish three documents. It now publishes the whole
-    book, because "a free online book" that is three chapters long is a pamphlet.
-
-    Provenance, stated because it matters: the chapters are a PORT of The Reciprocal,
-    Public Edition 2026-07-22, which was written before Emergentism was separated from
-    the product and venture systems it grew up inside. That edition violated this
-    corpus's own gates 249 times — 160 forbidden authority tokens, 20 uses of the
-    retired product form of the two-factor law, 49 bare extraction symbols. The ported
-    chapters keep the argument and the length; they are written in the pure register and
-    carry the rulings made since. The port is tiered [D] and has NOT been re-adjudicated
-    claim by claim.
-
-    Sorted by filename, which is why every chapter file is zero-padded.
-    """
-    d = os.path.join(ROOT, "13_BOOKS", "the_reciprocal")
-    if not os.path.isdir(d):
-        return []
-    return [os.path.join(d, f) for f in sorted(os.listdir(d)) if f.endswith(".md")]
-
-
-# The book, in reading order: the ported Reciprocal, then the three active-canon
-# documents as appendices. The appendices are current source owners in their own right —
-# where they and a ported chapter disagree, the appendix governs.
-SOURCES = _reciprocal_chapters() + [
-    os.path.join(ROOT, "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"),
-    os.path.join(ROOT, "06_ONTOLOGY", "08_THE_HUMAN_CONDITION.md"),
-    os.path.join(ROOT, "01_TELEOLOGY", "04_THE_LIVED_COMPASS.md"),
-]
+BOOK_MANIFEST = os.path.join(ROOT, "13_BOOKS", "book-manifest.json")
+CLAIM_REGISTER = os.path.join(ROOT, "00_META", "registers", "CLAIM_CARD_REGISTER.json")
+CLAIM_GRAPH = os.path.join(ROOT, "00_META", "registers", "CLAIM_GRAPH.json")
+CURRENT_WORK_ID = "BK-ONE-SITTING"
+CURRENT_RELEASE_STATE = "source_active_current_public_reader"
+PUBLIC_ROUTE = "../12_PUBLIC_SITE/book/index.html"
+ALLOWED_SOURCE_LIFECYCLES = {"active", "reader_synthesis"}
+ALLOWED_PUBLIC_STATES = {"bounded_current", "candidate"}
+ALLOWED_REVIEW_STATES = {"implemented", "l3_audited"}
 OUT_DIR = os.path.join(HERE, "book")
 OUT = os.path.join(OUT_DIR, "index.html")
 BUILD_MANIFEST = os.path.join(OUT_DIR, "build-manifest.json")
 EXTENSIONS = ["extra", "toc", "sane_lists"]
 
 TIER_RE = re.compile(r'\[(A|B|S|I|D|C)((?:/[A-Z]+)*)\]')
+SOURCE_LINK_RE = re.compile(r'href="(?P<target>[^"#]*\.md(?:#[^"]*)?)"')
+PUBLIC_SOURCE_LINK_ROUTES = {
+    # The internal ledger is broader than its twelve-question public projection.
+    # The Lab makes that weaker boundary visible rather than implying equality.
+    "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md": "../lab/#questions",
+}
 
 def strip_tags(s):
     return re.sub(r'<[^>]+>', '', s).strip()
@@ -63,27 +47,246 @@ def wrap_tiers(htmltext):
         return f'<span class="tier t-{first}">[{m.group(1)}{m.group(2)}]</span>'
     return TIER_RE.sub(repl, htmltext)
 
-def render():
-    missing = [source for source in SOURCES if not os.path.exists(source)]
-    if missing:
-        sys.exit(f"book source not found: {missing[0]}")
-    bodies = []
-    for source in SOURCES:
-        text = open(source, encoding="utf-8").read()
-        text = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, flags=re.S)
-        bodies.append(text.strip())
-    raw = "\n\n---\n\n".join(bodies)
+
+def route_source_link(match):
+    """Route a non-deployed source link to its declared public boundary."""
+    source_path = os.path.normpath(match.group("target").split("#", 1)[0])
+    source_path = source_path.replace(os.sep, "/")
+    return f'href="{PUBLIC_SOURCE_LINK_ROUTES.get(source_path, "../sources/")}"'
+
+
+def load_object(path, label):
+    try:
+        value = json.loads(open(path, encoding="utf-8").read())
+    except (OSError, json.JSONDecodeError) as exc:
+        sys.exit(f"{label} is unavailable or invalid: {exc}")
+    if not isinstance(value, dict):
+        sys.exit(f"{label} must be a JSON object")
+    return value
+
+
+def resolve_corpus_path(rel, label):
+    if not isinstance(rel, str) or not rel or os.path.isabs(rel):
+        sys.exit(f"{label} must be a non-empty corpus-relative path")
+    path = os.path.normpath(os.path.join(ROOT, rel))
+    try:
+        if os.path.commonpath([ROOT, path]) != ROOT:
+            sys.exit(f"{label} escapes the corpus root: {rel}")
+    except ValueError:
+        sys.exit(f"{label} escapes the corpus root: {rel}")
+    if not os.path.isfile(path):
+        sys.exit(f"{label} not found: {rel}")
+    return path
+
+
+def current_source_contract():
+    """Return the one public source only after every custody gate agrees.
+
+    The fail-closed rule is deliberate: a generator must not turn a frozen,
+    withheld, staged, or incompletely covered work into the current reader just
+    because a Markdown directory happens to exist.
+    """
+    books = load_object(BOOK_MANIFEST, "book manifest")
+    if books.get("schema") != "emergentism/book-manifest/v1":
+        sys.exit("book manifest schema drift")
+    works = books.get("works")
+    if not isinstance(works, list):
+        sys.exit("book manifest works must be a list")
+    matches = [row for row in works if isinstance(row, dict) and row.get("work_id") == CURRENT_WORK_ID]
+    if len(matches) != 1:
+        sys.exit(f"book manifest must declare exactly one {CURRENT_WORK_ID} work")
+    work = matches[0]
+    if work.get("release_state") != CURRENT_RELEASE_STATE:
+        sys.exit(f"{CURRENT_WORK_ID} is not the current public reader")
+    if work.get("public_route") != PUBLIC_ROUTE:
+        sys.exit(f"{CURRENT_WORK_ID} public route drift")
+    route_owners = [
+        row.get("work_id") for row in works
+        if isinstance(row, dict) and row.get("public_route") == PUBLIC_ROUTE
+    ]
+    if route_owners != [CURRENT_WORK_ID]:
+        sys.exit(f"current /book route has competing owners: {route_owners}")
+    reciprocal = next(
+        (row for row in works if isinstance(row, dict) and row.get("work_id") == "BK-RECIPROCAL-INFINITE-PLAY"),
+        None,
+    )
+    if not isinstance(reciprocal, dict):
+        sys.exit("book manifest lacks Reciprocal provenance custody")
+    if (
+        reciprocal.get("release_state") != "withheld_staged_provenance_not_current_not_rag"
+        or reciprocal.get("public_route") is not None
+        or reciprocal.get("publication_eligible") is not False
+    ):
+        sys.exit("Reciprocal provenance is not explicitly withheld from book and RAG")
+
+    declarations = work.get("publication_sources")
+    if not isinstance(declarations, list) or len(declarations) != 1:
+        sys.exit(f"{CURRENT_WORK_ID} must declare exactly one publication source")
+    declaration = declarations[0]
+    if not isinstance(declaration, dict) or declaration.get("public_eligible") is not True:
+        sys.exit("current publication source is not explicitly public-eligible")
+    lifecycle = declaration.get("lifecycle")
+    if lifecycle not in ALLOWED_SOURCE_LIFECYCLES:
+        sys.exit(f"current publication source has barred lifecycle: {lifecycle!r}")
+    source_rel = declaration.get("path")
+    source = resolve_corpus_path(source_rel, "current publication source")
+    cards_rel = declaration.get("claim_card_set")
+    cards_path = resolve_corpus_path(cards_rel, "current claim-card set")
+
+    ledger = load_object(cards_path, "current claim-card set")
+    if ledger.get("schema") != "emergentism/claim-card-set/v1":
+        sys.exit("current claim-card set schema drift")
+    if ledger.get("work_id") != CURRENT_WORK_ID:
+        sys.exit("current claim-card set work mismatch")
+    source_contract = ledger.get("source")
+    if not isinstance(source_contract, dict):
+        sys.exit("current claim-card set lacks a source contract")
+    if source_contract.get("path") != source_rel or source_contract.get("lifecycle") != lifecycle:
+        sys.exit("current claim-card source path/lifecycle mismatch")
+
+    cards = ledger.get("cards")
+    if not isinstance(cards, list) or not cards:
+        sys.exit("current publication source has no claim cards")
+    card_ids = [card.get("card_id") for card in cards if isinstance(card, dict)]
+    if len(card_ids) != len(cards) or len(card_ids) != len(set(card_ids)) or any(not item for item in card_ids):
+        sys.exit("current claim-card set has missing or duplicate IDs")
+    declared_ids = work.get("claim_card_ids")
+    if not isinstance(declared_ids, list) or set(declared_ids) != set(card_ids):
+        sys.exit("book manifest does not exactly cover the current claim-card set")
+    covered_chapters = sorted({chapter for card in cards for chapter in card.get("chapters", [])})
+    if set(covered_chapters) != set(work.get("chapter_order", [])):
+        sys.exit("book chapter order is not completely covered by current claim cards")
+    for card in cards:
+        public_state = card.get("public", {}).get("state")
+        review_state = card.get("review", {}).get("state")
+        if public_state not in ALLOWED_PUBLIC_STATES:
+            sys.exit(f"claim card {card.get('card_id')} has non-current public state: {public_state!r}")
+        if review_state not in ALLOWED_REVIEW_STATES:
+            sys.exit(f"claim card {card.get('card_id')} is not reviewed: {review_state!r}")
+
+    register = load_object(CLAIM_REGISTER, "claim-card register")
+    register_selected = [
+        row for row in register.get("cards", [])
+        if isinstance(row, dict) and row.get("work_id") == CURRENT_WORK_ID
+    ]
+    register_rows = {
+        row.get("card_id"): row for row in register_selected
+    }
+    if len(register_selected) != len(register_rows) or set(register_rows) != set(card_ids):
+        sys.exit("derived claim-card register does not exactly cover the current work")
+    for card_id, row in register_rows.items():
+        if row.get("source_path") != source_rel or row.get("source_lifecycle") != lifecycle:
+            sys.exit(f"derived claim-card source contract drift: {card_id}")
+        if row.get("public_state") not in ALLOWED_PUBLIC_STATES:
+            sys.exit(f"derived claim-card public state is not current: {card_id}")
+        if row.get("review_state") not in ALLOWED_REVIEW_STATES:
+            sys.exit(f"derived claim-card is not reviewed: {card_id}")
+
+    graph = load_object(CLAIM_GRAPH, "claim graph")
+    graph_selected = [
+        row for row in graph.get("nodes", [])
+        if isinstance(row, dict) and row.get("id") in set(card_ids)
+    ]
+    graph_rows = {
+        row.get("id"): row for row in graph_selected
+    }
+    if len(graph_selected) != len(graph_rows) or set(graph_rows) != set(card_ids):
+        sys.exit("claim graph does not exactly cover the current work")
+    for card_id, row in graph_rows.items():
+        if row.get("kind") != "claim" or row.get("lifecycle") != lifecycle:
+            sys.exit(f"claim graph lifecycle drift: {card_id}")
+
+    return {
+        "work": work,
+        "source": source,
+        "source_rel": source_rel,
+        "lifecycle": lifecycle,
+        "cards_path": cards_path,
+        "cards_rel": cards_rel,
+        "card_ids": sorted(card_ids),
+        "covered_chapters": covered_chapters,
+        "public_states": sorted({card["public"]["state"] for card in cards}),
+        "review_states": sorted({card["review"]["state"] for card in cards}),
+        "book_manifest_schema": books["schema"],
+    }
+
+
+def chapter_slug(title):
+    """Normalize a numbered source heading to its manifest chapter key."""
+    core = re.sub(r"^\d+\.\s*", "", strip_tags(title)).split(" — ", 1)[0].strip()
+    core = re.sub(r"^the\s+", "", core, flags=re.I)
+    return re.sub(r"[^a-z0-9]+", "-", core.lower()).strip("-")
+
+
+def validate_rendered_chapters(body, contract):
+    """Bind what the renderer will publish to the card-covered chapter list.
+
+    Coverage declarations alone are insufficient: a new numbered H2 in the
+    source would otherwise be rendered even if neither the manifest nor any
+    claim card named it. Validate the rendered HTML immediately before it is
+    split into public chapters.
+    """
+    h1s = re.findall(r'<h1 id="[^"]+">(.*?)</h1>', body, flags=re.S)
+    if len(h1s) != 1:
+        sys.exit(f"current publication source must render exactly one H1; found {len(h1s)}")
+
+    rendered_candidates = []
+    for heading_id, title_html in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body, flags=re.S):
+        title = strip_tags(title_html)
+        selected_by_renderer = bool(re.match(r"\d", heading_id))
+        numbered_in_source = bool(re.match(r"^\d+\.\s+", title))
+        if selected_by_renderer != numbered_in_source:
+            sys.exit(
+                "numbered source H2 and renderer chapter selection disagree: "
+                f"id={heading_id!r} title={title!r}"
+            )
+        if numbered_in_source:
+            rendered_candidates.append((heading_id, title))
+    parsed = []
+    for heading_id, title in rendered_candidates:
+        match = re.match(r"^(\d+)\.\s+(.+)$", title)
+        if not match:
+            sys.exit(f"renderer-selected H2 is not a numbered chapter: {heading_id!r}")
+        parsed.append((int(match.group(1)), chapter_slug(title)))
+
+    expected_order = contract["work"].get("chapter_order")
+    if not isinstance(expected_order, list) or any(not isinstance(item, str) or not item for item in expected_order):
+        sys.exit("book manifest chapter order must be a non-empty string list")
+    expected_numbers = list(range(1, len(expected_order) + 1))
+    actual_numbers = [number for number, _ in parsed]
+    actual_order = [slug for _, slug in parsed]
+    if len(parsed) != 12 or len(expected_order) != 12:
+        sys.exit(
+            "current reader must have exactly 12 numbered, card-covered chapters; "
+            f"source={len(parsed)} manifest={len(expected_order)}"
+        )
+    if actual_numbers != expected_numbers:
+        sys.exit(f"source chapter numbering drift: {actual_numbers}")
+    if actual_order != expected_order:
+        sys.exit(f"source chapter order is not the manifest/card-covered order: {actual_order}")
+    if set(actual_order) != set(contract["covered_chapters"]):
+        sys.exit("rendered source chapters are not exactly covered by current claim cards")
+    return actual_order
+
+
+def render(contract):
+    text = open(contract["source"], encoding="utf-8").read()
+    raw = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, flags=re.S).strip()
 
     md = markdown.Markdown(extensions=EXTENSIONS)
     body = md.convert(raw)
-    # Repository Markdown sources are not deployed. Route their links to the
-    # public source boundary instead of emitting dead filesystem-relative URLs.
-    body = re.sub(r'href="[^"#]*\.md(?:#[^"]*)?"', 'href="../sources/"', body)
+    # Repository Markdown sources are not deployed. Most route to the generic
+    # source boundary; explicitly declared weaker public projections may route
+    # to their own visible boundary instead of emitting a dead relative URL.
+    body = SOURCE_LINK_RE.sub(route_source_link, body)
     body = wrap_tiers(body)
+    source_chapter_order = validate_rendered_chapters(body, contract)
 
-    # Split into chapter sections at each <h1 id=...>.
-    heads = re.findall(r'<h1 id="([^"]+)">(.*?)</h1>', body, flags=re.S)
-    parts = re.split(r'(<h1 id="[^"]+">.*?</h1>)', body, flags=re.S)
+    # The One-Sitting source owns one H1 and twelve numbered H2 chapters. The
+    # unnumbered subtitle stays in the overture and the Reader Map stays with
+    # chapter 12; neither becomes an uncontracted extra chapter.
+    chapter_heading = r'(?:<h1 id="[^"]+">.*?</h1>|<h2 id="\d[^\"]*">.*?</h2>)'
+    parts = re.split(f"({chapter_heading})", body, flags=re.S)
 
     # pass 1: collect chapters
     chapters = []
@@ -92,7 +295,7 @@ def render():
     while i < len(parts):
         h1 = parts[i]
         content = parts[i + 1] if i + 1 < len(parts) else ""
-        m = re.match(r'<h1 id="([^"]+)">(.*?)</h1>', h1, flags=re.S)
+        m = re.match(r'<h[12] id="([^"]+)">(.*?)</h[12]>', h1, flags=re.S)
         chapters.append((m.group(1), strip_tags(m.group(2)), content))
         i += 2
 
@@ -133,42 +336,76 @@ def render():
     page = page.replace("%%NCH%%", str(n_ch))
     page = page.replace("%%WORDS%%", f"{words:,}")
 
-    return page, n_ch, words
+    return page, n_ch, words, source_chapter_order
 
 
 def sha_bytes(value):
     return hashlib.sha256(value).hexdigest()
 
 
-def desired_manifest(page):
-    graph = os.path.join(ROOT, "00_META", "registers", "CLAIM_GRAPH.json")
-    contract = os.path.join(ROOT, "00_META", "claim_cards", "one_sitting.yaml")
+def desired_manifest(page, contract, source_chapter_order):
+    source = contract["source"]
     return {
-        "schema": "emergentism/public-book-build/v1",
+        "schema": "emergentism/public-book-build/v2",
+        "work_id": CURRENT_WORK_ID,
+        "catalog_contract": {
+            "schema": contract["book_manifest_schema"],
+            "path": os.path.relpath(BOOK_MANIFEST, ROOT).replace(os.sep, "/"),
+            "sha256": sha_bytes(open(BOOK_MANIFEST, "rb").read()),
+            "release_state": CURRENT_RELEASE_STATE,
+            "public_route": PUBLIC_ROUTE,
+        },
         "sources": [
             {
-                "path": os.path.relpath(source, ROOT).replace(os.sep, "/"),
+                "path": contract["source_rel"],
                 "sha256": sha_bytes(open(source, "rb").read()),
+                "lifecycle": contract["lifecycle"],
+                "public_eligible": True,
+                "claim_card_set": contract["cards_rel"],
             }
-            for source in SOURCES
         ],
-        "ordered_source_paths": [os.path.relpath(source, ROOT).replace(os.sep, "/") for source in SOURCES],
+        "ordered_source_paths": [contract["source_rel"]],
         "output": {"path": "book/index.html", "sha256": sha_bytes(page.encode("utf-8"))},
         "renderer": {"package": "Markdown", "version": markdown.__version__, "extensions": EXTENSIONS},
         "claim_card_contract": {
             "schema": "emergentism/claim-card-set/v1",
-            "path": os.path.relpath(contract, ROOT).replace(os.sep, "/"),
-            "sha256": sha_bytes(open(contract, "rb").read()),
-            "graph_path": os.path.relpath(graph, ROOT).replace(os.sep, "/"),
-            "graph_sha256": sha_bytes(open(graph, "rb").read()),
+            "path": contract["cards_rel"],
+            "sha256": sha_bytes(open(contract["cards_path"], "rb").read()),
+            "register_path": os.path.relpath(CLAIM_REGISTER, ROOT).replace(os.sep, "/"),
+            "register_sha256": sha_bytes(open(CLAIM_REGISTER, "rb").read()),
+            "graph_path": os.path.relpath(CLAIM_GRAPH, ROOT).replace(os.sep, "/"),
+            "graph_sha256": sha_bytes(open(CLAIM_GRAPH, "rb").read()),
+            "coverage": {
+                "claim_card_count": len(contract["card_ids"]),
+                "claim_card_ids": contract["card_ids"],
+                "covered_chapters": contract["covered_chapters"],
+                "rendered_source_chapter_order": source_chapter_order,
+                "public_states": contract["public_states"],
+                "review_states": contract["review_states"],
+            },
         },
-        "authority": "deterministic projection receipt; source owners retain semantics",
+        "withheld_provenance": {
+            "path": "13_BOOKS/the_reciprocal/",
+            "lifecycle": "withheld_staged_provenance",
+            "included_in_output": False,
+            "included_in_rag": False,
+        },
+        "authority": "deterministic projection receipt; the current source owner retains semantics",
     }
 
 
 def build(check=False):
-    page, n_ch, words = render()
-    manifest = (json.dumps(desired_manifest(page), ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+    contract = current_source_contract()
+    page, n_ch, words, source_chapter_order = render(contract)
+    manifest = (
+        json.dumps(
+            desired_manifest(page, contract, source_chapter_order),
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n"
+    )
     if check:
         errors = []
         if not os.path.exists(OUT) or open(OUT, "rb").read() != page.encode("utf-8"):
@@ -202,8 +439,8 @@ TEMPLATE = r"""<!DOCTYPE html>
 <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Book — Emergentism</title>
-<meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. Load-bearing claim coverage remains incomplete." />
+<title>The One-Sitting Reader — Emergentism</title>
+<meta name="description" content="A current Emergentist reader: a typed worldview, its practical compass, selected symbolic grammar, open wagers, and visible limits. World-facing evidence and independent review remain incomplete." />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23b8862c' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2.4' fill='%23b8862c'/%3E%3C/svg%3E" />
 <style>
@@ -387,14 +624,14 @@ h1[id],h2[id]{scroll-margin-top:70px;position:relative}
 
 <div class="book-shell">
   <aside class="toc" id="toc" aria-label="Table of contents">
-    <div class="toc-head">The Book · %%NCH%% chapters · %%WORDS%% words</div>
+    <div class="toc-head">One-Sitting Reader · %%NCH%% chapters · %%WORDS%% words</div>
     %%TOC%%
   </aside>
   <main class="reading" id="main" tabindex="-1">
     <div class="reading-inner">
       %%BODY%%
       <footer class="book-foot">
-        <div class="phi">P_node = Φ̂₄V₄</div>
+        <div class="phi">P_node := min(Φ̂₄, V₄) · ordinal AND-class; Φ̂₄V₄ ranking retired</div>
         <p>This reader distills the current <a href="../dimensions/">dimension-first spine</a>, <a href="../practice/">Lived Compass</a>, and <a href="../record/">correction record</a>.</p>
         <p>Its highest success is that you can put it down.</p>
       </footer>

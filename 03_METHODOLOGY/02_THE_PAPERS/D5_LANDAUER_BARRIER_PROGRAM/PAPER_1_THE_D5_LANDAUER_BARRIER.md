@@ -103,7 +103,8 @@ Selection cannot write its own outcome receipt.
 
 1. D5 is a physical carrier, force, or measurement layer.
 2. Every possible branch has an independent thermodynamic cost.
-3. Landauer proves `P_node = ΦV`, the D-ladder, ethics, or strong emergence.
+3. Landauer does not prove the retired `P_node = ΦV` form, the D-ladder,
+   ethics, or strong emergence.
 4. A commitment receipt proves the expected outcome occurred.
 5. A model's option field is identical to Everett branches or any quantum
    interpretation.

@@ -11,8 +11,10 @@ rosetta:
 
 # 04_AXIology — Justice Constrains Commitment
 
-This lane owns pure Emergentist value theory. It does not inherit authority or
-warrant from any institution, product, or external governance framework.
+This lane owns pure Emergentist value theory together with the cross-level
+bridge-law discipline governing how any claim — including a value claim — may
+travel between D-levels. It does not inherit authority or warrant from any
+institution, product, or external governance framework.
 
 ## Core contract
 
@@ -44,11 +46,15 @@ may never be demanded by a collective as proof of ethics.
 
 ## Power-Max boundary
 
-For an agent `x`, let:
+For an agent `x`, let `q_x(t)` be a separately declared and defended cardinal
+durable-potential measure:
 
 \[
-W_x(T)=\int_0^T P_x(t)\,dt.
+W_x(T)=\int_0^T q_x(t)\,dt.
 \]
+
+The selected ordinal `P_node` is compared before/after and bearer by bearer; it
+is neither integrated nor silently substituted for `q_x`.
 
 Power-Max is a constrained search, not an unconditional law of nature:
 
@@ -73,6 +79,8 @@ unconditional maximization claim is therefore false.
 | [Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md) | Formal value owner: Justice, morals, ethics, syntropy, sacrifice |
 | [Rights, Duties, and Due Process](02_VALUE_THEORY/01_RIGHTS_DUTIES_AND_DUE_PROCESS.md) | Law-facing translation of the dyad |
 | [The Good, the Evil, and the Transcendentals](02_VALUE_THEORY/00_THE_GOOD_THE_EVIL_AND_THE_TRANSCENDENTALS.md) | Interpretive value language |
+| [Transcendentals](02_VALUE_THEORY/01_TRANSCENDENTALS.md) | Bounded Beauty, Truth, and Justice lens; no chart-coordinate warrant |
+| [Objective Ethics Bridge Docket](02_VALUE_THEORY/02_OBJECTIVE_ETHICS_BRIDGE_DOCKET.md) | A4 research docket; Justice remains chosen while moral realism is evidence-open |
 | [Bridge Laws](00_BRIDGE_LAWS_BETWEEN_LEVELS.md) | Cross-level creation, stabilization, and destruction tests |
 | [Extraction Law](00_THE_EXTRACTION_LAW.md) | Conditional extraction dynamics and counterexamples |
 | [Commandment vs Geometry](00_COMMANDMENT_VS_GEOMETRY.md) | Chosen vow versus analytic consequence |
@@ -88,8 +96,9 @@ active doctrinal authority.
 
 - The moral and ethical formulae are `[S]` inside their declared definitions;
   they do not derive an ought from mathematics alone.
-- `P_node=ΦV` is the selected normalized Emergentist instance of a broader
-  conjunctive family, not the uniquely forced measure of value.
+- `P_node=min(Φ̂₄,V₄)` is the selected working score over ordinal factors. The
+  historical product form `Φ̂₄V₄` / public `ΦV` remains an AND-class name but
+  may not rank, score, or compare nodes.
 - Sphere-chart identities are analytic facts only; they do not prove ethics.
 - The deity, warrior, and equator language is `[I]` translation.
 - Consequential action uses an `AuthorizationEnvelope`; ordinary reversible AI

@@ -28,8 +28,13 @@ simulations, and validation scripts for Emergentism alone.
 - `02_COMPILERS/` — deterministic Burri plate renderer and semantic tests.
 - `03_SIMULATIONS/` — mathematical and scientific models downstream of canon.
 - `04_DATA_PIPELINES/` — current non-retired research pipelines.
+- `05_FORMAL_VERIFICATION/` — the Lean 4 + mathlib project behind the local
+  formal-verification surface; structural checks are wired through
+  `check_established.py`.
+- `06_PACKAGES/` — empty declared destination for a future shared library.
 - `07_AGENT_OPS/generate_agents_md.py` — deterministic pure-Emergentism route-card generator.
-- `08_AUDIT_ARTIFACTS/` — current generated audit outputs only.
+- `08_AUDIT_ARTIFACTS/audit_dependency_graph.py` — current read-only audit
+  script; this folder presently holds no generated report.
 - `90_ARCHIVE/` — cold tool history, never an active command surface.
 
 Application packages, deployment gates, venture routers, and organization-specific

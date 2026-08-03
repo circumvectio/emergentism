@@ -64,7 +64,7 @@ member. Therefore neither side is guaranteed to maximize itself by helping the
 other. Durable mutual option widening is an objective chosen **inside** the
 Justice-admissible set; it is not an unconditional law of agents or ecology.
 
-`η=0` is necessary in the selected non-extractive ethic but insufficient.
+`η_move=0` is necessary in the selected non-extractive ethic but insufficient.
 Balance is optimal only under an explicitly specified symmetric objective and
 constraints. Rosetta row L4, mythic names, or “Dharma” never substitutes for
 complete bearer coverage, consent, authorization, custody, contest,
@@ -85,7 +85,7 @@ this naming is removed.
 ## Kintsugi seam
 
 The predecessor placed the chosen values too close to chart coordinates,
-treated mutual benefit as unconditional, and used `η=0` plus balance as a
+treated mutual benefit as unconditional, and used `η_move=0` plus balance as a
 complete moral compass. Those claims are superseded. The original remains
 recoverable at Git blob `8ba48f914f41eb9f8b66ca1ee493d45e38727e88`.
 

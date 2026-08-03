@@ -47,7 +47,11 @@ The framework refuses both. The axioms are neither brute discoveries nor arbitra
 
 The axioms are **Productive Transcendental Wagers**.
 
-1. **Transcendental:** Because they establish the preconditions for coherence. You cannot empirically test whether `P_node = Φ × V` without first defining the mathematical environment bounding `Φ` and `V`. They build the floor to stand upon.
+1. **Transcendental:** Because they establish the preconditions for coherence.
+   You cannot empirically test the selected `P_node=min(Φ̂₄,V₄)`, or a
+   separately cardinal product candidate, without first defining the bearer,
+   factor orders, measurements, and comparison protocol. They build the floor
+   to stand upon.
 2. **Wager:** Because the framework openly acknowledges that other floors could be built. We bet on this specific geometric layout (S²) because the odds of survival currently favor it.
 3. **Productive:** Because they generate a coherent, testable, and parsimonious core state that immediately maps to external data.
 
@@ -72,7 +76,9 @@ The public warrant of the axioms is not absolute. Their warrant is determined by
 This paper is falsified if:
 
 1. **Dogmatic Reversion:** The framework relies on an axiom to prove an empirical outcome, but forbids the empirical outcome from threatening the axiom.
-2. **Rival Outperformance:** A fundamentally different axiomatic architecture (a non-spherical, non-multiplicative system) is computationally proven to yield a greater integration of the exact same physical, biological, and economic datasets with fewer initial axioms.
+2. **Rival Outperformance:** A fundamentally different axiomatic architecture
+   is shown under a fair preregistered comparison to integrate the same physical,
+   biological, and economic datasets with fewer assumptions.
 3. **Barren Wager:** The axioms (specifically O4 and O5) fail to produce any measurable empirical predictions or functional constitutional structures, rendering the wager mathematically and socially sterile.
 
 ---

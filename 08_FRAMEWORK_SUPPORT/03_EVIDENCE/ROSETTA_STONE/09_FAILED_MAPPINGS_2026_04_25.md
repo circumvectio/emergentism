@@ -1,7 +1,7 @@
 ---
 rosetta:
   primary_column: "Meta"
-  register: "[E/S/I]"
+  register: "[B/S/I]"
   canonical_phrase: "Domains examined that do NOT fit the 7-stage structure — honesty surface for the Rosetta"
 ---
 

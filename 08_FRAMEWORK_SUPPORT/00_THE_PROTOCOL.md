@@ -142,9 +142,11 @@ This is the framework's honest assessment of how evidence would shift its positi
 
 ### Hypothesis
 
-If agents are genuinely coupled (`λ > 0`), scored by the finite-node product
-`P_node = Φ × V`, evaluated over a long enough horizon for network effects to
-return, and placed inside an enforceable `η = 0` arena, then durable
+If agents are genuinely coupled (`λ > 0`), scored by the jointly necessary
+finite-node model (`P_node=min(Φ̂₄,V₄)` is the selected ordinal working score;
+the product is a retired historical name), evaluated over a long enough horizon
+for network effects to return, and placed inside an enforceable `η_move = 0`
+arena, then durable
 optimization should select syntropic trajectories more strongly than additive
 baseline agents.
 
@@ -152,8 +154,9 @@ This is not a claim that cooperation appears spontaneously from multiplication
 alone. The current Power-Max Lemma says the opposite: coupling creates
 interdependence, but one-shot extraction can still pay unless the private
 extraction channel is blocked. Protocol D therefore tests the constrained
-frontier: whether multiplicative agents under enforced non-extraction converge
-toward `ΔP_node,i >= 0` and `ΔP_node,H >= 0` more reliably than additive agents.
+frontier: whether conjunctive agents under enforced non-extraction converge
+toward `P_node,i(after) ⪰ P_node,i(before)` and
+`P_node,H(after) ⪰ P_node,H(before)` more reliably than additive agents.
 
 ### Status
 

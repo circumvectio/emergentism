@@ -2,6 +2,7 @@
 title: "Dharma Yuddha — Critical Edition 1"
 status: "STAGED PRIVATE EDITION — five chapters, 100% claim-card coverage; nonviolent constitutional inquiry"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [DHY01-01, DHY01-02, DHY01-03, DHY01-04, DHY01-05]
 ---
 

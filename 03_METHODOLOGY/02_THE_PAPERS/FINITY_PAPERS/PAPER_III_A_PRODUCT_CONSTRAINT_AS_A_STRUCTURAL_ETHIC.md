@@ -37,10 +37,12 @@ conservation law, pathology, virtue, person-ranking, or ethic.
 ## Selected conjunctive model `[I/C]`
 
 Emergentism declares a normalized conjunctive family `C(Φ,V)` with
-`C(0,V)=C(Φ,0)=0`, and selects `C×(Φ,V)=ΦV` as its canonical compression. The
-product models the intuition that counterfactual reach and embodied means are
-jointly necessary. Other conjunctive aggregators can rank interior points
-differently; the product is not forced.
+`C(0,V)=C(Φ,0)=0`, and selects `P_node=min(Φ̂₄,V₄)` over its
+ordinal factors. The historical product `C×(Φ̂₄,V₄)=Φ̂₄V₄` displays
+the same joint-necessity intuition but is retired as a node ranking. It may be
+tested only as an explicit candidate under separately defended cardinal scales.
+Other conjunctive aggregators can rank interior points differently; none is
+forced by the zero boundary.
 
 ## Declared ethic `[I]`
 
@@ -63,6 +65,8 @@ not a consequence of `φν=1`. Masculine/feminine, Śiva/Śakti, yin/yang,
 hemispheric, and other dyads remain optional Rosetta analogies. They confer no
 proof and may never rank persons or groups.
 
-**Kill criterion:** if the product adds no predictive value over alternatives,
-replace it. If the Justice construction hides a harmed bearer or resists an
-adverse outcome receipt, the moral classification fails.
+**Kill criterion:** if the selected minimum adds no predictive value over fair
+alternatives, replace it. Failure of a separately cardinal product candidate
+rejects that candidate without silently changing `P_node`. If the Justice
+construction hides a harmed bearer or resists an adverse outcome receipt, the
+moral classification fails.

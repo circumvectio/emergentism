@@ -1,22 +1,32 @@
 #!/usr/bin/env python3
-"""Enforce foundation consistency across its four homes.
+"""Enforce Foundation consistency across typed owners and current surfaces.
 
-The foundation is stated in four places by design: K-5 owns R0, the Settled Canon
-Registry routes it (KSC-28), docs 45-47 own the formal results, and
-00_THE_FOUNDATION.md is a projection that states it whole. Projections drift.
-The claim register has a validator; the foundation did not.
+The contract spans nine core routing/type surfaces, seven formal documents,
+and three dated ruling receipts. K-5 owns R0, the Settled Canon Registry routes
+it (KSC-28), and 00_THE_FOUNDATION.md is a projection that states it whole.
+Active source text and manifest-declared current public surfaces are additionally
+scanned through the Titan/algebra type firewall. Dated receipts, staged books,
+frozen public projections, and archives retain historical syntax outside this
+claim. Projections drift; this validator makes current drift visible.
 
-This checks the invariants that must hold across all four, so that repair work
-cannot silently desynchronise them.
+This checks the invariants that must agree across the named owners and the
+negative type contract across the scoped source/current-public corpus.
 
     python3 09_TOOLS/01_SCRIPTS/check_foundation.py
 """
 
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from foundation_type_firewall import line_number_for_offset, titan_arithmetic_matches
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -24,6 +34,24 @@ PROJECTION = Path("00_THE_FOUNDATION.md")
 K5 = Path("00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md")
 REGISTRY = Path("00_META/00_SETTLED_CANON_REGISTRY.md")
 KERNEL = Path("00_THE_KERNEL_INDEX.md")
+FORMULA_BLOCK = Path("05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md")
+PRIMITIVES = Path("05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md")
+D1_BOUNDARY = Path("05_COSMOLOGY/03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md")
+TITAN_CANON = Path(
+    "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/"
+    "00_THE_TRANSCENDENTAL_TRINITY_CANON.md"
+)
+FORMAL_ORACLE = Path("09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean")
+PUBLIC_PARITY_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
+RECORD_LEDGER = Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md")
+ACTIVE_EXTRA_TYPE_SURFACES = (
+    FORMAL_ORACLE,
+    Path("12_PUBLIC_SITE/generate_public_library.py"),
+    # The active K-7 owner lives inside the otherwise historical receipt lane.
+    # Keep it in scope explicitly so the archive exclusion cannot hide live
+    # Titan syntax at the record front door.
+    RECORD_LEDGER,
+)
 
 FORMAL_DOCS = [
     Path("05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md"),
@@ -39,6 +67,20 @@ RULING_RECEIPTS = [
     Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md"),
     Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md"),
     Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS/176_THE_FOUNDATION_SEATED_R0_ADOPTED_2026_07_29.md"),
+]
+
+REQUIRED_SURFACES = [
+    PROJECTION,
+    K5,
+    REGISTRY,
+    KERNEL,
+    FORMULA_BLOCK,
+    PRIMITIVES,
+    D1_BOUNDARY,
+    TITAN_CANON,
+    FORMAL_ORACLE,
+    *FORMAL_DOCS,
+    *RULING_RECEIPTS,
 ]
 
 # The R0 refusal must say the same thing wherever it is stated. Normalised
@@ -81,6 +123,23 @@ FENCES = [
      [PROJECTION, REGISTRY, RULING_RECEIPTS[1]]),
 ]
 
+TYPED_WITNESS_REQUIRED = [
+    "algebrawitness := (g, ·, e, a, b)",
+    "carrier(algebrawitness) := g",
+    "nocoercion(titanframe, carrier(algebrawitness))",
+    "arithmeticsignature(titanframe)=∅",
+]
+
+ACTIVE_SCAN_SUFFIXES = {".md", ".json", ".yaml", ".yml"}
+ACTIVE_SCAN_EXCLUDED_PREFIXES = (
+    Path("00_HANDOFF"),
+    Path("11_UPLINK/50_AUDITS_AND_EXECUTIONS"),
+    Path("11_UPLINK/60_SESSION_PACKETS"),
+    Path("12_PUBLIC_SITE"),
+    Path("13_BOOKS"),
+    Path("91_COMPATIBILITY"),
+)
+
 
 def norm(text: str) -> str:
     """Collapse whitespace and markdown emphasis so wording is compared, not layout.
@@ -89,6 +148,40 @@ def norm(text: str) -> str:
     """
     text = re.sub(r"[*`]", "", text)
     return re.sub(r"\s+", " ", text).lower()
+
+
+def active_foundation_scan_paths(root: Path) -> list[Path]:
+    """Discover source-owner and declared-current public type surfaces."""
+
+    paths: set[Path] = set()
+    for path in root.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in ACTIVE_SCAN_SUFFIXES:
+            continue
+        rel = path.relative_to(root)
+        if "90_ARCHIVE" in rel.parts:
+            continue
+        if any(rel.is_relative_to(prefix) for prefix in ACTIVE_SCAN_EXCLUDED_PREFIXES):
+            continue
+        paths.add(rel)
+
+    for rel in ACTIVE_EXTRA_TYPE_SURFACES:
+        if (root / rel).is_file():
+            paths.add(rel)
+
+    manifest = root / PUBLIC_PARITY_MANIFEST
+    if manifest.is_file():
+        try:
+            public_contract = json.loads(manifest.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            public_contract = {}
+        for declared in public_contract.get("currentSurfaces", []):
+            if not isinstance(declared, str):
+                continue
+            rel = Path("12_PUBLIC_SITE") / declared
+            if (root / rel).is_file():
+                paths.add(rel)
+
+    return sorted(paths, key=lambda item: item.as_posix())
 
 
 def strata_block(body: str) -> str:
@@ -107,7 +200,7 @@ def main() -> int:
     errors: list[str] = []
 
     # --- every home exists -------------------------------------------------
-    required = [PROJECTION, K5, REGISTRY, KERNEL] + FORMAL_DOCS + RULING_RECEIPTS
+    required = REQUIRED_SURFACES
     bodies: dict[Path, str] = {}
     for rel in required:
         path = ROOT / rel
@@ -115,6 +208,11 @@ def main() -> int:
             errors.append(f"missing foundation home: {rel.as_posix()}")
             continue
         bodies[rel] = path.read_text(encoding="utf-8")
+    for rel in ACTIVE_EXTRA_TYPE_SURFACES:
+        if not (ROOT / rel).is_file():
+            errors.append(
+                f"missing required active Foundation type surface: {rel.as_posix()}"
+            )
     if errors:
         print("FOUNDATION CONTRACT: FAIL")
         print("\n".join(f"- {e}" for e in errors))
@@ -195,6 +293,22 @@ def main() -> int:
     if "eighth" not in proj:
         errors.append("00_THE_FOUNDATION.md must disclaim being an eighth kernel surface")
 
+    # --- TitanFrame and the algebra witness remain disjoint ---------------
+    for label, body in ((PROJECTION.as_posix(), proj), (K5.as_posix(), k5)):
+        for fragment in TYPED_WITNESS_REQUIRED:
+            if fragment not in body:
+                errors.append(f"{label}: typed witness boundary is missing {fragment!r}")
+
+    active_scan_paths = active_foundation_scan_paths(ROOT)
+    for rel in active_scan_paths:
+        source_text = (ROOT / rel).read_text(encoding="utf-8")
+        for pattern, offset in titan_arithmetic_matches(source_text):
+            line_number = line_number_for_offset(source_text, offset)
+            errors.append(
+                f"{rel.as_posix()}:{line_number}: forbidden Titan arithmetic or "
+                f"cross-type identification ({pattern})"
+            )
+
     # --- fences present in every home that must carry them ------------------
     for name, patterns, homes in FENCES:
         for home in homes:
@@ -209,8 +323,9 @@ def main() -> int:
 
     print(
         f"FOUNDATION CONTRACT: PASS "
-        f"({len(required)} homes, {len(FENCES)} fences, "
-        f"{len(PRESUPPOSED)+len(BASE)} strata symbols)"
+        f"({len(required)} surfaces, {len(FENCES)} fences, "
+        f"{len(PRESUPPOSED)+len(BASE)} strata symbols, "
+        f"{len(active_scan_paths)} source/current-public surfaces type-scanned)"
     )
     return 0
 

@@ -25,7 +25,7 @@ rosetta:
 > three registers convert only as licensed in the map — in particular the two
 > zeros do not translate ("do not compare the two thresholds as if they were
 > the same number," `40_THE_LOGARITHMIC_REALIGNMENT.md` §3). This banner closes
-> the register gap recorded by Receipt 158: this file previously presented the ratio as *the*
+> the register gap recorded by `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md`: this file previously presented the ratio as *the*
 > definition with no register marker.
 
 # THE EXTRACTION COEFFICIENT (`η_ratio`)

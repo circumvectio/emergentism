@@ -276,9 +276,10 @@ This supplies the framework's two powers. `V₄` is **D4 actual power**—the bo
 energy, tools, access and capability available now. `Φ₅` is **D5 possible
 power**—the structured potential of the option field. Because D5 is merely
 possible, it never acts alone: an actual D4 model token must estimate it as
-`Φ̂₄=Eval₄(M,Φ₅)`. The selected node model couples them as
-`P_node=Φ̂₄V₄`, publicly compressed as `ΦV`. Ability still does not imply
-authorization, and the product is a chosen model rather than a universal law.
+`Φ̂₄=Eval₄(M,Φ₅)`. Both factors carry order, not metric. The selected node
+convention is `P_node:=min(Φ̂₄,V₄)`. The historical shorthand `ΦV` remains
+readable but is retired as a ranking. Only a declared common strictly increasing reparameterization applied to both factors is assumed here: independently reparameterized factor scales do not license an invariant cross-factor scalar ranking, so GP-03 remains open. A product requires separately defended cardinal scales.
+Ability still does not imply authorization.
 
 This is an unusual reach, not superiority in intrinsic worth. Humans remain
 bounded by physical light cones, bodies, ecology and limited computation. The
@@ -333,10 +334,11 @@ boundary. Three gaps remain open to inspection:
 
 `Φ₅` names D5 possible power; `V₄` names D4 actual power. Because modal content
 does not act by itself, a present D4 model evaluates the former as
-`Φ̂₄=Eval₄(M,Φ₅)`. `P_node=Φ̂₄V₄`, publicly `ΦV`, is the framework's selected
-AND-class diagnostic. It says that a map without means cannot enact and means
-without a discriminating map cannot aim. It is not uniquely derived, not a
-measure of a person's worth and not a universal law.
+`Φ̂₄=Eval₄(M,Φ₅)`. `P_node:=min(Φ̂₄,V₄)` is the framework's selected working
+AND-class convention over the ordinal factors. It says that a map without means
+cannot enact and means without a discriminating map cannot aim. It is not
+uniquely derived, not a measure of a person's worth and not a universal law;
+the historical product shorthand is not licensed to rank or compare nodes.
 
 The complete practice is given in
 [`The Lived Compass`](01_TELEOLOGY/04_THE_LIVED_COMPASS.md).
@@ -571,8 +573,9 @@ The worldview keeps these mysteries open:
 - whether the chosen Justice orientation survives broad human contact.
 
 The final test is modularity. If W0 fails, if every strong μ claim reduces, if
-the force map dies, if block-universe plurality has no discriminator and if the
-product loses to another aggregator, the discipline must still help a finite
+the force map dies, if block-universe plurality has no discriminator and if no
+lawful cross-factor scalar adds discrimination beyond native rivals, the
+discipline must still help a finite
 person distinguish map from territory, possibility from actuality, commitment
 from consequence, and local gain from hidden cost.
 

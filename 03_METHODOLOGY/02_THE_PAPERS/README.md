@@ -29,9 +29,13 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 - `P∞ = φ · ν = 1` is a chart identity on the declared open domain, not a
   physical conservation law.
 - `B = sin θ` is the balance function.
-- `P_node = Φ × V` is empirical or organizational performance.
+- `P_node = min(Φ̂₄,V₄)` is the selected working score over ordinal factors;
+  the historical product form `Φ̂₄V₄` / public `ΦV` is retired as a ranking.
 - Physics, neuroscience, biology, and institutional papers are translations unless their own tier table explicitly says otherwise.
-- Older paper tables may still show legacy `[S]`. Under the current ladder, split `[S]` into `[A]` for established mathematics / textbook science / third-party empirical facts, and `[B]` for repository, runtime, or experiment receipts.
+- Older paper tables may still show legacy `[S]`. Under the current ladder,
+  use `[A]` for analytic or machine-checked results inside a named system and
+  `[B]` for custodied observation, attribution, measurement, build, test, or
+  receipt. Re-tier claim by claim; never split a token mechanically.
 
 ## Read First
 
@@ -69,6 +73,7 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../08_
 | [`PAPER_P`](PAPER_P_SU3_OBSTRUCTION_BARE_S2.md) | SU(3) Obstruction on Bare S² | [S]/[A]/[C] | Why bare S² is insufficient for SU(3) |
 | [`PAPER_T`](PAPER_T_ANTI_IDOLATRY_AT_SCALE.md) | Anti-Idolatry at Scale | [I] | η = 0 stress test |
 | [`PAPER_U`](PAPER_U_THE_PRACTICE_BRIDGE.md) | The Practice Bridge | [I] | Pedagogy of becoming |
+| [`PAPER_V`](PAPER_V_STEELMAN.md) | Steelmanning Emergentism — What Would Actually Falsify It | [I] | Commissioned adversarial reading; DRAFT |
 | [`PAPER_X`](PAPER_X_INFORMATION_TOPOLOGY_AND_MACRO_CONSTRAINTS.md) | Information Topology and Macro-Constraints | [S]/[I] | Costed macro-constraint calculus for causal emergence |
 
 ## D5 Landauer Barrier Program

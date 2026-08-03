@@ -2,6 +2,7 @@
 title: "The Self-Eating Serpent — Critical Edition 1"
 status: "STAGED PRIVATE EDITION — six chapters, 100% claim-card coverage; not a public release"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [SES01-01, SES01-02, SES01-03, SES01-04, SES01-05, SES01-06]
 historical_source: ../../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md
 ---

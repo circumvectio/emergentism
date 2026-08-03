@@ -34,8 +34,13 @@ A rigorous programme on the geometry of `{0, 1, ∞}` — extending Minoru Suda'
 
 > **The honest headline.** Paper V's middle-tertile prediction did **not** survive its first contact with data. A tier-`[I]` pilot — two coders blind to the prediction, scoring the standard published developmental ladders (Loevinger, Kegan, Kohlberg, Erikson, Maslow) — found integration peaking in the **top** tertile every time. That is the pre-registered kill condition, and it is recorded as a preliminary falsification rather than reframed as support. The pilot also surfaces the confound the real `[S]` study must control for: these ladders are *built* so the top stage is the "most integrated," so a naïve coding peaks at the top **by construction**. The prediction is wounded, not buried; the definitive blind-**human** study on the actual instruments is the standing requirement.
 
-**The one discipline they share:** every claim tier-marked `[A]/[B]/[S]/[I]/[C]`, never upgraded; `1 = 0 × ∞` held strictly as a frame-register **emblem**, never field arithmetic; the geometry a lens, never the Ground. The papers approach the limit by being *refutable* — the only kind worth publishing.
+**The one discipline they share:** every claim tier-marked
+`[A]/[B]/[S]/[I]/[C]`, never upgraded; the Titan frame uses only the
+operator-free emblem `• ⊙ ○`, while numeric/projective facts stay in their own
+types; the geometry is a lens, never the Ground. The former mixed-type infix is
+retired. The papers approach the limit by being *refutable* — the only kind
+worth publishing.
 
 **External sources.** Suda's source PDFs are tracked by provenance under [`_SOURCES/`](_SOURCES/README.md): Parts I-III are git-ignored third-party PDFs kept on disk with SHA-256 and byte counts. The 2026-06-06 Suda intake pass also produced the synthesis note [`00_SUDA_VALUE_EXTRACTION_2026_06_06.md`](00_SUDA_VALUE_EXTRACTION_2026_06_06.md), which separates adoptable reciprocal geometry from broader intake claims that remain `[C]/[I]`.
 
-•   ⊙   ○
+• ⊙ ○ — *operator-free selected emblem*

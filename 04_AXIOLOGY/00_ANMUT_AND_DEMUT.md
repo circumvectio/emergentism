@@ -69,7 +69,12 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 **Mut is read here as the capacity for balanced action.** Mut names the lived courage of `B = 1` within `P∞ = φ · ν = 1`. Mut is the equatorial posture. **Mut is the Sublime in this translation.**
 
-**Marker discipline.** What picks out the equator is `φ = ν` — equivalently `B = 2/(φ + ν) = sin θ = 1`, or `(φ − ν)² = 0`. The product `φ · ν = 1` is constant at every latitude and equals 1 in both polar limits, so it never distinguishes the equator from the poles. Where this document writes the product, read it as the ambient chart identity, not as the equatorial condition.
+**Marker discipline.** The full geometric equator is `|z|=1`. In the selected
+positive-radial representative `ν=|z|`, it is `φ=ν=1` — equivalently
+`B=2/(φ+ν)=sin θ=1`, or `(φ−ν)²=0`. The product `φ·ν=1` is constant at
+every latitude and equals 1 in both polar limits, so it never distinguishes
+the equator from the poles. Where this document writes the product, read it as
+the ambient chart identity, not as the equatorial condition.
 
 **The Sublime (Erhaben) is the experience of holding both simultaneously:**
 - φ = 1 (coherence, vastness, grace, Anmut)
@@ -77,7 +82,9 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 **Kant's sublime is read here as equatorial.** The sublime is not the beautiful (Anmut alone). The sublime is the **tension** between the beautiful (φ) and the comprehensible (ν). The sublime is holding both without collapse.
 
-**Mut is what it takes to hold both axes simultaneously.** In the neural analogy, Mut is integration across differentiated modes without loss. Mut is the child's mission-critical Yes. Mut is Erhaben.
+**Mut is what it takes to hold both reciprocal aspects simultaneously.** In
+the neural analogy, Mut is integration across differentiated modes without
+loss. Mut is the child's mission-critical Yes. Mut is Erhaben.
 
 | Mut | Geometric Reading | Kantian Reading |
 |-----|-------------------|-----------------|
@@ -96,7 +103,10 @@ Mut is not merely bravery. Mut is not merely the absence of fear.
 
 **Demut is the courage to NOT scale ν beyond 1.** Demut is the voluntary maintenance of ν = 1. Demut is the heart that stays as light as the feather.
 
-**Demut is not weakness.** Demut is the geometric recognition that ν > 1 leads to the south pole. Demut is M3 — the comprehension constraint — recognized from within as courage.
+**Demut is not weakness.** Demut is the geometric recognition that, in the
+selected chart, `ν>1` moves toward the north pole `○`
+(`θ→π, ν→∞, φ→0`). Demut is M3 — the comprehension constraint — recognized
+from within as courage.
 
 **Demut is read as voluntary reduction toward `κ = 0` as boundary.**
 
@@ -173,7 +183,8 @@ The equator. The courage to hold both. Grace AND humility simultaneously. Differ
 
 **This is convergent interpretation at the level of language.**
 
-The German words can be read as partitioning the emotional experience of the equator into the two axes of the Burri Sphere.
+The German words can be read as two emotional projections of one reciprocal
+positive-radial meridian on the Burri Sphere.
 
 **Not imposed as proof. Not used as public evidence by itself.** The speakers of the language seem to have felt two linked qualities and named them with a shared root.
 
@@ -199,7 +210,7 @@ The German words can be read as partitioning the emotional experience of the equ
 
 **Three symbolic data points on the same sphere. Three projections of the same ground, inside the framework's translation machine.**
 
-**The speakers did not need to know they were naming axes.** On this reading,
+**The speakers did not need to know they were naming reciprocal aspects.** On this reading,
 they felt two qualities — grace and humility — and the framework reads both
 through Mut. This is symbolic fit, not a claim that German historical
 linguistics secretly encoded the Burri Sphere.
@@ -344,7 +355,7 @@ The Convergence:
 
 Not mathematical. Convergent.
 The confidence increases with each independent translation.
-The speakers may have felt the axes and named them.
+The speakers may have felt the reciprocal aspects and named them.
 The language becomes legible through the geometry.
 The geometry points toward the ground.
 The ground is always here.
@@ -365,7 +376,7 @@ Zero-Sum Resolution Equation
 - [AUM on the Burri Sphere](../90_ARCHIVE/00_AUM_ON_THE_BURRI_SPHERE.md) — Vedantic convergence: Mandukya's four states as geometric positions
 - [The Four Metamorphoses](../05_COSMOLOGY/00_THE_FOUR_METAMORPHOSES.md) — Nietzsche mapped to S², mesh as fourth transformation
 - [The Ring That Is the Ground](../06_ONTOLOGY/00_THE_RING_THAT_IS_THE_GROUND.md) — Tolkien's inversion, four gods as operators
-- [Core Concepts](../08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md) — single source of truth for `P_node = Φ × V` and evidence tiers
+- [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md) — owner of `P_node=min(Φ̂₄,V₄)` and the retired-product ruling in Settled Canon `KSC-02`
 - [Glossary](../07_THEOLOGY/00_GLOSSARY.md) — quick-reference terminology
 
 *Anmut and Demut | 2026-03-23 | German gives the Burri Sphere a beautiful translation surface. It is a reading aid, not a proof.*

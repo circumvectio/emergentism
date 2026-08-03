@@ -82,14 +82,14 @@ Every civilisational stage in the table above can be read as a **position on the
 | L1 | Entropic collapse | Nothing — L1 is F5-absence, an-ṛta, the anti-gradient | Post-collapse vacuums, failed states |
 | L2 | Local F5-alignment | Small-group coherence, direct reciprocity, Dunbar-scale syntropy | Tribal commons, early democracies, indigenous stewardship |
 | L3 | South-pole acceleration | `V₄` scaling without adequate evaluated possible power — extraction masquerading as growth | Industrial capitalism, colonial empires, algorithmic engagement |
-| **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, widest-boundary ΣΔP_node** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
+| **L4** | **Equatorial balance** | **normalized Φ̂₄ = V₄ = 1, η = 0, bearer-complete gains under a declared comparison; no sum of ordinal scores** | **Principled republics, constitutional organisms, the wolf at Yellowstone** |
 | L5 | Possible-power-guided governance | Wisdom-directed resource allocation, multi-generational planning | Classical high civilisations, libraries, universities, sustainable infrastructure |
 | L6 | Deep F5-alignment | Contemplative economies, regenerative design, wisdom-as-practice | Monastic economies, sanghas, deep ecology experiments |
 | L7 | Closure-horizon | Theoretical limit — game-theoretic-AI integration, cosmic responsibility | No historical example; the Moksha/Asura fork at civilisational scale |
 
-**The PIE lineage (packet 138):** Indo-European civilisation can be read as a 6,000-year attempt to maintain F5-alignment through increasingly complex institutional forms — from tribal sky-father ritual through republican law through imperial bureaucracy through Christian monotheism through scientific rationalism. Each form eventually allowed η>0 into its compounding loops and collapsed. The framework's constitutional organism is the next attempt, with machine-speed self-correction (A7) and three-substrate architecture (A6) as new safeguards.
+**The PIE lineage (`138_DYEUS_PHTER_F5_INDO_EUROPEAN_LINEAGE_2026_04_24.md`):** Indo-European civilisation can be read as a 6,000-year attempt to maintain F5-alignment through increasingly complex institutional forms — from tribal sky-father ritual through republican law through imperial bureaucracy through Christian monotheism through scientific rationalism. Each form eventually allowed η>0 into its compounding loops and collapsed. The framework's constitutional organism is the next attempt, with machine-speed self-correction (A7) and three-substrate architecture (A6) as new safeguards.
 
-**The modern lineage (packet 140):** Nick Land is read as sensing F5 as acceleration but from the south pole (V-only). Occult initiates are read as sensing it behind gates. Perennialists are read as sensing it beneath doctrinal diversity. Quantum physicists provide retrocausal analogies and disputed claims [C]. Teilhard is read as sensing it as evolutionary convergence. All are partial readings of the same gradient in framework language, not proof of one-field identity.
+**The modern lineage (`140_F5_SENSED_THE_MODERN_AND_ESOTERIC_LINEAGE_2026_04_24.md`):** Nick Land is read as sensing F5 as acceleration but from the south pole (V-only). Occult initiates are read as sensing it behind gates. Perennialists are read as sensing it beneath doctrinal diversity. Quantum physicists provide retrocausal analogies and disputed claims [C]. Teilhard is read as sensing it as evolutionary convergence. All are partial readings of the same gradient in framework language, not proof of one-field identity.
 
 ## The Phi-Max Paradox
 
@@ -106,9 +106,10 @@ intended question is whether possible power can be preserved as coordination
 scales; it must not be redescribed as maintaining lowercase `φ`.
 
 The proposed L3 pattern is low `Φ̂₄` despite high `V₄`: actual productive power
-may increase while evaluated possible power declines. Inside the selected model,
-`P_node=Φ̂₄V₄`, either change can dominate the product. This is not a deduction
-from the lowercase reciprocal chart.
+may increase while evaluated possible power declines. Inside the selected
+ordinal model, `P_node=min(Φ̂₄,V₄)` is limited by the lower factor. The
+historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking. This is
+not a deduction from the lowercase reciprocal chart.
 
 This is why the framework identifies L3 capture as the central civilisational crisis: a society stuck at L3 is wealthy but incoherent, technologically powerful but spiritually bankrupt, productive but meaningless.
 

@@ -173,14 +173,17 @@ But the Übermensch is ν > 1. The Übermensch is the individual who commands mo
 **The Mesh emerges when children at the equator connect.**
 
 ```
-One child at equator:        P_node = 1 (one calibrated finite node)
-Two children at equator:     ΣP_node = 2 (each node remains locally calibrated)
-Three children:              ΣP_node = 3
-Twelve children:             ΣP_node = 12
-Mesh of equatorial nodes:    ΣP_node = n (aggregate finite-node capacity)
+One child at equator:        one locally calibrated finite node
+Two children at equator:     (P_node,1, P_node,2), kept bearer-wise
+Three children:              three bearer-indexed order positions
+Twelve children:             twelve bearer-indexed order positions
+Mesh of equatorial nodes:    n bearers; no sum of ordinal P_node codings
 ```
 
-`P∞` remains the manifold identity; the mesh scales by adding finite, locally calibrated `P_node` expressions without turning any node into a higher metaphysical rank.
+`P∞` remains the manifold identity. A mesh may add bearers and relations, but
+its capacity is not the sum of ordinal `P_node` codings. Any scalar aggregate
+requires a separately defended cardinal measure and aggregation rule; no node
+thereby acquires a higher metaphysical rank.
 
 **The Mesh solves the child's limitation:**
 - Aggregate ν > 1 (civilizational capability)

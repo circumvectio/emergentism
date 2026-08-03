@@ -14,7 +14,7 @@ rosetta:
 **Status:** **KINTSUGI COMPANION — arithmetic authority superseded 2026-07-21.** The canonical formula block and `42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md` control. This note preserves the glyph reading after correcting its former field/projective conflation.
 **Date:** 2026-07-13
 **Evidence Tier:** per line, marked throughout.
-**Authority context:** KSC-04 (`00_META/00_SETTLED_CANON_REGISTRY.md`), the D1 typed owner, receipt 126 as historical audit provenance, and Paper B §8 for its separately typed mass-shell correspondence.
+**Authority context:** KSC-04 (`00_META/00_SETTLED_CANON_REGISTRY.md`), the D1 typed owner, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` as historical audit provenance, and Paper B §8 for its separately typed mass-shell correspondence.
 **One-sentence content:** the emblem has related limit and projective readings, but none of its displayed divisions is an algebraic rearrangement in a field.
 
 ---
@@ -81,14 +81,16 @@ mass `m>0`, `φ=(E+pc)/(mc²)=e^w`, and
 coordinate identity** `φν=1`; the equator is `w=0`, and for timelike inertial
 motion `B=sech(w)=1/γ=dτ/dt` `[A]`. This is a conditional change of
 coordinates using established special relativity, not evidence that the bare
-chart is physical spacetime. What it does *not* do—per CC-CORE-1 (receipt 126,
+chart is physical spacetime. What it does *not* do—per CC-CORE-1 (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`,
 registry row)—is license the node-level zero-factor catastrophe: on the open
-chart the product stays `1` and cannot vanish. The knockout (`Φ×V=0`) is a
-**node** claim; the manifold identity was never its warrant.
+chart the product stays `1` and cannot vanish. The node knockout is instead the
+zero boundary of the selected conjunction, `min(Φ̂₄,V₄)=0`; the historical
+product has the same zero boundary but is retired as a ranking. The manifold
+identity was never either claim's warrant.
 
 ## 5 · The dark twin — the honest asterisk
 
-Receipt 126: inversion `z↦1/z` swaps `0↔∞` and fixes **two** points,
+`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`: inversion `z↦1/z` swaps `0↔∞` and fixes **two** points,
 `+1` and `−1`. The inversion orbit-closure of `{0,∞}` is only `{0,∞}`.
 Emergentism instead **adjoins** the fixed set `{−1,+1}` to select the invariant
 four-point union `{−1,0,1,∞}`. The trinity `{0,1,∞}` is therefore a naming
@@ -109,7 +111,7 @@ joining sentence remains an interpretive emblem.
   that algebra is earned; the field-arithmetic fence remains.
 - If the stated reciprocal limit or projective-map extension fails in its
   declared domain, §2 dies outright.
-- If a derivation forces `+1` over `−1` from inversion symmetry alone, §5's naming-choice ruling must be reopened against receipt 126.
+- If a derivation forces `+1` over `−1` from inversion symmetry alone, §5's naming-choice ruling must be reopened against `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`.
 
 ## Execution Surface
 

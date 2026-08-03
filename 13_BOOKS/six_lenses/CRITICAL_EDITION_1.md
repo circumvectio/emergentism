@@ -2,6 +2,7 @@
 title: "The Six Lenses — Critical Edition 1"
 status: "STAGED PRIVATE EDITION — eight chapters, 100% claim-card coverage"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [SL01-01, SL01-02, SL01-03, SL01-04, SL01-05, SL01-06, SL01-07, SL01-08]
 ---
 

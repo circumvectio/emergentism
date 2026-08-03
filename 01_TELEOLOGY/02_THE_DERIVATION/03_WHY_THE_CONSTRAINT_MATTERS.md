@@ -53,13 +53,13 @@ model, it is evil because it breaks the bond, and it is also negative-sum under
 the coupled balance conditions. The value word rides on the structural loss; it
 does not replace it.
 
-### 3. It Makes η = 0 Enforceable
+### 3. It Makes `η_move = 0` Enforceable
 
 The warrior at φ = ν = 1 cannot improve by extracting without reducing balance
 under the model's assumptions. Zero extraction is not merely a moral ideal, but
 neither is it automatic social behavior. It is the **enforced conditional
 equilibrium** in the equatorial coupled-multiplicative profile: real coupling,
-long horizon, and `η = 0` discipline must hold, or one-shot extraction can still
+long horizon, and `η_move = 0` discipline must hold, or one-shot extraction can still
 look locally profitable.
 
 ### 4. It Gives an F5 / Ordering Translation, Not a Biology or Physics Result
@@ -93,7 +93,7 @@ The equator isn't a moral recommendation. It's the **boundary of what's structur
 |----------------------|---------------------|
 | Balance is a preference | Balance is the thermodynamic minimum |
 | Extraction is immoral | Extraction is bond-breaking and negative-sum under coupled balance conditions |
-| η = 0 is a commandment | η = 0 is an enforced conditional equilibrium |
+| `η_move = 0` is a commandment | `η_move = 0` is an enforced conditional equilibrium |
 | Order is imposed | Order emerges (h₂r̥tó-) |
 | The equator is wise | The equator is derived |
 

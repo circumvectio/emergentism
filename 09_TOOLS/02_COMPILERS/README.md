@@ -49,6 +49,7 @@ source lane, repair the source and recompile.
 |---|---|---|
 | `compile_claim_cards.py` | `00_META/registers/CLAIM_CARD_REGISTER.json`, `CLAIM_GRAPH.json`, `CLAIM_LIFECYCLE_INVENTORY.json` | [B/S] Active deterministic claim/owner/dependency compiler. |
 | `build_corpus_map.py` | compatibility front door for `compile_claim_cards.py` | [B] Active; the absent-source holographic compiler was replaced in W0. |
+| `render_burri_rules.py` | deterministic Burri plate renders from `05_COSMOLOGY/00_THE_BURRI_RULES.md` | [B/S] Active; covered by `test_render_burri_rules.py`. |
 
 ## Claim-card commands
 
@@ -62,9 +63,68 @@ The `*.yaml` inputs use the JSON subset of YAML 1.2 so compilation remains
 stdlib-only and deterministic. Generated graphs are routing views, not owners
 or evidence.
 
+Parent-relative declared sources resolve only when exactly one distinct file
+exists across the checkout ancestors; shadow owners and unresolved paths fail
+closed. `test_corpus_claim_graph.py` covers direct, portable-worktree,
+ambiguous, unresolved, and full-repository contracts.
+
+`test_coherence_profile.py` covers the adjacent script validator's four-axis
+contract, including all internal overall states and the rule that an internal
+gate is inadmissible as world-contact evidence. Any declared world-contact
+record must also resolve to repository-relative custody; a label without a
+file cannot move that axis.
+
+`test_claim_status.py` supplies 23 mutation controls for the 48-row claim
+lifecycle: exact schema and policy identity, duplicate-key rejection, typed
+contact and merged-contact contracts, internal resolutions, grave-parent
+dispositions, exact external-owner and restored-result inventories, path
+custody, dependency acyclicity, row cardinality, the canonical lifecycle
+digest, and the full claim-status contract digest.
+
+`test_contact_limited.py` supplies 70 mutation controls for the exact bounded
+completion inventory. It removes artifacts and lifecycle rows, swaps contact
+contracts and grave-parent dispositions, preserves counts while substituting
+debt IDs, fabricates internal world evidence, changes the nested archive-ignore
+rule, and mutates alias/overlap lifecycles; each move must fail rather than
+silently rewrite the baseline. Temporary Git histories also prove that a new
+receipt may land once, an unchanged receipt survives a later commit, a
+same-path rewrite fails, and shallow parent history fails closed.
+
+`test_active_receipt_citations.py` supplies 24 mutation controls for typed and
+exact target substitution, same-line binding, packet/receipt lane separation,
+new-owner discovery, filename-extension spoofs, duplicate/malformed JSON,
+context-hashed diagnostics, immutable digest custody, and the delivered public
+dependency closure through CSS, modules, manifests, workers, service workers,
+precache lists, and imported worker scripts.
+
+`test_node_product_ranking.py` supplies positive and negative controls for the
+KSC-02 regression gate, including adjacent-denial bypasses, exact scope
+exclusions, the Managed Agents projection, and the live active-corpus scan.
+
+`test_review_bundle.py` supplies mutation and entrypoint controls for the
+external-review status projection: the live registry/document pair, a blocked
+packet falsely labeled ready to send, missing no-contact/no-review boundary
+phrases, and a discovered paired v5 packet that must fail rather than inherit
+the v4 technical contract.
+
+`test_work_in_progress.py` supplies mutation controls for the three
+source-bound WIP owner/contact rows: exact held debt, profile, review, docket,
+and rendered-Markdown contracts must survive without turning this manifest
+into owner selection or contact authority.
+
+`test_adjudication_custody.py` supplies mutation controls for the four
+byte-locked 2026-08-01 custody artifacts: strict JSONL structure, cardinality,
+ordinal and duplicate joins, supplement corrections/closures/gate/docket, the
+derived 151/8/4/6 reviewed partition, and Receipt 234's parents and declared
+hashes. Its baseline temporary corpus contains only those four artifacts; it
+does not replay external journals, inspect current source evidence, or infer
+semantic repairs.
+
 ## Route Upstream
 
 - main tool inventory: `../README.md` and `../CLAUDE.md`
+- current corpus gate: `../01_SCRIPTS/gate.sh`
+- Uplink route map: `../../11_UPLINK/README.md`
 - UPLINK compile entry point: `../01_SCRIPTS/compile_uplink.py`
 - full routing layer: `../../11_UPLINK/00_CORE/00_INDEX.md`
 

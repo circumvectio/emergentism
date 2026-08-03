@@ -29,8 +29,9 @@ visual synthesis; it is not a semantic owner.
 ## Hard boundaries
 
 - `φν=1` is an analytic chart identity, not empirical conservation or ethics.
-- `P_node=ΦV` is the selected normalized product instance inside a broader
-  conjunctive family, not the uniquely forced real-world law.
+- `P_node=min(Φ̂₄,V₄)` is the selected working score over ordinal factors. The
+  product form `Φ̂₄V₄` / public `ΦV` is retired as a ranking and remains only
+  the historical name of the same AND-class conjunction.
 - D4 is causal actuality; D5 is modeled possibility. Commitment enacts one D4
   action, and the environment returns a separate outcome receipt.
 - Anticipated futures influence the present through represented models and

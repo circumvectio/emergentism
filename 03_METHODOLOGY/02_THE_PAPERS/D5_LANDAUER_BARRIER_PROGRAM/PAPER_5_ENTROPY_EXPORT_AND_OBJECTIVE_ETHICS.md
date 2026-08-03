@@ -33,14 +33,21 @@ Extractive move:
   local ordering is achieved by hiding or exporting cost into the field that the actor depends on.
 ```
 
-The bridge is conditional. It requires real coupling, a long enough horizon, multiplicative `P_node`, and enforceable non-extraction. It does not prove that an uncoupled one-shot predator must rationally accept the rule.
+The bridge is conditional. It requires real coupling, a long enough horizon,
+the selected ordinal `P_node=min(Φ̂₄,V₄)` ordering, and enforceable
+non-extraction. The historical product ranking is retired; it may be compared
+only as an explicitly named candidate under separately defended cardinal
+scales. The bridge does not prove that an uncoupled one-shot predator must
+rationally accept the rule.
 
 ## Required Sections
 
 1. Translate the D4 physical cost of representing and discriminating D5
-   alternatives into `P_node = Φ × V` accounting.
+   alternatives into `P_node=min(Φ̂₄,V₄)` accounting without treating the
+   ordinal score as an additive or cardinal quantity.
 2. Define hidden entropy/cost export in institutional terms: attention rent, memory lock-in, technical debt, coercion, ecological dumping, and degraded trust.
-3. State the syntropic dyad: `ΔP_node,i >= 0` without lowering `ΔP_node,H`; strict success raises both.
+3. State the syntropic dyad: `P_node,i(after) ⪰ P_node,i(before)` without
+   lowering the sustaining whole's bearer-wise order; strict success raises both.
 4. Tie the result to zero extraction, correction, archive memory, Grace Exit, and explicit consent.
 5. Keep moral language framework-objective, not inflated into external proof.
 

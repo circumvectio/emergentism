@@ -21,11 +21,20 @@ Emergentism research corpus, 2026
 **Evidence Tier:** [I→S] — Methodological validation strategy
 **Dependencies:** [PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md](PAPER_I_KNOWN_UNKNOWNS_PROGRAM.md), [00_KNOWN_UNKNOWNS_PROGRAM.md](../../00_META/00_KNOWN_UNKNOWNS_PROGRAM.md)
 
+> **KSC-02 boundary.** The current ordinal node score is
+> `P_node=min(Φ̂₄,V₄)`. Every multiplicative curve below is an explicit
+> candidate `C×=Φ̂₄V₄` requiring separately defended cardinal proxies; it
+> is not the current node ranking.
+
 ---
 
 ## Abstract
 
-A major theoretical gap in the emergentist scaffolding has been the absence of a "Phi-Meter" — a reliable instrument capable of measuring proxy `Φ` (global structural coherence) well enough to empirically test `P_node = Φ × V` or domain-specific `Φ × ν_proxy` bridges.
+A major theoretical gap in the emergentist scaffolding has been the absence of a
+"Phi-Meter" — a reliable instrument capable of measuring proxy `Φ̂₄` (global
+structural coherence) well enough to empirically test the selected
+`P_node=min(Φ̂₄,V₄)` and, where cardinal scales are independently defended,
+the candidate `C×=Φ̂₄V₄` or domain-specific product bridges.
 
 This paper argues that seeking to invent a novel, standalone physical instrument is a category error. Because the framework asserts that $\Phi$ is a topological property of mediation rather than a local physical magnitude, it cannot be measured by a single instrument. Instead, $\Phi$ must be measured via **Cross-Domain Correlation**. We propose aggregating existing domain-specific coherence metrics (e.g., semantic integration in NLP, eigenvector centrality in graph networks, tonal consonance in acoustic physics). If these independent, existing proxies all strictly adhere to the multiplicative bound when plotted against their local resolution limits ($\nu$), then the convergence itself serves as the validation. The Phi-Meter is not a device; it is a statistical meta-instrument.
 
@@ -54,7 +63,10 @@ We do not need to invent a new metric; we must unify the ones we already have. D
 4. **Information Theory:** Integrated Information (Tononi's $\Phi$, specifically measuring irreducible system cause-effect power).
 
 ### 2.2 The Meta-Instrument Test
-The "Phi-Meter" is executed by gathering these four independent datasets and running them through the `P_node = Φ × V` or domain-specific `Φ × ν_proxy` geometric test.
+The "Phi-Meter" is executed by gathering these four independent datasets and
+running them through the selected `P_node=min(Φ̂₄,V₄)` test. A
+domain-specific product curve is a separately named `C×` candidate, never an
+implicit definition of `P_node`.
 
 If the metric for semantic coherence (NLP) exhibits the exact same multiplicative decay curve against vocabulary specificity (`ν_proxy`) as the metric for tonal consonance exhibits against frequency isolation (`ν_proxy`), then the underlying geometric structure is strengthened as a candidate cross-domain translation.
 

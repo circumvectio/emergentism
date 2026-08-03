@@ -64,9 +64,12 @@ not generate arithmetic, force `S²`, or prove that reality began at a point.
 
 For normalized finite-node factors `Φ,V∈[0,1]`, the framework declares a
 monotone zero-absorbing conjunctive family `C(Φ,V)` and selects
-`P_node:=ΦV` as a transparent working instance. Product, minimum, harmonic, and
-Cobb–Douglas aggregators are not interchangeable. The product is not derived
-from `φν=1`; its fit to a real domain remains `[C]`.
+`P_node:=min(Φ̂₄,V₄)` as its transparent ordinal working instance.
+Product, minimum, harmonic, and Cobb–Douglas aggregators are not
+interchangeable. The historical product `Φ̂₄V₄` / public `ΦV` is retired as
+a node ranking; it may be tested only as an explicit candidate under separately
+defended cardinal scales. The selected minimum is not derived from `φν=1`; its
+fit to a real domain remains `[C]`.
 
 ## 3. Interpretive scaffold `[I/C]`
 
@@ -144,7 +147,7 @@ not break the independent agent or ethical calculus.
 | selected Titan/frame symbolism | `[I]` |
 | D0–D6 translation scaffold | `[I/C]` |
 | per-domain μ-crossing | `[C]` until independently tested |
-| normalized product node model | `[I]` declared; `[C]` universal fit |
+| selected minimum node model over ordinal factors | `[I]` declared; `[C]` universal fit |
 | model-mediated future influence | `[I]` operational interpretation |
 | Justice and Syntropic Dyadism | `[I]` declared value model |
 | quantum state formalism / D3 assignment | inherited `[A/B]` / selected `[I]`; interpretations removable |

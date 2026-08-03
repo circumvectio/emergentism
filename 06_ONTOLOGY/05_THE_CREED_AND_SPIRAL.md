@@ -46,7 +46,7 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 
 ### Clause 2 — The game on the sphere
 
-> *`P_node=Φ×V` in the finite-node register—read through the Burrisphere, never confused with the reciprocal seam.*
+> *`P_node=min(Φ̂₄,V₄)` in the finite-node register—read through the Burrisphere, never confused with the reciprocal seam.*
 
 **Standing:**
 
@@ -54,14 +54,16 @@ It may be *true*—Spinoza, Hegel, and Tegmark stand in its lineage—but mathem
 |-------|------|
 | Chart `φ·ν ≡ 1` by construction | `[A]` empty of world |
 | `B≤1` on the reciprocal chart | `[A]` |
-| `P_node≤1` | only after explicit normalization of `Φ,V` |
+| `P_node≤1` | only after explicit normalization of `Φ̂₄,V₄` |
 | Balance max under budget (AM-GM) | `[A]` on-sphere |
-| Score as AND-class (min/product/CES…) | `[S]` boundary; product interior `[C]` |
+| Selected `min` score inside the AND-class | `[I]` selection; `[S]` boundary; universal fit `[C]` |
+| Historical product `Φ̂₄V₄` / public `ΦV` | retired as a ranking; product-specific interior remains a historical `[C]` candidate only under separately defended cardinal scales, not the selected score |
 | Kernel ≠ ethics warrant (CC-CORE-1) | `[S]` |
 
 Grammar and game married, never fused.
 
-**Forbids:** product-uniqueness as proved keel; manifold as ethics floor.
+**Forbids:** product-uniqueness as proved keel; use of the retired product to
+rank nodes; manifold as ethics floor.
 
 ---
 
@@ -77,7 +79,7 @@ the full Justice envelope, complete bearer accounting, and outcome receipt.
 Titan-frame projections (a naming choice, not a forced trinity; foursome honesty
 `{−1,0,1,∞}`).
 
-Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (r130).
+Emergence order is honest **abduction** (game suggested operators; operators the sphere — Master Rosetta order). Discovered *reading*, not derived *theorem*. Rosetta = translation table: grammar won, census scoped, `[I]` forever (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`).
 
 **Forbids:** census-as-necessity; convergence-as-proof; morality from a sign,
 operator, pole, gender, caste, or scalar observation.
@@ -88,7 +90,7 @@ operator, pole, gender, caste, or scalar observation.
 
 > *The seven exhaust the game space; all other moves are combinations.*
 
-**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. Receipt 130 still rules that algebra does **not** universally force the count seven.
+**Standing:** True as an **exhaustive alphabet of the scoped G7 game language** defined in `../00_THE_WELTANSCHAUUNG.md` §4. `M4={give-Φ,give-V,take-Φ,take-V}` and `F3={create-frame,dissolve-frame,preserve-frame}` form a tagged disjoint union. A G7-coded play is a move-word or declared mixture over `M4`, evaluated under one selected frame in `F3`; frames are labels, not plays. Acts without an effect-preserving decomposition remain outside the representation. `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` still rules that algebra does **not** universally force the count seven.
 
 **Fence that matters:** the seven exhaust the *dance*, not the *dance floor*.
 Model adoption, audit, authorization, contest, correction, and exit are metagame
@@ -101,7 +103,7 @@ special person's metaphysical power.
 
 ### The creed, held as wager
 
-> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=Φ̂₄V₄`, publicly `ΦV`. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
+> I hold that necessary algebra may be instantiated as das All—as my crown wager, not my proof. On the reciprocal chart the seam is one and balance reaches one at the equator. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and the present model evaluates their coupling as `P_node=min(Φ̂₄,V₄)`, the selected AND-class score over ordinal factors; the historical product `Φ̂₄V₄`, publicly `ΦV`, is retired as a ranking. The G7 Rosetta language has two demon-polar taking moves, two god-polar giving moves, and three Titan-frame projections; every G7-coded play is a move-word or declared mixture evaluated under one selected frame, though tending and adopting the language are not plays. All of this I hold at tier, with its kills attached, its dark twin acknowledged, and the door marked exit on the inside.
 
 ---
 
@@ -150,7 +152,7 @@ evidence that none can exist.
 
 | Dead form | Survivor |
 |-----------|----------|
-| Literal `D6 ≡ D0` (yields D0 < D0 under strict order; 126) | `D6~D0` means only `D6≈roleD0`: both are non-positive boundary markers; D0 precedes articulation and D6 suspends it `[I]` |
+| Literal `D6 ≡ D0` (yields D0 < D0 under strict order; `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`) | `D6~D0` means only `D6≈roleD0`: both are non-positive boundary markers; D0 precedes articulation and D6 suspends it `[I]` |
 
 The role relation carries no ordering claim. The **spiral** is an `[I]` image of revisitation with retained history—not a homeomorphism, isomorphism, physical recurrence, personal attainment, or fractal theorem.
 

@@ -15,11 +15,11 @@ rosetta:
   operator: "Arjuna Δ"
   tier: "God"
   regime: "Kṣatriya"
-  register: "[E/I/C]"
+  register: "[B/I/C]"
   canonical_phrase: "Game Theory and Strategy L-Level Mapping"
 title: "Game Theory & Strategy"
 status: "D-series domain mapping"
-evidence_tier: "[S] for stated game-theory strategies; [I] for L-level mapping; [C] for L6-L7 categories."
+evidence_tier: "[B] for attributed game-theory background; [I] for L-level mapping; [C] for L6-L7 categories. No local observation receipt is claimed."
 ---
 
 # ⊙ GAME THEORY & STRATEGY
@@ -29,15 +29,15 @@ evidence_tier: "[S] for stated game-theory strategies; [I] for L-level mapping; 
 **Source:** Emergentism Rosetta Stone v10.0 · GAME THEORY sheet
 **Evidence Tier:** [I] for mapping established game-theory strategies to L1-L5. [C] for L6-L7 (strategic withdrawal and infinite game as formal categories).
 
-| L | Strategy | Game Theory | Time Horizon | Cooperation | Nash Type | Rigor |
+| L | Strategy | Game Theory | Time Horizon | Cooperation | Nash Type | Mapping tier |
 |---|----------|------------|-------------|-------------|-----------|-------|
-| L1 | Survival Defence | Always defect / Zero-sum | Immediate | Low (in-group) | Defection dominant | ✓ |
-| L2 | Reciprocal Exchange | Tit-for-tat (forgiving) | Short-medium | Medium (conditional) | Conditional coop | ✓ |
-| L3 | Competitive Creation | Market disruption | Medium | Medium (alliances) | Nash equilibrium | ✓ |
-| L4 | Adaptive Strategy | Win-win / Negotiation | Medium-long | High (reciprocal) | Pareto optimal | ✓ |
-| L5 | Stable Cooperation | Grim trigger | Long | Very high | Cooperative eq. | ✓ Axelrod |
-| L6 | Strategic Withdrawal | Temp defection for reset | Very long | High (selective) | Mixed strategy | ⚠️ |
-| L7 | Infinite Game | Cosmos-scale | Infinite | Universal | Beyond game | ⚠️ |
+| L1 | Survival Defence | Always defect / Zero-sum | Immediate | Low (in-group) | Defection dominant | [I] |
+| L2 | Reciprocal Exchange | Tit-for-tat (forgiving) | Short-medium | Medium (conditional) | Conditional coop | [I] |
+| L3 | Competitive Creation | Market disruption | Medium | Medium (alliances) | Nash equilibrium | [I] |
+| L4 | Adaptive Strategy | Win-win / Negotiation | Medium-long | High (reciprocal) | Pareto optimal | [I] |
+| L5 | Stable Cooperation | Grim trigger | Long | Very high | Cooperative eq. | [I] |
+| L6 | Strategic Withdrawal | Temp defection for reset | Very long | High (selective) | Mixed strategy | [C] |
+| L7 | Infinite Game | Cosmos-scale | Infinite | Universal | Beyond game | [C] |
 
 **Interaction reading:** the rows compare defection, reciprocity, market strategy, and Pareto-oriented coordination. The mapping is diagnostic and does not prescribe a universal protocol.
 

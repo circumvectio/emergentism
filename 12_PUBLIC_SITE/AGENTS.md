@@ -57,8 +57,10 @@ criterion.
 
 ## Release gate
 
-Run `python3 predeploy_check.py`. It includes semantic parity, public purity,
-links, tiers, static assets, and deployment-boundary checks. A local pass is
+Run `python3 predeploy_check.py`. Its 15 checks include semantic parity, public
+purity, links, tiers, static assets, and deployment-boundary checks; they do not
+verify the generated artifact set. Then separately run
+`python3 ../09_TOOLS/01_SCRIPTS/check_site_build_artifacts.py`. Local passes are
 not deployment, DNS, independent review, or empirical calibration.
 
 No push, production deployment, or DNS change is implied by this route card.

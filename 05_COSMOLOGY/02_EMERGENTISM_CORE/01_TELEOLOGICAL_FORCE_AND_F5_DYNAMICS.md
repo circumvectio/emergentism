@@ -13,10 +13,10 @@ date: 2026-07-22
 evidence_tier: "Weak reading [I] over established components; literal fifth-force or retrocausal reading [C]"
 owner: "Emergentism Core, subordinate to W7 and the Life-Science Register"
 parents:
-  - ../../00_THE_LIFE_SCIENCE_REGISTER.md
-  - ../../03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md
-  - ../../../06_ONTOLOGY/04_THE_CONJECTURES.md
-  - ../../../00_META/00_THE_REMAINING_QUESTIONS.md
+  - ../00_THE_LIFE_SCIENCE_REGISTER.md
+  - ../03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md
+  - ../../06_ONTOLOGY/04_THE_CONJECTURES.md
+  - ../../00_META/00_THE_REMAINING_QUESTIONS.md
 ---
 
 # Teleological Force and F5 — The Typed Boundary

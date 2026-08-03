@@ -42,9 +42,9 @@ This folder preserves path-based references that may have been used in earlier v
 ## Agentz Deployment Control
 
 The 2026-06-04 Agentz deployment receipt for this lane is
-[`../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md`](../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md);
+[`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.md);
 the exact folder/file manifest is
-[`../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`](../00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv).
+[`../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv`](../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/03_AGENTZ_DEPLOYMENT_91_COMPATIBILITY_2026_06_04.csv).
 It covers these files as compatibility stubs only. New doctrine, public copy,
 and source route repairs belong in active owner lanes.
 

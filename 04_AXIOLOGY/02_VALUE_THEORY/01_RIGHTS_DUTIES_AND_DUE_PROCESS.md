@@ -35,7 +35,7 @@ Accordingly:
 Neither label settles a conflict by itself. A valid evaluation also requires a
 bearer-complete Justice predicate, the declared horizon and baseline, consent,
 rights, distribution, uncertainty, reversibility, and observed consequence.
-`η=0`, `Φ`, `V`, or aggregate `ΔP` alone is never sufficient.
+`η_move=0`, `Φ`, `V`, or aggregate `ΔP` alone is never sufficient.
 
 ## 2. AuthorizationEnvelope `[S]`
 

@@ -7,9 +7,6 @@ rosetta:
   regime: "Śūdra"
   register: "[I/D]"
   canonical_phrase: "When Pattern Becomes Candidate Claim"
----
-
----
 title: "When Pattern Becomes Candidate Claim"
 type: data science-doctrine
 status: v1.0
@@ -19,14 +16,6 @@ depends_on:
   - ./01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md
   - ./00_PRATYAKSA_AS_PRIMARY_DISCLOSURE.md
   - ../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_MASTER_ROSETTA.md
-rosetta:
-  primary_level: L2
-  primary_column: Philosophy
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[MAP]"
-  canonical_phrase: "When Pattern Becomes Candidate Claim"
 ---
 
 # When Pattern Becomes Candidate Claim
@@ -234,11 +223,11 @@ L5 Brāhmaṇa Śabda (testimony)           → [S] — structural when from cal
 L4 Kṣatriya Arthāpatti (postulation)    → [I] — interpretive until receipted
 L3 Vaiśya   Anumāna (inference)          → [S] — structural when deductively valid
 L2 Śūdra    Upamāna (analogy)            → [I] — interpretive until cross-domain confirmed
-L1 Caṇḍāla  Pratyakṣa (perception)       → [A/B] — asserted direct measurement or built/verified receipt when sensor-verified, [I] otherwise
+L1 Caṇḍāla  Pratyakṣa (perception)       → [B] — custodied direct measurement or built/verified receipt when sensor-verified, [I] otherwise
 ```
 
 First-person evidence at L7 (intuition) is [C]. First-person evidence at L1
-(perception) is [A/B] when sensor-verified or receipt-backed and [I] otherwise. The tier tracks
+(perception) is [B] when sensor-verified or receipt-backed and [I] otherwise. The tier tracks
 the reliability of the channel, not the sincerity of the witness.
 
 ---

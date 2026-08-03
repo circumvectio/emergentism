@@ -306,7 +306,13 @@ The paradox engine does not remove this.
 
 It prevents clean language from hiding dirty allocation.
 
-The value ledger asks for the widest honest boundary. Its gates — `ΣΔB` and `ΣΔP` — are directional burdens of proof over everyone an action touches, including those with no seat in the room and the living substrate that absorbs the cost. They are not a promise that every party rises at once, and they do not hand out a score. In tragedy, the question may be which action preserves the most future capacity while refusing to sacrifice the least powerful without acknowledgment, compensation, or repair.
+The value ledger asks for the widest honest boundary. Its gates — declared
+balance evidence and bearer-wise `P_node` order — are burdens of proof over
+everyone an action touches, including those with no seat in the room and the
+living substrate that absorbs the cost. They are not a promise that every party
+rises at once, and they do not hand out an aggregate score. In tragedy, the
+question may be which action preserves the most future capacity while refusing
+to sacrifice the least powerful without acknowledgment, compensation, or repair.
 
 Here the argument has to resist its own appetite for elegance.
 

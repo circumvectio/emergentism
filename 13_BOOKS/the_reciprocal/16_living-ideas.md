@@ -66,7 +66,10 @@ They can make dissent feel like betrayal. They can turn evidence into threat. Th
 
 Intensity is not the test.
 
-What matters is whether the idea increases `ΣΔB` and `ΣΔP_node` while preserving the signing threshold of at least two natural persons, `η_move = 0`, receipts, and Grace Exit.
+What matters is whether the idea improves declared balance evidence and
+preserves or raises each affected bearer's `P_node` order while preserving the
+signing threshold of at least two natural persons, `η_move = 0`, receipts, and
+Grace Exit.
 
 An idea that cannot be left safely is no longer only an idea.
 

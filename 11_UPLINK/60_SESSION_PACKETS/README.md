@@ -38,7 +38,10 @@ points here.
 
 ## Current Neighbor Lanes
 
-- `../00_CORE/` for the stable compressed spine
-- `../10_RECONCILIATION/` for active guardrails, glossary, and synthesis bridge files
+- [`../README.md`](../README.md) and [`../00_THE_UPLINK.md`](../00_THE_UPLINK.md)
+  for the current lane route map
+- `../00_CORE/` and `../10_RECONCILIATION/` are forwarding stubs only; both
+  lanes were archived 2026-07-20 to
+  [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/11_UPLINK/)
 - `../50_AUDITS_AND_EXECUTIONS/` for maintained audit and execution surfaces
 - `../90_ARCHIVE/` for superseded packets that should no longer sit in active session memory

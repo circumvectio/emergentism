@@ -15,11 +15,11 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/I/C]"
+  register: "[B/I/C]"
   canonical_phrase: "Computation and Algorithmic Analogues"
 title: "Computation & Algorithmic Analogues"
 status: "D-series domain mapping"
-evidence_tier: "[S] for stated algorithm classes; [I] for L-level mapping; [C] for AGI/universal-function claim."
+evidence_tier: "[B] for attributed algorithm-class background; [I] for L-level mapping; [C] for AGI/universal-function claim. No local deployment receipt is claimed."
 ---
 
 # ⊙ COMPUTATION & ALGORITHMIC ANALOGUES
@@ -27,17 +27,19 @@ evidence_tier: "[S] for stated algorithm classes; [I] for L-level mapping; [C] f
 ## L-Level × Algorithm Class (L1=Survival ascending)
 
 **Source:** Emergentism Rosetta Stone v10.0 · COMPUTATION sheet
-**Evidence Tier:** [I] for algorithm classes L1-L6 (established CS: anomaly detection, RL, GANs, gradient descent, PID control, compression). [I] for the mapping of algorithm classes to L-levels. [C] for L7 (AGI as Universal Function is conjectural).
+**Evidence Tier:** `[B]` for attributed L1–L6 algorithm-class background;
+`[I]` for the L-level mapping; `[C]` for AGI as Universal Function. This page
+does not custody a deployment or run receipt.
 
-| L | Algorithm | Input | Process | Output | Status |
+| L | Algorithm | Input | Process | Output | Mapping tier |
 |---|-----------|-------|---------|--------|--------|
-| L1 | Immune System / Anomaly Detection | Signal | Recognize → Terminate | Accept/Reject | ✓ Validated |
-| L2 | Reinforcement Learning | State-action pairs | Explore → Adapt | Optimal policy | ✓ Validated |
-| L3 | Generative Model (GANs) | Latent code | Generate → Expand | Novel outputs | ✓ Validated |
-| L4 | Optimiser (Gradient Descent) | Cost landscape | Evaluate → Transform | Optimum | ✓ Validated |
-| L5 | Homeostasis (PID Controller) | Deviation | Measure → Correct | Stability | ✓ Validated |
-| L6 | Compression (VAE, PCA) | High-dim data | Abstract → Simplify | Essence | ✓ Validated |
-| L7 | Universal Function (AGI) | All inputs | Integrate → Transcend | Optimal response | ⚠️ Theoretical |
+| L1 | Immune System / Anomaly Detection | Signal | Recognize → Terminate | Accept/Reject | [I] analogy |
+| L2 | Reinforcement Learning | State-action pairs | Explore → Adapt | Optimal policy | [I] analogy |
+| L3 | Generative Model (GANs) | Latent code | Generate → Expand | Novel outputs | [I] analogy |
+| L4 | Optimiser (Gradient Descent) | Cost landscape | Evaluate → Transform | Optimum | [I] analogy |
+| L5 | Homeostasis (PID Controller) | Deviation | Measure → Correct | Stability | [I] analogy |
+| L6 | Compression (VAE, PCA) | High-dim data | Abstract → Simplify | Essence | [I] analogy |
+| L7 | Universal Function (AGI) | All inputs | Integrate → Transcend | Optimal response | [C] hypothesis |
 
 **Computational reading:** each selected cognitive role is compared with an algorithm class. This is an analogy, not a claim that an algorithm has caste, identity, or authority.
 

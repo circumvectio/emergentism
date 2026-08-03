@@ -23,7 +23,12 @@ rosetta:
 
 ## What This Folder Is
 
-This folder collects specialized derivations and technical side-paths related to sphere geometry: MF-63 through MF-70 (8 papers, footed "VIVEKA Mathematical Foundations Series — Sphere Derivations"). Together with [`../MF_ADVANCED/`](../MF_ADVANCED/README.md) (MF-281 through MF-301, 21 papers), these 29 papers ARE the **VIVEKA Mathematical Foundations**. The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
+This folder collects 7 specialized derivations and technical side-paths,
+MF-63 through MF-69. Together with [`../MF_ADVANCED/`](../MF_ADVANCED/README.md)
+(17 papers, MF-281 through MF-300), these are 24 surviving manuscripts from the
+historical **VIVEKA Mathematical Foundations** series. The series name confers
+no current kernel authority. The formal-system canon they presuppose lives at
+[`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
 
 ## Relation to the Coherence Spine
 

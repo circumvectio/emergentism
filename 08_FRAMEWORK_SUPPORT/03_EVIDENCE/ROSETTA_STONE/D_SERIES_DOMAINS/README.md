@@ -23,31 +23,6 @@ evidence_tier: "[S] for route discipline and catalogue structure; inherited tier
 type: rosetta-front-door
 ---
 
----
-rosetta:
-  primary_level: L2
-  primary_column: D-Series Domain Evidence Front Door
-  secondary:
-    - level: L3
-      column: Source-Fact Audit
-      role: "separate established source scales from Rosetta interpretation"
-    - level: L5
-      column: Comparative Architecture
-      role: "organize domain columns across the seven-level Rosetta geometry"
-    - level: L6
-      column: Analogy Boundary
-      role: "prevent domain analogy from becoming ontology without independent receipts"
-  operator: "Kālī 💀"
-  tier: "God"
-  regime: "Śūdra"
-  register: "[A/S/I]"
-  canonical_phrase: "D_SERIES_DOMAINS — Front Door"
-title: "D_SERIES_DOMAINS"
-evidence_tier: "[A] for established source scales; [S] for column structure; [I] for cross-domain mapping."
-type: evidence-front-door
-status: ACTIVE
----
-
 # D_SERIES_DOMAINS
 
 > Domain columns of the Rosetta — each file reads one discipline or tradition against the seven-level S² geometry.

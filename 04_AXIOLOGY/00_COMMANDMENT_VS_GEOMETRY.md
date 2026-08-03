@@ -5,7 +5,7 @@ rosetta:
   operator: "Arjuna ⚔"
   tier: "Interpretive"
   regime: "Kṣatriya"
-  register: "[A/S/I]"
+  register: "[A/S/I/C]"
   canonical_phrase: "Commandment vs geometry — analytic constraints do not manufacture oughts"
 status: "ACTIVE — Kintsugi replacement; overclaiming predecessor archived 2026-07-20"
 ---

@@ -39,9 +39,20 @@ This folder stores outputs and helper scripts for tooling audits.
 | Surface | Tier | Use |
 |---|---|---|
 | `audit_dependency_graph.py` | [D/B] | Read-only dependency graph audit script; output is only current when rerun against the live tree. |
-| `audit_output.md` | [B] | Generated dependency graph report from its recorded run; use as triage evidence, not live truth. |
-| `CROSS_FOLDER_LINK_VERIFICATION_REPORT_2026_04_25.md` | [B] | Dated cross-folder link scan; some path recommendations are stale and must be rechecked before repair. |
-| `TOOLS_AUDIT_REPORT.md` | [B/I] | Dated 09_TOOLS health audit; treat findings as queue input, not automatic edit authority. |
+| `2026_08_01_FIRST_60_ADJUDICATION.jsonl` | [B] | Immutable adjudication evidence for actionable findings 1–60: one metadata record plus 60 finding records. The metadata fixes the source-journal hash and explains that asynchronous result order is not the finding identity. |
+| `2026_08_01_REMAINING_169_ADJUDICATION.jsonl` | [B] | Immutable adjudication evidence for actionable findings 61–229: one metadata record plus 169 finding records. The metadata fixes the raw-findings, workflow-journal, and source-session hashes and declares `global_actionable_id = 60 + remaining_ordinal`. |
+| `2026_08_01_REMAINING_169_INDEPENDENT_REVIEW_SUPPLEMENT.jsonl` | [B] | Additive independent-review custody: preserves the source ledger byte-for-byte while recording two disposition corrections, seven confirmed closures, one preserved owner gate, and the KSC-02 downstream-drift docket. |
+
+The three dated reports formerly listed here were moved out of the
+pure-Emergentism boundary on 2026-07-20 and are preserved under
+[`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/08_AUDIT_ARTIFACTS/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/09_TOOLS/08_AUDIT_ARTIFACTS/).
+The two JSONL ledgers above are bounded run evidence, not doctrine or authority;
+their rows must not be rewritten to make a later audit look cleaner.
+`../01_SCRIPTS/check_adjudication_custody.py` is the read-only replay for
+their fixed SHA-256 identities, Receipt 234 parent/hash declarations, and
+additive review controls. It is deliberately corpus-only: the retained hashes
+for external reconstruction/journal/session inputs are declarations, not paths
+the checker may open.
 
 ## What It Must Not Own
 

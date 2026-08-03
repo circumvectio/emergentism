@@ -74,7 +74,9 @@ necessary features of nature.
 ### Empirically open `[C]`
 
 - each ontic reading of a `μ` interface;
-- universal real-world fit of `P_node=ΦV` against rival AND-class models;
+- universal real-world fit of the selected
+  `P_node=min(Φ̂₄,V₄)` against rival AND-class models, and of any explicitly
+  separately cardinal product candidate;
 - the five force–freedom correspondence;
 - model-mediated foresight effects beyond ordinary decision-theoretic
   baselines;

@@ -10,7 +10,7 @@
     {
       "card_id": "FIN01-01",
       "chapters": ["finity-card"],
-      "locator": {"section": "3B", "line_start": 129, "line_end": 148},
+      "locator": {"section": "3B", "line_start": 131, "line_end": 150},
       "plain_claim": "The Finity Card is a selected seven-prompt compression of the Lived Compass for framing a decision, not an authorization or a proven improvement in decision quality.",
       "claim_type": "stipulation",
       "evidence": [{"tier": "S", "scope": "chosen worksheet and source-owned practice definition"}],
@@ -46,7 +46,7 @@
     {
       "card_id": "FIN01-02",
       "chapters": ["comparative-adequacy"],
-      "locator": {"section": "3B", "line_start": 150, "line_end": 156},
+      "locator": {"section": "3B", "line_start": 152, "line_end": 158},
       "plain_claim": "The Finity Card may improve decision correction and bearer visibility, but any incremental benefit must be established against fair simpler rivals.",
       "claim_type": "conjecture",
       "evidence": [{"tier": "C", "scope": "comparative decision-practice benefit"}],

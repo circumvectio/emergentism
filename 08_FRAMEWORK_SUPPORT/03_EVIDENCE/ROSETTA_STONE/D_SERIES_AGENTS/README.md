@@ -29,7 +29,9 @@ status: ACTIVE
 
 **Status:** Active
 **Register:** `[S]` for internal Rosetta coordinates · `[I]` for cross-domain agent-analysis projections
-**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card; `CLAUDE.md` does not exist here — agents read `AGENTS.md`.
+**Routing:** [`AGENTS.md`](AGENTS.md) is the lane route card;
+[`CLAUDE.md`](CLAUDE.md) is the Claude-tools compatibility shim, not a second
+authority.
 
 ## What This Folder Is
 

@@ -16,24 +16,27 @@ have been declared.
 
 ## 1. Durable potential
 
-For bearer `x` over horizon `T`, define a declared nonnegative potential score
-`P_x(t)` and its durable integral:
+For bearer `x` at time `t`, the selected finite-node ordinal score is
 
 ```text
-W_x(T) = ∫₀ᵀ P_x(t) dt.
+P_node,x(t) := min(Φ̂₄,x(t),V₄,x(t)),
 ```
 
-When the finite-node product is selected,
+where `Φ₅` is D5 possible power, `Φ̂₄` is its present D4 evaluation,
+and `V₄` is D4 actual power or usable means. The historical product
+`Φ̂₄V₄`, publicly `ΦV`, is retired as a ranking.
+
+An ordinal score cannot be integrated or summed without an additional scale
+contract. If a domain separately validates a nonnegative cardinal potential
+measure `q_x(t)`, define its durable integral explicitly:
 
 ```text
-P_x(t) := P_node,x(t) = Φ̂₄,x(t)V₄,x(t),
+W_x(T) = ∫₀ᵀ q_x(t) dt.
 ```
 
-where `Φ₅` is D5 possible power, `Φ̂₄` is its present D4 evaluation, and `V₄`
-is D4 actual power or usable means. The familiar `P_node=ΦV` is the public
-shorthand for this typed bridge. The product is one declared normalized
-conjunctive model, not a uniquely forced world law. A different validated
-potential model may be substituted if its type and evidence are explicit.
+Without that contract, compare node trajectories only through a preregistered
+ordinal dominance or horizon rule. A separately cardinal product may still be
+tested as a candidate `q_x`; it is not the selected node ranking.
 
 ## 2. Justice-admissible actions
 
@@ -79,12 +82,12 @@ their usefulness in the world is conjectural `[C]`.
 
 ## 4. What coupling proves—and does not prove
 
-For a toy coupled network,
+For a separately cardinal toy coupled network,
 
 ```text
 V_eff(i)=(1-λ)V_i+λ<V>,  0<λ≤1
-P_eff(i)=Φ_i V_eff(i),
-∂P_eff(i)/∂V_j=λΦ_i/N > 0.
+C×_eff(i)=Φ_i V_eff(i),
+∂C×_eff(i)/∂V_j=λΦ_i/N > 0.
 ```
 
 The positive cross-partial proves monotone interdependence **inside that
@@ -92,7 +95,7 @@ model**. It does not prove cooperation is optimal. In a one-shot zero-sum
 transfer `ΔV` from `j` to `i`, the mean `<V>` is unchanged and, for `λ<1`,
 
 ```text
-ΔP_eff(i)=Φ_i(1-λ)ΔV > 0.
+ΔC×_eff(i)=Φ_i(1-λ)ΔV > 0.
 ```
 
 Extraction can therefore benefit the extractor locally. This counterexample

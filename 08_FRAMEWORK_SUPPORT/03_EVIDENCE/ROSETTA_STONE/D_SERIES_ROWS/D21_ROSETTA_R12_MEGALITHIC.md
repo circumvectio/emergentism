@@ -15,20 +15,26 @@ rosetta:
   operator: "Kālī 💀"
   tier: "God"
   regime: "Śūdra"
-  register: "[E/I]"
+  register: "[B/I/C]"
   canonical_phrase: "Rosetta R12 — megalithic coordination evidence"
 title: "MF-537: The Megalithic Proof"
 status: "ACTIVE — archaeological evidence and interpretive framework reading"
-evidence_tier: "[S] for archaeological facts; [I] for coordination-as-equator interpretation."
+evidence_tier: "[B] for attributed archaeological background; [I/C] for coordination-as-equator and no-extraction interpretations. No local archaeological receipt is claimed."
 ---
 
 # MF-537: The Megalithic Proof
 ## Material Evidence of Pre-Institutional Coordination
 
 **Hat:** Archaeologist / Systems Theorist  
-**Evidence Tier:** [I] Archaeological fact (megalithic sites exist, predate institutional hierarchy) | [I] Interpretive for the framework reading (coordination = equatorial state, mesh vs institution)
+**Evidence Tier:** `[B]` for attributed archaeological background | `[I/C]` for
+the framework reading (coordination as equatorial state; mesh vs institution).
+This file contains no local archaeological observation or source-custody
+receipt.
 
-> **P-pass note (2026-03-24).** Previously labeled [S] + [S]. The archaeological facts are [S]; but the claim that these sites demonstrate "equatorial coordination" is an interpretive mapping [I], not a structural derivation [S]. Downgraded the framework reading from [S] to [I].
+> **P-pass note (2026-03-24; retiered 2026-08-01).** Earlier structural
+> labels were over-broad. The attributed archaeological facts are `[B]`; the
+> claim that these sites demonstrate “equatorial coordination” is `[I]`, not an
+> internal derivation.
 **Kill Criteria:** Yes — If megalithic construction required institutional hierarchy (kings, armies, written law), the proof fails  
 **Register:** Empirical / Structural  
 **Date:** 2026-03-23  
@@ -226,7 +232,7 @@ The stones are [I] framework receipts. They support the reading that the equator
 
 ## The Honest Caveat
 
-This is [S] + [I] — archaeological fact plus framework interpretation. The facts:
+This is `[B] + [I]` — attributed archaeological evidence plus framework interpretation. The facts:
 - Megalithic structures exist
 - They required massive coordination
 - They lacked institutional hierarchy (Göbekli Tepe, Stonehenge)

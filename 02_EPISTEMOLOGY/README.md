@@ -26,7 +26,8 @@ honestly support. Pattern may orient attention; it does not certify itself.
 | [The Synthetic Gap and Four Postures](00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1.md) | Underdetermination and wager postures | `[I]` |
 | [The Reduction Asymmetry](00_OPAQUE_FROM_BELOW_LEGIBLE_FROM_ABOVE.md) | Prospective opacity, retrospective compression, and reduction boundaries | `[I/C]` |
 | [Flow State as Epistemic Mode](00_FLOW_STATE_AS_EPISTEMIC_MODE.md) | First-person flow interpretation | `[I/C]` |
-| [The Brain Is the Burri Sphere](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) | Neuroscience correspondences with explicit boundaries | `[I/C]` |
+| [The Brain Is Not the Burri Sphere](00_THE_BRAIN_IS_THE_BURRI_SPHERE.md) | Former neuroscience isomorphism withdrawn; comparison boundary and candidate tests | `[I/C]` |
+| [I Is the Equator](00_I_IS_THE_EQUATOR.md) | Symbolic reading of the imaginary unit as the equatorial interface, with explicit D3/D4/D5 register boundaries | `[S/I/C]` |
 | [Memetics](03_MEMETICS/) | Cultural-replicator, attention, and Egregoreotype research | `[I/C]` unless locally established |
 
 ## The admission rule

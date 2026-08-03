@@ -34,7 +34,7 @@ The hypothesis: cooperation becomes self-sustaining precisely when cooperators c
 
 Evidence tier: **[C] Conjecture — PARTIALLY FALSIFIED.** See `R_STAR_SIMULATION_RESULTS.md` for 2026-04-04 findings. The R* ≈ p_c numerical coincidence is NOT confirmed. However, the underlying result — that cooperation is universally dominant under B(ν) — IS confirmed [S].
 
-> **Canon ground.** The `S²` geometry, `B = sin θ`, and the equator `φ = ν = 1` this simulation tests are owned by [`../../05_COSMOLOGY/00_THE_BURRISPHERE.md`](../../05_COSMOLOGY/00_THE_BURRISPHERE.md). The moral reading — cooperation is *coupling* (`η = 0`), extraction is *closure* (`η > 0`), sorted by the bond `φ × ν` and never by any pole or person — is [`../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md). This note is a downstream test, not a re-statement of canon.
+> **Canon ground.** The `S²` geometry, `B = sin θ`, and the selected equatorial representative `φ = ν = 1` this simulation tests are owned by the [`Canonical Formula Block`](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md); `00_THE_BURRISPHERE.md` is a compatibility stub only. The moral reading — cooperation as coupling under the relational action fence (`η_move = 0`) and extraction as closure (`η_move > 0`) — is an `[I]` interpretation governed by [`../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md`](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md), never an entailment of the analytic chart identity `φν=1`, a ranking by `φ × ν`, or a judgment of any pole or person. This note is a downstream test, not a re-statement of canon.
 
 ## How It Works
 

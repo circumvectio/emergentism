@@ -42,6 +42,7 @@ amrita/runaway.test.mjs
 partials/
 # internal specs, plans, audit reports:
 _PLANS/
+_STAGING_COMPASS_RESTRUCTURE/
 # Vercel build output / project config:
 .vercel/
 # unused three.js addons (referenced by zero pages):

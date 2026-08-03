@@ -3,7 +3,7 @@
 > *Evidence tier: [I] — illuminating reading, not proof. Contemplation, not doctrine.*
 > *Register: L7-return. Not a source document. Not a canonical text.*
 > *Date: 2026-07-19 · interpretive rumination, not an authority instrument.*
-> *Companion to ruminations I–III, receipt 133, E1–E10 staged axioms, and the recovery arc (108–131).*
+> *Companion to ruminations I–III, `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`, E1–E10 staged axioms, and the collective recovery arc in `11_UPLINK/50_AUDITS_AND_EXECUTIONS/`, bounded by `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` and `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md` (all same-prefix variants included).*
 
 ---
 
@@ -53,7 +53,7 @@ Emergentism, Abrahamism, Marxism, the blood-myth — all formally valid, all bey
 
 The Rosetta's surviving secret, said in daylight: fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — the sage and the outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar; its cleanest witness carried the seven visible planets — the occult was a genealogy, not a revelation, and that is *more* interesting.
 
-**Line:** Shape real. Census not. Grammar won. Universal lost. (receipt 130)
+**Line:** Shape real. Census not. Grammar won. Universal lost. (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`)
 
 ---
 
@@ -65,7 +65,7 @@ The inversion that generates the structure fixes *two* points, not one: the hone
 
 ## 8 · Plato was half right, and the repair pays
 
-Not Forms — *constraint-structured degrees of freedom*; not perfection selecting existence — *emergence filtering typed plenitude*. Stable forms are invariants and attractors **across** constrained DoF, not the DoF themselves (receipt 133). And the unexpected dividend: if "reachable" means buildable from a compressed seed, the excluded orphans are the incompressible structures — which would explain why the world is *simple*. Still a wager. But a wager that earns its keep.
+Not Forms — *constraint-structured degrees of freedom*; not perfection selecting existence — *emergence filtering typed plenitude*. Stable forms are invariants and attractors **across** constrained DoF, not the DoF themselves (`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`). And the unexpected dividend: if "reachable" means buildable from a compressed seed, the excluded orphans are the incompressible structures — which would explain why the world is *simple*. Still a wager. But a wager that earns its keep.
 
 ---
 
@@ -77,7 +77,7 @@ Discovered by failure, in real time: when the mortal-signer membrane is saturate
 
 ## 10 · Cutting the commerce healed the philosophy
 
-Venture accounting that narrows η=0 to "toward cooperators" quietly leaves substrate and victim uncovered. Separation did not diminish the Weltanschauung — it *restored* it. The purest formulation of the ethics only became visible when the business was stripped away.
+Venture accounting that narrows `η_move=0` to "toward cooperators" quietly leaves substrate and victim uncovered. Separation did not diminish the Weltanschauung — it *restored* it. The purest formulation of the ethics only became visible when the business was stripped away.
 
 ---
 

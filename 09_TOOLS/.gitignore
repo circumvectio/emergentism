@@ -1,3 +1,7 @@
 # Python build artifacts
 __pycache__/
 *.pyc
+
+# Lean/Lake build cache; keep 05_FORMAL_VERIFICATION/lake-manifest.json visible
+# as the reproducible dependency lockfile.
+05_FORMAL_VERIFICATION/.lake/

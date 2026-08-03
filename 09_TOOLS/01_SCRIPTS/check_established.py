@@ -25,7 +25,7 @@ BASE_CHECK = ROOT / "09_TOOLS" / "01_SCRIPTS" / "check_generative_base.py"
 # Entries the manifest must keep listing as NOT established. Shortening this list
 # without a verification landing is the manifest's own kill.
 MUST_STAY_UNESTABLISHED = [
-    "the μ-contract", "η = 0", "P = Φ × V", "Justice", "Power-Max",
+    "the μ-contract", "η = 0", "P_node := min(Φ̂₄,V₄)", "Justice", "Power-Max",
     "the Soul Loop", "the Crown Wager", "sphere primacy",
 ]
 
@@ -39,7 +39,8 @@ def main() -> int:
     text = MANIFEST.read_text(encoding="utf-8")
 
     # --- A · the Lean file -------------------------------------------------
-    # r183: THIS BLOCK USED TO COUNT "^theorem " AND GREP FOR sorry, AND NOTHING
+    # r183 (`183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`): THIS
+    # BLOCK USED TO COUNT "^theorem " AND GREP FOR sorry, AND NOTHING
     # ELSE. A Lean file whose every theorem statement was replaced with a FALSE
     # one would have passed, provided the count stayed at 20. And the corpus's
     # copy had no lakefile or toolchain, so it could not be built at all.
@@ -125,14 +126,17 @@ def main() -> int:
         f"ESTABLISHED: PASS ({n_lean} Lean theorems, no sorry; {n_g} exhaustively-checked "
         f"base claims; {len(MUST_STAY_UNESTABLISHED)} guarded exclusions intact)"
     )
-    # r183 · THE SCOPE OF THIS PASS, PRINTED SO IT CANNOT BE OVER-READ.
+    # r183 (`183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`) · THE
+    # SCOPE OF THIS PASS, PRINTED SO IT CANNOT BE OVER-READ.
     # The Lean half is verified STRUCTURALLY here: project files present, toolchain
     # available, theorem count matches, no sorry. THE PROOFS ARE NOT RE-RUN — a full
     # `lake build` requires fetching mathlib (GB-scale) and cannot live in a validator.
     # The proofs WERE run, once, and the receipt records the output.
     print(
         "  scope: Lean half verified STRUCTURALLY (files, toolchain, count, no sorry). "
-        "Proofs NOT re-run here — see receipt 182 for the build. The base half IS re-run."
+        "Proofs NOT re-run here — see receipt 182 (`182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md`) "
+        "for the build. "
+        "The base half IS re-run."
     )
     return 0
 

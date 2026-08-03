@@ -32,9 +32,10 @@ present numeric model only through its D4 estimate `Φ̂₄`. Nothing here is an
 entity in D5. An archetype name never creates authorization, performs an act,
 or manufactures an outcome.
 
-The chart `phi*nu=1` is analytic on its declared open domain. `P_node:=Phi*V`
-is a selected normalized conjunctive model. Neither fact yields operator names,
-sevenfold necessity, moral status, an attractor, or ontology.
+The chart `phi*nu=1` is analytic on its declared open domain.
+`P_node:=min(Phi_hat_4,V_4)` is the selected ordinal AND-class score; the
+historical product `Phi_hat_4*V_4` is retired as a ranking. Neither fact yields
+operator names, sevenfold necessity, moral status, an attractor, or ontology.
 
 ## 2. The selected G7 language
 
@@ -48,9 +49,9 @@ sign vocabulary.
 | G2 | Kṛṣṇa ◇ · God-polar giving | actor modeling cost / other D4-power support | enabling or instruction |
 | G3 | Kālī 💀 · demon-polar taking, God-function truth-cut | recovery / removal of represented false possibility structure | correction or pruning |
 | G4 | Kali 🎲 · Demon-polar taking | actor gain / other D4-power loss | extraction candidate or bounded defense |
-| F1 | Brahmā ○ · Titan projection | both factors rise | creation-frame label |
-| F2 | Viṣṇu ⊙ · Titan projection | both factors approximately hold | preservation-frame label |
-| F3 | Śiva • · Titan projection | both factors fall | dissolution-frame label |
+| F1 | Brahmā ○ — Titan projection | both factors rise | creation-frame label |
+| F2 | Viṣṇu ⊙ — Titan projection | both factors approximately hold | preservation-frame label |
+| F3 | Śiva • — Titan projection | both factors fall | dissolution-frame label |
 
 The mythic words are memory aids. They are not beings, genders, castes,
 personalities, clinical types, or intrinsic good/evil classes. Same-sign frames

@@ -30,9 +30,34 @@ The Finity Card remains defined in the Lived Compass; `FIN01-02` remains `[C]`.
 The machine-readable [gate registry](GATE_REGISTRY.json) records current-draft hashes,
 claim/docket bindings, external state, dependencies, kill routes, and future
 result custody. Every missing prerequisite has an empty evidence record; a
-future promotion requires a contained artifact, matching digest, and contained
-matching receipt rather than a status declaration alone. Comprehension and
-review never promote comparative efficacy.
+status declaration alone never clears one. The v4 review route is stricter: it
+accepts no local owner or external evidence beyond its technical manifest
+binding. Comprehension and review never promote comparative efficacy.
+
+The current frozen external-review packet is
+[`REVIEW_BUNDLE_v4.md`](REVIEW_BUNDLE_v4.md), bound by
+[`REVIEW_BUNDLE_v4.json`](REVIEW_BUNDLE_v4.json). Version 2 superseded version 1
+because the Lived Compass changed materially when the retired product ranking
+was replaced by the selected ordinal minimum convention. Version 3 repairs a
+separate custody defect: v2 hashed the mutable `GATE_REGISTRY.json`, while that
+registry needed to bind the manifest in its own `bundle_manifest` prerequisite.
+The resulting self-hash cycle made the prerequisite impossible to satisfy.
+
+Version 3 carries the deterministic
+[`REVIEW_REGISTRY_SNAPSHOT_v3.json`](REVIEW_REGISTRY_SNAPSHOT_v3.json) and its
+[`REVIEW_BUNDLE_BINDING_CONTRACT_v1.md`](REVIEW_BUNDLE_BINDING_CONTRACT_v1.md)
+instead of the mutable registry. The live registry can now bind v3 plus its
+local binding receipt without changing a file that v3 hashes. Version 4
+retains hash-locked v1–v3 artifact custody and adds a frozen per-prerequisite provenance contract in
+[`REVIEW_REGISTRY_SNAPSHOT_v4.json`](REVIEW_REGISTRY_SNAPSHOT_v4.json) and
+[`REVIEW_BUNDLE_BINDING_CONTRACT_v2.md`](REVIEW_BUNDLE_BINDING_CONTRACT_v2.md).
+It keeps `D-OWNER-03` explicitly `unset`, so no generic local file can clear a
+human, external, or applicability prerequisite. Version 4 also accepts no
+present external-state record: owner and external evidence require a later
+reviewed schema with an independent verification boundary. This makes only the
+mechanical `bundle_manifest` prerequisite satisfied. The other six review
+prerequisites remain missing, so the gate is still `typed`, `deferred`, and
+`blocked`; no review is ready, sent, received, or implied.
 
 The [internal Rosetta review receipt](../../../00_META/reviews/2026_07_28_FINITY_EVALUATION_ROSETTA_REVIEW.md)
 preserves the initial holds and final contract pass. It is not the independent
@@ -53,7 +78,8 @@ publishing identifiable responses may itself change the ethics boundary.
 
 ## Freeze and amendment law
 
-1. External review receives the exact source, card, registry, and packet hashes.
+1. External review receives the exact source, card, versioned static
+   review-registry snapshot, binding-contract, and packet hashes.
 2. Material changes produce a new version and hash; they never rewrite a frozen
    packet after contact.
 3. Participant contact begins only after the applicable ethics determination,

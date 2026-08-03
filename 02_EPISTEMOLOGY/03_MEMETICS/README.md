@@ -32,10 +32,19 @@ the symbiont as fuel for a pattern that no longer serves life.
 So the lane's practical test is the same syntropic dyad used in value theory:
 
 ```text
-P_node,i = Φ_i × V_i
-P_node,H = Φ_H × V_H
-η = 0
+P_node,i = min(Φ_i, V_i)
+P_node,H = min(Φ_H, V_H)
+η_move = 0
 ```
+
+Φ and V are jointly necessary (AND-class); uppercase `Φ` here abbreviates
+`Φ̂₄` and `V` abbreviates normalized `V₄`, both carrying order, not metric.
+`min` is the selected working bottleneck score `[I]`; the historical product
+`Φ_i V_i` remains a rival conjunction model and is retired as a ranking — it
+may not order, score, or compare nodes. Source of truth:
+[`../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md`](../01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
+§4 and `KSC-02` in
+[`../../00_META/00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
 A meme, ritual, interface, or institution is syntropic when it helps `i` see
 and act more clearly while also preserving or raising `H`. It is extractive

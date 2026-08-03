@@ -273,9 +273,7 @@ indeterminate **limit form**, or it may acquire a separately declared rule in a
 named extended arithmetic. No operator may be inserted between the Titan seats
 and used as a proof.
 
-The prohibition is total within the Titan type: apparent expressions such as
-`1_T/1_T`, `0_T/1_T`, `∞_T/1_T`, and `0_T×∞_T` are not operations with unusual
-values; they are inadmissible terms. This does not revoke ordinary arithmetic
+The prohibition is total within the Titan type: `1_T/1_T`, `0_T/1_T`, `∞_T/1_T`, and `0_T×∞_T` are inadmissible apparent expressions, not operations with unusual values. This does not revoke ordinary arithmetic
 on the distinct number type.
 
 A deliberately typed projective reciprocal map may instead be defined, for
@@ -334,7 +332,7 @@ of the sphere, where `0` is the centre.** Declared here because `KSC-28` require
 every arithmetic claim to name its chart.
 
 ```text
-sphere chart (Titan realm)     equator at mid-latitude;  1 is the centre
+projective sphere chart        equator at mid-latitude; selected 1_P chart point
 plane  chart (D1)              stereographic image;      0 is the centre
                                ∞ is the point at infinity
                                |z|=1 carries +1 and −1 antipodally
@@ -366,7 +364,7 @@ witness." Under §6A.1 it is more than selected — it is **the union of the two
 fixed sets**:
 
 ```text
-fix(n)  = {0, ∞}      the Titan poles
+fix(n_P) = {0_P, infinity_P}   the projective endpoints
 fix(ι)  = {+1, −1}    KSC-21's oriented pair — this is D1
 union   = {−1, 0, +1, ∞}
 ```
@@ -376,14 +374,16 @@ point on `ℝP¹`** and fixes `{+i, −i}` on `Ĉ`. All three together give six 
 — the vertices of an **octahedron** inscribed in the sphere, with the three
 involutions as the three half-turns about its axes.
 
-This says something the foursome as a bare list could not: `D1`'s oriented pair
-and the Titan poles are **the two fixed sets of one commuting pair of
-involutions**. Selection remains — which involutions to privilege is chosen —
-but the four points are no longer four separate choices.
+This says something the foursome as a bare list could not: `D1`'s oriented
+numeric pair and the projective endpoints are **the two fixed sets of one
+commuting pair of involutions**. Selection remains — which involutions to
+privilege is chosen — but the four mathematical points are no longer four
+separate choices. TitanFrame is not one of these fixed sets and receives no
+operation or proof transfer from them.
 
 ### 6A.3 Suda's insights, with their chart declared `[A]` results / `[I]` reading
 
-Adopted per receipt 175. **All of the following are multiplicative-chart results
+Adopted per `175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`. **All of the following are multiplicative-chart results
 on the positive ray `ℝ₊`**, and none of them is a D1-chart result:
 
 | # | Result | Status |
@@ -433,7 +433,7 @@ positive-ray theory is a proper sub-chart of D1, not a presentation of it. Any
 document citing `ρ`, `E`, `φ` or `u` at D1 without restricting to `ℝ₊` is
 over-reaching its chart.
 
-**Fences retained** (receipt 175, doc 42 §6): `0×∞=1` is never field arithmetic;
+**Fences retained** (`175_SPHERE_PRIMACY_RULING_EXECUTED_2026_07_29.md`, doc 42 §6): `0×∞=1` is never field arithmetic;
 `0/0` stays indeterminate; do not inherit `0* := lim 1/x`; Suda is credited for
 packaging and interpretation, never as proof-authority or originator; no physics,
 energy-ontology or genetic claims are imported.
@@ -500,14 +500,17 @@ zero width  ←—— ι ——→  infinite width
 > **Finity is not a number. It is the family of non-degenerate shapes — and the
 > poles are exactly where shape stops existing.**
 
-`⊙` names the open interior of that family; `•` and `○` name its two collapses.
+Finity names the open interior of that family. The selected unit Titan role may
+be used as an interpretive motif for the distinguished middle, and the selected
+ground/horizon roles as motifs for the two collapses. These are analogies only:
+the geometric points and the opaque Titan roles are not identical or coerced.
 This is the geometric statement of what doc 47 §3 proved algebraically: the
 interior is **prior**, and the poles are its boundary rather than its parents. A
-family of triangles has two ways to stop being a triangle, and those two ways are
-the two Titan seats.
+family of triangles has two ways to stop being a triangle. Those geometric
+degenerations remain projective boundary cases, not Titan terms.
 
 It also settles what kind of crossing this is — but **not** by the reason first
-written here. This section is what surfaced `HR-1` (receipt 179), so its own close
+written here. This section is what surfaced `HR-1` (`179_HR1_DECISION_PACKET_THE_WRONG_ARROW_2026_07_29.md`), so its own close
 pre-dated the ruling it caused: it read the boundary as *no new freedom appearing*,
 and that criterion — type-D — was retired on 2026-07-29. The live reason counts no
 freedoms at all: **adjoining `∞` is an outward arrow, and an outward arrow carries no

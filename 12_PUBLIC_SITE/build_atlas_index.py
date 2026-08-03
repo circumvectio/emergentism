@@ -84,7 +84,7 @@ def collect(dirname: str):
     return pages
 
 
-def main() -> int:
+def build_payload() -> dict:
     tree = []
     for key, label, dirs in OVERVIEW:
         pages = []
@@ -100,7 +100,7 @@ def main() -> int:
         if pages:
             tree.append({"key": dirname, "label": label, "pages": pages})
     total = sum(len(s["pages"]) for s in tree)
-    payload = {
+    return {
         "schemaVersion": 2,
         "status": "current-cleared-surfaces-only",
         "generated": "build_atlas_index.py",
@@ -112,25 +112,40 @@ def main() -> int:
         "total": total,
         "tree": tree,
     }
+
+
+def canonical_payload(payload: dict) -> str:
+    """Return the exact bytes emitted for the generated atlas artifact."""
+
+    return json.dumps(payload, ensure_ascii=False, indent=1) + "\n"
+
+
+def main(argv: list[str] | None = None) -> int:
+    import sys as _sys
+
+    argv = _sys.argv[1:] if argv is None else argv
+    payload = build_payload()
+    total = payload["total"]
+    tree = payload["tree"]
     # --check exists because this artifact went stale unnoticed: /established/ and /read/
     # were added to currentSurfaces and the index was never rebuilt, so the drawer's
     # search returned zero hits for the site's own flagship page.
-    import sys as _sys
-    if "--check" in _sys.argv[1:]:
+    if "--check" in argv:
         if not OUT.exists():
             print("ATLAS INDEX: FAIL\n- atlas/site_index.json has not been built")
             return 1
-        on_disk = json.loads(OUT.read_text(encoding="utf-8"))
-        for key in ("total", "tree", "status"):
-            if on_disk.get(key) != payload.get(key):
-                print(f"ATLAS INDEX: FAIL\n- '{key}' differs from what the manifest and "
-                      f"section lists now produce. Rebuild: python3 -B build_atlas_index.py")
-                return 1
+        if OUT.read_text(encoding="utf-8") != canonical_payload(payload):
+            print(
+                "ATLAS INDEX: FAIL\n"
+                "- atlas/site_index.json differs from the deterministic payload, including "
+                "its source and exclusion provenance. Rebuild: python3 -B build_atlas_index.py"
+            )
+            return 1
         print(f"ATLAS INDEX: PASS ({total} current pages in {len(tree)} sections; "
               f"matches public_semantic_parity.json)")
         return 0
 
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    OUT.write_text(canonical_payload(payload), encoding="utf-8")
     print(f"site_index.json: {total} pages in {len(tree)} sections -> {OUT.relative_to(ROOT)}")
     return 0
 

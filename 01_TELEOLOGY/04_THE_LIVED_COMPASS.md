@@ -78,15 +78,17 @@ not moral labels.
 
 `Φ₅` is D5 possible power: the structured potential of relevant alternatives.
 `Φ̂₄=Eval₄(M,Φ₅)` is its present D4 estimate. `V₄` is D4 actual power: usable
-body, energy, tools and access. `P_node=Φ̂₄V₄`, publicly `ΦV`, is one declared
-AND-class model: a zero in either evaluated factor blocks effective enactment
-inside that model.
+body, energy, tools and access. Both factors carry order, not metric. The
+selected working convention is `P_node:=min(Φ̂₄,V₄)`: a zero in either factor
+blocks effective enactment. The historical product shorthand `ΦV` is retired as
+a ranking and may be used only inside a separately defended cardinal scale
+contract.
 
 Do not infer more than it says:
 
 - high `Φ̂₄` does not make an imagined future true;
 - high `V₄` does not make force wise or authorized;
-- the product is not a universal metric of persons;
+- neither the selected minimum nor any product is a metric of persons;
 - `Φ̂₄=1` forces `V₄=0` only under a separately measured finite-resource budget;
 - the world and other agents still determine the outcome.
 

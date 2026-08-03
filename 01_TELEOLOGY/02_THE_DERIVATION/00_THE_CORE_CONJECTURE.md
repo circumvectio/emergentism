@@ -35,17 +35,24 @@ rosetta:
 For a bearer `x`, Emergentism selects the normalized conjunctive instance
 
 \[
-P_x=\widehat\Phi_{4,x}V_{4,x},
+P_x=\min(\widehat\Phi_{4,x},V_{4,x}),
 \qquad
-W_x(T)=\int_0^T P_x(t)\,dt,
+q_x(t)=Q_x(P_x(t)),
+\qquad
+W_x(T)=\int_0^T q_x(t)\,dt,
 \]
 
 where `Φ₅` is D5 possible power, `Φ̂₄=Eval₄(M,Φ₅)` its operationalized D4
 estimate, and `V₄` an operationalized measure of D4 actual power or embodied
-means. The public compression remains `P_x=Φ_xV_x`. The zero-factor condition
-supports an AND-class family; it does not force multiplication.
-Product, minimum, harmonic, CES, and other rivals must be compared in every
-real domain.
+means. `Q_x` is available only when an application separately declares and
+defends a cardinal representation and integration rule. The public compression
+is `P_x=min(Φ̂₄(x),V₄(x))`. The zero-factor
+condition supports an AND-class family; it does not force one member. The
+historical product `Φ̂₄V₄` / public `ΦV` is retired as a node ranking and
+may be tested only as an explicit candidate under separately defended cardinal
+scales. Any temporal integral `W_x` likewise requires a declared cardinal
+representation and integration rule; it is not licensed by the ordinal score
+alone.
 
 The option cone is not the physical light cone. The physical cone remains
 bounded by spacetime and `c`. An option cone is the subset of physically
@@ -138,7 +145,8 @@ identity, recurrence, or general self-similarity.
    driving it toward zero should sharply reduce the local modeled outcome. If
    substitution routinely prevents collapse, the local AND-class claim fails.
 2. **Aggregator comparison.** A rival that predicts and intervenes better than
-   `ΦV` displaces the product for that domain.
+   the selected minimum displaces it for that domain. A product arm is a
+   separately cardinal candidate, never an implicit restoration of the ranking.
 3. **Represented-future intervention.** Changing represented futures should
    sometimes change present action distributions. Persistent specified nulls
    reject that coupling.

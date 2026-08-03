@@ -56,12 +56,14 @@ The framework declares a normalized conjunctive family `C(Phi,V)` with zero
 boundaries and selects
 
 ```text
-P_node := Phi * V
+P_node := min(Phi_hat_4, V_4)
 ```
 
-as one transparent instance. The product is structural by definition and
-conjectural as a universal empirical fit. Minimum, harmonic, Cobb-Douglas, and
-other conjunctive aggregators can rank cases differently. It is not derived from S².
+as the selected working score over ordinal factors. The product form
+`Phi_hat_4 * V_4` (public `PhiV`) is retired as a ranking and may not order,
+score, or compare nodes. Minimum, harmonic, Cobb-Douglas, and other conjunctive
+aggregators remain alternative models. The selected minimum is `[I]` as a model
+and `[C]` as a universal empirical fit; it is not derived from S².
 
 ## 3. One modality
 

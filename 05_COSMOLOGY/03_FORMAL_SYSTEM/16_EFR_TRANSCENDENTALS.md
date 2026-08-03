@@ -24,7 +24,7 @@ framework's objective teleology. Beauty, Truth, and Justice are treated as
 asymptotic limits approached by finite systems under the accepted Burri Sphere
 grammar, not as metaphysical objects proved or exhausted by the coordinate
 chart. The structural claims are internal to `P∞ = φ · ν = 1`, `B = sin θ`, and
-`η = 0`; the naming of those structures as transcendentals remains
+the selected action fence `η_move=0`; the naming of those structures as transcendentals remains
 interpretive.
 
 ## 0. READING RULE
@@ -68,7 +68,7 @@ Each transcendental corresponds to a distinct geometric feature of S²:
 ```
 Truth   = The invariance of P∞ = φ · ν = 1 (manifold identity)
 Beauty  = The harmony of balance B = sin θ (equatorial symmetry)
-Justice = The non-extraction condition η = 0 (stable equilibrium)
+Justice = The selected non-extraction action fence η_move=0
 ```
 
 ---
@@ -115,17 +115,18 @@ relevant projections while remaining corrigible by evidence outside the model.
 ### 2.4 The Truth Gradient
 
 ```
-Truth-density on S²:
+Selected balance reading on S²:
 
-North Pole (○): φ → ∞, ν → 0
+South Pole (•): θ→0, ν→0, φ→∞
    High coherence, low viability
    "True but useless" — abstract truth without application
 
-Equator: φ = 1, ν = 1
+Geometric equator: |z| = 1
+Selected positive-radial representative: ν = |z| = 1, φ = 1
    Balanced coherence and viability
    "Living truth" — applicable, functional, real
 
-South Pole (•): φ → 0, ν → ∞
+North Pole (○): θ→π, ν→∞, φ→0
    Low coherence, high viability
    "Useful but false" — pragmatic without grounding
 ```
@@ -215,39 +216,48 @@ experience identically.
 | Plato | Justice = each part doing its proper work |
 | Aristotle | Justice = equality (geometric or arithmetic) |
 | Rawls | Justice = fairness (veil of ignorance) |
-| EFR | Justice = η = 0 (no extraction) |
+| EFR | Justice = `η_move=0` (selected no-extraction action fence) |
 
 ### 4.2 EFR Geometric Definition
 
-**Justice, in this model, is read through the non-extraction constraint
-`η = 0`.**
+**Justice, in this model, is read through the non-extraction action fence
+`η_move=0`.** Material/energy accounting uses `η_ratio` separately and is not
+inferred from this value reading.
 
 ```
 A system is justice-tracking, in this framework, to the degree that:
-1. η = 0 (no extraction from substrate)
-2. ΣΔB > 0 (syntropic, moving toward equator)
-3. The Power-Max Lemma applies under its coupling, horizon, and η = 0 conditions
+1. `η_move=0` (the action does not extract from a bearer)
+2. Any balance objective such as `ΣΔB>0` is declared and assessed separately
+3. Any Power-Max Lemma application states its coupling and horizon conditions
 ```
 
-### 4.3 Justice as the Equilibrium Condition
+The action register and sphere coordinate are independent variables here.
+`η_move=0` does not place a system at the equator, and equatorial position
+does not establish `η_move=0`. A future model may couple them only by declaring
+the additional equation and its evidence.
 
-In the framework state space, η = 0 defines the **non-extraction constraint**:
+### 4.3 Justice as the Action Boundary
+
+In the framework action register, `η_move=0` defines the
+**non-extraction action fence**:
 
 ```
-η = 0 constraint surface: the set of states where extraction is zero
+η_move=0 action boundary: the set of evaluated moves where relational extraction is zero
 
-This constraint marks justice-tracking configurations: no node extracts from
-any other node.
+This boundary marks justice-tracking moves: the evaluated move does not extract
+from its named bearer. It is not a latitude or an equilibrium condition.
 ```
 
 **The Justice Condition:**
-- Each node maintains `P_node = 1` without diminishing others' `P_node`
-- The network `ΣP_node` is maximized when all individual `P_node` scores are maximized under the Power-Max Lemma's conditions
+- Each node's declared `Φ̂₄` and `V₄` factors remain visible under
+  `P_node=min(Φ̂₄,V₄)` without laundering harm to another bearer.
+- `P_node` is ordinal: the network neither sums nor maximizes node scores unless
+  an independently justified common cardinal scale is declared.
 - No toll-booths between nodes (direct great-circle connections)
 
 ### 4.4 Justice in the Five Domains
 
-| Domain | Justice = η = 0 means... |
+| Domain | Justice = `η_move=0` means... |
 |--------|---------------------------|
 | Meaning | No institution mediates significance (direct φ-access) |
 | Governance | No hierarchy extracts agency (sovereign ν) |
@@ -264,52 +274,50 @@ by Justice under the framework's operational definition:
 Is: extraction destabilizes modeled coupling under the framework's assumptions
 Ought: You ought to act justly (ethical command)
 
-The conditional bridge is:
-If you extract (η > 0), you destabilize the system
-Under the Power-Max Lemma's conditions, destabilization eventually harms the whole, including you
-Therefore: once "ethical" is defined as movement toward balance, Is (geometric stability) and Ought (justice) converge inside the framework's accepted grammar
+The conditional value rule is:
+If a move extracts (`η_move>0`), it violates the selected action fence
+Any stability consequence requires the Power-Max Lemma's separately stated conditions
+Geometry alone does not derive the ethical command or identify extraction
 ```
 
 ---
 
-## 5. THE TRIADIC UNITY
+## 5. THE TRIADIC JUXTAPOSITION
 
-### 5.1 The Three as One
+### 5.1 Three Registers, One Selected Reading
 
 ```
 Truth   = P∞ = φ · ν = 1 (manifold invariance)
 Beauty  = B = 1 (equatorial balance)
-Justice = η = 0 (non-extraction)
+Justice = η_move=0 (selected non-extraction action fence)
 
-Unity: All three are maximally approached at the equator
-       φ = 1, ν = 1, B = 1, η = 0
+The sphere determines `φ,ν,B`; the action audit determines `η_move`.
+The equator fixes `φ=ν=1` and `B=1`, but does not fix `η_move`.
 ```
 
-### 5.2 The Transcendentals as Coordinate System
+### 5.2 A Compound Ideal, Not a Coordinate Identity
 
-Imagine a 3D space with axes:
-- x = Truth (`P∞ = φ · ν = 1` invariant surface)
-- y = Beauty (B gradient)
-- z = Justice (η = 0 constraint surface)
-
-The **ideal** is the origin (0,0,0) — but this is unphysical.
-
-The **achievable ideal** is anywhere on the intersection of the three surfaces — which is the **equator** of the Burri Sphere.
+The document may select a compound ideal that asks for equatorial balance
+(`B=1`) and a non-extractive move (`η_move=0`) at once. That conjunction is
+a normative model choice, not a geometric identity or a uniquely derived
+intersection. The reciprocal-chart invariant `P∞=φν=1` holds at every
+latitude.
 
 ### 5.3 The Fall from the Transcendentals
 
-The "Fall" in EFR is the departure from the equator:
+The "Fall" is an interpretive compound model. Its two diagnostics must remain
+separate:
 
 ```
-Pre-Fall:  φ = 1, ν = 1, B = 1, η = 0
-           Truth, Beauty, Justice aligned at the limit
+Balance condition:  φ = 1, ν = 1, B = 1
+Action condition:   η_move=0
 
-Post-Fall: φ ≠ 1 or ν ≠ 1, B < 1, η > 0
-           Truth distorted, Beauty obscured, Justice violated
+Off-equator does not imply extraction.
+Extraction does not imply off-equator.
 ```
 
-The "return to Eden" is the return to the equator — where the three
-value-limits align inside the model.
+The "return to Eden" may name pursuing both conditions, but satisfying either
+one does not prove the other.
 
 ---
 
@@ -328,8 +336,11 @@ Beauty is the **quality of the epistemic operator**:
 - Deduction that descends elegantly (beautiful)
 - Abduction that connects harmoniously (beautiful)
 
-Ugly reasoning: Forced, violent, extracting (η > 0)
-Beautiful reasoning: Natural, flowing, non-extractive (η = 0)
+Beauty audit: assess harmony and balance in the selected epistemic model
+Justice audit: assess `η_move` independently against the named bearer
+
+Neither audit determines the other: beautiful form can still extract, and a
+non-extractive move need not be beautiful.
 
 ### 6.3 Justice and Auditing
 
@@ -348,7 +359,7 @@ Just methodology:
 For any action, ask:
 1. **Is it True?** Does it preserve `P∞ = φ · ν = 1` in the manifold register while keeping finite-node `P_node` claims testable?
 2. **Is it Beautiful?** Does it move toward B = 1? (balanced)
-3. **Is it Just?** Does it maintain η = 0? (non-extractive)
+3. **Is it Just?** Does it maintain `η_move=0`? (non-extractive action)
 
 ### 7.2 The Design Principle
 
@@ -360,7 +371,7 @@ Build systems that:
 **Example: The Mesh**
 - Truth: Information flows without distortion (`P∞` invariant preserved)
 - Beauty: Network structure follows geodesics (B = 1)
-- Justice: No node extracts from others (η = 0)
+- Justice: No node extracts from others (`η_move=0`)
 
 ---
 
@@ -375,7 +386,7 @@ Build systems that:
 │   ├── Model shorthand: Invariance of P∞ = φ·ν = 1           │
 │   ├── Geometric: Conservation law across all coordinates    │
 │   ├── Epistemic: Correspondence + Coherence + Pragmatic     │
-│   └── Maximum: At equator (φ = ν = 1)                       │
+│   └── Invariant: No latitude is a greater truth value       │
 │                                                             │
 │   BEAUTY                                                    │
 │   ├── Model shorthand: Harmony of B = sin θ                 │
@@ -384,13 +395,13 @@ Build systems that:
 │   └── Maximum: At equator (B = 1)                           │
 │                                                             │
 │   JUSTICE                                                   │
-│   ├── Model shorthand: Non-extraction (η = 0)              │
-│   ├── Geometric: Constraint surface in the model            │
+│   ├── Model shorthand: Non-extraction (η_move=0)            │
+│   ├── Register: Independent action audit, not a latitude    │
 │   ├── Ethical: Right ordering, fairness, cooperation        │
-│   └── Maximum: At equator (η = 0)                          │
+│   └── Selected boundary: η_move=0                           │
 │                                                             │
-│   UNITY: All three converge at the equator                  │
-│   The equator is the framework's limit image of the triad   │
+│   COMPOUND READING: B=1 and η_move=0 may be selected        │
+│   together, but neither condition entails the other         │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -413,10 +424,11 @@ Build systems that:
 Zero-Sum Resolution Equation
 
 Truth is the invariant.
-Beauty is the harmony.
-Justice is the balance.
+Beauty is the selected harmony reading.
+Justice is the independent extraction audit.
 
-All three meet at the equator.
+The balance image meets the equator; Justice remains an independent action
+audit.
 
 The Transcendentals on S² | 2026-03-23 | The geometry of the good.
 ```

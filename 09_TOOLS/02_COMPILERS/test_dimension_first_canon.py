@@ -13,11 +13,17 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 from urllib.parse import unquote
 
 
 ROOT = Path(__file__).resolve().parents[2]
+LINK_CHECKER_PATH = ROOT / "09_TOOLS/01_SCRIPTS/check_links.py"
+link_spec = importlib.util.spec_from_file_location("check_links", LINK_CHECKER_PATH)
+assert link_spec and link_spec.loader
+link_checker = importlib.util.module_from_spec(link_spec)
+link_spec.loader.exec_module(link_checker)
 
 PATHS = {
     "completion": ROOT / "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
@@ -220,7 +226,7 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             "Operational Titan arithmetic escaped the empty signature:\n" + "\n".join(violations),
         )
 
-    def test_retired_titan_infix_is_absent_from_live_nonhistorical_surfaces(self):
+    def test_retired_titan_infix_is_locally_denied_on_active_surfaces(self):
         roots = [
             ROOT / name
             for name in (
@@ -238,14 +244,16 @@ class DimensionAndArithmeticTests(unittest.TestCase):
                 "10_SEED",
             )
         ]
-        historical_markers = (
-            'status: "superseded',
-            'status: "withdrawn',
-            "historical compatibility",
-            "historical research",
-            "historical filename retained",
-            "archive_boundary:",
-            "genesis document (pre-hardening",
+        denial_markers = (
+            "forbidden",
+            "ill-typed",
+            "invalid",
+            "inadmissible",
+            "retired",
+            "superseded",
+            "withdrawn",
+            "not a titan equation",
+            "no titan arithmetic",
         )
         violations: list[str] = []
         for root in roots:
@@ -265,36 +273,23 @@ class DimensionAndArithmeticTests(unittest.TestCase):
                 if any(part.startswith(".") for part in rel.parts):
                     continue
                 body = path.read_text(encoding="utf-8")
-                if any(marker in body[:2000].lower() for marker in historical_markers):
-                    continue
-                # RETIRED 2026-07-29. This test banned the literal infix ⊙ = • × ○
-                # from every live surface. Receipt 174 RESTORED the three equations
-                # BY PROOF on Ĉ — doc 45 is titled "the three equations restored on
-                # the sphere" and its §4 reads "The equations are theorems [A]" —
-                # and the Foundation now posits the infix as B1. KSC-04 forbids
-                # ARITHMETIC on Titan labels (ArithmeticSignature(TitanFrame)=∅);
-                # it never retired the relation among seats.
-                #
-                # What KSC-04 and DF-21 actually require is not absence but a FENCE:
-                # wherever the identity appears it must not be cashed as a warrant.
-                # That is what is checked now.
+                # Active history is not exempt. A literal retired infix may remain
+                # only when its own local three-line window explicitly denies it.
+                # Generic words such as "theorem", "analytic", "posit", or a
+                # receipt number cannot turn ill-typed syntax into a lawful claim.
+                lines = body.splitlines()
                 for match in re.finditer(r"⊙\s*=\s*•\s*[×*]\s*○", body):
                     line = body.count("\n", 0, match.start()) + 1
-                    window = body[max(0, match.start() - 1500): match.end() + 1500].lower()
-                    fenced = any(
-                        f in window
-                        for f in (
-                            "empty of world", "world-empty", "not a restored warrant",
-                            "licenses no", "analytic", "theorem", "posit", "ksc-04",
-                            "reachability", "df-15",
-                        )
-                    )
-                    if not fenced:
-                        violations.append(f"{rel}:{line}: {match.group(0)} — UNFENCED")
+                    start = max(0, line - 2)
+                    stop = min(len(lines), line + 1)
+                    window = "\n".join(lines[start:stop]).lower()
+                    denied = any(marker in window for marker in denial_markers)
+                    if not denied:
+                        violations.append(f"{rel}:{line}: {match.group(0)} — NOT LOCALLY DENIED")
         self.assertEqual(
             violations,
             [],
-            "Titan identity appears without its world-empty fence:\n" + "\n".join(violations),
+            "Retired Titan infix appears without a local denial:\n" + "\n".join(violations),
         )
 
     def test_exact_register_transition_and_boundary_census(self):
@@ -651,6 +646,26 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
                     broken.append(f"{path.relative_to(ROOT)} -> {target}")
         self.assertEqual(broken, [], "Broken active Markdown links:\n" + "\n".join(broken))
 
+    def test_markdown_link_guard_rejects_existing_target_outside_corpus(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixture_root = Path(tmp)
+            corpus = fixture_root / "corpus"
+            corpus.mkdir()
+            outside = fixture_root / "outside.md"
+            outside.write_text("outside", encoding="utf-8")
+            (corpus / "entry.md").write_text("[escape](../outside.md)", encoding="utf-8")
+
+            original_root = link_checker.ROOT
+            try:
+                link_checker.ROOT = corpus
+                broken, checked = link_checker.collect()
+            finally:
+                link_checker.ROOT = original_root
+
+        self.assertEqual(checked, 1)
+        self.assertEqual(len(broken), 1)
+        self.assertIn("target escapes corpus", broken[0])
+
     def test_legacy_crosswalks_cannot_restore_superseded_types(self):
         formal_index = read("formal_index")
         self.assertNotIn("Proof of D6 ≡ D0", formal_index)
@@ -731,6 +746,126 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         spec.loader.exec_module(module)
         for token in ("02_SKYZAI", "PENDING_K2", "DAVs", "DACs"):
             self.assertIsNotNone(module.FORBIDDEN.search(token), token)
+
+    def test_purity_masks_only_complete_physical_receipt_filenames(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_receipts", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                receipt_lane = (
+                    module.ROOT / "11_UPLINK/50_AUDITS_AND_EXECUTIONS"
+                )
+                receipt_lane.mkdir(parents=True)
+                (receipt_lane / "123_K2_RECORD.md").write_text(
+                    "historical target\n", encoding="utf-8"
+                )
+                source = module.ROOT / "00_META/source.md"
+                source.parent.mkdir(parents=True)
+
+                source.write_text(
+                    "See `123_K2_RECORD.md`.\n", encoding="utf-8"
+                )
+                self.assertEqual(module.scan_file(source), [])
+
+                source.write_text(
+                    "See `11_UPLINK/50_AUDITS_AND_EXECUTIONS/123_K2_RECORD.md#scope`.\n",
+                    encoding="utf-8",
+                )
+                self.assertEqual(module.scan_file(source), [])
+
+                source.write_text(
+                    "See `123_K2_RECORD.md.bak`.\n", encoding="utf-8"
+                )
+                spoof_errors = module.scan_file(source)
+                self.assertEqual(len(spoof_errors), 1, spoof_errors)
+                self.assertIn("forbidden authority token 'K2'", spoof_errors[0])
+
+                source.write_text(
+                    "See `123_K2_RECORD.md/authority`.\n", encoding="utf-8"
+                )
+                slash_errors = module.scan_file(source)
+                self.assertEqual(len(slash_errors), 1, slash_errors)
+                self.assertIn("forbidden authority token 'K2'", slash_errors[0])
+
+                source.write_text(
+                    "See `999_K2_NONEXISTENT.md`.\n", encoding="utf-8"
+                )
+                nonexistent_errors = module.scan_file(source)
+                self.assertEqual(len(nonexistent_errors), 1, nonexistent_errors)
+                self.assertIn(
+                    "forbidden authority token 'K2'", nonexistent_errors[0]
+                )
+
+                (receipt_lane / "123_K2_RECORD.md").unlink()
+                source.write_text(
+                    "See `123_K2_RECORD.md`.\n", encoding="utf-8"
+                )
+                deleted_errors = module.scan_file(source)
+                self.assertEqual(len(deleted_errors), 1, deleted_errors)
+                self.assertIn("forbidden authority token 'K2'", deleted_errors[0])
+
+                (receipt_lane / "123_K2_RECORD.md").write_text(
+                    "historical target\n", encoding="utf-8"
+                )
+
+                source.write_text(
+                    "K2 is authority; see `123_K2_RECORD.md`.\n",
+                    encoding="utf-8",
+                )
+                prose_errors = module.scan_file(source)
+                self.assertEqual(len(prose_errors), 1, prose_errors)
+                self.assertIn("forbidden authority token 'K2'", prose_errors[0])
+            finally:
+                module.ROOT = original_root
+
+    def test_purity_excludes_only_the_dedicated_generated_custody_registry(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_registry", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        registry = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json"
+        lookalike = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY_COPY.json"
+        ordinary = ROOT / "00_META/CONTACT_LIMITED_STATE.json"
+        self.assertFalse(module.is_active_corpus_file(registry))
+        self.assertTrue(module.is_active_corpus_file(lookalike))
+        self.assertTrue(module.is_active_corpus_file(ordinary))
+
+    def test_purity_scans_every_forbidden_token_on_an_allowed_projection_line(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location("emergentism_purity_all_matches", checker)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(
+            module.CONTROL_PROJECTION_PATHS,
+            (Path("VMOSK_A.md"), Path("VMOSK_A_v2_2026_07_31.md")),
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                projection = module.ROOT / "VMOSK_A.md"
+                projection.write_text(
+                    "VMOSK_A.md is a non-semantic projection; K2 may not become authority.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(projection)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'K2'", errors[0])
 
     def test_source_negative_mutations_remain_absent(self):
         scoped = "\n".join(read(name) for name in PATHS if name != "topology")

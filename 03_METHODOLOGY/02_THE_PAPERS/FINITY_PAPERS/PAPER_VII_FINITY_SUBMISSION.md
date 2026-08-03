@@ -3,7 +3,7 @@ title: "Finity: Why One Is the Center of the Number Line and What That Means for
 author: "Yves R. Burri"
 date: 2026-06-06
 evidence_tier: "[A] for established mathematics; [S] for framework structure; [I] for interpretive claims; [C] for conjectural extensions"
-status: "Submission draft v1"
+status: "TYPE-QUARANTINED DRAFT — NOT FOR SUBMISSION; 2026-08-01 Titan/numeric/projective separation required"
 depends_on:
   - 05_COSMOLOGY/00_THE_ARGUMENT_EMERGENCE_AS_LENS_ON_DASEIN.md
   - 05_COSMOLOGY/03_FORMAL_SYSTEM/40_THE_LOGARITHMIC_REALIGNMENT.md
@@ -13,13 +13,29 @@ depends_on:
 
 **Yves R. Burri**
 
-**Draft v1 — 2026-06-06**
+**Type-quarantined draft — not for submission — 2026-08-01**
+
+> **Withdrawal notice.** The v1 draft identified opaque Titan roles with numeric
+> and projective values, performed arithmetic on the glyphs, and treated a
+> reciprocal chart as a generative ontology. Those moves are ill-typed and are
+> withdrawn below. Only the separately stated reciprocal/logarithmic mathematics
+> remains candidate submission material; the ontological and dimensional
+> readings require a new argument and independent review.
 
 ---
 
 ## Abstract
 
-The ordinary number line places zero at its center because it is built around addition. But multiplicative reality has a different center: under the reciprocal map $I(x) = 1/x$, the unique positive fixed point is $1$, with $I'(1) = -1$ (an orientation-reversing mirror). On a logarithmic scale $s = \log x$, this becomes $s \mapsto -s$ — a reflection through $s = 0$, with zero and infinity as symmetric poles at $s = \pm\infty$. This reframing resolves a chain of interconnected problems: the indeterminate form $0 \times \infty$ becomes the equatorial unit on the Riemann sphere $S^2 \cong \mathbb{CP}^1$; the balance function $B = \sin\theta$ becomes $B = \operatorname{sech}(s)$; and the name "zero-sum" becomes literally true: $\log\varphi + \log\nu = 0$. We call the equatorial fixed point **finity** — the locus where coherence and viability are exactly balanced. Independent corroboration comes from Minoru Suda's 2025 reciprocal-symmetry trilogy, which derives the same fixed-point structure from division-as-double-inversion without reference to this framework. We present falsification criteria and a dimensional scaffold $D0 \to D6$ showing how this mathematical identity generates successive geometric upgrades: point $\to$ line $\to$ sphere $\to$ torus $\to$ game space $\to$ return.
+The ordinary additive line and the positive reciprocal chart use different
+symmetries. Under $I(x)=1/x$ on the positive reals, the unique fixed point is
+$1$ and $I'(1)=-1$. On the logarithmic coordinate $s=\log x$, inversion becomes
+$s\mapsto-s$, while $B=\sin\theta$ becomes $B=\operatorname{sech}(s)$ under the
+declared substitution. These are elementary numeric/chart facts. They do not
+evaluate a product at projective endpoints, operate on TitanFrame, answer why
+anything exists, or generate the proposed $D0\to D6$ scaffold. "Finity" is the
+paper's selected interpretation of the positive self-dual midpoint `[I]`.
+Suda's reciprocal-symmetry work is relevant prior-art/parallel mathematics; it
+does not independently validate this interpretation.
 
 ---
 
@@ -27,35 +43,37 @@ The ordinary number line places zero at its center because it is built around ad
 
 Leibniz's question — "Why is there something rather than nothing?" — has resisted mathematical formalisation for three centuries. The difficulty is that the question appears to require an answer *outside* the system: a cause of being that is not itself a being.
 
-We propose that the answer is *inside* the number system itself. It requires only three boundary-frames and one relation:
+This draft does **not** answer Leibniz's question mathematically. It keeps three
+structures separate:
 
-$$\bullet = 0 \quad \text{(void)} \qquad \circ = \infty \quad \text{(unbounded)} \qquad \odot = 1 \quad \text{(finity)}$$
+```text
+Number: ordinary arithmetic on a named numeric carrier
+ProjectivePoint: endpoints and maps only in a named completion
+TitanFrame: opaque ground, unit, and horizon roles; emblem • ⊙ ○
+```
 
-The relation is held as a **frame-register emblem**, not as field arithmetic:
-
-$$\odot = \bullet \times \circ$$
-
-This states: presence ($\odot$) is what happens when void ($\bullet$) and totality ($\circ$) are composed. It is not a computation — $0 \times \infty$ is indeterminate in any field. It is a geometric statement about the composition of boundary-frames on a manifold where both poles are regular points.
-
-From this unity, each pole can be recovered through relation to the other:
-
-$$\frac{\odot}{\circ} = \bullet \qquad \frac{\odot}{\bullet} = \circ$$
-
-Being is therefore not a static substance. It is an algebra of relation, separation, recovery, and return. `[I]`
+The Titan display is operator-free. No multiplication, division, equality, or
+coercion connects Titan roles to numbers or projective points. A relational
+reading of Being may still be explored at `[I]`, but the mathematics below
+supplies no ontological conclusion.
 
 ---
 
-## 2. The Three Titans
+## 2. TitanFrame and Its Mathematical Neighbors
 
-We call $\{0, 1, \infty\}$ the **Titans** of number. They are not elements of the number line — they are the boundary-frames that *define* the number line.
+Emergentism selects three opaque Titan roles. Their familiar renderings do not
+make them the numeric/projective triple, and they do not define the number line.
 
-- **Zero** ($\bullet$): not nothingness, but compressed potentiality — the void that has not yet differentiated.
-- **Infinity** ($\circ$): not a number, but unbounded openness — the totality that has not yet localised.
-- **Finity** ($\odot$): the hinge where void and totality meet — the unit where "one thing" exists.
+- **Ground role** (`•`): selected image of absence or unarticulated ground.
+- **Horizon role** (`○`): selected image of openness or horizon.
+- **Unit role** (`⊙`): selected image of finite presence or mediation.
 
-The Titans are the structural prerequisite for arithmetic. Before you can count, you must have a unit. Before you can have a unit, you must have boundaries. The Titans are those boundaries.
+These roles are not a structural prerequisite for arithmetic, and no theorem
+derives them from arithmetic.
 
-The emblem $\odot = \bullet \times \circ$ is held strictly as **frame-register doctrine** `[S]`. In the field, $0 \times \infty$ is indeterminate. On the Riemann sphere, the composition of the two boundary directions is read as the equatorial unit — not because arithmetic says so, but because the geometry says so. The two poles are antipodes; the equator is the unique middle latitude; the product names that middle. `[A/S]`
+The only live emblem is `• ⊙ ○`. Projective poles and an equatorial locus are
+mathematical neighbors in a separately declared geometry; geometry does not
+define a product of those poles or identify its locus with the Titan unit role.
 
 ---
 
@@ -129,15 +147,18 @@ The ordinary number line is not wrong. It is the **zero-curvature limit** of the
 
 The old model (0-centred line) is a **projection** — a shadow of the sphere that suppresses the closure. The new model (1-centred sphere) is the completed object. `[I]`
 
-### 4.4 Resolution of the Indeterminate
+### 4.4 Domain Change, Not Resolution of an Indeterminate
 
-On the line: $1/0 = \text{undefined}$.
-On the sphere: $1/0 = \infty$ — just the antipodal point.
+In field arithmetic, division by numeric zero is undefined. A meromorphic
+reciprocal map extends to the Riemann sphere by exchanging the two projective
+endpoints. That is a change of structure, not field division made valid.
 
-On the line: $0 \times \infty = \text{indeterminate}$.
-On the sphere: the composition of the two boundary directions reads as the equatorial unit.
+The sphere has no global field multiplication assigning a product to its two
+projective endpoints. In limit calculus, the corresponding zero-times-
+unbounded form may be indeterminate and depends on the declared approach.
 
-The sphere does not create a new arithmetic. It provides the geometric context in which the boundary operations have determinate meaning. `[A]`
+The sphere provides a projective context for maps and points; it neither creates
+Titan arithmetic nor makes every boundary expression determinate. `[A]`
 
 ---
 
@@ -155,7 +176,7 @@ We propose a seven-dimensional scaffold $D0 \to D6$, where each dimension IS its
 
 | D | Name | Geometric Object | Key Equation |
 |---|---|---|---|
-| D0 | Ground | Point on log line | $\odot = \bullet \times \circ$ |
+| D0 | Ground | selected opaque object role | operator-free Titan emblem (metaframe only) |
 | D1 | Relation | Log line with poles | $\log\varphi + \log\nu = 0$ |
 | D2 | Compactification | Riemann sphere $S^2$ | $\mu$-limit |
 | D3 | Quantum state | Bloch sphere + interior | $B = \operatorname{sech}(s)$ |
@@ -170,11 +191,10 @@ At every $\mu$-crossing, the same pattern holds:
 - **Strong emergence (bottom-up):** $D_{n+1}$ is genuinely novel — not predictable from $D_n$ alone.
 - **Weak emergence (top-down):** once $D_{n+1}$ stabilises, it constrains $D_n$ from above.
 
-The Titan transformations encode both directions:
-
-$$\bullet \times \circ = \odot \quad \text{(strong: poles generate finity from below)}$$
-$$\odot / \circ = \bullet \quad \text{(weak: finity makes void legible from above)}$$
-$$\odot / \bullet = \circ \quad \text{(weak: finity makes totality legible from above)}$$
+No Titan transformation encodes either direction: TitanFrame has no operations.
+The strong/weak emergence proposal must instead define typed transition maps,
+inputs, outputs, recovery laws, and discriminators for each claimed crossing.
+The current table does not supply those and remains `[C]`.
 
 ---
 
@@ -203,7 +223,7 @@ The ethic "move toward $B = 1$" becomes, in log coordinates, "minimise your log-
 
 ### 6.4 The Extraction Boundary
 
-The extraction coefficient $\eta$ measures whether the system is moving toward or away from the equator. In log coordinates, $\eta$ is the sign of $ds/dt$. The Nash equilibrium of iterated cooperation ($\eta = 0$) corresponds to the equatorial condition — neither extracting nor being extracted. `[S/E]`
+The selected action register `η_move` records whether a move crosses the non-extraction fence. In the declared iterated-cooperation model, `η_move=0` is represented at the equatorial profile; this is a bounded model reading, not an unconditional Nash theorem. `[S]`
 
 ---
 
@@ -233,12 +253,15 @@ The framework is falsifiable at multiple levels:
 |---|---|---|
 | $1$ is the unique positive fixed point of $x \mapsto 1/x$ | Mathematical proof of another fixed point | `[A]` — cannot be falsified (elementary) |
 | $B = \sin\theta$ is maximised at the equator | Show additive balance outperforms multiplicative | `[S]` |
-| $\eta = 0$ is Nash equilibrium in iterated games | Experimental disconfirmation of tit-for-tat | `[S/E]` |
+| `η_move=0` is the selected non-extraction condition in the declared iterated game | The declared payoff or enforcement model fails, or a fair rival explains the result better | `[S]` |
 | $E = (\log x)^2$ and $B = \operatorname{sech}(s)$ are exact inverses | Mathematical — already proved | `[A]` |
 | The dimensional scaffold $D0 \to D6$ maps to reality | Force-dimension correspondence has no predictive power | `[C]` |
 | The ethic $\Sigma\Delta B > 0$ predicts sustainability | Systems moving toward balance systematically collapse | `[I]` |
 
 The framework includes its own destruction manual: any encoding without falsification, evidence tiers, and self-correction will degrade via institutional capture. `[S]`
+
+The legacy `[E]` marker is retired; external-literature grounding is cited in
+§7 and is not itself a tier.
 
 ---
 
@@ -248,7 +271,9 @@ The ordinary number line, centred at zero, is an operational simplification. The
 
 The consequences:
 
-1. **Ontology:** Something exists because finity is the product of its own two boundaries. The question "why something rather than nothing?" is answered by $\odot = \bullet \times \circ$ — held as frame-register doctrine, not field arithmetic.
+1. **Ontology:** The reciprocal mathematics does not answer why something exists.
+   A relational Finity reading remains an interpretive proposal `[I]`, without
+   Titan arithmetic or a boundary product.
 2. **Ethics:** The centre is not nothingness. The centre is unity, identity, measure, and relation. The operational ethic is: minimise your log-distance from finity.
 3. **Geometry:** The flat line is the zero-curvature limit of the sphere. The sphere is the completed object. Infinity is not an unreachable horizon; it is a regular point.
 4. **Evidence:** Suda (2025) independently derives the same fixed-point structure from a different starting point. The individual reciprocal-map identities are checkable mathematics `[A]`; their role *as convergent corroboration of this framework's reading* is independent-rediscovery evidence `[I]` — strengthened by the independence, but not promoted to established-fact tier by it. Suda's works are self-archived preprints (PhilArchive, 2025), not peer-reviewed; cited at that status. (Verified to exist 2026-06-10; see `../../PEER_REVIEW_PROGRAM/CITATIONS_VERIFIED.md`.)
@@ -276,4 +301,4 @@ The strongest sentence:
 
 *Evidence tiers: [A] = established external fact; [B] = dated receipt; [S] = framework-internal structural claim; [I] = interpretive; [C] = conjectural. The mathematical content is [A]. The ontological reading is [I]. The dimensional scaffold assignments are [C].*
 
-•   ⊙   ○
+• ⊙ ○ — *operator-free selected emblem; not a submission theorem*

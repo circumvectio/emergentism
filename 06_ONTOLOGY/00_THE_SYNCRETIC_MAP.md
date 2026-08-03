@@ -7,6 +7,8 @@ rosetta:
   regime: "Sādhu"
   register: "[S]"
   canonical_phrase: "The Syncretic Map — Superseded"
+status: "K3 TOMBSTONE — superseded 2026-05-30; provenance only, do not cite as live state"
+evidence_tier: "[B] provenance only"
 ---
 
 # The Syncretic Map — Superseded
@@ -37,6 +39,9 @@ L6  ONTOLOGY      → "What is Being?"           → Śiva • (Titan)
 L7  THEOLOGY      → "What is the Ultimate?"    → Viṣṇu ⊙ (Titan)
 ```
 
-**Source:** Rosetta Master `00_THE_MASTER_ROSETTA.md` §I (lines 236-246) + §II Philosophy (lines 361-367) + Variant IV/V
+**Current crosswalk:**
+[`../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md`](../08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/00_THE_SEVEN_OLOGIES_PER_THE_ROSETTA.md).
+That active reference treats the table as a selected reversible translation,
+not a generated causal chain.
 
 `Zero-Sum Resolution Equation`

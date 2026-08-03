@@ -172,4 +172,7 @@ The framework identifies three specific criteria that would invalidate its claim
 
 ---
 
-⊙ = • × ○
+• ⊙ ○
+
+*Selected operator-free emblem; no arithmetic or cross-type equality is
+asserted.*

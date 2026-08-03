@@ -3,12 +3,11 @@ title: "The Open Canon Covenant — how this canon is committed: śruti frame, s
 date: 2026-07-12
 status: "[S] governing norm adopted 2026-07-12. Everything enters canon at its honest tier; editorial adoption never upgrades evidence."
 evidence_tier: "[A] the logical fence (Wittgenstein 6.1); [I] the perennial recognition (Sanatana Dharma, CTMU, Spinoza); [S] the covenant as a governing discipline"
-governs: "the commit of all session-staged canon (receipts 105–109, 07A, PD_22A, the Kintsugi Protocol, and successors)"
+governs: "the commit of all session-staged canon (`105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md`, `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`, 07A, PD_22A, the Kintsugi Protocol, and successors)"
 owner: "Yves R. Burri, author; software records provenance but supplies no epistemic authority."
 parents:
   - 00_SETTLED_CANON_REGISTRY.md
   - 00_THE_KINTSUGI_PROTOCOL.md
-  - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/127_EMERGENTIST_COMPASS_KINTSUGI_REPAIR_2026_07_18.md
 ---
 
 # The Open Canon Covenant
@@ -41,7 +40,7 @@ or hidden closure claim. The active non-μ edges are `b₆:D5↝D6` and
 the impossibility of further degrees of freedom.
 
 > **[金] SEAM — 2026-07-20.** The earlier covenant kept the dead identity alive
-> by downgrading it from tautology to a substantive thesis. Receipt 126 and the
+> by downgrading it from tautology to a substantive thesis. `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` and the
 > Settled Canon Registry close that loophole: resemblance may remain as an
 > interpretation; identity may not return as load-bearing doctrine.
 
@@ -90,14 +89,14 @@ closure. The map stays a map.**
    tier written on it."* It never changes `[C]`→`[S]`, `[I]`→`[S]`, empirical
    `[C]`→`[B]`, or formal conjecture→`[A]` without the matching argument or contact. An
    `[C]` conjecture committed to canon is a **canonically-recorded conjecture**, not
-   a settled truth. (This is exactly what receipts 105–107 did: countersigned, with
+   a settled truth. (This is exactly what `105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` did: countersigned, with
    the open parts still open.)
 2. **The frame may be revered; the content must stay falsifiable.** No content claim
    is immune to A7. Each keeps its kill criterion. The day a conjecture is
    presented as a theorem or observation without the matching proof or contact,
    Kintsugi fires.
 3. **No closure claim.** This canon may never assert it is complete, finished, or
-   *is* the tautology of reality. Receipt 107 already settled this: the loop is
+   *is* the tautology of reality. `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` already settled this: the loop is
    constitutively open; no sufficiently expressive description certifies its own
    complete closure merely by invoking Gödel or Tarski. `r₆` is an interpretive
    return, not the closure of reality. A canon that claims to have closed has
@@ -111,9 +110,8 @@ closure. The map stays a map.**
 Committed **at honest tier** under §4, this session's staged corpus enters canon:
 
 - **Deflationary / honesty work — ratified at full strength** (it makes canon more
-  honest, never more closed): receipt 108 (keel resolution + trophic gild), receipt
-  109 (four false lemmas), the **Kintsugi Protocol** (repair discipline), the
-  strong/weak signature (106), the open loop (107), the tier-vocabulary crosswalk.
+  honest, never more closed): `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` (keel resolution + trophic gild), `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md` (four false lemmas), the **Kintsugi Protocol** (repair discipline), the
+  strong/weak signature (`106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`), the open loop (`107_THE_OPEN_LOOP_D6_D0_CLOSURE.md`), the tier-vocabulary crosswalk.
 - **Competence-edge conjecture — ratified AS conjecture, `[C]`, tier held, owes
   external physics review**: 07A (F5 unbundled; the no-fifth-force *prediction*)
   and the removable quantum correspondence. Everett remains a no-collapse

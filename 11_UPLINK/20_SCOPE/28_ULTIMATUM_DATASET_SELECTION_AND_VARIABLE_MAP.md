@@ -10,6 +10,16 @@ rosetta:
 **Evidence tier:** [I]  
 *Organism document. Interpretive operational content. Bounded by current system state.*
 
+> **RESULT LANDED 2026-07-02 — this design was run and its product-only
+> hypothesis was not supported.** The
+> [experiment verdict](../25_EXPERIMENTS/2026-07-02_extraction_law_empirical_test/VERDICT.md)
+> reports **"Product-only multiplicative proxy: NOT SUPPORTED in this dataset"**
+> on 93 annotated generalized ultimatum games: `multiplicative_proxy` log loss
+> 0.546540, versus `payoff_only` 0.546551 and `payoff_plus_fairness`
+> 0.513350. The bounded fairness/coherence proxy did receive local support. Read
+> the verdict before treating the proposal below as unrun or treating the result
+> as evidence for a lone multiplicative scalar.
+
 ## First empirical bridge for the behavioral-economics flagship path
 
 > This note selects the first dataset family for the ultimatum-game study and maps the available variables into the framework's coherence (Phi) and viability (V) structure.

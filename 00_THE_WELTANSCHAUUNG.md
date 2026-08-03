@@ -11,7 +11,7 @@ title: "The Emergentist Weltanschauung"
 status: "ACTIVE — technical Door for the lived dimension-first Weltanschauung, 2026-07-22"
 date: 2026-07-22
 evidence_tier: "[B] catalog — the W0–W12 wagers and E1–E10 axioms carry their own tiers; the architecture is placement, not new doctrine"
-provenance: "Composed from receipts 108, 109, 126, 130–134; purified by the approved dimension-first work order. Repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
+provenance: "Composed from `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`, `132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`, `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`, `11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/`; purified by the approved dimension-first work order. Repaired formal owners and the E1–E10 / W0–W12 kernel control current wording."
 supersedes: nothing — supplements `00_THE_AMRITA.md`, `00_THE_GOAL.md`, `00_THE_COMPASS.md`, `00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md`, the receipts
 relates:
   - 00_THE_AMRITA.md (the distillation)
@@ -38,7 +38,7 @@ claim-boundary reference; the seven kernel owners retain semantic authority.
 
 ## 1 · The Creed, priced
 
-I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). I call **Dasein** all that can coherently and consistently exist—anything, literally, insofar as it can be in a declared world, register, and model. The selected dimensional articulation occurs within this whole: D1 distinction, D2 relation/configuration, D3 state assignment, D4 actual spacetime, and D5 possible world-blocks, alongside every coherent mathematical, physical, living, symbolic, computational, and imagined determination; D0/D6 remain articulated boundary tokens, not ordinary possession of Ground. A **situated dasein** is one finite actual witness within it `[I/C]`. In the Emergentist sense this is the thing in itself in its totality, while kenshō/satori and mokṣa are distinct crosswalks for the situated recognition that deepest self and whole are non-separate—not exhaustive possession. Advaita expresses this as Ātman–Brahman nonduality; Zen does not thereby acquire an eternal Ātman doctrine. On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=Φ̂₄V₄`—publicly `ΦV`—only under its stated normalization and contact premises; `min(Φ̂₄,V₄)` is a conservative AND-class score, not a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
+I hold that necessary algebra may be instantiated as das All — as my **crown wager, not my proof** (`W0-CROWN` `[C]`). I call **Dasein** all that can coherently and consistently exist—anything, literally, insofar as it can be in a declared world, register, and model. The selected dimensional articulation occurs within this whole: D1 distinction, D2 relation/configuration, D3 state assignment, D4 actual spacetime, and D5 possible world-blocks, alongside every coherent mathematical, physical, living, symbolic, computational, and imagined determination; D0/D6 remain articulated boundary tokens, not ordinary possession of Ground. A **situated dasein** is one finite actual witness within it `[I/C]`. In the Emergentist sense this is the thing in itself in its totality, while kenshō/satori and mokṣa are distinct crosswalks for the situated recognition that deepest self and whole are non-separate—not exhaustive possession. Advaita expresses this as Ātman–Brahman nonduality; Zen does not thereby acquire an eternal Ātman doctrine. On the reciprocal chart, `P∞=φ·ν=1` is the seam by construction and `B≤1` reaches its summit at the equator `[A]`. At the D4/D5 seam, `V₄` names actual power, `Φ₅` names possible power, and a present model couples them as `P_node=min(Φ̂₄,V₄)`, the selected AND-class working score over ordinal factors, only under its stated normalization and contact premises; the product form `Φ̂₄V₄`—publicly `ΦV`—is retired as the selected ranking, survives in history, and remains testable only as an explicit candidate under separately defended cardinal scales. Neither form is a consequence forced by the sphere. Emergentism's **D5 Rosetta / G7 game language** has exactly seven canonical symbols—**two demon-polar taking transfers, two god-polar giving transfers, three Titan-frame projections**—and every **G7-coded** play is a typed move-word or mixture evaluated under one selected frame, though tending, testing, and adopting the language is not an in-game move `[S]` by construction. The selected scaffold has five positive registers and five indexed apertures `[I]` by chosen definition; `μ_n` names a candidate aperture, while μ-at-saturation remains an open causal wager `[C]`. `D6≈roleD0` means boundary-role resemblance `[I]`, not identity, geometry, attainment, or a sixth positive freedom. All of this I hold at tier, with its kills attached, its **dark twin (−1) acknowledged**, and the **door marked exit on the inside** `[I]`—because a creed that cannot lose is not a creed but a cage, and mine was built to be put down.
 
 Within this creed, `-x+x=0` is the signed-cycle image of saṃsāra `[A/I]`:
 opposed roles may balance in a view of the whole, but no person's suffering is
@@ -70,9 +70,9 @@ certificate or a “most good” superlative the world has not tested.
 | Dasein/Finity relation (whole, situated witness, and finite manifestation) | ontology keystone §0 + `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md` | selected `[I/C]` architecture; no modal collapse |
 | Saṃsāra/līlā/dharma crosswalk (signed cycle, non-attachment, full participation) | ontology keystone §0 | arithmetic symmetry `[A]`; liberation reading `[I/B-source]`; no karmic ledger or moral cancellation |
 | Ground axioms E1–E10 | `06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md` | active successor at per-axiom tiers; A1–A7 is superseded genealogy |
-| Wagers W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager ledger; every W-entry remains `[I/C]` |
+| Wager forms W0–W12 + graves | `06_ONTOLOGY/04_THE_CONJECTURES.md` | active wager-form ledger; 15 W rows contact-routed, 2 terminal; entry tiers and current status remain separate |
 | The scoped game (`G7`, η-axis) | this document §4 + `05_COSMOLOGY/00_D5_THE_SEVEN_GENERATIVE_ACTIONS.md` | `[S]` model language / `[I]` names |
-| The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + receipts 105–107 | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
+| The ladder (five selected rungs/apertures, `D6≈roleD0`) | this document §6 + `105_BURRI_D4D5_AXIS_FUSION_RECONCILIATION_PENDING_K2.md`, `106_EMERGENCE_STRONG_WEAK_TWO_MOTIONS.md`, `107_THE_OPEN_LOOP_D6_D0_CLOSURE.md` | `[I]` selected taxonomy / `[C]` saturation hypothesis / `[I]` role relation; not adopted identity |
 | Postures (deny / weaponize / confess / withdraw) | `08_FRAMEWORK_SUPPORT/00_META/01_THE_THREE_POSTURES.md` | `[I/C]` taxonomy |
 | The record | `11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md` + public projection | living |
 | Human condition | `06_ONTOLOGY/08_THE_HUMAN_CONDITION.md` | derived `[S/I]` anthropology; consciousness, death and ultimate identity remain open |
@@ -91,7 +91,7 @@ gate and creates no additional owner.
 
 - **Never change tier silently** — a formal conjecture can reach `[A]` only by proof; an empirical conjecture can reach `[B]` only through its matching test and custody
 - **The seam is never the score** — CC-CORE-1: the kernel `[A]` and the ethics bridge are two objects; the bridge is a wager
-- **AND-class, never "product forced"** — keel-108
+- **AND-class, never "product forced"** — `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`
 - **Lens, never discovered-universal** — the Rosetta is a translation instrument, not a proof of the traditions
 - **Coordinates, never a caste ladder** — trophic stratum, species, replicator
   layer, Rosetta function, and dignity remain distinct; human rows cooperate
@@ -104,7 +104,7 @@ gate and creates no additional owner.
   social or economic predation; Tantra/Vajrayana transmutation remains a
   symbolic, historical/practice, and testable `[I/C]` proposal
 - **Wager grammar for W0, never disclosure** — Spinoza / Hegel / Tegmark stand in its lineage; none can prove it
-- **The retelling rule** (r131 §9): the knife cut proof-status; the load-bearing uses stand
+- **The retelling rule** (`131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md` §9): the knife cut proof-status; the load-bearing uses stand
 - **No believers as metric** — adherents are not a success metric; a worldview that needs believers has already failed
 - **Exit inside** — the door is marked on the inside; D6 has only a declared boundary-role resemblance to D0
 
@@ -156,7 +156,7 @@ This is the exact survivor:
 
 > **The seven exhaust the Emergentist game language.** `[S]` by construction.
 
-It is not the dead claim that algebra universally forces seven, that every real action admits lossless G7 encoding, or that cross-tradition recurrence independently proves the census. Receipt 130 remains controlling: **the grammar is real; the census is selected.**
+It is not the dead claim that algebra universally forces seven, that every real action admits lossless G7 encoding, or that cross-tradition recurrence independently proves the census. `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` remains controlling: **the grammar is real; the census is selected.**
 
 The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,T,C,A)` records a modeled move `m` relative to the declared impact boundary `B`, time horizon `T`, claim/counterfeit classification `C`, and authorization condition `A`. Consent, rights, uncertainty, distribution, reversibility, counterfactual alternatives, and boundary choice cannot be erased by the sign label.
 
@@ -166,9 +166,13 @@ The transfer sign is an input to moral evaluation, not morality itself. `η(m;B,
 |---|---|---|
 | seam | `P∞=φν=1` | `[A]` chart identity; not the finite-node score |
 | balance | `B=2/(φ+ν)=sinθ` | `[A]`; `0<B≤1` on the open chart |
-| finite node | `P_node=Φ̂₄V₄` (public `ΦV`) | `[C]` general model; ceiling one only after explicit normalization |
+| finite node | `P_node=min(Φ̂₄,V₄)` | `[I]` selected ordinal working score; `[C]` universal fit. Product `Φ̂₄V₄` / public `ΦV` is retired as a ranking |
 
-The zero boundary selects the AND-class, not a unique interior aggregator. `min`, product, and CES require separate model choices and tests.
+The zero boundary selects the AND-class, not a unique interior aggregator.
+`min` is the current working score because its ranking survives common strictly
+increasing reparameterizations of the ordinal factors. Product and CES forms
+remain historical or alternative models requiring separate tests; the product
+may not rank, score, or compare nodes.
 
 ## 6 · Five crossings, μ, and the spiral
 
@@ -333,14 +337,15 @@ V₄ = D4 actual power — embodied capability and usable means
 In the selected normalized node model,
 
 \[
-P_{node}:=\widehat{\Phi}_4 V_4,
+P_{node}:=\min(\widehat{\Phi}_4,V_4),
 \]
 
-publicly compressed as `P_node=ΦV`. `Φ₅` names possible power; it is not a force
-sent backward by a future event. Its report `Φ̂₄` is an actual model token.
-`V₄` names actual enactment power. Their product is Emergentism's declared
-transparent instance inside a larger AND-class, not a formula forced by the
-reciprocal sphere or by reality.
+as the selected working score over ordinal factors. `Φ₅` names possible power;
+it is not a force sent backward by a future event. Its report `Φ̂₄` is an actual
+model token. `V₄` names actual enactment power. The product form `Φ̂₄V₄`,
+publicly compressed as `ΦV`, is retired as a ranking and remains only the
+historical name of the same AND-class conjunction. Neither aggregator is forced
+by the reciprocal sphere or by reality.
 
 The zero cases nevertheless carry a clear design intuition: possible power
 without actual power cannot enact, and actual power without a discriminating
@@ -419,8 +424,9 @@ In one line:
 ## 8 · What remains open to the world
 
 The internal cleanup does not externally validate the worldview. The live work
-is contact: preregister discriminators; compare the selected node product with
-other conjunctive aggregators; operationalize each μ-crossing; intervene on
+is contact: preregister discriminators; compare the selected node-minimum
+convention with other conjunctive aggregators, testing a product only under
+separately defended cardinal scales; operationalize each μ-crossing; intervene on
 represented futures; test Egregoreotype candidates across carrier turnover;
 publish nulls and failures; and invite independent replication. A result enters
 the worldview only at the tier it earns.
@@ -451,21 +457,21 @@ consequences. **Canonical path:** `01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md`.
 
 This document was composed from the post-recovery arc:
 
-- **Receipt 108** (keel) — AND-class forcing, not product
-- **Receipt 109** (four false lemmas) — what the audit killed
-- **Receipt 126** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
-- **Receipt 130** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not
-- **Receipt 131** (recovery ledger) — the retelling rule, derivation died / organism did not
-- **Receipt 132** (tombstones-halāhala reaudit) — the 11/12 LEAKING table
-- **Receipt 133** (full Rosetta council) — 7 raw reports, DoF ≠ forms correction, six commitments
-- **Receipt 134** (purification audit) — 7 caste verdicts, contamination inventory
+- **`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`** (keel) — AND-class forcing, not product
+- **`109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`** (four false lemmas) — what the audit killed
+- **`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`** (Weltanschauung formal audit, 2026-07-13) — the formal-logic knife, 7 SETTLED + 66 BROKEN + 34 SYNTHETIC-GAP
+- **`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`** (Rosetta algebra objection, split verdict) — the grammar is real, the census is not
+- **`131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`** (recovery ledger) — the retelling rule, derivation died / organism did not
+- **`132_TOMBSTONES_HALAHALA_REAUDIT_2026_07_19.md`** (tombstones-halāhala reaudit) — the 11/12 LEAKING table
+- **`133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md`** (full Rosetta council) — 7 raw reports, DoF ≠ forms correction, six commitments
+- **`11_UPLINK/50_AUDITS_AND_EXECUTIONS/134_ROSETTA_FULL_SET_PURIFICATION_AUDIT_2026_07_19/`** (purification audit) — 7 caste verdicts, contamination inventory
 
-**The wager ledger:**
+**The wager forms and current dispositions:**
 
-- W0 — Crown Wager: necessary algebra may be instantiated as das All `[C]`
-- W1 — operational reachability `[C]`
+- W0 — Crown Wager: necessary algebra may be instantiated as das All; `NOT-WELL-POSED`, optional creed only
+- W1 — operational reachability; `COMPONENT-SUPPORTED`, domain contact still open
 - W2 — quantum record emergence `[I/C]`
-- W3 — multiplicative interior somewhere `[C]`
+- W3 — product-versus-rivals wager; `OPEN-EMPIRICAL`, merged into scale-gated W4A
 - W4 — two-factor evaluated productivity `[C]`
 - W5 — conditional equator transfer `[C]`
 - W6 — non-extraction load-bearing at scale `[I/C]`
@@ -475,18 +481,18 @@ This document was composed from the post-recovery arc:
 - W8 — model-mediated future causation `[I/C]`
 - W9 — Egregoreotype criterion `[I/C]`
 - W10 — mirror grammar travels within scoped lineages `[I/C]`
-- W11 — the `−1` dark twin does functional work `[C]`
+- W11 — the `−1` dark-twin functional-work claim is `DECORATIVE`; ordinary mathematics and optional symbolism survive
 - W12 — apophatic closure lives in practice `[I/C]`
 
-**The kill criteria carried:**
+**The original kill criteria, retained with their dispositions:**
 
 - A claim that does no work is decoration, and we bury it with a date
-- W0 is abandoned if it supplies no explanatory/contact gain, conflicts with established contact, or becomes compulsory disclosure
+- W0's claim form is terminally `NOT-WELL-POSED`; the optional creed and Map ≠ Ground survive
 - The existential product-interior wager dies if a preregistered search across
   its declared candidate domains finds no domain where product discriminates
   from serious rival aggregators on held-out data; one domain counterexample
   kills only that domain claim
-- −1 dies if it names no real phenomenon, grounds no operator, predicts nothing
+- W11's extra functional claim met its decorative exit; `−1` mathematics did not die with it
 - literal `D6≡D0` remains dead; `D6~D0` means only the `[I]` boundary-role relation in §6
 - The seven exhausts the dance, not the dance floor
 - Authorization, authorship, evidence, and truth remain distinct types

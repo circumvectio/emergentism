@@ -242,7 +242,7 @@ person or the Ground.
 
 Differentiation without Grace Exit is imprisonment.
 Differentiation without A7 is dogma.
-Differentiation without `η = 0` is extraction.
+Differentiation without `η_move = 0` is extraction.
 Differentiation without L6 is idolatry.
 
 ## Canonical Compression

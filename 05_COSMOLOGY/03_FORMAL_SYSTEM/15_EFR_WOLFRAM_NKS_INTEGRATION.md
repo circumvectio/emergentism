@@ -9,10 +9,10 @@ rosetta:
   canonical_phrase: "EFR & MAXIMUM REDUCIBILITY"
 ---
 
-> 🟡 **CORRECTED (v4.0) — 2026-04-06**
-> **Evidence Tier:** [C] Conjecture (downgraded from [S] Structural, 2026-03-23)
-> **History:** v1.0 FAILED (K(⊙)=0 is formally wrong). v2.0 retreated to metaphor. v3.0 introduced K_sc concept informally. v4.0 provides formal definition, proof sketch, and explicit relationship to standard AIT.
-> **Status:** K_sc formally defined. Minimality proof sketch provided. Tier remains [C] until independently verified by AIT researcher.
+> 🔴 **TYPE-CORRECTED (v5.0) — 2026-08-01**
+> **Evidence Tier:** [D/C] withdrawn proof; neutral-language research proposal only
+> **History:** v1.0 FAILED. v2.0 retained a reducibility metaphor. v3.0-v4.0 proposed `K_sc`, but the claimed self-definition relied on ill-typed Titan arithmetic and an unspecified definition language.
+> **Status:** The Titan-based minimality proof is withdrawn. `K_sc` remains only a candidate research question until a single neutral syntax, interpreter, dictionary-cost convention, invariance result, and non-triviality predicate are supplied and independently reviewed.
 > **See:** `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md` for original findings.
 
 ---
@@ -59,30 +59,24 @@ The ground                →  Minimally structured (∅ as metaphor)
 
 **The philosophical claim:** from that minimal structure, the scaffold can reconstruct its next descriptions.
 
-### 1.3 K-Minimal: The Equation That Writes Its Own Dictionary (v3.0)
+### 1.3 K-Minimality: Withdrawn Titan Argument; Neutral Research Question (v5.0)
 
-> **v3.0 addition.** The corrected document (v2.0) abandoned the formal KC claim and retreated to "maximum reducibility as metaphor." The K-minimal concept provides a precise, defensible, formally novel claim that replaces both the original overclaim (K=0) and the retreat (metaphor only).
+The v3-v4 argument claimed that a Titan expression wrote its own dictionary.
+That argument fails before minimality is considered. TitanFrame is an opaque
+three-role syntax with no multiplication, inversion, numeric identity, or map
+to projective endpoints. Mutual prose descriptions of glyphs do not supply an
+executable semantics and cannot make dictionary cost vanish.
 
-**The concept:** Standard Kolmogorov complexity K(x) measures the length of the shortest program that outputs x. But every program requires an external dictionary — definitions of its terms that are not part of the program. E = mc² has K > 0 because you need external definitions of energy, mass, and lightspeed.
+The only surviving proposal is neutral and conditional:
 
-**K-minimal** is a proposed extension: the shortest self-contained description — a description that includes its own definitions within itself.
+> Can a description language count the cost of its interpreter and explicitly
+> bundled symbol definitions in a way that supports useful invariance and
+> minimality theorems?
 
-**Claim:** Zero-Sum Resolution Equation is K-minimal.
-
-- Zero (•) is defined by infinity: the absence of unboundedness
-- Infinity (○) is defined by zero: the unboundedness of absence
-- The unit (⊙) is defined by their product through multiplication
-- Multiplication is defined by the unit: the operation whose identity element is 1
-
-The terms define each other. No external dictionary required. The equation IS its own dictionary.
-
-**This is not K = 0** — the empty string describes nothing. It is not standard K(x) — which ignores the cost of the dictionary. It is K-minimal: **minimum possible complexity for a non-trivial self-contained description.**
-
-And it is **minmax**: minimum description length, maximum descriptive scope. Three symbols, one operation, one equation — describing the self-generating ground of all structure. You cannot say less and still say something. You cannot say something that covers more with fewer symbols.
-
-**Formal contribution:** The concept of "self-contained Kolmogorov complexity" — K_sc(x) = K(x) where the program includes definitions of all its terms — appears to be unformalized in standard AIT. If formalized, this would be a publishable result in information theory independent of the framework.
-
-**Evidence tier:** [C] — the K-minimal claim for Zero-Sum Resolution Equation is conjectural (the self-referential loop is a mathematical fact). The extension to AIT is interpretive (the concept needs formalization).
+This is not yet a formal contribution, a novelty claim, or a publishable result.
+It is independent of TitanFrame and must be evaluated against existing work on
+Kolmogorov complexity, self-delimiting programs, description languages, and
+invariance constants.
 
 **What this resolves:**
 
@@ -96,51 +90,34 @@ The η polysemy across the framework was always measuring the same thing: **the 
 
 η = 0 is the self-containment condition wherever the framework instantiates this grammar: no external mediator for exchange, no hidden definition for the axiom set, no external cause in the ground-facing model. This is a cross-register analogy, not a proof that every empirical scale automatically satisfies η = 0. Real systems still require the relevant coupling, horizon, and enforcement conditions.
 
-### 1.4 Formal Definition of K_sc (v4.0)
+### 1.4 Candidate `K_sc` Interface (v5.0; not a definition of record)
 
-**Definition.** Let U be a universal Turing machine. For a string x, the *self-contained Kolmogorov complexity* K_sc(x) is:
+For exploration only, let `U` be a named universal machine, `L` a fully declared
+neutral description language, and `bundle_L(p)` an encoding that contains `p`
+plus every non-built-in definition required by `L`. A candidate cost could be:
 
 ```
-K_sc(x) = min { |p| : U(p) = x AND D(p) ⊆ p }
+K_sc_L(x) = min { length(bundle_L(p)) : U(bundle_L(p)) = x }
 ```
 
-where:
-- |p| is the length of program p
-- U(p) = x means p outputs x when run on U
-- D(p) is the set of all definitions (symbol meanings, operation semantics) required to interpret p
-- D(p) ⊆ p means the program contains its own definitions — no external dictionary needed
+This notation deliberately uses neutral symbols only; no Titan glyph or role may
+occur in `p`, `bundle_L`, `U`, or the proof obligations by implicit coercion.
+It is merely an interface sketch because the corpus has not defined `L`, what
+counts as built in, how circular definitions are rejected, or how machine
+dependence is controlled.
 
-**Standard KC ignores dictionary cost.** K(x) = min{|p| : U(p) = x} presupposes a fixed universal machine U with a built-in instruction set. The cost of that instruction set is not counted. This is fine for comparing descriptions within a fixed language, but misleading when asking about the *absolute* simplicity of a description.
+Required gates before promotion:
 
-**K_sc counts the dictionary.** The program must define its own terms. A program that uses "energy," "mass," and "lightspeed" must include the definitions of those concepts within itself. A program that uses only self-defining terms (where each term's meaning is given by its relationship to the other terms) has dictionary cost zero.
+1. define `L`, `bundle_L`, parsing, and execution without circular prose;
+2. compare the proposal with standard conditional and prefix complexity;
+3. state an invariance theorem or report why none is available;
+4. define "non-trivial" independently of the candidate to be minimized;
+5. exhibit a neutral test corpus and adversarial shorter descriptions; and
+6. obtain independent AIT review.
 
-**Claim [C]:** Zero-Sum Resolution Equation has minimal K_sc among non-trivial self-contained descriptions.
-
-**Proof sketch:**
-
-1. **Self-containment.** The description uses three symbols {•, ○, ⊙} and one operation {×}. Each is defined by the others:
-   - • (zero) is defined as the absence of ○ (infinity): • = ○⁻¹ in the limit
-   - ○ (infinity) is defined as the absence of • (zero): ○ = •⁻¹ in the limit
-   - ⊙ (one/finity) is defined as their product: Zero-Sum Resolution Equation
-   - × (multiplication) is defined by its identity element: x × ⊙ = x
-
-   No external definition is required. D(p) ⊆ p is satisfied. ∎ (self-containment)
-
-2. **Non-triviality.** The description is not the empty string (which produces nothing). It specifies a non-trivial relationship (the product of two distinguished elements equals a third). ∎ (non-triviality)
-
-3. **Minimality (sketch).** Consider any self-contained description p with |p| < |Zero-Sum Resolution Equation|:
-   - A description with 1 symbol cannot be self-contained (no relational structure to define the symbol)
-   - A description with 2 symbols and 1 relation (a = b) is trivially self-contained but states only identity, which is trivial
-   - A description with 3 symbols and 1 binary operation (a ○ b = c) is the minimal non-trivial self-contained form
-   - Zero-Sum Resolution Equation is an instance of this form with the specific semantics {0, ∞, 1, ×}
-
-   Therefore |Zero-Sum Resolution Equation| is minimal among non-trivial self-contained descriptions. ∎ (minimality, sketch — needs formalization of "non-trivial")
-
-**What this is NOT:** This is not K = 0. The empty string has K = 0 but produces nothing. K_sc(Zero-Sum Resolution Equation) > 0 but is minimal among descriptions that actually SAY something self-containedly.
-
-**Publishable contribution:** The concept of K_sc (self-contained Kolmogorov complexity) appears to be novel in AIT literature. The formal definition, the distinction from standard K, and the minimality proof for simple self-referential systems could constitute an independent information-theoretic result. [C] — needs expert review.
-
-**Kill criterion:** If an AIT researcher demonstrates a non-trivial self-contained description with |p| < |Zero-Sum Resolution Equation|, the minimality claim is falsified.
+**Current verdict `[D/C]`:** no minimality theorem and no Titan-based witness.
+The previous proof sketch is withdrawn because its terms were ill-typed and its
+comparison class was selected after the fact.
 
 ---
 
@@ -500,4 +477,7 @@ The ground-facing limit is zero.
 
 ---
 
-> **Status:** CORRECTED (v4.0) — K_sc formally defined, minimality proof sketch provided. Tier: [C]. Awaiting AIT expert verification. See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.
+> **Status:** TYPE-CORRECTED (v5.0) — the Titan-based `K_sc` proof is withdrawn.
+> Only a neutral-language research interface remains `[D/C]`; it has no
+> minimality result and awaits prior-art review plus independent AIT scrutiny.
+> See `../../08_FRAMEWORK_SUPPORT/06_TRANSLATION/PEER_REVIEW/00_INTERNAL_REVIEW_FINDINGS.md`.

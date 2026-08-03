@@ -11,7 +11,7 @@ rosetta:
 
 # THE TRIADIC CASCADE
 
-> **[K3 reconciliation — 2026-07-13, per receipt 126.]** Ruling 3 (Triadic N=3) applies: N=3 is **selected, not uniquely forced/proved**. The "Why Three and Not More" section's claim that MF-511 *proves N=3 is the unique stable configuration* (the N≥5 discharge used a false group lemma — Z₅ is a counterexample) is downgraded proved→posited; read triadic selection as `[C]/[S]`-selected, not a derived uniqueness theorem. The cascade's three-fold mapping remains the framework's discovery voice at `[S]/[I]`. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
+> **[K3 reconciliation — 2026-07-13, per `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`.]** Ruling 3 (Triadic N=3) applies: N=3 is **selected, not uniquely forced/proved**. The "Why Three and Not More" section's claim that MF-511 *proves N=3 is the unique stable configuration* (the N≥5 discharge used a false group lemma — Z₅ is a counterexample) is downgraded proved→posited; read triadic selection as `[C]/[S]`-selected, not a derived uniqueness theorem. The cascade's three-fold mapping remains the framework's discovery voice at `[S]/[I]`. Where local wording conflicts, the Settled Canon Registry rules. Authority: 00_META/00_SETTLED_CANON_REGISTRY.md.
 
 ## A Selected Three-Fold Reading Across Several Levels of Knowledge
 

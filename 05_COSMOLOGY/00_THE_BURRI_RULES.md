@@ -117,8 +117,7 @@ Those assignments are `[I]`. The mathematics of the numbers and projective
 point is `[A]` in its proper domain.
 
 Consequently even division or multiplication by the apparent unit is not
-licensed in this type: `1_T/1_T`, `0_T×1_T`, `0_T×∞_T`, and `∞_T/1_T` are all
-inadmissible Titan expressions. This restriction says nothing against the
+licensed in this type. The expressions `1_T/1_T`, `0_T×1_T`, `0_T×∞_T`, and `∞_T/1_T` are all inadmissible Titan expressions. This restriction says nothing against the
 ordinary numerical identities `x/1=x` and `0·x=0` in their proper domains.
 
 The live sovereign emblem
@@ -485,8 +484,11 @@ form seeks durable mutual widening, not domination.
 
 ## Derived form C · Power-Max and Syntropic Dyadism
 
+Let `q_x(t)` be a separately declared and defended cardinal durable-potential
+measure. It is not the selected ordinal `P_node`:
+
 \[
-W_x(T)=\int_0^T P_x(t)dt,
+W_x(T)=\int_0^T q_x(t)dt,
 \]
 
 \[

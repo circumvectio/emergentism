@@ -186,7 +186,11 @@ Where `e^{iπ} + 1` symbolizes "harmonic zero" and the integral encodes "infinit
 
 **Status.** This is a **symbolic proposal**, not a rigorous theorem. The integral `∮ e^{iπx} dx` is not standardly convergent; the equation is presented as a structural operator, not an analytic identity. Tier: **[C]** conjecture / **[I]** interpretive emblem.
 
-**Finity Papers mapping.** The Möbius Structural Equation is Suda's attempt to write the boundary algebra in analytic form. It is structurally parallel to the Finity Papers' emblem `•   ⊙   ○` (`1 = 0 × ∞`), but Suda uses complex analysis where the Finity Papers use real projective geometry. Both are frame-register only, never `[A]`. The Finity Papers' version is more carefully fenced.
+**Finity Papers mapping.** The Möbius Structural Equation is Suda's symbolic
+attempt to relate a zero-valued factor and recurrence. The Finity Papers retain
+only an interpretive comparison with the operator-free Titan emblem `• ⊙ ○`.
+There is no structural equality: Suda's expression, real/projective geometry,
+and TitanFrame are different types, and none transfers a theorem to another.
 
 ---
 

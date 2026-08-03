@@ -48,9 +48,14 @@ In raw exponential units `2^E = 2^{H(S)} · 2^{−H(S|A)} = ν_raw · φ_raw`, s
 
 ## 4. What survives, honestly
 
+> **KSC-02 present-day fence.** This executed result records the product model
+> that R6 tested; it does not own the current node score. The selected ordinal
+> score is `P_node=min(Φ̂₄,V₄)`. A product may return only as an explicit
+> candidate `C×` under separately declared and defended cardinal scales.
+
 - **Vindicated:** reach (viability) and precision (coherence) *are* the natural conjugate decomposition of empowerment. The corpus identified the right two factors.
 - **Refuted, comprehensively:** their composition is **additive (simplex), not multiplicative (sphere)**; φ·ν = 1 is the dead state, not the equator; **empowerment maximization is reach-dominated, never balanced**; and **mortality does not rescue balance** (F-R6-4 falsified across three cost models) because balance is structurally empowerment-dead.
-- **The deep finding — the corpus's signature move fails at this scale.** The corpus's defining claim is *one geometry at all scales* — the same φ·ν = 1 sphere from number to cosmos to ethics to teleology. This test shows the sphere is **register-dependent**, not universal: it is plausibly right for the **operational `P_node = Φ×V` register** (organizations, R4), where a genuine multiplicative *weakest-link* holds — near-zero on either factor really does collapse the whole, exactly Kremer's O-ring (confirmed real in the R4 grounding) — but it is **wrong for the empowerment/teleology register**, which is an additive reach/precision simplex. Two registers, two manifolds. Claiming one sphere governs both was the error, and the error is now demonstrated, not asserted.
+- **The deep finding — the corpus's signature move fails at this scale.** The corpus's defining claim was *one geometry at all scales* — the same φ·ν = 1 sphere from number to cosmos to ethics to teleology. This test shows that wager is **register-dependent**, not universal: the separately cardinal product candidate `C×` remains testable for organizations (R4), where a genuine multiplicative *weakest-link* can hold — near-zero on either factor really does collapse the whole, exactly Kremer's O-ring — but it is **wrong for the empowerment/teleology register**, which is an additive reach/precision simplex. This result does not restore the product as the current ordinal node ranking. Two registers, two manifolds. Claiming one sphere governs both was the error, and the error is now demonstrated, not asserted.
 
 ## 5. Limitations
 
@@ -61,7 +66,7 @@ In raw exponential units `2^E = 2^{H(S)} · 2^{−H(S|A)} = ν_raw · φ_raw`, s
 The cleanest surviving delta in the corpus, tested to exhaustion (v1 geometry + v2 mortality, three cost models), is **refuted**. R6 as "empowerment under a conjugate *product* constraint" is **withdrawn**. What replaces it is humbler but true and more useful:
 
 1. **The teleology/empowerment register is an additive reach/precision simplex, reach-dominated; balance is not its attractor.** Empowerment systematically favors viability over coherence. (So the corpus's descriptive teleology and its normative balance-ideal genuinely diverge — F-R6-3.)
-2. **The multiplicative Φ×V sphere belongs to the operational register only** (organizations), where Kremer's weakest-link is real. The corpus must split its one-geometry claim into two register-specific manifolds.
+2. **A separately cardinal multiplicative `C×` candidate remains testable in the organizational register**, where Kremer's weakest-link is real; it is not the selected ordinal `P_node`. The corpus must split its one-geometry claim into register-specific models.
 3. **The honest headline for the corpus:** the program tested the single piece of the teleology thread the literature pass had left unclaimed, and it did not survive. The teleology thread (R6) therefore has **no surviving novel formal claim** — it is von Foerster + coupled empowerment (prior art) plus a geometry that is wrong for the quantity. This is a real loss, recorded plainly, and it sharpens where the corpus's genuine remaining shots are: **R5 (the 0/1/∞ triptych + the SI arc) and R4 (the coherence×viability *organizational* prediction test, where the multiplicative geometry is actually appropriate).**
 
 Ledger: R6 conjugate test (v1 + v2) → the corpus's own kill criterion fired, twice, and was honored both times.

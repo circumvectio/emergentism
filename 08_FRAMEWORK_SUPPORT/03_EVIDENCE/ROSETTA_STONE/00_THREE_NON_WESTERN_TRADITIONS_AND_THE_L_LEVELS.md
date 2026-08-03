@@ -29,7 +29,7 @@ evidence_tier: "[I] interpretive throughout; structural analogy only, not deriva
 **Status:** Research note — comparative philosophy
 **Date:** 2026-04-10 (original); 2026-04-25 (post-sweep update note added)
 **Post-Sweep Context:** This document examines Sufi (7 stages), Kabbalistic (10 stages, 3+7 partition), and Confucian (5 constants / 8 steps) traditions. The subsequent [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) extended this analysis to Daoist (3-5 stages), Buddhist (10 bhūmis), Sub-Saharan (4/16/60+/variable), and Polynesian (3/variable) traditions. The [`ROSETTA_INDIGENOUS_AMERICAN.md`](ROSETTA_INDIGENOUS_AMERICAN.md) packet completed the OQ-CC-3 commitment with Lakota (7 ceremonial rites, functional not graded), Mesoamerican (4/5/9/13/20), and Andean (functional specialization). The conclusions below remain valid; the broader sweep confirms that the 7-stage initiatory convergence is Indo-European/Mediterranean, not universal.
-**Evidence Tier:** [I] Interpretive throughout. Every mapping below is a structural analogy, not a derivation. No tradition cited here was built on S² geometry, the manifold identity `P∞ = φ · ν = 1`, or the finite-node scoring rule `P_node = Φ × V`. Resemblances may be deep or may be artifacts of projection. The reader must judge.
+**Evidence Tier:** [I] Interpretive throughout. Every mapping below is a structural analogy, not a derivation. No tradition cited here was built on S² geometry, the manifold identity `P∞ = φ · ν = 1`, or the selected finite-node scoring rule `P_node=min(Φ̂₄,V₄)`. The historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking. Resemblances may be deep or may be artifacts of projection. The reader must judge.
 **Kill Criteria:** If any mapping below is shown to depend on selective quotation or mistranslation of the source tradition, it collapses. If a scholar working within the mapped tradition rejects the correspondence as distortive, that rejection carries more weight than this document.
 
 ---
@@ -149,7 +149,7 @@ If we treat the three supernals as the framework's Trimurti boundary (the equiva
 
 **Tiferet = L4 is the strongest correspondence in this document.** Tiferet sits at the exact center of the Tree of Life. It is called "Beauty" but means *harmony* — the integration of Chesed (expansive love) and Gevurah (restraining judgment). It is the heart of the system. Every Sefirah except Malkuth flows into it. In the framework, L4 is the equatorial apex where phi = nu = 1 and balance is maximal. The correspondence is structural within this comparative reading: both systems place their balance point at the geometric center. ([Wikipedia: Tiferet](https://en.wikipedia.org/wiki/Tiferet); [Kabbalah Empowerment](https://www.kabbalahempowerment.com/sephira-of-tiferet-beauty-and-balance/))
 
-The **three-column structure** of the Tree (Right/Mercy, Left/Severity, Middle/Balance) maps naturally to the framework's phi-nu-P triad: Right pillar = phi (coherence, expansiveness), Left pillar = nu (viability, constraint), Middle pillar = P (the product, balance).
+The **three-column structure** of the Tree (Right/Mercy, Left/Severity, Middle/Balance) maps in this `[I]` reading to a phi–nu–balance triad: Right pillar = phi (coherence, expansiveness), Left pillar = nu (viability, constraint), Middle pillar = their declared joint adequacy. This does not select an aggregator.
 
 The **3 + 7 division** — three supernals above the abyss, seven lower Sefirot below — parallels the framework's treatment of L7/L1 as boundary conditions (the poles of S² where the tangent planes live) and L2-L6 as the experiential levels traversed by the Soul Loop.
 
@@ -211,7 +211,7 @@ An alternative reading: the Five Constants are not levels but *operators* — th
 | Constant | Chinese | Function | Framework Analogue |
 |----------|---------|----------|--------------------|
 | Ren 仁 | Benevolence | The relational field itself — the capacity to feel the other as self | phi (coherence): Ren is what holds the social body together |
-| Yi 義 | Righteousness | Right action in context — knowing what the situation demands | P (the product): Yi is the correct output when phi and nu are balanced |
+| Yi 義 | Righteousness | Right action in context — knowing what the situation demands | joint adequacy: Yi is the interpretive output when phi and nu are balanced; no aggregator is implied |
 | Li 禮 | Propriety/Ritual | The forms through which relationship is enacted — protocol, ceremony | nu (viability): Li is the functional structure that makes relationship workable |
 | Zhi 智 | Wisdom | Discernment, knowledge, the capacity to see truly | The checking operator (Kṛṣṇa/L3) |
 | Xin 信 | Faithfulness | Reliability, trust, the foundation of all relationship | The foundation: B = sin(theta) — balance as the ground of trust |

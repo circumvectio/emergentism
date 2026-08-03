@@ -270,10 +270,32 @@ separately specified measure and dynamics.
 - structural neighbor — **constructor theory**: possible/impossible tasks may help formalize reachability. No conservation of `φ·ν=1` across physical constructions, or identification of the poles as universal physical boundaries, has been established.
 
 ### 2.1 The debt, named `∅`
-`REACHABLE`/`μ` is currently **ostensive** — "the emergence process," with no threshold, order parameter, or equation (Burri Rule 2's own `∅`). Left there it is **circular** (*exists = emergent-reachable; emergent = what comes to exist*) and the thesis collapses — to **Tegmark** (if the filter weakens to consistency) or to **triviality** ("what exists, exists"). This is the load-bearing debt and it is stated openly.
+`REACHABLE`/`μ` is no longer wholly ostensive. The model-relative definition
+below separates reachability from existence, and the Generative Base supplies
+one scoped witness: from `1`, finite words over `S(x)=x+1` and `ι(x)=1/x`
+reach exactly `ℚ⁺`. Thus `√2` lies in the declared positive-real carrier but is
+not finitely reachable, while `0` and `∞` are approached boundaries rather than
+finite attainments. This is `FV-21`, a theorem about that model—not a physical
+actuality bridge, a proof of plenitude, or an account of `μ` in nature.
+
+The remaining debt is domain-specific and empirical. A candidate bridge must
+independently fix its state space, initial set, transformations, costs, bounds,
+and targets; derive at least one non-stipulated exclusion; and obtain a held-out
+consequence beyond redescribing whatever occurred as reachable.
 
 ### 2.2 The discharge route `[C]`
-Define `REACHABLE_M(I,Y)` existence-independently: a target region `Y` is reachable from admitted initial/boundary region `I` when a finite or convergent sequence of transformations allowed by model `M`, under declared resource, time, error, and convergence bounds, takes at least one state in `I` into `Y`. Constructor theory may help type the allowed tasks, but the bridge remains open.
+Declare `M=(X,I,T,c,B,d,ε)` before the target is evaluated. Write
+`REACHABLE_FIN^M(I,Y)` when a finite `T`-path begins in `I`, remains within the
+declared cumulative cost bound `B`, and ends within `ε` of `Y`. Neither
+existence, actuality, emergence, nor observed occurrence may appear inside
+`T`, `c`, `I`, or `Y` as a shortcut.
+
+Keep limit reachability separate. A convergent sequence establishes approach
+under a declared topology and convergence bound; it counts as attainment only
+when `M` independently includes a completion or limit-realization rule. This is
+why the Generative Base may approach `0` and `∞` without reaching either by a
+finite word. Constructor theory may help type allowed tasks, but the physical
+bridge remains open under `W1-DOMAIN-REACHABILITY-01`.
 
 **Incompressibility fence.** Algorithmic incompressibility does not prove physical unreachability. A finite incompressible string can be explicitly printed by a program containing it or produced stochastically; description length, probability, constructibility, and reachability are different properties. Compression may indicate a pedigree but does not yet explain why physical law is simple.
 
@@ -301,7 +323,7 @@ The historical proposal compared the plenitude filter with quantum alternatives.
 
 **3.4 Two hard fences.**
 - **FORBIDDEN:** "Emergentism solves the measurement problem." It does not. It offers an interpretation-neutral record-emergence reframe; Everett remains one optional interpretation, not a forced conclusion.
-- **DEAD FORM — do not revive:** "`φ·ν=1` predicts / is the Born rule." This was a **false lemma, already audited and retracted** (proof-layer audit, receipt 109; the μ-limit formula conflated a pointwise coordinate identity with a normalization integral; conjugate ≠ inverse). No probability measure follows from §2; Born weights remain independent of the filter.
+- **DEAD FORM — do not revive:** "`φ·ν=1` predicts / is the Born rule." This was a **false lemma, already audited and retracted** (proof-layer audit, `109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md`; the μ-limit formula conflated a pointwise coordinate identity with a normalization integral; conjugate ≠ inverse). No probability measure follows from §2; Born weights remain independent of the filter.
 
 ## 4 · The pure/application cut line
 
@@ -311,7 +333,7 @@ as a social or hereditary order. Applications may borrow Emergentist concepts;
 they cannot warrant the worldview. The scoped sign grammar and Rosetta work
 roles survive only at their declared structural/interpretive tiers.
 
-**One cut heals a wound.** A venture-scoped `η=0` cannot narrow the pure vow to convenient cooperators while leaving substrate, victim, or outcaste outside consideration. The pure ethic must identify actual impact-bearers and sustaining boundaries. But an aggregate `ΣΔP` is not restored as the moral primitive: aggregation can still license sacrifice, so dyadic/boundary gates and explicit impact accounting remain necessary.
+**One cut heals a wound.** A venture-scoped `η_move=0` cannot narrow the pure vow to convenient cooperators while leaving substrate, victim, or outcaste outside consideration. The pure ethic must identify actual impact-bearers and sustaining boundaries. But an aggregate `ΣΔP` is not restored as the moral primitive: aggregation can still license sacrifice, so dyadic/boundary gates and explicit impact accounting remain necessary.
 
 ## 5 · What survives, and the honest limit
 
@@ -322,7 +344,7 @@ metalanguage; they are not three D0 objects and admit no arithmetic.
 **Load-bearers that stand alone `[A]`/`[S]`:** the reciprocal chart `φ·ν=1`
 (a coordinate identity, *not* a conserved law); balance/energy `B=sinθ`,
 `H=φ+ν≥2` minimized at the equator; **finity** `1` as the self-dual positive
-point (six senses, `[A]`); the selected mixed numeric/projective witness
+point (the unique fixed point of inversion on `ℝ_{>0}`, `[A]`); the selected mixed numeric/projective witness
 `{−1,0,1,∞}` (not a cardinal set, not ordinary orbit closure, and not the
 sovereign Titan meta-frame); and the four Möbius classes.
 

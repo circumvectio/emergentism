@@ -107,16 +107,23 @@ Suda's two short papers (*Primal Equation of Indeterminacy* and *Minimal Structu
 
 **Finity Papers mapping:** Direct parallel to Paper II's "Division by Zero as Category-Correction." Suda uses "fold" where the Finity Papers use "category-correction"; both reject the "failure" framing. Suda adds physical interpretations (black holes, QFT, zero-point energy) that Paper II does not claim.
 
-### 2.4 The Boundary Algebra — PARTIAL CONVERGENCE
+### 2.4 Boundary-Frame Imagery — INTERPRETIVE PARALLEL
 
-Suda does not write the three transformation equations (`⊙/○=•`, `•×○=⊙`, `⊙/•=○`) in the compact emblem form, but he constructs equivalent structures.
+An earlier draft compared Suda's three-phase imagery with three attempted
+operations on Titan glyphs.  Those operations are retired: TitanFrame is an
+opaque three-role syntax with an operator-free emblem, so no algebraic
+equivalence can be claimed.
 
 **Evidence:**
 - **Möbius Strip (§3.3):** `C_mobius = (e^(iπ)+1) × ∫ e^(iπx)dx` — combines "harmonic zero" with "infinite recurrence" in a single structural equation.
 - **Möbius Control:** The triad `(A,B,T)` with differential tension, where `T` is the boundary/midpoint. The flip redistributes "saturated energy toward void anchors and snaps to a mid-stability point."
 - **Magnum opus:** The three phases `0-phase`, `∞-phase`, and `1-phase` (the egg) form a closed loop in the Möbius universe model.
 
-**Finity Papers mapping:** Suda's algebra is distributed across multiple papers and notated differently, but the closure property (three elements, three transformations, one closed structure) is present.
+**Finity Papers mapping:** Suda's three-phase imagery is an interpretive parallel
+only.  It does not establish a closure law, a Titan operation, or a map from his
+mathematical symbols to TitanFrame.  Any mathematical comparison must instead
+name a separately typed numeric or projective structure and prove the proposed
+map there.
 
 ### 2.5 The Riemann Sphere / Möbius Topology — EXTENDED
 

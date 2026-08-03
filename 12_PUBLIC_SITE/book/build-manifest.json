@@ -1,46 +1,94 @@
 {
-  "authority": "deterministic projection receipt; source owners retain semantics",
+  "authority": "deterministic projection receipt; the current source owner retains semantics",
+  "catalog_contract": {
+    "path": "13_BOOKS/book-manifest.json",
+    "public_route": "../12_PUBLIC_SITE/book/index.html",
+    "release_state": "source_active_current_public_reader",
+    "schema": "emergentism/book-manifest/v1",
+    "sha256": "e50a9b9aedb76f067d714f09523bc8cfe4ecca730257e913d2b6fe235800fc22"
+  },
   "claim_card_contract": {
+    "coverage": {
+      "claim_card_count": 26,
+      "claim_card_ids": [
+        "OS01-01",
+        "OS01-02",
+        "OS01-03",
+        "OS01-04",
+        "OS01-05",
+        "OS01-06",
+        "OS01-07",
+        "OS01-08",
+        "OS01-09",
+        "OS01-10",
+        "OS01-11",
+        "OS01-12",
+        "OS01-13",
+        "OS01-14",
+        "OS01-15",
+        "OS01-16",
+        "OS01-17",
+        "OS01-18",
+        "OS01-19",
+        "OS01-20",
+        "OS01-21",
+        "OS01-22",
+        "OS01-23",
+        "OS01-24",
+        "OS01-25",
+        "OS01-26"
+      ],
+      "covered_chapters": [
+        "actuality",
+        "boundaries",
+        "difference",
+        "exit",
+        "five-apertures",
+        "good",
+        "human-condition",
+        "possibility",
+        "probability",
+        "relation",
+        "social-loop",
+        "soul-loop"
+      ],
+      "public_states": [
+        "bounded_current",
+        "candidate"
+      ],
+      "rendered_source_chapter_order": [
+        "boundaries",
+        "difference",
+        "relation",
+        "probability",
+        "actuality",
+        "possibility",
+        "soul-loop",
+        "social-loop",
+        "human-condition",
+        "good",
+        "five-apertures",
+        "exit"
+      ],
+      "review_states": [
+        "implemented",
+        "l3_audited"
+      ]
+    },
     "graph_path": "00_META/registers/CLAIM_GRAPH.json",
     "graph_sha256": "856224219b06d60b3cc61d0c5ab877f7b87f2c8a9ce49ce7bff5095c94cd1f9d",
     "path": "00_META/claim_cards/one_sitting.yaml",
+    "register_path": "00_META/registers/CLAIM_CARD_REGISTER.json",
+    "register_sha256": "7baea1beba1e010009c8eaacaed33c11ed0e1d791d0fcf9e0fd0cec2867caf39",
     "schema": "emergentism/claim-card-set/v1",
-    "sha256": "b52ccdcde8d3858e3af15f1d79c044bfa365e0e20892e3738efe9ed199733d70"
+    "sha256": "943c7ab6af092fb8792f21a6d94c354a9519f93efc9d39a1a539c3e785a465e0"
   },
   "ordered_source_paths": [
-    "13_BOOKS/the_reciprocal/00_front_matter.md",
-    "13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md",
-    "13_BOOKS/the_reciprocal/02_the-cargo-cult.md",
-    "13_BOOKS/the_reciprocal/03_the-capture-protocol.md",
-    "13_BOOKS/the_reciprocal/04_why-it-persists.md",
-    "13_BOOKS/the_reciprocal/05_the-graveyard-of-failed-strategies.md",
-    "13_BOOKS/the_reciprocal/06_finity-the-missing-number.md",
-    "13_BOOKS/the_reciprocal/07_the-secret-of-three.md",
-    "13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md",
-    "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
-    "13_BOOKS/the_reciprocal/10_the-extraction-boundary.md",
-    "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
-    "13_BOOKS/the_reciprocal/12_value-without-capture.md",
-    "13_BOOKS/the_reciprocal/13_the-six-lenses.md",
-    "13_BOOKS/the_reciprocal/14_the-paradox-engine.md",
-    "13_BOOKS/the_reciprocal/15_practice-as-method.md",
-    "13_BOOKS/the_reciprocal/16_living-ideas.md",
-    "13_BOOKS/the_reciprocal/17_egregores-and-the-noosphere.md",
-    "13_BOOKS/the_reciprocal/18_the-mesh-and-the-economy.md",
-    "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
-    "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
-    "13_BOOKS/the_reciprocal/21_every-framework-becomes-an-interface.md",
-    "13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md",
-    "13_BOOKS/the_reciprocal/23_what-does-not-hold.md",
-    "13_BOOKS/the_reciprocal/24_the-dissolution.md",
-    "13_BOOKS/the_reciprocal/25_the-seed.md",
-    "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-    "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
-    "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"
+    "00_THE_WELTANSCHAUUNG_ONE_SITTING.md"
   ],
   "output": {
     "path": "book/index.html",
-    "sha256": "20e486a1c4a23c8d4159cce2abaafc9917a64151f2357df68a92253b4c1f7f49"
+    "sha256": "feb45465e0e172d3d09845127ac184f8ec63f403339cf38b61caebf3f3eb52d3"
   },
   "renderer": {
     "extensions": [
@@ -51,123 +99,21 @@
     "package": "Markdown",
     "version": "3.10.2"
   },
-  "schema": "emergentism/public-book-build/v1",
+  "schema": "emergentism/public-book-build/v2",
   "sources": [
     {
-      "path": "13_BOOKS/the_reciprocal/00_front_matter.md",
-      "sha256": "0be36a286ef2aed5ffc1c2fe51f1666797c0bb8fdca303f2fc3e7c7a461f69cf"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/01_the-feeling-before-the-theory.md",
-      "sha256": "6d99f95e86da8d59dc6cba3d481638aaf65f3b6841598e17a76fad04b26be7a2"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/02_the-cargo-cult.md",
-      "sha256": "26ec78d4511245167f09ae7cf4fe38c559400d3afd84fa0be057b5214ed282fa"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/03_the-capture-protocol.md",
-      "sha256": "6f6074d55ecd8db586662af70f8462c8c5ac77e0cb436f914bd2d0a6114a86b5"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/04_why-it-persists.md",
-      "sha256": "622c4bc99758c281b21a4b050aacd2a40ead08cced194a21c8a894ba8042a852"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/05_the-graveyard-of-failed-strategies.md",
-      "sha256": "bdad280f40759c0cab4d0c8424a52a013902f3e811a2d4fa27bd929269f40f50"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/06_finity-the-missing-number.md",
-      "sha256": "b1b9c0a1b84df5109531acf578be8334c2de094e4da3ab7150fbe6cd11302fc1"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/07_the-secret-of-three.md",
-      "sha256": "8b5d3fb274cd30869e7022f680dca0143eb06ba3048c5d9a9aa66af773c43811"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/08_the-sphere-and-the-balance.md",
-      "sha256": "9748bda0311a7917a13d35ce485be26d4948eeff7e6b8998a4fe14270c67cb60"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/09_coherence-viability-and-flourishing.md",
-      "sha256": "3b74ebb74940e47ed78560bbdf61f64bfacd9ab9310d927c91ff3bc92bd5bea1"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/10_the-extraction-boundary.md",
-      "sha256": "a0b34cd8e6e0648e9bff69cd26002e5f8405217ef60a3c81809568a1aca4fed8"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/11_the-mathematics-of-meaning.md",
-      "sha256": "815a704dfef568cdac98180a336b5d48d0c6f031c3913a5cfdcb807badb0492c"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/12_value-without-capture.md",
-      "sha256": "c9a1056afd44ed00c9b49dedd4664641dc24e1c8c1c3d880fd36fbfd4fd3d76e"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/13_the-six-lenses.md",
-      "sha256": "04ce62bf2ef8276337cfa2e93c52b730c09a5c76cd9f9a87dec307bd977ea18e"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/14_the-paradox-engine.md",
-      "sha256": "ecdd3708d2d29b01482458f46b1753bfbf3a586b2ac0306eaf5a1a0e8d6e96af"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/15_practice-as-method.md",
-      "sha256": "d0635efbb1c4da4b6739fc99c6f3a20e3d92de8aad98b60f7ee0b931760fc082"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/16_living-ideas.md",
-      "sha256": "cd039576419ac6d512f88c3f30f4318330ce04ba4ee0329754b90d46ad99c0b2"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/17_egregores-and-the-noosphere.md",
-      "sha256": "ed2aad0daae7232bc5c4b6f5151f891ddeeea2500d209be4b4a97a66134a7ba9"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/18_the-mesh-and-the-economy.md",
-      "sha256": "135df42827c29d362bd9144565a13c539402207d493a5736369871dec026cadc"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/19_the-bounded-organization-as-test-case.md",
-      "sha256": "2a800888c5ab5db37009a858e5d13fc998c015824728e6bb5217940a73a7f7df"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/20_ai-and-the-signing-threshold.md",
-      "sha256": "30786c57e31a9be83a735b31da8b16db866208b74d4491a8a0f467eedd0c70dc"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/21_every-framework-becomes-an-interface.md",
-      "sha256": "7e6f2688bce4a73fbae63db81a3ad6a6c16f97e79275397c0ded004594a84851"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/22_the-trap-of-loving-the-framework.md",
-      "sha256": "b9ff6788f342ce0342f319967e3bcb8348d555381746c0375b2ce49770755683"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/23_what-does-not-hold.md",
-      "sha256": "6800df11d40e444b8210c988df8847e65fca70462789654da818240e87e6ca5b"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/24_the-dissolution.md",
-      "sha256": "47d0fdbc188fea193c9babf6c72a12262630902a995c161599b5fd297af8df14"
-    },
-    {
-      "path": "13_BOOKS/the_reciprocal/25_the-seed.md",
-      "sha256": "824be6cd202dd2f871144aff422639744631074f102fe52541f460aa89a996e7"
-    },
-    {
+      "claim_card_set": "00_META/claim_cards/one_sitting.yaml",
+      "lifecycle": "reader_synthesis",
       "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-      "sha256": "0c9a8f418bbb7a0d995afd1f703faa4a85fb9f2cc6bd5c2ce07236fe8b8bb749"
-    },
-    {
-      "path": "06_ONTOLOGY/08_THE_HUMAN_CONDITION.md",
-      "sha256": "520ef39fd188be3577af1423abc82490c5da7dc2bc419726b89fb474bdb86e59"
-    },
-    {
-      "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
-      "sha256": "dc095e52c0c82964179ca39c75b00587bb1ae9f7afabb32d98ba9da5a4121e33"
+      "public_eligible": true,
+      "sha256": "a48b0d6f263c78dc9e3c5b5fcb6bd62c51223d2d801d54431cc34d9c1f867aad"
     }
-  ]
+  ],
+  "withheld_provenance": {
+    "included_in_output": false,
+    "included_in_rag": false,
+    "lifecycle": "withheld_staged_provenance",
+    "path": "13_BOOKS/the_reciprocal/"
+  },
+  "work_id": "BK-ONE-SITTING"
 }

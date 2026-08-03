@@ -44,7 +44,7 @@ unless it earns independent evidence.
 | **Φ̂₄** | An actual D4 model token's normalized evaluation of `Φ₅`; only this estimate enters present arithmetic. |
 | **V₄ / V** | D4 actual power: embodied capacity, tools, energy, access, and ability available to perform now. Ability does not imply authorization. |
 | **Conjunctive family** | A normalized monotone family `C(Φ̂₄,V₄)` with `C(0,V₄)=C(Φ̂₄,0)=0`. |
-| **Node power** | Emergentism's selected normalized instance `P_node:=Φ̂₄V₄`, publicly compressed as `ΦV`; not uniquely derived and `[C]` as a universal empirical fit. |
+| **Node power** | Emergentism's selected working score `P_node:=min(Φ̂₄,V₄)` over ordinal factors; `[I]` as a model and `[C]` as a universal empirical fit. The product form `Φ̂₄V₄`, publicly compressed as `ΦV`, is retired as a ranking and remains readable only as the historical name of the same AND-class conjunction. |
 | **Physical light cone** | Spacetime-bounded causal cone; it does not widen beyond physical law or `c`. |
 | **Option cone** | The admissible histories an agent can model, rank, coordinate, and reach inside its physical constraints. |
 

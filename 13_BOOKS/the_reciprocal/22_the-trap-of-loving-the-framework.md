@@ -243,7 +243,10 @@ Love of the framework is purified by contact with what the framework cannot repl
 
 The framework's metrics can become devotional objects.
 
-`P_node`, `ΣΔB`, `ΣΔP_node`, `η_move = 0`, ratification signatures, receipt closure, exit events, practice consistency, and trust proxies can all be useful. They can also become the new altar.
+`P_node`, declared balance evidence, bearer-wise node-order comparisons,
+`η_move = 0`, ratification signatures, receipt closure, exit events, practice
+consistency, and trust proxies can all be useful. They can also become the new
+altar.
 
 The community improves the dashboard and loses the practice.
 

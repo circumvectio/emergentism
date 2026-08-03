@@ -221,8 +221,10 @@ L6 requires two.
 
 It does not validate anything. On the framework's own conjunctive law the score stays 0
 until an outcome returns from outside, and a launch is not an outcome — it is an invitation
-to produce one. **The two plans are complements:** this one makes the invitation worth
-opening; `00_THE_PROGRAM_PLAN.md` Sprint 1 is the invitation itself, and it is still unsent.
+to produce one. This dated launch proposal does not authorize contact. The
+superseding `../00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md`
+keeps `FPE-REVIEW-01` pre-contact execution blocked until every registry
+prerequisite has real custody.
 
 **Kill for this plan:** if L1–L5 close and a first-time reader still cannot find the
 strongest page in the corpus in under thirty seconds, the plan optimised the wrong thing.

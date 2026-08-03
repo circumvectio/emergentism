@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] doctrine — the epistemic ground of the Weltanschauungskrieg lane"
-status: "ACTIVE [I] — adopted in receipts 127/129; amended to four postures. Filename retained for link stability."
+status: "ACTIVE [I] — adopted in `127_TRANSMISSION_DOCTRINE_K2_2026_07_13.md` and `129_FOURTH_POSTURE_ADOPTED_2026_07_13.md`; amended to four postures. Filename retained for link stability."
 date: 2026-07-13
 companion: "01_WELTANSCHAUUNGSKRIEG.md (this doc is its epistemic ground)"
 depends:
@@ -16,7 +16,7 @@ depends:
 
 # The Four Postures Toward the Gap
 
-> **[Amended 2026-07-13 — receipt 129.]** Promoted from three postures to **four** by adopting **Withdraw** (§2, Posture IV), grafted from the concurrent `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1` staging draft (now superseded to this doc). Filename `01_THE_THREE_POSTURES.md` is retained for link stability; the doc's content is the four-posture form.
+> **[Amended 2026-07-13 — `129_FOURTH_POSTURE_ADOPTED_2026_07_13.md`.]** Promoted from three postures to **four** by adopting **Withdraw** (§2, Posture IV), grafted from the concurrent `00_THE_SYNTHETIC_GAP_AND_FOUR_POSTURES_v0.1` staging draft (now superseded to this doc). Filename `01_THE_THREE_POSTURES.md` is retained for link stability; the doc's content is the four-posture form.
 
 **One sentence:** every Weltanschauung lives in the synthetic gap — formally valid, permanently beyond proof, held as a wager on the world — so worldviews cannot compete *in* the gap and compete instead by their **posture toward** it; there are **four** (deny / weaponize / confess / withdraw), and in the arena where nothing is provable, **the epistemics becomes the ethics.**
 
@@ -24,7 +24,7 @@ depends:
 
 ## 1 · The shared arena [I]
 
-The signed audit ruling (receipt 126) placed the living content of this framework in the synthetic gap: 34 identifications of the form *"reality IS this structure"* that no proof can confirm and no refutation can kill. This is not a private weakness. It is the **common territory** of every worldview that has ever moved history — Abrahamism, the Dharmic systems, Marxism, liberalism, scientism-as-creed, and the political myths, including the darkest. None provable. All wagers on what reality is and what follows for how to live.
+The signed audit ruling (`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`) placed the living content of this framework in the synthetic gap: 34 identifications of the form *"reality IS this structure"* that no proof can confirm and no refutation can kill. This is not a private weakness. It is the **common territory** of every worldview that has ever moved history — Abrahamism, the Dharmic systems, Marxism, liberalism, scientism-as-creed, and the political myths, including the darkest. None provable. All wagers on what reality is and what follows for how to live.
 
 Therefore: the Weltanschauungskrieg is **not fought over proof.** It never was. The question a strategy must answer is what it *is* fought over.
 

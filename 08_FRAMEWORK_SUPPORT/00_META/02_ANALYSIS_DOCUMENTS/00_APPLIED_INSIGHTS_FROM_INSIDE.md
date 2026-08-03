@@ -410,7 +410,13 @@ This file is instead:
 
 ### Core claim
 
-The ektropic force (ΣΔP_node > 0) is not merely a structural property of coupled multiplicative systems. It is the will of *Dyēus Pḥtḗr* — the Proto-Indo-European "Bright Sky Father" — the same observation every PIE daughter-tradition independently personified. (Correction per Doc 30: Dyēus names the *perception* of the ordering — the shining. The ordering force itself is ***h₂r̥tó-*** — Ṛta/Asha/Ordo — "to fit together.")
+The historical ektropic-force reading used an invalid sum of ordinal node
+scores. Its admissible residue is a candidate bearer-wise order claim: no
+affected bearer is hidden while `P_node(after) ⪰ P_node(before)`. The witness
+reading associates that perceived ordering with *Dyēus Pḥtḗr* — the
+Proto-Indo-European "Bright Sky Father." (Correction per Doc 30: Dyēus names
+the *perception* of the ordering — the shining. The ordering force itself is
+***h₂r̥tó-*** — Ṛta/Asha/Ordo — "to fit together.")
 
 ### The etymological chain
 
@@ -428,7 +434,12 @@ This forces a choice the corpus has not yet made:
 
 Own idealism, but derive it through the mathematics. The framework's unique move is not "systemic awareness is fundamental" (every idealist says that). It's: "systemic awareness is fundamental AND this can be shown through the mathematics of coupled multiplicative systems, not just asserted through direct perception."
 
-Three paths to the same conclusion: sitting practice (Pratyakṣa confirms it), mathematics (ΣΔP_node > 0, the cooperation threshold derives it — note: R* ≈ 1.5 has been **falsified**, actual η_c ≈ 0.58 [C]; see `../../../90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md`), comparative mythology (Dyēus Pḥtḗr across all PIE traditions corroborates it historically). Not proof. Convergence.
+Three candidate paths are compared: sitting practice, bearer-wise `P_node`
+order under a declared cooperation model (the former R* ≈ 1.5 claim was
+**falsified**; the observed η_c ≈ 0.58 remains `[C]`; see
+`../../../90_ARCHIVE/08_FRAMEWORK_SUPPORT/04_APPLICATIONS/RESEARCH_BRIEF_R_STAR_SIMULATION.md`),
+and comparative mythology. None proves or independently corroborates the
+others; this remains witness-tier interpretation.
 
 ### Status
 

@@ -2,6 +2,7 @@
 title: "The Reciprocal / Infinite Play — Critical Edition 1"
 status: "STAGED PRIVATE EDITION — seven chapters, 100% claim-card coverage"
 date: 2026-07-28
+evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [RIP01-01, RIP01-02, RIP01-03, RIP01-04, RIP01-05, RIP01-06, RIP01-07]
 ---
 

@@ -69,8 +69,7 @@ add_T, sub_T, mul_T, div_T, pow_T, log_T : undefined
 ```
 
 Thus `0_T`, `1_T`, and `∞_T` frame the arena without becoming terms inside it.
-In particular, `1_T/1_T`, `0_T×∞_T`, `∞_T/1_T`, and every other apparent
-Titan arithmetic expression are inadmissible. Ordinary numeric `0` and `1`
+In particular, `1_T/1_T`, `0_T×∞_T`, `∞_T/1_T`, and every other apparent Titan arithmetic expression are inadmissible and have no value. Ordinary numeric `0` and `1`
 remain lawful operands in their own type; the projective point `∞_P`
 participates only in explicitly declared projective maps. Identical typography
 does not license type substitution.
@@ -219,7 +218,7 @@ A quick falsifier shows why. If ordinary multiplication were extended with
 Therefore the retired infix form cannot be cited as algebraic proof, as a definition of
 the reciprocal chart, or as evidence for the finite-node model.
 
-**Sharper than the falsifier, machine-checked 2026-07-29 (r182).** The
+**Sharper than the falsifier, machine-checked 2026-07-29 (`182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md`).** The
 associativity machinery is over-kill: premise (i) `0·w = 1` alone collapses any
 nontrivial ring, because `0·w = 0` holds in every ring, so `0·w = 1` forces
 `1 = 0`. The "associativity" name is now historical — the ring is dead on

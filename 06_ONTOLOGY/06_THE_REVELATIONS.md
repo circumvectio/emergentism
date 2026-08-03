@@ -33,25 +33,25 @@ evidence_tier: "Per-revelation below; editorial assembly is not proof or command
 ---
 
 ## 1 · The honesty machine is the discovery `[B/I]`
-We set out to verify a cosmology; what we proved is that *a worldview can audit itself and survive*. Receipt 126 records 7 settled, 66 broken-as-stated, 34 synthetic-gap; A7/E9 — the refusal of infallibility — was tested reflexively and passed. The confession apparatus outlived the proof-forms it was built to test. **Receipt:** 126. **Dies if:** the apparatus is shown to be historically un-original, or fails under stranger contact. *Calling it the central contribution is interpretation, not a priority theorem.*
+We set out to verify a cosmology; what we proved is that *a worldview can audit itself and survive*. `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` records 7 settled, 66 broken-as-stated, 34 synthetic-gap; A7/E9 — the refusal of infallibility — was tested reflexively and passed. The confession apparatus outlived the proof-forms it was built to test. **Receipt:** `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`. **Dies if:** the apparatus is shown to be historically un-original, or fails under stranger contact. *Calling it the central contribution is interpretation, not a priority theorem.*
 
 ## 2 · "Broken" often meant "over-dressed" `[B/I]`
-When the proofs died, the *uses* survived and ran cleaner: the ethic stood better as a vow than as a theorem; the product stood better as AND-class practice than as "forced." Derivation-death is not idea-death — but the ledger decides each case, and the named dead stay dead. **Receipt:** 131. **Dies if:** a rescued "use" is shown to depend on the dead proof after all. *Line: derivation died; organism did not.*
+When the proofs died, the *uses* survived and ran cleaner: the ethic stood better as a vow than as a theorem; the product stood better as AND-class practice than as "forced." Derivation-death is not idea-death — but the ledger decides each case, and the named dead stay dead. **Receipt:** `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`. **Dies if:** a rescued "use" is shown to depend on the dead proof after all. *Line: derivation died; organism did not.*
 
 ## 3 · Some truths are invisible to some instruments `[S/I]`
-The GFS retraction showed a survey of standing respondents cannot test a zero-factor knockout boundary: the dead do not answer questionnaires, and a knockout is not measured by interviewing the standing. The instrument determines which register of a claim is testable at all. **Receipt:** GFS retraction (owner 2026-07-13); 131. **Dies if:** used to shield every absent witness from testing — this is an instrument-boundary finding, not a permission.
+The GFS retraction showed a survey of standing respondents cannot test a zero-factor knockout boundary: the dead do not answer questionnaires, and a knockout is not measured by interviewing the standing. The instrument determines which register of a claim is testable at all. **Receipt:** GFS retraction (owner 2026-07-13); `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`. **Dies if:** used to shield every absent witness from testing — this is an instrument-boundary finding, not a permission.
 
 ## 4 · The click does not discriminate `[I]`
-Felt coherence fires identically for a lens and for a law; coherence-detection cannot answer contact-questions. The cure is not cynicism — it is the tier ledger, written in advance. **Receipt:** 126 (synthetic-gap ruling). **Dies if:** a tier-disciplined claim is shown to be settled by felt fit alone. *"Fires identically" is phenomenological compression, not a measured identity.*
+Felt coherence fires identically for a lens and for a law; coherence-detection cannot answer contact-questions. The cure is not cynicism — it is the tier ledger, written in advance. **Receipt:** `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (synthetic-gap ruling). **Dies if:** a tier-disciplined claim is shown to be settled by felt fit alone. *"Fires identically" is phenomenological compression, not a measured identity.*
 
 ## 5 · Worldviews with synthetic cores compete by posture `[I/C]`
-All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** 127, 129 (four postures adopted). **Dies if:** a fifth posture—or
+All movement-worldviews share the synthetic gap; they cannot differ *in* it, so they differ by their stance *toward* it: deny / weaponize / confess / withdraw. And the revelation inside: **the epistemics is the ethics** — deny makes subjects, weaponize makes ammunition, confess makes adults, withdraw makes them free. **Receipt:** `127_TRANSMISSION_DOCTRINE_K2_2026_07_13.md`, `129_FOURTH_POSTURE_ADOPTED_2026_07_13.md` (four postures adopted). **Dies if:** a fifth posture—or
 any posture outside the selected four—is exhibited without collapsing into one
 of them, or a Posture I/II system sustains institutional self-correction across
 generations. *The ethical reading's completeness is open; the Weimar caveat is live.*
 
 ## 6 · The ladder is not merely a ladder `[B/I]`
-Fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — sage and outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar, its cleanest witness carrying the seven visible planets. **Receipt:** 130. **Dies if:** the centre+mirror grammar fails in a polarity-encoding system within the lineage. *Shape real; census selected; universal lost.*
+Fold the seven rungs onto the sphere and the apex lands in the *middle* while the summit mirrors the base — sage and outcast are reflections, the crown is the return. And its shadow: the "universal" seven was one family's inherited grammar, its cleanest witness carrying the seven visible planets. **Receipt:** `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`. **Dies if:** the centre+mirror grammar fails in a polarity-encoding system within the lineage. *Shape real; census selected; universal lost.*
 
 ## 7 · The trinity has a dark twin `[A/C]`
 The inversion used by the numeric/projective structure fixes *two* points, not
@@ -61,13 +61,13 @@ ordinary orbit closure. The D1 signed construction co-opens the pair as
 `SignedMagnitude={+,-}×ℕ⁺` and maps it into `ℤ_•=ℤ\{0}`. Because
 `1+(-1)=0`, that punctured carrier is not additively closed; standard `ℤ`, `ℚ`,
 and `ℝ` retain zero. The positive reciprocal chart selects `+1` as its centre,
-but it does not erase `−1`. Whether any physical, psychological, or
-institutional system carries a corresponding “shadow” is W11 `[C]`, not a
-consequence of symmetry. The sovereign Titan seats remain a separate opaque
-meta-frame and admit no arithmetic. **Receipt:** algebra (`[A]`
-fixed-point/orbit/closure facts) + W11 (`[C]` functional-work wager). **Dies
-if:** `−1` names no real phenomenon, grounds no operator, predicts nothing —
-then it is a footnote.
+but it does not erase `−1`. The 2026-08-01 honest search found no independent
+physical, psychological, or institutional operator, observation, or prediction
+beyond ordinary algebra and symbolism, so W11's extra functional-work wager is
+`DECORATIVE`. The sovereign Titan seats remain a separate opaque meta-frame and
+admit no arithmetic. **Survivor:** the `[A]` fixed-point/orbit/closure facts,
+signed magnitude, complex rotation, and an optional shadow metaphor. A future
+functional claim requires a new ID, typed variable, and incremental prediction.
 
 ## 8 · Plato was partly right, and the repair has debts `[I/C]`
 Not Forms — *constraint-structured degrees of freedom*; not perfection selecting
@@ -76,17 +76,18 @@ and attractors *across* constrained DoF, not the DoF themselves. A tempting
 further inference failed: incompressibility does not imply physical
 unreachability. Finite incompressible objects may be printed explicitly or
 generated stochastically; description length, probability, constructibility,
-and physical reachability are distinct. **Receipt:** 133 and W1's Kintsugi
-repair. **Dies if:** `REACHABLE` cannot be defined non-circularly from declared
-initial conditions, allowed transformations, and finite or convergent resource,
-time, and error bounds. *Still W1, not an earned theorem — never above `[C]`.*
+and physical reachability are distinct. **Receipt:** `133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md` and W1's Kintsugi
+repair. `FV-21` now supplies one non-circular, model-relative finite-reachability
+witness. **The remaining W1 kill:** no real-domain target is excluded beyond
+stipulation, or the bridge yields no held-out consequence. *The theorem is
+component support; plenitude and physical emergence remain unvalidated.*
 
 ## 9 · A gate that always opens is not a gate `[B/I]`
 Discovered by failure: the corpus misapplied a private financial/legal signature
 convention to editorial and AI work. That multiplied commitment-like records
 while obscuring actual outcomes. The repair is typed authorization,
 commitment/outcome receipt separation, and proportionate review—not a sacred
-signer. **Receipt:** 129 §2; 135–136; Kintsugi boundary receipt. **Dies if:** the
+signer. **Receipt:** `129_FOURTH_POSTURE_ADOPTED_2026_07_13.md` §2; `135_K2_PROMOTION_EMERGENT_AXIOMS_2026_07_19.md`; `136_AUTHORITY_AND_COMPLETENESS_RECONCILIATION_2026_07_19.md`; Kintsugi boundary receipt. **Dies if:** the
 typed process produces no clearer responsibility or outcome evidence than the
 retired gate.
 
@@ -109,7 +110,7 @@ transfer is a different coordinate, assessed through `η_ratio`, a declared
 bounded mating-domain exception; it is not a social or economic licence.
 Species, trophic position, replicator layer, Rosetta row, and dignity do not
 collapse into one ladder. The lemma and vow point at each other; neither closes
-the circle. **Receipt:** W6; 108 (keel); 168. **Dies if:** bearer-complete
+the circle. **Receipt:** W6; `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` (keel); `168_TROPHIC_REPLICATOR_ROSETTA_RESTORATION_2026_07_23.md`. **Dies if:** bearer-complete
 comparisons show no durability or trust premium from the selected cooperation
 strategy, or if the rule requires hidden payers, hereditary roles, or
 extraction between human functions — then rethink, don't double down.

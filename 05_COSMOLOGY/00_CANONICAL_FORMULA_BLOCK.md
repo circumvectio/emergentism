@@ -37,11 +37,20 @@ B := 2/(φ + ν) = sin θ ≤ 1
 
 ## Meaning
 
-- The first three lines define the open colatitude/radial coordinate of a
+- The first three lines define one open positive-radial meridian of a
   stereographic chart and its reciprocal. They do not include the azimuth and
   therefore are not, by themselves, a full chart of `S²`.
 - `φ·ν=1`, `φ+ν≥2`, and `B≤1` then follow analytically.
 - Equality in the last two statements occurs at `φ=ν=1` (`θ=π/2`).
+
+**Selected orientation convention.** Here `θ` is measured from the selected
+south boundary `•`; it is a south-origin polar parameter, not the standard
+geographic colatitude label. Along the selected positive-radial meridian,
+`z=ν=tan(θ/2)`: `θ→0,ν→0,φ→∞` is south (`•`), while
+`θ→π,ν→∞,φ→0` is north (`○`). Reversing the geographic words would give an
+analytically equivalent orientation, but it is not this corpus's selected
+convention. The reciprocal identity, AM-GM bound, balance formula, and equator
+do not depend on those geographic labels.
 
 These are **chart facts only**. They do not establish an empirical conservation
 law, an ontology, an ethic, a teleology, a universal objective, or the finite
@@ -183,7 +192,7 @@ If the node factors are not normalized, the bound `P_node≤1` does not apply.
 **The product is retired as a ranking.** The former working model
 `C×(Φ̂₄,V₄):=Φ̂₄V₄`, publicly compressed `ΦV`, stays readable as the historical
 name of the same AND-class conjunction — its zero-factor, binding-constraint and
-equator content is model-agnostic and identical under `min` (receipt 108) — but
+equator content is model-agnostic and identical under `min` (`108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`) — but
 it may no longer be used to order, score, or compare nodes. This removes a
 licence and grants none: `min` remains one selected AND-class member among
 several, `[I]` as a model and `[C]` as a universal fit, and no aggregator is
@@ -219,8 +228,11 @@ has its own regime. When compressing, name the regime explicitly:
 **Disambiguation convention:** do not use `P` bare in source-truth
 documents unless the regime is named in the same sentence. Write the
 manifold identity as `P∞` or `φ · ν = 1`; write the operational node
-measure as `P_node`. Aggregates such as `ΣΔB` or `ΣΔP_node` may be used
-descriptively only; they never compensate ethically for destroying one bearer.
+measure as `P_node`. Because `P_node` is ordinal, do not sum, integrate,
+differentiate, or average its coding. Use bearer-wise before/after order
+predicates and keep every affected bearer visible. Any scalar aggregate or
+horizon integral requires a separately declared and defended cardinal measure
+`q_x`; it never compensates ethically for destroying one bearer.
 Likewise, do not write either finite-node factor as lowercase chart notation:
 `ν` is the sphere coordinate, while uppercase `V` is D4 actual power; `φ` is the
 other chart coordinate, while uppercase `Φ` names D5 possible power and `Φ̂₄`

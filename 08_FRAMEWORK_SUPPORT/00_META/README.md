@@ -33,16 +33,19 @@ Framework-support meta lane for agent-facing compilers, routing tables, analysis
 
 - Root Foundation doctrine. Route that to `../../00_META/` or the seven Foundation roots.
 - Active governance law. Route that to `../01_GOVERNANCE/`.
-- Public dissemination packages. Archived dissemination provenance lives at `../../../03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/07_DISSEMINATION`; create a new active owner only through the parent lane.
+- Public dissemination packages. Route current public or release work through
+  [`../../12_PUBLIC_SITE/00_THE_PUBLIC_SITE.md`](../../12_PUBLIC_SITE/00_THE_PUBLIC_SITE.md).
 
 ## Read First
 
 - `AGENTS.md`
-- `00_AGENT_ENTRY_POINT.md`
-- `00_AGENT_ONBOARDING_SEQUENCE.md`
-- `00_AGENT_ROUTING_TABLE.md`
-- `00_CORPUS.md`
+- `00_BRIEF.md`
+- `01_THE_THREE_POSTURES.md`
 - `README_LENS.md` for historical Lens/compiler context
+- The former entry, onboarding, routing-table, and corpus-index files are
+  preserved under
+  [`../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/00_META/`](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/00_META/)
+  as provenance, not active instruction.
 
 ## Subfolders
 
@@ -51,12 +54,15 @@ Framework-support meta lane for agent-facing compilers, routing tables, analysis
 
 ## Status
 
-Active support-meta lane. This folder absorbs the useful part of the former `01_EMERGENTISM/08_FRAMEWORK_SUPPORT/` surface without making Lens a peer Foundation root.
+Active support-meta lane inside `08_FRAMEWORK_SUPPORT/`. It absorbs the useful
+part of the retired Lens-era meta surface without making Lens a peer Foundation
+root.
 
 ## Current Boundary
 
 The active route surface is this README plus `AGENTS.md`, with upstream
-authority in `../AGENTS.md` and `../../11_UPLINK/00_CORE/`.
+authority in [`../AGENTS.md`](../AGENTS.md) and the root
+[`00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md).
 
 The older agent entry, onboarding, routing-table, and node-activation documents
 remain useful as Lens-era compatibility material. Treat them as historical

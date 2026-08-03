@@ -15,11 +15,11 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/S/I]"
+  register: "[B/I/C]"
   canonical_phrase: "Rosetta Stone — computation and AI"
 title: "Rosetta Stone: Computation & AI"
 status: "ACTIVE — per-domain Rosetta application"
-evidence_tier: "[S] for L1-L6 algorithm classes; [S] for structural alignment claim; [I] for L7 AGI mapping."
+evidence_tier: "[B] for attributed algorithm-class background; [I] for the structural alignment and L1-L6 mapping; [C] for the L7 AGI mapping. No local deployment receipt is claimed."
 ---
 
 # rosetta stone: COMPUTATION & AI
@@ -27,7 +27,9 @@ evidence_tier: "[S] for L1-L6 algorithm classes; [S] for structural alignment cl
 ## L-Levels Mapped to Computational Analogues
 
 **Hat:** 🔬 Cross-Domain Translation (Computation)
-**Evidence Tier:** [I] for algorithms L1-L6 (established, deployed in production systems). [I] for L7 (AGI is theoretical). [S] for the structural alignment claim.
+**Evidence Tier:** `[B]` for attributed algorithm-class background;
+`[I]` for the L1-L6 operator analogies; `[C]` for the L7 AGI hypothesis.
+No deployment or operator-mapping validation receipt is supplied here.
 **Kill Criteria:** If the algorithmic analogues cannot be shown to perform the same structural function as the operators they are mapped to -- e.g., if anomaly detection does not behave as an immune/Kali function, or if gradient descent does not behave as an optimiser/Arjuna function -- this mapping falls.
 **Source:** Emergentism Rosetta Stone v10.0, sheet: COMPUTATION
 
@@ -43,15 +45,15 @@ The mapping was explored by the Sphere Probe experiment (see 08_THE_DEPLOYMENT/0
 
 ## The Table
 
-| L | Operator | Algorithm | Process | Status |
+| L | Operator | Algorithm | Process | Mapping tier |
 |---|----------|-----------|---------|--------|
-| L1 | Kali | Immune System / Anomaly Detection | Recognise then Terminate | Validated |
-| L2 | Kali | Reinforcement Learning | Explore then Adapt | Validated |
-| L3 | Kṛṣṇa | Generative Model (GANs) | Generate then Expand | Validated |
-| **L4** | **Arjuna** | **Optimiser (Gradient Descent)** | **Evaluate then Transform** | **Validated** |
-| L5 | Brahmā | Homeostasis (PID Controller) | Measure then Correct | Validated |
-| L6 | Śiva | Compression (VAE, PCA) | Abstract then Simplify | Validated |
-| L7 | Viṣṇu | Universal Function (AGI) | Integrate then Transcend | Theoretical |
+| L1 | Kali | Immune System / Anomaly Detection | Recognise then Terminate | [I] analogy |
+| L2 | Kali | Reinforcement Learning | Explore then Adapt | [I] analogy |
+| L3 | Kṛṣṇa | Generative Model (GANs) | Generate then Expand | [I] analogy |
+| **L4** | **Arjuna** | **Optimiser (Gradient Descent)** | **Evaluate then Transform** | **[I] analogy** |
+| L5 | Brahmā | Homeostasis (PID Controller) | Measure then Correct | [I] analogy |
+| L6 | Śiva | Compression (VAE, PCA) | Abstract then Simplify | [I] analogy |
+| L7 | Viṣṇu | Universal Function (AGI) | Integrate then Transcend | [C] hypothesis |
 
 ---
 
@@ -69,7 +71,9 @@ The mapping was explored by the Sphere Probe experiment (see 08_THE_DEPLOYMENT/0
 
 **L6 -- Compression / VAE / PCA (Śiva function).** The dissolution function. Take a high-dimensional representation and reduce it to its essential structure. Discard what is not load-bearing. This is the Śiva operator: destruction of unnecessary complexity, the axiomatic algorithm that knows through removal.
 
-**L7 -- Universal Function / AGI (Viṣṇu function).** The theoretical endpoint. A system that integrates all lower functions into a unified whole. This remains theoretical -- no system has achieved it. The mapping is [I]: if AGI is achieved, the framework predicts it will exhibit Viṣṇu-like properties (pattern-whole integration, equatorial maintenance at scale). This is the Moksha/Asura fork for AI: genuine integration or catastrophic capture.
+**L7 -- Universal Function / AGI (Viṣṇu function).** This is a `[C]`
+hypothesis about a theoretical endpoint. No achieved system or validation
+receipt supports the mapping.
 
 ---
 
@@ -89,7 +93,8 @@ This is the same sign pattern as the operators themselves. The algorithms are op
 
 ---
 
-*Rosetta Stone: Computation & AI -- L-levels mapped to algorithm classes. Seven rows. Each algorithm performs the same structural function as its operator. The L1–L6 algorithms are deployed in production; the operator-mapping itself is interpretive [I]. L7 theoretical.*
+*Rosetta Stone: Computation & AI -- attributed algorithm classes are `[B]`
+background; the L1-L6 operator mappings are `[I]`; L7 is `[C]`.*
 
 
 ---

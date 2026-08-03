@@ -33,8 +33,8 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../00_STA
 
 The geometry this evidence layer calibrates is canonized in cosmology — read the Rosetta and paradox surfaces **with** them:
 
-- [The Burrisphere](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — `S²` (`φ·ν=1`), the nine latitudes `L0..L∞`, and the equator `L4` (the Master Rosetta's nine-row table is the evidence source for that closure).
-- [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — goodness is the **bond** `φ×ν`; the moral axis is `η` (closed vs syntropic), never a gender, pole, caste, or operator name.
+- [The Burrisphere](../../05_COSMOLOGY/00_THE_BURRISPHERE.md) — routing-only compatibility stub. Chart authority is the [Canonical Formula Block](../../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md); the seven `GEN7@1` seats are owned by the [Generative Table](ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md), whose two boundary rows are nonmembers rather than “nine latitudes.”
+- [The Dyadic Coupling Law](../../05_COSMOLOGY/00_THE_DYADIC_COUPLING_LAW.md) — the chart describes and Justice evaluates; “goodness is the bond” is `[I]`, never a `φν` product, and the action boundary is `η_move`.
 - [Five-plus-One Constitution](../../00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md) — current refusal owner; application-specific constitutional enumerations are historical only.
 
 ## Read First

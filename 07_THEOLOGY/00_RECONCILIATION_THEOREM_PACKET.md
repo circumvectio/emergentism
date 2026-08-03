@@ -53,18 +53,19 @@ differently.
 Emergentism declares
 
 \[
-P_{node}:=C_{\times}(\widehat\Phi_4,V_4)=\widehat\Phi_4V_4
+P_{node}:=C_{\min}(\widehat\Phi_4,V_4)=\min(\widehat\Phi_4,V_4)
 \]
 
-as its normalized working instance. `ΦV` remains public shorthand only; it does
-not license multiplication of a D5 possibility by D4 means without the D4
+as its selected working score over ordinal factors. The product form
+`\widehat\Phi_4V_4`, publicly compressed as `ΦV`, is retired as a ranking and
+does not license multiplication of a D5 possibility by D4 means without the D4
 evaluation bridge.
 
 **Licensed:** `Φ̂₄` and `V₄` are jointly necessary by definition inside the
 selected model.
 
-**Not licensed:** the product is uniquely forced or universally fits real
-agents.
+**Not licensed:** the minimum is uniquely forced or universally fits real
+agents; the retired product may not order, score, or compare nodes.
 
 **Kill:** a universal claim dies if a rival admissible aggregator predicts the
 data better or reverses a load-bearing ranking.
@@ -99,11 +100,15 @@ selection beyond confounds, the causal interpretation contracts to metaphor.
 
 ## Result 4 — Justice-constrained bearer-horizon selection `[S/I]`
 
-For
+For a separately declared and defended cardinal durable-potential measure
+`q_x(t)`, define
 
 \[
-W_x(T)=\int_0^T P_x(t)\,dt
+W_x(T)=\int_0^T q_x(t)\,dt.
 \]
+
+The selected ordinal `P_node` remains a bearer-wise before/after ordering and
+is not integrated or substituted for `q_x`.
 
 and a declared horizon set `\mathcal T=\{T_S,\ldots,T_L\}` with
 `0<T_S\le T_L`, let the Justice-admissible set be

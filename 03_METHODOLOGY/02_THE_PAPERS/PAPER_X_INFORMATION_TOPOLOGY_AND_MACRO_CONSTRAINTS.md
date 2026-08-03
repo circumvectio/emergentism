@@ -367,8 +367,8 @@ organization without hiding its exported entropy and control costs.
 For conscious agency, the dyadic version is stricter:
 
 ```text
-P_node,i = Phi_i * V_i
-P_node,H = Phi_H * V_H
+P_node,i = min(Phi_hat_4_i, V_4_i)
+P_node,H = min(Phi_hat_4_H, V_4_H)
 
 strict syntropy:
 Delta P_node,i >= 0
@@ -376,6 +376,11 @@ Delta P_node,H >= 0
 eta = 0
 at least one inequality is strict
 ```
+
+These are ordinal comparisons under `KSC-02`, not quantities licensed for
+addition or multiplication. The historical product `Phi_hat_4 * V_4` is
+retired as a node ranking; a protocol may include it only as an explicit
+candidate after defending cardinal scales.
 
 This is where the framework's chosen dharma reading enters: not as a commandment from
 outside physics, but as the action policy that preserves or raises the

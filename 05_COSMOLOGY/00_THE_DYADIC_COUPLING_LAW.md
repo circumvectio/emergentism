@@ -48,16 +48,19 @@ monotone conjunctive aggregator satisfying
 C(0,V_4)=C(\widehat\Phi_4,0)=0.
 \]
 
-Emergentism selects the normalized product instance
+Emergentism selects the normalized minimum instance
 
 \[
-P_{node}:=C_\times(\widehat\Phi_4,V_4)=\widehat\Phi_4 V_4
+P_{node}:=C_{\min}(\widehat\Phi_4,V_4)=\min(\widehat\Phi_4,V_4)
 \]
 
-for its canonical compression, publicly `P_node=ΦV`. The product expresses the chosen AND-class
-intuition that foresight/coherence and embodied means/viability are jointly
-necessary. It is not uniquely forced; minimum, harmonic, Cobb–Douglas, and
-other conjunctive aggregators can rank states differently.
+for its working score over ordinal factors. The minimum expresses the selected
+AND-class intuition that evaluated possibility and embodied means are jointly
+necessary while preserving order under a common strictly increasing
+reparameterization. The product form `Φ̂₄V₄`, publicly compressed as `ΦV`, is
+retired as a ranking; it remains readable only as the historical name of the
+same conjunction. Harmonic, Cobb–Douglas, and other conjunctive aggregators
+remain alternative models and may rank interior states differently.
 
 “Goodness is the bond” remains an `[I]` metaphor for the declared commitment
 to durable mutual option-capacity. It is not a theorem about every real dyad.

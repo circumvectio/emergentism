@@ -74,16 +74,18 @@ class GrandPuzzleAssemblyTests(unittest.TestCase):
             ):
                 self.assertIn(field, packet, msg=f"GP-MU{index} lacks {field}")
 
-    def test_exactly_eleven_world_contact_sockets(self) -> None:
+    def test_exactly_twelve_world_contact_sockets(self) -> None:
         sockets = re.findall(r"^\| \*\*(GP-\d{2})\*\* \|", self.ledger, re.MULTILINE)
-        self.assertEqual(sockets, [f"GP-{index:02d}" for index in range(1, 12)])
+        self.assertEqual(len(sockets), 12)
+        self.assertEqual(set(sockets), {f"GP-{index:02d}" for index in range(1, 13)})
         self.assertIn("Packet-complete does not mean evidence-complete", self.ledger)
 
     def test_saturation_firewall_contains_proofs_and_countermodels(self) -> None:
         required = (
             "phi*nu = 1",
             "Phi + V <= 1",
-            "P_node <= 1/4",
+            "P_node <= 1/2",
+            "C_product <= 1/4",
             "Phi=1,V=1",
             "F = d(d lambda) = 0",
             "A nonzero constant field strength remains nonzero",
@@ -107,7 +109,7 @@ class GrandPuzzleAssemblyTests(unittest.TestCase):
         frontier = (ROOT / "00_META/00_KNOWN_UNKNOWNS_PROGRAM.md").read_text(
             encoding="utf-8"
         )
-        for index in range(1, 12):
+        for index in range(1, 13):
             self.assertIn(f"GP-{index:02d}", frontier)
         for stale in (
             "Lane B — AI and Practical Alignment",
@@ -123,7 +125,10 @@ class GrandPuzzleAssemblyTests(unittest.TestCase):
             encoding="utf-8"
         )
         socket_rows = re.findall(r"^\| \*\*(GP-\d{2})\*\* \|", board, re.MULTILINE)
-        self.assertEqual(socket_rows, [f"GP-{index:02d}" for index in range(1, 12)])
+        self.assertEqual(len(socket_rows), 12)
+        self.assertEqual(
+            set(socket_rows), {f"GP-{index:02d}" for index in range(1, 13)}
+        )
         for legacy in (
             "GFS Wave 1",
             "Protocol D",

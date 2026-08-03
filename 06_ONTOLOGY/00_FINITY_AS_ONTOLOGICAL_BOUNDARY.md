@@ -23,7 +23,7 @@ rosetta:
 **Status:** Canonical L6 boundary note
 **Date:** 2026-05-30
 **Evidence Tier:** [S] for internal Ground / Being / Dasein distinctions; [I] for the claim that finity is a civilizational discovery comparable to zero and infinity; [A] only for conventional mathematical background when cited separately
-**Depends on:** [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [D6 as Apophatic Closure](00_D6_AS_APOPHATIC_CLOSURE.md), [Axiomatic Ground and Field Structure](01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md), [The Discovery of Finity](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md), [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
+**Depends on:** [Degrees-of-Freedom Ontology](02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md), [Dimensional Register Axioms](07_THE_DIMENSIONAL_REGISTER_AXIOMS.md), [D6 boundary owner](../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md), [Apophatic Ground and Field Structure](01_APOPHATIC_GROUND_AND_FIELD_STRUCTURE.md), [The Discovery of Finity](../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/07_THE_DISCOVERY_OF_FINITY.md), [Canonical Formula Block](../05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md)
 **Kill Criteria:** If the corpus collapses finity into ordinary arithmetic proof, human exceptionalism, a positive D6 science, or a claim that the Ground has been possessed, this note must be revised or demoted.
 
 **Claim Boundary:** Finity names the finite disclosure-site where Being becomes
@@ -62,12 +62,12 @@ Keep three registers distinct:
 | Register | What may be said | Tier |
 |---|---|---|
 | Mathematical background | The Riemann sphere compactifies the complex plane by adding a point at infinity; `0`, finite values, and `∞` can be handled on one extended surface. | [A] when stated conventionally |
-| Framework structure | `Zero-Sum Resolution Equation` and `φ · ν = 1 on S²` read finity as reciprocal closure inside the model. | [S] inside the formalism |
+| Framework structure | The numeric reciprocal chart satisfies `φ · ν = 1`; the separately typed Titan frame uses the operator-free emblem `• ⊙ ○`. | [A] for the chart; [S/I] for the selected emblem |
 | Ontological reading | Presence is not brute fact but disclosed relation; the finite witness is where Being becomes sayable. | [I/S] |
 
-Do not present the framework's `0 × ∞ = 1` compression as ordinary field
-arithmetic. It is the model's symbolic / coordinate grammar for closure, not a
-license to flatten mathematical registers.
+The former mixed-type pole-product compression is retired, not merely moved to
+a symbolic register. Numeric, projective, and Titan terms remain separate, and
+no closure grammar licenses a cross-type equality or operation.
 
 ## Create: Finite Presence Is Relation
 
@@ -96,7 +96,9 @@ Ground -> Being -> Teleological Force -> situated dasein -> disclosed beings
 Capital **Dasein** names all that can coherently and consistently exist across
 possible worlds, registers, and models. A **situated dasein** is a finite D4 witness within that
 whole, in whom Being is encountered, questioned, and enacted. The local witness
-does not exhaust either Dasein or Finity.
+does not exhaust either Dasein or Finity. Dasein is not Being itself, and no person is a Titan term: the
+unit-role glyph may be used as an interpretive motif for a finite witness
+only.
 
 ## Stabilize: The Dimensions of Finity
 

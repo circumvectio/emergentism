@@ -23,7 +23,13 @@ rosetta:
 
 ## What This Folder Is
 
-This folder holds advanced operator manuscripts and higher-order speculative extensions: MF-281 through MF-301 (21 papers). Together with [`../SPHERE_DERIVATIONS/`](../SPHERE_DERIVATIONS/README.md) (MF-63 through MF-70, 8 papers), these 29 papers ARE the **VIVEKA Mathematical Foundations** — the term every paper carries in its footer. The formal-system canon they presuppose lives at [`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
+This folder holds 17 advanced operator manuscripts numbered MF-281 through
+MF-300; MF-290, MF-292, and MF-294 are not present. Together with
+[`../SPHERE_DERIVATIONS/`](../SPHERE_DERIVATIONS/README.md) (7 papers, MF-63
+through MF-69), these are 24 surviving manuscripts from the historical
+**VIVEKA Mathematical Foundations** series. The series name confers no current
+kernel authority. The formal-system canon they presuppose lives at
+[`../../../05_COSMOLOGY/03_FORMAL_SYSTEM/`](../../../05_COSMOLOGY/03_FORMAL_SYSTEM/README.md).
 
 ## Relation to the Coherence Spine
 

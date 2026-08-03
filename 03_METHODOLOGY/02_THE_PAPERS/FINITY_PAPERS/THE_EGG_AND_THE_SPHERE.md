@@ -54,10 +54,11 @@ The two readings may illuminate one another. Neither is necessary, neither
 generates the other, and neither upgrades the analytic identities. Their
 compatibility is an interpretive proposal `[I]`.
 
-The Titan glyph `•   ⊙   ○`, sometimes written `1=0×∞`, is an emblem. In ordinary
-field arithmetic `0·∞` is not well formed because infinity is not a field
-element; in limit calculus it may be an indeterminate form. The emblem is never a proof of genesis or a
-law of reality.
+The Titan display `• ⊙ ○` is an operator-free emblem. The former numeric infix
+version is retired: it crossed Titan, numeric, and projective types. Separately,
+in ordinary field arithmetic a product with infinity is not well formed because
+infinity is not a field element; in limit calculus the corresponding form may
+be indeterminate. The emblem is never a proof of genesis or a law of reality.
 
 ## 3. Attributed and empirical extensions `[B/C]`
 
@@ -104,7 +105,7 @@ The correspondence fails if:
 - the proposed empirical extensions add no predictive value over their nulls;
 - the source programs are shown not to be independent where independence is
   claimed;
-- the mapping requires `0×∞=1` as arithmetic;
+- the mapping requires the retired pole-product as arithmetic or symbolism;
 - either metaphor is treated as a necessary generator of the other; or
 - a value verdict is inferred from symmetry alone.
 

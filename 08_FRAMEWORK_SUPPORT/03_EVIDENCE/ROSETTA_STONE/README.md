@@ -34,6 +34,11 @@ certificate nor evidence for the Emergentist ontology.
   routes settled questions; the named dimension and source owners define their
   claims. The registry creates no doctrine.
 - Source-domain evidence remains with its source. Rosetta transfers no proof.
+- The active ladder is `[A/B/S/I/D/C]`: `[A]` is analytic or machine-checked,
+  `[B]` is source-custodied observation/attribution/build/run/receipt, and the
+  legacy `[E]` marker is retired. Re-tier old mappings claim by claim; never
+  convert `[E]` mechanically or treat the external-mapping purity exemption as
+  an evidence-tier exemption.
 - G7 is a selected D5 game vocabulary, not a universal stage count.
 - `S2BOUNDARY@1:zero_pole` and `S2BOUNDARY@1:infinity_pole` are distinct chart
   boundary markers. They are not `GEN7@1` seats; a mirror is not equality.

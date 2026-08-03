@@ -64,7 +64,9 @@ The framework instead separates actual D4 carriers and events from D5 possible
 content. A present D4 model token can represent D5 alternatives; actual ranking,
 selection, action, and receipts remain D4. The reciprocal chart coordinates
 `φ,ν` and the finite-node factors `Φ,V` are distinct notational systems, and
-`P_node=ΦV` is a selected normalized model rather than a world law.
+`P_node=min(Φ̂₄,V₄)` is the selected ordinal AND-class model rather
+than a world law. The historical product `Φ̂₄V₄` / public `ΦV` is retired
+as a ranking.
 
 The free-will debate maps one axis to the entire sphere and then argues about which axis is "real."
 

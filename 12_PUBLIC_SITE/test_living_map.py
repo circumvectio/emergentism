@@ -26,11 +26,12 @@ VALID_EXECUTION_STATES = {
 }
 VALID_PROGRAM_STATES = {"active", "queued", "deferred"}
 EXPECTED_STATES = {
-    "GP-03": ("packet-complete", "ready-to-freeze", "active"),
+    "GP-03": ("packet-complete", "discriminator-or-nonidentifiability-required", "deferred"),
     "GP-04": ("packet-complete", "ready-to-freeze", "queued"),
     "GP-07": ("component-supported", "new-preregistration-required", "queued"),
     "GP-01": ("packet-complete", "real-domain-freeze-required", "queued"),
     "GP-06": ("component-supported", "composite-test-required", "queued"),
+    "GP-12": ("packet-complete", "ready-to-freeze", "queued"),
     "GP-02": ("component-supported", "fair-D4-baselines-required", "queued"),
     "GP-09": ("deferred", "independent-metric-missing", "deferred"),
     "GP-05": ("packet-complete", "row-by-row-only", "queued"),
@@ -62,9 +63,9 @@ class LivingMapContractTests(unittest.TestCase):
 
     def test_questions_are_unique_complete_and_ordered(self):
         questions = self.contract["openQuestions"]
-        self.assertEqual(len(questions), 11)
-        self.assertEqual({q["id"] for q in questions}, {f"GP-{n:02d}" for n in range(1, 12)})
-        self.assertEqual({q["priority"] for q in questions}, set(range(1, 12)))
+        self.assertEqual(len(questions), 12)
+        self.assertEqual({q["id"] for q in questions}, {f"GP-{n:02d}" for n in range(1, 13)})
+        self.assertEqual({q["priority"] for q in questions}, set(range(1, 13)))
         required = {
             "title", "shortTitle", "registers", "lane", "maturityState",
             "executionState", "programState", "tier", "question",
@@ -82,6 +83,20 @@ class LivingMapContractTests(unittest.TestCase):
                 (question["maturityState"], question["executionState"], question["programState"]),
                 EXPECTED_STATES[question["id"]],
             )
+
+    def test_grand_puzzle_route_is_explicitly_a_weaker_public_projection(self):
+        ledger = (ROOT.parent / "00_META/00_THE_GRAND_PUZZLE_ASSEMBLY_LEDGER.md").read_text(encoding="utf-8")
+        ledger_ids = set(re.findall(r"^\| \*\*(GP-\d{2})\*\* \|", ledger, re.MULTILINE))
+        public_ids = {question["id"] for question in self.contract["openQuestions"]}
+        self.assertEqual(ledger_ids, public_ids)
+        self.assertEqual(len(ledger_ids), 12)
+
+        lab = (ROOT / "lab/index.html").read_text(encoding="utf-8")
+        self.assertIn('id="grand-puzzle-public-boundary"', lab)
+        self.assertIn("public twelve-GP research-queue projection", lab)
+        self.assertIn("does not expose or replace the ledger's assembled spine", lab)
+        self.assertIn("do not state that the ledger's question, rival, discriminator, kill, and survivor packet fields are absent", lab)
+        self.assertIn("Source owners, result receipts, and the evidence-tier contract retain semantic authority.", self.contract["sourceAuthority"])
 
     def test_contract_cannot_become_secret_or_payment_intake(self):
         forbidden_keys = {
@@ -126,6 +141,7 @@ class LivingMapContractTests(unittest.TestCase):
             "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
             "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
             "lab/index.html": {"FIN01-01", "FIN01-02"},
+            "manifesto/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
         }
         bindings = {item["surface"]: item for item in self.parity["surfaceClaims"]}
         self.assertEqual(set(bindings), set(expected))
@@ -156,7 +172,7 @@ class LivingMapContractTests(unittest.TestCase):
         }
         self.assertEqual(atlas["schemaVersion"], 2)
         self.assertEqual(atlas["status"], "current-cleared-surfaces-only")
-        self.assertNotIn("/read/", hrefs)
+        self.assertIn("/read/", hrefs)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(href == f"/{frozen}/" or href.startswith(f"/{frozen}/") for href in hrefs))
         for item in withheld["artifacts"]:

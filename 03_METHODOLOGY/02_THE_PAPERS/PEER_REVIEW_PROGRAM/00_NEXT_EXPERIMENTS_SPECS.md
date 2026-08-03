@@ -13,6 +13,11 @@ rosetta:
 
 **Status:** Specifications, 2026-06-11. These are the three experiments whose *outcomes* would move a load-bearing claim across an evidence tier — written as decision protocols (hypothesis, method, statistic, decision rule, kill criterion), not as results. None is run here. Two need no API; the R2 pilot (separate) needs a key.
 
+> **KSC-02 custody fence (2026-07-29).** Product and exponent forms below are
+> preserved experimental candidates under separately defended cardinal scales.
+> They are not `P_node`, whose selected ordinal definition is
+> `min(Φ̂₄,V₄)`.
+
 **Why these three.** After the 2026-06-11 mass-shell finding and the constrained-optimization reconciliation, the framework's live uncertainty narrows to three forks:
 1. **Where** does the symmetric balance-sphere actually apply? (E1 — the exponent fork)
 2. **Does** the multiplicative structure survive in the *reflexive* register R6 left untested? (E2 — R10's kill criterion)

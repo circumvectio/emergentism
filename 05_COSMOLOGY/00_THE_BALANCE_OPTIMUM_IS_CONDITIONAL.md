@@ -40,18 +40,21 @@ These are identities on the selected chart `[A]`. The product is constant by
 definition; it is not an empirical conservation law, a resource budget, or
 evidence for a real optimum.
 
-The finite-node model uses typed uppercase powers and a present evaluation:
+The selected finite-node model uses typed uppercase powers and a present
+evaluation:
 
 ```text
 Φ₅∈[0,1]                    D5 possible power
 Φ̂₄=Eval₄(M,Φ₅)∈[0,1]      present D4 evaluation
 V₄∈[0,1]                   D4 actual power
-P_node=Φ̂₄V₄,
+P_node=min(Φ̂₄,V₄).
 ```
 
-The public expression `ΦV` abbreviates this typed model; it does not multiply
-an unrealized possibility directly. The product is a selected conjunctive model
-`[I/C]`, not a consequence of the lowercase chart.
+This is an ordinal AND-class score `[I/C]`. The historical public expression
+`ΦV` abbreviates the retired product `C×(Φ̂₄,V₄)=Φ̂₄V₄`; it does not
+multiply an unrealized possibility directly. That product may be tested only as
+a separately cardinal candidate and is not a consequence of the lowercase
+chart.
 
 ## 2. The fixed-sum theorem `[A]`
 
@@ -61,15 +64,16 @@ If a separately declared domain imposes the binding budget
 Φ̂₄+V₄=c,  c>0,
 ```
 
-then AM–GM gives
+then the separately cardinal product candidate gives, by AM–GM,
 
 ```text
-P_node=Φ̂₄V₄≤c²/4,
+C×(Φ̂₄,V₄)=Φ̂₄V₄≤c²/4,
 ```
 
 with equality exactly at `Φ̂₄=V₄=c/2`. Moving away from that point along the
-fixed-sum line lowers the product. The budget premise—not the product and not
-`φν=1`—does the constraining work.
+fixed-sum line lowers that candidate product. For the selected score,
+`P_node=min(Φ̂₄,V₄)≤c/2`, with equality at the same symmetric point. The
+budget premise—not either aggregator and not `φν=1`—does the constraining work.
 
 If the budget is normalized to `c=1`, then `Φ̂₄=1` entails `V₄=0` and
 `P_node=0`. Without the budget, `Φ̂₄=1` entails only `P_node=V₄`. Thus “a
@@ -83,7 +87,8 @@ The equatorial ratio is not universal:
 
 | Domain condition | Consequence |
 |---|---|
-| fixed total budget + symmetric factor prices + complementary product | equal allocation maximizes the declared product |
+| fixed total budget + symmetric factor prices + selected minimum | equal allocation maximizes the selected ordinal score |
+| fixed total budget + symmetric factor prices + separately cardinal product candidate | equal allocation maximizes that declared candidate product |
 | excess can be stored at negligible cost | surplus may create a plateau rather than a downslope |
 | factors substitute | a corner or broad ridge may outperform balance |
 | task rewards specialization | imbalance may be optimal |
@@ -111,7 +116,7 @@ balanced even when the real system's optimum lies elsewhere.
 
 ## 5. Kill criteria
 
-- A fixed-sum, symmetric product model whose maximum is not `c²/4` at
+- A fixed-sum, symmetric product-candidate model whose maximum is not `c²/4` at
   `Φ̂₄=V₄=c/2` would kill the analytic claim.
 - Failure to measure the budget or factor costs kills the empirical transfer,
   not AM–GM.

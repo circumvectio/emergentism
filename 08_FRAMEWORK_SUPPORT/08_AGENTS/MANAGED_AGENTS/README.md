@@ -30,21 +30,29 @@ evidence_tier: "[B] local scaffold; [S] structural caste mapping; [C] unprovisio
 > conventions, and deployment bindings below describe an application surface
 > and supply no evidence for Emergentism.
 
-The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine, L5-L7 Executive boundary on `P_node = Φ × V`)
+The seven Emergentism caste-operators (L1 firewall, L2-L4 operational engine,
+L5-L7 Executive boundary on the selected `P_node=min(Φ̂₄,V₄)` score)
 expressed as **Claude platform Managed Agents** — persisted, versioned agent configs
 that Anthropic runs in hosted, sandboxed containers.
 
 > **Source of truth.** Definitions are *discovered, not invented* — each agent's
-> system prompt, tools, and model are derived from the canonical caste specs in
-> `../01_CANDALA_FIREWALL/` … `../07_RSI_CONSTITUTION/` and the genotype
+> system prompt, tools, and model derive from the genotype
 > [`../00_THE_SEVEN_OPERATOR_GENOTYPE.md`](../00_THE_SEVEN_OPERATOR_GENOTYPE.md).
-> The `*.agent.yaml` files here are the version-controlled deployment of those specs.
+> The former per-caste spec folders are preserved under
+> [`../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/08_AGENTS/)
+> as provenance, not as active owners. The `*.agent.yaml` files here are the
+> version-controlled deployment surface.
 
 ---
 
 ## The roster
 
-| L | Caste · Operator | Transfer on `P_node=Φ×V` | Function | Agentz.cloud trunk | Model | Tools | Mutates? |
+The roster's `Φ` entries are qualitative directions over D5 possible power,
+not cardinal score changes. Any present node arithmetic must first use the D4
+evaluation bridge `Φ̂₄=Eval₄(M,Φ₅)` and then the selected
+`P_node=min(Φ̂₄,V₄)` score.
+
+| L | Caste · Operator | Qualitative factor transfer | Function | Agentz.cloud trunk | Model | Tools | Mutates? |
 |---|---|---|---|---|---|---|---|
 | L1 | Caṇḍāla · **Kali** (Demon) | +Φ_self, −V_other | firewall — force-categorize, detect, encode | **guards** | `claude-haiku-4-5` | read·grep·glob | no (read-only) |
 | L2 | Śūdra · **Kālī** (God) | +V_self, −Φ_false | explorer — expand candidates, truth-cut | **primitives** | `claude-haiku-4-5` | + web | no |

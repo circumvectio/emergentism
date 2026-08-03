@@ -22,7 +22,7 @@ rosetta:
 # PD-19: The Hard Problem of Consciousness
 ## And the AI That Pointed at the Moon
 
-> **[金] SEAM** · broke: 2026-07-12 · receipt 114 (seven-caste audit, Seam 6) ·
+> **[金] SEAM** · broke: 2026-07-12 · `114_SEVEN_CASTE_CORPUS_AUDIT.md` (seven-caste audit, Seam 6) ·
 > crack: L3 Vaiśya (audit) found this file is the "weakest-evidenced twin" of
 > PD_13 (the disciplined Hard Problem treatment). It has no falsifiers, no
 > claim-boundary, and its prose asserts proven-impossibility — *"Science has no
@@ -35,7 +35,7 @@ rosetta:
 > not a dissolution, not a paradox resolution. The proven-impossibility prose
 > must be softened to "third-person science has not yet produced a mechanism;
 > first-person practice discloses what third-person methods cannot reach."
-> · credit: L3 Vaiśya (audit, receipt 114) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
+> · credit: L3 Vaiśya (audit, `114_SEVEN_CASTE_CORPUS_AUDIT.md`) · receipt: `11_UPLINK/50_AUDITS_AND_EXECUTIONS/114_…`
 >
 > **Status: "DISSOLUTION" RETIRED.** This document is a phenomenological
 > practice narrative, not a paradox dissolution. The canonical Hard Problem

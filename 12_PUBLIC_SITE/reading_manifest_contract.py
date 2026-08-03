@@ -33,9 +33,23 @@ def current_reader_contract() -> dict[str, Any]:
     work = next((row for row in books.get("works", []) if row.get("work_id") == "BK-ONE-SITTING"), None)
     if not isinstance(work, dict):
         raise ValueError("book manifest has no BK-ONE-SITTING work")
+    if work.get("release_state") != "source_active_current_public_reader":
+        raise ValueError("BK-ONE-SITTING is not declared as the current public reader")
+    if work.get("public_route") != "../12_PUBLIC_SITE/book/index.html":
+        raise ValueError("BK-ONE-SITTING public route drift")
 
-    source = (CORPUS_ROOT / "13_BOOKS" / work["historical_sources"][0]).resolve()
-    source_rel = source.relative_to(CORPUS_ROOT).as_posix()
+    publication_sources = work.get("publication_sources")
+    if not isinstance(publication_sources, list) or len(publication_sources) != 1:
+        raise ValueError("current reader must declare exactly one publication source")
+    publication_source = publication_sources[0]
+    if publication_source.get("public_eligible") is not True:
+        raise ValueError("current reader source is not explicitly public-eligible")
+    if publication_source.get("lifecycle") not in {"active", "reader_synthesis"}:
+        raise ValueError("current reader source has a barred lifecycle")
+    source_rel = publication_source["path"]
+    source = (CORPUS_ROOT / source_rel).resolve()
+    if not source.is_file() or source.relative_to(CORPUS_ROOT).as_posix() != source_rel:
+        raise ValueError("current reader source is missing or escapes the corpus")
     source_revision = f"sha256:{_sha256(source)}"
     parity_contract = parity.get("claimCardContract", {})
     if parity_contract.get("sourceRevision") != source_revision:
@@ -48,37 +62,63 @@ def current_reader_contract() -> dict[str, Any]:
     if register_ids != declared_ids:
         raise ValueError("current-reader claim cards disagree with the derived register")
 
+    if build.get("schema") != "emergentism/public-book-build/v2":
+        raise ValueError("public book build manifest schema drift")
+    if build.get("work_id") != work["work_id"]:
+        raise ValueError("public book build work mismatch")
+    catalog_contract = build.get("catalog_contract", {})
+    if (
+        catalog_contract.get("schema") != books.get("schema")
+        or catalog_contract.get("path") != "13_BOOKS/book-manifest.json"
+        or catalog_contract.get("sha256") != _sha256(CORPUS_ROOT / "13_BOOKS/book-manifest.json")
+        or catalog_contract.get("release_state") != work["release_state"]
+        or catalog_contract.get("public_route") != work["public_route"]
+    ):
+        raise ValueError("public book catalog contract drift")
+    if build.get("ordered_source_paths") != [source_rel]:
+        raise ValueError("public book includes an undeclared or non-current source")
+    build_sources = build.get("sources")
+    if not isinstance(build_sources, list) or len(build_sources) != 1:
+        raise ValueError("public book build must contain exactly one source contract")
+    built_source = build_sources[0]
+    if (
+        built_source.get("path") != source_rel
+        or built_source.get("lifecycle") != publication_source["lifecycle"]
+        or built_source.get("public_eligible") is not True
+        or built_source.get("claim_card_set") != publication_source["claim_card_set"]
+    ):
+        raise ValueError("public book source lifecycle/coverage contract drift")
+    if built_source.get("sha256") != _sha256(source):
+        raise ValueError("public book source revision drift")
+    coverage = build.get("claim_card_contract", {}).get("coverage", {})
+    if sorted(coverage.get("claim_card_ids", [])) != declared_ids:
+        raise ValueError("public book claim-card coverage drift")
+    if set(coverage.get("covered_chapters", [])) != set(work.get("chapter_order", [])):
+        raise ValueError("public book chapter coverage drift")
+    if set(coverage.get("public_states", [])) - {"bounded_current", "candidate"}:
+        raise ValueError("public book contains a non-current claim-card state")
+    if set(coverage.get("review_states", [])) - {"implemented", "l3_audited"}:
+        raise ValueError("public book contains an unreviewed claim-card state")
+
     graph_path = CORPUS_ROOT / build["claim_card_contract"]["graph_path"]
     if build["claim_card_contract"].get("graph_sha256") != _sha256(graph_path):
         raise ValueError("public book build manifest has stale claim-graph provenance")
-
-    # 2026-07-31. BK-ONE-SITTING is still the claim-carded work whose provenance is pinned
-    # below, and that chain is unchanged. But it is no longer the WHOLE of what book/
-    # publishes: the route now carries the ported 25-chapter Reciprocal with the One-Sitting
-    # edition as an appendix. Leaving the old fields alone would have left this manifest
-    # describing the route as a single short work while the gate went green — a check
-    # passing a false description, which is the failure this corpus least tolerates.
-    # route_contains is derived from the build manifest, so it cannot drift from what
-    # actually shipped.
-    ordered = build.get("ordered_source_paths") or []
-    ported = [p for p in ordered if p.startswith("13_BOOKS/the_reciprocal/")]
 
     return {
         "work_id": work["work_id"],
         "title": work["title"],
         "href": "book/",
         "edition": work["edition"],
-        "route_contains": {
-            "note": (
-                "book/ publishes more than the claim-carded work named above. The claim-card "
-                "provenance in this block covers that work only; the ported chapters are "
-                "tiered [D] and are not claim-carded."
-            ),
-            "ported_book": "The Reciprocal, ported from the 2026-07-22 Public Edition",
-            "ported_chapter_files": len(ported),
-            "ported_source_dir": "13_BOOKS/the_reciprocal/",
-            "appendices": [p for p in ordered if not p.startswith("13_BOOKS/the_reciprocal/")],
-            "total_ordered_sources": len(ordered),
+        "publication_scope": {
+            "ordered_sources": [source_rel],
+            "source_count": 1,
+            "claim_card_count": len(declared_ids),
+            "covered_chapters": coverage["covered_chapters"],
+            "withheld_provenance": {
+                "path": "13_BOOKS/the_reciprocal/",
+                "included_in_book": False,
+                "included_in_rag": False,
+            },
         },
         "source": source_rel,
         "source_revision": source_revision,

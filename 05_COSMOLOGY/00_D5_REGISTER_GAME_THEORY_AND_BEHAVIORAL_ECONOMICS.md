@@ -12,7 +12,7 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[E/S/I/C] mixed"
+  register: "[S/I/C] mixed"
   canonical_phrase: "D5 register"
 ---
 
@@ -23,7 +23,7 @@ rosetta:
 **Status:** Canonical D5 public register
 **Date:** 2026-04-14
 **Amended:** 2026-07-27 — `Φ₅` possible power / `V₄` actual power
-**Evidence Tier:** [E/S/I/C] Mixed -- established disciplines first, Emergentist synthesis second
+**Evidence Tier:** `[S/I/C]` mixed — declared framework structure, interpretation, and conjecture remain separate; named source custody is required before any claim earns `[B]`
 
 > **Anchor Sequence:**
 > ```text
@@ -102,11 +102,12 @@ worldlines. **`V₄` is D4 actual power at the action boundary**: body, tools,
 energy, access, and execution capacity—hands, shovel, industrial digger,
 runway, machine. The option cone is D5 counterfactual content, **never** the
 `c`-bounded physical light cone. A present D4 model token carries the estimate
-`Φ̂₄=Eval₄(M,Φ₅)` used in `P_node=Φ̂₄V₄` (public shorthand `ΦV`). Enacted agency
-couples that D5-facing estimate to D4 power and authorization; neither factor
-alone produces an action. A child beside a jet and an old pilot without the
-needed bodily/tool access are opposite zero-factor failures. The grounding is
-the lookahead reading
+`Φ̂₄=Eval₄(M,Φ₅)` used in the selected ordinal score
+`P_node=min(Φ̂₄,V₄)`. The historical product `Φ̂₄V₄` (public shorthand
+`ΦV`) is retired as a ranking. Enacted agency couples that D5-facing estimate
+to D4 power and authorization; neither factor alone produces an action. A child
+beside a jet and an old pilot without the needed bodily/tool access are opposite
+zero-factor failures. The grounding is the lookahead reading
 
 > **[D] Scope (2026-07-03, staged for review):** "lives only at the equator" binds a real agent only insofar as the agent sits on the sphere — Φ and V conservation-coupled, complementary, and costly-in-excess *symmetrically* (γ-priced); absent that, the equator is geometry without normative force and a specializing agent (division of labor, a foresight-scout paired with a means-heavy executor) may strictly dominate the balanced one. See `00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`.
 
@@ -162,8 +163,10 @@ These stronger claims remain conjectures:
 - If reactive or lower-complexity models predict the specified planning or
   awareness-mediated tasks as well as the declared counterfactual model after
   fair complexity and intervention controls, the first claim is defeated.
-- If a durable institution is shown to persist while systematically violating `η = 0` with no wider-boundary `ΣΔB` or `ΣΔP_node` return, the third claim is falsified.
-- If game theory produces a strategic situation where equatorial balance (`B = sin θ`) or node flourishing (`P_node = Φ × V`) is not even conditionally favored, the second claim weakens to a special case.
+- If a durable institution is shown to persist while systematically violating
+  `η = 0` with no declared wider-boundary balance return and no bearer-wise
+  `P_node(after) ⪰ P_node(before)` return, the third claim is falsified.
+- If game theory produces a strategic situation where equatorial balance (`B = sin θ`) or node flourishing under the selected score (`P_node=min(Φ̂₄,V₄)`) is not even conditionally favored, the second claim weakens to a special case.
 
 The framework may propose stronger unification.
 It may not present that as already settled science.
@@ -220,7 +223,7 @@ D4/D5 content distinction.
 | **Φ₅** | D5 possible power: option-field quality, coverage, discriminability, and coordinability; coherence, trust, legibility, and institutional fit are domain proxies | [I] modal factor, not a standard single variable and not an independent causal force |
 | **Φ̂₄** | present D4 model token's normalized evaluation of `Φ₅` | [S] carrier/content bridge; [I/C] operational measure and fit |
 | **V₄** | D4 actual power at the action boundary: body, tools, energy, access, execution capacity; lowercase `ν` is reserved for the reciprocal chart | [I] translated proxy; ability is not authorization |
-| **P_node = Φ̂₄ × V₄** (public `Φ × V`) | selected conjunctive model coupling evaluated D5 possibility power to D4 enactment power | [I] declared model / [C] real-world fit, not established economics |
+| **P_node = min(Φ̂₄,V₄)** | selected ordinal conjunctive score coupling evaluated D5 possibility power to D4 enactment power; historical product `Φ̂₄V₄` / public `ΦV` retired as a ranking | [I] declared model / [C] real-world fit, not established economics |
 | **moral** | whole gains, individual does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **ethical** | individual gains, whole does not lose, and Justice holds | `[I]` normative predicate; not an economic aggregate |
 | **strict syntropy** | individual and whole both gain under Justice | `[I]` conjunction; aggregate gain cannot replace either term |

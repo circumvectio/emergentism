@@ -8,7 +8,7 @@ rosetta:
   register: "[B/I]"
   canonical_phrase: "Kintsugi tombstone — unified derivation retracted"
 title: "Unified Dimensional Derivation — Kintsugi Tombstone"
-status: "RETRACTED IN PLACE — receipt 126; tombstone repaired 2026-07-17."
+status: "RETRACTED IN PLACE — `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`; tombstone repaired 2026-07-17."
 evidence_tier: "[B] for the recorded formal audit; [I] for the surviving translation grammar."
 original_git_blob: "a4c6c877a852ad42149c0653fed634bbbdeb34c6"
 superseded_by:
@@ -29,8 +29,8 @@ visible seam so old links do not silently become authority.
 1. `{0,1,∞}` is a selected projective normalization, not a forced
    three-element closure.
 2. `φν=1`, `φ+ν≥2`, and `B≤1` are chart facts empty of empirical content.
-3. The AND-class does not uniquely derive `P_node=ΦV`; the product is the
-   selected normalized Emergentist instance.
+3. The AND-class does not uniquely derive `P_node=ΦV`; that product was the
+   formerly selected instance and is now retired as a ranking.
 4. Pairwise prerequisites do not force a total, seven-step decomposition of
    nature.
 5. Missing reduction laws do not prove strong emergence.
@@ -38,7 +38,7 @@ visible seam so old links do not silently become authority.
 7. The four-force bijection fails under electroweak unification.
 8. Formal identities do not entail the Justice postulate or any ethic.
 
-Receipt 126 therefore refuted **unification by derivation**.
+`126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` therefore refuted **unification by derivation**.
 
 ## What survives
 
@@ -47,8 +47,9 @@ Receipt 126 therefore refuted **unification by derivation**.
 - `μ₀…μ₄` as candidate positive-freedom crossing records `[I/C]`;
 - `b₆:D5↝D6` as a non-μ exit-marker edge `[I]`;
 - `r₆:D6↝D0` as an apophatic return `[I]`;
-- `P_node=ΦV` as a declared normalized product model `[I]`, universal fit
-  `[C]`;
+- `P_node=min(Φ̂₄,V₄)` as the selected ordinal AND-class score `[I]`;
+- the historical product `Φ̂₄V₄` / public `ΦV` only as a separately
+  cardinal candidate `[C]`, never the current ranking;
 - the Soul Loop as an operational grammar with separate commitment and outcome
   receipts `[I]`;
 - the Justice-constrained ethic as an avowed normative postulate `[I]`;

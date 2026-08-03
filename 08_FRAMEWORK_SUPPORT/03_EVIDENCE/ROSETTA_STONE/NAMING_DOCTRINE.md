@@ -38,11 +38,12 @@ evidence_tier: "[B] Canonical local naming doctrine."
 
 ---
 
-## The two active D-namespaces
+## The three active D-namespaces
 
-The active Rosetta surface contains two parallel folders that use `D##` for
-independent sequences. A former third, application-bound sequence is preserved
-only in historical custody and has no active naming authority.
+The active Rosetta surface contains three parallel folders that use `D##` for
+independent sequences: `D_SERIES_ROWS/`, `D_SERIES_DOMAINS/`, and
+`D_SERIES_AGENTS/`. A fourth, application-bound constitutional sequence is
+preserved only in historical custody and has no active naming authority.
 
 ### `D_SERIES_ROWS/` — horizontal row-axis cut
 
@@ -60,7 +61,10 @@ D15_ROSETTA_R6_TORUS.md
 
 ### `D_SERIES_DOMAINS/` — per-domain cut
 
-D24–D34: per-domain Rosetta mappings. Each file is **one domain**, mapped across all rows. The domain is the organizing principle (psychology, neuroscience, computation, game theory, etc.).
+D24–D36: per-domain Rosetta mappings. Each file is **one domain**, mapped across
+all rows. D34 is an archived historical projection; the active sequence resumes
+at D35 and D36. The domain is the organizing principle (psychology,
+neuroscience, computation, game theory, etc.).
 
 ```
 D24_PSYCHOLOGY.md
@@ -68,8 +72,16 @@ D25_NEUROSCIENCE.md
 D26_COMPUTATION.md
 D27_GAME_THEORY.md
 D28_MYTHOLOGY.md
-... (through D34)
+... D33_EGREGORES.md
+D35_DAOIST_INTERNAL_ALCHEMY.md
+D36_SUB_SAHARAN_AFRICAN_COSMOLOGY.md
 ```
+
+### `D_SERIES_AGENTS/` — agent-analysis cut
+
+This active namespace is independent of the domain sequence. Its
+`D35_L2_SUDRA_KALI_ANALYSIS.md` therefore does not collide with domain D35;
+the folder names the axis.
 
 ---
 

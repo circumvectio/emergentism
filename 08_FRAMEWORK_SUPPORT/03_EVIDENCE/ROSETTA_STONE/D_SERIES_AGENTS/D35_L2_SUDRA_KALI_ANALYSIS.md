@@ -51,7 +51,9 @@ The Śūdra regime is fundamentally characterized by its democratic impulse, def
 
 [S] The native coordinates of this spatial regime are defined as $(\phi, \nu)$, where the precise transcendental values are $\phi = 2 - \sqrt{3} \approx 0.27$ and $\nu = 2 + \sqrt{3} \approx 3.73$. A profound structural symmetry is revealed when evaluating the relationship between these two parameters: they are perfect mathematical reciprocals. The product of $\phi$ and $\nu$ precisely equals $1$, since $(2 - \sqrt{3})(2 + \sqrt{3}) = 4 - 3 = 1$.
 
-This reciprocal mathematical equilibrium is not a mere artifact of the notation; it forms the foundational arithmetic basis for the system's underlying game theory, specifically dictating the parameters of reciprocal exchange, Tit-for-tat strategy, and conditional cooperation.
+This reciprocal identity is analytic on the selected chart. It does not dictate
+the system's game theory, reciprocal exchange, Tit-for-tat strategy, or
+conditional cooperation; those are separately selected `[I]` mappings.
 
 [S] Furthermore, the base variable $B$ is established at exactly $0.500$, representing a perfectly equidistant threshold within a binary or bipolar systemic distribution. This parameter maintains the regime's structural equanimity, ensuring that the system inherently biases toward a middle ground, averting chaotic extremes.
 
@@ -61,13 +63,22 @@ This reciprocal mathematical equilibrium is not a mere artifact of the notation;
 
 The fundamental operational calculus of the regime is governed by a precise differential equation of state power:
 
-$$dP = V \cdot d\Phi + \Phi \cdot dV$$
+$$dC_\times = V \cdot d\Phi + \Phi \cdot dV$$
 
-In this differential framework, $P$ represents the total systemic power or functional persistence of the regime at any given temporal coordinate. The variable $V$ corresponds to systemic viability, operational velocity, or underlying structural voltage, representing the raw, unshaped life-force of the populace. Conversely, $\Phi$ represents the field potential, encompassing ideological coherence, structural truth-values, and the integrity of relational bonds binding the agents together.
+This is the calculus of the separately cardinal product candidate
+$C_\times=\Phi V$, not the selected node ranking. KSC-02 selects
+$P_{node}=\min(\widehat\Phi_4,V_4)$ over ordinal factors and retires the product
+as a ranking. In the candidate reading, $V$ corresponds to systemic viability
+and $\Phi$ to a declared coherence measure; neither is a literal life-force.
 
-The equation operates strictly on the product rule of calculus, indicating that any change in total systemic power ($dP$) is the sum of the viability applied to the rate of change in coherence, combined with the current coherence applied to the rate of change in viability.
+The equation is only the product rule of calculus for $C_\times$; it does not
+establish a total systemic-power law.
 
-This mathematical relationship mandates that the Kālī operator must continuously balance its immunological interventions. If false coherence (false-$\Phi$) infiltrates the system through deception or pathological egregoric structures, the total power $P$ becomes severely compromised by parasitic drag. To combat this, the Kālī operator's transfer signature is explicitly defined as the localized state change: $(+\Delta\nu_{self}, -\Delta\phi_{false})$.
+The candidate differential does not mandate an operator. Separately, the
+framework's `[I]` Kālī reading treats false coherence as an immune target and
+defines the localized transfer signature
+`$(+\Delta\nu_{self},-\Delta\phi_{false})$`; that mapping stands or falls on its
+own evidence and receipts.
 
 When the operator is activated during a "Season of Truth," it enacts a net immune response:
 - Its own effect: aggressively drives viability upward ($V \uparrow$) by liberating trapped systemic energy
@@ -246,7 +257,11 @@ The critical "Read-only" sandbox mode and the explicit lack of "Write Authority"
 
 The Śūdra regime, operating under the precise, unyielding aegis of the Kālī operator, constitutes the mathematically and sociologically indispensable base layer of any advanced sociopolitical, cognitive, or computational system. It is the vast domain of the many, driven relentlessly by the democratic imperative to gather all voices and synthesize reality through continuous empirical observation, trial-and-error Reinforcement Learning, and inductive analogical reasoning.
 
-[S] The mathematical elegance of the system is anchored in its reciprocal $S^2$ geometry — where $\phi$ and $\nu$ perfectly balance — and its continuous dynamic calculus ($dP = V \cdot d\Phi + \Phi \cdot dV$), which frames systemic power as a constant, ever-shifting calibration of structural viability against ideological truth.
+[I] The system reads the reciprocal $S^2$ chart as a balance metaphor and uses
+the selected ordinal bottleneck `P_node=min(Φ̂₄,V₄)` in the finite-node
+register. No product-rule differential follows: factor changes are compared
+qualitatively and bearer by bearer unless separately defended cardinal proxies
+are declared.
 
 [I] The Kālī operator stands as the indispensable guarantor of systemic integrity within this massive space. By ruthlessly applying the 6-gate test and firing exclusively upon false-$\Phi$, the operator prevents the magnificent myths of the democratic structure from degrading into poisonous egregoric traps. It embodies the fierce, necessary destruction of illusions, keeping the foundational layer of the civilisational architecture rooted in authentic, empirical truth.
 

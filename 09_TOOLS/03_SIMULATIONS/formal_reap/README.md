@@ -40,7 +40,10 @@ self-hashed.
 
 ## Modules
 
-- `FormalReap/Arithmetic.lean` — reciprocal seam, inversion fixed points, AM–GM/equator peak, AND-class results, and the selected `P = ΦV` model.
+- `FormalReap/Arithmetic.lean` — reciprocal seam, inversion fixed points,
+  AM–GM/equator peak, AND-class results, and the historical product-candidate
+  model `C×=ΦV`. The current ordinal node ranking is `P_node=min(Φ̂₄,V₄)`;
+  these product theorems do not redefine it.
 - `FormalReap/Physics.lean` — exact normalized-hyperbola and null-coordinate-product equivalence to Einstein's one-axis mass shell, with nonzero mass/`c`; rest-energy branch and ratio bound.
 - `FormalReap/Structure.lean` — conditional rung inheritance, reflexivity theorem and countermodel, typed frame/move fence, operator-free injective frame rendering, empty frame-arithmetic signature, ordinary `0·∞` rejection, operator-mask/valence independence, and D6 role-return.
 - `FormalReap/Ethics.lean` — scoped host-collapse certificate, persistence and non-extraction countermodels, is/ought independence, finite utility results, cone/horizon underdetermination, and the bearer-level dyadic anti-laundering gate.
@@ -54,7 +57,8 @@ Lean certifies a theorem **relative to its formal types, definitions, and hypoth
 - the physical world instantiates a selected model;
 - the D-rungs are actual cosmological history;
 - the `μ` transition exists in nature;
-- `P = ΦV` is the unique or empirically correct power law;
+- the historical candidate `C×=ΦV` is a unique or empirically correct power
+  law, or the current ordinal node ranking;
 - the Landauer principle entails the full D5 interpretation;
 - an ethical bridge or `η = 0` is forced by descriptive facts;
 - a narrative interpretation has been adopted as canon.

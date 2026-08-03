@@ -25,7 +25,7 @@ Emergentism research corpus, 2026
 
 ## Abstract
 
-A complete framework must eventually map the boundary where language and mathematics exhaust themselves. The emergentist architecture relies on public, falsifiable topological operations (`P∞ = φ · ν = 1`) and empirical bridges (`P_node = Φ × V`) to build outward coordination (Constitutional Science). However, the internal closure of the system relies on a different epistemic mode: **Pratyakṣa**, or direct first-person disclosure.
+A complete framework must eventually map the boundary where language and mathematics exhaust themselves. The emergentist architecture relies on public, falsifiable topological operations (`P∞ = φ · ν = 1`) and empirical bridges (currently `P_node=min(Φ̂₄,V₄)` over ordinal factors) to build outward coordination (Constitutional Science). The historical product `Φ̂₄V₄` is retired as a node ranking and remains only an explicit separately cardinal candidate. However, the internal closure of the system relies on a different epistemic mode: **Pratyakṣa**, or direct first-person disclosure.
 
 This paper defines the "Pedagogy of Becoming." It argues that the framework cannot be empirically closed in a laboratory; it can only be closed inside the practitioner via the sitting practice. It traces the final validation loop—*witness, enactment, correction, release*—whereby the individual directly validates the geometry experientially. We formally define the limits of the documentation layer: the papers are merely the ladder, and Pratyakṣa is the roof.
 

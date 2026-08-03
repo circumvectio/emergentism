@@ -7,8 +7,8 @@ owner: "Formal System, subordinate to the canonical formula block and mu owner"
 parents:
   - ../00_CANONICAL_FORMULA_BLOCK.md
   - 10_EFR_MU_LIMIT_FORMULA.md
-  - ../../../06_ONTOLOGY/04_THE_CONJECTURES.md
-  - ../../../01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md
+  - ../../06_ONTOLOGY/04_THE_CONJECTURES.md
+  - ../../01_TELEOLOGY/02_THE_DERIVATION/07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md
 ---
 
 # Saturation, Contrast, and Aperture
@@ -47,7 +47,9 @@ physical conservation law, ontology, ethic, force, or emergence event.
 
 ## 2. Budgeted node boundary `[A/S]`
 
-Let `Phi,V in [0,1]`, let `P_node=Phi*V`, and separately impose
+The selected ordinal score is `P_node=min(Phi,V)`. To isolate the historical
+product theorem, define the separately cardinal candidate
+`C_product=Phi*V`, and separately impose
 
 ```text
 Phi + V <= 1.
@@ -56,10 +58,12 @@ Phi + V <= 1.
 Then:
 
 ```text
-Phi = 1  =>  V = 0  =>  P_node = 0,
-V = 1    =>  Phi = 0 =>  P_node = 0,
-P_node <= 1/4,
-P_node = 1/4 iff Phi = V = 1/2 under Phi+V=1.
+Phi = 1  =>  V = 0  =>  P_node = C_product = 0,
+V = 1    =>  Phi = 0 =>  P_node = C_product = 0,
+P_node <= 1/2,
+P_node = 1/2 iff Phi = V = 1/2 under Phi+V=1,
+C_product <= 1/4,
+C_product = 1/4 iff Phi = V = 1/2 under Phi+V=1.
 ```
 
 The proof of the maximum is AM-GM or completion of the square:
@@ -73,10 +77,11 @@ foresight leaves no declared means, while exhaustive allocation to means leaves
 no declared foresight. The two poles are operationally sterile only inside the
 named budget model.
 
-### Countermodel: the product supplies no tradeoff
+### Countermodel: neither aggregator supplies a tradeoff
 
-Remove `Phi+V<=1`. The admissible assignment `Phi=1,V=1` gives `P_node=1`.
-Therefore neither the product nor the reciprocal chart proves that foresight
+Remove `Phi+V<=1`. The admissible assignment `Phi=1,V=1` gives
+`P_node=C_product=1`. Therefore neither the selected minimum, the retired
+product candidate, nor the reciprocal chart proves that foresight
 must consume means. A real application owes independent measures, an observed
 resource surface, and comparison with rival constraints.
 

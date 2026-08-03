@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import hashlib
 import copy
+import importlib.util
 import json
 import re
 import tempfile
@@ -20,6 +21,11 @@ REGISTRY_PATH = PACKET_ROOT / "GATE_REGISTRY.json"
 CARDS_PATH = ROOT / "00_META" / "claim_cards" / "finity_practice.yaml"
 DOCKETS_PATH = ROOT / "00_META" / "ADEQUACY_DOCKETS.yaml"
 RECEIPT_PATH = ROOT / "00_META" / "00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md"
+CHECKER_PATH = ROOT / "09_TOOLS" / "01_SCRIPTS" / "check_review_bundle.py"
+CHECKER_SPEC = importlib.util.spec_from_file_location("check_review_bundle", CHECKER_PATH)
+assert CHECKER_SPEC and CHECKER_SPEC.loader
+CHECKER = importlib.util.module_from_spec(CHECKER_SPEC)
+CHECKER_SPEC.loader.exec_module(CHECKER)
 
 REGISTRY_KEYS = {
     "schema",
@@ -55,6 +61,7 @@ GATE_KEYS = {
     "kill_or_revise",
 }
 EXECUTION_KEYS = {"state", "prerequisites", "ready_when"}
+REVIEW_EXECUTION_KEYS = EXECUTION_KEYS | {"provenance_contract"}
 RESULT_CUSTODY_KEYS = {"owner_id", "index", "future_receipt_pattern", "rule"}
 EXTERNAL_KEYS = {
     "participants_contacted",
@@ -103,6 +110,7 @@ EXPECTED_PREREQUISITES = {
     },
     "FPE-REVIEW-01": {
         "bundle_manifest",
+        "complete_review_materials_bundle",
         "conflict_form",
         "reviewer_scope_form",
         "compensation_terms",
@@ -174,10 +182,10 @@ def _bound_external_receipt(
         raise ValueError(f"external_state.{event}: receipt schema or event mismatch")
     if payload["custodian_id"] != record["custodian_id"]:
         raise ValueError(f"external_state.{event}: custodian is not bound in receipt")
-    if not isinstance(payload["external_to_project"], bool):
-        raise ValueError(f"external_state.{event}: external declaration must be boolean")
-    if not isinstance(payload["conflicts_declared"], bool):
-        raise ValueError(f"external_state.{event}: conflict declaration must be boolean")
+    if payload["external_to_project"] is not True:
+        raise ValueError(f"external_state.{event}: external declaration must be true")
+    if payload["conflicts_declared"] is not True:
+        raise ValueError(f"external_state.{event}: conflict declaration must be true")
     if not isinstance(payload["recorded_at"], str) or not payload["recorded_at"].strip():
         raise ValueError(f"external_state.{event}: missing recorded_at")
     return payload
@@ -246,6 +254,21 @@ def validate_lifecycle_evidence(registry: dict, root: Path) -> None:
             execution["state"] != "blocked" or gate["contact_status"] != "deferred"
         ):
             raise ValueError(f"{gate['gate_id']}: incomplete gate is not fail-closed")
+
+    review_gates = [gate for gate in registry["gates"] if gate["gate_id"] == "FPE-REVIEW-01"]
+    if len(review_gates) != 1:
+        raise ValueError("expected one FPE-REVIEW-01 gate for provenance validation")
+    provenance_errors = CHECKER.review_provenance_errors(registry, review_gates[0])
+    if provenance_errors:
+        raise ValueError(provenance_errors[0])
+
+    if any(
+        not isinstance(record, dict) or record.get("state") != "absent"
+        for record in registry["external_state"].values()
+    ):
+        raise ValueError(
+            "registry v4 accepts no external-state evidence without a separately verified ledger"
+        )
 
     receipt_payloads: dict[str, dict] = {}
     for name, record in registry["external_state"].items():
@@ -349,7 +372,7 @@ class FinityPracticeGateTests(unittest.TestCase):
         self.assertEqual(set(self.registry), REGISTRY_KEYS)
         self.assertEqual(
             self.registry["schema"],
-            "emergentism/finity-practice-gate-registry/v2",
+            "emergentism/finity-practice-gate-registry/v4",
         )
         self.assertEqual(
             self.registry["authority"], "routing_only_no_semantic_authority"
@@ -375,7 +398,12 @@ class FinityPracticeGateTests(unittest.TestCase):
             )
         for gate in self.gate_rows:
             self.assertEqual(set(gate), GATE_KEYS, gate["gate_id"])
-            self.assertEqual(set(gate["execution"]), EXECUTION_KEYS, gate["gate_id"])
+            expected_execution_keys = (
+                REVIEW_EXECUTION_KEYS
+                if gate["gate_id"] == "FPE-REVIEW-01"
+                else EXECUTION_KEYS
+            )
+            self.assertEqual(set(gate["execution"]), expected_execution_keys, gate["gate_id"])
 
     def test_ids_are_unique_before_indexing_and_bind_existing_cards_and_dockets(self) -> None:
         gate_ids = [row["gate_id"] for row in self.gate_rows]
@@ -439,18 +467,93 @@ class FinityPracticeGateTests(unittest.TestCase):
             execution = gate["execution"]
             prerequisites = execution["prerequisites"]
             self.assertEqual(set(prerequisites), EXPECTED_PREREQUISITES[gate["gate_id"]])
-            for record in prerequisites.values():
+            for name, record in prerequisites.items():
                 self.assertEqual(set(record), PREREQUISITE_RECORD_KEYS)
-                self.assertEqual(record["state"], "missing")
-                self.assertTrue(
-                    all(
-                        record[key] is None
-                        for key in PREREQUISITE_RECORD_KEYS - {"state"}
+                if gate["gate_id"] == "FPE-REVIEW-01" and name == "bundle_manifest":
+                    self.assertEqual(record["state"], "satisfied")
+                    self.assertEqual(
+                        record["artifact"],
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.json",
                     )
-                )
+                    self.assertEqual(
+                        record["receipt"],
+                        "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4_BINDING_RECEIPT.json",
+                    )
+                    self.assertTrue(
+                        all(
+                            isinstance(record[key], str) and len(record[key]) == 64
+                            for key in ("sha256", "receipt_sha256")
+                        )
+                    )
+                else:
+                    self.assertEqual(record["state"], "missing")
+                    self.assertTrue(
+                        all(
+                            record[key] is None
+                            for key in PREREQUISITE_RECORD_KEYS - {"state"}
+                        )
+                    )
             self.assertEqual(execution["state"], "blocked")
             self.assertTrue(execution["ready_when"].strip())
+            if gate["gate_id"] == "FPE-REVIEW-01":
+                contract = execution["provenance_contract"]
+                self.assertEqual(
+                    contract["schema"], CHECKER.PROVENANCE_CONTRACT_SCHEMA
+                )
+                self.assertEqual(
+                    contract["acceptance"], CHECKER.REVIEW_PROVENANCE_ACCEPTANCE
+                )
+                self.assertEqual(
+                    contract["assignments"], CHECKER.REVIEW_PROVENANCE_ASSIGNMENTS
+                )
+                self.assertEqual(
+                    contract["owner_authority"],
+                    {
+                        "docket_id": "D-OWNER-03",
+                        "state_at_freeze": "unset",
+                        "selection": None,
+                    },
+                )
         validate_lifecycle_evidence(self.registry, ROOT)
+
+    def test_review_provenance_rejects_generic_local_promotion(self) -> None:
+        promoted = copy.deepcopy(self.registry)
+        review = next(
+            gate for gate in promoted["gates"] if gate["gate_id"] == "FPE-REVIEW-01"
+        )
+        execution = review["execution"]
+        digest = hashlib.sha256(RECEIPT_PATH.read_bytes()).hexdigest()
+        for name in EXPECTED_PREREQUISITES["FPE-REVIEW-01"] - {"bundle_manifest"}:
+            execution["prerequisites"][name].update(
+                state="satisfied",
+                artifact="00_META/00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md",
+                sha256=digest,
+                receipt="00_META/00_FINITY_PRACTICE_CLAIM_CARD_SET_01.md",
+                receipt_sha256=digest,
+            )
+        with self.assertRaisesRegex(ValueError, "unset owner authority requires"):
+            validate_lifecycle_evidence(promoted, ROOT)
+
+        static_drift = copy.deepcopy(self.registry)
+        review = next(
+            gate for gate in static_drift["gates"] if gate["gate_id"] == "FPE-REVIEW-01"
+        )
+        review["execution"]["provenance_contract"]["assignments"]["conflict_form"][
+            "kind"
+        ] = "technical_binding"
+        with self.assertRaisesRegex(ValueError, "assignment drifted"):
+            validate_lifecycle_evidence(static_drift, ROOT)
+
+        locally_selected = copy.deepcopy(self.registry)
+        review = next(
+            gate for gate in locally_selected["gates"] if gate["gate_id"] == "FPE-REVIEW-01"
+        )
+        review["execution"]["provenance_contract"]["owner_authority"].update(
+            state_at_freeze="selected",
+            selection={"locally_authored": True},
+        )
+        with self.assertRaisesRegex(ValueError, "v4 accepts only unset owner authority"):
+            validate_lifecycle_evidence(locally_selected, ROOT)
 
     def test_lifecycle_evidence_mutations_fail_closed(self) -> None:
         def cloned() -> dict:
@@ -494,7 +597,7 @@ class FinityPracticeGateTests(unittest.TestCase):
         result_without_receipt["external_state"]["results_exist"].update(
             state="present", custodian_id="CUSTODIAN-UNBOUND"
         )
-        with self.assertRaisesRegex(ValueError, "missing path"):
+        with self.assertRaisesRegex(ValueError, "accepts no external-state evidence"):
             validate_lifecycle_evidence(result_without_receipt, ROOT)
 
         invalid_execution = cloned()
@@ -514,6 +617,20 @@ class FinityPracticeGateTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_root = Path(temp_dir)
+
+            def temporary_registry() -> dict:
+                """External-receipt fixtures use a filesystem containing only fixtures."""
+
+                registry = cloned()
+                record = registry["gates"][1]["execution"]["prerequisites"]["bundle_manifest"]
+                record.update(
+                    state="missing",
+                    artifact=None,
+                    sha256=None,
+                    receipt=None,
+                    receipt_sha256=None,
+                )
+                return registry
 
             def bind_external(
                 registry: dict,
@@ -543,7 +660,7 @@ class FinityPracticeGateTests(unittest.TestCase):
                     custodian_id=custodian,
                 )
 
-            same_custodian = cloned()
+            same_custodian = temporary_registry()
             for event in (
                 "data_collected",
                 "results_exist",
@@ -555,17 +672,17 @@ class FinityPracticeGateTests(unittest.TestCase):
                     "CUSTODIAN-SAME",
                     external=event == "independent_replication_exists",
                 )
-            with self.assertRaisesRegex(ValueError, "matches original custody"):
+            with self.assertRaisesRegex(ValueError, "accepts no external-state evidence"):
                 validate_lifecycle_evidence(same_custodian, temp_root)
 
-            internal_replication = cloned()
+            internal_replication = temporary_registry()
             bind_external(internal_replication, "data_collected", "CUSTODIAN-DATA", external=False)
             bind_external(internal_replication, "results_exist", "CUSTODIAN-RESULT", external=False)
             bind_external(internal_replication, "independent_replication_exists", "K-7", external=True)
-            with self.assertRaisesRegex(ValueError, "internal project custody"):
+            with self.assertRaisesRegex(ValueError, "accepts no external-state evidence"):
                 validate_lifecycle_evidence(internal_replication, temp_root)
 
-            missing_conflict_declaration = cloned()
+            missing_conflict_declaration = temporary_registry()
             bind_external(missing_conflict_declaration, "data_collected", "CUSTODIAN-DATA", external=False)
             bind_external(missing_conflict_declaration, "results_exist", "CUSTODIAN-RESULT", external=False)
             bind_external(
@@ -575,8 +692,45 @@ class FinityPracticeGateTests(unittest.TestCase):
                 external=True,
                 conflicts=False,
             )
-            with self.assertRaisesRegex(ValueError, "lacks conflict disclosure"):
+            with self.assertRaisesRegex(ValueError, "accepts no external-state evidence"):
                 validate_lifecycle_evidence(missing_conflict_declaration, temp_root)
+
+    def test_external_receipt_flags_cannot_be_false(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+
+            def record_for(*, external: bool, conflicts: bool) -> dict:
+                payload = {
+                    "schema": self.registry["external_custody_contract"]["receipt_schema"],
+                    "event": "reviewers_engaged",
+                    "custodian_id": "EXTERNAL-CUSTODIAN",
+                    "external_to_project": external,
+                    "conflicts_declared": conflicts,
+                    "recorded_at": "2026-08-02T00:00:00Z",
+                }
+                target = root / "reviewers_engaged.json"
+                target.write_text(json.dumps(payload, sort_keys=True), encoding="utf-8")
+                return {
+                    "state": "present",
+                    "receipt": target.name,
+                    "receipt_sha256": hashlib.sha256(target.read_bytes()).hexdigest(),
+                    "custodian_id": "EXTERNAL-CUSTODIAN",
+                }
+
+            with self.assertRaisesRegex(ValueError, "external declaration must be true"):
+                _bound_external_receipt(
+                    root,
+                    record_for(external=False, conflicts=True),
+                    "reviewers_engaged",
+                    self.registry["external_custody_contract"]["receipt_schema"],
+                )
+            with self.assertRaisesRegex(ValueError, "conflict declaration must be true"):
+                _bound_external_receipt(
+                    root,
+                    record_for(external=True, conflicts=False),
+                    "reviewers_engaged",
+                    self.registry["external_custody_contract"]["receipt_schema"],
+                )
 
     def test_gate_and_docket_dependency_graphs_are_valid_and_acyclic(self) -> None:
         gate_graph = {row["gate_id"]: row["depends_on"] for row in self.gate_rows}
@@ -607,7 +761,7 @@ class FinityPracticeGateTests(unittest.TestCase):
         lines = source.read_text(encoding="utf-8").splitlines()
         expected = {
             "FIN01-01": {
-                "locator": {"section": "3B", "line_start": 129, "line_end": 148},
+                "locator": {"section": "3B", "line_start": 131, "line_end": 150},
                 "markers": (
                     "## 3B. The Finity Card",
                     "**Finity Card**",
@@ -617,7 +771,7 @@ class FinityPracticeGateTests(unittest.TestCase):
                 ),
             },
             "FIN01-02": {
-                "locator": {"section": "3B", "line_start": 150, "line_end": 156},
+                "locator": {"section": "3B", "line_start": 152, "line_end": 158},
                 "markers": (
                     "selected practice `[S]`",
                     "remains `[C]`",

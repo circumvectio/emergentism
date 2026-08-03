@@ -5,342 +5,203 @@ rosetta:
   operator: "Brahmā ○"
   tier: "Executive"
   regime: "Brāhmaṇa"
-  register: "[A] the sphere structure and its identities; [I] the Titan reading; [C] the set-theoretic second reading"
-title: "The Titan Inversion Structure — the three equations restored on the sphere"
-status: "ACTIVE — owner-directed restoration 2026-07-29; reconciles the three Titan equations with KSC-04"
-date: 2026-07-29
-owner: "Formal owner for the Titan inversion identities; subordinate to K-1 for chart facts"
-evidence_tier: "[A] §2–§6 inside the declared structure; [I] the Titan naming; [C] §8"
+  register: "[A] typed reciprocal and projective facts; [I] the separate Titan reading"
+title: "Typed Inversion Neighbors — reciprocal chart, projective sphere, and sovereign Titan frames"
+status: "ACTIVE TYPE-CORRECTION NOTE — former Titan equations superseded 2026-08-01; KSC-04 controls"
+date: 2026-08-01
+owner: "Subordinate typed-neighbor note; Titan canon owns TitanFrame, K-1 owns chart facts"
+evidence_tier: "[A] §§3–7 inside named numeric/projective structures; [S/I] selection and interpretation; no Titan arithmetic"
 parents:
   - 00_THE_TRANSCENDENTAL_TRINITY_CANON.md
   - ../00_CANONICAL_FORMULA_BLOCK.md
+  - ../03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md
   - ../03_FORMAL_SYSTEM/42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
   - ../../00_META/00_SETTLED_CANON_REGISTRY.md
 ---
 
-# The Titan Inversion Structure
+# Typed Inversion Neighbors
 
-> The three equations were never wrong. They were **untyped** — and they were
-> being read on the wrong object. On the line they are forbidden. On the sphere
-> they are theorems.
+> **Type correction, 2026-08-01.** The prior edition claimed that three infix
+> expressions over Titan glyphs became theorems on the Riemann sphere. That is
+> false: changing the ambient object does not define multiplication or division
+> on `TitanFrame`, and the Riemann sphere has no global field operation. The
+> valid neighbors survive below with separate names and types. Exact prior bytes
+> remain recoverable at parent commit `b7e0d00d` and are adjudicated by Receipts
+> 234–235; the invalid syntax is historical conflict evidence, not active canon.
 
-## 1 · The three equations
-
-```text
-⊙ = • × ○
-• = ⊙ / ○
-○ = ⊙ / •
-```
-
-Owner ruling, 2026-07-29: foundational. This document supplies the structure in
-which they are exact.
-
-## 2 · The object is the Riemann sphere `[A]`
-
-Not the line. The line is where they fail; the sphere is where they hold.
+## 1 · The controlling boundary `[S]`
 
 ```text
-Ĉ := ℂP¹ = ℂ ∪ {∞}          the Riemann sphere
-ι(z) := 1/z                  inversion, extended by ι(0)=∞, ι(∞)=0
+TitanFrame := 0_T | 1_T | ∞_T
+ArithmeticSignature(TitanFrame)=∅
+
+NoCoercion(TitanFrame, Number)
+NoCoercion(TitanFrame, ProjectivePoint)
 ```
 
-Under stereographic projection:
+`TitanFrame` is an opaque metaframe vocabulary. Equality of same-typed terms and
+rendering are lawful; arithmetic, logarithms, group operations, and implicit
+conversion are not. The operator-free emblem `•  ⊙  ○` is an `[I]` display of
+three selected roles. A familiar glyph never supplies a mathematical map.
 
-| Seat | Location on `Ĉ` | Character |
+The mathematical neighbors use distinct tokens:
+
+| Type | Tokens used here | Lawful structure |
 |---|---|---|
-| `•` | south pole, `z = 0` | a **point** of `Ĉ` |
-| `○` | north pole, `z = ∞` | a **point** of `Ĉ` |
-| `⊙` | the equator, `\|z\| = 1` | the circle equidistant from both poles |
+| positive reals | `x, φ, ν, 1_N` | ordinary multiplication, reciprocal, logarithm |
+| projective points | `0_P, ∞_P, [z:1]` | Möbius maps and topology after named extension |
+| Titan metaframe | `0_T, 1_T, ∞_T` | same-type equality, rendering, selected roles only |
 
-`ι` is an involution on `Ĉ`. It **swaps the poles** and maps the equator to
-itself: `|z|=1 ⟹ |ι(z)|=1`. So the Titan triple is precisely the orbit
-structure of inversion on the sphere — one invariant circle, one swapped pair of
-poles.
+## 2 · The selected object is the Riemann sphere `[A/S]`
 
-The glyph is the picture: `○` the outline, `•` the point, `⊙` the circle holding
-its centre.
-
-## 3 · "The limit crossed, not approached" — this is the load-bearing move `[A]`
-
-On the real line, `∞` **is not an element**. It is a divergence: `lim_{x→0} 1/x`
-does not exist, and doc 42 types it `diverges`. Arithmetic can only ever
-*approach*. It never arrives, because there is nothing there to arrive at.
-
-Compactification changes that. Adjoining the point at infinity is exactly the
-act of **crossing the limit rather than approaching it** — the limit stops being
-a behaviour and becomes an object:
+The framework selects
 
 ```text
-in ℝ      ∞ is a limit          — approached, never reached, not an element
-in Ĉ      ∞ is a point          — an element, with neighbourhoods and a location
+Ĉ := ℂP¹
 ```
 
-So the owner's distinction is a type distinction, and canon already carries it:
-`0_T ≠ 0_N`, and `∞_P` is "a projective point only in a named extension." The
-Titans are **not** the `0` and `∞` that arithmetic sees, because arithmetic
-never sees `∞` at all. They are what those limits become once crossed.
+as its primary projective chart `[S]`. The object and its standard geometry are
+mathematical `[A]`; its priority and philosophical use are selected.
 
-This explains `ArithmeticSignature(TitanFrame) = ∅` rather than merely obeying
-it. Arithmetic is the line; the Titans are the sphere. They are not operands
-because they are not *there* — not on the object where the operations live.
-
-## 4 · The equations are theorems `[A]`
-
-**`• = ⊙/○` and `○ = ⊙/•`.** These say the poles are mutual images under `ι`:
-`ι(∞) = 0` and `ι(0) = ∞`. On `Ĉ` these are **genuine point equations**, not
-limits. They are already current canon — the Trinity canon states
-`f_1(0) = ∞`, `f_1(∞) = 0`, and calls the statement exact.
-
-**`⊙ = • × ○`.** Take canon's own chart. For `θ∈(0,π)`,
+On the affine chart, the reciprocal rational map extends to a Möbius
+transformation:
 
 ```text
-ν = tan(θ/2)      φ = cot(θ/2)      φ · ν = 1
-θ → 0      ν → •,  φ → ○
-θ = π/2    ν = φ = 1                the equator ⊙
-θ → π      ν → ○,  φ → •
+ι_P([z:w]) := [w:z]
+ι_P(0_P)=∞_P
+ι_P(∞_P)=0_P
 ```
 
-`θ` is colatitude on the sphere: the poles are `θ∈{0,π}`, the equator is
-`θ=π/2`. The polar pair is coupled by `ι` at every latitude, and their product
-is `1` at every latitude — **identically, including in both polar limits**.
+This is a map between projective points. It is not division by a Titan term and
+does not turn either projective endpoint into a number.
 
-> The product of the two polar coordinates equals the equatorial value, at every
-> latitude and in the limit. That is `φν = 1`, and it is `⊙ = • × ○`.
+Under stereographic coordinates, `ι_P` swaps the two projective poles and
+preserves the unit circle as a set. Its fixed points on the full sphere are the
+ordinary projective points represented by `+1_N` and `−1_N`; on the positive
+ray, only `+1_N` remains.
 
-## 5 · Why no indeterminate form arises `[A]`
+## 3 · Compactification crosses a type boundary `[A]`
 
-`0 × ∞` is indeterminate only when the factors are **free**. Here they are not:
-`•` and `○` are the two ends of one `ι`-orbit, so the only admissible path is
-`ν·φ = 1`. Along it the product is constant.
-
-**Constraint removes indeterminacy.** The indeterminacy of `0 × ∞` was never a
-fact about `0` and `∞`; it was a fact about *unconstrained approach*. Bind the
-pair by inversion and the value is `⊙` everywhere.
-
-## 6 · The associativity falsifier does not reach the sphere `[A]`
-
-The Trinity canon retires the infix form by assuming (i) `0×∞=1`,
-(ii) `a×∞=∞` for finite nonzero `a`, (iii) associativity, then deriving
-`(0×∞)×2 = 2` against `0×(∞×2) = 1`.
-
-That argument is valid, and its conclusion stands for what it addresses: **no
-ring or field extension admits those three premises together.**
-
-**It was over-engineered.** Receipt 182 (2026-07-29) machine-checked the sharper
-finding: premise (i) `0·w = 1` *alone* collapses any nontrivial ring, because
-`0·w = 0` holds in every ring, so `0·w = 1` forces `1 = 0`
-(`falsifier_premise_impossible`). The associativity machinery was a heavier
-instrument than the job required. And premise (ii) `a·∞ = ∞` is independently
-unavailable: `∞` would absorb addition (`∞ + 1 = ∞`), and `w + 1 = w` forces
-`1 = 0` in any nontrivial ring (`no_additive_absorber`,
-`no_absorber_in_nontrivial_ring`). Both refutations are sharper than the
-corpus's own argument; both are axiom-free. The "associativity falsifier" name
-is now historical — the falsifier was always about a ring, and the ring is dead
-on contact, no associativity required.
-
-It does not reach §2, because **`Ĉ` is not a ring.** The Riemann sphere is a
-complex manifold with a Möbius group action; global multiplication is simply not
-one of its operations. Premise (ii) is not a rule available on `Ĉ`, so the
-derivation never starts. The falsifier refutes a ring; we are not on a ring.
-
-**KSC-04 survives untouched.** `ArithmeticSignature(TitanFrame) = ∅` remains
-literally true, and §3 now explains *why*. The prohibition and the equations are
-not in tension: the prohibition governs the line, the equations govern the
-sphere. Both stand.
-
-## 7 · What this identifies, and the fence it inherits `[S]`
+In `ℝ`, infinity is not an element. In the projective extension, `∞_P` is a
+point with declared neighborhoods. The extension is explicit:
 
 ```text
-φ · ν = 1        is        ⊙ = • × ○
+ℝ or ℂ                  arithmetic carrier
+ℝP¹ or ℂP¹              projective extension
 ```
 
-One identity, two notations: `φ,ν` name the coupled interior coordinates, `•,○`
-name the poles they run to, `⊙` names the equator that is their invariant. The
-excluded poles `θ∈{0,π}` of the chart are exactly the two Titan seats.
+Arithmetic does not reach an endpoint by running longer. A new structure is
+declared. This is why ordinary division by zero stays undefined while
+`ι_P(0_P)=∞_P` remains a lawful projective-map statement.
 
-The consequence runs **both ways**, and the second direction is binding:
+Compactification does not convert a Titan frame into a projective point. The
+two types may be placed in an interpretive diagram only with the no-coercion
+fence visible.
 
-- the Titan equation inherits the keel's tier — `[A]`, analytic, exact;
-- the Titan equation inherits the keel's fence — **analytic and empty of world.**
+## 4 · The reciprocal chart `[A]`
 
-`⊙ = • × ○` licenses no ontology, no ethic, no conservation law, and no
-node-power result. `DF-21`/CC-CORE-1 applies to it verbatim. A restored identity
-is not a restored warrant.
-
-### 7.1 The three-step ladder this exposes `[A]`
-
-| Object | dim over `ℝ` | Order | `∞` |
-|---|---|---|---|
-| `ℝ` | 1 | totally ordered, formally real | not an element |
-| `ℝP¹` | 1 | cyclic only — total order lost | a point |
-| `Ĉ = ℂP¹` | 2 | no compatible order | a point |
-
-Two independent crossings, not one: **order is lost at `ℝ→ℝP¹`** while dimension
-is still 1, and **dimension is gained at `ℝP¹→Ĉ`**. The Titans become points at
-the first crossing; the sphere arrives at the second. This is the live tension
-with `KSC-22` flagged on 2026-07-29, and it is sharpened rather than resolved
-here.
-
-## 7A · The centre and the boundary — `⊙` decomposed `[A]`
-
-Owner refinement, 2026-07-29: `⊙` is not one thing. The glyph is a **dot inside
-a circle**, and both parts carry weight — *"the point at the centre is 1 … and
-the circle around it is the boundary, the limit constantly approached but never
-crossed."*
-
-Suda's hinge coordinate makes this exact. On the positive ray,
+For `θ∈(0,π)`, define positive numeric coordinates
 
 ```text
-u = (x−1)/(x+1)          x = (1+u)/(1−u)
-x = 1   ↦  u = 0         x → 0  ↦  u → −1        x → ∞  ↦  u → +1
-inversion  x ↦ 1/x   becomes   u ↦ −u
+ν := tan(θ/2)
+φ := cot(θ/2)
 ```
 
-The image of `ℝ₊` is the **open** interval `(−1, +1)`. The rims `u = ±1` are
-**not attained**. That is the precise content of "approached but never crossed":
-from inside the multiplicative line, the boundary is asymptotic — not because
-the traveller is slow, but because the rim is not in the image.
-
-Its complex form seats both Titans on the circle. The Cayley map
-`u = (z−1)/(z+1)` sends `Ĉ → Ĉ` with
+Then
 
 ```text
-1 ↦ 0          the centre — the dot
-0 ↦ −1         •  on the boundary circle
-∞ ↦ +1         ○  on the boundary circle,  antipodal to •
+φν=1
+φ+ν≥2
+B=2/(φ+ν)≤1
 ```
 
-So under this chart the glyph is the geometry: **`⊙`'s dot is the unit `1`, and
-`⊙`'s circle is the boundary on which `•` and `○` sit at opposite ends.**
+throughout the open chart. As `θ` approaches either boundary, one coordinate
+approaches zero and the other diverges, while the **coupled numeric product**
+remains one. This is a statement about a limit of the interior function. It is
+not a pointwise product of `0_P` and `∞_P`, and it is not a Titan equation.
 
-### The two limits are not in conflict `[A]`
+At `θ=π/2`, `φ=ν=1_N`. That places a positive numeric fixed point on the
+selected equatorial longitude; it does not identify `1_N` with the whole
+equator or with `1_T`.
 
-| | Register | The boundary is |
-|---|---|---|
-| from **inside** finity (`ℝ₊`, arithmetic) | field / multiplicative line | **approached, never crossed** — the rims are outside the image |
-| by **declared register change** (compactification) | `Ĉ`, closure `[−1,+1]` | **crossed** — the rims become points |
+## 5 · Why the former equations do not type-check `[A/S]`
 
-Both statements hold, and canon already carries the rule joining them. Doc 42
-closes with it:
+The Riemann sphere is a complex manifold carrying Möbius transformations. It is
+not a field: no global multiplication or division extends the affine field laws
+over the projective endpoint while preserving those laws.
 
-> *"The boundary is crossed by changing the structure explicitly, never by
-> making an undefined field expression secretly denote a new number."*
+Consequently:
 
-Arithmetic never crosses. Only a declared change of structure does. §3's
-"crossed, not approached" describes the second row; this section describes the
-first. They are the two faces of one boundary.
+- swapping `0_P` and `∞_P` is expressed by `ι_P`, not by a quotient;
+- the interior identity `φν=1_N` is numeric and remains on its open domain;
+- the coupled boundary limit is not an endpoint multiplication;
+- none of these facts defines an operation on `TitanFrame`.
 
-### Why centre and boundary are kin `[A]`
+The earlier claim did not become true after better interpretation. It was a
+type error. What survives is the topology of a swapped pair, an invariant
+circle, a reciprocal chart, and an optional philosophical reading.
 
-Under the involution `ι`, exactly two things do not move:
+## 6 · The meridian and chart-local arithmetic `[A]`
+
+The extended real line `ℝ∪{∞_P}` is a great circle on `Ĉ`, invariant under
+`ι_P`, and carries both numeric fixed points. It is therefore an invariant
+meridian of the selected sphere.
+
+Order, signed magnitude, and ordinary field operations live on named affine
+subcharts. Arithmetic is **chart-local**. Sphere selection does not revoke the
+line; it embeds a projective extension of it as one distinguished circle.
+
+## 7 · Midpoint witnesses `[A/S]`
+
+On the positive ray, reciprocal symmetry selects `1_N` as the unique fixed
+point. In log coordinate `s=log x`, reciprocal inversion becomes `s↦−s`, so the
+same point is written `s=0`. These are two presentations of one fact.
+
+### 7A · The finite hinge witness
+
+Define
 
 ```text
-ι fixes the centre   pointwise      ι(1) = 1
-ι fixes the boundary setwise        |u| = 1  ↦  |u| = 1        (• ↔ ○)
+u(x)=(x−1)/(x+1)
 ```
 
-Everything else is displaced. The centre and the boundary are **the two
-invariants of the inversion** — which is the honest structural kinship behind
-the owner's ātman/brahman reading. It is a shared invariance, not an identity,
-and it proves nothing about either tradition (§8, `KSC-12`).
+for `x∈ℝ₊`. Its image is the open interval `(-1,+1)`, and `u(1_N)=0`.
+The two bounds are equally one unit from the center. They are not attained
+until the target is compactified. This finite statement needs no multiplication
+of boundary points and no equality between a numeric bound and a Titan term.
 
-### `1` is centre in a precise and limited sense `[A]`
+The unit is not an arithmetic or geometric average of projective endpoints.
+It is the positive reciprocal fixed point in the named chart.
 
-Suda's own formulation, adopted: *"If you measure by addition, zero looks like
-the origin. If you measure by reciprocity, one is the origin."* Sharpened:
+## 8 · Interpretive seats transfer no proof `[I]`
 
-```text
-1 is the additive GENERATOR of ℕ⁺       n_N = 1_N + … + 1_N
-1 is the multiplicative ORIGIN          log 1 = 0; unique fixed point of ι
-0 is the additive origin
-```
+Emergentism may read its three operator-free Titan roles alongside absence,
+finite articulation, and horizon/totality. It may also compare those roles with
+projective or set-theoretic neighbors. Every such comparison is a lens:
 
-Both roles at once — generator on one line, origin on the other — is why `1`
-looks like the point "from which the rest emerges."
+- no Titan role becomes a point, set, class, number, or group element;
+- no agreement between lenses counts as independent evidence;
+- no mathematical neighbor forces the selected three-role vocabulary;
+- no analytic fact licenses ontology, ethics, cosmology, or node power.
 
-**The fence.** It does not emerge *all* the rest. Doc 42 is explicit that each
-extension solves a **named closure or completion problem**, and none is
-generated by `1` alone:
+Calling the roles Titans or finity remains `[I]`. The mathematical statements
+above remain true without that vocabulary.
 
-| Extension | What it needs beyond `1` |
-|---|---|
-| `0_N` | explicit adjoining; it is not a multiplicity of the unit |
-| negatives | the oriented **pair** `{+1_N, −1_N}`, opened together |
-| `ℚ` | division / localization |
-| `ℝ` | completion — uncountably many new elements, non-generative |
-| `ℂ` | loss of formal reality (`−1` becomes a sum of squares) |
-
-"All the rest emerges from `1`" is exact for `ℕ⁺` under addition and is a
-**declared ladder of constructions** thereafter. That distinction is the
-difference between a theorem and a creation myth.
-
-## 8 · The Sanātana Dharma reading `[I]`
-
-| Seat | Name | Reading |
-|---|---|---|
-| `•` | the uncountable / true zero | absence of everything, therefore holding the potential of everything and every relation |
-| `⊙` | finity | what can exist and be collected, not counting self-reference |
-| `○` | true infinity | the self-referential totality; the barber who does not shave himself |
-
-Vocabulary at `[I]`, needing no mathematical warrant. Two notes are owed.
-
-### 8.1 A collision inside the naming `[A]`
-
-`⊙` is glossed as *"the set of all sets that does not include itself"* and `○`
-as *"the set that includes the fact that it doesn't include itself."* These name
-the **same object** — Russell's class `R = {x : x ∉ x}` — seated twice. And
-`KSC-22` records that `R` is not a set in ZF-style theory at all, so seating
-finity on it would seat it on something that provably does not exist.
-
-### 8.2 The repair, which keeps the intent `[A]`
-
-The **set / proper-class** distinction of NBG does exactly the intended work:
-
-| Seat | Rigorous object | Why it fits |
-|---|---|---|
-| `•` | `∅` | every pure set in the cumulative hierarchy is generated from `∅` alone — *absence containing all potential* is a **theorem**, not a metaphor |
-| `⊙` | **sets** | exactly the classes that can be members of others: bounded, collectible — finity |
-| `○` | **proper classes**, canonically `V` | totalities that cannot be members of anything; `V ∉ V` |
-
-And the barber lands precisely. Under Foundation no set is a member of itself,
-so every set satisfies `x ∉ x`, and therefore
-
-```text
-R = {x : x ∉ x} = V
-```
-
-**Russell's class *is* the universal class.** The paradox is not an obstacle to
-route around — it is the proof that `○` is a proper class rather than a set,
-which is exactly "the true infinity that includes the fact that it does not
-include itself." The intent survives on a theorem.
-
-### 8.3 The fence between §2 and §8 `[S]`
-
-The sphere structure and the set-theoretic reading are **two different
-structures**. Their agreement is not evidence for either.
-
-`DF-15` is buried for this exact error: fifteen renderings of one shape are one
-datum, not fifteen confirmations. Two elegant readings of one triple are **one
-datum**. Both may be used; neither may be cited as support for the other, and
-their convergence may never be presented as confirmation.
-
-## 9 · Claim and kill discipline
+## 9 · Claims and kills
 
 | Claim | Tier | Kill |
 |---|---|---|
-| `ι` swaps the poles of `Ĉ` and preserves the equator | `[A]` | error in the stated maps |
-| `• = ι(○)`, `○ = ι(•)` as point equations on `Ĉ` | `[A]` | same |
-| `⊙ = • × ○` via `φν=1` at every latitude and both polar limits | `[A]` | exhibit an admissible coupled path on which the product is not `1` |
-| compactification is "the limit crossed, not approached" | `[A]` | show `∞` is an element of `ℝ` |
-| the associativity falsifier does not reach `Ĉ` | `[A]` | exhibit a global ring multiplication on `Ĉ` |
-| `φ·ν=1` and `⊙ = • × ○` are one identity | `[S]` | show the coordinatizations are not the same orbit |
-| order-loss and dimension-gain are two crossings | `[A]` | show `ℝP¹` is totally ordered or 2-dimensional |
-| `•,⊙,○` ↦ `∅`, sets, proper classes | `[A]` objects / `[I]` seating | a seat requires an object that is not a class in the declared theory |
-| Titans remain non-operands (`KSC-04`) | `[S]` | any use of `•` or `○` as a free argument to an arithmetic operation |
+| `ι_P` swaps `0_P` and `∞_P` and preserves the unit circle | `[A]` | an error in the declared projective map |
+| the reciprocal product is one on the open chart | `[A]` | a value in the declared domain violates it |
+| the coupled boundary limit remains one | `[A]` | either one-sided limit differs |
+| endpoint multiplication is not thereby defined | `[A]` | a lawful global field extension over `Ĉ` is exhibited |
+| the extended real line is an invariant meridian | `[A/S]` | a real point maps outside it, or the selected embedding changes |
+| `1_N` is the unique positive reciprocal fixed point | `[A]` | a second positive solution |
+| Titan and mathematical neighbors remain disjoint | `[S]` | any active owner supplies a coercion or Titan arithmetic signature |
+| the three-role interpretation remains useful | `[I]` | it stops compressing and instead causes recurring category errors |
 
-**What this document does not do.** It derives no ontology, ethics, cosmology,
-or D-ladder from the three equations. It makes `•` and `○` numbers on no object.
-It does not upgrade `φ·ν=1` beyond analytic. It restores three identities to
-exactness and leaves them as empty of world as the keel they duplicate.
+**World fence.** Everything mathematical here is internal to declared
+structures. It is empty of world: no empirical observation, independent
+replication, ontology, ethic, or physical mechanism follows.
 
-•   ⊙   ○ — *two poles the inversion swaps, one circle it cannot move.*
+•   ⊙   ○ — *operator-free roles beside, never inside, the mathematics.*

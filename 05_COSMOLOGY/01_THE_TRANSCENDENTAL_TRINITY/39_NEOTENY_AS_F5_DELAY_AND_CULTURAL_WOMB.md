@@ -25,16 +25,17 @@ rosetta:
 
 **Status:** Canonical Rosetta L5 synthesis note
 **Date:** 2026-05-30
-**Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the Power-Max / `P_node = Φ × V` conditional inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims
+**Evidence Tier:** [A] for broad comparative-biology observations when source-backed in public-facing work; [S] for the declared Power-Max / `P_node=min(Φ̂₄,V₄)` conditional inside the framework; [I] for the neoteny-as-F5-delay synthesis; [C] for AI-alignment transfer claims. The historical product `Φ̂₄V₄` / public `ΦV` is retired as a ranking.
 **Depends on:** [36 The Dimensional Trophic Cascade](36_THE_DIMENSIONAL_TROPHIC_CASCADE.md), [Tantric Transmutation — current interpretive source](../../01_TELEOLOGY/00_THE_TANTRIC_VAJRAYANA_TRANSMUTATION.md), [D4-D5 Canonical Reference](../03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md), [Power-Max Lemma](../03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md)
 **Historical provenance:** [sexual-selection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/37_SEXUAL_SELECTION_AS_VISIBLE_F5.md), [F5-redirection projection](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/38_TANTRA_AS_F5_REDIRECTION.md), and [session packet](../../11_UPLINK/60_SESSION_PACKETS/134_NEOTENOUS_STRATEGY_POWER_MAX_AT_BIRTH_2026_04_24.md). These records do not own the claim.
 **Kill Criteria:** If the comparative-development claims fail source review; if extended juvenile plasticity is not correlated with later generalized learning / symbolic capacity in the relevant species; if the framework cannot show how the early `V` deficit is carried without extraction; if designed institutional neoteny reliably produces dependency capture rather than sovereign return.
 
 > **Anchor Sequence:**
 > ```text
-> P_node = Φ × V
+> P_node = min(Φ̂₄,V₄)
 > max durable W_i(T) inside a declared Justice-admissible cooperative field
-> strict syntropic dyad: ΔP_node,i > 0 and ΔP_node,H > 0 under η_move = 0
+> strict syntropic dyad: P_node,i(after) ≻ P_node,i(before) and
+> P_node,H(after) ≻ P_node,H(before) under η_move = 0
 > delayed V -> compounding Φ -> generalized V
 > ```
 
@@ -121,8 +122,12 @@ The selected Power-Max cooperation corollary supplies the conditional grammar:
 
 ```text
 if λ > 0 and η_move = 0 inside the carrying relation:
-  carrying the vulnerable node can maximize both P_node,i and ΣP_node
+  carrying the vulnerable node can preserve or raise each declared bearer's
+  ordinal P_node under a preregistered comparison rule
 ```
+
+No sum of ordinal node scores is licensed. A collective objective requires its
+own bearer-complete, separately defended aggregation and scale contract.
 
 The condition matters. Without coupling, vulnerability is just vulnerability.
 Without `η_move = 0`, the carried node can be farmed, indoctrinated, owned, or kept

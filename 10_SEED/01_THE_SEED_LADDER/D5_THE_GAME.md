@@ -42,18 +42,34 @@ physical light cone and does not exceed `c`. The contents are D5; imagining,
 ranking, selecting, and committing are actual D4 events. The board displays
 the game; the Justice vow independently restricts which moves are admissible.
 
+### μ₄ boundary — open `[C]`
+
+`μ₄:D4→D5` is the candidate block-to-ensemble crossing by which an actual D4
+model token co-represents and compares alternative D4-shaped histories as D5
+possible content. It is not commitment, a physical force, or evidence that the
+alternatives physically coexist. The source contract remains the
+[`μ`-Limit Formula](../../05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md),
+routed by [`KSC-05`](../../00_META/00_SETTLED_CANON_REGISTRY.md); this ladder
+projection does not own it. Evidence remains `[] / not_yet_supplied`. Recovery
+suppresses the alternative-history model and requires reactive D4 behavior plus
+the one receipted history to survive. The claim dies if a complete frozen D4
+model predicts the same discrimination without a distinct option-field
+variable, or if the represented support cannot be bounded by declared laws,
+contexts, horizon, and tolerance.
+
 ## §1 · THE MOVES
 
 **The two powers.** `V₄` is D4 actual power—embodied, causally usable
 capability. `Φ₅` is D5 possible power—the structured modal potential of the
 option field. Because D5 is merely possible, the current calculation uses the
 actual estimate `Φ̂₄=Eval₄(M,Φ₅)`. The node score
-`P_node=Φ̂₄×V₄`, publicly compressed as `Φ×V`, is a declared two-factor model,
-not a theorem about every finite agent. Its zero boundary is AND-class `[S]`
-under the stated need-both premises; mapping a zero model factor to literal
-annihilation requires operational evidence. The product-specific interior
-remains `[C]`. Never cite the sphere seam `P∞=φν≡1` as warrant here. Seam ≠
-score ≠ node.
+`P_node:=min(Φ̂₄,V₄)` is the selected two-factor AND-class score over
+ordinal factors, not a theorem about every finite agent. Its zero boundary is
+AND-class `[S]` under the stated need-both premises; mapping a zero model factor
+to literal annihilation requires operational evidence, while universal fit
+remains `[C]`. The historical product `Φ̂₄V₄`, publicly compressed as
+`Φ×V`, is retired as a ranking. Never cite the sphere seam `P∞=φν≡1` as warrant
+here. Seam ≠ score ≠ node.
 
 **The alphabet (the D5 Rosetta Stone, selected).** `G7 = M4 ⊔ F3`:
 
@@ -66,21 +82,22 @@ score ≠ node.
   dissolution and preservation, read but never played. The sovereign Titans are
   not D5 agents or arithmetic operands.
 
-Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (receipt 130 — the grave "seven-as-forced" stays shut).
+Seven symbols exhaust the *language*, not the dance floor: the census is **selected**, not forced by algebra (`130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md` — the grave "seven-as-forced" stays shut).
 
-**Direction and valence.** `η` names extraction valence: value taken from a
+**Direction and valence.** `η_move` names relational-action extraction valence:
+value taken from a
 bearer without warranted return. It runs across every polarity; no pole,
 gender, caste, operator, or person is morally charged. The second axis is the
 direction of transfer: individual→whole or whole→individual. Consent,
 counterfeit-classification, boundary, horizon, and enforcement remain explicit
-inputs; `η` alone does not name the whole moral/ethical grid.
+inputs; `η_move` alone does not name the whole moral/ethical grid.
 
 **The canonical directional grid** `[I/S]` (with its 2026-07-19 completion still
 `[D]` historical synthesis) crosses direction with valence. The surface verbs *give* and
 *take* do not determine valence: warranted receipt or a lawful cut may be
 non-extractive, while dependency-producing generosity may still extract.
 
-| | **non-extractive / `η=0`** | **extractive / `η>0`** |
+| | **non-extractive / `η_move=0`** | **extractive / `η_move>0`** |
 |---|---|---|
 | **Individual → Whole** | **moral** — the individual raises the sustaining whole without extracting from a bearer | **immoral** — ego gain is purchased by degrading the whole or another bearer |
 | **Whole → Individual** | **ethical** — the whole raises a bearer without externalizing extraction | **unethical** — the whole extracts from or sacrifices a bearer |
@@ -133,7 +150,7 @@ condemn proportionate defense by itself.
 D-rung and a Rosetta/-ology lane. It asks ***"what should I do?"*** through
 axiology and teleology:
 
-**Refuse extraction; maximize the option cone.** The constitution is constrained optimization: *maximize Ω — the opening of reachable futures for the impact-bearers — subject to the refusals as the feasible set* (η=0 first among them). Ω is the **+1 direction**, not a sixth refusal: the refusals clear the space; Ω is what the space is *for*. Balance is the constraint, not the goal — the "reality maximizes balance" reading was withdrawn when the option cone proved reach-dominated, and the withdrawal is kept as nectar.
+**Refuse extraction; maximize the option cone.** The constitution is constrained optimization: *maximize Ω — the opening of reachable futures for the impact-bearers — subject to the refusals as the feasible set* (`η_move=0` first among them). Ω is the **+1 direction**, not a sixth refusal: the refusals clear the space; Ω is what the space is *for*. Balance is the constraint, not the goal — the "reality maximizes balance" reading was withdrawn when the option cone proved reach-dominated, and the withdrawal is kept as nectar.
 
 The good is not read off the sphere. **The good is the vow** `[I]`, chosen by a
 finite agent or constitution and held accountable to its bearer-level effects.

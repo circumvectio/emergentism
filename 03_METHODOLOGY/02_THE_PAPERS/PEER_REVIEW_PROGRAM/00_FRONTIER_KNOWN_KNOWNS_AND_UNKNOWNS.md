@@ -14,6 +14,10 @@ rosetta:
 > and reports are D4; represented possible content is D5; D6 supplies no
 > positive object. Missing reduction never establishes strong emergence.
 
+> **KSC-02 custody fence (2026-07-29).** Product and multiplicative lanes below
+> are dated findings or separately cardinal experimental candidates. The
+> selected ordinal node ranking is `P_node=min(Φ̂₄,V₄)`.
+
 ---
 
 ## A. KNOWN KNOWNS (settled enough to build on)
