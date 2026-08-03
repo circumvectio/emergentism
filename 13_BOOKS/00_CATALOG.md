@@ -9,9 +9,16 @@ evidence_tier: "[B] file custody; [S] proposed editorial sequence"
 
 ## Candidate reader architecture
 
+**Book I — *The Emergentist Manifesto: A Worldview for Finite Beings*.** A
+staged, projection-only full reader gives the existing books one argument and a
+compression ladder. Its short draft remains the Preamble and Quickstart; the
+assembled private reader, ledger, and completion gate now live in
+[`manifesto/`](manifesto/). It neither creates a fourth book nor becomes a
+source owner, public release, or deployment.
+
 | Composition | Reader promise | Components | Current state |
 |---|---|---|---|
-| *Emergentism: A Worldview for Finite Beings* | Understand the worldview without first mastering its symbols | One-Sitting spine; Self-Eating immune protocol; selected collective-trace and dissolution survivors | active reader to rebuild in place; current public reader remains separately gated |
+| *The Emergentist Manifesto: A Worldview for Finite Beings* | Understand the worldview without first mastering its symbols, then test its limits | One-Sitting spine; clearly labeled critical apparatus; no regenerated frozen genealogy | private full book locally complete; current public reader remains separately gated |
 | *The Titans: The Infinite, Finity & Infinity* | See exactly what is standard, selected, conjectured, narrowed, or killed | Titans spine; Foundation and formal modules; formal-boundary survivors | Research Edition 2 waits for Foundation card coverage |
 | *The Lived Compass: Justice, Action & Institutions* | Make consequential decisions without hiding uncertainty, authority, bearers, repair, or exit | Finity practice; Dharma casebook; Six Lenses method; institutional survivors | reader edition planned after source review |
 

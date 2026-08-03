@@ -40,7 +40,13 @@ ALLOWED_COMPOSITION_CLASSES = {
     "historical_critical_reader",
 }
 ALLOWED_COMPOSITION_OUTPUT_STATES = {
-    "active_book": {"planned_not_built", "current_reader_rebuild_pending", "built_private", "active_public"},
+    "active_book": {
+        "planned_not_built",
+        "current_reader_rebuild_pending",
+        "built_private",
+        "private_full_book_completed_not_public",
+        "active_public",
+    },
     "active_research_book": {"planned_not_built", "built_private", "active_public"},
     "active_practice_book": {"planned_not_built", "built_private", "active_public"},
     "historical_critical_reader": {"planned_not_built", "built_private", "released_historical"},

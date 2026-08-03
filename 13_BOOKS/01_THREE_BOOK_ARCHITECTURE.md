@@ -1,6 +1,6 @@
 ---
 title: "Three-Book Architecture — Overlap and Disposition"
-status: "STAGED EDITORIAL PROPOSAL — projection only; editions not yet rebuilt"
+status: "STAGED EDITORIAL PROPOSAL — Book I private full reader assembled; other editions remain unreconstructed"
 date: 2026-07-29
 evidence_tier: "[S] editorial topology; no substantive claim promotion"
 owner: "13_BOOKS routing; K-1 through K-7 retain semantic ownership"
@@ -12,9 +12,18 @@ The proposed architecture gives the corpus three active reader promises rather
 than eight overlapping books. This is an editorial proposal about sequence and reuse. It creates no doctrine,
 changes no evidence tier, and does not erase any historical edition.
 
+*The Emergentist Manifesto: A Worldview for Finite Beings* is the rebuilt
+full-reader expression of Book I, not a fourth active book. Its Preamble and
+Quickstart compress the reader journey; the book then expands it through
+current argument, clearly labelled research, and critical genealogy without
+creating semantic authority. Its staged assembly, chapter contract, and source
+boundaries live in [`manifesto/`](manifesto/). Its private full book has passed
+the local source-mapping and lifecycle gate; its public edition remains a
+separate, unpaid decision.
+
 | Active book | Unique job | Material absorbed without duplicate ownership |
 |---|---|---|
-| *Emergentism: A Worldview for Finite Beings* | worldview, finite agency, collective traces, criticism and exit | One-Sitting; Self-Eating immune protocol; selected Reciprocal and Sarpasya survivors |
+| *The Emergentist Manifesto: A Worldview for Finite Beings* | worldview, finite agency, collective traces, criticism and exit | One-Sitting; Self-Eating and Sarpasya only as labelled critical apparatus; frozen Reciprocal retained as custody only |
 | *The Titans: The Infinite, Finity & Infinity* | formal programme, standard recovery, Finity, paradox adjudication and failure | Titans; Foundation modules; formal Reciprocal and Sarpasya survivors |
 | *The Lived Compass: Justice, Action & Institutions* | decisions, horizons, resistance, institutions, repair and exit | Finity practice; Dharma; Six Lenses; institutional and historical survivors |
 

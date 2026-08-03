@@ -1525,9 +1525,9 @@
       "OS01-26"
     ],
     "claim_card_register": "00_META/registers/CLAIM_CARD_REGISTER.json",
-    "claim_card_register_sha256": "33fca82cebade8c812f6b97c5a0ae9c3166965a7a51e7fc7e80071abf0e672c1",
+    "claim_card_register_sha256": "4d079a71ac05a3fb624401bbd5a469d0efd8661b3c621b02e369d2553f0074ab",
     "claim_graph": "00_META/registers/CLAIM_GRAPH.json",
-    "claim_graph_sha256": "913ddb487dd16bfbdee40c2141939bbc53bf933442a2e939712a21460ae0b777",
+    "claim_graph_sha256": "17b9a90e591eebfe18e772d63c9cb59bb6f9b3b0c1cb954d6efd12fb64aeaecb",
     "build_manifest": "book/build-manifest.json",
     "output_sha256": "3d57f4239a99cf93807e52b981d72daed2972472d6e7f8b16abdf47053142c38",
     "authority": "Current-reader route metadata; source owners retain semantics and publication provides no evidence."

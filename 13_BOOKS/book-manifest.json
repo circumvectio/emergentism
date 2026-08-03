@@ -406,7 +406,7 @@
       "receipt_sha256": null
     },
     "authority": "projection_only_no_semantic_authority",
-    "decision": "Proposed target: three active-book compositions plus one non-doctrinal historical reader; the Evolutionary Network remains a research dossier.",
+    "decision": "Proposed target: three active-book compositions plus one non-doctrinal historical reader. Book I is rebuilt as The Emergentist Manifesto: A Worldview for Finite Beings; its short manifesto is the Preamble and Quickstart, not a fourth book. The Evolutionary Network remains a research dossier.",
     "invariants": {
       "preserve_works_array": true,
       "preserve_work_ids": true,
@@ -421,12 +421,17 @@
       {
         "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
         "catalog_class": "active_book",
-        "title": "Emergentism: A Worldview for Finite Beings",
+        "title": "The Emergentist Manifesto: A Worldview for Finite Beings",
         "anchor_work_id": "BK-ONE-SITTING",
         "output": {
-          "state": "current_reader_rebuild_pending",
+          "state": "private_full_book_completed_not_public",
           "source_path": "../00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
-          "public_route": "../12_PUBLIC_SITE/book/index.html"
+          "planned_path": "manifesto/MANIFESTO_BOOK_1.md",
+          "build_receipt_path": "manifesto/MANIFESTO_BOOK_1_BUILD.json",
+          "paragraph_ledger_path": "manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
+          "completion_gate_path": "manifesto/FULL_BOOK_1_COMPLETION_GATE.md",
+          "existing_public_route": "../12_PUBLIC_SITE/book/index.html",
+          "public_route": null
         },
         "components": [
           {
@@ -437,23 +442,13 @@
           },
           {
             "work_id": "BK-SELF-EATING",
-            "role": "named_immune_protocol",
+            "role": "critical_immune_protocol_apparatus_not_current_body",
             "claim_selection": "all",
             "projection_mode": "primary"
           },
           {
-            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
-            "role": "collective_trace_and_immune_survivors",
-            "claim_card_ids": [
-              "RIP01-04",
-              "RIP01-06",
-              "RIP01-07"
-            ],
-            "projection_mode": "primary"
-          },
-          {
             "work_id": "BK-SARPASYA",
-            "role": "dissolution_and_record_survivor",
+            "role": "critical_genealogy_apparatus_not_current_body",
             "claim_card_ids": [
               "SV01-07"
             ],
@@ -476,15 +471,6 @@
             "work_id": "BK-TITANS",
             "role": "formal_research_spine",
             "claim_selection": "all",
-            "projection_mode": "primary"
-          },
-          {
-            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
-            "role": "formal_boundary_and_translation_survivors",
-            "claim_card_ids": [
-              "RIP01-02",
-              "RIP01-03"
-            ],
             "projection_mode": "primary"
           },
           {
@@ -609,14 +595,6 @@
             "projection_mode": "primary"
           },
           {
-            "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
-            "role": "institutional_diagnosis_survivor",
-            "claim_card_ids": [
-              "RIP01-01"
-            ],
-            "projection_mode": "primary"
-          },
-          {
             "work_id": "BK-SARPASYA",
             "role": "diagnosis_history_practice_and_institution_survivors",
             "claim_card_ids": [
@@ -731,22 +709,20 @@
       {
         "route_id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
         "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
-        "claim_card_ids": [
-          "RIP01-05"
-        ],
+        "claim_selection": "all",
         "primary_home": "historical_custody_only"
       }
     ],
     "integrity": {
-      "existing_claim_card_count": 72,
-      "primary_cards_by_composition": {
-        "COMP-ACTIVE-01-WELTANSCHAUUNG": 36,
-        "COMP-ACTIVE-02-TITANS": 9,
-        "COMP-ACTIVE-03-LIVED-COMPASS": 21,
+        "existing_claim_card_count": 72,
+        "primary_cards_by_composition": {
+        "COMP-ACTIVE-01-WELTANSCHAUUNG": 33,
+        "COMP-ACTIVE-02-TITANS": 7,
+        "COMP-ACTIVE-03-LIVED-COMPASS": 20,
         "COMP-HISTORICAL-01-SERPENT-CYCLE": 0
       },
       "primary_cards_by_nonbook_home": {
-        "historical_custody_only": 1,
+        "historical_custody_only": 7,
         "research_dossier": 5
       },
       "total_primary_or_custody_routes": 72

@@ -137,7 +137,11 @@ class TitanInversionStructureTests(unittest.TestCase):
         self.assertEqual(integrity["existing_claim_card_count"], 72)
         self.assertEqual(
             integrity["primary_cards_by_composition"]["COMP-ACTIVE-02-TITANS"],
-            9,
+            7,
+        )
+        self.assertEqual(
+            integrity["primary_cards_by_nonbook_home"]["historical_custody_only"],
+            7,
         )
         self.assertEqual(integrity["total_primary_or_custody_routes"], 72)
 

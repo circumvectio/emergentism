@@ -4,22 +4,22 @@
     {
       "catalog_class": "active_book",
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
-      "output_state": "current_reader_rebuild_pending",
-      "primary_card_count": 36,
-      "title": "Emergentism: A Worldview for Finite Beings"
+      "output_state": "private_full_book_completed_not_public",
+      "primary_card_count": 33,
+      "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
       "catalog_class": "active_research_book",
       "composition_id": "COMP-ACTIVE-02-TITANS",
       "output_state": "planned_not_built",
-      "primary_card_count": 9,
+      "primary_card_count": 7,
       "title": "The Titans: The Infinite, Finity & Infinity"
     },
     {
       "catalog_class": "active_practice_book",
       "composition_id": "COMP-ACTIVE-03-LIVED-COMPASS",
       "output_state": "planned_not_built",
-      "primary_card_count": 21,
+      "primary_card_count": 20,
       "title": "The Lived Compass: Justice, Action & Institutions"
     },
     {
@@ -1199,7 +1199,7 @@
     {
       "from": "RIP01-01",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-03-LIVED-COMPASS"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-01",
@@ -1229,7 +1229,7 @@
     {
       "from": "RIP01-02",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-02-TITANS"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-02",
@@ -1269,7 +1269,7 @@
     {
       "from": "RIP01-03",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-02-TITANS"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-03",
@@ -1304,7 +1304,7 @@
     {
       "from": "RIP01-04",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-04",
@@ -1369,7 +1369,7 @@
     {
       "from": "RIP01-06",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-06",
@@ -1404,7 +1404,7 @@
     {
       "from": "RIP01-07",
       "kind": "projected_to",
-      "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
+      "to": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },
     {
       "from": "RIP01-07",
@@ -2402,9 +2402,9 @@
       "composition_id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "id": "COMP-ACTIVE-01-WELTANSCHAUUNG",
       "kind": "book_composition",
-      "output_state": "current_reader_rebuild_pending",
-      "primary_card_count": 36,
-      "title": "Emergentism: A Worldview for Finite Beings"
+      "output_state": "private_full_book_completed_not_public",
+      "primary_card_count": 33,
+      "title": "The Emergentist Manifesto: A Worldview for Finite Beings"
     },
     {
       "catalog_class": "active_research_book",
@@ -2412,7 +2412,7 @@
       "id": "COMP-ACTIVE-02-TITANS",
       "kind": "book_composition",
       "output_state": "planned_not_built",
-      "primary_card_count": 9,
+      "primary_card_count": 7,
       "title": "The Titans: The Infinite, Finity & Infinity"
     },
     {
@@ -2421,7 +2421,7 @@
       "id": "COMP-ACTIVE-03-LIVED-COMPASS",
       "kind": "book_composition",
       "output_state": "planned_not_built",
-      "primary_card_count": 21,
+      "primary_card_count": 20,
       "title": "The Lived Compass: Justice, Action & Institutions"
     },
     {
@@ -2832,7 +2832,7 @@
     {
       "id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
       "kind": "nonbook_claim_route",
-      "primary_card_count": 1,
+      "primary_card_count": 7,
       "projection_kind": "historical_custody_only",
       "route_id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE"
     },

@@ -2,7 +2,7 @@
   "authority": "deterministic projection receipt; source owners retain semantics",
   "claim_card_contract": {
     "graph_path": "00_META/registers/CLAIM_GRAPH.json",
-    "graph_sha256": "913ddb487dd16bfbdee40c2141939bbc53bf933442a2e939712a21460ae0b777",
+    "graph_sha256": "17b9a90e591eebfe18e772d63c9cb59bb6f9b3b0c1cb954d6efd12fb64aeaecb",
     "path": "00_META/claim_cards/one_sitting.yaml",
     "schema": "emergentism/claim-card-set/v2",
     "sha256": "d9865fbd0638b36f47ece84e32f5092b6115c253ef114dddac91cde8bc2c57f9"

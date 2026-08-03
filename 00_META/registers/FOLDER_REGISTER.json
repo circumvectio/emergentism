@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 784,
+  "entry_count": 787,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3310,
+      "tracked_file_count": 3330,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -987,7 +987,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 142,
+      "tracked_file_count": 147,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1013,7 +1013,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 19,
+      "tracked_file_count": 24,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7448,7 +7448,7 @@
       "owns": "Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop",
       "must_not_own": null,
       "status": "staged",
-      "tracked_file_count": 16,
+      "tracked_file_count": 31,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7475,6 +7475,45 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "13_BOOKS/manifesto",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 15,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "13_BOOKS/manifesto/chapters",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 4,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "13_BOOKS/manifesto/drafts",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 2,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
