@@ -103,6 +103,13 @@ hedge could be missed, and it is now explicit.
 2. Re-tiered the MLS line `[I/C]` + Balance-of-Houses §2 cross-ref.
 3. Front-matter `audit:` field points at this note; the note's
    `audited_artifact:` field points back.
+4. **§1.1 reconciliation (after parallel commit `089da8bf` landed
+   `syntropic-dyadism.md` §1.1 tit-for-tat):** the synthesis's "not pacifism"
+   framing was free-standing when written; reconciled to cite §1.1 as the
+   canonical home of the fire rule. Added the synthesis to the `AGENTS.md`
+   canonical-home map as the integrated four-register view (the per-caste
+   briefs + §1.1 carry the atomic pieces; this file carries the integration).
+   No doctrine change — discoverability + cross-ref only.
 4. Did **not** weaken the 5+7 fences or the Syntropic Dyadism meta-rule; both
    stand on their own briefs.
 
