@@ -74,3 +74,16 @@ _archive/
 index_legacy_2026_07_19.html
 index_legacy_2026_07_19/
 home/
+
+# 2026-07-14 compass restructure (cherry-pick of 7c97f9f2, 2026-08-04): the
+# D0-D6 mathematical register is preserved under
+# 90_ARCHIVE/tool_noise/2026_07_14_compass_restructure/preserved_mathematical_register/
+# (covered by the 90_ARCHIVE/ rule above). The live compass is the narrative
+# register at /trinity/. Explicit 0/..6/ ignores guard against resurrection.
+0/
+1/
+2/
+3/
+4/
+5/
+6/
