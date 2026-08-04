@@ -37,19 +37,26 @@ None of the three owns anything; each points at the owner. Re-check the first tw
 
 ## About the files in this directory
 
-There are about forty markdown files at the repository root and **most of them are
+There are twenty-two markdown files at the repository root and **most of them are
 forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
 They exist so that older links keep resolving, and deleting them would break the thing they
-are for. As of 2026-08-01 there are **37** markdown files at the root: **26 forwarding stubs, 3 agent
-routes, and 8 documents with actual content.** The eight —
+are for. As of 2026-08-04 there are **22** markdown files at the root: **9 forwarding stubs,
+3 agent routes, 6 documents with actual content, 2 dated K2-signed receipts, and 2
+non-semantic VMOSK control projections.** The six content documents —
 
 - [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
 - [`ROSETTA.md`](ROSETTA.md) · this `README.md`
-- the work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md`, cited as a non-semantic filename reference only, since neither owns doctrine
+
+The two dated K2-signed receipts are [`00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md`](00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md)
+and [`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md`](00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md) (the
+V-forcer 10 closure, restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`).
+The work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md` — are cited as non-semantic filename references only, since neither owns doctrine.
 
 (`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
-version of this list counted it as content and still arrived at six, while claiming seven.)
+version of this list counted it as content and still arrived at six, while claiming seven.
+The earlier count of 37/26 was stale; re-anchored to disk truth 2026-08-04, tidy receipt
+`00_HANDOFF/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md` T2.)
 
 If a root file is not in that list, follow its pointer rather than reading it as source.
 
@@ -103,14 +110,16 @@ tests. Consequential action uses a complete, scoped, contestable
 
 ## Repository map
 
-> **Reading the root directory.** Nineteen `.md` files sit at this root, and
-> **eight are live**: `README.md`, `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`,
-> `ROSETTA.md` (a routing shim), `00_THE_KERNEL_INDEX.md`,
-> `00_THE_WELTANSCHAUUNG.md`, and `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`.
-> The other **eleven are forwarding stubs** — each holds a path, not a claim,
-> and each is cited by live doctrine (58 citations across the eleven), so they
-> stay where they are. A stub's `canonical_target` always names a **live**
-> owner, never an archive; preserved bytes are named by `historical_target`.
+> **Reading the root directory.** Twenty-two `.md` files sit at this root (as of
+> 2026-08-04): **6 are live content** — `README.md`, `ROSETTA.md` (a routing shim),
+> `00_THE_KERNEL_INDEX.md`, `00_THE_WELTANSCHAUUNG.md`,
+> `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`, `00_THE_FOUNDATION.md`; **3 are agent
+> routes** — `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`; **2 are dated K2-signed
+> receipts**; **2 are non-semantic VMOSK control projections**; and **9 are
+> forwarding stubs** — each holds a path, not a claim, and each is cited by live
+> doctrine, so they stay where they are. A stub's `canonical_target` always names
+> a **live** owner, never an archive; preserved bytes are named by
+> `historical_target`.
 >
 > Nineteen further stubs with **zero live-doctrine demand** were relocated on
 > 2026-07-22 to
