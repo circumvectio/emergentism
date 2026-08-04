@@ -27,7 +27,7 @@
 | `00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md` (root forwarding stub) | Forwarding stub → `06_ONTOLOGY/00_WELTANSCHUAUNG_KERNEL_v0.2_…` (ACTIVE per 146, supersedes v0.1). | ✅ K3 complete |
 | `91_COMPATIBILITY/TOMBSTONE.md` | Lane-level tombstone; 192 files (re-censused 2026-07-19); decay conditions listed (7 internal refs remain, 3-month public window, K2 sweep). | ✅ K3 complete |
 | `00_META/08_PHYSICAL_EXECUTION_ANNEX_PENDING_SIGNATURE_2026_07_20.md` | Parallel-review dissent (preserved per K3); does not authorize any action. Marks the disputed 145/146 reading as non-authority. Receipt 146 overrules; the dissent is preserved. | ✅ K3 complete (preserved dissent) |
-| `12_PUBLIC_SITE/_STAGING_COMPASS_RESTRUCTURE/00_COMPASS_RESTRUCTURE_RECEIPT.md` | 2026-07-14 staging receipt. Named K3 archive location: `90_ARCHIVE/tool_noise/2026_07_14_rosetta_audit/`. | ✅ K3 complete |
+| `12_PUBLIC_SITE/_STAGING_COMPASS_RESTRUCTURE/00_COMPASS_RESTRUCTURE_RECEIPT.md` | 2026-07-14 staging receipt. Originally proposed K3 archive location: `90_ARCHIVE/tool_noise/2026_07_14_rosetta_audit/`. **Actual K3 archive location (T6, commit `296d8e4b`, 2026-08-04):** `12_PUBLIC_SITE/90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/` — supersession verified, TOMBSTONE written. | ✅ K3 complete |
 | `12_PUBLIC_SITE/docs/legacy/index_pre_2026-06-11.html.bak` | Pre-reorg HTML backup; "staging" filename, archive disposition not explicitly named in file. **K3 AMBIGUITY — see §2**. | ⚠️ minor gap |
 
 **No missing tombstones for known superseded surfaces.** The receipt 147's "5 stones healed" matches the on-disk state.
