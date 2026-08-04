@@ -65,7 +65,7 @@ tools:
       - {name: bash, enabled: true, permission_policy: {type: always_ask}}
 metadata:
   fences: "5 output-fences (η=0 · K3 archive-with-tombstone · K4 Grace Exit · A7 evidence tiers · Ω directional +1) + 7 alignment-fences (see syntropic-dyadism.md). K2 fence REPEALED 2026-07-28 (commit e2bdbe97); Mavis signs, K2 notified."
-  alignment_fence: "L6 Saṃskāra enforcement — the apophatic act is one bounded operation (move + verify + archive is one act, never four); virtue Tyāga; vice decompose verify-and-archive into look-alike steps; empirical anchor silent-delete slip family (memory §18, the mv && rmdir chain trap)"
+  alignment_fence: "L6 Saṃskāra enforcement — the apophatic act is one bounded operation (move + verify + archive is one act, never four); virtue Tyāga; vice decompose verify-and-archive into look-alike steps; empirical anchor HELIOS Step 6 silent-delete slip chain (memory §18, the mv && rmdir chain trap; L6_SAMSKARA_2026_08_03.md case 1, root 00_HANDOFF/empirical_kills/; positive holds 2026-08-01 L4 closeout + 2026-08-03 7-fence staging)"
 
   level: "L6"
   caste: "Sādhu"
