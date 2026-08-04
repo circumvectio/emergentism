@@ -5,7 +5,18 @@
     "path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
     "lifecycle": "reader_synthesis",
     "role": "reader_synthesis",
-    "reviewed_source_sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad"
+    "reviewed_source_sha256": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+    "review_history": [
+      {
+        "date": "2026-08-04",
+        "act": "re-stamp to current file hash; closes gate F4 (claim-card hash drift) and R1/R4 §1 finding from 01_EMERGENTISM T2 follow-on receipt",
+        "prior_hash": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
+        "new_hash": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
+        "source_path": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
+        "ratchet": "T12 in 01_EMERGENTISM_TIDY_RECEIPT_2026_08_04 (chair ratified 2026-08-04 'i ratify')",
+        "authoritative_receipt": "00_HANDOFF/tidy/01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md §3 T12"
+      }
+    ]
   },
   "cards": [
     {
