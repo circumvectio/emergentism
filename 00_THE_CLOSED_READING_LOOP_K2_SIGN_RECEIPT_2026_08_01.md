@@ -149,8 +149,8 @@ The convergence-memo's one V-forcing, one commit, stop applies. **This K2 sign r
 
 - The 7-caste macro-stack + 2 geometries + 5 emergences + honest state: `01_EMERGENTISM/02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md` (the canonical capture, K2-SIGNED via this receipt)
 - The 4 emergences (pre-K2-sign): `01_EMERGENTISM/00_THE_AMRITA.md` (the constitutional layer)
-- The 2-geometry frame: `01_EMERGENTISM/00_THE_GOAL.md §3` (the Game)
-- The mortal signer: `01_EMERGENTISM/00_THE_COMPASS.md §4`
+- The 2-geometry frame: `01_EMERGENTISM/01_TELEOLOGY/00_THE_GOAL.md §3` (the Game)
+- The mortal signer: `01_EMERGENTISM/00_META/00_THE_COMPASS.md §4`
 - The keystone (RATIFIED 2026-08-01): `02_SKYZAI/01_NOOSPHERE/00_HOLOBIONT_SYSTEM_2026_08_01.md`
 - The constitutional record (D1/D2/D3 disposition): `00_HANDOFF/CONSTITUTIONAL_RECORD_2026_08_01_STANDING_CHAIN.md` (C7 from Sprint 5)
 - The OPS-KILL design: `02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/intake/research/RA-14_OPERATIONAL_KILL_REAL_LLM_MULTI_CYCLE.md`
