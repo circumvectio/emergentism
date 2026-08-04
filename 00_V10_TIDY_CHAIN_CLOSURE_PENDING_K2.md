@@ -12,7 +12,7 @@ parents:
   - 01_EMERGENTISM/00_THE_AMRITA.md §I.C.19 (the 4 mandatory fields pattern: tier, upgrade_path, kill_criterion, survivors)
   - 01_EMERGENTISM/01_TELEOLOGY/02_THE_DERIVATION/07_THE_TYSON_KO_PENDING_K2.md (Tyson/KO boundary conjecture, the 8th V-forcer's downstream)
 related:
-  - 01_EMERGENTISM/00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md (the canonical Open Canon charter, K2-signed-as-staged-canon 2026-07-19, frozen at v0.1 by this V-forcer)
+  - 01_EMERGENTISM/91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/00_OPEN_CANON_FOUNDATION_CHARTER_DRAFT_v0.1.md (the canonical Open Canon charter, K2-signed-as-staged-canon 2026-07-19, frozen at v0.1 by this V-forcer; preserved body at 91_COMPATIBILITY per the L4 stub consolidation 2026-07-22)
   - 01_EMERGENTISM/90_ARCHIVE/2026_07_18_charter_tidy/README.md (the convergence-memo compliance for the parallel charter drafts)
   - 01_EMERGENTISM/12_PUBLIC_SITE/90_ARCHIVE/tool_noise/2026_07_14_compass_restructure/preserved_mathematical_register/README.md (the 0..6/ compass residue tidy)
   - 02_SKYZAI/00_PLANNING/ (the 7 SKYZAI_*.md root → 00_PLANNING/ move)
