@@ -31,6 +31,7 @@ sources:
   - 00_META/registers/CLAIM_CARD_REGISTER.json
   - 11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md
 archive_predecessor: 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/VMOSK_A.md
+superseded_by: VMOSK_A_v2_2026_07_31.md
 ---
 
 > [!IMPORTANT]
