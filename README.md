@@ -56,7 +56,7 @@ The work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_0
 (`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
 version of this list counted it as content and still arrived at six, while claiming seven.
 The earlier count of 37/26 was stale; re-anchored to disk truth 2026-08-04, tidy receipt
-`00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md` T2.)
+`../00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md` T2.)
 
 If a root file is not in that list, follow its pointer rather than reading it as source.
 

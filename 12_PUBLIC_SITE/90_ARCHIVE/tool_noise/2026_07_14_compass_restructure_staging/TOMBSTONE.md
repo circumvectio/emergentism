@@ -5,7 +5,7 @@ date: 2026-08-04
 k3_tag: "emergentism_tidy_2026_08_04_site_staging"
 superseded_by: "live site wings (12_PUBLIC_SITE/compass/ et al., delivered 2026-07-14); related audit custody at 90_ARCHIVE/tool_noise/2026_07_14_rosetta_audit/"
 evidence_tier: "[S] supersession verified on disk 2026-08-04 (live compass/ wing present; staging held only the completion receipt)"
-source: "00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md T6 (chair directive 'execute', 2026-08-04)"
+source: "../00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md T6 (chair directive 'execute', 2026-08-04)"
 ---
 
 # TOMBSTONE — `_STAGING_COMPASS_RESTRUCTURE/`

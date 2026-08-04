@@ -3,7 +3,7 @@ type: reanchor-docket
 title: "Stale 02_SKYZAI/01_NOOSPHERE reference re-anchor docket — active doctrine only"
 date: 2026-08-04
 timestamp: "2026-08-04T13:30:00+07:00"
-source: "00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md T3 (chair-ratified via docket R2)"
+source: "../00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md T3 (chair-ratified via docket R2)"
 authority_basis: "D0 chair delegation ba5213c2; T3 docket delivery executed, re-anchoring itself is lane-owner work"
 evidence_tier: "[S] stale refs grepped on disk; new paths verified via find/ls 2026-08-04; [D] re-anchoring pending lane-owner execution"
 may_sign: false

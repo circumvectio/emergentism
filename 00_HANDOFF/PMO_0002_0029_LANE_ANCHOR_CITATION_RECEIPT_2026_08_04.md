@@ -45,7 +45,7 @@ Rationale per kill file: [A]
 ## §2 · Act 2 — PMO-0029 (in-lane half): tidy-receipt citation repair
 
 Stale citation: `00_HANDOFF/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md` →
-actual path `00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md`
+actual path `../00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md`
 (Documents-root lane; ls-verified 2026-08-04). [S]
 
 ### Citations repaired (3)
