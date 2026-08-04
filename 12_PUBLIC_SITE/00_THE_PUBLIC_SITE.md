@@ -18,7 +18,7 @@ supersedes: nothing — supplements the existing pillar README
 
 **Status:** ACTIVE (public projection surface, not a doctrine pillar)
 **Role:** an operable compass for a stranger: the reality scaffold in order, the method usable without assent, the claims priced, the deaths dated, and the exit visible.
-**Owns:** the seven chapter directories `0/` through `6/`, the public Living Map routes (`map/`, `lab/`, `contribute/`), their routing contracts, `90_ARCHIVE/`, `_PLANS/`, `_STAGING_COMPASS_RESTRUCTURE/`, `__pycache__/` (build output), `404.html`, `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`, plus historical migration receipts.
+**Owns:** the seven chapter directories `0/` through `6/`, the public Living Map routes (`map/`, `lab/`, `contribute/`), their routing contracts, `90_ARCHIVE/` (incl. `90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/` — the K3-archived `_STAGING_COMPASS_RESTRUCTURE/` per T6, commit `296d8e4b`), `_PLANS/`, `__pycache__/` (build output), `404.html`, `AGENTS.md`, `CLAUDE.md`, `LICENSE`, `README.md`, plus historical migration receipts.
 **Must not own:** source doctrine, claim authority, K-1 through K-7 surfaces. Per KSC-13, the public site applies the worldview; it does not premise it.
 
 ## Read first

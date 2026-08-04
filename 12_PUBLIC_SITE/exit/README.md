@@ -15,7 +15,7 @@ evidence_tier: "[S] for build artifacts; [B] for path and timestamp evidence."
 
 **Agent:** Rosetta L4 Kṣatriya (exit_k4_wing)  
 **Date:** 2026-07-14  
-**Staging path:** `01_EMERGENTISM/12_PUBLIC_SITE/_STAGING_COMPASS_RESTRUCTURE/exit_k4_wing/`  
+**Staging path (K3-archived 2026-08-04, T6):** `01_EMERGENTISM/12_PUBLIC_SITE/90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/exit_k4_wing/` (see `90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/TOMBSTONE.md`)
 **Governance:** [S] K4 is a constitutional invariant per the 5 + 1 Constitution.  
 **Skill applied:** `magnum-opus-orientation` — all boundaries respected.
 

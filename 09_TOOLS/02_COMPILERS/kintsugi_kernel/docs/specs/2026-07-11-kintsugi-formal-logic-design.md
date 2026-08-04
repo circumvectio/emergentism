@@ -1392,15 +1392,15 @@ remains visible, but corrected claims do not inherit truth from the signature.
 
 ### A4. Phase A artifacts
 
-- Modify: `docs/superpowers/specs/2026-07-11-kintsugi-formal-logic-design.md`
+- Modify: `../specs/2026-07-11-kintsugi-formal-logic-design.md`
   only for the approved concurrency/implementability addendum; freeze it before
   `MAN-A-001`.
-- Create: `docs/superpowers/plans/2026-07-12-kintsugi-a0-foundations-implementation.md`;
+- Create: `../plans/2026-07-12-kintsugi-a0-foundations-implementation.md`;
   execute it first. Reserve
-  `docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md`,
-  `docs/superpowers/plans/2026-07-12-kintsugi-a1-owner-repairs-implementation.md`,
+  `../plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md`,
+  `../plans/2026-07-12-kintsugi-a1-owner-repairs-implementation.md`,
   and
-  `docs/superpowers/plans/2026-07-12-kintsugi-a2-review-closure-implementation.md`.
+  `../plans/2026-07-12-kintsugi-a2-review-closure-implementation.md`.
   Their contents are written one after the other from the preceding verified
   artifacts; `MAN-A-001` may allow these exact paths but may not invent their
   contents or hashes before they exist.

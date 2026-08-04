@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.11 standard library, `unittest`, pytest as the existing repository test runner, Git.
 
-**Read first:** `docs/superpowers/specs/2026-07-11-kintsugi-formal-logic-design.md`, especially §§3, 14, and 16.
+**Read first:** `../specs/2026-07-11-kintsugi-formal-logic-design.md`, especially §§3, 14, and 16.
 
 ---
 
@@ -36,9 +36,9 @@
 
 This plan ends when the baseline CLI is green and committed. Then, one after the other:
 
-1. `docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md` will implement the complete JSON Schema, graph, ledger, manifest, renderer, and mutation engine.
-2. `docs/superpowers/plans/2026-07-12-kintsugi-a1-owner-repairs-implementation.md` will freeze `MAN-A-001`, atomize the actual owner claims, and make owner-first repairs.
-3. `docs/superpowers/plans/2026-07-12-kintsugi-a2-review-closure-implementation.md` will run independent reviews, mechanical closure, the immutable bundle, and receipt verification.
+1. `../plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md` will implement the complete JSON Schema, graph, ledger, manifest, renderer, and mutation engine.
+2. `../plans/2026-07-12-kintsugi-a1-owner-repairs-implementation.md` will freeze `MAN-A-001`, atomize the actual owner claims, and make owner-first repairs.
+3. `../plans/2026-07-12-kintsugi-a2-review-closure-implementation.md` will run independent reviews, mechanical closure, the immutable bundle, and receipt verification.
 
 Those are not executable tasks here; their exact plans depend on artifacts produced by the preceding slice.
 No handoff adds an extra K2 pause; the slices continue one after the other.
@@ -72,7 +72,7 @@ test -z "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all -- \
   09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
   09_TOOLS/02_COMPILERS/README.md)"
-test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
+test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/../specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
   db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c
 test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md" | awk '{print $1}')" = \
   9cf25b80e6c252aa8d95b63ea1c7cc1ed361c05dedaea4aef72fa001f691069c
@@ -786,7 +786,7 @@ test -z "$(git -C "$CANON" status --porcelain=v1 --untracked-files=all -- \
   09_TOOLS/02_COMPILERS/validate_kintsugi.py \
   09_TOOLS/02_COMPILERS/test_validate_kintsugi.py \
   09_TOOLS/02_COMPILERS/README.md)"
-test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
+test "$(shasum -a 256 "$CANON/12_PUBLIC_SITE/../specs/2026-06-05-numbered-doctrine-spine-design.md" | awk '{print $1}')" = \
   db794ac3e1d91b9c4d9e92ef121ef016f128a3fb518df86d11b5dc0f5a8eec1c
 test "$(shasum -a 256 "$CANON/11_UPLINK/50_AUDITS_AND_EXECUTIONS/108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION_PENDING_K2.md" | awk '{print $1}')" = \
   9cf25b80e6c252aa8d95b63ea1c7cc1ed361c05dedaea4aef72fa001f691069c

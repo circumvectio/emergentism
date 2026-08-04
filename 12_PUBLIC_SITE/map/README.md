@@ -15,7 +15,7 @@ evidence_tier: "[S] for build artifacts; [B] for path verification."
 
 **Agent:** map_rosetta_wing (Rosetta L4 Kṣatriya)  
 **Date:** 2026-07-14  
-**Staging:** `01_EMERGENTISM/12_PUBLIC_SITE/_STAGING_COMPASS_RESTRUCTURE/map_rosetta_wing/`  
+**Staging (K3-archived 2026-08-04, T6):** `01_EMERGENTISM/12_PUBLIC_SITE/90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/map_rosetta_wing/` (see `90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/TOMBSTONE.md`)
 **Status:** Build complete — pending integration review
 
 ---
@@ -103,7 +103,7 @@ Topbar includes `C` (Compass) in the number-nav, replacing the old `R` (Rosetta)
 ## VI. K2 / Governance Notes
 
 - **No K2 act executed:** This is a staging build, not a deployment. [S]
-- **No existing files modified:** All output is in `_STAGING_COMPASS_RESTRUCTURE/`. [B]
+- **No existing files modified:** All output was in the staging dir; per T6 (commit `296d8e4b`) the staging was K3-archived to `90_ARCHIVE/tool_noise/2026_07_14_compass_restructure_staging/`. [B]
 - **K3 archive-first:** If this wing supersedes `../../rosetta/index.html`, the old file should be tombstoned, not deleted. [S]
 - **FCA check:** N/A — this is the Emergentism doctrine pillar, not a regulated venture. [S]
 

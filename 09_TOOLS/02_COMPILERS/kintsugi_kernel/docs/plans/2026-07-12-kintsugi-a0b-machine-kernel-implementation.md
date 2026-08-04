@@ -13,7 +13,7 @@ claim, owner, manifest, ledger, receipt, public page, archive record, or
 compatibility artifact.
 
 **Controlling contract:**
-`docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-addendum.md`.
+`../specs/2026-07-12-kintsugi-a0b-machine-kernel-addendum.md`.
 It supersedes conflicting pre-v1 details in the parent design. Do not edit the
 parent design to restate the addendum and do not revive the stale draft's old
 support-link, kill-criterion, authority, manifest-binding, or three-`$defs`
@@ -89,8 +89,8 @@ separate gate after all nine task ranges are clean.
 Create:
 
 - `03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json`
-- `docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md`
-- `docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md`
+- `../plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md`
+- `../specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md`
 - `09_TOOLS/02_COMPILERS/kintsugi_kernel/__init__.py`
 - `09_TOOLS/02_COMPILERS/kintsugi_kernel/diagnostics.py`
 - `09_TOOLS/02_COMPILERS/kintsugi_kernel/codec.py`
@@ -1258,7 +1258,7 @@ repository replacement.
 
 - Modify `09_TOOLS/02_COMPILERS/README.md`.
 - Create
-  `docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md`.
+  `../specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md`.
 - Do not change machine behavior except for documentation-link tests if needed.
 
 - [ ] Update the compiler README with the package boundaries, the three root
@@ -1367,9 +1367,9 @@ repository replacement.
       "09_TOOLS/02_COMPILERS/test_kintsugi_semantics.py",
       "09_TOOLS/02_COMPILERS/test_render_kintsugi.py",
       "09_TOOLS/02_COMPILERS/validate_kintsugi.py",
-      "docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md",
-      "docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-addendum.md",
-      "docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md",
+      "../plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md",
+      "../specs/2026-07-12-kintsugi-a0b-machine-kernel-addendum.md",
+      "../specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md",
   }
   actual = set(subprocess.check_output([
       "git", "diff", "--name-only",
