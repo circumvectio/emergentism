@@ -1,6 +1,6 @@
 ---
 title: "13_BOOKS — VMOSK-A (critical-edition workshop control)"
-status: "[D] DRAFT-PENDING-OWNER-RATIFICATION — drafted from disk evidence by the root PMO session (chair R11 ruling, PMO-0036), 2026-08-04. Not live canon; owner ratification owed."
+status: "RATIFIED 2026-08-04 — owner ratification by chair directive ("complete all residual tasks"); drafted from disk evidence by the root PMO session per chair R11 ruling (PMO-0036). Draft provenance retained."
 evidence_tier: "[S] editorial topology per README 2026-07-29; [I] synthesis; [D] this draft's standing"
 type: vmosk-a-draft
 date: 2026-08-04
