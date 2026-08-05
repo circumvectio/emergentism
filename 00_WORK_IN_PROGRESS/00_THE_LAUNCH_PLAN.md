@@ -74,7 +74,7 @@ a stale artifact was undetectable. Both fixed, three generators now covered by
 `check_site_build_artifacts.py`, mutation-tested. **The first version of the cache fix had
 its own hole — it fingerprinted JS and CSS but not HTML** — found by testing it.
 
-<details><summary>original plan text, kept for provenance</summary>
+<details><summary>the original plan in one line — its full text is kept below, unhidden</summary>
 
 Build a static search index from the manifest and a client-side filter over it — which is
 roughly what happened, except the index already existed and the gap was elsewhere.

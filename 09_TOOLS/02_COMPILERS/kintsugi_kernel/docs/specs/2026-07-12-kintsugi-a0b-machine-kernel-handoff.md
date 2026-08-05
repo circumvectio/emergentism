@@ -10,7 +10,7 @@ validates grammar and transaction machinery. It does not validate Emergentism,
 repair canon, or create a live Kintsugi vessel. The compiler remains downstream
 from source-owned doctrine.
 
-See the [compiler front door](../../../09_TOOLS/02_COMPILERS/README.md), the
+See the [compiler front door](../../../README.md), the
 [controlling addendum](2026-07-12-kintsugi-a0b-machine-kernel-addendum.md), and
 the [implementation plan](../plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md).
 

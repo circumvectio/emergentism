@@ -1,58 +1,38 @@
 ---
-rosetta:
-  canonical_phrase: 00_MAGNUM_OPUS — Agent Routing
-  operator: Brahmā ○
-  primary_column: Philosophy
-  primary_level: L5
-  regime: Brāhmaṇa
-  register: '[I]'
-  secondary:
-  - column: Philosophy
-    level: L7
-    role: witness and synthesis support for magnum-opus corpus readings
-  - column: Philosophy
-    level: L6
-    role: prevent review artifacts from overriding the coherence spine
-  - column: Philosophy
-    level: L4
-    role: commit refinement decisions only through owner-lane authority
-  tier: Executive
-  canonical_phrase: "08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md — Agent First-Touch"
+title: "08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS — archived lane, tombstone route"
+status: "[B] tombstone. This directory's content was archived 2026-07-20 under the pure-Emergentism boundary. Nothing here owns doctrine."
+date: 2026-08-01
+evidence_tier: "[B] a custody record, not a claim"
 ---
 
-# 00_MAGNUM_OPUS — Agent First-Touch
+# 08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS — archived
 
-Read [`AGENTS.md`](AGENTS.md) first. This file exists for Claude-style tools that look for `CLAUDE.md`; it narrows the lane and provides read order.
+**This lane no longer holds content.** Every document that used to live here was moved on
+2026-07-20 under the pure-Emergentism boundary, and on 2026-07-22 under the tree-authority
+reconciliation. This file remains only so that older links resolve to a truthful statement
+instead of a dead directory.
 
-## Read order
+## Where the content went
 
-1. [`README.md`](README.md) — folder purpose and inventory
-2. [`AGENTS.md`](AGENTS.md) — agent routing, caste dispatch, scope boundaries
-3. [`../AGENTS.md`](../AGENTS.md) — parent lane authority
-4. [`README.md`](README.md)
-5. [`00_MAGNUM_OPUS_GEMS.md`](00_MAGNUM_OPUS_GEMS.md)
-6. [`00_MAGNUM_OPUS_REFINEMENT.md`](00_MAGNUM_OPUS_REFINEMENT.md)
+- [`pure_emergentism_boundary_2026_07_20`](../../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/00_META)
+- [`2026_07_22_tree_authority_reconciliation`](../../../90_ARCHIVE/2026_07_22_tree_authority_reconciliation/08_FRAMEWORK_SUPPORT/00_META)
 
-## Scope
+Archived material is **provenance, not authority**. It records what was true on its date and
+must not be cited as current canon.
 
-**Lane scope:** This folder holds the deepest lens-level reviews, sequence maps, debriefs, and refinement artifacts for the magnum-opus reading of the corpus.
-- Doctrine and framework claims defer to source documents in this folder.
-- Evidence tiers mandatory on all claims.
+## Where to go instead
 
-## Routing
+- [Emergentism root route](../../../AGENTS.md)
+- [Kernel Index](../../../00_THE_KERNEL_INDEX.md)
+- [Settled Canon Registry](../../../00_META/00_SETTLED_CANON_REGISTRY.md)
+- [Parent lane route](../../AGENTS.md)
 
-- Inherit local lane authority from [`AGENTS.md`](AGENTS.md).
-- Route parent-lane questions through [`../AGENTS.md`](../AGENTS.md).
-- Source truth lives upstream; repair source before patching summaries.
+## Why this file was rewritten
 
-## Cross-cutting laws
+Until 2026-08-01 it listed a local `README.md`, a local `AGENTS.md`,
+`00_AGENT_ENTRY_POINT.md` and `00_AGENT_ONBOARDING_SEQUENCE.md` as things to read first.
+None has existed here since 2026-07-20, so every pointer in it was dead and it sent a
+newcomer nowhere. The dead pointers are replaced by the archive locations above rather than
+deleted, so the move stays legible.
 
-- **Authorization:** every consequential act requires a complete, scoped, contestable `AuthorizationEnvelope`; K2 is private-DAV-only.
-- **η = 0:** zero extraction; fees only on value created.
-- **K3:** no-deletion; archive-first.
-- **K4:** grace exit; documented withdrawal path (redeemable assets, not "everything").
-- **A7:** self-correction with evidence tier on every claim.
-
-## Constraint
-
-Do not treat a clean sevenfold mapping as proof. Rosetta signatures are structural unless independently evidenced.
+•   ⊙   ○

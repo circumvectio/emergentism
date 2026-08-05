@@ -152,7 +152,7 @@ Demut (humility)  =  ν ≤ 1     The courage to reduce.    The method.
                       ↓
 Mut (courage)     =  φ = ν = 1  The equator itself.       The ground.
                       ↓
-Anmut (grace)     =  B = 1      The beauty of balance.    The result.
+Anmut (grace)     =  φ = 1      The beauty of balance.    The result.
 ```
 
 **Demut is how you get there.** The downward courage. The reduction. The service.
@@ -280,6 +280,15 @@ Step 5: Radiate Anmut.
 ---
 
 ## The Transcendentals
+
+**Not a definition [I].** Beauty, Truth, and Justice are not coordinates of the
+reciprocal chart and are not derived from `φν=1`, `B`, or the D-ladder — see
+[Beauty, Truth, and Justice](02_VALUE_THEORY/01_TRANSCENDENTALS.md). Justice in
+particular is defined only by the bearer-complete envelope in
+[Objective Morals and Ethics](02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md),
+a chosen constraint that owner states is not derived from the chart. The table
+below is a mnemonic pairing of German vocabulary with chart positions; it does
+not define, derive, or locate the value lenses.
 
 **The three transcendentals map to the three words:**
 

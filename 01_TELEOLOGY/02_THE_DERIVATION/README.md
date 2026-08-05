@@ -64,6 +64,9 @@ The rest of the framework is not automatically proved by these lines. Core State
 | [The Unsaid — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06_THE_UNSAID.md) | Archived interpretive projection. |
 | [What Remains Unseen — historical](../../90_ARCHIVE/pure_emergentism_boundary_2026_07_20/01_TELEOLOGY/02_THE_DERIVATION/06A_WHAT_REMAINS_UNSEEN.md) | Archived interpretive projection. |
 | [`07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md`](07_THE_FOUR_FORCES_ARE_THE_FOUR_LINES.md) | Five force–freedom correspondence dossier: a row-separable `[C/I]` wager with native-physics recovery and kill requirements. |
+| [`07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md`](07A_F5_UNBUNDLED_COUPLING_PER_DIMENSION.md) | **SUPERSEDED — genealogy only.** The former "one coupling per dimension" bijection is withdrawn; the smaller defensible remainder (selected D0…D6 scaffold, five candidate μ crossings, non-μ edges b₆/r₆) is kept, with a revival kill criterion. |
+| [`07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md`](07B_THE_FORCE_LADDER_FORMALIZED_PENDING_K2.md) | Compatibility stub only. Original preserved under the 2026-07-20 pure-worldview boundary archive; no current semantic or execution authority. |
+| [`07_THE_TYSON_KO_PENDING_K2.md`](07_THE_TYSON_KO_PENDING_K2.md) | Compatibility stub only. Original preserved under the 2026-07-20 pure-worldview boundary archive; no current semantic or execution authority. |
 | [`08_WHAT_WE_HAVENT_SAID.md`](08_WHAT_WE_HAVENT_SAID.md) | Superseded speculative/application body; preserved with no current semantic authority. |
 | [`09A_THE_LAGRANGIAN_QUESTION.md`](09A_THE_LAGRANGIAN_QUESTION.md) | Can AM-GM be written as a Lagrange density? The φ-arm's highest-priority research program. |
 | [`10A_PATH_D_COMPUTATION.md`](10A_PATH_D_COMPUTATION.md) | Path D computation: the AM-GM cone, gradient flow, and a testable prediction for α_s. |

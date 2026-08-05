@@ -123,7 +123,7 @@ what the proof actually entails.
 ## Read next
 
 - [The Honest Position](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/00_THE_HONEST_POSITION.md)
-- [Triadic Stability tombstone](11_EFR_TRIADIC_STABILITY.md)
+- `Triadic Stability tombstone` (no active file — archived 2026-07-20; see this lane's README)
 - [Transcendental Trinity Canon](../01_THE_TRANSCENDENTAL_TRINITY/00_THE_TRANSCENDENTAL_TRINITY_CANON.md)
 - [Canonical Formula Block](../00_CANONICAL_FORMULA_BLOCK.md)
 - [Settled Canon Registry](../../00_META/00_SETTLED_CANON_REGISTRY.md)

@@ -13,7 +13,6 @@ evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
 
 - [Local agent route](AGENTS.md)
 - [Local README](README.md)
-- [Emergentism root route](AGENTS.md)
 - [Kernel Index](00_THE_KERNEL_INDEX.md)
 - [Settled Canon Registry](00_META/00_SETTLED_CANON_REGISTRY.md)
 - [Internal completion register](00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md)

@@ -136,8 +136,6 @@ absent). Runnability receipt for the renderer, 2026-07-22:
 - main tool inventory: `../README.md` and `../CLAUDE.md`
 - current corpus gate: `../01_SCRIPTS/gate.sh`
 - Uplink route map: `../../11_UPLINK/README.md`
-- UPLINK compile entry point: `../01_SCRIPTS/compile_uplink.py`
-- full routing layer: `../../11_UPLINK/00_CORE/00_INDEX.md`
 
 ## Kintsugi audit foundation
 
@@ -157,7 +155,7 @@ python3 -B 09_TOOLS/02_COMPILERS/validate_kintsugi.py \
 > **Boundary:** A0B validates grammar and transaction machinery. It does not
 > validate Emergentism, repair canon, or create a live Kintsugi vessel.
 
-The dated [A0B machine handoff](../../docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md)
+The dated [A0B machine handoff](kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md)
 records the reproducible local evidence and the limits on the first live A1
 vessel.
 
