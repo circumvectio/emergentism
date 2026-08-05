@@ -153,11 +153,65 @@ continued-fraction algorithm in word notation. `42_THE_CASE_FOR_FINITY.md`'s
 `F1` gate remains **OPEN** — G2 does not pass it and must not be cited as
 passing it.
 
-**What is genuinely the corpus's own here** is narrow and should be stated
-narrowly: the observation that the two syntactic exclusions (`ιι = id`,
-`ι(1) = 1`) are *the same constraint* as the classical `a_n ≥ 2`
-normalisation — an expository identification, `[I]`, of real pedagogical value
-and no theorem content.
+**What the corpus adds here is a change of coordinates, not a contribution.**
+
+> **[REFUTED AND REPLACED 2026-08-05, same day it was written.]** This
+> paragraph claimed: *"the observation that the two syntactic exclusions
+> (`ιι = id`, `ι(1) = 1`) are the same constraint as the classical `a_n ≥ 2`
+> normalisation — an expository identification, `[I]`."* **It is false, and it
+> contradicts §2 of this file**, which states it correctly and in the singular:
+> *"`a₀ ≥ 1` — the no-leading-`ι` rule — is exactly the classical
+> normalisation."* §7 silently widened one exclusion into two. It was also the
+> **sole entry the distillation recorded as owned by this corpus**; see
+> `14_THE_DISTILLATION/00_THE_AMRITA.md` item 1, now struck.
+
+Under the §2 dictionary the two exclusions correspond to the two **distinct**
+hypotheses of the classical theorem — not to one of them:
+
+```text
+no leading ι   ⟺  a₀ ≥ 1  ⟺  last partial quotient ≥ 2
+                  the NORMALISATION that selects one of a rational's
+                  two finite expansions
+no ιι          ⟺  every partial quotient ≥ 1
+                  the SIMPLE-continued-fraction condition, without which
+                  the expression is not a simple CF at all
+```
+
+Both biconditionals are exact and machine-verified. **`SιιS` decides it**:
+`val(SιιS) = 3`, continued fraction `[1; 0, 2]` — it contains `ιι`, yet its
+last partial quotient is `2`, so the `a_n ≥ 2` normalisation is *satisfied*.
+What fails is the interior `0`. `[A]`
+
+`09_TOOLS/01_SCRIPTS/check_g2_normal_form.py` **already separates them** — check
+`(3)` *"last partial quotient >= 2 (the classical uniqueness normalisation)"*
+and check `(4)` *"intermediate partial quotients >= 1 (same theorem's
+hypothesis)"* — and its mutants confirm the split: `_mut_allow_ii` declares
+targets `{1,4}`, while the only mutant declaring `{3}` is the alt-last-quotient
+ambiguity mutant. **The prose over-read the harness built to distinguish exactly
+these two things.** `52_THE_GENERATIVE_BASE.md:158-160` also already said the
+opposite of the retracted paragraph: *"The two exclusions above are therefore
+**not this base's own conventions** — they are Hardy & Wright's hypothesis."*
+
+**And the surviving half is published verbatim, in one sentence.**
+Reutenauer, *On the Stern–Brocot expansion of real numbers*, J. Théor. Nombres
+Bordeaux **31**(3) (2019) 697–722, p. 699, states **both** correspondences
+correctly separated — *"each positive rational number has exactly two continued
+fraction expansions `[n₀,…,n_k+1] = [n₀,…,n_k,1]` … and `n_i > 0` for
+`i = 1,…,k`. Then the Stern–Brocot expansion of this number is
+`r^{n₀} l^{n₁} r^{n₂} ⋯`"* — attributing it to Graham, Knuth & Patashnik,
+*Concrete Mathematics* §4.5 and (6.140) p. 305, with the same expansion in
+Raney, *On continued fractions and finite automata*, Math. Ann. **206** (1973)
+265–283. `[B]`
+
+The corpus works in the `{S, ι}` (Calkin–Wilf, reversed) coordinate rather than
+`{L, R}` (Stern–Brocot); the reversal between them is Backhouse–Ferreira's
+transpose theorem, re-proved in Stange's *An Arborist's Guide to the
+Rationals* — **a source §10 below already cites.** `KSC-12` applies:
+reformulation is not novelty.
+
+**Nothing here is `[I]` and nothing here is owned.** Tier: `[A]`
+inherited-with-citation for the two biconditionals, `[B]` for the attribution.
+Per `THE_BOUNDARY_RULES_STANDALONE.md:297` — *cite this; do not claim it.*
 
 ## 8 · Machine check
 
@@ -200,4 +254,5 @@ novel, this adjudication has been ignored and should be re-run.
 **Canonical path:**
 `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md`
 
-•   ⊙   ○ — *the two exclusions were the classical normalisation all along.*
+•   ⊙   ○ — *one exclusion was the normalisation; the other was the positivity
+hypothesis; and Reutenauer had written both in a single sentence in 2019.*

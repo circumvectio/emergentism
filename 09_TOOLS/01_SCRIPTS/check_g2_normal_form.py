@@ -18,9 +18,25 @@ with a trailing iota denoting the reciprocal. Note the +1 on the LAST partial
 quotient: val starts AT 1, so the leading block S^a0 contributes a0 + 1, not a0.
 That off-by-one is exactly what forces the last partial quotient to be >= 2 --
 which is precisely the standard normalisation that makes the expansion unique.
-G2's two syntactic exclusions are therefore not bookkeeping; they ARE the
-classical uniqueness normalisation, discovered independently and stated in
-word form.
+
+The two exclusions map onto TWO DISTINCT hypotheses of that theorem, and this
+script has always separated them -- see checks (3) and (4) below:
+
+    no leading iota  <=>  a0 >= 1  <=>  last partial quotient >= 2
+                          the NORMALISATION (check 3)
+    no 'ii'          <=>  every partial quotient >= 1
+                          the SIMPLE-CF positivity hypothesis (check 4)
+
+[CORRECTED 2026-08-05] This docstring previously read "G2's two syntactic
+exclusions ... ARE the classical uniqueness normalisation, discovered
+independently". Both halves were wrong. Only ONE exclusion is the
+normalisation -- val("SiiS") = 3 has CF [1,0,2], contains 'ii', and still
+satisfies a_n >= 2 -- and the identification is published: Reutenauer, J.
+Theor. Nombres Bordeaux 31(3) (2019) 697-722, p.699, after Graham/Knuth/
+Patashnik, Concrete Mathematics section 4.5, and Raney, Math. Ann. 206 (1973).
+The mutants below already encoded the split (_mut_allow_ii targets {1,4}; the
+only mutant targeting {3} is the alt-last-quotient one). The prose over-read
+the harness.
 
 THIS SCRIPT DOES NOT PROVE G2. The proof is in
 05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md. What this script

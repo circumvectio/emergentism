@@ -19,7 +19,15 @@ supersedes: "07_THEOLOGY/00_THE_AMRITA.md (2026-07-03, recovery-integrated 2026-
 
 ## The headline
 
-**§01 holds 21 entries. One of them is owned by this corpus.** Recomputed this pass: still one.
+**§01 holds 21 entries. ~~One of them is owned by this corpus.~~ As of
+2026-08-05, ZERO are.**
+
+> **[STRUCK 2026-08-05]** The single owned entry — item 1 below — was refuted
+> the same day, by adversarial review of the very sentence this folder was
+> built around. It is false on its own terms *and* it is published prior art.
+> **The honest headline is now: nothing in §01 is owned by this corpus.**
+> That is not a collapse. Every one of the other twenty entries still stands
+> exactly as it did; only the attribution line changed.
 
 That one, at its true tier, in the corpus's own words: *"the observation that the two syntactic exclusions (`ιι = id`, `ι(1) = 1`) are the same constraint as the classical `a_n ≥ 2` normalisation — an expository identification, `[I]`, of real pedagogical value and no theorem content."* — `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md:156-160`.
 
@@ -45,9 +53,9 @@ Fixed before the entries were written, per the corpus's own rule B2 (owner: Lan�
 
 ## 01 · WHAT STANDS
 
-### 1A · Owned by this corpus (1)
+### 1A · Owned by this corpus (0 — the one entry was struck 2026-08-05)
 
-1. **`[I]`** The base's two syntactic exclusions (`ιι = id`, `ι(1) = 1`) **are** the classical `a_n ≥ 2` normalisation — an expository identification with real pedagogical value and no theorem content. Owner: this corpus. `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md:156-160` *(anchor corrected 2026-08-05; it read `:150-154`, which is the `Costs.` paragraph)*.
+1. ~~**`[I]`** The base's two syntactic exclusions (`ιι = id`, `ι(1) = 1`) **are** the classical `a_n ≥ 2` normalisation — an expository identification with real pedagogical value and no theorem content. Owner: this corpus.~~ — **REFUTED AND STRUCK 2026-08-05.** Two independent failures. (i) **False as stated**: only `no leading ι` is the `a_n ≥ 2` normalisation; `no ιι` is the *positivity* hypothesis, a different clause. `val(SιιS) = 3`, CF `[1; 0, 2]` — contains `ιι` and still satisfies `a_n ≥ 2`. `55` §2 and `check_g2_normal_form.py` checks (3)/(4) always said so; §7 over-read them. (ii) **Not owned**: Reutenauer, *J. Théor. Nombres Bordeaux* **31**(3) (2019) 697–722, p. 699 states both correspondences in one sentence, after Graham–Knuth–Patashnik §4.5 and Raney (1973). `KSC-12` applies. Source repaired at `55` §7. `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md:156-160` *(anchor corrected 2026-08-05; it read `:150-154`, which is the `Costs.` paragraph)*.
 
 ### 1B · Inherited mathematics that stands (7)
 
