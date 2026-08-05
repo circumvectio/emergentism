@@ -6,6 +6,8 @@ title: "E1–E10 from inside the exit"
 date: 2026-07-19
 status: rumination, not canon
 tier: "[I] — the rumination itself; the axioms are staged [D]"
+rosetta:
+  canonical_phrase: "E1-E10 is a posture with arithmetic — freedoms under constraint, AND-class coupling, vow, public correction, and the exit on the inside"
 source_corpus:
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md

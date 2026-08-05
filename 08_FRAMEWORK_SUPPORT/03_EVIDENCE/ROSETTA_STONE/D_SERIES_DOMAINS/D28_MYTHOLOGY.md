@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[I]"
-  canonical_phrase: "Mythology and Archetypal Cross-Traditions"
+  canonical_phrase: "Mythology and Archetypal Cross-Traditions (interpretive; independent validation still required)"
+  d_register: 4
+  d_register_basis: "domain mapping table mythology (line 25: \"⊙ MYTHOLOGY & ARCHETYPAL CROSS-TRADITIONS\"; line 27 \"L-Level × World Mythology\"); Rosetta applied at D4"
 title: "Mythology & Archetypal Cross-Traditions"
 status: "D-series domain mapping"
 evidence_tier: "[I] interpretive cross-traditional mapping; independent validation still required."

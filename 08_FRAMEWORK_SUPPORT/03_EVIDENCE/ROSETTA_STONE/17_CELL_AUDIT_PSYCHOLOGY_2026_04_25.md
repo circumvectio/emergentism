@@ -3,6 +3,8 @@ rosetta:
   primary_column: "Psychology"
   register: "[S]→[I]"
   canonical_phrase: "17 — Full cell audit of Psychology column — the strongest empirical column in the Rosetta"
+  d_register: 4
+  d_register_basis: "psychology column full cell audit (line 18 Column Summary); methodology auditing L1-L7 developmental scales, present at D4"
 ---
 
 # Cell Audit: Psychology & Development

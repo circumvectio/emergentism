@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Sādhu"
   register: "ACTIVE wager-form ledger — original tiers and kills retained; current status may be live or terminal"
+  canonical_phrase: "The Conjectures are the wager-form ledger (W0-W12) the corpus put at risk — entry tier and kill retained; four graves no wager may resurrect"
 title: "The Conjectures (W0–W12)"
 status: "ACTIVE — sole wager-form ledger; 15 rows contact-routed, 2 terminal; companion to E1–E10; applications remain outside warrant"
 parents:

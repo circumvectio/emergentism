@@ -7,6 +7,8 @@ parents:
   - 139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md
   - 141A_WITNESS_ATTESTATION_AND_WRITER_FREEZE_2026_07_19.md
 checkpoint_head: "caee2ef18cbd9bdb1659ec1fa59ec14a44c0b4ae"
+canonical_phrase: "Magnum Opus Reconciliation: filed [B/D] 2026-07-19 audit/correction receipt — exact current-union file/folder rosters (2,913 file rows / SHA-256 c00cd4c4…; 656 folder rows / 5db8c13e…; 26 signing-manifest rows / 15499d8…) and seven-surface target table (K-1..K-7 with logical owner, candidate controlling surface, current state); verdict: roster exact, architecture coherent, but 1,309 rows remain REVIEW and physical execution is NO-GO."
+tier: "[S]"
 ---
 
 # Receipt 142 — Magnum Opus Reconciliation

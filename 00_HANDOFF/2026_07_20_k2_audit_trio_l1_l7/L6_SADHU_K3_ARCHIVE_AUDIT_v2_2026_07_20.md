@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Sādhu"
   register: "[I] K3 archive discipline audit — second instance"
-  canonical_phrase: "L6 v2 — K3 disciplined; 5 K3 violations paper-trail not erasure; 2 founder-gated"
+  canonical_phrase: "L6 v2 — K3 disciplined; 5 K3 violations paper-trail not erasure; 2 founder-gated (counsel-only; pending K2)"
 type: audit
 title: "L6 Sādhu — K3 Archive Discipline Audit v2 (2026-07-20)"
 description: "Second L6 K3 audit. Verifies tombstone completeness, absorber integrity, naming convention. 5 K3 violations found, all paper-trail not erasure; 2 founder-gated."

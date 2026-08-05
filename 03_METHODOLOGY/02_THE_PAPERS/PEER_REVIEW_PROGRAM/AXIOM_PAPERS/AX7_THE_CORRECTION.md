@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "A7 / A7.1 — A belief/value system must carry its own falsification machinery (kill criteria, evidence tiers, correction protocol) or it ossifies; internal coherence is necessary but not sufficient for truth (anti-sycophancy clause)."
+---
+
 # AX7 — THE CORRECTION
 ### A Self-Correcting Framework: Built-In Falsification as a Design Principle
 

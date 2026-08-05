@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[B/I/C]"
-  canonical_phrase: "Psychology and Development Cross-Domain Mappings"
+  canonical_phrase: "Psychology and Development Cross-Domain Mappings (Rosetta alignment interpretive; extensions untested)"
+  d_register: 4
+  d_register_basis: "domain mapping table psychology (line 25: \"⊙ PSYCHOLOGY & DEVELOPMENT\"; line 27 \"Cross-Domain Mappings\"); Rosetta applied to psychology at D4"
 title: "Psychology & Development"
 status: "D-series domain mapping"
 evidence_tier: "[B] for attributed developmental-theory background; [I] for Rosetta alignment; [C] for unsupported extensions. No local observation receipt is claimed."

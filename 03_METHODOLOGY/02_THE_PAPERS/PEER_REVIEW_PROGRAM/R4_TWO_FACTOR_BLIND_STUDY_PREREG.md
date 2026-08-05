@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R4 preregistration — three pre-registered propositions (P1 two-factor dimensionality, P2 multiplicative composition, P3 collapse asymmetry) with pre-committed kill conditions; N≈300 blind raters × 60 archival vignettes; framework's keystone finite-node wager test, designed to be able to lose."
+---
+
 # R4 — Is Evaluated Productivity Multiplicative? Preregistration Outline
 
 **Working title (external):** *Two-Factor Structure and Multiplicative Composition in Lay Judgments of Organizational Viability*

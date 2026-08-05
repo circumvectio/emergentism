@@ -6,7 +6,9 @@ rosetta:
   tier: "Auditor"
   regime: "Vaiśya"
   register: "[C] candidate pack · not adopted · authorises nothing"
-  canonical_phrase: "ECO7 — ecology offers coevolution, not hierarchy"
+  canonical_phrase: "ECO7 — ecology offers coevolution, not hierarchy (forward conjecture; not adopted)"
+  d_register: 4
+  d_register_basis: "ECO7 candidate pack (line 10: \"[C] CANDIDATE\"); methodology framing the pack shape, candidate status at D4"
 status: "[C] CANDIDATE — entered with a discriminator and a live kill criterion. Not a mapping."
 date: 2026-07-31
 depends:

@@ -1,3 +1,10 @@
+---
+type: lane-readme
+title: "00_HANDOFF"
+status: "ACTIVE — lane route card; receipts create no doctrine"
+canonical_phrase: "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup; receipts create no doctrine, no formal result, and no validation"
+---
+
 # 00_HANDOFF
 
 Session handoffs and release receipts, one dated directory each. The `YYYY_MM_DD` prefix is

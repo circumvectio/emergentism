@@ -6,7 +6,9 @@ rosetta:
   tier: "Auditor"
   regime: "Vaiśya"
   register: "[S] the corrections; [I] the broader narrative"
-  canonical_phrase: "Elegance mistaken for warrant — the recurring failure mode"
+  canonical_phrase: "Elegance mistaken for warrant — the recurring failure mode (interpretive reading of the drift pattern)"
+  d_register: 4
+  d_register_basis: "four repairs to Rosetta refinements (line 11: \"ACTIVE v0 — landed corrections\"); audit corrections to instrument at D4"
 title: "Live Drift Reconciliation v0 — four repairs the Rosetta refinements require"
 status: "ACTIVE v0 — landed corrections; does not amend canon except where noted"
 date: 2026-07-31

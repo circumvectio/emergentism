@@ -2,7 +2,7 @@
 rosetta:
   primary_column: "Meta"
   register: "[I]"
-  canonical_phrase: "Reconciliation Scope Boundary Note"
+  canonical_phrase: "Reconciliation Scope Boundary Note (interpretive methodological note)"
 ---
 
 # RECONCILIATION SCOPE BOUNDARY NOTE

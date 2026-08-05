@@ -1,6 +1,7 @@
 ---
 receipt: 146
 title: "Papers Lens Closure — A–X, Finity, D5 Landauer, archived peer review, and Recursive Trivium"
+canonical_phrase: "Read-only disposition ledger for active papers A–X, Finity I–V, D5 Landauer 1–7, archived peer review, and Recursive Trivium: assigns KEEP/REVISE/GRAVE/REVIEW verdicts; no paper moved, bannered, promoted, stoned, or published."
 status: "FILED [B/D] 2026-07-20 — direct read-only disposition ledger. Evidence judgments only; no paper moved, bannered, promoted, stoned, or published."
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md

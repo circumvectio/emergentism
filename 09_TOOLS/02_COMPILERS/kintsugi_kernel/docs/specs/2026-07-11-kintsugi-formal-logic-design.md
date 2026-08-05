@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi Formal-Logic Repair Program design — a repeatable discipline in which formal criticism leaves visible, testable improvements rather than silent rewrites: expose fracture, preserve failed form, find surviving kernel, make smallest repair, attach Golden Seam, add regression fixture, propagate to derivatives."
+---
+
 # Kintsugi Formal-Logic Repair Program — Design Specification
 
 **Date:** 2026-07-11

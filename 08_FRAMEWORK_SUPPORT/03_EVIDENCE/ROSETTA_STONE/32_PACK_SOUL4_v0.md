@@ -6,7 +6,9 @@ rosetta:
   tier: "Architect"
   regime: "Brāhmaṇa"
   register: "[S] the pack shape; [I] any specific Caste → Model map; [C] the integrated runtime"
-  canonical_phrase: "SOUL4 — four organs, four fences, one return leg, three cross-cutting contracts"
+  canonical_phrase: "SOUL4 — four organs, four fences, one return leg, three cross-cutting contracts (pack design; runtime integration untested)"
+  d_register: 4
+  d_register_basis: "SOUL4 pack architecture (line 11: \"ACTIVE v0 — namespaced\"); present spec of pack shape and contracts at D4"
 title: "SOUL4@0 — the Soul-Loop Mission Engine as a Rosetta pack"
 status: "ACTIVE v0 — namespaced; supersedes 30_ROSETTA_VNEXT_REFINEMENT_2026_07_31 §7B which now records the upstream agent push"
 date: 2026-07-31

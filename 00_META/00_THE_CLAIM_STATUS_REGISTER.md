@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[S] status-routing discipline; every claim retains the tier named by its owner"
-  canonical_phrase: "Validation status is a second axis — a tier says how strong, a status says how it stands"
+  canonical_phrase: "Validation status is a second axis — a tier says how strong, a status says how it stands ([S] status ladder; [I] per-grave adjudications)"
 title: "The Claim Status Register"
 status: "ACTIVE — validation-status routing surface; creates no doctrine and promotes no claim"
 date: 2026-07-29

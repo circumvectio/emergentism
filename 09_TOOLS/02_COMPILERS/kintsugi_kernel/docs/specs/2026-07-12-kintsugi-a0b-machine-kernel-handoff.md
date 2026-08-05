@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0B machine-only handoff (2026-07-12, observed 2026-07-17) — records the tested machine grammar and its 467 reproducible test outcomes; A0B validates grammar and transaction machinery only, not Emergentism or a live Kintsugi vessel; A1 owns the first live vessel, A2 owns closure."
+---
+
 # Kintsugi A0B Machine-Kernel Handoff
 
 **Record date:** 2026-07-12

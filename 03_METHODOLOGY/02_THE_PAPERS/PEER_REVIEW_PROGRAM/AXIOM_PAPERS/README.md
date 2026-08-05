@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "Index — one peer-review grounding paper per operational axiom A1–A7, each with honest tier, prior art, and venue; AX2 is relabeled literature note, AX3 is HOLD."
+---
+
 # AXIOM_PAPERS — one grounding paper per axiom
 
 **Opened 2026-06-10.** One paper for each of the framework's seven operational axioms (A1–A7, per `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md`). Each paper applies the peer-review-program discipline to a single axiom: state it faithfully, ground it against the real prior art it (mostly) restates, name the genuine delta (usually the *coupling*, not the piece), report where this session's evidence stands, give the honest tier and the kill criterion, and name a venue — or honestly say there isn't one.

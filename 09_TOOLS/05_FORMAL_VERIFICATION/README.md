@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "EmergentismCheck.lean — first oracle-outside-the-corpus check of Emergentism's analytic claims in Lean 4 + mathlib (2026-07-29, 8661 jobs, no sorry/native_decide/added axioms); receipt 173 had observed the corpus had never before received outcome receipts from any party outside itself."
+---
+
 # Formal verification — the `[A]` claim set, machine-checked
 
 `EmergentismCheck.lean` submits the corpus's analytic claims to **Lean 4 +

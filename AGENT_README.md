@@ -1,3 +1,6 @@
+---
+canonical_phrase: "routing stub — no claim; agent entry point that directs readers to AGENTS.md, the Weltanschauung, the Kernel Index, and the Settled Canon Registry, with the standing rule that consequential action requires a complete AuthorizationEnvelope and preserves tiers, provenance, reversibility, and concurrent changes."
+---
 # Agent entry — Emergentism
 
 Read [AGENTS.md](AGENTS.md), then

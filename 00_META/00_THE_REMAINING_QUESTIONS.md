@@ -2,7 +2,7 @@
 rosetta:
   primary_column: "Meta"
   register: "[I/S]"
-  canonical_phrase: "Remaining Questions"
+  canonical_phrase: "Remaining Questions (interpretive routing; [I] questions, [S] routing constraints)"
 ---
 
 # THE REMAINING QUESTIONS

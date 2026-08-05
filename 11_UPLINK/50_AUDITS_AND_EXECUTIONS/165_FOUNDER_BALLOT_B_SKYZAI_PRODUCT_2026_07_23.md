@@ -1,6 +1,7 @@
 ---
 receipt: 165
 title: "Founder Ballot B — the Skyzai product gates, staged for countersignature (migrate to 02_SKYZAI at signing)"
+canonical_phrase: "[D] STAGED decision aid for the mortal signer: eight Skyzai product gates (FG-6, FG-7, FG-8, FG-9, FG-10, FG-11, FG-5/1/12 product halves) staged in the Emergentism uplink because 02_SKYZAI is a separate repo; migrate to 02_SKYZAI/.../00_CANON/ at countersignature; no gate decided."
 date: 2026-07-23
 status: "[D] STAGED — NOT SIGNED, NOT AUTHORITY, NOT WORLDVIEW CANON. Product-layer decisions, staged in the Emergentism uplink lane only because 02_SKYZAI is a separate repo with an active concurrent committer. Migrate to 02_SKYZAI/01_NOOSPHERE/05_PROJECT_MANAGEMENT/00_CANON/ at the founder's countersignature."
 register: "[D] the open decisions; [B] every path:line claim inside them"

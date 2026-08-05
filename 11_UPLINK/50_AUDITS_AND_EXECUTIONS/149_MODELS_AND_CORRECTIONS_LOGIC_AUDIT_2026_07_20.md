@@ -1,5 +1,6 @@
 ---
 title: "Receipt 149 — Models & Corrections Logic Audit (the 8 targets, the model ladder, the Reduction Asymmetry adjudication)"
+canonical_phrase: "Four-pass adversarial audit of 8 targets plus the 7 new ### The Model sections: the Reduction Asymmetry survives at [C] per rung-pair / [I] as world-reading (never [S]); fixes applied to 7 rung pages + 00_THE_SEED.md; Reap fixes FLAGGED, not applied (staged [D], K2-owed)."
 date: 2026-07-20
 status: "EXECUTED — fixes applied to the 7 rung pages + 00_THE_SEED.md; Reap fixes FLAGGED, not applied (staged [D], K2-owed)"
 register: "[B] audit record — per-target verdicts at tier; parents: receipt 148"

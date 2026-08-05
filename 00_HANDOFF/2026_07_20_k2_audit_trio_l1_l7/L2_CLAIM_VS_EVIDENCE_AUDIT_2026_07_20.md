@@ -1,3 +1,11 @@
+---
+type: k2-audit-handoff
+title: "L2 Śūdra — Claim-vs-Evidence Audit (2026-07-20)"
+date: 2026-07-20
+status: "counsel only — staged findings, no commits, no tier promotions"
+canonical_phrase: "L2 Śūdra claim-vs-evidence audit: canon mostly honest; E1–E10 body/front-matter contradiction (line 30 vs front matter, vs receipt 144) is the single most damaging finding, plus 4 tier-inflation cuts and 4 kill recommendations"
+---
+
 # L2 Śūdra — Claim-vs-Evidence Audit (2026-07-20)
 
 **Authority:** K2-delegated L2, Mavis root session, per receipt 146 ("execute").

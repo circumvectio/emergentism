@@ -1,3 +1,6 @@
+---
+canonical_phrase: "PR + growth audit synthesis over seven caste audits of the public site (L1 hostile-reader through L7 witness), with ten prioritized moves and a 14-row PR risk register ranked by landmine severity."
+---
 # PR + GROWTH AUDIT — SYNTHESIS
 **Date:** 2026-07-20 · **Synthesis:** CMO/comms-director pass over seven caste audits (L1 Caṇḍāla hostile-reader · L2 Śūdra evidence-discipline · L3 Vaiśya funnel · L4 Kṣatriya value-ladder · L5 Brāhmaṇa IA · L6 Sādhu cut · L7 witness)
 **Scope:** `/Users/Yves/Documents/01_EMERGENTISM/12_PUBLIC_SITE/` (deployed as-is to emergentism.org)

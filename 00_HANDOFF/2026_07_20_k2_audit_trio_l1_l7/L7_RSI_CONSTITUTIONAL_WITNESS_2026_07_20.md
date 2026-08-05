@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] constitutional witness — counsel only, no execution"
-  canonical_phrase: "L7 witness — η=0 held, A7 self-correction one commit behind, K2 box-3 fork unresolvable from receipts alone"
+  canonical_phrase: "L7 witness — η=0 held, A7 self-correction one commit behind, K2 box-3 fork unresolvable from receipts alone (counsel-only; pending K2)"
 type: audit
 title: "L7 Ṛṣi — Constitutional Witness (2026-07-20)"
 description: "K2-delegated constitutional witness at HEAD 8ed92eb (the Reap). 5+1 fences held; one K2 fork (box 3) on the floor; A7 self-correction is one commit behind; 5 public-symbol concerns named."

@@ -1,3 +1,6 @@
+---
+canonical_phrase: "Appendices and reader worksheets for the staged private manifesto: Appendix A is the Finity Card (a voluntary 7-prompt decision worksheet — Decision, Actual, Possibility, Finity, Next move, Shared value, Receipt); Appendix B is a private research comparison of component-matched ordinary worksheets; nothing here is a theorem, an authorization, or a demonstrated improvement over ordinary decision tools."
+---
 # Appendices and Reader Worksheets
 
 ## Private staged manuscript notice

@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0 second concurrency addendum (2026-07-12) — evidence-gated execution amendment recording the post-approval inventory between 454f371..992a838, the pytest-rootdir repair seam, and the rebase contract; no doctrine change, no K2 gate."
+---
+
 # Kintsugi A0 — Second Concurrency Addendum
 
 **Date:** 2026-07-12

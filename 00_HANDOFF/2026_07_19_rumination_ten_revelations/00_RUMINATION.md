@@ -1,4 +1,5 @@
 ---
+canonical_phrase: "Forwarding stub for the ten-revelations rumination; canonical home moved to 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md."
 canonical_target: 06_ONTOLOGY/ruminations/00_RUMINATION_ON_THE_TEN_REVELATIONS_2026_07_19.md
 status: "FORWARDING STUB — 2026-07-19 root tidy (receipts 137/138). K3: content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
 ---

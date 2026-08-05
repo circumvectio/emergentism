@@ -16,7 +16,9 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I]"
-  canonical_phrase: "Three-Stage Process ANIMATION"
+  canonical_phrase: "Three-Stage Process ANIMATION (visualization spec; interpretive implementation)"
+  d_register: 4
+  d_register_basis: "operational visualization specification (line 20: \"Operational visualization specification\"); present spec of interface contract at D4"
 title: "The Three-Stage Process Animation"
 status: "Operational visualization specification"
 evidence_tier: "[I] implementation/specification layer derived from structural sources."

@@ -1,3 +1,8 @@
+---
+canonical_phrase: "L5 cosmology audit: reality is read through constrained DoF spaces, not modal realism — a degree of freedom is a parameter, coordinate, capacity, or constraint-direction within a specified system, not a Form or world; the reciprocal chart is a one-DoF curve with a conditional balance optimum, not the territory."
+tier: "[S]"
+---
+
 # L5 Cosmology / DoF Formalism Audit — Emergentism-only Weltanschauung
 
 Read-only status: complied. I did not edit, stage, commit, or create repository files.

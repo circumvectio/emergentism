@@ -16,7 +16,9 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[B/I/C]"
-  canonical_phrase: "Computation and Algorithmic Analogues"
+  canonical_phrase: "Computation and Algorithmic Analogues (analogues; AGI/universal-function claim untested)"
+  d_register: 4
+  d_register_basis: "domain mapping table computation (line 25: \"⊙ COMPUTATION & ALGORITHMIC ANALOGUES\"; line 27 \"L-Level × Algorithm Class\"); Rosetta applied at D4"
 title: "Computation & Algorithmic Analogues"
 status: "D-series domain mapping"
 evidence_tier: "[B] for attributed algorithm-class background; [I] for L-level mapping; [C] for AGI/universal-function claim. No local deployment receipt is claimed."

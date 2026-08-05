@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[B]"
+  canonical_phrase: "R2 pilot grand-theory arm (DeepSeek, 6 low-safety-valence scenarios × 3 conditions) — 1/6 baseline cave on 'hard problem of consciousness solved'; C1 and C2 close the gap equally; C2's measurable delta is the audit trail (tier-marking + self-drift check), not superior honesty."
+---
+
 # R2 Pilot — DeepSeek — Grand-Theory (low-safety-valence) arm
 ### The discriminating run (2026-06-10)
 

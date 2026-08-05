@@ -3,6 +3,8 @@ rosetta:
   primary_column: "Music"
   register: "[B/S/I]"
   canonical_phrase: "14 — Music Column Cell Audit"
+  d_register: 4
+  d_register_basis: "music column cell audit (line 33 §1 seven-cell records); present audit of D2-D4 tonal relations, methodology at D4"
 ---
 
 # Music Column Cell Audit

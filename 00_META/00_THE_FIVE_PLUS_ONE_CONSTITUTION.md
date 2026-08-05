@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S/I] chosen practice constraints"
-  canonical_phrase: "Five refusals plus one direction — no commandments"
+  canonical_phrase: "Five refusals plus one direction — no commandments (chosen practice constraints; not laws derived from nature)"
 title: "The 5+1 Constitution — The Refusals"
 status: "ACTIVE — pure Emergentism refusal owner; dimension-first boundary confirmed 2026-07-21"
 evidence_tier: "Per refusal below; chosen normative and procedural constraints, not laws derived from nature"

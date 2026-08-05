@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0 immutable execution lock (2026-07-12) — freezes the A0 baseline at 26e616e and replaces live-head equality with a four-check relevance audit; a technical concurrency rule, not an approval gate."
+---
+
 # Kintsugi A0 — Immutable Execution Lock
 
 **Date:** 2026-07-12

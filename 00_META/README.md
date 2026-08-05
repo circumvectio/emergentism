@@ -1,3 +1,10 @@
+---
+type: lane-readme
+title: "00_META — canon custody and correction"
+status: "ACTIVE — canon custody and correction lane; routing and claim custody only, no new cosmology"
+canonical_phrase: "00_META lane — canon custody and correction; owns routing and claim custody (Settled Canon Registry, The Refusals, Kintsugi Protocol, claim cards, registers) but not new cosmology; forwarding stubs route, do not become a second owner"
+---
+
 # 00_META — canon custody and correction
 
 This lane owns routing and claim custody, not new cosmology.

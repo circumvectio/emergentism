@@ -4,6 +4,7 @@ status: "STAGED PRIVATE FULL-BOOK MANUSCRIPT — evidence-mapped; not public or 
 authority: "projection only; K-1 through K-7 retain semantic ownership"
 source_contract: "FULL_BOOK_1_CONTRACT.json"
 build_provenance: "09_TOOLS/02_COMPILERS/assemble_manifesto_book.py"
+canonical_phrase: "The Emergentist Manifesto — staged private full-book manuscript, evidence-mapped from bounded-current source cards (OS01-1..OS01-26 + FIN01); a fallibilist worldview and practice for finite beings, projection only, not public or deployed, with K-1..K-7 retaining semantic ownership."
 ---
 # The Emergentist Manifesto
 

@@ -6,7 +6,9 @@ rosetta:
   tier: "Auditor"
   regime: "Vaiśya"
   register: "[C] candidate extension · not adopted · authorises nothing"
-  canonical_phrase: "Named bio-rules add prediction only where they name a mechanism the dependency-graph does not"
+  canonical_phrase: "Named bio-rules add prediction only where they name a mechanism the dependency-graph does not (forward conjecture; not adopted)"
+  d_register: 4
+  d_register_basis: "named bio-rules candidate extension (line 10: \"[C] CANDIDATE EXTENSION\"); surveyed as a pack, methodology at D4"
 status: "[C] CANDIDATE EXTENSION to 32_PACK_ECO7. Entered with discriminators and kill criteria. Adopts nothing."
 date: 2026-08-03
 depends:

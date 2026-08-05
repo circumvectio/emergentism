@@ -2,7 +2,7 @@
 rosetta:
   primary_column: "Meta"
   register: "[S/I]"
-  canonical_phrase: "What Is Actually Novel Here"
+  canonical_phrase: "What Is Actually Novel Here (meta-interpretive inventory; [I] claims, [S] inventory itself)"
 ---
 
 # WHAT IS ACTUALLY NOVEL HERE

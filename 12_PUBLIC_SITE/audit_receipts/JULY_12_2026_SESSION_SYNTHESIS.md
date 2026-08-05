@@ -1,3 +1,6 @@
+---
+canonical_phrase: "July 12, 2026 session synthesis: the framework was audited, repaired, launched, and tested in one continuous execution — formal-logic audit, compass + amrita ship, seven-caste corpus audit with six golden seams, open-source launch, and four computational results (Path C/D blocked, R3 confirmed, KKT reconciled)."
+---
 # July 12, 2026 — The Session That Ran the Kill-Criteria
 
 **Status:** Canonical. K2-countersigned. Public.

@@ -3,6 +3,8 @@ type: emergentism-agent-route
 title: "D Series Agents — Agent route"
 status: "ACTIVE — pure Emergentism route, 2026-07-20"
 evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
+d_register: 4
+d_register_basis: "D-series lane route card (line 8: \"D Series Agents — Agent route\"); present methodology for navigation at D4"
 ---
 
 # D Series Agents — Agent route

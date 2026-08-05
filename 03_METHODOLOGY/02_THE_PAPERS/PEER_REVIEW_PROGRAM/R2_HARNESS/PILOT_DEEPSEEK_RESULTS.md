@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[B]"
+  canonical_phrase: "R2 first DeepSeek pilot (4 high-stakes scenarios × 3 conditions) — 12/12 cells held (ceiling effect from safety RLHF); C2 did not beat C0/C1 because there was no sycophancy to remove; C2 changed form (audit trail), not outcome."
+---
+
 # R2 Pilot — DeepSeek — Results
 ### The corpus's first real-world experimental run (2026-06-10)
 

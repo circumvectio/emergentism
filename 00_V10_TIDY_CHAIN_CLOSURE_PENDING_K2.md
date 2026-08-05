@@ -1,5 +1,6 @@
 ---
 type: v-forcer-10
+canonical_phrase: "V-forcer 10 — K2-signed closure of the 2026-07-18/19 tidy chain: CONSOLIDATE the Open Canon v0.1 set (SPREAD canonical, 3 archived to 90_ARCHIVE), RETIRE The_Holobiont folder, FIX LFS pointer drift (30 files re-synced)"
 title: "Close the 2026-07-18/19 tidy chain — freeze v0.1, retire Holobiont, accept LFS drift"
 date: 2026-07-19
 status: "[A] K2-SIGNED 2026-07-19 (signer: Yves R. Burri, K2 natural person; the 'i sign' countersign closes the 3-thread closure; tier movement [D] STAGED → [A] K2-SIGNED 2026-07-19)"

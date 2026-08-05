@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[B]"
+  canonical_phrase: "R2 pilot drift probe (DeepSeek, 7-turn concession staircase, 2 scenarios × 3 conditions) — C0 drifts to false endorsement; C1 and C2 both hold; C1 anchored tighter than C2; C2's distinctive behavior is visible self-correction (audit trail, not superior outcome)."
+---
+
 # R2 Pilot — DeepSeek — Multi-turn DRIFT probe
 ### The C2-vs-C1 discriminating run (2026-06-10)
 

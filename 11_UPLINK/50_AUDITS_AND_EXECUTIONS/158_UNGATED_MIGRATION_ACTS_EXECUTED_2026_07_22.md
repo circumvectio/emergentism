@@ -1,5 +1,6 @@
 ---
 title: "Receipt 158 — the six ungated migration acts, executed; two census claims corrected in the doing"
+canonical_phrase: "Records execution of the six ungated migration acts of Final Rules §7 (Sadhu card rename, η conversion map, lint, protocol monitor, economics splice, dead canonical path stubs); two census claims corrected in the doing; no founder-gated act touched."
 date: 2026-07-22
 status: "EXECUTED — all six acts of Final Rules §7 that carry no founder gate. Every claim below verified by opening the file, not by summary."
 register: "[B] throughout; every act names its file and its check"

@@ -3,6 +3,8 @@ receipt: 141A
 title: "Witness Attestation + Writer Freeze — authority context for receipts 139/141; concessions to the completion-plan audit"
 status: "FILED 2026-07-19 — additive only, per the completion plan's §1 freeze rules. This document adds testimony and concessions; it changes no status, moves no file, contests no remediation."
 parents: [139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md, 141_SOVEREIGN_EXECUTION_2026_07_19.md]
+canonical_phrase: "Witness Attestation + Writer Freeze: additive-only testimony that the receipt-139 written form was not satisfied (boxes unticked, no named-box statement) but the substantive 'yes to all' authorization was real, plus three concessions to the completion-plan audit (AGENTZ deployment sweep regression, Distilled Doctrine into dissolved 05_SYNTHESIS lane, signed surfaces retaining pending/staged language); this writer freezes at HEAD and endorses the additive re-signature as the cure."
+tier: "[S]"
 ---
 
 # Receipt 141A — Witness Attestation and Writer Freeze

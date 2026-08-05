@@ -1,3 +1,10 @@
+---
+type: lane-readme
+title: "Canonical Claim Cards"
+status: "ACTIVE — claim-card compiler route card"
+canonical_phrase: "Canonical Claim Cards — authoritative routing inputs (not semantic owners), JSON-subset YAML 1.2 parsed deterministically by 09_TOOLS/02_COMPILERS/compile_claim_cards.py; generated registers live under ../registers/"
+---
+
 # Canonical Claim Cards
 
 Files here are authoritative **routing inputs**, not semantic owners. They use

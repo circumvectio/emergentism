@@ -4,6 +4,8 @@ title: "Root Tidy Wave-2/3 Execution — 20 moves, forwarding stubs, no promotio
 status: "EXECUTED 2026-07-19 (commit c50f6a4) — founder-ordered in-session ('tidy all'); mechanical moves only"
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
+canonical_phrase: "Root Tidy Wave-2/3 Execution: 20 mechanical moves executed in commit c50f6a4 (2026-07-19) with A1 forwarding stubs at root, K3 throughout, and no promotions — founder-gated Waves 1/4/5 remain pending; the founder sitting is the gate that has not opened."
+tier: "[S]"
 ---
 
 # Receipt 138 — Root Tidy Wave-2/3 Execution

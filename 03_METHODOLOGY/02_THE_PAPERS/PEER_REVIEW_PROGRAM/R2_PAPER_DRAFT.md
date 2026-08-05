@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R2 paper — pre-registered test of whether a structured mediator constitution (tier-marking + non-inflation + agency-return) reduces sycophantic capitulation under founder-enthusiasm pressure vs. generic honesty; methods complete, results pending; pre-committed null (C2 ≈ C1) is publishable."
+---
+
 # Tier-Marking Mediator Constitutions Reduce Sycophantic Capitulation Under Founder-Enthusiasm Pressure
 
 **Yves R. Burri**

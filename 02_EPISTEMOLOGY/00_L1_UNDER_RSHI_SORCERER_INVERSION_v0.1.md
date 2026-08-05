@@ -1,3 +1,12 @@
+---
+rosetta:
+  canonical_phrase: "The Ṛṣi→Sorcerer inversion produces the army of outcasts; the L1 Caṇḍāla firewall IS that army — the system recruits its witness-corruption corrective from the witness-corruption's own byproduct"
+---
+
+---
+canonical_phrase: "L1 Caṇḍāla IS the army of outcasts produced by Ṛṣi→Sorcerer inversion; the firewall's job is to recognize itself in the byproduct, refuse the false narrative, and stand at η>0 — the L7↔L1 mirror is constitutional design, not observed result"
+---
+
 # L1 Under Ṛṣi→Sorcerer Inversion
 
 **Tier:** [I] interpretive inference · novel doctrine · v0.1

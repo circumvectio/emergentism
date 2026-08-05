@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R1 paper — formal systems distinguish frame (constitutive of the operation space) from operand (object the operations act upon); a structural signature (S1 constitutivity, S2 composition pathology, S3 stratified cure) recurs across set theory, the Lawvere-anchored diagonal family, and arithmetic; stratification is the uniform cure."
+---
+
 # Frames, Not Operands: A Structural Signature Across Arithmetic, Set Theory, and Semantics
 
 **Yves R. Burri**

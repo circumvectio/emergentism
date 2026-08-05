@@ -1,3 +1,12 @@
+---
+rosetta:
+  canonical_phrase: "Every mechanism claim about the brain/behaviour in the memetics files is [I] interpretive — a model or analogy, not settled [B] neuroscience"
+---
+
+---
+canonical_phrase: "Tiering discipline banner for 03_MEMETICS/: every mechanism claim about brain/behaviour is [I] interpretive (model/analogy), not [B] neuroscience; operational nouns (defense, firewall, hardening, inoculation, egregore) are model-language unless a dated receipt proves deployment"
+---
+
 # 03_MEMETICS — Tiering Discipline (read before the body files)
 
 > **Primetime-audit P0 (2026-06-10).** Sprint 1 found that the memetics files carry `[I]` in their frontmatter but the *body* prose uses strong-fact verbs — "physically hijacks," "precisely maps," "literally," "unequivocally" — that read as established empirical `[B]` neuroscience to a cold reader. This note is the authoritative tier banner for the whole sub-lane until per-file inline softening lands. It **adds** discipline; it deletes nothing (K3).

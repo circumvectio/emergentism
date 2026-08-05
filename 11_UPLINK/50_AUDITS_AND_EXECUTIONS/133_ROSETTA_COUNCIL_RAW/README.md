@@ -1,3 +1,8 @@
+---
+canonical_phrase: "routing stub — no claim"
+tier: "[S]"
+---
+
 # Rosetta council raw outputs — receipt 133
 
 Raw audit material preserved beneath the controlling receipt. It is evidence

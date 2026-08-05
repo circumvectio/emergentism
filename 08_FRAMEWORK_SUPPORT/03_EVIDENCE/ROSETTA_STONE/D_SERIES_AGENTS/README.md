@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[S/I]"
-  canonical_phrase: "D_SERIES_AGENTS — Front Door"
+  canonical_phrase: "D_SERIES_AGENTS — Front Door (front door; cross-domain agent-analysis projections interpretive)"
+  d_register: 4
+  d_register_basis: "front-door for D_SERIES_AGENTS (line 28: \"Operator-role analyses of the Rosetta D-series\"); present dispatch/route methodology at D4"
 title: "D_SERIES_AGENTS"
 evidence_tier: "[S] for internal Rosetta coordinates; [I] for cross-domain agent-analysis projections."
 type: evidence-front-door

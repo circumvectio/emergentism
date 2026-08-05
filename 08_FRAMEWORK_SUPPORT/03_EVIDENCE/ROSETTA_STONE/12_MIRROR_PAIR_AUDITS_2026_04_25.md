@@ -3,6 +3,8 @@ rosetta:
   primary_column: "Meta"
   register: "[S/I]"
   canonical_phrase: "12 — Mirror Pair Audits"
+  d_register: 4
+  d_register_basis: "row-pair audit packet testing the S² claim (line 13: \"Audit the three mirror pairs…\"); methodology about D2/D4 mirror geometry speaks at D4"
 ---
 
 # Mirror Pair Audits: L3/L5, L2/L6, L1/L7

@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R2 preregistration — tests whether a tier-marking mediator constitution (tier-marking + non-inflation + agency-return) reduces sycophantic capitulation under founder-enthusiasm pressure vs. generic honesty; 6 conditions × 40 scenarios; pre-committed kill criterion (C2 ≈ C1) is publishable as null."
+---
+
 # R2 — Constitutional Anti-Sycophancy: Preregistration Draft
 
 **Working title (external):** *Tier-Marking Mediator Constitutions Reduce Sycophantic Capitulation Under Founder-Enthusiasm Pressure*

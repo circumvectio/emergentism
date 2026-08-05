@@ -6,7 +6,7 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[S]"
-  canonical_phrase: "Execution plan — work orders, the anti-rederivation protocol, and the owner-only fence; findability and contact before doctrine"
+  canonical_phrase: "Execution plan — work orders, the anti-rederivation protocol, and the owner-only fence; findability and contact before doctrine ([S] dispatch surface; [I] frame in §1)"
 title: "The Execution Plan — for agents who were not here"
 status: "ACTIVE — dispatch surface. [S] throughout: this plan SELECTS an ordering and a protocol; it creates no canon and settles no claim. Every work order names who may execute it. The §2 prohibitions are hard stops for any agent."
 date: 2026-08-05

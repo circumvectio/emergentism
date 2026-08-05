@@ -1,3 +1,7 @@
+---
+canonical_phrase: "Handoff index: root-level working packets and dated bounded-wave folders (2026-07-19, 2026-07-22); corpus source owners hold truth."
+---
+
 # Handoff index
 
 Root-level files are named working packets. Dated subfolders collect bounded

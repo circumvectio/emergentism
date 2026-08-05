@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[B/I/C]"
-  canonical_phrase: "Game Theory and Strategy L-Level Mapping"
+  canonical_phrase: "Game Theory and Strategy L-Level Mapping (L-level mapping interpretive; L6-L7 categories untested)"
+  d_register: 4
+  d_register_basis: "domain mapping table game theory (line 25: \"⊙ GAME THEORY & STRATEGY\"; line 27 \"L-Level × Strategic Interaction\"); Rosetta applied at D4"
 title: "Game Theory & Strategy"
 status: "D-series domain mapping"
 evidence_tier: "[B] for attributed game-theory background; [I] for L-level mapping; [C] for L6-L7 categories. No local observation receipt is claimed."

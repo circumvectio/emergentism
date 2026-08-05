@@ -6,7 +6,9 @@ rosetta:
   tier: "Auditor"
   regime: "Vaiśya"
   register: "[C] candidate extension · not adopted · authorises nothing"
-  canonical_phrase: "Batch-2 bio-rules: genetics, allometry, neutrality, and the fidelity critique that constrains the holobiont image"
+  canonical_phrase: "Batch-2 bio-rules: genetics, allometry, neutrality, and the fidelity critique that constrains the holobiont image (forward conjecture; not adopted)"
+  d_register: 4
+  d_register_basis: "batch-2 bio-rules extension (line 10: \"[C] CANDIDATE EXTENSION to 33_PACK_ECO7_EXTENSIONS_BIO_RULES\"); surveyed pack, methodology at D4"
 status: "[C] CANDIDATE EXTENSION to 33_PACK_ECO7_EXTENSIONS_BIO_RULES. Surveyed with discriminators and kill criteria. Adopts nothing."
 date: 2026-08-03
 depends:

@@ -1,6 +1,7 @@
 ---
 receipt: 144
 title: "Corrected Receipt 139 — natural-person partial signature record"
+canonical_phrase: "Records the corrected natural-person partial signature at 2026-07-19 23:58:15 +07 against signing-manifest SHA-256 15499d813eea11025f8ba0347eedc2c01f212778bf52103af8efb249d71d3f94: adopts Boxes 1, 2, 4, 5, 7, 8, 9; chooses Box 3(b); defers Box 6 and Boxes 10-15; authorizes no physical execution."
 status: "FILED [B/S] 2026-07-19 23:58:15 +07 — records the exact natural-person statement and resulting bounded authority; no physical execution authorized."
 parents:
   - 139_THE_SIGNING_SITTING_PENDING_SIGNATURE.md

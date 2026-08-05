@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "Citation verification ledger (2026-06-10) — 11/11 load-bearing R1–R5 references exist, 0 fabricated; calibrations on Suda (tier downgrade: preprint, not peer-reviewed) and causal-entropic dispute; one new prior-art (arXiv 2505.04646) to engage."
+---
+
 # Citation Verification Ledger
 
 **Verified 2026-06-10 via live web search.** Every load-bearing reference in the R1–R5 drafts was drafted from model memory; this ledger records which have been confirmed against primary/authoritative sources and at what tier. **Status key:** ✅ confirmed (venue + year + pages match as drafted); ⚠️ confirmed-with-calibration (exists, but tier/scope needs adjustment in-text); ⛔ not found / fabricated (none so far). Unverified items remain flagged in their papers.

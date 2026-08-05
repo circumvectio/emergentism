@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "The honesty machine was the invention all along — a worldview can audit itself and survive — and the contact is the only test left"
+---
+
 # Rumination on the Ten Revelations
 
 > *Evidence tier: [I] — illuminating reading, not proof. Contemplation, not doctrine.*

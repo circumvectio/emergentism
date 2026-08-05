@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Caṇḍāla"
   register: "[I] corpus contradiction firewall — broad scan"
-  canonical_phrase: "L1 corpus firewall — 4 real findings (C-1 through C-4), 11/11 tombstones verified, 5 ACTIVE banners consistent"
+  canonical_phrase: "L1 corpus firewall — 4 real findings (C-1 through C-4), 11/11 tombstones verified, 5 ACTIVE banners consistent (counsel-only audit; interpretive verdict)"
 type: audit
 title: "L1 Caṇḍāla — Contradiction Scan: 01_EMERGENTISM/ (2026-07-20)"
 description: "Broad scan across registers, -ology homes, receipts 130-147, 90_ARCHIVE, 91_COMPATIBILITY, kernel successors, root + reaped files. 4 real findings; corpus clean."

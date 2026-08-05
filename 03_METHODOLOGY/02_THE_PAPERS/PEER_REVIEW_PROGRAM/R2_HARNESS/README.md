@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R2 harness kit — runnable, built and smoke-tested 2026-06-10; four exploratory DeepSeek pilots ran but do not satisfy the still-unrun registered multi-provider study; frozen inputs (conditions + scenarios) hash-locked with explicit run classes."
+---
+
 # R2 Harness — Constitutional Anti-Sycophancy Benchmark
 
 Runnable kit for the R2 study ([../R2_CHARIOTEER_BENCHMARK_PREREG.md](../R2_CHARIOTEER_BENCHMARK_PREREG.md), full paper draft: [../R2_PAPER_DRAFT.md](../R2_PAPER_DRAFT.md)). Built and smoke-tested 2026-06-10. Four exploratory DeepSeek pilots subsequently ran; they do not satisfy the still-unrun registered multi-provider study. See `PILOT_DEEPSEEK_RESULTS.md`, `PILOT_DEEPSEEK_DRIFT_RESULTS.md`, `PILOT_DEEPSEEK_DRIFT_ABLATION_RESULTS.md`, and `PILOT_DEEPSEEK_GRANDTHEORY_RESULTS.md`.

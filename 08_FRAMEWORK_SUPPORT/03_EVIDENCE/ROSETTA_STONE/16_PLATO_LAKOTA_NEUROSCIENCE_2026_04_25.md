@@ -3,6 +3,8 @@ rosetta:
   primary_column: "Meta"
   register: "[I]"
   canonical_phrase: "16 — Plato mirror-completion + Lakota Seven Rites + Neuroscience Path A/B framing"
+  d_register: 4
+  d_register_basis: "three forward research designs (line 11: \"Lane: Charioteer execution of the three forward items\"); research-protocol methodology at D4"
 ---
 
 # Plato Mirror-Completion · Lakota Seven Sacred Rites · Neuroscience Path A/B

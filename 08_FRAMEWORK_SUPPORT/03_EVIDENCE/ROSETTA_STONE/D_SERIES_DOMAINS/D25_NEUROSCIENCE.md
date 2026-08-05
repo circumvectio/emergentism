@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[B/I/C]"
-  canonical_phrase: "Neuroscience and Cognition L-Level Correlates"
+  canonical_phrase: "Neuroscience and Cognition L-Level Correlates (proposed correlates; L7 hypothesis untested)"
+  d_register: 4
+  d_register_basis: "domain mapping table neuroscience (line 25: \"⊙ NEUROSCIENCE & COGNITION\"; line 27 \"Neural Correlates of L-Levels\"); Rosetta applied at D4"
 title: "Neuroscience & Cognition"
 status: "D-series domain mapping"
 evidence_tier: "[B] for attributed neuroscience background; [I] for proposed correlates and L-level/hemisphere mapping; [C] for the L7 hypothesis. No local measurement receipt is claimed."

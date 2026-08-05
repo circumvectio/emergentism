@@ -16,7 +16,9 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[S/I]"
-  canonical_phrase: "Śūdra Regime and the Kālī Operator: A Comprehensive Systems Analysis of Democratic Topographies"
+  canonical_phrase: "Śūdra Regime and the Kālī Operator: A Comprehensive Systems Analysis of Democratic Topographies (cross-domain analysis; interpretive projections)"
+  d_register: 4
+  d_register_basis: "operator/regime systems analysis (line 25: \"A Comprehensive Systems Analysis of Democratic Topographies\"); present architectural analysis of L2 at D4"
 title: "The Śūdra Regime and the Kālī Operator"
 status: "D-series L2 agent analysis"
 evidence_tier: "[S] for internal Rosetta L2 coordinates; [I] for cross-domain democratic, neurocognitive, and mythological projections."

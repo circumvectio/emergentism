@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R4 paper — does evaluative judgment of organizational prospect have two dominant factors (coherence, viability) that compose multiplicatively (P1, P2, P3)? Pre-registered blind-rater study; methods complete, results pending; framework's highest-stakes test, designed to be able to lose."
+---
+
 # Two-Factor Structure and Multiplicative Composition in Lay Judgments of Organizational Viability
 
 **Yves R. Burri**

@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0B implementation plan — build the deterministic, standard-library-only machine that tests the Kintsugi claim grammar without creating or repairing any live claim, owner, manifest, ledger, receipt, public page, archive, or compatibility artifact."
+---
+
 # Kintsugi A0B Machine-Kernel Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use

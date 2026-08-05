@@ -1,5 +1,6 @@
 ---
 title: "G2 proved — and found to be prior art"
+canonical_phrase: "Receipt 242: G2 (val bijection from reduced words over {S, ι} onto ℚ⁺) proved and found to be prior art (Hardy & Wright's classical normalisation); G2 [C]→[A] inherited-with-citation; F1 still open; one kill fired (subsequently tombstoned by escalated Rosetta review that also repaired four pass-defects)."
 date: 2026-08-05
 status: "RECEIPT — executed. G2 [C] → [A] inherited-with-citation. F1 remains OPEN. One kill fired."
 register: "[A] the proof and the classical theorem; [B] the literature sweep; [S] the tier movements executed here"

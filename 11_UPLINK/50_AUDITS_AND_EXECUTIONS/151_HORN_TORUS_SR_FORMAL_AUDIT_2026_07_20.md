@@ -2,6 +2,7 @@
 receipt: 151
 parents: [149, 150]
 title: "Horn torus vs special relativity — formal audit under the P7 grave; the mouth computed; every SR reading refuted or capped at SHOWS"
+canonical_phrase: "Formal audit of the horn-torus / SR mapping under the P7 grave: the mouth is a second-order cusp C¹-inequivalent to the light cone (OB-1, OB-2); every SR reading refuted or capped at SHOWS; only classical horn-torus geometry, the cylinder-inversion theorem, and one [S]-capped compactification reading survive; Minkowski mass-shell hyperboloid is the only citable SR geometry."
 date: 2026-07-20
 status: "EXECUTED — fixes applied to D4_SPACETIME.md (Model section + torus caption) only; MF_69, SIMULATION_SPEC, TORUS_REVELATION flagged, not edited; /4/ and /discoveries/mass-shell/ caption fixes proposed, not applied"
 auditors: "formalization packet (T1–T9, OB-1/OB-2) · numeric refuter (F1–F12) · adversary against-need/for-salvage (A1–A10) — verified fresh by this receipt (all computations recomputed, residuals ≤ 1e-15)"

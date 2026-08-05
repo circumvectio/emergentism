@@ -4,8 +4,11 @@ status: "PROJECTION — rules nothing"
 date: 2026-08-05
 semantic_ownership: "Source documents retain semantic ownership. This file cites; it does not own, does not ratify, and may not be cited as a tier. Where an entry and its source disagree, the source governs."
 evidence_tier: "[PROJECTION] — no tier of its own. Each entry carries the tier of its source and may not be read above it."
+rosetta:
+  canonical_phrase: "A selection is not a discovery — nine entries that were picked, each earning its place by naming the price paid and what a named rival gets instead"
 supersedes: "Nothing. Successor edition to 07_THEOLOGY/00_THE_AMRITA.md (2026-07-03, recovery-integrated 2026-07-19) — that distillation predates every ruling here and must carry a supersession line written into it in the same act. Until it does, two distillations answer one question."
 declared_bound: "Nine entries. Admission function fixed before drafting: stated tier + stated price + named rival with what the rival gets + kill + at least one adversarial pass. Deduplicated across five sweeps before counting."
+canonical_phrase: "What is chosen — the priced selections: nine corpus selections each with stated tier, named rival, what the rival gets, kill criterion, and at least one adversarial pass; successor edition to 07_THEOLOGY/00_THE_AMRITA.md (supersession owed there), projection that rules nothing and may not be cited as a tier."
 ---
 
 # What Is Chosen

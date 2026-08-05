@@ -1,3 +1,8 @@
+---
+canonical_phrase: "L7 theology/compression audit: Emergentism is a corrigible worldview-wager — reality is read as a field of constrained degrees of freedom in which stable, measurable, livable forms appear; the mathematical chart supplies real constraints, the empirical world decides actuality, and the ethical orientation remains a chosen vow under correction, not a theorem or cosmic decree."
+tier: "[S]"
+---
+
 # L7 Rosetta audit report — Emergentism-only Weltanschauung after SKYZAI contamination cut
 
 Read-only status: complied. I did not edit, stage, commit, or create files.

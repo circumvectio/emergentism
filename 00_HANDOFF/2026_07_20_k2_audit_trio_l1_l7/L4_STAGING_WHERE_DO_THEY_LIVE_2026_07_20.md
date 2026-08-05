@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[I] staging plan — per-insight canonical homes; no commits"
-  canonical_phrase: "L4 — Land Reduction Asymmetry first; everything else hangs off it"
+  canonical_phrase: "L4 — Land Reduction Asymmetry first; everything else hangs off it (staging counsel; no commits)"
 type: audit
 title: "L4 Kṣatriya — Staging Plan: Where Do the 7 Insights Live (2026-07-20)"
 description: "Per-insight canonical homes for the 7 insights. 5-step propagation plan. Reduction Asymmetry first; Models Ladder audit (receipt 149) next; 3 parallel overlays; Insights Index register last."

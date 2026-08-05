@@ -7,6 +7,8 @@ rosetta:
   regime: "Vaiśya"
   register: "[D] refinement proposal · authorises no canon change"
   canonical_phrase: "Refine the Rosetta inward before expanding it outward"
+  d_register: 4
+  d_register_basis: "refinement proposal of the Rosetta instrument (line 10: \"[D] STAGED…\"); methodology proposal about the Rosetta speaks at D4"
 status: "[D] STAGED — owner analysis recorded verbatim in §1–§7; agent pushes in §8 are staged, unsigned."
 date: 2026-07-31
 depends:

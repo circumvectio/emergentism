@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[S]"
+  canonical_phrase: "R3 paper — under absorbing mortality, repeated Pigou–Dalton transfers targeted at the worst-off reduce aggregate welfare-time (~11%) because they reallocate trajectory rather than crossing regeneration thresholds; strong threshold restoration + targeted transfers recover the principle (100% survival, +26% welfare); objective is morally load-bearing (maximin and per-capita reverse the verdict)."
+---
+
 # Progressive Transfers Under Mortality: A Triage Inversion of the Pigou–Dalton Principle
 
 **Yves R. Burri**

@@ -3,6 +3,8 @@ type: emergentism-agent-route
 title: "D Series Agents — Claude compatibility route"
 status: "ACTIVE — pure Emergentism route, 2026-07-20"
 evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
+d_register: 4
+d_register_basis: "Claude compatibility route for D_SERIES_AGENTS (line 8: \"D Series Agents — Claude compatibility route\"); present methodology at D4"
 ---
 
 # D Series Agents — Claude compatibility route

@@ -13,6 +13,7 @@ source_receipts:
   - 00_HANDOFF/tidy/EMERGENTISM_TIDY_RECEIPT_2026_08_04.md (original T9; 8 active cited)
   - 00_HANDOFF/tidy/01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md (T2 follow-on T13; refresh owed)
   - /tmp/emergentism_R2_L2_L3_re_audit_report.md §3 #4 (F2-D count drift: 8→10)
+canonical_phrase: "K2 sign-queue count refresh (T13 of T2 follow-on, 2026-08-04): 10 active `_PENDING_K2` files + 1 V10 closure + 5 archived in 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/ = 16 total; A9 adjudication hold is a separate workstream"
 ---
 
 # K2 Sign-Queue Count Refresh — 2026-08-04

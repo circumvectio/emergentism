@@ -7,6 +7,7 @@ branch: codex/emergentism-remaining-adjudication-20260801
 may_sign: false
 may_authorize: false
 authority_effect: none
+canonical_phrase: "A9 remaining-adjudication merge measured (11 semantic doctrine-conflict files, all on the Dasein-widening / formal-clarification surfaces), held for L5 review, then discharged via merge dfd3df99 per §6.2 strategy (widening wording stands; rem-adj hardening lands on top)"
 ---
 
 # A9 — remaining-adjudication: measured, held, not lost

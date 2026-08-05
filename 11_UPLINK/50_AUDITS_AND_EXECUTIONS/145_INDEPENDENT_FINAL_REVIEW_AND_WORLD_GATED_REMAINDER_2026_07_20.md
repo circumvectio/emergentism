@@ -1,6 +1,7 @@
 ---
 receipt: 145
 title: "Independent Final Review — corrected Receipt 139 signature and world-gated remainder"
+canonical_phrase: "Independent final review returning REQUEST CHANGES / NO-GO: the corrected Receipt 139 signature is valid as a decision record but the live packet does not match every signed candidate hash; 10 items remain founder/legal/world gated."
 status: "REQUEST CHANGES [B/D] 2026-07-20 — natural-person partial signature is valid as a decision record, but the live packet does not match every signed candidate hash and no physical wave is authorized."
 parents:
   - 144_CORRECTED_RECEIPT_139_NATURAL_PERSON_SIGNATURE_2026_07_19.md

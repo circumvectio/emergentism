@@ -1,3 +1,7 @@
+---
+canonical_phrase: "Emergentism control route: this lane holds repository control evidence, not worldview doctrine; source owners outrank checklists, receipts, and publication state."
+---
+
 # Emergentism control routing
 
 This lane holds repository control evidence, not worldview doctrine. Source owners outrank checklists, receipts, and publication state.

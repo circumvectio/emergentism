@@ -2,6 +2,7 @@
 receipt: 150
 parents: [149]
 title: "Burri Sphere formal audit — claims C1–C14, three adversarial passes, verdicts applied"
+canonical_phrase: "Formal audit of claims C1–C14 of the Burri Sphere across 3 adversarial passes: every [A] arithmetic identity in C1–C8, C13, C14 computed exact on declared slice; grave scan clean (no source calls P∞ a maximum); fixes applied to D2_GEOMETRY.md + AUM rumination only; signed canon FLAGGED, not edited."
 date: 2026-07-20
 status: "EXECUTED — fixes applied to D2_GEOMETRY.md + AUM rumination only; signed canon (00_THE_BURRISPHERE.md, 00_CANONICAL_FORMULA_BLOCK.md) FLAGGED, not edited"
 auditors: "math refuter · grave/register checker · philosophical adversary (3 independent passes)"

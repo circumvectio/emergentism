@@ -3,6 +3,8 @@ type: emergentism-agent-route
 title: "Rosetta Stone — Claude compatibility route"
 status: "ACTIVE — pure Emergentism route, 2026-07-20"
 evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
+d_register: 4
+d_register_basis: "Claude compatibility route (line 8: \"Rosetta Stone — Claude compatibility route\"); present methodology for tool-compatibility at D4"
 ---
 
 # Rosetta Stone — Claude compatibility route

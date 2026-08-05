@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0 implementation plan — establish the deterministic, no-K2 foundation: freeze the execution base at 26e616e, preserve the known test state as data, and add a standard-library validator shell (canonical hashing, safe paths, exact baseline comparison, stable diagnostics, truthful CLI)."
+---
+
 # Kintsugi A0 Foundations Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

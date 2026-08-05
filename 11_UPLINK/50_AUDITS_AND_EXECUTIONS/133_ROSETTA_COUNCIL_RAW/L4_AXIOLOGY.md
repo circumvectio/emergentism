@@ -1,3 +1,8 @@
+---
+canonical_phrase: "L4 axiology audit: ethics is a chosen vow, not a theorem from geometry — the eternal is the structure, the good is the vow; the DoF thesis survives only after being weakened to parametric realism, not unrestricted modal realism."
+tier: "[S]"
+---
+
 # L4 Axiology / Consequence Audit Report — Emergentism-Only Weltanschauung
 
 Role: L4 — Axiology / Consequence

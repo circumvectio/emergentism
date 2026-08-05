@@ -6,7 +6,9 @@ rosetta:
   tier: "Auditor"
   regime: "Vaiśya"
   register: "[S] the rival shape; [I] any particular rival's content"
-  canonical_phrase: "Every cell's strongest rival must be named, auditable, and applied"
+  canonical_phrase: "Every cell's strongest rival must be named, auditable, and applied (rule architecture; particular rival content interpretive)"
+  d_register: 4
+  d_register_basis: "rival-pack scaffold (line 11: \"ACTIVE v0 — scaffold for four rival packs\"); [S] rival shape, methodology at D4"
 title: "Counter-Rosetta Library v0 — the strongest rivals of the seven-row projection"
 status: "ACTIVE v0 — scaffold for four rival packs; the comparison protocol is named, the cells are empty"
 date: 2026-07-31

@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] — navigational compression; internally coherent, externally uncalibrated"
-  canonical_phrase: "THE COMPASS — MODEL POSSIBILITY, COMMIT ACTUALITY, ANSWER TO RECEIPTS"
+  canonical_phrase: "THE COMPASS — MODEL POSSIBILITY, COMMIT ACTUALITY, ANSWER TO RECEIPTS (navigational compression; externally uncalibrated)"
 date: 2026-07-17
 status: "ACTIVE [I] — internally repaired; externally uncalibrated"
 ---

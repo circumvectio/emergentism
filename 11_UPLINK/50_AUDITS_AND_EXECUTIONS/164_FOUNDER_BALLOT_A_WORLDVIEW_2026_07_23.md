@@ -1,6 +1,7 @@
 ---
 receipt: 164
 title: "Founder Ballot A — the worldview gates, staged for one countersignature"
+canonical_phrase: "[D] STAGED decision aid for the mortal signer: six worldview gates (FG-2, FG-12, FG-4, FG-3, FG-1, FG-5) presented with prior council recommendation, dissent, and adversary's 'Before you sign'; no gate decided; each carries a blank signature line only the founder can fill."
 date: 2026-07-23
 status: "[D] STAGED — NOT SIGNED, NOT AUTHORITY. A decision aid for the mortal signer. No gate below is decided; each carries the prior council's recommendation, its dissent, and a blank signature line."
 register: "[D] the open decisions; [B] every path:line claim inside them"

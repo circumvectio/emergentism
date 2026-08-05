@@ -1,5 +1,6 @@
 ---
 title: "Receipt 157 — Correction: two errors in the K-namespace analysis (receipts/documents of 2026-07-22)"
+canonical_phrase: "Withdraws two claims from the 2026-07-22 K-namespace work: G-K3 (the cited file K3_SEMANTIC_RESOLUTION is a labelling operation, not a deletion instruction) and the fabricated self-correction (the ledger led with the K3 finding, not K2); no rule is changed."
 date: 2026-07-22
 status: "EXECUTED — correction. Withdraws G-K3 and one claimed self-correction. No rule is changed."
 register: "[B] both errors verified by direct reading of the cited files"

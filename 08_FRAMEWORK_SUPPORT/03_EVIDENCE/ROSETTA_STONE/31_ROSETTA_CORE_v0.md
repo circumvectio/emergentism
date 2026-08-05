@@ -7,6 +7,8 @@ rosetta:
   regime: "Vaiśya"
   register: "[S] architecture; [I] any particular pack"
   canonical_phrase: "Core + Packs + Ledger — Rosetta as a translation system, not a law of the cosmos"
+  d_register: 4
+  d_register_basis: "Rosetta architecture spec (line 23: \"specifies the architecture…\"); metarules describing relations of packs/ledger at D4"
 title: "Rosetta Core v0 — Core + Packs + Ledger"
 status: "ACTIVE v0 — the architecture; supersedes §2 of 30_ROSETTA_VNEXT_REFINEMENT_2026_07_31 which now records the kill-criterion read"
 date: 2026-07-31

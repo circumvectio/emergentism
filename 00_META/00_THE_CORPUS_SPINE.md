@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[S]"
-  canonical_phrase: "Discipline and dimension are two axes; the corpus is filed on one and indexed on the other"
+  canonical_phrase: "Discipline and dimension are two axes; the corpus is filed on one and indexed on the other ([S] index; [I] correspondence not load-bearing)"
 title: "The Corpus Spine — • D1 D2 D3 D4 D5 ○ as an index, not a move"
 status: "ACTIVE — routing surface. [S] throughout. Creates no canon, moves no file, and does not promote the Seed Ladder from 'reader projection' to canon. The D-register becomes an INDEXED FIELD, not a folder."
 date: 2026-08-05

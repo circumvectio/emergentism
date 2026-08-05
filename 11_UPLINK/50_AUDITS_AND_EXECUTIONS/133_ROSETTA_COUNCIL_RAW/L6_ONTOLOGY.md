@@ -1,3 +1,8 @@
+---
+canonical_phrase: "L6 ontology audit: degrees of freedom are relational constraint-structures, not Forms, objects, substances, or pre-existing inhabitants of a modal heaven — S² is a chart lens, not the Ground; the anti-reification rule says Ground ≠ model, DoF ≠ Forms, ethics ≠ geometry."
+tier: "[S]"
+---
+
 # L6 Ontology / Non-Reification Audit Report — Emergentism-Only Weltanschauung
 
 Role: L6 — ontology / non-reification.

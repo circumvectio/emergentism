@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Formal Reap — Lean 4 proof kernel testing the mathematical claims in 10_SEED/02_THE_REAP.md: proves consequences that follow from explicit definitions and premises, and supplies countermodels where the Reap's prose is stronger than those premises permit (37 theorem/countermodel certificates, no sorry/admit/custom axioms)."
+---
+
 # Formal Reap — Lean 4 proof kernel
 
 **Status:** `[B]` locally machine-checked proof support; `[S]` for formal implications; no automatic doctrine promotion.

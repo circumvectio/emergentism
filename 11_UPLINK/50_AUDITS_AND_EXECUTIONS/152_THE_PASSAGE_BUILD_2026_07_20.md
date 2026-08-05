@@ -2,6 +2,7 @@
 receipt: 152
 parents: [149, 150, 151]
 title: "The Passage build — √2 spindle verified, double-cover computed, animation-truth synced, canon rumination filed, The Crossing shipped to the public funnel (no deploy)"
+canonical_phrase: "Receipt 152 records the Passage build: √2 spindle verified [A], degeneration family computed (double-cover at R=0), animation-truth synced, canon rumination filed, The Crossing flagship page built, three caption syncs done; NO DEPLOY; receipt 151 governs."
 date: 2026-07-20
 status: "EXECUTED — canon rumination written; flagship page + two gallery cards built; three discovery pages caption-synced; regression pass run and count-drift fixed; NO DEPLOY; D4_SPACETIME.md and all 15x receipts untouched"
 auditors: "Phase-1 verifier (√2 spindle, exact + numeric) · degeneration-family computation (sympy exact, residuals ≤ 1e-8) · site build agent · caption-sync agent · regression verifier (this receipt)"

@@ -1,4 +1,5 @@
 ---
+canonical_phrase: "Destructive-act tombstone for book-pwa/node_modules (45,062 files, 862 MB intended); K2-authorized under Completion Plan §1, attempted 2026-07-19 but iCloud-blocked — all 4 deletion paths failed (mavis-trash, osascript, mv local, mv /tmp); regen contract preserved via package.json + package-lock.json."
 tombstone:
   date: 2026-07-19
   actor: Mavis (M5) under K2-delegated authority

@@ -1,5 +1,6 @@
 ---
 title: "Receipt 156 — Independent verification of the receipt-155 completion report (codex/emergentism-dimension-canon-purification)"
+canonical_phrase: "Independent verification from main of the receipt-155 completion report (branch codex/emergentism-dimension-canon-purification, HEAD 25b634d): branch discipline is sound, but two report claims did not hold (compatibility 14 files / 565 net lines lost; ASI documents copied not moved); the mortal-signer membrane question is founder-open."
 date: 2026-07-22
 status: "EXECUTED — verification only. No file on the audited branch was read-modified, merged, or reverted."
 register: "[B] verification record — every claim below carries the command that established it; [S] the membrane question; nothing here rules on it"

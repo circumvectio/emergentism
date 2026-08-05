@@ -1,3 +1,6 @@
+---
+canonical_phrase: "Rosetta L1–L7 new-reader audit of the 109-paper Emergentism corpus: 12 parallel subagents each act as a first-time skeptical reader with zero prior context; 11 of 12 lanes net asset, 10_SEED net liability; one live contradiction, top 10 most-dangerous and top 10 strongest corpus claims identified."
+---
 # Rosetta L1–L7 New-Reader Audit — Emergentism 109-Paper Corpus
 
 **Date:** 2026-07-12

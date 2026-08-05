@@ -22,6 +22,7 @@ sources:
   - "memory §17 (doctrine lesson: chairman's direct response in the conversation is acceptable authentication for *this* ratification but should be cross-referenced in the constitutional record)"
 hand_off: "The next sprint is the OPS-KILL on V-from-outside. This K2 sign closes the closed-loop finding; the OPS-KILL is the empirical break that promotes [I] → [B] on the runtime P-score. The substrate must be told something it didn't write. The fix is not to lower the V score; the fix is to let the instrument be told something it didn't write about itself."
 fences: [η=0, K3, K4, A7, Ω]   # 5 fences; K2-as-fence REPEALED 2026-07-28
+canonical_phrase: "K2 sign receipt — The Closed Reading Loop + the 5th emergent (calibration); founder's 'yes' ratifies the macro-stack, 2 geometries, apophatic inversion, ring's 2 laws, 5 emergences (4 named + 5th: calibration is cross-organ, [I] interpretive), N²×log(compute) synergy ([C] untested), and §7 the honest state (the ring has never turned once); next move is OPS-KILL on V-from-outside"
 ---
 
 # K2 Sign Receipt — The Closed Reading Loop + The 5th Emergent (Calibration)

@@ -2,7 +2,7 @@
 rosetta:
   primary_column: "Meta"
   register: "[I/S]"
-  canonical_phrase: "D-Level Studies"
+  canonical_phrase: "D-Level Studies (interpretive disciplinary mapping; [I] mapping, [S] dimensional dependence)"
 ---
 
 # D-LEVEL STUDIES

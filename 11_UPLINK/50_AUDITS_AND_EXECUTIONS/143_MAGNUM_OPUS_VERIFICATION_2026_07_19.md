@@ -4,6 +4,8 @@ title: "Magnum Opus Verification — topology, links, frontmatter, receipts, aut
 status: "FILED [B/D] 2026-07-19 — verification evidence over the reconciliation worktree. Receipt 144 later records a bounded partial signature; this remains verification, not execution authority."
 parents:
   - 142_MAGNUM_OPUS_RECONCILIATION_AND_PENDING_EXECUTION_MANIFEST_2026_07_19.md
+canonical_phrase: "Magnum Opus Verification: filed [B/D] 2026-07-19 verification evidence over the reconciliation worktree — passes for file-roster cardinality (2,913 unique, 0 missing), frontmatter delimiters, stranger-path local links, Agentz restoration (31 deployment artifacts back to 00_META), and whitespace; fails/typed-debt on receipt-prefix uniqueness (21 collisions, including the intentional 139 pair), 1,309 REVIEW disposition rows, contextual dead-form triage (366 hits), one preserved-frozen book-pwa link, and 348 external/outside provenance links; verdict: NO-GO for physical execution, boxes 6/10–15 still deferred."
+tier: "[S]"
 ---
 
 # Receipt 143 — Magnum Opus Verification

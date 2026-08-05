@@ -3,6 +3,8 @@ rosetta:
   primary_column: "Neuroscience"
   register: "[B/I/C]"
   canonical_phrase: "15 — Neuroscience Column Cell Audit"
+  d_register: 4
+  d_register_basis: "neuroscience column audit (line 11: \"Active column audit / pressure column\"); methodology auditing D2-D4 neural correlates speaks at D4"
 ---
 
 # Neuroscience Column Cell Audit

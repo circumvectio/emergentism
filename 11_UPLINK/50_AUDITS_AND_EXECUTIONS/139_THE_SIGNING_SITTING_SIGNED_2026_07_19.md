@@ -6,6 +6,8 @@ superseded_by: "139_THE_SIGNING_SITTING_SIGNED_2026_07_20.md — the corrected/s
 parents:
   - 137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md
   - 138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md
+canonical_phrase: "Disputed The Signing Sitting (2026-07-19): preserved as K3 dissent per receipt 141A — boxes 1–7 appear ticked but boxes 8–9 are unticked, defaults were agent-selected, and the founder's current instruction returns this sitting to unsigned state; superseded by 139 SIGNED 2026-07-20 (the corrected surface, authority receipt 145 per 146), which governs where the two conflict."
+tier: "[S]"
 ---
 
 # Receipt 139 — The Signing Sitting

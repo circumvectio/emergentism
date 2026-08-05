@@ -4,8 +4,11 @@ status: "PROJECTION — rules nothing"
 date: 2026-08-05
 semantic_ownership: "Source documents retain semantic ownership. This file reports; it rules nothing, promotes no tier, creates no second owner, and confers no ratification by inclusion. Where this file and a source disagree, the source governs."
 evidence_tier: "[PROJECTION] — no tier of its own. Each entry carries the tier of its source, unpromoted. Where a source is unratified or draft, that status travels on the same line as the claim."
+rosetta:
+  canonical_phrase: "Twenty-four narrated deaths, nine register graves, ten unpaid invoices — the necrology of the churning, where over-dressing was the disease"
 currency: "CURRENCY REFRESH 2026-08-05, after the composing sweeps. The five sweeps that produced this folder ran BEFORE a4a3a493 (canon emblem amendment, STAGED), 53166c15 (seven-site propagation), e9990372 (43 §1/§7 caught up), a0951547 (six stale figures corrected at site), d7915745 (both registers regenerated) and 87c06bee (the day's artifacts recorded in the ledger). Commit order is not content currency. Every anchor and count below was recomputed against disk at 10b8890f in this pass, not re-quoted. STANDING RULE, and it is the transferable finding of the refresh: an anchor is valid only against the declared sweep commit, and a projection whose sweeps ran at two disk states is withdrawn, not patched."
 supersession_owed: "This file's death-side entries postdate 07_THEOLOGY/00_THE_AMRITA.md (DISTILLATION 2026-07-03, recovery-integrated 2026-07-19, 48 halāhala). That file carries none of them. A supersession line is owed IN that file, by owner act, in the same act that ships this folder. Until it is written, two distillations give two answers."
+canonical_phrase: "What died — the necrology of the churning: twenty-four narrated death entries, nine register graves, ten unpaid invoices, and six repeated error shapes from the §I repeated-error-shapes taxonomy; supersedes the halāhala half of 07_THEOLOGY/00_THE_AMRITA.md (supersession line owed there), projection that reports and rules nothing."
 ---
 
 # What Died

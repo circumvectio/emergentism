@@ -1,3 +1,8 @@
+---
+rosetta:
+  canonical_phrase: "Kintsugi A0B controlling addendum (pre-v1 implementation boundary, schema 1.0.0) — resolves five pre-freeze contradictions; schema exposes exactly three selectable root roles (coreData, publicQueue, baselineAllowlist); pre-v1 claim gains supportLinks, typed upgradeCriterion, killCriterion, survivingIfKilled, authorityScope, authorityEffect; manifest gains requiredClaimBindings; Rosetta transfer firewall added."
+---
+
 # Kintsugi A0B Machine-Kernel Addendum
 
 **Date:** 2026-07-12

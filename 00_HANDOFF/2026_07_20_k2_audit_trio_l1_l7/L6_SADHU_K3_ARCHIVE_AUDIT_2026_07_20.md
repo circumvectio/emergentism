@@ -1,3 +1,11 @@
+---
+type: k2-audit-handoff
+title: "L6 Sādhu — K3 Archive Discipline Audit (2026-07-20)"
+date: 2026-07-20
+status: "counsel only — staged findings, no moves, no renames, no commits, no erasure"
+canonical_phrase: "L6 Sādhu K3 archive-discipline audit: tombstones well-formed and honest, 22 dead forms buried, 5 stones healed and 4 suffix drops honored; two propagation gaps remain (Distilled Doctrine canonical_path, scripts_legacy_convenience_copy lane tombstone)"
+---
+
 # L6 Sādhu — K3 Archive Discipline Audit (2026-07-20)
 
 **Authority:** K2-delegated L6 (Śiva •), Mavis root session, per receipt 146 ("execute"). Counsel only.

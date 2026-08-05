@@ -3,6 +3,8 @@ receipt: 137
 title: "Final Structure & Papers-Lens Proposal — Rosetta seven-caste evaluation (READ-ONLY product)"
 status: "STAGED [D] 2026-07-19 — proposal only; NOTHING moves until the founder's Wave-1 signature sitting (receipt 135/136 fence). Castes 2–7 verdicts truncated in transmission: recorded as ABSENT, not approval — re-transmit before Wave 1."
 provenance: "workflow wf_ed4db58f-e48 · 17 agents (4 survey, 1 architect, 7 castes, 4 paper-clusters, 1 synth) · full per-agent record in the workflow journal"
+canonical_phrase: "Final Structure & Papers-Lens Proposal: staged [D] Rosetta seven-caste evaluation with 32-file root tree, 4 ordered waves, and a 13-row papers verdict — only L1 Caṇḍāla's verdict arrived intact; castes 2–7 truncated in transmission (recorded as ABSENT, not approval); founder's Wave-1 signature sitting is the gating fence and NOTHING moves until then."
+tier: "[S]"
 ---
 
 # FINAL FOLDER STRUCTURE PROPOSAL — 01_EMERGENTISM

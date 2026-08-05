@@ -7,6 +7,8 @@ rosetta:
   regime: "Vaiśya"
   register: "[D] first cell under the vNext schema · authorises nothing"
   canonical_phrase: "SOUL4 → GEN7 — three rows definitional, one informative"
+  d_register: 4
+  d_register_basis: "first cell under vNext schema (line 10: \"first cell recorded under the vNext schema\"); Rosetta instrument at D4 with [I] mapping"
 status: "[D] STAGED — mapping_tier [I], dependency_status FRAMEWORK-DERIVED, outcome_status PENDING."
 date: 2026-07-31
 depends:

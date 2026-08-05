@@ -3,6 +3,8 @@ receipt: 141
 title: "Sovereign Execution — delegated decisions + remaining waves executed"
 status: "DISPUTED EXECUTION PROVENANCE [B/D] — effects are not current authority. Preserved to record what the concurrent writer did; founder's current instruction returns Receipt 139 and its gated waves to unsigned/not-done state."
 parents: [139_THE_SIGNING_SITTING_SIGNED_2026_07_19.md, 00_META/00_THE_MAGNUM_OPUS_BLUEPRINT.md]
+canonical_phrase: "Disputed Sovereign Execution: eight delegated decisions (D-1 charter = DRAFT canonical, D-2 Sophia-Perennis Documents-level grave, D-3 registry rows 56/60-63 at-tier pointer amendment, D-4 revelations = 12, D-5 book-pwa node_modules approved-in-principle-not-executed, D-6 kernel v0.1 stub-don't-heal, D-7 SEVENFOLD script-pinned, D-8 cosmology ontology-trio = pointer not move) plus the K-5→REFUSALS, K-6→REVELATIONS, K-7→RECORD_LEDGER, front-door tombstones, and read-order heals — preserved as provenance, not current authority; the founder can reverse any line by naming it."
+tier: "[S]"
 ---
 # Receipt 141 — Sovereign Execution
 

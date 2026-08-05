@@ -2,6 +2,10 @@
 title: "Rosetta ledger — two parallel implementations collided"
 date: 2026-07-31
 status: "[S] observation. Nothing reconciled; nothing of either party's work altered."
+d_register: 4
+d_register_basis: "convention collision observation (line 4: \"[S] observation\"); audit of factual divergence at D4"
+rosetta:
+  canonical_phrase: "Two parallel sessions built the Rosetta ledger with different conventions in the same file; the checker reporting 38 problems is the checker working"
 ---
 
 # Why `check_rosetta_cells.py` reports 38 problems

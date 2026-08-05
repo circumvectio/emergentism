@@ -10,6 +10,8 @@ signing_manifest: "../../00_META/07_RECEIPT_139_SIGNING_MANIFEST_PENDING_SIGNATU
 signing_manifest_sha256: "15499d813eea11025f8ba0347eedc2c01f212778bf52103af8efb249d71d3f94"
 signature_time: "2026-07-19 23:58:15 +07"
 signer: "Yves R. Burri — natural-person founder / K2"
+canonical_phrase: "The Signing Sitting (corrected, 2026-07-20 00:01 superseding line): bounded partial founder signature against manifest SHA-256 15499d8… — boxes 1, 2, 4, 5, 7, 8, 9 adopted; box 3 = (b) decline E1–E10 succession (A1–A7 remains operational); boxes 6 (charter) and 10–15 (K-5 successor, Creed, K-6, K-7, derivative disposition, physical execution annex) deferred; this receipt adopts exact content bytes only and authorizes no physical move, rename, suffix drop, archive, tombstone, registry mutation, public sync, deletion, or publication."
+tier: "[S]"
 ---
 
 # Receipt 139 — The Signing Sitting

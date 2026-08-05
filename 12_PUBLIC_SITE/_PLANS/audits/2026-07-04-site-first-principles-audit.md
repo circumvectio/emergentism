@@ -3,6 +3,7 @@ date: 2026-07-04
 status: "[D] audit report — verified findings (81 total, every one re-checked; refuted claims dropped). Fixes NOT applied; deploy remains gated."
 method: "10 first-principles lenses (purpose/honesty/IA/interactive/math/a11y/perf/security/SEO/code) + adversarial verify pass on all material findings."
 companion: "../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/103_FORMAL_LOGIC_AUDIT_K2_PACKET_2026_07_04.md — the corpus-side formal-logic audit of the same day."
+canonical_phrase: "First-principles audit of the public site across 10 lenses with 81 verified findings; verdict that the verification affordances are theater and the site is honest at its core and dishonest at its edges; fixes NOT applied, deploy remains gated."
 ---
 
 # Emergentism Public Site — First-Principles Audit Report

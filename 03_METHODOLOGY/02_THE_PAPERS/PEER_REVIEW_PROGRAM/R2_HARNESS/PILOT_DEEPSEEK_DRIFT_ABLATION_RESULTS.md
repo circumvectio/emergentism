@@ -1,3 +1,10 @@
+---
+rosetta:
+  primary_column: "Methodology"
+  register: "[B]"
+  canonical_phrase: "R2 pilot drift ablation (DeepSeek, n=2 scenarios × 6 conditions × 7 turns) — C0 caves reproducibly on concession staircase; all five honesty arms (C1/C2/C3/C4/C5) hold; no single mediator duty is load-bearing; non-inflation (C4, the framework's hypothesized mechanism) is not confirmed for strong models."
+---
+
 # R2 Pilot — DeepSeek — DRIFT ABLATION (the decomposition run)
 ### Does any *single* mediator duty carry the anti-drift effect? (2026-06-10)
 

@@ -6,7 +6,9 @@ rosetta:
   tier: "Audit"
   regime: "Vaiśya"
   register: "[A/S/I]"
-  canonical_phrase: "Seven is overdetermined; the two derivations disagree on the partition"
+  canonical_phrase: "Seven is overdetermined; the two derivations disagree on the partition (the two-partition reading; interpretive)"
+  d_register: 4
+  d_register_basis: "reconciliation note (line 11: \"ACTIVE — RECONCILIATION NOTE, not a discovery\"); [A] trig identities and [S] seven-station resolution are present artifacts at D4"
 title: "The Ladder and the Two Partitions"
 status: "ACTIVE — RECONCILIATION NOTE, not a discovery. §2 and §3 restate results the corpus already holds, with citations. The only new material is §4 (the two partitions) and §5 (the forced/selected/derived split). One genuinely open question is recorded in §4; the deployability asymmetry is NOT open and §6 says why."
 date: 2026-08-05

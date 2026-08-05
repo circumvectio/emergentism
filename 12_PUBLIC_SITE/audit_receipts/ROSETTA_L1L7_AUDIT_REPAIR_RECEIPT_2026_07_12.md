@@ -1,3 +1,6 @@
+---
+canonical_phrase: "Rosetta L1–L7 audit repair receipt: five packaging repairs executed (live contradiction in COMMANDMENT_VS_GEOMETRY repaired, 10_SEED split into constitution + poetry, THE_KNIFE summarized for public, Torus Revelation K3-tombstoned, THE_KNIFE surfaced on 3 wings); predeploy gate PASS, Manhattan frame test post-repair."
+---
 # Rosetta L1–L7 Audit Repair Receipt — All Changes Executed
 
 **Date:** 2026-07-12

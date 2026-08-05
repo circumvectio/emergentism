@@ -1,3 +1,6 @@
+---
+canonical_phrase: "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, and accountable action, offered as a lens and compass; contains the one-sitting reading ladder, the evidence-tier contract, the three-tier standing (Established / Work in progress / Archive), the compressed compass, and the repository map."
+---
 # Emergentism
 
 Emergentism is a fallibilist worldview about constraint, degrees of freedom,

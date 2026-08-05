@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I/C]"
-  canonical_phrase: "Spiritual and Yogic Mappings"
+  canonical_phrase: "Spiritual and Yogic Mappings (yogic synthesis interpretive; metaphysical union claims untested)"
 title: "Spiritual & Yogic Mappings"
 status: "D-series domain mapping"
 evidence_tier: "[I] for yogic/chakra/alchemical synthesis; [C] for metaphysical union claims as stated."

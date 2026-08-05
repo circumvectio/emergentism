@@ -1,3 +1,6 @@
+---
+canonical_phrase: "Implementation plan to build the bespoke /amrita/ front-door route leading with the [A]-proven conjugacy result, made felt via one interactive Burrisphere runaway scene, then the tier-honest nectar/halāhala ladder linking into the generated library."
+---
 # The Honest Spine (Amrita front door) — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.

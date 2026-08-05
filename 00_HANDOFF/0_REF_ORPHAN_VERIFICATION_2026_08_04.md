@@ -5,6 +5,8 @@ date: 2026-08-04
 timestamp: "2026-08-04T13:19:00+07:00"
 authority_basis: "T14 in 01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md (chair ratified 2026-08-04 'i ratify')"
 tier_marks: [S, I, D]
+rosetta:
+  canonical_phrase: "Seven 0-ref orphan candidates named for lane-owner verification; L1 names and does not delete — no cooperator file marked orphan, no delete executed"
 status: "[S] named; lane-owner verify; L1 does not delete"
 may_sign: false
 may_authorize: false
