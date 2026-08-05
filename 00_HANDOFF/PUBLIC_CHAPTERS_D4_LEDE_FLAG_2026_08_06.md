@@ -3,7 +3,7 @@ title: "FLAG — public chapter 4 lede carries struck content; deploy-gated"
 type: flag-receipt
 date: 2026-08-06
 evidence_tier: "[S] the exposure inventory, verified on disk 2026-08-06 00:30"
-status: "OPEN — the generated routes are gitignored and untracked; deploy is owner-gated and there is no partial deploy (buildCommand null, outputDirectory '.'). A repair wave is active on the chapters (mtimes 00:06–00:22); this flag is handed to it and to the deploy decision."
+status: "RESOLVED 2026-08-06 — the site sweep (commit 2828be05, 352 files, emblem count 476→0, product-form sweep, corrections page at /corrections/) repaired the chapter-4 lede: the receipt line is struck through with the corrected headline substituted ('The act is actual whether or not a receipt carries it. The receipt is for admissibility.'), a Repaired section carries the full strike record, and the killed-items page lists the price-list metaphor [killed] and the reflexive claim [refuted]. Verified on disk: all remaining occurrences of the struck lines sit inside strike/repair/kill-list context, which is the corpus pattern. The deploy gate remains owner-gated; this flag closes."
 may_sign: false
 may_authorize: false
 authority_effect: none
