@@ -113,7 +113,7 @@ source. Same question — was the source change intended?
 
 ## What WAS repaired this session
 
-Six definitions lost in merge `80759036`, recovered verbatim from `1797138a`
+Six definitions lost in merge `80759036` **[CORRECTED 2026-08-05: SEVEN. The bullets below list seven; the figure said six. Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md — a document written to correct "an unverified number quoted as a result" miscounted its own list.]**, recovered verbatim from `1797138a`
 with provenance comments in place:
 
 - `check_claim_status.py` — `INVESTIGATION_STATES`, `PINNED_GRAVE_STATUS`
@@ -151,7 +151,7 @@ three minutes by anyone who owns it:
 python3 09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py --write
 ```
 
-Consequence in the meantime: the three artifacts created today
+Consequence in the meantime **[FIGURE CORRECTED 2026-08-05: not three — ALL TWELVE files added today are absent from the register, per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md; the three named below are a subset]**: the three artifacts created today
 (`55_G2_PRIOR_ART_ADJUDICATION.md`, receipt `242_*`,
 `check_g2_normal_form.py`) are **absent from the file register**. They are
 recorded in `00_THE_RECORD_LEDGER.md`, which was updated.
@@ -161,6 +161,8 @@ recorded in `00_THE_RECORD_LEDGER.md`, which was updated.
 ---
 
 ## ADDENDUM — a fourth dead gate, and it is the public one
+
+> **[COUNT CORRECTED 2026-08-05]** This heading says *fourth*; §"Why this is the same defect, a third time" below says *third*, in the same document. Neither is right: with `check_established.py`'s `FORBIDDEN_INFLATIONS` (repaired and unrecorded, riding inside commit `793a222f`) the true count is **five**. Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md.
 
 Found later the same day, while checking how far a retired notation had spread.
 
@@ -203,7 +205,7 @@ before reaching any check.
 | Name | Site | Status |
 |---|---|---|
 | `frozen_roots` | line 533 | **REPAIRED 2026-08-05.** An *incomplete rename*: the line above already binds the identical tuple as `frozen_prefixes`. Exactly equivalent; not a behaviour change. |
-| `excluded_routes` | line 540 | **NOT REPAIRED — needs an owner.** No candidate in scope. At `1797138a` the analogous block read `withheld-routes.json`. Deciding what is excluded from a public RAG index is a **publication-policy** decision, not a rename, and guessing it would invent policy for a live site. |
+| `excluded_routes` | line 540 | **NOT REPAIRED — needs an owner.** ~~No candidate in scope.~~ **[CORRECTED 2026-08-05: a candidate EXISTS.** `12_PUBLIC_SITE/withheld-routes.json` is live on disk, `schemaVersion: 2`, with per-artifact `publicRoutes`. The honest statement is *the derivation rule is an owner call*, not *no candidate exists*. Existence asserted here and nothing more — deriving the rule is a publication decision. Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md.] At `1797138a` the analogous block read `withheld-routes.json`. Deciding what is excluded from a public RAG index is a **publication-policy** decision, not a rename, and guessing it would invent policy for a live site. |
 | `fnmatch` | `_ignored()` | **NOT REPAIRED.** Simply never imported. Trivial, but left with the above so the file is fixed once, deliberately, by its owner. |
 
 Repairing `frozen_roots` moves the failure forward one line. **The checker still

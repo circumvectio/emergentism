@@ -202,11 +202,11 @@ theorem to readers as an open challenge.
 2. **Revive the two dead checkers.** `PINNED_GRAVE_STATUS` and
    `_located_text`/`_resolve_repo_path` are used and defined nowhere; the
    claim-status contract and claim-graph compiler cannot execute. 64 of 65
-   failures. Cheap.
+   failures. Cheap. **[CORRECTED 2026-08-05: it killed FOUR, not 64 — 65 failed/63 passed became 61/67. The estimate was quoted as a result; receipt 242 records the correction. Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md]**
 3. **Settle `KSC-04`.** Settled canon currently cites an unsigned PROPOSED
    RULING. A book that stakes its credibility on receipts cannot have that
    standing. Mortal-signer act.
-4. **Restate `F0` honestly.** `42`/`47`/`49` present the F0 packet as complete;
+4. **Restate `F0` honestly.** `42`/`47`/`49` present the F0 packet as complete **[CORRECTED 2026-08-05: `42` and `47` were corrected the same day and now read F0 NOT PASSED; only `49_FINITY_RECOVERY_AND_COUNTERMODEL_SUITE.md` still lacks a pointer to that finding. Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md]**;
    its test is `assertIn` on prose. Either build the checker or drop the claim.
 
 ## 9 · What this proposal does not do

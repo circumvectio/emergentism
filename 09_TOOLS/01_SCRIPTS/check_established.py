@@ -22,7 +22,7 @@ BASE_CHECK = ROOT / "09_TOOLS" / "01_SCRIPTS" / "check_generative_base.py"
 # Phrases the manifest may NOT contain, because each would claim more than this
 # script actually performs.
 #
-# RESTORED 2026-08-01. The loop at the bottom of main() iterated FORBIDDEN_INFLATIONS
+# RESTORED 2026-08-05 (this comment previously mis-dated it 2026-08-01). The loop at the bottom of main() iterated FORBIDDEN_INFLATIONS
 # while nothing defined it, so every run of this checker died on NameError. A checker
 # that raises cannot pass and cannot fail — it aborts, blocks the gate, and reports
 # nothing about the property it exists to guard. That is strictly worse than the

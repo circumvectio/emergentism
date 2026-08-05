@@ -167,7 +167,7 @@ All `10945` reduced words to length `18`, exact `Fraction` arithmetic: zero
 collisions; the §2 dictionary exact on **every** word; last partial quotient
 `≥ 2` throughout; the §3 trichotomy holding without exception.
 
-It carries a **mutation harness**: four mutants (allow leading `ι`; allow `ιι`;
+It carries a **mutation harness**: six mutants **[CORRECTED 2026-08-05 from "four": the harness carries six; a fresh run prints "6 mutants, each tripping its declared checks". Per 00_HANDOFF/SESSION_AUDIT_2026_08_05.md]** (allow leading `ι`; allow `ιι`;
 drop the `+1`; drop the reversal) must each be rejected. All four are. A
 regression that cannot fail is not evidence — this addresses the defect in the
 predecessor `check_generative_base.py`, which sampled injectivity and could not
