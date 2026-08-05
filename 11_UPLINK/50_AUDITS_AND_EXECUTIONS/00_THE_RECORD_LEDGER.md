@@ -212,6 +212,23 @@ never back-filled:
 | 241 | `241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md` | The inactive archive-link mutator is preserved under K3 with an exact byte identity; no utility was run and no claim, owner, publication, deployment, or world-contact state changed. |
 | 242 | `242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md` | `G2` is proved and is prior art — the uniqueness of the finite simple continued fraction with last partial quotient `≥ 2`; tier `[C]→[A]` inherited-with-citation, the generative base's distinctness claim withdrawn on a fired kill, `F1`'s first adjudicated candidate FAILED and the gate stays open, `F0` marked NOT PASSED because its negative tests are prose-declared and unexecuted, six merge-lost checker definitions restored (65→61 failures, against a predicted 64-of-65 that is corrected in the receipt), and a live public misstatement staged for repair but not deployed. |
 
+
+> **Non-receipt artifacts of 2026-08-05, recorded WITHOUT minting ledger numbers.**
+> Ledger numbers are receipt numbers and the next is written by contact, not by
+> housekeeping. These are documents, tools and projections produced the same day;
+> they are listed here so custody can find them, and they claim no receipt status.
+>
+> **Canon / formal:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md` ·
+> `.../49_THE_THREE_MODES_OF_COUNTING.md` · `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md`
+> **Method (exportable):** `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md`
+> **Handoff:** `00_HANDOFF/COMPILER_GATE_TRIAGE_2026_08_05.md` · `00_HANDOFF/SESSION_AUDIT_2026_08_05.md`
+> **Books (drafts, unratified):** `13_BOOKS/titans/00_TRADE_EDITION_PROPOSAL_2026_08_05.md` ·
+> `CH04_FOUR_STATUSES_*` · `CH05_CONTINUATION_WITHOUT_ORIENTATION_*` · `CH08_ALREADY_OURS_*` · `CH09_THE_MISSING_ONE_*`
+> **Tools:** `09_TOOLS/01_SCRIPTS/check_g2_normal_form.py`
+>
+> The canon emblem amendment of the same day (`⊙` = the realm) is **staged for
+> owner disposition**; a revert is refusal, and this row reverts with it.
+
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
 recorded here as missing receipts. This lane-specific ledger does not infer from
