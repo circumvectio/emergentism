@@ -128,6 +128,19 @@ work order is blocked, say so and finish the rest; do not silently narrow scope.
 
 The corpus's own instrument, applied to the corpus:
 
+> **⚠ REPAIR 2026-08-05 — two statements in this section are struck or stale.**
+> (1) The equation form below (`⊙ = GM × BAL`) is the retired `⊙ = • × ○` in
+> new coordinates — banned at every tier (`48:121` RETIRED — ILL-TYPED —
+> WITHDRAWN; `:416` fires on exactly this reinstatement); the
+> product-of-margins reading is `[B]` attribution (Nash 1950, Sonnevend
+> 1985/86, product t-norm, series reliability) and the product is
+> compensatory, not conjunctive (repair `020f4f19`). (2) *"The distillation
+> holds 40 entries, exactly one owned by the corpus"* is stale: the sole owned
+> entry was refuted the same evening — 1 owned → 0 (`b4c58797`). **What
+> survives:** the ordering argument this section exists for — `Φ` enormous,
+> `V` near zero, weight the work toward contact and findability, away from new
+> doctrine — stands without the product form.
+
 ```
 ⊙ = GM × BAL          GM = size    BAL = balance (≤ 1, = 1 only at φ = ν)
 ```

@@ -241,6 +241,18 @@ not product: **`⊙` names the held relation of `•` and `○`.**
    •     no substrate · counting cannot begin · glossed "seed" — open
 ```
 
+> **⚠ REPAIR 2026-08-05 — two lines of the recap above carry struck
+> readings.** The D2 line's `B = D• × D∞ = SIZE × BALANCE` is the retired
+> `⊙ = • × ○` in new coordinates — banned at every tier (`48:121`, `:416`;
+> repair `020f4f19`; the reading is `[B]` attribution, the product
+> compensatory). The D3 line's *"a price list, not a purchase"* is the
+> refuted price metaphor: owned five times over (de Finetti, Peres,
+> Schrödinger 1935, Fuchs–Schack, Hardy) and firing `KSC-16`'s kill — a
+> price list is non-contextual by construction, and no such list exists.
+> **What survives at D3:** the state is probability-bearing only relative to
+> a declared measurement; the formalism/interpretation separation. The recap
+> is retained as provenance, unrevised.
+
 ---
 
 ## X. The one sentence the whole structure yields

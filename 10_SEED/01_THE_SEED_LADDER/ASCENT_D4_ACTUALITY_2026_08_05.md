@@ -173,6 +173,19 @@ in force.
 
 **The session run through its own equation:**
 
+> **⚠ REPAIR 2026-08-05 — the equation form below (`⊙ = GM × BAL`, also in the
+> closing block) is struck.** It is the retired `⊙ = • × ○` in new coordinates
+> — `⊙ = f(•) × g(○)` — and may not be written at any tier
+> (`48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121` RETIRED — ILL-TYPED —
+> WITHDRAWN; `:416` fires its own kill on exactly this reinstatement). The
+> product-of-margins reading is `[B]` attribution — Nash 1950, Sonnevend
+> 1985/86, the product t-norm, series reliability — and the product is
+> compensatory, not conjunctive. **What survives:** the diagnosis the equation
+> was carrying — `Φ` enormous, `V` near zero, findability raised, contact still
+> owed — which stands without the product form. Repair: `020f4f19` on
+> `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`. The blocks are retained as
+> provenance, unrevised.
+
 ```
 ⊙ = GM × BAL
 

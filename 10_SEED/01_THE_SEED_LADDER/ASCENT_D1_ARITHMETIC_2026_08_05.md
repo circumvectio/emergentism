@@ -196,4 +196,10 @@ is ours is the naming and the discipline of warrant.**
 *Next: D2 — the sphere, where the line gains a second face and the
 product of margins becomes the equation of the whole day.*
 
+> **⚠ REPAIR 2026-08-05 — the "product of margins" reading referenced above is
+> struck:** `[B]` attribution (Nash 1950, Sonnevend 1985/86, product t-norm,
+> series reliability), compensatory not conjunctive, and its `⊙ = …` form
+> banned at every tier (`48:121`, `:416`). What survives is the harmonic-mean
+> chain `min ≤ HM ≤ 2·min` `[A]`. Repair: `020f4f19`.
+
 •   ⊙   ○

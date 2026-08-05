@@ -126,6 +126,18 @@ harmonic-mean form governs the interior.
 
 ## V. The general form — the equation of the whole picture
 
+> **⚠ REPAIR 2026-08-05 — the `⊙(a,b) = SIZE × BALANCE` line below and the
+> "capacity is size discounted by imbalance" reading are struck.** The `⊙` form
+> may not be written at any tier — it is the retired `⊙ = • × ○` in new
+> coordinates (`48:121` RETIRED — ILL-TYPED — WITHDRAWN; `:416` fires on the
+> reinstatement) — and the product-of-margins reading is `[B]` attribution
+> (Nash 1950, Sonnevend 1985/86, product t-norm, series reliability),
+> internally pre-owned by the 2026-07-02 production-function VERDICT. The
+> product is compensatory, not conjunctive. **What survives:** the identity
+> `HM(a,b) = √(ab)·sech(½log(a/b))` as `[A]` classical mathematics, and
+> `min ≤ HM ≤ 2·min` — the genuinely non-compensatory statement. Repair:
+> `020f4f19`. The section is retained as provenance, unrevised.
+
 Off the constraint curve — two independent positive quantities `a`, `b`:
 
 ```

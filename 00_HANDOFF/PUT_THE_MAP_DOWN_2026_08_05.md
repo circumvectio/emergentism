@@ -170,6 +170,12 @@ reading. Those are `[I]` or `[C]` and belong to human judgment.
 
 **The honest ledger:**
 
+> **⚠ REPAIR 2026-08-05 — the `⊙ = GM × BAL` line below is struck:** the
+> retired `⊙ = • × ○` in new coordinates, banned at every tier (`48:121`,
+> `:416`; repair `020f4f19`); the product-of-margins reading is `[B]`
+> attribution, the product compensatory. The ledger's content — what rose,
+> what stayed near zero — stands without the equation.
+
 ```
 Φ (coherence):  rose — 1410 lines of reader projection, 117→0 findable
 V (contact):    one negative result (Finity_L killed) + Lean already green
