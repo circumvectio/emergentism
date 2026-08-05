@@ -105,11 +105,28 @@ collision started.
 ## 4 · The reassignment this forces in `43` `[S]`
 
 `43` currently reads `Infinity_R := horizon-facing, countably unending
-traversal` — the horizon is *countable unending*. On 2026-08-05 the **proper
-class** was installed as the horizon's mathematical neighbour, after
-uncountability was found to be wrong for it.
+traversal` — the horizon is *countable unending*.
 
-**Those two never fitted together.** A countably unending traversal is a
+> **FACTUAL CORRECTION 2026-08-05, third pass.** This paragraph originally said
+> the proper class *"was installed as the **horizon's** neighbour."* **It was
+> not.** It was installed at the **ground** seat — `43:91` reads
+> `TheInfinite_R := ground-facing pre-countability` and `43:148` is headed *"The
+> **ground-facing** Titan."* This document misdescribed the file it was
+> proposing to amend.
+>
+> Checking it exposed a larger error, now fixed in `43`: **the proper class was
+> at the wrong seat entirely.** A proper class has members — too many to gather.
+> The ground has none — nothing distinguished yet. They share only the surface
+> fact that cardinality does not apply, and they share it for *opposite*
+> reasons. `43`'s ground seat now claims **no** standard neighbour, and the
+> proper class sits at the horizon, which is where §1 of this document had it
+> all along.
+>
+> So §1 was right and §4's account of how it got there was wrong. The
+> reassignment below stands; its stated motivation is corrected.
+
+**A countably unending traversal and an un-gatherable totality never fitted
+together under one seat.** A countably unending traversal is a
 *listable* process: it has a first step, a next step, and an `ℕ`-indexing.
 The absolute is *beyond listing entirely*. `43` was holding both.
 

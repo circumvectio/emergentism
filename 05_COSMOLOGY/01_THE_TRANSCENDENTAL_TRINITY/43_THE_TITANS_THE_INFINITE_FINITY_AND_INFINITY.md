@@ -199,6 +199,44 @@ mathematical object.
 > question of its size is not merely unanswered but ill-formed within the
 > theory. That is the shape `pre-countable` was reaching for. `[A]`
 >
+> > ### ⚠⚠ THIS ASSIGNMENT IS WRONG. CORRECTED 2026-08-05, THIRD PASS.
+> >
+> > **The proper class belongs at the HORIZON seat, not here.** This repair
+> > replaced one badly-chosen neighbour with another, by the *same* faulty
+> > method — matching on a shared surface property instead of on structure.
+> >
+> > | | has members? | why cardinality fails |
+> > |---|---|---|
+> > | **proper class** `V` | **yes — too many to gather** | the collection cannot be completed into a set |
+> > | **pre-countable** (this seat) | **no — nothing distinguished yet** | there is nothing to count in the first place |
+> >
+> > Both share the surface fact *"cardinality does not apply."* They share it for
+> > **opposite reasons**, and the opposition is the whole content of the seat
+> > pair. A proper class is *overfull*; the ground is *pre-full*. Reading the
+> > ground as a proper class imports members it does not have.
+> >
+> > **This is the third time this exact error shape has occurred in this
+> > document's history:** uncountability was chosen because it shares
+> > "unlistable"; the proper class was then chosen because it shares "no
+> > cardinality." Each time the match was made on an effect rather than a cause.
+> >
+> > **The corrected assignment** (see
+> > [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §1,
+> > which had it right):
+> >
+> > ```text
+> > •  ground   COUNTING CANNOT BEGIN     no members yet. NO standard neighbour is
+> >                                       claimed. Naming one is what keeps going wrong.
+> > ○  horizon  COUNTING CANNOT COMPLETE  proper class / Cantor's absolute   [A]
+> > ```
+> >
+> > **The ground seat is left without a mathematical neighbour, deliberately.**
+> > Three candidates have now failed. The honest position is that standard
+> > mathematics may simply have no object for *"before any distinction"* —
+> > because mathematics begins by declaring a domain, which is exactly the act
+> > this seat sits before. An empty slot is a better record than a fourth wrong
+> > match.
+>
 > Cantor drew the same line himself, and kept it apart from the transfinite
 > arithmetic he is famous for: he distinguished *consistent* multiplicities
 > (sets, which have cardinals) from **inconsistent or absolutely infinite**
@@ -216,8 +254,14 @@ mathematical object.
 > substituted for one another:
 >
 > ```text
-> pre-countable   (before distinction)  →  proper class / not-a-set     [A]
+> ⚠ SUPERSEDED — see the boxed correction above.
+> pre-countable   (before distinction)  →  proper class / not-a-set     [A]   ← WRONG SEAT
 > inexhaustible   (after a set is declared) →  uncountability, Cantor's theorem  [A]
+>
+> CURRENT:
+> •  pre-countable  (before distinction)     →  no neighbour claimed
+> ⊙  inexhaustible  (a set having been declared) →  uncountability, Cantor's thm  [A]
+> ○  un-gatherable  (the totality)           →  proper class / Cantor's absolute  [A]
 > ```
 >
 > Neither is an identity with the Ground. Receipt:

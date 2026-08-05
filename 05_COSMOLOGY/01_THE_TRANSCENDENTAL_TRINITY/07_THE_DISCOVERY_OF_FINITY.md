@@ -124,8 +124,21 @@ register. It includes an actual being, a measured state, a degree of freedom, a
 proof token, and a modelled counterfactual insofar as each is presented as a
 determinate finite content. It does not erase the distinction between D4
 actuality and D5 possibility, or license a modelled content as an actual being.
-`⊙` marks that realm's **centred unit**; the realm itself is what `•` and `○`
-bound.
+`⊙` marks **that realm**. Its centred unit is `1`, which under the live canon
+still carries the mark and therefore has none of its own — the open consequence
+recorded in the banner above.
+
+> **This sentence was the reversal's own casualty, repaired 2026-08-05 (third
+> pass).** It read *"`⊙` marks that realm's centred unit; the realm itself is
+> what `•` and `○` bound."* It did not exist before that morning — the ruling
+> commit inserted it, and the reversal commit prepended a banner **without
+> touching it**, leaving this file giving *both* answers to the one question the
+> ruling existed to settle, 56 lines apart. A reader reaching §Canonical
+> distinction without reading the banner got the superseded answer.
+>
+> **That is the exact defect the ruling claimed to remove**, committed by the
+> repair itself. Recorded rather than silently fixed, because a correction that
+> hides its own history is the failure mode this corpus is trying to name.
 
 The equator is Finity's **balance locus**, not the whole of Finity. In the
 selected positive reciprocal slice, `1` is the unique self-dual unit under

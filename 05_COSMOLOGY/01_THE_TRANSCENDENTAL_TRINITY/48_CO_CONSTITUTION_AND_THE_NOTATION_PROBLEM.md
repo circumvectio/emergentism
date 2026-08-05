@@ -10,7 +10,7 @@ rosetta:
 title: "Co-Constitution and the Notation Problem — why the Titan equations keep failing and what they were pointing at"
 status: "STAGED PROPOSAL — unratified. §4.1 REFUTED and §5.2 CORRECTED on 2026-08-05 by adversarial review during authorship of 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md — read those corrections before citing this file. §3 (co-constitution) and §4 (notation ruling) are undisturbed and strengthened. Does NOT reinstate Titan arithmetic."
 date: 2026-08-05
-evidence_tier: "[A] φν=1 on the open chart, sharp 3-transitivity, proper-class facts; [I] the co-constitution reading; [S] the proposed notation fence; [C] the ontological wager"
+evidence_tier: "[A] φν=1 on the open chart (curve-bound, NOT a boundary statement), proper-class facts — NOTE: sharp 3-transitivity was removed from this list 2026-08-05, it is the ingredient §4.1 refuted; [I] the co-constitution reading; [S] the proposed notation fence; [C] the ontological wager" NOTE: "sharp 3-transitivity" removed from this list 2026-08-05 — it is the ingredient §4.1 refuted.
 owner: "Subordinate to 00_THE_TRANSCENDENTAL_TRINITY_CANON.md and 45_THE_TITAN_INVERSION_STRUCTURE.md. Defines no arithmetic."
 parents:
   - 00_THE_TRANSCENDENTAL_TRINITY_CANON.md
@@ -248,7 +248,11 @@ and the inversion orbit-closure of `{0,∞}` is only `{0,∞}` — so `{0,1,∞}
 leaves `−1` undrawn. Whether that absence should be marked is currently decided
 by silence.
 
-## 5.2 · The two invariants of a reciprocal pair — and the twin they name `[A]`
+## 5.2 · One identity in three coordinates — and the twin it names `[A]`
+
+> **Heading corrected 2026-08-05 (third pass).** It read *"The two invariants of
+> a reciprocal pair."* Error 1 below retracts exactly that, and the heading — the
+> most-read line in the section — kept asserting it.
 
 Added 2026-08-05, from an owner proposal. The owner offered a replacement
 notation, `log_•(○) = ⊙`. It does not type-check for the reasons in §4 — `log_b`
@@ -344,7 +348,8 @@ promoted. The emblem's election of `+1` remains a choice; it is now a
 | `log_{1/x}(x) = −1` for all `x>0, x≠1` | `[A]` | exhibit an `x` where it fails |
 | the log form is path-dependent; base `1/n`, argument `n^k` gives `−k` | `[A]` | show the value is path-independent |
 | therefore `log_•(○)` is an indeterminate form, not a value | `[A]` | supply a declared canonical path that is *forced* rather than selected |
-| `±1` are exactly `ι`'s fixed points, and the two invariants name them | `[A]` | exhibit a third fixed point of `x ↦ 1/x` |
+| `±1` are exactly `ι`'s fixed points | `[A]` | exhibit a third fixed point of `x ↦ 1/x` |
+| ~~"the two invariants name them"~~ **STRUCK 2026-08-05** — §5.2 Error 1 retracted this; it is one identity in three coordinates. And per `THE_BOUNDARY_RULES_STANDALONE.md` §7.2 fence 4, the log form's `−1` and the fixed point `−1` are **different objects sharing a numeral** | — | — |
 
 ## 6 · The category-error rule gets a spine `[A]`
 
