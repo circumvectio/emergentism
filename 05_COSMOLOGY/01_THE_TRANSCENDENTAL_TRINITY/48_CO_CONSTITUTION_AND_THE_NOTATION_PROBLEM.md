@@ -8,7 +8,7 @@ rosetta:
   register: "[A] the chart identities and the class-theoretic spine; [I] co-constitution; [S] the notation ruling"
   canonical_phrase: "Neither pole nor interior is prior; the demand for an order is the category error"
 title: "Co-Constitution and the Notation Problem — why the Titan equations keep failing and what they were pointing at"
-status: "STAGED PROPOSAL — unratified. Does NOT reinstate Titan arithmetic; 45's 2026-08-01 type correction stands and is strengthened here. Proposes a reading and a notation ruling."
+status: "STAGED PROPOSAL — unratified. §4.1 REFUTED and §5.2 CORRECTED on 2026-08-05 by adversarial review during authorship of 02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md — read those corrections before citing this file. §3 (co-constitution) and §4 (notation ruling) are undisturbed and strengthened. Does NOT reinstate Titan arithmetic."
 date: 2026-08-05
 evidence_tier: "[A] φν=1 on the open chart, sharp 3-transitivity, proper-class facts; [I] the co-constitution reading; [S] the proposed notation fence; [C] the ontological wager"
 owner: "Subordinate to 00_THE_TRANSCENDENTAL_TRINITY_CANON.md and 45_THE_TITAN_INVERSION_STRUCTURE.md. Defines no arithmetic."
@@ -118,34 +118,72 @@ The framework holds, in the owner's words:
 This rule is the framework's best asset. **And the Titan equations violate it.**
 
 ```text
-⊙ = • × ○        multiplies two Titans
-• = ⊙ / ○        divides by a Titan
-○ = ⊙ / •        divides by a Titan
+⊙ = • × ○        RETIRED — ILL-TYPED — WITHDRAWN. Multiplies two boundary labels.
+• = ⊙ / ○        RETIRED — ILL-TYPED — WITHDRAWN. Divides by a boundary label.
+○ = ⊙ / •        RETIRED — ILL-TYPED — WITHDRAWN. Divides by a boundary label.
 ```
+
+> **Denial markers corrected 2026-08-05.** These three lines previously carried
+> only a *description* of what they do ("multiplies two Titans"). Per
+> `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md`
+> §12: **annotating a forbidden line with a description of what it does is not a
+> denial.** A mechanical scan reads the display block, not the caption, and
+> correctly flags this document as a violator of its own rule. The denial marker
+> must sit on the same line as the form. Preferred practice is to refer to a
+> retired form **in words** and not reproduce it at all; these three are
+> reproduced once, here, because this is the document that retires them.
 
 `×` and `/` are field operations. Every competent reader parses them as field
 operations, correctly rejects the lines, and never reaches the idea underneath.
 The equations have been retired once already (`45`, 2026-08-01) for exactly this.
+As of the §4.1 correction below, they are **also false in content**, not merely
+ill-typed — which removes the last reason to keep reaching for them.
 
 **The doctrine forbids the operands; the notation borrows the operators. The
 notation is what must go.**
 
 ### 4.1 · What the three lines are actually saying
 
-Note their structure: **any two give the third.** Arithmetic does not behave
-like that. That pattern is the signature of three terms each determined by the
-other two — which is §3, written in a borrowed alphabet.
-
-There is a precise mathematical home for that shape, and it contains no product:
-
-> `PGL(2)` acts **sharply 3-transitively** on `ℂP¹`: given any three distinct
-> points there is exactly one Möbius transformation carrying them to
-> `(0,1,∞)`. `[A]`
-
-Three mutually determining points, no multiplication anywhere. Note the cost,
-stated plainly: sharp 3-transitivity applies to *any* three distinct points, so
-it supplies the **shape** of mutual determination and confers **no** privilege on
-`{0,1,∞}` specifically. `KSC-04` already rules that normalization conventional.
+> ### ⚠ REFUTED 2026-08-05, later the same day. Do not use this section's original argument.
+>
+> The original text observed that **any two of the three lines give the third**,
+> and proposed `PGL(2)` sharp 3-transitivity as the "precise mathematical home"
+> for that shape. Adversarial review during authorship of
+> `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md` §8
+> killed it, and the kill is clean:
+>
+> **The stabiliser of the pair `{0, ∞}` in `PGL₂(ℂ)` is**
+>
+> ```text
+> {z ↦ λz}  ∪  {z ↦ λ/z},     λ ≠ 0
+> ```
+>
+> (Fixing both points forces `b = c = 0`; swapping them forces `a = d = 0`.)
+> **That group acts transitively on `ℂ*`:** given any `w ≠ 0`, take `λ = 1/w`.
+> So every candidate "third position" lies in a single orbit, and **fixing the
+> two boundary points determines no third point whatever.**
+>
+> Sharp 3-transitivity does not rescue it. It says three distinct points
+> determine a unique *map* — it applies to **any** three distinct points and
+> therefore confers privilege on **none**. A distinguished unit is **adjoined by
+> naming**, not forced by closure. `KSC-04` already said this; §4.1 failed to
+> apply it to its own argument.
+>
+> **There is no salvage sentence.** "Any two fix the third" must not be rewritten
+> into a weaker form and kept; it must go. If mutual determination is wanted,
+> state a group action and its stabiliser and read off what is actually fixed.
+>
+> **What survives, and is all that survives:** reciprocation `z ↦ 1/z` swaps `0`
+> and `∞` and fixes exactly `+1` and `−1` (solve `z² = 1`). Negation `z ↦ −z`
+> fixes `{0, ∞}` and swaps `±1`. With the identity and their composite these form
+> a Klein four-group. The orbit of `{0, ∞}` under reciprocation is just
+> `{0, ∞}`. **If the picture has three marked points, it has a fourth it is not
+> drawing** — see §5.1 and §5.2, which now have their answer.
+>
+> This does **not** disturb §3 (co-constitution), which never rested on the
+> three-lines argument, nor §4's notation ruling, which stands and is
+> strengthened: the equations were not merely ill-typed, their content was also
+> false.
 
 ### 4.2 · What survives as an exact statement `[A]`
 
@@ -169,8 +207,12 @@ never evaluates at an endpoint.
    Their use is the framework's most-repeated self-inflicted wound.
 2. When the coupled identity is meant, write the chart statement: `φν = 1` on
    the open chart, with the domain named.
-3. When mutual determination is meant, write it as determination, not
-   operation — *any two of the three seats fix the third* — or use the emblem.
+3. When mutual determination is meant, **state a group action and its
+   stabiliser, and read off what is actually fixed.** ⚠ This clause originally
+   recommended writing *"any two of the three seats fix the third"* — that
+   sentence was **refuted the same day** (§4.1) and must not be used as a
+   replacement for the banned equations. It is not a weaker form of them; it is
+   false. There is no salvage sentence.
 4. **The emblem `•  ⊙  ○` is already correct and needs no operator.** Its
    spacing is the fence (`07`). Adding an infix mark destroys it.
 
@@ -223,12 +265,50 @@ log_{1/x}(x)  =  ln x / ln(1/x)  =  ln x / (−ln x)  =  −1
 Exactly `−1`, for every `x>0, x≠1`. Verified numerically to 40 digits at
 `x = 2, 10³, 10⁶, 10³⁰, 10²⁰⁰`: `−1.0` throughout, with no drift.
 
-So the reciprocal pair carries **two** exact invariants:
+> ### ⚠ CORRECTED 2026-08-05, later the same day — two errors in what follows
+>
+> Adversarial review during authorship of
+> `../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md`
+> §§7.1–7.2 refuted two claims in the original text of this section. Both are
+> corrected in place; the original wording is preserved below the correction so
+> the error is legible.
+>
+> **Error 1 — "two invariants" is wrong. It is one fact in three coordinates.**
+> For `x>0, x≠1`:
+>
+> ```text
+> x·(1/x) = 1   ⟺   log x + log(1/x) = 0   ⟺   log x / log(1/x) = −1
+> ```
+>
+> Each line is the previous one after taking logarithms or dividing. They are
+> **not independent**, and presenting them as a matched pair overstated the
+> finding.
+>
+> **Error 2 — the PATH-INDEPENDENT / PATH-DEPENDENT contrast is withdrawn.**
+> The original said the product form is path-independent and only the log form
+> path-dependent. **The product form is not path-independent either.** `φν = 1`
+> is safe only because `ν` is *defined* as `1/φ` — there is one free variable,
+> not two. Let them vary independently: take `φ = n`, `ν = k/n`. Then `φ → ∞`,
+> `ν → 0`, and `φν = k` **exactly**, for any `k`. So the two-variable limit of
+> the product at the corner **does not exist**, exactly as for the log form.
+>
+> **What actually distinguishes them:** nothing, as limits. Both are
+> *curve-bound identities* — true at every point of the open chart, and neither
+> is a statement about a boundary. The load-bearing clause is *"no endpoint is
+> ever evaluated,"* and deleting it for brevity is how *"zero times infinity is
+> one"* gets back in.
+
+The reciprocal pair therefore carries **one** identity, expressible in three
+coordinates:
 
 ```text
-x · ι(x)        = +1     exact on the open chart, PATH-INDEPENDENT
-log_{ι(x)}(x)   = −1     exact on the reciprocal path, PATH-DEPENDENT
+x · ι(x)        = +1     identity at every point of the open chart
+log_{ι(x)}(x)   = −1     the same identity in the log coordinate
 ```
+
+*Original wording, superseded and retained for legibility:* it read
+*"the reciprocal pair carries **two** exact invariants"*, tagging the product
+`PATH-INDEPENDENT` and the log form `PATH-DEPENDENT`. Both tags were wrong.
 
 And `±1` are **exactly the two fixed points of inversion** — the pair that `41`
 §5 records as adjoined, with `+1` elected and `−1` left undrawn *by silence*.
@@ -316,7 +396,8 @@ three separate facts, none doing the others' work.
 | `φν = 1` throughout the open chart, including all the way to either boundary | `[A]` | a value in the declared domain violating it |
 | the two-point space refutes `(A)` and not `(B)` | `[A]` | show `{p₀,p∞}` discrete carries a reciprocal relation making one zero and the other infinity |
 | co-constitution | `[I]` | exhibit `0` and `∞` fully characterised with no interior, or the interior with no boundary relation |
-| `PGL(2)` sharp 3-transitivity gives mutual determination without a product | `[A]` | exhibit four points fixed by a non-identity Möbius map |
+| ~~`PGL(2)` sharp 3-transitivity gives mutual determination without a product~~ **REFUTED 2026-08-05, §4.1** — the stabiliser of `{0,∞}` in `PGL₂(ℂ)` acts transitively on `ℂ*`, so fixing both boundary points fixes **no** third point | `[A]` refutation | reinstate only by exhibiting a stabiliser that is *not* transitive on the complement |
+| reciprocation fixes exactly `±1`; with negation they generate a Klein four-group; the orbit of `{0,∞}` under reciprocation is `{0,∞}` | `[A]` | exhibit a third fixed point of `z ↦ 1/z` |
 | sharp 3-transitivity confers **no** privilege on `{0,1,∞}` | `[A]` | overturn `KSC-04` |
 | both boundary seats are non-sets; the category error is a type fact | `[A]` | exhibit a proper class as a member of something, or license counting before distinction |
 | `×` and `/` between Titan glyphs are notation errors | `[S]` | supply a declared algebra in which they type-check — which earns a claim about *that algebra*, not about the field |
