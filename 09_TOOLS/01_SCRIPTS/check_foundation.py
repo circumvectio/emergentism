@@ -132,6 +132,14 @@ TYPED_WITNESS_REQUIRED = [
     "arithmeticsignature(titanframe)=∅",
 ]
 
+# The retired Titan infix (⊙ = • × ○) must never return to a current owner.
+# Restored from reconstruction commit 1797138a, where this definition existed;
+# it was lost in a subsequent merge (same class as the seven definitions
+# restored at 172d5ca6 and presentations_block above). Restored verbatim so the
+# gate can fail instead of dying on NameError — a gate that can neither pass nor
+# fail is the defect live-gate integrity exists to catch.
+RETIRED_TITAN_INFIX = re.compile(r"⊙\s*=\s*•\s*(?:×|\*)\s*○")
+
 ACTIVE_SCAN_SUFFIXES = {".md", ".json", ".yaml", ".yml"}
 ACTIVE_SCAN_EXCLUDED_PREFIXES = (
     Path("00_HANDOFF"),
@@ -196,6 +204,22 @@ def strata_block(body: str) -> str:
         if "b1" in block and "emergent" in block:
             return block
     return ""
+
+
+def presentations_block(body: str) -> str:
+    """Return the two-presentation block from a normalized current owner.
+
+    RESTORED 2026-08-06 from reconstruction commit 1797138a, where this
+    definition existed; it was lost in a subsequent merge (same class as the
+    seven definitions restored at 172d5ca6). Restored verbatim so the gate
+    can fail instead of dying on NameError — a gate that can neither pass nor
+    fail is the defect live-gate integrity exists to catch.
+    """
+    marker = "selected relational presentation"
+    start = body.find(marker)
+    if start == -1:
+        return ""
+    return body[start:start + 2200]
 
 
 def main() -> int:
