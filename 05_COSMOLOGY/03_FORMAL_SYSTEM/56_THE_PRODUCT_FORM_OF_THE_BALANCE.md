@@ -90,9 +90,30 @@ decomposition says **why**, and the why is not symmetric-looking bookkeeping:
 ```
 
 **Being maximally far from one boundary is worth nothing while standing on the
-other.** Each factor is a distance-from-a-failure, and a product of
-distances-from-failure dies if either distance dies. That is the AND, written
-as an operation rather than asserted as a class.
+other.** Each factor is a distance-from-a-failure, and the product dies if
+either distance dies.
+
+> **[STRUCK 2026-08-05, hours after writing.]** This paragraph ended: *"That is
+> the AND, written as an operation rather than asserted as a class."* **Struck.**
+> Vanishing-at-zero is **not** non-compensation and singles out no aggregator:
+> `min`, `HM`, the product and Cobb–Douglas all vanish when either argument
+> does. A product is in fact **compensatory** — a strict t-norm with finite MRS
+> everywhere in the interior; `a = 0.01, b = 10⁴` gives `ab = 100` against
+> `min = 0.01`. The corpus's own `11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT.md`
+> ruled this a month before this file was written, uncited here: *"conjunction
+> is satisfied by `min`, by Cobb-Douglas, and by the product alike — it does not
+> single out `Φ×V`."*
+>
+> **Further: the two factors are not independent.** `D•² + D∞² = 2` identically,
+> so the chart has **one** degree of freedom and the margins cannot fail
+> separately — as one → 0 the other is *forced* to `√2`. An AND-gate presupposes
+> two inputs that can each fail alone. These cannot. What real non-compensation
+> exists here (`B ≤ √2·min(D•,D∞)`, verified) is supplied by **the constraint**,
+> not by the product form — reproducing one level up the defect §1 exists to
+> forbid.
+>
+> The genuinely non-compensatory statement in this document is the harmonic-mean
+> one, `min ≤ HM ≤ 2·min` in §3 — `[A]`, classical, correctly tiered, unaffected.
 
 This is the boundary behaviour. The interior behaviour is the classical chain
 
@@ -171,11 +192,41 @@ sphere is standard complex analysis (Ahlfors, *Complex Analysis*, ch. 1). The
 AM–GM–HM chain and the `min`/`HM` two-sided bound are classical inequalities.
 **Nothing in §2–§4 is new mathematics and this document does not claim any.**
 
-The identification of the two half-angle factors with distances-from-the-two-
-failures, and the consequent reading of `B` as a product of margins, is the
-corpus's own and is `[I]` — an expository identification of the same class as
-`55_G2_PRIOR_ART_ADJUDICATION.md` §7, with pedagogical value and no theorem
-content.
+> **[REPLACED 2026-08-05.]** This paragraph claimed the reading of `B` as a
+> product of margins was *"the corpus's own and is `[I]`"*, anchored to
+> `55_G2_PRIOR_ART_ADJUDICATION.md` §7 as "an expository identification of the
+> same class." **That anchor is now a tombstone**: `55` §7 was the `[I]` struck
+> as false the same night, and it ends *"Nothing here is `[I]` and nothing here
+> is owned."* This document cited the corpus's own retraction as its warrant.
+
+**The reading of the two factors as distances-from-failure, and of their product
+as a conjunction, is `[B]` — attribution, not contribution.** Owners:
+
+- **Nash (1950)** — the bargaining solution `argmax ∏(uᵢ − dᵢ)`: a product of
+  **margins over a disagreement (failure) point**, zero if any party gains
+  nothing, maximised at balance under constraint. Already mapped in this corpus
+  at `04_AXIOLOGY/.../AX2_THE_ETHIC.md:35`.
+- **Sonnevend (1985/86)** — the *analytic center*: the interior point maximising
+  the **product of distances to the constraints**, its log-barrier diverging as
+  any constraint activates. Literally this picture, on a polytope.
+- **The product t-norm** (Klement–Mesiar–Pap) — conjunction *defined* as
+  multiplication on `[0,1]`. "AND as an operation" is the definition, not an
+  observation.
+- **Series-system reliability** `R = ∏Rᵢ` (Barlow–Proschan).
+
+And internally pre-owned: `11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT.md`
+states the reading **and already refutes its distinctiveness**, a month before
+this file existed.
+
+`KSC-12` applies — reformulation is not novelty. Per
+`THE_BOUNDARY_RULES_STANDALONE.md:297`: **cite this; do not claim it.**
+
+**Notation fence.** This document writes `B`, deliberately. The form
+`⊙ = D• · D∞` may **not** be written at any tier: `D•` is a function of `•` and
+`D∞` of `○`, so it is `⊙ = f(•) × g(○)` — the retired `⊙ = • × ○` in new
+coordinates (`48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121`
+RETIRED — ILL-TYPED — WITHDRAWN; `:416` fires its own kill on exactly this
+reinstatement; `ArithmeticSignature(TitanFrame) = ∅`).
 
 **Canonical path:**
 `01_EMERGENTISM/05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`
