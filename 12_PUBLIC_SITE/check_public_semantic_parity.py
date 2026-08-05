@@ -530,7 +530,12 @@ def main() -> int:
     for passage in rag.get("passages", []):
         passage_id = str(passage.get("id", ""))
         href = str(passage.get("href", ""))
-        if passage_id.startswith(tuple(f"{root}:" for root in frozen_roots)) or any(
+        # REPAIRED 2026-08-05: this read `frozen_roots`, a name that is defined
+        # nowhere in this file — an incomplete rename. Line above already binds the
+        # identical tuple as `frozen_prefixes`, so this is exactly equivalent and
+        # not a behaviour change. Until now the checker raised NameError on every
+        # run and could report nothing, including its own TITAN_INFIX_REJECT_FIXTURES.
+        if passage_id.startswith(frozen_prefixes) or any(
             href == route or href.startswith(route + "/") or href.startswith(route + "#")
             for route in excluded_routes
         ):

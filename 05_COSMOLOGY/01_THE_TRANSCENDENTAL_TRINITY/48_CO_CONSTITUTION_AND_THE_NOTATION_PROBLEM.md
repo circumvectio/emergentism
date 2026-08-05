@@ -187,7 +187,7 @@ notation is what must go.**
 
 ### 4.2 · What survives as an exact statement `[A]`
 
-The true content of `⊙ = • × ○`, in a form that cannot be attacked:
+The true content the retired product form was reaching for — stated without reproducing it, per §12 of the standalone manual — in a form that cannot be attacked:
 
 ```text
 for every x in the open chart:      x · ι(x) = 1

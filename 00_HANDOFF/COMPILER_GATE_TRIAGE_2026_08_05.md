@@ -158,6 +158,74 @@ recorded in `00_THE_RECORD_LEDGER.md`, which was updated.
 
 ---
 
+---
+
+## ADDENDUM — a fourth dead gate, and it is the public one
+
+Found later the same day, while checking how far a retired notation had spread.
+
+### The exposure
+
+**432 live files carry `⊙ = • × ○`** — the form retired 2026-08-01 as a type
+error and re-marked *RETIRED — ILL-TYPED — WITHDRAWN* today. By lane:
+
+| Lane | Files |
+|---|---:|
+| **`12_PUBLIC_SITE`** | **359** — of which **349 are `.html`** |
+| `11_UPLINK` | 39 |
+| `00_HANDOFF` | 25 |
+| `91_COMPATIBILITY`, `03_METHODOLOGY`, `09_TOOLS`, root | 9 |
+
+(Plus 312 in `90_ARCHIVE`, which is correct — archives preserve.)
+
+It is a **sign-off**, not an argument: it sits at the foot of documents as a
+house signature. That is the worst place for it, because decoration is read
+without being parsed, and it is how retired notation outlives its retirement.
+
+### The gate exists — and cannot run
+
+`12_PUBLIC_SITE/check_public_semantic_parity.py` contains, at line 125:
+
+```python
+TITAN_INFIX_REJECT_FIXTURES = (
+    "⊙ = • × ○",
+    "<span>⊙</span> = <b>•</b> &times; ○",
+    ...
+)
+```
+
+**Someone already built the guard for exactly this**, including the HTML-escaped
+variant. It has never been able to report, because the file raises `NameError`
+before reaching any check.
+
+### Diagnosis — three undefined names, one repaired
+
+| Name | Site | Status |
+|---|---|---|
+| `frozen_roots` | line 533 | **REPAIRED 2026-08-05.** An *incomplete rename*: the line above already binds the identical tuple as `frozen_prefixes`. Exactly equivalent; not a behaviour change. |
+| `excluded_routes` | line 540 | **NOT REPAIRED — needs an owner.** No candidate in scope. At `1797138a` the analogous block read `withheld-routes.json`. Deciding what is excluded from a public RAG index is a **publication-policy** decision, not a rename, and guessing it would invent policy for a live site. |
+| `fnmatch` | `_ignored()` | **NOT REPAIRED.** Simply never imported. Trivial, but left with the above so the file is fixed once, deliberately, by its owner. |
+
+Repairing `frozen_roots` moves the failure forward one line. **The checker still
+does not run.**
+
+### Why this is the same defect, a third time
+
+This is the pattern the corpus has been documenting all day: **a gate exists, is
+relied upon, and does not execute.** Three instances now — the claim-status
+contract, the claim-graph compiler, and this. The distinguishing feature here is
+that this one guards **published** output, and behind it 349 live pages carry the
+exact string its fixtures were written to reject.
+
+**Two owner decisions, neither taken here:**
+1. Finish the checker (`excluded_routes` is the real one).
+2. Decide what happens to the 349 published pages. Options: leave (they are
+   decorative and the form is retired in the source of truth), sweep to the wide
+   emblem `•  ⊙  ○`, or sweep and redeploy. **This is publication, and it is not
+   an agent act.**
+
+---
+
 ## Recommended order
 
 1. **Defect 1 first.** It is a single card and it is masking about thirty tests.
