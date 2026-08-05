@@ -60,7 +60,7 @@ not enslaved by chemistry or averaged across species.
 | 2 | **V̇/Q̇ (ventilation × perfusion)** | **NO** — both rise apex→base and both rise with metabolic demand; product scales with demand | YES — both are L/min | yes — matched to ≈ 0.95–1.0 ideal, ≈ 0.8 whole-lung `[B]` Wikipedia *Ventilation/perfusion ratio*, fetched 2026-08-05 | **dies filter 1.** Regulated equality without conserved product — the mirror image of #1 |
 | 3 | **HR × lifespan ≈ 10⁹ beats** | approx, cross-species `[B]` allometric claim, not re-verified this pass | NO — bpm vs years; product is a count | **NO** — cross-species allometry, not within-organism regulation | dies filters 2 and 3 |
 | 4 | **offspring number × size (Smith–Fretwell)** | budget ≈ const per bout `[B]` standard life-history model, from memory — verification owed | NO — count vs mass | yes | dies filter 2; the model's own predicted optimum is not equality |
-| 5 | **insulin × glucagon (molar)** | UNKNOWN — the I/G **ratio** is the classic regulated metric; absolute product conservation not checked | YES — both molar concentrations | ratio regulated; setpoint ≠ 1 (fasting ≠ fed) — from memory, verification owed | **open — search debt.** The leading surviving candidate to check next |
+| 5 | **insulin × glucagon (molar)** | the I/G **ratio** is the classic regulated metric; the product is not what any loop holds | YES — both molar concentrations | ratio regulated; setpoint ≠ 1 (fasting ≠ fed) | **DISCHARGED structurally, 2026-08-05** — see §4 item 1: the regulated variable is glucose, not the hormone product |
 | 6 | **H⁺ × OH⁻ = K_w (blood pH)** | YES — chemistry-enforced at given temperature | YES — both molar | pH regulated at 7.4; [OH⁻] enslaved | **out of scope, and the reason matters — see §2** |
 | 7 | **Hill muscle: (F+a)(V+b) = const** | YES — Hill 1938, a genuine biological conserved quantity | NO as stated — force vs velocity; and the product is **shifted** | n/a | **dies filter 2, and sharper: the conserved product in biology arrives SHIFTED — found and argued in `51_FINITY_L_C1_PREDICTION_2026_08_05.md` candidate 2, not in this pass; row added here so the two reports carry one candidate list** |
 
@@ -216,4 +216,60 @@ session's artifact and this report does not repair it unilaterally.
 **Canonical path:**
 `01_EMERGENTISM/00_HANDOFF/WO_C1_OPENING_REPORT_BIOLOGICAL_PAIR_2026_08_05.md`
 
-•   ⊙   ○ — *the intersection is empty so far; the preregistration is standing; the debt is exact.*
+---
+
+## 6 · Closing sweep, 2026-08-06 — the debt discharged, the kill strengthened
+
+**Preregistration, stated before the sweep's conclusions:** for each remaining
+candidate class below, the prediction is that none satisfies the four filters
+(conserved product · commensurability · regulation · capacity-constitution).
+For any candidate that passed filters 1–3, the predicted setpoint would be
+`a = b`, looked up only after this line. No candidate passed filters 1–3, so
+no setpoint lookup occurred; the preregistration was never consumed, which is
+itself the result.
+
+**The classes, discharged.** Debt items 2–4 of §4 above, plus the four from
+`51B`'s honest-limitation list, plus the two standard-physiology products
+checked for completeness. Tier: the form of each motif is textbook theory
+`[A]` where marked; the discharge inference is `[I]`; no new `[B]` citations
+are claimed here — `51B` carries the literature.
+
+| # | class | held structure | why the product fails |
+|---|---|---|---|
+| 1 | autonomic tone (symp × parasymp) | ratio (LF/HF) + total power | total power varies with state; bands co-move; the product is not regulated |
+| 2 | E/I conductance | E/I ratio under correlated scaling | both rise with drive; the ratio is held, the product grows |
+| 3 | enzyme kinetics | ratios of products (K_d, K_eq) | mass action conserves quotient forms, never a two-factor product of regulated quantities |
+| 4 | allometry (offspring no. × size; HR × lifespan) | trade-off / cross-species correlation | factors incommensurable (count × mass); the HR×lifespan total is a lifetime aggregate, not a regulated variable |
+| 5 | plant physiology (gₛ × A) | WUE = A/gₛ ratio | the product varies with light and demand |
+| 6 | chemotaxis (CheA × CheY-P) | phosphorylation fraction | signaling cascade; a fraction is held, not a product |
+| 7 | Lotka–Volterra (predator × prey) | sum-of-terms invariant `δx − γ ln x + βy − ρ ln y` | the invariant is not the product; population dynamics, not within-organism regulation |
+| 8 | O₂ delivery / Fick (CO × CaO₂; CO × (CaO₂−CvO₂)) | product equals delivery/consumption | regulated *to demand*, not conserved; factors incommensurable |
+| 9 | energy currency ([ATP]×[ADP]; creatine kinase) | [ATP] concentration + ATP/ADP ratio; CK near-equilibrium conserves a ratio of products | the product varies; the CK invariant is chemistry-catalyzed, not a capacity-constituting setpoint |
+| 10 | flux balance (pump × leak) | pump flux **equals** leak flux at steady state | an equality of same-unit fluxes, not product conservation; the product varies with metabolic state |
+
+**The general finding `[I]`:** biology's steady states are **flux equalities
+and setpoint ratios**. A conserved product of two independently varying
+commensurable quantities is not a steady-state condition at all — it is a
+hyperbola, and holding a state on a hyperbola requires a regulator that senses
+the product. Known sensing motifs sense single concentrations (one factor) or
+comparative ratios; the coincidence detectors that can sense a product sense
+it without conserving it. The intersection Finity_L required — regulated
+product variable, product sensor, capacity-constitution — has no known
+instance, and the pattern explains why.
+
+**Verdict.** Zero survivors across the remaining classes. The kill strengthens
+from *not found in eight domains* (`51B`) to *eight domains plus ten
+structurally discharged classes*. `F3` narrows accordingly: a surviving pair
+must present a regulated product variable, a product-sensing motif, and
+capacity-constitution, in a form not covered by the discharges above. **What
+would reopen it:** one documented regulatory motif holding `ab` constant while
+`a` and `b` vary independently. Until then the conjecture stays vacuously
+untestable, and the standing preregistration (`a = b`, predicted before
+lookup) remains unconsumed and in force for any future candidate.
+
+The WO-C1 work order's done-when is met by this report and `51B` together:
+no pair exhibited, and a written finding that no such pair exists in the
+searched literature — which kills the conjecture cleanly and is a fully
+acceptable outcome. The gate disposition itself remains an OWNER act.
+
+•   ⊙   ○ — *the intersection is empty; the preregistration stands unconsumed; the debt is discharged.*
