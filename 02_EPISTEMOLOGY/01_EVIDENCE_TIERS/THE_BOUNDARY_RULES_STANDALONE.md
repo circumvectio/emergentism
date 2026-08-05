@@ -354,7 +354,7 @@ Each entry names what would settle it. This section is not an apology; it is why
 | Systematic separation of *indeterminate form* from *no value* | Cauchy, *Cours d'Analyse* (1821). Indeterminate forms are older (l'Hôpital 1696, from Johann Bernoulli); the formal-algebra treatment of `a/0` is later still (Ohm 1828, Peacock, Hamilton) and its modern statement is the field axioms |
 | Finite-word reachability of exactly `ℚ⁺` | Euclid's algorithm / continued fractions; uniqueness Hardy & Wright ch. X; Stern (1858), Brocot (1861); Calkin–Wilf (2000) |
 | Inversion, the added point, sharp 3-transitivity of `PGL₂(K)` on `ℙ¹(K)` | Möbius, Cayley; Riemann surfaces (Riemann 1851); the sphere model of the extended plane is standardly credited to C. Neumann (1865) |
-| Potential vs. completed infinity | Aristotle; Gauss; Hilbert; Linnebo–Shapiro |
+| Potential vs. completed infinity | Aristotle; Gauss (letter to Schumacher, 1831); Hilbert (*Über das Unendliche*, 1925); Linnebo & Shapiro, "Actual and Potential Infinity," *Noûs* 53(1):160–191, 2019, DOI 10.1111/nous.12208 |
 | Totalities that are not members | Cantor's absolute; proper classes in NBG / MK |
 | Totalised division with the bill itemised in its own axioms | Setzer (1997); Carlström (Stockholm 2001; MSCS 2004) — wheels. Bergstra–Hirshfeld–Tucker — involutive meadows. Bergstra–Ponse — common meadows |
 | Closed case table + separate sticky audit channel | IEEE-754 (1985), Kahan et al.; `totalOrder` added 2008 |
