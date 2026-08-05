@@ -8,9 +8,32 @@ rosetta:
   register: "[A/S/I/C] — each drop tiered in place"
   canonical_phrase: "The Amrita — the distilled nectar of the corpus, with the halāhala named beside it"
 title: "The Amrita"
-status: "DISTILLATION — 2026-07-03; recovery-integrated 2026-07-19. The load-bearing essence of the corpus, separated into nectar and halāhala without flattening dead proof-forms into dead ideas. Tier-honest; nothing here is new doctrine."
+status: "DISTILLATION — 2026-07-03; recovery-integrated 2026-07-19. SUPERSEDED ON THE DISTILLATION QUESTION ONLY, 2026-08-05, by 14_THE_DISTILLATION/ (the Second Churning). This file remains the record of the FIRST churning and is not withdrawn; it simply predates the 2026-08-05 rulings and contains none of them. The load-bearing essence of the corpus, separated into nectar and halāhala without flattening dead proof-forms into dead ideas. Tier-honest; nothing here is new doctrine."
 provenance: "Workflow wf_223bec21 (churn of 12 lanes, 72 nectar + 48 halāhala) + the 2026-07-02/03 empirical program + `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md`, `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md`, `130_ROSETTA_ALGEBRA_OBJECTION_ADJUDICATED_2026_07_13.md`, `131_RECOVERY_LEDGER_BROKEN_66_SECOND_LOOK_2026_07_19.md`. The 2026-07-19 recovery revision integrates AND-class, Rosetta split-verdict, planetary-confound, and anti-overclaim corrections."
 ---
+
+> ### ⚠ SUPERSEDED ON THE DISTILLATION QUESTION — 2026-08-05
+>
+> **Successor:** [`../14_THE_DISTILLATION/`](../14_THE_DISTILLATION/) — *The Second
+> Churning*, index at
+> [`00_THE_AMRITA.md`](../14_THE_DISTILLATION/00_THE_AMRITA.md).
+>
+> This file is the **first churning** (2026-07-03, recovery-integrated
+> 2026-07-19). It is **not withdrawn** and its halāhala list remains live
+> provenance. What it cannot do is answer *"what stands now"*: it predates the
+> 2026-08-05 rulings entirely — G2 proved and found to be Euclid's, `F0` marked
+> NOT PASSED, the emblem amendment, the proper-class seat correction, the four
+> proposals recorded as dead.
+>
+> **Two distillations standing side by side and silent about each other would
+> give two answers to one question** — the second-owner defect the corpus's own
+> projection law forbids. This line is the reciprocal half of that supersession;
+> without it the successor was itself an instance of the shape it documents: *a
+> correction written in one place and not propagated to the surface a reader
+> meets.*
+>
+> The successor **ratifies nothing** and is a projection. Where it and a source
+> disagree, the source governs.
 
 # The Amrita
 
