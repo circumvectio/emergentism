@@ -91,6 +91,15 @@ whole, or whole → individual) crossed with **extraction valence**
 | **indiv → whole** | **moral** — the individual raises the sustaining whole | **immoral** — ego gain purchased by degrading the whole |
 | **whole → indiv** | **ethical** — the whole raises a bearer without externalizing | **unethical** — the whole extracts from or sacrifices a bearer |
 
+> **⚠ TIER MARKER 2026-08-06 — this grid is `[I/S]`, and its 2026-07-19
+> completion is still `[D]`: historical synthesis, never K2-signed, extant
+> only in archive.** The parent projection carries the marker
+> (`D5_THE_GAME.md`: *"The canonical directional grid `[I/S]` (with its
+> 2026-07-19 completion still `[D]` historical synthesis)"*); this
+> transcription lost it. The dyadic gate itself — bearer AND whole must both
+> rise; no aggregate laundering — is live; the four-cell moral/ethical
+> labeling rides at the parent's tier and no higher.
+
 The surface verbs *give* and *take* do not determine valence. Warranted
 receipt may be non-extractive; dependency-producing generosity may still
 extract. **The gate is dyadic on purpose**: no aggregate laundering — a
