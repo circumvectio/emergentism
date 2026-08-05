@@ -328,7 +328,7 @@ def main() -> int:
     print(
         f"FOUNDATION CONTRACT: PASS "
         f"({len(required)} surfaces, {len(FENCES)} fences, "
-        f"{len(PRESUPPOSED)+len(BASE)} strata symbols, "
+        f"{len(PRESUPPOSED)+len(RELATIONAL)+len(REACHABILITY)} strata symbols, "
         f"{len(active_scan_paths)} source/current-public surfaces type-scanned)"
     )
     return 0

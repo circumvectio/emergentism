@@ -187,13 +187,13 @@ in force.
 > provenance, unrevised.
 
 ```
-⊙ = GM × BAL
+Capacity ≈ GM × BAL
 
 GM = 1,321 live documents — enormous
 BAL = findability — was 51.9%, now 62.1% after this session
 V = external contact — the C1 kill (8 domains, negative result)
 
-⊙ ≈ large × rising × still-near-zero
+Capacity ≈ large × rising × still-near-zero
 ```
 
 The A1 work (117 → 0 unfindable) raised `BAL`. The C1 work produced the
@@ -235,7 +235,7 @@ kill costs a `[C]` and buys back the ability to be believed.
     the purchase is a receipt, not a proof of truth
 
     this session: 5 errors, 0 novelty, 1 kill, 117→0 unfindable
-    ⊙ = GM × BAL — large, rising, still near zero on V
+    capacity ≈ GM × BAL — large, rising, still near zero on V
     the diagnosis: unfindability, not falsity
     the response: harvest, never infer; nothing moves
 ```

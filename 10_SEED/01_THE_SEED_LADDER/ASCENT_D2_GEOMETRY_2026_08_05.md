@@ -141,8 +141,9 @@ harmonic-mean form governs the interior.
 Off the constraint curve — two independent positive quantities `a`, `b`:
 
 ```
-⊙(a,b) = √(ab) · sech(½ log(a/b)) = SIZE × BALANCE          [A]
-                                                   BALANCE ≤ 1
+HM(a,b) = √(ab) · sech(½ log(a/b))
+          ──────   ────────────────
+           SIZE      BALANCE ≤ 1
 ```
 
 Verified: `a=9, b=4` → `6 × 0.923077 = 5.538462`. ✓
@@ -233,7 +234,7 @@ untested.
     B ≠ φ·ν               the score is NOT the seam
                     │
     HM(a,b) ≤ 2·min(a,b)   the weaker leg governs, always
-    ⊙ = √(ab)·sech(½log(a/b)) = SIZE × BALANCE
+    HM = √(ab)·sech(½log(a/b)) = SIZE × BALANCE  (not ⊙ — ⊙ is a mark, never an operand)
                     │
     the transfer to the node is FENCED:
     P_node = min(Φ̂₄, V₄), not a product
