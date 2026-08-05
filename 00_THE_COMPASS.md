@@ -1,5 +1,4 @@
 ---
-canonical_phrase: "routing stub — no claim"
 canonical_target: 00_META/00_THE_COMPASS.md
 status: "FORWARDING STUB — 2026-07-19 root tidy (`137_FINAL_STRUCTURE_AND_PAPERS_LENS_PROPOSAL_2026_07_19.md`; `138_ROOT_TIDY_WAVE2_EXECUTION_2026_07_19.md`). K3: content moved, not erased; signed citations to this root path resolve here. No tier or signature changed by the move."
 canonical_phrase: "Forwarding stub — the canonical Compass lives at 00_META/00_THE_COMPASS.md; no claim made here"

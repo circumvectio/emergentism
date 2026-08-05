@@ -8,8 +8,26 @@ rosetta:
   register: "[B]"
   canonical_phrase: "Finity Papers — external source provenance (Suda 2025–2026)"
 title: "External Sources — Suda Corpus (2025–2026)"
-status: "ACTIVE provenance record — 2026-06-06. Full 11-paper corpus tracked. PDF bytes are git-ignored and kept on disk; this record stores bibliographic metadata, hashes, byte counts, and re-acquisition routes."
+status: "ACTIVE provenance record — 2026-06-06; custody description corrected 2026-08-05. Full 11-paper corpus tracked. PDF bytes are Git-LFS-tracked (`.gitattributes`: `*.pdf filter=lfs`) — NOT git-ignored as this file previously claimed; this record stores bibliographic metadata, hashes, byte counts, and re-acquisition routes."
 ---
+
+> **CUSTODY CORRECTION, 2026-08-05 [S] — verified on disk.** This record
+> previously stated that the PDF bytes were *git-ignored and kept on disk*,
+> with a `.gitignore` rule at repo root. Both statements were false: the PDFs
+> are **Git-LFS-tracked** (`.gitattributes` carries `*.pdf filter=lfs`), the
+> committed content was LFS pointer files, and **no such `.gitignore` rule
+> exists** (verified by search, 2026-08-05). The consequence was that the
+> working tree held 131-byte pointers and **nobody could read the primary
+> sources**. Repair executed 2026-08-05: all LFS objects were already present
+> in the local object store (32/32); `git lfs checkout` restored all 11 Suda
+> PDFs to real content (verified: `file` reports PDF documents; byte counts
+> match the table below). Two cited provenance paths are dead and are marked
+> where they appear: the tombstone
+> `/90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md`
+> (does not exist) and the intake path `01_EMERGENTISM/000_Intake/` (does not
+> exist). **Open owner question:** the declared policy (git-ignore) and the
+> implemented mechanism (LFS tracking) contradict each other; this correction
+> states disk reality and does not choose a policy.
 
 **Corpus:** Emergentism
 **Third-party provenance (K3 git-ignore policy).**
@@ -19,11 +37,13 @@ status: "ACTIVE provenance record — 2026-06-06. Full 11-paper corpus tracked. 
 **Class:** third-party **published reference** material — *not* Magnum Opus canon.
 
 **Policy.** Per the corpus published-reference-PDF discipline
-(`/90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md`,
-founder sign-off 2026-05-27), published third-party PDFs are **kept on disk but git-ignored**, with a
+(`/90_ARCHIVE_AND_COMPATIBILITY/PUBLISHED_REFERENCE_PDFS_TOMBSTONE.md` —
+**DEAD LINK, path does not exist on disk as of 2026-08-05**; founder
+sign-off 2026-05-27), published third-party PDFs are **kept on disk and
+tracked via Git LFS** (the git-ignore mechanism this paragraph previously
+described does not exist — see the custody correction above), with a
 tracked bibliographic record (this file) and a public re-acquisition route. The bytes are re-downloadable
-from the public source of record (PhilArchive, where available). The `.gitignore` rule lives at repo root under
-"Finity Papers external source PDFs (Suda 2025)".
+from the public source of record (PhilArchive, where available).
 
 ## Why these are here
 
@@ -63,15 +83,17 @@ The full 2026-06-06 Suda corpus convergence analysis is at [`../SUDA_CONVERGENCE
 Finity Paper I cites **Suda Part III** (*Operational Invariants, Fractional Flows, and Measurement
 Protocols*, PhilArchive **SUDFSA-3**) for the twist index and the operational invariant pair `(E, φ)`.
 Part III is now on disk locally, acquired from the 2026-06-06 Suda intake drop and copied into this
-ignored source folder under the published-reference-PDF policy. The earlier 2026-06-05 command-line
+source folder under the published-reference-PDF policy. The earlier 2026-06-05 command-line
 fetch failure via Cloudflare (`403`) is superseded by this local acquisition.
 
 ## Note on papers 4–11
 
-These eight papers were acquired in the 2026-06-06 Suda corpus drop in `01_EMERGENTISM/000_Intake/`.
+These eight papers were acquired in the 2026-06-06 Suda corpus drop in `01_EMERGENTISM/000_Intake/`
+(**DEAD PATH — `000_Intake/` does not exist on disk as of 2026-08-05**; the intake's current
+provenance is this LFS-tracked folder).
 Papers 4–9 are dated 2025; papers 10–11 are dated 2026. Unlike Parts I–III, no public PhilArchive
 record or stable URL has been confirmed for these works. They are treated as **published reference**
-material per corpus custody policy (kept on disk, git-ignored, bibliographically tracked) with the re-acquisition
+material per corpus custody policy (kept on disk, Git-LFS-tracked, bibliographically tracked) with the re-acquisition
 route noted as "private drop" pending confirmation of public sources. If public URLs become available,
 update the Source of record column and verify SHA-256 against the bytes on disk.
 

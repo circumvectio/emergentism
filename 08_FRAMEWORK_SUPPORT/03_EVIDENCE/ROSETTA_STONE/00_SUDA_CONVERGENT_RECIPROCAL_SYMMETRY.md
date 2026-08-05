@@ -21,7 +21,7 @@ status: "ACTIVE KINTSUGI REFERENCE — analytic correspondence corrected 2026-07
 **Corpus:** Emergentism
 **Source provenance:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/_SOURCES/README.md`
 **Finity synthesis:** `../../../03_METHODOLOGY/02_THE_PAPERS/FINITY_PAPERS/00_SUDA_VALUE_EXTRACTION_2026_06_06.md`
-**Raw intake snapshot:** `../../../../../90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/` (ignored raw archive; not tracked source authority)
+**Raw intake snapshot:** `../../../../../90_ARCHIVE/03_RAW_INTAKE/2026_06_06_SUDA_PAPERS/` — **DEAD PATH as of 2026-08-05** (`90_ARCHIVE/03_RAW_INTAKE/` does not exist on disk); the live provenance is the LFS-tracked `_SOURCES/` folder named above (not tracked source authority)
 
 # Suda Reciprocal-Symmetry Convergence
 
