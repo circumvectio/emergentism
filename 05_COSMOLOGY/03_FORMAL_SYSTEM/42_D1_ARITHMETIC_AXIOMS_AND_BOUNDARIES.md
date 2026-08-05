@@ -3,6 +3,7 @@ title: "D1 Arithmetic — Typed Axioms and Boundary Semantics"
 status: "ACTIVE FORMAL OWNER — 2026-07-21 Kintsugi repair"
 evidence_tier: "[A] standard mathematics in named structures; [S] typed interface; [I/C] Emergentist rung and μ reading"
 owner: "D1 Arithmetic — this document is the sole semantic owner; Primitives and Type Signatures is the subordinate shared-schema index"
+canonical_phrase: "D1 arithmetic owner — the typed signed spine (ℤ_• = ℕ⁺ ⊎ −ℕ⁺, with ℤ as an explicit completion), the five statuses that must never be conflated, a/0 is FORECLOSED (not forbidden, not merely undefined), no nontrivial field admits a total quotient operation satisfying the quotient law (a/b)·b=a for every denominator, and the two involutions n, ι whose fixed sets union to {−1, 0, +1, ∞}"
 ---
 
 # D1 Arithmetic — Typed Axioms and Boundary Semantics

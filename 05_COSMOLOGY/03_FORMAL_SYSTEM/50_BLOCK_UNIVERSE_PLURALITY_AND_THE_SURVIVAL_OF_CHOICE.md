@@ -4,6 +4,7 @@ status: "ACTIVE — subordinate treatment; 34_D4_D5_CANONICAL_REFERENCE.md owns 
 date: 2026-07-29
 evidence_tier: "[A] the logical distinction between determinateness and causal independence; [S/I] typed compatibility readings; [C] plurality and agency claims"
 owner: "Subordinate to 34_D4_D5_CANONICAL_REFERENCE.md. This document creates no D-register doctrine."
+canonical_phrase: "Choice survives both the block and plurality: the fatalist inference is invalid (determinate ≠ independent [A]); plurality is not a corpus commitment (GP-08, model support only); the real threat is not eternalism but a null result (GP-02/μ₄, preregisterable) [C]; subordinate to 34 for all D4/D5 typing"
 parents:
   - 34_D4_D5_CANONICAL_REFERENCE.md
   - 48_THE_BOUNDARY_CROSSINGS_AND_THE_MU_CRITERION.md

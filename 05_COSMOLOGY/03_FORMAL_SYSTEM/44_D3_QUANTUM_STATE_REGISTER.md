@@ -3,6 +3,7 @@ title: "D3 Quantum State — Probability-Bearing Register"
 status: "ACTIVE FORMAL OWNER — 2026-07-21 Kintsugi recut"
 evidence_tier: "[A] quantum-state and Born/POVM mathematics; [I] selected D3 assignment; [C] μ and ontological interpretation"
 owner: "D3 Quantum State — Probability-Bearing Register"
+canonical_phrase: "D3 owner — the probability-bearing quantum-state register: ρ bears probabilities only relative to a declared measurement; the instrument update is operational [A/S]; calling it fundamental collapse requires an additional interpretation [C]; D3 lacks realized change but not momentum; interpretations stay open and cannot be stacked as dimensions"
 ---
 
 # D3 Quantum State — Probability-Bearing Register

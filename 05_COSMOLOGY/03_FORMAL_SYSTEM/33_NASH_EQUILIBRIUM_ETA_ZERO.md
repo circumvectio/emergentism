@@ -3,6 +3,7 @@ title: "Extraction games — the bounded Nash result"
 date: 2026-07-20
 status: "ACTIVE BOUNDED NOTE — generic conditional result"
 evidence_tier: "[A] model consequences; [I] Emergentist use; [C] empirical fit"
+canonical_phrase: "The bounded Nash result — Model A (no private return) makes zero extraction strictly dominant as a control case, not as evidence; Model B (private return) kills the unconditional sentence 'extraction is irrational'; sustainability requires declared mechanism-design conditions, proved per game and never imported [S/C]"
 source_custody:
   original_head_blob: "130413a08dd63bdca57f6e47b813887bff88bdb4"
 parents:
