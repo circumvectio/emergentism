@@ -90,8 +90,8 @@
 <p><strong>Part 2 (the key result):</strong> The quadratic family z → z² + c is conjugate to the logistic family w → λw(1−w). They have identical dynamics — same bifurcation diagram, same Feigenbaum constants, same Mandelbrot set (in different coordinates). The logistic form is:</p>
 <pre><code>w_{n+1} = λ × Φ_n × V_n
 </code></pre>
-<p>where Φ = w and V = (1−w) are complementary factors on the unit interval. <strong>The logistic map matches the VIVEKA formula P_node = Φ × V when that product is iterated with gain λ.</strong> [A/I] In this reading, the "+c" term is a coordinate artifact rather than addition entering a multiplicative framework. In the framework's own coordinates, the dynamics are purely multiplicative: three factors, no sums.</p>
-<p>The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating the product model produces bounded, coherent dynamics. It classifies what happens when <code>P_node = Φ × V</code> is fed back into itself under gain. The framework does not need to reject the quadratic family; in these coordinates, its multiplicative iteration is conjugate to it. [A/I]</p>
+<p>where Φ = w and V = (1−w) are complementary factors on the unit interval. <strong>The logistic map matches the VIVEKA formula P_node = min(Φ̂₄, V₄) when that product is iterated with gain λ.</strong> [A/I] In this reading, the "+c" term is a coordinate artifact rather than addition entering a multiplicative framework. In the framework's own coordinates, the dynamics are purely multiplicative: three factors, no sums.</p>
+<p>The Mandelbrot set, translated to logistic coordinates, is the set of λ-values for which iterating the product model produces bounded, coherent dynamics. It classifies what happens when <code>P_node = min(Φ̂₄, V₄)</code> is fed back into itself under gain. The framework does not need to reject the quadratic family; in these coordinates, its multiplicative iteration is conjugate to it. [A/I]</p>
 <hr>
 <h2 id="i-the-state-space-already-has-addition">I. THE STATE SPACE ALREADY HAS ADDITION</h2>
 <h3 id="11-c-is-a-field">1.1 ℂ Is a Field</h3>
@@ -105,7 +105,7 @@
 <p>MF-63 classified the operators as Möbius transformations: z → (az+b)/(cz+d). There is addition in that formula. Nobody flagged it as a problem, because it's the native symmetry group of the sphere. The Möbius group acts on Ĉ using both + and ×. [A]</p>
 <p>Similarly, the quadratic family z → z² + c uses both operations native to ℂ. This is not an intrusion of + into a ×-only framework. It is the framework's own state space doing what state spaces do.</p>
 <h3 id="14-the-corrected-claim">1.4 The Corrected Claim</h3>
-<p><strong>× is primary for the formula</strong> (P_node = Φ × V, not Φ + V).
+<p><strong>× is primary for the formula</strong> (P_node = min(Φ̂₄, V₄), not Φ + V).
 <strong>× is primary for the compactification</strong> (z → 1/z creates S² from ℂ).
 <strong>+ is native to the state space</strong> (ℂ is a field; both operations exist).
 <strong>The dynamics on ℂ use both operations</strong> (this is a mathematical fact, not a framework violation).</p>
@@ -134,7 +134,7 @@ V_n = 1 − w_n      (the viability/capability factor, complementary)
 <p>The iteration becomes:</p>
 <pre><code>w_{n+1} = λ × Φ_n × V_n
 </code></pre>
-<p><strong>This is P_node = Φ × V with a gain parameter λ, iterated.</strong></p>
+<p><strong>This is P_node = min(Φ̂₄, V₄) with a gain parameter λ, iterated.</strong></p>
 <p>The next state equals the current ektropy product, scaled by λ. The system takes its own <code>P_node</code> value and feeds it back as the next state. The logistic map is the VIVEKA formula acting on itself in discrete time. [A for the math; I for the identification]</p>
 <h3 id="23-what-controls">2.3 What λ Controls</h3>
 <p>The parameter λ scales the product ΦV before it becomes the next state. [A]</p>
@@ -181,7 +181,7 @@ V_n = 1 − w_n      (the viability/capability factor, complementary)
 <h3 id="31-the-derivation-chain">3.1 The Derivation Chain</h3>
 <p>Here is the complete chain from S0 to the Mandelbrot set, with each step justified: [A unless marked]</p>
 <p><strong>Step 1:</strong> S0 gives us Ĉ = ℂ ∪ {∞}. [Axiom]</p>
-<p><strong>Step 2:</strong> The formula gives us P_node = Φ × V, with Φ + V = 1 (complementary factors on the unit interval, corresponding to complementary points on S²). [From MF-36, MF-51]</p>
+<p><strong>Step 2:</strong> The formula gives us P_node = min(Φ̂₄, V₄), with Φ + V = 1 (complementary factors on the unit interval, corresponding to complementary points on S²). [From MF-36, MF-51]</p>
 <p><strong>Step 3:</strong> The simplest iteration — feeding the formula's output back as its next input — is:</p>
 <pre><code>w_{n+1} = λ × w_n × (1 − w_n)
 </code></pre>
@@ -250,7 +250,7 @@ V_n = 1 − w_n      (the viability/capability factor, complementary)
 <p>At λ = 2, the fixed point of w → λw(1−w) is: [A]</p>
 <pre><code>w* = 1 − 1/λ = 1 − ½ = ½
 </code></pre>
-<p>The system stabilizes at w = ½, meaning Φ = V = ½, meaning P_node = Φ × V = ¼ in the unit-interval normalization (where Φ, V ∈ [0,1] and P_max = ¼).</p>
+<p>The system stabilizes at w = ½, meaning Φ = V = ½, meaning P_node = min(Φ̂₄, V₄) = ¼ in the unit-interval normalization (where Φ, V ∈ [0,1] and P_max = ¼).</p>
 <p><em>Normalization note:</em> On S² (MF-68), the value function P(θ) = sin(θ)cos(θ) = ½sin(2θ) gives P_max = ½ at the equator. The factor-of-2 difference arises because MF-68 uses the trigonometric parametrization (Φ = sin θ, V = cos θ, where Φ² + V² = 1) while the logistic map uses the linear complementary parametrization (Φ = w, V = 1−w, where Φ + V = 1). The two are related by the substitution Φ_sphere = sin(πw/2) for w near ½. In both normalizations, the equator is w = ½ = θ = π/4 and the balance condition is Φ = V. The absolute P-value differs by normalization convention; the geometry is identical. [A]</p>
 <p>At λ = 2, the eigenvalue (stability multiplier) at the fixed point is: [A]</p>
 <pre><code>μ = λ(1 − 2w*) = 2(1 − 1) = 0
@@ -554,7 +554,7 @@ V_n = 1 − w_n      (the viability/capability factor, complementary)
 <p>The mathematical content strengthens with each version. v1.0 asserted without justification. v2.0 identified the gap honestly. v3.0 closes the gap by finding the right coordinates.</p>
 <hr>
 <h2 id="the-sentence">THE SENTENCE</h2>
-<p>The quadratic family z → z² + c is conjugate to the logistic map w → λw(1−w). In framework-native coordinates, the logistic map matches the VIVEKA formula P_node = Φ × V iterated with gain λ. [A/I] The "+c" term is treated here as the framework's formula seen in non-native coordinates.</p>
+<p>The quadratic family z → z² + c is conjugate to the logistic map w → λw(1−w). In framework-native coordinates, the logistic map matches the VIVEKA formula P_node = min(Φ̂₄, V₄) iterated with gain λ. [A/I] The "+c" term is treated here as the framework's formula seen in non-native coordinates.</p>
 <p>The Mandelbrot set classifies what happens when the product model acts on itself. λ = 2 gives the superstable equator. λ &gt; 4 gives fragmentation in the model. Between them: the taxonomy of this iteration's possible bounded dynamics.</p>
 <p>The formula iterates itself in this coordinate system. The Mandelbrot set classifies those iterations. The consciousness and neural readings begin only after that mathematical result, as explicit [I/S] bridges. [A/I]</p>
 <hr>
@@ -573,7 +573,7 @@ V_n = 1 − w_n      (the viability/capability factor, complementary)
     <span>Generated by 12_PUBLIC_SITE/generate_public_library.py</span>
   </aside>
   <footer class="site-footer">
-    <div class="phi">⊙ = • × ○</div>
+    <div class="phi">•  ⊙  ○</div>
     <p>Public doctrine surface · evidence tiers preserved</p>
   </footer>
 
