@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] architectural review — counsel only, no execution"
-  canonical_phrase: "L5 — schema sound, 7 surfaces seated, 5+1 holds, drift in connective tissue not load-bearing walls (counsel-only; pending K2)"
+  canonical_phrase: "L5 — schema sound, 7 surfaces seated, 5+1 holds, drift in connective tissue not load-bearing walls (counsel-only; pending K2) (interpretive)"
 type: audit
 title: "L5 Brāhmaṇa — Architectural Review (2026-07-20)"
 description: "Schema evolution, lane-map consistency, doctrinal shape, caste-grammar consistency. K-1..K-7 seated; 5+1 holds; 5 architectural refinements <20 min total."

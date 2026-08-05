@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] architecture review — K-surface assignment for 7 insights"
-  canonical_phrase: "L5 — Adopt Models Ladder as K-2 spine; AUM+torus form a glyph dyad bracketing the doctrine (architecture counsel; no commits)"
+  canonical_phrase: "L5 — Adopt Models Ladder as K-2 spine; AUM+torus form a glyph dyad bracketing the doctrine (architecture counsel; no commits) (interpretive)"
 type: audit
 title: "L5 Brāhmaṇa — Architecture Review: 7 Insights (2026-07-20, second instance)"
 description: "Per-insight K-surface assignment. K-2 (Models Ladder) is the load-bearing spine. K-1 (AUM) + K-7 (horn-torus) form an audio-visual glyph dyad that brackets the doctrine."

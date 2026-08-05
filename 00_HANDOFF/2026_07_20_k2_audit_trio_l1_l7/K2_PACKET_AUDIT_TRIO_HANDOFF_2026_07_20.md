@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Kṣatriya"
   register: "[S]"
-  canonical_phrase: "Audit-trio handoff — 5 verdicts, 1 knot, 1 K2 ask, 7 additive fixes (counsel-only; pending K2)"
+  canonical_phrase: "Audit-trio handoff — 5 verdicts, 1 knot, 1 K2 ask, 7 additive fixes (counsel-only; pending K2) (interpretive)"
   d_register: 4
   d_register_basis: "Audit-trio handoff packet to K2 — performed selection, factual record; D4. Source: L11-12 'Hand-off from the 5-caste audit-trio … to K2'."
 type: k2-packet

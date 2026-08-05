@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] constitutional witness — 7 insights through 5+1 fences"
-  canonical_phrase: "L7 third instance — 3 insights fully Held, 3 with one Bent, 1 with three Bent; η=0 meta-axiom, K2 handoff, Ω vector (counsel-only; pending K2)"
+  canonical_phrase: "L7 third instance — 3 insights fully Held, 3 with one Bent, 1 with three Bent; η=0 meta-axiom, K2 handoff, Ω vector (counsel-only; pending K2) (interpretive)"
 type: audit
 title: "L7 Ṛṣi — Constitutional Witness on the 7 Insights (2026-07-20)"
 description: "Witness read of the 7 insights through the 5+1 fences. 3 fully Held (Reduction Asymmetry, AUM-on-sphere, horn-torus), 3 with one Bent (Models Ladder, axioms per dim, cave-sun), 1 with three Bent (Titan-imagination)."
