@@ -91,13 +91,22 @@ Useful seat split:
 - **L2 (truth-cut):** "find where this claims more than its source supports."
 - **L3 (audit):** "check tier integrity and every cross-reference and date."
 
-### 0.5 · Verification must be able to fail.
+### 0.5 · Verification must be able to fail. In both directions.
 
 A check that cannot fail is not evidence. Before reporting a gate green, prove
 it can go red — mutate the input and confirm the check trips. See
 `09_TOOLS/01_SCRIPTS/check_g2_normal_form.py`, which carries six mutants for
 exactly this reason, and which exists because its predecessor sampled and could
 not distinguish "the property holds" from "the property was never stressed."
+
+**The same rule applies to adjudication.** A referee panel that cannot return
+"stands" is not rigorous — it is broken in the opposite direction. On
+2026-08-05/06 a panel with `refuted: true` as its default and a running
+tally returned 18/18 refuted. A fair re-hearing found 3 genuine deaths and
+15 survivors. The rigged instrument converted prior art into kills fifteen
+times — the same defect as a gate that cannot fail, with the sign flipped.
+If your instrument's default is one verdict, you have a prosecution, not a
+panel.
 
 ### 0.6 · Git discipline. This repo has bitten sessions before.
 
