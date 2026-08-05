@@ -63,7 +63,9 @@ _DENIAL_BEFORE = re.compile(
     r"(?:no|forbidden|inadmissible|invalid|undefined|ill-formed)\s+"
     r"(?:titan\s+)?(?:arithmetic|equation|identity|operation|expression|syntax)|"
     r"(?:do\s+not|does\s+not|never|cannot)\s+"
-    r"(?:write|assert|use|admit|license|define)"
+    r"(?:write|assert|use|admit|license|define)|"
+    r"(?:retired|withdrawn|struck|dead|killed|banned)"
+    r"(?:\s+[—-]\s+(?:ill-typed|withdrawn|struck))*"
     r")\s*(?::|—|-)?\s*$",
     re.I,
 )
@@ -71,8 +73,10 @@ _DENIAL_AFTER = re.compile(
     r"^\s*(?:\([^)]*\)\s*)?(?:"
     r"(?:is|was|are|were|remains?)\s+(?:explicitly\s+)?"
     r"(?:forbidden|inadmissible|invalid|undefined|ill-formed|not\s+well-formed|"
-    r"not\s+valid|not\s+defined|a\s+type\s+error)|"
-    r"(?:has|have)\s+no\s+(?:typed\s+)?meaning"
+    r"not\s+valid|not\s+defined|a\s+type\s+error|"
+    r"retired|withdrawn|struck|dead|killed|banned)|"
+    r"(?:has|have)\s+no\s+(?:typed\s+)?meaning|"
+    r"(?:ill-typed,\s+withdrawn)"
     r")\b",
     re.I,
 )
