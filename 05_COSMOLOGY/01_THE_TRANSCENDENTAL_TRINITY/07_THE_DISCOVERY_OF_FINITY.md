@@ -67,7 +67,31 @@ form. The glyph can therefore orient a reading without rewriting arithmetic.
 
 ### Canonical distinction
 
-> **GLYPH BINDING RULED 2026-08-05 — `⊙` marks the unit seat, not the realm.**
+> ### ⚠ THE RULING BELOW WAS REVERSED BY THE OWNER, 2026-08-05, SAME DAY.
+> **`⊙` marks the REALM.** The ruling recorded beneath this notice is superseded
+> and is retained only so the reasoning is legible. See
+> [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3.
+>
+> **The tie-breaker that produced the ruling below is withdrawn as non-decisive.**
+> It held that a display whose members are of different sorts cannot be read.
+> **Interval notation refutes it:** `[0, 1]` is bracket, element, comma, element,
+> bracket — thoroughly mixed sorts, universally readable, because the
+> *arrangement* says which is which. `•  ⊙  ○` as *lower bound, realm, upper
+> bound* is that same shape.
+>
+> **Consequence still open:** the canon fixes `emblem_T(1_T)=⊙` and
+> `role_T(1_T)=Unit_T`. Under the reversal the unit has no mark. Either the
+> canon's emblem map is amended or the unit is given its own mark — an **owner
+> act**, deliberately not taken by agent fiat, since that is how the original
+> collision started.
+>
+> **What survives from below unchanged:** the reason the realm needed protecting
+> at all — *Finity is not reducible to one point* — and the observation that the
+> emblem's spacing is frame grammar. Both hold under either binding.
+>
+> ---
+>
+> **SUPERSEDED RULING, 2026-08-05 — `⊙` marks the unit seat, not the realm.**
 > This paragraph read *"`⊙` names **Finity**: the whole realm of finite
 > determinations."* That contradicted this document's own declared parent:
 > `00_THE_TRANSCENDENTAL_TRINITY_CANON.md` fixes `role_T(1_T)=Unit_T` and
