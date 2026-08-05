@@ -381,6 +381,12 @@ the uncountable target set as an analogy for the inexhaustibility attributed to
 Ground_T   Unit_T     Horizon_T
 ```
 
+> **SUPERSEDED BINDING — 2026-08-05.** The `⊙` entry above predates the owner's
+> twice-made ruling: `⊙` names the **realm** (all of finity), not the unit; the
+> unit's mark is its numeral `1`. Text retained as history. Live binding: the
+> amended canon and [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3.
+
+
 | Titan role `[S/I]` | Mode named here `[I]` | Mathematical neighbor `[A]` | What is forbidden |
 |---|---|---|---|
 | ground glyph; ground token; `Ground_T` role | **`TheInfinite_R`:** pre-countability; inexhaustibility is the selected reading | numeric `0_N`. **No mathematical neighbour is claimed for pre-countability** (corrected 2026-08-05, §3): uncountability failed because it is *defined by* countability; the proper class failed because it is overfull where the ground is pre-full. Uncountability remains the neighbour of the *inexhaustible* reading only, once a set has been declared. | “zero is an uncountable number”; treating the Ground as a set; **reading the ground as a proper class** |

@@ -69,7 +69,7 @@ and no picture transfers proof to the next rung.
 
 | Register | Primary model | What it can do | What it cannot establish |
 |---|---|---|---|
-| **D0** | sovereign opaque `TitanFrame={0_T,1_T,∞_T}` rendered by `{•,⊙,○}` | mark ground, finite unit, and horizon as selected boundary roles without operations | coerce a Titan into a number, perform Titan arithmetic, cause a world, or force three roles mathematically |
+| **D0** | sovereign opaque `TitanFrame={0_T,1_T,∞_T}` ; boundary tokens rendered `•`,`○`, the realm marked `⊙`, the unit by its numeral (canon amended 2026-08-05) | mark ground, realm, and horizon as selected boundary roles without operations | coerce a Titan into a number, perform Titan arithmetic, cause a world, or force three roles mathematically |
 | **D1** | positive count spine `ℕ⁺` from finite singleton multiplicities, plus the reciprocal log line | distinguish arithmetic `1_N` from Titan `1_T`, display typed counting, reciprocal pairing, and explicit zero-adjunction | call one the unique first set, generate naturals as products of ones, include `0_N` in `ℕ⁺`, or prove that a number line generates D2 |
 | **D2** | a finite typed function atlas and configured graphs `Γ_f` | display domains, relations, singularities, symmetries, and the reciprocal meridian as one entry | contain literally every function, establish actuality, or derive quantum physics |
 | **D3** | density operator plus measurement context `(ρ,M)` | generate `p(k|ρ,M)=Tr(ρE_k)`; distinguish pure sphere from mixed ball and prediction from receipt | select a quantum interpretation, identify branches with D5, or prove a strong crossing |

@@ -41,6 +41,12 @@ rosetta:
 
 **Horizon role.** A selected image of openness or unbounded possibility. `○`
 
+> **SUPERSEDED BINDING — 2026-08-05.** The `⊙` entry above predates the owner's
+> twice-made ruling: `⊙` names the **realm** (all of finity), not the unit; the
+> unit's mark is its numeral `1`. Text retained as history. Live binding: the
+> amended canon and [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3.
+
+
 These are **opaque framing roles**, not numbers. The corpus does not derive the
 number system, projective geometry, or physical emergence from them.
 

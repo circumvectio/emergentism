@@ -26,6 +26,11 @@ rosetta:
 | **•** | `0_T` | numeric `0_N` / a selected projective pole | Bindu, seed, origin | ground-facing frame |
 | **○** | `∞_T` | projective `∞_P` | horizon, totality | horizon-facing frame |
 | **⊙** | `1_T` | numeric `1_N` / positive chart centre | *finity*, the One | finite-unit-facing frame |
+> **SUPERSEDED BINDING — 2026-08-05.** The `⊙` entry above predates the owner's
+> twice-made ruling: `⊙` names the **realm** (all of finity), not the unit; the
+> unit's mark is its numeral `1`. Text retained as history. Live binding: the
+> amended canon and [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3.
+
 
 The visual superposition is typography `[I]`, not a binary operation. Similar
 marks do not identify their Titan, numeric, projective, or chart types.

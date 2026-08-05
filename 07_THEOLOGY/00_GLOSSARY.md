@@ -36,7 +36,7 @@ unless it earns independent evidence.
 | **TitanFrame** | The sovereign opaque type `{0_T,1_T,∞_T}`. Its terms frame ground, finite unit, and horizon; no arithmetic operation or implicit numeric coercion is defined on them. |
 | **•** | Emblem rendering of ground-facing `0_T`; not numeric `0_N`. |
 | **○** | Emblem rendering of horizon-facing `∞_T`; not projective `∞_P`. |
-| **⊙** | Emblem rendering of finite-unit-facing `1_T`; not arithmetic `1_N`. The composite drawing is non-operational. |
+| **⊙** | Mark of the **realm** (`Finity_F`, all of finity) — owner ruling ×2, canon amended 2026-08-05; formerly the emblem of unit-facing `1_T` (superseded). Not arithmetic `1_N`; the unit's mark is its numeral. The composite drawing is non-operational. |
 | **Burri Sphere** | Selected spherical translation lens using reciprocal chart coordinates `φ=cot(θ/2)` and `ν=tan(θ/2)`. |
 | **Reciprocal seam** | `φν=1` for `θ∈(0,π)`, an analytic chart identity `[A]`. It is neither an empirical conservation law nor an ethic. |
 | **Balance** | A separately defined score such as `B=sin θ`; never identical to the reciprocal seam. |

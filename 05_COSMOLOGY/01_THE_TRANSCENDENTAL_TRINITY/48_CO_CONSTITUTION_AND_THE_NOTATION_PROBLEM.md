@@ -242,6 +242,11 @@ wrong.** The mark survived every audit that killed the equation beneath it.
 
 A point and a realm are different types. Unresolved; an owner call.
 
+**Resolved 2026-08-05: the owner ruled, twice, for the realm.** Canon amended
+(`emblem_T(1_T)` withdrawn; `⊙` = mark of `Finity_F`); the unit's mark is its
+numeral. See [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3.
+The sentence above is retained as the record of the open period.
+
 **The undrawn twin.** `41` §5: inversion fixes **two** points, `+1` and `−1`,
 and the inversion orbit-closure of `{0,∞}` is only `{0,∞}` — so `{0,1,∞}` is
 **adjoined**, a naming choice, not a forced closure. The emblem elects `+1` and
