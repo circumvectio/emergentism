@@ -15,11 +15,18 @@ The D4 adjudication (second pass, 2026-08-06) struck three things that the
 chapter-4 public lede still carries, verified on disk at 00:30:
 
 1. **`"A record without a receipt is not actual"` — presented as "the D4
-   headline"** (lede and standalone bold line, `:48`, `:52`). Not a corpus
-   line: written by the composing session, contradicted by
-   `44_D3_QUANTUM_STATE_REGISTER.md:64` and
-   `34_D4_D5_CANONICAL_REFERENCE.md:152`. The corpus types the performed
-   event as actual, not its record. Surviving form: an admissibility
+   head   line"** (lede and standalone bold line, `:48`, `:52`). The phrasing was
+   written by the composing session; the fair re-hearing (2026-08-06)
+   corrected this flag's own citation: `44_D3_QUANTUM_STATE_REGISTER.md:64`
+   does NOT say the opposite (it addresses a different question — the
+   inscription's actuality does not enact the state's content). What
+   contradicts the metaphysical reading is
+   `34_D4_D5_CANONICAL_REFERENCE.md:152` — unreceipted attempts still
+   occurred and must be receipted. The doctrine itself is canon since
+   2026-06-08 in admissibility form (`03_METHODOLOGY/00_THE_DOCTRINAL_LADDER.md:126`,
+   "No receipt, no reality" — claims need source paths, tiers, audit trails);
+   the session's error was strengthening admissibility into metaphysics. The
+   corpus types the performed event as actual, not its record. Surviving form: an admissibility
    convention `[S]` — a record is not admissible in the claim register until
    a receipt carries it; the doctrine of constituted actuality is inherited
    (Searle, Ferraris, Austin, Latour, FRE 901/803(6), Muller–Feith–Fruin).
