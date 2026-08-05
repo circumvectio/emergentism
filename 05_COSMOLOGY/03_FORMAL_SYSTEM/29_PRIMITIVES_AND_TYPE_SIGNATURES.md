@@ -37,7 +37,7 @@ this schema are deliberately revised together.
 | `0` | number | additive identity and ordinary operand |
 | `1` | number | multiplicative identity and ordinary operand |
 | `∞_P` (usually printed `∞`) | projective point | point at infinity in `ℂP¹`; not a largest number |
-| `•,⊙,○` | Titan emblems | alternate renderings of `0_T,1_T,∞_T`; `[I]`, not arithmetic |
+| `•,⊙,○` | seat emblems | `•`,`○` render `0_T`,`∞_T`; `⊙` marks the realm `Finity_F`, **not** the unit — the unit's mark is its numeral (owner ruling ×2; canon amended 2026-08-05); `[I]`, not arithmetic |
 | `S²≅ℂP¹` | compact real 2-manifold / complex 1-manifold | selected projective chart surface |
 | `θ` | `(0,π)` in the reciprocal chart | selected south-origin polar parameter; endpoints are excluded limits |
 | `φ` | `(0,π)→ℝ₊`, `cot(θ/2)` | reciprocal chart coordinate |

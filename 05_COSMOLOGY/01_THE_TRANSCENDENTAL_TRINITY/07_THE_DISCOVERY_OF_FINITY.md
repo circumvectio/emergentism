@@ -79,6 +79,13 @@ form. The glyph can therefore orient a reading without rewriting arithmetic.
 > *arrangement* says which is which. `•  ⊙  ○` as *lower bound, realm, upper
 > bound* is that same shape.
 >
+> **Consequence HANDLED 2026-08-05** (was: *still open*) — handled as staged
+> propagation of the twice-made ruling under the owner's completion instruction.
+> The canon emblem map is amended: `emblem_T(1_T)` withdrawn, the unit's mark is
+> its numeral, `⊙` = the mark of the realm. No new mark was invented and no
+> choice was made by agent fiat — the owner decided the semantics, twice. **The
+> owner disposes the staged commit; a revert is refusal.** Original text follows.
+>
 > **Consequence still open:** the canon fixes `emblem_T(1_T)=⊙` and
 > `role_T(1_T)=Unit_T`. Under the reversal the unit has no mark. Either the
 > canon's emblem map is amended or the unit is given its own mark — an **owner
@@ -124,9 +131,15 @@ register. It includes an actual being, a measured state, a degree of freedom, a
 proof token, and a modelled counterfactual insofar as each is presented as a
 determinate finite content. It does not erase the distinction between D4
 actuality and D5 possibility, or license a modelled content as an actual being.
-`⊙` marks **that realm**. Its centred unit is `1`, which under the live canon
-still carries the mark and therefore has none of its own — the open consequence
-recorded in the banner above.
+`⊙` marks **that realm**. Its centred unit is `1`, and **its mark is its own
+numeral** — `render_T(1_T)="1"`, already canonical. The canon's
+`emblem_T(1_T)` was withdrawn on 2026-08-05; the unit needs no emblem because
+it has always had one.
+
+> *Superseded clause, retained for legibility:* this sentence read *"which under
+> the live canon still carries the mark and therefore has none of its own — the
+> open consequence recorded in the banner above."* True when written that
+> morning; the canon was amended the same day.
 
 > **This sentence was the reversal's own casualty, repaired 2026-08-05 (third
 > pass).** It read *"`⊙` marks that realm's centred unit; the realm itself is

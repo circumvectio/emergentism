@@ -15,7 +15,7 @@ rosetta:
   register: "[A/I]"
   canonical_phrase: "The Titans — selected symbolic roles"
 title: "The Titans — Canonical Mathematical Boundary"
-status: "CANONICAL — Kintsugi repair adopted 2026-07-21; sovereign Titan frames separated from ordinary operands."
+status: "CANONICAL — Kintsugi repair adopted 2026-07-21; sovereign Titan frames separated from ordinary operands; emblem map amended 2026-08-05 per twice-made owner ruling — ⊙ names the realm (emblem_T(1_T) withdrawn; the unit's mark is its numeral); see 49 §3. STAGED for owner disposition."
 evidence_tier: "[A] elementary arithmetic, inversion, projective normalization, and chart facts; [I] the selected Titan names and their philosophical interpretation."
 supersedes_blob: "cf50901d6eddba0e7ab0a95d0c0a5dd14233ae9d"
 ---
@@ -30,8 +30,25 @@ normalization and compact symbolic grammar:
 TitanFrame := 0_T | 1_T | ∞_T
 role_T(0_T)=Ground_T; role_T(1_T)=Unit_T; role_T(∞_T)=Horizon_T
 render_T(0_T)="0"; render_T(1_T)="1"; render_T(∞_T)="∞"
-emblem_T(0_T)=•; emblem_T(1_T)=⊙; emblem_T(∞_T)=○
+emblem_T(0_T)=•; emblem_T(∞_T)=○          # boundary emblems — token-keyed, unchanged
+emblem_T(1_T) — WITHDRAWN 2026-08-05: the unit carries no emblem;
+                its mark is its numeral, render_T(1_T)="1"
+⊙ := the mark of Finity (broad register Finity_F) — the realm, all of finity,
+     the whole band where counting is meaningful; not a TitanFrame token,
+     never an operand
+display  •  ⊙  ○  reads: lower bound | realm | upper bound   (interval-notation shape)
 ```
+
+> **AMENDED 2026-08-05 — `[S]`.** The owner ruled, twice, that `⊙` names the
+> **realm** (all of finity), not the unit point. Executed as staged propagation
+> under the owner's completion instruction; **the owner disposes the staged
+> commit — a revert is refusal.** No new mark was invented: the unit's mark is
+> its numeral. `role_T`, `TitanFrame`, `NoCoercion` and
+> `ArithmeticSignature(TitanFrame)=∅` are untouched, so `KSC-04`'s settled
+> content is untouched. Argument and consequence record:
+> [`49_THE_THREE_MODES_OF_COUNTING.md`](49_THE_THREE_MODES_OF_COUNTING.md) §3;
+> reversal banner in
+> [`07_THE_DISCOVERY_OF_FINITY.md`](07_THE_DISCOVERY_OF_FINITY.md).
 
 The selection is `[I]`. It is not a forced three-element closure, a new theorem,
 an exhaustive ontology of number, or a generator of the D-ladder. This document
@@ -192,11 +209,13 @@ lower-description recovery test.
 The live emblem contains no operator:
 
 ```text
-•     ⊙     ○
-0_T   1_T   ∞_T
+•        ⊙        ○
+0_T   Finity_F   ∞_T
 ```
 
-It displays ground-facing, finite-unit-facing, and horizon-facing seats `[I]`.
+It displays the ground-facing frame, the **realm** of finite determinations
+(`Finity_F` — all of finity, where counting is meaningful), and the
+horizon-facing frame `[I]` — lower bound, realm, upper bound.
 No equality, order, containment, addition, multiplication, division,
 exponentiation, or logarithm is implied. The older infix equation remains
 visible in historical receipts and Git history as the crack that motivated the
@@ -247,7 +266,7 @@ The following correspondence is the selected Emergentist notation:
 | Glyph | Titan token | Separate mathematical neighbor `[A]` | Emergentist role `[I]` |
 |---|---:|---|---|
 | `•` | `0_T` | numeric `0_N` is an additive identity | ground-facing / apophatic-origin frame |
-| `⊙` | `1_T` | numeric `1_N` is a multiplicative identity and positive reciprocal fixed point | finite-unit-facing frame |
+| `⊙` | — (`Finity_F`, the realm; **not** a TitanFrame token) | numeric `1_N` — the realm's centred unit, marked by its own numeral — is the multiplicative identity and positive reciprocal fixed point | the realm: all of finity, where counting is meaningful (owner ruling 2026-08-05 ×2, `[S]`; see `49` §3) |
 | `○` | `∞_T` | `∞_P` is a projective point in a named extension | horizon-facing / unbounded frame |
 
 The associated Śiva, Viṣṇu, and Brahmā names are symbolic operator roles, not
@@ -262,7 +281,7 @@ causal particles or mathematical consequences of the three tokens.
 | `{0,1,∞}` is a standard projective normalization | `[A]` | a claim of uniqueness or forced closure fails immediately |
 | on the compactified positive ray, `{0,1,∞}` is the unique fixed point of `x↦1/x` together with the two ends, hence forced **there** | `[A]` | exhibit a second positive solution of `1/x=x`, or export the ray forcing to `ℂP¹`, where `fix(ι)={+1,−1}` and the selection stands |
 | the framework calls the roles Titans / finity | `[I]` | the vocabulary stops improving compression or causes systematic category errors |
-| the operator-free seats `•  ⊙  ○` are the live emblem | `[I]` | inserting an operator or treating the display as a theorem invalidates the use |
+| the operator-free display `•  ⊙  ○` (two bounds and the realm) is the live emblem | `[I]` | inserting an operator, treating the display as a theorem, or reading `⊙` as the unit point (superseded binding, 2026-08-05) invalidates the use |
 
 ## Read with
 

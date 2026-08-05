@@ -8,7 +8,7 @@ rosetta:
   register: "[A] the set-theoretic facts; [S] the seat reassignment and the mark ruling; [I] the three-mode reading; [C] the crossing proposal"
   canonical_phrase: "Counting cannot begin; counting is meaningful; counting cannot complete"
 title: "The Three Modes of Counting — the seats distinguished by what counting does at each"
-status: "STAGED PROPOSAL — unratified. Supersedes the 2026-08-05 mark ruling in 07 (reversed by the owner, recorded in §3). Forces an amendment to the canon's emblem map and a reassignment in 43. Defines no arithmetic. The crossing operator in §7 is STAGED WITH ITS CONTRACT UNMET and must not be cited as established."
+status: "STAGED PROPOSAL — unratified. Supersedes the 2026-08-05 mark ruling in 07 (reversed by the owner, recorded in §3). The canon emblem-map amendment it forced was EXECUTED 2026-08-05 (§3 resolution note, staged for owner disposition); the §4 reassignment in 43 remains a staged [S] owner call. Defines no arithmetic. The crossing operator in §7 is STAGED WITH ITS CONTRACT UNMET and must not be cited as established."
 date: 2026-08-05
 evidence_tier: "[A] Dedekind-infiniteness, Foundation, proper classes, Russell/barber unsatisfiability; [S] the seat assignments; [I] the three-mode reading; [C] the crossing"
 owner: "Subordinate to 00_THE_TRANSCENDENTAL_TRINITY_CANON.md. Proposes amendments to it and to 43; adopts neither unilaterally."
@@ -101,6 +101,18 @@ realm, so **the unit no longer has a mark.** Either the canon's emblem map is
 amended, or the unit is given its own mark. Left open deliberately: amending the
 canon is an owner act, and picking a new mark by agent fiat is how the last
 collision started.
+
+> **RESOLVED 2026-08-05.** The canon emblem map was amended as **staged
+> propagation** under the owner's completion instruction: `emblem_T(1_T)`
+> withdrawn, `⊙` declared the mark of `Finity_F` — the realm. **No new mark was
+> invented**, which was the whole reason this was held open: the unit's mark is
+> its numeral, `render_T(1_T)="1"`, and that was already canonical at
+> `canon:32`. The false dilemma was *"amend the map **or** invent a mark"* — the
+> third option was there on the line above all along.
+>
+> `role_T`, `TitanFrame`, `NoCoercion` and `ArithmeticSignature(TitanFrame)=∅`
+> are untouched, so `KSC-04` is untouched. **The owner disposes the staged
+> commit; a revert is refusal.**
 
 ## 4 · The reassignment this forces in `43` `[S]`
 
