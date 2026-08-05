@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] active reader projection — seed-ladder compression of the non-dual floor"
+  canonical_phrase: "D0 — The Floor: one object-level ground role, three selected metalinguistic Titan seats; no Titan arithmetic — Seed Ladder projection, not a canon owner"
 title: "D0 — The Floor"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 ---

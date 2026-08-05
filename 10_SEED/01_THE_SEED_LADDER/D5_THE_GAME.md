@@ -6,6 +6,7 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[I] active reader projection — one-page compression of the game rung for the stranger (Dasein reference)"
+  canonical_phrase: "D5 — The Game: strategic relation, the dyadic grid, and the vow — Seed Ladder projection, not a canon owner"
 title: "D5 — The Game: strategic relation, the dyadic grid, and the vow"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:

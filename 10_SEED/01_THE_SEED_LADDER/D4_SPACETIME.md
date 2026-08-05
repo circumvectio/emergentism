@@ -6,6 +6,7 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[I] active reader projection — per-claim tiers inline"
+  canonical_phrase: "D4 — Causal Actuality and Receipt: actual carriers, interactions, attempted actions, outcomes and provenance-bearing records; spacetime, bodies and cognition are application lenses, none defines the rung — Seed Ladder projection, not a canon owner"
 title: "D4 — Causal Actuality and Receipt"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:

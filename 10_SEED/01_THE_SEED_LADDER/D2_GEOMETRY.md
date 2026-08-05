@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] active reader projection — one-page compression of the D2 rung: functions, geometry, configuration"
+  canonical_phrase: "D2 — Functions and Geometry: carrier-to-relation lift, then atlas — Seed Ladder projection, not a canon owner"
 title: "D2 — Functions and Geometry: configured relations"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 sources: "05_COSMOLOGY/03_FORMAL_SYSTEM/43_D2_FUNCTION_ATLAS_AND_CONFIGURATION.md · 05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md · 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md · 00_THE_AMRITA.md §I.A · `108_THE_FORMAL_STRESS_LEDGER_KEEL_RESOLUTION.md` (keel) · `126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md` (CC-CORE-1)"

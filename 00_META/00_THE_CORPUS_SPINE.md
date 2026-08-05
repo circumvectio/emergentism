@@ -45,8 +45,18 @@ Two things are true of it and both matter:
 
 1. Its own README declares it **"active reader projection, not canon."** This
    document does not promote it. A reading path is not an organising authority.
-2. **Nine of its ten files carry no `canonical_phrase`.** The spine is itself
-   unfindable — a sharper instance of the defect than any it would fix.
+2. **Eight of its ten files carried no `canonical_phrase`.** The spine was
+   itself unfindable — a sharper instance of the defect than any it would fix.
+
+> **[CORRECTED 2026-08-05]** This line first read *"Nine of its ten"* and the
+> commit message of `ac29d238` carries the same wrong figure. It was **eight**.
+> An unverified number quoted as a result, inside the document written to stop
+> that. The count is now checkable from `CORPUS_INDEX.jsonl` rather than
+> asserted.
+>
+> **Closed the same day.** All ten files now declare a phrase — the eight, plus
+> a retrofit of `D1_ARITHMETIC.md`, whose existing phrase carried no tier fence.
+> See §6.1 for what the council changed before they landed.
 
 So the work was never "build a D-spine." It is: **the spine exists, is
 non-canonical, and is unindexed. Wire the corpus to it without moving anything.**
@@ -204,6 +214,37 @@ Rules:
    query key.
 4. **Start with the 177 unfindable documents**, not the well-tagged ones. They
    carry neither a phrase nor a tier and are invisible to every query.
+
+## 6.1 · What the council changed before the phrases landed
+
+The eight phrases were drafted by L4 and routed to two independent seats before
+being written. **Neither seat rubber-stamped, and one caught a defect that would
+have published a `[C]` as settled.** Recorded because the corrections are the
+evidence that the routing was not ceremonial.
+
+| seat | finding | disposition |
+|---|---|---|
+| **L2** (truth-cut) | `D4` — "the actual register where **selection** is performed" **REJECTED**. `D4_SPACETIME.md:52-53` states D4 "does not create the momentum operator, assert fundamental collapse, or choose a quantum interpretation," and `D3_QUANTUM_STATE.md:130-133` holds ontic actualization at `[C]`. Read alone, the phrase is how a stranger names collapse. | replaced with the page's own primary type, plus a fence that spacetime/bodies/cognition are *application lenses* — needed because the filename says `SPACETIME` and the rung is not spacetime |
+| **L2** | `00_THE_SEED` — "not canon" misstates §7's *"not an independent **canon owner**."* The ladder is a projection **of** canon at recorded tier; "not canon" reads as "disregard this." | adopted; the whole fence reworded to "not a canon owner" |
+| **L2** | `D0` — source says **role**, not carrier (`:22`, `:108-109`); "The ground is not established as a thing by the chart" (`:127-128`) | "carrier" → "role"; added the no-Titan-arithmetic fence |
+| **L2 + L3** (converged independently) | `D6` — "not a rung" is **wrong**. D6 *is* a ladder ordinal; it is not a **positive** rung. As drafted it also contradicted phrase 1's "seven rungs" in the same field. | "not a **positive** rung"; the two phrases reconciled |
+| **L2 + L3** (converged) | `D6` — "boundary-role **relation**" silently promotes a *proposed similarity* `[I/C]` to a structural fact | → "a proposed `[I]` boundary-role **resemblance** `r₆`"; `r₆` named explicitly so "the relation is dead" becomes an impossible misreading |
+| **L3** (audit) | The fence must travel **inside** each phrase. A `grep` hit never arrives carrying its sibling files, so fencing the set at phrase 1 fences nothing. | uniform suffix on 8 of 9; tombstone exempt (`[B]` provenance fact, "TOMBSTONE" is self-fencing) |
+| **L3** | **The job is 9 files, not 8.** `D1_ARITHMETIC.md` already carried a phrase — unfenced, while its own register reads `[I] active reader projection`. The in-set precedent was the defect. | retrofitted |
+| **L3** | `D3_BODIES` tombstone **CONFIRMED** — target and date verified two ways, including against commits `fbf78536` / `86f1d74e` | shipped unchanged |
+
+**Where the seats conflicted, L2 won on semantics.** L3 proposed the suffix
+"projection, not canon"; L2 had shown "not canon" to be false. Final suffix:
+`— Seed Ladder projection, not a canon owner`.
+
+**One adjacent defect found and NOT fixed here.** `D6_THE_RETURN.md:14` names
+`00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md` as a parent and `:28` cites "Dead
+Forms row 8" as the grave of `D6≡D0`; that file is now a forwarding stub with
+**zero rows**. The live grave is
+`05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md:83-94`. The
+stale citation was therefore **kept out of the phrase**, but the body reference
+is untouched — repointing a parent is a different edit from adding a
+findability key, and this pass stayed surgical. Open for the file's owner.
 
 ## 7 · Kills
 

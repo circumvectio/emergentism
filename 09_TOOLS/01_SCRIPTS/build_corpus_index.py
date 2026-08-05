@@ -40,8 +40,12 @@ EXCLUDE_PARTS = {
     "vendor", "91_COMPATIBILITY",
 }
 
-# Flat frontmatter keys worth indexing.
-FLAT_KEYS = ("title", "status", "evidence_tier", "owner", "date", "supersedes_blob")
+# Flat frontmatter keys worth indexing. `canonical_phrase` is accepted at the
+# top level too: minimal files (tombstones, stubs) carry no `rosetta:` block,
+# and a tombstone's forwarding pointer is exactly the kind of thing a reader
+# most needs to find.
+FLAT_KEYS = ("title", "status", "evidence_tier", "owner", "date",
+             "supersedes_blob", "canonical_phrase")
 # Keys inside the nested `rosetta:` block.
 ROSETTA_KEYS = ("primary_level", "primary_column", "operator", "tier",
                 "regime", "register", "canonical_phrase")

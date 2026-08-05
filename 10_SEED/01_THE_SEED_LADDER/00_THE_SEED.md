@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] active reader projection — declaration and reading order of the seven-rung Seed Ladder"
+  canonical_phrase: "The Seed — declaration and reading order of the seven selected rungs; an active reader projection, not an independent canon owner"
 title: "The Seed — front page of the ladder"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:

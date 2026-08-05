@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] active reader projection — compression of at-tier arithmetic canon into one rung"
-  canonical_phrase: "D1 — Arithmetic: signed distinction, inversion, and the price of imbalance"
+  canonical_phrase: "D1 — Arithmetic: signed distinction, inversion, and the price of imbalance — Seed Ladder projection, not a canon owner"
 title: "D1 · Arithmetic — signed distinction with a reciprocal chart"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:

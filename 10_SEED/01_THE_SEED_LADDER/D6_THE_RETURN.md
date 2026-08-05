@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I] boundary-role relation; [S] where marked; the identity is dead"
+  canonical_phrase: "D6 — The Return: an exit marker and a proposed [I] boundary-role resemblance r₆ to D0, not a positive rung; the literal identity D6≡D0 is dead — Seed Ladder projection, not a canon owner"
 title: "D6 — The Return (the recognition, not a rung)"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier."
 parents:

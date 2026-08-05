@@ -2,6 +2,7 @@
 title: "D3 Bodies — superseded compatibility path"
 status: "KINTSUGI TOMBSTONE — active D3 moved to D3_QUANTUM_STATE.md on 2026-07-21"
 evidence_tier: "[B] path/provenance fact"
+canonical_phrase: "D3 Bodies — KINTSUGI TOMBSTONE; the active D3 rung is D3_QUANTUM_STATE.md (moved 2026-07-21); not a doctrine owner"
 ---
 
 # D3 Bodies — superseded

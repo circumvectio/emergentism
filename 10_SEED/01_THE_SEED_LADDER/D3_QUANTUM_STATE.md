@@ -6,6 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I] active reader projection; quantum formalism [A/B]"
+  canonical_phrase: "D3 — The Quantum Probability-State: a state prices possible records; the next actual record belongs to D4 — Seed Ladder projection, not a canon owner"
 title: "D3 — The Quantum Probability-State"
 status: "ACTIVE [I/S] — concise reader projection; source owners control every claim tier"
 sources: "05_COSMOLOGY/03_FORMAL_SYSTEM/44_D3_QUANTUM_STATE_REGISTER.md · 38_QUANTUM_FOUNDATIONS_CONFIRMATION_BOUNDARY.md · 06_ONTOLOGY/07_THE_DIMENSIONAL_REGISTER_AXIOMS.md"
