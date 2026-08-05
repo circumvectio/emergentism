@@ -312,7 +312,11 @@ A new notation, a memorable triad, a philosophical reading, or a cleaner explana
 
 Everything above works in words. If you want operator-free marks for the two boundary positions and the interior — a filled dot `•`, an open circle `○`, a dotted circle `⊙` — define them **operationally, once**, per §2, and hold to it. **A version of this manual with the marks deleted is exactly as strong.** Their only purchase is being visually impossible to mistake for numerals.
 
-**Declare the middle mark's sort in your front matter.** It is used in the literature both as *a distinguished point* (a chosen unit) and as *the whole interior region*. A point and a region are different sorts. Either choice is fine; not declaring is the error. This manual uses it for the region.
+**Declare the middle mark's sort in your front matter.** It is used in the literature both as *a distinguished point* (a chosen unit) and as *the whole interior region*. A point and a region are different sorts. Either choice is fine; not declaring is the error.
+
+**This manual uses it for the distinguished point**, and recommends that choice, for one reason worth stating: the three marks are displayed together, and a display whose members are of different sorts cannot be read. If the outer two are labels and the middle one is a region, a reader cannot tell what kind of statement they are looking at. Keep all three the same sort. The interior region then needs no mark of its own — **it is what the two outer marks bound**, and the space between them is doing that work already. This is also why nothing may be written in that space (rule N above): an infix symbol both promises an operation and overwrites the only depiction of the region you have.
+
+*Changed in draft 1 from "region" to "point", to agree with the source project's ruling of 2026-08-05 rather than leave two documents from the same week disagreeing about one mark.*
 
 **N — The space between marks is the whole grammar. Put nothing in it.** An infix symbol is a promise of an operation, and by their own definition there is none.
 

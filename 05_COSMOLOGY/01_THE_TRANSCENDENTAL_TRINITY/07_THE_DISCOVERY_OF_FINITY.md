@@ -67,12 +67,41 @@ form. The glyph can therefore orient a reading without rewriting arithmetic.
 
 ### Canonical distinction
 
-`⊙` names **Finity**: the whole realm of finite determinations, across every
-declared register. It includes an actual being, a measured state, a degree of
-freedom, a proof token, and a modelled counterfactual insofar as each is
-presented as a determinate finite content. It does not erase the distinction
-between D4 actuality and D5 possibility, or license a modelled content as an
-actual being.
+> **GLYPH BINDING RULED 2026-08-05 — `⊙` marks the unit seat, not the realm.**
+> This paragraph read *"`⊙` names **Finity**: the whole realm of finite
+> determinations."* That contradicted this document's own declared parent:
+> `00_THE_TRANSCENDENTAL_TRINITY_CANON.md` fixes `role_T(1_T)=Unit_T` and
+> `emblem_T(1_T)=⊙`, and its seat table reads *"`⊙` | `1_T` | …
+> finite-unit-facing frame."* Under lane discipline a local instruction
+> conflicting with the root route is repaired toward the route and never toward
+> the grander claim; *"names the whole realm"* was the grander claim.
+>
+> **The reason, not just the authority.** `•  ⊙  ○` is a display of three
+> things. `•` and `○` are frame labels. If `⊙` were a region the display would
+> read *label, region, label* — mixed sorts, and a reader could not tell what
+> kind of statement they were looking at. **All three marks are the same sort:
+> frame labels.**
+>
+> **Where the realm went — nowhere. It is the spacing.** This document already
+> states that *"the spacing belongs to the emblem's frame grammar."* The realm
+> is what the two boundary labels bound: the whitespace between them, which is
+> why the emblem is written wide and why inserting an infix mark destroys it.
+> So Finity is still **not reducible to one point** — that commitment survives
+> intact and is the thing this paragraph was protecting. It is simply carried by
+> the space rather than by the mark.
+>
+> Tier `[S]`: a selected convention with a stated cost. **The cost:** the line
+> *"`⊙` names Finity"* is quotable and it is withdrawn. Anyone who has been
+> reading `⊙` as the realm must re-read. Accepted, because a two-sorted emblem
+> cannot be checked by anyone.
+
+**Finity** is the whole realm of finite determinations, across every declared
+register. It includes an actual being, a measured state, a degree of freedom, a
+proof token, and a modelled counterfactual insofar as each is presented as a
+determinate finite content. It does not erase the distinction between D4
+actuality and D5 possibility, or license a modelled content as an actual being.
+`⊙` marks that realm's **centred unit**; the realm itself is what `•` and `○`
+bound.
 
 The equator is Finity's **balance locus**, not the whole of Finity. In the
 selected positive reciprocal slice, `1` is the unique self-dual unit under
