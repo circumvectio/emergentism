@@ -219,7 +219,10 @@ never back-filled:
 > they are listed here so custody can find them, and they claim no receipt status.
 >
 > **Canon / formal:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md` ·
-> `.../49_THE_THREE_MODES_OF_COUNTING.md` · `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md`
+> `.../49_THE_THREE_MODES_OF_COUNTING.md` · `.../50_FINITY_L_THE_HELD_POSITION.md` ·
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md` ·
+> `.../56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`
+> **Rosetta:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md`
 > **Method (exportable):** `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md`
 > **Handoff:** `00_HANDOFF/COMPILER_GATE_TRIAGE_2026_08_05.md` · `00_HANDOFF/SESSION_AUDIT_2026_08_05.md`
 > **Books (drafts, unratified):** `13_BOOKS/titans/00_TRADE_EDITION_PROPOSAL_2026_08_05.md` ·
@@ -228,6 +231,16 @@ never back-filled:
 >
 > The canon emblem amendment of the same day (`⊙` = the realm) is **staged for
 > owner disposition**; a revert is refusal, and this row reverts with it.
+>
+> **Two in-session corrections are carried by the files above and are recorded
+> here so neither is re-made.** (1) `56` §5 **refuses** the transfer of the
+> lowercase chart onto the node model: `P_node` remains `min(Φ̂₄, V₄)` per
+> `05_COSMOLOGY/00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md`, and the product form
+> of `B` does not license `Φ × V`. (2) `35` §6 records a **refuted prediction**
+> — that `B(L1)=B(L7)=0` should make L1 non-deployable — against the standing
+> ruling in `01_TELEOLOGY/02_THE_DERIVATION/L1_L7_REFINEMENT_AUDIT.md` that the
+> tier asymmetry is deliberate. The deployability rule is **not** an open
+> finding and must not be raised as one.
 
 Prefixes 194–231 are present in the frozen
 [`60_SESSION_PACKETS/`](../60_SESSION_PACKETS/) lane and are therefore not
