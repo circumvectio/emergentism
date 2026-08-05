@@ -206,6 +206,66 @@ and the inversion orbit-closure of `{0,∞}` is only `{0,∞}` — so `{0,1,∞}
 leaves `−1` undrawn. Whether that absence should be marked is currently decided
 by silence.
 
+## 5.2 · The two invariants of a reciprocal pair — and the twin they name `[A]`
+
+Added 2026-08-05, from an owner proposal. The owner offered a replacement
+notation, `log_•(○) = ⊙`. It does not type-check for the reasons in §4 — `log_b`
+requires `b>0, b≠1`, and `∞` is not a real number, so both operands are outside
+the domain. **But computing it honestly returns something the corpus needed.**
+
+Take the **reciprocal path** — base and argument exact reciprocals, which is the
+reciprocal-pair structure itself:
+
+```text
+log_{1/x}(x)  =  ln x / ln(1/x)  =  ln x / (−ln x)  =  −1
+```
+
+Exactly `−1`, for every `x>0, x≠1`. Verified numerically to 40 digits at
+`x = 2, 10³, 10⁶, 10³⁰, 10²⁰⁰`: `−1.0` throughout, with no drift.
+
+So the reciprocal pair carries **two** exact invariants:
+
+```text
+x · ι(x)        = +1     exact on the open chart, PATH-INDEPENDENT
+log_{ι(x)}(x)   = −1     exact on the reciprocal path, PATH-DEPENDENT
+```
+
+And `±1` are **exactly the two fixed points of inversion** — the pair that `41`
+§5 records as adjoined, with `+1` elected and `−1` left undrawn *by silence*.
+The product coordinate sees the elected twin; the reciprocal-base log coordinate
+sees the undrawn one. Same pair, same approach, both exact.
+
+> **THE CAVEAT IS LOAD-BEARING AND MAY NEVER BE DROPPED.** The log form is
+> **path-dependent**. Base `1/n` with argument `n^k` gives exactly `−k`:
+>
+> ```text
+> n¹ → −1      n² → −2      n³ → −3      n¹⁰ → −10
+> ```
+>
+> Any negative value is reachable. The reciprocal path is *privileged*, not
+> *forced*. Therefore `log_•(○)` **has no value** — it has a value *relative to
+> a declared path*, which is an indeterminate form exactly as `0 × ∞` is. The
+> product invariant has no such defect: `φν = 1` does not depend on how the
+> boundary is approached.
+>
+> **`−1` may be stated as an invariant OF THE RECIPROCAL PATH. It may never be
+> stated as a fact about the seats.** Publishing it without this caveat would
+> install a false theorem in the one place the framework claims precision.
+
+**What this earns.** Not a new equation — §4's ruling stands and this is not an
+exception to it. What it earns is that the undrawn twin is no longer decided by
+silence: there is now an exact, reproducible statement in which `−1` appears as
+the reciprocal pair's second invariant, and a stated reason it cannot be
+promoted. The emblem's election of `+1` remains a choice; it is now a
+**documented** choice.
+
+| Claim | Tier | Kill |
+|---|---|---|
+| `log_{1/x}(x) = −1` for all `x>0, x≠1` | `[A]` | exhibit an `x` where it fails |
+| the log form is path-dependent; base `1/n`, argument `n^k` gives `−k` | `[A]` | show the value is path-independent |
+| therefore `log_•(○)` is an indeterminate form, not a value | `[A]` | supply a declared canonical path that is *forced* rather than selected |
+| `±1` are exactly `ι`'s fixed points, and the two invariants name them | `[A]` | exhibit a third fixed point of `x ↦ 1/x` |
+
 ## 6 · The category-error rule gets a spine `[A]`
 
 The strongest form of the framework's refusal is not a prohibition. It is a
