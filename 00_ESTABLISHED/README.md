@@ -50,9 +50,10 @@ cannot verify**, rather than passing silently.
 > **What that command does and does not do `[B]` — corrected 2026-07-29, `183_THE_MANIFEST_AUDITED_ITSELF_AND_FAILED_2026_07_29.md`.**
 > The **base half is genuinely re-run**: `G1`–`G10` are recomputed by exhaustion on
 > every invocation. The **Lean half is verified structurally only** — project files
-> present, toolchain on `PATH`, theorem count, no `sorry`. **The proofs are not
-> re-run**, because a full `lake build` must fetch mathlib and cannot live inside a
-> validator. They *were* run once; `182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md` records the build output and the
+> present, toolchain on `PATH`, theorem count, no `sorry`. The file carries
+> **20 theorem declarations**. **The proofs are not re-run** — this gate
+> **does not yet compile that file**, because a full `lake build` must fetch mathlib and
+> cannot live inside a validator. They *were* run once; `182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md` records the build output and the
 > axiom traces.
 >
 > Until 2026-07-29 this script did **less** than that and still reported PASS: it

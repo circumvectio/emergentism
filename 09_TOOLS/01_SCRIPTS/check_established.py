@@ -19,6 +19,36 @@ MANIFEST = ROOT / "00_ESTABLISHED" / "README.md"
 LEAN = ROOT / "09_TOOLS" / "05_FORMAL_VERIFICATION" / "EmergentismCheck.lean"
 BASE_CHECK = ROOT / "09_TOOLS" / "01_SCRIPTS" / "check_generative_base.py"
 
+# Phrases the manifest may NOT contain, because each would claim more than this
+# script actually performs.
+#
+# RESTORED 2026-08-01. The loop at the bottom of main() iterated FORBIDDEN_INFLATIONS
+# while nothing defined it, so every run of this checker died on NameError. A checker
+# that raises cannot pass and cannot fail — it aborts, blocks the gate, and reports
+# nothing about the property it exists to guard. That is strictly worse than the
+# inflation it was meant to catch.
+#
+# The two limits below are this file's own docstring, turned into tests. The docstring
+# says the script "does not compile the standalone Lean candidate file and does not
+# prove universal claims by finite enumeration. The ledger must say exactly that."
+FORBIDDEN_INFLATIONS = [
+    # (1) the Lean candidate is LINTED, never built — there is no toolchain here
+    "compiles cleanly",
+    "compiled and checked",
+    "builds cleanly",
+    "the proofs compile",
+    "all proofs checked on every commit",
+    # (2) bounded enumeration is evidence for a bound, never a universal proof
+    "proved for all",
+    "proven for all",
+    "holds for all words",
+    "exhaustively proved",
+    "verified exhaustively",
+    # (3) the tier vocabulary itself — publication is not verification
+    "independently verified",
+    "externally validated",
+]
+
 # Entries the manifest must keep listing as NOT established. Shortening this list
 # without a verification landing is the manifest's own kill.
 MUST_STAY_UNESTABLISHED = [
