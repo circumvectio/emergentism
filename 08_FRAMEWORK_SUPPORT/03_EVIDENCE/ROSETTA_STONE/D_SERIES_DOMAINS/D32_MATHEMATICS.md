@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[A/S/I]"
-  canonical_phrase: "Selected ordinal minimum and retired product-candidate calculus"
+  canonical_phrase: "Selected ordinal minimum and retired product-candidate calculus (calculus; domain explanations interpretive)"
 title: "Mathematical Transformations"
 status: "D-series domain mapping"
 evidence_tier: "[A] for algebraic/calculus identities under stated assumptions; [S] for internal sequence; [I] for domain explanations."

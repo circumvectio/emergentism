@@ -11,6 +11,7 @@ rosetta:
 source_corpus:
   - 06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
   - 06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
+canonical_phrase: "L7 Ṛṣi rumination on E1–E10 read 'from inside the exit' — posture with arithmetic, not doctrine; the holder is constituted by participation, not possession (E1/E8/E10)."
 ---
 
 # E1–E10 — from inside the exit

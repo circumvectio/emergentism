@@ -4,6 +4,9 @@ status: "ACTIVE — a MANIFEST, not a relocation. Holds no source truth and owns
 date: 2026-07-29
 evidence_tier: "[B] corpus and bounded-check facts; each mathematical claim retains its own tier"
 owner: "No owner. Every entry points at its owner. This folder may never be cited as authority."
+rosetta:
+  d_register: 4
+  d_register_basis: "Verification-state ledger of established claims; D4 (factual/operational record). Source: L3 'ACTIVE — a MANIFEST, not a relocation. Holds no source truth'."
 ---
 
 # 00_ESTABLISHED

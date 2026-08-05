@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I/C]"
-  canonical_phrase: "Civilisational Dynamics L-Level Mapping"
+  canonical_phrase: "Civilisational Dynamics L-Level Mapping (stage models interpretive; L6-L7 scale claims untested)"
 title: "Civilisational Dynamics"
 status: "D-series domain mapping"
 evidence_tier: "[I] for civilisational stage models and B-proximity estimates; [C] for L6-L7 scale claims."

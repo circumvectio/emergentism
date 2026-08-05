@@ -3,6 +3,8 @@ title: "The Holobiont Moods: A Briefing on Organs as Grammatical Moods of One Se
 type: doctrine-briefing
 date: 2026-08-01
 register: "[I, GLOSS] interpretive canon — image, not derivation"
+rosetta:
+  canonical_phrase: "Organs are grammatical moods of one sentence (indicative/subjunctive/deontic/negative-deontic/imperative); merging moods is the cardinal sin"
 peer-tier_rosetta: "[Circle (indicative) / RealityFutures (subjunctive) / Agentz (deontic) / EvolutionaryNetwork (negative deontic) / K2+SKYZAI (imperative, SPLIT per A7 self-correction — K2 is host attestation / private-DAV; SKYZAI is the multirow L4+L5 actuator)]"
 sources:
   - "02_SKYZAI/01_NOOSPHERE/00_HOLOBIONT_SYSTEM_2026_08_01.md:56 ([I, GLOSS] §4 keystone GLOSS — organs as moods of one sentence)"
@@ -12,6 +14,7 @@ sources:
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:115 ([B] SKYZAI cell — organ/ACT, executes and remembers; multirow L4+L5 per anti-Procrustean clause)"
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:117 ([I, GLOSS] the cardinal sin = merging moods; v0.1 row K2/SKYZAI fused host with actuator; v0.2 row split is the A7 fix)"
 hand_off: "Emergentism L4 staged; K2-ratification pending for D1 K2-as-role amendment. Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM."
+canonical_phrase: "Doctrine briefing: organs are irreducible grammatical moods, not modules; the v0.2 K2/SKYZAI row split (host-attestation vs. actuator) is the load-bearing A7 fix against the cardinal sin of merging moods."
 ---
 
 **Corpus:** Emergentism

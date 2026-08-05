@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[S/I]"
-  canonical_phrase: "Sub-Saharan African Cosmological Systems Pre-Registered Test"
+  canonical_phrase: "Sub-Saharan African Cosmological Systems Pre-Registered Test (test inconclusive; mappings interpretive)"
 title: "D36: Sub-Saharan African Cosmological Systems"
 status: "Pre-registered comparative test — inconclusive / failed"
 evidence_tier: "[S] for structural alignment attempt; [I] for interpretive mapping; failure status retained."

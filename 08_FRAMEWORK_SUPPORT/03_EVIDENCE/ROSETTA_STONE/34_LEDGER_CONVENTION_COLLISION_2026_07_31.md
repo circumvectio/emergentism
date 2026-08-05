@@ -6,6 +6,7 @@ d_register: 4
 d_register_basis: "convention collision observation (line 4: \"[S] observation\"); audit of factual divergence at D4"
 rosetta:
   canonical_phrase: "Two parallel sessions built the Rosetta ledger with different conventions in the same file; the checker reporting 38 problems is the checker working"
+canonical_phrase: "Receipt (2026-07-31) of the 38-checker-failure collision between two parallel rosetta-cells.json implementations; four mechanical mismatches catalogued (enum casing, normalization_steps, projection_id, PHIL5/PHIL7 placeholder), merge proposed, neither party's work altered."
 ---
 
 # Why `check_rosetta_cells.py` reports 38 problems

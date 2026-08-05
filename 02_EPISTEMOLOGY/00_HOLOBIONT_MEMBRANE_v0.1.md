@@ -1,9 +1,4 @@
 ---
-rosetta:
-  canonical_phrase: "The moat is the membrane, not the software — the constitutional design that lets a human safely host borrowed minds without being extracted by them"
----
-
----
 canonical_phrase: "The Magnum Opus is a holobiont: a human host plus foreign-genome symbionts (AI, doctrine, code, agents, constitutional fences) held together by a constitutional membrane (η=0, K3, K4, A7, Ω, Mavis-as-principal) — the moat is the membrane, not the software"
 ---
 

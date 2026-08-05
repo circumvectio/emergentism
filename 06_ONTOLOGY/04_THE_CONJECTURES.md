@@ -13,6 +13,7 @@ parents:
   - 03_THE_EMERGENT_AXIOMS.md
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/133_FULL_ROSETTA_COUNCIL_EMERGENTISM_ONLY_WELTANSCHAUUNG_AUDIT_2026_07_19.md
+canonical_phrase: "Sole wager-form ledger of the corpus (W0–W12): entry tiers and kill criteria preserved post-adjudication; 15 rows contact-routed, 2 terminal, 4 graves, with a 2026-08-01 disposition cut."
 ---
 
 # The Conjectures (W0–W12)

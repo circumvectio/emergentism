@@ -3,6 +3,9 @@ type: emergentism-agent-route
 title: "00 Meta — Agent route"
 status: "ACTIVE — pure Emergentism route, 2026-07-20"
 evidence_tier: "[S] routing discipline; content retains owner-declared tiers."
+rosetta:
+  d_register: 4
+  d_register_basis: "Pure-Emergentism agent route; D4 (operational route, no doctrine). Source: L4 'ACTIVE — pure Emergentism route, 2026-07-20'."
 ---
 
 # 00 Meta — Agent route

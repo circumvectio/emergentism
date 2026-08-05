@@ -3,6 +3,9 @@ title: Control — receipts, boundaries, and verification
 status: ACTIVE ROUTE
 evidence_tier: "[B] repository and verification facts only"
 date: 2026-07-20
+rosetta:
+  d_register: 4
+  d_register_basis: "Control lane index — receipts, boundaries, verification; D4 (factual/operational). Source: L2 title 'Control — receipts, boundaries, and verification'."
 ---
 
 # Control

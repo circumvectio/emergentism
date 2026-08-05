@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[B/I]"
-  canonical_phrase: "Rosetta R10 — Greek philology"
+  canonical_phrase: "Rosetta R10 — Greek philology (lexical attribution [B]; Burri Sphere mapping interpretive)"
 title: "Rosetta R10: The Greek Philological Proof"
 status: "ACTIVE — philological convergence note"
 evidence_tier: "[B] for Greek vocabulary attributed to named lexica; [I] for Burri Sphere mapping. No local source-custody receipt is claimed."

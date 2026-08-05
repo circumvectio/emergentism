@@ -6,7 +6,7 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   register: "[B/S/I]"
-  canonical_phrase: "A selected row catalogue, never a causal chain"
+  canonical_phrase: "A selected row catalogue, never a causal chain (catalogue; cross-domain rows interpretive)"
 title: "The Generative Table — Projection-Only Reference"
 status: "PROJECTION-ONLY"
 evidence_tier: "[B/S] retained by source domains; [I] for every cross-domain row"

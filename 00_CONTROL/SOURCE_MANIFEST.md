@@ -3,6 +3,9 @@ title: "Emergentism Source Manifest"
 status: "ACTIVE ROUTE — legacy snapshot limitations disclosed"
 date: 2026-07-23
 evidence_tier: "[B] filesystem and Git routing facts; legacy digest is custody-only"
+rosetta:
+  d_register: 4
+  d_register_basis: "Source-tree manifest; D4 (factual record). Source: L2 title 'Emergentism Source Manifest'."
 ---
 
 # Source Manifest

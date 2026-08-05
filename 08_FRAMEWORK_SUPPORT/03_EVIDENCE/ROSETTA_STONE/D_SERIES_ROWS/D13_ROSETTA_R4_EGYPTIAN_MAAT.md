@@ -16,7 +16,7 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[I]"
-  canonical_phrase: "Rosetta R4 — Egyptian Ma'at correspondence"
+  canonical_phrase: "Rosetta R4 — Egyptian Ma'at correspondence (interpretive correspondence; not proof)"
 title: "Rosetta R4: The Egyptian Ma'at — Burri Sphere Correspondence"
 status: "ACTIVE — interpretive correspondence"
 evidence_tier: "[I] Interpretive — creative synthesis across traditions."

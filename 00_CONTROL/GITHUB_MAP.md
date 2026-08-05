@@ -4,6 +4,9 @@ status: "ACTIVE — current facts explicitly scoped"
 date: 2026-07-23
 evidence_tier: "[B] local Git, GitHub API, DNS, and HTTP checks; no full-payload deploy congruence claim"
 as_of_commit: "1cce7cb8a0e4fa1c475615be28abb899e8fb793d"
+rosetta:
+  d_register: 4
+  d_register_basis: "Active map of repo + GitHub + DNS facts; D4 (factual/operational record). Source: L3 'ACTIVE — current facts explicitly scoped'."
 ---
 
 # Emergentism GitHub Map

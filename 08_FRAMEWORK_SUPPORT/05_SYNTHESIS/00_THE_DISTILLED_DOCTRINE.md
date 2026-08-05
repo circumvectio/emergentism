@@ -1,6 +1,7 @@
 ---
 canonical_target: ../04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md
 status: "FORWARDING STUB — dissolved synthesis copy archived"
+canonical_phrase: "routing stub — forwarding stub redirecting to the active Distilled Doctrine at ../04_COMPILERS_AND_ANALYSIS/00_MAGNUM_OPUS/00_THE_DISTILLED_DOCTRINE.md; duplicate archived at baseline 4154ebe"
 ---
 
 # Distilled Doctrine — forwarding stub

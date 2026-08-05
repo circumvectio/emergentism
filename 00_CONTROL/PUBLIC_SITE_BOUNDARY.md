@@ -3,6 +3,9 @@ title: "Public Site Boundary"
 status: "ACTIVE — release identity, audit, and promotion boundary"
 date: 2026-07-27
 evidence_tier: "[B] repository, deployment, DNS, and HTTP facts; [I] projection boundary"
+rosetta:
+  d_register: 4
+  d_register_basis: "Public-site release boundary; D4 (factual/operational boundary record). Source: L3 'ACTIVE — release identity, audit, and promotion boundary'."
 ---
 
 # Public Site Boundary

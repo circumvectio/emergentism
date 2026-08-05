@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[S/I]"
-  canonical_phrase: "Daoist Internal Alchemy Pre-Registered Test"
+  canonical_phrase: "Daoist Internal Alchemy Pre-Registered Test (structural alignment attempt; individual mappings interpretive)"
 title: "D35: Daoist Internal Alchemy"
 status: "Pre-registered comparative test"
 evidence_tier: "[S] for structural alignment attempt; [I] for individual mappings as stated."

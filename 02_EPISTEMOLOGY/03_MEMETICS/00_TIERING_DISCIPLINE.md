@@ -1,9 +1,4 @@
 ---
-rosetta:
-  canonical_phrase: "Every mechanism claim about the brain/behaviour in the memetics files is [I] interpretive — a model or analogy, not settled [B] neuroscience"
----
-
----
 canonical_phrase: "Tiering discipline banner for 03_MEMETICS/: every mechanism claim about brain/behaviour is [I] interpretive (model/analogy), not [B] neuroscience; operational nouns (defense, firewall, hardening, inoculation, egregore) are model-language unless a dated receipt proves deployment"
 ---
 

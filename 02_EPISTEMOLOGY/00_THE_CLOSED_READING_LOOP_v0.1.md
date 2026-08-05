@@ -1,9 +1,4 @@
 ---
-rosetta:
-  canonical_phrase: "The corpus is a closed reading loop — every scanner, ledger and receipt reads the canon, so calibration is a cross-organ property the organism must enter into via the OPS-KILL against a real resolved market"
----
-
----
 canonical_phrase: "The holobiont organism is built but the metabolism has not begun — the corpus is a closed reading loop; calibration is a cross-organ property (the founder's 5th emergent, the Watchman is the ring never a node); the OPS-KILL against a real resolved market is the only honest path from closed-loop [I] to externally-validated [B]"
 ---
 

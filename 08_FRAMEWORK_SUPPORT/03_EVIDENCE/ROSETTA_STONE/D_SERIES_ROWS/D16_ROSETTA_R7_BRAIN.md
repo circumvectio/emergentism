@@ -16,7 +16,7 @@ rosetta:
   tier: "God"
   regime: "Śūdra"
   register: "[I]"
-  canonical_phrase: "Rosetta R7 — brain as complex-plane proxy"
+  canonical_phrase: "Rosetta R7 — brain as complex-plane proxy (interpretive neuroscience proxy)"
 title: "Rosetta R7: The Brain as Complex Plane"
 status: "ACTIVE — interpretive neuroscience proxy"
 evidence_tier: "[I] Interpretive — creative synthesis; caveated against binary hemisphere identity."

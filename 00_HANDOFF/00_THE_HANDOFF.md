@@ -2,6 +2,9 @@
 title: "The Handoff"
 status: "ACTIVE ROUTING DOOR"
 evidence_tier: "[B] packet inventory; no doctrinal authority"
+rosetta:
+  d_register: 4
+  d_register_basis: "Handoff routing door; D4 (factual/operational). Source: L3 'ACTIVE ROUTING DOOR' and L9-11 'A handoff records what another worker should inspect next. It … cannot settle a worldview claim'."
 ---
 
 # The Handoff

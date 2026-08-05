@@ -3,11 +3,6 @@ rosetta:
   canonical_phrase: "The symmetric balanced product P = Φ × V is decisively rejected on the Munnell panel — asymmetric elasticities a=0.61≠b=0.44; CES ρ≈−0.9; all four kill-criteria fail"
 ---
 
----
-rosetta:
-  canonical_phrase: "Production-function form test — agency-register P = Φ × V: fits and 10-fold-CV-compares additive, Cobb-Douglas, product-unit, Leontief-min, and CES forms on the Munnell US-states productivity panel (n=816); all four pre-registered kill-criteria K1–K3 FAIL, symmetric balanced product decisively rejected."
----
-
 # Production-function form test — agency-register P = Φ × V
 
 Executes the **agency** operationalization of the multiplicative claim (output = labor × capital = means × execution), superseding the GFS well-being test for this claim.

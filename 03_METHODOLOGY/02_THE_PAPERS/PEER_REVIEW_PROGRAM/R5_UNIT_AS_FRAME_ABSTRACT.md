@@ -1,3 +1,12 @@
+---
+rosetta:
+  canonical_phrase: "The unit is a boundary object of the same structural kind as zero and infinity"
+---
+
+---
+canonical_phrase: "Extended abstract of R5: the unit is a boundary object of the same structural kind as zero and infinity (three boundary items, not two), with a documented Euclid→Stevin→Buckingham→2019 SI arc."
+---
+
 # R5 — The Unit as Frame: Extended Abstract
 
 **Working title (external):** *The Unit as Frame: From Euclid's Monad to the 2019 SI*

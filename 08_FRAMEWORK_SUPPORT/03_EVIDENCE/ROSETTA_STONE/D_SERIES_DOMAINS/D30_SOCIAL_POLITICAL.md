@@ -16,7 +16,7 @@ rosetta:
   tier: "God"
   regime: "Kṣatriya"
   register: "[B/I/C]"
-  canonical_phrase: "Social and Political Mappings"
+  canonical_phrase: "Social and Political Mappings (L-level mapping interpretive; Triple Lock claims untested)"
 title: "Social & Political Mappings"
 status: "D-series domain mapping"
 evidence_tier: "[B] for attributed political-theory background; [I] for L-level mapping and Great Inversion diagnosis; [C] for unreceipted empirical Triple Lock claims."

@@ -3,6 +3,8 @@ title: "The Holobiont Boundary Clarification"
 type: doctrine-briefing
 date: 2026-08-01
 register: "[A] canon-restatement of keystone · [I] clarification"
+rosetta:
+  canonical_phrase: "PRISM and K2 are deliberately unscored membrane branches, not scored cognitive rungs; scoring them is the cardinal conflation"
 peer-tier_rosetta: "[Circle/RealityFutures/Agentz/SKYZAI (ring, scored) · EvolutionaryNetwork (immune, T2 dual seat with Circle) · PRISM/K2 (boundary, deliberately unscored) · Nexus/Cortex/AIA (reflective, L5) · Menexus-GmbH (legal shell, off-ladder)]"
 sources:
   - "02_SKYZAI/01_NOOSPHERE/00_HOLOBIONT_SYSTEM_2026_08_01.md:3-11 ([A] keystone IMPORTANT A7 correction)"
@@ -17,6 +19,7 @@ sources:
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:55-101 ([D] §3 census + [B] §3.3 PRISM scope correction)"
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:104-125 ([I, GLOSS] §4 mood mapping + pen-splits-by-mode)"
 hand_off: "Emergentism L4 staged; K2-ratification pending for D1/D2/D3 constitutional fence status (K2-as-fence status, principal-status, 5+1 fences). Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM."
+canonical_phrase: "Doctrine briefing: PRISM (receipt rail) and K2 (sovereign boundary) are real, active, and deliberately unscored — membrane, not rung; scoring them is the cardinal conflation."
 ---
 
 **Corpus:** Emergentism

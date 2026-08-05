@@ -3,11 +3,6 @@ rosetta:
   canonical_phrase: "Forms are better understood as constrained degrees of freedom than substances; emergent realities are lawful configurations within limits — but Emergentism cannot yet say all coherent possibilities exist or that S² is the territory"
 ---
 
----
-rosetta:
-  canonical_phrase: "L2 Epistemology / Disclosure read-only audit report (Rosetta Council session 133, raw) — tier-honest philosophical architecture; the DoF thesis survives only in deflated form (constrained possibility-space, not substantial Forms); the six-tier ladder, antifragility rule, and non-laundering rule govern the report; rejects unrestricted modal realism, category error, and S²-dependent certainty laundering."
----
-
 # L2 Epistemology / Disclosure Audit Report — Emergentism-only Weltanschauung and DoF Thesis
 
 Role: L2 — Epistemology / Disclosure

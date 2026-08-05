@@ -1,3 +1,12 @@
+---
+rosetta:
+  canonical_phrase: "The peer-review program grounds, tiers, and tests corpus claims against reality — evidence tiers and kill criteria on every claim"
+---
+
+---
+canonical_phrase: "Peer-review program landing: field-native shards R1–R10/E2 with per-shard status, one-line verdict (the framework's credential is the R6 refutation, not the self-narrative)."
+---
+
 # PEER_REVIEW_PROGRAM
 
 Opened 2026-06-10. The lane where corpus claims are grounded against reality, cut into field-native shards, tested where testable, and tiered honestly. **House rule:** coherence is not truth; every claim carries its evidence tier and its kill criterion; every external citation traces to a read source; AI assistance disclosed.

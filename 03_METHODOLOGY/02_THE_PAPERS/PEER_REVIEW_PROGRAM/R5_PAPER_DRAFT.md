@@ -1,3 +1,12 @@
+---
+rosetta:
+  canonical_phrase: "The unit is a frame, not a number — its demotion-and-return arc (Euclid monad → Stevin → Buckingham → 2019 SI) is a third boundary-item case alongside zero and infinity"
+---
+
+---
+canonical_phrase: "Number systems have three boundary items, not two: 1 is a frame demoted and operationally re-erected in metrology across the Euclid→Stevin→Buckingham→2019 SI arc."
+---
+
 # The Unit as Frame: From Euclid's Monad to the 2019 SI
 
 **Yves R. Burri**

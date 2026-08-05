@@ -1,5 +1,8 @@
 ---
 canonical_phrase: "Emergentism control route: this lane holds repository control evidence, not worldview doctrine; source owners outrank checklists, receipts, and publication state."
+rosetta:
+  d_register: 4
+  d_register_basis: "Lane route — control evidence, no worldview doctrine; D4 (factual/operational route). Source: L7 'This lane holds repository control evidence, not worldview doctrine'."
 ---
 
 # Emergentism control routing

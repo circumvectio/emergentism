@@ -6,7 +6,7 @@ rosetta:
   tier: "God"
   regime: "Vaiśya"
   register: "[A/I/C]"
-  canonical_phrase: "Torus geometry does not assign dimensions"
+  canonical_phrase: "Torus geometry does not assign dimensions (geometry itself; Emergentist correspondence interpretive)"
 title: "Rosetta R6 — Torus Correspondence, Typed"
 status: "PROJECTION-ONLY"
 evidence_tier: "[A] named torus geometry; [I/C] Emergentist correspondence"

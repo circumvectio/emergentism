@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Ṛṣi"
   register: "[I]"
-  canonical_phrase: "Rosetta R8 — AUM correspondence"
+  canonical_phrase: "Rosetta R8 — AUM correspondence (interpretive spiritual correspondence)"
 title: "Rosetta R8: AUM (Mandukya Upanishad) — Burri Sphere Correspondence"
 status: "ACTIVE — interpretive spiritual correspondence"
 evidence_tier: "[I] Interpretive — convergent structural mapping."

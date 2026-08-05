@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Brāhmaṇa"
   register: "[I]"
-  canonical_phrase: "Rosetta R10 supplement — Greek formalization"
+  canonical_phrase: "Rosetta R10 supplement — Greek formalization (interpretive formalization; theorem language bounded)"
 title: "Rosetta R10-Supplement: The Greek Formalization"
 status: "ACTIVE — interpretive formalization"
 evidence_tier: "[I] Interpretive — maps Greek philosophical terms to Burri Sphere coordinates."

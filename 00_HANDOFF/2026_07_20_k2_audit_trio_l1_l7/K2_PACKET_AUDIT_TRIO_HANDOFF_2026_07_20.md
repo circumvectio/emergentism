@@ -7,6 +7,8 @@ rosetta:
   regime: "Kṣatriya"
   register: "[S]"
   canonical_phrase: "Audit-trio handoff — 5 verdicts, 1 knot, 1 K2 ask, 7 additive fixes (counsel-only; pending K2)"
+  d_register: 4
+  d_register_basis: "Audit-trio handoff packet to K2 — performed selection, factual record; D4. Source: L11-12 'Hand-off from the 5-caste audit-trio … to K2'."
 type: k2-packet
 title: "K2 Packet — Audit-Trio Handoff (2026-07-20)"
 description: "Hand-off from the 5-caste audit-trio (L1 contradiction × 1, L2 evidence × 2, L3 citation × 2) to K2. One K2-bound decision (receipt-145 authority fork); 7 additive fixes that fit Box 9 bounded authority; 2 [C]→[A]-risk surfaces parked for the next sitting."

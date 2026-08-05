@@ -1,5 +1,8 @@
 ---
 canonical_phrase: "Handoff index: root-level working packets and dated bounded-wave folders (2026-07-19, 2026-07-22); corpus source owners hold truth."
+rosetta:
+  d_register: 4
+  d_register_basis: "Handoff index — descriptive rather than exhaustive; D4 (factual/operational route). Source: L1 'Handoff index' + L7-8 'This index is deliberately descriptive rather than exhaustive'."
 ---
 
 # Handoff index

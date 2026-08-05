@@ -16,7 +16,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[B/I]"
-  canonical_phrase: "Rosetta R9 — German etymological convergence"
+  canonical_phrase: "Rosetta R9 — German etymological convergence (etymology attributed; Burri Sphere mapping interpretive)"
 title: "Rosetta R9: Anmut · Demut · Mut"
 status: "ACTIVE — linguistic convergence note"
 evidence_tier: "[B] for etymology attributed to named dictionaries; [I] for Burri Sphere mapping. No local source-custody receipt is claimed."

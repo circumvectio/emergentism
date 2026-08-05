@@ -6,7 +6,7 @@ rosetta:
   tier: "Executive"
   regime: "Vaiśya"
   register: "[I/C]"
-  canonical_phrase: "Egregoreotype candidates are persistent, testable collective traces"
+  canonical_phrase: "Egregoreotype candidates are persistent, testable collective traces (candidate grammar interpretive; autonomy claims untested)"
 title: "Egregoreotype and Capture"
 status: "ACTIVE D-SERIES KINTSUGI SUCCESSOR"
 evidence_tier: "[I] candidate grammar; [C] case-specific autonomy and capture claims."

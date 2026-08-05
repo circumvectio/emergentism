@@ -3,6 +3,9 @@ title: "Generated Tissue Receipt"
 status: "HISTORICAL RECEIPT — not a current cleanliness certificate"
 date: 2026-06-08
 evidence_tier: "[B] dated cleanup and publication receipt; current checkout state separately noted"
+rosetta:
+  d_register: 4
+  d_register_basis: "Historical receipt of 2026-06-08 cleanup; D4 (factual record, dated performed action). Source: L3 'HISTORICAL RECEIPT — not a current cleanliness certificate'."
 ---
 
 # Generated Tissue Receipt

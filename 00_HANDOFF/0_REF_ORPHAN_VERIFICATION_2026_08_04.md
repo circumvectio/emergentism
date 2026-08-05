@@ -14,6 +14,9 @@ owner: per-file lane owner (named below)
 source_receipts:
   - 00_HANDOFF/tidy/01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md (T14)
   - /tmp/emergentism_R1_L1_post_exec_report.md §3.3 (L1 0-ref orphan scan)
+rosetta:
+  d_register: 4
+  d_register_basis: "T14 orphan-verification receipt — 7 candidates named, 0 deleted; D4 (factual record of performed scan). Source: L17-19 '0-Ref Orphan Verification — 2026-08-04 … L1 names; L1 does not delete'."
 ---
 
 # 0-Ref Orphan Verification — 2026-08-04

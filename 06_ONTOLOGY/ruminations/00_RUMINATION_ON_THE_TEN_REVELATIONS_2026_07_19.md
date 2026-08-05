@@ -3,6 +3,10 @@ rosetta:
   canonical_phrase: "The honesty machine was the invention all along — a worldview can audit itself and survive — and the contact is the only test left"
 ---
 
+---
+canonical_phrase: "L7 rumination on ten revelations of the audit, ranked by how dearly they were bought: the honesty machine was the invention, the over-dressing was the disease, the door is on the inside."
+---
+
 # Rumination on the Ten Revelations
 
 > *Evidence tier: [I] — illuminating reading, not proof. Contemplation, not doctrine.*

@@ -3,6 +3,8 @@ title: "The Holobiont Parts: A Briefing on the Five-Kinds Taxonomy and the 2D Ma
 type: doctrine-briefing
 date: 2026-08-01
 register: "[I] interpretive canon · [D] census, awaiting K2 ratification"
+rosetta:
+  canonical_phrase: "The holobiont's parts are five irreducible kinds (ring/immune/boundary/reflective/legal), formally partitioned by the function × substrate 2D matrix"
 peer-tier_rosetta: "[Circle/RealityFutures/Agentz/SKYZAI (ring, scored) · EvolutionaryNetwork (immune, T2 dual seat with Circle) · PRISM/K2 (boundary, deliberately unscored) · Nexus/Cortex/AIA (reflective, L5) · Menexus-GmbH (legal shell, off-ladder)]"
 sources:
   - "02_SKYZAI/01_NOOSPHERE/00_HOLOBIONT_SYSTEM_2026_08_01.md:54 ([D] §3 keystone census — five-kinds teaching form)"
@@ -11,6 +13,7 @@ sources:
   - "02_SKYZAI/00_HANDOFF/HOLOBIONT_RATIFICATION_SCOPE_AND_A7_CORRECTION_2026_08_01.md:§2 ([I] four-axis architecture — corrected partition)"
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:55-101 ([D/I] §3 census, §3.1 teaching form, §3.2 2D matrix formal supplement, §3.3 PRISM scope)"
 hand_off: "Emergentism L4 staged; K2-ratification pending for D1 organ-census ratification. Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM."
+canonical_phrase: "Doctrine briefing: holobiont parts in five-kinds taxonomy (teaching form) and 2D matrix function × substrate (formal supplement); boundary branches unscored, legal shell off-ladder."
 ---
 
 **Corpus:** Emergentism
