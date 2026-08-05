@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX1"
+  operator: "Vaiśya"
+  register: "[S] historical peer-review artifact; [A] math, [I/C] the multiplicative claim"
+  canonical_phrase: "AX1 — a zero in either factor (Φ=0 or V=0) collapses the whole; the manifold identity φ·ν=1 holds on S²; P_node=Φ×V can fall below 1"
+---
+
 # AX1 — THE EQUATION
 ### Multiplicative Balance and the Zero-Factor Catastrophe
 

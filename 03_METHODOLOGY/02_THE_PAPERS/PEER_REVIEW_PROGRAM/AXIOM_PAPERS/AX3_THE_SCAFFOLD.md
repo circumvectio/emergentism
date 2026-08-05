@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX3"
+  operator: "Vaiśya"
+  register: "[S] structure; [C] force↔dimension assignment is numerology, not submittable physics"
+  canonical_phrase: "AX3 — reality unfolds as a graded D0–D6 emergence ladder where each level emerges at its μ-saturation limit; the force↔dimension assignment is numerology"
+---
+
 # AX3 — THE SCAFFOLD
 ### A Dimensional-Emergence Scaffold and Its Honest Limits
 

@@ -1,6 +1,9 @@
 ---
 receipt: 130
 title: "Rosetta — the 'algebra forces seven' objection, adjudicated (split verdict) + a new named confound"
+rosetta:
+  canonical_phrase: "The mirror-ladder grammar is a real algebraic object, but 'seven' is a stitch not a derivation; cross-tradition convergence is diffusion, not independent evidence — split verdict, receipt 126 standing"
+status: RECORDED — [B] adjudication receipt. Sharpens receipt 126's Rosetta ruling; does NOT reverse it (the evidentiary ruling stands). No K2 reversal sought.
 status: RECORDED — [B] adjudication receipt. Sharpens receipt 126's Rosetta ruling; does NOT reverse it (the evidentiary ruling stands). No K2 reversal sought.
 date: 2026-07-13
 provenance: "workflow wf_d00f0627-ec6 (4 agents: what-the-algebra-forces / epistemic-order / confounds), owner objection in-session"

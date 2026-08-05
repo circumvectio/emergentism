@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX4"
+  operator: "Vaiśya"
+  register: "[S]"
+  canonical_phrase: "AX4 — good and evil are the sign of the extraction coefficient η on a move, not a property of the agent; stable cooperation is conditional enforcement of a signed-extraction boundary"
+---
+
 # AX4 — THE BOUNDARY
 ### Enforcement-Conditioned Cooperation: The Boundary Is the Move, Not the Agent
 

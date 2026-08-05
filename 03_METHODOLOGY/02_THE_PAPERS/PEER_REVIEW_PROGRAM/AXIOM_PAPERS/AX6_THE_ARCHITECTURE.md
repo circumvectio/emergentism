@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX6"
+  operator: "Vaiśya"
+  register: "[A/S] the weak claim (irreversible stakes); [I] the strong claim (mortality specifically)"
+  canonical_phrase: "AX6 — function is multiply realizable across substrates, but the stakes of genuine sacrifice are not; mattering depends on finitude"
+---
+
 # AX6 — THE ARCHITECTURE
 ### Substrate Roles and the Sacrifice Constraint
 

@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX2"
+  operator: "Vaiśya"
+  register: "[I] literature note/synthesis, not a submittable paper"
+  canonical_phrase: "AX2 — an act is ethical exactly when the individual node and the sustaining boundary rise together without extraction (ΔP_node > 0 and ΔP_boundary > 0 under η=0)"
+---
+
 # AX2 — THE ETHIC
 ### Dyadic Rise as a Posited, Outcome-Directional Objective
 

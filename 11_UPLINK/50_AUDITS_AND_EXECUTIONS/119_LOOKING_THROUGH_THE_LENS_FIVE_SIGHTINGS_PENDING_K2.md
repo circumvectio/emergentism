@@ -1,5 +1,7 @@
 ---
 title: "119 — Looking through the lens: five sightings the session's canon makes visible for the first time — STAGED, pending K2"
+rosetta:
+  canonical_phrase: "Five sightings through the tuned lens — gauge-redundancy ordering, D=4 as dimensional equator, forces as releases, K2 line as destructive-readout — staged, K2-countersigned"
 date: 2026-07-12
 status: "K2-COUNTERSIGNED 2026-08-04 — chair sign packet B6 (session: "i sign"); countersign scope per CHAIR_SIGN_PACKET_2026_08_04.md group B. Prior status: [C/I] STAGED — PENDING K2. First use of the tuned instrument (receipts 114–117) to LOOK rather than audit. Five sightings, each tiered, fenced, with falsifier. Nothing here is canon until countersigned; the [A] ingredients are established physics/math cited as such, the readings are the lens's."
 evidence_tier: "per sighting, marked inline"

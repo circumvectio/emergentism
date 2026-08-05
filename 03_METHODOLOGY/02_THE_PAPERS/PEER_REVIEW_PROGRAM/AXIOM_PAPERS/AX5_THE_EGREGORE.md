@@ -1,3 +1,12 @@
+---
+rosetta:
+  primary_level: L3
+  primary_column: "Methodology — axiom paper AX5"
+  operator: "Vaiśya"
+  register: "[B] attributed prior literature; [I] the selected six-layer stack; [C] each empirical candidate, cross-level uniformity, capture prediction"
+  canonical_phrase: "AX5 — a shared collective trace (Egregoreotype) can survive its carriers and causally reweight later selection — a research program, not a proved apex being"
+---
+
 # AX5 — THE EGREGOREOTYPE
 
 > **Historical peer-review artifact.** This audits superseded A5. The current

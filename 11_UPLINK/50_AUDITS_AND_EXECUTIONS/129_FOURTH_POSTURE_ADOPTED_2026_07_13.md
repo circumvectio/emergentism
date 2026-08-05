@@ -1,6 +1,9 @@
 ---
 receipt: 129
 title: "Fourth Posture (Withdraw) adopted — + a competing-signature conflict surfaced, not resolved"
+rosetta:
+  canonical_phrase: "Posture IV (Withdraw) — the wager-holder sets the wager down, kill-criterion turned inward — adopted; the competing-signature conflict between folder and swarm canonical sets remains open"
+status: SIGNED (the adoption) — K2 "yes i agree with your suggestions" (Yves R. Burri, natural person, in-session). The CONFLICT in §2 is NOT resolved by this receipt; it is escalated.
 status: SIGNED (the adoption) — K2 "yes i agree with your suggestions" (Yves R. Burri, natural person, in-session). The CONFLICT in §2 is NOT resolved by this receipt; it is escalated.
 date: 2026-07-13
 relates: [127_TRANSMISSION_DOCTRINE_K2_2026_07_13, 128_PARALLEL_OUTPUT_RECONCILIATION_LEDGER_2026_07_13]
