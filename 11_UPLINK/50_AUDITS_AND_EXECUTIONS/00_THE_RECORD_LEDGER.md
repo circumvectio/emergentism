@@ -224,7 +224,10 @@ never back-filled:
 > `.../56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`
 > **Rosetta:** `08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md`
 > **Method (exportable):** `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md`
-> **Handoff:** `00_HANDOFF/COMPILER_GATE_TRIAGE_2026_08_05.md` · `00_HANDOFF/SESSION_AUDIT_2026_08_05.md`
+> **Handoff:** `00_HANDOFF/COMPILER_GATE_TRIAGE_2026_08_05.md` · `00_HANDOFF/SESSION_AUDIT_2026_08_05.md` ·
+> `00_HANDOFF/THE_EXECUTION_PLAN_2026_08_05.md` (dispatch surface for agents without originating context)
+> **Findability:** `00_META/00_THE_CORPUS_SPINE.md` · `00_META/registers/CORPUS_INDEX.jsonl` ·
+> `09_TOOLS/01_SCRIPTS/build_corpus_index.py` · the nine Seed Ladder `canonical_phrase` lines
 > **Books (drafts, unratified):** `13_BOOKS/titans/00_TRADE_EDITION_PROPOSAL_2026_08_05.md` ·
 > `CH04_FOUR_STATUSES_*` · `CH05_CONTINUATION_WITHOUT_ORIENTATION_*` · `CH08_ALREADY_OURS_*` · `CH09_THE_MISSING_ONE_*`
 > **Tools:** `09_TOOLS/01_SCRIPTS/check_g2_normal_form.py`

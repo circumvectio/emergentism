@@ -129,7 +129,11 @@ def tiers_in(value: str | None) -> list[str]:
 def walk() -> list[Path]:
     files = []
     for path in ROOT.rglob("*.md"):
-        if EXCLUDE_PARTS & set(path.relative_to(ROOT).parts):
+        parts = path.relative_to(ROOT).parts
+        if EXCLUDE_PARTS & set(parts):
+            continue
+        # Any dot-directory is tool state, not corpus (.pytest_cache et al).
+        if any(p.startswith(".") for p in parts[:-1]):
             continue
         files.append(path)
     return sorted(files)
