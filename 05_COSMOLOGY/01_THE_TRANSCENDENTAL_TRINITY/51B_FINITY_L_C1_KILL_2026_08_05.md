@@ -79,6 +79,18 @@ balance point.
 | **F3** | **STILL OPEN** | F3 is scientific contact. This kill narrows what F3 would require: not "find a pair" but "find a pair **of a specific mathematical structure** that does not appear in eight domains of biology." |
 | **The §5 teleological reading `[I]`** | **WEAKENED but not killed** | The reading (`⊙ = GM × BAL`, grow vs balance) does not depend on Finity_L's biological claim. It depends on the theorem `[A]` (which survives) and the reading `[I]` (which is interpretive). The reading stands; the conjecture that would have given it empirical teeth does not. |
 
+> **⚠ REPAIR 2026-08-05 — the `⊙ = GM × BAL` cell of the §5 row survives only
+> as an `[A]` identity about the harmonic mean.** The framing of that
+> decomposition as a "product of margins" and as the corpus's own `[I]` reading
+> was struck the same day and attributed: Nash 1950 bargaining, Sonnevend
+> 1985/86 analytic center, the product t-norm, series-system reliability — and
+> the product is compensatory, not conjunctive, so it never was the AND it was
+> read as. The §5 reading is thereby weakened further: it stands on attributed
+> prior art, not on a corpus-own identification. Repair: `020f4f19` on
+> `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`. **The Finity_L kill itself is
+> unaffected** — it rests on the `[A]` theorem and the eight-domain search,
+> neither of which this repair touches.
+
 ## The honest limitation
 
 *"Not found in eight searched domains"* is not *"proven nonexistent."* The

@@ -186,6 +186,30 @@ untested.
 
 ## VIII. D2, entire
 
+> **⚠ REPAIR 2026-08-05 — two lines of the diagram below and the closing
+> paragraph carry a struck reading.** `B = D• · D∞` as "product of two
+> margins" and `⊙ = √(ab)·sech(½log(a/b)) = SIZE × BALANCE` are the retired
+> `⊙ = • × ○` in new coordinates — `D•` is a function of `•` and `D∞` of `○`,
+> so the form is `⊙ = f(•) × g(○)`. The form `⊙ = D• · D∞` may not be written
+> at any tier (`48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md:121`
+> RETIRED — ILL-TYPED — WITHDRAWN; `:416` fires its own kill on exactly this
+> reinstatement; `ArithmeticSignature(TitanFrame) = ∅`). The
+> product-of-margins / "AND written as an operation" reading is struck and is
+> not the corpus's own: vanishing-at-zero is not non-compensation (`min`, HM,
+> the product and Cobb–Douglas all vanish when either argument does; the
+> product is compensatory — `a = 0.01, b = 10⁴` gives `ab = 100` against
+> `min = 0.01`); the two factors are not independent (`D•² + D∞² = 2`
+> identically — one degree of freedom, the margins cannot fail separately);
+> and the reading is `[B]` attribution — Nash 1950 bargaining, Sonnevend
+> 1985/86 analytic center, the product t-norm, series-system reliability —
+> internally pre-owned by
+> `11_UPLINK/25_EXPERIMENTS/2026-07-02_production_function_form/VERDICT.md`.
+> **What survives:** `B = sin θ` as a trigonometric identity `[A]`;
+> `min ≤ HM ≤ 2·min` — the genuinely non-compensatory statement, `[A]`
+> classical; the seam/score/node separation; the transfer fence. Repair:
+> `020f4f19` on `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`, the source owner of
+> the reading. The diagram is retained as provenance, unrevised.
+
 ```
                     ○  (θ = 0)
                     │

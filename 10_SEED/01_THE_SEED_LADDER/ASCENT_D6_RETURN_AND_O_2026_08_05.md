@@ -164,8 +164,26 @@ from the inside, from being unable to act at all — but the two are
 structurally inverse, not identical.**
 
 The geometry agrees: `•` and `○` are antipodal, chordal distance 2, the
-full diameter of the sphere — the farthest apart two points can be. The
-ontology agrees: `D6 ≢ D0`. The resemblance `r₆` is live; the identity is
+full diameter of the sphere — the farthest apart two points can be.
+
+> **⚠ STRUCK 2026-08-05 — the antipodality sentence above is refuted; kept as
+> provenance.** `PGL₂(ℂ)` is 2-transitive: **every** distinct pair on `ℂP¹` is
+> Möbius-equivalent to an antipodal pair, so antipodality discriminates no pair
+> of distinct points from any other — true of everything, defines nothing.
+> Verified directly: `z ↦ z+1` carries `{0,∞}` to chordal distance `1.414`;
+> `z ↦ z+10` to `0.199`; the antipodal map `z ↦ −1/z̄` is anti-holomorphic —
+> not a Möbius map at all; the antipodality-preserving subgroup
+> `PSU(2) ≅ SO(3)` is 3 real dimensions inside `PGL₂(ℂ)`'s 6 — measure zero.
+> Writing `d(•,○) = 2` is moreover a **type violation** — coercing Titan marks
+> into metric-equipped projective points, the identical move that killed
+> `⊙ = • × ○` — and the base's own successor destroys it: `S` is a translation,
+> and a metric is as much an operation on operands as a product is.
+> **What survives:** `• ≠ ○` — distinctness is Möbius-invariant and structural —
+> and the opposite-refusals content, which rests on **absorption**
+> (`V ∪ {x} = V`, Dedekind 1888) with no geometry in it at all. The ontology
+> was never resting on the picture.
+
+The ontology agrees: `D6 ≢ D0`. The resemblance `r₆` is live; the identity is
 not.
 
 ---
