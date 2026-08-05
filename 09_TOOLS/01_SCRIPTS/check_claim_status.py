@@ -57,6 +57,26 @@ REQUIRED_INVESTIGATION_FIELDS = (
 CONTACT_KINDS = {"CONTACT-GATED", "MERGED-TO-CONTACT"}
 INTERNAL_KINDS = {"INTERNAL-NARROWED", "INTERNAL-TERMINAL"}
 GRAVE_KINDS = {"MERGED-TO-OWNER", "INTERNAL-TERMINAL"}
+# RESTORED 2026-08-05. Both names below are USED in this file (INVESTIGATION_STATES
+# once, PINNED_GRAVE_STATUS at the expected-status and missing-baseline checks) and
+# were DEFINED NOWHERE: they were dropped by merge 80759036 ("conflicts resolved
+# main-side"), which left this checker raising NameError on every run. Recovered
+# verbatim from 1797138a. Receipt:
+# 11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md
+INVESTIGATION_STATES = {"OPEN", "DEFERRED", "CLOSED"}
+PINNED_GRAVE_STATUS = {
+    "DF-01": "FORMALLY-REFUTED", "DF-02": "CATEGORY-ERROR",
+    "DF-03": "EMPIRICALLY-REFUTED", "DF-04": "FORMALLY-REFUTED",
+    "DF-05": "CATEGORY-ERROR", "DF-06": "EMPIRICALLY-REFUTED",
+    "DF-07": "EMPIRICALLY-REFUTED", "DF-08": "FORMALLY-REFUTED",
+    "DF-09": "FORMALLY-REFUTED", "DF-10": "FORMALLY-REFUTED",
+    "DF-11": "FORMALLY-REFUTED", "DF-12": "FORMALLY-REFUTED",
+    "DF-13": "EMPIRICALLY-REFUTED", "DF-14": "FORMALLY-REFUTED",
+    "DF-15": "CATEGORY-ERROR", "DF-16": "FORMALLY-REFUTED",
+    "DF-17": "NOT-WELL-POSED", "DF-18": "NOT-WELL-POSED",
+    "DF-19": "FORMALLY-REFUTED", "DF-20": "CATEGORY-ERROR",
+    "DF-21": "FORMALLY-REFUTED", "DF-22": "PROCESS-DEFECT",
+}
 CONTRACT_FIELDS = {
     "contract_id", "component_id", "protocol_owner", "protocol_refs",
     "maturity", "blocked_by", "discriminator", "kill", "survivor",

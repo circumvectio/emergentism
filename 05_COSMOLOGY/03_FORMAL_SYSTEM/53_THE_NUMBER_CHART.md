@@ -2,7 +2,7 @@
 title: "The Number Chart — every membership decision, with theorem or convention marked"
 status: "ACTIVE — §5.2 RULED 2026-07-30 (POSITIVE-ONLY) and §5.1 RULED 2026-07-31 (register-indexed: √2 is a number in ℝ AND is not the value of a finite base-word; both clauses travel together, bare 'not a number' is banned). Receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md"
 date: 2026-07-29
-evidence_tier: "[A] N1–N4, G1, G3–G5, Z1 and scoped memberships; [B/C] bounded evidence/open injectivity for G2; [S] conventions; [I] Titan gloss"
+evidence_tier: "[A] N1–N4, G1, G3–G5, Z1 and scoped memberships; [A] G2 inherited-with-citation (PROVED 2026-08-05 — continued-fraction uniqueness; see 55_G2_PRIOR_ART_ADJUDICATION.md); [S] conventions; [I] Titan gloss"
 owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and to 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md on all D1 claims."
 parents:
   - 52_THE_GENERATIVE_BASE.md
@@ -182,7 +182,12 @@ theorem, or if the `§5.2` branch is silently collapsed to one horn, this chart 
 committed the corpus's characteristic error and should be repaired or withdrawn.
 
 **Bounded regression:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` samples
-the stated claims; it does not prove universal G2 or independently establish the
-analytic arguments.
+the stated claims; it does not independently establish the analytic arguments.
+`09_TOOLS/01_SCRIPTS/check_g2_normal_form.py` separately checks the
+continued-fraction dictionary that **proves** G2, with a mutation harness. G2 is
+no longer open — it is Hardy & Wright, inherited with citation
+([`55_G2_PRIOR_ART_ADJUDICATION.md`](55_G2_PRIOR_ART_ADJUDICATION.md)). The
+chart's "Each has ONE reduced word" is therefore now backed, and the row marked
+THEOREM genuinely is one — belonging to Euclid, not to this corpus.
 
 •   ⊙   ○ — *one object, two moves, and a boundary that is not a number at either end.*

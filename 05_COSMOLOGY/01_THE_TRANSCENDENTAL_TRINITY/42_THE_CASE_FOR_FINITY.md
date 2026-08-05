@@ -191,11 +191,39 @@ an ambition. These gates convert the ambition into a public research standard:
 
 | Gate | Evidence required | Claim permitted if passed | Honest result if it fails |
 |---|---|---|---|
-| **F0 — Type integrity** | Complete syntax/semantics, negative tests for attempted Titan-seat multiplication, `a/0`, implicit extensions, and register leakage. | A well-specified internal boundary calculus. | A metaphor or pedagogical vocabulary, not a calculus. |
+| **F0 — Type integrity** ⚠ **NOT PASSED** | Complete syntax/semantics, negative tests for attempted Titan-seat multiplication, `a/0`, implicit extensions, and register leakage. | A well-specified internal boundary calculus. | A metaphor or pedagogical vocabulary, not a calculus. |
 | **F1 — Mathematical contribution** | Independent formal review plus a theorem, invariant, classification, or no-go result beyond prior art. | A new mathematical contribution of the stated scope. | A lucid synthesis or exposition. |
 | **F2 — Computational or practical utility** | A reproducible tool or method that beats a named baseline on a frozen task. | A useful formal instrument. | A teaching/research index only. |
 | **F3 — Scientific contact** | A declared `μ` test packet, fair lower-register rivals, preregistration, and independent replication of a novel discriminator. | Evidence for that one scoped crossing. | No empirical support for an ontic traversal claim. |
 | **F4 — Independent transmission** | A predeclared observation horizon; independent-use and retention measures; documented rejection/exit evidence; and non-adherent users, critics, or institutions employing it for a real problem. | Time-bounded evidence of durable cultural usefulness. | Internal adherence or unobserved retention only; no validation of truth or magnitude. |
+
+> **F0 — NOT PASSED, 2026-08-05.** This row was being treated as cleared on the
+> strength of `47_FINITY_BOUNDARY_CALCULUS_SPEC.md`'s "F0 syntax packet
+> complete." The syntax is written; **the negative tests this row requires are
+> not executable.** `09_TOOLS/02_COMPILERS/test_finity_boundary_spec.py` checks
+> type integrity with three `assertIn` substring assertions on prose, and
+> `CM-04` — which requires `zero_T × unbounded_T` to *fail type checking* — is
+> verified by its own id appearing in a document. Nothing type-checks. What is
+> genuinely machine-enforced is the `48` ledger's row structure, which is real
+> and passes. Until an executable term language exists, the honest reading of
+> this row is the right-hand column. See the correction note in `47` §0.
+>
+> **F1 — first candidate adjudicated, 2026-08-05. STILL OPEN, and one route is
+> now closed.** `G2` (the generative base's normal-form claim) was the corpus's
+> only precisely-stated open mathematical conjecture. It was proved — and the
+> proof showed it to be the uniqueness of the finite continued fraction with
+> last partial quotient `≥ 2` (Hardy & Wright, *Theory of Numbers*, Ch. X),
+> i.e. **prior art**. `G2` therefore **does not pass F1** and must never be
+> cited as passing it. The honest result for this gate is the right-hand
+> column: *a lucid synthesis or exposition.*
+>
+> **Scope, corrected the same day by council review.** What was withdrawn is the
+> *mathematical* distinctness claim — and `52_THE_GENERATIVE_BASE.md` §4 had
+> already withdrawn it before this pass. The **reading** (the order of
+> explanation) survives at `[S]` and now carries a live successor kill; see the
+> tombstoned row in `52` §6. Do not cite this note as retiring the reading.
+> Receipt:
+> [`../03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md`](../03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md).
 
 Passing a gate never retroactively proves the next one. A theorem is not an
 ontology; a tool is not a theory of everything; adoption is not truth. `[I]`

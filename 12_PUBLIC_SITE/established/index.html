@@ -77,6 +77,17 @@ SSSSSS&iota;SSS   &rarr;  22/7</code></pre>
 <em>constructible from</em> <code>1</code> &mdash; identical to a word. <code>3/5</code> does
 not <em>have</em> a derivation; <code>3/5</code> <strong>is</strong> <code>S&iota;S&iota;S&iota;</code>.</p>
 
+<p class="note"><b>This is not our theorem.</b> It is the uniqueness of the finite simple
+continued fraction expansion with last partial quotient <code>&ge; 2</code> (Hardy &amp;
+Wright, <i>An Introduction to the Theory of Numbers</i>, Ch. X), under the dictionary
+<code>S<sup>a&#8320;</sup>&iota;S<sup>a&#8321;</sup>&hellip;&iota;S<sup>a&#8342;</sup>
+&rarr; [a&#8342;; &hellip;, a&#8321;, a&#8320;+1]</code>. Because evaluation starts <em>at</em>
+<code>1</code>, the last partial quotient is <code>a&#8320;+1 &ge; 2</code> &mdash; which is
+exactly the classical normalisation that makes the expansion unique. The two reduction rules
+here (<code>&iota;&iota; = id</code>, <code>&iota;(1) = 1</code>) are that hypothesis, reached
+independently and written in word form. The underlying algorithm is Euclid's. What is ours is
+the <em>order of explanation</em>, not the mathematics.</p>
+
 <h3>What cannot be reached, and why <code>[A]</code></h3>
 
 <p><strong>Zero is not un-visited. There is no step that lands on it.</strong>
@@ -154,7 +165,9 @@ built from an unbounded one, which is a fact about <code>tanh</code> and not abo
 
 <p class="note"><b>What was actually computed.</b> Every word up to length 10 &mdash;
 <b>232 distinct values</b>. Of the words that are not in reduced form, 143 collide with another
-word; <b>of the reduced words, zero collide</b>, which is what makes the normal form unique.
+word; <b>of the reduced words, zero collide</b>. That enumeration is a <em>check</em>, not the
+warrant: uniqueness holds over all of <code>&#8474;&#8314;</code> by the continued-fraction
+theorem cited above, and no finite enumeration could establish it.
 The Calkin&ndash;Wilf tree to depth 13: <b>8191 words, 8191 distinct values</b>, no repeats. A
 25&times;25 grid of fractions: <b>every cell reached, none unattained</b>. Rerun it with
 <code>check_generative_base.py</code>. The guards in that file are themselves mutation-tested,
@@ -521,9 +534,19 @@ once, on this file.</em> A guard that cannot fail is worse than no guard, becaus
 success.</p>
 
 <p>Every claim above states how to prove it wrong. Find a finite word whose value is zero.
-Find two different reduced words with the same value. Find a field where zero has a
-multiplicative inverse. Find a ring with two identities. <strong>Any one of those ends the
-corresponding claim, and we will say so with a date.</strong></p>
+Find a field where zero has a multiplicative inverse. Find a ring with two identities.
+<strong>Any one of those ends the corresponding claim, and we will say so with a date.</strong></p>
+
+<p class="note"><b>Retired kill, 2026-08-05 &mdash; and the date is this one.</b> This list
+previously invited readers to <em>&ldquo;find two different reduced words with the same
+value.&rdquo;</em> <strong>That challenge was not open.</strong> It is closed by the
+uniqueness of the finite continued fraction expansion, a result roughly a century and a half
+old, and we were offering a reader&rsquo;s evening against Euclid without saying so. It is
+withdrawn here rather than quietly deleted. What replaces it is genuinely open: <em>exhibit a
+published account of <code>&#8474;&#8314;</code> by continued fractions or the
+Stern&ndash;Brocot tree that already partitions non-termination into two directions and
+identifies them with <code>0</code> and <code>&infin;</code></em> &mdash; i.e. that already
+draws the boundary this page draws. That would make the reading a notational variant.</p>
 
 <hr>
 

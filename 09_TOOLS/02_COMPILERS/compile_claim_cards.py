@@ -101,6 +101,79 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+# RESTORED 2026-08-05. _located_text, _resolve_repo_path and _canonical_corpus_path
+# are USED in this file and were DEFINED NOWHERE — dropped by merge 80759036
+# ("conflicts resolved main-side"), which left the claim-card compiler raising
+# NameError on every run and took the claim-graph contract tests down with it.
+# _primary_checkout_root is restored because the other two depend on it. Recovered
+# verbatim from 1797138a. Receipt:
+# 11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md
+
+
+def _text_sha256(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _located_text(lines: list[str], start: int, end: int) -> str:
+    """Return the exact, newline-normalized inclusive source slice."""
+    return "\n".join(lines[start - 1:end])
+
+
+def _primary_checkout_root(root: Path) -> Path:
+    """Return the primary checkout root when ``root`` is a linked Git worktree.
+
+    Historical provenance may intentionally live in a sibling pillar. Relative
+    sibling paths work in the primary checkout but not under ``.codex-worktrees``.
+    Git's ``commondir`` provides a deterministic, local fallback without changing
+    the stored path or generated contract.
+    """
+    dotgit = root / ".git"
+    if not dotgit.is_file():
+        return root
+    try:
+        payload = dotgit.read_text(encoding="utf-8").strip()
+        if not payload.startswith("gitdir:"):
+            return root
+        gitdir = Path(payload.split(":", 1)[1].strip())
+        if not gitdir.is_absolute():
+            gitdir = (root / gitdir).resolve()
+        commondir_file = gitdir / "commondir"
+        if not commondir_file.is_file():
+            return root
+        common = Path(commondir_file.read_text(encoding="utf-8").strip())
+        if not common.is_absolute():
+            common = (gitdir / common).resolve()
+        return common.parent
+    except OSError:
+        return root
+
+
+def _resolve_repo_path(root: Path, rel: Path, base: Path = Path(".")) -> Path:
+    root = root.resolve()
+    candidate = (root / base / rel).resolve()
+    if candidate.is_relative_to(root):
+        return candidate
+    # External provenance resolves from the primary checkout, never from an
+    # accidental sibling of the linked worktree. It may not escape the
+    # Documents federation that contains the sovereign pillar repositories.
+    primary = _primary_checkout_root(root).resolve()
+    federation = primary.parent.resolve()
+    external = (primary / base / rel).resolve()
+    if not external.is_relative_to(federation):
+        raise ContractError(f"external provenance path escapes the Documents federation: {rel}")
+    return external
+
+
+def _canonical_corpus_path(root: Path, resolved: Path) -> str:
+    """Return a stable corpus-relative path for internal or sibling provenance."""
+    root = root.resolve()
+    resolved = resolved.resolve()
+    if resolved.is_relative_to(root):
+        return resolved.relative_to(root).as_posix()
+    primary = _primary_checkout_root(root).resolve()
+    return Path(os.path.relpath(resolved, primary)).as_posix()
+
+
 def _resolve_declared_path(root: Path, base: Path, declared: Path) -> Path:
     """Resolve a corpus path without assuming the checkout is the owner root.
 

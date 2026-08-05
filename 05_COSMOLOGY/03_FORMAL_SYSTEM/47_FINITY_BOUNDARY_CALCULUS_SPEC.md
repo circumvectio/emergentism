@@ -1,6 +1,6 @@
 ---
 title: "Finity Boundary Calculus — Formal Research Specification"
-status: "ACTIVE SPECIFICATION — F0 syntax packet complete; novelty and world claims evidence-open"
+status: "ACTIVE SPECIFICATION — F0 syntax packet WRITTEN (not executably verified: see the 2026-08-05 note below); novelty and world claims evidence-open"
 date: 2026-07-28
 evidence_tier: "[A] inherited mathematics; [S] declared type system; [I] Finity reading; [C] any new-calculus claim"
 owner_route: "K-1 with K-3/K-4 recovery and kill review"
@@ -18,6 +18,36 @@ The packet is F0: its syntax and acceptance obligations are defined. It has not
 yet earned F1 mathematical novelty. If every useful result translates into
 known partial algebra, projective geometry, topology, analysis or type theory,
 the survivor is a useful specification layer—not a new foundational algebra.
+
+> **HONESTY CORRECTION, 2026-08-05 — "complete" was doing work it had not
+> earned.** `42_THE_CASE_FOR_FINITY.md` §6 states F0's evidence requirement as
+> *"complete syntax/semantics, **negative tests** for attempted Titan-seat
+> multiplication, `a/0`, implicit extensions, and register leakage."* The syntax
+> and the obligations are indeed written, here and in `48`/`49`. **The negative
+> tests are not executable.**
+>
+> The gate that reports on them, `09_TOOLS/02_COMPILERS/test_finity_boundary_spec.py`,
+> is 45 lines. Its type-integrity test is three substring assertions —
+> `assertIn("TitanFrame ↛ Number", …)`, `assertIn("TitanFrame ↛ Field[F]", …)`,
+> `assertIn("CM-04", …)`. `CM-04` requires that `zero_T × unbounded_T` **fail
+> type checking**. Nothing type-checks. The test confirms that a string appears
+> in a document, which is not the property `CM-04` names.
+>
+> What *is* genuinely tested by that file: the `48` ledger's row structure —
+> that every row carries `formal_domain`, `native_account`, `recovered_result`,
+> `residual`, `rivals`, and `kill`; that classifications are drawn from the
+> declared set; that ids are unique; and that `MEAS-01` is not promoted past
+> `unresolved_question`/`C`. Those are real checks and they pass.
+>
+> So the honest statement is: **the F0 packet is written and its ledger
+> discipline is machine-enforced; its negative tests are prose-declared and
+> unexecuted.** F0 is not "complete" in the sense `42` §6 requires. Either an
+> executable term language and type checker is built, or the F0 claim contracts
+> to *"specified, with a structurally-validated ledger."* Do not cite F0 as
+> passed until one of those two happens.
+>
+> Receipt:
+> `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md`
 
 ### 0.1 Typed Finity vocabulary `[S]`
 

@@ -1,8 +1,8 @@
 ---
 title: "The Generative Base — one object, two operations, and the two limits no word attains"
-status: "ACTIVE — candidate arithmetic/reachability base. The 2026-07-29 B-ii mixed-type ruling is superseded by the 2026-08-01 Foundation type firewall; this file defines no Titan arithmetic."
+status: "ACTIVE — candidate arithmetic/reachability base. The 2026-07-29 B-ii mixed-type ruling is superseded by the 2026-08-01 Foundation type firewall; this file defines no Titan arithmetic. G2 PROVED 2026-08-05 and simultaneously found to be prior art (continued-fraction uniqueness). The MATHEMATICAL distinctness claim is withdrawn — it was already withdrawn at §4 before that pass. The READING (order of explanation) survives at [S] and carries a new successor kill; the §6 row's first FIRED stamp was an over-cut and is tombstoned in place. Receipt: 55_G2_PRIOR_ART_ADJUDICATION.md"
 date: 2026-07-29
-evidence_tier: "[A] G1–G10 in the declared rational/real structures; [S] typed boundary names; [I] any analogy to the operator-free Titan emblem"
+evidence_tier: "[A] G1–G10 in the declared rational/real structures, G2 inherited-with-citation; [S] typed boundary names; [I] the identification of the two reduction exclusions with the classical last-partial-quotient normalisation"
 owner: "Candidate arithmetic/reachability owner. Does not amend KSC-28, the Trinity canon, Primitive Types, doc 45, or 00_THE_FOUNDATION.md. Titan type questions route to the Trinity canon and 29_PRIMITIVES_AND_TYPE_SIGNATURES.md; no Titan identity exists here."
 parents:
   - 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md
@@ -134,11 +134,31 @@ value lies in `ℚ⁺`.
 to obtain `q`. Thus the measure decreases before each appeal to the induction
 hypothesis. (⊆) `S` and `ι` both map `ℚ⁺` into `ℚ⁺`. ∎
 
-**G2 · Candidate normal-form theorem `[C]`; bounded evidence `[B]`.**
+**G2 · Normal-form theorem — `[A]` inherited, PROVED 2026-08-05.**
 Call `w` **reduced** if it contains no `ιι` and does not begin with `ι`. Then the
-map `w ↦ val(w)` is conjectured here to be a **bijection** from reduced words
-onto `ℚ⁺`. Surjectivity follows from `G1`; a complete injectivity proof is still
-owed for this exact reduction grammar.
+map `w ↦ val(w)` is a **bijection** from reduced words onto `ℚ⁺`. Surjectivity
+follows from `G1`.
+
+> **RESOLVED 2026-08-05 — and it was never open.** This entry read *"conjectured
+> here … a complete injectivity proof is still owed."* Injectivity is a corollary
+> of the **uniqueness of the finite simple continued fraction expansion with last
+> partial quotient `≥ 2`** (Hardy & Wright, *Theory of Numbers*, Ch. X; Khinchin
+> §I.2), under the exact dictionary
+>
+> ```text
+> S^a₀ ι S^a₁ ι ⋯ ι S^aₖ  ↦  [aₖ; aₖ₋₁, …, a₁, a₀ + 1]     (trailing ι = reciprocal)
+> ```
+>
+> **`val` starts *at* `1`, so the last partial quotient is `a₀ + 1 ≥ 2`.** That
+> is precisely the classical uniqueness normalisation. The two exclusions above
+> are therefore not this base's own conventions — they are Hardy & Wright's
+> hypothesis, reached independently and written in word form.
+>
+> Tier moves `[C] → [A] inherited-with-citation`. **This does not pass `F1`**;
+> `F1` requires a result beyond prior art and G2 is not one. Proof, the other
+> two vocabularies (Stern–Brocot/Calkin–Wilf path uniqueness; `PGL(2,ℤ)` normal
+> form), and the full adjudication:
+> [`55_G2_PRIOR_ART_ADJUDICATION.md`](55_G2_PRIOR_ART_ADJUDICATION.md).
 
 The two exclusions are not conventions. They are precisely the two facts that
 define `ι`:
@@ -155,6 +175,12 @@ values carry multiple *unreduced* words; **0 of them carry multiple reduced
 words.** Equivalently, in the Calkin–Wilf presentation `{S, L}` with
 `L = ιSι : x ↦ x/(x+1)`, all `8191` words of length ≤ 12 have `8191` **distinct**
 values. This is regression evidence, not an exhaustive proof over all words.
+
+*Structural check, 2026-08-05:* `09_TOOLS/01_SCRIPTS/check_g2_normal_form.py`
+verifies the continued-fraction dictionary itself — exact on all `10945` reduced
+words to length `18`, last partial quotient `≥ 2` throughout — and carries a
+mutation harness whose four mutants must each be rejected. It pins the *reason*
+injectivity holds, which the sampling predecessor could not.
 
 **G3 · No finite word attains numeric zero.**
 There is no word `w` with `val(w) = 0`.
@@ -615,7 +641,36 @@ Titan frame. No agreement, identity, coercion, or proof transfer is asserted.
 | `G4` | exhibit a finite word whose declared base evaluator returns an explicitly adjoined infinity endpoint |
 | `G5` | exhibit a neighbourhood of `0` or `∞` containing no reachable value |
 | the base | show the corpus needs a value that no finite word attains **and** that is not obtained by a declared completion |
-| the reading | show "reachability = Finity_G" is a notational variant of an existing account, not a distinct claim |
+| the reading | show "reachability = Finity_G" is a notational variant of an existing account, not a distinct claim — **⚠ TOMBSTONE: FIRED ON THE WRONG TARGET, 2026-08-05.** See the correction directly below. |
+
+> **KILL-FIRING CORRECTED, 2026-08-05 — same day, by council review.** This row
+> was first stamped *FIRED* on the ground that `G1` + `G2` are the finite
+> continued-fraction algorithm and its uniqueness theorem. **That was an
+> over-cut, and the original stamp is tombstoned above rather than deleted.**
+>
+> The mathematical distinctness claim **was already withdrawn before this pass**
+> — see `§4` of this document (*"What is new here is the categorisation, not the
+> objects. `ℚ⁺` is standard; continued fractions are ancient; the tree is
+> Calkin–Wilf (2000). KSC-12 applies"*) and the Euler note later in the same
+> section. The kill therefore hit nothing live. What it did do was vacate the
+> only stated constraint on the **surviving** half — the *reading*, i.e. the
+> order of explanation, which `53_THE_NUMBER_CHART.md` §4 tiers `[S]` (*"a
+> choice about what to explain, not a new theorem"*) and which
+> [`55_G2_PRIOR_ART_ADJUDICATION.md`](55_G2_PRIOR_ART_ADJUDICATION.md) §7
+> preserves verbatim. **KSC-12 cuts both ways: mathematics that transfers no
+> proof *to* the reading cannot refute it either.** Hardy & Wright contains no
+> Titans, no unreachability register, and no `Finity_G`/`Finity_F` split.
+>
+> **Successor kill, now live for the surviving half:** exhibit an existing
+> published account of `ℚ⁺` via continued fractions, the Stern–Brocot tree, or
+> the Calkin–Wilf tree that **already partitions non-termination into two
+> directions and identifies that partition with `0` and `∞`** — i.e. that
+> already draws the boundary this reading draws. If it exists, the reading is a
+> notational variant and this row fires for real.
+>
+> **Second limb:** exhibit a *third* way a finite word can fail to terminate.
+> `53_THE_NUMBER_CHART.md` §4 claims there are exactly two; nothing currently
+> tests that exhaustivity.
 
 **This document's own kill.** If Titan glyphs are used here as names for
 reachability classes, points, operands, limits, or warrants, this base has
@@ -628,8 +683,12 @@ defended.
 
 A stranger needs no metaphysics to check this page. Hand them `22/7` and the two
 operations; they can verify the exhibited code with a pencil. `G3` they can
-check in one line: no positive rational has reciprocal zero. The uniqueness
-claim must remain open until its general proof lands.
+check in one line: no positive rational has reciprocal zero.
+
+The uniqueness claim is **no longer open**: it is the uniqueness of the finite
+continued fraction with last partial quotient `≥ 2`, and a stranger who knows
+that theorem will recognise this page as continued fractions on sight. Tell them
+so first — it is the fastest way to be believed about everything else here.
 
 **Bounded regression:** `09_TOOLS/01_SCRIPTS/check_generative_base.py` — exhaustive over all
 words to length 10, the Calkin–Wilf tree to depth 12, and reachability of every
