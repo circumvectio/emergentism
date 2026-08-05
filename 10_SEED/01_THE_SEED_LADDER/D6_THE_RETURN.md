@@ -26,7 +26,7 @@ parents:
 > **resemblance of boundary roles** `[I]`, never an identity. D0 precedes positive articulation;
 > D6 suspends further positive articulation. Both are limit markers, neither is world-content.
 > **The literal equation `D6≡D0` is dead** (its grave: strict order gives `D0 < D0`, a
-> contradiction; Dead Forms row 8). The ouroboros does not swallow its tail. It bites at "~".
+> contradiction; Dead Forms row 8 — `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`:47). The ouroboros does not swallow its tail. It bites at "~".
 
 ---
 
