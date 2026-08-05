@@ -2,7 +2,7 @@
 title: "The Number Chart — every membership decision, with theorem or convention marked"
 status: "ACTIVE — §5.2 RULED 2026-07-30 (POSITIVE-ONLY) and §5.1 RULED 2026-07-31 (register-indexed: √2 is a number in ℝ AND is not the value of a finite base-word; both clauses travel together, bare 'not a number' is banned). Receipt: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md"
 date: 2026-07-29
-evidence_tier: "[A] N1–N4, G1, G3–G5, Z1 and scoped memberships; [A] G2 inherited-with-citation (PROVED 2026-08-05 — continued-fraction uniqueness; see 55_G2_PRIOR_ART_ADJUDICATION.md); [S] conventions; [I] Titan gloss"
+evidence_tier: "[A] N1–N4, G1, G3–G5, Z1 and scoped memberships; [A] G2 inherited-with-citation (PROVED 2026-08-05 — continued-fraction uniqueness; see 55_G2_PRIOR_ART_ADJUDICATION.md); [S] conventions and the §4.1 design trade; [I] boundary gloss. §2A and §4.1 amended 2026-08-05: the Boundary→Value refusal has three distinct type reasons (see 49_THE_THREE_MODES_OF_COUNTING.md), and §4.1 states the price this chart pays versus wheels/IEEE/meadows so a rival can weigh it."
 owner: "Subordinate to 52_THE_GENERATIVE_BASE.md and to 42_D1_ARITHMETIC_AXIOMS_AND_BOUNDARIES.md on all D1 claims."
 parents:
   - 52_THE_GENERATIVE_BASE.md
@@ -26,8 +26,9 @@ parents:
 ## 1 · The chart
 
 ```text
-                              ○   TOTALITY EMBLEM for the unbounded direction (G4)
-                              ▲                   ∞ ∉ ℝ — theorem, no qualification
+                              ○   COUNTING CANNOT COMPLETE.                     (G4)
+                              ▲   No gathering catches it; adding changes nothing.
+                              │   Boundary, never a Value. ∞ ∉ ℝ — theorem, unqualified.
                               │
                     ┌─────────┴─────────┐
                     │ d×-completion [S] │   ℝ₊   adds positive-real limits of words.
@@ -36,6 +37,11 @@ parents:
                               │
    ⊙_G GENERATIVE FINITY = ℚ⁺ ─┤   the REACHABLE. Every value of a finite word on 1. (G1)
                               │   Countable. Each has ONE reduced word.            (G2)
+                              │   ↑ PROVED 2026-08-05 — and it is Hardy & Wright's,
+                              │     not this corpus's. Continued-fraction uniqueness
+                              │     with last partial quotient ≥ 2. See 55.
+                              │   COUNTING IS MEANINGFUL throughout this band: you
+                              │   might not count, count and stop, or count forever.
                               │
                     ┌─────────┴─────────┐
                     │        ℕ⁺         │   1, 2, 3, …   the S-closure alone      (G6)
@@ -43,11 +49,20 @@ parents:
                     └─────────┬─────────┘
                               │
                               1   THE PRIMITIVE — and the only one.
-                              │   ι's unique fixed point — its UNIQUENESS is forced;
-                              │   its existence is presupposed (ι names 1 to be written).
+                              │   FIVE independent theorems, no slogan required:
+                              │     N1  unique additive irreducible
+                              │     N2  {1} lies in EVERY generating set of (ℕ⁺,+)
+                              │     N4  ℤ initial in Ring — the additive-generative
+                              │         role FOLLOWS FROM the multiplicative identity.
+                              │         Nothing else in any ring does that.
+                              │     ι   its unique positive fixed point (machine-checked)
+                              │     E   unique minimum of (log x)²  [Suda; also classical]
+                              │   UNIQUENESS forced; EXISTENCE presupposed (ι names 1
+                              │   in order to be written at all).
                               ▼
-                              •   ABSENCE EMBLEM for the zero-directed limit (G3)
-                                                  no finite word has value 0
+                              •   COUNTING CANNOT BEGIN.                        (G3)
+                                  Nothing distinguished yet — no entry point.
+                                  Boundary, never a Value. No finite word has value 0.
 ```
 
 ---
@@ -90,6 +105,25 @@ Process  --denotes--> completed Value
 Operator: Value  -->  Value
 Boundary  -/->        Value       unless a new structure explicitly adjoins it
 ```
+
+**The last line has three different reasons, not one prohibition** (added
+2026-08-05; see [`../01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md`](../01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md) §5):
+
+| | fails because |
+|---|---|
+| at `•` | counting has not begun — there is no item there to be an operand |
+| at `⊙` | there **is** a collection, but the collection has been offered where a **member** is required. A *level* error, not an absence |
+| at `○` | nothing is outside it, so it is a member of nothing, including any domain |
+
+None is a decree; each is a type fact. And `ℝ ∉ ℝ` is a **consequence** of `⊙`
+being the collection — never its definition, since under Foundation no
+well-founded set is a member of itself and the property therefore discriminates
+nothing.
+
+**Scope fence.** This governs the *frame*. Ordinary `a/0_N` remains undefined in
+a field for the ordinary algebraic reason — there is no `y` with `0·y = a` —
+which holds in `GF(7)`, where no limit, distance or approach exists at all.
+Three registers, three separate facts, none doing another's work.
 
 This is the precise survivor of the owner's insight:
 
@@ -161,6 +195,48 @@ On that reading `0` and `∞` are not *small* and *large* numbers. They are the
 **two ways a word can fail to terminate**, and `⊙_G` is everything a finite word
 does reach.
 That reframe is `[S]` — it is a choice about what to explain, not a new theorem.
+
+### 4.1 · The trade this chart makes, stated so a rival can weigh it `[A/S]`
+
+Added 2026-08-05. Without this paragraph the chart looks like a claim. With it,
+it is a **design choice with a price**, which is the only form a rival can
+evaluate.
+
+Every serious treatment of the boundaries **totalises and pays a stated bill**:
+
+| Treatment | Admits the boundary as | Bill it publishes |
+|---|---|---|
+| Wheel theory (Setzer 1997, Carlström 2000s) | a full element; `/` becomes total | **`0x = 0` stops holding in general** |
+| IEEE-754 | `±0`, `±∞`, `NaN` as values | `NaN` propagation; `NaN ≠ NaN` |
+| Projective line `ℝP¹`/`ℂP¹` | a point `∞_P` | **no global field structure survives** |
+| Involutive meadows (Bergstra & Tucker) | `1/0 = 0` | division no longer means "the inverse" |
+| Common meadows | `1/0 = ⊥`, absorptive | an extra element in every carrier |
+
+**This chart makes the opposite move: it types the boundaries and refuses them
+as operands — and pays nothing, because it never lets them in.**
+
+`Boundary -/-> Value` is not a prohibition and not a result. It is the price of
+the choice: you keep `0x = 0`, you keep the field, you keep `NaN`-free
+arithmetic — and in exchange you may never write a boundary as an operand, and
+you must name the structure every time you cross registers.
+
+**Neither column is better.** They answer different questions. Wheels ask *how do
+I make division total?* and buy it with an algebraic law. This chart asks *what
+can a finite construction reach?* and buys its answer by declining to extend.
+A reader who needs total division should use wheels, and this chart should say
+so rather than compete.
+
+**What is genuinely this corpus's here is narrow and should stay narrow:** not
+the mechanism — `G1`+`G2` are Euclid's algorithm and its uniqueness theorem —
+and not the type separation, which is ordinary universal algebra (`Word --val-->
+Value` is the evaluation homomorphism from a term algebra to a model). It is the
+**fifth type**: carrying `Boundary` as a first-class sort that is *definitionally
+not a Value*, inside a presentation of number. Everyone else either excludes the
+boundary or admits it as a value. Nobody else types it and keeps it.
+
+That is a small delta. It is also the one the
+[`Boundary Rules`](../../02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md)
+manual was written to make usable by people who accept none of the rest of this.
 
 ---
 
