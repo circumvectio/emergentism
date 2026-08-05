@@ -128,3 +128,67 @@ product.
 "a prediction recorded after the fact discharges nothing."*
 
 •   ⊙   ○
+
+---
+
+## Step 4 — The comparison (performed after commit `1553a87e`)
+
+### Cardiovascular pair — RESULT: refutes
+
+**Observed values [B]:**
+- Resting: CO ≈ 5 L/min, SVR ≈ 1000 dynes·s/cm⁵
+- Maxima: CO_max ≈ 25 L/min (5× reserve), SVR_max ≈ 2500-3000 dynes·s/cm⁵
+- Normalized: CO/CO_max ≈ **0.20**, SVR/SVR_max ≈ **0.40**
+
+**Comparison:** 0.20 ≠ 0.40. The normalized effectors operate at a ~2:1
+asymmetry. **Finity_L's prediction `a = b` is refuted for this pair.**
+
+**The deeper qualification [I]:** the cardiovascular pair does not satisfy
+`ab = const` to measurement precision either. MAP drifts during perturbation
+(orthostatic hypotension ~10-20 mmHg transient; exercise raises MAP 50+
+mmHg). The baroreflex *partially* compensates — it is approximate regulation,
+not exact conservation. So this pair fails the structural requirement (§3)
+before it even reaches the regulatory prediction (§4).
+
+**Combined verdict for Candidate 1:** refutes on both counts — the product is
+not conserved, and the setpoint is not at `a = b`.
+
+### Hill muscle — RESULT: does not qualify (shifted product)
+
+Already predicted in step 3. The conserved quantity is `(F+a)(V+b)`, not `FV`.
+Maximum power at ~0.3 F_max. The structural requirement (`ab = const` with the
+bare product) is not met.
+
+### Ventilation/perfusion — RESULT: does not qualify (ratio, not product)
+
+Already predicted in step 3. V̇_A/Q̇ = const is a ratio constraint.
+
+## The honest outcome
+
+**No surviving candidate.** Three candidates examined; one refutes the
+prediction, two do not meet the structural requirement.
+
+**Does this kill Finity_L?** Not yet. The search was broad but not exhaustive.
+The conjecture can survive in two ways:
+1. A real conserved-product pair exists in a system I did not search
+   (endocrine axes, renal clearance, membrane transport).
+2. The structural requirement is relaxed to admit shifted products like Hill's
+   — but then the theorem's `a = b` prediction does not follow, because the
+   shifted product's maximum is not at the shifted balance point.
+
+**My honest assessment [I]:** the conjecture is in trouble. The closest real
+biological conserved product (Hill) is shifted, and the closest real regulated
+cardiovascular pair is both approximately-conserved (not exact) and
+asymmetrically-utilized (not at `a = b`). But I have not searched exhaustively,
+and "not found in a 30-minute literature search" is not "does not exist."
+
+**Per WO-C1 done-when:** I report "no surviving candidate from the searched
+literature" rather than "killed." The conjecture is **weakened, not killed.**
+The search should continue into: endocrine feedback axes (cortisol/ACTH),
+renal (GFR × filtration fraction), and membrane transport (pump/leak pairs)
+before a kill is declared.
+
+---
+
+*Comparison performed after prediction was committed at `1553a87e`. The
+ordering is the only thing that makes this honest.*
