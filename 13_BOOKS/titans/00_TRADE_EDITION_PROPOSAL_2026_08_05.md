@@ -122,6 +122,41 @@ example must be a documented case with a source, and the claim must be that the
 outcome.** Counterfactual rescue is exactly the causal hyperbole Seife was marked
 down for. Ch. 5 fails review if any example asserts a counterfactual.
 
+## 5A · Drafting status, 2026-08-05
+
+| # | Chapter | State |
+|---|---|---|
+| 1 | The Argument That Never Ends | **sample opening only** (§10 below) |
+| 2 | The Absence That Got a Name | not started |
+| 3 | What Brahmagupta Actually Did | not started |
+| 4 | Four Statuses | **DRAFT 1** — `CH04_FOUR_STATUSES_DRAFT_2026_08_05.md` |
+| 5 | Continuation Without Orientation | **DRAFT 1** — `CH05_CONTINUATION_WITHOUT_ORIENTATION_DRAFT_2026_08_05.md` |
+| 6 | Impostors | not started |
+| 7 | The Boundary That Isn't a Number | not started |
+| 8 | Everything We Found Was Already Ours | **DRAFT 1** — `CH08_ALREADY_OURS_DRAFT_2026_08_05.md` |
+| 9 | The Missing One | **DRAFT 1** — `CH09_THE_MISSING_ONE_DRAFT_2026_08_05.md` |
+| 10 | Toward What? | not started |
+| 11 | How This Could Be Wrong | not started |
+| — | The Record | not started |
+
+The four drafted chapters are the load-bearing set and were written first on
+purpose: **4** is the tool, **5** is why it matters now, **8** is why anyone
+should believe us, and **9** is what was actually brought. A reader could judge
+whether this book should exist from those four alone. What remains is largely
+connective — history, worked examples, and apparatus.
+
+All four pass the strip test (verified word-bounded, no corpus vocabulary in the
+body). Ch. 5 additionally passes its counterfactual constraint; Ch. 9 passes an
+over-claim check (*discovery*, *invention*, *theorem* appear only as refusals).
+
+**One dependency this created.** Ch. 8 publicly states that the corpus had
+reached for the wrong mathematical neighbour for pre-countability, and that the
+right one is the proper class / Cantor's absolute. That correction has now been
+made in the source —
+`../../05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md`
+§1 and §3 — so the book and the corpus agree. If that correction is ever reverted,
+Ch. 8 becomes false and must be revised with it.
+
 ## 6 · Register rules
 
 Binding on the draft:

@@ -81,7 +81,7 @@ use:
 
 | Founding phrase `[I]` | Precise reading in this chapter | Mathematical neighbor `[A]` | Refusal |
 |---|---|---|---|
-| **The Infinite is infinitely uncountable.** | The whole is not exhaustible by any countable traversal. At the Ground boundary, it is more exact to say **pre-countable**: no domain of distinct objects has yet been licensed for counting. | An uncountable set admits no list `x₀,x₁,…` containing all its elements. Cantor's theorem supplies indefinitely larger set-sized horizons. | Numerical `0` does not have uncountable cardinality, and the Ground is not declared to be a set. |
+| **The Infinite is infinitely uncountable.** | The whole is not exhaustible by any countable traversal. At the Ground boundary, it is more exact to say **pre-countable**: no domain of distinct objects has yet been licensed for counting. | **Two distinct neighbours, one per reading (corrected 2026-08-05, see §3).** *Inexhaustible, once a set is declared:* an uncountable set admits no list `x₀,x₁,…` containing all its elements; Cantor's theorem supplies indefinitely larger set-sized horizons. *Pre-countable, before distinction:* a **proper class** — not a set, assigned no cardinality, its size not merely unknown but ill-formed in the theory. | Numerical `0` does not have uncountable cardinality, and the Ground is not declared to be a set. **And uncountability may not be used for the pre-countable reading:** it is *defined by* countability, so it is the most countability-dependent notion available and the worst image of countability being inapplicable. |
 | **Infinity is infinitely countable.** | A traversal can always take another finite step, yet has no last step. | `ℕ` is countably infinite; its successor process `n ↦ n+1` has no terminal natural number. | This stipulation does not redefine every standard mathematical use of “infinity.” |
 | **Finity has a limit that can be approached.** | A process is answerable to a declared ordinary, non-extended boundary and can enter every prescribed neighborhood of it. | In a metric space, `xₙ→L` when every `ε>0` is eventually respected; here the Finity reading requires an ordinary, non-extended `L∈X`. | A limit is not present merely because a story says “approach,” and the limit need not be the numeral `1`. |
 
@@ -177,6 +177,51 @@ infinity. `[A]`
 Emergentism reads that mathematics as an image of inexhaustibility `[I]`. It
 does not infer that the Ground is a power set, a cardinal, or a completed
 mathematical object.
+
+> **CORRECTION, 2026-08-05 — the pre-distinction slot had no named neighbour,
+> and uncountability was never the right candidate for it.** The paragraph above
+> is retained unchanged: it is correctly fenced, it is scoped to *"once a set has
+> been declared,"* and it says *"not an identity with the Ground."* Nothing in it
+> is withdrawn.
+>
+> What was missing is a neighbour for the **other** reading in this section —
+> `pre-countable`, the state *before* a distinction has been drawn, where
+> countability is inapplicable rather than merely unsuccessful. That slot was
+> empty, and uncountability was silently doing double duty in it. It cannot:
+> **`uncountable` is *defined by* countability** — it means precisely that no
+> enumeration indexed by `ℕ` exhausts the set — so it is the most
+> countability-*dependent* notion available, and therefore the worst available
+> image of countability being inapplicable. Using it there was an aesthetic
+> match, not a structural one.
+>
+> **The structural neighbour is the proper class.** In `NBG`/`MK`, a proper class
+> is a collection that is not a set; it is not assigned a cardinality, and the
+> question of its size is not merely unanswered but ill-formed within the
+> theory. That is the shape `pre-countable` was reaching for. `[A]`
+>
+> Cantor drew the same line himself, and kept it apart from the transfinite
+> arithmetic he is famous for: he distinguished *consistent* multiplicities
+> (sets, which have cardinals) from **inconsistent or absolutely infinite**
+> multiplicities — the collection of all ordinals among them — which cannot be
+> gathered into a completed unity at all. His own framing of the Absolute was
+> explicitly theological. `[B]`
+>
+> **Tier discipline on this correction.** The proper-class statement is `[A]`
+> and is the load-bearing one. *"Cantor's Absolute Infinite"* is `[B/I]` — a
+> historical and interpretive convergence, **not** a theorem, and not a warrant.
+> That Cantor also placed something unnameable outside the system he built is
+> **interesting company, not evidence.** Do not upgrade it.
+>
+> Both neighbours now stand, for two different readings, and must not be
+> substituted for one another:
+>
+> ```text
+> pre-countable   (before distinction)  →  proper class / not-a-set     [A]
+> inexhaustible   (after a set is declared) →  uncountability, Cantor's theorem  [A]
+> ```
+>
+> Neither is an identity with the Ground. Receipt:
+> `../../11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md`
 
 ## 4. The horizon-facing Titan: Infinity as count without end
 

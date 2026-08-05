@@ -83,8 +83,13 @@ things the base grants.
 
 **And the primitive's UNIQUENESS is not a free choice `[A]`.** `ι(x) = x` has
 exactly one solution on `ℚ⁺`, and it is `1`. There is no second candidate.
-*(Machine-checked as `unique_positive_fixed_point`,
-`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`.)*
+*(The Lean theorem `unique_positive_fixed_point`,
+`09_TOOLS/05_FORMAL_VERIFICATION/EmergentismCheck.lean`, is stated over **`ℝ`
+with `0 < x`**, i.e. `ℝ⁺` — **not** `ℚ⁺`. Since `ℚ⁺ ⊂ ℝ⁺`, uniqueness on the
+superset **entails** the `ℚ⁺` claim by restriction; the direction is safe. What
+is machine-checked is the `ℝ⁺` statement. The restriction step is one line of
+ordinary reasoning and is **not** itself in the Lean file, so "machine-checked"
+should not be said flatly of the `ℚ⁺` claim. Scope stated 2026-08-05.)*
 
 > **CORRECTED 2026-07-30, and it is the `F2` error a second time.** This passage
 > read: *"You do not choose `1` — you choose `ι`, and `1` arrives as the only thing

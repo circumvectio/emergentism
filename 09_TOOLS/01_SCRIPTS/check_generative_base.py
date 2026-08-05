@@ -15,7 +15,17 @@ Exits 0 if the bounded regressions pass, 1 otherwise.
 WHY THIS EXISTS. The first statement of G2 in conversation was FALSE — it said
 each value has exactly one word, ignoring that iota-iota is the identity, so
 every word has infinitely many longer twins. The reduced-word repair is tested
-here over finite bounds; a complete injectivity proof remains a separate duty.
+here over finite bounds.
+
+G2 IS NO LONGER OPEN (2026-08-05). The line that stood here — "a complete
+injectivity proof remains a separate duty" — is discharged. G2 is the uniqueness
+of the finite simple continued fraction with last partial quotient >= 2 (Hardy &
+Wright, Theory of Numbers, Ch. X), i.e. inherited prior art, not a corpus result.
+Proof: 05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md. The
+structural check that pins the reason, with a mutation harness, is the sibling
+script check_g2_normal_form.py. This script remains a bounded regression over the
+base's other properties and should not be cited as the warrant for uniqueness --
+that warrant is the citation, not this enumeration.
 """
 
 from __future__ import annotations
