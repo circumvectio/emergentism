@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 814,
+  "entry_count": 815,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism is a fallibilist worldview about constraint, degrees of freedom,",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3600,
+      "tracked_file_count": 3617,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "Session handoffs and release receipts, one dated directory each. The `YYYY_MM_DD` prefix is",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 54,
+      "tracked_file_count": 56,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -259,7 +259,7 @@
       "owns": "This lane owns routing and claim custody, not new cosmology.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 96,
+      "tracked_file_count": 98,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -337,7 +337,7 @@
       "owns": "00_META/registers — FILE_REGISTER + FOLDER_REGISTER + CLAIM_CARD_REGISTER + CLAIM_GRAPH + CLAIM_LIFECYCLE_INVENTORY",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 6,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -701,7 +701,7 @@
       "owns": "05_COSMOLOGY — model architecture",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 137,
+      "tracked_file_count": 140,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -727,7 +727,7 @@
       "owns": "The Transcendental Trinity — active route",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 50,
+      "tracked_file_count": 52,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -753,7 +753,7 @@
       "owns": "> **[金] reconciliation — 2026-07-20.** The triadic frame is selected, not",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 52,
+      "tracked_file_count": 53,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -805,7 +805,7 @@
       "owns": "08_FRAMEWORK_SUPPORT — translation and stress tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 259,
+      "tracked_file_count": 260,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -909,7 +909,7 @@
       "owns": "This folder is the evidence root for Rosetta, paradox dissolutions, and comparative support materials.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 142,
+      "tracked_file_count": 143,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -961,7 +961,7 @@
       "owns": "Rosetta Stone — Method Front Door",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 95,
+      "tracked_file_count": 96,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1117,7 +1117,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 223,
+      "tracked_file_count": 224,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1130,7 +1130,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 42,
+      "tracked_file_count": 43,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7839,6 +7839,19 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 6,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "14_THE_DISTILLATION",
+      "type": "other",
+      "nearest_front_door": "14_THE_DISTILLATION/README.md",
+      "front_door_requirement": "present",
+      "owns": "The Second Churning — what stands, as of 2026-08-05",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 8,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
