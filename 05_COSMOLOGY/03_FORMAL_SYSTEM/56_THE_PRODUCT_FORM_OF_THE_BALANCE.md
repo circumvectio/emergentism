@@ -8,9 +8,9 @@ rosetta:
   register: "[A/I]"
   canonical_phrase: "B is a product of the two distances to the poles"
 title: "The Product Form of the Balance"
-status: "ACTIVE — [A] identity, elementary. The mathematics is the double-angle formula. The contribution is the reading, and it is [I]. This document does NOT reopen the lowercase-to-uppercase transfer that 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md closed."
+status: "ACTIVE — [A] identity, elementary. The mathematics is the double-angle formula. The contribution is the reading, and it is [I], restored 2026-08-06 at [B] inherited-cite (Nash 1950, Sonnevend 1985/86, product t-norm, series reliability) after a fair re-adjudication found the prior strike over-corrected. The reading stands narrowed: the product-of-margins-as-AND is inherited and cited, not novel. This document does NOT reopen the lowercase-to-uppercase transfer that 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md closed."
 date: 2026-08-05
-evidence_tier: "[A] the chordal identity and the AM-GM-HM chain, both classical; [I] the reading of the two factors as distances-from-failure; [S] the chordal metric as the selected metric on the sphere"
+evidence_tier: "[A] the chordal identity and the AM-GM-HM chain, both classical; [B] the reading of the two factors as distances-from-failure (inherited: Nash, Sonnevend, product t-norm — cited, not novel); [S] the chordal metric as the selected metric on the sphere"
 owner: "Subordinate to 00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md, which governs what may and may not be transferred off this chart. This document adds a decomposition of B and claims nothing about Φ, V, or P_node beyond §5."
 parents:
   - ../00_THE_BALANCE_OPTIMUM_IS_CONDITIONAL.md
@@ -192,12 +192,27 @@ sphere is standard complex analysis (Ahlfors, *Complex Analysis*, ch. 1). The
 AM–GM–HM chain and the `min`/`HM` two-sided bound are classical inequalities.
 **Nothing in §2–§4 is new mathematics and this document does not claim any.**
 
-> **[REPLACED 2026-08-05.]** This paragraph claimed the reading of `B` as a
-> product of margins was *"the corpus's own and is `[I]`"*, anchored to
-> `55_G2_PRIOR_ART_ADJUDICATION.md` §7 as "an expository identification of the
-> same class." **That anchor is now a tombstone**: `55` §7 was the `[I]` struck
-> as false the same night, and it ends *"Nothing here is `[I]` and nothing here
-> is owned."* This document cited the corpus's own retraction as its warrant.
+> **[REPLACED 2026-08-05; SCOPE CORRECTED 2026-08-06 after a fair re-hearing.]**
+>
+> This paragraph originally claimed the reading of `B` as a product of margins
+> was *"the corpus's own and is `[I]`"*, anchored to
+> `55_G2_PRIOR_ART_ADJUDICATION.md` §7. **The ownership claim was wrong and the
+> anchor is a tombstone** — `55` §7 was struck the same night. That much stands.
+>
+> **But the first strike over-corrected, and the correction is recorded here.**
+> It was produced by a referee panel instructed *"your DEFAULT IS REFUTED"* and
+> fed a running tally of prior refutations — a ratchet that returned 18 kills in
+> 18 hearings, zero survivals. A balanced re-hearing on 2026-08-06, with truth /
+> ownership / typing scored on **separate** axes and `STANDS` a live verdict,
+> ruled this claim **TRUE_AS_QUALIFIED · INHERITED_CITE · WELL_TYPED ·
+> STANDS_NARROWED**.
+>
+> **Inherited-and-cited is a footnote, not a strike.** The project's stated
+> mission is a coherent weltanschauung, *not* priority — so prior art is a
+> citation obligation, and the reading below is restored at `[B]` rather than
+> withdrawn. What does **not** come back is the word "own", and what does not
+> come back is the struck AND-sentence in §3, which was false for a separate
+> reason (vanishing-at-zero is not non-compensation).
 
 **The reading of the two factors as distances-from-failure, and of their product
 as a conjunction, is `[B]` — attribution, not contribution.** Owners:

@@ -19,8 +19,65 @@ supersedes: "07_THEOLOGY/00_THE_AMRITA.md (2026-07-03, recovery-integrated 2026-
 
 ## The headline
 
-**§01 holds 21 entries. ~~One of them is owned by this corpus.~~ As of
-2026-08-05, ZERO are.**
+**§01 holds 21 entries.** How many are "owned by this corpus" was the headline
+here until 2026-08-06. **It should not have been, and it no longer is.**
+
+> **[HEADLINE REPLACED 2026-08-06.]** The ownership ledger measures the wrong
+> variable. The project's stated mission is *"not to be the first — to create a
+> coherent and consistent weltanschauung"*, so an inherited result is a
+> **citation obligation, not a defect**. Worse, the ledger is *structurally
+> blind* to where this corpus's own property actually lives: the **5 priced
+> selections** in §1C — each carrying a named rival's bill (wheels, IEEE-754,
+> involutive meadows, common meadows, `ℝP¹`/`ℂP¹`) — and the **3 readings** in
+> §1D. A selection has no external owner to name, so counting owners cannot see
+> it.
+>
+> Zero-owned is therefore not a bad result. **It is an uninformative one.** It
+> cannot distinguish a healthy synthesis (inherited parts, original joints) from
+> a bibliography (inherited parts, no joints) — and those are the only two
+> states that matter.
+>
+> *(Factual note, unchanged: the single formerly-owned entry, item 1, was
+> genuinely refuted — `SιιS` decides it — and a balanced re-hearing on
+> 2026-08-06 confirmed that strike as one of only 3 kills out of 18. It was the
+> strike that was right and the scoreboard that was wrong.)*
+
+## The headline, replaced: the contradiction census
+
+**How long does a ruling take to reach every surface that carries it?**
+
+```text
+⊙ = • × ○     RETIRED 2026-08-01 as ill-typed
+              measured 2026-08-06, five days later:
+
+              107  live files still carry it   (excluding 90_ARCHIVE)
+               16  of them in 12_PUBLIC_SITE
+                1  of them a live .html page
+              280  in 90_ARCHIVE — correct, archives preserve
+
+              same-day repair moved the HTML count 349 → 1
+```
+
+**Recompute it; never quote it.** The figure first proposed for this headline
+was "362 files", and it was wrong by a factor of three — caught only because it
+was recomputed before publishing. That is the metric demonstrating its own
+necessity, and it is why the count is printed with the command that produces it:
+
+```bash
+grep -rl "⊙ = • × ○" . --exclude-dir=90_ARCHIVE --exclude-dir=.git | wc -l
+```
+
+Two further metrics belong beside it and are **not yet instrumented**: *joint
+density* (what fraction of a load-bearing argument's joints are this corpus's
+own composition choices, as opposed to its imported components), and *live-gate
+integrity* (what fraction of declared checks both execute and go red when a
+fault is deliberately seeded — currently poor: `check_foundation.py` exits `1`
+on a `NameError`, which is a gate that can neither pass nor fail).
+
+And the same sweep data, inverted: not *"how many results are ours"* but
+**"what fraction of inherited results name their owner at point of use."**
+Target 100%. Same data, opposite sign, and it measures a duty the project
+actually has.
 
 > **[STRUCK 2026-08-05]** The single owned entry — item 1 below — was refuted
 > the same day, by adversarial review of the very sentence this folder was

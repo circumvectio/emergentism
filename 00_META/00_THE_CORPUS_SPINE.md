@@ -132,9 +132,37 @@ identity is asserted at either end.
 `•` is where counting cannot begin; D0 is the ground-limit before articulated
 distinction. `○` is where counting cannot complete; D6 is apophatic exit with
 no further positive freedom. The correspondence is natural, it agrees with the
-sphere's `•`/`○` being **distinct** (antipodal, chordal distance 2 — and
-`07_MIRROR_SYMMETRY_FALSIFICATION_TEST` §0: "the south and north poles are
-distinct; there is no `L0=L∞` pole-meeting"), and it agrees with `D6 ≢ D0`.
+sphere's `•`/`○` being **distinct** (`07_MIRROR_SYMMETRY_FALSIFICATION_TEST`
+§0: "the south and north poles are distinct; there is no `L0=L∞`
+pole-meeting"), and it agrees with `D6 ≢ D0`.
+
+> **[ANTIPODALITY CLAUSE CORRECTED 2026-08-06 — twice.]** This line first read
+> *"antipodal, chordal distance 2 — the farthest apart two points can be."*
+>
+> **First correction (wrong):** struck on the ground that chordal distance is
+> not `PGL₂(ℂ)`-invariant — `z ↦ z+1` carries `{0,∞}` to distance `√2` — so
+> antipodality "discriminates nothing."
+>
+> **That argument fails.** The corpus never declared Möbius as its symmetry
+> group; `56` §2 declares the **chordal metric at `[S]`** and fixes `○` at
+> `θ=0`, `•` at `θ=π`. Non-invariance under a group you did not adopt refutes
+> nothing — the Earth's poles do not stop being antipodal because a
+> diffeomorphism can move them. A fair re-hearing ruled the claim
+> **TRUE_AS_QUALIFIED · STANDS_NARROWED**, not dead.
+>
+> **The real defect is corpus-internal and needs no external premise.** The
+> corpus's own successor is `S = [[1,1],[0,1]]` — precisely the map `z ↦ z+1`
+> that breaks the chordal metric — and it acts on these very objects, with
+> `S(•) = 1`. **The corpus cannot declare the round metric as fixed structure
+> and simultaneously operate on those points with a group that does not
+> preserve it.** That is a coherence defect the corpus generates itself.
+>
+> **Therefore, what may be written:** `•` and `○` are **distinct**, which is
+> what the ordering needs and all it needs. Their chordal separation is `2`
+> **inside the declared `[S]` chart** — true there, and not citable as
+> structural. The word "farthest" stays struck: it is
+> radius-convention-dependent, and the type question (`NoCoercion(TitanFrame,
+> ProjectivePoint)`) is open regardless of the metric argument.
 
 **It is `[I]` and the index does not depend on it.** If the correspondence is
 withdrawn, the spine remains `D0…D6` and every query still works. It is written

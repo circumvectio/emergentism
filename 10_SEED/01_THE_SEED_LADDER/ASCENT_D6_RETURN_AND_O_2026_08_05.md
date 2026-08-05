@@ -166,19 +166,21 @@ structurally inverse, not identical.**
 The geometry agrees: `•` and `○` are antipodal, chordal distance 2, the
 full diameter of the sphere — the farthest apart two points can be.
 
-> **⚠ STRUCK 2026-08-05 — the antipodality sentence above is refuted; kept as
-> provenance.** `PGL₂(ℂ)` is 2-transitive: **every** distinct pair on `ℂP¹` is
-> Möbius-equivalent to an antipodal pair, so antipodality discriminates no pair
-> of distinct points from any other — true of everything, defines nothing.
-> Verified directly: `z ↦ z+1` carries `{0,∞}` to chordal distance `1.414`;
-> `z ↦ z+10` to `0.199`; the antipodal map `z ↦ −1/z̄` is anti-holomorphic —
-> not a Möbius map at all; the antipodality-preserving subgroup
-> `PSU(2) ≅ SO(3)` is 3 real dimensions inside `PGL₂(ℂ)`'s 6 — measure zero.
-> Writing `d(•,○) = 2` is moreover a **type violation** — coercing Titan marks
-> into metric-equipped projective points, the identical move that killed
-> `⊙ = • × ○` — and the base's own successor destroys it: `S` is a translation,
-> and a metric is as much an operation on operands as a product is.
-> **What survives:** `• ≠ ○` — distinctness is Möbius-invariant and structural —
+> **⚠ STRUCK 2026-08-05, RE-ARGUED 2026-08-06 on corpus-internal grounds.**
+> The prior strike mechanism (Möbius 2-transitivity → "discriminates nothing")
+> is the wrong argument: the corpus never declared Möbius as its symmetry
+> group, and the Earth's poles don't stop being antipodal because a
+> diffeomorphism can move them. The **real** defect is corpus-internal and
+> needs no external premise:
+>
+> `S = [[1,1],[0,1]]` — the corpus's own successor operator — IS the map
+> `z ↦ z+1` that does not preserve the round metric, and `S(•) = 1`. The
+> corpus cannot declare the chordal metric as fixed structure (`[S]`)
+> and then operate on those points with a group that doesn't preserve it.
+> A metric is as much an operation on operands as a product is — the
+> identical type violation that killed `⊙ = • × ○`.
+>
+> **What survives:** `• ≠ ○` — distinctness is structural and type-safe —
 > and the opposite-refusals content, which rests on **absorption**
 > (`V ∪ {x} = V`, Dedekind 1888) with no geometry in it at all. The ontology
 > was never resting on the picture.
