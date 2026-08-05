@@ -84,6 +84,29 @@ selected construction. It does not assert a technical `μ`-crossing or a new
 effective freedom. Each technical emergence claim remains separately testable
 under `KSC-05`.
 
+### SELECTED RELATIONAL PRESENTATION — abstract group notation, not Titan arithmetic
+
+```text
+R1  select a group signature and laws: a carrier G, an associative operation
+    ·:G×G→G, a two-sided identity e, and inverse operation inv:G→G.
+R2  select a generator a∈G; write a⁻¹:=inv(a).
+R3  selecting the free group on {a} yields an infinite cyclic group isomorphic
+    to ℤ. Other groups satisfy R1. Freeness and any link to D1 are selected,
+    not forced by identity and inversion alone.
+```
+
+### SELECTED REACHABILITY PRESENTATION — a distinct candidate, not equivalent by fiat
+
+```text
+G0  carrier ℚ⁺, seed 1, operations S(x)=x+1 and ι(x)=1/x.
+    Finite words reach positive rationals. They do not reach negatives,
+    irrationals, 0, ∞, the sphere, or the D-registers without declared extensions.
+```
+
+These two presentations are **distinct candidates, not equivalent by fiat.**
+The relational presentation (R1–R3) and the reachability presentation (G0)
+are separately selected. Neither is a derivation of the other.
+
 ## 3 · `R0` — the foundational refusal `[S]`
 
 > **R0 · No necessary being.** Emergentism refuses to treat existence as
@@ -266,6 +289,7 @@ The stronger reciprocity remains an interpretation without a proof.
 | Claim | Tier | Kill or discriminator |
 |---|---|---|
 | `R0` refuses necessary being | `[S]` | a sound argument for a necessary being |
+| a two-sided identity, if present, is unique | `[A]` | exhibit a structure with two two-sided identities |
 | `B1–B3` define the typed witness | `[S]` | a clause is shown ill-typed or inconsistent |
 | inverse and identity equations follow in the witness | `[A]` | a valid group counterexample |
 | the free witness is isomorphic to `ℤ` | `[A/S]` | the declared free construction fails, or a different witness is silently substituted |
