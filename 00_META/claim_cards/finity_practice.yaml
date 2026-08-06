@@ -1,20 +1,22 @@
 {
-  "schema": "emergentism/claim-card-set/v1",
+  "schema": "emergentism/claim-card-set/v2",
   "work_id": "BK-FINITY-PRACTICE",
   "source": {
     "path": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
     "lifecycle": "active",
-    "role": "practical_source_owner"
+    "role": "practical_source_owner",
+    "reviewed_source_sha256": "f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d"
   },
   "cards": [
     {
       "card_id": "FIN01-01",
       "chapters": ["finity-card"],
-      "locator": {"section": "3B", "line_start": 131, "line_end": 150},
+      "locator": {"section": "3B", "line_start": 131, "line_end": 150, "anchor": "**Finity Card**", "fingerprint_sha256": "89d9731dd23e727c64c91c9ab16f9b1854e97eab5525238cee8a6df5cffffe78"},
       "plain_claim": "The Finity Card is a selected seven-prompt compression of the Lived Compass for framing a decision, not an authorization or a proven improvement in decision quality.",
       "claim_type": "stipulation",
       "evidence": [{"tier": "S", "scope": "chosen worksheet and source-owned practice definition"}],
-      "owner_ids": ["K-5"],
+      "semantic_owner_id": "K-5",
+      "supporting_owner_ids": [],
       "dependencies": ["OS01-08", "OS01-13", "OS01-22"],
       "docket_ids": ["A3", "A5"],
       "type_boundaries": [
@@ -46,11 +48,12 @@
     {
       "card_id": "FIN01-02",
       "chapters": ["comparative-adequacy"],
-      "locator": {"section": "3B", "line_start": 152, "line_end": 158},
+      "locator": {"section": "3B", "line_start": 152, "line_end": 158, "anchor": "selected practice `[S]`", "fingerprint_sha256": "6cb96076c6241af231076cd9605a16066d2b20406abaae1a2c0ee82173faffa6"},
       "plain_claim": "The Finity Card may improve decision correction and bearer visibility, but any incremental benefit must be established against fair simpler rivals.",
       "claim_type": "conjecture",
       "evidence": [{"tier": "C", "scope": "comparative decision-practice benefit"}],
-      "owner_ids": ["K-4"],
+      "semantic_owner_id": "K-4",
+      "supporting_owner_ids": [],
       "dependencies": ["FIN01-01"],
       "docket_ids": ["A3", "A5"],
       "type_boundaries": [

@@ -434,8 +434,15 @@ class FinityPracticeGateTests(unittest.TestCase):
         source = self.corpus_path(definition["path"])
         self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), definition["sha256"])
         self.assertEqual(self.cards_doc["source"]["path"], definition["path"])
+        # v2 contract: cards declare a singular semantic_owner_id plus an optional
+        # supporting_owner_ids list; the gate registry's plural mapping must equal
+        # the union of those two, in that order. Empty supporting list is normal.
         self.assertEqual(
-            {card_id: self.cards[card_id]["owner_ids"] for card_id in self.registry["claim_card_ids"]},
+            {
+                card_id: [self.cards[card_id]["semantic_owner_id"]]
+                + list(self.cards[card_id].get("supporting_owner_ids", []))
+                for card_id in self.registry["claim_card_ids"]
+            },
             self.registry["semantic_owner_ids"],
         )
 
@@ -759,9 +766,21 @@ class FinityPracticeGateTests(unittest.TestCase):
     def test_claim_card_locators_dereference_definition_and_retirement(self) -> None:
         source = self.corpus_path(self.cards_doc["source"]["path"])
         lines = source.read_text(encoding="utf-8").splitlines()
+        # v2 contract: locator carries section + line range + anchor (must
+        # appear in the slice) + fingerprint_sha256 (must equal the slice's
+        # SHA-256). These are read together; the v1 line range is preserved
+        # verbatim from the original card.
         expected = {
             "FIN01-01": {
-                "locator": {"section": "3B", "line_start": 131, "line_end": 150},
+                "locator": {
+                    "section": "3B",
+                    "line_start": 131,
+                    "line_end": 150,
+                    "anchor": "**Finity Card**",
+                    "fingerprint_sha256": (
+                        "89d9731dd23e727c64c91c9ab16f9b1854e97eab5525238cee8a6df5cffffe78"
+                    ),
+                },
                 "markers": (
                     "## 3B. The Finity Card",
                     "**Finity Card**",
@@ -771,7 +790,15 @@ class FinityPracticeGateTests(unittest.TestCase):
                 ),
             },
             "FIN01-02": {
-                "locator": {"section": "3B", "line_start": 152, "line_end": 158},
+                "locator": {
+                    "section": "3B",
+                    "line_start": 152,
+                    "line_end": 158,
+                    "anchor": "selected practice `[S]`",
+                    "fingerprint_sha256": (
+                        "6cb96076c6241af231076cd9605a16066d2b20406abaae1a2c0ee82173faffa6"
+                    ),
+                },
                 "markers": (
                     "selected practice `[S]`",
                     "remains `[C]`",
@@ -785,6 +812,14 @@ class FinityPracticeGateTests(unittest.TestCase):
             self.assertEqual(locator, contract["locator"])
             start, end = locator["line_start"], locator["line_end"]
             chunk = "\n".join(lines[start - 1 : end])
+            # v2 contract: the anchor must appear in the declared slice
+            self.assertIn(locator["anchor"], chunk, f"{card_id}: anchor")
+            # v2 contract: the fingerprint must equal the slice's SHA-256
+            self.assertEqual(
+                locator["fingerprint_sha256"],
+                hashlib.sha256(chunk.encode("utf-8")).hexdigest(),
+                f"{card_id}: fingerprint",
+            )
             for marker in contract["markers"]:
                 self.assertIn(marker, chunk, f"{card_id}: {marker}")
             preceding_heading = next(
@@ -800,6 +835,11 @@ class FinityPracticeGateTests(unittest.TestCase):
             r"\|\s*`(?P<id>FIN01-\d{2})`\s*\|\s*Lived Compass §(?P<section>[^,]+), "
             r"lines (?P<start>\d+)–(?P<end>\d+)\s*\|"
         )
+        # The receipt table is a human-readable locator summary. The v2 card
+        # adds anchor and fingerprint_sha256 for machine verification; the
+        # receipt only needs to match the v1 fields (section + line range)
+        # since anchor and fingerprint live in the v2 card and are checked
+        # by the v2 compiler, not by the receipt.
         rows = {
             match.group("id"): {
                 "section": match.group("section"),
@@ -810,7 +850,10 @@ class FinityPracticeGateTests(unittest.TestCase):
         }
         self.assertEqual(set(rows), {"FIN01-01", "FIN01-02"})
         for card_id, locator in rows.items():
-            self.assertEqual(locator, self.cards[card_id]["locator"])
+            card_locator = self.cards[card_id]["locator"]
+            self.assertEqual(locator["section"], card_locator["section"], card_id)
+            self.assertEqual(locator["line_start"], card_locator["line_start"], card_id)
+            self.assertEqual(locator["line_end"], card_locator["line_end"], card_id)
             self.assertEqual(
                 self.cards[card_id]["review"]["scope"],
                 "source_type_owner_rival_kill_and_public_ceiling_only",
