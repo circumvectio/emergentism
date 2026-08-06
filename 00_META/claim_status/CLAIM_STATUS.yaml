@@ -1358,7 +1358,7 @@
     }
   ],
   "owner_reopening": {
-    "instruction": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes.",
+    "ruling": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
     "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
     "what_it_does_not_do": "A ruling cannot delete a counterexample or its later scope correction. Reopening means the question is live again, not that the prior form is true or that an over-broad falsifier becomes evidence.",

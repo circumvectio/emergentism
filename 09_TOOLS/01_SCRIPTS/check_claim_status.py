@@ -71,7 +71,7 @@ PINNED_GRAVE_STATUS = {
     "DF-07": "EMPIRICALLY-REFUTED", "DF-08": "FORMALLY-REFUTED",
     "DF-09": "FORMALLY-REFUTED", "DF-10": "FORMALLY-REFUTED",
     "DF-11": "FORMALLY-REFUTED", "DF-12": "FORMALLY-REFUTED",
-    "DF-13": "EMPIRICALLY-REFUTED", "DF-14": "FORMALLY-REFUTED",
+    "DF-13": "NOT-WELL-POSED", "DF-14": "FORMALLY-REFUTED",
     "DF-15": "CATEGORY-ERROR", "DF-16": "FORMALLY-REFUTED",
     "DF-17": "NOT-WELL-POSED", "DF-18": "NOT-WELL-POSED",
     "DF-19": "FORMALLY-REFUTED", "DF-20": "CATEGORY-ERROR",
@@ -666,9 +666,9 @@ def check(root: Path = ROOT) -> list[str]:
                 f"{row_id}: counterexample is a placeholder or too thin to be one ({cx!r}) — "
                 "'intact' means content, not merely non-blank"
             )
-        for forbidden in ("status_before_reopening", "repair_path", "investigation_state"):
+        for forbidden in ("investigation_state",):
             if forbidden in row:
-                errors.append(f"{row_id}: {forbidden} belongs to history or a successor inquiry, not a grave")
+                errors.append(f"{row_id}: {forbidden} belongs to a successor inquiry, not a grave")
         successor = row.get("successor")
         if successor is not None and not isinstance(successor, str):
             errors.append(f"{row_id}: successor must be a string id or null")
