@@ -54,6 +54,14 @@ and `•` at `θ = π`. Use the **chordal** metric — the straight-line distanc
 through the sphere, which is the metric on which `•` and `○` are antipodal at
 distance `2`. `[S]`
 
+> **FENCE 2026-08-06.** The seats are named as the poles of the declared
+> sphere for this chart; the metric is on the sphere, and the seats are not
+> its operands. "Antipodal at distance 2" is a property of the declared chart,
+> not a relation between Titan marks, and the 2026-08-06 ruling struck the
+> ontological use of antipodality (it discriminates nothing; the
+> opposite-refusals content rests on absorption, not geometry). The
+> decomposition below uses the chart's poles; it does not measure the seats.
+
 The chord subtending polar angles `θ` and `0` has length `2 sin(θ/2)`; the
 chord subtending `θ` and `π` has length `2 cos(θ/2)`. Normalise each so that
 it reads `1` at the equator:

@@ -173,12 +173,14 @@ full diameter of the sphere — the farthest apart two points can be.
 > diffeomorphism can move them. The **real** defect is corpus-internal and
 > needs no external premise:
 >
-> `S = [[1,1],[0,1]]` — the corpus's own successor operator — IS the map
-> `z ↦ z+1` that does not preserve the round metric, and `S(•) = 1`. The
-> corpus cannot declare the chordal metric as fixed structure (`[S]`)
-> and then operate on those points with a group that doesn't preserve it.
-> A metric is as much an operation on operands as a product is — the
-> identical type violation that killed `⊙ = • × ○`.
+> `S = [[1,1],[0,1]]` — the corpus's own successor operator — acts on the
+> affine chart as `z ↦ z+1`, and that translation does not preserve the
+> chordal metric. The seats name the limiting directions of the translation,
+> not points it is applied to — so the disagreement is stated without
+> operating on the seats: the corpus declares the chordal metric as fixed
+> structure (`[S]`) and an operation on interior values that does not
+> preserve it. *(Self-correction 2026-08-06: the prior wording applied `S`
+> to `•` — the same coercion this kill convicts; struck here.)*
 >
 > **What survives:** `• ≠ ○` — distinctness is structural and type-safe —
 > and the opposite-refusals content, which rests on **absorption**

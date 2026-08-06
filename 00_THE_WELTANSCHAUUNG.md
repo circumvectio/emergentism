@@ -34,6 +34,12 @@ state, actuality, possibility, the Soul Loop, collective traces, the human
 condition, the Good and the Exit. This document remains the technical Door and
 claim-boundary reference; the seven kernel owners retain semantic authority.
 
+**The one-paragraph answer:** the keystone states the ontology as an answer,
+not only as apparatus —
+[`06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` §6, "The one-paragraph Weltanschauung"](06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md).
+Routed 2026-08-06: the answer existed with no path to it; the index's disease,
+not the thinking's.
+
 ---
 
 ## 1 · The Creed, priced
