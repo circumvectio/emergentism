@@ -221,7 +221,22 @@ MENTION_MARKERS = re.compile(
     r"clause|document|edition|version)s? (?:first|previously|once) "
     r"(?:read|carried|said)|read backwards|prior edition|earlier reading|"
     r"is false|are false|is wrong|written wrongly|not a theorem|"
-    r"reinstate|violate",
+    r"reinstate|violate|"
+    # P2.2 (2026-08-06): corpus uses these in the same role as `not an operand`
+    # — the row or paragraph explains why a Titan token does not perform a role.
+    # `not load-bearing` extends `not a theorem` to a deliverable-level claim;
+    # `level error` extends `category error` to a level-mismatch explanation;
+    # `no item` and `member of nothing` extend `not a member of the domain` to
+    # a row that explains the absence; `labels the lower boundary` and
+    # `in the field register` extend `not a member` to a register/exemplar
+    # boundary; `no salvage` extends `inadmissible` to a repair verdict; the
+    # `D•`/`D∞` "distance from" usage is excluded by `distance from` (the
+    # corpus's own convention for "this is a label, not a Titan operand").
+    r"is not load-bearing|not load-bearing|"
+    r"\bno item\b|member of nothing|level error|"
+    r"labels the lower boundary|labels the\b|in the field register|"
+    r"no salvage|"
+    r"distance from|claimed as nothing",
     re.I,
 )
 
@@ -232,8 +247,22 @@ _STRIKETHROUGH_RE = re.compile(r"~~.+?~~")
 
 # How far the prose framing a fenced block may sit from its fences. The 48
 # fence at :120-:124 is introduced at :118 and annotated from :126; four lines
-# covers both without letting an unrelated section leak in.
-FENCE_CONTEXT_LINES = 4
+# covers both without letting an unrelated section leak in. P2.2 (2026-08-06):
+# 56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:105 has the [STRUCK] annotation five
+# lines below the closing fence — the calibrated 4 leaves that mention invisible.
+# Six covers the 48 case (no unrelated section leaks in: 48's surrounding
+# region is also a retirement narrative) and catches the 56 case.
+FENCE_CONTEXT_LINES = 6
+
+# P2.2 (2026-08-06): paragraph blocks also gain a small context window so a
+# neighbouring block (typically the rung header in a <pre> or the caption
+# above a table) can carry the retirement marker. The 12_PUBLIC_SITE/0 rung
+# splits on blank lines inside <pre class="rung">; the marker at L57 ("never
+# an operand — the Titan frame has no arithmetic") must reach the
+# `absorption at ○ · ⊙ → 0` line at L62 — five lines apart. Five is the same
+# window the fence case uses and stays small enough that an unrelated
+# paragraph cannot rescue a real use.
+PARAGRAPH_CONTEXT_LINES = 5
 
 
 def _mention_blocks(lines: list[str]) -> list[tuple[int, int, str]]:
@@ -242,6 +271,9 @@ def _mention_blocks(lines: list[str]) -> list[tuple[int, int, str]]:
     Indices are 0-based and half-open. The context is what gets tested for a
     retirement marker; for a fenced block it also includes the prose that
     frames the fence, because that is where a corpus marks a quoted form dead.
+    P2.2 (2026-08-06): paragraph blocks now also carry a small context window
+    so a neighbour (typically the rung header inside a <pre> that splits on
+    blank lines) can carry the marker.
     """
 
     blocks: list[tuple[int, int, str]] = []
@@ -284,7 +316,15 @@ def _mention_blocks(lines: list[str]) -> list[tuple[int, int, str]]:
             and not _TABLE_RE.match(lines[stop])
         ):
             stop += 1
-        blocks.append((index, stop, "\n".join(lines[index:stop])))
+        # P2.2: paragraph blocks now carry PARAGRAPH_CONTEXT_LINES of context
+        # on each side so a retirement marker in a neighbouring paragraph
+        # (typical: the rung header inside a <pre> that splits on blank lines,
+        # or the caption above a table) reaches the carrier line. The table-row
+        # branch above is intentionally narrow — a struck row must not rescue
+        # the rows around it.
+        before = max(0, index - PARAGRAPH_CONTEXT_LINES)
+        after = min(total, stop + PARAGRAPH_CONTEXT_LINES)
+        blocks.append((index, stop, "\n".join(lines[before:after])))
         index = stop
     return blocks
 
