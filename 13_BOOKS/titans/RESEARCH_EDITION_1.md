@@ -3,7 +3,7 @@ title: "The Titans — The Infinite, Finity & Infinity"
 status: "STAGED RESEARCH EDITION — six chapters, 100% claim-card coverage; not a completed algebra"
 date: 2026-07-28
 evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
-claim_cards: [TIT01-01, TIT01-02, TIT01-03, TIT01-04, TIT01-05]
+claim_cards: [TIT01-01, TIT01-02, TIT01-03, TIT01-04, TIT01-05, TIT01-06]
 ---
 
 # The Titans
