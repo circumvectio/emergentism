@@ -1,0 +1,286 @@
+{
+  "generated_at": "2026-08-06T04:07:27+00:00",
+  "timeout_seconds": 60,
+  "excluded": [
+    "check_links.py",
+    "check_no_secrets_staged.py"
+  ],
+  "totals": {
+    "total": 25,
+    "pass": 7,
+    "fail": 15,
+    "hang": 0,
+    "error": 3,
+    "wall_seconds": 38.414
+  },
+  "longest": {
+    "gate": "check_g2_normal_form.py",
+    "wall_seconds": 8.452
+  },
+  "slowest": [
+    {
+      "gate": "check_g2_normal_form.py",
+      "wall_seconds": 8.452
+    },
+    {
+      "gate": "check_active_receipt_citations.py",
+      "wall_seconds": 6.225
+    },
+    {
+      "gate": "check_foundation.py",
+      "wall_seconds": 4.863
+    }
+  ],
+  "results": [
+    {
+      "gate": "check_active_receipt_citations.py",
+      "exit_code": 1,
+      "findings": 172,
+      "wall_seconds": 6.225,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "- new unregistered active exact target at 05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md:50: '242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md' -> 11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md\n- new unregistered active ambiguity at 08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md:125: 'receipt 109'\n- new unregistered active ambiguity at 08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md:126: 'receipt 109'\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md:125: '109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md' -> 11_UPLINK/50_AUDITS_AND_EXECUTIONS/109_THE_PROOF_LAYER_AUDIT_FOUR_FALSE_LEMMAS.md\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md:15: '135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md' -> 11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md:23: '135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md' -> 11_UPLINK/60_SESSION_PACKETS/135_EKTROPIC_FORCE_EVOLUTIONARY_TELEOLOGY_2026_04_24.md\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md:21: '100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md' -> 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md:48: '100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md' -> 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md\n- new unregistered active exact target at 08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md:87: '100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md' -> 11_UPLINK/50_AUDITS_AND_EXECUTIONS/100_ROSETTA_DRIFT_AND_OPERATOR_REGISTER_AUDIT_2026_07_02.md\n- ...and 142 more",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_adjudication_custody.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 0.041,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "ADJUDICATION CUSTODY: PASS (durable custody replay; 229 actionable findings; first=37/23; reviewed remaining=151/8/4/6; three frozen ledgers and Receipt 234 match their hashes)\n  scope: replays dated internal custody only; it does not re-adjudicate findings, read external raw journals, establish authority, or establish world contact.",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_barred_claims.py",
+      "exit_code": 1,
+      "findings": 4,
+      "wall_seconds": 0.672,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "BARRED CLAIMS: FAIL\n- 12_PUBLIC_SITE/2/index.html:89:retired untyped node product:P = \u03a6\u00d7V\n- 12_PUBLIC_SITE/4/index.html:192:retired untyped node product:P = \u03a6 \u00d7 V\n- 12_PUBLIC_SITE/5/index.html:154:Titan arithmetic:\u2299 = \u2022 \u00d7 \u25cb\n- 12_PUBLIC_SITE/5/index.html:155:retired untyped node product:P = \u03a6 \u00d7 V",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_claim_status.py",
+      "exit_code": 1,
+      "findings": null,
+      "wall_seconds": 0.052,
+      "verdict": "error",
+      "truncated": false,
+      "stdout_tail": "",
+      "stderr_tail": "             ^^^^^^^^^^^\n  File \"/Users/Yves/Documents/01_EMERGENTISM/09_TOOLS/01_SCRIPTS/check_claim_status.py\", line 705, in check\n    reopened_ids.add(row_id)\n    ^^^^^^^^^^^^\nNameError: name 'reopened_ids' is not defined. Did you mean: 'restored_ids'?"
+    },
+    {
+      "gate": "check_coherence_profile.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 0.039,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "COHERENCE PROFILE: PASS (overall_internal=PASS_WITH_DEBT; world_contact=OPEN)\n  scope: validates a typed declaration; it does not turn an internal gate into world-contact evidence",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_contact_limited.py",
+      "exit_code": 1,
+      "findings": null,
+      "wall_seconds": 0.776,
+      "verdict": "error",
+      "truncated": false,
+      "stdout_tail": "",
+      "stderr_tail": "                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/Yves/Documents/01_EMERGENTISM/09_TOOLS/01_SCRIPTS/check_claim_status.py\", line 705, in check\n    reopened_ids.add(row_id)\n    ^^^^^^^^^^^^\nNameError: name 'reopened_ids' is not defined. Did you mean: 'restored_ids'?"
+    },
+    {
+      "gate": "check_contradiction_census.py",
+      "exit_code": 1,
+      "findings": 422,
+      "wall_seconds": 2.193,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.2_CONTRADICTION_FIREWALL_00_META_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.2_SHADOW_SCAN_7_INSIGHTS_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.3_CONTRADICTION_FIREWALL_06_ONTOLOGY_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.3_RUTHLESSNESS_DOES_THE_FOUNDER_KEEP_IT_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1.4_CONTRADICTION_FIREWALL_11_12_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L1_CORPUS_CONTRADICTION_FIREWALL_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.2_CLAIM_VS_EVIDENCE_E1-10_W0-12_2026_07_20.md\n  00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/L2.2_DEEPEST_READING_PER_INSIGHT_2026_07_20.md\n  ... and 422 more (re-run this script to enumerate the full set)\nCENSUS: FAIL  (exit 1)",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_d6_equiv_d0.py",
+      "exit_code": 1,
+      "findings": 2,
+      "wall_seconds": 0.806,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "D6/D0 FENCE: FAIL\nLiteral D6/D0 equivalence on 2 live surface(s). Use D6~D0 [I], or have the owner ratify a canonical statement and set CANONICAL_OWNER_FILE in this script.\n- 00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md:232: literal D6/D0 equivalence on a live surface. Use the tilde form (D6~D0) with [I], or get an owner ruling. Line: 'D6\u2261D0 retraction argument. `[A]`'\n- 00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md:324: literal D6/D0 equivalence on a live surface. Use the tilde form (D6~D0) with [I], or get an owner ruling. Line: 'catalog to the live owner of the D6\u2261D0 retraction argument; matches WO-E3'",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_dead_citations.py",
+      "exit_code": 1,
+      "findings": 13,
+      "wall_seconds": 0.441,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "07_THEOLOGY/04_THE_PERENNIAL_LOOP.md:142: cites 07_THEOLOGY/00_THE_AMRITA.md\n    which declares: The Amrita\n07_THEOLOGY/README.md:49: cites 07_THEOLOGY/00_THE_AMRITA.md\n    which declares: The Amrita\n03_METHODOLOGY/02_THE_PAPERS/README.md:91: cites 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_FORMAL_SYNTHESIS.md\n    which declares: The Recursive Trivium \u2014 formal synthesis (Kintsugi successor)\n03_METHODOLOGY/02_THE_PAPERS/README.md:92: cites 03_METHODOLOGY/02_THE_PAPERS/THE_RECURSIVE_TRIVIUM_COMPETITIVE_NEURO_CLIODYNAMICAL_SYNTHESIS.md\n    which declares: The Recursive Trivium: Competitive, Neurobiological, and Cliodynamical\ncheck_dead_citations: 13 undisclosed dead citation(s) across 897 live document(s)\nA live index that sells a tombstone as a result is the corpus's named pathology.",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_emergentism_purity.py",
+      "exit_code": 1,
+      "findings": 984,
+      "wall_seconds": 4.47,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:151: forbidden authority token 'SKYZAI'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:151: forbidden authority token 'K2'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:152: forbidden authority token 'SKYZAI'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:152: forbidden authority token 'K2'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:153: forbidden authority token 'K2'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:153: forbidden authority token 'SKYZAI'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:154: forbidden authority token 'K2'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:155: forbidden authority token 'SKYZAI'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:159: forbidden authority token 'K2'\n03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_MOODS_BRIEFING.md:159: forbidden authority token 'K2'",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_established.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 2.367,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "ESTABLISHED LEDGER: PASS (20 Lean declarations linted, not compiled; bounded base regression passed; 10 G-rows indexed; 8 guarded exclusions intact)\n  scope: Lean half verified STRUCTURALLY (files, toolchain, count, no sorry). Proofs NOT re-run here \u2014 see receipt 182 (`182_C_HAT_IS_NOT_A_RING_MACHINE_CHECKED_2026_07_29.md`) for the build. The base half IS re-run.",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_forwarding_stubs.py",
+      "exit_code": 1,
+      "findings": 5,
+      "wall_seconds": 0.286,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "00_THE_DEAD_FORMS_CATALOG_v0.1.md: [R4] canonical_target points at another STUB: 00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md (which forwards to 90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md) \u2014 collapse the chain\n00_FOLDER_LAYOUT_v0.1.md: [R4] canonical_target points at another STUB: 00_META/00_FOLDER_LAYOUT_v0.1.md (which forwards to ../90_ARCHIVE/old_front_doors/00_FOLDER_LAYOUT_v0.1.md) \u2014 collapse the chain\n00_META/00_THE_TWELVE_RULINGS_2026_07_22.md: [R2] canonical_target points at a GRAVE: ../90_ARCHIVE/2026_07_28_corpus_reconstruction_w0/00_META/00_THE_TWELVE_RULINGS_2026_07_22.md \u2014 rename the field to historical_target\n00_META/00_FOUNDATION_READER_GUIDE.md: [R2] canonical_target points at a GRAVE: 90_ARCHIVE/old_front_doors/00_FOUNDATION_READER_GUIDE.md \u2014 rename the field to historical_target\n00_META/00_FOLDER_LAYOUT_v0.1.md: [R2] canonical_target points at a GRAVE: ../90_ARCHIVE/old_front_doors/00_FOLDER_LAYOUT_v0.1.md \u2014 rename the field to historical_target\ncheck_forwarding_stubs: 5 violation(s) across 79 stub(s)\nA stub holds a path, not a claim. Canon never points at a grave.",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_foundation.py",
+      "exit_code": 1,
+      "findings": 48,
+      "wall_seconds": 4.863,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "- 12_PUBLIC_SITE/0/index.html:62: forbidden Titan arithmetic or cross-type identification ((?:(?<![a-z0-9_])[a-z0-9_]+|[)\\]}\u03c6\u03bd\u2022\u2299\u25cb])\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7])\\s*(?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_])))\n- 12_PUBLIC_SITE/0/index.html:62: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:=|:=|\u21a6|\u2192|\u2245|\u2248)\\s*(?:(?<![a-z0-9_])[+-]?\\d+(?:\\.\\d+)?(?![a-z0-9_])|(?<![a-z0-9_])(?:0|1|\u221e)_[npe](?![a-z0-9_])|\\b(?:e|a|b|x|y|v|\u03c6|\u03bd)\\b))\n- 12_PUBLIC_SITE/0/index.html:63: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7]))\n- 12_PUBLIC_SITE/0/index.html:63: forbidden Titan arithmetic or cross-type identification ((?:(?<![a-z0-9_])[a-z0-9_]+|[)\\]}\u03c6\u03bd\u2022\u2299\u25cb])\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7])\\s*(?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_])))\n- 12_PUBLIC_SITE/6/index.html:53: forbidden Titan arithmetic or cross-type identification ((?:(?<![a-z0-9_])[a-z0-9_]+|[)\\]}\u03c6\u03bd\u2022\u2299\u25cb])\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7])\\s*(?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_])))\n- 12_PUBLIC_SITE/6/index.html:53: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7]))\n- 12_PUBLIC_SITE/6/index.html:53: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7]))\n- 12_PUBLIC_SITE/6/index.html:90: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:=|:=|\u21a6|\u2192|\u2245|\u2248)\\s*(?:(?<![a-z0-9_])[+-]?\\d+(?:\\.\\d+)?(?![a-z0-9_])|(?<![a-z0-9_])(?:0|1|\u221e)_[npe](?![a-z0-9_])|\\b(?:e|a|b|x|y|v|\u03c6|\u03bd)\\b))\n- 12_PUBLIC_SITE/6/index.html:108: forbidden Titan arithmetic or cross-type identification ((?:[\u2022\u2299\u25cb]|(?<![a-z0-9_])(?:0|1|\u221e)_t(?![a-z0-9_]))\\s*(?:\\*\\*|[+\\-\u2212\u00d7\u00b7*/^\u2297\u2295\u2296\u22c5\u00f7]))\n(50 quoted-and-struck mention(s) not flagged)",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_g2_normal_form.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 8.452,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "G2 NORMAL FORM: PASS (all 10945 reduced words to length 18, exact rationals; 0 collisions; continued-fraction dictionary exact on every word; last partial quotient >= 2 throughout; trichotomy exceptionless)\n  MUTATION COVERAGE: 6 mutants, each tripping its declared checks; all 5 checks exercised (none decorative).\n  NOTE: this is a bounded check of the dictionary, not a proof of G2. The proof is in 05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_generative_base.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 2.316,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "GENERATIVE BASE BOUNDED REGRESSION: PASS (232 values from all words to length 10; 143 unreduced collisions, 0 reduced; CW tree 8191 words / 8191 distinct; grid 25x25 reachable; 0 unattained)",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_node_product_ranking.py",
+      "exit_code": 1,
+      "findings": 12,
+      "wall_seconds": 2.808,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "  02_EPISTEMOLOGY/00_THE_CLOSED_READING_LOOP_v0.1.md:103: retired node-product used as a current ordering: 3. **The two geometries** (vertical axis \u03a6; horizontal ring V; P = \u03a6 \u00d7 V multiplicative) is `[S]` doctrinal; the multiplicative shape is load-bearing (a perfect axis with a still ring is a mind with no metabolism; a spinning ring with no axis is activity with no judgment).\n  03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md:68: retired node-product used as a current ordering: - giving PRISM a \u03a6 or V component in P = \u03a6\u00d7V (it has none \u2014 it records, it does not produce);\n  03_METHODOLOGY/02_THE_PAPERS/THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md:128: retired node-product used as a current ordering: 1. **PRISM is treated as a scoring rung.** PRISM is the receipt and verification rail. Scoring it as \u03a6 or V in P = \u03a6\u00d7V is type-error.\n  05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:177: retired node-product used as a current ordering: | `P_node = \u03a6 \u00d7 V` is a product because `B` has a product form | **UNLICENSED.** \u00a72 is an identity on the selected sphere chart. `\u03a6\u0302\u2084, V\u2084` are typed node quantities on `[0,1]` with no chordal geometry and no reciprocal constraint. |\n  05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:194: retired node-product used as a current ordering: wanting to resurrect `\u03a6 \u00d7 V` from the geometry may not.\n  05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:203: retired node-product used as a current ordering: | **this document's discipline** | if \u00a72 is ever cited to license `P_node = \u03a6 \u00d7 V`, or to reopen the lowercase\u2192uppercase transfer, this document has been misused and \u00a75 should be re-read |\n  05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md:308: retired node-product used as a current ordering: | **this document's discipline** | if `56` \u00a72 is ever cited to license `P_node = \u03a6 \u00d7 V`, or if the `\u2022` flag is silently resolved by the agent rather than the chair, this document has been misused and \u00a76 / `56` \u00a75 should be re-read |\n  08_FRAMEWORK_SUPPORT/08_AGENTS/MANAGED_AGENTS/QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md:18: retired node-product used as a current ordering: - `P_node = \u03a6 \u00d7 V` is productive potential. Neither factor substitutes for the other.\n  10_SEED/01_THE_SEED_LADDER/ASCENT_D2_GEOMETRY_2026_08_05.md:185: retired node-product used as a current ordering: | `P_node = \u03a6 \u00d7 V` is a product because `B` has a product form | **UNLICENSED.** \u00a7III is an identity on the sphere chart. `\u03a6\u0302\u2084, V\u2084` are typed node quantities on `[0,1]` with no chordal geometry. |\n  10_SEED/01_THE_SEED_LADDER/ASCENT_D2_GEOMETRY_2026_08_05.md:193: retired node-product used as a current ordering: `\u03a6 \u00d7 V` from the geometry may not.",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_q4_declarations.py",
+      "exit_code": 1,
+      "findings": 4,
+      "wall_seconds": 0.029,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "Q4 DECLARATIONS: FAIL\n- /amrita/ robots is 'noindex, follow' but Q4 declared 'index, follow'\n- /egg/ robots is 'noindex, follow' but Q4 declared 'index, follow'\n- /riemann/ robots is 'noindex, follow' but Q4 declared 'index, follow'\n- /suda/ robots is 'noindex, follow' but Q4 declared 'index, follow'\n  authority: 11_UPLINK/50_AUDITS_AND_EXECUTIONS/232_FIVE_RULINGS_EXECUTED_2026_07_31.md",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_receipt_citations.py",
+      "exit_code": 1,
+      "findings": 1,
+      "wall_seconds": 0.556,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "RECEIPT CITATIONS: FAIL\n- ambiguous receipt numbers rose to 93 (baseline 91). A new collision was introduced. Give the new file a free number, or declare supersession. Worst: r159 -> 4 files; r156 -> 4 files; r150 -> 4 files; r100 -> 3 files",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_record_counters.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 0.028,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "RECORD COUNTERS: PASS (29 rows; 18 against; 7 fenced; static matches runtime)",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_review_bundle.py",
+      "exit_code": 1,
+      "findings": 4,
+      "wall_seconds": 0.387,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "- 01_TELEOLOGY/04_THE_LIVED_COMPASS.md: hash moved.\n    frozen sha256:468d7a3790460b2188faf92b55382a63ace0e2f5ac058a01c930f817cf76017b\n    now    sha256:f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d\n    This is a material amendment. Bump the bundle to v5 and treat any existing review as not covering it.\n- 00_META/claim_cards/finity_practice.yaml: hash moved.\n    frozen sha256:9e93b13c7f88c4b9bd394fb82054ff217ccb9577f3065ffe676be1c7afae458c\n    now    sha256:6528f37657e44d6e1bc62a3b3361ce3e9cef8cc5b8f120a2b896262638e622cc\n    This is a material amendment. Bump the bundle to v5 and treat any existing review as not covering it.\n- static registry snapshot no longer equals the allow-list projection\n- static registry snapshot projection digest drifted",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_ruling_landed.py",
+      "exit_code": 2,
+      "findings": null,
+      "wall_seconds": 0.034,
+      "verdict": "error",
+      "truncated": false,
+      "stdout_tail": "",
+      "stderr_tail": "usage: check_ruling_landed.py [-h] [--ruling-id RULING_ID]\n                              [--threshold THRESHOLD] [--root ROOT] [--list]\ncheck_ruling_landed.py: error: --ruling-id is required (or use --list to see registered rulings)"
+    },
+    {
+      "gate": "check_site_build_artifacts.py",
+      "exit_code": 1,
+      "findings": 9,
+      "wall_seconds": 0.414,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "    - 1 pages have stale or missing cards (e.g. corrections/index.html)\n      fix: python3 -B build_social_cards.py\n- build_rag_index.py:\n    RAG refuses a stale or non-current book catalog contract\n- build_sw_version.py:\n    SW VERSION: FAIL\n    - cache name is 'emergentism-4060da5f0a1b' but the cached assets hash to 'emergentism-025d94991fd6'.\n      Returning visitors would get stale assets on their first load after\n      deploy. Run: python3 -B build_sw_version.py\n  fix: replay the documented 12_PUBLIC_SITE generator sequence, ending with build_sw_version.py",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_tree_contract.py",
+      "exit_code": 1,
+      "findings": 7,
+      "wall_seconds": 0.058,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "TREE CONTRACT: FAIL\n- forbidden per-lane governance folder: 08_FRAMEWORK_SUPPORT/00_META\n- root document is neither owner nor forwarding stub: 00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md\n- forwarding stub has no declared target: 00_THE_FOUNDATION.md\n- forwarding stub has no declared target: 00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md\n- root document is neither owner nor forwarding stub: B3_TODO.md\n- root document is neither owner nor forwarding stub: VMOSK_A.md\n- forwarding stub has no declared target: VMOSK_A_v2_2026_07_31.md",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_trophic_rosetta_doctrine.py",
+      "exit_code": 0,
+      "findings": 0,
+      "wall_seconds": 0.054,
+      "verdict": "pass",
+      "truncated": false,
+      "stdout_tail": "trophic_rosetta_doctrine: clean (10 owners, 5 projections, 29 ledger candidates)",
+      "stderr_tail": ""
+    },
+    {
+      "gate": "check_work_in_progress.py",
+      "exit_code": 1,
+      "findings": 2,
+      "wall_seconds": 0.047,
+      "verdict": "fail",
+      "truncated": false,
+      "stdout_tail": "WORK IN PROGRESS: FAIL\n- manifest says 317 receipt files; there are 321. Recount, or say why the scope differs.\n- CLAIM_STATUS.yaml bucket 'reopened' is missing or is not a list (got NoneType); its count could not be checked",
+      "stderr_tail": ""
+    }
+  ]
+}
