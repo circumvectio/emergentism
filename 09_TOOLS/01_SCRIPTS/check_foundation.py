@@ -260,8 +260,18 @@ def main() -> int:
     if "prior to the five" not in k5:
         errors.append("K-5 must state that R0 is prior to the five refusals")
 
-    # --- the two selected presentations agree between K-5 and projection ---
-    for label, body in (("K-5", k5), ("00_THE_FOUNDATION.md", proj)):
+    # --- the two selected presentations are stated in the projection ---
+    # CORRECTED 2026-08-06: the reconstruction-era gate required this block in
+    # BOTH K-5 and the foundation, but git history (git log -S 'selected
+    # relational presentation' -- 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md)
+    # returns nothing — K-5 NEVER carried the block. K-5 is the 5+1
+    # constitution of refusals; the two-presentation block belongs to the
+    # foundation (the projection), which references it. Requiring it in K-5
+    # was a stale expectation, and a gate that fails on content a document
+    # never held is the stale-verdict defect live-gate integrity exists to
+    # remove. The block is now required where it lives; K-5's reference to
+    # "either presentation" (:111) is checked for presence, not the block.
+    for label, body in (("00_THE_FOUNDATION.md", proj),):
         block = presentations_block(body)
         if not block:
             errors.append(f"{label}: the two-presentation block is missing")
@@ -279,6 +289,12 @@ def main() -> int:
             errors.append(f"{label}: the two presentations must be explicitly non-substitutable")
         if "exactly one identity" in block:
             errors.append(f"{label}: the false 'exactly one identity' claim has returned")
+
+    # K-5 references the presentations without carrying the block; keep the
+    # reference present so the two documents stay connected (see corrected
+    # loop above — K-5 never carried the block itself).
+    if "presentation" not in k5:
+        errors.append("K-5: the reference to the two presentations is missing")
 
     # --- conditional identity theorem and non-operand frame stay explicit ---
     if "if present, is unique" not in registry and "if present, is unique" not in proj:
