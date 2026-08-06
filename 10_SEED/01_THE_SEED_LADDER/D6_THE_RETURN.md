@@ -12,7 +12,7 @@ status: "ACTIVE [I/S] — concise reader projection; source owners control every
 parents:
   - ../../00_THE_WELTANSCHAUUNG.md
   - ../../06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md
-  - ../../00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md
+  - ../../05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md
 ---
 
 # D6 · THE RETURN
@@ -25,8 +25,11 @@ parents:
 > describer notices the ladder in their own hands. The relation is written `D6≈roleD0` — a
 > **resemblance of boundary roles** `[I]`, never an identity. D0 precedes positive articulation;
 > D6 suspends further positive articulation. Both are limit markers, neither is world-content.
-> **The literal equation `D6≡D0` is dead** (its grave: strict order gives `D0 < D0`, a
-> contradiction; Dead Forms row 8 — `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/00_META/00_THE_DEAD_FORMS_CATALOG_v0.1.md`:47). The ouroboros does not swallow its tail. It bites at "~".
+> **The literal equation `D6≡D0` is dead** (its grave: strict order plus endpoint identity
+> yields `D0 < D0`, a contradiction — live owner
+> `05_COSMOLOGY/03_FORMAL_SYSTEM/23_DIMENSIONAL_CLOSURE_PROOF.md` §3 "The Kintsugi seam",
+> lines 83–94, which also records that the identity was *retracted*, not merely doubted).
+> The ouroboros does not swallow its tail. It bites at "~".
 
 ---
 
