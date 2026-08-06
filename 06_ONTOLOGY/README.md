@@ -1,9 +1,6 @@
 ---
 rosetta:
   canonical_phrase: "Ontology commits to degrees of freedom and axioms only up to a stop-point; D4 causal actuality, D5 counterfactual, D6 adds no positive freedom"
----
-
----
 canonical_phrase: "06_ONTOLOGY read-order index and canonical type split (D4 causal actuality, D5 counterfactual content, D6 apophatic; non-μ b₆/r₆; D-stable forms are robust patterns across constrained DoF, not Platonic Forms)."
 ---
 

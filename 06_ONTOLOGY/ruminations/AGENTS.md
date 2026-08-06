@@ -1,9 +1,6 @@
 ---
 rosetta:
   canonical_phrase: "Ruminations are exploratory thought, not source authority; route surviving claims to doctrine owners at warranted tier"
----
-
----
 canonical_phrase: "routing stub — folder rule for the ruminations subdirectory: exploratory thought, not source authority"
 ---
 

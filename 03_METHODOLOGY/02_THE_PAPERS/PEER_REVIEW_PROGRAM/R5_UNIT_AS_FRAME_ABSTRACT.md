@@ -1,9 +1,6 @@
 ---
 rosetta:
   canonical_phrase: "The unit is a boundary object of the same structural kind as zero and infinity"
----
-
----
 canonical_phrase: "Extended abstract of R5: the unit is a boundary object of the same structural kind as zero and infinity (three boundary items, not two), with a documented Euclid→Stevin→Buckingham→2019 SI arc."
 ---
 

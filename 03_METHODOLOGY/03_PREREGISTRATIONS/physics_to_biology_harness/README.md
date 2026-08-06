@@ -1,9 +1,6 @@
 ---
 rosetta:
   canonical_phrase: "A deterministic toy macro-constraint harness that behaves as a costed macro-constraint at this grain; no biological-evidence upgrade above tier [C]"
----
-
----
 canonical_phrase: "Executable toy-model harness (two-compartment vesicle) for the physics-to-biology macro-constraint boundary; deterministic freeze receipt — not biological evidence, safe interpretation only at this grain."
 ---
 

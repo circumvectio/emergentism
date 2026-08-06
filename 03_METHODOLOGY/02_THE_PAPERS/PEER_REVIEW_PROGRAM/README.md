@@ -1,9 +1,6 @@
 ---
 rosetta:
   canonical_phrase: "The peer-review program grounds, tiers, and tests corpus claims against reality — evidence tiers and kill criteria on every claim"
----
-
----
 canonical_phrase: "Peer-review program landing: field-native shards R1–R10/E2 with per-shard status, one-line verdict (the framework's credential is the R6 refutation, not the self-narrative)."
 ---
 
