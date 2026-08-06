@@ -1,0 +1,40 @@
+# B3 todo
+
+## Phase 0: baseline (done)
+- [x] Read AGENTS.md + finity_practice files
+- [x] Capture pre-fix test counts:
+  - test_corpus_claim_graph.py: 30 fail + 8 error + 2 skip = 53 active
+  - test_finity_practice_gates.py: 1 fail (Defect 4)
+  - test_review_bundle.py: OK
+  - test_vmosk_finity_source.py: OK
+- [x] Confirm B3 masks B1:
+  - 3 tests fail with `expected claim-card-set/v2` (finity_practice.yaml)
+  - 34 tests fail with `OS01-01: locator fingerprint` (B1)
+  - 1 test fails with KeyError (unrelated fixture bug)
+
+## Phase 1: v1 → v2 migration (next)
+- [ ] Compute v2 fields: source.reviewed_source_sha256, locator.anchor, locator.fingerprint_sha256
+- [ ] Migrate `00_META/claim_cards/finity_practice.yaml` to v2:
+  - schema: v1 → v2
+  - source: add reviewed_source_sha256
+  - each card: add anchor + fingerprint_sha256 to locator
+  - each card: replace owner_ids (list) with semantic_owner_id (str) + supporting_owner_ids (list)
+- [ ] Update `09_TOOLS/02_COMPILERS/test_finity_practice_gates.py`:
+  - test_claim_card_locators_dereference_definition_and_retirement: add anchor + fingerprint_sha256 to expected
+  - test_review_receipt_locator_rows_match_cards_and_scope_is_internal: subset-compare
+  - test_definition_source_and_semantic_owners_are_bound_not_reassigned: use semantic_owner_id
+
+## Phase 2: verify
+- [ ] Run all 4 test files; capture before/after counts
+- [ ] Confirm the 3 v1 schema errors are gone
+- [ ] Confirm B1 (OS01-01) is now the dominant error (not masked)
+- [ ] Confirm no NEW regressions vs baseline
+
+## Phase 3: commit + push
+- [ ] Atomic commit: ONE V-forcing per commit
+- [ ] Commit message: `<hash> fix(finity_practice): migrate v1 to v2 schema`
+- [ ] Push to bare origin
+
+## Phase 4: receipt + report
+- [ ] Write `00_HANDOFF/pmo/B3_WAVE_RECEIPT_2026_08_06.md`
+- [ ] Final report: commits, paths, test counts, unblock status
