@@ -47,6 +47,14 @@ FORBIDDEN_INFLATIONS = [
     # (3) the tier vocabulary itself — publication is not verification
     "independently verified",
     "externally validated",
+    # (4) P2.2 mutation-test 2026-08-06: the allowlist drifted the day it
+    # was written; an inflation in different wording of the same form
+    # ("fully machine verified", "complete proof is given above") was
+    # accepted as PASS. Adding the missed phrases is the minimum fix; a
+    # semantic classifier (verification-claim + hedge pattern) is the
+    # proper fix and is staged [D] for K2.
+    "fully machine verified",
+    "complete proof is given above",
 ]
 
 # Entries the manifest must keep listing as NOT established. Shortening this list
