@@ -39,7 +39,7 @@ projecting the corresponding rung of the canonical rungs distillation.
 | **1** | `12_PUBLIC_SITE/1/index.html` | 1 | 325 | the unit + the user's signed D1; "Before the nectar" audit naming Z1 + §Q1 + `b4c58797`; FORECLOSED; three failures; cost of division; both clauses on irrationals; tier-mix `[A]/[I]/[B]/[S]/[C]` |
 | **2** | `12_PUBLIC_SITE/2/index.html` | 1 | 88 | D2 geometry; D•·D∞ = sin θ = B; B in three forms; AM-HM-HM bound; four-requirements forcing chain; Ptolemy gets the math |
 | **3** | `12_PUBLIC_SITE/3/index.html` | 1 | 109 | D3 state; price-list formalism `[A/B]`; interpretation `[C]` held open; Bloch canvas preserved; settled-framework-with-open-question headline |
-| **4** | `12_PUBLIC_SITE/4/index.html` | 1 | 166 | D4 actual; four D4 acts; L1 firewall; unit's §II retraction as firewall in miniature; rungs ledger; *"a record without a receipt is not actual"* |
+| **4** | `12_PUBLIC_SITE/4/index.html` | 1 | 166 | D4 actual; four D4 acts; L1 firewall; unit's §II retraction as firewall in miniature; rungs ledger; **morning's no-receipt-no-actuality framing struck 2026-08-05** (the session's line, not the corpus; `44:64` says the opposite); receipt is for **admissibility** into the claim register, not for actuality; reflexive self-application claim killed on every limb |
 | **5** | `12_PUBLIC_SITE/5/index.html` | 1 | 270 | D5 game; two partitions `[S]`; Finity_L model `[I]`; **WO-C1 kill card** with 8-row table; survivors card (theorem `[A]`, framing `[I]`, §5 reading `[I]`); honest-sentence card |
 | **6** | `12_PUBLIC_SITE/6/index.html` | 1 | 117 | D6 return; `r₆` resemblance live; `D6 ≡ D0` dead; `○` horizon; ground revisited; **the chart, in one sentence, featured**; closing line |
 

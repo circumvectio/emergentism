@@ -49,18 +49,27 @@ that means `φ × ν` is refuted on sight by the chart itself.
 
 ## 2. The decomposition
 
-Take the sphere as the unit sphere with `θ` the polar angle, `○` at `θ = 0`
-and `•` at `θ = π`. Use the **chordal** metric — the straight-line distance
-through the sphere, which is the metric on which `•` and `○` are antipodal at
-distance `2`. `[S]`
+Take the sphere as the unit sphere with `θ` the polar angle, with `○` at
+`θ = 0` and `•` at `θ = π` as the **two poles of the chart**, and use the
+**chordal** metric — the straight-line distance through the sphere. `[S]`
 
-> **FENCE 2026-08-06.** The seats are named as the poles of the declared
-> sphere for this chart; the metric is on the sphere, and the seats are not
-> its operands. "Antipodal at distance 2" is a property of the declared chart,
-> not a relation between Titan marks, and the 2026-08-06 ruling struck the
-> ontological use of antipodality (it discriminates nothing; the
-> opposite-refusals content rests on absorption, not geometry). The
-> decomposition below uses the chart's poles; it does not measure the seats.
+> **[STRUCK 2026-08-06, in alignment with the rungs ruling §D2 §IV.]** The
+> earlier reading held `•` and `○` antipodal at distance `2` on this metric
+> at `[S]`. The rungs document struck this same form the same day
+> (`00_THE_RUNGS_2026_08_05.md:333-340`); the strike is **corpus-internal**:
+> the corpus's own successor `S = [[1,1],[0,1]]` is the translation
+> `z ↦ z+1` on the Riemann sphere, and `S(•) = 1`. Writing `d(•, ○) = 2`
+> is a **type violation** — it coerces Titan marks into projective points
+> and equips them with a metric outside their declared lawful structure,
+> the same move that killed `⊙ = • × ○` (`48:121, :416`). The antipodal
+> picture is dead the moment `S` is named.
+>
+> **What survives:** the chordal metric as selected structure on the sphere
+> (since `S` preserves it); `• ≠ ○` (distinctness, structural); and the two
+> factors `D•(θ)`, `D∞(θ)` below as chordal distances between a chart
+> point `θ` and the two poles of the chart — **not** distances between
+> the marks. The opposite-refusals content rests on **absorption**
+> (Dedekind 1888), with no geometry in it at all.
 
 The chord subtending polar angles `θ` and `0` has length `2 sin(θ/2)`; the
 chord subtending `θ` and `π` has length `2 cos(θ/2)`. Normalise each so that
