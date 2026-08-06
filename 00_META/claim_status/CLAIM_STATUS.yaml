@@ -1091,7 +1091,7 @@
       }
     }
   ],
-  "investigations": [
+  "reopened": [
     {
       "id": "RQ-01",
       "parent": "DF-06",
@@ -1357,7 +1357,7 @@
       }
     }
   ],
-  "investigation_authorization": {
+  "owner_reopening": {
     "instruction": "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes.",
     "receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md",
     "scope": "21 of the 22 dead forms restored to active investigation. DF-14 was already NARROWED — a live status — so it was not reopened; r174 (`174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md`)'s 'all 22' was over-broad by one row.",
@@ -1365,7 +1365,7 @@
     "current_state": "ADJUDICATED — 20 transition statuses returned to their recorded terminal classes; DF-13 is corrected from the prior empirical label to NOT-WELL-POSED; DF-14 remains NARROWED; executable work is owned only by explicit successor rows.",
     "adjudication_receipt": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPOSITION_2026_08_01.md"
   },
-  "typed_survivors": [
+  "restored": [
     {
       "id": "TR-01",
       "status": "FORMALLY-VALID",

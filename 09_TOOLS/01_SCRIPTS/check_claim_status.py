@@ -689,10 +689,10 @@ def check(root: Path = ROOT) -> list[str]:
     if numbers and numbers != list(range(1, max(numbers) + 1)):
         errors.append("grave ids must remain contiguous from DF-01 through the newest grave")
 
-    # --- investigations --------------------------------------------------
+    # --- reopened --------------------------------------------------------
     investigation_ids: set[str] = set()
     reopened_ids: set[str] = set()
-    for row in _rows(document, "investigations"):
+    for row in _rows(document, "reopened"):
         row_id = _text(row.get("id"), "reopened.id")
         _exact_keys(
             row,
@@ -780,7 +780,7 @@ def check(root: Path = ROOT) -> list[str]:
         errors.append(f"{grave}: successor {successor} resolves to no known id or external owner")
 
     # Every grave-derived investigation must be claimed by its terminal parent.
-    for row in document["investigations"]:
+    for row in document["reopened"]:
         parent = row.get("parent")
         row_id = row.get("id")
         if parent in grave_ids and grave_successors.get(parent) != row_id:
