@@ -18,6 +18,7 @@ negative type contract across the scoped source/current-public corpus.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -152,6 +153,160 @@ ACTIVE_SCAN_EXCLUDED_PREFIXES = (
     Path("91_COMPATIBILITY"),
 )
 
+# Vendored dependency trees and machine build caches. These are not corpus
+# surfaces in any sense — nobody wrote them and nobody can repair them here;
+# `.lake/` alone is downloaded Lean/mathlib build output.
+#
+# MEASURED 2026-08-06, not asserted: of the 3705 files this walk previously
+# returned, 2765 (577 MB of 589 MB) lived under `.lake/`, and they produced
+# ZERO findings. Regex-scanning them was the entire cost of the run — a full
+# gate took 365.20 s wall, so `timeout 12` in CI returned rc=124 and the gate
+# read as a hang rather than as a verdict. A gate that times out reports
+# nothing at all, which is strictly worse than a gate that fails.
+#
+# This is a mechanical exclusion of machine artifacts, NOT the doctrinal
+# provenance exclusion above (e29066a0). Directory names only, matched at any
+# depth, so a nested `.lake/packages/*/.lake/` is pruned at the first level.
+ACTIVE_SCAN_EXCLUDED_DIR_NAMES = frozenset(
+    {
+        ".git",
+        ".lake",
+        ".mypy_cache",
+        ".pytest_cache",
+        ".ruff_cache",
+        ".venv",
+        "__pycache__",
+        "node_modules",
+        "venv",
+    }
+)
+
+
+# --- use vs mention -------------------------------------------------------
+#
+# The firewall matches CARRIER TEXT. It cannot tell a document that *writes*
+# `⊙ = • × ○` from a document that *quotes* it in order to strike it. Both look
+# identical to a regex. Measured 2026-08-06: the pre-fix gate flagged
+# 48_CO_CONSTITUTION_AND_THE_NOTATION_PROBLEM.md at :121, :416 and :417 — the
+# exact lines that RETIRE the form. Flagging the retraction is not enforcement;
+# it makes the gate unusable and trains readers to ignore it.
+#
+# This is the same false-positive class check_contradiction_census.py already
+# names (`is_meta_reference`, META_BODY_MARKERS): a retirement marker near the
+# match means the text is *about* the form, not *asserting* it. Two instruments,
+# one pattern. The census resolves it at FILE granularity; a firewall must be
+# finer than that or a single strike note would deafen a whole document, so this
+# resolves it at BLOCK granularity — a fenced block, a blockquote, a table row,
+# or a paragraph. A genuine use elsewhere in the same file still fails.
+MENTION_MARKERS = re.compile(
+    r"retired|struck|strike|strikethrough|withdraw|retract|revoke|rescind|"
+    r"ill-typed|ill typed|ill-formed|not well-formed|inadmissible|"
+    r"type error|type violation|notation error|category error|"
+    r"refuted|repaired|deprecated|killed|banned|dead|"
+    # `forbid` is deliberately NOT bare. Measured 2026-08-06: bare `forbid`
+    # excused 52_THE_GENERATIVE_BASE.md:26 (`⊙ = e`) on the strength of a
+    # neighbouring sentence reading "`DF-15` forbids citing either as support
+    # for the other" — a rule about CITATION PRACTICE, not about the form. That
+    # is a genuine cross-type identification of the realm mark with the algebra
+    # witness identity, and excusing it would be the gate laundering a real
+    # finding. A denial only counts when it is attached to the WRITING of the
+    # form or to the type-failure being explained.
+    r"forbidden|forbids (?:it|this|the|writing)|"
+    r"(?:may|must|can)(?:not| not) be written|not a member of the domain|"
+    r"wrong kind of thing|not an operand|"
+    r"must never|never (?:be )?(?:written|writes|used|asserted)|"
+    r"do(?:es)? not (?:write|use|assert|license|admit)|cannot (?:write|assert)|"
+    r"no longer|superseded|supersedes|corrected|correction|"
+    r"previously (?:read|carried|said|stated)|(?:this|the) (?:line|paragraph|"
+    r"clause|document|edition|version)s? (?:first|previously|once) "
+    r"(?:read|carried|said)|read backwards|prior edition|earlier reading|"
+    r"is false|are false|is wrong|written wrongly|not a theorem|"
+    r"reinstate|violate",
+    re.I,
+)
+
+_FENCE_RE = re.compile(r"^\s*(?:```|~~~)")
+_QUOTE_RE = re.compile(r"^\s*>")
+_TABLE_RE = re.compile(r"^\s*\|")
+_STRIKETHROUGH_RE = re.compile(r"~~.+?~~")
+
+# How far the prose framing a fenced block may sit from its fences. The 48
+# fence at :120-:124 is introduced at :118 and annotated from :126; four lines
+# covers both without letting an unrelated section leak in.
+FENCE_CONTEXT_LINES = 4
+
+
+def _mention_blocks(lines: list[str]) -> list[tuple[int, int, str]]:
+    """Segment raw lines into (start, stop, context_text) mention units.
+
+    Indices are 0-based and half-open. The context is what gets tested for a
+    retirement marker; for a fenced block it also includes the prose that
+    frames the fence, because that is where a corpus marks a quoted form dead.
+    """
+
+    blocks: list[tuple[int, int, str]] = []
+    index = 0
+    total = len(lines)
+    while index < total:
+        line = lines[index]
+        if _FENCE_RE.match(line):
+            stop = index + 1
+            while stop < total and not _FENCE_RE.match(lines[stop]):
+                stop += 1
+            stop = min(stop + 1, total)  # include the closing fence
+            before = max(0, index - FENCE_CONTEXT_LINES)
+            after = min(total, stop + FENCE_CONTEXT_LINES)
+            blocks.append((index, stop, "\n".join(lines[before:after])))
+            index = stop
+            continue
+        if _QUOTE_RE.match(line):
+            stop = index
+            while stop < total and _QUOTE_RE.match(lines[stop]):
+                stop += 1
+            blocks.append((index, stop, "\n".join(lines[index:stop])))
+            index = stop
+            continue
+        if _TABLE_RE.match(line):
+            # A table row is its own unit: one struck row must not excuse the
+            # rows above and below it.
+            blocks.append((index, index + 1, line))
+            index += 1
+            continue
+        if not line.strip():
+            index += 1
+            continue
+        stop = index
+        while (
+            stop < total
+            and lines[stop].strip()
+            and not _FENCE_RE.match(lines[stop])
+            and not _QUOTE_RE.match(lines[stop])
+            and not _TABLE_RE.match(lines[stop])
+        ):
+            stop += 1
+        blocks.append((index, stop, "\n".join(lines[index:stop])))
+        index = stop
+    return blocks
+
+
+def mention_lines(text: str) -> set[int]:
+    """Return the 1-indexed lines whose carrier text is a MENTION, not a use.
+
+    A line is a mention when the block it belongs to — fenced code, blockquote,
+    table row, or paragraph — is annotated as retired/struck/withdrawn/refuted,
+    or when the line is markdown strikethrough.
+    """
+
+    lines = text.splitlines()
+    mentions: set[int] = set()
+    for start, stop, context in _mention_blocks(lines):
+        if MENTION_MARKERS.search(context):
+            mentions.update(range(start + 1, stop + 1))
+    for offset, line in enumerate(lines, 1):
+        if _STRIKETHROUGH_RE.search(line):
+            mentions.add(offset)
+    return mentions
+
 
 def norm(text: str) -> str:
     """Collapse whitespace and markdown emphasis so wording is compared, not layout.
@@ -166,15 +321,24 @@ def active_foundation_scan_paths(root: Path) -> list[Path]:
     """Discover source-owner and declared-current public type surfaces."""
 
     paths: set[Path] = set()
-    for path in root.rglob("*"):
-        if not path.is_file() or path.suffix.lower() not in ACTIVE_SCAN_SUFFIXES:
-            continue
-        rel = path.relative_to(root)
-        if "90_ARCHIVE" in rel.parts:
-            continue
-        if any(rel.is_relative_to(prefix) for prefix in ACTIVE_SCAN_EXCLUDED_PREFIXES):
-            continue
-        paths.add(rel)
+    # os.walk rather than rglob so vendored/build trees can be PRUNED instead of
+    # walked and then discarded: `.lake/` alone held 2765 of the 3705 files this
+    # used to return. Pruning is what turns the run from minutes into seconds.
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames[:] = [
+            name for name in dirnames if name not in ACTIVE_SCAN_EXCLUDED_DIR_NAMES
+        ]
+        here = Path(dirpath)
+        for name in filenames:
+            path = here / name
+            if path.suffix.lower() not in ACTIVE_SCAN_SUFFIXES:
+                continue
+            rel = path.relative_to(root)
+            if "90_ARCHIVE" in rel.parts:
+                continue
+            if any(rel.is_relative_to(prefix) for prefix in ACTIVE_SCAN_EXCLUDED_PREFIXES):
+                continue
+            paths.add(rel)
 
     for rel in ACTIVE_EXTRA_TYPE_SURFACES:
         if (root / rel).is_file():
@@ -300,10 +464,18 @@ def main() -> int:
     if "if present, is unique" not in registry and "if present, is unique" not in proj:
         errors.append("the corrected conditional identity-uniqueness theorem is missing")
     current_semantic = [PROJECTION, K5, REGISTRY, FORMAL_DOCS[0], FORMAL_DOCS[2], FORMAL_DOCS[-1]]
+    mentions_skipped = 0
     for rel in current_semantic:
+        mentions = mention_lines(bodies[rel])
         for lineno, line in enumerate(bodies[rel].splitlines(), 1):
-            if RETIRED_TITAN_INFIX.search(line):
-                errors.append(f"{rel.as_posix()}:{lineno}: retired Titan infix returned to a current owner")
+            if not RETIRED_TITAN_INFIX.search(line):
+                continue
+            if lineno in mentions:
+                # Quoting the retired infix in order to strike it is the
+                # document doing its job, not the infix returning.
+                mentions_skipped += 1
+                continue
+            errors.append(f"{rel.as_posix()}:{lineno}: retired Titan infix returned to a current owner")
 
     # --- KSC-28 routes the foundation --------------------------------------
     if "ksc-28" not in registry:
@@ -324,8 +496,16 @@ def main() -> int:
     active_scan_paths = active_foundation_scan_paths(ROOT)
     for rel in active_scan_paths:
         source_text = (ROOT / rel).read_text(encoding="utf-8")
-        for pattern, offset in titan_arithmetic_matches(source_text):
+        matches = titan_arithmetic_matches(source_text)
+        if not matches:
+            continue
+        # Only pay for the mention pass on files that actually matched.
+        mentions = mention_lines(source_text)
+        for pattern, offset in matches:
             line_number = line_number_for_offset(source_text, offset)
+            if line_number in mentions:
+                mentions_skipped += 1
+                continue
             errors.append(
                 f"{rel.as_posix()}:{line_number}: forbidden Titan arithmetic or "
                 f"cross-type identification ({pattern})"
@@ -338,16 +518,23 @@ def main() -> int:
             if not any(re.search(p, body) for p in patterns):
                 errors.append(f"fence lost — {name!r} absent from {home.as_posix()}")
 
+    # The suppression is reported on every run, pass or fail. A use-vs-mention
+    # filter is exactly the kind of change that can turn a gate into one that
+    # cannot fail, so the number it hides is never allowed to be invisible.
+    mention_note = f"{mentions_skipped} quoted-and-struck mention(s) not flagged"
+
     if errors:
         print("FOUNDATION CONTRACT: FAIL")
         print("\n".join(f"- {e}" for e in errors))
+        print(f"({mention_note})")
         return 1
 
     print(
         f"FOUNDATION CONTRACT: PASS "
         f"({len(required)} surfaces, {len(FENCES)} fences, "
         f"{len(PRESUPPOSED)+len(RELATIONAL)+len(REACHABILITY)} strata symbols, "
-        f"{len(active_scan_paths)} source/current-public surfaces type-scanned)"
+        f"{len(active_scan_paths)} source/current-public surfaces type-scanned, "
+        f"{mention_note})"
     )
     return 0
 

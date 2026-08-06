@@ -691,6 +691,7 @@ def check(root: Path = ROOT) -> list[str]:
 
     # --- investigations --------------------------------------------------
     investigation_ids: set[str] = set()
+    reopened_ids: set[str] = set()
     for row in _rows(document, "investigations"):
         row_id = _text(row.get("id"), "reopened.id")
         _exact_keys(
@@ -792,7 +793,7 @@ def check(root: Path = ROOT) -> list[str]:
     row_by_id = {
         str(row.get("id")): row
         for section in ("open", "reopened", "graves")
-        for row in document[section]
+        for row in document.get(section, ())
         if isinstance(row, dict)
     }
     for row_id, disposition in merged_contact_rows:
