@@ -137,6 +137,21 @@ harmonic-mean form governs the interior.
 > `HM(a,b) = √(ab)·sech(½log(a/b))` as `[A]` classical mathematics, and
 > `min ≤ HM ≤ 2·min` — the genuinely non-compensatory statement. Repair:
 > `020f4f19`. The section is retained as provenance, unrevised.
+>
+> **⚠ SELF-VIOLATION RIDER (2026-08-06, post rungs fix).** The same
+> chart-side / Titan-side disambiguation that the rungs §D2 §IV type rider
+> applies to `S(•) = 1` applies here. The geometry in §I ("`○` at the north
+> pole (`θ = 0`), `•` at the south (`θ = π`)") uses `•` and `○` as **chart
+> labels** in the chart structure — labels, not Titan marks. The chord
+> `D•(θ) = √2 cos(θ/2)` is a chart-side operation on the labelled point `•`;
+> the operator `cos(θ/2)` is a chart automorphism, not a Titan operator.
+> **The geometry itself is type-safe** (chart-side); the **antipodality
+> reading** that `•` and `○` are *antipodal in the chordal metric* is what was
+> struck in the rungs on corpus-internal grounds, and what was repaired by
+> the chart-side / Titan-side type rider there. This file's geometry survives
+> the kill; the reading does not. Cross-reference: rungs
+> `00_THE_RUNGS_2026_08_05.md` §D0, §D2 §IV, §D2 block, and the drops table
+> row, for the canonical disambiguation.
 
 Off the constraint curve — two independent positive quantities `a`, `b`:
 
@@ -222,6 +237,20 @@ untested.
 > classical; the seam/score/node separation; the transfer fence. Repair:
 > `020f4f19` on `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`, the source owner of
 > the reading. The diagram is retained as provenance, unrevised.
+>
+> **⚠ SELF-VIOLATION RIDER (2026-08-06, post rungs fix).** The same
+> chart-side / Titan-side disambiguation applies to the §VIII diagram. `D•`
+> and `D∞` are chart-side chordal functions on the labelled points `•` and
+> `○`; the chordal metric they use is the chart's `[S]`-declared structure,
+> and the operator `cos(θ/2) / sin(θ/2)` is a chart automorphism. The
+> "transfer to the node is FENCED" line in the diagram (`P_node = min(Φ̂₄, V₄)`,
+> not a product) is exactly the fence that prevents the chart-side geometry
+> from leaking to the Titan-side node model. **The §VIII diagram is type-safe
+> (chart-side); the antipodality reading that `•` and `○` are
+> chordal-distance-2 antipodes is what the rungs struck and what the type
+> rider disambiguates.** This file's diagram survives the kill; the reading
+> does not. Cross-reference: rungs `00_THE_RUNGS_2026_08_05.md` §D2 §IV type
+> rider for the canonical disambiguation.
 
 ```
                     ○  (θ = 0)

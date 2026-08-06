@@ -187,6 +187,23 @@ full diameter of the sphere — the farthest apart two points can be.
 > (`V ∪ {x} = V`, Dedekind 1888) with no geometry in it at all. The ontology
 > was never resting on the picture.
 
+> *(Self-correction 2026-08-06, expanded post rungs fix.)* The prior wording
+> applied `S` to `•` — the same coercion this kill convicts; struck here.
+> The disambiguation, per the rungs §D2 §IV type rider: `S(•) = 1` is a
+> **chart-side** operation on the labelled point `•` in the chart structure,
+> where `•` is a label, not a Titan mark; the successor `S` is a chart
+> automorphism, not a Titan operator. The kill's argument, restated under
+> this disambiguation, is: the corpus declares the chordal metric as fixed
+> structure (`[S]`) AND an operation on **interior values** of `z ↦ z+1` that
+> does not preserve the metric. The seats `•` and `○` are not operated on;
+> the chart's own successor acts on the chart's labelled points. The
+> disambiguation is what keeps the kill from committing the coercion it
+> convicts. Cross-reference: rungs `00_THE_RUNGS_2026_08_05.md` §D2 §IV type
+> rider for the canonical disambiguation; the same rider is at rungs §D0,
+> the §D2 block, and the drops table. The §D6 listing in the prior repair
+> trail was nominal — the `S(•) = 1` formulation does not appear in this
+> section; the audit-of-the-audit note is filed at rungs §D6.
+
 The ontology agrees: `D6 ≢ D0`. The resemblance `r₆` is live; the identity is
 not.
 

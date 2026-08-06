@@ -90,6 +90,22 @@ balance point.
 > `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md`. **The Finity_L kill itself is
 > unaffected** — it rests on the `[A]` theorem and the eight-domain search,
 > neither of which this repair touches.
+>
+> **⚠ SELF-VIOLATION RIDER (2026-08-06, post rungs fix).** The same
+> chart-side / Titan-side disambiguation that the rungs §D2 §IV type rider
+> applies to `S(•) = 1` applies to the §5 reading here. The `⊙ = GM × BAL`
+> decomposition is a chart-side operation on the labelled points `•` and `○`
+> in the chart structure; the operator `√(ab)·sech(½ log(a/b))` is a chart
+> automorphism on the harmonic mean's labelled arguments, not a Titan
+> operator on Titan marks. **The decomposition is type-safe (chart-side); the
+> "product of margins" reading is what was struck** — the product is
+> compensatory, not conjunctive, and the reading is `[B]` attribution. The
+> Finity_L kill itself (this document's primary claim) is unaffected by the
+> rider, as the existing REPAIR block already says. Cross-reference: rungs
+> `00_THE_RUNGS_2026_08_05.md` §D2 §IV type rider for the canonical
+> disambiguation; the three-file chain (ASCENT_D2_GEOMETRY,
+> 51B_FINITY_L_C1_KILL, ASCENT_D6_RETURN_AND_O) inherits the same rider via
+> the K2-applied patches referenced in `antipodality_fix_report 2026-08-06`.
 
 ## The honest limitation
 
