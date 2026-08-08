@@ -24,7 +24,7 @@ parents:
 
 > **The failure this addresses.** On 2026-08-05 one session produced five
 > claims in a row that the corpus had already settled — the balance function,
-> its product form, the `Φ×V` transfer, the `sin θ` ladder, and the L1
+> its retired product form, the killed `Φ×V` transfer, the `sin θ` ladder, and the L1
 > deployability prediction. Every one was already written down. **No gate
 > caught any of them**; what caught them was `grep` on a guessed substring.
 >
@@ -131,38 +131,41 @@ identity is asserted at either end.
 
 `•` is where counting cannot begin; D0 is the ground-limit before articulated
 distinction. `○` is where counting cannot complete; D6 is apophatic exit with
-no further positive freedom. The correspondence is natural, it agrees with the
-sphere's `•`/`○` being **distinct** (`07_MIRROR_SYMMETRY_FALSIFICATION_TEST`
-§0: "the south and north poles are distinct; there is no `L0=L∞`
-pole-meeting"), and it agrees with `D6 ≢ D0`.
+no further positive freedom. The correspondence is an optional reading. Its
+type-safe structural support stops at `• ≠ ○` inside the opaque Titan frame and
+`D6 ≢ D0`. An earlier source described the marks as north and south poles; that
+geometric gloss is superseded by the type correction below.
 
-> **[ANTIPODALITY CLAUSE CORRECTED 2026-08-06 — twice.]** This line first read
-> *"antipodal, chordal distance 2 — the farthest apart two points can be."*
+> **[FINAL TYPE CORRECTION 2026-08-09 — supersedes both 2026-08-06
+> readings.]** The earlier arguments silently treated the Titan renderings as
+> points of a metric sphere. That coercion is ill-typed. The chart points are
+> `p_N` and `p_S`; only they may carry the selected chordal metric or endpoint
+> limits. `TitanFrame` has no coercion to `ProjectivePoint`, so no distance,
+> pole, antipodality, or successor-map conclusion transfers to `•` or `○`.
 >
-> **First correction (wrong):** struck on the ground that chordal distance is
-> not `PGL₂(ℂ)`-invariant — `z ↦ z+1` carries `{0,∞}` to distance `√2` — so
-> antipodality "discriminates nothing."
+> **What survives:** the two Titan seats are distinct in their own opaque frame
+> `[S]`. Their association with the pre-articulate and apophatic boundary roles
+> is an optional `[I]` reading only. It supplies no geometry, identity, or
+> equation, and the spine does not depend on it. The two superseded readings
+> are preserved immediately below; they are not live alternatives.
 >
-> **That argument fails.** The corpus never declared Möbius as its symmetry
-> group; `56` §2 declares the **chordal metric at `[S]`** and fixes `○` at
-> `θ=0`, `•` at `θ=π`. Non-invariance under a group you did not adopt refutes
-> nothing — the Earth's poles do not stop being antipodal because a
-> diffeomorphism can move them. A fair re-hearing ruled the claim
-> **TRUE_AS_QUALIFIED · STANDS_NARROWED**, not dead.
+> **VISIBLE CORRECTION TRAIL — both 2026-08-06 arguments are withdrawn.**
+> The first correction struck the old wording on the ground that chordal
+> distance is not `PGL₂(ℂ)`-invariant: `z ↦ z+1` carries `{0,∞}` to distance
+> `√2`, so antipodality was said to discriminate nothing. The counterargument
+> then observed that the corpus had selected a chordal metric and had not
+> adopted the full Möbius group as its symmetry, so non-invariance under an
+> undeclared group refuted nothing. A second correction instead alleged an
+> internal conflict between that selected metric and the corpus successor
+> `S = [[1,1],[0,1]]`, acting as `z ↦ z+1` on chart values. It retained Titan
+> distinctness, treated chart separation as local only, and left the
+> `TitanFrame`-to-`ProjectivePoint` type question open.
 >
-> **The real defect is corpus-internal and needs no external premise.** The
-> corpus's own successor is `S = [[1,1],[0,1]]` — precisely the map `z ↦ z+1`
-> that breaks the chordal metric — and it acts on these very objects, with
-> `S(•) = 1`. **The corpus cannot declare the round metric as fixed structure
-> and simultaneously operate on those points with a group that does not
-> preserve it.** That is a coherence defect the corpus generates itself.
->
-> **Therefore, what may be written:** `•` and `○` are **distinct**, which is
-> what the ordering needs and all it needs. Their chordal separation is `2`
-> **inside the declared `[S]` chart** — true there, and not citable as
-> structural. The word "farthest" stays struck: it is
-> radius-convention-dependent, and the type question (`NoCoercion(TitanFrame,
-> ProjectivePoint)`) is open regardless of the metric argument.
+> **Final disposition:** both arguments began by treating Titan marks as chart
+> points. That premise is withdrawn and ill-typed. The trail remains visible
+> as provenance; none of its metric, pole, antipodality, successor, or open-
+> coercion conclusions is live. The exact superseded blocks are preserved in
+> [`90_ARCHIVE/50_AUDITS/57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md`](../90_ARCHIVE/50_AUDITS/57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md).
 
 **It is `[I]` and the index does not depend on it.** If the correspondence is
 withdrawn, the spine remains `D0…D6` and every query still works. It is written

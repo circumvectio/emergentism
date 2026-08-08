@@ -79,11 +79,12 @@ OWNER_HELD_SOURCE_ROWS = {
                 "retains the duplicate, with both resulting paths checked."
             ),
             "evidence": [
-                "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
+                "00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md",
                 "12_PUBLIC_SITE/_PLANS/specs/2026-06-05-numbered-doctrine-spine-design.md",
+                "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md",
         },
         "question": (
             "Which byte-identical numbered-doctrine-spine copy is current planning "
@@ -105,33 +106,37 @@ OWNER_HELD_SOURCE_ROWS = {
             "id": "OWNER_GATE_OPEN_TOPOLOGY",
             "owner": "01_EMERGENTISM editorial program",
             "question": (
-                "Does the active framework-support 00_META lane remain a governed exception "
-                "to the root prohibition on per-pillar 00_META directories, or must one owner "
-                "rule change?"
+                "How must the three grandfathered framework-support 00_META tombstones be "
+                "disposed under the categorical root-only rule while preserving their custody?"
             ),
             "close_when": (
-                "A dated owner ruling reconciles the two topology statements and the losing "
-                "statement is repaired without moving content by implication."
+                "A dated owner ruling either amends the topology rule or supplies a complete "
+                "migration or archival route; until then the exact path remains a hash-bound "
+                "held violation."
             ),
             "evidence": [
+                "00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md",
                 "00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md",
-                "08_FRAMEWORK_SUPPORT/00_META/README.md",
+                "08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md",
+                "08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md",
+                "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
                 "09_TOOLS/01_SCRIPTS/coherence_profile.json",
             ],
-            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/241_K3_LEGACY_NOOP_ARCHIVE_LINK_NEUTRALIZER_2026_08_02.md",
+            "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md",
         },
         "question": (
-            "Is `08_FRAMEWORK_SUPPORT/00_META/` a path-specific non-governance "
-            "exception, or does the active topology change? **No move is implied; "
-            "the preselection guard permits only the named unresolved non-root lane "
-            "and rejects a symlink or expansion.**"
+            "How must the three grandfathered tombstones under "
+            "`08_FRAMEWORK_SUPPORT/00_META/` be disposed under the categorical root-only "
+            "rule while preserving custody? **No move or conformance is implied; the "
+            "preselection guard holds only the exact three hash-bound tombstones, reports "
+            "the topology debt, and rejects any changed, missing, added, or symlinked entry.**"
         ),
-        "blocks": "root/subfolder topology reconciliation",
+        "blocks": "held topology violation",
         "docket_decision": (
-            "Whether the active framework-support `00_META` path is a narrow exception "
-            "or must migrate"
+            "Disposition of the grandfathered framework-support `00_META` tombstones "
+            "under the root-only rule"
         ),
-        "docket_blocks": "topology rule reconciliation",
+        "docket_blocks": "held topology violation",
         "docket_selection_line": "- **Selected option:** **UNSET**.",
         "docket_principal_line": (
             "- **Principal:** **UNSET** (01_EMERGENTISM editorial/topology owner must name one)."
@@ -648,7 +653,9 @@ def main() -> int:
         except (json.JSONDecodeError, OSError) as exc:
             errors.append(f"CLAIM_STATUS.yaml is unreadable: {exc}")
             data = {}
-        for bucket in ("validated", "open", "graves", "reopened"):
+        # CLAIM_STATUS v2 separates live investigations from the old
+        # "reopened" bucket and carries one explicit typed-survivor row.
+        for bucket in ("validated", "open", "investigations", "graves", "typed_survivors"):
             rows = data.get(bucket)
             if not isinstance(rows, list):
                 # Was a silent `continue`: a bucket that went missing or changed shape

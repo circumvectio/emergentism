@@ -138,10 +138,11 @@ a{color:inherit}
 .research-card h3{font:400 clamp(1.55rem,2.5vw,2.15rem)/1.04 var(--serif);letter-spacing:-.025em;margin:2.7rem 0 .8rem;max-width:13ch}
 .research-card p{color:var(--muted);font-size:.9rem;margin:0;max-width:31ch}
 .trust-strip{display:grid;grid-template-columns:.55fr 1.45fr auto;align-items:center;gap:1.4rem;margin-top:1.3rem;padding:1.15rem 1.3rem;border-block:1px solid var(--line)}
+.trust-strip>*{min-width:0}
 .trust-strip .lab{font:500 .62rem var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
 .trust-strip p{margin:0;color:var(--muted);font-size:.87rem}
 .trust-strip strong{color:var(--bone);font-weight:500}
-.trust-links{display:flex;gap:.8rem;white-space:nowrap;font:500 .68rem var(--mono)}
+.trust-links{display:flex;flex-wrap:wrap;gap:.45rem .8rem;min-width:0;white-space:normal;font:500 .68rem var(--mono)}
 .trust-links a{color:var(--muted);text-underline-offset:4px}
 .trust-links a:hover{color:var(--gold)}
 .explore-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(3rem,8vw,8rem);align-items:start}
@@ -171,6 +172,17 @@ a{color:inherit}
   .question{border-bottom:1px solid var(--line)}
   .question:nth-child(2n){border-right:0}
   .question:last-child{grid-column:1/-1;border-bottom:0}
+}
+@media(min-width:901px) and (max-height:940px){
+  .hero{min-height:calc(100svh - 62px);align-content:start;row-gap:1rem;padding-block:1.8rem 2.2rem}
+  .hero h1{font-size:clamp(3.25rem,5.4vw,4.8rem)}
+  .dek{margin-top:.9rem;font-size:1rem;line-height:1.48}
+  .why-status{margin-top:.6rem}
+  .hero-what{padding-top:.8rem}
+  .finity-intro{margin-top:.55rem;font-size:1rem;line-height:1.45}
+  .cta-row{margin-top:.8rem}
+  .hero-links,.hero-trust{margin-top:.55rem}
+  .receipt-loop{padding:1.2rem}
 }
 @media(max-width:900px){
   .hero{grid-template-areas:"why" "how" "what";grid-template-columns:1fr;grid-template-rows:auto;min-height:auto}
@@ -231,6 +243,25 @@ a{color:inherit}
   .closing{padding-block:4.2rem}
   .footer-main{flex-direction:column}
   .footer-nav{justify-content:flex-start}
+  #atlas-fab{display:none!important}
+}
+@media(max-width:720px) and (max-height:740px){
+  .hero{padding-block:1.15rem 2rem;gap:.75rem}
+  .hero .eyebrow{margin-bottom:.55rem;font-size:.58rem}
+  .hero h1{font-size:2.3rem;line-height:.93}
+  .dek{margin-top:.55rem;font-size:.88rem;line-height:1.35}
+  .why-status{margin-top:.4rem;font-size:.54rem;line-height:1.35}
+  .receipt-loop{padding:.55rem}
+  .receipt-loop::before{display:none}
+  .territory{margin-bottom:.35rem;font-size:.55rem}
+  .territory span{font-size:.67rem}
+  .loop-main{gap:.3rem}
+  .loop-main li{min-height:34px;padding:.25rem;font-size:.54rem}
+  .loop-return{margin-top:.3rem;font-size:.5rem}
+  .hero-what{padding-top:.55rem}
+  .finity-intro{margin-top:.3rem;font-size:.83rem;line-height:1.35}
+  .cta-row{margin-top:.5rem}
+  .hero-links{margin-top:.45rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
 

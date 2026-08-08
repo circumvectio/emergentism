@@ -20,6 +20,7 @@ FOREIGN_TYPED_TERM = (
     r"(?<![a-z0-9_])(?:0|1|∞)_[npe](?![a-z0-9_])|"
     r"\b(?:e|a|b|x|y|v|φ|ν)\b)"
 )
+TITAN_PAIR = r"(?:[•○]\s*(?:,|and|&|/)\s*[•○])"
 
 # Equality and rendering are lawful on TitanFrame; arithmetic and cross-type
 # identification are not. Function application is closed by default, with a
@@ -42,6 +43,15 @@ FORBIDDEN_TITAN_ARITHMETIC = (
     rf"{FOREIGN_TYPED_TERM}\s*(?:=|:=|↦|→|≅|≈)\s*{TITAN_TOKEN}",
     rf"φ\s*[·*]\s*ν\s*=\s*1[^.;!?]{{0,240}}?(?:\bis\b|identical|same)"
     rf"[^.;!?]{{0,120}}?{TITAN_TOKEN}",
+    # Geometry is an operation too: Titan marks cannot silently become chart
+    # points, poles, metric operands, or arguments of a chart successor.
+    rf"{TITAN_PAIR}\s+(?:are|form|mark|name|sit\s+at)\s+"
+    rf"(?!not\b)(?:the\s+)?(?:antipodal|metric\s+poles?|chart\s+poles?)\b",
+    rf"\b(?:chordal\s+)?distance\s+between\s+{TITAN_PAIR}\s*(?:is|=|:=)\s*2\b",
+    rf"{TITAN_TOKEN}\s+(?:is\s+)?(?:at|on)\s+(?:the\s+)?"
+    rf"(?:north|south)?\s*(?:chart\s+)?(?:pole\s*)?(?:θ|theta)\s*=\s*(?:0|π|pi)\b",
+    rf"\bno\s*coercion\s*\(\s*titanframe\s*,\s*projectivepoint\s*\)"
+    rf"[^.;!?]{{0,80}}\b(?:is|remains?)\s+(?:open|unresolved|undecided)\b",
 )
 
 _BLOCK_TAG = re.compile(
@@ -60,7 +70,7 @@ _DENIAL_BEFORE = re.compile(
     r"(?:"
     r"(?:is|was|are|were)\s+not\s+(?:the|a)\s+(?:titan\s+)?"
     r"(?:equation|identity|operation|arithmetic)|"
-    r"(?:no|forbidden|inadmissible|invalid|undefined|ill-formed)\s+"
+    r"(?:no|forbidden|inadmissible|invalid|undefined|ill-formed|ill-typed)\s+"
     r"(?:titan\s+)?(?:arithmetic|equation|identity|operation|expression|syntax)|"
     r"(?:do\s+not|does\s+not|never|cannot)\s+"
     r"(?:write|assert|use|admit|license|define)|"
@@ -72,7 +82,7 @@ _DENIAL_BEFORE = re.compile(
 _DENIAL_AFTER = re.compile(
     r"^\s*(?:\([^)]*\)\s*)?(?:"
     r"(?:is|was|are|were|remains?)\s+(?:explicitly\s+)?"
-    r"(?:forbidden|inadmissible|invalid|undefined|ill-formed|not\s+well-formed|"
+    r"(?:forbidden|inadmissible|invalid|undefined|ill-formed|ill-typed|not\s+well-formed|"
     r"not\s+valid|not\s+defined|a\s+type\s+error|"
     r"retired|withdrawn|struck|dead|killed|banned)|"
     r"(?:has|have)\s+no\s+(?:typed\s+)?meaning|"

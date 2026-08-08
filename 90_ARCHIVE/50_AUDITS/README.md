@@ -38,4 +38,8 @@ These files are historical and non-authoritative unless a current source-owner
 lane explicitly cites them. Do not revive stale audit conclusions without
 checking the active Uplink and Rosetta surfaces first.
 
+- [`57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md`](57_TITAN_CHART_TYPE_CORRECTION_TOMBSTONE_2026_08_09.md)
+  preserves the exact superseded 2026-08-06 Titan/chart arguments removed by
+  the 2026-08-09 type correction. It is a withdrawal record, not a live claim.
+
 ⊙ = • × ○

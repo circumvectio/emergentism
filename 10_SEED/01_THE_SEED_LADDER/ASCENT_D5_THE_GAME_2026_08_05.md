@@ -92,8 +92,8 @@ whole, or whole → individual) crossed with **extraction valence**
 | **whole → indiv** | **ethical** — the whole raises a bearer without externalizing | **unethical** — the whole extracts from or sacrifices a bearer |
 
 > **⚠ TIER MARKER 2026-08-06 — this grid is `[I/S]`, and its 2026-07-19
-> completion is still `[D]`: historical synthesis, never K2-signed, extant
-> only in archive.** The parent projection carries the marker
+> completion is still `[D]`: historical synthesis, never a current signed
+> disposition, extant only in archive.** The parent projection carries the marker
 > (`D5_THE_GAME.md`: *"The canonical directional grid `[I/S]` (with its
 > 2026-07-19 completion still `[D]` historical synthesis)"*); this
 > transcription lost it. The dyadic gate itself — bearer AND whole must both

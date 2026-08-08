@@ -1,5 +1,5 @@
 // Emergentism PWA service worker — 124_PRIME_TIME_PWA_STAKEHOLDER_AUDIT_SHIP.md. Precache the spine; SWR runtime; offline fallback.
-const CACHE = 'emergentism-a4837a98cba3';
+const CACHE = 'emergentism-b900a71fe0de';
 const SPINE = [
   "/",
   "/practice/",

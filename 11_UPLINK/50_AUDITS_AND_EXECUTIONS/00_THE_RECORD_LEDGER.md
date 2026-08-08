@@ -386,7 +386,7 @@ filename-derived `[B]`.
 **Pending registrations (recorded 2026-07-22 — live collisions, deliberately not entered as rows):**
 - **157** — `157_DIMENSION_FIRST_RELEASE_CANDIDATE_2026_07_22.md` + `157_CORRECTION_K_NAMESPACE_ERRORS_2026_07_22.md`.
 - **158** — `158_PUBLICATION_AND_WORLD_CONTACT_LAUNCH_2026_07_22.md` + `158_UNGATED_MIGRATION_ACTS_EXECUTED_2026_07_22.md`.
-- In each pair the later file carries its own internal collision banner and states that "registration in the K-7 collision census is founder-gated". They are recorded here so the census is not read as complete, and they are left out of the table pending that founder act. **Cite all four by full filename; "receipt 157" and "receipt 158" are ambiguous.**
+- In each pair the later file carries its own internal collision banner and states that "registration in the K-7 collision census is founder-gated". They are recorded here so the census is not read as complete, and they are left out of the table pending that founder act. **Cite all four by full filename; the bare 157 and 158 prefixes are ambiguous.**
 
 ---
 

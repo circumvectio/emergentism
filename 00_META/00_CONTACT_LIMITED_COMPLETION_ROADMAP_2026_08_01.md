@@ -63,8 +63,8 @@ Finite residue still visible after that work:
 
 | ID | Current measured boundary | Required closure |
 |---|---|---|
-| ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE.** All 97 physically reused prefixes remain unsafe as bare citations; active source owners, lane indexes, and citation-scannable current/provisional public dependencies now carry exact target custody. Historical/report-only bodies remain unchanged. | preserve `ACTIVE_RECEIPT_CITATION_REGISTRY.json`, its dated digest receipt, and the full-filename rule; never rename history merely to make a counter zero |
-| ~~`PUBLIC-LIFECYCLE`~~ | **CLOSED 2026-08-01.** All 398 public HTML artifacts are classified: 40 current, four provisional, 341 frozen, eleven withheld, two infrastructure, and zero unclassified. One clean-route alias collision and eight precedence overlaps remain explicit rather than hidden. | preserve the zero-unclassified ratchet, matcher parity, sitemap/header ordering, and dated receipt custody |
+| ~~`CITATION-COLLISIONS`~~ | **CLOSED FOR THE DECLARED ACTIVE/CURRENT SCOPE.** All 101 physically reused prefixes remain unsafe as bare citations; the separate live legacy heuristic marks 94 dangerous prefixes without proving a target. Active source owners, lane indexes, and citation-scannable current/provisional public dependencies carry exact target custody. Historical/report-only bodies remain unchanged. | preserve `ACTIVE_RECEIPT_CITATION_REGISTRY.json`, its dated digest receipt, and the full-filename rule; never rename history merely to make a counter zero |
+| ~~`PUBLIC-LIFECYCLE`~~ | **CLOSED INTERNALLY; CURRENT SNAPSHOT 2026-08-09.** All 402 public HTML artifacts are classified: 40 current, four provisional, 92 frozen, 264 withheld, two infrastructure, and zero unclassified. Alias collisions are zero; 255 raw class overlaps remain explicit and resolve by declared precedence. | preserve the zero-unclassified ratchet, matcher parity, sitemap/header ordering, and dated receipt custody |
 | ~~`CLAIM-DISPOSITION`~~ | **CLOSED INTERNALLY 2026-08-01.** All 26 W/RQ rows and all 22 grave parent forms carry typed dispositions. Fifteen rows directly own contact gates, W3 and three RQs merge into existing contracts, seven rows narrow or terminate internally, twenty grave parents route only to successors, and two close without one. | preserve the 48-row lifecycle digest, zero-ambiguity ratchet, exact contract ownership, and the rule that internal results never move world contact |
 | `OWNER-HELD-RESIDUE` | topology and frozen-public-document gates remain held; other old plan rows require a fresh audit | one dated rule per genuine residue; stale rows close with evidence rather than silence |
 | `WORLD-CONTACT` | twelve research sockets are explicit but uneven: five deferred, one formal-only, three component-contact, and three ready-to-freeze; none supplies an accepted world outcome, and the independent-review gate remains unsatisfied | returned observation, review, or replication filed verbatim with outcome custody |
@@ -181,16 +181,18 @@ review prerequisite is marked complete by any local template or JSON record.
 The byte-identical public planning duplicate and the `08_FRAMEWORK_SUPPORT/00_META`
 topology conflict have explicit options in the contact-limited owner docket.
 Only a dated owner selection may choose a canonical path, a K3 custody route, a
-path-specific exception, or a migration. No unselected option implies a move.
+topology amendment, or a migration. No unselected option implies a move.
 
 **Preselection ratchet:** while both decisions remain unset, the two public
 copies must remain byte-identical, regular, and excluded by both exact parent
 rules in the current local/predeploy deployment configuration; this does not
-establish a live or historical deployment fact. The only active non-root
-`00_META` is the named unresolved framework-support lane, and a symlink or
-additional active lane fails the local check. An unregistered v5-or-later
-review bundle also fails closed until a successor contract and independently
-reviewed verification boundary are registered.
+establish a live or historical deployment fact. The only non-root `00_META`
+path present is the named grandfathered three-tombstone custody violation.
+It is hash-bound and reported as `PASS-WITH-DEBT`, not normalized into a
+conforming lane; a changed body, symlink, or additional path fails the local
+check. An unregistered v5-or-later review bundle also fails closed until a
+successor contract and independently reviewed verification boundary are
+registered.
 
 **Exit:** if selected, exactly one owner ruling is propagated through its named
 source paths and tests. If unselected, the two routing debts remain visible as

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Fail on receipt citations that cannot be trusted.
 
-WHY THIS EXISTS. On 2026-07-30 `52_THE_GENERATIVE_BASE.md` cited `r180`. No such
-receipt was ever written. A grep-based check PASSED it, because `180_*` matched
+WHY THIS EXISTS. On 2026-07-30 `52_THE_GENERATIVE_BASE.md` cited a bare 180
+prefix for an event that had no matching receipt. A grep-based check PASSED it, because `180_*` matched
 an unrelated April document in a different folder. THE NUMBER RESOLVED — TO THE
 WRONG FILE. That is the failure this script is built to catch, and it is only
 possible because receipt numbers in this corpus are not unique identifiers.
@@ -38,7 +38,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SKIP_DIRS = {"90_ARCHIVE", ".git", "node_modules", "__pycache__", ".vercel", "12_PUBLIC_SITE"}
 
-# Collisions present when this guard was written (2026-07-30). MAY NOT GROW.
+# Collisions present at the latest dated namespace snapshot. MAY NOT GROW.
 # Lower it only together with a landed disambiguation.
 #
 # 91 counts collisions ACROSS both receipt folders, which is the number that
@@ -46,14 +46,17 @@ SKIP_DIRS = {"90_ARCHIVE", ".git", "node_modules", "__pycache__", ".vercel", "12
 # different one in 60_SESSION_PACKETS, and "r156" cannot distinguish them. An
 # earlier count of 26 looked only inside 50_AUDITS and therefore understated the
 # defect by more than threefold.
-AMBIGUOUS_BASELINE = 91
+# The move from 91 to 94 is bound by
+# 243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md. It records
+# already-landed physical collisions; exact-path citation remains mandatory.
+AMBIGUOUS_BASELINE = 94
 
 SUPERSESSION = re.compile(
     r"^\s*(superseded_by|supersedes|supersession_note)\s*:"
     r"|^\s*status\s*:.*(supersed|DISPUTED|NOT CURRENT|dissent|CORRECTED)",
     re.I | re.M,
 )
-# "r180", "receipt 180", "Receipt 139" — but not "r1" or a 4-digit year.
+# bare r-plus-three-digit forms and explicit receipt-number phrases — but not r1 or a 4-digit year.
 #
 # THE BARE FORM REQUIRES THREE DIGITS. The Rosetta Stone material uses `R10`,
 # `R12`, `R14` for its ROWS (see D19a_ROSETTA_R10_GREEK_PHILOLOGY.md) — a

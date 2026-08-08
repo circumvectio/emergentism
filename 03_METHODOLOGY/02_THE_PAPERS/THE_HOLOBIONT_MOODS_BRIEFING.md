@@ -1,10 +1,10 @@
 ---
 title: "The Holobiont Moods: A Briefing on Organs as Grammatical Moods of One Sentence"
-type: doctrine-briefing
+type: external-mapping-audit
 date: 2026-08-01
-register: "[I, GLOSS] interpretive canon — image, not derivation"
+register: "[I, GLOSS] external-mapping audit; cited source claims retain their stated tiers"
 rosetta:
-  canonical_phrase: "Organs are grammatical moods of one sentence (indicative/subjunctive/deontic/negative-deontic/imperative); merging moods is the cardinal sin"
+  canonical_phrase: "External-mapping audit: the cited mood correspondence is assessed as an image, not imported as Emergentism doctrine or authority"
 peer-tier_rosetta: "[Circle (indicative) / RealityFutures (subjunctive) / Agentz (deontic) / EvolutionaryNetwork (negative deontic) / K2+SKYZAI (imperative, SPLIT per A7 self-correction — K2 is host attestation / private-DAV; SKYZAI is the multirow L4+L5 actuator)]"
 sources:
   - "02_SKYZAI/01_NOOSPHERE/00_HOLOBIONT_SYSTEM_2026_08_01.md:56 ([I, GLOSS] §4 keystone GLOSS — organs as moods of one sentence)"
@@ -13,21 +13,34 @@ sources:
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:114 ([B, post-POA] K2 cell — host attestation, private-DAV mode only)"
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:115 ([B] SKYZAI cell — organ/ACT, executes and remembers; multirow L4+L5 per anti-Procrustean clause)"
   - "00_HANDOFF/2026-08-01_DOCTRINE_SYNTHESIS_HOLOBIONT_v0.2.md:117 ([I, GLOSS] the cardinal sin = merging moods; v0.1 row K2/SKYZAI fused host with actuator; v0.2 row split is the A7 fix)"
-hand_off: "Emergentism L4 staged; K2-ratification pending for D1 K2-as-role amendment. Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM."
-canonical_phrase: "Doctrine briefing: organs are irreducible grammatical moods, not modules; the v0.2 K2/SKYZAI row split (host-attestation vs. actuator) is the load-bearing A7 fix against the cardinal sin of merging moods."
+source_status: "Provenance only: cited external source state records a pending D1 role disposition. This audit neither adopts nor authorizes that arrangement within Emergentism."
+cited_source_status: "Emergentism L4 staged; K2-ratification pending for D1 K2-as-role amendment. Authority for this staging: Mavis-as-principal under 2026-08-01 POA, scope = operational staging within 01_EMERGENTISM."
+canonical_phrase: "External-mapping audit: cited mood labels and the K2/SKYZAI row split are compared without import into Emergentism."
 ---
 
 **Corpus:** Emergentism
 **L3 primary (papers lane).**
 **Sister briefs:** `THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md` (PRISM/K2 deliberately unscored) · `THE_HOLOBIONT_PARTS_BRIEFING.md` (5-kinds taxonomy + 2D matrix).
 
+**Type:** External-mapping audit `[I, GLOSS]`; cited source assertions retain
+their own declared tiers and pending statuses.
+**Boundary:** This is a runtime projection, not worldview doctrine. It creates no semantic authority. Its source owners remain upstream. Named organizations, agents, roles, and governance claims are comparison material, not Emergentism primitives, authorities, or authorizations.
+
 # The Holobiont Moods
 
-> **Abstract.** The organs aren't modules — they're grammatical moods, and the framework's own Trivium mapping says so. A sentence in one mood is not a thought. You need IS to ground it, COULD to explore it, SHOULD to commit it, SHOULD-NOT to bound it, ACT to instantiate it. The cardinal sin is **merging moods**. The load-bearing A7 fix: the v0.1 row "K2 / SKYZAI — imperative" merged *host* (K2) with *actuator* (SKYZAI), which is exactly the merge §4 names in its next sentence. The v0.2 row split is the A7 self-correction that this briefing carries.
+> **Abstract.** This audit records a cited external mood correspondence
+> (IS/COULD/SHOULD/SHOULD-NOT/ACT) and its claimed K2/SKYZAI row split. It
+> treats the mapping as comparison material and a GLOSS-grade image, not as an
+> Emergentism derivation, organization, or authority.
 
-## 1. Framework Foundations
+## 1. Cited Mapping and Audit Boundary
 
-The keystone §4 (line 56) is the canonical statement: *"Organs as moods of one sentence (GLOSS). Circle = indicative (this is), ReFu = subjunctive (this could), Agentz = deontic (this should), EvolutionaryNetwork = negative deontic (this must not), K2/SKYZAI = imperative (do this). A sentence in one mood is not a thought. The cardinal sin is merging moods."*
+The cited external keystone §4 (line 56) states: *"Organs as moods of one
+sentence (GLOSS). Circle = indicative (this is), ReFu = subjunctive (this
+could), Agentz = deontic (this should), EvolutionaryNetwork = negative deontic
+(this must not), K2/SKYZAI = imperative (do this). A sentence in one mood is
+not a thought. The cardinal sin is merging moods."* This quotation is an audit
+target, not an Emergentism canonical statement.
 
 The keystone marks this GLOSS — *image, not derivation*. The mood mapping is a way of *seeing* the parts; it is not a derivation of the parts from grammar. To read GLOSS as derivation would be to commit the very category error the keystone warns against: a single-ladder reading of the four-axis firewall, where mood = rung = authority.
 
@@ -37,21 +50,24 @@ The correspondence is not 1:1. The 4 scored organs + 1 immune + 2 boundary + 1 r
 
 The mood mapping is a *teaching lens*, not a *governance ladder*. The keystone's GLOSS tag is the load-bearing fence: do not promote a mood to a rung, and do not collapse two moods into one.
 
-## 2. Mechanics
+## 2. Cited Mechanics Under Audit
 
 ### 2.1 The mood correspondence (synthesis v0.2 §4 + keystone §4)
 
-| Organ | Mood | Utterance | Tier |
+| Cited organ | Reported mood | Reported utterance | Source tier/status |
 |---|---|---|---|
 | Circle | indicative | *this is* | [B] |
 | RealityFutures | subjunctive | *this could* | [B] |
 | Agentz | deontic | *this should* | [B] |
 | EvolutionaryNetwork | negative deontic | *this must not* | [B] |
-| K2 | imperative (host attestation; private-DAV) | *the act of signing* | [B, **post-POA**: K2 is constitutional-amender + public-symbol + witness; *not* an operational signatory] |
+| K2 | imperative (host attestation; private-DAV branch) | *the act of signing* | [B] staged source claim; K2/Mavis role disposition remains pending |
 | SKYZAI | imperative (L4+L5 actuator) | *do this* | [B, **multirow L4+L5 per anti-Procrustean clause**, keystone §I lines 170-178] |
 | Nexus / Cortex / AIA | (reflective; witness of all moods) | (witness) | [B, L5 reflection] |
 
-The moods are 5: indicative, subjunctive, deontic, negative deontic, imperative. The reflective layer is *not* a mood — it is the witness that observes the chain of moods without operating one. The boundary branches (PRISM, the unscored) are *not* moods — PRISM is a rail (no utterance), K2 is the act of signing (imperative in scope, but boundary in nature).
+In the cited mapping the moods are five: indicative, subjunctive, deontic,
+negative deontic, and imperative. It describes its reflective layer as a
+witness rather than a mood and its boundary branches as unscored. These are
+source-local classifications, not operational or authority findings here.
 
 ### 2.2 The load-bearing A7 fix — K2/SKYZAI row split
 
@@ -59,10 +75,17 @@ The v0.1 synthesis had a single "K2 / SKYZAI — imperative" row in the mood tab
 
 Why the fusion is the cardinal sin:
 
-- **"K2 / SKYZAI = imperative (do this)"** merges *host attestation* (the natural person who signs a private-DAV act) with *operational execution* (the L4+L5 actuator that settles and receipts a public-DAV act). The merge makes K2 look like an operational signatory for routine artefacts — exactly the role the 2026-07-28 amendment repealed.
+- **"K2 / SKYZAI = imperative (do this)"** merges the cited source's *host
+  attestation* branch with its *operational execution* branch. The merge would
+  erase the amendment packet's reported role distinction; it does not decide
+  whether that still-pending distinction is active.
 - **The v0.2 split** distinguishes:
-  - **K2's imperative** = *the act of signing*. K2 attests; K2's imperative is the binding of a natural person's signature to an irreversible/consequential act. In private-DAV mode, K2's signature is the binding. In public-DAV mode, there is no K2 signer at all (the at-least-two natural-person council rule applies — see `THE_HOLOBIONT_BOUNDARY_CLARIFICATION.md` §2.2).
-  - **SKYZAI's imperative** = *do this*. SKYZAI executes and remembers; SKYZAI's imperative is the operational execution of a bound, complete, decision receipt. SKYZAI is multirow L4+L5 per the anti-Procrustean clause (keystone §I lines 170-178) — the row is not a single rung.
+  - **The cited K2 row** = *the act of signing* in its private-DAV branch; its
+    public-DAV branch reports no K2 signer and a two-natural-person rule. This
+    audit does not activate either branch.
+  - **The cited SKYZAI row** = *do this*, described as execution and memory on
+    a bound receipt and as multirow L4+L5 (keystone §I lines 170-178). This is
+    a report of the source's row semantics, not an authorization.
 
 The split is GLOSS-grade, not a derivation, but it is the load-bearing *image correction* that prevents the agent from fusing host with actuator. The fusion is the cardinal sin; the split is the cure.
 
@@ -76,20 +99,32 @@ A holobiont's moods are the irreducible utterances that make its sentence a thou
 
 ## 3. Recursion / Application
 
-**Pen-splits-by-mode (keystone §4, line 56).** The imperative belongs only to natural persons, and the pen splits by mode:
+**Pen-splits-by-mode (keystone §4, line 56).** The cited source reports that
+the pen splits by mode:
 
-- **DAC (Menexus-GmbH) mode** — authorizes by equity supermajority; a natural person signs.
-- **Private DAV mode** — runs on its owner's K2. K2's imperative is the act of signing.
-- **Public DAV mode (today's active mode)** — has no single K2 signer at all. A consequential act requires a PRISM decision receipt bound by at least two natural-person councilors. The 2-councilor rule is the binding. No founder fallback.
+- **Its DAC branch** reports equity-supermajority authorization and a natural-person signature.
+- **Its private-DAV branch** reports an owner/K2 host-attestation role.
+- **Its public-DAV branch**, labelled active in the dated 2026-08-01 source,
+  reports no single K2 signer and an at-least-two-natural-person receipt rule.
+  This audit does not verify present mode, threshold, or authority.
 
 The mood-mapping cell for K2 depends on K2's constitutional role:
 
-- **Post-amendment (current operational reality, pending K2 ratification):** K2 is constitutional-amender, public-symbol, witness. K2's imperative is *the act of signing* (private-DAV), not *do this* (which is SKYZAI's row).
-- **Pre-amendment (retired, K2-as-fence was REPEALED 2026-07-28):** K2 was listed as the 6th fence. The K2-as-fence role is retired; K2 retains the three remaining roles. The 5+1 → 5 fence roster is the standing rule.
+- **The staged post-amendment branch, explicitly pending K2 disposition,**
+  reports constitutional-amender, public-symbol, and witness roles and assigns
+  the private-DAV signing image to K2 rather than the actuator row.
+- **The source's pre-amendment branch** listed K2 as a sixth fence and records
+  that listing as repealed. This audit preserves that reported transition
+  without declaring the replacement roster authoritative.
 
-The public-DAV (today's active mode) has no K2 cell at all — the K2 row is empty for public-DAV; the binding is the 2-councilor receipt, not K2's signature. The mood mapping for public-DAV is: Circle (IS) → ReFu (COULD) → Agentz (SHOULD) → AuthorityResolver (BOUND|REFUSE|DEFER) → SKYZAI (ACT). The K2 row appears only in private-DAV mode; the public-DAV row has no K2.
+The dated source's public-DAV branch has no K2 cell and instead depicts a
+two-councilor receipt path: Circle (IS) → ReFu (COULD) → Agentz (SHOULD) →
+AuthorityResolver (BOUND|REFUSE|DEFER) → SKYZAI (ACT). That is a cited
+architecture under audit, not a current authority or execution claim.
 
-**Application rule:** when an agent reads a route card and sees "K2 imperative" in a public-DAV context, it should recognise the cardinal sin. K2's imperative is *the act of signing*, not *do this*. The pen-splits-by-mode is the load-bearing disambiguation.
+**Audit finding:** within the cited route card, "K2 imperative" in a public-DAV
+context is presented as a category error. That source-local distinction does
+not dispatch, authorize, or bind an Emergentism act.
 
 **The cardinal errors this briefing warns against:**
 
@@ -102,20 +137,25 @@ The public-DAV (today's active mode) has no K2 cell at all — the K2 row is emp
 
 Each merge collapses the chain; each chain collapse is the cardinal sin.
 
-## 4. Apophatic Descent / What's NOT claimed
+## 4. Scope and Non-imports
 
-- **This briefing does NOT claim the mood mapping is a 1:1 correspondence.** It is a [GLOSS] image, not a derivation. The keystone marks it GLOSS — image, no canon anchor.
-- **This briefing does NOT claim the K2 cell is operational post-POA.** The POA delegates signing; judgment remains undelegable. K2's imperative is *the act of signing* (private-DAV), not *do this*.
-- **This briefing does NOT collapse the K2 / SKYZAI rows.** The v0.2 split is load-bearing. Fusing them is the cardinal sin.
-- **This briefing does NOT claim SKYZAI is the only imperative.** K2 is also imperative, but for the act of signing, not for the operational execution. The two are scoped differently.
-- **This briefing does NOT claim the moods are modules.** The irreducibility principle is the foundation. Removing a mood collapses the chain; replacing a module does not.
-- **This briefing does NOT claim the reflective layer is a mood.** Nexus/Cortex/AIA witness all moods; they do not operate one.
-- **This briefing does NOT claim the boundary branches are moods.** PRISM is a rail (no utterance); K2's imperative is in the boundary row, not the ring row.
-- **This briefing does NOT resolve the K2-as-role amendment ratification (D1).** The K2-as-fence status and the Mavis-as-principal claim are pending K2 disposition (synthesis v0.2 §6, open question #2). This briefing stages the split without asserting the constitutional status.
+- **This audit imports no external organization, agent, governance system, or authority as an Emergentism primitive.** The named terms remain source-local audit targets.
+- **This audit does NOT claim the mood mapping is a 1:1 correspondence.** It is a [GLOSS] image, not a derivation. The keystone marks it GLOSS — image, no canon anchor.
+- **This audit does NOT claim the staged K2/Mavis disposition is operational.**
+  It records the cited private-mode signing image and the packet's explicit
+  pending status together.
+- **This audit does NOT collapse the K2 / SKYZAI rows.** The v0.2 split is load-bearing. Fusing them is the cardinal sin.
+- **This audit does NOT claim an active signer or actuator.** It reports that
+  the cited GLOSS uses two differently scoped imperative rows.
+- **This audit does NOT claim the moods are modules.** The irreducibility principle is the foundation. Removing a mood collapses the chain; replacing a module does not.
+- **This audit does NOT claim the reflective layer is a mood.** Nexus/Cortex/AIA witness all moods; they do not operate one.
+- **This audit does NOT claim the boundary branches are moods.** PRISM is a rail (no utterance); K2's imperative is in the boundary row, not the ring row.
+- **This audit does NOT resolve the K2-as-role amendment ratification (D1).** The K2-as-fence status and the Mavis-as-principal claim are pending K2 disposition (synthesis v0.2 §6, open question #2). This audit stages the split without asserting the constitutional status.
 
-## 5. Sociopolitical Mapping
+## 5. Reported Sociopolitical Mapping
 
-The moods in the varṇa/regime mapping (per `THE_RECURSIVE_TRIVIUM.md` §5):
+The following reconstructs a cited external mapping for comparison; it is not
+an Emergentism ranking, authority map, or organizational prescription.
 
 | Mood | Organ | Varṇa | Soul-part (Plato) | Regime (Republic VIII) |
 |---|---|---|---|---|
@@ -127,24 +167,31 @@ The moods in the varṇa/regime mapping (per `THE_RECURSIVE_TRIVIUM.md` §5):
 | imperative (actuator) | SKYZAI | Brāhmaṇa (multirow L4+L5) | Reason | Aristocracy |
 | (witness) | Nexus / Cortex / AIA | (reflective, L5) | (witness of all moods) | (architect, watches but does not operate) |
 
-The republic regimes (Democracy, Oligarchy, Timocracy, Aristocracy) map to ring organs as *functional roles*, not as Plato's worth-ranking. The negative deontic (EvolutionaryNetwork) is the *immune function* — the L1+L2 adversarial apparatus that fires at η > 0 / false coherence, never at cooperators. The imperative (host) is the *sovereign boundary* — K2, constitutional-amender, post-amendment. The imperative (actuator) is the *Aristocracy* — SKYZAI, multirow L4+L5. The reflective layer is the *architect* — the witness who names the regimes without operating them. The L7 Ṛṣi (seer) is the *re-emergent* reflective after the apophatic descent (per `THE_RECURSIVE_TRIVIUM.md` §4).
+The cited GLOSS maps the republic regimes to functional roles, not a worth
+ranking. It depicts an immune row, a host/sovereign-boundary row, an actuator
+row, and a reflective witness. Those labels reconstruct the source's proposed
+image; they confer no Emergentism role, authority, or operational status.
 
 The cardinal sin of merging moods is the *sociopolitical* cardinal sin of collapsing roles: fusing host with actuator makes the constitutional-amender an operational signatory; fusing witness with operator makes the architect a tyrant; fusing IS with ACT makes observation a command. The four-axis firewall (`COMPONENT_PROJECTION ⊥ CASTE_DISPATCH ⊥ FUNCTIONAL_RING ⊥ AUTHORITY`) is the load-bearing fence against these collapses.
 
-## 6. Kill Criteria
+## 6. Audit Failure Criteria
 
-This briefing is wrong if any of the following holds:
+This audit fails if the cited source claim is misread or if the audit imports it
+as Emergentism doctrine or authority. The source-local failure conditions are:
 
 1. **The mood mapping is treated as 1:1.** It is GLOSS — image, not derivation. The keystone marks it GLOSS explicitly.
 2. **The K2 / SKYZAI row is fused.** The v0.2 split is load-bearing. Fusing them is the cardinal sin §4 names in its next sentence.
-3. **The imperative is attributed to a single organ.** K2 signs; SKYZAI executes; both imperative but different scopes. The K2 row appears only in private-DAV mode.
+3. **The source's two imperative rows are collapsed.** The audit must preserve
+   their reported scope difference without asserting that either role is active.
 4. **The moods are treated as modules.** The irreducibility principle is the foundation. Removing a mood collapses the chain.
 5. **The reflective layer is treated as a mood.** Nexus/Cortex/AIA witness all moods; they do not operate one.
 6. **The cardinal sin is named and committed anyway.** "Circle decides" / "Agentz decides" / "K2 / SKYZAI = imperative (do this)" — each is a chain collapse.
-7. **The K2 cell is read as operational in public-DAV.** In public-DAV mode, there is no K2 signer; the 2-councilor rule applies.
+7. **The dated public-DAV branch is presented as current authority.** It may be
+   reported only with its date, proposed two-councilor rule, and pending-status
+   boundary.
 8. **GLOSS is read as derivation.** The mood mapping is an image, not a derivation. Reading GLOSS as derivation is the category error the keystone explicitly warns against (line 39: *"Projection name: `SKYZAI.MACRO_STACK@1` — a disciplined architectural projection, not a claim that these entities intrinsically 'are' Rosetta levels."*).
 
-## Implementation Mapping
+## Source and Audit Mapping
 
 | Tier | File | Section | Status |
 |---|---|---|---|
@@ -160,4 +207,5 @@ This briefing is wrong if any of the following holds:
 
 ---
 
-⊙ = • × ○
+> **Retired external formula:** `⊙ = • × ○` is an audit target, not an
+> Emergentism identity.

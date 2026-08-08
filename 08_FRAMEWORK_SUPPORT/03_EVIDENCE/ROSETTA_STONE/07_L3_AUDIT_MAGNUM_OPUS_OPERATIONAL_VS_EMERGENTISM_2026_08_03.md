@@ -24,6 +24,11 @@ grounds:
 
 # L3 Audit — Magnum Opus operational layer × Emergentism registers
 
+> **Boundary:** This audit is a runtime projection, not worldview doctrine. It
+> creates no semantic authority; source owners remain upstream. Its external
+> operational vocabulary is quoted only to test it against the named
+> Emergentism registers.
+
 > **Scope:** Apply Emergentism’s Rosetta + morals/ethics registers to the Magnum
 > Opus **holobiont/dispatch/operational** layer (Documents AGENTS, rosetta-dispatch,
 > Skyzai board≠dispatch). Score **overclaim** and **underclaim**. Not a product

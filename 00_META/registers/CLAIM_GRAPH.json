@@ -634,7 +634,7 @@
     {
       "from": "OS01-08",
       "kind": "owned_by",
-      "to": "K-7"
+      "to": "K-1"
     },
     {
       "from": "OS01-08",
@@ -645,11 +645,6 @@
       "from": "OS01-08",
       "kind": "projected_to",
       "to": "COMP-ACTIVE-01-WELTANSCHAUUNG"
-    },
-    {
-      "from": "OS01-08",
-      "kind": "supported_by",
-      "to": "K-1"
     },
     {
       "from": "OS01-08",
@@ -2353,8 +2348,8 @@
     }
   ],
   "metrics": {
-    "edges": 464,
-    "nodes": 102
+    "edges": 463,
+    "nodes": 109
   },
   "nodes": [
     {
@@ -2875,6 +2870,41 @@
     },
     {
       "id": "K-7",
+      "kind": "semantic_owner",
+      "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
+    },
+    {
+      "id": "KER-1",
+      "kind": "semantic_owner",
+      "path": "05_COSMOLOGY/00_CANONICAL_FORMULA_BLOCK.md"
+    },
+    {
+      "id": "KER-2",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md"
+    },
+    {
+      "id": "KER-3",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/03_THE_EMERGENT_AXIOMS.md"
+    },
+    {
+      "id": "KER-4",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/04_THE_CONJECTURES.md"
+    },
+    {
+      "id": "KER-5",
+      "kind": "semantic_owner",
+      "path": "00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md"
+    },
+    {
+      "id": "KER-6",
+      "kind": "semantic_owner",
+      "path": "06_ONTOLOGY/06_THE_REVELATIONS.md"
+    },
+    {
+      "id": "KER-7",
       "kind": "semantic_owner",
       "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_THE_RECORD_LEDGER.md"
     }

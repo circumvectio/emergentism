@@ -57,13 +57,6 @@ REQUIRED_INVESTIGATION_FIELDS = (
 CONTACT_KINDS = {"CONTACT-GATED", "MERGED-TO-CONTACT"}
 INTERNAL_KINDS = {"INTERNAL-NARROWED", "INTERNAL-TERMINAL"}
 GRAVE_KINDS = {"MERGED-TO-OWNER", "INTERNAL-TERMINAL"}
-# RESTORED 2026-08-05. Both names below are USED in this file (INVESTIGATION_STATES
-# once, PINNED_GRAVE_STATUS at the expected-status and missing-baseline checks) and
-# were DEFINED NOWHERE: they were dropped by merge 80759036 ("conflicts resolved
-# main-side"), which left this checker raising NameError on every run. Recovered
-# verbatim from 1797138a. Receipt:
-# 11_UPLINK/50_AUDITS_AND_EXECUTIONS/242_G2_PROVED_AND_FOUND_TO_BE_PRIOR_ART_2026_08_05.md
-INVESTIGATION_STATES = {"OPEN", "DEFERRED", "CLOSED"}
 PINNED_GRAVE_STATUS = {
     "DF-01": "FORMALLY-REFUTED", "DF-02": "CATEGORY-ERROR",
     "DF-03": "EMPIRICALLY-REFUTED", "DF-04": "FORMALLY-REFUTED",
@@ -71,12 +64,20 @@ PINNED_GRAVE_STATUS = {
     "DF-07": "EMPIRICALLY-REFUTED", "DF-08": "FORMALLY-REFUTED",
     "DF-09": "FORMALLY-REFUTED", "DF-10": "FORMALLY-REFUTED",
     "DF-11": "FORMALLY-REFUTED", "DF-12": "FORMALLY-REFUTED",
-    "DF-13": "EMPIRICALLY-REFUTED", "DF-14": "FORMALLY-REFUTED",
+    "DF-13": "NOT-WELL-POSED", "DF-14": "FORMALLY-REFUTED",
     "DF-15": "CATEGORY-ERROR", "DF-16": "FORMALLY-REFUTED",
     "DF-17": "NOT-WELL-POSED", "DF-18": "NOT-WELL-POSED",
     "DF-19": "FORMALLY-REFUTED", "DF-20": "CATEGORY-ERROR",
     "DF-21": "FORMALLY-REFUTED", "DF-22": "PROCESS-DEFECT",
 }
+# The 2026-07-29 investigation authorization is history, not a status that can
+# thaw a grave. Twenty-one parent forms record the status they carried when the
+# instruction landed; DF-14 was not reopened and therefore has no such field.
+PINNED_GRAVE_PRIOR_STATUS = {
+    row_id: status for row_id, status in PINNED_GRAVE_STATUS.items()
+    if row_id not in {"DF-13", "DF-14"}
+}
+PINNED_GRAVE_PRIOR_STATUS["DF-13"] = "EMPIRICALLY-REFUTED"
 CONTRACT_FIELDS = {
     "contract_id", "component_id", "protocol_owner", "protocol_refs",
     "maturity", "blocked_by", "discriminator", "kill", "survivor",
@@ -105,9 +106,10 @@ LIVE = {"FORMALLY-VALID","RECEIPTED","OPEN-FORMAL","OPEN-EMPIRICAL",
 TERMINAL = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR",
             "NOT-WELL-POSED","DECORATIVE","PROCESS-DEFECT"}
 ONE_WAY = {"FORMALLY-REFUTED","EMPIRICALLY-REFUTED","CATEGORY-ERROR"}
-KNOWN_SECTIONS = {"schema","routing_role","human_owner","serialization",
-                  "live_statuses","terminal_statuses","one_way_statuses","rules",
-                  "disposition_policy","owner_reopening","validated","open","graves","reopened","restored"}
+KNOWN_SECTIONS = {"schema", "routing_role", "human_owner", "serialization",
+                  "live_statuses", "terminal_statuses", "one_way_statuses", "rules",
+                  "disposition_policy", "investigation_authorization", "validated",
+                  "open", "graves", "investigations", "typed_survivors"}
 # HOLE 3: a counterexample must carry content, not merely be non-blank.
 PLACEHOLDER = re.compile(r"^\s*(none|n/?a|tbd|todo|-+|\.+|x+|unknown|see above)\s*\.?\s*$", re.I)
 MIN_COUNTEREXAMPLE = 25
@@ -116,12 +118,14 @@ EXPECTED_ADJUDICATION = "11_UPLINK/50_AUDITS_AND_EXECUTIONS/239_OPEN_CLAIM_DISPO
 EXPECTED_ROUTING_ROLE = "validation-status routing only; no semantic authority, no tier promotion"
 EXPECTED_SERIALIZATION = "JSON subset of YAML 1.2 for deterministic stdlib parsing"
 EXPECTED_RULES = (
-    "Evidence tier and validation status are orthogonal axes; neither implies the other.",
-    "A one-way row may never return to a live status AS THE CLAIM IT WAS. Exactly three moves are lawful: NARROWED with a named weaker form; a new RQ row with its own id, discriminator and kill; or OWNER-REOPENED under an owner ruling. The counterexample stays attached in every case.",
-    "A one-way row must cite the counterexample that killed it.",
-    "A reopened row must name its parent and state why the parent's counterexample does not reach it.",
-    "Appearing in this register is not evidence for any claim.",
-    "OWNER-REOPENED is the only lawful path from a terminal status back to live. It requires an owner ruling receipt, an intact counterexample, and a declared repair_path. It restores active investigation, never asserted truth.",
+    "Evidence tier, validation status, and investigation state are orthogonal axes; none implies another.",
+    "A grave retains its terminal validation status permanently. A weaker successor or new RQ may be investigated under its own ID; the parent never thaws.",
+    "Every grave cites the counterexample or process defect that killed it.",
+    "An RQ names its parent, states why the parent kill does not reach the new question, and carries its own discriminator, kill, and survivor.",
+    "Appearing in this register, or receiving owner authorization for investigation, supplies no evidence for any claim.",
+)
+EXPECTED_AUTHORIZATION_INSTRUCTION = (
+    "The 2026-07-29 owner instruction authorized renewed inquiry, not truth-status changes."
 )
 
 
@@ -176,7 +180,7 @@ def lifecycle_rows(document: dict[str, Any]) -> list[dict[str, Any]]:
     """Return every row whose current lifecycle Sprint 6 adjudicates."""
     return [
         row
-        for section in ("open", "reopened", "graves")
+        for section in ("open", "investigations", "graves")
         for row in document.get(section, [])
         if isinstance(row, dict)
     ]
@@ -340,33 +344,62 @@ def check(root: Path = ROOT) -> list[str]:
                 f"external owner {owner_id}: source does not declare its exact marker"
             )
 
-    # 174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md remains transition
-    # history after adjudication; 239_OPEN_CLAIM_DISPOSITION_2026_08_01.md owns
-    # current status.
-    reopening = document.get("owner_reopening")
-    if not isinstance(reopening, dict):
-        errors.append("owner_reopening history block is required")
+    # 174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md authorized
+    # investigation only; 239_OPEN_CLAIM_DISPOSITION_2026_08_01.md adjudicated the
+    # resulting successor routes. The authorization block preserves both facts
+    # without inventing OWNER-REOPENED as a validation status.
+    authorization = document.get("investigation_authorization")
+    if not isinstance(authorization, dict):
+        errors.append("investigation_authorization history block is required")
     else:
         _exact_keys(
-            reopening,
-            {"ruling", "receipt", "scope", "what_it_does_not_do", "current_state", "adjudication_receipt"},
-            "owner_reopening",
+            authorization,
+            {"instruction", "receipt", "scope", "what_it_does_not_do", "current_state", "adjudication_receipt"},
+            "investigation_authorization",
             errors,
         )
-        if reopening.get("receipt") != EXPECTED_RULING:
+        if authorization.get("instruction") != EXPECTED_AUTHORIZATION_INSTRUCTION:
             errors.append(
-                "owner_reopening must retain the exact "
+                "investigation_authorization.instruction must preserve the inquiry-only boundary"
+            )
+        if authorization.get("receipt") != EXPECTED_RULING:
+            errors.append(
+                "investigation_authorization must retain the exact "
                 "174_OWNER_REOPENING_AND_TITAN_RESTORATION_2026_07_29.md ruling receipt"
             )
-        if reopening.get("adjudication_receipt") != EXPECTED_ADJUDICATION:
-            errors.append("owner_reopening must bind current dispositions to receipt 239")
-        _repo_file(root, reopening.get("receipt"), "owner_reopening.receipt", errors)
-        _repo_file(root, reopening.get("adjudication_receipt"), "owner_reopening.adjudication_receipt", errors)
-        for field in ("ruling", "scope", "what_it_does_not_do", "current_state"):
-            if not isinstance(reopening.get(field), str) or not reopening.get(field, "").strip():
-                errors.append(f"owner_reopening: {field} is required")
-        if "ADJUDICATED" not in str(reopening.get("current_state")):
-            errors.append("owner_reopening.current_state must record the completed adjudication")
+        if authorization.get("adjudication_receipt") != EXPECTED_ADJUDICATION:
+            errors.append("investigation_authorization must bind current dispositions to receipt 239")
+        _repo_file(
+            root, authorization.get("receipt"),
+            "investigation_authorization.receipt", errors,
+        )
+        _repo_file(
+            root, authorization.get("adjudication_receipt"),
+            "investigation_authorization.adjudication_receipt", errors,
+        )
+        for field in ("instruction", "scope", "what_it_does_not_do", "current_state"):
+            if not isinstance(authorization.get(field), str) or not authorization.get(field, "").strip():
+                errors.append(f"investigation_authorization: {field} is required")
+        scope = str(authorization.get("scope", ""))
+        if "21 of the 22" not in scope or "DF-14" not in scope:
+            errors.append(
+                "investigation_authorization.scope must retain the 21-of-22 and DF-14 correction"
+            )
+        boundary = str(authorization.get("what_it_does_not_do", ""))
+        if "cannot delete a counterexample" not in boundary or "not that the prior form is true" not in boundary:
+            errors.append(
+                "investigation_authorization.what_it_does_not_do must preserve counterexamples and refuse truth promotion"
+            )
+        current_state = str(authorization.get("current_state", ""))
+        if (
+            "ADJUDICATED" not in current_state
+            or "DF-13" not in current_state
+            or "DF-14" not in current_state
+            or "explicit successor rows" not in current_state
+        ):
+            errors.append(
+                "investigation_authorization.current_state must retain the adjudicated DF-13/DF-14 successor boundary"
+            )
 
     seen: dict[str, str] = {}
 
@@ -377,13 +410,13 @@ def check(root: Path = ROOT) -> list[str]:
 
     raw_known_ids = {
         str(row.get("id"))
-        for section in ("validated", "open", "graves", "reopened", "restored")
+        for section in ("validated", "open", "graves", "investigations", "typed_survivors")
         for row in (document.get(section) or [])
         if isinstance(row, dict) and row.get("id") is not None
     }
     executable_blocker_ids = {
         str(row.get("id"))
-        for section in ("open", "reopened")
+        for section in ("open", "investigations")
         for row in (document.get(section) or [])
         if isinstance(row, dict)
         and row.get("status") in LIVE
@@ -656,6 +689,7 @@ def check(root: Path = ROOT) -> list[str]:
         try:
             _text(row.get("form"), f"{row_id}.form")
             _text(row.get("counterexample"), f"{row_id}.counterexample")
+            _text(row.get("repair_path"), f"{row_id}.repair_path")
         except ContractError as exc:
             errors.append(str(exc))
         cx = str(row.get("counterexample", "")).strip()
@@ -666,9 +700,25 @@ def check(root: Path = ROOT) -> list[str]:
                 f"{row_id}: counterexample is a placeholder or too thin to be one ({cx!r}) — "
                 "'intact' means content, not merely non-blank"
             )
-        for forbidden in ("status_before_reopening", "repair_path", "investigation_state"):
-            if forbidden in row:
-                errors.append(f"{row_id}: {forbidden} belongs to history or a successor inquiry, not a grave")
+        # Historical authorization metadata remains attached to the grave. It
+        # never changes the grave's current terminal status. DF-14 is the one
+        # parent that was not reopened and therefore has no prior-status field.
+        prior_status = row.get("status_before_reopening")
+        expected_prior_status = PINNED_GRAVE_PRIOR_STATUS.get(row_id)
+        if expected_prior_status is None:
+            if "status_before_reopening" in row:
+                errors.append(
+                    f"{row_id}: status_before_reopening is forbidden because this grave was not reopened"
+                )
+        elif prior_status != expected_prior_status:
+            errors.append(
+                f"{row_id}: status_before_reopening drifted; "
+                f"expected {expected_prior_status}, found {prior_status!r}"
+            )
+        if "investigation_state" in row:
+            errors.append(
+                f"{row_id}: investigation_state may not turn a grave into an active investigation"
+            )
         successor = row.get("successor")
         if successor is not None and not isinstance(successor, str):
             errors.append(f"{row_id}: successor must be a string id or null")
@@ -680,6 +730,15 @@ def check(root: Path = ROOT) -> list[str]:
             errors.append(f"{row_id}: successor_kind is required, use closed_no_successor when there is none")
         if successor is None and row.get("successor_kind") != "closed_no_successor":
             errors.append(f"{row_id}: a null successor must be marked closed_no_successor")
+        if successor is not None:
+            try:
+                successor_kind = _text(row.get("successor_kind"), f"{row_id}.successor_kind")
+                if successor_kind == "closed_no_successor":
+                    errors.append(
+                        f"{row_id}: a named successor may not be marked closed_no_successor"
+                    )
+            except ContractError as exc:
+                errors.append(str(exc))
         validate_disposition(row, "graves")
 
     missing_baseline = sorted(set(PINNED_GRAVE_STATUS) - grave_ids)
@@ -691,9 +750,8 @@ def check(root: Path = ROOT) -> list[str]:
 
     # --- investigations --------------------------------------------------
     investigation_ids: set[str] = set()
-    reopened_ids: set[str] = set()
     for row in _rows(document, "investigations"):
-        row_id = _text(row.get("id"), "reopened.id")
+        row_id = _text(row.get("id"), "investigations.id")
         _exact_keys(
             row,
             {"id", "parent", "tier", "status", "docket", "question",
@@ -702,13 +760,10 @@ def check(root: Path = ROOT) -> list[str]:
             row_id,
             errors,
         )
-        claim_id(row_id, "reopened")
-        reopened_ids.add(row_id)
+        claim_id(row_id, "investigations")
+        investigation_ids.add(row_id)
         if not RQ_ID.fullmatch(row_id):
             errors.append(f"{row_id}: investigation ids must look like RQ-nn")
-        state = row.get("investigation_state")
-        if state not in INVESTIGATION_STATES:
-            errors.append(f"{row_id}: invalid investigation_state {state!r}")
         for field in REQUIRED_INVESTIGATION_FIELDS:
             try:
                 _text(row.get(field), f"{row_id}.{field}")
@@ -725,21 +780,20 @@ def check(root: Path = ROOT) -> list[str]:
         status = _text(row.get("status"), f"{row_id}.status")
         if status not in live | terminal:
             errors.append(f"{row_id}: unknown status {status}")
-        validate_disposition(row, "reopened")
+        validate_disposition(row, "investigations")
 
-    expected_reopened_ids = {f"RQ-{number:02d}" for number in range(1, 10)}
-    if reopened_ids != expected_reopened_ids:
+    expected_investigation_ids = {f"RQ-{number:02d}" for number in range(1, 10)}
+    if investigation_ids != expected_investigation_ids:
         errors.append(
-            f"RQ inventory drifted: missing={sorted(expected_reopened_ids-reopened_ids)} "
-            f"extra={sorted(reopened_ids-expected_reopened_ids)}"
+            f"RQ inventory drifted: missing={sorted(expected_investigation_ids-investigation_ids)} "
+            f"extra={sorted(investigation_ids-expected_investigation_ids)}"
         )
 
-    # --- restored --------------------------------------------------------
-    # HOLE 1b: `restored` was a KNOWN section whose rows were never validated, so a
-    # refuted form could be appended there as FORMALLY-VALID and pass. It is the
-    # DF-22 shape with a machine blessing, so it is checked like everything else.
-    restored_ids: set[str] = set()
-    for row in (document.get("restored") or []):
+    # --- typed survivors -------------------------------------------------
+    # A typed survivor is a separately proved statement, never a restored grave
+    # form. Validate every field so a DF row cannot be smuggled into this bucket.
+    survivor_ids: set[str] = set()
+    for row in _rows(document, "typed_survivors"):
         if not isinstance(row, dict):
             errors.append("typed_survivors: every row must be an object")
             continue
@@ -747,26 +801,28 @@ def check(root: Path = ROOT) -> list[str]:
         _exact_keys(
             row,
             {"id", "status", "tier", "claim", "was", "why_the_falsifier_misses", "ksc_04_status", "owner", "inherits"},
-            row_id or "restored row",
+            row_id or "typed-survivor row",
             errors,
         )
         if not TR_ID.fullmatch(row_id):
             errors.append(f"typed_survivors: ids must look like TR-nn, got {row_id!r} — "
                           "a grave id here would assert a refuted form as valid")
             continue
-        claim_id(row_id, "restored")
-        restored_ids.add(row_id)
+        claim_id(row_id, "typed_survivors")
+        survivor_ids.add(row_id)
         if row.get("status") != "FORMALLY-VALID":
-            errors.append(f"{row_id}: a restored row must carry FORMALLY-VALID")
+            errors.append(f"{row_id}: a typed survivor must carry FORMALLY-VALID")
         if row.get("tier") not in {"A", "S"}:
-            errors.append(f"{row_id}: restored by proof means tier A or S, not {row.get('tier')!r}")
+            errors.append(f"{row_id}: a typed survivor proved in-system must be tier A or S, not {row.get('tier')!r}")
         for field in ("claim", "was", "why_the_falsifier_misses", "ksc_04_status", "owner", "inherits"):
             if not str(row.get(field, "")).strip():
-                errors.append(f"{row_id}: restored rows must state {field}")
+                errors.append(f"{row_id}: typed survivors must state {field}")
         _repo_file(root, row.get("owner"), f"{row_id}.owner", errors)
 
-    if restored_ids != {"TR-01"}:
-        errors.append(f"restored inventory drifted: expected TR-01, found {sorted(restored_ids)}")
+    if survivor_ids != {"TR-01"}:
+        errors.append(
+            f"typed-survivor inventory drifted: expected TR-01, found {sorted(survivor_ids)}"
+        )
 
     # --- successor resolution -------------------------------------------
     known = grave_ids | investigation_ids | open_ids
@@ -792,7 +848,7 @@ def check(root: Path = ROOT) -> list[str]:
     # second confirmation or merge through another merge row.
     row_by_id = {
         str(row.get("id")): row
-        for section in ("open", "reopened", "graves")
+        for section in ("open", "investigations", "graves")
         for row in document.get(section, ())
         if isinstance(row, dict)
     }
@@ -863,15 +919,18 @@ def check(root: Path = ROOT) -> list[str]:
         elif not re.fullmatch(r"IV-(?:W\d+(?:-[A-Z]+)?|RQ-\d{2}|DF-\d{2})-\d{2}", result_id):
             errors.append(f"{row.get('id')}: internal result_id has no governed FV/IV shape")
 
-    # Every historical reopening transition is now adjudicated. Parent forms are
-    # terminal or narrowed; executable work lives only in explicit successors.
-    still_reopened = [
-        row.get("id") for row in document["graves"] if row.get("status") == "OWNER-REOPENED"
+    # Authorization never thaws a grave. Current status is pinned above and
+    # every executable continuation lives only in an explicit successor row.
+    nonterminal_graves = [
+        str(row.get("id"))
+        for row in document["graves"]
+        if row.get("status") not in TERMINAL
     ]
-    if still_reopened:
-        errors.append("grave parent transitions remain unadjudicated: " + ", ".join(still_reopened))
-    if sum(row.get("status") == "NARROWED" for row in document["graves"]) != 1:
-        errors.append("grave scope must retain exactly one narrowed parent form (DF-14)")
+    if nonterminal_graves:
+        errors.append(
+            "grave parent forms may not remain active investigations: "
+            + ", ".join(nonterminal_graves)
+        )
 
     # All 48 W/RQ/grave lifecycle rows must be explicitly dispositioned.
     if len(lifecycle_rows(document)) != 48:
@@ -894,7 +953,8 @@ def main() -> int:
     print(
         "CLAIM STATUS CONTRACT: PASS "
         f"({len(document['validated'])} validated, {len(document['open'])} open, "
-        f"{len(document['graves'])} graves, {len(document['reopened'])} reopened; "
+        f"{len(document['graves'])} graves, {len(document['investigations'])} investigations, "
+        f"{len(document['typed_survivors'])} typed survivors; "
         f"48 lifecycle rows, lifecycle={canonical_lifecycle_sha256(document)[:12]}, "
         f"contract={canonical_contract_sha256(document)[:12]})"
     )

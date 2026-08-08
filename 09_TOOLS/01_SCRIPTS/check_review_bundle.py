@@ -37,6 +37,7 @@ BINDING_PROFILES = {
 BINDING_CONTRACTS_BY_VERSION = {
     3: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md",
     4: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+    5: "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
 }
 PROVENANCE_CONTRACT_SCHEMA = "emergentism/finity-review-prerequisite-provenance/v1"
 REVIEW_PROVENANCE_ACCEPTANCE = "v4-internal-bundle-custody-only"
@@ -132,10 +133,10 @@ REMAINING_REVIEW_PREREQUISITES = {
 }
 
 # These are immutable packet artifacts, not claims that the historical source
-# paths still replay against the current tree. The v4 packet copies this exact
-# contract, binds the retained bytes, and checks their Git content commits when
-# those objects are available locally. A version-created commit and a later
-# corrected artifact-content commit are deliberately separate facts.
+# paths still replay against the current tree. The current v4+ packet copies
+# this exact contract, binds the retained bytes, and checks their Git content
+# commits when those objects are available locally. A version-created commit
+# and a later corrected artifact-content commit are deliberately separate facts.
 HISTORICAL_BUNDLE_CUSTODY = {
     1: {
         "version_created_commit": "92c24841532f3f027c0afb21cdedfedd5fd73729",
@@ -188,6 +189,31 @@ HISTORICAL_BUNDLE_CUSTODY = {
             },
         },
     },
+    4: {
+        "version_created_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+        "artifacts": {
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.json": {
+                "sha256": "78481da7504abd56c94dc6c0fd8971787421db68e843ec7098dc850ab7142a86",
+                "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md": {
+                "sha256": "abc2a2867b888fdff46106e07ff211b16bf4c5bc8084fbaacc7dcfa96f1a1cd6",
+                "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v4.json": {
+                "sha256": "b1de07b4e1653eeeda8aeea3b6b54974048db8786a9b4ad2b933d39343dddc5b",
+                "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4_BINDING_RECEIPT.json": {
+                "sha256": "3ee3e90c3103ab687f2e5bc881816319efbfa9c61ae8e8b39c118c69b553342e",
+                "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+            },
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md": {
+                "sha256": "42df07b59f095d4a981387acb2eb656a0318bb421afd4154dee8654b3408a497",
+                "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+            },
+        },
+    },
 }
 
 REQUIRED_CURRENT_PACKET_FILES_BY_VERSION = {
@@ -199,6 +225,22 @@ REQUIRED_CURRENT_PACKET_FILES_BY_VERSION = {
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v4.json",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md",
+            "00_META/00_IMMUNE_PROTOCOL.md",
+            "09_TOOLS/01_SCRIPTS/claim_policy.py",
+        }
+    ),
+    5: frozenset(
+        {
+            "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
+            "00_META/claim_cards/finity_practice.yaml",
+            "00_META/ADEQUACY_DOCKETS.yaml",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v5.json",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+            "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md",
             "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md",
@@ -421,7 +463,7 @@ def _path_string(path: Path) -> str:
 
 
 def historical_artifact_custody_contract() -> dict[str, Any]:
-    """Return the exact v4-retained historical-artifact contract."""
+    """Return the exact current historical-artifact custody contract."""
 
     return {
         "schema": HISTORICAL_ARTIFACT_CUSTODY_SCHEMA,
@@ -808,12 +850,12 @@ def acyclic_binding_errors(
         unexpected = actual_files - required_files
         if missing:
             errors.append(
-                "bundle v4 must preserve its exact current packet inventory; missing: "
+                f"bundle v{version} must preserve its exact current packet inventory; missing: "
                 + ", ".join(sorted(missing))
             )
         if unexpected:
             errors.append(
-                "bundle v4 must preserve its exact current packet inventory; unexpected: "
+                f"bundle v{version} must preserve its exact current packet inventory; unexpected: "
                 + ", ".join(sorted(repr(path) for path in unexpected))
             )
     errors.extend(historical_custody_errors(version, files, manifest, historical_unavailable))

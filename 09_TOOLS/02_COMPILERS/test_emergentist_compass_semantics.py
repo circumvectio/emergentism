@@ -1323,7 +1323,7 @@ MUTATIONS: tuple[MutationSpec, ...] = (
         r"canonical active term is Egregorotype",
     ),
     MutationSpec(
-        "worldview-k2",
+        "worldview-authority-boundary",
         "00_META/00_SETTLED_CANON_REGISTRY.md",
         "it is not a primitive of reality, the Soul Loop, ethics, or the Compass.",
         "Consequential action requires complete accountable authorization.",

@@ -1,8 +1,8 @@
 ---
-title: "13_BOOKS — VMOSK-A (critical-edition workshop control)"
-status: "RATIFIED 2026-08-04 — owner ratification by chair directive ("complete all residual tasks"); drafted from disk evidence by the root PMO session per chair R11 ruling (PMO-0036). Draft provenance retained."
+title: "13_BOOKS — critical-edition workshop control"
+status: "STAGED — editorial topology remains explicitly unconfirmed in the owner README; this control brief records no owner ratification. Draft provenance retained."
 evidence_tier: "[S] editorial topology per README 2026-07-29; [I] synthesis; [D] this draft's standing"
-type: vmosk-a-draft
+type: book-workshop-control-draft
 date: 2026-08-04
 sources:
   - 13_BOOKS/README.md (ACTIVE WORKSHOP — editorial topology staged and explicitly unconfirmed, 2026-07-29)
@@ -52,7 +52,8 @@ The Evolutionary Network remains a research dossier, not a book.
 - Projection-only: the workshop is **never K-8**; historical AIA editions
   remain read-only provenance (root AGENTS.md protected-surface rule).
 - No publication state exists in this lane; any public act routes to the
-  owning source + the public-site release boundary (12_PUBLIC_SITE VMOSK-A §S).
+  owning source + the [public-site release boundary](../12_PUBLIC_SITE/VMOSK_A.md#s-strategies-s)
+  (§S).
 
 # K — KPIs / triggers `[S/D]`
 

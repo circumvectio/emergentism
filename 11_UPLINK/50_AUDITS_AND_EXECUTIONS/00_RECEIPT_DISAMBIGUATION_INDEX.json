@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generated": "build_receipt_disambiguation.py",
   "note": "Receipt numbers in this corpus are NOT unique identifiers. Both live lanes begin at 100 and run over each other for a hundred consecutive integers. This index lists every number naming more than one document, so an existing numeric citation can be resolved by hand. It does not make numbers unique and does not replace the rule: CITE BY PATH.",
-  "ambiguousNumbers": 97,
+  "ambiguousNumbers": 101,
   "worst": 4,
   "rows": [
     {
@@ -1458,6 +1458,60 @@
       ]
     },
     {
+      "number": "163",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/163_TREE_CONTRACT_AND_AUTHORITY_RECONCILIATION_2026_07_22.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 163 — Tree contract and authority reconciliation"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/163_TRACK_B_WEEK_1_GATE_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "163_TRACK_B_WEEK_1_GATE_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "164",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/164_FOUNDER_BALLOT_A_WORLDVIEW_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": true,
+          "title": "Founder Ballot A — the worldview gates, staged for one countersignature"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/164_SIMULATION_HARNESS_SHARED_SPEC_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "164_SIMULATION_HARNESS_SHARED_SPEC_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "165",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/165_FOUNDER_BALLOT_B_SKYZAI_PRODUCT_2026_07_23.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Founder Ballot B — the Skyzai product gates, staged for countersignature (migrate to 02_SK"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/165_ROLE_MAP_PROPOSAL_2026_04_24.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "165_ROLE_MAP_PROPOSAL_2026_04_24"
+        }
+      ]
+    },
+    {
       "number": "166",
       "count": 2,
       "entries": [
@@ -1712,6 +1766,24 @@
           "lane": "60_SESSION_PACKETS",
           "declares_supersession": false,
           "title": "179_SESSION_STATE_COMPRESSION_2026_04_24"
+        }
+      ]
+    },
+    {
+      "number": "180",
+      "count": 2,
+      "entries": [
+        {
+          "path": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/180_P3_1_F3_EXTERNAL_RECEIPT_RULING_2026_08_06.md",
+          "lane": "50_AUDITS_AND_EXECUTIONS",
+          "declares_supersession": false,
+          "title": "Receipt 180 — P3.1 ruling: a self-run rescoring cannot satisfy F3 (external receipt)"
+        },
+        {
+          "path": "11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md",
+          "lane": "60_SESSION_PACKETS",
+          "declares_supersession": false,
+          "title": "180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25"
         }
       ]
     },

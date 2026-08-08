@@ -40,9 +40,7 @@
         "K-2",
         "K-3",
         "K-4",
-        "K-5",
-        "K-6",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "OS01-01",
@@ -74,7 +72,11 @@
       ],
       "release_state": "source_active_current_public_reader",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
-      "build_provenance": "12_PUBLIC_SITE/build_book.py; exactly one claim-card-covered source; lifecycle and graph coverage fail closed"
+      "build_provenance": {
+        "type": "generator",
+        "path": "../12_PUBLIC_SITE/build_book.py",
+        "sha256": "558cab94fb72603013d224bc6fb18546bd3fb3a8dcf4d1c073d18888a144bce1"
+      }
     },
     {
       "work_id": "BK-FINITY-PRACTICE",
@@ -119,8 +121,8 @@
         "seed"
       ],
       "owner_ids": [
-        "K-5",
-        "K-7"
+        "K-4",
+        "K-5"
       ],
       "claim_card_ids": [
         "SES01-01",
@@ -135,7 +137,7 @@
       "build_provenance": {
         "type": "projection_artifact",
         "path": "self_eating_serpent/CRITICAL_EDITION_1.md",
-        "sha256": "3eda2a0eae8bcb1b4dcafce49f569dcbacb3adda5e12f6f03342a60c102d40ec"
+        "sha256": "0e6b629e94c51bead1ae0c554b343c10c489d532eaeab33d4130c78f098356e1"
       }
     },
     {
@@ -149,28 +151,28 @@
       "chapter_order": [
         "standard-mathematics",
         "selected-symbolism",
+        "typed-inversion",
         "finity-protocol",
         "paradox-ledger",
         "recovery-and-failure"
       ],
       "owner_ids": [
-        "K-1",
-        "K-3",
-        "K-4"
+        "K-1"
       ],
       "claim_card_ids": [
         "TIT01-01",
         "TIT01-02",
         "TIT01-03",
         "TIT01-04",
-        "TIT01-05"
+        "TIT01-05",
+        "TIT01-06"
       ],
       "release_state": "research_critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
         "path": "titans/RESEARCH_EDITION_1.md",
-        "sha256": "419a4edc36826377634e0571aa30a091b4d5a8873ea7ec37d08f16e3b11192e9"
+        "sha256": "e5fe12b1e5ee8edce11d95465a6565d5ca49c1dc860fafa2bbee6848f40bbf10"
       }
     },
     {
@@ -206,31 +208,12 @@
         "DHY01-04",
         "DHY01-05"
       ],
-      "chapter_order": [
-        "justice-first",
-        "two-horizon",
-        "nonviolent-resistance",
-        "institutional-defence",
-        "repair-exit-and-residue"
-      ],
-      "owner_ids": [
-        "K-3",
-        "K-4",
-        "K-5"
-      ],
-      "claim_card_ids": [
-        "DHY01-01",
-        "DHY01-02",
-        "DHY01-03",
-        "DHY01-04",
-        "DHY01-05"
-      ],
       "release_state": "critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
         "path": "dharma_yuddha/CRITICAL_EDITION_1.md",
-        "sha256": "a2bef7b93a8f3242670da72c2afe876f4a1f83efb7d4fc4f2c40ae5d9a88fd73"
+        "sha256": "ac468a17678d9885c673d4394ef516e5432a457dfcc5ff5b0e3c9a258387f7ea"
       }
     },
     {
@@ -239,7 +222,11 @@
       "edition": "institutional-proposal-staged",
       "historical_sources": [
         "../03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
-        "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"
+        {
+          "path": "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
+          "lifecycle": "proposal",
+          "reviewed_source_sha256": "df8887940ce76d68e1073ee18b197b3a64059fef73ad094128d6143a4a6105d6"
+        }
       ],
       "chapter_order": [
         "voluntary-entry",
@@ -250,7 +237,8 @@
       ],
       "owner_ids": [
         "K-4",
-        "K-5"
+        "K-5",
+        "K-7"
       ],
       "claim_card_ids": [
         "EN01-01",
@@ -264,7 +252,7 @@
       "build_provenance": {
         "type": "projection_artifact",
         "path": "evolutionary_network/RESEARCH_EDITION_1.md",
-        "sha256": "64bf9dcbefe0ecd1203a118dd4ad1dc31feadda6b6f1a4b9d2791b6b279d56f8"
+        "sha256": "2341b35302bdbdd296c9835eb8bb344fdb23601f2ba6e9175f0c6415375d22ed"
       }
     },
     {
@@ -307,34 +295,13 @@
         "RIP01-06",
         "RIP01-07"
       ],
-      "chapter_order": [
-        "diagnosis-without-villain",
-        "formal-boundaries",
-        "translation-without-proof",
-        "collective-traces",
-        "institutional-firewall",
-        "immune-protocol",
-        "seed-and-record"
-      ],
-      "owner_ids": [
-        "K-1",
-        "K-3",
-        "K-4",
-        "K-5",
-        "K-7"
-      ],
-      "claim_card_ids": [
-        "RIP01-01",
-        "RIP01-02",
-        "RIP01-03",
-        "RIP01-04",
-        "RIP01-05",
-        "RIP01-06",
-        "RIP01-07"
-      ],
       "release_state": "withheld_staged_provenance_not_current_not_rag",
       "public_route": null,
-      "build_provenance": "source files preserved at 13_BOOKS/the_reciprocal/; excluded from 12_PUBLIC_SITE/book and current RAG pending claim-by-claim re-adjudication",
+      "build_provenance": {
+        "type": "manual",
+        "description": "Source files are preserved under 13_BOOKS/the_reciprocal and remain excluded from the current reader and RAG pending claim-by-claim re-adjudication.",
+        "verification": "Claim-card compiler plus public semantic-parity and current-RAG exclusion gates."
+      },
       "staged_critical_edition": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
       "ported_chapters_dir": "the_reciprocal/",
       "publication_eligible": false,
@@ -359,10 +326,8 @@
       ],
       "owner_ids": [
         "K-1",
-        "K-3",
         "K-4",
-        "K-5",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "SV01-01",
@@ -378,7 +343,7 @@
       "build_provenance": {
         "type": "projection_artifact",
         "path": "sarpasya_vijayam/CRITICAL_EDITION_1.md",
-        "sha256": "01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c"
+        "sha256": "71c8077248ca96a72f3ad1e5040da46f8ea53541aef527322887df654527e046"
       }
     },
     {
@@ -401,9 +366,7 @@
       "owner_ids": [
         "K-2",
         "K-3",
-        "K-4",
-        "K-5",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "SL01-01",
@@ -420,7 +383,7 @@
       "build_provenance": {
         "type": "projection_artifact",
         "path": "six_lenses/CRITICAL_EDITION_1.md",
-        "sha256": "a1bce0289dfd286215b3bf17ef295d1b89082b71af2c3b5e0568870b6e92bef6"
+        "sha256": "a83555d8590ec1c1ee4ccbd6ecd185085f1fc527d0b6e485220336a242817990"
       }
     }
   ],

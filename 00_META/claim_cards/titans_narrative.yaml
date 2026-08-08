@@ -5,7 +5,7 @@
     "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
     "lifecycle": "active",
     "role": "research_seed",
-    "reviewed_source_sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816"
+    "reviewed_source_sha256": "165922a73360b8ce3ac9c3effb6c8a3733fbf376e1744a780b64675f8b026858"
   },
   "cards": [
     {
@@ -15,10 +15,10 @@
       ],
       "locator": {
         "section": "1-8",
-        "line_start": 74,
-        "line_end": 328,
+        "line_start": 77,
+        "line_end": 427,
         "anchor": "## 1. The lexical contract",
-        "fingerprint_sha256": "24e02096719502dac553037eeb1b37c16cd09db96d4872c0fad877dcf56c514b"
+        "fingerprint_sha256": "c4a1a6b7a3ec3add7df4dec27009813fddf2732e0b219850ff7ec2cfbac53bee"
       },
       "plain_claim": "Standard mathematics governs countability, limits, partial operations and extensions without amendment by the narrative triad.",
       "claim_type": "analytic",
@@ -68,9 +68,9 @@
       "locator": {
         "section": "opening and typed Titans",
         "line_start": 33,
-        "line_end": 301,
+        "line_end": 400,
         "anchor": "## The Infinite (Zero), Finity, and Infinity",
-        "fingerprint_sha256": "a03d6f3ad9d93ebaf50ad61e6632e4aeb26557fdfe3b2882ab1e148081470cd5"
+        "fingerprint_sha256": "e12d00014583c03a508f17a898e302528ab41b9376b93269bb628f7327f87637"
       },
       "plain_claim": "The Infinite, Finity and Infinity are selected narrative modes over opaque Titan frames, not arithmetic objects or a census of reality.",
       "claim_type": "interpretation_vow",

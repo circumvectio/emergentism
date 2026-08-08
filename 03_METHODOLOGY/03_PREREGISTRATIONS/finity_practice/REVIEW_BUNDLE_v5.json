@@ -1,0 +1,128 @@
+{
+  "bundleVersion": "v5",
+  "frozen": "2026-08-08",
+  "gate": "FPE-REVIEW-01",
+  "supersedes": "REVIEW_BUNDLE_v4.json",
+  "amendment": "Version 5 re-freezes the current source-owned Lived Compass and Finity claim-card bytes after their material repair, preserves the v4-profile acyclic registry projection and provenance firewall, and hash-locks retained v1-v4 packet artifacts. It accepts only the internal manifest binding: local files, receipts, JSON, and present external-state records cannot satisfy a non-bundle prerequisite.",
+  "note": "A material amendment to any listed current packet file requires a NEW bundle version and a NEW review. This technical provenance firewall does not select an owner, create a form, authorize contact, establish ethics, engage a reviewer, accept external state, or complete any non-bundle prerequisite.",
+  "historical_artifact_custody": {
+    "schema": "emergentism/finity-review-historical-artifact-custody/v1",
+    "versions": {
+      "v1": {
+        "version_created_commit": "92c24841532f3f027c0afb21cdedfedd5fd73729",
+        "artifacts": {
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.json": {
+            "sha256": "96e17101b9c27ac2b343fd6848289aacef9459b40f997132d4f763ea243e3782",
+            "content_commit": "92c24841532f3f027c0afb21cdedfedd5fd73729"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.md": {
+            "sha256": "dcf67bc4d540241c778b83916db88413fa361b81fc7bc0be1285397b7b0bd607",
+            "content_commit": "92c24841532f3f027c0afb21cdedfedd5fd73729"
+          }
+        }
+      },
+      "v2": {
+        "version_created_commit": "b7e0d00dd47d1d784b6c563a4246dc2c3e1a98f8",
+        "artifacts": {
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.json": {
+            "sha256": "68b70aaf105156be42cfc09f56c7ce156e4908e441be20a4d1a47150fd291c96",
+            "content_commit": "b7e0d00dd47d1d784b6c563a4246dc2c3e1a98f8"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.md": {
+            "sha256": "04968407f1103af8d8e75e93005ed10028a4ab259f0e38d5f1e6f5c2187a79c2",
+            "content_commit": "eeb7b6ac0ae294a4e65a59bfdd6dfbb10367108e"
+          }
+        }
+      },
+      "v3": {
+        "version_created_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811",
+        "artifacts": {
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json": {
+            "sha256": "31e79197496597707ccf8fc75d9a03664bd85ec9038ae1f003098caca66d638a",
+            "content_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.md": {
+            "sha256": "ce66480aa0d22e9b71f9f7cbf9b8fb54ff5b6538a7e73775ac60af0d201c27e2",
+            "content_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v3.json": {
+            "sha256": "a051b82c8d0d26a4a87472d2a5416b36046c7c393fad14d6e1326cdab5211e74",
+            "content_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json": {
+            "sha256": "da56b7661efa94976df25af6d65e76481d0df41856b3eb920181ed5bebc3f33b",
+            "content_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md": {
+            "sha256": "26f331d07a15eb9fe624c226b6c7688549f224c3718420b2e147a2f1691d3c5b",
+            "content_commit": "ea2c94e52809e8cf251ed52242afff8f5055c811"
+          }
+        }
+      },
+      "v4": {
+        "version_created_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14",
+        "artifacts": {
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.json": {
+            "sha256": "78481da7504abd56c94dc6c0fd8971787421db68e843ec7098dc850ab7142a86",
+            "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md": {
+            "sha256": "abc2a2867b888fdff46106e07ff211b16bf4c5bc8084fbaacc7dcfa96f1a1cd6",
+            "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v4.json": {
+            "sha256": "b1de07b4e1653eeeda8aeea3b6b54974048db8786a9b4ad2b933d39343dddc5b",
+            "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4_BINDING_RECEIPT.json": {
+            "sha256": "3ee3e90c3103ab687f2e5bc881816319efbfa9c61ae8e8b39c118c69b553342e",
+            "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14"
+          },
+          "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md": {
+            "sha256": "42df07b59f095d4a981387acb2eb656a0318bb421afd4154dee8654b3408a497",
+            "content_commit": "6b587f34c509c40573f8bfaa37c6359d0d7eeb14"
+          }
+        }
+      }
+    }
+  },
+  "registry_binding": {
+    "mode": "static-review-registry-projection-v2",
+    "snapshot": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v5.json",
+    "binding_contract": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md",
+    "live_registry": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+    "binding_receipt": "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json",
+    "excludes": [
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json",
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.json",
+      "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5_BINDING_RECEIPT.json"
+    ]
+  },
+  "files": {
+    "01_TELEOLOGY/04_THE_LIVED_COMPASS.md": "sha256:f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d",
+    "00_META/claim_cards/finity_practice.yaml": "sha256:6528f37657e44d6e1bc62a3b3361ce3e9cef8cc5b8f120a2b896262638e622cc",
+    "00_META/ADEQUACY_DOCKETS.yaml": "sha256:7132a1df115d71772804e81ca97bc58dfc9b146ddb8c47a64130075c9e99e6f1",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v5.json": "sha256:a91fdb5ccf63888e0f5d758c9dd8209d660cfda46a4414a7cc9e1371532e727c",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v2.md": "sha256:42df07b59f095d4a981387acb2eb656a0318bb421afd4154dee8654b3408a497",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v5.md": "sha256:928194ea365d87b85db03cb317c2c94303a2a53da5fe6b8911b0fd926ce1d379",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/README.md": "sha256:0fe11327906147eaf3798300840e23ac52baf4f486cb5c0e5dfbdc829c188464",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/01_FRESH_READER_COMPREHENSION.md": "sha256:b11a9c8e99781bdf5b75c4caf88a79126f0928602294511b273a2e425224ee61",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/02_INDEPENDENT_REVIEW.md": "sha256:d3deb2825a93ca47ada9de0572d08cffbf0d8c9f1eb85f20a1d407ed3c61172d",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/03_CONTROLLED_FINITY_COMPARISON.md": "sha256:10fd04a23d64a4f10e07a1ee5f72ed128c7324938585b56efdc81eeec4192efa",
+    "00_META/00_IMMUNE_PROTOCOL.md": "sha256:e27abce6e7bbc68e0130ab702b8e333d9b4726c434168f8b3420fb0af6cf3cbb",
+    "09_TOOLS/01_SCRIPTS/claim_policy.py": "sha256:d6ebb14a9078f3db649bfcfde003ee363bc4498e3d9101e7768a164c78b3d243",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.json": "sha256:96e17101b9c27ac2b343fd6848289aacef9459b40f997132d4f763ea243e3782",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v1.md": "sha256:dcf67bc4d540241c778b83916db88413fa361b81fc7bc0be1285397b7b0bd607",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.json": "sha256:68b70aaf105156be42cfc09f56c7ce156e4908e441be20a4d1a47150fd291c96",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v2.md": "sha256:04968407f1103af8d8e75e93005ed10028a4ab259f0e38d5f1e6f5c2187a79c2",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.json": "sha256:31e79197496597707ccf8fc75d9a03664bd85ec9038ae1f003098caca66d638a",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3.md": "sha256:ce66480aa0d22e9b71f9f7cbf9b8fb54ff5b6538a7e73775ac60af0d201c27e2",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v3.json": "sha256:a051b82c8d0d26a4a87472d2a5416b36046c7c393fad14d6e1326cdab5211e74",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v3_BINDING_RECEIPT.json": "sha256:da56b7661efa94976df25af6d65e76481d0df41856b3eb920181ed5bebc3f33b",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_BINDING_CONTRACT_v1.md": "sha256:26f331d07a15eb9fe624c226b6c7688549f224c3718420b2e147a2f1691d3c5b",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.json": "sha256:78481da7504abd56c94dc6c0fd8971787421db68e843ec7098dc850ab7142a86",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4.md": "sha256:abc2a2867b888fdff46106e07ff211b16bf4c5bc8084fbaacc7dcfa96f1a1cd6",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_REGISTRY_SNAPSHOT_v4.json": "sha256:b1de07b4e1653eeeda8aeea3b6b54974048db8786a9b4ad2b933d39343dddc5b",
+    "03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/REVIEW_BUNDLE_v4_BINDING_RECEIPT.json": "sha256:3ee3e90c3103ab687f2e5bc881816319efbfa9c61ae8e8b39c118c69b553342e"
+  }
+}

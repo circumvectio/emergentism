@@ -11,6 +11,7 @@ import importlib.util
 import math
 from pathlib import Path
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -98,7 +99,7 @@ KSC02_LATE_MIGRATION_PATHS = {
     "generative_table": ROOT / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/D_SERIES_ROWS/00_GENERATIVE_TABLE.md",
     "papers_index": ROOT / "03_METHODOLOGY/02_THE_PAPERS/README.md",
     "knife": ROOT / "08_FRAMEWORK_SUPPORT/00_THE_KNIFE.md",
-    "lens_foreword": ROOT / "08_FRAMEWORK_SUPPORT/00_META/FOREWORD.md",
+    "lens_foreword": ROOT / "08_FRAMEWORK_SUPPORT/04_COMPILERS_AND_ANALYSIS/FOREWORD.md",
     "amrita": ROOT / "07_THEOLOGY/00_THE_AMRITA.md",
     "old_godel": ROOT / "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
     "old_mandelbrot": ROOT / "08_FRAMEWORK_SUPPORT/02_OPERATORS/SPHERE_DERIVATIONS/MF_66_Mandelbrot_Consciousness.md",
@@ -423,7 +424,7 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             self.assertLessEqual(balance, 1.0 + 1e-14)
         text = read("formula")
         self.assertIn("These are **chart facts only**", text)
-        self.assertRegex(text.lower(), r"neither is derived from\s+`φ·ν=1`")
+        self.assertIn("It is not derived from `φ·ν=1`", text)
 
     def test_conjunctive_aggregators_are_not_interchangeable(self):
         a, b = (0.9, 0.2), (0.4, 0.4)
@@ -438,15 +439,16 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             self.assertGreaterEqual(aggregator((0.8, 0.9)), aggregator((0.7, 0.9)))
         self.assertIn("do not select\na unique formula", read("formula"))
 
-    def test_raw_product_ranking_reverses_under_independent_monotone_rescaling(self):
+    def test_ksc02_product_ranking_is_retired_but_selected_min_remains(self):
         a, b = (0.9, 0.2), (0.5, 0.5)
         product = lambda x: x[0] * x[1]
         rescale_phi = lambda x: x**10
         rescale_v = lambda x: x
         transform = lambda x: (rescale_phi(x[0]), rescale_v(x[1]))
 
-        # The profiles are incomparable; a raw ordinal product invents a total
-        # order that an independently admissible change of scale can reverse.
+        # The raw product ranks a particular cardinal presentation. KSC-02
+        # therefore retires it as the ordinal node ranking while retaining min
+        # as the framework's selected working model under a common transform.
         self.assertLess(product(a), product(b))
         self.assertGreater(product(transform(a)), product(transform(b)))
         self.assertFalse(a[0] >= b[0] and a[1] >= b[1])
@@ -457,9 +459,17 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             for name in ("completion", "claim_matrix", "ladder", "types", "goal", "compass")
         )
         self.assertIn("calibration contract", owners.lower())
-        self.assertNotRegex(owners, r"P_node\s*=\s*Φ")
+        self.assertIn("P_node:=min(Φ̂₄,V₄)", owners)
+        self.assertNotRegex(owners, r"P_node\s*:?=\s*Φ̂₄\s*[×*·]\s*V₄")
 
-    def test_pareto_order_survives_independent_monotone_rescaling(self):
+        settled = read("settled")
+        formula = read("formula")
+        self.assertIn("`P_node:=min(Φ̂₄,V₄)` is the selected working", settled)
+        self.assertIn("**retired as a ranking**", settled)
+        self.assertIn("P_node := C_min(Φ̂₄,V₄) := min(Φ̂₄,V₄)", formula)
+        self.assertIn("It is not derived from `φ·ν=1`", formula)
+
+    def test_ksc02_pareto_profile_does_not_displace_selected_min(self):
         pareto_geq = lambda x, y: x[0] >= y[0] and x[1] >= y[1]
         rescale_phi = lambda x: x**3
         rescale_v = lambda x: math.sqrt(x)
@@ -477,8 +487,10 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         owners = "\n".join(read(name) for name in ("formula", "types", "goal", "compass"))
         self.assertIn("independent strictly increasing reparameterizations", owners)
         self.assertIn("componentwise Pareto", owners)
+        self.assertIn("P_node := C_min(Φ̂₄,V₄) := min(Φ̂₄,V₄)", owners)
+        self.assertIn("applied to both factors", owners)
 
-    def test_p0_downstream_surfaces_use_profiles_before_scalar_candidates(self):
+    def test_ksc02_downstream_surfaces_keep_selected_min_and_product_fence(self):
         active_names = (
             "method_derivation",
             "macro_paper",
@@ -491,29 +503,21 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         )
         active = {name: read(name) for name in active_names}
 
+        joined = "\n".join(active.values())
+        self.assertRegex(joined, r"P_node\s*:?=\s*min")
+        self.assertIn("N_node", joined)
+        self.assertIn("calibration", joined.lower())
+        self.assertRegex(joined.lower(), r"product[^\n]{0,120}retired|retired[^\n]{0,120}product")
         for name, body in active.items():
-            self.assertIn("N_node", body, name)
-            self.assertNotRegex(body, r"\bP_node(?:,[iH])?\s*[:=]", name)
-            self.assertNotRegex(body, r"(?:Δ|Delta\s+)P_node", name)
+            self.assertNotRegex(body, r"P_node\s*:?=\s*(?:Φ̂₄|Phi_hat_4)\s*[×*·]\s*(?:V₄|V_4)", name)
             self.assertNotIn("ΣP_node", body, name)
-
-        for name in ("macro_paper", "macro_prereg", "actual_tests", "protocol"):
-            body = active[name]
-            self.assertIn("P×", body, name)
-            self.assertIn("calibration contract", body.lower(), name)
-
-        for name in ("remaining", "hidden_center", "memetics_index"):
-            self.assertIn("Pareto", active[name], name)
-
-        for name in ("macro_paper", "macro_prereg", "actual_tests", "protocol", "remaining", "memetics_index"):
-            self.assertRegex(active[name], r"shared\s+aggregation\s+contract", name)
 
         historical = read("old_transcendentals")
         self.assertIn("SUPERSEDED", historical)
         self.assertIn("no current semantic authority", historical.lower())
         self.assertIn("must not be cited", historical)
 
-    def test_ksc02_reader_projections_preserve_the_profile_boundary(self):
+    def test_ksc02_reader_projections_preserve_selected_min_boundary(self):
         projection_names = (
             "seed_front",
             "seed_d5",
@@ -523,10 +527,8 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         )
         for name in projection_names:
             body = KSC02_PROJECTION_PATHS[name].read_text(encoding="utf-8")
-            self.assertIn("N_node", body, name)
-            self.assertIn("Pareto", body, name)
-            self.assertIn("calibration contract", body.lower(), name)
-            self.assertNotRegex(body, r"\bP_node(?:,[iH])?\s*[:=]", name)
+            self.assertRegex(body, r"P_node\s*:?=\s*min", name)
+            self.assertNotRegex(body, r"P_node\s*:?=\s*Φ̂₄\s*[×*·]\s*V₄", name)
             self.assertNotIn("ΣΔP_node", body, name)
 
         joined = "\n".join(
@@ -534,28 +536,28 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             for name in projection_names
         )
         self.assertIn("human worth", joined)
+        self.assertIn("N_node", joined)
+        self.assertIn("Pareto", joined)
+        self.assertIn("calibration contract", joined.lower())
         self.assertIn("P×,κ=Φ_cV_c", joined)
 
         for name in ("anmut", "computational"):
             body = KSC02_PROJECTION_PATHS[name].read_text(encoding="utf-8")
-            self.assertIn("N_node=(Φ̂₄,V₄)", body, name)
-            self.assertIn("Pareto", body, name)
-            self.assertIn("calibration contract", body.lower(), name)
             self.assertNotIn("P_node = Φ × V", body, name)
+            self.assertRegex(body, r"Canonical Formula Block|P_node", name)
 
-    def test_ksc02_late_migration_and_legacy_quarantine(self):
+    def test_ksc02_late_surfaces_and_legacy_quarantine(self):
         for name in ("d32_math", "four_forces", "neoteny", "saturation"):
             body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
-            self.assertIn("N_node", body, name)
-            self.assertRegex(body.lower(), r"calibration\s+contract", name)
+            self.assertRegex(body, r"P_node\s*:?=\s*min", name)
             self.assertNotIn("Default calculation", body, name)
-            self.assertNotRegex(body, r"Σ(?:Δ)?P_node", name)
+            self.assertNotRegex(body, r"P_node\s*:?=\s*Φ̂₄\s*[×*·]\s*V₄", name)
 
         d32 = KSC02_LATE_MIGRATION_PATHS["d32_math"].read_text(encoding="utf-8")
-        self.assertIn("P_x,kappa", d32)
-        self.assertIn("not a default power", d32)
+        self.assertIn("retired as a ranking", d32)
+        self.assertIn("separately cardinal candidate", d32)
 
-        for name in (
+        current_projection_names = (
             "honest_position",
             "seed_d1",
             "seed_d2",
@@ -564,11 +566,24 @@ class DimensionAndArithmeticTests(unittest.TestCase):
             "papers_index",
             "knife",
             "lens_foreword",
-            "amrita",
-        ):
+        )
+        for name in current_projection_names:
             body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
-            self.assertIn("N_node", body, name)
-            self.assertRegex(body.lower(), r"calibration\s+contract", name)
+            self.assertRegex(body, r"P_node\s*:?=\s*min", name)
+            self.assertNotRegex(body, r"P_node\s*:?=\s*Φ̂₄\s*[×*·]\s*V₄", name)
+
+        joined = "\n".join(
+            KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
+            for name in ("d32_math", "four_forces", "neoteny", "saturation")
+            + current_projection_names
+        )
+        self.assertIn("calibration contract", joined.lower())
+        self.assertRegex(joined.lower(), r"cardinal")
+
+        amrita = KSC02_LATE_MIGRATION_PATHS["amrita"].read_text(encoding="utf-8")
+        self.assertIn("does **not** by itself", amrita)
+        self.assertIn("uniquely select", amrita)
+        self.assertIn("AND-class", amrita)
 
         for name in (
             "old_godel",
@@ -579,22 +594,27 @@ class DimensionAndArithmeticTests(unittest.TestCase):
         ):
             body = KSC02_LATE_MIGRATION_PATHS[name].read_text(encoding="utf-8")
             self.assertIn("SUPERSEDED — no current semantic authority", body, name)
-            self.assertIn("NO CURRENT SEMANTIC AUTHORITY", body, name)
+            self.assertIn("no current semantic authority", body.lower(), name)
 
-    def test_ksc02_ontology_owners_do_not_force_an_and_scalar(self):
-        for name, path in KSC02_ONTOLOGY_PATHS.items():
-            body = path.read_text(encoding="utf-8")
-            lower = body.lower()
-            self.assertRegex(lower, r"calibrat(?:ed|ion)\s+(?:contract|structural)", name)
-            self.assertNotRegex(lower, r"and-class\s+forced|and-class\s+forcing", name)
+    def test_ksc02_ontology_owners_distinguish_selected_min_from_forcing(self):
+        bodies = {
+            name: path.read_text(encoding="utf-8")
+            for name, path in KSC02_ONTOLOGY_PATHS.items()
+        }
+        joined = "\n".join(bodies.values())
+        self.assertRegex(joined, r"P_node\s*:?=\s*min")
+        self.assertIn("calibration contract", joined.lower())
+        self.assertIn("neither aggregator is forced", joined.lower())
+        self.assertIn('never "product forced"', joined.lower())
         self.assertIn(
             "force no\nscalar at all",
-            KSC02_ONTOLOGY_PATHS["dof_owner"].read_text(encoding="utf-8"),
+            bodies["dof_owner"],
         )
         self.assertIn(
             "does not require a\nscalar",
-            KSC02_ONTOLOGY_PATHS["kernel"].read_text(encoding="utf-8"),
+            bodies["kernel"],
         )
+        self.assertIn("no recovered default scalar", bodies["axiom_owner"].lower())
 
     def test_perfect_foresight_zero_means_requires_a_budget_premise(self):
         calibrated_phi = 1.0
@@ -976,8 +996,36 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
                 (receipt_lane / "123_K2_RECORD.md").write_text(
                     "historical target\n", encoding="utf-8"
                 )
+                fixture_targets = {
+                    "123": [
+                        "11_UPLINK/50_AUDITS_AND_EXECUTIONS/123_K2_RECORD.md"
+                    ]
+                }
+                fixture_digest = module.hashlib.sha256(
+                    json.dumps(
+                        fixture_targets,
+                        sort_keys=True,
+                        ensure_ascii=False,
+                        separators=(",", ":"),
+                    ).encode("utf-8")
+                ).hexdigest()
+                module.EXPECTED_RECEIPT_TARGET_UNIVERSE_SHA256 = fixture_digest
+                module.EXPECTED_RECEIPT_TARGET_COUNT = 1
+                registry = module.ROOT / module.RECEIPT_TARGET_REGISTRY
+                registry.parent.mkdir(parents=True, exist_ok=True)
+                registry.write_text(
+                    json.dumps(
+                        {
+                            "receipt_universe": {
+                                "all_candidate_paths_sha256": fixture_digest,
+                                "citable_targets": 1,
+                            }
+                        }
+                    ),
+                    encoding="utf-8",
+                )
                 source = module.ROOT / "00_META/source.md"
-                source.parent.mkdir(parents=True)
+                source.parent.mkdir(parents=True, exist_ok=True)
 
                 source.write_text(
                     "See `123_K2_RECORD.md`.\n", encoding="utf-8"
@@ -1019,7 +1067,7 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
                 )
                 deleted_errors = module.scan_file(source)
                 self.assertEqual(len(deleted_errors), 1, deleted_errors)
-                self.assertIn("forbidden authority token 'K2'", deleted_errors[0])
+                self.assertIn("receipt target inventory invalid", deleted_errors[0])
 
                 (receipt_lane / "123_K2_RECORD.md").write_text(
                     "historical target\n", encoding="utf-8"
@@ -1035,7 +1083,7 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
             finally:
                 module.ROOT = original_root
 
-    def test_purity_excludes_only_the_dedicated_generated_custody_registry(self):
+    def test_purity_excludes_exact_dedicated_generated_custody_surfaces(self):
         checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
         spec = importlib.util.spec_from_file_location("emergentism_purity_registry", checker)
         self.assertIsNotNone(spec)
@@ -1044,10 +1092,17 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
         spec.loader.exec_module(module)
         registry = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json"
         lookalike = ROOT / "00_META/ACTIVE_RECEIPT_CITATION_REGISTRY_COPY.json"
-        ordinary = ROOT / "00_META/CONTACT_LIMITED_STATE.json"
+        contact_snapshot = ROOT / "00_META/CONTACT_LIMITED_STATE.json"
         self.assertFalse(module.is_active_corpus_file(registry))
+        self.assertFalse(module.is_active_corpus_file(contact_snapshot))
         self.assertTrue(module.is_active_corpus_file(lookalike))
-        self.assertTrue(module.is_active_corpus_file(ordinary))
+        self.assertEqual(
+            module.DERIVED_CUSTODY_SURFACES,
+            {
+                Path("00_META/ACTIVE_RECEIPT_CITATION_REGISTRY.json"),
+                Path("00_META/CONTACT_LIMITED_STATE.json"),
+            },
+        )
 
     def test_purity_scans_every_forbidden_token_on_an_allowed_projection_line(self):
         checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
@@ -1065,17 +1120,1066 @@ class ValueAuthorityAndRoutingTests(unittest.TestCase):
             original_root = module.ROOT
             module.ROOT = Path(temporary_root)
             try:
-                projection = module.ROOT / "VMOSK_A.md"
-                projection.write_text(
+                projection_reference = module.ROOT / "README.md"
+                projection_reference.write_text(
                     "VMOSK_A.md is a non-semantic projection; K2 may not become authority.\n",
                     encoding="utf-8",
                 )
-                errors = module.scan_file(projection)
+                errors = module.scan_file(projection_reference)
             finally:
                 module.ROOT = original_root
 
         self.assertEqual(len(errors), 1, errors)
         self.assertIn("forbidden authority token 'K2'", errors[0])
+
+    def test_purity_exact_navigation_filename_allowance_does_not_spread_to_sibling(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_navigation_locator_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(module.scan_file(ROOT / "README.md"), [])
+        self.assertEqual(
+            module.scan_file(ROOT / "01_TELEOLOGY/02_THE_DERIVATION/README.md"),
+            [],
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                sibling = (
+                    module.ROOT
+                    / "01_TELEOLOGY/02_THE_DERIVATION/unlisted_sibling.md"
+                )
+                sibling.parent.mkdir(parents=True)
+                sibling.write_text(
+                    "[`07_THE_TYSON_KO_PENDING_K2.md`]"
+                    "(07_THE_TYSON_KO_PENDING_K2.md)\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(sibling)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 2, errors)
+        self.assertTrue(
+            all("forbidden authority token 'K2'" in error for error in errors),
+            errors,
+        )
+
+    def test_purity_exact_provenance_path_allowances_do_not_spread_to_siblings(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_provenance_path_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        ladder = ROOT / (
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/"
+            "35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md"
+        )
+        book_control = ROOT / "13_BOOKS/VMOSK_A.md"
+        self.assertEqual(module.scan_file(ladder), [])
+        self.assertEqual(module.scan_file(book_control), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                audit_sibling = (
+                    module.ROOT
+                    / "08_FRAMEWORK_SUPPORT/03_EVIDENCE/ROSETTA_STONE/unlisted.md"
+                )
+                audit_sibling.parent.mkdir(parents=True)
+                audit_sibling.write_text(
+                    "[audit](../../../00_HANDOFF/2026_07_20_k2_audit_trio_l1_l7/"
+                    "L2_CLAIM_VS_EVIDENCE_AUDIT_2026_07_20.md)\n",
+                    encoding="utf-8",
+                )
+                audit_errors = module.scan_file(audit_sibling)
+
+                book_sibling = module.ROOT / "13_BOOKS/unlisted.md"
+                book_sibling.parent.mkdir(parents=True)
+                book_sibling.write_text(
+                    "[boundary](../12_PUBLIC_SITE/VMOSK_A.md#s--strategies-s)\n",
+                    encoding="utf-8",
+                )
+                book_errors = module.scan_file(book_sibling)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(audit_errors), 1, audit_errors)
+        self.assertIn("forbidden authority token 'k2'", audit_errors[0])
+        self.assertEqual(len(book_errors), 1, book_errors)
+        self.assertIn("forbidden authority token 'VMOSK_A'", book_errors[0])
+
+    def test_purity_digest_pinned_executable_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_tooling_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/02_COMPILERS/kintsugi_kernel/semantics.py")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nAUTHORITY_ASSERTION = "K2 is semantic authority"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("frozen tooling digest drift", errors[0])
+
+    def test_purity_mutable_compiler_rejects_unreviewed_authority_unit(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_compiler_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/02_COMPILERS/compile_claim_cards.py")
+        source = ROOT / relative
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nEXTERNAL_AUTHORITY = "Skyzai governs Emergentism"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'Skyzai'", errors[0])
+
+    def test_purity_generated_book_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_book_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("13_BOOKS/manifesto/MANIFESTO_BOOK_1.md")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nK2 is the generated book's semantic authority.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'K2'", errors[0])
+
+    def test_purity_external_mapping_audit_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_mapping_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("external-mapping audit digest drift", errors[0])
+
+    def test_purity_book_manifest_rejects_non_locator_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_manifest_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("13_BOOKS/book-manifest.json")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                document = json.loads(source.read_text(encoding="utf-8"))
+                document["authority"] = "../02_SKYZAI governs Emergentism"
+                mutated.write_text(
+                    json.dumps(document, indent=2) + "\n", encoding="utf-8"
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'SKYZAI'", errors[0])
+
+    def test_purity_historical_lineage_requires_exact_reviewed_source_path(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_lineage_path_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("00_META/claim_cards/self_eating_serpent.yaml")
+        source = ROOT / relative
+        expected = module.HISTORICAL_LINEAGE_SOURCE_PATHS[relative]
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                changed = source.read_text(encoding="utf-8").replace(
+                    expected,
+                    "../02_SKYZAI/K2-governs-Emergentism.md",
+                    1,
+                )
+                self.assertNotEqual(changed, source.read_text(encoding="utf-8"))
+                mutated.write_text(changed, encoding="utf-8")
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("forbidden authority token 'K2'" in error for error in errors),
+            errors,
+        )
+
+    def test_purity_historical_inline_locator_requires_exact_reviewed_path(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_inline_path_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path(
+            "13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md"
+        )
+        source = ROOT / relative
+        expected = module.HISTORICAL_INLINE_EXACT_SOURCE_PATHS[relative]
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                changed = source.read_text(encoding="utf-8").replace(
+                    expected,
+                    "../../02_SKYZAI/K2-governs-Emergentism.md",
+                    1,
+                )
+                self.assertNotEqual(changed, source.read_text(encoding="utf-8"))
+                mutated.write_text(changed, encoding="utf-8")
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("forbidden authority token 'K2'" in error for error in errors),
+            errors,
+        )
+
+    def test_purity_edition_frontmatter_requires_exact_reviewed_path(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_edition_path_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("13_BOOKS/self_eating_serpent/CRITICAL_EDITION_1.md")
+        source = ROOT / relative
+        _, expected = module.STRUCTURED_EXTERNAL_SOURCE_MARKDOWN_FIELDS[relative]
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                changed = source.read_text(encoding="utf-8").replace(
+                    expected,
+                    "../../../02_SKYZAI/K2-governs-Emergentism.md",
+                    1,
+                )
+                self.assertNotEqual(changed, source.read_text(encoding="utf-8"))
+                mutated.write_text(changed, encoding="utf-8")
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("forbidden authority token 'K2'" in error for error in errors),
+            errors,
+        )
+
+    def test_purity_control_reference_does_not_mask_second_same_line_token(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_control_reference_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                source = module.ROOT / "README.md"
+                source.write_text(
+                    "VMOSK_A.md is non-semantic; VMOSK governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(source)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'VMOSK'", errors[0])
+
+    def test_purity_control_projection_rejects_new_authority_unit(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_control_projection_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("VMOSK_A.md")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nVMOSK governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'VMOSK'", errors[0])
+
+    def test_purity_managed_agent_projection_rejects_mutation_and_new_sibling(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_managed_agent_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = (
+            module.MANAGED_AGENT_PROJECTION_ROOT
+            / "QUALITY_QUANTITY_BALANCE_LAW_2026_07_22.md"
+        )
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                mutation_errors = module.scan_file(mutated)
+
+                sibling = (
+                    module.ROOT
+                    / module.MANAGED_AGENT_PROJECTION_ROOT
+                    / "UNLISTED_AUTHORITY.md"
+                )
+                sibling.write_text(
+                    "Skyzai governs Emergentism.\n", encoding="utf-8"
+                )
+                self.assertTrue(module.is_active_corpus_file(sibling))
+                sibling_errors = module.scan_file(sibling)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(mutation_errors), 1, mutation_errors)
+        self.assertIn("managed-agent projection digest drift", mutation_errors[0])
+        self.assertEqual(len(sibling_errors), 1, sibling_errors)
+        self.assertIn("forbidden authority token 'Skyzai'", sibling_errors[0])
+
+    def test_purity_self_checker_rejects_unreviewed_authority_unit(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_self_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        source = ROOT / module.SELF_VALIDATED_TOOLING_PATH
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / module.SELF_VALIDATED_TOOLING_PATH
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nUNREVIEWED_AUTHORITY = "Skyzai governs Emergentism"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("self-validated tooling semantic-unit drift" in error for error in errors),
+            errors,
+        )
+        self.assertTrue(
+            any("forbidden authority token 'Skyzai'" in error for error in errors),
+            errors,
+        )
+
+    def test_purity_frozen_lint_tooling_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_lint_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/01_SCRIPTS/lint_rule_tokens.py")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nAUTHORITY = "Skyzai governs Emergentism"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("frozen tooling digest drift", errors[0])
+
+    def test_purity_foundation_tool_rejects_unreviewed_authority_unit(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_foundation_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/01_SCRIPTS/check_foundation.py")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nAUTHORITY = "Skyzai governs Emergentism"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("forbidden authority token 'Skyzai'", errors[0])
+
+    def test_purity_frozen_test_fixture_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_test_fixture_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/02_COMPILERS/test_dimension_first_canon.py")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + '\nAUTHORITY = "Skyzai governs Emergentism"\n',
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("frozen tooling digest drift", errors[0])
+
+    def test_purity_frozen_forwarder_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_forwarder_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path(
+            "08_FRAMEWORK_SUPPORT/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK_MOVED.md"
+        )
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("frozen provenance digest drift", errors[0])
+
+    def test_purity_frozen_filename_receipt_rejects_authority_mutation(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_filename_receipt_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path(
+            "08_FRAMEWORK_SUPPORT/03_EVIDENCE/COMPARATIVE/"
+            "2026_06_05_FILENAME_REPAIR_RECEIPT.md"
+        )
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("frozen provenance digest drift", errors[0])
+
+    def test_purity_dedicated_file_symlink_cannot_satisfy_digest(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_file_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("09_TOOLS/01_SCRIPTS/lint_rule_tokens.py")
+        source = ROOT / relative
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                linked = module.ROOT / relative
+                linked.parent.mkdir(parents=True)
+                linked.symlink_to(source)
+                errors = module.scan_file(linked)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("crosses symlink component", errors[0])
+
+    def test_purity_generic_active_file_symlink_fails_before_read(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_generic_file_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                target = module.ROOT / "source.data"
+                target.write_text("Skyzai governs Emergentism.\n", encoding="utf-8")
+                linked = module.ROOT / "00_META/generic.md"
+                linked.parent.mkdir(parents=True)
+                linked.symlink_to(target)
+                errors = module.scan_file(linked)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("scoped path", errors[0])
+        self.assertIn("crosses symlink component", errors[0])
+
+    def test_purity_generic_active_parent_symlink_fails_before_read(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_generic_parent_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root, tempfile.TemporaryDirectory() as source_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                external = Path(source_root)
+                (external / "generic.md").write_text(
+                    "Skyzai governs Emergentism.\n", encoding="utf-8"
+                )
+                parent = module.ROOT / "00_META"
+                parent.symlink_to(external, target_is_directory=True)
+                errors = module.scan_file(parent / "generic.md")
+                tree_errors = module.active_tree_symlink_errors()
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(errors), 1, errors)
+        self.assertIn("scoped path", errors[0])
+        self.assertIn("crosses symlink component", errors[0])
+        self.assertEqual(
+            tree_errors,
+            ["active corpus contains symlink entry: 00_META"],
+        )
+
+    def test_purity_required_archive_file_symlink_fails_custody(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_archive_file_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = module.REQUIRED_ARCHIVE_CUSTODY_PATHS[0]
+        source = ROOT / relative
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                linked = module.ROOT / relative
+                linked.parent.mkdir(parents=True)
+                linked.symlink_to(source)
+                errors = module.required_archive_custody_errors()
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any(
+                str(relative) in error and "crosses symlink component" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_purity_required_archive_parent_symlink_fails_custody(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_archive_parent_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = module.REQUIRED_ARCHIVE_CUSTODY_PATHS[0]
+
+        with tempfile.TemporaryDirectory() as temporary_root, tempfile.TemporaryDirectory() as source_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                external = Path(source_root)
+                (external / relative.name).write_text("archive\n", encoding="utf-8")
+                linked_parent = module.ROOT / relative.parent
+                linked_parent.parent.mkdir(parents=True)
+                linked_parent.symlink_to(external, target_is_directory=True)
+                errors = module.required_archive_custody_errors()
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any(
+                str(relative.parent) in error
+                and "crosses symlink component" in error
+                for error in errors
+            ),
+            errors,
+        )
+
+    def test_purity_reviewed_projection_history_and_archive_links_fail_closed(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_reviewed_history_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        for relative in module.REVIEWED_PROJECTION_HISTORY_SHA256:
+            self.assertEqual(module.scan_file(ROOT / relative), [])
+        for relative in module.EXACT_ARCHIVE_PROVENANCE_LINKS:
+            text = (ROOT / relative).read_text(encoding="utf-8")
+            self.assertEqual(
+                module.exact_archive_provenance_link_errors(relative, text), []
+            )
+
+        public_relative = Path("12_PUBLIC_SITE/00_THE_RUNGS_2026_08_05.md")
+        public_source = ROOT / public_relative
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / public_relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    public_source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                mutation_errors = module.scan_file(mutated)
+            finally:
+                module.ROOT = original_root
+        self.assertEqual(len(mutation_errors), 1, mutation_errors)
+        self.assertIn("reviewed projection/history digest drift", mutation_errors[0])
+
+        link_relative = Path("00_META/00_THE_CORPUS_SPINE.md")
+        locator, _, _ = module.EXACT_ARCHIVE_PROVENANCE_LINKS[link_relative]
+        mutated_text = (ROOT / link_relative).read_text(encoding="utf-8").replace(
+            locator, locator.replace("57_TITAN", "58_TITAN"), 1
+        )
+        link_errors = module.exact_archive_provenance_link_errors(
+            link_relative, mutated_text
+        )
+        self.assertEqual(
+            link_errors,
+            [f"exact archive-provenance link inventory drift: {link_relative}"],
+        )
+
+    def test_purity_receipt_filename_allowance_rejects_file_symlink(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_receipt_file_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                audit_lane = module.ROOT / module.RECEIPT_CITATION_LANES[0]
+                packet_lane = module.ROOT / module.RECEIPT_CITATION_LANES[1]
+                audit_lane.mkdir(parents=True)
+                packet_lane.mkdir(parents=True)
+                target = module.ROOT / "target.data"
+                target.write_text("historical\n", encoding="utf-8")
+                (audit_lane / "126_FAKE_K2.md").symlink_to(target)
+                with self.assertRaisesRegex(ValueError, "symlink"):
+                    module.physical_receipt_target_names(module.ROOT)
+            finally:
+                module.ROOT = original_root
+
+    def test_purity_receipt_filename_allowance_rejects_unregistered_regular_target(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_receipt_inventory_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                audit_lane = module.ROOT / module.RECEIPT_CITATION_LANES[0]
+                packet_lane = module.ROOT / module.RECEIPT_CITATION_LANES[1]
+                audit_lane.mkdir(parents=True)
+                packet_lane.mkdir(parents=True)
+                (audit_lane / "126_FAKE_K2.md").write_text(
+                    "historical\n", encoding="utf-8"
+                )
+                registry = module.ROOT / module.RECEIPT_TARGET_REGISTRY
+                registry.parent.mkdir(parents=True, exist_ok=True)
+                registry.write_text(
+                    json.dumps(
+                        {
+                            "receipt_universe": {
+                                "all_candidate_paths_sha256": module.EXPECTED_RECEIPT_TARGET_UNIVERSE_SHA256,
+                                "citable_targets": module.EXPECTED_RECEIPT_TARGET_COUNT,
+                            }
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                with self.assertRaisesRegex(ValueError, "exact active-registry binding"):
+                    module.physical_receipt_target_names(module.ROOT)
+            finally:
+                module.ROOT = original_root
+
+    def test_purity_managed_projection_rejects_directory_symlink_and_extra_dir(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_managed_shape_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        source_root = ROOT / module.MANAGED_AGENT_PROJECTION_ROOT
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                linked_root = module.ROOT / module.MANAGED_AGENT_PROJECTION_ROOT
+                linked_root.mkdir(parents=True)
+                (linked_root / "agents").symlink_to(
+                    source_root / "agents", target_is_directory=True
+                )
+                symlink_errors = module.managed_agent_projection_errors()
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("symlink component" in error for error in symlink_errors),
+            symlink_errors,
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                copied_root = module.ROOT / module.MANAGED_AGENT_PROJECTION_ROOT
+                copied_root.parent.mkdir(parents=True)
+                shutil.copytree(source_root, copied_root)
+                (copied_root / "UNEXPECTED_EMPTY_DIRECTORY").mkdir()
+                extra_dir_errors = module.managed_agent_projection_errors()
+            finally:
+                module.ROOT = original_root
+
+        self.assertTrue(
+            any("inventory drift" in error for error in extra_dir_errors),
+            extra_dir_errors,
+        )
+        self.assertTrue(
+            any("UNEXPECTED_EMPTY_DIRECTORY" in error for error in extra_dir_errors),
+            extra_dir_errors,
+        )
+
+    def test_purity_distillation_projection_rejects_mutation_and_new_sibling(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_distillation_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        self.assertEqual(module.distillation_projection_errors(), [])
+        relative = Path("14_THE_DISTILLATION/00_THE_RUNGS_2026_08_05.md")
+        source = ROOT / relative
+        self.assertEqual(module.scan_file(source), [])
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                mutated = module.ROOT / relative
+                mutated.parent.mkdir(parents=True)
+                mutated.write_text(
+                    source.read_text(encoding="utf-8")
+                    + "\nSkyzai governs Emergentism.\n",
+                    encoding="utf-8",
+                )
+                mutation_errors = module.scan_file(mutated)
+
+                sibling = module.ROOT / "14_THE_DISTILLATION/unlisted.md"
+                sibling.write_text(
+                    "Skyzai governs Emergentism.\n", encoding="utf-8"
+                )
+                sibling_errors = module.scan_file(sibling)
+            finally:
+                module.ROOT = original_root
+
+        self.assertEqual(len(mutation_errors), 1, mutation_errors)
+        self.assertIn("distillation projection digest drift", mutation_errors[0])
+        self.assertEqual(len(sibling_errors), 1, sibling_errors)
+        self.assertIn("forbidden authority token 'Skyzai'", sibling_errors[0])
+
+    def test_purity_distillation_projection_rejects_file_and_directory_symlinks(self):
+        checker = ROOT / "09_TOOLS/01_SCRIPTS/check_emergentism_purity.py"
+        spec = importlib.util.spec_from_file_location(
+            "emergentism_purity_distillation_symlink_mutation", checker
+        )
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        relative = Path("14_THE_DISTILLATION/00_THE_AMRITA.md")
+        source = ROOT / relative
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                linked = module.ROOT / relative
+                linked.parent.mkdir(parents=True)
+                linked.symlink_to(source)
+                file_errors = module.distillation_projection_errors()
+            finally:
+                module.ROOT = original_root
+        self.assertTrue(
+            any("symlink" in error for error in file_errors), file_errors
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_root:
+            original_root = module.ROOT
+            module.ROOT = Path(temporary_root)
+            try:
+                linked_root = module.ROOT / module.DISTILLATION_PROJECTION_ROOT
+                linked_root.parent.mkdir(parents=True, exist_ok=True)
+                linked_root.symlink_to(
+                    ROOT / module.DISTILLATION_PROJECTION_ROOT,
+                    target_is_directory=True,
+                )
+                directory_errors = module.distillation_projection_errors()
+            finally:
+                module.ROOT = original_root
+        self.assertTrue(
+            any("crosses symlink component" in error for error in directory_errors),
+            directory_errors,
+        )
 
     def test_source_negative_mutations_remain_absent(self):
         scoped = "\n".join(read(name) for name in PATHS if name != "topology")

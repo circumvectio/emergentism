@@ -105,7 +105,7 @@ balance point.
 > `00_THE_RUNGS_2026_08_05.md` §D2 §IV type rider for the canonical
 > disambiguation; the three-file chain (ASCENT_D2_GEOMETRY,
 > 51B_FINITY_L_C1_KILL, ASCENT_D6_RETURN_AND_O) inherits the same rider via
-> the K2-applied patches referenced in `antipodality_fix_report 2026-08-06`.
+> the recorded patches referenced in `antipodality_fix_report 2026-08-06`.
 
 ## The honest limitation
 
@@ -147,7 +147,7 @@ conjecture whose antecedent has no instance.**
 > `ab = const`) is unmet across eight searched domains. The theorem `[A]`
 > survives. F3 narrows. **This is the owner's act (§2.3: no tier promotion,
 > no kill, no gate closure by an agent).** This document reports the
-> evidence; the disposition belongs to K2.
+> evidence; the disposition remains with the source owner.
 
 ---
 

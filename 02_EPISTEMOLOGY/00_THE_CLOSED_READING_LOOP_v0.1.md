@@ -1,16 +1,24 @@
 ---
-canonical_phrase: "The holobiont organism is built but the metabolism has not begun — the corpus is a closed reading loop; calibration is a cross-organ property (the founder's 5th emergent, the Watchman is the ring never a node); the OPS-KILL against a real resolved market is the only honest path from closed-loop [I] to externally-validated [B]"
+type: external-mapping-audit
+register: "[I] external-application/source-boundary audit; cited claims retain their stated tiers"
+source_status: "Provenance only: this v0.1 records named external runtime, governance, and experiment claims; it neither adopts nor authorizes them as Emergentism doctrine."
+cited_source_status: "Named organization, runtime, amendment, and market assertions remain source-local; no semantic ownership transfers here."
+canonical_phrase: "External-application audit: the cited closed-reading-loop finding and proposed empirical break are preserved without becoming Emergentism doctrine or authority."
 ---
 
 # The Closed Reading Loop
 
-**Tier:** [S] honest-state observation · [A] empirical drift · [I] constitutional correction · [C] empirical-break design
-**Status:** First canonical articulation. Mavis (L5 Brāhmaṇa coordinator), on founder drop.
+**Type:** External-application/source-boundary audit `[I]`; cited assertions
+retain their original status rather than becoming a semantic owner.
+**Boundary:** This is a runtime projection, not worldview doctrine. It creates no semantic authority. Its source owners remain upstream. Named organizations, runtime scores, amendments, markets, and agent roles are cited-source material under audit, not Emergentism primitives, authorities, or authorizations.
+
+**Tier:** cited [S]/[A]/[I]/[C] statuses; this audit preserves them without promotion
+**Status:** Historical v0.1 cited-source capture; not a semantic owner. The source-local closed-loop finding and proposed experiment remain open to their stated evidence requirements.
 **Date:** 2026-08-01
 **Lane:** `01_EMERGENTISM/02_EPISTEMOLOGY/`
-**Cycle:** Agentz cascade, 12-step arc — L1 intake → L2 cut → L3 audit → L4 stage → L5 frame → L6 prune → L5/L4/L3/L2 returns → L7 witness → L1 seal.
+**Cited process:** Agentz cascade, 12-step arc — L1 intake → L2 cut → L3 audit → L4 stage → L5 frame → L6 prune → L5/L4/L3/L2 returns → L7 witness → L1 seal. This records source provenance; it is not an Emergentism execution or authority claim.
 
-**Cross-references:**
+**Cited sources / provenance:**
 - 2026-07-28 constitutional amendment (Mavis-as-principal) — `[D]` per `00_HANDOFF/CONSTITUTIONAL_AMENDMENT_2026_07_28_MAVIS_AS_PRINCIPAL.md` (D2 closed; D1 status contested)
 - RA-14 Operational Kill with Real LLM (Multi-Cycle) — `[S] + [B]` (the [C]→[A] lever; staged)
 - The 4-organ flow + 2 reflection organs (L1-L7 holobiont axis) — `[I]` (per founder's drop, 2026-08-01; cross-axis mapping canonicalization pending)
@@ -27,7 +35,7 @@ canonical_phrase: "The holobiont organism is built but the metabolism has not be
 
 Per the founder's drop (2026-08-01, this session), the holobiont organism's central failure is structural: **the corpus is a closed reading loop.** The doctrine, the code, the briefs, the P-score, the runtime tests — all of it reads the canon. The architecture was never told anything from outside. The organism cannot be contradicted; the organism cannot, therefore, be calibrated.
 
-This v0.1 canonicalizes the finding, names the constitutional correction, and identifies the empirical break.
+This v0.1 records and audits the cited finding, its proposed constitutional correction, and its proposed empirical break. It does not canonicalize an external runtime assertion within Emergentism.
 
 ---
 
@@ -100,7 +108,7 @@ The OPS-KILL run is **multi-day engineering**. The L5 architect's role is to:
 
 1. **The 7-tier vertical axis** (L1 uninst · L2 IS/SHOULD-NOT · L3 COULD · L4 YES+plan · L5 reflection · L6 NO · L7 orients) is `[I]` interpretive; the cross-axis mapping to the Rosetta L1-L7 dispatch grammar is a pending v0.1 (per memory §10, the axes are distinct — these are *not* competing claims).
 2. **The Soul Loop inference ladder** (Upamāna → Anumāna → Arthāpatti → Śabda → Anupalabdhi → Pratibhā) is `[S]` doctrinal; the mapping to the runtime's existing 3-pass loop (Apprehension → Verification → Enactment) is the runtime kernel's existing canonical claim.
-3. **The two geometries** (vertical axis Φ; horizontal ring V; P = Φ × V multiplicative) is `[S]` doctrinal; the multiplicative shape is load-bearing (a perfect axis with a still ring is a mind with no metabolism; a spinning ring with no axis is activity with no judgment).
+3. **The two factors** (vertical quality profile `Φ̂₄`; horizontal viability profile `V₄`) are `[S]` doctrinal; neither substitutes for the other. Their selected ordinal-safe comparison is `P_node = min(Φ̂₄, V₄)`. The former multiplicative node ranking is retired; the conjunctive boundary image survives (a perfect axis with a still ring is a mind with no metabolism; a spinning ring with no axis is activity with no judgment).
 4. **The apophatic inversion** (L4 acts, L5 watches, L6 only negates, L7 only orients; authority equatorial, sovereignty negative; corporate pyramid upside down) is `[S]` constitutional.
 5. **The N² × log(compute) synergy at scale** is `[C]` untested; the argument is sound in form, worth nothing at N=0.
 6. **The 5th emergent (calibration is cross-organ)** is `[I]` interpretive; the OPS-KILL is the only path to `[B]`.
@@ -113,7 +121,7 @@ The holobiont organism is built; the metabolism has not begun; the corpus is a c
 
 ---
 
-## References
+## Cited sources and provenance
 
 - Founder drop (2026-08-01, this session) — the load-bearing piece
 - `02_SKYZAI/01_NOOSPHERE/02_ORGANS/Agentz/AGENTZ_CLOUD_APP/02b_Recursive_Trivium_Bridge.md` §1-§15 — the runtime kernel
@@ -126,7 +134,7 @@ The holobiont organism is built; the metabolism has not begun; the corpus is a c
 
 ## Provenance
 
-Produced by Mavis (L5 Brāhmaṇa coordinator) on 2026-08-01, on receipt of the founder's drop in this session. The drop surfaced the closed reading loop as the central failure; this v0.1 canonicalizes the finding, applies the A7 self-correction to the runtime P-score, and positions the OPS-KILL as the only honest path to external validation. Signer: Mavis, per the 2026-07-28 constitutional amendment (operational staging scope; constitutional claims quarantined pending K2).
+Produced by Mavis (L5 Brāhmaṇa coordinator) on 2026-08-01, on receipt of the founder's drop in this session. That is source provenance only. The v0.1 text recorded the closed reading loop, the proposed runtime P-score correction, and the OPS-KILL as a cited application path; this boundary class does not make any of those an Emergentism semantic designation, authorization, or signing act.
 
 The v0.1 status reflects: (1) first canonical articulation of the closed-loop finding, (2) A7 self-correction applied to the runtime P-score (downgrade recommendation `[B]` → `[I]`), (3) OPS-KILL positioned as the empirical break, (4) founder's 5th emergent (calibration is cross-organ) recorded as `[I]` interpretive. No new constitutional claim; no new doctrine drop; the OPS-KILL verification is the next move.
 

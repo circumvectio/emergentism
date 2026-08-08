@@ -77,6 +77,12 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         for relative_lane in CHECKER.RECEIPT_LANES:
             (repo / relative_lane).mkdir(parents=True, exist_ok=True)
 
+    def create_topology_tombstones(self, repo: Path) -> None:
+        for relative in CHECKER.HELD_TOPOLOGY_TOMBSTONES:
+            target = repo / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes((ROOT / relative).read_bytes())
+
     def receipt_bytes_for_state(self, state) -> bytes:
         digest = CHECKER.canonical_state_digest(state)
         return (
@@ -94,14 +100,113 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
             return CHECKER.compute_public_lifecycle(ROOT)
 
+    def test_repo_file_rejects_direct_file_symlink_before_read(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            outside = fixture / "outside.txt"
+            outside.write_text("outside\n", encoding="utf-8")
+            (root / "owner.txt").symlink_to(outside)
+            errors: list[str] = []
+            self.assertIsNone(
+                CHECKER.repo_file(root, "owner.txt", "synthetic owner", errors)
+            )
+        self.assertTrue(any("must not traverse a symlink" in error for error in errors), errors)
+
+    def test_repo_file_rejects_parent_directory_symlink_before_read(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            outside = fixture / "outside"
+            outside.mkdir()
+            (outside / "owner.txt").write_text("outside\n", encoding="utf-8")
+            (root / "owners").symlink_to(outside, target_is_directory=True)
+            errors: list[str] = []
+            self.assertIsNone(
+                CHECKER.repo_file(
+                    root, "owners/owner.txt", "synthetic owner", errors
+                )
+            )
+        self.assertTrue(any("must not traverse a symlink" in error for error in errors), errors)
+
+    def test_claim_status_loader_rejects_direct_file_symlink_before_execution(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            sentinel = fixture / "executed"
+            outside = fixture / "outside_policy.py"
+            outside.write_text(
+                f"from pathlib import Path\nPath({str(sentinel)!r}).write_text('ran')\n",
+                encoding="utf-8",
+            )
+            (root / "claim_policy.py").symlink_to(outside)
+            with self.assertRaisesRegex(RuntimeError, "claim-status policy.*symlink"):
+                CHECKER._load_claim_status_policy(root, Path("claim_policy.py"))
+            self.assertFalse(sentinel.exists())
+
+    def test_claim_status_loader_rejects_parent_symlink_before_execution(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            sentinel = fixture / "executed"
+            outside = fixture / "outside"
+            outside.mkdir()
+            (outside / "claim_policy.py").write_text(
+                f"from pathlib import Path\nPath({str(sentinel)!r}).write_text('ran')\n",
+                encoding="utf-8",
+            )
+            (root / "policies").symlink_to(outside, target_is_directory=True)
+            with self.assertRaisesRegex(RuntimeError, "claim-status policy.*symlink"):
+                CHECKER._load_claim_status_policy(
+                    root, Path("policies/claim_policy.py")
+                )
+            self.assertFalse(sentinel.exists())
+
+    def test_check_rejects_direct_state_file_symlink_before_read(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            state_parent = root / CHECKER.STATE_PATH.parent
+            state_parent.mkdir(parents=True)
+            outside = fixture / "CONTACT_LIMITED_STATE.json"
+            outside.write_text("{}\n", encoding="utf-8")
+            (root / CHECKER.STATE_PATH).symlink_to(outside)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "contact-limited state owner.*symlink"
+            ):
+                CHECKER.check(root)
+
+    def test_check_rejects_state_parent_directory_symlink_before_read(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            outside = fixture / "outside-meta"
+            outside.mkdir()
+            (outside / CHECKER.STATE_PATH.name).write_text("{}\n", encoding="utf-8")
+            (root / CHECKER.STATE_PATH.parent).symlink_to(
+                outside, target_is_directory=True
+            )
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "contact-limited state owner.*symlink"
+            ):
+                CHECKER.check(root)
+
     def test_live_contract_passes_with_exact_scope(self) -> None:
         report = CHECKER.check(ROOT)
         self.assertEqual(
             report["receipt_namespace"]["target_files"],
             self.state["receipt_namespace"]["target_files"],
         )
-        self.assertEqual(report["receipt_namespace"]["bare_unsafe_reused_prefixes"], 97)
-        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 398)
+        self.assertEqual(
+            report["receipt_namespace"]["bare_unsafe_reused_prefixes"],
+            CHECKER.EXPECTED_REUSED_PREFIXES,
+        )
+        self.assertEqual(report["public_lifecycle"]["counts"]["total"], 402)
         self.assertEqual(report["public_lifecycle"]["counts"]["unclassified"], 0)
         self.assertEqual(
             report["public_lifecycle"]["matcher_conformance"]["mismatches"], []
@@ -115,6 +220,45 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(report["claim_disposition"]["ambiguous"], 0)
         self.assertEqual(report["owner_held"], 2)
         self.assertEqual(report["world_contact"]["state"], "OPEN")
+
+    def test_claim_projection_uses_investigations_not_legacy_reopened(self) -> None:
+        source = copy.deepcopy(
+            CHECKER._CLAIM_STATUS_POLICY.load_document(ROOT / CHECKER.CLAIM_SOURCE)
+        )
+        source["reopened"] = source.pop("investigations")
+        with mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "check", return_value=[]
+        ), mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "load_document", return_value=source
+        ):
+            with self.assertRaisesRegex(CHECKER.ContractError, "investigations"):
+                CHECKER.compute_claim_disposition(ROOT)
+
+    def test_typed_survivor_cannot_enter_the_48_row_lifecycle(self) -> None:
+        source = copy.deepcopy(
+            CHECKER._CLAIM_STATUS_POLICY.load_document(ROOT / CHECKER.CLAIM_SOURCE)
+        )
+        source["open"][-1] = copy.deepcopy(source["typed_survivors"][0])
+        with mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "check", return_value=[]
+        ), mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "load_document", return_value=source
+        ):
+            with self.assertRaisesRegex(CHECKER.ContractError, "outside the 48-row"):
+                CHECKER.compute_claim_disposition(ROOT)
+
+    def test_claim_lifecycle_cannot_be_coordinately_rebaselined_to_49(self) -> None:
+        source = copy.deepcopy(
+            CHECKER._CLAIM_STATUS_POLICY.load_document(ROOT / CHECKER.CLAIM_SOURCE)
+        )
+        source["open"].append(copy.deepcopy(source["open"][0]))
+        with mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "check", return_value=[]
+        ), mock.patch.object(
+            CHECKER._CLAIM_STATUS_POLICY, "load_document", return_value=source
+        ):
+            with self.assertRaisesRegex(CHECKER.ContractError, "exactly 48"):
+                CHECKER.compute_claim_disposition(ROOT)
 
     def test_public_artifact_disappearance_fails(self) -> None:
         public = copy.deepcopy(self.computed["compute_public_lifecycle"])
@@ -377,6 +521,45 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             errors = CHECKER.marker_receipt_custody_errors(repo)
             self.assertTrue(any("deleted from HEAD" in error for error in errors))
 
+    def test_marker_receipt_custody_rejects_direct_file_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            self.create_receipt_lanes(repo)
+            marker = (
+                repo
+                / CHECKER.RECEIPT_LANES[0]
+                / "236_BASELINE_2026_08_01.md"
+            )
+            marker.write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(repo, "marker baseline")
+            outside = repo / "outside-marker.md"
+            outside.write_bytes(marker.read_bytes())
+            marker.unlink()
+            marker.symlink_to(outside)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "marker-receipt custody entry.*symlink"
+            ):
+                CHECKER.marker_receipt_custody_errors(repo)
+
+    def test_marker_receipt_custody_rejects_parent_directory_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.init_git_repo(repo)
+            self.create_receipt_lanes(repo)
+            parent = repo / CHECKER.RECEIPT_LANES[0] / "nested"
+            parent.mkdir()
+            marker = parent / "236_BASELINE_2026_08_01.md"
+            marker.write_bytes(self.receipt_bytes_for_state({"snapshot": 1}))
+            self.commit_all(repo, "nested marker baseline")
+            outside = repo / "outside-marker-parent"
+            parent.rename(outside)
+            parent.symlink_to(outside, target_is_directory=True)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "marker-receipt custody entry.*symlink"
+            ):
+                CHECKER.marker_receipt_custody_errors(repo)
+
     def test_git_history_unavailable_fails_closed(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             with self.assertRaises(CHECKER.ContractError):
@@ -389,7 +572,7 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         state["claim_disposition"]["current_scope"]["merged_contact"].remove("W3")
         self.assert_invalid(state)
 
-    def test_reopened_question_deletion_fails(self) -> None:
+    def test_investigation_question_deletion_fails(self) -> None:
         state = copy.deepcopy(self.state)
         state["claim_disposition"]["current_scope"]["internal_narrowed"].remove("RQ-09")
         self.assert_invalid(state)
@@ -410,6 +593,34 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         state["owner_held"]["debts"][0]["id"] = "PASS-WITH-DEBT"
         substituted = {"PASS-WITH-DEBT", "OWNER_GATE_OPEN_TOPOLOGY"}
         self.assert_invalid(state, compute_owner_debts=substituted)
+
+    def test_owner_profile_cannot_hide_unset_debts_behind_pass(self) -> None:
+        profile = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.COHERENCE_SOURCE))
+        profile["axes"]["routing"]["state"] = "PASS"
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.COHERENCE_SOURCE:
+                return profile
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaisesRegex(CHECKER.ContractError, "PASS_WITH_DEBT"):
+                CHECKER.compute_owner_debts(ROOT)
+
+    def test_owner_profile_cannot_drop_one_unset_debt(self) -> None:
+        profile = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.COHERENCE_SOURCE))
+        profile["axes"]["routing"]["debt_ids"].pop()
+        original_load = CHECKER.load_json
+
+        def mutated_load(path):
+            if Path(path) == ROOT / CHECKER.COHERENCE_SOURCE:
+                return profile
+            return original_load(path)
+
+        with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
+            with self.assertRaisesRegex(CHECKER.ContractError, "two unset owner debts"):
+                CHECKER.compute_owner_debts(ROOT)
 
     def test_public_doc_debt_preserves_identical_non_deployable_copies(self) -> None:
         self.assertEqual(
@@ -551,7 +762,10 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertEqual(CHECKER.unresolved_topology_errors(ROOT), [])
         with tempfile.TemporaryDirectory() as directory:
             corpus = Path(directory)
-            (corpus / "08_FRAMEWORK_SUPPORT/00_META").mkdir(parents=True)
+            self.create_topology_tombstones(corpus)
+            self.init_git_repo(corpus)
+            self.commit_all(corpus, "add exact topology tombstones")
+            self.assertEqual(CHECKER.unresolved_topology_errors(corpus), [])
             (corpus / "07_EXTRA/00_META").mkdir(parents=True)
             errors = CHECKER.unresolved_topology_errors(corpus)
             self.assertTrue(
@@ -579,6 +793,32 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             errors,
         )
 
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            broken = corpus / "05_COSMOLOGY/00_META"
+            broken.parent.mkdir(parents=True)
+            broken.symlink_to(corpus / "missing", target_is_directory=True)
+            errors = CHECKER.unresolved_topology_errors(corpus)
+        self.assertTrue(
+            any("unexpected=05_COSMOLOGY/00_META" in error for error in errors),
+            errors,
+        )
+        self.assertTrue(
+            any("symlink=05_COSMOLOGY/00_META" in error for error in errors),
+            errors,
+        )
+
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            wrong_type = corpus / "05_COSMOLOGY/00_META"
+            wrong_type.parent.mkdir(parents=True)
+            wrong_type.write_text("not a directory\n", encoding="utf-8")
+            errors = CHECKER.unresolved_topology_errors(corpus)
+        self.assertTrue(
+            any("non-directory=05_COSMOLOGY/00_META" in error for error in errors),
+            errors,
+        )
+
     def test_unresolved_topology_requires_exact_evidence_and_route_boundary(self) -> None:
         self.assertEqual(
             CHECKER.topology_owner_debt_errors(
@@ -596,103 +836,145 @@ class ContactLimitedRatchetTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as directory:
             corpus = Path(directory)
-            route_card = corpus / CHECKER.HELD_TOPOLOGY_ROUTE_CARD
-            route_card.parent.mkdir(parents=True)
-            agent_route_card = corpus / CHECKER.HELD_TOPOLOGY_AGENT_ROUTE_CARD
-            route_card_text = (
-                "## What It Owns\n\nSupport content only.\n\n"
-                "## What It Must Not Own\n\n"
-                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['What It Must Not Own']}\n\n"
-                "## Current Boundary\n\n"
-                f"{CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS['Current Boundary']}\n"
-            )
-            agent_route_card_text = "# Agent route\n\nSupport routing only.\n"
-            route_card.write_text(route_card_text, encoding="utf-8")
-            agent_route_card.write_text(agent_route_card_text, encoding="utf-8")
+            self.create_topology_tombstones(corpus)
+            self.init_git_repo(corpus)
+            self.commit_all(corpus, "add exact topology tombstones")
             self.assertEqual(CHECKER.unresolved_topology_errors(corpus), [])
-            route_card.write_text(
-                route_card_text.replace(
-                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["Current Boundary"],
-                    "No upstream route is declared here.",
-                ),
+            tombstone = corpus / CHECKER.HELD_TOPOLOGY_TOMBSTONES[0]
+            original = tombstone.read_text(encoding="utf-8")
+            tombstone.write_text(
+                original.replace("Nothing here owns doctrine.", ""),
                 encoding="utf-8",
             )
             errors = CHECKER.unresolved_topology_errors(corpus)
             self.assertTrue(
-                any("boundary sentinel" in error for error in errors), errors
+                any("lost its exact title/no-doctrine frontmatter" in error for error in errors),
+                errors,
             )
 
-            route_card.write_text(
-                route_card_text.replace(
-                    CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
-                    "No governance route is declared here.",
-                )
-                + "\n\n## Historical Notes\n\n"
-                + CHECKER.HELD_TOPOLOGY_ROUTE_CARD_SENTINELS["What It Must Not Own"],
+            tombstone.write_text(
+                original + "\nThis lane owns doctrine.\n",
                 encoding="utf-8",
             )
             errors = CHECKER.unresolved_topology_errors(corpus)
             self.assertTrue(
-                any("boundary sentinel from: What It Must Not Own" in error for error in errors),
+                any("asserts active canon/doctrine/governance ownership" in error for error in errors),
                 errors,
             )
 
-            route_card.write_text(
-                route_card_text.replace(
-                    "Support content only.",
-                    "Support content only. Active governance law is owned here.",
-                ),
+            tombstone.write_text(
+                original + "\nThis path is now structurally authoritative.\n",
                 encoding="utf-8",
             )
+            self.commit_all(corpus, "seed coordinated tombstone authority drift")
             errors = CHECKER.unresolved_topology_errors(corpus)
             self.assertTrue(
-                any("asserts active governance ownership" in error for error in errors),
+                any("SHA-256 drifted" in error for error in errors),
+                errors,
+            )
+            tombstone.write_text(original, encoding="utf-8")
+            self.commit_all(corpus, "restore exact tombstone custody")
+
+            tombstone.write_text(original, encoding="utf-8")
+            unexpected = tombstone.parent / "README.md"
+            unexpected.write_text("unexpected active route\n", encoding="utf-8")
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("tombstone inventory drifted" in error for error in errors),
+                errors,
+            )
+            unexpected.unlink()
+
+            tombstone.write_text(original + "\nneutral uncommitted drift\n", encoding="utf-8")
+            errors = CHECKER.unresolved_topology_errors(corpus)
+            self.assertTrue(
+                any("lacks exact regular-file Git index custody" in error for error in errors),
                 errors,
             )
 
-            route_card.write_text(
-                route_card_text
-                + "\n\n## What It Owns\n\nThis folder owns active governance law.\n",
-                encoding="utf-8",
-            )
-            errors = CHECKER.unresolved_topology_errors(corpus)
-            self.assertTrue(
-                any("duplicate active ownership/boundary headings: What It Owns" in error for error in errors),
-                errors,
-            )
-
-            route_card.write_text(route_card_text, encoding="utf-8")
-            agent_route_card.write_text(
-                "# Agent route\n\nThis folder owns active governance law.\n",
-                encoding="utf-8",
-            )
-            errors = CHECKER.unresolved_topology_errors(corpus)
-            self.assertTrue(
-                any("active route surface asserts active governance ownership" in error for error in errors),
-                errors,
-            )
-
-            agent_route_card.unlink()
-            errors = CHECKER.unresolved_topology_errors(corpus)
-            self.assertTrue(
-                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
-                errors,
-            )
-
+            tombstone.unlink()
             outside = corpus / "outside.md"
-            outside.write_text("route card", encoding="utf-8")
-            agent_route_card.symlink_to(outside)
+            outside.write_text(original, encoding="utf-8")
+            tombstone.symlink_to(outside)
             errors = CHECKER.unresolved_topology_errors(corpus)
             self.assertTrue(
-                any("AGENTS.md" in error and "regular, non-symlink" in error for error in errors),
+                any("regular, non-symlink" in error for error in errors),
                 errors,
             )
 
-            route_card.unlink()
-            route_card.symlink_to(outside)
-            errors = CHECKER.unresolved_topology_errors(corpus)
+    def test_owner_dockets_remain_exactly_unset(self) -> None:
+        self.assertEqual(CHECKER.owner_docket_unset_errors(ROOT), [])
+        for docket_id, contract in CHECKER.OWNER_DOCKET_UNSET_CONTRACT.items():
+            with self.subTest(docket_id=docket_id), tempfile.TemporaryDirectory() as directory:
+                corpus = Path(directory)
+                target = corpus / CHECKER.OWNER_DOCKET
+                target.parent.mkdir(parents=True)
+                target.write_bytes((ROOT / CHECKER.OWNER_DOCKET).read_bytes())
+                self.init_git_repo(corpus)
+                self.commit_all(corpus, "add unset owner docket")
+                body = target.read_text(encoding="utf-8")
+                target.write_text(
+                    body.replace(
+                        contract["principal"],
+                        "- **Principal:** selected without an owner ruling.",
+                        1,
+                    ),
+                    encoding="utf-8",
+                )
+                errors = CHECKER.owner_docket_unset_errors(corpus)
+                self.assertTrue(
+                    any(
+                        docket_id in error and "UNSET principal" in error
+                        for error in errors
+                    ),
+                    errors,
+                )
+
+    def test_topology_debt_cannot_be_reworded_as_present_conformance(self) -> None:
+        state = copy.deepcopy(self.state)
+        debt = next(
+            row
+            for row in state["owner_held"]["debts"]
+            if row["id"] == "OWNER_GATE_OPEN_TOPOLOGY"
+        )
+        debt["question"] = "Is the current non-root path already conforming?"
+        debt["close_when"] = "The existing files are declared complete."
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state)
+        self.assertTrue(
+            any(
+                "OWNER_GATE_OPEN_TOPOLOGY" in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
+
+    def test_fenced_code_cannot_counterfeit_an_unset_owner_docket(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            corpus = Path(directory)
+            target = corpus / CHECKER.OWNER_DOCKET
+            target.parent.mkdir(parents=True)
+            body = (ROOT / CHECKER.OWNER_DOCKET).read_text(encoding="utf-8")
+            contract = CHECKER.OWNER_DOCKET_UNSET_CONTRACT["D-OWNER-01"]
+            section_start = body.index("## D-OWNER-01")
+            section_end = body.index("## D-OWNER-02")
+            hidden_section = body[section_start:section_end]
+            body = body[:section_start] + body[section_end:]
+            body = body.replace(contract["status_row"] + "\n", "", 1)
+            body += (
+                "\n```markdown\n"
+                + contract["status_row"]
+                + "\n"
+                + hidden_section
+                + "```\n"
+            )
+            target.write_text(body, encoding="utf-8")
+            self.init_git_repo(corpus)
+            self.commit_all(corpus, "add counterfeit fenced docket")
+            errors = CHECKER.owner_docket_unset_errors(corpus)
             self.assertTrue(
-                any("regular, non-symlink" in error for error in errors), errors
+                any("D-OWNER-01" in error for error in errors),
+                errors,
             )
 
     def test_fabricated_world_evidence_fails_even_if_state_matches(self) -> None:
@@ -714,12 +996,33 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         )
         self.assert_invalid(state)
 
-    def test_legacy_91_cannot_be_presented_as_safe(self) -> None:
+    def test_legacy_heuristic_cannot_be_presented_as_safe(self) -> None:
         state = copy.deepcopy(self.state)
         state["receipt_namespace"]["bare_numeric_boundary"] = (
             "The 91 legacy heuristic prefixes are safe."
         )
         self.assert_invalid(state)
+
+    def test_reused_prefix_boundary_cannot_be_rebaselined_below_101(self) -> None:
+        state = copy.deepcopy(self.state)
+        receipt_state = state["receipt_namespace"]
+        receipt_state["reused_prefixes"] = 100
+        receipt_state["bare_unsafe_reused_prefixes"] = 100
+        receipt_state["bare_numeric_boundary"] = (
+            "All 100 reused prefixes remain unsafe as bare citations. "
+            f"The live legacy heuristic marks "
+            f"{receipt_state['legacy_heuristic_dangerous_prefixes']} dangerous prefixes "
+            "but proves no target, direction, reciprocity, or cross-lane disambiguation."
+        )
+        receipts = copy.deepcopy(self.computed["compute_receipt_namespace"])
+        receipts["reused_prefixes"] = 100
+        receipts["bare_unsafe_reused_prefixes"] = 100
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_receipt_namespace=receipts)
+        self.assertTrue(
+            any("exactly 101" in error for error in raised.exception.errors),
+            raised.exception.errors,
+        )
 
     def test_mixed_negated_and_positive_missing_citations_are_separate(self) -> None:
         text = "Receipt 999 does not exist. Receipt 998 establishes the result."
@@ -753,6 +1056,35 @@ class ContactLimitedRatchetTests(unittest.TestCase):
         self.assertTrue(
             any("identity hashes drifted" in error for error in raised.exception.errors)
         )
+
+    def test_receipt_namespace_rejects_direct_file_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.create_receipt_lanes(repo)
+            outside = repo / "outside-receipt.md"
+            outside.write_text("receipt\n", encoding="utf-8")
+            linked = repo / CHECKER.RECEIPT_LANES[0] / "236_LINK_2026_08_01.md"
+            linked.symlink_to(outside)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "receipt namespace entry.*symlink"
+            ):
+                CHECKER.compute_receipt_namespace(repo)
+
+    def test_receipt_namespace_rejects_parent_directory_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.create_receipt_lanes(repo)
+            outside = repo / "outside-receipts"
+            outside.mkdir()
+            (outside / "236_LINK_2026_08_01.md").write_text(
+                "receipt\n", encoding="utf-8"
+            )
+            parent = repo / CHECKER.RECEIPT_LANES[0] / "linked"
+            parent.symlink_to(outside, target_is_directory=True)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "receipt namespace entry.*symlink"
+            ):
+                CHECKER.compute_receipt_namespace(repo)
 
     def test_path_set_hash_is_unambiguous_for_newline_paths(self) -> None:
         self.assertNotEqual(
@@ -887,6 +1219,49 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             with self.assertRaises(CHECKER.ContractError):
                 CHECKER.compute_public_lifecycle(ROOT)
 
+    def test_public_lifecycle_rejects_symlinked_machine_owner_entry(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            site = root / CHECKER.PUBLIC_DIR
+            site.mkdir(parents=True)
+            outside = fixture / "public_semantic_parity.json"
+            outside.write_text("{}\n", encoding="utf-8")
+            (root / CHECKER.PUBLIC_PARITY).symlink_to(outside)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "public lifecycle entry.*symlink"
+            ):
+                CHECKER.compute_public_lifecycle(root)
+
+    def test_public_lifecycle_rejects_symlinked_site_root(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            root.mkdir()
+            outside = fixture / "site"
+            outside.mkdir()
+            (root / CHECKER.PUBLIC_DIR).symlink_to(
+                outside, target_is_directory=True
+            )
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "public lifecycle root.*symlink"
+            ):
+                CHECKER.compute_public_lifecycle(root)
+
+    def test_public_lifecycle_rejects_symlinked_html_inventory_entry(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            root = fixture / "repo"
+            site = root / CHECKER.PUBLIC_DIR
+            site.mkdir(parents=True)
+            outside = fixture / "outside.html"
+            outside.write_text("<html></html>\n", encoding="utf-8")
+            (site / "index.html").symlink_to(outside)
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "public lifecycle entry.*symlink"
+            ):
+                CHECKER.compute_public_lifecycle(root)
+
     def test_sitemap_exactly_matches_indexable_html_classes(self) -> None:
         contract = self.computed["compute_public_lifecycle"]["sitemap_contract"]
         self.assertEqual(contract["classes"], ["current", "provisional"])
@@ -925,6 +1300,49 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                 CHECKER._validated_withheld_artifacts(site, rows), {"held.html"}
             )
 
+    def test_withheld_artifact_rejects_direct_file_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            site = fixture / "site"
+            site.mkdir()
+            body = b"<html>held</html>\n"
+            outside = fixture / "outside.html"
+            outside.write_bytes(body)
+            (site / "held.html").symlink_to(outside)
+            rows = [
+                {
+                    "artifact": "held.html",
+                    "bytes": len(body),
+                    "sha256": CHECKER.hashlib.sha256(body).hexdigest(),
+                }
+            ]
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "withheld artifact.*symlink"
+            ):
+                CHECKER._validated_withheld_artifacts(site, rows)
+
+    def test_withheld_artifact_rejects_parent_directory_symlink(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            fixture = Path(directory)
+            site = fixture / "site"
+            site.mkdir()
+            body = b"<html>held</html>\n"
+            outside = fixture / "outside"
+            outside.mkdir()
+            (outside / "held.html").write_bytes(body)
+            (site / "nested").symlink_to(outside, target_is_directory=True)
+            rows = [
+                {
+                    "artifact": "nested/held.html",
+                    "bytes": len(body),
+                    "sha256": CHECKER.hashlib.sha256(body).hexdigest(),
+                }
+            ]
+            with self.assertRaisesRegex(
+                CHECKER.ContractError, "withheld artifact.*symlink"
+            ):
+                CHECKER._validated_withheld_artifacts(site, rows)
+
     def test_count_preserving_withheld_deletion_substitution_fails(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             site = Path(directory)
@@ -948,15 +1366,32 @@ class ContactLimitedRatchetTests(unittest.TestCase):
                     [{"artifact": "../escape.html", "bytes": 0, "sha256": "0" * 64}],
                 )
 
-    def test_alias_collision_deletion_fails(self) -> None:
+    def test_alias_collision_insertion_fails(self) -> None:
         state = copy.deepcopy(self.state)
-        state["public_lifecycle"]["delivery_contract"]["alias_collisions"] = []
-        self.assert_invalid(state)
-
-    def test_alias_lifecycle_disagreement_fails(self) -> None:
+        collision = {
+            "route": "/synthetic/",
+            "artifacts": ["synthetic.html", "synthetic/index.html"],
+            "shared_raw_lifecycle": "frozen",
+        }
+        state["public_lifecycle"]["delivery_contract"]["alias_collisions"] = [
+            {**collision, "evidence": ["12_PUBLIC_SITE/vercel.json"]}
+        ]
         public = copy.deepcopy(self.computed["compute_public_lifecycle"])
-        public["alias_collisions"][0]["shared_raw_lifecycle"] = "current"
-        self.assert_invalid(self.state, compute_public_lifecycle=public)
+        public["alias_collisions"] = [collision]
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "alias-collision baseline changed" in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
+
+    def test_zero_alias_collision_source_contract_is_exact(self) -> None:
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        self.assertEqual(public["alias_collisions"], [])
+        self.assertEqual(CHECKER.EXPECTED_ALIAS_COLLISIONS, [])
 
     def test_withheld_public_alias_cannot_name_two_artifacts(self) -> None:
         registry = CHECKER.load_json(ROOT / CHECKER.WITHHELD_REGISTRY)
@@ -1032,6 +1467,82 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             {"classes": ["current", "frozen"], "artifacts": ["index.html"]}
         )
         self.assert_invalid(self.state, compute_public_lifecycle=public)
+
+    def test_raw_overlap_class_pair_cannot_be_coordinately_added(self) -> None:
+        state = copy.deepcopy(self.state)
+        row = {
+            "classes": ["current", "frozen"],
+            "artifacts": ["index.html"],
+        }
+        state["public_lifecycle"]["delivery_contract"]["allowed_raw_overlaps"].append(
+            {**row, "evidence": ["12_PUBLIC_SITE/vercel.json"]}
+        )
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        public["raw_overlaps"].append(row)
+        public["raw_overlaps"].sort(key=lambda item: tuple(item["classes"]))
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "must retain exactly the frozen/infrastructure and frozen/withheld"
+                in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
+
+    def test_frozen_withheld_overlap_insertion_cannot_be_coordinately_rebaselined(
+        self,
+    ) -> None:
+        state = copy.deepcopy(self.state)
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        inserted = "z-reviewer-overlap-insertion/index.html"
+        for rows in (
+            state["public_lifecycle"]["delivery_contract"]["allowed_raw_overlaps"],
+            public["raw_overlaps"],
+        ):
+            row = next(
+                item
+                for item in rows
+                if item["classes"] == ["frozen", "withheld"]
+            )
+            row["artifacts"].append(inserted)
+            row["artifacts"].sort()
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "frozen/withheld overlap inventory drifted" in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
+
+    def test_frozen_withheld_overlap_removal_cannot_be_coordinately_rebaselined(
+        self,
+    ) -> None:
+        state = copy.deepcopy(self.state)
+        public = copy.deepcopy(self.computed["compute_public_lifecycle"])
+        removed = "atlas/index.html"
+        for rows in (
+            state["public_lifecycle"]["delivery_contract"]["allowed_raw_overlaps"],
+            public["raw_overlaps"],
+        ):
+            row = next(
+                item
+                for item in rows
+                if item["classes"] == ["frozen", "withheld"]
+            )
+            row["artifacts"].remove(removed)
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "frozen/withheld overlap inventory drifted" in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
 
     def test_exact_current_route_bare_noindex_becomes_forbidden_overlap(self) -> None:
         vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))
@@ -1198,8 +1709,16 @@ class ContactLimitedRatchetTests(unittest.TestCase):
             return original_load(path)
 
         with mock.patch.object(CHECKER, "load_json", side_effect=mutated_load):
-            with self.assertRaises(CHECKER.ContractError):
-                CHECKER.compute_public_lifecycle(ROOT)
+            public = CHECKER.compute_public_lifecycle(ROOT)
+        with self.assertRaises(CHECKER.ContractError) as raised:
+            self.validate_fast(self.state, compute_public_lifecycle=public)
+        self.assertTrue(
+            any(
+                "raw lifecycle overlap ledger drifted" in error
+                for error in raised.exception.errors
+            ),
+            raised.exception.errors,
+        )
 
     def test_current_route_redirect_fails_public_lifecycle(self) -> None:
         vercel = copy.deepcopy(CHECKER.load_json(ROOT / CHECKER.VERCEL_CONFIG))

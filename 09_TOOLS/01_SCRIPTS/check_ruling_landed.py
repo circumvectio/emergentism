@@ -21,7 +21,7 @@ pages that have been audited) without rewriting the gate.
 
 REGISTERED RULINGS
 ------------------
-WO-D1-2026-07-19  — Retire the Titan infix ``⊙ = • × ○`` (type error).
+WO-D1-2026-07-19  — Retired Titan infix ``⊙ = • × ○`` (type error).
                     Target category: ``public_html``. The 0 target means
                     no HTML page in ``12_PUBLIC_SITE/`` may still carry
                     the form, even as a meta-reference. The looser
@@ -83,7 +83,7 @@ RULING_TABLE: dict[str, dict] = {
         "pattern": census.RETIRED_TITAN_INFIX,
         "category": "public_html",
         "description": (
-            "Retire the Titan infix ⊙ = • × ○ (K2 disposition WO-D1, "
+            "Retired Titan infix ⊙ = • × ○ (K2 disposition WO-D1, "
             "2026-07-19). Type error: realm mark presented as a product "
             "of boundary marks. Default category public_html — any HTML "
             "page in 12_PUBLIC_SITE/ that still carries the form, even "

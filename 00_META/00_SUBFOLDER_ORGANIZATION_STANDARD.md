@@ -166,11 +166,12 @@ doctrine. The repository map in `README.md` is the human front door; this
 standard is the architectural owner; `09_TOOLS/01_SCRIPTS/check_tree_contract.py`
 is the executable guard. Generated registers describe the tree but do not own it.
 
-### 9A.1 · The root live-set is CLOSED at eight `[D]` — staged 2026-07-22
+### 9A.1 · The root non-stub set is CLOSED at thirteen `[D]` — reconciled 2026-08-09
 
-The root holds exactly **eight live documents**. This is not a description; it
-is a closed set, and it is already enforced — `check_tree_contract.py`
-`ROOT_BODY_ALLOWLIST` contains these eight names and no others:
+The root holds exactly **thirteen non-stub documents**. This is not a generic
+permission to add root files; it is the closed set recorded by the current
+root `README.md` and enforced by `check_tree_contract.py`.
+`ROOT_BODY_ALLOWLIST` contains these thirteen names and no others:
 
 | file | job |
 |---|---|
@@ -180,14 +181,19 @@ is a closed set, and it is already enforced — `check_tree_contract.py`
 | `00_THE_KERNEL_INDEX.md` | the map — seven owner surfaces |
 | `00_THE_WELTANSCHAUUNG.md` | the technical door — the priced creed |
 | `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` | the reader's door — one sitting |
+| `00_THE_FOUNDATION.md` | active subordinate typed projection; never an eighth owner |
+| `00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md` | dated source receipt retained at its registered path |
+| `00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md` | dated closure receipt restored to its registered path |
+| `VMOSK_A.md` | superseded non-semantic control projection retained with its forward pointer |
+| `VMOSK_A_v2_2026_07_31.md` | current non-semantic control projection; no doctrine authority |
 
-**A ninth live root file is a contract amendment, not a file drop.** Adding one
+**A fourteenth non-stub root file is a contract amendment, not a file drop.** Adding one
 means editing this section and the allowlist together, with a receipt. The
 guard already refuses the file; this sentence says why.
 
 ### 9A.2 · The stub law `[D]`
 
-Everything else at root — **11 files, verified 2026-07-22** — is a forwarding
+Everything else at root — **9 files, verified 2026-08-09** — is a forwarding
 stub carrying real demand. A stub only works at the path it forwards *from*, so
 a stub **with live citers** may not be moved, renamed, or deleted.
 
@@ -199,6 +205,26 @@ a stub **with live citers** may not be moved, renamed, or deleted.
 > against live doctrine only: **11 stubs carry all 58 live citations; 19 had
 > zero.** The 19 were relocated to `91_COMPATIBILITY/02_ROOT_STUBS_2026_07_22/`
 > with a dated stone and a lookup index. Root: 38 → 19 files.
+
+The `38 → 19` line above is the historical 2026-07-22 event. Later registered
+root receipts, the subordinate Foundation projection, and the two non-semantic
+work-programme control projections account for the current thirteen-plus-nine shape.
+The completed `B3_TODO.md` scratch file was moved to `00_HANDOFF/pmo/` on
+2026-08-09; task scratch is not a fifth root class.
+
+### 9A.2a · Grandfathered tombstone custody is a held topology violation `[B]`
+
+The literal per-pillar `00_META` prohibition remains categorical. The exact
+path `08_FRAMEWORK_SUPPORT/00_META/` is a known violation containing three
+pre-existing compatibility tombstones (`CLAUDE.md` at the path root and beneath
+`00_MAGNUM_OPUS/` and `02_ANALYSIS_DOCUMENTS/`). They remain only as
+archive-first custody while `D-OWNER-02` is **UNSET**; their presence does not
+make the path conforming, authorize a support-meta lane, or amend the topology
+rule. `check_tree_contract.py` binds the exact file inventory and all three
+bodies by SHA-256. Any added, missing, changed, or symlinked body fails; the
+unchanged grandfathered state reports `PASS-WITH-DEBT`, never topology-clean
+`PASS`. Only a dated owner ruling may resolve the held violation, with no move
+or promotion implied by this record.
 
 **The demand test is now the rule:** before claiming a stub is load-bearing,
 count only citers that are live doctrine — excluding archives, dated handoff

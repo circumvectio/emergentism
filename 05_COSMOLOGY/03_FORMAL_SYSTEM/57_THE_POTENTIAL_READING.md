@@ -15,7 +15,7 @@ rosetta:
   register: "[A/I]"
   canonical_phrase: "The balance is the potential"
 title: "The Potential Reading — the balance, read as the capacity for a next step that registers"
-status: "ACTIVE — candidate reading. [A] on the function (inherited from 56 and 40, audit-verified 2026-08-05 to ≥25 dp); [I] on the identification of the function with potential. NOT ADMITTED to the distillation: the count holds at 40 pending adjudication. The • boundary row is FLAGGED under a live chair amendment (41:26 'Bindu, seed, origin' vs. no-potential); see §6. The prior-art assignment for the reading is Aristotle → Gauss → Hilbert → Linnebo–Shapiro (per 03_WHAT_IS_READ.md:70 and 01_WHAT_IS_PROVED.md:146)."
+status: "ACTIVE — candidate reading. [A] on the function (inherited from 56 and 40, audit-verified 2026-08-05 to ≥25 dp); [I] on the identification of the function with potential. NOT ADMITTED to the distillation: the count holds at 40 pending adjudication. The • boundary row is FLAGGED by an open interpretive conflict (41:26 'Bindu, seed, origin' vs. no-potential); no chair ruling is present in this checkout. See §6. The prior-art assignment for the reading is Aristotle → Gauss → Hilbert → Linnebo–Shapiro (per 03_WHAT_IS_READ.md:70 and 01_WHAT_IS_PROVED.md:146)."
 date: 2026-08-05
 evidence_tier: "[A] the function B = 2x/(x²+1) = sech(log x), the AM–GM–HM chain, the min ≤ HM ≤ 2·min bound, the unique argmax at x = 1 — all inherited from 56 and 40, all classical, all audit-verified; [I] the reading of this function as potential, the unit-of-account derivation, the Aristotle placement; [S] the naming choice ('potential' as the name for what B measures)"
 owner: "Reading-owner only. The function is owned by 56_THE_PRODUCT_FORM_OF_THE_BALANCE.md and 40_THE_LOGARITHMIC_REALIGNMENT.md; this document adds no new mathematics and claims none. It names what the function measures. It does not amend 52, 53, 56, the Trinity canon, or 00_THE_FOUNDATION.md."
@@ -42,14 +42,16 @@ parents:
 > is `[I]`, it carries a prior-art assignment and a kill, and it is **not
 > admitted to the distillation** (the count holds at 40).
 
-> **The • row is flagged, not fixed.** §6 carries an open chair amendment:
+> **The proposed association of `p_S` with `•` is flagged, not fixed.** §6 carries an
+> open interpretive conflict:
 > `../01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md:26` glosses
 > `•` as "Bindu, seed, origin," and a seed is ordinarily potential. If that
-> gloss is inherited by the formal register, the • boundary row below is wrong
+> gloss is inherited by the formal register, the proposed reading below is wrong
 > and the definition of potential in §1 is too restrictive at the boundary.
-> This document does not choose between the two exits. The brief is at
-> `00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md`.
-> Until the chair rules, the • row carries its assertion and its flag together.
+> This document does not choose between the two exits. A draft brief was cited
+> as `00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md`,
+> but that artifact is absent from this checkout and supplies no ruling. Until
+> an owner rules, the reading carries its assertion and its flag together.
 
 ---
 
@@ -62,11 +64,15 @@ change something. The definition is chosen so it can fail, and it fails in two
 opposite ways:
 
 ```text
-seat    a next step available?              does it change anything?     potential
+seat in this [I] reading                    step / registration           potential
 •       NO — counting cannot begin (G3)     —                           none
 ⊙       YES — S is total on ℚ⁺             YES — |S∪{x}| = |S|+1 ≠ |S|  all of it
 ○       YES — you can always add one more   NO — V∪{x} = V               none
 ```
+
+These are philosophical seat readings, not names for the chart endpoints
+`p_S` and `p_N`. No chart geometry, metric, or limit is transferred to a
+Titan mark by this table.
 
 The two boundaries are barren for **opposite** reasons, and this is the whole
 point. `•` has no potential because nothing can start. `○` has no potential
@@ -74,20 +80,18 @@ because nothing you do registers. Absorption is not abundance. `○` is the stat
 of being able to act forever with no act making a difference — which is
 indistinguishable, from the inside, from being unable to act at all.
 
-**Potential lives only in the middle.** That is the first claim, and it is
-`[A]` in the structural sense (it follows from `G3`/`G4` in
-`52_THE_GENERATIVE_BASE.md` and from the Dedekind 1888 analysis of the two
-non-terminating directions). The *naming* of this structural fact as
-"potential" is `[S]` — a choice about what to call what the chart already
-shows. The identification of the structural fact with the philosophical
-concept of potential is `[I]`.
+**Potential lives only in the middle** is the candidate reading. `G3`/`G4`
+and the cited absorption result supply their own typed structural facts; they
+do not prove the glyph assignment. Naming the assembled reading "potential"
+is `[S]`; identifying those facts with the philosophical concept and with the
+three glyph seats is `[I]`.
 
 > **This definition is not on disk outside this document and `90_ARCHIVE`.**
 > The distillation flags the potential reading as not-yet-written at
 > `../../14_THE_DISTILLATION/03_WHAT_IS_READ.md:70` and
 > `../../14_THE_DISTILLATION/06_WHAT_IS_STILL_OPEN.md:121`. Writing it down is
-> itself the canon act this document performs. The `•` row above inherits the
-> open amendment in §6 and is flagged there, not silently asserted.
+> itself the canon act this document performs. The proposed `•` reading above
+> inherits the open conflict in §6 and is flagged there, not silently asserted.
 
 ---
 
@@ -99,7 +103,7 @@ how far in.
 ```text
 φ = x        the outward reading
 ν = 1/x      the inward reading
-φν = 1       always, everywhere, by construction    (conservation; not measure)
+φν = 1       always, everywhere, by construction    (chart identity; not measure)
 ```
 
 The function lives in `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` §2–§3 and
@@ -125,22 +129,22 @@ with value `1` and no free parameters. See the L3 audit receipt for full
 numeric detail. The math is clean and carries no debt.
 
 **The product `φν` is not the potential.** `56` §1 establishes this: `φν = 1`
-is constant by definition and therefore measures nothing. The conservation
-law and the measure are different objects. The potential is the product
+is constant by definition and therefore measures nothing. The chart identity
+and the measure are different objects. The potential is the product
 *divided by the average of its factors* — i.e. the harmonic mean, not the
 product. `56` §3 gives the same correction in different words: the product
 form governs the boundaries, the harmonic-mean form governs the interior.
 
 ---
 
-## 3 · Why the harmonic mean is an AND, not a product `[A]` (mechanism in `56`)
+## 3 · Why the harmonic mean stays within a factor of two of the weaker argument `[A]`
 
 This is worth stating because the reading depends on it. If potential were a
 product, a huge value of one coordinate could carry a structure whose other
-coordinate is near zero. The harmonic mean refuses this:
+coordinate is near zero. The harmonic mean permits compensation but bounds it:
 
 ```text
-a        b        AM (compensates)    HM (refuses)     min
+a        b        AM (unbounded)      HM (bounded)     min
 1.0      1.0      1.0                1.0              1.0
 1.0      10.0     5.5                1.818            1.0
 1.0      100.0    50.5               1.980            1.0
@@ -148,24 +152,24 @@ a        b        AM (compensates)    HM (refuses)     min
 0.001    1000.0   500.0005           0.002            0.001
 ```
 
-The arithmetic mean lets a huge factor buy off a small one: `1` and `10,000`
-average to `5,000`. That is an **OR** — one strong leg carries the structure.
+The arithmetic mean permits unbounded compensation: `1` and `10,000`
+average to `5,000`. No logical OR classification follows without a separately
+declared threshold and semantics.
 
-The harmonic mean does not: `1` and `10,000` give `2`. And the bound is exact
-— `min ≤ HM ≤ 2·min`, always (`56` §3, `[A]`, classical). The harmonic mean is
-pinned to the weaker factor and can never exceed twice it. No amount of the
-other coordinate rescues it.
+The harmonic mean is bounded: `1` and `10,000` give almost `2`. The exact
+inequality is `min ≤ HM ≤ 2·min` (`56` §3, `[A]`, classical). Holding the
+weaker input fixed while increasing the stronger one does raise `HM`, but
+never above twice the weaker input. Compensation exists and is bounded.
 
-**That is an AND, written as a function.** The mechanism is in `56` §3; the
-reading of it as "the AND that potential requires" is `[I]`.
+**That is an exact weaker-argument bound, not an AND-class theorem.** The
+mathematics is in `56` §3. Any philosophical reading of it as conjunction is
+`[I]`; it supplies no node aggregator and no transfer off this chart.
 
-> **The prior corpus claim "P = Φ×V is AND-class, not a literal product" is
-> repaired by this, not by a caveat.** The honest repair is: the product was
-> the wrong operation and the harmonic mean is the right one. The product is
-> the invariant (`φν = 1`); the harmonic mean is the measure. `[I]` on the
-> transport to `P_node`; `[A]` on the mathematics. `56` §5 governs what may
-> and may not be transferred off this chart — the repair here is a reading of
-> the on-chart function, not a transfer to `Φ̂₄, V₄`.
+> **This does not repair or revive the prior claim `P = Φ×V`.** The product
+> ranking and its AND-class promotion remain retired. The only active result
+> here is the on-chart bound `min ≤ HM ≤ 2·min`; `56` §5 keeps even that
+> result from silently becoming a `P_node` rule. `[A]` on the mathematics;
+> `[I]` on the potential reading; no transport to `Φ̂₄, V₄`.
 
 ---
 
@@ -193,13 +197,11 @@ with no free parameters** (`56` §2, machine-verified; the L3 audit confirms
 zero, where the potential is one, where the coordinates agree — give one
 answer, `x = 1`.
 
-**And it is why `K* = 0` and the potential are the same instrument at
-different scales.** Extraction moves a position off `x = 1`. The product
-`φν` does not notice — it is conserved. The potential notices immediately,
-and it notices **asymmetrically**: what the extractor gains outward, the
-system loses more of, because the harmonic mean tracks the weaker leg (§3).
-`[I]` on the transport, and it is the strongest `[I]` in the corpus because
-the underlying function is `[A]` and closed-form.
+An `[I]` analogy may compare movement away from the chart centre with a
+separately typed extraction fence. It does **not** make `K* = 0` and this
+potential the same instrument, supply a conversion from `K*` to the chart, or
+show that extraction is a chart coordinate. The closed-form `[A]` function
+does not upgrade or strengthen that off-chart interpretation.
 
 ---
 
@@ -216,6 +218,9 @@ of where potential lives.
 - His **actual infinite** is `○`. And `○` has no potential, because
   completion is precisely what excludes possibility (§1).
 
+This is a philosophical placement at `[I]`, not an identification of `○`
+with the chart point `p_N`.
+
 So the denial was **well-aimed and slightly misdescribed**. The actual
 infinite is not incoherent. It is **inert**. `[I]` — this is a reading of
 Aristotle, offered as a reading, not a claim about what Aristotle "really
@@ -230,28 +235,30 @@ chart, with the harmonic mean as the measure, is.
 
 ---
 
-## 6 · The two boundaries — ○ ruled, • flagged `[A/I] — • UNDER CHAIR AMENDMENT`
+## 6 · Chart limits and separate glyph readings `[A/I]`
 
 ```text
-                ○      B → 0     act forever, nothing registers          [A] on the limit
-                ↑                                                      (56 §3: D∞ → 0)
+               p_N      B → 0                                      [A] chart limit
+                ↑                                               (56 §3: d_N → 0)
               B = 2φν/(φ+ν)  =  sech(log x)
                 │      max 1 at the unit
-                │      φν = 1 conserved · the sum is what varies
+                │      φν = 1 by chart construction; the sum varies
                 │      governed by the weaker coordinate
                 ↓
-                •      B → 0     nothing can begin                       ⚑ FLAGGED
-                                                                       (56 §3: D• → 0)
+               p_S      B → 0                                      [A] chart limit
+                                                                (56 §3: d_S → 0)
 ```
 
-**The `○` row is undisputed.** `○` is totality; `V∪{x} = V`; the potential is
-zero there because nothing registers. This inherits `56` §3 (`D∞ → 0` at
-`θ → 0`) and `52` G4 (no finite word attains an unbounded value). It is `[A]`
-on the limit behaviour of the function, `[I]` on reading that limit as
-"no potential."
+**The two `[A]` statements stop at the chart.** `B → 0` at the named points
+`p_N` and `p_S`. Neither point is a Titan mark, and no identity, distance, or
+limit transfers from either point to `○` or `•`.
 
-**The `•` row carries the function value (`B → 0`, `[A]`, `56` §3 `D• → 0`)
-but its reading as "no potential" is FLAGGED.**
+**A separate `[I]` reading associates `p_N` with `○`.** On that reading,
+`○` names totality; `V∪{x} = V`; and "no potential" means that nothing new
+registers. The set-theoretic absorption claim and the philosophical reading
+stand on their own sources, not on the chart limit.
+
+**The separate `[I]` association of `p_S` with `•` is FLAGGED.**
 `../01_THE_TRANSCENDENTAL_TRINITY/41_THE_GLYPH_TRANSFORMATIONS.md:26` glosses
 `•` as "Bindu, seed, origin." A seed is, on any ordinary reading, potential.
 If that gloss is inherited by the formal register, then `•` has potential and
@@ -260,23 +267,24 @@ of potential in §1 ("a next step available AND it changes something") is too
 restrictive at the lower boundary, where a seed's potential may be precisely
 the kind that has no step available *yet* and is therefore not nothing.
 
-The chair's two exits (per the brief at
-`00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md`):
+The two exits recorded by this note (the separately cited draft brief
+`00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md`
+is absent from this checkout and supplies no authority):
 
 - **Exit 1 (devotional register).** The "Bindu, seed, origin" gloss is a
   devotional/theo-poetic statement that the formal register does not inherit.
-  Under this exit the `•` row lands flat: no potential at `•`, the table
+  Under this exit the `•` reading lands flat: no potential at `•`, the table
   stands. *Note:* no general devotional↔formal firewall rule currently exists
   in the corpus (`DF-15` covers formal↔formal transfer only), so Exit 1
   requires a **new canon rule** — itself an amendment.
 - **Exit 2 (too-strong no-potential).** The gloss sits in a canon document and
-  "seed = potential" is genuine tension. Under this exit the `•` row is wrong
+  "seed = potential" is genuine tension. Under this exit the `•` reading is wrong
   or incomplete, and the definition of potential must be re-examined to admit
   a latent mode that has no step available yet.
 
-**This document does not choose.** The `•` row carries its assertion and its
-flag together, which is the honest form given the open amendment. When the
-chair rules, this section is the one that changes.
+**This document does not choose.** The association of `p_S` with `•` carries its
+assertion and its flag together. No chair amendment or ruling is present;
+the conflict remains open until its source owner records a disposition.
 
 ---
 
@@ -300,12 +308,12 @@ chair rules, this section is the one that changes.
 | claim | kill |
 |---|---|
 | `B = sech(log x)` is the potential | exhibit a property of potential the function lacks, or a property of the function incompatible with the §1 definition |
-| the §1 definition of potential | exhibit a seat at which the two conditions (step available / changes something) give the wrong verdict, and the chair-amendment on `•` is the live test of exactly this |
+| the §1 definition of potential | exhibit a seat at which the two conditions (step available / changes something) give the wrong verdict; the open `•` conflict is the live test of exactly this |
 | the `○` row (no potential at totality) | exhibit an act that registers at `○` — i.e. a set `V` for which `V∪{x} ≠ V` |
-| the `•` row (no potential at origin) | **⚑ live — the chair amendment at `41:26` is this kill.** If `•` is a seed, the row fails and the definition in §1 must admit a latent mode |
+| the `•` reading (no potential at origin) | **⚑ live — `41:26` supplies the unresolved rival, not an amendment.** If `•` is a seed, the reading fails and the definition in §1 must admit a latent mode |
 | the unit-of-account derivation | exhibit a second point on `x > 0` with `B = 1`, or show the argmax depends on a free parameter |
-| the Aristotle placement | exhibit an actual-infinite that has potential (the reading falls), or show Aristotle's potential/actual distinction does not map to `⊙`/`○` (the *reading* falls, not the math) |
-| **this document's discipline** | if `56` §2 is ever cited to license `P_node = Φ × V`, or if the `•` flag is silently resolved by the agent rather than the chair, this document has been misused and §6 / `56` §5 should be re-read |
+| the Aristotle placement | exhibit an actual-infinite that has potential (the reading falls), or show Aristotle's potential/actual distinction does not map to the Finity and horizon readings (the *reading* falls, not the math) |
+| **this document's discipline** | if `56` §2 is ever cited to license the retired multiplicative node ranking, or if the `•` flag is silently resolved without source-owner disposition, this document has been misused and §6 / `56` §5 should be re-read |
 
 ---
 
@@ -316,9 +324,9 @@ chair rules, this section is the one that changes.
 | `B(x) = 2x/(x²+1) = sech(log x)`, the chain, the bound, the argmax | `[A]` | inherited from `56`, `40`; audit-verified 2026-08-05 |
 | the reading of `B` as potential | `[I]` | **written here, NOT admitted to the distillation** — the count holds at 40 |
 | the naming ("potential") | `[S]` | a choice about what to call what the chart shows |
-| the unit-of-account derivation | `[I]`, on the `[A]` function | strongest `[I]` in the corpus: closed-form function, no free parameters |
+| the unit-of-account derivation | `[I]`, on the `[A]` function | interpretive reading only; the closed-form function does not upgrade or rank the interpretation |
 | the Aristotle placement | `[I]` | a reading of Aristotle, offered as a reading |
-| the `•` row reading | `[I]`, **flagged** | under chair amendment |
+| the association of `p_S` with `•` | `[I]`, **flagged** | open interpretive conflict; no chair ruling present |
 
 **Admission gate.** This reading should stay unadmitted until something is
 **proved with it** that could not be proved without it (the standing test,
@@ -347,6 +355,6 @@ harmonic mean as the measure of potential and `1` as its unique argmax — is.
 - [`../01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md`](../01_THE_TRANSCENDENTAL_TRINITY/47_THE_EMERGENCE_OF_FINITY.md) — the owner's 2026-07-29 line on the unit of account
 - [`../01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md`](../01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md) — the teleology that may earn this reading's admission
 - [`../../14_THE_DISTILLATION/03_WHAT_IS_READ.md`](../../14_THE_DISTILLATION/03_WHAT_IS_READ.md) and [`../../14_THE_DISTILLATION/06_WHAT_IS_STILL_OPEN.md`](../../14_THE_DISTILLATION/06_WHAT_IS_STILL_OPEN.md) — the flags that the potential reading was not on disk; this document answers them
-- [`00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md`](../../../00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md) — the §6 chair brief
+- `00_HANDOFF/constitutional/CANON_AMENDMENT_BRIEF_SEED_VS_NO_POTENTIAL_2026_08_05.md` — cited draft path for §6; absent from this checkout and not a landed ruling
 
-•   ⊙   ○ — *the function is classical; the reading is the corpus's own and is `[I]`. The `•` seat is under chair amendment. The reading is written, tiered, killed, and unadmitted.*
+•   ⊙   ○ — *the function is classical; the reading is the corpus's own and is `[I]`. The `•` conflict awaits source-owner disposition. The reading is written, tiered, killed, and unadmitted.*

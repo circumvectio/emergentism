@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "manifestId": "RECEIPT-126-PROPAGATION-2026-07-19",
+  "manifestId": "PROPAGATION-126-2026-07-19",
   "status": "closed_for_registered_contract",
   "date": "2026-07-19",
   "evidenceTier": "[B] path and test evidence; [I] semantic sufficiency",
@@ -133,7 +133,7 @@
       "owner": "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md"
     },
     {
-      "id": "worldview-k2",
+      "id": "worldview-authority-boundary",
       "owner": "00_META/00_SETTLED_CANON_REGISTRY.md"
     },
     {
@@ -247,7 +247,7 @@
   "knownLimits": [
     "Closure means only that the registered fracture contract reproduces; it is not semantic closure of every sentence in the corpus.",
     "The validator checks declared types, path custody, exact mutation regressions, derived sentinels, and executable finite models; it cannot prove metaphysical truth.",
-    "Receipt-126 closure does not constitute external empirical calibration.",
+    "The propagation-126 closure does not constitute external empirical calibration.",
     "Legacy terms may remain inside quotations, compatibility notes, retractions, and historical receipts when their non-authority is explicit."
   ]
 }

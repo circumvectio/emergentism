@@ -22,7 +22,7 @@
       "surface": "index.html",
       "role": "world_contact_open_gate_status",
       "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
-      "sourceRevision": "sha256:5dffc6df0017629187d2355c673a2bea9dee9e4f740e3ee3780307504b1102c6",
+      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
       "tier": "[S/B]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [
@@ -48,7 +48,7 @@
       "surface": "about/index.html",
       "role": "world_contact_open_gate_status",
       "source": "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md",
-      "sourceRevision": "sha256:5dffc6df0017629187d2355c673a2bea9dee9e4f740e3ee3780307504b1102c6",
+      "sourceRevision": "sha256:c553f855e1da61f78d57ffcf0b77905f4b940c3db248abbb1ac19d8edfae0658",
       "tier": "[S/B]",
       "scope": "editorial_or_record_status_only",
       "requiredMarkers": [

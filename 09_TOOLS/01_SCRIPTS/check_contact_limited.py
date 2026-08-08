@@ -39,6 +39,7 @@ WITHHELD_REGISTRY = PUBLIC_DIR / "withheld-routes.json"
 VERCEL_CONFIG = PUBLIC_DIR / "vercel.json"
 VERCEL_IGNORE = PUBLIC_DIR / ".vercelignore"
 PREDEPLOY_CHECKER = PUBLIC_DIR / "predeploy_check.py"
+CLAIM_STATUS_CHECKER = Path("09_TOOLS/01_SCRIPTS/check_claim_status.py")
 SITEMAP = PUBLIC_DIR / "sitemap.xml"
 
 RECEIPT_LANES = (
@@ -51,6 +52,7 @@ RECEIPT_SKIP_DIRS = {
     "node_modules",
     "__pycache__",
     ".vercel",
+    ".lake",
     "12_PUBLIC_SITE",
 }
 RECEIPT_NAME = re.compile(r"^(\d{2,3})[_A-Za-z]")
@@ -68,8 +70,56 @@ SUPERSESSION = re.compile(
 )
 
 
+def _has_symlink_component(root: Path, relative: str) -> bool:
+    """Reject a lexical path whose root or any in-repo component is a symlink."""
+
+    candidate = root
+    if candidate.is_symlink():
+        return True
+    for component in Path(relative).parts:
+        candidate /= component
+        if candidate.is_symlink():
+            return True
+    return False
+
+
+def repo_file(root: Path, value: Any, label: str, errors: list[str]) -> Path | None:
+    """Require an existing repo-relative regular file without reading through links."""
+
+    if not isinstance(value, str) or not value.strip():
+        errors.append(f"{label} must be a non-empty repo-relative path")
+        return None
+    rel = Path(value)
+    if rel.is_absolute() or ".." in rel.parts:
+        errors.append(f"{label} must not be absolute or contain '..': {value!r}")
+        return None
+    target = root / rel
+    if _has_symlink_component(root, rel.as_posix()):
+        errors.append(f"{label} must not traverse a symlink: {value}")
+        return None
+    try:
+        target.resolve().relative_to(root.resolve())
+    except ValueError:
+        errors.append(f"{label} escapes the repository: {value!r}")
+        return None
+    if not target.is_file():
+        errors.append(f"{label} does not exist as a file: {value}")
+        return None
+    return target
+
+
+def _policy_file(root: Path, relative: Path, label: str) -> Path:
+    """Resolve an executable policy only through the shared lexical file guard."""
+
+    errors: list[str] = []
+    path = repo_file(root, relative.as_posix(), label, errors)
+    if path is None:
+        raise RuntimeError("; ".join(errors))
+    return path
+
+
 def _load_receipt_citation_policy():
-    path = Path(__file__).with_name("check_receipt_citations.py")
+    path = _policy_file(ROOT, RECEIPT_CHECKER, "receipt citation policy")
     spec = importlib.util.spec_from_file_location("receipt_citation_policy_owner", path)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"cannot load receipt citation policy owner: {path}")
@@ -84,7 +134,7 @@ citation_is_negated = _RECEIPT_CITATION_POLICY.citation_is_negated
 
 
 def _load_predeploy_policy():
-    path = ROOT / PREDEPLOY_CHECKER
+    path = _policy_file(ROOT, PREDEPLOY_CHECKER, "public predeploy policy")
     spec = importlib.util.spec_from_file_location("public_predeploy_policy_owner", path)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"cannot load public predeploy policy owner: {path}")
@@ -96,8 +146,10 @@ def _load_predeploy_policy():
 _PREDEPLOY_POLICY = _load_predeploy_policy()
 
 
-def _load_claim_status_policy():
-    path = ROOT / "09_TOOLS/01_SCRIPTS/check_claim_status.py"
+def _load_claim_status_policy(
+    root: Path = ROOT, relative: Path = CLAIM_STATUS_CHECKER
+):
+    path = _policy_file(root, relative, "claim-status policy")
     spec = importlib.util.spec_from_file_location("claim_status_policy_owner", path)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"cannot load claim-status policy owner: {path}")
@@ -112,6 +164,10 @@ EXPECTED_DEBTS = {
     "OWNER_GATE_HELD_PUBLIC_DOCS",
     "OWNER_GATE_OPEN_TOPOLOGY",
 }
+EXPECTED_REUSED_PREFIXES = 101
+EXPECTED_LIFECYCLE_ROWS = 48
+EXPECTED_CURRENT_ROWS = 26
+EXPECTED_GRAVE_ROWS = 22
 EXPECTED_WORLD_REQUIREMENTS = (
     "Independent observations with discriminating outcomes",
     "Independent replication or external review filed as outcome custody",
@@ -132,38 +188,83 @@ PUBLIC_DOC_EXACT_IGNORE_PATTERNS = {
 }
 TOPOLOGY_EVIDENCE = {
     "00_META/00_SUBFOLDER_ORGANIZATION_STANDARD.md",
-    "08_FRAMEWORK_SUPPORT/00_META/README.md",
+    "08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md",
+    "08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md",
+    "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
 }
 COHERENCE_PROFILE_EVIDENCE = COHERENCE_SOURCE.as_posix()
-PUBLIC_DOC_OWNER_DEBT_EVIDENCE = PUBLIC_DOC_EVIDENCE | {COHERENCE_PROFILE_EVIDENCE}
-TOPOLOGY_OWNER_DEBT_EVIDENCE = TOPOLOGY_EVIDENCE | {COHERENCE_PROFILE_EVIDENCE}
-HELD_ACTIVE_NONROOT_META_PATHS = {"08_FRAMEWORK_SUPPORT/00_META"}
-HELD_TOPOLOGY_ROUTE_CARD = Path("08_FRAMEWORK_SUPPORT/00_META/README.md")
-HELD_TOPOLOGY_AGENT_ROUTE_CARD = Path("08_FRAMEWORK_SUPPORT/00_META/AGENTS.md")
-HELD_TOPOLOGY_ACTIVE_ROUTE_SURFACES = (
-    HELD_TOPOLOGY_ROUTE_CARD,
-    HELD_TOPOLOGY_AGENT_ROUTE_CARD,
-)
-HELD_TOPOLOGY_ROUTE_CARD_SENTINELS = {
-    "What It Must Not Own": "- Active governance law. Route that to `../01_GOVERNANCE/`.",
-    "Current Boundary": (
-        "The active route surface is this README plus `AGENTS.md`, with upstream\n"
-        "authority in [`../AGENTS.md`](../AGENTS.md) and the root\n"
-        "[`00_SETTLED_CANON_REGISTRY.md`](../../00_META/00_SETTLED_CANON_REGISTRY.md)."
+OWNER_DOCKET = Path("00_META/00_CONTACT_LIMITED_OWNER_DECISION_DOCKET_2026_08_02.md")
+OWNER_DOCKET_EVIDENCE = OWNER_DOCKET.as_posix()
+PUBLIC_DOC_OWNER_DEBT_EVIDENCE = PUBLIC_DOC_EVIDENCE | {
+    COHERENCE_PROFILE_EVIDENCE,
+    OWNER_DOCKET_EVIDENCE,
+}
+TOPOLOGY_OWNER_DEBT_EVIDENCE = TOPOLOGY_EVIDENCE | {
+    COHERENCE_PROFILE_EVIDENCE,
+    OWNER_DOCKET_EVIDENCE,
+}
+HELD_NONROOT_META_VIOLATION_PATHS = {"08_FRAMEWORK_SUPPORT/00_META"}
+HELD_TOPOLOGY_TOMBSTONE_SHA256 = {
+    Path("08_FRAMEWORK_SUPPORT/00_META/CLAUDE.md"): (
+        "0802649fc2b1a581ba59ed85fbb6d0867b37b61bfe9990d39991a2f4697a64da"
+    ),
+    Path("08_FRAMEWORK_SUPPORT/00_META/00_MAGNUM_OPUS/CLAUDE.md"): (
+        "9ee14e3de1a691a50409ab7adea269c5b11f2cac6f0ccfc18c4fa9808aa9c2f7"
+    ),
+    Path("08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md"): (
+        "1784d975a03340530a0e00344e84f64b662e68c1557ca20fefcb9c08f73f91cc"
     ),
 }
-HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS = (
-    "What It Owns",
-    "What It Must Not Own",
-    "Current Boundary",
+HELD_TOPOLOGY_TOMBSTONES = tuple(HELD_TOPOLOGY_TOMBSTONE_SHA256)
+HELD_TOPOLOGY_STATUS_LINE = (
+    'status: "[B] tombstone. This directory\'s content was archived 2026-07-20 '
+    'under the pure-Emergentism boundary. Nothing here owns doctrine."'
 )
-HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION = re.compile(
-    r"\bactive\s+governance\s+law\s+(?:is|remains)\s+owned\s+here\b"
-    r"|\bactive\s+governance\s+law\s+belongs\s+to\s+this\s+"
-    r"(?:folder|lane|route\s+card)\b"
-    r"|\b(?:this|the)\s+(?:folder|lane|route\s+card)\s+owns\s+"
-    r"active\s+governance\s+law\b",
+HELD_TOPOLOGY_TOMBSTONE_SENTINELS = (
+    "**This lane no longer holds content.**",
+    "Archived material is **provenance, not authority**.",
+    "must not be cited as current canon.",
+    "pure_emergentism_boundary_2026_07_20",
+    "2026_07_22_tree_authority_reconciliation",
+)
+HELD_TOPOLOGY_OWNERSHIP_ASSERTION = re.compile(
+    r"\b(?:this|the)\s+(?:directory|folder|lane|tombstone)\s+owns\s+"
+    r"(?:active\s+)?(?:canon|doctrine|governance)\b"
+    r"|\b(?:active\s+)?(?:canon|doctrine|governance)\s+(?:is|remains)\s+"
+    r"owned\s+here\b",
     re.I,
+)
+OWNER_DOCKET_UNSET_CONTRACT = {
+    "D-OWNER-01": {
+        "status_row": (
+            "| `D-OWNER-01` | Canonical owner for the byte-identical public planning "
+            "duplicate | **UNSET** | current/custody routing of two public-site planning copies |"
+        ),
+        "selection": "- **Selected option:** **UNSET**.",
+        "principal": (
+            "- **Principal:** **UNSET** (01_EMERGENTISM editorial owner must name one)."
+        ),
+    },
+    "D-OWNER-02": {
+        "status_row": (
+            "| `D-OWNER-02` | Disposition of the grandfathered framework-support "
+            "`00_META` tombstones under the root-only rule | **UNSET** | held topology "
+            "violation |"
+        ),
+        "selection": "- **Selected option:** **UNSET**.",
+        "principal": (
+            "- **Principal:** **UNSET** (01_EMERGENTISM editorial/topology owner must name one)."
+        ),
+    },
+}
+EXPECTED_TOPOLOGY_DEBT_QUESTION = (
+    "How must the three grandfathered framework-support 00_META tombstones be "
+    "disposed under the categorical root-only rule while preserving their custody?"
+)
+EXPECTED_TOPOLOGY_DEBT_CLOSE_WHEN = (
+    "A dated owner ruling either amends the topology rule or supplies a complete "
+    "migration or archival route; until then the exact path remains a hash-bound "
+    "held violation."
 )
 NON_ACTIVE_META_SEGMENTS = {
     ".git",
@@ -180,31 +281,16 @@ EXPECTED_PRECEDENCE = (
     "frozen",
     "unclassified",
 )
-EXPECTED_ALIAS_COLLISIONS = [
-    {
-        "route": "/titans/",
-        "artifacts": ["titans.html", "titans/index.html"],
-        "shared_raw_lifecycle": "frozen",
-    }
-]
-EXPECTED_RAW_OVERLAPS = [
-    {
-        "classes": ["frozen", "infrastructure"],
-        "artifacts": ["offline/index.html"],
-    },
-    {
-        "classes": ["frozen", "withheld"],
-        "artifacts": [
-            "burrisphere/index.html",
-            "canon/the-complete-ontology-of-reality/index.html",
-            "dasein/index.html",
-            "operators/mf-283-the-orthogonality-theorem-v2/index.html",
-            "operators/mf-285-dreams-are-unanchored-d5/index.html",
-            "operators/mf-296-gravity-is-time/index.html",
-            "operators/mf-298-dark-matter-is-mutual-information/index.html",
-        ],
-    },
-]
+EXPECTED_ALIAS_COLLISIONS: list[dict[str, Any]] = []
+EXPECTED_RAW_OVERLAP_CLASSES = {
+    ("frozen", "infrastructure"),
+    ("frozen", "withheld"),
+}
+EXPECTED_INFRASTRUCTURE_OVERLAP = ["offline/index.html"]
+EXPECTED_FROZEN_WITHHELD_OVERLAP_COUNT = 254
+EXPECTED_FROZEN_WITHHELD_OVERLAP_SHA256 = (
+    "f3435c703c864c48b3f75d7f89439e6b170ee924458ed9ab98a09f57a7629801"
+)
 EXPECTED_WORLD_REQUIRED_FIELDS = (
     "claim_id",
     "contract_id",
@@ -274,36 +360,24 @@ def load_json(path: Path) -> Any:
         raise ContractError(f"invalid JSON at {path}: {exc}") from exc
 
 
-def repo_file(root: Path, value: Any, label: str, errors: list[str]) -> Path | None:
-    """Require an existing repo-relative regular file that cannot escape root."""
-    if not isinstance(value, str) or not value.strip():
-        errors.append(f"{label} must be a non-empty repo-relative path")
-        return None
-    rel = Path(value)
-    if rel.is_absolute() or ".." in rel.parts:
-        errors.append(f"{label} must not be absolute or contain '..': {value!r}")
-        return None
-    target = root / rel
+def _strict_tree_entries(root: Path, relative_root: Path, label: str) -> list[Path]:
+    """Inventory a tree only when its root and every lexical entry are symlink-free."""
+
+    relative = relative_root.as_posix()
+    base = root / relative_root
+    if _has_symlink_component(root, relative):
+        raise ContractError(f"{label} root must not traverse a symlink: {relative}")
+    if not base.is_dir():
+        raise ContractError(f"missing {label} root: {relative}")
     try:
-        target.resolve().relative_to(root.resolve())
-    except ValueError:
-        errors.append(f"{label} escapes the repository: {value!r}")
-        return None
-    if not target.is_file():
-        errors.append(f"{label} does not exist as a file: {value}")
-        return None
-    return target
-
-
-def _has_symlink_component(root: Path, relative: str) -> bool:
-    """Reject an otherwise in-root path that passes through a symlink."""
-
-    candidate = root
-    for component in Path(relative).parts:
-        candidate /= component
-        if candidate.is_symlink():
-            return True
-    return False
+        entries = list(base.rglob("*"))
+    except OSError as exc:
+        raise ContractError(f"cannot inventory {label} root {relative}: {exc}") from exc
+    for path in entries:
+        rel = path.relative_to(root).as_posix()
+        if _has_symlink_component(root, rel):
+            raise ContractError(f"{label} entry must not traverse a symlink: {rel}")
+    return entries
 
 
 def _git_index_has_exact_regular_bytes(
@@ -349,13 +423,52 @@ def _git_index_has_exact_regular_bytes(
     return blob.returncode == 0 and blob.stdout == expected_bytes
 
 
+def visible_markdown(text: str) -> str | None:
+    """Return visible Markdown; ambiguous fences/comments/HTML fail closed."""
+
+    if text.startswith("\ufeff") or "\r" in text:
+        return None
+    active: list[str] = []
+    fence: tuple[str, int] | None = None
+    for line in text.splitlines(keepends=True):
+        match = re.match(r"^[ \t]*(`{3,}|~{3,})([^\n]*)", line)
+        if fence is not None:
+            if (
+                match is not None
+                and match.group(1)[0] == fence[0]
+                and len(match.group(1)) >= fence[1]
+                and not match.group(2).strip()
+            ):
+                fence = None
+            continue
+        if match is not None:
+            fence = (match.group(1)[0], len(match.group(1)))
+            continue
+        active.append(line)
+    if fence is not None:
+        return None
+    visible = re.sub(r"(?s)<!--.*?-->", "", "".join(active))
+    if "<!--" in visible or "-->" in visible or "<" in visible:
+        return None
+    frontmatter_start = re.match(r"^---[ \t]*\n", visible)
+    if frontmatter_start is not None:
+        frontmatter_end = re.search(
+            r"(?m)^(?:---|\.\.\.)[ \t]*(?:\n|\Z)",
+            visible[frontmatter_start.end() :],
+        )
+        if frontmatter_end is None:
+            return None
+        visible = visible[frontmatter_start.end() + frontmatter_end.end() :]
+    return visible
+
+
 def public_doc_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
     """Keep the unresolved duplicate in non-deployable, byte-identical custody."""
 
     if evidence != PUBLIC_DOC_OWNER_DEBT_EVIDENCE:
         return [
             "public-doc owner debt evidence must exactly match the two retained "
-            "documents and shared coherence profile"
+            "documents, shared coherence profile, and UNSET owner docket"
         ]
     errors: list[str] = []
     left, right = sorted(PUBLIC_DOC_EVIDENCE)
@@ -374,7 +487,13 @@ def public_doc_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
             )
     if left_path.read_bytes() != right_path.read_bytes():
         errors.append("public-doc debt evidence is no longer byte-identical")
-    patterns = _load_vercelignore(root / VERCEL_IGNORE)
+    ignore_errors: list[str] = []
+    ignore_path = repo_file(
+        root, VERCEL_IGNORE.as_posix(), "public deployment-ignore owner", ignore_errors
+    )
+    if ignore_path is None:
+        return errors + ignore_errors
+    patterns = _load_vercelignore(ignore_path)
     for path in (left, right):
         try:
             site_relative = Path(path).relative_to(PUBLIC_DIR).as_posix()
@@ -408,38 +527,35 @@ def public_doc_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
     return errors
 
 
-def active_nonroot_meta_paths(root: Path) -> set[str]:
-    """Discover active per-pillar 00_META directories without normalizing them."""
+def present_nonroot_meta_paths(root: Path) -> set[str]:
+    """Discover lexical per-pillar 00_META entries without normalizing them."""
 
-    active: set[str] = set()
-    for directory, dirnames, _ in os.walk(root, followlinks=False):
+    present: set[str] = set()
+    for directory, dirnames, filenames in os.walk(root, followlinks=False):
+        # A directory symlink appears in dirnames, while a broken symlink or
+        # regular file named 00_META appears in filenames. All are topology
+        # entries and must be observed before pruning traversal.
+        if "00_META" in set(dirnames) | set(filenames):
+            candidate = Path(directory) / "00_META"
+            relative = candidate.relative_to(root)
+            if relative != Path("00_META"):
+                present.add(relative.as_posix())
         dirnames[:] = [
             name for name in dirnames if name not in NON_ACTIVE_META_SEGMENTS
         ]
-        if "00_META" not in dirnames:
-            continue
-        candidate = Path(directory) / "00_META"
-        relative = candidate.relative_to(root)
-        if relative != Path("00_META"):
-            active.add(relative.as_posix())
-    return active
-
-
-def _markdown_h2_sections(text: str, heading: str) -> list[str]:
-    """Return every exact level-two section so duplicate active headings cannot hide."""
-
-    return re.findall(
-        rf"(?ms)^## {re.escape(heading)}[ \t]*\n(.*?)(?=^## |\Z)", text
-    )
+    return present
 
 
 def unresolved_topology_errors(root: Path) -> list[str]:
-    """Freeze the known conflict while D-OWNER-02 remains unselected."""
+    """Freeze the exact tombstone custody while D-OWNER-02 remains unselected."""
 
-    actual = active_nonroot_meta_paths(root)
-    missing = sorted(HELD_ACTIVE_NONROOT_META_PATHS - actual)
-    unexpected = sorted(actual - HELD_ACTIVE_NONROOT_META_PATHS)
+    actual = present_nonroot_meta_paths(root)
+    missing = sorted(HELD_NONROOT_META_VIOLATION_PATHS - actual)
+    unexpected = sorted(actual - HELD_NONROOT_META_VIOLATION_PATHS)
     symlinked = sorted(path for path in actual if (root / path).is_symlink())
+    non_directories = sorted(
+        path for path in actual if not (root / path).is_dir()
+    )
     errors: list[str] = []
     detail: list[str] = []
     if missing:
@@ -448,75 +564,97 @@ def unresolved_topology_errors(root: Path) -> list[str]:
         detail.append("unexpected=" + ", ".join(unexpected))
     if symlinked:
         detail.append("symlink=" + ", ".join(symlinked))
+    if non_directories:
+        detail.append("non-directory=" + ", ".join(non_directories))
     if detail:
         errors.append(
-            "unresolved non-root 00_META topology inventory drifted: "
+            "held non-root 00_META violation custody drifted: "
             + "; ".join(detail)
         )
-    if HELD_ACTIVE_NONROOT_META_PATHS <= actual:
-        route_surface_texts: dict[Path, str] = {}
-        for route_surface in HELD_TOPOLOGY_ACTIVE_ROUTE_SURFACES:
-            route_surface_relative = route_surface.as_posix()
-            target = root / route_surface
-            if _has_symlink_component(root, route_surface_relative) or not target.is_file():
+    if HELD_NONROOT_META_VIOLATION_PATHS <= actual:
+        held_root = root / next(iter(HELD_NONROOT_META_VIOLATION_PATHS))
+        expected_entries = {
+            path.as_posix() for path in HELD_TOPOLOGY_TOMBSTONES
+        } | {
+            path.parent.as_posix()
+            for path in HELD_TOPOLOGY_TOMBSTONES
+            if path.parent != Path(next(iter(HELD_NONROOT_META_VIOLATION_PATHS)))
+        }
+        actual_entries = {
+            path.relative_to(root).as_posix()
+            for path in held_root.rglob("*")
+        }
+        if actual_entries != expected_entries:
+            errors.append(
+                "held 00_META tombstone inventory drifted: "
+                f"missing={sorted(expected_entries - actual_entries)}, "
+                f"unexpected={sorted(actual_entries - expected_entries)}"
+            )
+        for tombstone in HELD_TOPOLOGY_TOMBSTONES:
+            relative = tombstone.as_posix()
+            target = root / tombstone
+            if _has_symlink_component(root, relative) or not target.is_file():
                 errors.append(
-                    "held 00_META active route surface must remain a regular, "
-                    f"non-symlink file: {route_surface_relative}"
+                    "held 00_META tombstone must remain a regular, non-symlink file: "
+                    + relative
                 )
                 continue
             try:
-                route_surface_texts[route_surface] = target.read_text(encoding="utf-8")
+                body = target.read_text(encoding="utf-8")
+                body_bytes = target.read_bytes()
             except OSError as exc:
                 errors.append(
-                    "held 00_META active route surface is unreadable: "
-                    f"{route_surface_relative}: {exc.__class__.__name__}"
+                    f"held 00_META tombstone is unreadable: {relative}: "
+                    f"{exc.__class__.__name__}"
                 )
-        route_card_text = route_surface_texts.get(HELD_TOPOLOGY_ROUTE_CARD)
-        active_boundary_texts: list[str] = []
-        if route_card_text is not None:
-            section_matches = {
-                heading: _markdown_h2_sections(route_card_text, heading)
-                for heading in HELD_TOPOLOGY_ROUTE_CARD_ACTIVE_SECTIONS
-            }
-            missing_sections = [
-                heading for heading, sections in section_matches.items() if not sections
-            ]
-            duplicate_sections = [
-                heading for heading, sections in section_matches.items() if len(sections) > 1
-            ]
-            if missing_sections:
+                continue
+            if not _git_index_has_exact_regular_bytes(root, relative, body_bytes):
                 errors.append(
-                    "held 00_META route card lost an active ownership/boundary section"
+                    "held 00_META tombstone lacks exact regular-file Git index custody: "
+                    + relative
                 )
-            if duplicate_sections:
+            if (
+                hashlib.sha256(body_bytes).hexdigest()
+                != HELD_TOPOLOGY_TOMBSTONE_SHA256[tombstone]
+            ):
                 errors.append(
-                    "held 00_META route card has duplicate active ownership/boundary "
-                    "headings: " + ", ".join(duplicate_sections)
+                    "held 00_META tombstone SHA-256 drifted from grandfathered "
+                    "custody: " + relative
                 )
-            if not missing_sections and not duplicate_sections:
-                active_sections = {
-                    heading: sections[0] for heading, sections in section_matches.items()
-                }
-                missing_sentinels = [
-                    heading
-                    for heading, sentinel in HELD_TOPOLOGY_ROUTE_CARD_SENTINELS.items()
-                    if sentinel not in active_sections[heading]
-                ]
-                if missing_sentinels:
-                    errors.append(
-                        "held 00_META route card lost its non-governance/upstream-route "
-                        "boundary sentinel from: " + ", ".join(missing_sentinels)
-                    )
-                active_boundary_texts.extend(active_sections.values())
-        agent_route_text = route_surface_texts.get(HELD_TOPOLOGY_AGENT_ROUTE_CARD)
-        if agent_route_text is not None:
-            active_boundary_texts.append(agent_route_text)
-        if HELD_TOPOLOGY_GOVERNANCE_OWNERSHIP_ASSERTION.search(
-            "\n".join(active_boundary_texts)
-        ):
-            errors.append(
-                "held 00_META active route surface asserts active governance ownership"
+            visible = visible_markdown(body)
+            if visible is None:
+                errors.append(
+                    "held 00_META tombstone Markdown boundary is ambiguous: " + relative
+                )
+                continue
+            expected_title = (
+                f'title: "{tombstone.parent.as_posix()} — archived lane, tombstone route"'
             )
+            if body.count(expected_title) != 1 or body.count(HELD_TOPOLOGY_STATUS_LINE) != 1:
+                errors.append(
+                    "held 00_META tombstone lost its exact title/no-doctrine frontmatter: "
+                    + relative
+                )
+            expected_heading = f"# {tombstone.parent.as_posix()} — archived"
+            if visible.count(expected_heading) != 1:
+                errors.append(
+                    "held 00_META tombstone lost its exact archived heading: " + relative
+                )
+            missing_markers = [
+                marker
+                for marker in HELD_TOPOLOGY_TOMBSTONE_SENTINELS
+                if marker not in visible
+            ]
+            if missing_markers:
+                errors.append(
+                    "held 00_META tombstone lost its exact no-doctrine/custody markers: "
+                    f"{relative}: {missing_markers}"
+                )
+            if HELD_TOPOLOGY_OWNERSHIP_ASSERTION.search(visible):
+                errors.append(
+                    "held 00_META tombstone asserts active canon/doctrine/governance ownership: "
+                    + relative
+                )
     return errors
 
 
@@ -526,10 +664,66 @@ def topology_owner_debt_errors(root: Path, evidence: set[str]) -> list[str]:
     errors: list[str] = []
     if evidence != TOPOLOGY_OWNER_DEBT_EVIDENCE:
         errors.append(
-            "topology owner debt evidence must exactly match the two topology "
-            "sources and shared coherence profile"
+            "topology owner debt evidence must exactly match the topology standard, "
+            "three CLAUDE.md tombstones, and shared coherence profile"
         )
     errors.extend(unresolved_topology_errors(root))
+    return errors
+
+
+def owner_docket_unset_errors(root: Path) -> list[str]:
+    """Require D-OWNER-01/02 to remain exact, visible, and unselected."""
+
+    relative = OWNER_DOCKET.as_posix()
+    target = root / OWNER_DOCKET
+    if _has_symlink_component(root, relative) or not target.is_file():
+        return ["contact-limited owner docket must remain a regular, non-symlink file"]
+    try:
+        body = target.read_text(encoding="utf-8")
+        body_bytes = target.read_bytes()
+    except OSError as exc:
+        return [f"contact-limited owner docket is unreadable: {exc.__class__.__name__}"]
+    errors: list[str] = []
+    if not _git_index_has_exact_regular_bytes(root, relative, body_bytes):
+        errors.append(
+            "contact-limited owner docket lacks exact regular-file Git index custody"
+        )
+    visible = visible_markdown(body)
+    if visible is None:
+        return errors + [
+            "contact-limited owner docket Markdown boundary is ambiguous"
+        ]
+    for docket_id, contract in OWNER_DOCKET_UNSET_CONTRACT.items():
+        status_rows = re.findall(
+            rf"(?m)^\|\s*`{re.escape(docket_id)}`\s*\|[^\n]*$", visible
+        )
+        if status_rows != [contract["status_row"]]:
+            errors.append(
+                f"contact-limited owner docket must retain one exact UNSET {docket_id} row"
+            )
+        sections = re.findall(
+            rf"(?ms)^## {re.escape(docket_id)}\b[^\n]*\n(.*?)(?=^## |\Z)",
+            visible,
+        )
+        if len(sections) != 1:
+            errors.append(
+                f"contact-limited owner docket must retain one {docket_id} section"
+            )
+            continue
+        selection_lines = re.findall(
+            r"(?m)^-\s+\*\*Selected option:\*\*.*$", sections[0]
+        )
+        principal_lines = re.findall(
+            r"(?m)^-\s+\*\*Principal:\*\*.*$", sections[0]
+        )
+        if selection_lines != [contract["selection"]]:
+            errors.append(
+                f"contact-limited owner docket {docket_id} lost its exact UNSET selection"
+            )
+        if principal_lines != [contract["principal"]]:
+            errors.append(
+                f"contact-limited owner docket {docket_id} lost its exact UNSET principal"
+            )
     return errors
 
 
@@ -737,10 +931,9 @@ def marker_receipt_custody_errors(root: Path) -> list[str]:
     )
     working_markers: set[Path] = set()
     for lane in RECEIPT_LANES:
-        base = root / lane
-        if not base.is_dir():
-            raise ContractError(f"missing receipt lane during marker custody scan: {lane}")
-        for path in base.rglob("*.md"):
+        for path in _strict_tree_entries(root, lane, "marker-receipt custody"):
+            if path.suffix != ".md" or not path.is_file():
+                continue
             try:
                 if STATE_DIGEST_MARKER in path.read_bytes():
                     working_markers.add(path.relative_to(root))
@@ -750,6 +943,9 @@ def marker_receipt_custody_errors(root: Path) -> list[str]:
     errors: list[str] = []
     for rel in sorted(working_markers | head_markers | parent_markers):
         working_path = root / rel
+        if _has_symlink_component(root, rel.as_posix()):
+            errors.append(f"snapshot marker receipt must not traverse a symlink: {rel}")
+            continue
         try:
             working_blob = working_path.read_bytes() if working_path.is_file() else None
         except OSError as exc:
@@ -832,10 +1028,9 @@ def snapshot_binding_errors(
 def _receipt_files(root: Path) -> dict[str, list[Path]]:
     by_number: dict[str, list[Path]] = defaultdict(list)
     for lane in RECEIPT_LANES:
-        base = root / lane
-        if not base.is_dir():
-            raise ContractError(f"missing receipt lane: {lane}")
-        for path in base.rglob("*.md"):
+        for path in _strict_tree_entries(root, lane, "receipt namespace"):
+            if path.suffix != ".md" or not path.is_file():
+                continue
             rel = path.relative_to(root)
             if any(part in RECEIPT_SKIP_DIRS for part in rel.parts):
                 continue
@@ -848,7 +1043,9 @@ def _receipt_files(root: Path) -> dict[str, list[Path]]:
 def _prefixed_receipt_markdown_paths(root: Path) -> set[str]:
     paths: set[str] = set()
     for lane in RECEIPT_LANES:
-        for path in (root / lane).rglob("*.md"):
+        for path in _strict_tree_entries(root, lane, "receipt namespace"):
+            if path.suffix != ".md" or not path.is_file():
+                continue
             rel = path.relative_to(root)
             if any(part in RECEIPT_SKIP_DIRS for part in rel.parts):
                 continue
@@ -863,6 +1060,10 @@ def _dangling_citations(root: Path, by_number: dict[str, list[Path]]) -> list[st
         rel = path.relative_to(root)
         if any(part in RECEIPT_SKIP_DIRS for part in rel.parts):
             continue
+        if _has_symlink_component(root, rel.as_posix()):
+            raise ContractError(
+                f"receipt citation corpus entry must not traverse a symlink: {rel}"
+            )
         try:
             text = path.read_text(encoding="utf-8", errors="ignore")
         except OSError:
@@ -895,7 +1096,13 @@ def compute_receipt_namespace(root: Path) -> dict[str, Any]:
         if len(undeclared) > 1:
             dangerous += 1
 
-    index = load_json(root / RECEIPT_INDEX)
+    index_errors: list[str] = []
+    index_path = repo_file(
+        root, RECEIPT_INDEX.as_posix(), "receipt namespace machine owner", index_errors
+    )
+    if index_path is None:
+        raise ContractError(index_errors)
+    index = load_json(index_path)
     index_rows = require_mapping(index, str(RECEIPT_INDEX), []).get("rows", [])
     indexed: dict[str, set[str]] = {}
     if isinstance(index_rows, list):
@@ -1055,9 +1262,10 @@ def _clean_route(artifact: str) -> str:
 
 
 def _exact_sitemap_contract(root: Path, expected_routes: set[str]) -> dict[str, Any]:
-    path = root / SITEMAP
-    if not path.is_file():
-        raise ContractError(f"missing public sitemap owner: {SITEMAP}")
+    path_errors: list[str] = []
+    path = repo_file(root, SITEMAP.as_posix(), "public sitemap owner", path_errors)
+    if path is None:
+        raise ContractError(path_errors)
     try:
         tree = ET.parse(path)
     except (ET.ParseError, OSError) as exc:
@@ -1150,6 +1358,8 @@ def _meta_robots_directives(path: Path) -> set[str]:
 
 
 def _validated_withheld_artifacts(site: Path, artifacts: list[Any]) -> set[str]:
+    if site.is_symlink() or not site.is_dir():
+        raise ContractError("withheld artifact site root must be a regular, non-symlink directory")
     validated: set[str] = set()
     for index, item in enumerate(artifacts):
         if not isinstance(item, dict):
@@ -1166,6 +1376,10 @@ def _validated_withheld_artifacts(site: Path, artifacts: list[Any]) -> set[str]:
         ):
             raise ContractError(f"withheld artifact path is unsafe or not HTML: {value!r}")
         target = site / rel
+        if _has_symlink_component(site, value):
+            raise ContractError(
+                f"withheld artifact must not traverse a symlink: {value}"
+            )
         try:
             target.resolve().relative_to(site.resolve())
         except ValueError as exc:
@@ -1253,17 +1467,44 @@ def _expected_withheld_aliases(site: Path, artifact: str) -> set[str]:
 
 def compute_public_lifecycle(root: Path) -> dict[str, Any]:
     site = root / PUBLIC_DIR
-    parity = load_json(root / PUBLIC_PARITY)
-    withheld_registry = load_json(root / WITHHELD_REGISTRY)
-    vercel = load_json(root / VERCEL_CONFIG)
-    patterns = _load_vercelignore(root / VERCEL_IGNORE)
+    site_entries = _strict_tree_entries(root, PUBLIC_DIR, "public lifecycle")
+    owner_paths: dict[Path, Path] = {}
+    owner_errors: list[str] = []
+    for relative, label in (
+        (PUBLIC_PARITY, "public semantic-parity machine owner"),
+        (WITHHELD_REGISTRY, "withheld-route machine owner"),
+        (VERCEL_CONFIG, "public delivery-config machine owner"),
+        (VERCEL_IGNORE, "public deployment-ignore machine owner"),
+        (PREDEPLOY_CHECKER, "public deployment matcher"),
+        (SITEMAP, "public sitemap machine owner"),
+    ):
+        path = repo_file(root, relative.as_posix(), label, owner_errors)
+        if path is not None:
+            owner_paths[relative] = path
+    if owner_errors:
+        raise ContractError(owner_errors)
 
-    if not site.is_dir():
-        raise ContractError(f"missing public site: {PUBLIC_DIR}")
+    matcher_root = Path(str(getattr(_PREDEPLOY_POLICY, "BASE_DIR", "")))
+    if matcher_root.resolve() != site.resolve():
+        raise ContractError(
+            "public predeploy matcher root differs from the contact-limited site root"
+        )
+
+    parity = load_json(owner_paths[PUBLIC_PARITY])
+    withheld_registry = load_json(owner_paths[WITHHELD_REGISTRY])
+    vercel = load_json(owner_paths[VERCEL_CONFIG])
+    patterns = _load_vercelignore(owner_paths[VERCEL_IGNORE])
+
     artifacts = require_list(withheld_registry.get("artifacts"), "withheld artifacts", [])
     withheld_artifacts = _validated_withheld_artifacts(site, artifacts)
 
-    present = {path.relative_to(site).as_posix() for path in site.rglob("*.html")}
+    html_entries = [path for path in site_entries if path.suffix.lower() == ".html"]
+    non_files = [path.relative_to(site).as_posix() for path in html_entries if not path.is_file()]
+    if non_files:
+        raise ContractError(
+            "public HTML inventory contains non-regular entries: " + ", ".join(non_files)
+        )
+    present = {path.relative_to(site).as_posix() for path in html_entries}
     ignored = {rel for rel in present if _is_vercel_ignored(rel, patterns)}
     deployable = present - ignored
     nested_archive = "compass/_archive/index_2026_07_12_pre_restructure.html"
@@ -1279,7 +1520,7 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
         )
     matcher_paths = {
         path.relative_to(site).as_posix()
-        for path in site.rglob("*")
+        for path in site_entries
         if path.is_file()
     }
     matcher_mismatches = sorted(
@@ -1625,8 +1866,33 @@ def compute_claim_disposition(root: Path) -> dict[str, Any]:
     if claim_errors:
         raise ContractError([f"claim-status contract: {error}" for error in claim_errors])
 
-    current_rows = [*source["open"], *source["reopened"]]
-    grave_rows = list(source["graves"])
+    def required_rows(section: str) -> list[dict[str, Any]]:
+        rows = source.get(section)
+        if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
+            raise ContractError(
+                f"claim-status contract: {section} must be a list of row objects"
+            )
+        return list(rows)
+
+    open_rows = required_rows("open")
+    investigation_rows = required_rows("investigations")
+    grave_rows = required_rows("graves")
+    typed_survivor_rows = required_rows("typed_survivors")
+    current_rows = [*open_rows, *investigation_rows]
+    if len(current_rows) + len(grave_rows) != EXPECTED_LIFECYCLE_ROWS:
+        raise ContractError(
+            "claim-status contract: lifecycle must contain exactly "
+            f"{EXPECTED_LIFECYCLE_ROWS} open/investigation/grave rows"
+        )
+    lifecycle_ids = {
+        str(row.get("id")) for row in [*current_rows, *grave_rows]
+    }
+    survivor_ids = {str(row.get("id")) for row in typed_survivor_rows}
+    if lifecycle_ids & survivor_ids:
+        raise ContractError(
+            "claim-status contract: typed survivors must remain outside the "
+            "48-row open/investigation/grave lifecycle"
+        )
     live_statuses = set(source["live_statuses"])
     terminal_statuses = set(source["terminal_statuses"])
 
@@ -1690,15 +1956,32 @@ def compute_claim_disposition(root: Path) -> dict[str, Any]:
 
 
 def compute_owner_debts(root: Path) -> set[str]:
+    docket_errors = owner_docket_unset_errors(root)
+    if docket_errors:
+        raise ContractError(docket_errors)
     profile = load_json(root / COHERENCE_SOURCE)
     axes = require_mapping(profile.get("axes"), "coherence axes", [])
     routing = require_mapping(axes.get("routing"), "coherence routing axis", [])
+    if routing.get("state") != "PASS_WITH_DEBT":
+        raise ContractError(
+            "coherence routing axis must remain PASS_WITH_DEBT while owner dockets are unset"
+        )
     debt_ids = require_list(routing.get("debt_ids"), "routing debt_ids", [])
     if any(not isinstance(item, str) for item in debt_ids) or len(set(debt_ids)) != len(
         debt_ids
     ):
         raise ContractError("coherence routing debt_ids must be unique strings")
-    return set(debt_ids)
+    debts = set(debt_ids)
+    if debts != EXPECTED_DEBTS:
+        raise ContractError(
+            "coherence routing axis must retain exactly the two unset owner debts"
+        )
+    overall = require_mapping(profile.get("overall"), "coherence overall", [])
+    if overall.get("scope") != "internal" or overall.get("state") != "PASS_WITH_DEBT":
+        raise ContractError(
+            "coherence overall must remain internal PASS_WITH_DEBT while owner dockets are unset"
+        )
+    return debts
 
 
 def compute_world_contact(root: Path) -> dict[str, Any]:
@@ -1780,8 +2063,25 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
     ):
         errors.append("receipt target_universe must distinguish citable targets from 00_* convention files")
     bare_boundary = str(receipt_state.get("bare_numeric_boundary", ""))
-    if "All 97 reused prefixes remain unsafe" not in bare_boundary or "proves no target" not in bare_boundary:
-        errors.append("bare_numeric_boundary must not present the legacy 91 heuristic as safe")
+    legacy_dangerous = receipt_state.get("legacy_heuristic_dangerous_prefixes")
+    expected_bare_boundary = (
+        f"All {EXPECTED_REUSED_PREFIXES} reused prefixes remain unsafe as bare citations. "
+        f"The live legacy heuristic marks {legacy_dangerous} dangerous prefixes but proves "
+        "no target, direction, reciprocity, or cross-lane disambiguation."
+    )
+    if bare_boundary != expected_bare_boundary:
+        errors.append(
+            "bare_numeric_boundary must state the exact 101-prefix unsafe boundary "
+            "without presenting the legacy heuristic as proof"
+        )
+    if (
+        receipt_state.get("reused_prefixes") != EXPECTED_REUSED_PREFIXES
+        or receipt_state.get("bare_unsafe_reused_prefixes")
+        != EXPECTED_REUSED_PREFIXES
+    ):
+        errors.append(
+            "receipt namespace must retain exactly 101 reused and bare-unsafe prefixes"
+        )
     receipt_identity_state = require_mapping(
         receipt_state.get("identity_hash_contract"),
         "receipt_namespace.identity_hash_contract",
@@ -2168,6 +2468,15 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
 
     receipts = computed.get("receipt_namespace")
     if receipts is not None:
+        if (
+            receipts.get("reused_prefixes") != EXPECTED_REUSED_PREFIXES
+            or receipts.get("bare_unsafe_reused_prefixes")
+            != EXPECTED_REUSED_PREFIXES
+        ):
+            errors.append(
+                "computed receipt namespace must retain exactly 101 reused and "
+                "bare-unsafe prefixes"
+            )
         actual_counters = {
             key: value for key, value in receipts.items() if key != "identity_hashes"
         }
@@ -2207,8 +2516,65 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
                 f"raw lifecycle overlap ledger drifted: stored={overlap_contract}, "
                 f"actual={public['raw_overlaps']}"
             )
-        if overlap_contract != EXPECTED_RAW_OVERLAPS:
-            errors.append("raw lifecycle overlap allowlist changed without a new ratchet contract")
+        overlap_pairs = [
+            tuple(row.get("classes") or []) for row in overlap_contract
+        ]
+        if (
+            len(overlap_pairs) != len(set(overlap_pairs))
+            or set(overlap_pairs) != EXPECTED_RAW_OVERLAP_CLASSES
+        ):
+            errors.append(
+                "raw lifecycle overlap allowlist must retain exactly the "
+                "frozen/infrastructure and frozen/withheld class pairs"
+            )
+        infrastructure_rows = [
+            row
+            for row in overlap_contract
+            if tuple(row.get("classes") or []) == ("frozen", "infrastructure")
+        ]
+        if (
+            len(infrastructure_rows) != 1
+            or infrastructure_rows[0].get("artifacts")
+            != EXPECTED_INFRASTRUCTURE_OVERLAP
+        ):
+            errors.append(
+                "raw lifecycle infrastructure overlap must remain exactly offline/index.html"
+            )
+        frozen_withheld_rows = [
+            row
+            for row in overlap_contract
+            if tuple(row.get("classes") or []) == ("frozen", "withheld")
+        ]
+        if len(frozen_withheld_rows) != 1:
+            errors.append(
+                "raw lifecycle frozen/withheld overlap must retain one exact inventory"
+            )
+        else:
+            frozen_withheld_artifacts = frozen_withheld_rows[0].get("artifacts")
+            if (
+                not isinstance(frozen_withheld_artifacts, list)
+                or any(
+                    not isinstance(artifact, str)
+                    for artifact in frozen_withheld_artifacts
+                )
+                or frozen_withheld_artifacts
+                != sorted(set(frozen_withheld_artifacts))
+            ):
+                errors.append(
+                    "raw lifecycle frozen/withheld overlap inventory must be a sorted "
+                    "unique string list"
+                )
+            elif (
+                len(frozen_withheld_artifacts)
+                != EXPECTED_FROZEN_WITHHELD_OVERLAP_COUNT
+                or path_set_sha256(frozen_withheld_artifacts)
+                != EXPECTED_FROZEN_WITHHELD_OVERLAP_SHA256
+            ):
+                errors.append(
+                    "raw lifecycle frozen/withheld overlap inventory drifted from "
+                    f"the exact {EXPECTED_FROZEN_WITHHELD_OVERLAP_COUNT}-artifact "
+                    "count/hash baseline"
+                )
         if withheld_alias_contract != public["withheld_alias_contract"]:
             errors.append(
                 f"withheld public-alias contract drifted: stored={withheld_alias_contract}, "
@@ -2298,13 +2664,22 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         len(claim_lists[key])
         for key in ("direct_contact", "merged_contact", "internal_narrowed", "internal_terminal")
     )
-    if len(current_classes) != 26 or classified_current_count != 26:
+    if (
+        len(current_classes) != EXPECTED_CURRENT_ROWS
+        or classified_current_count != EXPECTED_CURRENT_ROWS
+    ):
         errors.append("current claim disposition must cover exactly 26 distinct W/RQ rows")
     if claim_lists["contact_routed"] != claim_lists["direct_contact"] + claim_lists["merged_contact"]:
         errors.append("contact_routed must be the ordered direct+merged projection")
     if set(grave_lists["merged_to_owner"]) & set(grave_lists["internal_terminal"]):
         errors.append("grave parent has two disposition classes")
-    if len(set(grave_lists["merged_to_owner"]) | set(grave_lists["internal_terminal"])) != 22:
+    if (
+        len(
+            set(grave_lists["merged_to_owner"])
+            | set(grave_lists["internal_terminal"])
+        )
+        != EXPECTED_GRAVE_ROWS
+    ):
         errors.append("grave disposition must cover exactly 22 distinct parent rows")
     if grave_state.get("active_parent_investigations") != 0:
         errors.append("grave parent forms must not remain separate active investigations")
@@ -2313,6 +2688,11 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         errors.append("claim disposition requires zero ambiguous rows")
 
     if claims is not None:
+        if claims.get("lifecycle_rows_total") != EXPECTED_LIFECYCLE_ROWS:
+            errors.append(
+                "claim disposition must retain exactly 48 open/investigation/grave "
+                "lifecycle rows"
+            )
         scalar_keys = (
             "lifecycle_rows_total", "lifecycle_rows_sha256", "claim_status_contract_sha256",
             "unique_external_contracts",
@@ -2405,6 +2785,16 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
         if debt.get("id") == "OWNER_GATE_HELD_PUBLIC_DOCS":
             errors.extend(public_doc_owner_debt_errors(root, evidence_set))
         if debt.get("id") == "OWNER_GATE_OPEN_TOPOLOGY":
+            if debt.get("question") != EXPECTED_TOPOLOGY_DEBT_QUESTION:
+                errors.append(
+                    "OWNER_GATE_OPEN_TOPOLOGY question must describe the exact "
+                    "grandfathered held violation"
+                )
+            if debt.get("close_when") != EXPECTED_TOPOLOGY_DEBT_CLOSE_WHEN:
+                errors.append(
+                    "OWNER_GATE_OPEN_TOPOLOGY close_when must require a dated "
+                    "topology amendment or complete custody route"
+                )
             errors.extend(topology_owner_debt_errors(root, evidence_set))
 
     world = computed.get("world_contact")
@@ -2446,7 +2836,13 @@ def validate_state(state: Any, root: Path = ROOT) -> dict[str, Any]:
 
 
 def check(root: Path = ROOT) -> dict[str, Any]:
-    return validate_state(load_json(root / STATE_PATH), root)
+    errors: list[str] = []
+    state_path = repo_file(
+        root, STATE_PATH.as_posix(), "contact-limited state owner", errors
+    )
+    if state_path is None:
+        raise ContractError(errors)
+    return validate_state(load_json(state_path), root)
 
 
 def main() -> int:

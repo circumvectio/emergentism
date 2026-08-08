@@ -5,7 +5,7 @@
     "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
     "lifecycle": "active",
     "role": "research_seed",
-    "reviewed_source_sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c"
+    "reviewed_source_sha256": "67edc93793eb88dea6ca4561de6bbb284983f81c7b1be5caf236f1aafcac7b15"
   },
   "cards": [
     {
@@ -15,8 +15,8 @@
       ],
       "locator": {
         "section": "4-7",
-        "line_start": 124,
-        "line_end": 199,
+        "line_start": 155,
+        "line_end": 230,
         "anchor": "## 4. Finity protocol `[S/I]`",
         "fingerprint_sha256": "d8b0928142fa42d928b74fab3a84175c376a56947b694bac8c8597e7d5f6eb4b"
       },
@@ -77,8 +77,8 @@
       ],
       "locator": {
         "section": "recovery and stop conditions",
-        "line_start": 213,
-        "line_end": 227,
+        "line_start": 244,
+        "line_end": 258,
         "anchor": "## 9. Stop conditions",
         "fingerprint_sha256": "f5c0f736e173ce5e17bf94396fa262452c7599424b40f0e57f230427f6f57a1a"
       },

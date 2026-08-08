@@ -44,11 +44,11 @@ class ClaimStatusV2Tests(unittest.TestCase):
         self.assertEqual(len(CHECKER.lifecycle_rows(self.document)), 48)
         self.assertEqual(
             CHECKER.canonical_lifecycle_sha256(self.document),
-            "4f01474e67957703b81c6e99ed8a82a0905e2b584be48a4c6d2390f9d8c7eb0e",  # pragma: allow-secret -- public corpus digest fixture
+            "936615148ef25dad44bfefcc0bdd5ac693a582a531b685cd77b3e527296264b7",  # pragma: allow-secret -- public corpus digest fixture
         )
         self.assertEqual(
             CHECKER.canonical_contract_sha256(self.document),
-            "017cbc2a76d93c7d30340a57cfa56f12520ea0581917e711ceafb2a31b5d237d",  # pragma: allow-secret -- public corpus digest fixture
+            "de7335dbedd54abe9635f072026b556c7b803496cb39c89b595c0b7b9502e8d5",  # pragma: allow-secret -- public corpus digest fixture
         )
 
     def test_duplicate_json_key_is_rejected(self) -> None:
@@ -92,7 +92,7 @@ class ClaimStatusV2Tests(unittest.TestCase):
 
     def test_fake_external_target_and_blocker_fail(self) -> None:
         document = copy.deepcopy(self.document)
-        self.row(document, "reopened", "RQ-03")["disposition"]["target_ids"] = ["W99"]
+        self.row(document, "investigations", "RQ-03")["disposition"]["target_ids"] = ["W99"]
         self.assert_invalid(document, "self or unknown target")
 
         document = copy.deepcopy(self.document)
@@ -145,7 +145,7 @@ class ClaimStatusV2Tests(unittest.TestCase):
 
     def test_merge_target_must_directly_own_contract(self) -> None:
         document = copy.deepcopy(self.document)
-        disposition = self.row(document, "reopened", "RQ-01")["disposition"]
+        disposition = self.row(document, "investigations", "RQ-01")["disposition"]
         disposition["target_ids"] = ["RQ-02"]
         self.assert_invalid(document, "is not a direct CONTACT-GATED row")
 
@@ -158,13 +158,13 @@ class ClaimStatusV2Tests(unittest.TestCase):
 
     def test_internal_fv_tier_mismatch_fails(self) -> None:
         document = copy.deepcopy(self.document)
-        resolution = self.row(document, "reopened", "RQ-03")["disposition"]["resolution"]
+        resolution = self.row(document, "investigations", "RQ-03")["disposition"]["resolution"]
         resolution["result_tier"] = "S"
         self.assert_invalid(document, "FV result tier does not match")
 
     def test_iv_result_identity_is_row_owned(self) -> None:
         document = copy.deepcopy(self.document)
-        resolution = self.row(document, "reopened", "RQ-04")["disposition"]["resolution"]
+        resolution = self.row(document, "investigations", "RQ-04")["disposition"]["resolution"]
         resolution["result_id"] = "IV-W3-01"
         self.assert_invalid(document, "IV result_id must be owned by its row id")
 
@@ -176,6 +176,59 @@ class ClaimStatusV2Tests(unittest.TestCase):
         document = copy.deepcopy(self.document)
         document["routing_role"] = "semantic authority and tier promotion"
         self.assert_invalid(document, "validation-only, no-promotion boundary")
+
+    def test_investigation_authorization_is_required_and_bounded(self) -> None:
+        document = copy.deepcopy(self.document)
+        del document["investigation_authorization"]
+        self.assert_invalid(document, "investigation_authorization history block is required")
+
+        document = copy.deepcopy(self.document)
+        document["investigation_authorization"]["instruction"] = (
+            "The owner instruction promoted every parent claim to truth."
+        )
+        self.assert_invalid(document, "inquiry-only boundary")
+
+        document = copy.deepcopy(self.document)
+        document["investigation_authorization"]["what_it_does_not_do"] = (
+            "The instruction has no stated limit."
+        )
+        self.assert_invalid(document, "preserve counterexamples and refuse truth promotion")
+
+    def test_investigation_fields_and_namespace_are_fail_closed(self) -> None:
+        document = copy.deepcopy(self.document)
+        del self.row(document, "investigations", "RQ-01")["parent_kill_does_not_reach"]
+        self.assert_invalid(document, "missing keys: parent_kill_does_not_reach")
+
+        document = copy.deepcopy(self.document)
+        self.row(document, "investigations", "RQ-01")["investigation_state"] = "OPEN"
+        self.assert_invalid(document, "unknown keys: investigation_state")
+
+    def test_grave_history_is_retained_without_thawing_parent(self) -> None:
+        document = copy.deepcopy(self.document)
+        del self.row(document, "graves", "DF-01")["repair_path"]
+        self.assert_invalid(document, "missing keys: repair_path")
+
+        document = copy.deepcopy(self.document)
+        self.row(document, "graves", "DF-13")["status_before_reopening"] = (
+            "NOT-WELL-POSED"
+        )
+        self.assert_invalid(document, "status_before_reopening drifted")
+
+        document = copy.deepcopy(self.document)
+        self.row(document, "graves", "DF-14")["status_before_reopening"] = (
+            "FORMALLY-REFUTED"
+        )
+        self.assert_invalid(document, "forbidden because this grave was not reopened")
+
+    def test_grave_disposition_remains_exact_and_resolved(self) -> None:
+        document = copy.deepcopy(self.document)
+        disposition = self.row(document, "graves", "DF-01")["disposition"]
+        disposition["target_ids"] = ["GP-99"]
+        self.assert_invalid(document, "merged grave targets must include its recorded successor")
+
+        document = copy.deepcopy(self.document)
+        del self.row(document, "graves", "DF-01")["disposition"]["boundary"]
+        self.assert_invalid(document, "missing keys: boundary")
 
     def test_validated_results_are_inventory_and_digest_bound(self) -> None:
         document = copy.deepcopy(self.document)
@@ -191,10 +244,15 @@ class ClaimStatusV2Tests(unittest.TestCase):
             CHECKER.canonical_contract_sha256(self.document),
         )
 
-    def test_restored_result_owner_must_resolve(self) -> None:
+    def test_typed_survivor_owner_must_resolve(self) -> None:
         document = copy.deepcopy(self.document)
-        self.row(document, "restored", "TR-01")["owner"] = "missing-restored-owner.md"
+        self.row(document, "typed_survivors", "TR-01")["owner"] = "missing-restored-owner.md"
         self.assert_invalid(document, "TR-01.owner: file does not exist")
+
+    def test_typed_survivor_cannot_reuse_a_grave_identity(self) -> None:
+        document = copy.deepcopy(self.document)
+        self.row(document, "typed_survivors", "TR-01")["id"] = "DF-21"
+        self.assert_invalid(document, "ids must look like TR-nn")
 
     def test_count_preserving_status_swap_fails(self) -> None:
         document = copy.deepcopy(self.document)
@@ -206,11 +264,11 @@ class ClaimStatusV2Tests(unittest.TestCase):
     def test_grave_transition_cannot_remain_owner_reopened(self) -> None:
         document = copy.deepcopy(self.document)
         self.row(document, "graves", "DF-04")["status"] = "OWNER-REOPENED"
-        self.assert_invalid(document, "remain unadjudicated")
+        self.assert_invalid(document, "every grave must retain a terminal status")
 
     def test_row_substitution_fails_even_at_constant_count(self) -> None:
         document = copy.deepcopy(self.document)
-        self.row(document, "reopened", "RQ-09")["id"] = "RQ-10"
+        self.row(document, "investigations", "RQ-09")["id"] = "RQ-10"
         self.assert_invalid(document, "RQ inventory drifted")
 
 

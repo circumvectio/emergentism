@@ -22,12 +22,14 @@ parents:
 > action. Bare *Finity* means `Finity_F` unless a local scope says otherwise.
 
 > **G-0 was ruled on 2026-07-29, and this file said "pending" for a day afterwards.**
-> The ruling is exit **B-ii**: `00_THE_FOUNDATION.md` §2 adds a **fourth posit**, `B4`
-> (`⊙ = e`, the identity **posited, not derived** — it had been harvested from notation).
-> It does **not** seat this base over that one or the reverse. Both are posited; each has
-> a stated deficit where the other is strong, and `DF-15` forbids citing either as support
-> for the other. **The stale frontmatter is itself the defect class this corpus documented
-> the same week: a ruling that lands and does not propagate.**
+> The then-written exit **B-ii** recorded a fourth posit as `⊙ = e`. That notation is
+> **withdrawn as a type error**: `⊙` marks `Finity_F`, the realm, while `e` is an identity
+> inside a separately declared `AlgebraWitness`. The current base keeps the selected
+> witness identity without identifying it with a Titan token or a Finity glyph. Neither
+> presentation seats this base over the other; each has a stated deficit where the other
+> is strong, and `DF-15` forbids citing either as support for the other. **The stale
+> formulation is itself the defect class this corpus documented the same week: a ruling
+> that lands and does not propagate.**
 
 > **One primitive. Two operations. Every other reachable value has a word.**
 
@@ -57,15 +59,16 @@ typed group witness and presents the sphere only in a selected construction.
 This document remains a candidate reachability owner, not a correction the
 current Foundation still awaits.
 
-> **Citation repair, 2026-07-30.** This line previously read *"the collision,
-> r180 / G-0"*. **There is no receipt `r180`.** The number was announced in a
-> session summary and never written; the only `180_` file in the corpus is
-> `11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md`,
-> an unrelated April document. A dangling-citation check *passed* the bad
+> **Citation repair, 2026-07-30; namespace update 2026-08-09.** This line
+> previously used the bare prefix 180 for the G-0 collision. At the time there was no matching
+> audit receipt. The later `11_UPLINK/50_AUDITS_AND_EXECUTIONS/180_P3_1_F3_EXTERNAL_RECEIPT_RULING_2026_08_06.md`
+> and the older `11_UPLINK/60_SESSION_PACKETS/180_DEEP_SADHU_CUT_L7_AND_INVARIANT_RESOLUTION_2026_04_25.md`
+> are both unrelated to that announced collision. A dangling-citation check *passed* the bad
 > reference, because the number resolved — to the wrong file. That is the live
-> hazard: 40 receipt files in `50_AUDITS_AND_EXECUTIONS` share a number with
-> another document and declare no supersession, so a numeric citation can
-> resolve and still be false. Cite receipts by **path**, not by number.
+> hazard: 101 prefixes are physically reused across the two live receipt lanes,
+> while the legacy heuristic marks 94 dangerous groups. Neither count makes a
+> bare number safe: a numeric citation can resolve and still be false. Cite
+> receipts by **path**, not by number.
 
 ---
 

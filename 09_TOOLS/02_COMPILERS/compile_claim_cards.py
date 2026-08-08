@@ -13,7 +13,6 @@ import hashlib
 import json
 import os
 import re
-import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -27,11 +26,62 @@ BOOK_MANIFEST_PATH = Path("13_BOOKS/book-manifest.json")
 REGISTER_PATH = Path("00_META/registers/CLAIM_CARD_REGISTER.json")
 GRAPH_PATH = Path("00_META/registers/CLAIM_GRAPH.json")
 LIFECYCLE_PATH = Path("00_META/registers/CLAIM_LIFECYCLE_INVENTORY.json")
+PRIMARY_CHECKOUT_ENV = "EMERGENTISM_PRIMARY_CHECKOUT_ROOT"
+ALLOW_UNAVAILABLE_EXTERNAL_ENV = "EMERGENTISM_ALLOW_UNAVAILABLE_EXTERNAL_SOURCES"
+EXTERNAL_SOURCE_PILLAR = "02_SKYZAI"
 
 CARD_ID = re.compile(r"^[A-Z][A-Z0-9]*\d{2}-\d{2}$")
 WORK_ID = re.compile(r"^BK-[A-Z0-9-]+$")
 DOCKET_ID = re.compile(r"^A[0-7]$")
 COMPOSITION_ID = re.compile(r"^COMP-[A-Z0-9-]+$")
+
+# Disclosure-safe metadata allowlist for private sibling sources. These paths
+# and pins already exist in the checked-in claim cards/book manifest; no source
+# bytes are embedded here. Metadata-only CI may defer byte replay only for these
+# exact contracts and declaring roles. Any new external dependency requires an
+# explicit reviewed compiler change.
+EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
+    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md": (
+        "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9",
+        "frozen",
+        "BK-RECIPROCAL-INFINITE-PLAY",
+        frozenset({"book_manifest"}),
+    ),
+    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md": (
+        "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
+        "legacy",
+        "BK-SARPASYA",
+        frozenset({"claim_card", "book_manifest"}),
+    ),
+    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md": (
+        "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2",
+        "legacy",
+        "BK-SIX-LENSES",
+        frozenset({"claim_card", "book_manifest"}),
+    ),
+    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md": (
+        "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
+        "legacy",
+        "BK-SELF-EATING",
+        frozenset({"claim_card", "book_manifest"}),
+    ),
+    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md": (
+        "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
+        "frozen",
+        "BK-RECIPROCAL-INFINITE-PLAY",
+        frozenset({"claim_card", "book_manifest"}),
+    ),
+    "../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md": (
+        "df8887940ce76d68e1073ee18b197b3a64059fef73ad094128d6143a4a6105d6",
+        "proposal",
+        "BK-EVOLUTIONARY-NETWORK",
+        frozenset({"book_manifest"}),
+    ),
+}
+EXTERNAL_CARD_LOCATOR_INVENTORY_COUNT = 28
+EXTERNAL_CARD_LOCATOR_INVENTORY_SHA256 = (
+    "010e35009ab30cdb089f8fb23451e37a259da0e16e5cde3555b8d09839088258"
+)
 
 ALLOWED_COMPOSITION_CLASSES = {
     "active_book",
@@ -79,6 +129,10 @@ class UnresolvedDeclaredPathError(ContractError):
     """Raised when no file satisfies a declared source path."""
 
 
+class FrozenSourceUnavailableError(UnresolvedDeclaredPathError):
+    """Raised when hash-bound frozen custody is unavailable for validation."""
+
+
 class AmbiguousDeclaredPathError(ContractError):
     """Raised when a portable source declaration has multiple owners."""
 
@@ -119,6 +173,35 @@ def _located_text(lines: list[str], start: int, end: int) -> str:
     return "\n".join(lines[start - 1:end])
 
 
+def _configured_primary_checkout_root() -> Path | None:
+    """Return an explicit full-federation Emergentism checkout, when configured.
+
+    Standalone clones cannot validate source bytes held by a sibling pillar. An
+    authorized local replay may therefore point at a complete, read-only
+    federation. The value is deliberately an Emergentism checkout root (not an
+    arbitrary search directory), and marker files make a wrong or stale
+    configuration fail closed.
+    """
+    raw = os.environ.get(PRIMARY_CHECKOUT_ENV)
+    if raw is None:
+        return None
+    configured_lexical = Path(raw)
+    if not configured_lexical.is_absolute():
+        raise ContractError(f"{PRIMARY_CHECKOUT_ENV} must be an absolute path")
+    configured_lexical = _lexical_absolute(configured_lexical)
+    if configured_lexical.is_symlink():
+        raise ContractError(f"{PRIMARY_CHECKOUT_ENV} may not be a symlink")
+    configured = configured_lexical.resolve()
+    if not configured.is_dir():
+        raise ContractError(f"{PRIMARY_CHECKOUT_ENV} is not a directory: {configured}")
+    markers = (configured / "AGENTS.md", configured / "00_THE_KERNEL_INDEX.md")
+    if any(not marker.is_file() or marker.is_symlink() for marker in markers):
+        raise ContractError(
+            f"{PRIMARY_CHECKOUT_ENV} is not an Emergentism checkout: {configured}"
+        )
+    return configured
+
+
 def _primary_checkout_root(root: Path) -> Path:
     """Return the primary checkout root when ``root`` is a linked Git worktree.
 
@@ -127,41 +210,190 @@ def _primary_checkout_root(root: Path) -> Path:
     Git's ``commondir`` provides a deterministic, local fallback without changing
     the stored path or generated contract.
     """
+    root = root.resolve()
+    configured = _configured_primary_checkout_root()
     dotgit = root / ".git"
     if not dotgit.is_file():
-        return root
+        return configured or root
     try:
         payload = dotgit.read_text(encoding="utf-8").strip()
         if not payload.startswith("gitdir:"):
-            return root
+            return configured or root
         gitdir = Path(payload.split(":", 1)[1].strip())
         if not gitdir.is_absolute():
             gitdir = (root / gitdir).resolve()
         commondir_file = gitdir / "commondir"
         if not commondir_file.is_file():
-            return root
+            return configured or root
         common = Path(commondir_file.read_text(encoding="utf-8").strip())
         if not common.is_absolute():
             common = (gitdir / common).resolve()
-        return common.parent
+        primary = common.parent.resolve()
+        if configured is not None and configured != primary:
+            raise ContractError(
+                f"{PRIMARY_CHECKOUT_ENV} conflicts with linked-worktree primary: "
+                f"{configured} != {primary}"
+            )
+        return primary
     except OSError:
-        return root
+        return configured or root
+
+
+def _lexical_absolute(path: Path) -> Path:
+    """Return an absolute normalized path without following symlinks."""
+    return Path(os.path.abspath(os.fspath(path)))
+
+
+def _reject_symlink_components(path: Path, boundary: Path, label: str) -> None:
+    """Reject symlinks at or below a lexical trust boundary.
+
+    Resolving first would erase the evidence that a path escaped through a
+    symlink. Walk the normalized lexical spelling instead, then callers may
+    resolve and perform a second containment check.
+    """
+    path = _lexical_absolute(path)
+    boundary = _lexical_absolute(boundary)
+    try:
+        relative = path.relative_to(boundary)
+    except ValueError as exc:
+        raise ContractError(f"{label} escapes allowed root {boundary}: {path}") from exc
+    current = boundary
+    if current.is_symlink():
+        raise ContractError(f"{label} uses symlink trust root: {current}")
+    for part in relative.parts:
+        current = current / part
+        if current.is_symlink():
+            raise ContractError(f"{label} uses symlink component: {current}")
+
+
+def _canonical_external_declaration(base: Path, declared: Path) -> str | None:
+    """Normalize one declared path and admit only the Skyzai sibling pillar."""
+    if base.is_absolute() or declared.is_absolute():
+        raise ContractError("external source normalization requires relative paths")
+    normalized = Path(os.path.normpath((base / declared).as_posix()))
+    parts = normalized.parts
+    if not parts or parts[0] != "..":
+        return None
+    if (
+        len(parts) < 3
+        or parts[1] != EXTERNAL_SOURCE_PILLAR
+        or any(part in {"", ".", ".."} for part in parts[2:])
+    ):
+        raise ContractError(
+            "external provenance must escape exactly once into declared sibling "
+            f"{EXTERNAL_SOURCE_PILLAR}: {declared.as_posix()}"
+        )
+    return normalized.as_posix()
+
+
+def _require_registered_external_source(
+    canonical: str,
+    reviewed_sha256: str,
+    lifecycle: str,
+    work_id: str,
+    declaring_role: str,
+) -> None:
+    expected = EXTERNAL_SOURCE_CONTRACTS.get(canonical)
+    observed = (reviewed_sha256, lifecycle, work_id)
+    if expected is None or observed != expected[:3] or declaring_role not in expected[3]:
+        raise ContractError(
+            "external source is not in the reviewed metadata-only inventory: "
+            f"path={canonical}, work_id={work_id}, lifecycle={lifecycle}, "
+            f"role={declaring_role}, sha256={reviewed_sha256}"
+        )
+
+
+def _external_card_locator_inventory_sha256(rows: list[dict[str, Any]]) -> str:
+    ordered = sorted(rows, key=lambda row: (row["source_path"], row["card_id"]))
+    return hashlib.sha256(_canonical_bytes(ordered)).hexdigest()
+
+
+def _authorized_external_roots(root: Path) -> tuple[Path, Path] | None:
+    """Return the explicitly bounded federation and Skyzai roots, if allowed."""
+    root = root.resolve()
+    configured = _configured_primary_checkout_root()
+    primary = _primary_checkout_root(root).resolve()
+    # A standalone clone does not gain authority over an arbitrary neighbour.
+    if configured is None and primary == root:
+        return None
+    federation = primary.parent.resolve()
+    pillar_lexical = federation / EXTERNAL_SOURCE_PILLAR
+    _reject_symlink_components(pillar_lexical, federation, "external pillar")
+    pillar = pillar_lexical.resolve()
+    if not pillar.is_relative_to(federation):
+        raise ContractError(f"external pillar escapes configured federation: {pillar}")
+    return federation, pillar
+
+
+def _bounded_external_candidate(
+    root: Path,
+    base: Path,
+    declared: Path,
+) -> Path | None:
+    """Resolve an exact external declaration inside the one allowed pillar."""
+    canonical = _canonical_external_declaration(base, declared)
+    if canonical is None:
+        return None
+    roots = _authorized_external_roots(root)
+    if roots is None:
+        return None
+    federation, pillar = roots
+    candidate = _lexical_absolute(federation / Path(canonical).relative_to(".."))
+    _reject_symlink_components(candidate, pillar, "external source")
+    resolved = candidate.resolve()
+    if not resolved.is_relative_to(pillar):
+        raise ContractError(f"external source escapes {pillar}: {declared.as_posix()}")
+    return resolved
 
 
 def _resolve_repo_path(root: Path, rel: Path, base: Path = Path(".")) -> Path:
     root = root.resolve()
-    candidate = (root / base / rel).resolve()
-    if candidate.is_relative_to(root):
-        return candidate
-    # External provenance resolves from the primary checkout, never from an
-    # accidental sibling of the linked worktree. It may not escape the
-    # Documents federation that contains the sovereign pillar repositories.
-    primary = _primary_checkout_root(root).resolve()
-    federation = primary.parent.resolve()
-    external = (primary / base / rel).resolve()
-    if not external.is_relative_to(federation):
-        raise ContractError(f"external provenance path escapes the Documents federation: {rel}")
+    candidate_lexical = _lexical_absolute(root / base / rel)
+    if candidate_lexical.is_relative_to(root):
+        _reject_symlink_components(candidate_lexical, root, "repository source")
+        resolved = candidate_lexical.resolve()
+        if not resolved.is_relative_to(root):
+            raise ContractError(f"repository source escapes checkout: {rel.as_posix()}")
+        return resolved
+    external = _bounded_external_candidate(root, base, rel)
+    if external is None:
+        raise UnresolvedDeclaredPathError(
+            f"external provenance unavailable for {rel.as_posix()}; configure "
+            f"{PRIMARY_CHECKOUT_ENV} for exact replay, or explicitly acknowledge "
+            f"metadata-only validation with {ALLOW_UNAVAILABLE_EXTERNAL_ENV}=1"
+        )
     return external
+
+
+def _resolve_internal_corpus_path(
+    root: Path,
+    rel: Path,
+    label: str,
+    base: Path = Path("."),
+    *,
+    allow_normalized_parent_components: bool = False,
+) -> Path:
+    """Resolve a declared path only inside the corpus trust root.
+
+    Root-relative declarations may not contain parent components.  A small
+    number of manifest-relative fields legitimately begin with ``..`` because
+    their base is ``13_BOOKS``; those declarations are admitted only when the
+    lexically normalized candidate still lies inside the corpus.  Resolution
+    then flows through ``_resolve_repo_path`` so direct and ancestor symlinks
+    are rejected before any bytes are read.
+    """
+    root = root.resolve()
+    if rel.is_absolute():
+        raise ContractError(f"{label} must be relative")
+    if not allow_normalized_parent_components and ".." in rel.parts:
+        raise ContractError(f"{label} must be root-relative without parent traversal")
+    candidate_lexical = _lexical_absolute(root / base / rel)
+    if not candidate_lexical.is_relative_to(root):
+        raise ContractError(f"{label} traverses outside the corpus root")
+    resolved = _resolve_repo_path(root, rel, base)
+    if not resolved.is_relative_to(root):
+        raise ContractError(f"{label} resolves outside the corpus root")
+    return resolved
 
 
 def _canonical_corpus_path(root: Path, resolved: Path) -> str:
@@ -175,50 +407,115 @@ def _canonical_corpus_path(root: Path, resolved: Path) -> str:
 
 
 def _resolve_declared_path(root: Path, base: Path, declared: Path) -> Path:
-    """Resolve a corpus path without assuming the checkout is the owner root.
+    """Resolve owned files directly and external files inside one federation.
 
-    Most declarations are repository-relative and resolve directly. A small
-    number intentionally begin with ``..`` because they point to read-only
-    source custody in a sibling pillar. Git worktrees live one directory deeper
-    than the owner checkout, so their direct expansion is not portable. For a
-    parent-relative declaration, collect every existing expansion of the same
-    declared tail across checkout ancestors. Exactly one distinct file must
-    resolve: shadow copies fail closed instead of letting checkout depth choose
-    an owner. The declared string remains the contract and only the uniquely
-    resolved source bytes enter generated output.
+    External declarations are accepted only when their normalized path enters
+    ``02_SKYZAI`` exactly once and an explicit or linked-worktree federation is
+    available. No ancestor scan or arbitrary sibling discovery is permitted.
     """
     root = root.resolve()
     base = base.resolve()
-    direct = (base / declared).resolve()
-    parts = list(declared.parts)
-    while parts and parts[0] == "..":
-        parts.pop(0)
-    parent_relative = bool(parts) and len(parts) < len(declared.parts)
-
-    candidates: dict[str, Path] = {}
-
-    def remember(candidate: Path) -> None:
-        resolved = candidate.resolve()
-        if resolved.is_file():
-            candidates[resolved.as_posix()] = resolved
-
-    remember(direct)
-    if parent_relative:
-        tail = Path(*parts)
-        for ancestor in root.parents:
-            remember(ancestor / tail)
-
-    if len(candidates) == 1:
-        return next(iter(candidates.values()))
-    if len(candidates) > 1:
-        matches = ", ".join(sorted(candidates))
-        raise AmbiguousDeclaredPathError(
-            f"ambiguous declared path {declared.as_posix()!r}: "
-            f"multiple owner candidates resolve: {matches}"
-        )
+    try:
+        base_rel = base.relative_to(root)
+    except ValueError as exc:
+        raise ContractError(f"declared-path base escapes checkout: {base}") from exc
+    direct_lexical = _lexical_absolute(base / declared)
+    if direct_lexical.is_relative_to(root):
+        _reject_symlink_components(direct_lexical, root, "declared source")
+        direct = direct_lexical.resolve()
+        if not direct.is_relative_to(root):
+            raise ContractError(f"declared source escapes checkout: {declared.as_posix()}")
+        if direct.is_file():
+            return direct
+        parent_relative = False
+    else:
+        parent_relative = True
+        external = _bounded_external_candidate(root, base_rel, declared)
+        if external is not None and external.is_file():
+            return external
+    federation_hint = (
+        f"; set {PRIMARY_CHECKOUT_ENV} to an Emergentism checkout inside the "
+        f"federation containing {EXTERNAL_SOURCE_PILLAR} for exact byte replay"
+        if parent_relative
+        else ""
+    )
     raise UnresolvedDeclaredPathError(
         f"unresolved declared path {declared.as_posix()!r} from {base.as_posix()}"
+        f"{federation_hint}; source validation was not skipped"
     )
+
+
+def _resolve_hash_bound_relocation(
+    root: Path,
+    declared: Path,
+    expected_sha256: str,
+    base: Path = Path("."),
+) -> tuple[Path, int] | None:
+    """Resolve moved sibling custody only by exact content identity.
+
+    Topology changes may move a frozen or legacy file while its claim card keeps
+    the reviewed path as provenance. When a full federation checkout is
+    available, search only the declared sibling pillar, require the reviewed
+    SHA-256, and select the unique candidate with the longest common path suffix.
+    A tied best match is an ownership ambiguity and fails closed. The returned
+    count records how many byte-identical custody copies were observed.
+    """
+    if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256):
+        raise ContractError("hash-bound relocation requires a lowercase SHA-256")
+    canonical = _canonical_external_declaration(base, declared)
+    if canonical is None:
+        return None
+    parts = list(Path(canonical).relative_to("..").parts)
+    roots = _authorized_external_roots(root)
+    if roots is None:
+        return None
+    _, pillar = roots
+    if not pillar.is_dir():
+        return None
+
+    matching: list[Path] = []
+    for directory, dirnames, filenames in os.walk(pillar, followlinks=False):
+        directory_path = Path(directory)
+        # Never traverse symlinked directories. A matching-name symlink is an
+        # explicit contract failure rather than an invisible non-match.
+        dirnames[:] = [
+            name for name in dirnames if not (directory_path / name).is_symlink()
+        ]
+        if parts[-1] not in filenames:
+            continue
+        candidate = directory_path / parts[-1]
+        if candidate.is_symlink():
+            raise ContractError(
+                f"hash-bound relocation rejects symlink source: {candidate}"
+            )
+        _reject_symlink_components(candidate, pillar, "hash-bound relocation")
+        resolved = candidate.resolve()
+        if not resolved.is_relative_to(pillar):
+            raise ContractError(f"hash-bound relocation escapes {pillar}: {candidate}")
+        if resolved.is_file() and _sha256(resolved) == expected_sha256:
+            matching.append(resolved)
+    matching.sort(key=lambda candidate: candidate.as_posix())
+    if not matching:
+        return None
+
+    def suffix_score(candidate: Path) -> int:
+        score = 0
+        for expected, actual in zip(reversed(parts), reversed(candidate.parts)):
+            if expected != actual:
+                break
+            score += 1
+        return score
+
+    scores = {candidate: suffix_score(candidate) for candidate in matching}
+    best_score = max(scores.values())
+    best = [candidate for candidate, score in scores.items() if score == best_score]
+    if len(best) != 1:
+        matches = ", ".join(candidate.as_posix() for candidate in best)
+        raise AmbiguousDeclaredPathError(
+            f"hash-bound relocation for {declared.as_posix()!r} has multiple "
+            f"equally specific custody paths at SHA-256 {expected_sha256}: {matches}"
+        )
+    return best[0], len(matching)
 
 
 def _require_string(value: Any, label: str) -> str:
@@ -253,8 +550,40 @@ def _assert_acyclic(nodes: Iterable[str], edges: dict[str, list[str]], label: st
         visit(node, [])
 
 
-def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+def _inferred_manifest_lifecycle(work: dict[str, Any]) -> str:
+    """Infer the legacy string-source lifecycle from a work release state.
+
+    New historical-source records carry an explicit lifecycle and hash. This
+    inference remains only for older string entries that can be joined to an
+    already hash-pinned claim-card source for the same work; it never supplies a
+    missing content pin.
+    """
+    state = str(work.get("release_state", ""))
+    if "frozen" in state:
+        return "frozen"
+    if "historical_readonly" in state:
+        return "legacy"
+    if "external_runtime" in state or "proposal" in state:
+        return "proposal"
+    if "projection" in state:
+        return "projection"
+    return "active"
+
+
+def compile_contract(
+    root: Path = ROOT,
+    allow_unavailable_external: bool | None = None,
+) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     root = root.resolve()
+    if allow_unavailable_external is None:
+        raw_allow = os.environ.get(ALLOW_UNAVAILABLE_EXTERNAL_ENV)
+        if raw_allow not in {None, "0", "1"}:
+            raise ContractError(
+                f"{ALLOW_UNAVAILABLE_EXTERNAL_ENV} must be exactly 0 or 1"
+            )
+        allow_unavailable_external = raw_allow == "1"
+    elif not isinstance(allow_unavailable_external, bool):
+        raise ContractError("allow_unavailable_external must be boolean")
     schema = _read_json_yaml(root / SCHEMA_PATH)
     dockets_doc = _read_json_yaml(root / DOCKET_PATH)
     book_manifest = _read_json_yaml(root / BOOK_MANIFEST_PATH)
@@ -327,6 +656,7 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
     sources: dict[str, dict[str, Any]] = {}
     card_edges: dict[str, list[str]] = {}
     work_cards: dict[str, list[str]] = defaultdict(list)
+    external_card_locator_inventory: list[dict[str, Any]] = []
     lifecycle_enum = set(enums.get("source_lifecycle", []))
     type_enum = set(enums.get("claim_type", []))
     tier_enum = set(enums.get("evidence_tier", []))
@@ -348,36 +678,104 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
         if missing_source:
             raise ContractError(f"{path}: source missing fields: {', '.join(missing_source)}")
         source_rel = Path(_require_string(source.get("path"), f"{path}:source.path"))
-        source_path = _resolve_declared_path(root, root, source_rel)
-        if not source_path.is_file():
-            raise ContractError(f"{path}: missing source {source_rel}")
         reviewed_source_sha256 = _require_string(
             source.get("reviewed_source_sha256"), f"{path}:source.reviewed_source_sha256"
         )
         if not re.fullmatch(r"[0-9a-f]{64}", reviewed_source_sha256):
             raise ContractError(f"{path}: reviewed_source_sha256 must be a lowercase SHA-256")
-        actual_source_sha256 = _sha256(source_path)
-        if reviewed_source_sha256 != actual_source_sha256:
-            raise ContractError(
-                f"{path}: source revision changed for {source_rel}; review and update reviewed_source_sha256"
-            )
         lifecycle = _require_string(source.get("lifecycle"), f"{path}:source.lifecycle")
         if lifecycle not in lifecycle_enum:
             raise ContractError(f"{path}: invalid source lifecycle {lifecycle}")
+        external_canonical = _canonical_external_declaration(Path("."), source_rel)
+        if external_canonical is not None:
+            _require_registered_external_source(
+                external_canonical,
+                reviewed_source_sha256,
+                lifecycle,
+                work_id,
+                "claim_card",
+            )
+        custody_resolution = "declared_path"
+        relocation_match_count = 0
+        source_path: Path | None = None
+        unavailable_external = False
+        try:
+            source_path = _resolve_declared_path(root, root, source_rel)
+        except UnresolvedDeclaredPathError as exc:
+            relocated = _resolve_hash_bound_relocation(
+                root, source_rel, reviewed_source_sha256
+            )
+            authorized_external = (
+                _authorized_external_roots(root)
+                if external_canonical is not None
+                else None
+            )
+            if relocated is not None:
+                source_path, relocation_match_count = relocated
+                custody_resolution = "hash_bound_relocation"
+            elif (
+                external_canonical is not None
+                and allow_unavailable_external
+                and authorized_external is None
+            ):
+                unavailable_external = True
+                custody_resolution = "external_unavailable"
+            elif external_canonical is not None and authorized_external is not None:
+                raise ContractError(
+                    f"{path}: configured {EXTERNAL_SOURCE_PILLAR} custody does not contain "
+                    f"the exact reviewed bytes for {source_rel}; expected SHA-256 "
+                    f"{reviewed_source_sha256}"
+                ) from exc
+            elif lifecycle == "frozen":
+                raise FrozenSourceUnavailableError(
+                    f"{path}: hash-bound frozen source unavailable: {source_rel}; "
+                    f"expected SHA-256 {reviewed_source_sha256}; provide the declared "
+                    f"custody via {PRIMARY_CHECKOUT_ENV}; validation was not skipped"
+                ) from exc
+            else:
+                raise
+        if source_path is not None and not source_path.is_file():
+            raise ContractError(f"{path}: missing source {source_rel}")
+        actual_source_sha256 = (
+            reviewed_source_sha256 if unavailable_external else _sha256(source_path)
+        )
+        if not unavailable_external and reviewed_source_sha256 != actual_source_sha256:
+            raise ContractError(
+                f"{path}: source revision changed for {source_rel}; review and update reviewed_source_sha256"
+            )
         source_key = source_rel.as_posix()
         if source_key in sources and sources[source_key]["work_id"] != work_id:
             raise ContractError(f"{source_rel}: declared by multiple work IDs")
-        source_lines = source_path.read_text(encoding="utf-8").splitlines()
-        sources[source_key] = {
+        source_lines = (
+            None
+            if unavailable_external
+            else source_path.read_text(encoding="utf-8").splitlines()
+        )
+        source_row = {
             "work_id": work_id,
             "path": source_key,
             "lifecycle": lifecycle,
             "role": _require_string(source.get("role"), f"{path}:source.role"),
             "sha256": actual_source_sha256,
-            "line_count": len(source_lines),
-            "resolved_path": source_path.resolve().as_posix(),
-            "external_readonly": not source_path.is_relative_to(root),
+            "resolved_path": (
+                (external_canonical or source_key)
+                if unavailable_external
+                else source_path.resolve().as_posix()
+            ),
+            "lifecycle_key": (
+                external_canonical
+                if external_canonical is not None
+                else source_path.resolve().as_posix()
+            ),
+            "canonical_path": source_key,
+            "external_readonly": external_canonical is not None,
+            "content_available": not unavailable_external,
+            "custody_resolution": custody_resolution,
+            "relocation_match_count": relocation_match_count,
         }
+        if external_canonical is None:
+            source_row["line_count"] = len(source_lines)
+        sources[source_key] = source_row
         for card in _require_list(document.get("cards"), f"{path}:cards"):
             if not isinstance(card, dict):
                 raise ContractError(f"{path}: every card must be an object")
@@ -398,18 +796,27 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
                 raise ContractError(f"{card_id}: locator missing fields: {', '.join(missing_locator)}")
             start = locator.get("line_start")
             end = locator.get("line_end")
-            if not isinstance(start, int) or not isinstance(end, int) or start < 1 or end < start or end > len(source_lines):
+            if (
+                not isinstance(start, int)
+                or not isinstance(end, int)
+                or start < 1
+                or end < start
+                or (source_lines is not None and end > len(source_lines))
+            ):
                 raise ContractError(f"{card_id}: invalid source line range {start}-{end} for {source_rel}")
-            _require_string(locator.get("section"), f"{card_id}.locator.section")
+            section = _require_string(locator.get("section"), f"{card_id}.locator.section")
             anchor = _require_string(locator.get("anchor"), f"{card_id}.locator.anchor")
-            located_text = _located_text(source_lines, start, end)
-            if anchor not in located_text:
-                raise ContractError(f"{card_id}: locator anchor is absent from the declared source slice")
             fingerprint = _require_string(
                 locator.get("fingerprint_sha256"), f"{card_id}.locator.fingerprint_sha256"
             )
-            if fingerprint != _text_sha256(located_text):
-                raise ContractError(f"{card_id}: locator fingerprint does not match the declared source slice")
+            if not re.fullmatch(r"[0-9a-f]{64}", fingerprint):
+                raise ContractError(f"{card_id}: locator fingerprint must be a lowercase SHA-256")
+            if source_lines is not None:
+                located_text = _located_text(source_lines, start, end)
+                if anchor not in located_text:
+                    raise ContractError(f"{card_id}: locator anchor is absent from the declared source slice")
+                if fingerprint != _text_sha256(located_text):
+                    raise ContractError(f"{card_id}: locator fingerprint does not match the declared source slice")
             claim_type = _require_string(card.get("claim_type"), f"{card_id}.claim_type")
             if claim_type not in type_enum:
                 raise ContractError(f"{card_id}: invalid claim type {claim_type}")
@@ -475,7 +882,11 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
                 receipt_rel = Path(_require_string(receipt_value, f"{card_id}.review.receipt"))
                 if receipt_rel.is_absolute() or ".." in receipt_rel.parts:
                     raise ContractError(f"{card_id}: review receipt must be a root-relative corpus path")
-                receipt_path = (root / receipt_rel).resolve()
+                receipt_path = _resolve_internal_corpus_path(
+                    root,
+                    receipt_rel,
+                    f"{card_id}: review receipt",
+                )
                 if not receipt_path.is_file():
                     raise ContractError(f"{card_id}: missing review receipt {receipt_rel.as_posix()}")
                 resolved_receipts.append(receipt_path)
@@ -484,6 +895,7 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
             if (
                 review_state in AUDIT_RECEIPT_REQUIRED_STATES
                 and len(resolved_receipts) == 1
+                and source_path is not None
                 and resolved_receipts[0] == source_path.resolve()
             ):
                 raise ContractError(
@@ -491,6 +903,17 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
                 )
             if public_state == "bounded_current" and (review_state in {"typed", "l1_flagged"} or not receipts):
                 raise ContractError(f"{card_id}: bounded current wording requires L2-or-later review and a receipt")
+            if external_canonical is not None:
+                external_card_locator_inventory.append({
+                    "anchor": anchor,
+                    "card_id": card_id,
+                    "fingerprint_sha256": fingerprint,
+                    "line_end": end,
+                    "line_start": start,
+                    "section": section,
+                    "source_path": external_canonical,
+                    "work_id": work_id,
+                })
             cards[card_id] = {
                 **card,
                 "source": {
@@ -503,6 +926,44 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
             }
             card_edges[card_id] = dependencies
             work_cards[work_id].append(card_id)
+
+    expected_external_card_works = {
+        contract[2]
+        for contract in EXTERNAL_SOURCE_CONTRACTS.values()
+        if "claim_card" in contract[3]
+    }
+    raw_manifest_works = book_manifest.get("works")
+    declared_manifest_work_ids = (
+        {
+            work.get("work_id")
+            for work in raw_manifest_works
+            if isinstance(work, dict) and isinstance(work.get("work_id"), str)
+        }
+        if isinstance(raw_manifest_works, list)
+        else set()
+    )
+    if external_card_locator_inventory or (
+        expected_external_card_works & declared_manifest_work_ids
+    ):
+        if not expected_external_card_works.issubset(declared_manifest_work_ids):
+            raise ContractError(
+                "external card locator inventory has a partial work binding"
+            )
+        inventory_sha256 = _external_card_locator_inventory_sha256(
+            external_card_locator_inventory
+        )
+        if (
+            len(external_card_locator_inventory)
+            != EXTERNAL_CARD_LOCATOR_INVENTORY_COUNT
+            or inventory_sha256 != EXTERNAL_CARD_LOCATOR_INVENTORY_SHA256
+        ):
+            raise ContractError(
+                "external card locator semantic inventory changed: "
+                f"count={len(external_card_locator_inventory)}, "
+                f"sha256={inventory_sha256}; expected "
+                f"count={EXTERNAL_CARD_LOCATOR_INVENTORY_COUNT}, "
+                f"sha256={EXTERNAL_CARD_LOCATOR_INVENTORY_SHA256}"
+            )
 
     for card_id, dependencies in card_edges.items():
         for dependency in dependencies:
@@ -561,42 +1022,197 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
         owners = _require_list(work.get("owner_ids"), f"{work_id}.owner_ids")
         if any(owner not in owner_registry for owner in owners):
             raise ContractError(f"{work_id}: invalid owner id")
-        lifecycle = _inferred_manifest_lifecycle(work)
-        for source_rel_value in _require_list(work.get("historical_sources"), f"{work_id}.historical_sources"):
-            source_rel = Path(_require_string(source_rel_value, f"{work_id}.historical_source"))
-            source_path = _resolve_declared_path(
-                root,
-                root / BOOK_MANIFEST_PATH.parent,
-                source_rel,
+        if len(owners) != len(set(owners)):
+            raise ContractError(f"{work_id}: duplicate owner id")
+        expected_owners = {cards[card_id]["semantic_owner_id"] for card_id in declared_cards}
+        if set(owners) != expected_owners:
+            raise ContractError(
+                f"{work_id}: owner_ids must equal semantic-owner projection; "
+                f"expected={sorted(expected_owners)}, found={sorted(set(owners))}"
             )
-            if not source_path.is_file():
+        inferred_lifecycle = _inferred_manifest_lifecycle(work)
+        pinned_sources = {
+            Path(source["resolved_path"]).resolve().as_posix(): source
+            for source in sources.values()
+            if source["work_id"] == work_id
+        }
+        for raw_source in _require_list(
+            work.get("historical_sources"), f"{work_id}.historical_sources"
+        ):
+            source_record: dict[str, Any] | None
+            if isinstance(raw_source, dict):
+                source_record = raw_source
+                source_rel_value = _require_string(
+                    source_record.get("path"), f"{work_id}.historical_source.path"
+                )
+            else:
+                source_record = None
+                source_rel_value = _require_string(raw_source, f"{work_id}.historical_source")
+            source_rel = Path(source_rel_value)
+            if source_rel.is_absolute():
+                raise ContractError(f"{work_id}: historical source paths must be manifest-relative")
+            external_canonical = _canonical_external_declaration(
+                BOOK_MANIFEST_PATH.parent, source_rel
+            )
+            custody_resolution = "declared_path"
+            relocation_match_count = 0
+            unavailable_external = False
+            pinned: dict[str, Any] | None = None
+            if source_record is not None:
+                reviewed_sha256 = _require_string(
+                    source_record.get("reviewed_source_sha256"),
+                    f"{work_id}.historical_source.reviewed_source_sha256",
+                )
+                if not re.fullmatch(r"[0-9a-f]{64}", reviewed_sha256):
+                    raise ContractError(
+                        f"{work_id}: historical source pin must be a lowercase SHA-256"
+                    )
+                lifecycle = _require_string(
+                    source_record.get("lifecycle"), f"{work_id}.historical_source.lifecycle"
+                )
+                if lifecycle not in lifecycle_enum:
+                    raise ContractError(
+                        f"{work_id}: invalid historical source lifecycle {lifecycle}"
+                    )
+            else:
+                reviewed_sha256 = ""
+                lifecycle = inferred_lifecycle
+
+            source_path: Path | None = None
+            try:
+                source_path = _resolve_repo_path(
+                    root, source_rel, BOOK_MANIFEST_PATH.parent
+                )
+            except UnresolvedDeclaredPathError:
+                source_path = None
+            if source_path is not None and source_path.is_file():
+                pinned = pinned_sources.get(source_path.resolve().as_posix())
+            elif source_record is not None:
+                relocated = _resolve_hash_bound_relocation(
+                    root,
+                    source_rel,
+                    reviewed_sha256,
+                    BOOK_MANIFEST_PATH.parent,
+                )
+                authorized_external = (
+                    _authorized_external_roots(root)
+                    if external_canonical is not None
+                    else None
+                )
+                if relocated is not None:
+                    source_path, relocation_match_count = relocated
+                    custody_resolution = "hash_bound_relocation"
+                elif (
+                    external_canonical is not None
+                    and allow_unavailable_external
+                    and authorized_external is None
+                ):
+                    unavailable_external = True
+                    custody_resolution = "external_unavailable"
+                elif external_canonical is not None and authorized_external is not None:
+                    raise ContractError(
+                        f"{work_id}: configured {EXTERNAL_SOURCE_PILLAR} custody does not "
+                        f"contain the exact reviewed bytes for {source_rel_value}; expected "
+                        f"SHA-256 {reviewed_sha256}"
+                    )
+                else:
+                    raise ContractError(
+                        f"{work_id}: hash-bound historical source unavailable: "
+                        f"{source_rel_value}; expected SHA-256 {reviewed_sha256}; "
+                        "validation was not skipped"
+                    )
+            elif source_record is None:
+                pinned_by_name = [
+                    source
+                    for source in pinned_sources.values()
+                    if Path(source["canonical_path"]).name == source_rel.name
+                ]
+                if len(pinned_by_name) == 1:
+                    pinned = pinned_by_name[0]
+                    unavailable_external = not bool(
+                        pinned.get("content_available", True)
+                    )
+                    source_path = (
+                        None
+                        if unavailable_external
+                        else Path(pinned["resolved_path"])
+                    )
+                    custody_resolution = _require_string(
+                        pinned.get("custody_resolution"),
+                        f"{work_id}.historical_source.custody_resolution",
+                    )
+                    relocation_match_count = int(
+                        pinned.get("relocation_match_count", 0)
+                    )
+
+            if source_record is None:
+                if pinned is None:
+                    raise ContractError(
+                        f"{work_id}: legacy string historical source lacks hash-bound "
+                        f"claim-card custody: {source_rel_value}; inferred lifecycle "
+                        f"{inferred_lifecycle!r} is diagnostic only; migrate this entry "
+                        "to a pinned object"
+                    )
+                reviewed_sha256 = _require_string(
+                    pinned.get("sha256"), f"{work_id}.historical_source.derived_sha256"
+                )
+                lifecycle = _require_string(
+                    pinned.get("lifecycle"), f"{work_id}.historical_source.derived_lifecycle"
+                )
+            if external_canonical is not None:
+                _require_registered_external_source(
+                    external_canonical,
+                    reviewed_sha256,
+                    lifecycle,
+                    work_id,
+                    "book_manifest",
+                )
+            if not unavailable_external and (source_path is None or not source_path.is_file()):
                 raise ContractError(f"{work_id}: missing historical source {source_rel_value}")
-            reviewed_sha256 = _require_string(
-                source_record.get("reviewed_source_sha256"),
-                f"{work_id}.historical_source.reviewed_source_sha256",
-            )
-            if not re.fullmatch(r"[0-9a-f]{64}", reviewed_sha256):
-                raise ContractError(f"{work_id}: historical source pin must be a lowercase SHA-256")
-            actual_sha256 = _sha256(source_path)
-            if reviewed_sha256 != actual_sha256:
+            actual_sha256 = reviewed_sha256 if unavailable_external else _sha256(source_path)
+            if not unavailable_external and reviewed_sha256 != actual_sha256:
                 raise ContractError(f"{work_id}: historical source revision changed: {source_rel_value}")
-            lifecycle = _require_string(
-                source_record.get("lifecycle"), f"{work_id}.historical_source.lifecycle"
-            )
-            if lifecycle not in lifecycle_enum:
-                raise ContractError(f"{work_id}: invalid historical source lifecycle {lifecycle}")
-            manifest_sources.append({
+            canonical_path = Path(
+                os.path.normpath((BOOK_MANIFEST_PATH.parent / source_rel).as_posix())
+            ).as_posix()
+            manifest_source = {
                 "work_id": work_id,
                 "path": source_rel_value,
+                "canonical_path": canonical_path,
                 "lifecycle": lifecycle,
                 "sha256": actual_sha256,
-                "external_readonly": not source_path.is_relative_to(root),
+                "external_readonly": external_canonical is not None,
                 "role": "historical_source",
-                "resolved_path": source_path.resolve().as_posix(),
-            })
+                "resolved_path": (
+                    canonical_path
+                    if unavailable_external
+                    else source_path.resolve().as_posix()
+                ),
+                "lifecycle_key": (
+                    external_canonical
+                    if external_canonical is not None
+                    else source_path.resolve().as_posix()
+                ),
+            }
+            if custody_resolution == "hash_bound_relocation":
+                manifest_source["custody_resolution"] = custody_resolution
+                manifest_source["relocation_match_count"] = relocation_match_count
+            manifest_sources.append(manifest_source)
         public_route = work.get("public_route")
         if public_route is not None:
-            public_path = (root / BOOK_MANIFEST_PATH.parent / Path(_require_string(public_route, f"{work_id}.public_route"))).resolve()
+            public_rel = Path(_require_string(public_route, f"{work_id}.public_route"))
+            public_path = _resolve_internal_corpus_path(
+                root,
+                public_rel,
+                f"{work_id}: public route",
+                BOOK_MANIFEST_PATH.parent,
+                allow_normalized_parent_components=True,
+            )
+            public_root = (root / "12_PUBLIC_SITE").resolve()
+            if not public_path.is_relative_to(public_root):
+                raise ContractError(
+                    f"{work_id}: public route must remain inside 12_PUBLIC_SITE"
+                )
             if not public_path.is_file():
                 raise ContractError(f"{work_id}: missing public route {public_route}")
         provenance = work.get("build_provenance")
@@ -668,7 +1284,11 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
         ))
         if confirmation_rel.is_absolute() or ".." in confirmation_rel.parts:
             raise ContractError("editorial_architecture: confirmation receipt must be corpus-relative")
-        confirmation_path = (root / confirmation_rel).resolve()
+        confirmation_path = _resolve_internal_corpus_path(
+            root,
+            confirmation_rel,
+            "editorial_architecture: confirmation receipt",
+        )
         if not confirmation_path.is_file():
             raise ContractError("editorial_architecture: missing confirmation receipt")
         confirmation_sha = _require_string(
@@ -829,8 +1449,22 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
             row.get("existing_edition_disposition"), "edition_disposition.existing_edition_disposition"
         )
         if disposition.startswith("superseded_"):
-            successor_path = root / _require_string(row.get("successor_path"), "edition_disposition.successor_path")
-            gate_receipt = root / _require_string(row.get("gate_receipt"), "edition_disposition.gate_receipt")
+            successor_rel = Path(_require_string(
+                row.get("successor_path"), "edition_disposition.successor_path"
+            ))
+            gate_receipt_rel = Path(_require_string(
+                row.get("gate_receipt"), "edition_disposition.gate_receipt"
+            ))
+            successor_path = _resolve_internal_corpus_path(
+                root,
+                successor_rel,
+                "edition_disposition.successor_path",
+            )
+            gate_receipt = _resolve_internal_corpus_path(
+                root,
+                gate_receipt_rel,
+                "edition_disposition.gate_receipt",
+            )
             if not successor_path.is_file() or not gate_receipt.is_file():
                 raise ContractError("superseded edition requires an existing successor and gate receipt")
         elif disposition not in ALLOWED_EDITION_DISPOSITIONS:
@@ -958,8 +1592,13 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
 
     lifecycle_by_resolved_path: dict[str, dict[str, Any]] = {}
     for row in list(sources.values()) + manifest_sources:
-        resolved_key = _require_string(row.get("resolved_path"), "lifecycle_source.resolved_path")
-        canonical_path = _canonical_corpus_path(root, Path(resolved_key))
+        resolved_key = _require_string(
+            row.get("lifecycle_key") or row.get("resolved_path"),
+            "lifecycle_source.lifecycle_key",
+        )
+        canonical_path = row.get("canonical_path") or _canonical_corpus_path(
+            root, Path(resolved_key)
+        )
         normalized = {
             "work_id": row["work_id"],
             "path": canonical_path,
@@ -968,14 +1607,28 @@ def compile_contract(root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any],
             "external_readonly": row["external_readonly"],
             "roles": [row["role"]],
         }
+        if row["external_readonly"]:
+            normalized["byte_validation"] = (
+                "exact_sha256_when_authorized_federation_available; "
+                "explicit_unavailable_mode_validates_metadata_only"
+            )
         if "line_count" in row:
             normalized["line_count"] = row["line_count"]
         existing = lifecycle_by_resolved_path.get(resolved_key)
         if existing is None:
             lifecycle_by_resolved_path[resolved_key] = normalized
             continue
-        for field in ("work_id", "path", "lifecycle", "sha256", "external_readonly"):
-            if existing[field] != normalized[field]:
+        for field in (
+            "work_id",
+            "path",
+            "lifecycle",
+            "sha256",
+            "external_readonly",
+            "byte_validation",
+        ):
+            if field not in existing and field not in normalized:
+                continue
+            if existing.get(field) != normalized.get(field):
                 raise ContractError(
                     f"lifecycle source conflict for {canonical_path}: {field} "
                     f"{existing[field]!r} != {normalized[field]!r}"

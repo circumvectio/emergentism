@@ -29,17 +29,25 @@ by file and line so a repair can land without guessing.
 
 Mutation tests (run with --test-mutations):
   MUT-1  a literal `D6≡D0` is introduced into a clean surface    -> FAIL
-  MUT-2  the fence is bypassed by an untracked-file write        -> not the fence's job
+  MUT-2  a literal is written to a new/untracked live Markdown   -> FAIL
   MUT-3  a tilde form is changed to a literal form               -> FAIL
   MUT-4  the canonical owner file is set but the canonical
          statement is missing                                    -> FAIL
+  MUT-5  one byte changes in a frozen historical handoff         -> FAIL
+  MUT-6  a new literal is appended beyond the frozen body        -> FAIL
+  MUT-7  a frozen handoff is reached through a symlinked parent  -> FAIL
 
 """
 
 from __future__ import annotations
 
+import hashlib
+import os
 import re
+import shutil
 import sys
+import tempfile
+from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -50,6 +58,43 @@ ROOT = Path(__file__).resolve().parents[2]
 # that file's canonical quoted statement is present. Leave None to enforce the
 # default strict stance.
 CANONICAL_OWNER_FILE: str | None = None
+
+
+@dataclass(frozen=True)
+class FrozenHistoricalSurface:
+    """Exact custody for a dated handoff that quotes the rejected relation.
+
+    These are not canonical-owner exceptions. They are immutable historical
+    bodies whose quoted mutation/retraction evidence predates this repair. A
+    whole-file digest makes the exception byte-exact: changing even unrelated
+    prose, changing an occurrence, or appending a new occurrence revokes it.
+    """
+
+    sha256: str
+    literal_occurrences: int
+    required_local_markers: tuple[str, ...]
+
+
+FROZEN_HISTORICAL_SURFACES: dict[str, FrozenHistoricalSurface] = {
+    "00_HANDOFF/GATE_MUTATION_REPORT_2026_08_06.md": FrozenHistoricalSurface(
+        sha256="6b494abbc3763c59977aed710ecdc2f40f7b8c68ecf81a4a8325fa3b367aabdd",
+        literal_occurrences=4,
+        required_local_markers=(
+            "type: emergentism-verification-report",
+            "### 2.18 `check_d6_equiv_d0.py`",
+            "`X D6≡D0 Y`",
+        ),
+    ),
+    "00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md": FrozenHistoricalSurface(
+        sha256="2a7cd9b5d395d178f8bf9cfb158dee9d475f4b6e892927daf5fcf30d3bf6a49b",
+        literal_occurrences=5,
+        required_local_markers=(
+            "type: new-findings-audit",
+            "**The literal equation `D6≡D0` is dead**",
+            "D6≡D0 retraction argument",
+        ),
+    ),
+}
 
 # --- Pattern definitions ------------------------------------------------------
 # LITERAL: any of ≡ = ↔ ≅, in either direction, with or without spaces.
@@ -111,11 +156,90 @@ def is_live(path: Path) -> bool:
     return not (parts & SKIP_DIRS)
 
 
-def check_live_surfaces() -> list[str]:
+def frozen_path_custody_error(root: Path, path: Path, rel: str) -> str | None:
+    """Reject symlink components and resolved escapes before reading bytes."""
+
+    lexical_root = Path(os.path.abspath(os.fspath(root)))
+    lexical_path = Path(os.path.abspath(os.fspath(path)))
+    try:
+        parts = lexical_path.relative_to(lexical_root).parts
+    except ValueError:
+        return f"{rel}: frozen historical custody path escapes scan root"
+    current = lexical_root
+    if current.is_symlink():
+        return f"{rel}: frozen historical custody scan root is a symlink"
+    for part in parts:
+        current = current / part
+        if current.is_symlink():
+            return (
+                f"{rel}: frozen historical custody uses symlink component: "
+                f"{current}"
+            )
+    try:
+        lexical_path.resolve(strict=True).relative_to(lexical_root.resolve(strict=True))
+    except (FileNotFoundError, RuntimeError, ValueError):
+        return f"{rel}: frozen historical custody path is missing or escapes scan root"
+    return None
+
+
+def check_frozen_historical_surfaces(root: Path) -> tuple[list[str], set[str]]:
+    """Return custody errors and the exact historical bodies they permit.
+
+    The path, regular-file shape, complete bytes, literal-occurrence count, and
+    local historical/retraction markers are all bound. The whole-file digest is
+    the controlling boundary; the other checks make its intended semantics
+    explicit in diagnostics and tests.
+    """
+
     errors: list[str] = []
+    permitted: set[str] = set()
+    for rel, frozen in FROZEN_HISTORICAL_SURFACES.items():
+        path = root / rel
+        local_errors: list[str] = []
+        custody_error = frozen_path_custody_error(root, path, rel)
+        if custody_error is not None:
+            local_errors.append(custody_error)
+        elif not path.is_file():
+            local_errors.append(f"{rel}: frozen historical custody file is missing")
+        else:
+            blob = path.read_bytes()
+            actual_sha256 = hashlib.sha256(blob).hexdigest()
+            if actual_sha256 != frozen.sha256:
+                local_errors.append(
+                    f"{rel}: frozen historical SHA-256 drift "
+                    f"(expected {frozen.sha256}, got {actual_sha256})"
+                )
+            try:
+                text = blob.decode("utf-8")
+            except UnicodeDecodeError as exc:
+                local_errors.append(f"{rel}: frozen historical body is not UTF-8: {exc}")
+            else:
+                occurrence_count = len(tuple(LITERAL_RE.finditer(text)))
+                if occurrence_count != frozen.literal_occurrences:
+                    local_errors.append(
+                        f"{rel}: frozen historical literal-occurrence drift "
+                        f"(expected {frozen.literal_occurrences}, got {occurrence_count})"
+                    )
+                for marker in frozen.required_local_markers:
+                    if marker not in text:
+                        local_errors.append(
+                            f"{rel}: frozen historical/retraction marker missing: {marker!r}"
+                        )
+        if local_errors:
+            errors.extend(local_errors)
+        else:
+            permitted.add(rel)
+    return errors, permitted
+
+
+def check_live_surfaces(root: Path | None = None) -> list[str]:
+    scan_root = ROOT if root is None else root
+    errors: list[str] = []
+    custody_errors, frozen_historical = check_frozen_historical_surfaces(scan_root)
+    errors.extend(custody_errors)
     canonical_text: str | None = None
     if CANONICAL_OWNER_FILE is not None:
-        canonical_path = ROOT / CANONICAL_OWNER_FILE
+        canonical_path = scan_root / CANONICAL_OWNER_FILE
         if canonical_path.exists():
             canonical_text = canonical_path.read_text(encoding="utf-8")
         else:
@@ -123,14 +247,19 @@ def check_live_surfaces() -> list[str]:
                 f"CANONICAL_OWNER_FILE={CANONICAL_OWNER_FILE!r} but the file is missing"
             )
 
-    for md in ROOT.rglob("*.md"):
+    for md in scan_root.rglob("*.md"):
         if not is_live(md):
             continue
         try:
             text = md.read_text(encoding="utf-8")
         except UnicodeDecodeError:
             continue
-        rel = str(md.relative_to(ROOT))
+        rel = str(md.relative_to(scan_root))
+        # Exact dated handoffs are permitted as complete historical bodies, not
+        # as directory- or file-wide semantic exemptions. Any byte drift above
+        # removes the path from this set and the ordinary literal scan resumes.
+        if rel in frozen_historical:
+            continue
         # If this is the canonical owner file, scan the rest of the file
         # (anything outside the canonical quoted statement) for the literal
         # form. The canonical statement itself is permitted; nothing else is.
@@ -162,11 +291,10 @@ def check_live_surfaces() -> list[str]:
 
 # --- Mutation tests -----------------------------------------------------------
 def test_mutations() -> int:
-    """Run the four documented mutations and verify they fire correctly."""
+    """Run the seven documented mutations and verify they fire correctly."""
     failures: list[str] = []
-    scratch = Path("/tmp/_d6d0_fence_test")
-    scratch.mkdir(exist_ok=True)
-    try:
+    with tempfile.TemporaryDirectory(prefix="d6d0_fence_test_") as tmp:
+        scratch = Path(tmp)
         # MUT-1: a literal D6≡D0 in a clean surface -> the line itself fails the
         # core check. No need to write a file; just assert the regex matches the
         # right thing.
@@ -195,25 +323,95 @@ def test_mutations() -> int:
             failures.append("MUT-4: missing canonical owner file did not raise")
         globals()["CANONICAL_OWNER_FILE"] = original
 
-        # MUT-1 end-to-end: a clean surface that contains the literal form
-        # should produce a check error. (Done by construction above; also assert
-        # the regex returns a non-None match on the offending line.)
+        # MUT-1 sanity: the compact closure wording itself must match.
         offending = "the cycle returns: D6≡D0 (closure)"
         m = LITERAL_RE.search(offending)
         if not m:
             failures.append("MUT-1: offending line did not match the literal regex")
+
+        # Build a minimal exact-custody tree. Its dated bodies must pass before
+        # either custody mutation is seeded.
+        for rel in FROZEN_HISTORICAL_SURFACES:
+            source = ROOT / rel
+            target = scratch / rel
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+        clean_surface = scratch / "00_THE_KERNEL_INDEX.md"
+        clean_surface.write_text("# Clean mutation surface\n", encoding="utf-8")
+        baseline_errors = check_live_surfaces(scratch)
+        if baseline_errors:
+            failures.append(
+                "MUT-5/6 setup: exact frozen historical bodies did not pass: "
+                + "; ".join(baseline_errors[:2])
+            )
+
+        # MUT-2: filesystem discovery includes new/untracked live Markdown. A
+        # generic file cannot inherit either dated handoff's exact custody.
+        clean_surface.write_text("# New live surface\n\nX D6≡D0 Y\n", encoding="utf-8")
+        untracked_errors = check_live_surfaces(scratch)
+        if not any(
+            "00_THE_KERNEL_INDEX.md" in error
+            and "literal D6/D0 equivalence" in error
+            for error in untracked_errors
+        ):
+            failures.append("MUT-2: literal in a new/untracked live file escaped")
+        clean_surface.write_text("# Clean mutation surface\n", encoding="utf-8")
+
+        # MUT-5: an otherwise-semantic-neutral byte change must revoke custody.
+        drift_rel = "00_HANDOFF/GATE_MUTATION_REPORT_2026_08_06.md"
+        drift_path = scratch / drift_rel
+        exact_blob = drift_path.read_bytes()
+        needle = b"type: emergentism-verification-report"
+        replacement = b"type: emergentism-verification-reporu"
+        if needle not in exact_blob:
+            failures.append("MUT-5: frozen historical byte needle is missing")
+        else:
+            drift_path.write_bytes(exact_blob.replace(needle, replacement, 1))
+            drift_errors = check_live_surfaces(scratch)
+            if not any(
+                drift_rel in error and "SHA-256 drift" in error
+                for error in drift_errors
+            ):
+                failures.append("MUT-5: altered historical byte did not revoke custody")
+            drift_path.write_bytes(exact_blob)
+
+        # MUT-6: exercise the other dated handoff. Its frozen digest binds the
+        # end of the body, so an appended literal is outside that unit and must
+        # be caught by both custody and the ordinary live-surface scan.
+        append_rel = "00_HANDOFF/NEW_FINDINGS_AUDIT_2026_08_06.md"
+        append_path = scratch / append_rel
+        append_blob = append_path.read_bytes()
+        append_path.write_bytes(append_blob + b"\nX D6\xe2\x89\xa1D0 Y\n")
+        append_errors = check_live_surfaces(scratch)
+        if not any(
+            append_rel in error and "SHA-256 drift" in error
+            for error in append_errors
+        ):
+            failures.append("MUT-6: appended literal did not revoke frozen custody")
+        if not any(
+            append_rel in error and "literal D6/D0 equivalence" in error
+            for error in append_errors
+        ):
+            failures.append("MUT-6: appended literal escaped the ordinary live scan")
+
+        # MUT-7: exact bytes cannot inherit custody through a symlinked parent
+        # directory. Move the real handoff directory aside and replace it with
+        # a lexical symlink so the ancestor case is exercised directly.
+        handoff = scratch / "00_HANDOFF"
+        real_handoff = scratch / "00_HANDOFF_REAL"
+        handoff.rename(real_handoff)
+        handoff.symlink_to(real_handoff, target_is_directory=True)
+        symlink_errors = check_live_surfaces(scratch)
+        if not any("symlink component" in error for error in symlink_errors):
+            failures.append("MUT-7: symlinked historical parent directory escaped custody")
 
         if failures:
             print("D6/D0 FENCE MUTATIONS: FAIL")
             for f in failures:
                 print(f"- {f}")
             return 1
-        print("D6/D0 FENCE MUTATIONS: PASS (4 of 4)")
+        print("D6/D0 FENCE MUTATIONS: PASS (7 of 7)")
         return 0
-    finally:
-        # clean up — use a non-rm path; mavis-trash if available, else rmtree
-        import shutil
-        shutil.rmtree(scratch, ignore_errors=True)
 
 
 # --- Main ---------------------------------------------------------------------
@@ -225,7 +423,7 @@ def main() -> int:
     if errors:
         print("D6/D0 FENCE: FAIL")
         print(
-            f"Literal D6/D0 equivalence on {len(errors)} live surface(s). "
+            f"Found {len(errors)} D6/D0 fence violation(s). "
             "Use D6~D0 [I], or have the owner ratify a canonical statement and set "
             "CANONICAL_OWNER_FILE in this script."
         )
@@ -235,6 +433,7 @@ def main() -> int:
     print(
         "D6/D0 FENCE: PASS "
         f"(canonical={CANONICAL_OWNER_FILE or 'Path B (no literal anywhere)'} ; "
+        f"frozen_history={len(FROZEN_HISTORICAL_SURFACES)} exact bodies ; "
         "the tilde form is permitted on every surface)"
     )
     return 0
