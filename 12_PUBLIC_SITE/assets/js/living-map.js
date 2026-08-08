@@ -186,12 +186,12 @@
     card.style.setProperty("--status-color", maturityColor(question.maturityState));
     const top = element("div", "question-top");
     top.append(element("span", "question-id", `${question.id} · priority ${question.priority}`));
-    top.append(element("span", "status", `${question.maturityState.replaceAll("-", " ")} · ${question.programState}`));
+    top.append(element("span", "status", `public routing: ${question.maturityState.replaceAll("-", " ")} · ${question.programState}`));
     card.append(top);
     card.append(element("h3", "", question.title));
     card.append(element("p", "question", question.question));
     const details = element("dl", "");
-    [["Maturity", question.maturityState], ["Execution", question.executionState], ["Program", question.programState], ["Next", question.nextMilestone], ["Moves", question.moves], ["Kill", question.kill], ["Register", question.registers.join(" · ")]].forEach(([term, value]) => {
+    [["Public routing", question.maturityState], ["Execution", question.executionState], ["Program", question.programState], ["Next", question.nextMilestone], ["Moves", question.moves], ["Kill", question.kill], ["Register", question.registers.join(" · ")]].forEach(([term, value]) => {
       details.append(element("dt", "", term));
       details.append(element("dd", "", value));
     });

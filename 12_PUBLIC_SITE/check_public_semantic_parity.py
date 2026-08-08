@@ -93,7 +93,19 @@ REQUIRED_PUBLIC_CONTRACTS = {
     "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
-    "contribute/index.html": ("does not accept payment", "does not yet accept payments"),
+    "contribute/index.html": (
+        "does not accept payments, credentials, private data, or live model jobs.",
+        "No study, funding programme, grant scheme, compute service, or private-data intake is open.",
+        "public issue is a custody item, not an independent review, validation, or tier upgrade.",
+    ),
+    "record/index.html": (
+        "A public practice receipt, issue, or reply is a custody item, not independent evidence, peer review, validation, or a claim-tier upgrade.",
+    ),
+    "lab/index.html": (
+        "All twelve named GP gates have packet-complete research contracts",
+        "none is evidence-complete",
+        "public routing state",
+    ),
 }
 REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
@@ -168,7 +180,7 @@ CURRENT_BOOK_MARKERS = {
         "not the current <code>/book/</code> source",
     ),
     "read/index.html": (
-        "Seven frozen generated-library records",
+        "Frozen generated-library records remain preserved with provenance",
         "current twelve-chapter One-Sitting Reader",
     ),
 }
@@ -668,10 +680,6 @@ def main() -> int:
         if not path.is_file():
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
-        if rel == "contribute/index.html":
-            if not any(needle in text for needle in alternatives):
-                errors.append(f"{rel}: missing static no-payment boundary")
-            continue
         for needle in alternatives:
             if needle not in text:
                 errors.append(f"{rel}: missing founder contract marker {needle!r}")

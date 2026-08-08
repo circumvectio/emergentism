@@ -92,6 +92,25 @@ html {
   color: var(--text);
 }
 
+.skip {
+  position: fixed;
+  z-index: 1000;
+  top: var(--space-2);
+  left: var(--space-2);
+  padding: 10px 14px;
+  background: var(--gold);
+  color: var(--accent-contrast);
+  border-radius: var(--shape-sm);
+  font: 700 13px/1 var(--font-mono);
+  text-decoration: none;
+  transform: translateY(-180%);
+  transition: transform 160ms var(--ease-standard);
+}
+
+.skip:focus {
+  transform: translateY(0);
+}
+
 body {
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--sector-electronic-lab) 5%, transparent), transparent 30rem),

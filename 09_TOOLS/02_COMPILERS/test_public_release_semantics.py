@@ -89,13 +89,11 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         for name, text in mutations.items():
             with self.subTest(name=name):
                 self.assertRegex(text, parity.FORBIDDEN[name])
-        for text in ("P_node", "P_node,i", "P<sub>node</sub>"):
-            self.assertRegex(text, parity.FORBIDDEN["legacy untyped node scalar"])
-        self.assertRegex("Φ × V", parity.FORBIDDEN["raw uncalibrated Phi-V product"])
-        self.assertRegex("Σ Δ P_node", parity.FORBIDDEN["legacy aggregate objective"])
+        self.assertRegex("P = Φ × V", parity.FORBIDDEN["legacy untyped node product"])
+        self.assertTrue(parity.has_retired_node_product("P_node := Φ̂₄ × V₄"))
         self.assertRegex(
-            "P_node = Φ × V therefore objective ethics follows",
-            parity.FORBIDDEN["product-derived ethics"],
+            "the ethic follows from arithmetic",
+            parity.FORBIDDEN["ethic derived from arithmetic"],
         )
 
     def test_provisional_surfaces_are_inside_parity_prohibition_scope(self) -> None:
@@ -128,9 +126,10 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
 
     def test_frozen_boundary_is_idempotent(self) -> None:
         sample = "<html><body><main>old claim</main></body></html>"
-        once = frozen.desired(sample)
+        page = SITE / "frozen-fixture.html"
+        once = frozen.desired(sample, page, frozen=True)
         self.assertIn(frozen.MARKER, once)
-        self.assertEqual(frozen.desired(once), once)
+        self.assertEqual(frozen.desired(once, page, frozen=True), once)
 
     def test_rag_excludes_frozen_library(self) -> None:
         rag = json.loads((SITE / "book/rag_index.json").read_text(encoding="utf-8"))
@@ -696,7 +695,7 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         )
 
         catalog = manifest["catalog_contract"]
-        self.assertEqual(catalog["schema"], "emergentism/book-manifest/v1")
+        self.assertEqual(catalog["schema"], "emergentism/book-manifest/v2")
         self.assertEqual(catalog["path"], "13_BOOKS/book-manifest.json")
         self.assertEqual(catalog["release_state"], "source_active_current_public_reader")
         self.assertEqual(catalog["public_route"], "../12_PUBLIC_SITE/book/index.html")
