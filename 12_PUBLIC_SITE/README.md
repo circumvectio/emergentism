@@ -74,7 +74,8 @@ No step depends on membership, belief, payment, or delegated truth authority.
 - `living-map.json` routes open work and contribution modes; it cannot create or
   promote doctrine.
 - `render_dimension_site.py` deterministically renders `/dimensions/` and
-  `/0/…/6/`.
+  `/0/…/6/`. All eight rendered pages are tracked release artifacts: regenerate,
+  review, and commit them together so an exact Git checkout remains deployable.
 - `check_public_semantic_parity.py` rejects dimensional inversions, literal
   closure, forbidden quantum inflation, physical-cone expansion language, and
   application-authority leakage on current surfaces.

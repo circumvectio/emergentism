@@ -146,6 +146,33 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
 
+    def test_public_submission_boundary_precedes_the_only_current_ingress(self) -> None:
+        form_route = parity.PUBLIC_ISSUE_FORM_ROUTE
+        contribute = (SITE / "contribute/index.html").read_text(encoding="utf-8")
+        boundary = "A public issue is a custody item. Filing alone does not establish independent review, validation, or a tier upgrade"
+        self.assertIn(form_route, contribute)
+        self.assertLess(contribute.index(boundary), contribute.index(form_route))
+        for rel in self.data["currentSurfaces"]:
+            if rel == "contribute/index.html":
+                continue
+            path = SITE / rel
+            if path.is_file():
+                self.assertNotIn(form_route, path.read_text(encoding="utf-8", errors="replace"), rel)
+        template_boundary = "Filing this form creates a public custody item. Filing alone does not establish independent evidence"
+        for name in ("finity-receipt.yml", "contradiction-report.yml", "bounded-evidence.yml"):
+            text = (ROOT / ".github/ISSUE_TEMPLATE" / name).read_text(encoding="utf-8")
+            self.assertIn(template_boundary, text, name)
+            self.assertIn("does not guarantee a response, ledger inclusion, or claim disposition", text, name)
+
+    def test_public_submission_copy_cannot_promise_automatic_disposition(self) -> None:
+        manifesto = parity.normalize_visible_text((SITE / "manifesto/index.html").read_text(encoding="utf-8")).casefold()
+        for promise in parity.AUTOMATIC_SUBMISSION_PROMISES:
+            self.assertNotIn(promise, manifesto)
+        record = parity.normalize_visible_text((SITE / "record/index.html").read_text(encoding="utf-8")).casefold()
+        self.assertNotIn("frozen product-versus-rivals study", record)
+        paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8")
+        self.assertIn('<span class="k">21</span>…and the remaining sixteen', paradoxes)
+
     def test_atlas_generator_check_binds_full_provenance_payload(self) -> None:
         payload = atlas_builder.build_payload()
         with tempfile.TemporaryDirectory() as tmp:

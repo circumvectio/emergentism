@@ -63,16 +63,8 @@ out/
 # `git status` noise and cannot be swept in by an accidental `git add`.
 09_TOOLS/03_SIMULATIONS/
 
-# Generated dimension routes — deterministically rendered by
-# 12_PUBLIC_SITE/render_dimension_site.py (see 12_PUBLIC_SITE/README.md
-# §regeneration). NOT tracked: a fresh clone must run the generator before
-# predeploy. Handoff defect closure 2026-08-04 (fresh clone failed predeploy
-# with 2625 errors until the generator ran; reported by the adjudication
-# sweep session).
-12_PUBLIC_SITE/0/
-12_PUBLIC_SITE/1/
-12_PUBLIC_SITE/2/
-12_PUBLIC_SITE/3/
-12_PUBLIC_SITE/4/
-12_PUBLIC_SITE/5/
-12_PUBLIC_SITE/6/
+# Generated dimension routes are deterministically rendered by
+# 12_PUBLIC_SITE/render_dimension_site.py and intentionally tracked. They are
+# declared current, directly deployed static pages; a checkout or deployment
+# artifact must contain the exact reviewed bytes without relying on an implicit
+# host-side generator step.

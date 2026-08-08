@@ -3089,11 +3089,63 @@ def check_historical_public_boundary():
         ok("reversible redirects, headers, indexes, search, sitemap, and service-worker boundary agree")
     return all_ok
 
+
+def check_declared_public_head_custody():
+    """Require every declared deployable surface to exist at HEAD with exact bytes."""
+
+    try:
+        manifest = json.loads(read_file("public_semantic_parity.json"))
+        declared = set(manifest.get("currentSurfaces", []))
+        declared.update(manifest.get("declaredProvisional", {}).get("routes", []))
+        declared.update(manifest.get("infrastructureRoutes", {}).get("routes", []))
+    except Exception as exc:
+        error(f"cannot load declared public surfaces for Git custody: {exc}")
+        return False
+
+    all_ok = True
+    public_root = os.path.realpath(BASE_DIR)
+    for rel in sorted(declared):
+        if not isinstance(rel, str) or not rel or rel.startswith("/") or ".." in rel.split("/"):
+            error(f"unsafe declared public surface for Git custody: {rel!r}")
+            all_ok = False
+            continue
+        path = os.path.realpath(os.path.join(BASE_DIR, rel))
+        try:
+            inside = os.path.commonpath((public_root, path)) == public_root
+        except ValueError:
+            inside = False
+        if not inside or not os.path.isfile(path):
+            error(f"declared public surface missing from worktree: {rel}")
+            all_ok = False
+            continue
+        git_path = f"12_PUBLIC_SITE/{rel}"
+        process = subprocess.run(
+            ["git", "-C", REPO_DIR, "show", f"HEAD:{git_path}"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=False,
+        )
+        if process.returncode:
+            error(f"declared public surface is not present at HEAD: {git_path}")
+            all_ok = False
+            continue
+        with open(path, "rb") as fh:
+            current = fh.read()
+        if process.stdout != current:
+            error(f"declared public surface differs from HEAD custody: {rel}")
+            all_ok = False
+    if all_ok:
+        ok(f"all {len(declared)} declared public surfaces match exact HEAD bytes")
+    return all_ok
+
+
 def check_publication_boundary():
     print("\n[11] Deployment publication boundary")
     patterns = load_vercelignore_patterns()
     if patterns is None:
         error(".vercelignore missing")
+        return False
+    if not check_declared_public_head_custody():
         return False
 
     required_patterns = {

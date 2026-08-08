@@ -93,13 +93,17 @@ REQUIRED_PUBLIC_CONTRACTS = {
     "plainly/index.html": ("possible power", "actual power", "chosen AND-class convention"),
     "practice/index.html": ("Finity Card", "Φ₅", "V₄"),
     "rosetta/index.html": ("One move, translated", "G7", "possible power", "actual power"),
+    "manifesto/index.html": (
+        "Filing alone does not establish independent evidence, peer review, validation,",
+        "does not automatically enter the",
+    ),
     "contribute/index.html": (
         "does not accept payments, credentials, private data, or live model jobs.",
         "No study, funding programme, grant scheme, compute service, or private-data intake is open.",
-        "public issue is a custody item, not an independent review, validation, or tier upgrade.",
+        "Filing alone does not establish independent review, validation, or a tier upgrade",
     ),
     "record/index.html": (
-        "A public practice receipt, issue, or reply is a custody item, not independent evidence, peer review, validation, or a claim-tier upgrade.",
+        "Filing alone does not establish independent evidence, peer review, validation, or a claim-tier upgrade.",
     ),
     "lab/index.html": (
         "All twelve named GP gates have packet-complete research contracts",
@@ -107,6 +111,14 @@ REQUIRED_PUBLIC_CONTRACTS = {
         "public routing state",
     ),
 }
+PUBLIC_ISSUE_FORM_ROUTE = "github.com/circumvectio/emergentism/issues/new"
+AUTOMATIC_SUBMISSION_PROMISES = (
+    "will be published unedited",
+    "with your verdict and not ours",
+    "the claim gets marked cut",
+    "so what would actually count",
+    "because it can move a claim",
+)
 REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
@@ -683,6 +695,29 @@ def main() -> int:
         for needle in alternatives:
             if needle not in text:
                 errors.append(f"{rel}: missing founder contract marker {needle!r}")
+    contribute = (SITE / "contribute/index.html").read_text(encoding="utf-8", errors="replace")
+    custody_marker = "A public issue is a custody item. Filing alone does not establish independent review, validation, or a tier upgrade"
+    first_form = contribute.find(PUBLIC_ISSUE_FORM_ROUTE)
+    if first_form < 0:
+        errors.append("contribute/index.html: missing public issue-form route")
+    elif contribute.find(custody_marker) < 0 or contribute.find(custody_marker) > first_form:
+        errors.append("contribute/index.html: custody/non-upgrade boundary must precede public issue forms")
+    for rel in parity_audit_surfaces(data):
+        if rel == "contribute/index.html" or not rel.endswith((".html", ".htm")):
+            continue
+        path = SITE / rel
+        if path.is_file() and PUBLIC_ISSUE_FORM_ROUTE in path.read_text(encoding="utf-8", errors="replace"):
+            errors.append(f"{rel}: public issue form bypasses the contribution boundary")
+    manifesto = normalize_visible_text((SITE / "manifesto/index.html").read_text(encoding="utf-8", errors="replace")).casefold()
+    for promise in AUTOMATIC_SUBMISSION_PROMISES:
+        if promise in manifesto:
+            errors.append(f"manifesto/index.html: automatic submission promise is not authorized: {promise!r}")
+    record = normalize_visible_text((SITE / "record/index.html").read_text(encoding="utf-8", errors="replace")).casefold()
+    if "frozen product-versus-rivals study" in record:
+        errors.append("record/index.html: void GP-03 execution route was advertised as current")
+    paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8", errors="replace")
+    if '<span class="k">21</span>…and the remaining sixteen' not in paradoxes:
+        errors.append("discoveries/paradoxes/index.html: twenty-one-item suite remainder marker drift")
     render = subprocess.run([sys.executable, str(SITE / "render_dimension_site.py"), "--check"], cwd=SITE, text=True, capture_output=True)
     if render.returncode:
         errors.append(render.stdout.strip() or render.stderr.strip() or "dimension renderer drift")

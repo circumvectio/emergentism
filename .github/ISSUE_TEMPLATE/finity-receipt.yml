@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Share only material you can make public. Do not include secrets, private data, medical information, or third-party identities without consent. A null or failed result is useful.
+        Filing this form creates a public custody item. Filing alone does not establish independent evidence, peer review, validation, or a claim-tier upgrade; submitted material is assessed at its own provenance and limits. It does not guarantee a response, ledger inclusion, or claim disposition.
   - type: textarea
     id: card
     attributes:

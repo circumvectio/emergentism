@@ -57,11 +57,15 @@ def transition_card(item: dict) -> str:
     # are adjudicated FAILED in doc 48 and the spine said "candidate" for all of them.
     # Now it comes from the data, and the source line travels with it.
     kind = tr.get("verdict") or ("candidate μ-crossing" if tr["id"].startswith("mu") else "non-μ boundary")
+    verdict_source = (
+        f'  <p class="source">Verdict source: {esc(tr["verdictSource"])}</p>\n'
+        if tr.get("verdictSource")
+        else ""
+    )
     return f"""
 <section class="transition" id="{esc(tr['id'])}">
   <p class="eyebrow">{esc(pretty_id(tr['id']))} · {kind}</p>
-  {f'<p class="source">Verdict source: {esc(tr["verdictSource"])}</p>' if tr.get("verdictSource") else ""}
-  <h2>{esc(tr['label'])}</h2>
+{verdict_source}  <h2>{esc(tr['label'])}</h2>
   <dl>{rows}</dl>
   <p class="source">Source owner: <code>{esc(tr['source'])}</code></p>
   <a class="next" href="{next_href}">Continue through {esc(pretty_id(tr['id']))} →</a>
