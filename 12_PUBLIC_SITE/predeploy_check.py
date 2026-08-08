@@ -2262,11 +2262,37 @@ def check_orphans():
         os.path.normpath(os.path.join(BASE_DIR, "index_legacy_2026_07_19.html")),
         # /home/ is a retained legacy body behind the permanent /home/ -> / redirect.
         os.path.normpath(os.path.join(BASE_DIR, "home", "index.html")),
-        # Frozen discipline projections remain directly addressable and noindex,
-        # but no longer participate in the current reader funnel.
-        os.path.normpath(os.path.join(BASE_DIR, "ontology", "index.html")),
-        os.path.normpath(os.path.join(BASE_DIR, "theology", "index.html")),
+        # This is the target of exact reversible historical redirects.  It is
+        # deliberately not linked from the current reader funnel.
+        os.path.normpath(os.path.join(BASE_DIR, "historical-boundary", "index.html")),
     }
+
+    # Frozen/noindex projections remain in repository custody and can be
+    # directly addressable for provenance, but they are not part of the current
+    # public journey.  Do not hide a declared current or provisional route this
+    # way: those must retain a real inbound path from the front door.
+    try:
+        parity = json.loads(read_file("public_semantic_parity.json"))
+        declared = set(parity.get("currentSurfaces", []))
+        declared.update(parity.get("declaredProvisional", {}).get("routes", []))
+        declared.update(parity.get("infrastructureRoutes", {}).get("routes", []))
+    except Exception as exc:
+        error(f"cannot load public route declarations for orphan check: {exc}")
+        return False
+
+    def has_noindex_meta(rel_path):
+        for tag, attrs in extract_start_tags(read_file(rel_path)):
+            if tag != "meta":
+                continue
+            values = dict(attrs)
+            if values.get("name", "").lower() == "robots" and "noindex" in values.get("content", "").lower():
+                return True
+        return False
+
+    for rel_path in html_files:
+        if rel_path in declared or not has_noindex_meta(rel_path):
+            continue
+        ignored.add(os.path.normpath(os.path.join(BASE_DIR, rel_path)))
     orphans = [
         os.path.relpath(full, BASE_DIR)
         for full in sorted(html_set - reachable - ignored)
@@ -2468,16 +2494,6 @@ def check_public_reading_bundle():
     print("\n[8] Public reading bundle wiring")
     required_surfaces = [
         "read/index.html",
-        "papers/index.html",
-        "canon/index.html",
-        "foundations/index.html",
-        "operators/index.html",
-        "will/index.html",
-        "value/index.html",
-        "ground/index.html",
-        "sacred/index.html",
-        "method/index.html",
-        "meta/index.html",
         "reading-manifest.json",
     ]
     all_ok = True
@@ -2624,7 +2640,12 @@ def check_generated_library_chrome():
         return False
 
     generated_pages = set()
-    for href in manifest.get("routes", {}).values():
+    for section, href in manifest.get("routes", {}).items():
+        # /read/ is a hand-curated current route through the reader, practice,
+        # research, and exit.  It shares the library visual language but is not
+        # a frozen generated-library projection.
+        if section == "read":
+            continue
         if href.endswith("/"):
             generated_pages.add(os.path.normpath(os.path.join(href, "index.html")))
     for doc in manifest.get("documents", []):
@@ -2855,11 +2876,16 @@ def check_historical_public_boundary():
         error("withheld-routes.json must use schemaVersion 2")
         all_ok = False
     policy = registry.get("policy", {})
-    expected_policy_rules = {
-        "retired-literal-d6-identity",
-        "retired-product-derived-ethics",
-        "explicit-legacy-route",
-    }
+    try:
+        # The withholding builder owns the exact supported rule vocabulary.
+        # Import lazily: the parity checker imports this module for deployment
+        # semantics, while the full release gate reaches this branch only after
+        # module initialization is complete.
+        from build_withholding_boundary import POLICY_RULE_IDS
+        expected_policy_rules = set(POLICY_RULE_IDS)
+    except Exception as exc:
+        error(f"cannot load exact withholding-policy rules: {exc}")
+        return False
     if policy.get("mode") != "exact-artifact fail-closed" or set(policy.get("rules", [])) != expected_policy_rules:
         error("withheld-routes.json fail-closed policy contract drift")
         all_ok = False
@@ -2993,12 +3019,19 @@ def check_historical_public_boundary():
         "reading-manifest.json",
         "atlas/index.html",
         "atlas/site_index.json",
-        "atlas/source-ledger.json",
         "sitemap.xml",
         "book/rag_index.json",
         "read/index.html",
         "canon/index.html",
         "operators/index.html",
+    ]
+    # An exact withheld artifact is not a current index/search surface.  Its
+    # bytes remain checked above for custody and headers, while its old links do
+    # not govern the current public journey.
+    index_surfaces = [
+        surface
+        for surface in index_surfaces
+        if surface not in registered_artifacts and not is_vercel_ignored(surface, patterns)
     ]
     withheld_public_routes = {
         route
@@ -3016,6 +3049,27 @@ def check_historical_public_boundary():
         for route in leaked_routes:
             error(f"withheld route remains in current index/search surface: {surface} -> {route}")
             all_ok = False
+
+    # Redirects are not a substitute for a truthful public link graph.  Every
+    # deployable HTML page, including noindex provenance pages, must send a
+    # withheld route to the explicit historical boundary rather than quietly
+    # reviving it through an old navigation or inline source link.
+    public_link_leaks = []
+    for surface in get_public_html_files():
+        try:
+            named_routes = routes_named_by_index_surface(surface)
+        except Exception as exc:
+            error(f"cannot inspect public link surface {surface}: {exc}")
+            all_ok = False
+            continue
+        for route in sorted(withheld_public_routes & named_routes):
+            public_link_leaks.append((surface, route))
+    if public_link_leaks:
+        for surface, route in public_link_leaks:
+            error(f"withheld route remains linked from deployable HTML: {surface} -> {route}")
+        all_ok = False
+    else:
+        ok(f"no deployable HTML link revives an exact withheld route ({len(get_public_html_files())} pages checked)")
 
     sitemap_body = read_file("sitemap.xml")
     if boundary_public_route in sitemap_body:

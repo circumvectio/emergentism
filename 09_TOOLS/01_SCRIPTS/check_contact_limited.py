@@ -1216,20 +1216,37 @@ def _canonical_public_alias(route: str) -> str:
     return "/" + clean.strip("/") + "/"
 
 
-def _artifact_delivery_aliases(artifact: str) -> set[str]:
-    """Clean, trailing-slash, and physical aliases (two for the root index)."""
+def _artifact_has_directory_owner(site: Path, artifact: str) -> bool:
+    """Whether a sibling directory owns the clean URL for ``foo.html``."""
+
+    path = Path(artifact)
+    return path.suffix == ".html" and path.name != "index.html" and (
+        site / path.with_suffix("") / "index.html"
+    ).is_file()
+
+
+def _artifact_delivery_aliases(site: Path, artifact: str) -> set[str]:
+    """Delivery aliases, preserving a sibling directory's clean URL ownership."""
+
+    # A retained ``foo.html`` may coexist with ``foo/index.html``.  The latter
+    # owns /foo and /foo/ under cleanUrls; the former is a raw custody artifact
+    # addressed only as /foo.html.  Treating both as clean aliases created a
+    # false two-owner delivery contract for an intentionally withheld pair.
+    if _artifact_has_directory_owner(site, artifact):
+        return {"/" + artifact.lstrip("/")}
     canonical = _clean_route(artifact)
     clean = canonical.rstrip("/") or "/"
     physical = "/" + artifact.lstrip("/")
     return {clean, canonical, physical}
 
 
-def _expected_withheld_aliases(artifact: str) -> set[str]:
-    """The exact three delivery forms required for a withheld artifact."""
-    expected = _artifact_delivery_aliases(artifact)
-    if len(expected) != 3:
+def _expected_withheld_aliases(site: Path, artifact: str) -> set[str]:
+    """Exact delivery forms, allowing raw-only custody behind a directory owner."""
+    expected = _artifact_delivery_aliases(site, artifact)
+    expected_count = 1 if _artifact_has_directory_owner(site, artifact) else 3
+    if len(expected) != expected_count:
         raise ContractError(
-            f"withheld artifact {artifact} does not yield three distinct delivery aliases"
+            f"withheld artifact {artifact} does not yield {expected_count} distinct delivery aliases"
         )
     return expected
 
@@ -1410,7 +1427,7 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
             raise ContractError(f"withheld artifact {artifact} has no public aliases")
         if any(not isinstance(alias, str) for alias in aliases):
             raise ContractError(f"withheld artifact {artifact} has a non-string alias")
-        expected_aliases = _expected_withheld_aliases(artifact)
+        expected_aliases = _expected_withheld_aliases(site, artifact)
         if len(aliases) != len(set(aliases)):
             raise ContractError(f"withheld artifact {artifact} repeats a public alias")
         if set(aliases) != expected_aliases:
@@ -1418,6 +1435,7 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
                 f"withheld artifact {artifact} aliases drifted: "
                 f"stored={sorted(aliases)}, expected={sorted(expected_aliases)}"
             )
+        has_directory_owner = _artifact_has_directory_owner(site, artifact)
         expected_alias = _clean_route(artifact)
         for alias in aliases:
             raw_alias_count += 1
@@ -1428,17 +1446,18 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
                 )
             raw_alias_owner[alias] = artifact
             canonical = _canonical_public_alias(alias)
-            if canonical != expected_alias:
+            if not has_directory_owner and canonical != expected_alias:
                 raise ContractError(
                     f"withheld alias {alias} canonicalizes to {canonical}, not {expected_alias} "
                     f"for {artifact}"
                 )
-            previous = canonical_alias_owner.get(canonical)
-            if previous is not None and previous != artifact:
-                raise ContractError(
-                    f"withheld canonical alias {canonical} belongs to both {previous} and {artifact}"
-                )
-            canonical_alias_owner[canonical] = artifact
+            if not has_directory_owner:
+                previous = canonical_alias_owner.get(canonical)
+                if previous is not None and previous != artifact:
+                    raise ContractError(
+                        f"withheld canonical alias {canonical} belongs to both {previous} and {artifact}"
+                    )
+                canonical_alias_owner[canonical] = artifact
             if redirect_map.get(alias) != (boundary_route, False):
                 raise ContractError(
                     f"withheld alias {alias} lacks the temporary redirect to {boundary_route}"
@@ -1463,8 +1482,13 @@ def compute_public_lifecycle(root: Path) -> dict[str, Any]:
     route_owners: dict[str, list[str]] = defaultdict(list)
     for artifact in sorted(universe):
         route = _clean_route(artifact)
-        aliases = _artifact_delivery_aliases(artifact)
-        route_owners[route].append(artifact)
+        aliases = _artifact_delivery_aliases(site, artifact)
+        # When ``foo.html`` coexists with ``foo/index.html``, the retained
+        # flat file is a raw-only custody artifact.  It must retain its own
+        # lifecycle checks, but it must not compete with the directory page
+        # for the canonical clean ``/foo/`` delivery route.
+        if not _artifact_has_directory_owner(site, artifact):
+            route_owners[route].append(artifact)
         memberships = {
             name for name, values in explicit.items() if artifact in values
         }

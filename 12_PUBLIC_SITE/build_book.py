@@ -87,7 +87,7 @@ def current_source_contract():
     because a Markdown directory happens to exist.
     """
     books = load_object(BOOK_MANIFEST, "book manifest")
-    if books.get("schema") != "emergentism/book-manifest/v1":
+    if books.get("schema") != "emergentism/book-manifest/v2":
         sys.exit("book manifest schema drift")
     works = books.get("works")
     if not isinstance(works, list):
@@ -134,7 +134,7 @@ def current_source_contract():
     cards_path = resolve_corpus_path(cards_rel, "current claim-card set")
 
     ledger = load_object(cards_path, "current claim-card set")
-    if ledger.get("schema") != "emergentism/claim-card-set/v1":
+    if ledger.get("schema") != "emergentism/claim-card-set/v2":
         sys.exit("current claim-card set schema drift")
     if ledger.get("work_id") != CURRENT_WORK_ID:
         sys.exit("current claim-card set work mismatch")
@@ -368,7 +368,7 @@ def desired_manifest(page, contract, source_chapter_order):
         "output": {"path": "book/index.html", "sha256": sha_bytes(page.encode("utf-8"))},
         "renderer": {"package": "Markdown", "version": markdown.__version__, "extensions": EXTENSIONS},
         "claim_card_contract": {
-            "schema": "emergentism/claim-card-set/v1",
+            "schema": "emergentism/claim-card-set/v2",
             "path": contract["cards_rel"],
             "sha256": sha_bytes(open(contract["cards_path"], "rb").read()),
             "register_path": os.path.relpath(CLAIM_REGISTER, ROOT).replace(os.sep, "/"),

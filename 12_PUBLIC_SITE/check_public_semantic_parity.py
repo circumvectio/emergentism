@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import fnmatch
 import json
 import hashlib
 import html as html_lib
@@ -18,6 +17,13 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 ROOT = SITE.parent
 MANIFEST_PATH = SITE / "public_semantic_parity.json"
+# Use the exact same deployment-boundary semantics as the release gate.  A
+# second, weaker glob implementation here would let deployable legacy HTML
+# evade the public semantic firewall.
+if str(SITE) not in sys.path:
+    sys.path.insert(0, str(SITE))
+from predeploy_check import is_vercel_ignored, load_vercelignore_patterns
+
 EXPECTED_SEQUENCE = ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"]
 FORBIDDEN = {
     # --- added 2026-07-22 after a Rosetta caste sweep found the sharpest tier
@@ -69,8 +75,9 @@ FORBIDDEN = {
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
     # The glyphs are opaque TitanFrame renderings. The reciprocal chart has its
     # own numeric identity, but no fence, coupling, or analogy turns that fact
-    # into an infix operation over Titan terms. Current surfaces therefore ban
-    # the symbol equation without exception; the operator-free emblem remains.
+    # into an infix operation over Titan terms. Affirmative public copy bans
+    # the symbol equation; an explicitly retired mention may preserve negative
+    # evidence when its lifecycle marker comes first.
     "forbidden Titan infix arithmetic": re.compile(
         r"(?:⊙\s*=\s*•\s*(?:×|x|\*)\s*○|"
         r"•\s*(?:×|x|\*)\s*○\s*(?:=|→)\s*⊙)"
@@ -92,16 +99,16 @@ REQUIRED_SURFACE_CARDS = {
     "index.html": {"FIN01-01", "OS01-13", "OS01-20", "OS01-22", "OS01-26"},
     "practice/index.html": {"FIN01-01", "FIN01-02", "OS01-08", "OS01-13", "OS01-22"},
     "lab/index.html": {"FIN01-01", "FIN01-02"},
-    "compass/index.html": {"OS01-09"},
+    "compass/index.html": {"OS01-13"},
     "5/index.html": {"OS01-09"},
     "plainly/index.html": {"OS01-09"},
     "discoveries/nonduality/index.html": {"OS01-09"},
-    "about/index.html": {"OS01-09"},
-    "read/index.html": {"OS01-09"},
-    "axioms/index.html": {"OS01-09"},
+    "about/index.html": {"OS01-26"},
+    "read/index.html": {"OS01-13"},
+    "axioms/index.html": {"OS01-26"},
     "journey/index.html": {"OS01-09"},
-    "rosetta/index.html": {"OS01-09"},
-    "book/index.html": {"OS01-09"},
+    "rosetta/index.html": {"OS01-11"},
+    "book/index.html": {"OS01-13"},
 }
 CURRENT_AND_CLASS_MARKERS = {
     "discoveries/nonduality/index.html": ("P_node := min(Φ̂₄, V₄)", "historical product ranking is retired"),
@@ -131,6 +138,23 @@ TITAN_OPERATOR_FREE_FIXTURES = (
     "•  ⊙  ○",
     "TitanFrame := 0_T | 1_T | ∞_T",
 )
+LIFECYCLE_AWARE_FORBIDDEN = {
+    "literal D6 identity",
+    "legacy untyped node product",
+    "retired node product assignment",
+}
+# A repair/retirement marker must precede the quoted form in the same sentence.
+# A later disclaimer cannot launder an affirmative formula.
+LIFECYCLE_PREFIX = re.compile(
+    r"(?:\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed)\b"
+    r"[^.;:!?]{0,80}|\bno\s+(?:literal\s+)?identity\b[^.;:!?]{0,80})$",
+    re.I,
+)
+LIFECYCLE_FIXTURES = {
+    "literal D6 identity": "D6 ≡ D0",
+    "legacy untyped node product": "P = Φ × V",
+    "retired node product assignment": "P_node := Φ̂₄ × V₄",
+}
 CURRENT_BOOK_MARKERS = {
     "book/index.html": (
         "Only a declared common strictly increasing reparameterization applied to both factors is assumed here:",
@@ -148,6 +172,11 @@ CURRENT_BOOK_MARKERS = {
         "current twelve-chapter One-Sitting Reader",
     ),
 }
+HIDDEN_ROBOTS_META = re.compile(
+    r'<meta\b(?=[^>]*\bname=["\']robots["\'])(?=[^>]*\bcontent=["\'][^"\']*\b(?:noindex|none)\b)[^>]*>',
+    re.IGNORECASE,
+)
+FROZEN_LIBRARY_BOUNDARY_MARKER = "data-frozen-library-boundary"
 
 
 def normalize_visible_text(text: str) -> str:
@@ -174,6 +203,21 @@ def has_titan_infix(text: str) -> bool:
     )
 
 
+def record_has_only_historical_k2(text: str) -> bool:
+    """Allow the existing provenance label, not a blanket record-page waiver."""
+
+    if "data-historical-authority-boundary" not in text:
+        return False
+    matches = list(FORBIDDEN["application authority leakage"].finditer(text))
+    return bool(matches) and all(match.group(0).casefold() == "k2" for match in matches)
+
+
+STATUS_SOURCE_CONTRACTS = {
+    "00_THE_KERNEL_INDEX.md": "[I]",
+    "00_META/00_EMERGENTISM_INTERNAL_COMPLETION_REGISTER.md": "[S/B]",
+}
+
+
 def parity_audit_surfaces(data: dict) -> list[str]:
     """Return every current/provisional surface subject to prohibition scans."""
     current = data.get("currentSurfaces")
@@ -198,28 +242,124 @@ def _sha256_revision(path: Path) -> str:
     return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _vercelignore_patterns() -> list[str]:
-    return [
-        line.strip() for line in (SITE / ".vercelignore").read_text(encoding="utf-8").splitlines()
-        if line.strip() and not line.lstrip().startswith("#")
-    ]
+def deployable_html_surfaces() -> list[str]:
+    """Return every HTML artifact Vercel may receive under .vercelignore."""
+
+    patterns = load_vercelignore_patterns()
+    if patterns is None:
+        raise ValueError(".vercelignore is required to determine deployable HTML")
+    surfaces: list[str] = []
+    for path in SITE.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in {".html", ".htm"}:
+            continue
+        rel = path.relative_to(SITE).as_posix()
+        if not is_vercel_ignored(rel, patterns):
+            surfaces.append(rel)
+    return sorted(surfaces)
 
 
-def _ignored(rel: str, patterns: list[str]) -> bool:
-    ignored = False
-    for pattern in patterns:
-        negated = pattern.startswith("!")
-        raw = pattern[1:] if negated else pattern
-        if raw.endswith("/"):
-            prefix = raw.rstrip("/")
-            matched = rel == prefix or rel.startswith(prefix + "/")
-        elif "/" not in raw:
-            matched = fnmatch.fnmatch(Path(rel).name, raw) or fnmatch.fnmatch(rel, raw)
-        else:
-            matched = fnmatch.fnmatch(rel, raw.lstrip("/"))
-        if matched:
-            ignored = not negated
-    return ignored
+def withheld_public_routes() -> set[str]:
+    """Read the exact withheld-route policy for RAG custody checks."""
+
+    registry_path = SITE / "withheld-routes.json"
+    try:
+        registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"cannot read withheld-route registry: {exc}") from exc
+    artifacts = registry.get("artifacts")
+    if not isinstance(artifacts, list):
+        raise ValueError("withheld-route registry artifacts must be a list")
+    routes: set[str] = set()
+    for item in artifacts:
+        item_routes = item.get("publicRoutes") if isinstance(item, dict) else None
+        if not isinstance(item_routes, list) or not all(
+            isinstance(route, str) for route in item_routes
+        ):
+            raise ValueError("withheld-route registry has an invalid publicRoutes entry")
+        routes.update(item_routes)
+    return routes
+
+
+def has_unretired_forbidden_match(text: str, name: str) -> bool:
+    """True when a lifecycle-aware retired form is used rather than mentioned."""
+
+    if name not in LIFECYCLE_AWARE_FORBIDDEN:
+        raise ValueError(f"{name} is not a lifecycle-aware public prohibition")
+    candidate = normalize_visible_text(text)
+    pattern = FORBIDDEN[name]
+    for match in pattern.finditer(candidate):
+        prefix = candidate[max(0, match.start() - 180):match.start()]
+        if not LIFECYCLE_PREFIX.search(prefix):
+            return True
+    return False
+
+
+def validate_status_source_claims(data: dict, errors: list[str]) -> None:
+    """Bind narrow owner-status copy without promoting it to a claim card.
+
+    This extension is deliberately local to this corpus: it can attest that a
+    public page accurately reports an editorial or record status, but it cannot
+    add a doctrine claim, import an application source, or raise an evidence
+    tier. Claim-bearing public language remains governed by ``surfaceClaims``.
+    """
+
+    bindings = data.get("statusSourceClaims", [])
+    if not isinstance(bindings, list):
+        errors.append("statusSourceClaims must be a list")
+        return
+    seen_ids: set[str] = set()
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            errors.append("status source binding must be an object")
+            continue
+        binding_id = binding.get("id")
+        if not isinstance(binding_id, str) or not binding_id:
+            errors.append("status source binding missing id")
+            continue
+        if binding_id in seen_ids:
+            errors.append(f"duplicate status source binding: {binding_id}")
+            continue
+        seen_ids.add(binding_id)
+        for key in ("surface", "role", "source", "sourceRevision", "tier", "requiredMarkers", "scope"):
+            if not binding.get(key):
+                errors.append(f"{binding_id} status source binding missing {key}")
+        if binding.get("scope") != "editorial_or_record_status_only":
+            errors.append(f"{binding_id} status source binding has invalid scope")
+        tier = binding.get("tier")
+        if binding.get("surface") not in data.get("currentSurfaces", []):
+            errors.append(f"{binding_id} status binding is not a current surface")
+        markers = binding.get("requiredMarkers")
+        if not isinstance(markers, list) or not all(isinstance(marker, str) and marker for marker in markers):
+            errors.append(f"{binding_id} status binding requiredMarkers must be non-empty strings")
+            markers = []
+        source_rel = binding.get("source")
+        if not isinstance(source_rel, str) or not source_rel:
+            continue
+        expected_tier = STATUS_SOURCE_CONTRACTS.get(source_rel)
+        if expected_tier is None:
+            errors.append(f"{binding_id} status source is not an approved owner-status source")
+            continue
+        if tier != expected_tier:
+            errors.append(f"{binding_id} status source tier must remain {expected_tier}")
+        source_path = ROOT / source_rel
+        try:
+            source_path.resolve().relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append(f"{binding_id} status source escapes the Emergentism corpus")
+            continue
+        if not source_path.is_file():
+            errors.append(f"{binding_id} status source is missing: {source_rel}")
+        elif binding.get("sourceRevision") != _sha256_revision(source_path):
+            errors.append(f"{binding_id} status sourceRevision drift: {source_rel}")
+        surface = binding.get("surface")
+        page = SITE / surface if isinstance(surface, str) else None
+        rendered = page.read_text(encoding="utf-8", errors="replace") if page and page.is_file() else ""
+        visible = normalize_visible_text(rendered)
+        for marker in markers:
+            if marker not in visible:
+                errors.append(f"{binding_id} missing bound public marker {marker!r}")
+        if "claimCardIds" in binding or "publicDisposition" in binding:
+            errors.append(f"{binding_id} status binding may not act as a claim-card binding")
 
 
 def main() -> int:
@@ -236,12 +376,34 @@ def main() -> int:
     for fixture in TITAN_OPERATOR_FREE_FIXTURES:
         if has_titan_infix(fixture):
             errors.append(f"Titan infix rule overmatched operator-free wording: {fixture}")
+    for name, fixture in LIFECYCLE_FIXTURES.items():
+        if not has_unretired_forbidden_match(fixture, name):
+            errors.append(f"lifecycle-aware prohibition escaped: {name}")
+        if has_unretired_forbidden_match(f"Retired {fixture}", name):
+            errors.append(f"lifecycle-aware prohibition overmatched retired mention: {name}")
     data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     try:
         audited_surfaces = parity_audit_surfaces(data)
     except ValueError as exc:
         errors.append(str(exc))
         audited_surfaces = []
+    try:
+        deployable_html = deployable_html_surfaces()
+    except ValueError as exc:
+        errors.append(str(exc))
+        deployable_html = []
+    deployment_patterns = load_vercelignore_patterns() or []
+    for rel in audited_surfaces:
+        path = SITE / rel
+        if not path.is_file():
+            errors.append(f"missing current/provisional public surface: {rel}")
+        elif is_vercel_ignored(rel, deployment_patterns):
+            errors.append(f"current/provisional public surface is excluded from deployment: {rel}")
+    try:
+        excluded_routes = withheld_public_routes()
+    except ValueError as exc:
+        errors.append(str(exc))
+        excluded_routes = set()
     if data.get("schemaVersion") != 2:
         errors.append("public semantic parity schemaVersion must be 2")
     contract = data.get("claimCardContract", {})
@@ -332,7 +494,11 @@ def main() -> int:
                     errors.append(f"{tr.get('id', '?')} sourceRevision drift: {tr['source']}")
             else:
                 errors.append(f"missing crossing owner: {tr['source']}")
-        rendered = (SITE / item["id"][1:] / "index.html").read_text(encoding="utf-8", errors="replace")
+        rendered_path = SITE / item["id"][1:] / "index.html"
+        if not rendered_path.is_file():
+            errors.append(f"{item['id']} missing rendered dimension surface")
+            continue
+        rendered = rendered_path.read_text(encoding="utf-8", errors="replace")
         for needle, label in (
             ('class="diagram visual-panel"', "instrument visual hook"),
             ('type="importmap"', "local Three.js import map"),
@@ -343,6 +509,7 @@ def main() -> int:
                 errors.append(f"{item['id']} missing {label}")
 
     surface_claims = data.get("surfaceClaims", [])
+    validate_status_source_claims(data, errors)
     surface_lookup: dict[str, dict] = {}
     for binding in surface_claims:
         surface = binding.get("surface")
@@ -430,19 +597,17 @@ def main() -> int:
                 f"got {sorted(actual_cards)}"
             )
 
-    for rel in audited_surfaces:
+    # The manifest owns the current/provisional contract. Prohibition scans are
+    # wider: any HTML that can reach a deployment is public copy and must pass
+    # the same semantic fences.
+    for rel in deployable_html:
         path = SITE / rel
-        if not path.is_file():
-            errors.append(f"missing current/provisional public surface: {rel}")
-            continue
         text = path.read_text(encoding="utf-8", errors="replace")
         for name, pattern in FORBIDDEN.items():
-            if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
+            if name == "application authority leakage" and rel == "record/index.html" and record_has_only_historical_k2(text):
                 continue
-            if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
-                continue
-            if name == "retired node product assignment":
-                if has_retired_node_product(text):
+            if name in LIFECYCLE_AWARE_FORBIDDEN:
+                if has_unretired_forbidden_match(text, name):
                     errors.append(f"{rel}: {name}")
                 continue
             if name == "forbidden Titan infix arithmetic":
@@ -461,6 +626,12 @@ def main() -> int:
                 scan_text = re.sub(r"does not.{0,240}solve quantum gravity", "", scan_text, flags=re.I | re.S)
             if pattern.search(scan_text):
                 errors.append(f"{rel}: {name}")
+    for rel in parity_audit_surfaces(data):
+        text = (SITE / rel).read_text(encoding="utf-8", errors="replace")
+        if FROZEN_LIBRARY_BOUNDARY_MARKER in text:
+            errors.append(f"{rel}: declared current/provisional page carries a frozen-library boundary")
+        if HIDDEN_ROBOTS_META.search(text):
+            errors.append(f"{rel}: declared current/provisional page self-declares noindex/none")
     for rel, markers in CURRENT_AND_CLASS_MARKERS.items():
         if rel not in data.get("currentSurfaces", []):
             errors.append(f"AND-class parity target is not a declared current surface: {rel}")

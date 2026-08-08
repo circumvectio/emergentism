@@ -92,7 +92,10 @@ def pager(doc: dict, prev: dict | None, nxt: dict | None, i: int, n: int) -> str
     )
     right = (
         f'<a class="l2-next" href="{up}{esc(nxt["href"])}" rel="next">{esc(nxt["title"])} &rarr;</a>'
-        if nxt else f'<a class="l2-next" href="{up}atlas/">The full atlas &rarr;</a>'
+        # The current reader owns the return route.  /atlas/ is a retained
+        # historical projection and may itself be withheld; a frozen pager
+        # must not use its last link to revive that route.
+        if nxt else f'<a class="l2-next" href="{up}read/">Return to the current reader &rarr;</a>'
     )
     mid = f'<span class="l2-mid">{i} / {n} &middot; frozen library</span>'
     return f'{PAGER_OPEN}<nav class="l2-pager" aria-label="Document sequence">{left}{mid}{right}</nav>{PAGER_CLOSE}'
