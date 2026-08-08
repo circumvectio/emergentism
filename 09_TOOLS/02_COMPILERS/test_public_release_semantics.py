@@ -173,6 +173,18 @@ class PublicReleaseSemanticsTests(unittest.TestCase):
         paradoxes = (SITE / "discoveries/paradoxes/index.html").read_text(encoding="utf-8")
         self.assertIn('<span class="k">21</span>…and the remaining sixteen', paradoxes)
 
+    def test_home_opens_with_why_how_what_and_one_primary_action(self) -> None:
+        home = (SITE / "index.html").read_text(encoding="utf-8")
+        why = home.index("Why · Emergentism · A worldview for finite beings")
+        how = home.index('id="receipt-loop-title">How ')
+        what = home.index("What · Start with one decision")
+        self.assertLess(why, how)
+        self.assertLess(how, what)
+        hero = home.split('<header class="hero wrap">', 1)[1].split("</header>", 1)[0]
+        self.assertEqual(hero.count('class="btn primary"'), 1)
+        self.assertIn("zero accepted outside outcomes", hero)
+        self.assertNotIn('class="ledger-lede', hero)
+
     def test_atlas_generator_check_binds_full_provenance_payload(self) -> None:
         payload = atlas_builder.build_payload()
         with tempfile.TemporaryDirectory() as tmp:

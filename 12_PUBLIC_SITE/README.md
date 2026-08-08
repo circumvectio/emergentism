@@ -41,18 +41,19 @@ compressed reading, not the primary research interface.
 
 ## Founder value architecture
 
-The public front is organized as a value sequence, not a directory:
+The public front assumes a short attention window and opens with the Golden
+Circle sequence **Why → How → What**, not with corpus architecture:
 
-1. **Identity — Emergentism.** A type-disciplined, revisable worldview that
-   keeps map and territory, possibility and actuality, choice and consequence
-   distinct.
-2. **Human problem — finite action.** Reality exceeds every map, yet finite
+1. **Why — finite action.** Reality exceeds every map, yet finite
    beings still have to choose and act.
-3. **First practice — Finity.** A visitor can use seven prompts to frame one
+2. **How — the receipt loop.** Keep map and territory, possibility and
+   actuality, choice and consequence distinct; make one bounded move; let an
+   observed outcome revise the map.
+3. **What — Finity.** A visitor can use seven prompts to frame one
    live decision, predeclare a review point, and record an observed outcome
    without accepting the wider worldview. Comparative benefit remains `[C]`.
-4. **World contact — the receipt loop.** A map proposes, action meets reality,
-   consequence returns a receipt, and the map is revised.
+4. **Identity — Emergentism.** The deeper worldview remains available after
+   the reader understands the problem, method, and first action.
 5. **Expansion — the Rosetta.** Seven functional terms—constrain, remove,
    enable, commit, create, dissolve, preserve—lead. Mythic names and comparative
    correspondences are optional research mnemonics, not ranks or proof.
