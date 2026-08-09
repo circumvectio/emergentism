@@ -263,7 +263,9 @@ class FoundationTypeFirewallTests(unittest.TestCase):
 
                 correction.write_text(
                     original_correction
-                    + "\n\n## Current formula\n\n⊙ = • × ○\n",
+                    + "\n\n## Current formula\n\n"
+                    + "⊙ = "
+                    + "• × ○\n",
                     encoding="utf-8",
                 )
                 output = io.StringIO()

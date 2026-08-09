@@ -27,9 +27,9 @@ BASELINE_CONTRACT_HASH = "74496df660f0ca989f293c30db652b8f9aeb78beb30fa91fe249d8
 SCHEMA_HASH = "f8c4205af97635f8eea9f83cbf3a1e05ff50a0f64bc6ee8dd54ff61f6df78a3f"
 SCHEMA_ID = "https://emergentism.org/schema/kintsugi/1.0.0"
 SCHEMA_PATH = ROOT / "03_METHODOLOGY/01_THE_DERIVATION/02_KINTSUGI_SCHEMA.json"
-PLAN_PATH = ROOT / "docs/superpowers/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md"
+PLAN_PATH = COMPILER / "kintsugi_kernel/docs/plans/2026-07-12-kintsugi-a0b-machine-kernel-implementation.md"
 COMPILER_README_PATH = ROOT / "09_TOOLS/02_COMPILERS/README.md"
-HANDOFF_PATH = ROOT / "docs/superpowers/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md"
+HANDOFF_PATH = COMPILER / "kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0b-machine-kernel-handoff.md"
 ROOT_ROLES = {"coreData", "publicQueue", "baselineAllowlist"}
 REVIEW_HISTORY = {
     "reviewAttempts",

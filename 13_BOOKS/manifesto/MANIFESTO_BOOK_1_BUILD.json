@@ -19,13 +19,13 @@
     },
     {
       "path": "00_META/claim_cards/finity_practice.yaml",
-      "reviewed_source_sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
+      "reviewed_source_sha256": "f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d",
       "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
       "work_id": "BK-FINITY-PRACTICE"
     },
     {
       "path": "00_META/claim_cards/one_sitting.yaml",
-      "reviewed_source_sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
+      "reviewed_source_sha256": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
       "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
@@ -55,19 +55,19 @@
     },
     {
       "path": "00_META/claim_cards/titans_formal.yaml",
-      "reviewed_source_sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c",
+      "reviewed_source_sha256": "67edc93793eb88dea6ca4561de6bbb284983f81c7b1be5caf236f1aafcac7b15",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
       "work_id": "BK-TITANS"
     },
     {
       "path": "00_META/claim_cards/titans_inversion.yaml",
-      "reviewed_source_sha256": "2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3",
+      "reviewed_source_sha256": "4b37c7fc77dc7a79fa97acf55588eefc70dc7a1e2b01bc3061a6fec2164efe77",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
       "work_id": "BK-TITANS"
     },
     {
       "path": "00_META/claim_cards/titans_narrative.yaml",
-      "reviewed_source_sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816",
+      "reviewed_source_sha256": "165922a73360b8ce3ac9c3effb6c8a3733fbf376e1744a780b64675f8b026858",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
       "work_id": "BK-TITANS"
     },
@@ -84,19 +84,19 @@
     {
       "path": "13_BOOKS/manifesto/manifesto-contract.json",
       "role": "preamble_contract",
-      "sha256": "5896c1ae377977ebc0e3b746a00d9095cfd594df0b0d6610738803254978da43"
+      "sha256": "912eac4caea90777dacde0cf0eeb14c72713c8e9e209f34737f101465652847c"
     },
     {
       "path": "13_BOOKS/book-manifest.json",
       "role": "book_manifest_custody",
-      "sha256": "00162b2ff1eee1e606d2cbb1df4eb6cf40d9f7def51be74bccbc0b231866b454"
+      "sha256": "660998271b689de305bb653bcac401d74e7d280d354d82f33f938e78130e354b"
     }
   ],
   "modules": [
     {
       "path": "13_BOOKS/manifesto/MANIFESTO_DRAFT_0.md",
       "role": "preamble",
-      "sha256": "810465b8f25fe57851b71e83a770cdb90dc03ef78b565b15de0d697989d30a18"
+      "sha256": "6726ac84268e14ce2fb87bf10ffbe1964f531398e21486915b59d6d4cf152a06"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/PART_I_THE_FINITE_CONDITION.md",
@@ -111,23 +111,23 @@
     {
       "path": "13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md",
       "role": "part_iv_v",
-      "sha256": "96763c5daa3453f2a4c8a0e9731a6a7bf9e5a6eace941fbd6d2c81024e2c284d"
+      "sha256": "a6a1f96228491700fd2ec4388cfdc0f02ef4250c8d448a42137b415882c868f1"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/APPENDICES_AND_WORKSHEETS.md",
       "role": "appendices",
-      "sha256": "6997218c382d4558f3b5326ec4a59b655b8bd89874dcf0f5345ca3bfab4733d6"
+      "sha256": "e956cb674d3f9f9a2ba750dc34dcf6c0336ffce4a466dc6f99e0c94ef15f193e"
     }
   ],
   "output": {
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-    "sha256": "0839deb18753b95f90b3a723b7be0a72afeaa312f04e77a40062e44b303d37cc",
-    "word_count": 63578
+    "sha256": "1d90a76fd1f124d4ffd3058628d7517b4539ab5ad3847185435f5092714f212a",
+    "word_count": 63615
   },
   "paragraph_ledger": {
     "count": 638,
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
-    "sha256": "1c55a63abc1c8e47ed424f4ca9756e1afc11b2583238b62492660395dcbdc511"
+    "sha256": "fa36d09509fe351c08cf2f3b4993ef0c037b8c2d2acc5c7dcca6a79d9f2471ee"
   },
   "public_disposition": "not_a_public_route",
   "schema": "emergentism/full-book-build/v1"

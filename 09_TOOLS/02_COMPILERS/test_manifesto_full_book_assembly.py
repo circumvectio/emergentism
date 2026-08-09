@@ -8,12 +8,16 @@ worldview claim is true or ready for public release.
 
 from __future__ import annotations
 
+import hashlib
+import importlib.util
 import json
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -27,6 +31,11 @@ CARD_DIR = ROOT / "00_META/claim_cards"
 PREAMBLE_CONTRACT_PATH = MANIFESTO / "manifesto-contract.json"
 BOOK_MANIFEST_PATH = ROOT / "13_BOOKS/book-manifest.json"
 COMPLETION_GATE_PATH = MANIFESTO / "FULL_BOOK_1_COMPLETION_GATE.md"
+
+SPEC = importlib.util.spec_from_file_location("assemble_manifesto_book", ASSEMBLER)
+assert SPEC and SPEC.loader
+COMPILER = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(COMPILER)
 
 MARKER = re.compile(r"<!-- FULLBOOK-P: ([a-z0-9_-]+) -->")
 CARD_ID = re.compile(r"\b[A-Z]+\d{2}-\d{2}\b")
@@ -66,6 +75,50 @@ class ManifestoFullBookAssemblyTests(unittest.TestCase):
         cls.book_manifest = json.loads(BOOK_MANIFEST_PATH.read_text(encoding="utf-8"))
         cls.units = marker_units(cls.book)
         cls.chapter_by_id = {chapter["id"]: chapter for chapter in cls.contract["chapters"]}
+
+    def manual_custody_fixture(self, staged_path: str) -> tuple[Path, Path, Path]:
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        root = Path(temporary.name) / "corpus"
+        books = root / "13_BOOKS"
+        books.mkdir(parents=True)
+        manifest_path = books / "book-manifest.json"
+        manifest_path.write_text(
+            json.dumps({
+                "works": [{
+                    "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+                    "historical_sources": [{
+                        "path": "legacy/reciprocal.md",
+                        "lifecycle": "frozen",
+                        "reviewed_source_sha256": "a" * 64,
+                    }],
+                    "build_provenance": {
+                        "type": "manual",
+                        "description": "manual custody fixture",
+                        "verification": "focused mutation test",
+                    },
+                    "staged_critical_edition": staged_path,
+                }],
+                "editorial_architecture": {
+                    "nonbook_claim_routes": [{
+                        "work_id": "BK-RECIPROCAL-INFINITE-PLAY",
+                        "route_id": "CUSTODY-ONLY-RECIPROCAL-ARCHIVE",
+                        "primary_home": "13_BOOKS/reciprocal_infinite_play",
+                    }],
+                },
+            }),
+            encoding="utf-8",
+        )
+        return root, books, manifest_path
+
+    def render_manual_custody(self, root: Path, books: Path, manifest_path: Path) -> str:
+        with mock.patch.multiple(
+            COMPILER,
+            ROOT=root,
+            BOOKS=books,
+            BOOK_MANIFEST=manifest_path,
+        ):
+            return COMPILER.custody_note()
 
     def test_assembler_is_deterministic_and_receipts_are_current(self) -> None:
         result = subprocess.run(
@@ -237,8 +290,10 @@ class ManifestoFullBookAssemblyTests(unittest.TestCase):
         sarpasya = next(row for row in self.book_manifest["works"] if row["work_id"] == "BK-SARPASYA")
         genealogy_header = self.units["p5-16-001"]
         source = sarpasya["historical_sources"][0]
-        self.assertIn(source["path"], genealogy_header)
-        self.assertIn(source["reviewed_source_sha256"], genealogy_header)
+        source_path = source if isinstance(source, str) else source["path"]
+        self.assertIn(source_path, genealogy_header)
+        sarpasya_card_source = self.cards["SV01-02"]["_source"]
+        self.assertIn(sarpasya_card_source["reviewed_source_sha256"], genealogy_header)
         self.assertIn(sarpasya["build_provenance"]["path"], genealogy_header)
         self.assertIn(sarpasya["build_provenance"]["sha256"], genealogy_header)
         self.assertIn("13_BOOKS/sarpasya_vijayam/DEBRIEF.md", genealogy_header)
@@ -260,8 +315,55 @@ class ManifestoFullBookAssemblyTests(unittest.TestCase):
         for source in reciprocal["historical_sources"]:
             self.assertIn(source["path"], custody)
             self.assertIn(source["reviewed_source_sha256"], custody)
-        self.assertIn(reciprocal["build_provenance"]["path"], custody)
-        self.assertIn(reciprocal["build_provenance"]["sha256"], custody)
+        provenance = reciprocal["build_provenance"]
+        self.assertEqual(provenance["type"], "manual")
+        staged_path = reciprocal["staged_critical_edition"]
+        staged_sha = hashlib.sha256((ROOT / "13_BOOKS" / staged_path).read_bytes()).hexdigest()
+        self.assertIn(staged_path, custody)
+        self.assertIn(staged_sha, custody)
+
+    def test_manual_custody_rejects_absolute_staged_path(self) -> None:
+        root, books, manifest_path = self.manual_custody_fixture("/etc/hosts")
+        with self.assertRaisesRegex(
+            COMPILER.ContractError,
+            "must be relative to 13_BOOKS",
+        ):
+            self.render_manual_custody(root, books, manifest_path)
+
+    def test_manual_custody_rejects_parent_traversal(self) -> None:
+        root, books, manifest_path = self.manual_custody_fixture("../escape.md")
+        (root / "escape.md").write_text("outside custody", encoding="utf-8")
+        with self.assertRaisesRegex(COMPILER.ContractError, "parent traversal"):
+            self.render_manual_custody(root, books, manifest_path)
+
+    def test_manual_custody_rejects_file_symlink(self) -> None:
+        root, books, manifest_path = self.manual_custody_fixture("linked.md")
+        outside = root / "outside.md"
+        outside.write_text("outside custody", encoding="utf-8")
+        try:
+            (books / "linked.md").symlink_to(outside)
+        except (NotImplementedError, OSError) as exc:
+            self.skipTest(f"file symlinks unavailable: {exc}")
+        with self.assertRaisesRegex(COMPILER.ContractError, "symlink component"):
+            self.render_manual_custody(root, books, manifest_path)
+
+    def test_manual_custody_rejects_parent_directory_symlink(self) -> None:
+        root, books, manifest_path = self.manual_custody_fixture("linked/staged.md")
+        outside = root / "outside"
+        outside.mkdir()
+        (outside / "staged.md").write_text("outside custody", encoding="utf-8")
+        try:
+            (books / "linked").symlink_to(outside, target_is_directory=True)
+        except (NotImplementedError, OSError) as exc:
+            self.skipTest(f"directory symlinks unavailable: {exc}")
+        with self.assertRaisesRegex(COMPILER.ContractError, "symlink component"):
+            self.render_manual_custody(root, books, manifest_path)
+
+    def test_manual_custody_requires_a_regular_file(self) -> None:
+        root, books, manifest_path = self.manual_custody_fixture("staged-directory")
+        (books / "staged-directory").mkdir()
+        with self.assertRaisesRegex(COMPILER.ContractError, "regular file"):
+            self.render_manual_custody(root, books, manifest_path)
 
     def test_only_declared_atlas_and_docket_markers_cover_an_immediately_following_heading(self) -> None:
         for marker_id, unit in self.units.items():

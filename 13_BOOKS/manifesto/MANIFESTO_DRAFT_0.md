@@ -258,14 +258,14 @@ Source cards: `OS01-13`, `OS01-25`, `OS01-26`, `FIN01-01`.
 <!-- MANIFESTO-P: book_table -->
 | Work | Reader job | Release state | Public route |
 |---|---|---|---|
-| *The Emergentist Weltanschauung — One-Sitting Edition* | current reader spine | `source_active_projection_review_open` | `../12_PUBLIC_SITE/book/index.html` |
+| *The Emergentist Weltanschauung — One-Sitting Edition* | current reader spine | `source_active_current_public_reader` | `../12_PUBLIC_SITE/book/index.html` |
 | *The Finity Card — Lived Compass Practice* | optional bounded first practice | `source_active_public_projection` | `../12_PUBLIC_SITE/practice/index.html` |
 | *The Titans — The Infinite, Finity & Infinity* | formal research annex | `research_critical_edition_staged_not_public` | — |
 | *The Self-Eating Serpent* | critical immune-protocol genealogy | `historical_readonly_critical_edition_staged` | — |
 | *Dharma Yuddha* | justice casebook | `critical_edition_staged_not_public` | — |
 | *Six-Fold Revelation / Six Lenses* | comparative-method appendix | `historical_readonly_critical_edition_staged` | — |
 | *Sarpasya Vijayam* | critical genealogy and dissolution record | `historical_readonly_critical_edition_staged` | — |
-| *The Reciprocal / Infinite Play* | frozen genealogy | `legacy_and_frozen_critical_edition_staged` | — |
+| *The Reciprocal / Infinite Play* | frozen genealogy | `withheld_staged_provenance_not_current_not_rag` | — |
 | *The Evolutionary Network* | institutional research dossier | `proposal_critical_edition_staged_not_public` | — |
 
 ## What this manifesto refuses

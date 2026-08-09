@@ -60,6 +60,20 @@
     "commit": "cf7e43b05cd44cb4c6244b1bfe1d1827ed31e26c",
     "pathCount": 26,
     "sortedPathSetSha256": "c4e7224f119918e6f861acf5a07ca0fcc4794af8bf36aa21ee2f6663338d7b34",
+    "currentPathMoves": [
+      {
+        "historicalPath": "05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER.md",
+        "currentPath": "90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/00_THE_BURRI_RULES_LEDGER.md",
+        "custody": "archived_provenance",
+        "semanticAuthority": "none"
+      },
+      {
+        "historicalPath": "05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md",
+        "currentPath": "90_ARCHIVE/pure_emergentism_boundary_2026_07_20/05_COSMOLOGY/03_FORMAL_SYSTEM/13_EFR_TWO_SACRIFICES.md",
+        "custody": "archived_provenance",
+        "semanticAuthority": "none"
+      }
+    ],
     "paths": [
       "00_META/00_SETTLED_CANON_REGISTRY.md",
       "00_THE_COMPASS.md",
@@ -95,6 +109,7 @@
     "sortedPathSetSha256": "5b55e284353ce5dbeea9e0015800c2560345dd2dde05fe09e3dc322401479083",
     "enumeration": "sorted unique non-empty paths emitted by git show --pretty=format: --name-only <commit>"
   },
+  "mutationCount": 14,
   "mutations": [
     {
       "id": "empirical-chart-inflation",
@@ -106,7 +121,7 @@
     },
     {
       "id": "forced-sevenfold-necessity",
-      "owner": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md"
+      "owner": "00_META/00_SETTLED_CANON_REGISTRY.md"
     },
     {
       "id": "missing-law-irreducibility",
@@ -138,7 +153,7 @@
     },
     {
       "id": "physical-cone-expansion",
-      "owner": "00_THE_COMPASS.md"
+      "owner": "00_META/00_THE_COMPASS.md"
     },
     {
       "id": "physical-retrocausal-inflation",
@@ -158,11 +173,11 @@
       "id": "triadic-cascade-no-uniqueness",
       "path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/09_THE_TRIADIC_CASCADE.md",
       "requiredMarkers": [
-        "recurrence survives; uniqueness does not",
-        "selected triadic lens, not a uniqueness theorem"
+        "N=3 is **selected, not uniquely forced/proved**",
+        "The cascade is a theory imposed provisionally on several domains."
       ],
       "forbiddenPatterns": [
-        "proves\\s+N\\s*=\\s*3\\s+is\\s+the\\s+unique stable configuration",
+        "(?m)^[^>\\n]*\\bproves\\s+N\\s*=\\s*3\\s+is\\s+the\\s+unique stable configuration",
         "The same Trinity\\..{0,80}Always three"
       ]
     },
@@ -170,20 +185,20 @@
       "id": "godel-no-self-grounding",
       "path": "05_COSMOLOGY/03_FORMAL_SYSTEM/09_EFR_GODEL_CLARIFICATION.md",
       "requiredMarkers": [
-        "No active proof presently establishes",
-        "A7 is therefore a chosen and prudent research discipline"
+        "SUPERSEDED — NO CURRENT SEMANTIC AUTHORITY",
+        "No active proof presently establishes"
       ],
       "forbiddenPatterns": [
-        "grounds the framework in the unique projective frame",
-        "The axiom set is unique \\(η = 0\\) — proved"
+        "(?m)^status:\\s*\"(?:ACTIVE|CANONICAL)[^\"\\n]*\"",
+        "(?m)^evidence_tier:\\s*\"\\[(?:A|S|I)\\][^\"\\n]*\""
       ]
     },
     {
       "id": "core-concepts-justice-before-power",
       "path": "08_FRAMEWORK_SUPPORT/01_GOVERNANCE/00_CORE_CONCEPTS.md",
       "requiredMarkers": [
-        "Justice defines the admissible action set before Power-Max",
-        "aggregate gain cannot launder destruction"
+        "The framework separately declares bearer-complete Justice",
+        "Aggregate gain cannot launder a harmed bearer."
       ],
       "forbiddenPatterns": [
         "formal proof of cooperation under coupling",
@@ -194,8 +209,8 @@
       "id": "d5-strong-emergence-remains-candidate",
       "path": "05_COSMOLOGY/00_D5_REGISTER_GAME_THEORY_AND_BEHAVIORAL_ECONOMICS.md",
       "requiredMarkers": [
-        "candidate_strong",
-        "not a declaration that D5 is irreducible"
+        "The Candidate `μ₄` Crossing and the Opacity Claim",
+        "computational opacity is not ontological irreducibility"
       ],
       "forbiddenPatterns": [
         "From below,\\s*`D5`\\s*is strongly emergent"
@@ -205,10 +220,11 @@
       "id": "money-born-rule-removable-analogy",
       "path": "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_288_Money_Is_the_Born_Rule.md",
       "requiredMarkers": [
-        "This correspondence is removable",
-        "neither is a Born-rule identity or a product proof"
+        "SUPERSEDED — no current semantic authority",
+        "former paper depended on superseded dimensional, quantum, or application mappings"
       ],
       "forbiddenPatterns": [
+        "(?m)^status:\\s*\"(?:ACTIVE|CANONICAL)[^\"\\n]*\"",
         "only algebraically consistent projection from\\s*ℂ\\s*to\\s*ℝ⁺",
         "Price is \\|z\\|² — the Born rule applied to value"
       ]
@@ -217,10 +233,11 @@
       "id": "topology-authorization-assessment-not-permission-fiction",
       "path": "05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json",
       "requiredMarkers": [
-        "authorized, unauthorized, nonconsequential, refused, or unavailable",
-        "D6 yields a reproducible positive capacity not already represented in D0-D5"
+        "\"id\": \"b6\"",
+        "\"edgeType\": \"authorization-assessment\""
       ],
       "forbiddenPatterns": [
+        "\"id\":\\s*\"mu-5\"",
         "commits one D4 attempt through means and accountable authorization"
       ]
     }
@@ -236,7 +253,7 @@
     "meaning": "No exact registered fallacy mutation may appear on an active surface. This lexical gate is regression evidence, not a general semantic theorem prover."
   },
   "closureCriteria": [
-    "all 26 source-owner paths exist and carry their registered repair marker",
+    "the historical 26-path source-owner set is reproducible and every later move is explicitly mapped to non-authoritative archived custody",
     "the 345-path propagation set is exactly reproducible from its Git object",
     "all fourteen mutation fixtures and six derived-seam regressions are rejected by owner-bound tests",
     "the optional quantum correspondence can be removed without changing the operational projection",
@@ -248,6 +265,7 @@
     "Closure means only that the registered fracture contract reproduces; it is not semantic closure of every sentence in the corpus.",
     "The validator checks declared types, path custody, exact mutation regressions, derived sentinels, and executable finite models; it cannot prove metaphysical truth.",
     "The propagation-126 closure does not constitute external empirical calibration.",
+    "Two historical owner-repair paths now survive only as archived provenance; the current move map preserves custody without reviving semantic authority.",
     "Legacy terms may remain inside quotations, compatibility notes, retractions, and historical receipts when their non-authority is explicit."
   ]
 }

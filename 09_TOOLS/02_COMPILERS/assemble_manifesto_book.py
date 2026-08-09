@@ -13,6 +13,7 @@ import argparse
 import hashlib
 import json
 import re
+import stat
 import sys
 from pathlib import Path
 from typing import Any
@@ -284,6 +285,69 @@ def docket_atlas(dockets: dict[str, Any]) -> str:
     return "\n".join(rows)
 
 
+def staged_custody_artifact(staged_path: str) -> Path:
+    """Resolve one regular, non-symlink artifact contained by ``13_BOOKS``."""
+    relative = Path(staged_path)
+    if relative.is_absolute():
+        raise ContractError(
+            "frozen Reciprocal staged_critical_edition must be relative to 13_BOOKS"
+        )
+    if ".." in relative.parts:
+        raise ContractError(
+            "frozen Reciprocal staged_critical_edition must not contain parent traversal"
+        )
+
+    staged_artifact = BOOKS / relative
+    try:
+        staged_artifact.relative_to(BOOKS)
+    except ValueError as exc:
+        raise ContractError(
+            "frozen Reciprocal staged_critical_edition escapes 13_BOOKS lexically"
+        ) from exc
+
+    components = [BOOKS]
+    current = BOOKS
+    for part in relative.parts:
+        current /= part
+        components.append(current)
+    for current in components:
+        try:
+            if current.is_symlink():
+                raise ContractError(
+                    "frozen Reciprocal staged_critical_edition crosses a symlink component"
+                )
+        except OSError as exc:
+            raise ContractError(
+                "cannot inspect frozen Reciprocal staged_critical_edition path custody"
+            ) from exc
+
+    try:
+        books_resolved = BOOKS.resolve(strict=True)
+        staged_resolved = staged_artifact.resolve(strict=True)
+    except (OSError, RuntimeError) as exc:
+        raise ContractError(
+            f"missing frozen Reciprocal staged artifact: {staged_path}"
+        ) from exc
+    try:
+        staged_resolved.relative_to(books_resolved)
+    except ValueError as exc:
+        raise ContractError(
+            "frozen Reciprocal staged_critical_edition escapes 13_BOOKS after resolution"
+        ) from exc
+
+    try:
+        mode = staged_artifact.lstat().st_mode
+    except OSError as exc:
+        raise ContractError(
+            f"cannot inspect frozen Reciprocal staged artifact: {staged_path}"
+        ) from exc
+    if not stat.S_ISREG(mode):
+        raise ContractError(
+            "frozen Reciprocal staged_critical_edition must be a regular file"
+        )
+    return staged_artifact
+
+
 def custody_note() -> str:
     """Render custody metadata only for the frozen Reciprocal source."""
     manifest = read_json(BOOK_MANIFEST)
@@ -299,6 +363,25 @@ def custody_note() -> str:
     provenance = work.get("build_provenance")
     if not isinstance(provenance, dict):
         raise ContractError("frozen Reciprocal custody work lacks critical-edition provenance")
+    provenance_type = provenance.get("type")
+    if provenance_type == "projection_artifact":
+        if not isinstance(provenance.get("path"), str) or not isinstance(provenance.get("sha256"), str):
+            raise ContractError("frozen Reciprocal projection provenance is malformed")
+        provenance_rows = [
+            f"- **Critical-edition projection:** `{provenance['path']}`; **SHA-256:** `{provenance['sha256']}`."
+        ]
+    elif provenance_type == "manual":
+        staged_path = work.get("staged_critical_edition")
+        description = provenance.get("description")
+        verification = provenance.get("verification")
+        if not all(isinstance(value, str) and value for value in (staged_path, description, verification)):
+            raise ContractError("frozen Reciprocal manual provenance is malformed")
+        staged_artifact = staged_custody_artifact(staged_path)
+        provenance_rows = [
+            f"- **Staged private custody artifact:** `{staged_path}`; **current SHA-256:** `{sha256(staged_artifact.read_bytes())}`.",
+        ]
+    else:
+        raise ContractError("frozen Reciprocal custody work has unsupported provenance type")
     routes = manifest.get("editorial_architecture", {}).get("nonbook_claim_routes", [])
     route = next(
         (row for row in routes if row.get("work_id") == work["work_id"]),
@@ -322,7 +405,7 @@ def custody_note() -> str:
         "- **Frozen lifecycle:** `frozen`.",
         "- **Preservation reason:** retain historical provenance without regenerating any claim prose.",
         *source_rows,
-        f"- **Critical-edition projection:** `{provenance['path']}`; **SHA-256:** `{provenance['sha256']}`.",
+        *provenance_rows,
         "- **Debrief route:** `13_BOOKS/reciprocal_infinite_play/DEBRIEF.md`.",
         f"- **Custody route:** `{route['route_id']}`; **primary home:** `{route['primary_home']}`.",
         "Source cards: none — custody metadata.",

@@ -13,9 +13,10 @@ import hashlib
 import importlib.util
 import json
 import re
+import stat
 import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from types import ModuleType
 from typing import Mapping, Sequence
 
@@ -75,6 +76,81 @@ def _tracked_text_paths(excluded_prefixes: Sequence[str]) -> tuple[Path, ...]:
     )
 
 
+def _validate_archived_custody_path(relative: str, errors: list[str]) -> None:
+    """Require an in-repository, symlink-free regular file under 90_ARCHIVE."""
+
+    if (
+        "\x00" in relative
+        or "\\" in relative
+        or PurePosixPath(relative).is_absolute()
+        or re.match(r"^[A-Za-z]:", relative)
+    ):
+        errors.append(
+            "ownerRepair currentPath must be a repository-relative POSIX path "
+            f"under 90_ARCHIVE: {relative}"
+        )
+        return
+
+    lexical = PurePosixPath(relative)
+    if ".." in lexical.parts:
+        errors.append(
+            f"ownerRepair currentPath must not contain '..' traversal: {relative}"
+        )
+        return
+    if not lexical.parts or lexical.parts[0] != "90_ARCHIVE":
+        errors.append(
+            "ownerRepair archived custody must remain lexically under "
+            f"90_ARCHIVE: {relative}"
+        )
+        return
+
+    candidate = ROOT.joinpath(*lexical.parts)
+    archive_root = ROOT / "90_ARCHIVE"
+    cursor = ROOT
+    symlink_found = False
+    for part in lexical.parts:
+        cursor /= part
+        try:
+            if cursor.is_symlink():
+                symlink_found = True
+                break
+        except OSError:
+            # The regular-file and strict-resolution checks below fail closed.
+            break
+    if symlink_found:
+        errors.append(
+            "ownerRepair currentPath must not contain direct or ancestor "
+            f"symlinks: {relative}"
+        )
+
+    try:
+        resolved_archive = archive_root.resolve(strict=True)
+        resolved_candidate = candidate.resolve(strict=True)
+    except (OSError, RuntimeError, ValueError):
+        errors.append(
+            f"ownerRepair moved custody path must resolve to an existing file: {relative}"
+        )
+        return
+    try:
+        resolved_candidate.relative_to(resolved_archive)
+    except ValueError:
+        errors.append(
+            f"ownerRepair currentPath resolves outside 90_ARCHIVE: {relative}"
+        )
+
+    try:
+        mode = candidate.lstat().st_mode
+    except (OSError, ValueError):
+        errors.append(
+            f"ownerRepair moved custody path must be an existing regular file: {relative}"
+        )
+        return
+    if not stat.S_ISREG(mode):
+        errors.append(
+            f"ownerRepair moved custody path must be an existing regular file: {relative}"
+        )
+
+
 def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
     errors: list[str] = []
     if manifest.get("schemaVersion") != "1.0":
@@ -122,9 +198,42 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
         errors.append("ownerRepair paths must be unique")
     if len(owner_paths) != owner_record.get("pathCount"):
         errors.append("ownerRepair pathCount does not match its explicit path list")
-    for relative in owner_paths:
-        if not (ROOT / relative).is_file():
-            errors.append(f"owner path is absent: {relative}")
+    move_records = owner_record.get("currentPathMoves", [])
+    if not isinstance(move_records, list):
+        errors.append("ownerRepair currentPathMoves must be a list")
+        move_records = []
+    current_path_moves: dict[str, str] = {}
+    current_targets: set[str] = set()
+    for record in move_records:
+        if not isinstance(record, Mapping):
+            errors.append("ownerRepair move record must be an object")
+            continue
+        historical = str(record.get("historicalPath", ""))
+        current = str(record.get("currentPath", ""))
+        if not historical or historical in current_path_moves:
+            errors.append("ownerRepair move historical paths must be non-empty and unique")
+            continue
+        if not current or current in current_targets:
+            errors.append("ownerRepair move current paths must be non-empty and unique")
+            continue
+        current_path_moves[historical] = current
+        current_targets.add(current)
+        if historical not in owner_paths:
+            errors.append(f"ownerRepair move source is not in the historical path set: {historical}")
+        if (ROOT / historical).exists():
+            errors.append(f"ownerRepair move source unexpectedly exists again: {historical}")
+        _validate_archived_custody_path(current, errors)
+        if record.get("custody") != "archived_provenance":
+            errors.append(f"ownerRepair move custody must remain archived_provenance: {historical}")
+        if record.get("semanticAuthority") != "none":
+            errors.append(f"ownerRepair move must deny semantic authority: {historical}")
+    absent_historical_paths = {
+        relative for relative in owner_paths if not (ROOT / relative).is_file()
+    }
+    if set(current_path_moves) != absent_historical_paths:
+        errors.append(
+            "ownerRepair currentPathMoves must map exactly the absent historical owner paths"
+        )
     try:
         recorded_owner_paths = _commit_paths(str(owner_record.get("commit", "")))
     except subprocess.CalledProcessError:
@@ -155,14 +264,21 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
     if not isinstance(manifest_mutations, list):
         errors.append("mutations must be a list")
         manifest_mutations = []
+    mutation_count = manifest.get("mutationCount")
+    if mutation_count != len(specs):
+        errors.append("mutationCount differs from the executable mutation inventory")
     registered = {
         str(item.get("id")): str(item.get("owner"))
         for item in manifest_mutations
         if isinstance(item, Mapping)
     }
     expected = {spec.mutation_id: spec.owner for spec in specs}
-    if len(manifest_mutations) != 14 or registered != expected:
-        errors.append("manifest must bind exactly the fourteen executable mutations")
+    if (
+        len(manifest_mutations) != mutation_count
+        or len(registered) != len(manifest_mutations)
+        or registered != expected
+    ):
+        errors.append("manifest must bind exactly the current executable mutations")
 
     boundary_validator = semantic_module.ClaimBoundaryValidator(specs)
     for spec in specs:
@@ -224,6 +340,7 @@ def validate_manifest(manifest: Mapping[str, object]) -> dict[str, object]:
     return {
         "status": "ok",
         "owners": len(owner_paths),
+        "movedOwners": len(current_path_moves),
         "mutations": len(specs),
         "derivedSeams": len(derived_seams),
         "propagationPaths": len(propagation_paths),
@@ -253,6 +370,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         print(
             "PROP-126-OK "
             f"owners={result['owners']} "
+            f"movedOwners={result['movedOwners']} "
             f"mutations={result['mutations']} "
             f"derivedSeams={result['derivedSeams']} "
             f"propagationPaths={result['propagationPaths']} "

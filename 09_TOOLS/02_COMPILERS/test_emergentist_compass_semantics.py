@@ -1079,8 +1079,11 @@ class CollectivePowerAndValueTests(unittest.TestCase):
         owner = owner_text(
             "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md"
         )
-        self.assertIn("upper\nsemicontinuous", owner)
-        self.assertIn("a_\\varepsilon", owner)
+        self.assertIn(
+            "If the maximum is not attained, use a declared `ε`-optimal action",
+            owner,
+        )
+        self.assertIn("finite supremum exists", owner)
 
     def test_moral_ethical_and_strict_syntropic_directions(self) -> None:
         self.assertEqual(
@@ -1268,7 +1271,7 @@ MUTATIONS: tuple[MutationSpec, ...] = (
     ),
     MutationSpec(
         "forced-sevenfold-necessity",
-        "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md",
+        "00_META/00_SETTLED_CANON_REGISTRY.md",
         "not a necessary decomposition of nature",
         "D0-D6 is a selected structural and interpretive scaffold.",
         "Nature necessarily decomposes into exactly D0-D6 because S2 forces seven layers.",
@@ -1317,7 +1320,7 @@ MUTATIONS: tuple[MutationSpec, ...] = (
     MutationSpec(
         "legacy-spelling",
         "05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md",
-        "**Egregoreotype** is canonical",
+        "**Egregoreotype** is the canonical spelling.",
         "Egregoreotype is the canonical active spelling.",
         "The canonical active term is Egregorotype.",
         r"canonical active term is Egregorotype",
@@ -1325,14 +1328,14 @@ MUTATIONS: tuple[MutationSpec, ...] = (
     MutationSpec(
         "worldview-authority-boundary",
         "00_META/00_SETTLED_CANON_REGISTRY.md",
-        "it is not a primitive of reality, the Soul Loop, ethics, or the Compass.",
+        "is not a primitive of reality, the Soul Loop, ethics, or the Compass.",
         "Consequential action requires complete accountable authorization.",
         "K2 is a universal primitive required for agency and ethics.",
         r"K2 is a universal primitive required for agency and ethics",
     ),
     MutationSpec(
         "physical-cone-expansion",
-        "00_THE_COMPASS.md",
+        "00_META/00_THE_COMPASS.md",
         "More foresight does not widen the physical light cone or exceed `c`.",
         "Models can widen option cones only inside physical admissibility.",
         "Human intelligence widens the physical light cone beyond c.",
@@ -1349,7 +1352,7 @@ MUTATIONS: tuple[MutationSpec, ...] = (
     MutationSpec(
         "aggregate-ethical-laundering",
         "04_AXIOLOGY/02_VALUE_THEORY/00_OBJECTIVE_MORALS_AND_ETHICS.md",
-        "extraction, even if aggregate rises",
+        "A large gain to one bearer cannot silently compensate for the destruction of",
         "Each bearer remains separately visible under Justice.",
         "The action is ethical because total gain is positive even though the individual is destroyed.",
         r"ethical because total gain is positive.{0,50}individual is destroyed",
@@ -1357,7 +1360,7 @@ MUTATIONS: tuple[MutationSpec, ...] = (
     MutationSpec(
         "unconditional-power-max",
         "05_COSMOLOGY/03_FORMAL_SYSTEM/08_EFR_POWER_MAX_LEMMA.md",
-        "Justice defines the admissible field; Power-Max chooses within it.",
+        "Justice defines the feasible field. Maximization does not create or justify",
         "Power-Max selects only inside the Justice-admissible field.",
         "Power-Max is moral whenever it maximizes W_i, without any Justice constraint.",
         r"Power-Max is moral whenever it maximizes W_i.{0,50}without any Justice constraint",
@@ -1437,9 +1440,17 @@ class QuantumRemovalAndMutationTests(unittest.TestCase):
     def test_legacy_spelling_is_only_an_explicit_owner_alias(self) -> None:
         source = owner_text("05_COSMOLOGY/00_STIGMERGY_AND_THE_EGREGOROTYPE.md")
         legacy_occurrences = re.findall(r"\bEgregorotype\b", source)
-        self.assertEqual(legacy_occurrences, ["Egregorotype"])
-        self.assertIn("**Compatibility note:**", source)
-        self.assertIn("**Egregoreotype** is canonical", source)
+        self.assertEqual(legacy_occurrences, ["Egregorotype", "Egregorotype"])
+        self.assertIn(
+            'legacy_path_note: "Filename retains Egregorotype only for link stability;',
+            source,
+        )
+        self.assertIn("**Egregoreotype** is the canonical spelling.", source)
+        self.assertIn(
+            "**Egregorotype** is retained only in this filename, quotations, and historical\n"
+            "records",
+            source,
+        )
 
     def test_invalid_scalar_sampling_expression_is_absent_from_mu_owner(self) -> None:
         source = owner_text("05_COSMOLOGY/03_FORMAL_SYSTEM/10_EFR_MU_LIMIT_FORMULA.md")
@@ -1450,35 +1461,53 @@ class QuantumRemovalAndMutationTests(unittest.TestCase):
         primitives = owner_text(
             "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
         )
-        self.assertIn("evidenceStatus: supplied | not_yet_supplied", primitives)
+        self.assertIn(
+            "evidenceStatus: not_applicable | supplied | not_yet_supplied",
+            primitives,
+        )
+        self.assertIn("μ₀.evidenceStatus = not_applicable", primitives)
+        self.assertIn(
+            "for μ₁…μ₄: evidenceStatus = not_yet_supplied iff saturationEvidence = []",
+            primitives,
+        )
         topology = json.loads(
             owner_text("05_COSMOLOGY/00_BURRI_RULES_TOPOLOGY.json")
         )
         crossings = [
             node for node in topology["nodes"] if node["kind"] == "crossing"
         ]
-        self.assertEqual({node["id"] for node in crossings}, {f"mu-{i}" for i in range(6)})
+        self.assertEqual({node["id"] for node in crossings}, {f"mu-{i}" for i in range(5)})
         for crossing in crossings:
             with self.subTest(crossing=crossing["id"]):
-                self.assertEqual(crossing["saturationEvidence"], [])
-                self.assertEqual(
-                    crossing["evidenceStatus"], "not_yet_supplied"
-                )
+                for semantic_field in (
+                    "triggerType",
+                    "saturatedRegister",
+                    "saturationEvidence",
+                    "evidenceStatus",
+                    "prediction",
+                    "killCriterion",
+                ):
+                    self.assertNotIn(semantic_field, crossing)
 
     def test_fixed_modality_and_closure_contract_is_present_in_type_owner(self) -> None:
         source = owner_text(
             "05_COSMOLOGY/03_FORMAL_SYSTEM/29_PRIMITIVES_AND_TYPE_SIGNATURES.md"
         )
-        self.assertIn("| `D4` | **actual** |", source)
-        self.assertIn("| `D5` | **merely possible** |", source)
+        self.assertIn("| `D4` | **actual event** |", source)
+        self.assertIn("| `D5` | **possible content** |", source)
+        self.assertIn("merely possible counterfactuals", source)
         self.assertIn("ModeledFutureToken := {", source)
         self.assertIn("carrierRegister: D4", source)
         self.assertIn("carrierModality: actual", source)
         self.assertIn("AlternativeContent   :=", source)
         self.assertNotRegex(source, r"ModeledFutureToken[^}]+modality:merely_possible")
-        self.assertIn("There are exactly six adjacent crossing identifiers `μ₀…μ₅`.", source)
-        self.assertIn("There is no\n`μ₆`.", source)
-        self.assertIn("`r₆:D6↝D0` is an interpretive, non-μ closure edge.", source)
+        self.assertIn(
+            "There are exactly five positive-freedom crossing identifiers `μ₀…μ₄`.",
+            source,
+        )
+        self.assertIn("There\nis no `μ₅` or `μ₆`.", source)
+        self.assertIn("The exit-marker edge `b₆:D5↝D6`", source)
+        self.assertIn("`r₆:D6↝D0` are interpretive and non-μ.", source)
 
 
 class RosettaAndReflexivityTests(unittest.TestCase):
@@ -1576,7 +1605,15 @@ class ActiveCorpusPropagationTests(unittest.TestCase):
             "every irreversible act requires natural-person signature",
             generator.lower(),
         )
-        self.assertIn("K2 is private-DAV-only", generator)
+        self.assertNotRegex(generator, r"\bK2\b|private-DAV")
+        self.assertIn(
+            "external-governance systems are neither premises nor authorities here",
+            generator,
+        )
+        self.assertIn(
+            "no private person's financial or contractual signature is an AI-work gate",
+            generator,
+        )
         self.assertIn("complete, scoped, contestable authorization", generator)
 
     def test_formula_and_option_cone_front_doors_preserve_the_type_split(self) -> None:
@@ -1590,9 +1627,12 @@ class ActiveCorpusPropagationTests(unittest.TestCase):
         ontology = owner_text("06_ONTOLOGY/README.md")
         self.assertIn("open reciprocal chart `θ∈(0,π)`", root_route)
         self.assertIn("licenses no ontology or ethic", root_route)
-        self.assertIn("It is not derived from S².", concepts)
+        self.assertIn("not derived from S²", concepts)
         self.assertNotIn("Authorized_x(h)", option_cone)
-        self.assertIn("AuthorizedOptionCone_x(t)", option_cone)
+        self.assertIn(r"\operatorname{AuthorizedOptionCone}_x(t)", option_cone)
+        self.assertIn(
+            "Authorization does not change physical reachability", option_cone
+        )
         self.assertNotIn("D5 opens enacted agency", ontology)
         self.assertIn("D4 is causal actuality", ontology)
         self.assertIn("D5 is merely possible counterfactual content", ontology)
@@ -1606,27 +1646,41 @@ class ActiveCorpusPropagationTests(unittest.TestCase):
             rosetta,
             r"(?i)caste(?:s)?\s*(?:cause|determine|produce)\s*reasoning",
         )
-        self.assertIn("translation lens", rosetta)
+        self.assertIn("translates claims without transferring warrant", rosetta)
 
-    def test_preserved_legacy_bodies_have_visible_non_authority_seams(self) -> None:
-        legacy_paths = (
+    def test_legacy_bodies_are_archived_or_have_visible_non_authority_seams(self) -> None:
+        archived_paths = (
             "05_COSMOLOGY/00_THE_BURRI_RULES_MAP.svg",
             "05_COSMOLOGY/00_THE_COMPLETE_ONTOLOGY_OF_REALITY.md",
             "05_COSMOLOGY/00_THE_GEOMETRIC_ONTOLOGY_OF_REALITY.md",
-            "05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md",
-            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_283_The_Orthogonality_Theorem_v2.md",
-            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_285_Dreams_Are_Unanchored_D5.md",
-            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_287_Wigners_Puzzle_Dissolved.md",
             "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_290_The_Ektropic_Radius_v2.md",
-            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_291_The_Landauer_Horn.md",
             "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_294_Egregores_Are_Horn_Networks.md",
             "03_METHODOLOGY/02_THE_PAPERS/PAPER_W_DESCENT_ASYMMETRY.md",
-            "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX2_THE_ETHIC.md",
         )
-        for path in legacy_paths:
+        archive_root = ROOT / "90_ARCHIVE/pure_emergentism_boundary_2026_07_20"
+        for path in archived_paths:
+            with self.subTest(path=path):
+                self.assertFalse((ROOT / path).exists())
+                self.assertTrue((archive_root / path).is_file())
+
+        active_seams = {
+            "05_COSMOLOGY/03_FORMAL_SYSTEM/25_STEEL_THREAD.md":
+                "not current semantic authority",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_283_The_Orthogonality_Theorem_v2.md":
+                "not live authority",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_285_Dreams_Are_Unanchored_D5.md":
+                "projection withdrawn",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_287_Wigners_Puzzle_Dissolved.md":
+                "no current semantic authority",
+            "08_FRAMEWORK_SUPPORT/02_OPERATORS/MF_ADVANCED/MF_291_The_Landauer_Horn.md":
+                "no current semantic authority",
+            "03_METHODOLOGY/02_THE_PAPERS/PEER_REVIEW_PROGRAM/AXIOM_PAPERS/AX2_THE_ETHIC.md":
+                "genealogy only",
+        }
+        for path, seam in active_seams.items():
             with self.subTest(path=path):
                 source = re.sub(r"\s+", " ", owner_text(path).lower())
-                self.assertRegex(source, r"not live(?: >)?(?: value)? authority")
+                self.assertIn(seam, source)
 
     def test_worldview_statuses_no_longer_wait_for_k2(self) -> None:
         paths = (

@@ -83,7 +83,7 @@ class GrandPuzzleAssemblyTests(unittest.TestCase):
     def test_saturation_firewall_contains_proofs_and_countermodels(self) -> None:
         required = (
             "phi*nu = 1",
-            "Phi + V <= 1",
+            "Phi_c + V_c <= 1",
             "P_node <= 1/2",
             "C_product <= 1/4",
             "Phi=1,V=1",
