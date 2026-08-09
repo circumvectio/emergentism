@@ -1,4 +1,7 @@
-# Runtime dependencies for active Python validation scripts in this directory.
-# Keep parser semantics pinned: predeploy_check.py validates security-sensitive
-# CSS URL tokenization with tinycss2 and fails closed on a version mismatch.
+# Runtime dependencies for the corpus gate and the validation scripts it invokes.
+# Keep parser and runner semantics pinned: the public build uses Markdown,
+# Kintsugi probes pytest node IDs, and predeploy validates security-sensitive
+# CSS URL tokenization with tinycss2.
+Markdown==3.10.2
+pytest==9.0.2
 tinycss2==1.5.1

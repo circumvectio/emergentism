@@ -22,9 +22,9 @@ jobs:
       - name: Check out Emergentism
         uses: actions/checkout@v4
         with:
-          # The contact-limited receipt ratchet compares HEAD with its first
-          # parent. Depth 1 would make immutable receipt custody unverifiable.
-          fetch-depth: 2
+          # Receipt custody and historical propagation checks replay recorded
+          # Git objects. A shallow clone cannot establish that evidence chain.
+          fetch-depth: 0
           # Gate scripts need tree access only; do not leave a write-capable
           # credential in the checkout used to execute repository code.
           persist-credentials: false
@@ -32,6 +32,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Install pinned gate dependencies
+        run: python3 -m pip install --disable-pip-version-check --requirement 09_TOOLS/01_SCRIPTS/requirements.txt
 
       - name: Run the gate
         # The Lean toolchain is not installed on CI, so the Lean half of
