@@ -512,6 +512,35 @@ class StablePackageSurfaceTests(SchemaAssertions):
                 codec.load_canonical_json(noncanonical)
         self.assertEqual(caught.exception.code, "KIN-E-CANONICAL")
 
+    def test_canonical_json_loader_has_a_version_independent_depth_bound(self):
+        from kintsugi_kernel import codec
+
+        at_limit = b"[" * 512 + b"0" + b"]" * 512 + b"\n"
+        over_limit = b"[" * 513 + b"0" + b"]" * 513 + b"\n"
+        string_delimiters = {
+            "escaped": '\\\"' * 600,
+            "literal": "[]{}" * 600,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            bounded = root / "bounded.json"
+            bounded.write_bytes(at_limit)
+            self.assertIsNotNone(codec.load_canonical_json(bounded))
+
+            quoted = root / "quoted.json"
+            quoted.write_bytes(kernel.canonical_json_bytes(string_delimiters))
+            self.assertEqual(codec.load_canonical_json(quoted), string_delimiters)
+
+            excessive = root / "excessive.json"
+            excessive.write_bytes(over_limit)
+            with self.assertRaises(kernel.KintsugiError) as caught:
+                codec.load_canonical_json(excessive)
+        self.assertEqual(caught.exception.code, "KIN-E-JSON")
+        self.assertEqual(
+            caught.exception.message,
+            "JSON exceeds the supported nesting depth",
+        )
+
     def test_schema_validator_frozen_keyword_names_are_callable(self):
         core = support.build_core_data()
         try:

@@ -25,13 +25,18 @@ jobs:
           # Receipt custody and historical propagation checks replay recorded
           # Git objects. A shallow clone cannot establish that evidence chain.
           fetch-depth: 0
+          # Public assets and source evidence are LFS-owned; gate their real
+          # bytes rather than pointer stubs.
+          lfs: true
           # Gate scripts need tree access only; do not leave a write-capable
           # credential in the checkout used to execute repository code.
           persist-credentials: false
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          # Kintsugi's specified and release-validated runtime. Its explicit
+          # JSON depth bound is also regression-tested against Python 3.12.
+          python-version: '3.11'
 
       - name: Install pinned gate dependencies
         run: python3 -m pip install --disable-pip-version-check --requirement 09_TOOLS/01_SCRIPTS/requirements.txt

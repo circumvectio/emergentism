@@ -9,7 +9,12 @@ from dataclasses import dataclass, field as dataclass_field
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable, Mapping
 
-from .codec import canonical_json_bytes, raw_hash, safe_repo_path
+from .codec import (
+    _json_nesting_exceeds_limit,
+    canonical_json_bytes,
+    raw_hash,
+    safe_repo_path,
+)
 from .diagnostics import KintsugiError
 from .gitstate import (
     AttemptPlan,
@@ -239,6 +244,8 @@ def _list(value: object, path: str) -> list[Any]:
 
 
 def _decode_canonical_bytes(payload: bytes, path: str) -> object:
+    if _json_nesting_exceeds_limit(payload):
+        _raise("KIN-E-JSON", path, "JSON exceeds the supported nesting depth")
     try:
         value = json.loads(payload.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError, RecursionError, ValueError):

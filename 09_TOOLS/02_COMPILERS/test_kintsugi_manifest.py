@@ -111,6 +111,25 @@ class GitManifestSurfaceTests(unittest.TestCase):
         self.assertTrue(callable(validate_manifest))
         self.assertTrue(callable(freeze_manifest_value))
 
+    def test_internal_git_commands_disable_optional_writes_and_maintenance(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        completed = subprocess.CompletedProcess(
+            args=[], returncode=0, stdout=b"ok\n", stderr=b""
+        )
+        with mock.patch.object(
+            gitstate.subprocess, "run", return_value=completed
+        ) as invoked:
+            self.assertEqual(
+                gitstate._run_git(Path("/synthetic"), ("rev-parse", "HEAD")),
+                b"ok\n",
+            )
+        command = invoked.call_args.args[0]
+        environment = invoked.call_args.kwargs["env"]
+        self.assertEqual(environment["GIT_OPTIONAL_LOCKS"], "0")
+        self.assertIn("maintenance.auto=false", command)
+        self.assertIn("gc.auto=0", command)
+
 
 class SyntheticGitRepositoryTests(unittest.TestCase):
     def test_factory_builds_main_and_linked_isolated_worktrees(self) -> None:
@@ -144,6 +163,24 @@ class SyntheticGitRepositoryTests(unittest.TestCase):
             self.assertTrue((fixture.isolated_root / "12_PUBLIC_SITE/assets-link").is_symlink())
             self.assertTrue((fixture.canonical_root / "scratch/preexisting.txt").exists())
             self.assertTrue((fixture.isolated_root / "scratch/preexisting.txt").exists())
+            self.assertEqual(
+                subprocess.run(
+                    ["git", "config", "--get", "maintenance.auto"],
+                    cwd=fixture.canonical_root,
+                    check=True,
+                    stdout=subprocess.PIPE,
+                ).stdout,
+                b"false\n",
+            )
+            self.assertEqual(
+                subprocess.run(
+                    ["git", "config", "--get", "gc.auto"],
+                    cwd=fixture.canonical_root,
+                    check=True,
+                    stdout=subprocess.PIPE,
+                ).stdout,
+                b"0\n",
+            )
 
     def test_factory_contains_reserved_control_vessel_and_excluded_candidate(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -1035,6 +1072,120 @@ class AttemptAndConcurrencyPrimitiveTests(unittest.TestCase):
         self.assertEqual(
             (self.fixture.common_dir / ".kintsugi-transition.lock").read_bytes(),
             foreign,
+        )
+
+    def test_transition_lock_keeps_ownership_descriptor_open_until_cleanup(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        real_open = gitstate.os.open
+        real_close = gitstate.os.close
+        lock_descriptor: int | None = None
+        lock_closed = False
+
+        def tracked_open(path: object, *args: object, **kwargs: object) -> int:
+            nonlocal lock_descriptor
+            descriptor = real_open(path, *args, **kwargs)
+            if Path(path).name == ".kintsugi-transition.lock":
+                lock_descriptor = descriptor
+            return descriptor
+
+        def tracked_close(descriptor: int) -> None:
+            nonlocal lock_closed
+            if descriptor == lock_descriptor:
+                lock_closed = True
+            real_close(descriptor)
+
+        with mock.patch.object(gitstate.os, "open", side_effect=tracked_open), \
+             mock.patch.object(gitstate.os, "close", side_effect=tracked_close):
+            with gitstate._transition_lock(self.fixture.common_dir):
+                self.assertIsNotNone(lock_descriptor)
+                self.assertFalse(lock_closed)
+
+        self.assertTrue(lock_closed)
+
+    def _ownership_close_failure_patches(self, gitstate: object) -> tuple[object, object]:
+        real_open = gitstate.os.open
+        real_close = gitstate.os.close
+        lock_descriptor: int | None = None
+
+        def tracked_open(path: object, *args: object, **kwargs: object) -> int:
+            nonlocal lock_descriptor
+            descriptor = real_open(path, *args, **kwargs)
+            if Path(path).name == ".kintsugi-transition.lock":
+                lock_descriptor = descriptor
+            return descriptor
+
+        def fail_ownership_close(descriptor: int) -> None:
+            real_close(descriptor)
+            if descriptor == lock_descriptor:
+                raise OSError("synthetic ownership close failure")
+
+        return (
+            mock.patch.object(gitstate.os, "open", side_effect=tracked_open),
+            mock.patch.object(
+                gitstate.os, "close", side_effect=fail_ownership_close
+            ),
+        )
+
+    def test_transition_lock_close_failure_is_typed_when_primary(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        open_patch, close_patch = self._ownership_close_failure_patches(gitstate)
+        with open_patch, close_patch, self.assertRaises(KintsugiError) as caught:
+            with gitstate._transition_lock(self.fixture.common_dir):
+                pass
+
+        self.assertEqual(caught.exception.code, "KIN-E-CONCURRENT")
+        self.assertEqual(caught.exception.path, "lock")
+        self.assertEqual(
+            caught.exception.message,
+            "cannot close transition lock: OSError",
+        )
+
+    def test_transition_lock_close_failure_does_not_mask_body_failure(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        body_failure = RuntimeError("synthetic body failure")
+        open_patch, close_patch = self._ownership_close_failure_patches(gitstate)
+        with open_patch, close_patch, self.assertRaises(RuntimeError) as caught:
+            with gitstate._transition_lock(self.fixture.common_dir):
+                raise body_failure
+
+        self.assertIs(caught.exception, body_failure)
+
+    def test_transition_lock_close_failure_does_not_mask_cleanup_failure(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        open_patch, close_patch = self._ownership_close_failure_patches(gitstate)
+        with open_patch, close_patch, self.assertRaises(KintsugiError) as caught:
+            with gitstate._transition_lock(self.fixture.common_dir) as lock:
+                lock.unlink()
+
+        self.assertEqual(caught.exception.code, "KIN-E-CONCURRENT")
+        self.assertEqual(
+            caught.exception.message,
+            "transition lock disappeared while held",
+        )
+
+    def test_transition_lock_ignores_unrelated_ambient_exception_state(self) -> None:
+        from kintsugi_kernel import gitstate
+
+        try:
+            raise ValueError("unrelated ambient failure")
+        except ValueError:
+            open_patch, close_patch = self._ownership_close_failure_patches(
+                gitstate
+            )
+            with open_patch, close_patch, self.assertRaises(
+                KintsugiError
+            ) as caught:
+                with gitstate._transition_lock(self.fixture.common_dir):
+                    pass
+
+        self.assertEqual(caught.exception.code, "KIN-E-CONCURRENT")
+        self.assertEqual(
+            caught.exception.message,
+            "cannot close transition lock: OSError",
         )
 
     def test_reservation_is_canonical_exclusive_and_burned_after_failure(self) -> None:

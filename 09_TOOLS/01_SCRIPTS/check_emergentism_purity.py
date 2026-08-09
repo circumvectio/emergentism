@@ -101,7 +101,7 @@ FROZEN_TOOLING_SHA256 = {
     Path("09_TOOLS/02_COMPILERS/test_emergentist_compass_semantics.py"): "5ce532bee2673f25b8b6fc452bf43f3659a9581af55dbf8c45ca5ebe1be1d805",
     Path("09_TOOLS/02_COMPILERS/test_gate_health.py"): "abeec07e5eeb3e05e5c8b25be2f8761e048af7d844a1ff8199b2efbd81dc2416",
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_mutations.py"): "dc7ecc04292b8a0d3657aa0667a10ca81639cf51999924beb6b4cd539aa5a1a9",
-    Path("09_TOOLS/02_COMPILERS/test_kintsugi_schema.py"): "d354f35d191e3a99ca88457f7f755d5340058b4cd8ff8b448dee67122772c3ed",
+    Path("09_TOOLS/02_COMPILERS/test_kintsugi_schema.py"): "82703f06a9fb25ac808b15b3c45286a62c6cfcd9918bd842979eac46a391b5df",  # pragma: allow-secret -- SHA-256 custody pin
     Path("09_TOOLS/02_COMPILERS/test_kintsugi_semantics.py"): "e134e8639625831b951e07d556ce21f10cc5dfebbfdea93ed30025d68250e09c",
     Path("09_TOOLS/02_COMPILERS/test_validate_kintsugi.py"): "9ca7f87ba8f37f7648bea7ac961e0cea1dcc85441ad4fde16a7ef457c296738a",
     Path("09_TOOLS/02_COMPILERS/test_corpus_claim_graph.py"): "7357b61833012eb3b5875a36ff090c7075c95b1c656ed08906cfb6f2887f69d5",
