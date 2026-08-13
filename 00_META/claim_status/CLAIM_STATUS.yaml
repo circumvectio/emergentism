@@ -759,35 +759,62 @@
       "id": "W10-SPARK",
       "status": "OPEN-EMPIRICAL",
       "docket": "A2",
-      "note": "Raised as one [I] claim; splits into an [S] aim, a [C] mechanism and an untiered presupposition. Only the mechanism is open here.",
-      "aim": "[S] Build the public surface so that engagement with a machine-checkable falsification register is rewarded. A selection, not a discovery.",
-      "mechanism": "[C] A corpus can intrinsically motivate frontier world models to churn on it. Untested.",
-      "presupposition": "NAMED, UNRESOLVED: that there is an amrita to reveal. 14_THE_DISTILLATION holds 40 entries and zero owned by the corpus; the sole owned entry was refuted the same evening (b4c58797).",
-      "discriminator": "The /record/ frontier surface, once served and reachable, is the preregistered instrument: materially higher engagement with the falsification register than with equivalent prose.",
-      "kill": "Surface served, reachable, and unengaged over a declared interval. The mechanism claim then dies and the aim narrows to a publishing choice carrying no motivational claim.",
-      "prior_observation": "n=1, single model, single session, self-reported, not preregistered: a 2026-08-13 agent engaged executable gates and skimmed equivalent prose. Recorded as the first thing resembling a test. GIVEN NO WEIGHT.",
-      "blocked_on": "DNS cutover; emergentism.org/spark.md returns 404. World contact 0.",
+      "note": "Raised as one [I] claim; splits into an [S] aim, a [C] mechanism and an untiered presupposition. Only the mechanism is open here. See 00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md.",
       "last_move": {
         "mover": "Yves R. Burri (chair), adjudicated in session",
         "date": "2026-08-13",
         "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      },
+      "disposition": {
+        "kind": "CONTACT-GATED",
+        "claim_owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+        "contracts": [
+          {
+            "contract_id": "W10-SPARK-MECHANISM-01",
+            "component_id": "intrinsic_model_motivation",
+            "protocol_owner": "03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+            "protocol_refs": [
+              "12_PUBLIC_SITE/spark.md",
+              "12_PUBLIC_SITE/record/frontier.json"
+            ],
+            "maturity": "design-required",
+            "blocked_by": [],
+            "discriminator": "Once /record/frontier is served and reachable, materially higher engagement with the falsification register than with equivalent prose.",
+            "kill": "Surface served, reachable, and unengaged over a declared interval. The mechanism dies; the aim narrows to a publishing choice.",
+            "survivor": "The [S] publishing aim may remain. The amrita presupposition stays unnamed as paid.",
+            "component_support_refs": [],
+            "integrated_support": "absent",
+            "evidence_contract": "WORLD-OUTCOME-V1"
+          }
+        ]
       }
     },
     {
       "id": "W0-COMPLETE",
       "status": "NOT-WELL-POSED",
       "docket": "A2",
-      "note": "Raised as [C]. Not a conjecture: it is a register equivocation on 'complete', resolved by fixing the definition rather than by observation. Sibling of W0-CROWN; this is NOT a verdict that the creed is false.",
-      "raised_form": "No world model can be complete if it does not solve how being emerged.",
-      "equivocation": "complete = closed under explanation of its own ground -> near-trivially true inside that definition, empty outside it. complete = predictively adequate over a declared domain -> false; models are complete in this sense routinely without addressing emergence.",
-      "successor": "[I] Any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem. Describes a failure mode; no definition of 'complete' is load-bearing. Matches KSC-25 describe-and-let-self-locate.",
-      "successor_kind": "narrowed_to_failure_mode_description",
-      "public_surface": "12_PUBLIC_SITE does not assert the theorem form. Scanned 2026-08-13; one hit inspected and false positive (paradox/00-gardener-nexus, 'If PD_17 cannot be completed'). No public correction owed.",
-      "kill": "Exhibit a sense of 'complete' under which the raised form is both non-trivial and settleable by observation.",
+      "note": "Raised as [C]. Register equivocation on 'complete', not a conjecture. Sibling of W0-CROWN. Not a verdict that the creed is false.",
       "last_move": {
         "mover": "Yves R. Burri (chair), adjudicated in session",
         "date": "2026-08-13",
         "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      },
+      "disposition": {
+        "kind": "INTERNAL-TERMINAL",
+        "claim_owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+        "resolution": {
+          "result_id": "IV-W0-COMPLETE-01",
+          "result_status": "NOT-WELL-POSED",
+          "result_tier": "S",
+          "scope": "The raised form 'no world model can be complete if it does not solve how being emerged' turns on the word complete. Closed-under-ground is near-trivial; predictive adequacy is routinely false. No observation settles it.",
+          "source_refs": [
+            "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+            "06_ONTOLOGY/04_THE_CONJECTURES.md"
+          ],
+          "survivor": "[I] Any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem. No definition of complete is load-bearing.",
+          "reopen_when": "Exhibit a sense of complete under which the raised form is both non-trivial and settleable by observation.",
+          "evidence_contract": "INTERNAL-VERDICT-V1"
+        }
       }
     }
   ],

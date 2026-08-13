@@ -38,7 +38,7 @@ class FrontierLedgerTests(unittest.TestCase):
     def test_row_count_matches_source_buckets(self) -> None:
         data = json.loads(LEDGER.read_text(encoding="utf-8"))
         self.assertEqual(data["counts"]["total"], len(data["claims"]))
-        self.assertEqual(data["counts"]["total"], 70)
+        self.assertEqual(data["counts"]["total"], 72)
 
 
 if __name__ == "__main__":

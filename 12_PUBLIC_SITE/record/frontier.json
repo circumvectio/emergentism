@@ -2,7 +2,7 @@
   "schema": "emergentism/frontier-ledger/v0",
   "status": "STAGED [D] — rendering of the validation register, not a result",
   "source": "00_META/claim_status/CLAIM_STATUS.yaml",
-  "source_sha256": "d2efe1ab6bffc6fcd7371434eb8bc372dbd7b6d511e6d54ea5588d691df5f074",
+  "source_sha256": "36077fbc943e4a7e4960873278c08542d0fd7152452d680a4d00e5e5acf63d6f",
   "k_star": 0,
   "attention_capture": false,
   "completeness_claim": false,
@@ -17,11 +17,11 @@
   ],
   "counts": {
     "validated": 21,
-    "open": 17,
+    "open": 19,
     "investigations": 9,
     "typed_survivors": 1,
     "graves": 22,
-    "total": 70
+    "total": 72
   },
   "claims": [
     {
@@ -591,6 +591,44 @@
       "owner": "06_ONTOLOGY/04_THE_CONJECTURES.md 03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
       "last_move": null,
       "last_move_note": "CLAIM_STATUS.yaml does not record who moved this row or when. Unrecorded, not invented.",
+      "successor": null,
+      "parent": null
+    },
+    {
+      "id": "W10-SPARK",
+      "bucket": "open",
+      "status": "OPEN-EMPIRICAL",
+      "tier": null,
+      "statement": "Raised as one [I] claim; splits into an [S] aim, a [C] mechanism and an untiered presupposition. Only the mechanism is open here. See 00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md.",
+      "raise": "Once /record/frontier is served and reachable, materially higher engagement with the falsification register than with equivalent prose.",
+      "kill": "Surface served, reachable, and unengaged over a declared interval. The mechanism dies; the aim narrows to a publishing choice.",
+      "survivor": "The [S] publishing aim may remain. The amrita presupposition stays unnamed as paid.",
+      "owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md 03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md",
+      "last_move": {
+        "mover": "Yves R. Burri (chair), adjudicated in session",
+        "date": "2026-08-13",
+        "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      },
+      "last_move_note": null,
+      "successor": null,
+      "parent": null
+    },
+    {
+      "id": "W0-COMPLETE",
+      "bucket": "open",
+      "status": "NOT-WELL-POSED",
+      "tier": null,
+      "statement": "Raised as [C]. Register equivocation on 'complete', not a conjecture. Sibling of W0-CROWN. Not a verdict that the creed is false.",
+      "raise": null,
+      "kill": null,
+      "survivor": null,
+      "owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+      "last_move": {
+        "mover": "Yves R. Burri (chair), adjudicated in session",
+        "date": "2026-08-13",
+        "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      },
+      "last_move_note": null,
       "successor": null,
       "parent": null
     },

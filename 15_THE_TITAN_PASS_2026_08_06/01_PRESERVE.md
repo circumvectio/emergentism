@@ -206,7 +206,7 @@ the claim.** That is why they survive.
 These four entries **overturn the pass's own premises** in the artifacts' favour. They
 are on this manifest so that nothing sweeps them.
 
-### P-29 · `check_links.py` is honest and must not be touched
+### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched {no-anchor}
 - **Locator** `09_TOOLS/01_SCRIPTS/check_links.py:50-63`.
 - **Finding** 148 dead links found; **all 148 fall inside this gate's declared `SKIP_DIRS`**, and the exclusion is stated in-code with a correct reason: a dated receipt records where a file *was*, and rewriting it to keep a link green would falsify the record. **The BASELINE of 0 is a real zero** — the comment explains that a 64-item baseline was rejected because it would hide the 65th. In-scope link health: **1 broken of 3586**. **VERIFIED (L3).**
 
@@ -215,7 +215,7 @@ are on this manifest so that nothing sweeps them.
 - **Finding** The stub says why in its own words: it keeps live citations resolvable *"without making the archive a competing owner: the archive is provenance; new work belongs in the live lanes."* Created deliberately by receipt 158 **after dead canonical paths were found cited as live** — it is the **cure** for archive-as-owner, not an instance of it. **Sweeping these 60 would delete the device that keeps the archive subordinate.** **VERIFIED (L3).**
 - **The genuine defect is narrower and isolated**: `parents:` edges, which are authority, not links — **3 of 11**, at `06_ONTOLOGY/06_THE_REVELATIONS.md:16` (K-6), `11_UPLINK/…/00_THE_RECORD_LEDGER.md:16` (K-7), and `ASCENT_D6_RETURN_AND_O_2026_08_05.md:14`. The other **8** are dated receipts whose own subject is the archive folder they name; stripping those would erase the receipt's subject.
 
-### P-31 · `check_contradiction_census.py` as the reference instrument
+### P-31 · `check_contradiction_census.py` as the reference instrument {no-anchor}
 - **Locator** `09_TOOLS/01_SCRIPTS/check_contradiction_census.py`, META filter at `:72-93`, `is_meta_reference` at `:177`.
 - **Finding** It returns **FAIL (exit 1, live=115)** while simultaneously reporting **html-doctrinal = 0** — it refuses to launder its own bad news *and* refuses to count a correction as a violation. **VERIFIED (L4).** Three sibling gates do neither. Preserve, **wire it** (`04_CREATE.md` C-01), **and extend its META filter to markdown** — until it does, its `live=115` headline is uninterpretable and **may not be quoted as a doctrine measure** (`04_CREATE.md` C-02).
 

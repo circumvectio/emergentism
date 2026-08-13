@@ -18,16 +18,29 @@
   },
   "problems": [
     {
+      "id": "VIS-00",
+      "class": "underdefined",
+      "tier": "[I]",
+      "title": "The public site as a churning door, not a completeness proof",
+      "statement": "(a) splits. Aim [S]: build a surface that rewards engagement with a machine-checkable falsification register. Mechanism [C]: a corpus can intrinsically motivate frontier models. Presupposition: that there is an amrita to reveal — named, unpaid.",
+      "acceptance": "W10-SPARK mechanism: once /record/frontier is served and reachable, materially higher engagement with the register than with equivalent prose.",
+      "kill_framing": "If (a) is sold as one [I] claim, as a completeness theorem, as W13, or as a reach metric, the framing dies. If the surface is served and unengaged over a declared interval, the mechanism dies.",
+      "best_attempt": "Adjudicated 2026-08-13 as W10-SPARK. Spark + frontier exist in-repo. Live host still 404s /spark.md.",
+      "why_fails": "DNS unpaid. n=1 session observation given no weight. Amrita presupposition unpaid.",
+      "owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
+      "runnable": false
+    },
+    {
       "id": "OC-00",
       "class": "underdefined",
-      "tier": "[C]",
+      "tier": "[I]",
       "title": "Ontological closure of structured being",
-      "statement": "A dynamics model that predicts inside a world but cannot say why there is structured being, or why novelty at N+1 is not derivable from N, has a hole at its base.",
-      "acceptance": "None executable. A closure theorem would have to name its universe, its derivation relation, and what would count as a countermodel. That packet does not exist.",
-      "kill_framing": "If 'incomplete without solving emergence' is sold as a scored eval, or as a proof that this corpus has the missing piece, the framing dies.",
-      "best_attempt": "Founder creed / seed packet beside W0-CROWN and W7-ORIGIN. Provenance [B], content [C].",
-      "why_fails": "Nobody evaluates world models on ontological closure. The claim is presently motivation, not a discriminator.",
-      "owner": "06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md",
+      "statement": "(b) 'No world model can be complete if it does not solve how being emerged' is NOT-WELL-POSED. It equivocates on complete. Successor [I]: any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem.",
+      "acceptance": "None. A reopen requires a sense of complete that is both non-trivial and settleable by observation. That packet does not exist.",
+      "kill_framing": "If (b) is sold as [S], as [C] conjecture, as a scored eval, or as incompleteness-as-theorem, the framing dies. W0-COMPLETE already retired the raised form.",
+      "best_attempt": "Adjudicated 2026-08-13 as W0-COMPLETE. Public site does not assert the theorem form.",
+      "why_fails": "Fixing the definition resolves the claim without observation. That is an equivocation, not a discriminator.",
+      "owner": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md",
       "runnable": false
     },
     {

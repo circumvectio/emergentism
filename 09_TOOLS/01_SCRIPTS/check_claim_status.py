@@ -632,7 +632,8 @@ def check(root: Path = ROOT) -> list[str]:
             {"id", "status", "docket", "disposition"}
             | ({"note"} if "note" in row else set())
             | ({"reopened_as"} if "reopened_as" in row else set())
-            | ({"see_also"} if "see_also" in row else set()),
+            | ({"see_also"} if "see_also" in row else set())
+            | ({"last_move"} if "last_move" in row else set()),
             row_id,
             errors,
         )
@@ -650,7 +651,8 @@ def check(root: Path = ROOT) -> list[str]:
 
     expected_open_ids = {
         "W0-CROWN", "W1", "W2", "W3", "W4", "W5", "W6", "W7a", "W7b",
-        "W7c", "W7d", "W7e", "W8", "W9", "W10", "W11", "W12",
+        "W7c", "W7d", "W7e", "W8", "W9", "W10", "W10-SPARK", "W11", "W12",
+        "W0-COMPLETE",
     }
     if open_ids != expected_open_ids:
         errors.append(
@@ -932,9 +934,9 @@ def check(root: Path = ROOT) -> list[str]:
             + ", ".join(nonterminal_graves)
         )
 
-    # All 48 W/RQ/grave lifecycle rows must be explicitly dispositioned.
-    if len(lifecycle_rows(document)) != 48:
-        errors.append(f"expected 48 lifecycle rows, found {len(lifecycle_rows(document))}")
+    # All 50 W/RQ/grave lifecycle rows must be explicitly dispositioned.
+    if len(lifecycle_rows(document)) != 50:
+        errors.append(f"expected 50 lifecycle rows, found {len(lifecycle_rows(document))}")
 
     return errors
 
@@ -955,7 +957,7 @@ def main() -> int:
         f"({len(document['validated'])} validated, {len(document['open'])} open, "
         f"{len(document['graves'])} graves, {len(document['investigations'])} investigations, "
         f"{len(document['typed_survivors'])} typed survivors; "
-        f"48 lifecycle rows, lifecycle={canonical_lifecycle_sha256(document)[:12]}, "
+        f"50 lifecycle rows, lifecycle={canonical_lifecycle_sha256(document)[:12]}, "
         f"contract={canonical_contract_sha256(document)[:12]})"
     )
     return 0

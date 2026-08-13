@@ -41,14 +41,14 @@ class ClaimStatusV2Tests(unittest.TestCase):
 
     def test_live_contract_passes_and_binds_full_scope(self) -> None:
         self.assertEqual(CHECKER.check(ROOT), [])
-        self.assertEqual(len(CHECKER.lifecycle_rows(self.document)), 48)
+        self.assertEqual(len(CHECKER.lifecycle_rows(self.document)), 50)
         self.assertEqual(
             CHECKER.canonical_lifecycle_sha256(self.document),
-            "936615148ef25dad44bfefcc0bdd5ac693a582a531b685cd77b3e527296264b7",  # pragma: allow-secret -- public corpus digest fixture
+            "eb0e25fd6ea253b289117e360e4ff31990098a1e41f07462ce226b25976e0ea5",  # pragma: allow-secret -- public corpus digest fixture
         )
         self.assertEqual(
             CHECKER.canonical_contract_sha256(self.document),
-            "de7335dbedd54abe9635f072026b556c7b803496cb39c89b595c0b7b9502e8d5",  # pragma: allow-secret -- public corpus digest fixture
+            "7bbf9fa45cbeeaed8f5931c6e1153df40018b8c7acd05f411e0be65b0ca754d1",  # pragma: allow-secret -- public corpus digest fixture
         )
 
     def test_duplicate_json_key_is_rejected(self) -> None:

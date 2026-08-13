@@ -643,6 +643,9 @@
     "map/index.html",
     "lab/index.html",
     "contribute/index.html",
+    "spark/index.html",
+    "record/problems/index.html",
+    "record/frontier/index.html",
     "assets/css/living-map.css",
     "assets/js/living-map.js",
     "living-map.json"
