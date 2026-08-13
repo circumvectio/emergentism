@@ -94,25 +94,10 @@ footer.foot{padding:3rem 0 4rem;border-top:1px solid var(--line-soft);color:var(
 footer.foot .glyph{font-family:var(--mono);color:var(--gold);font-size:1.05rem;margin-bottom:.8rem}
 footer.foot a{color:var(--bone-dim)}
 </style>
-<style>/* a11y-floor-2026-08-13 */
-:root { color-scheme: dark; }
-.skip-to-content {
-  position: absolute; left: -9999px; top: 0; z-index: 999;
-  background: var(--accent, #FFEB3B); color: #050505;
-  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
-  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
-}
-.skip-to-content:focus { left: 0; }
-:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
-    transition-duration: .001ms !important; scroll-behavior: auto !important;
-  }
-}
-</style>
+<link rel="stylesheet" href="assets/css/a11y.css">
 </head>
 <body>
+<a class="skip-to-content" href="#main">Skip to content</a>
 <aside data-frozen-library-boundary="2026-07-22" role="note" style="padding:.75rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);background:#17150a;color:#d8d2bd;font:600 .76rem/1.5 ui-monospace,monospace">[D] Frozen library projection — preserved for provenance, noindex, and excluded from current retrieval. Where it conflicts with the <a href="/dimensions/" style="color:#ffeb3b">dimension-first spine</a> or a named source owner, the current owner governs.</aside>
 
 <div class="topbar">
@@ -124,7 +109,7 @@ footer.foot a{color:var(--bone-dim)}
   </nav>
 </div>
 
-<main class="wrap">
+<main class="wrap" id="main">
 
 <header class="hero read reveal in">
   <p class="fileno">The floor · D0 — where the map begins</p>
