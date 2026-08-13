@@ -61,7 +61,7 @@ killed for unreachability over a directory rename (P-34).
 
 ## The entries — 5
 
-### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched
+### P-29 · `check_links.py` is honest and must not be touched
 
 - **Finding** 148 dead links found; **all 148 fall inside this gate's declared `SKIP_DIRS`**, and the exclusion is stated in-code with a correct reason: a dated receipt records where a file *was*, and rewriting it to keep a link green would falsify the record. **The BASELINE of 0 is a real zero** — the comment explains that a 64-item baseline was rejected because it would hide the 65th. In-scope link health: **1 broken of 3586**. **VERIFIED (L3).**
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
@@ -77,7 +77,7 @@ killed for unreachability over a directory rename (P-34).
 - ⚠️ **Citations dropped as unverifiable — 2** (the manifest names these files; no string it quotes could be located in them, so no anchor was written rather than an unverified one): `09_TOOLS/01_SCRIPTS/check_contradiction_census.py`, `15_THE_TITAN_PASS_2026_08_06/04_CREATE.md`
 - ⚠️ **Station tension** — no named attack — this entry carries a **Finding**, verified, in place of an *attack survived*; see the station note on how the survival test changes shape
 
-### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md:181-229` §5 — the graves, adjudicated
+### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated
 
 - **Finding** **The answer to the dead-forms question is not "rebuild."** §5 carries all twenty-two dead forms live, with something the archived catalogue never had: a **per-row successor-owner column**. DF-01 → "NARROWED, candidate translation grammar GP-11"; DF-05 → "none — closed, FV-01 is the surviving use". **The successor is better than the original.** Hold it; archive the two catalogue stubs into it (`02_ARCHIVE.md` A-09/A-10). **VERIFIED (Śiva).**
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
@@ -117,4 +117,4 @@ killed for unreachability over a directory rename (P-34).
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

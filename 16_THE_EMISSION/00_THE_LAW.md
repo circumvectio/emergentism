@@ -188,11 +188,15 @@ The law says path **plus** string. The path half is not free either.
 | `README.md` | 38 | **154** |
 | `AGENTS.md` | 25 | **85** |
 | `CLAUDE.md` | 24 | **84** |
+| *{no-anchor}* | — | *the four basenames in this table are **named as data**, not cited. They are the subject of the census. An anchor would have to pick one of the candidate files and so assert the uniqueness the row exists to deny.* |
 
 A citation reading `00_THE_AMRITA.md` at some line is not merely fragile. It is
 **ambiguous across three real files**, one of which is a seven-line forwarding stub. The
 same citation string simultaneously overruns one candidate and lands in prose in the
-other two. Which is why the law reads *unique* path, and why
+other two. (That basename is {no-anchor} here, for the same reason as the table above:
+the sentence is *about* the name, and quoting one of the three files it matches would
+decide the very ambiguity the sentence reports.) Which is why the law reads
+*unique* path, and why
 `15_THE_TITAN_PASS_2026_08_06/04_CREATE.md` names the first condition of any future
 gate as "a bare basename shared by more than one live file".
 
@@ -207,7 +211,10 @@ thing it commits:
 2. **The findability tool's own preamble is stale.**
    `09_TOOLS/01_SCRIPTS/build_corpus_index.py` says "901 of 1661 live documents"; run
    today it printed **837 of 1369**.
-3. **"UNFINDABLE COUNT = 0 … Verified."** — the commit message of `7e0ec4c7` itself.
+3. **The commit message of `7e0ec4c7` itself** — `UNFINDABLE COUNT = 0 … Verified.`
+   That string is a commit message, not a line in any file, so this tree has no path to
+   anchor it to and does not pretend otherwise; it is written as literal text and
+   escorted by the command that reproduces it, `git log -1 --format=%B 7e0ec4c7`.
    Re-run today, the same script reports **11**. All eleven are documents dated
    2026-08-06, written *after* the commit. **The number was true when written and false
    within twenty-four hours.** Nobody lied. That is the point: a re-quoted count decays
@@ -248,7 +255,7 @@ here even where the surrounding prose would flatter a stronger reading.
 ### 4 · Kills stated before claims
 **Origin:** `01_EMERGENTISM/CLAUDE.md` — "Keep counterexamples, alternatives,
 predictions, and kill criteria visible." Formalised as the self-correction fence at
-`02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md` — "kill criteria on every axiom."
+`02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md` — "kill criteria on every axiom"
 **Carries over as:** the manifest's admission rule, adopted verbatim —
 `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md`: "An entry that cannot name a hostile
 reader it defeats is not on this list." The attack comes first. A claim that arrives
@@ -270,9 +277,9 @@ the number, and does not adjudicate.)*
 **Origin — and this one is stated honestly as weaker than the rest.** I searched the
 frozen tree for a canonical statement of this rule and **did not find one**. What exists
 is the wound it would have prevented, recorded in
-`15_THE_TITAN_PASS_2026_08_06/04_CREATE.md` — "the gate has been red and nothing blocks
-on red" — and the standing lesson at `14_THE_DISTILLATION/04_WHAT_DIED.md`: "A guard
-that cannot fail is worse than no guard, because it reports success."
+`15_THE_TITAN_PASS_2026_08_06/04_CREATE.md` — "the gate has been red and nothing blocks on red"
+— and the standing lesson at `14_THE_DISTILLATION/04_WHAT_DIED.md`:
+"A guard that cannot fail is worse than no guard, because it reports success."
 **Carries over as:** the author of a document may not be the sole verifier of its
 anchors, and a gate must demonstrate that it can go red before its green is worth
 anything. This tree's gate ships a `--self-test` that corrupts a quote and injects a

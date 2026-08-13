@@ -480,6 +480,154 @@ def delocate(s, where="—"):
     return out
 
 
+# ---------------------------------------------------------------------------
+# 2b · THE INHERITED-QUOTE REPAIR.
+#
+#     shrink() already carries the "fix the quote" branch of this tree's law —
+#     the manifest quotes with the MANIFEST's punctuation and framing, so the
+#     generator recovers the longest run of words that genuinely appears in the
+#     target and writes THAT.  Until now that branch governed only the anchors
+#     the generator MINTED.  The prose it COPIED carried the manifest's framing
+#     straight through, and the gate — which reads a quoted string beside a path
+#     token as an anchor, because that is exactly what this tree's law says one
+#     is — failed those sites.  `"kill criteria on every axiom."` where the
+#     source has a semicolon; `"Keep the dyadic gate."` where the source has a
+#     comma; `"actual boundary token."` where the source is a table cell.
+#
+#     This pass applies the SAME harvester to inherited prose.  It never invents
+#     and never widens: a repair is written only when the recovered string is a
+#     byte-exact substring of the file the gate will attribute the quotation to.
+#     Where nothing can be harvested the quotation is LEFT EXACTLY AS THE
+#     MANIFEST WROTE IT and the gate stays red — a red gate is the correct
+#     output for a quotation this tree cannot verify.
+#
+#     Every repair is itemised in the run report, like every scrub.
+# ---------------------------------------------------------------------------
+
+# Floor for a REPAIRED quotation.  Lower than MIN_ANCHOR_LEN (which governs the
+# anchors this generator mints from scratch) because a repair is not choosing an
+# anchor — the manifest already chose it and this pass only trims the manifest's
+# punctuation off the ends.  Still above check_anchors.py's MIN_QUOTE_CHARS of 8.
+REQUOTE_MIN_LEN = 12
+# A repair may not shrink a quotation into a fragment of itself.  Below this
+# ratio the difference is not punctuation, it is a different sentence, and the
+# honest output is the manifest's words plus a red gate.
+REQUOTE_MIN_RATIO = 0.55
+# Punctuation this pass is allowed to move OUT of a quotation.  It is moved, not
+# deleted: the source's words go inside the quotes and the quoting sentence keeps
+# its own terminator outside them.  `"Keep the dyadic gate."` where the source has
+# a comma becomes `"Keep the dyadic gate".` — the quotation becomes byte-exact and
+# the sentence still ends.  Anything other than these characters means the
+# difference is WORDS, not framing, and the repair is refused.
+REQUOTE_TAIL_PUNCT = ".,;:!?…"
+
+REQUOTED = []          # every repair, itemised for the run report
+
+_REQ_PATH_RE = re.compile(r"`([^`\n]+)`")
+_REQ_PATH_SHAPE = re.compile(
+    r"^[A-Za-z0-9_][A-Za-z0-9_./+\-]*\.(?:md|py|txt|jsonl|json|yaml|yml|csv|html|js|ts|toml|cfg|sh)$"
+)
+
+
+def gate_resolve(index: "FileIndex", token: str):
+    """Resolve a path token the way check_anchors.py will resolve it.
+
+    Deliberately NOT FileIndex.resolve(): that one ranks candidates and lets the
+    quote pick the file, which is right for minting an anchor and wrong here.
+    This pass must know which file the GATE will hold the quotation against, and
+    the gate takes the corpus-relative path, or a UNIQUE basename, or nothing.
+    Anything the gate cannot resolve unambiguously is left untouched.
+    """
+    token = token.strip().strip("`")
+    if token in index.relset:
+        return token
+    if "/" not in token:
+        hits = index.by_base.get(token, [])
+        if len(hits) == 1:
+            return hits[0]
+    return None
+
+
+def _resolves_in(index: "FileIndex", rel: str, quote: str) -> bool:
+    """Whitespace-normalised containment — check_anchors.py's matching contract."""
+    nq, _ = normalise(quote)
+    if len(nq) < REQUOTE_MIN_LEN:
+        return False
+    ntext, _ = index.norm(rel)
+    return nq in ntext
+
+
+def requote(s, index: "FileIndex", where="—"):
+    """Repair inherited-prose quotations against the file the gate will use.
+
+    Mirrors check_anchors.py's reading of a quotation site: on one line, the
+    site runs from the first `"` to the last, the inner pairs are the readings,
+    and the path token it belongs to is the NEAREST one that does not sit inside
+    the site. Duplicated rather than imported, for the same reason the banned
+    forms are: the generator must not depend on the gate that judges it.
+    """
+    if not s or '"' not in s:
+        return s
+    out_lines = []
+    for line in s.split("\n"):
+        qs = [i for i, ch in enumerate(line) if ch == '"']
+        if len(qs) < 2:
+            out_lines.append(line)
+            continue
+        lo, hi = qs[0], qs[-1]
+
+        # the nearest path token that is not inside the quotation site
+        best_tok, best_d = None, None
+        for m in _REQ_PATH_RE.finditer(line):
+            cand = m.group(1).strip().split("#")[0].strip()
+            if not _REQ_PATH_SHAPE.match(cand):
+                continue
+            if m.start() < hi and lo < m.end():
+                continue                      # inside the site: quoted material
+            d = lo - m.end() if m.end() <= lo else m.start() - hi
+            if d < 0 or d > 500:              # check_anchors.PAIR_WINDOW
+                continue
+            if best_d is None or d < best_d:
+                best_tok, best_d = cand, d
+        if best_tok is None:
+            out_lines.append(line)
+            continue
+        rel = gate_resolve(index, best_tok)
+        if rel is None:
+            out_lines.append(line)
+            continue
+
+        # repair each inner pair in place, right to left so offsets hold
+        for i in range(len(qs) // 2 - 1, -1, -1):
+            a, b = qs[2 * i], qs[2 * i + 1]
+            body = line[a + 1:b]
+            if not body.strip() or _resolves_in(index, rel, body):
+                continue
+            exact, _occ = index.locate(rel, body, min_len=REQUOTE_MIN_LEN)
+            if not exact:
+                continue
+            if '"' in exact or exact.count("`") % 2:
+                continue                      # would re-parse the site: refuse
+            nb, _ = normalise(body)
+            ne, _ = normalise(exact)
+            if len(ne) < REQUOTE_MIN_LEN or len(ne) < REQUOTE_MIN_RATIO * len(nb):
+                continue                      # a fragment, not a punctuation trim
+            # This pass trims the manifest's framing off the END of a quotation
+            # and nothing else.  A recovered string that is not a head of what the
+            # manifest wrote would be this generator RE-CHOOSING the quotation,
+            # which is the author's act, not the projector's.  Refused.
+            if not nb.startswith(ne):
+                continue
+            tail = nb[len(ne):].strip()
+            if tail.strip(REQUOTE_TAIL_PUNCT):
+                continue                      # the difference is words: refuse
+            # move the trimmed punctuation outside the closing quote, never drop it
+            line = line[:a + 1] + exact + line[b] + tail + line[b + 1:]
+            REQUOTED.append((where, rel, f'"{body}"', f'"{exact}"{tail}'))
+        out_lines.append(line)
+    return "\n".join(out_lines)
+
+
 def fold(s: str) -> str:
     """Length-preserving character fold.  Index-safe."""
     s = unicodedata.normalize("NFC", s)
@@ -513,18 +661,18 @@ def normalise(s: str):
 TRIM = " ,;:.!?—–-"
 
 
-def fragments(needle: str):
+def fragments(needle: str, min_len=MIN_ANCHOR_LEN):
     """Split a needle at elisions; longest fragment first."""
     parts = re.split(r"…|\.\.\.", needle)
     parts = [p.strip(TRIM) for p in parts]
-    parts = [p for p in parts if len(p) >= MIN_ANCHOR_LEN]
+    parts = [p for p in parts if len(p) >= min_len]
     return sorted(set(parts), key=lambda p: (-len(p), p))
 
 
 MAX_WINDOW_WORDS = 45
 
 
-def shrink(frag: str):
+def shrink(frag: str, min_len=MIN_ANCHOR_LEN):
     """Yield the fragment, then every contiguous word-window of it, longest first.
 
     The manifest quotes with the punctuation and framing of the MANIFEST, not of the
@@ -538,7 +686,7 @@ def shrink(frag: str):
 
     def clean(c):
         c = c.strip(TRIM)
-        if len(c) >= MIN_ANCHOR_LEN and c not in seen:
+        if len(c) >= min_len and c not in seen:
             seen.add(c)
             return c
         return None
@@ -632,13 +780,13 @@ class FileIndex:
     def rank_of(self, token, rel):
         return getattr(self, "_rank_of", {}).get((token, rel), 9)
 
-    def locate(self, rel: str, quote: str):
+    def locate(self, rel: str, quote: str, min_len=MIN_ANCHOR_LEN):
         """Verify a quote inside a file.  Returns (exact_substring|None, occurrences)."""
         text = self.text(rel)
         ntext, imap = self.norm(rel)
         nq, _ = normalise(quote)
-        for frag in fragments(nq) or ([nq] if len(nq) >= MIN_ANCHOR_LEN else []):
-            for cand in shrink(frag):
+        for frag in fragments(nq, min_len) or ([nq] if len(nq) >= min_len else []):
+            for cand in shrink(frag, min_len):
                 pos = ntext.find(cand)
                 if pos < 0:
                     continue
@@ -649,7 +797,7 @@ class FileIndex:
                 # that is still a real anchor: long enough, or short but unique.
                 pieces = [pc.strip() for pc in span.split("\n")]
                 pieces = [pc for pc in pieces
-                          if len(pc) >= MIN_ANCHOR_LEN
+                          if len(pc) >= min_len
                           or (len(pc) >= 10 and text.count(pc) == 1)]
                 if not pieces:
                     continue
@@ -996,11 +1144,11 @@ def render_anchor_list(picked, dropped):
     return out
 
 
-def render_entry(entry: Entry, picked_map, dropped, flags, spine, why=None):
+def render_entry(entry: Entry, picked_map, dropped, flags, spine, index, why=None):
     # Everything below that comes from the manifest is inherited prose and goes
-    # through delocate(); the anchor list is MINTED and must not be touched, its
-    # quotes being byte-exact substrings of the targets.
-    d = lambda s: delocate(s, entry.id)
+    # through delocate() and requote(); the anchor list is MINTED and must not be
+    # touched, its quotes being byte-exact substrings of the targets.
+    d = lambda s: requote(delocate(s, entry.id), index, entry.id)
     out = [f"### {entry.id} · {d(entry.title)}", ""]
     if why:
         out += [f"*Why METHOD and not a rung.* {why}", ""]
@@ -1061,7 +1209,7 @@ def render_station(st, entries_by_id, ledger, source_sha, source_date, law_ancho
                 dropped.append(drop)
         picked = [(SOURCE_REL, e.heading, "claim-quote")] + picked
         ledger.add(rel, SOURCE_REL, e.heading, True, "claim-quote")
-        out += render_entry(e, picked, dropped, flags, "ladder")
+        out += render_entry(e, picked, dropped, flags, "ladder", ledger.index)
 
     out += ["---", "",
             "## Escorted counts",
@@ -1267,7 +1415,8 @@ def render_method(entries_by_id, ledger, source_sha, source_date, law_anchor, co
                 dropped.append(drop)
         picked = [(SOURCE_REL, e.heading, "claim-quote")] + picked
         ledger.add(rel, SOURCE_REL, e.heading, True, "claim-quote")
-        out += render_entry(e, picked, dropped, flags, "method", why=WHY_METHOD.get(eid))
+        out += render_entry(e, picked, dropped, flags, "method", ledger.index,
+                            why=WHY_METHOD.get(eid))
 
     out += ["---", "",
             "## Escorted counts",
@@ -1295,6 +1444,7 @@ def render_method(entries_by_id, ledger, source_sha, source_date, law_anchor, co
 
 def build():
     SCRUBBED.clear()          # build() is pure: two calls must report the same
+    REQUOTED.clear()
     raw = SOURCE.read_bytes()
     source_sha = hashlib.sha256(raw).hexdigest()
     text = raw.decode("utf-8")
@@ -1421,6 +1571,16 @@ def report(ledger, counts, entries, source_sha, files, mode):
     print(f"line locators scrubbed   : {len(SCRUBBED)}")
     for where, was, now in SCRUBBED:
         print(f"    {where}: {was}  ->  {now}")
+
+    # The inherited-quote repair, itemised.  Same discipline as the scrub: the
+    # generator edited prose it copied, so every edit is printed with the file
+    # the repaired string was verified against.  Nothing here is inferred — each
+    # `now` is a byte-exact substring of the named target.
+    print(f"inherited quotes repaired: {len(REQUOTED)}")
+    for where, rel, was, now in REQUOTED:
+        print(f"    {where} -> {rel}")
+        print(f"        was: {was!r}")
+        print(f"        now: {now!r}")
     print("=" * 72)
 
 
