@@ -87,6 +87,11 @@ kills the class of error that produced three false premises in one day.
 | `R-08` | What does `[S]` mean — *follows necessarily*, or *a considered choice*? | rule first, then re-run the tier findings |
 | `R-22` | Which live-`.md` denominator governs? | adopt **1,385** (builder walk rules) |
 
+**RULED 2026-08-13 (in-session, CHAIR):** `R-08` → `[S]` means **selected** —
+a considered choice, not a discovery; re-run the tier findings under it.
+`R-22` → adopt **1,385**, quoted always with its exclusion rule.
+Receipt: [`WAVE_0_RULINGS_RECEIPT_2026_08_13.md`](WAVE_0_RULINGS_RECEIPT_2026_08_13.md).
+
 **Nothing downstream should be reported as a number until `R-22` lands.**
 
 ---
