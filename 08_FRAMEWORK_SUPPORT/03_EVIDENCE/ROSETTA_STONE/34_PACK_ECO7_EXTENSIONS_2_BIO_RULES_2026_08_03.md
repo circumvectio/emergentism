@@ -337,7 +337,7 @@ network geometry* explains the scaling.
 
 **Does it add prediction?** *Marginal.* The fractal-distribution-network image
 rhymes with the doctrine's *replicator-stack* (the deeper replicators — memotype,
-egregorotype — distribute the doctrine through a branching network of sessions,
+Egregoreotype — distribute the doctrine through a branching network of sessions,
 agents, institutions). But the rhyme is loose, and forcing a metabolic-scaling
 exponent onto the organism would be Procrustean. **Retained as a one-line
 cross-ref**: the replicator-stack is a distribution network; WBE is the biology
