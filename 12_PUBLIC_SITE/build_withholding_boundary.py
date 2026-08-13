@@ -41,6 +41,23 @@ FORCED_ARTIFACTS = {
     "teleology/index.html": "Historical teleology route couples an uncalibrated product to an objective-dharma rule.",
 }
 
+# This policy inspects source artifacts that could be delivered by the static
+# site.  Local deployment output is neither source custody nor a public route:
+# scanning it would manufacture routes such as `/.vercel/output/static/...` in
+# the withholding ledger.  Keep the existing historical exclusions together
+# with the runtime-only directories so the boundary remains source-relative.
+POLICY_SCAN_EXCLUDED_PREFIXES = (
+    ".vercel/",
+    ".git/",
+    "node_modules/",
+    "__pycache__/",
+    "book-pwa/",
+    "_archive/",
+    "90_ARCHIVE/",
+    "partials/",
+    "_PLANS/",
+)
+
 LITERAL_D6 = re.compile(r"D6\s*(?:≡|=)\s*D0", re.I)
 PRODUCT = (
     r"(?:P(?:_|<sub>)?node(?:</sub>)?\s*(?::?=)\s*(?:Φ|&Phi;)|"
@@ -101,7 +118,7 @@ def _policy_matches(current_surfaces: set[str]) -> dict[str, tuple[list[str], st
     matches: dict[str, tuple[list[str], str]] = {}
     for path in sorted(SITE.rglob("*.html")):
         artifact = path.relative_to(SITE).as_posix()
-        if artifact.startswith(("book-pwa/", "_archive/", "90_ARCHIVE/", "partials/", "_PLANS/")):
+        if artifact.startswith(POLICY_SCAN_EXCLUDED_PREFIXES):
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         rule_ids: list[str] = []
@@ -203,6 +220,32 @@ def _is_single_frozen_header(row: dict) -> bool:
     return len(headers) == 1 and headers[0] == {"key": "X-Robots-Tag", "value": "noindex, follow"}
 
 
+def _frozen_legacy_surfaces(parity: dict) -> list[str] | None:
+    """Return an explicit legacy list, or None for older schema-v2 manifests.
+
+    `frozenLegacySurfaces` was added to one schema-v2 parity revision, but
+    later valid schema-v2 manifests omitted it.  Absence therefore cannot mean
+    that legacy headers are safe to delete.  A present field is still checked
+    strictly so a malformed declaration fails before a generation write.
+    """
+
+    missing = object()
+    value = parity.get("frozenLegacySurfaces", missing)
+    if value is missing:
+        return None
+    if not isinstance(value, list) or any(not isinstance(artifact, str) or not artifact for artifact in value):
+        raise ValueError("public_semantic_parity.json frozenLegacySurfaces must be a list of non-empty artifacts")
+    if len(value) != len(set(value)):
+        raise ValueError("public_semantic_parity.json frozenLegacySurfaces must not contain duplicates")
+    return value
+
+
+def _is_frozen_root_header(row: dict, frozen_roots: list[str]) -> bool:
+    return _is_single_frozen_header(row) and row.get("source") in {
+        f"/{root}/(.*)" for root in frozen_roots
+    }
+
+
 def _is_withheld_header(row: dict) -> bool:
     values = {item.get("value") for item in row.get("headers", []) if item.get("key") == "X-Robots-Tag"}
     return "noindex, noarchive, nosnippet, nofollow" in values and row.get("source") != "/historical-boundary/(.*)"
@@ -223,15 +266,28 @@ def _build_vercel(artifacts: list[dict]) -> dict:
             })
 
     parity = json.loads(PARITY.read_text(encoding="utf-8"))
-    headers = [
-        row for row in config.get("headers", [])
-        if not _is_single_frozen_header(row) and not _is_withheld_header(row)
-    ]
+    frozen_roots = parity["frozenLibraryRoots"]
+    frozen_legacy = _frozen_legacy_surfaces(parity)
+    if frozen_legacy is None:
+        # Compatibility mode: without an explicit source-owned legacy list,
+        # regenerate the named frozen roots but retain any existing legacy
+        # headers.  Treating omission as [] would silently change publication
+        # policy when this generator is run.
+        headers = [
+            row for row in config.get("headers", [])
+            if not _is_frozen_root_header(row, frozen_roots) and not _is_withheld_header(row)
+        ]
+    else:
+        headers = [
+            row for row in config.get("headers", [])
+            if not _is_single_frozen_header(row) and not _is_withheld_header(row)
+        ]
     frozen_value = [{"key": "X-Robots-Tag", "value": "noindex, follow"}]
-    for root in parity["frozenLibraryRoots"]:
+    for root in frozen_roots:
         headers.append({"source": f"/{root}/(.*)", "headers": frozen_value})
-    for artifact in parity["frozenLegacySurfaces"]:
-        headers.append({"source": _route_base(artifact) + "(.*)", "headers": frozen_value})
+    if frozen_legacy is not None:
+        for artifact in frozen_legacy:
+            headers.append({"source": _route_base(artifact) + "(.*)", "headers": frozen_value})
     withheld_value = [
         {"key": "X-Robots-Tag", "value": "noindex, noarchive, nosnippet, nofollow"},
         {"key": "Cache-Control", "value": "no-store, max-age=0"},

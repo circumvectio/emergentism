@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Fail closed when current or provisional public pages drift from their owners."""
+"""Fail closed when any deployable public HTML page drifts from its owners."""
 
 from __future__ import annotations
 
-import fnmatch
 import json
 import hashlib
 import html as html_lib
@@ -18,6 +17,13 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parent
 ROOT = SITE.parent
 MANIFEST_PATH = SITE / "public_semantic_parity.json"
+# Keep the semantic checker on the exact same deployment-boundary semantics as
+# predeploy_check.py.  A second, weaker glob implementation here previously
+# let deployable legacy HTML fall outside the semantic scan.
+if str(SITE) not in sys.path:
+    sys.path.insert(0, str(SITE))
+from predeploy_check import is_vercel_ignored, load_vercelignore_patterns
+
 EXPECTED_SEQUENCE = ["D0", "mu0", "D1", "mu1", "D2", "mu2", "D3", "mu3", "D4", "mu4", "D5", "b6", "D6", "r6", "D0"]
 FORBIDDEN = {
     # --- added 2026-07-22 after a Rosetta caste sweep found the sharpest tier
@@ -69,8 +75,9 @@ FORBIDDEN = {
     "field arithmetic fable": re.compile(r"One equals Nothing times Everything", re.I),
     # The glyphs are opaque TitanFrame renderings. The reciprocal chart has its
     # own numeric identity, but no fence, coupling, or analogy turns that fact
-    # into an infix operation over Titan terms. Current surfaces therefore ban
-    # the symbol equation without exception; the operator-free emblem remains.
+    # into an infix operation over Titan terms. Affirmative public copy bans
+    # the symbol equation; an explicitly retired mention may preserve negative
+    # evidence when its lifecycle marker comes first.
     "forbidden Titan infix arithmetic": re.compile(
         r"(?:⊙\s*=\s*•\s*(?:×|x|\*)\s*○|"
         r"•\s*(?:×|x|\*)\s*○\s*(?:=|→)\s*⊙)"
@@ -131,6 +138,26 @@ TITAN_OPERATOR_FREE_FIXTURES = (
     "•  ⊙  ○",
     "TitanFrame := 0_T | 1_T | ∞_T",
 )
+LIFECYCLE_AWARE_FORBIDDEN = {
+    "literal D6 identity",
+    "legacy untyped node product",
+    "retired node product assignment",
+    "forbidden Titan infix arithmetic",
+}
+# A repair/retirement marker must precede the quoted form in the same sentence.
+# This permits a current surface to preserve its negative evidence, while a
+# later disclaimer cannot launder an affirmative formula.
+LIFECYCLE_PREFIX = re.compile(
+    r"(?:\b(?:retired|withdrawn|refuted|struck|killed|banned|ill-typed|ill typed)\b"
+    r"[^.;:!?]{0,80}|\bno\s+(?:literal\s+)?identity\b[^.;:!?]{0,80})$",
+    re.I,
+)
+LIFECYCLE_FIXTURES = {
+    "literal D6 identity": "D6 ≡ D0",
+    "legacy untyped node product": "P = Φ × V",
+    "retired node product assignment": "P_node := Φ̂₄ × V₄",
+    "forbidden Titan infix arithmetic": "⊙ = • × ○",
+}
 CURRENT_BOOK_MARKERS = {
     "book/index.html": (
         "Only a declared common strictly increasing reparameterization applied to both factors is assumed here:",
@@ -198,28 +225,56 @@ def _sha256_revision(path: Path) -> str:
     return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def _vercelignore_patterns() -> list[str]:
-    return [
-        line.strip() for line in (SITE / ".vercelignore").read_text(encoding="utf-8").splitlines()
-        if line.strip() and not line.lstrip().startswith("#")
-    ]
+def deployable_html_surfaces() -> list[str]:
+    """Return every HTML artifact Vercel may receive under .vercelignore."""
+
+    patterns = load_vercelignore_patterns()
+    if patterns is None:
+        raise ValueError(".vercelignore is required to determine deployable HTML")
+    surfaces: list[str] = []
+    for path in SITE.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in {".html", ".htm"}:
+            continue
+        rel = path.relative_to(SITE).as_posix()
+        if not is_vercel_ignored(rel, patterns):
+            surfaces.append(rel)
+    return sorted(surfaces)
 
 
-def _ignored(rel: str, patterns: list[str]) -> bool:
-    ignored = False
-    for pattern in patterns:
-        negated = pattern.startswith("!")
-        raw = pattern[1:] if negated else pattern
-        if raw.endswith("/"):
-            prefix = raw.rstrip("/")
-            matched = rel == prefix or rel.startswith(prefix + "/")
-        elif "/" not in raw:
-            matched = fnmatch.fnmatch(Path(rel).name, raw) or fnmatch.fnmatch(rel, raw)
-        else:
-            matched = fnmatch.fnmatch(rel, raw.lstrip("/"))
-        if matched:
-            ignored = not negated
-    return ignored
+def withheld_public_routes() -> set[str]:
+    """Read the existing exact withheld-route policy for RAG custody checks."""
+
+    registry_path = SITE / "withheld-routes.json"
+    try:
+        registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"cannot read withheld-route registry: {exc}") from exc
+    artifacts = registry.get("artifacts")
+    if not isinstance(artifacts, list):
+        raise ValueError("withheld-route registry artifacts must be a list")
+    routes: set[str] = set()
+    for item in artifacts:
+        item_routes = item.get("publicRoutes") if isinstance(item, dict) else None
+        if not isinstance(item_routes, list) or not all(
+            isinstance(route, str) for route in item_routes
+        ):
+            raise ValueError("withheld-route registry has an invalid publicRoutes entry")
+        routes.update(item_routes)
+    return routes
+
+
+def has_unretired_forbidden_match(text: str, name: str) -> bool:
+    """True when a lifecycle-aware retired form is used rather than mentioned."""
+
+    if name not in LIFECYCLE_AWARE_FORBIDDEN:
+        raise ValueError(f"{name} is not a lifecycle-aware public prohibition")
+    candidate = normalize_visible_text(text)
+    pattern = FORBIDDEN[name]
+    for match in pattern.finditer(candidate):
+        prefix = candidate[max(0, match.start() - 180):match.start()]
+        if not LIFECYCLE_PREFIX.search(prefix):
+            return True
+    return False
 
 
 def main() -> int:
@@ -236,12 +291,34 @@ def main() -> int:
     for fixture in TITAN_OPERATOR_FREE_FIXTURES:
         if has_titan_infix(fixture):
             errors.append(f"Titan infix rule overmatched operator-free wording: {fixture}")
+    for name, fixture in LIFECYCLE_FIXTURES.items():
+        if not has_unretired_forbidden_match(fixture, name):
+            errors.append(f"lifecycle-aware prohibition escaped: {name}")
+        if has_unretired_forbidden_match(f"Retired {fixture}", name):
+            errors.append(f"lifecycle-aware prohibition overmatched retired mention: {name}")
     data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     try:
         audited_surfaces = parity_audit_surfaces(data)
     except ValueError as exc:
         errors.append(str(exc))
         audited_surfaces = []
+    try:
+        deployable_html = deployable_html_surfaces()
+    except ValueError as exc:
+        errors.append(str(exc))
+        deployable_html = []
+    deployment_patterns = load_vercelignore_patterns() or []
+    for rel in audited_surfaces:
+        path = SITE / rel
+        if not path.is_file():
+            errors.append(f"missing current/provisional public surface: {rel}")
+        elif is_vercel_ignored(rel, deployment_patterns):
+            errors.append(f"current/provisional public surface is excluded from deployment: {rel}")
+    try:
+        excluded_routes = withheld_public_routes()
+    except ValueError as exc:
+        errors.append(str(exc))
+        excluded_routes = set()
     if data.get("schemaVersion") != 2:
         errors.append("public semantic parity schemaVersion must be 2")
     contract = data.get("claimCardContract", {})
@@ -430,23 +507,19 @@ def main() -> int:
                 f"got {sorted(actual_cards)}"
             )
 
-    for rel in audited_surfaces:
+    # The manifest still owns the current/provisional contract.  Prohibition
+    # scans are wider: any HTML that can reach a deployment is public copy and
+    # must survive the same semantic fences.
+    for rel in deployable_html:
         path = SITE / rel
-        if not path.is_file():
-            errors.append(f"missing current/provisional public surface: {rel}")
-            continue
         text = path.read_text(encoding="utf-8", errors="replace")
         for name, pattern in FORBIDDEN.items():
             if name == "application authority leakage" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
             if name == "retired evidence tier" and rel == "record/index.html" and "data-historical-authority-boundary" in text:
                 continue
-            if name == "retired node product assignment":
-                if has_retired_node_product(text):
-                    errors.append(f"{rel}: {name}")
-                continue
-            if name == "forbidden Titan infix arithmetic":
-                if has_titan_infix(text):
+            if name in LIFECYCLE_AWARE_FORBIDDEN:
+                if has_unretired_forbidden_match(text, name):
                     errors.append(f"{rel}: {name}")
                 continue
             scan_text = text

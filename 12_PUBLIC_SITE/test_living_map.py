@@ -198,7 +198,10 @@ class LivingMapContractTests(unittest.TestCase):
         self.assertIn("isStorable", sw)
         for frozen in self.parity["frozenLibraryRoots"]:
             self.assertFalse(any(route.startswith(f"/{frozen}/") for route in precached_routes))
-        for artifact in self.parity["frozenLegacySurfaces"]:
+        # The legacy-surface list is optional in schema v2.  Current site
+        # manifests can preserve pre-existing Vercel headers without carrying
+        # a new semantic declaration for every historical route.
+        for artifact in self.parity.get("frozenLegacySurfaces", []):
             path = Path(artifact)
             route = "/" + (path.parent.as_posix() if path.name == "index.html" else path.with_suffix("").as_posix())
             self.assertNotIn(route, {item.rstrip("/") or "/" for item in precached_routes})

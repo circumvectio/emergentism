@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "status": "active-public-withholding-boundary",
-  "updated": "2026-07-30",
+  "updated": "2026-08-08",
   "authority": "This registry controls public delivery only. Git remains the byte-custody layer; source doctrine and evidence tiers remain upstream.",
   "boundary": {
     "artifactRoute": "historical-boundary/index.html",
@@ -13,8 +13,8 @@
   "artifacts": [
     {
       "artifact": "app.html",
-      "sha256": "7a239a30f5031542f8263b8db5d6e42def8e03e2fadccd01fa4bdcd58d478a27",
-      "bytes": 11187,
+      "sha256": "817659270dada1dc4a0cd1bb27c177c35a922057786d7b8a1eb32dbb96811c3b",
+      "bytes": 11178,
       "publicRoutes": [
         "/app",
         "/app/",

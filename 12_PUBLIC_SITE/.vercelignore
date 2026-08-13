@@ -77,6 +77,39 @@ will/02-the-serpent-is-f5/index.html
 will/04-what-the-corpus-reveals/index.html
 will/05-exhaustive-observations/index.html
 # END GENERATED EXACT WITHHOLDING
+
+# 2026-08-08 semantic repair: exact stale projections retained in repository
+# custody, but withheld from deployment until their owning source is reconciled.
+# This is a public-delivery boundary only; it neither deletes nor retiers them.
+formal/00-correction-wolfram-nks/index.html
+formal/15-efr-wolfram-nks-integration/index.html
+papers/paper-a-frame-algebra/index.html
+papers/paper-b-bloch-burri-identity/index.html
+papers/paper-d-wave-particle-duality/index.html
+papers/paper-f-k-minimal/index.html
+trinity/00-the-transcendental-trinity-canon/index.html
+trinity/05-division-by-zero/index.html
+trinity/08-co-emergence/index.html
+trinity/25-the-compression/index.html
+will/14-log-form-of-the-power-max-lemma/index.html
+will/15-log-form-of-the-power-max-lemma/index.html
+will/l1-l7-refinement-audit/index.html
+corrections/index.html
+foundations/the-seven-ologies-per-the-rosetta/index.html
+operators/mf-301-photosynthesis-is-the-original-f5/index.html
+papers/paper-i-known-unknowns-program/index.html
+papers/paper-o-strong-weak-emergence-d5/index.html
+papers/paper-p-su3-obstruction-bare-s2/index.html
+rosettad/00-the-seven-ologies-per-the-rosetta/index.html
+sphere.html
+trinity/29-the-compass-and-the-sextant/index.html
+trinity/31-vmosk-as-applied-emergentism/index.html
+trinity/32-the-four-lines/index.html
+trinity/33-the-derivation/index.html
+will/00-a-square-cannot-be-negative/index.html
+will/03-why-the-constraint-matters/index.html
+will/07-the-four-forces-are-the-four-lines/index.html
+
 # The local custody/control registry is audited before build, not published.
 withheld-routes.json
 
