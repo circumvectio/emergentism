@@ -165,8 +165,8 @@ EXPECTED_DEBTS = {
     "OWNER_GATE_OPEN_TOPOLOGY",
 }
 EXPECTED_REUSED_PREFIXES = 101
-EXPECTED_LIFECYCLE_ROWS = 48
-EXPECTED_CURRENT_ROWS = 26
+EXPECTED_LIFECYCLE_ROWS = 50
+EXPECTED_CURRENT_ROWS = 28
 EXPECTED_GRAVE_ROWS = 22
 EXPECTED_WORLD_REQUIREMENTS = (
     "Independent observations with discriminating outcomes",
@@ -1891,7 +1891,7 @@ def compute_claim_disposition(root: Path) -> dict[str, Any]:
     if lifecycle_ids & survivor_ids:
         raise ContractError(
             "claim-status contract: typed survivors must remain outside the "
-            "48-row open/investigation/grave lifecycle"
+            "50-row open/investigation/grave lifecycle"
         )
     live_statuses = set(source["live_statuses"])
     terminal_statuses = set(source["terminal_statuses"])

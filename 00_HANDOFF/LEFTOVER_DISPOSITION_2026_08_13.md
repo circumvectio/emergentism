@@ -42,4 +42,15 @@ CLAIM_STATUS rows. Staged vision + L5 proposal remain unsigned `[D]`.
   `EXTERNAL_SOURCE_CONTRACTS`. Old path kept. Six Lenses pin still
   unpaid.
 
+## Contact snapshot 244
+
+243 stays immutable. New receipt
+`244_CONTACT_LIMITED_REBASELINE_2026_08_13.md` records 50 lifecycle
+rows, 28 W/RQ, 19 contracts, 43 current doors, 47 sitemap routes.
+Ratchet: PASS-WITH-DEBT. World contact still 0.
+
+Predeploy remaining red: Six Lenses pin only. Live
+`THE_SIX_LENSES_EDITION_1.md` hashes to a different digest. Not
+retargeted.
+
 World contact 0. G10 unpaid. No host cutover.
