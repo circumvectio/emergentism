@@ -44,10 +44,12 @@ Every load-bearing claim carries exactly one tier. The tier answers a single que
 |------|------|---------------|------------------------|----------------------|
 | **[A]** | **Analytic / machine-checked** | Formal result in a named system | Reproducible derivation, proof, type check, or machine check with declared premises | "The formal consequence can be checked independently in the named system." |
 | **[B]** | **Observed / receipted** | Custodied observation, measurement, attribution, build, run, or outcome | Source bytes, method, scope, date, and receipt are available for replay or inspection | "The contact happened as scoped, and the custody trail exists." |
-| **[S]** | **Structural** | Follows necessarily *if* you accept stated premises | Valid derivation, logical consequence, model output conditional on assumptions | "Given my assumptions, this must hold — but the assumptions are a choice." |
+| **[S]** | **Structural (selected)** | A considered choice, defensible as a choice, not a discovery — what follows necessarily *given* the selected premises; the tag asserts the selection | Valid derivation, logical consequence, model output conditional on chosen assumptions | "Given my assumptions, this must hold — and the assumptions are a choice I own." |
 | **[I]** | **Interpretive** | A bridge from formal result to real-world meaning | Coherence, convergence, analogy; not independently verified | "This is what I think it *means*. It is suggestive, not shown." |
 | **[D]** | **Draft / demonstration** | A provisional construction not yet validated | Mock-up, prototype, staged construction, illustrative run | "This shows the shape of the thing; it is not yet load-bearing." |
 | **[C]** | **Conjecture** | Speculative, testable, untested | A stated hypothesis with a test you have not yet run | "This might be brilliant or wrong. It earns its place by being testable, not by being true." |
+
+`[B]` *Ruling, 2026-08-13 (CHAIR, in-session): where the corpus carried two live definitions of `[S]` — "follows necessarily" versus "a considered choice, not a discovery" — the selected reading governs. The necessity clause stands as conditional on the selection. Receipt: `01_EMERGENTISM/00_HANDOFF/WAVE_0_RULINGS_RECEIPT_2026_08_13.md`.*
 
 **The cardinal rule: you may never silently upgrade a tier.** A `[C]` may become `[S]`, `[A]`, or `[B]` only by meeting its pre-stated upgrade path (Section 3), and the change is *recorded as an event*, with a date and a reason. `[A]` and `[B]` are evidence types, not higher and lower versions of one another. Downgrades follow the same discipline. Prose may be vivid; it may not move a tier. *When the prose and the tier disagree, the tier governs and the prose is read as invitation.*
 
