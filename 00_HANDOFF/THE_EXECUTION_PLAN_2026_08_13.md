@@ -157,7 +157,25 @@ time, and no authorization makes it safe to move a file another session is editi
 
 ## 5 · WAVES 4–5 — the pilot, then the migration
 
-### `W4` · Fix `16_THE_EMISSION` first · **owner-class: AGENT**
+### `W4` · Fix `16_THE_EMISSION` first · **owner-class: AGENT → now CHAIR**
+
+> **EXECUTED 2026-08-13, and it stopped on a ruling.** `56 → 21 → 10` anchor
+> failures across two passes (`050cc466`, `52dc0858`), while the gate's coverage
+> ROSE — anchors verified in prose `180 → 188`. `check_anchors.py` was never
+> modified; verified by `git diff --quiet`, not asserted.
+>
+> **The remaining 10 are one question, not ten.** Relaxing `pair()`'s adjacency
+> rule clears **9 of the 10** immediately. That was refused deliberately: buying
+> green by loosening the gate is the failure this whole lane exists to prevent.
+> **`R-32` (new): is `pair()`'s adjacency rule correct?** Rule it and Wave 4
+> closes; until then Wave 5 stays shut, because a migration rehearsal that only
+> passes with its checker loosened has rehearsed nothing.
+>
+> Also fixed here, and it is the **fourth** instance of one defect class today:
+> `A_THE_LADDER/05_D4_ACTUAL.md` was stale *and committed at HEAD* — a generated
+> artifact its own generator would not reproduce. `emit.py --verify` now reports
+> byte-identical across all 10 outputs. **Add that check to `gate.sh` when `R-16`
+> lands; nothing currently watches for generator drift.**
 
 `16_THE_EMISSION/A_THE_LADDER/` **is** the target spine — `00_GROUND · 01_THE_UNIT ·
 02_D1_ARITHMETIC · 03_D2_CONFIGURATION · 04_D3_STATE · 05_D4_ACTUAL ·
