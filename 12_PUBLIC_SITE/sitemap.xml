@@ -3,6 +3,9 @@
      excluded from this current discovery surface. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://emergentism.org/</loc><priority>1.0</priority></url>
+  <url><loc>https://emergentism.org/spark/</loc><priority>0.98</priority></url>
+  <url><loc>https://emergentism.org/spark.md</loc><priority>0.98</priority></url>
+  <url><loc>https://emergentism.org/llms.txt</loc><priority>0.9</priority></url>
 
   <!-- Primary journey: practice → worldview → research → current book → participation → exit. -->
   <url><loc>https://emergentism.org/practice/</loc><priority>0.95</priority></url>

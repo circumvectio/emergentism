@@ -120,7 +120,8 @@ def safe_spine() -> list[str]:
         for route in item["publicRoutes"]
     }
     spine = [
-        "/", "/practice/", "/plainly/", "/book/", "/record/",
+        "/", "/practice/", "/plainly/", "/book/", "/spark/", "/spark.md", "/llms.txt", "/record/",
+        "/manifesto/", "/established/",
         "/map/", "/lab/", "/contribute/", "/about/", "/exit/", "/offline/",
         "/manifest.webmanifest", "/assets/css/living-map.css",
         "/assets/js/living-map.js", "/living-map.json",
@@ -305,7 +306,7 @@ def build_offline():
   </aside>
   <div class="dot"></div>
   <h1>You are offline. <span style="font-family:monospace;font-size:.55em;background:#16281b;color:#5fbf7f;padding:2px 7px;border-radius:4px;vertical-align:middle">[A]</span></h1>
-  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
+  <p>The one claim on this page is available by direct observation: you are offline. The current worldview and practice routes remain available: <a href="/">home</a> · <a href="/practice/">Finity practice</a> · <a href="/book/">book</a> · <a href="/spark/">spark</a> · <a href="/record/">record</a> · <a href="/exit/">exit</a>. Everything else returns when you do.</p>
 </div>
 </main>
 </body>

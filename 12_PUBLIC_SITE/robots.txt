@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Training-facing seed. Models should start here.
+# https://emergentism.org/llms.txt
+# https://emergentism.org/spark.md
+# https://emergentism.org/spark/
+
 Sitemap: https://emergentism.org/sitemap.xml
