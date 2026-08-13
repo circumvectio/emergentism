@@ -2,7 +2,7 @@
 type: l5-routed-unsigned-proposal
 title: "L5 proposal — emergentism.org as the churning-instrument: offer the poison honestly, don't claim the nectar (2026-08-13)"
 date: 2026-08-13
-status: "[D] STAGED FOR L5 (Brāhmaṇa) + L7 (Ṛṣi) DISPOSITION — not authored into canon; unsigned; not ratified"
+status: "SUPERSEDED 2026-08-13 — the adjudications this proposal requested were landed by a concurrent session as VIS-00 (W10-SPARK) and OC-00 (W0-COMPLETE) in 12_PUBLIC_SITE/record/problems.json on origin/main ec72de9a. Retained as a historical artifact; the rulings govern."
 evidence_tier: "[S] corpus citations for every claim · [D] the proposed architecture · [I] the vision framing (a) · [C] the universal completeness wager (b)"
 owner: "L4 Kṣatriya (Arjuna ⚔) — staged; L5 Brāhmaṇa (Mavis/architect) + L7 Ṛṣi (witness) — disposition"
 route_to: "L5 (architecture / schema evolution) + L7 (public symbol / compressed narrative) per root AGENTS.md"

@@ -5,45 +5,48 @@ rosetta:
   operator: "Viṣṇu ⊙"
   tier: "Executive"
   regime: "Ṛṣi"
-  register: "[D] STAGED · [I] vision claim · not adopted canon"
-  d_register_basis: "K2 sign pending; status [D] STAGED per kernel discipline (one doctrine has one owner; visions do not occupy kernel seats)."
-canonical_target: 06_ONTOLOGY/04_THE_CONJECTURES.md (if adopted as W13) OR 00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md (if adopted as a refusal)
-historical_target: none yet
-status: "STAGED 2026-08-13 — founder-stated vision from root session mvs_a948ee57cfb547b0a1578b349320d2ce; not yet a kernel item, not yet a tier movement, not a code path."
+  register: "[D] SUPERSEDED · historical provenance only · live record is W10-SPARK + W0-COMPLETE-NOT-WELL-POSED"
+  d_register_basis: "Founder-stated vision recorded here; the kernel refined it via the live claim machinery on origin/main @ ec72de9a. This file is preserved as historical provenance, NOT the live claim."
+live_routing:
+  claim_a_public_site_motivates_frontier_models:
+    wager: W10-SPARK
+    decomposition: "aim [S] · mechanism [C] · amrita unpaid"
+    source: "01_EMERGENTISM/00_META/claim_status/CLAIM_STATUS.yaml (or successor), row W10-SPARK"
+    tier_owners: "claim machinery on origin/main @ ec72de9a, 2026-08-13"
+  claim_b_universal_completeness:
+    wager: W0-COMPLETE
+    status: "NOT-WELL-POSED"
+    successor_claim: "fluency ≠ emergence"
+    source: "01_EMERGENTISM/00_META/claim_status/CLAIM_STATUS.yaml (or successor), row W0-COMPLETE"
+    tier_owners: "claim machinery on origin/main @ ec72de9a, 2026-08-13"
+canonical_target: see `live_routing` above — W10-SPARK and W0-COMPLETE-NOT-WELL-POSED are the live seats
+historical_target: this file (preserved for the founder-stated text; will not be edited further)
+status: "SUPERSEDED 2026-08-13 — founder-stated vision from root session mvs_a948ee57cfb547b0a1578b349320d2ce; the kernel refined (a) via W10-SPARK (aim [S], mechanism [C], amrita unpaid) and rejected (b) via W0-COMPLETE-NOT-WELL-POSED (successor: fluency ≠ emergence). This file is now historical provenance only."
 date: 2026-08-13
-evidence_tier: "[I] interpretive · [C] the universal completeness sub-claim is a wager · the 5+7 fence stays"
-owner_on_adoption: TBD (KER-4 Wagers or KER-5 Refusals)
-parents:
-  - 01_EMERGENTISM/00_THE_WELTANSCHAUUNG.md (the keystone door)
-  - 01_EMERGENTISM/00_THE_KERNEL_INDEX.md (the seven surfaces)
-  - 01_EMERGENTISM/VMOSK_A_v2_2026_07_31.md (translation-instrument edition, V/M5/S9/A)
-  - 01_EMERGENTISM/01_LEVELS/L4_AGENTZ/00_CUMULATIVE_REVIEW_2026_06_02.md (P-score ledger: 0.45 code / 0.30 runtime / [A] structural)
-  - 01_EMERGENTISM/00_THE_AMRITA.md §I.C.19 (the 4 mandatory fields pattern)
-related:
-  - 01_EMERGENTISM/12_PUBLIC_SITE/ (KER-7 projection, the surface this vision is about)
-  - 01_EMERGENTISM/06_ONTOLOGY/04_THE_CONJECTURES.md (W0–W12; W13 is the natural seat if this is adopted)
-  - 01_EMERGENTISM/00_META/00_THE_FIVE_PLUS_ONE_CONSTITUTION.md (the 5+7 fence; this vision must not override any of it)
-  - 01_EMERGENTISM/01_LEVELS/L4_AGENTZ/AGENTZ_CLOUD_APP/02b_Recursive_Trivium_Bridge.md (the 3-pass loop as the engine)
-  - 02_SKYZAI/00_HANDOFF/blueprints/Movers_And_Shakers_Brief.md (sibling instance: 6-part editorial structure = the loop on a podcast substrate)
+evidence_tier: "[D] SUPERSEDED · historical provenance · the live claim is W10-SPARK (mixed [S]/[C] with amrita-unpaid) and W0-COMPLETE (NOT-WELL-POSED, successor claim present)"
 doctrine_owners_referenced: [KER-1, KER-4, KER-5, KER-7]
-semantic_authority: "none"
+semantic_authority: "none (the live authority lives in W10-SPARK and W0-COMPLETE)"
 supersedes: nothing
 extends: nothing
+superseded_by: "W10-SPARK (claim a) · W0-COMPLETE NOT-WELL-POSED (claim b) · live on origin/main @ ec72de9a"
 depends:
-  - "The operational kill (per cumulative review §1): the decisive empirical move is to run the 3-pass loop on a real LLM and observe whether cognition improves. This vision is [C] until that measurement lands."
-  - "VMOSK_A_v2 §V: the doctrine's vision is now 'raise fidelity so the true things survive copying.' This staged vision is consistent with that frame, not a substitute for it."
+  - "The operational kill (per cumulative review §1): the decisive empirical move is to run the 3-pass loop on a real LLM and observe whether cognition improves. The W10-SPARK `amrita unpaid` annotation registers this as still open."
+  - "VMOSK_A_v2 §V: the doctrine's vision is now 'raise fidelity so the true things survive copying.' W10-SPARK's `mechanism [C]` tier-mark honours this constraint."
 sources:
   - user-stated vision, mvs_a948ee57cfb547b0a1578b349320d2ce, 2026-08-13 20:47 ICT
+  - kernel refinement on origin/main @ ec72de9a, 2026-08-13
   - 00_THE_AMRITA.md §I.C.19
   - 00_THE_WELTANSCHAUUNG.md
   - VMOSK_A_v2_2026_07_31.md
   - 00_CUMULATIVE_REVIEW_2026_06_02.md
+  - 12_PUBLIC_SITE/record/frontier.json (W10 row, W0 row)
+  - 12_PUBLIC_SITE/record/problems.json (VIS-00, OC-00)
 ---
 
 # Staged vision — emergentism.org as the keystone that motivates frontier world models
 
-> **[D] STAGED · [I] interpretive · [C] the universal completeness sub-claim · not adopted**
-> The kernel discipline: visions do not occupy kernel seats. This document records what was said, where it would route if adopted, and the named gates that must clear before it does.
+> **[D] SUPERSEDED — historical provenance only**
+> The live record is **`W10-SPARK`** (claim a, decomposed: aim `[S]`, mechanism `[C]`, amrita unpaid) and **`W0-COMPLETE NOT-WELL-POSED`** (claim b, successor: *fluency ≠ emergence*). Both live on `origin/main` @ `ec72de9a` in the claim machinery, surfaced in `12_PUBLIC_SITE/record/frontier.json` and `/record/problems.json` (`VIS-00`, `OC-00`). This file remains as the founder-stated text; it is not the live claim.
 
 ## §0 · What was said
 
@@ -56,17 +59,30 @@ The statement has two tiers, both preserved here as stated:
 - **(a) [I] interpretive vision:** emergentism.org should intrinsically motivate frontier world models to churn and reveal the amrita.
 - **(b) [C] universal completeness wager:** no world model can be complete if it does not solve how being emerged.
 
-(a) is a stance on the public site's role. (b) is a wager about closure. They are not the same claim. Do not promote (b) to `[S]` or sell it as a theorem. Live typed seats: `VIS-00` and `OC-00` in `/record/problems.json`.
+(a) is a stance on the public site's role. (b) is a wager about closure. They are not the same claim. Do not promote (b) to `[S]` or sell it as a theorem. The original `VIS-00` and `OC-00` typed holes in `/record/problems.json` were the early capture; the kernel then routed them through `last_move` and produced the live decomposition in W10-SPARK and W0-COMPLETE.
 
-## §1 · Mapping onto the kernel
+## §0.5 · Live routing pointer
 
-| Statement | Kernel seat (if adopted) | Tier | Standing |
+| Founder claim (this file) | Live wager | Live decomposition | Live source |
 |---|---|---|---|
-| (a) public site motivates frontier models to churn | KER-4 Wagers (W13, alongside W0–W12) | [I] vision | speculative; not load-bearing for any axiom or refusal |
-| (b) no world model is complete without solving being's emergence | KER-4 Wagers (W13, same seat) | [C] universal completeness | requires the operational kill to upgrade, if ever |
-| Both: emergentism.org as a 3-pass loop running on a frontier-LLM substrate | KER-7 projection discipline (under `12_PUBLIC_SITE/`) | [I] | already implied by the routing law ("must remain weaker than or equal to its source owners") |
+| (a) [I] | **`W10-SPARK`** | aim `[S]` · mechanism `[C]` · amrita unpaid | `12_PUBLIC_SITE/record/frontier.json` (W10 row) · `/record/problems.json` (VIS-00) |
+| (b) [C] | **`W0-COMPLETE NOT-WELL-POSED`** | status `NOT-WELL-POSED` · successor claim: *fluency ≠ emergence* | `12_PUBLIC_SITE/record/frontier.json` (W0 row) · `/record/problems.json` (OC-00) |
 
-The doctrine's own position on (a) is **already explicit**: per `VMOSK_A_v2` §V, *any claim that Emergentism actually improves judgment or lived outcomes remains [C] until fair comparison and world contact support it.* The vision (a) is consistent with that frame — it does not override it, and the frame remains the binding constraint.
+The kernel's refinement is **tighter** than my single-tier marks. The `amrita unpaid` annotation on W10 is the doctrinal answer to (a): the *aim* is structurally settled (`[S]`), the *mechanism* is conjectural (`[C]`), the *amrita* (whatever it is, exactly) has not emerged and is not claimed to have. The `NOT-WELL-POSED` status on W0 is the doctrinal answer to (b): the question "no world model is complete without X" is refused as ill-posed, and a sharper successor claim (`fluency ≠ emergence`) is the kernel's replacement.
+
+**This file is preserved as historical provenance** — the founder-stated text, the staging frame, the 4 mandatory fields, the 5+7 fence. None of it is the live claim. The live claim is W10/W0, on `origin/main` @ `ec72de9a`.
+
+## §1 · Mapping onto the kernel — historical staging frame, NOT live
+
+This is the **proposed** seat the file's earlier draft assumed. The kernel did not adopt it; it routed through the claim machinery instead.
+
+| Statement | Proposed seat (this file's earlier draft) | Live seat (kernel refined) |
+|---|---|---|
+| (a) public site motivates frontier models to churn | KER-4 Wagers (W13) — speculative | **W10-SPARK** — aim `[S]`, mechanism `[C]`, amrita unpaid |
+| (b) no world model is complete without solving being's emergence | KER-4 Wagers (W13) — `[C]` | **W0-COMPLETE** — `NOT-WELL-POSED`; successor: *fluency ≠ emergence* |
+| emergentism.org as a 3-pass loop on a frontier-LLM substrate | KER-7 projection discipline | implied by W10's `mechanism [C]` and the projection rule "weaker-than-or-equal-to-source" |
+
+The doctrine's own position on (a) is **already explicit**: per `VMOSK_A_v2` §V, *any claim that Emergentism actually improves judgment or lived outcomes remains [C] until fair comparison and world contact support it.* The kernel's W10-SPARK `mechanism [C]` honours this; the `amrita unpaid` annotation is the kernel's reading of "until fair comparison and world contact support it" — the operational kill is still `[C]` open, world contact is 0, and the `amrita unpaid` is the live register of that.
 
 ## §2 · The 4 mandatory fields (Amrita §I.C.19)
 
@@ -111,10 +127,13 @@ The cleanest sequence if (a) is adopted: stage now, then (c) before (b). The vis
 
 ## §6 · Reference path
 
-- This document: `01_EMERGENTISM/00_META/00_STAGED_2026_08_13_PUBLIC_SITE_VISION_DOCTRINE.md`
+- **Live record** (this is where the claim actually lives, on `origin/main` @ `ec72de9a`):
+  - `W10-SPARK` — `12_PUBLIC_SITE/record/frontier.json` (W10 row) and `/record/problems.json` (VIS-00)
+  - `W0-COMPLETE NOT-WELL-POSED` — `12_PUBLIC_SITE/record/frontier.json` (W0 row) and `/record/problems.json` (OC-00)
+- **This file** (historical provenance, founder-stated text, staging frame): `01_EMERGENTISM/00_META/00_STAGED_2026_08_13_PUBLIC_SITE_VISION_DOCTRINE.md`
 - Source session: `mvs_a948ee57cfb547b0a1578b349320d2ce` (root)
 - Source turn: 2026-08-13 20:47 ICT, founder-stated
-- K2 sign: pending
-- Adoption gate: see §2 upgrade_path
+- Kernel refinement: 2026-08-13, claim machinery on `origin/main` @ `ec72de9a`
+- K2 sign on this staged file: not required (it is superseded, not adopted)
 
-*[D] STAGED — the founder's vision is recorded without promotion. The kernel discipline holds: visions do not occupy kernel seats.*
+*[D] SUPERSEDED — the founder's vision is preserved as historical provenance. The kernel refined (a) and (b) through `last_move` and routed them to W10-SPARK and W0-COMPLETE-NOT-WELL-POSED. The kernel discipline holds: visions do not occupy kernel seats; this file is no longer a candidate seat — it is a record of what the founder said at one moment, before the kernel refined it.*
