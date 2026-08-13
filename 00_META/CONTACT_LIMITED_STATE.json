@@ -5,13 +5,13 @@
   "roadmap": "00_META/00_CONTACT_LIMITED_COMPLETION_ROADMAP_2026_08_01.md",
   "baseline_rule": "Every baseline or lifecycle-classification change requires a new repo-relative dated receipt_ref; changing a count never changes the underlying truth.",
   "receipt_namespace": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md",
     "source_index": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/00_RECEIPT_DISAMBIGUATION_INDEX.json",
     "source_checker": "09_TOOLS/01_SCRIPTS/check_receipt_citations.py",
     "target_universe": "Live-lane Markdown filenames with a 2-3 digit receipt prefix, excluding the 00_* index/readme convention.",
-    "target_files": 318,
-    "prefixed_markdown_including_00_convention": 324,
-    "unique_prefixes": 192,
+    "target_files": 319,
+    "prefixed_markdown_including_00_convention": 325,
+    "unique_prefixes": 193,
     "reused_prefixes": 101,
     "legacy_heuristic_dangerous_prefixes": 94,
     "bare_unsafe_reused_prefixes": 101,
@@ -19,14 +19,14 @@
     "identity_hash_contract": {
       "path_set_canonicalization": "SHA-256 over the canonical UTF-8 JSON array of unique repo-relative paths sorted lexicographically, with ensure_ascii=false and separators ',' and ':'.",
       "duplicate_group_canonicalization": "SHA-256 over canonical UTF-8 JSON mapping each reused prefix to its lexicographically sorted repo-relative paths, with object keys sorted and separators ',' and ':'.",
-      "citable_targets_sha256": "34a7c7a48e84b17bba35a6ab3402d4707e4899b1f28be190bdc80453e5366a85",
-      "prefixed_including_00_sha256": "bc6f82d063ace225b68492778a71fe46c77df9b686f31a794408711662768a7f",
+      "citable_targets_sha256": "d7d26be05086084368ab48e19126e4c66f2b7842782a7f0ba5e07f5da8424e38",
+      "prefixed_including_00_sha256": "1553ad05265024d53f2f47b78d41e61012a9cb0fb65d9af01417b32fc8aa1f73",
       "duplicate_groups_sha256": "b2f3a82ece74a09a2e5ae75d07b93ae2b3c97bbde07c32d46974de140f271c66"
     },
     "dangling_citations": 0
   },
   "public_lifecycle": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md",
     "universe_definition": "One artifact per deployable HTML file after .vercelignore, plus the withheld artifact registry; classification is exclusive and frozen means a matching noindex response-header rule.",
     "sources": [
       "12_PUBLIC_SITE/public_semantic_parity.json",
@@ -37,8 +37,8 @@
     ],
     "deploy_ignore_contract": {
       "semantics": "Gitignore-style unanchored directory patterns ending in slash match that directory component at any depth.",
-      "present_html": 803,
-      "ignored_html": 596,
+      "present_html": 415,
+      "ignored_html": 208,
       "deployable_html": 207,
       "withheld_artifacts_added_back": 198,
       "matcher_conformance": {
@@ -399,7 +399,7 @@
     "unclassified": []
   },
   "claim_disposition": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md",
     "source": "00_META/claim_status/CLAIM_STATUS.yaml",
     "lifecycle_rows_total": 50,
     "lifecycle_rows_sha256": "eb0e25fd6ea253b289117e360e4ff31990098a1e41f07462ce226b25976e0ea5",
@@ -592,7 +592,7 @@
     }
   },
   "owner_held": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "debts": [
       {
@@ -606,7 +606,7 @@
           "12_PUBLIC_SITE/docs/superpowers/specs/2026-06-05-numbered-doctrine-spine-design.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md"
       },
       {
         "id": "OWNER_GATE_OPEN_TOPOLOGY",
@@ -621,12 +621,12 @@
           "08_FRAMEWORK_SUPPORT/00_META/02_ANALYSIS_DOCUMENTS/CLAUDE.md",
           "09_TOOLS/01_SCRIPTS/coherence_profile.json"
         ],
-        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md"
+        "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md"
       }
     ]
   },
   "world_contact": {
-    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/244_CONTACT_LIMITED_REBASELINE_2026_08_13.md",
+    "receipt_ref": "11_UPLINK/50_AUDITS_AND_EXECUTIONS/245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md",
     "source_profile": "09_TOOLS/01_SCRIPTS/coherence_profile.json",
     "state": "OPEN",
     "accepted_evidence_records": 0,

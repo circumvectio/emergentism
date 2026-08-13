@@ -40,7 +40,7 @@ RECEIPT_INDEX = Path(
 )
 RECEIPT_REF = Path(
     "11_UPLINK/50_AUDITS_AND_EXECUTIONS/"
-    "243_PUBLIC_RELEASE_PREFLIGHT_AND_CONTACT_SNAPSHOT_2026_08_09.md"
+    "245_CONTACT_LIMITED_TRACKED_TREE_REBASELINE_2026_08_14.md"
 )
 PUBLIC_MANIFEST = Path("12_PUBLIC_SITE/public_semantic_parity.json")
 REGISTRY_DIGEST = re.compile(
@@ -78,7 +78,7 @@ EXPECTED_REUSED_PREFIXES = 101
 EXPECTED_ACTIVE_OCCURRENCES_BEFORE_PLURAL_AUDIT = 186
 EXPECTED_REPAIR_BASELINE = 182
 EXPECTED_ACTIVE_SOURCE_SET_SHA256 = (
-    "90528b7d752a4422b4fdbe40f845da2010f50c2378be2b9e6b406c549b89d80a"  # pragma: allow-secret
+    "762349611e159f655a858ed2c0454f7dca6d82dee18373054abdc4b7ebe98e1b"  # pragma: allow-secret
 )
 PROGRAM_PLAN_DIAGNOSTIC_SHA256 = (
     "ad043098565d406743474397d23cc7276ef9ae7ce341d76c977788636dda5953"  # pragma: allow-secret
@@ -216,6 +216,7 @@ AUDITED_ACTIVE_SOURCES = (
     "12_PUBLIC_SITE/predeploy_check.py",
     "12_PUBLIC_SITE/public_semantic_parity.json",
     "12_PUBLIC_SITE/record/index.html",
+    "12_PUBLIC_SITE/record/frontier/index.html",
     "12_PUBLIC_SITE/sw.js",
 )
 KNOWN_REPORT_ONLY_RESOLVED = {
@@ -251,6 +252,27 @@ KNOWN_REPORT_ONLY_FILES = {
     "09_TOOLS/02_COMPILERS/kintsugi_kernel/docs/specs/2026-07-12-kintsugi-a0-execution-lock-26e616e.md",
     "09_TOOLS/02_COMPILERS/test_validate_receipt_126_propagation.py",
     "09_TOOLS/02_COMPILERS/validate_receipt_126_propagation.py",
+    # The Titan Pass is an exact, unratified proposal bundle with no owner and
+    # no authority.  Enumerating all five files keeps that boundary local: a
+    # future sibling receives no report-only status automatically.
+    "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md",
+    "15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md",
+    "15_THE_TITAN_PASS_2026_08_06/03_FALSE.md",
+    "15_THE_TITAN_PASS_2026_08_06/04_CREATE.md",
+    "15_THE_TITAN_PASS_2026_08_06/README.md",
+    # The Emission prose is a deterministic, no-authority projection of the
+    # Titan Pass.  Its generator and checker remain ordinary active tooling.
+    "16_THE_EMISSION/00_THE_LAW.md",
+    "16_THE_EMISSION/A_THE_LADDER/00_GROUND.md",
+    "16_THE_EMISSION/A_THE_LADDER/01_THE_UNIT.md",
+    "16_THE_EMISSION/A_THE_LADDER/02_D1_ARITHMETIC.md",
+    "16_THE_EMISSION/A_THE_LADDER/03_D2_CONFIGURATION.md",
+    "16_THE_EMISSION/A_THE_LADDER/04_D3_STATE.md",
+    "16_THE_EMISSION/A_THE_LADDER/05_D4_ACTUAL.md",
+    "16_THE_EMISSION/A_THE_LADDER/06_D5_POSSIBLE.md",
+    "16_THE_EMISSION/A_THE_LADDER/07_HORIZON.md",
+    "16_THE_EMISSION/B_THE_METHOD/00_THE_METHOD.md",
+    "16_THE_EMISSION/README.md",
 }
 
 # The book lane is projection-only by its local AGENTS.md, but that route law
@@ -334,6 +356,8 @@ REPORT_ONLY_BOUNDARIES = {
     Path("14_THE_DISTILLATION/README.md"): "projection — rules nothing",
     Path("09_TOOLS/02_COMPILERS/README.md"): "compiler output is downstream",
     Path("13_BOOKS/AGENTS.md"): "projection-only book reconstruction boundary",
+    Path("15_THE_TITAN_PASS_2026_08_06/README.md"): "STAGED MANIFESTS — unratified",
+    Path("16_THE_EMISSION/README.md"): "This tree is **generated, not migrated**",
     Path("91_COMPATIBILITY/AGENTS.md"): "Compatibility paths redirect historical references",
 }
 
@@ -467,6 +491,7 @@ DISCOVERY_SKIP_PARTS = {
 }
 SELF_TEST_FIXTURE_PATHS = {
     "09_TOOLS/02_COMPILERS/test_active_receipt_citations.py",
+    "09_TOOLS/02_COMPILERS/test_claim_last_move.py",
     "09_TOOLS/02_COMPILERS/test_contact_limited.py",
 }
 NON_CITATION_INVENTORIES = {

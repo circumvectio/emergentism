@@ -151,27 +151,27 @@
       "chapter_order": [
         "standard-mathematics",
         "selected-symbolism",
+        "typed-inversion",
         "finity-protocol",
         "paradox-ledger",
         "recovery-and-failure"
       ],
       "owner_ids": [
-        "K-1",
-        "K-3",
-        "K-4"
+        "K-1"
       ],
       "claim_card_ids": [
         "TIT01-01",
         "TIT01-02",
         "TIT01-03",
         "TIT01-04",
-        "TIT01-05"
+        "TIT01-05",
+        "TIT01-06"
       ],
       "release_state": "research_critical_edition_staged_not_public",
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "titans/RESEARCH_EDITION_1.md",
+        "path": "titans/RESEARCH_EDITION_1_REVIEWED.md",
         "sha256": "419a4edc36826377634e0571aa30a091b4d5a8873ea7ec37d08f16e3b11192e9"
       }
     },
@@ -199,8 +199,6 @@
         "repair-exit-and-residue"
       ],
       "owner_ids": [
-        "K-3",
-        "K-4",
         "K-5"
       ],
       "claim_card_ids": [
@@ -214,7 +212,7 @@
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "dharma_yuddha/CRITICAL_EDITION_1.md",
+        "path": "dharma_yuddha/CRITICAL_EDITION_1_REVIEWED.md",
         "sha256": "a2bef7b93a8f3242670da72c2afe876f4a1f83efb7d4fc4f2c40ae5d9a88fd73"
       }
     },
@@ -224,7 +222,11 @@
       "edition": "institutional-proposal-staged",
       "historical_sources": [
         "../03_METHODOLOGY/00_EVOLUTIONARY_NETWORK_INSTITUTIONAL_PROPOSAL.md",
-        "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md"
+        {
+          "path": "../../02_SKYZAI/08_EVOLUTIONARY_NETWORK/README.md",
+          "lifecycle": "proposal",
+          "reviewed_source_sha256": "df8887940ce76d68e1073ee18b197b3a64059fef73ad094128d6143a4a6105d6"
+        }
       ],
       "chapter_order": [
         "voluntary-entry",
@@ -235,7 +237,8 @@
       ],
       "owner_ids": [
         "K-4",
-        "K-5"
+        "K-5",
+        "K-7"
       ],
       "claim_card_ids": [
         "EN01-01",
@@ -248,7 +251,7 @@
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "evolutionary_network/RESEARCH_EDITION_1.md",
+        "path": "evolutionary_network/RESEARCH_EDITION_1_REVIEWED.md",
         "sha256": "64bf9dcbefe0ecd1203a118dd4ad1dc31feadda6b6f1a4b9d2791b6b279d56f8"
       }
     },
@@ -279,7 +282,6 @@
       ],
       "owner_ids": [
         "K-1",
-        "K-3",
         "K-4",
         "K-5",
         "K-7"
@@ -313,7 +315,7 @@
       "historical_sources": [
         {
           "path": "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
-          "lifecycle": "frozen",
+          "lifecycle": "legacy",
           "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436"
         }
       ],
@@ -328,10 +330,8 @@
       ],
       "owner_ids": [
         "K-1",
-        "K-3",
         "K-4",
-        "K-5",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "SV01-01",
@@ -346,7 +346,7 @@
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "sarpasya_vijayam/CRITICAL_EDITION_1.md",
+        "path": "sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md",
         "sha256": "01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c"
       }
     },
@@ -355,7 +355,11 @@
       "title": "Six-Fold Revelation / Six Lenses",
       "edition": "critical-edition-1-staged",
       "historical_sources": [
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
+        {
+          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md",
+          "lifecycle": "legacy",
+          "reviewed_source_sha256": "17ad1a31461f27738b0128a2e53fbed78e5aadeee04ee2de8aadf4cb74fe0ab2"
+        }
       ],
       "chapter_order": [
         "preface",
@@ -370,9 +374,7 @@
       "owner_ids": [
         "K-2",
         "K-3",
-        "K-4",
-        "K-5",
-        "K-7"
+        "K-5"
       ],
       "claim_card_ids": [
         "SL01-01",
@@ -388,7 +390,7 @@
       "public_route": null,
       "build_provenance": {
         "type": "projection_artifact",
-        "path": "six_lenses/CRITICAL_EDITION_1.md",
+        "path": "six_lenses/CRITICAL_EDITION_1_REVIEWED.md",
         "sha256": "a1bce0289dfd286215b3bf17ef295d1b89082b71af2c3b5e0568870b6e92bef6"
       }
     }

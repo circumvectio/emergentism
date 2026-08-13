@@ -148,9 +148,9 @@ what it tests — *whether a system can account for its own emergence without
 confabulating* — and let the reader judge its reach. `KSC-25`,
 describe-and-let-self-locate.
 
-**Placement.** This lives in `W10-SPARK`. `VMOSK_A_v2_2026_07_31.md` may cite it;
-it must not assert it independently, and **`VMOSK_A.md` at root is SUPERSEDED**
-(status corrected `4ae2cd83`) and is not the place for it.
+**Placement.** This lives in `W10-SPARK`. The current v2 control projection may
+cite it; it must not assert it independently, and the superseded root control
+projection is not the place for it.
 
 ## 7 · Kills
 

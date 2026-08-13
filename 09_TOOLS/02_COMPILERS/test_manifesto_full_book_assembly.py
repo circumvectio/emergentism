@@ -316,9 +316,11 @@ class ManifestoFullBookAssemblyTests(unittest.TestCase):
             self.assertIn(source["path"], custody)
             self.assertIn(source["reviewed_source_sha256"], custody)
         provenance = reciprocal["build_provenance"]
-        self.assertEqual(provenance["type"], "manual")
+        self.assertEqual(provenance["type"], "projection_artifact")
         staged_path = reciprocal["staged_critical_edition"]
         staged_sha = hashlib.sha256((ROOT / "13_BOOKS" / staged_path).read_bytes()).hexdigest()
+        self.assertEqual(provenance["path"], staged_path)
+        self.assertEqual(provenance["sha256"], staged_sha)
         self.assertIn(staged_path, custody)
         self.assertIn(staged_sha, custody)
 

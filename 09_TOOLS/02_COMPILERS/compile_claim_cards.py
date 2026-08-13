@@ -41,17 +41,11 @@ COMPOSITION_ID = re.compile(r"^COMP-[A-Z0-9-]+$")
 # exact contracts and declaring roles. Any new external dependency requires an
 # explicit reviewed compiler change.
 EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
-    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md": (
+    "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md": (
         "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9",
         "frozen",
         "BK-RECIPROCAL-INFINITE-PLAY",
         frozenset({"book_manifest"}),
-    ),
-    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md": (
-        "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
-        "legacy",
-        "BK-SARPASYA",
-        frozenset({"claim_card", "book_manifest"}),
     ),
     "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md": (
         "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",  # pragma: allow-secret -- published source digest
@@ -65,22 +59,10 @@ EXTERNAL_SOURCE_CONTRACTS: dict[str, tuple[str, str, str, frozenset[str]]] = {
         "BK-SIX-LENSES",
         frozenset({"claim_card", "book_manifest"}),
     ),
-    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md": (
-        "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
-        "legacy",
-        "BK-SELF-EATING",
-        frozenset({"claim_card", "book_manifest"}),
-    ),
     "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md": (
         "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",  # pragma: allow-secret -- published source digest
         "legacy",
         "BK-SELF-EATING",
-        frozenset({"claim_card", "book_manifest"}),
-    ),
-    "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md": (
-        "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
-        "frozen",
-        "BK-RECIPROCAL-INFINITE-PLAY",
         frozenset({"claim_card", "book_manifest"}),
     ),
     "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md": (

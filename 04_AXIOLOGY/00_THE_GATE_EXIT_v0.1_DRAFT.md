@@ -81,9 +81,9 @@ rather than from disk will overstate the gate.
 **Sweep result, run 2026-08-12:** `grep -rniE "walzer|just war|double
 effect|jus ad bellum|jus in bello|schmitt|law of peoples"` across all `*.md` in
 `01_EMERGENTISM/` returns **one** hit, and it is in `90_ARCHIVE/`, and it is the
-corpus confessing the gap: `90_ARCHIVE/pure_emergentism_boundary_2026_07_20/
-08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/
-00_THE_LENS_AS_COMPASS_PENDING_K2.md` — *"engages none of the literature
+corpus confessing the gap: the archived Lens-as-Compass predecessor under
+`90_ARCHIVE/pure_emergentism_boundary_2026_07_20/08_FRAMEWORK_SUPPORT/
+03_EVIDENCE/PARADOX_DISSOLUTIONS/` — *"engages none of the literature
 (double effect, act/omission, switch-vs-footbridge)."*
 
 **Zero citations in the active corpus.** The entire tradition below is

@@ -55,19 +55,19 @@
     },
     {
       "path": "00_META/claim_cards/titans_formal.yaml",
-      "reviewed_source_sha256": "5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c",
+      "reviewed_source_sha256": "67edc93793eb88dea6ca4561de6bbb284983f81c7b1be5caf236f1aafcac7b15",
       "source": "05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md",
       "work_id": "BK-TITANS"
     },
     {
       "path": "00_META/claim_cards/titans_inversion.yaml",
-      "reviewed_source_sha256": "2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3",
+      "reviewed_source_sha256": "4b37c7fc77dc7a79fa97acf55588eefc70dc7a1e2b01bc3061a6fec2164efe77",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md",
       "work_id": "BK-TITANS"
     },
     {
       "path": "00_META/claim_cards/titans_narrative.yaml",
-      "reviewed_source_sha256": "8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816",
+      "reviewed_source_sha256": "165922a73360b8ce3ac9c3effb6c8a3733fbf376e1744a780b64675f8b026858",
       "source": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md",
       "work_id": "BK-TITANS"
     },
@@ -89,7 +89,7 @@
     {
       "path": "13_BOOKS/book-manifest.json",
       "role": "book_manifest_custody",
-      "sha256": "03835aed620afdf7709e90b287d388c810999fb6d19900ebab9dd128ba32f9d8"
+      "sha256": "4a61ff607cb49a750c664a58acaa7de4e2ca82fe5cfa339168806b34e2c5574e"
     }
   ],
   "modules": [
@@ -111,7 +111,7 @@
     {
       "path": "13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md",
       "role": "part_iv_v",
-      "sha256": "67b3c87aa34e5ead792f0690fd1c067671d8d15bc228889b1eaf0a68f3173ff6"
+      "sha256": "b2e120f22bb789a9862795116cf2beff7e6b40d43a9ab20af3b915e8c7099804"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/APPENDICES_AND_WORKSHEETS.md",
@@ -121,13 +121,13 @@
   ],
   "output": {
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-    "sha256": "34e91f53337f789b45c8704ce245f94dbe7c5c8675a7f7d064e7ca79eae69b13",
-    "word_count": 63677
+    "sha256": "5f94055bf0092584096a636823255817307fa3f49de7de57677e16e62c2abf97",
+    "word_count": 63681
   },
   "paragraph_ledger": {
     "count": 638,
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
-    "sha256": "d2d6145a9a9fc46abdc056ca7c9e2491660e731fd68e392131de8689a3a5a4e8"
+    "sha256": "23dd28cd8c94160e35ff831c30968a368c22853321416c658b6918c0e3123fee"
   },
   "public_disposition": "not_a_public_route",
   "schema": "emergentism/full-book-build/v1"

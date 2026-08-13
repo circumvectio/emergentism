@@ -145,7 +145,7 @@ not re-run here · **UNVERIFIED** = carried, no command.
 
 | figure | value |
 |---|---|
-| `⊙ = • × ○` carriers in `12_PUBLIC_SITE/` | **16** |
+| retired literal `⊙ = • × ○` carriers in `12_PUBLIC_SITE/` | **16** |
 | of those, `.html` | **2** |
 | carriers in `12_PUBLIC_SITE/.vercel/` | **0** (doc claims a further 338) |
 | `.html` under `.vercel` (total) | **388** |
@@ -286,7 +286,7 @@ Resolution is a chair act. Each row is a live disagreement between careful seats
 | 6 | **Can G2 be re-admitted to `00_ESTABLISHED` §A?** | L1 + Viṣṇu: `check_g2_normal_form.py` **may now satisfy** the standard — chair act | Brahmā: **no promotion is available** — the checker's own last line says "a bounded check of the dictionary, not a proof", so criterion COMPLETE fails; the register is **right** to keep it out |
 | 7 | **Is a stub forwarding into `90_ARCHIVE` a defect?** | Śiva: the two-hop and three-hop chains must dissolve | L3: the 60 archive-terminating stubs are a **ratified tombstone protocol** that disclaims ownership — not defects; the real violation is `parents:` edges (3 of 11), which are authority |
 | 8 | **Are the 148 dead links a laundering gate?** | brief's premise | L3 counter-finding: **all 148** fall in `check_links.py`'s declared, reasoned SKIP_DIRS; in-scope health is 1 broken of 3586 — **the gate is honest** |
-| 9 | **`⊙ = • × ○` half-life** | `CENSUS_HALFLIFE_FINDING:39`: **18 d 4 h** (ruled 2026-07-19) | `CENSUS_HALFLIFE_3_RULINGS:64`: **4 d 16 h** (ruled 2026-08-01) — same commit, same day, 4× apart |
+| 9 | **Retired literal `⊙ = • × ○` half-life** | `CENSUS_HALFLIFE_FINDING:39`: **18 d 4 h** (ruled 2026-07-19) | `CENSUS_HALFLIFE_3_RULINGS:64`: **4 d 16 h** (ruled 2026-08-01) — same commit, same day, 4× apart |
 | 10 | **`P = Φ × V`** | `00_THE_CLOSED_READING_LOOP_v0.1.md:103`, **K2-signed**: `[S]` doctrinal, "the multiplicative shape is load-bearing" | KSC-02 / `00_THE_RUNGS:704`: **killed as a ranking** — later ruling vs signature |
 | 11 | **Dyadic-gate threshold** | `00_THE_EXTRACTION_LAW.md:117`: `Δ ≥ 0` (non-decrease) | `D5_THE_GAME.md:106` + `00_THE_WELTANSCHAUUNG.md:420`: strictly **rise** — the zero-delta bearer is admissible under one and fails the other |
 | 12 | **Do line numbers bind?** | `check_active_receipt_citations.py:16`: "line numbers are hints for people" | `claim-card.schema.yaml:5` + `compile_claim_cards.py`: required contract field, fails closed. **There is no third reading in which nothing changes.** |

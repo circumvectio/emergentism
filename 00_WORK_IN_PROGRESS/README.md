@@ -84,13 +84,13 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 
 ```text
 21   validated        scoped formal results inside their declared systems
-17   open             live W rows, each with a typed disposition
+19   open             live W rows, each with a typed disposition
  9   investigations   authorized RQ rows; inquiry is not a reopened parent claim
 22   graves           terminal/narrowed parents with preserved status history
  1   typed_survivors  an explicit survivor whose falsifier does not reach it
-48   lifecycle rows   17 open + 9 investigations + 22 graves
+50   lifecycle rows   19 open + 9 investigations + 22 graves
 
-18   unique external contracts, all outcome-open
+19   unique external contracts, all outcome-open
  0   ambiguous lifecycle rows
 ```
 
@@ -115,7 +115,7 @@ Read from the **machine source**, `00_META/claim_status/CLAIM_STATUS.yaml`:
 | `GP-03` specifically | **The original public preregistration is void as written.** The current board row is its explicit successor: it tests whether an AND-class conclusion is invariant under admissible ordinal transformations and remains deferred until a defended scale contract exists. W4A is blocked on that current prerequisite, not on the void protocol. | `00_META/00_SETTLED_CANON_REGISTRY.md` (`KSC-02`); `03_METHODOLOGY/00_EMPIRICAL_PROGRAM_BOARD.md` (`GP-03`) |
 | **Three preregistrations** — fresh-reader comprehension, independent review, controlled comparison | protocols written and public; **no session, no engaged reviewer, no registered comparison** | `03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/` |
 | **The review packet** — artifact-only professional review can avoid participant research, but contact still has explicit prerequisites | **v5 acyclic hash binding under the v4-profile provenance firewall verified 2026-08-08; CONTACT BLOCKED; NOT SENT.** The mechanical manifest binding is real, but the six review prerequisites remain missing. `D-OWNER-03` is unset and the v4-profile accepts no local owner/external evidence or present external state; any future route needs a new reviewed schema and independent verification boundary. Identifying and asking a qualified outsider remains an owner act; *"AI or project-agent review … does not satisfy this external gate."* | `.../REVIEW_BUNDLE_v5.md`; `.../REVIEW_BUNDLE_BINDING_CONTRACT_v2.md`; `.../GATE_REGISTRY.json` |
-| **Returned outcomes from outside** | **323 receipt files under the filename convention · 317 citable numbered receipt targets · 0 accepted external-evidence records** | `00_META/CONTACT_LIMITED_STATE.json` · `12_PUBLIC_SITE/record/` |
+| **Returned outcomes from outside** | **325 receipt files under the filename convention · 319 citable numbered receipt targets · 0 accepted external-evidence records** | `00_META/CONTACT_LIMITED_STATE.json` · `12_PUBLIC_SITE/record/` |
 
 That last row is the honest summary of this whole folder. Everything above it is
 internal work. **A framework can be internally immaculate and still be about nothing.**

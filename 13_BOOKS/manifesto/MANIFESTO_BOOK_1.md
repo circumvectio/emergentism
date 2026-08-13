@@ -3443,7 +3443,7 @@ withdrawn.
 `../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md`.
 **Revision hash:**
 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
-**Critical edition:** `13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1.md`
+**Critical edition:** `13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1_REVIEWED.md`
 (projection SHA-256
 `01e04321ffe96718ba6d5650248c89312c69fb50c717506652517764def19f4c`).
 **Debrief route:** `13_BOOKS/sarpasya_vijayam/DEBRIEF.md`.
@@ -5013,7 +5013,7 @@ Source cards: `OS01-04`.
 
 <!-- FULLBOOK-P: atlas_os01_05 -->
 ### OS01-05 — A macro-description earns use only against a fair declared lower-level or alternative baseline.
-- **Work / owner:** `BK-ONE-SITTING` / `K-1`.
+- **Work / owner:** `BK-ONE-SITTING` / `K-2`.
 - **Classification:** `conjecture`; **evidence:** [C] macro explanatory utility.
 - **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — Macro descriptions must earn task-relative use against fair alternatives.
 - **Type boundary:** usefulness is not ontic irreducibility.
@@ -5265,7 +5265,7 @@ Source cards: `OS01-22`.
 
 <!-- FULLBOOK-P: atlas_os01_23 -->
 ### OS01-23 — Each mu crossing is an independently provisional emergence conjecture with its own evidence burden.
-- **Work / owner:** `BK-ONE-SITTING` / `K-3`.
+- **Work / owner:** `BK-ONE-SITTING` / `K-4`.
 - **Classification:** `conjecture`; **evidence:** [C] crossing-specific emergence.
 - **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — Five independent conjectural apertures, each with its own unpaid gate.
 - **Type boundary:** mu is an interface record, not a causal or numeric operator.
@@ -5370,7 +5370,7 @@ Source cards: `FIN01-02`.
 - **Kill or narrowing route:** Withdraw any reformulation that changes a native result without an explicit extension.
 - **Survivor if killed:** The standard mathematical result.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md` at reviewed SHA-256 `8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816`.
+- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md` at reviewed SHA-256 `165922a73360b8ce3ac9c3effb6c8a3733fbf376e1744a780b64675f8b026858`.
 Source cards: `TIT01-01`.
 
 <!-- FULLBOOK-P: atlas_tit01_02 -->
@@ -5384,7 +5384,7 @@ Source cards: `TIT01-01`.
 - **Kill or narrowing route:** Retire the symbolism if it produces arithmetic, causal or ontological overreading.
 - **Survivor if killed:** Pre-countability, unending traversal and finite convergence remain separate concepts.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md` at reviewed SHA-256 `8675036bd320860c655214a10223256aa90ee93b79631ec83d69d2e42feea816`.
+- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md` at reviewed SHA-256 `165922a73360b8ce3ac9c3effb6c8a3733fbf376e1744a780b64675f8b026858`.
 Source cards: `TIT01-02`.
 
 <!-- FULLBOOK-P: atlas_tit01_03 -->
@@ -5398,7 +5398,7 @@ Source cards: `TIT01-02`.
 - **Kill or narrowing route:** If no novel delta survives, retain a specification layer only.
 - **Survivor if killed:** Typed boundary and extension custody.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md` at reviewed SHA-256 `5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c`.
+- **Source revision:** `05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md` at reviewed SHA-256 `67edc93793eb88dea6ca4561de6bbb284983f81c7b1be5caf236f1aafcac7b15`.
 Source cards: `TIT01-03`.
 
 <!-- FULLBOOK-P: atlas_tit01_04 -->
@@ -5426,21 +5426,21 @@ Source cards: `TIT01-04`.
 - **Kill or narrowing route:** Without such a result, forbid new-algebra language.
 - **Survivor if killed:** A conservative diagnostic protocol and research narrative.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md` at reviewed SHA-256 `5d7c33ac58973d6d9e5f50d2153a8afc5caa18a116621fd783626299e02f2f3c`.
+- **Source revision:** `05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md` at reviewed SHA-256 `67edc93793eb88dea6ca4561de6bbb284983f81c7b1be5caf236f1aafcac7b15`.
 Source cards: `TIT01-05`.
 
 <!-- FULLBOOK-P: atlas_tit01_06 -->
-### TIT01-06 — A selected map r_T may relate opaque Titan seats to two pole points and the unit-circle subset; only the induced map iota_* acts on those tagged features, and no projective or arithmetic operation acts on TitanFrame.
+### TIT01-06 — An optional interpretive diagram may place opaque Titan frames beside named projective facts only while keeping their types disjoint: compactification does not convert TitanFrame into a projective point, and projective inversion never acts on TitanFrame.
 - **Work / owner:** `BK-TITANS` / `K-1`.
-- **Classification:** `interpretation_vow`; **evidence:** [I] selected representation of opaque Titan seats; standard orbit facts remain under TIT01-01.
-- **Lifecycle and public ceiling:** source `active`; public `source_only` — Titan seating is an optional typed representation of independently standard projective orbit facts.
-- **Type boundary:** TitanFrame is not Feature(C-hat), ProjectivePoint, or Number; iota acts on C-hat and iota_* acts on tagged features, never on TitanFrame; the representation map is selected and carries no ontological warrant.
+- **Classification:** `interpretation_vow`; **evidence:** [I] optional no-coercion juxtaposition of opaque Titan frames and standard projective neighbors; standard orbit facts remain under TIT01-01.
+- **Lifecycle and public ceiling:** source `active`; public `source_only` — Titan imagery is optional; projective facts never coerce Titan frames into points or operands.
+- **Type boundary:** TitanFrame is not ProjectivePoint or Number; projective inversion acts on projective points, never on TitanFrame; an interpretive diagram is optional, must display the no-coercion fence, and carries no ontological warrant.
 - **Strongest rival:** Use the projective orbit facts without Titan imagery.
 - **Discriminator:** The representation survives only if it improves comprehension while readers retain the seat-feature type boundary.
 - **Kill or narrowing route:** Retire the representation if readers or generated text apply inversion or arithmetic directly to Titan seats.
 - **Survivor if killed:** The standard inversion orbit facts on the named projective space.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md` at reviewed SHA-256 `2f006f6351a05c3238e9a8c4b6170d52610981e87e4a7022a27f68752d5523c3`.
+- **Source revision:** `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/45_THE_TITAN_INVERSION_STRUCTURE.md` at reviewed SHA-256 `4b37c7fc77dc7a79fa97acf55588eefc70dc7a1e2b01bc3061a6fec2164efe77`.
 Source cards: `TIT01-06`.
 
 

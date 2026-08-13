@@ -36,7 +36,7 @@ is firewood, not G10.
 
 ## E2a — Public edition authorization
 
-- [ ] **Unpaid.** K2 / operator. Current-body only. No retarget of
+- [ ] **Unpaid.** Publication owner / operator. Current-body only. No retarget of
   `CURRENT_WORK_ID` until this box is signed.
 - Required machine companions after authorization, not instead of it:
   semantic parity, extract `--check`, Halāhala CURRENT scan, Q4, barred public.

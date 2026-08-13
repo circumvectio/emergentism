@@ -2,7 +2,7 @@
   "schema": "magnum-opus/folder-register/v1",
   "generator": "09_TOOLS/01_SCRIPTS/build_magnum_opus_register.py",
   "source": "git ls-files directory closure (deterministic; no timestamps)",
-  "entry_count": 825,
+  "entry_count": 835,
   "entries": [
     {
       "path": ".",
@@ -12,7 +12,7 @@
       "owns": "Emergentism corpus entry: a fallibilist worldview about constraint, degrees of freedom, emergence, agency, consequence, collective traces, a",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 3685,
+      "tracked_file_count": 3772,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -103,7 +103,7 @@
       "owns": "00_HANDOFF lane — session handoffs and release receipts (one dated directory each); `main` is authoritative and `menexus` is the WIP backup;",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 90,
+      "tracked_file_count": 113,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -285,7 +285,7 @@
       "owns": "00_META lane — canon custody and correction; owns routing and claim custody (Settled Canon Registry, The Refusals, Kintsugi Protocol, claim ",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 98,
+      "tracked_file_count": 102,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -363,7 +363,7 @@
       "owns": "00_META/registers — FILE_REGISTER + FOLDER_REGISTER + CLAIM_CARD_REGISTER + CLAIM_GRAPH + CLAIM_LIFECYCLE_INVENTORY",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 7,
+      "tracked_file_count": 9,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -506,7 +506,7 @@
       "owns": "03_METHODOLOGY — Truth Tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 207,
+      "tracked_file_count": 208,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -623,7 +623,7 @@
       "owns": "**Corpus:** Emergentism",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 35,
+      "tracked_file_count": 36,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -675,7 +675,7 @@
       "owns": "This lane owns pure Emergentist value theory together with the cross-level",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 24,
+      "tracked_file_count": 26,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -831,7 +831,7 @@
       "owns": "08_FRAMEWORK_SUPPORT — translation and stress tests",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 260,
+      "tracked_file_count": 265,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -935,7 +935,7 @@
       "owns": "This folder is the evidence root for Rosetta, paradox dissolutions, and comparative support materials.",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 143,
+      "tracked_file_count": 148,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -987,7 +987,7 @@
       "owns": "Rosetta Stone — Method Front Door",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 96,
+      "tracked_file_count": 101,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1143,7 +1143,7 @@
       "owns": "09_TOOLS — Emergentism instruments",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 233,
+      "tracked_file_count": 245,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1156,7 +1156,7 @@
       "owns": "01_SCRIPTS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 51,
+      "tracked_file_count": 56,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1169,7 +1169,7 @@
       "owns": "02_COMPILERS",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 72,
+      "tracked_file_count": 79,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1442,7 +1442,7 @@
       "owns": "Uplink — receipts, tests, and historical memory",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 433,
+      "tracked_file_count": 434,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1572,7 +1572,7 @@
       "owns": "UPLINK AUDITS AND EXECUTIONS LANE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 212,
+      "tracked_file_count": 213,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1702,7 +1702,7 @@
       "owns": "Emergentism public site",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 626,
+      "tracked_file_count": 640,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -1962,7 +1962,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 8,
+      "tracked_file_count": 7,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2053,7 +2053,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 24,
+      "tracked_file_count": 28,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -2066,7 +2066,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 4,
+      "tracked_file_count": 8,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -5875,6 +5875,32 @@
       "owns": "<!DOCTYPE html>",
       "must_not_own": null,
       "status": "unrated",
+      "tracked_file_count": 5,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/frontier",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/record/frontier/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/record/problems",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/record/problems/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
       "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
@@ -6547,6 +6573,19 @@
       "path": "12_PUBLIC_SITE/sources",
       "type": "site",
       "nearest_front_door": "12_PUBLIC_SITE/sources/index.html",
+      "front_door_requirement": "present",
+      "owns": "<!DOCTYPE html>",
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "12_PUBLIC_SITE/spark",
+      "type": "site",
+      "nearest_front_door": "12_PUBLIC_SITE/spark/index.html",
       "front_door_requirement": "present",
       "owns": "<!DOCTYPE html>",
       "must_not_own": null,
@@ -7825,7 +7864,7 @@
       "owns": "Emergentism Books — Proposed Three-Book Architecture and Critical-Edition Workshop",
       "must_not_own": null,
       "status": "staged",
-      "tracked_file_count": 65,
+      "tracked_file_count": 70,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7864,7 +7903,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 15,
+      "tracked_file_count": 19,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7929,7 +7968,7 @@
       "owns": null,
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 2,
+      "tracked_file_count": 3,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -7987,6 +8026,58 @@
       "review_state": "unreviewed"
     },
     {
+      "path": "15_THE_TITAN_PASS_2026_08_06",
+      "type": "other",
+      "nearest_front_door": "15_THE_TITAN_PASS_2026_08_06/README.md",
+      "front_door_requirement": "present",
+      "owns": "The Titan Pass — 2026-08-06",
+      "must_not_own": null,
+      "status": "staged",
+      "tracked_file_count": 5,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "16_THE_EMISSION",
+      "type": "other",
+      "nearest_front_door": "16_THE_EMISSION/README.md",
+      "front_door_requirement": "present",
+      "owns": "16_THE_EMISSION — the front door",
+      "must_not_own": null,
+      "status": "staged",
+      "tracked_file_count": 14,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "16_THE_EMISSION/A_THE_LADDER",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 8,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "16_THE_EMISSION/B_THE_METHOD",
+      "type": "other",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
       "path": "90_ARCHIVE",
       "type": "archive",
       "nearest_front_door": "90_ARCHIVE/README.md",
@@ -7994,7 +8085,7 @@
       "owns": "01_EMERGENTISM / 90_ARCHIVE",
       "must_not_own": null,
       "status": "unrated",
-      "tracked_file_count": 1102,
+      "tracked_file_count": 1103,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
@@ -9100,6 +9191,45 @@
       "must_not_own": null,
       "status": "unrated",
       "tracked_file_count": 4,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_13_disposition_docket",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_13_disposition_docket/12_PUBLIC_SITE",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
+      "disposition": "keep",
+      "gate": null,
+      "review_state": "unreviewed"
+    },
+    {
+      "path": "90_ARCHIVE/2026_08_13_disposition_docket/12_PUBLIC_SITE/_PLANS",
+      "type": "archive",
+      "nearest_front_door": null,
+      "front_door_requirement": "missing",
+      "owns": null,
+      "must_not_own": null,
+      "status": "unrated",
+      "tracked_file_count": 1,
       "disposition": "keep",
       "gate": null,
       "review_state": "unreviewed"
