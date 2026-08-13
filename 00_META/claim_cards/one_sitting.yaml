@@ -26,10 +26,10 @@
       ],
       "locator": {
         "section": "1",
-        "line_start": 39,
-        "line_end": 52,
+        "line_start": 40,
+        "line_end": 53,
         "anchor": "Emergentism selects three opaque symbolic boundary labels—its Titan",
-        "fingerprint_sha256": "91d39149c8bc525c32d0b1ddeb62b79948ac80cc65ffe9aad795b6609dcfbdc5"
+        "fingerprint_sha256": "c0dcb98f13bdd908bf4ef3d0b08f2744ae1171759d6502dd3bde651d2302b089"
       },
       "plain_claim": "The Titan labels are selected metaframes, not entities, operands, causal agents, or a census of reality.",
       "claim_type": "interpretation_vow",
@@ -78,10 +78,10 @@
       ],
       "locator": {
         "section": "1",
-        "line_start": 53,
-        "line_end": 61,
+        "line_start": 54,
+        "line_end": 62,
         "anchor": "This beginning is deliberately austere. It does not explain why there is",
-        "fingerprint_sha256": "3befd6f087a40849eb407516ff16eda31c9b56b0512efffd386f611bf42a888a"
+        "fingerprint_sha256": "9290aee164b68c98c643eafab226096e5587356db0f1864e10e91be735d06a35"
       },
       "plain_claim": "Logically coherent structure may be instantiated as das All, as a wager rather than a proof.",
       "claim_type": "conjecture",
@@ -132,10 +132,10 @@
       ],
       "locator": {
         "section": "2",
-        "line_start": 64,
-        "line_end": 78,
+        "line_start": 148,
+        "line_end": 162,
         "anchor": "In the selected D1 presentation, distinction is read as the first positive",
-        "fingerprint_sha256": "722c66f945944ff6d371d896bb58578679c9233b77e19733e927e7f87bb0bb16"
+        "fingerprint_sha256": "d32e48253767f72f7f6407f893a746030e158369065d9e7d7a6a2ab499bfc780"
       },
       "plain_claim": "D1 reads distinction through signed units while ordinary arithmetic retains its native definitions.",
       "claim_type": "analytic",
@@ -182,18 +182,113 @@
       "supporting_owner_ids": []
     },
     {
-      "card_id": "OS01-04", "chapters": ["difference"], "locator": {"section": "2", "line_start": 78, "line_end": 83},
-      "plain_claim": "Some apparent contradictions dissolve under explicit domain or type repair; every other problem retains its burden.", "claim_type": "interpretation_vow", "evidence": [{"tier": "I", "scope": "methodological diagnosis"}],
-      "owner_ids": ["K-1"], "dependencies": ["OS01-03"], "docket_ids": ["A1"], "type_boundaries": ["diagnosis is not universal resolution"],
-      "strongest_rival": "The target problem may involve no type error.", "discriminator": "Name the exact type or domain mismatch and recover the native result.", "kill_criterion": "If no mismatch is identified, withdraw the diagnosis.", "survivor_if_killed": "Local type discipline.",
-      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "Problems remain open by default."}, "disposition": "restate", "public": {"state": "bounded_current", "wording": "Some apparent contradictions are type errors; others remain open."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
+      "card_id": "OS01-04",
+      "chapters": [
+        "difference"
+      ],
+      "locator": {
+        "section": "2",
+        "line_start": 198,
+        "line_end": 202,
+        "anchor": "does not solve mathematics by renaming its problems",
+        "fingerprint_sha256": "884b149628c2bb7ff55dd84735226ff08e31444a2d4a4ce368091405e4447690"
+      },
+      "plain_claim": "Some apparent contradictions dissolve under explicit domain or type repair; every other problem retains its burden.",
+      "claim_type": "interpretation_vow",
+      "evidence": [
+        {
+          "tier": "I",
+          "scope": "methodological diagnosis"
+        }
+      ],
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [],
+      "dependencies": [
+        "OS01-03"
+      ],
+      "docket_ids": [
+        "A1"
+      ],
+      "type_boundaries": [
+        "diagnosis is not universal resolution"
+      ],
+      "strongest_rival": "The target problem may involve no type error.",
+      "discriminator": "Name the exact type or domain mismatch and recover the native result.",
+      "kill_criterion": "If no mismatch is identified, withdraw the diagnosis.",
+      "survivor_if_killed": "Local type discipline.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "Problems remain open by default."
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "bounded_current",
+        "wording": "Some apparent contradictions are type errors; others remain open."
+      },
+      "review": {
+        "state": "implemented",
+        "receipts": [
+          "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"
+        ]
+      }
     },
     {
-      "card_id": "OS01-05", "chapters": ["relation"], "locator": {"section": "3", "line_start": 84, "line_end": 104},
-      "plain_claim": "A macro-description earns use only against a fair declared lower-level or alternative baseline.", "claim_type": "conjecture", "evidence": [{"tier": "C", "scope": "macro explanatory utility"}],
-      "owner_ids": ["K-1", "K-2"], "dependencies": [], "docket_ids": ["A2", "A6"], "type_boundaries": ["usefulness is not ontic irreducibility"],
-      "strongest_rival": "A lower-level model may match the task once all costs are counted.", "discriminator": "Match inputs, horizon, intervention scope, encoding, measurement cost, and error.", "kill_criterion": "Demote autonomy if the fair baseline matches or wins.", "survivor_if_killed": "Configuration mathematics and convenient redescription.",
-      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "No ontology follows from convenience."}, "disposition": "research_docket", "public": {"state": "candidate", "wording": "Macro descriptions must earn task-relative use against fair alternatives."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
+      "card_id": "OS01-05",
+      "chapters": [
+        "relation"
+      ],
+      "locator": {
+        "section": "3",
+        "line_start": 220,
+        "line_end": 223,
+        "anchor": "A macro-description earns use",
+        "fingerprint_sha256": "1beb71e055f98080a20d53e0cc3a47efd63c730852be08e52cef62038a7adc4f"
+      },
+      "plain_claim": "A macro-description earns use only against a fair declared lower-level or alternative baseline.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "macro explanatory utility"
+        }
+      ],
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-2"
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "type_boundaries": [
+        "usefulness is not ontic irreducibility"
+      ],
+      "strongest_rival": "A lower-level model may match the task once all costs are counted.",
+      "discriminator": "Match inputs, horizon, intervention scope, encoding, measurement cost, and error.",
+      "kill_criterion": "Demote autonomy if the fair baseline matches or wins.",
+      "survivor_if_killed": "Configuration mathematics and convenient redescription.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "No ontology follows from convenience."
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "candidate",
+        "wording": "Macro descriptions must earn task-relative use against fair alternatives."
+      },
+      "review": {
+        "state": "implemented",
+        "receipts": [
+          "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"
+        ]
+      }
     },
     {
       "card_id": "OS01-06",
@@ -202,10 +297,10 @@
       ],
       "locator": {
         "section": "4",
-        "line_start": 108,
-        "line_end": 125,
+        "line_start": 227,
+        "line_end": 244,
         "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
-        "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc"
+        "fingerprint_sha256": "3f871eb714068ab9b9e10f02a966a692886fa348eb28b9ce5c887ead2c0636ff"
       },
       "plain_claim": "A quantum state supplies context-relative probabilities while an actual record is a distinct event.",
       "claim_type": "analytic",
@@ -258,10 +353,10 @@
       ],
       "locator": {
         "section": "4",
-        "line_start": 108,
-        "line_end": 125,
+        "line_start": 227,
+        "line_end": 244,
         "anchor": "D3 names probability-bearing quantum-state description. A density operator,",
-        "fingerprint_sha256": "fadc822f8bc9759c79010908fc159773b95e592f7bd6cdc204781e452a4c3acc"
+        "fingerprint_sha256": "3f871eb714068ab9b9e10f02a966a692886fa348eb28b9ce5c887ead2c0636ff"
       },
       "plain_claim": "A snapshot inventory does not derive internal time without dynamics, preparation, clocks, transitions, and records.",
       "claim_type": "conjecture",
@@ -309,18 +404,122 @@
       ]
     },
     {
-      "card_id": "OS01-08", "chapters": ["actuality"], "locator": {"section": "5", "line_start": 125, "line_end": 148},
-      "plain_claim": "Commitment and outcome require separate, contestable receipts.", "claim_type": "stipulation", "evidence": [{"tier": "S", "scope": "chosen correction protocol"}],
-      "owner_ids": ["K-1", "K-3"], "dependencies": [], "docket_ids": ["A3"], "type_boundaries": ["self-report is not outcome evidence"],
-      "strongest_rival": "Ordinary audit protocols may calibrate equally well.", "discriminator": "Compare provenance, outcome calibration, contestability, and correction rates.", "kill_criterion": "Narrow if the receipt protocol adds no calibration or is routinely gamed.", "survivor_if_killed": "Commitments do not award their own consequences.",
-      "consequence": {"applicable": true, "bearers": ["actor", "affected parties"], "consent": "declare where applicable", "reversibility": "record repair path", "exit": "Affected parties require a contest path."}, "disposition": "restate", "public": {"state": "bounded_current", "wording": "Learning requires contestable observation of what followed."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
+      "card_id": "OS01-08",
+      "chapters": [
+        "actuality"
+      ],
+      "locator": {
+        "section": "5",
+        "line_start": 263,
+        "line_end": 267,
+        "anchor": "A receipt counts as correction only",
+        "fingerprint_sha256": "ba08f33291d6061a246018e9f8d2a94425b66d588a3c96d3dd3d70e25d622dfb"
+      },
+      "plain_claim": "Commitment and outcome require separate, contestable receipts.",
+      "claim_type": "stipulation",
+      "evidence": [
+        {
+          "tier": "S",
+          "scope": "chosen correction protocol"
+        }
+      ],
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3"
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A3"
+      ],
+      "type_boundaries": [
+        "self-report is not outcome evidence"
+      ],
+      "strongest_rival": "Ordinary audit protocols may calibrate equally well.",
+      "discriminator": "Compare provenance, outcome calibration, contestability, and correction rates.",
+      "kill_criterion": "Narrow if the receipt protocol adds no calibration or is routinely gamed.",
+      "survivor_if_killed": "Commitments do not award their own consequences.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "actor",
+          "affected parties"
+        ],
+        "consent": "declare where applicable",
+        "reversibility": "record repair path",
+        "exit": "Affected parties require a contest path."
+      },
+      "disposition": "restate",
+      "public": {
+        "state": "bounded_current",
+        "wording": "Learning requires contestable observation of what followed."
+      },
+      "review": {
+        "state": "implemented",
+        "receipts": [
+          "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"
+        ]
+      }
     },
     {
-      "card_id": "OS01-09", "chapters": ["possibility"], "locator": {"section": "6", "line_start": 149, "line_end": 163},
-      "plain_claim": "Possible power and actual means may be combined by a declared conjunctive model for a bounded task.", "claim_type": "conjecture", "evidence": [{"tier": "C", "scope": "selected node model"}],
-      "owner_ids": ["K-1", "K-3", "K-4"], "dependencies": [], "docket_ids": ["A1", "A5"], "type_boundaries": ["model output is not personal worth or law", "the product form is retired as a ranking", "the factors carry order rather than an assumed cardinal metric"],
-      "strongest_rival": "Normalized harmonic, Cobb-Douglas, CES, additive, or nonnumeric models may predict better.", "discriminator": "Compare held-out task performance under declared normalization without assuming a cardinal scale.", "kill_criterion": "Replace the selected minimum if a fair rival predicts better without violating the declared AND-class boundary; retire numeric aggregation if no defensible scale exists.", "survivor_if_killed": "Possible maps and actual means are distinct inputs.",
-      "consequence": {"applicable": true, "bearers": ["evaluated actor", "affected parties"], "consent": "required for personal evaluation", "reversibility": "model is replaceable", "exit": "Never use the score as worth or rank."}, "disposition": "retain", "public": {"state": "bounded_current", "wording": "The selected task convention uses the weaker of evaluated possibilities and actual means; the product is retired as a ranking, and neither form measures worth."}, "review": {"state": "l3_audited", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
+      "card_id": "OS01-09",
+      "chapters": [
+        "possibility"
+      ],
+      "locator": {
+        "section": "6",
+        "line_start": 276,
+        "line_end": 283,
+        "anchor": "This supplies the framework's two powers",
+        "fingerprint_sha256": "0ec0b22eb20893101d8dacfb4d838b5ad6b600f5392658185435d0519fdb5152"
+      },
+      "plain_claim": "Possible power and actual means may be combined by a declared conjunctive model for a bounded task.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "selected node model"
+        }
+      ],
+      "semantic_owner_id": "K-1",
+      "supporting_owner_ids": [
+        "K-3",
+        "K-4"
+      ],
+      "dependencies": [],
+      "docket_ids": [
+        "A1",
+        "A5"
+      ],
+      "type_boundaries": [
+        "model output is not personal worth or law",
+        "the product form is retired as a ranking",
+        "the factors carry order rather than an assumed cardinal metric"
+      ],
+      "strongest_rival": "Normalized harmonic, Cobb-Douglas, CES, additive, or nonnumeric models may predict better.",
+      "discriminator": "Compare held-out task performance under declared normalization without assuming a cardinal scale.",
+      "kill_criterion": "Replace the selected minimum if a fair rival predicts better without violating the declared AND-class boundary; retire numeric aggregation if no defensible scale exists.",
+      "survivor_if_killed": "Possible maps and actual means are distinct inputs.",
+      "consequence": {
+        "applicable": true,
+        "bearers": [
+          "evaluated actor",
+          "affected parties"
+        ],
+        "consent": "required for personal evaluation",
+        "reversibility": "model is replaceable",
+        "exit": "Never use the score as worth or rank."
+      },
+      "disposition": "retain",
+      "public": {
+        "state": "bounded_current",
+        "wording": "The selected task convention uses the weaker of evaluated possibilities and actual means; the product is retired as a ranking, and neither form measures worth."
+      },
+      "review": {
+        "state": "l3_audited",
+        "receipts": [
+          "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"
+        ]
+      }
     },
     {
       "card_id": "OS01-10",
@@ -329,10 +528,10 @@
       ],
       "locator": {
         "section": "6",
-        "line_start": 172,
-        "line_end": 176,
+        "line_start": 290,
+        "line_end": 294,
         "anchor": "Future models influence present action causally because they exist now as",
-        "fingerprint_sha256": "8a00fc25c1891dc46d1f1d5363e2833ae65714728ca30552dd9c8cb1db4db099"
+        "fingerprint_sha256": "3d1935da7e3a3c73f2737e73d249fd0ca8893fe814b99cc25338eb90fc34d741"
       },
       "plain_claim": "Represented futures can reweight present choices through present carriers.",
       "claim_type": "conjecture",
@@ -383,10 +582,10 @@
       ],
       "locator": {
         "section": "6",
-        "line_start": 177,
-        "line_end": 197,
+        "line_start": 295,
+        "line_end": 315,
         "anchor": "As an optional mnemonic, the D5 Rosetta Stone labels possible transformations",
-        "fingerprint_sha256": "c116c865cb17dab4871ba0e1b1f046ba3f9ad24d2883c75e65ee2caa14069777"
+        "fingerprint_sha256": "d017e891a9f1332eb75122901b463348b44ac98ed8903ec0b2e6d69148dde8b2"
       },
       "plain_claim": "G7 is selected translation language and supplies neither truth nor Justice.",
       "claim_type": "interpretation_vow",
@@ -437,10 +636,10 @@
       ],
       "locator": {
         "section": "11",
-        "line_start": 402,
-        "line_end": 426,
-        "anchor": "## 11. The Five Apertures — the wager about emergence",
-        "fingerprint_sha256": "6c54a9909e43f62b5a56728fa76e5f08ae850f1dadbf78af28a8483b0c223e5d"
+        "line_start": 540,
+        "line_end": 542,
+        "anchor": "Across domains this ladder is only a candidate translation grammar",
+        "fingerprint_sha256": "5162bacff9cdbbe23a48082c33184ee94b2a59c501ea8de1ae809c3b30aa258a"
       },
       "plain_claim": "Across domains, the D ladder is only a conjecture about useful translation or discrimination beyond native accounts.",
       "claim_type": "conjecture",
@@ -496,10 +695,10 @@
       ],
       "locator": {
         "section": "7",
-        "line_start": 201,
-        "line_end": 229,
+        "line_start": 318,
+        "line_end": 346,
         "anchor": "The Soul Loop is the Rosetta stone of the lived framework:",
-        "fingerprint_sha256": "82068937011f45841ac247b8e1e170506d269954b21f2380a874077305b98c33"
+        "fingerprint_sha256": "67e65c9927cafc1ed955146b34481b149822ae22d06594ffb412c85e35ff798a"
       },
       "plain_claim": "Finite agents should keep map, act, outcome, correction, and exit visibly distinct.",
       "claim_type": "stipulation",
@@ -556,10 +755,10 @@
       ],
       "locator": {
         "section": "8",
-        "line_start": 232,
-        "line_end": 260,
+        "line_start": 350,
+        "line_end": 378,
         "anchor": "No person models alone. Language, norms, money, law, ritual, science and myth",
-        "fingerprint_sha256": "8e44008a6d6821bd6d22cb33753fe5edacc178241a6f8b9ed310381d3b0e64fa"
+        "fingerprint_sha256": "10de3f4ad8239806fd49bcbf7f3a2a471afab5b91d753a6d61e4edda95f573d5"
       },
       "plain_claim": "Egregoreotype is a five-marker candidate collective description, never presumed personhood or intention.",
       "claim_type": "conjecture",
@@ -611,10 +810,10 @@
       ],
       "locator": {
         "section": "8A",
-        "line_start": 263,
-        "line_end": 268,
+        "line_start": 381,
+        "line_end": 386,
         "anchor": "The current research conjecture treats language as a principal compression and",
-        "fingerprint_sha256": "440353705e540b7aa3f4eeefc55dbafbe5f9567f1c8db8e91ab4e8d96dd2cb99"
+        "fingerprint_sha256": "f98524c9eabe158d4f5f81b221a60b6e1273c617d703cd07b6a93e3668aa26fe"
       },
       "plain_claim": "Language is one candidate coordination protocol of a memotype among several rivals.",
       "claim_type": "conjecture",
@@ -667,8 +866,8 @@
       ],
       "locator": {
         "section": "8A",
-        "line_start": 270,
-        "line_end": 276,
+        "line_start": 387,
+        "line_end": 393,
         "anchor": "An extended phenotype can provide a thinner bridge. A controlled object,",
         "fingerprint_sha256": "62863038b5a38181ff5fa82bc3621a4f91abbb3e90190b4c32843a2f8c1d7611"
       },
@@ -723,8 +922,8 @@
       ],
       "locator": {
         "section": "8A",
-        "line_start": 278,
-        "line_end": 292,
+        "line_start": 395,
+        "line_end": 409,
         "anchor": "War is the adverse stress test. Persons bear actual `V₄` stakes and",
         "fingerprint_sha256": "b25d98de6df0365d5f607765792000f96e709bfd6ec75381612d7f02edf6c334"
       },
@@ -781,8 +980,8 @@
       ],
       "locator": {
         "section": "8B",
-        "line_start": 296,
-        "line_end": 310,
+        "line_start": 413,
+        "line_end": 427,
         "anchor": "Four coordinates can correspond without becoming one hierarchy:",
         "fingerprint_sha256": "4d65a945f50eaac22ad8c41f70fa567de174bc4041fb8a796a5b54fb7caed9ef"
       },
@@ -837,10 +1036,10 @@
       ],
       "locator": {
         "section": "8B and 10",
-        "line_start": 312,
-        "line_end": 400,
+        "line_start": 429,
+        "line_end": 442,
         "anchor": "`[I/C]` Justice-constrained teleology motivates a testable corollary: seek",
-        "fingerprint_sha256": "9272055fcd7bf9c970b902e6047c8f83a853d20f5fd3be83b887c385113be902"
+        "fingerprint_sha256": "a43d415da791208623180fc57224e32dd0f41afdf69eda9a8a9243249ceeacc0"
       },
       "plain_claim": "Roles remain voluntary functions of equal worth under Justice, contest, repair, and exit.",
       "claim_type": "stipulation",
@@ -895,10 +1094,10 @@
       ],
       "locator": {
         "section": "9",
-        "line_start": 327,
-        "line_end": 343,
+        "line_start": 445,
+        "line_end": 461,
         "anchor": "A person is an embodied continuity through change, a bearer of experience and",
-        "fingerprint_sha256": "2e23ec2d52b022d969acec062dd408f20c7a1c10411cb03ef6c96cd1a25057b5"
+        "fingerprint_sha256": "a348adc60d0b79988b74449afe37d7748eb6c5608030bed28123e9f83ae7d716"
       },
       "plain_claim": "Human freedom is finite, embodied, situated, and answerable to consequence.",
       "claim_type": "interpretation_vow",
@@ -950,8 +1149,8 @@
       ],
       "locator": {
         "section": "9",
-        "line_start": 344,
-        "line_end": 350,
+        "line_start": 461,
+        "line_end": 467,
         "anchor": "Death ends a living organism's capacity to issue new embodied actions in its",
         "fingerprint_sha256": "9bd97a30c2c96e740e457a7c382ecd1c90e97fedb0d2914bb491ed7dd83a1b8f"
       },
@@ -1004,8 +1203,8 @@
       ],
       "locator": {
         "section": "10",
-        "line_start": 352,
-        "line_end": 400,
+        "line_start": 469,
+        "line_end": 517,
         "anchor": "## 10. The Good — chosen under an open sky",
         "fingerprint_sha256": "3a6ea58a4d204de165f514194339d76b50499c9c74fc1cd3c7f3a851b29d6954"
       },
@@ -1060,11 +1259,61 @@
       "supporting_owner_ids": []
     },
     {
-      "card_id": "OS01-23", "chapters": ["five-apertures"], "locator": {"section": "11", "line_start": 389, "line_end": 433},
-      "plain_claim": "Each mu crossing is an independently provisional emergence conjecture with its own evidence burden.", "claim_type": "conjecture", "evidence": [{"tier": "C", "scope": "crossing-specific emergence"}],
-      "owner_ids": ["K-3", "K-4"], "dependencies": ["OS01-12"], "docket_ids": ["A2", "A6"], "type_boundaries": ["mu is an interface record, not a causal or numeric operator"],
-      "strongest_rival": "Ordinary reduction, redescriptions, threshold artifacts, or native-domain mechanisms may suffice.", "discriminator": "Declare boundary, saturation, threshold, new freedom, recovery, rival, prediction, discriminator, and kill.", "kill_criterion": "Reclassify or kill each row separately when a rival wins or evidence fails.", "survivor_if_killed": "A removable address for the question.",
-      "consequence": {"applicable": false, "bearers": [], "consent": "not_applicable", "reversibility": "fully_reversible", "exit": "No joint score promotes a row."}, "disposition": "research_docket", "public": {"state": "candidate", "wording": "Five independent conjectural apertures, each with its own unpaid gate."}, "review": {"state": "implemented", "receipts": ["00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"]}
+      "card_id": "OS01-23",
+      "chapters": [
+        "five-apertures"
+      ],
+      "locator": {
+        "section": "11",
+        "line_start": 544,
+        "line_end": 564,
+        "anchor": "are interface labels for proposed crossings",
+        "fingerprint_sha256": "065f845da38e5bcacd144125d14be1923eb7b459c20f09823bdc95947e2e91cf"
+      },
+      "plain_claim": "Each mu crossing is an independently provisional emergence conjecture with its own evidence burden.",
+      "claim_type": "conjecture",
+      "evidence": [
+        {
+          "tier": "C",
+          "scope": "crossing-specific emergence"
+        }
+      ],
+      "semantic_owner_id": "K-3",
+      "supporting_owner_ids": [
+        "K-4"
+      ],
+      "dependencies": [
+        "OS01-12"
+      ],
+      "docket_ids": [
+        "A2",
+        "A6"
+      ],
+      "type_boundaries": [
+        "mu is an interface record, not a causal or numeric operator"
+      ],
+      "strongest_rival": "Ordinary reduction, redescriptions, threshold artifacts, or native-domain mechanisms may suffice.",
+      "discriminator": "Declare boundary, saturation, threshold, new freedom, recovery, rival, prediction, discriminator, and kill.",
+      "kill_criterion": "Reclassify or kill each row separately when a rival wins or evidence fails.",
+      "survivor_if_killed": "A removable address for the question.",
+      "consequence": {
+        "applicable": false,
+        "bearers": [],
+        "consent": "not_applicable",
+        "reversibility": "fully_reversible",
+        "exit": "No joint score promotes a row."
+      },
+      "disposition": "research_docket",
+      "public": {
+        "state": "candidate",
+        "wording": "Five independent conjectural apertures, each with its own unpaid gate."
+      },
+      "review": {
+        "state": "implemented",
+        "receipts": [
+          "00_META/00_ONE_SITTING_CLAIM_CARD_SET_01.md"
+        ]
+      }
     },
     {
       "card_id": "OS01-24",
@@ -1073,8 +1322,8 @@
       ],
       "locator": {
         "section": "11",
-        "line_start": 449,
-        "line_end": 450,
+        "line_start": 566,
+        "line_end": 567,
         "anchor": "The five force affinities remain the historical spark and an open modular wager.",
         "fingerprint_sha256": "edbdea57f004af1407c14500b786e5763bfda39d410ea04c37730ba98a87f1c2"
       },
@@ -1127,8 +1376,8 @@
       ],
       "locator": {
         "section": "12",
-        "line_start": 452,
-        "line_end": 469,
+        "line_start": 569,
+        "line_end": 586,
         "anchor": "## 12. The Exit — what the worldview refuses to possess",
         "fingerprint_sha256": "d5a39fbaccda7ba95b024f64069c7e32957da9bece2b4eaeddc19059be894754"
       },
@@ -1185,10 +1434,10 @@
       ],
       "locator": {
         "section": "12",
-        "line_start": 471,
-        "line_end": 490,
+        "line_start": 588,
+        "line_end": 607,
         "anchor": "The worldview therefore contains its own refusal:",
-        "fingerprint_sha256": "332e698f8ffe4053e18849be62ce9c7c68e5edb74911d4bd28360ea7c69770fb"
+        "fingerprint_sha256": "2e4216598aa5767d1fbd60b8d4f8e074855f717513fe779c8a0067389190faae"
       },
       "plain_claim": "The worldview contains explicit refusals of proof transfer, causal-symbol reification, aesthetic ethics, adherence evidence, and compulsory holding.",
       "claim_type": "stipulation",

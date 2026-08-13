@@ -1,0 +1,35 @@
+{
+  "excluded": [
+    "ch12_titans_research",
+    "ch13_world_contact",
+    "ch14_action_and_institution_research",
+    "ch15_lenses_and_immune_protocol",
+    "ch16_corrections_kept",
+    "appendices"
+  ],
+  "g10": "unpaid",
+  "included": [
+    "preamble_quickstart",
+    "ch01_finite_predicament",
+    "ch02_frames_not_furniture",
+    "ch03_record_and_possibility",
+    "ch04_soul_loop",
+    "ch05_finity_card",
+    "ch06_justice_chosen",
+    "ch07_conflict_and_residue",
+    "ch08_social_loop",
+    "ch09_thin_coordination",
+    "ch10_institutions_can_end",
+    "ch11_competition_without_war",
+    "ch17_right_to_leave"
+  ],
+  "output": "13_BOOKS/manifesto/PUBLIC_CURRENT_BODY_STAGED.md",
+  "output_sha256": "26c5bb3f3a3ef0601a542026ec589b1c634f4ce939b40e8656d420df1fdb3cd4",
+  "public_route": null,
+  "retargets_book_builder": false,
+  "schema": "emergentism/manifesto-public-current-body/v1",
+  "source": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
+  "source_sha256": "34e91f53337f789b45c8704ce245f94dbe7c5c8675a7f7d064e7ca79eae69b13",
+  "status": "staged_not_public",
+  "word_count": 28919
+}

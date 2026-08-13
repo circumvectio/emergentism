@@ -4,7 +4,6 @@ status: "STAGED PRIVATE FULL-BOOK MANUSCRIPT — evidence-mapped; not public or 
 authority: "projection only; K-1 through K-7 retain semantic ownership"
 source_contract: "FULL_BOOK_1_CONTRACT.json"
 build_provenance: "09_TOOLS/02_COMPILERS/assemble_manifesto_book.py"
-canonical_phrase: "The Emergentist Manifesto — staged private full-book manuscript, evidence-mapped from bounded-current source cards (OS01-1..OS01-26 + FIN01); a fallibilist worldview and practice for finite beings, projection only, not public or deployed, with K-1..K-7 retaining semantic ownership."
 ---
 # The Emergentist Manifesto
 
@@ -3441,7 +3440,7 @@ notice. It is not kept as a route for restoring the authority that was
 withdrawn.
 
 **Historical source:**
-`../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md`.
+`../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md`.
 **Revision hash:**
 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 **Critical edition:** `13_BOOKS/sarpasya_vijayam/CRITICAL_EDITION_1.md`
@@ -4967,7 +4966,7 @@ Source cards: none — editorial control.
 - **Kill or narrowing route:** Retire the imagery if readers persistently treat it as arithmetic or ontology.
 - **Survivor if killed:** The explicit frame/object distinction.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-01`.
 
 <!-- FULLBOOK-P: atlas_os01_02 -->
@@ -4981,7 +4980,7 @@ Source cards: `OS01-01`.
 - **Kill or narrowing route:** Demote if it adds no contact or conflicts with contact.
 - **Survivor if killed:** A map does not establish its own ground.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-02`.
 
 <!-- FULLBOOK-P: atlas_os01_03 -->
@@ -4995,7 +4994,7 @@ Source cards: `OS01-02`.
 - **Kill or narrowing route:** Remove the crosswalk if it changes native results or adds no explanatory value.
 - **Survivor if killed:** Ordinary arithmetic and explicit domains.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-03`.
 
 <!-- FULLBOOK-P: atlas_os01_04 -->
@@ -5009,12 +5008,12 @@ Source cards: `OS01-03`.
 - **Kill or narrowing route:** If no mismatch is identified, withdraw the diagnosis.
 - **Survivor if killed:** Local type discipline.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-04`.
 
 <!-- FULLBOOK-P: atlas_os01_05 -->
 ### OS01-05 — A macro-description earns use only against a fair declared lower-level or alternative baseline.
-- **Work / owner:** `BK-ONE-SITTING` / `K-2`.
+- **Work / owner:** `BK-ONE-SITTING` / `K-1`.
 - **Classification:** `conjecture`; **evidence:** [C] macro explanatory utility.
 - **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — Macro descriptions must earn task-relative use against fair alternatives.
 - **Type boundary:** usefulness is not ontic irreducibility.
@@ -5023,7 +5022,7 @@ Source cards: `OS01-04`.
 - **Kill or narrowing route:** Demote autonomy if the fair baseline matches or wins.
 - **Survivor if killed:** Configuration mathematics and convenient redescription.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-05`.
 
 <!-- FULLBOOK-P: atlas_os01_06 -->
@@ -5037,7 +5036,7 @@ Source cards: `OS01-05`.
 - **Kill or narrowing route:** Demote the D placement if it adds no discrimination.
 - **Survivor if killed:** The state/record distinction.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-06`.
 
 <!-- FULLBOOK-P: atlas_os01_07 -->
@@ -5051,12 +5050,12 @@ Source cards: `OS01-06`.
 - **Kill or narrowing route:** Kill the derivation claim if external time is silently assumed.
 - **Survivor if killed:** A state inventory is not itself a history.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-07`.
 
 <!-- FULLBOOK-P: atlas_os01_08 -->
 ### OS01-08 — Commitment and outcome require separate, contestable receipts.
-- **Work / owner:** `BK-ONE-SITTING` / `K-7`.
+- **Work / owner:** `BK-ONE-SITTING` / `K-1`.
 - **Classification:** `stipulation`; **evidence:** [S] chosen correction protocol.
 - **Lifecycle and public ceiling:** source `reader_synthesis`; public `bounded_current` — Learning requires contestable observation of what followed.
 - **Type boundary:** self-report is not outcome evidence.
@@ -5065,21 +5064,21 @@ Source cards: `OS01-07`.
 - **Kill or narrowing route:** Narrow if the receipt protocol adds no calibration or is routinely gamed.
 - **Survivor if killed:** Commitments do not award their own consequences.
 - **Consequence / exit:** bearers: actor; affected parties; consent: declare where applicable; reversibility: record repair path; exit: Affected parties require a contest path..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-08`.
 
 <!-- FULLBOOK-P: atlas_os01_09 -->
-### OS01-09 — Possible power and actual means form a two-axis profile; a scalar conjunctive model requires an additional calibration contract.
+### OS01-09 — Possible power and actual means may be combined by a declared conjunctive model for a bounded task.
 - **Work / owner:** `BK-ONE-SITTING` / `K-1`.
 - **Classification:** `conjecture`; **evidence:** [C] selected node model.
-- **Lifecycle and public ceiling:** source `reader_synthesis`; public `bounded_current` — Map and means remain separate axes; any scalar is calibrated, replaceable, and never a measure of worth.
-- **Type boundary:** model output is not personal worth or law.
-- **Strongest rival:** Pareto profiles, minimum, additive, CES, or nonnumeric models may predict better with fewer scale assumptions.
-- **Discriminator:** Compare held-out task performance under declared calibration, independent rescaling tests, and component-matched rivals.
-- **Kill or narrowing route:** Retire any scalar when its calibration is indefensible or a fair rival predicts better.
+- **Lifecycle and public ceiling:** source `reader_synthesis`; public `bounded_current` — The selected task convention uses the weaker of evaluated possibilities and actual means; the product is retired as a ranking, and neither form measures worth.
+- **Type boundary:** model output is not personal worth or law; the product form is retired as a ranking; the factors carry order rather than an assumed cardinal metric.
+- **Strongest rival:** Normalized harmonic, Cobb-Douglas, CES, additive, or nonnumeric models may predict better.
+- **Discriminator:** Compare held-out task performance under declared normalization without assuming a cardinal scale.
+- **Kill or narrowing route:** Replace the selected minimum if a fair rival predicts better without violating the declared AND-class boundary; retire numeric aggregation if no defensible scale exists.
 - **Survivor if killed:** Possible maps and actual means are distinct inputs.
 - **Consequence / exit:** bearers: evaluated actor; affected parties; consent: required for personal evaluation; reversibility: model is replaceable; exit: Never use the score as worth or rank..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-09`.
 
 <!-- FULLBOOK-P: atlas_os01_10 -->
@@ -5093,7 +5092,7 @@ Source cards: `OS01-09`.
 - **Kill or narrowing route:** Demote if representation adds no reliable shift.
 - **Survivor if killed:** Only present tokens participate causally.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-10`.
 
 <!-- FULLBOOK-P: atlas_os01_11 -->
@@ -5107,7 +5106,7 @@ Source cards: `OS01-10`.
 - **Kill or narrowing route:** Retire labels that add confusion or status effects.
 - **Survivor if killed:** Move and frame distinctions.
 - **Consequence / exit:** bearers: participants; consent: voluntary vocabulary; reversibility: labels are replaceable; exit: No human identity or rank follows..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-11`.
 
 <!-- FULLBOOK-P: atlas_os01_12 -->
@@ -5121,7 +5120,7 @@ Source cards: `OS01-11`.
 - **Kill or narrowing route:** Narrow or retire the translation claim if it yields no common dynamics or novel discrimination beyond native accounts.
 - **Survivor if killed:** A removable address system.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-12`.
 
 <!-- FULLBOOK-P: atlas_os01_13 -->
@@ -5135,7 +5134,7 @@ Source cards: `OS01-12`.
 - **Kill or narrowing route:** Narrow any step that fails to improve correction or enables self-validation.
 - **Survivor if killed:** Outcome contact can revise the map.
 - **Consequence / exit:** bearers: actor; affected parties; consent: declare; reversibility: smallest reversible step; exit: Exit and appeal stay inside..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-13`.
 
 <!-- FULLBOOK-P: atlas_os01_14 -->
@@ -5149,7 +5148,7 @@ Source cards: `OS01-13`.
 - **Kill or narrowing route:** Reject candidate status if any marker fails or rivals absorb the effect.
 - **Survivor if killed:** A shared trace description.
 - **Consequence / exit:** bearers: trace carriers; affected noncarriers; consent: not implied by participation; reversibility: interventions require repair; exit: No collective label overrides individual rights..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-14`.
 
 <!-- FULLBOOK-P: atlas_os01_15 -->
@@ -5163,7 +5162,7 @@ Source cards: `OS01-14`.
 - **Kill or narrowing route:** Narrow if language adds no incremental coordination effect.
 - **Survivor if killed:** Coordination can use multiple protocols.
 - **Consequence / exit:** bearers: participants; consent: language use does not prove assent; reversibility: classification is revisable; exit: Dissent is not pathology..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-15`.
 
 <!-- FULLBOOK-P: atlas_os01_16 -->
@@ -5177,7 +5176,7 @@ Source cards: `OS01-15`.
 - **Kill or narrowing route:** Withdraw the trade analogy if it adds unsupported intentional or moral content.
 - **Survivor if killed:** Learned cross-species exchange behavior occurred.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-16`.
 
 <!-- FULLBOOK-P: atlas_os01_17 -->
@@ -5191,7 +5190,7 @@ Source cards: `OS01-16`.
 - **Kill or narrowing route:** Retire the stronger account if coordination variables add no reliable value beyond rivals.
 - **Survivor if killed:** Coalitions often use shared meanings to coordinate material conflict.
 - **Consequence / exit:** bearers: conflict participants; nonparticipants; consent: participation does not prove belief; reversibility: analysis supplies no action authorization; exit: Only nonviolent worldview competition is endorsed..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-17`.
 
 <!-- FULLBOOK-P: atlas_os01_18 -->
@@ -5205,7 +5204,7 @@ Source cards: `OS01-17`.
 - **Kill or narrowing route:** Retire any mapping that creates rank, proof transfer, or false biological necessity.
 - **Survivor if killed:** Equal human worth and voluntary specialization.
 - **Consequence / exit:** bearers: all people classified; consent: voluntary and task-specific; reversibility: roles change and combine; exit: No caste, inheritance, or entitlement..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-18`.
 
 <!-- FULLBOOK-P: atlas_os01_19 -->
@@ -5219,7 +5218,7 @@ Source cards: `OS01-18`.
 - **Kill or narrowing route:** Freeze any role system that creates inherited status, blocked dissent, or governing entitlement.
 - **Survivor if killed:** Task-specific functional differentiation with equal dignity.
 - **Consequence / exit:** bearers: participants; affected parties; consent: required; reversibility: roles are changeable; exit: Leave without loss of personhood or property..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-19`.
 
 <!-- FULLBOOK-P: atlas_os01_20 -->
@@ -5233,7 +5232,7 @@ Source cards: `OS01-19`.
 - **Kill or narrowing route:** Narrow any part contradicted by evidence or better rival explanation.
 - **Survivor if killed:** Agents face constraints and consequences.
 - **Consequence / exit:** bearers: persons; consent: worldview use is voluntary; reversibility: interpretation is revisable; exit: Any holder may put it down..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-20`.
 
 <!-- FULLBOOK-P: atlas_os01_21 -->
@@ -5247,7 +5246,7 @@ Source cards: `OS01-20`.
 - **Kill or narrowing route:** Remove an open item once genuinely answered under its native burden.
 - **Survivor if killed:** Fallibilist revision.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-21`.
 
 <!-- FULLBOOK-P: atlas_os01_22 -->
@@ -5261,12 +5260,12 @@ Source cards: `OS01-21`.
 - **Kill or narrowing route:** If no objective bridge survives, keep Justice chosen rather than describing it as discovered.
 - **Survivor if killed:** An explicit, contestable constitutional commitment.
 - **Consequence / exit:** bearers: all affected parties; consent: declare and contest; reversibility: prefer reversible action; exit: No aggregate erases a bearer..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-22`.
 
 <!-- FULLBOOK-P: atlas_os01_23 -->
 ### OS01-23 — Each mu crossing is an independently provisional emergence conjecture with its own evidence burden.
-- **Work / owner:** `BK-ONE-SITTING` / `K-4`.
+- **Work / owner:** `BK-ONE-SITTING` / `K-3`.
 - **Classification:** `conjecture`; **evidence:** [C] crossing-specific emergence.
 - **Lifecycle and public ceiling:** source `reader_synthesis`; public `candidate` — Five independent conjectural apertures, each with its own unpaid gate.
 - **Type boundary:** mu is an interface record, not a causal or numeric operator.
@@ -5275,7 +5274,7 @@ Source cards: `OS01-22`.
 - **Kill or narrowing route:** Reclassify or kill each row separately when a rival wins or evidence fails.
 - **Survivor if killed:** A removable address for the question.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-23`.
 
 <!-- FULLBOOK-P: atlas_os01_24 -->
@@ -5289,7 +5288,7 @@ Source cards: `OS01-23`.
 - **Kill or narrowing route:** Kill a force row that lacks incremental prediction or survives only by relabeling.
 - **Survivor if killed:** Historical motivation and typed translation vocabulary.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-24`.
 
 <!-- FULLBOOK-P: atlas_os01_25 -->
@@ -5303,7 +5302,7 @@ Source cards: `OS01-24`.
 - **Kill or narrowing route:** Retire the symbol if it becomes identity, attainment, or hidden ontology.
 - **Survivor if killed:** Not every remainder must become an object.
 - **Consequence / exit:** bearers: holders; consent: voluntary; reversibility: fully_reversible; exit: Any holder may put down the map..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-25`.
 
 <!-- FULLBOOK-P: atlas_os01_26 -->
@@ -5317,7 +5316,7 @@ Source cards: `OS01-25`.
 - **Kill or narrowing route:** Treat any unpracticed refusal as an aspiration, not a safety result.
 - **Survivor if killed:** A worldview does not validate itself.
 - **Consequence / exit:** bearers: holders; critics; affected parties; consent: voluntary adoption; reversibility: correction and withdrawal required; exit: Any holder may put it down..
-- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad`.
+- **Source revision:** `00_THE_WELTANSCHAUUNG_ONE_SITTING.md` at reviewed SHA-256 `d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f`.
 Source cards: `OS01-26`.
 
 
@@ -5337,7 +5336,7 @@ Source cards: `OS01-26`.
 - **Kill or narrowing route:** Retire the branding or any prompt that adds no correction, bearer visibility, or practical value after burden and cost are counted.
 - **Survivor if killed:** The best-performing simpler receipt practice and the distinction between map, action, consequence, and correction.
 - **Consequence / exit:** bearers: actor; affected parties; future or absent bearers where materially exposed; consent: The Card supplies no mandate; consent and the full Justice envelope are required for material action.; reversibility: Prefer the smallest authorized reversible move; where reversal is impossible, use the smallest lawful commitment, an early review point, and a declared repair path.; exit: Any holder may reject the Card, use a rival practice, or stop without penalty..
-- **Source revision:** `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` at reviewed SHA-256 `c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c`.
+- **Source revision:** `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` at reviewed SHA-256 `f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d`.
 Source cards: `FIN01-01`.
 
 <!-- FULLBOOK-P: atlas_fin01_02 -->
@@ -5351,7 +5350,7 @@ Source cards: `FIN01-01`.
 - **Kill or narrowing route:** Narrow or kill the benefit claim if Finity adds no incremental value after burden and cost, produces worse outcomes, or gains only from unequal instruction or measurement.
 - **Survivor if killed:** The seven prompts remain a voluntary selected worksheet only if users still find them useful; otherwise preserve the better rival and the world-receipt discipline.
 - **Consequence / exit:** bearers: participants; people affected by participants' decisions; consent: Any comparative study requires informed participation and a separate authorization envelope for consequential interventions.; reversibility: Use low-stakes reversible domains first and publish nulls, harms, withdrawals, and repair.; exit: Participants may withdraw; the result may retire the practice or its name..
-- **Source revision:** `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` at reviewed SHA-256 `c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c`.
+- **Source revision:** `01_TELEOLOGY/04_THE_LIVED_COMPASS.md` at reviewed SHA-256 `f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d`.
 Source cards: `FIN01-02`.
 
 
@@ -5613,7 +5612,7 @@ Source cards: `EN01-05`.
 - **Kill or narrowing route:** Narrow if hostile review is ritualized or suppresses non-framework objections.
 - **Survivor if killed:** Claims need explicit limits and critics.
 - **Consequence / exit:** bearers: authors; critics; affected parties; consent: critics need not adopt the vocabulary; reversibility: review is revisable; exit: criticism carries no loyalty requirement.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-01`.
 
 <!-- FULLBOOK-P: atlas_ses01_02 -->
@@ -5627,7 +5626,7 @@ Source cards: `SES01-01`.
 - **Kill or narrowing route:** Withdraw benefit claims when fair baselines match or win.
 - **Survivor if killed:** Applications remain test nominations.
 - **Consequence / exit:** bearers: users; nonusers; affected parties; consent: declare; reversibility: pilot at smallest scale; exit: publish adverse cases and allow withdrawal.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-02`.
 
 <!-- FULLBOOK-P: atlas_ses01_03 -->
@@ -5641,7 +5640,7 @@ Source cards: `SES01-02`.
 - **Kill or narrowing route:** Drop framework-specific language if it adds no detection or protection.
 - **Survivor if killed:** Audit authority, incentives, language and metrics separately.
 - **Consequence / exit:** bearers: participants; dissenters; consent: voluntary; reversibility: audit categories are replaceable; exit: outside language and appeal remain valid.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-03`.
 
 <!-- FULLBOOK-P: atlas_ses01_04 -->
@@ -5655,7 +5654,7 @@ Source cards: `SES01-03`.
 - **Kill or narrowing route:** Retire capture language when the fair rivals explain as well.
 - **Survivor if killed:** Institutions need observable failure tests.
 - **Consequence / exit:** bearers: institution members; outsiders; consent: participation is not assent; reversibility: diagnoses are contestable; exit: no label blocks appeal or departure.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-04`.
 
 <!-- FULLBOOK-P: atlas_ses01_05 -->
@@ -5669,7 +5668,7 @@ Source cards: `SES01-04`.
 - **Kill or narrowing route:** Reject dissolution language that evades duty, ownership or evidence.
 - **Survivor if killed:** Archive, repair and practical exit remain owed.
 - **Consequence / exit:** bearers: affected parties; record custodians; consent: closure cannot waive another's claim; reversibility: history is preserved; exit: leaving does not erase repair.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-05`.
 
 <!-- FULLBOOK-P: atlas_ses01_06 -->
@@ -5683,7 +5682,7 @@ Source cards: `SES01-05`.
 - **Kill or narrowing route:** Remove any element that creates health promises, loyalty tests or coercion.
 - **Survivor if killed:** Claim, rival, reversible act, outcome, repair and exit.
 - **Consequence / exit:** bearers: practitioners; affected parties; consent: voluntary; reversibility: stop or modify at any time; exit: no loyalty cost.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md` at reviewed SHA-256 `397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4`.
 Source cards: `SES01-06`.
 
 
@@ -5821,7 +5820,7 @@ Source cards: `SL01-08`.
 - **Kill or narrowing route:** Retire capture language when fair ordinary rivals explain as well.
 - **Survivor if killed:** Ask who benefits, pays, corrects and exits.
 - **Consequence / exit:** bearers: institution members; affected outsiders; consent: participation is not assent; reversibility: diagnosis is contestable; exit: no enemy or pathology label.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-01`.
 
 <!-- FULLBOOK-P: atlas_sv01_02 -->
@@ -5835,7 +5834,7 @@ Source cards: `SV01-01`.
 - **Kill or narrowing route:** Archive any mapping that creates causal μ, D6/D0 identity, human rank or ethics from geometry.
 - **Survivor if killed:** Native mathematics plus an explicit historical record.
 - **Consequence / exit:** bearers: people classified by the old model; consent: no classification authority; reversibility: historical claims remain withdrawn; exit: symbols are optional.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-02`.
 
 <!-- FULLBOOK-P: atlas_sv01_03 -->
@@ -5849,7 +5848,7 @@ Source cards: `SV01-02`.
 - **Kill or narrowing route:** Withdraw the mapping when differences or multicausal rivals absorb it.
 - **Survivor if killed:** Historical cases remain sources of questions and counterexamples.
 - **Consequence / exit:** not applicable.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-03`.
 
 <!-- FULLBOOK-P: atlas_sv01_04 -->
@@ -5863,7 +5862,7 @@ Source cards: `SV01-03`.
 - **Kill or narrowing route:** Remove any language that creates enemies, compulsion or martial instruction.
 - **Survivor if killed:** Nonviolent, bearer-aware local repair.
 - **Consequence / exit:** bearers: participants; affected parties; consent: voluntary; reversibility: smallest reversible act; exit: no loyalty or retaliation.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-04`.
 
 <!-- FULLBOOK-P: atlas_sv01_05 -->
@@ -5877,7 +5876,7 @@ Source cards: `SV01-04`.
 - **Kill or narrowing route:** Remove any element that implies universal dose, health effect or privileged access.
 - **Survivor if killed:** Optional reflection with no loyalty test.
 - **Consequence / exit:** bearers: practitioners; consent: voluntary; reversibility: stop at any time; exit: no adherence cost.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-05`.
 
 <!-- FULLBOOK-P: atlas_sv01_06 -->
@@ -5891,7 +5890,7 @@ Source cards: `SV01-05`.
 - **Kill or narrowing route:** Use the simpler institution when it protects bearers as well or better.
 - **Survivor if killed:** A voluntary institutional checklist.
 - **Consequence / exit:** bearers: participants; customers; affected outsiders; consent: required; reversibility: sunset and repair; exit: property, data and claims remain portable.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-06`.
 
 <!-- FULLBOOK-P: atlas_sv01_07 -->
@@ -5905,7 +5904,7 @@ Source cards: `SV01-06`.
 - **Kill or narrowing route:** Reject dissolution rhetoric that hides failure or unfinished obligation.
 - **Survivor if killed:** Visible record, repair and practical exit.
 - **Consequence / exit:** bearers: affected parties; record custodians; consent: departure cannot waive another's claim; reversibility: archive preserved; exit: leave with claims intact.
-- **Source revision:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
+- **Source revision:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md` at reviewed SHA-256 `aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436`.
 Source cards: `SV01-07`.
 
 
@@ -5919,7 +5918,7 @@ Source cards: `SV01-07`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-4`.
 - **Public state:** `frozen`; **disposition:** `research_docket`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-01`.
 
 <!-- FULLBOOK-P: atlas_rip01_02 -->
@@ -5927,7 +5926,7 @@ Source cards: `RIP01-01`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-1`.
 - **Public state:** `frozen`; **disposition:** `restate`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-02`.
 
 <!-- FULLBOOK-P: atlas_rip01_03 -->
@@ -5935,7 +5934,7 @@ Source cards: `RIP01-02`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-1`.
 - **Public state:** `frozen`; **disposition:** `restate`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-03`.
 
 <!-- FULLBOOK-P: atlas_rip01_04 -->
@@ -5943,7 +5942,7 @@ Source cards: `RIP01-03`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-4`.
 - **Public state:** `frozen`; **disposition:** `research_docket`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-04`.
 
 <!-- FULLBOOK-P: atlas_rip01_05 -->
@@ -5951,7 +5950,7 @@ Source cards: `RIP01-04`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-7`.
 - **Public state:** `frozen`; **disposition:** `archive`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-05`.
 
 <!-- FULLBOOK-P: atlas_rip01_06 -->
@@ -5959,7 +5958,7 @@ Source cards: `RIP01-05`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-5`.
 - **Public state:** `frozen`; **disposition:** `restate`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-06`.
 
 <!-- FULLBOOK-P: atlas_rip01_07 -->
@@ -5967,7 +5966,7 @@ Source cards: `RIP01-06`.
 This card is frozen historical provenance. The full book preserves its identifier, owner route, and custody boundary but does not regenerate its claim, rival, or explanatory prose.
 - **Work:** `BK-RECIPROCAL-INFINITE-PLAY`; **owner:** `K-5`.
 - **Public state:** `frozen`; **disposition:** `restate`.
-- **Source custody:** `../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Source custody:** `../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md` at reviewed SHA-256 `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
 Source cards: `RIP01-07`.
 
 ---
@@ -6058,9 +6057,9 @@ Source cards: none — adequacy-docket metadata.
 - **Work ID:** `BK-RECIPROCAL-INFINITE-PLAY`.
 - **Frozen lifecycle:** `frozen`.
 - **Preservation reason:** retain historical provenance without regenerating any claim prose.
-- **Historical source:** `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md`; **lifecycle:** `frozen`; **reviewed SHA-256:** `081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9`.
-- **Historical source:** `../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md`; **lifecycle:** `frozen`; **reviewed SHA-256:** `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
-- **Critical-edition projection:** `reciprocal_infinite_play/CRITICAL_EDITION_1.md`; **SHA-256:** `023fcfc7cf731b0f67efee535c93d26c375b4e7db3ebbe36c3f1e3bb7cf92030`.
+- **Historical source:** `../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md`; **lifecycle:** `frozen`; **reviewed SHA-256:** `081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9`.
+- **Historical source:** `../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md`; **lifecycle:** `frozen`; **reviewed SHA-256:** `86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9`.
+- **Critical-edition projection:** `reciprocal_infinite_play/CRITICAL_EDITION_1.md`; **SHA-256:** `3b3612ceb879564f4f3dad4a01ad125ecfa0bbdeb4c60a2d0456d584f014cad6`.
 - **Debrief route:** `13_BOOKS/reciprocal_infinite_play/DEBRIEF.md`.
 - **Custody route:** `CUSTODY-ONLY-RECIPROCAL-ARCHIVE`; **primary home:** `historical_custody_only`.
 Source cards: none — custody metadata.

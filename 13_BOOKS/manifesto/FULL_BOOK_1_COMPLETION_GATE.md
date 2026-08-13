@@ -15,7 +15,7 @@ scope: "The Emergentist Manifesto: A Worldview for Finite Beings — private Ful
 
 **PASS for a local private-completion claim; NO-GO for public release.** The
 assembled manuscript contains one Preamble, 17 numbered chapters, classified
-appendices, 63,578 words, and 638 unique source-mapped units. Its deterministic
+appendices, 63,677 words, and 638 unique source-mapped units. Its deterministic
 build receipt and paragraph ledger are checked by the dedicated Full Book 1
 compiler test. The former workbench drafts remain preserved as provenance, but
 the reader is assembled from the chapter modules rather than linked to them.
@@ -246,7 +246,7 @@ audit, and separate host/alias/DNS verification remain unpaid public gates.
 
 | ID | Prior blocking observation | Current disposition |
 |---|---|---|
-| C1 | The assembled reader was a routing stub with no full-book markers or source receipts. | **Resolved:** `MANIFESTO_BOOK_1.md` is one inline 63,578-word reader with 638 unique receipt markers. |
+| C1 | The assembled reader was a routing stub with no full-book markers or source receipts. | **Resolved:** `MANIFESTO_BOOK_1.md` is one inline 63,677-word reader with 638 unique receipt markers. |
 | C2 | The contract had no machine-readable paragraph coverage. | **Resolved:** `MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json` is deterministic and binds marker, card, owner, tier, source revision, lifecycle, and public disposition. |
 | C3 | Twelve chapters were planned and five mapped but undrafted. | **Resolved:** all 17 chapters have an assembled source module and current private build state. |
 | C4 | The current-core workbench drafts were unintegrated. | **Resolved:** Parts I–III are assembled from their dedicated modules; earlier workbench drafts are preserved but not read by the assembler. |

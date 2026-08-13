@@ -19,32 +19,32 @@
     },
     {
       "path": "00_META/claim_cards/finity_practice.yaml",
-      "reviewed_source_sha256": "c1db0b2ad8e3a3258f8de66a5ccc569bce037d164de5f77dbc6b2bb9995ec63c",
+      "reviewed_source_sha256": "f3b1b71af7274c3f3fbdb25d0ab2be064db00859d9ddb59bc272f4189780303d",
       "source": "01_TELEOLOGY/04_THE_LIVED_COMPASS.md",
       "work_id": "BK-FINITY-PRACTICE"
     },
     {
       "path": "00_META/claim_cards/one_sitting.yaml",
-      "reviewed_source_sha256": "e0e4b53e2944e1ca00755aa24451bbb71de363fc94012dab8f39099467ae71ad",
+      "reviewed_source_sha256": "d5887c549e09b2ec16731136bd9e62ef7788a5b9e9c6267ac390dc508d4a790f",
       "source": "00_THE_WELTANSCHAUUNG_ONE_SITTING.md",
       "work_id": "BK-ONE-SITTING"
     },
     {
       "path": "00_META/claim_cards/reciprocal_infinite_play.yaml",
       "reviewed_source_sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9",
-      "source": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+      "source": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
       "work_id": "BK-RECIPROCAL-INFINITE-PLAY"
     },
     {
       "path": "00_META/claim_cards/sarpasya_vijayam.yaml",
       "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436",
-      "source": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+      "source": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
       "work_id": "BK-SARPASYA"
     },
     {
       "path": "00_META/claim_cards/self_eating_serpent.yaml",
       "reviewed_source_sha256": "397ee521026dd999431250bbc55e86181ffc03b6b14a820adf98d70ab81f3ac4",
-      "source": "../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
+      "source": "../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md",
       "work_id": "BK-SELF-EATING"
     },
     {
@@ -84,19 +84,19 @@
     {
       "path": "13_BOOKS/manifesto/manifesto-contract.json",
       "role": "preamble_contract",
-      "sha256": "5896c1ae377977ebc0e3b746a00d9095cfd594df0b0d6610738803254978da43"
+      "sha256": "912eac4caea90777dacde0cf0eeb14c72713c8e9e209f34737f101465652847c"
     },
     {
       "path": "13_BOOKS/book-manifest.json",
       "role": "book_manifest_custody",
-      "sha256": "00162b2ff1eee1e606d2cbb1df4eb6cf40d9f7def51be74bccbc0b231866b454"
+      "sha256": "03835aed620afdf7709e90b287d388c810999fb6d19900ebab9dd128ba32f9d8"
     }
   ],
   "modules": [
     {
       "path": "13_BOOKS/manifesto/MANIFESTO_DRAFT_0.md",
       "role": "preamble",
-      "sha256": "810465b8f25fe57851b71e83a770cdb90dc03ef78b565b15de0d697989d30a18"
+      "sha256": "6726ac84268e14ce2fb87bf10ffbe1964f531398e21486915b59d6d4cf152a06"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/PART_I_THE_FINITE_CONDITION.md",
@@ -111,23 +111,23 @@
     {
       "path": "13_BOOKS/manifesto/chapters/PART_IV_V_RESEARCH_GENEALOGY.md",
       "role": "part_iv_v",
-      "sha256": "96763c5daa3453f2a4c8a0e9731a6a7bf9e5a6eace941fbd6d2c81024e2c284d"
+      "sha256": "67b3c87aa34e5ead792f0690fd1c067671d8d15bc228889b1eaf0a68f3173ff6"
     },
     {
       "path": "13_BOOKS/manifesto/chapters/APPENDICES_AND_WORKSHEETS.md",
       "role": "appendices",
-      "sha256": "6997218c382d4558f3b5326ec4a59b655b8bd89874dcf0f5345ca3bfab4733d6"
+      "sha256": "e956cb674d3f9f9a2ba750dc34dcf6c0336ffce4a466dc6f99e0c94ef15f193e"
     }
   ],
   "output": {
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1.md",
-    "sha256": "0839deb18753b95f90b3a723b7be0a72afeaa312f04e77a40062e44b303d37cc",
-    "word_count": 63578
+    "sha256": "34e91f53337f789b45c8704ce245f94dbe7c5c8675a7f7d064e7ca79eae69b13",
+    "word_count": 63677
   },
   "paragraph_ledger": {
     "count": 638,
     "path": "13_BOOKS/manifesto/MANIFESTO_BOOK_1_PARAGRAPH_LEDGER.json",
-    "sha256": "1c55a63abc1c8e47ed424f4ca9756e1afc11b2583238b62492660395dcbdc511"
+    "sha256": "d2d6145a9a9fc46abdc056ca7c9e2491660e731fd68e392131de8689a3a5a4e8"
   },
   "public_disposition": "not_a_public_route",
   "schema": "emergentism/full-book-build/v1"

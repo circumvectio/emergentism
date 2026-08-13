@@ -66,9 +66,40 @@ def strip_frontmatter(text: str) -> str:
     return re.sub(r"\A---\s*\n.*?\n---\s*\n", "", text, count=1, flags=re.S).strip()
 
 
+def projection_owner_schema_errors(path: Path, card: dict[str, Any]) -> list[str]:
+    """Return ownership-contract errors before a projection can dereference a card.
+
+    The full-book assembler intentionally consumes the cards as a projection
+    input rather than recompiling their complete corpus contract.  It still
+    must not turn an incomplete or legacy ownership declaration into a
+    ``KeyError`` or silently choose an owner.  The canonical claim-card
+    compiler remains responsible for the wider source, locator, and registry
+    checks.
+    """
+    card_id = card.get("card_id", "<unknown>")
+    prefix = f"{path.relative_to(ROOT)}:{card_id}"
+    if "owner_ids" in card:
+        return [
+            f"{prefix}: legacy owner_ids cannot enter a projection; declare "
+            "semantic_owner_id and supporting_owner_ids"
+        ]
+    semantic_owner = card.get("semantic_owner_id")
+    if not isinstance(semantic_owner, str) or not semantic_owner:
+        return [f"{prefix}: missing semantic_owner_id"]
+    supporting_owners = card.get("supporting_owner_ids")
+    if not isinstance(supporting_owners, list) or any(
+        not isinstance(owner, str) or not owner for owner in supporting_owners
+    ):
+        return [f"{prefix}: supporting_owner_ids must be a list of non-empty strings"]
+    if semantic_owner in supporting_owners or len(set(supporting_owners)) != len(supporting_owners):
+        return [f"{prefix}: supporting_owner_ids must be unique and exclude semantic_owner_id"]
+    return []
+
+
 def load_cards() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     cards: dict[str, dict[str, Any]] = {}
     sets: list[dict[str, Any]] = []
+    ownership_errors: list[str] = []
     for path in sorted(CARD_DIR.glob("*.yaml")):
         payload = read_json(path)
         work_id = payload.get("work_id")
@@ -82,13 +113,22 @@ def load_cards() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
             "path": path.relative_to(ROOT).as_posix(),
             "source": source,
         })
-        for card in payload.get("cards", []):
+        raw_cards = payload.get("cards")
+        if not isinstance(raw_cards, list):
+            raise ContractError(f"claim-card set cards must be a list: {path.relative_to(ROOT)}")
+        for card in raw_cards:
             if not isinstance(card, dict) or not isinstance(card.get("card_id"), str):
                 raise ContractError(f"invalid card in {path.relative_to(ROOT)}")
             card_id = card["card_id"]
             if card_id in cards:
                 raise ContractError(f"duplicate card id: {card_id}")
+            ownership_errors.extend(projection_owner_schema_errors(path, card))
             cards[card_id] = {**card, "_work_id": work_id, "_card_set": path.relative_to(ROOT).as_posix(), "_source": source}
+    if ownership_errors:
+        raise ContractError(
+            "claim-card ownership contract invalid:\n"
+            + "\n".join(f"- {error}" for error in ownership_errors)
+        )
     return cards, sets
 
 

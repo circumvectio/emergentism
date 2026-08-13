@@ -74,7 +74,11 @@
       ],
       "release_state": "source_active_current_public_reader",
       "public_route": "../12_PUBLIC_SITE/book/index.html",
-      "build_provenance": "12_PUBLIC_SITE/build_book.py; exactly one claim-card-covered source; lifecycle and graph coverage fail closed"
+      "build_provenance": {
+        "type": "manual",
+        "description": "12_PUBLIC_SITE/build_book.py; exactly one claim-card-covered source; lifecycle and graph coverage fail closed",
+        "verification": "Public semantic-parity and predeploy gates."
+      }
     },
     {
       "work_id": "BK-FINITY-PRACTICE",
@@ -108,7 +112,7 @@
       "title": "The Self-Eating Serpent",
       "edition": "critical-edition-1-staged",
       "historical_sources": [
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md"
+        "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/03_BOOK_III_THE_SELF_EATING_SERPENT/DISSEMINATION/THE_SELF_EATING_SERPENT_EDITION_1.md"
       ],
       "chapter_order": [
         "review",
@@ -197,23 +201,6 @@
         "repair-exit-and-residue"
       ],
       "owner_ids": [
-        "K-5"
-      ],
-      "claim_card_ids": [
-        "DHY01-01",
-        "DHY01-02",
-        "DHY01-03",
-        "DHY01-04",
-        "DHY01-05"
-      ],
-      "chapter_order": [
-        "justice-first",
-        "two-horizon",
-        "nonviolent-resistance",
-        "institutional-defence",
-        "repair-exit-and-residue"
-      ],
-      "owner_ids": [
         "K-3",
         "K-4",
         "K-5"
@@ -273,39 +260,15 @@
       "edition": "ported-provenance-2026-07-31-withheld-2026-08-01",
       "historical_sources": [
         {
-          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
+          "path": "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/07_DEFINITIVE_ONE_BOOK/00_THE_INFINITE_BOOK_OF_EMERGENCE.md",
           "lifecycle": "frozen",
           "reviewed_source_sha256": "081fb55303f07409713c086bbb73bd3d2025eebf14713c54a6629483b91aa3a9"
         },
         {
-          "path": "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
+          "path": "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/09_BOOK_PRODUCTION_ARCHIVE/05_SYNTHESIS/07_DEFINITIVE_ONE_BOOK/07_PUBLIC_EDITION/THE_RECIPROCAL_PUBLIC_EDITION_K2_LANG_DECOMM_2026_07_22.md",
           "lifecycle": "frozen",
           "reviewed_source_sha256": "86b59d4f3e4ad8ec64e85fb1b075ac986953b3c28339eda1046459789696a1f9"
         }
-      ],
-      "chapter_order": [
-        "diagnosis-without-villain",
-        "formal-boundaries",
-        "translation-without-proof",
-        "collective-traces",
-        "institutional-firewall",
-        "immune-protocol",
-        "seed-and-record"
-      ],
-      "owner_ids": [
-        "K-1",
-        "K-4",
-        "K-5",
-        "K-7"
-      ],
-      "claim_card_ids": [
-        "RIP01-01",
-        "RIP01-02",
-        "RIP01-03",
-        "RIP01-04",
-        "RIP01-05",
-        "RIP01-06",
-        "RIP01-07"
       ],
       "chapter_order": [
         "diagnosis-without-villain",
@@ -334,7 +297,11 @@
       ],
       "release_state": "withheld_staged_provenance_not_current_not_rag",
       "public_route": null,
-      "build_provenance": "source files preserved at 13_BOOKS/the_reciprocal/; excluded from 12_PUBLIC_SITE/book and current RAG pending claim-by-claim re-adjudication",
+      "build_provenance": {
+        "type": "projection_artifact",
+        "path": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
+        "sha256": "3b3612ceb879564f4f3dad4a01ad125ecfa0bbdeb4c60a2d0456d584f014cad6"
+      },
       "staged_critical_edition": "reciprocal_infinite_play/CRITICAL_EDITION_1.md",
       "ported_chapters_dir": "the_reciprocal/",
       "publication_eligible": false,
@@ -346,7 +313,11 @@
       "title": "Sarpasya Vijayam",
       "edition": "critical-edition-1-staged",
       "historical_sources": [
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md"
+        {
+          "path": "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/01_BOOK_I_SARPASYA_VIJAYAM/DISSEMINATION/SARPASYA_VIJAYAM_EDITION_1.md",
+          "lifecycle": "frozen",
+          "reviewed_source_sha256": "aa59ccbda3ca3f615f71aaf11141e45b9b10588f8454295e6445742d18199436"
+        }
       ],
       "chapter_order": [
         "diagnosis-with-rivals",
@@ -386,7 +357,7 @@
       "title": "Six-Fold Revelation / Six Lenses",
       "edition": "critical-edition-1-staged",
       "historical_sources": [
-        "../../02_SKYZAI/03_AIA/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
+        "../../02_SKYZAI/01_LEVELS/L5_REFLECTION/03_AIA/01_ARCHITECTURE_ENGINE/EMERGENTISM_AIA/08_PRIOR_BOOKS/02_BOOK_II_THE_SIX_LENSES/DISSEMINATION/THE_SIX_LENSES_EDITION_1.md"
       ],
       "chapter_order": [
         "preface",
