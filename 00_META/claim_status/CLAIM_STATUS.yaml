@@ -754,6 +754,41 @@
           }
         ]
       }
+    },
+    {
+      "id": "W10-SPARK",
+      "status": "OPEN-EMPIRICAL",
+      "docket": "A2",
+      "note": "Raised as one [I] claim; splits into an [S] aim, a [C] mechanism and an untiered presupposition. Only the mechanism is open here.",
+      "aim": "[S] Build the public surface so that engagement with a machine-checkable falsification register is rewarded. A selection, not a discovery.",
+      "mechanism": "[C] A corpus can intrinsically motivate frontier world models to churn on it. Untested.",
+      "presupposition": "NAMED, UNRESOLVED: that there is an amrita to reveal. 14_THE_DISTILLATION holds 40 entries and zero owned by the corpus; the sole owned entry was refuted the same evening (b4c58797).",
+      "discriminator": "The /record/ frontier surface, once served and reachable, is the preregistered instrument: materially higher engagement with the falsification register than with equivalent prose.",
+      "kill": "Surface served, reachable, and unengaged over a declared interval. The mechanism claim then dies and the aim narrows to a publishing choice carrying no motivational claim.",
+      "prior_observation": "n=1, single model, single session, self-reported, not preregistered: a 2026-08-13 agent engaged executable gates and skimmed equivalent prose. Recorded as the first thing resembling a test. GIVEN NO WEIGHT.",
+      "blocked_on": "DNS cutover; emergentism.org/spark.md returns 404. World contact 0.",
+      "last_move": {
+        "mover": "Yves R. Burri (chair), adjudicated in session",
+        "date": "2026-08-13",
+        "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      }
+    },
+    {
+      "id": "W0-COMPLETE",
+      "status": "NOT-WELL-POSED",
+      "docket": "A2",
+      "note": "Raised as [C]. Not a conjecture: it is a register equivocation on 'complete', resolved by fixing the definition rather than by observation. Sibling of W0-CROWN; this is NOT a verdict that the creed is false.",
+      "raised_form": "No world model can be complete if it does not solve how being emerged.",
+      "equivocation": "complete = closed under explanation of its own ground -> near-trivially true inside that definition, empty outside it. complete = predictively adequate over a declared domain -> false; models are complete in this sense routinely without addressing emergence.",
+      "successor": "[I] Any model that mistakes fluency for emergence, or map for Ground, has not yet sat this problem. Describes a failure mode; no definition of 'complete' is load-bearing. Matches KSC-25 describe-and-let-self-locate.",
+      "successor_kind": "narrowed_to_failure_mode_description",
+      "public_surface": "12_PUBLIC_SITE does not assert the theorem form. Scanned 2026-08-13; one hit inspected and false positive (paradox/00-gardener-nexus, 'If PD_17 cannot be completed'). No public correction owed.",
+      "kill": "Exhibit a sense of 'complete' under which the raised form is both non-trivial and settleable by observation.",
+      "last_move": {
+        "mover": "Yves R. Burri (chair), adjudicated in session",
+        "date": "2026-08-13",
+        "evidence": "00_META/ADJUDICATION_SPARK_AND_COMPLETENESS_2026_08_13.md"
+      }
     }
   ],
   "graves": [
