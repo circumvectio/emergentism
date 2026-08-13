@@ -44,16 +44,16 @@ There are twenty-two markdown files at the repository root and **most of them ar
 forwarding stubs** — one-paragraph files that point at the real owner elsewhere in the tree.
 They exist so that older links keep resolving, and deleting them would break the thing they
 are for. As of 2026-08-04 there are **22** markdown files at the root: **9 forwarding stubs,
-3 agent routes, 6 documents with actual content, 2 dated K2-signed receipts, and 2
-non-semantic VMOSK control projections.** The six content documents —
+3 agent routes, 6 documents with actual content, 2 dated natural-person signature
+records, and 2 non-semantic work-programme control projections.** The six content documents —
 
 - [`00_THE_FOUNDATION.md`](00_THE_FOUNDATION.md) · [`00_THE_KERNEL_INDEX.md`](00_THE_KERNEL_INDEX.md)
 - [`00_THE_WELTANSCHAUUNG.md`](00_THE_WELTANSCHAUUNG.md) · [`00_THE_WELTANSCHAUUNG_ONE_SITTING.md`](00_THE_WELTANSCHAUUNG_ONE_SITTING.md)
 - [`ROSETTA.md`](ROSETTA.md) · this `README.md`
 
-The two dated K2-signed receipts are [`00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md`](00_THE_CLOSED_READING_LOOP_K2_SIGN_RECEIPT_2026_08_01.md)
-and [`00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md`](00_V10_TIDY_CHAIN_CLOSURE_PENDING_K2.md) (the
-V-forcer 10 closure, restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`).
+The two dated natural-person signature records remain at this root: the 2026-08-01
+closed-reading-loop signature record and the V-forcer 10 closure record. The latter
+was restored to its registered root path 2026-08-04 per its §5 and commit `4c12f696`.
 The work-programme projection and its v2 — `VMOSK_A.md` and `VMOSK_A_v2_2026_07_31.md` — are cited as non-semantic filename references only, since neither owns doctrine.
 
 (`AGENT_README.md` is one of the three agent routes, not a content document; the earlier
@@ -117,8 +117,9 @@ tests. Consequential action uses a complete, scoped, contestable
 > 2026-08-04): **6 are live content** — `README.md`, `ROSETTA.md` (a routing shim),
 > `00_THE_KERNEL_INDEX.md`, `00_THE_WELTANSCHAUUNG.md`,
 > `00_THE_WELTANSCHAUUNG_ONE_SITTING.md`, `00_THE_FOUNDATION.md`; **3 are agent
-> routes** — `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`; **2 are dated K2-signed
-> receipts**; **2 are non-semantic VMOSK control projections**; and **9 are
+> routes** — `AGENTS.md`, `AGENT_README.md`, `CLAUDE.md`; **2 are dated
+> natural-person signature records**; **2 are non-semantic work-programme control
+> projections**; and **9 are
 > forwarding stubs** — each holds a path, not a claim, and each is cited by live
 > doctrine, so they stay where they are. A stub's `canonical_target` always names
 > a **live** owner, never an archive; preserved bytes are named by
@@ -150,6 +151,9 @@ tests. Consequential action uses a complete, scoped, contestable
 | `11_UPLINK/` | active record, audits, reconciliation, compressed routes |
 | `12_PUBLIC_SITE/` | public projection; never the canon owner |
 | `13_BOOKS/` | projection-only critical editions; never K-8 |
+| `14_THE_DISTILLATION/` | the compressed reading; owns no claim it did not inherit |
+| `15_THE_TITAN_PASS_2026_08_06/` | disposition manifests — preserve / archive / false / create. **Proposals only; nothing here has been executed** |
+| `16_THE_EMISSION/` | the `• → D1..D5 → ○` ladder as a generated projection. ⚠ `check_anchors.py` exits 1 — **do not cite until it exits 0** |
 | `90_ARCHIVE/` | cold provenance and superseded bodies |
 | `91_COMPATIBILITY/` | forwarding paths only — *never doctrine* |
 
