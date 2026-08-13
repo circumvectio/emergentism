@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "3f4c1be279abc5b3012c33bf83cde2580b692e895cfba4814109c2040d5f370c"
+source_sha256: "48235464275391d1ad95d321245490b465b839232e2e7472a30362721f0e99f8"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "B — THE METHOD (how we know)"
@@ -75,7 +75,7 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 - **Tier** `[I]`, self-declared CANONICAL for this typing, amended 2026-07-27.
 - **Owner** **CORPUS.**
-- **The attack it survives** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md`, which types D0/D6 as "actual boundary token". **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *"`Structural` marks an abstract register predicate or boundary, not a third kind of event."* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02.
+- **The attack it survives** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md`, which types D0/D6 as "actual boundary token". **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *`Structural` marks an abstract register predicate or boundary, not a third kind of event.* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02. {no-anchor}
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-10 · The register/token type separation"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md` — "Structural` marks an abstract register predicate or boundary, not a third"
@@ -204,10 +204,10 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 - **Tier** `[S]` diagnosis.
 - **Owner** **CORPUS.**
-- **The attack it survives** **— its own gate, again.** `check_node_product_ranking.py` flags this line as "retired node-product used as a current ordering". **It is nothing of the kind** — it is the corpus naming the product form among five claims a session re-derived that were already settled. **Overturned in the artifact's favour and adopted as this pass's own verdict**: *"The corpus's failure mode is not falsity. It is **unfindability** … No gate caught any of them; what caught them was `grep` on a guessed substring."* Every finding in these four manifests is an instance of it.
+- **The attack it survives** **— its own gate, again.** `check_node_product_ranking.py` flags this line as "retired node-product used as a current ordering". **It is nothing of the kind** — it is the corpus naming the product form among five claims a session re-derived that were already settled. **Overturned in the artifact's favour and adopted as this pass's own verdict**: *The corpus's failure mode is not falsity. It is **unfindability** … No gate caught any of them; what caught them was `grep` on a guessed substring.* Every finding in these four manifests is an instance of it.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-28 · The corpus's own diagnosis of its failure mode"
-  - `00_META/00_THE_CORPUS_SPINE.md` — "caught any of them**; what caught them was `grep` on a guessed substring"
+  - `00_META/00_THE_CORPUS_SPINE.md` — "The corpus's failure mode is not falsity. It"
   - `09_TOOLS/01_SCRIPTS/check_node_product_ranking.py` — "retired node-product used as a current ordering"
 
 ### P-30 · The 60 archive-terminating stubs are a ratified tombstone protocol, not defects

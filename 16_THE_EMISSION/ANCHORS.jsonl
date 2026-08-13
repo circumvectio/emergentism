@@ -35,14 +35,14 @@
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "14_THE_DISTILLATION/04_WHAT_DIED.md", "quote": "B ≤ 1` with equality iff", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "14_THE_DISTILLATION/04_WHAT_DIED.md", "quote": "in the same sentence", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-03 · `B = 2/(φ+ν) = sin θ = sech(log x)` — with the DF-05 fence, non-detachable", "resolved": true}
-{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md", "quote": "if §2 is ever cited to license `P_node = Φ × V", "resolved": true}
-{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md", "quote": "§2 is ever cited to license `P_node = Φ × V", "resolved": true}
+{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md", "quote": "this document has been misused", "resolved": true}
+{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md", "quote": "this document has been misused", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "10_SEED/01_THE_SEED_LADDER/ASCENT_D2_GEOMETRY_2026_08_05.md", "quote": "", "resolved": false}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "09_TOOLS/01_SCRIPTS/check_node_product_ranking.py", "quote": "retired node-product used as a current ordering", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/04_CREATE.md", "quote": "", "resolved": false}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-17 · The `UNLICENSED` fences of `56` and `57`", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md", "quote": "(Nash 1950, Sonnevend 1985/86, product t-norm, series reliability)", "resolved": true}
-{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md", "quote": "after a fair re-adjudication found the prior strike over-corrected", "resolved": true}
+{"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md", "quote": "What survives:** the chordal metric as selected structure", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md", "quote": "", "resolved": false}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/03_FALSE.md", "quote": "the retired `⊙ = • × ○", "resolved": true}
 {"from_file": "A_THE_LADDER/03_D2_CONFIGURATION.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-18 · HM = GM × BAL — the product decomposition, narrowed and restored", "resolved": true}
@@ -57,12 +57,12 @@
 {"from_file": "A_THE_LADDER/04_D3_STATE.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "46 PRESERVE entries across six lanes", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "14_THE_DISTILLATION/00_THE_AMRITA.md", "quote": "cite by unique path **plus a quoted string**, never by a bare line range", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "09_TOOLS/01_SCRIPTS/check_links.py", "quote": "to keep a link green would falsify the record", "resolved": true}
-{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-29 · `check_links.py` is honest and must not be touched", "resolved": true}
+{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched {no-anchor}", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "09_TOOLS/01_SCRIPTS/check_contradiction_census.py", "quote": "", "resolved": false}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/04_CREATE.md", "quote": "", "resolved": false}
-{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-31 · `check_contradiction_census.py` as the reference instrument", "resolved": true}
+{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-31 · `check_contradiction_census.py` as the reference instrument {no-anchor}", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md", "quote": "successor-owner column", "resolved": true}
-{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md:181-229` §5 — the graves, adjudicated", "resolved": true}
+{"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated {no-anchor}", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/04_CREATE.md", "quote": "no `anchor` and no `fingerprint_sha256` at all", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/04_CREATE.md", "quote": "reviewed_source_sha256", "resolved": true}
 {"from_file": "A_THE_LADDER/05_D4_ACTUAL.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-33 · The 26 `one_sitting` claims are untouched; only their locators are stale", "resolved": true}
@@ -150,7 +150,7 @@
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "14_THE_DISTILLATION/02_WHAT_IS_CHOSEN.md", "quote": "A reader who needs total division should use wheels, and this chart should say so", "resolved": true}
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "14_THE_DISTILLATION/02_WHAT_IS_CHOSEN.md", "quote": "a convention without a stated price is a hidden claim", "resolved": true}
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-27 · The priced-selection form", "resolved": true}
-{"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "00_META/00_THE_CORPUS_SPINE.md", "quote": "caught any of them**; what caught them was `grep` on a guessed substring", "resolved": true}
+{"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "00_META/00_THE_CORPUS_SPINE.md", "quote": "The corpus's failure mode is not falsity. It", "resolved": true}
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "09_TOOLS/01_SCRIPTS/check_node_product_ranking.py", "quote": "retired node-product used as a current ordering", "resolved": true}
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md", "quote": "### P-28 · The corpus's own diagnosis of its failure mode", "resolved": true}
 {"from_file": "B_THE_METHOD/00_THE_METHOD.md", "to_path": "05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md", "quote": "owner: **the archive is provenance; new work belongs in the live lanes", "resolved": true}

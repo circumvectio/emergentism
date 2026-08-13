@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "3f4c1be279abc5b3012c33bf83cde2580b692e895cfba4814109c2040d5f370c"
+source_sha256: "48235464275391d1ad95d321245490b465b839232e2e7472a30362721f0e99f8"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "A — THE LADDER (what is)"
@@ -72,11 +72,11 @@ hung on those identities dies**, and in each case the corpus killed it first.
 
 - **Tier** `[A]`/`[I]` fence with a self-declared misuse condition.
 - **Owner** **CORPUS.**
-- **The attack it survives** **— its own gate.** `check_node_product_ranking.py` fires on all six lines as "retired node-product used as a current ordering" — **VERIFIED (L4)**. These documents say ***UNLICENSED*** and *"if §2 is ever cited to license `P_node = Φ × V` … this document has been misused."* **Overturned in the artifacts' favour.** Repair the gate (`04_CREATE.md` C-02), not the fence.
+- **The attack it survives** **— its own gate.** `check_node_product_ranking.py` fires on all six lines as "retired node-product used as a current ordering" — **VERIFIED (L4)**. These documents say ***UNLICENSED*** and *if §2 is ever cited to license `P_node = Φ × V` … this document has been misused.* **Overturned in the artifacts' favour.** Repair the gate (`04_CREATE.md` C-02), not the fence.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-17 · The `UNLICENSED` fences of `56` and `57`"
-  - `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` — "if §2 is ever cited to license `P_node = Φ × V"
-  - `05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md` — "§2 is ever cited to license `P_node = Φ × V"
+  - `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` — "this document has been misused"
+  - `05_COSMOLOGY/03_FORMAL_SYSTEM/57_THE_POTENTIAL_READING.md` — "this document has been misused"
   - `09_TOOLS/01_SCRIPTS/check_node_product_ranking.py` — "retired node-product used as a current ordering"
 - ⚠️ **Citations dropped as unverifiable — 2** (the manifest names these files; no string it quotes could be located in them, so no anchor was written rather than an unverified one): `10_SEED/01_THE_SEED_LADDER/ASCENT_D2_GEOMETRY_2026_08_05.md`, `15_THE_TITAN_PASS_2026_08_06/04_CREATE.md`
 
@@ -89,7 +89,7 @@ hung on those identities dies**, and in each case the corpus killed it first.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-18 · HM = GM × BAL — the product decomposition, narrowed and restored"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` — "(Nash 1950, Sonnevend 1985/86, product t-norm, series reliability)"
-  - `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` — "after a fair re-adjudication found the prior strike over-corrected"
+  - `05_COSMOLOGY/03_FORMAL_SYSTEM/56_THE_PRODUCT_FORM_OF_THE_BALANCE.md` — "What survives:** the chordal metric as selected structure"
   - `15_THE_TITAN_PASS_2026_08_06/03_FALSE.md` — "the retired `⊙ = • × ○"
 - ⚠️ **Citations dropped as unverifiable — 1** (the manifest names these files; no string it quotes could be located in them, so no anchor was written rather than an unverified one): `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/50_FINITY_L_THE_HELD_POSITION.md`
 

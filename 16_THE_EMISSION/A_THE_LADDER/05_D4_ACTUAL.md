@@ -5,7 +5,7 @@ spine_law: "path + exact quoted string. No line numbers. Anywhere."
 status: "GENERATED — do not hand-edit. Change 01_PRESERVE.md or emit.py and re-run."
 generated_by: "16_THE_EMISSION/emit.py"
 source: "15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md"
-source_sha256: "3f4c1be279abc5b3012c33bf83cde2580b692e895cfba4814109c2040d5f370c"
+source_sha256: "48235464275391d1ad95d321245490b465b839232e2e7472a30362721f0e99f8"
 source_date: 2026-08-06
 frozen_tree: "01_EMERGENTISM is provenance and graveyard. Cited, never touched."
 spine: "A — THE LADDER (what is)"
@@ -61,34 +61,35 @@ killed for unreachability over a directory rename (P-34).
 
 ## The entries — 5
 
-### P-29 · `check_links.py` is honest and must not be touched
+### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched {no-anchor}
 
 - **Finding** 148 dead links found; **all 148 fall inside this gate's declared `SKIP_DIRS`**, and the exclusion is stated in-code with a correct reason: a dated receipt records where a file *was*, and rewriting it to keep a link green would falsify the record. **The BASELINE of 0 is a real zero** — the comment explains that a 64-item baseline was rejected because it would hide the 65th. In-scope link health: **1 broken of 3586**. **VERIFIED (L3).**
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
-  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-29 · `check_links.py` is honest and must not be touched"
+  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched {no-anchor}"
   - `09_TOOLS/01_SCRIPTS/check_links.py` — "to keep a link green would falsify the record"
 - ⚠️ **Station tension** — no named attack — this entry carries a **Finding**, verified, in place of an *attack survived*; see the station note on how the survival test changes shape
 
-### P-31 · `check_contradiction_census.py` as the reference instrument
+### P-31 · `check_contradiction_census.py` as the reference instrument {no-anchor}
 
 - **Finding** It returns **FAIL (exit 1, live=115)** while simultaneously reporting **html-doctrinal = 0** — it refuses to launder its own bad news *and* refuses to count a correction as a violation. **VERIFIED (L4).** Three sibling gates do neither. Preserve, **wire it** (`04_CREATE.md` C-01), **and extend its META filter to markdown** — until it does, its `live=115` headline is uninterpretable and **may not be quoted as a doctrine measure** (`04_CREATE.md` C-02).
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
-  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-31 · `check_contradiction_census.py` as the reference instrument"
+  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-31 · `check_contradiction_census.py` as the reference instrument {no-anchor}"
 - ⚠️ **Citations dropped as unverifiable — 2** (the manifest names these files; no string it quotes could be located in them, so no anchor was written rather than an unverified one): `09_TOOLS/01_SCRIPTS/check_contradiction_census.py`, `15_THE_TITAN_PASS_2026_08_06/04_CREATE.md`
 - ⚠️ **Station tension** — no named attack — this entry carries a **Finding**, verified, in place of an *attack survived*; see the station note on how the survival test changes shape
 
-### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated
+### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated {no-anchor}
 
-- **Finding** **The answer to the dead-forms question is not "rebuild."** §5 carries all twenty-two dead forms live, with something the archived catalogue never had: a **per-row successor-owner column**. DF-01 → "NARROWED, candidate translation grammar GP-11"; DF-05 → "none — closed, FV-01 is the surviving use". **The successor is better than the original.** Hold it; archive the two catalogue stubs into it (`02_ARCHIVE.md` A-09/A-10). **VERIFIED (Śiva).**
+- **Finding** **The answer to the dead-forms question is not **rebuild**.** §5 carries all twenty-two dead forms live, with something the archived catalogue never had: a **per-row successor-owner column**. DF-01 → "candidate translation grammar, GP-11"; DF-05 → "is the surviving use". **The successor is better than the original.** Hold it. **VERIFIED (Śiva).**
+- **Disposition** Archive the two catalogue stubs into it — `02_ARCHIVE.md` A-09/A-10. {no-anchor}
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
-  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md:181-229` §5 — the graves, adjudicated"
+  - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated {no-anchor}"
   - `15_THE_TITAN_PASS_2026_08_06/02_ARCHIVE.md` — "successor-owner column"
 - ⚠️ **Station tension** — no named attack — this entry carries a **Finding**, verified, in place of an *attack survived*; see the station note on how the survival test changes shape
 
 ### P-33 · The 26 `one_sitting` claims are untouched; only their locators are stale
 
 - **Finding** Drift is a near-constant downward shift consistent with content inserted above them — declared 172 → actual 290; 177 → 295; 312 → 429; 471 → 588, offsets clustering at **+117/+118**. The source grew, the cards did not follow. **Repair is mechanical**: re-derive `line_start`/`line_end` and recompute each fingerprint. **VERIFIED (L3).**
-- **Owner boundary** Re-derivation is mechanical; **re-affirming `reviewed_source_sha256` afterward is a claim-custody act and a chair act** — and re-stamping it *without* re-deriving locators is the ritual `04_CREATE.md` C-09 orders abandoned.
+- **Owner boundary** Re-derivation is mechanical; **re-affirming `reviewed_source_sha256` afterward is a claim-custody act and a chair act** — and re-stamping it *without* re-deriving locators is the ritual `04_CREATE.md` C-09 orders abandoned. {no-anchor}
 - **Separately** : five cards (OS01-04/05/08/09/23) carry **no `anchor` and no `fingerprint_sha256` at all** — schema-required fields. They were never anchored, so no gate can ever detect their drift. Authoring the anchors is authoring; the text must be chosen by whoever owns the claim.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-33 · The 26 `one_sitting` claims are untouched; only their locators are stale"

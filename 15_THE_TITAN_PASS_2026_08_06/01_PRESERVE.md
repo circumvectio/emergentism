@@ -28,7 +28,8 @@ the claim.** That is why they survive.
 - **Locator** `05_COSMOLOGY/03_FORMAL_SYSTEM/55_G2_PRIOR_ART_ADJUDICATION.md:15-26,101-124,150-154,212`; `52_THE_GENERATIVE_BASE.md:142`.
 - **Tier** `[A]` inherited-with-citation (was `[C]`).
 - **Owner** **INHERITED** — Hardy & Wright Ch. X; Khinchin §I.2; Perron; Euclid underneath.
-- **Attacks survived** *(1)* "You never verified the theorem number." The document says it first, twice, at `:107-109` and `:246`; the proof at `:117-122` is self-contained and does not depend on the numbering. *(2)* "You cite prior art to claim credit." `:150-154` forfeits the novelty explicitly — F1 remains **OPEN** and G2 "must not be cited as passing it"; `:212` reads "Nothing here is `[I]` and nothing here is owned." *(3)* "The machine check is stale." **VERIFIED (L4)**: `check_g2_normal_form.py` exits 0 today, 10 945 reduced words to length 18, exact rationals, 0 collisions, 6 mutants each tripping its checks.
+- **Attacks survived** *(1)* "You never verified the theorem number." The document says it first, twice, at `:107-109` and `:246`; the proof at `:117-122` is self-contained and does not depend on the numbering. *(2)* "You cite prior art to claim credit." `:150-154` forfeits the novelty explicitly — F1 remains **OPEN** and G2 "must not be cited as passing it"; `:212` reads "Nothing here is `[I]` and nothing here is owned." *(3)* "The machine check is stale."
+- **Machine check** **VERIFIED (L4)**: `check_g2_normal_form.py` {no-anchor} exits 0 today, 10 945 reduced words to length 18, exact rationals, 0 collisions, 6 mutants each tripping its checks.
 - **This is the model for the whole pass.** It proved its own open conjecture and destroyed its own novelty claim in the same document, before anyone else could.
 
 ### P-02 · Absorption — `V ∪ {x} = V`
@@ -87,7 +88,7 @@ the claim.** That is why they survive.
 - **Locator** `34_D4_D5_CANONICAL_REFERENCE.md:33,37-38,44-46`. **VERIFIED (L4)**.
 - **Tier** `[I]`, self-declared CANONICAL for this typing, amended 2026-07-27.
 - **Owner** **CORPUS.**
-- **Attack survived** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md:42`, which types D0/D6 as "actual boundary token." **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *"`Structural` marks an abstract register predicate or boundary, not a third kind of event."* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02.
+- **Attack survived** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md:42`, which types D0/D6 as "actual boundary token." **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *`Structural` marks an abstract register predicate or boundary, not a third kind of event.* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02. {no-anchor}
 
 ### P-11 · The three modes of counting, and "a mark is never an operand"
 - **Locator** `49_THE_THREE_MODES_OF_COUNTING.md:40-54`; `00_THE_TRANSCENDENTAL_TRINITY_CANON.md:36-38`; `02_EPISTEMOLOGY/01_EVIDENCE_TIERS/THE_BOUNDARY_RULES_STANDALONE.md:170`.
@@ -129,7 +130,7 @@ the claim.** That is why they survive.
 - **Locator** `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:177,194,203`; `57_THE_POTENTIAL_READING.md:308`; mirrored at `ASCENT_D2_GEOMETRY_2026_08_05.md:185,193`.
 - **Tier** `[A]`/`[I]` fence with a self-declared misuse condition.
 - **Owner** **CORPUS.**
-- **Attack survived — its own gate.** `check_node_product_ranking.py` fires on all six lines as "retired node-product used as a current ordering" — **VERIFIED (L4)**. These documents say ***UNLICENSED*** and *"if §2 is ever cited to license `P_node = Φ × V` … this document has been misused."* **Overturned in the artifacts' favour.** Repair the gate (`04_CREATE.md` C-02), not the fence.
+- **Attack survived — its own gate.** `check_node_product_ranking.py` fires on all six lines as "retired node-product used as a current ordering" — **VERIFIED (L4)**. These documents say ***UNLICENSED*** and *if §2 is ever cited to license `P_node = Φ × V` … this document has been misused.* **Overturned in the artifacts' favour.** Repair the gate (`04_CREATE.md` C-02), not the fence.
 
 ### P-18 · HM = GM × BAL — the product decomposition, narrowed and restored
 - **Locator** `56_THE_PRODUCT_FORM_OF_THE_BALANCE.md:11,86,93`; `50_FINITY_L_THE_HELD_POSITION.md:108-110,129-134`.
@@ -199,7 +200,7 @@ the claim.** That is why they survive.
 - **Locator** `00_META/00_THE_CORPUS_SPINE.md:27`.
 - **Tier** `[S]` diagnosis.
 - **Owner** **CORPUS.**
-- **Attack survived — its own gate, again.** `check_node_product_ranking.py` flags this line as "retired node-product used as a current ordering." **It is nothing of the kind** — it is the corpus naming the product form among five claims a session re-derived that were already settled. **Overturned in the artifact's favour and adopted as this pass's own verdict**: *"The corpus's failure mode is not falsity. It is **unfindability** … No gate caught any of them; what caught them was `grep` on a guessed substring."* Every finding in these four manifests is an instance of it.
+- **Attack survived — its own gate, again.** `check_node_product_ranking.py` flags this line as "retired node-product used as a current ordering." **It is nothing of the kind** — it is the corpus naming the product form among five claims a session re-derived that were already settled. **Overturned in the artifact's favour and adopted as this pass's own verdict**: *The corpus's failure mode is not falsity. It is **unfindability** … No gate caught any of them; what caught them was `grep` on a guessed substring.* Every finding in these four manifests is an instance of it.
 
 ## D · The instruments and protocols that are honest — counter-findings
 
@@ -219,14 +220,15 @@ are on this manifest so that nothing sweeps them.
 - **Locator** `09_TOOLS/01_SCRIPTS/check_contradiction_census.py`, META filter at `:72-93`, `is_meta_reference` at `:177`.
 - **Finding** It returns **FAIL (exit 1, live=115)** while simultaneously reporting **html-doctrinal = 0** — it refuses to launder its own bad news *and* refuses to count a correction as a violation. **VERIFIED (L4).** Three sibling gates do neither. Preserve, **wire it** (`04_CREATE.md` C-01), **and extend its META filter to markdown** — until it does, its `live=115` headline is uninterpretable and **may not be quoted as a doctrine measure** (`04_CREATE.md` C-02).
 
-### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md:181-229` §5 — the graves, adjudicated
-- **Finding** **The answer to the dead-forms question is not "rebuild."** §5 carries all twenty-two dead forms live, with something the archived catalogue never had: a **per-row successor-owner column**. DF-01 → "NARROWED, candidate translation grammar GP-11"; DF-05 → "none — closed, FV-01 is the surviving use". **The successor is better than the original.** Hold it; archive the two catalogue stubs into it (`02_ARCHIVE.md` A-09/A-10). **VERIFIED (Śiva).**
+### P-32 · `00_META/00_THE_CLAIM_STATUS_REGISTER.md` §5 — the graves, adjudicated {no-anchor}
+- **Finding** **The answer to the dead-forms question is not **rebuild**.** §5 carries all twenty-two dead forms live, with something the archived catalogue never had: a **per-row successor-owner column**. DF-01 → "candidate translation grammar, GP-11"; DF-05 → "is the surviving use". **The successor is better than the original.** Hold it. **VERIFIED (Śiva).**
+- **Disposition** Archive the two catalogue stubs into it — `02_ARCHIVE.md` A-09/A-10. {no-anchor}
 
 ## E · Repair, not falsity — the claim cards
 
 ### P-33 · The 26 `one_sitting` claims are untouched; only their locators are stale
 - **Finding** Drift is a near-constant downward shift consistent with content inserted above them — declared 172 → actual 290; 177 → 295; 312 → 429; 471 → 588, offsets clustering at **+117/+118**. The source grew, the cards did not follow. **Repair is mechanical**: re-derive `line_start`/`line_end` and recompute each fingerprint. **VERIFIED (L3).**
-- **Owner boundary** Re-derivation is mechanical; **re-affirming `reviewed_source_sha256` afterward is a claim-custody act and a chair act** — and re-stamping it *without* re-deriving locators is the ritual `04_CREATE.md` C-09 orders abandoned.
+- **Owner boundary** Re-derivation is mechanical; **re-affirming `reviewed_source_sha256` afterward is a claim-custody act and a chair act** — and re-stamping it *without* re-deriving locators is the ritual `04_CREATE.md` C-09 orders abandoned. {no-anchor}
 - **Separately**: five cards (OS01-04/05/08/09/23) carry **no `anchor` and no `fingerprint_sha256` at all** — schema-required fields. They were never anchored, so no gate can ever detect their drift. Authoring the anchors is authoring; the text must be chosen by whoever owns the claim.
 
 ### P-34 · 20 of the 28 orphaned cards are recoverable by pure path substitution

@@ -255,7 +255,7 @@ here even where the surrounding prose would flatter a stronger reading.
 ### 4 · Kills stated before claims
 **Origin:** `01_EMERGENTISM/CLAUDE.md` — "Keep counterexamples, alternatives,
 predictions, and kill criteria visible." Formalised as the self-correction fence at
-`02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md` — "kill criteria on every axiom"
+`02_EPISTEMOLOGY/00_HOLOBIONT_MEMBRANE_v0.1.md` — "its self-correction fence and points to evidence tiers and kill criteria"
 **Carries over as:** the manifest's admission rule, adopted verbatim —
 `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md`: "An entry that cannot name a hostile
 reader it defeats is not on this list." The attack comes first. A claim that arrives
