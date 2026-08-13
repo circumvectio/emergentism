@@ -41,6 +41,22 @@ For canonical orientation, route upstream through [`00_START_HERE.md`](../../00_
 - Read first: [`MF_63_Mobius_Operators.md`](MF_63_Mobius_Operators.md)
 - Then use the immediate contents of this folder as the local working surface.
 
+## Contents
+
+The 7 derivations this README already counts. Each label is the file's own H1,
+harvested verbatim — several are forwarding stubs whose historical bodies live in
+`90_ARCHIVE/`, and the H1 says so.
+
+| File | Declared H1 |
+|---|---|
+| [`MF_63_Mobius_Operators.md`](MF_63_Mobius_Operators.md) | MF-63 · Möbius operators |
+| [`MF_64_Berry_Phase.md`](MF_64_Berry_Phase.md) | MF_64_Berry_Phase — historical projection forwarding stub |
+| [`MF_65_Curvature_Transition.md`](MF_65_Curvature_Transition.md) | MF_65_Curvature_Transition — historical projection forwarding stub |
+| [`MF_66_Mandelbrot_Consciousness.md`](MF_66_Mandelbrot_Consciousness.md) | MF-66: The Mandelbrot Set as a Product-Candidate Iteration |
+| [`MF_67_Double_Cover_Privacy.md`](MF_67_Double_Cover_Privacy.md) | MF_67_Double_Cover_Privacy — historical projection forwarding stub |
+| [`MF_68_Area_Measure.md`](MF_68_Area_Measure.md) | MF-68 — Corrected Area Measure |
+| [`MF_69_Horned_Torus_Relativity.md`](MF_69_Horned_Torus_Relativity.md) | MF_69_Horned_Torus_Relativity — historical projection forwarding stub |
+
 ## Active vs Archive
 
 Keep active derivations here. If a derivation becomes canonical, mirror it upstream; if not, leave it clearly exploratory.

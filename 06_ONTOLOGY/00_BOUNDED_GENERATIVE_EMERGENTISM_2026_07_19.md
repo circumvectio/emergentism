@@ -14,7 +14,7 @@ status: "[D] STAGED — pure Emergentism; no application supplies warrant"
 evidence_tier: "[A] external mathematics/physics only where stated; [S] method and framework-internal distinctions; [I] ontological reading; [C] plenitude, constructor bridge, and quantum interpretation"
 parents:
   - ../00_WELTANSCHAUUNG_KERNEL_v0.2_EMERGENTISM_ONLY.md
-  - ../00_RUMINATION_ON_DOF_2026_07_19.md
+  - ruminations/00_RUMINATION_ON_DOF_2026_07_19.md
   - 02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md
   - ../08_FRAMEWORK_SUPPORT/03_EVIDENCE/PARADOX_DISSOLUTIONS/PD_12_MEASUREMENT_PROBLEM.md
   - ../11_UPLINK/50_AUDITS_AND_EXECUTIONS/126_WELTANSCHAUUNG_FORMAL_AUDIT_2026_07_13.md

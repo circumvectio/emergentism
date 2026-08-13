@@ -12,7 +12,7 @@ description: "Non-semantic control projection for maintaining, testing, publishi
 timestamp: 2026-07-28T00:00:00Z
 tags: [emergentism, vmosk-a, control-projection, adequacy, public-parity]
 evidence_tier: "[S] selected coordination contract and repository facts; [I/C] worldview ambitions retain source tiers"
-status: "ACTIVE CONTROL PROJECTION — semantic_authority:none; doctrine remains K-1…K-7"
+status: "SUPERSEDED — countersigned by Yves R. Burri, natural person, 2026-07-31 by VMOSK_A_v2_2026_07_31.md; retained per K3 (archive-first, never deleted). semantic_authority:none; doctrine remains K-1…K-7"
 owner: "01_EMERGENTISM control plane"
 semantic_authority: "none"
 doctrine_owners: [K-1, K-2, K-3, K-4, K-5, K-6, K-7]

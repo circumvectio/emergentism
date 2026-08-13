@@ -84,6 +84,25 @@ The machine-readable chapter/card map is
 card and its permitted editorial layer. The assembly scaffold is
 [`MANIFESTO_BOOK_1.md`](MANIFESTO_BOOK_1.md).
 
+### Chapter sources on disk
+
+The prose behind the table above lives in four files. Until now they were named
+only by `FULL_BOOK_1_CONTRACT.json` and by `assemble_manifesto_book.py`, so
+retiring the assembly script would have left ~330 KB of book text unreachable by
+navigation. The scope column is each file's own declared `scope:` or
+`canonical_phrase:`, harvested verbatim.
+
+| File | Declared scope |
+|---|---|
+| [`chapters/PART_I_THE_FINITE_CONDITION.md`](chapters/PART_I_THE_FINITE_CONDITION.md) | *(no `scope:` declared)* — H1 "Part I — The Finite Condition"; `source_boundary:` OS01-01…OS01-26 only |
+| [`chapters/PART_II_AND_III_CURRENT_CORE.md`](chapters/PART_II_AND_III_CURRENT_CORE.md) | Chapters 5–11 only. No candidate, source-only, frozen, historical, or public-release material enters this file. |
+| [`chapters/PART_IV_V_RESEARCH_GENEALOGY.md`](chapters/PART_IV_V_RESEARCH_GENEALOGY.md) | Chapters 12–16 are non-current research or historical apparatus. Chapter 17 is bounded-current exit prose. No frozen claim is regenerated. |
+| [`chapters/APPENDICES_AND_WORKSHEETS.md`](chapters/APPENDICES_AND_WORKSHEETS.md) | *(no `scope:` declared)* — Appendix A the Finity Card, Appendix B a private research comparison; "nothing here is a theorem, an authorization, or a demonstrated improvement over ordinary decision tools" |
+
+All four declare `status: "STAGED PRIVATE MANUSCRIPT … not public"` except
+`APPENDICES_AND_WORKSHEETS.md`, which declares no `status:` line at all. Listing
+them here is a navigation edge only; it promotes nothing and publishes nothing.
+
 ## What stays separate
 
 *The Titans* remains the technical research companion. Its formal programme

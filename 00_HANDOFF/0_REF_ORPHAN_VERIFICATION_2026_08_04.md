@@ -58,6 +58,25 @@ Per additive-only rule on `90_ARCHIVE/`: **chair-gated**; K3 tag required for an
 
 Lane owners verify the 7 candidates on their own clocks. Wave is **closed**: L1 names, owner disposes.
 
+## Addendum 2026-08-13 — an eighth, from the same session as #5 and #6
+
+The wave above caught **two of the three** July-12 audit receipts. The third is
+`12_PUBLIC_SITE/audit_receipts/JULY_12_2026_SESSION_SYNTHESIS.md` (7,384 B), and
+it sits in the same folder as #5 and #6, from the same session.
+
+Measured 2026-08-13 with `/usr/bin/grep -rl` over the live tree: its only
+mentions anywhere are two generated censuses
+(`00_META/registers/CORPUS_INDEX.jsonl`, `00_META/registers/FILE_REGISTER.json`),
+today's two census artifacts in this lane, and one archived 2026-07-19
+disposition CSV. **Zero prose or navigational edges.** Its own header declares
+`**Status:** Canonical. K2-countersigned. Public.` — so a document the corpus
+calls canonical and public is reachable only by listing a directory.
+
+The wave's disposition rule is unchanged and this addendum changes nothing about
+it: **L1 names, owner disposes; nothing is deleted, moved, or re-tiered here.**
+The heading above still reads *7 Named Candidates* on purpose — that was the
+2026-08-04 wave's finding and it is not being rewritten after the fact.
+
 ---
 
 *Verification note by Mavis (L5 Brāhmaṇa) under D0 chair delegation `ba5213c2`, 2026-08-04 13:19 ICT. T14 of `01_EMERGENTISM_TIDY_RECEIPT_2026_08_04.md`; chair ratified 2026-08-04 'i ratify'. L1 Āma held: 7 named, 0 deleted, 0 cooperator mis-tagged.*

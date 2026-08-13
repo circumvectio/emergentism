@@ -4,6 +4,11 @@ status: "STAGED RESEARCH EDITION — six chapters, 100% claim-card coverage; not
 date: 2026-07-28
 evidence_tier: "[D] critical-edition reconstruction; substantive claims inherit source-owner tiers"
 claim_cards: [TIT01-01, TIT01-02, TIT01-03, TIT01-04, TIT01-05, TIT01-06]
+historical_sources:
+  - 05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/43_THE_TITANS_THE_INFINITE_FINITY_AND_INFINITY.md
+  - 05_COSMOLOGY/03_FORMAL_SYSTEM/47_FINITY_BOUNDARY_CALCULUS_SPEC.md
+source_sha256: null
+source_sha256_note: "Withheld deliberately. 13_BOOKS/book-manifest.json declares these two paths for work_id BK-TITANS as bare strings with no reviewed_source_sha256 — unlike BK-DHARMA and BK-RECIPROCAL-INFINITE-PLAY, which do declare one. Hashing the files today would record a review that never happened. The chair owns whether to perform that review."
 ---
 
 # The Titans

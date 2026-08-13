@@ -30,6 +30,47 @@ certificate nor evidence for the Emergentist ontology.
 8. [The Rosetta in Themes](36_THE_ROSETTA_IN_THEMES_2026_08_13.md) — a grouped index over the live packs, and the §0 three-line clarification every ladder surface must carry.
 9. [The Full Rosetta in Themes](37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md) — **generated**: every harvested `L1`–`L7` column (176 across 30 files) under the same eleven themes. Ledger: [`37_THE_FULL_ROSETTA_COLUMNS.jsonl`](37_THE_FULL_ROSETTA_COLUMNS.jsonl). Do not hand-edit; re-run `09_TOOLS/01_SCRIPTS/harvest_rosetta_columns.py` then `build_rosetta_themed_index.py`.
 
+## Ordinal collisions in this folder — a routing index, not a renaming
+
+Nine ordinals in this lane are carried by more than one file: two families of
+work (the `2026_04_25` sweep, the `_v0` Rosetta-Core staging, and the
+`2026_08_03` L3 audits) were numbered independently and now overlap. **Nothing
+here is renamed.** Per the root numbering conventions a rename would break
+inbound references, and `00_*` is a semantic flag rather than an ordinal, so the
+seven `00_` files are not a collision. This table exists so a reader who types an
+ordinal knows which file they mean. Each label is the file's own H1, harvested
+verbatim.
+
+| # | File | Declared H1 |
+|---|---|---|
+| 05 | [`05_L3_AUDIT_HOLOBIONT_REGISTER_CORRECTION_2026_08_03.md`](05_L3_AUDIT_HOLOBIONT_REGISTER_CORRECTION_2026_08_03.md) | L3 Audit — Holobiont register correction |
+| 05 | [`05_NON_WEIRD_SWEEP_2026_04_25.md`](05_NON_WEIRD_SWEEP_2026_04_25.md) | Non-WEIRD Sweep — Daoist 內丹 / Buddhist 10 Bhūmis / Sub-Saharan / Polynesian |
+| 06 | [`06_L3_AUDIT_VIRTUE_VICE_BIOLOGY_ETHICS_2026_08_03.md`](06_L3_AUDIT_VIRTUE_VICE_BIOLOGY_ETHICS_2026_08_03.md) | L3 Audit — Virtue · Vice · Biology · Ethics synthesis |
+| 07 | [`07_L3_AUDIT_MAGNUM_OPUS_OPERATIONAL_VS_EMERGENTISM_2026_08_03.md`](07_L3_AUDIT_MAGNUM_OPUS_OPERATIONAL_VS_EMERGENTISM_2026_08_03.md) | L3 Audit — Magnum Opus operational layer × Emergentism registers |
+| 07 | [`07_L3_AUDIT_OPERATIONAL_OVERCLAIMS_2026_08_03.md`](07_L3_AUDIT_OPERATIONAL_OVERCLAIMS_2026_08_03.md) | L3 Audit — operational layer vs doctrine registers |
+| 07 | [`07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md`](07_MIRROR_SYMMETRY_FALSIFICATION_TEST_2026_04_25.md) | Mirror Symmetry as a Falsification Engine — Per-Column Test |
+| 08 | [`08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md`](08_L3_AUDIT_HOLOBIONT_EKTROPIC_ALIGNMENT_2026_08_03.md) | L3 Audit — holobiont alignment with the ektropic standard |
+| 08 | [`08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md`](08_MIRROR_TEST_EXTENSION_AND_FAILED_MAPPINGS_2026_04_25.md) | Mirror Test Extension, Full Scoreboard, Mirror-Completion Experiment, Failed Mappings |
+| 10 | [`10_CELL_AUDIT_SCHEMA_2026_04_25.md`](10_CELL_AUDIT_SCHEMA_2026_04_25.md) | Rosetta Projection and Cell Audit Schema |
+| 10 | [`10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md`](10_INDIGENOUS_AMERICAN_AND_TAHITIAN_2026_04_25.md) | Indigenous American Sweep + Tahitian Arioi Verification |
+| 31 | [`31_CELL_SOUL4_TO_GEN7_2026_07_31.md`](31_CELL_SOUL4_TO_GEN7_2026_07_31.md) | Cell — `SOUL4 → GEN7` |
+| 31 | [`31_ROSETTA_CORE_v0.md`](31_ROSETTA_CORE_v0.md) | Rosetta Core v0 — Core + Packs + Ledger |
+| 32 | [`32_PACK_ECO7_CANDIDATE_2026_07_31.md`](32_PACK_ECO7_CANDIDATE_2026_07_31.md) | `ECO7` — candidate pack |
+| 32 | [`32_PACK_SOUL4_v0.md`](32_PACK_SOUL4_v0.md) | SOUL4@0 — the Soul-Loop Mission Engine as a Rosetta pack |
+| 33 | [`33_LIVE_DRIFT_RECONCILIATION_v0.md`](33_LIVE_DRIFT_RECONCILIATION_v0.md) | Live Drift Reconciliation v0 |
+| 33 | [`33_PACK_ECO7_EXTENSIONS_BIO_RULES_2026_08_03.md`](33_PACK_ECO7_EXTENSIONS_BIO_RULES_2026_08_03.md) | `ECO7` extensions — the named bio-rules |
+| 34 | [`34_COUNTER_ROSETTA_LIBRARY_v0.md`](34_COUNTER_ROSETTA_LIBRARY_v0.md) | Counter-Rosetta Library v0 — the strongest rivals of the seven-row projection |
+| 34 | [`34_LEDGER_CONVENTION_COLLISION_2026_07_31.md`](34_LEDGER_CONVENTION_COLLISION_2026_07_31.md) | Why `check_rosetta_cells.py` reports 38 problems |
+| 34 | [`34_PACK_ECO7_EXTENSIONS_2_BIO_RULES_2026_08_03.md`](34_PACK_ECO7_EXTENSIONS_2_BIO_RULES_2026_08_03.md) | `ECO7` extensions batch 2 — genetics, allometry, neutrality, fidelity |
+| 35 | [`35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md`](35_THE_LADDER_AND_THE_TWO_PARTITIONS_2026_08_05.md) | The Ladder and the Two Partitions *(no collision; listed to close the 30–37 run)* |
+
+[`34_LEDGER_CONVENTION_COLLISION_2026_07_31.md`](34_LEDGER_CONVENTION_COLLISION_2026_07_31.md)
+records the **content** half of the 31–34 overlap and had no inbound edge
+anywhere in the corpus — the document that notes the collision was itself
+unreachable by whoever would reconcile it. Its own status is `[S] observation.
+Nothing reconciled; nothing of either party's work altered.` Listing it here
+routes a reader to it and reconciles nothing.
+
 ## The three lines — required on any surface that shows the seven-row ladder
 
 Carrying one or two without the third is the failure this block exists to stop.
