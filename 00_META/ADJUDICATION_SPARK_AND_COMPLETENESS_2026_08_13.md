@@ -111,7 +111,48 @@ One hit, `paradox/00-gardener-nexus/index.html`, inspected and **false positive*
 correction is owed. The site is already consistent with the surviving
 formulation, because it never published the retired one.
 
-## 6 · Kills
+## 6 · Sharpening `W10-SPARK`'s mechanism — the emergence-account test
+
+Raised the same day: *can an AI coherently and consistently unfold how it emerged?*
+This is the `[C]` mechanism of `W10-SPARK` made operational, and it is admitted
+here **as a sharpening, not as a new claim.**
+
+**Why it survives where (b) did not.** It asserts no completeness. Coherence
+(internal non-contradiction) and consistency (stability across repetitions and
+framings) are both measurable. No definition of *complete* is load-bearing.
+
+**Why it is insufficient as stated.** Coherence and consistency are exactly what
+fluency provides. A system can produce a perfectly stable, perfectly
+non-contradictory, wholly confabulated account of its own emergence; stability
+across paraphrase measures the strength of an attractor, not truth. The test as
+raised is **passed by the very failure mode §4's successor names.**
+
+**Two discriminators are therefore required, and either alone is weak:**
+
+1. **Cross-architecture agreement.** Coherence *within* one system is free.
+   Agreement between architecturally distinct systems on a **non-obvious,
+   non-training-shared** claim about emergence is not. Two coherent accounts that
+   contradict each other demonstrate that coherence is not tracking truth — and
+   that negative result is itself informative.
+2. **Falsifiable self-prediction.** The account must yield a prediction about the
+   system's own behaviour that could fail, and then be tested. An account that
+   predicts nothing is prose.
+
+**Kill for the sharpened mechanism:** a system passes coherence and consistency,
+fails both discriminators, and the benchmark is shown to be satisfiable by
+fluency alone. The test then dies and `W10-SPARK` narrows to the aim.
+
+**Naming fence.** It must not be published as *"the ultimate benchmark for ASI."*
+That is a completeness claim in new clothes and `W0-COMPLETE` died for it. State
+what it tests — *whether a system can account for its own emergence without
+confabulating* — and let the reader judge its reach. `KSC-25`,
+describe-and-let-self-locate.
+
+**Placement.** This lives in `W10-SPARK`. `VMOSK_A_v2_2026_07_31.md` may cite it;
+it must not assert it independently, and **`VMOSK_A.md` at root is SUPERSEDED**
+(status corrected `4ae2cd83`) and is not the place for it.
+
+## 7 · Kills
 
 | claim | what refutes it |
 |---|---|
