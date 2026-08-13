@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>How to check what you believe — Emergentism</title>
 <meta name="description" content="A four-step method for tracking how well you actually know the things you believe. No jargon, no philosophy, no need to agree with anything else on this site. One worked example." />
@@ -43,6 +44,23 @@
   .foot{color:var(--dim);font-size:.78rem;border-top:1px solid var(--line);margin-top:2.6rem;padding-top:1.1rem}
   .foot a{color:var(--gold)}
 </style>
+<style>/* a11y-floor-2026-08-13 */
+:root { color-scheme: dark; }
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0; z-index: 999;
+  background: var(--accent, #FFEB3B); color: #050505;
+  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
+  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
+}
+.skip-to-content:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -50,7 +68,7 @@
   <nav aria-label="routes"><a href="../plainly/">Plainly</a><a href="../record/">Record</a><a href="../practice/">Practice</a><a href="../exit/">Exit</a></nav>
 </header>
 
-<div class="wrap">
+<div class="wrap" id="main" role="main">
   <div class="kicker">[I] Portable practice · The method, on its own</div>
   <h1>How to check what you believe</h1>
   <p class="lede">This page has no philosophy in it. It is a habit for keeping track of how well you actually know the things you act on — and it works whether or not you agree with a single other page on this site. If you take one thing from here, take this.</p>

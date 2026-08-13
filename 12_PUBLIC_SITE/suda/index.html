@@ -3,6 +3,7 @@
 <head>
 <meta name="robots" content="noindex, follow">
 <meta charset="UTF-8" />
+<meta name="color-scheme" content="dark">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Suda's correction — 1 at the centre, not 0 — Emergentism</title>
 <meta name="description" content="Minoru Suda's Critical-One Hypothesis: the number line's true centre is 1, not 0. Distance is the invariant radius rho(x)=|log x|, symmetry is reciprocal (x and 1/x), and 0 and infinity are the two ends. An interactive construction: drag x, watch four invariants hold by construction." />
@@ -49,6 +50,23 @@
   .q4infra b{ color:#a9a394; }
   @media(max-width:640px){ .q4decl{ margin:58px 0 0 0; width:100%; border-radius:0; border-left-width:3px; } }
 </style>
+<style>/* a11y-floor-2026-08-13 */
+:root { color-scheme: dark; }
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0; z-index: 999;
+  background: var(--accent, #FFEB3B); color: #050505;
+  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
+  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
+}
+.skip-to-content:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+}
+</style>
 </head>
 <body>
 <aside data-frozen-library-boundary="2026-07-22" role="note" style="padding:.75rem 1rem;border-bottom:1px solid rgba(255,235,59,.35);background:#17150a;color:#d8d2bd;font:600 .76rem/1.5 ui-monospace,monospace">[D] Frozen library projection — preserved for provenance, noindex, and excluded from current retrieval. Where it conflicts with the <a href="/dimensions/" style="color:#ffeb3b">dimension-first spine</a> or a named source owner, the current owner governs.</aside>
@@ -65,7 +83,7 @@
 </aside>
 
 
-<div class="wrap">
+<div class="wrap" id="main" role="main">
   <div class="kicker">Minoru Suda · the Critical-One Hypothesis</div>
   <h1>1 at the centre, not 0</h1>
   <p class="lede">The conventional number line is centred on <b>0</b>: distance is <code>|x|</code>, and the symmetry is additive (<code>x</code> mirrors <code>&minus;x</code>). Suda's correction re-centres it on <b>1</b>: distance becomes the invariant radius <code>&rho;(x) = |log x|</code>, the symmetry is <em>reciprocal</em> (<code>x</code> mirrors <code>1/x</code>), and <b>0</b> and <b>&infin;</b> become the two ends. His hypothesis: the singular effects of reciprocity concentrate at <b>1</b> — the mirror — <em>not</em> at 0.

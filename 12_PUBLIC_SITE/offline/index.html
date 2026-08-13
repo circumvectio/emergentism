@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="color-scheme" content="dark"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Offline — Emergentism</title>
+<meta name="description" content="You are offline. Pages you have already opened stay readable until the connection returns." />
 <meta name="robots" content="noindex, follow" />
 <meta name="emergentism:status" content="infrastructure; carries no doctrine; ruling Q4 2026-07-31" />
 <style>
@@ -27,6 +29,23 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://emergentism.org/assets/og/og-card.png" />
 <!--/OG:AUTO-->
+<style>/* a11y-floor-2026-08-13 */
+:root { color-scheme: dark; }
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0; z-index: 999;
+  background: var(--accent, #FFEB3B); color: #050505;
+  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
+  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
+}
+.skip-to-content:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+}
+</style>
 </head>
 <body>
 <div>

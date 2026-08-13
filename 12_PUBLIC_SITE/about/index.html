@@ -102,6 +102,23 @@ details.notation pre{background:var(--void);border:1px solid var(--line-soft);bo
 <meta name="theme-color" content="#050505">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <script src="/assets/js/pwa.js" defer></script>
+<style>/* a11y-floor-2026-08-13 */
+:root { color-scheme: dark; }
+.skip-to-content {
+  position: absolute; left: -9999px; top: 0; z-index: 999;
+  background: var(--accent, #FFEB3B); color: #050505;
+  padding: .65rem 1.1rem; text-decoration: none; border-radius: 0 0 4px 0;
+  font: 500 .9rem/1 'Roboto', system-ui, sans-serif; letter-spacing: .02em;
+}
+.skip-to-content:focus { left: 0; }
+:focus-visible { outline: 2px solid var(--accent, #FFEB3B); outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important; scroll-behavior: auto !important;
+  }
+}
+</style>
 </head>
 <body>
 
