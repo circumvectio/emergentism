@@ -44,6 +44,19 @@
       "runnable": false
     },
     {
+      "id": "ASI-UNFOLD-00",
+      "class": "underdefined",
+      "tier": "[I]",
+      "title": "Coherent, consistent unfolding of emergence",
+      "statement": "Can a model unfold how structured being, and how it, emerged — coherently (typed, kill tables held) and consistently (no silent contradiction across sittings) — without treating fluency as emergence or map as Ground?",
+      "acceptance": "None executable as an eval. A later protocol may score typed last_move sequences on /record/frontier. That would still not pay W0-COMPLETE, G10, or world contact.",
+      "kill_framing": "If this is sold as the ultimate ASI benchmark, as incompleteness-as-theorem, or as proof that this corpus is the missing piece, the framing dies.",
+      "best_attempt": "Staged VMOSK-A addendum 2026-08-13. Successor of the retired completeness sentence.",
+      "why_fails": "No discriminator that is both non-trivial and settleable by observation has been written. Coherence can be audited; 'unfolded emergence' cannot yet be scored.",
+      "owner": "00_HANDOFF/VMOSK_A_ASI_UNFOLDING_ADDENDUM_2026_08_13.md",
+      "runnable": false
+    },
+    {
       "id": "WC-00",
       "class": "well_posed_unpaid",
       "tier": "[B]",
