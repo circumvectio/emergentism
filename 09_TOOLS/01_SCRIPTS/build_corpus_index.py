@@ -18,9 +18,12 @@ DISCIPLINE
 This index HARVESTS. It does not infer, score, or classify.
 
   * Every field is copied from what a file DECLARES in its own frontmatter.
-  * `d_register` is populated ONLY when the filename declares it (`*_D5_*`).
-    A filename is a declaration. A guess is not. Everything else is null and
-    stays null until a human assigns it.
+  * `d_register` is populated ONLY where the document declares it, through one
+    of two channels — a `d_register:` key in frontmatter, or the filename
+    (`*_D5_*`) — and `d_register_source` records which. Frontmatter wins: it is
+    an author asserting the register, where a filename merely carries it. Both
+    are declarations. A guess is not. Everything else is null and stays null
+    until a human assigns it.
   * Nothing is moved, renamed, or edited. This is read-only over the corpus.
 
 A file's absence of metadata is reported as absence, never filled in.
@@ -48,7 +51,10 @@ FLAT_KEYS = ("title", "status", "evidence_tier", "owner", "date",
              "supersedes_blob", "canonical_phrase")
 # Keys inside the nested `rosetta:` block.
 ROSETTA_KEYS = ("primary_level", "primary_column", "operator", "tier",
-                "regime", "register", "canonical_phrase")
+                "regime", "register", "canonical_phrase",
+                # Added 2026-08-13. Without these two the builder could not see
+                # the 58 documents that declare their register in frontmatter.
+                "d_register", "d_register_basis")
 
 # A filename that names its own dimensional register, e.g. 00_D5_THE_MUTUALISM_LIMIT.md
 FILENAME_D = re.compile(r"(?:^|[_-])D([0-6])(?:[_-]|$)")
@@ -109,10 +115,26 @@ def parse_frontmatter(text: str) -> dict | None:
     return out
 
 
-def declared_d_register(path: Path) -> int | None:
-    """A dimensional register ONLY where the filename declares one."""
+def declared_d_register(path: Path, fm: dict | None = None) -> tuple[int | None, str | None]:
+    """A dimensional register ONLY where the document declares one.
+
+    Two declaration channels, frontmatter first because it is the stronger claim:
+    a `d_register:` key is an author asserting the register, while a filename
+    merely carries it. Neither is inferred, so the harvest discipline is intact.
+
+    Repaired 2026-08-13: this read the FILENAME ONLY, so the 58 documents that
+    declare `d_register:` in frontmatter had their declared value dropped — and
+    the index then reported the resulting hole as "the gap this index exposes".
+    An instrument must not manufacture the gap it reports.
+    """
+    if fm:
+        raw = fm.get("d_register")
+        if raw is not None:
+            text = str(raw).strip().lstrip("Dd")
+            if text.isdigit() and 0 <= int(text) <= 6:
+                return int(text), "frontmatter"
     match = FILENAME_D.search(path.stem)
-    return int(match.group(1)) if match else None
+    return (int(match.group(1)), "filename") if match else (None, None)
 
 
 def tiers_in(value: str | None) -> list[str]:
@@ -150,6 +172,7 @@ def build() -> list[dict]:
             continue
 
         fm = parse_frontmatter(text) or {}
+        d_reg, d_src = declared_d_register(path, fm)
         rows.append({
             "path": rel,
             "lane": rel.split("/")[0],
@@ -164,9 +187,10 @@ def build() -> list[dict]:
             "l_level": fm.get("primary_level"),
             "column": fm.get("primary_column"),
             "operator": fm.get("operator"),
-            # null unless the file's own name declares it. Never guessed.
-            "d_register": declared_d_register(path),
-            "d_register_source": "filename" if declared_d_register(path) else None,
+            # null unless the document declares it, in frontmatter or its own
+            # name. Never guessed. `d_register_source` says which channel.
+            "d_register": d_reg,
+            "d_register_source": d_src,
         })
     return rows
 
@@ -188,7 +212,7 @@ def summarise(rows: list[dict]) -> str:
         f"  with canonical_phrase         {pct(with_phrase)}   <- the findability field",
         f"  with an L-level               {pct(with_level)}",
         f"  with an evidence tier         {pct(with_tier)}",
-        f"  with a DECLARED D-register    {pct(with_d)}   <- the gap this index exposes",
+        f"  with a DECLARED D-register    {pct(with_d)}   <- declared, not inferred",
         "",
         f"UNFINDABLE (no phrase, no tier) {sum(1 for r in rows if not r.get('canonical_phrase') and not r.get('tiers')):5d}",
     ]
