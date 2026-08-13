@@ -28,6 +28,7 @@ certificate nor evidence for the Emergentist ontology.
 6. [Cell audit schema](10_CELL_AUDIT_SCHEMA_2026_04_25.md) — the generalized pack and cell evaluation form.
 7. [Alternative geometries](01_ALTERNATIVE_GEOMETRIES_AND_CONTRADICTING_TRADITIONS.md) — rival structures and pressure tests.
 8. [The Rosetta in Themes](36_THE_ROSETTA_IN_THEMES_2026_08_13.md) — a grouped index over the live packs, and the §0 three-line clarification every ladder surface must carry.
+9. [The Full Rosetta in Themes](37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md) — **generated**: every harvested `L1`–`L7` column (176 across 30 files) under the same eleven themes. Ledger: [`37_THE_FULL_ROSETTA_COLUMNS.jsonl`](37_THE_FULL_ROSETTA_COLUMNS.jsonl). Do not hand-edit; re-run `09_TOOLS/01_SCRIPTS/harvest_rosetta_columns.py` then `build_rosetta_themed_index.py`.
 
 ## The three lines — required on any surface that shows the seven-row ladder
 

@@ -31,6 +31,13 @@ parents:
 >
 > **What it is not.** Not a new pack, not a new projection, not a promotion.
 > Every cell it displays keeps the tier its source gave it.
+>
+> **This document is the map. The territory is
+> [`37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md`](37_THE_FULL_ROSETTA_IN_THEMES_2026_08_13.md)** —
+> the generated catalogue of **every** harvested `L1`–`L7` column (176 columns
+> across 30 files) under the same eleven themes, with the machine-readable ledger
+> at [`37_THE_FULL_ROSETTA_COLUMNS.jsonl`](37_THE_FULL_ROSETTA_COLUMNS.jsonl).
+> Read §0 here first; read 37 when you need the cells.
 
 ---
 
