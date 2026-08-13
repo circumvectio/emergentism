@@ -130,6 +130,17 @@ not re-run here · **UNVERIFIED** = carried, no command.
 | `90_ARCHIVE` subdirectories | **27** | `ls -1d 90_ARCHIVE/*/` — `00_WORK_IN_PROGRESS/README.md:25` publishes **24** |
 | public-site routes | **400** | `find 12_PUBLIC_SITE -name index.html ! -path '*/.vercel/*'` — `00_THE_LAUNCH_PLAN.md:24` publishes **391** |
 
+> **R-22 note (2026-08-13).** The live-`.md` denominator **1,706** above is
+> superseded and was stale in both directions: its command re-runs to **1,727**
+> today, and its exclusion rule misses 93 files inside eight NESTED
+> `90_ARCHIVE` directories under live pillars (plus vendored `.lake`). Per
+> CHAIR ruling `R-22`, the governing denominator is **1,385** — the builder's
+> own walk rules, `09_TOOLS/01_SCRIPTS/build_corpus_index.py:38-41`, the only
+> scope contract that exists in code — and every count is to be quoted with
+> its exclusion rule attached. The figures above stand as measured on their
+> date; they are not to be re-cited as corpus size.
+> Receipt: `00_HANDOFF/WAVE_0_RULINGS_RECEIPT_2026_08_13.md`.
+
 ### Emblem census — the seed figure "362 files / 349 .html" — VERIFIED (L4)
 
 | figure | value |
