@@ -222,9 +222,7 @@ These are not new. Each carries over into this tree with its origin named, becau
 rule adopted without its source is a rule nobody can audit.
 
 ### 1 · Harvest, never infer
-**Origin:** `09_TOOLS/01_SCRIPTS/build_corpus_index.py` — "This index HARVESTS. It does
-not infer, score, or classify." and "A file's absence of metadata is reported as
-absence, never filled in."
+**Origin:** `09_TOOLS/01_SCRIPTS/build_corpus_index.py` — "This index HARVESTS. It does not infer, score, or classify."
 **Carries over as:** every field in this tree is copied from something a source
 declares. A gap is published as a gap. D3 is the load-bearing instance: the station is
 empty because the manifest declares nothing there, and the emptiness is printed rather

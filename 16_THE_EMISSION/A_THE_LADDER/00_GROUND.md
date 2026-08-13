@@ -58,7 +58,7 @@ deliberately not exported. P-12 concedes that on the compactified positive ray
 
 - **Tier** `[I]` the reading · `[A]` the NBG/MK fact only · `[S]` the seat assignment · `[D]` the standalone packaging.
 - **Owner** **INHERITED** for the `[A]` part (NBG/MK proper-class theory).
-- **The attack it survives** "The type firewall is a stipulation you invented to fence arithmetic out; it is not a fact." **Conceded, and survives *because* it is preserved as a fence rather than as a fact** — `00_THE_RUNGS:341`: *"The only thing standing between the base and collapse is the stipulation 'a mark, never an operand' — a fence, not a fact."* The `[A]` portion is **only** `BOUNDARY_RULES:170` — a proper class is not a member of any class, therefore not an operand.
+- **The attack it survives** "The type firewall is a stipulation you invented to fence arithmetic out; it is not a fact." **Conceded, and survives *because* it is preserved as a fence rather than as a fact** — `00_THE_RUNGS:341`: *"The only thing standing between the base and collapse is the stipulation 'a mark, never an operand' — a fence, not a fact."* The `[A]` portion is **only** `BOUNDARY_RULES` — a proper class is not a member of any class, therefore not an operand.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-11 · The three modes of counting, and "a mark is never an operand""
   - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "[S] the seat assignment"
@@ -87,4 +87,4 @@ deliberately not exported. P-12 concedes that on the compactified positive ray
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

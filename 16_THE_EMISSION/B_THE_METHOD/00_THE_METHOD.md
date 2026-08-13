@@ -47,7 +47,7 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 - **Tier** `[A]` only, each at its source's tier.
 - **Owner** **INHERITED** — Euclid, Dedekind, Cantor, Russell, Zermelo, von Neumann, Hardy & Wright, Möbius, Klein, Lagrange, Hermite, Lindemann, Napier, Euler, Cauchy, Mac Lane, Peano, Galois, Presburger, Tarski, Steenrod, Laplace, Legendre, Cartan, Killing, Witten, Atiyah, Hirzebruch, Lotka, Volterra, Glashow–Weinberg–Salam, Kripke, ordinary universal algebra.
-- **The attack it survives** "Zero owned results — the corpus contributed nothing." Answered at `00_THE_AMRITA.md:25-43`: the ownership ledger **measures the wrong variable**. The mission is *"not to be the first — a coherent and consistent weltanschauung."* An inherited result is a **citation obligation, not a defect**; zero-owned is not a bad result, it is an **uninformative** one. And **ten of the nineteen refute claims this corpus itself published** — the false F2, the false Line 4, four load-bearing lemmas each killed by one counterexample, Gödel-does-not-lift, the retracted SU(3) obstruction, all four routes from S² to the Standard Model blocked.
+- **The attack it survives** "Zero owned results — the corpus contributed nothing." Answered at `00_THE_AMRITA.md`: the ownership ledger **measures the wrong variable**. The mission is *"not to be the first — a coherent and consistent weltanschauung."* An inherited result is a **citation obligation, not a defect**; zero-owned is not a bad result, it is an **uninformative** one. And **ten of the nineteen refute claims this corpus itself published** — the false F2, the false Line 4, four load-bearing lemmas each killed by one counterexample, Gödel-does-not-lift, the retracted SU(3) obstruction, all four routes from S² to the Standard Model blocked.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-04 · The inherited `[A]` spine as a whole — nineteen entries, zero owned"
   - `14_THE_DISTILLATION/01_WHAT_IS_PROVED.md` — "Euclid, Dedekind, Cantor, Russell, Zermelo, von Neumann, Hardy & Wright, Möbius, Klein, Lagrange, Hermite, Lindemann, Napier, Euler, Cauchy, Mac Lane, Peano, Galois, Presburger, Tarski, Steenrod, Laplace, Legendre, Cartan, Killing, Witten, Atiyah, Hirzebruch, Lotka, Volterra, Glashow–Weinberg–Salam, Kripke"
@@ -60,9 +60,9 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 *Why METHOD and not a rung.* It reads like a station and is not one. Its own §5 calls the standalone set *a METHOD + a POSTURE + a VOW + a geometry*, not a world-picture that accounts for the contents of the world. Stationing it would promote what it concedes.
 
-- **Tier** `[I]` — the file's own register line at `:8` reads "never `[A]`".
+- **Tier** `[I]` — the file's own register line at `…` reads "never `[A]`".
 - **Owner** **CORPUS.**
-- **The attack it survives** "This is a worldview posing as an explanation of the world." **Cannot land, because §5 at `:367` concedes it first and in harsher words than any attacker would use**: the standalone set is *"a METHOD + a POSTURE + a VOW + a geometry … not yet a world-picture that accounts for the contents of the world."* It also concedes the mind-account as a dead form and prices the plenitude wager. Content: Dasein names all that can coherently and consistently exist; reality as constrained possibility in process; the reciprocal sphere as **one useful chart** whose product is identically one **by construction** and is "not the territory or an ethics warrant"; need-both behaviour supports an **AND-class boundary, not a unique product interior**; non-extraction **chosen**, not derived; an exit marked on the inside.
+- **The attack it survives** "This is a worldview posing as an explanation of the world." **Cannot land, because §5 at `…` concedes it first and in harsher words than any attacker would use**: the standalone set is *"a METHOD + a POSTURE + a VOW + a geometry … not yet a world-picture that accounts for the contents of the world."* It also concedes the mind-account as a dead form and prices the plenitude wager. Content: Dasein names all that can coherently and consistently exist; reality as constrained possibility in process; the reciprocal sphere as **one useful chart** whose product is identically one **by construction** and is "not the territory or an ethics warrant"; need-both behaviour supports an **AND-class boundary, not a unique product interior**; non-extraction **chosen**, not derived; an exit marked on the inside.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-08 · The ontology answer"
   - `06_ONTOLOGY/02_THE_DEGREES_OF_FREEDOM_ONTOLOGY.md` — "not yet a world-picture that accounts for the contents of the world"
@@ -75,7 +75,7 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 - **Tier** `[I]`, self-declared CANONICAL for this typing, amended 2026-07-27.
 - **Owner** **CORPUS.**
-- **The attack it survives** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md:42`, which types D0/D6 as "actual boundary token." **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *"`Structural` marks an abstract register predicate or boundary, not a third kind of event."* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02.
+- **The attack it survives** The live head-on collision with `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md`, which types D0/D6 as "actual boundary token." **Hold `34`**: it is later (2026-07-27 vs the 2026-07-20 repair), it self-declares canonical, and — decisively — it is the only one of the two that **states the reconciliation**: *"`Structural` marks an abstract register predicate or boundary, not a third kind of event."* D4/D5 agree in both files word for word; the collision is confined to D0/D1/D2/D3/D6. Other side → `02_ARCHIVE.md` A-02.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-10 · The register/token type separation"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md` — "Structural` marks an abstract register predicate or boundary, not a third"
@@ -125,8 +125,8 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 - **Tier** `[I]`/`[S]` named defect shape, NAMED 2026-08-06.
 - **Owner** **CORPUS.**
-- **The attack it survives** "The file that names this violates it fourteen lines later at `:163`." **It does — and that is not a refutation, it is DF-22's confirming instance.** The diagnosis is sound; only its own practice failed. Distinct from DF-20 (numeric coincidence read as derivation) and from ordinary miscounting: *"the correction always arrives by recount, never by re-argument."* **Countermeasure, exact and adoptable tomorrow: "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it."** This manifest is written under it.
-- ⚠️ **Its ID is allocated three ways** — `04_WHAT_DIED.md:149` and `:150` both read `| DF-22 |`, and the register of record at `00_META/00_THE_CLAIM_STATUS_REGISTER.md:229` assigns DF-22 to the fired-falsifier row. **VERIFIED (L4)** and independently by Śiva. **Preserve the finding; it needs DF-23.** See `04_CREATE.md` C-08 — this collision is the one technical blocker on the dead-forms archive.
+- **The attack it survives** "The file that names this violates it fourteen lines later at `…`." **It does — and that is not a refutation, it is DF-22's confirming instance.** The diagnosis is sound; only its own practice failed. Distinct from DF-20 (numeric coincidence read as derivation) and from ordinary miscounting: *"the correction always arrives by recount, never by re-argument."* **Countermeasure, exact and adoptable tomorrow: "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it."** This manifest is written under it.
+- ⚠️ **Its ID is allocated three ways** — `04_WHAT_DIED.md` and `…` both read `| DF-22 |`, and the register of record at `00_META/00_THE_CLAIM_STATUS_REGISTER.md` assigns DF-22 to the fired-falsifier row. **VERIFIED (L4)** and independently by Śiva. **Preserve the finding; it needs DF-23.** See `04_CREATE.md` C-08 — this collision is the one technical blocker on the dead-forms archive.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-22 · DF-22 — "the escorted number""
   - `14_THE_DISTILLATION/04_WHAT_DIED.md` — "re-run counts, never re-quote them; a figure entering a headline must carry the command that produces it"
@@ -141,7 +141,7 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 *Why METHOD and not a rung.* The rules themselves, with the efficacy claim left at `[C]` in the file's own opening. A method that claims its own success is no longer a method.
 
-- **Tier** `[S]` the rules; the **efficacy claim is `[C]`** and is stated as such at `:17-23`.
+- **Tier** `[S]` the rules; the **efficacy claim is `[C]`** and is stated as such at `…`.
 - **Owner** **CORPUS.**
 - **The attack it survives** "You have no evidence any of this works." **Conceded in the file's own opening**: the protocol's efficacy has "not been run as a controlled trial … Nothing here may be read as showing the method succeeded." Rules preserved: one tier per load-bearing claim, never upgraded silently; **when prose and tier disagree, the tier governs and the prose is read as invitation**; four questions or the claim is not load-bearing (tier, upgrade path, kill, and **survivors** — name what does *not* fall); **shrink it before you reinvent it**, because *"reflex elaboration after a failure is how bad ideas grow armour"*; publish the gate table before the result exists; **stop rather than tune**.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
@@ -215,7 +215,7 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 *Why METHOD and not a rung.* An archive protocol. It keeps live citations resolvable without letting the archive become a competing owner — the cure, not the disease.
 
 - **Finding** The stub says why in its own words: it keeps live citations resolvable *"without making the archive a competing owner: the archive is provenance; new work belongs in the live lanes."* Created deliberately by receipt 158 **after dead canonical paths were found cited as live** — it is the **cure** for archive-as-owner, not an instance of it. **Sweeping these 60 would delete the device that keeps the archive subordinate.** **VERIFIED (L3).**
-- **The genuine defect** **is narrower and isolated** : `parents:` edges, which are authority, not links — **3 of 11**, at `06_ONTOLOGY/06_THE_REVELATIONS.md:16` (K-6), `11_UPLINK/…/00_THE_RECORD_LEDGER.md:16` (K-7), and `ASCENT_D6_RETURN_AND_O_2026_08_05.md:14`. The other **8** are dated receipts whose own subject is the archive folder they name; stripping those would erase the receipt's subject.
+- **The genuine defect** **is narrower and isolated** : `parents:` edges, which are authority, not links — **3 of 11**, at `06_ONTOLOGY/06_THE_REVELATIONS.md` (K-6), `11_UPLINK/…/00_THE_RECORD_LEDGER.md` (K-7), and `ASCENT_D6_RETURN_AND_O_2026_08_05.md`. The other **8** are dated receipts whose own subject is the archive folder they name; stripping those would erase the receipt's subject.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-30 · The 60 archive-terminating stubs are a ratified tombstone protocol, not defects"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/00_THE_SEVEN_AXIOMS.md` — "owner: **the archive is provenance; new work belongs in the live lanes"
@@ -235,4 +235,4 @@ Putting them on the ladder would be the corpus's own signature error, performed 
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

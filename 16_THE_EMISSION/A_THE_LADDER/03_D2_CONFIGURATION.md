@@ -84,7 +84,7 @@ hung on those identities dies**, and in each case the corpus killed it first.
 
 - **Tier** `[A]` the identity · `[B]` inherited-cite the reading (Nash 1950, Sonnevend 1985/86, product t-norm, series reliability) · `[S]` the chordal metric as **selected**.
 - **Owner** **INHERITED** for the reading.
-- **The attack it survives** **— and this entry is a live demonstration of this pass's own law.** It was **over-killed and then fairly re-heard on 2026-08-06**; its status line records the reading "restored … after a fair re-adjudication found the prior strike over-corrected." *(1)* "This is the retired `⊙ = • × ○` in new coordinates." **Partially lands and is already adjudicated** — the **form** is dead, the **reading** stands narrowed and cited. *(2)* "The two poles are antipodal at chordal distance 2." **Killed by the corpus** at `56:56-72` — this is **the one genuine kill of the eighteen** in the fair re-adjudication. What survives: the chordal metric as *selected* structure, `• ≠ ○` as distinctness, and the two factors as **chart-point-to-pole** distances, never mark-to-mark.
+- **The attack it survives** **— and this entry is a live demonstration of this pass's own law.** It was **over-killed and then fairly re-heard on 2026-08-06**; its status line records the reading "restored … after a fair re-adjudication found the prior strike over-corrected." *(1)* "This is the retired `⊙ = • × ○` in new coordinates." **Partially lands and is already adjudicated** — the **form** is dead, the **reading** stands narrowed and cited. *(2)* "The two poles are antipodal at chordal distance 2." **Killed by the corpus** at `56` — this is **the one genuine kill of the eighteen** in the fair re-adjudication. What survives: the chordal metric as *selected* structure, `• ≠ ○` as distinctness, and the two factors as **chart-point-to-pole** distances, never mark-to-mark.
 - ⚠️ **The `What survives` clause of this very block is FALSE as written** — see `03_FALSE.md` F-01. Preserve the decomposition; the one-word warrant beneath it does not survive.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-18 · HM = GM × BAL — the product decomposition, narrowed and restored"
@@ -105,4 +105,4 @@ hung on those identities dies**, and in each case the corpus killed it first.
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

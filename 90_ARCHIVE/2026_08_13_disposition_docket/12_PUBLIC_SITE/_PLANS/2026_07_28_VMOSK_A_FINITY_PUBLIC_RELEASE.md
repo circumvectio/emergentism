@@ -12,7 +12,7 @@ superseded_by: "2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md"
 > **Superseded for current front-door positioning.** This packet remains the
 > dated provenance for the Finity-first release. The current public hierarchy
 > is governed by
-> [`2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md`](2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md):
+> [`2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md`](../../../../12_PUBLIC_SITE/_PLANS/2026_07_28_VMOSK_A_WORLDVIEW_FRONT_DOOR.md):
 > **Emergentism, made usable through Finity.** Its evidence and release fences
 > remain in force.
 

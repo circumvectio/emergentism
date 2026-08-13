@@ -61,7 +61,7 @@ killed for unreachability over a directory rename (P-34).
 
 ## The entries — 5
 
-### P-29 · `check_links.py` is honest and must not be touched
+### P-29 · `09_TOOLS/01_SCRIPTS/check_links.py` is honest and must not be touched
 
 - **Finding** 148 dead links found; **all 148 fall inside this gate's declared `SKIP_DIRS`**, and the exclusion is stated in-code with a correct reason: a dated receipt records where a file *was*, and rewriting it to keep a link green would falsify the record. **The BASELINE of 0 is a real zero** — the comment explains that a 64-item baseline was rejected because it would hide the 65th. In-scope link health: **1 broken of 3586**. **VERIFIED (L3).**
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written

@@ -56,7 +56,7 @@ picture is `ι` **exchanging** the poles: one two-element orbit of two distinct 
 
 - **Tier** `[A]` the set-theoretic fact (host document is `[S]`/STAGED).
 - **Owner** **INHERITED** — Dedekind, *Was sind und was sollen die Zahlen?* (1888).
-- **The attack it survives** *(1)* "The host reads STAGED PROPOSAL — unratified, so nothing in it stands." The fact is Dedekind's; ratification governs the seat assignment, never the theorem. *(2)* The real one — "this is just Dedekind-infiniteness, and ℕ is Dedekind-infinite too." **The source anticipated it at `:82-83`**: the third line is strictly stronger — `V ∪ {x} = V` holds **literally, as classes**, not merely up to bijection. ℕ ∪ {x} ≈ ℕ but ℕ ∪ {x} ≠ ℕ. That one word is the discriminating step and it was written before anyone attacked it. *(3)* "The kill is unfalsifiable." It is "exhibit a finite set unchanged by adjoining a new element" — decidable, and it cannot fire.
+- **The attack it survives** *(1)* "The host reads STAGED PROPOSAL — unratified, so nothing in it stands." The fact is Dedekind's; ratification governs the seat assignment, never the theorem. *(2)* The real one — "this is just Dedekind-infiniteness, and ℕ is Dedekind-infinite too." **The source anticipated it at `…`**: the third line is strictly stronger — `V ∪ {x} = V` holds **literally, as classes**, not merely up to bijection. ℕ ∪ {x} ≈ ℕ but ℕ ∪ {x} ≠ ℕ. That one word is the discriminating step and it was written before anyone attacked it. *(3)* "The kill is unfalsifiable." It is "exhibit a finite set unchanged by adjoining a new element" — decidable, and it cannot fire.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-02 · Absorption — `V ∪ {x} = V`"
   - `05_COSMOLOGY/01_THE_TRANSCENDENTAL_TRINITY/49_THE_THREE_MODES_OF_COUNTING.md` — "exhibit a finite set unchanged by adjoining a new element"
@@ -85,4 +85,4 @@ picture is `ι` **exchanging** the poles: one two-element orbit of two distinct 
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

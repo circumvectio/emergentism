@@ -56,7 +56,7 @@ that the test has not been run.
 - **Claim** Reduced words are unique normal forms. Proved 2026-08-05; in the same act found to be prior art.
 - **Tier** `[A]` inherited-with-citation (was `[C]`).
 - **Owner** **INHERITED** — Hardy & Wright Ch. X; Khinchin §I.2; Perron; Euclid underneath.
-- **The attack it survives** *(1)* "You never verified the theorem number." The document says it first, twice, at `:107-109` and `:246`; the proof at `:117-122` is self-contained and does not depend on the numbering. *(2)* "You cite prior art to claim credit." `:150-154` forfeits the novelty explicitly — F1 remains **OPEN** and G2 "must not be cited as passing it"; `:212` reads "Nothing here is `[I]` and nothing here is owned." *(3)* "The machine check is stale." **VERIFIED (L4)**: `check_g2_normal_form.py` exits 0 today, 10 945 reduced words to length 18, exact rationals, 0 collisions, 6 mutants each tripping its checks.
+- **The attack it survives** *(1)* "You never verified the theorem number." The document says it first, twice, at `…` and `…`; the proof at `…` is self-contained and does not depend on the numbering. *(2)* "You cite prior art to claim credit." `…` forfeits the novelty explicitly — F1 remains **OPEN** and G2 "must not be cited as passing it"; `…` reads "Nothing here is `[I]` and nothing here is owned." *(3)* "The machine check is stale." **VERIFIED (L4)**: `check_g2_normal_form.py` exits 0 today, 10 945 reduced words to length 18, exact rationals, 0 collisions, 6 mutants each tripping its checks.
 - **This is the model for the whole pass.** It proved its own open conjecture and destroyed its own novelty claim in the same document, before anyone else could.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-01 · G2 — the normal-form theorem"
@@ -70,7 +70,7 @@ that the test has not been run.
 
 - **Tier** `[S]` signed, natural person; `[A]` covers only "not a finite word."
 - **Owner** **CORPUS** (the ruling) on an inherited theorem (G1).
-- **The attack it survives** The genuinely strong one — "a fresh reader will still hear *they say √2 isn't a number* no matter how you tag it, so the ruling loses on reach." **The ruling concedes this as its own kill at `:48`** and records that the fresh-reader test has **not been run**. It survives because it publishes the condition under which it would lose. Third attack: "the council vote is authority" — `193:6`, two agent councils advised, **neither signed**; only a natural person signed.
+- **The attack it survives** The genuinely strong one — "a fresh reader will still hear *they say √2 isn't a number* no matter how you tag it, so the ruling loses on reach." **The ruling concedes this as its own kill at `…`** and records that the fresh-reader test has **not been run**. It survives because it publishes the condition under which it would lose. Third attack: "the council vote is authority" — `193`, two agent councils advised, **neither signed**; only a natural person signed.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-16 · The 4–0 √2 ruling — the two-clause form"
   - `11_UPLINK/50_AUDITS_AND_EXECUTIONS/193_FIVE_RULINGS_SIGNED_2026_07_31.md` — "they say √2 isn't a number"
@@ -88,4 +88,4 @@ that the test has not been run.
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

@@ -355,6 +355,18 @@ LAW_ANCHOR_CANDIDATES = [
      "cite by unique path **plus a quoted string**, never by a bare line range"),
 ]
 
+# Candidate anchors for the Provenance block.  Every generated file names its
+# source in prose, and the tree's own law binds that mention like any other: a
+# path with no quoted string beside it is an unanchored citation.  It was the
+# single most repeated failure in this lane — one per generated file.  The fix
+# is to ANCHOR the mention, not to exempt it: the source is quoted, verified,
+# and the quote is written back byte-exact, exactly as every other anchor here.
+SOURCE_ANCHOR_CANDIDATES = [
+    (SOURCE_REL, "46 PRESERVE entries across six lanes"),
+    (SOURCE_REL, "Each entry: **claim · tier · owner · the attack it"),
+    (SOURCE_REL, "the corpus attacked every entry first and published the wound"),
+]
+
 # Candidate anchors used by the D3 station to explain its own emptiness.
 D3_ANCHOR_CANDIDATES = [
     ("05_COSMOLOGY/03_FORMAL_SYSTEM/34_D4_D5_CANONICAL_REFERENCE.md",
@@ -389,6 +401,83 @@ CHAR_FOLD = {
 }
 MIN_ANCHOR_LEN = 20
 MAX_ANCHORS_PER_TARGET = 2
+
+# ---------------------------------------------------------------------------
+# 2a · THE LINE-LOCATOR SCRUBBER.
+#
+#     THE ONE NON-NEGOTIABLE DESIGN LAW of this generator — stated at the top of
+#     this file and printed into the head of every file it writes — is that no
+#     line number is ever written into this tree.  Until this scrubber existed
+#     the law governed only the anchors the generator MINTED; the prose it
+#     COPIED from the manifest carried the manifest's own `path:line` locators
+#     straight through, and check_anchors.py failed 18 of them.  The generator
+#     was breaking its own stated law in the one place it never looked.
+#
+#     The three shapes below mirror HARD_BANS in check_anchors.py exactly.  They
+#     are duplicated rather than imported on purpose: the generator must not
+#     depend on the gate that judges it.  If check_anchors.py changes its bans,
+#     these change too — the run report prints every scrub so a divergence shows
+#     up as a count, never as a silent pass.
+#
+#     What is dropped is the LOCATOR ONLY.  The path, the document number and
+#     the identifier all survive, because those are the citation; the line
+#     number is the part that survives no edit.  A locator with nothing in front
+#     of it becomes `…` — an elision the reader can see, not a deletion the
+#     reader cannot.  Nothing is inferred and nothing is reworded.
+# ---------------------------------------------------------------------------
+
+# B1  path with an extension, then :line        FILE.md:124   FILE.md:15-26
+SCRUB_EXT_LINE = re.compile(
+    r"([A-Za-z0-9_][A-Za-z0-9_./+\-]*\.(?:md|py|txt|jsonl|json|yaml|yml|csv|html|js|ts|toml|cfg|sh))"
+    r":\d+(?:\s*[-–,]\s*\d+)*"
+)
+# B3  identifier or number, then :line          RUNGS:722   193:15-17   55:156
+SCRUB_IDENT_LINE = re.compile(
+    r"(?<![\w:])((?:[A-Za-z_][A-Za-z0-9_]*|\d{3,})):\d+(?:\s*[-–,]\s*\d+)*"
+    r"|(?<![\w:])(\d{1,2}):\d+\s*[-–,]\s*\d+"
+    r"|(?<![\w:])(\d{1,2}):\d{3,}"
+)
+# B2  bare colon-line, nothing in front of it   at `:246`   , :82-83
+SCRUB_BARE_COLON = re.compile(
+    r"(?<![\w:])(:\d+(?:\s*[-–,]\s*\d+)*)(?![\d:])"
+)
+# ordinary URLs are not citations; B3 fires on them and must not.
+SCRUB_EXEMPT = re.compile(r"^(?:https?|ftp|file|mailto|git|ssh)$", re.I)
+
+SCRUBBED = []          # every removal, itemised for the run report
+
+
+def delocate(s, where="—"):
+    """Remove line locators from inherited prose.  Records every removal.
+
+    Applied to text COPIED from the manifest, never to an anchor the generator
+    minted — a minted anchor has no line number to begin with.
+    """
+    if not s:
+        return s
+
+    def keep_head(m):
+        head = m.group(1)
+        if SCRUB_EXEMPT.match(head):
+            return m.group(0)
+        SCRUBBED.append((where, m.group(0), head))
+        return head
+
+    def keep_ident(m):
+        head = m.group(1) or m.group(2) or m.group(3)
+        if SCRUB_EXEMPT.match(head):
+            return m.group(0)
+        SCRUBBED.append((where, m.group(0), head))
+        return head
+
+    def elide(m):
+        SCRUBBED.append((where, m.group(1), "…"))
+        return "…"
+
+    out = SCRUB_EXT_LINE.sub(keep_head, s)
+    out = SCRUB_IDENT_LINE.sub(keep_ident, out)
+    out = SCRUB_BARE_COLON.sub(elide, out)
+    return out
 
 
 def fold(s: str) -> str:
@@ -872,6 +961,24 @@ def frontmatter(title, station, source_sha, source_date, extra=None):
     return "\n".join(lines)
 
 
+def render_provenance(ledger, rel, tail):
+    """The Provenance block, with its citation of the source ANCHORED.
+
+    `tail` is the file's own closing sentence and is left exactly as it was.
+    """
+    a = ledger.cite_declared(rel, SOURCE_ANCHOR_CANDIDATES, want=1)
+    if a:
+        p, q, _kind = a[0]
+        head = (f"Generated from `{p}` — \"{q}\" — "
+                f"by `16_THE_EMISSION/emit.py`. ")
+    else:
+        # No quote in the source verified. Say so; never write a bare pointer.
+        head = (f"Generated from `{SOURCE_REL}` by `16_THE_EMISSION/emit.py` "
+                f"— {{no-anchor}}: no string quoted from the source could be "
+                f"located in it on this run, so no anchor was written. ")
+    return ["## Provenance", "", head + tail, ""]
+
+
 def render_anchor_list(picked, dropped):
     out = []
     if picked:
@@ -890,27 +997,31 @@ def render_anchor_list(picked, dropped):
 
 
 def render_entry(entry: Entry, picked_map, dropped, flags, spine, why=None):
-    out = [f"### {entry.id} · {entry.title}", ""]
+    # Everything below that comes from the manifest is inherited prose and goes
+    # through delocate(); the anchor list is MINTED and must not be touched, its
+    # quotes being byte-exact substrings of the targets.
+    d = lambda s: delocate(s, entry.id)
+    out = [f"### {entry.id} · {d(entry.title)}", ""]
     if why:
         out += [f"*Why METHOD and not a rung.* {why}", ""]
     if entry.claim:
         label = "Claim" if "claim" in entry.fields else "Finding"
-        out.append(f"- **{label}** {entry.claim}")
+        out.append(f"- **{label}** {d(entry.claim)}")
     if entry.tier:
-        out.append(f"- **Tier** {entry.tier}")
+        out.append(f"- **Tier** {d(entry.tier)}")
     if entry.owner:
-        out.append(f"- **Owner** {entry.owner}")
+        out.append(f"- **Owner** {d(entry.owner)}")
     if entry.attack:
-        out.append(f"- **The attack it survives** {entry.attack}")
+        out.append(f"- **The attack it survives** {d(entry.attack)}")
     for key, label in (("boundary", "Boundary"),
                        ("open", "OPEN — chair act"),
                        ("owner_boundary", "Owner boundary"),
                        ("separately", "Separately"),
                        ("genuine_defect", "The genuine defect")):
         if key in entry.fields:
-            out.append(f"- **{label}** {entry.fields[key]}")
+            out.append(f"- **{label}** {d(entry.fields[key])}")
     for n in entry.notes:
-        out.append(f"- {n}")
+        out.append(f"- {d(n)}")
     out += render_anchor_list(picked_map, dropped)
     for f in flags:
         out.append(f"- ⚠️ **Station tension** — {f}")
@@ -964,13 +1075,11 @@ def render_station(st, entries_by_id, ledger, source_sha, source_date, law_ancho
             "`python3 16_THE_EMISSION/emit.py --counts`",
             "- anchors written from this file: see `16_THE_EMISSION/ANCHORS.jsonl`, "
             f'`grep -c \'"from_file": "{rel}"\' 16_THE_EMISSION/ANCHORS.jsonl`',
-            "",
-            "## Provenance",
-            "",
-            f"Generated from `{SOURCE_REL}` by `16_THE_EMISSION/emit.py`. "
-            "The frozen tree was read and not written. Nothing was moved, deleted, "
-            "committed or staged.",
             ""]
+    out += render_provenance(
+        ledger, rel,
+        "The frozen tree was read and not written. Nothing was moved, deleted, "
+        "committed or staged.")
     return "\n".join(out)
 
 
@@ -1083,12 +1192,9 @@ def render_d3(st, ledger, source_sha, source_date, law_anchor, d3_anchors, total
             "`python3 16_THE_EMISSION/emit.py --counts`",
             "- anchors written from this file: "
             f'`grep -c \'"from_file": "{rel}"\' 16_THE_EMISSION/ANCHORS.jsonl`',
-            "",
-            "## Provenance",
-            "",
-            f"Generated from `{SOURCE_REL}` by `16_THE_EMISSION/emit.py`. "
-            "The frozen tree was read and not written.",
             ""]
+    out += render_provenance(
+        ledger, rel, "The frozen tree was read and not written.")
     return "\n".join(out)
 
 
@@ -1175,13 +1281,11 @@ def render_method(entries_by_id, ledger, source_sha, source_date, law_anchor, co
             "`python3 16_THE_EMISSION/emit.py --counts`",
             "- anchors written from this file: "
             f'`grep -c \'"from_file": "{rel}"\' 16_THE_EMISSION/ANCHORS.jsonl`',
-            "",
-            "## Provenance",
-            "",
-            f"Generated from `{SOURCE_REL}` by `16_THE_EMISSION/emit.py`. "
-            "The frozen tree was read and not written. Nothing was moved, deleted, "
-            "committed or staged.",
             ""]
+    out += render_provenance(
+        ledger, rel,
+        "The frozen tree was read and not written. Nothing was moved, deleted, "
+        "committed or staged.")
     return "\n".join(out)
 
 
@@ -1190,6 +1294,7 @@ def render_method(entries_by_id, ledger, source_sha, source_date, law_anchor, co
 # ---------------------------------------------------------------------------
 
 def build():
+    SCRUBBED.clear()          # build() is pure: two calls must report the same
     raw = SOURCE.read_bytes()
     source_sha = hashlib.sha256(raw).hexdigest()
     text = raw.decode("utf-8")
@@ -1307,6 +1412,15 @@ def report(ledger, counts, entries, source_sha, files, mode):
     print(f"station tensions flagged : {len(flags)}")
     for eid, key, fl in flags:
         print(f"    {eid} @ {key}: {fl}")
+
+    # The line-locator scrub, itemised.  This tree forbids line numbers; the
+    # manifest it projects is full of them.  Every one that was dropped on the
+    # way in is printed here, with the entry it came from and what replaced it,
+    # so that "no line numbers anywhere in this tree" is a measured statement
+    # and never a silent edit.
+    print(f"line locators scrubbed   : {len(SCRUBBED)}")
+    for where, was, now in SCRUBBED:
+        print(f"    {where}: {was}  ->  {now}")
     print("=" * 72)
 
 

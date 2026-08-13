@@ -56,7 +56,7 @@ Both are inherited. Neither is owned. That is the normal condition of this tree.
 
 - **Tier** `[A]` the fact · `[S]` signed, natural person, 2026-07-31.
 - **Owner** **INHERITED** — elementary field theory.
-- **The attack it survives** "You spent years saying zero is not a number and now you say the opposite." **Exactly so, and that is the entry.** `0` **is** a real number; what is true is that it is the unique element of a field with no multiplicative inverse. Say `ℝˣ`, never `ℝ`. Bare "X is not a number" is **banned phrasing corpus-wide by signed ruling**. Second attack: "the signature makes it true" — refused in the receipt's own header at `193:15-17`, "a signed `[S]` is still an `[S]`." **The corpus published the cost, not the win.**
+- **The attack it survives** "You spent years saying zero is not a number and now you say the opposite." **Exactly so, and that is the entry.** `0` **is** a real number; what is true is that it is the unique element of a field with no multiplicative inverse. Say `ℝˣ`, never `ℝ`. Bare "X is not a number" is **banned phrasing corpus-wide by signed ruling**. Second attack: "the signature makes it true" — refused in the receipt's own header at `193`, "a signed `[S]` is still an `[S]`." **The corpus published the cost, not the win.**
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-15 · Ruling Z1 — `0 ∉ ℝˣ`, and the corpus's own phrasing "0 ∉ ℝ" is FALSE"
   - `05_COSMOLOGY/03_FORMAL_SYSTEM/53_THE_NUMBER_CHART.md` — "is the unique element of a field with no multiplicative inverse. **Say"
@@ -67,7 +67,7 @@ Both are inherited. Neither is owned. That is the normal condition of this tree.
 ### P-20 · `⟨S,L⟩` generates ℚ⁺; ι is not recoverable
 
 - **Tier** `[A]`.
-- **Owner** **INHERITED** — Calkin–Wilf 2000, already cited by the source at `52:349`.
+- **Owner** **INHERITED** — Calkin–Wilf 2000, already cited by the source at `52`.
 - **The attack it survives** Attacked on all three limbs and survives on all three. **VERIFIED (L2)**, including a one-line proof the source does not give: every word in `⟨S,L⟩` has determinant `+1` while `det ι = −1`, so ι is not recoverable. The deflationary conclusion the corpus draws **against its own aesthetics** — *"the elegant one always moves, one rests exactly once is a property of the chosen pair, not of ℚ⁺"* — is correct.
 - **Anchors** — `path` + exact quoted string, each verified present in the target before it was written
   - `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "### P-20 · `⟨S,L⟩` generates ℚ⁺; ι is not recoverable"
@@ -86,4 +86,4 @@ Both are inherited. Neither is owned. That is the normal condition of this tree.
 
 ## Provenance
 
-Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.
+Generated from `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — "46 PRESERVE entries across six lanes" — by `16_THE_EMISSION/emit.py`. The frozen tree was read and not written. Nothing was moved, deleted, committed or staged.

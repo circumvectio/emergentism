@@ -4,7 +4,7 @@ date: 2026-07-28
 status: "ACTIVE EXECUTION PACKET — public projection only; dated filename retained as provenance; creates no doctrine"
 evidence_tier: "[B] repository and release gates; [I] positioning, information architecture, and reader hypotheses"
 owner: "01_EMERGENTISM/12_PUBLIC_SITE"
-supersedes: "2026_07_28_VMOSK_A_FINITY_PUBLIC_RELEASE.md"
+supersedes: "../../90_ARCHIVE/2026_08_13_disposition_docket/12_PUBLIC_SITE/_PLANS/2026_07_28_VMOSK_A_FINITY_PUBLIC_RELEASE.md"
 source_owners:
   - "01_TELEOLOGY/00_THE_GOAL.md"
   - "01_TELEOLOGY/04_THE_LIVED_COMPASS.md"

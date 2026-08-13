@@ -27,10 +27,10 @@ manifest, and then you read the frozen tree the manifest cites.
 
 ## 1 · What this is
 
-**One source.** `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md` — a manifest in which each
-entry already carries four things: its **claim**, its **tier**, its **owner**, and
-**the attack it survives**. The manifest states its own admission rule: "An entry that
-cannot name a hostile reader it defeats is not on this list."
+**One source.** `15_THE_TITAN_PASS_2026_08_06/01_PRESERVE.md`, which states its own
+admission rule: "An entry that cannot name a hostile reader it defeats is not on this
+list." It is a manifest in which each entry already carries four things: its **claim**,
+its **tier**, its **owner**, and **the attack it survives**.
 
 **Two spines, and the split was tested rather than asserted.** Of the thirty-four
 entries, twenty sit on the ontological ladder and fourteen do not. The fourteen are
@@ -73,8 +73,7 @@ A tree that carried only live claims would re-derive Euler by Thursday. The corp
 first-hand evidence of exactly that failure, and it is written into the docstring of
 the tool built to stop it — `09_TOOLS/01_SCRIPTS/build_corpus_index.py`:
 
-> "On 2026-08-05 a session produced five claims in a row that the corpus had already
-> settled, and no gate caught any of them."
+> "On 2026-08-05 a session produced five claims in a row that the corpus had already settled, and no gate caught any of them."
 
 and, naming the disease:
 
@@ -187,7 +186,8 @@ guard, because it reports success." This guard is not decorative. It is simply r
 ### Attack 2 — attack the manifest, not the tree
 
 This tree has no independent authority. It generates from one file. If
-`01_PRESERVE.md` is wrong, all thirty-four entries are wrong and no amount of anchor
+`01_PRESERVE.md` — which opens "46 PRESERVE entries across six lanes" — is wrong, all
+thirty-four entries are wrong and no amount of anchor
 discipline saves them. Its header is already wrong about its own size (§3). Start
 there: the fastest way to break thirty-four entries is to break the one document they
 are compiled from.
@@ -234,10 +234,10 @@ result, not a gap"` in its own frontmatter.
 
 The reason is specific, and it is stronger than "we ran out of material":
 
-- **The formalism is wholly inherited.** `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md`
-  types the station as "probability-bearing quantum state; measurement-relative
-  distributions", and its fence section — "D3 quantum state and the interpretation
-  fence" — marks the density-operator and Born apparatus as inherited while its
+- **The formalism is wholly inherited.** `06_ONTOLOGY/00_ONTOLOGY_ACROSS_DIMENSIONS.md` types
+  the station as "probability-bearing quantum state; measurement-relative distributions".
+  Its fence section is "D3 quantum state and the interpretation fence", and it marks the
+  density-operator and Born apparatus as inherited while its
   *placement* on this ladder is interpretive.
 - **Its own prior draft was killed by the corpus's own kills.**
   `14_THE_DISTILLATION/00_THE_RUNGS_2026_08_05.md`, under "# D3 — The
@@ -255,8 +255,8 @@ station is the honest result. Do not fill it.**
 
 ### Zero external returns — machine-readable
 
-`03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json`, parsed this
-pass:
+`03_METHODOLOGY/03_PREREGISTRATIONS/finity_practice/GATE_REGISTRY.json` — which declares
+its own authority as "routing_only_no_semantic_authority" — parsed this pass:
 
 - **26 prerequisites across 3 gates. 1 satisfied. 25 missing.**
 - The one satisfied prerequisite is `FPE-REVIEW-01/bundle_manifest` — **an internal
@@ -318,9 +318,10 @@ may be cited as clean until that number is zero.
 - **Moved nothing. Deleted nothing. Committed nothing. Staged nothing in git.**
 - **Did not edit the frozen tree.**
 - **One self-inflicted defect, disclosed.** Running
-  `09_TOOLS/01_SCRIPTS/build_corpus_index.py` to obtain the live-document count
-  modified a tracked file — the index it writes on every run. A tool whose docstring
-  reads "This index HARVESTS. It does not infer, score, or classify." is not read-only.
+  `09_TOOLS/01_SCRIPTS/build_corpus_index.py` — a tool whose docstring reads
+  "This index HARVESTS. It does not infer, score, or classify." — to obtain the
+  live-document count modified a tracked file: the index it writes on every run. It is
+  not read-only.
   I restored it with `git checkout --` and re-derived the same figures by importing the
   builder's `build()` without its `main()`, so nothing was written on the second pass.
   The working tree carries six modifications that are **not** mine; they were present
@@ -330,7 +331,9 @@ may be cited as clean until that number is zero.
 - **Pre-checked its own anchors before writing them.** Thirty-seven candidate anchors
   were resolved against disk first. **One failed** — a rule I attributed to
   `01_PRESERVE.md` that actually lives in the pass README, and which in `01_PRESERVE.md`
-  is hard-wrapped across two lines so that no single-line anchor spans it. Corrected;
+  is hard-wrapped across two lines so that no single-line anchor spans it — `{no-anchor}`
+  on both mentions, deliberately: the string is in the file, but not on any one line, so
+  no anchor was written rather than an unverified one. Corrected;
   the re-run resolved 37 of 37 exactly once each. The failure is recorded because a
   document about anchor discipline that hid its own anchor failure would be the exact
   defect it exists to name.
@@ -339,7 +342,7 @@ may be cited as clean until that number is zero.
 
 ## 7 · Where to go next
 
-| you want | read |
+| you want | read — `{no-anchor}`: a reading map, not a citation list; these rows point, they do not quote |
 |---|---|
 | the constitution and its evidence | `16_THE_EMISSION/00_THE_LAW.md` |
 | what is, station by station | `16_THE_EMISSION/A_THE_LADDER/` |
