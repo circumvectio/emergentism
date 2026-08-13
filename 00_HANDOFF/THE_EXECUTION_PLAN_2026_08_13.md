@@ -171,6 +171,12 @@ time, and no authorization makes it safe to move a file another session is editi
 > closes; until then Wave 5 stays shut, because a migration rehearsal that only
 > passes with its checker loosened has rehearsed nothing.
 >
+> **RULED 2026-08-13 (in-session, CHAIR): the rule stands — fix the
+> documents.** The ten failures are content defects: five quotes to correct
+> against their targets, four bare paths to anchor or mark `{no-anchor}`, one
+> ambiguous basename to disambiguate. `pair()` is not to be touched.
+> Receipt: [`R32_RULING_RECEIPT_2026_08_13.md`](R32_RULING_RECEIPT_2026_08_13.md).
+>
 > Also fixed here, and it is the **fourth** instance of one defect class today:
 > `A_THE_LADDER/05_D4_ACTUAL.md` was stale *and committed at HEAD* — a generated
 > artifact its own generator would not reproduce. `emit.py --verify` now reports
