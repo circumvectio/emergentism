@@ -12,6 +12,44 @@ parents:
 
 # The Whole Board
 
+> ## UPDATE — `ec72de9a` on `origin/main`, 0/0
+>
+> **`C2` PAID. `A1` and `A2` DONE.** Recorded here so the board stays true.
+>
+> - **`A2` worked, and it is now a proven method, not a proposal.** The Six Lenses
+>   artifact was recovered by **content-hash hunt through history** — found at
+>   Skyzai `d68ffee6`, exact bytes at the declared historical path. The live L5
+>   file was **not** overwritten and the pin was **not** retargeted. This is the
+>   general move: *when a pin does not match, search history for the artifact —
+>   never edit the pin to match the disk.*
+> - **`A1` done** — `last_move = {mover, date, evidence}`, three probes green,
+>   graves not back-filled from folklore.
+> - Claim-status names restored; **50** lifecycle rows. Contact snapshot **244**,
+>   243 untouched, ratchet PASS-WITH-DEBT.
+>
+> ### `C2b` — NEW, and it is the same shape as `C2`
+>
+> Predeploy is **still red**, now on pre-existing `book-manifest` dirt: the
+> Self-Eating owner versus the **Serpent edition pin `3eda2a0e` against disk
+> `0e6b629e`**. Retargeting was refused again, correctly.
+>
+> **Run the `A2` method on it.** Six Lenses proved recoverable from an unreferenced
+> blob in a *different repo*. Hunt `3eda2a0e` by content hash across the site repo,
+> `02_SKYZAI`, and the Documents tree before treating it as unpayable. A hit pays
+> `C2b`; a miss across all three is the finding, and the pin retires by ruling.
+>
+> ### Two things at risk of being lost
+>
+> 1. **The recovered Six Lenses file is uncommitted, in `02_SKYZAI`.** If that
+>    repo is cleaned, the recovery is gone and the pin becomes unpayable again.
+>    **Commit it in its own repo, or the work evaporates.**
+> 2. **`/amrita/` is serving a STALE artifact, not a 404** — live 11,010 B against
+>    a larger purified version in the repo. That is a different and worse category
+>    than the 404s: a missing page says nothing, a stale page says something the
+>    corpus has already superseded. `/spark.md`, `/record/frontier/` and
+>    `/record/problems/` are honest 404s. This one is a live wrong answer.
+
+
 **Why this exists.** Three surfaces are in play and no document held all three:
 the corpus (`01_EMERGENTISM`), the public site and its host, and the venture
 lanes. Their blockers are entangled — the largest idea in the project is gated on
